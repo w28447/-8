@@ -166,7 +166,7 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "scriptmover", "" + #"hash_487e544e29aa8e45", 8000, 1, "int" );
     clientfield::register( "scriptmover", "" + #"activate_mansion_artifact", 8000, getminbitcountfornum( 3 ), "int" );
     clientfield::register( "scriptmover", "" + #"activate_mansion_artifact_card", 8000, 1, "int" );
-    clientfield::register( "toplayer", "" + #"hash_6a4f537da00ae3f9", 8000, 1, "int" );
+    clientfield::register( "toplayer", "" + #"silver_bullet_weapon_fx", 8000, 1, "int" );
     clientfield::register( "world", "" + #"outro_igc_visgroup", 8000, 1, "int" );
     clientfield::register( "scriptmover", "" + #"force_stream_model", 8000, 1, "int" );
     clientfield::register( "world", "" + #"hash_458d10e70473adfd", 8000, 1, "int" );
@@ -324,7 +324,7 @@ function on_player_spawned()
     self.var_d049df11 = 0;
     self.var_c09a076a = 0;
     self.is_blue = 0;
-    self clientfield::set_to_player( "" + #"hash_6a4f537da00ae3f9", 0 );
+    self clientfield::set_to_player( "" + #"silver_bullet_weapon_fx", 0 );
     self thread function_3bd89e18();
     self thread function_3cdddd34();
     self.var_aed1893c = [];
@@ -1635,7 +1635,7 @@ function function_c52e8ba( player, var_8d5d092c )
     }
     else if ( isdefined( player.var_9c7b96ed[ var_8d5d092c ] ) && player.var_9c7b96ed[ var_8d5d092c ] )
     {
-        self.hint_string[ n_player_index ] = #"hash_7667bd0f83307360";
+        self.hint_string[ n_player_index ] = #"zombie/generic_fasttravel_cooldown";
         b_result = 1;
     }
     else if ( isdefined( self.stub.delay ) && !self.stub flag::get( "delayed" ) )
@@ -1658,7 +1658,7 @@ function function_c52e8ba( player, var_8d5d092c )
                 self.hint_string[ n_player_index ] = zm_utility::function_d6046228( #"hash_65cbaa6146c8a85", #"hash_aed57a705546ebb", #"hash_471da16d5cb1956c", #"hash_276bed61279c11e0" );
                 break;
             default:
-                self.hint_string[ n_player_index ] = zm_utility::function_d6046228( #"hash_2731cc5c1208e2e4", #"hash_47b20f457b370888" );
+                self.hint_string[ n_player_index ] = zm_utility::function_d6046228( #"zombie/fasttravel_generic_use", #"zombie/fasttravel_generic_use_keyboard" );
                 break;
         }
         

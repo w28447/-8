@@ -2554,7 +2554,7 @@ function function_344aee09( _hash )
             }
             
             e_player thread ct_utils::function_79957328( undefined, str_respawn );
-            level waittill( #"hash_603de7ab282bcda9" );
+            level waittill( #"restore_player_respawned" );
             e_player thread ct_utils::function_49e0c5bc( 1 );
             e_player ct_vo::function_3ca1b77d( 1 );
             var_3069da18 = 1;

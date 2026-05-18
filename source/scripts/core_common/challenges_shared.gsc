@@ -1905,7 +1905,7 @@ function multikill( killcount, weapon )
         }
         
         self.var_ea1458aa.var_e0bfa611++;
-        self function_a4db0a4c();
+        self multikill_2_killstreak_5();
     }
     
     if ( isdefined( level.var_c8de519d ) && isdefined( level.var_c8de519d.multikill ) )
@@ -1918,7 +1918,7 @@ function multikill( killcount, weapon )
 // Params 0
 // Checksum 0xc70db754, Offset: 0x5950
 // Size: 0xaa
-function function_a4db0a4c()
+function multikill_2_killstreak_5()
 {
     if ( !isdefined( self.var_ea1458aa.var_e0bfa611 ) )
     {
@@ -1932,7 +1932,7 @@ function function_a4db0a4c()
     
     if ( self.var_ea1458aa.var_e0bfa611 > 0 && self.var_ea1458aa.var_2bad4cbb > 0 )
     {
-        self stats::function_dad108fa( #"hash_5803a1b332accd42", 1 );
+        self stats::function_dad108fa( #"multikill_2_killstreak_5", 1 );
         self.var_ea1458aa.var_e0bfa611 = undefined;
         self.var_ea1458aa.var_2bad4cbb = undefined;
     }
@@ -2089,9 +2089,9 @@ function multi_rcbomb_kill()
 // Params 0
 // Checksum 0x916025dd, Offset: 0x5e80
 // Size: 0x2c
-function function_46754062()
+function multi_rcxd_kill()
 {
-    self stats::function_dad108fa( #"hash_709699a31c8f89f7", 1 );
+    self stats::function_dad108fa( #"multikill_2_rcxd", 1 );
 }
 
 // Namespace challenges/challenges_shared

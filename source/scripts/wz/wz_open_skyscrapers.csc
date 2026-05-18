@@ -1,4 +1,4 @@
-#using script_4da75c87643c8b07;
+#using scripts\wz_common\wz_blast_door_light.csc;
 #using script_58d14a82f7aa9d6d;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\util_shared;

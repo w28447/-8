@@ -34,9 +34,9 @@ function init_clientfields()
 // Size: 0x64
 function init_flags()
 {
-    level flag::init( #"hash_478e70a97b556206" );
-    level flag::init( #"hash_6a417acc02a28c9d" );
-    level flag::init( #"hash_6b5e9a7b23ad25a5" );
+    level flag::init( #"ee_tundragun_step1_complete" );
+    level flag::init( #"ee_tundragun_step1_time_limit_reached" );
+    level flag::init( #"ee_tundragun_step2_complete" );
 }
 
 // Namespace zm_orange_ee_tundragun/zm_orange_ee_tundragun
@@ -93,7 +93,7 @@ function ee_tundragun_step1_setup( var_5ea5c94d )
     
     if ( !var_5ea5c94d )
     {
-        level flag::wait_till( #"hash_478e70a97b556206" );
+        level flag::wait_till( #"ee_tundragun_step1_complete" );
     }
 }
 
@@ -109,7 +109,7 @@ function ee_tundragun_step1_cleanup( var_5ea5c94d, ended_early )
     
     if ( var_5ea5c94d || ended_early )
     {
-        level flag::set( #"hash_478e70a97b556206" );
+        level flag::set( #"ee_tundragun_step1_complete" );
     }
 }
 
@@ -120,7 +120,7 @@ function ee_tundragun_step1_cleanup( var_5ea5c94d, ended_early )
 function private function_f16c0259()
 {
     self endon( #"death" );
-    level endon( #"end_game", #"hash_478e70a97b556206" );
+    level endon( #"end_game", #"ee_tundragun_step1_complete" );
     
     while ( true )
     {
@@ -158,7 +158,7 @@ function private function_f16c0259()
                     #/
                     
                     level notify( #"hash_3dcff814c31d2298" );
-                    level flag::set( #"hash_478e70a97b556206" );
+                    level flag::set( #"ee_tundragun_step1_complete" );
                 }
                 
                 continue;
@@ -185,7 +185,7 @@ function private function_213f1c48()
         iprintlnbold( "<dev string:x12c>" + 1.75 + "<dev string:xaf>" );
     #/
     
-    level flag::clear( #"hash_6a417acc02a28c9d" );
+    level flag::clear( #"ee_tundragun_step1_time_limit_reached" );
     level.var_97da986d.n_start_time = gettime();
     
     while ( gettime() < level.var_97da986d.n_start_time + level.var_97da986d.var_7d4c9076 )
@@ -197,7 +197,7 @@ function private function_213f1c48()
         iprintlnbold( "<dev string:x156>" );
     #/
     
-    level flag::set( #"hash_6a417acc02a28c9d" );
+    level flag::set( #"ee_tundragun_step1_time_limit_reached" );
     function_c19f52ea();
 }
 
@@ -248,7 +248,7 @@ function ee_tundragun_step2_setup( var_5ea5c94d )
     
     if ( !var_5ea5c94d )
     {
-        level flag::wait_till( #"hash_6b5e9a7b23ad25a5" );
+        level flag::wait_till( #"ee_tundragun_step2_complete" );
         
         if ( isdefined( level.var_97da986d.s_weapon_pickup ) && isdefined( level.var_97da986d.s_weapon_pickup.e_weapon ) )
         {
@@ -269,7 +269,7 @@ function ee_tundragun_step2_cleanup( var_5ea5c94d, ended_early )
     
     if ( var_5ea5c94d || ended_early )
     {
-        level flag::set( #"hash_6b5e9a7b23ad25a5" );
+        level flag::set( #"ee_tundragun_step2_complete" );
     }
 }
 
@@ -284,6 +284,6 @@ function private function_37d390f8( e_player, b_get_weapon )
         e_player thread zm_orange_util::function_51b752a9( "vox_tundragun_get" );
     }
     
-    level flag::set( #"hash_6b5e9a7b23ad25a5" );
+    level flag::set( #"ee_tundragun_step2_complete" );
 }
 

@@ -9,7 +9,7 @@
 // Size: 0xe2
 function init_clientfields()
 {
-    clientfield::register( "scriptmover", "" + #"hash_3e57db9b106dff0a", 1, 1, "int", &function_10675d52, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"zombie_blood_powerup_fx", 1, 1, "int", &zombie_blood_powerup_fx, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_4ccf2ce25e0dc836", 1, 1, "int", &function_c6b07c39, 0, 0 );
     level._effect[ #"hash_62343c2144d3f8d1" ] = #"hash_e567a706dafea31";
 }
@@ -18,7 +18,7 @@ function init_clientfields()
 // Params 7
 // Checksum 0x94e8020d, Offset: 0x1a0
 // Size: 0xb4
-function function_10675d52( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function zombie_blood_powerup_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {

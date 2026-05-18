@@ -47,7 +47,7 @@ function shock_apply( var_756fda07, weapon, applicant )
     {
         self.owner setelectrifiedstate( 1 );
         self thread shock_rumble_loop( float( self.duration ) / 1000 );
-        self.owner playsound( #"hash_7d53dd7b886b60ae" );
+        self.owner playsound( #"mpl_electrical_surge" );
     }
 }
 

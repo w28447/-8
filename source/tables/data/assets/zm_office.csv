@@ -19589,7 +19589,7 @@ scriptparsetree,#scripts/zm/zm_office_ffotd.csc
 scriptparsetree,#scripts/zm/weapons/zm_weap_gravityspikes.csc
 scriptparsetree,#scripts/zm/zm_office_zstandard.gsc
 scriptparsetree,#scripts/zm/ai/zm_ai_catalyst.csc
-scriptparsetree,#hash_293299be863018bb
+scriptparsetree,#scripts/zm/zm_office_ee_delusional_dempsey.gsc
 scriptparsetree,#scripts/zm/zm_office_debris_buys.gsc
 scriptparsetree,#scripts/zm/zm_office_special_rounds.gsc
 scriptparsetree,#scripts/core_common/ai/zombie.csc

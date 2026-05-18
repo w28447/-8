@@ -656,7 +656,7 @@ model,#fx_char_gib_chunk_fat
 model,#c_t8_zmb_dlc0_zombie_male_body1_g_behead
 model,#c_t8_zmb_dlc0_zombie_female_body1_skin2
 model,#hash_703b545a506955f6
-model,#hash_7046550bbfeaf740
+model,#c_t8_zmb_dlc0_tiger_head1_decapitated
 model,#p8_fxanim_zm_towers_buyable_gate_02_a_frameless_mod
 model,#c_t8_zmb_dlc0_zombie_male_body1_g_upclean
 model,#p8_zm_gla_trap_blade_01_cylinder_bearing
@@ -718,7 +718,7 @@ model,#wpn_t7_special_crossbow_mag_world
 model,#hash_7ae080619872654e
 model,#c_t8_zmb_dlc0_zombie_male_body1_skin2
 model,#c_t8_zmb_dlc0_zombie_male_body1_skin3
-model,#hash_7c166ef26a8ce946
+model,#c_t8_zmb_dlc0_zombie_destroyer_head_decapitated
 model,#p8_fxanim_zm_vapor_altar_zeus_bird_head_mod
 model,#c_t8_zmb_catalyst_decay_head
 model,#wpn_t7_zmb_zod_rocket_shield_window
@@ -9261,7 +9261,7 @@ soundalias,#hash_7d5033147e5f8ffb
 soundalias,#hash_7d5034147e5f91ae
 soundalias,#hash_7d5035147e5f9361
 soundalias,#hash_7d5038147e5f987a
-soundalias,#hash_7d53dd7b886b60ae
+soundalias,#mpl_electrical_surge
 soundalias,#hash_7d5593e7743731e7
 soundalias,#hash_7d5c8dd05bd29d2a
 soundalias,#hash_7d73d87905b72711
@@ -9689,7 +9689,7 @@ client_fx,#hash_794c532edfcb6418
 client_fx,#hash_794c542edfcb65cb
 client_fx,#hash_798fa0110188b64c
 client_fx,#hash_7a0b1245b3311ead
-client_fx,#hash_7a37324c1988abb5
+client_fx,#zombie/fx_val_chest_burst
 client_fx,#hash_7a37d99aaa7057cf
 client_fx,#hash_7aa34fabb38f1d2e
 client_fx,#hash_7aa749f5bbcbbed8

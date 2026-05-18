@@ -139,7 +139,7 @@ function function_2b03f05f()
     {
         s_result = self waittill( #"damage" );
         
-        if ( s_result.weapon === getweapon( #"hash_3de0926b89369160" ) || s_result.weapon === getweapon( #"hash_127bb24f68b5df27" ) )
+        if ( s_result.weapon === getweapon( #"blundergat_acid_bullet" ) || s_result.weapon === getweapon( #"blundergat_fire_bullet" ) )
         {
             a_grenades = getentarray( "grenade", "classname" );
             
@@ -203,7 +203,7 @@ function function_971df325( target )
 // Size: 0x6a6
 function function_efefda46( willbekilled, einflictor, eattacker, idamage, flags, meansofdeath, weapon, vpoint, vdir, shitloc, psoffsettime, boneindex, surfacetype )
 {
-    var_7bf9705c = getweapon( #"hash_3de0926b89369160" );
+    var_7bf9705c = getweapon( #"blundergat_acid_bullet" );
     var_6d65656c = getweapon( #"hash_494f5501b3f8e1e9" );
     
     if ( weapon === var_7bf9705c )
@@ -438,7 +438,7 @@ function function_d82e684c( is_not_upgraded = 1 )
                     if ( b_trace_pass )
                     {
                         target thread function_845f2546();
-                        e_dart = magicbullet( getweapon( #"hash_3de0926b89369160" ), var_d0407533, target gettagorigin( str_tag ), self );
+                        e_dart = magicbullet( getweapon( #"blundergat_acid_bullet" ), var_d0407533, target gettagorigin( str_tag ), self );
                         e_dart thread function_49cfb951( n_fuse_timer, is_not_upgraded, target );
                         return;
                     }
@@ -451,7 +451,7 @@ function function_d82e684c( is_not_upgraded = 1 )
     trace_end = var_d0407533 + vec * 20000;
     trace = bullettrace( var_d0407533, trace_end, 1, self );
     var_7a29db08 = trace[ #"position" ] + function_40e83b36( 55 );
-    e_dart = magicbullet( getweapon( #"hash_3de0926b89369160" ), var_d0407533, var_7a29db08, self );
+    e_dart = magicbullet( getweapon( #"blundergat_acid_bullet" ), var_d0407533, var_7a29db08, self );
     e_dart thread function_49cfb951( n_fuse_timer );
 }
 

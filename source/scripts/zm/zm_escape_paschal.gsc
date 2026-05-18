@@ -137,7 +137,7 @@ function init_clientfield()
     clientfield::register( "scriptmover", "" + #"hash_376c030aee1d6ccb", 1, 2, "int" );
     clientfield::register( "scriptmover", "" + #"corpse_burn_fx", 1, 1, "int" );
     clientfield::register( "allplayers", "" + #"hash_b8601726e1e4a6a", 1, 1, "int" );
-    clientfield::register( "scriptmover", "" + #"hash_624198b41791933f", 1, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"setup_outro_ghosts", 1, 1, "int" );
     clientfield::register( "toplayer", "" + #"hash_5cab8aa95fc9ea84", 1, 1, "counter" );
     clientfield::register( "toplayer", "" + #"hash_506164c22c4c7ca8", 1, 1, "counter" );
 }
@@ -162,7 +162,7 @@ function init_flags()
     level flag::init( #"hash_3d16465b22e70170" );
     level flag::init( #"richtofen_sacrifice" );
     level flag::init( #"hash_68923445ebf488f0" );
-    level flag::init( #"hash_12a631be319641a1" );
+    level flag::init( #"start_the_end" );
     level flag::init( #"hash_7680c620ba7315e5" );
     level flag::init( #"hash_73b06a8a2c0b0e8d" );
     level flag::init( #"hash_8c500dbad4c6edb" );
@@ -3151,7 +3151,7 @@ function private function_1d0df68c( var_b631c17a )
         
         if ( isdefined( str_zone ) && str_zone == var_b631c17a )
         {
-            level notify( #"hash_585f05da94c76f1c" );
+            level notify( #"brutus_zone_changed" );
             break;
         }
         
@@ -3470,7 +3470,7 @@ function function_ac2a83ab( str_notify )
 function private function_65c7c787( e_brutus )
 {
     level notify( #"hash_573bca7543322902" );
-    e_brutus val::set( #"hash_54a371c662e546eb", "allowdeath", 0 );
+    e_brutus val::set( #"brutus_allow_death", "allowdeath", 0 );
     
     while ( isalive( e_brutus ) && distance2dsquared( e_brutus.origin, level.var_7a548c75.mdl_origin.origin ) > 147456 )
     {
@@ -3516,7 +3516,7 @@ function private function_dbe333cb( n_time )
     level flag::set( #"hash_66efd29e4fb12cb5" );
     wait n_time;
     self clientfield::set( "" + #"brutus_stun_shell", 0 );
-    self val::reset( #"hash_54a371c662e546eb", "allowdeath" );
+    self val::reset( #"brutus_allow_death", "allowdeath" );
 }
 
 // Namespace paschal/zm_escape_paschal
@@ -4597,7 +4597,7 @@ function function_5efab4f9( var_27d47c17, var_a9d2fdec = 0 )
                     }
                 }
                 
-                a_str_flags = array( #"hash_12a631be319641a1", #"hash_7680c620ba7315e5" );
+                a_str_flags = array( #"start_the_end", #"hash_7680c620ba7315e5" );
                 var_a4937b41 = level flag::wait_till_any( a_str_flags );
                 
                 foreach ( player in util::get_active_players() )
@@ -4608,18 +4608,18 @@ function function_5efab4f9( var_27d47c17, var_a9d2fdec = 0 )
                     }
                 }
                 
-                if ( var_a4937b41._notify == #"hash_12a631be319641a1" )
+                if ( var_a4937b41._notify == #"start_the_end" )
                 {
                     level flag::set( #"open_boss_door" );
                 }
             }
             else
             {
-                a_str_flags = array( #"hash_12a631be319641a1", #"hash_7680c620ba7315e5" );
+                a_str_flags = array( #"start_the_end", #"hash_7680c620ba7315e5" );
                 level flag::wait_till_any( a_str_flags );
             }
             
-            level flag::clear( #"hash_12a631be319641a1" );
+            level flag::clear( #"start_the_end" );
             level flag::clear( #"hash_7680c620ba7315e5" );
         }
         
@@ -4669,7 +4669,7 @@ function function_5524bec2( mdl_plate )
 function function_256e70d7( var_3104b082 )
 {
     self endon( #"death" );
-    level endon( #"hash_12a631be319641a1", #"hash_7680c620ba7315e5" );
+    level endon( #"start_the_end", #"hash_7680c620ba7315e5" );
     self.m_pap_force_stream = spawn( "trigger_box_use", var_3104b082 + ( 0, 12, 61 ), 0, 16, 16, 61 );
     self.m_pap_force_stream sethintstring( #"hash_6d663dca450595ef" );
     self.m_pap_force_stream setcursorhint( "HINT_NOICON" );
@@ -4695,7 +4695,7 @@ function function_256e70d7( var_3104b082 )
             
             if ( level.var_845ca238.size == util::get_active_players().size )
             {
-                level notify( #"hash_12a631be319641a1" );
+                level notify( #"start_the_end" );
             }
         }
         
@@ -5166,7 +5166,7 @@ function function_37d4f9( var_f6d24584, n_brutus = 0, var_b8fc6ea2 = 0, var_4977
             wait 1.6;
         }
         
-        a_s_brutus_location = struct::get_array( #"hash_3ea8e97c5c09e1a5", "variantname" );
+        a_s_brutus_location = struct::get_array( #"c29_brutus_location", "variantname" );
         s_location = array::random( a_s_brutus_location );
         level.var_ebd424be = s_location.script_int;
         
@@ -5526,7 +5526,7 @@ function function_77cf4d4a()
     
     for ( i = 1; i <= 3 ; i++ )
     {
-        mdl_chair setmodel( #"hash_4fb2e1f3ca435307" + i );
+        mdl_chair setmodel( #"p8_zm_esc_dark_machine_0" + i );
         mdl_chair playsound( #"hash_556656930bf32b28" );
         
         if ( i != 3 )
@@ -6412,7 +6412,7 @@ function function_44267df1( a_ents )
     {
         if ( isdefined( e_prop.model ) && ( e_prop.model == #"c_t8_zmb_mob_ghoul_body2_rob" || e_prop.model == #"c_t8_zmb_mob_ghoul_body1_rob" || e_prop.model == #"c_t8_zmb_mob_ghoul_body3_rob" ) )
         {
-            e_prop clientfield::set( "" + #"hash_624198b41791933f", 1 );
+            e_prop clientfield::set( "" + #"setup_outro_ghosts", 1 );
             e_prop ghost();
         }
     }
@@ -6440,7 +6440,7 @@ function function_ed66b9f7( a_ents )
     {
         if ( isdefined( e_prop.model ) && ( e_prop.model == #"c_t8_zmb_mob_ghoul_body2_rob" || e_prop.model == #"c_t8_zmb_mob_ghoul_body1_rob" || e_prop.model == #"c_t8_zmb_mob_ghoul_body3_rob" ) )
         {
-            e_prop clientfield::set( "" + #"hash_624198b41791933f", 0 );
+            e_prop clientfield::set( "" + #"setup_outro_ghosts", 0 );
             e_prop show();
         }
     }

@@ -791,9 +791,9 @@ function private function_ce0f27e0()
         
         if ( isdefined( player.var_1f1736dc ) )
         {
-            var_7dbb0472 = int( gettime() - player.var_1f1736dc );
-            player stats::function_d40764f3( #"hash_44caad08afb32e51", var_7dbb0472 );
-            player match_record::inc_player_stat( #"hash_3e8d4387ea9e7f42", var_7dbb0472 );
+            timeoutsidecircle = int( gettime() - player.var_1f1736dc );
+            player stats::function_d40764f3( #"time_outside_circle", timeoutsidecircle );
+            player match_record::inc_player_stat( #"hash_3e8d4387ea9e7f42", timeoutsidecircle );
         }
     }
 }
@@ -1544,24 +1544,24 @@ function function_4dc40125()
             var_e96493f7 = 20 * var_36b41a8;
             halfwidth = circle.mapwidth / 2;
             halfheight = circle.mapheight / 2;
-            var_b99d691b = maporigin + ( halfwidth, halfheight, 0 );
-            var_91d25b4a = maporigin + ( halfwidth, halfheight * -1, 0 );
-            var_3c4ec32 = maporigin + ( halfwidth * -1, halfheight * -1, 0 );
-            var_55e2210d = maporigin + ( halfwidth * -1, halfheight, 0 );
+            nwcorner = maporigin + ( halfwidth, halfheight, 0 );
+            necorner = maporigin + ( halfwidth, halfheight * -1, 0 );
+            secorner = maporigin + ( halfwidth * -1, halfheight * -1, 0 );
+            swcorner = maporigin + ( halfwidth * -1, halfheight, 0 );
             sphere( maporigin, var_e96493f7, ( 1, 0, 1 ) );
             print3d( maporigin, "<dev string:x5c8>", ( 1, 1, 1 ), 1, var_36b41a8 );
-            sphere( var_b99d691b, var_e96493f7, ( 1, 0, 1 ) );
-            print3d( var_b99d691b, "<dev string:x5d7>", ( 1, 1, 1 ), 1, var_36b41a8 );
-            sphere( var_91d25b4a, var_e96493f7, ( 1, 0, 1 ) );
-            print3d( var_91d25b4a, "<dev string:x5dc>", ( 1, 1, 1 ), 1, var_36b41a8 );
-            sphere( var_3c4ec32, var_e96493f7, ( 1, 0, 1 ) );
-            print3d( var_3c4ec32, "<dev string:x5e1>", ( 1, 1, 1 ), 1, var_36b41a8 );
-            sphere( var_55e2210d, var_e96493f7, ( 1, 0, 1 ) );
-            print3d( var_55e2210d, "<dev string:x5e6>", ( 1, 1, 1 ), 1, var_36b41a8 );
-            line( var_b99d691b, var_91d25b4a, ( 1, 0, 1 ) );
-            line( var_91d25b4a, var_3c4ec32, ( 1, 0, 1 ) );
-            line( var_3c4ec32, var_55e2210d, ( 1, 0, 1 ) );
-            line( var_55e2210d, var_b99d691b, ( 1, 0, 1 ) );
+            sphere( nwcorner, var_e96493f7, ( 1, 0, 1 ) );
+            print3d( nwcorner, "<dev string:x5d7>", ( 1, 1, 1 ), 1, var_36b41a8 );
+            sphere( necorner, var_e96493f7, ( 1, 0, 1 ) );
+            print3d( necorner, "<dev string:x5dc>", ( 1, 1, 1 ), 1, var_36b41a8 );
+            sphere( secorner, var_e96493f7, ( 1, 0, 1 ) );
+            print3d( secorner, "<dev string:x5e1>", ( 1, 1, 1 ), 1, var_36b41a8 );
+            sphere( swcorner, var_e96493f7, ( 1, 0, 1 ) );
+            print3d( swcorner, "<dev string:x5e6>", ( 1, 1, 1 ), 1, var_36b41a8 );
+            line( nwcorner, necorner, ( 1, 0, 1 ) );
+            line( necorner, secorner, ( 1, 0, 1 ) );
+            line( secorner, swcorner, ( 1, 0, 1 ) );
+            line( swcorner, nwcorner, ( 1, 0, 1 ) );
         }
     }
 

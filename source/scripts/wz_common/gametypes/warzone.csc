@@ -234,7 +234,7 @@ function on_localclient_connect( localclientnum )
     if ( isdefined( getgametypesetting( #"hash_418adedc5cf0a538" ) ) && getgametypesetting( #"hash_418adedc5cf0a538" ) )
     {
         player = function_27673a7( localclientnum );
-        player thread function_7e3a43c3( localclientnum );
+        player thread cartoon_mode( localclientnum );
     }
 }
 
@@ -251,7 +251,7 @@ function on_player_spawned( localclientnum )
     
     function_2dba6c5( localclientnum, function_8978c19( localclientnum ) );
     forcestreamxmodel( #"hash_23c676424ced3f27", 4, 0 );
-    forcestreamxmodel( #"hash_153258d8addb7554", 4, 0 );
+    forcestreamxmodel( #"p8_wz_foliage_plant_red_kale_autumn", 4, 0 );
     forcestreamxmodel( #"hash_6d6a1262dc74e606", 5, 0 );
     forcestreamxmodel( #"hash_299eb2a348408676", 5, 0 );
     thread function_a1aaf8c0();
@@ -532,7 +532,7 @@ function private function_3dadedf8( localclientnum )
 // Params 1, eflags: 0x4
 // Checksum 0x80fdefa4, Offset: 0x2290
 // Size: 0xae
-function private function_7e3a43c3( localclientnum )
+function private cartoon_mode( localclientnum )
 {
     self notify( "2dfbcba8182d1332" );
     self endon( "2dfbcba8182d1332" );

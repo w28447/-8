@@ -1507,7 +1507,7 @@ soundalias,#hash_14e6aa140485ba14
 soundalias,#hash_150ff58f09588b0d
 soundalias,#fly_bump_container
 soundalias,#hash_151aabd1868eb6de
-soundalias,#hash_1526662237d7780f
+soundalias,#zmb_laststand_exit_plr
 soundalias,#hash_152cb9e008a3be0e
 soundalias,#hash_1599b79480dd2c4a
 soundalias,#hash_15d8dbdc530b32fe
@@ -2083,7 +2083,7 @@ soundalias,#hash_5e275c3acf569fe3
 soundalias,#hash_5e41735f5d61fd00
 soundalias,#hash_5e6a009ff5ab2383
 soundalias,#hash_5e6c6fe38f11ed65
-soundalias,#hash_5e980fdf2497d9a1
+soundalias,#zmb_laststand_enter_plr
 soundalias,#dst_car_fire
 soundalias,#hash_5ededd49857aee1c
 soundalias,#hash_5eeac3c635c74122
@@ -2494,7 +2494,7 @@ client_fx,#hash_74f6f2d183cc7512
 client_fx,#hash_77a8c32592d4dc2f
 client_fx,#hash_792c9bdd6ccaf244
 client_fx,#hash_7a2b64f7a1e28505
-client_fx,#hash_7a37324c1988abb5
+client_fx,#zombie/fx_val_chest_burst
 client_fx,#hash_7b0086164829ac0f
 client_fx,#hash_7b951deec27b35c1
 client_fx,#weapon/fx_muz_veh_quad_rocket_3p

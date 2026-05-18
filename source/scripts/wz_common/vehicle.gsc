@@ -765,16 +765,16 @@ function on_vehicle_damage( params )
     {
         if ( isdefined( params.eattacker ) && isdefined( params.eattacker.isplayervehicle ) && params.eattacker.isplayervehicle )
         {
-            var_364c1a03 = params.eattacker;
+            attackingvehicle = params.eattacker;
             
-            if ( var_364c1a03 == vehicle )
+            if ( attackingvehicle == vehicle )
             {
                 vehicle.session.var_309ad81f += params.idamage;
                 return;
             }
-            else if ( isdefined( var_364c1a03.session ) )
+            else if ( isdefined( attackingvehicle.session ) )
             {
-                var_364c1a03.session.var_ecd1fe60 += params.idamage;
+                attackingvehicle.session.var_ecd1fe60 += params.idamage;
                 vehicle.session.var_770fd50d += params.idamage;
                 return;
             }
@@ -1197,9 +1197,9 @@ function event_handler[enter_vehicle] codecallback_vehicleenter( eventstruct )
             }
         }
         
-        var_1861e0b1 = vehicle clientfield::get( "toggle_horn_sound" );
+        siren_on = vehicle clientfield::get( "toggle_horn_sound" );
         
-        if ( isdefined( var_1861e0b1 ) && var_1861e0b1 )
+        if ( isdefined( siren_on ) && siren_on )
         {
             self clientfield::set_to_player( "toggle_vehicle_sensor", 1 );
         }
@@ -1381,9 +1381,9 @@ function event_handler[change_seat] function_2aa4e6cf( eventstruct )
                     vehicle vehicle::function_bbc1d940( 1 );
                 }
                 
-                var_1861e0b1 = vehicle clientfield::get( "toggle_horn_sound" );
+                siren_on = vehicle clientfield::get( "toggle_horn_sound" );
                 
-                if ( isdefined( var_1861e0b1 ) && var_1861e0b1 )
+                if ( isdefined( siren_on ) && siren_on )
                 {
                     self clientfield::set_to_player( "toggle_vehicle_sensor", 1 );
                 }
@@ -4191,7 +4191,7 @@ function function_4e74bed7( params )
             self function_d929b41();
         }
         
-        self playsound( #"hash_d6643b88d0186ae" );
+        self playsound( #"veh_dmg_emp" );
     }
     
     self function_388973e4( 1 );
@@ -4271,7 +4271,7 @@ function function_c9620f20( params )
     if ( isdefined( self.var_52e23e90 ) && self.var_52e23e90 )
     {
         self vehicle::function_7f0bbde3();
-        self playsound( #"hash_d6643b88d0186ae" );
+        self playsound( #"veh_dmg_emp" );
     }
     
     self function_388973e4( 1 );

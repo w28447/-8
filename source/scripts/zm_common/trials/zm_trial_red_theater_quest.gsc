@@ -27,7 +27,7 @@ function __init__()
         return;
     }
     
-    zm_trial::register_challenge( #"hash_285312733a97eea3", &on_begin, &on_end );
+    zm_trial::register_challenge( #"red_theater_quest", &on_begin, &on_end );
 }
 
 // Namespace zm_trial_red_theater_quest/zm_trial_red_theater_quest

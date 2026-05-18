@@ -1136,7 +1136,7 @@ function private function_4c731a08()
     self bloodimpact( "none" );
     namespace_81245006::initweakpoints( self, #"c_t8_zmb_dlc0_towers_boss_weakpoint_def" );
     aiutility::addaioverridedamagecallback( self, &function_cfe82365 );
-    function_2e4487f6( self, #"hash_8e173ae91589439" );
+    function_2e4487f6( self, #"elephant_stage_1" );
     self thread function_f51431a9( self );
     self thread function_423390f2();
     self setblackboardattribute( "_locomotion_speed", "locomotion_speed_run" );
@@ -1450,7 +1450,7 @@ function function_498f147( elephant, point, boneindex )
         }
     }
     
-    if ( self.ai.var_112ec817 == #"hash_8e173ae91589439" )
+    if ( self.ai.elephantstage == #"elephant_stage_1" )
     {
         if ( function_c153d922( elephant, point, "tag_chest_armor_ws" ) )
         {
@@ -1639,7 +1639,7 @@ function private function_137a1ca8( entity )
 // Size: 0x110, Type: bool
 function private function_16096ca1( elephant )
 {
-    if ( elephant.ai.var_112ec817 == #"hash_8e173ae91589439" )
+    if ( elephant.ai.elephantstage == #"elephant_stage_1" )
     {
         return false;
     }
@@ -1674,7 +1674,7 @@ function private function_16096ca1( elephant )
 // Size: 0x56, Type: bool
 function private function_d6ae999a( elephant )
 {
-    if ( elephant.ai.var_112ec817 != #"hash_8e173ae91589439" )
+    if ( elephant.ai.elephantstage != #"elephant_stage_1" )
     {
         return true;
     }
@@ -1763,7 +1763,7 @@ function private function_4d479d22( elephant )
     
     elephant.health = elephant.maxhealth;
     elephant animation::play( "ch_vign_tplt_inbtl_hllpht_evlve_2_stg_2_00_hllpht", undefined, undefined, 1, 0.2, 0.1, undefined, undefined, undefined, 0 );
-    level notify( #"hash_634700dd42db02d8" );
+    level notify( #"boss_armor_broken" );
     elephant setblackboardattribute( "_locomotion_speed", "locomotion_speed_run" );
     var_dd54fdb1 = namespace_81245006::function_37e3f011( elephant, "tag_carriage_ws_le" );
     namespace_81245006::function_6c64ebd3( var_dd54fdb1, 2 );
@@ -1775,7 +1775,7 @@ function private function_4d479d22( elephant )
     namespace_81245006::function_6c64ebd3( var_dd54fdb1, 1 );
     var_dd54fdb1 = namespace_81245006::function_37e3f011( elephant, "tag_head_ws" );
     namespace_81245006::function_6c64ebd3( var_dd54fdb1, 1 );
-    function_2e4487f6( elephant, #"hash_8e170ae91588f20" );
+    function_2e4487f6( elephant, #"elephant_stage_2" );
 }
 
 // Namespace archetypeelephant/archetype_elephant
@@ -1790,11 +1790,11 @@ function private function_f51431a9( elephant )
     {
         var_55fb74b2 = elephant.health <= elephant.maxhealth * 0.5;
         var_e8e6826f = elephant.health <= elephant.maxhealth * 0.2;
-        currentstate = elephant.ai.var_112ec817;
+        currentstate = elephant.ai.elephantstage;
         
         switch ( currentstate )
         {
-            case #"hash_8e170ae91588f20":
+            case #"elephant_stage_2":
                 if ( function_16096ca1( elephant ) || var_e8e6826f )
                 {
                     level thread elephantstartdeath( elephant );
@@ -1802,7 +1802,7 @@ function private function_f51431a9( elephant )
                 }
                 
                 break;
-            case #"hash_8e173ae91589439":
+            case #"elephant_stage_1":
                 if ( function_d6ae999a( elephant ) || var_55fb74b2 )
                 {
                     elephant function_4d479d22( elephant );
@@ -1821,14 +1821,14 @@ function private function_f51431a9( elephant )
 // Size: 0xba
 function private function_2e4487f6( elephant, stage )
 {
-    assert( stage == #"hash_8e173ae91589439" || stage == #"hash_8e170ae91588f20" );
-    elephant.ai.var_112ec817 = stage;
+    assert( stage == #"elephant_stage_1" || stage == #"elephant_stage_2" );
+    elephant.ai.elephantstage = stage;
     
     switch ( stage )
     {
-        case #"hash_8e173ae91589439":
+        case #"elephant_stage_1":
             break;
-        case #"hash_8e170ae91588f20":
+        case #"elephant_stage_2":
             break;
         default:
             break;
@@ -1841,9 +1841,9 @@ function private function_2e4487f6( elephant, stage )
 // Size: 0x22c, Type: bool
 function function_cd472d5( entity )
 {
-    stage = entity.ai.var_112ec817;
+    stage = entity.ai.elephantstage;
     
-    if ( stage != #"hash_8e170ae91588f20" )
+    if ( stage != #"elephant_stage_2" )
     {
         return false;
     }
@@ -1981,9 +1981,9 @@ function function_ce8fe2b0( entity, splitorigin )
 // Size: 0x1f4, Type: bool
 function function_69faa74( entity )
 {
-    stage = entity.ai.var_112ec817;
+    stage = entity.ai.elephantstage;
     
-    if ( stage != #"hash_8e170ae91588f20" )
+    if ( stage != #"elephant_stage_2" )
     {
         return false;
     }
@@ -2190,7 +2190,7 @@ function private function_f2c697c7( entity )
     entity.ai.var_a504b9a3.var_86d0fc5 = entity.goalpos;
     entity.ai.var_a504b9a3.var_9ab05afa = distancesquared( entity.origin, entity.goalpos );
     entity.ai.var_a504b9a3.startpos = entity.origin;
-    stage = entity.ai.var_112ec817;
+    stage = entity.ai.elephantstage;
     
     if ( isdefined( entity.ai.riders ) )
     {
@@ -2205,12 +2205,12 @@ function private function_f2c697c7( entity )
     
     switch ( stage )
     {
-        case #"hash_8e173ae91589439":
+        case #"elephant_stage_1":
             entity.ai.var_a504b9a3.var_6392c3a2 = gettime() + randomintrange( 2500, 3000 );
             entity.ai.var_a504b9a3.var_190509f3 = 250 * 250;
             entity.ai.var_a504b9a3.var_f84fafb2 = 400 * 400;
             break;
-        case #"hash_8e170ae91588f20":
+        case #"elephant_stage_2":
             entity.ai.var_a504b9a3.var_6392c3a2 = gettime() + randomintrange( 3500, 4000 );
             entity.ai.var_a504b9a3.var_190509f3 = 250 * 250;
             entity.ai.var_a504b9a3.var_f84fafb2 = 400 * 400;
@@ -2323,7 +2323,7 @@ function private function_d3d560e9( entity )
 {
     entity aiutility::cleararrivalpos( entity );
     entity.ai.var_a504b9a3 = undefined;
-    stage = entity.ai.var_112ec817;
+    stage = entity.ai.elephantstage;
     
     if ( isdefined( entity.ai.riders ) )
     {
@@ -2338,10 +2338,10 @@ function private function_d3d560e9( entity )
     
     switch ( stage )
     {
-        case #"hash_8e173ae91589439":
+        case #"elephant_stage_1":
             entity.ai.var_5c1cc6e9 = gettime() + randomintrange( 8000, 10000 );
             break;
-        case #"hash_8e170ae91588f20":
+        case #"elephant_stage_2":
             entity.ai.var_5c1cc6e9 = gettime() + randomintrange( 6500, 7500 );
             break;
         default:
@@ -2470,12 +2470,12 @@ function private function_2c58bc39( entity )
         return 0;
     }
     
-    stage = self.ai.var_112ec817;
+    stage = self.ai.elephantstage;
     
     switch ( stage )
     {
-        case #"hash_8e170ae91588f20":
-        case #"hash_8e173ae91589439":
+        case #"elephant_stage_2":
+        case #"elephant_stage_1":
             function_ab5aea01( entity );
             break;
         default:
@@ -2637,9 +2637,9 @@ function private function_707d0196( player, mod, shitloc )
                     
                     foreach ( elephant in elephants )
                     {
-                        stage = elephant.ai.var_112ec817;
+                        stage = elephant.ai.elephantstage;
                         
-                        if ( stage == #"hash_8e173ae91589439" )
+                        if ( stage == #"elephant_stage_1" )
                         {
                             elephant function_4d479d22( elephant );
                         }

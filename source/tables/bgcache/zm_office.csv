@@ -3851,7 +3851,7 @@ soundalias,#hash_136e08ecd1baf4cc
 soundalias,#hash_13944ade049b7b82
 soundalias,#hash_13d7d955ad4693e2
 soundalias,#hash_13db393ba2bb0c2c
-soundalias,#hash_13eb1a82d0249566
+soundalias,#amb_clock_tick
 soundalias,#hash_13ebaddf5ce08e73
 soundalias,#hash_14034e91392eeefc
 soundalias,#hash_14123a3d500279f7
@@ -5093,7 +5093,7 @@ soundalias,#hash_3a17e6ff669bffd6
 soundalias,#hash_3a180f4c4f1a4d19
 soundalias,#hash_3a39711788cee293
 soundalias,#hash_3a45373862686bfd
-soundalias,#hash_3a6fc5051c04a776
+soundalias,#evt_elevator_office_run_3d
 soundalias,#hash_3a9a7ade1b1e0ee1
 soundalias,#hash_3a9c4fd77cfa77e8
 soundalias,#hash_3a9c53d77cfa7eb4
@@ -6730,7 +6730,7 @@ soundalias,#hash_6b45ce1c6599b410
 soundalias,#hash_6b48b1697c8053c4
 soundalias,#hash_6b56372df0bdb444
 soundalias,#hash_6b5b10deb16896d3
-soundalias,#hash_6b9160d5f97e5ecb
+soundalias,#wpn_electric_trap_sparks
 soundalias,#hash_6b956c4c5f08c463
 soundalias,#hash_6b956f4c5f08c97c
 soundalias,#hash_6b95704c5f08cb2f
@@ -7680,7 +7680,7 @@ client_fx,#maps/zm_office/fx8_teleporter_cooldown
 client_fx,#hash_77964e1811bb9a67
 client_fx,#hash_779eebf7aed3f4c0
 client_fx,#explosions/fx8_exp_grenade_metal
-client_fx,#hash_7a37324c1988abb5
+client_fx,#zombie/fx_val_chest_burst
 client_fx,#hash_7aa749f5bbcbbed8
 client_fx,#zm_ai/fx8_cata_plasma_blast
 client_fx,#hash_7af6b9564f0fbeca

@@ -102,9 +102,9 @@ function function_cfc02934()
 // Size: 0xac
 function event_handler[player_medal] codecallback_medal( eventstruct )
 {
-    if ( isdefined( eventstruct ) && isdefined( eventstruct.var_7fcb97e3 ) && isdefined( level.scoreinfo ) && isdefined( level.scoreinfo[ eventstruct.var_7fcb97e3 ] ) )
+    if ( isdefined( eventstruct ) && isdefined( eventstruct.medal_name ) && isdefined( level.scoreinfo ) && isdefined( level.scoreinfo[ eventstruct.medal_name ] ) )
     {
-        medalinfo = level.scoreinfo[ eventstruct.var_7fcb97e3 ];
+        medalinfo = level.scoreinfo[ eventstruct.medal_name ];
         self give_xp( "medal", #"medalxp", medalinfo[ #"xp" ] );
     }
 }
@@ -444,7 +444,7 @@ function private function_6a7970fe()
     
     if ( isdefined( player.avenger ) && player.avenger )
     {
-        player stats::function_d40764f3( #"hash_5387d5e6f15c6b55", 1 );
+        player stats::function_d40764f3( #"top_5_avenger", 1 );
     }
     
     if ( isdefined( player.items_picked_up ) && player.items_picked_up.size <= 1 )

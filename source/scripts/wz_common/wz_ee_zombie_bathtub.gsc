@@ -233,7 +233,7 @@ function function_1deb2b38( var_b721e8a9 )
         self notify( "<dev string:x89>" );
         self endon( "<dev string:x89>" );
         level endon( #"game_ended" );
-        level endon( #"hash_671b150516dd9870" );
+        level endon( #"golden_spork_debugged" );
         
         while ( true )
         {
@@ -242,7 +242,7 @@ function function_1deb2b38( var_b721e8a9 )
                 players = getplayers();
                 bathtub = struct::get( #"zombie_bathub", "<dev string:x9c>" );
                 function_613448ed( players[ 0 ], bathtub );
-                level notify( #"hash_671b150516dd9870" );
+                level notify( #"golden_spork_debugged" );
                 break;
             }
             

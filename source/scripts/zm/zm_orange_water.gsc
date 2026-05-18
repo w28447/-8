@@ -298,7 +298,7 @@ function function_ea0c7ed8()
         {
             if ( self istouching( e_water ) && !self laststand::player_is_in_laststand() )
             {
-                self function_b52931e7();
+                self player_entered_water();
                 return;
             }
         }
@@ -311,12 +311,12 @@ function function_ea0c7ed8()
 // Params 0
 // Checksum 0x94e977b5, Offset: 0xca0
 // Size: 0x1e4
-function function_b52931e7()
+function player_entered_water()
 {
     level endon( #"end_game" );
     self endon( #"death", #"player_frozen" );
     self.b_in_water = 1;
-    self notify( #"hash_42fcb8fa7aec0734" );
+    self notify( #"player_entered_water" );
     
     if ( !level flag::get( #"hash_69a9d00e65ee6c40" ) )
     {
@@ -359,7 +359,7 @@ function function_b52931e7()
 // Size: 0x5c
 function function_26a271e6()
 {
-    self endon( #"death", #"hash_668824b34b3076bc" );
+    self endon( #"death", #"player_exited_water" );
     wait 5;
     self thread zm_audio::create_and_play_dialog( #"freeze", #"exert" );
 }
@@ -381,7 +381,7 @@ function function_4ab00cab()
         {
             if ( !self istouching( e_water ) || self laststand::player_is_in_laststand() )
             {
-                self thread function_6cf1cc01();
+                self thread player_exited_water();
                 return;
             }
         }
@@ -392,12 +392,12 @@ function function_4ab00cab()
 // Params 0
 // Checksum 0x232ac3f0, Offset: 0x1000
 // Size: 0x134
-function function_6cf1cc01()
+function player_exited_water()
 {
     level endon( #"end_game" );
     self endon( #"death", #"player_frozen" );
     self.b_in_water = 0;
-    self notify( #"hash_668824b34b3076bc" );
+    self notify( #"player_exited_water" );
     
     if ( !level flag::get( #"hell_on_earth" ) && !level flag::get( #"trials_hell_on_earth" ) )
     {
@@ -417,7 +417,7 @@ function function_6cf1cc01()
 function function_6577cacc()
 {
     level endon( #"end_game" );
-    self endon( #"death", #"hash_668824b34b3076bc" );
+    self endon( #"death", #"player_exited_water" );
     
     if ( !isdefined( self.var_36a93d1 ) )
     {
@@ -470,7 +470,7 @@ function function_6577cacc()
 function function_121f8a53()
 {
     level endon( #"end_game" );
-    self endon( #"death", #"hash_668824b34b3076bc" );
+    self endon( #"death", #"player_exited_water" );
     
     while ( true )
     {
@@ -486,7 +486,7 @@ function function_121f8a53()
 function function_d2dd1f2b()
 {
     level endon( #"end_game" );
-    self endon( #"death", #"hash_42fcb8fa7aec0734" );
+    self endon( #"death", #"player_entered_water" );
     
     if ( !isdefined( self.var_36a93d1 ) || self.var_36a93d1 == 0 )
     {

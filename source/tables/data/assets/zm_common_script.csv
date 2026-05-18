@@ -33,7 +33,7 @@ scriptparsetree,#scripts/zm_common/load.csc
 scriptparsetree,#scripts/zm_common/gametypes/clientids.gsc
 scriptparsetree,#scripts/zm_common/talisman/zm_talisman_perk_mod_single.gsc
 scriptparsetree,#hash_d67878983e3d7c
-scriptparsetree,#hash_1d1e3c193b0a51d
+scriptparsetree,#scripts/zm_common/trials/zm_trial_damage_during_movement.gsc
 scriptparsetree,#scripts/zm_common/zm_traps.gsc
 scriptparsetree,#scripts/zm_common/zm_score.gsc
 scriptparsetree,#scripts/zm_common/talisman/zm_talisman_box_guarantee_lmg.gsc
@@ -287,7 +287,7 @@ scriptparsetree,#scripts/zm_common/talisman/zm_talisman_special_xp_rate.gsc
 scriptparsetree,#scripts/zm_common/ai/zm_ai_utility.csc
 scriptparsetree,#scripts/zm_common/gametypes/zgrief.csc
 scriptparsetree,#scripts/zm_common/gametypes/zclassic.gsc
-scriptparsetree,#hash_5afd8ff8f8304cc4
+scriptparsetree,#scripts/zm_common/trials/zm_trial_kill_enemies_for_health.csc
 scriptparsetree,#scripts/zm_common/zm_camos.gsc
 scriptparsetree,#scripts/zm_common/zm_hud.gsc
 scriptparsetree,#scripts/zm/perk/zm_perk_mod_electric_cherry.csc
@@ -390,7 +390,7 @@ scriptparsetree,#scripts/zm/powerup/zm_powerup_weapon_minigun.csc
 scriptparsetree,#scripts/zm_common/zm_inventory.csc
 scriptparsetree,#scripts/zm/powerup/zm_powerup_nuke.csc
 scriptparsetree,#scripts/zm/perk/zm_perk_staminup.gsc
-scriptparsetree,#hash_7b843bf90a032750
+scriptparsetree,#scripts/zm_common/trials/zm_trial_kill_enemies_for_health.gsc
 scriptparsetree,#scripts/zm_common/trials/zm_trial_repair_boards.gsc
 scriptparsetree,#scripts/zm_common/zm_player.gsc
 scriptparsetree,#scripts/zm_common/zm_ffotd.gsc

@@ -1715,7 +1715,7 @@ function function_16288b92( str_type, s_loc, mdl_key, vol_transform )
             v_offset = ( 0, 0, 0 );
             level thread scene::play( s_loc.script_scene, "Shot 1" );
             var_991cace9 = spawn( "script_origin", s_clock.origin );
-            var_991cace9 playloopsound( #"hash_36b6c118a7b66199" );
+            var_991cace9 playloopsound( #"amb_clock_tick_loop" );
             var_47323b73 = s_loc zm_unitrigger::create( &function_5c8eab18, 64, &function_d29a3f81 );
             var_47323b73.str_flag = "clock";
             var_47323b73.s_clock = s_clock;

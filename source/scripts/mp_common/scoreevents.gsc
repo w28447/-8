@@ -1736,7 +1736,7 @@ function updatemultikills( weapon, weaponclass, killstreak, victim )
     
     if ( self.var_70845d87 >= 2 )
     {
-        self challenges::function_46754062();
+        self challenges::multi_rcxd_kill();
         self contracts::increment_contract( #"hash_741b3c0ab3e7a55f" );
     }
     

@@ -238,9 +238,9 @@ function init()
     function_9afe34e3();
     gameobjects::register_allowed_gameobject( level.gametype );
     
-    if ( isdefined( level.var_d1455682 ) )
+    if ( isdefined( level.gametype_scriptbundle ) )
     {
-        gameobjectname = level.var_d1455682.gameobjectname;
+        gameobjectname = level.gametype_scriptbundle.gameobjectname;
         
         if ( isdefined( gameobjectname ) )
         {

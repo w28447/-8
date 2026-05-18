@@ -190,7 +190,7 @@ function function_216d0545( s_notify )
 // Size: 0x94
 function function_c9e23896()
 {
-    level endon( #"hash_3b0bcf867c23b993" );
+    level endon( #"ww_lvl2_quest_completed" );
     level waittill( #"hash_879562bd9e764a4" );
     var_9e030909 = getweapon( #"ww_random_ray_gun1" );
     level flag::init( "ww_lvl2_crafting_completed" );

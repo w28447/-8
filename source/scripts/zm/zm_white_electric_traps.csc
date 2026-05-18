@@ -31,8 +31,8 @@ function init_fx()
 {
     level._effect[ #"hash_6d40a3f1944d81b2" ] = #"hash_3a5776a6c23c9563";
     level._effect[ #"hash_3d339d7ae7b008d3" ] = #"hash_6a84f61b7271e098";
-    level._effect[ #"hash_6a97de5de4ae14a" ] = #"zombie/fx_tesla_shock_zmb";
-    level._effect[ #"hash_21e93d9faa37cad" ] = #"zombie/fx_tesla_shock_eyes_zmb";
+    level._effect[ #"electric_shock_ai" ] = #"zombie/fx_tesla_shock_zmb";
+    level._effect[ #"electric_shock_eyes_ai" ] = #"zombie/fx_tesla_shock_eyes_zmb";
 }
 
 // Namespace zm_white_electric_traps/zm_white_electric_traps
@@ -88,14 +88,14 @@ function electrocute_ai( localclientnum, oldval, newval, bnewent, binitialsnap, 
             str_tag = "J_Spine1";
         }
         
-        self.n_shock_eyes_fx = util::playfxontag( localclientnum, level._effect[ #"hash_21e93d9faa37cad" ], self, "J_Eyeball_LE" );
+        self.n_shock_eyes_fx = util::playfxontag( localclientnum, level._effect[ #"electric_shock_eyes_ai" ], self, "J_Eyeball_LE" );
         
         if ( isdefined( self ) && isdefined( self.n_shock_eyes_fx ) )
         {
             setfxignorepause( localclientnum, self.n_shock_eyes_fx, 1 );
         }
         
-        self.n_shock_fx = util::playfxontag( localclientnum, level._effect[ #"hash_6a97de5de4ae14a" ], self, str_tag );
+        self.n_shock_fx = util::playfxontag( localclientnum, level._effect[ #"electric_shock_ai" ], self, str_tag );
         
         if ( isdefined( self ) && isdefined( self.n_shock_eyes_fx ) )
         {

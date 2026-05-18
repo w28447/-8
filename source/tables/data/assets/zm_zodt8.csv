@@ -44272,7 +44272,7 @@ xmodel,#hash_15b2dd9ee00044ce
 xmodel,#hash_15bb4f7bd5036b47
 xmodel,#p8_zm_zod_light_fixture_1st_class_dining_ceiling
 xmodel,#p8_kit_zod_sta_05_door_26_left_painted_metal_base_01
-xmodel,#hash_15e8ba772c745d63
+xmodel,#p8_zm_zod_teleport_symbol_dimmed
 xmodel,#p8_zm_zod_forcastle_skylight_lrg_side_support_rt_01
 xmodel,#p7_zm_mob_vial_surgical_lrg
 xmodel,#p8_zm_zod_luggage_suitcase
@@ -48151,7 +48151,7 @@ fx,d#impacts/fx_bul_impact_boss_body_fatal_exit
 fx,#hash_6504822413e520f4
 fx,#hash_65320106e9ad659c
 fx,#hash_65623307b4fb73d4
-fx,#hash_661da9149933ecf9
+fx,#zm_ai/fx8_cata_water_purify_trail
 fx,#hash_665417582f6620bf
 fx,#hash_66bbf3875d2c3ae2
 fx,#hash_67081eed77a5ebcf
@@ -50110,7 +50110,7 @@ fx,d#hash_59422cff58693587
 fx,#explosions/fx8_exp_bomb_metal
 fx,d#hash_5aa886d21e284bdb
 fx,d#hash_5ace60d21e48da86
-fx,#hash_5b773dbbac0012ff
+fx,#zombie/fx8_power_door_amb_quest
 fx,d#hash_5dff92ad5af8a4e0
 fx,d#hash_61e9d709a09b7c5f
 fx,d#hash_62cdf132c17d42f6

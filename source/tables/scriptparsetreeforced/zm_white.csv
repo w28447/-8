@@ -45,7 +45,7 @@ client,#scripts/zm/archetype/archetype_zod_companion.csc
 client,#scripts/zm/weapons/zm_weap_freezegun.csc
 client,#scripts/zm_common/util/ai_dog_util.csc
 client,#scripts/zm/ai/zm_ai_mannequin.csc
-client,#script_4c8acdc77aa5d7a9
+client,#scripts\zm\ai\zm_ai_dog_electric.csc
 client,#scripts/core_common/ai/archetype_nova_crawler.csc
 client,#scripts/zm/powerup/zm_powerup_free_perk.csc
 client,#scripts/zm/ai/zm_ai_nova_crawler.csc

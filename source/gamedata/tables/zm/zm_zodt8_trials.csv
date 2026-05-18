@@ -25,7 +25,7 @@
 21,#level_headed,&#zmtrials/level_headed,&#zmtrials/level_headed_desc,&#,#acquire_weapon,#hero_lv3_weapon,#,#,#,#,#,#,#
 22,#cat_fight,&#zmtrials/cat_fight,&#zmtrials/cat_fight_desc,&#,#hash_3746f3c279f7a5ea,#10,#15,#20,#25,#,#,#,#
 23,#press_start,&#zmtrials/press_start,&#zmtrials/press_start_desc,&#,#reset_loadout,#,#,#,#,#,#,#,#
-24,#unhealthy,&#zmtrials/unhealthy,&#zmtrials/unhealthy_desc,&#,#hash_250115340b2e27a5,#,#,#,#,#,#,#,#
+24,#unhealthy,&#zmtrials/unhealthy,&#zmtrials/unhealthy_desc,&#,#kill_enemies_for_health,#,#,#,#,#,#,#,#
 25,#fore,&#zmtrials/fore,&#zmtrials/fore_desc,&#,#defend_area,#s_destination_forecastle,#hash_38c04b840a758d4,#hash_4722942539bdd37,#zone_forecastle_upper,#zone_forecastle_lower,#,#,#
 25,#,&#,&#,&#,#force_archetypes,#blight_father,#,#,#,#,#,#,#
 25,#,&#,&#,&#,#disable_hero_weapons,#,#,#,#,#,#,#,#

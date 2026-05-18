@@ -69,7 +69,7 @@ function init()
     clientfield::register( "scriptmover", "" + #"viper_bite_projectile_impact", 16000, 1, "counter" );
     scene::add_scene_func( #"aib_vign_cust_zm_red_boss_intro", &function_e46ef00b, "skip_started" );
     level flag::init( #"hash_79d95c7c3d63882d" );
-    level flag::init( #"hash_315fae99adaebfb4" );
+    level flag::init( #"stage_0_complete" );
     level flag::init( #"hash_7be183aa6a4cbe7" );
     level flag::init( #"hash_6dab61ca45a8eaea" );
     level flag::init( #"pegasus_attacking" );
@@ -112,15 +112,15 @@ function init()
     level.s_boss_battle.var_dc656db3 = 0;
     level.s_boss_battle.mdl_perseus = getent( "chaos_bolt_thrower", "targetname" );
     level.s_boss_battle.mdl_perseus hide();
-    level.s_boss_battle.var_c67e8352 = getent( "chaos_bolt_thrower_shield", "targetname" );
-    level.s_boss_battle.var_c67e8352 hide();
-    level.s_boss_battle.var_5e9e4c15 = getent( "chaos_bolt_thrower_sword", "targetname" );
-    level.s_boss_battle.var_5e9e4c15 hide();
+    level.s_boss_battle.mdl_perseus_shield = getent( "chaos_bolt_thrower_shield", "targetname" );
+    level.s_boss_battle.mdl_perseus_shield hide();
+    level.s_boss_battle.mdl_perseus_sword = getent( "chaos_bolt_thrower_sword", "targetname" );
+    level.s_boss_battle.mdl_perseus_sword hide();
     level.s_boss_battle.mdl_perseus val::set( "zm_red_boss_fight", "takedamage", 1 );
     level.s_boss_battle.mdl_perseus val::set( "zm_red_boss_fight", "allowdeath", 1 );
     level.s_boss_battle.mdl_perseus.health = 99999;
     level.s_boss_battle.mdl_perseus.b_override_explosive_damage_cap = 1;
-    level.s_boss_battle.var_d82d0e73 = array( level.s_boss_battle.mdl_perseus, level.s_boss_battle.var_c67e8352, level.s_boss_battle.var_5e9e4c15 );
+    level.s_boss_battle.var_d82d0e73 = array( level.s_boss_battle.mdl_perseus, level.s_boss_battle.mdl_perseus_shield, level.s_boss_battle.mdl_perseus_sword );
     level.s_boss_battle.var_b7fe5d46 = 20000;
     level.s_boss_battle.var_36f0e240 = 0;
     level.s_boss_battle.var_4652a428 = 6;
@@ -243,8 +243,8 @@ function function_3a2efd4e( b_cheated = 0, var_7982b1c8 = 1, var_8ef91a04 = 1 )
     }
     
     level.s_boss_battle.mdl_perseus show();
-    level.s_boss_battle.var_c67e8352 show();
-    level.s_boss_battle.var_5e9e4c15 show();
+    level.s_boss_battle.mdl_perseus_shield show();
+    level.s_boss_battle.mdl_perseus_sword show();
     
     if ( !( isdefined( level.var_27a02034 ) && level.var_27a02034 ) )
     {
@@ -340,7 +340,7 @@ function function_dfaf17c8()
         }
     }
     
-    level flag::clear( #"hash_315fae99adaebfb4" );
+    level flag::clear( #"stage_0_complete" );
     level flag::clear( #"perseus_attacking" );
     level flag::clear( #"hash_59553ef93adcfe51" );
     level flag::clear( #"pegasus_attacking" );
@@ -482,7 +482,7 @@ function function_756474bf()
     level flag::set( #"hash_79d95c7c3d63882d" );
     zm_bgb_anywhere_but_here::function_886fce8f();
     level.zombie_ai_limit = var_12e5a581;
-    level flag::wait_till( #"hash_315fae99adaebfb4" );
+    level flag::wait_till( #"stage_0_complete" );
     wait 3;
     level thread function_263a0b8();
     level flag::wait_till_timeout( 300, #"hash_15ba89b2357ff618" );
@@ -1250,7 +1250,7 @@ function function_517bbfad( var_2f02900b )
     
     callback::remove_on_ai_killed( &function_a362f6ed );
     callback::remove_on_ai_spawned( &function_5e02e791 );
-    level flag::set( #"hash_315fae99adaebfb4" );
+    level flag::set( #"stage_0_complete" );
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
@@ -1336,7 +1336,7 @@ function function_263a0b8()
 // Size: 0x3d0
 function function_f6306dea()
 {
-    level endon( #"perseus_defeated", #"hash_3496e98116b2be19", #"trial_round_end" );
+    level endon( #"perseus_defeated", #"stage_4_start", #"trial_round_end" );
     e_perseus = level.s_boss_battle.mdl_perseus;
     
     if ( !( isdefined( level.var_42ea19b1 ) && level.var_42ea19b1 ) )
@@ -1387,8 +1387,8 @@ function function_f6306dea()
                 
                 if ( math::cointoss() || var_c47b0cbf )
                 {
-                    level thread function_4a58a0( e_perseus );
-                    level waittill( #"hash_78452700119fc913" );
+                    level thread teleport_attack( e_perseus );
+                    level waittill( #"teleport_attack_complete" );
                 }
                 else
                 {
@@ -1654,7 +1654,7 @@ function private function_ca661e4b( var_956f2977, _town_pap_quest_complete )
 // Size: 0x458
 function function_21ef9bb7( a_ents )
 {
-    level endon( #"strafing_run_complete", #"boss_stunned", #"hash_6b4f82e61af7cb08" );
+    level endon( #"strafing_run_complete", #"boss_stunned", #"stage_3_stun" );
     
     if ( isarray( a_ents ) )
     {
@@ -2053,7 +2053,7 @@ function function_290d42b8( b_skipped = 0 )
 // Params 1
 // Checksum 0xa5a90534, Offset: 0x71c0
 // Size: 0x640
-function function_4a58a0( e_perseus )
+function teleport_attack( e_perseus )
 {
     level endon( #"boss_battle_over", #"trial_round_end" );
     
@@ -2099,7 +2099,7 @@ function function_4a58a0( e_perseus )
     if ( level.s_boss_battle.var_ad3f929f >= level.s_boss_battle.var_1e4f5dab )
     {
         level thread function_14833fc2();
-        level notify( #"hash_6b4f82e61af7cb08" );
+        level notify( #"stage_3_stun" );
         level thread function_84fac8d5( 3, 1 );
         e_perseus thread scene::play( #"aib_vign_cust_zm_red_boss1_stg3_chrg_atk_01", "fail_start", level.s_boss_battle.var_d82d0e73 );
         
@@ -2153,7 +2153,7 @@ function function_4a58a0( e_perseus )
     
     e_perseus.origin = level.s_boss_battle.s_pinnacle.origin;
     e_perseus.angles = ( 0, 90, 0 );
-    level notify( #"hash_78452700119fc913" );
+    level notify( #"teleport_attack_complete" );
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle
@@ -2250,7 +2250,7 @@ function function_662093d4( player )
 // Size: 0x17c
 function function_e069d23c( a_ents )
 {
-    level endon( #"hash_3032e59c42d961c5", #"hash_6b4f82e61af7cb08", #"trial_round_end" );
+    level endon( #"stage_3_melee_done", #"stage_3_stun", #"trial_round_end" );
     level waittill( #"boss_melee_hit" );
     e_perseus = level.s_boss_battle.mdl_perseus;
     v_loc = e_perseus gettagorigin( "tag_weapon_right" );
@@ -2813,7 +2813,7 @@ function function_85593a2( v_point )
 // Size: 0x224
 function perseus_teleport_fx( v_destination )
 {
-    e_sword = level.s_boss_battle.var_5e9e4c15;
+    e_sword = level.s_boss_battle.mdl_perseus_sword;
     e_perseus = level.s_boss_battle.mdl_perseus;
     v_forward = anglestoforward( e_perseus.angles );
     level waittill( #"play_teleport_tell_fx" );
@@ -2900,7 +2900,7 @@ function function_6401a80e()
     
     while ( true )
     {
-        s_notify = self waittill( #"hash_1c35eb15aa210d6", #"fasttravel_finished", #"hash_178a3d0115bc972e" );
+        s_notify = self waittill( #"player_begin_fasttravel_rail", #"fasttravel_finished", #"fasttravel_cooldown_done" );
         
         if ( !isdefined( s_notify.var_9fa6220c ) || !isdefined( s_notify.var_9fa6220c.script_noteworthy ) || s_notify.var_9fa6220c.script_noteworthy != "traverse" )
         {
@@ -2926,7 +2926,7 @@ function function_6401a80e()
         
         switch ( s_notify._notify )
         {
-            case #"hash_1c35eb15aa210d6":
+            case #"player_begin_fasttravel_rail":
                 if ( isdefined( var_2d54d86e ) )
                 {
                     level flag::set( var_2d54d86e );
@@ -2968,7 +2968,7 @@ function function_6401a80e()
                 }
                 
                 break;
-            case #"hash_178a3d0115bc972e":
+            case #"fasttravel_cooldown_done":
                 if ( !( isdefined( var_e1284bee.var_5a099a2d ) && var_e1284bee.var_5a099a2d ) )
                 {
                     self zm_red_fasttravel::function_28deccf1( var_e1284bee, 1 );
@@ -2994,7 +2994,7 @@ function function_5fc81f0a( e_target )
     zm_weap_hand_gaia::function_5fc81f0a( e_target );
     zm_weap_hand_hemera::function_5fc81f0a( e_target );
     zm_weap_hand_ouranos::function_5fc81f0a( e_target );
-    s_result = level waittill( #"strafing_run_complete", #"boss_stunned", #"start_thunderstorm", #"hash_78452700119fc913", #"trial_round_end" );
+    s_result = level waittill( #"strafing_run_complete", #"boss_stunned", #"start_thunderstorm", #"teleport_attack_complete", #"trial_round_end" );
     zm_weap_hand_charon::function_6d783edd( e_target );
     zm_weap_hand_gaia::function_6d783edd( e_target );
     zm_weap_hand_hemera::function_6d783edd( e_target );

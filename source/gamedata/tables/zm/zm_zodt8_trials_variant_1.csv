@@ -54,7 +54,7 @@
 22,#cat_fight,&#hash_de300c470db85c8,&#hash_67e9b1725f4892d0,&#,#hash_3746f3c279f7a5ea,#15,#20,#25,#30,#,#,#,#
 22,#,&#,&#,&#,#double_damage,#,#,#,#,#,#,#,#
 23,#press_start,&#hash_31952300837d21df,&#hash_6ae39edd46d28071,&#,#reset_loadout,#zombie_fists,#,#,#,#,#,#,#
-24,#unhealthy,&#hash_53312ce351118dea,&#hash_e2ea7c626d786da,&#,#hash_250115340b2e27a5,#,#50,#15,#1,#25,#,#,#
+24,#unhealthy,&#hash_53312ce351118dea,&#hash_e2ea7c626d786da,&#,#kill_enemies_for_health,#,#50,#15,#1,#25,#,#,#
 24,#,&#,&#,&#,#round_ending_zone,#,#zone_engine,#zone_upper_engine_room,#,#,#,#,#
 25,#fore,&#hash_2b3de11ad126b0d1,&#hash_7042938200bbf8eb,&#,#defend_area,#s_destination_forecastle,#hash_38c04b840a758d4,#hash_4722942539bdd37,#zone_forecastle_upper,#zone_forecastle_lower,#,#,#
 25,#,&#,&#,&#,#force_archetypes,#blight_father,#,#,#,#,#,#,#
@@ -63,11 +63,11 @@
 26,#fast_times,&#hash_135c709adddc1d4c,&#hash_7311ba12d382bab4,&#,#timeout,#hash_6e1d873c28de9fc2,#hash_644ab7ffec4f69b0,#15,#120,#240,#300,#300,#
 26,#,&#,&#,&#,#close_quarters,#,#,#,#,#,#,#,#
 27,#better_late_than_lever,&#hash_3a063977a514dc83,&#hash_19e29bd4de29fc15,&#,#restrict_loadout,#leveraction,#,#,#,#,#,#,#
-27,#,&#,&#,&#,#hash_322751dde777c910,#ads,#25,#,#,#,#,#,#
+27,#,&#,&#,&#,#damage_during_movement,#ads,#25,#,#,#,#,#,#
 28,#heads_up_deactivated,&#hash_1869d963fd636a2e,&#hash_1ede7e0a996d091e,&#,#disable_hud,#,#,#,#,#,#,#,#
 28,#,&#,&#,&#,#no_ads,#,#,#,#,#,#,#,#
 29,#unpacked,&#hash_62e5639262d1db05,&#hash_30f600e52b287acf,&#,#disable_upgraded_weapons,#,#,#,#,#,#,#,#
-29,#,&#,&#,&#,#hash_322751dde777c910,#sprint,#5,#,#,#,#,#,#
+29,#,&#,&#,&#,#damage_during_movement,#sprint,#5,#,#,#,#,#,#
 29,#,&#,&#,&#,#fast_travel_rush,#60,#,#,#,#,#,#,#
 30,#the_grand_finale,&#hash_5caca63ea5d79d4f,&#hash_190dd5ec5f5612c1,&#,#friendly_fire,#3,#,#,#,#,#,#,#
 30,#,&#,&#,&#,#defend_area,#s_destination_grand_staircase,#hash_ac52d58f0973396,#hash_319a657e16bbd595,#zone_grand_stairs_a_deck,#zone_grand_stairs_b_deck,#zone_grand_stairs_c_deck,#zone_grand_stairs_d_deck,#zone_grand_stairs_bottom

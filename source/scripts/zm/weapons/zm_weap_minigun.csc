@@ -27,8 +27,8 @@ function __init__()
     clientfield::register( "allplayers", "minigun_launcher_muzzle_fx", 1, 1, "counter", &minigun_launcher_muzzle_fx, 0, 0 );
     clientfield::register( "missile", "minigun_nuke_rob", 1, 1, "int", &minigun_nuke_rob, 0, 0 );
     clientfield::register( "toplayer", "minigun_nuke_rumble", 1, 1, "counter", &minigun_nuke_rumble, 0, 0 );
-    level._effect[ #"hash_319b0ab74b8b1f3c" ] = #"hash_296e81a6f8cea122";
-    level._effect[ #"hash_31a216b74b91524e" ] = #"hash_296775a6f8c86e10";
+    level._effect[ #"launcher_flash_1p" ] = #"hash_296e81a6f8cea122";
+    level._effect[ #"launcher_flash_3p" ] = #"hash_296775a6f8c86e10";
 }
 
 // Namespace zm_weap_minigun/zm_weap_minigun
@@ -93,10 +93,10 @@ function minigun_launcher_muzzle_fx( localclientnum, oldval, newval, bnewent, bi
     
     if ( self zm_utility::is_first_person( localclientnum ) )
     {
-        self.var_83a410ad = playviewmodelfx( localclientnum, level._effect[ #"hash_319b0ab74b8b1f3c" ], "tag_flash2" );
+        self.var_83a410ad = playviewmodelfx( localclientnum, level._effect[ #"launcher_flash_1p" ], "tag_flash2" );
         return;
     }
     
-    self.var_83a410ad = util::playfxontag( localclientnum, level._effect[ #"hash_31a216b74b91524e" ], self, "tag_flash2" );
+    self.var_83a410ad = util::playfxontag( localclientnum, level._effect[ #"launcher_flash_3p" ], self, "tag_flash2" );
 }
 

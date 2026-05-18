@@ -167,7 +167,7 @@ function function_25f97da0()
     
     while ( true )
     {
-        s_result = self waittill( #"hash_1c35eb15aa210d6" );
+        s_result = self waittill( #"player_begin_fasttravel_rail" );
         
         if ( isdefined( s_result.var_9fa6220c ) && isdefined( s_result.var_9fa6220c.script_string ) && s_result.var_9fa6220c.script_string == "spartan_monument" )
         {
@@ -188,7 +188,7 @@ function function_e968fd4f()
     
     while ( true )
     {
-        s_result = self waittill( #"hash_1c35eb15aa210d6" );
+        s_result = self waittill( #"player_begin_fasttravel_rail" );
         
         if ( isdefined( s_result.var_9fa6220c ) && isdefined( s_result.var_9fa6220c.script_string ) && s_result.var_9fa6220c.script_string == "center_of_the_world" )
         {
@@ -357,7 +357,7 @@ function function_c52e8ba( e_player, var_8d5d092c )
         }
         else
         {
-            self.hint_string[ n_player_index ] = #"hash_7667bd0f83307360";
+            self.hint_string[ n_player_index ] = #"zombie/generic_fasttravel_cooldown";
         }
         
         b_result = 1;
@@ -440,7 +440,7 @@ function function_c52e8ba( e_player, var_8d5d092c )
                 self.hint_string[ n_player_index ] = zm_utility::function_d6046228( #"hash_746e33772cb75300", #"hash_67f9ed805de4782c" );
                 break;
             default:
-                self.hint_string[ n_player_index ] = zm_utility::function_d6046228( #"hash_2731cc5c1208e2e4", #"hash_47b20f457b370888" );
+                self.hint_string[ n_player_index ] = zm_utility::function_d6046228( #"zombie/fasttravel_generic_use", #"zombie/fasttravel_generic_use_keyboard" );
                 break;
         }
         

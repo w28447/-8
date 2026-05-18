@@ -702,13 +702,13 @@ function init_announcer()
     zm_audio::sndannouncervoxadd( #"hash_28dbb5b91d8a954e", #"vox_imp_jar_pickup" );
     zm_audio::sndannouncervoxadd( #"hash_3d5fccf222ba3ab6", #"vox_m_quest_danu_complete" );
     zm_audio::sndannouncervoxadd( #"hash_5719edb294612f4c", #"hash_e36933881b70a00" );
-    zm_audio::sndannouncervoxadd( #"hash_42bbe4989b9a4cbe", #"hash_7ce238dcabc6916d" );
-    zm_audio::sndannouncervoxadd( #"main_quest_defend_complete", #"hash_21f31b9d98f1e332" );
+    zm_audio::sndannouncervoxadd( #"hash_42bbe4989b9a4cbe", #"vox_m_quest_zeus_complete" );
+    zm_audio::sndannouncervoxadd( #"main_quest_defend_complete", #"vox_m_quest_odin_complete" );
     zm_audio::sndannouncervoxadd( #"hash_bc10546af7f7b09", #"hash_2c87f4c5bf8b38f4" );
     zm_audio::sndannouncervoxadd( #"hash_70f3ffdacf094858", #"hash_59983ce3c5c98bea" );
     zm_audio::sndannouncervoxadd( #"hash_5b34919a0ea0ac80", #"hash_6394a17f6fd9a269" );
     zm_audio::sndannouncervoxadd( #"hash_50cc6c9d88534d5c", #"hash_34eb08732349aadf" );
-    zm_audio::sndannouncervoxadd( #"hash_412f0a99d31887f", #"hash_4950f09ba2a9a065" );
+    zm_audio::sndannouncervoxadd( #"hash_412f0a99d31887f", #"vox_m_quest_ra_complete" );
     zm_audio::sndannouncervoxadd( #"hash_73183fb7534361f", #"hash_f9de473901d0e7d" );
     zm_audio::sndannouncervoxadd( #"hash_6211a32e1a9f23fa", #"hash_518bb65266b74f86" );
     zm_audio::sndannouncervoxadd( #"hash_24e22336a0d988d0", #"hash_7af55f23689f2eb4" );

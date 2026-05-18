@@ -37239,7 +37239,7 @@ weapontunables,#zombie_fists_tunables_zm
 weapontunables,#pistol_burst_t8_upgraded_tunables_zm
 weapontunables,#hero_chakram_lh_lv2_tunables_zm
 weapontunables,#lmg_heavy_t8_upgraded_tunables_zm
-weapontunables,#hash_2fa3b3a7f2fe36d9
+weapontunables,#hero_hammer_lv3_bolt_tunables_zm
 weapontunables,#smg_fastburst_t8_upgraded_tunables_zm
 weapontunables,#zombie_perk_bottle_ethereal_razor_tunables
 weapontunables,#hash_31588f4b46dc9833
@@ -37299,7 +37299,7 @@ weapontunables,#zombie_perk_bottle_dying_wish_tunables
 weapontunables,#syrette_tunables_zm
 weapontunables,#zombie_perk_bottle_cooldown_tunables
 weapontunables,#pistol_topbreak_t8_tunables_zm
-weapontunables,#hash_62ea5a575bcbef3e
+weapontunables,#shotgun_trenchgun_t8_upgraded_grenade_tunables_zm
 weapontunables,#hero_scepter_lv2_tunables_zm
 weapontunables,#sniper_quickscope_t8_upgraded_tunables_zm
 weapontunables,#zombie_bgb_grab_tunables
@@ -51823,7 +51823,7 @@ fx,#hash_4a698bc13cf5b60e
 fx,#hash_4a6d7ac13cf98202
 fx,#hash_4a8b80c13d1289c3
 fx,d#hash_4ba59b6080f4632d
-fx,#hash_4bd4c9b0fb97f425
+fx,#wz/fx8_zm_box_marker_rainbow
 fx,d#hash_4bdf73fbc42b7161
 fx,d#hash_4be65ffbc4316e13
 fx,d#hash_4bfca9124b4b177e
@@ -53956,7 +53956,7 @@ weapon,#hero_scepter_lv2_zm
 weapon,#hero_sword_pistol_lv2_zm
 weapon,#hero_chakram_lv2_zm
 weapon,#hero_hammer_lv3_zm
-weapon,#hash_2b0714966c7f0bba
+weapon,#hero_hammer_lv3_bolt_zm
 weapon,#hero_hammer_lv1_zm
 weapon,#zombie_perk_totem_death_dash
 weapon,#hero_sword_pistol_lv1_zm
@@ -54140,7 +54140,7 @@ playerroletemplate,d#prt_zm_richtofen_whi
 playerroletemplate,d#prt_zm_nikolai_whi
 playerroletemplate,d#prt_zm_marlton
 characterbodytype,d#hash_6b5c057f2fa03fb
-weapon,#hash_26d21af0213841b
+weapon,#shotgun_trenchgun_t8_upgraded_grenade_zm
 weapon,#smg_handling_t8_upgraded_lh_zm
 weapon,#acog_ar_damage_t8_upgraded_zm
 weapon,#frag_grenade_zm

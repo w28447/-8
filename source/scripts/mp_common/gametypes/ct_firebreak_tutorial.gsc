@@ -2371,7 +2371,7 @@ function function_344aee09( _hash )
             }
             
             e_player thread ct_utils::function_79957328( undefined, str_respawn );
-            level waittill( #"hash_603de7ab282bcda9" );
+            level waittill( #"restore_player_respawned" );
             e_player thread ct_utils::function_49e0c5bc( 1 );
             e_player ct_vo::function_3ca1b77d( 1 );
             var_3069da18 = 1;
@@ -2507,29 +2507,29 @@ function function_2969ccb4( var_43d50d89 = 1, var_463b195d = 1 )
                 case #"hash_5db424be8b8d04a8":
                     e_player thread ct_utils::function_329f9ba6( #"hash_6d1f5359302a862c", 10, "<dev string:x3f6>", 2, 1 );
                     break;
-                case #"hash_3ca93ce413cad85a":
+                case #"vo_test_1a":
                     a_str_vo = array( "<dev string:x3fe>", "<dev string:x41e>" );
                     e_player thread function_7d10f455( a_str_vo );
                     break;
-                case #"hash_3cad24e413ce9869":
+                case #"vo_test_2a":
                     a_str_vo = array( "<dev string:x43e>", "<dev string:x462>" );
                     e_player thread function_7d10f455( a_str_vo );
                     break;
-                case #"hash_3ca93be413cad6a7":
+                case #"vo_test_1b":
                     a_str_vo = array( "<dev string:x3fe>", "<dev string:x41e>" );
                     e_player thread function_7d10f455( a_str_vo );
                     break;
-                case #"hash_3cad21e413ce9350":
+                case #"vo_test_2b":
                     a_str_vo = array( "<dev string:x43e>", "<dev string:x462>" );
                     e_player thread function_7d10f455( a_str_vo );
                     break;
-                case #"hash_60bb5681fede555f":
+                case #"vo_test_1":
                     self ct_vo::function_831e0584( array( "<dev string:x43e>", "<dev string:x462>" ) );
                     break;
-                case #"hash_60bb5781fede5712":
+                case #"vo_test_2":
                     self thread ct_vo::function_831e0584( array( "<dev string:x43e>", "<dev string:x462>" ) );
                     break;
-                case #"hash_60bb5881fede58c5":
+                case #"vo_test_3":
                     e_player function_53e140e6();
                     break;
             }

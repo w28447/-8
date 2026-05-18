@@ -465,7 +465,7 @@ function function_45d34164( var_2970d97, var_9c8d914, var_af764233, var_f1111d99
     }
     
     ct_utils::function_c2a10fc();
-    level notify( #"hash_6ae51860f226eb91" );
+    level notify( #"tripwire_complete_msg" );
 }
 
 // Namespace ct_nomad_tutorial/ct_nomad_tutorial
@@ -747,7 +747,7 @@ function function_afa281f4()
     level notify( #"vo_callout" );
     level.var_4255e463 = 0;
     level.var_e882762e = 1;
-    function_45d34164( array( #"hash_222b4b892fd765a2" ), 40, #"hash_72958f658edea7f4", 2, undefined, 0 );
+    function_45d34164( array( #"s_nomad_tripwire_obj3_goto_1" ), 40, #"hash_72958f658edea7f4", 2, undefined, 0 );
     function_45d34164( undefined, 40, #"hash_72a68f658eed1b27", 2, undefined, 1 );
     ct_utils::function_d00e0eeb();
     level.var_e882762e = undefined;
@@ -1933,7 +1933,7 @@ function function_e8009771()
 // Size: 0x2a8
 function function_621ffb5a()
 {
-    level endon( #"hash_6ae51860f226eb91" );
+    level endon( #"tripwire_complete_msg" );
     
     switch ( level.var_ad7c0539 )
     {

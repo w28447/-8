@@ -282,11 +282,11 @@ function player_stats_init()
     
     if ( isdefined( level.var_1aa5a6d6 ) )
     {
-        self stats::set_stat( #"hash_1c539a1b16b48b16", level.var_1aa5a6d6 );
+        self stats::set_stat( #"current_event_calling", level.var_1aa5a6d6 );
     }
     else
     {
-        self stats::set_stat( #"hash_1c539a1b16b48b16", 0 );
+        self stats::set_stat( #"current_event_calling", 0 );
     }
     
     if ( getdvarint( #"daily_callings_enabled_zm", 0 ) )
@@ -1965,12 +1965,12 @@ function function_cb8a5c29()
 {
     while ( true )
     {
-        s_result = level waittilltimeout( 60, #"hash_3fdaafe712252cf5", #"trap_kill" );
+        s_result = level waittilltimeout( 60, #"zombie_attacked_by_player", #"trap_kill" );
         
         if ( s_result._notify == "timeout" )
         {
             level.var_b8cbd9e6 = 1;
-            level waittill( #"hash_3fdaafe712252cf5", #"trap_kill" );
+            level waittill( #"zombie_attacked_by_player", #"trap_kill" );
             level.var_b8cbd9e6 = undefined;
         }
     }

@@ -155,7 +155,7 @@ function private function_989d336d( localclientnum )
                 var_8e5bb835 = playerhealth;
             }
             
-            var_387f8be9 = self function_a6fe4166();
+            shrapnel_stage = self function_a6fe4166();
             var_ba6de045 = self.var_d9167e48 === 1;
             
             if ( var_ba6de045 )
@@ -172,7 +172,7 @@ function private function_989d336d( localclientnum )
             
             shouldenabledoverlay = 0;
             
-            if ( var_387f8be9 > 0 && playerhealth <= var_89524e53 )
+            if ( shrapnel_stage > 0 && playerhealth <= var_89524e53 )
             {
                 var_df99eba3 = 1;
             }
@@ -219,7 +219,7 @@ function function_e31d7cf9( playerhealth, priorplayerhealth, basehealth )
         return ( getdvarint( #"hash_5a4cebcd3aef8f0", 90 ) / basehealth );
     }
     
-    return getdvarint( #"hash_213e599222859525", 90 ) / basehealth;
+    return getdvarint( #"shrapnel_stage_1", 90 ) / basehealth;
 }
 
 // Namespace shrapnel/shrapnel
@@ -228,7 +228,7 @@ function function_e31d7cf9( playerhealth, priorplayerhealth, basehealth )
 // Size: 0x40
 function function_bf9b3d6( playerhealth, basehealth )
 {
-    return getdvarint( #"hash_213e599222859525", 90 ) / basehealth;
+    return getdvarint( #"shrapnel_stage_1", 90 ) / basehealth;
 }
 
 // Namespace shrapnel/shrapnel
@@ -243,17 +243,17 @@ function private function_4e9cfc19( localclientnum, playerhealth, priorplayerhea
     }
     
     var_89524e53 = self function_e31d7cf9( playerhealth, priorplayerhealth, basehealth );
-    stage2_threshold = getdvarint( #"hash_213e56922285900c", 69 ) / basehealth;
-    stage3_threshold = getdvarint( #"hash_213e5792228591bf", 29 ) / basehealth;
-    stage4_threshold = getdvarint( #"hash_213e549222858ca6", 1 ) / basehealth;
+    stage2_threshold = getdvarint( #"shrapnel_stage_2", 69 ) / basehealth;
+    stage3_threshold = getdvarint( #"shrapnel_stage_3", 29 ) / basehealth;
+    stage4_threshold = getdvarint( #"shrapnel_stage_4", 1 ) / basehealth;
     var_5142946f = self.var_996ceac2;
-    var_387f8be9 = self function_a6fe4166();
+    shrapnel_stage = self function_a6fe4166();
     
-    if ( var_387f8be9 != var_5142946f )
+    if ( shrapnel_stage != var_5142946f )
     {
-        if ( var_387f8be9 > 0 )
+        if ( shrapnel_stage > 0 )
         {
-            self.var_f08b8b9 = level.var_67f97f4[ var_387f8be9 ];
+            self.var_f08b8b9 = level.var_67f97f4[ shrapnel_stage ];
             filter::map_material_helper_by_localclientnum( localclientnum, self.var_f08b8b9 );
             
             if ( self.shrapnel_enabled )
@@ -263,7 +263,7 @@ function private function_4e9cfc19( localclientnum, playerhealth, priorplayerhea
         }
     }
     
-    self.var_996ceac2 = var_387f8be9;
+    self.var_996ceac2 = shrapnel_stage;
 }
 
 // Namespace shrapnel/shrapnel

@@ -123,7 +123,7 @@ function function_8bddfcc3()
         iprintlnbold( "<dev string:x5d>" );
     #/
     
-    level notify( #"hash_4d3a2c46c22b012e" );
+    level notify( #"cage_challenges_complete" );
     function_bc0ec5b3( 0 );
 }
 
@@ -133,7 +133,7 @@ function function_8bddfcc3()
 // Size: 0xa8
 function function_1b350677()
 {
-    level endon( #"hash_4d3a2c46c22b012e" );
+    level endon( #"cage_challenges_complete" );
     
     while ( true )
     {

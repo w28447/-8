@@ -25,8 +25,8 @@ function __init__()
     level._effect[ #"hash_1158b2e47e6e57e0" ] = #"hash_26ac45625e745ea8";
     level._effect[ #"ray_gun_mk2v_stun_arc" ] = #"hash_137c5ba31b8e6395";
     level._effect[ #"ray_gun_mk2v_stun_zap" ] = #"zm_weapons/fx8_aat_elec_torso";
-    level._effect[ #"hash_670449447f448da" ] = #"zm_weapons/fx8_aat_elec_eye";
-    level._effect[ #"hash_66d2b9447f1e888" ] = #"zm_weapons/fx8_aat_elec_exp";
+    level._effect[ #"ray_gun_mk2v_stun_zap_eye" ] = #"zm_weapons/fx8_aat_elec_eye";
+    level._effect[ #"ray_gun_mk2v_stun_zap_exp" ] = #"zm_weapons/fx8_aat_elec_exp";
     level._effect[ #"ray_gun_mk2v_death" ] = #"hash_4b0f5fb2f910fe94";
     clientfield::register( "allplayers", "" + #"ray_gun_mk2v_beam_fire", 20000, 2, "int", &beam_fire, 0, 1 );
     clientfield::register( "allplayers", "" + #"ray_gun_mk2v_beam_flash", 20000, 1, "int", &flash_fx, 0, 0 );
@@ -162,7 +162,7 @@ function function_84a63db9( localclientnum, oldval, newval, bnewent, binitialsna
         }
         
         self.var_d4f84669 = util::playfxontag( localclientnum, level._effect[ #"ray_gun_mk2v_stun_zap" ], self, str_fx_tag );
-        self.var_38e2508e = util::playfxontag( localclientnum, level._effect[ #"hash_670449447f448da" ], self, "j_eyeball_le" );
+        self.var_38e2508e = util::playfxontag( localclientnum, level._effect[ #"ray_gun_mk2v_stun_zap_eye" ], self, "j_eyeball_le" );
         
         if ( !isdefined( self.var_12941c1d ) )
         {
@@ -202,7 +202,7 @@ function function_97482bc3( localclientnum, oldval, newval, bnewent, binitialsna
             v_fx_origin = self.origin;
         }
         
-        playfx( localclientnum, level._effect[ #"hash_66d2b9447f1e888" ], v_fx_origin );
+        playfx( localclientnum, level._effect[ #"ray_gun_mk2v_stun_zap_exp" ], v_fx_origin );
         self playsound( localclientnum, #"zmb_aat_kilowatt_explode" );
     }
 }

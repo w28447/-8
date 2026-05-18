@@ -1202,12 +1202,12 @@
     // Size: 0x370, Type: dev
     function function_3b534f9c()
     {
-        level.zombie_devgui_gun = getdvarstring( #"hash_1c9225f4f6e82068" );
+        level.zombie_devgui_gun = getdvarstring( #"zombie_devgui_gun_player1" );
         
         for ( ;; )
         {
             wait 0.1;
-            cmd = getdvarstring( #"hash_1c9225f4f6e82068" );
+            cmd = getdvarstring( #"zombie_devgui_gun_player1" );
             
             if ( isdefined( cmd ) && cmd.size > 0 )
             {
@@ -1219,11 +1219,11 @@
                     players[ 0 ] thread zombie_devgui_weapon_give( level.zombie_devgui_gun );
                 }
                 
-                setdvar( #"hash_1c9225f4f6e82068", "<dev string:x38>" );
+                setdvar( #"zombie_devgui_gun_player1", "<dev string:x38>" );
             }
             
             wait 0.1;
-            cmd = getdvarstring( #"hash_1c9228f4f6e82581" );
+            cmd = getdvarstring( #"zombie_devgui_gun_player2" );
             
             if ( isdefined( cmd ) && cmd.size > 0 )
             {
@@ -1235,11 +1235,11 @@
                     players[ 1 ] thread zombie_devgui_weapon_give( level.zombie_devgui_gun );
                 }
                 
-                setdvar( #"hash_1c9228f4f6e82581", "<dev string:x38>" );
+                setdvar( #"zombie_devgui_gun_player2", "<dev string:x38>" );
             }
             
             wait 0.1;
-            cmd = getdvarstring( #"hash_1c9227f4f6e823ce" );
+            cmd = getdvarstring( #"zombie_devgui_gun_player3" );
             
             if ( isdefined( cmd ) && cmd.size > 0 )
             {
@@ -1251,11 +1251,11 @@
                     players[ 2 ] thread zombie_devgui_weapon_give( level.zombie_devgui_gun );
                 }
                 
-                setdvar( #"hash_1c9227f4f6e823ce", "<dev string:x38>" );
+                setdvar( #"zombie_devgui_gun_player3", "<dev string:x38>" );
             }
             
             wait 0.1;
-            cmd = getdvarstring( #"hash_1c922af4f6e828e7" );
+            cmd = getdvarstring( #"zombie_devgui_gun_player4" );
             
             if ( isdefined( cmd ) && cmd.size > 0 )
             {
@@ -1267,7 +1267,7 @@
                     players[ 3 ] thread zombie_devgui_weapon_give( level.zombie_devgui_gun );
                 }
                 
-                setdvar( #"hash_1c922af4f6e828e7", "<dev string:x38>" );
+                setdvar( #"zombie_devgui_gun_player4", "<dev string:x38>" );
             }
         }
     }

@@ -13,7 +13,7 @@ gesture,#ges_grab
 gesture,#ges_spray
 gesture,#hash_2bfc8a1e1322e056
 gesture,#ges_door_interact
-gesture,#hash_419f11534af12a76
+gesture,#ges_battle_cry
 gesture,#ges_grab_bare_hands
 gesture,#hash_4590790b4c08d9ce
 gesture,#ges_grab_one_handed
@@ -165,15 +165,15 @@ string,#coop/revive_emergency_reserve_once
 string,#wz/arav
 string,#hash_ddc319addc8bcb2
 string,#mp/host_sucks
-string,#hash_141c79e0a2e1383e
+string,#mp/defeat_caps
 string,#killstreak/emp_inbound
 string,#hash_1458857df9447fb3
 string,#hash_1471fac13741ca74
 string,#coop/player_needs_to_be_revived
 string,#mp_destroyed_helicopter
-string,#hash_18114ebf7e352c55
+string,#mp/draw_caps
 string,#hash_195539177c4346f7
-string,#hash_19d325d8d1bfd3de
+string,#mp/overtime_caps
 string,#killstreak/emp_not_available
 string,#wz/supply_stash
 string,#mp/secondplace_name
@@ -192,7 +192,7 @@ string,#mp/score_limit_reached
 string,#hash_3191d03a1c0615ad
 string,#wz/cargo_truck
 string,#hash_31d09b280a9cab16
-string,#hash_31e1e88e88ba263f
+string,#mp/victory_caps
 string,#wz/vehicle_health
 string,#hash_3267fdfd0c2b7fdc
 string,#coop/player_is_reviving_you
@@ -207,7 +207,7 @@ string,#mp/round_win_caps
 string,#killstreak/emp_place_turret_hint
 string,#killstreak/qrdrone_hacked
 string,#hash_433c75db9fd3177e
-string,#hash_4403919077b48aaf
+string,#mp/halftime_caps
 string,#wz/tank
 string,#wz/pbr
 string,#mp/players_forfeited
@@ -399,7 +399,7 @@ client_fx,#wz/fx8_plyr_pstfx_numbers
 client_fx,#hash_45086f1ffcabbf47
 client_fx,#killstreaks/fx_vtol_lights_red
 client_fx,#wz/fx8_zombie_eye_glow_green_wz
-client_fx,#hash_4bd4c9b0fb97f425
+client_fx,#wz/fx8_zm_box_marker_rainbow
 client_fx,#hash_4c3b0a59efb20e21
 client_fx,#hash_4c41f659efb80ad3
 client_fx,#hash_50b25e352ba908d0

@@ -391,7 +391,7 @@ function private event_handler[grenade_fire] function_4776caf4( eventstruct )
     {
         weaponname = eventstruct.weapon.name;
         
-        if ( weaponname != #"hash_351254cd4fc93d6e" )
+        if ( weaponname != #"tomahawk_t8_wz_pandemic" )
         {
             return;
         }
@@ -448,7 +448,7 @@ function function_ff850b97()
 // Size: 0x312
 function function_16e24b6c()
 {
-    var_d05b667e = [ #"p8_wz_door_01_frame_white":1, #"p8_wz_door_01":1, #"p8_wz_door_01_array":1, #"p8_wz_door_01_assylum":1, #"p8_wz_door_01_assylum_double":1, #"hash_88b4d6deb60840d":1, #"hash_6130912b218af142":1, #"p8_wz_door_01_diner":1, #"p8_wz_door_01_estate":1, #"hash_70294bd7c3b0e2ff":1, #"p8_wz_door_01_factory":1, #"p8_wz_door_01_farm":1, #"hash_7c40a6297a29d7bd":1, #"p8_wz_door_01_frame":1, #"p8_wz_door_01_frame_wooden":1, #"p8_wz_door_01_frame_wooden_painted":1, #"p8_wz_door_01_latch":1, #"hash_3f00c218be809b12":1, #"p8_wz_door_01_train":1, #"p8_wz_door_01_turbine":1, #"p8_wz_door_01_wood":1, #"p8_wz_door_01_wood_plain":1, #"hash_1debd9bb0784f5f9":1, #"p8_wz_door_barricade_01":1, #"p8_wz_door_barricade_01_lrg":1, #"p8_wz_door_barricade_01_med":1, #"p8_wz_door_barricade_01_sml":1, #"p8_wz_door_01_double_frame_white":1, #"p8_wz_door_01_double":1, #"hash_508d4a4298138acd":1, #"hash_5ab15b04f91b09bf":1, #"p8_wz_door_01_double_frame":1, #"p8_wz_door_01_double_frame_wooden":1, #"hash_6c99ba1916eb0091":1, #"p8_wz_door_01_frame_wooden_double":1 ];
+    var_d05b667e = [ #"p8_wz_door_01_frame_white":1, #"p8_wz_door_01":1, #"p8_wz_door_01_array":1, #"p8_wz_door_01_assylum":1, #"p8_wz_door_01_assylum_double":1, #"p8_wz_door_01_blocked":1, #"p8_wz_door_01_damaged":1, #"p8_wz_door_01_diner":1, #"p8_wz_door_01_estate":1, #"p8_wz_door_01_evacuated":1, #"p8_wz_door_01_factory":1, #"p8_wz_door_01_farm":1, #"p8_wz_door_01_farm_double":1, #"p8_wz_door_01_frame":1, #"p8_wz_door_01_frame_wooden":1, #"p8_wz_door_01_frame_wooden_painted":1, #"p8_wz_door_01_latch":1, #"hash_3f00c218be809b12":1, #"p8_wz_door_01_train":1, #"p8_wz_door_01_turbine":1, #"p8_wz_door_01_wood":1, #"p8_wz_door_01_wood_plain":1, #"p8_wz_door_01_wood_plain_damaged":1, #"p8_wz_door_barricade_01":1, #"p8_wz_door_barricade_01_lrg":1, #"p8_wz_door_barricade_01_med":1, #"p8_wz_door_barricade_01_sml":1, #"p8_wz_door_01_double_frame_white":1, #"p8_wz_door_01_double":1, #"p8_wz_door_01_double_blocked":1, #"p8_wz_door_01_double_evacuated":1, #"p8_wz_door_01_double_frame":1, #"p8_wz_door_01_double_frame_wooden":1, #"hash_6c99ba1916eb0091":1, #"p8_wz_door_01_frame_wooden_double":1 ];
     dynents = getdynentarray();
     
     foreach ( dynent in dynents )

@@ -1821,10 +1821,10 @@ function function_10e9c8b5()
             self thread zm_hms_util::function_51b752a9( #"vox_kill_melee", 4 );
             break;
         case #"mist":
-            self thread zm_hms_util::function_51b752a9( #"hash_43d252dd310e2faa", 4 );
+            self thread zm_hms_util::function_51b752a9( #"vox_generic_wall_buy", 4 );
             break;
         case #"russ":
-            self thread zm_hms_util::function_51b752a9( #"hash_43d252dd310e2faa", 8 );
+            self thread zm_hms_util::function_51b752a9( #"vox_generic_wall_buy", 8 );
             break;
         case #"stuh":
             self thread zm_hms_util::function_51b752a9( #"vox_generic_responses_negative", 4 );

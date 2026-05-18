@@ -219,7 +219,7 @@
 #hacked_supplypod,0,0,0,0,0,FALSE,0,FALSE,&#score/hacked_supplypod,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hacked_sniper_chopper,0,0,0,0,0,FALSE,0,FALSE,&#hash_fb0ea9bf2cc38b4,#,8#,FALSE,FALSE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #hash_232128502a39219d,0,0,0,0,0,FALSE,0,FALSE,&#,#hash_2a7cb14d33becd69,8#medal_jackpot,TRUE,TRUE,FALSE,#specialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#hash_e18a9f29b8e1132,0,0,0,0,0,FALSE,0,FALSE,&#,#hash_31b411ec244beff6,8#medal_zeroed_out,TRUE,TRUE,FALSE,#specialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#hacked_multikill_2,0,0,0,0,0,FALSE,0,FALSE,&#,#stats_hacked_multikill_2,8#medal_zeroed_out,TRUE,TRUE,FALSE,#specialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #battle_shield_shutdown,0,0,0,0,0,FALSE,0,FALSE,&#score/battle_shield_shutdown,#stats_battle_shield_shutdown,8#medal_battle_shield_shutdown,TRUE,TRUE,TRUE,#antispecialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #purifier_shutdown,0,0,0,0,0,FALSE,0,FALSE,&#score/purifier_shutdown,#stats_purifier_shutdown,8#medal_purifier_shutdown,TRUE,TRUE,TRUE,#antispecialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #war_machine_shutdown,0,0,0,0,0,FALSE,0,FALSE,&#score/war_machine_shutdown,#stats_war_machine_shutdown,8#medal_war_machine_shutdown,TRUE,TRUE,TRUE,#antispecialist,#,#,#,#,FALSE,FALSE,0,u9?0,0
@@ -243,8 +243,8 @@
 #cuav_killjoy,0,0,0,0,0,FALSE,0,FALSE,&#hash_44ffcd0ad714dc9d,#stats_cuav_killjoy,8#medal_cuav_killjoy,TRUE,TRUE,TRUE,#antiscorestreak,#,#,#,#,FALSE,FALSE,200,u9?0,0
 #destroyed_remote_missile,0,0,0,0,0,FALSE,0,FALSE,&#hash_59682fdbe8ccf5a9,#stats_hellstorm_missile_killjoy,8#medal_hellstorm_missile_killjoy,TRUE,TRUE,TRUE,#antiscorestreak,#,#,#,#,FALSE,FALSE,200,u9?0,0
 #automated_turret_shutdown,0,0,0,0,0,FALSE,0,FALSE,&#score/sentry_gun_destroyed,#stats_automated_turret_killjoy,8#medal_automated_turret_killjoy,TRUE,TRUE,TRUE,#antiscorestreak,#,#,#,#,FALSE,FALSE,200,u9?0,0
-#hash_20a561c410750409,0,0,0,0,0,FALSE,0,FALSE,&#hash_39dfa8f1f45b97e9,#stats_swarm_shutdown,8#medal_swarm_shutdown,TRUE,TRUE,TRUE,#antiscorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#hash_8bf3519db5f0fd4,0,0,0,0,0,FALSE,0,FALSE,&#hash_39dfa8f1f45b97e9,#,8#,FALSE,TRUE,TRUE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#hash_20a561c410750409,0,0,0,0,0,FALSE,0,FALSE,&#score/swarm_buddy_destroyed,#stats_swarm_shutdown,8#medal_swarm_shutdown,TRUE,TRUE,TRUE,#antiscorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#swarm_buddy_destroyed,0,0,0,0,0,FALSE,0,FALSE,&#score/swarm_buddy_destroyed,#,8#,FALSE,TRUE,TRUE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #attack_chopper_shutdown,0,0,0,0,0,FALSE,0,FALSE,&#hash_6d99ea20b9cb0556,#stats_attack_chopper_killjoy,8#medal_attack_chopper_killjoy,TRUE,TRUE,TRUE,#antiscorestreak,#,#,#,#,FALSE,FALSE,500,u9?0,0
 #destroyed_tank_robot,0,0,0,0,0,FALSE,0,FALSE,&#hash_4993b768bb31e375,#stats_tank_robot_killjoy,8#medal_tank_robot_killjoy,TRUE,TRUE,TRUE,#antiscorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #swat_team_killjoy,0,0,0,0,0,FALSE,0,FALSE,&#hash_1348a6cd8a102d5a,#stats_swat_team_killjoy,8#medal_swat_team_killjoy,TRUE,TRUE,TRUE,#antiscorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
@@ -301,7 +301,7 @@
 #war_killed_enemy_while_capping_control,0,0,0,0,0,FALSE,0,FALSE,&#,#stats_war_killed_enemy_while_capping_control,8#medal_war_killed_enemy_while_capping_control,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #war_killed_attacker_in_zone,0,0,0,0,0,FALSE,0,FALSE,&#score/war_killed_attacker_in_zone,#,8#,FALSE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #war_killed_defender_in_zone,0,0,0,0,0,FALSE,0,FALSE,&#score/war_killed_defender_in_zone,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#hash_abbc936bf9059a6,0,0,0,0,0,FALSE,0,FALSE,&#hash_34fa35ba1681b281,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#control_zone_depletion,0,0,0,0,0,FALSE,0,FALSE,&#score/control_zone_depletion,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #escort_robot_disable,0,0,0,0,0,FALSE,0,FALSE,&#score/escort_robot_disable,#stats_escort_robot_disable,8#medal_escort_robot_disable,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #escort_robot_disable_near_goal,0,0,0,0,0,FALSE,0,FALSE,&#score/escort_robot_disable,#stats_escort_robot_disable_near_goal,8#medal_escort_robot_disable_near_goal,TRUE,TRUE,FALSE,#gamemode,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #escort_robot_disable_assist_25,0,0,0,0,0,FALSE,0,FALSE,&#score/escort_robot_disable_assist,#,8#,FALSE,TRUE,FALSE,#,#,#,#,#,FALSE,FALSE,0,u9?0,0

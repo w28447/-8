@@ -79,10 +79,10 @@ function init()
     level._effect[ #"charon_combat_fx" ] = #"hash_7b7ba0ac0755a064";
     level._effect[ #"hemera_combat_fx" ] = #"hash_7e9736ee8b5ec443";
     level._effect[ #"ouranos_combat_fx" ] = #"hash_194fead3457d21f5";
-    level._effect[ #"hash_4024dfc409879380" ] = #"hash_570e356dcecf7c0f";
-    level._effect[ #"hash_18794d000c118e97" ] = #"hash_131f7254a32ca20e";
-    level._effect[ #"hash_799b84ee296b448d" ] = #"hash_690957421115776c";
-    level._effect[ #"hash_25540559b2b0c1b4" ] = #"hash_3f2f5721b1727993";
+    level._effect[ #"charon_teleport_3p" ] = #"hash_570e356dcecf7c0f";
+    level._effect[ #"gaia_teleport_3p" ] = #"hash_131f7254a32ca20e";
+    level._effect[ #"hemera_teleport_3p" ] = #"hash_690957421115776c";
+    level._effect[ #"ouranos_teleport_3p" ] = #"hash_3f2f5721b1727993";
     level._effect[ #"pap_projectile_b" ] = #"hash_5199aa40f704fb10";
     level._effect[ #"hash_23f796cb2dcb35c3" ] = #"maps/zm_red/fx8_soul_charge_blue";
     level._effect[ #"pap_projectile_g" ] = #"hash_56c34b9c914d89a7";
@@ -573,7 +573,7 @@ function charon_teleport_postfx( localclientnum, oldval, newval, bnewent, biniti
         }
         else
         {
-            self.var_f252bba1[ localclientnum ] = util::playfxontag( localclientnum, level._effect[ #"hash_4024dfc409879380" ], self, "j_spine4" );
+            self.var_f252bba1[ localclientnum ] = util::playfxontag( localclientnum, level._effect[ #"charon_teleport_3p" ], self, "j_spine4" );
         }
         
         return;
@@ -667,7 +667,7 @@ function function_162c09a8( localclientnum, oldval, newval, bnewent, binitialsna
     if ( newval == 1 )
     {
         self playrenderoverridebundle( "rob_gaia_bush_transform_start" );
-        util::lock_model( #"hash_3cb03679991cf4ad" );
+        util::lock_model( #"p8_zm_red_gaia_bush_01_script" );
         return;
     }
     
@@ -679,7 +679,7 @@ function function_162c09a8( localclientnum, oldval, newval, bnewent, binitialsna
         self playrenderoverridebundle( "rob_gaia_bush_transform_finish" );
     }
     
-    util::unlock_model( #"hash_3cb03679991cf4ad" );
+    util::unlock_model( #"p8_zm_red_gaia_bush_01_script" );
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -743,7 +743,7 @@ function hemera_teleport_postfx( localclientnum, oldval, newval, bnewent, biniti
         }
         else
         {
-            self.var_f252bba1[ localclientnum ] = util::playfxontag( localclientnum, level._effect[ #"hash_799b84ee296b448d" ], self, "j_spine4" );
+            self.var_f252bba1[ localclientnum ] = util::playfxontag( localclientnum, level._effect[ #"hemera_teleport_3p" ], self, "j_spine4" );
         }
         
         return;
@@ -793,7 +793,7 @@ function gaia_teleport_postfx( localclientnum, oldval, newval, bnewent, binitial
         }
         else
         {
-            self.var_f252bba1[ localclientnum ] = util::playfxontag( localclientnum, level._effect[ #"hash_18794d000c118e97" ], self, "j_spine4" );
+            self.var_f252bba1[ localclientnum ] = util::playfxontag( localclientnum, level._effect[ #"gaia_teleport_3p" ], self, "j_spine4" );
         }
         
         return;
@@ -843,7 +843,7 @@ function ouranos_teleport_postfx( localclientnum, oldval, newval, bnewent, binit
         }
         else
         {
-            self.var_f252bba1[ localclientnum ] = util::playfxontag( localclientnum, level._effect[ #"hash_25540559b2b0c1b4" ], self, "j_spine4" );
+            self.var_f252bba1[ localclientnum ] = util::playfxontag( localclientnum, level._effect[ #"ouranos_teleport_3p" ], self, "j_spine4" );
         }
         
         return;

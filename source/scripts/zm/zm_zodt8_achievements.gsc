@@ -80,7 +80,7 @@ function on_ai_killed( params )
 function function_55aa3c20()
 {
     level endon( #"end_game" );
-    level flagsys::wait_till( #"hash_25d8c88ff3f91ee5" );
+    level flagsys::wait_till( #"boss_fight_all_complete" );
     
     /#
         iprintlnbold( "<dev string:x38>" );

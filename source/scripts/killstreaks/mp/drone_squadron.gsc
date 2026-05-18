@@ -596,7 +596,7 @@ function function_c94a0c4d( params )
     {
         if ( isplayer( attacker ) )
         {
-            scoreevents::processscoreevent( #"hash_8bf3519db5f0fd4", attacker, self.owner, weapon );
+            scoreevents::processscoreevent( #"swarm_buddy_destroyed", attacker, self.owner, weapon );
         }
     }
 }

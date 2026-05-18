@@ -365,11 +365,11 @@ function function_62ef723( activator, laststate, state )
 // Params 2
 // Checksum 0x486591e6, Offset: 0x12d8
 // Size: 0x8e
-function function_274ee8b5( dynent, var_8a50fb55 )
+function function_274ee8b5( dynent, boaster )
 {
     level endon( #"game_ended" );
     
-    while ( isdefined( var_8a50fb55 ) && isalive( var_8a50fb55 ) && !var_8a50fb55 inlaststand() && var_8a50fb55 function_15049d95() )
+    while ( isdefined( boaster ) && isalive( boaster ) && !boaster inlaststand() && boaster function_15049d95() )
     {
         waitframe( 1 );
     }

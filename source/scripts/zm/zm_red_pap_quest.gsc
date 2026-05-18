@@ -62,7 +62,7 @@ function init()
     clientfield::register( "toplayer", "" + #"pegasus_shellshock", 16000, 1, "int" );
     clientfield::register( "toplayer", "" + #"waterfall_passthrough", 16000, 1, "int" );
     clientfield::register( "world", "" + #"hash_28eb5e403f599ce2", 17000, 1, "int" );
-    level zm_audio::function_6191af93( #"location_enter", #"hash_4576fb3345db827b", "", "" );
+    level zm_audio::function_6191af93( #"location_enter", #"temp_attalid", "", "" );
     level.var_2e32e0bb = 1;
     callback::on_spawned( &on_player_spawned );
     level thread function_5ad3e281();
@@ -169,8 +169,8 @@ function function_90a833e2()
     level flag::init( #"pegasus_takeoff" );
     level flag::init( #"serpent_pass_eagle_free" );
     level flag::init( #"cage_dropped" );
-    level flag::init( #"hash_3f6b3af99d456313" );
-    level flag::init( #"hash_19b70a45ebda2642" );
+    level flag::init( #"eagle_1_ready" );
+    level flag::init( #"eagle_2_ready" );
     level flag::init( #"egg_free" );
     level flag::init( #"eagle_attack" );
     level flag::init( #"defend_arena" );
@@ -2060,7 +2060,7 @@ function function_f41b632f()
     s_scene scene::play( #"aib_vign_cust_zm_red_eagle_2", "fly_to_hover" );
     level thread function_e39d6ea2( #"eagle_2" );
     wait 0.5;
-    level flag::set( #"hash_19b70a45ebda2642" );
+    level flag::set( #"eagle_2_ready" );
 }
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest
@@ -2107,7 +2107,7 @@ function function_697a602a( mdl_cage )
     s_scene scene::play( #"aib_vign_cust_zm_red_eagle_1", "fly_to_hover" );
     level thread function_e39d6ea2( #"eagle_1" );
     wait 0.5;
-    level flag::set( #"hash_3f6b3af99d456313" );
+    level flag::set( #"eagle_1_ready" );
     mdl_scene delete();
 }
 
@@ -2779,7 +2779,7 @@ function function_a2b76316()
 // Size: 0x84
 function function_c395d209()
 {
-    level flag::wait_till_all( array( #"eagle_attack", #"hash_3f6b3af99d456313", #"hash_19b70a45ebda2642" ) );
+    level flag::wait_till_all( array( #"eagle_attack", #"eagle_1_ready", #"eagle_2_ready" ) );
     level.var_6aec40b thread function_a8f9c9c4();
     level.var_ba012aad thread function_a8f9c9c4();
 }
@@ -3243,7 +3243,7 @@ function function_3e5c42f5( e_holder, w_item )
 // Params 1
 // Checksum 0x82a58f3f, Offset: 0xac20
 // Size: 0x24
-function function_7250e6b9( var_838aa9c4 )
+function function_7250e6b9( crafter )
 {
     showmiscmodels( "forge_assembled" );
 }

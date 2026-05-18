@@ -1600,7 +1600,7 @@ function private function_9693e041( player )
             return true;
         }
     }
-    else if ( !player function_2d53738e( self.blueprint.w_result ) && ( isdefined( self.blueprint.var_c028dcfe ) && self.blueprint.var_c028dcfe && !player function_48ce9379( self.blueprint.w_result ) || isdefined( level.var_905507c3 ) && level.var_905507c3 ) )
+    else if ( !player function_2d53738e( self.blueprint.w_result ) && ( isdefined( self.blueprint.firstonefree ) && self.blueprint.firstonefree && !player function_48ce9379( self.blueprint.w_result ) || isdefined( level.var_905507c3 ) && level.var_905507c3 ) )
     {
         str = self.blueprint.purchasepromptfree;
         str_pc = function_c9163c5d( str );
@@ -1857,7 +1857,7 @@ function private function_df8ce6e2( player )
     
     if ( isdefined( var_f66d1847 ) && var_f66d1847 > 0 )
     {
-        if ( isdefined( self.stub.blueprint.var_c028dcfe ) && self.stub.blueprint.var_c028dcfe && !player function_48ce9379( self.stub.blueprint.w_result ) )
+        if ( isdefined( self.stub.blueprint.firstonefree ) && self.stub.blueprint.firstonefree && !player function_48ce9379( self.stub.blueprint.w_result ) )
         {
             if ( !isdefined( player.var_4e90ce0c ) )
             {

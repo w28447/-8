@@ -345,14 +345,14 @@ function function_d2f35e13( localclientnum, successplayer, weapon, var_6ac148bc,
         return;
     }
     
-    var_81485093 = function_6bb302ba( weapon, playerbundle );
+    responsealias = function_6bb302ba( weapon, playerbundle );
     
-    if ( !isdefined( var_81485093 ) )
+    if ( !isdefined( responsealias ) )
     {
         return;
     }
     
-    var_8a6b001a function_4b126e4c( localclientnum, var_81485093, seed );
+    var_8a6b001a function_4b126e4c( localclientnum, responsealias, seed );
 }
 
 // Namespace battlechatter/battlechatter

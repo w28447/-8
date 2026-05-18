@@ -2878,10 +2878,10 @@ function sndannouncer_init()
     sndannouncervoxadd( #"bonus_points_player", #"vox_powerup_bonus_points_team" );
     sndannouncervoxadd( #"bonus_points_player_shared", #"vox_powerup_bonus_points_team" );
     sndannouncervoxadd( #"hero_weapon_power", #"vox_powerup_full_power" );
-    sndannouncervoxadd( #"zombie_blood", #"hash_2f095e1811169fc7" );
-    sndannouncervoxadd( #"bonfire_sale", #"hash_554659b1fbc7a5bd" );
-    sndannouncervoxadd( #"boxmove", #"hash_523d2f6c8930a8ee" );
-    sndannouncervoxadd( #"dogstart", #"hash_12ca8e434ec4d884" );
+    sndannouncervoxadd( #"zombie_blood", #"vox_event_zombie_blood" );
+    sndannouncervoxadd( #"bonfire_sale", #"vox_event_bonfire_sale" );
+    sndannouncervoxadd( #"boxmove", #"vox_event_magicbox" );
+    sndannouncervoxadd( #"dogstart", #"vox_event_dogstart" );
     sndannouncervoxadd( #"shield_upgrade", #"hash_1853f3e031b48c22" );
     
     if ( zm_utility::is_standard() )
@@ -2975,7 +2975,7 @@ function sndannouncer_init()
         sndannouncervoxadd( #"wardens", #"vox_rush_wardens" );
         sndannouncervoxadd( #"werewolf", #"vox_rush_werewolf" );
         sndannouncervoxadd( #"nosferatu", #"vox_rush_nosferatu" );
-        sndannouncervoxadd( #"hash_e5dacec7371220e", #"hash_6e2246878a31d24d" );
+        sndannouncervoxadd( #"crim_nosferatu", #"vox_rush_crim_nosferatu" );
         sndannouncervoxadd( #"lightning_hounds", #"vox_rush_lightning_hounds" );
         sndannouncervoxadd( #"bombers", #"vox_rush_bombers" );
         sndannouncervoxadd( #"jolting_jacks", #"vox_rush_jolting_jacks" );

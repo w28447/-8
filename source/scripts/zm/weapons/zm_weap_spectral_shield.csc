@@ -49,8 +49,8 @@ function __init__()
     level._effect[ #"spectral_key_muzzle_flash3p_idle" ] = #"hash_74faec7770b9fa92";
     level._effect[ #"hash_5a834a39ce281cef" ] = #"hash_42b1e9abdde1d678";
     level._effect[ #"hash_6ca5cf8a3ac2254a" ] = #"hash_6894b23015ff2626";
-    level._effect[ #"hash_5e08e3b80445f6d7" ] = #"hash_db890f21c0af009";
-    level._effect[ #"hash_5e01d7b8043fc3c5" ] = #"hash_dbf9cf21c11231b";
+    level._effect[ #"spectral_key_charging_1p" ] = #"hash_db890f21c0af009";
+    level._effect[ #"spectral_key_charging_3p" ] = #"hash_dbf9cf21c11231b";
     level._effect[ #"hash_3ae08d08271270d6" ] = #"hash_35b66c4bdba4f1a8";
     level._effect[ #"hash_3ad9a108270c7424" ] = #"hash_35bd784bdbab24ba";
     level._effect[ #"hash_4a41e8484e30822e" ] = #"hash_55a201e66dbc23d3";
@@ -373,7 +373,7 @@ function function_4700b6cd( localclientnum )
         return;
     }
     
-    self notify( #"hash_4ea2d9a0f785e09b" );
+    self notify( #"spectral_key_beam_end" );
     
     if ( isdefined( self.var_3e52c79e[ localclientnum ] ) )
     {
@@ -406,7 +406,7 @@ function function_848179f5( localclientnum )
         return;
     }
     
-    self endon( #"death", #"hash_4ea2d9a0f785e09b" );
+    self endon( #"death", #"spectral_key_beam_end" );
     
     if ( !isdefined( self.var_4cd8e6cb ) )
     {
@@ -428,7 +428,7 @@ function function_64148d8e( localclientnum )
         return;
     }
     
-    self endon( #"death", #"hash_4ea2d9a0f785e09b" );
+    self endon( #"death", #"spectral_key_beam_end" );
     wait 0.5;
     
     if ( isdefined( self ) && isdefined( self.var_4cd8e6cb ) )
@@ -450,7 +450,7 @@ function function_28291f40( localclientnum, e_target )
         return;
     }
     
-    self endon( #"death", #"hash_4ea2d9a0f785e09b" );
+    self endon( #"death", #"spectral_key_beam_end" );
     
     if ( !isdefined( self.var_4cd8e6cb ) )
     {
@@ -506,7 +506,7 @@ function function_f9a03171( localclientnum, oldval, newval, bnewent, binitialsna
     {
         if ( !e_player util::function_50ed1561( localclientnum ) )
         {
-            e_player notify( #"hash_52e05d0e2370536d" );
+            e_player notify( #"stop_shield_flash_fx" );
         }
     }
     
@@ -530,7 +530,7 @@ function function_f9a03171( localclientnum, oldval, newval, bnewent, binitialsna
         {
             if ( !e_player util::function_50ed1561( localclientnum ) )
             {
-                e_player thread zm_utility::function_ae3780f1( localclientnum, self.fx_muzzle_flash[ localclientnum ], #"hash_52e05d0e2370536d" );
+                e_player thread zm_utility::function_ae3780f1( localclientnum, self.fx_muzzle_flash[ localclientnum ], #"stop_shield_flash_fx" );
             }
         }
         
@@ -557,7 +557,7 @@ function function_f9a03171( localclientnum, oldval, newval, bnewent, binitialsna
         {
             if ( !e_player util::function_50ed1561( localclientnum ) )
             {
-                e_player thread zm_utility::function_ae3780f1( localclientnum, self.fx_muzzle_flash[ localclientnum ], #"hash_52e05d0e2370536d" );
+                e_player thread zm_utility::function_ae3780f1( localclientnum, self.fx_muzzle_flash[ localclientnum ], #"stop_shield_flash_fx" );
             }
         }
     }
@@ -616,7 +616,7 @@ function private function_5ab769d8( localclientnum )
     }
     
     self notify( #"hash_360be32d770a6eb2" );
-    self endon( #"death", #"hash_360be32d770a6eb2", #"hash_4ea2d9a0f785e09b" );
+    self endon( #"death", #"hash_360be32d770a6eb2", #"spectral_key_beam_end" );
     self playrumbleonentity( localclientnum, "zm_weap_scepter_ray_hit_rumble" );
     wait 0.5;
     
@@ -851,12 +851,12 @@ function function_36c349d0( localclientnum, oldval, newval, bnewent, binitialsna
     {
         if ( self zm_utility::is_first_person( localclientnum ) )
         {
-            self.var_2a2f2afa[ localclientnum ] = playviewmodelfx( localclientnum, level._effect[ #"hash_5e08e3b80445f6d7" ], "tag_flash" );
+            self.var_2a2f2afa[ localclientnum ] = playviewmodelfx( localclientnum, level._effect[ #"spectral_key_charging_1p" ], "tag_flash" );
             self playrenderoverridebundle( "rob_key_charging", "tag_weapon_right" );
         }
         else
         {
-            self.var_2a2f2afa[ localclientnum ] = util::playfxontag( localclientnum, level._effect[ #"hash_5e01d7b8043fc3c5" ], self, "tag_flash" );
+            self.var_2a2f2afa[ localclientnum ] = util::playfxontag( localclientnum, level._effect[ #"spectral_key_charging_3p" ], self, "tag_flash" );
         }
         
         self thread function_7203304d( localclientnum );

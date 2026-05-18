@@ -9,7 +9,7 @@
 #location_enter,#serp_pass,#vox_serp_pass_enter,0,0,TRUE,FALSE,FALSE,FALSE
 #location_enter,#stoa_athen,#vox_stoa_athen_enter,0,0,TRUE,FALSE,FALSE,FALSE
 #location_enter,#temp_apollo,#vox_temp_apollo_enter,0,0,TRUE,FALSE,FALSE,FALSE
-#location_enter,#hash_4576fb3345db827b,#hash_5b5d249e5dff39d8,0,0,TRUE,FALSE,FALSE,FALSE
+#location_enter,#temp_attalid,#vox_temp_attalid_enter,0,0,TRUE,FALSE,FALSE,FALSE
 #location_enter,#treasur,#vox_treasur_enter,0,0,TRUE,FALSE,FALSE,FALSE
 #location_enter,#charon_arena,#vox_charon_arena_enter,0,0,TRUE,FALSE,FALSE,FALSE
 #location_enter,#statue_crat,#hash_70627ff90a7e1e8e,0,0,TRUE,FALSE,FALSE,FALSE
@@ -45,8 +45,8 @@
 #component_pickup,#gold_spear,#vox_gold_spear_pickup,0,0,FALSE,FALSE,FALSE,FALSE
 #component_pickup,#hammer_arges,#vox_hammer_arges_pickup,0,0,FALSE,FALSE,FALSE,FALSE
 #component_pickup,#light,#vox_light_pickup,0,0,FALSE,FALSE,FALSE,FALSE
-#component_pickup,#ankh,#hash_78f60d6898d690f,0,0,FALSE,FALSE,FALSE,FALSE
-#component_pickup,#hash_2ac16e115b8e401a,#hash_21efff6f0069f329,0,0,FALSE,FALSE,FALSE,FALSE
+#component_pickup,#ankh,#vox_ra_altar_ankh_pickup,0,0,FALSE,FALSE,FALSE,FALSE
+#component_pickup,#tongs_steropes,#vox_tongs_steropes_pickup,0,0,FALSE,FALSE,FALSE,FALSE
 #ballista,#rises,#hash_7fc987147a120,0,0,FALSE,FALSE,FALSE,FALSE
 #ballista,#shoot,#hash_3280eb0abc8ec3ed,0,0,FALSE,FALSE,FALSE,FALSE
 #ballista,#stuck,#hash_78b771973e490d4e,0,0,FALSE,FALSE,FALSE,FALSE

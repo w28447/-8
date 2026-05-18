@@ -73,7 +73,7 @@
                 "announcehalftime": 0,
                 "announceendgame": 0,
                 "hash_f4df0630": "duration:0",
-                "hash_18114ebf7e352c55:hash_abd1a1a3": "localized17#hash_18114ebf7e352c55",
+                "mp/draw_caps:hash_abd1a1a3": "localized17#mp/draw_caps",
                 "playerintermissiontime": "duration:0",
                 "hash_f9995c63": 0,
                 "pickup_message": 0,
@@ -82,7 +82,7 @@
                 "freezeplayers": 0,
                 "hash_bda115b5": 0,
                 "announceroundswitchsides": 0,
-                "hash_31e1e88e88ba263f:hash_c91a233b": "localized17#hash_31e1e88e88ba263f",
+                "mp/victory_caps:hash_c91a233b": "localized17#mp/victory_caps",
                 "announcehalftimetime": "duration:0"
             },
             {
@@ -90,7 +90,7 @@
                 "hash_7b778818": 0,
                 "hash_41fc87a8": "duration:250",
                 "hash_e0d86f3": 0,
-                "hash_141c79e0a2e1383e:hash_81c726ff": "localized17#hash_141c79e0a2e1383e",
+                "mp/defeat_caps:hash_81c726ff": "localized17#mp/defeat_caps",
                 "freezetime": "duration:0",
                 "time": "duration:1500",
                 "hash_18d4b2ad": 1,
@@ -105,7 +105,7 @@
                 "announcehalftime": 0,
                 "announceendgame": 0,
                 "hash_f4df0630": "duration:0",
-                "hash_18114ebf7e352c55:hash_abd1a1a3": "localized17#hash_18114ebf7e352c55",
+                "mp/draw_caps:hash_abd1a1a3": "localized17#mp/draw_caps",
                 "playerintermissiontime": "duration:0",
                 "hash_f9995c63": 1,
                 "pickup_message": 0,
@@ -114,7 +114,7 @@
                 "freezeplayers": 1,
                 "hash_bda115b5": 0,
                 "announceroundswitchsides": 0,
-                "hash_31e1e88e88ba263f:hash_c91a233b": "localized17#hash_31e1e88e88ba263f",
+                "mp/victory_caps:hash_c91a233b": "localized17#mp/victory_caps",
                 "announcehalftimetime": "duration:0"
             },
             {

@@ -186,7 +186,7 @@ function private on_player_killed( params )
     {
         if ( attacker_archetype === #"zombie" )
         {
-            ai_zone.var_14403c0a++;
+            ai_zone.players_killed_by_zombie++;
             return;
         }
         
@@ -442,7 +442,7 @@ function function_dc16557c()
             match_record::set_stat( #"ai_zones", i, #"hash_46c66659061c4df6", ai_zone.var_7bf9c18e );
             match_record::set_stat( #"ai_zones", i, #"ai_spawned_zombie", ai_zone.ai_spawned_zombie );
             match_record::set_stat( #"ai_zones", i, #"ai_killed_zombie", ai_zone.ai_killed_zombie );
-            match_record::set_stat( #"ai_zones", i, #"hash_2f54ea56d60207e4", ai_zone.var_14403c0a );
+            match_record::set_stat( #"ai_zones", i, #"players_killed_by_zombie", ai_zone.players_killed_by_zombie );
             match_record::set_stat( #"ai_zones", i, #"ai_spawned_blightfather", ai_zone.var_af37e04a );
             match_record::set_stat( #"ai_zones", i, #"ai_killed_blightfather", ai_zone.var_41e86d33 );
             match_record::set_stat( #"ai_zones", i, #"players_killed_by_blightfather", ai_zone.var_719d00b8 );
@@ -1550,7 +1550,7 @@ function function_5f0d105a( zone_category, zone_name, spawner_type, var_aeae9f59
     var_a59ba023.zone_hellhounds = 0;
     var_a59ba023.ai_spawned_zombie = 0;
     var_a59ba023.ai_killed_zombie = 0;
-    var_a59ba023.var_14403c0a = 0;
+    var_a59ba023.players_killed_by_zombie = 0;
     var_a59ba023.var_af37e04a = 0;
     var_a59ba023.var_41e86d33 = 0;
     var_a59ba023.var_719d00b8 = 0;

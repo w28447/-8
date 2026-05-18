@@ -79,7 +79,7 @@ function electric_cherry_precache()
         return;
     }
     
-    level._effect[ #"electric_cherry_light" ] = #"hash_1442db17b83460ad";
+    level._effect[ #"electric_cherry_light" ] = #"_t6/misc/fx_zombie_cola_revive_on";
     level.machine_assets[ #"specialty_electriccherry" ] = spawnstruct();
     level.machine_assets[ #"specialty_electriccherry" ].weapon = getweapon( "zombie_perk_bottle_cherry" );
     level.machine_assets[ #"specialty_electriccherry" ].off_model = "p7_zm_vending_nuke";

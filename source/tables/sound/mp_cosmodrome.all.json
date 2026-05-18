@@ -254,13 +254,13 @@
         {
             "value": 193,
             "next": 65535,
-            "name": "#hash_13eb1a82d0249566",
+            "name": "#amb_clock_tick",
             "sequence": 0,
             "cullDistance": 1100,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_13eb1a82d0249566",
+                    "name": "#amb_clock_tick",
                     "assetId": "#hash_17976f1f6713d428",
                     "assetFileNameSustain": "#mp_cosmodrome.all",
                     "assetIdRelease": "#mp_cosmodrome.all",

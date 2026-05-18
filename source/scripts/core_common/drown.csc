@@ -111,7 +111,7 @@ function function_1a9dc208()
     
     if ( isdefined( playerrole ) )
     {
-        return int( playerrole.var_f0886300 * 1000 );
+        return int( playerrole.swimdamagerinterval * 1000 );
     }
     
     return 2000;
@@ -151,9 +151,9 @@ function player_drown_fx( localclientnum, stage )
     self notify( #"player_drown_fx" );
     self endon( #"player_drown_fx" );
     self player_init_drown_values();
-    var_f0886300 = self function_1a9dc208();
-    lastoutwatertimestage = self.drown_start_time + ( stage - 1 ) * var_f0886300;
-    stageduration = var_f0886300;
+    swimdamagerinterval = self function_1a9dc208();
+    lastoutwatertimestage = self.drown_start_time + ( stage - 1 ) * swimdamagerinterval;
+    stageduration = swimdamagerinterval;
     
     if ( stage == 1 )
     {

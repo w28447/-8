@@ -162,7 +162,7 @@ function crowd_damage_trigger()
                 
                 if ( b_explosive_damage )
                 {
-                    player function_b8dfa139( #"hash_4122108abe671eb7" );
+                    player function_b8dfa139( #"player_shoots_crowd_explosive" );
                     wait 1;
                 }
             }
@@ -1024,10 +1024,10 @@ function function_b8dfa139( str_event )
         case #"challenge_complete_hard":
             var_9c93ba8f = 15;
             break;
-        case #"hash_4122108abe671eb7":
+        case #"player_shoots_crowd_explosive":
             var_9c93ba8f = -25;
             break;
-        case #"hash_7d48d521481272cf":
+        case #"player_shoots_crowd":
             var_9c93ba8f = -2;
             break;
         case #"player_down":
@@ -1901,7 +1901,7 @@ function function_308a32f0( e_player )
             case #"heavy_kill":
             case #"elephant_rider_kill":
             case #"hash_3d85834be3aff6d2":
-            case #"hash_4122108abe671eb7":
+            case #"player_shoots_crowd_explosive":
             case #"trap_kill":
             case #"first_heavy_kill":
             case #"crawler_created_ww":
@@ -1914,7 +1914,7 @@ function function_308a32f0( e_player )
             case #"player_death":
             case #"hash_74fc45698491be88":
             case #"miniboss_kill":
-            case #"hash_7d48d521481272cf":
+            case #"player_shoots_crowd":
                 foreach ( player in level.activeplayers )
                 {
                     var_d80019d9 = hash( cmd );

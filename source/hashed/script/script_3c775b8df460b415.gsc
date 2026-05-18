@@ -52,7 +52,7 @@ function private on_end( round_reset )
 {
     foreach ( player in getplayers() )
     {
-        player notify( #"hash_17c41292130032eb" );
+        player notify( #"stop_movement_watch" );
     }
 }
 
@@ -72,7 +72,7 @@ function is_active()
 // Size: 0x2c2
 function private movement_watcher()
 {
-    self endon( #"disconnect", #"hash_17c41292130032eb" );
+    self endon( #"disconnect", #"stop_movement_watch" );
     wait zm_round_logic::get_delay_between_rounds() - 2;
     
     while ( true )

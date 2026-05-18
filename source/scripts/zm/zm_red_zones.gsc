@@ -530,7 +530,7 @@ function function_17ac86f7()
 {
     self thread zm_audio::function_713192b1( #"zm_red/location_marketplace", #"market" );
     self thread zm_audio::function_713192b1( #"zm_red/location_monument_of_craterus", #"statue_crat" );
-    self thread zm_audio::function_713192b1( #"zm_red/location_offering_of_the_attalids", #"hash_4576fb3345db827b" );
+    self thread zm_audio::function_713192b1( #"zm_red/location_offering_of_the_attalids", #"temp_attalid" );
     self thread zm_audio::function_713192b1( #"zm_red/location_gymnasium_bathhouse", #"bathhouse" );
     self thread zm_audio::function_713192b1( #"zm_red/location_intersection_of_treasuries", #"treasur" );
     self thread zm_audio::function_713192b1( #"zm_red/location_stoa_of_the_athenians", #"stoa_athen" );

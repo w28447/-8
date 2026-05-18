@@ -286,7 +286,7 @@ function function_a77f3804( e_activator, e_volume )
     }
     
     self clientfield::set( "shower_trap_death_fx", 1 );
-    level notify( #"hash_336bf8053ce21208", { #e_player:e_activator } );
+    level notify( #"shower_trap_kill", { #e_player:e_activator } );
     wait randomfloatrange( 0.25, 0.5 );
     
     if ( isalive( self ) )
@@ -916,7 +916,7 @@ function function_7bd8cfde( e_activator, s_trap )
         s_trap.activated_by_player contracts::increment_zm_contract( #"contract_zm_trap_kills" );
     }
     
-    level notify( #"hash_63be45d89436088", { #e_player:e_activator } );
+    level notify( #"spinning_trap_kill", { #e_player:e_activator } );
     
     if ( isalive( self ) && ( !isdefined( self.var_bd4627e1 ) || !self.var_bd4627e1 ) )
     {

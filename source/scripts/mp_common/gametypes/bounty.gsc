@@ -213,7 +213,7 @@ function private onconnect()
             
             if ( numteammates )
             {
-                self function_3a77006e( int( var_69c2bc0d / numteammates ), "moneychange_initialallocation" );
+                self givemoney( int( var_69c2bc0d / numteammates ), "moneychange_initialallocation" );
             }
         }
     }
@@ -850,7 +850,7 @@ function private onscoreevent( params )
     
     if ( isdefined( money ) && money > 0 && !( params.victim === self ) )
     {
-        self function_3a77006e( money, "moneychange_scoreevent" );
+        self givemoney( money, "moneychange_scoreevent" );
         self playsoundtoplayer( #"hash_767e2476f594e0f3", self );
     }
 }
@@ -890,7 +890,7 @@ function private onplayerdamage( params )
             var_80ed4b57 = self.health;
         }
         
-        player function_3a77006e( var_80ed4b57, "moneychange_playerdamage" );
+        player givemoney( var_80ed4b57, "moneychange_playerdamage" );
         player playsoundtoplayer( #"hash_767e2476f594e0f3", player );
     }
 }
@@ -1041,7 +1041,7 @@ function function_c04436fc()
     {
         if ( isdefined( level.var_a5221eec ) && level.var_a5221eec == player.team )
         {
-            player function_3a77006e( level.var_3e14d8dd, "moneychange_bagomoney" );
+            player givemoney( level.var_3e14d8dd, "moneychange_bagomoney" );
         }
     }
 }
@@ -1402,11 +1402,11 @@ function private function_f878f4bf( var_fa5724d5, context )
     }
     
     level.var_ad7774db thread function_acf3ff19();
-    waitresult = level.var_ad7774db waittill( #"hash_5677d0c5246418e5" );
+    waitresult = level.var_ad7774db waittill( #"bounty_deposit_made" );
     
     for ( prevprogress = 0; waitresult._notify == "timeout" && level.var_ad7774db.curprogress > prevprogress ; prevprogress = level.var_ad7774db.curprogress )
     {
-        waitresult = level.var_ad7774db waittilltimeout( 0.25, #"hash_5677d0c5246418e5" );
+        waitresult = level.var_ad7774db waittilltimeout( 0.25, #"bounty_deposit_made" );
     }
     
     if ( !isdefined( level.var_ad7774db ) )
@@ -1991,7 +1991,7 @@ function function_37e1bbbf( player )
     }
     
     useobj = self;
-    useobj notify( #"hash_5677d0c5246418e5" );
+    useobj notify( #"bounty_deposit_made" );
     useobj function_572ce431();
     player playsoundtoplayer( #"hash_19f756f885db9bb8", player );
     [[ level.var_37d62931 ]]( player, 1 );
@@ -2173,7 +2173,7 @@ function private function_d4a84cde( team, player, result )
     if ( isdefined( result ) && result && isdefined( player ) && isplayer( player ) )
     {
         self.usecount++;
-        player function_3a77006e( level.var_860cdbdb, "moneychange_bountydrop" );
+        player givemoney( level.var_860cdbdb, "moneychange_bountydrop" );
         player pickup_health::function_dd4bf8ac( level.var_a2b93ad3 );
         weapons = player getweaponslist();
         
@@ -2198,7 +2198,7 @@ function private function_d4a84cde( team, player, result )
 // Params 2
 // Checksum 0xa8d4ae31, Offset: 0x7668
 // Size: 0x14c
-function function_3a77006e( amount, reason )
+function givemoney( amount, reason )
 {
     if ( !isdefined( self.pers[ #"money" ] ) || self laststand_mp::is_cheating() )
     {

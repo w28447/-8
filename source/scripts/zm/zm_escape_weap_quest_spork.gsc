@@ -44,9 +44,9 @@ function __init__()
     clientfield::register( "toplayer", "" + #"fill_blood", 1, 4, "int" );
     clientfield::register( "toplayer", "" + #"hash_2058d8d474a6b3e1", 1, 1, "int" );
     clientfield::register( "toplayer", "" + #"hash_cc5b97a575d4d6d", 1, 1, "int" );
-    clientfield::register( "world", "" + #"hash_ef497244490a0fc", 1, 3, "int" );
+    clientfield::register( "world", "" + #"physics_launch_metal", 1, 3, "int" );
     level flag::init( #"hash_1a367a4a0dfb0471" );
-    level flag::init( #"hash_79e07d3dcfbfb5ae" );
+    level flag::init( #"water_tower_destroyed" );
     level flag::init( #"hash_29dc018e9551ecf" );
     level flag::init( #"spoon_quest_completed" );
     level.var_92a01e03 = struct::get( "s_firm_use_trig" );
@@ -303,7 +303,7 @@ function function_3bc828f8( weapon_type )
         case #"ww_blundergat_fire_t8":
         case #"ww_blundergat_fire_t8_upgraded":
         case #"ww_blundergat_acid_t8":
-        case #"hash_3de0926b89369160":
+        case #"blundergat_acid_bullet":
         case #"hash_494f5501b3f8e1e9":
         case #"ww_blundergat_acid_t8_upgraded":
             return true;
@@ -365,19 +365,19 @@ function function_834ba04a()
     {
         case 1:
             hidemiscmodels( self.target );
-            level thread clientfield::set( "" + #"hash_ef497244490a0fc", 1 );
+            level thread clientfield::set( "" + #"physics_launch_metal", 1 );
             break;
         case 2:
             hidemiscmodels( self.target );
-            level thread clientfield::set( "" + #"hash_ef497244490a0fc", 2 );
+            level thread clientfield::set( "" + #"physics_launch_metal", 2 );
             break;
         case 3:
             hidemiscmodels( self.target );
-            level thread clientfield::set( "" + #"hash_ef497244490a0fc", 3 );
+            level thread clientfield::set( "" + #"physics_launch_metal", 3 );
             break;
         case 4:
             hidemiscmodels( self.target );
-            level thread clientfield::set( "" + #"hash_ef497244490a0fc", 4 );
+            level thread clientfield::set( "" + #"physics_launch_metal", 4 );
             break;
     }
     
@@ -391,7 +391,7 @@ function function_834ba04a()
 function function_48d7e846()
 {
     level flag::wait_till_all( level.var_ac9cb27a );
-    level flag::set( #"hash_79e07d3dcfbfb5ae" );
+    level flag::set( #"water_tower_destroyed" );
     level.var_4b9d0136 thread scene::play( #"p8_fxanim_zm_esc_water_tower_bundle", level.var_4b9d0136 );
     level thread clientfield::increment( "" + #"rumble_water_tower", 1 );
     wait 3;

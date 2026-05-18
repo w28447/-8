@@ -14,7 +14,7 @@
 function init()
 {
     level._effect[ #"soul_fx" ] = #"hash_643bd3983b610945";
-    level._effect[ #"hash_169b53a5e4572fdc" ] = #"hash_10fc174d8f84f900";
+    level._effect[ #"soul_fx_capture" ] = #"hash_10fc174d8f84f900";
     level._effect[ #"clue_fx" ] = #"zombie/fx_ritual_glow_relic_zod_zmb";
     level._effect[ #"despawn_fx" ] = #"hash_73a1b4258b95cb4a";
     level._effect[ #"hash_3547af665773df36" ] = #"hash_4174a5c725649d80";
@@ -25,7 +25,7 @@ function init()
     
     foreach ( s_chest in a_s_chests )
     {
-        zm_sq_modules::function_d8383812( s_chest.script_noteworthy, 1, s_chest.script_noteworthy, 400, level._effect[ #"soul_fx" ], level._effect[ #"hash_169b53a5e4572fdc" ] );
+        zm_sq_modules::function_d8383812( s_chest.script_noteworthy, 1, s_chest.script_noteworthy, 400, level._effect[ #"soul_fx" ], level._effect[ #"soul_fx_capture" ] );
     }
     
     clientfield::register( "scriptmover", "" + #"clue_fx", 1, 1, "int", &clue_fx, 0, 0 );

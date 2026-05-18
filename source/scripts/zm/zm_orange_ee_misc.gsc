@@ -70,7 +70,7 @@ function main()
     zm_sq::register( #"hash_3e4c279707a5abe5", #"step_1", #"hash_3e4c279707a5abe5", &function_594f2c26, &function_5c6d5a0e );
     zm_sq::start( #"hash_66685502a7dee586", !zm_utility::is_standard() );
     zm_sq::start( #"hash_3e4c279707a5abe5", !zm_utility::is_standard() );
-    level flag::init( #"hash_431a5026505d71aa" );
+    level flag::init( #"hidden_song_2_activated" );
     function_779045();
     
     if ( zm_utility::is_ee_enabled() )
@@ -1195,9 +1195,9 @@ function hidden_song_2()
     s_location = struct::spawn( ( -528, 1196, 320 ) );
     s_unitrigger = s_location zm_unitrigger::create( "", 32 );
     s_location thread function_cabcfdd2();
-    waitresult = level flag::wait_till_any( array( #"hash_778a2b8282d704f", #"hash_431a5026505d71aa" ) );
+    waitresult = level flag::wait_till_any( array( #"hash_778a2b8282d704f", #"hidden_song_2_activated" ) );
     
-    if ( waitresult._notify === #"hash_431a5026505d71aa" )
+    if ( waitresult._notify === #"hidden_song_2_activated" )
     {
         if ( level.musicsystem.currentplaytype < 4 )
         {
@@ -1217,7 +1217,7 @@ function hidden_song_2()
 function function_cabcfdd2()
 {
     level endon( #"hash_778a2b8282d704f" );
-    level endon( #"hash_431a5026505d71aa" );
+    level endon( #"hidden_song_2_activated" );
     var_b3ee22cc = 0;
     
     while ( true )
@@ -1231,7 +1231,7 @@ function function_cabcfdd2()
         {
             playsoundatposition( #"hash_4d9caefa6e6dd2e7", self.origin );
             wait 3;
-            level flag::set( #"hash_431a5026505d71aa" );
+            level flag::set( #"hidden_song_2_activated" );
         }
     }
 }

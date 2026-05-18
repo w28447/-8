@@ -123,7 +123,7 @@ function init_quests()
 {
     zm_sq::register( #"jump_scare", #"1", #"jump_scare_quest", &jump_scare, &jump_scare_cleanup );
     zm_sq::register( #"drawings", #"1", #"drawings_quest", &function_cb19e12a, &drawings_cleanup );
-    zm_sq::register( #"narrative_room", #"1", #"narrative_room_hidden", &narrative_room_hidden, &function_13c87ace );
+    zm_sq::register( #"narrative_room", #"1", #"narrative_room_hidden", &narrative_room_hidden, &narrative_room_hidden_cleanup );
     zm_sq::register( #"narrative_room", #"2", #"narrative_room_revealed", &narrative_room, &narrative_room_cleanup );
     zm_sq::register( #"hells_redeemer", #"hash_66e936afdcdd5d4d", #"hash_574005386f679cf6", &function_21d4e9e9, &function_e7aa5f07 );
     zm_sq::register( #"hells_redeemer", #"hash_385585cb6cbead68", #"hash_574004386f679b43", &function_14154e6a, &function_8d4b5efe );
@@ -186,7 +186,7 @@ function narrative_room_hidden( var_a276c861 )
 // Params 2
 // Checksum 0xb08d1864, Offset: 0x10b8
 // Size: 0x14
-function function_13c87ace( var_a276c861, var_19e802fa )
+function narrative_room_hidden_cleanup( var_a276c861, var_19e802fa )
 {
     
 }

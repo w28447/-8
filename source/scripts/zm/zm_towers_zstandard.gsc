@@ -96,14 +96,14 @@ function function_74872db6()
 // Size: 0x674
 function function_84139b27()
 {
-    zm_utility::function_c492c4d6( #"danu", #"hash_692e7036aa28a86e", array( #"zone_danu_top_floor", #"zone_danu_ground_floor" ), array( #"temple", #"arena", #"flooded_crypt", #"pit" ), #"hash_39a5e0978d0efd73", #"hash_78b1d1196746763d" );
-    zm_utility::function_c492c4d6( #"ra", #"hash_15c014d044ca67c1", array( #"zone_ra_top_floor", #"zone_ra_ground_floor" ), array( #"arena", #"temple", #"flooded_crypt", #"pit" ), #"hash_7d572184f439180a", #"hash_298247685ea80656" );
-    zm_utility::function_c492c4d6( #"odin", #"hash_644b220d0ab22c0c", array( #"zone_odin_top_floor", #"zone_odin_ground_floor" ), array( #"temple", #"flooded_crypt", #"pit", #"arena" ), #"hash_ed407098b77bc91", #"hash_5e203d11381c57c7" );
-    zm_utility::function_c492c4d6( #"zeus", #"hash_76fbf2acafa2c1b9", array( #"zone_zeus_ground_floor", #"zone_zeus_top_floor" ), array( #"arena", #"flooded_crypt", #"pit", #"temple" ), #"hash_417a5feff0cb56ea", #"hash_74941e980968cff6" );
+    zm_utility::function_c492c4d6( #"danu", #"s_defend_area_obj_danu", array( #"zone_danu_top_floor", #"zone_danu_ground_floor" ), array( #"temple", #"arena", #"flooded_crypt", #"pit" ), #"hash_39a5e0978d0efd73", #"hash_78b1d1196746763d" );
+    zm_utility::function_c492c4d6( #"ra", #"s_defend_area_obj_ra", array( #"zone_ra_top_floor", #"zone_ra_ground_floor" ), array( #"arena", #"temple", #"flooded_crypt", #"pit" ), #"hash_7d572184f439180a", #"hash_298247685ea80656" );
+    zm_utility::function_c492c4d6( #"odin", #"s_defend_area_obj_odin", array( #"zone_odin_top_floor", #"zone_odin_ground_floor" ), array( #"temple", #"flooded_crypt", #"pit", #"arena" ), #"hash_ed407098b77bc91", #"hash_5e203d11381c57c7" );
+    zm_utility::function_c492c4d6( #"zeus", #"s_defend_area_obj_zeus", array( #"zone_zeus_ground_floor", #"zone_zeus_top_floor" ), array( #"arena", #"flooded_crypt", #"pit", #"temple" ), #"hash_417a5feff0cb56ea", #"hash_74941e980968cff6" );
     zm_utility::function_c492c4d6( #"temple", #"hash_8117ce3b24d5287", array( #"zone_pap_room", #"zone_pap_room_balcony_flooded_crypt" ), array( #"ra", #"danu", #"odin", #"zeus" ), #"hash_75add73ac9df6bbc", #"hash_468014d28365550c" );
     zm_utility::function_c492c4d6( #"arena", #"hash_67ff9fcb1f12e52d", array( #"zone_starting_area_center" ), array( #"ra", #"danu", #"odin", #"zeus" ), #"hash_4d59f666d8b7f20c", #"hash_c641ebe32c2d1fc" );
-    zm_utility::function_c492c4d6( #"pit", #"hash_2db9c4e4d97c7ca9", array( #"zone_body_pit", #"zone_fallen_hero" ), array( #"ra", #"danu", #"odin", #"zeus" ), #"hash_6880f6ff86cde47e", #"hash_30733dec2e9e228a" );
-    zm_utility::function_c492c4d6( #"flooded_crypt", #"hash_68baa2a5397d37da", array( #"zone_flooded_crypt", #"zone_cursed_room" ), array( #"ra", #"danu", #"odin", #"zeus" ), #"hash_107cd70abcec1413", #"hash_3235c0f8ff21201d" );
+    zm_utility::function_c492c4d6( #"pit", #"s_defend_area_obj_pit", array( #"zone_body_pit", #"zone_fallen_hero" ), array( #"ra", #"danu", #"odin", #"zeus" ), #"hash_6880f6ff86cde47e", #"hash_30733dec2e9e228a" );
+    zm_utility::function_c492c4d6( #"flooded_crypt", #"s_defend_area_obj_flooded_crypt", array( #"zone_flooded_crypt", #"zone_cursed_room" ), array( #"ra", #"danu", #"odin", #"zeus" ), #"hash_107cd70abcec1413", #"hash_3235c0f8ff21201d" );
 }
 
 // Namespace zm_towers_zstandard/zm_towers_zstandard

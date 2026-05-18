@@ -57,7 +57,7 @@ function init_clientfield()
 function init_quests()
 {
     zm_sq::register( #"jump_scare", #"step_1", #"jump_scare_quest", &jump_scare, &jump_scare_cleanup );
-    zm_sq::register( #"narrative_room", #"step_1", #"narrative_room_hidden", &narrative_room_hidden, &function_13c87ace );
+    zm_sq::register( #"narrative_room", #"step_1", #"narrative_room_hidden", &narrative_room_hidden, &narrative_room_hidden_cleanup );
     zm_sq::register( #"narrative_room", #"step_2", #"narrative_room_revealed", &narrative_room, &narrative_room_cleanup );
 }
 
@@ -179,7 +179,7 @@ function narrative_room_hidden( var_a276c861 )
 // Params 2
 // Checksum 0x5052a95e, Offset: 0x8b8
 // Size: 0x14
-function function_13c87ace( var_a276c861, var_19e802fa )
+function narrative_room_hidden_cleanup( var_a276c861, var_19e802fa )
 {
     
 }

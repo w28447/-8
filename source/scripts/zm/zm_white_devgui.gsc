@@ -49,7 +49,7 @@
     // Size: 0x108, Type: dev
     function private function_3db5079()
     {
-        if ( !level flag::get( #"hash_40856b65dff0f6eb" ) )
+        if ( !level flag::get( #"power_room_event_complete" ) )
         {
             function_2639784();
         }

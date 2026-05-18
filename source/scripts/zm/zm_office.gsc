@@ -1,4 +1,4 @@
-#using script_293299be863018bb;
+#using scripts\zm\zm_office_ee_delusional_dempsey.gsc;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\exploder_shared;
@@ -156,7 +156,7 @@ function event_handler[level_init] main( eventstruct )
     level thread zm_office_magicbox_screens::init();
     level thread zm_office_defcon::pentagon_packapunch_init();
     level thread zm_office_ww_quest::init();
-    level thread namespace_6f62781f::init();
+    level thread zm_office_ee_delusional_dempsey::init();
     level thread zm_office_vo_hooks::init();
     level thread zm_office_sound::main();
     

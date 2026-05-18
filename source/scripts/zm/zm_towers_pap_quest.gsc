@@ -853,13 +853,13 @@ function drop_head( v_origin, str_tower, var_5570d8de )
     switch ( str_encounter )
     {
         case #"destroyer":
-            str_head = #"hash_7c166ef26a8ce946";
+            str_head = #"c_t8_zmb_dlc0_zombie_destroyer_head_decapitated";
             break;
         case #"marauder":
             str_head = #"c_t8_zmb_dlc0_zombie_marauder_decapitated_head1";
             break;
         case #"tigers":
-            str_head = #"hash_7046550bbfeaf740";
+            str_head = #"c_t8_zmb_dlc0_tiger_head1_decapitated";
             break;
     }
     
@@ -1108,7 +1108,7 @@ function function_9b320791()
     str_notify = self.var_427eb1ae;
     level waittill( str_notify );
     self thread fx::play( "fx_challenge_head_blood_burst", self getcentroid(), undefined, undefined, 1, undefined, 1, 0 );
-    self notify( #"hash_691806c47ba12fac" );
+    self notify( #"fx_stop_blood_drips" );
     self hide();
 }
 
@@ -1255,7 +1255,7 @@ function function_f3c4aeac()
     {
         case #"destroyer":
             str_fx_tag = undefined;
-            self setmodel( #"hash_7c166ef26a8ce946" );
+            self setmodel( #"c_t8_zmb_dlc0_zombie_destroyer_head_decapitated" );
             break;
         case #"marauder":
             str_fx_tag = undefined;
@@ -1263,14 +1263,14 @@ function function_f3c4aeac()
             break;
         case #"tigers":
             str_fx_tag = undefined;
-            self setmodel( #"hash_7046550bbfeaf740" );
+            self setmodel( #"c_t8_zmb_dlc0_tiger_head1_decapitated" );
             break;
     }
     
     self show();
     self playsound( #"hash_3d7066af9c9bf849" );
     self thread fx::play( "fx_challenge_head_blood_burst", self getcentroid(), undefined, undefined, 1, undefined, 1, 0 );
-    self thread fx::play( "fx_challenge_head_blood_drips", self getcentroid(), undefined, #"hash_691806c47ba12fac", 1, str_fx_tag, 1, 0 );
+    self thread fx::play( "fx_challenge_head_blood_drips", self getcentroid(), undefined, #"fx_stop_blood_drips", 1, str_fx_tag, 1, 0 );
 }
 
 // Namespace zm_towers_pap_quest/zm_towers_pap_quest

@@ -355,11 +355,11 @@ function private __init__()
     // Size: 0x2b4, Type: dev
     function private function_f9efe895()
     {
-        var_7f0b4b6b = [];
+        stash_points = [];
         buoy_stash = [];
-        var_7f0b4b6b = function_91b29d2a( "<dev string:x768>" );
+        stash_points = function_91b29d2a( "<dev string:x768>" );
         buoy_stash = function_91b29d2a( "<dev string:x776>" );
-        var_7f0b4b6b = arraycombine( var_7f0b4b6b, buoy_stash, 1, 0 );
+        stash_points = arraycombine( stash_points, buoy_stash, 1, 0 );
         player = util::gethostplayer();
         n_index = 0;
         prev_index = 0;
@@ -370,7 +370,7 @@ function private __init__()
         {
             if ( player adsbuttonpressed() && player function_78931318( "<dev string:x7de>" ) )
             {
-                if ( n_index < var_7f0b4b6b.size - 1 )
+                if ( n_index < stash_points.size - 1 )
                 {
                     n_index++;
                 }
@@ -383,7 +383,7 @@ function private __init__()
             {
                 if ( n_index == 0 )
                 {
-                    n_index = var_7f0b4b6b.size - 1;
+                    n_index = stash_points.size - 1;
                 }
                 else
                 {
@@ -393,8 +393,8 @@ function private __init__()
             
             if ( n_index != prev_index )
             {
-                v_player_pos = var_7f0b4b6b[ n_index ].origin + anglestoforward( var_7f0b4b6b[ n_index ].angles ) * 96;
-                var_543a44a5 = vectortoangles( var_7f0b4b6b[ n_index ].origin - v_player_pos + ( 0, 0, 36 ) );
+                v_player_pos = stash_points[ n_index ].origin + anglestoforward( stash_points[ n_index ].angles ) * 96;
+                var_543a44a5 = vectortoangles( stash_points[ n_index ].origin - v_player_pos + ( 0, 0, 36 ) );
                 player setorigin( v_player_pos );
                 player setplayerangles( var_543a44a5 );
                 prev_index = n_index;

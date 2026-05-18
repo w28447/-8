@@ -122,7 +122,7 @@ function function_b741acea()
 // Size: 0x4c
 function function_88b87834()
 {
-    level waittill( #"hash_70624458fe48ac18" );
+    level waittill( #"groom_lake_enter" );
     level flag::set( #"in_groom_lake" );
     function_fac06066();
 }
@@ -133,7 +133,7 @@ function function_88b87834()
 // Size: 0x2c
 function function_bcae2e4b()
 {
-    level waittill( #"hash_3e95ff63d623d736" );
+    level waittill( #"groom_lake_exit" );
     function_4074a9e2();
 }
 
@@ -143,7 +143,7 @@ function function_bcae2e4b()
 // Size: 0x264
 function round_spawning()
 {
-    level endon( #"hash_3e95ff63d623d736" );
+    level endon( #"groom_lake_exit" );
     function_b741acea();
     n_spawn_delay = zm_round_logic::get_zombie_spawn_delay( level.var_37769559 );
     
@@ -160,7 +160,7 @@ function round_spawning()
             wait 0.1;
         }
         
-        level flag::wait_till_clear( #"hash_21921ed511559aa3" );
+        level flag::wait_till_clear( #"nuke_stop_special_spawning" );
         str_archetype = get_archetype();
         ai = spawn_archetype( str_archetype );
         
@@ -238,7 +238,7 @@ function spawn_archetype( str_archetype )
 // Size: 0x34
 function end_round()
 {
-    level endon( #"hash_3e95ff63d623d736" );
+    level endon( #"groom_lake_exit" );
     wait 15;
     function_d89bf8aa();
 }

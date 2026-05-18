@@ -366,7 +366,7 @@ function function_95a52218()
     level endon( #"end_game" );
     self flag::init( #"hash_35c0d9f1ff884fce" );
     self flag::init( #"hash_656721b8c4297ad5" );
-    s_result = self waittill( #"hash_6858bc0ef6a5b4b1" );
+    s_result = self waittill( #"hiding_spot_broken" );
     
     if ( !( isdefined( s_result.e_player.var_4bb711cf ) && s_result.e_player.var_4bb711cf ) )
     {
@@ -428,7 +428,7 @@ function function_7e94450c()
     
     e_brick clientfield::set( "" + #"hash_23ba81a7c071845d", 0 );
     t_damage delete();
-    self notify( #"hash_6858bc0ef6a5b4b1", { #e_player:e_player, #var_2db8b01a:e_brick.scene_ents[ #"prop 1" ] } );
+    self notify( #"hiding_spot_broken", { #e_player:e_player, #var_2db8b01a:e_brick.scene_ents[ #"prop 1" ] } );
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -445,7 +445,7 @@ function function_5e0885f9()
     s_notify = self waittill( #"death" );
     self clientfield::set( "" + #"hash_23ba81a7c071845d", 0 );
     waitframe( 1 );
-    self notify( #"hash_6858bc0ef6a5b4b1", { #e_player:s_notify.attacker, #var_2db8b01a:self } );
+    self notify( #"hiding_spot_broken", { #e_player:s_notify.attacker, #var_2db8b01a:self } );
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests
@@ -3826,7 +3826,7 @@ function function_fffb9aee( mdl_tree )
     self thread function_ac211843();
     mdl_tree clientfield::set( "" + #"hash_3c85334429a971b4", 0 );
     mdl_tree scene::play( #"p8_fxanim_zm_red_gaia_bush_bundle", "heal", mdl_tree );
-    mdl_tree setmodel( #"hash_3cb03679991cf4ad" );
+    mdl_tree setmodel( #"p8_zm_red_gaia_bush_01_script" );
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests

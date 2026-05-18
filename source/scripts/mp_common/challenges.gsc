@@ -1495,7 +1495,7 @@ function challengekills( data )
                     
                     if ( player.pers[ #"kill_enemy_one_bullet_sniper" ] % 10 == 0 )
                     {
-                        player stats::function_dad108fa( #"hash_2ebd387ffb67e1dc", 1 );
+                        player stats::function_dad108fa( #"kill_enemy_one_bullet_sniper_10", 1 );
                     }
                 }
             }
@@ -2478,14 +2478,14 @@ function function_223ff464()
     {
         self force_challenge_stat( #"mastery_marksman", 0 );
         marksmanarray = [];
-        array::add( marksmanarray, #"hash_4075f20007923416" );
+        array::add( marksmanarray, #"gold_any_assault" );
         array::add( marksmanarray, #"gold_any_smg" );
-        array::add( marksmanarray, #"hash_70cd6c54d1c07272" );
+        array::add( marksmanarray, #"gold_any_tactical" );
         array::add( marksmanarray, #"gold_any_lmg" );
-        array::add( marksmanarray, #"hash_2ea8a6bab2364c58" );
+        array::add( marksmanarray, #"gold_any_sniper" );
         array::add( marksmanarray, #"gold_any_pistol" );
-        array::add( marksmanarray, #"hash_3b30f98820bc20cf" );
-        array::add( marksmanarray, #"hash_18816731b999fbfb" );
+        array::add( marksmanarray, #"gold_any_shotgun" );
+        array::add( marksmanarray, #"gold_any_launcher" );
         array::add( marksmanarray, #"hash_6c1c399dcbe1af97" );
         array::add( marksmanarray, #"hash_5630ec40181e1db3" );
         array::add( marksmanarray, #"hash_354bfe5c140365bf" );
@@ -3326,7 +3326,7 @@ function killedbaseoffender( objective, weapon, inflictor )
     
     if ( self.challenge_offenderkillcount > 1 )
     {
-        self stats::function_dad108fa( #"hash_4b3049ba027dd495", 1 );
+        self stats::function_dad108fa( #"double_kill_attackers_defenders", 1 );
     }
     
     self.challenge_offenderkillcount = 0;
@@ -3361,7 +3361,7 @@ function killedbasedefender( objective )
     
     if ( self.challenge_defenderkillcount > 1 )
     {
-        self stats::function_dad108fa( #"hash_4b3049ba027dd495", 1 );
+        self stats::function_dad108fa( #"double_kill_attackers_defenders", 1 );
     }
     
     self.challenge_defenderkillcount = 0;

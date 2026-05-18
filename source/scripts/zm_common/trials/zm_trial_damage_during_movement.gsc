@@ -7,18 +7,18 @@
 #using scripts\zm_common\zm_trial_util;
 #using scripts\zm_common\zm_utility;
 
-#namespace namespace_c1466447;
+#namespace zm_trial_damage_during_movement;
 
-// Namespace namespace_c1466447/namespace_c1466447
+// Namespace zm_trial_damage_during_movement/zm_trial_damage_during_movement
 // Params 0, eflags: 0x2
 // Checksum 0xd377626a, Offset: 0xc0
 // Size: 0x3c
 function autoexec __init__system__()
 {
-    system::register( #"hash_2f326252a6b5175", &__init__, undefined, undefined );
+    system::register( #"zm_trial_damage_during_movement", &__init__, undefined, undefined );
 }
 
-// Namespace namespace_c1466447/namespace_c1466447
+// Namespace zm_trial_damage_during_movement/zm_trial_damage_during_movement
 // Params 0
 // Checksum 0xb37af210, Offset: 0x108
 // Size: 0x5c
@@ -29,10 +29,10 @@ function __init__()
         return;
     }
     
-    zm_trial::register_challenge( #"hash_322751dde777c910", &on_begin, &on_end );
+    zm_trial::register_challenge( #"damage_during_movement", &on_begin, &on_end );
 }
 
-// Namespace namespace_c1466447/namespace_c1466447
+// Namespace zm_trial_damage_during_movement/zm_trial_damage_during_movement
 // Params 2, eflags: 0x4
 // Checksum 0xacf263a, Offset: 0x170
 // Size: 0xd8
@@ -47,7 +47,7 @@ function private on_begin( var_c8a36f90, var_16e6b8ea )
     }
 }
 
-// Namespace namespace_c1466447/namespace_c1466447
+// Namespace zm_trial_damage_during_movement/zm_trial_damage_during_movement
 // Params 1, eflags: 0x4
 // Checksum 0x6a945766, Offset: 0x250
 // Size: 0x16
@@ -56,7 +56,7 @@ function private on_end( round_reset )
     level.var_a96e21f8 = undefined;
 }
 
-// Namespace namespace_c1466447/namespace_c1466447
+// Namespace zm_trial_damage_during_movement/zm_trial_damage_during_movement
 // Params 1, eflags: 0x4
 // Checksum 0xd338651c, Offset: 0x270
 // Size: 0xe4
@@ -78,7 +78,7 @@ function private function_1633056a( var_16e6b8ea = 10 )
     }
 }
 
-// Namespace namespace_c1466447/namespace_c1466447
+// Namespace zm_trial_damage_during_movement/zm_trial_damage_during_movement
 // Params 0, eflags: 0x4
 // Checksum 0x73b7f9b8, Offset: 0x360
 // Size: 0x132, Type: bool

@@ -1052,6 +1052,6 @@ client_fx,#fire/fx_fire_ai_human_hip_left_loop
 client_fx,#player/fx_plyr_land_dust_dirt_xlg
 client_fx,#fire/fx_fire_ai_human_arm_left_loop
 client_fx,#player/fx_plyr_footstep_dust
-client_fx,#hash_7a37324c1988abb5
+client_fx,#zombie/fx_val_chest_burst
 client_fx,#hash_7e68dfc1a77f9f59
 client_lui_elem_uid,#full_screen_movie

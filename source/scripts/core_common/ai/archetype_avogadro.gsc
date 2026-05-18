@@ -215,10 +215,10 @@ function function_50a86206( params )
 // Params 1
 // Checksum 0xd3b082ae, Offset: 0xd50
 // Size: 0x62
-function function_80fc1a78( time )
+function avogadroreveal( time )
 {
     self notify( "3a74e555d7969d08" );
-    self endon( #"death", #"hash_7d29584dcbbe7d67", "4c2f097babffd515" );
+    self endon( #"death", #"kill_avogadro_reveal", "4c2f097babffd515" );
     self show();
     wait time;
 }
@@ -350,7 +350,7 @@ function private function_7e5905cd( entity )
     if ( isdefined( enemy ) )
     {
         self.shield = 1;
-        self notify( #"hash_7d29584dcbbe7d67" );
+        self notify( #"kill_avogadro_reveal" );
         self show();
     }
     
@@ -523,7 +523,7 @@ function function_9ab1c000( entity )
 // Size: 0xdc
 function function_3b8d314c( entity )
 {
-    entity thread function_80fc1a78( 0.1 );
+    entity thread avogadroreveal( 0.1 );
     entity.blockingpain = 1;
     entity.var_1ce249af = 0;
     entity.is_phasing = 1;
@@ -558,7 +558,7 @@ function function_36f6a838( entity )
 // Size: 0xb4
 function function_dbba31c1( entity )
 {
-    entity thread function_80fc1a78( 0.1 );
+    entity thread avogadroreveal( 0.1 );
     entity.blockingpain = 0;
     entity.phase_time = gettime() + self.var_15aa1ae0;
     entity.is_phasing = undefined;

@@ -92,7 +92,7 @@ function freeze_quest_cleanup( var_a276c861, var_19e802fa )
         zm_round_spawning::function_43aed0ca( level.round_number + 1 );
     }
     
-    level flag::clear( #"hash_7d9f8ec3cb9af87e" );
+    level flag::clear( #"zipline_handle_picked_up" );
     level.func_get_delay_between_rounds = &function_f85d3d98;
     zm_hms_util::function_2ba419ee( 1, int( max( 199, level.round_number ) ) );
     level flag::clear( #"break_freeze_faster" );
@@ -216,7 +216,7 @@ function function_f0bdc5df()
     level endon( #"end_game" );
     self endon( #"death", #"player_frozen" );
     self thread function_6577cacc();
-    self notify( #"hash_42fcb8fa7aec0734" );
+    self notify( #"player_entered_water" );
     self clientfield::set_to_player( "" + #"hash_13f1aaee7ebf9986", 1 );
     self allowslide( 0 );
     self thread function_1b305413();
@@ -251,7 +251,7 @@ function player_sprinting()
 {
     level endon( #"end_game" );
     self endon( #"death", #"player_frozen" );
-    self notify( #"hash_668824b34b3076bc" );
+    self notify( #"player_exited_water" );
     self allowslide( 1 );
     self thread zm_orange_water::function_d2dd1f2b();
     self clientfield::set_to_player( "" + #"hash_13f1aaee7ebf9986", 0 );
@@ -265,7 +265,7 @@ function player_sprinting()
 function function_6577cacc()
 {
     level endon( #"end_game" );
-    self endon( #"death", #"hash_668824b34b3076bc" );
+    self endon( #"death", #"player_exited_water" );
     
     if ( !isdefined( self.var_36a93d1 ) )
     {

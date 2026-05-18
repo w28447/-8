@@ -72,7 +72,7 @@ function init()
         level.var_2fc3a917[ level.var_2fc3a917.size ] = s_temp;
     }
     
-    zm_sq::register( #"ww_quest_weapon", #"step_1", #"hash_2af54f403e86105d", &function_da84e99e, &function_6d5a79fe );
+    zm_sq::register( #"ww_quest_weapon", #"step_1", #"ww_quest_weapon_step1", &ww_quest_weapon_step1_setup, &ww_quest_weapon_step1_cleanup );
     level thread function_661dc825();
     
     if ( !zm_utility::is_standard() )
@@ -148,7 +148,7 @@ function function_661dc825()
 // Params 1
 // Checksum 0xc550631d, Offset: 0xcc0
 // Size: 0xcc
-function function_da84e99e( var_5ea5c94d )
+function ww_quest_weapon_step1_setup( var_5ea5c94d )
 {
     level.var_f36ca012 = 0;
     level.var_2fc3a917[ level.var_f36ca012 ] function_46006d68();
@@ -380,7 +380,7 @@ function complete_soul_capture()
 // Params 2
 // Checksum 0xddfcbc5c, Offset: 0x1668
 // Size: 0x134
-function function_6d5a79fe( var_5ea5c94d, ended_early )
+function ww_quest_weapon_step1_cleanup( var_5ea5c94d, ended_early )
 {
     if ( var_5ea5c94d || ended_early )
     {

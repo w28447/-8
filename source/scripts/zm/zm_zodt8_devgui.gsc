@@ -72,8 +72,8 @@
             case #"give_flare_blue":
                 give_flare( "<dev string:x575>" );
                 return 1;
-            case #"hash_59b568ce3fe548b6":
-                level thread function_649d5f75();
+            case #"craft_distiller":
+                level thread craft_distiller();
                 return 1;
             case #"hash_be17a68845640e4":
                 level thread function_a368f5ed( "<dev string:x57c>" );
@@ -220,7 +220,7 @@
     // Params 0
     // Checksum 0x12987a31, Offset: 0x9a0
     // Size: 0x44, Type: dev
-    function function_649d5f75()
+    function craft_distiller()
     {
         a_e_players = getplayers();
         zodt8_wonder_weapon_quest::function_8498110e( a_e_players[ 0 ] );

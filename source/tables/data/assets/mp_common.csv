@@ -34593,7 +34593,7 @@ gesture,#hash_3ff9244d2a3870ff
 gesture,#hash_41370e62c0234eef
 gesture,#hash_4164fdc7386ee9ab
 gesture,#hash_4195b95d799b650a
-gesture,#hash_419f11534af12a76
+gesture,#ges_battle_cry
 gesture,d#ges_zipline
 gesture,d#hash_44b08a09b146b051
 gesture,#hash_44eac644559882bd
@@ -34950,7 +34950,7 @@ xmodel,#hash_181fe85848ab066
 xmodel,d#wpn_t8_pistol_standard_sig_01_world
 xmodel,#veh_t7_drone_amws_tread_left_back
 xmodel,d#wpn_t8_sniper_vanguard_sig_01_scope_world
-xmodel,#hash_1ad3d7548486082
+xmodel,#p8_mp_flag_carry_1_blackops_alt
 xmodel,#hash_1f415a1d28a59c7
 xmodel,d#wpn_t8_loot_pistol_auto_sig_02_world
 xmodel,#p7_mou_h_beams_stack_snow
@@ -35686,7 +35686,7 @@ xmodel,d#fx_char_gib_chunk_bone01
 xmodel,#p7_slu_refrigerator_modern_closed_dirty
 xmodel,d#hash_4d753130e0ee6d2b
 xmodel,d#attach_t8_pistol_revolver_scope_mk2_world
-xmodel,#hash_4ddde6545c52fa2f
+xmodel,#p8_mp_flag_carry_1_mercs_alt
 xmodel,#projectile_t8_drone_amws_missile
 xmodel,#hash_4e53863d4b1f6a81
 xmodel,#hash_4e75b2e63abfac9e
@@ -37009,7 +37009,7 @@ beam,d#hash_391c0834d2b675c4
 beam,#hash_3ec5195462378992
 beam,#hash_6ac8acd028e03c0d
 beam,d#hash_7acce16c04e24d58
-postfxbundle,#hash_108c587fdd95588a
+postfxbundle,#pstfx_dni_screen_futz_lp
 postfxbundle,d#hash_11c95485336a7f45
 postfxbundle,d#hash_1356e810590b8caf
 postfxbundle,#hash_158ba9bd474fbf65

@@ -50,7 +50,7 @@ function init_flags()
     level flag::init( #"hash_4be0ac3f82fc9d21" );
     level flag::init( #"hash_7d53c3b51ab8c250" );
     level flag::init( #"hash_44512b5e960df8f0" );
-    level flag::init( #"hash_65f4eac55edea07f" );
+    level flag::init( #"ww_weapon_picked_up" );
     
     /#
         level flag::init( #"soul_fill" );
@@ -66,7 +66,7 @@ function main()
     level.s_ww_quest = spawnstruct();
     zm_sq::register( #"ww_quest", #"hash_48c49b81fdcdc242", #"ww_quest_step1", &ww_quest_step1_setup, &ww_quest_step1_cleanup );
     zm_sq::register( #"ww_quest", #"hash_6442e35feab8c079", #"ww_quest_step2", &ww_quest_step2_setup, &ww_quest_step2_cleanup );
-    zm_sq::register( #"ww_quest", #"hash_737f8b1503916752", #"ww_quest_step3", &ww_quest_step3_setup, &ww_quest_step3_cleanup );
+    zm_sq::register( #"ww_quest", #"step_3_pickup_key", #"ww_quest_step3", &ww_quest_step3_setup, &ww_quest_step3_cleanup );
     zm_sq::register( #"ww_quest", #"hash_60e28c4bd65d92ab", #"ww_quest_step4", &ww_quest_step4_setup, &ww_quest_step4_cleanup );
     zm_sq::register( #"ww_quest", #"hash_4a7a9c037e9a8447", #"ww_quest_step5", &ww_quest_step5_setup, &ww_quest_step5_cleanup );
     zm_sq::register( #"ww_quest", #"hash_7230371c8fbcfec2", #"ww_quest_step6", &ww_quest_step6_setup, &ww_quest_step6_cleanup );
@@ -763,7 +763,7 @@ function ww_quest_step10_setup( var_5ea5c94d )
     if ( !var_5ea5c94d )
     {
         s_reward_crate.e_weapon zm_orange_util::start_zombies_collision_manager( getweapon( "ww_tesla_sniper_t8" ), &function_b8f6f344 );
-        level flag::wait_till( #"hash_65f4eac55edea07f" );
+        level flag::wait_till( #"ww_weapon_picked_up" );
     }
 }
 
@@ -792,7 +792,7 @@ function ww_quest_step10_cleanup( var_5ea5c94d, ended_early )
             }
         }
         
-        level flag::set( #"hash_65f4eac55edea07f" );
+        level flag::set( #"ww_weapon_picked_up" );
     }
 }
 
@@ -807,6 +807,6 @@ function function_b8f6f344( e_player, b_get_weapon )
         e_player thread zm_orange_util::function_51b752a9( #"hash_8afeb4b44d0add" );
     }
     
-    level flag::set( #"hash_65f4eac55edea07f" );
+    level flag::set( #"ww_weapon_picked_up" );
 }
 

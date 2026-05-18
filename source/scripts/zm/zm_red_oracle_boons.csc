@@ -21,7 +21,7 @@ function autoexec __init__system__()
 function __init__()
 {
     n_bits = getminbitcountfornum( 4 );
-    clientfield::register( "item", "" + #"hash_7e5c581ade235dfc", 16000, n_bits, "int", &function_c0d2e1a2, 0, 0 );
+    clientfield::register( "item", "" + #"hash_7e5c581ade235dfc", 16000, n_bits, "int", &craft_highlight, 0, 0 );
     clientfield::register( "toplayer", "" + #"oracle_boon_recieved", 16000, 1, "int", &oracle_boon_recieved, 0, 0 );
 }
 
@@ -29,7 +29,7 @@ function __init__()
 // Params 7
 // Checksum 0x38d2623f, Offset: 0x1d0
 // Size: 0xf8
-function function_c0d2e1a2( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function craft_highlight( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval > 0 )
     {
@@ -45,7 +45,7 @@ function function_c0d2e1a2( localclientnum, oldval, newval, bnewent, binitialsna
         return;
     }
     
-    level notify( #"hash_5a7453176272efff" );
+    level notify( #"stop_craft_highlight" );
 }
 
 // Namespace zm_red_oracle_boons/zm_red_oracle_boons
@@ -54,7 +54,7 @@ function function_c0d2e1a2( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x5c
 function private function_cd5f9803( localclientnum )
 {
-    self waittill( #"hash_5a7453176272efff", #"death" );
+    self waittill( #"stop_craft_highlight", #"death" );
     
     if ( isdefined( self ) )
     {

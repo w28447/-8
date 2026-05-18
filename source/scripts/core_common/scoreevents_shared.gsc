@@ -271,7 +271,7 @@ function decrementlastobituaryplayercountafterfade()
 // Size: 0x122
 function function_2b96d7dc()
 {
-    if ( !isdefined( level.var_d1455682 ) )
+    if ( !isdefined( level.gametype_scriptbundle ) )
     {
         return undefined;
     }

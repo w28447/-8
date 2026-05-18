@@ -128,7 +128,7 @@ function function_6c288c45( spawnorigin, spawnangles )
     turretvehicle thread turret_laser_watch();
     turretvehicle thread setup_death_watch_for_new_targets();
     turretvehicle thread targetting_delay::function_7e1a12ce( bundle.var_2aeadfa0 );
-    callback::callback( #"hash_6d9bdacc6c29cfa5", { #turret:turretvehicle, #owner:self } );
+    callback::callback( #"on_turret_placed", { #turret:turretvehicle, #owner:self } );
 }
 
 // Namespace ultimate_turret/ultimate_turret
@@ -585,28 +585,28 @@ function turretscanning()
                     fire_time = min_burst_time > max_burst_time ? min_burst_time : randomfloatrange( min_burst_time, max_burst_time );
                     var_fc9f290e = turretvehicle.enemy;
                     turretvehicle vehicle_ai::fire_for_time( fire_time, 0, turretvehicle.enemy );
-                    var_afae28e0 = !isdefined( var_fc9f290e ) || !isalive( var_fc9f290e );
+                    enemy_died = !isdefined( var_fc9f290e ) || !isalive( var_fc9f290e );
                     
-                    if ( min_pause_time > 0 && !var_afae28e0 )
+                    if ( min_pause_time > 0 && !enemy_died )
                     {
                         pause_time = min_pause_time > max_pause_time ? min_pause_time : randomfloatrange( min_pause_time, max_pause_time );
                         waitresult = turretvehicle.turret_target waittilltimeout( pause_time, #"death", #"disconnect" );
-                        var_afae28e0 = waitresult._notify === "death";
+                        enemy_died = waitresult._notify === "death";
                     }
                 }
                 else
                 {
                     var_fc9f290e = turretvehicle.enemy;
                     turretvehicle vehicle_ai::fire_for_rounds( 10, 0, turretvehicle.enemy );
-                    var_afae28e0 = !isdefined( var_fc9f290e ) || !isalive( var_fc9f290e );
+                    enemy_died = !isdefined( var_fc9f290e ) || !isalive( var_fc9f290e );
                 }
                 
-                if ( var_afae28e0 && isdefined( turretvehicle.turret_target ) && isdefined( turretvehicle.turret_target.var_e78602fc ) && turretvehicle.turret_target.var_e78602fc == turretvehicle )
+                if ( enemy_died && isdefined( turretvehicle.turret_target ) && isdefined( turretvehicle.turret_target.var_e78602fc ) && turretvehicle.turret_target.var_e78602fc == turretvehicle )
                 {
                     if ( isdefined( turretvehicle.owner ) )
                     {
                         turretvehicle.owner luinotifyevent( #"mini_turret_kill" );
-                        turretvehicle.owner playsoundtoplayer( #"hash_7ea486136cd776c", turretvehicle.owner );
+                        turretvehicle.owner playsoundtoplayer( #"mpl_turret_kill", turretvehicle.owner );
                     }
                     
                     turretvehicle.turretrotscale = 1;

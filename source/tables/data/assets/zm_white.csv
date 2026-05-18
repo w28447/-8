@@ -34308,7 +34308,7 @@ scriptparsetree,#scripts/zm/zm_white_door_powerup.gsc
 scriptparsetree,#scripts/zm/archetype/archetype_zod_companion.csc
 scriptparsetree,#scripts/core_common/ai/zombie_vortex.csc
 scriptparsetree,#scripts/zm/zm_white_electric_traps.gsc
-scriptparsetree,#hash_4c8acdc77aa5d7a9
+scriptparsetree,#scripts/zm/ai/zm_ai_dog_electric.csc
 scriptparsetree,#scripts/zm/zm_white_private_mannequin.gsc
 scriptparsetree,#scripts/zm/zm_white_portals.csc
 scriptparsetree,#scripts/core_common/ai/archetype_human_exposed.gsc
@@ -70432,7 +70432,7 @@ xmodel,#hash_7bec83f3735aade5
 xmodel,#p8_zm_white_computer_system_code_display_small_space
 xmodel,#p8_nt4_paper_pile_frosted
 xmodel,#hash_7c138e0f1f2f2898
-xmodel,#hash_7c40a6297a29d7bd
+xmodel,#p8_wz_door_01_farm_double
 xmodel,#p7_slu_crate_plastic_red
 xmodel,#hash_7c4f2e15edf1b619
 xmodel,#c_t8_zmb_ofc_zombie_male_body3_g_blegsoff
@@ -71009,7 +71009,7 @@ fx,#hash_51ef6dacc8dcc97f
 fx,#hash_520c71cf50084889
 fx,#hash_521b429a109daa06
 fx,#hash_52450f16448ec192
-fx,#hash_526060b70ce93d7e
+fx,#zm_ai/fx8_zombie_eye_glow_red_trail
 fx,d#hash_52c22f3d0a38c679
 fx,d#player/fx_plyr_footstep_dust_dirt
 fx,#hash_532e319b69427908

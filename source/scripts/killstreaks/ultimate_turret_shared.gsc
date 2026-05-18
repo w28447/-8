@@ -1334,28 +1334,28 @@ function turretscanning()
                     fire_time = min_burst_time > max_burst_time ? min_burst_time : randomfloatrange( min_burst_time, max_burst_time );
                     var_fc9f290e = veh.enemy;
                     veh vehicle_ai::fire_for_time( fire_time, 0, veh.enemy );
-                    var_afae28e0 = !isdefined( var_fc9f290e ) || !isalive( var_fc9f290e );
+                    enemy_died = !isdefined( var_fc9f290e ) || !isalive( var_fc9f290e );
                     
-                    if ( min_pause_time > 0 && !var_afae28e0 )
+                    if ( min_pause_time > 0 && !enemy_died )
                     {
                         pause_time = min_pause_time > max_pause_time ? min_pause_time : randomfloatrange( min_pause_time, max_pause_time );
                         waitresult = veh.turret_target waittilltimeout( pause_time, #"death", #"disconnect" );
-                        var_afae28e0 = waitresult._notify === "death";
+                        enemy_died = waitresult._notify === "death";
                     }
                 }
                 else
                 {
                     var_fc9f290e = veh.enemy;
                     veh vehicle_ai::fire_for_rounds( 10, 0, veh.enemy );
-                    var_afae28e0 = !isdefined( var_fc9f290e ) || !isalive( var_fc9f290e );
+                    enemy_died = !isdefined( var_fc9f290e ) || !isalive( var_fc9f290e );
                 }
                 
-                if ( var_afae28e0 && isdefined( veh.turret_target ) && isdefined( veh.turret_target.var_e78602fc ) && veh.turret_target.var_e78602fc == veh )
+                if ( enemy_died && isdefined( veh.turret_target ) && isdefined( veh.turret_target.var_e78602fc ) && veh.turret_target.var_e78602fc == veh )
                 {
                     if ( isdefined( veh.owner ) )
                     {
                         veh.owner luinotifyevent( #"mini_turret_kill" );
-                        veh.owner playsoundtoplayer( #"hash_7ea486136cd776c", veh.owner );
+                        veh.owner playsoundtoplayer( #"mpl_turret_kill", veh.owner );
                     }
                     
                     veh.turretrotscale = 1;

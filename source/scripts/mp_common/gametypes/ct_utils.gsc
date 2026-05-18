@@ -2143,7 +2143,7 @@ function function_5dec7b34( str_warning, a_str_vo )
 function function_3915e4f9()
 {
     self endoncallback( &ct_warning_end, #"ct_warning_end" );
-    self endon( #"hash_76ffabe3ed35bd68" );
+    self endon( #"playing_end_movie" );
     
     while ( true )
     {
@@ -2876,7 +2876,7 @@ function function_5b59f3b7( var_9a79d89d, var_5ab7c19c, var_bab91f2, var_4c7240f
 // Size: 0x32
 function function_9fe3c3f4()
 {
-    self notify( #"hash_53dc7cff4c3c5f5c" );
+    self notify( #"ai_guard_radius" );
     self notify( #"hash_140ce23fccc7b0c" );
     self.var_1574ae06 = 1;
 }
@@ -2888,7 +2888,7 @@ function function_9fe3c3f4()
 function function_78545a05( n_wait )
 {
     self endon( #"death" );
-    self notify( #"hash_53dc7cff4c3c5f5c" );
+    self notify( #"ai_guard_radius" );
     self notify( #"hash_140ce23fccc7b0c" );
     self.var_1574ae06 = 1;
     wait n_wait;
@@ -2904,8 +2904,8 @@ function function_78545a05( n_wait )
 function function_22af9bfc()
 {
     self endon( #"death" );
-    self notify( #"hash_53dc7cff4c3c5f5c" );
-    self endon( #"hash_53dc7cff4c3c5f5c" );
+    self notify( #"ai_guard_radius" );
+    self endon( #"ai_guard_radius" );
     
     while ( true )
     {
@@ -3866,7 +3866,7 @@ function function_79957328( var_46fa8f90, var_5bdda9b3 )
     }
     
     function_8f04870f( var_5bdda9b3 );
-    level notify( #"hash_603de7ab282bcda9" );
+    level notify( #"restore_player_respawned" );
     wait 0.75;
     level lui::screen_fade_in( 0.75 );
     self notify( #"hash_6ddc2eaf9b70e78c" );

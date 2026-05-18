@@ -4609,7 +4609,7 @@ function function_e44c3a3c( weapon, attacker, eventorigin, eventobject, timedela
                     player thread test_other_dialog( 0 );
                     player thread test_taacom_dialog( spacing );
                     break;
-                case #"hash_5bd6a2c5d0ff3cb2":
+                case #"other-self":
                     player thread test_other_dialog( 0 );
                     player thread test_player_dialog( spacing );
                     break;

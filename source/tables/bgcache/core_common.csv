@@ -18638,7 +18638,7 @@ string,#hash_34c5c38792458392
 string,#hash_34cf0d722c8c4882
 string,#hash_34db6ff782b31b10
 string,#mpui/holo_desc
-string,#hash_34fa35ba1681b281
+string,#score/control_zone_depletion
 string,#score/war_capture_progress
 string,#mp/friendly_flag_captured
 string,#hash_35315aa19a380e97
@@ -18748,7 +18748,7 @@ string,#mpui/grip_desc
 string,#hash_39b6fcac891146e4
 string,#score/sentry_gun_kill
 string,#mpui/reticle_color_1
-string,#hash_39dfa8f1f45b97e9
+string,#score/swarm_buddy_destroyed
 string,#zm_contract/same_location_desc
 string,#tags/hipster_battery
 string,#contract/play_safeguard
@@ -19179,7 +19179,7 @@ string,#emotes/oh_snap
 string,#emotes/home_run
 string,#hash_4ab80c76f87352e8
 string,#hash_4abd93f224ee6e2e
-string,#hash_4adcec649c2e7210
+string,#contract/wl_score_per_mode_hard
 string,#hash_4adf16c38e8cd292
 string,#hash_4ae6490e3bed152e
 string,#hash_4b105b524a93b53d
@@ -19306,7 +19306,7 @@ string,#hash_4fb4716cbacf3cc9
 string,#hash_4fd468198c7324f9
 string,#hash_4fd9b2adc34ee284
 string,#hash_4fdf93da7459beff
-string,#hash_4fe01a3b6dfcc22a
+string,#challenge/support_scorestreak_assists
 string,#contract/play_dom_desc
 string,#hash_4ffff7e3fbcaa2d3
 string,#zm_contract/magicbox_desc

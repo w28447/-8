@@ -355,7 +355,7 @@ function death_check_for_challenge_updates( e_attacker )
         e_attacker zm_stats::function_c0c6ab19( #"explosions" );
         e_attacker contracts::increment_zm_contract( #"contract_zm_explosive_kills" );
         
-        if ( w_damage == getweapon( #"hash_790eab2239858f5d" ) )
+        if ( w_damage == getweapon( #"shotgun_trenchgun_t8_upgraded_grenade" ) )
         {
             e_attacker shotgun_kill();
         }

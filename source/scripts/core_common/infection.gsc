@@ -209,7 +209,7 @@ function give_body()
         self playsoundontag( #"hash_3407b7c42e8075c9", "j_spine4" );
     }
     
-    self thread function_da08f4d0();
+    self thread ambient_sound();
     current_role = self player_role::get();
     
     foreach ( body in level.infection.bodies )
@@ -230,7 +230,7 @@ function give_body()
 // Params 0
 // Checksum 0x79ae827c, Offset: 0x990
 // Size: 0x128
-function function_da08f4d0()
+function ambient_sound()
 {
     self endon( #"death" );
     wait randomintrange( 2, 4 );

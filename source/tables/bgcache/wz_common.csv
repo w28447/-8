@@ -4733,7 +4733,7 @@ gesture,#hash_40e73554d615aac2
 gesture,#hash_41370e62c0234eef
 gesture,#hash_4164fdc7386ee9ab
 gesture,#hash_4195b95d799b650a
-gesture,#hash_419f11534af12a76
+gesture,#ges_battle_cry
 gesture,#hash_41b17f6fabff8d0f
 gesture,#ges_zipline
 gesture,#hash_436d867514c10336
@@ -13865,7 +13865,7 @@ soundalias,#hash_7e44924d9b0b53d
 soundalias,#hash_7e698ed8379d565
 soundalias,#hash_7e7ee574d932b69
 soundalias,#hash_7e83cbf4e64600d
-soundalias,#hash_7ea486136cd776c
+soundalias,#mpl_turret_kill
 soundalias,#hash_7ebc88311b82e46
 soundalias,#wpn_melee_sword_flourish_npc
 soundalias,#hash_7ee544ae8f818b2
@@ -30025,7 +30025,7 @@ soundalias,#hash_7d4bd6156146f46f
 soundalias,#prj_bullet_impact_gravel
 soundalias,#hash_7d4e250ccac9b2df
 soundalias,#hash_7d4e3330f581d003
-soundalias,#hash_7d53dd7b886b60ae
+soundalias,#mpl_electrical_surge
 soundalias,#hash_7d54c8e6f955ee66
 soundalias,#hash_7d553d2ebe259e24
 soundalias,#hash_7d5593e7743731e7
@@ -31125,7 +31125,7 @@ client_fx,#hash_61c5d96cb8067ade
 client_fx,#hash_61e2a63b3f726780
 client_fx,#hash_61e9b23b3f789a92
 client_fx,#hash_61e9d709a09b7c5f
-client_fx,#hash_622d3cdb93e01de5
+client_fx,#_t6/weapon/grenade/fx_spark_disabled_rc_car
 client_fx,#player/fx_plyr_jump_dust
 client_fx,#hash_62589f8064981742
 client_fx,#fire/fx_fire_ai_human_hip_left_loop
@@ -31300,7 +31300,7 @@ client_fx,#hash_7a02d0d28d65ec0d
 client_fx,#hash_7a153b915deb2830
 client_fx,#hash_7a180b53914e467a
 client_fx,#hash_7a1c47915df15b42
-client_fx,#hash_7a37324c1988abb5
+client_fx,#zombie/fx_val_chest_burst
 client_fx,#hash_7a73163f6174d540
 client_fx,#hash_7a7a223f617b0852
 client_fx,#hash_7aa749f5bbcbbed8

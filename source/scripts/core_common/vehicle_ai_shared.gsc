@@ -26,7 +26,7 @@ function autoexec __init__system__()
 // Size: 0x2c
 function __init__()
 {
-    animation::add_notetrack_func( "vehicle_ai::SetRotorSpeedCallback", &function_7ae52016 );
+    animation::add_notetrack_func( "vehicle_ai::SetRotorSpeedCallback", &setrotorspeedcallback );
 }
 
 // Namespace vehicle_ai/vehicle_ai_shared
@@ -2464,7 +2464,7 @@ function event_handler[exit_vehicle] function_b7880090( eventstruct )
 // Params 1
 // Checksum 0x283892f3, Offset: 0x6ab0
 // Size: 0x4c
-function function_7ae52016( val )
+function setrotorspeedcallback( val )
 {
     if ( isairborne( self ) )
     {

@@ -3494,13 +3494,13 @@
         {
             "value": 32,
             "next": 65535,
-            "name": "#hash_13eb1a82d0249566",
+            "name": "#amb_clock_tick",
             "sequence": 0,
             "cullDistance": 500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_13eb1a82d0249566",
+                    "name": "#amb_clock_tick",
                     "assetId": "#zmb/level/zm_office/ambience/clock/clock_tick_lp.ll100.pc.snd",
                     "assetFileNameSustain": "#wz_escape.all",
                     "assetIdRelease": "#wz_escape.all",

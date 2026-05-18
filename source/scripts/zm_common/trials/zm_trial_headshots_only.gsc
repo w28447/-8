@@ -40,7 +40,7 @@ function private on_begin( weapon_name )
 {
     level.var_153e9058 = 1;
     level.var_fe2bb2ac = 1;
-    zm_traps::function_6966417b();
+    zm_traps::disable_all_traps();
     
     foreach ( player in getplayers() )
     {

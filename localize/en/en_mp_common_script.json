@@ -19,7 +19,7 @@
     "hash_3267fdfd0c2b7fdc": "Destroyed Deploy Ship",
     "coop/player_is_reviving_you": "$(clientName) is reviving you",
     "killstreak/qrdrone_hacked": "Dragonfire hacked",
-    "hash_4403919077b48aaf": "HALFTIME",
+    "mp/halftime_caps": "HALFTIME",
     "mp/wins": "&&1 Wins!",
     "hash_5378ad2a180f684c": "Defend",
     "mp/match_bonus_is": "Match Bonus: ^3&&1 XP",

@@ -3163,7 +3163,7 @@ xmodelalias,#hash_612e15b05a54b6c5
 weapon,#zombie_perk_bottle_death_perception
 weapon,#hero_chakram_lv1_zm
 weapon,#hash_2394c41f048f7d2
-weapon,#hash_26d21af0213841b
+weapon,#shotgun_trenchgun_t8_upgraded_grenade_zm
 weapon,#eq_molotov_extra_zm
 weapon,#zombie_perk_bottle_tortoise
 weapon,#zombie_perk_bottle_deadshot
@@ -3233,7 +3233,7 @@ weapon,#hero_chakram_lv2_zm
 weapon,#mini_turret_zm
 weapon,#hero_hammer_lv3_zm
 weapon,#claymore_zm
-weapon,#hash_2b0714966c7f0bba
+weapon,#hero_hammer_lv3_bolt_zm
 weapon,#wraith_fire_fire_zm
 weapon,#hero_hammer_lv1_zm
 weapon,#pistolscope_smg_fastburst_t8_upgraded_zm
@@ -9491,7 +9491,7 @@ fx,#weapon/fx8_equip_light_os
 fx,#hash_3937ef26298b6caf
 fx,#hash_3c9948ab313a6483
 fx,#zm_weapons/fx8_equip_mltv_fire_human_torso_loop_zm
-fx,#hash_4bd4c9b0fb97f425
+fx,#wz/fx8_zm_box_marker_rainbow
 fx,#hash_4c24e997afad36e0
 fx,#hash_4e3dc7da8f681079
 fx,#hash_4e40eada8f6a81c9
@@ -10199,7 +10199,7 @@ soundalias,#hash_7dea1b4f24581d4
 soundalias,#hash_7e44924d9b0b53d
 soundalias,#hash_7e698ed8379d565
 soundalias,#hash_7e7ee574d932b69
-soundalias,#hash_7ea486136cd776c
+soundalias,#mpl_turret_kill
 soundalias,#hash_7eabfa5576a99ce
 soundalias,#hash_7ebc88311b82e46
 soundalias,#wpn_melee_sword_flourish_npc
@@ -11375,7 +11375,7 @@ soundalias,#hash_151aabd1868eb6de
 soundalias,#hash_151eea1cf616f069
 soundalias,#hash_152111a51e8fc9b3
 soundalias,#hash_1526074ee2c754ff
-soundalias,#hash_1526662237d7780f
+soundalias,#zmb_laststand_exit_plr
 soundalias,#hash_1526d8fb1ce3fcaf
 soundalias,#hash_15274fcfaec03a43
 soundalias,#hash_15281e7f445e2e72
@@ -13810,7 +13810,7 @@ soundalias,#hash_311626de15244b6c
 soundalias,#hash_3117477a63e477aa
 soundalias,#hash_3117688751fcd37e
 soundalias,#hash_3117dc8def932264
-soundalias,#hash_3119fa236ffcf847
+soundalias,#zmb_spawn_powerup_intro_loop
 soundalias,#hash_311a0440ae5cdb37
 soundalias,#hash_312101c79667d44e
 soundalias,#hash_3121290a9e0043a0
@@ -17903,7 +17903,7 @@ soundalias,#hash_5e7edef162714743
 soundalias,#hash_5e8fcf4ded44cdae
 soundalias,#hash_5e95188a9e07c39d
 soundalias,#hash_5e97ec0bf7361a39
-soundalias,#hash_5e980fdf2497d9a1
+soundalias,#zmb_laststand_enter_plr
 soundalias,#hash_5e9b9102e5ffda93
 soundalias,#hash_5e9d852909d9de23
 soundalias,#hash_5e9de0b9f0979b62

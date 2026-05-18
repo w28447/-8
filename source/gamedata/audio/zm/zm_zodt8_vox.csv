@@ -30,7 +30,7 @@
 #stoker_key,#pick_up,#vox_stoker_key_pick_up,0,0,TRUE,FALSE,FALSE,FALSE
 #distillation_kit,#build,#vox_distillation_kit_build,0,0,TRUE,FALSE,FALSE,FALSE
 #fast_travel,#end,#vox_fast_travel_end,50,0,FALSE,TRUE,FALSE,FALSE
-#component_pickup,#hash_d2d731e2804301b,#hash_4a69ee1b53bfa83d,0,0,TRUE,FALSE,FALSE,FALSE
+#component_pickup,#retort_pot,#vox_retort_pot_pick_up,0,0,TRUE,FALSE,FALSE,FALSE
 #component_pickup,#onion_swan,#vox_onion_swan_pick_up,0,0,TRUE,FALSE,FALSE,FALSE
 #component_pickup,#condenser_coil,#vox_condenser_coil_pick_up,0,0,TRUE,FALSE,FALSE,FALSE
 #pickup_catalyst,#decay,#hash_2a968fd7c4d7bda4,0,0,TRUE,FALSE,FALSE,FALSE

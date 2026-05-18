@@ -66138,7 +66138,7 @@ xmodel,d#p8_wz_ammo_pickup_45acp
 xmodel,d#wpn_t8_zm_akud_clip_world
 xmodel,#hash_7c3b3ee597ae4673
 xmodel,d#wpn_t8_tac_rifle_mid_burst_mk2_view
-xmodel,#hash_7c40a6297a29d7bd
+xmodel,#p8_wz_door_01_farm_double
 xmodel,#hash_7c4808e60fe3fe00
 xmodel,#p7_pipe_metal_hp_4_valve_01_off_white
 xmodel,d#p8_wz_perk_pickups_bloody_tracker
@@ -69060,7 +69060,7 @@ weapon,d#ar_fastfire_t8_operator_wz
 weapon,d#smg_standard_t8_gold_wz
 weapon,d#shotgun_semiauto_t8_wz
 weapon,d#lmg_heavy_t8_gold_wz
-weapon,#hash_351254cd4fc93d6e
+weapon,#tomahawk_t8_wz_pandemic
 weapon,d#melee_club_t8_wz
 weapon,d#lmg_spray_t8_operator_wz
 weapon,d#tr_longburst_t8_gold_wz

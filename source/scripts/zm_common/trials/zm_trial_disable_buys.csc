@@ -46,7 +46,7 @@ function __init__()
     forcestreamxmodel( #"p8_zm_wall_buy_symbol_01" );
     forcestreamxmodel( #"p8_zm_wall_buy_symbol_01_middle" );
     forcestreamxmodel( #"p8_zm_wall_buy_symbol_01_reverse" );
-    forcestreamxmodel( #"hash_38b107b1b645837d" );
+    forcestreamxmodel( #"p8_zm_wall_buy_symbol_01_loop" );
 }
 
 // Namespace zm_trial_disable_buys/zm_trial_disable_buys

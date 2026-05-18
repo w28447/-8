@@ -17,7 +17,7 @@
     "purchaseprompt": "localized18#zombie/grab_shield",
     "zombie/repair_shield": "localized18#zombie/repair_shield",
     "postcraft": "persistent_buy",
-    "purchasepromptfree": "localized18#hash_6573f011f996ab09",
+    "purchasepromptfree": "localized18#zombie/grab_shield_free",
     "componentcount": 3,
     "hash_c028dcfe": 1,
     "hash_318c150c": "section_shield"

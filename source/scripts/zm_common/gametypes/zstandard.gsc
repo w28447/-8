@@ -197,10 +197,10 @@ function private finalize_clientfields()
                 }
                 
                 break;
-            case #"hash_2dd0872d741b071e":
+            case #"give_bonus_points_1":
                 zm_devgui::zombie_devgui_give_powerup( "<dev string:x211>", undefined, level.players[ 0 ].origin );
                 break;
-            case #"hash_745ce03c49ed332a":
+            case #"give_bonus_points_10":
                 for ( i = 0; i < 10 ; i++ )
                 {
                     zm_devgui::zombie_devgui_give_powerup( "<dev string:x211>", undefined, level.players[ 0 ].origin );
@@ -903,7 +903,7 @@ function function_e03ea502()
     
     while ( true )
     {
-        s_waitresult = self waittilltimeout( self.var_72b24dc2, #"zm_arcade_kill", #"damage", #"bled_out", #"player_downed", #"bonus_points_player_grabbed", #"multiplier_timeout", #"hash_b696fc900429737", #"player_grabbed_key" );
+        s_waitresult = self waittilltimeout( self.var_72b24dc2, #"zm_arcade_kill", #"damage", #"bled_out", #"player_downed", #"bonus_points_player_grabbed", #"multiplier_timeout", #"player_defend_area_waiting", #"player_grabbed_key" );
         clientfield::set_world_uimodel( "PlayerList.client" + self.entity_num + ".multiplier_blink", 0 );
         str_extra_info = #"zmarcade/blank";
         
@@ -1014,7 +1014,7 @@ function function_a097cde6()
 function function_c1ab015e()
 {
     self notify( #"hash_18be4b1da8bbed9b" );
-    self endon( #"hash_18be4b1da8bbed9b", #"disconnect", #"zm_arcade_kill", #"damage", #"bled_out", #"player_downed", #"bonus_points_player_grabbed", #"hash_b696fc900429737", #"player_grabbed_key" );
+    self endon( #"hash_18be4b1da8bbed9b", #"disconnect", #"zm_arcade_kill", #"damage", #"bled_out", #"player_downed", #"bonus_points_player_grabbed", #"player_defend_area_waiting", #"player_grabbed_key" );
     level endon( #"end_game" );
     
     if ( self.var_7e008e0c <= 0 )
@@ -1042,7 +1042,7 @@ function function_c1ab015e()
 // Size: 0xe0
 function tube_gruesome()
 {
-    self endon( #"hash_18be4b1da8bbed9b", #"disconnect", #"zm_arcade_kill", #"damage", #"bled_out", #"player_downed", #"bonus_points_player_grabbed", #"hash_b696fc900429737", #"player_grabbed_key", #"multiplier_timeout" );
+    self endon( #"hash_18be4b1da8bbed9b", #"disconnect", #"zm_arcade_kill", #"damage", #"bled_out", #"player_downed", #"bonus_points_player_grabbed", #"player_defend_area_waiting", #"player_grabbed_key", #"multiplier_timeout" );
     
     while ( true )
     {
@@ -1285,11 +1285,11 @@ function function_10e451d7( player )
     {
         if ( function_8b1a219a() )
         {
-            self sethintstringforplayer( player, #"hash_12517f2f23bd1966" );
+            self sethintstringforplayer( player, #"zombie/perk_packapunch_keyboard_free" );
         }
         else
         {
-            self sethintstringforplayer( player, #"hash_6c8cfa12133d4a58" );
+            self sethintstringforplayer( player, #"zombie/perk_packapunch_free" );
         }
         
         player.var_486c9d59 = undefined;
@@ -1631,9 +1631,9 @@ function init_powerups()
     zombie_utility::set_zombie_var( #"zombie_powerup_drop_max_3", 9 );
     zombie_utility::set_zombie_var( #"zombie_powerup_drop_min_4", 6 );
     zombie_utility::set_zombie_var( #"zombie_powerup_drop_max_4", 10 );
-    zombie_utility::set_zombie_var( #"hash_4d2cc817490bcca", 8 );
-    zombie_utility::set_zombie_var( #"hash_4edd68174a79580", 14 );
-    level.zm_genesis_robot_pay_towardsreactswordstart = randomintrange( zombie_utility::get_zombie_var( #"hash_4d2cc817490bcca" ), zombie_utility::get_zombie_var( #"hash_4edd68174a79580" ) );
+    zombie_utility::set_zombie_var( #"zombie_powerup_ammo_spacing_min", 8 );
+    zombie_utility::set_zombie_var( #"zombie_powerup_ammo_spacing_max", 14 );
+    level.zm_genesis_robot_pay_towardsreactswordstart = randomintrange( zombie_utility::get_zombie_var( #"zombie_powerup_ammo_spacing_min" ), zombie_utility::get_zombie_var( #"zombie_powerup_ammo_spacing_max" ) );
     zm_powerups::add_zombie_powerup( "bonus_points_player", #"p8_zm_powerup_rush_point", #"zombie_powerup_bonus_points", &zm_powerups::func_should_never_drop, 1, 0, 0 );
     zm_powerups::powerup_remove_from_regular_drops( "hero_weapon_power" );
     zm_powerups::powerup_remove_from_regular_drops( "bonus_points_team" );
@@ -1944,15 +1944,15 @@ function function_75ebd926( e_player )
         self.cost = n_cooldown;
         return true;
     }
-    else if ( isdefined( self.blueprint.w_result.isriotshield ) && self.blueprint.w_result.isriotshield && isdefined( e_player.player_shield_reset_health ) && isdefined( e_player.var_d3345483 ) && e_player.var_d3345483 || !e_player zm_crafting::function_2d53738e( self.blueprint.w_result ) && ( isdefined( self.blueprint.var_c028dcfe ) && self.blueprint.var_c028dcfe && !e_player zm_crafting::function_48ce9379( self.blueprint.w_result ) || isdefined( level.var_905507c3 ) && level.var_905507c3 ) )
+    else if ( isdefined( self.blueprint.w_result.isriotshield ) && self.blueprint.w_result.isriotshield && isdefined( e_player.player_shield_reset_health ) && isdefined( e_player.var_d3345483 ) && e_player.var_d3345483 || !e_player zm_crafting::function_2d53738e( self.blueprint.w_result ) && ( isdefined( self.blueprint.firstonefree ) && self.blueprint.firstonefree && !e_player zm_crafting::function_48ce9379( self.blueprint.w_result ) || isdefined( level.var_905507c3 ) && level.var_905507c3 ) )
     {
         if ( function_8b1a219a() )
         {
-            self.hint_string = isdefined( self.blueprint.purchasepromptfree ) ? self.blueprint.purchasepromptfree : #"hash_40987a3e6d86b097";
+            self.hint_string = isdefined( self.blueprint.purchasepromptfree ) ? self.blueprint.purchasepromptfree : #"zombie/grab_shield_free_keyboard";
         }
         else
         {
-            self.hint_string = isdefined( self.blueprint.purchasepromptfree ) ? self.blueprint.purchasepromptfree : #"hash_6573f011f996ab09";
+            self.hint_string = isdefined( self.blueprint.purchasepromptfree ) ? self.blueprint.purchasepromptfree : #"zombie/grab_shield_free";
         }
         
         self.cost = undefined;
@@ -2315,7 +2315,7 @@ function function_3166e32b()
     waitframe( 1 );
     clientfield::set_world_uimodel( "PlayerList.client" + self.entity_num + ".playerIsDowned", 1 );
     self function_10c7411b();
-    self playsoundtoplayer( #"hash_5e980fdf2497d9a1", self );
+    self playsoundtoplayer( #"zmb_laststand_enter_plr", self );
     
     if ( zm_laststand::function_618fd37e() > 0 )
     {
@@ -2335,7 +2335,7 @@ function function_3166e32b()
             }
         }
         
-        self playsoundtoplayer( #"hash_1526662237d7780f", self );
+        self playsoundtoplayer( #"zmb_laststand_exit_plr", self );
         self zm_laststand::auto_revive();
         
         if ( level.var_b9f167ba self_revive_visuals_rush::is_open( self ) )

@@ -40,7 +40,7 @@ function init_clientfields()
 // Size: 0x324
 function function_4989fd7e()
 {
-    level flag::init( #"hash_6019aeb57ae7e6b5" );
+    level flag::init( #"catwalk_event_in_progress" );
     level flag::init( #"catwalk_event_completed" );
     level flag::init( #"catwalk_door_open" );
     var_40762d8a = getent( "t_catwalk_door_open", "targetname" );
@@ -75,7 +75,7 @@ function function_4989fd7e()
 // Size: 0x8b4
 function function_84f1c310()
 {
-    level endon( #"hash_7bf357f5c916ca4e" );
+    level endon( #"catwalk_event_cleanup" );
     
     if ( zm_custom::function_901b751c( #"zmpowerdoorstate" ) != 2 )
     {
@@ -173,7 +173,7 @@ function function_84f1c310()
     
     level.var_e120ae98 = &function_82a43802;
     trigger::wait_till( "t_catwalk_event_00" );
-    level flag::set( #"hash_6019aeb57ae7e6b5" );
+    level flag::set( #"catwalk_event_in_progress" );
     
     foreach ( s_powerup in level.zombie_powerups )
     {
@@ -223,7 +223,7 @@ function function_1646f141( var_e8ba54a2 = 0 )
     }
     
     level flag::wait_till_timeout( 61, "trig_catwalk_event_completed" );
-    level thread function_e11ac4f5();
+    level thread catwalk_event_cleanup();
 }
 
 // Namespace zm_escape_catwalk_event/zm_escape_catwalk_event
@@ -309,7 +309,7 @@ function function_1b943b6c( str_catwalk_spawner )
             s_spot thread function_9d553a8();
         }
         
-        level flag::wait_till_clear( #"hash_6019aeb57ae7e6b5" );
+        level flag::wait_till_clear( #"catwalk_event_in_progress" );
         
         foreach ( s_spot in a_spots )
         {
@@ -696,7 +696,7 @@ function function_e7c9f15b( a_ents )
 function play_brutus_scene_done( a_ents )
 {
     level.disable_nuke_delay_spawning = undefined;
-    level flag::wait_till_clear( #"hash_21921ed511559aa3" );
+    level flag::wait_till_clear( #"nuke_stop_special_spawning" );
     level flag::set( "spawn_zombies" );
     a_enemy = getaiarchetypearray( #"brutus" );
     level.brutus_count = a_enemy.size;
@@ -804,10 +804,10 @@ function function_21ccdb36()
 // Params 0
 // Checksum 0x1b7bb566, Offset: 0x3010
 // Size: 0x31c
-function function_e11ac4f5()
+function catwalk_event_cleanup()
 {
-    level notify( #"hash_7bf357f5c916ca4e" );
-    level endon( #"hash_7bf357f5c916ca4e" );
+    level notify( #"catwalk_event_cleanup" );
+    level endon( #"catwalk_event_cleanup" );
     a_t_catwalk_event = getentarray( "catwalk_event_triggers", "script_noteworthy" );
     
     foreach ( t_catwalk_event in a_t_catwalk_event )
@@ -818,7 +818,7 @@ function function_e11ac4f5()
         }
     }
     
-    level flag::clear( #"hash_6019aeb57ae7e6b5" );
+    level flag::clear( #"catwalk_event_in_progress" );
     level.var_e120ae98 = undefined;
     
     foreach ( s_powerup in level.zombie_powerups )

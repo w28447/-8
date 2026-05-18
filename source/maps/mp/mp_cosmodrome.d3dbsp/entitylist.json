@@ -9494,7 +9494,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_13eb1a82d0249566",
+                    "value": "#amb_clock_tick",
                     "unk1a": true
                 },
                 {

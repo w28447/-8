@@ -1547,7 +1547,7 @@ function function_713b8131( e_player )
 // Size: 0x2f8
 function function_2791c411()
 {
-    level flag::init( #"hash_40856b65dff0f6eb" );
+    level flag::init( #"power_room_event_complete" );
     level flag::init( #"hash_639e8274a1b57729" );
     level flag::init( #"hash_5cdee936ef283689" );
     level.var_ddcd74c6 = &function_f79e10f9;
@@ -1573,7 +1573,7 @@ function function_2791c411()
     
     level.var_9808f4d = zombie_utility::get_zombie_var( #"zombie_spawn_delay_base" );
     
-    while ( !level flag::get( #"hash_40856b65dff0f6eb" ) )
+    while ( !level flag::get( #"power_room_event_complete" ) )
     {
         level function_2330b278();
     }
@@ -2030,7 +2030,7 @@ function function_6acd363d( is_completed )
             }
         }
         
-        level flag::set( #"hash_40856b65dff0f6eb" );
+        level flag::set( #"power_room_event_complete" );
         exploder::stop_exploder( "fxexp_toxic_gas_power_vent" );
         wait 1.5;
         level.var_8200dc81 zm_hms_util::function_6a0d675d( #"hash_45611e2b5750e320", 0, 0 );
@@ -2098,7 +2098,7 @@ function function_696a0eca()
 {
     var_e6da0a39 = 0;
     
-    while ( level flag::get( #"hash_639e8274a1b57729" ) && !level flag::get( #"hash_40856b65dff0f6eb" ) )
+    while ( level flag::get( #"hash_639e8274a1b57729" ) && !level flag::get( #"power_room_event_complete" ) )
     {
         player_is_touching = 0;
         players = getplayers();
@@ -2384,7 +2384,7 @@ function function_96c2cbb3()
 {
     waitframe( 2 );
     
-    if ( self.archetype === #"zombie" && level flag::get( #"hash_639e8274a1b57729" ) && !level flag::get( #"hash_40856b65dff0f6eb" ) && level.var_14eba0b3 <= 0 )
+    if ( self.archetype === #"zombie" && level flag::get( #"hash_639e8274a1b57729" ) && !level flag::get( #"power_room_event_complete" ) && level.var_14eba0b3 <= 0 )
     {
         if ( randomfloat( 1 ) > level.var_9c82c58d )
         {
@@ -2404,7 +2404,7 @@ function function_c70d673e( var_4aad2831 )
         var_677ba5c4 thread function_130bfe4();
     }
     
-    level flag::wait_till( #"hash_40856b65dff0f6eb" );
+    level flag::wait_till( #"power_room_event_complete" );
     
     foreach ( var_677ba5c4 in var_4aad2831 )
     {
@@ -2431,7 +2431,7 @@ function function_ec9a1827( var_4aad2831 )
         var_677ba5c4 thread function_130bfe4();
     }
     
-    level flag::wait_till( #"hash_40856b65dff0f6eb" );
+    level flag::wait_till( #"power_room_event_complete" );
     
     foreach ( var_677ba5c4 in var_4aad2831 )
     {

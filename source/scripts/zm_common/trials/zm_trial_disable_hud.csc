@@ -43,7 +43,7 @@ function private on_begin( local_client_num, params )
 // Size: 0x1a2
 function function_40349f7c( localclientnum )
 {
-    level endon( #"hash_38932f8deb28b470", #"end_game" );
+    level endon( #"kill_delay_disable_hud", #"end_game" );
     wait 12;
     level.var_dc60105c = 1;
     maxclients = getmaxlocalclients();
@@ -71,7 +71,7 @@ function function_40349f7c( localclientnum )
 // Size: 0x18a
 function private on_end( local_client_num )
 {
-    level notify( #"hash_38932f8deb28b470" );
+    level notify( #"kill_delay_disable_hud" );
     level.var_dc60105c = undefined;
     maxclients = getmaxlocalclients();
     

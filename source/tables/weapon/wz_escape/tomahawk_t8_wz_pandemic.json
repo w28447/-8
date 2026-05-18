@@ -1,9 +1,9 @@
 {
-    "name": "#hash_351254cd4fc93d6e",
-    "baseWeapon": "#hash_351254cd4fc93d6e",
+    "name": "#tomahawk_t8_wz_pandemic",
+    "baseWeapon": "#tomahawk_t8_wz_pandemic",
     "displayname": "#weapon/tomahawk_t8",
     "weapon70": "#tomahawk_t8",
-    "soundbank": "#hash_2d1f750f619491a4",
+    "soundbank": "#tomahawk_t8_wz_pandemic_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",
     "stowedModelTag": "tag_stowed_back",

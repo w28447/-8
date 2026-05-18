@@ -2170,7 +2170,7 @@ function on_player_spawned()
 function function_51581a6c()
 {
     self endon( #"death" );
-    level endon( #"hash_25d8c88ff3f91ee5" );
+    level endon( #"boss_fight_all_complete" );
     level flag::wait_till( "power_on" );
     self thread function_f1a16811();
     
@@ -2207,7 +2207,7 @@ function function_51581a6c()
 function function_f1a16811()
 {
     self endon( #"death" );
-    level endon( #"hash_25d8c88ff3f91ee5" );
+    level endon( #"boss_fight_all_complete" );
     
     while ( true )
     {
@@ -2236,7 +2236,7 @@ function function_f1a16811()
 // Size: 0xb8
 function function_4ec55dd()
 {
-    level endon( #"hash_25d8c88ff3f91ee5" );
+    level endon( #"boss_fight_all_complete" );
     
     while ( true )
     {
@@ -2710,7 +2710,7 @@ function function_c52e8ba( player, var_8d5d092c )
     }
     else if ( isdefined( player.var_9c7b96ed[ var_8d5d092c ] ) && player.var_9c7b96ed[ var_8d5d092c ] )
     {
-        self.hint_string[ n_player_index ] = #"hash_7667bd0f83307360";
+        self.hint_string[ n_player_index ] = #"zombie/generic_fasttravel_cooldown";
         b_result = 1;
     }
     else if ( isdefined( self.stub.delay ) && !self.stub flag::get( "delayed" ) )
@@ -2899,7 +2899,7 @@ function function_c52e8ba( player, var_8d5d092c )
                 
                 break;
             default:
-                self.hint_string[ n_player_index ] = #"hash_2731cc5c1208e2e4";
+                self.hint_string[ n_player_index ] = #"zombie/fasttravel_generic_use";
                 break;
         }
         

@@ -724,7 +724,7 @@ function function_c7b3bfea()
     
     while ( self.var_5fe30ecb.size < 9 )
     {
-        s_result = self waittill( #"hash_702a9c7f10066b19" );
+        s_result = self waittill( #"zipline_use_detected" );
         
         if ( !isdefined( self.var_5fe30ecb ) )
         {

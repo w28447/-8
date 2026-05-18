@@ -19,8 +19,8 @@
 // Size: 0x5a4
 function init_clientfields()
 {
-    level._effect[ #"hash_2321fa1d61c16113" ] = #"hash_3b34b1e477be8113";
-    level._effect[ #"hash_231b0e1d61bb6461" ] = #"hash_3b2dc5e477b88461";
+    level._effect[ #"shield_fire_1p" ] = #"hash_3b34b1e477be8113";
+    level._effect[ #"shield_fire_3p" ] = #"hash_3b2dc5e477b88461";
     level._effect[ #"kp_projectile" ] = #"hash_59977c4c851916e0";
     level._effect[ #"kp_projectile_end" ] = #"hash_1a06427eff8dfe13";
     level._effect[ #"wisp_fx_blue" ] = #"hash_78712d347cdd5147";
@@ -51,7 +51,7 @@ function function_da63d789( localclientnum, oldval, newval, bnewent, binitialsna
         {
             if ( zm_utility::is_first_person( localclientnum ) && self util::function_50ed1561( localclientnum ) )
             {
-                self.fx_blue_fire = playviewmodelfx( localclientnum, level._effect[ #"hash_2321fa1d61c16113" ], "tag_weapon_left" );
+                self.fx_blue_fire = playviewmodelfx( localclientnum, level._effect[ #"shield_fire_1p" ], "tag_weapon_left" );
                 
                 if ( !isdefined( self.var_eb8d44ea ) )
                 {
@@ -60,7 +60,7 @@ function function_da63d789( localclientnum, oldval, newval, bnewent, binitialsna
             }
             else if ( !function_65b9eb0f( localclientnum ) )
             {
-                self.fx_blue_fire = util::playfxontag( localclientnum, level._effect[ #"hash_231b0e1d61bb6461" ], self, "tag_weapon_left" );
+                self.fx_blue_fire = util::playfxontag( localclientnum, level._effect[ #"shield_fire_3p" ], self, "tag_weapon_left" );
                 
                 if ( !isdefined( self.var_eb8d44ea ) )
                 {
@@ -85,7 +85,7 @@ function function_da63d789( localclientnum, oldval, newval, bnewent, binitialsna
                                 killfx( localclientnum, fx_blue_fire );
                             }
                             
-                            fx_blue_fire = playviewmodelfx( localclientnum, level._effect[ #"hash_2321fa1d61c16113" ], "tag_weapon_left" );
+                            fx_blue_fire = playviewmodelfx( localclientnum, level._effect[ #"shield_fire_1p" ], "tag_weapon_left" );
                             var_77e629d2 = 1;
                             var_6ab87412 = 0;
                             self thread function_da5e1d54( localclientnum, fx_blue_fire );
@@ -98,7 +98,7 @@ function function_da63d789( localclientnum, oldval, newval, bnewent, binitialsna
                             killfx( localclientnum, fx_blue_fire );
                         }
                         
-                        fx_blue_fire = util::playfxontag( localclientnum, level._effect[ #"hash_231b0e1d61bb6461" ], self, "tag_weapon_left" );
+                        fx_blue_fire = util::playfxontag( localclientnum, level._effect[ #"shield_fire_3p" ], self, "tag_weapon_left" );
                         var_6ab87412 = 1;
                         var_77e629d2 = 0;
                         self thread function_da5e1d54( localclientnum, fx_blue_fire );

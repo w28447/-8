@@ -245,7 +245,7 @@ function electric_switch()
             switch ( master_switch.script_noteworthy )
             {
                 case #"elec_switch":
-                    self sethintstring( #"hash_3071a199ee6ad7a6" );
+                    self sethintstring( #"zombie/electric_switch_off" );
                     break;
             }
         }

@@ -19,7 +19,7 @@ function autoexec __init__system__()
 function __init__()
 {
     /#
-        if ( getdvarint( #"hash_79f58c97fc43e423", 0 ) )
+        if ( getdvarint( #"show_ent_counts", 0 ) )
         {
             callback::on_localplayer_spawned( &function_774b42ac );
         }

@@ -1008,10 +1008,10 @@ function function_956b904a()
                 self thread function_3abfdc6b();
                 break;
             case 2:
-                self thread function_eca43db6();
+                self thread bot_lookaround_state();
                 break;
             case 1:
-                self thread function_4b111722();
+                self thread bot_wander_state();
                 break;
             case 3:
                 self thread bot_chase_state();
@@ -1142,7 +1142,7 @@ function checkfortimeout( waittime )
 // Params 0
 // Checksum 0xb2d62062, Offset: 0x3238
 // Size: 0xda
-function registerspecialty_earnmoremomentumspawnstart()
+function function_472c0d61()
 {
     self endon( #"death", #"disconnect", #"joined_team", #"joined_spectators", #"bot_goal_reached", #"reset_pathing" );
     
@@ -1155,7 +1155,7 @@ function registerspecialty_earnmoremomentumspawnstart()
         wait randomfloatrange( 0.01, 0.5 );
     }
     
-    self notify( #"hash_1213d70444c626d4", "stop_wander" );
+    self notify( #"bot_goal_timeout", "stop_wander" );
     self.navmeshpoint = undefined;
     self.var_86ba7e6d = 0;
 }
@@ -1166,8 +1166,8 @@ function registerspecialty_earnmoremomentumspawnstart()
 // Size: 0xc6
 function function_eff20434()
 {
-    self endon( #"death", #"disconnect", #"joined_team", #"joined_spectators", #"hash_1213d70444c626d4", #"reset_pathing" );
-    self thread registerspecialty_earnmoremomentumspawnstart();
+    self endon( #"death", #"disconnect", #"joined_team", #"joined_spectators", #"bot_goal_timeout", #"reset_pathing" );
+    self thread function_472c0d61();
     self waittill( #"bot_goal_reached", #"stop_wander", #"stop_chase" );
     self.navmeshpoint = undefined;
     self.var_86ba7e6d = 0;
@@ -1179,7 +1179,7 @@ function function_eff20434()
 // Size: 0xf4
 function function_6390598e()
 {
-    self endon( #"death", #"disconnect", #"joined_team", #"joined_spectators", #"hash_1213d70444c626d4", #"reset_pathing" );
+    self endon( #"death", #"disconnect", #"joined_team", #"joined_spectators", #"bot_goal_timeout", #"reset_pathing" );
     self waittill( #"bot_goal_reached", #"stop_wander", #"stop_chase" );
     self val::set( #"revived_bot", "ignoreme", 1 );
     self val::set( #"revived_bot", "ignoreall", 1 );
@@ -1191,7 +1191,7 @@ function function_6390598e()
 // Size: 0x132
 function function_f83f2862()
 {
-    self endon( #"death", #"disconnect", #"joined_team", #"joined_spectators", #"hash_1213d70444c626d4", #"reset_pathing" );
+    self endon( #"death", #"disconnect", #"joined_team", #"joined_spectators", #"bot_goal_timeout", #"reset_pathing" );
     self waittill( #"supply_pod_used" );
     
     if ( !( isdefined( self.var_9f73d035 ) && self.var_9f73d035 ) )
@@ -1226,17 +1226,17 @@ function function_6c89913a( var_daa4b90a = 1 )
 function function_fad5456d()
 {
     self notify( #"hash_5613bfe5339362f3" );
-    self notify( #"hash_658257c9e391c92c" );
+    self notify( #"bot_state_reset" );
 }
 
 // Namespace ct_bots/ct_bots
 // Params 0
 // Checksum 0x9519b9b8, Offset: 0x3740
 // Size: 0x18e
-function function_eca43db6()
+function bot_lookaround_state()
 {
-    self endon( #"death", #"disconnect", #"joined_team", #"joined_spectators", #"stop_lookaround", #"reset_pathing", #"hash_658257c9e391c92c" );
-    self notify( #"hash_12a5c1fba387d037" );
+    self endon( #"death", #"disconnect", #"joined_team", #"joined_spectators", #"stop_lookaround", #"reset_pathing", #"bot_state_reset" );
+    self notify( #"bot_lookaround_state" );
     
     if ( !isdefined( self.navmeshpoint ) )
     {
@@ -1296,7 +1296,7 @@ function function_911f9e8f( var_dfb36d05, n_threat = 0.5 )
 // Size: 0x2b6
 function function_3abfdc6b()
 {
-    self endon( #"death", #"disconnect", #"joined_team", #"joined_spectators", #"stop_lookaround", #"reset_pathing", #"hash_658257c9e391c92c" );
+    self endon( #"death", #"disconnect", #"joined_team", #"joined_spectators", #"stop_lookaround", #"reset_pathing", #"bot_state_reset" );
     self notify( #"hash_42a76c06b057248e" );
     
     if ( !isdefined( self.navmeshpoint ) && isdefined( self.var_9a79d89d ) )
@@ -1354,10 +1354,10 @@ function function_3abfdc6b()
 // Params 0
 // Checksum 0xfe03145b, Offset: 0x3c98
 // Size: 0x2ce
-function function_4b111722()
+function bot_wander_state()
 {
-    self endon( #"death", #"disconnect", #"joined_team", #"joined_spectators", #"stop_wander", #"reset_pathing", #"hash_658257c9e391c92c" );
-    self notify( #"hash_37ed6c252b08c1a4" );
+    self endon( #"death", #"disconnect", #"joined_team", #"joined_spectators", #"stop_wander", #"reset_pathing", #"bot_state_reset" );
+    self notify( #"bot_wander_state" );
     
     if ( !isdefined( self.navmeshpoint ) )
     {
@@ -1416,7 +1416,7 @@ function function_4b111722()
 // Size: 0x33a
 function bot_chase_state()
 {
-    self endon( #"death", #"disconnect", #"joined_team", #"joined_spectators", #"stop_chase", #"reset_pathing", #"hash_658257c9e391c92c" );
+    self endon( #"death", #"disconnect", #"joined_team", #"joined_spectators", #"stop_chase", #"reset_pathing", #"bot_state_reset" );
     self notify( #"bot_chase_state" );
     a_players = util::get_players( #"allies" );
     e_enemy = self get_enemy();
@@ -1496,7 +1496,7 @@ function bot_chase_state()
 // Size: 0x5b2
 function function_9125af5f()
 {
-    self endon( #"death", #"disconnect", #"joined_team", #"joined_spectators", #"stop_lookaround", #"reset_pathing", #"hash_658257c9e391c92c" );
+    self endon( #"death", #"disconnect", #"joined_team", #"joined_spectators", #"stop_lookaround", #"reset_pathing", #"bot_state_reset" );
     
     switch ( self.var_3c5a5d29 )
     {
@@ -1575,7 +1575,7 @@ function function_9125af5f()
         case 3:
             if ( !isdefined( self.navmeshpoint ) )
             {
-                self notify( #"hash_5c9e0bd318ff091e" );
+                self notify( #"moving_to_exfil" );
                 self.navmeshpoint = level.var_caeb46b7.origin;
                 
                 if ( !( isdefined( self.var_224386e9 ) && self.var_224386e9 ) )
@@ -1615,7 +1615,7 @@ function function_ae20926a()
     level notify( #"hash_4974b99613386da1" );
     level.var_88024dd9++;
     self clientfield::set( "player_keyline_render", 1 );
-    self waittill( #"hash_5c9e0bd318ff091e" );
+    self waittill( #"moving_to_exfil" );
     
     while ( true )
     {

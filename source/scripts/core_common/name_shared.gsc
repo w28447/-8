@@ -525,7 +525,7 @@ function getrankfromname( name )
         case #"lt.":
             self.airank = "lieutenant";
             break;
-        case #"hash_21327d909449a828":
+        case #"cpt.":
             self.airank = "captain";
             break;
         default:

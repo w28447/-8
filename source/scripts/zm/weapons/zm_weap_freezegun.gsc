@@ -32,8 +32,8 @@ function _init_()
     zombie_utility::add_zombie_gib_weapon_callback( #"ww_freezegun_t8_upgraded", &function_3eedf19c, &function_3eedf19c );
     clientfield::register( "actor", "" + #"freezegun_shatter_fx", 1, 1, "int" );
     clientfield::register( "actor", "" + #"freezegun_crumple_fx", 1, 1, "int" );
-    clientfield::register( "actor", "" + #"hash_26d3eeef96a2291e", 1, 1, "int" );
-    clientfield::register( "actor", "" + #"hash_32ec41222f58aa75", 1, 1, "int" );
+    clientfield::register( "actor", "" + #"freezegun_shatter_upgraded_fx", 1, 1, "int" );
+    clientfield::register( "actor", "" + #"freezegun_crumple_upgraded_fx", 1, 1, "int" );
     clientfield::register( "actor", "" + #"hash_259cdeffe60fe48f", 1, 1, "int" );
     clientfield::register( "actor", "" + #"hash_1aa3522b88c2b76f", 1, 1, "int" );
     clientfield::register( "actor", "" + #"hash_5ad28d5f104a6e3b", 1, 1, "int" );
@@ -680,7 +680,7 @@ function function_1cdfba74( is_upgraded )
 {
     if ( is_upgraded )
     {
-        self clientfield::set( "" + #"hash_26d3eeef96a2291e", 1 );
+        self clientfield::set( "" + #"freezegun_shatter_upgraded_fx", 1 );
         self playsound( #"hash_3bed1320e59a493c" );
         return;
     }
@@ -697,7 +697,7 @@ function function_c61abffb( is_upgraded )
 {
     if ( is_upgraded )
     {
-        self clientfield::set( "" + #"hash_32ec41222f58aa75", 1 );
+        self clientfield::set( "" + #"freezegun_crumple_upgraded_fx", 1 );
         self playsound( #"hash_55070bed4172e08c" );
         return;
     }

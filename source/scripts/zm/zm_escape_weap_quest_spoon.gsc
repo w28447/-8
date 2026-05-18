@@ -265,7 +265,7 @@ function crane_shock_box()
         }
         
         wait 10;
-        level notify( #"hash_2fd493c2a926e006" );
+        level notify( #"crane_is_moving" );
         level flag::clear( #"hash_6f71660057a5952f" );
         var_da5e0bea.var_8dfa1155 = 1;
         var_da5e0bea notify( #"turn_off" );
@@ -284,7 +284,7 @@ function crane_shock_box()
 function function_1c670b79( s_crane_scene )
 {
     self endon( #"death", #"disconnect" );
-    level endon( #"hash_2fd493c2a926e006", #"hash_66f358c0066d77d8" );
+    level endon( #"crane_is_moving", #"hash_66f358c0066d77d8" );
     
     while ( true )
     {

@@ -17,10 +17,10 @@ function init()
 // Params 1
 // Checksum 0xe75b7443, Offset: 0x100
 // Size: 0x62
-function init_leave( var_edc20efd )
+function init_leave( attack_radius )
 {
     assert( isdefined( self.ai ) );
-    self.ai.leave = { #state:0, #var_edc20efd:var_edc20efd };
+    self.ai.leave = { #state:0, #attack_radius:attack_radius };
 }
 
 // Namespace ai_leave/leave
@@ -29,7 +29,7 @@ function init_leave( var_edc20efd )
 // Size: 0x1a
 function function_4af1ff64()
 {
-    return self.ai.leave.var_edc20efd;
+    return self.ai.leave.attack_radius;
 }
 
 // Namespace ai_leave/leave

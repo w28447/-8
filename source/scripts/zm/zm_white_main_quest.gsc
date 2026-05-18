@@ -215,15 +215,15 @@ function function_ba863dca()
 // Size: 0x38e
 function function_ab78507c()
 {
-    zm_sq::register( #"zm_white_main_quest", #"hash_482ab5c3c8c111fc", #"zm_white_main_quest_step1", &zm_white_main_quest_step1_setup, &zm_white_main_quest_step1_cleanup );
+    zm_sq::register( #"zm_white_main_quest", #"mq1_clocks", #"zm_white_main_quest_step1", &zm_white_main_quest_step1_setup, &zm_white_main_quest_step1_cleanup );
     zm_sq::register( #"zm_white_main_quest", #"mq2_cv1", #"zm_white_main_quest_step2", &zm_white_main_quest_step2_setup, &zm_white_main_quest_step2_cleanup );
     zm_sq::register( #"zm_white_main_quest", #"mq3_cv2", #"zm_white_main_quest_step3", &zm_white_main_quest_step3_setup, &zm_white_main_quest_step3_cleanup );
     zm_sq::register( #"zm_white_main_quest", #"mq4_cv3", #"zm_white_main_quest_step4", &zm_white_main_quest_step4_setup, &zm_white_main_quest_step4_cleanup );
     zm_sq::register( #"zm_white_main_quest", #"mq5_cv4", #"zm_white_main_quest_step5", &zm_white_main_quest_step5_setup, &zm_white_main_quest_step5_cleanup );
     zm_sq::register( #"zm_white_main_quest", #"mq6_cv5", #"zm_white_main_quest_step6", &zm_white_main_quest_step6_setup, &zm_white_main_quest_step6_cleanup );
-    zm_sq::register( #"zm_white_main_quest", #"hash_3a3d5f6df2a45005", #"zm_white_main_quest_step7", &zm_white_main_quest_step7_setup, &zm_white_main_quest_step7_cleanup );
-    zm_sq::register( #"zm_white_main_quest", #"hash_12ea405f7c5f915c", #"zm_white_main_quest_step8", &zm_white_main_quest_step8_setup, &zm_white_main_quest_step8_cleanup );
-    zm_sq::register( #"zm_white_main_quest", #"hash_3a9a71b60d9f9435", #"zm_white_main_quest_step9", &zm_white_main_quest_step9_setup, &zm_white_main_quest_step9_cleanup );
+    zm_sq::register( #"zm_white_main_quest", #"mq7_preamble", #"zm_white_main_quest_step7", &zm_white_main_quest_step7_setup, &zm_white_main_quest_step7_cleanup );
+    zm_sq::register( #"zm_white_main_quest", #"mq8_fight", #"zm_white_main_quest_step8", &zm_white_main_quest_step8_setup, &zm_white_main_quest_step8_cleanup );
+    zm_sq::register( #"zm_white_main_quest", #"mq9_shard", #"zm_white_main_quest_step9", &zm_white_main_quest_step9_setup, &zm_white_main_quest_step9_cleanup );
     level.mq_computer = struct::get( "hal_trigger", "targetname" );
 }
 
@@ -2516,7 +2516,7 @@ function function_d61d258b()
     if ( level.var_69d5de93 == 2 )
     {
         level zm_hms_util::vo_stop_all();
-        level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_5f0ce86c24ecaee2", 1, 0 );
+        level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_s2_escort_2", 1, 0 );
         return;
     }
     
@@ -2564,7 +2564,7 @@ function function_d61d258b()
     var_32060833 = array::random( var_e515445c );
     level.var_9778da1[ var_32060833 ] = 1;
     level zm_hms_util::vo_stop_all();
-    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_5f0ce86c24ecaee2", var_32060833, 0 );
+    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_s2_escort_2", var_32060833, 0 );
 }
 
 // Namespace zm_white_main_quest/zm_white_main_quest

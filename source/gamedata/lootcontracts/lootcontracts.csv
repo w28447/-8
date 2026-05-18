@@ -74,7 +74,7 @@
 20002,#hash_1d1b3fe36f24b6ac,#combat,5,0,2,&#hash_7827646493844bdc,&#hash_698ca669d466f224,1,u9?0
 20003,#hash_63e1c91ddca36b58,#combat,5,1,2,&#hash_e181b098da8fce8,&#hash_3b8a13a7a35bfb30,1,u9?0
 20004,#contract_wl_score_per_mode,#objective,5,0,2,&#contract/wl_score_per_mode,&#contract/wl_score_per_mode_desc,1,u9?0
-20005,#hash_1075c38287814aa0,#objective,5,1,2,&#hash_4adcec649c2e7210,&#hash_6416ba9994704938,1,u9?0
+20005,#contract_wl_score_per_mode_hard,#objective,5,1,2,&#contract/wl_score_per_mode_hard,&#hash_6416ba9994704938,1,u9?0
 20006,#hash_518ce6f8a5567a08,#objective,5,1,2,&#hash_281ccfd8edeb6818,&#hash_546f1a84f8ce4d00,1,u9?0
 20007,#hash_8f83854f9aa068e,#combat,1,1,2,&#hash_6e16d1e64b79551e,&#hash_4ae6490e3bed152e,1,u9?0
 20008,#hash_783240d7e11018c9,#combat,5,0,2,&#hash_715d46dc69fc8bf9,&#hash_648eeabe5282c5d3,1,u9?0

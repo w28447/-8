@@ -160,7 +160,7 @@ function update_hint_string( player )
         }
         else
         {
-            self sethintstring( #"hash_5b77a8f33d352c37" );
+            self sethintstring( #"zombie/perk_packapunch_busy" );
             return true;
         }
     }
@@ -218,20 +218,20 @@ function update_hint_string( player )
             {
                 if ( function_8b1a219a() )
                 {
-                    self sethintstring( #"hash_1a0df3bc59a8029b" );
+                    self sethintstring( #"zombie/perk_packapunch_aat_keyboard_free" );
                 }
                 else
                 {
-                    self sethintstring( #"hash_11c1749ce5b09c1f" );
+                    self sethintstring( #"zombie/perk_packapunch_aat_free" );
                 }
             }
             else if ( function_8b1a219a() )
             {
-                self sethintstring( #"hash_4614bd9a185769d4" );
+                self sethintstring( #"zombie/perk_packapunch_damage_keyboard_free" );
             }
             else
             {
-                self sethintstring( #"hash_3dfc1041d71fc05e" );
+                self sethintstring( #"zombie/perk_packapunch_damage_free" );
             }
         }
         else if ( isdefined( pap_machine.var_b64e889a ) && pap_machine.var_b64e889a )
@@ -260,7 +260,7 @@ function update_hint_string( player )
         {
             if ( function_8b1a219a() )
             {
-                self sethintstring( #"hash_7f57747f6802bc18", current_cost );
+                self sethintstring( #"zombie/perk_packapunch_aat_keyboard", current_cost );
             }
             else
             {
@@ -269,22 +269,22 @@ function update_hint_string( player )
         }
         else if ( function_8b1a219a() )
         {
-            self sethintstring( #"hash_4ded27bb7bc35a8d", current_cost );
+            self sethintstring( #"zombie/perk_packapunch_damage_keyboard", current_cost );
         }
         else
         {
-            self sethintstring( #"hash_4c9d507af46126af", current_cost );
+            self sethintstring( #"zombie/perk_packapunch_damage", current_cost );
         }
     }
     else if ( isdefined( level.var_e4e8d300 ) && level.var_e4e8d300 )
     {
         if ( function_8b1a219a() )
         {
-            self sethintstring( #"hash_12517f2f23bd1966" );
+            self sethintstring( #"zombie/perk_packapunch_keyboard_free" );
         }
         else
         {
-            self sethintstring( #"hash_6c8cfa12133d4a58" );
+            self sethintstring( #"zombie/perk_packapunch_free" );
         }
     }
     else if ( function_8b1a219a() )

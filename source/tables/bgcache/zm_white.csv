@@ -599,7 +599,7 @@ model,#p7_zm_der_trap_control_box
 model,#p8_zm_whi_fuse_pickup_fluid_orange
 model,#p8_zm_zod_hat_crew_01
 model,#p8_zm_white_computer_system_code_display_small_space
-model,#hash_7c40a6297a29d7bd
+model,#p8_wz_door_01_farm_double
 model,#c_t8_zmb_ofc_zombie_male_body3_g_blegsoff
 model,#wpn_t7_zmb_zod_rocket_shield_window
 model,#p8_fxanim_zm_white_mccain_mannequin_pickup_arm_left
@@ -4543,7 +4543,7 @@ soundalias,#evt_teleporter_go
 soundalias,#hash_3c86e770a7c6675
 soundalias,#hash_3defec5a348ab2e
 soundalias,#hash_3e7fd381361d6ba
-soundalias,#hash_3f579b3632b29a2
+soundalias,#amb_bunker_generator_fans
 soundalias,#hash_3faa335fd02a531
 soundalias,#hash_3fbcd40e9f59cda
 soundalias,#hash_3fe1ae5fd3002be
@@ -8791,7 +8791,7 @@ soundalias,#hash_4d8f2634f27540fa
 soundalias,#hash_4d8f2734f27542ad
 soundalias,#hash_4d9598a28f429f8a
 soundalias,#hash_4d972c4ea58ca9eb
-soundalias,#hash_4da8231bc8767676
+soundalias,#zmb_trap_acid_end
 soundalias,#hash_4db0373f788e9151
 soundalias,#hash_4dba6b9ac80d1ec1
 soundalias,#hash_4dbcfa5dbef3f392
@@ -10269,7 +10269,7 @@ soundalias,#hash_68f13be933fb7dac
 soundalias,#hash_68f13ce933fb7f5f
 soundalias,#hash_68f13de933fb8112
 soundalias,#hash_68f13ee933fb82c5
-soundalias,#hash_68f3e5dbc3422363
+soundalias,#zmb_trap_acid_start
 soundalias,#hash_68ffd38a5e862cbe
 soundalias,#hash_69115e529b63d4e7
 soundalias,#hash_69178abbd07c3873
@@ -10376,7 +10376,7 @@ soundalias,#hash_6b56372df0bdb444
 soundalias,#hash_6b6907db4066767d
 soundalias,#hash_6b72db9fe601ff1d
 soundalias,#fly_step_catwalk_metal
-soundalias,#hash_6b9160d5f97e5ecb
+soundalias,#wpn_electric_trap_sparks
 soundalias,#hash_6b956c4c5f08c463
 soundalias,#hash_6b956f4c5f08c97c
 soundalias,#hash_6b95704c5f08cb2f
@@ -11868,7 +11868,7 @@ client_fx,#hash_51c50bab95b10eb4
 client_fx,#hash_51cca4aa04103b43
 client_fx,#hash_521b429a109daa06
 client_fx,#hash_521de69029125f63
-client_fx,#hash_526060b70ce93d7e
+client_fx,#zm_ai/fx8_zombie_eye_glow_red_trail
 client_fx,#hash_52c22f3d0a38c679
 client_fx,#hash_52e3de5257e268c2
 client_fx,#player/fx_plyr_footstep_dust_dirt
@@ -12017,7 +12017,7 @@ client_fx,#maps/zm_office/fx8_teleporter_cooldown
 client_fx,#hash_77964e1811bb9a67
 client_fx,#hash_779eebf7aed3f4c0
 client_fx,#explosions/fx8_exp_grenade_metal
-client_fx,#hash_7a37324c1988abb5
+client_fx,#zombie/fx_val_chest_burst
 client_fx,#hash_7aa749f5bbcbbed8
 client_fx,#hash_7ab3f7caf7bc6d91
 client_fx,#zm_ai/fx8_cata_plasma_blast

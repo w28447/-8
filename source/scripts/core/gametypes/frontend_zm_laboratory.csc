@@ -60,9 +60,9 @@ function function_250232f4( localclientnum )
     level.var_49f26c00.var_c6761aa2 = getent( localclientnum, "tube_liquid_02", "targetname" );
     level.var_49f26c00.var_dcbe4732 = getent( localclientnum, "tube_liquid_03", "targetname" );
     level.var_49f26c00.var_f48ac46 = getent( localclientnum, "tube_liquid_04", "targetname" );
-    level.var_49f26c00.var_c6761aa2 setmodel( #"hash_147375b2a9795cd1" );
-    level.var_49f26c00.var_dcbe4732 setmodel( #"hash_789fccb680d65004" );
-    level.var_49f26c00.var_f48ac46 setmodel( #"hash_46ef488f583997fb" );
+    level.var_49f26c00.var_c6761aa2 setmodel( #"p8_zm_lab_tube_02_script" );
+    level.var_49f26c00.var_dcbe4732 setmodel( #"p8_zm_lab_tube_03_script" );
+    level.var_49f26c00.var_f48ac46 setmodel( #"p8_zm_lab_tube_04_script" );
     level._effect[ #"hash_6d42ec7a48079d27" ] = "maps/core_frontend/fx8_frontend_zombie_lab_elixir_bubbles_base";
     level._effect[ #"fx_bottle_classic" ] = "maps/core_frontend/fx8_frontend_zombie_lab_elixir_classic";
     level._effect[ #"fx_bottle_common" ] = "maps/core_frontend/fx8_frontend_zombie_lab_elixir_common";
@@ -1267,33 +1267,33 @@ function function_6198ffc( n_tube_index = 1, b_reverse = 0 )
         case 2:
             if ( b_reverse )
             {
-                level.var_49f26c00.var_c6761aa2 setmodel( #"hash_1d6b60d588392994" );
+                level.var_49f26c00.var_c6761aa2 setmodel( #"p8_zm_lab_tube_02_script_reverse" );
             }
             else
             {
-                level.var_49f26c00.var_c6761aa2 setmodel( #"hash_147375b2a9795cd1" );
+                level.var_49f26c00.var_c6761aa2 setmodel( #"p8_zm_lab_tube_02_script" );
             }
             
             break;
         case 3:
             if ( b_reverse )
             {
-                level.var_49f26c00.var_dcbe4732 setmodel( #"hash_7d73f1bee7a7209" );
+                level.var_49f26c00.var_dcbe4732 setmodel( #"p8_zm_lab_tube_03_script_reverse" );
             }
             else
             {
-                level.var_49f26c00.var_dcbe4732 setmodel( #"hash_789fccb680d65004" );
+                level.var_49f26c00.var_dcbe4732 setmodel( #"p8_zm_lab_tube_03_script" );
             }
             
             break;
         case 4:
             if ( b_reverse )
             {
-                level.var_49f26c00.var_f48ac46 setmodel( #"hash_17fe752ca47c080a" );
+                level.var_49f26c00.var_f48ac46 setmodel( #"p8_zm_lab_tube_04_script_reverse" );
             }
             else
             {
-                level.var_49f26c00.var_f48ac46 setmodel( #"hash_46ef488f583997fb" );
+                level.var_49f26c00.var_f48ac46 setmodel( #"p8_zm_lab_tube_04_script" );
             }
             
             break;
@@ -1340,25 +1340,25 @@ function function_49dde74( b_stream = 1, var_dd5c339d = 0 )
         forcestreambundle( #"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle" );
         forcestreamxmodel( #"p8_zm_lab_tube_01_liquid_01" );
         forcestreamxmodel( #"p8_zm_lab_tube_01_liquid_01_reverse" );
-        forcestreamxmodel( #"hash_147375b2a9795cd1" );
-        forcestreamxmodel( #"hash_1d6b60d588392994" );
-        forcestreamxmodel( #"hash_789fccb680d65004" );
-        forcestreamxmodel( #"hash_7d73f1bee7a7209" );
-        forcestreamxmodel( #"hash_46ef488f583997fb" );
-        forcestreamxmodel( #"hash_17fe752ca47c080a" );
-        forcestreamxmodel( #"hash_4d36008189f01e3e" );
-        forcestreamxmodel( #"hash_4cbeb6f9fd0e1277" );
+        forcestreamxmodel( #"p8_zm_lab_tube_02_script" );
+        forcestreamxmodel( #"p8_zm_lab_tube_02_script_reverse" );
+        forcestreamxmodel( #"p8_zm_lab_tube_03_script" );
+        forcestreamxmodel( #"p8_zm_lab_tube_03_script_reverse" );
+        forcestreamxmodel( #"p8_zm_lab_tube_04_script" );
+        forcestreamxmodel( #"p8_zm_lab_tube_04_script_reverse" );
+        forcestreamxmodel( #"p8_zm_lab_tube_05_script" );
+        forcestreamxmodel( #"p8_zm_lab_tube_05_script_reverse" );
         forcestreamxmodel( #"p8_zm_lab_talisman_press_mould_base" );
         forcestreamxmodel( #"p8_zm_lab_talisman_press_mould_lid_common" );
         forcestreamxmodel( #"p8_zm_lab_talisman_press_mould_lid_rare" );
         forcestreamxmodel( #"p8_zm_lab_talisman_press_mould_lid_legendary" );
         forcestreamxmodel( #"p8_zm_lab_talisman_press_mould_lid_epic" );
-        forcestreamxmodel( #"hash_21facc9d2f29d94c" );
+        forcestreamxmodel( #"p8_zm_lab_talisman_press_mould_lid_ultra" );
         forcestreamxmodel( #"p8_zm_lab_talisman_press_mould_lid_common_empty" );
-        forcestreamxmodel( #"hash_28a2c4e744e4658c" );
-        forcestreamxmodel( #"hash_15aeae3ca1622031" );
-        forcestreamxmodel( #"hash_22c3a62824ed796d" );
-        forcestreamxmodel( #"hash_150da5db728463e2" );
+        forcestreamxmodel( #"p8_zm_lab_talisman_press_mould_lid_rare_empty" );
+        forcestreamxmodel( #"p8_zm_lab_talisman_press_mould_lid_legendary_empty" );
+        forcestreamxmodel( #"p8_zm_lab_talisman_press_mould_lid_epic_empty" );
+        forcestreamxmodel( #"p8_zm_lab_talisman_press_mould_lid_ultra_empty" );
         
         if ( var_dd5c339d )
         {
@@ -1374,25 +1374,25 @@ function function_49dde74( b_stream = 1, var_dd5c339d = 0 )
     function_66b6e720( #"p8_fxanim_core_frontend_zm_lab_talisman_press_bundle" );
     stopforcestreamingxmodel( #"p8_zm_lab_tube_01_liquid_01" );
     stopforcestreamingxmodel( #"p8_zm_lab_tube_01_liquid_01_reverse" );
-    stopforcestreamingxmodel( #"hash_147375b2a9795cd1" );
-    stopforcestreamingxmodel( #"hash_1d6b60d588392994" );
-    stopforcestreamingxmodel( #"hash_789fccb680d65004" );
-    stopforcestreamingxmodel( #"hash_7d73f1bee7a7209" );
-    stopforcestreamingxmodel( #"hash_46ef488f583997fb" );
-    stopforcestreamingxmodel( #"hash_17fe752ca47c080a" );
-    stopforcestreamingxmodel( #"hash_4d36008189f01e3e" );
-    stopforcestreamingxmodel( #"hash_4cbeb6f9fd0e1277" );
+    stopforcestreamingxmodel( #"p8_zm_lab_tube_02_script" );
+    stopforcestreamingxmodel( #"p8_zm_lab_tube_02_script_reverse" );
+    stopforcestreamingxmodel( #"p8_zm_lab_tube_03_script" );
+    stopforcestreamingxmodel( #"p8_zm_lab_tube_03_script_reverse" );
+    stopforcestreamingxmodel( #"p8_zm_lab_tube_04_script" );
+    stopforcestreamingxmodel( #"p8_zm_lab_tube_04_script_reverse" );
+    stopforcestreamingxmodel( #"p8_zm_lab_tube_05_script" );
+    stopforcestreamingxmodel( #"p8_zm_lab_tube_05_script_reverse" );
     stopforcestreamingxmodel( #"p8_zm_lab_talisman_press_mould_base" );
     stopforcestreamingxmodel( #"p8_zm_lab_talisman_press_mould_lid_common" );
     stopforcestreamingxmodel( #"p8_zm_lab_talisman_press_mould_lid_rare" );
     stopforcestreamingxmodel( #"p8_zm_lab_talisman_press_mould_lid_legendary" );
     stopforcestreamingxmodel( #"p8_zm_lab_talisman_press_mould_lid_epic" );
-    stopforcestreamingxmodel( #"hash_21facc9d2f29d94c" );
+    stopforcestreamingxmodel( #"p8_zm_lab_talisman_press_mould_lid_ultra" );
     stopforcestreamingxmodel( #"p8_zm_lab_talisman_press_mould_lid_common_empty" );
-    stopforcestreamingxmodel( #"hash_28a2c4e744e4658c" );
-    stopforcestreamingxmodel( #"hash_15aeae3ca1622031" );
-    stopforcestreamingxmodel( #"hash_22c3a62824ed796d" );
-    stopforcestreamingxmodel( #"hash_150da5db728463e2" );
+    stopforcestreamingxmodel( #"p8_zm_lab_talisman_press_mould_lid_rare_empty" );
+    stopforcestreamingxmodel( #"p8_zm_lab_talisman_press_mould_lid_legendary_empty" );
+    stopforcestreamingxmodel( #"p8_zm_lab_talisman_press_mould_lid_epic_empty" );
+    stopforcestreamingxmodel( #"p8_zm_lab_talisman_press_mould_lid_ultra_empty" );
 }
 
 // Namespace zm_laboratory/frontend_zm_laboratory
@@ -2059,19 +2059,19 @@ function function_d4f9b895( localclientnum, a_ents )
                 break;
             case 1:
                 var_bdf17b70 = #"p8_zm_lab_talisman_press_mould_lid_rare";
-                var_177f9b93 = #"hash_28a2c4e744e4658c";
+                var_177f9b93 = #"p8_zm_lab_talisman_press_mould_lid_rare_empty";
                 break;
             case 2:
                 var_bdf17b70 = #"p8_zm_lab_talisman_press_mould_lid_legendary";
-                var_177f9b93 = #"hash_15aeae3ca1622031";
+                var_177f9b93 = #"p8_zm_lab_talisman_press_mould_lid_legendary_empty";
                 break;
             case 3:
                 var_bdf17b70 = #"p8_zm_lab_talisman_press_mould_lid_epic";
-                var_177f9b93 = #"hash_22c3a62824ed796d";
+                var_177f9b93 = #"p8_zm_lab_talisman_press_mould_lid_epic_empty";
                 break;
             case 4:
-                var_bdf17b70 = #"hash_21facc9d2f29d94c";
-                var_177f9b93 = #"hash_150da5db728463e2";
+                var_bdf17b70 = #"p8_zm_lab_talisman_press_mould_lid_ultra";
+                var_177f9b93 = #"p8_zm_lab_talisman_press_mould_lid_ultra_empty";
                 break;
             default:
                 var_bdf17b70 = #"p8_zm_lab_talisman_press_mould_lid_common";

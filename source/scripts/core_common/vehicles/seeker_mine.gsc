@@ -181,9 +181,9 @@ function function_b23e4b45()
         
         if ( !isdefined( newpos ) )
         {
-            var_68860686 = ai::t_cylinder( self.origin, 10, 60 );
+            near_me = ai::t_cylinder( self.origin, 10, 60 );
             cylinder = ai::t_cylinder( self.origin, 300, 60 );
-            tacpoints = tacticalquery( "mp_seeker_seek_no_enemy_fallback", self.origin, self, var_68860686, cylinder );
+            tacpoints = tacticalquery( "mp_seeker_seek_no_enemy_fallback", self.origin, self, near_me, cylinder );
             
             if ( isdefined( tacpoints ) && tacpoints.size > 0 )
             {
@@ -847,8 +847,8 @@ function function_3e16dec3( params )
             
             forward = anglestoforward( self.angles );
             forwardpos = self.origin + forward * 500;
-            var_68860686 = ai::t_cylinder( self.origin, 200, 60 );
-            tacpoints = tacticalquery( "mp_seeker_seek_no_enemy", self.origin, self, var_68860686, forwardpos );
+            near_me = ai::t_cylinder( self.origin, 200, 60 );
+            tacpoints = tacticalquery( "mp_seeker_seek_no_enemy", self.origin, self, near_me, forwardpos );
             tacpoints = damage_armor_activati_( self, tacpoints );
             
             if ( isdefined( tacpoints ) && tacpoints.size != 0 )
@@ -884,9 +884,9 @@ function function_3e16dec3( params )
                 
                 if ( isdefined( newpos ) )
                 {
-                    var_68860686 = ai::t_cylinder( self.origin, 400, 60 );
+                    near_me = ai::t_cylinder( self.origin, 400, 60 );
                     cylinder = ai::t_cylinder( self.origin, 1500, 150 );
-                    tacpoints = tacticalquery( "mp_seeker_seek_no_enemy_fallback", newpos, self, var_68860686, cylinder );
+                    tacpoints = tacticalquery( "mp_seeker_seek_no_enemy_fallback", newpos, self, near_me, cylinder );
                     tacpoints = damage_armor_activati_( self, tacpoints );
                     
                     if ( isdefined( tacpoints ) && tacpoints.size != 0 )

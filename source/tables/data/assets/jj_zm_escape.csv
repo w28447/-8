@@ -823,7 +823,7 @@ localizeentry,d#hash_1986f6683c870870
 localizeentry,#hash_1997a81dd2cd6da1
 localizeentry,#hash_19a793b5ebe29af8
 localizeentry,d#mpui/barrelchoke
-localizeentry,d#hash_19d325d8d1bfd3de
+localizeentry,d#mp/overtime_caps
 localizeentry,#hash_19eb7e737b14cf64
 localizeentry,#hash_19eb80737b14d2ca
 localizeentry,#hash_19eb81737b14d47d
@@ -1198,7 +1198,7 @@ localizeentry,#hash_26fda000bdc97dc6
 localizeentry,#hash_2706aa51c79c5e9b
 localizeentry,#hash_271bc5aee2800c0f
 localizeentry,#hash_271ec583c6913f6a
-localizeentry,d#hash_2731cc5c1208e2e4
+localizeentry,d#zombie/fasttravel_generic_use
 localizeentry,#hash_273ce801ad0cb483
 localizeentry,#hash_27646526b663e24a
 localizeentry,#hash_2775560217bc6d85
@@ -3514,7 +3514,7 @@ localizeentry,#hash_76198ee60ff5b277
 localizeentry,#hash_761990e60ff5b5dd
 localizeentry,d#hash_7645db46e9fdd615
 localizeentry,d#mpui/camo_ash
-localizeentry,d#hash_7667bd0f83307360
+localizeentry,d#zombie/generic_fasttravel_cooldown
 localizeentry,#hash_766be391e8d0975a
 localizeentry,#hash_766e1a826931329c
 localizeentry,#hash_766e1c8269313602

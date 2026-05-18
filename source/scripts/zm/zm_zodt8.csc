@@ -484,7 +484,7 @@ function update_wave_water( localclientnum )
     
     if ( !self flag::get( "water_drained" ) )
     {
-        function_c1129a39( var_b965688c, ( 0, 0, -1 ), 30 );
+        puppying( var_b965688c, ( 0, 0, -1 ), 30 );
     }
     
     while ( isdefined( self ) && self flag::get( "update_water" ) )
@@ -494,7 +494,7 @@ function update_wave_water( localclientnum )
         waitframe( 1 );
     }
     
-    function_c1129a39( var_b965688c, ( 0, 0, 0 ), 0 );
+    puppying( var_b965688c, ( 0, 0, 0 ), 0 );
 }
 
 // Namespace zm_zodt8/zm_zodt8

@@ -554,7 +554,7 @@ function function_17ac86f7()
     self thread zm_audio::function_713192b1( #"zm_orange/location_cargo_hold", #"ship_cargo" );
     self thread zm_audio::function_713192b1( #"zm_orange/location_main_entrance", #"facility_main" );
     self thread zm_audio::function_713192b1( #"zm_orange/location_specimen_storage", #"facility_specimen" );
-    self thread zm_audio::function_713192b1( #"zm_orange/location_decontamination", #"hash_2781f0de96fa6e4e" );
+    self thread zm_audio::function_713192b1( #"zm_orange/location_decontamination", #"facility_decont" );
     self thread zm_audio::function_713192b1( #"zm_orange/location_human_infusion", #"facility_infusion" );
     self thread zm_audio::function_713192b1( #"zm_orange/location_upper_catwalk", #"facility_infusion" );
     self thread zm_audio::function_713192b1( #"zm_orange/location_geological_processing", #"facility_geological" );

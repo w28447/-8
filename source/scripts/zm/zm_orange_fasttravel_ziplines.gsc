@@ -52,7 +52,7 @@ function init()
 // Size: 0xaa
 function init_flags()
 {
-    level flag::init( #"hash_7d9f8ec3cb9af87e" );
+    level flag::init( #"zipline_handle_picked_up" );
     level flag::init( #"hash_7d230fa8f283c105" );
     level flag::init( #"hash_7def3e555eba842c" );
     level flag::init( #"hash_e29d662bb90e4bc" );
@@ -356,7 +356,7 @@ function function_ca1cdeca()
         if ( level flag::get( #"hash_e29d662bb90e4bc" ) )
         {
             level thread function_95d14d08();
-            level notify( #"hash_7231d0fc88083e2d" );
+            level notify( #"zipline_handle_available" );
         }
     }
     else
@@ -366,7 +366,7 @@ function function_ca1cdeca()
         if ( level flag::get( #"hash_7def3e555eba842c" ) )
         {
             level thread function_95d14d08();
-            level notify( #"hash_7231d0fc88083e2d" );
+            level notify( #"zipline_handle_available" );
         }
     }
     
@@ -407,7 +407,7 @@ function function_95d14d08()
 // Size: 0x84
 function function_7ee05d66()
 {
-    level flag::set( #"hash_7d9f8ec3cb9af87e" );
+    level flag::set( #"zipline_handle_picked_up" );
     level flag::set( #"facility_available" );
     level zm_ui_inventory::function_7df6bb60( "zm_orange_zipquest_phase_num", 1 );
     level zm_ui_inventory::function_7df6bb60( "zm_orange_zipquest_handle", 1 );
@@ -458,7 +458,7 @@ function function_e82679f8( e_player )
     
     if ( s_zipline_use.str_location === "station_to_sun_deck" || s_zipline_use.str_location === "dock" || s_zipline_use.str_location === "fore" || s_zipline_use.str_location === "lighthouse_to_facility" )
     {
-        if ( !level flag::get( #"hash_7d9f8ec3cb9af87e" ) )
+        if ( !level flag::get( #"zipline_handle_picked_up" ) )
         {
             self sethintstring( #"hash_57d47aca62536932" );
             return 1;
@@ -558,7 +558,7 @@ function function_d41f7e0e()
                     break;
                 }
             case #"station_to_sun_deck":
-                if ( !level flag::get( #"hash_7d9f8ec3cb9af87e" ) )
+                if ( !level flag::get( #"zipline_handle_picked_up" ) )
                 {
                     continue;
                 }
@@ -569,7 +569,7 @@ function function_d41f7e0e()
             case #"dock":
             case #"lighthouse_to_facility":
             case #"fore":
-                if ( !level flag::get( #"hash_7d9f8ec3cb9af87e" ) )
+                if ( !level flag::get( #"zipline_handle_picked_up" ) )
                 {
                     continue;
                 }
@@ -638,7 +638,7 @@ function function_5dbd6a40( s_zipline_use )
     self.var_b20b0960.origin = vnd_start.origin;
     self.var_b20b0960.angles = self.angles;
     self.var_b20b0960 setspeed( 32 );
-    self notify( #"hash_702a9c7f10066b19", { #str_location:s_zipline_use.str_location } );
+    self notify( #"zipline_use_detected", { #str_location:s_zipline_use.str_location } );
     level notify( #"zipline_used", { #str_location:s_zipline_use.str_location } );
     self playrumbleonentity( #"jump_rumble_start" );
     self function_fc9707f4( vnd_start, s_zipline_use );
@@ -683,7 +683,7 @@ function function_5dbd6a40( s_zipline_use )
     self.var_b20b0960 waittill( #"reached_end_node" );
     self stoprumble( #"buzz_high" );
     self clientfield::set_to_player( "blur_post_fx", 0 );
-    self notify( #"hash_3726f5b254bceb00" );
+    self notify( #"player_zipline_complete" );
     self stopgestureviewmodel();
     self function_994538a5( s_zipline_use );
     self val::reset( #"hash_dcfa1d5e7f80cba", "disable_weapons" );
@@ -962,9 +962,9 @@ function function_a393b77f()
             }
         }
         
-        if ( !level flag::get( #"hash_7d9f8ec3cb9af87e" ) )
+        if ( !level flag::get( #"zipline_handle_picked_up" ) )
         {
-            level flag::set( #"hash_7d9f8ec3cb9af87e" );
+            level flag::set( #"zipline_handle_picked_up" );
             level flag::set( #"facility_available" );
         }
     }

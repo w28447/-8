@@ -8667,7 +8667,7 @@ soundalias,#hash_7f5a737b072e0409
 soundalias,#hash_7f65d2ac6a5e725b
 soundalias,#hash_7f667131421179c5
 soundalias,#amb_ocean_lap
-soundalias,#hash_7f9983381e1b2921
+soundalias,#evt_flinger_fling
 soundalias,#hash_7faa27b387b22668
 soundalias,#hash_7fbb10fd25cdcab8
 soundalias,#hash_7fc4694e1a645d31
@@ -9094,7 +9094,7 @@ client_fx,#hash_77964e1811bb9a67
 client_fx,#zombie/fx_tesla_tube_view2_ug_zmb
 client_fx,#hash_779eebf7aed3f4c0
 client_fx,#explosions/fx8_exp_grenade_metal
-client_fx,#hash_7a37324c1988abb5
+client_fx,#zombie/fx_val_chest_burst
 client_fx,#hash_7aa749f5bbcbbed8
 client_fx,#zm_ai/fx8_cata_plasma_blast
 client_fx,#hash_7af6b9564f0fbeca

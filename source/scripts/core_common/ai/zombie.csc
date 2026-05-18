@@ -11,7 +11,7 @@
 // Size: 0x124
 function autoexec main()
 {
-    level._effect[ #"zombie_special_day_effect" ] = #"hash_7a37324c1988abb5";
+    level._effect[ #"zombie_special_day_effect" ] = #"zombie/fx_val_chest_burst";
     ai::add_archetype_spawn_function( #"zombie", &zombieclientutils::zombie_override_burn_fx );
     ai::add_archetype_spawn_function( #"zombie", &zombieclientutils::zombiespawnsetup );
     clientfield::register( "actor", "zombie", 1, 1, "int", &zombieclientutils::zombiehandler, 0, 0 );

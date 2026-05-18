@@ -37,7 +37,7 @@ function enable_dying_wish_perk_for_level()
     zm_perks::register_perk_init_thread( #"specialty_berserker", &function_536f842f );
     zm_perks::function_b60f4a9f( #"specialty_berserker", #"p8_zm_vapor_altar_icon_01_dyingwish", "zombie/fx8_perk_altar_symbol_ambient_dying_wish", #"zmperksdyingwish" );
     zm_perks::function_f3c80d73( "zombie_perk_bottle_dying_wish", "zombie_perk_totem_dying_wish" );
-    level._effect[ #"hash_481f130cd5e53b7f" ] = #"hash_620000088d4c3f79";
+    level._effect[ #"perk_dying_wish_3p" ] = #"hash_620000088d4c3f79";
     callback::on_spawned( &on_spawned );
     callback::on_localclient_connect( &on_localclient_connect );
 }
@@ -95,7 +95,7 @@ function private function_bd2b1ccb( localclientnum, oldvalue, newvalue, bnewent,
         }
         else
         {
-            self.var_d413d3e = util::playfxontag( localclientnum, level._effect[ #"hash_481f130cd5e53b7f" ], self, "j_spine4" );
+            self.var_d413d3e = util::playfxontag( localclientnum, level._effect[ #"perk_dying_wish_3p" ], self, "j_spine4" );
         }
         
         if ( !isdefined( self.var_cffdb842 ) )

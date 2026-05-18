@@ -1158,8 +1158,8 @@ function init_fx()
     level._effect[ #"animscript_gibtrail_fx" ] = #"blood/fx_blood_gib_limb_trail";
     level._effect[ #"switch_sparks" ] = #"hash_26f37488feec03c3";
     level._effect[ #"hash_4159f23a18f644a7" ] = #"hash_71ed4f412b17e19e";
-    level._effect[ #"fx_zombie_bar_break" ] = #"hash_718a24841c1e00c9";
-    level._effect[ #"fx_zombie_bar_break_lite" ] = #"hash_35ee6425adf16fb6";
+    level._effect[ #"fx_zombie_bar_break" ] = #"_t6/maps/zombie/fx_zombie_bar_break";
+    level._effect[ #"fx_zombie_bar_break_lite" ] = #"_t6/maps/zombie/fx_zombie_bar_break_lite";
     
     if ( !( isdefined( level.fx_exclude_edge_fog ) && level.fx_exclude_edge_fog ) )
     {
@@ -1174,7 +1174,7 @@ function init_fx()
     
     if ( !( isdefined( level.fx_exclude_tesla_head_light ) && level.fx_exclude_tesla_head_light ) )
     {
-        level._effect[ #"tesla_head_light" ] = #"hash_757d002378ec934c";
+        level._effect[ #"tesla_head_light" ] = #"_t6/maps/zombie/fx_zombie_tesla_neck_spurt";
     }
     
     level._effect[ #"zombie_guts_explosion" ] = #"zombie/fx_blood_torso_explo_lg_zmb";
@@ -1197,7 +1197,7 @@ function init_fx()
     
     if ( !( isdefined( level.disable_fx_upgrade_aquired ) && level.disable_fx_upgrade_aquired ) )
     {
-        level._effect[ #"upgrade_aquired" ] = #"hash_359f0993cf4ebe66";
+        level._effect[ #"upgrade_aquired" ] = #"_t6/maps/zombie/fx_zmb_tanzit_upgrade";
     }
 }
 
@@ -1381,7 +1381,7 @@ function actor_damage_override( inflictor, attacker, damage, flags, meansofdeath
     
     if ( !isbot( attacker ) )
     {
-        level notify( #"hash_3fdaafe712252cf5" );
+        level notify( #"zombie_attacked_by_player" );
     }
     
     if ( isdefined( self.var_1e7e5205 ) && self.var_1e7e5205 )
@@ -2730,7 +2730,7 @@ function player_too_many_players_check()
     {
         foreach ( player in getplayers() )
         {
-            player val::set( #"hash_1a88595aedca8cc4", "freezecontrols" );
+            player val::set( #"too_many_players", "freezecontrols" );
         }
         
         level notify( #"end_game" );

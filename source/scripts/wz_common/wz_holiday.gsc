@@ -127,11 +127,11 @@ function function_c5d0e538()
         add_helico( var_80d7570e, #"hash_5e132c061625eb87" );
     }
     
-    var_e6c8e160 = getdynent( #"zombie_stash_graveyard" );
+    graveyard_chest = getdynent( #"zombie_stash_graveyard" );
     
-    if ( isdefined( var_e6c8e160 ) )
+    if ( isdefined( graveyard_chest ) )
     {
-        add_helico( var_e6c8e160, #"hash_5e132c061625eb87" );
+        add_helico( graveyard_chest, #"hash_5e132c061625eb87" );
     }
     
     var_726be3fe = getdynent( #"zombie_stash_graveyard_quest" );
@@ -141,11 +141,11 @@ function function_c5d0e538()
         add_helico( var_726be3fe, #"hash_5e132c061625eb87" );
     }
     
-    var_e18572a7 = getdynent( #"zombie_supply_stash_diner" );
+    diner_chest = getdynent( #"zombie_supply_stash_diner" );
     
-    if ( isdefined( var_e18572a7 ) )
+    if ( isdefined( diner_chest ) )
     {
-        add_helico( var_e18572a7, #"hash_5e132c061625eb87" );
+        add_helico( diner_chest, #"hash_5e132c061625eb87" );
     }
     
     var_676cdb27 = getdynent( #"zombie_supply_stash_diner_quest" );
@@ -155,11 +155,11 @@ function function_c5d0e538()
         add_helico( var_676cdb27, #"hash_5e132c061625eb87" );
     }
     
-    var_275d4dfc = getdynent( #"zombie_supply_stash_lighthouse" );
+    lighthouse_chest = getdynent( #"zombie_supply_stash_lighthouse" );
     
-    if ( isdefined( var_275d4dfc ) )
+    if ( isdefined( lighthouse_chest ) )
     {
-        add_helico( var_275d4dfc, #"hash_5e132c061625eb87" );
+        add_helico( lighthouse_chest, #"hash_5e132c061625eb87" );
     }
     
     var_667d5645 = getdynent( #"zombie_supply_stash_lighthouse_quest" );
@@ -169,11 +169,11 @@ function function_c5d0e538()
         add_helico( var_667d5645, #"hash_5e132c061625eb87" );
     }
     
-    var_6d0e8b71 = getdynent( #"zombie_supply_stash_boxinggym" );
+    boxing_gym_chest = getdynent( #"zombie_supply_stash_boxinggym" );
     
-    if ( isdefined( var_6d0e8b71 ) )
+    if ( isdefined( boxing_gym_chest ) )
     {
-        add_helico( var_6d0e8b71, #"hash_5e132c061625eb87" );
+        add_helico( boxing_gym_chest, #"hash_5e132c061625eb87" );
     }
     
     var_b9d1e3a4 = getdynent( #"zombie_supply_stash_boxinggym_quest" );
@@ -183,14 +183,14 @@ function function_c5d0e538()
         add_helico( var_b9d1e3a4, #"hash_5e132c061625eb87" );
     }
     
-    var_facd88e0 = getdynent( #"hash_43d72946b8b0dcb2" );
+    farm_chest = getdynent( #"zombie_supply_stash_farm" );
     
-    if ( isdefined( var_facd88e0 ) )
+    if ( isdefined( farm_chest ) )
     {
-        add_helico( var_facd88e0, #"hash_5e132c061625eb87" );
+        add_helico( farm_chest, #"hash_5e132c061625eb87" );
     }
     
-    var_cd5ee6fb = getdynent( #"hash_183c9fe8af52fac7" );
+    var_cd5ee6fb = getdynent( #"zombie_supply_stash_farm_quest" );
     
     if ( isdefined( var_cd5ee6fb ) )
     {

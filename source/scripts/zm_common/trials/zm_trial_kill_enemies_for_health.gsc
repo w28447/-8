@@ -7,18 +7,18 @@
 #using scripts\zm_common\zm_trial;
 #using scripts\zm_common\zm_utility;
 
-#namespace namespace_a476311c;
+#namespace zm_trial_kill_enemies_for_health;
 
-// Namespace namespace_a476311c/namespace_a476311c
+// Namespace zm_trial_kill_enemies_for_health/zm_trial_kill_enemies_for_health
 // Params 0, eflags: 0x2
 // Checksum 0x3a4d8821, Offset: 0xa8
 // Size: 0x3c
 function autoexec __init__system__()
 {
-    system::register( #"hash_7ceb08aa364e4596", &__init__, undefined, undefined );
+    system::register( #"zm_trial_kill_enemies_for_health", &__init__, undefined, undefined );
 }
 
-// Namespace namespace_a476311c/namespace_a476311c
+// Namespace zm_trial_kill_enemies_for_health/zm_trial_kill_enemies_for_health
 // Params 0
 // Checksum 0xed8d6fea, Offset: 0xf0
 // Size: 0x5c
@@ -29,10 +29,10 @@ function __init__()
         return;
     }
     
-    zm_trial::register_challenge( #"hash_250115340b2e27a5", &on_begin, &on_end );
+    zm_trial::register_challenge( #"kill_enemies_for_health", &on_begin, &on_end );
 }
 
-// Namespace namespace_a476311c/namespace_a476311c
+// Namespace zm_trial_kill_enemies_for_health/zm_trial_kill_enemies_for_health
 // Params 4, eflags: 0x4
 // Checksum 0x1c76b340, Offset: 0x158
 // Size: 0x114
@@ -74,7 +74,7 @@ function private on_begin( var_b9c6550, var_50d1120, var_43f824d6, var_73d6ae36 
     zm_spawner::register_zombie_death_event_callback( &function_138aec8e );
 }
 
-// Namespace namespace_a476311c/namespace_a476311c
+// Namespace zm_trial_kill_enemies_for_health/zm_trial_kill_enemies_for_health
 // Params 1, eflags: 0x4
 // Checksum 0xcc5c33b5, Offset: 0x278
 // Size: 0x2c
@@ -83,7 +83,7 @@ function private on_end( round_reset )
     zm_spawner::deregister_zombie_death_event_callback( &function_138aec8e );
 }
 
-// Namespace namespace_a476311c/namespace_a476311c
+// Namespace zm_trial_kill_enemies_for_health/zm_trial_kill_enemies_for_health
 // Params 1, eflags: 0x4
 // Checksum 0xaed53267, Offset: 0x2b0
 // Size: 0x2a4
@@ -139,19 +139,19 @@ function private function_e997bb0b( var_73d6ae36 )
     }
 }
 
-// Namespace namespace_a476311c/namespace_a476311c
+// Namespace zm_trial_kill_enemies_for_health/zm_trial_kill_enemies_for_health
 // Params 0, eflags: 0x4
 // Checksum 0x88d5f565, Offset: 0x560
 // Size: 0xd2
 function private function_49091c27()
 {
-    challenge = zm_trial::function_a36e8c38( #"hash_250115340b2e27a5" );
+    challenge = zm_trial::function_a36e8c38( #"kill_enemies_for_health" );
     assert( isdefined( challenge ) );
     new_health = self.health + challenge.var_97330ad2;
     self.health = int( math::clamp( floor( new_health ), 0, max( self.maxhealth, self.var_66cb03ad ) ) );
 }
 
-// Namespace namespace_a476311c/namespace_a476311c
+// Namespace zm_trial_kill_enemies_for_health/zm_trial_kill_enemies_for_health
 // Params 1, eflags: 0x4
 // Checksum 0x6a3c5db9, Offset: 0x640
 // Size: 0xcc

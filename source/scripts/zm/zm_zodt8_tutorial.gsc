@@ -1271,7 +1271,7 @@ function function_bfd3a7b1()
     self perks();
     self equipment();
     self bot();
-    self function_2d18e4c9();
+    self revive_bot();
     self catalyst();
     self cooperative();
     self crafting();
@@ -1557,7 +1557,7 @@ function function_c0a37283()
 // Params 0
 // Checksum 0xe0cfd266, Offset: 0x7118
 // Size: 0xfc
-function function_2d18e4c9()
+function revive_bot()
 {
     level thread function_68da8e33( #"hash_21c376fa208dc2c", 4 );
     level.tutorialbot waittill( #"stop_revive_trigger" );

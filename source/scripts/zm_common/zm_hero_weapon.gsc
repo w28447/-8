@@ -659,8 +659,8 @@ function hero_weapon_ready( n_slot, w_hero )
 // Size: 0x1ce
 function function_9a100883( weapon_level, enabled )
 {
-    self notify( #"hash_6b01968912321cc5" );
-    self endon( #"hash_6b01968912321cc5", #"disconnect" );
+    self notify( #"new_hero_weapon_given" );
+    self endon( #"new_hero_weapon_given", #"disconnect" );
     self.var_39b77a76 = 1;
     self.var_c9279111 = 0;
     self.var_821c9bf3 = 0;
@@ -1133,9 +1133,9 @@ function function_cab29b9f()
         return;
     }
     
-    self val::set( #"hash_558d809e7921fa79", "takedamage", 0 );
+    self val::set( #"hero_weapon_damage_immunity", "takedamage", 0 );
     wait 0.5;
-    self val::reset( #"hash_558d809e7921fa79", "takedamage" );
+    self val::reset( #"hero_weapon_damage_immunity", "takedamage" );
 }
 
 // Namespace zm_hero_weapon/zm_hero_weapon

@@ -30,7 +30,7 @@ function __init__()
     clientfield::register( "toplayer", "flamethrower_tornado_blast_flash", 1, 1, "counter", &flamethrower_tornado_blast_flash, 0, 0 );
     level._effect[ #"flamethrower_tornado" ] = #"hash_2f45879d2658065c";
     level._effect[ #"wind_blast_flash" ] = #"hash_312fc9707e06f6f4";
-    level._effect[ #"hash_34db403668f7f353" ] = #"hash_52e3de5257e268c2";
+    level._effect[ #"wind_blast_flash_3p" ] = #"hash_52e3de5257e268c2";
     level._effect[ #"tornado_blast_flash" ] = #"hash_5c5ffb835c39dce3";
 }
 
@@ -139,7 +139,7 @@ function flamethrower_wind_blast_flash( localclientnum, oldval, newval, bnewent,
         return;
     }
     
-    util::playfxontag( localclientnum, level._effect[ #"hash_34db403668f7f353" ], self, "tag_flash" );
+    util::playfxontag( localclientnum, level._effect[ #"wind_blast_flash_3p" ], self, "tag_flash" );
 }
 
 // Namespace zm_weap_flamethrower/zm_weap_flamethrower

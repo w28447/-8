@@ -1578,7 +1578,7 @@ model,#hash_7c1b2f1801cbbbb6
 model,#p8_wz_ammo_pickup_45acp
 model,#wpn_t8_zm_akud_clip_world
 model,#wpn_t8_tac_rifle_mid_burst_mk2_view
-model,#hash_7c40a6297a29d7bd
+model,#p8_wz_door_01_farm_double
 model,#hash_7c489d91d2757773
 model,#p8_wz_perk_pickups_bloody_tracker
 model,#p8_wz_spray_can_camo_single
@@ -1709,7 +1709,7 @@ weapon,#shotgun_semiauto_t8_wz
 weapon,#lmg_heavy_t8_gold_wz
 weapon,#turret_vehicle_boct_mil_truck_cargo_wz
 weapon,#hash_34a9b8c189a267e3
-weapon,#hash_351254cd4fc93d6e
+weapon,#tomahawk_t8_wz_pandemic
 weapon,#melee_club_t8_wz
 weapon,#lmg_spray_t8_operator_wz
 weapon,#tr_longburst_t8_gold_wz
@@ -8831,7 +8831,7 @@ soundalias,#hash_ca467b11bcaf711
 soundalias,#hash_ca7354dc15db915
 soundalias,#exp_concussive_large
 soundalias,#hash_d08bd08d0572dbe
-soundalias,#hash_d6643b88d0186ae
+soundalias,#veh_dmg_emp
 soundalias,#vox_homun_scream_exert_homu
 soundalias,#fly_lanterns
 soundalias,#hash_d956db2a914514e
@@ -8864,7 +8864,7 @@ soundalias,#hash_130d8d6f4a518c0b
 soundalias,#hash_13363893c4e80884
 soundalias,#hash_1358357952f89d8d
 soundalias,#hash_136dc2033ae7075f
-soundalias,#hash_13eb1a82d0249566
+soundalias,#amb_clock_tick
 soundalias,#evt_death_circle_weak
 soundalias,#amb_vending_machine
 soundalias,#hash_14c664e9904e12b1

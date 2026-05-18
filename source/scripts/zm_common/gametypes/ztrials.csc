@@ -1,5 +1,5 @@
 #using script_45657e86e8f90414;
-#using script_5afd8ff8f8304cc4;
+#using scripts\zm_common\trials\zm_trial_kill_enemies_for_health.csc;
 #using script_70ab01a7690ea256;
 #using scripts\core_common\flag_shared;
 #using scripts\core_common\struct;

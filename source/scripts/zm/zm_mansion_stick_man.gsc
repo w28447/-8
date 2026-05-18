@@ -868,7 +868,7 @@ function private function_25a79bc1()
     
     while ( true )
     {
-        self waittill( #"fasttravel_over", #"bgb_anywhere_but_here_complete", #"hash_55489b8cb6c75352" );
+        self waittill( #"fasttravel_over", #"bgb_anywhere_but_here_complete", #"zm_bgb_nowhere_but_there_complete" );
         
         if ( self !== level.stick_player )
         {

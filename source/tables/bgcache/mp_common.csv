@@ -48,7 +48,7 @@ model,#hash_181fe85848ab066
 model,#wpn_t8_pistol_standard_sig_01_world
 model,#veh_t7_drone_amws_tread_left_back
 model,#wpn_t8_sniper_vanguard_sig_01_scope_world
-model,#hash_1ad3d7548486082
+model,#p8_mp_flag_carry_1_blackops_alt
 model,#hash_1f415a1d28a59c7
 model,#wpn_t8_loot_pistol_auto_sig_02_world
 model,#p7_mou_h_beams_stack_snow
@@ -884,7 +884,7 @@ model,#hash_4d753130e0ee6d2b
 model,#hash_4d816b7a278b11ac
 model,#attach_t8_pistol_revolver_scope_mk2_world
 model,#hash_4ddae52ce1f1f0a5
-model,#hash_4ddde6545c52fa2f
+model,#p8_mp_flag_carry_1_mercs_alt
 model,#projectile_t8_drone_amws_missile
 model,#hash_4e53863d4b1f6a81
 model,#hash_4e75b2e63abfac9e
@@ -1791,7 +1791,7 @@ gesture,#hash_41370e62c0234eef
 gesture,#hash_4164fdc7386ee9ab
 gesture,#hash_4195b95d799b650a
 gesture,#hash_419e4f62ad7d82c4
-gesture,#hash_419f11534af12a76
+gesture,#ges_battle_cry
 gesture,#hash_41b17f6fabff8d0f
 gesture,#ges_zipline
 gesture,#hash_438d88e73de1728d
@@ -10055,7 +10055,7 @@ soundalias,#hash_7db8b31961c060c
 soundalias,#hash_7e44924d9b0b53d
 soundalias,#hash_7e698ed8379d565
 soundalias,#hash_7e7ee574d932b69
-soundalias,#hash_7ea486136cd776c
+soundalias,#mpl_turret_kill
 soundalias,#hash_7ebc88311b82e46
 soundalias,#wpn_melee_sword_flourish_npc
 soundalias,#hash_7ee544ae8f818b2
@@ -28165,7 +28165,7 @@ soundalias,#prj_bullet_impact_gravel
 soundalias,#hash_7d4e250ccac9b2df
 soundalias,#hash_7d4e3330f581d003
 soundalias,#hash_7d4fe67d34709903
-soundalias,#hash_7d53dd7b886b60ae
+soundalias,#mpl_electrical_surge
 soundalias,#hash_7d54201f70de0d12
 soundalias,#hash_7d544b773b336a17
 soundalias,#hash_7d54c8e6f955ee66
@@ -29308,7 +29308,7 @@ client_fx,#hash_61c137df39d74f31
 client_fx,#hash_61e2a63b3f726780
 client_fx,#hash_61e9b23b3f789a92
 client_fx,#hash_61e9d709a09b7c5f
-client_fx,#hash_622d3cdb93e01de5
+client_fx,#_t6/weapon/grenade/fx_spark_disabled_rc_car
 client_fx,#player/fx_plyr_jump_dust
 client_fx,#hash_62589f8064981742
 client_fx,#killstreaks/fx_agr_vlight

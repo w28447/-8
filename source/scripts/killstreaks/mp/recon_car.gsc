@@ -30,7 +30,7 @@ function __init__()
 {
     killstreak_detect::init_shared();
     remote_weapons::init_shared();
-    killstreaks::function_b5b6ef3e( &init_killstreak );
+    killstreaks::on_init_killstreaks( &init_killstreak );
 }
 
 // Namespace recon_car/recon_car

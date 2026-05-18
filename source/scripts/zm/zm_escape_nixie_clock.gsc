@@ -20,7 +20,7 @@
 // Size: 0x84
 function init_clientfields()
 {
-    clientfield::register( "scriptmover", "" + #"hash_3e57db9b106dff0a", 1, 1, "int" );
+    clientfield::register( "scriptmover", "" + #"zombie_blood_powerup_fx", 1, 1, "int" );
     clientfield::register( "scriptmover", "" + #"hash_4ccf2ce25e0dc836", 1, 1, "int" );
 }
 
@@ -542,7 +542,7 @@ function private function_f2f53f97()
     level.var_461a9705 = 1;
     s_spawn_location = struct::get( "nixie_tube_zombie_blood_start" );
     mdl_powerup = util::spawn_model( s_spawn_location.model, s_spawn_location.origin, s_spawn_location.angles );
-    mdl_powerup clientfield::set( "" + #"hash_3e57db9b106dff0a", 1 );
+    mdl_powerup clientfield::set( "" + #"zombie_blood_powerup_fx", 1 );
     
     for ( s_target = struct::get( s_spawn_location.target ); isdefined( s_target ) ; s_target = struct::get( s_target.target ) )
     {

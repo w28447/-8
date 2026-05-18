@@ -331,7 +331,7 @@ function function_86c058b()
     level.temp_disable = level.var_32ae304;
     level.var_32ae304 = undefined;
     wait 3.5;
-    level notify( #"hash_60c1587995518e92" );
+    level notify( #"vp_squad_move" );
     level waittill( #"hash_18806b37ec38ff49" );
     wait 4;
     ct_vo::function_831e0584( array( #"hash_76712094e9fc348d" ), 1 );
@@ -1417,7 +1417,7 @@ function function_1d2b336( s_start_loc )
         self bot_stance::crouch();
     }
     
-    level waittill( #"hash_60c1587995518e92" );
+    level waittill( #"vp_squad_move" );
     self val::reset( #"ai_vp", "ignoreall" );
     
     if ( isdefined( b_crouched ) && b_crouched )

@@ -39,7 +39,7 @@ function __init__()
     level._effect[ #"hash_294b19c300d1b482" ] = #"hash_45008cc138e3bba3";
     level._effect[ #"hash_4391e5c4b43c63c9" ] = #"hash_215c779c48fd6856";
     level._effect[ #"hash_5647f8e593893bce" ] = #"hash_4d61168f93739083";
-    level._effect[ #"zombie_eye_trail" ] = #"hash_526060b70ce93d7e";
+    level._effect[ #"zombie_eye_trail" ] = #"zm_ai/fx8_zombie_eye_glow_red_trail";
     level._effect[ #"spinning_blood" ] = #"hash_358533e8293f131d";
 }
 
@@ -60,7 +60,7 @@ function fan_trap_blood_fx( localclientnum, oldval, newval, bnewent, binitialsna
             self.n_fan_trap_blood_fx = util::playfxontag( localclientnum, level._effect[ #"fan_blood" ], self, "j_spinelower" );
         }
         
-        playsound( localclientnum, #"hash_5840ac12dd5f08cd", self.origin );
+        playsound( localclientnum, #"zmb_exp_jib_fan_zombie", self.origin );
         return;
     }
     
@@ -112,13 +112,13 @@ function acid_trap_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fi
             self.var_91180673 delete();
         }
         
-        playsound( localclientnum, #"hash_68f3e5dbc3422363", self.origin );
+        playsound( localclientnum, #"zmb_trap_acid_start", self.origin );
         audio::playloopat( "zmb_trap_acid_loop", self.origin );
         self.var_91180673 = util::playfxontag( localclientnum, level._effect[ #"acid_spray" ], self, "tag_origin" );
         return;
     }
     
-    playsound( localclientnum, #"hash_4da8231bc8767676", self.origin );
+    playsound( localclientnum, #"zmb_trap_acid_end", self.origin );
     audio::stoploopat( "zmb_trap_acid_loop", self.origin );
     
     if ( isdefined( self.var_91180673 ) )
@@ -139,7 +139,7 @@ function acid_trap_death_fx( localclientnum, oldval, newval, bnewent, binitialsn
     if ( newval == 1 )
     {
         self.n_acid_trap_death_fx = util::playfxontag( localclientnum, level._effect[ #"hash_294b19c300d1b482" ], self, "tag_stowed_back" );
-        playsound( localclientnum, #"hash_4d4c9f8ad239b61f", self.origin );
+        playsound( localclientnum, #"zmb_exp_jib_acid_zombie", self.origin );
         return;
     }
     
@@ -286,7 +286,7 @@ function spinning_trap_blood_fx( localclientnum, oldval, newval, bnewent, biniti
         }
         
         self.n_spinning_trap_blood_fx = util::playfxontag( localclientnum, level._effect[ #"spinning_blood" ], self, var_1f694afe );
-        playsound( localclientnum, #"hash_5840ac12dd5f08cd", self.origin );
+        playsound( localclientnum, #"zmb_exp_jib_fan_zombie", self.origin );
     }
 }
 

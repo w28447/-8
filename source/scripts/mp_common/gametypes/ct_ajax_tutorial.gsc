@@ -313,7 +313,7 @@ function function_732cbc35()
     var_eed14f5e = array( #"hash_1a4f889ff65c0a0c" );
     function_593bdda2( 1, 1, var_eed14f5e, 0, var_5be6a7a9, var_49a50326, var_c897b566 );
     level.var_e72728b8 = array( #"sig_buckler_dw", #"eq_swat_grenade" );
-    level notify( #"hash_4d65fa7bba19c892" );
+    level notify( #"single_grenade_complete" );
     wait 0.1;
     ct_vo::function_3ca1b77d();
     ct_vo::function_831e0584( array( "vox_tvoi_tutor_ajax_flash_stunned_0" ), 1 );
@@ -327,7 +327,7 @@ function function_732cbc35()
 // Size: 0xc8
 function function_f29a3861()
 {
-    level endon( #"hash_4d65fa7bba19c892", #"combattraining_logic_finished" );
+    level endon( #"single_grenade_complete", #"combattraining_logic_finished" );
     level.var_fa76e237 = undefined;
     
     while ( true )
@@ -768,7 +768,7 @@ function function_9d1bba67()
     level.var_47cd3e56 = 0;
     level thread ct_bots::activate_bots( level.var_7b46025.size, #"axis" );
     wait 0.1;
-    a_str_vo = array( #"hash_3a11ade5936ba51" );
+    a_str_vo = array( #"vox_tvoi_tutor_ajax_hip_fire_nag" );
     level thread ct_vo::function_14b08e49( a_str_vo, "enemy_killed" );
     level.var_fcf21a21 = 1;
     ct_utils::function_654280be();
@@ -1052,7 +1052,7 @@ function function_8c3101de()
     level.var_e72728b8 = undefined;
     ct_utils::function_654280be();
     ct_utils::function_9aca2fa0( "ct_action" );
-    level notify( #"hash_4161e19c15c58c8c" );
+    level notify( #"all_guys_dead" );
     level.var_5830bda2 = 1;
     ct_vo::function_3ca1b77d();
     ct_vo::function_831e0584( array( #"hash_7de3d0ed50c305d6" ), 1 );
@@ -1130,7 +1130,7 @@ function function_b73895e1()
 // Size: 0x13a
 function function_4e24aa26()
 {
-    level endon( #"hash_4161e19c15c58c8c", #"combattraining_logic_finished" );
+    level endon( #"all_guys_dead", #"combattraining_logic_finished" );
     var_6ee32682 = 0;
     
     while ( true )

@@ -167,7 +167,7 @@ function on_player_score( new_score, delta_score )
     
     if ( old_score < var_2c74fba6 && new_score >= var_2c74fba6 )
     {
-        player increment_cwl_contract( #"hash_1075c38287814aa0" );
+        player increment_cwl_contract( #"contract_wl_score_per_mode_hard" );
     }
 }
 

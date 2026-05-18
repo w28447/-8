@@ -62,7 +62,7 @@ function init_shared()
         level.qrdrone_dialog[ #"assist" ][ 3 ] = #"ac130_fco_rightontarget";
         level.qrdrone_lastdialogtime = 0;
         level.qrdrone_nodeployzones = getentarray( "no_vehicles", "targetname" );
-        level._effect[ #"qrdrone_prop" ] = #"hash_5af1c94d2e2bf9f";
+        level._effect[ #"qrdrone_prop" ] = #"_t6/weapon/qr_drone/fx_qr_wash_3p";
         
         /#
             util::set_dvar_if_unset( "<dev string:x38>", 60 );

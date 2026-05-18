@@ -75,7 +75,7 @@ function init_flags()
 function init_fx()
 {
     level._effect[ #"soul_fx_earth" ] = #"hash_7b0d80c48289dd0b";
-    level._effect[ #"soul_fx_water" ] = #"hash_661da9149933ecf9";
+    level._effect[ #"soul_fx_water" ] = #"zm_ai/fx8_cata_water_purify_trail";
     level._effect[ #"soul_fx_air" ] = #"zm_ai/fx8_cata_elec_aura";
     level._effect[ #"soul_fx_fire" ] = #"hash_641c2257723638c2";
     level._effect[ #"soul_capture_earth" ] = #"hash_62eafc17a432322a";
@@ -84,7 +84,7 @@ function init_fx()
     level._effect[ #"soul_capture_fire" ] = #"hash_3009e42178ffd484";
     level._effect[ #"hash_4ab2496c89a7d871" ] = #"hash_4a305119bc50ca3d";
     level._effect[ #"packed_artifact" ] = #"zombie/fx_ritual_glow_relic_zod_zmb";
-    level._effect[ #"catalyst_blocker" ] = #"hash_5b773dbbac0012ff";
+    level._effect[ #"catalyst_blocker" ] = #"zombie/fx8_power_door_amb_quest";
     level._effect[ #"sentinel_aura" ] = #"hash_3def678deb7f4078";
     level._effect[ #"sentinel_activate" ] = #"hash_464f27bfbf0ce7bf";
     level._effect[ #"sentinel_glow" ] = #"hash_41b2c270f26faabc";
@@ -104,8 +104,8 @@ function init_fx()
     level._effect[ #"hash_2bb182b164a2d789" ] = #"hash_71fc8c15d53b5fe2";
     level._effect[ #"orb_shot_fx" ] = #"hash_2f27882b95a820fd";
     level._effect[ #"ice_blocker" ] = #"hash_55a1d3ce6c554a7a";
-    level._effect[ #"hash_53533bf74eb74209" ] = #"hash_2909be1122353509";
-    level._effect[ #"hash_535338f74eb73cf0" ] = #"hash_28b4c41121ecff3c";
+    level._effect[ #"ice_blocker_dmg1" ] = #"hash_2909be1122353509";
+    level._effect[ #"ice_blocker_dmg2" ] = #"hash_28b4c41121ecff3c";
     level._effect[ #"ice_blocker_death" ] = #"hash_7fb7de4ea65f1b9d";
     level._effect[ #"iceberg_ocean_fx" ] = #"hash_369788360ca4879d";
     level._effect[ #"iceberg_waterfall_fx" ] = #"hash_56e16e07d428fead";
@@ -417,7 +417,7 @@ function function_9ecc1074( localclientnum )
         {
             if ( self util::function_50ed1561( localclientnum ) )
             {
-                self.var_733dd716 = playfxoncamera( localclientnum, level._effect[ #"hash_1e7095084eda811c" ], ( 0, 0, 0 ), ( 1, 0, 0 ), ( 0, 0, 1 ) );
+                self.var_733dd716 = playfxoncamera( localclientnum, level._effect[ #"water_player_jump_in_new" ], ( 0, 0, 0 ), ( 1, 0, 0 ), ( 0, 0, 1 ) );
             }
             
             wait randomintrange( 15, 20 );
@@ -601,14 +601,14 @@ function function_49661954( localclientnum, oldval, newval, bnewent, binitialsna
     if ( newval == 2 )
     {
         self playsound( localclientnum, #"hash_1892310a436314b2" );
-        util::playfxontag( localclientnum, level._effect[ #"hash_53533bf74eb74209" ], self, "tag_origin" );
+        util::playfxontag( localclientnum, level._effect[ #"ice_blocker_dmg1" ], self, "tag_origin" );
         return;
     }
     
     if ( newval == 3 )
     {
         self playsound( localclientnum, #"hash_1892310a436314b2" );
-        util::playfxontag( localclientnum, level._effect[ #"hash_535338f74eb73cf0" ], self, "tag_origin" );
+        util::playfxontag( localclientnum, level._effect[ #"ice_blocker_dmg2" ], self, "tag_origin" );
         return;
     }
     
@@ -624,7 +624,7 @@ function function_49661954( localclientnum, oldval, newval, bnewent, binitialsna
     }
     
     self playsound( localclientnum, #"hash_28d76e47e3d57bf6" );
-    util::playfxontag( localclientnum, level._effect[ #"hash_535338f74eb73cf0" ], self, "tag_origin" );
+    util::playfxontag( localclientnum, level._effect[ #"ice_blocker_dmg2" ], self, "tag_origin" );
     util::playfxontag( localclientnum, level._effect[ #"ice_blocker_death" ], self, "tag_origin" );
 }
 

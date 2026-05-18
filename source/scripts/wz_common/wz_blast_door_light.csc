@@ -3,18 +3,18 @@
 #using scripts\core_common\struct;
 #using scripts\core_common\system_shared;
 
-#namespace namespace_3d0f1be7;
+#namespace wz_blast_door_light;
 
-// Namespace namespace_3d0f1be7/namespace_3d0f1be7
+// Namespace wz_blast_door_light/wz_blast_door_light
 // Params 0, eflags: 0x2
 // Checksum 0x418e1c85, Offset: 0xc8
 // Size: 0x3c
 function autoexec __init__system__()
 {
-    system::register( #"hash_411c8f5d7f8749b9", &__init__, undefined, undefined );
+    system::register( #"wz_blast_door_light", &__init__, undefined, undefined );
 }
 
-// Namespace namespace_3d0f1be7/namespace_3d0f1be7
+// Namespace wz_blast_door_light/wz_blast_door_light
 // Params 0
 // Checksum 0x80f724d1, Offset: 0x110
 // Size: 0x4
@@ -23,7 +23,7 @@ function __init__()
     
 }
 
-// Namespace namespace_3d0f1be7/event_9673dc9a
+// Namespace wz_blast_door_light/event_9673dc9a
 // Params 1, eflags: 0x40
 // Checksum 0x3861cde1, Offset: 0x120
 // Size: 0x8c
@@ -41,7 +41,7 @@ function event_handler[event_9673dc9a] function_3981d015( eventstruct )
     }
 }
 
-// Namespace namespace_3d0f1be7/namespace_3d0f1be7
+// Namespace wz_blast_door_light/wz_blast_door_light
 // Params 1
 // Checksum 0x93d2bbcc, Offset: 0x1b8
 // Size: 0x11a

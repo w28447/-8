@@ -239,8 +239,8 @@ function registerbehaviorscriptfunctions()
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_3378ea427701f557", &function_c6c44df1 );
     assert( isscriptfunctionptr( &function_c6c44df1 ) );
     behaviorstatemachine::registerbsmscriptapiinternal( #"hash_3378ea427701f557", &function_c6c44df1 );
-    animationstatenetwork::registeranimationmocomp( "mocomp_gladiator_leap", &registerhud_message_electricity_, &function_3f15e557, &function_96f1cbf6 );
-    animationstatenetwork::registeranimationmocomp( "mocomp_gladiator_throw", &function_3137174f, &function_64cd870, &function_d9e4ebc8 );
+    animationstatenetwork::registeranimationmocomp( "mocomp_gladiator_leap", &function_c7748c4a, &function_3f15e557, &mocompgladiatorleapend );
+    animationstatenetwork::registeranimationmocomp( "mocomp_gladiator_throw", &function_3137174f, &function_64cd870, &mocompgladiatorthrowend );
     animationstatenetwork::registeranimationmocomp( "mocomp_gladiator_run_melee", &function_37d33f09, &function_3f7c46a, &function_2bc1ffb8 );
     animationstatenetwork::registernotetrackhandlerfunction( "gladiator_melee", &function_cdef55f0 );
     animationstatenetwork::registernotetrackhandlerfunction( "axe_throw_start", &function_f3c02dbf );
@@ -1035,7 +1035,7 @@ function private function_e217245a( entity )
 // Params 5
 // Checksum 0xb203af0d, Offset: 0x3430
 // Size: 0x324
-function registerhud_message_electricity_( entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration )
+function function_c7748c4a( entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration )
 {
     entity animmode( "gravity", 1 );
     entity orientmode( "face angle", entity.angles[ 1 ] );
@@ -1191,7 +1191,7 @@ function function_3f15e557( entity, mocompanim, mocompanimblendouttime, mocompan
 // Params 5
 // Checksum 0x6d797814, Offset: 0x4080
 // Size: 0xbe
-function function_96f1cbf6( entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration )
+function mocompgladiatorleapend( entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration )
 {
     entity.blockingpain = 0;
     entity.var_5dd07a80 = undefined;
@@ -1238,7 +1238,7 @@ function function_64cd870( entity, mocompanim, mocompanimblendouttime, mocompani
 // Params 5
 // Checksum 0x53a97afa, Offset: 0x42f8
 // Size: 0x2c
-function function_d9e4ebc8( entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration )
+function mocompgladiatorthrowend( entity, mocompanim, mocompanimblendouttime, mocompanimflag, mocompduration )
 {
     
 }
@@ -1781,7 +1781,7 @@ function private function_88d65504( axe, var_7900b267, move_pos )
     if ( trace[ #"fraction" ] < 1 )
     {
         hit_ent = trace[ #"entity" ];
-        level notify( #"hash_435816ec8f13c19b", { #var_f1445bd6:trace, #ai_gladiator:self, #mdl_axe:axe, #hit_ent:hit_ent } );
+        level notify( #"gladiator_axe_hit", { #var_f1445bd6:trace, #ai_gladiator:self, #mdl_axe:axe, #hit_ent:hit_ent } );
         
         if ( isdefined( hit_ent ) )
         {

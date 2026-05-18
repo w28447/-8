@@ -28,17 +28,17 @@ function __init__()
     }
     
     aat::register( "zm_aat_kill_o_watt", #"hash_17fd44c733f7c66b", "t7_icon_zm_aat_dead_wire" );
-    clientfield::register( "actor", "zm_aat_kill_o_watt" + "_explosion", 1, 1, "counter", &function_d2ca081b, 0, 0 );
-    clientfield::register( "vehicle", "zm_aat_kill_o_watt" + "_explosion", 1, 1, "counter", &function_d2ca081b, 0, 0 );
-    clientfield::register( "actor", "zm_aat_kill_o_watt" + "_zap", 1, 1, "int", &function_846837f, 0, 0 );
-    clientfield::register( "vehicle", "zm_aat_kill_o_watt" + "_zap", 1, 1, "int", &function_846837f, 0, 0 );
+    clientfield::register( "actor", "zm_aat_kill_o_watt" + "_explosion", 1, 1, "counter", &zm_aat_kill_o_watt_exp, 0, 0 );
+    clientfield::register( "vehicle", "zm_aat_kill_o_watt" + "_explosion", 1, 1, "counter", &zm_aat_kill_o_watt_exp, 0, 0 );
+    clientfield::register( "actor", "zm_aat_kill_o_watt" + "_zap", 1, 1, "int", &zm_aat_kill_o_watt_zap, 0, 0 );
+    clientfield::register( "vehicle", "zm_aat_kill_o_watt" + "_zap", 1, 1, "int", &zm_aat_kill_o_watt_zap, 0, 0 );
 }
 
 // Namespace zm_aat_kill_o_watt/zm_aat_kill_o_watt
 // Params 7
 // Checksum 0xd2afbccf, Offset: 0x378
 // Size: 0x196
-function function_846837f( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function zm_aat_kill_o_watt_zap( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {
@@ -79,7 +79,7 @@ function function_846837f( localclientnum, oldval, newval, bnewent, binitialsnap
 // Params 7
 // Checksum 0xb925b715, Offset: 0x518
 // Size: 0xd4
-function function_d2ca081b( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function zm_aat_kill_o_watt_exp( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( isdefined( self ) )
     {

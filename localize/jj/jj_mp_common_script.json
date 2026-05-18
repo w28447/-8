@@ -19,7 +19,7 @@
     "hash_3267fdfd0c2b7fdc": "ディプロイシップを破壊した",
     "coop/player_is_reviving_you": "$(clientName)に蘇生されています",
     "killstreak/qrdrone_hacked": "ドラゴンファイアをハッキング",
-    "hash_4403919077b48aaf": "ハーフタイム",
+    "mp/halftime_caps": "ハーフタイム",
     "mp/wins": "&&1の勝利！",
     "hash_5378ad2a180f684c": "防衛",
     "mp/match_bonus_is": "マッチボーナス: ^3&&1XP",

@@ -1384,7 +1384,7 @@ function function_cf5ef033( n_round_number )
     
     while ( true )
     {
-        level waittill( #"hash_5d3012139f083ccb" );
+        level waittill( #"round_spawns_constructed" );
         
         if ( zm_round_spawning::function_d0db51fc( #"stoker" ) )
         {

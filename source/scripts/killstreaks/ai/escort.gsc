@@ -21,10 +21,10 @@ function init()
 // Params 5, eflags: 0x4
 // Checksum 0xc092dc32, Offset: 0x120
 // Size: 0xc2
-function private init_escort( var_5a529222, var_edc20efd, var_d73e0c6e, var_544ae93d, var_db083d2c )
+function private init_escort( var_5a529222, attack_radius, var_d73e0c6e, var_544ae93d, var_db083d2c )
 {
     assert( isdefined( self.ai ) );
-    self.ai.escort = { #state:2, #var_5a529222:var_5a529222, #var_edc20efd:var_edc20efd, #var_d73e0c6e:var_d73e0c6e, #var_544ae93d:var_544ae93d, #var_db083d2c:var_db083d2c };
+    self.ai.escort = { #state:2, #var_5a529222:var_5a529222, #attack_radius:attack_radius, #var_d73e0c6e:var_d73e0c6e, #var_544ae93d:var_544ae93d, #var_db083d2c:var_db083d2c };
 }
 
 // Namespace ai_escort/escort
@@ -54,7 +54,7 @@ function function_4af1ff64()
 {
     if ( self function_7e09d4ab() )
     {
-        return self.ai.escort.var_edc20efd;
+        return self.ai.escort.attack_radius;
     }
     
     return self.ai.escort.var_d73e0c6e;

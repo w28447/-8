@@ -1166,7 +1166,7 @@ class cdoor
     {
         if ( m_str_type === "breach" && !( isdefined( var_9bc2acd6 ) && var_9bc2acd6 ) )
         {
-            self notify( #"hash_722c5466076f75cf" );
+            self notify( #"breach_door_setup" );
             var_9bc2acd6 = 1;
             return;
         }

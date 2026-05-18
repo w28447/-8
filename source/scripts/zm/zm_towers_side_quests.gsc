@@ -25,7 +25,7 @@ function init()
     level flag::init( #"hash_26c0c05d0a3e382f" );
     level flag::init( #"pyre_lit" );
     level flag::init( #"arena_rock_unlocked" );
-    level._effect[ #"hash_3ecc995bb97331ac" ] = #"hash_37631c88b85a74ec";
+    level._effect[ #"bloodsplosion" ] = #"hash_37631c88b85a74ec";
     level.s_side_quests = spawnstruct();
     level.s_side_quests.var_25f5a473 = struct::get_array( "s_pyre" );
     
@@ -629,7 +629,7 @@ function function_5d0d1807()
     
     foreach ( s_scene in a_scenes )
     {
-        playfx( level._effect[ #"hash_3ecc995bb97331ac" ], s_scene.origin );
+        playfx( level._effect[ #"bloodsplosion" ], s_scene.origin );
         s_scene scene::stop( 1 );
     }
     

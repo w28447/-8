@@ -1002,7 +1002,7 @@ model,#wpn_t8_shotgun_pump_ammo_base_red_shell
 model,#p8_wz_ammo_pickup_45acp
 model,#wpn_t8_zm_akud_clip_world
 model,#wpn_t8_tac_rifle_mid_burst_mk2_view
-model,#hash_7c40a6297a29d7bd
+model,#p8_wz_door_01_farm_double
 model,#p8_wz_perk_pickups_bloody_tracker
 model,#p8_wz_spray_can_camo_single
 model,#p7_wz_debris_wood_board_splinter_01
@@ -1121,7 +1121,7 @@ weapon,#ar_fastfire_t8_operator_wz
 weapon,#smg_standard_t8_gold_wz
 weapon,#shotgun_semiauto_t8_wz
 weapon,#lmg_heavy_t8_gold_wz
-weapon,#hash_351254cd4fc93d6e
+weapon,#tomahawk_t8_wz_pandemic
 weapon,#melee_club_t8_wz
 weapon,#lmg_spray_t8_operator_wz
 weapon,#tr_longburst_t8_gold_wz
@@ -7705,7 +7705,7 @@ soundalias,#hash_13363893c4e80884
 soundalias,#hash_134bc3c2ce6ed759
 soundalias,#hash_1358357952f89d8d
 soundalias,#hash_136dc2033ae7075f
-soundalias,#hash_13eb1a82d0249566
+soundalias,#amb_clock_tick
 soundalias,#evt_death_circle_weak
 soundalias,#amb_vending_machine
 soundalias,#hash_1530a7e6184b9b2e

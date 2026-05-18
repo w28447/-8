@@ -164,14 +164,14 @@ function init()
     }
     
     level thread zm_ffotd::main_end();
-    level thread function_7e3a43c3();
+    level thread cartoon_mode();
 }
 
 // Namespace zm/zm
 // Params 0
 // Checksum 0xc918b312, Offset: 0xe10
 // Size: 0x15e
-function function_7e3a43c3()
+function cartoon_mode()
 {
     level.var_bcb2da96 = 0;
     util::waitforallclients();
@@ -302,7 +302,7 @@ function init_riser_fx()
     
     if ( isdefined( level.riser_type ) && level.riser_type == "snow" )
     {
-        level._effect[ #"rise_billow_snow" ] = #"hash_793798659a4b9560";
+        level._effect[ #"rise_billow_snow" ] = #"_t6/maps/zombie/fx_mp_zombie_body_snow_billowing";
     }
 }
 

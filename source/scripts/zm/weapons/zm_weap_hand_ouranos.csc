@@ -37,7 +37,7 @@ function __init__()
     level._effect[ #"ouranos_impact" ] = #"hash_5869597389a55f7b";
     level._effect[ #"ouranos_proj_knock" ] = #"hash_215ead487c4bef59";
     level._effect[ #"ouranos_wind_knock" ] = #"hash_4cc40e13ee8dff61";
-    level._effect[ #"hash_31736c99409b40ef" ] = #"hash_44bd80522ac100e7";
+    level._effect[ #"ouranos_wind_3p" ] = #"hash_44bd80522ac100e7";
 }
 
 // Namespace zm_weap_hand_ouranos/zm_weap_hand_ouranos
@@ -240,7 +240,7 @@ function skull_turret_beam_fire( localclientnum, oldval, newval, bnewent, biniti
         
         if ( !self zm_utility::is_first_person( localclientnum ) )
         {
-            self.var_c400cdd5 = util::playfxontag( localclientnum, level._effect[ #"hash_31736c99409b40ef" ], self, "tag_weapon_right" );
+            self.var_c400cdd5 = util::playfxontag( localclientnum, level._effect[ #"ouranos_wind_3p" ], self, "tag_weapon_right" );
         }
         
         if ( !isdefined( self.var_76c23e4c ) )

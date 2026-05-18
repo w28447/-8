@@ -1006,7 +1006,7 @@ function get_ground_normal( traceignore, debug )
     
     tracepoints = array( self.origin );
     
-    if ( getdvarint( #"hash_32aee631b4444f90", 1 ) )
+    if ( getdvarint( #"scr_ph_useboundsforgroundnormal", 1 ) )
     {
         i = -1;
         
@@ -1548,9 +1548,9 @@ function flashenemies( var_c8c9bf0f = self, position = self.origin )
 {
     fwd = anglestoforward( var_c8c9bf0f getplayerangles() );
     fwd = vectornormalize( ( fwd[ 0 ], fwd[ 1 ], 0 ) );
-    var_ec24ae95 = fwd * 60;
+    launch_vel = fwd * 60;
     spawn_pos = position + ( 0, 0, 10 ) + fwd * 30;
-    concuss = var_c8c9bf0f magicmissile( getweapon( #"eq_slow_grenade_ph" ), spawn_pos, var_ec24ae95 );
+    concuss = var_c8c9bf0f magicmissile( getweapon( #"eq_slow_grenade_ph" ), spawn_pos, launch_vel );
 }
 
 // Namespace prop_controls/_prop_controls

@@ -2,18 +2,18 @@
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\system_shared;
 
-#namespace namespace_6fe6fb00;
+#namespace zm_ai_dog_electric;
 
-// Namespace namespace_6fe6fb00/namespace_6fe6fb00
+// Namespace zm_ai_dog_electric/zm_ai_dog_electric
 // Params 0, eflags: 0x2
 // Checksum 0xc9c7635e, Offset: 0x80
 // Size: 0x44
 function autoexec __init__system__()
 {
-    system::register( #"hash_4b0893282c45ca4", &__init__, undefined, #"zombie_dog_util" );
+    system::register( #"zm_ai_dog_electric", &__init__, undefined, #"zombie_dog_util" );
 }
 
-// Namespace namespace_6fe6fb00/namespace_6fe6fb00
+// Namespace zm_ai_dog_electric/zm_ai_dog_electric
 // Params 0
 // Checksum 0x7890e537, Offset: 0xd0
 // Size: 0x1c
@@ -22,7 +22,7 @@ function __init__()
     level thread function_b2801783();
 }
 
-// Namespace namespace_6fe6fb00/namespace_6fe6fb00
+// Namespace zm_ai_dog_electric/zm_ai_dog_electric
 // Params 0
 // Checksum 0x433256f, Offset: 0xf8
 // Size: 0x13e

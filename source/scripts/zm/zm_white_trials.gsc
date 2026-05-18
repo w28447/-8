@@ -41,7 +41,7 @@ function main()
 {
     level endon( #"end_game" );
     level.var_4182b94e = struct::get_array( "initial_spawn_points", "targetname" );
-    level flag::init( #"hash_18775b013e93e516" );
+    level flag::init( #"slumber_party" );
     var_50f6b3f4 = getent( "counter_tens", "targetname" );
     var_50f6b3f4.start_angles = var_50f6b3f4.angles;
     var_d02e9cd = getent( "counter_ones", "targetname" );
@@ -69,7 +69,7 @@ function main()
                 level thread function_1a2500e5();
                 break;
             case 15:
-                level thread function_439b486f();
+                level thread slumber_party();
                 break;
             case 21:
                 level thread head_hunter();
@@ -89,7 +89,7 @@ function main()
             level.e_avogadro kill();
         }
         
-        if ( level flag::get( #"hash_639e8274a1b57729" ) && !level flag::get( #"hash_40856b65dff0f6eb" ) && level flag::get( "round_reset" ) )
+        if ( level flag::get( #"hash_639e8274a1b57729" ) && !level flag::get( #"power_room_event_complete" ) && level flag::get( "round_reset" ) )
         {
             level zm_white_special_rounds::function_6acd363d( 0 );
         }
@@ -146,11 +146,11 @@ function teleport_player()
 // Params 0
 // Checksum 0xb140592, Offset: 0x780
 // Size: 0x14c
-function function_439b486f()
+function slumber_party()
 {
-    if ( !level flag::get( #"hash_18775b013e93e516" ) )
+    if ( !level flag::get( #"slumber_party" ) )
     {
-        level flag::set( #"hash_18775b013e93e516" );
+        level flag::set( #"slumber_party" );
         exploder::exploder( "fxexp_disco_lgt" );
         var_51bef3af = spawn( "script_model", ( 1, 1145, -350 ) );
         var_51bef3af playsound( #"hash_c8d3a1557c42ab7" );
@@ -159,7 +159,7 @@ function function_439b486f()
         waitframe( 1 );
         var_51bef3af delete();
         exploder::stop_exploder( "fxexp_disco_lgt" );
-        level flag::clear( #"hash_18775b013e93e516" );
+        level flag::clear( #"slumber_party" );
     }
 }
 
@@ -219,7 +219,7 @@ function spawn_boss()
     s_apd_door = struct::get( "apd_door_scene", "targetname" );
     level waittill( #"zombie_total_set" );
     n_threshold = level.total_zombies_killed - level.zombie_total_subtract + level.zombie_total;
-    s_notify = level waittill( #"hash_715188521b564b16" );
+    s_notify = level waittill( #"player_reached_defend_area" );
     s_apd_door scene::play( "open" );
     zm_white_toast::spawn_boss();
     

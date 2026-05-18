@@ -175,7 +175,7 @@ function empgrenadedeathwaiter()
 {
     self notify( #"empgrenadedeathwaiter" );
     self endon( #"empgrenadedeathwaiter", #"empgrenadetimedout" );
-    self waittill( #"death", #"hash_3ffb993d40af48ca" );
+    self waittill( #"death", #"gadget_clear_emp" );
     
     if ( isdefined( self ) )
     {

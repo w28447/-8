@@ -511,13 +511,13 @@ function icepick_on( local_client_num, oldval, newval, bnewent, binitialsnap, fi
 // Size: 0xf4
 function function_4a82368f( local_client_num, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    isplaying = postfx::function_556665f2( #"hash_108c587fdd95588a" );
+    isplaying = postfx::function_556665f2( #"pstfx_dni_screen_futz_lp" );
     
     if ( newval == 1 )
     {
         if ( !isplaying && self isremotecontrolling( local_client_num ) )
         {
-            self postfx::playpostfxbundle( #"hash_108c587fdd95588a" );
+            self postfx::playpostfxbundle( #"pstfx_dni_screen_futz_lp" );
         }
         
         return;
@@ -527,7 +527,7 @@ function function_4a82368f( local_client_num, oldval, newval, bnewent, binitials
     {
         if ( isplaying )
         {
-            self postfx::stoppostfxbundle( #"hash_108c587fdd95588a" );
+            self postfx::stoppostfxbundle( #"pstfx_dni_screen_futz_lp" );
         }
     }
 }

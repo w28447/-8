@@ -384,7 +384,7 @@ function private function_fe82c566()
 // Size: 0x3d2
 function private function_92344a03()
 {
-    self endon( #"death", #"hash_376274afc09952fa" );
+    self endon( #"death", #"telepad_success" );
     
     while ( true )
     {
@@ -432,7 +432,7 @@ function private function_92344a03()
         {
             level flag::set( #"hash_7a55d8f4bd6917cb" );
             level.var_23674b8f.e_wisp notify( #"hash_530fc6e3ae75d439" );
-            self notify( #"hash_376274afc09952fa" );
+            self notify( #"telepad_success" );
         }
     }
 }

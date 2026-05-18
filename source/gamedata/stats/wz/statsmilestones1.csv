@@ -79,9 +79,9 @@
 79,0,10,#global,#kills_revenge,&#hash_622bbcb0f28ae5a2,250,0,u3?0,#,#,0,&#,u3?0,0,FALSE,heroics,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 80,1,25,#global,#kills_revenge,&#hash_622bbcb0f28ae5a2,500,0,u3?0,#,#,0,&#,u3?0,0,FALSE,heroics,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 81,2,50,#global,#kills_revenge,&#hash_622bbcb0f28ae5a2,750,0,u3?0,#,#mastery_heroics,0,&#hash_32a30b4709f59a72,u3?0,0,FALSE,heroics,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-82,0,5,#global,#hash_5387d5e6f15c6b55,&#hash_421169bc31dceea8,250,0,u3?0,#,#,0,&#,u3?0,0,FALSE,heroics,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-83,1,10,#global,#hash_5387d5e6f15c6b55,&#hash_421169bc31dceea8,500,0,u3?0,#,#,0,&#,u3?0,0,FALSE,heroics,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-84,2,20,#global,#hash_5387d5e6f15c6b55,&#hash_421169bc31dceea8,750,0,u3?0,#,#mastery_heroics,0,&#hash_b0d06b934ee0cf0,u3?0,0,FALSE,heroics,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
+82,0,5,#global,#top_5_avenger,&#hash_421169bc31dceea8,250,0,u3?0,#,#,0,&#,u3?0,0,FALSE,heroics,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
+83,1,10,#global,#top_5_avenger,&#hash_421169bc31dceea8,500,0,u3?0,#,#,0,&#,u3?0,0,FALSE,heroics,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
+84,2,20,#global,#top_5_avenger,&#hash_421169bc31dceea8,750,0,u3?0,#,#mastery_heroics,0,&#hash_b0d06b934ee0cf0,u3?0,0,FALSE,heroics,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 85,0,5,#global,#wins_without_down,&#hash_57be730a1328b373,250,0,u3?0,#,#,0,&#,u3?0,0,FALSE,heroics,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 86,1,25,#global,#wins_without_down,&#hash_57be730a1328b373,500,0,u3?0,#,#,0,&#,u3?0,0,FALSE,heroics,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 87,2,50,#global,#wins_without_down,&#hash_57be730a1328b373,750,0,u3?0,#,#mastery_heroics,0,&#hash_342ec1ea2a2ecd65,u3?0,0,FALSE,heroics,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0

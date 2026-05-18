@@ -118,7 +118,7 @@ function private __main__()
     {
         callback::add_callback( #"hash_70eeb7d813f149b2", &function_cf065988 );
         callback::add_callback( #"hash_15858698313c5f32", &function_b0503d98 );
-        callback::add_callback( #"hash_6d9bdacc6c29cfa5", &function_68cc8bce );
+        callback::add_callback( #"on_turret_placed", &on_turret_placed );
         callback::add_callback( #"on_turret_destroyed", &on_turret_destroyed );
         turretweapon = getweapon( #"gun_ultimate_turret" );
         
@@ -143,7 +143,7 @@ function private __main__()
 // Params 1
 // Checksum 0x868e613c, Offset: 0x1038
 // Size: 0x122
-function function_68cc8bce( params )
+function on_turret_placed( params )
 {
     owner = params.owner;
     turret = params.turret;
@@ -2308,7 +2308,7 @@ function function_54fc0f3e()
         }
         
         /#
-            if ( isdefined( self.current_state ) && getdvarint( #"hash_7c11c6eba2f88f9f", 0 ) )
+            if ( isdefined( self.current_state ) && getdvarint( #"sr_ai_debug", 0 ) )
             {
                 if ( getdvarint( #"recorder_enablerec", 0 ) )
                 {

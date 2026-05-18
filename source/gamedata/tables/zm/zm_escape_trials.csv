@@ -7,7 +7,7 @@
 6,#dead_eye,&#hash_3f7a3b709c4731a6,&#hash_2126b7bbe14bc6d6,&#,#hash_64d77357e69aee75,#ads,#sniper_powersemi_t8,#sniper_powersemi_t8_upgraded,#dualoptic_sniper_powersemi_t8,#dualoptic_sniper_powersemi_t8_upgraded,#,#,#
 6,#,&#,&#,&#,#restrict_loadout,#sniper_powersemi,#1,#,#,#,#,#,#
 7,#feeling_trapped,&#hash_3f7a3c709c473359,&#hash_48c14c4d6d2739f3,&#,#trap_kills_only,#,#,#,#,#,#,#,#
-8,#hash_19b432fbf21cdb88,&#hash_3f7a45709c4742a4,&#hash_47b852659704200c,&#,#hash_322751dde777c910,#ads,#25,#,#,#,#,#,#
+8,#hash_19b432fbf21cdb88,&#hash_3f7a45709c4742a4,&#hash_47b852659704200c,&#,#damage_during_movement,#ads,#25,#,#,#,#,#,#
 9,#hash_630f8f88bd5b7117,&#hash_3f7a46709c474457,&#hash_52add90a13f97149,&#,#acquire_weapon,#tomahawk_t8,#1,#tomahawk_t8_upgraded,#,#,#,#,#
 10,#rooftop_party,&#hash_3f7dc3709c4a4e95,&#hash_2013e8b5b00c8a3f,&#,#defend_area,#s_trials_defend_area_obj_roof,#hash_3b37ae9f869c05ff,#hash_638d9c278cd883dd,#zone_roof,#zone_roof_infirmary,#,#,#
 10,#,&#,&#,&#,#give_reward,#fastest_time_to_round_10,#hash_3ad6fd4b554f42a0,#uie_trial_medal_bronze,#hash_1f8e699fb25ee0a9,#,#,#,#

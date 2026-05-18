@@ -25,7 +25,7 @@
 280,1,10,#killstreak,#kills,&#hash_2e7f8f5c23dfee2d,1000,0,u3?0,#,#,21,&#,u3?11,0,FALSE,groundassault,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 281,2,25,#killstreak,#kills,&#hash_2e7f8f5c23dfee2d,2000,0,u3?0,#,#,21,&#,u3?11,0,FALSE,groundassault,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 282,3,50,#killstreak,#kills,&#hash_2e7f8f5c23dfee2d,5000,0,u3?0,#,#mastery_ground_assault,21,&#hash_35315aa19a380e97,u3?11,0,FALSE,groundassault,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
-283,0,1,#global,#hash_709699a31c8f89f7,&#hash_3b5e98ba260374d2,1000,0,u3?0,#,#mastery_ground_assault,21,&#hash_1f128bd324460602,u3?0,0,FALSE,groundassault,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
+283,0,1,#global,#multikill_2_rcxd,&#hash_3b5e98ba260374d2,1000,0,u3?0,#,#mastery_ground_assault,21,&#hash_1f128bd324460602,u3?0,0,FALSE,groundassault,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
 284,0,1,#global,#hash_636e38d21d529ce3,&#hash_57337805d8eebe3e,1000,0,u3?0,#,#mastery_ground_assault,21,&#hash_3f35b4b67ee5578e,u3?0,0,FALSE,groundassault,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
 285,0,25,#global,#kill_with_controlled_ai_tank,&#hash_2c1c534cb96477b3,1000,0,u3?0,#,#mastery_ground_assault,21,&#hash_46a01bb63a536fa5,u3?0,0,FALSE,groundassault,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
 286,0,25,#global,#ground_assault_defender,&#hash_7774fe5e791aa0ef,2500,0,u3?0,#,#mastery_ground_assault,21,&#hash_5ad7fc7ed848bfa1,u3?0,0,FALSE,groundassault,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
@@ -37,11 +37,11 @@
 292,2,300,#group,#kills,&#challenge/support_scorestreak_kills,2000,0,u3?0,#,#,21,&#,u3?17,0,FALSE,support,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 293,3,500,#group,#kills,&#challenge/support_scorestreak_kills,3000,0,u3?0,#,#,21,&#,u3?17,0,FALSE,support,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 294,4,700,#group,#kills,&#challenge/support_scorestreak_kills,5000,0,u3?0,#,#mastery_support,21,&#hash_44a045a92816d181,u3?17,0,FALSE,support,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
-295,0,500,#global,#assist_score_killstreak,&#hash_4fe01a3b6dfcc22a,500,0,u3?0,#,#,21,&#,u3?17,0,FALSE,support,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-296,1,1000,#global,#assist_score_killstreak,&#hash_4fe01a3b6dfcc22a,1000,0,u3?0,#,#,21,&#,u3?17,0,FALSE,support,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-297,2,5000,#global,#assist_score_killstreak,&#hash_4fe01a3b6dfcc22a,2000,0,u3?0,#,#,21,&#,u3?17,0,FALSE,support,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-298,3,7500,#global,#assist_score_killstreak,&#hash_4fe01a3b6dfcc22a,3000,0,u3?0,#,#,21,&#,u3?17,0,FALSE,support,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-299,4,10000,#global,#assist_score_killstreak,&#hash_4fe01a3b6dfcc22a,5000,0,u3?0,#,#mastery_support,21,&#hash_7a6295811b77e81a,u3?17,0,FALSE,support,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
+295,0,500,#global,#assist_score_killstreak,&#challenge/support_scorestreak_assists,500,0,u3?0,#,#,21,&#,u3?17,0,FALSE,support,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
+296,1,1000,#global,#assist_score_killstreak,&#challenge/support_scorestreak_assists,1000,0,u3?0,#,#,21,&#,u3?17,0,FALSE,support,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
+297,2,5000,#global,#assist_score_killstreak,&#challenge/support_scorestreak_assists,2000,0,u3?0,#,#,21,&#,u3?17,0,FALSE,support,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
+298,3,7500,#global,#assist_score_killstreak,&#challenge/support_scorestreak_assists,3000,0,u3?0,#,#,21,&#,u3?17,0,FALSE,support,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
+299,4,10000,#global,#assist_score_killstreak,&#challenge/support_scorestreak_assists,5000,0,u3?0,#,#mastery_support,21,&#hash_7a6295811b77e81a,u3?17,0,FALSE,support,FALSE,FALSE,FALSE,FALSE,TRUE,#,#,0
 300,0,10,#group,#used,&#hash_26159c077e20bae,500,0,u3?0,#,#,21,&#,u3?17,0,FALSE,support,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 301,1,25,#group,#used,&#hash_26159c077e20bae,1000,0,u3?0,#,#,21,&#,u3?17,0,FALSE,support,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 302,2,75,#group,#used,&#hash_26159c077e20bae,2000,0,u3?0,#,#,21,&#,u3?17,0,FALSE,support,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0

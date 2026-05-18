@@ -57,9 +57,9 @@ function private function_a5ce91f1( val )
 // Size: 0x52, Type: bool
 function using_new_transitions()
 {
-    if ( isdefined( level.var_d1455682 ) )
+    if ( isdefined( level.gametype_scriptbundle ) )
     {
-        if ( !isdefined( level.var_d1455682.finaldisplaytransition ) || level.var_d1455682.finaldisplaytransition.size == 0 )
+        if ( !isdefined( level.gametype_scriptbundle.finaldisplaytransition ) || level.gametype_scriptbundle.finaldisplaytransition.size == 0 )
         {
             return false;
         }
@@ -239,7 +239,7 @@ function function_9b2bd02c()
 {
     player = self;
     player function_3f65d5d3();
-    player function_61d01718( level.var_d1455682.eliminateddisplaytransition, #"elimination_transition" );
+    player function_61d01718( level.gametype_scriptbundle.eliminateddisplaytransition, #"elimination_transition" );
 }
 
 // Namespace display_transition/display_transition
@@ -262,7 +262,7 @@ function function_b3964dc9()
     
     player = self;
     player function_3f65d5d3();
-    player function_61d01718( level.var_d1455682.eliminateddisplaytransition, #"downbutnotout_transition" );
+    player function_61d01718( level.gametype_scriptbundle.eliminateddisplaytransition, #"downbutnotout_transition" );
 }
 
 // Namespace display_transition/display_transition
@@ -277,7 +277,7 @@ function function_f4c03c3b()
     }
     
     self.var_58f00ca2 = 1;
-    self thread function_61d01718( level.var_d1455682.eliminateddisplaytransition, #"team_elimination_transition" );
+    self thread function_61d01718( level.gametype_scriptbundle.eliminateddisplaytransition, #"team_elimination_transition" );
 }
 
 // Namespace display_transition/display_transition
@@ -294,14 +294,14 @@ function function_1caf5c87( team )
         if ( player != self )
         {
             player.var_58f00ca2 = 1;
-            player thread function_61d01718( level.var_d1455682.eliminateddisplaytransition, #"team_elimination_transition" );
+            player thread function_61d01718( level.gametype_scriptbundle.eliminateddisplaytransition, #"team_elimination_transition" );
         }
     }
     
     if ( self.team == team )
     {
         self.var_58f00ca2 = 1;
-        self function_61d01718( level.var_d1455682.eliminateddisplaytransition, #"team_elimination_transition" );
+        self function_61d01718( level.gametype_scriptbundle.eliminateddisplaytransition, #"team_elimination_transition" );
     }
 }
 
@@ -800,7 +800,7 @@ function function_7e8f8c47( transitions, outcome, lui_event )
 // Size: 0x3c
 function function_15e28b1a( outcome )
 {
-    function_7e8f8c47( level.var_d1455682.finaldisplaytransition, outcome, #"match_transition" );
+    function_7e8f8c47( level.gametype_scriptbundle.finaldisplaytransition, outcome, #"match_transition" );
 }
 
 // Namespace display_transition/display_transition
@@ -809,7 +809,7 @@ function function_15e28b1a( outcome )
 // Size: 0xbc
 function function_cf3d556b( outcome )
 {
-    if ( isdefined( level.var_d1455682.var_e779605d ) && level.var_d1455682.var_e779605d )
+    if ( isdefined( level.gametype_scriptbundle.var_e779605d ) && level.gametype_scriptbundle.var_e779605d )
     {
         if ( util::waslastround() || util::isoneround() )
         {
@@ -817,7 +817,7 @@ function function_cf3d556b( outcome )
         }
     }
     
-    transitions = level.var_d1455682.rounddisplaytransition;
+    transitions = level.gametype_scriptbundle.rounddisplaytransition;
     
     if ( !isdefined( transitions ) )
     {

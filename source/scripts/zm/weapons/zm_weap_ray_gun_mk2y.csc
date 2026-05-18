@@ -20,8 +20,8 @@ function autoexec __init__system__()
 // Size: 0xb4
 function __init__()
 {
-    level._effect[ #"hash_7772ff2676425bfb" ] = #"hash_1993197e5796e1a3";
-    level._effect[ #"hash_776cf326763ddbe9" ] = #"hash_198c2d7e5790e4f1";
+    level._effect[ #"ray_gun_mk2y_charged_1p" ] = #"hash_1993197e5796e1a3";
+    level._effect[ #"ray_gun_mk2y_charged_3p" ] = #"hash_198c2d7e5790e4f1";
     clientfield::register( "allplayers", "" + #"ray_gun_mk2y_charged", 20000, 1, "int", &function_e1fdbb4b, 0, 0 );
 }
 
@@ -41,11 +41,11 @@ function function_e1fdbb4b( localclientnum, oldval, newval, bnewent, binitialsna
     {
         if ( self zm_utility::is_first_person( localclientnum ) )
         {
-            self.var_92a2b5f2 = playviewmodelfx( localclientnum, level._effect[ #"hash_7772ff2676425bfb" ], "tag_flash" );
+            self.var_92a2b5f2 = playviewmodelfx( localclientnum, level._effect[ #"ray_gun_mk2y_charged_1p" ], "tag_flash" );
             return;
         }
         
-        self.var_92a2b5f2 = util::playfxontag( localclientnum, level._effect[ #"hash_776cf326763ddbe9" ], self, "tag_flash" );
+        self.var_92a2b5f2 = util::playfxontag( localclientnum, level._effect[ #"ray_gun_mk2y_charged_3p" ], self, "tag_flash" );
     }
 }
 

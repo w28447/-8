@@ -35,7 +35,7 @@ function init_electric_cherry()
 {
     if ( isdefined( level.enable_magic ) && level.enable_magic )
     {
-        level._effect[ #"electric_cherry_light" ] = #"hash_1442db17b83460ad";
+        level._effect[ #"electric_cherry_light" ] = #"_t6/misc/fx_zombie_cola_revive_on";
     }
     
     clientfield::register( "allplayers", "electric_cherry_reload_fx", 1, 2, "int", &electric_cherry_reload_attack_fx, 0, 0 );

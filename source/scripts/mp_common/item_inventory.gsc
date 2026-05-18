@@ -1472,7 +1472,7 @@ function consume_item( item )
         
         currentweapon = self getcurrentweapon();
         
-        if ( isdefined( currentweapon ) && isdefined( currentweapon.var_29d24e37 ) && currentweapon.var_29d24e37 )
+        if ( isdefined( currentweapon ) && isdefined( currentweapon.isvehicleturret ) && currentweapon.isvehicleturret )
         {
             self playsoundtoplayer( #"uin_unavailable_charging", self );
             return 0;
@@ -3080,7 +3080,7 @@ function function_bad4a3a5()
     
     foreach ( weapon in weapons )
     {
-        if ( isdefined( weapon.var_29d24e37 ) && weapon.var_29d24e37 )
+        if ( isdefined( weapon.isvehicleturret ) && weapon.isvehicleturret )
         {
             continue;
         }
@@ -3455,7 +3455,7 @@ function give_inventory_item( item, itemcount = 1, itemamount = 0, slotid = unde
     }
     
     maxstacksize = item_inventory_util::function_cfa794ca( self.inventory.var_7658cbec, item.itementry );
-    var_1393d318 = maxstacksize > 1;
+    isstackable = maxstacksize > 1;
     
     if ( item.itementry.itemtype == #"resource" && item_world_util::function_41f06d9d( item.itementry ) )
     {
@@ -3464,7 +3464,7 @@ function give_inventory_item( item, itemcount = 1, itemamount = 0, slotid = unde
         maxstacksize = var_b41045b2 + ( isdefined( var_92d652f2.count ) ? var_92d652f2.count : 0 );
     }
     
-    if ( isdefined( itementry.name ) && var_1393d318 )
+    if ( isdefined( itementry.name ) && isstackable )
     {
         for ( i = 0; i < self.inventory.items.size ; i++ )
         {

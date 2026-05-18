@@ -315,8 +315,8 @@ function function_d6d0a32e( inflictor, attacker, damage, idflags, meansofdeath, 
 // Size: 0x56, Type: bool
 function private function_4f9ebad6( entity )
 {
-    var_14e113b = entity.var_40543c03;
-    return var_14e113b === "concussion" || var_14e113b === "electrical" || var_14e113b === "flash";
+    damageeffecttype = entity.var_40543c03;
+    return damageeffecttype === "concussion" || damageeffecttype === "electrical" || damageeffecttype === "flash";
 }
 
 // Namespace archetypempdog/dog
@@ -585,12 +585,12 @@ function private function_a78474f2()
 // Size: 0x64
 function private get_favorite_enemy()
 {
-    var_edc20efd = self ai_state::function_4af1ff64();
+    attack_radius = self ai_state::function_4af1ff64();
     attack_origin = self function_a78474f2();
     
     if ( isdefined( attack_origin ) )
     {
-        return ai_target::function_84235351( attack_origin, var_edc20efd );
+        return ai_target::function_84235351( attack_origin, attack_radius );
     }
 }
 

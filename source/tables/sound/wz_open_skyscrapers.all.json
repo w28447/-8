@@ -2848,13 +2848,13 @@
         {
             "value": 341,
             "next": 65535,
-            "name": "#hash_13eb1a82d0249566",
+            "name": "#amb_clock_tick",
             "sequence": 0,
             "cullDistance": 500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_13eb1a82d0249566",
+                    "name": "#amb_clock_tick",
                     "assetId": "#zmb/level/zm_office/ambience/clock/clock_tick_lp.ll100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -79226,13 +79226,13 @@
         {
             "value": 118,
             "next": 671,
-            "name": "#hash_d6643b88d0186ae",
+            "name": "#veh_dmg_emp",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_d6643b88d0186ae",
+                    "name": "#veh_dmg_emp",
                     "secondaryname": "#hash_e092ec1596407fe",
                     "assetId": "#veh/damage_sounds/health/veh_health_loss_00.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
@@ -79274,7 +79274,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_d6643b88d0186ae",
+                    "name": "#veh_dmg_emp",
                     "secondaryname": "#hash_e092ec1596407fe",
                     "assetId": "#veh/damage_sounds/health/veh_health_loss_00_mono.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",

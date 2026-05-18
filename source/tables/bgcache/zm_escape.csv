@@ -3881,7 +3881,7 @@ string,#hash_2628f8facd7d3398
 string,#zmweapon/acidgat
 string,#mpui/pistolscope
 string,#hash_26adc6b84f143b29
-string,#hash_2731cc5c1208e2e4
+string,#zombie/fasttravel_generic_use
 string,#hash_273ce801ad0cb483
 string,#mpui/fmj2_desc
 string,#hash_28f8d698fe4d79d2
@@ -4219,7 +4219,7 @@ string,#hash_758d93baadbc199d
 string,#zmweapon/shield_spectral
 string,#hash_75c36a6b651e7775
 string,#mpui/camo_ash
-string,#hash_7667bd0f83307360
+string,#zombie/generic_fasttravel_cooldown
 string,#hash_767ad0b1be9a3793
 string,#hash_768453c6e1ea01fb
 string,#hash_768c5aeecc2d7cc4
@@ -5243,7 +5243,7 @@ soundalias,#hash_136e08ecd1baf4cc
 soundalias,#hash_13737c3f09cdfd1f
 soundalias,#hash_1376152966046099
 soundalias,#hash_13944ade049b7b82
-soundalias,#hash_13ab54674938aa10
+soundalias,#zmb_trap_fan_end
 soundalias,#hash_13aeee936e183bc7
 soundalias,#hash_13b6a7bc901d6b10
 soundalias,#hash_13b72d3d634d3335
@@ -7752,7 +7752,7 @@ soundalias,#hash_4d947eefe5177ab5
 soundalias,#hash_4d972c4ea58ca9eb
 soundalias,#hash_4d9b6386cc71e11a
 soundalias,#hash_4da03be768b35be9
-soundalias,#hash_4da8231bc8767676
+soundalias,#zmb_trap_acid_end
 soundalias,#hash_4dba6b9ac80d1ec1
 soundalias,#hash_4dbcfa5dbef3f392
 soundalias,#hash_4dc18ef56be2947c
@@ -8985,7 +8985,7 @@ soundalias,#hash_68f13be933fb7dac
 soundalias,#hash_68f13ce933fb7f5f
 soundalias,#hash_68f13de933fb8112
 soundalias,#hash_68f13ee933fb82c5
-soundalias,#hash_68f3e5dbc3422363
+soundalias,#zmb_trap_acid_start
 soundalias,#hash_68ffd38a5e862cbe
 soundalias,#hash_69115e529b63d4e7
 soundalias,#hash_691375e42dca9749
@@ -9851,7 +9851,7 @@ soundalias,#hash_7c5e9915dc612c8e
 soundalias,#hash_7c6a810226ca63fc
 soundalias,#hash_7c72fc40d3c14cab
 soundalias,#hash_7c7a276d99080b4a
-soundalias,#hash_7c7d8771a48e8871
+soundalias,#zmb_hellbox_leave_lock
 soundalias,#hash_7c8577b82afb225d
 soundalias,#hash_7c8779985c404f70
 soundalias,#hash_7ca8465456364713
@@ -10295,7 +10295,7 @@ client_fx,#hash_51cca4aa04103b43
 client_fx,#hash_51f1cb18258f3201
 client_fx,#hash_521b429a109daa06
 client_fx,#hash_521de69029125f63
-client_fx,#hash_526060b70ce93d7e
+client_fx,#zm_ai/fx8_zombie_eye_glow_red_trail
 client_fx,#hash_52c22f3d0a38c679
 client_fx,#hash_52e3de5257e268c2
 client_fx,#hash_52f9d9bb5648c0f3
@@ -10454,7 +10454,7 @@ client_fx,#hash_7909599a5d17a4b4
 client_fx,#explosions/fx8_exp_grenade_metal
 client_fx,#hash_7965ec9e0938553f
 client_fx,#maps/zm_escape/fx8_pwr_up_blood
-client_fx,#hash_7a37324c1988abb5
+client_fx,#zombie/fx_val_chest_burst
 client_fx,#hash_7a5a60f6b3962bb8
 client_fx,#hash_7a93943684d3b2b0
 client_fx,#hash_7a9e103684dcd9e9

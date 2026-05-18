@@ -17,9 +17,9 @@ function init()
     clientfield::register( "toplayer", "player_freeze_trap_post_fx", 24000, 1, "int", &player_freeze_trap_post_fx, 0, 0 );
     level._effect[ #"freeze_spray" ] = #"hash_424786ecbc7f5672";
     level._effect[ #"freeze_spray_death" ] = #"hash_48d74d13d0c569c";
-    level._effect[ #"hash_4dbed2be32ca74bc" ] = #"hash_29ac72c5aa5398bc";
-    level._effect[ #"hash_4b8af2aba0424cf3" ] = #"hash_709cca7d0048aa72";
-    level._effect[ #"hash_64e2b0ae28329360" ] = #"hash_69af1783a31b44f7";
+    level._effect[ #"freeze_zombie_impact" ] = #"hash_29ac72c5aa5398bc";
+    level._effect[ #"player_freeze_screen" ] = #"hash_709cca7d0048aa72";
+    level._effect[ #"player_freeze_smoke" ] = #"hash_69af1783a31b44f7";
     forcestreamxmodel( "p8_zm_ora_soapstone_01_cold" );
 }
 
@@ -36,13 +36,13 @@ function freeze_trap_fx( localclientnum, oldval, newval, bnewent, binitialsnap, 
             self.var_91180673 delete();
         }
         
-        playsound( localclientnum, #"hash_68f3e5dbc3422363", self.origin );
+        playsound( localclientnum, #"zmb_trap_acid_start", self.origin );
         audio::playloopat( "zmb_trap_acid_loop", self.origin );
         self.var_91180673 = util::playfxontag( localclientnum, level._effect[ #"freeze_spray" ], self, "tag_origin" );
         return;
     }
     
-    playsound( localclientnum, #"hash_4da8231bc8767676", self.origin );
+    playsound( localclientnum, #"zmb_trap_acid_end", self.origin );
     audio::stoploopat( "zmb_trap_acid_loop", self.origin );
     
     if ( isdefined( self.var_91180673 ) )
@@ -62,8 +62,8 @@ function freeze_trap_death_fx( localclientnum, oldval, newval, bnewent, binitial
 {
     if ( newval == 1 )
     {
-        self.n_freeze_trap_death_fx = util::playfxontag( localclientnum, level._effect[ #"hash_4dbed2be32ca74bc" ], self, "tag_stowed_back" );
-        playsound( localclientnum, #"hash_4d4c9f8ad239b61f", self.origin );
+        self.n_freeze_trap_death_fx = util::playfxontag( localclientnum, level._effect[ #"freeze_zombie_impact" ], self, "tag_stowed_back" );
+        playsound( localclientnum, #"zmb_exp_jib_acid_zombie", self.origin );
         return;
     }
     

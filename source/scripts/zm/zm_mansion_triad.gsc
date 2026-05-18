@@ -243,7 +243,7 @@ function init_step_1( var_a276c861 )
 // Size: 0xac
 function cleanup_step_1( var_5ea5c94d, ended_early )
 {
-    level notify( #"hash_12cb63ce83e1c017" );
+    level notify( #"triad_step_1_done" );
     level flag::set( #"gazed_main_hall" );
     level flag::set( #"kp_upg_main" );
     level flag::set( #"kp_upg_dead" );
@@ -322,7 +322,7 @@ function function_97dd9a16()
 // Size: 0x2dc
 function cleanup_step_2( var_5ea5c94d, ended_early )
 {
-    level notify( #"hash_75774dc13775a414" );
+    level notify( #"triad_step_2_done" );
     level flag::set( #"knight_main_hall_stationed" );
     level flag::set( #"knight_cemetery_stationed" );
     level flag::set( #"knight_greenhouse_stationed" );
@@ -422,7 +422,7 @@ function init_step_3( var_a276c861 )
 // Size: 0x5f4
 function cleanup_step_3( var_5ea5c94d, ended_early )
 {
-    level notify( #"hash_3a7ba7e53fa848e9" );
+    level notify( #"triad_step_3_done" );
     level flag::set( #"forest_done" );
     
     if ( isdefined( level.kp1 ) )
@@ -552,7 +552,7 @@ function init_step_4( var_a276c861 )
 // Size: 0x2be
 function cleanup_step_4( var_5ea5c94d, ended_early )
 {
-    level notify( #"hash_106bb5214b1fb1e6" );
+    level notify( #"triad_step_4_done" );
     level flag::set( #"forest_open" );
     level flag::set( #"forest_done" );
     level flag::set( #"hash_6402d013069eb3a" );
@@ -661,7 +661,7 @@ function kp_fireplace()
         s_loc thread function_2aa04f9f();
     }
     
-    level waittill( #"hash_12cb63ce83e1c017" );
+    level waittill( #"triad_step_1_done" );
     
     foreach ( s_loc in a_s_locs )
     {
@@ -680,7 +680,7 @@ function kp_fireplace()
 // Size: 0x7cc
 function function_2aa04f9f()
 {
-    level endon( #"hash_12cb63ce83e1c017" );
+    level endon( #"triad_step_1_done" );
     self endon( self.script_noteworthy + "_done" );
     self.t_dmg = spawn( "trigger_damage", self.origin, 0, 46, 64 );
     
@@ -842,7 +842,7 @@ function function_2aa04f9f()
 // Size: 0x21c
 function function_82dc0664( e_player )
 {
-    level endon( #"hash_12cb63ce83e1c017" );
+    level endon( #"triad_step_1_done" );
     self endon( self.script_noteworthy + "_done" );
     
     switch ( self.script_noteworthy )
@@ -1013,7 +1013,7 @@ function function_4c8574b3()
 // Size: 0x368
 function function_265858d6()
 {
-    level endon( #"hash_75774dc13775a414" );
+    level endon( #"triad_step_2_done" );
     
     while ( true )
     {
@@ -1073,7 +1073,7 @@ function function_30fe35b( str_tag, str_model, n_wait )
 // Size: 0x4b4
 function function_4490aa7d()
 {
-    level endon( #"hash_75774dc13775a414" );
+    level endon( #"triad_step_2_done" );
     s_spawn = struct::get( "knight_spawnpt_" + self.script_string );
     
     switch ( self.script_string )
@@ -1126,7 +1126,7 @@ function function_4490aa7d()
 // Size: 0x4d4
 function function_d409a74f( mdl_symbol )
 {
-    level endon( #"hash_75774dc13775a414", #"end_game" );
+    level endon( #"triad_step_2_done", #"end_game" );
     self endon( #"death" );
     self.var_7988eee5 = undefined;
     n_timer = 0;
@@ -1218,7 +1218,7 @@ function function_7e316825()
 // Size: 0x304
 function function_226e15cc()
 {
-    level endon( #"hash_3a7ba7e53fa848e9" );
+    level endon( #"triad_step_3_done" );
     level flag::wait_till_all( array( #"knight_main_hall_stationed", #"knight_cemetery_stationed", #"knight_greenhouse_stationed" ) );
     v_offset = ( 0, 0, -45 );
     level.var_abe1b67c moveto( level.var_abe1b67c.origin + v_offset, 0.25 );
@@ -1656,7 +1656,7 @@ function function_92227ee8( a_ents )
 // Size: 0x33c
 function function_444d9cf8()
 {
-    level endon( #"hash_3a7ba7e53fa848e9" );
+    level endon( #"triad_step_3_done" );
     level flag::wait_till_all( array( #"kp1_connect", #"kp2_connect", #"kp3_connect" ) );
     wait 0.5;
     s_kp1 = struct::get( "kp1_line_source" );
@@ -1693,7 +1693,7 @@ function function_444d9cf8()
 // Size: 0x204
 function private function_df2c4d2d()
 {
-    level endoncallback( &function_46b38ca2, #"hash_3a7ba7e53fa848e9", #"end_game" );
+    level endoncallback( &function_46b38ca2, #"triad_step_3_done", #"end_game" );
     var_2db98020 = 0;
     s_knight_1 = struct::get( #"kp1_end" );
     level.var_411ea43b = util::spawn_model( "tag_origin", s_knight_1.origin, s_knight_1.angles );
@@ -1808,7 +1808,7 @@ function teleporter_digger_hacked_before_breached_imp( params )
 // Size: 0x234
 function forest_stone()
 {
-    level endon( #"hash_106bb5214b1fb1e6" );
+    level endon( #"triad_step_4_done" );
     level flag::wait_till( #"forest_done" );
     
     foreach ( player in util::get_active_players() )
@@ -1835,7 +1835,7 @@ function forest_stone()
 // Size: 0x4f4
 function function_31e641f5()
 {
-    level endon( #"hash_106bb5214b1fb1e6" );
+    level endon( #"triad_step_4_done" );
     
     while ( true )
     {
@@ -1905,7 +1905,7 @@ function function_31e641f5()
 // Size: 0x1f4
 function function_6f244e()
 {
-    level endon( #"hash_106bb5214b1fb1e6" );
+    level endon( #"triad_step_4_done" );
     self endon( #"death" );
     level flag::wait_till( #"forest_assault" );
     self thread mansion_pap::function_c9c7a593();
@@ -1947,7 +1947,7 @@ function function_6f244e()
 // Size: 0x160
 function function_3c07c22e()
 {
-    level endon( #"end_game", #"hash_681be3e1ac458d79", #"hash_106bb5214b1fb1e6" );
+    level endon( #"end_game", #"hash_681be3e1ac458d79", #"triad_step_4_done" );
     self endon( #"death" );
     
     while ( true )
@@ -1971,7 +1971,7 @@ function function_3c07c22e()
 // Size: 0xf0
 function function_46e4dd8b( a_s_locs )
 {
-    level endon( #"hash_106bb5214b1fb1e6" );
+    level endon( #"triad_step_4_done" );
     self endon( #"death" );
     a_s_loc = array::randomize( a_s_locs );
     
@@ -1990,7 +1990,7 @@ function function_46e4dd8b( a_s_locs )
 // Size: 0x19a
 function function_3f504167()
 {
-    level endon( #"hash_106bb5214b1fb1e6" );
+    level endon( #"triad_step_4_done" );
     self endon( #"death" );
     a_e_zombies = array::randomize( getaiarchetypearray( #"zombie" ) );
     
@@ -2070,7 +2070,7 @@ function function_5ffc956( v_zombie_origin )
 // Size: 0x1d6
 function function_b646e75d()
 {
-    level endon( #"hash_106bb5214b1fb1e6" );
+    level endon( #"triad_step_4_done" );
     level flag::wait_till( #"hash_6402d013069eb3a" );
     level thread zm_utility::function_9ad5aeb1( 0, 1, 0, 1, 0 );
     wait 2;
@@ -2093,7 +2093,7 @@ function function_b646e75d()
 // Size: 0xb8
 function function_c9ebaa3()
 {
-    level endon( #"hash_106bb5214b1fb1e6" );
+    level endon( #"triad_step_4_done" );
     
     while ( true )
     {
@@ -2190,7 +2190,7 @@ function function_81b48f5f( a_s_valid_respawn_points )
 // Size: 0x1b4
 function forest_assault()
 {
-    level endon( #"hash_106bb5214b1fb1e6" );
+    level endon( #"triad_step_4_done" );
     level flag::wait_till( #"forest_assault" );
     level flag::clear( #"spawn_zombies" );
     level flag::clear( #"zombie_drop_powerups" );

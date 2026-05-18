@@ -401,7 +401,7 @@ model,#p7_gib_chunk_flesh_02
 model,#p8_fxp_flame_geyser_hole_mound
 model,#hash_3c88606c2dbc0d0e
 model,#c_t8_zmb_dlc2_zombie_female_head3_hood
-model,#hash_3cb03679991cf4ad
+model,#p8_zm_red_gaia_bush_01_script
 model,#hash_3cc07416daf83a7d
 model,#c_t8_zmb_dlc2_zombie_male_body1_skin2
 model,#c_t8_zmb_dlc2_zombie_female_body1_g_llegoff_skin1
@@ -10206,7 +10206,7 @@ client_fx,#hash_792c9bdd6ccaf244
 client_fx,#explosions/fx8_exp_grenade_metal
 client_fx,#hash_795ee7d89d6f10d2
 client_fx,#hash_798fa0110188b64c
-client_fx,#hash_7a37324c1988abb5
+client_fx,#zombie/fx_val_chest_burst
 client_fx,#hash_7a9a94bbcf902878
 client_fx,#hash_7aa34fabb38f1d2e
 client_fx,#hash_7aa749f5bbcbbed8

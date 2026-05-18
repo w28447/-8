@@ -10,7 +10,7 @@
 #location_enter,#ship_cargo,#vox_ship_cargo_enter,0,0,TRUE,FALSE,FALSE,FALSE
 #location_enter,#facility_main,#vox_facility_main_enter,0,0,TRUE,FALSE,FALSE,FALSE
 #location_enter,#facility_specimen,#vox_facility_specimen_enter,0,0,TRUE,FALSE,FALSE,FALSE
-#location_enter,#hash_2781f0de96fa6e4e,#hash_2385ac4fe9895c95,0,0,TRUE,FALSE,FALSE,FALSE
+#location_enter,#facility_decont,#vox_facility_decont_enter,0,0,TRUE,FALSE,FALSE,FALSE
 #location_enter,#facility_infusion,#vox_facility_infusion_enter,0,0,TRUE,FALSE,FALSE,FALSE
 #location_enter,#facility_geological,#vox_facility_geological_enter,0,0,TRUE,FALSE,FALSE,FALSE
 #location_enter,#ice_flow,#vox_golden_pap_react,0,0,TRUE,FALSE,FALSE,FALSE

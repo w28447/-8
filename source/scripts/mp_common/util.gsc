@@ -556,12 +556,12 @@ function private function_78e3e07b( team, index, objective_strings )
 // Size: 0x23a
 function function_e17a230f( team )
 {
-    if ( !isdefined( level.var_d1455682 ) )
+    if ( !isdefined( level.gametype_scriptbundle ) )
     {
         return;
     }
     
-    objective_strings = level.var_d1455682.objective_strings;
+    objective_strings = level.gametype_scriptbundle.objective_strings;
     
     foreach ( index, var_53c9b682 in objective_strings )
     {
@@ -609,7 +609,7 @@ function function_e17a230f( team )
 // Size: 0x90
 function function_9540d9b6()
 {
-    if ( !isdefined( level.var_d1455682 ) )
+    if ( !isdefined( level.gametype_scriptbundle ) )
     {
         return;
     }

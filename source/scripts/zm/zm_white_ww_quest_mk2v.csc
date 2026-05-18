@@ -10,10 +10,10 @@
 // Size: 0x144
 function preload()
 {
-    level._effect[ #"hash_679508ac36adc26a" ] = #"hash_1b41a5e8ae3f4112";
-    level._effect[ #"hash_5fcf09935567065c" ] = #"hash_72089b30d2222144";
+    level._effect[ #"mk2v_sc_wisp" ] = #"hash_1b41a5e8ae3f4112";
+    level._effect[ #"mk2v_sc_wisp_end" ] = #"hash_72089b30d2222144";
     level._effect[ #"hash_4d2cabf5bf2ad015" ] = #"hash_745cd788c761f4ca";
-    zm_white_defend_soul_capture::register( #"sc_mk2v", 20000, "sc_mk2v", level._effect[ #"hash_679508ac36adc26a" ], level._effect[ #"hash_5fcf09935567065c" ] );
+    zm_white_defend_soul_capture::register( #"sc_mk2v", 20000, "sc_mk2v", level._effect[ #"mk2v_sc_wisp" ], level._effect[ #"mk2v_sc_wisp_end" ] );
     clientfield::register( "scriptmover", "" + #"hash_7b37fadc13d402a3", 20000, 1, "int", &function_7cd6e78c, 0, 0 );
 }
 

@@ -1367,7 +1367,7 @@ localizeentry,#hash_14088e8c2814ed3d
 localizeentry,#hash_140a9e3c0bbb5d77
 localizeentry,#hash_1412a5cf8d20018e
 localizeentry,#weapon/ar_fastfire_t8_operator
-localizeentry,d#hash_141c79e0a2e1383e
+localizeentry,d#mp/defeat_caps
 localizeentry,#hash_141db4744dcb2583
 localizeentry,d#weapon/lmg_stealth_t8_desc
 localizeentry,#hash_142341cceeb0a116
@@ -1635,7 +1635,7 @@ localizeentry,#hash_1801e338b51c7c43
 localizeentry,#mpui/lockxp
 localizeentry,#hash_180fa7e6ca727f3d
 localizeentry,#hash_1810470bbc1c9d6b
-localizeentry,#hash_18114ebf7e352c55
+localizeentry,#mp/draw_caps
 localizeentry,#hash_18138407de4ac7e8
 localizeentry,#hash_18138507de4ac99b
 localizeentry,d#hash_18147341bcb8e764
@@ -1747,7 +1747,7 @@ localizeentry,d#hash_19c8b64d54a3a81b
 localizeentry,#zm_contract/same_location
 localizeentry,#score/position_secure
 localizeentry,#hash_19d2c40865e5a38a
-localizeentry,#hash_19d325d8d1bfd3de
+localizeentry,#mp/overtime_caps
 localizeentry,#hash_19d725a1362216d0
 localizeentry,#hash_19d7666b869b9a5d
 localizeentry,d#hash_19d832c5116a6948
@@ -3316,7 +3316,7 @@ localizeentry,#hash_31d227c9b162f13a
 localizeentry,#hash_31dd23f85cd94ed9
 localizeentry,#hash_31ddbab3202e2b55
 localizeentry,#hash_31deb4cf7a99ea3e
-localizeentry,#hash_31e1e88e88ba263f
+localizeentry,#mp/victory_caps
 localizeentry,d#hash_31e9d057a03398bf
 localizeentry,#hash_31eb9f45ee1fdeb3
 localizeentry,#hash_31ed753676e47763
@@ -3514,7 +3514,7 @@ localizeentry,#challenge/milestone_direct_hit_kills_award
 localizeentry,#mpui/clean
 localizeentry,#mpui/bb_conf
 localizeentry,d#mpui/holo_desc
-localizeentry,#hash_34fa35ba1681b281
+localizeentry,#score/control_zone_depletion
 localizeentry,#hash_350483f6fa1d913e
 localizeentry,#platform/mantlevehicle
 localizeentry,#hash_351521aa45129768
@@ -3826,7 +3826,7 @@ localizeentry,#hash_39d4e337b498ba6b
 localizeentry,#hash_39da951791b04696
 localizeentry,#hash_39da961791b04849
 localizeentry,#hash_39de79f877902d7d
-localizeentry,#hash_39dfa8f1f45b97e9
+localizeentry,#score/swarm_buddy_destroyed
 localizeentry,d#hash_39ea42c9eed180f1
 localizeentry,#zm_contract/same_location_desc
 localizeentry,#hash_39f6555a4480dbfe
@@ -4846,7 +4846,7 @@ localizeentry,#hash_4ab80c76f87352e8
 localizeentry,#hash_4abd192255393c9e
 localizeentry,d#hash_4abd93f224ee6e2e
 localizeentry,#hash_4ac04c3a652fc5f1
-localizeentry,#hash_4adcec649c2e7210
+localizeentry,#contract/wl_score_per_mode_hard
 localizeentry,#hash_4adf16c38e8cd292
 localizeentry,#hash_4ae6490e3bed152e
 localizeentry,#hash_4ae83a44ce67dbb8
@@ -5158,7 +5158,7 @@ localizeentry,d#hash_4fdf93da7459beff
 localizeentry,#hash_4fdfdb1a6c682309
 localizeentry,#hash_4fdfdc1a6c6824bc
 localizeentry,#hash_4fdfdd1a6c68266f
-localizeentry,#hash_4fe01a3b6dfcc22a
+localizeentry,#challenge/support_scorestreak_assists
 localizeentry,#hash_4fe024168ca9b50b
 localizeentry,#contract/play_dom_desc
 localizeentry,#hash_4ff2200f82822410

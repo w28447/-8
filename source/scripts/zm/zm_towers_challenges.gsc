@@ -1000,7 +1000,7 @@ function function_75b0f76a( e_player, e_trig, var_5f06d3f8 )
         self.initboss_balcony_south = "<dev string:x85>";
     #/
     
-    self waittill( #"hash_76251ea6bc659497" );
+    self waittill( #"knife_kill_challenge_completed" );
     self function_544b63c0( 13 );
     playsoundatposition( #"zmb_challenges_complete", ( 0, 0, 0 ) );
     self.var_dd287f97 = undefined;
@@ -1047,7 +1047,7 @@ function function_49bc2885( e_attacker )
     
     if ( n_progress >= 13 )
     {
-        e_attacker.challenge_struct notify( #"hash_76251ea6bc659497" );
+        e_attacker.challenge_struct notify( #"knife_kill_challenge_completed" );
     }
 }
 

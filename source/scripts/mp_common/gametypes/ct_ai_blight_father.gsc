@@ -1114,8 +1114,8 @@ function private function_8fe8a946( entity )
     forward = anglestoforward( entity.angles );
     forward2d = vectornormalize( ( forward[ 0 ], forward[ 1 ], 0 ) );
     dirtotarget = entity.favoriteenemy.origin - entity.origin;
-    var_854904a = vectornormalize( ( dirtotarget[ 0 ], dirtotarget[ 1 ], 0 ) );
-    dot = vectordot( forward2d, var_854904a );
+    dirtotarget2d = vectornormalize( ( dirtotarget[ 0 ], dirtotarget[ 1 ], 0 ) );
+    dot = vectordot( forward2d, dirtotarget2d );
     
     if ( dot < entity ai::function_9139c839().var_aa503e5a )
     {

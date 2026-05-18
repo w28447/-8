@@ -29,7 +29,7 @@ function __init__()
     aat::register( "zm_aat_plasmatic_burst", #"zmui/zm_aat_plasmatic_burst", "t7_icon_zm_aat_blast_furnace" );
     clientfield::register( "actor", "zm_aat_plasmatic_burst" + "_explosion", 1, 1, "counter", &zm_aat_plasmatic_burst_explosion, 0, 0 );
     clientfield::register( "vehicle", "zm_aat_plasmatic_burst" + "_explosion", 1, 1, "counter", &zm_aat_plasmatic_burst_explosion, 0, 0 );
-    clientfield::register( "actor", "zm_aat_plasmatic_burst" + "_burn", 1, 1, "int", &function_7abfa551, 0, 0 );
+    clientfield::register( "actor", "zm_aat_plasmatic_burst" + "_burn", 1, 1, "int", &zm_aat_plasmatic_burst_burn, 0, 0 );
     clientfield::register( "vehicle", "zm_aat_plasmatic_burst" + "_burn", 1, 1, "int", &function_a98c42a3, 0, 0 );
     level._effect[ #"zm_aat_plasmatic_burst" ] = "zm_weapons/fx8_aat_plasmatic_burst_torso";
 }
@@ -58,7 +58,7 @@ function zm_aat_plasmatic_burst_explosion( localclientnum, oldval, newval, bnewe
 // Params 7
 // Checksum 0xa7022cbf, Offset: 0x4a0
 // Size: 0xbc
-function function_7abfa551( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function zm_aat_plasmatic_burst_burn( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {

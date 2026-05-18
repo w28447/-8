@@ -3,7 +3,7 @@
     "baseWeapon": "#hash_afd66f2cf780107",
     "displayname": "#zmweapon/ww_tesla_sniper",
     "altWeapon": "#ww_tesla_sniper_t8_zm",
-    "weapon70": "#hash_251fdfa7573b8487",
+    "weapon70": "#ww_tesla_sniper",
     "soundbank": "#hash_32b164166e1cfc55",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",

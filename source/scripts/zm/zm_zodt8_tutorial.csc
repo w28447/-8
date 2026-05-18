@@ -30,7 +30,7 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "worlduimodel", "hudItems.ztut.showSpecial", 1, 1, "int", undefined, 0, 0 );
     clientfield::register( "worlduimodel", "hudItems.ztut.showElixirs", 1, 1, "int", undefined, 0, 0 );
     level._effect[ #"path_blocker_fx" ] = #"zombie/fx_ritual_barrier_defend_door_wide_zod_zmb";
-    level._effect[ #"symbol_blocker_fx" ] = #"hash_5b773dbbac0012ff";
+    level._effect[ #"symbol_blocker_fx" ] = #"zombie/fx8_power_door_amb_quest";
     zm_tut_hint_text::register( "zm_tut_hint_text" );
     callback::on_localclient_connect( &function_9fc8cc9c );
 }

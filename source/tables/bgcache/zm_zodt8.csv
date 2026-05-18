@@ -213,7 +213,7 @@ model,#p8_fxanim_zm_zod_boss_prom_pipes_02_mod
 model,#hash_151936120622a9e6
 model,#c_t8_zmb_catalyst_fire_rarm_gib
 model,#p8_zm_crafting_alchemy_dialpointer
-model,#hash_15e8ba772c745d63
+model,#p8_zm_zod_teleport_symbol_dimmed
 model,#p8_zm_zod_planets_uranus_large
 model,#c_t8_zmb_3rdclass_male_body3_s_rleg
 model,#c_t8_zmb_1stclass_female_body1_g_blegsoff_skin2
@@ -4188,7 +4188,7 @@ string,#zm_zodt8/location_aft_deck
 string,#mpui/pistolscope_desc
 string,#hash_652798c8c39df5b0
 string,#hash_655f56d5efd95945
-string,#hash_6573f011f996ab09
+string,#zombie/grab_shield_free
 string,#hash_663114aa52ffcb21
 string,#hash_665fcaf288735f26
 string,#hash_669c0c5deaada19f
@@ -6634,7 +6634,7 @@ soundalias,#hash_369903fc240b95be
 soundalias,#hash_369904fc240b9771
 soundalias,#hash_369bd308b116a174
 soundalias,#hash_36a95d08ed4998f6
-soundalias,#hash_36b6c118a7b66199
+soundalias,#amb_clock_tick_loop
 soundalias,#hash_36d5f565adbc0fe6
 soundalias,#hash_36d5f765adbc134c
 soundalias,#hash_36d5f865adbc14ff
@@ -7417,7 +7417,7 @@ soundalias,#hash_4b7902412fb5844a
 soundalias,#hash_4b799edc02f026d7
 soundalias,#hash_4b7ebc3063ada858
 soundalias,#hash_4b8f5da922f38e16
-soundalias,#hash_4b939760d149465a
+soundalias,#zmb_hit_piano
 soundalias,#hash_4ba85fc91cd1577c
 soundalias,#hash_4ba861c91cd15ae2
 soundalias,#hash_4ba862c91cd15c95
@@ -9172,7 +9172,7 @@ soundalias,#hash_7c91fa775c8a0134
 soundalias,#hash_7c91fedee3e385e0
 soundalias,#hash_7ca5eeb8da95b2af
 soundalias,#hash_7ca8465456364713
-soundalias,#hash_7cccfcd334265ea5
+soundalias,#zmb_flare_launch
 soundalias,#hash_7cd4bad20412dbb1
 soundalias,#hash_7cde0c2472d69998
 soundalias,#hash_7cde0d2472d69b4b
@@ -9577,7 +9577,7 @@ client_fx,#hash_59e8f46ce39259a3
 client_fx,#explosions/fx8_exp_grenade_mud
 client_fx,#hash_5aa886d21e284bdb
 client_fx,#hash_5ace60d21e48da86
-client_fx,#hash_5b773dbbac0012ff
+client_fx,#zombie/fx8_power_door_amb_quest
 client_fx,#hash_5b964fcf13d4bfe2
 client_fx,#hash_5bb00ca9ee658721
 client_fx,#hash_5bb2efa9ee678bb1
@@ -9621,7 +9621,7 @@ client_fx,#hash_644e534eab86631f
 client_fx,#impacts/fx_bul_impact_boss_body_fatal_exit
 client_fx,#hash_659ba75ea27d7c09
 client_fx,#hash_65c08d5ea29c6c18
-client_fx,#hash_661da9149933ecf9
+client_fx,#zm_ai/fx8_cata_water_purify_trail
 client_fx,#hash_6776cc88134ba740
 client_fx,#blood/fx_blood_gib_limb_trail
 client_fx,#hash_682ef6e33412958e
@@ -9684,7 +9684,7 @@ client_fx,#hash_79e6a5b17f37a908
 client_fx,#hash_79ffa4a673f5793b
 client_fx,#hash_79ffa5a673f57aee
 client_fx,#hash_79ffa6a673f57ca1
-client_fx,#hash_7a37324c1988abb5
+client_fx,#zombie/fx_val_chest_burst
 client_fx,#hash_7a9f46bccb2a624a
 client_fx,#hash_7aa34fabb38f1d2e
 client_fx,#zm_ai/fx8_cata_plasma_blast

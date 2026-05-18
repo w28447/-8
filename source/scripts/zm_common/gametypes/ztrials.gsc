@@ -1,6 +1,6 @@
 #using script_1496ada77dc2f2e2;
 #using script_6951ea86fdae9ae0;
-#using script_7b843bf90a032750;
+#using scripts\zm_common\trials\zm_trial_kill_enemies_for_health.gsc;
 #using scripts\core_common\callbacks_shared;
 #using scripts\core_common\flag_shared;
 #using scripts\core_common\math_shared;

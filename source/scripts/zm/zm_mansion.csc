@@ -65,7 +65,7 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "scriptmover", "" + #"hash_487e544e29aa8e45", 8000, 1, "int", &function_97aef6ef, 0, 0 );
     clientfield::register( "scriptmover", "" + #"activate_mansion_artifact", 8000, getminbitcountfornum( 3 ), "int", &function_be42dd6a, 0, 0 );
     clientfield::register( "scriptmover", "" + #"activate_mansion_artifact_card", 8000, 1, "int", &function_9e061782, 0, 0 );
-    clientfield::register( "toplayer", "" + #"hash_6a4f537da00ae3f9", 8000, 1, "int", &function_dba1f701, 0, 0 );
+    clientfield::register( "toplayer", "" + #"silver_bullet_weapon_fx", 8000, 1, "int", &silver_bullet_weapon_fx, 0, 0 );
     clientfield::register( "world", "" + #"outro_igc_visgroup", 8000, 1, "int", &outro_igc_visgroup, 0, 0 );
     clientfield::register( "scriptmover", "" + #"force_stream_model", 8000, 1, "int", &force_stream_model, 0, 0 );
     clientfield::register( "world", "" + #"hash_458d10e70473adfd", 8000, 1, "int", &function_8f06f775, 0, 0 );
@@ -83,7 +83,7 @@ function event_handler[level_init] main( eventstruct )
     level._effect[ #"wisp_impact" ] = #"zm_weapons/fx8_equip_mltv_fire_human_torso_loop_zm";
     level._effect[ #"stone_pickup" ] = #"zombie/fx8_wallbuy_reveal";
     level._effect[ #"zone_lockdown" ] = #"hash_425c28d5fded81f2";
-    level._effect[ #"special_door_blocker" ] = #"hash_5b773dbbac0012ff";
+    level._effect[ #"special_door_blocker" ] = #"zombie/fx8_power_door_amb_quest";
     level._effect[ #"hash_1a46c58a5032bb15" ] = #"zombie/fx_ritual_barrier_defend_door_wide_zod_zmb";
     level._effect[ #"ww_pickup" ] = #"hash_4b275679ef930b50";
     level._effect[ #"hash_3e78192d5d719b68" ] = #"hash_13ca5cb4f81f0469";
@@ -93,8 +93,8 @@ function event_handler[level_init] main( eventstruct )
     level._effect[ #"power_on_projectile" ] = #"hash_6009053e911b946a";
     level._effect[ #"power_on_projectile_end" ] = #"hash_6c0eb029adb5f6c6";
     level._effect[ #"hash_55cc40c5ca8b259d" ] = #"zombie/fx_ritual_sacrafice_glow_head_zod_zmb";
-    level._effect[ #"hash_679e221c06d83988" ] = #"hash_3c61e7e3069ee8a7";
-    level._effect[ #"hash_85d57de38b76cc7" ] = #"hash_10efddc69fbb6a0e";
+    level._effect[ #"ghost_zombie_fire_torso" ] = #"hash_3c61e7e3069ee8a7";
+    level._effect[ #"ghost_zombie_fire_head" ] = #"hash_10efddc69fbb6a0e";
     level._effect[ #"hash_2568ad8792cec77f" ] = #"hash_6596b5a56f027114";
     level._effect[ #"hash_23cfdebb55c60d4f" ] = #"hash_451dfa68b22333f2";
     level._effect[ #"hash_5843ac84cb4761c0" ] = #"hash_18ce7dc1f160283f";
@@ -390,7 +390,7 @@ function function_8048af7e( localclientnum, oldval, newval, bnewent, binitialsna
                 self.var_d2ec7fbb = array( self.var_d2ec7fbb );
             }
             
-            self.var_d2ec7fbb[ self.var_d2ec7fbb.size ] = util::playfxontag( localclientnum, level._effect[ #"hash_679e221c06d83988" ], self, "j_spine4" );
+            self.var_d2ec7fbb[ self.var_d2ec7fbb.size ] = util::playfxontag( localclientnum, level._effect[ #"ghost_zombie_fire_torso" ], self, "j_spine4" );
             
             if ( !isdefined( self.var_d2ec7fbb ) )
             {
@@ -401,7 +401,7 @@ function function_8048af7e( localclientnum, oldval, newval, bnewent, binitialsna
                 self.var_d2ec7fbb = array( self.var_d2ec7fbb );
             }
             
-            self.var_d2ec7fbb[ self.var_d2ec7fbb.size ] = util::playfxontag( localclientnum, level._effect[ #"hash_85d57de38b76cc7" ], self, "j_head" );
+            self.var_d2ec7fbb[ self.var_d2ec7fbb.size ] = util::playfxontag( localclientnum, level._effect[ #"ghost_zombie_fire_head" ], self, "j_head" );
             
             if ( !isdefined( self.var_d2ec7fbb ) )
             {
@@ -694,7 +694,7 @@ function function_9e061782( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x96365a36, Offset: 0x2e00
 // Size: 0xdc
-function function_dba1f701( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function silver_bullet_weapon_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     self notify( #"hash_5ca1805634bbfe66" );
     

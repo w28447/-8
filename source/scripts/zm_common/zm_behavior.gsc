@@ -1372,7 +1372,7 @@ function zombieshouldstun( behaviortreeentity )
 function zombiestunstart( behaviortreeentity )
 {
     behaviortreeentity pathmode( "dont move", 1 );
-    callback::callback( #"hash_1eda827ff5e6895b" );
+    callback::callback( #"on_ai_stunned" );
 }
 
 // Namespace zm_behavior/zm_behavior

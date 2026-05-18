@@ -87,8 +87,8 @@ function init()
 // Size: 0x1e6
 function function_3d4e24ea()
 {
-    level._effect[ #"hash_4a38c13e2040d160" ] = #"hash_11e609d597dcebf2";
-    level.fx_elevator_light = level._effect[ #"hash_4a38c13e2040d160" ];
+    level._effect[ #"fxref_elevator_light" ] = #"hash_11e609d597dcebf2";
+    level.fx_elevator_light = level._effect[ #"fxref_elevator_light" ];
     level._effect[ #"hash_336249bfea00c9ea" ] = #"hash_48ec8658075edc9d";
     level.var_dca712ff = level._effect[ #"hash_336249bfea00c9ea" ];
     level._effect[ #"hash_3718db938f7babf7" ] = #"hash_142b1b8f881ae741";
@@ -1299,7 +1299,7 @@ function elevator2_3d_audio()
         ent = spawn( "script_origin", self.origin + ( 0, 0, 30 ) );
         ent linkto( self );
         ent playsound( #"evt_elevator_office_start" );
-        ent playloopsound( #"hash_3a6fc5051c04a776" );
+        ent playloopsound( #"evt_elevator_office_run_3d" );
         self waittill( #"reached_end_node" );
         ent delete();
         playsoundatposition( #"hash_b696d1d50b35e32", self.origin + ( 0, 0, 120 ) );

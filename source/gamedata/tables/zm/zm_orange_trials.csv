@@ -4,7 +4,7 @@
 3,#side_job,&#hash_509f237dd61c4b00,&#hash_652b072deeb9df88,&#,#restrict_loadout,#hash_7416cabf26f52c5f,#,#,#,#,#,#,#
 4,#perched,&#hash_509f2a7dd61c56e5,&#hash_34a741ede3224fef,&#,#death_from_above,#,#,#,#,#,#,#,#
 5,#shocking_revelation,&#hash_509f297dd61c5532,&#hash_1b140e9372db8aa2,&#,#special_enemy,#zombie_electric,#40,#80,#,#,#,#,#
-6,#situation_handled,&#hash_509f287dd61c537f,&#hash_16245ae627ba6651,&#,#flag_check,#hash_7d9f8ec3cb9af87e,#hash_52f58e31a90916e3,#,#,#,#,#,#
+6,#situation_handled,&#hash_509f287dd61c537f,&#hash_16245ae627ba6651,&#,#flag_check,#zipline_handle_picked_up,#hash_52f58e31a90916e3,#,#,#,#,#,#
 7,#cold_hearted,&#hash_509f277dd61c51cc,&#hash_5ef081161d940834,&#,#disable_regen,#,#,#,#,#,#,#,#
 8,#hash_434c6c0cd725aec3,&#hash_509f2e7dd61c5db1,&#hash_40500dfc3dffbf0b,&#,#flag_check,#hash_2d3f1dd5445d3423,#hash_78bac55436cfd84b,#,#,#,#,#,#
 9,#wunderbar,&#hash_509f2d7dd61c5bfe,&#hash_1173887b9ed28a4e,&#,#acquire_weapon,#ww_tesla_sniper_t8,#1,#ww_tesla_sniper_upgraded_t8,#,#,#,#,#

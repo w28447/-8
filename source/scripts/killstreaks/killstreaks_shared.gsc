@@ -111,9 +111,9 @@ function function_da600615( bot )
 // Params 2
 // Checksum 0xc8866853, Offset: 0xa60
 // Size: 0x3c
-function function_b5b6ef3e( func, obj )
+function on_init_killstreaks( func, obj )
 {
-    callback::add_callback( #"hash_45f35669076bc317", func, obj );
+    callback::add_callback( #"on_init_killstreaks", func, obj );
 }
 
 // Namespace killstreaks/killstreaks_shared
@@ -2719,7 +2719,7 @@ function get_killstreak_usage( usagekey )
 function on_player_spawned()
 {
     profilestart();
-    pixbeginevent( #"hash_1d81325f0403ec55" );
+    pixbeginevent( #"_killstreaks.gsc/onplayerspawned" );
     self thread give_owned();
     self.killcamkilledbyent = undefined;
     self callback::on_weapon_change( &function_4f415d8e );
@@ -3872,7 +3872,7 @@ function init_ride_killstreak_internal( streak, always_allow )
     else if ( isdefined( streak ) && streak == "remote_missile" )
     {
         laptopwait = "timeout";
-        var_5df1cb97 = getdvarfloat( #"hash_409036e81396b597", 0.075 );
+        var_5df1cb97 = getdvarfloat( #"aku_tweak", 0.075 );
     }
     else
     {

@@ -246,7 +246,7 @@ function play_initial_alarm()
     
     for ( i = 0; i < structs.size ; i++ )
     {
-        playsoundatposition( #"hash_703767be61fa24c0", structs[ i ].origin );
+        playsoundatposition( #"evt_thief_alarm_single", structs[ i ].origin );
     }
     
     wait 0.5;

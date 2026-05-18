@@ -257,7 +257,7 @@ function register()
 // Params 1
 // Checksum 0xfdc6a4f6, Offset: 0x1240
 // Size: 0x3c
-function function_203098f4( waittime )
+function fade_back_in( waittime )
 {
     self endon( #"disconnect" );
     wait waittime;
@@ -275,7 +275,7 @@ function watchforentervehicle()
     
     if ( self remote_weapons::allowremotestart( 1 ) && isdefined( self.ai_tank_drone ) )
     {
-        thread function_203098f4( 3 );
+        thread fade_back_in( 3 );
         lui::screen_fade_out( 0.1 );
         self thread remote_weapons::useremoteweapon( self.ai_tank_drone, "killstreak_ai_tank", 1, 1, 1 );
     }

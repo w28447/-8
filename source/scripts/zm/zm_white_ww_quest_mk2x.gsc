@@ -31,7 +31,7 @@ function preload()
 {
     zm_white_defend_soul_capture::register( #"sc_mk2x", 20000, "sc_mk2x", &complete_soul_capture, &function_17f3e9e2 );
     clientfield::register( "scriptmover", "" + #"hash_56a1bc72bf8de8f1", 20000, 1, "int" );
-    clientfield::register( "actor", "" + #"hash_38c69da8fb2b74e4", 20000, 1, "int" );
+    clientfield::register( "actor", "" + #"mk2x_guard_fx", 20000, 1, "int" );
 }
 
 // Namespace zm_white_ww_quest_mk2x/zm_white_ww_quest_mk2x
@@ -276,7 +276,7 @@ function private function_ecdebc72()
             self.var_13a2274b = 1;
             self.actor_damage_func = &function_cdddec81;
             self zombie_utility::set_zombie_run_cycle( "walk" );
-            self clientfield::set( "" + #"hash_38c69da8fb2b74e4", 1 );
+            self clientfield::set( "" + #"mk2x_guard_fx", 1 );
         }
     }
 }

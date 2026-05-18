@@ -49,8 +49,8 @@ function __init__()
     level._effect[ #"hash_3c76ccfed62fd65c" ] = #"hash_6838372e395a2dad";
     level._effect[ #"hash_143a6ec5331de8ec" ] = #"hash_2dfc8a9a16973a20";
     level._effect[ #"hash_14407ac5332268fe" ] = #"hash_2e02969a169bba32";
-    level._effect[ #"hash_37498552cad06776" ] = #"hash_2bd6cabc06cbf037";
-    level._effect[ #"hash_37429952caca6ac4" ] = #"hash_2bcfbebc06c5bd25";
+    level._effect[ #"scepter_melee_1p" ] = #"hash_2bd6cabc06cbf037";
+    level._effect[ #"scepter_melee_3p" ] = #"hash_2bcfbebc06c5bd25";
     level._effect[ #"turret_zombie_shock" ] = "zm_weapons/fx8_scepter_ray_zmb_hit_shock";
     level._effect[ #"turret_zombie_explode" ] = "zm_weapons/fx8_scepter_ray_zmb_hit_exp";
     level._effect[ #"skull_turret_shock_eyes" ] = "zm_weapons/fx8_scepter_ray_zmb_hit_eye";
@@ -79,11 +79,11 @@ function function_cde26b0e( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( self zm_utility::is_first_person( localclientnum ) )
     {
-        playviewmodelfx( localclientnum, level._effect[ #"hash_37498552cad06776" ], "tag_flash" );
+        playviewmodelfx( localclientnum, level._effect[ #"scepter_melee_1p" ], "tag_flash" );
         return;
     }
     
-    util::playfxontag( localclientnum, level._effect[ #"hash_37429952caca6ac4" ], self, "tag_flash" );
+    util::playfxontag( localclientnum, level._effect[ #"scepter_melee_3p" ], self, "tag_flash" );
 }
 
 // Namespace zm_weap_scepter/zm_weap_scepter
@@ -112,7 +112,7 @@ function function_69ccb98b( localclientnum )
         return;
     }
     
-    self notify( #"hash_3cbfa1076dfa868b" );
+    self notify( #"skull_turret_beam_end" );
     
     if ( isdefined( self.var_d559073 ) )
     {
@@ -145,7 +145,7 @@ function function_da5829be( localclientnum, oldval, newval, bnewent, binitialsna
         return;
     }
     
-    self endon( #"death", #"hash_3cbfa1076dfa868b" );
+    self endon( #"death", #"skull_turret_beam_end" );
     
     if ( !isdefined( self.var_4cd8e6cb ) )
     {

@@ -1393,7 +1393,7 @@ function function_766eff6( var_31721422, a_str_zones, var_de0f1997, var_f7c3c527
             {
                 if ( isalive( player ) && player zm_zonemgr::is_player_in_zone( a_str_zones ) )
                 {
-                    player notify( #"hash_b696fc900429737" );
+                    player notify( #"player_defend_area_waiting" );
                     
                     if ( !( isdefined( player.var_fd3dfced ) && player.var_fd3dfced ) )
                     {

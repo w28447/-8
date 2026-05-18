@@ -321,9 +321,9 @@ function function_56db9cdc()
             playsoundatposition( #"hash_1172b7ba38df5cd4", ( -105, -3451, 607 ) );
             s_notify = level waittilltimeout( 120, #"hash_39b6629ce957cce9" );
             
-            if ( level flag::get( #"hash_2923f30473421396" ) )
+            if ( level flag::get( #"island_event_active" ) )
             {
-                level waittill( #"hash_355e5e0bbf3760db" );
+                level waittill( #"island_event_complete" );
             }
             
             if ( isdefined( level.e_lighthouse_light.b_blue ) && level.e_lighthouse_light.b_blue )
@@ -504,7 +504,7 @@ function function_1556161f()
 function function_50779c1f()
 {
     level endon( #"hash_7cbd2282015eb30a" );
-    level flag::wait_till( #"hash_2923f30473421396" );
+    level flag::wait_till( #"island_event_active" );
     level thread function_ec4984c3();
 }
 
@@ -530,8 +530,8 @@ function function_ec4984c3()
     level.a_func_score_events[ #"damage_points" ] = undefined;
     level.a_func_score_events[ #"death" ] = undefined;
     level.var_382a24b0 = undefined;
-    level flag::clear( #"hash_2923f30473421396" );
-    level notify( #"hash_355e5e0bbf3760db" );
+    level flag::clear( #"island_event_active" );
+    level notify( #"island_event_complete" );
     level.var_7d8bf93f flag::wait_till( "pap_waiting_for_user" );
     level flag::wait_till( #"pap_machines_off" );
     wait 3;
@@ -853,7 +853,7 @@ function function_5535522e()
     {
         foreach ( var_143bf55a in level.var_9f657597 )
         {
-            var_143bf55a scene::play( "<dev string:x9e>" );
+            var_143bf55a scene::play( "melt" );
         }
     }
 
@@ -865,7 +865,7 @@ function function_5535522e()
     {
         foreach ( var_143bf55a in level.var_9f657597 )
         {
-            var_143bf55a scene::play( "<dev string:xa5>" );
+            var_143bf55a scene::play( "freeze" );
         }
     }
 

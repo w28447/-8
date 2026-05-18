@@ -6,7 +6,7 @@
 // Size: 0x2e
 function init()
 {
-    bundle = function_302bd0b9();
-    level.var_d1455682 = bundle;
+    bundle = getgametypescriptbundle();
+    level.gametype_scriptbundle = bundle;
 }
 

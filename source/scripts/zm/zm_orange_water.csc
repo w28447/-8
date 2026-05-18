@@ -75,7 +75,7 @@ function water_player_freeze_fx( localclientnum, oldval, newval, bnewent, biniti
     }
     
     self stoprenderoverridebundle( "rob_tricannon_classified_zombie_ice" );
-    self notify( #"hash_5ab24a026f132ea4" );
+    self notify( #"snd_stop_frozen" );
 }
 
 // Namespace zm_orange_water/zm_orange_water
@@ -405,7 +405,7 @@ function function_7da5e6a2()
     self.var_cdb19015 = 0;
     self playsound( 0, #"hash_71f59624b7f67f22" );
     self.var_1ab2df8c = self playloopsound( #"evt_frozen_lp" );
-    self waittill( #"hash_5ab24a026f132ea4" );
+    self waittill( #"snd_stop_frozen" );
     self stoploopsound( self.var_1ab2df8c );
     self.var_1ab2df8c = undefined;
 }

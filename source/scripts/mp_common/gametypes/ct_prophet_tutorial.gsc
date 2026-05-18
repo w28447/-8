@@ -1092,7 +1092,7 @@ function function_5398e045()
     self thread ct_utils::function_61c3d59c( #"hash_5a15cd7ce4d7ba35", undefined );
     wait 1;
     self thread function_8bbca25b();
-    s_notify = level waittill( #"tempest2_enemy_killed", #"hash_7cc7c12d2396a9e", #"hash_6af26ccf744145f0" );
+    s_notify = level waittill( #"tempest2_enemy_killed", #"player_fired_tempest", #"hash_6af26ccf744145f0" );
     
     if ( s_notify._notify !== "tempest2_enemy_killed" )
     {
@@ -1125,7 +1125,7 @@ function function_8bbca25b()
     }
     
     wait 0.5;
-    level notify( #"hash_7cc7c12d2396a9e" );
+    level notify( #"player_fired_tempest" );
 }
 
 // Namespace ct_prophet_tutorial/ct_prophet_tutorial
@@ -1455,7 +1455,7 @@ function function_c7bb6e59()
     {
         foreach ( e_enemy in a_e_enemies )
         {
-            e_enemy notify( #"hash_658257c9e391c92c" );
+            e_enemy notify( #"bot_state_reset" );
             waitframe( 1 );
             e_enemy thread ct_utils::function_4caeacf6();
         }

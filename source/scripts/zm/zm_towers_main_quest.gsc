@@ -238,8 +238,8 @@ function function_64c8ff91()
     level flag::init( #"hash_20c92720a4602dc7" );
     level flag::init( #"hash_cad6742c753621" );
     level flag::init( #"hash_6b64093194524df3" );
-    level flag::init( #"hash_2bf040db75b1dac7" );
-    level flag::init( #"hash_277d03629ade12e8" );
+    level flag::init( #"flag_defend_combat_started" );
+    level flag::init( #"flag_defend_combat_finished" );
 }
 
 // Namespace zm_towers_main_quest/zm_towers_main_quest
@@ -4809,7 +4809,7 @@ function function_2eb4a526()
     function private debug_spawns()
     {
         level endon( #"stop_debug_spawn" );
-        level flag::wait_till( #"hash_2bf040db75b1dac7" );
+        level flag::wait_till( #"flag_defend_combat_started" );
         v_test = getent( "<dev string:xc1>", "<dev string:xd0>" );
         
         while ( true )
@@ -4859,8 +4859,8 @@ function function_2eb4a526()
         level flag::clear( #"hash_20c92720a4602dc7" );
         level flag::clear( #"hash_cad6742c753621" );
         level flag::clear( #"hash_6b64093194524df3" );
-        level flag::clear( #"hash_2bf040db75b1dac7" );
-        level flag::clear( #"hash_277d03629ade12e8" );
+        level flag::clear( #"flag_defend_combat_started" );
+        level flag::clear( #"flag_defend_combat_finished" );
         level notify( #"stop_debug_spawn" );
         setdvar( #"zm_debug_trilane", 1 );
     }
@@ -4979,7 +4979,7 @@ function private function_865bdf22()
 function private defend_timer()
 {
     level endon( #"end_game" );
-    level flag::set( #"hash_2bf040db75b1dac7" );
+    level flag::set( #"flag_defend_combat_started" );
     n_total_time = 300;
     var_45fb490a = 0;
     var_fc655932 = 0;
@@ -5016,7 +5016,7 @@ function private defend_timer()
     }
     
     function_c12ff921();
-    level flag::set( #"hash_277d03629ade12e8" );
+    level flag::set( #"flag_defend_combat_finished" );
 }
 
 // Namespace zm_towers_main_quest/zm_towers_main_quest
@@ -5038,7 +5038,7 @@ function key_glint()
 function private function_59e60f33()
 {
     level endon( #"end_game" );
-    level flag::wait_till( #"hash_2bf040db75b1dac7" );
+    level flag::wait_till( #"flag_defend_combat_started" );
     n_total_time = 300;
     mdl_key = getent( "defend_key_model", "targetname" );
     mdl_key movez( 87, n_total_time );
@@ -5054,7 +5054,7 @@ function private function_59e60f33()
     
     mdl_water stoploopsound();
     mdl_water playsound( #"hash_7fe5636b1fde99aa" );
-    level flag::wait_till( #"hash_277d03629ade12e8" );
+    level flag::wait_till( #"flag_defend_combat_finished" );
     level thread function_b06cc4d9();
 }
 
@@ -5122,7 +5122,7 @@ function private function_faee09d2()
     var_3cb006b6 = 9.23077;
     level.var_34a4aede = array( { #time:0, #archetype:#"normal", #quantity:1, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:var_617c504e, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:var_617c504e * 1.5, #archetype:#"normal", #quantity:3, #lanes:array( 1, 2, 3 ), #minplayers:4 }, { #time:var_617c504e * 2, #archetype:#"normal", #quantity:3, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:var_617c504e * 3, #archetype:#"plasma", #quantity:1, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:var_617c504e * 3, #archetype:#"plasma", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:3 }, { #time:var_617c504e * 4, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:var_617c504e * 4, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:2 }, { #time:var_617c504e * 4, #archetype:#"normal", #quantity:3, #lanes:array( 1, 2, 3 ), #minplayers:4 }, { #time:var_617c504e * 5, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:var_617c504e * 5, #archetype:#"tiger", #quantity:1, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:var_617c504e * 5, #archetype:#"tiger", #quantity:1, #lanes:array( 1, 2, 3 ), #minplayers:3 }, { #time:var_617c504e * 6, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:var_617c504e * 6, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:3 }, { #time:var_617c504e * 7, #archetype:#"plasma", #quantity:1, #lanes:array( 1, 3 ), #minplayers:1 }, { #time:var_617c504e * 7, #archetype:#"plasma", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:3 }, { #time:var_617c504e * 7.5, #archetype:#"plasma", #quantity:1, #lanes:array( 1, 2, 3 ), #minplayers:4 }, { #time:var_617c504e * 7.5, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:var_617c504e * 8, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:var_617c504e * 8, #archetype:#"tiger", #quantity:3, #lanes:array( 2 ), #minplayers:1 }, { #time:var_617c504e * 8, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:3 }, { #time:var_617c504e * 8, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:4 }, { #time:var_617c504e * 9, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:var_617c504e * 9, #archetype:#"tiger", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:var_617c504e * 9, #archetype:#"tiger", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:3 }, { #time:90 + var_76ed7b30, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:90 + var_76ed7b30 * 2, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:90 + var_76ed7b30 * 3, #archetype:#"normal", #quantity:3, #lanes:array( 1, 2, 3 ), #minplayers:3 }, { #time:90 + var_76ed7b30 * 4, #archetype:#"corrosive", #quantity:1, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:90 + var_76ed7b30 * 4, #archetype:#"normal", #quantity:3, #lanes:array( 1, 2, 3 ), #minplayers:4 }, { #time:90 + var_76ed7b30 * 4, #archetype:#"plasma", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:3 }, { #time:90 + var_76ed7b30 * 5, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:90 + var_76ed7b30 * 5, #archetype:#"glad_m", #quantity:1, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:90 + var_76ed7b30 * 5, #archetype:#"glad_m", #quantity:1, #lanes:array( 1, 2, 3 ), #minplayers:3 }, { #time:90 + var_76ed7b30 * 6, #archetype:#"normal", #quantity:3, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:90 + var_76ed7b30 * 7, #archetype:#"normal", #quantity:3, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:90 + var_76ed7b30 * 7, #archetype:#"normal", #quantity:3, #lanes:array( 1, 2, 3 ), #minplayers:4 }, { #time:90 + var_76ed7b30 * 7, #archetype:#"corrosive", #quantity:1, #lanes:array( 1, 2, 3 ), #minplayers:2 }, { #time:90 + var_76ed7b30 * 7, #archetype:#"corrosive", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:4 }, { #time:90 + var_76ed7b30 * 7, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:3 }, { #time:90 + var_76ed7b30 * 8, #archetype:#"glad_m", #quantity:1, #lanes:array( 1, 2, 3 ), #minplayers:3 }, { #time:90 + var_76ed7b30 * 9, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:90 + var_76ed7b30 * 9, #archetype:#"glad_r", #quantity:1, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:90 + var_76ed7b30 * 9, #archetype:#"glad_r", #quantity:1, #lanes:array( 1, 2, 3 ), #minplayers:2 }, { #time:90 + var_76ed7b30 * 9, #archetype:#"glad_r", #quantity:1, #lanes:array( 1, 2, 3 ), #minplayers:4 }, { #time:180 + var_3cb006b6, #archetype:#"tiger", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:180 + var_3cb006b6 * 2, #archetype:#"tiger", #quantity:3, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:180 + var_3cb006b6 * 2.5, #archetype:#"normal", #quantity:3, #lanes:array( 1, 2, 3 ), #minplayers:4 }, { #time:180 + var_3cb006b6 * 3, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:2 }, { #time:180 + var_3cb006b6 * 3, #archetype:#"tiger", #quantity:2, #lanes:array( 1, 3 ), #minplayers:3 }, { #time:180 + var_3cb006b6 * 4, #archetype:#"normal", #quantity:3, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:180 + var_3cb006b6 * 4, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:2 }, { #time:180 + var_3cb006b6 * 5, #archetype:#"normal", #quantity:3, #lanes:array( 1, 2, 3 ), #minplayers:3 }, { #time:180 + var_3cb006b6 * 5, #archetype:#"glad_m", #quantity:1, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:180 + var_3cb006b6 * 5, #archetype:#"glad_r", #quantity:1, #lanes:array( 1, 2, 3 ), #minplayers:3 }, { #time:180 + var_3cb006b6 * 6, #archetype:#"normal", #quantity:3, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:180 + var_3cb006b6 * 6, #archetype:#"plasma", #quantity:1, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:180 + var_3cb006b6 * 7, #archetype:#"tiger", #quantity:2, #lanes:array( 1, 3 ), #minplayers:1 }, { #time:180 + var_3cb006b6 * 7, #archetype:#"normal", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:4 }, { #time:180 + var_3cb006b6 * 8, #archetype:#"tiger", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:180 + var_3cb006b6 * 8.5, #archetype:#"tiger", #quantity:2, #lanes:array( 2 ), #minplayers:1 }, { #time:180 + var_3cb006b6 * 9, #archetype:#"glad_m", #quantity:2, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:180 + var_3cb006b6 * 9, #archetype:#"normal", #quantity:3, #lanes:array( 1, 2, 3 ), #minplayers:4 }, { #time:180 + var_3cb006b6 * 9, #archetype:#"glad_m", #quantity:1, #lanes:array( 1, 2, 3 ), #minplayers:3 }, { #time:180 + var_3cb006b6 * 9, #archetype:#"glad_r", #quantity:2, #lanes:array( 2 ), #minplayers:1 }, { #time:180 + var_3cb006b6 * 10, #archetype:#"normal", #quantity:3, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:180 + var_3cb006b6 * 10, #archetype:#"corrosive", #quantity:1, #lanes:array( 1, 3 ), #minplayers:1 }, { #time:180 + var_3cb006b6 * 10, #archetype:#"tiger", #quantity:3, #lanes:array( 2 ), #minplayers:1 }, { #time:180 + var_3cb006b6 * 10, #archetype:#"glad_m", #quantity:2, #lanes:array( 2 ), #minplayers:2 }, { #time:180 + var_3cb006b6 * 10, #archetype:#"glad_r", #quantity:2, #lanes:array( 1, 3 ), #minplayers:4 }, { #time:180 + var_3cb006b6 * 11, #archetype:#"normal", #quantity:4, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:180 + var_3cb006b6 * 11, #archetype:#"blight", #quantity:1, #lanes:array( 1 ), #minplayers:1 }, { #time:180 + var_3cb006b6 * 11, #archetype:#"blight", #quantity:1, #lanes:array( 3 ), #minplayers:2 }, { #time:180 + var_3cb006b6 * 11.5, #archetype:#"blight", #quantity:1, #lanes:array( 3 ), #minplayers:4 }, { #time:180 + var_3cb006b6 * 12, #archetype:#"normal", #quantity:4, #lanes:array( 1, 2, 3 ), #minplayers:1 }, { #time:180 + var_3cb006b6 * 12.5, #archetype:#"normal", #quantity:4, #lanes:array( 1, 2, 3 ), #minplayers:3 } );
     
-    while ( !level flag::get( #"hash_277d03629ade12e8" ) )
+    while ( !level flag::get( #"flag_defend_combat_finished" ) )
     {
         level waittill( #"defend_spawn_next" );
         s_next_spawn = array::pop_front( level.var_34a4aede, 0 );
@@ -5130,7 +5130,7 @@ function private function_faee09d2()
         
         if ( !level.var_34a4aede.size )
         {
-            level flag::wait_till( #"hash_277d03629ade12e8" );
+            level flag::wait_till( #"flag_defend_combat_finished" );
         }
     }
 }
@@ -5285,7 +5285,7 @@ function private function_aa67baee()
     level.var_e7f6d6dd = array( { #time:95, #powerup:"full_ammo", #delay:&function_c12ff921 }, { #time:185, #powerup:"full_ammo", #delay:&function_c12ff921 } );
     s_loc = struct::get( #"hash_74b68c7b7af8e368" );
     
-    while ( !level flag::get( #"hash_277d03629ade12e8" ) )
+    while ( !level flag::get( #"flag_defend_combat_finished" ) )
     {
         level waittill( #"hash_68337916c80885b2" );
         s_next_spawn = array::pop_front( level.var_e7f6d6dd, 0 );
@@ -5734,8 +5734,8 @@ function boss_fight()
     level thread function_1a05e10c( #"boss_ranged_attack_2_launched", #"m_quest", #"missile_track" );
     level thread function_1a05e10c( #"towers_boss_charge", #"m_quest", #"charge_warn" );
     level thread function_c64fc074();
-    level thread function_95785950( 45, level.var_49328379, #"armor_nag", #"hash_634700dd42db02d8" );
-    level thread function_95785950( 90, level.var_8b66546e, #"basket_nag", #"hash_634700dd42db02d8" );
+    level thread function_95785950( 45, level.var_49328379, #"armor_nag", #"boss_armor_broken" );
+    level thread function_95785950( 90, level.var_8b66546e, #"basket_nag", #"boss_armor_broken" );
     array::thread_all( level.players, &function_3d487e02 );
     wait 2;
     function_14833fc2();
@@ -6351,7 +6351,7 @@ function function_ae1cbf2e()
 // Size: 0x74
 function function_c64fc074()
 {
-    level waittill( #"hash_634700dd42db02d8" );
+    level waittill( #"boss_armor_broken" );
     zm_vo::function_7e4562d7( #"hash_6e1019732c1a9fc4", undefined, 1 );
     level thread function_95785950( 30, level.var_49328379, #"heart_nag" );
 }
@@ -6386,7 +6386,7 @@ function function_e50623f()
 // Size: 0x44
 function function_4550c346()
 {
-    level waittill( #"hash_634700dd42db02d8" );
+    level waittill( #"boss_armor_broken" );
     zm_vo::function_7e4562d7( #"hash_256347ab90346d20", undefined, 1 );
 }
 

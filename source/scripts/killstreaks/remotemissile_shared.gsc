@@ -144,7 +144,7 @@ function tryusepredatormissile( lifeid )
 // Params 1
 // Checksum 0x1ff47c3e, Offset: 0xae0
 // Size: 0x3c
-function function_203098f4( waittime )
+function fade_back_in( waittime )
 {
     self endon( #"disconnect" );
     wait waittime;
@@ -287,7 +287,7 @@ function _fire( lifeid, player, team, killstreak_id )
         return false;
     }
     
-    thread function_203098f4( 0.3 );
+    thread fade_back_in( 0.3 );
     lui::screen_fade_out( 0.1 );
     startpos = veh.origin - ( 0, 0, 30 );
     rocket = magicbullet( getweapon( #"remote_missile_missile" ), startpos, targetpos, player );
@@ -325,7 +325,7 @@ function _fire( lifeid, player, team, killstreak_id )
     
     if ( !isdefined( player ) )
     {
-        rocket notify( #"hash_2dd8cca4f8f64e9d" );
+        rocket notify( #"stop_radio_snd" );
         waitframe( 1 );
         
         if ( isdefined( rocket ) )
@@ -357,7 +357,7 @@ function _fire( lifeid, player, team, killstreak_id )
     fwd = anglestoforward( veh.angles );
     endpos = veh.origin + vectorscale( fwd, 20000 );
     time = 5;
-    rocket notify( #"hash_2dd8cca4f8f64e9d" );
+    rocket notify( #"stop_radio_snd" );
     veh moveto( endpos, time );
     veh thread waitthendelete( time );
     rocket thread watch_missile_kill_z();
@@ -856,7 +856,7 @@ function function_dc2222ff( player )
     self.var_a7a295cf setinvisibletoall();
     self.var_a7a295cf setvisibletoplayer( player );
     self.var_a7a295cf playloopsound( #"hash_1375217a84811e44", 0.5 );
-    self waittill( #"hash_2dd8cca4f8f64e9d" );
+    self waittill( #"stop_radio_snd" );
     self.var_a7a295cf stoploopsound( 0.5 );
     self thread stopondeath( self.var_a7a295cf );
 }

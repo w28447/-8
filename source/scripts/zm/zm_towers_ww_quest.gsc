@@ -50,19 +50,19 @@ function init()
     level flag::init( #"hash_70b6094c8cd39890" );
     zm_sq::register( #"ww_quest", #"destroy_wall", #"destroy_wall", &destroy_wall_setup, &destroy_wall_cleanup );
     zm_sq::register( #"ww_quest", #"knock_brazier", #"knock_brazier", &knock_brazier_setup, &knock_brazier_cleanup );
-    zm_sq::register( #"ww_quest", #"grab_rough_statue", #"grab_rough_statue", &function_26956e1e, &function_4f056f0c );
-    zm_sq::register( #"ww_quest", #"hash_2e681afa5f81f37", #"hash_2e681afa5f81f37", &function_708cd4d, &function_c4e5bf05 );
-    zm_sq::register( #"ww_quest", #"place_rough_statue", #"place_rough_statue", &function_2eea86a9, &function_57b4770f );
-    zm_sq::register( #"ww_quest", #"melt_rough_statue", #"melt_rough_statue", &function_a1e2245, &function_e02f2459 );
-    zm_sq::register( #"ww_quest", #"grab_serket_spile", #"grab_serket_spile", &function_9ef8d102, &function_1c380f29 );
-    zm_sq::register( #"ww_quest", #"earn_impervious_jar", #"earn_impervious_jar", &function_dd053937, &function_4509873 );
-    zm_sq::register( #"ww_quest", #"take_impervious_jar", #"take_impervious_jar", &function_a616131a, &function_605806f );
-    zm_sq::register( #"ww_quest", #"plant_serket_spile", #"plant_serket_spile", &function_ac4e38bc, &function_8c32234c );
+    zm_sq::register( #"ww_quest", #"grab_rough_statue", #"grab_rough_statue", &grab_rough_statue_setup, &grab_rough_statue_cleanup );
+    zm_sq::register( #"ww_quest", #"craft_acid_trap", #"craft_acid_trap", &craft_acid_trap_setup, &craft_acid_trap_cleanup );
+    zm_sq::register( #"ww_quest", #"place_rough_statue", #"place_rough_statue", &place_rough_statue_setup, &place_rough_statue_cleanup );
+    zm_sq::register( #"ww_quest", #"melt_rough_statue", #"melt_rough_statue", &melt_rough_statue_setup, &melt_rough_statue_cleanup );
+    zm_sq::register( #"ww_quest", #"grab_serket_spile", #"grab_serket_spile", &grab_serket_spile_setup, &grab_serket_spile_cleanup );
+    zm_sq::register( #"ww_quest", #"earn_impervious_jar", #"earn_impervious_jar", &earn_impervious_jar_setup, &earn_impervious_jar_cleanup );
+    zm_sq::register( #"ww_quest", #"take_impervious_jar", #"take_impervious_jar", &take_impervious_jar_setup, &take_impervious_jar_cleanup );
+    zm_sq::register( #"ww_quest", #"plant_serket_spile", #"plant_serket_spile", &plant_serket_spile_setup, &plant_serket_spile_cleanup );
     zm_sq::register( #"ww_quest", #"place_impervious_jar", #"place_impervious_jar", &place_impervious_jar_setup, &place_impervious_jar_cleanup );
-    zm_sq::register( #"ww_quest", #"fill_impervious_jar", #"fill_impervious_jar", &function_bbdde10e, &function_40f77b4a );
+    zm_sq::register( #"ww_quest", #"fill_impervious_jar", #"fill_impervious_jar", &fill_impervious_jar_setup, &fill_impervious_jar_cleanup );
     zm_sq::register( #"ww_quest", #"hash_38a9bcd55c0565ca", #"hash_38a9bcd55c0565ca", &function_ab13e06, &function_868dcb6d );
-    zm_sq::register( #"ww_quest", #"poison_magic_box", #"poison_magic_box", &function_869d271a, &function_79875787 );
-    zm_sq::register( #"ww_quest", #"take_wonder_weapon", #"take_wonder_weapon", &function_3cadd22, &function_f04288b4 );
+    zm_sq::register( #"ww_quest", #"poison_magic_box", #"poison_magic_box", &poison_magic_box_setup, &poison_magic_box_cleanup );
+    zm_sq::register( #"ww_quest", #"take_wonder_weapon", #"take_wonder_weapon", &take_wonder_weapon_setup, &take_wonder_weapon_cleanup );
     zm_sq::start( #"ww_quest", 1 );
     level scene::add_scene_func( "p8_fxanim_zm_towers_ww_quest_bowl_bundle", &function_73808ab9, "init" );
     var_85034658 = array( "danu", "ra", "odin", "zeus" );
@@ -196,7 +196,7 @@ function function_be25f239()
 // Params 1
 // Checksum 0xd3da7508, Offset: 0x15d8
 // Size: 0x94
-function function_26956e1e( b_skipped )
+function grab_rough_statue_setup( b_skipped )
 {
     if ( b_skipped )
     {
@@ -239,7 +239,7 @@ function function_bdcb6aac( e_player )
 // Params 2
 // Checksum 0xce61379f, Offset: 0x1758
 // Size: 0x74
-function function_4f056f0c( b_skipped, var_19e802fa )
+function grab_rough_statue_cleanup( b_skipped, var_19e802fa )
 {
     level flag::set( #"hash_5cdf5c960293141a" );
     level.var_240da80 delete();
@@ -283,7 +283,7 @@ function function_b4bc6524()
 // Params 1
 // Checksum 0x8d84e57b, Offset: 0x1910
 // Size: 0x34
-function function_708cd4d( b_skipped )
+function craft_acid_trap_setup( b_skipped )
 {
     if ( b_skipped )
     {
@@ -297,7 +297,7 @@ function function_708cd4d( b_skipped )
 // Params 2
 // Checksum 0x50a20a49, Offset: 0x1950
 // Size: 0x39c
-function function_c4e5bf05( b_skipped, var_19e802fa )
+function craft_acid_trap_cleanup( b_skipped, var_19e802fa )
 {
     if ( ( b_skipped || var_19e802fa ) && !isdefined( level.var_708e0925 ) )
     {
@@ -350,7 +350,7 @@ function function_c4e5bf05( b_skipped, var_19e802fa )
 // Params 1
 // Checksum 0xe5468ba, Offset: 0x1cf8
 // Size: 0x7c
-function function_2eea86a9( b_skipped )
+function place_rough_statue_setup( b_skipped )
 {
     if ( b_skipped )
     {
@@ -366,7 +366,7 @@ function function_2eea86a9( b_skipped )
 // Params 2
 // Checksum 0x592a7988, Offset: 0x1d80
 // Size: 0x10c
-function function_57b4770f( b_skipped, var_19e802fa )
+function place_rough_statue_cleanup( b_skipped, var_19e802fa )
 {
     level flag::set( #"hash_6af037519dceda7a" );
     v_origin = level.var_968b0184.origin;
@@ -457,7 +457,7 @@ function function_7ffb149d()
 // Params 1
 // Checksum 0x7ad755c6, Offset: 0x2120
 // Size: 0x72
-function function_a1e2245( b_skipped )
+function melt_rough_statue_setup( b_skipped )
 {
     if ( !b_skipped )
     {
@@ -472,7 +472,7 @@ function function_a1e2245( b_skipped )
 // Params 2
 // Checksum 0x7caa74c7, Offset: 0x21a0
 // Size: 0xbc
-function function_e02f2459( b_skipped, var_19e802fa )
+function melt_rough_statue_cleanup( b_skipped, var_19e802fa )
 {
     v_origin = level.var_1f5e01af.origin;
     v_angles = level.var_1f5e01af.angles;
@@ -485,7 +485,7 @@ function function_e02f2459( b_skipped, var_19e802fa )
 // Params 1
 // Checksum 0xf9130e75, Offset: 0x2268
 // Size: 0x9c
-function function_9ef8d102( b_skipped )
+function grab_serket_spile_setup( b_skipped )
 {
     if ( b_skipped )
     {
@@ -502,7 +502,7 @@ function function_9ef8d102( b_skipped )
 // Params 2
 // Checksum 0xe089b259, Offset: 0x2310
 // Size: 0xb4
-function function_1c380f29( b_skipped, var_19e802fa )
+function grab_serket_spile_cleanup( b_skipped, var_19e802fa )
 {
     level flag::set( #"hash_30e0e4bbbfc9b7d8" );
     level.var_2ea12e52 struct::delete();
@@ -562,7 +562,7 @@ function function_10692994()
 // Params 1
 // Checksum 0x3a57d976, Offset: 0x2598
 // Size: 0x2f6
-function function_dd053937( b_skipped )
+function earn_impervious_jar_setup( b_skipped )
 {
     if ( b_skipped )
     {
@@ -651,7 +651,7 @@ function function_dd053937( b_skipped )
 // Params 2
 // Checksum 0x3947a1b7, Offset: 0x2898
 // Size: 0x34
-function function_4509873( b_skipped, var_19e802fa )
+function earn_impervious_jar_cleanup( b_skipped, var_19e802fa )
 {
     level flag::set( #"hash_200151b21f16734f" );
 }
@@ -702,7 +702,7 @@ function function_6f7d36ec()
 // Params 1
 // Checksum 0xff78639f, Offset: 0x2a18
 // Size: 0x522
-function function_a616131a( b_skipped )
+function take_impervious_jar_setup( b_skipped )
 {
     if ( b_skipped )
     {
@@ -787,7 +787,7 @@ function function_a616131a( b_skipped )
 // Params 2
 // Checksum 0x29190cce, Offset: 0x2f48
 // Size: 0x5c
-function function_605806f( b_skipped, var_19e802fa )
+function take_impervious_jar_cleanup( b_skipped, var_19e802fa )
 {
     level flag::set( #"hash_45259bb6368fc0d3" );
     level zm_ui_inventory::function_7df6bb60( #"zm_towers_ww_quest_impervious_jar", 1 );
@@ -813,7 +813,7 @@ function function_5f2a9b69( e_player )
 // Params 1
 // Checksum 0xbf69cdce, Offset: 0x3080
 // Size: 0x8e
-function function_ac4e38bc( b_skipped )
+function plant_serket_spile_setup( b_skipped )
 {
     if ( b_skipped )
     {
@@ -839,7 +839,7 @@ function function_ac4e38bc( b_skipped )
 // Params 2
 // Checksum 0x15ede224, Offset: 0x3118
 // Size: 0x144
-function function_8c32234c( b_skipped, var_19e802fa )
+function plant_serket_spile_cleanup( b_skipped, var_19e802fa )
 {
     level flag::set( #"hash_5649f57b918f85f8" );
     s_spile = struct::get( "s_ww_quest_spile_in_tree" );
@@ -912,7 +912,7 @@ function function_f6781b0f( e_player )
 // Params 1
 // Checksum 0x523824b, Offset: 0x34f0
 // Size: 0x3c
-function function_bbdde10e( b_skipped )
+function fill_impervious_jar_setup( b_skipped )
 {
     if ( b_skipped )
     {
@@ -926,7 +926,7 @@ function function_bbdde10e( b_skipped )
 // Params 2
 // Checksum 0xdf119b2e, Offset: 0x3538
 // Size: 0x64
-function function_40f77b4a( b_skipped, var_19e802fa )
+function fill_impervious_jar_cleanup( b_skipped, var_19e802fa )
 {
     level.var_1028e128.origin += ( 0, 0, 2048 );
     waitframe( 1 );
@@ -980,7 +980,7 @@ function function_868dcb6d( b_skipped, var_19e802fa )
 // Params 1
 // Checksum 0xbbc68994, Offset: 0x37c8
 // Size: 0x398
-function function_869d271a( b_skipped )
+function poison_magic_box_setup( b_skipped )
 {
     a_str_chests = array( "tower_a_chest", "tower_b_chest", "tower_c_chest", "tower_d_chest", "tower_a_lower_chest", "tower_b_lower_chest", "tower_c_lower_chest", "tower_d_lower_chest", "danu_zeus_tunnel_chest", "ra_odin_tunnel_chest" );
     level.var_13fc0c88 = [];
@@ -1040,7 +1040,7 @@ function function_869d271a( b_skipped )
 // Params 2
 // Checksum 0x656df39, Offset: 0x3b68
 // Size: 0x114
-function function_79875787( b_skipped, var_19e802fa )
+function poison_magic_box_cleanup( b_skipped, var_19e802fa )
 {
     level flag::set( #"hash_77ff9a8101ea687b" );
     zm_weapons::function_603af7a8( getweapon( #"ww_crossbow_t8" ) );
@@ -1291,7 +1291,7 @@ function function_73ed3038( a_keys )
 // Params 1
 // Checksum 0xa789be3d, Offset: 0x4698
 // Size: 0x2a0
-function function_3cadd22( b_skipped )
+function take_wonder_weapon_setup( b_skipped )
 {
     foreach ( s_chest in level.var_b7ef852e )
     {
@@ -1329,7 +1329,7 @@ function function_3cadd22( b_skipped )
 // Params 2
 // Checksum 0x81249d98, Offset: 0x4940
 // Size: 0x14
-function function_f04288b4( b_skipped, var_19e802fa )
+function take_wonder_weapon_cleanup( b_skipped, var_19e802fa )
 {
     
 }

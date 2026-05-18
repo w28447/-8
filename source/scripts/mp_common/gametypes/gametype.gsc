@@ -12,8 +12,8 @@
 // Size: 0x16e
 function init()
 {
-    bundle = function_302bd0b9();
-    level.var_d1455682 = bundle;
+    bundle = getgametypescriptbundle();
+    level.gametype_scriptbundle = bundle;
     level.var_812be535 = 0;
     
     if ( !isdefined( bundle ) )
@@ -39,7 +39,7 @@ function init()
 // Size: 0x7c
 function on_start_game_type()
 {
-    bundle = level.var_d1455682;
+    bundle = level.gametype_scriptbundle;
     
     if ( !isdefined( bundle ) )
     {
@@ -61,14 +61,14 @@ function on_start_game_type()
 // Size: 0x7c
 function on_round_switch()
 {
-    bundle = level.var_d1455682;
+    bundle = level.gametype_scriptbundle;
     
     if ( !isdefined( bundle ) )
     {
         return;
     }
     
-    if ( isdefined( level.var_d1455682.switchsides ) && level.var_d1455682.switchsides )
+    if ( isdefined( level.gametype_scriptbundle.switchsides ) && level.gametype_scriptbundle.switchsides )
     {
         game.switchedsides = !game.switchedsides;
         userspawnselection::onroundchange();
@@ -121,7 +121,7 @@ function setvisiblescoreboardcolumns( col1, col2, col3, col4, col5, col6, col7, 
 // Size: 0x8c
 function function_f2f4dfa7()
 {
-    if ( isdefined( level.var_d1455682.switchsides ) && level.var_d1455682.switchsides && game.switchedsides )
+    if ( isdefined( level.gametype_scriptbundle.switchsides ) && level.gametype_scriptbundle.switchsides && game.switchedsides )
     {
         util::set_team_mapping( game.defenders, game.attackers );
         return;

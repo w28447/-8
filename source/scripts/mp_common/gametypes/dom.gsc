@@ -1407,7 +1407,7 @@ function updatedomscores()
         }
         
         /#
-            if ( getdvarint( #"hash_697b325da5b79b83", 0 ) > 0 )
+            if ( getdvarint( #"no_early_end_round", 0 ) > 0 )
             {
                 var_bac44d7f = 0;
             }

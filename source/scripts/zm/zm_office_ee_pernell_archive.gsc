@@ -55,8 +55,8 @@ function init_clientfields()
 // Size: 0xa4
 function init_flags()
 {
-    level flag::init( #"hash_4c30d0428f1d4060" );
-    level flag::init( #"hash_5516784173c2ee27" );
+    level flag::init( #"server_part_pickup_acquired" );
+    level flag::init( #"server_part_pickup_deposited" );
     level flag::init( #"server_fixed" );
     level flag::init( #"card_inserted" );
     level flag::init( #"hash_5df188993c013698" );
@@ -138,14 +138,14 @@ function pernell_archive_step1_setup( var_5ea5c94d )
         level.var_2cbf5e38 = 0;
         s_server_part_pickup = struct::get( "server_part_pickup" );
         s_server_part_pickup zm_unitrigger::create( #"", 64, &function_8703c1fe );
-        level flag::wait_till( #"hash_4c30d0428f1d4060" );
+        level flag::wait_till( #"server_part_pickup_acquired" );
         var_185199a1 = getent( s_server_part_pickup.target, "targetname" );
         var_185199a1 playsound( #"hash_18f957b8000dd0c6" );
         var_185199a1 delete();
         zm_unitrigger::unregister_unitrigger( s_server_part_pickup.s_unitrigger );
         s_server_part_pickup struct::delete();
         level.s_fix_server zm_unitrigger::create( #"", 64, &function_e4fcfb0a );
-        level flag::wait_till( #"hash_5516784173c2ee27" );
+        level flag::wait_till( #"server_part_pickup_deposited" );
         playsoundatposition( #"hash_359664e44a2bb635", level.s_fix_server.origin );
         level clientfield::set( "" + #"hash_3284b0cf34bfe44e", 0 );
         level clientfield::increment( "" + #"hash_b143d97bf92fc66", 1 );
@@ -186,7 +186,7 @@ function function_8703c1fe()
 {
     waitresult = self waittill( #"trigger" );
     level.var_2cbf5e38 = 1;
-    level flag::set( #"hash_4c30d0428f1d4060" );
+    level flag::set( #"server_part_pickup_acquired" );
     
     /#
         iprintlnbold( "<dev string:x65>" );
@@ -200,7 +200,7 @@ function function_8703c1fe()
 function function_e4fcfb0a()
 {
     waitresult = self waittill( #"trigger" );
-    level flag::set( #"hash_5516784173c2ee27" );
+    level flag::set( #"server_part_pickup_deposited" );
 }
 
 // Namespace zm_office_ee_pernell_archive/zm_office_ee_pernell_archive

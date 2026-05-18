@@ -636,7 +636,7 @@ localizeentry,d#zombie/zeus
 localizeentry,d#weapon/trophy_system
 localizeentry,#hash_141046a378053bef
 localizeentry,#hash_141a80d9a928673e
-localizeentry,d#hash_141c79e0a2e1383e
+localizeentry,d#mp/defeat_caps
 localizeentry,d#hash_141db4744dcb2583
 localizeentry,d#hash_142b7a54990d7142
 localizeentry,d#hash_14436ccff155d5b3
@@ -758,7 +758,7 @@ localizeentry,#menu/paintjob
 localizeentry,d#mpui/no_attachment_desc
 localizeentry,d#hash_1801e338b51c7c43
 localizeentry,d#hash_180fa7e6ca727f3d
-localizeentry,d#hash_18114ebf7e352c55
+localizeentry,d#mp/draw_caps
 localizeentry,d#hash_18207070ba4e5433
 localizeentry,d#hash_184e36c0f4f594d6
 localizeentry,d#hash_184e37c0f4f59689
@@ -798,7 +798,7 @@ localizeentry,d#mpui/barrelchoke
 localizeentry,d#hash_19b1cdfb6bb99900
 localizeentry,d#hash_19b68f33e380778c
 localizeentry,d#hash_19be96a19b1c40bc
-localizeentry,d#hash_19d325d8d1bfd3de
+localizeentry,d#mp/overtime_caps
 localizeentry,d#hash_19d832c5116a6948
 localizeentry,d#hash_19d834c5116a6cae
 localizeentry,d#hash_19d835c5116a6e61
@@ -1486,7 +1486,7 @@ localizeentry,d#hash_318bcb09bb8d1c33
 localizeentry,d#hash_3191d03a1c0615ad
 localizeentry,#hash_31be0de7358847a6
 localizeentry,#hash_31deee1037301803
-localizeentry,d#hash_31e1e88e88ba263f
+localizeentry,d#mp/victory_caps
 localizeentry,#hash_31e9a07245f0614a
 localizeentry,d#hash_31e9d057a03398bf
 localizeentry,d#hash_31f69b3f10bfaa53

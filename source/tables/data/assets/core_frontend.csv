@@ -72722,7 +72722,7 @@ gesture,#hash_3ff9244d2a3870ff
 gesture,#hash_41370e62c0234eef
 gesture,#hash_4164fdc7386ee9ab
 gesture,#hash_4195b95d799b650a
-gesture,#hash_419f11534af12a76
+gesture,#ges_battle_cry
 gesture,#hash_44eac644559882bd
 gesture,#hash_46afad994b8c9ac9
 gesture,d#ges_mantle_sig_bow
@@ -73303,7 +73303,7 @@ xmodel,d#hash_7b8e4e729f4fa4a
 xmodel,#hash_7c05761c72a89f6
 xmodel,#p8_fxp_blightfather_tongue_tendril
 xmodel,d#c_t8_mp_spe_swat_roman_arms2_viewbody
-xmodel,#hash_7d73f1bee7a7209
+xmodel,#p8_zm_lab_tube_03_script_reverse
 xmodel,d#c_t8_bo_3rd_male_viewarms1_black
 xmodel,d#hash_7de60db81879a2d
 xmodel,#wpn_t8_bo_parachute_world_ghost_in_the_machine
@@ -73628,7 +73628,7 @@ xmodel,d#c_t8_mp_spe_nomad_head1_cst
 xmodel,d#wpn_t8_sig_minigun_view
 xmodel,d#c_t8_mp_spe_outrider_arms1_viewbody1_cst
 xmodel,d#c_t8_bo_hero_tedd_viewarms1
-xmodel,#hash_147375b2a9795cd1
+xmodel,#p8_zm_lab_tube_02_script
 xmodel,d#c_t8_mp_spe_buffer_cop_arms1
 xmodel,#attach_t8_charm_teabag_view
 xmodel,d#c_t8_bo_hero_replacer_torso1
@@ -73646,7 +73646,7 @@ xmodel,d#c_t8_bo_hero_sergei_viewlegs1
 xmodel,#hash_14e3ae5974c15925
 xmodel,d#c_t8_bo_hero_hudson_torso1_armorlight1
 xmodel,d#c_t8_bo_hero_shadowman_head1
-xmodel,#hash_150da5db728463e2
+xmodel,#p8_zm_lab_talisman_press_mould_lid_ultra_empty
 xmodel,d#c_t8_mp_spe_gear_medic
 xmodel,#p8_fxp_fluid_string_omni_blood_hirez
 xmodel,#hash_152c66c45c492c85
@@ -73657,7 +73657,7 @@ xmodel,d#c_t8_bo_hero_hudson_torso1
 xmodel,#attach_t8_charm_pine_tree_view
 xmodel,d#c_t8_zmb_dlc0_hero_scarlett_arms1_viewbody1_cst
 xmodel,d#c_t8_bo_zombie_male_torso1
-xmodel,#hash_15aeae3ca1622031
+xmodel,#p8_zm_lab_talisman_press_mould_lid_legendary_empty
 xmodel,d#c_t8_mp_spe_buffer_arms1_viewbody1_cst
 xmodel,#p7_slu_stool_swivel
 xmodel,#p8_fxp_frontend_spectre_blood
@@ -73729,7 +73729,7 @@ xmodel,d#c_t8_bo_hero_sarah_viewarms1
 xmodel,d#c_t8_zmb_hero_bruno_head1_cst
 xmodel,d#c_t8_mp_spe_nomad_heist_viewlegs1
 xmodel,d#c_t8_mp_spe_firebreak_dragon_arms2
-xmodel,#hash_17fe752ca47c080a
+xmodel,#p8_zm_lab_tube_04_script_reverse
 xmodel,d#c_t8_mp_spe_prophet_pirate_torso1_viewbody1
 xmodel,d#c_t8_bo_3rd_male_arms1_white
 xmodel,#p8_zm_talisman_spec_weapon_duration
@@ -73881,7 +73881,7 @@ xmodel,#p7_tools_nail
 xmodel,d#c_t8_mp_spe_battery_assassin_viewarms1
 xmodel,d#c_t8_mp_spe_spectre_arms1_g_larmoff_cst
 xmodel,d#c_t8_mp_spe_buffer_superhero_head1
-xmodel,#hash_1d6b60d588392994
+xmodel,#p8_zm_lab_tube_02_script_reverse
 xmodel,#p8_zm_talisman_pap_cost
 xmodel,d#c_t8_mp_spe_buffer_superhero_torso1_armorheavy1
 xmodel,d#c_t8_mp_spe_swat_torso1_armormedium1
@@ -73974,7 +73974,7 @@ xmodel,d#c_t8_bo_hero_replacer_torso1_armorheavy
 xmodel,d#c_t8_bo_hero_matt_shadows_torso1_armorheavy
 xmodel,d#c_t8_mp_spe_recon_samurai_arms1_g_larmoff_cst
 xmodel,#p8_fxp_fluid_splash_blood_hirez
-xmodel,#hash_21facc9d2f29d94c
+xmodel,#p8_zm_lab_talisman_press_mould_lid_ultra
 xmodel,#c_t8_mp_spe_blackjack_body1
 xmodel,d#c_t8_bo_hero_woods_viewarms1
 xmodel,#p8_ice_curtain_small_pulledback_right_01_red
@@ -73993,7 +73993,7 @@ xmodel,d#c_t8_mp_spe_hacker_superhero_torso1_viewbody
 xmodel,d#c_t8_mp_spe_prophet_pirate_lowerbody1_viewbody1
 xmodel,d#c_t8_mp_spe_reaper_lowerbody1_g_blegsoff
 xmodel,#p8_zm_elixir_bullet_boost_ui_lab
-xmodel,#hash_22c3a62824ed796d
+xmodel,#p8_zm_lab_talisman_press_mould_lid_epic_empty
 xmodel,d#c_t8_mp_spe_nomad_apocalypse_lowerbody1_viewbody
 xmodel,d#c_t8_zmb_mob_hero_dempsey_torso1_cst
 xmodel,#hash_22e20c33489f2069
@@ -74149,7 +74149,7 @@ xmodel,d#c_t8_bo_hero_johnson_lowerbody1_viewbody
 xmodel,#p7_ban_south_tribe_decor_hose_a
 xmodel,#p7_ban_south_tribe_decor_hose_b
 xmodel,#wpn_t8_sig_tempest_projectile
-xmodel,#hash_28a2c4e744e4658c
+xmodel,#p8_zm_lab_talisman_press_mould_lid_rare_empty
 xmodel,d#c_t8_bo_hero_russman_torso1_armorheavy
 xmodel,#wpn_t8_bo_parachute_world_raven
 xmodel,d#c_t8_mp_spe_buffer_paladin_arms1_g_rarmoff
@@ -74872,7 +74872,7 @@ xmodel,d#c_t8_mp_spe_spectre_superhero_torso1_viewbody
 xmodel,d#hash_46e238298a14ec52
 xmodel,d#c_t8_mp_spe_nomad_cop_viewlegs1
 xmodel,#p8_are_stage_truss_banner_01_blue
-xmodel,#hash_46ef488f583997fb
+xmodel,#p8_zm_lab_tube_04_script
 xmodel,d#hash_470554957716404b
 xmodel,d#c_t8_bo_soldier_land_male_torso1_armorheavy1
 xmodel,d#c_t8_zmb_dlc1_hero_gypsy_torso1_viewbody1
@@ -75003,7 +75003,7 @@ xmodel,d#c_t8_bo_hero_woods_arms1_viewbody1
 xmodel,#p8_zm_talisman_box_guarantee_lmg
 xmodel,d#c_t8_mp_spe_firebreak_heist_g_larmoff
 xmodel,d#c_t8_mp_spe_nomad_heist_torso1
-xmodel,#hash_4cbeb6f9fd0e1277
+xmodel,#p8_zm_lab_tube_05_script_reverse
 xmodel,d#c_t8_bo_hero_weaver_head1
 xmodel,d#c_t8_mp_spe_seraph_torso1_cst
 xmodel,d#hash_4cd6c008be26b4be
@@ -75017,7 +75017,7 @@ xmodel,d#c_t8_mp_spe_battery_viewarms1_cst
 xmodel,d#c_t8_mp_spe_hacker_apocalypse_arms1_g_rarmoff
 xmodel,#p8_zm_elixir_talkin_bout_regeneration_ui_lab
 xmodel,d#c_t8_mp_spe_seraph_assassin_arms1_g_larmoff
-xmodel,#hash_4d36008189f01e3e
+xmodel,#p8_zm_lab_tube_05_script
 xmodel,d#c_t8_mp_spe_outrider_torso1_viewbody1
 xmodel,d#c_t8_bo_hero_matt_shadows_arms1
 xmodel,d#c_t8_mp_spe_outrider_pirate_viewlegs1
@@ -75990,7 +75990,7 @@ xmodel,d#c_t8_mp_swatbuddy_body2_bloody
 xmodel,d#wpn_t8_ar_accurate_mag_view
 xmodel,#hash_788ee73fa8e934a4
 xmodel,d#c_t8_bo_soldier_sea_male_torso1_armormedium1
-xmodel,#hash_789fccb680d65004
+xmodel,#p8_zm_lab_tube_03_script
 xmodel,#c_t8_mp_spe_nomad_body1_frontend
 xmodel,#p8_zm_elixir_anti_entrapment_ui_lab
 xmodel,d#c_t8_zmb_ofc_hero_dempsey_viewarms1_cst

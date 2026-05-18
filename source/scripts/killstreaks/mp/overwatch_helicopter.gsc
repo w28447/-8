@@ -272,7 +272,7 @@ function function_f6442ecd( helicopter, player, ownerleft )
 function deletehelicoptercallback()
 {
     helicopter = self;
-    helicopter notify( #"hash_3904c1a9ebdc27de" );
+    helicopter notify( #"overwatch_heli_shutdown" );
 }
 
 // Namespace overwatch_helicopter/overwatch_helicopter
@@ -409,7 +409,7 @@ function function_520df983( helicopter )
 {
     function_49dca506( helicopter );
     helicopter.var_570c07f9 = 1;
-    helicopter notify( #"hash_3904c1a9ebdc27de" );
+    helicopter notify( #"overwatch_heli_shutdown" );
     helicopter playloopsound( #"exp_veh_plane_spinout_lp" );
     helicopter::heli_explode();
     helicopter playsound( #"exp_veh_large" );
@@ -422,7 +422,7 @@ function function_520df983( helicopter )
 // Size: 0xb4
 function function_a9fc0ef6( helicopter )
 {
-    waitresult = helicopter waittill( #"hash_3904c1a9ebdc27de" );
+    waitresult = helicopter waittill( #"overwatch_heli_shutdown" );
     attacker = waitresult.attacker;
     
     if ( !( isdefined( helicopter.var_570c07f9 ) && helicopter.var_570c07f9 ) )
@@ -453,7 +453,7 @@ function watchplayerteamchangethread( helicopter )
     
     if ( ownerleft && isdefined( helicopter ) )
     {
-        helicopter notify( #"hash_3904c1a9ebdc27de" );
+        helicopter notify( #"overwatch_heli_shutdown" );
     }
 }
 
@@ -1067,7 +1067,7 @@ function private function_67260255( swat, helicopter, killstreak_id )
 {
     swat endon( #"death" );
     helicopter endon( #"death" );
-    helicopter waittill( #"hash_3904c1a9ebdc27de" );
+    helicopter waittill( #"overwatch_heli_shutdown" );
     swat unlink();
     swat startragdoll();
     swat kill( swat.origin, undefined, undefined, undefined, 0, 1 );

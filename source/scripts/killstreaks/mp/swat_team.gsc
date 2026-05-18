@@ -2149,8 +2149,8 @@ function function_263d3e9e( var_1c996690, context, owner, secondattempt = 0 )
         }
         
         cylinder = ai::t_cylinder( var_1c996690, 2000, 200 );
-        var_68860686 = ai::t_cylinder( var_1c996690, 100, 200 );
-        tacpoints = tacticalquery( "swat_team_deploy", var_1c996690, cylinder, var_68860686 );
+        near_me = ai::t_cylinder( var_1c996690, 100, 200 );
+        tacpoints = tacticalquery( "swat_team_deploy", var_1c996690, cylinder, near_me );
         var_c65dd8e7 = undefined;
         
         if ( isdefined( tacpoints ) && tacpoints.size )

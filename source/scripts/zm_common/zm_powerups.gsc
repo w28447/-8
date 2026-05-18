@@ -63,8 +63,8 @@ function init()
     zombie_utility::set_zombie_var( #"zombie_powerup_drop_max_3", 21 );
     zombie_utility::set_zombie_var( #"zombie_powerup_drop_min_4", 20 );
     zombie_utility::set_zombie_var( #"zombie_powerup_drop_max_4", 24 );
-    zombie_utility::set_zombie_var( #"hash_4d2cc817490bcca", 4 );
-    zombie_utility::set_zombie_var( #"hash_4edd68174a79580", 7 );
+    zombie_utility::set_zombie_var( #"zombie_powerup_ammo_spacing_min", 4 );
+    zombie_utility::set_zombie_var( #"zombie_powerup_ammo_spacing_max", 7 );
     
     if ( !isdefined( level.zombie_powerups ) )
     {
@@ -111,7 +111,7 @@ function init_powerups()
     level.zombie_powerup_index = 0;
     randomize_powerups();
     level.rare_powerups_active = 0;
-    level.zm_genesis_robot_pay_towardsreactswordstart = randomintrange( zombie_utility::get_zombie_var( #"hash_4d2cc817490bcca" ), zombie_utility::get_zombie_var( #"hash_4edd68174a79580" ) );
+    level.zm_genesis_robot_pay_towardsreactswordstart = randomintrange( zombie_utility::get_zombie_var( #"zombie_powerup_ammo_spacing_min" ), zombie_utility::get_zombie_var( #"zombie_powerup_ammo_spacing_max" ) );
     level.firesale_vox_firstime = 0;
     level thread powerup_hud_monitor();
     clientfield::register( "scriptmover", "powerup_fx", 1, 3, "int" );
@@ -1288,7 +1288,7 @@ function powerup_setup( powerup_override, powerup_team, powerup_location, poweru
     
     if ( powerup == "full_ammo" )
     {
-        level.zm_genesis_robot_pay_towardsreactswordstart = randomintrange( zombie_utility::get_zombie_var( #"hash_4d2cc817490bcca" ), zombie_utility::get_zombie_var( #"hash_4edd68174a79580" ) );
+        level.zm_genesis_robot_pay_towardsreactswordstart = randomintrange( zombie_utility::get_zombie_var( #"zombie_powerup_ammo_spacing_min" ), zombie_utility::get_zombie_var( #"zombie_powerup_ammo_spacing_max" ) );
     }
     else if ( !isdefined( powerup_override ) )
     {

@@ -38,7 +38,7 @@ function init()
     clientfield::register( "scriptmover", "" + #"hash_376c030aee1d6ccb", 1, 2, "int", &function_3537ad19, 0, 0 );
     clientfield::register( "scriptmover", "" + #"corpse_burn_fx", 1, 1, "int", &group_bot_mp, 0, 0 );
     clientfield::register( "allplayers", "" + #"hash_b8601726e1e4a6a", 1, 1, "int", &function_5688631d, 0, 0 );
-    clientfield::register( "scriptmover", "" + #"hash_624198b41791933f", 1, 1, "int", &function_8fe4f2a7, 0, 0 );
+    clientfield::register( "scriptmover", "" + #"setup_outro_ghosts", 1, 1, "int", &setup_outro_ghosts, 0, 0 );
     clientfield::register( "toplayer", "" + #"hash_5cab8aa95fc9ea84", 1, 1, "counter", &function_d663c13e, 0, 0 );
     clientfield::register( "toplayer", "" + #"hash_506164c22c4c7ca8", 1, 1, "counter", &function_42693309, 0, 0 );
     level._effect[ #"brutus_energy" ] = #"hash_aced2664257a0ca";
@@ -677,7 +677,7 @@ function function_5688631d( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x9189744d, Offset: 0x2df8
 // Size: 0x1cc
-function function_8fe4f2a7( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function setup_outro_ghosts( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval == 1 )
     {

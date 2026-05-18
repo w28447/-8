@@ -231,7 +231,7 @@ function private function_aef0aaa4()
     
     var_e15d8b1f = 2;
     
-    if ( self.ai.elephant.ai.var_112ec817 == #"hash_8e170ae91588f20" )
+    if ( self.ai.elephant.ai.elephantstage == #"elephant_stage_2" )
     {
         var_e15d8b1f = 3;
     }
@@ -447,7 +447,7 @@ function function_6b086058( inflictor, attacker, damage, idflags, meansofdeath, 
         return ( damage * var_786d7e06.damage_scale );
     }
     
-    if ( self.ai.var_112ec817 == #"hash_8e173ae91589439" )
+    if ( self.ai.elephantstage == #"elephant_stage_1" )
     {
         var_dd54fdb1 = namespace_81245006::function_37e3f011( self, "tag_carriage_ws_le" );
         
@@ -463,7 +463,7 @@ function function_6b086058( inflictor, attacker, damage, idflags, meansofdeath, 
         var_786d7e06 = zm_ai_utility::function_422fdfd4( self, attacker, weapon, boneindex );
         return ( damage * var_786d7e06.damage_scale );
     }
-    else if ( self.ai.var_112ec817 == #"hash_8e170ae91588f20" )
+    else if ( self.ai.elephantstage == #"elephant_stage_2" )
     {
         var_dd54fdb1 = namespace_81245006::function_37e3f011( self, "tag_head_ws" );
         

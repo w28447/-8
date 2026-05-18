@@ -197,7 +197,7 @@ function defend_areas()
     zm_utility::function_33798535( s_defend_area.var_39c44288, s_defend_area.a_str_zones, s_defend_area.var_ed1db1a7, undefined, undefined, 45 );
     level flag::set( #"hash_13bc135937af9be2" );
     level flag::set( "power_on2" );
-    level flag::set( #"hash_7d9f8ec3cb9af87e" );
+    level flag::set( #"zipline_handle_picked_up" );
     level flag::clear( "fasttravel_disabled" );
     level flag::set( "ship_flinger_fixed" );
     level flag::set( #"facility_available" );
@@ -686,7 +686,7 @@ function function_f8dc2ddb( n_obj_id )
     
     while ( true )
     {
-        s_results = self waittill( #"hash_702a9c7f10066b19", #"death" );
+        s_results = self waittill( #"zipline_use_detected", #"death" );
         
         if ( s_results.str_location === "lighthouse_to_facility" || s_results._notify === "death" )
         {

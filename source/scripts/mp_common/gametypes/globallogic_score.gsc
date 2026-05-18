@@ -670,7 +670,7 @@ function giveplayerscore( event, player, victim, descvalue, weapon = level.weapo
         return 0;
     }
     
-    pixbeginevent( #"hash_50e89abe6f3fe4f1" );
+    pixbeginevent( #"level.onplayerscore" );
     score = player.pers[ #"score" ];
     [[ level.onplayerscore ]]( event, player, victim );
     newscore = player.pers[ #"score" ];
@@ -1250,7 +1250,7 @@ function giveteamscore( event, team, player, victim )
         return;
     }
     
-    pixbeginevent( #"hash_66d4a941ef078585" );
+    pixbeginevent( #"level.onteamscore" );
     teamscore = game.stat[ #"teamscores" ][ team ];
     [[ level.onteamscore ]]( event, team );
     pixendevent();

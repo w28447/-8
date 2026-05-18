@@ -59,7 +59,7 @@ function function_fa00e485( n_round_number )
     
     while ( true )
     {
-        level waittill( #"hash_5d3012139f083ccb" );
+        level waittill( #"round_spawns_constructed" );
         
         if ( zm_round_spawning::function_d0db51fc( #"blight_father" ) && !( isdefined( level.var_153e9058 ) && level.var_153e9058 ) )
         {
@@ -81,7 +81,7 @@ function function_c1a0ea97( n_round_number )
     
     while ( true )
     {
-        level waittill( #"hash_5d3012139f083ccb" );
+        level waittill( #"round_spawns_constructed" );
         
         if ( zm_round_spawning::function_d0db51fc( #"gegenees" ) && !( isdefined( level.var_153e9058 ) && level.var_153e9058 ) )
         {

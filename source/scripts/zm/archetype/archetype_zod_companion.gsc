@@ -651,7 +651,7 @@ function private zodcompanioncollisionservice( entity )
         }
     }
     
-    var_26cddecd = 0;
+    stop_pushing = 0;
     zombies = getaiteamarray( level.zombie_team );
     
     foreach ( zombie in zombies )
@@ -667,13 +667,13 @@ function private zodcompanioncollisionservice( entity )
         {
             if ( isdefined( zombie.cant_move ) && zombie.cant_move )
             {
-                zombie thread function_d0371e1e();
-                var_26cddecd = 1;
+                zombie thread stoppushing();
+                stop_pushing = 1;
             }
         }
     }
     
-    if ( var_26cddecd )
+    if ( stop_pushing )
     {
         entity collidewithactors( 0 );
         entity.dontpushtime = gettime() + 2000;
@@ -688,7 +688,7 @@ function private zodcompanioncollisionservice( entity )
 // Params 0, eflags: 0x4
 // Checksum 0xfe4fa8ce, Offset: 0x27c8
 // Size: 0x4c
-function private function_d0371e1e()
+function private stoppushing()
 {
     self endon( #"death" );
     self collidewithactors( 0 );

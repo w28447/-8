@@ -32,7 +32,7 @@
     "hash_35b5848d9f1b58e0": "Failed to reach minimum player count. Session ended.",
     "killstreak/emp_place_turret_hint": "Press ^3[{+attack}]^7 to Place Power Core",
     "killstreak/qrdrone_hacked": "Dragonfire hacked",
-    "hash_4403919077b48aaf": "HALFTIME",
+    "mp/halftime_caps": "HALFTIME",
     "wz/tank": "Tank",
     "wz/pbr": "PBR",
     "mp/wins": "&&1 Wins!",

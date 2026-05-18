@@ -153,7 +153,7 @@ function private function_c18360f6( var_11a83c3a, params )
         
         if ( params.eattacker.var_bcae5314 == 2 )
         {
-            scoreevents::processscoreevent( #"hash_e18a9f29b8e1132", var_11a83c3a.var_e2131267, undefined, icepickweapon );
+            scoreevents::processscoreevent( #"hacked_multikill_2", var_11a83c3a.var_e2131267, undefined, icepickweapon );
             params.eattacker.var_bcae5314 = 0;
         }
         

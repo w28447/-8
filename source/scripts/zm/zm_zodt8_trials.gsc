@@ -1,5 +1,5 @@
 #using script_112484f657ccd8b7;
-#using script_1d1e3c193b0a51d;
+#using scripts\zm_common\trials\zm_trial_damage_during_movement.gsc;
 #using script_30ba61ad5559c51d;
 #using script_3688d332e17e9ac1;
 #using script_3c775b8df460b415;

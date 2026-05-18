@@ -2,7 +2,7 @@
     "name": "#ww_tesla_sniper_t8_zm",
     "baseWeapon": "#ww_tesla_sniper_t8",
     "displayname": "#zmweapon/ww_tesla_sniper",
-    "weapon70": "#hash_251fdfa7573b8487",
+    "weapon70": "#ww_tesla_sniper",
     "soundbank": "#ww_tesla_sniper_t8_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",

@@ -908,7 +908,7 @@ function private function_4e049216( einflictor, eattacker, idamage, idflags, sme
     else if ( weapon === getweapon( #"eq_cluster_semtex_grenade" ) && !( isdefined( self.var_21c8bc5f ) && self.var_21c8bc5f ) )
     {
         self.var_21c8bc5f = 1;
-        level notify( #"hash_18859ff9fe569290", { #v_loc:vpoint } );
+        level notify( #"chopper_impact_clustergrenade", { #v_loc:vpoint } );
         ct_utils::get_player() thread ct_utils::magic_explosion( vpoint );
         
         if ( !isdefined( self.damagetaken ) )

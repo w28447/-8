@@ -9,7 +9,7 @@ gesture,#ges_grab
 gesture,#ges_spray
 gesture,#hash_2bfc8a1e1322e056
 gesture,#ges_door_interact
-gesture,#hash_419f11534af12a76
+gesture,#ges_battle_cry
 gesture,#ges_grab_bare_hands
 gesture,#hash_4590790b4c08d9ce
 gesture,#ges_grab_one_handed
@@ -153,14 +153,14 @@ string,#mp/host_ended_game
 string,#coop/revive_emergency_reserve_once
 string,#hash_ddc319addc8bcb2
 string,#mp/host_sucks
-string,#hash_141c79e0a2e1383e
+string,#mp/defeat_caps
 string,#killstreak/emp_inbound
 string,#hash_1458857df9447fb3
 string,#coop/player_needs_to_be_revived
 string,#mp_destroyed_helicopter
-string,#hash_18114ebf7e352c55
+string,#mp/draw_caps
 string,#hash_195539177c4346f7
-string,#hash_19d325d8d1bfd3de
+string,#mp/overtime_caps
 string,#killstreak/emp_not_available
 string,#mp/secondplace_name
 string,#hash_1c0ef21dda22b606
@@ -173,7 +173,7 @@ string,#mpui/ammo_full
 string,#mp/score_limit_reached
 string,#hash_3191d03a1c0615ad
 string,#hash_31d09b280a9cab16
-string,#hash_31e1e88e88ba263f
+string,#mp/victory_caps
 string,#hash_3267fdfd0c2b7fdc
 string,#coop/player_is_reviving_you
 string,#mp_codpoints_match_bonus_is
@@ -184,7 +184,7 @@ string,#mp/round_limit_reached
 string,#mp/round_win_caps
 string,#killstreak/emp_place_turret_hint
 string,#killstreak/qrdrone_hacked
-string,#hash_4403919077b48aaf
+string,#mp/halftime_caps
 string,#mp/players_forfeited
 string,#mp/wins
 string,#mp/time_limit_reached

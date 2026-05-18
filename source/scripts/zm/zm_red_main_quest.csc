@@ -56,24 +56,24 @@ function init()
     clientfield::register( "scriptmover", "" + #"hash_431f319e4b8fe9db", 16000, 1, "int", &function_f3c6c429, 0, 0 );
     clientfield::register( "world", "" + #"hash_158233cdc645bef6", 16000, 1, "int", &function_6fd9deaa, 0, 0 );
     clientfield::register( "toplayer", "" + #"hash_492a33037a532fe0", 16000, 1, "counter", &function_6d38ea52, 0, 0 );
-    clientfield::register( "toplayer", "" + #"hash_4aeb7fcdd8302eaa", 16000, 1, "int", &function_70e5b4bd, 0, 0 );
-    clientfield::register( "toplayer", "" + #"hash_7a99ff005314c5fc", 16000, 1, "int", &function_f648d45a, 0, 0 );
-    clientfield::register( "toplayer", "" + #"hash_7f85dc0ce20a6f2c", 16000, 1, "int", &function_40cc4833, 0, 0 );
-    clientfield::register( "toplayer", "" + #"hash_4e3e66f200f76f34", 16000, 1, "int", &function_83c7dece, 0, 0 );
+    clientfield::register( "toplayer", "" + #"play_death_selected", 16000, 1, "int", &play_death_selected, 0, 0 );
+    clientfield::register( "toplayer", "" + #"play_earth_selected", 16000, 1, "int", &play_earth_selected, 0, 0 );
+    clientfield::register( "toplayer", "" + #"play_air_selected", 16000, 1, "int", &play_air_selected, 0, 0 );
+    clientfield::register( "toplayer", "" + #"play_light_selected", 16000, 1, "int", &play_light_selected, 0, 0 );
     clientfield::register( "toplayer", "" + #"hash_565ca9982285f23e", 16000, 1, "int", &function_530c191c, 0, 0 );
-    clientfield::register( "actor", "" + #"hash_415416bf220de94", 16000, 1, "int", &function_cb766634, 0, 0 );
-    clientfield::register( "actor", "" + #"hash_3e2b1092de25c2dd", 16000, 1, "int", &function_3e4aa1cc, 0, 0 );
-    clientfield::register( "actor", "" + #"hash_24b5302c2f39ebc2", 16000, 1, "int", &function_fac1b5c7, 0, 0 );
-    clientfield::register( "actor", "" + #"hash_6a8479b5a5b359a7", 16000, 1, "int", &function_106dc737, 0, 0 );
-    clientfield::register( "actor", "" + #"hash_4feb66128e57d092", 16000, 1, "int", &function_343099ca, 0, 0 );
-    clientfield::register( "actor", "" + #"hash_7552d5567ab25417", 16000, 1, "int", &function_c5443282, 0, 0 );
-    clientfield::register( "actor", "" + #"hash_4e1b58f05f69a65a", 16000, 1, "int", &function_f39e44d7, 0, 0 );
-    clientfield::register( "actor", "" + #"hash_5a6761fe764bdccf", 16000, 1, "int", &function_6bd8c915, 0, 0 );
+    clientfield::register( "actor", "" + #"play_death_uncharged", 16000, 1, "int", &play_death_uncharged, 0, 0 );
+    clientfield::register( "actor", "" + #"play_death_charged", 16000, 1, "int", &play_death_charged, 0, 0 );
+    clientfield::register( "actor", "" + #"play_earth_uncharged", 16000, 1, "int", &play_earth_uncharged, 0, 0 );
+    clientfield::register( "actor", "" + #"play_earth_charged", 16000, 1, "int", &play_earth_charged, 0, 0 );
+    clientfield::register( "actor", "" + #"play_air_uncharged", 16000, 1, "int", &play_air_uncharged, 0, 0 );
+    clientfield::register( "actor", "" + #"play_air_charged", 16000, 1, "int", &play_air_charged, 0, 0 );
+    clientfield::register( "actor", "" + #"play_light_uncharged", 16000, 1, "int", &play_light_uncharged, 0, 0 );
+    clientfield::register( "actor", "" + #"play_light_charged", 16000, 1, "int", &play_light_charged, 0, 0 );
     var_ff76a259 = getminbitcountfornum( 5 );
-    clientfield::register( "world", "" + #"hash_74aaba5c17a71e0d", 16000, var_ff76a259, "int", &function_af9f249c, 0, 0 );
-    clientfield::register( "world", "" + #"hash_7e49e921c4dd052f", 16000, var_ff76a259, "int", &function_704042f5, 0, 0 );
-    clientfield::register( "world", "" + #"hash_9d4aab5c25b93ff", 16000, var_ff76a259, "int", &function_a1833637, 0, 0 );
-    clientfield::register( "world", "" + #"hash_58e58259618537e7", 16000, var_ff76a259, "int", &function_52659f14, 0, 0 );
+    clientfield::register( "world", "" + #"play_death_spotlight", 16000, var_ff76a259, "int", &play_death_spotlight, 0, 0 );
+    clientfield::register( "world", "" + #"play_earth_spotlight", 16000, var_ff76a259, "int", &play_earth_spotlight, 0, 0 );
+    clientfield::register( "world", "" + #"play_air_spotlight", 16000, var_ff76a259, "int", &play_air_spotlight, 0, 0 );
+    clientfield::register( "world", "" + #"play_light_spotlight", 16000, var_ff76a259, "int", &play_light_spotlight, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_155f8a4473c5849f", 16000, 1, "int", &function_3b28f66e, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_4400550c9847a1c5", 16000, 1, "int", &function_dc8d97eb, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_1f0dd5bf6862e335", 16000, 1, "int", &function_71c2f197, 0, 0 );
@@ -82,7 +82,7 @@ function init()
     var_995dd8bf = getminbitcountfornum( 9 );
     clientfield::register( "world", "" + #"play_fanfare", 16000, var_995dd8bf, "int", &play_fanfare, 0, 0 );
     clientfield::register( "scriptmover", "" + #"blood_teleport", 16000, 1, "counter", &blood_teleport, 0, 0 );
-    clientfield::register( "allplayers", "" + #"hash_67b317587e795ec2", 16000, 1, "int", &function_bb7443e, 0, 0 );
+    clientfield::register( "allplayers", "" + #"blood_disable_keyline", 16000, 1, "int", &blood_disable_keyline, 0, 0 );
     clientfield::register( "allplayers", "" + #"blood_graphic_content", 16000, 1, "int", &blood_graphic_content, 0, 0 );
     clientfield::register( "toplayer", "" + #"hash_49068d48a9eb7b89", 16000, 2, "int", &function_9b5699b4, 0, 0 );
     clientfield::register( "world", "" + #"hash_51e28147388ee3d8", 16000, 1, "int", &function_59ea1144, 0, 0 );
@@ -107,14 +107,14 @@ function init()
     level._effect[ #"hash_4d77ba61cd7f3eb7" ] = #"hash_25c4a39b373bfc67";
     level._effect[ #"hash_7fc7f7b5958831d4" ] = #"hash_520fd2427c5fcea3";
     level._effect[ #"hash_431f319e4b8fe9db" ] = #"hash_37bc7da216893b77";
-    level._effect[ #"hash_415416bf220de94" ] = #"hash_7b7ba0ac0755a064";
-    level._effect[ #"hash_3e2b1092de25c2dd" ] = #"hash_318aaa12f9dc7fd4";
-    level._effect[ #"hash_24b5302c2f39ebc2" ] = #"hash_569b6effe4db6f54";
-    level._effect[ #"hash_6a8479b5a5b359a7" ] = #"hash_513bda1b67490064";
-    level._effect[ #"hash_4feb66128e57d092" ] = #"hash_194fead3457d21f5";
-    level._effect[ #"hash_7552d5567ab25417" ] = #"hash_17e9105690c8500d";
-    level._effect[ #"hash_4e1b58f05f69a65a" ] = #"hash_7e9736ee8b5ec443";
-    level._effect[ #"hash_5a6761fe764bdccf" ] = #"hash_72d74d75e679897b";
+    level._effect[ #"play_death_uncharged" ] = #"hash_7b7ba0ac0755a064";
+    level._effect[ #"play_death_charged" ] = #"hash_318aaa12f9dc7fd4";
+    level._effect[ #"play_earth_uncharged" ] = #"hash_569b6effe4db6f54";
+    level._effect[ #"play_earth_charged" ] = #"hash_513bda1b67490064";
+    level._effect[ #"play_air_uncharged" ] = #"hash_194fead3457d21f5";
+    level._effect[ #"play_air_charged" ] = #"hash_17e9105690c8500d";
+    level._effect[ #"play_light_uncharged" ] = #"hash_7e9736ee8b5ec443";
+    level._effect[ #"play_light_charged" ] = #"hash_72d74d75e679897b";
     level._effect[ #"hash_579a1ad0a61119fc" ] = #"hash_150e82f10596be24";
     level._effect[ #"hash_257185644d8c28b0" ] = #"hash_31c3c5542f095358";
     level._effect[ #"hash_79910e1d73c43922" ] = #"hash_39c7de58cd57bf14";
@@ -915,18 +915,18 @@ function function_ad6b5484( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval )
     {
-        if ( !isdefined( self.var_c4c53839 ) )
+        if ( !isdefined( self.n_light_fx ) )
         {
-            self.var_c4c53839 = util::playfxontag( localclientnum, level._effect[ #"hash_7fc7f7b5958831d4" ], self, "tag_origin" );
+            self.n_light_fx = util::playfxontag( localclientnum, level._effect[ #"hash_7fc7f7b5958831d4" ], self, "tag_origin" );
         }
         
         return;
     }
     
-    if ( isdefined( self.var_c4c53839 ) )
+    if ( isdefined( self.n_light_fx ) )
     {
-        stopfx( localclientnum, self.var_c4c53839 );
-        self.var_c4c53839 = undefined;
+        stopfx( localclientnum, self.n_light_fx );
+        self.n_light_fx = undefined;
     }
 }
 
@@ -1041,7 +1041,7 @@ function function_6d38ea52( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0xbab7fe49, Offset: 0x5170
 // Size: 0x146
-function function_70e5b4bd( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function play_death_selected( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {
@@ -1070,7 +1070,7 @@ function function_70e5b4bd( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0xecd9163f, Offset: 0x52c0
 // Size: 0x146
-function function_f648d45a( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function play_earth_selected( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {
@@ -1099,7 +1099,7 @@ function function_f648d45a( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x819b8487, Offset: 0x5410
 // Size: 0x146
-function function_40cc4833( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function play_air_selected( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {
@@ -1128,7 +1128,7 @@ function function_40cc4833( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x6e1c8396, Offset: 0x5560
 // Size: 0x146
-function function_83c7dece( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function play_light_selected( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {
@@ -1184,9 +1184,9 @@ function function_530c191c( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x5772277e, Offset: 0x57a8
 // Size: 0x7c
-function function_cb766634( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function play_death_uncharged( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    str_fx = level._effect[ #"hash_415416bf220de94" ];
+    str_fx = level._effect[ #"play_death_uncharged" ];
     self function_95d76b40( localclientnum, newval, str_fx );
 }
 
@@ -1194,9 +1194,9 @@ function function_cb766634( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x9218b016, Offset: 0x5830
 // Size: 0x7c
-function function_3e4aa1cc( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function play_death_charged( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    str_fx = level._effect[ #"hash_3e2b1092de25c2dd" ];
+    str_fx = level._effect[ #"play_death_charged" ];
     self function_95d76b40( localclientnum, newval, str_fx );
 }
 
@@ -1204,9 +1204,9 @@ function function_3e4aa1cc( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x4b006f65, Offset: 0x58b8
 // Size: 0x7c
-function function_fac1b5c7( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function play_earth_uncharged( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    str_fx = level._effect[ #"hash_24b5302c2f39ebc2" ];
+    str_fx = level._effect[ #"play_earth_uncharged" ];
     self function_95d76b40( localclientnum, newval, str_fx );
 }
 
@@ -1214,9 +1214,9 @@ function function_fac1b5c7( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0xb8493d4b, Offset: 0x5940
 // Size: 0x7c
-function function_106dc737( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function play_earth_charged( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    str_fx = level._effect[ #"hash_6a8479b5a5b359a7" ];
+    str_fx = level._effect[ #"play_earth_charged" ];
     self function_95d76b40( localclientnum, newval, str_fx );
 }
 
@@ -1224,9 +1224,9 @@ function function_106dc737( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x474176fc, Offset: 0x59c8
 // Size: 0x7c
-function function_343099ca( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function play_air_uncharged( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    str_fx = level._effect[ #"hash_4feb66128e57d092" ];
+    str_fx = level._effect[ #"play_air_uncharged" ];
     self function_95d76b40( localclientnum, newval, str_fx );
 }
 
@@ -1234,9 +1234,9 @@ function function_343099ca( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x6056e57b, Offset: 0x5a50
 // Size: 0x7c
-function function_c5443282( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function play_air_charged( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    str_fx = level._effect[ #"hash_7552d5567ab25417" ];
+    str_fx = level._effect[ #"play_air_charged" ];
     self function_95d76b40( localclientnum, newval, str_fx );
 }
 
@@ -1244,9 +1244,9 @@ function function_c5443282( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x10d55a99, Offset: 0x5ad8
 // Size: 0x7c
-function function_f39e44d7( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function play_light_uncharged( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    str_fx = level._effect[ #"hash_4e1b58f05f69a65a" ];
+    str_fx = level._effect[ #"play_light_uncharged" ];
     self function_95d76b40( localclientnum, newval, str_fx );
 }
 
@@ -1254,9 +1254,9 @@ function function_f39e44d7( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x90d23abf, Offset: 0x5b60
 // Size: 0x7c
-function function_6bd8c915( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function play_light_charged( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    str_fx = level._effect[ #"hash_5a6761fe764bdccf" ];
+    str_fx = level._effect[ #"play_light_charged" ];
     self function_95d76b40( localclientnum, newval, str_fx );
 }
 
@@ -1288,7 +1288,7 @@ function function_95d76b40( localclientnum, newval, str_fx )
 // Params 7
 // Checksum 0x1e05f915, Offset: 0x5cb8
 // Size: 0x64
-function function_af9f249c( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function play_death_spotlight( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     function_b750bd91( localclientnum, newval, #"death" );
 }
@@ -1297,7 +1297,7 @@ function function_af9f249c( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0xeab514c4, Offset: 0x5d28
 // Size: 0x64
-function function_704042f5( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function play_earth_spotlight( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     function_b750bd91( localclientnum, newval, #"earth" );
 }
@@ -1306,7 +1306,7 @@ function function_704042f5( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0x5ba3d214, Offset: 0x5d98
 // Size: 0x64
-function function_a1833637( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function play_air_spotlight( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     function_b750bd91( localclientnum, newval, #"air" );
 }
@@ -1315,7 +1315,7 @@ function function_a1833637( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 7
 // Checksum 0xc47dacb1, Offset: 0x5e08
 // Size: 0x64
-function function_52659f14( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function play_light_spotlight( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     function_b750bd91( localclientnum, newval, #"light" );
 }
@@ -1798,7 +1798,7 @@ function blood_teleport( localclientnum, oldval, newval, bnewent, binitialsnap, 
 // Params 7
 // Checksum 0x44d16699, Offset: 0x7590
 // Size: 0x13a
-function function_bb7443e( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function blood_disable_keyline( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     if ( newval )
     {

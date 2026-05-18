@@ -427,7 +427,7 @@ function soul_catcher_state_manager()
         self waittill( #"fully_charged", #"finished_eating" );
     }
     
-    self notify( #"hash_1c2dd0a16f7ac134" );
+    self notify( #"wolf_departing" );
     self.mdl_rune clientfield::set( "" + #"soul_catcher_portal", 0 );
     self.mdl_rune setmodel( "p8_zm_esc_dream_catcher" );
     self.s_scene scene::play( "Depart" );
@@ -440,7 +440,7 @@ function soul_catcher_state_manager()
 function function_ee929ece()
 {
     self notify( #"wolf_idling" );
-    self endon( #"wolf_eating", #"hash_1c2dd0a16f7ac134", #"wolf_idling" );
+    self endon( #"wolf_eating", #"wolf_departing", #"wolf_idling" );
     
     while ( true )
     {
