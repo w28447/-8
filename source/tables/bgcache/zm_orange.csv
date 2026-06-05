@@ -3281,7 +3281,7 @@ string,#hash_c0c2aecab7c9830
 string,#hash_c2b77be4cf5b142
 string,#mpui/damage2_desc
 string,#hash_ca361c0650153b4
-string,#hash_cb4301a3d4b0ff8
+string,#zm_orange/dynamite_bomb_place_keyboard
 string,#hash_d8622d38b0078a8
 string,#hash_e2971bbfafcfe66
 string,#mpui/fastlockon_desc
@@ -3761,7 +3761,7 @@ string,#hash_6e0cbceab229716f
 string,#hash_6e155a8da74ae1b6
 string,#mpui/camo_active_objective_kills
 string,#hash_6e86b49d6d5196af
-string,#hash_6e8ef1b690e98e51
+string,#zombie/button_buy_trap_keyboard
 string,#hash_6e930083d005e020
 string,#hash_6eced05b46f243a8
 string,#hash_6fdaad97d9d28c43
@@ -3774,7 +3774,7 @@ string,#zombie/need_power
 string,#hash_714cce81de873f11
 string,#mpui/acog
 string,#mpui/damage2
-string,#hash_71bb91d3e3e956ee
+string,#zm_orange/edge_exit_keyboard
 string,#hash_71bf3704c3ae5a0e
 string,#hash_73104bba6c6aebd1
 string,#zmweapon/smg_thompson_upgraded

@@ -84,7 +84,7 @@ function event_handler[gametype_init] main( eventstruct )
     level.var_ef1a71b3 = &get_zombie_count_for_round;
     level.var_76859bbd = &function_1687c93;
     level.custom_door_buy_check = &function_7acf9d9b;
-    level.var_2e93df96 = &function_7acf9d9b;
+    level.custom_debris_buy_check = &function_7acf9d9b;
     level.var_d0b54199 = &set_door_hint_string;
     level.var_9093a47e = &set_door_hint_string;
     level.var_ddcd74c6 = &set_door_hint_string;

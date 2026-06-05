@@ -55571,7 +55571,7 @@ stringtable,#hash_27c5f147561bf245
 stringtable,#hash_2986664e382aa135
 stringtable,#hash_2b1cffc7c5038848
 stringtable,#hash_2ecd1931cdceb2fb
-stringtable,#hash_32f6538ea0af7458
+stringtable,#gamedata/loot/loot_item_shop.csv
 stringtable,#hash_34d842d45f57f3a6
 stringtable,#hash_35664bca02258fe5
 stringtable,#hash_35988f30b81385d8
@@ -55595,7 +55595,7 @@ stringtable,#gamedata/loot/loot_contraband.csv
 stringtable,#hash_571b16584e35bb31
 stringtable,#hash_5a5316d31de70234
 stringtable,#hash_5b4ac0940ecc3f38
-stringtable,#hash_5c6dc30ffb97ee8b
+stringtable,#gamedata/loot/loot_detitems.csv
 stringtable,#hash_5d3ebd52e3a6338a
 stringtable,#gamedata/stats/globalchallenges.csv
 stringtable,#hash_613cec2364df5afc
@@ -55628,7 +55628,7 @@ leaderboarddef,d#LB_MP_GM_TDM_HC
 leaderboarddef,d#lb_zm_gb
 leaderboarddef,d#LB_MP_GM_GUN_HC
 leaderboarddef,d#LB_MP_GM_KOTH
-leaderboarddef,d#hash_9ee8cc91c547bb9
+leaderboarddef,d#lb_zm_ga_zodt8_var1
 leaderboarddef,d#lb_mp_gm_heist
 leaderboarddef,d#LB_MP_GM_BALL_HC
 leaderboarddef,d#LB_MP_GM_DOM_ARENA
@@ -55672,7 +55672,7 @@ leaderboarddef,d#LB_MP_ANTICHEAT_KOTH
 leaderboarddef,d#LB_MP_GB_SCORE_ARENA
 leaderboarddef,d#LB_MP_GM_SD_HC
 leaderboarddef,d#lb_zm_ga_zodt8
-leaderboarddef,d#hash_764d7f553af03804
+leaderboarddef,d#lb_mp_gm_control_arena
 leaderboarddef,d#LB_MP_GM_KOTH_ARENA
 leaderboarddef,d#LB_MP_GM_CONF_HC
 leaderboarddef,d#LB_MP_GM_CONF
@@ -80512,7 +80512,7 @@ playerroletemplate,d#prt_mp_swatpolice
 playerroletemplate,d#prt_mp_spectre
 playerroletemplate,d#prt_wz_trapper
 playerroletemplate,d#prt_mp_recon
-playerroletemplate,d#hash_62361c68e083d401
+playerroletemplate,d#prt_wz_technomancer
 playerroletemplate,d#prt_mp_battery
 playerroletemplate,d#prt_wz_mercenary
 playerroletemplate,d#prt_mp_enforcer

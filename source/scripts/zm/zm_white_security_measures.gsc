@@ -1248,7 +1248,7 @@ function function_67b12ae8( e_player )
     
     if ( function_8b1a219a() )
     {
-        self sethintstring( #"hash_6e8ef1b690e98e51", 1000 );
+        self sethintstring( #"zombie/button_buy_trap_keyboard", 1000 );
         return 1;
     }
     

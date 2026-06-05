@@ -1,6 +1,6 @@
 type,name
-streamkey,#hash_7ab3685bea42c7a5
-streamkey,#hash_35f32a746efb9a0
+streamkey,#core_bootstrap_fj_stream
+streamkey,#core_bootstrap_fj_loaded
 streamkey,#hash_1c0c7e80944ab9a3
 streamkey,#hash_1c2ce57efb5278aa
 sound,#core_bootstrap.fj

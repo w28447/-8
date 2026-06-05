@@ -1558,7 +1558,7 @@ function on_character_unlock( params )
         var_4e36df97 = player stats::get_stat( #"characters", #"prt_wz_firebreak", #"unlocked" );
         var_a71f1b0f = player stats::get_stat( #"characters", #"prt_wz_enforcer", #"unlocked" );
         var_199c1316 = player stats::get_stat( #"characters", #"prt_wz_trapper", #"unlocked" );
-        var_6851d31e = player stats::get_stat( #"characters", #"hash_62361c68e083d401", #"unlocked" );
+        var_6851d31e = player stats::get_stat( #"characters", #"prt_wz_technomancer", #"unlocked" );
         var_f67cceb4 = player stats::get_stat( #"characters", #"prt_wz_swatpolice", #"unlocked" );
         var_7fec1dca = player stats::get_stat( #"characters", #"prt_wz_buffassault", #"unlocked" );
         var_ccc5605d = player stats::get_stat( #"characters", #"prt_wz_engineer", #"unlocked" );

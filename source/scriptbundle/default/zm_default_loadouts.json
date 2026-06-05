@@ -275,7 +275,7 @@
             "hash_6be35a7a": 4,
             "startweapon": "#pistol_topbreak_t8",
             "hash_a2df9d5d": 4,
-            "hash_a81f6d7e4b4fe27:hash_5f547a4f": "localized17#hash_a81f6d7e4b4fe27",
+            "class/zm_sword_pistol:hash_5f547a4f": "localized17#class/zm_sword_pistol",
             "hash_4a73ec43": 4,
             "primarygrenade": "#eq_frag_grenade",
             "herogadget": "#hero_flamethrower_t8_lv1"

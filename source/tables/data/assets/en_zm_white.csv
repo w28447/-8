@@ -552,7 +552,7 @@ localizeentry,#hash_e6035ed051c2623
 localizeentry,#hash_e6036ed051c27d6
 localizeentry,#hash_e6037ed051c2989
 localizeentry,#hash_e6038ed051c2b3c
-localizeentry,#hash_e69f458673c2cb3
+localizeentry,#zm_escape/spinning_trap_keyboard
 localizeentry,d#mpui/fastlockon_desc
 localizeentry,#hash_e756ff4ea1cce0d
 localizeentry,#hash_e788420c1615e5d
@@ -4796,7 +4796,7 @@ localizeentry,#hash_6e7669d3bb8cea5b
 localizeentry,#hash_6e766ad3bb8cec0e
 localizeentry,#hash_6e8536d19ffe4e31
 localizeentry,d#hash_6e86b49d6d5196af
-localizeentry,d#hash_6e8ef1b690e98e51
+localizeentry,d#zombie/button_buy_trap_keyboard
 localizeentry,#hash_6e8faa9a4afef833
 localizeentry,#hash_6e8fb59a4aff0ae4
 localizeentry,#hash_6e8fb79a4aff0e4a
@@ -5315,7 +5315,7 @@ localizeentry,#hash_7b4c60e7878c5804
 localizeentry,#hash_7b4c62e7878c5b6a
 localizeentry,#hash_7b4c63e7878c5d1d
 localizeentry,#hash_7b4cf75c36b15f1e
-localizeentry,#hash_7b540f4d1ffa1212
+localizeentry,#zm_white/replace_weapon_keyboard
 localizeentry,#hash_7b8fe6f5e0485535
 localizeentry,#hash_7b9e358ce7c413ea
 localizeentry,#hash_7ba8395e1616e2e4

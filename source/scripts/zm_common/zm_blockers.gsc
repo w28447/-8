@@ -1431,9 +1431,9 @@ function debris_think()
         
         if ( isdefined( who ) )
         {
-            if ( isdefined( level.var_2e93df96 ) )
+            if ( isdefined( level.custom_debris_buy_check ) )
             {
-                if ( !who [[ level.var_2e93df96 ]]( self ) )
+                if ( !who [[ level.custom_debris_buy_check ]]( self ) )
                 {
                     continue;
                 }

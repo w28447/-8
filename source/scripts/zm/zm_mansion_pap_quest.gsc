@@ -657,7 +657,7 @@ function function_53c0c5e( player )
 {
     if ( function_fc79b7da( "crystal_main_hall" ) || function_fc79b7da( "crystal_library" ) || function_fc79b7da( "crystal_greenhouse" ) )
     {
-        str_prompt = zm_utility::function_d6046228( #"zm_mansion/unlock_pap_gate", #"hash_2b92feb97bdafc9b" );
+        str_prompt = zm_utility::function_d6046228( #"zm_mansion/unlock_pap_gate", #"zm_mansion/unlock_pap_gate_keyboard" );
         self sethintstringforplayer( player, str_prompt );
         return true;
     }

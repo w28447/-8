@@ -425,7 +425,7 @@ function challenges_init()
     level.var_b7ad6f5b = function_5f516f9d( #"hash_683d7dfc8782d6b9", 1 );
     level.var_c30109f4 = function_5f516f9d( #"weapon_class_kills_smg", 1 );
     level.var_4ac5338a = function_5f516f9d( #"weapon_class_kills_lmg", 1 );
-    level.var_26d708d7 = function_5f516f9d( #"hash_4d4a62396c1ec8", 1 );
+    level.var_26d708d7 = function_5f516f9d( #"weapon_class_kills_tactical", 1 );
     level.var_92dc2d7c = function_5f516f9d( #"weapon_class_kills_sniper", 1 );
 }
 
@@ -742,9 +742,9 @@ function function_1833fe3e( einflictor, attacker, idamage, smeansofdeath, weapon
                 
                 break;
             case #"weapon_tactical":
-                if ( attacker newvalueoptions( #"hash_4d4a62396c1ec8" ) < level.var_26d708d7 )
+                if ( attacker newvalueoptions( #"weapon_class_kills_tactical" ) < level.var_26d708d7 )
                 {
-                    attacker function_9401373f( #"hash_4d4a62396c1ec8", 1 );
+                    attacker function_9401373f( #"weapon_class_kills_tactical", 1 );
                 }
                 
                 break;
@@ -994,7 +994,7 @@ function function_78a17c00()
         b_complete = 0;
     }
     
-    if ( self newvalueoptions( #"hash_4d4a62396c1ec8" ) < level.var_26d708d7 )
+    if ( self newvalueoptions( #"weapon_class_kills_tactical" ) < level.var_26d708d7 )
     {
         b_complete = 0;
     }

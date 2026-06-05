@@ -464,7 +464,7 @@ function function_b2e1326( var_58df9892, var_1dc9c1bf = 1 )
             }
             else if ( function_8b1a219a() )
             {
-                self sethintstring( #"hash_6e8ef1b690e98e51", var_1dc9c1bf );
+                self sethintstring( #"zombie/button_buy_trap_keyboard", var_1dc9c1bf );
             }
             else
             {

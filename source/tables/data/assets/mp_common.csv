@@ -27242,7 +27242,7 @@ luafile,#hash_53763ccddc278e45
 luafile,#ui/uieditor/luielems/mp/ct_firebreak_multi_kill.lua
 luafile,d#ui/uieditor/widgets/mphudwidgets/waypointarrow.lua
 luafile,#ui/uieditor/widgets/mphudwidgets/sprintmeter/sprintmeterdots.lua
-luafile,#hash_53cc3519da334b05
+luafile,#ui/uieditor/widgets/health/armorbar.lua
 luafile,#ui/uieditor/widgets/vehiclehuds/dart/vhud_dart_centerreticlehorizonline.lua
 luafile,#hash_53fa94c653e720e7
 luafile,#ui/uieditor/widgets/notifications/notificationqueuewidgets/notificationrewardqueue.lua

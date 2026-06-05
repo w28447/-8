@@ -102,7 +102,7 @@
             "len": 60
         },
         {
-            "name": "#hash_46b8ae8b89bf06c2",
+            "name": "#is_game_lobby_active",
             "scrName": "#hash_6454c7d9",
             "type": "BOOL"
         },
@@ -112,7 +112,7 @@
             "type": "BOOL"
         },
         {
-            "name": "#hash_5862d3f1b0f11978",
+            "name": "#lobby_network_mode",
             "scrName": "#hash_4715de42",
             "type": "INT32",
             "len": 60

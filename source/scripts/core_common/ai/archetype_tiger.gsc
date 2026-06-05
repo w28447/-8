@@ -75,9 +75,9 @@ function autoexec registerbehaviorscriptfunctions()
     assert( !isdefined( &function_4c2b7bad ) || isscriptfunctionptr( &function_4c2b7bad ) );
     behaviortreenetworkutility::registerbehaviortreeaction( #"hash_2e58caee41c5d7a1", &function_37e8c141, undefined, &function_4c2b7bad );
     assert( !isdefined( &function_d65e3f15 ) || isscriptfunctionptr( &function_d65e3f15 ) );
-    assert( !isdefined( &p8_usa_farm_tools_hoe_lod2_s1_geo_rigid_bs_7cqeqf2k2nw2binsrm67nqzdzf ) || isscriptfunctionptr( &p8_usa_farm_tools_hoe_lod2_s1_geo_rigid_bs_7cqeqf2k2nw2binsrm67nqzdzf ) );
+    assert( !isdefined( &function_f6f4282f ) || isscriptfunctionptr( &function_f6f4282f ) );
     assert( !isdefined( &function_4fc73b37 ) || isscriptfunctionptr( &function_4fc73b37 ) );
-    behaviortreenetworkutility::registerbehaviortreeaction( #"hash_167c243dad6945a8", &function_d65e3f15, &p8_usa_farm_tools_hoe_lod2_s1_geo_rigid_bs_7cqeqf2k2nw2binsrm67nqzdzf, &function_4fc73b37 );
+    behaviortreenetworkutility::registerbehaviortreeaction( #"hash_167c243dad6945a8", &function_d65e3f15, &function_f6f4282f, &function_4fc73b37 );
     assert( isscriptfunctionptr( &function_40b8200d ) );
     behaviortreenetworkutility::registerbehaviortreescriptapi( #"hash_6d3bf729ded27272", &function_40b8200d );
     assert( isscriptfunctionptr( &function_1055f5e7 ) );
@@ -778,7 +778,7 @@ function private function_d65e3f15( entity, asmstatename )
 // Params 2, eflags: 0x4
 // Checksum 0x556a9cd9, Offset: 0x27a0
 // Size: 0x2b8
-function private p8_usa_farm_tools_hoe_lod2_s1_geo_rigid_bs_7cqeqf2k2nw2binsrm67nqzdzf( entity, asmstatename )
+function private function_f6f4282f( entity, asmstatename )
 {
     if ( entity asmgetstatus() == "asm_status_complete" )
     {

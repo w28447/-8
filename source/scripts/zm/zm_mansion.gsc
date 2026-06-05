@@ -2766,7 +2766,7 @@ function function_ff767eac()
             {
                 if ( isalive( ai_zombie ) && isdefined( ai_zombie.archetype ) && ( ai_zombie.archetype == #"zombie" || ai_zombie.archetype == #"nosferatu" || ai_zombie.archetype == #"zombie_dog" ) )
                 {
-                    ai_zombie clientfield::set( "<dev string:x3f5a>" + #"wisp_kill", 1 );
+                    ai_zombie clientfield::set( "" + #"wisp_kill", 1 );
                     ai_zombie.var_3f5addd0 = 1;
                 }
             }
@@ -2875,11 +2875,11 @@ function function_ff767eac()
         while ( isdefined( 1 ) )
         {
             wait 2;
-            array::thread_all( var_8f129c8e, &clientfield::set, "<dev string:x3f5a>" + #"hash_47b8db8cde2c4291", 13 );
+            array::thread_all( var_8f129c8e, &clientfield::set, "" + #"hash_47b8db8cde2c4291", 13 );
             wait 2;
             level notify( #"hash_5a23f461b8ae05a4" );
             wait 2;
-            array::thread_all( var_8f129c8e, &clientfield::set, "<dev string:x3f5a>" + #"hash_47b8db8cde2c4291", 0 );
+            array::thread_all( var_8f129c8e, &clientfield::set, "" + #"hash_47b8db8cde2c4291", 0 );
         }
     }
 
@@ -2934,7 +2934,7 @@ function function_ff767eac()
         }
         
         a_paintings[ a_paintings.size ] = getent( "<dev string:x3d06>", "<dev string:x90>" );
-        array::thread_all( a_paintings, &clientfield::set, "<dev string:x3f5a>" + #"hash_11eb6b7dc7db71ad", 1 );
+        array::thread_all( a_paintings, &clientfield::set, "" + #"hash_11eb6b7dc7db71ad", 1 );
     }
 
     // Namespace zm_mansion/zm_mansion
@@ -2988,7 +2988,7 @@ function function_ff767eac()
         }
         
         a_paintings[ a_paintings.size ] = getent( "<dev string:x3d06>", "<dev string:x90>" );
-        array::thread_all( a_paintings, &clientfield::set, "<dev string:x3f5a>" + #"hash_11eb6b7dc7db71ad", 0 );
+        array::thread_all( a_paintings, &clientfield::set, "" + #"hash_11eb6b7dc7db71ad", 0 );
     }
 
     // Namespace zm_mansion/zm_mansion
@@ -2999,11 +2999,11 @@ function function_ff767eac()
     {
         if ( cmd == "<dev string:x3fc5>" )
         {
-            array::thread_all( level.activeplayers, &clientfield::set, "<dev string:x3f5a>" + #"hash_49de76d6c4f95e5d", 0 );
+            array::thread_all( level.activeplayers, &clientfield::set, "" + #"hash_49de76d6c4f95e5d", 0 );
             return;
         }
         
-        array::thread_all( level.activeplayers, &clientfield::set, "<dev string:x3f5a>" + #"hash_49de76d6c4f95e5d", 1 );
+        array::thread_all( level.activeplayers, &clientfield::set, "" + #"hash_49de76d6c4f95e5d", 1 );
     }
 
     // Namespace zm_mansion/zm_mansion
@@ -3016,7 +3016,7 @@ function function_ff767eac()
         {
             if ( isalive( ai ) && ai.archetype === #"zombie" )
             {
-                ai clientfield::set( "<dev string:x3f5a>" + #"clock_zombie", 1 );
+                ai clientfield::set( "" + #"clock_zombie", 1 );
             }
         }
     }
@@ -3033,7 +3033,7 @@ function function_ff767eac()
             return;
         }
         
-        level clientfield::set( "<dev string:x3f5a>" + #"special_round_postfx", 0 );
+        level clientfield::set( "" + #"special_round_postfx", 0 );
     }
 
 #/

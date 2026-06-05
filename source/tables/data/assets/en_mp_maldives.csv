@@ -5,7 +5,7 @@ streamkey,#hash_6bd0c9df6fd7b5cd
 streamkey,#hash_5c855f8e2f208ff8
 sound,#mp_maldives.en
 localizeentry,#hash_6d52cdab6da28b
-localizeentry,#hash_22476de9700846d
+localizeentry,#mp_maldives/fire_laser
 localizeentry,#hash_28dd2651937dd0f
 localizeentry,#hash_5690ed01397d06f
 localizeentry,#hash_728634ec029edc3
@@ -25,7 +25,7 @@ localizeentry,#hash_1624513fa8402df4
 localizeentry,#hash_193d92c072a84fae
 localizeentry,#hash_19d7efb726079b18
 localizeentry,#hash_1a4cfa34ff250b05
-localizeentry,#hash_1a55000cd2cde548
+localizeentry,#mp_maldives/send_down
 localizeentry,#hash_1be9827e0d5a0975
 localizeentry,#hash_1c557ff73af3fdbb
 localizeentry,#hash_1c8e4225a05b0bb9
@@ -66,7 +66,7 @@ localizeentry,#hash_371628880a5f22a9
 localizeentry,#hash_388908b81a111ecb
 localizeentry,#hash_390c1158f3fb9c28
 localizeentry,#hash_3a516fbc0ec48071
-localizeentry,#hash_3a7047dd39e59cc1
+localizeentry,#mp_maldives/send_up
 localizeentry,#hash_3a9dd7281037a9bf
 localizeentry,#hash_3dab552b1c3ba324
 localizeentry,#hash_4178d91d9224cb56

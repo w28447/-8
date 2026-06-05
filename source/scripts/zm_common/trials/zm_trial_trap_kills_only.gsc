@@ -95,7 +95,7 @@ function private on_end( round_reset )
     }
     
     a_t_traps = getentarray( "zombie_trap", "targetname" );
-    str_text = zm_utility::function_d6046228( #"zombie/button_buy_trap", #"hash_6e8ef1b690e98e51" );
+    str_text = zm_utility::function_d6046228( #"zombie/button_buy_trap", #"zombie/button_buy_trap_keyboard" );
     
     foreach ( t_trap in a_t_traps )
     {

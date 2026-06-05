@@ -1,7 +1,7 @@
 {
     "keys": [
         {
-            "name": "#hash_33586f9344ba0f63",
+            "name": "#mp_cosmodrome_fj_stream",
             "xPakEntry": {
                 "key": "#hash_e7d907201e65ac32",
                 "offset": 0,
@@ -20,7 +20,7 @@
             "keyFlags": 3
         },
         {
-            "name": "#hash_65c3010efe110d6a",
+            "name": "#mp_cosmodrome_fj_loaded",
             "xPakEntry": {
                 "key": "#hash_e441b123c35f53de",
                 "offset": 0,

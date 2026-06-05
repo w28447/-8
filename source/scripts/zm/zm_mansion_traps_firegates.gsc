@@ -353,7 +353,7 @@ function function_9026cbcd( player )
     {
         if ( function_8b1a219a() )
         {
-            self sethintstring( #"hash_6e8ef1b690e98e51", self.stub.e_trap.zombie_cost );
+            self sethintstring( #"zombie/button_buy_trap_keyboard", self.stub.e_trap.zombie_cost );
             return true;
         }
         else

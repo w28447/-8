@@ -1,7 +1,7 @@
 {
     "keys": [
         {
-            "name": "#hash_2dd9161ef8e48002",
+            "name": "#wz_open_skyscrapers_fj_stream",
             "xPakEntry": {
                 "key": "#hash_f8789e9d6eab8154",
                 "offset": 0,
@@ -20,7 +20,7 @@
             "keyFlags": 3
         },
         {
-            "name": "#hash_3319b778d9fc1803",
+            "name": "#wz_open_skyscrapers_fj_loaded",
             "xPakEntry": {
                 "key": "#hash_e441b123c35f53de",
                 "offset": 0,

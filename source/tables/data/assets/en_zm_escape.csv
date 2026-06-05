@@ -392,7 +392,7 @@ localizeentry,#hash_b8aa5f60a3533a4
 localizeentry,d#mpui/fastreload2
 localizeentry,#hash_bb07f42803f4ca8
 localizeentry,#hash_bb1fc5109119cbd
-localizeentry,#hash_bbb24669638bc76
+localizeentry,#zm_escape/call_gondola
 localizeentry,d#hash_c00e36083498f28
 localizeentry,#zm_escape/move_gondola
 localizeentry,d#hash_c0c2aecab7c9830
@@ -451,7 +451,7 @@ localizeentry,#hash_e61eddf24307a0c
 localizeentry,#hash_e61eedf24307bbf
 localizeentry,#hash_e61efdf24307d72
 localizeentry,#hash_e61f4df243085f1
-localizeentry,#hash_e69f458673c2cb3
+localizeentry,#zm_escape/spinning_trap_keyboard
 localizeentry,d#mpui/fastlockon_desc
 localizeentry,#hash_e737d245c39d9ea
 localizeentry,#hash_e7c6577e5643420
@@ -1107,7 +1107,7 @@ localizeentry,#hash_237e860a952529ea
 localizeentry,#hash_2382acb5f1ce0cb3
 localizeentry,#hash_23ae833352769f3a
 localizeentry,d#mpui/camo_jungle
-localizeentry,#hash_23dad9a3f61cf052
+localizeentry,#zm_escape/call_gondola_keyboard
 localizeentry,#zm_escape/location_c_d_street
 localizeentry,d#mpui/dualoptic_desc
 localizeentry,#hash_241e21e5e37db430
@@ -2077,7 +2077,7 @@ localizeentry,#hash_454ece7dd43c4066
 localizeentry,#hash_454ecf7dd43c4219
 localizeentry,#hash_454ed87dd43c5164
 localizeentry,#hash_455b1ae7ea932324
-localizeentry,#hash_456f80deeaa8ebee
+localizeentry,#zm_escape/tomahawk_pickup_keyboard
 localizeentry,#hash_4585580f3e752083
 localizeentry,d#medal/headshot
 localizeentry,#hash_459b7bf2d4668b9f
@@ -2265,7 +2265,7 @@ localizeentry,#hash_4c6660fc46836709
 localizeentry,#hash_4c6669fc46837654
 localizeentry,#hash_4c666afc46837807
 localizeentry,#hash_4c666bfc468379ba
-localizeentry,#hash_4c75fc5691b181cc
+localizeentry,#zm_escape/dm_activate_keyboard
 localizeentry,#hash_4c806125b2099b2d
 localizeentry,#hash_4c83bb6fd69bf1ea
 localizeentry,#hash_4c8f57ca79a12d2a

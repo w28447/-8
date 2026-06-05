@@ -307,7 +307,7 @@ function function_e5bf8f08( player )
         {
             if ( function_8b1a219a() )
             {
-                self.stub.hint_string = #"hash_2791ecebb85142c4";
+                self.stub.hint_string = #"zombie/weaponcostonly_cfill_keyboard";
             }
             else
             {

@@ -647,7 +647,7 @@ function add_zombie_weapon( weapon_name, upgrade_name, is_ee, cost, weaponvo, we
     
     if ( function_8b1a219a() )
     {
-        struct.hint = #"hash_2791ecebb85142c4";
+        struct.hint = #"zombie/weaponcostonly_cfill_keyboard";
     }
     else
     {
@@ -1552,7 +1552,7 @@ function get_weapon_hint_ammo()
 {
     if ( function_8b1a219a() )
     {
-        return #"hash_2791ecebb85142c4";
+        return #"zombie/weaponcostonly_cfill_keyboard";
     }
     
     return #"zombie/weaponcostonly_cfill";

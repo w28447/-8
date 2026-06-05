@@ -649,7 +649,7 @@ function tomahawk_pickup()
         
         if ( function_8b1a219a() )
         {
-            trigger sethintstring( #"hash_456f80deeaa8ebee" );
+            trigger sethintstring( #"zm_escape/tomahawk_pickup_keyboard" );
         }
         else
         {

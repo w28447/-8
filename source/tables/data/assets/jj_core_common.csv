@@ -1,6 +1,6 @@
 type,name
-streamkey,#hash_308ef3a161d6e024
-streamkey,#hash_597dd14e21059661
+streamkey,#core_common_fj_stream
+streamkey,#core_common_fj_loaded
 streamkey,#hash_1823b40263fa6ed6
 streamkey,#hash_444e677862c11087
 sound,#core_common.fj
@@ -721,7 +721,7 @@ localizeentry,#hash_a7dac94098e113f
 localizeentry,#hash_a7dae94098e14a5
 localizeentry,#hash_a80fecfb20a6788
 localizeentry,#game/votealreadycast
-localizeentry,#hash_a81f6d7e4b4fe27
+localizeentry,#class/zm_sword_pistol
 localizeentry,#challenge/type_null
 localizeentry,d#hash_a8928d942d22aaa
 localizeentry,#hash_a8bba67d855b7c7
@@ -1935,7 +1935,7 @@ localizeentry,#hash_1ca9cd3cf80d394a
 localizeentry,#hash_1caaff6bc9ba13b6
 localizeentry,#key/ins
 localizeentry,#hash_1cc6074a001e1722
-localizeentry,#hash_1ccbcbb068003f80
+localizeentry,#zmtrials/deathcon
 localizeentry,#hash_1cccdf3e71b5d14b
 localizeentry,#hash_1cccf42405720988
 localizeentry,#hash_1ccd0489623dd5f7
@@ -3668,7 +3668,7 @@ localizeentry,#medal/kill_enemy_while_flashbanged
 localizeentry,#mpui/survived
 localizeentry,#emotes/sleepy
 localizeentry,#hash_376efe19fa8506dd
-localizeentry,d#hash_37702cf66b8230f9
+localizeentry,d#zmtrials/aidih
 localizeentry,#hash_3776f9ae5bed7fb6
 localizeentry,#hash_377fa7015ab6db6f
 localizeentry,#hash_3782b311b465cbba
@@ -5107,7 +5107,7 @@ localizeentry,#hash_4f0d8338677c1eda
 localizeentry,#hash_4f0d8438677c208d
 localizeentry,d#hash_4f0d8ebb363015e0
 localizeentry,#hash_4f11f292ea4f0085
-localizeentry,#hash_4f15651dbc75a77f
+localizeentry,#menu/time_remaining_d_h_m_s
 localizeentry,#hash_4f22473ebefcc51b
 localizeentry,d#hash_4f23c6ecb321fa19
 localizeentry,#contract/play_gun_game
@@ -7614,7 +7614,7 @@ localizeentry,#mp/match_starting
 localizeentry,#wz_escape/map_dest_powerhouse
 localizeentry,#medal/kill_enemy_with_gunbutt_desc
 localizeentry,#hash_739d93cfb9fc3e80
-localizeentry,#hash_73ad1335f9239c58
+localizeentry,#wz_challenges/survivalist_mastery
 localizeentry,d#menu/months_dec
 localizeentry,#challenge/humiliation_stop_enemy_killstreak
 localizeentry,#hash_73b8d2b98e628bd8

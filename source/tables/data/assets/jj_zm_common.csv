@@ -349,7 +349,7 @@ localizeentry,d#objectives/tdm_hint
 localizeentry,#zmtrials/fore
 localizeentry,#mp/remote_exit
 localizeentry,d#mpui/no_attachment_desc
-localizeentry,#hash_17fd44c733f7c66b
+localizeentry,#zmui/zm_aat_kill_o_watt
 localizeentry,#hash_1806f9822fe9c662
 localizeentry,d#mp/change_class_next_spawn
 localizeentry,d#presence/zm_escape
@@ -1347,7 +1347,7 @@ localizeentry,d#hash_5de28a4d70b730e1
 localizeentry,#hash_5dea3ff257cadc1b
 localizeentry,d#hash_5df50ce2dd193b5b
 localizeentry,d#hash_5e2c81adb5a5264a
-localizeentry,#hash_5e4e395171e8600c
+localizeentry,#demo/highlight_reel_mode
 localizeentry,#zmtrials/whats_the_point
 localizeentry,d#hash_5e6ae4119dda43e0
 localizeentry,d#hash_5e70cdc6933482f5
@@ -1792,7 +1792,7 @@ localizeentry,d#menu/cancel
 localizeentry,#zmweapon/pistol_fullauto_t8_upgraded
 localizeentry,d#hash_7c7cb60e8610be3a
 localizeentry,d#hash_7c90a430a330e85f
-localizeentry,#hash_7c985cba47878b1c
+localizeentry,#demo/playback_mode
 localizeentry,#hash_7c9932ec97180186
 localizeentry,#menu/charm_monty_bar
 localizeentry,d#mpui/mms

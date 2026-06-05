@@ -169,7 +169,7 @@
             "type": "BOOL"
         },
         {
-            "name": "#hash_671438d91ee14a83",
+            "name": "#max_local_players_allowed",
             "scrName": "#hash_cc9dbde7",
             "type": "INT32"
         },

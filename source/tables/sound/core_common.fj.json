@@ -10,9 +10,9 @@
     "ambients": [],
     "scriptIdLookups": [],
     "streamKeysSABL": {
-        "streamKey1": "#hash_308ef3a161d6e024",
+        "streamKey1": "#core_common_fj_stream",
         "dataSize1": 2048,
-        "fileKey": "#hash_597dd14e21059661",
+        "fileKey": "#core_common_fj_loaded",
         "fileLen": 2048
     },
     "streamKeysSABS": {

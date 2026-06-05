@@ -1051,7 +1051,7 @@ image,d#ui_icon_callingcards_mp_marksman_shotgun_marksman
 image,d#ui_icon_mp_league_08_02b_large
 image,d#uie_ui_icon_callingcards_zm_prestige_allseeingeye_pyramid_torch_flame
 image,d#launcher_standard_t8_camo_delta_zm_icon
-image,d#hash_e4525338a0f713a
+image,d#uie_ui_icon_callingcards_steampunkwarriors_head
 image,#menu_camo_ce_cyborg_pattern
 image,d#ar_modular_t8_camo_dlc4_fractalized_icon
 image,d#lmg_spray_t8_camo_dlc4_paradise_icon
@@ -1068,7 +1068,7 @@ image,d#ui_icon_mp_league_25_01_large
 image,d#uie_ui_menu_callingcards_robbery_hero
 image,d#hash_e8dfe06491652e0
 image,d#menu_camo_golf_wz_pattern
-image,d#hash_ea1798592df7f4e
+image,d#uie_ui_icon_callingcards_zombieapocalypse_blood
 image,d#ui_icon_blackmarket_contracts_completed
 image,d#smg_accurate_t8_camo_dlc4_astronomy_icon
 image,#t7_loot_decal_robber
@@ -1531,8 +1531,8 @@ image,d#ui_icon_mp_league_11_02
 image,d#ui_icon_mp_league_11_01
 image,d#ar_modular_t8_camo_mike_zm_icon
 image,d#loot_ui_icon_stickers_random_26_large
-image,d#hash_16a21fa8b9005f90
-image,d#hash_16a222a8b90064a9
+image,d#uie_ui_icon_callingcards_zombieapocalypse_man2
+image,d#uie_ui_icon_callingcards_zombieapocalypse_man1
 image,d#menu_camo_active_rapid_kills_pattern
 image,#hash_16ad3928981f6ac2
 image,d#lmg_heavy_t8_camo_delta_wz_icon
@@ -1599,7 +1599,7 @@ image,d#menu_camo_high_roller
 image,d#ui_icon_blackmarket_promos_summer_menendez_item_detail
 image,d#uie_callingcards_mp_loot_master_lionwing
 image,d#smg_vmp_t8_camo_charlie_zm_icon
-image,d#hash_17bb8a78af5b0e9b
+image,d#uie_ui_icon_callingcards_steampunkwarriors_bg
 image,#ui_icon_bo4_overlay
 image,d#melee_coinbag_t8_camo_juliett_icon
 image,d#sniper_damagesemi_t8_camo_kilo_icon
@@ -1683,7 +1683,7 @@ image,d#smg_fastfire_t8_camo_november_icon
 image,d#menu_camo_active_shattered_pattern
 image,d#sniper_powersemi_t8_camo_mike_icon
 image,d#ar_modular_t8_camo_dlc5_dinoglyph_icon
-image,d#hash_194414e3405b163e
+image,d#uie_ui_icon_callingcards_steampunkwarriors_gunsmokeeffect
 image,d#ui_icon_mp_league_27_04_large
 image,d#hash_1950d171e4f910f9
 image,d#tr_longburst_t8_camo_active_dlc5_solarflare_01_icon
@@ -2445,7 +2445,7 @@ image,d#lmg_standard_t8_camo_dlc4_goosebumps_icon
 image,d#melee_stopsign_t8_camo_bravo_icon
 image,d#sniper_powerbolt_t8_camo_active_dlc5_circle_slice_01_icon
 image,d#tr_longburst_t8_camo_charlie_zm_icon
-image,d#hash_23c51811f0dda462
+image,d#uie_ui_icon_callingcards_steampunkwarriors_arm
 image,d#loot_ui_icon_callingcards_misty
 image,d#ui_icon_mp_league_18_01_large
 image,#xenon_controller_top
@@ -2568,7 +2568,7 @@ image,d#hash_25974dcdc6cec877
 image,d#lmg_standard_t8_camo_november_icon
 image,d#shotgun_semiauto_t8_camo_bravo_icon
 image,d#menu_camo_mike_wz_pattern
-image,d#hash_25b081ef25253c37
+image,d#uie_ui_icon_callingcards_steampunkwarriors_gunshoteffect
 image,d#uie_callingcards_mp_loot_master_lionstinger
 image,d#smg_handling_t8_camo_echo_zm_icon
 image,#uie_t7_core_hud_mapwidget_panelglow
@@ -2826,7 +2826,7 @@ image,d#smg_folding_t8_camo_lima_icon
 image,d#ui_icon_attachment_sniper_quickrechamber_opmod
 image,d#smg_minigun_t8_camo_india_zm_icon
 image,d#smg_folding_t8_camo_alfa_wz_icon
-image,d#hash_29aa19c587127898
+image,d#uie_ui_icon_callingcards_zombieapocalypse_head
 image,d#uie_ui_icon_callingcards_dystopian_armhighlight
 image,d#lmg_heavy_t8_camo_dlc5_america_icon
 image,d#pistol_burst_t8_camo_dlc3_blowfish_icon
@@ -3121,7 +3121,7 @@ image,d#melee_slaybell_t8_camo_bravo_icon
 image,d#uie_ui_menu_blackmarket_triple_play_frame_01
 image,d#ui_icon_weapon_smg_minigun_render
 image,d#sniper_quickscope_t8_camo_bravo_zm_icon
-image,d#hash_2dd89d11e5a6d3ad
+image,d#uie_ui_icon_callingcard_zombie_lettus
 image,d#ui_icon_callingcards_mp_career_game_heroics_bomb_squad
 image,d#sniper_powerbolt_t8_camo_dlc3_shark_plaque_icon
 image,d#knife_loadout_camo_dlc5_greengradient_icon
@@ -3499,8 +3499,8 @@ image,d#smg_accurate_t8_camo_dlc5_jellymaw_icon
 image,d#ar_doublebarrel_t8_camo_diamond_icon
 image,d#smg_fastfire_t8_camo_lima_zm_icon
 image,d#pistol_standard_t8_camo_mike_icon
-image,d#hash_32799da8610f3b1b
-image,d#hash_32799ea8610f3cce
+image,d#uie_ui_icon_callingcard_asset_zombie1
+image,d#uie_ui_icon_callingcard_asset_zombie2
 image,d#hash_327a4adce2d60323
 image,d#loot07_ui_icon_blackmarket_itemshop_bundle_tedd
 image,#hash_3285ce171e8bb994
@@ -4128,7 +4128,7 @@ image,d#ui_icon_callingcards_mp_prestige_gear_body_armor
 image,d#ui_icon_blackmarket_promos_tactical_unicorn_button_large
 image,d#melee_cutlass_t8_camo_lima_wz_icon
 image,d#smg_accurate_t8_camo_juliett_zm_icon
-image,d#hash_3be0f9f891c59fb4
+image,d#uie_ui_icon_callingcards_zombieapocalypse_blood2
 image,#hash_3be65e6e82ab6cdf
 image,d#shotgun_fullauto_t8_camo_charlie_icon
 image,d#ui_icon_callingcards_zm_prestige_allseeingeye
@@ -4192,7 +4192,7 @@ image,d#special_ballisticknife_t8_dw_camo_foxtrot_wz_icon
 image,d#sniper_damagesemi_t8_camo_gold_icon
 image,d#shotgun_pump_t8_camo_hotel_zm_icon
 image,d#loot_ui_icon_stickers_chromedout_2_large
-image,d#hash_3d6e6311dec75e89
+image,d#uie_ui_icon_callingcards_zombieapocalypse_bg
 image,d#t7_menu_loadingspinner_flipbook
 image,d#smg_standard_t8_camo_mike_icon
 image,d#ui_icon_mp_league_07_02b
@@ -4619,7 +4619,7 @@ image,d#ui_icon_callingcards_mp_prestige_gear_bad_idea
 image,d#tr_powersemi_t8_camo_hotel_zm_icon
 image,d#ar_accurate_t8_camo_active_dlc1_dogfight_wrapper_icon
 image,d#loot07_ui_icon_blackmarket_itemshop_kn57_mastercraft
-image,d#hash_4354b65d9afc3da0
+image,d#uie_ui_icon_callingcards_zombieapocalypse_arm
 image,d#menu_camo_maitai_pattern
 image,d#ui_icon_zm_calling_tasks_explosion
 image,d#smg_vmp_t8_camo_darkmatter_02_icon
@@ -4941,8 +4941,8 @@ image,d#uie_ui_icon_callingcards_professional_master_clouds
 image,d#uie_ui_icon_callingcards_marksman_master_background_ghost_01
 image,d#uie_ui_icon_callingcards_marksman_master_background_ghost_02
 image,d#smg_minigun_t8_camo_foxtrot_zm_icon
-image,d#hash_4839bd840d8c0b97
-image,d#hash_4839be840d8c0d4a
+image,d#uie_ui_icon_callingcard_zombie_bun2
+image,d#uie_ui_icon_callingcard_zombie_bun1
 image,d#ui_icon_callingcards_mp_prestige_prestige_ninja
 image,d#smg_capacity_t8_camo_foxtrot_wz_icon
 image,d#tr_powersemi_t8_camo_lima_icon
@@ -4964,7 +4964,7 @@ image,d#ui_icon_callingcards_mp_mode_killer_doingwork
 image,d#ui_icon_wildcard_primarygunfighter03_large
 image,d#melee_club_t8_camo_november_zm_icon
 image,d#sniper_mini14_t8_camo_juliett_zm_icon
-image,d#hash_488002fbfb6adbb7
+image,d#uie_ui_icon_callingcards_zombieapocalypse_smoke
 image,d#hash_4883826ef2edae50
 image,d#tr_flechette_t8_camo_diamond_icon
 image,d#special_ballisticknife_t8_dw_camo_lima_wz_icon
@@ -5639,7 +5639,7 @@ image,d#ui_icon_attachment_highcaliber
 image,d#smg_vmp_t8_camo_november_icon
 image,d#ar_galil_t8_camo_india_icon
 image,#i_mtl_keypreset_bo3
-image,d#hash_52cee357c2e51151
+image,d#uie_ui_icon_callingcards_steampunkwarriors_smoke
 image,d#launcher_standard_t8_camo_dlc3_stealth_seal_icon
 image,d#ui_icon_callingcards_mp_specialized_master
 image,d#shotgun_pump_t8_camo_dlc5_connected_icon
@@ -5965,7 +5965,7 @@ image,d#loot_ui_icon_callingcards_muertos_spectre
 image,d#shotgun_pump_t8_camo_dlc5_dinoglyph_icon
 image,d#pistol_revolver_t8_camo_echo_icon
 image,d#special_ballisticknife_t8_dw_camo_kilo_icon
-image,d#hash_57d73d97f0a020ef
+image,d#uie_ui_icon_callingcards_zombieapocalypse_zombie1
 image,d#ui_icon_zm_calling_tasks_headshots
 image,d#shotgun_semiauto_t8_camo_golf_wz_icon
 image,d#ar_stealth_t8_camo_delta_wz_icon
@@ -6084,7 +6084,7 @@ image,d#loot04_ui_icon_blackmarket_itemshop_bundle_tr_midburst_x3
 image,d#loot04_ui_icon_blackmarket_itemshop_bundle_tr_midburst_x5
 image,d#smg_folding_t8_camo_delta_wz_icon
 image,d#smg_folding_t8_camo_kilo_icon
-image,d#hash_59d40b121013cb22
+image,d#uie_ui_icon_callingcards_steampunkwarriors_gun
 image,d#smg_handling_t8_camo_dlc5_datamine_icon
 image,d#shotgun_pump_t8_camo_foxtrot_wz_icon
 image,d#ui_icon_mp_league_28_02_large
@@ -6275,7 +6275,7 @@ image,d#knife_loadout_camo_kilo_zm_icon
 image,d#shotgun_precision_t8_camo_india_wz_icon
 image,d#shotgun_fullauto_t8_camo_india_icon
 image,d#ui_icon_mp_league_03_01_large
-image,d#hash_5d6ec887caa058b4
+image,d#uie_ui_icon_callingcards_steampunkwarriors_body
 image,d#loot_ui_icon_stickers_random_18_large
 image,d#ui_icon_mp_league_07_04_large
 image,d#sniper_powersemi_t8_camo_dlc5_scratchnsniff_icon
@@ -7038,7 +7038,7 @@ image,#em_hq_final_defense
 image,d#tr_powersemi_t8_camo_november_zm_icon
 image,#52_skirmisher
 image,d#shotgun_precision_t8_camo_kilo_icon
-image,d#hash_69d600b6992ff0f4
+image,d#uie_ui_icon_callingcards_vilains_frontplane
 image,d#ui_icon_mp_league_19_03_large
 image,d#smg_fastfire_t8_camo_dlc5_jellymaw_icon
 image,d#tr_longburst_t8_camo_november_icon
@@ -7273,8 +7273,8 @@ image,d#smg_standard_t8_camo_dlc4_goosebumps_icon
 image,d#pistol_standard_t8_camo_alfa_zm_icon
 image,d#special_crossbow_t8_camo_golf_zm_icon
 image,d#tr_powersemi_t8_camo_hotel_icon
-image,d#hash_6d45ad6c3f292af3
-image,d#hash_6d45ae6c3f292ca6
+image,d#uie_ui_icon_callingcard_survivor_boat1
+image,d#uie_ui_icon_callingcard_survivor_boat2
 image,#ui_icon_perk_deadsilence_large
 image,d#sniper_powerbolt_t8_camo_dlc2_street_race_icon
 image,d#ar_fastfire_t8_camo_dlc4_fractalized_icon
@@ -7554,7 +7554,7 @@ image,d#smg_folding_t8_camo_bravo_wz_icon
 image,d#hash_71ea9bd079d04b0f
 image,d#uie_cc_vehicle03anim
 image,d#tr_damageburst_t8_camo_juliett_wz_icon
-image,d#hash_71ee8a4c7b400def
+image,d#uie_ui_icon_callingcards_vilains_fire
 image,d#ar_accurate_t8_camo_dlc5_seaflake_icon
 image,d#ui_icon_callingcards_mp_prestige_efficiency_hot_swap
 image,d#ui_icon_mp_league_12_02b
@@ -7913,7 +7913,7 @@ image,d#loot06_ui_icon_blackmarket_itemdetail_mk2_paladin
 image,d#ar_fastfire_t8_camo_charlie_wz_icon
 image,d#ui_icon_mp_league_gem_elite
 image,d#loot06_ui_icon_blackmarket_contracts_stuhlinger_itemdetail
-image,d#hash_777fcff7f5e8ebbb
+image,d#uie_ui_icon_callingcards_vilains_victim
 image,d#melee_actionfigure_t8_camo_lima_zm_icon
 image,d#lmg_standard_t8_camo_kilo_zm_icon
 image,#em_ladder01
@@ -8117,7 +8117,7 @@ image,d#tr_damageburst_t8_camo_charlie_wz_icon
 image,d#melee_slaybell_t8_camo_lima_zm_icon
 image,d#uie_ui_menu_callingcards_crimewave_policecar2
 image,d#uie_ui_menu_callingcards_crimewave_policecar1
-image,d#hash_7adbf2abd5ccb0fc
+image,d#uie_ui_icon_callingcards_steampunkwarriors_light
 image,d#smg_capacity_t8_camo_hotel_zm_icon
 image,d#ar_an94_t8_camo_november_icon
 image,d#smg_folding_t8_camo_india_icon

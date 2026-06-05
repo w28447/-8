@@ -598,11 +598,11 @@ function zipline_call_trigger_think()
         
         if ( function_8b1a219a() )
         {
-            self sethintstring( #"hash_23dad9a3f61cf052" );
+            self sethintstring( #"zm_escape/call_gondola_keyboard" );
         }
         else
         {
-            self sethintstring( #"hash_bbb24669638bc76" );
+            self sethintstring( #"zm_escape/call_gondola" );
         }
         
         s_result = self waittill( #"trigger" );

@@ -30,7 +30,7 @@ class celevator
     // Params 1
     // Checksum 0x6b39a806, Offset: 0x2ee8
     // Size: 0xa4
-    function function_6ff61192( var_c0a091bc )
+    function go_down( var_c0a091bc )
     {
         if ( !self flag::get( "elevator_moving" ) )
         {
@@ -51,7 +51,7 @@ class celevator
     // Params 1
     // Checksum 0x76c48c1b, Offset: 0x2e30
     // Size: 0xac
-    function function_69474136( var_c0a091bc )
+    function go_up( var_c0a091bc )
     {
         if ( !self flag::get( "elevator_moving" ) )
         {
@@ -146,7 +146,7 @@ class celevator
         
         if ( isdefined( m_s_bundle.var_fd4a26f0 ) && m_s_bundle.var_fd4a26f0 && m_s_bundle.var_46d9acb0 == "auto_down" )
         {
-            thread function_69474136( 1 );
+            thread go_up( 1 );
         }
         
         if ( m_s_bundle.var_46d9acb0 == "up_and_down" )
@@ -157,12 +157,12 @@ class celevator
                 
                 if ( var_c0a091bc < var_de7ae77 )
                 {
-                    thread function_6ff61192( var_c0a091bc );
+                    thread go_down( var_c0a091bc );
                 }
                 
                 if ( var_c0a091bc > var_de7ae77 )
                 {
-                    thread function_69474136( var_c0a091bc );
+                    thread go_up( var_c0a091bc );
                 }
             }
         }
@@ -246,7 +246,7 @@ class celevator
         
         if ( isdefined( m_s_bundle.var_fd4a26f0 ) && m_s_bundle.var_fd4a26f0 && m_s_bundle.var_46d9acb0 == "auto_up" )
         {
-            thread function_6ff61192( 1 );
+            thread go_down( 1 );
             return;
         }
         
@@ -258,12 +258,12 @@ class celevator
                 
                 if ( var_c0a091bc < var_de7ae77 )
                 {
-                    thread function_6ff61192( var_c0a091bc );
+                    thread go_down( var_c0a091bc );
                 }
                 
                 if ( var_c0a091bc > var_de7ae77 )
                 {
-                    thread function_69474136( var_c0a091bc );
+                    thread go_up( var_c0a091bc );
                 }
             }
         }
@@ -576,12 +576,12 @@ class celevator
                 
                 if ( var_c0a091bc < var_de7ae77 )
                 {
-                    thread function_6ff61192( var_c0a091bc );
+                    thread go_down( var_c0a091bc );
                 }
                 
                 if ( var_c0a091bc > var_de7ae77 )
                 {
-                    thread function_69474136( var_c0a091bc );
+                    thread go_up( var_c0a091bc );
                 }
             }
         }
@@ -659,11 +659,11 @@ class celevator
                 {
                     if ( var_de7ae77 == 1 )
                     {
-                        function_69474136( 2 );
+                        go_up( 2 );
                     }
                     else
                     {
-                        function_6ff61192( 1 );
+                        go_down( 1 );
                     }
                 }
             }
@@ -749,11 +749,11 @@ class celevator
                     {
                         if ( var_de7ae77 == 1 )
                         {
-                            function_69474136( 2 );
+                            go_up( 2 );
                         }
                         else
                         {
-                            function_6ff61192( 1 );
+                            go_down( 1 );
                         }
                     }
                     
@@ -761,11 +761,11 @@ class celevator
                     {
                         if ( var_de7ae77 == 1 )
                         {
-                            function_6ff61192( 2 );
+                            go_down( 2 );
                         }
                         else
                         {
-                            function_69474136( 1 );
+                            go_up( 1 );
                         }
                     }
                 }

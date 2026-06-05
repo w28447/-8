@@ -473,7 +473,7 @@ localizeentry,#hash_1877a41463bbaec6
 localizeentry,#menu/fileshare_deleting
 localizeentry,d#weapon/supply_pod
 localizeentry,#hash_189d868d756bb77d
-localizeentry,#hash_18af89f3e3e8dae8
+localizeentry,#survival_prototype/objective_complete
 localizeentry,d#hash_18b7797e532aa1bb
 localizeentry,#hash_18dc8ecefebf1515
 localizeentry,d#mp/match_starting_in
@@ -1910,7 +1910,7 @@ localizeentry,#warzone/bringcursor
 localizeentry,d#hash_5e2c81adb5a5264a
 localizeentry,#hash_5e2ef185900101fe
 localizeentry,#mp/hud_uplink_pass
-localizeentry,#hash_5e4e395171e8600c
+localizeentry,#demo/highlight_reel_mode
 localizeentry,#hash_5e4fc36365ba2350
 localizeentry,#hash_5e575e624443053f
 localizeentry,#hash_5e6231434add15a2
@@ -2523,7 +2523,7 @@ localizeentry,d#hash_7c6a34f16beea931
 localizeentry,#hud/incoming_missile
 localizeentry,d#hash_7c90a430a330e85f
 localizeentry,d#hash_7c9101e19dfccce5
-localizeentry,#hash_7c985cba47878b1c
+localizeentry,#demo/playback_mode
 localizeentry,#hash_7ca07ba7e2400b51
 localizeentry,#menu/charm_monty_bar
 localizeentry,d#hash_7cc1e77be126442f

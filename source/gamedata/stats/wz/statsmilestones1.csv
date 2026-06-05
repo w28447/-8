@@ -69,7 +69,7 @@
 69,0,25,#global,#hash_702849e1bf1e3915,&#hash_6380149948c2822f,250,0,u3?0,#,#,0,&#,u3?0,0,FALSE,survivalist,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 70,1,50,#global,#hash_702849e1bf1e3915,&#hash_6380149948c2822f,500,0,u3?0,#,#,0,&#,u3?0,0,FALSE,survivalist,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 71,2,75,#global,#hash_702849e1bf1e3915,&#hash_6380149948c2822f,750,0,u3?0,#,#mastery_survivalist,0,&#hash_59524294839e80e1,u3?0,0,FALSE,survivalist,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-72,0,12,#global,#mastery_survivalist,&#hash_73ad1335f9239c58,0,0,u3?0,#,#completed_all_challenges,0,&#hash_34054f19a7cb4b40,u3?0,0,FALSE,survivalist,FALSE,TRUE,FALSE,TRUE,FALSE,#,#,0
+72,0,12,#global,#mastery_survivalist,&#wz_challenges/survivalist_mastery,0,0,u3?0,#,#completed_all_challenges,0,&#hash_34054f19a7cb4b40,u3?0,0,FALSE,survivalist,FALSE,TRUE,FALSE,TRUE,FALSE,#,#,0
 73,0,10,#global,#vehicles_destroyed_occupied,&#hash_3b78e32a22c0be7c,250,0,u3?0,#,#,0,&#,u3?0,0,FALSE,heroics,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 74,1,50,#global,#vehicles_destroyed_occupied,&#hash_3b78e32a22c0be7c,500,0,u3?0,#,#,0,&#,u3?0,0,FALSE,heroics,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 75,2,100,#global,#vehicles_destroyed_occupied,&#hash_3b78e32a22c0be7c,750,0,u3?0,#,#mastery_heroics,0,&#hash_77fc59bf5208fb04,u3?0,0,FALSE,heroics,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0

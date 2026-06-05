@@ -39071,7 +39071,7 @@ luafile,d#ui/uieditor/widgets/pc/pc_scrolldown.lua
 luafile,d#ui/uieditor/widgets/notifications/xp/doublexpiconsinternal.lua
 luafile,#ui/uieditor/widgets/hud/zm_notiffactory/zmnotifbgb_containerfactory.lua
 luafile,d#ui/uieditor/widgets/mphudwidgets/waypointarrow.lua
-luafile,#hash_53cc3519da334b05
+luafile,#ui/uieditor/widgets/health/armorbar.lua
 luafile,#ui/uieditor/widgets/notifications/notificationqueuewidgets/notificationrewardqueue.lua
 luafile,#ui/uieditor/widgets/hud/scoreinfo/scoreinfohardpointobjective.lua
 luafile,#ui/uieditor/widgets/hud/zm_ammowidgetfactory/zmammo_weaponprogressfactory.lua

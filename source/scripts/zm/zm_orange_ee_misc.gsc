@@ -1062,7 +1062,7 @@ function security_balcony_time_( var_5ea5c94d, ended_early )
     
     level flag::set( #"edge_of_the_world_complete" );
     s_exit = struct::get( "edge_exit", "targetname" );
-    player = s_exit zm_unitrigger::function_fac87205( zm_utility::function_d6046228( #"zm_orange/edge_exit", #"hash_71bb91d3e3e956ee" ) );
+    player = s_exit zm_unitrigger::function_fac87205( zm_utility::function_d6046228( #"zm_orange/edge_exit", #"zm_orange/edge_exit_keyboard" ) );
     player notify( #"edge_exit" );
 }
 

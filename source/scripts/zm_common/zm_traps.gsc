@@ -314,7 +314,7 @@ function function_783f63e9( var_1c9c3123 = 1 )
         return;
     }
     
-    cheat_too_friendly_s_ = zm_utility::function_d6046228( #"zombie/button_buy_trap", #"hash_6e8ef1b690e98e51" );
+    cheat_too_friendly_s_ = zm_utility::function_d6046228( #"zombie/button_buy_trap", #"zombie/button_buy_trap_keyboard" );
     self trap_set_string( cheat_too_friendly_s_, self.zombie_cost );
     
     if ( var_1c9c3123 )
@@ -1169,7 +1169,7 @@ function trap_disable( var_ccf895cc = #"zombie/trap_locked" )
 // Params 2
 // Checksum 0x8693f90d, Offset: 0x35f8
 // Size: 0x144
-function trap_enable( var_f9afc2b3 = #"zombie/button_buy_trap", var_b8c50025 = #"hash_6e8ef1b690e98e51" )
+function trap_enable( var_f9afc2b3 = #"zombie/button_buy_trap", var_b8c50025 = #"zombie/button_buy_trap_keyboard" )
 {
     if ( !( isdefined( self.var_b3166dc1 ) && self.var_b3166dc1 ) )
     {
@@ -1209,7 +1209,7 @@ function disable_all_traps( var_ccf895cc = #"zombie/trap_locked" )
 // Params 2
 // Checksum 0x8913546e, Offset: 0x3828
 // Size: 0xf2
-function function_9d0c9706( var_f9afc2b3 = #"zombie/button_buy_trap", var_b8c50025 = #"hash_6e8ef1b690e98e51" )
+function function_9d0c9706( var_f9afc2b3 = #"zombie/button_buy_trap", var_b8c50025 = #"zombie/button_buy_trap_keyboard" )
 {
     a_t_traps = getentarray( "zombie_trap", "targetname" );
     

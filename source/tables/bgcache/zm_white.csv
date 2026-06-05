@@ -3626,7 +3626,7 @@ string,#mpui/damage2_desc
 string,#hash_c39f99b7da2b1b2
 string,#hash_d8622d38b0078a8
 string,#hash_e2971bbfafcfe66
-string,#hash_e69f458673c2cb3
+string,#zm_escape/spinning_trap_keyboard
 string,#mpui/fastlockon_desc
 string,#weapon/fraggrenade
 string,#hash_ee567911dd1ce83
@@ -4058,7 +4058,7 @@ string,#hash_6e155a8da74ae1b6
 string,#mpui/camo_active_objective_kills
 string,#hash_6e44a744b6a4a569
 string,#hash_6e86b49d6d5196af
-string,#hash_6e8ef1b690e98e51
+string,#zombie/button_buy_trap_keyboard
 string,#hash_6ea5c6e0b726ece2
 string,#hash_6fd37a805e3137fe
 string,#mpui/rangefinder
@@ -4112,7 +4112,7 @@ string,#hash_7a780871028530f5
 string,#hash_7a899f8fa9163c6e
 string,#mpui/rangefinder_desc
 string,#zm_white/location_security_checkpoint
-string,#hash_7b540f4d1ffa1212
+string,#zm_white/replace_weapon_keyboard
 string,#feature/gun_emblem
 string,#hash_7bf8bcf55e2bd26e
 string,#zmweapon/ray_gun_mk2

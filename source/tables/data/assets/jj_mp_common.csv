@@ -2,7 +2,7 @@ type,name
 techset,d#hash_13b5e1db9658f56c
 image,#killcamindicator
 image,#uie_t7_hud_mp_notifications_xp
-streamkey,#hash_1dab08b8f4c4b1e6
+streamkey,#mp_common_fj_stream
 streamkey,#hash_41487e6622d5a3f7
 streamkey,#hash_43a8d505925159a4
 streamkey,#hash_6c97b2b251800fe1
@@ -2288,7 +2288,7 @@ localizeentry,#menu/hud_vehicle_flydown
 localizeentry,#hash_29f6daee1e40b3af
 localizeentry,#menu/kd_short
 localizeentry,#hash_29fcff5c6bb89b64
-localizeentry,#hash_2a03387a61128cee
+localizeentry,#mpui/look_through_caps
 localizeentry,#hash_2a064d0e2af586d0
 localizeentry,#hash_2a0ab7afddd17a33
 localizeentry,#hash_2a0dfc66a3dc782a
@@ -5283,7 +5283,7 @@ localizeentry,#hash_5e2d9fae3ff8ce24
 localizeentry,d#codcaster/team2_settings
 localizeentry,#mp/hud_uplink_pass
 localizeentry,#hash_5e48ef6ff6c6fadd
-localizeentry,#hash_5e4e395171e8600c
+localizeentry,#demo/highlight_reel_mode
 localizeentry,#hash_5e4e9959d2d94c69
 localizeentry,#hash_5e4f7fecdce55979
 localizeentry,#hash_5e4fc36365ba2350
@@ -5711,7 +5711,7 @@ localizeentry,#hash_6577d55cfddb9da8
 localizeentry,#hash_6578d73f25a50f73
 localizeentry,#hash_65807122dfbc2768
 localizeentry,#hash_6581de31cff2ddd5
-localizeentry,d#hash_6589105a0f2208f7
+localizeentry,d#codcaster/qs_loadout_hint
 localizeentry,#hash_6599fd82845da440
 localizeentry,#menu/charm_crystal
 localizeentry,#hash_65a56df88f164971
@@ -6892,7 +6892,7 @@ localizeentry,d#hash_7c90a430a330e85f
 localizeentry,#hash_7c934127d48cca8b
 localizeentry,#hash_7c95598631b71a10
 localizeentry,#killstreak/planemortar_hacked
-localizeentry,#hash_7c985cba47878b1c
+localizeentry,#demo/playback_mode
 localizeentry,#hash_7c9d016d69a05f30
 localizeentry,#hash_7c9e14f1191cf450
 localizeentry,#hash_7ca07ba7e2400b51

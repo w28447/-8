@@ -499,9 +499,9 @@
     "ambients": [],
     "scriptIdLookups": [],
     "streamKeysSABL": {
-        "streamKey1": "#hash_4cbd150aad6431df",
+        "streamKey1": "#core_ui_fj_stream",
         "dataSize1": 4096,
-        "fileKey": "#hash_4d07da90e1c1a76",
+        "fileKey": "#core_ui_fj_loaded",
         "fileLen": 9728
     },
     "streamKeysSABS": {

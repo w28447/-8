@@ -12667,9 +12667,9 @@
     "ambients": [],
     "scriptIdLookups": [],
     "streamKeysSABL": {
-        "streamKey1": "#hash_4068b352fca59f25",
+        "streamKey1": "#core_frontend_fj_stream",
         "dataSize1": 4096,
-        "fileKey": "#hash_49147d9e59529120",
+        "fileKey": "#core_frontend_fj_loaded",
         "fileLen": 2048
     },
     "streamKeysSABS": {

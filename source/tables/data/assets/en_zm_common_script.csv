@@ -17,7 +17,7 @@ localizeentry,#mp/firstplace_name
 localizeentry,#hash_5e3423d08973905
 localizeentry,#hash_63690aa1bddde5a
 localizeentry,#hash_64cb545dd18c607
-localizeentry,#hash_693bb70d9737a5b
+localizeentry,#zombie/button_buy_back_barrier_50_keyboard
 localizeentry,#zombie/build_piece_only_one
 localizeentry,#hash_729e15cd6b31df3
 localizeentry,#hash_73f632514ab7d15
@@ -132,7 +132,7 @@ localizeentry,#zombie/perk_marathon_keyboard
 localizeentry,#hash_26f44827b2b24825
 localizeentry,#hash_272fae998263208b
 localizeentry,#zombie/fasttravel_generic_use
-localizeentry,#hash_2791ecebb85142c4
+localizeentry,#zombie/weaponcostonly_cfill_keyboard
 localizeentry,d#zombie/survived_round
 localizeentry,#zombie/perk_deadshot_keyboard
 localizeentry,#hash_29f409e041d55ab8
@@ -181,7 +181,7 @@ localizeentry,#zombie/magic_box_empty
 localizeentry,d#hash_3d9d6e119fdd76ae
 localizeentry,#zombie/perk_bandolier
 localizeentry,#hash_3dc033ef1e67a5c0
-localizeentry,#hash_3dd048373e06ad1f
+localizeentry,#zombie/button_buy_back_barrier_10_keyboard
 localizeentry,#zombie/perk_packapunch_damage_free
 localizeentry,#hash_3eb88d6b31198cf5
 localizeentry,#hash_3ee2e0100fefb461
@@ -194,7 +194,7 @@ localizeentry,#zombie/random_weapon_cost
 localizeentry,#zmtrials/player_took_damage
 localizeentry,#zmtrials/purchase_rush
 localizeentry,#hash_428a51d127f4dff6
-localizeentry,#hash_42e37d69c3691009
+localizeentry,#zombie/button_buy_back_barrier_100_keyboard
 localizeentry,#hash_4320539409034300
 localizeentry,#hash_43ab0adee9d55608
 localizeentry,#hash_44038d25e4255a68
@@ -215,7 +215,7 @@ localizeentry,#hash_46ef69192b933e43
 localizeentry,#hash_474e77011ad63e7a
 localizeentry,#hash_47630634eac8f91f
 localizeentry,#zombie/fasttravel_generic_use_keyboard
-localizeentry,#hash_47ff6a92609a306e
+localizeentry,#zombie/button_buy_back_barrier_20_keyboard
 localizeentry,#hash_48157c44f8771b6c
 localizeentry,#hash_481e84e3d5747771
 localizeentry,#hash_484dffbaa43c048d
@@ -343,7 +343,7 @@ localizeentry,#hash_6d70f8fb180bc8b0
 localizeentry,#hash_6dbd3c476c903f66
 localizeentry,#hash_6e2a00b7d2d6e510
 localizeentry,#mp/host_endgame_response
-localizeentry,#hash_6e8ef1b690e98e51
+localizeentry,#zombie/button_buy_trap_keyboard
 localizeentry,#hash_70be3286b5a83ebc
 localizeentry,#hash_70c3cc5975b6ae66
 localizeentry,d#mp/round_loss_caps

@@ -1500,7 +1500,7 @@ localizeentry,#hash_41f0a0badf1ca529
 localizeentry,d#mpui/damage_desc
 localizeentry,d#hash_420861c64b6e9e7c
 localizeentry,#hash_4220112c06030650
-localizeentry,#hash_4230a57b5ddc96b2
+localizeentry,#zm_office/open_crate_keyboard
 localizeentry,#hash_429579fedec15996
 localizeentry,#hash_429583fedec16a94
 localizeentry,#hash_429584fedec16c47
@@ -2508,7 +2508,7 @@ localizeentry,#hash_6e7dce49c9d09ce4
 localizeentry,#hash_6e7dcf49c9d09e97
 localizeentry,#hash_6e7dd049c9d0a04a
 localizeentry,d#hash_6e86b49d6d5196af
-localizeentry,d#hash_6e8ef1b690e98e51
+localizeentry,d#zombie/button_buy_trap_keyboard
 localizeentry,#hash_6e9a70a607ae94b6
 localizeentry,#hash_6e9a7aa607aea5b4
 localizeentry,#hash_6e9a7ba607aea767

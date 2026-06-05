@@ -544,7 +544,7 @@ function wall_weapon_update_prompt( player )
         {
             if ( function_8b1a219a() )
             {
-                self.stub.hint_string = #"hash_2791ecebb85142c4";
+                self.stub.hint_string = #"zombie/weaponcostonly_cfill_keyboard";
             }
             else
             {
@@ -792,7 +792,7 @@ function get_weapon_hint_ammo()
 {
     if ( function_8b1a219a() )
     {
-        return #"hash_2791ecebb85142c4";
+        return #"zombie/weaponcostonly_cfill_keyboard";
     }
     
     return #"zombie/weaponcostonly_cfill";

@@ -3767,7 +3767,7 @@ string,#hash_a15209027c6a477
 string,#hash_a89ec051050c008
 string,#hash_af863c29e30651d
 string,#mpui/fastreload2
-string,#hash_bbb24669638bc76
+string,#zm_escape/call_gondola
 string,#zm_escape/move_gondola
 string,#hash_c0c2aecab7c9830
 string,#hash_c1918d583361503
@@ -3776,7 +3776,7 @@ string,#hash_d1d8e2ab13aec92
 string,#zmweapon/tomahawk
 string,#hash_d8622d38b0078a8
 string,#hash_e2971bbfafcfe66
-string,#hash_e69f458673c2cb3
+string,#zm_escape/spinning_trap_keyboard
 string,#mpui/fastlockon_desc
 string,#hash_e737d245c39d9ea
 string,#hash_e8fb80933bfb033
@@ -3860,7 +3860,7 @@ string,#hash_22ec60cd78b8277f
 string,#hash_23184906a849ac54
 string,#hash_23ae833352769f3a
 string,#mpui/camo_jungle
-string,#hash_23dad9a3f61cf052
+string,#zm_escape/call_gondola_keyboard
 string,#zm_escape/location_c_d_street
 string,#mpui/dualoptic_desc
 string,#mpui/camo_huntsman
@@ -4015,7 +4015,7 @@ string,#mpui/suppressed
 string,#hash_451dc9a0469e39ff
 string,#hash_452fd06faf792671
 string,#hash_455b1ae7ea932324
-string,#hash_456f80deeaa8ebee
+string,#zm_escape/tomahawk_pickup_keyboard
 string,#hash_4585580f3e752083
 string,#mpui/hipgrip_desc
 string,#mpui/holo
@@ -4039,7 +4039,7 @@ string,#hash_4b105b524a93b53d
 string,#hash_4bf673fe684c7bcd
 string,#zm_escape/location_warden_office
 string,#hash_4c2bbe6f91c1ca94
-string,#hash_4c75fc5691b181cc
+string,#zm_escape/dm_activate_keyboard
 string,#hash_4c83bb6fd69bf1ea
 string,#hash_4d048d939c70cad9
 string,#hash_4d2c213842a0855c

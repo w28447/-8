@@ -337,7 +337,7 @@ function function_25efffc0()
 {
     level flag::wait_till( "power_on" );
     level.custom_door_buy_check = &custom_door_buy_check;
-    level.var_2e93df96 = &custom_door_buy_check;
+    level.custom_debris_buy_check = &custom_door_buy_check;
 }
 
 // Namespace zm_red_oracle_boons/zm_red_oracle_boons

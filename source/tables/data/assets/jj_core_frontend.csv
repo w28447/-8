@@ -1,8 +1,8 @@
 type,name
 image,#uie_t7_hud_mp_notifications_xp
 image,d#t7_hud_mp_notifications_xp_blue
-streamkey,#hash_4068b352fca59f25
-streamkey,#hash_49147d9e59529120
+streamkey,#core_frontend_fj_stream
+streamkey,#core_frontend_fj_loaded
 streamkey,#hash_5d9ba25da35bd23
 streamkey,#hash_5fa2124413d7c2a
 sound,#core_frontend.fj
@@ -39,7 +39,7 @@ localizeentry,d#hash_d21e0621740ee5
 localizeentry,#hash_dd47718ccc82ea
 localizeentry,d#hash_dd58d7cf553aea
 localizeentry,#hash_e1881994b9883d
-localizeentry,#hash_fcc6c603186e74
+localizeentry,#mpui/bm_bribe_bundle
 localizeentry,#menu/charm_plant_melon
 localizeentry,d#hash_10f77bea1805117
 localizeentry,d#hash_111ec45ab3b0626
@@ -603,7 +603,7 @@ localizeentry,#hash_12f600a0107f78d8
 localizeentry,#hash_12fdfb1668c96401
 localizeentry,d#hash_12fff1300e166617
 localizeentry,d#hash_130269fa0f74449a
-localizeentry,#hash_130298f969e7c848
+localizeentry,#clan/friends_in_clan
 localizeentry,d#menu/attachments
 localizeentry,#hash_1327c56902bcb8a5
 localizeentry,#wz/characters
@@ -890,7 +890,7 @@ localizeentry,#hash_1d0dd1366200e856
 localizeentry,#zmui/rhodium_roundup_desc
 localizeentry,#codcaster/team1_name
 localizeentry,d#hash_1d25924ca477662e
-localizeentry,d#hash_1d31d93d47e71a15
+localizeentry,d#mpui/bm_wingsuit
 localizeentry,d#hash_1d322aec5d14e1e2
 localizeentry,#hash_1d38dffc56710a2b
 localizeentry,d#hash_1d3d59f85ebd8ad7
@@ -3337,7 +3337,7 @@ localizeentry,#hash_72a7adc533dcfa22
 localizeentry,#menu/personalize_character
 localizeentry,d#hash_72c158ea8be4fec3
 localizeentry,#hash_72e07839ffd3a082
-localizeentry,d#hash_72f9555d2db46c29
+localizeentry,d#mpui/bm_trail
 localizeentry,d#weapon/smg_mp40
 localizeentry,d#hash_7315e78b5584575c
 localizeentry,#hash_731dcf08e332f717

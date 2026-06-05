@@ -515,7 +515,7 @@ function function_2b049ee1( e_player )
     }
     else if ( function_8b1a219a() )
     {
-        self sethintstring( #"hash_4230a57b5ddc96b2" );
+        self sethintstring( #"zm_office/open_crate_keyboard" );
     }
     else
     {

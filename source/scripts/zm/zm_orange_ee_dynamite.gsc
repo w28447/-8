@@ -469,7 +469,7 @@ function function_2a27ccb9( e_player )
 {
     if ( level.var_518d6e34 )
     {
-        str_hint = zm_utility::function_d6046228( #"zm_orange/dynamite_bomb_place", #"hash_cb4301a3d4b0ff8" );
+        str_hint = zm_utility::function_d6046228( #"zm_orange/dynamite_bomb_place", #"zm_orange/dynamite_bomb_place_keyboard" );
         self sethintstring( str_hint );
         return true;
     }

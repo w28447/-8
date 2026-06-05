@@ -1,7 +1,7 @@
 {
     "keys": [
         {
-            "name": "#hash_3f07d36eb4c26f2",
+            "name": "#mp_austria_fj_stream",
             "xPakEntry": {
                 "key": "#hash_f69f42fea288d1c4",
                 "offset": 0,
@@ -20,7 +20,7 @@
             "keyFlags": 3
         },
         {
-            "name": "#hash_340c3a2d9b6cf193",
+            "name": "#mp_austria_fj_loaded",
             "xPakEntry": {
                 "key": "#hash_e441b123c35f53de",
                 "offset": 0,

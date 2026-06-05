@@ -1,7 +1,7 @@
 {
     "keys": [
         {
-            "name": "#hash_4b0869e7dc240c1",
+            "name": "#mp_cairo_fj_stream",
             "xPakEntry": {
                 "key": "#hash_f0c69d0725195667",
                 "offset": 0,
@@ -20,7 +20,7 @@
             "keyFlags": 3
         },
         {
-            "name": "#hash_2ff96499951f297c",
+            "name": "#mp_cairo_fj_loaded",
             "xPakEntry": {
                 "key": "#hash_e441b123c35f53de",
                 "offset": 0,

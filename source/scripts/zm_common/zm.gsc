@@ -758,10 +758,10 @@ function init_strings()
     
     if ( function_8b1a219a() )
     {
-        zm_utility::add_zombie_hint( "default_buy_barrier_piece_10", #"hash_3dd048373e06ad1f" );
-        zm_utility::add_zombie_hint( "default_buy_barrier_piece_20", #"hash_47ff6a92609a306e" );
-        zm_utility::add_zombie_hint( "default_buy_barrier_piece_50", #"hash_693bb70d9737a5b" );
-        zm_utility::add_zombie_hint( "default_buy_barrier_piece_100", #"hash_42e37d69c3691009" );
+        zm_utility::add_zombie_hint( "default_buy_barrier_piece_10", #"zombie/button_buy_back_barrier_10_keyboard" );
+        zm_utility::add_zombie_hint( "default_buy_barrier_piece_20", #"zombie/button_buy_back_barrier_20_keyboard" );
+        zm_utility::add_zombie_hint( "default_buy_barrier_piece_50", #"zombie/button_buy_back_barrier_50_keyboard" );
+        zm_utility::add_zombie_hint( "default_buy_barrier_piece_100", #"zombie/button_buy_back_barrier_100_keyboard" );
     }
     else
     {

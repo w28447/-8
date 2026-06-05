@@ -160,7 +160,7 @@
                         "type": "UINT8"
                     },
                     {
-                        "name": "#hash_4c2f2b7a55fd35a8",
+                        "name": "#from_match_lobby_id",
                         "scrName": "#hash_75fede96",
                         "type": "UINT64"
                     },

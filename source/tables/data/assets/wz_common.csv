@@ -72951,7 +72951,7 @@ luafile,#hash_53763ccddc278e45
 luafile,#hash_539fbd98f66a8c5d
 luafile,d#ui/uieditor/widgets/mphudwidgets/waypointarrow.lua
 luafile,#ui/uieditor/widgets/mphudwidgets/sprintmeter/sprintmeterdots.lua
-luafile,#hash_53cc3519da334b05
+luafile,#ui/uieditor/widgets/health/armorbar.lua
 luafile,#ui/uieditor/widgets/vehiclehuds/dart/vhud_dart_centerreticlehorizonline.lua
 luafile,#ui/uieditor/widgets/notifications/notificationqueuewidgets/notificationrewardqueue.lua
 luafile,#ui/uieditor/widgets/warzone/warzoneinventorymenuitem_internal.lua
@@ -99884,7 +99884,7 @@ playerroletemplate,d#prt_wz_spectre
 playerroletemplate,d#prt_wz_blackjack_bo4
 playerroletemplate,d#prt_wz_zero
 playerroletemplate,d#prt_wz_trapper
-playerroletemplate,d#hash_62361c68e083d401
+playerroletemplate,d#prt_wz_technomancer
 playerroletemplate,d#prt_wz_mercenary
 playerroletemplate,d#prt_wz_engineer
 playerroletemplate,d#prt_wz_swatpolice

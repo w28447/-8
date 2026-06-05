@@ -78655,7 +78655,7 @@ leaderboarddef,#LB_MP_GM_TDM_HC
 leaderboarddef,#lb_zm_gb
 leaderboarddef,#LB_MP_GM_GUN_HC
 leaderboarddef,#LB_MP_GM_KOTH
-leaderboarddef,#hash_9ee8cc91c547bb9
+leaderboarddef,#lb_zm_ga_zodt8_var1
 leaderboarddef,#lb_mp_gm_heist
 leaderboarddef,#LB_MP_GM_BALL_HC
 leaderboarddef,#LB_MP_GM_DOM_ARENA
@@ -78703,7 +78703,7 @@ leaderboarddef,#LB_MP_ANTICHEAT_KOTH
 leaderboarddef,#LB_MP_GB_SCORE_ARENA
 leaderboarddef,#LB_MP_GM_SD_HC
 leaderboarddef,#lb_zm_ga_zodt8
-leaderboarddef,#hash_764d7f553af03804
+leaderboarddef,#lb_mp_gm_control_arena
 leaderboarddef,#LB_MP_GM_KOTH_ARENA
 leaderboarddef,#LB_MP_GM_CONF_HC
 leaderboarddef,#LB_MP_GM_CONF
@@ -110690,7 +110690,7 @@ playerroletemplate,#prt_mp_swatpolice
 playerroletemplate,#prt_mp_spectre
 playerroletemplate,#prt_wz_trapper
 playerroletemplate,#prt_mp_recon
-playerroletemplate,#hash_62361c68e083d401
+playerroletemplate,#prt_wz_technomancer
 playerroletemplate,#prt_mp_battery
 playerroletemplate,#prt_wz_mercenary
 playerroletemplate,#prt_mp_enforcer

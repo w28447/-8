@@ -2943,7 +2943,7 @@ string,#hash_41ed99048f6cb7f0
 string,#hash_41f0a0badf1ca529
 string,#mpui/damage_desc
 string,#hash_420861c64b6e9e7c
-string,#hash_4230a57b5ddc96b2
+string,#zm_office/open_crate_keyboard
 string,#mpui/supply
 string,#hash_43374b5ab9becdaa
 string,#mpui/camo_jungletek
@@ -3099,7 +3099,7 @@ string,#hash_6e155a8da74ae1b6
 string,#hash_6e1d873c28de9fc2
 string,#mpui/camo_active_objective_kills
 string,#hash_6e86b49d6d5196af
-string,#hash_6e8ef1b690e98e51
+string,#zombie/button_buy_trap_keyboard
 string,#hash_6ea2a08a0b4d46b3
 string,#hash_6ec3bd3ccccffd81
 string,#mpui/rangefinder

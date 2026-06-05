@@ -42,7 +42,7 @@ function private __main__()
     
     if ( function_8b1a219a() )
     {
-        prompt = #"hash_2791ecebb85142c4";
+        prompt = #"zombie/weaponcostonly_cfill_keyboard";
     }
     else
     {

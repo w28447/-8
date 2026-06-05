@@ -666,7 +666,7 @@ function function_809767d( str_hand )
             s_quest.var_4d50be8e = "fxexp_wq_h_portal_p";
             s_quest.var_99aa2e37 = #"p8_fxanim_zm_red_ww_hand_hemera_bundle";
             s_quest.var_7c6b53db = #"hash_3b91b084eadff65e";
-            s_quest.var_eaa1f384 = #"hash_14dfce1123c05a79";
+            s_quest.var_eaa1f384 = #"vox_hemera_rune_circle_react";
             s_quest.var_29f1fc2d = #"hash_4c08d1414859cc60";
             s_quest.var_bcd22670 = #"hash_e785e77e310b16d";
             s_quest.var_647f1375 = #"hash_2b394f251b9ab685";
@@ -709,7 +709,7 @@ function function_809767d( str_hand )
             var_d39cfea7 = 1;
             s_quest.var_99aa2e37 = #"p8_fxanim_zm_red_ww_hand_charon_bundle";
             s_quest.var_7c6b53db = #"hash_1bf02c1e1384b7f3";
-            s_quest.var_eaa1f384 = #"hash_1a5ab7c2ce78a244";
+            s_quest.var_eaa1f384 = #"vox_charon_rune_circle_react";
             s_quest.var_29f1fc2d = #"hash_4ece88057c2ca9af";
             s_quest.var_bcd22670 = #"hash_3aed70e1337a02ac";
             s_quest.var_647f1375 = #"hash_3791248064be5f0a";
@@ -754,7 +754,7 @@ function function_809767d( str_hand )
             s_quest.var_4d50be8e = "fxexp_wq_o_portal_p";
             s_quest.var_99aa2e37 = #"p8_fxanim_zm_red_ww_hand_ouranos_bundle";
             s_quest.var_7c6b53db = #"hash_1e66eec2fba6abdf";
-            s_quest.var_eaa1f384 = #"hash_3393f5b9c2830aa0";
+            s_quest.var_eaa1f384 = #"vox_ouranos_rune_circle_react";
             s_quest.var_29f1fc2d = #"hash_368446c66a3fc8cb";
             s_quest.var_bcd22670 = #"hash_57285bb33ab50600";
             s_quest.var_647f1375 = #"hash_6f92861cecef280e";
@@ -794,7 +794,7 @@ function function_809767d( str_hand )
             var_d39cfea7 = 4;
             s_quest.var_99aa2e37 = #"p8_fxanim_zm_red_ww_hand_gaia_bundle";
             s_quest.var_7c6b53db = #"hash_1c0bcda26f980cd0";
-            s_quest.var_eaa1f384 = #"hash_2fd6c824434bd277";
+            s_quest.var_eaa1f384 = #"vox_gaia_rune_circle_react";
             s_quest.var_29f1fc2d = #"hash_21955c1b3abedef2";
             s_quest.var_bcd22670 = #"hash_7bc9bdaf4d490e57";
             s_quest.var_647f1375 = #"hash_67194a0d71625bef";

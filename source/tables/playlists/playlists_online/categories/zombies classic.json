@@ -7,7 +7,7 @@
     "entries": [
         {
             "name": "#hash_573c30531d8deea1",
-            "description": "#hash_364122f25f791280",
+            "description": "#zmui/tutorial_beginner",
             "unique_name": "#zmui/ztutorial_desc",
             "lobbyMainMode": "CAMPAIGN",
             "image": "#ui_icon_gamemode_zm_tutorial",
@@ -114,7 +114,7 @@
         },
         {
             "name": "#hash_44a1bb7fe630a9d2",
-            "description": "#hash_c9580dab628ed90",
+            "description": "#zmui/tutorial_advanced",
             "unique_name": "#hash_9a181be33c22198",
             "lobbyMainMode": "CAMPAIGN",
             "image": "#ui_icon_gamemode_zm_tutorial",

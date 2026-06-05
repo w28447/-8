@@ -55,12 +55,12 @@
 #spear_throw,#kill,#vox_spear_throw_kill,0,0,FALSE,FALSE,FALSE,FALSE
 #gaia,#hand_battle,#vox_gaia_hand_battle,0,0,FALSE,FALSE,FALSE,FALSE
 #gaia,#hand_kill_first,#vox_gaia_hand_kill_first,0,0,FALSE,FALSE,FALSE,FALSE
-#gaia,#rune_circle,#hash_2fd6c824434bd277,0,0,FALSE,FALSE,FALSE,FALSE
+#gaia,#rune_circle,#vox_gaia_rune_circle_react,0,0,FALSE,FALSE,FALSE,FALSE
 #hemera,#hand_kill_first,#vox_hemera_hand_kill_first,0,0,FALSE,FALSE,FALSE,FALSE
-#hemera,#rune_circle,#hash_14dfce1123c05a79,0,0,FALSE,FALSE,FALSE,FALSE
+#hemera,#rune_circle,#vox_hemera_rune_circle_react,0,0,FALSE,FALSE,FALSE,FALSE
 #ouranos,#hand_battle,#vox_ouranos_hand_battle,0,0,FALSE,FALSE,FALSE,FALSE
 #ouranos,#hand_kill_first,#vox_ouranos_hand_kill_first,0,0,FALSE,FALSE,FALSE,FALSE
-#ouranos,#rune_circle,#hash_3393f5b9c2830aa0,0,0,FALSE,FALSE,FALSE,FALSE
+#ouranos,#rune_circle,#vox_ouranos_rune_circle_react,0,0,FALSE,FALSE,FALSE,FALSE
 #cliff,#eagle_free,#hash_172d8c7cc7123557,0,0,FALSE,FALSE,FALSE,FALSE
 #cliff,#forge_enter,#vox_cliff_forge_enter,0,0,FALSE,FALSE,FALSE,FALSE
 #oracle,#help_response,#hash_1cf28dc8ff858000,0,0,FALSE,FALSE,FALSE,FALSE

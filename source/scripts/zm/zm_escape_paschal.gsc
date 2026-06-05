@@ -5693,7 +5693,7 @@ function function_6234ba97( e_player )
     {
         if ( function_8b1a219a() )
         {
-            self sethintstring( #"hash_4c75fc5691b181cc" );
+            self sethintstring( #"zm_escape/dm_activate_keyboard" );
         }
         else
         {
