@@ -134,7 +134,7 @@ CoD.ReserveLarge.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 				if not IsCurrentMenu( menu, "PaintjobWeaponSelect" ) then
 					f12_local0 = CoD.CACUtility.IsProgressionEnabledForMenu( menu )
 					if f12_local0 then
-						f12_local0 = CoD.ModelUtility.IsSelfModelValueEqualTo( self, f1_arg1, "itemCategory", 0xCC13B0F8EEFF726 )
+						f12_local0 = CoD.ModelUtility.IsSelfModelValueEqualTo( self, f1_arg1, "itemCategory", "signature_weapon" )
 					end
 				else
 					f12_local0 = false

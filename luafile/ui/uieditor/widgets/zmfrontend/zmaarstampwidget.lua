@@ -17,7 +17,7 @@ CoD.ZMAARStampWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	StampName:setBackingType( 2 )
 	StampName:setBackingXPadding( 24 )
 	StampName:setBackingYPadding( 8 )
-	StampName:setBackingImage( RegisterImage( 0xDE5A7BE7FE903F2 ) )
+	StampName:setBackingImage( RegisterImage( "uie_ui_hud_zm_aar_obj_bg" ) )
 	self:addElement( StampName )
 	self.StampName = StampName
 	
@@ -27,7 +27,7 @@ CoD.ZMAARStampWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.Stamp = Stamp
 	
 	local URL = LUI.UIText.new( 0, 0, 98, 298, 0, 0, 49, 65 )
-	URL:setText( Engine[0xF9F1239CFD921FE]( 0xD8599B289858EC4 ) )
+	URL:setText( Engine[0xF9F1239CFD921FE]( "menu/stamp_url" ) )
 	URL:setTTF( "dinnext_regular" )
 	URL:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	self:addElement( URL )

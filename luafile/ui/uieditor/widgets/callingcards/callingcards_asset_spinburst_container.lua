@@ -9,7 +9,7 @@ CoD.CallingCards_Asset_spinburst_container.new = function ( f1_arg0, f1_arg1, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local LightSpin = LUI.UIImage.new( 0, 0, 0, 826, 0, 0, 0, 826 )
-	LightSpin:setImage( RegisterImage( 0xCDE878DE89C8808 ) )
+	LightSpin:setImage( RegisterImage( "uie_light_burst" ) )
 	LightSpin:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LightSpin )
 	self.LightSpin = LightSpin

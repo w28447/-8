@@ -25,7 +25,7 @@ CoD.AARRewardsXP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	self.Frame = Frame
 	
 	local XPIcon = LUI.UIFixedAspectRatioImage.new( 0, 0, 25, 85, 0, 0, 17, 77 )
-	XPIcon:setImage( RegisterImage( 0x620E589747ADBAB ) )
+	XPIcon:setImage( RegisterImage( "t7_hud_mp_notifications_xp_blue" ) )
 	self:addElement( XPIcon )
 	self.XPIcon = XPIcon
 	

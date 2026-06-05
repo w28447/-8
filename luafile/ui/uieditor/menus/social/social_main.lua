@@ -37,7 +37,7 @@ LUI.createMenu.Social_Main = function ( f1_arg0, f1_arg1 )
 	self.TabFrame = TabFrame
 	
 	local GenericMenuFrameIdentity = CoD.GenericMenuFrameIdentity.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	GenericMenuFrameIdentity.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0xC4B68D4F7C51908 ) )
+	GenericMenuFrameIdentity.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/social_caps" ) )
 	GenericMenuFrameIdentity:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -106,111 +106,111 @@ LUI.createMenu.Social_Main = function ( f1_arg0, f1_arg1 )
 	f1_local8( f1_local7, f1_local9["lobbyRoot.rankMode"], function ( f10_arg0, f10_arg1 )
 		CoD.Menu.UpdateButtonShownState( f10_arg1, f1_local1, f1_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC] )
 	end, false )
-	self:registerEventHandler( "close_all_ingame_menus", function ( element, event )
+	self:registerEventHandler( "close_all_ingame_menus", function ( self, event )
 		local f11_local0 = nil
 		if IsPC() then
 			CoD.PCUtility.ShortcutMenuGoBack( f1_local1, f1_arg0 )
 		end
 		if not f11_local0 then
-			f11_local0 = element:dispatchEventToChildren( event )
+			f11_local0 = self:dispatchEventToChildren( event )
 		end
 		return f11_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		GoBack( self, f12_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "", nil, nil )
 		return false
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x93AB4C84F113EE1], nil, function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x93AB4C84F113EE1], nil, function ( element, menu, controller, model )
 		if not IsPC() and CoD.ModelUtility.IsGlobalModelValueEqualTo( "socialRoot.tab", "friends" ) and CoD.ModelUtility.IsGlobalModelValueEqualTo( "socialRoot.sort", Enum.PresenceSorting[0x378D2974EF235BB] ) then
-			SocialToggleSorting( self, f14_arg0, f14_arg2 )
-			UpdateButtonPromptState( f14_arg1, f14_arg0, f14_arg2, Enum.LUIButton[0x93AB4C84F113EE1] )
+			SocialToggleSorting( self, element, controller )
+			UpdateButtonPromptState( menu, element, controller, Enum.LUIButton[0x93AB4C84F113EE1] )
 			return true
 		elseif not IsPC() and CoD.ModelUtility.IsGlobalModelValueEqualTo( "socialRoot.tab", "friends" ) and CoD.ModelUtility.IsGlobalModelValueEqualTo( "socialRoot.sort", Enum.PresenceSorting[0x874C3506F8D93CE] ) then
-			SocialToggleSorting( self, f14_arg0, f14_arg2 )
-			UpdateButtonPromptState( f14_arg1, f14_arg0, f14_arg2, Enum.LUIButton[0x93AB4C84F113EE1] )
+			SocialToggleSorting( self, element, controller )
+			UpdateButtonPromptState( menu, element, controller, Enum.LUIButton[0x93AB4C84F113EE1] )
 			return true
 		else
 			
 		end
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
+	end, function ( element, menu, controller )
 		if not IsPC() and CoD.ModelUtility.IsGlobalModelValueEqualTo( "socialRoot.tab", "friends" ) and CoD.ModelUtility.IsGlobalModelValueEqualTo( "socialRoot.sort", Enum.PresenceSorting[0x378D2974EF235BB] ) then
-			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x93AB4C84F113EE1], 0xCA85F8B6A3ED016, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x93AB4C84F113EE1], "menu/online_sort_allphabetical", nil, nil )
 			return true
 		elseif not IsPC() and CoD.ModelUtility.IsGlobalModelValueEqualTo( "socialRoot.tab", "friends" ) and CoD.ModelUtility.IsGlobalModelValueEqualTo( "socialRoot.sort", Enum.PresenceSorting[0x874C3506F8D93CE] ) then
-			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x93AB4C84F113EE1], 0xD80133548748A69, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x93AB4C84F113EE1], "menu/online_sort_most_recent", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
-		GoBack( self, f16_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f17_arg0, f17_arg1, f17_arg2 )
-		CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f18_arg0, f18_arg1, f18_arg2, f18_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
 		if AlwaysFalse() then
 			return true
 		else
 			
 		end
-	end, function ( f19_arg0, f19_arg1, f19_arg2 )
+	end, function ( element, menu, controller )
 		if AlwaysFalse() then
-			CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], "ui_contextual_1", function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
-		if CoD.ClanUtility.ShowClanOptionPrompt( f20_arg2 ) then
-			OpenPopup( self, "ClanOptions", f20_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], "ui_contextual_1", function ( element, menu, controller, model )
+		if CoD.ClanUtility.ShowClanOptionPrompt( controller ) then
+			OpenPopup( self, "ClanOptions", controller )
 			return true
 		else
 			
 		end
-	end, function ( f21_arg0, f21_arg1, f21_arg2 )
-		if CoD.ClanUtility.ShowClanOptionPrompt( f21_arg2 ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options_caps", nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if CoD.ClanUtility.ShowClanOptionPrompt( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "menu/options_caps", nil, "ui_contextual_1" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], nil, function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
-		if not IsPC() and not IsRepeatButtonPress( f22_arg3 ) and CoD.RankUtility.IsCurrentRankModeEqualTo( CoD.RankUtility.RankMode.Multiplayer ) then
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], nil, function ( element, menu, controller, model )
+		if not IsPC() and not IsRepeatButtonPress( model ) and CoD.RankUtility.IsCurrentRankModeEqualTo( CoD.RankUtility.RankMode.Multiplayer ) then
 			CoD.RankUtility.ToggleRankMode()
 			return true
-		elseif not IsPC() and not IsRepeatButtonPress( f22_arg3 ) and CoD.RankUtility.IsCurrentRankModeEqualTo( CoD.RankUtility.RankMode.Arena ) then
+		elseif not IsPC() and not IsRepeatButtonPress( model ) and CoD.RankUtility.IsCurrentRankModeEqualTo( CoD.RankUtility.RankMode.Arena ) then
 			CoD.RankUtility.ToggleRankMode()
 			return true
-		elseif not IsPC() and not IsRepeatButtonPress( f22_arg3 ) and CoD.RankUtility.IsCurrentRankModeEqualTo( CoD.RankUtility.RankMode.Warzone ) then
+		elseif not IsPC() and not IsRepeatButtonPress( model ) and CoD.RankUtility.IsCurrentRankModeEqualTo( CoD.RankUtility.RankMode.Warzone ) then
 			CoD.RankUtility.ToggleRankMode()
 			return true
-		elseif not IsPC() and not IsRepeatButtonPress( f22_arg3 ) and CoD.RankUtility.IsCurrentRankModeEqualTo( CoD.RankUtility.RankMode.Zombies ) then
+		elseif not IsPC() and not IsRepeatButtonPress( model ) and CoD.RankUtility.IsCurrentRankModeEqualTo( CoD.RankUtility.RankMode.Zombies ) then
 			CoD.RankUtility.ToggleRankMode()
 			return true
 		else
 			
 		end
-	end, function ( f23_arg0, f23_arg1, f23_arg2 )
+	end, function ( element, menu, controller )
 		local f23_local0 = nil
 		if not IsPC() and not IsRepeatButtonPress( f23_local0 ) and CoD.RankUtility.IsCurrentRankModeEqualTo( CoD.RankUtility.RankMode.Multiplayer ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x502E6E565E8BFDE, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "menu/rank_multiplayer", nil, nil )
 			return true
 		elseif not IsPC() and not IsRepeatButtonPress( f23_local0 ) and CoD.RankUtility.IsCurrentRankModeEqualTo( CoD.RankUtility.RankMode.Arena ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0xE4653C70EC64D31, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "menu/rank_arena", nil, nil )
 			return true
 		elseif not IsPC() and not IsRepeatButtonPress( f23_local0 ) and CoD.RankUtility.IsCurrentRankModeEqualTo( CoD.RankUtility.RankMode.Warzone ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0xF9B486622459EBA, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "menu/rank_warzone", nil, nil )
 			return true
 		elseif not IsPC() and not IsRepeatButtonPress( f23_local0 ) and CoD.RankUtility.IsCurrentRankModeEqualTo( CoD.RankUtility.RankMode.Zombies ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x34DE38E1E88127D, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "menu/rank_zombies", nil, nil )
 			return true
 		else
 			return false

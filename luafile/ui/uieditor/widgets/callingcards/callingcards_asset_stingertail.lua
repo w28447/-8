@@ -9,13 +9,13 @@ CoD.CallingCards_Asset_Stingertail.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Stinger = LUI.UIImage.new( 0, 0, 0, 264, 0, 0, 0, 232 )
-	Stinger:setImage( RegisterImage( 0x5B22104BF215939 ) )
+	Stinger:setImage( RegisterImage( "uie_callingcards_mp_loot_master_lionstinger" ) )
 	self:addElement( Stinger )
 	self.Stinger = Stinger
 	
 	local StingerShimmer = LUI.UIImage.new( 0, 0, 0, 264, 0, 0, 1, 233 )
 	StingerShimmer:setAlpha( 0.65 )
-	StingerShimmer:setImage( RegisterImage( 0x2668339DED26C5F ) )
+	StingerShimmer:setImage( RegisterImage( "uie_callingcards_mp_loot_master_lionstinger_sheen" ) )
 	StingerShimmer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	StingerShimmer:setShaderVector( 0, -0.03, 0.07, 0, 0 )
 	StingerShimmer:setShaderVector( 1, 0.03, 0.03, 0, 0 )

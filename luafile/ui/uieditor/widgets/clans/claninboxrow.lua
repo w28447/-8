@@ -38,7 +38,7 @@ CoD.ClanInboxRow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	Glow:setRGB( 0.88, 1, 0.04 )
 	Glow:setAlpha( 0 )
 	Glow:setZRot( 90 )
-	Glow:setImage( RegisterImage( 0x713A30DFAEF8964 ) )
+	Glow:setImage( RegisterImage( "uie_t7_cp_hud_enemytarget_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
@@ -96,14 +96,14 @@ CoD.ClanInboxRow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local Arrow = LUI.UIImage.new( 0, 0, -30, -18, 0, 0, 18, 30 )
 	Arrow:setAlpha( 0 )
 	Arrow:setZoom( 10 )
-	Arrow:setImage( RegisterImage( 0x3842361F4104287 ) )
+	Arrow:setImage( RegisterImage( "uie_t7_menu_frontend_buttonfocusarrow" ) )
 	Arrow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Arrow )
 	self.Arrow = Arrow
 	
 	local Glow2 = LUI.UIImage.new( 0, 1, -76, 100, 0, 0, -38, 86 )
 	Glow2:setAlpha( 0 )
-	Glow2:setImage( RegisterImage( 0x713A30DFAEF8964 ) )
+	Glow2:setImage( RegisterImage( "uie_t7_cp_hud_enemytarget_glow" ) )
 	Glow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow2 )
 	self.Glow2 = Glow2

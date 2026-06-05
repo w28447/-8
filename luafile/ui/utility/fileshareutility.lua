@@ -5,13 +5,13 @@ CoD.FileshareUtility.FileshareGetMatchmakingMode = function ( f1_arg0 )
 	if not f1_local0 then
 		return ""
 	elseif f1_local0 == Enum.eGameModes[0x5E90ACB801E4A3D] or f1_local0 == Enum.eGameModes[0x7B5630CD29180CB] then
-		f1_local1 = 0x198D873AF11C58C
+		f1_local1 = "menu/fileshare_category_custom_game"
 	elseif f1_local0 == Enum.eGameModes[0x58ECA70A244C08F] then
-		f1_local1 = 0x3C25CDE2502654F
+		f1_local1 = "menu/fileshare_category_league"
 	elseif f1_local0 == Enum.eGameModes[0x7001924FAEE4CA1] then
-		f1_local1 = 0xD98CBCEDF18A061
+		f1_local1 = "menu/fileshare_category_freerun"
 	end
-	return Engine[0xF9F1239CFD921FE]( 0xCB7AB34B449105E, f1_local1 )
+	return Engine[0xF9F1239CFD921FE]( "menu/fileshare_mode", f1_local1 )
 end
 
 CoD.FileshareUtility.FileshareDownloadSummary = function ( f2_arg0, f2_arg1 )
@@ -139,7 +139,7 @@ CoD.FileshareUtility.PublishedPaintjobsTabs = {
 		fileshareVal = "",
 		weapon_category = "",
 		disabled = false,
-		name = 0x46513144F1265BA,
+		name = "menu/all_caps",
 		loadout_slot = ""
 	},
 	{
@@ -149,7 +149,7 @@ CoD.FileshareUtility.PublishedPaintjobsTabs = {
 		fileshareVal = "0",
 		weapon_category = "weapon_smg",
 		disabled = false,
-		name = 0xFD890D63546403E,
+		name = "mpui/weapon_smg_abbr_caps_with_s",
 		loadout_slot = "primary"
 	},
 	{
@@ -159,7 +159,7 @@ CoD.FileshareUtility.PublishedPaintjobsTabs = {
 		fileshareVal = "1",
 		weapon_category = "weapon_assault",
 		disabled = false,
-		name = 0xFE1B0B2003A6CC1,
+		name = "mpui/weapon_assault_caps",
 		loadout_slot = "primary"
 	},
 	{
@@ -169,7 +169,7 @@ CoD.FileshareUtility.PublishedPaintjobsTabs = {
 		fileshareVal = "2",
 		weapon_category = "weapon_cqb",
 		disabled = false,
-		name = 0x47A4BC3A33F5EFC,
+		name = "mpui/cqbs_caps",
 		loadout_slot = "primary"
 	},
 	{
@@ -179,7 +179,7 @@ CoD.FileshareUtility.PublishedPaintjobsTabs = {
 		fileshareVal = "3",
 		weapon_category = "weapon_lmg",
 		disabled = false,
-		name = 0x6E2CCF91E26DD51,
+		name = "mpui/weapon_lmg_abbr_caps_with_s",
 		loadout_slot = "primary"
 	},
 	{
@@ -189,7 +189,7 @@ CoD.FileshareUtility.PublishedPaintjobsTabs = {
 		fileshareVal = "4",
 		weapon_category = "weapon_sniper",
 		disabled = false,
-		name = 0xEF865AD574F5FAD,
+		name = "mpui/weapon_sniper_caps",
 		loadout_slot = "primary"
 	},
 	{
@@ -199,7 +199,7 @@ CoD.FileshareUtility.PublishedPaintjobsTabs = {
 		fileshareVal = "99",
 		weapon_category = "secondary",
 		disabled = false,
-		name = 0x4CA2AC0102BE042,
+		name = "mpui/weapon_secondaries_caps",
 		loadout_slot = "secondary"
 	}
 }
@@ -248,18 +248,18 @@ CoD.FileshareUtility.ShowcaseManagerTabs = {
 CoD.FileshareUtility.CommunityTitles = {
 	{
 		dataType = Enum.FileshareCommunityDataType[0x2BFAFB98AF0D86F],
-		title = 0x61E701B404BB58B,
-		kicker = 0x61E701B404BB58B
+		title = "menu/media_popular",
+		kicker = "menu/media_popular"
 	},
 	{
 		dataType = Enum.FileshareCommunityDataType[0xF7377F1CB49D0C5],
-		title = 0x2E0A4FBEEF7D0A1,
-		kicker = 0x2E0A4FBEEF7D0A1
+		title = "menu/media_recent",
+		kicker = "menu/media_recent"
 	},
 	{
 		dataType = Enum.FileshareCommunityDataType[0x8602C141CE170A7],
-		title = 0xEA2FD68B9073463,
-		kicker = 0xEA2FD68B9073463
+		title = "menu/media_trending",
+		kicker = "menu/media_trending"
 	}
 }
 CoD.FileshareUtility.ToastTypes = {
@@ -269,17 +269,17 @@ CoD.FileshareUtility.ToastTypes = {
 		functionIcon = "uie_t7_icon_menu_options_like"
 	},
 	DISLIKE = {
-		kicker = 0x9195D406065398D,
+		kicker = "menu/fileshare_action_disliked",
 		description = "%s",
 		functionIcon = "uie_t7_icon_menu_options_dislike"
 	},
 	PUBLISH = {
-		kicker = 0x8883628346E7746,
+		kicker = "menu/fileshare_action_published",
 		description = "%s",
 		functionIcon = "t7_icon_menu_simple_publish"
 	},
 	DELETE = {
-		kicker = 0xD76687D78687DD1,
+		kicker = "menu/fileshare_action_deleted",
 		description = "%s",
 		functionIcon = "t7_icon_menu_simple_delete"
 	},
@@ -289,23 +289,23 @@ CoD.FileshareUtility.ToastTypes = {
 		functionIcon = "t7_icon_menu_simple_delete"
 	},
 	DOWNLOAD = {
-		kicker = 0x78201A7650191FD,
+		kicker = "menu/fileshare_action_downloaded",
 		description = "%s",
 		functionIcon = "t7_icon_menu_options_download"
 	},
 	REPORT = {
-		kicker = 0x13ED89460FB0587,
+		kicker = "menu/fileshare_action_reported",
 		description = "%s",
 		functionIcon = "uie_t7_icon_error_overlays"
 	},
 	READONLY = {
-		kicker = 0x76DBE6DE9F0F327,
-		description = 0x907032CE7B70860,
+		kicker = "menu/fileshare_action_downloaded_content",
+		description = "menu/fileshare_action_cannot_edit",
 		functionIcon = "uie_t7_icon_error_overlays"
 	},
 	ERROR = {
-		kicker = 0x3BD3ADF4ED79E32,
-		description = 0x663D1B33682C5A2,
+		kicker = "menu/fileshare_action_error",
+		description = "menu/fileshare_action_error_desc",
 		functionIcon = "uie_t7_icon_error_overlays"
 	},
 	UPLOAD = {
@@ -316,40 +316,40 @@ CoD.FileshareUtility.ToastTypes = {
 }
 CoD.FileshareUtility.CategoryLocStrings = {
 	screenshot = {
-		locString = 0xDEACFDC45E7E713,
-		locStringCaps = 0xC0FD93DED9C0B25,
-		locStringSingle = 0xA64FC2419CA1E20,
-		locStringSingleCaps = 0x4B72BBB461E13C0
+		locString = "menu/fileshare_category_screenshots",
+		locStringCaps = "menu/fileshare_category_screenshots_caps",
+		locStringSingle = "menu/fileshare_category_screenshots_single",
+		locStringSingleCaps = "menu/fileshare_category_screenshots_single_caps"
 	},
 	screenshot_private = {
-		locString = 0xDEACFDC45E7E713,
-		locStringCaps = 0xC0FD93DED9C0B25,
-		locStringSingle = 0xA64FC2419CA1E20,
-		locStringSingleCaps = 0x4B72BBB461E13C0
+		locString = "menu/fileshare_category_screenshots",
+		locStringCaps = "menu/fileshare_category_screenshots_caps",
+		locStringSingle = "menu/fileshare_category_screenshots_single",
+		locStringSingleCaps = "menu/fileshare_category_screenshots_single_caps"
 	},
 	clip = {
-		locString = 0xFC7658F2128D919,
-		locStringCaps = 0xC337418703189E3,
-		locStringSingle = 0x63FBB3619A08F4A,
-		locStringSingleCaps = 0xB50FC5632FD870A
+		locString = "menu/fileshare_category_clips",
+		locStringCaps = "menu/fileshare_category_clips_caps",
+		locStringSingle = "menu/fileshare_category_clips_single",
+		locStringSingleCaps = "menu/fileshare_category_clips_single_caps"
 	},
 	clip_private = {
-		locString = 0xFC7658F2128D919,
-		locStringCaps = 0xC337418703189E3,
-		locStringSingle = 0x63FBB3619A08F4A,
-		locStringSingleCaps = 0xB50FC5632FD870A
+		locString = "menu/fileshare_category_clips",
+		locStringCaps = "menu/fileshare_category_clips_caps",
+		locStringSingle = "menu/fileshare_category_clips_single",
+		locStringSingleCaps = "menu/fileshare_category_clips_single_caps"
 	},
 	film = {
-		locString = 0xFC7658F2128D919,
-		locStringCaps = 0xC337418703189E3,
-		locStringSingle = 0x63FBB3619A08F4A,
-		locStringSingleCaps = 0xB50FC5632FD870A
+		locString = "menu/fileshare_category_clips",
+		locStringCaps = "menu/fileshare_category_clips_caps",
+		locStringSingle = "menu/fileshare_category_clips_single",
+		locStringSingleCaps = "menu/fileshare_category_clips_single_caps"
 	},
 	film_private = {
-		locString = 0xFC7658F2128D919,
-		locStringCaps = 0xC337418703189E3,
-		locStringSingle = 0x63FBB3619A08F4A,
-		locStringSingleCaps = 0xB50FC5632FD870A
+		locString = "menu/fileshare_category_clips",
+		locStringCaps = "menu/fileshare_category_clips_caps",
+		locStringSingle = "menu/fileshare_category_clips_single",
+		locStringSingleCaps = "menu/fileshare_category_clips_single_caps"
 	}
 }
 CoD.FileshareUtility.FileProperties = {
@@ -603,10 +603,10 @@ CoD.FileshareUtility.SetCurrentCategory = function ( f44_arg0 )
 	local f44_local5 = CoD.FileshareUtility.CategoryLocStrings[f44_arg0]
 	if f44_local5 == nil then
 		f44_local0:set( "" )
-		f44_local1:set( 0x0 )
-		f44_local2:set( 0x0 )
-		f44_local3:set( 0x0 )
-		f44_local4:set( 0x0 )
+		f44_local1:set( "" )
+		f44_local2:set( "" )
+		f44_local3:set( "" )
+		f44_local4:set( "" )
 	else
 		f44_local0:set( f44_arg0 )
 		f44_local1:set( f44_local5.locString )
@@ -756,7 +756,7 @@ CoD.FileshareUtility.SetupDefaultNameAndDescription = function ( f63_arg0 )
 	local f63_local5 = Engine.GetModel( f63_arg0, "fileName" )
 	if Engine.GetModelValue( f63_local5 ) == "" and f63_local2 then
 		local f63_local6
-		if f63_local4 == Enum.eModes[0x3723205FAE52C4A] then
+		if f63_local4 == Enum.eModes.mode_zombies then
 			f63_local6 = Engine.Localize( CoD.BaseUtility.GetMapValue( f63_local2, "mapName", f63_local2 ) )
 		else
 			local f63_local7 = Engine[0xEA74FA7EE46E195]( f63_local3 )
@@ -766,8 +766,8 @@ CoD.FileshareUtility.SetupDefaultNameAndDescription = function ( f63_arg0 )
 	end
 	local f63_local7 = Engine.GetModel( f63_arg0, "fileDescription" )
 	if Engine.GetModelValue( f63_local7 ) == "" and f63_local3 and f63_local2 then
-		if f63_local4 == Enum.eModes[0xBF1DCC8138A9D39] then
-			Engine.SetModelValue( f63_local7, Engine[0xF9F1239CFD921FE]( 0xA2DD20750465431 ) )
+		if f63_local4 == Enum.eModes.mode_warzone then
+			Engine.SetModelValue( f63_local7, Engine[0xF9F1239CFD921FE]( "menu/warzone" ) )
 		else
 			Engine.SetModelValue( f63_local7, CoD.BaseUtility.GetGameModeOnMapNameString( f63_local3, f63_local2 ) )
 		end
@@ -897,30 +897,30 @@ CoD.FileshareUtility.SetupFileShareSummary_MP = function ( f69_arg0, f69_arg1, f
 			f69_local15 = ""
 			f69_local16 = f69_local18
 		elseif f69_local5 == 1 then
-			f69_local15 = Engine[0xF9F1239CFD921FE]( 0x1B24DF9DBEFF72F )
+			f69_local15 = Engine[0xF9F1239CFD921FE]( "menu/fileshare_draw" )
 			f69_local16 = f69_local18
 		elseif f69_local9 < 3 then
 			f69_local15 = Engine[0xF9F1239CFD921FE]( "menu/fileshare_victory" )
 			f69_local16 = f69_local20
 		else
-			f69_local15 = Engine[0xF9F1239CFD921FE]( 0xC69242B76A5D212 )
+			f69_local15 = Engine[0xF9F1239CFD921FE]( "menu/fileshare_defeat" )
 			f69_local16 = f69_local19
 		end
 	elseif f69_local5 == 1 then
-		f69_local15 = Engine[0xF9F1239CFD921FE]( 0x1B24DF9DBEFF72F )
+		f69_local15 = Engine[0xF9F1239CFD921FE]( "menu/fileshare_draw" )
 		f69_local16 = f69_local18
 	elseif f69_local8 == f69_local6 then
 		f69_local15 = Engine[0xF9F1239CFD921FE]( "menu/fileshare_victory" )
 		f69_local16 = f69_local20
 	else
-		f69_local15 = Engine[0xF9F1239CFD921FE]( 0xC69242B76A5D212 )
+		f69_local15 = Engine[0xF9F1239CFD921FE]( "menu/fileshare_defeat" )
 		f69_local16 = f69_local19
 	end
 	CoD.FileshareUtility.SetFileshareSummaryItem( f69_arg0, "gameResultText", f69_local15 )
 	CoD.FileshareUtility.SetFileshareSummaryItem( f69_arg0, "gameResultColor", CoD.ColorUtility.ConvertColor( f69_local16.r, f69_local16.g, f69_local16.b ) )
 	CoD.FileshareUtility.SetFileshareSummaryItem( f69_arg0, "column1Header", Engine[0xF9F1239CFD921FE]( "menu/kills_caps" ) )
 	CoD.FileshareUtility.SetFileshareSummaryItem( f69_arg0, "column1Value", f69_local11 )
-	CoD.FileshareUtility.SetFileshareSummaryItem( f69_arg0, "column2Header", Engine[0xF9F1239CFD921FE]( 0x297A0D6FB981600 ) )
+	CoD.FileshareUtility.SetFileshareSummaryItem( f69_arg0, "column2Header", Engine[0xF9F1239CFD921FE]( "menu/deaths_caps" ) )
 	CoD.FileshareUtility.SetFileshareSummaryItem( f69_arg0, "column2Value", f69_local12 )
 	if not f69_local10 then
 		return false
@@ -954,50 +954,50 @@ CoD.FileshareUtility.SetupFileShareSummary_MP = function ( f69_arg0, f69_arg1, f
 		end
 	end
 	local f69_local22, f69_local24, f69_local25, f69_local26 = nil
-	if f69_local7 == 0x6E8B11944572258 or f69_local7 == "dm" then
-		f69_local22 = Engine[0xF9F1239CFD921FE]( 0x44C900F3A44CF0A )
+	if f69_local7 == "tdm" or f69_local7 == "dm" then
+		f69_local22 = Engine[0xF9F1239CFD921FE]( "mpui/ratio_caps" )
 		f69_local24 = CoD.GetKDRatio( f69_local23.kills:get(), f69_local23.deaths:get() )
-		f69_local25 = Engine[0xF9F1239CFD921FE]( 0x18CA55058E6B3A7 )
+		f69_local25 = Engine[0xF9F1239CFD921FE]( "mpui/assists_caps" )
 		f69_local26 = f69_local23.assists:get()
-	elseif f69_local7 == 0xAAF4118F474831B or f69_local7 == "hq" then
-		f69_local22 = Engine[0xF9F1239CFD921FE]( 0x2FA06E3E230002C )
+	elseif f69_local7 == "dom" or f69_local7 == "hq" then
+		f69_local22 = Engine[0xF9F1239CFD921FE]( "mpui/captures_caps" )
 		f69_local24 = f69_local21.captures
-		f69_local25 = Engine[0xF9F1239CFD921FE]( 0x53A6BBADFAAFDE8 )
+		f69_local25 = Engine[0xF9F1239CFD921FE]( "mpui/defends_caps" )
 		f69_local26 = f69_local21.returns
 	elseif f69_local7 == "koth" then
-		f69_local22 = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xA4424A69B99B9E5 ) )
+		f69_local22 = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "mpui/objtime" ) )
 		f69_local24 = CoD.GetTimeText( f69_local21.objectiveTime * 1000 )
-		f69_local25 = Engine[0xF9F1239CFD921FE]( 0x53A6BBADFAAFDE8 )
+		f69_local25 = Engine[0xF9F1239CFD921FE]( "mpui/defends_caps" )
 		f69_local26 = f69_local21.defending
-	elseif f69_local7 == 0x5B707190CBF683C then
-		f69_local22 = Engine[0xF9F1239CFD921FE]( 0x2FA06E3E230002C )
+	elseif f69_local7 == "ctf" then
+		f69_local22 = Engine[0xF9F1239CFD921FE]( "mpui/captures_caps" )
 		f69_local24 = f69_local21.captures
-		f69_local25 = Engine[0xF9F1239CFD921FE]( 0x6F9BD560FE7AE3A )
+		f69_local25 = Engine[0xF9F1239CFD921FE]( "mpui/returns_caps" )
 		f69_local26 = f69_local21.returns
-	elseif f69_local7 == 0xA9A2518F461F77D or f69_local7 == 0x22DA5195CD603C1 or f69_local7 == "sd" then
-		f69_local22 = Engine[0xF9F1239CFD921FE]( 0x42C6F36B505E71F )
+	elseif f69_local7 == "dem" or f69_local7 == 0x22DA5195CD603C1 or f69_local7 == "sd" then
+		f69_local22 = Engine[0xF9F1239CFD921FE]( "mpui/plants_caps" )
 		f69_local24 = f69_local21.plants
-		f69_local25 = Engine[0xF9F1239CFD921FE]( 0x51332C8EA3091FE )
+		f69_local25 = Engine[0xF9F1239CFD921FE]( "mpui/defuses_caps" )
 		f69_local26 = f69_local21.defuses
 	elseif f69_local7 == "conf" then
-		f69_local22 = Engine[0xF9F1239CFD921FE]( 0x9E88F8E4394E52 )
+		f69_local22 = Engine[0xF9F1239CFD921FE]( "mpui/kills_confirmed_caps" )
 		f69_local24 = f69_local21.captures
-		f69_local25 = Engine[0xF9F1239CFD921FE]( 0xA891E598EE9F7EA )
+		f69_local25 = Engine[0xF9F1239CFD921FE]( "mpui/kills_denied_caps" )
 		f69_local26 = f69_local21.returns
-	elseif f69_local7 == 0xA13D89BA9FBCA24 then
-		f69_local22 = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x9C04F569762BA22 ) )
+	elseif f69_local7 == "ball" then
+		f69_local22 = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "mpui/carries" ) )
 		f69_local24 = f69_local21.captures
-		f69_local25 = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x692714E8AA1AFA6 ) )
+		f69_local25 = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "mpui/throws" ) )
 		f69_local26 = f69_local21.throws
-	elseif f69_local7 == 0x5194D18FAD99705 then
-		f69_local22 = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x4A2647478E0ACD0 ) )
+	elseif f69_local7 == "gun" then
+		f69_local22 = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "mpui/stabs" ) )
 		f69_local24 = f69_local21.captures
-		f69_local25 = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xC2311CC57288AAD ) )
+		f69_local25 = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "mpui/humiliated" ) )
 		f69_local26 = f69_local21.returns
-	elseif f69_local7 == 0xB60DB445FBF5155 then
-		f69_local22 = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x429CCD803C69574 ) )
+	elseif f69_local7 == "escort" then
+		f69_local22 = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "mpui/escorts" ) )
 		f69_local24 = CoD.GetTimeText( f69_local21.escortTime * 1000 )
-		f69_local25 = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xCEC6FE753AC5376 ) )
+		f69_local25 = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "mpui/disables" ) )
 		f69_local26 = f69_local21.returns
 	else
 		return false
@@ -1021,12 +1021,12 @@ CoD.FileshareUtility.SetupFileShareSummary = function ( f70_arg0, f70_arg1, f70_
 		return 
 	end
 	local f70_local4 = nil
-	if f70_local2 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f70_local2 == Enum.eModes.mode_multiplayer then
 		f70_local4 = CoD.FileshareUtility.SetupFileShareSummary_MP( f70_arg2, f70_local3, {
 			controller = f70_arg0,
 			xuid = f70_local1
 		} )
-	elseif f70_local2 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f70_local2 == Enum.eModes.mode_zombies then
 		
 	else
 		return 

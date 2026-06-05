@@ -30,7 +30,7 @@ CoD.AARRewardBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local ButtonBottomBracket9Slice2 = LUI.UIImage.new( 0, 0, -6, 418, 0, 0, 14, 26 )
 	ButtonBottomBracket9Slice2:setAlpha( 0.16 )
 	ButtonBottomBracket9Slice2:setZRot( 180 )
-	ButtonBottomBracket9Slice2:setImage( RegisterImage( 0x55942079F1B70E6 ) )
+	ButtonBottomBracket9Slice2:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_bottom_line" ) )
 	ButtonBottomBracket9Slice2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonBottomBracket9Slice2:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonBottomBracket9Slice2:setupNineSliceShader( 120, 12 )
@@ -44,7 +44,7 @@ CoD.AARRewardBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local ButtonBottomBracket9Slice = LUI.UIImage.new( 0, 0, -6, 418, 1, 1, -6, 6 )
 	ButtonBottomBracket9Slice:setAlpha( 0.16 )
-	ButtonBottomBracket9Slice:setImage( RegisterImage( 0x55942079F1B70E6 ) )
+	ButtonBottomBracket9Slice:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_bottom_line" ) )
 	ButtonBottomBracket9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonBottomBracket9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonBottomBracket9Slice:setupNineSliceShader( 120, 12 )

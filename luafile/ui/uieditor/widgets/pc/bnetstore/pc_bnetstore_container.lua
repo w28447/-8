@@ -37,11 +37,11 @@ CoD.PC_BnetStore_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PurchaseButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		CoD.PCUtility.OpenBattlenetCheckoutMenu( f3_arg2, f3_arg1, self.List, false )
+	f1_arg0:AddButtonCallbackFunction( PurchaseButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.PCUtility.OpenBattlenetCheckoutMenu( controller, menu, self.List, false )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( PurchaseButton )
@@ -81,11 +81,11 @@ CoD.PC_BnetStore_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f8_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( GiftButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		CoD.PCUtility.OpenBattlenetCheckoutMenu( f9_arg2, f9_arg1, self.List, true )
+	f1_arg0:AddButtonCallbackFunction( GiftButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.PCUtility.OpenBattlenetCheckoutMenu( controller, menu, self.List, true )
 		return true
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( GiftButton )
@@ -145,19 +145,19 @@ CoD.PC_BnetStore_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local StandardEdition = LUI.UIImage.new( 0, 0, -128, 0, 0, 0, 0, 128 )
 	StandardEdition:setAlpha( 0 )
-	StandardEdition:setImage( RegisterImage( 0xC064242DED406C5 ) )
+	StandardEdition:setImage( RegisterImage( "uie_pc_bnetstore_digitalstandardedition" ) )
 	self:addElement( StandardEdition )
 	self.StandardEdition = StandardEdition
 	
 	local DeluxeEdition = LUI.UIImage.new( 0, 0, -128, 0, 0, 0, 0, 128 )
 	DeluxeEdition:setAlpha( 0 )
-	DeluxeEdition:setImage( RegisterImage( 0x4A7C67EA6B0E9FB ) )
+	DeluxeEdition:setImage( RegisterImage( "uie_pc_bnetstore_digitaldeluxeedition" ) )
 	self:addElement( DeluxeEdition )
 	self.DeluxeEdition = DeluxeEdition
 	
 	local DeluxeEnhancedEdition = LUI.UIImage.new( 0, 0, -128, 0, 0, 0, 0, 128 )
 	DeluxeEnhancedEdition:setAlpha( 0 )
-	DeluxeEnhancedEdition:setImage( RegisterImage( 0x30DE1FDCB76AEAD ) )
+	DeluxeEnhancedEdition:setImage( RegisterImage( "uie_pc_bnetstore_digitaldeluxeenhancededition" ) )
 	self:addElement( DeluxeEnhancedEdition )
 	self.DeluxeEnhancedEdition = DeluxeEnhancedEdition
 	

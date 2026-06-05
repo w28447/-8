@@ -28,7 +28,7 @@ CoD.WarzoneInventoryMenuItemSmall_Internal_QE.new = function ( f1_arg0, f1_arg1,
 	local LED = LUI.UIImage.new( 0, 0, 0, 88, 0, 0, 0.5, 88.5 )
 	LED:setRGB( 0.29, 0.28, 0.22 )
 	LED:setAlpha( 0.08 )
-	LED:setImage( RegisterImage( 0x4EF5361D0A84EE8 ) )
+	LED:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_qe_led" ) )
 	self:addElement( LED )
 	self.LED = LED
 	
@@ -47,7 +47,7 @@ CoD.WarzoneInventoryMenuItemSmall_Internal_QE.new = function ( f1_arg0, f1_arg1,
 	
 	local Border = LUI.UIImage.new( 0, 0, 0, 88, 0, 0, 0.5, 88.5 )
 	Border:setRGB( 0.36, 0.34, 0.23 )
-	Border:setImage( RegisterImage( 0x144D4B98D6C5F71 ) )
+	Border:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_qe_border" ) )
 	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Border:setShaderVector( 0, 0.01, 0.05, 0.01, 0.1 )
 	self:addElement( Border )
@@ -96,7 +96,7 @@ CoD.WarzoneInventoryMenuItemSmall_Internal_QE.new = function ( f1_arg0, f1_arg1,
 	local triangles = LUI.UIImage.new( 0, 0, 1, 89, 0, 0, 0.5, 88.5 )
 	triangles:setRGB( 0, 0, 0 )
 	triangles:setAlpha( 0 )
-	triangles:setImage( RegisterImage( 0x8CF82F4676A49D8 ) )
+	triangles:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_qe_triangles" ) )
 	self:addElement( triangles )
 	self.triangles = triangles
 	

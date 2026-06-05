@@ -73,7 +73,7 @@ local PostLoadFunc = function ( self, controller, menu )
 	end )
 	self.m_timer = LUI.UITimer.new( 1, "update_bar", false )
 	self.m_heartbeat = LUI.UITimer.new( 100, "check_pulse", false )
-	CoD.Menu.AddButtonCallbackFunction( menu, self, controller, Enum.LUIButton[0x57783F8DA4AAEF], "ui_navleft", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+	CoD.Menu.AddButtonCallbackFunction( menu, self, controller, Enum.LUIButton[0x57783F8DA4AAEF], "ui_navleft", function ( element, menu, controller, f10_arg3 )
 		if not self.m_disableNavigation then
 			if not self.m_beat then
 				self:updateSlideDirection( -1 )
@@ -89,7 +89,7 @@ local PostLoadFunc = function ( self, controller, menu )
 			end
 		end
 	end )
-	CoD.Menu.AddButtonCallbackFunction( menu, self, controller, Enum.LUIButton[0x571F08AD84807E0], "ui_navright", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
+	CoD.Menu.AddButtonCallbackFunction( menu, self, controller, Enum.LUIButton[0x571F08AD84807E0], "ui_navright", function ( element, menu, controller, f11_arg3 )
 		if not self.m_disableNavigation then
 			if not self.m_beat then
 				self:updateSlideDirection( 1 )

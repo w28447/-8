@@ -81,7 +81,7 @@ CoD.Challenges_MasterCallingCardWidget_Internal.new = function ( f1_arg0, f1_arg
 	
 	local DarkOpsClassifiedIcon = LUI.UIImage.new( 1, 1, -369, -3, 0, 0, 4.5, 95.5 )
 	DarkOpsClassifiedIcon:setAlpha( 0 )
-	DarkOpsClassifiedIcon:setImage( RegisterImage( 0x2746D911ABDE62E ) )
+	DarkOpsClassifiedIcon:setImage( RegisterImage( "uie_t7_icons_challenges_classified_placeholder" ) )
 	self:addElement( DarkOpsClassifiedIcon )
 	self.DarkOpsClassifiedIcon = DarkOpsClassifiedIcon
 	
@@ -188,7 +188,7 @@ CoD.Challenges_MasterCallingCardWidget_Internal.new = function ( f1_arg0, f1_arg
 	
 	local CompleteIcon = LUI.UIImage.new( 0, 0, 601, 661, 0.5, 0.5, -30, 30 )
 	CompleteIcon:setAlpha( 0 )
-	CompleteIcon:setImage( RegisterImage( 0x98D02A0405ED520 ) )
+	CompleteIcon:setImage( RegisterImage( "uie_ui_icon_challenges_complete_small" ) )
 	self:addElement( CompleteIcon )
 	self.CompleteIcon = CompleteIcon
 	

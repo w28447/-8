@@ -23,7 +23,7 @@ CoD.MPSpecialistHUBTags_TagFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local emblemListBg = LUI.UIImage.new( 0, 0, 204.5, 1253.5, 0, 0, 81, 926 )
 	emblemListBg:setScale( 0.77, 0.77 )
-	emblemListBg:setImage( RegisterImage( 0xCE384B31419E220 ) )
+	emblemListBg:setImage( RegisterImage( "uie_ui_menu_emblem_empty_bg" ) )
 	emblemListBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	emblemListBg:setShaderVector( 0, 0, 0, 0, 0 )
 	emblemListBg:setupNineSliceShader( 212, 212 )
@@ -60,17 +60,17 @@ CoD.MPSpecialistHUBTags_TagFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( tags, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f6_arg0, f6_arg2, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f6_arg0, f6_arg2, "trialLocked" ) then
+	f1_arg0:AddButtonCallbackFunction( tags, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) then
 			PlaySoundAlias( "uin_main_edit" )
-			CoD.PlayerRoleUtility.BindGestureTagToSlot( f6_arg1, f6_arg0, f6_arg2 )
+			CoD.PlayerRoleUtility.BindGestureTagToSlot( menu, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f7_arg0, f7_arg2, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f7_arg0, f7_arg2, "trialLocked" ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -85,7 +85,7 @@ CoD.MPSpecialistHUBTags_TagFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local DotLineTop = LUI.UIImage.new( 0.5, 0.5, -636.5, 174.5, 0, 0, 161, 165 )
 	DotLineTop:setAlpha( 0.4 )
-	DotLineTop:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	DotLineTop:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	DotLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	DotLineTop:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( DotLineTop )
@@ -93,7 +93,7 @@ CoD.MPSpecialistHUBTags_TagFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local DotLineBottom = LUI.UIImage.new( 0.5, 0.5, -636.5, 174.5, 0, 0, 859, 863 )
 	DotLineBottom:setAlpha( 0.4 )
-	DotLineBottom:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	DotLineBottom:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	DotLineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	DotLineBottom:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( DotLineBottom )

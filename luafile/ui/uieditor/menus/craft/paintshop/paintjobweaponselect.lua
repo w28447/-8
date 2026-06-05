@@ -79,25 +79,25 @@ LUI.createMenu.PaintjobWeaponSelect = function ( f1_arg0, f1_arg1 )
 	f1_local8( f1_local7, f1_local9.PaintjobWeaponVariantListShown, function ( f4_arg0, f4_arg1 )
 		CoD.Menu.UpdateButtonShownState( f4_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A] )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		if not CoD.ModelUtility.IsControllerModelValueTrue( f5_arg2, "PaintjobWeaponVariantListShown" ) then
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsControllerModelValueTrue( controller, "PaintjobWeaponVariantListShown" ) then
 			PlaySoundAlias( "uin_party_ease_slide_back" )
-			GoBack( self, f5_arg2 )
+			GoBack( self, controller )
 			return true
-		elseif CoD.ModelUtility.IsControllerModelValueTrue( f5_arg2, "PaintjobWeaponVariantListShown" ) then
+		elseif CoD.ModelUtility.IsControllerModelValueTrue( controller, "PaintjobWeaponVariantListShown" ) then
 			PlaySoundAlias( "uin_party_ease_slide_back" )
-			CoD.CACUtility.HideWeaponVariantList( f5_arg1, f5_arg2 )
-			SetControllerModelValue( f5_arg2, "PaintjobWeaponVariantListShown", false )
+			CoD.CACUtility.HideWeaponVariantList( menu, controller )
+			SetControllerModelValue( controller, "PaintjobWeaponVariantListShown", false )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		if not CoD.ModelUtility.IsControllerModelValueTrue( f6_arg2, "PaintjobWeaponVariantListShown" ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsControllerModelValueTrue( controller, "PaintjobWeaponVariantListShown" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsControllerModelValueTrue( f6_arg2, "PaintjobWeaponVariantListShown" ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+		elseif CoD.ModelUtility.IsControllerModelValueTrue( controller, "PaintjobWeaponVariantListShown" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false

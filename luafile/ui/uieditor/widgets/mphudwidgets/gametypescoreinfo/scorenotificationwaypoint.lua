@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/mphudwidgets/gametypescoreinfo/scorenotificationwaypoint_capture" )
 require( "ui/uieditor/widgets/mphudwidgets/waypointcenter" )
-require( "x64:76c14e1bc07cd98" )
+require( "ui/uieditor/widgets/mphudwidgets/waypointprogressring" )
 
 CoD.ScoreNotificationWaypoint = InheritFrom( LUI.UIElement )
 CoD.ScoreNotificationWaypoint.__defaultWidth = 80
@@ -15,7 +15,7 @@ CoD.ScoreNotificationWaypoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local baseglow = LUI.UIImage.new( 0.5, 0.5, -32, 32, 0.5, 0.5, -32, 32 )
 	baseglow:setAlpha( 0 )
-	baseglow:setImage( RegisterImage( 0x55D86A928138A5C ) )
+	baseglow:setImage( RegisterImage( "uie_t7_hud_waypoints_baseglow" ) )
 	baseglow.__Color = function ( f2_arg0 )
 		local f2_local0 = f2_arg0:get()
 		if f2_local0 ~= nil then
@@ -52,7 +52,7 @@ CoD.ScoreNotificationWaypoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local WaypointPattern = LUI.UIImage.new( 0.5, 0.5, -37, 39, 0.5, 0.5, -38.5, 37.5 )
 	WaypointPattern:setAlpha( 0.7 )
-	WaypointPattern:setImage( RegisterImage( 0xD35B12E94483619 ) )
+	WaypointPattern:setImage( RegisterImage( "uie_ui_hud_core_waypoint_led_small" ) )
 	WaypointPattern:linkToElementModel( self, "color", true, function ( model )
 		local f5_local0 = model:get()
 		if f5_local0 ~= nil then
@@ -85,7 +85,7 @@ CoD.ScoreNotificationWaypoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.ProgressMeterBacking = ProgressMeterBacking
 	
 	local ProgressMeterBackingFill = LUI.UIImage.new( 0.5, 0.5, -25, 27, 0.5, 0.5, -27, 25 )
-	ProgressMeterBackingFill:setImage( RegisterImage( 0x2E4DBA41E983343 ) )
+	ProgressMeterBackingFill:setImage( RegisterImage( "uie_ui_hud_core_waypoint_domination_fill_02" ) )
 	ProgressMeterBackingFill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	ProgressMeterBackingFill:setShaderVector( 1, 0.5, 0, 0, 0 )
 	ProgressMeterBackingFill:setShaderVector( 2, 0.5, 0, 0, 0 )

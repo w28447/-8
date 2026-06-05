@@ -39,11 +39,11 @@ LUI.createMenu.PC_UI_Test_Menu = function ( f1_arg0, f1_arg1 )
 	self:addElement( TabFrame )
 	self.TabFrame = TabFrame
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		SendMenuResponse( self, "PC_UI_Test_Menu", "closing", f3_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
+		SendMenuResponse( self, "PC_UI_Test_Menu", "closing", controller )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/close", nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/close", nil, "ESCAPE" )
 		return true
 	end, false )
 	MenuFrame:setModel( self.buttonModel, f1_arg0 )

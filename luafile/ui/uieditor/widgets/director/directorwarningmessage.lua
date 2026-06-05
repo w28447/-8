@@ -26,7 +26,7 @@ CoD.DirectorWarningMessage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local WarningIcon = LUI.UIImage.new( 0, 0, -41, -9, 0.5, 0.5, -16, 16 )
 	WarningIcon:setRGB( ColorSet.ResistanceHigh.r, ColorSet.ResistanceHigh.g, ColorSet.ResistanceHigh.b )
-	WarningIcon:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
+	WarningIcon:setImage( RegisterImage( "warning_triangle" ) )
 	self:addElement( WarningIcon )
 	self.WarningIcon = WarningIcon
 	

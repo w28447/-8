@@ -32,7 +32,7 @@ LUI.createMenu.AARMeritReportOverlay = function ( f1_arg0, f1_arg1 )
 	
 	local FractalGrid = LUI.UIImage.new( 0.5, 0.5, -960, 960, 0, 1, 0, 0 )
 	FractalGrid:setAlpha( 0 )
-	FractalGrid:setImage( RegisterImage( 0x1DF4C930E69FFB0 ) )
+	FractalGrid:setImage( RegisterImage( "uie_ui_menu_aar_levelup_fractalgrid" ) )
 	FractalGrid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	FractalGrid:setShaderVector( 0, 1, 1, 0, 0 )
 	FractalGrid:setShaderVector( 1, 0, 0, 0, 0 )
@@ -119,54 +119,54 @@ LUI.createMenu.AARMeritReportOverlay = function ( f1_arg0, f1_arg1 )
 	f1_local12( f1_local11, f1_local13.LastInput, function ( f8_arg0, f8_arg1 )
 		CoD.Menu.UpdateButtonShownState( f8_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		if not IsPC() then
-			CoD.AARUtility.CloseMeritReportOverlay( f9_arg1, f9_arg2 )
+			CoD.AARUtility.CloseMeritReportOverlay( menu, controller )
 			return true
-		elseif IsPC() and IsGamepad( f9_arg2 ) then
-			CoD.AARUtility.CloseMeritReportOverlay( f9_arg1, f9_arg2 )
+		elseif IsPC() and IsGamepad( controller ) then
+			CoD.AARUtility.CloseMeritReportOverlay( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
+	end, function ( element, menu, controller )
 		if not IsPC() then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
 			return true
-		elseif IsPC() and IsGamepad( f10_arg2 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+		elseif IsPC() and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
 		if IsPC() then
-			CoD.AARUtility.CloseMeritReportOverlay( f11_arg1, f11_arg2 )
+			CoD.AARUtility.CloseMeritReportOverlay( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		CoD.AARUtility.CloseMeritReportOverlay( f13_arg1, f13_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		CoD.AARUtility.CloseMeritReportOverlay( menu, controller )
 		return true
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 		return false
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		CoD.AARUtility.CloseMeritReportOverlay( f15_arg1, f15_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, model )
+		CoD.AARUtility.CloseMeritReportOverlay( menu, controller )
 		return true
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	FooterContainerFrontendRight:setModel( self.buttonModel, f1_arg0 )

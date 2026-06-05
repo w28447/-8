@@ -11,7 +11,7 @@ CoD.ScoreboardGameStatusMapMask.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local ScoreboardGameStatusMap = CoD.ScoreboardGameStatusMap.new( f1_arg0, f1_arg1, 0, 0, 0, 1000, 0, 0, -36.5, 526.5 )
-	ScoreboardGameStatusMap:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xC212964B40FA826 ) )
+	ScoreboardGameStatusMap:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal_rtt" ) )
 	self:addElement( ScoreboardGameStatusMap )
 	self.ScoreboardGameStatusMap = ScoreboardGameStatusMap
 	

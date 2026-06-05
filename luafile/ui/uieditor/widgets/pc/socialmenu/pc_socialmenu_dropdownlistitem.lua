@@ -60,7 +60,7 @@ CoD.PC_SocialMenu_DropDownListItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	GlowAdd:setAlpha( 0 )
 	GlowAdd:setZRot( -90 )
 	GlowAdd:setScale( 0.34, 0.48 )
-	GlowAdd:setImage( RegisterImage( 0xAD405802E3EEE94 ) )
+	GlowAdd:setImage( RegisterImage( "uie_icon_frontend_navigation_glowmed" ) )
 	GlowAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowAdd )
 	self.GlowAdd = GlowAdd

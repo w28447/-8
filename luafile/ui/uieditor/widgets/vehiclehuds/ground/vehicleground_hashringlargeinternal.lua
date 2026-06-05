@@ -8,7 +8,7 @@ CoD.VehicleGround_HashRingLargeInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 	self.soundSet = "default"
 	
 	local HashLarge = LUI.UIImage.new( 1, 1, -144, 0, 0.5, 0.5, -216, 216 )
-	HashLarge:setImage( RegisterImage( 0xE7CDDC160E7AD13 ) )
+	HashLarge:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_ground_hashringlarge" ) )
 	self:addElement( HashLarge )
 	self.HashLarge = HashLarge
 	

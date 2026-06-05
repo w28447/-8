@@ -9,7 +9,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	self.soundSet = "default"
 	
 	local minimap = LUI.UIImage.new( 0, 0, 0, 750, 0, 0, 0, 282 )
-	minimap:setImage( RegisterImage( 0x691108AB641BBC4 ) )
+	minimap:setImage( RegisterImage( "uie_t7_mp_sector_color_blind_map" ) )
 	self:addElement( minimap )
 	self.minimap = minimap
 	
@@ -19,7 +19,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	end
 	
 	playerArrow.__Color()
-	playerArrow:setImage( RegisterImage( 0x81A80F86C516C0A ) )
+	playerArrow:setImage( RegisterImage( "t7_hud_waypoints_compassping_player" ) )
 	self:addElement( playerArrow )
 	self.playerArrow = playerArrow
 	
@@ -39,7 +39,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	end
 	
 	friendlyArrow.__Color()
-	friendlyArrow:setImage( RegisterImage( 0xC70611936881460 ) )
+	friendlyArrow:setImage( RegisterImage( "t7_hud_waypoints_compassping_friendly_mp" ) )
 	self:addElement( friendlyArrow )
 	self.friendlyArrow = friendlyArrow
 	
@@ -49,7 +49,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	end
 	
 	friendlyPartyArrow.__Color()
-	friendlyPartyArrow:setImage( RegisterImage( 0xC70611936881460 ) )
+	friendlyPartyArrow:setImage( RegisterImage( "t7_hud_waypoints_compassping_friendly_mp" ) )
 	self:addElement( friendlyPartyArrow )
 	self.friendlyPartyArrow = friendlyPartyArrow
 	
@@ -59,7 +59,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	end
 	
 	friendlyObjective.__Color()
-	friendlyObjective:setImage( RegisterImage( 0x3DD751B506DFEB6 ) )
+	friendlyObjective:setImage( RegisterImage( "t7_hud_waypoints_neutral_blank_mini" ) )
 	self:addElement( friendlyObjective )
 	self.friendlyObjective = friendlyObjective
 	
@@ -79,7 +79,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	end
 	
 	enemyObjective.__Color()
-	enemyObjective:setImage( RegisterImage( 0x3DD751B506DFEB6 ) )
+	enemyObjective:setImage( RegisterImage( "t7_hud_waypoints_neutral_blank_mini" ) )
 	self:addElement( enemyObjective )
 	self.enemyObjective = enemyObjective
 	
@@ -99,7 +99,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	end
 	
 	playerHeader.__Color()
-	playerHeader:setText( Engine[0xF9F1239CFD921FE]( 0x1F9844545CB4FF6 ) )
+	playerHeader:setText( Engine[0xF9F1239CFD921FE]( "menu/you_caps" ) )
 	playerHeader:setTTF( "ttmussels_regular" )
 	playerHeader:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	playerHeader:setAlignment( Enum.LUIAlignment[0x70510683C22104B] )
@@ -139,7 +139,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	
 	minimapPlayerArrow.__Color()
 	minimapPlayerArrow:setZRot( -90 )
-	minimapPlayerArrow:setImage( RegisterImage( 0x81A80F86C516C0A ) )
+	minimapPlayerArrow:setImage( RegisterImage( "t7_hud_waypoints_compassping_player" ) )
 	self:addElement( minimapPlayerArrow )
 	self.minimapPlayerArrow = minimapPlayerArrow
 	
@@ -150,7 +150,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	
 	minimapFriendlyPlayerArrow.__Color()
 	minimapFriendlyPlayerArrow:setZRot( -34 )
-	minimapFriendlyPlayerArrow:setImage( RegisterImage( 0xC70611936881460 ) )
+	minimapFriendlyPlayerArrow:setImage( RegisterImage( "t7_hud_waypoints_compassping_friendly_mp" ) )
 	self:addElement( minimapFriendlyPlayerArrow )
 	self.minimapFriendlyPlayerArrow = minimapFriendlyPlayerArrow
 	
@@ -161,7 +161,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	
 	minimapPartyFriendlyPlayerArrow.__Color()
 	minimapPartyFriendlyPlayerArrow:setZRot( -34 )
-	minimapPartyFriendlyPlayerArrow:setImage( RegisterImage( 0xC70611936881460 ) )
+	minimapPartyFriendlyPlayerArrow:setImage( RegisterImage( "t7_hud_waypoints_compassping_friendly_mp" ) )
 	self:addElement( minimapPartyFriendlyPlayerArrow )
 	self.minimapPartyFriendlyPlayerArrow = minimapPartyFriendlyPlayerArrow
 	
@@ -171,7 +171,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	end
 	
 	minimapEnemyPing1.__Color()
-	minimapEnemyPing1:setImage( RegisterImage( 0x82B58A3A0F90B01 ) )
+	minimapEnemyPing1:setImage( RegisterImage( "t7_hud_waypoints_compassping_enemy" ) )
 	self:addElement( minimapEnemyPing1 )
 	self.minimapEnemyPing1 = minimapEnemyPing1
 	
@@ -181,7 +181,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	end
 	
 	minimapEnemyPing2.__Color()
-	minimapEnemyPing2:setImage( RegisterImage( 0x82B58A3A0F90B01 ) )
+	minimapEnemyPing2:setImage( RegisterImage( "t7_hud_waypoints_compassping_enemy" ) )
 	self:addElement( minimapEnemyPing2 )
 	self.minimapEnemyPing2 = minimapEnemyPing2
 	
@@ -191,7 +191,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	end
 	
 	minimapEnemyPing3.__Color()
-	minimapEnemyPing3:setImage( RegisterImage( 0x82B58A3A0F90B01 ) )
+	minimapEnemyPing3:setImage( RegisterImage( "t7_hud_waypoints_compassping_enemy" ) )
 	self:addElement( minimapEnemyPing3 )
 	self.minimapEnemyPing3 = minimapEnemyPing3
 	
@@ -206,7 +206,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	self.objectivePointA = objectivePointA
 	
 	local objectivePointB = LUI.UIImage.new( 0, 0, 342, 390, 0, 0, 122, 170 )
-	objectivePointB:setImage( RegisterImage( 0x58FBDC4C0C829B1 ) )
+	objectivePointB:setImage( RegisterImage( "t7_hud_waypoints_neutral_new_b_mini" ) )
 	self:addElement( objectivePointB )
 	self.objectivePointB = objectivePointB
 	
@@ -216,7 +216,7 @@ CoD.StartMenu_Options_Graphics_ColorBlindMinimapPreview.new = function ( f1_arg0
 	end
 	
 	objectivePointC.__Color()
-	objectivePointC:setImage( RegisterImage( 0x484B59524AE2B0 ) )
+	objectivePointC:setImage( RegisterImage( "t7_hud_waypoints_neutral_new_c_mini" ) )
 	self:addElement( objectivePointC )
 	self.objectivePointC = objectivePointC
 	

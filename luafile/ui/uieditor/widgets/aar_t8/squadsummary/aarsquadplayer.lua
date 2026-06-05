@@ -12,7 +12,7 @@ CoD.AARSquadPlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local PlayerNameBotStripe = LUI.UIImage.new( 0.5, 0.5, -239.5, 239.5, 1, 1, -6, 5 )
 	PlayerNameBotStripe:setAlpha( 0.5 )
-	PlayerNameBotStripe:setImage( RegisterImage( 0x25491BD9124F9AD ) )
+	PlayerNameBotStripe:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_name_stripe" ) )
 	self:addElement( PlayerNameBotStripe )
 	self.PlayerNameBotStripe = PlayerNameBotStripe
 	

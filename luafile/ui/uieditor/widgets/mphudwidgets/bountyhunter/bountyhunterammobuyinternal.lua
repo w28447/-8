@@ -1,4 +1,4 @@
-require( "ui/uieditor/widgets/common/CommonButtonOutlineThin" )
+require( "ui/uieditor/widgets/common/commonbuttonoutlinethin" )
 
 CoD.BountyHunterAmmoBuyInternal = InheritFrom( LUI.UIElement )
 CoD.BountyHunterAmmoBuyInternal.__defaultWidth = 280
@@ -55,7 +55,7 @@ CoD.BountyHunterAmmoBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local PixelGrid = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	PixelGrid:setAlpha( 0.05 )
-	PixelGrid:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGrid:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PixelGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGrid:setupNineSliceShader( 128, 128 )
@@ -83,7 +83,7 @@ CoD.BountyHunterAmmoBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local Refill = LUI.UIText.new( 0, 0, 59.5, 161.5, 0.5, 0.5, -9.5, 9.5 )
 	Refill:setRGB( 0.07, 0.09, 0.04 )
-	Refill:setText( Engine[0xF9F1239CFD921FE]( 0xD5AA68BA080C3B6 ) )
+	Refill:setText( Engine[0xF9F1239CFD921FE]( "bounty_hunter/refill" ) )
 	Refill:setTTF( "ttmussels_demibold" )
 	Refill:setLetterSpacing( 2 )
 	Refill:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -117,7 +117,7 @@ CoD.BountyHunterAmmoBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local Full = LUI.UIText.new( 0, 0, 177.5, 225.5, 0.5, 0.5, -9.5, 9.5 )
 	Full:setRGB( 0, 0, 0 )
 	Full:setAlpha( 0 )
-	Full:setText( Engine[0xF9F1239CFD921FE]( 0xFE53EF0EFB00EBB ) )
+	Full:setText( Engine[0xF9F1239CFD921FE]( "bounty_hunter/full" ) )
 	Full:setTTF( "ttmussels_regular" )
 	Full:setLetterSpacing( 2 )
 	Full:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -125,7 +125,7 @@ CoD.BountyHunterAmmoBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.Full = Full
 	
 	local AmmoImage = LUI.UIImage.new( 1, 1, -35.5, 1.5, 0.5, 0.5, -64, -27 )
-	AmmoImage:setImage( RegisterImage( 0x5055D81F68DB522 ) )
+	AmmoImage:setImage( RegisterImage( "uie_ui_icon_bounty_hunter_pickup_ammo" ) )
 	self:addElement( AmmoImage )
 	self.AmmoImage = AmmoImage
 	

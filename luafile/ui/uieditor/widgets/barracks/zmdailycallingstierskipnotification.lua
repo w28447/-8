@@ -19,13 +19,13 @@ CoD.ZMDailyCallingsTierSkipNotification.new = function ( f1_arg0, f1_arg1, f1_ar
 	self.AmbientGlowAnim = AmbientGlowAnim
 	
 	local TierSkipIcon = LUI.UIImage.new( 0, 0, 0, 55, 0.5, 0.5, -27.5, 27.5 )
-	TierSkipIcon:setImage( RegisterImage( 0x3162CFF8BC56A18 ) )
+	TierSkipIcon:setImage( RegisterImage( "ui_icon_blackmarket_tier_token" ) )
 	self:addElement( TierSkipIcon )
 	self.TierSkipIcon = TierSkipIcon
 	
 	local Header = LUI.UIText.new( 0, 0, 57, 190, 0.5, 0.5, -7, 7 )
 	Header:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	Header:setText( LocalizeToUpperString( 0x59AB2B00A337CBE ) )
+	Header:setText( LocalizeToUpperString( "aar/tier_skip" ) )
 	Header:setTTF( "dinnext_regular" )
 	Header:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	Header:setLetterSpacing( 3 )

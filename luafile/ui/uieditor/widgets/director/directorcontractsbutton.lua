@@ -24,12 +24,12 @@ CoD.DirectorContractsButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( DirectorContractsButtonInternal, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
+	f1_arg0:AddButtonCallbackFunction( DirectorContractsButtonInternal, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		PlaySoundAlias( "uin_toggle_generic" )
-		OpenOverlay( self, "BlackMarketContracts", f3_arg2 )
+		OpenOverlay( self, "BlackMarketContracts", controller )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( DirectorContractsButtonInternal )

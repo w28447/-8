@@ -31,19 +31,19 @@ CoD.CustomClassTabs.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.NoiseTiledBacking = LUI.UIElement.createFake()
 	
 	local RB = CoD.BumperButtonWithKeyMouseText.new( f1_arg0, f1_arg1, 0.5, 0.5, 695, 895, 0, 0, 53, 87 )
-	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBFED5292621DA9A ) )
+	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/rb" ) )
 	self:addElement( RB )
 	self.RB = RB
 	
 	local LB = CoD.BumperButtonWithKeyMouseText.new( f1_arg0, f1_arg1, 0.5, 0.5, -895, -695, 0, 0, 53, 87 )
-	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBDCD5292604F434 ) )
+	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/lb" ) )
 	LB.GamepadPrompt:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	self:addElement( LB )
 	self.LB = LB
 	
 	local TabBottomLine = LUI.UIImage.new( 0.5, 0.5, -960, 960, 0, 0, 86, 90 )
 	TabBottomLine:setAlpha( 0.08 )
-	TabBottomLine:setImage( RegisterImage( 0x5526CF3733E24C4 ) )
+	TabBottomLine:setImage( RegisterImage( "uie_ui_menu_common_tab_line_bottom" ) )
 	self:addElement( TabBottomLine )
 	self.TabBottomLine = TabBottomLine
 	
@@ -82,11 +82,11 @@ CoD.CustomClassTabs.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( right, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		CoD.GridAndListUtility.DoBumperGridButton( f5_arg1, f5_arg2, false )
+	f1_arg0:AddButtonCallbackFunction( right, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.GridAndListUtility.DoBumperGridButton( menu, controller, false )
 		return true
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( right )
@@ -126,11 +126,11 @@ CoD.CustomClassTabs.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f9_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( left, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		CoD.GridAndListUtility.DoBumperGridButton( f10_arg1, f10_arg2, true )
+	f1_arg0:AddButtonCallbackFunction( left, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.GridAndListUtility.DoBumperGridButton( menu, controller, true )
 		return true
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( left )

@@ -121,39 +121,39 @@ CoD.LaboratoryMixAgain.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f9_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( LaboratoryMixAgainButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		if CoD.ZMLaboratoryUtility.IsInAnimState1( f10_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and CoD.ZMLaboratoryUtility.CanPurchase( f10_arg2, f10_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f10_arg2, "Laboratory.disableInput", 0 ) then
-			CoD.ZMLaboratoryUtility.CacheOfferButtonModel( f10_arg2, f10_arg0, f10_arg1 )
-			CoD.ZMLaboratoryUtility.MixAgain( self, f10_arg1, f10_arg2 )
+	f1_arg0:AddButtonCallbackFunction( LaboratoryMixAgainButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ZMLaboratoryUtility.IsInAnimState1( controller, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and CoD.ZMLaboratoryUtility.CanPurchase( controller, element ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) then
+			CoD.ZMLaboratoryUtility.CacheOfferButtonModel( controller, element, menu )
+			CoD.ZMLaboratoryUtility.MixAgain( self, menu, controller )
 			return true
-		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( f10_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and not CoD.ZMLaboratoryUtility.CanPurchase( f10_arg2, f10_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f10_arg2, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) then
-			CoD.ZMLaboratoryUtility.CacheOfferButtonModel( f10_arg2, f10_arg0, f10_arg1 )
-			OpenPopup( self, "PurchasePlasma", f10_arg2, f10_arg0:getModel() )
+		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( controller, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and not CoD.ZMLaboratoryUtility.CanPurchase( controller, element ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) then
+			CoD.ZMLaboratoryUtility.CacheOfferButtonModel( controller, element, menu )
+			OpenPopup( self, "PurchasePlasma", controller, element:getModel() )
 			return true
-		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( f10_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and not CoD.ZMLaboratoryUtility.CanPurchase( f10_arg2, f10_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f10_arg2, "Laboratory.disableInput", 0 ) then
-			CoD.ZMLaboratoryUtility.CacheOfferButtonModel( f10_arg2, f10_arg0, f10_arg1 )
+		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( controller, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and not CoD.ZMLaboratoryUtility.CanPurchase( controller, element ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) then
+			CoD.ZMLaboratoryUtility.CacheOfferButtonModel( controller, element, menu )
 			local f10_local0 = OpenSystemOverlay
 			local f10_local1 = self
-			local f10_local2 = f10_arg1
-			local f10_local3 = f10_arg2
+			local f10_local2 = menu
+			local f10_local3 = controller
 			local f10_local4 = "NotEnoughNPPopup"
 			local f10_local5 = {}
-			local f10_local6 = f10_arg0:getModel()
+			local f10_local6 = element:getModel()
 			f10_local5.npRequired = f10_local6.plasmaPrice:get()
 			f10_local0( f10_local1, f10_local2, f10_local3, f10_local4, f10_local5 )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		if CoD.ZMLaboratoryUtility.IsInAnimState1( f11_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and CoD.ZMLaboratoryUtility.CanPurchase( f11_arg2, f11_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f11_arg2, "Laboratory.disableInput", 0 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ZMLaboratoryUtility.IsInAnimState1( controller, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and CoD.ZMLaboratoryUtility.CanPurchase( controller, element ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( f11_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and not CoD.ZMLaboratoryUtility.CanPurchase( f11_arg2, f11_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f11_arg2, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( controller, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and not CoD.ZMLaboratoryUtility.CanPurchase( controller, element ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( f11_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and not CoD.ZMLaboratoryUtility.CanPurchase( f11_arg2, f11_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f11_arg2, "Laboratory.disableInput", 0 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( controller, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and not CoD.ZMLaboratoryUtility.CanPurchase( controller, element ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -191,31 +191,31 @@ CoD.LaboratoryMixAgain.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f14_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( DoneButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		if CoD.ZMLaboratoryUtility.IsInAnimState1( f15_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and CoD.ModelUtility.IsModelValueEqualTo( f15_arg2, "Laboratory.disableInput", 0 ) then
-			SendClientScriptNotify( f15_arg2, "mix_again", "0" )
+	f1_arg0:AddButtonCallbackFunction( DoneButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.ZMLaboratoryUtility.IsInAnimState1( controller, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) then
+			SendClientScriptNotify( controller, "mix_again", "0" )
 			return true
 		else
 			
 		end
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		if CoD.ZMLaboratoryUtility.IsInAnimState1( f16_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and CoD.ModelUtility.IsModelValueEqualTo( f16_arg2, "Laboratory.disableInput", 0 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.ZMLaboratoryUtility.IsInAnimState1( controller, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( DoneButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		if CoD.ZMLaboratoryUtility.IsInAnimState1( f17_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and CoD.ModelUtility.IsModelValueEqualTo( f17_arg2, "Laboratory.disableInput", 0 ) then
-			SendClientScriptNotify( f17_arg2, "mix_again", "0" )
+	f1_arg0:AddButtonCallbackFunction( DoneButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		if CoD.ZMLaboratoryUtility.IsInAnimState1( controller, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) then
+			SendClientScriptNotify( controller, "mix_again", "0" )
 			return true
 		else
 			
 		end
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		if CoD.ZMLaboratoryUtility.IsInAnimState1( f18_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and CoD.ModelUtility.IsModelValueEqualTo( f18_arg2, "Laboratory.disableInput", 0 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		if CoD.ZMLaboratoryUtility.IsInAnimState1( controller, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
 		else
 			return false

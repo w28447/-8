@@ -32,7 +32,7 @@ CoD.WarzoneInventoryUnlockMissionObjective.new = function ( f1_arg0, f1_arg1, f1
 	
 	local ButtonTopLine9Slice = LUI.UIImage.new( 0, 0, 4, 304, 0, 0, 25, 45 )
 	ButtonTopLine9Slice:setAlpha( 0.2 )
-	ButtonTopLine9Slice:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
+	ButtonTopLine9Slice:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_line" ) )
 	ButtonTopLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonTopLine9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonTopLine9Slice:setupNineSliceShader( 120, 10 )

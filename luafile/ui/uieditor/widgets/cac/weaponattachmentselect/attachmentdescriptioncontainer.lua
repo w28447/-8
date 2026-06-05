@@ -13,7 +13,7 @@ CoD.AttachmentDescriptionContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local Connector = LUI.UIImage.new( 0, 0, 150, 239, 0, 0, 0, 30 )
 	Connector:setAlpha( 0 )
-	Connector:setMaterial( LUI.UIImage.GetCachedMaterial( 0x79865EF4156E893 ) )
+	Connector:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_aar_segment" ) )
 	Connector:setShaderVector( 0, 1, 0, 0, 0 )
 	Connector:setShaderVector( 1, 0.7, 0, 0, 0 )
 	Connector:setShaderVector( 2, 0.25, 0, 0, 0 )

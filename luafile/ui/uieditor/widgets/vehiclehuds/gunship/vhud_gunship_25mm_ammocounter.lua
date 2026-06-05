@@ -22,9 +22,9 @@ CoD.vhud_gunship_25mm_ammocounter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.BackingFrame = BackingFrame
 	
 	local AmmoCountInternal = CoD.vhud_gunship_ammo_count_internal.new( f1_arg0, f1_arg1, 0.5, 0.5, -59, 59, 0.4, 0.4, -18.5, 5.5 )
-	AmmoCountInternal.ammoBack:setImage( RegisterImage( 0x27CAD2982B726D9 ) )
+	AmmoCountInternal.ammoBack:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_25mm_icon" ) )
 	AmmoCountInternal.ammoBack:setShaderVector( 0, 20, 1, 0, 0 )
-	AmmoCountInternal.ammoFront:setImage( RegisterImage( 0x27CAD2982B726D9 ) )
+	AmmoCountInternal.ammoFront:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_25mm_icon" ) )
 	AmmoCountInternal.ammoFront:setShaderVector( 0, 20, 1, 0, 0 )
 	AmmoCountInternal.ammoFront.__ammoFront_Wipe_X_Start_X_End_Y_Start_Y_End = function ( f3_arg0 )
 		local f3_local0 = f3_arg0:get()
@@ -49,9 +49,9 @@ CoD.vhud_gunship_25mm_ammocounter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.AmmoCountInternal = AmmoCountInternal
 	
 	local AmmoCountInternal2 = CoD.vhud_gunship_ammo_count_internal.new( f1_arg0, f1_arg1, 0.5, 0.5, -59, 59, 0.4, 0.4, 6.5, 30.5 )
-	AmmoCountInternal2.ammoBack:setImage( RegisterImage( 0x27CAD2982B726D9 ) )
+	AmmoCountInternal2.ammoBack:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_25mm_icon" ) )
 	AmmoCountInternal2.ammoBack:setShaderVector( 0, 20, 1, 0, 0 )
-	AmmoCountInternal2.ammoFront:setImage( RegisterImage( 0x27CAD2982B726D9 ) )
+	AmmoCountInternal2.ammoFront:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_25mm_icon" ) )
 	AmmoCountInternal2.ammoFront:setShaderVector( 0, 20, 1, 0, 0 )
 	AmmoCountInternal2.ammoFront.__ammoFront_Wipe_X_Start_X_End_Y_Start_Y_End = function ( f5_arg0 )
 		local f5_local0 = f5_arg0:get()

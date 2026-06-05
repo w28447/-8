@@ -14,7 +14,7 @@ CoD.CodCasterFakeMap.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.Border = Border
 	
 	local Map = LUI.UIImage.new( 0, 0, -101.5, 921.5, 0, 0, 103.5, 852.5 )
-	Map:setImage( RegisterImage( 0x78FC4615307333F ) )
+	Map:setImage( RegisterImage( "i_compass_map_mp_seaside_full" ) )
 	self:addElement( Map )
 	self.Map = Map
 	
@@ -30,12 +30,12 @@ CoD.CodCasterFakeMap.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.ObjA = ObjA
 	
 	local ObjB = LUI.UIImage.new( 0, 0, 405, 453, 0, 0, 448, 496 )
-	ObjB:setImage( RegisterImage( 0x58FBDC4C0C829B1 ) )
+	ObjB:setImage( RegisterImage( "t7_hud_waypoints_neutral_new_b_mini" ) )
 	self:addElement( ObjB )
 	self.ObjB = ObjB
 	
 	local ObjC = LUI.UIImage.new( 0, 0, 668, 716, 0, 0, 430, 478 )
-	ObjC:setImage( RegisterImage( 0x484B59524AE2B0 ) )
+	ObjC:setImage( RegisterImage( "t7_hud_waypoints_neutral_new_c_mini" ) )
 	ObjC:subscribeToGlobalModel( f1_arg1, "TeamIdentity", "team2.teamColor", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
@@ -59,7 +59,7 @@ CoD.CodCasterFakeMap.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local Friendly2 = LUI.UIImage.new( 0, 0, 226, 274, 0, 0, 395, 443 )
 	Friendly2:setZRot( -19 )
-	Friendly2:setImage( RegisterImage( 0x62166FEA11C739 ) )
+	Friendly2:setImage( RegisterImage( "uie_t7_hud_waypoints_compassping_enemydirectional" ) )
 	Friendly2:subscribeToGlobalModel( f1_arg1, "TeamIdentity", "team1.teamColor", function ( model )
 		local f5_local0 = model:get()
 		if f5_local0 ~= nil then
@@ -71,7 +71,7 @@ CoD.CodCasterFakeMap.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local Friendly3 = LUI.UIImage.new( 0, 0, 67, 115, 0, 0, 451.5, 499.5 )
 	Friendly3:setZRot( -90 )
-	Friendly3:setImage( RegisterImage( 0x62166FEA11C739 ) )
+	Friendly3:setImage( RegisterImage( "uie_t7_hud_waypoints_compassping_enemydirectional" ) )
 	Friendly3:subscribeToGlobalModel( f1_arg1, "TeamIdentity", "team1.teamColor", function ( model )
 		local f6_local0 = model:get()
 		if f6_local0 ~= nil then
@@ -106,7 +106,7 @@ CoD.CodCasterFakeMap.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.Enemy2 = Enemy2
 	
 	local Obit = LUI.UIImage.new( 0, 0, 390, 420, 0, 0, 406.5, 436.5 )
-	Obit:setImage( RegisterImage( 0xB73FD6B1D4A1BAF ) )
+	Obit:setImage( RegisterImage( "uie_headicon_dead_minimap" ) )
 	Obit:subscribeToGlobalModel( f1_arg1, "TeamIdentity", "team2.teamColor", function ( model )
 		local f9_local0 = model:get()
 		if f9_local0 ~= nil then
@@ -118,7 +118,7 @@ CoD.CodCasterFakeMap.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local Title = LUI.UIText.new( 0, 0, 3, 301, 0, 0, 152, 173 )
 	Title:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	Title:setText( LocalizeToUpperString( 0x194BEAC8760BF0C ) )
+	Title:setText( LocalizeToUpperString( "codcaster/team_color_preview" ) )
 	Title:setTTF( "ttmussels_regular" )
 	Title:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	Title:setShaderVector( 0, 0.08, 0, 0, 0 )

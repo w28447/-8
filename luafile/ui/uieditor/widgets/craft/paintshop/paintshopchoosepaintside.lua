@@ -44,7 +44,7 @@ CoD.PaintshopChoosePaintSide.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	downArrow:setRGB( 0, 0, 0 )
 	downArrow:setAlpha( 0 )
 	downArrow:setZRot( -90 )
-	downArrow:setImage( RegisterImage( 0x6E598C6D633ACF2 ) )
+	downArrow:setImage( RegisterImage( "uie_img_t7_menu_arrow" ) )
 	self:addElement( downArrow )
 	self.downArrow = downArrow
 	
@@ -52,7 +52,7 @@ CoD.PaintshopChoosePaintSide.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	upArrow:setRGB( 0, 0, 0 )
 	upArrow:setAlpha( 0 )
 	upArrow:setZRot( 90 )
-	upArrow:setImage( RegisterImage( 0x6E598C6D633ACF2 ) )
+	upArrow:setImage( RegisterImage( "uie_img_t7_menu_arrow" ) )
 	self:addElement( upArrow )
 	self.upArrow = upArrow
 	

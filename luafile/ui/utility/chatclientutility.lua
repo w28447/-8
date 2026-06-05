@@ -73,7 +73,7 @@ CoD.ChatClientUtility.UpdateOptionsModels = function ( f14_arg0 )
 	Engine[0x7186ADD46E1FE57]()
 	CoD.ChatClientUtility.ResetMenuShow()
 	CoD.ChatClientUtility.ResetSettingsModels( f14_arg0 )
-	Engine.Exec( f14_arg0, "chatClientUpdate" )
+	Engine.exec( f14_arg0, "chatClientUpdate" )
 end
 
 CoD.ChatClientUtility.SetChannelTo = function ( f15_arg0, f15_arg1 )
@@ -224,13 +224,13 @@ local f0_local2 = function ( f26_arg0, f26_arg1 )
 	local f26_local2 = function ()
 		for f28_local3, f28_local4, f28_local5 in f26_local1:forEachElement() do
 			if CoD.SafeGetModelValue( f28_local5:getModel(), "getActionFunction" ) then
-				f26_arg0:AddButtonCallbackFunction( f28_local5, f26_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f29_arg0, f29_arg1, f29_arg2, f29_arg3 )
-					local f29_local0 = f29_arg0:getModel()
+				f26_arg0:AddButtonCallbackFunction( f28_local5, f26_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+					local f29_local0 = element:getModel()
 					if f29_local0 and f29_local0.getActionFunction then
 						local f29_local1 = f29_local0.getActionFunction:get()
-						f29_local1 = f29_local1( f29_arg0, f29_arg1, f29_arg2, f29_arg3 )
+						f29_local1 = f29_local1( element, menu, controller, model )
 						if f29_local1 then
-							f29_local1( f29_arg0, f29_arg1, f29_arg2, f29_arg3 )
+							f29_local1( element, menu, controller, model )
 						end
 					end
 					CoD.PCWidgetUtility.CloseContextualMenu( f26_arg0, f26_arg1 )
@@ -323,7 +323,8 @@ end
 
 CoD.ChatClientUtility.TryFunction = function ( f35_arg0 )
 	local f35_local0, f35_local1, f35_local2 = CoD.ChatClientUtility.GetCommand( f35_arg0.controller, f35_arg0.currentText )
-	local f35_local3, f35_local4 = false
+	local f35_local3 = false
+	local f35_local4 = nil
 	if f35_local0 then
 		f35_local4, f35_local3, f35_local4, f35_local4 = f35_local0.fct( f35_arg0.controller, f35_local1, true )
 	end
@@ -422,7 +423,8 @@ CoD.ChatClientUtility.TrySendLine = function ( f41_arg0, f41_arg1 )
 	local f41_local5, f41_local6, f41_local7 = CoD.ChatClientUtility.GetCommand( f41_arg0, f41_arg1 )
 	if f41_local7 then
 		f41_local1 = true
-		f41_local2, f41_local0 = false
+		f41_local2 = false
+		f41_local0 = nil
 		f41_local4 = 0x56696C428AB2A8B
 	elseif f41_local5 then
 		f41_local0, f41_local1, f41_local3, f41_local4 = f41_local5.fct( f41_arg0, f41_local6 )

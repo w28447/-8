@@ -9,12 +9,12 @@ CoD.TabbedScoreboardInfoTerrain.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Terrain = LUI.UIImage.new( 0, 0, 0, 190, 0, 0, 0, 70 )
-	Terrain:setImage( RegisterImage( 0x7DF0D9748126905 ) )
+	Terrain:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_info_terrain" ) )
 	self:addElement( Terrain )
 	self.Terrain = Terrain
 	
 	local TerrainAdd = LUI.UIImage.new( 0, 0, 0, 190, 0, 0, 0, 70 )
-	TerrainAdd:setImage( RegisterImage( 0x7DF0D9748126905 ) )
+	TerrainAdd:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_info_terrain" ) )
 	TerrainAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	TerrainAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( TerrainAdd )

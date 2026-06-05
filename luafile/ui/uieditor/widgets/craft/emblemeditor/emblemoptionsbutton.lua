@@ -1,4 +1,4 @@
-require( "x64:44dea36183154c7" )
+require( "ui/uieditor/widgets/craft/emblemeditor/emblemoptionsbutton_internal" )
 
 CoD.EmblemOptionsButton = InheritFrom( LUI.UIElement )
 CoD.EmblemOptionsButton.__defaultWidth = 400

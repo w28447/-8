@@ -1,12 +1,12 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_asset_superheroes_speed_hero" )
 require( "ui/uieditor/widgets/callingcards/callingcards_asset_superheroes_speed_lightning" )
 
-CoD[0x7A7AAB123C1192E] = InheritFrom( LUI.UIElement )
-CoD[0x7A7AAB123C1192E].__defaultWidth = 960
-CoD[0x7A7AAB123C1192E].__defaultHeight = 240
-CoD[0x7A7AAB123C1192E].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_superheroes_speed = InheritFrom( LUI.UIElement )
+CoD.callingcards_superheroes_speed.__defaultWidth = 960
+CoD.callingcards_superheroes_speed.__defaultHeight = 240
+CoD.callingcards_superheroes_speed.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x7A7AAB123C1192E] )
+	self:setClass( CoD.callingcards_superheroes_speed )
 	self.id = "CallingCards_superheroes_speed"
 	self.soundSet = "none"
 	self.anyChildUsesUpdateState = true
@@ -34,13 +34,13 @@ CoD[0x7A7AAB123C1192E].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x7A7AAB123C1192E].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_superheroes_speed.__resetProperties = function ( f2_arg0 )
 	f2_arg0.hero:completeAnimation()
 	f2_arg0.lightning03:completeAnimation()
 	f2_arg0.hero:setLeftRight( 0, 0, 576, 960 )
 end
 
-CoD[0x7A7AAB123C1192E].__clipsPerState = {
+CoD.callingcards_superheroes_speed.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -72,7 +72,7 @@ CoD[0x7A7AAB123C1192E].__clipsPerState = {
 		end
 	}
 }
-CoD[0x7A7AAB123C1192E].__onClose = function ( f7_arg0 )
+CoD.callingcards_superheroes_speed.__onClose = function ( f7_arg0 )
 	f7_arg0.lightning03:close()
 	f7_arg0.hero:close()
 end

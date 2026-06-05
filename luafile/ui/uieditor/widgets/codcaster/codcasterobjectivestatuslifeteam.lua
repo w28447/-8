@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/codcaster/codcasterlivescount" )
-require( "x64:53a9daa62b22793" )
+require( "ui/uieditor/widgets/hud/scoreinfo/scoreinfo_ticketsystemlifelist" )
 
 CoD.CodCasterObjectiveStatusLifeTeam = InheritFrom( LUI.UIElement )
 CoD.CodCasterObjectiveStatusLifeTeam.__defaultWidth = 412
@@ -27,7 +27,7 @@ CoD.CodCasterObjectiveStatusLifeTeam.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local LifeIcon = LUI.UIImage.new( 1, 1, -74, 54, -0.3, -0.3, -48.5, 79.5 )
 	LifeIcon:setScale( 0.25, 0.25 )
-	LifeIcon:setImage( RegisterImage( 0xEE751109854B314 ) )
+	LifeIcon:setImage( RegisterImage( "uie_ui_hud_core_objective_widget_person" ) )
 	LifeIcon:subscribeToGlobalModel( f1_arg1, "Scoreboard", "team1FactionColor", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then

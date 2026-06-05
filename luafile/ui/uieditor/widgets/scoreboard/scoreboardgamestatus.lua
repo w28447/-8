@@ -30,7 +30,7 @@ CoD.ScoreboardGameStatus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local TintBody01 = LUI.UIImage.new( 0, 0, 233, 1687, 0, 0, 185, 755 )
 	TintBody01:setRGB( 0.87, 0.87, 0.87 )
 	TintBody01:setAlpha( 0.9 )
-	TintBody01:setImage( RegisterImage( 0x1CF2000F10E265B ) )
+	TintBody01:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_bg" ) )
 	self:addElement( TintBody01 )
 	self.TintBody01 = TintBody01
 	
@@ -46,7 +46,7 @@ CoD.ScoreboardGameStatus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local MapGrid02 = LUI.UIImage.new( 0, 0, 224, 1682, 0, 0, 218, 706 )
 	MapGrid02:setAlpha( 0 )
-	MapGrid02:setImage( RegisterImage( 0xCABC1612E8ACC9B ) )
+	MapGrid02:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_grid01" ) )
 	MapGrid02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7EA4827662D4CD4 ) )
 	MapGrid02:setShaderVector( 0, 9, 4, 0, 0 )
 	MapGrid02:setShaderVector( 1, 0, 1, 0, 1 )
@@ -63,7 +63,7 @@ CoD.ScoreboardGameStatus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.CornerAdd = CornerAdd
 	
 	local MapGrid01 = LUI.UIImage.new( 0, 0, 475, 1441, 0, 0, 248, 748 )
-	MapGrid01:setImage( RegisterImage( 0xCABC4612E8AD1B4 ) )
+	MapGrid01:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_grid04" ) )
 	MapGrid01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	MapGrid01:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( MapGrid01 )

@@ -59,7 +59,7 @@ LUI.createMenu.Theater_SelectFilm = function ( f1_arg0, f1_arg1 )
 	self.DirectorTheaterSelectFile = DirectorTheaterSelectFile
 	
 	local GenericMenuFrameIdentity = CoD.GenericMenuFrameIdentity.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0, 1, 0, 0 )
-	GenericMenuFrameIdentity.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x60E17AB37AB4874 ) )
+	GenericMenuFrameIdentity.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/theater" ) )
 	GenericMenuFrameIdentity:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
@@ -69,28 +69,28 @@ LUI.createMenu.Theater_SelectFilm = function ( f1_arg0, f1_arg1 )
 	self:addElement( GenericMenuFrameIdentity )
 	self.GenericMenuFrameIdentity = GenericMenuFrameIdentity
 	
-	self:registerEventHandler( "menu_loaded", function ( element, event )
+	self:registerEventHandler( "menu_loaded", function ( self, event )
 		local f4_local0 = nil
-		if element.menuLoaded then
-			f4_local0 = element:menuLoaded( event )
-		elseif element.super.menuLoaded then
-			f4_local0 = element.super:menuLoaded( event )
+		if self.menuLoaded then
+			f4_local0 = self:menuLoaded( event )
+		elseif self.super.menuLoaded then
+			f4_local0 = self.super:menuLoaded( event )
 		end
 		ShowHeaderIconOnly( f1_local1 )
 		if not f4_local0 then
-			f4_local0 = element:dispatchEventToChildren( event )
+			f4_local0 = self:dispatchEventToChildren( event )
 		end
 		return f4_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
 		CoD.FileshareUtility.ClearCurrentFilter()
-		CoD.FileshareUtility.SetupFileshareForTheater( f5_arg2 )
-		GoBack( self, f5_arg2 )
-		ClearMenuSavedState( f5_arg1 )
-		ResetThumbnailViewer( f5_arg2 )
+		CoD.FileshareUtility.SetupFileshareForTheater( controller )
+		GoBack( self, controller )
+		ClearMenuSavedState( menu )
+		ResetThumbnailViewer( controller )
 		return true
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	DirectorTheaterSelectFile.id = "DirectorTheaterSelectFile"

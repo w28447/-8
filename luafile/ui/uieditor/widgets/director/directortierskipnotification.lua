@@ -30,13 +30,13 @@ CoD.DirectorTierSkipNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.TierSkipComplete = TierSkipComplete
 	
 	local TierSkipIcon = LUI.UIImage.new( 0, 0, 36, 136, 0.5, 0.5, -48, 52 )
-	TierSkipIcon:setImage( RegisterImage( 0x3162CFF8BC56A18 ) )
+	TierSkipIcon:setImage( RegisterImage( "ui_icon_blackmarket_tier_token" ) )
 	self:addElement( TierSkipIcon )
 	self.TierSkipIcon = TierSkipIcon
 	
 	local TierSkipIconComplete = LUI.UIImage.new( 0, 0, 146.5, 246.5, 0.5, 0.5, -48, 52 )
 	TierSkipIconComplete:setAlpha( 0 )
-	TierSkipIconComplete:setImage( RegisterImage( 0x3162CFF8BC56A18 ) )
+	TierSkipIconComplete:setImage( RegisterImage( "ui_icon_blackmarket_tier_token" ) )
 	self:addElement( TierSkipIconComplete )
 	self.TierSkipIconComplete = TierSkipIconComplete
 	

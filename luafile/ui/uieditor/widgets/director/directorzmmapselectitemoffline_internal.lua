@@ -70,14 +70,14 @@ CoD.DirectorZMMapSelectItemOffline_Internal.new = function ( f1_arg0, f1_arg1, f
 	
 	local FeaturedBannerBG = LUI.UIImage.new( 0, 0, -2, 102, 0, 0, -1, 23 )
 	FeaturedBannerBG:setAlpha( 0 )
-	FeaturedBannerBG:setImage( RegisterImage( 0x6E1F7864C578F30 ) )
+	FeaturedBannerBG:setImage( RegisterImage( "uie_ui_menu_zm_common_featured_bannerbg" ) )
 	self:addElement( FeaturedBannerBG )
 	self.FeaturedBannerBG = FeaturedBannerBG
 	
 	local FeaturedTag = LUI.UIText.new( 0, 0, 3, 83, 0, 0, 3, 19 )
 	FeaturedTag:setRGB( 0.92, 0.92, 0.92 )
 	FeaturedTag:setAlpha( 0 )
-	FeaturedTag:setText( LocalizeToUpperString( 0x7E251454EDF7A26 ) )
+	FeaturedTag:setText( LocalizeToUpperString( "menu/public_tab" ) )
 	FeaturedTag:setTTF( "ttmussels_regular" )
 	FeaturedTag:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	FeaturedTag:setShaderVector( 0, 1, 0, 0, 0 )

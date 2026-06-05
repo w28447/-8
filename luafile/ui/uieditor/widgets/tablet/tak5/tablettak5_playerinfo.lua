@@ -12,7 +12,7 @@ CoD.TabletTak5_PlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local PlayerInfoBacking = LUI.UIImage.new( 0, 0, -1, 125, 0, 0, -1, 231 )
-	PlayerInfoBacking:setImage( RegisterImage( 0x51C8884106C9DAE ) )
+	PlayerInfoBacking:setImage( RegisterImage( "uie_ui_hud_tak5_player_layout_bg" ) )
 	self:addElement( PlayerInfoBacking )
 	self.PlayerInfoBacking = PlayerInfoBacking
 	
@@ -36,7 +36,7 @@ CoD.TabletTak5_PlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local PlayerInfoGrid = LUI.UIImage.new( 0, 0, -2.5, 133.5, 0, 0, -2, 232 )
 	PlayerInfoGrid:setZRot( 180 )
-	PlayerInfoGrid:setImage( RegisterImage( 0xC898D6632F35969 ) )
+	PlayerInfoGrid:setImage( RegisterImage( "uie_ui_hud_tak5_player_layout_grid" ) )
 	PlayerInfoGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	PlayerInfoGrid:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( PlayerInfoGrid )
@@ -45,7 +45,7 @@ CoD.TabletTak5_PlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local YouString = LUI.UIText.new( 0, 0, 0, 124, 1, 1, 6, 29 )
 	YouString:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
 	YouString:setAlpha( 0 )
-	YouString:setText( Engine[0xF9F1239CFD921FE]( 0x1F9844545CB4FF6 ) )
+	YouString:setText( Engine[0xF9F1239CFD921FE]( "menu/you_caps" ) )
 	YouString:setTTF( "dinnext_regular" )
 	YouString:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	self:addElement( YouString )
@@ -61,7 +61,7 @@ CoD.TabletTak5_PlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local InfoStripe = LUI.UIImage.new( 0, 0, -9, 133, 0, 0, -9, 239 )
 	InfoStripe:setAlpha( 0 )
-	InfoStripe:setImage( RegisterImage( 0x2321CE4AF0ECFF3 ) )
+	InfoStripe:setImage( RegisterImage( "uie_ui_hud_tak5_target_stripe" ) )
 	InfoStripe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	InfoStripe:setShaderVector( 0, 0, 1, 0, 0 )
 	InfoStripe:setShaderVector( 1, 0, 0, 0, 0 )
@@ -73,7 +73,7 @@ CoD.TabletTak5_PlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local InfoStripeAdd = LUI.UIImage.new( 0, 0, -9, 133, 0, 0, -9, 239 )
 	InfoStripeAdd:setAlpha( 0 )
-	InfoStripeAdd:setImage( RegisterImage( 0x2321CE4AF0ECFF3 ) )
+	InfoStripeAdd:setImage( RegisterImage( "uie_ui_hud_tak5_target_stripe" ) )
 	InfoStripeAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	InfoStripeAdd:setShaderVector( 0, 0, 1, 0, 0 )
 	InfoStripeAdd:setShaderVector( 1, 0, 0, 0, 0 )
@@ -85,7 +85,7 @@ CoD.TabletTak5_PlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local InfoStripeAdd2 = LUI.UIImage.new( 0, 0, -9, 133, 0, 0, -9, 239 )
 	InfoStripeAdd2:setAlpha( 0 )
-	InfoStripeAdd2:setImage( RegisterImage( 0x2321CE4AF0ECFF3 ) )
+	InfoStripeAdd2:setImage( RegisterImage( "uie_ui_hud_tak5_target_stripe" ) )
 	InfoStripeAdd2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	InfoStripeAdd2:setShaderVector( 0, 0, 1, 0, 0 )
 	InfoStripeAdd2:setShaderVector( 1, 0, 0, 0, 0 )
@@ -98,8 +98,8 @@ CoD.TabletTak5_PlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local InfoEKG = LUI.UIImage.new( 0, 0, 0, 124, 0, 0, 105.5, 129.5 )
 	InfoEKG:setRGB( 1, 0, 0 )
 	InfoEKG:setAlpha( 0 )
-	InfoEKG:setImage( RegisterImage( 0x3D617D74582BD71 ) )
-	InfoEKG:setMaterial( LUI.UIImage.GetCachedMaterial( 0xC2F63CCBDB43168 ) )
+	InfoEKG:setImage( RegisterImage( "uie_ekg_signal2" ) )
+	InfoEKG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_ekg" ) )
 	InfoEKG:setShaderVector( 0, 0, 0.8, 0.4, 0.4 )
 	InfoEKG:setShaderVector( 1, 0.5, 3, 0.04, 0 )
 	self:addElement( InfoEKG )
@@ -107,13 +107,13 @@ CoD.TabletTak5_PlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local InfoHeart = LUI.UIImage.new( 0, 0, 48.5, 76.5, 0, 0, 60, 94 )
 	InfoHeart:setAlpha( 0 )
-	InfoHeart:setImage( RegisterImage( 0xDFF814622446432 ) )
+	InfoHeart:setImage( RegisterImage( "uie_ui_hud_tak5_player_heart" ) )
 	self:addElement( InfoHeart )
 	self.InfoHeart = InfoHeart
 	
 	local InfoHeartAdd = LUI.UIImage.new( 0, 0, 48.5, 76.5, 0, 0, 60, 94 )
 	InfoHeartAdd:setAlpha( 0 )
-	InfoHeartAdd:setImage( RegisterImage( 0xDFF814622446432 ) )
+	InfoHeartAdd:setImage( RegisterImage( "uie_ui_hud_tak5_player_heart" ) )
 	InfoHeartAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	InfoHeartAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( InfoHeartAdd )
@@ -127,7 +127,7 @@ CoD.TabletTak5_PlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local StringBg = LUI.UIImage.new( 0, 0, -1, 125, 0, 0, 100, 130 )
 	StringBg:setAlpha( 0 )
-	StringBg:setImage( RegisterImage( 0x5F031AE10E35AF3 ) )
+	StringBg:setImage( RegisterImage( "uie_ui_hud_tak5_target_msg_bg" ) )
 	self:addElement( StringBg )
 	self.StringBg = StringBg
 	
@@ -164,7 +164,7 @@ CoD.TabletTak5_PlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local HealIndicator = LUI.UIImage.new( 0, 0, 2.5, 122.5, 0, 0, 1, 11 )
 	HealIndicator:setAlpha( 0.5 )
-	HealIndicator:setImage( RegisterImage( 0xD898B7703813DE4 ) )
+	HealIndicator:setImage( RegisterImage( "uie_ui_hud_tak5_heal_indicator" ) )
 	HealIndicator:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	HealIndicator:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( HealIndicator )

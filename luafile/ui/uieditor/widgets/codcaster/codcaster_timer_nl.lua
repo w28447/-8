@@ -30,7 +30,7 @@ CoD.Codcaster_timer_nl.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local NotimerShadow = LUI.UIText.new( 0, 0, 0.5, 100.5, 0, 0, 5, 21 )
 	NotimerShadow:setRGB( 0, 0, 0 )
-	NotimerShadow:setText( Engine[0xF9F1239CFD921FE]( 0x8E8304D25283DA6 ) )
+	NotimerShadow:setText( Engine[0xF9F1239CFD921FE]( "mpui/unlimited_time_caps" ) )
 	NotimerShadow:setTTF( "ttmussels_demibold" )
 	NotimerShadow:setLetterSpacing( -1 )
 	NotimerShadow:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -39,7 +39,7 @@ CoD.Codcaster_timer_nl.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.NotimerShadow = NotimerShadow
 	
 	local Notimer = LUI.UIText.new( 0, 0, 0, 100, 0, 0, 4.5, 20.5 )
-	Notimer:setText( Engine[0xF9F1239CFD921FE]( 0x8E8304D25283DA6 ) )
+	Notimer:setText( Engine[0xF9F1239CFD921FE]( "mpui/unlimited_time_caps" ) )
 	Notimer:setTTF( "ttmussels_demibold" )
 	Notimer:setLetterSpacing( -1 )
 	Notimer:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

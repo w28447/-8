@@ -59,26 +59,26 @@ CoD.CommonInformationFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.description = description
 	
 	local InfoBracketTop = LUI.UIImage.new( 0, 0, -2, 490, 0, 0, 0, 28 )
-	InfoBracketTop:setImage( RegisterImage( 0x81D4EAAB75120FF ) )
+	InfoBracketTop:setImage( RegisterImage( "uie_ui_menu_specialist_hub_info_bracket" ) )
 	InfoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InfoBracketTop )
 	self.InfoBracketTop = InfoBracketTop
 	
 	local InfoBracketBot = LUI.UIImage.new( 0, 0, -2.5, 489.5, 1, 1, -28, 0 )
 	InfoBracketBot:setZRot( 180 )
-	InfoBracketBot:setImage( RegisterImage( 0x81D4EAAB75120FF ) )
+	InfoBracketBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_info_bracket" ) )
 	InfoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InfoBracketBot )
 	self.InfoBracketBot = InfoBracketBot
 	
 	local InfoDotline = LUI.UIImage.new( 0, 0, 0, 491, 0, 0, 136, 140 )
-	InfoDotline:setImage( RegisterImage( 0x805FC715189E506 ) )
+	InfoDotline:setImage( RegisterImage( "uie_ui_menu_specialist_hub_info_dotline" ) )
 	InfoDotline:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InfoDotline )
 	self.InfoDotline = InfoDotline
 	
 	local InfoDivider = LUI.UIImage.new( 0.5, 0.5, -2, 2, 0, 0, 171.5, 292.5 )
-	InfoDivider:setImage( RegisterImage( 0x6DDA4086EA0EF02 ) )
+	InfoDivider:setImage( RegisterImage( "uie_ui_menu_specialist_hub_info_divider" ) )
 	InfoDivider:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InfoDivider )
 	self.InfoDivider = InfoDivider
@@ -94,7 +94,7 @@ CoD.CommonInformationFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local LayoutInfoPip = LUI.UIImage.new( 0, 0, 433, 445, 0, 0, 9, 17 )
 	LayoutInfoPip:setAlpha( 0.3 )
-	LayoutInfoPip:setImage( RegisterImage( 0xF50E28EEFD20BD2 ) )
+	LayoutInfoPip:setImage( RegisterImage( "uie_ui_menu_social_popup_menu_icon" ) )
 	self:addElement( LayoutInfoPip )
 	self.LayoutInfoPip = LayoutInfoPip
 	

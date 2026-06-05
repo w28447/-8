@@ -11,7 +11,7 @@ CoD.CACWildcardSelectionAnimation.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local ButtonBGGlow = LUI.UIImage.new( 0, 1, -5, 5, 0, 1, -5, 5 )
 	ButtonBGGlow:setAlpha( 0 )
 	ButtonBGGlow:setXRot( 180 )
-	ButtonBGGlow:setImage( RegisterImage( 0x386E10012DD195C ) )
+	ButtonBGGlow:setImage( RegisterImage( "uie_ui_menu_cac_attachment_button_bg_glow_selected" ) )
 	ButtonBGGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ButtonBGGlow )
 	self.ButtonBGGlow = ButtonBGGlow
@@ -25,14 +25,14 @@ CoD.CACWildcardSelectionAnimation.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local GlowAnimBtm = LUI.UIImage.new( 0.5, 0.5, -78, 78, 0, 0, -6, 6 )
 	GlowAnimBtm:setAlpha( 0 )
-	GlowAnimBtm:setImage( RegisterImage( 0x3BF2E37984B1A8B ) )
+	GlowAnimBtm:setImage( RegisterImage( "uie_ui_menu_cac_attachment_meter_tick_glow" ) )
 	GlowAnimBtm:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowAnimBtm )
 	self.GlowAnimBtm = GlowAnimBtm
 	
 	local GlowAnimTop = LUI.UIImage.new( 0.5, 0.5, -78, 78, 1, 1, -6, 6 )
 	GlowAnimTop:setAlpha( 0 )
-	GlowAnimTop:setImage( RegisterImage( 0x3BF2E37984B1A8B ) )
+	GlowAnimTop:setImage( RegisterImage( "uie_ui_menu_cac_attachment_meter_tick_glow" ) )
 	GlowAnimTop:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowAnimTop )
 	self.GlowAnimTop = GlowAnimTop

@@ -33,7 +33,7 @@ CoD.systemOverlay_Full_BasicFrame_Prestige.new = function ( f1_arg0, f1_arg1, f1
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0, 0, 41, 494, 0, 0, 287, 319 )
 	PixelGridTiledBacking:setAlpha( 0.15 )
-	PixelGridTiledBacking:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
@@ -42,7 +42,7 @@ CoD.systemOverlay_Full_BasicFrame_Prestige.new = function ( f1_arg0, f1_arg1, f1
 	
 	local PixelGridTiledBacking2 = LUI.UIImage.new( 0, 0, 584, 1880, 0, 0, 28, 74 )
 	PixelGridTiledBacking2:setAlpha( 0.15 )
-	PixelGridTiledBacking2:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking2:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PixelGridTiledBacking2:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking2:setupNineSliceShader( 128, 128 )
@@ -106,11 +106,11 @@ CoD.systemOverlay_Full_BasicFrame_Prestige.new = function ( f1_arg0, f1_arg1, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( OptionList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		ProcessListAction( self, f6_arg0, f6_arg2, f6_arg1 )
+	f1_arg0:AddButtonCallbackFunction( OptionList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		ProcessListAction( self, element, controller, menu )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( OptionList )
@@ -143,7 +143,7 @@ CoD.systemOverlay_Full_BasicFrame_Prestige.new = function ( f1_arg0, f1_arg1, f1
 	
 	local RewardTitle = LUI.UIText.new( 0, 0, 48, 248, 0, 0, 290, 317 )
 	RewardTitle:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	RewardTitle:setText( ToUpper( LocalizeString( 0xA41F147063A78BA ) ) )
+	RewardTitle:setText( ToUpper( LocalizeString( "menu/callingtask_reward" ) ) )
 	RewardTitle:setTTF( "ttmussels_regular" )
 	RewardTitle:setLetterSpacing( 4 )
 	RewardTitle:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -198,13 +198,13 @@ CoD.systemOverlay_Full_BasicFrame_Prestige.new = function ( f1_arg0, f1_arg1, f1
 	
 	local PrestigeStar1 = LUI.UIImage.new( 0, 0, 553.5, 578.5, 0, 0, 38.5, 63.5 )
 	PrestigeStar1:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
-	PrestigeStar1:setImage( RegisterImage( 0xB94BBEF24882247 ) )
+	PrestigeStar1:setImage( RegisterImage( "menu_mp_weapon_lvl_star" ) )
 	self:addElement( PrestigeStar1 )
 	self.PrestigeStar1 = PrestigeStar1
 	
 	local PrestigeStar2 = LUI.UIImage.new( 0, 0, 523.5, 548.5, 0, 0, 38.5, 63.5 )
 	PrestigeStar2:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
-	PrestigeStar2:setImage( RegisterImage( 0xB94BBEF24882247 ) )
+	PrestigeStar2:setImage( RegisterImage( "menu_mp_weapon_lvl_star" ) )
 	self:addElement( PrestigeStar2 )
 	self.PrestigeStar2 = PrestigeStar2
 	
@@ -228,7 +228,7 @@ CoD.systemOverlay_Full_BasicFrame_Prestige.new = function ( f1_arg0, f1_arg1, f1
 	local cornerBracket = LUI.UIImage.new( 0, 0, 35, 47, 0, 0, 23, 35 )
 	cornerBracket:setAlpha( 0.5 )
 	cornerBracket:setZRot( 180 )
-	cornerBracket:setImage( RegisterImage( 0x535662F512D5F90 ) )
+	cornerBracket:setImage( RegisterImage( "uie_ui_menu_social_corner_bracket" ) )
 	cornerBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cornerBracket )
 	self.cornerBracket = cornerBracket
@@ -236,7 +236,7 @@ CoD.systemOverlay_Full_BasicFrame_Prestige.new = function ( f1_arg0, f1_arg1, f1
 	local cornerBracket4 = LUI.UIImage.new( 0, 0, 35, 47, 0, 0, 423, 435 )
 	cornerBracket4:setAlpha( 0.5 )
 	cornerBracket4:setZRot( 270 )
-	cornerBracket4:setImage( RegisterImage( 0x535662F512D5F90 ) )
+	cornerBracket4:setImage( RegisterImage( "uie_ui_menu_social_corner_bracket" ) )
 	cornerBracket4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cornerBracket4 )
 	self.cornerBracket4 = cornerBracket4
@@ -244,14 +244,14 @@ CoD.systemOverlay_Full_BasicFrame_Prestige.new = function ( f1_arg0, f1_arg1, f1
 	local cornerBracket2 = LUI.UIImage.new( 0, 0, 488, 500, 0, 0, 23, 35 )
 	cornerBracket2:setAlpha( 0.5 )
 	cornerBracket2:setZRot( 90 )
-	cornerBracket2:setImage( RegisterImage( 0x535662F512D5F90 ) )
+	cornerBracket2:setImage( RegisterImage( "uie_ui_menu_social_corner_bracket" ) )
 	cornerBracket2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cornerBracket2 )
 	self.cornerBracket2 = cornerBracket2
 	
 	local cornerBracket3 = LUI.UIImage.new( 0, 0, 488, 500, 0, 0, 423, 435 )
 	cornerBracket3:setAlpha( 0.5 )
-	cornerBracket3:setImage( RegisterImage( 0x535662F512D5F90 ) )
+	cornerBracket3:setImage( RegisterImage( "uie_ui_menu_social_corner_bracket" ) )
 	cornerBracket3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cornerBracket3 )
 	self.cornerBracket3 = cornerBracket3

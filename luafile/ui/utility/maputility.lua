@@ -32,7 +32,7 @@ end
 CoD.MapUtility.ForceStreamedImages = {}
 CoD.MapUtility.ForceStreamMapAndGameTypeImages = function ( f4_arg0 )
 	local f4_local0 = {}
-	if f4_arg0 == Enum.eModes[0xB22E0240605CFFE] then
+	if f4_arg0 == Enum.eModes.mode_invalid then
 		return 
 	end
 	for f4_local4, f4_local5 in pairs( Engine.GetGametypesBase( f4_arg0 ) ) do
@@ -43,7 +43,7 @@ CoD.MapUtility.ForceStreamMapAndGameTypeImages = function ( f4_arg0 )
 	for f4_local4, f4_local5 in pairs( CoD.mapsTable ) do
 		if f4_local5.session_mode == f4_arg0 then
 			local f4_local6 = MapNameToMapImage( f4_local4 )
-			if type( f4_local6 ) == type( 0x0 ) then
+			if type( f4_local6 ) == type( "" ) then
 				f4_local0[f4_local6] = true
 			end
 		end
@@ -327,8 +327,8 @@ CoD.MapUtility.MapNameToLocalizedToUpperName = function ( f26_arg0 )
 end
 
 CoD.MapUtility.MapNameToLocalizedToUpperNameShort = function ( f27_arg0 )
-	local f27_local0 = CoD.MapUtility.GetMapValue( f27_arg0, "mapNameShort", 0x0 )
-	if f27_local0 ~= 0x0 then
+	local f27_local0 = CoD.MapUtility.GetMapValue( f27_arg0, "mapNameShort", "" )
+	if f27_local0 ~= "" then
 		return Engine.ToUpper( Engine[0xF9F1239CFD921FE]( f27_local0 ) )
 	else
 		return CoD.MapUtility.MapNameToLocalizedToUpperName( f27_arg0 )
@@ -336,10 +336,10 @@ CoD.MapUtility.MapNameToLocalizedToUpperNameShort = function ( f27_arg0 )
 end
 
 CoD.MapUtility.GetMapTeamNameFromMapID = function ( f28_arg0 )
-	local f28_local0 = CoD.TeamUtility.TeamDevStringToEnum( CoD.MapUtility.GetMapValue( f28_arg0, 0x78768C10154D5B9, "" ) )
+	local f28_local0 = CoD.TeamUtility.TeamDevStringToEnum( CoD.MapUtility.GetMapValue( f28_arg0, "playerteam", "" ) )
 	local f28_local1
 	if f28_local0 == Enum.team_t[0x5C697ECEC0E8AFC] then
-		f28_local1 = 0x0
+		f28_local1 = ""
 		if not f28_local1 then
 		
 		else
@@ -350,7 +350,7 @@ CoD.MapUtility.GetMapTeamNameFromMapID = function ( f28_arg0 )
 end
 
 CoD.MapUtility.GetInGameLocalizedMapName = function ( f29_arg0 )
-	local f29_local0 = 0x0
+	local f29_local0 = ""
 	if Engine.IsInGame() then
 		return CoD.MapUtility.MapNameToLocalizedName( Engine.GetCurrentMapName() )
 	else

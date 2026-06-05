@@ -4,7 +4,7 @@ require( "ui/uieditor/widgets/mphudwidgets/waypointbomb_plantarrowwidget" )
 require( "ui/uieditor/widgets/mphudwidgets/waypointbomb_timer" )
 require( "ui/uieditor/widgets/mphudwidgets/waypointcenter" )
 require( "ui/uieditor/widgets/mphudwidgets/waypointprogressbar" )
-require( "x64:76c14e1bc07cd98" )
+require( "ui/uieditor/widgets/mphudwidgets/waypointprogressring" )
 
 CoD.WaypointBomb = InheritFrom( LUI.UIElement )
 CoD.WaypointBomb.__defaultWidth = 120
@@ -199,7 +199,7 @@ CoD.WaypointBomb.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local WaypointPattern = LUI.UIImage.new( 0.5, 0.5, -37, 39, 0.5, 0.5, -38, 38 )
 	WaypointPattern:setAlpha( 0.92 )
-	WaypointPattern:setImage( RegisterImage( 0x159D9B7B7294C91 ) )
+	WaypointPattern:setImage( RegisterImage( "uie_ui_hud_core_waypoint_led" ) )
 	WaypointPattern:linkToElementModel( self, "color", true, function ( model )
 		local f23_local0 = model:get()
 		if f23_local0 ~= nil then

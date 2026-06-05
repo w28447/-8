@@ -9,14 +9,14 @@ CoD.CommonBgLayoutElement01.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local DotGridBg = LUI.UIImage.new( 0, 0, 0, 144, 0, 0, 0, 36 )
-	DotGridBg:setImage( RegisterImage( 0xC529D202F311DB5 ) )
+	DotGridBg:setImage( RegisterImage( "uie_ui_menu_inspection_grid_dot_bg" ) )
 	DotGridBg:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotGridBg )
 	self.DotGridBg = DotGridBg
 	
 	local DotGridPattern01 = LUI.UIImage.new( 0, 0, 10.5, 134.5, 0, 0, 10, 26 )
 	DotGridPattern01:setAlpha( 0 )
-	DotGridPattern01:setImage( RegisterImage( 0x386097A4B65DDFE ) )
+	DotGridPattern01:setImage( RegisterImage( "uie_ui_menu_inspection_grid_dot_pattern02" ) )
 	DotGridPattern01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	DotGridPattern01:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( DotGridPattern01 )
@@ -24,7 +24,7 @@ CoD.CommonBgLayoutElement01.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local DotGridPattern02 = LUI.UIImage.new( 0, 0, 10.5, 134.5, 0, 0, 10, 26 )
 	DotGridPattern02:setAlpha( 0 )
-	DotGridPattern02:setImage( RegisterImage( 0x386087A4B65DC4B ) )
+	DotGridPattern02:setImage( RegisterImage( "uie_ui_menu_inspection_grid_dot_pattern01" ) )
 	DotGridPattern02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	DotGridPattern02:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( DotGridPattern02 )
@@ -32,7 +32,7 @@ CoD.CommonBgLayoutElement01.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local DotGridPattern03 = LUI.UIImage.new( 0, 0, 10.5, 134.5, 0, 0, 10, 26 )
 	DotGridPattern03:setAlpha( 0 )
-	DotGridPattern03:setImage( RegisterImage( 0x3860A7A4B65DFB1 ) )
+	DotGridPattern03:setImage( RegisterImage( "uie_ui_menu_inspection_grid_dot_pattern03" ) )
 	DotGridPattern03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	DotGridPattern03:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( DotGridPattern03 )

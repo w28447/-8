@@ -8,7 +8,7 @@ CoD.PC_StartMenu_Options_Controls_DescriptionImage.new = function ( f1_arg0, f1_
 	self.soundSet = "default"
 	
 	local PlaceHolderImage = LUI.UIImage.new( 0, 0, 0, 675, 0, 0, 0, 380 )
-	PlaceHolderImage:setImage( RegisterImage( 0x4994C34D8920091 ) )
+	PlaceHolderImage:setImage( RegisterImage( "img_t7_menu_mp_preview_ethiopia" ) )
 	self:addElement( PlaceHolderImage )
 	self.PlaceHolderImage = PlaceHolderImage
 	

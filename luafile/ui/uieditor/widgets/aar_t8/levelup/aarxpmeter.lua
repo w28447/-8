@@ -41,7 +41,7 @@ CoD.AARXpMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local LevelMeterTickGlow = LUI.UIImage.new( 0, 0, 1178.5, 1210.5, 0, 0, 0, 20 )
 	LevelMeterTickGlow:setAlpha( 0 )
-	LevelMeterTickGlow:setImage( RegisterImage( 0xE27F3F301EF775B ) )
+	LevelMeterTickGlow:setImage( RegisterImage( "uie_ui_menu_inspection_level_meter_tick_glow" ) )
 	LevelMeterTickGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	LevelMeterTickGlow:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LevelMeterTickGlow )
@@ -49,7 +49,7 @@ CoD.AARXpMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local LevelMeterTick = LUI.UIImage.new( 0, 0, 1184.5, 1204.5, 0, 0, -20, 20 )
 	LevelMeterTick:setAlpha( 0 )
-	LevelMeterTick:setImage( RegisterImage( 0xEEBA98BF64CBC55 ) )
+	LevelMeterTick:setImage( RegisterImage( "uie_ui_menu_inspection_level_meter_tick" ) )
 	LevelMeterTick:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	LevelMeterTick:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LevelMeterTick )

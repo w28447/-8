@@ -43,7 +43,7 @@ CoD.PC_AchievementDetailedView_Points.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local Points = LUI.UIText.new( 0, 0, 58, 155, 0, 0, 15, 32 )
 	Points:setRGB( 0.33, 0.33, 0.32 )
-	Points:setText( LocalizeToUpperString( 0xD34BC94F168F56D ) )
+	Points:setText( LocalizeToUpperString( "achievements/points" ) )
 	Points:setTTF( "ttmussels_regular" )
 	Points:setLetterSpacing( 4 )
 	Points:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

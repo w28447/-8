@@ -37,7 +37,7 @@ CoD.DemoPlaybackControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	ButtonPromptPC = CoD.DemoButtonPrompt.new( f1_arg0, f1_arg1, 0.5, 0.5, -131, 131, 0, 0, 137, 167 )
 	ButtonPromptPC.label:setScale( 0.85, 0.85 )
-	ButtonPromptPC.label:setText( LocalizeString( 0x3EE76DC3EE23FA2 ) )
+	ButtonPromptPC.label:setText( LocalizeString( "demo/toggle_controls" ) )
 	ButtonPromptPC.KBMlabel:setText( Engine[0xF9F1239CFD921FE]( 0x5F062F5AEAAA492 ) )
 	ButtonPromptPC:subscribeToGlobalModel( f1_arg1, "Controller", "left_stick_button_image", function ( model )
 		local f2_local0 = model:get()
@@ -76,16 +76,16 @@ CoD.DemoPlaybackControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ButtonList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if IsMouseOrKeyboard( f6_arg2 ) then
-			ProcessListAction( self, f6_arg0, f6_arg2, f6_arg1 )
+	f1_arg0:AddButtonCallbackFunction( ButtonList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) then
+			ProcessListAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		if IsMouseOrKeyboard( f7_arg2 ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false

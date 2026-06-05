@@ -63,7 +63,7 @@ CoD.DirectorGauntletMapSelectItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 			modelName = "trialVariant"
 		} )
 	end )
-	Button.FeaturedTag:setText( LocalizeToUpperString( 0x7E251454EDF7A26 ) )
+	Button.FeaturedTag:setText( LocalizeToUpperString( "menu/public_tab" ) )
 	Button:linkToElementModel( self, nil, false, function ( model )
 		Button:setModel( model, f1_arg1 )
 	end )

@@ -9,262 +9,262 @@ CoD.BGBUtility.N_SETTING_PACK_OFF = 0
 CoD.BGBUtility.N_SETTING_FIXED_POINTS_ON = 1
 CoD.BGBUtility.N_SETTING_LAST_STAND_DURATION_OFF = 0
 CoD.BGBUtility.ElixirToEnumGameSettingsHash = {
-	[0x612800A12B44CD1] = {
+	zm_bgb_crawl_space = {
 		{
-			hash = 0x946034AF4372F2D,
+			hash = "zmcrawlerstate",
 			restrictedValue = CoD.BGBUtility.N_SETTING_CRAWLER_STATE_OFF
 		}
 	},
-	[0xD4A36921F5E48F0] = {
+	zm_bgb_immolation_liquidation = {
 		{
-			hash = 0xE0EC3FE56F08B47,
+			hash = "zmmysteryboxstate",
 			restrictedValue = CoD.BGBUtility.N_ENUM_MBOX_OFF
 		}
 	},
-	[0x3884A663FDDDBE3] = {
+	zm_bgb_wall_power = {
 		{
-			hash = 0x9D48A0D4490B0A2,
+			hash = "zmpapenabled",
 			restrictedValue = CoD.BGBUtility.N_SETTING_PACK_OFF
 		}
 	},
-	[0x65C22731C18755C] = {
+	zm_bgb_conflagration_liquidation = {
 		{
-			hash = 0x9D48A0D4490B0A2,
+			hash = "zmpapenabled",
 			restrictedValue = CoD.BGBUtility.N_SETTING_PACK_OFF
 		}
 	},
-	[0x6C1AB5011A1A011] = {
+	zm_bgb_alchemical_antithesis = {
 		{
-			hash = 0x735A88A32111A1B,
+			hash = "zmpointsfixed",
 			restrictedValue = CoD.BGBUtility.N_SETTING_FIXED_POINTS_ON
 		}
 	},
-	[0x458181EB9DBDE8B] = {
+	zm_bgb_extra_credit = {
 		{
-			hash = 0x735A88A32111A1B,
+			hash = "zmpointsfixed",
 			restrictedValue = CoD.BGBUtility.N_SETTING_FIXED_POINTS_ON
 		}
 	},
-	[0x9627DB608C66755] = {
+	zm_bgb_whos_keeping_score = {
 		{
-			hash = 0x735A88A32111A1B,
+			hash = "zmpointsfixed",
 			restrictedValue = CoD.BGBUtility.N_SETTING_FIXED_POINTS_ON
 		}
 	},
-	[0xEBE3A344FB54080] = {
+	zm_bgb_phoenix_up = {
 		{
-			hash = 0x517C36D49B4EE0,
+			hash = "zmlaststandduration",
 			restrictedValue = CoD.BGBUtility.N_SETTING_LAST_STAND_DURATION_OFF
 		}
 	}
 }
 CoD.BGBUtility.ElixirToBooleanGameSettingsHash = {
-	[0xFD9EDD393FF4F8E] = {
+	zm_bgb_always_done_swiftly = {
 		"zmelixiralwaysdoneswiftly"
 	},
-	[0xD8BD1B24A9B47B] = {
-		0x230EF2B089AAD7F
+	zm_bgb_anywhere_but_here = {
+		"zmelixiranywherebuthere"
 	},
-	["zm_bgb_arsenal_accelerator"] = {
-		0xCE5566DDE9ED686,
+	zm_bgb_arsenal_accelerator = {
+		"zmelixirarsenalaccelerator",
 		"zmspecweaponisenabled"
 	},
-	[0xFE8B03A7EA470C2] = {
-		0xA534A2A0F3EEDD3
+	zm_bgb_danger_closest = {
+		"zmelixirdangerclosest"
 	},
-	[0x19263062D36917F] = {
-		0xEE97A6AB720CC15
+	zm_bgb_in_plain_sight = {
+		"zmelixirinplainsight"
 	},
-	[0x347CB0CB814CCA8] = {
-		0xF82E568F5E2C04F
+	zm_bgb_newtonian_negation = {
+		"zmelixirnewtoniannegation"
 	},
-	["zm_bgb_now_you_see_me"] = {
-		0xA8EE5887F138E39
+	zm_bgb_now_you_see_me = {
+		"zmelixirnowyouseeme"
 	},
-	[0xA5F7D0F1A62B2F7] = {
-		0xFECDAEC6642D3BA
+	zm_bgb_stock_option = {
+		"zmelixirstockoption"
 	},
-	[0x4793A347BD97CD3] = {
-		0xAA214604D696F70,
-		0x386CAA315211C88
+	zm_bgb_board_games = {
+		"zmelixirboardgames",
+		"zmbarricadestate"
 	},
-	[0x67C8B57DAA18922] = {
-		0x1F269AB6574B3BD
+	zm_bgb_burned_out = {
+		"zmelixirburnedout"
 	},
-	[0x612800A12B44CD1] = {
-		0x9B95E3BA4D2D2F8
+	zm_bgb_crawl_space = {
+		"zmelixircrawlspace"
 	},
-	[0xE494EA245B6BE52] = {
-		0x929DD7083C365C5,
-		0x16DB8C2D7FCACFB
+	zm_bgb_pop_shocks = {
+		"zmelixirpopshocks",
+		"zmweaponsmelee"
 	},
-	[0x22BD6CA7FF53DEE] = {
+	zm_bgb_temporal_gift = {
 		"zmelixirtemporalgift",
-		0x98A7F96C03E4B77
+		"zmpowerupsactive"
 	},
-	[0x77EA318753F5418] = {
-		0xD490D5A824C0D83,
-		0xBF54DA23EF8887B,
-		0x98A7F96C03E4B77
+	zm_bgb_point_drops = {
+		"zmelixirpointdrops",
+		"zmpowerupchaospoints",
+		"zmpowerupsactive"
 	},
-	[0x6C1AB5011A1A011] = {
-		0xAFF42262B4EEE32
+	zm_bgb_alchemical_antithesis = {
+		"zmelixiralchemicalantithesis"
 	},
-	["zm_bgb_sword_flay"] = {
-		0xA7BD9C02B9FCE98,
-		0x16DB8C2D7FCACFB
+	zm_bgb_sword_flay = {
+		"zmelixirswordflay",
+		"zmweaponsmelee"
 	},
-	[0xD5E188BC784884C] = {
-		0xCA897D3295F6257,
-		0xA6F8EC0657F1F69,
-		0x98A7F96C03E4B77
+	zm_bgb_dead_of_nuclear_winter = {
+		"zmelixirdeadofnuclearwinter",
+		"zmpowerupnuke",
+		"zmpowerupsactive"
 	},
-	[0x5A9D6022E571C6] = {
-		0x197061EC31DC27D,
-		0x1BEC0AD87D8E7C0,
-		0x98A7F96C03E4B77,
-		0x386CAA315211C88
+	zm_bgb_licensed_contractor = {
+		"zmelixirlicensedcontractor",
+		"zmpowerupcarpenter",
+		"zmpowerupsactive",
+		"zmbarricadestate"
 	},
-	[0xBBB25554D3F7F6B] = {
-		0xDADB18509506169
+	zm_bgb_undead_man_walking = {
+		"zmelixirundeadmanwalking"
 	},
-	[0x9627DB608C66755] = {
-		0x16D4768994B25A5,
+	zm_bgb_whos_keeping_score = {
+		"zmelixirwhoskeepingscore",
 		"zmpowerupdouble",
-		0x98A7F96C03E4B77
+		"zmpowerupsactive"
 	},
-	[0xFE59430E1D71B6C] = {
-		0x6468DE196046E72
+	zm_bgb_aftertaste = {
+		"zmelixiraftertaste"
 	},
-	[0x458181EB9DBDE8B] = {
+	zm_bgb_extra_credit = {
 		"zmelixirextracredit",
-		0xBF54DA23EF8887B,
-		0x98A7F96C03E4B77
+		"zmpowerupchaospoints",
+		"zmpowerupsactive"
 	},
-	["zm_bgb_kill_joy"] = {
+	zm_bgb_kill_joy = {
 		"zmelixirkilljoy",
-		0xD385A15A00AD7F7,
-		0x98A7F96C03E4B77
+		"zmpowerupinstakill",
+		"zmpowerupsactive"
 	},
-	["zm_bgb_soda_fountain"] = {
-		0xD1FB9161DDDF722,
-		0xD18F84F48BD5D1F
+	zm_bgb_soda_fountain = {
+		"zmelixirsodafountain",
+		"zmperksactive"
 	},
-	[0x953696819BF1875] = {
-		0xA779251EF8C8568
+	zm_bgb_ctrl_z = {
+		"zmelixirctrlz"
 	},
-	["zm_bgb_free_fire"] = {
-		0xAE3C77E1EBDC90D
+	zm_bgb_free_fire = {
+		"zmelixirfreefire"
 	},
-	["zm_bgb_cache_back"] = {
-		0x60C19249D1B9390,
-		0xB6F66A1418EE8EC,
-		0x98A7F96C03E4B77
+	zm_bgb_cache_back = {
+		"zmelixircacheback",
+		"zmpowerupmaxammo",
+		"zmpowerupsactive"
 	},
-	[0xD4A36921F5E48F0] = {
-		0x8A2CAB12F0C5A89,
-		0xB357404957E850B,
-		0x98A7F96C03E4B77
+	zm_bgb_immolation_liquidation = {
+		"zmelixirimmolationliquidation",
+		"zmpowerupfiresale",
+		"zmpowerupsactive"
 	},
-	[0xEBE3A344FB54080] = {
-		0x3AC6983716EB72B
+	zm_bgb_phoenix_up = {
+		"zmelixirphoenixup"
 	},
-	[0xE31B245BDE5C7FC] = {
-		0xDD3D19705899DBD,
+	zm_bgb_power_keg = {
+		"zmelixirpowerkeg",
 		"zmspecweaponisenabled",
-		0xB69E8F8CBC6A4FF,
-		0x98A7F96C03E4B77
+		"zmpowerupspecialweapon",
+		"zmpowerupsactive"
 	},
-	[0x4496E1B656C6651] = {
-		0xE84A4012DDF8A24
+	zm_bgb_blood_debt = {
+		"zmelixirblooddebt"
 	},
-	["zm_bgb_near_death_experience"] = {
-		0x7FF67C16576E231
+	zm_bgb_near_death_experience = {
+		"zmelixirneardeathexperience"
 	},
-	[0x913B5E2900CDF3F] = {
+	zm_bgb_perkaholic = {
 		"zmelixirperkaholic",
-		0xD18F84F48BD5D1F
+		"zmperksactive"
 	},
-	[0x3884A663FDDDBE3] = {
-		0x3D900F7B3D14128,
-		0x1A2CF319E12D9AE
+	zm_bgb_wall_power = {
+		"zmelixirwallpower",
+		"zmwallbuysenabled"
 	},
-	[0xC80DF83E002A4D6] = {
+	zm_bgb_anti_entrapment = {
 		"zmelixirantientrapment"
 	},
-	[0x8932D2054C58CD0] = {
-		0xA9E56AE10CF58C9,
-		0x5A1298089D361F1
+	zm_bgb_equip_mint = {
+		"zmelixirequipmint",
+		"zmequipmentisenabled"
 	},
-	["zm_bgb_head_scan"] = {
+	zm_bgb_head_scan = {
 		"zmelixirheadscan"
 	},
-	[0x9376AB9D627E38A] = {
-		0xE98C2376CACD382
+	zm_bgb_join_the_party = {
+		"zmelixirjointheparty"
 	},
-	["zm_bgb_nowhere_but_there"] = {
-		0xB83ACFD4B361E44
+	zm_bgb_nowhere_but_there = {
+		"zmelixirnowherebutthere"
 	},
-	[0x60CA45C0A2DAEF2] = {
-		0xEDB895E9D0880F9
+	zm_bgb_phantom_reload = {
+		"zmelixirphantomreload"
 	},
-	[0x6D3DF5058C56523] = {
-		0xD9DDFA547EC765E,
-		0x5A1D440F78A3B2
+	zm_bgb_shields_up = {
+		"zmelixirshieldsup",
+		"zmshieldisenabled"
 	},
-	[0xA6B297C85FAFEC1] = {
-		0x5118B5F6D97C89A,
-		0x1A2CF319E12D9AE
+	zm_bgb_wall_to_wall_clearance = {
+		"zmelixirwalltowall",
+		"zmwallbuysenabled"
 	},
-	[0x6F5A81348E35487] = {
-		0xB30109CD344258E,
-		0xD18F84F48BD5D1F
+	zm_bgb_perk_up = {
+		"zmelixirperkup",
+		"zmperksactive"
 	},
-	[0x65C22731C18755C] = {
-		0x48716023024B395,
-		0x98A7F96C03E4B77
+	zm_bgb_conflagration_liquidation = {
+		"zmelixirconflagrationliquidation",
+		"zmpowerupsactive"
 	},
-	["zm_bgb_refresh_mint"] = {
+	zm_bgb_refresh_mint = {
 		"zmelixirrefreshmint"
 	},
-	[0xFD8F0866DBEDA28] = {
-		0x6436F50FAF41689
+	zm_bgb_dividend_yield = {
+		"zmelixirdividendyield"
 	},
-	[0x3F12A7EBB3E91AC] = {
-		0x65BA2184C27828F
+	zm_bgb_suit_up = {
+		"zmelixirsuitup"
 	},
-	[0xFF20DC353CEB63] = {
-		0x6700855B131A427
+	zm_bgb_talkin_bout_regeneration = {
+		"zmelixirtalkinboutregeneration"
 	},
-	[0x9EAEF177AABC815] = {
-		0xB74D1759BD25756
+	zm_bgb_bullet_boost = {
+		"zmelixirbulletboost"
 	},
-	[0x455490B99D4CBBB] = {
-		0x76D5E7BFFCF1E3D
+	zm_bgb_quacknarok = {
+		"zmelixirquacknarok"
 	},
-	[0x2E9E5C5026C2620] = {
-		0xBEC3890EA83D709
+	zm_bgb_shopping_free = {
+		"zmelixirshoppingfree"
 	},
-	["zm_bgb_near_death_experience"] = {
-		0x7FF67C16576E231
+	zm_bgb_near_death_experience = {
+		"zmelixirneardeathexperience"
 	},
-	[0x98BD245E259C64F] = {
+	zm_bgb_reign_drops = {
 		"zmelixirreigndrops",
-		0x98A7F96C03E4B77
+		"zmpowerupsactive"
 	},
-	["zm_bgb_head_drama"] = {
-		0x5AABD057794561C
+	zm_bgb_head_drama = {
+		"zmelixirheaddrama"
 	},
-	[0xEBE3A344FB54080] = {
-		0x3AC6983716EB72B
+	zm_bgb_phoenix_up = {
+		"zmelixirphoenixup"
 	},
-	[0xF8DD5E57E340A94] = {
-		0x4E500E1B323DAF7,
-		0x98A7F96C03E4B77
+	zm_bgb_power_vacuum = {
+		"zmelixirpowervacuum",
+		"zmpowerupsactive"
 	},
-	[0x28619E07BF4DED1] = {
-		0x821E81969996ECE,
-		0x1A2CF319E12D9AE
+	zm_bgb_secret_shopper = {
+		"zmelixirsecretshopper",
+		"zmwallbuysenabled"
 	}
 }
 DataSources.BGBCarousel = DataSourceHelpers.CustomListSetup( "BGBCarousel", function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4 )

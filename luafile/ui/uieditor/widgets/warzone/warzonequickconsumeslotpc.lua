@@ -171,12 +171,12 @@ CoD.WarzoneQuickConsumeSlotPC.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local LED = LUI.UIImage.new( 0, 0, 31, 99, 0, 0, 19.5, 87.5 )
 	LED:setRGB( 0, 0, 0 )
 	LED:setAlpha( 0.2 )
-	LED:setImage( RegisterImage( 0xD6566449C808FFB ) )
+	LED:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_player_widget_led_heal" ) )
 	self:addElement( LED )
 	self.LED = LED
 	
 	local EmptyFrame = LUI.UIImage.new( 0.5, 0.5, -42.5, 41.5, 0, 0, 12, 96 )
-	EmptyFrame:setImage( RegisterImage( 0x70548EF9EFFFB38 ) )
+	EmptyFrame:setImage( RegisterImage( "uie_ui_pc_quickconsume_slot" ) )
 	self:addElement( EmptyFrame )
 	self.EmptyFrame = EmptyFrame
 	

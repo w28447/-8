@@ -30,13 +30,13 @@ CoD.vhud_dart_PC_reticleBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local vignette02 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	vignette02:setRGB( 0, 0, 0 )
 	vignette02:setAlpha( 0.4 )
-	vignette02:setImage( RegisterImage( 0xB8D7548F3591A70 ) )
+	vignette02:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_vignette02" ) )
 	self:addElement( vignette02 )
 	self.vignette02 = vignette02
 	
 	local TiledShaderImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledShaderImage:setAlpha( 0.55 )
-	TiledShaderImage:setImage( RegisterImage( 0xEDF02F55208D0A6 ) )
+	TiledShaderImage:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_scanline" ) )
 	TiledShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage:setupNineSliceShader( 64, 64 )
@@ -49,7 +49,7 @@ CoD.vhud_dart_PC_reticleBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local CenterReticleCircleBlurRGB = LUI.UIImage.new( 0.5, 0.5, -116, 116, 0.5, 0.5, -118, 114 )
 	CenterReticleCircleBlurRGB:setAlpha( 0.5 )
-	CenterReticleCircleBlurRGB:setImage( RegisterImage( 0x2A55E154C88B2CC ) )
+	CenterReticleCircleBlurRGB:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_blur_common_circle" ) )
 	CenterReticleCircleBlurRGB:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterReticleCircleBlurRGB )
 	self.CenterReticleCircleBlurRGB = CenterReticleCircleBlurRGB
@@ -70,7 +70,7 @@ CoD.vhud_dart_PC_reticleBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local vignette01 = LUI.UIImage.new( 0.5, 0.5, -960, 960, 0, 1, 0, 0 )
 	vignette01:setRGB( 0, 0, 0 )
 	vignette01:setAlpha( 0.5 )
-	vignette01:setImage( RegisterImage( 0xB8D7548F3591A70 ) )
+	vignette01:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_vignette02" ) )
 	self:addElement( vignette01 )
 	self.vignette01 = vignette01
 	

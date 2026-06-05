@@ -10,14 +10,14 @@ CoD.vhud_agr_ReticleOutsideDotsUR.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local agrReticleOutsideDotsUR0 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	agrReticleOutsideDotsUR0:setAlpha( 0.15 )
 	agrReticleOutsideDotsUR0:setZoom( -50 )
-	agrReticleOutsideDotsUR0:setImage( RegisterImage( 0x313A715108951EA ) )
+	agrReticleOutsideDotsUR0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_reticleoutsidedots" ) )
 	agrReticleOutsideDotsUR0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleOutsideDotsUR0 )
 	self.agrReticleOutsideDotsUR0 = agrReticleOutsideDotsUR0
 	
 	local agrReticleOutsideDotsUR = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	agrReticleOutsideDotsUR:setAlpha( 0.7 )
-	agrReticleOutsideDotsUR:setImage( RegisterImage( 0x313A715108951EA ) )
+	agrReticleOutsideDotsUR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_reticleoutsidedots" ) )
 	agrReticleOutsideDotsUR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleOutsideDotsUR )
 	self.agrReticleOutsideDotsUR = agrReticleOutsideDotsUR

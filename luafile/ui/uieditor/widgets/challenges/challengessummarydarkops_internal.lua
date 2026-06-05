@@ -58,7 +58,7 @@ CoD.ChallengesSummaryDarkOps_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local Name = LUI.UIText.new( 0.5, 0.5, -94, 94, 0.5, 0.5, 53.5, 71.5 )
 	Name:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
-	Name:setText( Engine[0xF9F1239CFD921FE]( 0xD3B373F67B75C3D ) )
+	Name:setText( Engine[0xF9F1239CFD921FE]( "challenge/darkops" ) )
 	Name:setTTF( "ttmussels_regular" )
 	Name:setLetterSpacing( 2 )
 	Name:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

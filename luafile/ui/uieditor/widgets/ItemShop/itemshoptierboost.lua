@@ -12,7 +12,7 @@ CoD.ItemShopTierBoost.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local Corner = LUI.UIImage.new( 0, 0, 195, 211, 0, 0, 0, 16 )
 	Corner:setRGB( 0.45, 0.41, 0.07 )
-	Corner:setImage( RegisterImage( 0xB998225BD626F68 ) )
+	Corner:setImage( RegisterImage( "uie_ui_menu_blackmarket_banner_corner" ) )
 	self:addElement( Corner )
 	self.Corner = Corner
 	

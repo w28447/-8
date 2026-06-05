@@ -44,7 +44,7 @@ CoD.SupplyChainDetailImage3d.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		{
 			stateName = "Decal",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0x1FE4C75ACC7DF0E )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "decal" )
 			end
 		}
 	} )

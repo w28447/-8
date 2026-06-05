@@ -22,7 +22,7 @@ CoD.EmblemEditorColorMixerPointer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local arrowLarge = LUI.UIImage.new( 0, 0, -5.5, 6.5, 0, 0, -23, 1 )
 	arrowLarge:setAlpha( 0 )
 	arrowLarge:setZRot( -90 )
-	arrowLarge:setImage( RegisterImage( 0x1226A0CC6137EEE ) )
+	arrowLarge:setImage( RegisterImage( "uie_ui_hud_common_triangle" ) )
 	self:addElement( arrowLarge )
 	self.arrowLarge = arrowLarge
 	

@@ -9,8 +9,8 @@ CoD.fx_Ember.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_ar
 	
 	local Ember = LUI.UIImage.new( 0, 1, 60, -68, 0, 1, 0, -160 )
 	Ember:setRGB( 0.89, 0.68, 0.04 )
-	Ember:setImage( RegisterImage( 0xE8CE760EF552922 ) )
-	Ember:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	Ember:setImage( RegisterImage( "uie_t7_blackmarket_crate_ember" ) )
+	Ember:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	Ember:setShaderVector( 0, 1, 1, 0, 0 )
 	Ember:setShaderVector( 1, 0, 0.25, 0, 0 )
 	self:addElement( Ember )

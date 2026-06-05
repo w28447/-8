@@ -61,23 +61,23 @@ LUI.createMenu.ZMEquipmentSelect = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( itemList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if IsPC() and CoD.CACUtility.IsItemEquippedInCurrentLoadout( f6_arg1, f6_arg0, f6_arg2 ) and not CoD.CACUtility.IsCACItemLocked( f6_arg1, f6_arg0, f6_arg2 ) then
-			GoBack( self, f6_arg2 )
+	f1_local1:AddButtonCallbackFunction( itemList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsPC() and CoD.CACUtility.IsItemEquippedInCurrentLoadout( menu, element, controller ) and not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			GoBack( self, controller )
 			return true
-		elseif not CoD.CACUtility.IsItemEquippedInCurrentLoadout( f6_arg1, f6_arg0, f6_arg2 ) and not CoD.CACUtility.IsCACItemLocked( f6_arg1, f6_arg0, f6_arg2 ) then
-			CoD.CACUtility.EquipWeapon( self, f6_arg0, f6_arg1, f6_arg2, false )
-			UpdateSelfElementState( f6_arg1, self, f6_arg2 )
+		elseif not CoD.CACUtility.IsItemEquippedInCurrentLoadout( menu, element, controller ) and not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.CACUtility.EquipWeapon( self, element, menu, controller, false )
+			UpdateSelfElementState( menu, self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		if IsPC() and CoD.CACUtility.IsItemEquippedInCurrentLoadout( f7_arg1, f7_arg0, f7_arg2 ) and not CoD.CACUtility.IsCACItemLocked( f7_arg1, f7_arg0, f7_arg2 ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsPC() and CoD.CACUtility.IsItemEquippedInCurrentLoadout( menu, element, controller ) and not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return false
-		elseif not CoD.CACUtility.IsItemEquippedInCurrentLoadout( f7_arg1, f7_arg0, f7_arg2 ) and not CoD.CACUtility.IsCACItemLocked( f7_arg1, f7_arg0, f7_arg2 ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif not CoD.CACUtility.IsItemEquippedInCurrentLoadout( menu, element, controller ) and not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -106,7 +106,7 @@ LUI.createMenu.ZMEquipmentSelect = function ( f1_arg0, f1_arg1 )
 	self.ItemInfo = ItemInfo
 	
 	local CACHeader = CoD.CommonHeader.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0, 0, 0, 67 )
-	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( CoD.CACUtility.GetHeaderNameForLoadoutSlot( self, 0x5C60F77B9332E5B ) ) )
+	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( CoD.CACUtility.GetHeaderNameForLoadoutSlot( self, "menu/equipment_caps" ) ) )
 	CACHeader.subtitle.subtitle:setAlpha( 0 )
 	CACHeader:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f10_local0 = model:get()
@@ -181,11 +181,11 @@ LUI.createMenu.ZMEquipmentSelect = function ( f1_arg0, f1_arg1 )
 	ItemInfo:linkToElementModel( itemList, nil, false, function ( model )
 		ItemInfo:setModel( model, f1_arg0 )
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		GoBack( self, f17_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )
@@ -216,7 +216,7 @@ LUI.createMenu.ZMEquipmentSelect = function ( f1_arg0, f1_arg1 )
 		PostLoadFunc( self, f1_arg0 )
 	end
 	local f1_local10 = self
-	if not CoD.BaseUtility.IsMenuSessionModeEqualTo( f1_local1, Enum.eModes[0x3723205FAE52C4A] ) then
+	if not CoD.BaseUtility.IsMenuSessionModeEqualTo( f1_local1, Enum.eModes.mode_zombies ) then
 		CoD.CACUtility.UpdateWeaponModel( f1_local1, self, f1_arg0 )
 		CoD.BaseUtility.SetModelFromPropertyModel( f1_arg0, self, self )
 	end

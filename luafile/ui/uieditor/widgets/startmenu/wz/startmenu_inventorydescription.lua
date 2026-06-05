@@ -156,7 +156,7 @@ CoD.StartMenu_InventoryDescription.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local ArmorIcon = LUI.UIImage.new( 0.5, 0.5, -43, 57, 0, 0, -42.5, 57.5 )
 	ArmorIcon:setAlpha( 0 )
-	ArmorIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0x72987F9CD841ED7 ) )
+	ArmorIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_animated" ) )
 	ArmorIcon:setShaderVector( 0, 10, 1, 0, 0 )
 	ArmorIcon.__Frame = function ( f15_arg0 )
 		local f15_local0 = f15_arg0:get()
@@ -219,7 +219,7 @@ CoD.StartMenu_InventoryDescription.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	WarzoneInventoryUnlockMissionObjective:linkToElementModel( self, "unlockableItemRef", true, function ( model )
 		local f21_local0 = model:get()
 		if f21_local0 ~= nil then
-			WarzoneInventoryUnlockMissionObjective.WarzoneInventoryUnlockMissionReward.unlockableIcon:setImage( CoD.BaseUtility.AlreadyRegistered( CoD.WZUtility.GetPreviewImageLargeFromRef( Enum.eModes[0xBF1DCC8138A9D39], f21_local0 ) ) )
+			WarzoneInventoryUnlockMissionObjective.WarzoneInventoryUnlockMissionReward.unlockableIcon:setImage( CoD.BaseUtility.AlreadyRegistered( CoD.WZUtility.GetPreviewImageLargeFromRef( Enum.eModes.mode_warzone, f21_local0 ) ) )
 		end
 	end )
 	WarzoneInventoryUnlockMissionObjective:linkToElementModel( self, "quote", true, function ( model )

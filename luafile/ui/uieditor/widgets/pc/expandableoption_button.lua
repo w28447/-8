@@ -23,7 +23,7 @@ CoD.ExpandableOption_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local TextBox = LUI.UIText.new( 0, 0, 14, 214, 0.5, 0.5, -9, 9 )
 	TextBox:setRGB( 0.76, 0.76, 0.76 )
-	TextBox:setText( Engine[0xF9F1239CFD921FE]( 0x5F407BC037861DC ) )
+	TextBox:setText( Engine[0xF9F1239CFD921FE]( "options/advanced" ) )
 	TextBox:setTTF( "ttmussels_demibold" )
 	TextBox:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	TextBox:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -45,7 +45,7 @@ CoD.ExpandableOption_Button.__resetProperties = function ( f2_arg0 )
 	f2_arg0.TextBox:completeAnimation()
 	f2_arg0.Background:setRGB( 0.09, 0.09, 0.09 )
 	f2_arg0.TextBox:setRGB( 0.76, 0.76, 0.76 )
-	f2_arg0.TextBox:setText( Engine[0xF9F1239CFD921FE]( 0x5F407BC037861DC ) )
+	f2_arg0.TextBox:setText( Engine[0xF9F1239CFD921FE]( "options/advanced" ) )
 end
 
 CoD.ExpandableOption_Button.__clipsPerState = {
@@ -159,7 +159,7 @@ CoD.ExpandableOption_Button.__clipsPerState = {
 			f13_arg0.PCHighlightBorder:playClip( "DefaultClip" )
 			f13_arg0.clipFinished( f13_arg0.PCHighlightBorder )
 			f13_arg0.TextBox:completeAnimation()
-			f13_arg0.TextBox:setText( Engine[0xF9F1239CFD921FE]( 0xC3EC6EB9A334A1E ) )
+			f13_arg0.TextBox:setText( Engine[0xF9F1239CFD921FE]( "options/hide" ) )
 			f13_arg0.clipFinished( f13_arg0.TextBox )
 		end,
 		Focus = function ( f14_arg0, f14_arg1 )
@@ -170,7 +170,7 @@ CoD.ExpandableOption_Button.__clipsPerState = {
 			f14_arg0.clipFinished( f14_arg0.Background )
 			f14_arg0.TextBox:completeAnimation()
 			f14_arg0.TextBox:setRGB( 1, 1, 1 )
-			f14_arg0.TextBox:setText( Engine[0xF9F1239CFD921FE]( 0xC3EC6EB9A334A1E ) )
+			f14_arg0.TextBox:setText( Engine[0xF9F1239CFD921FE]( "options/hide" ) )
 			f14_arg0.clipFinished( f14_arg0.TextBox )
 		end,
 		LoseFocus = function ( f15_arg0, f15_arg1 )
@@ -198,7 +198,7 @@ CoD.ExpandableOption_Button.__clipsPerState = {
 			
 			f15_arg0.TextBox:completeAnimation()
 			f15_arg0.TextBox:setRGB( 1, 1, 1 )
-			f15_arg0.TextBox:setText( Engine[0xF9F1239CFD921FE]( 0xC3EC6EB9A334A1E ) )
+			f15_arg0.TextBox:setText( Engine[0xF9F1239CFD921FE]( "options/hide" ) )
 			f15_local1( f15_arg0.TextBox )
 		end,
 		GainFocus = function ( f18_arg0, f18_arg1 )
@@ -226,7 +226,7 @@ CoD.ExpandableOption_Button.__clipsPerState = {
 			
 			f18_arg0.TextBox:completeAnimation()
 			f18_arg0.TextBox:setRGB( 0.76, 0.76, 0.76 )
-			f18_arg0.TextBox:setText( Engine[0xF9F1239CFD921FE]( 0xC3EC6EB9A334A1E ) )
+			f18_arg0.TextBox:setText( Engine[0xF9F1239CFD921FE]( "options/hide" ) )
 			f18_local1( f18_arg0.TextBox )
 		end,
 		Active = function ( f21_arg0, f21_arg1 )
@@ -237,7 +237,7 @@ CoD.ExpandableOption_Button.__clipsPerState = {
 			f21_arg0.clipFinished( f21_arg0.Background )
 			f21_arg0.TextBox:completeAnimation()
 			f21_arg0.TextBox:setRGB( 1, 1, 1 )
-			f21_arg0.TextBox:setText( Engine[0xF9F1239CFD921FE]( 0xC3EC6EB9A334A1E ) )
+			f21_arg0.TextBox:setText( Engine[0xF9F1239CFD921FE]( "options/hide" ) )
 			f21_arg0.clipFinished( f21_arg0.TextBox )
 		end,
 		ActiveAndFocus = function ( f22_arg0, f22_arg1 )
@@ -248,7 +248,7 @@ CoD.ExpandableOption_Button.__clipsPerState = {
 			f22_arg0.clipFinished( f22_arg0.Background )
 			f22_arg0.TextBox:completeAnimation()
 			f22_arg0.TextBox:setRGB( 1, 1, 1 )
-			f22_arg0.TextBox:setText( Engine[0xF9F1239CFD921FE]( 0xC3EC6EB9A334A1E ) )
+			f22_arg0.TextBox:setText( Engine[0xF9F1239CFD921FE]( "options/hide" ) )
 			f22_arg0.clipFinished( f22_arg0.TextBox )
 		end
 	}

@@ -1,18 +1,18 @@
 require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_dystopian_character" )
 
-CoD[0x720E7CB0E9CFA73] = InheritFrom( LUI.UIElement )
-CoD[0x720E7CB0E9CFA73].__defaultWidth = 960
-CoD[0x720E7CB0E9CFA73].__defaultHeight = 240
-CoD[0x720E7CB0E9CFA73].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.ui_icon_callingcards_dystopian = InheritFrom( LUI.UIElement )
+CoD.ui_icon_callingcards_dystopian.__defaultWidth = 960
+CoD.ui_icon_callingcards_dystopian.__defaultHeight = 240
+CoD.ui_icon_callingcards_dystopian.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x720E7CB0E9CFA73] )
+	self:setClass( CoD.ui_icon_callingcards_dystopian )
 	self.id = "ui_icon_callingcards_dystopian"
 	self.soundSet = "none"
 	self.anyChildUsesUpdateState = true
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local background = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	background:setImage( RegisterImage( 0x6A2F92BEC5D01B5 ) )
+	background:setImage( RegisterImage( "uie_ui_icon_callingcards_dystopian_bg" ) )
 	self:addElement( background )
 	self.background = background
 	
@@ -35,7 +35,7 @@ CoD[0x720E7CB0E9CFA73].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x720E7CB0E9CFA73].__resetProperties = function ( f2_arg0 )
+CoD.ui_icon_callingcards_dystopian.__resetProperties = function ( f2_arg0 )
 	f2_arg0.characer:completeAnimation()
 	f2_arg0.background2:completeAnimation()
 	f2_arg0.characer:setLeftRight( 0, 0, 564, 836 )
@@ -46,7 +46,7 @@ CoD[0x720E7CB0E9CFA73].__resetProperties = function ( f2_arg0 )
 	f2_arg0.background2:setImage( RegisterImage( "uie_ui_icon_callingcards_dystopian_bgglow" ) )
 end
 
-CoD[0x720E7CB0E9CFA73].__clipsPerState = {
+CoD.ui_icon_callingcards_dystopian.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -114,7 +114,7 @@ CoD[0x720E7CB0E9CFA73].__clipsPerState = {
 		end
 	}
 }
-CoD[0x720E7CB0E9CFA73].__onClose = function ( f12_arg0 )
+CoD.ui_icon_callingcards_dystopian.__onClose = function ( f12_arg0 )
 	f12_arg0.characer:close()
 end
 

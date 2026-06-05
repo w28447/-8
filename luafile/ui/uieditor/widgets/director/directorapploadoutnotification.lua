@@ -53,28 +53,28 @@ CoD.DirectorAppLoadoutNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local Pip = LUI.UIImage.new( 1, 1, -4.5, 3.5, 0, 0, -3.5, 4.5 )
 	Pip:setAlpha( 0 )
-	Pip:setImage( RegisterImage( 0x364778639313CE9 ) )
+	Pip:setImage( RegisterImage( "uie_ui_hud_core_draft_pip" ) )
 	Pip:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Pip )
 	self.Pip = Pip
 	
 	local Pip3 = LUI.UIImage.new( 0, 0, -3.5, 4.5, 0, 0, -3.5, 4.5 )
 	Pip3:setAlpha( 0 )
-	Pip3:setImage( RegisterImage( 0x364778639313CE9 ) )
+	Pip3:setImage( RegisterImage( "uie_ui_hud_core_draft_pip" ) )
 	Pip3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Pip3 )
 	self.Pip3 = Pip3
 	
 	local Pip4 = LUI.UIImage.new( 0, 0, -3.5, 4.5, 1, 1, -4.5, 3.5 )
 	Pip4:setAlpha( 0 )
-	Pip4:setImage( RegisterImage( 0x364778639313CE9 ) )
+	Pip4:setImage( RegisterImage( "uie_ui_hud_core_draft_pip" ) )
 	Pip4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Pip4 )
 	self.Pip4 = Pip4
 	
 	local Pip2 = LUI.UIImage.new( 1, 1, -4.5, 3.5, 1, 1, -4.5, 3.5 )
 	Pip2:setAlpha( 0 )
-	Pip2:setImage( RegisterImage( 0x364778639313CE9 ) )
+	Pip2:setImage( RegisterImage( "uie_ui_hud_core_draft_pip" ) )
 	Pip2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Pip2 )
 	self.Pip2 = Pip2
@@ -82,7 +82,7 @@ CoD.DirectorAppLoadoutNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local BreadcrumbIcon = LUI.UIImage.new( 0, 0, 1, 29, 0, 0, 1, 29 )
 	BreadcrumbIcon:setRGB( 0.1, 0.12, 0.03 )
 	BreadcrumbIcon:setAlpha( 0 )
-	BreadcrumbIcon:setImage( RegisterImage( 0x30BF48156864B3B ) )
+	BreadcrumbIcon:setImage( RegisterImage( "uie_ui_icon_loadouts_breadcrumb" ) )
 	self:addElement( BreadcrumbIcon )
 	self.BreadcrumbIcon = BreadcrumbIcon
 	

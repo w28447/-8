@@ -64,18 +64,18 @@ CoD.TabbedScoreboardRowInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.StatBoxFFA = StatBoxFFA
 	
 	local TintPlayerName = LUI.UIImage.new( 0.5, 0.5, -195, 107, 0, 0, 3, 61 )
-	TintPlayerName:setImage( RegisterImage( 0x9716328BAC3658F ) )
+	TintPlayerName:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_name_bg" ) )
 	self:addElement( TintPlayerName )
 	self.TintPlayerName = TintPlayerName
 	
 	local PlayerNameBotStripe = LUI.UIImage.new( 0, 0, 165.5, 471.5, 0, 0, 58, 68 )
 	PlayerNameBotStripe:setAlpha( 0.5 )
-	PlayerNameBotStripe:setImage( RegisterImage( 0x25491BD9124F9AD ) )
+	PlayerNameBotStripe:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_name_stripe" ) )
 	self:addElement( PlayerNameBotStripe )
 	self.PlayerNameBotStripe = PlayerNameBotStripe
 	
 	local LevelBG = LUI.UIImage.new( 0.5, 0.5, -327, -283, 0, 0, 3, 61 )
-	LevelBG:setImage( RegisterImage( 0xBF90F4B4EC33404 ) )
+	LevelBG:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_level_bg" ) )
 	self:addElement( LevelBG )
 	self.LevelBG = LevelBG
 	
@@ -99,12 +99,12 @@ CoD.TabbedScoreboardRowInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.PlayerIcon = PlayerIcon
 	
 	local BarBotPlayer = LUI.UIImage.new( 0.5, 0.5, -284.5, -194.5, 0, 0, 58.5, 68.5 )
-	BarBotPlayer:setImage( RegisterImage( 0x488233EAD062891 ) )
+	BarBotPlayer:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_portrait_bar" ) )
 	self:addElement( BarBotPlayer )
 	self.BarBotPlayer = BarBotPlayer
 	
 	local BotBarRank = LUI.UIImage.new( 0.5, 0.5, -328.5, -280.5, 0, 0, 58.5, 68.5 )
-	BotBarRank:setImage( RegisterImage( 0xB6282F6D5AC2104 ) )
+	BotBarRank:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_level_bar" ) )
 	self:addElement( BotBarRank )
 	self.BotBarRank = BotBarRank
 	

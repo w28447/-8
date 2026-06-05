@@ -104,7 +104,7 @@ CoD.WeaponOptionsUtility.lootReticlesData = {
 			reticleIndex = 9,
 			weaponOptionSubIndex = 37,
 			multiColor = false,
-			lootItemOverride = 0xA85406CCE12779
+			lootItemOverride = "reticle_acog_8"
 		},
 		{
 			reticleIndex = 10,
@@ -153,22 +153,22 @@ CoD.WeaponOptionsUtility.lootReticlesData = {
 	}
 }
 CoD.WeaponOptionsUtility.AlternateCamoLootIDLookup = {
-	["camo_active_ar_accurate_base"] = 0x59A388BF07ABE52,
-	[0x2942BCBD7F7246F] = 0x5B27C275D00AFF6,
-	["camo_active_lmg_standard_base"] = 0xC8771E638D67490,
-	[0x325109E26315E0E] = "loot_pistol_standard_sig_01",
-	[0x5A80B864AB2ADC1] = 0x42D89F32491DB77,
-	[0xC5ADF2858A5FEC3] = 0x49CB9D6A4494AB8,
-	[0xDF1F30EBFF59926] = 0x230D8D739579C05,
-	["camo_active_headshot_wrapper"] = 0x59A388BF07ABE52,
-	[0xBD97AD0F3FACEC2] = 0xC8771E638D67490,
-	[0xC4A4AD82AFB4F73] = 0x49CB9D6A4494AB8,
-	[0x5101C7F1BB3A40E] = 0x42D89F32491DB77,
-	[0x91335CF48FD4407] = 0x5B27C275D00AFF6,
-	[0x90DB1296EA96393] = "loot_pistol_standard_sig_01",
-	[0x1FAD9ED9BDABAAC] = 0x230D8D739579C05
+	camo_active_ar_accurate_base = "loot_ar_accurate_sig_01",
+	camo_active_ar_fastfire_base = "loot_ar_fastfire_sig_01",
+	camo_active_lmg_standard_base = "loot_lmg_standard_sig_01",
+	camo_active_pistol_standard_base = "loot_pistol_standard_sig_01",
+	camo_active_shotgun_semiauto_base = "loot_shotgun_semi_sig_01",
+	camo_active_smg_accurate_base = "loot_smg_accurate_sig_01",
+	camo_active_smg_standard_base = "loot_smg_standard_sig_01",
+	camo_active_headshot_wrapper = "loot_ar_accurate_sig_01",
+	camo_active_kill_counter_wrapper = "loot_lmg_standard_sig_01",
+	camo_active_kills_without_dying_wrapper = "loot_smg_accurate_sig_01",
+	camo_active_objective_kills_wrapper = "loot_shotgun_semi_sig_01",
+	camo_active_rapid_kills_wrapper = "loot_ar_fastfire_sig_01",
+	camo_active_showstopper_wrapper = "loot_pistol_standard_sig_01",
+	camo_active_take_it_personally_wrapper = "loot_smg_standard_sig_01"
 }
-CoD.WeaponOptionsUtility.GoldCamoRef = 0x6C5B9DFD41304A0
+CoD.WeaponOptionsUtility.GoldCamoRef = "camo_gold"
 CoD.WeaponOptionsUtility.CreateWeaponOptionsTable = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5 )
 	return {
 		camoIndex = f1_arg0,
@@ -267,8 +267,8 @@ CoD.WeaponOptionsUtility.GetWeaponOptionsTableForCategory = function ( f4_arg0, 
 							end
 							local f4_local20 = function ( f5_arg0 )
 								local f5_local0 = f5_arg0.description:get()
-								if f5_local0 ~= 0x0 then
-									if f4_local1 == Enum.eModes[0xBF1DCC8138A9D39] then
+								if f5_local0 ~= "" then
+									if f4_local1 == Enum.eModes.mode_warzone then
 										f5_arg0.description:set( f5_local0 .. "_REVEAL_WZ" )
 									else
 										f5_arg0.description:set( f5_local0 .. "_REVEAL" )
@@ -282,19 +282,19 @@ CoD.WeaponOptionsUtility.GetWeaponOptionsTableForCategory = function ( f4_arg0, 
 									if f4_local11.lootData.owned:get() and not IsBooleanDvarSet( "ui_allowReactiveOnAnyWeapon" ) then
 										local f4_local21 = Engine[0xD97229B24C685D5]( f4_local14, f4_local1 )
 										if f4_local14 ~= f4_local2 and Engine[0xF1FD722970FDBA3]( f4_arg1, f4_local21, f4_local8, f4_local1 ) then
-											f4_local11.unlockDescription:set( Engine[0xF9F1239CFD921FE]( 0x75DC52514B8B26C, CoD.CACUtility.GetUnlockableItemInfoField( f4_local21, f4_local1, "displayName", 0x0 ) ) )
+											f4_local11.unlockDescription:set( Engine[0xF9F1239CFD921FE]( 0x75DC52514B8B26C, CoD.CACUtility.GetUnlockableItemInfoField( f4_local21, f4_local1, "displayName", "" ) ) )
 										elseif f4_local14 ~= f4_local2 and CoD.WeaponOptionsUtility.IsGoldCamoLockedForWeapon( f4_arg1, f4_arg3, f4_local1 ) then
 											f4_local11.unlockDescription:set( Engine[0xF9F1239CFD921FE]( 0xC95F145619C28F0 ) )
 										end
 									end
 									local f4_local21 = CoD.WeaponOptionsUtility.GetActiveCamoRefForCamoRef( f4_local1, f4_local11.ref:get() )
-									if f4_local11.description:get() ~= 0x0 and f4_local21 and f4_local21 ~= 0x0 then
+									if f4_local11.description:get() ~= "" and f4_local21 and f4_local21 ~= "" then
 										local f4_local23 = Engine[0xE00B2F29271C60B]( f4_local21 )
 										if f4_local23 then
 											local f4_local25 = nil
-											if f4_local1 == Enum.eModes[0xBF1DCC8138A9D39] then
+											if f4_local1 == Enum.eModes.mode_warzone then
 												f4_local25 = f4_local23[0x5EA19F62CC07B0]
-											elseif f4_local1 == Enum.eModes[0x3723205FAE52C4A] then
+											elseif f4_local1 == Enum.eModes.mode_zombies then
 												f4_local25 = f4_local23[0x39B49F62AD0BBC]
 											else
 												f4_local25 = f4_local23[0x50E7B988C047D19]
@@ -304,7 +304,7 @@ CoD.WeaponOptionsUtility.GetWeaponOptionsTableForCategory = function ( f4_arg0, 
 											end
 										end
 									end
-									if f4_local14 ~= 0x0 then
+									if f4_local14 ~= "" then
 										f4_local13 = "activeTheme"
 										if not f4_local0[f4_local24][f4_local13] then
 											f4_local0[f4_local24][f4_local13] = {}
@@ -382,14 +382,14 @@ CoD.WeaponOptionsUtility.PurchaseWarzoneCamo = function ( f7_arg0, f7_arg1, f7_a
 	local f7_local0 = Engine.StorageGetBuffer( f7_arg0, Enum.StorageFileType[0xAB0E693244221BC] )
 	if f7_local0 then
 		local f7_local1 = {
-			[0xECD2F25FD60F375] = 42,
-			[0x21D7E71414C058F] = 42,
-			[0x21CA371808F856E] = 28,
-			[0xFE185BE04328801] = 28,
-			[0xBB321718EF0E454] = 14,
-			[0x418D65A32A8D17] = 28,
-			[0x3A681C976E8D9F1] = 21,
-			[0xA9ACE0557715BCE] = 7
+			weapon_assault = 42,
+			weapon_smg = 42,
+			weapon_lmg = 28,
+			weapon_sniper = 28,
+			weapon_cqb = 14,
+			weapon_tactical = 28,
+			weapon_pistol = 21,
+			weapon_launcher = 7
 		}
 		local f7_local2 = 6
 		local f7_local3 = 8
@@ -406,7 +406,7 @@ CoD.WeaponOptionsUtility.PurchaseWarzoneCamo = function ( f7_arg0, f7_arg1, f7_a
 			f7_local10.challengeValue:set( f7_local12 )
 			f7_local10.statValue:set( f7_local12 )
 			f7_local10.challengeTier:set( f7_local10.challengeTier:get() + 1 )
-			if f7_local9 ~= 0x0 then
+			if f7_local9 ~= "" then
 				local f7_local13 = f7_local0.item_stats[f7_arg2][f7_local9]
 				local f7_local14 = f7_local13.challengeValue:get() + 1
 				f7_local13.challengeValue:set( f7_local14 )
@@ -414,7 +414,7 @@ CoD.WeaponOptionsUtility.PurchaseWarzoneCamo = function ( f7_arg0, f7_arg1, f7_a
 				if f7_local14 == f7_local2 then
 					f7_local13.challengeTier:set( 1 )
 				end
-				if f7_local11 ~= 0x0 then
+				if f7_local11 ~= "" then
 					local f7_local15 = f7_local0.item_group_stats[f7_local11][f7_local9]
 					local f7_local16 = f7_local15.challengeValue:get() + 1
 					if f7_local14 == f7_local2 then
@@ -463,16 +463,16 @@ CoD.WeaponOptionsUtility.GetPaintjobOptionsTable = function ( f8_arg0, f8_arg1, 
 		Engine.SetModelValue( Engine.CreateModel( f9_local0, "unlockReward" ), "" )
 		Engine.SetModelValue( Engine.CreateModel( f9_local0, "unlockProgressAndTarget" ), "" )
 		LUI.CreateModelAndInitialize( Engine.CreateModel( f9_local0, "rarityType" ), "rarity", "" )
-		LUI.CreateModelAndInitialize( f9_local0, "unlockSessionMode", Enum.eModes[0xB22E0240605CFFE] )
+		LUI.CreateModelAndInitialize( f9_local0, "unlockSessionMode", Enum.eModes.mode_invalid )
 		table.insert( f8_arg2[f9_arg5], f9_local0 )
 	end
 	
-	if f8_local0 and (Engine.CurrentSessionMode() ~= Enum.eModes[0x3723205FAE52C4A] or Dvar[0x419D338C0DC384C]:get()) then
+	if f8_local0 and (Engine.CurrentSessionMode() ~= Enum.eModes.mode_zombies or Dvar[0x419D338C0DC384C]:get()) then
 		local f8_local3 = f8_local0.itemIndex and f8_local0.itemIndex:get() or CoD.CACUtility.EmptyItemIndex
-		if CoD.CACUtility.GetUnlockableItemInfo( f8_local3, Enum.eModes[0x83EBA96F36BC4E5] ) ~= nil then
+		if CoD.CACUtility.GetUnlockableItemInfo( f8_local3, Enum.eModes.mode_multiplayer ) ~= nil then
 			CoD.perController[f8_arg0].personalizationWeaponIndex = f8_local3
 			local f8_local4 = CoD.CraftUtility.Paintjobs.GetCACPaintjobList( f8_arg0, f8_local3 )
-			f8_local2( f8_local1, 0x5E38D76F9A1A511, 1, Engine[0xF9F1239CFD921FE]( 0xDFFD9B8A1D5E6D4 ), "paintjob_create", "paintjob", Enum.CustomizationPaintjobInvalidID[0x60CAA8D66ED63A5] )
+			f8_local2( f8_local1, 0x5E38D76F9A1A511, 1, Engine[0xF9F1239CFD921FE]( "menu/paintjob_create_new" ), "paintjob_create", "paintjob", Enum.CustomizationPaintjobInvalidID[0x60CAA8D66ED63A5] )
 			for f8_local5 = 1, #f8_local4, 1 do
 				f8_local2( f8_local1, "blacktransparent", f8_local5 + 1, f8_local4[f8_local5].paintjobName, "paintjob_" .. f8_local5, "paintjob", f8_local4[f8_local5].paintjobSlot )
 			end
@@ -502,7 +502,7 @@ CoD.WeaponOptionsUtility.GetWeaponOptionsTable = function ( f10_arg0, f10_arg1, 
 			local f11_local0 = Engine.CreateModel( f10_local8, f11_arg0 )
 			LUI.CreateModelAndInitialize( f11_local0, "ref", f11_arg2 )
 			local f11_local1 = "blacktransparent"
-			local f11_local2 = 0x1D17195D5833BC4
+			local f11_local2 = "mpui/no_attachment"
 			if f11_arg3 ~= CoD.CACUtility.EmptyItemIndex then
 				f11_local1 = CoD.CACUtility.mpPrestigeAttachments[f11_arg0].image
 				f11_local2 = CoD.CACUtility.mpPrestigeAttachments[f11_arg0].name
@@ -518,9 +518,9 @@ CoD.WeaponOptionsUtility.GetWeaponOptionsTable = function ( f10_arg0, f10_arg1, 
 			end
 			f11_local5 = ""
 			if f11_local3 then
-				f11_local5 = Engine[0xF9F1239CFD921FE]( 0xFAE829460B60190, f11_arg0 )
+				f11_local5 = Engine[0xF9F1239CFD921FE]( "menu/requires_weapon_prestige", f11_arg0 )
 			elseif f11_arg2 == CoD.CACUtility.mpPrestigeAttachments[1].ref then
-				f11_local5 = Engine[0xF9F1239CFD921FE]( 0x66658F1A18557C1, Engine.GetItemName( f11_arg1 ) )
+				f11_local5 = Engine[0xF9F1239CFD921FE]( "menu/weapon_prestige_clan_tag", Engine.GetItemName( f11_arg1 ) )
 			elseif f11_arg2 == CoD.CACUtility.mpPrestigeAttachments[2].ref then
 				f11_local5 = Engine[0xF9F1239CFD921FE]( "menu/weapon_prestige_kill_counter", Engine.GetItemName( f11_arg1 ) )
 			end
@@ -547,7 +547,7 @@ CoD.WeaponOptionsUtility.GetWeaponOptionsTable = function ( f10_arg0, f10_arg1, 
 			f11_local6 = f11_local0:create( "type" )
 			f11_local6:set( f10_local7 )
 			f11_local6 = f11_local0:create( "unlockSessionMode" )
-			f11_local6:set( Enum.eModes[0x83EBA96F36BC4E5] )
+			f11_local6:set( Enum.eModes.mode_multiplayer )
 			f11_local6 = f11_local0:create( "rarityType.rarity" )
 			f11_local6:set( "" )
 			table.insert( f10_local0[f10_local7], f11_local0 )
@@ -587,8 +587,8 @@ CoD.WeaponOptionsUtility.GetCamoWeaponOptionIndexFromCamoOptionsIndex = function
 	if f13_local1 then
 		f13_local0 = Engine.TableLookup( CoD.attachmentTable, Enum.attachmentTableColumn_e[0xF088C41316871C0], Enum.attachmentTableColumn_e[0x419575E672F6FA2], f13_local1 )
 		if not f13_local0 then
-			local f13_local2 = CoD.WeaponOptionsUtility.GetActiveCamoRefForCamoRef( Enum.eModes[0x83EBA96F36BC4E5], f13_local1 )
-			if f13_local2 and f13_local2 ~= 0x0 then
+			local f13_local2 = CoD.WeaponOptionsUtility.GetActiveCamoRefForCamoRef( Enum.eModes.mode_multiplayer, f13_local1 )
+			if f13_local2 and f13_local2 ~= "" then
 				local f13_local3 = Engine[0xE00B2F29271C60B]( f13_local2 )
 				if f13_local3 and f13_local3.stages and f13_local3.stages[1] and f13_local3.stages[1][0xEB90A3D94D23B68] then
 					f13_local0 = Engine.TableLookup( CoD.attachmentTable, Enum.attachmentTableColumn_e[0xF088C41316871C0], Enum.attachmentTableColumn_e[0x419575E672F6FA2], f13_local3.stages[1][0xEB90A3D94D23B68] )
@@ -663,7 +663,7 @@ end
 CoD.WeaponOptionsUtility.GetWeaponModelForMode = function ( f20_arg0 )
 	local f20_local0, f20_local1, f20_local2 = CoD.BaseUtility.GetMenuModelModeLoadoutSlot( f20_arg0 )
 	local f20_local3 = nil
-	if f20_local1 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f20_local1 == Enum.eModes.mode_multiplayer then
 		f20_local3 = f20_local0 and f20_local0[f20_local2]
 	else
 		f20_local3 = f20_arg0._model
@@ -674,7 +674,7 @@ end
 CoD.WeaponOptionsUtility.GetWeaponSlotModelForMode = function ( f21_arg0 )
 	local f21_local0, f21_local1, f21_local2 = CoD.BaseUtility.GetMenuModelModeLoadoutSlot( f21_arg0 )
 	local f21_local3 = nil
-	if f21_local1 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f21_local1 == Enum.eModes.mode_multiplayer then
 		f21_local3 = f21_local0[f21_local2] and f21_local0 and f21_local0[f21_local2].weaponModelSlot
 	else
 		f21_local3 = f21_arg0._model.weaponModelSlot
@@ -700,9 +700,9 @@ end
 
 CoD.WeaponOptionsUtility.GetActiveCAmoColumnForMode = function ( f24_arg0 )
 	local f24_local0 = Enum[0x5DD5CC8AEA7314B][0xB0DA2DF6A22B400]
-	if f24_arg0 == Enum.eModes[0x3723205FAE52C4A] then
+	if f24_arg0 == Enum.eModes.mode_zombies then
 		f24_local0 = Enum[0x5DD5CC8AEA7314B][0x5338AAC90E615E8]
-	elseif f24_arg0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f24_arg0 == Enum.eModes.mode_warzone then
 		f24_local0 = Enum[0x5DD5CC8AEA7314B][0x53D7FAC90EE57BC]
 	end
 	return f24_local0
@@ -825,7 +825,7 @@ DataSources.ReticleCategoryTabs = ListHelper_SetupDataSource( "ReticleCategoryTa
 	end
 	table.insert( f34_local0, {
 		models = {
-			tabName = 0x6435D58073CF5BE
+			tabName = "menu/standard"
 		},
 		properties = {
 			filter = "reticle"
@@ -858,7 +858,7 @@ DataSources.WeaponReticles = ListHelper_SetupDataSource( "WeaponReticles", funct
 	local f35_local7 = CoD.CACUtility.EmptyItemIndex
 	local f35_local8 = 0
 	local f35_local9 = nil
-	if f35_local2 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f35_local2 == Enum.eModes.mode_multiplayer then
 		if f35_local5.itemIndex then
 			local f35_local10 = f35_local5.itemIndex:get()
 		end
@@ -874,9 +874,9 @@ DataSources.WeaponReticles = ListHelper_SetupDataSource( "WeaponReticles", funct
 		f35_local0 = CoD.WeaponOptionsUtility.GetWeaponOptionsTableForCategory( f35_arg1.menu, f35_arg0, Enum.eWeaponOptionGroup[0x6C9BD564F3BA48B], f35_local7, f35_local8, true )
 	end
 	if not f35_arg1.menu._reticle then
-		if f35_local2 == Enum.eModes[0x83EBA96F36BC4E5] and f35_local1[f35_local3] and f35_local1[f35_local3].reticleIndex then
+		if f35_local2 == Enum.eModes.mode_multiplayer and f35_local1[f35_local3] and f35_local1[f35_local3].reticleIndex then
 			f35_arg1.menu._reticle = f35_local1[f35_local3].reticleIndex:get()
-		elseif f35_local2 == Enum.eModes[0x3723205FAE52C4A] then
+		elseif f35_local2 == Enum.eModes.mode_zombies then
 			f35_arg1.menu._reticle = CoD.ZMLoadoutUtility.GetReticleIndexForWeaponIndex( f35_arg0, f35_local7 )
 		else
 			f35_arg1.menu._reticle = 0
@@ -1039,7 +1039,7 @@ DataSources.WeaponReticleColor = ListHelper_SetupDataSource( "WeaponReticleColor
 	f36_arg1.colors = {}
 	local f36_local0, f36_local1, f36_local2 = CoD.BaseUtility.GetMenuModelModeLoadoutSlot( f36_arg1.menu )
 	local f36_local3 = nil
-	if f36_local1 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f36_local1 == Enum.eModes.mode_multiplayer then
 		local f36_local4 = f36_local0.classNum:get()
 		local f36_local5 = CoD.CACUtility.GetBaseWeaponLoadoutSlotName( f36_local2 )
 		if not f36_arg1.menu._reticle then
@@ -1051,7 +1051,7 @@ DataSources.WeaponReticleColor = ListHelper_SetupDataSource( "WeaponReticleColor
 			end
 		end
 		f36_local3 = CoD.SafeGetModelValue( f36_local0[CoD.BaseUtility.GetMenuLoadoutListItemSlot( f36_arg1.menu )], "ref" )
-	elseif f36_local1 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f36_local1 == Enum.eModes.mode_zombies then
 		if not f36_arg1.menu._reticle then
 			f36_arg1.menu._reticle = CoD.ZMLoadoutUtility.GetReticleIndexForWeaponIndex( f36_arg0, f36_local0.weaponIndex:get() )
 		end
@@ -1109,7 +1109,7 @@ DataSources.WeaponReticleColor = ListHelper_SetupDataSource( "WeaponReticleColor
 	return f36_arg1.colors
 end, true )
 CoD.WeaponOptionsUtility.WeaponsThatHaveWZCamosButArentAvailableInWZ = {
-	[0xAB1184700CE0AA6] = true
+	special_ballisticknife_t8_dw = true
 }
 DataSources.WeaponOptionsGroups = ListHelper_SetupDataSource( "WeaponOptionsGroups", function ( f37_arg0, f37_arg1 )
 	local f37_local0 = {}
@@ -1117,9 +1117,9 @@ DataSources.WeaponOptionsGroups = ListHelper_SetupDataSource( "WeaponOptionsGrou
 	local f37_local4 = CoD.WeaponOptionsUtility.GetWeaponModelForMode( f37_arg1.menu )
 	local f37_local5 = f37_local4.itemIndex and f37_local4.itemIndex:get() or CoD.CACUtility.EmptyItemIndex
 	local f37_local6 = false
-	if (f37_local2 == Enum.eModes[0xBF1DCC8138A9D39] or f37_local2 == Enum.eModes[0x3723205FAE52C4A]) and f37_local4 and f37_local4.refHash then
+	if (f37_local2 == Enum.eModes.mode_warzone or f37_local2 == Enum.eModes.mode_zombies) and f37_local4 and f37_local4.refHash then
 		local f37_local7 = f37_local4.refHash:get()
-		if f37_local7 ~= 0x4C9BAB69F2A2D2A and f37_local7 == 0x328BAA07BF1D03B then
+		if f37_local7 ~= "lmg_double_t8" and f37_local7 == "tr_leveraction_t8" then
 			
 		else
 			
@@ -1128,12 +1128,12 @@ DataSources.WeaponOptionsGroups = ListHelper_SetupDataSource( "WeaponOptionsGrou
 	if not IsLive() then
 		f37_local6 = true
 	end
-	if f37_local2 == Enum.eModes[0x3723205FAE52C4A] and not CoD.BaseUtility.IsDvarEnabled( "ui_zmEnableMasteryCamos" ) then
+	if f37_local2 == Enum.eModes.mode_zombies and not CoD.BaseUtility.IsDvarEnabled( "ui_zmEnableMasteryCamos" ) then
 		f37_local6 = true
 	end
-	local f37_local7 = CoD.CACUtility.GetUnlockableItemInfo( f37_local5, Enum.eModes[0x83EBA96F36BC4E5] ) ~= nil
-	local f37_local8 = CoD.CACUtility.GetUnlockableItemInfo( f37_local5, Enum.eModes[0xBF1DCC8138A9D39] ) ~= nil
-	local f37_local9 = CoD.CACUtility.GetUnlockableItemInfo( f37_local5, Enum.eModes[0x3723205FAE52C4A] ) ~= nil
+	local f37_local7 = CoD.CACUtility.GetUnlockableItemInfo( f37_local5, Enum.eModes.mode_multiplayer ) ~= nil
+	local f37_local8 = CoD.CACUtility.GetUnlockableItemInfo( f37_local5, Enum.eModes.mode_warzone ) ~= nil
+	local f37_local9 = CoD.CACUtility.GetUnlockableItemInfo( f37_local5, Enum.eModes.mode_zombies ) ~= nil
 	if f37_local4 and f37_local4.refHash and CoD.WeaponOptionsUtility.WeaponsThatHaveWZCamosButArentAvailableInWZ[f37_local4.refHash:get()] then
 		f37_local8 = false
 	end
@@ -1147,46 +1147,46 @@ DataSources.WeaponOptionsGroups = ListHelper_SetupDataSource( "WeaponOptionsGrou
 		local f37_local14 = DataSources.LoadoutBreadcrumbs.getModel( f37_arg0 )
 		f37_local13.breadcrumb = f37_local14.camos
 		f37_local13.originVisible = false
-		f37_local13.origin = 0x0
+		f37_local13.origin = ""
 		f37_local12.models = f37_local13
 		f37_local12.properties = {
 			filter = "camo_loot",
-			mode = Enum.eModes[0xB22E0240605CFFE]
+			mode = Enum.eModes.mode_invalid
 		}
 		f37_local10( f37_local11, f37_local12 )
 	end
 	local f37_local10 = false
 	local f37_local11 = false
-	if f37_local2 == Enum.eModes[0xBF1DCC8138A9D39] then
+	if f37_local2 == Enum.eModes.mode_warzone then
 		if f37_local8 and IsBooleanDvarSet( "ui_ShowWZPersonalization" ) then
 			table.insert( f37_local0, {
 				models = {
-					name = 0xA2DD20750465431,
+					name = "menu/warzone",
 					available = f37_local8,
-					originVisible = f37_local2 ~= Enum.eModes[0xBF1DCC8138A9D39],
+					originVisible = f37_local2 ~= Enum.eModes.mode_warzone,
 					origin = 0x3362A88A174F8CA
 				},
 				properties = {
 					filter = "camo_wz",
-					mode = Enum.eModes[0xBF1DCC8138A9D39],
-					selectIndex = f37_local2 == Enum.eModes[0xBF1DCC8138A9D39]
+					mode = Enum.eModes.mode_warzone,
+					selectIndex = f37_local2 == Enum.eModes.mode_warzone
 				}
 			} )
 		end
 		f37_local10 = true
-	elseif f37_local2 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f37_local2 == Enum.eModes.mode_zombies then
 		if (not (not CoD.isPC or CoD.PCKoreaUtility.ShowKorea15Plus()) or not CoD.isPC) and f37_local9 then
 			table.insert( f37_local0, {
 				models = {
-					name = 0xB06081B8B4567F2,
+					name = "menu/zombies",
 					available = f37_local9,
-					originVisible = f37_local2 ~= Enum.eModes[0x3723205FAE52C4A],
+					originVisible = f37_local2 ~= Enum.eModes.mode_zombies,
 					origin = 0x3111988A155BFAA
 				},
 				properties = {
 					filter = "camo_zm",
-					mode = Enum.eModes[0x3723205FAE52C4A],
-					selectIndex = f37_local2 == Enum.eModes[0x3723205FAE52C4A]
+					mode = Enum.eModes.mode_zombies,
+					selectIndex = f37_local2 == Enum.eModes.mode_zombies
 				}
 			} )
 		end
@@ -1195,45 +1195,45 @@ DataSources.WeaponOptionsGroups = ListHelper_SetupDataSource( "WeaponOptionsGrou
 	if f37_local7 then
 		table.insert( f37_local0, {
 			models = {
-				name = 0x55D96CC762EABDD,
+				name = "menu/multiplayer",
 				available = f37_local7,
-				originVisible = f37_local2 ~= Enum.eModes[0x83EBA96F36BC4E5],
+				originVisible = f37_local2 ~= Enum.eModes.mode_multiplayer,
 				origin = 0x2EC1C88A136A886
 			},
 			properties = {
 				filter = "camo_mp",
-				mode = Enum.eModes[0x83EBA96F36BC4E5],
-				selectIndex = f37_local2 == Enum.eModes[0x83EBA96F36BC4E5]
+				mode = Enum.eModes.mode_multiplayer,
+				selectIndex = f37_local2 == Enum.eModes.mode_multiplayer
 			}
 		} )
 	end
 	if not f37_local10 and f37_local8 and IsBooleanDvarSet( "ui_ShowWZPersonalization" ) then
 		table.insert( f37_local0, {
 			models = {
-				name = 0xA2DD20750465431,
+				name = "menu/warzone",
 				available = f37_local8,
-				originVisible = f37_local2 ~= Enum.eModes[0xBF1DCC8138A9D39],
+				originVisible = f37_local2 ~= Enum.eModes.mode_warzone,
 				origin = 0x3362A88A174F8CA
 			},
 			properties = {
 				filter = "camo_wz",
-				mode = Enum.eModes[0xBF1DCC8138A9D39],
-				selectIndex = f37_local2 == Enum.eModes[0xBF1DCC8138A9D39]
+				mode = Enum.eModes.mode_warzone,
+				selectIndex = f37_local2 == Enum.eModes.mode_warzone
 			}
 		} )
 	end
 	if not f37_local11 and (not (not CoD.isPC or CoD.PCKoreaUtility.ShowKorea15Plus()) or not CoD.isPC) and f37_local9 then
 		table.insert( f37_local0, {
 			models = {
-				name = 0xB06081B8B4567F2,
+				name = "menu/zombies",
 				available = f37_local9,
-				originVisible = f37_local2 ~= Enum.eModes[0x3723205FAE52C4A],
+				originVisible = f37_local2 ~= Enum.eModes.mode_zombies,
 				origin = 0x3111988A155BFAA
 			},
 			properties = {
 				filter = "camo_zm",
-				mode = Enum.eModes[0x3723205FAE52C4A],
-				selectIndex = f37_local2 == Enum.eModes[0x3723205FAE52C4A]
+				mode = Enum.eModes.mode_zombies,
+				selectIndex = f37_local2 == Enum.eModes.mode_zombies
 			}
 		} )
 	end
@@ -1243,7 +1243,7 @@ DataSourceHelpers.PerControllerDataSourceSetup( "WeaponPersonalization", "Weapon
 	local f38_local0 = f38_arg0:create( "weaponItemIndex" )
 	f38_local0:set( 0 )
 	f38_local0 = f38_arg0:create( "weaponRef" )
-	f38_local0:set( 0x0 )
+	f38_local0:set( "" )
 	f38_local0 = f38_arg0:create( "weaponName" )
 	f38_local0:set( "" )
 	f38_local0 = f38_arg0:create( "weaponItemGroup" )
@@ -1277,7 +1277,7 @@ DataSources.WeaponOptionsCamoCategories = DataSourceHelpers.ListSetup( "WeaponOp
 	local f41_local0 = {}
 	local f41_local1 = {
 		refHash = 0xEEEBCB6715E676F,
-		name = 0x365CE85575CA13B
+		name = "mpui/camo"
 	}
 	local f41_local2 = DataSources.LoadoutBreadcrumbs.getModel( f41_arg0 )
 	f41_local1.breadcrumb = f41_local2.basiccamo
@@ -1285,7 +1285,7 @@ DataSources.WeaponOptionsCamoCategories = DataSourceHelpers.ListSetup( "WeaponOp
 	f41_local1.selectIndex = true
 	f41_local2 = {
 		refHash = 0x4675E6BE6454E41,
-		name = 0x2EEF729B41D6347
+		name = "weapon_options/reactive_camo"
 	}
 	local f41_local3 = DataSources.LoadoutBreadcrumbs.getModel( f41_arg0 )
 	f41_local2.breadcrumb = f41_local3.activecamo
@@ -1317,7 +1317,7 @@ DataSources.ActiveCamoStagesList = DataSourceHelpers.ListSetup( "ActiveCamoStage
 	local f42_local2 = CoD.BaseUtility.GetMenuModel( f42_arg1.menu )
 	local f42_local3 = f42_local2.ref:get() or ""
 	local f42_local4 = CoD.WeaponOptionsUtility.GetActiveCamoRefForCamoRef( f42_local1, type( f42_local3 ) and Engine[0xC53F8D38DF9042B]( f42_local3 ) or f42_local3 )
-	if f42_local4 and f42_local4 ~= 0x0 then
+	if f42_local4 and f42_local4 ~= "" then
 		local f42_local5 = Engine[0xE00B2F29271C60B]( f42_local4 )
 		if f42_local5 and f42_local5.stages then
 			local f42_local6 = 0
@@ -1335,7 +1335,7 @@ DataSources.ActiveCamoStagesList = DataSourceHelpers.ListSetup( "ActiveCamoStage
 					f42_local11 = false
 				end
 				local f42_local12 = f42_local5.stages[f42_local8]
-				if not f42_local12["disabled"] or f42_local12["disabled"] ~= 1 then
+				if not f42_local12.disabled or f42_local12.disabled ~= 1 then
 					local f42_local13 = Engine.TableLookup( CoD.CACUtility.CamoOptionsTable, Enum[0x5DD5CC8AEA7314B][0xA6342D60A0D5AAE], Enum[0x5DD5CC8AEA7314B][0xAA94CABDA68EB21], f42_local12[0xEB90A3D94D23B68] )
 					local f42_local14 = Engine[0xF9F1239CFD921FE]( 0x55472550AF1CAB2 )
 					if f42_local11 and f42_local7 < f42_local8 then
@@ -1393,7 +1393,7 @@ DataSources.PurchaseCamoList = ListHelper_SetupDataSource( "PurchaseCamoList", f
 	local f43_local8 = {}
 	table.insert( f43_local8, {
 		models = {
-			displayText = Engine.Localize( 0xD735DA166428851, f43_local0 )
+			displayText = Engine.Localize( "menu/purchase_camo", f43_local0 )
 		},
 		properties = {
 			action = f43_local7
@@ -1422,23 +1422,23 @@ DataSources.WeaponCharmList = ListHelper_SetupDataSource( "WeaponCharmList", fun
 	local f46_local4 = {
 		weaponRef = f46_local3
 	}
-	local f46_local5 = Engine[0xA7E3CD65E63086F]( 0xF2DC7A2FE7EEDC5 )
+	local f46_local5 = Engine[0xA7E3CD65E63086F]( "weaponcharm_list" )
 	if f46_local5 then
 		for f46_local16, f46_local17 in ipairs( f46_local5 ) do
 			if f46_local16 ~= 1 then
-				local f46_local9 = CoD.BlackMarketTableUtility.LootInfoLookup( f46_arg0, f46_local17["lootid"], f46_local17[0x562938AF86028A0], f46_local4 )
+				local f46_local9 = CoD.BlackMarketTableUtility.LootInfoLookup( f46_arg0, f46_local17.lootid, f46_local17[0x562938AF86028A0], f46_local4 )
 				local f46_local10 = f46_local9.isLoot or f46_local9.isEntitlement
 				if f46_local9.owned and f46_local10 then
 					local f46_local11 = table.insert
 					local f46_local12 = f46_local0
 					local f46_local13 = {}
 					local f46_local14 = {
-						displayName = f46_local17[0x55F116BF695C8F6] and Engine[0xF9F1239CFD921FE]( f46_local17[0x55F116BF695C8F6] ) or "",
-						category = 0xF5E657D5E5ED4E7,
-						icon = f46_local17[0xBFF4CC56C2092F0] or "blacktransparent",
+						displayName = f46_local17.displayname and Engine[0xF9F1239CFD921FE]( f46_local17.displayname ) or "",
+						category = "mpui/bm_weapon_charm",
+						icon = f46_local17.icon or "blacktransparent",
 						itemIndex = f46_local16 - 1,
-						frontendModel = f46_local17["charmfrontendmodel"] and Engine[0xC53F8D38DF9042B]( f46_local17["charmfrontendmodel"] ) or 0x0,
-						description = f46_local17["description"] and Engine[0xF9F1239CFD921FE]( f46_local17["description"] ) or "",
+						frontendModel = f46_local17.charmfrontendmodel and Engine[0xC53F8D38DF9042B]( f46_local17.charmfrontendmodel ) or "",
+						description = f46_local17.description and Engine[0xF9F1239CFD921FE]( f46_local17.description ) or "",
 						isEquippedFn = CoD.WeaponOptionsUtility.IsWeaponCharmEquipped,
 						isNewFn = CoD.BreadcrumbUtility.IsWeaponAccessoryNew,
 						unlockInfo = f46_local9.unlockInfo or ""
@@ -1472,7 +1472,7 @@ DataSources.WeaponCharmList = ListHelper_SetupDataSource( "WeaponCharmList", fun
 						f46_local15 = f46_local9.isEntitlement or false
 					end
 					f46_local14.hideRarity = f46_local15
-					f46_local14.lootId = f46_local17["lootid"]
+					f46_local14.lootId = f46_local17.lootid
 					f46_local13.models = f46_local14
 					f46_local11( f46_local12, f46_local13 )
 				end
@@ -1485,10 +1485,10 @@ DataSources.WeaponCharmList = ListHelper_SetupDataSource( "WeaponCharmList", fun
 	end
 	local f46_local7 = Engine.GetItemName( f46_local6 )
 	local f46_local8 = function ( f47_arg0, f47_arg1, f47_arg2 )
-		local f47_local0 = 0x1D17195D5833BC4
+		local f47_local0 = "mpui/no_attachment"
 		local f47_local1 = "blacktransparent"
 		local f47_local2 = 0
-		local f47_local3 = 0x0
+		local f47_local3 = ""
 		if CoD.CACUtility.mpPrestigeAttachments[f47_arg0] then
 			f47_local0 = CoD.CACUtility.mpPrestigeAttachments[f47_arg0].name
 			f47_local1 = CoD.CACUtility.mpPrestigeAttachments[f47_arg0].image
@@ -1498,29 +1498,29 @@ DataSources.WeaponCharmList = ListHelper_SetupDataSource( "WeaponCharmList", fun
 		local f47_local4 = CoD.CACUtility.GetWeaponPLevel( f46_arg0, f46_local6 ) < f47_local2
 		local f47_local5 = ""
 		if f47_local4 then
-			f47_local5 = Engine[0xF9F1239CFD921FE]( 0xFAE829460B60190, f47_local2 )
+			f47_local5 = Engine[0xF9F1239CFD921FE]( "menu/requires_weapon_prestige", f47_local2 )
 		else
 			f47_local5 = Engine[0xF9F1239CFD921FE]( f47_local3, f46_local7 )
 		end
 		return {
 			models = {
 				displayName = Engine[0xF9F1239CFD921FE]( f47_local0 ),
-				category = 0x0,
+				category = "",
 				icon = f47_local1,
 				itemIndex = f47_arg2,
-				frontendModel = 0x0,
+				frontendModel = "",
 				description = "",
 				isEquippedFn = CoD.WeaponOptionsUtility.IsPrestigeAttachmentEquipped,
 				unlockInfo = f47_local5,
 				isLocked = f47_local4,
 				isPrestigeAttachment = true,
 				hideRarity = true,
-				lootId = 0x0
+				lootId = ""
 			}
 		}
 	end
 	
-	if (f46_local2 == Enum.eModes[0x83EBA96F36BC4E5] or f46_local2 == Enum.eModes[0x3723205FAE52C4A]) and f46_local6 > CoD.CACUtility.EmptyItemIndex then
+	if (f46_local2 == Enum.eModes.mode_multiplayer or f46_local2 == Enum.eModes.mode_zombies) and f46_local6 > CoD.CACUtility.EmptyItemIndex then
 		for f46_local10, f46_local11 in ipairs( CoD.CACUtility.mpPrestigeAttachments ) do
 			if f46_local11.ref then
 				table.insert( f46_local0, f46_local10, f46_local8( f46_local10, f46_local11.ref, Engine.GetAttachmentIndexByAttachmentTableIndex( f46_local6, f46_local11.itemIndex ) ) )
@@ -1551,11 +1551,11 @@ DataSources.WeaponDeathFxList = ListHelper_SetupDataSource( "WeaponDeathFxList",
 	if f49_local5 then
 		for f49_local17, f49_local18 in ipairs( f49_local5 ) do
 			if f49_local17 ~= 1 then
-				local f49_local9 = CoD.BlackMarketTableUtility.LootInfoLookup( f49_arg0, f49_local18["lootid"], f49_local18[0x562938AF86028A0], f49_local4 )
+				local f49_local9 = CoD.BlackMarketTableUtility.LootInfoLookup( f49_arg0, f49_local18.lootid, f49_local18[0x562938AF86028A0], f49_local4 )
 				local f49_local10 = f49_local9.isLoot or f49_local9.isEntitlement
 				if f49_local9.owned and f49_local10 then
 					local f49_local11 = true
-					if f49_local18["lootid"] == 0x9A9BD2389B3C356 and CoD.BaseUtility.IsDvarEnabled( "ui_hideRavenDeathFX" ) then
+					if f49_local18.lootid == "loot_weapon_deathfx_raven" and CoD.BaseUtility.IsDvarEnabled( "ui_hideRavenDeathFX" ) then
 						f49_local11 = false
 					end
 					if f49_local11 then
@@ -1563,10 +1563,10 @@ DataSources.WeaponDeathFxList = ListHelper_SetupDataSource( "WeaponDeathFxList",
 						local f49_local13 = f49_local0
 						local f49_local14 = {}
 						local f49_local15 = {
-							displayName = Engine[0xF9F1239CFD921FE]( f49_local18[0x55F116BF695C8F6] ),
-							category = 0x7B491E0F2A8C286
+							displayName = Engine[0xF9F1239CFD921FE]( f49_local18.displayname ),
+							category = "mpui/bm_death_fx"
 						}
-						local f49_local16 = f49_local18[0xBFF4CC56C2092F0]
+						local f49_local16 = f49_local18.icon
 						if not f49_local16 then
 							f49_local16 = "blacktransparent"
 						end
@@ -1619,7 +1619,7 @@ DataSources.WeaponDeathFxList = ListHelper_SetupDataSource( "WeaponDeathFxList",
 							end
 						end
 						f49_local15.hideRarity = f49_local16
-						f49_local15.lootId = f49_local18["lootid"]
+						f49_local15.lootId = f49_local18.lootid
 						f49_local14.models = f49_local15
 						f49_local12( f49_local13, f49_local14 )
 					end
@@ -1639,16 +1639,16 @@ end, true, {
 DataSources.WeaponAccessoriesCategories = ListHelper_SetupDataSource( "WeaponAccessoriesCategories", function ( f51_arg0, f51_arg1 )
 	local f51_local0 = {}
 	local f51_local1 = CoD.WeaponOptionsUtility.GetWeaponModelForMode( f51_arg1.menu )
-	local f51_local2 = f51_local1.refHash:get() == 0xB2CB0CDA291AE11
+	local f51_local2 = f51_local1.refHash:get() == "tr_flechette_t8"
 	local f51_local3 = {
 		{
-			tabName = 0xFA6E6FE616EF67,
+			tabName = "menu/accessories",
 			tabWidget = "CoD.WeaponAccessoriesSelectInternal"
 		}
 	}
 	if not f51_local2 then
 		table.insert( f51_local3, {
-			tabName = 0xD527320A0F9B5A,
+			tabName = "menu/death_effects",
 			tabWidget = "CoD.WeaponDeathFxSelectInternal"
 		} )
 	end
@@ -1679,7 +1679,7 @@ CoD.WeaponOptionsUtility.IsCACPersonalizationProgressionEnabled = function ( f52
 		if f52_local1 then
 			f52_local0 = f52_local1:get()
 		end
-		if f52_local0 and f52_local0 >= Enum.eModes[0x85320C1E5C16613] and f52_local0 < Enum.eModes[0x96642BDE9B5962E] and (not (f52_local0 ~= Enum.eModes[0x83EBA96F36BC4E5] or not IsLive()) or f52_local0 == Enum.eModes[0x3723205FAE52C4A] and IsLive()) then
+		if f52_local0 and f52_local0 >= Enum.eModes[0x85320C1E5C16613] and f52_local0 < Enum.eModes[0x96642BDE9B5962E] and (not (f52_local0 ~= Enum.eModes.mode_multiplayer or not IsLive()) or f52_local0 == Enum.eModes.mode_zombies and IsLive()) then
 			return true
 		end
 	end
@@ -1709,7 +1709,7 @@ CoD.WeaponOptionsUtility.GetWeaponOptionItemInfo = function ( f53_arg0, f53_arg1
 			end
 			local f53_local7
 			if f53_local9 == Enum.eWeaponOptionGroup[0x6C9BD564F3BA48B] then
-				if f53_local1 == Enum.eModes[0x83EBA96F36BC4E5] then
+				if f53_local1 == Enum.eModes.mode_multiplayer then
 					local f53_local11 = CoD.BaseUtility.GetMenuLoadoutListItemSlot( f53_arg0 )
 					if f53_local0[f53_local11] then
 						f53_local7 = Engine.GetItemAttachment( CoD.SafeGetModelValue( f53_local0[f53_local2], "itemIndex" ), CoD.SafeGetModelValue( f53_local0[f53_local11], "itemIndex" ) )
@@ -1871,9 +1871,9 @@ end
 
 CoD.WeaponOptionsUtility.IsWeaponOptionEquipped = function ( f61_arg0, f61_arg1, f61_arg2, f61_arg3 )
 	local f61_local0 = CoD.BaseUtility.GetMenuSessionMode( f61_arg0 )
-	if f61_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	if f61_local0 == Enum.eModes.mode_zombies then
 		return CoD.ZMLoadoutUtility.IsWeaponOptionEquipped( f61_arg0, f61_arg1, f61_arg2, f61_arg3 )
-	elseif f61_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f61_local0 == Enum.eModes.mode_warzone then
 		return CoD.WZUtility.IsWeaponOptionEquipped( f61_arg0, f61_arg1, f61_arg2, f61_arg3 )
 	end
 	local f61_local1 = f61_arg1:getModel()
@@ -1913,9 +1913,9 @@ end
 CoD.WeaponOptionsUtility.IsWeaponSignatureThemeEquipped = function ( f62_arg0, f62_arg1, f62_arg2, f62_arg3 )
 	local f62_local0 = f62_arg1:getModel()
 	local f62_local1, f62_local2, f62_local3 = CoD.BaseUtility.GetMenuModelModeLoadoutSlot( f62_arg0 )
-	if f62_local2 == Enum.eModes[0x3723205FAE52C4A] then
+	if f62_local2 == Enum.eModes.mode_zombies then
 		return CoD.ZMLoadoutUtility.IsWeaponOptionEquipped( f62_arg0, f62_arg1, f62_arg2, f62_arg3 )
-	elseif f62_local2 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f62_local2 == Enum.eModes.mode_warzone then
 		return CoD.WZUtility.IsWeaponOptionEquipped( f62_arg0, f62_arg1, f62_arg2, f62_arg3 )
 	elseif f62_local0 and f62_local1[f62_local3] and f62_local1[f62_local3].weaponModelSlot then
 		return f62_local0.signatureWeaponModelSlot:get() == f62_local1[f62_local3].weaponModelSlot:get()
@@ -1940,8 +1940,8 @@ CoD.WeaponOptionsUtility.IsWeaponSignatureThemeUnlocked = function ( f63_arg0, f
 				local f63_local8 = f63_local4.signatureWeaponModelSlot:get()
 				if f63_local7 then
 					for f63_local17, f63_local18 in pairs( Engine[0x9F0BB7D52A7A978]( f63_local7 ) ) do
-						if f63_local18["index"] == f63_local8 then
-							local f63_local12, f63_local13 = CoD.BlackMarketTableUtility[0x5DDB72D0172A035]( f63_arg2, f63_local18["lootid"] )
+						if f63_local18.index == f63_local8 then
+							local f63_local12, f63_local13 = CoD.BlackMarketTableUtility[0x5DDB72D0172A035]( f63_arg2, f63_local18.lootid )
 							if f63_local12 then
 								return f63_local13
 							end
@@ -1957,7 +1957,7 @@ CoD.WeaponOptionsUtility.IsWeaponSignatureThemeUnlocked = function ( f63_arg0, f
 								return false
 							else
 								local f63_local16
-								if f63_local18[0x562938AF86028A0] ~= 0x0 then
+								if f63_local18[0x562938AF86028A0] ~= "" then
 									f63_local16 = Engine.HasEntitlement( f63_arg2, f63_local18[0x562938AF86028A0] )
 								else
 									f63_local16 = true
@@ -1976,7 +1976,7 @@ end
 
 CoD.WeaponOptionsUtility.ShouldHideMasteryCamos = function ( f64_arg0 )
 	local f64_local0
-	if CoD.BaseUtility.GetMenuSessionMode( f64_arg0 ) == Enum.eModes[0x3723205FAE52C4A] and DataSources.WeaponOptions.getCurrentFilterItem() == "camo_zm" then
+	if CoD.BaseUtility.GetMenuSessionMode( f64_arg0 ) == Enum.eModes.mode_zombies and DataSources.WeaponOptions.getCurrentFilterItem() == "camo_zm" then
 		f64_local0 = not CoD.BaseUtility.IsDvarEnabled( "ui_zmEnableMasteryCamos" )
 	else
 		f64_local0 = false
@@ -1991,7 +1991,7 @@ CoD.WeaponOptionsUtility.ShouldHidePaintjobCamos = function ( f65_arg0, f65_arg1
 		return true
 	else
 		local f65_local2
-		if f65_local0 ~= Enum.eModes[0xBF1DCC8138A9D39] or f65_local1 ~= "camo_wz" then
+		if f65_local0 ~= Enum.eModes.mode_warzone or f65_local1 ~= "camo_wz" then
 			f65_local2 = false
 		else
 			f65_local2 = true
@@ -2097,7 +2097,7 @@ end
 CoD.WeaponOptionsUtility.IsInCurrentModeFilter = function ( f73_arg0, f73_arg1, f73_arg2 )
 	local f73_local0 = CoD.BaseUtility.GetMenuSessionMode( f73_arg0 )
 	local f73_local1 = DataSources.WeaponOptions.getCurrentFilterItem()
-	if f73_local0 and f73_local1 and (not (f73_local0 ~= Enum.eModes[0x83EBA96F36BC4E5] or f73_local1 ~= "camo_mp") or not (f73_local0 ~= Enum.eModes[0xBF1DCC8138A9D39] or f73_local1 ~= "camo_wz") or f73_local0 == Enum.eModes[0x3723205FAE52C4A] and f73_local1 == "camo_zm") then
+	if f73_local0 and f73_local1 and (not (f73_local0 ~= Enum.eModes.mode_multiplayer or f73_local1 ~= "camo_mp") or not (f73_local0 ~= Enum.eModes.mode_warzone or f73_local1 ~= "camo_wz") or f73_local0 == Enum.eModes.mode_zombies and f73_local1 == "camo_zm") then
 		return true
 	else
 		return false
@@ -2126,7 +2126,7 @@ CoD.WeaponOptionsUtility.IsWeaponOptionInfoUnlockedAndRevealed = function ( f76_
 end
 
 CoD.WeaponOptionsUtility.IsPrestigeAttachmentEquipped = function ( f77_arg0, f77_arg1, f77_arg2, f77_arg3 )
-	if CoD.BaseUtility.GetMenuSessionMode( f77_arg0 ) == Enum.eModes[0x3723205FAE52C4A] then
+	if CoD.BaseUtility.GetMenuSessionMode( f77_arg0 ) == Enum.eModes.mode_zombies then
 		return CoD.ZMLoadoutUtility.IsArmoryPrestigeElementAttachmentEquipped( f77_arg2, f77_arg3, f77_arg0 )
 	else
 		return CoD.CACUtility.IsAttachmentEquippedInCurrentClass( f77_arg0, CoD.SafeGetModelValue( f77_arg2:getModel(), "itemIndex" ) )
@@ -2136,9 +2136,9 @@ end
 CoD.WeaponOptionsUtility.IsWeaponCharmEquipped = function ( f78_arg0, f78_arg1, f78_arg2, f78_arg3 )
 	local f78_local0 = CoD.BaseUtility.GetMenuSessionMode( f78_arg0 )
 	local f78_local1 = f78_arg2:getModel()
-	if f78_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	if f78_local0 == Enum.eModes.mode_zombies then
 		return CoD.ZMLoadoutUtility.IsArmoryWeaponCharmEquipped( f78_arg0, f78_arg2, f78_arg3 )
-	elseif f78_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f78_local0 == Enum.eModes.mode_warzone then
 		return CoD.WZUtility.IsArmoryWeaponCharmEquipped( f78_arg0, f78_arg2, f78_arg3 )
 	else
 		local f78_local2 = CoD.SafeGetModelValue( f78_local1, "itemIndex" )
@@ -2157,16 +2157,16 @@ CoD.WeaponOptionsUtility.IsCharmEquippedForWeapon = function ( f79_arg0, f79_arg
 	local f79_local1 = CoD.CACUtility.EmptyItemIndex
 	local f79_local2 = CoD.BaseUtility.GetMenuModel( f79_arg0 )
 	local f79_local3 = CoD.BaseUtility.GetMenuLoadoutSlot( f79_arg0 )
-	if f79_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	if f79_local0 == Enum.eModes.mode_zombies then
 		f79_local1 = CoD.ZMLoadoutUtility.GetArmoryCharmItem( f79_arg0, f79_arg1 )
-	elseif f79_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f79_local0 == Enum.eModes.mode_warzone then
 		return CoD.CACUtility.EmptyItemIndex < CoD.WZUtility.GetArmoryCharmItem( f79_arg0, f79_arg1 )
 	elseif f79_local2 and f79_local2[f79_local3] then
 		f79_local1 = f79_local2[f79_local3 .. ".charmIndex"]:get()
 	end
 	if CoD.CACUtility.EmptyItemIndex < f79_local1 then
 		return true
-	elseif f79_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f79_local0 == Enum.eModes.mode_zombies then
 		return CoD.CACUtility.EmptyItemIndex < CoD.ZMLoadoutUtility.GetArmoryPrestigeAttachmentIndex( f79_arg0, f79_arg1 )
 	end
 	local f79_local4 = CoD.CACUtility.primaryWeaponPrestigeSlot
@@ -2183,9 +2183,9 @@ end
 CoD.WeaponOptionsUtility.IsDeathFxEquipped = function ( f80_arg0, f80_arg1, f80_arg2, f80_arg3 )
 	local f80_local0 = CoD.BaseUtility.GetMenuSessionMode( f80_arg0 )
 	local f80_local1 = f80_arg2:getModel()
-	if f80_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	if f80_local0 == Enum.eModes.mode_zombies then
 		return CoD.ZMLoadoutUtility.IsArmoryWeaponDeathFxEquipped( f80_arg0, f80_arg2, f80_arg3 )
-	elseif f80_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f80_local0 == Enum.eModes.mode_warzone then
 		return CoD.WZUtility.IsArmoryWeaponDeathFxEquipped( f80_arg0, f80_arg2, f80_arg3 )
 	else
 		local f80_local2 = CoD.SafeGetModelValue( f80_local1, "itemIndex" )
@@ -2202,9 +2202,9 @@ end
 CoD.WeaponOptionsUtility.IsDeathFxEquippedForWeapon = function ( f81_arg0, f81_arg1 )
 	local f81_local0 = CoD.BaseUtility.GetMenuSessionMode( f81_arg0 )
 	local f81_local1 = CoD.CACUtility.EmptyItemIndex
-	if f81_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	if f81_local0 == Enum.eModes.mode_zombies then
 		f81_local1 = CoD.ZMLoadoutUtility.GetArmoryDeathFx( f81_arg0, f81_arg1 )
-	elseif f81_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f81_local0 == Enum.eModes.mode_warzone then
 		f81_local1 = CoD.WZUtility.GetArmoryDeathFx( f81_arg0, f81_arg1 )
 	else
 		local f81_local2 = CoD.BaseUtility.GetMenuModel( f81_arg0 )
@@ -2217,15 +2217,15 @@ CoD.WeaponOptionsUtility.IsDeathFxEquippedForWeapon = function ( f81_arg0, f81_a
 end
 
 CoD.WeaponOptionsUtility.ExcludedShippedDeathFxWeapons = {
-	[0xB0E53F588197120] = true,
-	[0x83455A968205009] = true,
-	[0xB2CB0CDA291AE11] = true,
-	[0x8A2B56939A972EE] = true
+	launcher_standard_t8 = true,
+	knife_loadout = true,
+	tr_flechette_t8 = true,
+	special_crossbow_t8 = true
 }
 CoD.WeaponOptionsUtility.CanEquipDeathFxForWeapon = function ( f82_arg0 )
 	local f82_local0 = CoD.GetCustomization( f82_arg0, "weaponRefHash" )
 	local f82_local1, f82_local2 = CoD.BlackMarketTableUtility.SimpleLootLookup( f82_arg0, f82_local0, nil )
-	if f82_local1 == CoD.BlackMarketTableUtility.SimpleLootLookupTypes[0xC0D17BAD169557B] or CoD.BlackMarketUtility.IsCurrentLootSeasonAtLeast( 5 ) then
+	if f82_local1 == CoD.BlackMarketTableUtility.SimpleLootLookupTypes.none or CoD.BlackMarketUtility.IsCurrentLootSeasonAtLeast( 5 ) then
 		return not CoD.WeaponOptionsUtility.ExcludedShippedDeathFxWeapons[f82_local0]
 	else
 		return false
@@ -2233,12 +2233,12 @@ CoD.WeaponOptionsUtility.CanEquipDeathFxForWeapon = function ( f82_arg0 )
 end
 
 CoD.WeaponOptionsUtility.ExcludedShippedCharmWeapons = {
-	[0x8A2B56939A972EE] = true
+	special_crossbow_t8 = true
 }
 CoD.WeaponOptionsUtility.CanEquipCharmForWeapon = function ( f83_arg0 )
 	local f83_local0 = CoD.GetCustomization( f83_arg0, "weaponRefHash" )
 	local f83_local1, f83_local2 = CoD.BlackMarketTableUtility.SimpleLootLookup( f83_arg0, f83_local0, nil )
-	if f83_local1 == CoD.BlackMarketTableUtility.SimpleLootLookupTypes[0xC0D17BAD169557B] or CoD.BlackMarketUtility.IsCurrentLootSeasonAtLeast( 5 ) then
+	if f83_local1 == CoD.BlackMarketTableUtility.SimpleLootLookupTypes.none or CoD.BlackMarketUtility.IsCurrentLootSeasonAtLeast( 5 ) then
 		return not CoD.WeaponOptionsUtility.ExcludedShippedCharmWeapons[f83_local0]
 	else
 		return false
@@ -2250,7 +2250,7 @@ CoD.WeaponOptionsUtility.SetupWeaponPersonalizationMenuModels = function ( f84_a
 	local f84_local1 = CoD.BaseUtility.GetMenuSessionMode( f84_arg0 )
 	if f84_local0 then
 		local f84_local2 = 0
-		local f84_local3 = 0x0
+		local f84_local3 = ""
 		local f84_local4 = ""
 		local f84_local5 = ""
 		local f84_local6 = 0
@@ -2261,18 +2261,18 @@ CoD.WeaponOptionsUtility.SetupWeaponPersonalizationMenuModels = function ( f84_a
 			f84_local3 = f84_local8.refHash:get()
 			f84_local5 = Engine.GetItemGroup( f84_local2 )
 		end
-		if f84_local1 == Enum.eModes[0x83EBA96F36BC4E5] then
+		if f84_local1 == Enum.eModes.mode_multiplayer then
 			f84_local4 = f84_local8.name:get()
 		else
 			local f84_local9 = Engine[0x9F0BB7D52A7A978]( f84_local3 )
 			local f84_local10 = nil
-			if f84_local1 == Enum.eModes[0x3723205FAE52C4A] then
+			if f84_local1 == Enum.eModes.mode_zombies then
 				f84_local10 = CoD.ZMLoadoutUtility.GetWeaponModelSlot( f84_local2, f84_arg1 )
-			elseif f84_local1 == Enum.eModes[0xBF1DCC8138A9D39] then
+			elseif f84_local1 == Enum.eModes.mode_warzone then
 				f84_local10 = CoD.WZUtility.GetWeaponModelSlot( f84_local2, f84_arg1 )
 			end
 			if f84_local10 ~= CoD.CACUtility.EmptyItemIndex and f84_local9[f84_local10 + 1] then
-				f84_local4 = Engine[0xF9F1239CFD921FE]( f84_local9[f84_local10 + 1][0x55F116BF695C8F6] )
+				f84_local4 = Engine[0xF9F1239CFD921FE]( f84_local9[f84_local10 + 1].displayname )
 			end
 		end
 		local f84_local9 = f84_local0:create( "weaponItemIndex" )
@@ -2283,10 +2283,10 @@ CoD.WeaponOptionsUtility.SetupWeaponPersonalizationMenuModels = function ( f84_a
 		f84_local9:set( f84_local4 )
 		f84_local9 = f84_local0:create( "weaponItemGroup" )
 		f84_local9:set( f84_local5 )
-		if f84_local1 == Enum.eModes[0x3723205FAE52C4A] then
+		if f84_local1 == Enum.eModes.mode_zombies then
 			f84_local6 = CoD.ZMLoadoutUtility.GetArmoryCharmItem( f84_arg0, f84_arg1 )
 			f84_local7 = CoD.ZMLoadoutUtility.GetArmoryDeathFx( f84_arg0, f84_arg1 )
-		elseif f84_local1 == Enum.eModes[0xBF1DCC8138A9D39] then
+		elseif f84_local1 == Enum.eModes.mode_warzone then
 			f84_local6 = CoD.WZUtility.GetArmoryCharmItem( f84_arg0, f84_arg1 )
 			f84_local7 = CoD.WZUtility.GetArmoryDeathFx( f84_arg0, f84_arg1 )
 		else
@@ -2308,9 +2308,9 @@ CoD.WeaponOptionsUtility.GetWeaponAccessoryIconForItemIndex = function ( f85_arg
 		local f85_local1 = CoD.BaseUtility.GetMenuSessionMode( f85_arg0 )
 		local f85_local2 = CoD.CACUtility.EmptyItemIndex
 		local f85_local3 = CoD.GetCustomization( f85_arg1, "weapon_index" )
-		if f85_local1 == Enum.eModes[0x3723205FAE52C4A] then
+		if f85_local1 == Enum.eModes.mode_zombies then
 			f85_local2 = CoD.ZMLoadoutUtility.GetArmoryPrestigeAttachmentIndex( f85_arg0, f85_arg1 )
-		elseif f85_local1 == Enum.eModes[0x83EBA96F36BC4E5] then
+		elseif f85_local1 == Enum.eModes.mode_multiplayer then
 			local f85_local4 = CoD.BaseUtility.GetMenuModel( f85_arg0 )
 			local f85_local5 = CoD.BaseUtility.GetMenuLoadoutSlot( f85_arg0 )
 			if f85_local4 and f85_local4[f85_local5] then
@@ -2333,11 +2333,11 @@ CoD.WeaponOptionsUtility.GetWeaponAccessoryIconForItemIndex = function ( f85_arg
 		end
 		return "blacktransparent"
 	end
-	local f85_local1 = Engine[0xA7E3CD65E63086F]( 0xF2DC7A2FE7EEDC5 )
+	local f85_local1 = Engine[0xA7E3CD65E63086F]( "weaponcharm_list" )
 	if f85_local1 then
 		for f85_local5, f85_local6 in ipairs( f85_local1 ) do
 			if f85_local5 - 1 == f85_local0 then
-				return f85_local6[0xBFF4CC56C2092F0] and Engine[0xC53F8D38DF9042B]( f85_local6[0xBFF4CC56C2092F0] ) or "blacktransparent"
+				return f85_local6.icon and Engine[0xC53F8D38DF9042B]( f85_local6.icon ) or "blacktransparent"
 			end
 		end
 	end
@@ -2351,7 +2351,7 @@ CoD.WeaponOptionsUtility.GetWeaponDeathFxIconForItemIndex = function ( f86_arg0 
 		if f86_local1 then
 			for f86_local5, f86_local6 in ipairs( f86_local1 ) do
 				if f86_local5 - 1 == f86_local0 then
-					return f86_local6[0xBFF4CC56C2092F0] and Engine[0xC53F8D38DF9042B]( f86_local6[0xBFF4CC56C2092F0] ) or "blacktransparent"
+					return f86_local6.icon and Engine[0xC53F8D38DF9042B]( f86_local6.icon ) or "blacktransparent"
 				end
 			end
 		end
@@ -2443,9 +2443,9 @@ CoD.WeaponOptionsUtility.SetWeaponOptionClassItem = function ( f92_arg0, f92_arg
 		local f92_local12 = CoD.CraftUtility.GetLoadoutSlot( f92_arg2 )
 		local f92_local13 = "select01"
 		local f92_local14 = nil
-		if f92_local1 == Enum.eModes[0x3723205FAE52C4A] then
+		if f92_local1 == Enum.eModes.mode_zombies then
 			f92_local14 = CoD.WeaponOptionsUtility.GetWeaponOptionsStringFromTable( CoD.ZMLoadoutUtility.GetWeaponOptionsTableForIndex( f92_arg2, CoD.GetCustomization( f92_arg2, "weapon_index" ) ) )
-		elseif f92_local1 == Enum.eModes[0xBF1DCC8138A9D39] then
+		elseif f92_local1 == Enum.eModes.mode_warzone then
 			f92_local14 = CoD.WeaponOptionsUtility.GetWeaponOptionsStringFromTable( CoD.WZUtility.GetWeaponOptionsTableForIndex( f92_arg2, CoD.GetCustomization( f92_arg2, "weapon_index" ) ) )
 		else
 			f92_local14 = CoD.CACUtility.GetWeaponOptionsFromClass( f92_arg2, f92_local0, f92_local2 )
@@ -2519,9 +2519,9 @@ CoD.WeaponOptionsUtility.PreviewSignatureWeaponTheme = function ( f96_arg0, f96_
 		local f96_local6 = f96_local4:get()
 		local f96_local7 = f96_local5:get()
 		local f96_local8 = 0
-		if f96_local1 == Enum.eModes[0x3723205FAE52C4A] then
+		if f96_local1 == Enum.eModes.mode_zombies then
 			f96_local8 = CoD.ZMLoadoutUtility.GetArmoryCharmItemFromWeapon( f96_arg2, CoD.GetCustomization( f96_arg2, "weapon_index" ) )
-		elseif f96_local1 == Enum.eModes[0xBF1DCC8138A9D39] then
+		elseif f96_local1 == Enum.eModes.mode_warzone then
 			f96_local8 = CoD.WZUtility.GetArmoryCharmItemFromWeapon( f96_arg2, CoD.GetCustomization( f96_arg2, "weapon_index" ) )
 		else
 			local f96_local9 = CoD.BaseUtility.GetMenuModel( f96_arg1 )
@@ -2533,7 +2533,7 @@ CoD.WeaponOptionsUtility.PreviewSignatureWeaponTheme = function ( f96_arg0, f96_
 		end
 		local f96_local9 = CoD.WeaponOptionsUtility.GetWeaponOptionsString( f96_local7, 0, 1, f96_local6, 0, f96_local8 )
 		local f96_local10 = ""
-		if f96_local1 == Enum.eModes[0x3723205FAE52C4A] then
+		if f96_local1 == Enum.eModes.mode_zombies then
 			f96_local10 = CoD.ZMLoadoutUtility.GetArmoryAttachmentStringForWeaponIndex( f96_arg2, CoD.GetCustomization( f96_arg2, "weapon_index" ), f96_local1 )
 		end
 		Engine.SendClientScriptNotify( f96_arg2, "CustomClass_update" .. CoD.GetLocalClientAdjustedNum( f96_arg2 ), {
@@ -2630,15 +2630,15 @@ CoD.WeaponOptionsUtility.SetBaseWeaponOptions = function ( f99_arg0, f99_arg1, f
 	local f99_local4 = CoD.CraftUtility.GetLoadoutSlot( f99_arg2 )
 	local f99_local5 = "select01"
 	local f99_local6 = nil
-	if f99_local1 == Enum.eModes[0x3723205FAE52C4A] then
+	if f99_local1 == Enum.eModes.mode_zombies then
 		f99_local6 = CoD.WeaponOptionsUtility.GetWeaponOptionsStringFromTable( CoD.ZMLoadoutUtility.GetWeaponOptionsTableForIndex( f99_arg2, CoD.GetCustomization( f99_arg2, "weapon_index" ) ) )
-	elseif f99_local1 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f99_local1 == Enum.eModes.mode_warzone then
 		f99_local6 = CoD.WeaponOptionsUtility.GetWeaponOptionsStringFromTable( CoD.WZUtility.GetWeaponOptionsTableForIndex( f99_arg2, CoD.GetCustomization( f99_arg2, "weapon_index" ) ) )
 	else
 		f99_local6 = CoD.CACUtility.GetWeaponOptionsFromClass( f99_arg2, f99_local0, f99_local2 )
 	end
 	local f99_local7 = ""
-	if f99_local1 == Enum.eModes[0x3723205FAE52C4A] then
+	if f99_local1 == Enum.eModes.mode_zombies then
 		f99_local7 = CoD.ZMLoadoutUtility.GetArmoryAttachmentStringForWeaponIndex( f99_arg2, CoD.GetCustomization( f99_arg2, "weapon_index" ), f99_local1 )
 	end
 	Engine.SendClientScriptNotify( f99_arg2, "CustomClass_update" .. CoD.GetLocalClientAdjustedNum( f99_arg2 ), {
@@ -2653,7 +2653,7 @@ end
 CoD.WeaponOptionsUtility.SetWeaponPrestigeAttachmentItem = function ( f100_arg0, f100_arg1, f100_arg2, f100_arg3, f100_arg4 )
 	local f100_local0 = CoD.BaseUtility.GetMenuSessionMode( f100_arg0 )
 	local f100_local1 = CoD.SafeGetModelValue( f100_arg2:getModel(), "itemIndex" )
-	if f100_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	if f100_local0 == Enum.eModes.mode_zombies then
 		return CoD.ZMLoadoutUtility.SetArmoryWeaponAccessoryAttachment( f100_arg0, f100_arg3, f100_local1 )
 	else
 		CoD.WeaponOptionsUtility.SetWeaponAccessoryAttachmentItemInternal( f100_arg0, f100_arg3, CoD.SafeGetModelValue( f100_arg2:getModel(), "itemIndex" ), nil, f100_arg4 )
@@ -2663,7 +2663,7 @@ CoD.WeaponOptionsUtility.SetWeaponPrestigeAttachmentItem = function ( f100_arg0,
 end
 
 CoD.WeaponOptionsUtility.ClearWeaponPrestigeAttachmentItem = function ( f101_arg0, f101_arg1, f101_arg2 )
-	if CoD.BaseUtility.GetMenuSessionMode( f101_arg0 ) == Enum.eModes[0x3723205FAE52C4A] then
+	if CoD.BaseUtility.GetMenuSessionMode( f101_arg0 ) == Enum.eModes.mode_zombies then
 		return CoD.ZMLoadoutUtility.SetArmoryWeaponAccessoryAttachment( f101_arg0, f101_arg1, CoD.CACUtility.EmptyItemIndex )
 	else
 		CoD.WeaponOptionsUtility.SetWeaponAccessoryAttachmentItemInternal( f101_arg0, f101_arg1, CoD.CACUtility.EmptyItemIndex, nil, f101_arg2 )
@@ -2677,14 +2677,14 @@ CoD.WeaponOptionsUtility.UpdateWeaponPrestigeAttachment = function ( f102_arg0, 
 	local f102_local5 = CoD.GetCustomization( f102_arg2, "weaponRefHash" )
 	local f102_local6 = ""
 	local f102_local7 = ""
-	if f102_local2 == Enum.eModes[0x3723205FAE52C4A] then
+	if f102_local2 == Enum.eModes.mode_zombies then
 		f102_local6 = CoD.WeaponOptionsUtility.GetWeaponOptionsStringFromTable( CoD.ZMLoadoutUtility.GetWeaponOptionsTableForIndex( f102_arg2, CoD.GetCustomization( f102_arg2, "weapon_index" ) ) )
 		f102_local7 = CoD.ZMLoadoutUtility.GetArmoryAttachmentStringForWeaponIndex( f102_arg2, CoD.GetCustomization( f102_arg2, "weapon_index" ), f102_local2 )
 	else
 		f102_local6 = CoD.CACUtility.GetWeaponOptionsFromClass( f102_arg2, f102_local1, f102_local3 )
 	end
 	f102_local7 = LUI.appendStringWithDelimiter( f102_local7, f102_local0, "+" )
-	if f102_local5 and f102_local5 ~= 0x0 then
+	if f102_local5 and f102_local5 ~= "" then
 		Engine.SendClientScriptNotify( f102_arg2, "CustomClass_update" .. CoD.GetLocalClientAdjustedNum( f102_arg2 ), {
 			base_weapon_slot = f102_local4,
 			weapon = f102_local5,
@@ -2771,7 +2771,7 @@ CoD.WeaponOptionsUtility.PreviewActiveCamoStages = function ( f109_arg0, f109_ar
 	local f109_local6 = "select01"
 	local f109_local7 = ""
 	local f109_local8 = ""
-	if f109_local1 == Enum.eModes[0x3723205FAE52C4A] then
+	if f109_local1 == Enum.eModes.mode_zombies then
 		f109_local8 = CoD.ZMLoadoutUtility.GetArmoryAttachmentStringForWeaponIndex( f109_arg2, f109_local3, f109_local1 )
 	end
 	local f109_local9 = CoD.SafeGetModelValue( f109_arg1:getModel(), "stageCamoIndex" )
@@ -2784,9 +2784,9 @@ CoD.WeaponOptionsUtility.PreviewActiveCamoStages = function ( f109_arg0, f109_ar
 	end
 	local f109_local11 = CoD.SafeGetModelValue( f109_arg1:getModel(), "robStage" ) or 0
 	local f109_local12 = 0
-	if f109_local1 == Enum.eModes[0x3723205FAE52C4A] then
+	if f109_local1 == Enum.eModes.mode_zombies then
 		f109_local12 = CoD.ZMLoadoutUtility.GetArmoryCharmItemFromWeapon( f109_arg2, f109_local3 )
-	elseif f109_local1 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f109_local1 == Enum.eModes.mode_warzone then
 		f109_local12 = CoD.WZUtility.GetArmoryCharmItemFromWeapon( f109_arg2, f109_local3 )
 	else
 		local f109_local13 = f109_arg0._classModel
@@ -2828,7 +2828,7 @@ CoD.WeaponOptionsUtility.EquipWeaponAccessory = function ( f112_arg0, f112_arg1,
 		local f112_local4 = CoD.SafeGetModelValue( f112_local0, "lootId" )
 		local f112_local5 = f112_local3
 		local f112_local6 = f112_local3
-		if f112_local1 == Enum.eModes[0x3723205FAE52C4A] then
+		if f112_local1 == Enum.eModes.mode_zombies then
 			if not f112_local2 then
 				CoD.ZMLoadoutUtility.SetArmoryCharmItem( f112_arg0, f112_arg2, f112_local3 )
 				local f112_local7 = f112_arg0._model
@@ -2841,7 +2841,7 @@ CoD.WeaponOptionsUtility.EquipWeaponAccessory = function ( f112_arg0, f112_arg1,
 				f112_local6 = CoD.CACUtility.EmptyItemIndex
 			end
 			CoD.ZMLoadoutUtility.SetArmoryWeaponAccessoryAttachment( f112_arg0, f112_arg2, f112_local5 )
-		elseif f112_local1 == Enum.eModes[0xBF1DCC8138A9D39] then
+		elseif f112_local1 == Enum.eModes.mode_warzone then
 			CoD.WZUtility.SetArmoryCharmItem( f112_arg0, f112_arg2, f112_local3 )
 		else
 			local f112_local7 = CoD.BaseUtility.GetMenuModel( f112_arg0 )
@@ -2864,10 +2864,10 @@ CoD.WeaponOptionsUtility.EquipWeaponAccessory = function ( f112_arg0, f112_arg1,
 		end
 		Engine[0xE6C09FDF6C8D188]( f112_arg2, f112_local1 )
 		f112_arg1:playSound( "equip_item" )
-		if f112_local4 and f112_local4 ~= 0x0 then
-			Engine[0xDE279ECDDDD966]( f112_arg2, 0xCD849658F801A88, {
-				[0xAB83A8CC61E6325] = f112_local4,
-				[0xA4F18CFDFE19A20] = "weapon charm"
+		if f112_local4 and f112_local4 ~= "" then
+			Engine[0xDE279ECDDDD966]( f112_arg2, "dlog_event_loot_equip", {
+				loot_id = f112_local4,
+				loot_data = "weapon charm"
 			} )
 		end
 		local f112_local7 = DataSources.WeaponPersonalization.getModel( f112_arg2 )
@@ -2881,10 +2881,10 @@ end
 
 CoD.WeaponOptionsUtility.ClearWeaponAccessory = function ( f113_arg0, f113_arg1 )
 	local f113_local0 = CoD.BaseUtility.GetMenuSessionMode( f113_arg0 )
-	if f113_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	if f113_local0 == Enum.eModes.mode_zombies then
 		CoD.ZMLoadoutUtility.SetArmoryCharmItem( f113_arg0, f113_arg1, CoD.CACUtility.EmptyItemIndex )
 		CoD.ZMLoadoutUtility.SetArmoryWeaponAccessoryAttachment( f113_arg0, f113_arg1, CoD.CACUtility.EmptyItemIndex )
-	elseif f113_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f113_local0 == Enum.eModes.mode_warzone then
 		CoD.WZUtility.SetArmoryCharmItem( f113_arg0, f113_arg1, CoD.CACUtility.EmptyItemIndex )
 	else
 		local f113_local1 = CoD.BaseUtility.GetMenuModel( f113_arg0 )
@@ -2899,7 +2899,7 @@ CoD.WeaponOptionsUtility.ClearWeaponAccessory = function ( f113_arg0, f113_arg1 
 		end
 		CoD.CACUtility.WeaponPersonalizationUpdated( f113_arg1 )
 	end
-	Engine.PlaySound( "cac_equipment_remove" )
+	Engine.playsound( "cac_equipment_remove" )
 	local f113_local1 = DataSources.WeaponPersonalization.getModel( f113_arg1 )
 	f113_local1.equippedAccessoryIndex:set( CoD.CACUtility.EmptyItemIndex )
 	f113_local1 = DataSources.WeaponPersonalization.getModel( f113_arg1 )
@@ -2914,9 +2914,9 @@ CoD.WeaponOptionsUtility.EquipDeathFx = function ( f114_arg0, f114_arg1, f114_ar
 		local f114_local1 = CoD.BaseUtility.GetMenuSessionMode( f114_arg0 )
 		local f114_local2 = CoD.SafeGetModelValue( f114_local0, "itemIndex" )
 		local f114_local3 = CoD.SafeGetModelValue( f114_local0, "lootId" )
-		if f114_local1 == Enum.eModes[0x3723205FAE52C4A] then
+		if f114_local1 == Enum.eModes.mode_zombies then
 			CoD.ZMLoadoutUtility.SetArmoryDeathFx( f114_arg0, f114_arg2, f114_local2 )
-		elseif f114_local1 == Enum.eModes[0xBF1DCC8138A9D39] then
+		elseif f114_local1 == Enum.eModes.mode_warzone then
 			CoD.WZUtility.SetArmoryDeathFx( f114_arg0, f114_arg2, f114_local2 )
 		else
 			local f114_local4 = CoD.BaseUtility.GetMenuModel( f114_arg0 )
@@ -2929,10 +2929,10 @@ CoD.WeaponOptionsUtility.EquipDeathFx = function ( f114_arg0, f114_arg1, f114_ar
 			end
 			CoD.CACUtility.WeaponPersonalizationUpdated( f114_arg2 )
 		end
-		if f114_local3 and f114_local3 ~= 0x0 then
-			Engine[0xDE279ECDDDD966]( f114_arg2, 0xCD849658F801A88, {
-				[0xAB83A8CC61E6325] = f114_local3,
-				[0xA4F18CFDFE19A20] = "deathfx"
+		if f114_local3 and f114_local3 ~= "" then
+			Engine[0xDE279ECDDDD966]( f114_arg2, "dlog_event_loot_equip", {
+				loot_id = f114_local3,
+				loot_data = "deathfx"
 			} )
 		end
 		f114_arg1:playSound( "equip_item" )
@@ -2945,9 +2945,9 @@ end
 
 CoD.WeaponOptionsUtility.ClearDeathFx = function ( f115_arg0, f115_arg1 )
 	local f115_local0 = CoD.BaseUtility.GetMenuSessionMode( f115_arg0 )
-	if f115_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	if f115_local0 == Enum.eModes.mode_zombies then
 		CoD.ZMLoadoutUtility.SetArmoryDeathFx( f115_arg0, f115_arg1, CoD.CACUtility.EmptyItemIndex )
-	elseif f115_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f115_local0 == Enum.eModes.mode_warzone then
 		CoD.WZUtility.SetArmoryDeathFx( f115_arg0, f115_arg1, CoD.CACUtility.EmptyItemIndex )
 	else
 		local f115_local1 = CoD.BaseUtility.GetMenuModel( f115_arg0 )
@@ -2960,7 +2960,7 @@ CoD.WeaponOptionsUtility.ClearDeathFx = function ( f115_arg0, f115_arg1 )
 		end
 		CoD.CACUtility.WeaponPersonalizationUpdated( f115_arg1 )
 	end
-	Engine.PlaySound( "cac_equipment_remove" )
+	Engine.playsound( "cac_equipment_remove" )
 	local f115_local1 = DataSources.WeaponPersonalization.getModel( f115_arg1 )
 	f115_local1.equippedDeathFxIndex:set( CoD.CACUtility.EmptyItemIndex )
 	f115_local1 = DataSources.WeaponDeathFxList.getModel( f115_arg1 )
@@ -2971,8 +2971,8 @@ CoD.WeaponOptionsUtility.DeathFxCharacterUpdate = function ( f116_arg0, f116_arg
 	local f116_local0 = CoD.BaseUtility.GetMenuSessionMode( f116_arg0 )
 	local f116_local1 = CoD.BaseUtility.GetMenuStorageLoadoutBuffer( f116_arg0 )
 	local f116_local2 = 1
-	if f116_local1 and f116_local1[0x8A76647E94009C3] then
-		local f116_local3 = f116_local1[0x8A76647E94009C3]["characterindex"]:get()
+	if f116_local1 and f116_local1.charactercontext then
+		local f116_local3 = f116_local1.charactercontext.characterindex:get()
 		if not f116_local3 or f116_local3 == 0 then
 			f116_local3 = 1
 		end
@@ -3049,7 +3049,7 @@ CoD.WeaponOptionsUtility.GetWeaponOptionXPIconAlpha = function ( f122_arg0, f122
 end
 
 CoD.WeaponOptionsUtility.GetWeaponPersonalizationHeader = function ( f123_arg0, f123_arg1, f123_arg2 )
-	local f123_local0 = Engine[0xF9F1239CFD921FE]( 0x94122F68876E5D9 )
+	local f123_local0 = Engine[0xF9F1239CFD921FE]( "mpui/personalize_caps" )
 	local f123_local1, f123_local2, f123_local3 = CoD.BaseUtility.GetMenuModelModeLoadoutSlot( f123_arg0 )
 	local f123_local4 = CoD.WeaponOptionsUtility.GetWeaponModelForMode( f123_arg0 )
 	if f123_local4 then
@@ -3061,7 +3061,7 @@ end
 
 CoD.WeaponOptionsUtility.GetCamoStageDetailsHeader = function ( f124_arg0, f124_arg1 )
 	local f124_local0 = f124_arg0._weaponOptionCategory
-	local f124_local1 = 0x0
+	local f124_local1 = ""
 	if f124_local0 == "active" then
 		f124_local1 = 0x3EBF286D00E090E
 	elseif f124_local0 == "theme" then

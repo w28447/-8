@@ -764,7 +764,7 @@ CoD.OverlayUtility.AddSystemOverlay( "RemoveFriendConfirmation", {
 			return {
 				{
 					models = {
-						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xD8FF5E03592FD99 ) )
+						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/confirm" ) )
 					},
 					properties = {
 						actionParam = f57_arg1,
@@ -798,7 +798,7 @@ CoD.OverlayUtility.AddSystemOverlay( "RemoveFriendConfirmation", {
 		end
 		
 	end,
-	[CoD.OverlayUtility.aCrossPromptText] = 0xD8FF5E03592FD99,
+	[CoD.OverlayUtility.aCrossPromptText] = "menu/confirm",
 	[CoD.OverlayUtility.bCirclePromptFn] = function ()
 		return function ( f64_arg0, f64_arg1 )
 			GoBack( f64_arg0, f64_arg1 )

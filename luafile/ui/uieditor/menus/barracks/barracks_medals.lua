@@ -130,12 +130,12 @@ LUI.createMenu.Barracks_Medals = function ( f1_arg0, f1_arg1 )
 			modelName = "lobbyRoot.lobbyNav"
 		} )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		GoBack( self, f13_arg2 )
-		ClearMenuSavedState( f13_arg1 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
+		GoBack( self, controller )
+		ClearMenuSavedState( menu )
 		return true
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 		return true
 	end, false )
 	MedalTabsInternal.id = "MedalTabsInternal"

@@ -92,17 +92,17 @@ CoD.DirectorPreGameButtonContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f12_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( LobbyButtons, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		if not CoD.DirectorUtility.IsDirectorButtonOptionLocked( f13_arg1, f13_arg0, f13_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "trialLocked" ) then
+	f1_arg0:AddButtonCallbackFunction( LobbyButtons, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not CoD.DirectorUtility.IsDirectorButtonOptionLocked( menu, element, controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) then
 			PlaySoundAlias( "uin_press_generic" )
-			ProcessListAction( self, f13_arg0, f13_arg2, f13_arg1 )
+			ProcessListAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		if not CoD.DirectorUtility.IsDirectorButtonOptionLocked( f14_arg1, f14_arg0, f14_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f14_arg0, f14_arg2, "trialLocked" ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not CoD.DirectorUtility.IsDirectorButtonOptionLocked( menu, element, controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

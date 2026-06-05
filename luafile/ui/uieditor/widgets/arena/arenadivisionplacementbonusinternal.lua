@@ -21,7 +21,7 @@ CoD.ArenaDivisionPlacementBonusInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local TiledwhiteNoiseBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledwhiteNoiseBacking:setAlpha( 0.02 )
-	TiledwhiteNoiseBacking:setImage( RegisterImage( 0x7167D8C33A06020 ) )
+	TiledwhiteNoiseBacking:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
 	TiledwhiteNoiseBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledwhiteNoiseBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledwhiteNoiseBacking:setupNineSliceShader( 64, 64 )
@@ -47,7 +47,7 @@ CoD.ArenaDivisionPlacementBonusInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local infoBracketTop = LUI.UIImage.new( 0.5, 0.5, -350, 350, 0, 0, -3, 29 )
 	infoBracketTop:setAlpha( 0.6 )
-	infoBracketTop:setImage( RegisterImage( 0xCAD52FFFB7C32C1 ) )
+	infoBracketTop:setImage( RegisterImage( "uie_ui_menu_aar_common_bracket" ) )
 	infoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketTop:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketTop:setupNineSliceShader( 10, 16 )
@@ -94,7 +94,7 @@ CoD.ArenaDivisionPlacementBonusInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 	local Flare = LUI.UIImage.new( 0.5, 0.5, -350, 350, 0.5, 0.5, -61, 119 )
 	Flare:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	Flare:setScale( 0, 0 )
-	Flare:setImage( RegisterImage( 0xC4CCD81B90B0241 ) )
+	Flare:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
 	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Flare:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Flare )

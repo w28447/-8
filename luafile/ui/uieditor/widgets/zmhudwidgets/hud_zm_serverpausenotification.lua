@@ -11,7 +11,7 @@ CoD.HUD_ZM_ServerPauseNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local Backing = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Backing:setRGB( ColorSet.Disabled.r, ColorSet.Disabled.g, ColorSet.Disabled.b )
 	Backing:setAlpha( 0 )
-	Backing:setMaterial( LUI.UIImage.GetCachedMaterial( 0x92677F19E79D991 ) )
+	Backing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_pass_1" ) )
 	Backing:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( Backing )
 	self.Backing = Backing

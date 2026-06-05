@@ -164,7 +164,7 @@ CoD.SignatureWeaponGridItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		} )
 	end )
 	MastercraftDetailsHintText:setAlpha( 0 )
-	MastercraftDetailsHintText.textCenterAlign:setText( Engine[0xF9F1239CFD921FE]( 0xD087E4011D7527C ) )
+	MastercraftDetailsHintText.textCenterAlign:setText( Engine[0xF9F1239CFD921FE]( "menu/details_button" ) )
 	MastercraftDetailsHintText:linkToElementModel( self, nil, false, function ( model )
 		MastercraftDetailsHintText:setModel( model, f1_arg1 )
 	end )

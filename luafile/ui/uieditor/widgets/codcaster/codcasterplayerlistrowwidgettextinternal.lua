@@ -9,7 +9,7 @@ CoD.CodCasterPlayerListRowWidgetTextInternal.new = function ( f1_arg0, f1_arg1, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Gamertag = LUI.UIText.new( 0, 0, 0, 165, 0.5, 0.5, -7.5, 7.5 )
-	Gamertag:setText( Engine[0xF9F1239CFD921FE]( 0xA67CAA5982ED86C ) )
+	Gamertag:setText( Engine[0xF9F1239CFD921FE]( "demo/menu" ) )
 	Gamertag:setTTF( "notosans_regular" )
 	Gamertag:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( Gamertag )

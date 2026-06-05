@@ -30,13 +30,13 @@ CoD.CustomClassListButtonInGame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	LED:setRGB( 0.77, 0.77, 0.77 )
 	LED:setAlpha( 0.02 )
 	LED:setScale( 1.4, 1.4 )
-	LED:setImage( RegisterImage( 0x33C450A6E985AAC ) )
+	LED:setImage( RegisterImage( "uie_keyprompt_texture_small" ) )
 	self:addElement( LED )
 	self.LED = LED
 	
 	local Frame = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Frame:setScale( 1.25, 1.25 )
-	Frame:setImage( RegisterImage( 0x6BBB6966B2A83CE ) )
+	Frame:setImage( RegisterImage( "uie_keyprompt_frame_small" ) )
 	self:addElement( Frame )
 	self.Frame = Frame
 	

@@ -10,7 +10,7 @@ CoD.leaguePlayEndRankRulesStreaks.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local FireStreakIcon = LUI.UIImage.new( 0, 0, -181, 331, 0, 0, -181, 331 )
 	FireStreakIcon:setScale( 0.46, 0.46 )
-	FireStreakIcon:setImage( RegisterImage( 0x39CD2A8412A4F6 ) )
+	FireStreakIcon:setImage( RegisterImage( "uie_ui_menu_arena_firestreakflipbook" ) )
 	FireStreakIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	FireStreakIcon:setShaderVector( 0, 4, 4, 0, 0 )
 	FireStreakIcon:setShaderVector( 1, 8, 0, 0, 0 )
@@ -18,7 +18,7 @@ CoD.leaguePlayEndRankRulesStreaks.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.FireStreakIcon = FireStreakIcon
 	
 	local StreakIcon = LUI.UIImage.new( 0, 0, 0, 150, 0, 0, 0, 150 )
-	StreakIcon:setImage( RegisterImage( 0x7FDAA868DA4CB7 ) )
+	StreakIcon:setImage( RegisterImage( "uie_ui_icon_mp_league_07_03_large" ) )
 	self:addElement( StreakIcon )
 	self.StreakIcon = StreakIcon
 	

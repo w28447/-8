@@ -8,7 +8,7 @@ CoD.Challenges_CallingCardProfiler_DarkOps.__defaultWidth = 525
 CoD.Challenges_CallingCardProfiler_DarkOps.__defaultHeight = 732
 CoD.Challenges_CallingCardProfiler_DarkOps.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	CoD.BaseUtility.InitControllerModelIfNotSet( f1_arg1, "hudItems.darkOpsModeIcon", 0x0 )
+	CoD.BaseUtility.InitControllerModelIfNotSet( f1_arg1, "hudItems.darkOpsModeIcon", "" )
 	self:setClass( CoD.Challenges_CallingCardProfiler_DarkOps )
 	self.id = "Challenges_CallingCardProfiler_DarkOps"
 	self.soundSet = "ChooseDecal"
@@ -54,7 +54,7 @@ CoD.Challenges_CallingCardProfiler_DarkOps.new = function ( f1_arg0, f1_arg1, f1
 	
 	local DarkOpsTitle = LUI.UIText.new( 0, 1, 16, -16, 0, 0, 525, 561 )
 	DarkOpsTitle:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	DarkOpsTitle:setText( Engine[0xF9F1239CFD921FE]( 0xD3B373F67B75C3D ) )
+	DarkOpsTitle:setText( Engine[0xF9F1239CFD921FE]( "challenge/darkops" ) )
 	DarkOpsTitle:setTTF( "ttmussels_regular" )
 	DarkOpsTitle:setLetterSpacing( 4 )
 	DarkOpsTitle:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -112,7 +112,7 @@ CoD.Challenges_CallingCardProfiler_DarkOps.new = function ( f1_arg0, f1_arg1, f1
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0.5, 0.5, -261, 261, 0, 0, 43, 86 )
 	PixelGridTiledBacking:setAlpha( 0.15 )
-	PixelGridTiledBacking:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )

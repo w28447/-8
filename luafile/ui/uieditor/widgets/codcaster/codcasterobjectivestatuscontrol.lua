@@ -35,7 +35,7 @@ CoD.CodCasterObjectiveStatusControl.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local CodCasterObjectiveStatusControlSiteB2 = CoD.CodCasterObjectiveStatusControlSite.new( f1_arg0, f1_arg1, 0.55, 0.55, -30, 30, 0.45, 0.45, -30, 30 )
 	CodCasterObjectiveStatusControlSiteB2:setAlpha( 0 )
-	CodCasterObjectiveStatusControlSiteB2.siteLetter:setImage( RegisterImage( 0xFEE9CEC7F9FF4BC ) )
+	CodCasterObjectiveStatusControlSiteB2.siteLetter:setImage( RegisterImage( "uie_ui_hud_core_waypoint_letter_b_02" ) )
 	CodCasterObjectiveStatusControlSiteB2:subscribeToGlobalModel( f1_arg1, "HUDItems", "codcaster.ObjectiveB.color", function ( model )
 		local f5_local0 = model:get()
 		if f5_local0 ~= nil then
@@ -58,7 +58,7 @@ CoD.CodCasterObjectiveStatusControl.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.CodCasterObjectiveStatusControlSiteB2 = CodCasterObjectiveStatusControlSiteB2
 	
 	local CodCasterObjectiveStatusControlSiteB = CoD.CodCasterObjectiveStatusControlSite.new( f1_arg0, f1_arg1, 0.55, 0.55, -30, 30, 0.45, 0.45, -30, 30 )
-	CodCasterObjectiveStatusControlSiteB.siteLetter:setImage( RegisterImage( 0xFEE9CEC7F9FF4BC ) )
+	CodCasterObjectiveStatusControlSiteB.siteLetter:setImage( RegisterImage( "uie_ui_hud_core_waypoint_letter_b_02" ) )
 	CodCasterObjectiveStatusControlSiteB:subscribeToGlobalModel( f1_arg1, "HUDItems", "codcaster.ObjectiveB.color", function ( model )
 		local f8_local0 = model:get()
 		if f8_local0 ~= nil then
@@ -104,7 +104,7 @@ CoD.CodCasterObjectiveStatusControl.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local glow = LUI.UIImage.new( 0.5, 0.5, -16, 16, 0.5, 0.5, -19, 13 )
 	glow:setAlpha( 0 )
-	glow:setImage( RegisterImage( 0xD9007F963116063 ) )
+	glow:setImage( RegisterImage( "uie_codcaster_objectifstatusglow" ) )
 	self:addElement( glow )
 	self.glow = glow
 	

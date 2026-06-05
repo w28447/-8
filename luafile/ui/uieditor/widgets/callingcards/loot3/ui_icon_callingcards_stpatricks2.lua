@@ -13,7 +13,7 @@ CoD.ui_icon_callingcards_stpatricks2.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local bg2 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	bg2:setImage( RegisterImage( 0x52EFD7046A5267B ) )
+	bg2:setImage( RegisterImage( "uie_st_patricks_frame_02_bg" ) )
 	self:addElement( bg2 )
 	self.bg2 = bg2
 	
@@ -46,7 +46,7 @@ CoD.ui_icon_callingcards_stpatricks2.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.rainbow2 = rainbow2
 	
 	local crack = LUI.UIImage.new( 0, 0, 333, 637, 0, 0, 157.5, 280.5 )
-	crack:setImage( RegisterImage( 0xCC5B7C0A04276AE ) )
+	crack:setImage( RegisterImage( "uie_st_patricks_frame_02_crack" ) )
 	self:addElement( crack )
 	self.crack = crack
 	

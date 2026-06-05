@@ -11,7 +11,7 @@ CoD.EmpRebootIndicatorWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local ArmorFrame = LUI.UIImage.new( 0.5, 0.5, -132, 130, 0.5, 0.5, -4, 29 )
 	ArmorFrame:setAlpha( 0.4 )
-	ArmorFrame:setImage( RegisterImage( 0xAADD20019A84C5F ) )
+	ArmorFrame:setImage( RegisterImage( "uie_t7_hud_armorcontainer" ) )
 	self:addElement( ArmorFrame )
 	self.ArmorFrame = ArmorFrame
 	
@@ -37,7 +37,7 @@ CoD.EmpRebootIndicatorWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.ProgressBar = ProgressBar
 	
 	local RebootText = LUI.UIText.new( 0.5, 0.5, -117, 113, 0.5, 0.5, -4, 22 )
-	RebootText:setText( Engine[0xF9F1239CFD921FE]( 0xBD2AB55ABF4ECF ) )
+	RebootText:setText( Engine[0xF9F1239CFD921FE]( "mp/hud_emp_rebooting" ) )
 	RebootText:setTTF( "ttmussels_demibold" )
 	RebootText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	RebootText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

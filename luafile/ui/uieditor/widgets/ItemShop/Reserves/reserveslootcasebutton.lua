@@ -32,7 +32,7 @@ CoD.ReservesLootCaseButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.FocusGlow = FocusGlow
 	
 	local NineSliceBMFrame = LUI.UIImage.new( 0, 1, -3, 3, 0, 1, -3, 3 )
-	NineSliceBMFrame:setImage( RegisterImage( 0x1AC151A09D526DC ) )
+	NineSliceBMFrame:setImage( RegisterImage( "uie_ui_menu_blackmarket_button_frame" ) )
 	NineSliceBMFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	NineSliceBMFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	NineSliceBMFrame:setupNineSliceShader( 162, 52 )

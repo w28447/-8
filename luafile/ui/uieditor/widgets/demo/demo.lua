@@ -197,206 +197,206 @@ CoD.Demo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, 
 		CoD.Menu.UpdateButtonShownState( f17_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A] )
 		CoD.Menu.UpdateButtonShownState( f17_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0x6CE8023188D673F] )
 	end, false )
-	self:registerEventHandler( "input_source_changed", function ( element, event )
+	self:registerEventHandler( "input_source_changed", function ( self, event )
 		local f18_local0 = nil
-		if IsMouseOrKeyboard( f1_arg1 ) and IsElementPropertyValue( element, "demoShowMouse", true ) and not CoD.PCUtility.IsCurrentHudOccluded( f1_arg0, f1_arg1 ) then
+		if IsMouseOrKeyboard( f1_arg1 ) and IsElementPropertyValue( self, "demoShowMouse", true ) and not CoD.PCUtility.IsCurrentHudOccluded( f1_arg0, f1_arg1 ) then
 			EnableMouseLockInputBinding( f1_arg0, f1_arg1, true, true )
 		end
 		if not f18_local0 then
-			f18_local0 = element:dispatchEventToChildren( event )
+			f18_local0 = self:dispatchEventToChildren( event )
 		end
 		return f18_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
-		if not IsMouseOrKeyboard( f19_arg2 ) and not CoD.BaseUtility.IsButtonHoldFinished( f19_arg3 ) then
-			CoD.DemoUtility.CrossButtonAction( self, f19_arg0, f19_arg2, f19_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not IsMouseOrKeyboard( controller ) and not CoD.BaseUtility.IsButtonHoldFinished( model ) then
+			CoD.DemoUtility.CrossButtonAction( self, element, controller, menu )
 			return true
-		elseif not IsMouseOrKeyboard( f19_arg2 ) and CoD.BaseUtility.IsButtonHoldFinished( f19_arg3 ) then
-			CoD.DemoUtility.CrossButtonHoldAction( self, f19_arg0, f19_arg2, f19_arg1 )
-			return true
-		else
-			
-		end
-	end, function ( f20_arg0, f20_arg1, f20_arg2 )
-		if not IsMouseOrKeyboard( f20_arg2 ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
-			return false
-		elseif not IsMouseOrKeyboard( f20_arg2 ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
-			return false
-		else
-			return false
-		end
-	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f21_arg0, f21_arg1, f21_arg2, f21_arg3 )
-		if not IsMouseOrKeyboard( f21_arg2 ) and not CoD.BaseUtility.IsButtonHoldFinished( f21_arg3 ) then
-			CoD.DemoUtility.SquareButtonAction( self, f21_arg0, f21_arg2, f21_arg1 )
-			return true
-		elseif not IsMouseOrKeyboard( f21_arg2 ) and CoD.BaseUtility.IsButtonHoldFinished( f21_arg3 ) then
-			CoD.DemoUtility.SquareButtonHoldAction( self, f21_arg0, f21_arg2, f21_arg1 )
+		elseif not IsMouseOrKeyboard( controller ) and CoD.BaseUtility.IsButtonHoldFinished( model ) then
+			CoD.DemoUtility.CrossButtonHoldAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f22_arg0, f22_arg1, f22_arg2 )
-		if not IsMouseOrKeyboard( f22_arg2 ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+	end, function ( element, menu, controller )
+		if not IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return false
-		elseif not IsMouseOrKeyboard( f22_arg2 ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+		elseif not IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
-		if not IsMouseOrKeyboard( f23_arg2 ) then
-			CoD.DemoUtility.TriangleButtonAction( self, f23_arg0, f23_arg2, f23_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if not IsMouseOrKeyboard( controller ) and not CoD.BaseUtility.IsButtonHoldFinished( model ) then
+			CoD.DemoUtility.SquareButtonAction( self, element, controller, menu )
+			return true
+		elseif not IsMouseOrKeyboard( controller ) and CoD.BaseUtility.IsButtonHoldFinished( model ) then
+			CoD.DemoUtility.SquareButtonHoldAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f24_arg0, f24_arg1, f24_arg2 )
-		if not IsMouseOrKeyboard( f24_arg2 ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if not IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+			return false
+		elseif not IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3 )
-		if not IsMouseOrKeyboard( f25_arg2 ) then
-			CoD.DemoUtility.CircleButtonAction( self, f25_arg0, f25_arg2, f25_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( element, menu, controller, model )
+		if not IsMouseOrKeyboard( controller ) then
+			CoD.DemoUtility.TriangleButtonAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f26_arg0, f26_arg1, f26_arg2 )
-		if not IsMouseOrKeyboard( f26_arg2 ) then
-			CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if not IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x493152B20AE4F58], "C", function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3 )
-		CoD.DemoUtility.LeftBumperAction( self, f27_arg0, f27_arg2, f27_arg1 )
-		return true
-	end, function ( f28_arg0, f28_arg1, f28_arg2 )
-		CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x493152B20AE4F58], 0x0, nil, "C" )
-		return false
-	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x49A252B20B48936], "SPACE", function ( f29_arg0, f29_arg1, f29_arg2, f29_arg3 )
-		CoD.DemoUtility.RightBumperAction( self, f29_arg0, f29_arg2, f29_arg1 )
-		return true
-	end, function ( f30_arg0, f30_arg1, f30_arg2 )
-		CoD.Menu.SetButtonLabel( f30_arg1, Enum.LUIButton[0x49A252B20B48936], 0x0, nil, "SPACE" )
-		return false
-	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x6CE8023188D673F], nil, function ( f31_arg0, f31_arg1, f31_arg2, f31_arg3 )
-		if not IsMouseOrKeyboard( f31_arg2 ) then
-			CoD.DemoUtility.LeftStickAction( self, f31_arg0, f31_arg2, f31_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		if not IsMouseOrKeyboard( controller ) then
+			CoD.DemoUtility.CircleButtonAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f32_arg0, f32_arg1, f32_arg2 )
-		if not IsMouseOrKeyboard( f32_arg2 ) then
-			CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x6CE8023188D673F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if not IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x29E5695FF1401AD], "F", function ( f33_arg0, f33_arg1, f33_arg2, f33_arg3 )
-		CoD.DemoUtility.RightStickAction( self, f33_arg0, f33_arg2, f33_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x493152B20AE4F58], "C", function ( element, menu, controller, model )
+		CoD.DemoUtility.LeftBumperAction( self, element, controller, menu )
 		return true
-	end, function ( f34_arg0, f34_arg1, f34_arg2 )
-		CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x29E5695FF1401AD], 0x0, nil, "F" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x493152B20AE4F58], "", nil, "C" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x57783F8DA4AAEF], "1", function ( f35_arg0, f35_arg1, f35_arg2, f35_arg3 )
-		CoD.DemoUtility.DPadLeftAction( self, f35_arg0, f35_arg2, f35_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x49A252B20B48936], "SPACE", function ( element, menu, controller, model )
+		CoD.DemoUtility.RightBumperAction( self, element, controller, menu )
 		return true
-	end, function ( f36_arg0, f36_arg1, f36_arg2 )
-		CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x57783F8DA4AAEF], 0x0, nil, "1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x49A252B20B48936], "", nil, "SPACE" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x571F08AD84807E0], "2", function ( f37_arg0, f37_arg1, f37_arg2, f37_arg3 )
-		CoD.DemoUtility.DPadRightAction( self, f37_arg0, f37_arg2, f37_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x6CE8023188D673F], nil, function ( element, menu, controller, model )
+		if not IsMouseOrKeyboard( controller ) then
+			CoD.DemoUtility.LeftStickAction( self, element, controller, menu )
+			return true
+		else
+			
+		end
+	end, function ( element, menu, controller )
+		if not IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x6CE8023188D673F], "", nil, nil )
+			return false
+		else
+			return false
+		end
+	end, false )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x29E5695FF1401AD], "F", function ( element, menu, controller, model )
+		CoD.DemoUtility.RightStickAction( self, element, controller, menu )
 		return true
-	end, function ( f38_arg0, f38_arg1, f38_arg2 )
-		CoD.Menu.SetButtonLabel( f38_arg1, Enum.LUIButton[0x571F08AD84807E0], 0x0, nil, "2" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x29E5695FF1401AD], "", nil, "F" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x4B11D2B20C75A7F], "3", function ( f39_arg0, f39_arg1, f39_arg2, f39_arg3 )
-		CoD.DemoUtility.DPadUpAction( self, f39_arg0, f39_arg2, f39_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x57783F8DA4AAEF], "1", function ( element, menu, controller, model )
+		CoD.DemoUtility.DPadLeftAction( self, element, controller, menu )
 		return true
-	end, function ( f40_arg0, f40_arg1, f40_arg2 )
-		CoD.Menu.SetButtonLabel( f40_arg1, Enum.LUIButton[0x4B11D2B20C75A7F], 0x0, nil, "3" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x57783F8DA4AAEF], "", nil, "1" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xD4C15FE32148D3A], "4", function ( f41_arg0, f41_arg1, f41_arg2, f41_arg3 )
-		CoD.DemoUtility.DPadDownAction( self, f41_arg0, f41_arg2, f41_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x571F08AD84807E0], "2", function ( element, menu, controller, model )
+		CoD.DemoUtility.DPadRightAction( self, element, controller, menu )
 		return true
-	end, function ( f42_arg0, f42_arg1, f42_arg2 )
-		CoD.Menu.SetButtonLabel( f42_arg1, Enum.LUIButton[0xD4C15FE32148D3A], 0x0, nil, "4" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x571F08AD84807E0], "", nil, "2" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE2", function ( f43_arg0, f43_arg1, f43_arg2, f43_arg3 )
-		CoD.DemoUtility.DemoToggleDemoHud( self, f43_arg0, f43_arg2, "", f43_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x4B11D2B20C75A7F], "3", function ( element, menu, controller, model )
+		CoD.DemoUtility.DPadUpAction( self, element, controller, menu )
 		return true
-	end, function ( f44_arg0, f44_arg1, f44_arg2 )
-		CoD.Menu.SetButtonLabel( f44_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE2" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4B11D2B20C75A7F], "", nil, "3" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "R", function ( f45_arg0, f45_arg1, f45_arg2, f45_arg3 )
-		CoD.DemoUtility.CrossButtonAction( self, f45_arg0, f45_arg2, f45_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xD4C15FE32148D3A], "4", function ( element, menu, controller, model )
+		CoD.DemoUtility.DPadDownAction( self, element, controller, menu )
 		return true
-	end, function ( f46_arg0, f46_arg1, f46_arg2 )
-		CoD.Menu.SetButtonLabel( f46_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "R" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD4C15FE32148D3A], "", nil, "4" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "V", function ( f47_arg0, f47_arg1, f47_arg2, f47_arg3 )
-		CoD.DemoUtility.CrossButtonHoldAction( self, f47_arg0, f47_arg2, f47_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE2", function ( element, menu, controller, model )
+		CoD.DemoUtility.DemoToggleDemoHud( self, element, controller, "", menu )
 		return true
-	end, function ( f48_arg0, f48_arg1, f48_arg2 )
-		CoD.Menu.SetButtonLabel( f48_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "V" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE2" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "G", function ( f49_arg0, f49_arg1, f49_arg2, f49_arg3 )
-		CoD.DemoUtility.SquareButtonAction( self, f49_arg0, f49_arg2, f49_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "R", function ( element, menu, controller, model )
+		CoD.DemoUtility.CrossButtonAction( self, element, controller, menu )
 		return true
-	end, function ( f50_arg0, f50_arg1, f50_arg2 )
-		CoD.Menu.SetButtonLabel( f50_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "G" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "R" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "X", function ( f51_arg0, f51_arg1, f51_arg2, f51_arg3 )
-		CoD.DemoUtility.TriangleButtonAction( self, f51_arg0, f51_arg2, f51_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "V", function ( element, menu, controller, model )
+		CoD.DemoUtility.CrossButtonHoldAction( self, element, controller, menu )
 		return true
-	end, function ( f52_arg0, f52_arg1, f52_arg2 )
-		CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "X" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "V" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "Q", function ( f53_arg0, f53_arg1, f53_arg2, f53_arg3 )
-		CoD.DemoUtility.UpdateDemoTimeScaleDelta( self, self.DemoPlaybackControlsPC, f53_arg2, "-0.2", f53_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "G", function ( element, menu, controller, model )
+		CoD.DemoUtility.SquareButtonAction( self, element, controller, menu )
 		return true
-	end, function ( f54_arg0, f54_arg1, f54_arg2 )
-		CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "Q" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "G" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "E", function ( f55_arg0, f55_arg1, f55_arg2, f55_arg3 )
-		CoD.DemoUtility.UpdateDemoTimeScaleDelta( self, self.DemoPlaybackControlsPC, f55_arg2, "1.0", f55_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "X", function ( element, menu, controller, model )
+		CoD.DemoUtility.TriangleButtonAction( self, element, controller, menu )
 		return true
-	end, function ( f56_arg0, f56_arg1, f56_arg2 )
-		CoD.Menu.SetButtonLabel( f56_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "E" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "X" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "LSHIFT", function ( f57_arg0, f57_arg1, f57_arg2, f57_arg3 )
-		CoD.DemoUtility.CircleButtonAction( self, f57_arg0, f57_arg2, f57_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "Q", function ( element, menu, controller, model )
+		CoD.DemoUtility.UpdateDemoTimeScaleDelta( self, self.DemoPlaybackControlsPC, controller, "-0.2", menu )
 		return true
-	end, function ( f58_arg0, f58_arg1, f58_arg2 )
-		CoD.Menu.SetButtonLabel( f58_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "LSHIFT" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "Q" )
+		return false
+	end, false )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "E", function ( element, menu, controller, model )
+		CoD.DemoUtility.UpdateDemoTimeScaleDelta( self, self.DemoPlaybackControlsPC, controller, "1.0", menu )
+		return true
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "E" )
+		return false
+	end, false )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "LSHIFT", function ( element, menu, controller, model )
+		CoD.DemoUtility.CircleButtonAction( self, element, controller, menu )
+		return true
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "LSHIFT" )
 		return false
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "setState", function ( element, controller, f59_arg2, f59_arg3, f59_arg4 )

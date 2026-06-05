@@ -8,7 +8,7 @@ CoD.WarzonePlayerArrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.soundSet = "none"
 	
 	local arrow = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	arrow:setImage( RegisterImage( 0x7C92505D1F238BC ) )
+	arrow:setImage( RegisterImage( "icon_minimap_player_mp" ) )
 	self:addElement( arrow )
 	self.arrow = arrow
 	

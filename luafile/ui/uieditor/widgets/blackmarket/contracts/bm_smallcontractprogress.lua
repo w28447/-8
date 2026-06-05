@@ -24,13 +24,13 @@ CoD.BM_SmallContractProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local ProgressBarBack = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	ProgressBarBack:setRGB( 0.45, 0.45, 0.45 )
-	ProgressBarBack:setImage( RegisterImage( 0x9A7834DA6C08B1A ) )
+	ProgressBarBack:setImage( RegisterImage( "uie_ui_menu_contracts_ring_small_empty" ) )
 	self:addElement( ProgressBarBack )
 	self.ProgressBarBack = ProgressBarBack
 	
 	local ProgressBarFront = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	ProgressBarFront:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
-	ProgressBarFront:setImage( RegisterImage( 0xBAD1467C2B4564C ) )
+	ProgressBarFront:setImage( RegisterImage( "uie_ui_menu_contracts_ring_small_fill" ) )
 	ProgressBarFront:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	ProgressBarFront:setShaderVector( 1, 0.5, 0, 0, 0 )
 	ProgressBarFront:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -75,13 +75,13 @@ CoD.BM_SmallContractProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Plus = LUI.UIImage.new( 0.5, 0.5, -32, 32, 0.5, 0.5, -32, 32 )
 	Plus:setRGB( 0.45, 0.45, 0.45 )
 	Plus:setAlpha( 0 )
-	Plus:setImage( RegisterImage( 0x8CCA2C769C2E30 ) )
+	Plus:setImage( RegisterImage( "uie_ui_menu_contracts_plus_empty" ) )
 	self:addElement( Plus )
 	self.Plus = Plus
 	
 	local Check = LUI.UIImage.new( 0.5, 0.5, -32, 32, 0.5, 0.5, -32, 32 )
 	Check:setAlpha( 0 )
-	Check:setImage( RegisterImage( 0xD1E7BB277F7D37A ) )
+	Check:setImage( RegisterImage( "uie_ui_menu_contracts_check" ) )
 	self:addElement( Check )
 	self.Check = Check
 	
@@ -89,7 +89,7 @@ CoD.BM_SmallContractProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		{
 			stateName = "Empty",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "displayName", 0x0 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "displayName", "" )
 			end
 		},
 		{

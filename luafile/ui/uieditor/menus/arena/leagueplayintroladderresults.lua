@@ -23,7 +23,7 @@ LUI.createMenu.LeaguePlayIntroLadderResults = function ( f1_arg0, f1_arg1 )
 	self.ItemShopBackgroundBlur = ItemShopBackgroundBlur
 	
 	local Background = LUI.UIImage.new( 0.5, 0.5, -960, 960, 0.5, 0.5, -348.5, 176.5 )
-	Background:setImage( RegisterImage( 0x3C590AC3E812395 ) )
+	Background:setImage( RegisterImage( "ui_menu_ftue_wl_welcome" ) )
 	Background:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	Background:setShaderVector( 0, 0, 0, 0, 0 )
 	Background:setShaderVector( 1, 1, 1, 0, 0 )
@@ -43,7 +43,7 @@ LUI.createMenu.LeaguePlayIntroLadderResults = function ( f1_arg0, f1_arg1 )
 	
 	local Title = LUI.UIText.new( 0.5, 0.5, -960, 960, 0.5, 0.5, -405, -345 )
 	Title:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
-	Title:setText( LocalizeToUpperString( 0xA833716CBB8F05A ) )
+	Title:setText( LocalizeToUpperString( "menu/congratulations_caps" ) )
 	Title:setTTF( "ttmussels_demibold" )
 	Title:setLetterSpacing( 5 )
 	Title:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -241,33 +241,33 @@ LUI.createMenu.LeaguePlayIntroLadderResults = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f10_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( PCButton, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		GoBackAndOpenOverlayOnParent( self, "LeaguePlayLadderResults", f11_arg2 )
+	f1_local1:AddButtonCallbackFunction( PCButton, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		GoBackAndOpenOverlayOnParent( self, "LeaguePlayLadderResults", controller )
 		return true
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( PCButton )
 	self.PCButton = PCButton
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		GoBackAndOpenOverlayOnParent( self, "LeaguePlayLadderResults", f13_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		GoBackAndOpenOverlayOnParent( self, "LeaguePlayLadderResults", controller )
 		return true
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
 		if IsPC() then
-			GoBackAndOpenOverlayOnParent( self, "LeaguePlayLadderResults", f15_arg2 )
+			GoBackAndOpenOverlayOnParent( self, "LeaguePlayLadderResults", controller )
 			return true
 		else
 			
 		end
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		else
 			return false

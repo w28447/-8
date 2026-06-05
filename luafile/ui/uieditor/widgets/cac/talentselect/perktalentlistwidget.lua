@@ -45,28 +45,28 @@ CoD.PerkTalentListWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( itemList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		if IsPC() and not CoD.CACUtility.IsItemEquippedInCurrentLoadout( f5_arg1, f5_arg0, f5_arg2 ) and not CoD.CACUtility.IsCACItemLocked( f5_arg1, f5_arg0, f5_arg2 ) then
-			CoD.CACUtility.EquipWeapon( self, f5_arg0, f5_arg1, f5_arg2, true )
-			CoD.CACUtility.UpdateWeaponModel( f5_arg1, f5_arg0, f5_arg2 )
-			UpdateSelfElementState( f5_arg1, self, f5_arg2 )
-			CoD.CACUtility.EquippedItemsChanged( f5_arg1, f5_arg2 )
+	f1_arg0:AddButtonCallbackFunction( itemList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsPC() and not CoD.CACUtility.IsItemEquippedInCurrentLoadout( menu, element, controller ) and not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.CACUtility.EquipWeapon( self, element, menu, controller, true )
+			CoD.CACUtility.UpdateWeaponModel( menu, element, controller )
+			UpdateSelfElementState( menu, self, controller )
+			CoD.CACUtility.EquippedItemsChanged( menu, controller )
 			return true
-		elseif not CoD.CACUtility.IsItemEquippedInCurrentLoadout( f5_arg1, f5_arg0, f5_arg2 ) and not CoD.CACUtility.IsCACItemLocked( f5_arg1, f5_arg0, f5_arg2 ) then
-			CoD.CACUtility.EquipWeapon( self, f5_arg0, f5_arg1, f5_arg2, true )
-			CoD.CACUtility.EquippedItemsChanged( f5_arg1, f5_arg2 )
-			CoD.CACUtility.UpdateWeaponModel( f5_arg1, f5_arg0, f5_arg2 )
-			UpdateSelfElementState( f5_arg1, self, f5_arg2 )
+		elseif not CoD.CACUtility.IsItemEquippedInCurrentLoadout( menu, element, controller ) and not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.CACUtility.EquipWeapon( self, element, menu, controller, true )
+			CoD.CACUtility.EquippedItemsChanged( menu, controller )
+			CoD.CACUtility.UpdateWeaponModel( menu, element, controller )
+			UpdateSelfElementState( menu, self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		if IsPC() and not CoD.CACUtility.IsItemEquippedInCurrentLoadout( f6_arg1, f6_arg0, f6_arg2 ) and not CoD.CACUtility.IsCACItemLocked( f6_arg1, f6_arg0, f6_arg2 ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsPC() and not CoD.CACUtility.IsItemEquippedInCurrentLoadout( menu, element, controller ) and not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif not CoD.CACUtility.IsItemEquippedInCurrentLoadout( f6_arg1, f6_arg0, f6_arg2 ) and not CoD.CACUtility.IsCACItemLocked( f6_arg1, f6_arg0, f6_arg2 ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif not CoD.CACUtility.IsItemEquippedInCurrentLoadout( menu, element, controller ) and not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

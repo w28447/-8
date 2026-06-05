@@ -97,27 +97,27 @@ LUI.createMenu.Loading_WZ = function ( f1_arg0, f1_arg1 )
 	self:addElement( GamemodeIcon )
 	self.GamemodeIcon = GamemodeIcon
 	
-	self:registerEventHandler( "loading_startplay", function ( element, event )
+	self:registerEventHandler( "loading_startplay", function ( self, event )
 		local f4_local0 = nil
 		if IsSplitscreenAndInGame( f1_arg0 ) and IsWarzone() then
-			CoD.HUDUtility.StartPlay( element, f1_arg0 )
-			HideWidget( element )
+			CoD.HUDUtility.StartPlay( self, f1_arg0 )
+			HideWidget( self )
 		else
-			CoD.HUDUtility.StartPlay( element, f1_arg0 )
+			CoD.HUDUtility.StartPlay( self, f1_arg0 )
 		end
 		if not f4_local0 then
-			f4_local0 = element:dispatchEventToChildren( event )
+			f4_local0 = self:dispatchEventToChildren( event )
 		end
 		return f4_local0
 	end )
-	self:registerEventHandler( "loading_nomovie_startplay", function ( element, event )
+	self:registerEventHandler( "loading_nomovie_startplay", function ( self, event )
 		local f5_local0 = nil
 		if IsSplitscreenAndInGame( f1_arg0 ) and IsWarzone() then
-			CoD.HUDUtility.StartPlay( element, f1_arg0 )
-			HideWidget( element )
+			CoD.HUDUtility.StartPlay( self, f1_arg0 )
+			HideWidget( self )
 		end
 		if not f5_local0 then
-			f5_local0 = element:dispatchEventToChildren( event )
+			f5_local0 = self:dispatchEventToChildren( event )
 		end
 		return f5_local0
 	end )

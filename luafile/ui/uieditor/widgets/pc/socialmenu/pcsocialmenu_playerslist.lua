@@ -44,11 +44,11 @@ CoD.PCSocialMenu_PlayersList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( BTN_AddFriend, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		CoD.PCUtility.SocialAddFriend( self, f3_arg2, "social_screen_editbox_add_friend" )
+	f1_arg0:AddButtonCallbackFunction( BTN_AddFriend, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.PCUtility.SocialAddFriend( self, controller, "social_screen_editbox_add_friend" )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( BTN_AddFriend )
@@ -78,7 +78,7 @@ CoD.PCSocialMenu_PlayersList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local ArrowR = LUI.UIImage.new( 0, 0, -68, 22, 0, 0, 278.5, 368.5 )
 	ArrowR:setAlpha( 0.4 )
 	ArrowR:setYRot( 180 )
-	ArrowR:setImage( RegisterImage( 0xC5662FCFDA32567 ) )
+	ArrowR:setImage( RegisterImage( "uie_t7_icon_menu_options_arrow" ) )
 	self:addElement( ArrowR )
 	self.ArrowR = ArrowR
 	

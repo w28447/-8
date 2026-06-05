@@ -320,7 +320,7 @@ CoD.Hud_MP_Codcaster_SafeAreaContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 	ReadyEvents = CoD.ReadyEvents.new( f1_arg0, f1_arg1, 0.5, 0.5, -300, 300, 1, 1, -433, -253 )
 	ReadyEvents:subscribeToGlobalModel( f1_arg1, "PerController", "scriptNotify", function ( model )
 		local f25_local0 = ReadyEvents
-		if CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x31187DD9C484333 ) then
+		if CoD.ModelUtility.IsParamModelEqualToHashString( model, "killstreak_received" ) then
 			AddKillstreakReceivedNotification( self, f25_local0, f1_arg1, model )
 		end
 	end )

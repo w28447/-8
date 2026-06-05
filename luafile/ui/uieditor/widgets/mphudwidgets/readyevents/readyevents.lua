@@ -14,7 +14,7 @@ CoD.ReadyEvents.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	local DarkenBG = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	DarkenBG:setRGB( 0, 0, 0 )
 	DarkenBG:setAlpha( 0 )
-	DarkenBG:setMaterial( LUI.UIImage.GetCachedMaterial( 0x655565C7B387234 ) )
+	DarkenBG:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_multiply" ) )
 	self:addElement( DarkenBG )
 	self.DarkenBG = DarkenBG
 	

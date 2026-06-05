@@ -46,7 +46,7 @@ CoD.TrialVersionCountdownWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local TrialText = LUI.UIText.new( 0, 0, 58, 305, 0, 0, 10.5, 31.5 )
 	TrialText:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
-	TrialText:setText( LocalizeToUpperString( 0xF16F4088C060F3A ) )
+	TrialText:setText( LocalizeToUpperString( "menu/trial_version_caps" ) )
 	TrialText:setTTF( "ttmussels_demibold" )
 	TrialText:setLetterSpacing( 3 )
 	TrialText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

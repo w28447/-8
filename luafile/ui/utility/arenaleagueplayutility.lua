@@ -107,7 +107,7 @@ CoD.ArenaLeaguePlayUtility.DLogSkillDivision = function ( f11_arg0 )
 				else
 					Engine[0xDE279ECDDDD966]( Engine.GetPrimaryController(), 0x8F7B5107F69C638, {
 						[0xCBA99B42A817EBC] = f11_local5,
-						[0xC47473E1BF6C087] = f11_local4
+						new_skill_division = f11_local4
 					} )
 				end
 			end
@@ -136,11 +136,11 @@ CoD.ArenaLeaguePlayUtility.GetRankAndRankData = function ( f12_arg0 )
 		if f12_local10[0xCDCA5C2109FF5DC] == 0 then
 			f12_local4 = f12_local9
 		end
-		if f12_arg0 == 0 or f12_local5 + 1 <= f12_arg0 and f12_arg0 <= f12_local5 + f12_local10[0xD02AD83D7CF88A6] then
+		if f12_arg0 == 0 or f12_local5 + 1 <= f12_arg0 and f12_arg0 <= f12_local5 + f12_local10.points then
 			f12_local0 = f12_local9
 			break
 		end
-		f12_local5 = f12_local5 + f12_local10[0xD02AD83D7CF88A6]
+		f12_local5 = f12_local5 + f12_local10.points
 	end
 	return f12_local0, f12_local1, f12_local2, f12_local3, f12_local4, f12_local5
 end
@@ -157,7 +157,7 @@ CoD.ArenaLeaguePlayUtility.GetRubyCountForRank = function ( f13_arg0 )
 		elseif f13_local5 == f13_arg0 and f13_arg0 ~= 1 then
 			f13_local1 = f13_local1 + 1
 		end
-		f13_local1 = f13_local1 + f13_local6[0xD02AD83D7CF88A6]
+		f13_local1 = f13_local1 + f13_local6.points
 	end
 	return f13_local1
 end
@@ -172,8 +172,8 @@ CoD.ArenaLeaguePlayUtility.GetRankInfoFieldAtRank = function ( f14_arg0, f14_arg
 end
 
 CoD.ArenaLeaguePlayUtility.GetRankIconAtRank = function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3, f15_arg4, f15_arg5 )
-	local f15_local0 = 0x214ECBA8C04D44C
-	local f15_local1 = 0x214ECBA8C04D44C
+	local f15_local0 = "$blacktransparent"
+	local f15_local1 = "$blacktransparent"
 	local f15_local2 = LuaUtils.GetLeaguePlayTierTable()
 	if f15_local2 and f15_arg0 > 0 then
 		local f15_local3 = f15_local2.leagueplayranklist[f15_arg0]
@@ -198,18 +198,18 @@ CoD.ArenaLeaguePlayUtility.GetRankIconAtRank = function ( f15_arg0, f15_arg1, f1
 end
 
 CoD.ArenaLeaguePlayUtility.GetRankAndIcon = function ( f16_arg0, f16_arg1, f16_arg2 )
-	local f16_local0 = 0x214ECBA8C04D44C
-	local f16_local1 = 0x214ECBA8C04D44C
+	local f16_local0 = "$blacktransparent"
+	local f16_local1 = "$blacktransparent"
 	if CoDShared.IsInGame() and not LuaUtils.IsArenaMode() then
 		return 0, f16_local0, f16_local1
 	end
 	local f16_local2, f16_local3, f16_local4 = CoD.ArenaLeaguePlayUtility.GetRankAndRankData( f16_arg0 )
 	if f16_local4 > 0 then
 		local f16_local5 = f16_local3.leagueplayranklist[f16_local4]
-		if f16_arg0 == 0 or f16_local3.tierlist[4][0x8A3024830754A20] < f16_arg1 then
+		if f16_arg0 == 0 or f16_local3.tierlist[4].placement < f16_arg1 then
 			f16_local0 = f16_local3[0xA8E260EBFD2E472]
 			f16_local1 = f16_local3[0x6D016A95DBF812D]
-		elseif f16_arg1 == f16_local3.tierlist[1][0x8A3024830754A20] then
+		elseif f16_arg1 == f16_local3.tierlist[1].placement then
 			if f16_local3[0x5AB8CB56CCAB0D9] <= f16_arg2 then
 				f16_local0 = f16_local5[0xA57F824907CF24C]
 				f16_local1 = f16_local5[0x58771E83A1EE17B]
@@ -217,13 +217,13 @@ CoD.ArenaLeaguePlayUtility.GetRankAndIcon = function ( f16_arg0, f16_arg1, f16_a
 				f16_local0 = f16_local5[0x4E9E4E3510C99C2]
 				f16_local1 = f16_local5[0xC624401F495A64D]
 			end
-		elseif f16_arg1 <= f16_local3.tierlist[2][0x8A3024830754A20] and f16_arg1 then
+		elseif f16_arg1 <= f16_local3.tierlist[2].placement and f16_arg1 then
 			f16_local0 = f16_local5[0x4926D32FD2B1F5E]
 			f16_local1 = f16_local5[0x969F43362718139]
-		elseif f16_arg1 <= f16_local3.tierlist[3][0x8A3024830754A20] and f16_arg1 then
+		elseif f16_arg1 <= f16_local3.tierlist[3].placement and f16_arg1 then
 			f16_local0 = f16_local5[0x1F00F09797768A4]
 			f16_local1 = f16_local5[0x1B777C502D63BF3]
-		elseif f16_arg1 <= f16_local3.tierlist[4][0x8A3024830754A20] then
+		elseif f16_arg1 <= f16_local3.tierlist[4].placement then
 			f16_local0 = f16_local5[0x3DC9BE37DB09A54]
 			f16_local1 = f16_local5[0x9A53F16E423D3A3]
 		end
@@ -232,15 +232,15 @@ CoD.ArenaLeaguePlayUtility.GetRankAndIcon = function ( f16_arg0, f16_arg1, f16_a
 end
 
 CoD.ArenaLeaguePlayUtility.GetBanner = function ( f17_arg0, f17_arg1, f17_arg2 )
-	local f17_local0 = 0x214ECBA8C04D44C
+	local f17_local0 = "$blacktransparent"
 	local f17_local1 = "null/empty"
 	local f17_local2, f17_local3, f17_local4, f17_local5 = CoD.ArenaLeaguePlayUtility.GetRankAndRankData( f17_arg0 )
 	if f17_local5 > 0 then
 		local f17_local6 = f17_local3.leagueplayranklist[f17_local5]
-		if f17_arg0 == 0 or f17_local3.tierlist[4][0x8A3024830754A20] < f17_arg1 then
+		if f17_arg0 == 0 or f17_local3.tierlist[4].placement < f17_arg1 then
 			f17_local0 = f17_local6[0xC2B4817BCA0439B]
 			f17_local1 = 0xEFE33C160485A2C
-		elseif f17_arg1 <= f17_local3.tierlist[1][0x8A3024830754A20] then
+		elseif f17_arg1 <= f17_local3.tierlist[1].placement then
 			if f17_local3[0x5AB8CB56CCAB0D9] <= f17_arg2 then
 				f17_local0 = f17_local6[0xA58229045244343]
 				f17_local1 = 0xC2DBB4DDEAAE038
@@ -248,13 +248,13 @@ CoD.ArenaLeaguePlayUtility.GetBanner = function ( f17_arg0, f17_arg1, f17_arg2 )
 				f17_local0 = f17_local6[0x63F32DE6EFB4165]
 				f17_local1 = 0x7BF6BC3B88895A2
 			end
-		elseif f17_arg1 <= f17_local3.tierlist[2][0x8A3024830754A20] then
+		elseif f17_arg1 <= f17_local3.tierlist[2].placement then
 			f17_local0 = f17_local6[0x683D820FAE40089]
 			f17_local1 = 0x3C4673AB2D80153
-		elseif f17_arg1 <= f17_local3.tierlist[3][0x8A3024830754A20] then
+		elseif f17_arg1 <= f17_local3.tierlist[3].placement then
 			f17_local0 = f17_local6[0x623656EF291D2CB]
 			f17_local1 = 0xA0E0FFD62BDDBA5
-		elseif f17_arg1 <= f17_local3.tierlist[4][0x8A3024830754A20] then
+		elseif f17_arg1 <= f17_local3.tierlist[4].placement then
 			f17_local0 = f17_local6[0xC2B4817BCA0439B]
 			f17_local1 = 0xEFE33C160485A2C
 		end
@@ -263,7 +263,7 @@ CoD.ArenaLeaguePlayUtility.GetBanner = function ( f17_arg0, f17_arg1, f17_arg2 )
 end
 
 CoD.ArenaLeaguePlayUtility.GetFirestreak = function ( f18_arg0, f18_arg1 )
-	local f18_local0 = 0x214ECBA8C04D44C
+	local f18_local0 = "$blacktransparent"
 	if f18_arg0 and f18_arg1 then
 		local f18_local1, f18_local2, f18_local3, f18_local4, f18_local5 = CoD.ArenaLeaguePlayUtility.GetRankAndRankData( f18_arg0 )
 		if f18_local5 > 0 then
@@ -291,11 +291,11 @@ CoD.ArenaLeaguePlayUtility.GetSkillDivisionTier = function ( f20_arg0 )
 	if LuaUtils.ArenaSeasonAsset and LuaUtils.ArenaSeasonAsset.skillBuckets and f20_local2 then
 		f20_local1 = LuaUtils.GetArenaSkillBucketFromEvent( f20_local2 )
 	end
-	local f20_local3 = Engine[0xE00B2F29271C60B]( 0x5F3AEEF8B5F66D0 )
+	local f20_local3 = Engine[0xE00B2F29271C60B]( "arena_league_play_skill_divisions_default" )
 	if f20_local3 and #f20_local3.skilldivisiontierlist then
 		if f20_local1 == nil or #f20_local1 ~= #f20_local3.skilldivisiontierlist then
 			for f20_local7, f20_local8 in ipairs( f20_local3.skilldivisiontierlist ) do
-				if f20_arg0 < f20_local8["maxskillrating"] then
+				if f20_arg0 < f20_local8.maxskillrating then
 					f20_local0 = f20_local7
 				end
 			end
@@ -312,9 +312,9 @@ CoD.ArenaLeaguePlayUtility.GetSkillDivisionTier = function ( f20_arg0 )
 end
 
 CoD.ArenaLeaguePlayUtility.GetSkillDivisionBannerAndName = function ( f21_arg0, f21_arg1 )
-	local f21_local0 = 0x214ECBA8C04D44C
-	local f21_local1 = 0x214ECBA8C04D44C
-	local f21_local2 = 0x214ECBA8C04D44C
+	local f21_local0 = "$blacktransparent"
+	local f21_local1 = "$blacktransparent"
+	local f21_local2 = "$blacktransparent"
 	local f21_local3 = 0xF88D8B975B0F42A
 	if f21_arg0 ~= nil then
 		local f21_local4 = nil
@@ -322,12 +322,12 @@ CoD.ArenaLeaguePlayUtility.GetSkillDivisionBannerAndName = function ( f21_arg0, 
 		if LuaUtils.ArenaSeasonAsset and LuaUtils.ArenaSeasonAsset.skillBuckets and f21_local5 then
 			f21_local4 = LuaUtils.GetArenaSkillBucketFromEvent( f21_local5 )
 		end
-		local f21_local6 = Engine[0xE00B2F29271C60B]( 0x5F3AEEF8B5F66D0 )
+		local f21_local6 = Engine[0xE00B2F29271C60B]( "arena_league_play_skill_divisions_default" )
 		if f21_local4 == nil or #f21_local4 ~= #f21_local6.skilldivisiontierlist then
 			if f21_local6 and #f21_local6.skilldivisiontierlist then
 				for f21_local15, f21_local16 in ipairs( f21_local6.skilldivisiontierlist ) do
-					if f21_arg0 < f21_local16["maxskillrating"] then
-						f21_local2 = f21_local16[0xDC1B5D80C1B7F38]
+					if f21_arg0 < f21_local16.maxskillrating then
+						f21_local2 = f21_local16.skilldivisiongem
 						f21_local3 = f21_local16[0x7118DE1BE688883]
 						for f21_local13, f21_local14 in ipairs( f21_local16.bannerlist ) do
 							if f21_arg1 <= f21_local14[0x95997657EC2697C] then
@@ -343,7 +343,7 @@ CoD.ArenaLeaguePlayUtility.GetSkillDivisionBannerAndName = function ( f21_arg0, 
 				if f21_local16.startRange <= f21_arg0 and (not (not f21_local16.endInclusive or f21_arg0 > f21_local16.endRange) or f21_arg0 < f21_local16.endRange) then
 					local f21_local10 = f21_local6.skilldivisiontierlist[f21_local15]
 					if f21_local10 then
-						f21_local2 = f21_local10[0xDC1B5D80C1B7F38]
+						f21_local2 = f21_local10.skilldivisiongem
 						f21_local3 = f21_local10[0x7118DE1BE688883]
 						for f21_local14, f21_local17 in ipairs( f21_local10.bannerlist ) do
 							if f21_arg1 <= f21_local17[0x95997657EC2697C] then
@@ -397,7 +397,7 @@ end
 CoD.ArenaLeaguePlayUtility.GetRubyRequirementForRank = function ( f27_arg0 )
 	local f27_local0 = LuaUtils.GetLeaguePlayTierTable()
 	if f27_local0 and f27_arg0 > 0 and f27_arg0 <= #f27_local0.leagueplayranklist then
-		return f27_local0.leagueplayranklist[f27_arg0][0xD02AD83D7CF88A6]
+		return f27_local0.leagueplayranklist[f27_arg0].points
 	else
 		return CoD.ArenaLeaguePlayUtility.DefaultRubyRequirement
 	end
@@ -414,12 +414,12 @@ CoD.ArenaLeaguePlayUtility.DoesRubyCountForModelEqualValue = function ( f29_arg0
 end
 
 CoD.ArenaLeaguePlayUtility.GetRubies = function ( f30_arg0 )
-	local f30_local0 = 0x214ECBA8C04D44C
+	local f30_local0 = "$blacktransparent"
 	local f30_local1, f30_local2, f30_local3, f30_local4, f30_local5, f30_local6 = CoD.ArenaLeaguePlayUtility.GetRankAndRankData( f30_arg0 )
 	if f30_local2 == nil then
 		return f30_local0, 0
 	else
-		return f30_local2[0x9A6C3D877EF1136], f30_arg0 - f30_local6
+		return f30_local2.divisionstar, f30_arg0 - f30_local6
 	end
 end
 
@@ -439,7 +439,7 @@ end
 CoD.ArenaLeaguePlayUtility.DoesCurrentRankRequireXPoints = function ( f33_arg0, f33_arg1, f33_arg2 )
 	local f33_local0 = f33_arg0:getModel()
 	if f33_local0 then
-		return f33_arg2 <= CoD.ArenaLeaguePlayUtility.GetRankInfoFieldAtRank( f33_local0.leaguePlayRank:get(), 0xD02AD83D7CF88A6, 0 )
+		return f33_arg2 <= CoD.ArenaLeaguePlayUtility.GetRankInfoFieldAtRank( f33_local0.leaguePlayRank:get(), "points", 0 )
 	else
 		return false
 	end
@@ -634,7 +634,7 @@ DataSources.ArenaGauntlet = {
 		local f47_local2 = 2
 		local f47_local3 = 8
 		local f47_local4 = f47_local0:create( "title" )
-		f47_local4:set( 0x20E1BA0CC1B9064 )
+		f47_local4:set( "arena/legend" )
 		f47_local4 = f47_local0:create( "wins" )
 		f47_local4:set( f47_local1 )
 		f47_local4 = f47_local0:create( "losses" )
@@ -817,7 +817,7 @@ CoD.ArenaLeaguePlayUtility.DisplayRankUpIfPossible = function ( f58_arg0, f58_ar
 	if f58_local0 then
 		local f58_local2 = f58_local0.lastLadderRank:get()
 		local f58_local3 = LuaUtils.GetLeaguePlayTierTable()
-		if f58_local2 and f58_local2 <= (f58_local3 and f58_local3.tierlist[4][0x8A3024830754A20]) then
+		if f58_local2 and f58_local2 <= (f58_local3 and f58_local3.tierlist[4].placement) then
 			f58_local1 = true
 		end
 	end
@@ -855,7 +855,7 @@ CoD.ArenaLeaguePlayUtility.AnimateRankUp = function ( f60_arg0, f60_arg1 )
 	f60_local0 = f60_local0.LeaguePlay
 	if f60_local0 then
 		local f60_local1 = LuaUtils.GetLeaguePlayTierTable()
-		local f60_local2 = f60_local1 and f60_local1.tierlist[1][0x8A3024830754A20]
+		local f60_local2 = f60_local1 and f60_local1.tierlist[1].placement
 		local f60_local3 = CoD.ArenaLeaguePlayUtility.GetBestRank( f60_arg1 )
 		local f60_local4 = f60_local0.lastLadderRank:get()
 		if f60_local3 ~= f60_local2 then
@@ -878,7 +878,7 @@ CoD.ArenaLeaguePlayUtility.SetInitialRankRubyState = function ( f63_arg0, f63_ar
 	local f63_local0 = Engine.GetGlobalModel()
 	f63_local0 = f63_local0.LeaguePlay
 	if f63_local0 then
-		local f63_local1 = CoD.ArenaLeaguePlayUtility.GetRankInfoFieldAtRank( f63_local0.leaguePlayRank:get(), 0xD02AD83D7CF88A6 )
+		local f63_local1 = CoD.ArenaLeaguePlayUtility.GetRankInfoFieldAtRank( f63_local0.leaguePlayRank:get(), "points" )
 		if f63_arg0._startPoints and f63_local1 and f63_local1 ~= 0 then
 			local f63_local2, f63_local3 = CoD.ArenaLeaguePlayUtility.GetRubies( f63_arg0._startPoints )
 			local f63_local4 = f63_arg1.Ruby
@@ -900,7 +900,7 @@ CoD.ArenaLeaguePlayUtility.AnimateRankUpRubies = function ( f64_arg0, f64_arg1, 
 		local f64_local2 = -1
 		local f64_local3 = f64_local1.firstPlaceCount:get()
 		local f64_local4 = f64_local1.lastLadderRank:get()
-		local f64_local5 = CoD.ArenaLeaguePlayUtility.GetRankInfoFieldAtRank( f64_local1.leaguePlayRank:get(), 0xD02AD83D7CF88A6 )
+		local f64_local5 = CoD.ArenaLeaguePlayUtility.GetRankInfoFieldAtRank( f64_local1.leaguePlayRank:get(), "points" )
 		local f64_local6, f64_local7 = CoD.ArenaLeaguePlayUtility.GetRubies( f64_arg0._currentPoints )
 		local f64_local8 = f64_local7 + 1
 		local f64_local9 = function ( f65_arg0 )
@@ -1265,7 +1265,7 @@ CoD.ArenaLeaguePlayUtility.GetLeagueLadderPlayerRubiesCountFromXuid = function (
 end
 
 CoD.ArenaLeaguePlayUtility.GetLeagueLadderPlayerRankFromXuid = function ( f90_arg0 )
-	local f90_local0 = 0x214ECBA8C04D44C
+	local f90_local0 = "$blacktransparent"
 	local f90_local1 = nil
 	local f90_local2 = ""
 	if f90_arg0 ~= 0 then
@@ -1283,7 +1283,7 @@ end
 
 CoD.ArenaLeaguePlayUtility.GetLeagueLadderPlayerSkillDivisionIconFromXuid = function ( f92_arg0 )
 	if f92_arg0 == 0 or Dvar[0x812F2EED3017CF4]:get() ~= true then
-		return 0x214ECBA8C04D44C
+		return "$blacktransparent"
 	end
 	local f92_local0 = Engine[0x2000A30A9678274]( f92_arg0 )
 	if f92_local0.performanceValue == 0 then
@@ -1295,7 +1295,7 @@ end
 
 CoD.ArenaLeaguePlayUtility.GetClientSkillDivisionIconLage = function ( f93_arg0 )
 	if f93_arg0 == 0 or Dvar[0x812F2EED3017CF4]:get() ~= true then
-		return 0x214ECBA8C04D44C
+		return "$blacktransparent"
 	end
 	local f93_local0 = Engine[0x2000A30A9678274]( f93_arg0 )
 	if f93_local0.performanceValue == 0 then
@@ -1307,7 +1307,7 @@ end
 
 CoD.ArenaLeaguePlayUtility.GetClientSkillDivisionIconSmall = function ( f94_arg0 )
 	if f94_arg0 == 0 or Dvar[0x812F2EED3017CF4]:get() ~= true then
-		return 0x214ECBA8C04D44C
+		return "$blacktransparent"
 	end
 	local f94_local0 = Engine[0x2000A30A9678274]( f94_arg0 )
 	if f94_local0.performanceValue == 0 then
@@ -1319,7 +1319,7 @@ end
 
 CoD.ArenaLeaguePlayUtility.GetClientSkillDivisionIconForScoreboardSmall = function ( f95_arg0 )
 	if f95_arg0 == 0 or LuaUtils.IsArenaMode() == false or Dvar[0x812F2EED3017CF4]:get() ~= true then
-		return 0x214ECBA8C04D44C
+		return "$blacktransparent"
 	end
 	local f95_local0 = Engine[0x2000A30A9678274]( f95_arg0 )
 	if f95_local0.performanceValue == 0 then
@@ -1330,7 +1330,7 @@ CoD.ArenaLeaguePlayUtility.GetClientSkillDivisionIconForScoreboardSmall = functi
 end
 
 CoD.ArenaLeaguePlayUtility.GetLeagueLadderPlayerSmallRankIconFromXuid = function ( f96_arg0 )
-	local f96_local0 = 0x214ECBA8C04D44C
+	local f96_local0 = "$blacktransparent"
 	local f96_local1 = nil
 	local f96_local2 = 0
 	if f96_arg0 ~= 0 then
@@ -1361,7 +1361,7 @@ CoD.ArenaLeaguePlayUtility.GetPlayerFireStreak = function ( f100_arg0 )
 		local f100_local1 = Engine[0x2000A30A9678274]( f100_local0 )
 		return CoD.ArenaLeaguePlayUtility.GetFirestreak( f100_local1.points, f100_local1.firstSubdivisionRankStreak )
 	else
-		return 0x214ECBA8C04D44C
+		return "$blacktransparent"
 	end
 end
 
@@ -1388,7 +1388,7 @@ CoD.ArenaLeaguePlayUtility.ConvertLadderNameCode = function ( f101_arg0 )
 end
 
 CoD.ArenaLeaguePlayUtility.GetNextLeagueRank = function ( f102_arg0 )
-	return Engine.Localize( 0xB6BFAA47BB29EA8, tonumber( f102_arg0 ) + 1 )
+	return Engine.Localize( "menu/rank_n", tonumber( f102_arg0 ) + 1 )
 end
 
 CoD.ArenaLeaguePlayUtility.SetRubyCountText = function ( f103_arg0 )
@@ -1501,7 +1501,7 @@ CoD.OverlayUtility.AddSystemOverlay( "Arena_EventEndResultsDelay", {
 			return {
 				{
 					models = {
-						displayText = Engine[0xF9F1239CFD921FE]( 0x5BE4A02B20F31F1 )
+						displayText = Engine[0xF9F1239CFD921FE]( "menu/ok" )
 					},
 					properties = {
 						action = function ( f120_arg0, f120_arg1, f120_arg2, f120_arg3, f120_arg4 )
@@ -1520,5 +1520,5 @@ CoD.OverlayUtility.AddSystemOverlay( "Arena_EventEndResultsDelay", {
 		end
 		
 	end,
-	[CoD.OverlayUtility.aCrossPromptText] = 0x5BE4A02B20F31F1
+	[CoD.OverlayUtility.aCrossPromptText] = "menu/ok"
 } )

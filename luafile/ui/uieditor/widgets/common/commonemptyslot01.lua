@@ -31,7 +31,7 @@ CoD.CommonEmptySlot01.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local CommonFrame01 = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	CommonFrame01:setRGB( ColorSet.BlackMarketCommon.r, ColorSet.BlackMarketCommon.g, ColorSet.BlackMarketCommon.b )
 	CommonFrame01:setAlpha( 0.5 )
-	CommonFrame01:setImage( RegisterImage( 0xCA6E5C175806396 ) )
+	CommonFrame01:setImage( RegisterImage( "uie_ui_menu_common_frame01" ) )
 	CommonFrame01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	CommonFrame01:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonFrame01:setupNineSliceShader( 8, 8 )

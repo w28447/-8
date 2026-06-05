@@ -11,7 +11,7 @@ CoD.genericPooledVehicleHealthWidget.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local HealthBarBlur = LUI.UIImage.new( 0, 0, 0, 94, 0, 0, 0, 216 )
-	HealthBarBlur:setImage( RegisterImage( 0xC74271FF9631F7D ) )
+	HealthBarBlur:setImage( RegisterImage( "uie_hud_minimap_health_meter_bg" ) )
 	HealthBarBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
 	HealthBarBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( HealthBarBlur )
@@ -20,7 +20,7 @@ CoD.genericPooledVehicleHealthWidget.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local HealthBarBacking = LUI.UIImage.new( 0, 0, 0, 94, 0, 0, 0, 216 )
 	HealthBarBacking:setRGB( 0, 0, 0 )
 	HealthBarBacking:setAlpha( 0.75 )
-	HealthBarBacking:setImage( RegisterImage( 0xC74271FF9631F7D ) )
+	HealthBarBacking:setImage( RegisterImage( "uie_hud_minimap_health_meter_bg" ) )
 	self:addElement( HealthBarBacking )
 	self.HealthBarBacking = HealthBarBacking
 	

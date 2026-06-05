@@ -41,7 +41,7 @@ CoD.AmmoWidgetWZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local goldenGlint = LUI.UIImage.new( 0, 0, 297, 588, 0, 0, 23, 89 )
 	goldenGlint:setRGB( 0.95, 0.76, 0.31 )
 	goldenGlint:setAlpha( 0 )
-	goldenGlint:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDCEC3F40C67FD03 ) )
+	goldenGlint:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_glint_reveal" ) )
 	goldenGlint:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( goldenGlint )
 	self.goldenGlint = goldenGlint
@@ -88,7 +88,7 @@ CoD.AmmoWidgetWZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local goldenBullet = LUI.UIImage.new( 0, 0, 310.5, 342.5, 0, 0, 98, 106 )
 	goldenBullet:setRGB( 0.91, 0.69, 0.16 )
-	goldenBullet:setImage( RegisterImage( 0x6137E42475D0CF1 ) )
+	goldenBullet:setImage( RegisterImage( "ammo_counter_riflebullet" ) )
 	self:addElement( goldenBullet )
 	self.goldenBullet = goldenBullet
 	
@@ -141,7 +141,7 @@ CoD.AmmoWidgetWZ.__resetProperties = function ( f7_arg0 )
 	f7_arg0.goldenGlint:completeAnimation()
 	f7_arg0.goldenBullet:setAlpha( 1 )
 	f7_arg0.goldenGlint:setAlpha( 0 )
-	f7_arg0.goldenGlint:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDCEC3F40C67FD03 ) )
+	f7_arg0.goldenGlint:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_glint_reveal" ) )
 	f7_arg0.goldenGlint:setShaderVector( 0, 0, 0, 0, 0 )
 end
 
@@ -177,7 +177,7 @@ CoD.AmmoWidgetWZ.__clipsPerState = {
 			
 			f9_arg0.goldenGlint:completeAnimation()
 			f9_arg0.goldenGlint:setAlpha( 0.3 )
-			f9_arg0.goldenGlint:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDCEC3F40C67FD03 ) )
+			f9_arg0.goldenGlint:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_glint_reveal" ) )
 			f9_arg0.goldenGlint:setShaderVector( 0, 0, 0, 0, 0 )
 			f9_local0( f9_arg0.goldenGlint )
 			local f9_local1 = function ( f13_arg0 )

@@ -22,7 +22,7 @@ CoD.PrematchCountdown_Backing.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.BlurBacking2 = BlurBacking2
 	
 	local Graphic = LUI.UIImage.new( 0, 1, 0, 0, -0, 0.98, 0, 0 )
-	Graphic:setImage( RegisterImage( 0xF5B05C37854785F ) )
+	Graphic:setImage( RegisterImage( "uie_ui_hud_core_match_begins_banner" ) )
 	Graphic:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	Graphic:setShaderVector( 0, 1.1, 0, 0, 0 )
 	self:addElement( Graphic )

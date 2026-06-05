@@ -9,12 +9,12 @@ CoD.TabbedScoreboardInfoStripe.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Stripe = LUI.UIImage.new( 0, 0, -2, 368, 0, 0, 5, 19 )
-	Stripe:setImage( RegisterImage( 0x5B21048C4745A5D ) )
+	Stripe:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_info_stripe" ) )
 	self:addElement( Stripe )
 	self.Stripe = Stripe
 	
 	local StripeAdd = LUI.UIImage.new( 0, 0, -7, 373, 0, 0, 0, 24 )
-	StripeAdd:setImage( RegisterImage( 0x70DB561BA588063 ) )
+	StripeAdd:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_info_stripe_glow" ) )
 	StripeAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	StripeAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( StripeAdd )

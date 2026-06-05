@@ -37,7 +37,7 @@ CoD.CodCasterPlayerListRowWidget.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_
 	
 	local BlackBar = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 16 )
 	BlackBar:setAlpha( 0.8 )
-	BlackBar:setImage( RegisterImage( 0x97941765AC1B3BE ) )
+	BlackBar:setImage( RegisterImage( "uie_codcaster_teamcolloredbg_generic" ) )
 	BlackBar:linkToElementModel( self, "clientNum", true, function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
@@ -62,7 +62,7 @@ CoD.CodCasterPlayerListRowWidget.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_
 	
 	local focus = LUI.UIImage.new( 0, 0, -2, 502, 0, 0, -6, 34 )
 	focus:setAlpha( 0 )
-	focus:setImage( RegisterImage( 0x9C9B7154A05B453 ) )
+	focus:setImage( RegisterImage( "uie_t7_codcaster_focusback" ) )
 	self:addElement( focus )
 	self.focus = focus
 	
@@ -90,7 +90,7 @@ CoD.CodCasterPlayerListRowWidget.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_
 	
 	local DeadIcon = LUI.UIImage.new( 0, 0, 17, 37, 0.5, 0.5, -11, 9 )
 	DeadIcon:setScale( 0.85, 0.75 )
-	DeadIcon:setImage( RegisterImage( 0x9E55E6818C34348 ) )
+	DeadIcon:setImage( RegisterImage( "uie_codcaster_player_list_entry_death" ) )
 	self:addElement( DeadIcon )
 	self.DeadIcon = DeadIcon
 	

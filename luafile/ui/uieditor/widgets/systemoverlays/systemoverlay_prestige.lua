@@ -113,16 +113,16 @@ CoD.systemOverlay_Prestige.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f10_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( options, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		if not IsDisabled( f11_arg0, f11_arg2 ) then
-			ProcessListAction( self, f11_arg0, f11_arg2, f11_arg1 )
+	f1_arg0:AddButtonCallbackFunction( options, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not IsDisabled( element, controller ) then
+			ProcessListAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		if not IsDisabled( f12_arg0, f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not IsDisabled( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -160,7 +160,7 @@ CoD.systemOverlay_Prestige.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 		}
 	} )
 	PermanentUnlockTokenButton:setAlpha( 0 )
-	PermanentUnlockTokenButton.CommonButtonOutlineThin.ButtonIcon:setImage( RegisterImage( 0x5DB5170C4871157 ) )
+	PermanentUnlockTokenButton.CommonButtonOutlineThin.ButtonIcon:setImage( RegisterImage( "prestige_icon_awards" ) )
 	PermanentUnlockTokenButton:subscribeToGlobalModel( f1_arg1, "PerController", "permanentUnlockTokensCount", function ( model )
 		local f15_local0 = model:get()
 		if f15_local0 ~= nil then

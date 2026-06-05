@@ -1,11 +1,11 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_asset_pirate_arm" )
 
-CoD[0x8CE52C91EA9361B] = InheritFrom( LUI.UIElement )
-CoD[0x8CE52C91EA9361B].__defaultWidth = 960
-CoD[0x8CE52C91EA9361B].__defaultHeight = 240
-CoD[0x8CE52C91EA9361B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_prestige_gear_master = InheritFrom( LUI.UIElement )
+CoD.callingcards_prestige_gear_master.__defaultWidth = 960
+CoD.callingcards_prestige_gear_master.__defaultHeight = 240
+CoD.callingcards_prestige_gear_master.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x8CE52C91EA9361B] )
+	self:setClass( CoD.callingcards_prestige_gear_master )
 	self.id = "CallingCards_Prestige_Gear_Master"
 	self.soundSet = "default"
 	f1_arg0:addElementToPendingUpdateStateList( self )
@@ -17,20 +17,20 @@ CoD[0x8CE52C91EA9361B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local windsaill = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	windsaill:setAlpha( 0.75 )
-	windsaill:setImage( RegisterImage( 0x982B01BE80B5EF0 ) )
+	windsaill:setImage( RegisterImage( "uie_windsail" ) )
 	self:addElement( windsaill )
 	self.windsaill = windsaill
 	
 	local glows = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	glows:setImage( RegisterImage( 0x767DE28A9E7391B ) )
+	glows:setImage( RegisterImage( "uie_glows" ) )
 	glows:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( glows )
 	self.glows = glows
 	
 	local skeletons2 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	skeletons2:setAlpha( 0.5 )
-	skeletons2:setImage( RegisterImage( 0x842948F62005FF9 ) )
-	skeletons2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	skeletons2:setImage( RegisterImage( "uie_skeletons2" ) )
+	skeletons2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	skeletons2:setShaderVector( 0, 1, 1, 0, 0 )
 	skeletons2:setShaderVector( 1, 0.03, 0, 0, 0 )
 	self:addElement( skeletons2 )
@@ -38,7 +38,7 @@ CoD[0x8CE52C91EA9361B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local skeletons = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	skeletons:setAlpha( 0.5 )
-	skeletons:setImage( RegisterImage( 0x43FB084BE500991 ) )
+	skeletons:setImage( RegisterImage( "uie_skeletons" ) )
 	skeletons:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	skeletons:setShaderVector( 0, 1, 1, 0, 0 )
 	skeletons:setShaderVector( 1, 0.03, 0, 0, 0 )
@@ -46,7 +46,7 @@ CoD[0x8CE52C91EA9361B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.skeletons = skeletons
 	
 	local foregroundRopes = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	foregroundRopes:setImage( RegisterImage( 0xA144AD09F1356A0 ) )
+	foregroundRopes:setImage( RegisterImage( "uie_foreground_ropes" ) )
 	self:addElement( foregroundRopes )
 	self.foregroundRopes = foregroundRopes
 	
@@ -70,7 +70,7 @@ CoD[0x8CE52C91EA9361B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x8CE52C91EA9361B].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_prestige_gear_master.__resetProperties = function ( f2_arg0 )
 	f2_arg0.windsaill:completeAnimation()
 	f2_arg0.skeletons:completeAnimation()
 	f2_arg0.captainArm:completeAnimation()
@@ -94,7 +94,7 @@ CoD[0x8CE52C91EA9361B].__resetProperties = function ( f2_arg0 )
 	f2_arg0.skeletons2:setShaderVector( 1, 0.03, 0, 0, 0 )
 end
 
-CoD[0x8CE52C91EA9361B].__clipsPerState = {
+CoD.callingcards_prestige_gear_master.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -179,7 +179,7 @@ CoD[0x8CE52C91EA9361B].__clipsPerState = {
 			f3_arg0.skeletons:setTopBottom( 0, 0, -2, 240 )
 			f3_arg0.skeletons:setRGB( 0.75, 1, 0.85 )
 			f3_arg0.skeletons:setAlpha( 0.5 )
-			f3_arg0.skeletons:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+			f3_arg0.skeletons:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 			f3_arg0.skeletons:setShaderVector( 0, 1, 1, 0, 0 )
 			f3_arg0.skeletons:setShaderVector( 1, 0.03, 0, 0, 0 )
 			f3_local2( f3_arg0.skeletons )
@@ -226,7 +226,7 @@ CoD[0x8CE52C91EA9361B].__clipsPerState = {
 		end
 	}
 }
-CoD[0x8CE52C91EA9361B].__onClose = function ( f19_arg0 )
+CoD.callingcards_prestige_gear_master.__onClose = function ( f19_arg0 )
 	f19_arg0.captainArm:close()
 end
 

@@ -55,19 +55,19 @@ CoD.StartMenu_Personalization_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( specialists, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
+	f1_arg0:AddButtonCallbackFunction( specialists, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		PlaySoundAlias( "uin_toggle_generic" )
-		CoD.ZMStoryUtility.UpdateSelectedCharacterStory( f4_arg0, f4_arg2 )
-		OpenOverlay( self, "PersonalizeCharacter", f4_arg2, {
-			model = f4_arg0:getModel(),
+		CoD.ZMStoryUtility.UpdateSelectedCharacterStory( element, controller )
+		OpenOverlay( self, "PersonalizeCharacter", controller, {
+			model = element:getModel(),
 			properties = {
-				_sessionMode = f4_arg1._sessionMode,
-				_storageLoadoutBuffer = f4_arg1._storageLoadoutBuffer
+				_sessionMode = menu._sessionMode,
+				_storageLoadoutBuffer = menu._storageLoadoutBuffer
 			}
 		} )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( specialists )
@@ -140,17 +140,17 @@ CoD.StartMenu_Personalization_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	f1_local11( f1_local10, f1_local12.breadcrumbCount, function ( f9_arg0, f9_arg1 )
 		CoD.Menu.UpdateButtonShownState( f9_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0x29E5695FF1401AD] )
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x29E5695FF1401AD], "ui_contextual_2", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		if CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f10_arg2, "CharacterBreadcrumbs", "breadcrumbCount", 0 ) and not IsPC() then
-			CoD.BreadcrumbUtility.ClearAllPersonalizationBreadcrumbs( f10_arg1, f10_arg2 )
-			UpdateElementState( self, "specialists", f10_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x29E5695FF1401AD], "ui_contextual_2", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "CharacterBreadcrumbs", "breadcrumbCount", 0 ) and not IsPC() then
+			CoD.BreadcrumbUtility.ClearAllPersonalizationBreadcrumbs( menu, controller )
+			UpdateElementState( self, "specialists", controller )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		if CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f11_arg2, "CharacterBreadcrumbs", "breadcrumbCount", 0 ) and not IsPC() then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x29E5695FF1401AD], 0x5619D8212EDA599, nil, "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "CharacterBreadcrumbs", "breadcrumbCount", 0 ) and not IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x29E5695FF1401AD], 0x5619D8212EDA599, nil, "ui_contextual_2" )
 			return true
 		else
 			return false

@@ -1,38 +1,38 @@
-CoD[0x4AFF0067298BAB8] = InheritFrom( LUI.UIElement )
-CoD[0x4AFF0067298BAB8].__defaultWidth = 960
-CoD[0x4AFF0067298BAB8].__defaultHeight = 240
-CoD[0x4AFF0067298BAB8].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_game_victories = InheritFrom( LUI.UIElement )
+CoD.callingcards_game_victories.__defaultWidth = 960
+CoD.callingcards_game_victories.__defaultHeight = 240
+CoD.callingcards_game_victories.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x4AFF0067298BAB8] )
+	self:setClass( CoD.callingcards_game_victories )
 	self.id = "CallingCards_Game_Victories"
 	self.soundSet = "default"
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local CardIcon = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	CardIcon:setImage( RegisterImage( 0x434A15996B65B48 ) )
-	CardIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
+	CardIcon:setImage( RegisterImage( "uie_t7_icon_callingcard_temp2_lrg" ) )
+	CardIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_blend" ) )
 	self:addElement( CardIcon )
 	self.CardIcon = CardIcon
 	
 	local bg = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	bg:setImage( RegisterImage( 0xBA269997E6598E7 ) )
+	bg:setImage( RegisterImage( "uie_callingcards_game_victories_background" ) )
 	self:addElement( bg )
 	self.bg = bg
 	
 	local subLeft = LUI.UIImage.new( 0, 0, 7.5, 343.5, 0, 0, 8, 168 )
-	subLeft:setImage( RegisterImage( 0xB26831F23B411F1 ) )
+	subLeft:setImage( RegisterImage( "uie_callingcards_game_victories_sub_left" ) )
 	self:addElement( subLeft )
 	self.subLeft = subLeft
 	
 	local subRight = LUI.UIImage.new( 0, 0, 824, 960, 0, 0, 8, 128 )
-	subRight:setImage( RegisterImage( 0x989B413A9BFC552 ) )
+	subRight:setImage( RegisterImage( "uie_callingcards_game_victories_sub_right" ) )
 	self:addElement( subRight )
 	self.subRight = subRight
 	
 	local reflection = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 248 )
 	reflection:setAlpha( 0.12 )
-	reflection:setImage( RegisterImage( 0x52C891EBDF9C0E ) )
-	reflection:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	reflection:setImage( RegisterImage( "uie_callingcards_game_victories_reflection" ) )
+	reflection:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	reflection:setShaderVector( 0, 1, 1, 0, 0 )
 	reflection:setShaderVector( 1, 0.01, 0, 0, 0 )
 	self:addElement( reflection )
@@ -48,7 +48,7 @@ CoD[0x4AFF0067298BAB8].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.kraken = kraken
 	
 	local bubbles = LUI.UIImage.new( 0, 0, 194.5, 239.5, 0, 0, 0, 240 )
-	bubbles:setImage( RegisterImage( 0x355FCE59C482A5E ) )
+	bubbles:setImage( RegisterImage( "uie_callingcards_game_victories_bubbles" ) )
 	bubbles:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	bubbles:setShaderVector( 0, 1, 1, 0, 0 )
 	bubbles:setShaderVector( 1, 0, 0.05, 0, 0 )
@@ -56,7 +56,7 @@ CoD[0x4AFF0067298BAB8].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.bubbles = bubbles
 	
 	local bubbles2 = LUI.UIImage.new( 0, 0, 789, 834, 0, 0, -119, 121 )
-	bubbles2:setImage( RegisterImage( 0x355FCE59C482A5E ) )
+	bubbles2:setImage( RegisterImage( "uie_callingcards_game_victories_bubbles" ) )
 	bubbles2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	bubbles2:setShaderVector( 0, 1, 1, 0, 0 )
 	bubbles2:setShaderVector( 1, 0, 0.05, 0, 0 )
@@ -65,7 +65,7 @@ CoD[0x4AFF0067298BAB8].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local diverLeft = LUI.UIImage.new( 0, 0, 7.5, 399.5, 0, 0, 74, 242 )
 	diverLeft:setAlpha( 0.5 )
-	diverLeft:setImage( RegisterImage( 0x5553161710958DF ) )
+	diverLeft:setImage( RegisterImage( "uie_callingcards_game_victories_diver_left" ) )
 	diverLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	diverLeft:setShaderVector( 0, 1.23, 0, 0, 0 )
 	self:addElement( diverLeft )
@@ -80,7 +80,7 @@ CoD[0x4AFF0067298BAB8].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.diverRight = diverRight
 	
 	local bubbles3 = LUI.UIImage.new( 0, 0, 386.5, 490.5, 0, 0, -119, 436 )
-	bubbles3:setImage( RegisterImage( 0x355FCE59C482A5E ) )
+	bubbles3:setImage( RegisterImage( "uie_callingcards_game_victories_bubbles" ) )
 	bubbles3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	bubbles3:setShaderVector( 0, 1, 1, 0, 0 )
 	bubbles3:setShaderVector( 1, 0, 0.05, 0, 0 )
@@ -88,7 +88,7 @@ CoD[0x4AFF0067298BAB8].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.bubbles3 = bubbles3
 	
 	local bubbles4 = LUI.UIImage.new( 0, 0, 26.5, 130.5, 0, 0, -220, 335 )
-	bubbles4:setImage( RegisterImage( 0x355FCE59C482A5E ) )
+	bubbles4:setImage( RegisterImage( "uie_callingcards_game_victories_bubbles" ) )
 	bubbles4:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	bubbles4:setShaderVector( 0, 1, 1, 0, 0 )
 	bubbles4:setShaderVector( 1, 0, 0.05, 0, 0 )
@@ -102,7 +102,7 @@ CoD[0x4AFF0067298BAB8].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x4AFF0067298BAB8].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_game_victories.__resetProperties = function ( f2_arg0 )
 	f2_arg0.kraken:completeAnimation()
 	f2_arg0.subRight:completeAnimation()
 	f2_arg0.diverLeft:completeAnimation()
@@ -116,7 +116,7 @@ CoD[0x4AFF0067298BAB8].__resetProperties = function ( f2_arg0 )
 	f2_arg0.reflection:setAlpha( 0.12 )
 end
 
-CoD[0x4AFF0067298BAB8].__clipsPerState = {
+CoD.callingcards_game_victories.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()

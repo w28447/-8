@@ -128,7 +128,7 @@ CoD.ChooseClassLockedOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local UnlockDescription = LUI.UIText.new( 0, 0, 850, 1522, 0, 0, 740.5, 785.5 )
 	UnlockDescription:setRGB( 0.96, 0.93, 0.84 )
 	UnlockDescription.__String_Reference = function ()
-		UnlockDescription:setText( ConvertToUpperString( CoD.CACUtility.GetUnlockDescriptionForFeature( f1_arg0, f1_arg1, 0x0 ) ) )
+		UnlockDescription:setText( ConvertToUpperString( CoD.CACUtility.GetUnlockDescriptionForFeature( f1_arg0, f1_arg1, "" ) ) )
 	end
 	
 	UnlockDescription.__String_Reference()
@@ -165,7 +165,7 @@ CoD.ChooseClassLockedOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local BotBarAdd = LUI.UIImage.new( 0, 0, 1371, 1727, 0, 0, 767, 783 )
 	BotBarAdd:setAlpha( 0.8 )
 	BotBarAdd:setZRot( 90 )
-	BotBarAdd:setImage( RegisterImage( 0x5AD5487D499ECDD ) )
+	BotBarAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_frame" ) )
 	BotBarAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BotBarAdd )
 	self.BotBarAdd = BotBarAdd

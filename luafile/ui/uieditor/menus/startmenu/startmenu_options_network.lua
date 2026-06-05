@@ -48,7 +48,7 @@ local f0_local1 = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3, f3_arg4, f3_arg
 	}
 end
 
-local f0_local2 = Engine[0xF9F1239CFD921FE]( 0xC241C17DD620CFF )
+local f0_local2 = Engine[0xF9F1239CFD921FE]( "menu/hidden" )
 local f0_local3 = function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3, f4_arg4 )
 	f4_arg1.showing = not f4_arg1.showing
 	local f4_local0 = f4_arg1:getModel( f4_arg2, "altText" )
@@ -106,19 +106,19 @@ local f0_local5 = function ( f6_arg0 )
 	local f6_local0 = "showConnectionMeter"
 	local f6_local1 = {
 		{
-			name = Engine[0xF9F1239CFD921FE]( 0x17857948FC2CCFC ),
+			name = Engine[0xF9F1239CFD921FE]( "menu/off" ),
 			value = 0
 		},
 		{
-			name = Engine[0xF9F1239CFD921FE]( 0x5BE4D02B20F370A ),
+			name = Engine[0xF9F1239CFD921FE]( "menu/on" ),
 			value = 1
 		}
 	}
 	return {
 		models = {
-			name = Engine[0xF9F1239CFD921FE]( 0x332A36AC2A42279 ),
-			aboutTitle = Engine[0xF9F1239CFD921FE]( 0x5299E84D1B8B8B ),
-			desc = Engine[0xF9F1239CFD921FE]( 0x810C93D4187259D ),
+			name = Engine[0xF9F1239CFD921FE]( "menu/connection_meter" ),
+			aboutTitle = Engine[0xF9F1239CFD921FE]( "menu/connection_meter_about" ),
+			desc = Engine[0xF9F1239CFD921FE]( "menu/connection_meter_about_desc" ),
 			optionsDatasource = CoD.OptionsUtility.CreateOptionDataSource( f6_arg0, "NetworkOptions_ShowConnectionMeter", f6_local1, f6_local0 ),
 			currentSelection = CoD.OptionsUtility.GetProfileSelection( f6_arg0, f6_local1, f6_local0 ),
 			frameWidget = "CoD.StartMenu_Options_Network_DescriptionPanels"
@@ -138,28 +138,28 @@ DataSources.OptionNetworkSettings = DataSourceHelpers.ListSetup( "OptionNetworkS
 		}
 	} )
 	local f7_local1, f7_local2 = Engine.GetSystemInfoValueAndString( f7_arg0, CoD.SYSINFO_NAT_TYPE )
-	local f7_local3 = 0x0
+	local f7_local3 = ""
 	local f7_local4 = Engine.GetConnectionPort()
-	if f7_local1 == Enum.XONLINE_NAT_TYPE[0x9571467DC6166AD] then
-		f7_local3 = 0xAA445309112CF99
-	elseif f7_local1 == Enum.XONLINE_NAT_TYPE[0x31FC575F7E84E5C] then
-		f7_local3 = 0x14209B554672F30
-	elseif f7_local1 == Enum.XONLINE_NAT_TYPE[0x28476FFCBABCB0] then
-		f7_local3 = 0xC305B096E1E2E84
+	if f7_local1 == Enum.XONLINE_NAT_TYPE.xonline_nat_open then
+		f7_local3 = "platform/options_network_about_nat_open"
+	elseif f7_local1 == Enum.XONLINE_NAT_TYPE.xonline_nat_moderate then
+		f7_local3 = "platform/options_network_about_nat_moderate"
+	elseif f7_local1 == Enum.XONLINE_NAT_TYPE.xonline_nat_strict then
+		f7_local3 = "platform/options_network_about_nat_strict"
 	end
-	table.insert( f7_local0, f0_local1( f7_arg0, 0xB1478806C990BB, 0x7743811296C5A00, Engine[0xF9F1239CFD921FE]( f7_local3, f7_local4 ), f7_local2, "CoD.StartMenu_Options_Network_DescriptionPanels", false ) )
-	table.insert( f7_local0, f0_local0( f7_arg0, 0x86EBF1A2FAA0274, 0xCB6C27E9DF1A29E, 0xD1ACE135B0A0DAE, CoD.SYSINFO_BANDWIDTH, "CoD.StartMenu_Options_Network_DescriptionPanels", false ) )
+	table.insert( f7_local0, f0_local1( f7_arg0, "menu/options_network_nat_type", "menu/options_network_about_nat", Engine[0xF9F1239CFD921FE]( f7_local3, f7_local4 ), f7_local2, "CoD.StartMenu_Options_Network_DescriptionPanels", false ) )
+	table.insert( f7_local0, f0_local0( f7_arg0, "menu/options_network_bandwidth", "menu/options_network_about_bandwidth", "menu/options_network_about_bandwidth_desc", CoD.SYSINFO_BANDWIDTH, "CoD.StartMenu_Options_Network_DescriptionPanels", false ) )
 	local f7_local5, f7_local6 = Engine.GetSystemInfoValueAndString( f7_arg0, CoD.SYSINFO_CONNECTION_TYPE )
 	local f7_local7 = ""
 	if f7_local5 == Enum.connectionType_e[0xE6C9091868D18A] then
-		f7_local7 = 0x87FDEFB84AAAE2E
+		f7_local7 = "menu/options_network_about_connection_type_wired"
 	elseif f7_local5 == Enum.connectionType_e[0xEFC42E21A350493] then
-		f7_local7 = 0x26CFE1DF00BD287
+		f7_local7 = "menu/options_network_about_connection_type_wireless"
 	end
-	table.insert( f7_local0, f0_local1( f7_arg0, 0x7B6345471085D98, 0x602CB27BDEB55F6, f7_local7, f7_local6, "CoD.StartMenu_Options_Network_DescriptionPanels", false ) )
-	table.insert( f7_local0, f0_local4( f7_arg0, 0x28B24D7EC3259D6, 0xCD225959429367C, 0xFA6535477C42613, 0xBE0FD8782640557, CoD.SYSINFO_GEOGRAPHICAL_REGION, "CoD.StartMenu_Options_Network_DescriptionPanels", false, 0x19CA1FFCCC5E01, 0xFCD61DA17014FCD ) )
-	table.insert( f7_local0, f0_local4( f7_arg0, 0x7367624D2662070, 0xF45C83E5855188A, 0x22E830E31485122, 0xD75251DBDF92FD4, CoD.SYSINFO_EXTERNAL_IP_ADDRESS, "CoD.StartMenu_Options_Network_DescriptionPanels", false, 0x7AFC8A64C29EB9E, 0xC2703C41D8B9AA0 ) )
-	table.insert( f7_local0, f0_local4( f7_arg0, 0x32CA1559CDF918A, 0xECFD5F1A222DCD8, 0xC1498B590516530, "platform/options_network_about_internal_ip_desc_off", CoD.SYSINFO_INTERNAL_IP_ADDRESS, "CoD.StartMenu_Options_Network_DescriptionPanels", false, 0x88C8C2AF0695B54, 0x5832A647D04E8A6 ) )
+	table.insert( f7_local0, f0_local1( f7_arg0, "menu/options_network_connection_type", "menu/options_network_about_connection_type", f7_local7, f7_local6, "CoD.StartMenu_Options_Network_DescriptionPanels", false ) )
+	table.insert( f7_local0, f0_local4( f7_arg0, "menu/options_network_geographical_region", "menu/options_network_about_geographical_region", "platform/options_network_about_geographic_region_desc_on", "platform/options_network_about_geographic_region_desc_off", CoD.SYSINFO_GEOGRAPHICAL_REGION, "CoD.StartMenu_Options_Network_DescriptionPanels", false, 0x19CA1FFCCC5E01, 0xFCD61DA17014FCD ) )
+	table.insert( f7_local0, f0_local4( f7_arg0, "menu/options_network_external_ip", "menu/options_network_about_external_ip", "platform/options_network_about_external_ip_desc_on", "platform/options_network_about_external_ip_desc_off", CoD.SYSINFO_EXTERNAL_IP_ADDRESS, "CoD.StartMenu_Options_Network_DescriptionPanels", false, 0x7AFC8A64C29EB9E, 0xC2703C41D8B9AA0 ) )
+	table.insert( f7_local0, f0_local4( f7_arg0, "menu/options_network_internal_ip", "menu/options_network_about_internal_ip", "platform/options_network_about_internal_ip_desc_on", "platform/options_network_about_internal_ip_desc_off", CoD.SYSINFO_INTERNAL_IP_ADDRESS, "CoD.StartMenu_Options_Network_DescriptionPanels", false, 0x88C8C2AF0695B54, 0x5832A647D04E8A6 ) )
 	if not CoD.isPC then
 		table.insert( f7_local0, f0_local5( f7_arg0 ) )
 	end
@@ -213,38 +213,38 @@ LUI.createMenu.StartMenu_Options_Network = function ( f8_arg0, f8_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f8_local1, f8_arg0, Enum.LUIButton[0xC083113BC81F23F] )
 		return f11_local0
 	end )
-	f8_local1:AddButtonCallbackFunction( ButtonList, f8_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_1", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		if HasListAction( f12_arg0, f12_arg2 ) and IsElementPropertyValue( f12_arg0, "showing", false ) and IsGamepad( f12_arg2 ) then
-			ProcessListAction( self, f12_arg0, f12_arg2, f12_arg1 )
+	f8_local1:AddButtonCallbackFunction( ButtonList, f8_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_1", function ( element, menu, controller, model )
+		if HasListAction( element, controller ) and IsElementPropertyValue( element, "showing", false ) and IsGamepad( controller ) then
+			ProcessListAction( self, element, controller, menu )
 			PlaySoundAlias( "uin_paint_decal_nav" )
 			return true
-		elseif HasListAction( f12_arg0, f12_arg2 ) and IsGamepad( f12_arg2 ) then
-			ProcessListAction( self, f12_arg0, f12_arg2, f12_arg1 )
+		elseif HasListAction( element, controller ) and IsGamepad( controller ) then
+			ProcessListAction( self, element, controller, menu )
 			PlaySoundAlias( "uin_paint_decal_nav" )
 			return true
-		elseif HasListAction( f12_arg0, f12_arg2 ) and IsElementPropertyValue( f12_arg0, "showing", false ) and IsMouseOrKeyboard( f12_arg2 ) then
-			ProcessListAction( self, f12_arg0, f12_arg2, f12_arg1 )
+		elseif HasListAction( element, controller ) and IsElementPropertyValue( element, "showing", false ) and IsMouseOrKeyboard( controller ) then
+			ProcessListAction( self, element, controller, menu )
 			PlaySoundAlias( "uin_paint_decal_nav" )
 			return true
-		elseif HasListAction( f12_arg0, f12_arg2 ) and IsMouseOrKeyboard( f12_arg2 ) then
-			ProcessListAction( self, f12_arg0, f12_arg2, f12_arg1 )
+		elseif HasListAction( element, controller ) and IsMouseOrKeyboard( controller ) then
+			ProcessListAction( self, element, controller, menu )
 			PlaySoundAlias( "uin_paint_decal_nav" )
 			return true
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		if HasListAction( f13_arg0, f13_arg2 ) and IsElementPropertyValue( f13_arg0, "showing", false ) and IsGamepad( f13_arg2 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x3F20759C07A14C2, nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if HasListAction( element, controller ) and IsElementPropertyValue( element, "showing", false ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/show", nil, "ui_contextual_1" )
 			return true
-		elseif HasListAction( f13_arg0, f13_arg2 ) and IsGamepad( f13_arg2 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x7A4FDABE47B6C3F, nil, "ui_contextual_1" )
+		elseif HasListAction( element, controller ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/hide", nil, "ui_contextual_1" )
 			return true
-		elseif HasListAction( f13_arg0, f13_arg2 ) and IsElementPropertyValue( f13_arg0, "showing", false ) and IsMouseOrKeyboard( f13_arg2 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, "ui_contextual_1" )
+		elseif HasListAction( element, controller ) and IsElementPropertyValue( element, "showing", false ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, "ui_contextual_1" )
 			return false
-		elseif HasListAction( f13_arg0, f13_arg2 ) and IsMouseOrKeyboard( f13_arg2 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, "ui_contextual_1" )
+		elseif HasListAction( element, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, "ui_contextual_1" )
 			return false
 		else
 			return false
@@ -321,37 +321,37 @@ LUI.createMenu.StartMenu_Options_Network = function ( f8_arg0, f8_arg1 )
 			end
 		}
 	} )
-	self:registerEventHandler( "menu_loaded", function ( element, event )
+	self:registerEventHandler( "menu_loaded", function ( self, event )
 		local f20_local0 = nil
-		if element.menuLoaded then
-			f20_local0 = element:menuLoaded( event )
-		elseif element.super.menuLoaded then
-			f20_local0 = element.super:menuLoaded( event )
+		if self.menuLoaded then
+			f20_local0 = self:menuLoaded( event )
+		elseif self.super.menuLoaded then
+			f20_local0 = self.super:menuLoaded( event )
 		end
 		ShowHeaderKickerAndIcon( f8_local1 )
-		SetHeadingKickerText( 0x1B298A1EF7420A7 )
+		SetHeadingKickerText( "menu/options_network_online_services_caps" )
 		if not f20_local0 then
-			f20_local0 = element:dispatchEventToChildren( event )
+			f20_local0 = self:dispatchEventToChildren( event )
 		end
 		return f20_local0
 	end )
-	f8_local1:AddButtonCallbackFunction( self, f8_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f21_arg0, f21_arg1, f21_arg2, f21_arg3 )
-		GoBack( self, f21_arg2 )
-		UpdateGamerprofile( self, f21_arg0, f21_arg2 )
+	f8_local1:AddButtonCallbackFunction( self, f8_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
+		UpdateGamerprofile( self, element, controller )
 		return true
-	end, function ( f22_arg0, f22_arg1, f22_arg2 )
-		CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f8_local1:AddButtonCallbackFunction( self, f8_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
+	f8_local1:AddButtonCallbackFunction( self, f8_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if AlwaysFalse() then
 			return true
 		else
 			
 		end
-	end, function ( f24_arg0, f24_arg1, f24_arg2 )
+	end, function ( element, menu, controller )
 		if AlwaysFalse() then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

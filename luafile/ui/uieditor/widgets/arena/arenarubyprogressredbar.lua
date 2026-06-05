@@ -31,7 +31,7 @@ CoD.ArenaRubyProgressRedBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local FocusGlow01 = LUI.UIImage.new( 0, 1, 20, -20, 0, 1, 0, 0 )
 	FocusGlow01:setRGB( 1, 0.35, 0.34 )
 	FocusGlow01:setAlpha( 0.2 )
-	FocusGlow01:setImage( RegisterImage( 0x223AD1B40A93955 ) )
+	FocusGlow01:setImage( RegisterImage( "uie_ui_menu_common_tab_glow" ) )
 	FocusGlow01:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow01:setShaderVector( 0, 0, 0, 0.21, 0.09 )
 	FocusGlow01:setShaderVector( 1, 1.36, 0, 0, 0 )

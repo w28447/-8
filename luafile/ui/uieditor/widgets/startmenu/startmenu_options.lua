@@ -30,8 +30,8 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 			end
 		}
 	} )
-	Credits.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( 0x151A0DF84A6850A ) )
-	Credits.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( 0x791B466F6591CE9 ) )
+	Credits.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( "ui_icon_startmenu_option_credits" ) )
+	Credits.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( "menu/credits_caps" ) )
 	Credits:registerEventHandler( "gain_focus", function ( element, event )
 		local f3_local0 = nil
 		if element.gainFocus then
@@ -42,17 +42,17 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Credits, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
+	f1_arg0:AddButtonCallbackFunction( Credits, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsInDefaultState( self.Credits ) then
-			OpenOverlay_NoDependency( self, "Credit_Fullscreen", f4_arg2, nil )
+			OpenOverlay_NoDependency( self, "Credit_Fullscreen", controller, nil )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
+	end, function ( element, menu, controller )
 		if IsInDefaultState( self.Credits ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -70,7 +70,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 			end
 		}
 	} )
-	GraphicContent.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( 0x20D23108FF4BE21 ) )
+	GraphicContent.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( "ui_icon_startmenu_option_graphiccontent" ) )
 	GraphicContent.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( "menu/content_filter" ) )
 	GraphicContent:registerEventHandler( "gain_focus", function ( element, event )
 		local f7_local0 = nil
@@ -82,18 +82,18 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( GraphicContent, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
+	f1_arg0:AddButtonCallbackFunction( GraphicContent, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsInDefaultState( self.GraphicContent ) then
-			CoD.ModelUtility.SetControllerModelValueToEnum( f8_arg2, "selectedPlayerOptionsTab", CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_CONTENT_FILTER )
-			OpenOverlay( self, "StartMenu_Options_Main", f8_arg2, nil )
+			CoD.ModelUtility.SetControllerModelValueToEnum( controller, "selectedPlayerOptionsTab", CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_CONTENT_FILTER )
+			OpenOverlay( self, "StartMenu_Options_Main", controller, nil )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
+	end, function ( element, menu, controller )
 		if IsInDefaultState( self.GraphicContent ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -111,7 +111,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 			end
 		}
 	} )
-	Muting.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( 0x23A998652369752 ) )
+	Muting.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( "ui_icon_startmenu_option_muting" ) )
 	Muting.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( "menu/muting" ) )
 	Muting:registerEventHandler( "gain_focus", function ( element, event )
 		local f11_local0 = nil
@@ -123,18 +123,18 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f11_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Muting, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
+	f1_arg0:AddButtonCallbackFunction( Muting, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsInDefaultState( self.Muting ) then
-			CoD.ModelUtility.SetControllerModelValueToEnum( f12_arg2, "selectedPlayerOptionsTab", CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_VOICE )
-			OpenOverlay( self, "StartMenu_Options_Main", f12_arg2, nil )
+			CoD.ModelUtility.SetControllerModelValueToEnum( controller, "selectedPlayerOptionsTab", CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_VOICE )
+			OpenOverlay( self, "StartMenu_Options_Main", controller, nil )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
+	end, function ( element, menu, controller )
 		if IsInDefaultState( self.Muting ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -152,7 +152,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 			end
 		}
 	} )
-	Network.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( 0xE8E46047AB4630E ) )
+	Network.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( "ui_icon_startmenu_option_network" ) )
 	Network.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( "menu/network" ) )
 	Network:registerEventHandler( "gain_focus", function ( element, event )
 		local f15_local0 = nil
@@ -164,18 +164,18 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f15_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Network, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
+	f1_arg0:AddButtonCallbackFunction( Network, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsInDefaultState( self.Network ) then
-			CoD.ModelUtility.SetControllerModelValueToEnum( f16_arg2, "selectedPlayerOptionsTab", CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_NETWORK )
-			OpenOverlay( self, "StartMenu_Options_Main", f16_arg2, nil )
+			CoD.ModelUtility.SetControllerModelValueToEnum( controller, "selectedPlayerOptionsTab", CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_NETWORK )
+			OpenOverlay( self, "StartMenu_Options_Main", controller, nil )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f17_arg0, f17_arg1, f17_arg2 )
+	end, function ( element, menu, controller )
 		if IsInDefaultState( self.Network ) then
-			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -223,8 +223,8 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 			modelName = "lobbyRoot.lobbyMainMode"
 		} )
 	end, false )
-	Blackout.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( 0x964CE27CE24291B ) )
-	Blackout.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( 0xA2DD20750465431 ) )
+	Blackout.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( "ui_icon_startmenu_option_music" ) )
+	Blackout.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( "menu/warzone" ) )
 	Blackout:registerEventHandler( "gain_focus", function ( element, event )
 		local f21_local0 = nil
 		if element.gainFocus then
@@ -235,18 +235,18 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f21_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Blackout, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
+	f1_arg0:AddButtonCallbackFunction( Blackout, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsInDefaultState( self.Blackout ) then
-			CoD.ModelUtility.SetControllerModelValueToEnum( f22_arg2, "selectedPlayerOptionsTab", CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_WARZONE )
-			OpenOverlay( self, "StartMenu_Options_Main", f22_arg2, nil )
+			CoD.ModelUtility.SetControllerModelValueToEnum( controller, "selectedPlayerOptionsTab", CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_WARZONE )
+			OpenOverlay( self, "StartMenu_Options_Main", controller, nil )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f23_arg0, f23_arg1, f23_arg2 )
+	end, function ( element, menu, controller )
 		if IsInDefaultState( self.Blackout ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -264,7 +264,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 			end
 		}
 	} )
-	Audio.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( 0xDBF36D40654D629 ) )
+	Audio.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( "uie_img_t7_menu_startmenu_option_audio" ) )
 	Audio.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( "menu/audio" ) )
 	Audio:registerEventHandler( "gain_focus", function ( element, event )
 		local f25_local0 = nil
@@ -276,18 +276,18 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f25_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Audio, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f26_arg0, f26_arg1, f26_arg2, f26_arg3 )
+	f1_arg0:AddButtonCallbackFunction( Audio, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if ShouldOpenGraphicsAndSoundOptions() then
-			CoD.ModelUtility.SetControllerModelValueToEnum( f26_arg2, "selectedPlayerOptionsTab", CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_AUDIO )
-			OpenOverlay( self, "StartMenu_Options_Main", f26_arg2, nil )
+			CoD.ModelUtility.SetControllerModelValueToEnum( controller, "selectedPlayerOptionsTab", CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_AUDIO )
+			OpenOverlay( self, "StartMenu_Options_Main", controller, nil )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f27_arg0, f27_arg1, f27_arg2 )
+	end, function ( element, menu, controller )
 		if ShouldOpenGraphicsAndSoundOptions() then
-			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -305,7 +305,7 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 			end
 		}
 	} )
-	Graphics.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( 0x755FBEF24CD892F ) )
+	Graphics.StartMenuOptionsSubFrame.ImageContainer.ImageContainer:setImage( RegisterImage( "uie_ui_icon_startmenu_option_graphics" ) )
 	Graphics.StartMenuOptionsSubFrame.ButtonText:setText( LocalizeToUpperString( "menu/graphics" ) )
 	Graphics:registerEventHandler( "gain_focus", function ( element, event )
 		local f29_local0 = nil
@@ -317,18 +317,18 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f29_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Graphics, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f30_arg0, f30_arg1, f30_arg2, f30_arg3 )
+	f1_arg0:AddButtonCallbackFunction( Graphics, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsInDefaultState( self.Graphics ) then
-			CoD.ModelUtility.SetControllerModelValueToEnum( f30_arg2, "selectedPlayerOptionsTab", CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_GRAPHICS )
-			OpenOverlay( self, "StartMenu_Options_Main", f30_arg2, nil )
+			CoD.ModelUtility.SetControllerModelValueToEnum( controller, "selectedPlayerOptionsTab", CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_GRAPHICS )
+			OpenOverlay( self, "StartMenu_Options_Main", controller, nil )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f31_arg0, f31_arg1, f31_arg2 )
+	end, function ( element, menu, controller )
 		if IsInDefaultState( self.Graphics ) then
-			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -355,13 +355,13 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f33_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Controls, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f34_arg0, f34_arg1, f34_arg2, f34_arg3 )
-		CoD.ModelUtility.SetControllerModelValueToEnum( f34_arg2, "selectedPlayerOptionsTab", CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_CONTROLS )
-		OpenOverlay( self, "StartMenu_Options_Main", f34_arg2, nil )
+	f1_arg0:AddButtonCallbackFunction( Controls, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.ModelUtility.SetControllerModelValueToEnum( controller, "selectedPlayerOptionsTab", CoD.OptionsUtility.PlayerOptionsTabIndex.OPTION_TAB_CONTROLS )
+		OpenOverlay( self, "StartMenu_Options_Main", controller, nil )
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
-	end, function ( f35_arg0, f35_arg1, f35_arg2 )
-		CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( Controls )
@@ -388,31 +388,31 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f38_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( QuitButtonCodcaster, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f39_arg0, f39_arg1, f39_arg2, f39_arg3 )
-		if IsMouseOrKeyboard( f39_arg2 ) and IsPC() then
-			QuitPCGame_MP( self, f39_arg2, false )
+	f1_arg0:AddButtonCallbackFunction( QuitButtonCodcaster, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and IsPC() then
+			QuitPCGame_MP( self, controller, false )
 			return true
 		else
 			
 		end
-	end, function ( f40_arg0, f40_arg1, f40_arg2 )
-		if IsMouseOrKeyboard( f40_arg2 ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f40_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "MOUSE1" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( QuitButtonCodcaster, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f41_arg0, f41_arg1, f41_arg2, f41_arg3 )
-		if IsGamepad( f41_arg2 ) then
-			CoD.StartMenuUtility.QuitGameWarningPrompt( f41_arg2, f41_arg1 )
+	f1_arg0:AddButtonCallbackFunction( QuitButtonCodcaster, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if IsGamepad( controller ) then
+			CoD.StartMenuUtility.QuitGameWarningPrompt( controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f42_arg0, f42_arg1, f42_arg2 )
-		if IsGamepad( f42_arg2 ) then
-			CoD.Menu.SetButtonLabel( f42_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 			return false
 		else
 			return false
@@ -422,8 +422,8 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.QuitButtonCodcaster = QuitButtonCodcaster
 	
 	CoDAccount = CoD.StartMenu_Options_CoDAccountButton.new( f1_arg0, f1_arg1, 0.5, 0.5, -265, 249, 0.5, 0.5, 226, 295 )
-	CoDAccount.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( 0x30BC41F2404F851 ) )
-	CoDAccount.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( 0x30BC41F2404F851 ) )
+	CoDAccount.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( "menu/cod_account_caps" ) )
+	CoDAccount.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( "menu/cod_account_caps" ) )
 	CoDAccount:registerEventHandler( "gain_focus", function ( element, event )
 		local f43_local0 = nil
 		if element.gainFocus then
@@ -434,23 +434,23 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f43_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( CoDAccount, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f44_arg0, f44_arg1, f44_arg2, f44_arg3 )
-		if CoD.CoDAccountUtility.IsAccountFeatureEnabled( f44_arg2 ) and not IsSignedIntoUno( f44_arg2 ) then
-			OpenOverlay( self, "StartMenu_Options_CoDAccount_CTA", f44_arg2 )
+	f1_arg0:AddButtonCallbackFunction( CoDAccount, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.CoDAccountUtility.IsAccountFeatureEnabled( controller ) and not IsSignedIntoUno( controller ) then
+			OpenOverlay( self, "StartMenu_Options_CoDAccount_CTA", controller )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
-		elseif CoD.CoDAccountUtility.IsAccountFeatureEnabled( f44_arg2 ) and IsSignedIntoUno( f44_arg2 ) then
-			OpenOverlay( self, "StartMenu_Options_CoDAccount_ManageAccount", f44_arg2 )
+		elseif CoD.CoDAccountUtility.IsAccountFeatureEnabled( controller ) and IsSignedIntoUno( controller ) then
+			OpenOverlay( self, "StartMenu_Options_CoDAccount_ManageAccount", controller )
 			return true
 		else
 			
 		end
-	end, function ( f45_arg0, f45_arg1, f45_arg2 )
-		if CoD.CoDAccountUtility.IsAccountFeatureEnabled( f45_arg2 ) and not IsSignedIntoUno( f45_arg2 ) then
-			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.CoDAccountUtility.IsAccountFeatureEnabled( controller ) and not IsSignedIntoUno( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif CoD.CoDAccountUtility.IsAccountFeatureEnabled( f45_arg2 ) and IsSignedIntoUno( f45_arg2 ) then
-			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif CoD.CoDAccountUtility.IsAccountFeatureEnabled( controller ) and IsSignedIntoUno( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -472,12 +472,12 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f46_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PrivacySettingsButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f47_arg0, f47_arg1, f47_arg2, f47_arg3 )
-		OpenOverlay( self, "StartMenu_Options_PrivacySettings", f47_arg2 )
+	f1_arg0:AddButtonCallbackFunction( PrivacySettingsButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		OpenOverlay( self, "StartMenu_Options_PrivacySettings", controller )
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
-	end, function ( f48_arg0, f48_arg1, f48_arg2 )
-		CoD.Menu.SetButtonLabel( f48_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( PrivacySettingsButton )
@@ -505,31 +505,31 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f51_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( QuitButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f52_arg0, f52_arg1, f52_arg2, f52_arg3 )
-		if IsMouseOrKeyboard( f52_arg2 ) and IsPC() then
-			QuitPCGame_MP( self, f52_arg2, true )
+	f1_arg0:AddButtonCallbackFunction( QuitButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and IsPC() then
+			QuitPCGame_MP( self, controller, true )
 			return true
 		else
 			
 		end
-	end, function ( f53_arg0, f53_arg1, f53_arg2 )
-		if IsMouseOrKeyboard( f53_arg2 ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f53_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xB2EF56B4AF147B8, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/quit", nil, "MOUSE1" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( QuitButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f54_arg0, f54_arg1, f54_arg2, f54_arg3 )
-		if IsGamepad( f54_arg2 ) then
-			CoD.StartMenuUtility.QuitGameWarningPrompt( f54_arg2, f54_arg1 )
+	f1_arg0:AddButtonCallbackFunction( QuitButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if IsGamepad( controller ) then
+			CoD.StartMenuUtility.QuitGameWarningPrompt( controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f55_arg0, f55_arg1, f55_arg2 )
-		if IsGamepad( f55_arg2 ) then
-			CoD.Menu.SetButtonLabel( f55_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xB2EF56B4AF147B8, nil, nil )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/quit", nil, nil )
 			return true
 		else
 			return false
@@ -607,17 +607,17 @@ CoD.StartMenu_Options.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f63_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( DirectorGenericButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f64_arg0, f64_arg1, f64_arg2, f64_arg3 )
-		if CoD.HUDUtility.IsWarzone() and CoD.WZUtility.AllowWZOffline() and IsLobbyHost() and CoD.HUDUtility.IsWZCustomGame( f64_arg2 ) and not CoD.ModelUtility.IsControllerModelValueTrue( f64_arg2, "hudItems.hasStartedWZMatch" ) then
-			CoD.WZUtility.StartWarzone( f64_arg2 )
-			SetControllerModelValue( f64_arg2, "hudItems.hasStartedWZMatch", true )
+	f1_arg0:AddButtonCallbackFunction( DirectorGenericButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.HUDUtility.IsWarzone() and CoD.WZUtility.AllowWZOffline() and IsLobbyHost() and CoD.HUDUtility.IsWZCustomGame( controller ) and not CoD.ModelUtility.IsControllerModelValueTrue( controller, "hudItems.hasStartedWZMatch" ) then
+			CoD.WZUtility.StartWarzone( controller )
+			SetControllerModelValue( controller, "hudItems.hasStartedWZMatch", true )
 			return true
 		else
 			
 		end
-	end, function ( f65_arg0, f65_arg1, f65_arg2 )
-		if CoD.HUDUtility.IsWarzone() and CoD.WZUtility.AllowWZOffline() and IsLobbyHost() and CoD.HUDUtility.IsWZCustomGame( f65_arg2 ) and not CoD.ModelUtility.IsControllerModelValueTrue( f65_arg2, "hudItems.hasStartedWZMatch" ) then
-			CoD.Menu.SetButtonLabel( f65_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.HUDUtility.IsWarzone() and CoD.WZUtility.AllowWZOffline() and IsLobbyHost() and CoD.HUDUtility.IsWZCustomGame( controller ) and not CoD.ModelUtility.IsControllerModelValueTrue( controller, "hudItems.hasStartedWZMatch" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 			return false
 		else
 			return false

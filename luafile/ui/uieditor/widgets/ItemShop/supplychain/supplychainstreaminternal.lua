@@ -29,7 +29,7 @@ CoD.SupplyChainStreamInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local Gradient = LUI.UIImage.new( 0, 0, 1, 348, 0, 0, 1, 72 )
 	Gradient:setRGB( 0.08, 0.21, 0.31 )
 	Gradient:setAlpha( 0.94 )
-	Gradient:setImage( RegisterImage( 0xB646BE73FB8838C ) )
+	Gradient:setImage( RegisterImage( "uie_ui_menu_common_gradient" ) )
 	Gradient:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Gradient )
 	self.Gradient = Gradient
@@ -309,7 +309,7 @@ CoD.SupplyChainStreamInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.ContractRarityHeaderBackground = ContractRarityHeaderBackground
 	
 	local ContractRarityHeaderTile = CoD.ContractRarityHeaderTile.new( f1_arg0, f1_arg1, 0, 0, 16, 216, 0, 0, 8.5, 34.5 )
-	ContractRarityHeaderTile.Contract:setText( LocalizeToUpperString( 0x0 ) )
+	ContractRarityHeaderTile.Contract:setText( LocalizeToUpperString( "" ) )
 	ContractRarityHeaderTile:linkToElementModel( self, nil, false, function ( model )
 		ContractRarityHeaderTile:setModel( model, f1_arg1 )
 	end )

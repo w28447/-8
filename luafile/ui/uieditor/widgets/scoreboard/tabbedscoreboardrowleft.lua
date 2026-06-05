@@ -47,7 +47,7 @@ CoD.TabbedScoreboardRowLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 			modelName = "dead"
 		} )
 	end )
-	deadSkull.image:setImage( RegisterImage( 0xB73FD6B1D4A1BAF ) )
+	deadSkull.image:setImage( RegisterImage( "uie_headicon_dead_minimap" ) )
 	deadSkull:subscribeToGlobalModel( f1_arg1, "HUDItems", "colorBlindSensitiveFriendlyColor", function ( model )
 		local f6_local0 = model:get()
 		if f6_local0 ~= nil then

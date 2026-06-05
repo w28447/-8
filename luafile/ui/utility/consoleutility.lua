@@ -77,7 +77,7 @@ CoD.ConsoleUtility.ShowConsoleEntry = function ( f6_arg0, f6_arg1, f6_arg2 )
 	f6_local0 = f6_local0 + f6_arg2 / 2
 	local f6_local5 = function ( f7_arg0 )
 		local f7_local0
-		if f7_arg0 == nil or f7_arg0 == "" or f7_arg0 == 0x0 then
+		if f7_arg0 == nil or f7_arg0 == "" or f7_arg0 == "" then
 			f7_local0 = false
 		else
 			f7_local0 = true
@@ -237,7 +237,7 @@ CoD.ConsoleUtility.ChooseEntryIconImage = function ( f12_arg0 )
 	end
 	local f12_local5 = f12_local3
 	if not Engine[0x238317564B9D47B]( f12_local5 ) then
-		f12_local5 = CoD.HUDUtility.GetModIcon( Enum[0x52177B239BFECC1][0xEBD7B5999BC11B0], f12_local5 )
+		f12_local5 = CoD.HUDUtility.GetModIcon( Enum[0x52177B239BFECC1].mod_suicide, f12_local5 )
 	end
 	local f12_local6 = f12_local5
 	if not f12_local4 then

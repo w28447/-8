@@ -18,7 +18,7 @@ CoD.Common_Tabbar_Center.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local LB = CoD.BumperButtonWithKeyMouseText.new( f1_arg0, f1_arg1, 0.5, 0.5, -1148, -948, 0, 0.56, 17, 17 )
-	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBDCD5292604F434 ) )
+	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/lb" ) )
 	LB.GamepadPrompt:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	self:addElement( LB )
 	self.LB = LB
@@ -57,11 +57,11 @@ CoD.Common_Tabbar_Center.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( left, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		CoD.GridAndListUtility.DoBumperGridButton( f5_arg1, f5_arg2, true )
+	f1_arg0:AddButtonCallbackFunction( left, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.GridAndListUtility.DoBumperGridButton( menu, controller, true )
 		return true
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( left )
@@ -73,7 +73,7 @@ CoD.Common_Tabbar_Center.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.Tabs = Tabs
 	
 	RB = CoD.BumperButtonWithKeyMouseText.new( f1_arg0, f1_arg1, 0.5, 0.5, 876, 1076, 0, 0.56, 17, 17 )
-	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBFED5292621DA9A ) )
+	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/rb" ) )
 	self:addElement( RB )
 	self.RB = RB
 	
@@ -112,11 +112,11 @@ CoD.Common_Tabbar_Center.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f9_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( right, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		CoD.GridAndListUtility.DoBumperGridButton( f10_arg1, f10_arg2, false )
+	f1_arg0:AddButtonCallbackFunction( right, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.GridAndListUtility.DoBumperGridButton( menu, controller, false )
 		return true
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( right )

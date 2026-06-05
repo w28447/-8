@@ -59,8 +59,8 @@ Lobby.BlackMarket.GetPlayerLootStreamState = function ( f8_arg0 )
 	local f8_local1 = f8_arg0.payload
 	local f8_local2 = CoDShared.Loot.GetSeasonInfo( CoDShared.Loot.GetCurrentSeason() )
 	local f8_local3 = tostring( f8_local2.id )
-	local f8_local4 = CoDShared.Loot.GetNextSeason() or 0x0
-	if f8_local4 ~= 0x0 then
+	local f8_local4 = CoDShared.Loot.GetNextSeason() or ""
+	if f8_local4 ~= "" then
 		local f8_local5 = CoDShared.Loot.GetSeasonInfo( f8_local4 )
 		if f8_local5 ~= nil and f8_local5.id ~= nil then
 			f8_local3 = f8_local3 .. ", " .. tostring( f8_local5.id )
@@ -88,7 +88,7 @@ Lobby.BlackMarket.GetPlayerLootStreamState = function ( f8_arg0 )
 		end
 	end
 	local f8_local7 = CoDShared.Loot.GetCurrentEventContract()
-	if f8_local7 ~= nil and f8_local7 ~= 0x0 then
+	if f8_local7 ~= nil and f8_local7 ~= "" then
 		local f8_local8 = CoDShared.Loot.GetContractInfo( f8_local0, f8_local7 )
 		if f8_local8 ~= nil then
 			f8_local3 = f8_local3 .. ", " .. tostring( f8_local8.id )
@@ -253,7 +253,7 @@ Lobby.BlackMarket.OpenSupplyChainLootDrop = function ( f16_arg0 )
 		end
 	end
 	local f16_local5 = CoDShared.Loot.GetCurrentSeason()
-	if f16_local3 ~= nil and f16_local3 ~= 0x0 and f16_local3 ~= f16_local5 then
+	if f16_local3 ~= nil and f16_local3 ~= "" and f16_local3 ~= f16_local5 then
 		Engine.PrintWarning( Enum[0x7A63DCD561B0FA8][0x8DC984EB9B80F9], "Overriding season.\n" )
 		f16_local5 = f16_local3
 	end
@@ -265,13 +265,13 @@ Lobby.BlackMarket.OpenSupplyChainLootDrop = function ( f16_arg0 )
 		local f16_local13 = f16_local8[1]
 		if f16_local13 > 0 then
 			local f16_local14 = CoDShared.Loot.GetStreamName( f16_local13 )
-			if f16_local14 ~= nil and f16_local14 ~= 0x0 and CoDShared.Loot.GetContractInfo( f16_local0, f16_local14 ) ~= nil then
+			if f16_local14 ~= nil and f16_local14 ~= "" and CoDShared.Loot.GetContractInfo( f16_local0, f16_local14 ) ~= nil then
 				f16_local7 = f16_local7 .. ", " .. tostring( f16_local13 )
 			end
 		end
 	end
 	local f16_local9 = CoDShared.Loot.GetCurrentEventContract()
-	if f16_local9 ~= nil and f16_local9 ~= 0x0 then
+	if f16_local9 ~= nil and f16_local9 ~= "" then
 		local f16_local10 = CoDShared.Loot.GetContractInfo( f16_local0, f16_local9 )
 		if f16_local10 ~= nil then
 			f16_local7 = f16_local7 .. ", " .. tostring( f16_local10.id )
@@ -482,7 +482,8 @@ Lobby.BlackMarket.ParseRNGDropDetail = function ( f28_arg0, f28_arg1 )
 		local f28_local9 = {}
 		local f28_local10 = f28_local4[f28_local6]
 		local f28_local11 = f28_local3:getInt( f28_local10 )
-		local f28_local12, f28_local13 = false
+		local f28_local12 = false
+		local f28_local13 = nil
 		if f28_local11 > 0 then
 			if f28_local2 == "rng_no_dupe" then
 				f28_local13 = LuaEnum.LOOT_FLAGS.REROLL
@@ -691,7 +692,7 @@ Lobby.BlackMarket.ZombiesHandleLootDropResponse = function ( f34_arg0, f34_arg1 
 	end
 	local f34_local4 = {}
 	local f34_local5 = {
-		result = 0x0,
+		result = "",
 		quantity = 0
 	}
 	for f34_local6 = 1, f34_local3, 1 do
@@ -712,7 +713,7 @@ Lobby.BlackMarket.ZombiesHandleLootDropResponse = function ( f34_arg0, f34_arg1 
 			local f34_local14 = Engine.TableLookup( Lobby.BlackMarket.lootTableName, 2, 0, f34_local12 )
 			local f34_local15 = f34_local10:getFieldByKey( f34_local11[1] )
 			f34_local15 = f34_local15:getInt()
-			if f34_local14 == 0x3CCF349E72D1F5E then
+			if f34_local14 == "talisman" then
 				f34_local5.result = f34_local13
 				f34_local5.quantity = f34_local15
 			else
@@ -726,7 +727,7 @@ Lobby.BlackMarket.ZombiesHandleLootDropResponse = function ( f34_arg0, f34_arg1 
 	end
 	while #f34_local4 < 3 do
 		table.insert( f34_local4, {
-			result = 0x0,
+			result = "",
 			quantity = 0
 		} )
 	end

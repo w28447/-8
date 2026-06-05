@@ -10,7 +10,7 @@ CoD.AARPlayerReward_DiagonalHeaderInternal.new = function ( f1_arg0, f1_arg1, f1
 	
 	local NineSliceShaderImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0.5, 7.5 )
 	NineSliceShaderImage:setAlpha( 0.2 )
-	NineSliceShaderImage:setImage( RegisterImage( 0xC995977EE51C6E2 ) )
+	NineSliceShaderImage:setImage( RegisterImage( "uie_ui_menu_aar_common_repeat_box" ) )
 	NineSliceShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	NineSliceShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	NineSliceShaderImage:setupNineSliceShader( 3, 3 )
@@ -19,8 +19,8 @@ CoD.AARPlayerReward_DiagonalHeaderInternal.new = function ( f1_arg0, f1_arg1, f1
 	
 	local TopStripeDiagonal = LUI.UIImage.new( -0, 1, 0, 0, 0, 0, 0, 8 )
 	TopStripeDiagonal:setRGB( 0, 0, 0 )
-	TopStripeDiagonal:setImage( RegisterImage( 0xA0F654633E4C64E ) )
-	TopStripeDiagonal:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	TopStripeDiagonal:setImage( RegisterImage( "uie_ui_menu_inspection_window_loading_stripe" ) )
+	TopStripeDiagonal:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	TopStripeDiagonal:setShaderVector( 0, 1, 1, 0, 0 )
 	TopStripeDiagonal:setShaderVector( 1, 0, 0, 0, 0 )
 	self:addElement( TopStripeDiagonal )

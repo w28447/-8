@@ -143,39 +143,39 @@ CoD.DiscountTiersContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f16_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( DiscountList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f17_arg0, f17_arg2, "bundle" ) then
-			SetControllerModelValue( f17_arg2, "LootStreamProgress.playAnimation", false )
-			CoD.BlackMarketUtility.SetHighlightedPurchaseTierForSpecialDeal( f17_arg2, f17_arg1, f17_arg0 )
-			OpenOverlay( self, "ItemShopDetails", f17_arg2, {
-				_model = f17_arg0:getModel()
+	f1_arg0:AddButtonCallbackFunction( DiscountList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( element, controller, "bundle" ) then
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+			CoD.BlackMarketUtility.SetHighlightedPurchaseTierForSpecialDeal( controller, menu, element )
+			OpenOverlay( self, "ItemShopDetails", controller, {
+				_model = element:getModel()
 			} )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueTrue( f17_arg0, f17_arg2, "reservesButton" ) and CoD.ModelUtility.IsSelfModelValueTrue( f17_arg0, f17_arg2, "purchaseReservesItem" ) and CoD.ModelUtility.IsControllerModelValueTrue( f17_arg2, "LootStreamProgress.allRngUnlocked" ) then
-			CoD.BlackMarketUtility.OpenAllReservesOwnedDialog( f17_arg1, f17_arg2 )
+		elseif CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "reservesButton" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "purchaseReservesItem" ) and CoD.ModelUtility.IsControllerModelValueTrue( controller, "LootStreamProgress.allRngUnlocked" ) then
+			CoD.BlackMarketUtility.OpenAllReservesOwnedDialog( menu, controller )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueTrue( f17_arg0, f17_arg2, "reservesButton" ) and CoD.ModelUtility.IsSelfModelValueTrue( f17_arg0, f17_arg2, "purchaseReservesItem" ) and CanPurchaseItem( f17_arg2, f17_arg0 ) then
-			SetControllerModelValue( f17_arg2, "LootStreamProgress.playAnimation", false )
-			OpenOverlay( self, "PurchaseReservesItem", f17_arg2, {
-				_model = DataSources.ReservesLootBundleCrate.getModel( f17_arg2 ),
+		elseif CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "reservesButton" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "purchaseReservesItem" ) and CanPurchaseItem( controller, element ) then
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+			OpenOverlay( self, "PurchaseReservesItem", controller, {
+				_model = DataSources.ReservesLootBundleCrate.getModel( controller ),
 				_properties = {
 					_isOtherBlackMarketTab = true
 				}
 			} )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueTrue( f17_arg0, f17_arg2, "reservesButton" ) and CoD.ModelUtility.IsSelfModelValueTrue( f17_arg0, f17_arg2, "purchaseReservesItem" ) then
-			OpenPopup( self, "PurchaseCodPoints", f17_arg2, f17_arg0:getModel() )
+		elseif CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "reservesButton" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "purchaseReservesItem" ) then
+			OpenPopup( self, "PurchaseCodPoints", controller, element:getModel() )
 			return true
 		else
-			SetControllerModelValue( f17_arg2, "LootStreamProgress.playAnimation", false )
-			CoD.BlackMarketUtility.SpecialDealAction( self, f17_arg0, f17_arg2, f17_arg1 )
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+			CoD.BlackMarketUtility.SpecialDealAction( self, element, controller, menu )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		end
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	DiscountList:linkToElementModel( self, "percentOff", true, function ( model )
@@ -228,14 +228,14 @@ CoD.DiscountTiersContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f22_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ReserveDeals, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
-		OpenOverlay( self, "ItemShopDetails", f23_arg2, {
-			_model = f23_arg0:getModel()
+	f1_arg0:AddButtonCallbackFunction( ReserveDeals, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		OpenOverlay( self, "ItemShopDetails", controller, {
+			_model = element:getModel()
 		} )
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
-	end, function ( f24_arg0, f24_arg1, f24_arg2 )
-		CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( ReserveDeals )

@@ -11,45 +11,45 @@ CoD.MagnifierReticle_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local OutterRing = LUI.UIImage.new( 0, 0, 15, 578, 0, 0, 12, 586 )
 	OutterRing:setRGB( 0.39, 1, 1 )
 	OutterRing:setScale( 1.1, 1.1 )
-	OutterRing:setImage( RegisterImage( 0xE7DCB9E4856392C ) )
+	OutterRing:setImage( RegisterImage( "uie_t7_magnifier_ring" ) )
 	self:addElement( OutterRing )
 	self.OutterRing = OutterRing
 	
 	local OneXring = LUI.UIImage.new( 0, 0, 107, 493, 0, 0, 106, 492 )
 	OneXring:setRGB( 0.39, 1, 1 )
-	OneXring:setImage( RegisterImage( 0x480C4181B61F982 ) )
+	OneXring:setImage( RegisterImage( "uie_t7_magnifier_1x_ring" ) )
 	self:addElement( OneXring )
 	self.OneXring = OneXring
 	
 	local OneX = LUI.UIImage.new( 0, 0, 275, 329, 0, 0, 453, 507 )
 	OneX:setRGB( 0.39, 1, 1 )
-	OneX:setImage( RegisterImage( 0x9892B4B30CD087 ) )
+	OneX:setImage( RegisterImage( "uie_t7_magnifier_1x" ) )
 	self:addElement( OneX )
 	self.OneX = OneX
 	
 	local OutterReticle = LUI.UIImage.new( 0, 0, 260, 342, 0, 0, 258, 340 )
 	OutterReticle:setRGB( 0.39, 1, 1 )
-	OutterReticle:setImage( RegisterImage( 0xA360F48309E968E ) )
+	OutterReticle:setImage( RegisterImage( "uie_t7_magnifier_outterreticle_big" ) )
 	self:addElement( OutterReticle )
 	self.OutterReticle = OutterReticle
 	
 	local ZoomBAr = LUI.UIImage.new( 0, 0, 272, 335, 0, 0, 363, 573 )
 	ZoomBAr:setAlpha( 0 )
-	ZoomBAr:setImage( RegisterImage( 0x923495F5495C365 ) )
+	ZoomBAr:setImage( RegisterImage( "uie_t7_magnifier_zoomout_bar" ) )
 	self:addElement( ZoomBAr )
 	self.ZoomBAr = ZoomBAr
 	
 	local ThreeX = LUI.UIImage.new( 0, 0, 275, 329, 0, 0, 505, 559 )
 	ThreeX:setRGB( 0.39, 1, 1 )
 	ThreeX:setAlpha( 0 )
-	ThreeX:setImage( RegisterImage( 0x9196B4B306B8A5 ) )
+	ThreeX:setImage( RegisterImage( "uie_t7_magnifier_3x" ) )
 	self:addElement( ThreeX )
 	self.ThreeX = ThreeX
 	
 	local ZoomInBar = LUI.UIImage.new( 0, 0, 270, 334, 0, 0, 363, 524 )
 	ZoomInBar:setRGB( 0.39, 0.87, 0.87 )
 	ZoomInBar:setAlpha( 0 )
-	ZoomInBar:setImage( RegisterImage( 0x4AD80D69A66F28D ) )
+	ZoomInBar:setImage( RegisterImage( "uie_t7_magnifier_zoomin_bars" ) )
 	self:addElement( ZoomInBar )
 	self.ZoomInBar = ZoomInBar
 	

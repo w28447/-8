@@ -25,7 +25,7 @@ CoD.Warzone_EMP_Vehicle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local EMP = LUI.UIImage.new( 0, 0, -3, 137, 0, 0, 0, 232 )
 	EMP:setImage( RegisterImage( 0xE320722FF0812EA ) )
-	EMP:setMaterial( LUI.UIImage.GetCachedMaterial( 0xC284ECCBDADEF0B ) )
+	EMP:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_emp" ) )
 	EMP:setShaderVector( 0, 35.93, 0, 0, 0 )
 	EMP:setShaderVector( 1, 0.83, 0, 0, 0 )
 	EMP:setShaderVector( 2, 0.49, 0, 0, 0 )

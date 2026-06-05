@@ -167,7 +167,7 @@ CoD.SelectClassListButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		} )
 	end, false )
 	vhudButtonPromptMinimal:setAlpha( 0 )
-	vhudButtonPromptMinimal.prompt:setText( Engine[0xF9F1239CFD921FE]( 0xAC3B80C833B60E1 ) )
+	vhudButtonPromptMinimal.prompt:setText( Engine[0xF9F1239CFD921FE]( "menu/select_caps" ) )
 	vhudButtonPromptMinimal:subscribeToGlobalModel( f1_arg1, "Controller", "primary_button_image", function ( model )
 		local f14_local0 = model:get()
 		if f14_local0 ~= nil then

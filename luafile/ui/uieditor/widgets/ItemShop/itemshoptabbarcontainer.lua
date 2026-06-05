@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/common/common_tabbar_center" )
 require( "ui/uieditor/widgets/common/commontabbarbacking" )
-require( "x64:c7ee4ce0a7a0397" )
+require( "ui/uieditor/widgets/itemshop/quartermastertab" )
 require( "ui/uieditor/widgets/startmenu/startmenu_codpoints" )
 
 CoD.ItemShopTabBarContainer = InheritFrom( LUI.UIElement )

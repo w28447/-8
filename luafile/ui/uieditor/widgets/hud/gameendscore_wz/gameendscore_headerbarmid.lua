@@ -23,7 +23,7 @@ CoD.GameEndScore_HeaderBarMid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local Grid = LUI.UIImage.new( 0, 1, 0, 0, -0, 1, 0, 0 )
 	Grid:setRGB( 0, 0, 0 )
 	Grid:setAlpha( 0.5 )
-	Grid:setImage( RegisterImage( 0x2F926473EDCBFCA ) )
+	Grid:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_grid" ) )
 	Grid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	Grid:setShaderVector( 0, 0, 0, 0, 0 )
 	Grid:setupNineSliceShader( 22, 20 )
@@ -54,7 +54,7 @@ CoD.GameEndScore_HeaderBarMid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local CommonStripes01Tiled = LUI.UIImage.new( 0, 1, 0, 0, 0.5, 0.5, -24, 26 )
 	CommonStripes01Tiled:setRGB( 0, 0, 0 )
-	CommonStripes01Tiled:setImage( RegisterImage( 0x649895CFFA4963D ) )
+	CommonStripes01Tiled:setImage( RegisterImage( "uie_ui_menu_common_stripes01" ) )
 	CommonStripes01Tiled:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	CommonStripes01Tiled:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonStripes01Tiled:setupNineSliceShader( 66, 48 )
@@ -63,18 +63,18 @@ CoD.GameEndScore_HeaderBarMid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local Barcode = LUI.UIImage.new( 0, 0, -1, 131, 0, 0, 83, 93 )
 	Barcode:setAlpha( 0 )
-	Barcode:setImage( RegisterImage( 0xF6039431B0986D6 ) )
+	Barcode:setImage( RegisterImage( "uie_ui_hud_wz_endgame_barcode_blur" ) )
 	self:addElement( Barcode )
 	self.Barcode = Barcode
 	
 	local FrameTop = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, -1, 15 )
-	FrameTop:setImage( RegisterImage( 0xA924FF7151BEECF ) )
+	FrameTop:setImage( RegisterImage( "uie_ui_hud_wz_endgame_frame" ) )
 	self:addElement( FrameTop )
 	self.FrameTop = FrameTop
 	
 	local FrameBot = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -15, 1 )
 	FrameBot:setXRot( 180 )
-	FrameBot:setImage( RegisterImage( 0xA924FF7151BEECF ) )
+	FrameBot:setImage( RegisterImage( "uie_ui_hud_wz_endgame_frame" ) )
 	self:addElement( FrameBot )
 	self.FrameBot = FrameBot
 	

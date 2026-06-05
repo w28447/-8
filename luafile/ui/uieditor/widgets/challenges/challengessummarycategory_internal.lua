@@ -43,14 +43,14 @@ CoD.ChallengesSummaryCategory_Internal.new = function ( f1_arg0, f1_arg1, f1_arg
 	local BackgroundRing = LUI.UIImage.new( 0.5, 0.5, -60, 60, 0.5, 0.5, -86, 34 )
 	BackgroundRing:setRGB( 0.36, 0.36, 0.36 )
 	BackgroundRing:setAlpha( 0.15 )
-	BackgroundRing:setImage( RegisterImage( 0x47AA86BE90A2F0C ) )
+	BackgroundRing:setImage( RegisterImage( "uie_t7_menu_aar_whiteringback" ) )
 	self:addElement( BackgroundRing )
 	self.BackgroundRing = BackgroundRing
 	
 	local percentCompleteCircle = LUI.UIImage.new( 0.5, 0.5, -60, 60, 0.5, 0.5, -86.5, 33.5 )
 	percentCompleteCircle:setRGB( 0.95, 0.91, 0.11 )
 	percentCompleteCircle:setAlpha( 0.9 )
-	percentCompleteCircle:setImage( RegisterImage( 0xF00B924BA10A94C ) )
+	percentCompleteCircle:setImage( RegisterImage( "uie_t7_menu_aar_whiteringthin" ) )
 	percentCompleteCircle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	percentCompleteCircle:setShaderVector( 1, 0.5, 0, 0, 0 )
 	percentCompleteCircle:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -82,13 +82,13 @@ CoD.ChallengesSummaryCategory_Internal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local Icon = LUI.UIImage.new( 0.5, 0.5, -85, 85, 0.5, 0.5, -111.5, 58.5 )
 	Icon:setScale( 0.75, 0.75 )
-	Icon:setImage( RegisterImage( 0x8F9972AD987B75F ) )
+	Icon:setImage( RegisterImage( "uie_t7_icons_classification_operations" ) )
 	self:addElement( Icon )
 	self.Icon = Icon
 	
 	local Name = LUI.UIText.new( 0.5, 0.5, -94, 94, 0.5, 0.5, 53.5, 71.5 )
 	Name:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
-	Name:setText( Engine[0xF9F1239CFD921FE]( 0x5662A3E5DC08B87 ) )
+	Name:setText( Engine[0xF9F1239CFD921FE]( "menu/operations_caps" ) )
 	Name:setTTF( "ttmussels_regular" )
 	Name:setLetterSpacing( 2 )
 	Name:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -112,8 +112,8 @@ CoD.ChallengesSummaryCategory_Internal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local CompletedImage = LUI.UIImage.new( 0, 0, 39, 68, 0, 0, 188, 217 )
 	CompletedImage:setAlpha( 0 )
-	CompletedImage:setImage( RegisterImage( 0x98D02A0405ED520 ) )
-	CompletedImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x655565C7B387234 ) )
+	CompletedImage:setImage( RegisterImage( "uie_ui_icon_challenges_complete_small" ) )
+	CompletedImage:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_multiply" ) )
 	self:addElement( CompletedImage )
 	self.CompletedImage = CompletedImage
 	
@@ -156,7 +156,7 @@ CoD.ChallengesSummaryCategory_Internal.__resetProperties = function ( f5_arg0 )
 	f5_arg0.Icon:setAlpha( 1 )
 	f5_arg0.CompletedImage:setLeftRight( 0, 0, 39, 68 )
 	f5_arg0.CompletedImage:setAlpha( 0 )
-	f5_arg0.CompletedImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x655565C7B387234 ) )
+	f5_arg0.CompletedImage:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_multiply" ) )
 	f5_arg0.NoiseTiledBacking:setLeftRight( 0, 1, 0, 0 )
 	f5_arg0.DotTiledBacking:setLeftRight( 0, 1, 0, 0 )
 	f5_arg0.ButtonOutline:setLeftRight( 0, 1, 0, 0 )

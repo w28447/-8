@@ -32,57 +32,57 @@ CoD.ArenaRubyProgressFiveWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.RedBar05 = RedBar05
 	
 	local frame1 = LUI.UIImage.new( 0, 0, 68, 108, 0, 0, 0, 40 )
-	frame1:setImage( RegisterImage( 0x81EAB9F8F5950E7 ) )
+	frame1:setImage( RegisterImage( "uie_ui_menu_arena_rubyframe" ) )
 	self:addElement( frame1 )
 	self.frame1 = frame1
 	
 	local gem1 = LUI.UIImage.new( 0, 0, 68, 108, 0, 0, 0, 40 )
 	gem1:setAlpha( 0 )
-	gem1:setImage( RegisterImage( 0x17ED8E3A9A3FC36 ) )
+	gem1:setImage( RegisterImage( "uie_ui_menu_arena_ruby" ) )
 	self:addElement( gem1 )
 	self.gem1 = gem1
 	
 	local frame2 = LUI.UIImage.new( 0, 0, 255, 295, 0, 0, 0, 40 )
-	frame2:setImage( RegisterImage( 0x81EAB9F8F5950E7 ) )
+	frame2:setImage( RegisterImage( "uie_ui_menu_arena_rubyframe" ) )
 	self:addElement( frame2 )
 	self.frame2 = frame2
 	
 	local gem2 = LUI.UIImage.new( 0, 0, 255, 295, 0, 0, 0, 40 )
 	gem2:setAlpha( 0 )
-	gem2:setImage( RegisterImage( 0x17ED8E3A9A3FC36 ) )
+	gem2:setImage( RegisterImage( "uie_ui_menu_arena_ruby" ) )
 	self:addElement( gem2 )
 	self.gem2 = gem2
 	
 	local frame3 = LUI.UIImage.new( 0, 0, 443, 483, 0, 0, 0, 40 )
-	frame3:setImage( RegisterImage( 0x81EAB9F8F5950E7 ) )
+	frame3:setImage( RegisterImage( "uie_ui_menu_arena_rubyframe" ) )
 	self:addElement( frame3 )
 	self.frame3 = frame3
 	
 	local gem3 = LUI.UIImage.new( 0, 0, 443, 483, 0, 0, 0, 40 )
 	gem3:setAlpha( 0 )
-	gem3:setImage( RegisterImage( 0x17ED8E3A9A3FC36 ) )
+	gem3:setImage( RegisterImage( "uie_ui_menu_arena_ruby" ) )
 	self:addElement( gem3 )
 	self.gem3 = gem3
 	
 	local frame4 = LUI.UIImage.new( 0, 0, 630.5, 670.5, 0, 0, 0, 40 )
-	frame4:setImage( RegisterImage( 0x81EAB9F8F5950E7 ) )
+	frame4:setImage( RegisterImage( "uie_ui_menu_arena_rubyframe" ) )
 	self:addElement( frame4 )
 	self.frame4 = frame4
 	
 	local gem4 = LUI.UIImage.new( 0, 0, 630.5, 670.5, 0, 0, 0, 40 )
 	gem4:setAlpha( 0 )
-	gem4:setImage( RegisterImage( 0x17ED8E3A9A3FC36 ) )
+	gem4:setImage( RegisterImage( "uie_ui_menu_arena_ruby" ) )
 	self:addElement( gem4 )
 	self.gem4 = gem4
 	
 	local frame5 = LUI.UIImage.new( 0, 0, 818.5, 858.5, 0, 0, 0, 40 )
-	frame5:setImage( RegisterImage( 0x81EAB9F8F5950E7 ) )
+	frame5:setImage( RegisterImage( "uie_ui_menu_arena_rubyframe" ) )
 	self:addElement( frame5 )
 	self.frame5 = frame5
 	
 	local gem5 = LUI.UIImage.new( 0, 0, 818.5, 858.5, 0, 0, 0, 40 )
 	gem5:setAlpha( 0 )
-	gem5:setImage( RegisterImage( 0x17ED8E3A9A3FC36 ) )
+	gem5:setImage( RegisterImage( "uie_ui_menu_arena_ruby" ) )
 	self:addElement( gem5 )
 	self.gem5 = gem5
 	

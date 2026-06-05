@@ -25,14 +25,14 @@ CoD.GameEndScoreCenterWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local CircleBaseLarge = LUI.UIImage.new( 0.5, 0.5, -70, 70, 0.5, 0.5, -70, 70 )
 	CircleBaseLarge:setRGB( 0, 0, 0 )
 	CircleBaseLarge:setAlpha( 0.3 )
-	CircleBaseLarge:setImage( RegisterImage( 0xF52F421F52D0B40 ) )
+	CircleBaseLarge:setImage( RegisterImage( "uie_ui_hud_common_draft_timer_backer" ) )
 	self:addElement( CircleBaseLarge )
 	self.CircleBaseLarge = CircleBaseLarge
 	
 	local CircleBaseSmall = LUI.UIImage.new( 0.5, 0.5, -50, 50, 0.5, 0.5, -50, 50 )
 	CircleBaseSmall:setRGB( 0, 0, 0 )
 	CircleBaseSmall:setScale( 1.1, 1.1 )
-	CircleBaseSmall:setImage( RegisterImage( 0xF52F421F52D0B40 ) )
+	CircleBaseSmall:setImage( RegisterImage( "uie_ui_hud_common_draft_timer_backer" ) )
 	self:addElement( CircleBaseSmall )
 	self.CircleBaseSmall = CircleBaseSmall
 	
@@ -53,7 +53,7 @@ CoD.GameEndScoreCenterWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local Versus = LUI.UIText.new( 0.5, 0.5, -150, 150, 0.5, 0.5, -20, 20 )
 	Versus:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	Versus:setText( Engine[0xF9F1239CFD921FE]( 0x4F347C78B3F5793 ) )
+	Versus:setText( Engine[0xF9F1239CFD921FE]( "mp/versus" ) )
 	Versus:setTTF( "0arame_mono_stencil" )
 	Versus:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Versus:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

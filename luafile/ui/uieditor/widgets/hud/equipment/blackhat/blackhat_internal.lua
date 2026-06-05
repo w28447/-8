@@ -20,12 +20,12 @@ CoD.BlackHat_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.BLACKBG = BLACKBG
 	
 	local BgScanning = LUI.UIImage.new( 0, 1, -36, 40, 0, 1, 0, 0 )
-	BgScanning:setImage( RegisterImage( 0x70B1C060E003815 ) )
+	BgScanning:setImage( RegisterImage( "uie_t7_hud_blackhat_bg_scanning" ) )
 	self:addElement( BgScanning )
 	self.BgScanning = BgScanning
 	
 	local BgScanningDetail = LUI.UIImage.new( 0, 1, -36, 40, 0, 1, 0, 0 )
-	BgScanningDetail:setImage( RegisterImage( 0x57BF1B68847BD04 ) )
+	BgScanningDetail:setImage( RegisterImage( "uie_t7_hud_blackhat_bg_scanningdetail" ) )
 	self:addElement( BgScanningDetail )
 	self.BgScanningDetail = BgScanningDetail
 	
@@ -37,76 +37,76 @@ CoD.BlackHat_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local BgHackingDetail = LUI.UIImage.new( 0, 1, -36, 40, 0, 1, 0, 0 )
 	BgHackingDetail:setAlpha( 0 )
-	BgHackingDetail:setImage( RegisterImage( 0x96AE82E230B600C ) )
+	BgHackingDetail:setImage( RegisterImage( "uie_t7_hud_blackhat_bg_hackingdetail" ) )
 	self:addElement( BgHackingDetail )
 	self.BgHackingDetail = BgHackingDetail
 	
 	local BgBreaching = LUI.UIImage.new( 0, 1, -36, 40, 0, 1, 0, 0 )
 	BgBreaching:setAlpha( 0 )
-	BgBreaching:setImage( RegisterImage( 0x3317970513EDD35 ) )
+	BgBreaching:setImage( RegisterImage( "uie_t7_hud_blackhat_bg_breaching" ) )
 	self:addElement( BgBreaching )
 	self.BgBreaching = BgBreaching
 	
 	local BgBreachingDetail = LUI.UIImage.new( 0, 1, -36, 40, 0, 1, 0, 0 )
 	BgBreachingDetail:setAlpha( 0 )
-	BgBreachingDetail:setImage( RegisterImage( 0xB3EA20872803D24 ) )
+	BgBreachingDetail:setImage( RegisterImage( "uie_t7_hud_blackhat_bg_breachingdetail" ) )
 	self:addElement( BgBreachingDetail )
 	self.BgBreachingDetail = BgBreachingDetail
 	
 	local BgError = LUI.UIImage.new( 0, 0, -36, 423, 0, 0, 0, 384 )
 	BgError:setAlpha( 0 )
-	BgError:setImage( RegisterImage( 0x664146706333EC ) )
+	BgError:setImage( RegisterImage( "uie_t7_hud_blackhat_bg_error" ) )
 	self:addElement( BgError )
 	self.BgError = BgError
 	
 	local BgErrorDetail = LUI.UIImage.new( 0, 0, -36, 424, 0, 0, 0, 384 )
 	BgErrorDetail:setAlpha( 0 )
-	BgErrorDetail:setImage( RegisterImage( 0xF55CC4AAE9AFA7D ) )
+	BgErrorDetail:setImage( RegisterImage( "uie_t7_hud_blackhat_bg_errordetail" ) )
 	self:addElement( BgErrorDetail )
 	self.BgErrorDetail = BgErrorDetail
 	
 	local BgErrorXmarks = LUI.UIImage.new( 0, 0, -36, 424, 0, 0, 0, 384 )
 	BgErrorXmarks:setAlpha( 0 )
-	BgErrorXmarks:setImage( RegisterImage( 0x453AE50C670B89F ) )
+	BgErrorXmarks:setImage( RegisterImage( "uie_t7_hud_blackhat_bg_error_xmarks" ) )
 	self:addElement( BgErrorXmarks )
 	self.BgErrorXmarks = BgErrorXmarks
 	
 	local BgErrorStripes = LUI.UIImage.new( 0, 0, -36, 424, 0, 0, 0, 384 )
 	BgErrorStripes:setAlpha( 0 )
-	BgErrorStripes:setImage( RegisterImage( 0xF505025B2955E39 ) )
+	BgErrorStripes:setImage( RegisterImage( "uie_t7_hud_blackhat_bg_error_stripes" ) )
 	self:addElement( BgErrorStripes )
 	self.BgErrorStripes = BgErrorStripes
 	
 	local BgErrorIcon = LUI.UIImage.new( 0, 0, -36, 424, 0, 0, 0, 384 )
 	BgErrorIcon:setAlpha( 0 )
-	BgErrorIcon:setImage( RegisterImage( 0x9F979BF146FC8E4 ) )
+	BgErrorIcon:setImage( RegisterImage( "uie_t7_hud_blackhat_bg_error_icon" ) )
 	self:addElement( BgErrorIcon )
 	self.BgErrorIcon = BgErrorIcon
 	
 	local BfErrorIconGlow = LUI.UIImage.new( 0, 0, -36, 424, 0, 0, 0, 384 )
 	BfErrorIconGlow:setAlpha( 0 )
-	BfErrorIconGlow:setImage( RegisterImage( 0x88F89D6F2871B15 ) )
+	BfErrorIconGlow:setImage( RegisterImage( "uie_t7_hud_blackhat_bg_error_iconglow" ) )
 	self:addElement( BfErrorIconGlow )
 	self.BfErrorIconGlow = BfErrorIconGlow
 	
 	local IconScanning = LUI.UIImage.new( 0, 1, -9, -295, 0, 1, 248, 0 )
 	IconScanning:setAlpha( 0 )
 	IconScanning:setScale( 0.8, 0.8 )
-	IconScanning:setImage( RegisterImage( 0xAB7117CC080E644 ) )
+	IconScanning:setImage( RegisterImage( "uie_t7_hud_blackhat_iconscanning" ) )
 	self:addElement( IconScanning )
 	self.IconScanning = IconScanning
 	
 	local IconBreaching = LUI.UIImage.new( 0, 1, -9, -295, 0, 1, 248, 0 )
 	IconBreaching:setAlpha( 0 )
 	IconBreaching:setScale( 0.8, 0.8 )
-	IconBreaching:setImage( RegisterImage( 0x9E09B273AB6D83E ) )
+	IconBreaching:setImage( RegisterImage( "uie_t7_hud_blackhat_iconbreaching" ) )
 	self:addElement( IconBreaching )
 	self.IconBreaching = IconBreaching
 	
 	local IconHacking = LUI.UIImage.new( 0, 1, -9, -295, 0, 1, 248, 0 )
 	IconHacking:setAlpha( 0 )
 	IconHacking:setScale( 0.8, 0.8 )
-	IconHacking:setImage( RegisterImage( 0x94ACFEDB213255A ) )
+	IconHacking:setImage( RegisterImage( "uie_t7_hud_blackhat_iconhacking" ) )
 	self:addElement( IconHacking )
 	self.IconHacking = IconHacking
 	
@@ -358,7 +358,7 @@ CoD.BlackHat_Internal.__clipsPerState = {
 			
 			f12_arg0.StatusText:completeAnimation()
 			f12_arg0.StatusText:setAlpha( 1 )
-			f12_arg0.StatusText:setText( Engine[0xF9F1239CFD921FE]( 0x5B0BB8A5179067B ) )
+			f12_arg0.StatusText:setText( Engine[0xF9F1239CFD921FE]( "mpui/blackhat_scanning" ) )
 			f12_local2( f12_arg0.StatusText )
 			f12_arg0.PercentText:beginAnimation( 870 )
 			f12_arg0.PercentText:setAlpha( 1 )
@@ -536,7 +536,7 @@ CoD.BlackHat_Internal.__clipsPerState = {
 			
 			f32_arg0.StatusText:completeAnimation()
 			f32_arg0.StatusText:setAlpha( 1 )
-			f32_arg0.StatusText:setText( Engine[0xF9F1239CFD921FE]( 0x292DF57CA31383 ) )
+			f32_arg0.StatusText:setText( Engine[0xF9F1239CFD921FE]( "mpui/blackhat_breaching" ) )
 			f32_local4( f32_arg0.StatusText )
 			f32_arg0.PercentText:beginAnimation( 870 )
 			f32_arg0.PercentText:setAlpha( 1 )

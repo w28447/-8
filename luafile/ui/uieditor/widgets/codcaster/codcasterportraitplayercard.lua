@@ -110,7 +110,7 @@ CoD.CodCasterPortraitPlayerCard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.FlareVerticalSlide = FlareVerticalSlide
 	
 	local FlareBase = LUI.UIImage.new( 0, 0, -46.5, 133.5, 0, 0, -27.5, 152.5 )
-	FlareBase:setImage( RegisterImage( 0xC4CCD81B90B0241 ) )
+	FlareBase:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
 	FlareBase:subscribeToGlobalModel( f1_arg1, "DeadSpectate", "playerIndex", function ( model )
 		local f7_local0 = model:get()
 		if f7_local0 ~= nil then

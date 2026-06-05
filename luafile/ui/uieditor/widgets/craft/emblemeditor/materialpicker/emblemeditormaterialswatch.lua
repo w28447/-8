@@ -86,18 +86,18 @@ CoD.EmblemEditorMaterialSwatch.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( materialSwatch, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f5_arg0, f5_arg2, "isBMClassified" ) then
-			GoBack( self, f5_arg2 )
-			CoD.CraftUtility.EmblemChooseMaterial_SelectionChanged( self, f5_arg0, f5_arg2 )
-			ClearMenuSavedState( f5_arg1 )
+	f1_arg0:AddButtonCallbackFunction( materialSwatch, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isBMClassified" ) then
+			GoBack( self, controller )
+			CoD.CraftUtility.EmblemChooseMaterial_SelectionChanged( self, element, controller )
+			ClearMenuSavedState( menu )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f6_arg0, f6_arg2, "isBMClassified" ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isBMClassified" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -122,12 +122,12 @@ CoD.EmblemEditorMaterialSwatch.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f8_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( lastSavedColor, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		GoBack( self, f9_arg2 )
-		ClearMenuSavedState( f9_arg1 )
+	f1_arg0:AddButtonCallbackFunction( lastSavedColor, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
+		ClearMenuSavedState( menu )
 		return true
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( lastSavedColor )
@@ -167,7 +167,7 @@ CoD.EmblemEditorMaterialSwatch.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local Materials = LUI.UIText.new( 0, 0, 0, 200, 0, 0, -17, -2 )
 	Materials:setRGB( 0.92, 0.89, 0.72 )
-	Materials:setText( LocalizeToUpperString( "MENU/MATERIAL_PICKER" ) )
+	Materials:setText( LocalizeToUpperString( "menu/material_picker" ) )
 	Materials:setTTF( "ttmussels_demibold" )
 	Materials:setLetterSpacing( 6 )
 	Materials:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

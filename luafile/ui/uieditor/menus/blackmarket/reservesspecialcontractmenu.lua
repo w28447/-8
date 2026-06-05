@@ -181,7 +181,7 @@ LUI.createMenu.ReservesSpecialContractMenu = function ( f1_arg0, f1_arg1 )
 	
 	local Gradient = LUI.UIImage.new( 0.5, 0.5, -397.5, 397.5, 0.5, 0.5, -176, 193 )
 	Gradient:setAlpha( 0.01 )
-	Gradient:setImage( RegisterImage( 0xCA43165960A9EAA ) )
+	Gradient:setImage( RegisterImage( "uie_ui_menu_aar_levelup_gradientglow" ) )
 	self:addElement( Gradient )
 	self.Gradient = Gradient
 	
@@ -254,7 +254,7 @@ LUI.createMenu.ReservesSpecialContractMenu = function ( f1_arg0, f1_arg1 )
 	
 	local infoBracketTop = LUI.UIImage.new( 0.5, 0.5, -398.5, 399.5, 0.5, 0.5, -180, -148 )
 	infoBracketTop:setAlpha( 0.6 )
-	infoBracketTop:setImage( RegisterImage( 0xCAD52FFFB7C32C1 ) )
+	infoBracketTop:setImage( RegisterImage( "uie_ui_menu_aar_common_bracket" ) )
 	infoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketTop:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketTop:setupNineSliceShader( 10, 16 )
@@ -270,7 +270,7 @@ LUI.createMenu.ReservesSpecialContractMenu = function ( f1_arg0, f1_arg1 )
 	self.AmbientTopRepeatBar = AmbientTopRepeatBar
 	
 	local AmbientTopBar = LUI.UIImage.new( 0.5, 0.5, 214.5, 402.5, 0.5, 0.5, -194, -174 )
-	AmbientTopBar:setImage( RegisterImage( 0x8C511B26DCEEE3E ) )
+	AmbientTopBar:setImage( RegisterImage( "uie_ui_menu_aar_levelup_reward_bar" ) )
 	AmbientTopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( AmbientTopBar )
 	self.AmbientTopBar = AmbientTopBar
@@ -281,11 +281,11 @@ LUI.createMenu.ReservesSpecialContractMenu = function ( f1_arg0, f1_arg1 )
 	self:addElement( LayoutElement02 )
 	self.LayoutElement02 = LayoutElement02
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
-		GoBack( self, f16_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f17_arg0, f17_arg1, f17_arg2 )
-		CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	FooterContainerFrontendRight:setModel( self.buttonModel, f1_arg0 )

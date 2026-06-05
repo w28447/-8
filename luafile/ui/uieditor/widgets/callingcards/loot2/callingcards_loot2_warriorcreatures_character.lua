@@ -12,7 +12,7 @@ CoD.callingcards_loot2_warriorcreatures_character.new = function ( f1_arg0, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local shield = LUI.UIImage.new( 0, 0, 0, 416, 0, 0, 0, 328 )
-	shield:setImage( RegisterImage( 0x7CAE7CD11BB4BC2 ) )
+	shield:setImage( RegisterImage( "uie_ui_menu_callingcards_warriorcreatures_shield" ) )
 	self:addElement( shield )
 	self.shield = shield
 	
@@ -25,7 +25,7 @@ CoD.callingcards_loot2_warriorcreatures_character.new = function ( f1_arg0, f1_a
 	self.hat = hat
 	
 	local character01 = LUI.UIImage.new( 0, 0, 91, 555, 0, 0, 72, 328 )
-	character01:setImage( RegisterImage( 0x494FE42DF3F623 ) )
+	character01:setImage( RegisterImage( "uie_ui_menu_callingcards_warriorcreatures_char" ) )
 	self:addElement( character01 )
 	self.character01 = character01
 	

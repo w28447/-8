@@ -103,8 +103,8 @@ CoD.zm_game_over.__resetProperties = function ( f4_arg0 )
 	f4_arg0.RestartLevelPrompt:setAlpha( 1 )
 	f4_arg0.Scoreboard:setAlpha( 1 )
 	f4_arg0.TitleSequence:setAlpha( 1 )
-	f4_arg0.TitleSequence.TitleShadow:setText( Engine[0xF9F1239CFD921FE]( 0x22EF41D702EE72D ) )
-	f4_arg0.TitleSequence.Title:setText( Engine[0xF9F1239CFD921FE]( 0x22EF41D702EE72D ) )
+	f4_arg0.TitleSequence.TitleShadow:setText( Engine[0xF9F1239CFD921FE]( "zombie/game_over" ) )
+	f4_arg0.TitleSequence.Title:setText( Engine[0xF9F1239CFD921FE]( "zombie/game_over" ) )
 end
 
 CoD.zm_game_over.__clipsPerState = {

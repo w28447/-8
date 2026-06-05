@@ -12,7 +12,7 @@ CoD.vhud_dart_frameLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local FrameGraphicLeft = LUI.UIImage.new( 0, 0, 74, 110, 0, 0, 0, 484 )
 	FrameGraphicLeft:setAlpha( 0.8 )
-	FrameGraphicLeft:setImage( RegisterImage( 0xCCB3C262A05836A ) )
+	FrameGraphicLeft:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_frame_graphic_left" ) )
 	FrameGraphicLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FrameGraphicLeft:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FrameGraphicLeft )
@@ -43,12 +43,12 @@ CoD.vhud_dart_frameLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local FrameBoxesLeft = LUI.UIImage.new( 0, 0, 0, 74, 0, 0, 224, 260 )
 	FrameBoxesLeft:setRGB( 0, 0, 0 )
 	FrameBoxesLeft:setAlpha( 0.7 )
-	FrameBoxesLeft:setImage( RegisterImage( 0xC6FA7184B0307E7 ) )
+	FrameBoxesLeft:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_frame_boxes" ) )
 	self:addElement( FrameBoxesLeft )
 	self.FrameBoxesLeft = FrameBoxesLeft
 	
 	local FrameEngineLeft = LUI.UIImage.new( 0, 0, 161, 201, 0, 0, 235, 281 )
-	FrameEngineLeft:setImage( RegisterImage( 0x5338AA8246DD618 ) )
+	FrameEngineLeft:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_frame_engine" ) )
 	FrameEngineLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FrameEngineLeft:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( FrameEngineLeft )
@@ -56,14 +56,14 @@ CoD.vhud_dart_frameLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local FrameBoxesLeftAdd = LUI.UIImage.new( 0, 0, 0, 74, 0, 0, 224, 260 )
 	FrameBoxesLeftAdd:setAlpha( 0 )
-	FrameBoxesLeftAdd:setImage( RegisterImage( 0xC6FA7184B0307E7 ) )
+	FrameBoxesLeftAdd:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_frame_boxes" ) )
 	FrameBoxesLeftAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FrameBoxesLeftAdd:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( FrameBoxesLeftAdd )
 	self.FrameBoxesLeftAdd = FrameBoxesLeftAdd
 	
 	local DotL = LUI.UIImage.new( 0.5, 0.5, -53.5, -37.5, 0.5, 0.5, -6, 6 )
-	DotL:setImage( RegisterImage( 0x99A8C3E368A2195 ) )
+	DotL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_indicator" ) )
 	DotL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotL )
 	self.DotL = DotL

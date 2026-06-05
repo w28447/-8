@@ -39,33 +39,33 @@ CoD.CodCasterPortraitPlayerListEntryExtra.new = function ( f1_arg0, f1_arg1, f1_
 	self.PlayerListEntryObjective = PlayerListEntryObjective
 	
 	local PlayerListEntryKillIcon = LUI.UIImage.new( 0.05, 0.05, 4, 16, 0.21, 0.21, -7, 5 )
-	PlayerListEntryKillIcon:setImage( RegisterImage( 0xD6EA61A12AEADCE ) )
+	PlayerListEntryKillIcon:setImage( RegisterImage( "uie_codcaster_player_list_entry_kill" ) )
 	PlayerListEntryKillIcon:setupUIStreamedImage( 0 )
 	self:addElement( PlayerListEntryKillIcon )
 	self.PlayerListEntryKillIcon = PlayerListEntryKillIcon
 	
 	local PlayerListEntryDeathIcon = LUI.UIImage.new( 0.24, 0.24, 2, 14, 0.18, 0.18, -5, 5 )
-	PlayerListEntryDeathIcon:setImage( RegisterImage( 0x9E55E6818C34348 ) )
+	PlayerListEntryDeathIcon:setImage( RegisterImage( "uie_codcaster_player_list_entry_death" ) )
 	PlayerListEntryDeathIcon:setupUIStreamedImage( 0 )
 	self:addElement( PlayerListEntryDeathIcon )
 	self.PlayerListEntryDeathIcon = PlayerListEntryDeathIcon
 	
 	local PlayerListEntryStreakIcon = LUI.UIImage.new( 0.5, 0.5, -7, 9, 0.21, 0.21, -6, 4 )
-	PlayerListEntryStreakIcon:setImage( RegisterImage( 0x6323B83A0678830 ) )
+	PlayerListEntryStreakIcon:setImage( RegisterImage( "uie_codcaster_player_list_entry_streak" ) )
 	PlayerListEntryStreakIcon:setupUIStreamedImage( 0 )
 	self:addElement( PlayerListEntryStreakIcon )
 	self.PlayerListEntryStreakIcon = PlayerListEntryStreakIcon
 	
 	local PlayerListEntryObjectiveIcon = LUI.UIImage.new( 0.82, 0.82, -12, -2, 0.21, 0.21, -6.5, 3.5 )
 	PlayerListEntryObjectiveIcon:setScale( 1.2, 1.2 )
-	PlayerListEntryObjectiveIcon:setImage( RegisterImage( 0x159D9B7B7294C91 ) )
+	PlayerListEntryObjectiveIcon:setImage( RegisterImage( "uie_ui_hud_core_waypoint_led" ) )
 	PlayerListEntryObjectiveIcon:setupUIStreamedImage( 0 )
 	self:addElement( PlayerListEntryObjectiveIcon )
 	self.PlayerListEntryObjectiveIcon = PlayerListEntryObjectiveIcon
 	
 	local PlayerListEntryObjectiveIcon2 = LUI.UIImage.new( 0.82, 0.82, -11, -1, 0.21, 0.21, -6.5, 3.5 )
 	PlayerListEntryObjectiveIcon2:setScale( 1.2, 1.2 )
-	PlayerListEntryObjectiveIcon2:setImage( RegisterImage( 0x2E4DBA41E983343 ) )
+	PlayerListEntryObjectiveIcon2:setImage( RegisterImage( "uie_ui_hud_core_waypoint_domination_fill_02" ) )
 	PlayerListEntryObjectiveIcon2:setupUIStreamedImage( 0 )
 	self:addElement( PlayerListEntryObjectiveIcon2 )
 	self.PlayerListEntryObjectiveIcon2 = PlayerListEntryObjectiveIcon2

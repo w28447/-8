@@ -11,7 +11,7 @@ CoD.CallingCards_replacer_scooter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local scooter = LUI.UIImage.new( 0, 0, 0, 496, 0, 0, 0, 240 )
-	scooter:setImage( RegisterImage( 0x992AED67DBD0726 ) )
+	scooter:setImage( RegisterImage( "uie_ui_icon_callingcards_replacer_scooter" ) )
 	self:addElement( scooter )
 	self.scooter = scooter
 	

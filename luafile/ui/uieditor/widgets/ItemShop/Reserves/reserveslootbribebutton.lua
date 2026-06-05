@@ -31,7 +31,7 @@ CoD.ReservesLootBribeButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.FocusGlow = FocusGlow
 	
 	local NineSliceBMFrame = LUI.UIImage.new( 0, 1, -3, 3, 0, 1, -3, 3 )
-	NineSliceBMFrame:setImage( RegisterImage( 0x1AC151A09D526DC ) )
+	NineSliceBMFrame:setImage( RegisterImage( "uie_ui_menu_blackmarket_button_frame" ) )
 	NineSliceBMFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	NineSliceBMFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	NineSliceBMFrame:setupNineSliceShader( 162, 52 )
@@ -45,7 +45,7 @@ CoD.ReservesLootBribeButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local Title = LUI.UIText.new( 0, 0, 7, 159, 0, 0, 12, 30 )
 	Title:setRGB( 0.11, 0.11, 0.11 )
-	Title:setText( LocalizeToUpperString( 0xABC9E44852AC644 ) )
+	Title:setText( LocalizeToUpperString( "menu/bribes" ) )
 	Title:setTTF( "ttmussels_demibold" )
 	Title:setLetterSpacing( 2 )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

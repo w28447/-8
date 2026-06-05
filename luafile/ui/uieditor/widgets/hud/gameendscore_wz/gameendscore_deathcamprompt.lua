@@ -35,14 +35,14 @@ CoD.GameEndScore_DeathCamPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.ButtonIcon = ButtonIcon
 	
 	local WaypointBacker = LUI.UIImage.new( 0.5, 0.5, -53, 23, 0.5, 0.5, -73, 3 )
-	WaypointBacker:setImage( RegisterImage( 0x8DDD1FDE43242E1 ) )
+	WaypointBacker:setImage( RegisterImage( "uie_ui_hud_core_waypoint_domination_backer" ) )
 	self:addElement( WaypointBacker )
 	self.WaypointBacker = WaypointBacker
 	
 	local WaypointPattern = LUI.UIImage.new( 0.5, 0.5, -53, 23, 0.5, 0.5, -73, 3 )
 	WaypointPattern:setRGB( 0.13, 0.87, 0.94 )
 	WaypointPattern:setAlpha( 0.75 )
-	WaypointPattern:setImage( RegisterImage( 0x159D9B7B7294C91 ) )
+	WaypointPattern:setImage( RegisterImage( "uie_ui_hud_core_waypoint_led" ) )
 	WaypointPattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	WaypointPattern:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( WaypointPattern )

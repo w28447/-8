@@ -234,7 +234,7 @@ CoD.CoDAccountUtility.LegalInfo.TermsOfUsePages = {
 }
 CoD.CoDAccountUtility.LegalInfo.LegalInfoAdditionalInfo = {
 	PrivacyPolicyPages = {
-		title = 0x31DD2217B304F92
+		title = "eula/privacy_policy"
 	},
 	TermsOfUsePages = {
 		title = 0x122F19BFE1C1698
@@ -457,7 +457,7 @@ DataSources.CODAccountRegisterOptions = ListHelper_SetupDataSource( "CODAccountR
 		f14_local12 = false
 	end
 	f14_local4( f14_local5, f14_local6( f14_local7, f14_local8, f14_local9, f14_local10, f14_local11, f14_local12 ) )
-	table.insert( f14_local0, CoD.CoDAccountUtility.packageOptionsButtonData( CoD.CoDAccountUtility.IsSignInRequired( f14_arg1.menu ) and 0xFD0A4EC72EF5F3F or "menu/cancel", "", nil, f14_local3 ) )
+	table.insert( f14_local0, CoD.CoDAccountUtility.packageOptionsButtonData( CoD.CoDAccountUtility.IsSignInRequired( f14_arg1.menu ) and "menu/decline" or "menu/cancel", "", nil, f14_local3 ) )
 	return f14_local0
 end, true )
 DataSources.CODAccountSignInInfoBasic = ListHelper_SetupDataSource( "CODAccountSignInInfoBasic", function ( f18_arg0 )
@@ -489,8 +489,8 @@ DataSources.CODAccountRegisterInfoBasic = ListHelper_SetupDataSource( "CODAccoun
 	end
 	
 	table.insert( f21_local0, CoD.CoDAccountUtility.packageOptionsButtonData( 0x1770F1CA89E2DE5, "menu/codaccount_register_email_desc", "", f21_local1 ) )
-	table.insert( f21_local0, CoD.CoDAccountUtility.packageOptionsButtonData( 0xA50C91C923FBBF6, 0x91EDCCE05D39D06, "", f21_local2 ) )
-	table.insert( f21_local0, CoD.CoDAccountUtility.packageOptionsButtonData( 0xC77EF01F8EFB323, 0x1086AB2243296F5, "", f21_local3 ) )
+	table.insert( f21_local0, CoD.CoDAccountUtility.packageOptionsButtonData( 0xA50C91C923FBBF6, "menu/codaccount_register_pw_desc", "", f21_local2 ) )
+	table.insert( f21_local0, CoD.CoDAccountUtility.packageOptionsButtonData( "menu/codaccount_register_conf_pw", 0x1086AB2243296F5, "", f21_local3 ) )
 	return f21_local0
 end, true )
 DataSources.CODAccountRegisterInfoDob = ListHelper_SetupDataSource( "CODAccountRegisterInfoDob", function ( f25_arg0 )
@@ -771,10 +771,10 @@ DataSources.CODAccountSignInConfirmation = ListHelper_SetupDataSource( "CODAccou
 		local f47_local2 = f47_local0.password:get()
 		local f47_local3 = f47_local0.confirmSpam:get()
 		if not f47_local1 or string.len( f47_local1 ) == 0 then
-			LuaUtils.UI_ShowErrorMessageDialog( f47_arg2, 0x809D4D95F9054A5, 0x31E422BC40B2429 )
+			LuaUtils.UI_ShowErrorMessageDialog( f47_arg2, 0x809D4D95F9054A5, "menu/notice_caps" )
 			return 
 		elseif not f47_local2 or string.len( f47_local2 ) == 0 then
-			LuaUtils.UI_ShowErrorMessageDialog( f47_arg2, 0x1F70C8645FEA8BC, 0x31E422BC40B2429 )
+			LuaUtils.UI_ShowErrorMessageDialog( f47_arg2, 0x1F70C8645FEA8BC, "menu/notice_caps" )
 			return 
 		end
 		f47_local0.emailAddress:set( "" )
@@ -821,20 +821,20 @@ DataSources.CODAccountRegisterConfirmation = ListHelper_SetupDataSource( "CODAcc
 		local f50_local9 = f50_local0.confirmTOU:get()
 		local f50_local10 = f50_local0.confirmSpam:get()
 		if not f50_local3 or string.len( f50_local3 ) == 0 then
-			LuaUtils.UI_ShowErrorMessageDialog( f50_arg2, 0x809D4D95F9054A5, 0x31E422BC40B2429 )
+			LuaUtils.UI_ShowErrorMessageDialog( f50_arg2, 0x809D4D95F9054A5, "menu/notice_caps" )
 			return 
 		elseif not f50_local4 or f50_local4 == f50_local3 or string.len( f50_local4 ) < 8 or string.len( f50_local4 ) > 20 then
-			LuaUtils.UI_ShowErrorMessageDialog( f50_arg2, 0x3518D037A98D238, 0x31E422BC40B2429 )
+			LuaUtils.UI_ShowErrorMessageDialog( f50_arg2, 0x3518D037A98D238, "menu/notice_caps" )
 			return 
 		elseif not f50_local5 or f50_local4 ~= f50_local5 then
-			LuaUtils.UI_ShowErrorMessageDialog( f50_arg2, 0x112336C91F4212E, 0x31E422BC40B2429 )
+			LuaUtils.UI_ShowErrorMessageDialog( f50_arg2, 0x112336C91F4212E, "menu/notice_caps" )
 			return 
 		elseif not f50_local9 then
-			LuaUtils.UI_ShowErrorMessageDialog( f50_arg2, 0xDA059810DB91BA6, 0x31E422BC40B2429 )
+			LuaUtils.UI_ShowErrorMessageDialog( f50_arg2, 0xDA059810DB91BA6, "menu/notice_caps" )
 			return 
 		elseif not f48_local1( f50_local8, f50_local6, f50_local7, f50_local1 ) then
 			Engine[0xCAF37D90D5016BE]( f50_arg2 )
-			LuaUtils.UI_ShowErrorMessageDialog( f50_arg2, 0x2192A0F74BF5791, 0x31E422BC40B2429 )
+			LuaUtils.UI_ShowErrorMessageDialog( f50_arg2, 0x2192A0F74BF5791, "menu/notice_caps" )
 			GoBack( f50_arg0, f50_arg2 )
 			return 
 		end
@@ -892,7 +892,7 @@ CoD.CoDAccountUtility.CodAccountHandleKeyboardComplete = function ( f53_arg0, f5
 				f53_local4.currentText:set( string.gsub( f53_local0, ".", "*" ) )
 				f53_local2.confPassword:set( "" )
 			else
-				LuaUtils.UI_ShowErrorMessageDialog( f53_arg1, 0x3518D037A98D238, 0x31E422BC40B2429 )
+				LuaUtils.UI_ShowErrorMessageDialog( f53_arg1, 0x3518D037A98D238, "menu/notice_caps" )
 			end
 		end
 	elseif f53_arg2.type == Enum.KeyboardType[0x8E0838BF6F94776] and f53_local0 ~= nil then
@@ -901,7 +901,7 @@ CoD.CoDAccountUtility.CodAccountHandleKeyboardComplete = function ( f53_arg0, f5
 			local f53_local3 = DataSources.CODAccountRegisterInfoBasic.getItem( f53_arg1, f53_local1, 3 )
 			f53_local3.currentText:set( string.gsub( f53_local0, ".", "*" ) )
 		else
-			LuaUtils.UI_ShowErrorMessageDialog( f53_arg1, 0x112336C91F4212E, 0x31E422BC40B2429 )
+			LuaUtils.UI_ShowErrorMessageDialog( f53_arg1, 0x112336C91F4212E, "menu/notice_caps" )
 		end
 	end
 end
@@ -925,23 +925,23 @@ end
 
 CoD.CoDAccountUtility.CodAccountAddRightStickSingleItemControl = function ( f55_arg0, f55_arg1, f55_arg2 )
 	local f55_local0 = f55_arg1
-	f55_arg0:AddButtonCallbackFunction( f55_local0, f55_arg2, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( f56_arg0, f56_arg1, f56_arg2, f56_arg3 )
-		local f56_local0 = f56_arg0:getParent()
+	f55_arg0:AddButtonCallbackFunction( f55_local0, f55_arg2, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( element, menu, controller, model )
+		local f56_local0 = element:getParent()
 		local f56_local1 = f56_local0.minusFn
-		if not IsDpadButton( f56_arg3 ) then
-			local f56_local2 = f56_local1 and f56_local1( f56_local0, f56_local0.gridInfoTable.parentGrid, f56_arg2 )
-			if ScoreboardVisible( f56_arg2 ) then
-				BlockGameFromKeyEvent( f56_arg2 )
+		if not IsDpadButton( model ) then
+			local f56_local2 = f56_local1 and f56_local1( f56_local0, f56_local0.gridInfoTable.parentGrid, controller )
+			if ScoreboardVisible( controller ) then
+				BlockGameFromKeyEvent( controller )
 			end
 		end
 	end, AlwaysFalse, false )
-	f55_arg0:AddButtonCallbackFunction( f55_local0, f55_arg2, Enum.LUIButton[0x571F08AD84807E0], nil, function ( f57_arg0, f57_arg1, f57_arg2, f57_arg3 )
-		local f57_local0 = f57_arg0:getParent()
+	f55_arg0:AddButtonCallbackFunction( f55_local0, f55_arg2, Enum.LUIButton[0x571F08AD84807E0], nil, function ( element, menu, controller, model )
+		local f57_local0 = element:getParent()
 		local f57_local1 = f57_local0.plusFn
-		if not IsDpadButton( f57_arg3 ) then
-			local f57_local2 = f57_local1 and f57_local1( f57_local0, f57_local0.gridInfoTable.parentGrid, f57_arg2 )
-			if ScoreboardVisible( f57_arg2 ) then
-				BlockGameFromKeyEvent( f57_arg2 )
+		if not IsDpadButton( model ) then
+			local f57_local2 = f57_local1 and f57_local1( f57_local0, f57_local0.gridInfoTable.parentGrid, controller )
+			if ScoreboardVisible( controller ) then
+				BlockGameFromKeyEvent( controller )
 			end
 		end
 	end, AlwaysFalse, false )
@@ -1161,15 +1161,15 @@ CoD.OverlayUtility.AddAutoDetectOverlay( "CancelTrialSignIn", {
 		return {
 			{
 				action = Close,
-				text = 0x5BE4A02B20F31F1,
+				text = "menu/ok",
 				isCancelOption = true
 			},
 			{
 				action = function ()
-					Engine.Exec( Engine.GetPrimaryController(), "quit" )
+					Engine.exec( Engine.GetPrimaryController(), "quit" )
 				end
 				,
-				text = 0xB2EF56B4AF147B8
+				text = "menu/quit"
 			}
 		}
 	end

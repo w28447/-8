@@ -1,12 +1,12 @@
 require( "ui/uieditor/widgets/callingcards/loot2/callingcards_loot2_surrealistlandscapes_book" )
 require( "ui/uieditor/widgets/callingcards/loot2/callingcards_loot2_surrealistlandscapes_stairs" )
 
-CoD[0xF9B8B7EB4A5FEE] = InheritFrom( LUI.UIElement )
-CoD[0xF9B8B7EB4A5FEE].__defaultWidth = 960
-CoD[0xF9B8B7EB4A5FEE].__defaultHeight = 240
-CoD[0xF9B8B7EB4A5FEE].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_loot2_surrealistlandscapes = InheritFrom( LUI.UIElement )
+CoD.callingcards_loot2_surrealistlandscapes.__defaultWidth = 960
+CoD.callingcards_loot2_surrealistlandscapes.__defaultHeight = 240
+CoD.callingcards_loot2_surrealistlandscapes.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0xF9B8B7EB4A5FEE] )
+	self:setClass( CoD.callingcards_loot2_surrealistlandscapes )
 	self.id = "callingcards_loot2_surrealistlandscapes"
 	self.soundSet = "none"
 	self.anyChildUsesUpdateState = true
@@ -23,7 +23,7 @@ CoD[0xF9B8B7EB4A5FEE].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local cloud01 = LUI.UIImage.new( 0, 0, 0, 424, 0, 0, 120, 240 )
 	cloud01:setAlpha( 0.5 )
-	cloud01:setImage( RegisterImage( 0xB9B10B7FFA7EE98 ) )
+	cloud01:setImage( RegisterImage( "uie_ui_menu_callingcards_surrealistlandscape_cloud01" ) )
 	cloud01:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cloud01 )
 	self.cloud01 = cloud01
@@ -34,14 +34,14 @@ CoD[0xF9B8B7EB4A5FEE].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local cloud02 = LUI.UIImage.new( 0, 0, 424, 960, 0, 0, 80, 240 )
 	cloud02:setAlpha( 0.7 )
-	cloud02:setImage( RegisterImage( 0xB9B13B7FFA7F3B1 ) )
+	cloud02:setImage( RegisterImage( "uie_ui_menu_callingcards_surrealistlandscape_cloud02" ) )
 	cloud02:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cloud02 )
 	self.cloud02 = cloud02
 	
 	local cloud = LUI.UIImage.new( 0, 0, 167, 519, 0, 0, 0, 64 )
 	cloud:setAlpha( 0.7 )
-	cloud:setImage( RegisterImage( 0xB9B12B7FFA7F1FE ) )
+	cloud:setImage( RegisterImage( "uie_ui_menu_callingcards_surrealistlandscape_cloud03" ) )
 	cloud:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cloud )
 	self.cloud = cloud
@@ -55,7 +55,7 @@ CoD[0xF9B8B7EB4A5FEE].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	return self
 end
 
-CoD[0xF9B8B7EB4A5FEE].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_loot2_surrealistlandscapes.__resetProperties = function ( f2_arg0 )
 	f2_arg0.book:completeAnimation()
 	f2_arg0.ball:completeAnimation()
 	f2_arg0.cloud01:completeAnimation()
@@ -73,7 +73,7 @@ CoD[0xF9B8B7EB4A5FEE].__resetProperties = function ( f2_arg0 )
 	f2_arg0.cloud:setTopBottom( 0, 0, 0, 64 )
 end
 
-CoD[0xF9B8B7EB4A5FEE].__clipsPerState = {
+CoD.callingcards_loot2_surrealistlandscapes.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -171,7 +171,7 @@ CoD[0xF9B8B7EB4A5FEE].__clipsPerState = {
 		end
 	}
 }
-CoD[0xF9B8B7EB4A5FEE].__onClose = function ( f15_arg0 )
+CoD.callingcards_loot2_surrealistlandscapes.__onClose = function ( f15_arg0 )
 	f15_arg0.ball:close()
 	f15_arg0.book:close()
 end

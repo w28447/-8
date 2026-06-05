@@ -184,7 +184,7 @@ CoD.AARSummaryTabInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	XPMeter:linkToElementModel( self, "xpEarnedDuringMatch", true, function ( model )
 		local f23_local0 = model:get()
 		if f23_local0 ~= nil then
-			XPMeter.xpEarnedText:setText( LocalizeIntoString( 0x5C4E2BA06EA49A5, f23_local0 ) )
+			XPMeter.xpEarnedText:setText( LocalizeIntoString( "menu/xp_earned_caps", f23_local0 ) )
 		end
 	end )
 	XPMeter:linkToElementModel( self, "xpNeededToLevelUp", true, function ( model )
@@ -226,7 +226,7 @@ CoD.AARSummaryTabInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local PerformanceLabel = LUI.UIText.new( 0, 0, 638.5, 1493.5, 0, 0, 91, 129 )
 	PerformanceLabel:setRGB( 0.9, 0.89, 0.78 )
-	PerformanceLabel:setText( Engine[0xF9F1239CFD921FE]( 0x4B072C59118316 ) )
+	PerformanceLabel:setText( Engine[0xF9F1239CFD921FE]( "aar/performance" ) )
 	PerformanceLabel:setTTF( "ttmussels_demibold" )
 	PerformanceLabel:setLetterSpacing( 10 )
 	PerformanceLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -265,7 +265,7 @@ CoD.AARSummaryTabInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local ZMPerformanceLabel = LUI.UIText.new( 0, 0, 635.5, 1490.5, 0, 0, 87, 125 )
 	ZMPerformanceLabel:setRGB( 0.9, 0.89, 0.78 )
 	ZMPerformanceLabel:setAlpha( 0 )
-	ZMPerformanceLabel:setText( Engine[0xF9F1239CFD921FE]( 0x4B072C59118316 ) )
+	ZMPerformanceLabel:setText( Engine[0xF9F1239CFD921FE]( "aar/performance" ) )
 	ZMPerformanceLabel:setTTF( "skorzhen" )
 	ZMPerformanceLabel:setLetterSpacing( 10 )
 	ZMPerformanceLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

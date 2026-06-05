@@ -4,10 +4,10 @@ CoD.PCNotificationsUtility.COOLDOWN_NOTIFICATION_CHECK = 1
 CoD.PCNotificationsUtility.NotificationType = {
 	UNKNOWN = {
 		id = 0,
-		appearStringHash = 0x0,
-		acceptStringHash = 0x0,
-		declineStringHash = 0x0,
-		timeoutStringHash = 0x0
+		appearStringHash = "",
+		acceptStringHash = "",
+		declineStringHash = "",
+		timeoutStringHash = ""
 	},
 	PARTY = {
 		id = 1,
@@ -19,7 +19,7 @@ CoD.PCNotificationsUtility.NotificationType = {
 	FRIEND = {
 		id = 2,
 		appearStringHash = 0xCAD0D75E6830A9B,
-		acceptStringHash = 0x0,
+		acceptStringHash = "",
 		declineStringHash = 0x36319CDC4EB1032
 	}
 }
@@ -173,7 +173,7 @@ local f0_local6 = function ( f9_arg0, f9_arg1, f9_arg2 )
 	local f9_local0 = DataSources.CurrentNotification.getModel( f9_arg1 )
 	local f9_local1 = f9_local0.hideNotificationsTimestamp:get()
 	local f9_local2 = {}
-	if Engine.GetProfileVarInt( f9_arg1, 0x9E3758E63839B10 ) ~= 0 then
+	if Engine.GetProfileVarInt( f9_arg1, "show_party_notifications" ) ~= 0 then
 		if IsBooleanDvarSet( "ui_fakeInviteData" ) then
 			local f9_local3 = f0_local1( f9_arg1, f9_local1 )
 		end
@@ -199,7 +199,7 @@ local f0_local6 = function ( f9_arg0, f9_arg1, f9_arg2 )
 		CoD.PCUtility.FlashWindowDefault()
 	else
 		local f9_local4 = {}
-		if Engine.GetProfileVarInt( f9_arg1, 0x8F2B8315512CEA5 ) ~= 0 then
+		if Engine.GetProfileVarInt( f9_arg1, "show_friends_notifications" ) ~= 0 then
 			if IsBooleanDvarSet( "ui_fakeFriendsInviteData" ) then
 				local f9_local9 = f0_local3( f9_arg1, f9_local1 )
 			end
@@ -326,7 +326,7 @@ CoD.PCNotificationsUtility.AcceptCurrentInvite = function ( f17_arg0, f17_arg1 )
 			local f17_local5 = f0_local5( f17_local1 )
 			f17_local3( f17_local4( f17_local5.acceptStringHash ) )
 		else
-			LuaUtils.UI_ShowErrorMessageDialog( f17_arg1, 0xA26AA910A2D8FD8 )
+			LuaUtils.UI_ShowErrorMessageDialog( f17_arg1, "menu/join_result_not_joinable" )
 			f17_local0.visibility:set( false )
 			return 
 		end
@@ -380,17 +380,17 @@ CoD.PCNotificationsUtility.PrepareNotificationContainer = function ( f20_arg0, f
 		end
 	end )
 	f20_arg0:addElement( f20_arg0.quickRefreshNotificationTimer )
-	CoD.Menu.AddButtonCallbackFunction( f20_arg2, f20_arg3.KeyPrompts.KeyPromptAccept, f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
-		if CoD.PCNotificationsUtility.IsNotificationWidgetVisible( f23_arg2 ) then
-			CoD.PCNotificationsUtility.AcceptCurrentInvite( f23_arg1, f23_arg2 )
+	CoD.Menu.AddButtonCallbackFunction( f20_arg2, f20_arg3.KeyPrompts.KeyPromptAccept, f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, f23_arg3 )
+		if CoD.PCNotificationsUtility.IsNotificationWidgetVisible( controller ) then
+			CoD.PCNotificationsUtility.AcceptCurrentInvite( menu, controller )
 			return true
 		else
 			
 		end
 	end )
-	CoD.Menu.AddButtonCallbackFunction( f20_arg2, f20_arg3.KeyPrompts.KeyPromptDecline, f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f24_arg0, f24_arg1, f24_arg2, f24_arg3 )
-		if CoD.PCNotificationsUtility.IsNotificationWidgetVisible( f24_arg2 ) then
-			CoD.PCNotificationsUtility.DeclineCurrentInvite( f24_arg2 )
+	CoD.Menu.AddButtonCallbackFunction( f20_arg2, f20_arg3.KeyPrompts.KeyPromptDecline, f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, f24_arg3 )
+		if CoD.PCNotificationsUtility.IsNotificationWidgetVisible( controller ) then
+			CoD.PCNotificationsUtility.DeclineCurrentInvite( controller )
 			return true
 		else
 			

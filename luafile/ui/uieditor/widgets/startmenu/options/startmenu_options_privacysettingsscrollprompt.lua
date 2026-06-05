@@ -28,7 +28,7 @@ CoD.StartMenu_Options_PrivacySettingsScrollPrompt.new = function ( f1_arg0, f1_a
 	
 	local dividor = LUI.UIText.new( 0.5, 0.5, -4.5, 4.5, 0.5, 0.5, -9, 9 )
 	dividor:setAlpha( 0.65 )
-	dividor:setText( Engine[0xF9F1239CFD921FE]( 0x993C1A7DD3452BA ) )
+	dividor:setText( Engine[0xF9F1239CFD921FE]( "mp/slash" ) )
 	dividor:setTTF( "ttmussels_regular" )
 	dividor:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	self:addElement( dividor )
@@ -49,7 +49,7 @@ CoD.StartMenu_Options_PrivacySettingsScrollPrompt.new = function ( f1_arg0, f1_a
 	self.count = count
 	
 	local RightPageOver = CoD.BumperButtonWithKeyMouse.new( f1_arg0, f1_arg1, 0.5, 0.5, 34.5, 101.5, 0, 0, -4, 31 )
-	RightPageOver.KeyMouseImage:setImage( RegisterImage( 0x49AC5C845C7E582 ) )
+	RightPageOver.KeyMouseImage:setImage( RegisterImage( "uie_bumperright" ) )
 	RightPageOver:subscribeToGlobalModel( f1_arg1, "Controller", "right_shoulder_button_image", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then

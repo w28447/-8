@@ -27,7 +27,7 @@ end
 
 f0_local0.GetGametypeMaxTeamPlayers = function ()
 	local f3_local0 = Engine.GetGametypeSettings()
-	return f3_local0 and f3_local0[0x75B6643FCFEB8CA]:get() or 0
+	return f3_local0 and f3_local0.maxteamplayers:get() or 0
 end
 
 f0_local0.IsGametypeHidingHudScore = function ( f4_arg0 )
@@ -74,7 +74,7 @@ end
 
 f0_local0.IsTeamBasedGame = function ()
 	if Engine[0xE39F1F30B306065]() then
-		return Engine.GetGametypeSetting( 0xDA4FB58A54E84D3 ) > 1
+		return Engine.GetGametypeSetting( "teamcount" ) > 1
 	elseif Engine.IsInGame() then
 		return CoDShared.IsGametypeTeamBased()
 	else
@@ -163,9 +163,9 @@ f0_local0.QuitGame = function ( f15_arg0, f15_arg1 )
 		if not Engine[0xEA2BE00F49480D]( Enum.LobbyType[0xA1647599284110] ) then
 			Engine.GameModeResetModes()
 			Engine.SessionModeResetModes()
-			Engine.Exec( f15_arg0, "disconnect" )
+			Engine.exec( f15_arg0, "disconnect" )
 		else
-			Engine.Exec( f15_arg0, "xpartystopdemo" )
+			Engine.exec( f15_arg0, "xpartystopdemo" )
 		end
 		return true
 	end
@@ -178,13 +178,13 @@ f0_local0.QuitGame = function ( f15_arg0, f15_arg1 )
 		else
 			Engine.UpdateStatsForQuit( f15_arg0, false )
 		end
-		Engine.Exec( f15_arg0, "disconnect" )
+		Engine.exec( f15_arg0, "disconnect" )
 	elseif not f0_local0.IsRankedGame() then
 		Engine.SendMenuResponse( f15_arg0, "popup_leavegame", "endround", 0 )
 	elseif f0_local0.IsRankedGame() and f0_local0.IsHost() and not Engine.HostMigrationWaitingForPlayers() and Engine[0x22EAAB59AA27E9B]( "g_gameEnded" ) ~= 1 then
 		Engine.UpdateStatsForQuit( f15_arg0, true )
 		local f15_local4 = LobbyData.GetLobbyMenuByID( Engine[0x9882F293C327557]() )
-		local f15_local5 = f15_local4["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE )
+		local f15_local5 = f15_local4.id == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE )
 		local f15_local6 = 2
 		if Enum.UIVisibilityBit and Engine.IsVisibilityBitSet( f15_arg0, Enum.UIVisibilityBit[0x6FFF566DCC09BBD] ) then
 			f15_local6 = 1
@@ -194,7 +194,7 @@ f0_local0.QuitGame = function ( f15_arg0, f15_arg1 )
 			f15_local5 = false
 		end
 		if (not (not Engine.IsMultiplayerGame() and (not Engine.IsZombiesGame() or f15_local7 == 0 or f15_local5 ~= false or f15_local6 > f15_local0 - Engine[0xD1E13D329F1C745]( f15_arg0 ))) or f0_local0.IsGameTypeDOA()) and f15_local0 >= Dvar[0x58BFAAB543C1D66]:get() and f15_local0 ~= f15_local1 then
-			Engine.Exec( f15_arg0, "hostmigration_start" )
+			Engine.exec( f15_arg0, "hostmigration_start" )
 			return false
 		end
 		Engine.SendMenuResponse( f15_arg0, "popup_leavegame", "endround", 0 )
@@ -434,12 +434,12 @@ f0_local0.IsMainFirstTimeSetup = function ( f34_arg0 )
 		return false
 	elseif f0_local0.IsIntDvarNonZero( "ui_forceFirstTime" ) then
 		Dvar[0x7424F822EC880D2]:set( 0 )
-		Engine.SetProfileVar( f34_arg0, 0x6390ED5F7AB3601, "1" )
+		Engine.SetProfileVar( f34_arg0, "com_first_time", "1" )
 	end
 	if Dvar[0x2BE8FB76AD6AEA3]:get() then
 		return false
 	end
-	return Engine.GetProfileVarInt( f34_arg0, 0x6390ED5F7AB3601 ) ~= 0
+	return Engine.GetProfileVarInt( f34_arg0, "com_first_time" ) ~= 0
 end
 
 f0_local0.IsGameInstalled = function ()
@@ -555,10 +555,10 @@ f0_local0.LoadoutSlotOrderCP = {
 	structs = f0_local0.LoadoutWeapons
 }
 f0_local0.LoadoutSlotOrder = {
-	[Enum.eModes[0x3723205FAE52C4A]] = f0_local0.LoadoutSlotOrderZM,
-	[Enum.eModes[0x83EBA96F36BC4E5]] = f0_local0.LoadoutSlotOrderMP,
-	[Enum.eModes[0x60063C67132EB69]] = f0_local0.LoadoutSlotOrderCP,
-	[Enum.eModes[0xBF1DCC8138A9D39]] = f0_local0.LoadoutSlotOrderMP
+	[Enum.eModes.mode_zombies] = f0_local0.LoadoutSlotOrderZM,
+	[Enum.eModes.mode_multiplayer] = f0_local0.LoadoutSlotOrderMP,
+	[Enum.eModes.mode_campaign] = f0_local0.LoadoutSlotOrderCP,
+	[Enum.eModes.mode_warzone] = f0_local0.LoadoutSlotOrderMP
 }
 f0_local0.LoadoutPaintjobSlots = {
 	structs = {
@@ -575,7 +575,7 @@ f0_local0.LoadoutPaintjobSlots = {
 	}
 }
 f0_local0.EmptyItemIndex = 0
-f0_local0.DefaultSpecialistEquipment = 0x628BB1CC00B3BBD
+f0_local0.DefaultSpecialistEquipment = "default_specialist_equipment"
 f0_local0.splitString = function ( f41_arg0, f41_arg1 )
 	local f41_local0 = {}
 	string.gsub( f41_arg0, "([^" .. f41_arg1 .. "]+)", function ( f42_arg0 )
@@ -609,7 +609,7 @@ f0_local0.getDefaultAttachmentList = function ( f45_arg0, f45_arg1, f45_arg2 )
 	end
 	local f45_local0 = {}
 	for f45_local4, f45_local5 in ipairs( f45_arg2 ) do
-		local f45_local6 = Engine.GetAttachmentIndexByAttachmentTableIndex( f45_arg1, Engine.GetAttachmentIndexByRef( f45_local5[0x73F89AC8D3F248] ), f45_arg0 )
+		local f45_local6 = Engine.GetAttachmentIndexByAttachmentTableIndex( f45_arg1, Engine.GetAttachmentIndexByRef( f45_local5.attachment ), f45_arg0 )
 		if f0_local0.EmptyItemIndex <= f45_local6 then
 			f45_local0[#f45_local0 + 1] = f45_local6
 		end
@@ -669,7 +669,7 @@ f0_local0.SetDefaultLoadoutItems = function ( f49_arg0, f49_arg1, f49_arg2, f49_
 		f49_local2 = "_" .. f49_local1
 	end
 	local f49_local3 = f49_arg0.primary
-	local f49_local4 = f0_local0.getDefaultAttachmentList( f49_arg2, f0_local0.updateItemIndexFromLoadoutHash( f49_arg1[0xF31137FF783E939], f49_local3.itemIndex, f49_arg2 ), f49_arg1.primaryattachments )
+	local f49_local4 = f0_local0.getDefaultAttachmentList( f49_arg2, f0_local0.updateItemIndexFromLoadoutHash( f49_arg1.primary, f49_local3.itemIndex, f49_arg2 ), f49_arg1.primaryattachments )
 	if f49_local4 then
 		for f49_local5 = 1, #f49_local3.attachment, 1 do
 			local f49_local8 = f49_local4[f49_local5]
@@ -680,7 +680,7 @@ f0_local0.SetDefaultLoadoutItems = function ( f49_arg0, f49_arg1, f49_arg2, f49_
 		end
 	end
 	local f49_local5 = f49_arg0.secondary
-	f49_local0 = f0_local0.updateItemIndexFromLoadoutHash( f49_arg1[0x7FBC18FBDAA00D1], f49_local5.itemIndex, f49_arg2 )
+	f49_local0 = f0_local0.updateItemIndexFromLoadoutHash( f49_arg1.secondary, f49_local5.itemIndex, f49_arg2 )
 	f49_local5.itemIndex:set( f49_local0 )
 	local f49_local6 = f0_local0.getDefaultAttachmentList( f49_arg2, f49_local0, f49_arg1.secondaryattachments )
 	if f49_local6 then
@@ -693,29 +693,29 @@ f0_local0.SetDefaultLoadoutItems = function ( f49_arg0, f49_arg1, f49_arg2, f49_
 		end
 	end
 	local f49_local7 = f0_local0.DefaultSpecialistEquipment
-	local f49_local9 = f49_arg1[0x64BE52A1BDE5211]
-	if f49_arg2 == Enum.eModes[0x3723205FAE52C4A] then
+	local f49_local9 = f49_arg1.primarygrenade
+	if f49_arg2 == Enum.eModes.mode_zombies then
 		f49_local7 = nil
 		if f49_local1 > 1 then
-			local f49_local8 = 0x64BE52A1BDE5211 .. f49_local2
+			local f49_local8 = "primarygrenade" .. f49_local2
 			if f49_arg1[f49_local8] then
 				f49_local9 = f49_arg1[f49_local8]
 			end
 		end
 	end
 	f0_local0.updateItemIndexFromLoadoutHash( f49_local9, f49_arg0.primarygrenade, f49_arg2, f49_local7 )
-	if f49_arg2 == Enum.eModes[0x3723205FAE52C4A] then
-		local f49_local8 = f49_arg1[0x660FDC4273B0C19]
+	if f49_arg2 == Enum.eModes.mode_zombies then
+		local f49_local8 = f49_arg1.herogadget
 		if f49_local1 > 1 then
-			local f49_local11 = 0x660FDC4273B0C19 .. f49_local2
+			local f49_local11 = "herogadget" .. f49_local2
 			if f49_arg1[f49_local11] then
 				f49_local8 = f49_arg1[f49_local11]
 			end
 		end
 		f0_local0.updateItemIndexFromLoadoutHash( f49_local8, f49_arg0.herogadget, f49_arg2 )
-		local f49_local11 = f49_arg1[0x260D593D1AC699D]
+		local f49_local11 = f49_arg1.talisman1
 		if f49_local1 > 1 then
-			local f49_local10 = 0x260D593D1AC699D .. f49_local2
+			local f49_local10 = "talisman1" .. f49_local2
 			if f49_arg1[f49_local10] then
 				f49_local11 = f49_arg1[f49_local10]
 			end
@@ -738,9 +738,9 @@ f0_local0.SetDefaultLoadoutItems = function ( f49_arg0, f49_arg1, f49_arg2, f49_
 		end
 		f0_local0.updateItemIndexFromLoadoutHash( f49_local12, f49_local3.itemIndex, f49_arg2 )
 	end
-	if f49_arg2 == Enum.eModes[0x83EBA96F36BC4E5] then
-		f0_local0.updateItemIndexFromLoadoutHash( f49_arg1[0xC76C1E0D1EE45F7], f49_arg0.tacticalgear, f49_arg2 )
-		f0_local0.updateSlotList( f49_arg1.talents, f49_arg0.talent, 0x5FB380CEA24A88B, f49_arg2 )
+	if f49_arg2 == Enum.eModes.mode_multiplayer then
+		f0_local0.updateItemIndexFromLoadoutHash( f49_arg1.tacticalgear, f49_arg0.tacticalgear, f49_arg2 )
+		f0_local0.updateSlotList( f49_arg1.talents, f49_arg0.talent, "talent", f49_arg2 )
 		f0_local0.updateSlotList( f49_arg1.bonuscards, f49_arg0.bonuscard, "bonuscard", f49_arg2 )
 	end
 end
@@ -764,7 +764,7 @@ f0_local0.SetDefaultBubbleGumBuffs = function ( f50_arg0, f50_arg1, f50_arg2, f5
 				f50_local5 = f50_local4[f50_local6]
 			end
 		end
-		f0_local0.updateSlotList( f50_local5, f50_local1.bubbleGumBuff, 0x1B1C240F43AB29B, f50_arg3 )
+		f0_local0.updateSlotList( f50_local5, f50_local1.bubbleGumBuff, "bubblegumbuff", f50_arg3 )
 	end
 end
 
@@ -787,15 +787,15 @@ f0_local0.SetDefaultBubbleGumBuffsForClass = function ( f51_arg0, f51_arg1, f51_
 				f51_local5 = f51_local4[f51_local6]
 			end
 		end
-		f0_local0.updateSlotList( f51_local5, f51_local1.bubbleGumBuff, 0x1B1C240F43AB29B, f51_arg4 )
+		f0_local0.updateSlotList( f51_local5, f51_local1.bubbleGumBuff, "bubblegumbuff", f51_arg4 )
 	end
 end
 
 f0_local0.SetDefaultGlobalLoadout = function ( f52_arg0, f52_arg1, f52_arg2 )
 	LuaUtils.ClearDDLKeysAndArrays( f52_arg0, f0_local0.LoadoutKillstreaks, f0_local0.EmptyItemIndex )
-	if f52_arg1 and f52_arg2 == Enum.eModes[0x83EBA96F36BC4E5] and f52_arg1.killstreaks then
+	if f52_arg1 and f52_arg2 == Enum.eModes.mode_multiplayer and f52_arg1.killstreaks then
 		for f52_local3, f52_local4 in ipairs( f52_arg1.killstreaks ) do
-			f0_local0.updateItemIndexFromLoadoutHash( f52_local4[0x3E164CE08D58747], f52_arg0["killstreak" .. f52_local3], f52_arg2 )
+			f0_local0.updateItemIndexFromLoadoutHash( f52_local4.killstreak, f52_arg0["killstreak" .. f52_local3], f52_arg2 )
 		end
 	end
 end
@@ -892,7 +892,7 @@ f0_local0.ClearLoadoutForClassIndex = function ( f58_arg0, f58_arg1, f58_arg2 )
 	local f58_local1 = f58_local0[f58_arg1 - 1]
 	if f58_local1 then
 		f0_local0.ClearAllLoadoutSlots( f58_local1, f58_arg2 )
-		if f58_arg2 == Enum.eModes[0x83EBA96F36BC4E5] then
+		if f58_arg2 == Enum.eModes.mode_multiplayer then
 			f0_local0.updateItemIndexFromLoadoutHash( nil, f58_local1.primarygrenade, f58_arg2, f0_local0.DefaultSpecialistEquipment )
 		end
 	end
@@ -900,18 +900,18 @@ end
 
 f0_local0.GetDefaultLoadoutForCurrentMode = function ()
 	local f59_local0 = Engine.CurrentSessionMode()
-	if f59_local0 == Enum.eModes[0x60063C67132EB69] then
-		return Engine[0xE00B2F29271C60B]( 0x1C53105E8C011C4 )
-	elseif f59_local0 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f59_local0 == Enum.eModes.mode_campaign then
+		return Engine[0xE00B2F29271C60B]( "cp_default_loadouts" )
+	elseif f59_local0 == Enum.eModes.mode_multiplayer then
 		if LuaUtils.IsArenaMode() then
-			return Engine[0xE00B2F29271C60B]( 0x4FF2B60D157BBB2 )
+			return Engine[0xE00B2F29271C60B]( "mp_arena_default_loadouts" )
 		else
-			return Engine[0xE00B2F29271C60B]( 0x705A80062BD09C2 )
+			return Engine[0xE00B2F29271C60B]( "mp_default_loadouts" )
 		end
-	elseif f59_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f59_local0 == Enum.eModes.mode_zombies then
 		return Engine[0xE00B2F29271C60B]( "zm_default_loadouts" )
-	elseif f59_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
-		return Engine[0xE00B2F29271C60B]( 0x5E2F5F439F26596 )
+	elseif f59_local0 == Enum.eModes.mode_warzone then
+		return Engine[0xE00B2F29271C60B]( "wz_default_loadouts" )
 	else
 		
 	end
@@ -922,17 +922,17 @@ f0_local0.SetCACRootToDefault = function ( f60_arg0 )
 	local f60_local1 = f60_arg0.classDDLRoot
 	local f60_local2 = Engine[0x3091707D0144833]()
 	if f60_local1 then
-		if f60_local0 == Enum.eModes[0x60063C67132EB69] then
-			local f60_local3 = Engine[0xE00B2F29271C60B]( 0x1C53105E8C011C4 )
+		if f60_local0 == Enum.eModes.mode_campaign then
+			local f60_local3 = Engine[0xE00B2F29271C60B]( "cp_default_loadouts" )
 			for f60_local4 = 1, #f60_local1.customclass, 1 do
 				f0_local0.SetDefaultLoadout( f60_local1, f60_local4, f60_local3, f60_local0, nil )
 			end
-		elseif f60_local0 == Enum.eModes[0x83EBA96F36BC4E5] then
+		elseif f60_local0 == Enum.eModes.mode_multiplayer then
 			local f60_local3 = nil
-			if f60_arg0.loadout ~= nil and f60_arg0.loadout ~= 0x0 then
+			if f60_arg0.loadout ~= nil and f60_arg0.loadout ~= "" then
 				f60_local3 = Engine[0xE00B2F29271C60B]( f60_arg0.loadout )
 			else
-				f60_local3 = Engine[0xE00B2F29271C60B]( LuaUtils.IsArenaMode() and 0x4FF2B60D157BBB2 or 0x705A80062BD09C2 )
+				f60_local3 = Engine[0xE00B2F29271C60B]( LuaUtils.IsArenaMode() and "mp_arena_default_loadouts" or "mp_default_loadouts" )
 			end
 			for f60_local4 = Enum[0x33AC0FF9A1537DE][0xB269FFE65DEF21C] + 1, Enum[0x33AC0FF9A1537DE][0x496B3CCA108698A], 1 do
 				f0_local0.SetCustomDefaultLoadout( f60_local1, f60_local4, f60_local3, f60_local0, nil )
@@ -943,7 +943,7 @@ f0_local0.SetCACRootToDefault = function ( f60_arg0 )
 				end
 			end
 			CoDShared.SetDefaultGlobalLoadout( f60_local1, f60_local3, f60_local0 )
-		elseif f60_local0 == Enum.eModes[0x3723205FAE52C4A] then
+		elseif f60_local0 == Enum.eModes.mode_zombies then
 			local f60_local3 = Engine[0xE00B2F29271C60B]( "zm_default_loadouts" )
 			local f60_local4 = Engine[0xBBE3328FE08B8C7]()
 			if f60_local2 then
@@ -961,10 +961,10 @@ end
 f0_local0.Loot = {}
 f0_local0.Loot.CaseMarkerId = "599996"
 f0_local0.Loot.ContractSlots = {}
-f0_local0.Loot.ContractSlots.SLOT_1 = 0xE455FFF57C32D01
-f0_local0.Loot.ContractSlots.SLOT_2 = 0xE455CFF57C327E8
+f0_local0.Loot.ContractSlots.SLOT_1 = "slot_1"
+f0_local0.Loot.ContractSlots.SLOT_2 = "slot_2"
 f0_local0.Loot.MasterSeasonTable = 0xFE613834D811EC6
-f0_local0.Loot.MasterContractTable = 0x9FA37692BF3254F
+f0_local0.Loot.MasterContractTable = "gamedata/loot/loot_contracts.csv"
 f0_local0.Loot.MasterReservesTable = 0x42660E60408E67A
 f0_local0.Loot.LastSeasonStartTime = "1569862800"
 f0_local0.Loot.SEASON_INFO_NUMBER = 0xDCCDC690358AE80
@@ -973,88 +973,88 @@ f0_local0.Loot.SEASON_INFO_DROP_VERSIONS = 0x612F26908E35700
 f0_local0.Loot.SEASON_INFO_HIGHEST_DROP_VERSION = 0x30E13B4E29C0E4A
 f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON = 0xABCAB4113C3EBFD
 f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG = 0xBAC3D33F590FB73
-f0_local0.Loot.SEASON_INFO_TABLENAME = 0xBCB6E85B78CF363
+f0_local0.Loot.SEASON_INFO_TABLENAME = "table_name"
 f0_local0.Loot.Cases = {
-	0x55E6190E8792FD1
+	"case"
 }
 f0_local0.Loot.Crates = {
-	0x57C19FD441C59FF,
-	0x148EA9EC3E2DC60,
-	0x4DE2B5257791347,
-	0x7D5A898E7F617AA,
-	0x91701EF423E11E1
+	"promo_no_dupe_crate",
+	"crate",
+	"no_dupe_crate",
+	"half_off_crate",
+	"half_off_no_dupe_crate"
 }
 f0_local0.Loot.SeasonParams = {
-	["loot_season_1"] = {
+	loot_season_1 = {
 		[f0_local0.Loot.SEASON_INFO_NUMBER] = 1,
 		[f0_local0.Loot.SEASON_INFO_MAX_TIERS] = 200,
 		[f0_local0.Loot.SEASON_INFO_DROP_VERSIONS] = "1",
 		[f0_local0.Loot.SEASON_INFO_HIGHEST_DROP_VERSION] = 1,
-		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = 0xECEB1CEB2EEA45,
-		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = 0x45763E4B241D123,
+		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = "loot_season_1_postseason",
+		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = "loot_season_1_postseason_all_rng",
 		[f0_local0.Loot.SEASON_INFO_TABLENAME] = 0x627C92BE5FDCDD0
 	},
-	["loot_season_2"] = {
+	loot_season_2 = {
 		[f0_local0.Loot.SEASON_INFO_NUMBER] = 2,
 		[f0_local0.Loot.SEASON_INFO_MAX_TIERS] = 100,
 		[f0_local0.Loot.SEASON_INFO_DROP_VERSIONS] = "1,2,3",
 		[f0_local0.Loot.SEASON_INFO_HIGHEST_DROP_VERSION] = 3,
-		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = 0xBC1FDA3602A81B6,
+		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = "loot_season_2_postseason",
 		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = "loot_season_2_postseason_all_rng",
 		[f0_local0.Loot.SEASON_INFO_TABLENAME] = 0x71B16584E35BB31
 	},
-	["loot_season_3"] = {
+	loot_season_3 = {
 		[f0_local0.Loot.SEASON_INFO_NUMBER] = 3,
 		[f0_local0.Loot.SEASON_INFO_MAX_TIERS] = 100,
 		[f0_local0.Loot.SEASON_INFO_DROP_VERSIONS] = "1,2,3,4,5",
 		[f0_local0.Loot.SEASON_INFO_HIGHEST_DROP_VERSION] = 5,
-		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = 0x6542ED4168E987,
-		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = 0xC54B39CE7655BF1,
+		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = "loot_season_3_postseason",
+		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = "loot_season_3_postseason_all_rng",
 		[f0_local0.Loot.SEASON_INFO_TABLENAME] = 0xD3EBD52E3A6338A
 	},
-	["loot_season_4"] = {
+	loot_season_4 = {
 		[f0_local0.Loot.SEASON_INFO_NUMBER] = 4,
 		[f0_local0.Loot.SEASON_INFO_MAX_TIERS] = 50,
 		[f0_local0.Loot.SEASON_INFO_DROP_VERSIONS] = "1,2,3,4,5,6",
 		[f0_local0.Loot.SEASON_INFO_HIGHEST_DROP_VERSION] = 6,
-		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = 0x8569D813D145E18,
-		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = 0xFD3AC1D8D4268E6,
+		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = "loot_season_4_postseason",
+		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = "loot_season_4_postseason_all_rng",
 		[f0_local0.Loot.SEASON_INFO_TABLENAME] = 0x7A467206BBDFF3B
 	},
-	["loot_season_5"] = {
+	loot_season_5 = {
 		[f0_local0.Loot.SEASON_INFO_NUMBER] = 5,
 		[f0_local0.Loot.SEASON_INFO_MAX_TIERS] = 50,
 		[f0_local0.Loot.SEASON_INFO_DROP_VERSIONS] = "1,2,3,4,5,6,7,8",
 		[f0_local0.Loot.SEASON_INFO_HIGHEST_DROP_VERSION] = 8,
-		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = 0x9C937CD580D9C61,
-		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = 0xF6E98C54AF4B67F,
+		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = "loot_season_5_postseason",
+		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = "loot_season_5_postseason_all_rng",
 		[f0_local0.Loot.SEASON_INFO_TABLENAME] = 0x61D002E194284DC
 	},
-	["loot_season_6"] = {
+	loot_season_6 = {
 		[f0_local0.Loot.SEASON_INFO_NUMBER] = 6,
 		[f0_local0.Loot.SEASON_INFO_MAX_TIERS] = 40,
 		[f0_local0.Loot.SEASON_INFO_DROP_VERSIONS] = "1,2,3,4,5,6,7,8,9",
 		[f0_local0.Loot.SEASON_INFO_HIGHEST_DROP_VERSION] = 9,
-		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = 0x3264C66FE172472,
-		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = 0x8D889252E3E782C,
+		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = "loot_season_6_postseason",
+		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = "loot_season_6_postseason_all_rng",
 		[f0_local0.Loot.SEASON_INFO_TABLENAME] = 0x7424A3B6A94A7BD
 	},
-	["loot_season_7"] = {
+	loot_season_7 = {
 		[f0_local0.Loot.SEASON_INFO_NUMBER] = 7,
 		[f0_local0.Loot.SEASON_INFO_MAX_TIERS] = 60,
 		[f0_local0.Loot.SEASON_INFO_DROP_VERSIONS] = "1,2,3,4,5,6,7,8,9,10",
 		[f0_local0.Loot.SEASON_INFO_HIGHEST_DROP_VERSION] = 10,
 		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = "loot_season_7_postseason",
-		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = 0xD9BDCC983A0931D,
+		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = "loot_season_7_postseason_all_rng",
 		[f0_local0.Loot.SEASON_INFO_TABLENAME] = 0xF0E131157E4FC6
 	},
-	["loot_season_8"] = {
+	loot_season_8 = {
 		[f0_local0.Loot.SEASON_INFO_NUMBER] = 8,
 		[f0_local0.Loot.SEASON_INFO_MAX_TIERS] = 50,
 		[f0_local0.Loot.SEASON_INFO_DROP_VERSIONS] = "1,2,3,4,5,6,7,8,9,10,11",
 		[f0_local0.Loot.SEASON_INFO_HIGHEST_DROP_VERSION] = 11,
 		[f0_local0.Loot.SEASON_INFO_ASSET_POSTSEASON] = "loot_season_8_postseason",
-		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = 0x1DB2EA27F50DA32,
+		[f0_local0.Loot.SEASON_INFO_ASSET_ALLRNG] = "loot_season_8_postseason_all_rng",
 		[f0_local0.Loot.SEASON_INFO_TABLENAME] = 0x3ABDE23DA74CF07
 	}
 }
@@ -1093,7 +1093,7 @@ end
 
 f0_local0.Loot.GetSeasonDropVersions = function ( f63_arg0 )
 	local f63_local0 = CoDShared.Loot.GetSeasonInfoParam( f63_arg0, CoDShared.Loot.SEASON_INFO_DROP_VERSIONS )
-	if f63_local0 == nil or f63_local0 == 0x0 then
+	if f63_local0 == nil or f63_local0 == "" then
 		return ""
 	end
 	local f63_local1 = Dvar[0xA8A508EBA98A27E]:get()
@@ -1106,7 +1106,7 @@ end
 f0_local0.Loot.GetCurrentSeason = function ()
 	local f64_local0 = Dvar[0x462D05D73A06ACE]:get()
 	if f64_local0 == nil or f64_local0 == "" then
-		return 0x0
+		return ""
 	else
 		return Engine[0xC53F8D38DF9042B]( f64_local0 )
 	end
@@ -1114,11 +1114,11 @@ end
 
 f0_local0.Loot.GetNextSeason = function ()
 	if Dvar[0xA74F344825B5618] == nil then
-		return 0x0
+		return ""
 	else
 		local f65_local0 = Dvar[0xA74F344825B5618]:get()
 		if f65_local0 == nil or f65_local0 == "" then
-			return 0x0
+			return ""
 		else
 			return Engine[0xC53F8D38DF9042B]( f65_local0 )
 		end
@@ -1128,7 +1128,7 @@ end
 f0_local0.Loot.GetCurrentEventContract = function ()
 	local f66_local0 = Dvar[0xA7588CE8BBBC25D]:get()
 	if f66_local0 == nil or f66_local0 == "" then
-		return 0x0
+		return ""
 	else
 		return Engine[0xC53F8D38DF9042B]( f66_local0 )
 	end
@@ -1195,9 +1195,9 @@ f0_local0.Loot.GetActiveContractIds = function ( f72_arg0 )
 	end
 	for f72_local7, f72_local8 in pairs( CoDShared.Loot.ContractSlots ) do
 		if f72_local8 ~= nil then
-			local f72_local5 = f72_local1[0x5951A0A644A98FB][f72_local8]
+			local f72_local5 = f72_local1.loot_contracts[f72_local8]
 			if f72_local5 ~= nil then
-				local f72_local6 = f72_local5[0x871FFFC5C709FEE]:get()
+				local f72_local6 = f72_local5.contractid:get()
 				if f72_local6 > 0 then
 					table.insert( f72_local0, f72_local6 )
 				end
@@ -1261,26 +1261,26 @@ f0_local0.Loot.UpdateAllRNGUnlockedModel = function ( f74_arg0 )
 end
 
 f0_local0.Loot.GetWeaponPurchasedData = function ( f75_arg0, f75_arg1 )
-	if Engine.CurrentSessionMode() == Enum.eModes[0x83EBA96F36BC4E5] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_multiplayer then
 		if f75_arg1[0x953B2B12F1D6B1B] == nil then
 			return 
 		end
 		local f75_local0 = Engine.StorageGetBuffer( f75_arg0, Enum.StorageFileType[0xD5A7695E03A7A90] )
-		if f75_local0[0xE21F66EB3A1F18] then
-			for f75_local17, f75_local18 in DDLUtils.pairs( f75_local0[0xE21F66EB3A1F18] ) do
-				local f75_local19 = Engine[0x8FF94BB44442412]( f75_local17, Enum.eModes[0x83EBA96F36BC4E5] )
-				if f75_arg1[0x953B2B12F1D6B1B][f75_local17] and f75_arg1[0x953B2B12F1D6B1B][f75_local17][0xAB8B7DF567CD2A] then
-					local f75_local4 = Engine.GetPlayerStats( f75_arg0, Enum[0x303F77CADBF82AB][0xF27E237306A62E0], Enum.eModes[0x83EBA96F36BC4E5] )
+		if f75_local0.ranked_item_stats then
+			for f75_local17, f75_local18 in DDLUtils.pairs( f75_local0.ranked_item_stats ) do
+				local f75_local19 = Engine[0x8FF94BB44442412]( f75_local17, Enum.eModes.mode_multiplayer )
+				if f75_arg1[0x953B2B12F1D6B1B][f75_local17] and f75_arg1[0x953B2B12F1D6B1B][f75_local17].purchasedbits then
+					local f75_local4 = Engine.GetPlayerStats( f75_arg0, Enum[0x303F77CADBF82AB][0xF27E237306A62E0], Enum.eModes.mode_multiplayer )
 					if f75_local4 then
 						local f75_local5 = f75_local4.PlayerStatsList.RANK
 						local f75_local6 = f75_local4.PlayerStatsList.RANK.StatValue:get()
 					end
-					local f75_local7 = (Engine.GetItemUnlockLevel( f75_local19, Enum.eModes[0x83EBA96F36BC4E5] ) or 0) <= (f75_local5 and f75_local6 or 0) or Engine[0xD876F030270CB95]( f75_arg0, Enum.eModes[0x83EBA96F36BC4E5], f75_local17 )
+					local f75_local7 = (Engine.GetItemUnlockLevel( f75_local19, Enum.eModes.mode_multiplayer ) or 0) <= (f75_local5 and f75_local6 or 0) or Engine[0xD876F030270CB95]( f75_arg0, Enum.eModes.mode_multiplayer, f75_local17 )
 					local f75_local8 = CoDShared.IsLootItemOwnedByName( f75_arg0, f75_local17 )
 					if not f75_local8 then
 						for f75_local14, f75_local15 in ipairs( Engine[0x9F0BB7D52A7A978]( f75_local17 ) ) do
-							if f75_local15["lootid"] ~= 0x0 then
-								local f75_local12, f75_local13 = CoDShared.IsLootItemOwnedByNameSimple( f75_arg0, f75_local15["lootid"] )
+							if f75_local15.lootid ~= "" then
+								local f75_local12, f75_local13 = CoDShared.IsLootItemOwnedByNameSimple( f75_arg0, f75_local15.lootid )
 								if f75_local13 then
 									f75_local8 = true
 									break
@@ -1289,7 +1289,7 @@ f0_local0.Loot.GetWeaponPurchasedData = function ( f75_arg0, f75_arg1 )
 						end
 					end
 					if f75_local8 ~= nil then
-						local f75_local16 = f75_arg1[0x953B2B12F1D6B1B][f75_local17][0xAB8B7DF567CD2A]
+						local f75_local16 = f75_arg1[0x953B2B12F1D6B1B][f75_local17].purchasedbits
 						local f75_local9 = f75_local16
 						f75_local16 = f75_local16.set
 						local f75_local10
@@ -1304,7 +1304,7 @@ f0_local0.Loot.GetWeaponPurchasedData = function ( f75_arg0, f75_arg1 )
 						end
 						f75_local10 = 0
 					end
-					local f75_local16 = f75_arg1[0x953B2B12F1D6B1B][f75_local17][0xAB8B7DF567CD2A]
+					local f75_local16 = f75_arg1[0x953B2B12F1D6B1B][f75_local17].purchasedbits
 					local f75_local9 = f75_local16
 					f75_local16 = f75_local16.set
 					local f75_local10
@@ -1321,12 +1321,12 @@ f0_local0.Loot.GetWeaponPurchasedData = function ( f75_arg0, f75_arg1 )
 			end
 		end
 	end
-	if Engine.CurrentSessionMode() == Enum.eModes[0xBF1DCC8138A9D39] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_warzone then
 		if f75_arg1[0x473319D8A8D9DCF] == nil then
 			return 
 		elseif f75_arg1[0x473319D8A8D9DCF] then
 			for f75_local3, f75_local17 in DDLUtils.pairs( f75_arg1[0x473319D8A8D9DCF] ) do
-				local f75_local18 = Engine[0x8FF94BB44442412]( f75_local3, Enum.eModes[0x83EBA96F36BC4E5] )
+				local f75_local18 = Engine[0x8FF94BB44442412]( f75_local3, Enum.eModes.mode_multiplayer )
 				if f75_arg1[0x473319D8A8D9DCF][f75_local3] then
 					local f75_local19 = CoDShared.IsLootItemOwnedByName( f75_arg0, f75_local3 )
 					if f75_local19 ~= nil then
@@ -1441,45 +1441,45 @@ f0_local0[0x562F4B21BD0FAB0] = function ( f83_arg0, f83_arg1 )
 	local f83_local0 = Engine.StorageGetBuffer( f83_arg0, Enum.StorageFileType[0x9E0698F1D820882] )
 	local f83_local1, f83_local2 = nil
 	if f83_local0 then
-		if f83_arg1 == Enum.eModes[0x83EBA96F36BC4E5] then
-			f83_local1 = f83_local0["mpcharacters"]
+		if f83_arg1 == Enum.eModes.mode_multiplayer then
+			f83_local1 = f83_local0.mpcharacters
 			local f83_local3 = Engine[0xFC41172469DB251]( f83_arg0 )
 			if f83_local3 then
-				f83_local2 = f83_local3[0x147738D5CEE9199]
+				f83_local2 = f83_local3.characters
 			end
-		elseif f83_arg1 == Enum.eModes[0xBF1DCC8138A9D39] then
+		elseif f83_arg1 == Enum.eModes.mode_warzone then
 			f83_local1 = f83_local0.wzCharacters
 			local f83_local3 = Engine[0xFC41172469DB251]( f83_arg0 )
 			if f83_local3 then
-				f83_local2 = f83_local3[0x147738D5CEE9199]
+				f83_local2 = f83_local3.characters
 			end
-		elseif f83_arg1 == Enum.eModes[0x3723205FAE52C4A] then
+		elseif f83_arg1 == Enum.eModes.mode_zombies then
 			f83_local1 = f83_local0.zmCharacters
 			local f83_local3 = Engine[0xFC41172469DB251]( f83_arg0 )
 			if f83_local3 then
-				f83_local2 = f83_local3[0x147738D5CEE9199]
+				f83_local2 = f83_local3.characters
 			end
 		end
 	end
 	if f83_local1 and f83_local2 then
 		for f83_local13, f83_local14 in DDLUtils.ipairs( f83_local2 ) do
 			local f83_local15 = f83_local1[f83_local13]
-			local f83_local16 = f83_local14[0xF7F78E9EBEFCE27]:get()
-			f83_local15[0xEFB826D1A3BB80A]:set( f83_local16 )
-			local f83_local17 = f83_local14[0xD9FCEAC8FF24CBD]:get()
-			f83_local15[0x32308E50B7EEFA8]:set( f83_local17 )
-			local f83_local18 = f83_local14["selectedoutfititems"][f83_local16]
-			local f83_local19 = f83_local14["selectedoutfititems"][f83_local17]
-			for f83_local6, f83_local7 in DDLUtils.pairs( f83_local18[0x12BCDFA518CC913] ) do
+			local f83_local16 = f83_local14.selectedoutfit:get()
+			f83_local15.outfitindex:set( f83_local16 )
+			local f83_local17 = f83_local14.selectedwarpaintoutfit:get()
+			f83_local15.warpaintoutfitindex:set( f83_local17 )
+			local f83_local18 = f83_local14.selectedoutfititems[f83_local16]
+			local f83_local19 = f83_local14.selectedoutfititems[f83_local17]
+			for f83_local6, f83_local7 in DDLUtils.pairs( f83_local18.selectedcomponent ) do
 				if f83_local6 == Enum.CharacterItemType[0x8E3A65D78229DC1] then
-					f83_local15[0x4DAF419B5CE4B42][f83_local6]:set( f83_local19[f83_local6]:get() )
+					f83_local15.outfititems[f83_local6]:set( f83_local19[f83_local6]:get() )
 				else
-					f83_local15[0x4DAF419B5CE4B42][f83_local6]:set( f83_local7:get() )
+					f83_local15.outfititems[f83_local6]:set( f83_local7:get() )
 				end
 			end
-			if f83_arg1 == Enum.eModes[0xBF1DCC8138A9D39] then
+			if f83_arg1 == Enum.eModes.mode_warzone then
 				if Engine.StorageGetBuffer( f83_arg0, Enum.StorageFileType[0xD1A0F784B3C95A0] ) and Engine.StorageGetBuffer( f83_arg0, Enum.StorageFileType[0xAB0E693244221BC] ) then
-					f83_local8 = Engine.GetHeroList( Enum.eModes[0xBF1DCC8138A9D39] )
+					f83_local8 = Engine.GetHeroList( Enum.eModes.mode_warzone )
 					f83_local6 = true
 					for f83_local11, f83_local12 in ipairs( f83_local8 ) do
 						if f83_local12.bodyIndex == f83_local13 then
@@ -1487,7 +1487,7 @@ f0_local0[0x562F4B21BD0FAB0] = function ( f83_arg0, f83_arg1 )
 							break
 						end
 					end
-					f83_local7 = f83_local15[0xA616BDFE454ECB3]
+					f83_local7 = f83_local15.locked
 					f83_local9 = f83_local7
 					f83_local7 = f83_local7.set
 					if f83_local6 then
@@ -1502,7 +1502,7 @@ f0_local0[0x562F4B21BD0FAB0] = function ( f83_arg0, f83_arg1 )
 					f83_local10 = 0
 				end
 			end
-			f83_local15[0xA616BDFE454ECB3]:set( 0 )
+			f83_local15.locked:set( 0 )
 		end
 		Engine.StorageWrite( f83_arg0, Enum.StorageFileType[0x9E0698F1D820882] )
 	end
@@ -1529,13 +1529,13 @@ f0_local0.ReportUser = function ( f85_arg0, f85_arg1, f85_arg2, f85_arg3, f85_ar
 		f85_arg5 = ""
 	end
 	Engine[0xDE279ECDDDD966]( f85_arg0, 0xFCCC6EEEAF0939B, {
-		[0xB5C735486FC7CCB] = f85_arg1,
-		[0xCF0F333F5033DD1] = f85_arg2,
-		[0x9219FBE4AAC71B6] = f85_arg3,
-		[0x336E379BA146826] = Engine[0xD52E2360F482280](),
-		[0x3E2AC46BE8D2A8] = f85_local0,
-		["object_id"] = f85_local1,
-		[0x46401B5D2A8D2A4] = f85_arg5
+		xuid = f85_arg1,
+		offense = f85_arg2,
+		penalty = f85_arg3,
+		match_id = Engine[0xD52E2360F482280](),
+		filename = f85_local0,
+		object_id = f85_local1,
+		message = f85_arg5
 	} )
 end
 
@@ -1560,7 +1560,7 @@ f0_local0.GetLobbyDLCBits = function ( f87_arg0, f87_arg1, f87_arg2 )
 end
 
 f0_local0.LootContracts = {}
-f0_local0.LootContracts.LootContractsTable = 0x222A2B349A0591D
+f0_local0.LootContracts.LootContractsTable = "gamedata/lootcontracts/lootcontracts.csv"
 f0_local0.LootContracts.MaxActiveContracts = 2
 f0_local0.LootContracts.MaxDailyContracts = 1
 f0_local0.LootContracts.ContractGameMode = {
@@ -1580,7 +1580,7 @@ f0_local0.LootContracts.GetContractsNameHash = function ( f88_arg0 )
 	if f88_local0 ~= nil then
 		return f88_local0
 	else
-		return 0x0
+		return ""
 	end
 end
 
@@ -1589,7 +1589,7 @@ f0_local0.LootContracts.GetContractsCategoryHash = function ( f89_arg0 )
 	if f89_local0 ~= nil then
 		return f89_local0
 	else
-		return 0x0
+		return ""
 	end
 end
 
@@ -1620,7 +1620,7 @@ f0_local0.LootContracts.GetContractTitle = function ( f93_arg0 )
 	if f93_local0 ~= nil then
 		return f93_local0
 	else
-		return 0x0
+		return ""
 	end
 end
 
@@ -1629,7 +1629,7 @@ f0_local0.LootContracts.GetContractDescription = function ( f94_arg0 )
 	if f94_local0 ~= nil then
 		return f94_local0
 	else
-		return 0x0
+		return ""
 	end
 end
 
@@ -1672,15 +1672,15 @@ end
 
 f0_local0.LootContracts.GetCurrentContractGameMode = function ()
 	local f98_local0 = Engine.CurrentSessionMode()
-	if f98_local0 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f98_local0 == Enum.eModes.mode_multiplayer then
 		if LuaUtils.IsArenaMode() then
 			return Enum[0x1B899F51A938E95][0xEFB62D162F33EC5]
 		else
 			return Enum[0x1B899F51A938E95][0xF1D72D16310405B]
 		end
-	elseif f98_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f98_local0 == Enum.eModes.mode_zombies then
 		return Enum[0x1B899F51A938E95][0xEEA5DD162E4C313]
-	elseif f98_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f98_local0 == Enum.eModes.mode_warzone then
 		return Enum[0x1B899F51A938E95][0xEFB6CD162F34FC3]
 	else
 		return Enum[0x1B899F51A938E95][0x8291997DE05302D]
@@ -1726,33 +1726,33 @@ end
 f0_local0.Playlists = {}
 f0_local0.Playlists.GetShowcased = function ( f101_arg0 )
 	local f101_local0 = nil
-	if f101_arg0 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f101_arg0 == Enum.eModes.mode_multiplayer then
 		f101_local0 = Dvar[0xA659C21568D7219]:get()
-	elseif f101_arg0 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f101_arg0 == Enum.eModes.mode_zombies then
 		f101_local0 = Dvar[0xAAD972156CB1F3D]:get()
-	elseif f101_arg0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f101_arg0 == Enum.eModes.mode_warzone then
 		f101_local0 = Dvar[0xABEA22156D9A521]:get()
 	end
 	if f101_local0 ~= nil and f101_local0 ~= "" then
 		return Engine[0xC53F8D38DF9042B]( f101_local0 )
 	else
-		return 0x0
+		return ""
 	end
 end
 
 f0_local0.Playlists.GetLowpopShowcased = function ( f102_arg0 )
 	local f102_local0 = nil
-	if f102_arg0 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f102_arg0 == Enum.eModes.mode_multiplayer then
 		f102_local0 = Dvar[0x9D9F4F1877E2CC3]:get()
-	elseif f102_arg0 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f102_arg0 == Enum.eModes.mode_zombies then
 		f102_local0 = Dvar[0x9A6EFF18752CAAB]:get()
-	elseif f102_arg0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f102_arg0 == Enum.eModes.mode_warzone then
 		f102_local0 = Dvar[0x981FEF18733C7EB]:get()
 	end
 	if f102_local0 ~= nil and f102_local0 ~= "" then
 		return Engine[0xC53F8D38DF9042B]( f102_local0 )
 	else
-		return 0x0
+		return ""
 	end
 end
 
@@ -1770,11 +1770,11 @@ end
 
 f0_local0.Playlists.GetFeatured = function ( f104_arg0 )
 	local f104_local0 = nil
-	if f104_arg0 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f104_arg0 == Enum.eModes.mode_multiplayer then
 		f104_local0 = Dvar[0xCAE66D461D6B5D1]:get()
-	elseif f104_arg0 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f104_arg0 == Enum.eModes.mode_zombies then
 		f104_local0 = Dvar[0xC8851D461B5C2E5]:get()
-	elseif f104_arg0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f104_arg0 == Enum.eModes.mode_warzone then
 		f104_local0 = Dvar[0xC635CD46196B959]:get()
 	end
 	return CoDShared.Playlists.GetFeaturedInternal( f104_local0 )
@@ -1782,11 +1782,11 @@ end
 
 f0_local0.Playlists.GetLowpopFeatured = function ( f105_arg0 )
 	local f105_local0 = nil
-	if f105_arg0 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f105_arg0 == Enum.eModes.mode_multiplayer then
 		f105_local0 = Dvar[0xC29714B70182EB3]:get()
-	elseif f105_arg0 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f105_arg0 == Enum.eModes.mode_zombies then
 		f105_local0 = Dvar[0xC638C4B7049D4DB]:get()
-	elseif f105_arg0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f105_arg0 == Enum.eModes.mode_warzone then
 		f105_local0 = Dvar[0xC3E7B4B702A9BBB]:get()
 	end
 	return CoDShared.Playlists.GetFeaturedInternal( f105_local0 )

@@ -16,7 +16,7 @@ CoD.rocketLauncherReticle_UI3D_Internal.new = function ( f1_arg0, f1_arg1, f1_ar
 	local GreenBacking = LUI.UIImage.new( 0, 0, 0, 759, 0, 0, 101, 667 )
 	GreenBacking:setRGB( 0.64, 1, 0.81 )
 	GreenBacking:setAlpha( 0.45 )
-	GreenBacking:setImage( RegisterImage( 0xD2B81E07F5D9C6E ) )
+	GreenBacking:setImage( RegisterImage( "uie_t7_hud_launcher_mainreticlebacking" ) )
 	self:addElement( GreenBacking )
 	self.GreenBacking = GreenBacking
 	

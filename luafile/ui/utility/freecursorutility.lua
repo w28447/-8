@@ -717,9 +717,9 @@ DataSources.FreeCursor = {
 				f53_local2:set( false )
 				if IsWarzone() then
 					f53_local2 = f53_local1:create( "isStashFocused" )
-					f53_local2:set( 0x0 )
+					f53_local2:set( "" )
 					f53_local2 = f53_local1:create( "pickupHintWarzone" )
-					f53_local2:set( 0x0 )
+					f53_local2:set( "" )
 				end
 			end
 		end
@@ -792,7 +792,7 @@ DataSources.FreeCursor = {
 				"displayName",
 				"name"
 			},
-			default = 0x0
+			default = ""
 		},
 		{
 			name = "description",
@@ -800,7 +800,7 @@ DataSources.FreeCursor = {
 				"desc",
 				"description"
 			},
-			default = 0x0
+			default = ""
 		},
 		{
 			name = "detailedDescription",
@@ -815,14 +815,14 @@ DataSources.FreeCursor = {
 			paths = {
 				"headerName"
 			},
-			default = 0x0
+			default = ""
 		},
 		{
 			name = "headerUseString",
 			paths = {
 				"headerUseString"
 			},
-			default = 0x0
+			default = ""
 		},
 		{
 			name = "attachmentDataSource",
@@ -844,7 +844,7 @@ DataSources.FreeCursor = {
 				"unlockDescription",
 				"levelUnlockDescription"
 			},
-			default = 0x0
+			default = ""
 		},
 		{
 			name = "cautionDescription",
@@ -852,7 +852,7 @@ DataSources.FreeCursor = {
 				"cautionDesc",
 				"cautionDescription"
 			},
-			default = 0x0
+			default = ""
 		},
 		{
 			name = "characterIndex",
@@ -866,7 +866,7 @@ DataSources.FreeCursor = {
 			paths = {
 				"characterTraitSummary"
 			},
-			default = 0x0
+			default = ""
 		},
 		{
 			name = "clientNum",
@@ -1085,7 +1085,7 @@ CoD.FreeCursorUtility.CanOpenTooltip = function ( f78_arg0 )
 	local f78_local2 = f78_local1.contextualInfo.detailedDescription:get()
 	local f78_local3 = f78_local2
 	local f78_local4
-	if f78_local2 == "" or f78_local2 == 0x0 then
+	if f78_local2 == "" or f78_local2 == "" then
 		f78_local4 = false
 	else
 		f78_local4 = f78_local3 and true

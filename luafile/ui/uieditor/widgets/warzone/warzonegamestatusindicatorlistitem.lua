@@ -26,7 +26,7 @@ CoD.WarzoneGameStatusIndicatorListItem.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local led = LUI.UIImage.new( 0, 0, 1, 293, 0, 0, 2, 42 )
 	led:setAlpha( 0.02 )
-	led:setImage( RegisterImage( 0xC07F7432F86DA83 ) )
+	led:setImage( RegisterImage( "uie_wz_hud_map_danger_led" ) )
 	led:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	led:setShaderVector( 0, 0, 0.25, 0, 0 )
 	led:setShaderVector( 1, 0, 0, 0, 0 )
@@ -39,7 +39,7 @@ CoD.WarzoneGameStatusIndicatorListItem.new = function ( f1_arg0, f1_arg1, f1_arg
 	local Glow2 = LUI.UIImage.new( 0, 0, -8, 78, 0, 0, -1, 43 )
 	Glow2:setRGB( 1, 0, 0 )
 	Glow2:setAlpha( 0 )
-	Glow2:setImage( RegisterImage( 0xC58FF2328701EBA ) )
+	Glow2:setImage( RegisterImage( "uie_ui_hud_core_no_ammo_glow" ) )
 	Glow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow2 )
 	self.Glow2 = Glow2
@@ -47,7 +47,7 @@ CoD.WarzoneGameStatusIndicatorListItem.new = function ( f1_arg0, f1_arg1, f1_arg
 	local Glow = LUI.UIImage.new( 0, 0, 25.5, 75.5, 0, 0, -11, 53 )
 	Glow:setRGB( 1, 0, 0 )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0x65BA0231BD57E0B ) )
+	Glow:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_led_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
@@ -156,7 +156,7 @@ CoD.WarzoneGameStatusIndicatorListItem.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local border = LUI.UIImage.new( 0, 0, -3, 81, 0, 0, -1.5, 46.5 )
 	border:setRGB( 0.07, 0.07, 0.07 )
-	border:setImage( RegisterImage( 0xA3C76B80B69874D ) )
+	border:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_chamfer_border" ) )
 	border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	border:setShaderVector( 0, 0, 0, 0, 0 )
 	border:setupNineSliceShader( 18, 24 )
@@ -172,7 +172,7 @@ CoD.WarzoneGameStatusIndicatorListItem.new = function ( f1_arg0, f1_arg1, f1_arg
 	trianglePip2:setRGB( 0, 0, 0 )
 	trianglePip2:setAlpha( 0 )
 	trianglePip2:setZRot( 270 )
-	trianglePip2:setImage( RegisterImage( 0x1226A0CC6137EEE ) )
+	trianglePip2:setImage( RegisterImage( "uie_ui_hud_common_triangle" ) )
 	self:addElement( trianglePip2 )
 	self.trianglePip2 = trianglePip2
 	
@@ -180,7 +180,7 @@ CoD.WarzoneGameStatusIndicatorListItem.new = function ( f1_arg0, f1_arg1, f1_arg
 	trianglePip:setRGB( 0, 0, 0 )
 	trianglePip:setAlpha( 0 )
 	trianglePip:setZRot( 90 )
-	trianglePip:setImage( RegisterImage( 0x1226A0CC6137EEE ) )
+	trianglePip:setImage( RegisterImage( "uie_ui_hud_common_triangle" ) )
 	self:addElement( trianglePip )
 	self.trianglePip = trianglePip
 	
@@ -450,7 +450,7 @@ CoD.WarzoneGameStatusIndicatorListItem.__clipsPerState = {
 			f18_arg0.iconPandemicEnemy:completeAnimation()
 			f18_arg0.iconPandemicEnemy:setRGB( 1, 1, 1 )
 			f18_arg0.iconPandemicEnemy:setAlpha( 1 )
-			f18_arg0.iconPandemicEnemy:setImage( RegisterImage( 0x14B2E7558F68939 ) )
+			f18_arg0.iconPandemicEnemy:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_icon_lives" ) )
 			f18_arg0.clipFinished( f18_arg0.iconPandemicEnemy )
 			f18_arg0.border:completeAnimation()
 			f18_arg0.border:setLeftRight( 0, 0, -3, 158 )
@@ -526,7 +526,7 @@ CoD.WarzoneGameStatusIndicatorListItem.__clipsPerState = {
 			f19_arg0.iconPandemic:completeAnimation()
 			f19_arg0.iconPandemic:setRGB( 1, 1, 1 )
 			f19_arg0.iconPandemic:setAlpha( 1 )
-			f19_arg0.iconPandemic:setImage( RegisterImage( 0x14B2E7558F68939 ) )
+			f19_arg0.iconPandemic:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_icon_lives" ) )
 			f19_arg0.clipFinished( f19_arg0.iconPandemic )
 			f19_arg0.iconPandemicEnemy:completeAnimation()
 			f19_arg0.iconPandemicEnemy:setRGB( 1, 1, 1 )

@@ -93,7 +93,7 @@ CoD.StartMenu_ChangeTeam_ButtonInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 	local GlowAdditive = LUI.UIImage.new( -0.01, 1.03, -2, -2, 0, 0, -84, 44 )
 	GlowAdditive:setAlpha( 0 )
 	GlowAdditive:setZRot( 180 )
-	GlowAdditive:setImage( RegisterImage( 0xAD405802E3EEE94 ) )
+	GlowAdditive:setImage( RegisterImage( "uie_icon_frontend_navigation_glowmed" ) )
 	self:addElement( GlowAdditive )
 	self.GlowAdditive = GlowAdditive
 	

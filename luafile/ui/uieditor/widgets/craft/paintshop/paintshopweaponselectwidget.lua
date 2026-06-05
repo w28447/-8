@@ -44,25 +44,25 @@ CoD.PaintshopWeaponSelectWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( weaponList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		if not CoD.CACUtility.IsCACBlackMarketItemLocked( f5_arg1, f5_arg0, f5_arg2 ) and CoD.CACUtility.HasSignatureWeapons( f5_arg1, f5_arg0, f5_arg2 ) then
-			CoD.CACUtility.ShowWeaponVariantList( f5_arg1, f5_arg2, self.WeaponVariantListWidget )
+	f1_arg0:AddButtonCallbackFunction( weaponList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not CoD.CACUtility.IsCACBlackMarketItemLocked( menu, element, controller ) and CoD.CACUtility.HasSignatureWeapons( menu, element, controller ) then
+			CoD.CACUtility.ShowWeaponVariantList( menu, controller, self.WeaponVariantListWidget )
 			PlaySoundAlias( "uin_press_generic" )
-			SetControllerModelValue( f5_arg2, "PaintjobWeaponVariantListShown", true )
+			SetControllerModelValue( controller, "PaintjobWeaponVariantListShown", true )
 			return true
-		elseif not CoD.CACUtility.IsCACBlackMarketItemLocked( f5_arg1, f5_arg0, f5_arg2 ) and not CoD.CACUtility.HasSignatureWeapons( f5_arg1, f5_arg0, f5_arg2 ) then
-			CoD.CraftUtility.OpenPaintjobSelection( self, f5_arg0, f5_arg2, "setweapon", f5_arg1 )
+		elseif not CoD.CACUtility.IsCACBlackMarketItemLocked( menu, element, controller ) and not CoD.CACUtility.HasSignatureWeapons( menu, element, controller ) then
+			CoD.CraftUtility.OpenPaintjobSelection( self, element, controller, "setweapon", menu )
 			PlaySoundAlias( "uin_press_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		if not CoD.CACUtility.IsCACBlackMarketItemLocked( f6_arg1, f6_arg0, f6_arg2 ) and CoD.CACUtility.HasSignatureWeapons( f6_arg1, f6_arg0, f6_arg2 ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.CACUtility.IsCACBlackMarketItemLocked( menu, element, controller ) and CoD.CACUtility.HasSignatureWeapons( menu, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif not CoD.CACUtility.IsCACBlackMarketItemLocked( f6_arg1, f6_arg0, f6_arg2 ) and not CoD.CACUtility.HasSignatureWeapons( f6_arg1, f6_arg0, f6_arg2 ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif not CoD.CACUtility.IsCACBlackMarketItemLocked( menu, element, controller ) and not CoD.CACUtility.HasSignatureWeapons( menu, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -114,14 +114,14 @@ CoD.PaintshopWeaponSelectWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local LB = CoD.BumperButtonWithKeyMouseText.new( f1_arg0, f1_arg1, 0.5, 0.5, -799.5, -599.5, 0, 0, 52, 86 )
 	LB:setZoom( 72 )
-	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBDCD5292604F434 ) )
+	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/lb" ) )
 	LB.GamepadPrompt:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	self:addElement( LB )
 	self.LB = LB
 	
 	local RB = CoD.BumperButtonWithKeyMouseText.new( f1_arg0, f1_arg1, 0.5, 0.5, 600, 771, 0, 0, 52, 86 )
 	RB:setZoom( 72 )
-	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBFED5292621DA9A ) )
+	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/rb" ) )
 	self:addElement( RB )
 	self.RB = RB
 	
@@ -164,11 +164,11 @@ CoD.PaintshopWeaponSelectWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f13_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( RightArrow, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
-		CoD.GridAndListUtility.NavigateGridItem( self.weaponCategoryList, f14_arg2, true )
+	f1_arg0:AddButtonCallbackFunction( RightArrow, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		CoD.GridAndListUtility.NavigateGridItem( self.weaponCategoryList, controller, true )
 		return true
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 		return false
 	end, false )
 	self:addElement( RightArrow )
@@ -214,11 +214,11 @@ CoD.PaintshopWeaponSelectWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f19_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( LeftArrow, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
-		CoD.GridAndListUtility.NavigateGridItem( self.weaponCategoryList, f20_arg2, false )
+	f1_arg0:AddButtonCallbackFunction( LeftArrow, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		CoD.GridAndListUtility.NavigateGridItem( self.weaponCategoryList, controller, false )
 		return true
-	end, function ( f21_arg0, f21_arg1, f21_arg2 )
-		CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 		return false
 	end, false )
 	self:addElement( LeftArrow )
@@ -236,12 +236,12 @@ CoD.PaintshopWeaponSelectWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A] )
 		return f22_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( WeaponVariantListWidget, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
-		CoD.CACUtility.HideWeaponVariantList( f23_arg1, f23_arg2 )
-		SetControllerModelValue( f23_arg2, "PaintjobWeaponVariantListShown", false )
+	f1_arg0:AddButtonCallbackFunction( WeaponVariantListWidget, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		CoD.CACUtility.HideWeaponVariantList( menu, controller )
+		SetControllerModelValue( controller, "PaintjobWeaponVariantListShown", false )
 		return true
-	end, function ( f24_arg0, f24_arg1, f24_arg2 )
-		CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	self:addElement( WeaponVariantListWidget )

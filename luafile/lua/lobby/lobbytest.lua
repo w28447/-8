@@ -111,7 +111,7 @@ Lobby.Test.ProcessFunction = function ()
 		return 
 	end
 	local f2_local0 = LobbyData.GetCurrentMenuTarget()
-	local f2_local1 = f2_local0[0x4BCADBA8E631B86]
+	local f2_local1 = f2_local0.name
 	local f2_local2 = Engine[0x9882F293C327557]()
 	if Lobby.Test.currentTest.state == Lobby.Test.STATE.NOT_STARTED then
 		local f2_local3 = Lobby.Test.tests[Dvar[0x8C6C20B615F01FD]:get()]
@@ -166,7 +166,7 @@ Lobby.Test.ProcessFunction = function ()
 	end
 	if Lobby.Test.currentTest.state == Lobby.Test.STATE.INITIALIZED then
 		local f2_local11 = Lobby.Test.tests[Lobby.Test.currentTest.name]
-		if f2_local0[0x4BCADBA8E631B86] == Lobby.Test.currentTest.startTarget then
+		if f2_local0.name == Lobby.Test.currentTest.startTarget then
 			Lobby.Test.currentTest.state = Lobby.Test.STATE.IN_PROGRESS
 			Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0xC1DE3DC19B3B20D], "LobbyTest '" .. Lobby.Test.currentTest.name .. "' IN_PROGRESS\n" )
 		end
@@ -237,7 +237,7 @@ Lobby.Test.Pump = function ()
 		elseif Engine[0x9D33D652B9B0F3B]() > Lobby.Test.gameTimeoutDeadline then
 			Lobby.Test.currentTest.state = Lobby.Test.STATE.NOT_STARTED
 			Lobby.Test.gameTimeout = -1
-			Engine[0xBC42C678E40DBE8]( Enum.errorCode[0x2FD312C2C06EC11], "Not in a game for longer than timeout." )
+			Engine[0xBC42C678E40DBE8]( Enum.errorcode[0x2FD312C2C06EC11], "Not in a game for longer than timeout." )
 		end
 	end
 end

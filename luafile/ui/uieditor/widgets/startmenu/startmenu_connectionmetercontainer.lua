@@ -16,7 +16,7 @@ CoD.StartMenu_ConnectionMeterContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 	self.StartMenuConnectionMeter0 = StartMenuConnectionMeter0
 	
 	local ConnectionMeterLabel = LUI.UIText.new( 0, 0, 0, 445, 0, 0, -23, 15 )
-	ConnectionMeterLabel:setText( Engine[0xF9F1239CFD921FE]( 0xAC738A24A38A83 ) )
+	ConnectionMeterLabel:setText( Engine[0xF9F1239CFD921FE]( "menu/connection_meter_caps" ) )
 	ConnectionMeterLabel:setTTF( "default" )
 	ConnectionMeterLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	ConnectionMeterLabel:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

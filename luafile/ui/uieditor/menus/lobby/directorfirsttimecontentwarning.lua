@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/common/commoncenteredpopup" )
-require( "x64:f93e6387e9d051" )
+require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settingslider_wrapper" )
 require( "ui/uieditor/widgets/pc/startmenu/controlsoptions/pc_startmenu_options_controls_keybinder" )
 
 CoD.DirectorFirstTimeContentWarning = InheritFrom( CoD.Menu )
@@ -18,7 +18,7 @@ LUI.createMenu.DirectorFirstTimeContentWarning = function ( f1_arg0, f1_arg1 )
 	f1_local1:addElementToPendingUpdateStateList( self )
 	
 	local CommomCenteredPopup = CoD.CommonCenteredPopup.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	CommomCenteredPopup.featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0xD8FF5E03592FD99 ) )
+	CommomCenteredPopup.featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/confirm" ) )
 	CommomCenteredPopup.TitleText:setText( LocalizeToUpperString( "menu/content_filter" ) )
 	self:addElement( CommomCenteredPopup )
 	self.CommomCenteredPopup = CommomCenteredPopup
@@ -54,16 +54,16 @@ LUI.createMenu.DirectorFirstTimeContentWarning = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( OptionGroups, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		if HasListAction( f3_arg0, f3_arg2 ) then
-			ProcessListAction( self, f3_arg0, f3_arg2, f3_arg1 )
+	f1_local1:AddButtonCallbackFunction( OptionGroups, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if HasListAction( element, controller ) then
+			ProcessListAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		if HasListAction( f4_arg0, f4_arg2 ) then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if HasListAction( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -74,7 +74,7 @@ LUI.createMenu.DirectorFirstTimeContentWarning = function ( f1_arg0, f1_arg1 )
 	
 	local OptionDesc = LUI.UIText.new( 0.5, 0.5, -328, 321, 0.5, 0.5, -351, -330 )
 	OptionDesc:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	OptionDesc:setText( Engine[0xF9F1239CFD921FE]( 0x562DFE5E1BB4809 ) )
+	OptionDesc:setText( Engine[0xF9F1239CFD921FE]( "menu/graphic_content_desc" ) )
 	OptionDesc:setTTF( "dinnext_regular" )
 	OptionDesc:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	OptionDesc:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -83,7 +83,7 @@ LUI.createMenu.DirectorFirstTimeContentWarning = function ( f1_arg0, f1_arg1 )
 	
 	local OptionTitle = LUI.UIText.new( 0.5, 0.5, -328, 321, 0.5, 0.5, -400, -370 )
 	OptionTitle:setRGB( 0.63, 0.57, 0.2 )
-	OptionTitle:setText( LocalizeToUpperString( 0x9F837EEDFBB8117 ) )
+	OptionTitle:setText( LocalizeToUpperString( "menu/graphic_content" ) )
 	OptionTitle:setTTF( "ttmussels_regular" )
 	OptionTitle:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	OptionTitle:setAlignment( Enum.LUIAlignment[0x70510683C22104B] )
@@ -114,22 +114,22 @@ LUI.createMenu.DirectorFirstTimeContentWarning = function ( f1_arg0, f1_arg1 )
 			modelName = "LastInput"
 		} )
 	end, false )
-	self:registerEventHandler( "input_source_changed", function ( element, event )
+	self:registerEventHandler( "input_source_changed", function ( self, event )
 		local f8_local0 = nil
 		if IsPC() then
 			SetFocusToElement( self, "OptionGroups", f1_arg0 )
 		end
 		if not f8_local0 then
-			f8_local0 = element:dispatchEventToChildren( event )
+			f8_local0 = self:dispatchEventToChildren( event )
 		end
 		return f8_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		ClearMenuSavedState( f9_arg1 )
-		CoD.LobbyUtility.CompleteFirstTimeContentWarning( f9_arg1, f9_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		ClearMenuSavedState( menu )
+		CoD.LobbyUtility.CompleteFirstTimeContentWarning( menu, controller )
 		return true
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xD8FF5E03592FD99, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/confirm", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

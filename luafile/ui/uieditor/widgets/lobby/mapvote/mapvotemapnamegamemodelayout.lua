@@ -24,7 +24,7 @@ CoD.MapVoteMapNameGameModeLayout.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local GameMode = LUI.UIText.new( 0, 0, 19, 248, 0, 0, 30, 51 )
 	GameMode:setRGB( 0.75, 0.73, 0.73 )
-	GameMode:setText( Engine[0xF9F1239CFD921FE]( 0xD5F2EC9F7E1CF0 ) )
+	GameMode:setText( Engine[0xF9F1239CFD921FE]( "mpui/team_deathmatch" ) )
 	GameMode:setTTF( "ttmussels_regular" )
 	GameMode:setLetterSpacing( 4 )
 	GameMode:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

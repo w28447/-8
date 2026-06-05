@@ -135,7 +135,7 @@ CoD.SpawnSelectionUtility.MoveSelectionToTargetedBeacon = function ( f9_arg0, f9
 			CoD.SpawnSelectionUtility.DeselectSpawnRegion( f9_arg0.SpawnSelectionMap, f9_local0, f9_arg1, f9_local1 )
 		end
 		CoD.SpawnSelectionUtility.SelectSpawnRegion( f9_arg0.SpawnSelectionMap, f9_local1, f9_arg1, f9_local0 )
-		Engine.PlaySound( "uin_main_edit", f9_arg1 )
+		Engine.playsound( "uin_main_edit", f9_arg1 )
 	end
 end
 
@@ -186,11 +186,11 @@ CoD.SpawnSelectionUtility.IsObjectiveInActiveState = function ( f13_arg0 )
 end
 
 CoD.SpawnSelectionUtility.IsObjectiveSpawnBeacon = function ( f14_arg0, f14_arg1 )
-	return Engine.GetObjectiveName( f14_arg0, f14_arg1 ) == 0x8D1C6C697374044
+	return Engine.GetObjectiveName( f14_arg0, f14_arg1 ) == "spawnbeacon_objective"
 end
 
 CoD.SpawnSelectionUtility.IsObjectiveDeathMarker = function ( f15_arg0, f15_arg1 )
-	return Engine.GetObjectiveName( f15_arg0, f15_arg1 ) == 0x18F4438220254D1
+	return Engine.GetObjectiveName( f15_arg0, f15_arg1 ) == "headicon_dead"
 end
 
 CoD.SpawnSelectionUtility.IsObjectiveSpawnGroup = function ( f16_arg0, f16_arg1 )
@@ -239,7 +239,7 @@ CoD.SpawnSelectionUtility.ResizeSpawnRadius = function ( f22_arg0, f22_arg1, f22
 	elseif math.abs( f22_local7 ) > 0 then
 		f22_local8 = f22_local0 / math.abs( f22_local4 - f22_local2 )
 	end
-	local f22_local9 = Engine[0xE00B2F29271C60B]( 0xBC504B4DFA8F12A )
+	local f22_local9 = Engine[0xE00B2F29271C60B]( "default_spawnbeacon_settings" )
 	local f22_local10 = f22_local9[0xDE603FA4BA8D107]
 	local f22_local11 = f22_local10 * f22_local8
 	local f22_local12 = f22_arg1.SpawnSelectRadius
@@ -276,7 +276,7 @@ CoD.SpawnSelectionUtility.SetupKeyboardPrompt = function ( f23_arg0, f23_arg1 )
 					
 					else
 						f23_local2( f23_local3, f23_local4 )
-						f23_local1.KeyPrompt.keybind:setText( Engine[0xF9F1239CFD921FE]( 0xA4153A04CFECFE9 ) )
+						f23_local1.KeyPrompt.keybind:setText( Engine[0xF9F1239CFD921FE]( "key/space" ) )
 						CoD.SpawnSelectionUtility.UpdateKeyboardPrompt( f23_arg0, f23_arg1 )
 						f23_arg0:registerEventHandler( "input_source_changed", CoD.SpawnSelectionUtility.UpdateKeyboardPrompt )
 					end
@@ -543,7 +543,7 @@ CoD.SpawnSelectionUtility.SetupSpawnSelectControls = function ( f42_arg0, f42_ar
 					CoD.SpawnSelectionUtility.DeselectSpawnRegion( f42_arg0.SpawnSelectionMap, f42_arg3.selectedRegion, f42_arg1, nil )
 				end
 				CoD.SpawnSelectionUtility.SelectSpawnRegion( f42_arg0.SpawnSelectionMap, f46_local0, f42_arg1, nil )
-				Engine.PlaySound( "uin_main_edit", f42_arg1 )
+				Engine.playsound( "uin_main_edit", f42_arg1 )
 			elseif f46_local0 and f46_local0 == f42_arg3.selectedRegion then
 				if not CoD.SpawnSelectionUtility.IsSpawnEMPDisabled( f42_arg1, f46_local0.objId ) and not CoD.SpawnSelectionUtility.IsSpawnManualDisabled( f42_arg1, f46_local0.objId ) and CoD.SpawnSelectionUtility.IsSpawnBeaconActive( f42_arg1, f46_local0 ) then
 					if IsGameTypeCombatTraining() and IsPC() and not IsGamepad( f42_arg1 ) then
@@ -635,7 +635,7 @@ CoD.SpawnSelectionUtility.SetupSpawnSelectControls = function ( f42_arg0, f42_ar
 							CoD.SpawnSelectionUtility.DeselectSpawnRegion( f42_arg0.SpawnSelectionMap, f53_local3, f42_arg1, f53_local2 )
 						end
 						CoD.SpawnSelectionUtility.SelectSpawnRegion( f42_arg0.SpawnSelectionMap, f53_local2, f42_arg1, f53_local3 )
-						Engine.PlaySound( "uin_main_edit", f42_arg1 )
+						Engine.playsound( "uin_main_edit", f42_arg1 )
 					end
 				end
 			end

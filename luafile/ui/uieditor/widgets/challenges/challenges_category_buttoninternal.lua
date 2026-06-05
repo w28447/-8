@@ -83,7 +83,7 @@ CoD.Challenges_Category_ButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local LockIconBacingTexture = LUI.UIImage.new( 0.74, 0.74, 57, 97, 0, 0, 30.5, 70.5 )
 	LockIconBacingTexture:setAlpha( 0.15 )
-	LockIconBacingTexture:setImage( RegisterImage( 0x311E811A3183347 ) )
+	LockIconBacingTexture:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	LockIconBacingTexture:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	LockIconBacingTexture:setShaderVector( 0, 0, 0, 0, 0 )
 	LockIconBacingTexture:setupNineSliceShader( 128, 128 )
@@ -111,7 +111,7 @@ CoD.Challenges_Category_ButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local Name = LUI.UIText.new( 0, 0, 26.5, 326.5, 0.5, 0.5, -13.5, 13.5 )
 	Name:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	Name:setText( Engine[0xF9F1239CFD921FE]( 0x5662A3E5DC08B87 ) )
+	Name:setText( Engine[0xF9F1239CFD921FE]( "menu/operations_caps" ) )
 	Name:setTTF( "ttmussels_regular" )
 	Name:setLetterSpacing( 3 )
 	Name:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -135,7 +135,7 @@ CoD.Challenges_Category_ButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local CompleteImage = LUI.UIImage.new( 0, 0, 470, 530, 0.5, 0.5, -30, 30 )
 	CompleteImage:setAlpha( 0 )
-	CompleteImage:setImage( RegisterImage( 0x98D02A0405ED520 ) )
+	CompleteImage:setImage( RegisterImage( "uie_ui_icon_challenges_complete_small" ) )
 	self:addElement( CompleteImage )
 	self.CompleteImage = CompleteImage
 	

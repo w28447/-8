@@ -30,7 +30,7 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local TiledwhiteNoiseBacking = LUI.UIImage.new( 0, 0, 666, 820, 0, 0, 35, 266 )
 	TiledwhiteNoiseBacking:setRGB( 0, 0, 0 )
 	TiledwhiteNoiseBacking:setAlpha( 0.3 )
-	TiledwhiteNoiseBacking:setImage( RegisterImage( 0x7167D8C33A06020 ) )
+	TiledwhiteNoiseBacking:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
 	TiledwhiteNoiseBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledwhiteNoiseBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledwhiteNoiseBacking:setupNineSliceShader( 64, 64 )
@@ -55,7 +55,7 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local TiledPlusGridL = LUI.UIImage.new( 0, 0, -240, 475, 0, 0, -148, 294 )
 	TiledPlusGridL:setAlpha( 0.05 )
 	TiledPlusGridL:setScale( 0.5, 0.5 )
-	TiledPlusGridL:setImage( RegisterImage( 0x6E37BAE22631294 ) )
+	TiledPlusGridL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_repeat_plusgrid" ) )
 	TiledPlusGridL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledPlusGridL:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledPlusGridL:setupNineSliceShader( 220, 220 )
@@ -65,7 +65,7 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local TiledPlusGridR = LUI.UIImage.new( 0, 0, 563.5, 1278.5, 0, 0, -148, 294 )
 	TiledPlusGridR:setAlpha( 0.05 )
 	TiledPlusGridR:setScale( 0.5, 0.5 )
-	TiledPlusGridR:setImage( RegisterImage( 0x6E37BAE22631294 ) )
+	TiledPlusGridR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_repeat_plusgrid" ) )
 	TiledPlusGridR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledPlusGridR:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledPlusGridR:setupNineSliceShader( 220, 220 )
@@ -211,7 +211,7 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local MeritsLabel = LUI.UIText.new( 0.6, 0.73, 2, 2, 0, 0, 6, 33 )
 	MeritsLabel:setRGB( 0.92, 0.92, 0.92 )
 	MeritsLabel:setAlpha( 0.5 )
-	MeritsLabel:setText( LocalizeToUpperString( 0x1A6986D07D40B76 ) )
+	MeritsLabel:setText( LocalizeToUpperString( "aar/merits" ) )
 	MeritsLabel:setTTF( "default" )
 	MeritsLabel:setLetterSpacing( 2 )
 	MeritsLabel:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -232,7 +232,7 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local Arrow = LUI.UIImage.new( 0, 0, 846, 818, 0, 0, 132.5, 176.5 )
 	Arrow:setAlpha( 0.2 )
-	Arrow:setImage( RegisterImage( 0x1481C7ADBB91434 ) )
+	Arrow:setImage( RegisterImage( "uie_ui_hud_wz_endgame_common_triangle" ) )
 	Arrow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Arrow:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( Arrow )
@@ -249,7 +249,7 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local DotHline02 = LUI.UIImage.new( 0, 0, 302, 663, 0, 0, 154.5, 158.5 )
 	DotHline02:setAlpha( 0.1 )
-	DotHline02:setImage( RegisterImage( 0x10AE414508F905A ) )
+	DotHline02:setImage( RegisterImage( "uie_ui_menu_aar_common_hdotline" ) )
 	DotHline02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotHline02:setShaderVector( 0, 0, 0, 0, 0 )
 	DotHline02:setupNineSliceShader( 68, 4 )
@@ -258,7 +258,7 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local DotHline = LUI.UIImage.new( 0, 0, 302, 663, 0, 0, 209.5, 213.5 )
 	DotHline:setAlpha( 0.1 )
-	DotHline:setImage( RegisterImage( 0x10AE414508F905A ) )
+	DotHline:setImage( RegisterImage( "uie_ui_menu_aar_common_hdotline" ) )
 	DotHline:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotHline:setShaderVector( 0, 0, 0, 0, 0 )
 	DotHline:setupNineSliceShader( 68, 4 )
@@ -267,7 +267,7 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local DotHline01 = LUI.UIImage.new( 0, 0, 302, 662, 0, 0, 94, 98 )
 	DotHline01:setAlpha( 0.1 )
-	DotHline01:setImage( RegisterImage( 0x10AE414508F905A ) )
+	DotHline01:setImage( RegisterImage( "uie_ui_menu_aar_common_hdotline" ) )
 	DotHline01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotHline01:setShaderVector( 0, 0, 0, 0, 0 )
 	DotHline01:setupNineSliceShader( 68, 4 )
@@ -276,20 +276,20 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local SideBarRight = LUI.UIImage.new( 0, 0, 1097, 1113, 0, 0, 33.5, 269.5 )
 	SideBarRight:setAlpha( 0.1 )
-	SideBarRight:setImage( RegisterImage( 0x18C9E5D1368EB4F ) )
+	SideBarRight:setImage( RegisterImage( "uie_ui_menu_aar_merit_sidebar" ) )
 	self:addElement( SideBarRight )
 	self.SideBarRight = SideBarRight
 	
 	local SideBarLeft = LUI.UIImage.new( 0, 0, 4, 20, 0, 0, 33.5, 265.5 )
 	SideBarLeft:setRGB( 0, 0, 0 )
 	SideBarLeft:setAlpha( 0.8 )
-	SideBarLeft:setImage( RegisterImage( 0x18C9E5D1368EB4F ) )
+	SideBarLeft:setImage( RegisterImage( "uie_ui_menu_aar_merit_sidebar" ) )
 	self:addElement( SideBarLeft )
 	self.SideBarLeft = SideBarLeft
 	
 	local Hline01 = LUI.UIImage.new( 0, 0, 663, 822, 0, 0, 94, 98 )
 	Hline01:setAlpha( 0.1 )
-	Hline01:setImage( RegisterImage( 0xEC0A6D6364CCB87 ) )
+	Hline01:setImage( RegisterImage( "uie_ui_menu_aar_common_hline" ) )
 	Hline01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Hline01:setShaderVector( 0, 0, 0, 0, 0 )
 	Hline01:setupNineSliceShader( 12, 2 )
@@ -298,7 +298,7 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local Hline02 = LUI.UIImage.new( 0, 0, 663, 822, 0, 0, 154.5, 158.5 )
 	Hline02:setAlpha( 0.1 )
-	Hline02:setImage( RegisterImage( 0xEC0A6D6364CCB87 ) )
+	Hline02:setImage( RegisterImage( "uie_ui_menu_aar_common_hline" ) )
 	Hline02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Hline02:setShaderVector( 0, 0, 0, 0, 0 )
 	Hline02:setupNineSliceShader( 12, 2 )
@@ -307,7 +307,7 @@ CoD.MeritOverlayBoard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local Hline = LUI.UIImage.new( 0, 0, 663, 822, 0, 0, 205.5, 209.5 )
 	Hline:setAlpha( 0.1 )
-	Hline:setImage( RegisterImage( 0xEC0A6D6364CCB87 ) )
+	Hline:setImage( RegisterImage( "uie_ui_menu_aar_common_hline" ) )
 	Hline:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Hline:setShaderVector( 0, 0, 0, 0, 0 )
 	Hline:setupNineSliceShader( 12, 2 )

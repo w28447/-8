@@ -1,25 +1,25 @@
-CoD["callingcards_survivor"] = InheritFrom( LUI.UIElement )
-CoD["callingcards_survivor"].__defaultWidth = 960
-CoD["callingcards_survivor"].__defaultHeight = 240
-CoD["callingcards_survivor"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_survivor = InheritFrom( LUI.UIElement )
+CoD.callingcards_survivor.__defaultWidth = 960
+CoD.callingcards_survivor.__defaultHeight = 240
+CoD.callingcards_survivor.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD["callingcards_survivor"] )
+	self:setClass( CoD.callingcards_survivor )
 	self.id = "CallingCards_survivor"
 	self.soundSet = "none"
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Background = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	Background:setImage( RegisterImage( 0xA2FD1F0875C7195 ) )
+	Background:setImage( RegisterImage( "uie_ui_icon_callingcard_survivor_bg" ) )
 	self:addElement( Background )
 	self.Background = Background
 	
 	local boat1 = LUI.UIImage.new( 0, 0, 101.5, 349.5, 0, 0, 48, 240 )
-	boat1:setImage( RegisterImage( 0xD45AD6C3F292AF3 ) )
+	boat1:setImage( RegisterImage( "uie_ui_icon_callingcard_survivor_boat1" ) )
 	self:addElement( boat1 )
 	self.boat1 = boat1
 	
 	local boat2 = LUI.UIImage.new( 0, 0, 842.5, 890.5, 0, 0, 96, 144 )
-	boat2:setImage( RegisterImage( 0xD45AE6C3F292CA6 ) )
+	boat2:setImage( RegisterImage( "uie_ui_icon_callingcard_survivor_boat2" ) )
 	self:addElement( boat2 )
 	self.boat2 = boat2
 	
@@ -34,12 +34,12 @@ CoD["callingcards_survivor"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.girl = girl
 	
 	local pole = LUI.UIImage.new( 0, 0, 633.5, 857.5, 0, 0, -121.5, 230.5 )
-	pole:setImage( RegisterImage( 0xA4D82D334289820 ) )
+	pole:setImage( RegisterImage( "uie_ui_icon_callingcard_survivor_pole" ) )
 	self:addElement( pole )
 	self.pole = pole
 	
 	local arm = LUI.UIImage.new( 0, 0, 757, 901, 0, 0, -97.5, 206.5 )
-	arm:setImage( RegisterImage( 0x8620EB61317D384 ) )
+	arm:setImage( RegisterImage( "uie_ui_icon_callingcard_survivor_arm" ) )
 	self:addElement( arm )
 	self.arm = arm
 	
@@ -50,7 +50,7 @@ CoD["callingcards_survivor"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	return self
 end
 
-CoD["callingcards_survivor"].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_survivor.__resetProperties = function ( f2_arg0 )
 	f2_arg0.boat1:completeAnimation()
 	f2_arg0.boat2:completeAnimation()
 	f2_arg0.boy:completeAnimation()
@@ -67,7 +67,7 @@ CoD["callingcards_survivor"].__resetProperties = function ( f2_arg0 )
 	f2_arg0.arm:setZRot( 0 )
 end
 
-CoD["callingcards_survivor"].__clipsPerState = {
+CoD.callingcards_survivor.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()

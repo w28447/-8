@@ -17,7 +17,7 @@ CoD.ContractDetailsPanelInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local TiledwhiteNoiseBacking = LUI.UIImage.new( 0, 0, 0, 760, 0, 0, 9, 398 )
 	TiledwhiteNoiseBacking:setRGB( 0, 0, 0 )
 	TiledwhiteNoiseBacking:setAlpha( 0.25 )
-	TiledwhiteNoiseBacking:setImage( RegisterImage( 0x7167D8C33A06020 ) )
+	TiledwhiteNoiseBacking:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
 	TiledwhiteNoiseBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledwhiteNoiseBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledwhiteNoiseBacking:setupNineSliceShader( 64, 64 )
@@ -82,7 +82,7 @@ CoD.ContractDetailsPanelInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local FuiBox02Right = LUI.UIImage.new( 0, 0, 727.5, 761.5, 0, 0, 34, 0 )
 	FuiBox02Right:setScale( 0.3, 0.3 )
-	FuiBox02Right:setImage( RegisterImage( 0x811A80C0AADA825 ) )
+	FuiBox02Right:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
 	FuiBox02Right:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiBox02Right:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox02Right )
@@ -119,26 +119,26 @@ CoD.ContractDetailsPanelInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f9_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PreviewButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueEqualTo( f10_arg0, f10_arg2, "allowFrozenMoment", true ) and IsGamepad( f10_arg2 ) then
-			OpenOverlay( self, "MPSpecialistHUBPreviewMoment", f10_arg2 )
+	f1_arg0:AddButtonCallbackFunction( PreviewButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "allowFrozenMoment", true ) and IsGamepad( controller ) then
+			OpenOverlay( self, "MPSpecialistHUBPreviewMoment", controller )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueNonEmptyString( f10_arg0, f10_arg2, "movieName" ) and IsGamepad( f10_arg2 ) then
-			SetControllerModelValue( f10_arg2, "LootStreamProgress.playAnimation", false )
-			CoD.VideoStreamingUtility.SetupVoDMovie( f10_arg2, f10_arg0, "" )
-			DelayOpenOverlay( f10_arg1, "VoDViewer", f10_arg2, {
+		elseif CoD.ModelUtility.IsSelfModelValueNonEmptyString( element, controller, "movieName" ) and IsGamepad( controller ) then
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+			CoD.VideoStreamingUtility.SetupVoDMovie( controller, element, "" )
+			DelayOpenOverlay( menu, "VoDViewer", controller, {
 				fullscreen = true
 			} )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueEqualTo( f11_arg0, f11_arg2, "allowFrozenMoment", true ) and IsGamepad( f11_arg2 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/preview", nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "allowFrozenMoment", true ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/preview", nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueNonEmptyString( f11_arg0, f11_arg2, "movieName" ) and IsGamepad( f11_arg2 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/preview", nil, nil )
+		elseif CoD.ModelUtility.IsSelfModelValueNonEmptyString( element, controller, "movieName" ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/preview", nil, nil )
 			return true
 		else
 			return false

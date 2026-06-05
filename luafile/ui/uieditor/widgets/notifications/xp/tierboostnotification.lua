@@ -1,4 +1,4 @@
-require( "x64:683120446682173" )
+require( "ui/uieditor/widgets/notifications/notificationqueuewidgets/notificationrewardqueuewidgets/notification2xpblackmarketreward" )
 
 CoD.TierBoostNotification = InheritFrom( LUI.UIElement )
 CoD.TierBoostNotification.__defaultWidth = 72
@@ -19,7 +19,7 @@ CoD.TierBoostNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	Glow2:setRGB( 0.8, 0.58, 0.12 )
 	Glow2:setAlpha( 0.15 )
 	Glow2:setScale( 2, 2 )
-	Glow2:setImage( RegisterImage( 0x4A1176ABBF1AB4C ) )
+	Glow2:setImage( RegisterImage( "uie_ui_hud_notifications_glow" ) )
 	Glow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Glow2:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( Glow2 )
@@ -28,7 +28,7 @@ CoD.TierBoostNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local Glow = LUI.UIImage.new( 0, 0, 1, 71, 0, 0, -25.5, 102.5 )
 	Glow:setRGB( 0.8, 0.58, 0.12 )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0x4A1176ABBF1AB4C ) )
+	Glow:setImage( RegisterImage( "uie_ui_hud_notifications_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Glow:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( Glow )

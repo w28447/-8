@@ -49,7 +49,7 @@ LUI.createMenu.EmblemEditorOptions = function ( f1_arg0, f1_arg1 )
 	
 	local TiledPlusGrid = LUI.UIImage.new( 0, 0, 1146, 1830, 0, 0, -103, 977 )
 	TiledPlusGrid:setAlpha( 0.1 )
-	TiledPlusGrid:setImage( RegisterImage( 0x6E37BAE22631294 ) )
+	TiledPlusGrid:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_repeat_plusgrid" ) )
 	TiledPlusGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledPlusGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledPlusGrid:setupNineSliceShader( 220, 220 )
@@ -130,11 +130,11 @@ LUI.createMenu.EmblemEditorOptions = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f9_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( OptionsList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		ProcessListAction( self, f10_arg0, f10_arg2, f10_arg1 )
+	f1_local1:AddButtonCallbackFunction( OptionsList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		ProcessListAction( self, element, controller, menu )
 		return true
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( OptionsList )
@@ -222,7 +222,7 @@ LUI.createMenu.EmblemEditorOptions = function ( f1_arg0, f1_arg1 )
 	
 	local dotline = LUI.UIImage.new( 0, 0, 1316, 1838, 0, 0, 82.5, 86.5 )
 	dotline:setAlpha( 0.1 )
-	dotline:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	dotline:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	dotline:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	dotline:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( dotline )
@@ -246,19 +246,19 @@ LUI.createMenu.EmblemEditorOptions = function ( f1_arg0, f1_arg1 )
 			end
 		}
 	} )
-	self:registerEventHandler( "ui_keyboard_input", function ( element, event )
+	self:registerEventHandler( "ui_keyboard_input", function ( self, event )
 		local f19_local0 = nil
-		CoD.CraftUtility.EmblemEditor_HandleKeyboardComplete( self, element, f1_arg0, event )
+		CoD.CraftUtility.EmblemEditor_HandleKeyboardComplete( self, self, f1_arg0, event )
 		if not f19_local0 then
-			f19_local0 = element:dispatchEventToChildren( event )
+			f19_local0 = self:dispatchEventToChildren( event )
 		end
 		return f19_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
-		GoBack( self, f20_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f21_arg0, f21_arg1, f21_arg2 )
-		CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

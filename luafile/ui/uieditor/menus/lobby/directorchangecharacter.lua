@@ -18,7 +18,7 @@ LUI.createMenu.DirectorChangeCharacter = function ( f1_arg0, f1_arg1 )
 	self.anyChildUsesUpdateState = true
 	
 	local GenericMenuFrame = CoD.GenericMenuFrame.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0, 1, 0, 0 )
-	GenericMenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0xC5A14AD1770107F ) )
+	GenericMenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/select_character" ) )
 	GenericMenuFrame:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -47,7 +47,7 @@ LUI.createMenu.DirectorChangeCharacter = function ( f1_arg0, f1_arg1 )
 	
 	local TabBottomLine = LUI.UIImage.new( 0.5, 0.5, 80, 900, 0.5, 0.5, -310.5, -306.5 )
 	TabBottomLine:setAlpha( 0.08 )
-	TabBottomLine:setImage( RegisterImage( 0x5526CF3733E24C4 ) )
+	TabBottomLine:setImage( RegisterImage( "uie_ui_menu_common_tab_line_bottom" ) )
 	self:addElement( TabBottomLine )
 	self.TabBottomLine = TabBottomLine
 	
@@ -74,12 +74,12 @@ LUI.createMenu.DirectorChangeCharacter = function ( f1_arg0, f1_arg1 )
 	f1_local8( f1_local7, f1_local9.breadcrumbCount, function ( f7_arg0, f7_arg1 )
 		CoD.Menu.UpdateButtonShownState( f7_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x29E5695FF1401AD] )
 	end, false )
-	self:registerEventHandler( "occlusion_change", function ( element, event )
+	self:registerEventHandler( "occlusion_change", function ( self, event )
 		local f8_local0 = nil
-		if element.OcclusionChange then
-			f8_local0 = element:OcclusionChange( event )
-		elseif element.super.OcclusionChange then
-			f8_local0 = element.super:OcclusionChange( event )
+		if self.OcclusionChange then
+			f8_local0 = self:OcclusionChange( event )
+		elseif self.super.OcclusionChange then
+			f8_local0 = self.super:OcclusionChange( event )
 		end
 		if IsEventPropertyEqualTo( event, "occluded", true ) then
 			MenuUnhideFreeCursor( f1_local1, f1_arg0 )
@@ -87,35 +87,35 @@ LUI.createMenu.DirectorChangeCharacter = function ( f1_arg0, f1_arg1 )
 			MenuHidesFreeCursor( f1_local1, f1_arg0 )
 		end
 		if not f8_local0 then
-			f8_local0 = element:dispatchEventToChildren( event )
+			f8_local0 = self:dispatchEventToChildren( event )
 		end
 		return f8_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		PositionDraftOnFocusCharacterLost( self, f9_arg0, f9_arg2 )
-		GoBack( self, f9_arg2 )
-		CoD.LobbyUtility.SetMenuControllerRestriction( self, f9_arg2, 0 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
+		PositionDraftOnFocusCharacterLost( self, element, controller )
+		GoBack( self, controller )
+		CoD.LobbyUtility.SetMenuControllerRestriction( self, controller, 0 )
 		return true
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x29E5695FF1401AD], "ui_contextual_2", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x29E5695FF1401AD], "ui_contextual_2", function ( element, menu, controller, model )
 		if not IsPC() then
 			CoD.BaseUtility.UINoAction()
 			return true
-		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f11_arg2, "CharacterBreadcrumbs", "breadcrumbCount", 0 ) and IsPC() then
-			CoD.BreadcrumbUtility.ClearAllPersonalizationBreadcrumbs( f11_arg1, f11_arg2 )
+		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "CharacterBreadcrumbs", "breadcrumbCount", 0 ) and IsPC() then
+			CoD.BreadcrumbUtility.ClearAllPersonalizationBreadcrumbs( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
+	end, function ( element, menu, controller )
 		if not IsPC() then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x29E5695FF1401AD], 0x0, nil, "ui_contextual_2" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x29E5695FF1401AD], "", nil, "ui_contextual_2" )
 			return false
-		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f12_arg2, "CharacterBreadcrumbs", "breadcrumbCount", 0 ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x29E5695FF1401AD], 0x5619D8212EDA599, nil, "ui_contextual_2" )
+		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "CharacterBreadcrumbs", "breadcrumbCount", 0 ) and IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x29E5695FF1401AD], 0x5619D8212EDA599, nil, "ui_contextual_2" )
 			return true
 		else
 			return false

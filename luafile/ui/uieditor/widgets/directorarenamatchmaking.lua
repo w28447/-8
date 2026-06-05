@@ -161,8 +161,8 @@ CoD.directorArenaMatchmaking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	DirectorReadyButton = CoD.DirectorReadyButton.new( f1_arg0, f1_arg1, 0.5, 0.5, 470, 896, 1, 1, -188, -108 )
 	DirectorReadyButton:setAlpha( 0 )
-	DirectorReadyButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0x7A9F166E7248D86 ) )
-	DirectorReadyButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0x7A9F166E7248D86 ) )
+	DirectorReadyButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( "menu/ready_up" ) )
+	DirectorReadyButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( "menu/ready_up" ) )
 	DirectorReadyButton.PlayText:setText( LocalizeToUpperString( "menu/ready" ) )
 	DirectorReadyButton:subscribeToGlobalModel( f1_arg1, "PerController", "ButtonBits." .. Enum.LUIButton[0x755DA1E2E7C263F], function ( model )
 		DirectorReadyButton:setModel( model, f1_arg1 )
@@ -196,11 +196,11 @@ CoD.directorArenaMatchmaking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f15_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( DirectorPreGameButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
-		OpenQuarterMaster( self, f16_arg0, f16_arg2, "", f16_arg1 )
+	f1_arg0:AddButtonCallbackFunction( DirectorPreGameButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		OpenQuarterMaster( self, element, controller, "", menu )
 		return true
-	end, function ( f17_arg0, f17_arg1, f17_arg2 )
-		CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/black_market", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/black_market", nil, nil )
 		return true
 	end, false )
 	self:addElement( DirectorPreGameButton )

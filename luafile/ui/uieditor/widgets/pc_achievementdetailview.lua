@@ -23,7 +23,7 @@ CoD.PC_AchievementDetailView.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	PixelGridTiledBacking:setAlpha( 0.05 )
-	PixelGridTiledBacking:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
@@ -42,7 +42,7 @@ CoD.PC_AchievementDetailView.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local Dots = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Dots:setRGB( 0.92, 0.92, 0.92 )
-	Dots:setImage( RegisterImage( 0xFE4B36304988C2C ) )
+	Dots:setImage( RegisterImage( "uie_highlight_border_dot" ) )
 	Dots:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Dots:setShaderVector( 0, 0, 0, 0, 0 )
 	Dots:setupNineSliceShader( 6, 6 )
@@ -111,7 +111,7 @@ CoD.PC_AchievementDetailView.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local AchievementIcon = LUI.UIFixedAspectRatioImage.new( 0.5, 0.5, -128, 128, 0, 0, 107, 363 )
 	AchievementIcon:setRGB( 0.32, 0.32, 0.32 )
 	AchievementIcon:setAlpha( 0.8 )
-	AchievementIcon:setImage( RegisterImage( 0x50537D33096A8CA ) )
+	AchievementIcon:setImage( RegisterImage( "t7_icon_achievement_safehouse_01" ) )
 	self:addElement( AchievementIcon )
 	self.AchievementIcon = AchievementIcon
 	

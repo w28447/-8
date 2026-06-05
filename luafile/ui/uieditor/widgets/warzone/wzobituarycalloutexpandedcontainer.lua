@@ -15,7 +15,7 @@ CoD.WZObituaryCalloutExpandedContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local WarzoneKillerIdentity = CoD.WarzoneKillerIdentity.new( f1_arg0, f1_arg1, 0.5, 0.5, -400, 400, 0.5, 0.5, -40, 40 )
-	WarzoneKillerIdentity.KillerLabel:setText( LocalizeToUpperString( 0x161ED05A4E04839 ) )
+	WarzoneKillerIdentity.KillerLabel:setText( LocalizeToUpperString( "warzone/killed" ) )
 	WarzoneKillerIdentity:linkToElementModel( self, nil, false, function ( model )
 		WarzoneKillerIdentity:setModel( model, f1_arg1 )
 	end )

@@ -63,7 +63,7 @@ LUI.createMenu.SinglePlayerInspection = function ( f1_arg0, f1_arg1 )
 	self.FooterContainerFrontendRight = FooterContainerFrontendRight
 	
 	local CommonHeader = CoD.CommonHeader.new( f1_local1, f1_arg0, 0, 0, 0, 1920, 0, 0, 0, 67 )
-	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x22CC1B322BAEC69 ) )
+	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/inspection" ) )
 	CommonHeader.subtitle.subtitle:setAlpha( 0 )
 	CommonHeader:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f8_local0 = model:get()
@@ -106,11 +106,11 @@ LUI.createMenu.SinglePlayerInspection = function ( f1_arg0, f1_arg1 )
 	self:addElement( HeaderTopBar )
 	self.HeaderTopBar = HeaderTopBar
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		GoBack( self, f11_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

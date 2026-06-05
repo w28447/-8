@@ -42,17 +42,17 @@ CoD.StartMenu_Barracks_WL.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ProgressUnlocks, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		if IsInDefaultState( f4_arg0 ) then
-			OpenOverlay( self, "Prestige_PlayerLevel", f4_arg2 )
+	f1_arg0:AddButtonCallbackFunction( ProgressUnlocks, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsInDefaultState( element ) then
+			OpenOverlay( self, "Prestige_PlayerLevel", controller )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		if IsInDefaultState( f5_arg0 ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsInDefaultState( element ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -94,8 +94,8 @@ CoD.StartMenu_Barracks_WL.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 			modelName = "lobbyRoot.lobbyNav"
 		} )
 	end, false )
-	Leaderboards.ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( 0x225DF4C37296C0B ) )
-	Leaderboards.ButtonInternal.ButtonTitle.HeaderText:setText( Engine[0xF9F1239CFD921FE]( 0xFCAADB087BF022D ) )
+	Leaderboards.ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( "ui_menu_start_menu_leaderboards" ) )
+	Leaderboards.ButtonInternal.ButtonTitle.HeaderText:setText( Engine[0xF9F1239CFD921FE]( "menu/leaderboards_caps" ) )
 	Leaderboards:registerEventHandler( "gain_focus", function ( element, event )
 		local f10_local0 = nil
 		if element.gainFocus then
@@ -106,17 +106,17 @@ CoD.StartMenu_Barracks_WL.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f10_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Leaderboards, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		if IsInDefaultState( f11_arg0 ) then
-			CoD.StartMenuUtility.OpenLeaderboardMain( self, f11_arg1, f11_arg2, "Leaderboard_Main" )
+	f1_arg0:AddButtonCallbackFunction( Leaderboards, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsInDefaultState( element ) then
+			CoD.StartMenuUtility.OpenLeaderboardMain( self, menu, controller, "Leaderboard_Main" )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		if IsInDefaultState( f12_arg0 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsInDefaultState( element ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -150,17 +150,17 @@ CoD.StartMenu_Barracks_WL.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f14_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( LeaguePlayMedals, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		if IsInDefaultState( f15_arg0 ) then
-			CoD.StartMenuUtility.OpenStartMenuOverlay( self, f15_arg1, f15_arg2, "Barracks_Medals" )
+	f1_arg0:AddButtonCallbackFunction( LeaguePlayMedals, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsInDefaultState( element ) then
+			CoD.StartMenuUtility.OpenStartMenuOverlay( self, menu, controller, "Barracks_Medals" )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		if IsInDefaultState( f16_arg0 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsInDefaultState( element ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

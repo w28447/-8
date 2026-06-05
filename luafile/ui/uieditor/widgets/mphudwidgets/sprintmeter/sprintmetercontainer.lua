@@ -18,7 +18,7 @@ CoD.SprintMeterContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local Icon = LUI.UIImage.new( 0, 0, 118, 148, 0, 0, 55, 85 )
 	Icon:setXRot( 180 )
 	Icon:setZRot( -90 )
-	Icon:setImage( RegisterImage( 0xF666534ACAE542 ) )
+	Icon:setImage( RegisterImage( "uie_hud_sprintmeter_icon" ) )
 	self:addElement( Icon )
 	self.Icon = Icon
 	

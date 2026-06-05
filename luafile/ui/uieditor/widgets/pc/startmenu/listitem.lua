@@ -63,7 +63,7 @@ CoD.ListItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_ar
 	GlowAdd:setAlpha( 0 )
 	GlowAdd:setZRot( -90 )
 	GlowAdd:setScale( 0.35, 0.52 )
-	GlowAdd:setImage( RegisterImage( 0xAD405802E3EEE94 ) )
+	GlowAdd:setImage( RegisterImage( "uie_icon_frontend_navigation_glowmed" ) )
 	GlowAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowAdd )
 	self.GlowAdd = GlowAdd

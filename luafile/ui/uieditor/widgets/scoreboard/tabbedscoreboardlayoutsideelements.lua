@@ -9,7 +9,7 @@ CoD.TabbedScoreboardLayoutSideElements.new = function ( f1_arg0, f1_arg1, f1_arg
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local MapLayoutDotLine = LUI.UIImage.new( 0, 0, 68, 324, 0, 0, 5, 9 )
-	MapLayoutDotLine:setImage( RegisterImage( 0x7CDB8568A32C87D ) )
+	MapLayoutDotLine:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_dotline" ) )
 	MapLayoutDotLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	MapLayoutDotLine:setShaderVector( 0, 0, 1, 0, 0 )
 	MapLayoutDotLine:setShaderVector( 1, 0, 0, 0, 0 )
@@ -20,7 +20,7 @@ CoD.TabbedScoreboardLayoutSideElements.new = function ( f1_arg0, f1_arg1, f1_arg
 	self.MapLayoutDotLine = MapLayoutDotLine
 	
 	local MapLayoutDotLineAdd = LUI.UIImage.new( 0, 0, 68, 324, 0, 0, 5, 9 )
-	MapLayoutDotLineAdd:setImage( RegisterImage( 0x7CDB8568A32C87D ) )
+	MapLayoutDotLineAdd:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_dotline" ) )
 	MapLayoutDotLineAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	MapLayoutDotLineAdd:setShaderVector( 0, 0, 1, 0, 0 )
 	MapLayoutDotLineAdd:setShaderVector( 1, 0, 0, 0, 0 )

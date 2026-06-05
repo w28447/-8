@@ -9,18 +9,18 @@ CoD.CommonSearchingBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local LoadingBgElement = LUI.UIImage.new( 0, 0, 0, 122, 0, 0, 0, 20 )
-	LoadingBgElement:setImage( RegisterImage( 0xD12AC969AF93F51 ) )
+	LoadingBgElement:setImage( RegisterImage( "uie_ui_menu_window_loading_bg" ) )
 	self:addElement( LoadingBgElement )
 	self.LoadingBgElement = LoadingBgElement
 	
 	local SearchingText = LUI.UIImage.new( 0, 0, 15, 95, 0, 0, 1.5, 13.5 )
-	SearchingText:setImage( RegisterImage( 0x78EC1EE8D46CAD5 ) )
+	SearchingText:setImage( RegisterImage( "uie_ui_menu_window_loading_text" ) )
 	SearchingText:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( SearchingText )
 	self.SearchingText = SearchingText
 	
 	local ProgressBar = LUI.UIImage.new( 0, 0, 16, 122, 0, 0, 11, 13 )
-	ProgressBar:setImage( RegisterImage( 0x16EE9558C74BF ) )
+	ProgressBar:setImage( RegisterImage( "uie_ui_menu_window_loading_bar" ) )
 	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ProgressBar:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ProgressBar )
@@ -28,7 +28,7 @@ CoD.CommonSearchingBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local ConnectedText = LUI.UIImage.new( 0, 0, 46, 122, 0, 0, 0, 16 )
 	ConnectedText:setAlpha( 0 )
-	ConnectedText:setImage( RegisterImage( 0xC16731A01194FC8 ) )
+	ConnectedText:setImage( RegisterImage( "uie_ui_menu_window_loading_finished" ) )
 	ConnectedText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ConnectedText:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectedText )

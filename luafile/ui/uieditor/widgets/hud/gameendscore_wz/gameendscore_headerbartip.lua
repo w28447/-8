@@ -25,7 +25,7 @@ CoD.GameEndScore_HeaderBarTip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local Grid = LUI.UIImage.new( 0, 0.89, 0, 0, -0, 1, 0, 0 )
 	Grid:setRGB( 0, 0, 0 )
 	Grid:setAlpha( 0.25 )
-	Grid:setImage( RegisterImage( 0x2F926473EDCBFCA ) )
+	Grid:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_grid" ) )
 	Grid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	Grid:setShaderVector( 0, 0, 0, 0, 0 )
 	Grid:setupNineSliceShader( 22, 20 )
@@ -48,7 +48,7 @@ CoD.GameEndScore_HeaderBarTip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	Arrow:setRGB( 0, 0, 0 )
 	Arrow:setAlpha( 0.85 )
 	Arrow:setYRot( 180 )
-	Arrow:setImage( RegisterImage( 0x408E29FE6FA534D ) )
+	Arrow:setImage( RegisterImage( "uie_ui_hud_wz_endgame_end_arrow" ) )
 	self:addElement( Arrow )
 	self.Arrow = Arrow
 	

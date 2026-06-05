@@ -21,7 +21,7 @@ CoD.lmgInfiniteReticle_Status.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.FrameBottom = FrameBottom
 	
 	local Status = LUI.UIText.new( 0, 0, 13, 183, 0, 0, 5, 28 )
-	Status:setText( Engine[0xF9F1239CFD921FE]( 0xE20BF67125A4903 ) )
+	Status:setText( Engine[0xF9F1239CFD921FE]( "menu/status_caps" ) )
 	Status:setTTF( "default" )
 	Status:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Status:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

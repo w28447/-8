@@ -71,14 +71,14 @@ CoD.PrematchCountdown.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local GameTypeHintText = CoD.PrematchCountdown_BeginsIn.new( f1_arg0, f1_arg1, 0.5, 0.5, -280, 276, 0, 0, 305, 353 )
 	GameTypeHintText:setAlpha( 0 )
-	GameTypeHintText.MatchText:setText( Engine[0xF9F1239CFD921FE]( 0x7E04861C952E4AB ) )
+	GameTypeHintText.MatchText:setText( Engine[0xF9F1239CFD921FE]( "objectives/tdm_hint" ) )
 	GameTypeHintText.MatchText:setBackingAlpha( 0.7 )
 	self:addElement( GameTypeHintText )
 	self.GameTypeHintText = GameTypeHintText
 	
 	local FactionName = CoD.PrematchCountdown_BeginsIn.new( f1_arg0, f1_arg1, 0.5, 0.5, -351, 327, 0.5, 0.5, -259, -211 )
 	FactionName:setAlpha( 0 )
-	FactionName.MatchText:setText( LocalizeToUpperString( 0x8E58CC95DB34427 ) )
+	FactionName.MatchText:setText( LocalizeToUpperString( "mp/match_starting_in" ) )
 	self:addElement( FactionName )
 	self.FactionName = FactionName
 	

@@ -1,0 +1,17 @@
+EnableGlobals()
+CoD.TestFFOTDFnOverride = function ()
+	Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0xA9AE284CC7DE955], "Successful override of UI VM funtion from FFOTD..\n" )
+end
+
+dofile( "ui/utility/BlackMarketUtility.lua" )
+dofile( "ui/utility/OptionsUtility.lua" )
+dofile( "ui/utility/DirectorUtility.lua" )
+dofile( "ui/uieditor/widgets/PC_CoDAccount.lua" )
+dofile( "ui/uieditor/menus/StartMenu/Popups/StartMenu_Options_PrivacySettings.lua" )
+dofile( "ui/uieditor/menus/StartMenu/Popups/StartMenu_Options_PrivacySettings_PCUpdatePopup.lua" )
+dofile( "ui/uieditor/widgets/StartMenu/Options/StartMenu_Options_PrivacySettingsManagementForm.lua" )
+dofile( "ui/uieditor/widgets/StartMenu/Options/StartMenu_Options_PrivacySettingsScrollPrompt.lua" )
+dofile( "ui/utility/PlayerRoleUtility.lua" )
+dofile( "ui/utility/BlackMarketTableUtility.lua" )
+dofile( "ui/utility/FTUEUtility.lua" )
+DisableGlobals()

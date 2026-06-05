@@ -100,50 +100,50 @@ CoD.DecalGroupsListFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x22361E23588705A] )
 		return f10_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( decalGroupList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		if IsEmblemEditor( f11_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f11_arg0, f11_arg2, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "decalGroupList" ) and CoD.CraftUtility.EmblemChooseIcon_CanFitSelectedDecalGroup( self, f11_arg2 ) and CoD.CraftUtility.EmblemChooseIcon_IsGroupSlotAvailable( self, f11_arg2 ) then
-			CoD.CraftUtility.EmblemChooseIcon_SelectionAccepted( self, f11_arg0, f11_arg2 )
-			CoD.CraftUtility.EmblemEditor_SetEditMode( f11_arg2 )
-			GoBack( self, f11_arg2 )
-			ClearMenuSavedState( f11_arg1 )
+	f1_arg0:AddButtonCallbackFunction( decalGroupList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if IsEmblemEditor( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "decalGroupList" ) and CoD.CraftUtility.EmblemChooseIcon_CanFitSelectedDecalGroup( self, controller ) and CoD.CraftUtility.EmblemChooseIcon_IsGroupSlotAvailable( self, controller ) then
+			CoD.CraftUtility.EmblemChooseIcon_SelectionAccepted( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_SetEditMode( controller )
+			GoBack( self, controller )
+			ClearMenuSavedState( menu )
 			return true
-		elseif IsPaintshop( f11_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f11_arg0, f11_arg2, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "decalGroupList" ) and CoD.CraftUtility.EmblemChooseIcon_CanFitSelectedDecalGroup( self, f11_arg2 ) and CoD.CraftUtility.EmblemChooseIcon_IsGroupSlotAvailable( self, f11_arg2 ) then
-			CoD.CraftUtility.EmblemChooseIcon_SelectionAccepted( self, f11_arg0, f11_arg2 )
-			CoD.CraftUtility.EmblemEditor_SetEditMode( f11_arg2 )
-			CoD.CraftUtility.EmblemChooseIcon_RevertPreviewDecalCamera( self, f11_arg0, f11_arg2 )
-			GoBack( self, f11_arg2 )
-			ClearMenuSavedState( f11_arg1 )
+		elseif IsPaintshop( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "decalGroupList" ) and CoD.CraftUtility.EmblemChooseIcon_CanFitSelectedDecalGroup( self, controller ) and CoD.CraftUtility.EmblemChooseIcon_IsGroupSlotAvailable( self, controller ) then
+			CoD.CraftUtility.EmblemChooseIcon_SelectionAccepted( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_SetEditMode( controller )
+			CoD.CraftUtility.EmblemChooseIcon_RevertPreviewDecalCamera( self, element, controller )
+			GoBack( self, controller )
+			ClearMenuSavedState( menu )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		if IsEmblemEditor( f12_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f12_arg0, f12_arg2, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "decalGroupList" ) and CoD.CraftUtility.EmblemChooseIcon_CanFitSelectedDecalGroup( self, f12_arg2 ) and CoD.CraftUtility.EmblemChooseIcon_IsGroupSlotAvailable( self, f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if IsEmblemEditor( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "decalGroupList" ) and CoD.CraftUtility.EmblemChooseIcon_CanFitSelectedDecalGroup( self, controller ) and CoD.CraftUtility.EmblemChooseIcon_IsGroupSlotAvailable( self, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif IsPaintshop( f12_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f12_arg0, f12_arg2, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "decalGroupList" ) and CoD.CraftUtility.EmblemChooseIcon_CanFitSelectedDecalGroup( self, f12_arg2 ) and CoD.CraftUtility.EmblemChooseIcon_IsGroupSlotAvailable( self, f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif IsPaintshop( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "decalGroupList" ) and CoD.CraftUtility.EmblemChooseIcon_CanFitSelectedDecalGroup( self, controller ) and CoD.CraftUtility.EmblemChooseIcon_IsGroupSlotAvailable( self, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( decalGroupList, f1_arg1, Enum.LUIButton[0x22361E23588705A], "ui_contextual_1", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		if CoD.CraftUtility.EmblemChooseIcon_IsCustomDecalCategorySelected( self, f13_arg2 ) and IsGamepad( f13_arg2 ) then
-			OpenPopup( self, "DecalGroupOptions", f13_arg2, nil )
+	f1_arg0:AddButtonCallbackFunction( decalGroupList, f1_arg1, Enum.LUIButton[0x22361E23588705A], "ui_contextual_1", function ( element, menu, controller, model )
+		if CoD.CraftUtility.EmblemChooseIcon_IsCustomDecalCategorySelected( self, controller ) and IsGamepad( controller ) then
+			OpenPopup( self, "DecalGroupOptions", controller, nil )
 			return true
-		elseif CoD.CraftUtility.EmblemChooseIcon_IsCustomDecalCategorySelected( self, f13_arg2 ) and IsMouseOrKeyboard( f13_arg2 ) then
-			OpenPopup( self, "DecalGroupOptions", f13_arg2, nil )
+		elseif CoD.CraftUtility.EmblemChooseIcon_IsCustomDecalCategorySelected( self, controller ) and IsMouseOrKeyboard( controller ) then
+			OpenPopup( self, "DecalGroupOptions", controller, nil )
 			return true
 		else
 			
 		end
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		if CoD.CraftUtility.EmblemChooseIcon_IsCustomDecalCategorySelected( self, f14_arg2 ) and IsGamepad( f14_arg2 ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options", nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.EmblemChooseIcon_IsCustomDecalCategorySelected( self, controller ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "menu/options", nil, "ui_contextual_1" )
 			return true
-		elseif CoD.CraftUtility.EmblemChooseIcon_IsCustomDecalCategorySelected( self, f14_arg2 ) and IsMouseOrKeyboard( f14_arg2 ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
+		elseif CoD.CraftUtility.EmblemChooseIcon_IsCustomDecalCategorySelected( self, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "menu/options", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
 			return true
 		else
 			return false

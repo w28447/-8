@@ -18,7 +18,7 @@ CoD.BountyHunterPreviewDollars.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local Purchased = LUI.UIText.new( 0, 0, 0, 200, -0, 1, 0, 0 )
 	Purchased:setRGB( 0.76, 0.92, 0.59 )
 	Purchased:setAlpha( 0 )
-	Purchased:setText( Engine[0xF9F1239CFD921FE]( 0x162FE5AE72BC9F7 ) )
+	Purchased:setText( Engine[0xF9F1239CFD921FE]( "bounty_hunter/purchased" ) )
 	Purchased:setTTF( "ttmussels_regular" )
 	Purchased:setLetterSpacing( 4 )
 	Purchased:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

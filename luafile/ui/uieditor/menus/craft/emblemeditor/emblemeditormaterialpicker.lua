@@ -89,7 +89,7 @@ LUI.createMenu.EmblemEditorMaterialPicker = function ( f1_arg0, f1_arg1 )
 	self.actionsListPC = actionsListPC
 	
 	EmblemEditorFrame = CoD.GenericMenuFrame.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	EmblemEditorFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0xE8932DB4373E47F ) )
+	EmblemEditorFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/edit_layer_material" ) )
 	EmblemEditorFrame:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f6_local0 = model:get()
 		if f6_local0 ~= nil then
@@ -129,40 +129,40 @@ LUI.createMenu.EmblemEditorMaterialPicker = function ( f1_arg0, f1_arg1 )
 			modelName = "LastInput"
 		} )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
 		if IsPC() then
-			GoBack( self, f10_arg2 )
-			ClearMenuSavedState( f10_arg1 )
+			GoBack( self, controller )
+			ClearMenuSavedState( menu )
 			return true
 		else
-			CoD.CraftUtility.EmblemEditor_RevertLayerChanges( self, f10_arg2 )
-			GoBack( self, f10_arg2 )
-			ClearMenuSavedState( f10_arg1 )
+			CoD.CraftUtility.EmblemEditor_RevertLayerChanges( self, controller )
+			GoBack( self, controller )
+			ClearMenuSavedState( menu )
 			return true
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], nil, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		CoD.CraftUtility.EmblemChooseMaterial_UpdateMaterialAngleByStep( self, f12_arg0, -1, f12_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], nil, function ( element, menu, controller, model )
+		CoD.CraftUtility.EmblemChooseMaterial_UpdateMaterialAngleByStep( self, element, -1, controller )
 		return true
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "", nil, nil )
 		return false
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA], nil, function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
-		CoD.CraftUtility.EmblemChooseMaterial_UpdateMaterialAngleByStep( self, f14_arg0, 1, f14_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA], nil, function ( element, menu, controller, model )
+		CoD.CraftUtility.EmblemChooseMaterial_UpdateMaterialAngleByStep( self, element, 1, controller )
 		return true
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "", nil, nil )
 		return false
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x29E5695FF1401AD], nil, function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
-		CoD.CraftUtility.EmblemChooseMaterial_ToggleScaleMode( self, f16_arg0, f16_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x29E5695FF1401AD], nil, function ( element, menu, controller, model )
+		CoD.CraftUtility.EmblemChooseMaterial_ToggleScaleMode( self, element, controller )
 		return true
-	end, function ( f17_arg0, f17_arg1, f17_arg2 )
-		CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x29E5695FF1401AD], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x29E5695FF1401AD], "", nil, nil )
 		return false
 	end, false )
 	if CoD.isPC then

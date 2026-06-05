@@ -16,7 +16,7 @@ CoD.LeaderboardHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0.02, 0.02, -24, 1150, 0.31, 0.31, -10.5, 24.5 )
 	PixelGridTiledBacking:setAlpha( 0.08 )
-	PixelGridTiledBacking:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )

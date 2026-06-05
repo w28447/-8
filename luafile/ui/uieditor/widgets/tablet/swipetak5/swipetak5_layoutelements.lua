@@ -10,21 +10,21 @@ CoD.SwipeTak5_LayoutElements.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local LayoutElementRB = LUI.UIImage.new( 0, 0, 703.5, 731.5, 0, 0, 392.5, 424.5 )
 	LayoutElementRB:setAlpha( 0.2 )
-	LayoutElementRB:setImage( RegisterImage( 0x62FB654884B9D1B ) )
+	LayoutElementRB:setImage( RegisterImage( "uie_ui_hud_tak5_layout_common_element02" ) )
 	LayoutElementRB:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LayoutElementRB )
 	self.LayoutElementRB = LayoutElementRB
 	
 	local LayoutElementLB = LUI.UIImage.new( 0, 0, 12, 36, 0, 0, 388.5, 424.5 )
 	LayoutElementLB:setAlpha( 0.2 )
-	LayoutElementLB:setImage( RegisterImage( 0x62FBC54884BA74D ) )
+	LayoutElementLB:setImage( RegisterImage( "uie_ui_hud_tak5_layout_common_element04" ) )
 	LayoutElementLB:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LayoutElementLB )
 	self.LayoutElementLB = LayoutElementLB
 	
 	local LayoutLineTR = LUI.UIImage.new( 0, 0, 674, 742, 0, 0, 6.5, 30.5 )
 	LayoutLineTR:setAlpha( 0.4 )
-	LayoutLineTR:setImage( RegisterImage( 0xE44ABB390F5F528 ) )
+	LayoutLineTR:setImage( RegisterImage( "uie_ui_hud_tak5_layout_common_bar" ) )
 	LayoutLineTR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	LayoutLineTR:setShaderVector( 0, 0, 1, 0, 0 )
 	LayoutLineTR:setShaderVector( 1, 0, 0, 0, 0 )
@@ -37,7 +37,7 @@ CoD.SwipeTak5_LayoutElements.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local LayoutLineTL = LUI.UIImage.new( 0, 0, 0, 68, 0, 0, 6.5, 30.5 )
 	LayoutLineTL:setAlpha( 0.4 )
 	LayoutLineTL:setZRot( 180 )
-	LayoutLineTL:setImage( RegisterImage( 0xE44ABB390F5F528 ) )
+	LayoutLineTL:setImage( RegisterImage( "uie_ui_hud_tak5_layout_common_bar" ) )
 	LayoutLineTL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	LayoutLineTL:setShaderVector( 0, 0, 1, 0, 0 )
 	LayoutLineTL:setShaderVector( 1, 0, 0, 0, 0 )
@@ -50,7 +50,7 @@ CoD.SwipeTak5_LayoutElements.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local LayoutLineBL = LUI.UIImage.new( 0, 0, 0, 68, 0, 0, 417.5, 441.5 )
 	LayoutLineBL:setAlpha( 0.4 )
 	LayoutLineBL:setZRot( 180 )
-	LayoutLineBL:setImage( RegisterImage( 0xE44ABB390F5F528 ) )
+	LayoutLineBL:setImage( RegisterImage( "uie_ui_hud_tak5_layout_common_bar" ) )
 	LayoutLineBL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	LayoutLineBL:setShaderVector( 0, 0, 1, 0, 0 )
 	LayoutLineBL:setShaderVector( 1, 0, 0, 0, 0 )
@@ -62,7 +62,7 @@ CoD.SwipeTak5_LayoutElements.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local LayoutLineBR = LUI.UIImage.new( 0, 0, 674, 742, 0, 0, 417.5, 441.5 )
 	LayoutLineBR:setAlpha( 0.4 )
-	LayoutLineBR:setImage( RegisterImage( 0xE44ABB390F5F528 ) )
+	LayoutLineBR:setImage( RegisterImage( "uie_ui_hud_tak5_layout_common_bar" ) )
 	LayoutLineBR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	LayoutLineBR:setShaderVector( 0, 0, 1, 0, 0 )
 	LayoutLineBR:setShaderVector( 1, 0, 0, 0, 0 )
@@ -74,7 +74,7 @@ CoD.SwipeTak5_LayoutElements.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local LayoutLabelR = LUI.UIImage.new( 0, 0, 478, 546, 0, 0, 421.5, 437.5 )
 	LayoutLabelR:setAlpha( 0.4 )
-	LayoutLabelR:setImage( RegisterImage( 0x62FB554884B9B68 ) )
+	LayoutLabelR:setImage( RegisterImage( "uie_ui_hud_tak5_layout_common_element03" ) )
 	LayoutLabelR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LayoutLabelR )
 	self.LayoutLabelR = LayoutLabelR
@@ -82,7 +82,7 @@ CoD.SwipeTak5_LayoutElements.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local LayoutLabelL = LUI.UIImage.new( 0, 0, 195.5, 263.5, 0, 0, 421.5, 437.5 )
 	LayoutLabelL:setAlpha( 0.4 )
 	LayoutLabelL:setZRot( 180 )
-	LayoutLabelL:setImage( RegisterImage( 0x62FB554884B9B68 ) )
+	LayoutLabelL:setImage( RegisterImage( "uie_ui_hud_tak5_layout_common_element03" ) )
 	LayoutLabelL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LayoutLabelL )
 	self.LayoutLabelL = LayoutLabelL
@@ -117,13 +117,13 @@ CoD.SwipeTak5_LayoutElements.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local Connected = LUI.UIImage.new( 0, 0, 658, 734, 0, 0, 1, 17 )
 	Connected:setAlpha( 0.2 )
-	Connected:setImage( RegisterImage( 0xC16731A01194FC8 ) )
+	Connected:setImage( RegisterImage( "uie_ui_menu_window_loading_finished" ) )
 	self:addElement( Connected )
 	self.Connected = Connected
 	
 	local ConnectedAdd = LUI.UIImage.new( 0, 0, 658, 734, 0, 0, 1, 17 )
 	ConnectedAdd:setAlpha( 0.1 )
-	ConnectedAdd:setImage( RegisterImage( 0xC16731A01194FC8 ) )
+	ConnectedAdd:setImage( RegisterImage( "uie_ui_menu_window_loading_finished" ) )
 	ConnectedAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ConnectedAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectedAdd )
@@ -131,13 +131,13 @@ CoD.SwipeTak5_LayoutElements.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local SectionAG = LUI.UIImage.new( 0, 0, 10, 78, 0, 0, 0, 16 )
 	SectionAG:setAlpha( 0.5 )
-	SectionAG:setImage( RegisterImage( 0x62FB754884B9ECE ) )
+	SectionAG:setImage( RegisterImage( "uie_ui_hud_tak5_layout_common_element01" ) )
 	self:addElement( SectionAG )
 	self.SectionAG = SectionAG
 	
 	local SectionAGAdd = LUI.UIImage.new( 0, 0, 10, 78, 0, 0, 0, 16 )
 	SectionAGAdd:setAlpha( 0.1 )
-	SectionAGAdd:setImage( RegisterImage( 0x62FB754884B9ECE ) )
+	SectionAGAdd:setImage( RegisterImage( "uie_ui_hud_tak5_layout_common_element01" ) )
 	SectionAGAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	SectionAGAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SectionAGAdd )

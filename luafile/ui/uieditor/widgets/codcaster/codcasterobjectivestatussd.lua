@@ -29,7 +29,7 @@ CoD.CodCasterObjectiveStatusSD.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local glow = LUI.UIImage.new( 0.5, 0.5, -16, 16, 0.5, 0.5, -16, 16 )
 	glow:setAlpha( 0 )
-	glow:setImage( RegisterImage( 0xD9007F963116063 ) )
+	glow:setImage( RegisterImage( "uie_codcaster_objectifstatusglow" ) )
 	self:addElement( glow )
 	self.glow = glow
 	

@@ -79,14 +79,14 @@ CoD.OverheadName_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.HealthBar = HealthBar
 	
 	WaypointBacker = LUI.UIImage.new( 0.5, 0.5, -38, 38, 0.5, 0.5, -111, -35 )
-	WaypointBacker:setImage( RegisterImage( 0x8DDD1FDE43242E1 ) )
+	WaypointBacker:setImage( RegisterImage( "uie_ui_hud_core_waypoint_domination_backer" ) )
 	self:addElement( WaypointBacker )
 	self.WaypointBacker = WaypointBacker
 	
 	WaypointPattern = LUI.UIImage.new( 0.5, 0.5, -38, 38, 0.5, 0.5, -111, -35 )
 	WaypointPattern:setRGB( 0.13, 0.87, 0.94 )
 	WaypointPattern:setAlpha( 0.75 )
-	WaypointPattern:setImage( RegisterImage( 0x159D9B7B7294C91 ) )
+	WaypointPattern:setImage( RegisterImage( "uie_ui_hud_core_waypoint_led" ) )
 	WaypointPattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	WaypointPattern:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( WaypointPattern )
@@ -112,7 +112,7 @@ CoD.OverheadName_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local PlatoonChevron = LUI.UIImage.new( 0, 0, 81, 119, 0, 0, -8, 30 )
 	PlatoonChevron:setAlpha( 0 )
-	PlatoonChevron:setImage( RegisterImage( 0x9D0929E1A7AFA3F ) )
+	PlatoonChevron:setImage( RegisterImage( "uie_ui_hud_wz_hud_platoon_chevron" ) )
 	PlatoonChevron:linkToElementModel( self, "platoonIndicatorScale", true, function ( model )
 		local f8_local0 = model:get()
 		if f8_local0 ~= nil then

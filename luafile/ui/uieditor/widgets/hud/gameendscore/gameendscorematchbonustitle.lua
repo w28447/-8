@@ -24,25 +24,25 @@ CoD.GameEndScoreMatchBonusTitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.MatchBonusTitle = MatchBonusTitle
 	
 	local PipTL = LUI.UIImage.new( 0, 0, -4.5, 3.5, 0, 0, -4.5, 3.5 )
-	PipTL:setImage( RegisterImage( 0x364778639313CE9 ) )
+	PipTL:setImage( RegisterImage( "uie_ui_hud_core_draft_pip" ) )
 	PipTL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PipTL )
 	self.PipTL = PipTL
 	
 	local PipBR = LUI.UIImage.new( 1, 1, -4.5, 3.5, 1, 1, -4.5, 3.5 )
-	PipBR:setImage( RegisterImage( 0x364778639313CE9 ) )
+	PipBR:setImage( RegisterImage( "uie_ui_hud_core_draft_pip" ) )
 	PipBR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PipBR )
 	self.PipBR = PipBR
 	
 	local PipBL = LUI.UIImage.new( 0, 0, -4, 4, 1, 1, -4.5, 3.5 )
-	PipBL:setImage( RegisterImage( 0x364778639313CE9 ) )
+	PipBL:setImage( RegisterImage( "uie_ui_hud_core_draft_pip" ) )
 	PipBL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PipBL )
 	self.PipBL = PipBL
 	
 	local PipTR = LUI.UIImage.new( 1, 1, -4.5, 3.5, 0, 0, -4.5, 3.5 )
-	PipTR:setImage( RegisterImage( 0x364778639313CE9 ) )
+	PipTR:setImage( RegisterImage( "uie_ui_hud_core_draft_pip" ) )
 	PipTR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( PipTR )
 	self.PipTR = PipTR

@@ -30,7 +30,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local Gradient = LUI.UIImage.new( 0.5, 0.5, -397.5, 397.5, 1, 1, -280, 0 )
 	Gradient:setAlpha( 0.01 )
-	Gradient:setImage( RegisterImage( 0xCA43165960A9EAA ) )
+	Gradient:setImage( RegisterImage( "uie_ui_menu_aar_levelup_gradientglow" ) )
 	self:addElement( Gradient )
 	self.Gradient = Gradient
 	
@@ -73,8 +73,8 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.PlusBL = PlusBL
 	
 	local PatternDots = LUI.UIImage.new( 0.5, 0.5, -395, 410, 0.5, 0.5, -134, 144 )
-	PatternDots:setImage( RegisterImage( 0x30B91EC17967AF3 ) )
-	PatternDots:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	PatternDots:setImage( RegisterImage( "uie_ui_menu_cac_dot_pattern_bg01" ) )
+	PatternDots:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	PatternDots:setShaderVector( 0, 6, 4, 0, 0 )
 	PatternDots:setShaderVector( 1, 0, 0, 0, 0 )
 	self:addElement( PatternDots )
@@ -123,7 +123,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	Flare:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	Flare:setAlpha( 0 )
 	Flare:setScale( 0, 0 )
-	Flare:setImage( RegisterImage( 0xC4CCD81B90B0241 ) )
+	Flare:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
 	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Flare:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Flare )
@@ -155,7 +155,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local infoBracketTop = LUI.UIImage.new( 0, 0, 1, 799, 0, 0, -2, 30 )
 	infoBracketTop:setAlpha( 0.6 )
-	infoBracketTop:setImage( RegisterImage( 0xCAD52FFFB7C32C1 ) )
+	infoBracketTop:setImage( RegisterImage( "uie_ui_menu_aar_common_bracket" ) )
 	infoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketTop:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketTop:setupNineSliceShader( 10, 16 )
@@ -171,7 +171,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.AmbientTopRepeatBar = AmbientTopRepeatBar
 	
 	local AmbientTopBar = LUI.UIImage.new( 0, 0, 613.5, 801.5, 0, 0, -16.5, 3.5 )
-	AmbientTopBar:setImage( RegisterImage( 0x8C511B26DCEEE3E ) )
+	AmbientTopBar:setImage( RegisterImage( "uie_ui_menu_aar_levelup_reward_bar" ) )
 	AmbientTopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( AmbientTopBar )
 	self.AmbientTopBar = AmbientTopBar
@@ -184,7 +184,7 @@ CoD.AARLevelUpReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local ZMTopBar = LUI.UIImage.new( 0, 0, -4, 804, 0, 0, 17.5, -6.5 )
 	ZMTopBar:setAlpha( 0 )
-	ZMTopBar:setImage( RegisterImage( 0x97CAAFBF3E538C2 ) )
+	ZMTopBar:setImage( RegisterImage( "uie_ui_hud_zm_aar_reward_bar" ) )
 	self:addElement( ZMTopBar )
 	self.ZMTopBar = ZMTopBar
 	

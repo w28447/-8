@@ -11,17 +11,17 @@ CoD.TabbedScoreboardLayoutTopLine.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local MapLayoutTopLineBlur = LUI.UIImage.new( 0, 0, 2.5, 1440.5, 0, 0, 2.5, 24.5 )
 	MapLayoutTopLineBlur:setRGB( 0, 0, 0 )
 	MapLayoutTopLineBlur:setAlpha( 0 )
-	MapLayoutTopLineBlur:setImage( RegisterImage( 0x752078DE5A2A3AC ) )
+	MapLayoutTopLineBlur:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_topbar" ) )
 	self:addElement( MapLayoutTopLineBlur )
 	self.MapLayoutTopLineBlur = MapLayoutTopLineBlur
 	
 	local MapLayoutTopLine = LUI.UIImage.new( 0, 0, 721, 721, 0, 0, 0, 22 )
-	MapLayoutTopLine:setImage( RegisterImage( 0x752078DE5A2A3AC ) )
+	MapLayoutTopLine:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_topbar" ) )
 	self:addElement( MapLayoutTopLine )
 	self.MapLayoutTopLine = MapLayoutTopLine
 	
 	local MapLayoutBotLine = LUI.UIImage.new( 0, 0, 241, 241, 0, 0, 512, 516 )
-	MapLayoutBotLine:setImage( RegisterImage( 0x4E3A97DAEE8B86A ) )
+	MapLayoutBotLine:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_botbar" ) )
 	self:addElement( MapLayoutBotLine )
 	self.MapLayoutBotLine = MapLayoutBotLine
 	

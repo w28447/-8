@@ -93,7 +93,7 @@ CoD.MOTD_BannerImage_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local DotlineH02 = LUI.UIImage.new( 0, 0, 445, 620, 0, 0, 538, 542 )
 	DotlineH02:setAlpha( 0.1 )
-	DotlineH02:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	DotlineH02:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	DotlineH02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotlineH02:setShaderVector( 0, 0, 0, 0, 0 )
 	DotlineH02:setupNineSliceShader( 8, 4 )
@@ -102,7 +102,7 @@ CoD.MOTD_BannerImage_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local DotlineH03 = LUI.UIImage.new( 0, 0, 643, 983, 0, 0, 538, 542 )
 	DotlineH03:setAlpha( 0.1 )
-	DotlineH03:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	DotlineH03:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	DotlineH03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotlineH03:setShaderVector( 0, 0, 0, 0, 0 )
 	DotlineH03:setupNineSliceShader( 8, 4 )
@@ -111,7 +111,7 @@ CoD.MOTD_BannerImage_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local DotlineH04 = LUI.UIImage.new( 0, 0, 1006, 1340, 0, 0, 538, 542 )
 	DotlineH04:setAlpha( 0.1 )
-	DotlineH04:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	DotlineH04:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	DotlineH04:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotlineH04:setShaderVector( 0, 0, 0, 0, 0 )
 	DotlineH04:setupNineSliceShader( 8, 4 )
@@ -120,7 +120,7 @@ CoD.MOTD_BannerImage_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local DotlineH05 = LUI.UIImage.new( 0, 0, 1360.5, 1687.5, 0, 0, 538, 542 )
 	DotlineH05:setAlpha( 0.1 )
-	DotlineH05:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	DotlineH05:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	DotlineH05:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotlineH05:setShaderVector( 0, 0, 0, 0, 0 )
 	DotlineH05:setupNineSliceShader( 8, 4 )
@@ -228,7 +228,7 @@ CoD.MOTD_BannerImage_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TiledShaderImage12 = LUI.UIImage.new( 0, 0, 445, 1920, 0, 0, 360, 364 )
 	TiledShaderImage12:setAlpha( 0.1 )
-	TiledShaderImage12:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	TiledShaderImage12:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	TiledShaderImage12:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledShaderImage12:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage12:setupNineSliceShader( 8, 4 )
@@ -237,7 +237,7 @@ CoD.MOTD_BannerImage_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TiledShaderImage13 = LUI.UIImage.new( 0, 0, 445, 620, 0, 0, 182, 186 )
 	TiledShaderImage13:setAlpha( 0.1 )
-	TiledShaderImage13:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	TiledShaderImage13:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	TiledShaderImage13:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledShaderImage13:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage13:setupNineSliceShader( 8, 4 )
@@ -246,7 +246,7 @@ CoD.MOTD_BannerImage_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TiledShaderImage14 = LUI.UIImage.new( 0, 0, 643, 983, 0, 0, 182, 186 )
 	TiledShaderImage14:setAlpha( 0.1 )
-	TiledShaderImage14:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	TiledShaderImage14:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	TiledShaderImage14:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledShaderImage14:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage14:setupNineSliceShader( 8, 4 )
@@ -255,7 +255,7 @@ CoD.MOTD_BannerImage_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TiledShaderImage15 = LUI.UIImage.new( 0, 0, 1006, 1340, 0, 0, 182, 186 )
 	TiledShaderImage15:setAlpha( 0.1 )
-	TiledShaderImage15:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	TiledShaderImage15:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	TiledShaderImage15:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledShaderImage15:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage15:setupNineSliceShader( 8, 4 )
@@ -264,7 +264,7 @@ CoD.MOTD_BannerImage_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TiledShaderImage16 = LUI.UIImage.new( 0, 0, 1360.5, 1687.5, 0, 0, 182, 186 )
 	TiledShaderImage16:setAlpha( 0.1 )
-	TiledShaderImage16:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	TiledShaderImage16:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	TiledShaderImage16:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledShaderImage16:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage16:setupNineSliceShader( 8, 4 )
@@ -273,7 +273,7 @@ CoD.MOTD_BannerImage_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TiledShaderImage20 = LUI.UIImage.new( 0, 0, 445, 1920, 0, 0, 715.5, 719.5 )
 	TiledShaderImage20:setAlpha( 0.1 )
-	TiledShaderImage20:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	TiledShaderImage20:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	TiledShaderImage20:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledShaderImage20:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage20:setupNineSliceShader( 8, 4 )
@@ -282,7 +282,7 @@ CoD.MOTD_BannerImage_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TiledShaderImage21 = LUI.UIImage.new( 0, 0, 1006, 1340, 0, 0, 894, 898 )
 	TiledShaderImage21:setAlpha( 0.1 )
-	TiledShaderImage21:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	TiledShaderImage21:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	TiledShaderImage21:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledShaderImage21:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage21:setupNineSliceShader( 8, 4 )
@@ -291,7 +291,7 @@ CoD.MOTD_BannerImage_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TiledShaderImage22 = LUI.UIImage.new( 0, 0, 1360.5, 1687.5, 0, 0, 894, 898 )
 	TiledShaderImage22:setAlpha( 0.1 )
-	TiledShaderImage22:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	TiledShaderImage22:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	TiledShaderImage22:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledShaderImage22:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage22:setupNineSliceShader( 8, 4 )
@@ -300,7 +300,7 @@ CoD.MOTD_BannerImage_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TiledShaderImage23 = LUI.UIImage.new( 0, 0, 643, 983, 0, 0, 894, 898 )
 	TiledShaderImage23:setAlpha( 0.1 )
-	TiledShaderImage23:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	TiledShaderImage23:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	TiledShaderImage23:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledShaderImage23:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage23:setupNineSliceShader( 8, 4 )
@@ -309,7 +309,7 @@ CoD.MOTD_BannerImage_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TiledShaderImage24 = LUI.UIImage.new( 0, 0, 445, 620, 0, 0, 894, 898 )
 	TiledShaderImage24:setAlpha( 0.1 )
-	TiledShaderImage24:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	TiledShaderImage24:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	TiledShaderImage24:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledShaderImage24:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage24:setupNineSliceShader( 8, 4 )
@@ -336,7 +336,7 @@ CoD.MOTD_BannerImage_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TiledShaderImage11 = LUI.UIImage.new( 0, 0, 1708.5, 1920.5, 0, 0, 538, 542 )
 	TiledShaderImage11:setAlpha( 0.1 )
-	TiledShaderImage11:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	TiledShaderImage11:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	TiledShaderImage11:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledShaderImage11:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage11:setupNineSliceShader( 8, 4 )
@@ -345,7 +345,7 @@ CoD.MOTD_BannerImage_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TiledShaderImage17 = LUI.UIImage.new( 0, 0, 1708.5, 1920.5, 0, 0, 182, 186 )
 	TiledShaderImage17:setAlpha( 0.1 )
-	TiledShaderImage17:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	TiledShaderImage17:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	TiledShaderImage17:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledShaderImage17:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage17:setupNineSliceShader( 8, 4 )
@@ -354,7 +354,7 @@ CoD.MOTD_BannerImage_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TiledShaderImage18 = LUI.UIImage.new( 0, 0, 1708.5, 1920.5, 0, 0, 894, 898 )
 	TiledShaderImage18:setAlpha( 0.1 )
-	TiledShaderImage18:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	TiledShaderImage18:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	TiledShaderImage18:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledShaderImage18:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage18:setupNineSliceShader( 8, 4 )

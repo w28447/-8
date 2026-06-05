@@ -18,7 +18,7 @@ LUI.createMenu.zm_build_progress = function ( f1_arg0, f1_arg1 )
 	self.backing = backing
 	
 	local fill = LUI.UIImage.new( 0.5, 0.5, -135, 135, 0.5, 0.5, -150, -130 )
-	fill:setImage( RegisterImage( 0x72AF76649EA8E9B ) )
+	fill:setImage( RegisterImage( "uie_progress_bar_background" ) )
 	fill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	fill:setShaderVector( 1, 0, 0, 0, 0 )
 	fill:setShaderVector( 2, 1, 0, 0, 0 )
@@ -34,7 +34,7 @@ LUI.createMenu.zm_build_progress = function ( f1_arg0, f1_arg1 )
 	self.fill = fill
 	
 	local text = LUI.UIText.new( 0.5, 0.5, -960, 960, 0.5, 0.5, -192.5, -155.5 )
-	text:setText( Engine[0xF9F1239CFD921FE]( 0xA6866A0DC9013F8 ) )
+	text:setText( Engine[0xF9F1239CFD921FE]( "zombie/building" ) )
 	text:setTTF( "default" )
 	text:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	text:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

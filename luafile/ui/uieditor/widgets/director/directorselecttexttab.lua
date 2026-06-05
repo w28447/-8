@@ -21,7 +21,7 @@ CoD.DirectorSelectTextTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local ZMTabBackingRed = LUI.UIImage.new( 0, 1, -67, 67, 0, 1, -32, 32 )
 	ZMTabBackingRed:setAlpha( 0 )
-	ZMTabBackingRed:setImage( RegisterImage( 0x4188F6C6CDE87B1 ) )
+	ZMTabBackingRed:setImage( RegisterImage( "uie_ui_menu_common_tab_backing_red" ) )
 	ZMTabBackingRed:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ZMTabBackingRed:setShaderVector( 0, 0.9, 0, 0, 0 )
 	self:addElement( ZMTabBackingRed )
@@ -67,19 +67,19 @@ CoD.DirectorSelectTextTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local ZMTabEndRight = LUI.UIImage.new( 1, 1, -8, 0, 0, 0, 0, 35 )
 	ZMTabEndRight:setAlpha( 0 )
-	ZMTabEndRight:setImage( RegisterImage( 0xB48CD982934DAD0 ) )
+	ZMTabEndRight:setImage( RegisterImage( "uie_ui_menu_common_tab_end_right" ) )
 	self:addElement( ZMTabEndRight )
 	self.ZMTabEndRight = ZMTabEndRight
 	
 	local ZMTabEndLeft = LUI.UIImage.new( 0, 0, 0, 8, 0, 0, 0, 35 )
 	ZMTabEndLeft:setAlpha( 0 )
-	ZMTabEndLeft:setImage( RegisterImage( 0x9A262142D19A9F ) )
+	ZMTabEndLeft:setImage( RegisterImage( "uie_ui_menu_common_tab_end_left" ) )
 	self:addElement( ZMTabEndLeft )
 	self.ZMTabEndLeft = ZMTabEndLeft
 	
 	local TabBackingGlow = LUI.UIImage.new( 0, 1, -117, 117, 0, 1, -111, 111 )
 	TabBackingGlow:setAlpha( 0 )
-	TabBackingGlow:setImage( RegisterImage( 0x223AD1B40A93955 ) )
+	TabBackingGlow:setImage( RegisterImage( "uie_ui_menu_common_tab_glow" ) )
 	TabBackingGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	TabBackingGlow:setShaderVector( 0, 1.36, 0, 0, 0 )
 	self:addElement( TabBackingGlow )
@@ -87,7 +87,7 @@ CoD.DirectorSelectTextTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TabBacking = LUI.UIImage.new( 0, 1, -66, 66, 0, 1, -30, 30 )
 	TabBacking:setAlpha( 0 )
-	TabBacking:setImage( RegisterImage( 0x3F09D20CA138B49 ) )
+	TabBacking:setImage( RegisterImage( "uie_ui_menu_common_tab_backing" ) )
 	TabBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	TabBacking:setShaderVector( 0, 0.9, 0, 0, 0 )
 	self:addElement( TabBacking )
@@ -122,7 +122,7 @@ CoD.DirectorSelectTextTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	TabTitleFocus:setBackingAlpha( 0 )
 	TabTitleFocus:setBackingXPadding( 50 )
 	TabTitleFocus:setBackingYPadding( 7 )
-	TabTitleFocus:setBackingImage( RegisterImage( 0xFB5B66CB2DD078F ) )
+	TabTitleFocus:setBackingImage( RegisterImage( "uie_circularglow" ) )
 	TabTitleFocus:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	TabTitleFocus:setBackingShaderVector( 0, 1.5, 0, 0, 0 )
 	TabTitleFocus:linkToElementModel( self, "name", true, function ( model )
@@ -136,13 +136,13 @@ CoD.DirectorSelectTextTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TabEndLeft = LUI.UIImage.new( 0, 0, 9, 17, 0, 0, 0, 35 )
 	TabEndLeft:setAlpha( 0 )
-	TabEndLeft:setImage( RegisterImage( 0x9A262142D19A9F ) )
+	TabEndLeft:setImage( RegisterImage( "uie_ui_menu_common_tab_end_left" ) )
 	self:addElement( TabEndLeft )
 	self.TabEndLeft = TabEndLeft
 	
 	local TabEndRight = LUI.UIImage.new( 0, 0, 217, 225, 0, 0, 0, 35 )
 	TabEndRight:setAlpha( 0 )
-	TabEndRight:setImage( RegisterImage( 0xB48CD982934DAD0 ) )
+	TabEndRight:setImage( RegisterImage( "uie_ui_menu_common_tab_end_right" ) )
 	self:addElement( TabEndRight )
 	self.TabEndRight = TabEndRight
 	

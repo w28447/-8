@@ -95,7 +95,7 @@ CoD.ContractPreviewButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local VideoPlayIcon = LUI.UIImage.new( 0.5, 0.5, -32, 32, 0.5, 0.5, -42, 22 )
 	VideoPlayIcon:setAlpha( 0.5 )
-	VideoPlayIcon:setImage( RegisterImage( 0x28C77CAF49CB973 ) )
+	VideoPlayIcon:setImage( RegisterImage( "uie_ui_icon_blackmarket_play_button" ) )
 	self:addElement( VideoPlayIcon )
 	self.VideoPlayIcon = VideoPlayIcon
 	

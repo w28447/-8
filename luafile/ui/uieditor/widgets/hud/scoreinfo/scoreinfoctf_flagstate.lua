@@ -10,7 +10,7 @@ CoD.ScoreInfoCTF_FlagState.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local awayText = LUI.UIText.new( 0, 0, 0, 170, 0.5, 0.5, -9, 9 )
 	awayText:setAlpha( 0 )
-	awayText:setText( Engine[0xF9F1239CFD921FE]( 0xC95E6E315A859AB ) )
+	awayText:setText( Engine[0xF9F1239CFD921FE]( "mp/away" ) )
 	awayText:setTTF( "ttmussels_regular" )
 	awayText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	awayText:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -19,7 +19,7 @@ CoD.ScoreInfoCTF_FlagState.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local homeText = LUI.UIText.new( 0, 0, 0, 170, 0.5, 0.5, -9, 9 )
 	homeText:setAlpha( 0 )
-	homeText:setText( Engine[0xF9F1239CFD921FE]( 0xF60F2FAE650F9E ) )
+	homeText:setText( Engine[0xF9F1239CFD921FE]( "mp/home" ) )
 	homeText:setTTF( "ttmussels_regular" )
 	homeText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	homeText:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )

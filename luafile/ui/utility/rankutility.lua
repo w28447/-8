@@ -3,11 +3,11 @@ CoD.RankUtility.ForceStreamedRankIcons = {}
 CoD.RankUtility.RankInfoTable = nil
 CoD.RankUtility.MAX_PARAGON_RANK = 999
 CoD.RankUtility.RankMode = {
-	None = Enum.eModes[0xB22E0240605CFFE],
-	Multiplayer = Enum.eModes[0x83EBA96F36BC4E5],
-	Warzone = Enum.eModes[0xBF1DCC8138A9D39],
-	Zombies = Enum.eModes[0x3723205FAE52C4A],
-	Arena = Enum.eModes[0xB22E0240605CFFE] + 1
+	None = Enum.eModes.mode_invalid,
+	Multiplayer = Enum.eModes.mode_multiplayer,
+	Warzone = Enum.eModes.mode_warzone,
+	Zombies = Enum.eModes.mode_zombies,
+	Arena = Enum.eModes.mode_invalid + 1
 }
 CoD.RankUtility.GetRankCap = function ( f1_arg0 )
 	if not f1_arg0 then
@@ -20,7 +20,7 @@ CoD.RankUtility.GetParagonRankCap = function ( f2_arg0 )
 	if not f2_arg0 then
 		f2_arg0 = Engine.CurrentSessionMode()
 	end
-	if f2_arg0 == Enum.eModes[0x83EBA96F36BC4E5] or f2_arg0 == Enum.eModes[0x3723205FAE52C4A] then
+	if f2_arg0 == Enum.eModes.mode_multiplayer or f2_arg0 == Enum.eModes.mode_zombies then
 		return CoD.RankUtility.MAX_PARAGON_RANK
 	else
 		return 0
@@ -28,11 +28,11 @@ CoD.RankUtility.GetParagonRankCap = function ( f2_arg0 )
 end
 
 CoD.RankUtility.ForceStreamRankIcons = function ( f3_arg0 )
-	if not (f3_arg0 ~= Enum.eModes[0xB22E0240605CFFE] or not LuaUtils.OnlineOnlyDemo()) or LuaUtils.OfflineOnlyDemo() then
-		f3_arg0 = Enum.eModes[0x83EBA96F36BC4E5]
+	if not (f3_arg0 ~= Enum.eModes.mode_invalid or not LuaUtils.OnlineOnlyDemo()) or LuaUtils.OfflineOnlyDemo() then
+		f3_arg0 = Enum.eModes.mode_multiplayer
 	end
 	local f3_local0 = {}
-	if LuaUtils.GetDisplayNameForEMode( f3_arg0 ) ~= 0x0 then
+	if LuaUtils.GetDisplayNameForEMode( f3_arg0 ) ~= "" then
 		local f3_local1 = Engine[0xEEBB2C36368176E]( f3_arg0 )
 		if f3_local1 then
 			for f3_local5, f3_local6 in ipairs( f3_local1 ) do
@@ -174,13 +174,13 @@ CoD.RankUtility.InitRankModeIfSetToNone = function ( f14_arg0 )
 		f14_local0 = f14_local0.lobbyRoot.rankMode
 		local f14_local1 = Engine.GetMostRecentPlayedMode( f14_arg0 )
 		if f14_local1 then
-			if f14_local1 == Enum.eModes[0x83EBA96F36BC4E5] then
+			if f14_local1 == Enum.eModes.mode_multiplayer then
 				f14_local1 = CoD.RankUtility.RankMode.Multiplayer
-			elseif f14_local1 == Enum.eModes[0x3723205FAE52C4A] then
+			elseif f14_local1 == Enum.eModes.mode_zombies then
 				f14_local1 = CoD.RankUtility.RankMode.Zombies
-			elseif f14_local1 == Enum.eModes[0xBF1DCC8138A9D39] then
+			elseif f14_local1 == Enum.eModes.mode_warzone then
 				f14_local1 = CoD.RankUtility.RankMode.Warzone
-			elseif f14_local1 == Enum.eModes[0x60063C67132EB69] then
+			elseif f14_local1 == Enum.eModes.mode_campaign then
 				f14_local1 = CoD.RankUtility.RankMode.Multiplayer
 			end
 		else
@@ -191,7 +191,7 @@ CoD.RankUtility.InitRankModeIfSetToNone = function ( f14_arg0 )
 end
 
 CoD.RankUtility.HasElementByXUIDEverPlayedMode = function ( f15_arg0, f15_arg1 )
-	if f15_arg1 == Enum.eModes[0xB22E0240605CFFE] then
+	if f15_arg1 == Enum.eModes.mode_invalid then
 		return false
 	else
 		local f15_local0 = f15_arg0:getModel()
@@ -211,7 +211,7 @@ CoD.RankUtility.HasElementByXUIDEverPlayedCurrentMode = function ( f16_arg0 )
 end
 
 CoD.RankUtility.GetXUIDRankNumberForMode = function ( f17_arg0, f17_arg1 )
-	if f17_arg0 == Enum.eModes[0xB22E0240605CFFE] then
+	if f17_arg0 == Enum.eModes.mode_invalid then
 		return 0
 	else
 		local f17_local0 = Engine[0x19FAC7D9E55031E]( f17_arg1, f17_arg0 )
@@ -248,7 +248,7 @@ CoD.RankUtility.GetXUIDRankNumberForCurrentModeForColor = function ( f24_arg0 )
 end
 
 CoD.RankUtility.GetXUIDRankStringForMode = function ( f25_arg0, f25_arg1 )
-	if f25_arg0 == Enum.eModes[0xB22E0240605CFFE] then
+	if f25_arg0 == Enum.eModes.mode_invalid then
 		return ""
 	else
 		local f25_local0 = Engine[0x19FAC7D9E55031E]( f25_arg1, f25_arg0 )
@@ -257,7 +257,7 @@ CoD.RankUtility.GetXUIDRankStringForMode = function ( f25_arg0, f25_arg1 )
 end
 
 CoD.RankUtility.GetRankStringForModeFromRank = function ( f26_arg0, f26_arg1 )
-	if f26_arg0 == Enum.eModes[0xB22E0240605CFFE] then
+	if f26_arg0 == Enum.eModes.mode_invalid then
 		return ""
 	else
 		return CoD.GetRankName( f26_arg1 or 0, 0, f26_arg0 )
@@ -269,11 +269,11 @@ CoD.RankUtility.GetXUIDRankStringForCurrentMode = function ( f27_arg0 )
 end
 
 CoD.RankUtility.GetXUIDRankIconForMode = function ( f28_arg0, f28_arg1 )
-	if f28_arg0 == Enum.eModes[0xB22E0240605CFFE] then
+	if f28_arg0 == Enum.eModes.mode_invalid then
 		return "blacktransparent"
 	else
 		local f28_local0 = Engine[0x19FAC7D9E55031E]( f28_arg1, f28_arg0 )
-		if f28_local0.paragonIcon and f28_local0.paragonIcon ~= 0x0 then
+		if f28_local0.paragonIcon and f28_local0.paragonIcon ~= "" then
 			return f28_local0.paragonIcon
 		else
 			return f28_local0.rankIcon or "blacktransparent"
@@ -286,7 +286,7 @@ CoD.RankUtility.GetXUIDRankIconForCurrentMode = function ( f29_arg0 )
 end
 
 CoD.RankUtility.GetUpdatedLevelNumericValue = function ( f30_arg0 )
-	if Engine.CurrentSessionMode() == Enum.eModes[0xBF1DCC8138A9D39] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_warzone then
 		return CoD.PrestigeUtility.LocalizeIfMaxRank( 0x4008CE61FE52DCD, f30_arg0 )
 	else
 		return f30_arg0
@@ -307,7 +307,7 @@ CoD.RankUtility.GetNextRankXPStringLong = function ( f32_arg0 )
 	if f32_local0 == nil or f32_local0 < 0 then
 		return ""
 	else
-		return ConvertToUpperString( LocalizeIntoString( 0x2B924F206C5B4D8, f32_local0 ) )
+		return ConvertToUpperString( LocalizeIntoString( "menu/next_level_xp_needed", f32_local0 ) )
 	end
 end
 
@@ -326,8 +326,8 @@ end
 CoD.RankUtility.GetWZRankAndCallingCards = function ( f35_arg0, f35_arg1, f35_arg2 )
 	local f35_local0 = Engine.GetPlayerStats( f35_arg0, CoD.STATS_LOCATION_NORMAL, f35_arg1 )
 	local f35_local1 = f35_local0 and LUI.getTableFromFieldList( {
-		0xD59E8BFAC78A33B,
-		0xDB3201FD1EB3847,
+		"playerstatslist",
+		"rank",
 		"statvalue"
 	}, f35_local0 )
 	local f35_local2
@@ -413,13 +413,13 @@ CoD.RankUtility.AddRankCallingCards = function ( f37_arg0, f37_arg1, f37_arg2 )
 		return 
 	end
 	local f37_local0, f37_local1 = nil
-	if f37_arg1 == Enum.eModes[0xBF1DCC8138A9D39] then
+	if f37_arg1 == Enum.eModes.mode_warzone then
 		f37_local1, f37_local0 = CoD.RankUtility.GetWZRankAndCallingCards( f37_arg0, f37_arg1, f37_arg2 )
-	elseif f37_arg1 == Enum.eModes[0x83EBA96F36BC4E5] then
+	elseif f37_arg1 == Enum.eModes.mode_multiplayer then
 		f37_local1, f37_local0 = CoD.RankUtility.GetWLRankAndCallingCards( f37_arg0, f37_arg1, f37_arg2 )
 	end
 	local f37_local2 = false
-	if f37_arg1 == Enum.eModes[0xBF1DCC8138A9D39] and CoD.PrestigeUtility.GetCurrentPLevel( f37_arg0, f37_arg1 ) > 0 then
+	if f37_arg1 == Enum.eModes.mode_warzone and CoD.PrestigeUtility.GetCurrentPLevel( f37_arg0, f37_arg1 ) > 0 then
 		f37_local2 = true
 	end
 	if f37_local0 then
@@ -450,8 +450,8 @@ end
 CoD.RankUtility.GetRankMasterCard = function ( f38_arg0, f38_arg1 )
 	local f38_local0 = Engine.GetPlayerStats( f38_arg0, CoD.STATS_LOCATION_NORMAL, f38_arg1 )
 	local f38_local1 = f38_local0 and LUI.getTableFromFieldList( {
-		0xD59E8BFAC78A33B,
-		0xDB3201FD1EB3847,
+		"playerstatslist",
+		"rank",
 		"statvalue"
 	}, f38_local0 )
 	local f38_local2
@@ -462,7 +462,7 @@ CoD.RankUtility.GetRankMasterCard = function ( f38_arg0, f38_arg1 )
 		else
 			local f38_local3 = CoD.RankUtility.GetRankCap( f38_arg1 )
 			local f38_local4 = false
-			if f38_arg1 == Enum.eModes[0xBF1DCC8138A9D39] and CoD.PrestigeUtility.GetCurrentPLevel( f38_arg0, f38_arg1 ) > 0 then
+			if f38_arg1 == Enum.eModes.mode_warzone and CoD.PrestigeUtility.GetCurrentPLevel( f38_arg0, f38_arg1 ) > 0 then
 				f38_local4 = true
 			end
 			if f38_local2 ~= f38_local3 and not f38_local4 then

@@ -54,7 +54,7 @@ LUI.createMenu.EditTeamLogo = function ( f2_arg0, f2_arg1 )
 	self.FadeForStreamer = FadeForStreamer
 	
 	GenericMenuFrame = CoD.GenericMenuFrame.new( f2_local1, f2_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	GenericMenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x4E051F15AE3B3B8 ) )
+	GenericMenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "codcaster/ds_team_identity" ) )
 	GenericMenuFrame:subscribeToGlobalModel( f2_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f5_local0 = model:get()
 		if f5_local0 ~= nil then
@@ -66,7 +66,7 @@ LUI.createMenu.EditTeamLogo = function ( f2_arg0, f2_arg1 )
 	
 	BoxButtonLrgIdle = LUI.UIImage.new( 0.5, 0.5, -66, 697, 0, 0, 216, 694 )
 	BoxButtonLrgIdle:setAlpha( 0.45 )
-	BoxButtonLrgIdle:setImage( RegisterImage( 0x535D18C44834110 ) )
+	BoxButtonLrgIdle:setImage( RegisterImage( "uie_t7_menu_cac_buttonboxlrgidlefull" ) )
 	BoxButtonLrgIdle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BoxButtonLrgIdle:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BoxButtonLrgIdle )
@@ -74,7 +74,7 @@ LUI.createMenu.EditTeamLogo = function ( f2_arg0, f2_arg1 )
 	
 	Border = LUI.UIImage.new( 0.5, 0.5, -58, 687, 0, 0, 220, 689 )
 	Border:setAlpha( 0.43 )
-	Border:setImage( RegisterImage( 0x8F6569FEEE42A57 ) )
+	Border:setImage( RegisterImage( "uie_t7_menu_frontend_titlenumbrdrfull" ) )
 	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 6, 6 )
@@ -103,19 +103,19 @@ LUI.createMenu.EditTeamLogo = function ( f2_arg0, f2_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f2_local1, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f2_local1:AddButtonCallbackFunction( LogoList, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if not IsDisabled( f8_arg0, f8_arg2 ) then
-			SetTeamIdentityTeamLogo( self, f8_arg0, f8_arg2 )
-			SetTeamIdentityProfileValue( self, f8_arg0, f8_arg2, "icon" )
-			SaveShoutcasterSettings( self, f8_arg0, f8_arg2 )
-			GoBack( self, f8_arg2 )
+	f2_local1:AddButtonCallbackFunction( LogoList, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not IsDisabled( element, controller ) then
+			SetTeamIdentityTeamLogo( self, element, controller )
+			SetTeamIdentityProfileValue( self, element, controller, "icon" )
+			SaveShoutcasterSettings( self, element, controller )
+			GoBack( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if not IsDisabled( f9_arg0, f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not IsDisabled( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -150,20 +150,20 @@ LUI.createMenu.EditTeamLogo = function ( f2_arg0, f2_arg1 )
 			LabelButton.itemName:setText( Engine[0xF9F1239CFD921FE]( f11_local0 ) )
 		end
 	end )
-	self:registerEventHandler( "ui_keyboard_input", function ( element, event )
+	self:registerEventHandler( "ui_keyboard_input", function ( self, event )
 		local f12_local0 = nil
-		HandleTeamIdentityKeyboardComplete( self, element, f2_arg0, event )
+		HandleTeamIdentityKeyboardComplete( self, self, f2_arg0, event )
 		if not f12_local0 then
-			f12_local0 = element:dispatchEventToChildren( event )
+			f12_local0 = self:dispatchEventToChildren( event )
 		end
 		return f12_local0
 	end )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		SaveShoutcasterSettings( self, f13_arg0, f13_arg2 )
-		GoBack( self, f13_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		SaveShoutcasterSettings( self, element, controller )
+		GoBack( self, controller )
 		return true
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	GenericMenuFrame:setModel( self.buttonModel, f2_arg0 )

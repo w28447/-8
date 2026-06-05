@@ -22,7 +22,7 @@ CoD.AARLadderTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local TiledPlusGrid = LUI.UIImage.new( 0, 0, -160.5, 1861.5, 0, 0, -85.5, 856.5 )
 	TiledPlusGrid:setAlpha( 0.05 )
-	TiledPlusGrid:setImage( RegisterImage( 0x6E37BAE22631294 ) )
+	TiledPlusGrid:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_repeat_plusgrid" ) )
 	TiledPlusGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledPlusGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledPlusGrid:setupNineSliceShader( 220, 220 )

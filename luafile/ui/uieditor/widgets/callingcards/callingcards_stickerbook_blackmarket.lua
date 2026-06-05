@@ -44,18 +44,18 @@ CoD.CallingCards_Stickerbook_BlackMarket.new = function ( f1_arg0, f1_arg1, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( CallingCardGrid, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f5_arg0, f5_arg2, "owned" ) then
-			CallingCards_SetPlayerBackground( f5_arg1, f5_arg0, f5_arg2 )
+	f1_arg0:AddButtonCallbackFunction( CallingCardGrid, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) then
+			CallingCards_SetPlayerBackground( menu, element, controller )
 			PlaySoundSetSound( self, "action" )
-			ForceNotifyModel( f5_arg2, "hudItems.evalEquippedCard" )
+			ForceNotifyModel( controller, "hudItems.evalEquippedCard" )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f6_arg0, f6_arg2, "owned" ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

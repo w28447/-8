@@ -8,7 +8,7 @@ CoD.CallingCards_Asset_Pirates_sword.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.soundSet = "default"
 	
 	local sword = LUI.UIImage.new( 0, 0, -323, 21, 0, 0, -25, 79 )
-	sword:setImage( RegisterImage( 0x15295FB89C14074 ) )
+	sword:setImage( RegisterImage( "uie_ui_icon_callingcards_pirates_sword" ) )
 	self:addElement( sword )
 	self.sword = sword
 	

@@ -10,8 +10,8 @@ CoD.systemOverlay_connectinganim.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local map01 = LUI.UIImage.new( 0, 0, 1, 549, 0, 0, 0, 286 )
 	map01:setAlpha( 0.08 )
-	map01:setImage( RegisterImage( 0x7FA15E4A4AB38A4 ) )
-	map01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x5956C6C1FD41D3C ) )
+	map01:setImage( RegisterImage( "uie_ui_menu_overlays_anim_map" ) )
+	map01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration" ) )
 	map01:setShaderVector( 0, 0.2, 1, 0, 0 )
 	map01:setShaderVector( 1, 0, 0, 0, 0 )
 	map01:setShaderVector( 2, 0, 0, 0, 0 )
@@ -21,7 +21,7 @@ CoD.systemOverlay_connectinganim.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.map01 = map01
 	
 	local overlay = LUI.UIImage.new( 0, 0, 1, 549, 0, 0, 0, 286 )
-	overlay:setImage( RegisterImage( 0x68F5858FAFFA8DC ) )
+	overlay:setImage( RegisterImage( "uie_ui_menu_overlays_anim_maphighlight" ) )
 	overlay:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	overlay:setShaderVector( 0, -1, 0, 0, 0 )
 	overlay:setShaderVector( 1, 0.07, 0.07, 0, 0 )
@@ -32,7 +32,7 @@ CoD.systemOverlay_connectinganim.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.overlay = overlay
 	
 	local overlay2 = LUI.UIImage.new( 0, 0, 1, 549, 0, 0, 0, 286 )
-	overlay2:setImage( RegisterImage( 0x68F5858FAFFA8DC ) )
+	overlay2:setImage( RegisterImage( "uie_ui_menu_overlays_anim_maphighlight" ) )
 	overlay2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	overlay2:setShaderVector( 0, -0.1, 0, 0, 0 )
 	overlay2:setShaderVector( 1, 0.7, 0.7, 0, 0 )
@@ -43,7 +43,7 @@ CoD.systemOverlay_connectinganim.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.overlay2 = overlay2
 	
 	local overlay3 = LUI.UIImage.new( 0, 0, 1, 549, 0, 0, 0, 286 )
-	overlay3:setImage( RegisterImage( 0x68F5858FAFFA8DC ) )
+	overlay3:setImage( RegisterImage( "uie_ui_menu_overlays_anim_maphighlight" ) )
 	overlay3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	overlay3:setShaderVector( 0, 1, 1.1, 0, 0 )
 	overlay3:setShaderVector( 1, 0.05, 0.05, 0, 0 )
@@ -56,7 +56,7 @@ CoD.systemOverlay_connectinganim.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local fuilines = LUI.UIImage.new( 0, 0, 1, 549, 0, 0, 0, 286 )
 	fuilines:setAlpha( 0.5 )
 	fuilines:setImage( RegisterImage( "uie_ui_menu_overlays_anim_fui" ) )
-	fuilines:setMaterial( LUI.UIImage.GetCachedMaterial( 0x5956C6C1FD41D3C ) )
+	fuilines:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration" ) )
 	fuilines:setShaderVector( 0, 0.2, 1, 0, 0 )
 	fuilines:setShaderVector( 1, 0, 0, 0, 0 )
 	fuilines:setShaderVector( 2, 0, 0, 0, 0 )

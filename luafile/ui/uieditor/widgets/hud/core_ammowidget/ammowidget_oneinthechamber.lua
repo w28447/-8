@@ -15,7 +15,7 @@ CoD.AmmoWidget_OneInTheChamber.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local Backer = LUI.UIImage.new( 0, 0, -77, 290, 0, 0, -15.5, 77.5 )
 	Backer:setAlpha( 0 )
-	Backer:setImage( RegisterImage( 0xA3887D32AFD1940 ) )
+	Backer:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_backer" ) )
 	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Backer:setShaderVector( 0, 0.05, 0.2, 0.05, 0.2 )
 	self:addElement( Backer )
@@ -36,7 +36,7 @@ CoD.AmmoWidget_OneInTheChamber.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local LEDgraph = LUI.UIImage.new( 0, 0, 20, 360, 0, 0, 1, 87 )
 	LEDgraph:setRGB( 0, 0, 0 )
 	LEDgraph:setAlpha( 0.75 )
-	LEDgraph:setImage( RegisterImage( 0x995EF23F488EAFE ) )
+	LEDgraph:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_led_graph" ) )
 	self:addElement( LEDgraph )
 	self.LEDgraph = LEDgraph
 	
@@ -57,7 +57,7 @@ CoD.AmmoWidget_OneInTheChamber.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	Hacked:setRGB( 0.32, 0.44, 0.52 )
 	Hacked:setAlpha( 0 )
 	Hacked:setZRot( 180 )
-	Hacked:setImage( RegisterImage( 0x74A8C8624AAE4D2 ) )
+	Hacked:setImage( RegisterImage( "uie_ui_hud_core_hacked_ammo_panel" ) )
 	Hacked:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	Hacked:setShaderVector( 0, 4, 4, 0, 0 )
 	Hacked:setShaderVector( 1, 30, 0, 0, 0 )
@@ -79,13 +79,13 @@ CoD.AmmoWidget_OneInTheChamber.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local oicLED = LUI.UIImage.new( 0, 0, 3, 363, 0, 0, 7, 95 )
 	oicLED:setImage( RegisterImage( 0xABF790B0DAA8AC7 ) )
-	oicLED:setMaterial( LUI.UIImage.GetCachedMaterial( 0x655565C7B387234 ) )
+	oicLED:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_multiply" ) )
 	self:addElement( oicLED )
 	self.oicLED = oicLED
 	
 	local Lives = LUI.UIText.new( 0, 0, 21.5, 117.5, 0, 0, 18, 30 )
 	Lives:setRGB( 0.73, 0.71, 0.64 )
-	Lives:setText( Engine[0xF9F1239CFD921FE]( 0x1E4F4E133081C25 ) )
+	Lives:setText( Engine[0xF9F1239CFD921FE]( "codcaster/lives" ) )
 	Lives:setTTF( "ttmussels_demibold" )
 	Lives:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	Lives:setLetterSpacing( 1 )

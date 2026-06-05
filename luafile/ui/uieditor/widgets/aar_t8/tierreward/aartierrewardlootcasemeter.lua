@@ -11,13 +11,13 @@ CoD.AARTierRewardLootCaseMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local BackgroundRing = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackgroundRing:setRGB( 0.36, 0.36, 0.36 )
 	BackgroundRing:setAlpha( 0.35 )
-	BackgroundRing:setImage( RegisterImage( 0x47AA86BE90A2F0C ) )
+	BackgroundRing:setImage( RegisterImage( "uie_t7_menu_aar_whiteringback" ) )
 	self:addElement( BackgroundRing )
 	self.BackgroundRing = BackgroundRing
 	
 	local CurrentProgressRing = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	CurrentProgressRing:setRGB( 0.95, 0.91, 0.11 )
-	CurrentProgressRing:setImage( RegisterImage( 0xF00B924BA10A94C ) )
+	CurrentProgressRing:setImage( RegisterImage( "uie_t7_menu_aar_whiteringthin" ) )
 	CurrentProgressRing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	CurrentProgressRing:setShaderVector( 0, 0.66, 0, 0, 0 )
 	CurrentProgressRing:setShaderVector( 1, 0.5, 0, 0, 0 )
@@ -29,7 +29,7 @@ CoD.AARTierRewardLootCaseMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local PreviousProgressRing = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	PreviousProgressRing:setRGB( 0.38, 0.36, 0.02 )
-	PreviousProgressRing:setImage( RegisterImage( 0xF00B924BA10A94C ) )
+	PreviousProgressRing:setImage( RegisterImage( "uie_t7_menu_aar_whiteringthin" ) )
 	PreviousProgressRing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	PreviousProgressRing:setShaderVector( 0, 0.5, 0, 0, 0 )
 	PreviousProgressRing:setShaderVector( 1, 0.5, 0, 0, 0 )
@@ -40,7 +40,7 @@ CoD.AARTierRewardLootCaseMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.PreviousProgressRing = PreviousProgressRing
 	
 	local CaseIcon = LUI.UIImage.new( 0.5, 0.5, -75, 75, 0.5, 0.5, -75, 75 )
-	CaseIcon:setImage( RegisterImage( 0xE694DE7334C460 ) )
+	CaseIcon:setImage( RegisterImage( "uie_ui_icon_blackmarket_reserve_count_neutral" ) )
 	self:addElement( CaseIcon )
 	self.CaseIcon = CaseIcon
 	
@@ -59,7 +59,7 @@ CoD.AARTierRewardLootCaseMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local Flash = LUI.UIImage.new( 0.5, 0.5, -125, 125, 0.5, 0.5, -125, 125 )
 	Flash:setRGB( 1, 0.98, 0.71 )
 	Flash:setAlpha( 0 )
-	Flash:setImage( RegisterImage( 0x4A1176ABBF1AB4C ) )
+	Flash:setImage( RegisterImage( "uie_ui_hud_notifications_glow" ) )
 	Flash:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Flash )
 	self.Flash = Flash

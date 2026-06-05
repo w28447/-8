@@ -15,7 +15,7 @@ CoD.WeaponUtility.CurrentWeaponIsSegmentedReload = function ( f1_arg0 )
 end
 
 CoD.WeaponUtility.WeaponUsesAmmoInternal = function ( f2_arg0, f2_arg1 )
-	local f2_local0 = 0x0
+	local f2_local0 = ""
 	if f2_arg1 == nil then
 		return false
 	elseif f2_arg1 == 0 then
@@ -23,7 +23,7 @@ CoD.WeaponUtility.WeaponUsesAmmoInternal = function ( f2_arg0, f2_arg1 )
 		if f2_local0 then
 			local f2_local1 = Engine[0x6277892F01D31E9]( f2_local0 )
 		end
-		f2_local0 = f2_local1 or 0x0
+		f2_local0 = f2_local1 or ""
 	else
 		f2_local0 = Engine[0xB98952F69D937F9]( f2_arg1 )
 	end

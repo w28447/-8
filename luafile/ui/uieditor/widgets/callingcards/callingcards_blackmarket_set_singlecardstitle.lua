@@ -39,7 +39,7 @@ CoD.CallingCards_BlackMarket_Set_SingleCardsTitle.new = function ( f1_arg0, f1_a
 	self.newIcon = newIcon
 	
 	local SingleCardsTitle = LUI.UIText.new( 0, 0, 0, 350, 0, 0, 0, 37 )
-	SingleCardsTitle:setText( LocalizeToUpperString( 0xDB6CD62FFFD0EEF ) )
+	SingleCardsTitle:setText( LocalizeToUpperString( "menu/single_cards" ) )
 	SingleCardsTitle:setTTF( "ttmussels_demibold" )
 	SingleCardsTitle:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	SingleCardsTitle:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )

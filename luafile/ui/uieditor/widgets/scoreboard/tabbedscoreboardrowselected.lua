@@ -9,7 +9,7 @@ CoD.TabbedScoreboardRowSelected.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local SelectedDotGlow = LUI.UIImage.new( 0, 0, -1, 685, 0, 0, 0, 56 )
-	SelectedDotGlow:setImage( RegisterImage( 0xDE89A66BFC55B6D ) )
+	SelectedDotGlow:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_indicator_bg" ) )
 	self:addElement( SelectedDotGlow )
 	self.SelectedDotGlow = SelectedDotGlow
 	
@@ -22,7 +22,7 @@ CoD.TabbedScoreboardRowSelected.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.SelectedDotGlowPC = SelectedDotGlowPC
 	
 	local SelectedDotGlowAdd = LUI.UIImage.new( 0, 0, -1, 685, 0, 0, 0, 56 )
-	SelectedDotGlowAdd:setImage( RegisterImage( 0xDE89A66BFC55B6D ) )
+	SelectedDotGlowAdd:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_indicator_bg" ) )
 	SelectedDotGlowAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	SelectedDotGlowAdd:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( SelectedDotGlowAdd )
@@ -40,33 +40,33 @@ CoD.TabbedScoreboardRowSelected.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local SelectedFrame = LUI.UIImage.new( 0, 0, -7.5, 692.5, 0, 0, -9, 69 )
 	SelectedFrame:setAlpha( 0 )
-	SelectedFrame:setImage( RegisterImage( 0x8943740C9324811 ) )
+	SelectedFrame:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_indicator" ) )
 	self:addElement( SelectedFrame )
 	self.SelectedFrame = SelectedFrame
 	
 	local SelectedFrameNeutral = LUI.UIImage.new( 0, 0, -7.5, 692.5, 0, 0, -9, 69 )
 	SelectedFrameNeutral:setRGB( 0.85, 0.85, 0.85 )
-	SelectedFrameNeutral:setImage( RegisterImage( 0xC6D8034A245ACD9 ) )
+	SelectedFrameNeutral:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_indicator_gray" ) )
 	self:addElement( SelectedFrameNeutral )
 	self.SelectedFrameNeutral = SelectedFrameNeutral
 	
 	local SelectedFrameNeutral2 = LUI.UIImage.new( 0, 0, -7.5, 692.5, 0, 0, -9, 69 )
 	SelectedFrameNeutral2:setRGB( 0.85, 0.85, 0.85 )
-	SelectedFrameNeutral2:setImage( RegisterImage( 0xC6D8034A245ACD9 ) )
+	SelectedFrameNeutral2:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_indicator_gray" ) )
 	SelectedFrameNeutral2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( SelectedFrameNeutral2 )
 	self.SelectedFrameNeutral2 = SelectedFrameNeutral2
 	
 	local SelectedFrameNeutral3 = LUI.UIImage.new( 0, 0, -7.5, 692.5, 0, 0, -9, 69 )
 	SelectedFrameNeutral3:setRGB( 0.85, 0.85, 0.85 )
-	SelectedFrameNeutral3:setImage( RegisterImage( 0xC6D8034A245ACD9 ) )
+	SelectedFrameNeutral3:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_indicator_gray" ) )
 	SelectedFrameNeutral3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( SelectedFrameNeutral3 )
 	self.SelectedFrameNeutral3 = SelectedFrameNeutral3
 	
 	local SelectedFrameAdd = LUI.UIImage.new( 0, 0, -8, 692, 0, 0, -9, 69 )
 	SelectedFrameAdd:setAlpha( 0 )
-	SelectedFrameAdd:setImage( RegisterImage( 0xB2E10350E5EAFE7 ) )
+	SelectedFrameAdd:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_indicator_glow" ) )
 	SelectedFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	SelectedFrameAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SelectedFrameAdd )
@@ -75,7 +75,7 @@ CoD.TabbedScoreboardRowSelected.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local SelectedFrameAddNeutral = LUI.UIImage.new( 0, 0, -8, 692, 0, 0, -9, 69 )
 	SelectedFrameAddNeutral:setRGB( 0.85, 0.85, 0.85 )
 	SelectedFrameAddNeutral:setAlpha( 0 )
-	SelectedFrameAddNeutral:setImage( RegisterImage( 0x9D6F1F2500105F7 ) )
+	SelectedFrameAddNeutral:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_indicator_glow_gray" ) )
 	SelectedFrameAddNeutral:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	SelectedFrameAddNeutral:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SelectedFrameAddNeutral )

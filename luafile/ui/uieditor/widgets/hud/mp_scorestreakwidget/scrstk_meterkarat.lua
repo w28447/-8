@@ -11,7 +11,7 @@ CoD.ScrStk_MeterKarat.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local FocusMeterFillWhite0 = LUI.UIImage.new( 0.5, 0.5, -6, 6, 0.5, 0.5, -3, 3 )
-	FocusMeterFillWhite0:setImage( RegisterImage( 0xF20585D14FA19A4 ) )
+	FocusMeterFillWhite0:setImage( RegisterImage( "uie_t7_mp_hud_scorestreak_focusmeterbit" ) )
 	self:addElement( FocusMeterFillWhite0 )
 	self.FocusMeterFillWhite0 = FocusMeterFillWhite0
 	

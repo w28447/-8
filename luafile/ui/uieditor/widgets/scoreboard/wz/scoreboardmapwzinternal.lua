@@ -37,7 +37,7 @@ CoD.ScoreboardMapWZInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.ScoreboardGameStatusMap = ScoreboardGameStatusMap
 	
 	local MapGrid02 = LUI.UIImage.new( 0.46, 1.46, -402, -474, 0.47, 1.47, -403, -469 )
-	MapGrid02:setImage( RegisterImage( 0xCABC1612E8ACC9B ) )
+	MapGrid02:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_grid01" ) )
 	MapGrid02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7EA4827662D4CD4 ) )
 	MapGrid02:setShaderVector( 0, 4, 5.92, 0, 0 )
 	MapGrid02:setShaderVector( 1, 0, 1, 0, 1 )
@@ -189,67 +189,67 @@ CoD.ScoreboardMapWZInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.Menu.UpdateButtonShownState( f8_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0x49A252B20B48936] )
 		CoD.Menu.UpdateButtonShownState( f8_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0x493152B20AE4F58] )
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x49A252B20B48936], "MOUSE1", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		if not CoD.ModelUtility.IsModelValueEqualToEnum( f9_arg2, "hudItems.waypointStatus", CoD.WZUtility.WaypointStatus.POST_PLACEMENT_DELAY ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f9_arg2, "hudItems.waypointStatus", CoD.WZUtility.WaypointStatus.POST_DELETION_DELAY ) and not CoD.WZUtility.IsControllerDeadAndNotRespawning( f9_arg2 ) then
-			CoD.WZUtility.PlaceMarker( f9_arg2, self.MarkerImage, self.ScoreboardGameStatusMap )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x49A252B20B48936], "MOUSE1", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsModelValueEqualToEnum( controller, "hudItems.waypointStatus", CoD.WZUtility.WaypointStatus.POST_PLACEMENT_DELAY ) and not CoD.ModelUtility.IsModelValueEqualToEnum( controller, "hudItems.waypointStatus", CoD.WZUtility.WaypointStatus.POST_DELETION_DELAY ) and not CoD.WZUtility.IsControllerDeadAndNotRespawning( controller ) then
+			CoD.WZUtility.PlaceMarker( controller, self.MarkerImage, self.ScoreboardGameStatusMap )
 			return true
-		elseif not CoD.WZUtility.IsControllerDeadAndNotRespawning( f9_arg2 ) and IsGamepad( f9_arg2 ) then
-			BlockGameFromKeyEvent( f9_arg2 )
-			return true
-		else
-			
-		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		if not CoD.ModelUtility.IsModelValueEqualToEnum( f10_arg2, "hudItems.waypointStatus", CoD.WZUtility.WaypointStatus.POST_PLACEMENT_DELAY ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f10_arg2, "hudItems.waypointStatus", CoD.WZUtility.WaypointStatus.POST_DELETION_DELAY ) and not CoD.WZUtility.IsControllerDeadAndNotRespawning( f10_arg2 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x49A252B20B48936], 0x0, nil, "MOUSE1" )
-			return false
-		elseif not CoD.WZUtility.IsControllerDeadAndNotRespawning( f10_arg2 ) and IsGamepad( f10_arg2 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x49A252B20B48936], 0x0, nil, "MOUSE1" )
-			return false
-		else
-			return false
-		end
-	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x493152B20AE4F58], "MOUSE3", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		if CoD.ModelUtility.IsModelValueEqualToEnum( f11_arg2, "hudItems.waypointStatus", CoD.WZUtility.WaypointStatus.ALLOW_DELETION ) and not CoD.WZUtility.IsControllerDeadAndNotRespawning( f11_arg2 ) then
-			CoD.WZUtility.RemoveMarker( f11_arg2, self.MarkerImage )
-			return true
-		elseif not CoD.WZUtility.IsControllerDeadAndNotRespawning( f11_arg2 ) and IsGamepad( f11_arg2 ) then
-			BlockGameFromKeyEvent( f11_arg2 )
+		elseif not CoD.WZUtility.IsControllerDeadAndNotRespawning( controller ) and IsGamepad( controller ) then
+			BlockGameFromKeyEvent( controller )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		if CoD.ModelUtility.IsModelValueEqualToEnum( f12_arg2, "hudItems.waypointStatus", CoD.WZUtility.WaypointStatus.ALLOW_DELETION ) and not CoD.WZUtility.IsControllerDeadAndNotRespawning( f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x493152B20AE4F58], 0x0, nil, "MOUSE3" )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsModelValueEqualToEnum( controller, "hudItems.waypointStatus", CoD.WZUtility.WaypointStatus.POST_PLACEMENT_DELAY ) and not CoD.ModelUtility.IsModelValueEqualToEnum( controller, "hudItems.waypointStatus", CoD.WZUtility.WaypointStatus.POST_DELETION_DELAY ) and not CoD.WZUtility.IsControllerDeadAndNotRespawning( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x49A252B20B48936], "", nil, "MOUSE1" )
 			return false
-		elseif not CoD.WZUtility.IsControllerDeadAndNotRespawning( f12_arg2 ) and IsGamepad( f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x493152B20AE4F58], 0x0, nil, "MOUSE3" )
+		elseif not CoD.WZUtility.IsControllerDeadAndNotRespawning( controller ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x49A252B20B48936], "", nil, "MOUSE1" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "MWHEELDOWN", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		CoD.WZUtility.ZoomMap( f13_arg2, false, self.ScoreboardGameStatusMap )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x493152B20AE4F58], "MOUSE3", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsModelValueEqualToEnum( controller, "hudItems.waypointStatus", CoD.WZUtility.WaypointStatus.ALLOW_DELETION ) and not CoD.WZUtility.IsControllerDeadAndNotRespawning( controller ) then
+			CoD.WZUtility.RemoveMarker( controller, self.MarkerImage )
+			return true
+		elseif not CoD.WZUtility.IsControllerDeadAndNotRespawning( controller ) and IsGamepad( controller ) then
+			BlockGameFromKeyEvent( controller )
+			return true
+		else
+			
+		end
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsModelValueEqualToEnum( controller, "hudItems.waypointStatus", CoD.WZUtility.WaypointStatus.ALLOW_DELETION ) and not CoD.WZUtility.IsControllerDeadAndNotRespawning( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x493152B20AE4F58], "", nil, "MOUSE3" )
+			return false
+		elseif not CoD.WZUtility.IsControllerDeadAndNotRespawning( controller ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x493152B20AE4F58], "", nil, "MOUSE3" )
+			return false
+		else
+			return false
+		end
+	end, false )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "MWHEELDOWN", function ( element, menu, controller, model )
+		CoD.WZUtility.ZoomMap( controller, false, self.ScoreboardGameStatusMap )
 		return true
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x0, nil, "MWHEELDOWN" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "", nil, "MWHEELDOWN" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "MWHEELUP", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		CoD.WZUtility.ZoomMap( f15_arg2, true, self.ScoreboardGameStatusMap )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "MWHEELUP", function ( element, menu, controller, model )
+		CoD.WZUtility.ZoomMap( controller, true, self.ScoreboardGameStatusMap )
 		return true
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x0, nil, "MWHEELUP" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "", nil, "MWHEELUP" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x6CE8023188D673F], nil, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		CoD.WZUtility.CenterCursorOnPlayer( f17_arg2, self.ScoreboardGameStatusMap )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x6CE8023188D673F], nil, function ( element, menu, controller, model )
+		CoD.WZUtility.CenterCursorOnPlayer( controller, self.ScoreboardGameStatusMap )
 		return true
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x6CE8023188D673F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x6CE8023188D673F], "", nil, nil )
 		return false
 	end, false )
 	LUI.OverrideFunction_CallOriginalSecond( self, "close", self.__onClose )

@@ -159,7 +159,7 @@ CoD.MOTDUtility.MOTD_AttemptToReportMessage = function ( f15_arg0, f15_arg1 )
 		local f15_local0 = CoD.MOTDUtility.MOTD_GetModel( f15_arg1, "offset" )
 		local f15_local1 = CoD.MOTDUtility.MOTD_GetMOTDChannel()
 		if f15_local0 then
-			Engine.Exec( f15_arg0, "marketing_markmessageasviewed " .. f15_local1 .. " " .. f15_local0:get() )
+			Engine.exec( f15_arg0, "marketing_markmessageasviewed " .. f15_local1 .. " " .. f15_local0:get() )
 		else
 			print( "Error: MOTDBannerList Datasource is missing model <offset> for current banner." )
 		end
@@ -168,7 +168,7 @@ end
 
 CoD.MOTDUtility.MOTD_ReportMessageasViewed = function ( f16_arg0, f16_arg1 )
 	if CoD.MOTDUtility.MOTD_ShouldReportMessage() then
-		Engine.Exec( f16_arg0, "marketing_markmessageasviewed " .. CoD.MOTDUtility.MOTD_GetMOTDChannel() .. " " .. f16_arg1 )
+		Engine.exec( f16_arg0, "marketing_markmessageasviewed " .. CoD.MOTDUtility.MOTD_GetMOTDChannel() .. " " .. f16_arg1 )
 	end
 end
 
@@ -185,10 +185,10 @@ CoD.MOTDUtility.ShouldSkipMessage = function ( f17_arg0, f17_arg1, f17_arg2 )
 	end
 	local f17_local2 = CoD.MOTDUtility.MOTD_GetMOTDChannel()
 	if f17_local1 and CoD.MOTDUtility.MOTD_ShouldReportMessage() then
-		Engine.Exec( f17_arg2, "marketing_markmessageasviewed " .. f17_local2 .. " " .. f17_arg1 )
+		Engine.exec( f17_arg2, "marketing_markmessageasviewed " .. f17_local2 .. " " .. f17_arg1 )
 		return true
 	elseif (f17_arg0.action == "registration" or f17_arg0.popupAction == "registration") and not CoD.CoDAccountUtility.IsAccountFeatureEnabled( f17_arg2 ) then
-		Engine.Exec( f17_arg2, "marketing_markmessageasviewed " .. f17_local2 .. " " .. f17_arg1 )
+		Engine.exec( f17_arg2, "marketing_markmessageasviewed " .. f17_local2 .. " " .. f17_arg1 )
 		return true
 	else
 		return false
@@ -219,10 +219,10 @@ CoD.MOTDUtility.CreateMOTDFeatureCard = function ( f20_arg0, f20_arg1 )
 		table.insert( f20_arg0, {
 			models = {
 				locked = false,
-				name = Engine[0xF9F1239CFD921FE]( 0x2DEBC821FE9A08B ),
-				iconBackground = 0xCDCA8E930C437EF,
-				iconBackgroundFocus = 0xCDCA8E930C437EF,
-				descriptionText = 0x3EEC1A0B3A25B5F,
+				name = Engine[0xF9F1239CFD921FE]( "menu/motd" ),
+				iconBackground = "ui_icon_crm_featured_thanks",
+				iconBackgroundFocus = "ui_icon_crm_featured_thanks",
+				descriptionText = "menu/message_of_the_day",
 				action = CoD.MOTDUtility.MOTD_OpenMOTDPopup,
 				actionString = "motd",
 				param = false,
@@ -292,12 +292,12 @@ CoD.MOTDUtility.MOTD_DLogInteraction = function ( f24_arg0, f24_arg1, f24_arg2, 
 							f24_local5 = CoD.MetricsUtility.GetButtonPressed( f24_arg0 )
 						end
 						if f24_local3 and f24_local4 and (f24_arg2 or CoD.MOTDUtility.MOTD_ShouldLogInteraction( f24_local3 )) then
-							Engine[0xDE279ECDDDD966]( f24_arg0, 0x6647F4E58A2A212, {
-								[0x72F1795FF3E15F4] = f24_local2,
-								[0x3C83260DD96C90C] = f24_arg3,
-								[0x3A1A70556201A2D] = f24_local3,
-								["crm_screen_button_pressed"] = f24_local5,
-								[0x2FD35287F0A935B] = f24_local4
+							Engine[0xDE279ECDDDD966]( f24_arg0, "dlog_event_motd_interaction", {
+								interaction_type = f24_local2,
+								crm_screen_id = f24_arg3,
+								crm_message_id = f24_local3,
+								crm_screen_button_pressed = f24_local5,
+								language = f24_local4
 							} )
 						end
 					end
@@ -417,16 +417,16 @@ DataSources.PCMOTDOptions = DataSourceHelpers.ListSetup( "PCMOTDOptions", functi
 	if f25_local2( f25_local1 ) then
 		if not CoD.MOTDUtility.AllActionsDisabled() then
 			if not f25_local5() then
-				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( 0x191CDDA584B4408, f25_local3, f25_local5 ) )
+				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( "menu/store_caps", f25_local3, f25_local5 ) )
 			end
 			if not f25_local6() then
-				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( 0x977A022B8323362, f25_local3, f25_local6 ) )
+				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( "menu/register_caps", f25_local3, f25_local6 ) )
 			end
 			if not f25_local7() then
 				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( "menu/black_market", f25_local3, f25_local7 ) )
 			end
 			if not f25_local8() then
-				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( 0x90379DA9EEC8DB9, f25_local3, f25_local8 ) )
+				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( "menu/item_shop", f25_local3, f25_local8 ) )
 			end
 			if not f25_local9() then
 				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( 0x655207CC013B5BD, f25_local3, f25_local9 ) )
@@ -438,7 +438,7 @@ DataSources.PCMOTDOptions = DataSourceHelpers.ListSetup( "PCMOTDOptions", functi
 				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( 0xAF6650B811A502B, f25_local3, f25_local11 ) )
 			end
 			if not f25_local12() then
-				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( 0xFF19F036B1F8248, f25_local3, f25_local12 ) )
+				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( "menu/motd_inventory", f25_local3, f25_local12 ) )
 			end
 			if not f25_local13() then
 				table.insert( f25_local0, CoD.MOTDUtility.packageMOTDButtonData( 0xE1FEFD9287CA008, f25_local3, f25_local13 ) )
@@ -559,24 +559,25 @@ DataSources.MOTDBannerList = ListHelper_SetupDataSource( "MOTDBannerList", funct
 	local f51_local1 = 1
 	if Dvar[0x61B37B5CD0C5CC1]:get() then
 		local f51_local2 = function ( f52_arg0, f52_arg1, f52_arg2, f52_arg3, f52_arg4, f52_arg5, f52_arg6, f52_arg7, f52_arg8, f52_arg9, f52_arg10 )
-			return {
-				models = {},
-				models = "",
-				models = f52_arg0,
-				models = f52_arg1,
-				models = f52_arg4,
-				models = "",
-				models = f52_arg3,
-				models = false,
-				models = Engine[0x8506F73B393062F]( 1 ),
-				models = f52_arg2,
-				models = Engine[0x8506F73B393062F]( f52_arg9 ),
-				models = f52_arg6,
-				models = f52_arg7,
-				models = f52_arg5,
-				models = f52_arg10 - 1,
-				models = f52_arg8
+			local f52_local0 = {
+				models = {}
 			}
+			f52_local0.models.payloadSignature = ""
+			f52_local0.models.content_long = f52_arg0
+			f52_local0.models.title = f52_arg1
+			f52_local0.models.frameLayout = f52_arg4
+			f52_local0.models.action_title = ""
+			f52_local0.models.popup_image = f52_arg3
+			f52_local0.models.messageViewReported = false
+			f52_local0.models.locationID = Engine[0x8506F73B393062F]( 1 )
+			f52_local0.models.image = f52_arg2
+			f52_local0.models.messageID = Engine[0x8506F73B393062F]( f52_arg9 )
+			f52_local0.models.action = f52_arg6
+			f52_local0.models.actionParam = f52_arg7
+			f52_local0.models.content_short = f52_arg5
+			f52_local0.models.offset = f52_arg10 - 1
+			f52_local0.models.vod = f52_arg8
+			return f52_local0
 		end
 		
 		table.insert( f51_local0, f51_local2( "This is testing content layout A.", "Content Layout A Test", "t7_store_featured_message", "t7_store_featured_message", "CoD.MOTD_VoDPreviewWidget", "", "vod", nil, {
@@ -836,7 +837,7 @@ CoD.MOTDUtility.FeatureCard_MarkAsViewed = function ( f66_arg0, f66_arg1, f66_ar
 	local f66_local1 = f66_arg2:getModel( f66_arg1, "location" )
 	if f66_local0 and f66_local1 then
 		if f66_local1:get() == "crm_featured" then
-			Engine.Exec( f66_arg1, "marketing_markmessageasviewed" .. " " .. f66_local1:get() .. " " .. f66_local0:get() )
+			Engine.exec( f66_arg1, "marketing_markmessageasviewed" .. " " .. f66_local1:get() .. " " .. f66_local0:get() )
 		end
 		CoD.MOTDUtility.MOTD_DLogInteraction( f66_arg1, f66_arg2:getModel(), false, "FW" )
 	end
@@ -860,13 +861,13 @@ CoD.MOTDUtility.FeatureCard_SetPopupActionButtonName = function ( f68_arg0, f68_
 	if f68_local0 then
 		local f68_local1 = f68_local0:get()
 		if f68_local1 == "store" then
-			CoD.Menu.SetButtonLabel( f68_arg3, Enum.LUIButton[0xC083113BC81F23F], 0x3C12F98C86B4DA8 )
+			CoD.Menu.SetButtonLabel( f68_arg3, Enum.LUIButton[0xC083113BC81F23F], "menu/store" )
 		elseif f68_local1 == "registration" then
-			CoD.Menu.SetButtonLabel( f68_arg3, Enum.LUIButton[0xC083113BC81F23F], 0x1AF6B0A327DB28A )
+			CoD.Menu.SetButtonLabel( f68_arg3, Enum.LUIButton[0xC083113BC81F23F], "menu/registration" )
 		elseif f68_local1 == "depot" then
 			CoD.Menu.SetButtonLabel( f68_arg3, Enum.LUIButton[0xC083113BC81F23F], "menu/black_market" )
 		elseif f68_local1 == "shop" then
-			CoD.Menu.SetButtonLabel( f68_arg3, Enum.LUIButton[0xC083113BC81F23F], 0x90379DA9EEC8DB9 )
+			CoD.Menu.SetButtonLabel( f68_arg3, Enum.LUIButton[0xC083113BC81F23F], "menu/item_shop" )
 		end
 	end
 end

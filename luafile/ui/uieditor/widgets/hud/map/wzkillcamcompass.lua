@@ -23,7 +23,7 @@ CoD.WZKillcamCompass.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local SquareCompassBacking = LUI.UIImage.new( 0.5, 0.5, -139, 139, 0.5, 0.5, -139, 139 )
 	SquareCompassBacking:setRGB( 0, 0, 0 )
 	SquareCompassBacking:setScale( 0.98, 0.98 )
-	SquareCompassBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
+	SquareCompassBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_blend" ) )
 	self:addElement( SquareCompassBacking )
 	self.SquareCompassBacking = SquareCompassBacking
 	

@@ -19,7 +19,7 @@ CoD.WarzoneUseTimerRevivePlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.ReviveBannerBG = ReviveBannerBG
 	
 	local UseText = LUI.UIText.new( 0, 0, 17.5, 217.5, 0, 0, 3, 33 )
-	UseText:setText( Engine[0xF9F1239CFD921FE]( 0x6326FF81589A75B ) )
+	UseText:setText( Engine[0xF9F1239CFD921FE]( "coop/reviving" ) )
 	UseText:setTTF( "ttmussels_regular" )
 	UseText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( UseText )

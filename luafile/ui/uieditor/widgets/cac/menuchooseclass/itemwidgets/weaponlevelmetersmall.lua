@@ -10,14 +10,14 @@ CoD.WeaponLevelMeterSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local progressBarBg = LUI.UIImage.new( 0, 0, 0, 1580, 0, 0, 0, 12 )
 	progressBarBg:setAlpha( 0 )
-	progressBarBg:setImage( RegisterImage( 0x45A18362FE3CA31 ) )
+	progressBarBg:setImage( RegisterImage( "uie_ui_menu_cac_attachment_meter_backing_01" ) )
 	self:addElement( progressBarBg )
 	self.progressBarBg = progressBarBg
 	
 	local progressBarGlow = LUI.UIImage.new( 0, 0, 0, 1580, 0, 0, 0, 12 )
 	progressBarGlow:setRGB( 1, 0.87, 0 )
 	progressBarGlow:setAlpha( 0 )
-	progressBarGlow:setImage( RegisterImage( 0xBCE1DB85F0A9 ) )
+	progressBarGlow:setImage( RegisterImage( "uie_ui_menu_cac_attachment_meter_glow" ) )
 	progressBarGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	progressBarGlow:setShaderVector( 1, 0, 0, 0, 0 )
 	progressBarGlow:setShaderVector( 2, 1, 0, 0, 0 )
@@ -35,7 +35,7 @@ CoD.WeaponLevelMeterSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local progressBarGlow2 = LUI.UIImage.new( 0, 0, 0, 1580, 0, 0, 0, 12 )
 	progressBarGlow2:setRGB( 1, 0.87, 0 )
 	progressBarGlow2:setAlpha( 0 )
-	progressBarGlow2:setImage( RegisterImage( 0xBCE1DB85F0A9 ) )
+	progressBarGlow2:setImage( RegisterImage( "uie_ui_menu_cac_attachment_meter_glow" ) )
 	progressBarGlow2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	progressBarGlow2:setShaderVector( 1, 0, 0, 0, 0 )
 	progressBarGlow2:setShaderVector( 2, 1, 0, 0, 0 )
@@ -51,7 +51,7 @@ CoD.WeaponLevelMeterSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.progressBarGlow2 = progressBarGlow2
 	
 	local progressBarColorless = LUI.UIImage.new( 0, 0, 0, 271, 0, 0, 2, 10 )
-	progressBarColorless:setImage( RegisterImage( 0xFE3BC2EF75DDD79 ) )
+	progressBarColorless:setImage( RegisterImage( "uie_ui_menu_cac_button_bottom_line_lvl_colorless" ) )
 	progressBarColorless:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	progressBarColorless:setShaderVector( 1, 0, 0, 0, 0 )
 	progressBarColorless:setShaderVector( 2, 1, 0, 0, 0 )

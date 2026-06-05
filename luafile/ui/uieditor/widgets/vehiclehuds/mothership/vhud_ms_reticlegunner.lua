@@ -34,7 +34,7 @@ CoD.vhud_ms_ReticleGunner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TextureOverlayGrid = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TextureOverlayGrid:setAlpha( 0.55 )
-	TextureOverlayGrid:setImage( RegisterImage( 0xE0FC77400EBFC1 ) )
+	TextureOverlayGrid:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_textureoverlaygrid" ) )
 	self:addElement( TextureOverlayGrid )
 	self.TextureOverlayGrid = TextureOverlayGrid
 	
@@ -52,7 +52,7 @@ CoD.vhud_ms_ReticleGunner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local msBoldLightRight = LUI.UIImage.new( 0.5, 0.5, 158, 514, 0.5, 0.5, -385, 398 )
 	msBoldLightRight:setAlpha( 0.3 )
 	msBoldLightRight:setZoom( 50 )
-	msBoldLightRight:setImage( RegisterImage( 0xAB4DC9D11F92483 ) )
+	msBoldLightRight:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_rightboldlight" ) )
 	msBoldLightRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msBoldLightRight )
 	self.msBoldLightRight = msBoldLightRight
@@ -61,7 +61,7 @@ CoD.vhud_ms_ReticleGunner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	msBoldLightLeft:setAlpha( 0.3 )
 	msBoldLightLeft:setZRot( -177 )
 	msBoldLightLeft:setZoom( 50 )
-	msBoldLightLeft:setImage( RegisterImage( 0xAB4DC9D11F92483 ) )
+	msBoldLightLeft:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_rightboldlight" ) )
 	msBoldLightLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msBoldLightLeft )
 	self.msBoldLightLeft = msBoldLightLeft
@@ -70,7 +70,7 @@ CoD.vhud_ms_ReticleGunner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	msDoubleArrowsLower:setRGB( 0.74, 0.94, 0.99 )
 	msDoubleArrowsLower:setAlpha( 0.3 )
 	msDoubleArrowsLower:setZRot( 180 )
-	msDoubleArrowsLower:setImage( RegisterImage( 0x21CD7B1CED9CB58 ) )
+	msDoubleArrowsLower:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_arrowdouble" ) )
 	msDoubleArrowsLower:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msDoubleArrowsLower )
 	self.msDoubleArrowsLower = msDoubleArrowsLower
@@ -78,21 +78,21 @@ CoD.vhud_ms_ReticleGunner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local msDoubleArrowsUpper = LUI.UIImage.new( 0.5, 0.5, -15, 22, 0.5, 0.5, -337, -300 )
 	msDoubleArrowsUpper:setRGB( 0.74, 0.94, 0.99 )
 	msDoubleArrowsUpper:setAlpha( 0.3 )
-	msDoubleArrowsUpper:setImage( RegisterImage( 0x6D4131DB15D8159 ) )
+	msDoubleArrowsUpper:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_arrowsingle" ) )
 	msDoubleArrowsUpper:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msDoubleArrowsUpper )
 	self.msDoubleArrowsUpper = msDoubleArrowsUpper
 	
 	local msCenterInnerRing = LUI.UIImage.new( 0.5, 0.5, -317, 326, 0.5, 0.5, -326, 317 )
 	msCenterInnerRing:setAlpha( 0.2 )
-	msCenterInnerRing:setImage( RegisterImage( 0xB7BAE0BCEE02601 ) )
+	msCenterInnerRing:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_centerinnerring" ) )
 	msCenterInnerRing:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msCenterInnerRing )
 	self.msCenterInnerRing = msCenterInnerRing
 	
 	local msCenterPoint = LUI.UIImage.new( 0.5, 0.5, -8, 12, 0.5, 0.5, -11, 9 )
 	msCenterPoint:setYRot( 180 )
-	msCenterPoint:setImage( RegisterImage( 0xACCB39F8082B9C9 ) )
+	msCenterPoint:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_centerpoint" ) )
 	msCenterPoint:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msCenterPoint )
 	self.msCenterPoint = msCenterPoint
@@ -100,7 +100,7 @@ CoD.vhud_ms_ReticleGunner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local msMidDotsR = LUI.UIImage.new( 0.5, 0.5, -960, -960, 0.5, 0.5, -540, -540 )
 	msMidDotsR:setRGB( 0.74, 0.94, 0.99 )
 	msMidDotsR:setAlpha( 0 )
-	msMidDotsR:setImage( RegisterImage( 0x252ACD29099C690 ) )
+	msMidDotsR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_rightmiddots" ) )
 	msMidDotsR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msMidDotsR )
 	self.msMidDotsR = msMidDotsR
@@ -109,14 +109,14 @@ CoD.vhud_ms_ReticleGunner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	msMidDotsL:setRGB( 0.74, 0.94, 0.99 )
 	msMidDotsL:setAlpha( 0 )
 	msMidDotsL:setZRot( 180 )
-	msMidDotsL:setImage( RegisterImage( 0x252ACD29099C690 ) )
+	msMidDotsL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_rightmiddots" ) )
 	msMidDotsL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msMidDotsL )
 	self.msMidDotsL = msMidDotsL
 	
 	local msOutsideArrowBlurR = LUI.UIImage.new( 0.5, 0.5, 477, 593, 0.5, 0.5, -59, 57 )
 	msOutsideArrowBlurR:setAlpha( 0.2 )
-	msOutsideArrowBlurR:setImage( RegisterImage( 0x585DEA94E059B5 ) )
+	msOutsideArrowBlurR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_outerarrowblur" ) )
 	msOutsideArrowBlurR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msOutsideArrowBlurR )
 	self.msOutsideArrowBlurR = msOutsideArrowBlurR
@@ -124,7 +124,7 @@ CoD.vhud_ms_ReticleGunner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local msOutsideArrowBlurL = LUI.UIImage.new( 0.5, 0.5, -593, -477, 0.5, 0.5, -59, 57 )
 	msOutsideArrowBlurL:setAlpha( 0.2 )
 	msOutsideArrowBlurL:setYRot( 180 )
-	msOutsideArrowBlurL:setImage( RegisterImage( 0x585DEA94E059B5 ) )
+	msOutsideArrowBlurL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_outerarrowblur" ) )
 	msOutsideArrowBlurL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msOutsideArrowBlurL )
 	self.msOutsideArrowBlurL = msOutsideArrowBlurL
@@ -132,7 +132,7 @@ CoD.vhud_ms_ReticleGunner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local msOutsideArrowR = LUI.UIImage.new( 0.5, 0.5, 525, 575, 0.5, 0.5, -39, 36 )
 	msOutsideArrowR:setRGB( 0.74, 0.94, 0.99 )
 	msOutsideArrowR:setAlpha( 0.2 )
-	msOutsideArrowR:setImage( RegisterImage( 0xC98E0005AC2B3EC ) )
+	msOutsideArrowR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_outerarrow" ) )
 	msOutsideArrowR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msOutsideArrowR )
 	self.msOutsideArrowR = msOutsideArrowR
@@ -141,7 +141,7 @@ CoD.vhud_ms_ReticleGunner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	msOutsideArrowL:setRGB( 0.74, 0.94, 0.99 )
 	msOutsideArrowL:setAlpha( 0.2 )
 	msOutsideArrowL:setZRot( 180 )
-	msOutsideArrowL:setImage( RegisterImage( 0xC98E0005AC2B3EC ) )
+	msOutsideArrowL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_outerarrow" ) )
 	msOutsideArrowL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msOutsideArrowL )
 	self.msOutsideArrowL = msOutsideArrowL
@@ -205,29 +205,29 @@ CoD.vhud_ms_ReticleGunner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local vhudmsReticleLineHostLL = CoD.vhud_ms_ReticleLineHostLL.new( f1_arg0, f1_arg1, 0.5, 0.5, -512, -279, 0.5, 0.5, 167, 253 )
 	vhudmsReticleLineHostLL:setZoom( 20 )
-	vhudmsReticleLineHostLL.Image0:setImage( RegisterImage( 0x4FFC1396ED92ACB ) )
-	vhudmsReticleLineHostLL.msReticleHostLowerL:setImage( RegisterImage( 0x4FFC1396ED92ACB ) )
+	vhudmsReticleLineHostLL.Image0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_reticleclient" ) )
+	vhudmsReticleLineHostLL.msReticleHostLowerL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_reticleclient" ) )
 	self:addElement( vhudmsReticleLineHostLL )
 	self.vhudmsReticleLineHostLL = vhudmsReticleLineHostLL
 	
 	local vhudmsReticleLineHostLR = CoD.vhud_ms_ReticleLineHostLR.new( f1_arg0, f1_arg1, 0.5, 0.5, 265, 498, 0.5, 0.5, 167, 253 )
 	vhudmsReticleLineHostLR:setZoom( 20 )
-	vhudmsReticleLineHostLR.Host:setImage( RegisterImage( 0x4FFC1396ED92ACB ) )
-	vhudmsReticleLineHostLR.msReticleHostLowerR:setImage( RegisterImage( 0x4FFC1396ED92ACB ) )
+	vhudmsReticleLineHostLR.Host:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_reticleclient" ) )
+	vhudmsReticleLineHostLR.msReticleHostLowerR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_reticleclient" ) )
 	self:addElement( vhudmsReticleLineHostLR )
 	self.vhudmsReticleLineHostLR = vhudmsReticleLineHostLR
 	
 	local vhudmsReticleLineHostUL = CoD.vhud_ms_ReticleLineHostUL.new( f1_arg0, f1_arg1, 0.5, 0.5, -504, -271, 0.5, 0.5, -260, -174 )
 	vhudmsReticleLineHostUL:setZoom( 20 )
-	vhudmsReticleLineHostUL.Image0:setImage( RegisterImage( 0x4FFC1396ED92ACB ) )
-	vhudmsReticleLineHostUL.msReticleHostUpperL:setImage( RegisterImage( 0x4FFC1396ED92ACB ) )
+	vhudmsReticleLineHostUL.Image0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_reticleclient" ) )
+	vhudmsReticleLineHostUL.msReticleHostUpperL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_reticleclient" ) )
 	self:addElement( vhudmsReticleLineHostUL )
 	self.vhudmsReticleLineHostUL = vhudmsReticleLineHostUL
 	
 	local vhudmsReticleLineHostUR = CoD.vhud_ms_ReticleLineHostUR.new( f1_arg0, f1_arg1, 0.5, 0.5, 265, 498, 0.5, 0.5, -263, -177 )
 	vhudmsReticleLineHostUR:setZoom( 20 )
-	vhudmsReticleLineHostUR.Image0:setImage( RegisterImage( 0x4FFC1396ED92ACB ) )
-	vhudmsReticleLineHostUR.msReticleHostUpperR:setImage( RegisterImage( 0x4FFC1396ED92ACB ) )
+	vhudmsReticleLineHostUR.Image0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_reticleclient" ) )
+	vhudmsReticleLineHostUR.msReticleHostUpperR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_reticleclient" ) )
 	self:addElement( vhudmsReticleLineHostUR )
 	self.vhudmsReticleLineHostUR = vhudmsReticleLineHostUR
 	
@@ -261,7 +261,7 @@ CoD.vhud_ms_ReticleGunner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local CenterHairUR = LUI.UIImage.new( 0.5, 0.5, 21, 57, 0.5, 0.5, -54, -18 )
 	CenterHairUR:setAlpha( 0.4 )
 	CenterHairUR:setZRot( 180 )
-	CenterHairUR:setImage( RegisterImage( 0x6FE5437D0CDE0CC ) )
+	CenterHairUR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_centerhairlineclient" ) )
 	CenterHairUR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterHairUR )
 	self.CenterHairUR = CenterHairUR
@@ -270,7 +270,7 @@ CoD.vhud_ms_ReticleGunner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	CenterHairUL:setAlpha( 0.4 )
 	CenterHairUL:setYRot( -180 )
 	CenterHairUL:setZRot( 180 )
-	CenterHairUL:setImage( RegisterImage( 0x6FE5437D0CDE0CC ) )
+	CenterHairUL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_centerhairlineclient" ) )
 	CenterHairUL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterHairUL )
 	self.CenterHairUL = CenterHairUL
@@ -279,7 +279,7 @@ CoD.vhud_ms_ReticleGunner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	CenterHairLR:setAlpha( 0.4 )
 	CenterHairLR:setXRot( -180 )
 	CenterHairLR:setZRot( 180 )
-	CenterHairLR:setImage( RegisterImage( 0x6FE5437D0CDE0CC ) )
+	CenterHairLR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_centerhairlineclient" ) )
 	CenterHairLR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterHairLR )
 	self.CenterHairLR = CenterHairLR
@@ -289,7 +289,7 @@ CoD.vhud_ms_ReticleGunner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	CenterHairLL:setXRot( -180 )
 	CenterHairLL:setYRot( -180 )
 	CenterHairLL:setZRot( 180 )
-	CenterHairLL:setImage( RegisterImage( 0x6FE5437D0CDE0CC ) )
+	CenterHairLL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_centerhairlineclient" ) )
 	CenterHairLL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterHairLL )
 	self.CenterHairLL = CenterHairLL

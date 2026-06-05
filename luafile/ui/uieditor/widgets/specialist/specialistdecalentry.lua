@@ -123,7 +123,7 @@ CoD.SpecialistDecalEntry.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local noneText = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -12, 12 )
 	noneText:setAlpha( 0 )
-	noneText:setText( Engine[0xF9F1239CFD921FE]( 0x1EFDF7772FC1BF1 ) )
+	noneText:setText( Engine[0xF9F1239CFD921FE]( "menu/none" ) )
 	noneText:setTTF( "ttmussels_demibold" )
 	noneText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	noneText:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )
@@ -132,7 +132,7 @@ CoD.SpecialistDecalEntry.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local UnderlineFocusGlow = LUI.UIImage.new( 0.02, 0.98, -35, 35, 0.41, -0.63, -45, 55 )
 	UnderlineFocusGlow:setScale( 0, 1 )
-	UnderlineFocusGlow:setImage( RegisterImage( 0xF779A31F8FA32C4 ) )
+	UnderlineFocusGlow:setImage( RegisterImage( "uie_ui_menu_common_focus_glow_smaller_filled" ) )
 	UnderlineFocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	UnderlineFocusGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	UnderlineFocusGlow:setShaderVector( 1, 1.6, 0, 0, 0 )
@@ -143,7 +143,7 @@ CoD.SpecialistDecalEntry.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local UnderlineFocus = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -94, -84 )
 	UnderlineFocus:setAlpha( 0.15 )
 	UnderlineFocus:setScale( 0, 1 )
-	UnderlineFocus:setImage( RegisterImage( 0x3F29FF813507D9B ) )
+	UnderlineFocus:setImage( RegisterImage( "uie_ui_menu_store_focus_underline" ) )
 	UnderlineFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( UnderlineFocus )
 	self.UnderlineFocus = UnderlineFocus

@@ -17,7 +17,7 @@ CoD.CommonSecondaryTabBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local LTrig = CoD.BumperButtonWithKeyMouseText.new( f1_arg0, f1_arg1, 0, 0, 586, 786, 0.5, 0.5, -17, 17 )
 	LTrig:setRGB( 0.92, 0.92, 0.92 )
-	LTrig.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBA3A27E061CC812 ) )
+	LTrig.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "menu/l_trigger" ) )
 	LTrig.GamepadPrompt:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	self:addElement( LTrig )
 	self.LTrig = LTrig
@@ -30,7 +30,7 @@ CoD.CommonSecondaryTabBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local RTrig = CoD.BumperButtonWithKeyMouseText.new( f1_arg0, f1_arg1, 0, 0, 2514, 2714, 0.5, 0.5, -17, 17 )
 	RTrig:setRGB( 0.92, 0.92, 0.92 )
-	RTrig.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0x2B144B0EB22E484 ) )
+	RTrig.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "menu/r_trigger" ) )
 	self:addElement( RTrig )
 	self.RTrig = RTrig
 	

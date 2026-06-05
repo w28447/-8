@@ -1,5 +1,5 @@
-require( "x64:48be5c6feaceeb4" )
-require( "x64:f93e6387e9d051" )
+require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settinginfo" )
+require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settingslider_wrapper" )
 require( "ui/uieditor/widgets/startmenu/startmenu_connectionmetercontainer" )
 require( "ui/uieditor/widgets/startmenu/startmenu_options_network_overviewpanel" )
 
@@ -46,24 +46,24 @@ CoD.StartMenu_Options_Frame_Network.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0xC083113BC81F23F] )
 		return f3_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( OptionGroups, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		if HasListAction( f4_arg0, f4_arg2 ) and IsElementPropertyValue( f4_arg0, "isHidden", true ) then
-			ProcessListAction( self, f4_arg0, f4_arg2, f4_arg1 )
-			UpdateButtonPromptState( f4_arg1, f4_arg0, f4_arg2, Enum.LUIButton[0xC083113BC81F23F] )
+	f1_arg0:AddButtonCallbackFunction( OptionGroups, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if HasListAction( element, controller ) and IsElementPropertyValue( element, "isHidden", true ) then
+			ProcessListAction( self, element, controller, menu )
+			UpdateButtonPromptState( menu, element, controller, Enum.LUIButton[0xC083113BC81F23F] )
 			return true
-		elseif HasListAction( f4_arg0, f4_arg2 ) then
-			ProcessListAction( self, f4_arg0, f4_arg2, f4_arg1 )
-			UpdateButtonPromptState( f4_arg1, f4_arg0, f4_arg2, Enum.LUIButton[0xC083113BC81F23F] )
+		elseif HasListAction( element, controller ) then
+			ProcessListAction( self, element, controller, menu )
+			UpdateButtonPromptState( menu, element, controller, Enum.LUIButton[0xC083113BC81F23F] )
 			return true
 		else
 			
 		end
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		if HasListAction( f5_arg0, f5_arg2 ) and IsElementPropertyValue( f5_arg0, "isHidden", true ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x3F20759C07A14C2, nil, nil )
+	end, function ( element, menu, controller )
+		if HasListAction( element, controller ) and IsElementPropertyValue( element, "isHidden", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/show", nil, nil )
 			return true
-		elseif HasListAction( f5_arg0, f5_arg2 ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x7A4FDABE47B6C3F, nil, nil )
+		elseif HasListAction( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/hide", nil, nil )
 			return true
 		else
 			return false

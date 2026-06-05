@@ -72,11 +72,11 @@ LUI.createMenu.EntitlementPopupEreg = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( CommonCheckbox, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
+	f1_local1:AddButtonCallbackFunction( CommonCheckbox, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
 		ToggleGlobalModelValueBoolean( "EntitlementAcknowledged" )
 		return true
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "MOUSE1" )
 		return false
 	end, false )
 	self:addElement( CommonCheckbox )
@@ -122,18 +122,18 @@ LUI.createMenu.EntitlementPopupEreg = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f10_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
+	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if CoD.ModelUtility.IsGlobalModelValueTrue( "EntitlementAcknowledged" ) then
 			SetGlobalModelValueFalse( "EntitlementAcknowledged" )
-			CoD.EntitlementUtility.SetCurrentEntitlementViewed( f11_arg2 )
-			CoD.EntitlementUtility.GoBackAndOpenEntitlementPopups( self, f11_arg2 )
+			CoD.EntitlementUtility.SetCurrentEntitlementViewed( controller )
+			CoD.EntitlementUtility.GoBackAndOpenEntitlementPopups( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
+	end, function ( element, menu, controller )
 		if CoD.ModelUtility.IsGlobalModelValueTrue( "EntitlementAcknowledged" ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -241,24 +241,24 @@ LUI.createMenu.EntitlementPopupEreg = function ( f1_arg0, f1_arg1 )
 	f1_local16( f1_local15, f1_local17.EntitlementAcknowledged, function ( f16_arg0, f16_arg1 )
 		CoD.Menu.UpdateButtonShownState( f16_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		if not IsPC() and CoD.BaseUtility.IsButtonHoldFinished( f17_arg3 ) then
-			CoD.EntitlementUtility.SetCurrentEntitlementViewed( f17_arg2 )
-			CoD.EntitlementUtility.GoBackAndOpenEntitlementPopups( self, f17_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not IsPC() and CoD.BaseUtility.IsButtonHoldFinished( model ) then
+			CoD.EntitlementUtility.SetCurrentEntitlementViewed( controller )
+			CoD.EntitlementUtility.GoBackAndOpenEntitlementPopups( self, controller )
 			return true
-		elseif IsPC() and CoD.ModelUtility.IsGlobalModelValueTrue( "EntitlementAcknowledged" ) and not CoD.BaseUtility.IsButtonHoldFinished( f17_arg3 ) then
-			CoD.EntitlementUtility.SetCurrentEntitlementViewed( f17_arg2 )
-			CoD.EntitlementUtility.GoBackAndOpenEntitlementPopups( self, f17_arg2 )
+		elseif IsPC() and CoD.ModelUtility.IsGlobalModelValueTrue( "EntitlementAcknowledged" ) and not CoD.BaseUtility.IsButtonHoldFinished( model ) then
+			CoD.EntitlementUtility.SetCurrentEntitlementViewed( controller )
+			CoD.EntitlementUtility.GoBackAndOpenEntitlementPopups( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
+	end, function ( element, menu, controller )
 		if not IsPC() then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x5BE4A02B20F31F1, Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 750 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/ok", Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 750 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		elseif IsPC() and CoD.ModelUtility.IsGlobalModelValueTrue( "EntitlementAcknowledged" ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x5BE4A02B20F31F1, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/ok", nil, nil )
 			return true
 		else
 			return false

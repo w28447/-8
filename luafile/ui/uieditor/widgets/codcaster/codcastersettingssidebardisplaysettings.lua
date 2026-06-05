@@ -25,13 +25,13 @@ CoD.CodCasterSettingsSideBarDisplaySettings.new = function ( f1_arg0, f1_arg1, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( OptionsListPC, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
+	f1_arg0:AddButtonCallbackFunction( OptionsListPC, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
 		CoD.CodCasterUtility.SetFocusToFirstSelectableItemInButtonList( self, self.OptionsListPC )
-		SetControllerModelValue( f3_arg2, "customGamesEdit", false )
-		SetFocusToElement( self, "OptionCategoryListPC", f3_arg2 )
+		SetControllerModelValue( controller, "customGamesEdit", false )
+		SetFocusToElement( self, "OptionCategoryListPC", controller )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 		return true
 	end, false )
 	self:addElement( OptionsListPC )
@@ -67,18 +67,18 @@ CoD.CodCasterSettingsSideBarDisplaySettings.new = function ( f1_arg0, f1_arg1, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( OptionCategoryListPC, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if not IsMouse( f8_arg2 ) then
-			SetControllerModelValue( f8_arg2, "customGamesEdit", true )
-			SetElementState( self, f8_arg0, f8_arg2, "Selected" )
-			SetFocusToElement( self, "OptionsListPC", f8_arg2 )
+	f1_arg0:AddButtonCallbackFunction( OptionCategoryListPC, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not IsMouse( controller ) then
+			SetControllerModelValue( controller, "customGamesEdit", true )
+			SetElementState( self, element, controller, "Selected" )
+			SetFocusToElement( self, "OptionsListPC", controller )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if not IsMouse( f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not IsMouse( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -131,23 +131,23 @@ CoD.CodCasterSettingsSideBarDisplaySettings.new = function ( f1_arg0, f1_arg1, f
 			modelName = "customGamesEdit"
 		} )
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "Y", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		if not IsRepeatButtonPress( f15_arg3 ) then
-			ToggleControllerModelValueNumber( f15_arg2, "CodCaster.showSettingsSideBar" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "Y", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) then
+			ToggleControllerModelValueNumber( controller, "CodCaster.showSettingsSideBar" )
 			CoD.CodCasterUtility.SetFocusToFirstSelectableItemInButtonList( self, self.OptionsList )
-			SetFocusToElement( self, "OptionCategoryList", f15_arg2 )
+			SetFocusToElement( self, "OptionCategoryList", controller )
 			CoD.GridAndListUtility.SetFocusToFirstSelectableItem( self.OptionCategoryList )
-			MakeElementNotFocusable( self, "OptionsList", f15_arg2 )
-			SaveShoutcasterSettings( self, f15_arg0, f15_arg2 )
-			GoBack( self, f15_arg2 )
+			MakeElementNotFocusable( self, "OptionsList", controller )
+			SaveShoutcasterSettings( self, element, controller )
+			GoBack( self, controller )
 			SetLuiKeyCatcher( false )
 			return true
 		else
 			
 		end
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
+	end, function ( element, menu, controller )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "menu/back", nil, "Y" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "menu/back", nil, "Y" )
 			return true
 		else
 			return false

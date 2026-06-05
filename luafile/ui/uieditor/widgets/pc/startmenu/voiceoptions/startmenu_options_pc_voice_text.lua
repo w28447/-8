@@ -28,7 +28,7 @@ CoD.StartMenu_Options_PC_Voice_Text.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.textOptionsList = textOptionsList
 	
 	local ChannelText = LUI.UIText.new( 0, 0, 0, 750, 0, 0, 99, 144 )
-	ChannelText:setText( Engine[0xF9F1239CFD921FE]( 0x11E89D549AAECEF ) )
+	ChannelText:setText( Engine[0xF9F1239CFD921FE]( "platform/chat_channel_caps" ) )
 	ChannelText:setTTF( "default" )
 	ChannelText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	ChannelText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

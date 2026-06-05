@@ -26,7 +26,7 @@ CoD.SpecialistIssueEquipmentBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local TiledBGImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledBGImage:setAlpha( 0.2 )
-	TiledBGImage:setImage( RegisterImage( 0x30B91EC17967AF3 ) )
+	TiledBGImage:setImage( RegisterImage( "uie_ui_menu_cac_dot_pattern_bg01" ) )
 	TiledBGImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBGImage:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBGImage:setupNineSliceShader( 64, 64 )
@@ -64,7 +64,7 @@ CoD.SpecialistIssueEquipmentBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local TopBracket = LUI.UIImage.new( 0, 1, -2, 2, 0, 0, 0, 12 )
 	TopBracket:setAlpha( 0.5 )
 	TopBracket:setZRot( 180 )
-	TopBracket:setImage( RegisterImage( 0x55942079F1B70E6 ) )
+	TopBracket:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_bottom_line" ) )
 	TopBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	TopBracket:setShaderVector( 0, 0, 0, 0, 0 )
 	TopBracket:setupNineSliceShader( 120, 12 )
@@ -73,7 +73,7 @@ CoD.SpecialistIssueEquipmentBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local BottomBracket = LUI.UIImage.new( 0, 1, -2, 2, 1, 1, -12, 0 )
 	BottomBracket:setAlpha( 0.5 )
-	BottomBracket:setImage( RegisterImage( 0x55942079F1B70E6 ) )
+	BottomBracket:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_bottom_line" ) )
 	BottomBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BottomBracket:setShaderVector( 0, 0, 0, 0, 0 )
 	BottomBracket:setupNineSliceShader( 120, 12 )

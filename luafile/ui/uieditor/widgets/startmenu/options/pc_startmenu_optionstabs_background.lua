@@ -15,7 +15,7 @@ CoD.PC_StartMenu_OptionsTabs_Background.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local TabBottomLine = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 34, 38 )
 	TabBottomLine:setAlpha( 0.08 )
-	TabBottomLine:setImage( RegisterImage( 0x5526CF3733E24C4 ) )
+	TabBottomLine:setImage( RegisterImage( "uie_ui_menu_common_tab_line_bottom" ) )
 	self:addElement( TabBottomLine )
 	self.TabBottomLine = TabBottomLine
 	

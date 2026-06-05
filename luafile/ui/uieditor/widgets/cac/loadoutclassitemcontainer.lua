@@ -57,17 +57,17 @@ CoD.LoadoutClassItemContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		end
 		return f7_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( LoadoutClassItemContainerInternal, f1_arg1, Enum.LUIButton[0x6CE8023188D673F], "ui_copylayer", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if IsMouseOrKeyboard( f8_arg2 ) and IsInDefaultState( self ) then
-			CoD.GridAndListUtility.NavigateGridItem( self.VariantList, f8_arg2, true )
-			CoD.CACUtility.SetSignatureWeaponFromCAC( self.VariantList, f8_arg2, f8_arg1 )
+	f1_arg0:AddButtonCallbackFunction( LoadoutClassItemContainerInternal, f1_arg1, Enum.LUIButton[0x6CE8023188D673F], "ui_copylayer", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and IsInDefaultState( self ) then
+			CoD.GridAndListUtility.NavigateGridItem( self.VariantList, controller, true )
+			CoD.CACUtility.SetSignatureWeaponFromCAC( self.VariantList, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if IsMouseOrKeyboard( f9_arg2 ) and IsInDefaultState( self ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x6CE8023188D673F], 0x53D10BEF28D6E73, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_copylayer" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and IsInDefaultState( self ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x6CE8023188D673F], "menu/variants_caps", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_copylayer" )
 			return true
 		else
 			return false
@@ -104,33 +104,33 @@ CoD.LoadoutClassItemContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		f12_arg1.menu = f12_arg1.menu or f1_arg0
 		f1_arg0:updateElementState( self, f12_arg1 )
 	end )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "MWHEELUP", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		if not IsRepeatButtonPress( f13_arg3 ) then
-			CoD.GridAndListUtility.NavigateGridItem( self.VariantList, f13_arg2, false )
-			CoD.CACUtility.SetSignatureWeaponFromCAC( self.VariantList, f13_arg2, f13_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "MWHEELUP", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) then
+			CoD.GridAndListUtility.NavigateGridItem( self.VariantList, controller, false )
+			CoD.CACUtility.SetSignatureWeaponFromCAC( self.VariantList, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
+	end, function ( element, menu, controller )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x0, nil, "MWHEELUP" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "", nil, "MWHEELUP" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "MWHEELDOWN", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		if not IsRepeatButtonPress( f15_arg3 ) then
-			CoD.GridAndListUtility.NavigateGridItem( self.VariantList, f15_arg2, true )
-			CoD.CACUtility.SetSignatureWeaponFromCAC( self.VariantList, f15_arg2, f15_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "MWHEELDOWN", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) then
+			CoD.GridAndListUtility.NavigateGridItem( self.VariantList, controller, true )
+			CoD.CACUtility.SetSignatureWeaponFromCAC( self.VariantList, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
+	end, function ( element, menu, controller )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x0, nil, "MWHEELDOWN" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "", nil, "MWHEELDOWN" )
 			return false
 		else
 			return false

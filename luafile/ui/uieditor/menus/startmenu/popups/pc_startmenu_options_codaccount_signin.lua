@@ -63,17 +63,17 @@ LUI.createMenu.PC_StartMenu_Options_CoDAccount_SignIn = function ( f1_arg0, f1_a
 	self:addElement( PCStartMenuOptionsSignInForm )
 	self.PCStartMenuOptionsSignInForm = PCStartMenuOptionsSignInForm
 	
-	self:registerEventHandler( "list_item_gain_focus", function ( element, event )
+	self:registerEventHandler( "list_item_gain_focus", function ( self, event )
 		local f5_local0 = nil
-		CoD.CoDAccountUtility.OnSignInItemFocusChange( f1_local1, f1_arg0, element )
+		CoD.CoDAccountUtility.OnSignInItemFocusChange( f1_local1, f1_arg0, self )
 		return f5_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		GoBack( self, f6_arg2 )
-		CoD.CoDAccountUtility.ClearSignInEmailAndPasswordModels( f6_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
+		CoD.CoDAccountUtility.ClearSignInEmailAndPasswordModels( controller )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	self:subscribeToGlobalModel( f1_arg0, "UNOAccountInfo", "iTransactionResult", function ( model )

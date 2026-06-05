@@ -11,7 +11,7 @@ CoD.ChargerShot_Brackets.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	CornerBraquets:setRGB( 1, 0.85, 0.07 )
 	CornerBraquets:setAlpha( 0.5 )
 	CornerBraquets:setScale( 0.7, 0.7 )
-	CornerBraquets:setImage( RegisterImage( 0xC09C7BB9C696147 ) )
+	CornerBraquets:setImage( RegisterImage( "uie_t7_hud_chargeshot_braquets" ) )
 	self:addElement( CornerBraquets )
 	self.CornerBraquets = CornerBraquets
 	
@@ -20,7 +20,7 @@ CoD.ChargerShot_Brackets.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	CornerBraquets0:setAlpha( 0.5 )
 	CornerBraquets0:setZRot( -90 )
 	CornerBraquets0:setScale( 0.7, 0.7 )
-	CornerBraquets0:setImage( RegisterImage( 0xC09C7BB9C696147 ) )
+	CornerBraquets0:setImage( RegisterImage( "uie_t7_hud_chargeshot_braquets" ) )
 	self:addElement( CornerBraquets0 )
 	self.CornerBraquets0 = CornerBraquets0
 	
@@ -29,7 +29,7 @@ CoD.ChargerShot_Brackets.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	CornerBraquets1:setAlpha( 0.5 )
 	CornerBraquets1:setZRot( 90 )
 	CornerBraquets1:setScale( 0.7, 0.7 )
-	CornerBraquets1:setImage( RegisterImage( 0xC09C7BB9C696147 ) )
+	CornerBraquets1:setImage( RegisterImage( "uie_t7_hud_chargeshot_braquets" ) )
 	self:addElement( CornerBraquets1 )
 	self.CornerBraquets1 = CornerBraquets1
 	
@@ -38,7 +38,7 @@ CoD.ChargerShot_Brackets.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	CornerBraquets10:setAlpha( 0.5 )
 	CornerBraquets10:setZRot( 180 )
 	CornerBraquets10:setScale( 0.7, 0.7 )
-	CornerBraquets10:setImage( RegisterImage( 0xC09C7BB9C696147 ) )
+	CornerBraquets10:setImage( RegisterImage( "uie_t7_hud_chargeshot_braquets" ) )
 	self:addElement( CornerBraquets10 )
 	self.CornerBraquets10 = CornerBraquets10
 	

@@ -1,18 +1,18 @@
 require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_robber_laser" )
 
-CoD[0xC92A2CB5341FC62] = InheritFrom( LUI.UIElement )
-CoD[0xC92A2CB5341FC62].__defaultWidth = 960
-CoD[0xC92A2CB5341FC62].__defaultHeight = 240
-CoD[0xC92A2CB5341FC62].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_robbery = InheritFrom( LUI.UIElement )
+CoD.callingcards_robbery.__defaultWidth = 960
+CoD.callingcards_robbery.__defaultHeight = 240
+CoD.callingcards_robbery.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0xC92A2CB5341FC62] )
+	self:setClass( CoD.callingcards_robbery )
 	self.id = "CallingCards_Robbery"
 	self.soundSet = "none"
 	self.anyChildUsesUpdateState = true
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local background = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	background:setImage( RegisterImage( 0xFF789BBFBF58271 ) )
+	background:setImage( RegisterImage( "uie_ui_menu_callingcards_robbery_bg" ) )
 	self:addElement( background )
 	self.background = background
 	
@@ -22,7 +22,7 @@ CoD[0xC92A2CB5341FC62].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.Robber = Robber
 	
 	local Diamond = LUI.UIImage.new( 0, 0, 219, 563, 0, 0, 39, 263 )
-	Diamond:setImage( RegisterImage( 0xAFD1450994B7345 ) )
+	Diamond:setImage( RegisterImage( "uie_ui_menu_callingcards_robbery_jewel" ) )
 	self:addElement( Diamond )
 	self.Diamond = Diamond
 	
@@ -39,14 +39,14 @@ CoD[0xC92A2CB5341FC62].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0xC92A2CB5341FC62].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_robbery.__resetProperties = function ( f2_arg0 )
 	f2_arg0.uiiconcallingcardsrobberlaser:completeAnimation()
 	f2_arg0.Robber:completeAnimation()
 	f2_arg0.Robber:setTopBottom( 0, 0, -32, 232 )
 	f2_arg0.Robber:setZRot( 0 )
 end
 
-CoD[0xC92A2CB5341FC62].__clipsPerState = {
+CoD.callingcards_robbery.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -84,7 +84,7 @@ CoD[0xC92A2CB5341FC62].__clipsPerState = {
 		end
 	}
 }
-CoD[0xC92A2CB5341FC62].__onClose = function ( f7_arg0 )
+CoD.callingcards_robbery.__onClose = function ( f7_arg0 )
 	f7_arg0.uiiconcallingcardsrobberlaser:close()
 end
 

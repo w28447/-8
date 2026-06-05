@@ -17,7 +17,7 @@ CoD.RightStickPagination.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.RightLine = RightLine
 	
 	local RightStickNoArrows = LUI.UIImage.new( 0.5, 0.5, -12, 12, 0, 0, 4, 28 )
-	RightStickNoArrows:setImage( RegisterImage( 0x7101749410248E4 ) )
+	RightStickNoArrows:setImage( RegisterImage( "uie_t8_icons_controller_orbis_rs_no_arrows" ) )
 	self:addElement( RightStickNoArrows )
 	self.RightStickNoArrows = RightStickNoArrows
 	
@@ -31,7 +31,7 @@ CoD.RightStickPagination.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local ArrowLeft01 = LUI.UIImage.new( 0.5, 0.5, -21, -9, 0, 0, 2.5, 26.5 )
 	ArrowLeft01:setAlpha( 0 )
-	ArrowLeft01:setImage( RegisterImage( 0xDFF31298BAE91D7 ) )
+	ArrowLeft01:setImage( RegisterImage( "uie_t8_icons_controller_orbis_rs_arrow" ) )
 	ArrowLeft01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	ArrowLeft01:setShaderVector( 0, 0, 1, 0, 0 )
 	ArrowLeft01:setShaderVector( 1, 0, 0, 0, 0 )
@@ -44,7 +44,7 @@ CoD.RightStickPagination.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local ArrowRight01 = LUI.UIImage.new( 0.5, 0.5, 7, 19, 0, 0, 2.5, 26.5 )
 	ArrowRight01:setAlpha( 0 )
 	ArrowRight01:setYRot( 180 )
-	ArrowRight01:setImage( RegisterImage( 0xDFF31298BAE91D7 ) )
+	ArrowRight01:setImage( RegisterImage( "uie_t8_icons_controller_orbis_rs_arrow" ) )
 	ArrowRight01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	ArrowRight01:setShaderVector( 0, 0, 1, 0, 0 )
 	ArrowRight01:setShaderVector( 1, 0, 0, 0, 0 )

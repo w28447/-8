@@ -36,7 +36,7 @@ CoD.AAREchelon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local GridBg = LUI.UIImage.new( 0, 0, 0, 400, 0, 0, 0, 400 )
 	GridBg:setAlpha( 0.02 )
-	GridBg:setImage( RegisterImage( 0x6975DA716B3A3FD ) )
+	GridBg:setImage( RegisterImage( "uie_ui_menu_aar_info_grid_sub" ) )
 	GridBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	GridBg:setShaderVector( 0, 0, 0, 0, 0 )
 	GridBg:setupNineSliceShader( 292, 236 )
@@ -56,7 +56,7 @@ CoD.AAREchelon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	local Flare = LUI.UIImage.new( 0.5, 0.5, -350, 350, 0.5, 0.5, -96, 84 )
 	Flare:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	Flare:setAlpha( 0 )
-	Flare:setImage( RegisterImage( 0xC4CCD81B90B0241 ) )
+	Flare:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
 	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Flare:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Flare )
@@ -82,7 +82,7 @@ CoD.AAREchelon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local infoBracketTop = LUI.UIImage.new( 0, 0, -1, 401, 0, 0, -3, 29 )
 	infoBracketTop:setAlpha( 0.6 )
-	infoBracketTop:setImage( RegisterImage( 0xCAD52FFFB7C32C1 ) )
+	infoBracketTop:setImage( RegisterImage( "uie_ui_menu_aar_common_bracket" ) )
 	infoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketTop:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketTop:setupNineSliceShader( 10, 16 )
@@ -91,14 +91,14 @@ CoD.AAREchelon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local BotRewardFrame = LUI.UIImage.new( 0, 0, -6, 406, 0, 0, 398, 422 )
 	BotRewardFrame:setAlpha( 0 )
-	BotRewardFrame:setImage( RegisterImage( 0x5AB70AD37048D4B ) )
+	BotRewardFrame:setImage( RegisterImage( "uie_ui_menu_aar_reward_botbar" ) )
 	BotRewardFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BotRewardFrame )
 	self.BotRewardFrame = BotRewardFrame
 	
 	local BotRewardFui = LUI.UIImage.new( 0, 0, 3, 119, 0, 0, 404, 416 )
 	BotRewardFui:setAlpha( 0 )
-	BotRewardFui:setImage( RegisterImage( 0x464863B2242CD47 ) )
+	BotRewardFui:setImage( RegisterImage( "uie_ui_menu_aar_common_reward_fui" ) )
 	BotRewardFui:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	BotRewardFui:setShaderVector( 0, 0, 1, 0, 0 )
 	BotRewardFui:setShaderVector( 1, 0, 0, 0, 0 )

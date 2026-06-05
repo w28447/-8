@@ -17,7 +17,7 @@ CoD.KIllcamTeamPanelRight.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local CallingCardHighlightRigh2 = LUI.UIImage.new( 0, 0, 0, 386, 0, 0, 0, 68 )
 	CallingCardHighlightRigh2:setRGB( ColorSet.Client_Self.r, ColorSet.Client_Self.g, ColorSet.Client_Self.b )
-	CallingCardHighlightRigh2:setImage( RegisterImage( 0x84A15B7F82C942C ) )
+	CallingCardHighlightRigh2:setImage( RegisterImage( "uie_ui_hud_highlight" ) )
 	self:addElement( CallingCardHighlightRigh2 )
 	self.CallingCardHighlightRigh2 = CallingCardHighlightRigh2
 	
@@ -32,7 +32,7 @@ CoD.KIllcamTeamPanelRight.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local CallingcardHighlightRight1 = LUI.UIImage.new( 0, 0, 8, 394, 0, 0, 0.5, 68.5 )
 	CallingcardHighlightRight1:setRGB( ColorSet.Client_Self.r, ColorSet.Client_Self.g, ColorSet.Client_Self.b )
 	CallingcardHighlightRight1:setAlpha( 0.35 )
-	CallingcardHighlightRight1:setImage( RegisterImage( 0x277059AB3BFAEFA ) )
+	CallingcardHighlightRight1:setImage( RegisterImage( "uie_ui_hud_highlight2" ) )
 	CallingcardHighlightRight1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CallingcardHighlightRight1 )
 	self.CallingcardHighlightRight1 = CallingcardHighlightRight1

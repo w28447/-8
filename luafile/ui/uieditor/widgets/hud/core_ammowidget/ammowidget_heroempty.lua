@@ -38,7 +38,7 @@ CoD.AmmoWidget_HeroEmpty.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	Inactive:setRGB( 0.88, 0.07, 0.07 )
 	Inactive:setAlpha( 0.25 )
 	Inactive:setScale( 1.6, 1.6 )
-	Inactive:setImage( RegisterImage( 0xCFDBE48B7A82C2C ) )
+	Inactive:setImage( RegisterImage( "uie_ui_hud_core_hero_widget_unavailable" ) )
 	Inactive:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Inactive )
 	self.Inactive = Inactive

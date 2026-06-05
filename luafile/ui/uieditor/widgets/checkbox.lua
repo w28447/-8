@@ -31,13 +31,13 @@ CoD.checkbox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_ar
 	
 	local CheckboxBkg = LUI.UIImage.new( 0, 0, 22, 50, 0, 0, 13, 39 )
 	CheckboxBkg:setAlpha( 0 )
-	CheckboxBkg:setImage( RegisterImage( 0x8598719B0D5778E ) )
+	CheckboxBkg:setImage( RegisterImage( "uie_t7_menu_cacselection_checkbox_empty" ) )
 	self:addElement( CheckboxBkg )
 	self.CheckboxBkg = CheckboxBkg
 	
 	local checkboxCheck = LUI.UIImage.new( 0, 0, 22, 50, 0, 0, 13, 39 )
 	checkboxCheck:setRGB( 1, 0.45, 0 )
-	checkboxCheck:setImage( RegisterImage( 0x7A44A1F2889C2B8 ) )
+	checkboxCheck:setImage( RegisterImage( "uie_t7_menu_cacselection_checkbox" ) )
 	self:addElement( checkboxCheck )
 	self.checkboxCheck = checkboxCheck
 	

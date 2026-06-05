@@ -13,7 +13,7 @@ CoD.CategoryHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local header = LUI.UIText.new( 0, 0, 0, 75, 0.5, 0.5, -8, 8 )
 	header:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
-	header:setText( Engine[0xF9F1239CFD921FE]( 0x63E51BFF17859F1 ) )
+	header:setText( Engine[0xF9F1239CFD921FE]( "mpui/primary_caps" ) )
 	header:setTTF( "ttmussels_regular" )
 	header:setLetterSpacing( 3.5 )
 	header:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

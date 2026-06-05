@@ -1,4 +1,4 @@
-require( "x64:cd32d002172e0ec" )
+require( "ui/uieditor/widgets/notifications/xp/doublexpiconsinternal" )
 
 CoD.DoubleXPIconsRightAligned = InheritFrom( LUI.UIElement )
 CoD.DoubleXPIconsRightAligned.__defaultWidth = 216

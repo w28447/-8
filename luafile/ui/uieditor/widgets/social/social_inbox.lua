@@ -44,18 +44,18 @@ CoD.Social_Inbox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ClanInbox, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		CoD.ClanUtility.ClanAcceptCancelInboxProposal( self, f3_arg0, f3_arg2, "", f3_arg1 )
+	f1_arg0:AddButtonCallbackFunction( ClanInbox, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.ClanUtility.ClanAcceptCancelInboxProposal( self, element, controller, "", menu )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( ClanInbox )
 	self.ClanInbox = ClanInbox
 	
 	local FriendsInClan = LUI.UIText.new( 0, 0, 1012, 1482, 0, 0, 592.5, 617.5 )
-	FriendsInClan:setText( Engine[0xF9F1239CFD921FE]( 0x30298F969E7C848 ) )
+	FriendsInClan:setText( Engine[0xF9F1239CFD921FE]( "clan/friends_in_clan" ) )
 	FriendsInClan:setTTF( "default" )
 	FriendsInClan:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	FriendsInClan:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -70,7 +70,7 @@ CoD.Social_Inbox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	self.PlayingOnlineValue = PlayingOnlineValue
 	
 	local PlayingOnline = LUI.UIText.new( 0, 0, 1247, 1423, 0, 0, 503.5, 528.5 )
-	PlayingOnline:setText( LocalizeToUpperString( 0x3F53AD364B37C20 ) )
+	PlayingOnline:setText( LocalizeToUpperString( "clan/playing" ) )
 	PlayingOnline:setTTF( "default" )
 	PlayingOnline:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	PlayingOnline:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -85,7 +85,7 @@ CoD.Social_Inbox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	self.ClanMemberCountValue = ClanMemberCountValue
 	
 	local ClanMemberCount = LUI.UIText.new( 0, 0, 1032, 1210, 0, 0, 500.5, 525.5 )
-	ClanMemberCount:setText( LocalizeToUpperString( 0xE15BA3CAE4EB429 ) )
+	ClanMemberCount:setText( LocalizeToUpperString( "clan/members" ) )
 	ClanMemberCount:setTTF( "default" )
 	ClanMemberCount:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	ClanMemberCount:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -135,7 +135,7 @@ CoD.Social_Inbox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local Title = LUI.UIText.new( 0, 0, 167, 367, 0, 0, 140, 173 )
 	Title:setAlpha( 0.8 )
-	Title:setText( Engine[0xF9F1239CFD921FE]( 0x91511506A6D8036 ) )
+	Title:setText( Engine[0xF9F1239CFD921FE]( "clan/inbox" ) )
 	Title:setTTF( "ttmussels_regular" )
 	Title:setLetterSpacing( 6 )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -143,7 +143,7 @@ CoD.Social_Inbox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	self.Title = Title
 	
 	local Loading = LUI.UIText.new( 0, 0, 288, 771, 0, 0, 551.5, 633.5 )
-	Loading:setText( LocalizeToUpperString( 0xC55F725E272FA ) )
+	Loading:setText( LocalizeToUpperString( "clan/loading" ) )
 	Loading:setTTF( "default" )
 	Loading:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Loading:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

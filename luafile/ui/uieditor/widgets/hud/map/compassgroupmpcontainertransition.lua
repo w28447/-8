@@ -18,8 +18,8 @@ CoD.CompassGroupMPContainerTransition.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local CompassHacked = LUI.UIImage.new( 0, 0, 17, 333, 0, 0, 19, 331 )
 	CompassHacked:setAlpha( 0 )
-	CompassHacked:setImage( RegisterImage( 0x330E5EA57874A60 ) )
-	CompassHacked:setMaterial( LUI.UIImage.GetCachedMaterial( 0xC284ECCBDADEF0B ) )
+	CompassHacked:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_compass" ) )
+	CompassHacked:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_emp" ) )
 	CompassHacked:setShaderVector( 0, 50, 0, 0, 0 )
 	CompassHacked:setShaderVector( 1, 1, 0, 0, 0 )
 	CompassHacked:setShaderVector( 2, 1, 0, 0, 0 )

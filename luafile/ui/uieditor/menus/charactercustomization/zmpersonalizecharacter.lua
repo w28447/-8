@@ -26,7 +26,7 @@ LUI.createMenu.ZMPersonalizeCharacter = function ( f1_arg0, f1_arg1 )
 	self.XCamMouseControl = XCamMouseControl
 	
 	local GenericMenuFrame = CoD.GenericMenuFrame.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	GenericMenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x46EFDF3FB2763B5 ) )
+	GenericMenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/personalization" ) )
 	GenericMenuFrame:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -104,48 +104,48 @@ LUI.createMenu.ZMPersonalizeCharacter = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0xC083113BC81F23F] )
 		return f11_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( outfits, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f12_arg0, f12_arg2, "owned" ) then
+	f1_local1:AddButtonCallbackFunction( outfits, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) then
 			PlaySoundAlias( "uin_equipment_add" )
-			CoD.PlayerRoleUtility.EquipOutfitItem( f12_arg1, f12_arg2, f12_arg0 )
+			CoD.PlayerRoleUtility.EquipOutfitItem( menu, controller, element )
 			return true
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "owned" ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xBDF67DCF97EBC09, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/equip", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( outfits, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_remove", function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f14_arg0, f14_arg2, "itemType", Enum.CharacterItemType[0x922FE5C41D9EE8B] ) and CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex( f14_arg0, f14_arg2 ) and IsGamepad( f14_arg2 ) then
+	f1_local1:AddButtonCallbackFunction( outfits, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_remove", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "itemType", Enum.CharacterItemType[0x922FE5C41D9EE8B] ) and CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex( element, controller ) and IsGamepad( controller ) then
 			PlaySoundAlias( "uin_equipment_remove" )
-			CoD.PlayerRoleUtility.UnequipOutfitItem( f14_arg1, f14_arg2, f14_arg0 )
-			CoD.PlayerRoleUtility.ResetPersonalizeSpecialistOutfitItemType( f14_arg2, f14_arg0 )
+			CoD.PlayerRoleUtility.UnequipOutfitItem( menu, controller, element )
+			CoD.PlayerRoleUtility.ResetPersonalizeSpecialistOutfitItemType( controller, element )
 			return true
-		elseif IsMouseOrKeyboard( f14_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f14_arg0, f14_arg2, "itemType", Enum.CharacterItemType[0x922FE5C41D9EE8B] ) and CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex( f14_arg0, f14_arg2 ) then
+		elseif IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "itemType", Enum.CharacterItemType[0x922FE5C41D9EE8B] ) and CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex( element, controller ) then
 			PlaySoundAlias( "uin_equipment_remove" )
-			CoD.PlayerRoleUtility.UnequipOutfitItem( f14_arg1, f14_arg2, f14_arg0 )
-			CoD.PlayerRoleUtility.ResetPersonalizeSpecialistOutfitItemType( f14_arg2, f14_arg0 )
+			CoD.PlayerRoleUtility.UnequipOutfitItem( menu, controller, element )
+			CoD.PlayerRoleUtility.ResetPersonalizeSpecialistOutfitItemType( controller, element )
 			return true
 		else
 			
 		end
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f15_arg0, f15_arg2, "itemType", Enum.CharacterItemType[0x922FE5C41D9EE8B] ) and CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex( f15_arg0, f15_arg2 ) and IsGamepad( f15_arg2 ) then
-			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, nil, "ui_remove" )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "itemType", Enum.CharacterItemType[0x922FE5C41D9EE8B] ) and CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex( element, controller ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", nil, "ui_remove" )
 			return true
-		elseif IsMouseOrKeyboard( f15_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f15_arg0, f15_arg2, "itemType", Enum.CharacterItemType[0x922FE5C41D9EE8B] ) and CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex( f15_arg0, f15_arg2 ) then
-			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+		elseif IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "itemType", Enum.CharacterItemType[0x922FE5C41D9EE8B] ) and CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	outfits:AddContextualMenuAction( f1_local1, f1_arg0, 0x679ACA6FFC6C8F3, function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
+	outfits:AddContextualMenuAction( f1_local1, f1_arg0, "menu/remove", function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f16_arg0, f16_arg2, "itemType", Enum.CharacterItemType[0x922FE5C41D9EE8B] ) and CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex( f16_arg0, f16_arg2 ) then
 			return function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
 				PlaySoundAlias( "uin_equipment_remove" )
@@ -203,18 +203,18 @@ LUI.createMenu.ZMPersonalizeCharacter = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f22_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( themes, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
-		if IsMouseOrKeyboard( f23_arg2 ) then
-			SetCurrentElementAsActive( self, f23_arg0, f23_arg2 )
-			CoD.PlayerRoleUtility.EquipOutfit( f23_arg1, f23_arg2, f23_arg0 )
-			CoD.PlayerRoleUtility.UpdatePersonalizeSpecialistOutfit( f23_arg2, f23_arg0 )
+	f1_local1:AddButtonCallbackFunction( themes, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) then
+			SetCurrentElementAsActive( self, element, controller )
+			CoD.PlayerRoleUtility.EquipOutfit( menu, controller, element )
+			CoD.PlayerRoleUtility.UpdatePersonalizeSpecialistOutfit( controller, element )
 			return true
 		else
-			CoD.PlayerRoleUtility.EquipOutfit( f23_arg1, f23_arg2, f23_arg0 )
+			CoD.PlayerRoleUtility.EquipOutfit( menu, controller, element )
 			return true
 		end
-	end, function ( f24_arg0, f24_arg1, f24_arg2 )
-		CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( themes )
@@ -243,11 +243,11 @@ LUI.createMenu.ZMPersonalizeCharacter = function ( f1_arg0, f1_arg1 )
 			outfits:setDataSource( f26_local0 )
 		end
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3 )
-		GoBack( self, f27_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f28_arg0, f28_arg1, f28_arg2 )
-		CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

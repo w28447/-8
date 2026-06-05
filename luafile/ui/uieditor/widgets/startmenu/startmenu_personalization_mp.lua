@@ -38,7 +38,7 @@ CoD.StartMenu_Personalization_MP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.CommonInformationFrame = CommonInformationFrame
 	
 	local equipment = CoD.HubEquipmentItem.new( f1_arg0, f1_arg1, 0.5, 0.5, 582, 782, 0.5, 0.5, -100, 246 )
-	equipment.categoryHeader:setText( LocalizeToUpperString( 0x759164343B5C489 ) )
+	equipment.categoryHeader:setText( LocalizeToUpperString( "weapon/special_issue" ) )
 	self:addElement( equipment )
 	self.equipment = equipment
 	
@@ -90,55 +90,55 @@ CoD.StartMenu_Personalization_MP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0xC083113BC81F23F] )
 		return f7_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( specialists, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f8_arg0, f8_arg2, "isBMLocked" ) then
+	f1_arg0:AddButtonCallbackFunction( specialists, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isBMLocked" ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			OpenOverlay( self, "PersonalizeCharacter", f8_arg2, {
-				model = f8_arg0:getModel(),
+			OpenOverlay( self, "PersonalizeCharacter", controller, {
+				model = element:getModel(),
 				properties = {
-					_sessionMode = f8_arg1._sessionMode,
-					_storageLoadoutBuffer = f8_arg1._storageLoadoutBuffer
+					_sessionMode = menu._sessionMode,
+					_storageLoadoutBuffer = menu._storageLoadoutBuffer
 				}
 			} )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f9_arg0, f9_arg2, "isBMLocked" ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isBMLocked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( specialists, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_1", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		if not CoD.PlayerRoleUtility.IsSelectedShowcaseCharacter( f10_arg0, f10_arg2 ) and CoD.PlayerRoleUtility.CanSetAsShowcaseCharacter( f10_arg2, f10_arg0 ) and IsGamepad( f10_arg2 ) then
-			CoD.PlayerRoleUtility.SetAsSelectedShowcaseCharacter( f10_arg0, f10_arg2 )
-			UpdateSelfElementState( f10_arg1, self.showcaseCheckbox, f10_arg2 )
+	f1_arg0:AddButtonCallbackFunction( specialists, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_1", function ( element, menu, controller, model )
+		if not CoD.PlayerRoleUtility.IsSelectedShowcaseCharacter( element, controller ) and CoD.PlayerRoleUtility.CanSetAsShowcaseCharacter( controller, element ) and IsGamepad( controller ) then
+			CoD.PlayerRoleUtility.SetAsSelectedShowcaseCharacter( element, controller )
+			UpdateSelfElementState( menu, self.showcaseCheckbox, controller )
 			PlaySoundAlias( "uin_start_char_select" )
 			return true
-		elseif not CoD.PlayerRoleUtility.IsSelectedShowcaseCharacter( f10_arg0, f10_arg2 ) and IsMouseOrKeyboard( f10_arg2 ) and CoD.PlayerRoleUtility.CanSetAsShowcaseCharacter( f10_arg2, f10_arg0 ) then
-			CoD.PlayerRoleUtility.SetAsSelectedShowcaseCharacter( f10_arg0, f10_arg2 )
-			UpdateSelfElementState( f10_arg1, self.showcaseCheckbox, f10_arg2 )
+		elseif not CoD.PlayerRoleUtility.IsSelectedShowcaseCharacter( element, controller ) and IsMouseOrKeyboard( controller ) and CoD.PlayerRoleUtility.CanSetAsShowcaseCharacter( controller, element ) then
+			CoD.PlayerRoleUtility.SetAsSelectedShowcaseCharacter( element, controller )
+			UpdateSelfElementState( menu, self.showcaseCheckbox, controller )
 			PlaySoundAlias( "uin_start_char_select" )
-			UpdateButtonPromptState( f10_arg1, f10_arg0, f10_arg2, Enum.LUIButton[0xC083113BC81F23F] )
+			UpdateButtonPromptState( menu, element, controller, Enum.LUIButton[0xC083113BC81F23F] )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		if not CoD.PlayerRoleUtility.IsSelectedShowcaseCharacter( f11_arg0, f11_arg2 ) and CoD.PlayerRoleUtility.CanSetAsShowcaseCharacter( f11_arg2, f11_arg0 ) and IsGamepad( f11_arg2 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if not CoD.PlayerRoleUtility.IsSelectedShowcaseCharacter( element, controller ) and CoD.PlayerRoleUtility.CanSetAsShowcaseCharacter( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, "ui_contextual_1" )
 			return false
-		elseif not CoD.PlayerRoleUtility.IsSelectedShowcaseCharacter( f11_arg0, f11_arg2 ) and IsMouseOrKeyboard( f11_arg2 ) and CoD.PlayerRoleUtility.CanSetAsShowcaseCharacter( f11_arg2, f11_arg0 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xE14BE8E7A50BA2, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
+		elseif not CoD.PlayerRoleUtility.IsSelectedShowcaseCharacter( element, controller ) and IsMouseOrKeyboard( controller ) and CoD.PlayerRoleUtility.CanSetAsShowcaseCharacter( controller, element ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/showcase_character", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	specialists:AddContextualMenuAction( f1_arg0, f1_arg1, 0xE14BE8E7A50BA2, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
+	specialists:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/showcase_character", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
 		if IsMultiplayer() and not IsGameTypeCombatTraining() and not CoD.PlayerRoleUtility.IsSelectedShowcaseCharacter( f12_arg0, f12_arg2 ) and CoD.PlayerRoleUtility.CanSetAsShowcaseCharacter( f12_arg2, f12_arg0 ) then
 			return function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
 				CoD.PlayerRoleUtility.SetAsSelectedShowcaseCharacter( f13_arg0, f13_arg2 )
@@ -243,7 +243,7 @@ CoD.StartMenu_Personalization_MP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 			modelName = "currentShowcasedCharacterIndex"
 		} )
 	end, false )
-	showcaseCheckbox.label:setText( Engine[0xF9F1239CFD921FE]( 0xE14BE8E7A50BA2 ) )
+	showcaseCheckbox.label:setText( Engine[0xF9F1239CFD921FE]( "menu/showcase_character" ) )
 	self:addElement( showcaseCheckbox )
 	self.showcaseCheckbox = showcaseCheckbox
 	
@@ -376,17 +376,17 @@ CoD.StartMenu_Personalization_MP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	f1_local15( f1_local14, f1_local16.breadcrumbCount, function ( f38_arg0, f38_arg1 )
 		CoD.Menu.UpdateButtonShownState( f38_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0x29E5695FF1401AD] )
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x29E5695FF1401AD], "ui_contextual_2", function ( f39_arg0, f39_arg1, f39_arg2, f39_arg3 )
-		if CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f39_arg2, "CharacterBreadcrumbs", "breadcrumbCount", 0 ) and not IsPC() then
-			CoD.BreadcrumbUtility.ClearAllPersonalizationBreadcrumbs( f39_arg1, f39_arg2 )
-			UpdateElementState( self, "specialists", f39_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x29E5695FF1401AD], "ui_contextual_2", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "CharacterBreadcrumbs", "breadcrumbCount", 0 ) and not IsPC() then
+			CoD.BreadcrumbUtility.ClearAllPersonalizationBreadcrumbs( menu, controller )
+			UpdateElementState( self, "specialists", controller )
 			return true
 		else
 			
 		end
-	end, function ( f40_arg0, f40_arg1, f40_arg2 )
-		if CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f40_arg2, "CharacterBreadcrumbs", "breadcrumbCount", 0 ) and not IsPC() then
-			CoD.Menu.SetButtonLabel( f40_arg1, Enum.LUIButton[0x29E5695FF1401AD], 0x5619D8212EDA599, nil, "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "CharacterBreadcrumbs", "breadcrumbCount", 0 ) and not IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x29E5695FF1401AD], 0x5619D8212EDA599, nil, "ui_contextual_2" )
 			return true
 		else
 			return false

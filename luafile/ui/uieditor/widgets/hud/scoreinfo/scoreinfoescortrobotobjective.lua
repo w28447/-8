@@ -71,7 +71,7 @@ CoD.ScoreInfoEscortRobotObjective.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.WaypointCenter = WaypointCenter
 	
 	local WaypointCenterCodcaster = LUI.UIImage.new( 0, 0, 27, 49, 0, 0, 28, 50 )
-	WaypointCenterCodcaster:setImage( RegisterImage( 0x55D86A928138A5C ) )
+	WaypointCenterCodcaster:setImage( RegisterImage( "uie_t7_hud_waypoints_baseglow" ) )
 	WaypointCenterCodcaster:linkToElementModel( self, "color", true, function ( model )
 		local f8_local0 = model:get()
 		if f8_local0 ~= nil then

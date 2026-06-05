@@ -29,9 +29,9 @@ CoD.vhud_agr_NotificationBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local text = LUI.UIText.new( 0.5, 0.5, -150, 150, 0.5, 0.5, -12, 12 )
 	text:setRGB( 0.49, 1, 0.74 )
-	text:setText( Engine[0xF9F1239CFD921FE]( 0xFA90E68B570AF69 ) )
+	text:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_rpm" ) )
 	text:setTTF( "default" )
-	text:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD756CD9A5F1F1B4 ) )
+	text:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration_cheap_blur" ) )
 	text:setShaderVector( 0, 0, 1, 0, 0 )
 	text:setShaderVector( 1, 0, 0, 0, 0 )
 	text:setShaderVector( 2, 0, 0, 0, 0 )

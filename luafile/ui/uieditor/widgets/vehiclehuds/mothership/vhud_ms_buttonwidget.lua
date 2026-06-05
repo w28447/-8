@@ -43,7 +43,7 @@ CoD.vhud_ms_ButtonWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local button0 = LUI.UIImage.new( 0.5, 0.5, -20, 21, 0.5, 0.5, -16, 23 )
 	button0:setAlpha( 0.1 )
-	button0:setMaterial( LUI.UIImage.GetCachedMaterial( 0x5D13CDAD1938D85 ) )
+	button0:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines_add" ) )
 	button0:setShaderVector( 0, 2.91, 0, 0, 0 )
 	button0:setShaderVector( 1, 1, 0, 0, 0 )
 	button0:setShaderVector( 2, 0.03, 0, 0, 0 )
@@ -53,7 +53,7 @@ CoD.vhud_ms_ButtonWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local button1 = LUI.UIImage.new( 0.5, 0.5, -20, 21, 0.5, 0.5, -17, 22 )
 	button1:setAlpha( 0.15 )
 	button1:setZoom( 15 )
-	button1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x655565C7B387234 ) )
+	button1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_multiply" ) )
 	self:addElement( button1 )
 	self.button1 = button1
 	

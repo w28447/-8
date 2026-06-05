@@ -17,7 +17,7 @@ CoD.AARSingleStat.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	local StatLabel = LUI.UIText.new( 0, 0, 17.5, 225.5, 0, 0, 12, 33 )
 	StatLabel:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
 	StatLabel:setAlpha( 0.2 )
-	StatLabel:setText( Engine[0xF9F1239CFD921FE]( 0xC4B84A4968AAC62 ) )
+	StatLabel:setText( Engine[0xF9F1239CFD921FE]( "aar/damage_done" ) )
 	StatLabel:setTTF( "dinnext_regular" )
 	StatLabel:setLetterSpacing( 2 )
 	StatLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

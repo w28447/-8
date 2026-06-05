@@ -22,12 +22,12 @@ CoD.Target.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5
 	
 	local iconshadow = LUI.UIImage.new( 0.5, 0.5, -114, 66, 0.5, 0.5, -103, 95 )
 	iconshadow:setRGB( 0, 0, 0 )
-	iconshadow:setImage( RegisterImage( 0x1EB601845E53335 ) )
+	iconshadow:setImage( RegisterImage( "uie_t7_hud_rocketlauncher_targetreticle" ) )
 	self:addElement( iconshadow )
 	self.iconshadow = iconshadow
 	
 	local icon = LUI.UIImage.new( 0.5, 0.5, -114, 66, 0.5, 0.5, -103, 95 )
-	icon:setImage( RegisterImage( 0x1EB601845E53335 ) )
+	icon:setImage( RegisterImage( "uie_t7_hud_rocketlauncher_targetreticle" ) )
 	self:addElement( icon )
 	self.icon = icon
 	

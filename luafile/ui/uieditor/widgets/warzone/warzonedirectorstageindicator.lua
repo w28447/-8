@@ -26,7 +26,7 @@ CoD.WarzoneDirectorStageIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local led = LUI.UIImage.new( 0, 0, 2, 294, 0, 0, 4.5, 44.5 )
 	led:setAlpha( 0.02 )
-	led:setImage( RegisterImage( 0xC07F7432F86DA83 ) )
+	led:setImage( RegisterImage( "uie_wz_hud_map_danger_led" ) )
 	led:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	led:setShaderVector( 0, 0, 1, 0, 0 )
 	led:setShaderVector( 1, 0, 0, 0, 0 )
@@ -38,7 +38,7 @@ CoD.WarzoneDirectorStageIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local led2 = LUI.UIImage.new( 0, 0, 290, 582, 0, 0, 4.5, 44.5 )
 	led2:setAlpha( 0.02 )
-	led2:setImage( RegisterImage( 0xC07F7432F86DA83 ) )
+	led2:setImage( RegisterImage( "uie_wz_hud_map_danger_led" ) )
 	led2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	led2:setShaderVector( 0, 0, 0.79, 0, 0 )
 	led2:setShaderVector( 1, 0, 0, 0, 0 )
@@ -50,7 +50,7 @@ CoD.WarzoneDirectorStageIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local Border = LUI.UIImage.new( 0, 0, -8, 548, 0, 0, -6.5, 77.5 )
 	Border:setRGB( 0.39, 0.39, 0.39 )
-	Border:setImage( RegisterImage( 0x4DA3B52DFEFD271 ) )
+	Border:setImage( RegisterImage( "uie_ui_hud_wz_endgame_searching_border" ) )
 	self:addElement( Border )
 	self.Border = Border
 	
@@ -77,7 +77,7 @@ CoD.WarzoneDirectorStageIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local StageTitle = LUI.UIText.new( 0, 0, 9, 320, 0, 0, 12.5, 40.5 )
 	StageTitle:setRGB( 0.86, 0.74, 0.25 )
-	StageTitle:setText( LocalizeToUpperString( 0x968D3B043BAE7EA ) )
+	StageTitle:setText( LocalizeToUpperString( "ui/redeploying" ) )
 	StageTitle:setTTF( "ttmussels_regular" )
 	StageTitle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	StageTitle:setShaderVector( 0, 1.11, 0, 0, 0 )

@@ -55,29 +55,29 @@ CoD.EmblemColorSaved.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	f1_local5( f1_local4, f1_local6["Emblem.EmblemProperties.colorMode"], function ( f6_arg0, f6_arg1 )
 		CoD.Menu.UpdateButtonShownState( f6_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		if CoD.ModelUtility.IsModelValueEqualTo( f7_arg2, "Emblem.EmblemProperties.isGradientMode", 0 ) and IsGamepad( f7_arg2 ) then
-			GoBack( self, f7_arg2 )
-			ClearMenuSavedState( f7_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsModelValueEqualTo( controller, "Emblem.EmblemProperties.isGradientMode", 0 ) and IsGamepad( controller ) then
+			GoBack( self, controller )
+			ClearMenuSavedState( menu )
 			return true
-		elseif CoD.ModelUtility.IsModelValueEqualTo( f7_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f7_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.CraftUtility.EmblemGradient_BackFromColorPicker( self, f7_arg0, f7_arg1, f7_arg2 )
+		elseif CoD.ModelUtility.IsModelValueEqualTo( controller, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
+			CoD.CraftUtility.EmblemGradient_BackFromColorPicker( self, element, menu, controller )
 			return true
-		elseif CoD.ModelUtility.IsModelValueEqualTo( f7_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f7_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.CraftUtility.EmblemGradient_ShowSwatchContainer( self, f7_arg0, f7_arg1, f7_arg2 )
+		elseif CoD.ModelUtility.IsModelValueEqualTo( controller, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
+			CoD.CraftUtility.EmblemGradient_ShowSwatchContainer( self, element, menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		if CoD.ModelUtility.IsModelValueEqualTo( f8_arg2, "Emblem.EmblemProperties.isGradientMode", 0 ) and IsGamepad( f8_arg2 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsModelValueEqualTo( controller, "Emblem.EmblemProperties.isGradientMode", 0 ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsModelValueEqualTo( f8_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f8_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif CoD.ModelUtility.IsModelValueEqualTo( controller, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsModelValueEqualTo( f8_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f8_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif CoD.ModelUtility.IsModelValueEqualTo( controller, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

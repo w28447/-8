@@ -25,7 +25,7 @@ CoD.Social_RecentPlayers.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local SocialNoFriends = CoD.Social_NoFriends.new( f1_arg0, f1_arg1, 0.5, 0.5, -960, 960, 0, 0, 0, 1080 )
 	SocialNoFriends:setAlpha( 0 )
-	SocialNoFriends.noFriends:setText( Engine[0xF9F1239CFD921FE]( 0x575DC659C9D5D27 ) )
+	SocialNoFriends.noFriends:setText( Engine[0xF9F1239CFD921FE]( "menu/there_are_no_recent_players" ) )
 	self:addElement( SocialNoFriends )
 	self.SocialNoFriends = SocialNoFriends
 	

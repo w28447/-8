@@ -16,12 +16,12 @@ CoD.BowLauncherReticle_L1.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.Line1 = Line1
 	
 	local WingL = LUI.UIImage.new( -1.31, -1.2, 220, 220, 0.27, 0.5, 34.5, 34.5 )
-	WingL:setImage( RegisterImage( 0x3CE9CF4F5C3D42F ) )
+	WingL:setImage( RegisterImage( "uie_ui_hud_reticles_bowlauncher_wing_l" ) )
 	self:addElement( WingL )
 	self.WingL = WingL
 	
 	local WingR = LUI.UIImage.new( -1.08, -0.96, 304, 304, 0.4, 0.63, 12.5, 12.5 )
-	WingR:setImage( RegisterImage( 0x3CE92F4F5C3C331 ) )
+	WingR:setImage( RegisterImage( "uie_ui_hud_reticles_bowlauncher_wing_r" ) )
 	self:addElement( WingR )
 	self.WingR = WingR
 	

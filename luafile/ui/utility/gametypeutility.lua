@@ -148,7 +148,7 @@ CoD.GameTypeUtility.DoesGameTypeSupportBots = function ( f10_arg0 )
 		return false
 	elseif f10_arg0 == "prop" or f10_arg0 == "bounty" or f10_arg0 == "escort" then
 		return false
-	elseif f10_arg0 == "prop" or f10_arg0 == 0x32C064CAF1E3CA6 or f10_arg0 == 0xB60DB445FBF5155 then
+	elseif f10_arg0 == "prop" or f10_arg0 == "bounty" or f10_arg0 == "escort" then
 		return false
 	else
 		return true
@@ -326,7 +326,7 @@ CoD.GameTypeUtility.GameTypeToLocalizeDesc = function ( f25_arg0 )
 end
 
 CoD.GameTypeUtility.GameTypeXHashToLocalizedGameType = function ( f26_arg0 )
-	if f26_arg0 == nil or f26_arg0 == 0x0 then
+	if f26_arg0 == nil or f26_arg0 == "" then
 		return ""
 	else
 		local f26_local0 = Engine[0x8D4B2F88BB8D5E7]( f26_arg0 )

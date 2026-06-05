@@ -15,7 +15,7 @@ CoD.RankUpNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local PixelGrid = LUI.UIImage.new( 0, 0, 218.5, 393.5, 0, 0, 22, 187 )
 	PixelGrid:setAlpha( 0.5 )
-	PixelGrid:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGrid:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PixelGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGrid:setupNineSliceShader( 100, 100 )
@@ -75,7 +75,7 @@ CoD.RankUpNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local highlight = LUI.UIImage.new( 0.5, 0.5, -193, 193, 0, 0, -94, 306 )
 	highlight:setAlpha( 0.05 )
 	highlight:setZRot( 360 )
-	highlight:setImage( RegisterImage( 0x4A1176ABBF1AB4C ) )
+	highlight:setImage( RegisterImage( "uie_ui_hud_notifications_glow" ) )
 	highlight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	highlight:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( highlight )
@@ -87,7 +87,7 @@ CoD.RankUpNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local highlight2 = LUI.UIImage.new( 0.5, 0.5, -153, 153, 0, 0, -46.5, 238.5 )
 	highlight2:setAlpha( 0 )
-	highlight2:setImage( RegisterImage( 0x4A1176ABBF1AB4C ) )
+	highlight2:setImage( RegisterImage( "uie_ui_hud_notifications_glow" ) )
 	highlight2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	highlight2:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( highlight2 )

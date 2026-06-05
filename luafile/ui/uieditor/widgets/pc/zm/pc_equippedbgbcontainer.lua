@@ -45,24 +45,24 @@ CoD.PC_EquippedBGBContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		end
 		return f6_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( FourthBGB, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		if not IsCurrentMenu( f7_arg1, "BubblegumBuffSelect" ) then
-			CoD.BaseUtility.SetControllerModelToSelfModelValue( f7_arg2, f7_arg0, "BGBLoadout.selectedIndex", "slotIndex" )
-			CoD.ZMLoadoutUtility.OpenBGBSelectionMenu( self, f7_arg1, f7_arg2, self )
+	f1_arg0:AddButtonCallbackFunction( FourthBGB, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not IsCurrentMenu( menu, "BubblegumBuffSelect" ) then
+			CoD.BaseUtility.SetControllerModelToSelfModelValue( controller, element, "BGBLoadout.selectedIndex", "slotIndex" )
+			CoD.ZMLoadoutUtility.OpenBGBSelectionMenu( self, menu, controller, self )
 			return true
-		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( f7_arg0, f7_arg2, "BGBLoadout", "selectedIndex", "slotIndex" ) then
-			CoD.BaseUtility.SetControllerModelToSelfModelValue( f7_arg2, f7_arg0, "BGBLoadout.selectedIndex", "slotIndex" )
+		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( element, controller, "BGBLoadout", "selectedIndex", "slotIndex" ) then
+			CoD.BaseUtility.SetControllerModelToSelfModelValue( controller, element, "BGBLoadout.selectedIndex", "slotIndex" )
 			PlaySoundAlias( "uin_zcac_elixir_slot" )
 			return true
 		else
 			
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		if not IsCurrentMenu( f8_arg1, "BubblegumBuffSelect" ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if not IsCurrentMenu( menu, "BubblegumBuffSelect" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( f8_arg0, f8_arg2, "BGBLoadout", "selectedIndex", "slotIndex" ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( element, controller, "BGBLoadout", "selectedIndex", "slotIndex" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -105,24 +105,24 @@ CoD.PC_EquippedBGBContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		end
 		return f13_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ThirdBGB, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
-		if not IsCurrentMenu( f14_arg1, "BubblegumBuffSelect" ) then
-			CoD.BaseUtility.SetControllerModelToSelfModelValue( f14_arg2, f14_arg0, "BGBLoadout.selectedIndex", "slotIndex" )
-			CoD.ZMLoadoutUtility.OpenBGBSelectionMenu( self, f14_arg1, f14_arg2, self )
+	f1_arg0:AddButtonCallbackFunction( ThirdBGB, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not IsCurrentMenu( menu, "BubblegumBuffSelect" ) then
+			CoD.BaseUtility.SetControllerModelToSelfModelValue( controller, element, "BGBLoadout.selectedIndex", "slotIndex" )
+			CoD.ZMLoadoutUtility.OpenBGBSelectionMenu( self, menu, controller, self )
 			return true
-		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( f14_arg0, f14_arg2, "BGBLoadout", "selectedIndex", "slotIndex" ) then
-			CoD.BaseUtility.SetControllerModelToSelfModelValue( f14_arg2, f14_arg0, "BGBLoadout.selectedIndex", "slotIndex" )
+		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( element, controller, "BGBLoadout", "selectedIndex", "slotIndex" ) then
+			CoD.BaseUtility.SetControllerModelToSelfModelValue( controller, element, "BGBLoadout.selectedIndex", "slotIndex" )
 			PlaySoundAlias( "uin_zcac_elixir_slot" )
 			return true
 		else
 			
 		end
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		if not IsCurrentMenu( f15_arg1, "BubblegumBuffSelect" ) then
-			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if not IsCurrentMenu( menu, "BubblegumBuffSelect" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( f15_arg0, f15_arg2, "BGBLoadout", "selectedIndex", "slotIndex" ) then
-			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( element, controller, "BGBLoadout", "selectedIndex", "slotIndex" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -165,24 +165,24 @@ CoD.PC_EquippedBGBContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		end
 		return f20_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( SecondBGB, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f21_arg0, f21_arg1, f21_arg2, f21_arg3 )
-		if not IsCurrentMenu( f21_arg1, "BubblegumBuffSelect" ) then
-			CoD.BaseUtility.SetControllerModelToSelfModelValue( f21_arg2, f21_arg0, "BGBLoadout.selectedIndex", "slotIndex" )
-			CoD.ZMLoadoutUtility.OpenBGBSelectionMenu( self, f21_arg1, f21_arg2, self )
+	f1_arg0:AddButtonCallbackFunction( SecondBGB, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not IsCurrentMenu( menu, "BubblegumBuffSelect" ) then
+			CoD.BaseUtility.SetControllerModelToSelfModelValue( controller, element, "BGBLoadout.selectedIndex", "slotIndex" )
+			CoD.ZMLoadoutUtility.OpenBGBSelectionMenu( self, menu, controller, self )
 			return true
-		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( f21_arg0, f21_arg2, "BGBLoadout", "selectedIndex", "slotIndex" ) then
-			CoD.BaseUtility.SetControllerModelToSelfModelValue( f21_arg2, f21_arg0, "BGBLoadout.selectedIndex", "slotIndex" )
+		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( element, controller, "BGBLoadout", "selectedIndex", "slotIndex" ) then
+			CoD.BaseUtility.SetControllerModelToSelfModelValue( controller, element, "BGBLoadout.selectedIndex", "slotIndex" )
 			PlaySoundAlias( "uin_zcac_elixir_slot" )
 			return true
 		else
 			
 		end
-	end, function ( f22_arg0, f22_arg1, f22_arg2 )
-		if not IsCurrentMenu( f22_arg1, "BubblegumBuffSelect" ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if not IsCurrentMenu( menu, "BubblegumBuffSelect" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( f22_arg0, f22_arg2, "BGBLoadout", "selectedIndex", "slotIndex" ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( element, controller, "BGBLoadout", "selectedIndex", "slotIndex" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -225,24 +225,24 @@ CoD.PC_EquippedBGBContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		end
 		return f27_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( FirstBGB, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f28_arg0, f28_arg1, f28_arg2, f28_arg3 )
-		if not IsCurrentMenu( f28_arg1, "BubblegumBuffSelect" ) then
-			CoD.BaseUtility.SetControllerModelToSelfModelValue( f28_arg2, f28_arg0, "BGBLoadout.selectedIndex", "slotIndex" )
-			CoD.ZMLoadoutUtility.OpenBGBSelectionMenu( self, f28_arg1, f28_arg2, self )
+	f1_arg0:AddButtonCallbackFunction( FirstBGB, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not IsCurrentMenu( menu, "BubblegumBuffSelect" ) then
+			CoD.BaseUtility.SetControllerModelToSelfModelValue( controller, element, "BGBLoadout.selectedIndex", "slotIndex" )
+			CoD.ZMLoadoutUtility.OpenBGBSelectionMenu( self, menu, controller, self )
 			return true
-		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( f28_arg0, f28_arg2, "BGBLoadout", "selectedIndex", "slotIndex" ) then
-			CoD.BaseUtility.SetControllerModelToSelfModelValue( f28_arg2, f28_arg0, "BGBLoadout.selectedIndex", "slotIndex" )
+		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( element, controller, "BGBLoadout", "selectedIndex", "slotIndex" ) then
+			CoD.BaseUtility.SetControllerModelToSelfModelValue( controller, element, "BGBLoadout.selectedIndex", "slotIndex" )
 			PlaySoundAlias( "uin_zcac_elixir_slot" )
 			return true
 		else
 			
 		end
-	end, function ( f29_arg0, f29_arg1, f29_arg2 )
-		if not IsCurrentMenu( f29_arg1, "BubblegumBuffSelect" ) then
-			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if not IsCurrentMenu( menu, "BubblegumBuffSelect" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( f29_arg0, f29_arg2, "BGBLoadout", "selectedIndex", "slotIndex" ) then
-			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( element, controller, "BGBLoadout", "selectedIndex", "slotIndex" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

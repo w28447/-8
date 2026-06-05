@@ -18,7 +18,7 @@ CoD.ArenaSkillEvaluationWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local MatchesPlayedText2 = LUI.UIText.new( 0, 0, 142.5, 225.5, 0, 0, 329.5, 374.5 )
 	MatchesPlayedText2:setRGB( 0.92, 0.92, 0.92 )
-	MatchesPlayedText2:setText( CoD.ArenaLeaguePlayUtility.GetCompletedPlacementMatchesString( f1_arg1, menu/empty ) )
+	MatchesPlayedText2:setText( CoD.ArenaLeaguePlayUtility.GetCompletedPlacementMatchesString( f1_arg1, "menu/empty" ) )
 	MatchesPlayedText2:setTTF( "ttmussels_demibold" )
 	MatchesPlayedText2:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	MatchesPlayedText2:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -27,7 +27,7 @@ CoD.ArenaSkillEvaluationWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local MatchesPlayedText = LUI.UIText.new( 0, 0, 225.5, 349.5, 0, 0, 329.5, 374.5 )
 	MatchesPlayedText:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
-	MatchesPlayedText:setText( CoD.ArenaLeaguePlayUtility.GetCompletedPlacementMatchesProgressString( f1_arg1, 0xC973F0F3138027 ) )
+	MatchesPlayedText:setText( CoD.ArenaLeaguePlayUtility.GetCompletedPlacementMatchesProgressString( f1_arg1, "menu/x_slash_y" ) )
 	MatchesPlayedText:setTTF( "ttmussels_demibold" )
 	MatchesPlayedText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	MatchesPlayedText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -95,7 +95,7 @@ CoD.ArenaSkillEvaluationWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	TopTriangle:setRGB( 0.92, 0.92, 0.92 )
 	TopTriangle:setAlpha( 0.05 )
 	TopTriangle:setScale( 0.3, 0.3 )
-	TopTriangle:setImage( RegisterImage( 0xE8103AAF0932DB4 ) )
+	TopTriangle:setImage( RegisterImage( "uie_ui_menu_arena_league_hub_triangle" ) )
 	self:addElement( TopTriangle )
 	self.TopTriangle = TopTriangle
 	

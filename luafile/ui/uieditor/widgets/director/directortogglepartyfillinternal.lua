@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/common/commonfocusbrackets" )
-require( "ui/uieditor/widgets/common/CommonPixelBacking" )
+require( "ui/uieditor/widgets/common/commonpixelbacking" )
 
 CoD.DirectorTogglePartyFillInternal = InheritFrom( LUI.UIElement )
 CoD.DirectorTogglePartyFillInternal.__defaultWidth = 301
@@ -56,7 +56,7 @@ CoD.DirectorTogglePartyFillInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local FocusGlow = LUI.UIImage.new( 0, 1, -130, 130, 0, 1, -158, 158 )
 	FocusGlow:setAlpha( 0 )
-	FocusGlow:setImage( RegisterImage( 0x223AD1B40A93955 ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_menu_common_tab_glow" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.21, 0.09 )
 	FocusGlow:setShaderVector( 1, 1.36, 0, 0, 0 )
@@ -66,7 +66,7 @@ CoD.DirectorTogglePartyFillInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local FocusHighlight = LUI.UIImage.new( 0, 1, -52, 52, 0, 1, -42, 42 )
 	FocusHighlight:setAlpha( 0 )
-	FocusHighlight:setImage( RegisterImage( 0x3F09D20CA138B49 ) )
+	FocusHighlight:setImage( RegisterImage( "uie_ui_menu_common_tab_backing" ) )
 	FocusHighlight:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusHighlight:setShaderVector( 0, 0, 0, 0.27, 0.18 )
 	FocusHighlight:setShaderVector( 1, 0.9, 0, 0, 0 )
@@ -76,7 +76,7 @@ CoD.DirectorTogglePartyFillInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local Highlight = LUI.UIImage.new( 0, 1, -52, 52, 0, 1, -42, 42 )
 	Highlight:setAlpha( 0.02 )
-	Highlight:setImage( RegisterImage( 0x363260E8D9FE62F ) )
+	Highlight:setImage( RegisterImage( "uie_ui_menu_common_tab_backing_white" ) )
 	Highlight:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	Highlight:setShaderVector( 0, 0, 0, 0.27, 0.18 )
 	Highlight:setShaderVector( 1, 1, 0, 0, 0 )
@@ -104,7 +104,7 @@ CoD.DirectorTogglePartyFillInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local Status = LUI.UIText.new( 1, 1, -78, -8, 0.5, 0.5, -10, 10 )
 	Status:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	Status:setText( LocalizeToUpperString( 0x17857948FC2CCFC ) )
+	Status:setText( LocalizeToUpperString( "menu/off" ) )
 	Status:setTTF( "ttmussels_regular" )
 	Status:setLetterSpacing( 2 )
 	Status:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
@@ -115,7 +115,7 @@ CoD.DirectorTogglePartyFillInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local StatusFocus = LUI.UIText.new( 1, 1, -78, -8, 0.5, 0.5, -10, 10 )
 	StatusFocus:setRGB( 0.28, 0.25, 0.24 )
 	StatusFocus:setAlpha( 0 )
-	StatusFocus:setText( LocalizeToUpperString( 0x17857948FC2CCFC ) )
+	StatusFocus:setText( LocalizeToUpperString( "menu/off" ) )
 	StatusFocus:setTTF( "ttmussels_regular" )
 	StatusFocus:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	StatusFocus:setShaderVector( 0, 0.14, 0, 0, 0 )

@@ -12,7 +12,7 @@ CoD.vehicleRadar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local vehicleRadarRTT = CoD.vehicleRadarRTT.new( f1_arg0, f1_arg1, 0, 0, 0, 280, 0, 0, 0, 280 )
-	vehicleRadarRTT:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD79DB5C45AD6024 ) )
+	vehicleRadarRTT:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_elliptical_ring_rft" ) )
 	vehicleRadarRTT:setShaderVector( 0, 50, 0, 0, 0 )
 	vehicleRadarRTT:setShaderVector( 1, 100, 100, 0, 0 )
 	vehicleRadarRTT:setShaderVector( 2, 0, 0.2, 0, 0 )

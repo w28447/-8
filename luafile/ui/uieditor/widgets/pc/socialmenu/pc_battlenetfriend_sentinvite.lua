@@ -50,11 +50,11 @@ CoD.PC_BattlenetFriend_SentInvite.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( BTN_Remove, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		CoD.PCUtility.RevokeSentFriendRequest( self, f5_arg2 )
+	f1_arg0:AddButtonCallbackFunction( BTN_Remove, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.PCUtility.RevokeSentFriendRequest( self, controller )
 		return true
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( BTN_Remove )
@@ -69,7 +69,7 @@ CoD.PC_BattlenetFriend_SentInvite.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.TXTPending = TXTPending
 	
 	local ProgramImage = LUI.UIImage.new( 0.11, 0.11, 0, 40, 0.5, 0.5, -22, 18 )
-	ProgramImage:setImage( RegisterImage( 0x6EB79ABD22C8593 ) )
+	ProgramImage:setImage( RegisterImage( "uie_social_friendlist_offline_icon" ) )
 	self:addElement( ProgramImage )
 	self.ProgramImage = ProgramImage
 	

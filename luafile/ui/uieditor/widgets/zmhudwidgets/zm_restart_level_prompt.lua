@@ -32,23 +32,23 @@ CoD.ZM_Restart_Level_Prompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( YesPrompt, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
+	f1_arg0:AddButtonCallbackFunction( YesPrompt, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsSelfInState( self, "Shown" ) and IsPC() then
-			RestartGameImmediate( f4_arg1, f4_arg2 )
-			LockInput( self, f4_arg2, false )
+			RestartGameImmediate( menu, controller )
+			LockInput( self, controller, false )
 			return true
 		elseif IsSelfInState( self, "Shown" ) then
-			RestartGameImmediate( f4_arg1, f4_arg2 )
+			RestartGameImmediate( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
+	end, function ( element, menu, controller )
 		if IsSelfInState( self, "Shown" ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		elseif IsSelfInState( self, "Shown" ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -77,16 +77,16 @@ CoD.ZM_Restart_Level_Prompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( NoPrompt, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
+	f1_arg0:AddButtonCallbackFunction( NoPrompt, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsSelfInState( self, "Shown" ) then
-			ResumeEndGame( f8_arg1, f8_arg2 )
+			ResumeEndGame( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
+	end, function ( element, menu, controller )
 		if IsSelfInState( self, "Shown" ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -96,7 +96,7 @@ CoD.ZM_Restart_Level_Prompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.NoPrompt = NoPrompt
 	
 	local Prompt = LUI.UIText.new( 0.5, 0.5, -350, 350, 0, 0, 0, 33 )
-	Prompt:setText( Engine[0xF9F1239CFD921FE]( 0x48E5FC10A26A69D ) )
+	Prompt:setText( Engine[0xF9F1239CFD921FE]( "hud/restart_prompt" ) )
 	Prompt:setTTF( "skorzhen" )
 	Prompt:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Prompt:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

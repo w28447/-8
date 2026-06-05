@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/controllerdependent_textbox" )
 require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_equipmentempty" )
-require( "x64:24b789df27433d6" )
-require( "x64:6e5d082bb780458" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetmp_ability_flare" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetmp_equipmentlethal_flash" )
 require( "ui/uieditor/widgets/onofftext" )
 
 CoD.HealCooldown = InheritFrom( LUI.UIElement )

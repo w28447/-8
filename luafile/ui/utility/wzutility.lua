@@ -8,15 +8,15 @@ CoD.WZUtility.TeamPlayerColor = {
 }
 CoD.WZUtility.PlayerStatusIcon = {
 	[Enum[0x4A07561A78E340B][0x8D80055B4F13E0F]] = "blacktransparent",
-	[Enum[0x4A07561A78E340B][0x58F9A363F8FBB07]] = 0x35F4FDCB7FE3CC8,
+	[Enum[0x4A07561A78E340B][0x58F9A363F8FBB07]] = "ui_icon_disconnect",
 	[Enum[0x4A07561A78E340B][0x59E50BB255808BF]] = "blacktransparent",
 	[Enum[0x4A07561A78E340B][0x751743BBF671EDC]] = "blacktransparent",
-	[Enum[0x4A07561A78E340B][0x9BD8FECA6158847]] = 0x1128C83B5AB30A2,
-	[Enum[0x4A07561A78E340B][0xC233F1FA9F35C02]] = 0xF6C08F962CB71E4
+	[Enum[0x4A07561A78E340B][0x9BD8FECA6158847]] = "ui_icon_bleedout",
+	[Enum[0x4A07561A78E340B][0xC233F1FA9F35C02]] = "ui_icon_dead"
 }
 CoD.WZUtility.PlayerStatusClientScriptState = {
-	[Enum[0x4A07561A78E340B][0x9BD8FECA6158847]] = 0x7B854BEEABA3EC6,
-	[Enum[0x4A07561A78E340B][0xC233F1FA9F35C02]] = 0x5BC226742558D67
+	[Enum[0x4A07561A78E340B][0x9BD8FECA6158847]] = "last_stand",
+	[Enum[0x4A07561A78E340B][0xC233F1FA9F35C02]] = "dead"
 }
 CoD.WZUtility.InventoryItem = {
 	INVENTORY_ITEM_NONE = 32767
@@ -50,7 +50,7 @@ CoD.WZUtility.QuestItemUpdateTypes = {
 	CHARACTER_UNLOCK_UPDATE_ALREADY_COMPLETED = 1
 }
 CoD.WZUtility.ArmorAssetList = {
-	0x68173E016D45C2A,
+	"armor_item_large",
 	"armor_item_medium",
 	"armor_item_small"
 }
@@ -60,145 +60,145 @@ CoD.WZUtility.WZPersonalizeGroupNames = {
 	{
 		index = 1,
 		weapon_category = "weapon_assault",
-		name = 0xFE1B0B2003A6CC1,
-		itemGroup = Enum.itemGroup_t[0x4A0897271FB09AD],
+		name = "mpui/weapon_assault_caps",
+		itemGroup = Enum.itemGroup_t.itemgroup_assault,
 		loadoutType = "primary",
 		minUnlockableCount = 0
 	},
 	{
 		index = 2,
 		weapon_category = "weapon_smg",
-		name = 0x5A1E94F52AC6DAB,
-		itemGroup = Enum.itemGroup_t[0xBCE06767A091BE7],
+		name = "mpui/weapon_smg_caps",
+		itemGroup = Enum.itemGroup_t.itemgroup_smg,
 		loadoutType = "primary",
 		minUnlockableCount = 0
 	},
 	{
 		index = 3,
 		weapon_category = "weapon_tactical",
-		name = 0xFB38D2633FBBEC7,
-		itemGroup = Enum.itemGroup_t[0x3DA6A4276EF1CEF],
+		name = "mpui/weapon_tactical_caps",
+		itemGroup = Enum.itemGroup_t.itemgroup_tactical,
 		loadoutType = "primary",
 		minUnlockableCount = 0
 	},
 	{
 		index = 4,
 		weapon_category = "weapon_lmg",
-		name = 0xDB6F169E46CD4E4,
-		itemGroup = Enum.itemGroup_t[0x51D9B7706B5A416],
+		name = "mpui/weapon_lmg_caps",
+		itemGroup = Enum.itemGroup_t.itemgroup_lmg,
 		loadoutType = "primary",
 		minUnlockableCount = 0
 	},
 	{
 		index = 5,
 		weapon_category = "weapon_sniper",
-		name = 0xEF865AD574F5FAD,
-		itemGroup = Enum.itemGroup_t[0xD9E14963CFC3D79],
+		name = "mpui/weapon_sniper_caps",
+		itemGroup = Enum.itemGroup_t.itemgroup_sniper,
 		loadoutType = "primary",
 		minUnlockableCount = 0
 	},
 	{
 		index = 6,
 		weapon_category = "weapon_cqb",
-		name = 0x2584C59DF32630E,
-		itemGroup = Enum.itemGroup_t[0x4BF8976C721AFFC],
+		name = "mpui/weapon_cqb_caps",
+		itemGroup = Enum.itemGroup_t.itemgroup_cqb,
 		loadoutType = "primary",
 		minUnlockableCount = 0
 	},
 	{
 		index = 7,
 		weapon_category = "weapon_pistol",
-		name = 0x1F931942007CAB9,
-		itemGroup = Enum.itemGroup_t[0x1585BBF779B0319],
+		name = "mpui/weapon_pistol_caps",
+		itemGroup = Enum.itemGroup_t.itemgroup_pistol,
 		loadoutType = "secondary",
 		minUnlockableCount = 0
 	},
 	{
 		index = 8,
 		weapon_category = "weapon_launcher",
-		name = 0xFB45C2314396720,
-		itemGroup = Enum.itemGroup_t[0x66FF8D48F8D137F],
+		name = "mpui/weapon_launcher_caps",
+		itemGroup = Enum.itemGroup_t.itemgroup_launchers,
 		loadoutType = "secondary",
 		minUnlockableCount = 0
 	},
 	{
 		index = 9,
 		weapon_category = "weapon_knife",
-		name = 0x8180FA72D55F45B,
-		itemGroup = Enum.itemGroup_t[0x8C158486CCADDB],
+		name = "mpui/weapon_knife_caps",
+		itemGroup = Enum.itemGroup_t.itemgroup_knife,
 		loadoutType = "secondary",
 		minUnlockableCount = 3
 	},
 	{
 		index = 10,
 		weapon_category = "weapon_special",
-		name = 0x3A21A8AF3E42CDD,
-		itemGroup = Enum.itemGroup_t[0x6F7EF424C78D2F9],
+		name = "mpui/weapon_special_caps",
+		itemGroup = Enum.itemGroup_t.itemgroup_special,
 		loadoutType = "secondary",
 		minUnlockableCount = 0
 	}
 }
 local f0_local0 = CoD.WZUtility
 local f0_local1 = {
-	0x580570083C8795A,
-	0x39F66708E1D597,
-	0x4214C17F34996EA,
-	0xC2D17D2F2C857E1,
-	0xFD15D3E3A7A9B0C,
-	0xCB6925EBE3BC0D6,
-	0xF8F3D92031F6F7,
-	0xEF408B2B3E35377,
+	"ar_accurate_t8",
+	"ar_damage_t8",
+	"ar_fastfire_t8",
+	"ar_galil_t8",
+	"ar_modular_t8",
+	"ar_peacekeeper_t8",
+	"ar_standard_t8",
+	"ar_stealth_t8",
 	"ar_an94_t8",
-	0x9B31EB328208B,
-	0xF1D38574585B35E,
-	0xF42BB0A766B63B4,
-	0x2032B32D0D142BE,
-	0x436CCB615A2B9C6,
-	0xA398A475F8AF4C7,
-	0x6E6C9C83987136B,
-	0xBF4DD6DCF1D24F3,
-	0xD7835133AA2DAA1,
-	0x8B38FA134E54223,
-	0xF1F9926E48404F7,
-	0xB3E3BAE603F9641,
+	"ar_doublebarrel_t8",
+	"smg_accurate_t8",
+	"smg_capacity_t8",
+	"smg_fastburst_t8",
+	"smg_fastfire_t8",
+	"smg_handling_t8",
+	"smg_mp40_t8",
+	"smg_standard_t8",
+	"smg_folding_t8",
+	"smg_vmp_t8",
+	"smg_minigun_t8",
+	"tr_longburst_t8",
 	"tr_midburst_t8",
-	0xDC98FE2DC7C7650,
-	0x328BAA07BF1D03B,
-	0xB2CB0CDA291AE11,
-	0xDD5E58C9EB28AF6,
-	0x97D3824E705398C,
-	0xD9ABB421C753FF2,
-	0x6ADEB4D1A0422D2,
-	0x4C9BAB69F2A2D2A,
-	0x7F46C2CAF1DE7FC,
-	0x840B7B398F4BB83,
-	0x7B5B30F9AA8786C,
-	0x69CFF6935966A74,
+	"tr_powersemi_t8",
+	"tr_leveraction_t8",
+	"tr_flechette_t8",
+	"tr_damageburst_t8",
+	"lmg_heavy_t8",
+	"lmg_spray_t8",
+	"lmg_standard_t8",
+	"lmg_double_t8",
+	"lmg_stealth_t8",
+	"sniper_fastrechamber_t8",
+	"sniper_locus_t8",
+	"sniper_powerbolt_t8",
 	"sniper_powersemi_t8",
-	0x85D0D5E33D6802B,
-	0x9618269D014E1FE,
-	0x3D6E545E88450C5,
-	0x243385728E38AA9,
-	0xF8AE16433FBA11C,
-	0xA7BDA9AB5E9BF35,
-	0xF9EB7548CC02363,
-	0x2F6B4F6DD8585AC,
-	0xF48082B20588E4E,
-	0x5A57559D3BDC159,
-	0x3D1FC53331A5B,
-	0xB0E53F588197120,
+	"sniper_quickscope_t8",
+	"sniper_mini14_t8",
+	"sniper_damagesemi_t8",
+	"shotgun_pump_t8",
+	"shotgun_semiauto_t8",
+	"shotgun_fullauto_t8",
+	"shotgun_precision_t8",
+	"pistol_burst_t8",
+	"pistol_fullauto_t8",
+	"pistol_revolver_t8",
+	"pistol_standard_t8",
+	"launcher_standard_t8",
 	"melee_club_t8",
-	0xC1FF1AD76B46DA2,
-	0xA44144DDCDC7A06
+	"melee_coinbag_t8",
+	"melee_cutlass_t8"
 }
-local f0_local2 = 0x768B46BA75651CE
-local f0_local3 = 0xB66427785660BAE
-local f0_local4 = 0x40DF302FEF996C9
-local f0_local5 = 0xFFCEC935D4BCD61
-local f0_local6 = 0x8A954B0CB9F04E2
-local f0_local7 = 0x8A980198A51E72B
-local f0_local8 = 0xE5BAE184643EE5
-local f0_local9 = 0x8A2B56939A972EE
+local f0_local2 = "melee_demohammer_t8"
+local f0_local3 = "melee_secretsanta_t8"
+local f0_local4 = "melee_slaybell_t8"
+local f0_local5 = "melee_zombiearm_t8"
+local f0_local6 = "melee_stopsign_t8"
+local f0_local7 = "melee_actionfigure_t8"
+local f0_local8 = "melee_amuletfist_t8"
+local f0_local9 = "special_crossbow_t8"
 f0_local1[33] = f0_local2
 f0_local1[34] = f0_local3
 f0_local1[35] = f0_local4
@@ -209,12 +209,12 @@ f0_local1[39] = f0_local8
 f0_local1[40] = f0_local9
 f0_local0.WZPersonalizeWeaponNames = f0_local1
 CoD.WZUtility.WZDLC1WeaponNames = {
-	0xF8F3D92031F6F7,
-	0x2032B32D0D142BE,
-	0xF48082B20588E4E
+	"ar_standard_t8",
+	"smg_fastburst_t8",
+	"pistol_fullauto_t8"
 }
 CoD.WZUtility.GetWZLevel = function ( f1_arg0 )
-	if tonumber( CoD.PrestigeUtility.GetMaxRankByMode( Enum.eModes[0xBF1DCC8138A9D39] ) ) + 1 <= tonumber( f1_arg0 ) then
+	if tonumber( CoD.PrestigeUtility.GetMaxRankByMode( Enum.eModes.mode_warzone ) ) + 1 <= tonumber( f1_arg0 ) then
 		return Engine[0xF9F1239CFD921FE]( 0x4008CE61FE52DCD )
 	else
 		return tostring( f1_arg0 )
@@ -316,7 +316,7 @@ end
 
 CoD.WZUtility.CloseMultiItemPickup = function ( f9_arg0 )
 	if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( f9_arg0, "MultiItemPickup", "status", Enum[0x163CDAE6010C493][0xC9FADA56582F80F] ) then
-		Engine.SendMenuResponse( f9_arg0, 0xADD67F1A6BDEA11, 0x82D72060AD826CB, 0 )
+		Engine.SendMenuResponse( f9_arg0, "multiitempickup", "multi_item_menu_closed", 0 )
 	end
 end
 
@@ -375,7 +375,7 @@ CoD.WZUtility.NotifyCannotEquipInventory = function ( f17_arg0, f17_arg1 )
 		local f17_local1 = f17_local0
 		f17_local0 = f17_local0.set
 		local f17_local2 = Engine[0xF9F1239CFD921FE]
-		local f17_local3 = 0x1EEFCC82368987C
+		local f17_local3 = "warzone/already_equipped"
 		local f17_local4 = f17_arg1:getModel()
 		f17_local0( f17_local1, f17_local2( f17_local3, f17_local4.name:get() ) )
 	else
@@ -384,7 +384,7 @@ CoD.WZUtility.NotifyCannotEquipInventory = function ( f17_arg0, f17_arg1 )
 		local f17_local1 = f17_local0
 		f17_local0 = f17_local0.set
 		local f17_local2 = Engine[0xF9F1239CFD921FE]
-		local f17_local3 = 0xE559771BCA0AB2C
+		local f17_local3 = "warzone/cannot_equip"
 		local f17_local4 = f17_arg1:getModel()
 		f17_local0( f17_local1, f17_local2( f17_local3, f17_local4.name:get() ) )
 	end
@@ -449,7 +449,7 @@ CoD.WZUtility.AddPickupNotificationWatcher = function ( f27_arg0, f27_arg1, f27_
 	end )
 	f27_arg1:subscribeToGlobalModel( f27_arg0, "WarzoneInventory", "pickedUpItem", function ( model )
 		local f30_local0 = model:get()
-		if f30_local0 ~= 0x0 then
+		if f30_local0 ~= "" then
 			table.insert( f27_local0, Engine[0xF9F1239CFD921FE]( 0xE719EE2BA38EDE4, f30_local0 ) )
 			if #f27_local0 == 1 then
 				f27_local1()
@@ -459,7 +459,7 @@ CoD.WZUtility.AddPickupNotificationWatcher = function ( f27_arg0, f27_arg1, f27_
 	f27_arg1:subscribeToGlobalModel( f27_arg0, "WarzoneInventory", "droppedItem", function ( model )
 		local f31_local0 = model:get()
 		if f31_local0 ~= "" then
-			table.insert( f27_local0, Engine[0xF9F1239CFD921FE]( 0x3B502214D1BD811, f31_local0 ) )
+			table.insert( f27_local0, Engine[0xF9F1239CFD921FE]( "warzone/dropped_x", f31_local0 ) )
 			if #f27_local0 == 1 then
 				f27_local1()
 			end
@@ -467,7 +467,7 @@ CoD.WZUtility.AddPickupNotificationWatcher = function ( f27_arg0, f27_arg1, f27_
 	end, true )
 	f27_arg1:subscribeToGlobalModel( f27_arg0, "WarzoneInventory", "cannotEquipItem", function ( model )
 		local f32_local0 = model:get()
-		if f32_local0 ~= 0x0 then
+		if f32_local0 ~= "" then
 			table.insert( f27_local0, f32_local0 )
 			if #f27_local0 == 1 then
 				f27_local1()
@@ -877,7 +877,7 @@ CoD.WZUtility.GetInventoryEquipText = function ( f78_arg0 )
 	if f78_arg0 == "killstreak" then
 		return "menu/deploy"
 	else
-		return 0x38B775D97E72F0C
+		return "warzone/equip"
 	end
 end
 
@@ -889,7 +889,7 @@ CoD.WZUtility.PlayerStatusClientScriptNotify = function ( f79_arg0, f79_arg1, f7
 		Engine.SendClientScriptNotify( f79_arg0, "teammate_state_change", {
 			clientNum = f79_local1,
 			localClientNum = f79_local0,
-			state = CoD.WZUtility.PlayerStatusClientScriptState[f79_arg2:get()] or 0x0
+			state = CoD.WZUtility.PlayerStatusClientScriptState[f79_arg2:get()] or ""
 		} )
 	end
 end
@@ -917,7 +917,7 @@ CoD.WZUtility.TowerIndexToName = function ( f81_arg0 )
 		local f81_local2 = f81_local1.displayName
 		local f81_local3 = f81_local1.displayName:get()
 	end
-	return f81_local2 and f81_local3 or 0x0
+	return f81_local2 and f81_local3 or ""
 end
 
 CoD.WZUtility.GetMultiItemReplaceText = function ( f82_arg0, f82_arg1 )
@@ -925,8 +925,8 @@ CoD.WZUtility.GetMultiItemReplaceText = function ( f82_arg0, f82_arg1 )
 	f82_local0 = f82_local0.currentSelection:get()
 	local f82_local1 = f82_local0 and f82_local0.claimsInventorySlot:get() == 1
 	local f82_local2 = DataSources.WarzoneInventory.getModel( f82_arg0 )
-	if f82_arg1 == 0x0 or not f82_local1 or f82_local2.firstFreeSlot:get() ~= -1 then
-		return Engine[0xF9F1239CFD921FE]( 0xC46907584E75127 )
+	if f82_arg1 == "" or not f82_local1 or f82_local2.firstFreeSlot:get() ~= -1 then
+		return Engine[0xF9F1239CFD921FE]( "warzone/pick_up" )
 	else
 		return Engine[0xF9F1239CFD921FE]( 0xFBCE5B447E66701, f82_arg1 )
 	end
@@ -952,7 +952,7 @@ CoD.WZUtility.GetArmorFlipbookIconForArmorTier = function ( f84_arg0 )
 		for f84_local4, f84_local5 in ipairs( CoD.WZUtility.ArmorAssetList ) do
 			local f84_local6 = Engine[0xE00B2F29271C60B]( f84_local5 )
 			if f84_local6 and f84_local6[0xF1FF9105E9136C8] ~= nil then
-				CoD.WZUtility.ArmorTierToFlipbookImage[f84_local6[0xF1FF9105E9136C8]] = f84_local6[0xBFF4CC56C2092F0]
+				CoD.WZUtility.ArmorTierToFlipbookImage[f84_local6[0xF1FF9105E9136C8]] = f84_local6.icon
 			end
 		end
 	end
@@ -984,7 +984,7 @@ end
 
 CoD.WZUtility.PrependUpsellIconIfNeed = function ( f87_arg0, f87_arg1 )
 	if f87_arg0.purchasable and f87_arg0.purchasable:get() then
-		return Engine[0xF9F1239CFD921FE]( 0x1001FF6B558E68C, Engine[0xF9F1239CFD921FE]( f87_arg1 ) )
+		return Engine[0xF9F1239CFD921FE]( "menu/purchase_icon_and_text", Engine[0xF9F1239CFD921FE]( f87_arg1 ) )
 	else
 		return Engine[0xF9F1239CFD921FE]( f87_arg1 )
 	end
@@ -1179,8 +1179,8 @@ end, false, {
 	end,
 	getItem = function ( f107_arg0, f107_arg1, f107_arg2 )
 		local f107_local0 = f107_arg1._rootModel["item" .. f107_arg2 - 1]
-		if f107_local0 ~= nil and f107_arg2 == 1 and f107_local0.name and f107_local0.name:get() == 0x0 then
-			f107_local0.name:set( 0xE6F23365C1E074F )
+		if f107_local0 ~= nil and f107_arg2 == 1 and f107_local0.name and f107_local0.name:get() == "" then
+			f107_local0.name:set( "wz/auto_select" )
 		end
 		return f107_local0
 	end
@@ -1219,7 +1219,7 @@ DataSources.WZAmmoPool = {
 			f113_local3 = f113_local2:create( "id" )
 			f113_local3:set( CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE )
 			f113_local3 = f113_local2:create( "name" )
-			f113_local3:set( 0x0 )
+			f113_local3:set( "" )
 			f113_local3 = f113_local2:create( "stackCount" )
 			f113_local3:set( 0 )
 			f113_local3 = f113_local2:create( "icon" )
@@ -1234,7 +1234,7 @@ DataSources.WZAmmoPool = {
 				f113_local7 = f113_local2[f113_local6.assetName:get()]
 				if f113_local7 ~= nil then
 					local f113_local8 = f113_local6:create( "stackCount" )
-					f113_local8:set( f113_local7[0x1E5E28E4479A274] )
+					f113_local8:set( f113_local7.count )
 				else
 					local f113_local8 = f113_local6:create( "stackCount" )
 					f113_local8:set( 0 )
@@ -1299,20 +1299,20 @@ DataSources.HorizontalCompassPips = {
 		local f120_local3 = 2
 		local f120_local4 = 45 / (1 + f120_local3)
 		local f120_local5 = {
-			0x94D216E7E52BE0E,
-			0x3F0AC03EEA3DB64,
-			0x94CA4D87F9A0D1C,
-			0xF3C39F2EC7F38DA,
-			0x94D216E7E52BE0E,
-			0x3F0AC03EEA3DB64
+			"warzone/compass_west",
+			"warzone/compass_north",
+			"warzone/compass_east",
+			"warzone/compass_south",
+			"warzone/compass_west",
+			"warzone/compass_north"
 		}
 		local f120_local6 = {
 			"warzone/compass_northwest",
-			0xEBC7401C462CB11,
-			0x87488A61EAA0973,
-			0x6982C0C4CDC4751,
+			"warzone/compass_northeast",
+			"warzone/compass_southeast",
+			"warzone/compass_southwest",
 			"warzone/compass_northwest",
-			0xEBC7401C462CB11
+			"warzone/compass_northeast"
 		}
 		local f120_local7 = 270
 		local f120_local8 = function ( f121_arg0, f121_arg1 )
@@ -1442,7 +1442,7 @@ CoD.WZUtility.CreateCharacterCategoryDataSource = function ( f130_arg0, f130_arg
 					local f131_local11 = CoD.PlayerRoleUtility.IsRoleBMLocked( f131_arg0, f131_local2, f131_local29 )
 					local f131_local12 = f131_local11
 					local f131_local13
-					if f131_local30["lockcharacter"] == 1 or not CoD.PlayerRoleUtility.IsRoleUnlocked( f131_arg0, f131_local2, f131_local29 ) then
+					if f131_local30.lockcharacter == 1 or not CoD.PlayerRoleUtility.IsRoleUnlocked( f131_arg0, f131_local2, f131_local29 ) then
 						if f131_local30[0xC98250D6799E088] == 1 then
 							f131_local13 = not f131_local4
 						else
@@ -1462,7 +1462,7 @@ CoD.WZUtility.CreateCharacterCategoryDataSource = function ( f130_arg0, f130_arg
 					if Dvar[0xF037DBD87F8EA84]:exists() and (IsDurango() or IsPC()) and (f131_local28.assetName == 0x53C65B5254C2343 or f131_local28.assetName == 0x691B38344E00A93 or f131_local28.assetName == 0xD5EDAD18BF7D543 or f131_local28.assetName == 0xD020F0DF0ECB942) then
 						f131_local14 = f131_local30[0x661FF2D93C3A98A]
 					end
-					if not f131_local13 and f130_arg1 == Enum.eModes[0x83EBA96F36BC4E5] and IsBooleanDvarSet( 0xA5FD7D94CFC9DFD ) then
+					if not f131_local13 and f130_arg1 == Enum.eModes.mode_multiplayer and IsBooleanDvarSet( "wz_mp_character_unlocks_outfits" ) then
 						local f131_local15 = CoD.PlayerRoleUtility.GetCachedHeroCustomization( f131_local2, f131_local29 )
 						local f131_local16 = nil
 						for f131_local23, f131_local24 in ipairs( f131_local15.outfits ) do
@@ -1520,7 +1520,7 @@ CoD.WZUtility.CreateCharacterCategoryDataSource = function ( f130_arg0, f130_arg
 									}
 									local f131_local25 = f131_local28[0xCB98543E7EC137]
 									if not f131_local25 then
-										f131_local25 = 0x0
+										f131_local25 = ""
 									end
 									f131_local24.fullName = f131_local25
 									f131_local24.icon = f131_local28.positionDraftIcon
@@ -1529,25 +1529,25 @@ CoD.WZUtility.CreateCharacterCategoryDataSource = function ( f130_arg0, f130_arg
 									f131_local24.isBMLocked = f131_local11
 									f131_local24.jobTitle = CoD.PlayerRoleUtility.GetCharacterTraitTitle( f131_local2, f131_local29 )
 									f131_local24.tooltipArchetype = f131_arg1.tooltipArchetype
-									f131_local24.characterInT4 = f131_local30[0xBF1CCE3018DC22F] == 1
-									f131_local24.characterInT5 = f131_local30[0xBF1CBE3018DC07C] == 1
-									f131_local24.characterInT6 = f131_local30[0xBF1CEE3018DC595] == 1
-									f131_local24.characterInT7 = f131_local30[0xBF1CDE3018DC3E2] == 1
-									f131_local24.characterInT8 = f131_local30[0xBF1D0E3018DC8FB] == 1
+									f131_local24.characterInT4 = f131_local30.characterint4 == 1
+									f131_local24.characterInT5 = f131_local30.characterint5 == 1
+									f131_local24.characterInT6 = f131_local30.characterint6 == 1
+									f131_local24.characterInT7 = f131_local30.characterint7 == 1
+									f131_local24.characterInT8 = f131_local30.characterint8 == 1
 									f131_local24.isSelected = f131_local1 == f131_local29
 									f131_local24.customizationMode = f130_arg1
 									f131_local24.isDefaultCharacter = f131_local30[0xC9366DE09ED7379] == 1
 									f131_local24.availabilityText = f131_local14
 									f131_local24.purchasable = f131_local15
 									f131_local24.breadcrumb = f131_local5[CoD.BreadcrumbUtility.CharacterBreadcrumbModelPrefixTable[f131_local2] .. f131_local29]
-									f131_local24.isEchelonUnlock = f131_local30[0x8E63886F9B0BAB] == 1
+									f131_local24.isEchelonUnlock = f131_local30.isechelonunlock == 1
 									f131_local24.hasCustomization = f131_local19
-									f131_local24.previewEnabled = f130_arg1 == Enum.eModes[0x83EBA96F36BC4E5]
+									f131_local24.previewEnabled = f130_arg1 == Enum.eModes.mode_multiplayer
 									f131_local23.models = f131_local24
 									f131_local23.properties = {
 										characterIndex = f131_local29,
 										character = f131_local28,
-										sortIndex = f131_local30["sortindex"],
+										sortIndex = f131_local30.sortindex,
 										selectIndex = f131_local16,
 										purchasable = f131_local15
 									}
@@ -1593,7 +1593,7 @@ CoD.WZUtility.CreateCharacterCategoryDataSource = function ( f130_arg0, f130_arg
 								}
 								local f131_local25 = f131_local28[0xCB98543E7EC137]
 								if not f131_local25 then
-									f131_local25 = 0x0
+									f131_local25 = ""
 								end
 								f131_local24.fullName = f131_local25
 								f131_local24.icon = f131_local28.positionDraftIcon
@@ -1602,25 +1602,25 @@ CoD.WZUtility.CreateCharacterCategoryDataSource = function ( f130_arg0, f130_arg
 								f131_local24.isBMLocked = f131_local11
 								f131_local24.jobTitle = CoD.PlayerRoleUtility.GetCharacterTraitTitle( f131_local2, f131_local29 )
 								f131_local24.tooltipArchetype = f131_arg1.tooltipArchetype
-								f131_local24.characterInT4 = f131_local30[0xBF1CCE3018DC22F] == 1
-								f131_local24.characterInT5 = f131_local30[0xBF1CBE3018DC07C] == 1
-								f131_local24.characterInT6 = f131_local30[0xBF1CEE3018DC595] == 1
-								f131_local24.characterInT7 = f131_local30[0xBF1CDE3018DC3E2] == 1
-								f131_local24.characterInT8 = f131_local30[0xBF1D0E3018DC8FB] == 1
+								f131_local24.characterInT4 = f131_local30.characterint4 == 1
+								f131_local24.characterInT5 = f131_local30.characterint5 == 1
+								f131_local24.characterInT6 = f131_local30.characterint6 == 1
+								f131_local24.characterInT7 = f131_local30.characterint7 == 1
+								f131_local24.characterInT8 = f131_local30.characterint8 == 1
 								f131_local24.isSelected = f131_local1 == f131_local29
 								f131_local24.customizationMode = f130_arg1
 								f131_local24.isDefaultCharacter = f131_local30[0xC9366DE09ED7379] == 1
 								f131_local24.availabilityText = f131_local14
 								f131_local24.purchasable = f131_local15
 								f131_local24.breadcrumb = f131_local5[CoD.BreadcrumbUtility.CharacterBreadcrumbModelPrefixTable[f131_local2] .. f131_local29]
-								f131_local24.isEchelonUnlock = f131_local30[0x8E63886F9B0BAB] == 1
+								f131_local24.isEchelonUnlock = f131_local30.isechelonunlock == 1
 								f131_local24.hasCustomization = f131_local19
-								f131_local24.previewEnabled = f130_arg1 == Enum.eModes[0x83EBA96F36BC4E5]
+								f131_local24.previewEnabled = f130_arg1 == Enum.eModes.mode_multiplayer
 								f131_local23.models = f131_local24
 								f131_local23.properties = {
 									characterIndex = f131_local29,
 									character = f131_local28,
-									sortIndex = f131_local30["sortindex"],
+									sortIndex = f131_local30.sortindex,
 									selectIndex = f131_local16,
 									purchasable = f131_local15
 								}
@@ -1666,7 +1666,7 @@ CoD.WZUtility.CreateCharacterCategoryDataSource = function ( f130_arg0, f130_arg
 						}
 						local f131_local25 = f131_local28[0xCB98543E7EC137]
 						if not f131_local25 then
-							f131_local25 = 0x0
+							f131_local25 = ""
 						end
 						f131_local24.fullName = f131_local25
 						f131_local24.icon = f131_local28.positionDraftIcon
@@ -1675,25 +1675,25 @@ CoD.WZUtility.CreateCharacterCategoryDataSource = function ( f130_arg0, f130_arg
 						f131_local24.isBMLocked = f131_local11
 						f131_local24.jobTitle = CoD.PlayerRoleUtility.GetCharacterTraitTitle( f131_local2, f131_local29 )
 						f131_local24.tooltipArchetype = f131_arg1.tooltipArchetype
-						f131_local24.characterInT4 = f131_local30[0xBF1CCE3018DC22F] == 1
-						f131_local24.characterInT5 = f131_local30[0xBF1CBE3018DC07C] == 1
-						f131_local24.characterInT6 = f131_local30[0xBF1CEE3018DC595] == 1
-						f131_local24.characterInT7 = f131_local30[0xBF1CDE3018DC3E2] == 1
-						f131_local24.characterInT8 = f131_local30[0xBF1D0E3018DC8FB] == 1
+						f131_local24.characterInT4 = f131_local30.characterint4 == 1
+						f131_local24.characterInT5 = f131_local30.characterint5 == 1
+						f131_local24.characterInT6 = f131_local30.characterint6 == 1
+						f131_local24.characterInT7 = f131_local30.characterint7 == 1
+						f131_local24.characterInT8 = f131_local30.characterint8 == 1
 						f131_local24.isSelected = f131_local1 == f131_local29
 						f131_local24.customizationMode = f130_arg1
 						f131_local24.isDefaultCharacter = f131_local30[0xC9366DE09ED7379] == 1
 						f131_local24.availabilityText = f131_local14
 						f131_local24.purchasable = f131_local15
 						f131_local24.breadcrumb = f131_local5[CoD.BreadcrumbUtility.CharacterBreadcrumbModelPrefixTable[f131_local2] .. f131_local29]
-						f131_local24.isEchelonUnlock = f131_local30[0x8E63886F9B0BAB] == 1
+						f131_local24.isEchelonUnlock = f131_local30.isechelonunlock == 1
 						f131_local24.hasCustomization = f131_local19
-						f131_local24.previewEnabled = f130_arg1 == Enum.eModes[0x83EBA96F36BC4E5]
+						f131_local24.previewEnabled = f130_arg1 == Enum.eModes.mode_multiplayer
 						f131_local23.models = f131_local24
 						f131_local23.properties = {
 							characterIndex = f131_local29,
 							character = f131_local28,
-							sortIndex = f131_local30["sortindex"],
+							sortIndex = f131_local30.sortindex,
 							selectIndex = f131_local16,
 							purchasable = f131_local15
 						}
@@ -1732,18 +1732,18 @@ DataSources.WZCharacterCategories = DataSourceHelpers.ListSetup( "WZCharacterCat
 	local f133_local5 = DataSources.CharacterBreadcrumbs.recreateCharacterBreadcrumbModelsIfNeeded( f133_arg0, Engine.CurrentSessionMode() )
 	local f133_local6 = {
 		{
-			mode = Enum.eModes[0xBF1DCC8138A9D39],
-			name = 0xA2DD20750465431,
+			mode = Enum.eModes.mode_warzone,
+			name = "menu/warzone",
 			frameWidget = "CoD.CharacterSelection_CustomCharacterFrameWidget",
 			personalizeFrameWidget = "CoD.WZPersonalizeCharacter_CustomCharacterFrameWidget"
 		},
 		{
-			mode = Enum.eModes[0x3723205FAE52C4A],
-			name = 0xB06081B8B4567F2
+			mode = Enum.eModes.mode_zombies,
+			name = "menu/zombies"
 		},
 		{
-			mode = Enum.eModes[0x83EBA96F36BC4E5],
-			name = 0x55D96CC762EABDD
+			mode = Enum.eModes.mode_multiplayer,
+			name = "menu/multiplayer"
 		}
 	}
 	local f133_local7 = {}
@@ -1822,7 +1822,7 @@ DataSourceHelpers.PerControllerDataSourceSetup( "WZDefaultCharacterInfo", "WZDef
 		else
 			f134_local10( f134_local11, f134_local12 )
 			f134_local10 = f134_arg0:create( "jobTitle" )
-			f134_local10:set( 0xA469D89653A7B0 )
+			f134_local10:set( "menu/default_character" )
 			f134_local10 = f134_arg0:create( "disabled" )
 			f134_local10:set( false )
 			f134_local10 = f134_arg0:create( "characterInT4" )
@@ -1836,7 +1836,7 @@ DataSourceHelpers.PerControllerDataSourceSetup( "WZDefaultCharacterInfo", "WZDef
 			f134_local10 = f134_arg0:create( "characterInT8" )
 			f134_local10:set( false )
 			f134_local10 = f134_arg0:create( "customizationMode" )
-			f134_local10:set( Enum.eModes[0xBF1DCC8138A9D39] )
+			f134_local10:set( Enum.eModes.mode_warzone )
 			f134_local10 = f134_arg0:create( "isDefaultCharacter" )
 			f134_local10:set( true )
 			f134_local10 = f134_arg0:create( "availabilityText" )
@@ -1982,19 +1982,19 @@ DataSourceHelpers.PerControllerDataSourceSetup( "WarzoneInventory", "hudItems.in
 	f140_local0 = f140_arg0:create( "quickConsumeNetworkId" )
 	f140_local0:set( 0 )
 	f140_local0 = f140_arg0:create( "pickedUpItem" )
-	f140_local0:set( 0x0 )
+	f140_local0:set( "" )
 	f140_local0 = f140_arg0:create( "droppedItem" )
-	f140_local0:set( 0x0 )
+	f140_local0:set( "" )
 	f140_local0 = f140_arg0:create( "consumedItem" )
-	f140_local0:set( 0x0 )
+	f140_local0:set( "" )
 	f140_local0 = f140_arg0:create( "cannotEquipItem" )
 	f140_local0:set( "" )
 	f140_local0 = f140_arg0:create( "hasArmor" )
 	f140_local0:set( false )
 	f140_local0 = f140_arg0:create( "pickedUpWeapon" )
-	f140_local0:set( 0x0 )
+	f140_local0:set( "" )
 	f140_local0 = f140_arg0:create( "droppedWeapon" )
-	f140_local0:set( 0x0 )
+	f140_local0:set( "" )
 	f140_local0 = f140_arg0:create( "canUseQuickInventory" )
 	f140_local0:set( false )
 	f140_local0 = f140_arg0:create( "canNavigateLeft" )
@@ -2043,14 +2043,14 @@ DataSourceHelpers.PerControllerDataSourceSetup( "WarzoneInventory", "hudItems.in
 				if f141_local0 then
 					f141_local0 = Engine[0xBF99001028052B9]( f141_local0 )
 				end
-				if f141_local0 ~= nil and f141_local0 ~= 0x0 then
+				if f141_local0 ~= nil and f141_local0 ~= "" then
 					Engine[0x8A31148EE1BE3B1]( f141_local0 )
 					DataSources.WarzoneInventory.currentWeaponSubscriptions[f140_arg1].currentForcedImage = f141_local0
 				end
 			end
 		end )
 		DataSources.WarzoneInventory.currentWeaponSubscriptions[f140_arg1]:subscribeToModel( f140_arg0.pickedUpItem, function ( model )
-			if model:get() and model:get() ~= 0x0 then
+			if model:get() and model:get() ~= "" then
 				local f142_local0 = DataSources.WarzoneInventory.getModel( f140_arg1 )
 				if f142_local0.inventoryNag:get() == CoD.WZUtility.InventoryNag.NAG_NOT_SEEN then
 					f142_local0.inventoryNag:set( CoD.WZUtility.InventoryNag.NAG_VISIBLE )
@@ -2113,7 +2113,7 @@ end, false, {
 						}
 						local f147_local1 = model and model:get()
 						if f147_local1 ~= nil then
-							local f147_local2 = CoD.CACUtility.GetUnlockableItemInfoByAssetHash( f147_local1, Enum.eModes[0xBF1DCC8138A9D39] )
+							local f147_local2 = CoD.CACUtility.GetUnlockableItemInfoByAssetHash( f147_local1, Enum.eModes.mode_warzone )
 							if f147_local2 ~= nil and f147_local2.attributesTable then
 								f147_local0 = {
 									damage = f147_local2.attributesTable.damage,
@@ -2197,8 +2197,8 @@ CoD.WZUtility.SetupItemObjectives = function ( f153_arg0, f153_arg1, f153_arg2 )
 		f153_arg1:removeSubscription( f153_arg1.objectiveCompletedSubscription )
 		f153_arg1.objectiveCompletedSubscription = nil
 	end
-	if f153_local1 and f153_local1:get() ~= 0x0 then
-		local f153_local2 = Engine[0x8FF94BB44442412]( f153_local1:get(), Enum.eModes[0xBF1DCC8138A9D39] )
+	if f153_local1 and f153_local1:get() ~= "" then
+		local f153_local2 = Engine[0x8FF94BB44442412]( f153_local1:get(), Enum.eModes.mode_warzone )
 		local f153_local3 = Engine.GetModelForController( f153_arg0 )
 		f153_local3 = f153_local3.questInfo
 		local f153_local4 = f153_local3 and f153_local3[f153_local2]
@@ -2263,7 +2263,7 @@ CoD.WZUtility.IsQuestItem = function ( f156_arg0, f156_arg1 )
 		return false
 	elseif f156_local0.type and f156_local0.type:get() == "quest" then
 		return true
-	elseif f156_local0.unlockableItemRef and f156_local0.unlockableItemRef:get() ~= 0x0 then
+	elseif f156_local0.unlockableItemRef and f156_local0.unlockableItemRef:get() ~= "" then
 		return true
 	else
 		return false
@@ -2274,10 +2274,10 @@ CoD.WZUtility.WasQuestItemCompletedPreviously = function ( f157_arg0, f157_arg1 
 	local f157_local0 = f157_arg0:getModel()
 	if not f157_local0 then
 		return false
-	elseif not f157_local0.unlockableItemRef or f157_local0.unlockableItemRef:get() == 0x0 then
+	elseif not f157_local0.unlockableItemRef or f157_local0.unlockableItemRef:get() == "" then
 		return false
 	else
-		local f157_local1 = Engine[0x8FF94BB44442412]( f157_local0.unlockableItemRef:get(), Enum.eModes[0xBF1DCC8138A9D39] )
+		local f157_local1 = Engine[0x8FF94BB44442412]( f157_local0.unlockableItemRef:get(), Enum.eModes.mode_warzone )
 		if f157_local1 == 0 then
 			return false
 		else
@@ -2305,7 +2305,7 @@ CoD.WZUtility.GetDisplayNameFromRef = function ( f159_arg0, f159_arg1 )
 		f159_arg0 = Engine.CurrentSessionMode()
 	end
 	if not f159_arg1 or f159_arg1 == "" then
-		return 0x0
+		return ""
 	end
 	local f159_local0 = f159_arg1
 	if type( f159_local0 ) ~= "xhash" then
@@ -2336,13 +2336,13 @@ CoD.WZUtility.GetUnlockMissionString = function ( f161_arg0 )
 	if not f161_local1 then
 		return "null/empty"
 	elseif f161_local1.itemGroup == "hero" then
-		if f161_local1[0xC190A0450674B42] == 1 and IsBooleanDvarSet( 0xA5FD7D94CFC9DFD ) then
-			return 0x1CEFA3478BFC48F
+		if f161_local1[0xC190A0450674B42] == 1 and IsBooleanDvarSet( "wz_mp_character_unlocks_outfits" ) then
+			return "wz/outfit_mission"
 		else
 			return "wz/character_mission"
 		end
 	else
-		return 0x40CC7EC370B2641
+		return "wz/unlock_steps"
 	end
 end
 
@@ -2371,13 +2371,13 @@ DataSourceHelpers.PerControllerDataSourceSetup( "WarzoneInventoryGlobal", "hudIt
 	end
 	if not f164_arg0.equipment.slotName then
 		local f164_local0 = f164_arg0.health:create( "slotName" )
-		f164_local0:set( 0x48AA8EED3118F2E )
+		f164_local0:set( "warzone/health" )
 		f164_local0 = f164_arg0.gear:create( "slotName" )
-		f164_local0:set( 0x3613CD7780DA54B )
+		f164_local0:set( "warzone/gear" )
 		f164_local0 = f164_arg0.storage:create( "slotName" )
-		f164_local0:set( 0x928F118849EE2B9 )
+		f164_local0:set( "warzone/storage" )
 		f164_local0 = f164_arg0.equipment:create( "slotName" )
-		f164_local0:set( 0x5A545FA74A9110 )
+		f164_local0:set( "warzone/equipment" )
 	end
 	f164_arg0:create( "initialize" )
 end, false )
@@ -2400,11 +2400,11 @@ end
 CoD.WZUtility.PrepareAttachmentsForWeaponId = function ( f167_arg0, f167_arg1, f167_arg2 )
 	local f167_local0 = {
 		"weapon/optic",
-		0x5CD233DFC9B82A2,
-		0xD4083C0F1E954E5,
+		"weapon/barrel",
+		"weapon/under_barrel",
 		"weapon/magazine",
-		0xFFFBEF52142B4AE,
-		0x16C441601DA8BEC
+		"weapon/body",
+		"weapon/stock"
 	}
 	f167_arg1._items = {}
 	if not f167_arg1._rootModel then
@@ -2950,7 +2950,7 @@ CoD.WZUtility.InitPlayerMarker = function ( f227_arg0, f227_arg1, f227_arg2, f22
 	f227_arg1:subscribeToGlobalModel( f227_arg3, "PerController", "scriptNotify", function ( model )
 		local f230_local0 = f227_arg0
 		local f230_local1 = CoD.GetScriptNotifyData( model )
-		if CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x4BB692DBC392D7F ) then
+		if CoD.ModelUtility.IsParamModelEqualToHashString( model, "teammate_waypoint_placed" ) then
 			local f230_local2 = f230_local1[1]
 			local f230_local3, f230_local4 = CoD.HUDUtility.TransformCompassRelativePositionToWorldPos( f227_arg3, f230_local1[2] / 999, f230_local1[3] / 999 )
 			Engine.SendClientScriptNotify( f227_arg3, "teammate_waypoint_placed", {
@@ -3022,7 +3022,7 @@ CoD.WZUtility.PlaceMarker = function ( f233_arg0, f233_arg1, f233_arg2 )
 	end
 	Engine.SendMenuResponse( f233_arg0, "WaypointPlaced", "placed", math.floor( (f233_local17 / f233_local20 + f233_local21) * 999 ) * 1000 + math.floor( (f233_local18 / f233_local20 + f233_local22) * 999 ) )
 	f233_local0:set( CoD.WZUtility.WaypointStatus.POST_PLACEMENT_DELAY )
-	Engine.PlaySound( "uin_warzone_waypoint_place" )
+	Engine.playsound( "uin_warzone_waypoint_place" )
 	if IsGamepad( f233_arg0 ) then
 		Engine.BlockGameFromKeyEvent()
 	end
@@ -3036,19 +3036,19 @@ CoD.WZUtility.RemoveMarker = function ( f234_arg0, f234_arg1 )
 	end
 	Engine.SendMenuResponse( f234_arg0, "WaypointPlaced", "removed", 0 )
 	f234_local0:set( CoD.WZUtility.WaypointStatus.POST_DELETION_DELAY )
-	Engine.PlaySound( "uin_warzone_waypoint_rmv" )
+	Engine.playsound( "uin_warzone_waypoint_rmv" )
 	if IsGamepad( f234_arg0 ) then
 		Engine.BlockGameFromKeyEvent()
 	end
 end
 
 CoD.WZUtility.NextWeapon = function ( f235_arg0 )
-	Engine.Exec( f235_arg0, "weapnext" )
+	Engine.exec( f235_arg0, "weapnext" )
 end
 
 CoD.WZUtility.PrevWeapon = function ( f236_arg0 )
 	if CoD.isPC then
-		Engine.Exec( f236_arg0, "weapprev" )
+		Engine.exec( f236_arg0, "weapprev" )
 	end
 end
 
@@ -3116,7 +3116,7 @@ end
 
 CoD.WZUtility.HasNextWeapon = function ( f242_arg0 )
 	local f242_local0 = CoD.SafeGetModelValue( Engine.GetModelForController( f242_arg0 ), "heldWeapons.1.equippedWeaponReference" )
-	return f242_local0 and f242_local0 ~= 0x0
+	return f242_local0 and f242_local0 ~= ""
 end
 
 CoD.WZUtility.ShouldShowWeaponAndAttachments = function ( f243_arg0 )
@@ -3124,7 +3124,7 @@ CoD.WZUtility.ShouldShowWeaponAndAttachments = function ( f243_arg0 )
 	if not f243_local0 then
 		return false
 	else
-		return CoD.CACUtility.GetPreviewImageLarge( Enum.eModes[0xBF1DCC8138A9D39], CoD.CACUtility.GetUnlockableItemInfo( f243_local0, Enum.eModes[0xBF1DCC8138A9D39] ) ) ~= RegisterImage( "blacktransparent" )
+		return CoD.CACUtility.GetPreviewImageLarge( Enum.eModes.mode_warzone, CoD.CACUtility.GetUnlockableItemInfo( f243_local0, Enum.eModes.mode_warzone ) ) ~= RegisterImage( "blacktransparent" )
 	end
 end
 
@@ -3183,11 +3183,11 @@ CoD.WZUtility.IsControllerDeadAndNotRespawning = function ( f248_arg0 )
 end
 
 CoD.WZUtility.GetPreviewImageLarge = function ( f249_arg0 )
-	return CoD.CACUtility.GetPreviewImageLarge( Enum.eModes[0xBF1DCC8138A9D39], CoD.CACUtility.GetUnlockableItemInfo( f249_arg0, Enum.eModes[0xBF1DCC8138A9D39] ) )
+	return CoD.CACUtility.GetPreviewImageLarge( Enum.eModes.mode_warzone, CoD.CACUtility.GetUnlockableItemInfo( f249_arg0, Enum.eModes.mode_warzone ) )
 end
 
 CoD.WZUtility.GetWeaponNameString = function ( f250_arg0, f250_arg1 )
-	local f250_local0 = CoD.CACUtility.GetUnlockableItemInfo( f250_arg1, Enum.eModes[0xBF1DCC8138A9D39] )
+	local f250_local0 = CoD.CACUtility.GetUnlockableItemInfo( f250_arg1, Enum.eModes.mode_warzone )
 	if not f250_local0 then
 		return ""
 	else
@@ -3196,7 +3196,7 @@ CoD.WZUtility.GetWeaponNameString = function ( f250_arg0, f250_arg1 )
 end
 
 CoD.WZUtility.GetWeaponNameColor = function ( f251_arg0, f251_arg1 )
-	if not CoD.CACUtility.GetUnlockableItemInfo( f251_arg1, Enum.eModes[0xBF1DCC8138A9D39] ) then
+	if not CoD.CACUtility.GetUnlockableItemInfo( f251_arg1, Enum.eModes.mode_warzone ) then
 		return CoD.ColorUtility.ExplodeColor( ColorSet.T8__OFF__WHITE )
 	else
 		local f251_local0 = CoD.SafeGetModelValue( Engine.GetModelForController( f251_arg0 ), "hudItems.inventory.currentWeapon.isOperator" ) or 0
@@ -3213,7 +3213,7 @@ end
 
 CoD.WZUtility.GetWeaponAmmoString = function ( f252_arg0, f252_arg1 )
 	local f252_local0 = CoD.SafeGetModelValue( Engine.GetModelForController( f252_arg0 ), "hudItems.inventory.currentWeapon.ammoType" )
-	if not f252_local0 or f252_local0 == 0x0 then
+	if not f252_local0 or f252_local0 == "" then
 		return ""
 	else
 		return Engine[0xF9F1239CFD921FE]( 0x2B266B4344E94C, f252_local0 )
@@ -3221,15 +3221,15 @@ CoD.WZUtility.GetWeaponAmmoString = function ( f252_arg0, f252_arg1 )
 end
 
 CoD.WZUtility.GetWeaponNameAndAmmoString = function ( f253_arg0, f253_arg1 )
-	local f253_local0 = CoD.CACUtility.GetUnlockableItemInfo( f253_arg1, Enum.eModes[0xBF1DCC8138A9D39] )
+	local f253_local0 = CoD.CACUtility.GetUnlockableItemInfo( f253_arg1, Enum.eModes.mode_warzone )
 	if not f253_local0 then
 		return ""
 	else
 		local f253_local1 = CoD.SafeGetModelValue( Engine.GetModelForController( f253_arg0 ), "hudItems.inventory.currentWeapon.ammoType" )
-		if not f253_local1 or f253_local1 == 0x0 then
+		if not f253_local1 or f253_local1 == "" then
 			return Engine[0xF9F1239CFD921FE]( f253_local0.displayName )
 		else
-			return Engine[0xF9F1239CFD921FE]( 0x1DD58AA20274399, f253_local0.displayName, f253_local1 )
+			return Engine[0xF9F1239CFD921FE]( "menu/favorite_specialist_stats", f253_local0.displayName, f253_local1 )
 		end
 	end
 end
@@ -3242,8 +3242,8 @@ CoD.WZUtility.AddAmmoString = function ( f254_arg0, f254_arg1, f254_arg2 )
 		f254_local1 = f254_local1["weapon" .. f254_local0].ammoType
 		if f254_local1 then
 			f254_local2 = f254_local1:get()
-			if f254_local2 and f254_local2 ~= 0x0 then
-				return Engine[0xF9F1239CFD921FE]( 0x1DD58AA20274399, f254_arg2, f254_local2 )
+			if f254_local2 and f254_local2 ~= "" then
+				return Engine[0xF9F1239CFD921FE]( "menu/favorite_specialist_stats", f254_arg2, f254_local2 )
 			end
 		end
 	end
@@ -3293,7 +3293,7 @@ end
 
 CoD.WZUtility.OpenQuickAccessInventory = function ( f259_arg0, f259_arg1 )
 	SetControllerModelValue( f259_arg1, "hudItems.inventory.open", true )
-	Engine.PlaySound( "uin_wz_menu_equip_open", f259_arg1 )
+	Engine.playsound( "uin_wz_menu_equip_open", f259_arg1 )
 	CoD.WZUtility.UpdateDpadLeftRightAvailability( f259_arg0, f259_arg1 )
 	local f259_local0 = CoD.OptionsUtility.IsProfileIntValue( f259_arg1, "warzoneCycleItems", 1 )
 	if f259_arg0._quickAccessInventory.widgets then
@@ -3330,7 +3330,7 @@ end
 
 CoD.WZUtility.CloseQuickAccessInventory = function ( f260_arg0, f260_arg1 )
 	SetControllerModelValue( f260_arg1, "hudItems.inventory.open", false )
-	Engine.PlaySound( "uin_wz_menu_equip_close", f260_arg1 )
+	Engine.playsound( "uin_wz_menu_equip_close", f260_arg1 )
 	Engine[0x7CD221DF1911DD1]( f260_arg1 )
 	if f260_arg0._quickAccessInventory and f260_arg0._quickAccessInventory._selectedList then
 		f260_arg0._quickAccessInventory._selectedList:processEvent( {
@@ -3437,38 +3437,38 @@ end
 CoD.WZUtility.AddQuickInventoryNavigation = function ( f266_arg0, f266_arg1, f266_arg2, f266_arg3 )
 	local f266_local0 = LUI.GridLayout.NavigationFlags.CHANGE_FOCUS
 	f266_arg1._quickAccessList = f266_arg3
-	CoD.Menu.AddButtonCallbackFunction( f266_arg0, f266_arg3, f266_arg2, Enum.LUIButton[0x57783F8DA4AAEF], "ui_navleft", function ( f267_arg0, f267_arg1, f267_arg2, f267_arg3 )
-		local f267_local0 = CoD.OptionsUtility.IsProfileIntValue( f267_arg2, "warzoneCycleItems", 1 )
+	CoD.Menu.AddButtonCallbackFunction( f266_arg0, f266_arg3, f266_arg2, Enum.LUIButton[0x57783F8DA4AAEF], "ui_navleft", function ( element, menu, controller, f267_arg3 )
+		local f267_local0 = CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 )
 		if not f266_arg3.m_disableNavigation then
 			if not (not f266_arg3.dpadDisabled or not IsDpadButton( f267_arg3 )) or f266_arg3:navigateItemLeft( f266_local0 ) then
-				CoD.WZUtility.UpdateDpadLeftRightAvailability( f267_arg1, f267_arg2 )
+				CoD.WZUtility.UpdateDpadLeftRightAvailability( menu, controller )
 				return true
 			end
-			local f267_local1 = LuaUtils.FindItemInArray( f267_arg1._quickAccessInventory.widgets, f266_arg3:getParent() )
+			local f267_local1 = LuaUtils.FindItemInArray( menu._quickAccessInventory.widgets, f266_arg3:getParent() )
 			if f267_local1 ~= nil then
-				for f267_local2 = 1, #f267_arg1._quickAccessInventory.widgets - 1, 1 do
+				for f267_local2 = 1, #menu._quickAccessInventory.widgets - 1, 1 do
 					local f267_local5 = f267_local1 - f267_local2
 					if f267_local5 <= 0 then
-						f267_local5 = f267_local5 + #f267_arg1._quickAccessInventory.widgets
+						f267_local5 = f267_local5 + #menu._quickAccessInventory.widgets
 					end
 					local f267_local6
 					if f267_local0 then
 						local f267_local7 = f267_local0
-						f267_local6 = not f267_arg1._quickAccessInventory.widgets[f267_local5]._disableInCycle
+						f267_local6 = not menu._quickAccessInventory.widgets[f267_local5]._disableInCycle
 					else
 						f267_local6 = f267_local7 and true
 					end
-					if f267_arg1._quickAccessInventory.widgets[f267_local5] and f267_local6 then
-						local f267_local8 = f267_arg1._quickAccessInventory.widgets[f267_local5].InventoryEquipmentLarge
+					if menu._quickAccessInventory.widgets[f267_local5] and f267_local6 then
+						local f267_local8 = menu._quickAccessInventory.widgets[f267_local5].InventoryEquipmentLarge
 						if f267_local8 then
 							f267_local8:setActiveItem( f267_local8:getLastSelectableItem(), 0 )
 						end
-						if f267_arg1._quickAccessInventory.widgets[f267_local5]:processEvent( {
+						if menu._quickAccessInventory.widgets[f267_local5]:processEvent( {
 							name = "gain_focus",
-							controller = f267_arg2
+							controller = controller
 						} ) then
-							f267_arg1._quickAccessInventory._selectedList = f267_arg1._quickAccessInventory.widgets[f267_local5]
-							CoD.WZUtility.UpdateDpadLeftRightAvailability( f267_arg1, f267_arg2 )
+							menu._quickAccessInventory._selectedList = menu._quickAccessInventory.widgets[f267_local5]
+							CoD.WZUtility.UpdateDpadLeftRightAvailability( menu, controller )
 							return true
 						end
 					end
@@ -3476,41 +3476,41 @@ CoD.WZUtility.AddQuickInventoryNavigation = function ( f266_arg0, f266_arg1, f26
 			end
 		end
 	end )
-	CoD.Menu.AddButtonCallbackFunction( f266_arg0, f266_arg3, f266_arg2, Enum.LUIButton[0x571F08AD84807E0], "ui_navright", function ( f268_arg0, f268_arg1, f268_arg2, f268_arg3 )
-		local f268_local0 = CoD.OptionsUtility.IsProfileIntValue( f268_arg2, "warzoneCycleItems", 1 )
+	CoD.Menu.AddButtonCallbackFunction( f266_arg0, f266_arg3, f266_arg2, Enum.LUIButton[0x571F08AD84807E0], "ui_navright", function ( element, menu, controller, f268_arg3 )
+		local f268_local0 = CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 )
 		if not f266_arg3.m_disableNavigation then
 			if not (not f266_arg3.dpadDisabled or not IsDpadButton( f268_arg3 )) or f266_arg3:navigateItemRight( f266_local0 ) then
-				CoD.WZUtility.UpdateDpadLeftRightAvailability( f268_arg1, f268_arg2 )
+				CoD.WZUtility.UpdateDpadLeftRightAvailability( menu, controller )
 				return true
 			end
-			local f268_local1 = LuaUtils.FindItemInArray( f268_arg1._quickAccessInventory.widgets, f266_arg3:getParent() )
+			local f268_local1 = LuaUtils.FindItemInArray( menu._quickAccessInventory.widgets, f266_arg3:getParent() )
 			if f268_local1 ~= nil then
-				for f268_local2 = 1, #f268_arg1._quickAccessInventory.widgets - 1, 1 do
+				for f268_local2 = 1, #menu._quickAccessInventory.widgets - 1, 1 do
 					local f268_local5 = f268_local1 + f268_local2
-					if #f268_arg1._quickAccessInventory.widgets < f268_local5 then
-						f268_local5 = f268_local5 - #f268_arg1._quickAccessInventory.widgets
+					if #menu._quickAccessInventory.widgets < f268_local5 then
+						f268_local5 = f268_local5 - #menu._quickAccessInventory.widgets
 					end
-					if #f268_arg1._quickAccessInventory.widgets < f268_local5 then
-						f268_local5 = f268_local5 - #f268_arg1._quickAccessInventory.widgets
+					if #menu._quickAccessInventory.widgets < f268_local5 then
+						f268_local5 = f268_local5 - #menu._quickAccessInventory.widgets
 					end
 					local f268_local6
 					if f268_local0 then
 						local f268_local7 = f268_local0
-						f268_local6 = not f268_arg1._quickAccessInventory.widgets[f268_local5]._disableInCycle
+						f268_local6 = not menu._quickAccessInventory.widgets[f268_local5]._disableInCycle
 					else
 						f268_local6 = f268_local7 and true
 					end
-					if f268_arg1._quickAccessInventory.widgets[f268_local5] and f268_local6 then
-						local f268_local8 = f268_arg1._quickAccessInventory.widgets[f268_local5].InventoryEquipmentLarge
+					if menu._quickAccessInventory.widgets[f268_local5] and f268_local6 then
+						local f268_local8 = menu._quickAccessInventory.widgets[f268_local5].InventoryEquipmentLarge
 						if f268_local8 then
 							f268_local8:setActiveItem( f268_local8:getFirstSelectableItem(), 0 )
 						end
-						if f268_arg1._quickAccessInventory.widgets[f268_local5]:processEvent( {
+						if menu._quickAccessInventory.widgets[f268_local5]:processEvent( {
 							name = "gain_focus",
-							controller = f268_arg2
+							controller = controller
 						} ) then
-							f268_arg1._quickAccessInventory._selectedList = f268_arg1._quickAccessInventory.widgets[f268_local5]
-							CoD.WZUtility.UpdateDpadLeftRightAvailability( f268_arg1, f268_arg2 )
+							menu._quickAccessInventory._selectedList = menu._quickAccessInventory.widgets[f268_local5]
+							CoD.WZUtility.UpdateDpadLeftRightAvailability( menu, controller )
 							return true
 						end
 					end
@@ -3709,12 +3709,12 @@ CoD.WZUtility.GameStatusIndicatorShouldShowRedX = function ( f287_arg0, f287_arg
 end
 
 DataSourceHelpers.PerControllerDataSourceSetup( "WarzoneGameStatusIndicatorList", "WarzoneGameStatusIndicatorList", function ( f288_arg0, f288_arg1 )
-	local f288_local0 = Engine[0xE00B2F29271C60B]( 0x8C4EED4107C50C9 )
+	local f288_local0 = Engine[0xE00B2F29271C60B]( "wz_game_status_indicators" )
 	if not f288_local0 then
 		return 
 	end
 	for f288_local7, f288_local8 in pairs( CoD.WZUtility.IndicatorToModels ) do
-		if f288_local7 ~= "cash" or f288_local7 == "cash" and IsBooleanDvarSet( 0x74ED0F04816B75 ) then
+		if f288_local7 ~= "cash" or f288_local7 == "cash" and IsBooleanDvarSet( "cash_deposit_enabled" ) then
 			local f288_local4 = f288_arg0.key
 			if not f288_local4 then
 				f288_local4 = f288_arg0:create( f288_local7 )
@@ -3729,7 +3729,7 @@ DataSourceHelpers.PerControllerDataSourceSetup( "WarzoneGameStatusIndicatorList"
 			if not f288_local4.icon then
 				local f288_local5 = Engine[0xC53F8D38DF9042B]( "icon" .. f288_local7 )
 				local f288_local6 = f288_local4:create( "icon" )
-				f288_local6:set( f288_local0[f288_local5] and f288_local0[f288_local5] or 0xF6C08F962CB71E4 )
+				f288_local6:set( f288_local0[f288_local5] and f288_local0[f288_local5] or "ui_icon_dead" )
 			end
 			if not f288_local4.type then
 				local f288_local5 = f288_local4:create( "type" )
@@ -3742,7 +3742,7 @@ DataSources.WarzoneGameStatusIndicatorList.CommonPrepare = function ( f289_arg0,
 	if not f289_arg1._rootModel then
 		f289_arg1._rootModel = DataSources.WarzoneGameStatusIndicatorList.getModel( f289_arg0 )
 	end
-	local f289_local0 = Engine[0xE00B2F29271C60B]( 0x8C4EED4107C50C9 )
+	local f289_local0 = Engine[0xE00B2F29271C60B]( "wz_game_status_indicators" )
 	if not f289_local0 then
 		return 
 	end
@@ -3761,15 +3761,15 @@ DataSources.WarzoneGameStatusIndicatorList.CommonPrepare = function ( f289_arg0,
 	if not f289_arg1.scriptNotifySubscription and not f289_arg1.prematchEnded then
 		f289_arg1.prematchEnded = false
 		f289_arg1.scriptNotifySubscription = f289_arg1:subscribeToGlobalModel( f289_arg0, "PerController", "scriptNotify", function ( model )
-			if model:get() == 0x14431C3CAF07786 then
+			if model:get() == "prematch_timer_ended" then
 				f289_arg1.prematchEnded = true
 				f289_arg1:updateDataSource( false, true )
 			end
 		end )
 	end
 	for f289_local2 = 1, #f289_local0[f289_arg3], 1 do
-		local f289_local4 = f289_local0[f289_arg3][f289_local2][0xEE755C773176F1E]
-		if (f289_local4 ~= "cash" or f289_local4 == "cash" and IsBooleanDvarSet( 0x74ED0F04816B75 )) and (not f289_arg2 or f289_arg2( f289_arg1._rootModel[f289_local4] )) then
+		local f289_local4 = f289_local0[f289_arg3][f289_local2].indicator
+		if (f289_local4 ~= "cash" or f289_local4 == "cash" and IsBooleanDvarSet( "cash_deposit_enabled" )) and (not f289_arg2 or f289_arg2( f289_arg1._rootModel[f289_local4] )) then
 			local f289_local5 = nil
 			if f289_local4 == "playersspectating" then
 				if f289_arg1._rootModel[f289_local4] and f289_arg1._rootModel[f289_local4].value1 and f289_arg1._rootModel[f289_local4].value1:get() then
@@ -4055,7 +4055,7 @@ CoD.WZUtility.UpdateWZInventoryTooltipOnElementPC = function ( f333_arg0, f333_a
 	if f333_local0 then
 		if f333_local0.description then
 			local f333_local1 = Engine.GetModelValue( f333_local0.description )
-			if f333_local1 ~= 0x0 then
+			if f333_local1 ~= "" then
 				Engine.SetModelValue( Engine.CreateModel( f333_local0, "detailedDescription" ), Engine.Localize( f333_local1 ) )
 			else
 				Engine.SetModelValue( Engine.CreateModel( f333_local0, "detailedDescription" ), "" )
@@ -4111,7 +4111,7 @@ end
 CoD.WZUtility.GetArmorStashCountString = function ( f339_arg0, f339_arg1 )
 	local f339_local0
 	if f339_arg1 then
-		f339_local0 = LocalizeIntoStringIfNotEmpty( 0x674D175D3480E09, f339_arg1 )
+		f339_local0 = LocalizeIntoStringIfNotEmpty( "mp/multiplier_x", f339_arg1 )
 		if not f339_local0 then
 		
 		else
@@ -4273,7 +4273,7 @@ CoD.WZUtility.SetSignatureWeapon = function ( f350_arg0, f350_arg1, f350_arg2 )
 				end
 			end
 		end
-		if f350_arg0.equipSound and f350_arg0.equipSound ~= 0x0 then
+		if f350_arg0.equipSound and f350_arg0.equipSound ~= "" then
 			Engine[0x98954175CA6A32C]( f350_arg0.equipSound )
 		end
 		f350_local3.weaponModelSlot:set( f350_local4 )
@@ -4303,7 +4303,7 @@ CoD.WZUtility.ArrayContains = function ( f351_arg0, f351_arg1 )
 end
 
 CoD.WZUtility.GetPersonalizeItemsForItemGroup = function ( f352_arg0, f352_arg1, f352_arg2 )
-	local f352_local0 = CoD.CACUtility.GetUnlockableItemsForItemGroup( f352_arg0, Enum.eModes[0xBF1DCC8138A9D39], f352_arg2 )
+	local f352_local0 = CoD.CACUtility.GetUnlockableItemsForItemGroup( f352_arg0, Enum.eModes.mode_warzone, f352_arg2 )
 	local f352_local1 = {}
 	for f352_local5, f352_local6 in ipairs( f352_local0 ) do
 		if CoD.WZUtility.ArrayContains( CoD.WZUtility.WZPersonalizeWeaponNames, f352_local6.nameHash ) then
@@ -4317,7 +4317,7 @@ CoD.WZUtility.GetEquippedSignatureWeaponImage = function ( f353_arg0, f353_arg1,
 	if f353_arg0.useVariantSlot and f353_arg0.useVariantSlot:get() > 0 then
 		return f353_arg0.image:get()
 	else
-		local f353_local0 = Enum.eModes[0xBF1DCC8138A9D39]
+		local f353_local0 = Enum.eModes.mode_warzone
 		local f353_local1 = f353_arg2
 		local f353_local2 = Enum[0x6EB546760F890D2][0x569E84652131CD7]
 		if f353_local1 > CoD.CACUtility.EmptyItemIndex then
@@ -4344,7 +4344,7 @@ CoD.WZUtility.GetEquippedSignatureWeaponName = function ( f354_arg0, f354_arg1, 
 	if f354_arg0.useVariantSlot and f354_arg0.useVariantSlot:get() > 0 then
 		return f354_arg0.displayName:get()
 	else
-		local f354_local0 = Enum.eModes[0xBF1DCC8138A9D39]
+		local f354_local0 = Enum.eModes.mode_warzone
 		local f354_local1 = f354_arg2
 		local f354_local2 = Enum[0x6EB546760F890D2][0x569E84652131CD7]
 		if f354_local1 > CoD.CACUtility.EmptyItemIndex then
@@ -4357,8 +4357,8 @@ CoD.WZUtility.GetEquippedSignatureWeaponName = function ( f354_arg0, f354_arg1, 
 					local f354_local7 = f354_local6[f354_local5 + 1]
 					if f354_local7 then
 						if f354_local7[0xC2AA73D9F82E9C2] and f354_local7[0x2861D919C8A4186] then
-							if f354_local7[0x55F116BF695C8F6] then
-								f354_local3 = Engine[0xF9F1239CFD921FE]( f354_local7[0x55F116BF695C8F6] ) or f354_local3
+							if f354_local7.displayname then
+								f354_local3 = Engine[0xF9F1239CFD921FE]( f354_local7.displayname ) or f354_local3
 							end
 						else
 							f354_local3 = Engine[0xF9F1239CFD921FE]( 0x41954FC612B5845, f354_local3 )
@@ -4403,7 +4403,7 @@ end
 CoD.WZUtility.UpdatePersonalizeWeaponModel = function ( f357_arg0, f357_arg1, f357_arg2 )
 	local f357_local0 = CoD.BaseUtility.GetMenuSessionMode( f357_arg2 )
 	local f357_local1 = f357_arg2.__loadoutType
-	local f357_local2 = 0x0
+	local f357_local2 = ""
 	local f357_local3 = f357_arg0:getModel()
 	local f357_local4 = nil
 	if f357_local3 and f357_local3.itemIndex then
@@ -4686,8 +4686,8 @@ CoD.WZUtility.CreateMOTDWZTrialCard = function ( f371_arg0, f371_arg1 )
 			models = {
 				locked = false,
 				name = Engine[0xF9F1239CFD921FE]( 0xBB3EB781613CA2C ),
-				iconBackground = 0xCDCA8E930C437EF,
-				iconBackgroundFocus = 0xCDCA8E930C437EF,
+				iconBackground = "ui_icon_crm_featured_thanks",
+				iconBackgroundFocus = "ui_icon_crm_featured_thanks",
 				descriptionText = 0x1B03F3DADFD429C,
 				action = function ( f372_arg0, f372_arg1, f372_arg2, f372_arg3, f372_arg4 )
 					CoD.WZUtility.PlayWZTrialVideoInternal( f372_arg4, f372_arg2 )
@@ -4743,7 +4743,7 @@ CoD.WZUtility.HasAttachments = function ( f377_arg0, f377_arg1 )
 end
 
 CoD.WZUtility.GetDecoratedStringForRank = function ( f378_arg0, f378_arg1, f378_arg2 )
-	local f378_local0 = Enum.eModes[0xBF1DCC8138A9D39]
+	local f378_local0 = Enum.eModes.mode_warzone
 	if IsGameModeParagonCapable( f378_local0 ) and Engine.GetPrestigeCap( f378_local0 ) <= f378_arg2 then
 		return Engine[0xF9F1239CFD921FE]( 0x5927EF63E459082, Engine.GetParagonRankDisplayLevel( f378_arg1 ) )
 	elseif CoD.PrestigeUtility.GetMaxRankByMode( f378_local0 ) <= f378_arg0 then
@@ -4754,7 +4754,7 @@ CoD.WZUtility.GetDecoratedStringForRank = function ( f378_arg0, f378_arg1, f378_
 end
 
 CoD.WZUtility.GetRankColorForPLevel = function ( f379_arg0, f379_arg1 )
-	local f379_local0 = Enum.eModes[0xBF1DCC8138A9D39]
+	local f379_local0 = Enum.eModes.mode_warzone
 	if IsGameModeParagonCapable( f379_local0 ) and Engine.GetPrestigeCap( f379_local0 ) <= f379_arg1 then
 		return CoD.ColorUtility.ConvertTableToRGB( ColorSet.PlayerParagonOrange )
 	else
@@ -4768,7 +4768,7 @@ end
 
 CoD.WZUtility.GetOverheadRankColorForPLevelByXUID = function ( f381_arg0, f381_arg1 )
 	local f381_local0 = f381_arg1
-	local f381_local1 = Enum.eModes[0xBF1DCC8138A9D39]
+	local f381_local1 = Enum.eModes.mode_warzone
 	if IsGameModeParagonCapable( f381_local1 ) and Engine.GetPrestigeCap( f381_local1 ) <= CoD.PrestigeUtility.GetCurrentPLevel( f381_arg0 ) then
 		return CoD.ColorUtility.ConvertTableToRGB( ColorSet.PlayerParagonOrange )
 	else
@@ -4777,7 +4777,7 @@ CoD.WZUtility.GetOverheadRankColorForPLevelByXUID = function ( f381_arg0, f381_a
 end
 
 CoD.WZUtility.GetDecoratedStringForRankByXUID = function ( f382_arg0, f382_arg1 )
-	local f382_local0 = Enum.eModes[0xBF1DCC8138A9D39]
+	local f382_local0 = Enum.eModes.mode_warzone
 	local f382_local1 = f382_arg1
 	local f382_local2 = CoD.PrestigeUtility.GetCurrentPLevel( f382_arg0 )
 	local f382_local3 = Engine[0x19FAC7D9E55031E]( f382_local1, f382_local0 )
@@ -4799,7 +4799,7 @@ CoD.WZUtility.IsWarzoneUIHidden = function ( f384_arg0, f384_arg1, f384_arg2 )
 	local f384_local0 = Engine.GetProfileVarInt( f384_arg0, f384_arg2 )
 	local f384_local1 = Engine.GetGametypeSetting( "maxTeamPlayers" )
 	if f384_local0 ~= nil then
-		if f384_local0 == Enum[0x893D841C87EFCD2]["warzone_show"] then
+		if f384_local0 == Enum[0x893D841C87EFCD2].warzone_show then
 			return false
 		elseif f384_local0 == Enum[0x893D841C87EFCD2][0xAF5BF04553FFD4A] then
 			return f384_local1 > 1
@@ -4978,7 +4978,7 @@ CoD.WZUtility.SetupWaveEndTimer = function ( f400_arg0, f400_arg1 )
 end
 
 CoD.WZUtility.IsGameTypeEqualToBigTeam = function ()
-	local f401_local0 = Dvar[0xFF54369D6573B91]:get()
+	local f401_local0 = Dvar.g_gametype:get()
 	local f401_local1
 	if f401_local0 == nil or f401_local0 ~= "warzone_bigteam_quad" and f401_local0 ~= "warzone_bigteam_dbno_quad" then
 		f401_local1 = false

@@ -45,13 +45,13 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.CharacterPortrait = CharacterPortrait
 	
 	local ButtonPlus = LUI.UIImage.new( 0, 0, 40, 110, 0, 0, 222.5, 262.5 )
-	ButtonPlus:setImage( RegisterImage( 0x59184FA275B9459 ) )
+	ButtonPlus:setImage( RegisterImage( "uie_ui_hud_tak5_button_plus" ) )
 	self:addElement( ButtonPlus )
 	self.ButtonPlus = ButtonPlus
 	
 	local ButtonPlusAddWipe = LUI.UIImage.new( 0, 0, 40, 110, 0, 0, 222.5, 262.5 )
 	ButtonPlusAddWipe:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
-	ButtonPlusAddWipe:setImage( RegisterImage( 0x59184FA275B9459 ) )
+	ButtonPlusAddWipe:setImage( RegisterImage( "uie_ui_hud_tak5_button_plus" ) )
 	ButtonPlusAddWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	ButtonPlusAddWipe:setShaderVector( 0, 0, 1, 0, 0 )
 	ButtonPlusAddWipe:setShaderVector( 1, 0, 0, 0, 0 )
@@ -63,8 +63,8 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local ButtonPlusScreenline = LUI.UIImage.new( 0, 0, 40, 110, 0, 0, 222.5, 262.5 )
 	ButtonPlusScreenline:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
-	ButtonPlusScreenline:setImage( RegisterImage( 0x59184FA275B9459 ) )
-	ButtonPlusScreenline:setMaterial( LUI.UIImage.GetCachedMaterial( 0x92F09074FB20E6D ) )
+	ButtonPlusScreenline:setImage( RegisterImage( "uie_ui_hud_tak5_button_plus" ) )
+	ButtonPlusScreenline:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines" ) )
 	ButtonPlusScreenline:setShaderVector( 0, 2, 0, 0, 0 )
 	ButtonPlusScreenline:setShaderVector( 1, 1.5, 0, 0, 0 )
 	ButtonPlusScreenline:setShaderVector( 2, 0.04, 0, 0, 0 )
@@ -73,7 +73,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local ButtonPlusAdd = LUI.UIImage.new( 0, 0, 40, 110, 0, 0, 222.5, 262.5 )
 	ButtonPlusAdd:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
-	ButtonPlusAdd:setImage( RegisterImage( 0x59184FA275B9459 ) )
+	ButtonPlusAdd:setImage( RegisterImage( "uie_ui_hud_tak5_button_plus" ) )
 	ButtonPlusAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	ButtonPlusAdd:setShaderVector( 0, 0, 1, 0, 0 )
 	ButtonPlusAdd:setShaderVector( 1, 0, 0, 0, 0 )
@@ -84,14 +84,14 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.ButtonPlusAdd = ButtonPlusAdd
 	
 	local ButtonPlusFrame = LUI.UIImage.new( 0, 0, 38, 112, 0, 0, 222.5, 262.5 )
-	ButtonPlusFrame:setImage( RegisterImage( 0x324ACC0F8430E3 ) )
+	ButtonPlusFrame:setImage( RegisterImage( "uie_ui_hud_tak5_button_plus_frame" ) )
 	ButtonPlusFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ButtonPlusFrame )
 	self.ButtonPlusFrame = ButtonPlusFrame
 	
 	local ButtonPlusFrameWipe = LUI.UIImage.new( 0, 0, 38, 112, 0, 0, 222.5, 262.5 )
 	ButtonPlusFrameWipe:setRGB( 1, 0.8, 0 )
-	ButtonPlusFrameWipe:setImage( RegisterImage( 0x324ACC0F8430E3 ) )
+	ButtonPlusFrameWipe:setImage( RegisterImage( "uie_ui_hud_tak5_button_plus_frame" ) )
 	ButtonPlusFrameWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	ButtonPlusFrameWipe:setShaderVector( 0, 0, 1, 0, 0 )
 	ButtonPlusFrameWipe:setShaderVector( 1, 0, 0, 0, 0 )
@@ -103,7 +103,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local ButtonPlusFrameWipeAdd = LUI.UIImage.new( 0, 0, 38, 112, 0, 0, 222.5, 262.5 )
 	ButtonPlusFrameWipeAdd:setRGB( 1, 0.8, 0 )
-	ButtonPlusFrameWipeAdd:setImage( RegisterImage( 0x324ACC0F8430E3 ) )
+	ButtonPlusFrameWipeAdd:setImage( RegisterImage( "uie_ui_hud_tak5_button_plus_frame" ) )
 	ButtonPlusFrameWipeAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	ButtonPlusFrameWipeAdd:setShaderVector( 0, 0, 1, 0, 0 )
 	ButtonPlusFrameWipeAdd:setShaderVector( 1, 0, 0, 0, 0 )
@@ -124,7 +124,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local LinkerSolid = LUI.UIImage.new( 0, 0, 71, 79, 0, 0, 158, 226 )
 	LinkerSolid:setRGB( 1, 0.8, 0 )
 	LinkerSolid:setScale( 1, 1.02 )
-	LinkerSolid:setImage( RegisterImage( 0x2C543943537F2CB ) )
+	LinkerSolid:setImage( RegisterImage( "uie_ui_hud_tak5_linker_solid_normal" ) )
 	LinkerSolid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	LinkerSolid:setShaderVector( 0, 0, 1, 0, 0 )
 	LinkerSolid:setShaderVector( 1, 0, 0, 0, 0 )
@@ -136,7 +136,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local LinkerSolidGlow = LUI.UIImage.new( 0, 0, 47, 103, 0, 0, 153, 233 )
 	LinkerSolidGlow:setScale( 1, 1.02 )
-	LinkerSolidGlow:setImage( RegisterImage( 0x36383DEF0C496E9 ) )
+	LinkerSolidGlow:setImage( RegisterImage( "uie_ui_hud_tak5_linker_solid_glow" ) )
 	LinkerSolidGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	LinkerSolidGlow:setShaderVector( 0, 0, 1, 0, 0 )
 	LinkerSolidGlow:setShaderVector( 1, 0, 0, 0, 0 )
@@ -148,7 +148,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local ConnectorBot = LUI.UIImage.new( 0, 0, 67, 83, 0, 0, 216, 232 )
 	ConnectorBot:setScale( 0.5, 0.5 )
-	ConnectorBot:setImage( RegisterImage( 0xFA1D38EA1C38AC9 ) )
+	ConnectorBot:setImage( RegisterImage( "uie_ui_hud_tak5_link_con02" ) )
 	ConnectorBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ConnectorBot:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectorBot )
@@ -158,7 +158,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	ConnectorBotColor:setRGB( 1, 0.8, 0 )
 	ConnectorBotColor:setAlpha( 0 )
 	ConnectorBotColor:setScale( 0.5, 0.5 )
-	ConnectorBotColor:setImage( RegisterImage( 0xFA1D38EA1C38AC9 ) )
+	ConnectorBotColor:setImage( RegisterImage( "uie_ui_hud_tak5_link_con02" ) )
 	ConnectorBotColor:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	ConnectorBotColor:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectorBotColor )
@@ -168,7 +168,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	ConnectorBotAdd:setRGB( 1, 0.8, 0 )
 	ConnectorBotAdd:setAlpha( 0.8 )
 	ConnectorBotAdd:setScale( 0.5, 0.5 )
-	ConnectorBotAdd:setImage( RegisterImage( 0xFA1D38EA1C38AC9 ) )
+	ConnectorBotAdd:setImage( RegisterImage( "uie_ui_hud_tak5_link_con02" ) )
 	ConnectorBotAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ConnectorBotAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectorBotAdd )
@@ -176,7 +176,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local ConnectorMid = LUI.UIImage.new( 0, 0, 67, 83, 0, 0, 182.5, 198.5 )
 	ConnectorMid:setScale( 0.8, 0.8 )
-	ConnectorMid:setImage( RegisterImage( 0xFA1D08EA1C385B0 ) )
+	ConnectorMid:setImage( RegisterImage( "uie_ui_hud_tak5_link_con01" ) )
 	ConnectorMid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ConnectorMid:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectorMid )
@@ -186,7 +186,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	ConnectorMidColor:setRGB( 1, 0.8, 0 )
 	ConnectorMidColor:setAlpha( 0 )
 	ConnectorMidColor:setScale( 0.8, 0.8 )
-	ConnectorMidColor:setImage( RegisterImage( 0xFA1D08EA1C385B0 ) )
+	ConnectorMidColor:setImage( RegisterImage( "uie_ui_hud_tak5_link_con01" ) )
 	ConnectorMidColor:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	ConnectorMidColor:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectorMidColor )
@@ -196,7 +196,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	ConnectorMidAdd:setRGB( 1, 0.8, 0 )
 	ConnectorMidAdd:setAlpha( 0.8 )
 	ConnectorMidAdd:setScale( 0.8, 0.8 )
-	ConnectorMidAdd:setImage( RegisterImage( 0xFA1D08EA1C385B0 ) )
+	ConnectorMidAdd:setImage( RegisterImage( "uie_ui_hud_tak5_link_con01" ) )
 	ConnectorMidAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ConnectorMidAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectorMidAdd )
@@ -204,7 +204,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local FrameAllColor = LUI.UIImage.new( 0, 0, 21, 129, 0, 0, 9.5, 161.5 )
 	FrameAllColor:setRGB( 1, 0.8, 0 )
-	FrameAllColor:setImage( RegisterImage( 0x5A154BEBE6EE762 ) )
+	FrameAllColor:setImage( RegisterImage( "uie_ui_hud_tak5_player_brecket" ) )
 	FrameAllColor:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	FrameAllColor:setShaderVector( 0, 0, 1, 0, 0 )
 	FrameAllColor:setShaderVector( 1, 0, 0, 0, 0 )
@@ -216,7 +216,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local FrameAllAdd = LUI.UIImage.new( 0, 0, 21, 129, 0, 0, 9.5, 161.5 )
 	FrameAllAdd:setRGB( 1, 0.8, 0 )
-	FrameAllAdd:setImage( RegisterImage( 0x5A154BEBE6EE762 ) )
+	FrameAllAdd:setImage( RegisterImage( "uie_ui_hud_tak5_player_brecket" ) )
 	FrameAllAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	FrameAllAdd:setShaderVector( 0, 0, 1, 0, 0 )
 	FrameAllAdd:setShaderVector( 1, 0, 0, 0, 0 )
@@ -280,7 +280,7 @@ CoD.SwipeTak5_CharacterHealWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	end )
 	self:subscribeToGlobalModel( f1_arg1, "PerController", "scriptNotify", function ( model )
 		local f10_local0 = self
-		if CoD.ModelUtility.IsParamModelEqualToHashString( model, 0xC27B5E4F3724EA3 ) and IsInDefaultState( f10_local0 ) and IsFirstListElement( f10_local0 ) then
+		if CoD.ModelUtility.IsParamModelEqualToHashString( model, "localheal_fire" ) and IsInDefaultState( f10_local0 ) and IsFirstListElement( f10_local0 ) then
 			CoD.GridAndListUtility.PlayClipWithDelayBetweenElements( self, "Heal", 0, 100 )
 		end
 	end )
@@ -361,7 +361,7 @@ CoD.SwipeTak5_CharacterHealWidget.__resetProperties = function ( f11_arg0 )
 	f11_arg0.ConnectorMidColor:setAlpha( 0 )
 	f11_arg0.ButtonPlusScreenline:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
 	f11_arg0.ButtonPlusScreenline:setAlpha( 1 )
-	f11_arg0.ButtonPlusScreenline:setMaterial( LUI.UIImage.GetCachedMaterial( 0x92F09074FB20E6D ) )
+	f11_arg0.ButtonPlusScreenline:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines" ) )
 	f11_arg0.ButtonPlusAdd:setAlpha( 1 )
 	f11_arg0.ButtonPlusAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	f11_arg0.ButtonPlusAdd:setShaderVector( 0, 0, 1, 0, 0 )
@@ -408,7 +408,7 @@ CoD.SwipeTak5_CharacterHealWidget.__clipsPerState = {
 			f12_arg0.ButtonPlusScreenline:completeAnimation()
 			f12_arg0.ButtonPlusScreenline:setRGB( 1, 1, 1 )
 			f12_arg0.ButtonPlusScreenline:setAlpha( 0.8 )
-			f12_arg0.ButtonPlusScreenline:setMaterial( LUI.UIImage.GetCachedMaterial( 0x92F09074FB20E6D ) )
+			f12_arg0.ButtonPlusScreenline:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines" ) )
 			f12_arg0.clipFinished( f12_arg0.ButtonPlusScreenline )
 			f12_arg0.ButtonPlusAdd:completeAnimation()
 			f12_arg0.ButtonPlusAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
@@ -710,7 +710,7 @@ CoD.SwipeTak5_CharacterHealWidget.__clipsPerState = {
 			
 			f25_arg0.ButtonPlusFrame:completeAnimation()
 			f25_arg0.ButtonPlusFrame:setAlpha( 0.8 )
-			f25_arg0.ButtonPlusFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0x5956C6C1FD41D3C ) )
+			f25_arg0.ButtonPlusFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration" ) )
 			f25_local3( f25_arg0.ButtonPlusFrame )
 			local f25_local4 = function ( f30_arg0 )
 				f25_arg0.ButtonPlusFrameWipe:beginAnimation( 200 )

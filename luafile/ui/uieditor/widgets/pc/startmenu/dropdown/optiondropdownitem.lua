@@ -1,21 +1,21 @@
 require( "ui/uieditor/widgets/lobby/common/fe_focusbarcontainer" )
 
 local f0_local0 = function ( f1_arg0, f1_arg1, f1_arg2 )
-	CoD.Menu.AddButtonCallbackFunction( f1_arg2, f1_arg0, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f2_arg0, f2_arg1, f2_arg2, f2_arg3 )
+	CoD.Menu.AddButtonCallbackFunction( f1_arg2, f1_arg0, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, f2_arg3 )
 		f1_arg0:processEvent( {
 			name = "lose_focus",
-			controller = f2_arg2
+			controller = controller
 		} )
 		return f1_arg0:dispatchEventToParent( {
 			name = "dropdown_item_cancelled",
 			element = f1_arg0
 		} )
 	end )
-	CoD.Menu.AddButtonCallbackFunction( f1_arg2, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		if not f3_arg1.m_disableNavigation and f3_arg1:AcceptGamePadButtonInputFromModelCallback( f3_arg2 ) then
+	CoD.Menu.AddButtonCallbackFunction( f1_arg2, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, f3_arg3 )
+		if not menu.m_disableNavigation and menu:AcceptGamePadButtonInputFromModelCallback( controller ) then
 			f1_arg0:processEvent( {
 				name = "lose_focus",
-				controller = f3_arg2
+				controller = controller
 			} )
 			return f1_arg0:dispatchEventToParent( {
 				name = "dropdown_item_selected",

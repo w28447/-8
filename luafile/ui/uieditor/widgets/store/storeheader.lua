@@ -15,7 +15,7 @@ CoD.StoreHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	
 	local CommonHeader = CoD.CommonHeader.new( f1_arg0, f1_arg1, 0, 0, 0, 1920, 0, 0, 0, 67 )
 	CommonHeader.BGSceneBlur:setAlpha( 0 )
-	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x191CDDA584B4408 ) )
+	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/store_caps" ) )
 	CommonHeader.subtitle.subtitle:setAlpha( 0 )
 	CommonHeader:subscribeToGlobalModel( f1_arg1, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()

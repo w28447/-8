@@ -1,15 +1,15 @@
-CoD["callingcards_loot2_steampunk"] = InheritFrom( LUI.UIElement )
-CoD["callingcards_loot2_steampunk"].__defaultWidth = 960
-CoD["callingcards_loot2_steampunk"].__defaultHeight = 240
-CoD["callingcards_loot2_steampunk"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_loot2_steampunk = InheritFrom( LUI.UIElement )
+CoD.callingcards_loot2_steampunk.__defaultWidth = 960
+CoD.callingcards_loot2_steampunk.__defaultHeight = 240
+CoD.callingcards_loot2_steampunk.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD["callingcards_loot2_steampunk"] )
+	self:setClass( CoD.callingcards_loot2_steampunk )
 	self.id = "callingcards_loot2_steampunk"
 	self.soundSet = "none"
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local bg = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	bg:setImage( RegisterImage( 0x44C8129F988FE50 ) )
+	bg:setImage( RegisterImage( "uie_ui_menu_callingcards_steampunk_bg" ) )
 	self:addElement( bg )
 	self.bg = bg
 	
@@ -19,39 +19,39 @@ CoD["callingcards_loot2_steampunk"].new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.fogtubes = fogtubes
 	
 	local lefthand = LUI.UIImage.new( 0, 0, 555, 867, 0, 0, 92, 252 )
-	lefthand:setImage( RegisterImage( 0xB38B2FBBC95088B ) )
+	lefthand:setImage( RegisterImage( "uie_ui_menu_callingcards_steampunk_lefthand" ) )
 	self:addElement( lefthand )
 	self.lefthand = lefthand
 	
 	local leftshoulder = LUI.UIImage.new( 0, 0, 493, 645, 0, 0, 44, 252 )
-	leftshoulder:setImage( RegisterImage( 0xFDBC3506D1582F2 ) )
+	leftshoulder:setImage( RegisterImage( "uie_ui_menu_callingcards_steampunk_shoulderleft" ) )
 	self:addElement( leftshoulder )
 	self.leftshoulder = leftshoulder
 	
 	local body = LUI.UIImage.new( 0, 0, 276, 604, 0, 0, 11, 258 )
-	body:setImage( RegisterImage( 0xD73A40F934784C7 ) )
+	body:setImage( RegisterImage( "uie_ui_menu_callingcards_steampunk_body" ) )
 	self:addElement( body )
 	self.body = body
 	
 	local gunright = LUI.UIImage.new( 0, 0, 86, 390, 0, 0, 72, 272 )
-	gunright:setImage( RegisterImage( 0x7E75FF6FE70228F ) )
+	gunright:setImage( RegisterImage( "uie_ui_menu_callingcards_steampunk_gunright" ) )
 	self:addElement( gunright )
 	self.gunright = gunright
 	
 	local particles1 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 12, 276 )
-	particles1:setImage( RegisterImage( 0x906C5BC40962EF5 ) )
+	particles1:setImage( RegisterImage( "uie_ui_menu_callingcards_steampunk_particles1" ) )
 	particles1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( particles1 )
 	self.particles1 = particles1
 	
 	local particles2 = LUI.UIImage.new( 0, 0, 452, 932, 0, 0, 4, 148 )
-	particles2:setImage( RegisterImage( 0x906C2BC409629DC ) )
+	particles2:setImage( RegisterImage( "uie_ui_menu_callingcards_steampunk_particles2" ) )
 	particles2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( particles2 )
 	self.particles2 = particles2
 	
 	local particles3 = LUI.UIImage.new( 0, 0, -18, 878, 0, 0, -16, 240 )
-	particles3:setImage( RegisterImage( 0x906C3BC40962B8F ) )
+	particles3:setImage( RegisterImage( "uie_ui_menu_callingcards_steampunk_particles3" ) )
 	particles3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( particles3 )
 	self.particles3 = particles3
@@ -59,7 +59,7 @@ CoD["callingcards_loot2_steampunk"].new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local glow = LUI.UIImage.new( 0, 0, 377, 569, 0, 0, 16, 120 )
 	glow:setAlpha( 0.6 )
 	glow:setZRot( -14 )
-	glow:setImage( RegisterImage( 0x49F2EE5CDB7AB7A ) )
+	glow:setImage( RegisterImage( "uie_ui_menu_callingcards_steampunk_glow" ) )
 	glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( glow )
 	self.glow = glow
@@ -71,7 +71,7 @@ CoD["callingcards_loot2_steampunk"].new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	return self
 end
 
-CoD["callingcards_loot2_steampunk"].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_loot2_steampunk.__resetProperties = function ( f2_arg0 )
 	f2_arg0.body:completeAnimation()
 	f2_arg0.particles2:completeAnimation()
 	f2_arg0.particles3:completeAnimation()
@@ -105,7 +105,7 @@ CoD["callingcards_loot2_steampunk"].__resetProperties = function ( f2_arg0 )
 	f2_arg0.particles1:setAlpha( 1 )
 end
 
-CoD["callingcards_loot2_steampunk"].__clipsPerState = {
+CoD.callingcards_loot2_steampunk.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()

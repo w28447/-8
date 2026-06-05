@@ -16,9 +16,9 @@ CoD.ZMDifficultySelectButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	DifficultyList.LeaderActivityText:setAlpha( 0 )
 	DifficultyList.LeaderActivityText:setText( "" )
 	DifficultyList.Header:setAlpha( 0 )
-	DifficultyList.Header:setText( LocalizeToUpperString( 0x0 ) )
+	DifficultyList.Header:setText( LocalizeToUpperString( "" ) )
 	DifficultyList.MiddleText:setAlpha( 0 )
-	DifficultyList.MiddleText:setText( LocalizeToUpperString( 0x0 ) )
+	DifficultyList.MiddleText:setText( LocalizeToUpperString( "" ) )
 	DifficultyList:linkToElementModel( self, "difficultyImage", true, function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then

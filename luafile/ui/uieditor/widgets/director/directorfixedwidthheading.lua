@@ -13,7 +13,7 @@ CoD.DirectorFixedWidthHeading.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.Backing = Backing
 	
 	local Label = LUI.UIText.new( -0.01, 1.01, 5, -5, 0.5, 0.5, -15, 7 )
-	Label:setText( Engine[0xF9F1239CFD921FE]( 0x700AE5902F5ECF7 ) )
+	Label:setText( Engine[0xF9F1239CFD921FE]( "codcaster/caps" ) )
 	Label:setTTF( "ttmussels_demibold" )
 	Label:setLetterSpacing( 0.1 )
 	Label:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

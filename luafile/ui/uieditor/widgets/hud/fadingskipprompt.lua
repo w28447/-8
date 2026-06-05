@@ -9,7 +9,7 @@ CoD.FadingSkipPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local pressXtext = LUI.UIText.new( 1, 1, -1350, -4, 0, 0, 3, 33 )
-	pressXtext:setText( Engine[0xF9F1239CFD921FE]( 0x8F7A20360760C ) )
+	pressXtext:setText( Engine[0xF9F1239CFD921FE]( "platform/skip" ) )
 	pressXtext:setTTF( "default" )
 	pressXtext:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	pressXtext:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

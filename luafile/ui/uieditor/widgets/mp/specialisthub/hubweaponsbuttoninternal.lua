@@ -94,7 +94,7 @@ CoD.HubWeaponsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local specialIssueHeader = LUI.UIText.new( 0.5, 0.5, -6, 194, 0, 0, 318, 336 )
 	specialIssueHeader:setRGB( 0.92, 0.92, 0.92 )
 	specialIssueHeader:setAlpha( 0 )
-	specialIssueHeader:setText( LocalizeToUpperString( 0x759164343B5C489 ) )
+	specialIssueHeader:setText( LocalizeToUpperString( "weapon/special_issue" ) )
 	specialIssueHeader:setTTF( "ttmussels_regular" )
 	specialIssueHeader:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	self:addElement( specialIssueHeader )
@@ -148,14 +148,14 @@ CoD.HubWeaponsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.trainingImageOverlay = trainingImageOverlay
 	
 	local InfoDivider = LUI.UIImage.new( 0, 0, 194.5, 198.5, 0, 0, 213, 334 )
-	InfoDivider:setImage( RegisterImage( 0x6DDA4086EA0EF02 ) )
+	InfoDivider:setImage( RegisterImage( "uie_ui_menu_specialist_hub_info_divider" ) )
 	InfoDivider:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InfoDivider )
 	self.InfoDivider = InfoDivider
 	
 	local CommonTiledDotline = LUI.UIImage.new( 0, 0, 0, 393, 0, 0, 143, 145 )
 	CommonTiledDotline:setAlpha( 0.2 )
-	CommonTiledDotline:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	CommonTiledDotline:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	CommonTiledDotline:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	CommonTiledDotline:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonTiledDotline:setupNineSliceShader( 4, 2 )
@@ -218,7 +218,7 @@ CoD.HubWeaponsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local TabBottomLine = LUI.UIImage.new( 0.5, 0.5, -196.5, 196.5, 0, 0, 34, 36 )
 	TabBottomLine:setRGB( 0.92, 0.92, 0.92 )
 	TabBottomLine:setAlpha( 0.2 )
-	TabBottomLine:setImage( RegisterImage( 0x5526CF3733E24C4 ) )
+	TabBottomLine:setImage( RegisterImage( "uie_ui_menu_common_tab_line_bottom" ) )
 	TabBottomLine:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TabBottomLine )
 	self.TabBottomLine = TabBottomLine

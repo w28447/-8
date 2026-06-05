@@ -37,18 +37,18 @@ LUI.createMenu.LiveEventViewerQualities = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A] )
 		return f2_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( qualityList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		GoBack( self, f3_arg2 )
+	f1_local1:AddButtonCallbackFunction( qualityList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( qualityList, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		GoBack( self, f5_arg2 )
+	f1_local1:AddButtonCallbackFunction( qualityList, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel", nil, nil )
 		return true
 	end, false )
 	self:addElement( qualityList )

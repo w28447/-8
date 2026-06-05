@@ -16,13 +16,13 @@ CoD.FileshareBookmarkedItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local Image = LUI.UIImage.new( 0, 0, 0, 26, 0, 0, 0, 26 )
 	Image:setRGB( ColorSet.GroupName.r, ColorSet.GroupName.g, ColorSet.GroupName.b )
-	Image:setImage( RegisterImage( 0xEFEEB855F6196B3 ) )
+	Image:setImage( RegisterImage( "uie_bookmark" ) )
 	self:addElement( Image )
 	self.Image = Image
 	
 	local Text = LUI.UIText.new( 0, 0.8, 28, 28, 0.5, 0.5, -11, 11 )
 	Text:setRGB( ColorSet.GroupName.r, ColorSet.GroupName.g, ColorSet.GroupName.b )
-	Text:setText( Engine[0xF9F1239CFD921FE]( 0x49105C8DE141682 ) )
+	Text:setText( Engine[0xF9F1239CFD921FE]( "menu/bookmarked" ) )
 	Text:setTTF( "ttmussels_regular" )
 	Text:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Text:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

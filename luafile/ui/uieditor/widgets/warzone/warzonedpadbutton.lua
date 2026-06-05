@@ -26,7 +26,7 @@ CoD.WarzoneDpadButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.downImage = downImage
 	
 	local downImage2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	downImage2:setImage( RegisterImage( 0x6D448065C5FDC56 ) )
+	downImage2:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_qe_dpad_up" ) )
 	self:addElement( downImage2 )
 	self.downImage2 = downImage2
 	

@@ -39,8 +39,8 @@ CoD.DirectorReadyButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 		}
 	} )
 	DirectorSelectButtonMiniInternal:setAlpha( 0 )
-	DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0x7A9F166E7248D86 ) )
-	DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0x7A9F166E7248D86 ) )
+	DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( "menu/ready_up" ) )
+	DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( "menu/ready_up" ) )
 	self:addElement( DirectorSelectButtonMiniInternal )
 	self.DirectorSelectButtonMiniInternal = DirectorSelectButtonMiniInternal
 	
@@ -56,7 +56,7 @@ CoD.DirectorReadyButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	DirectorCustomStartButton.LeaderActivityText:setAlpha( 0 )
 	DirectorCustomStartButton.LeaderActivityText:setText( "" )
 	DirectorCustomStartButton.Header:setAlpha( 0 )
-	DirectorCustomStartButton.Header:setText( LocalizeToUpperString( 0x0 ) )
+	DirectorCustomStartButton.Header:setText( LocalizeToUpperString( "" ) )
 	DirectorCustomStartButton.MiddleText:setAlpha( 0 )
 	DirectorCustomStartButton.MiddleText:setText( "" )
 	DirectorCustomStartButton:linkToElementModel( self, "iconBackground", true, function ( model )
@@ -92,7 +92,7 @@ CoD.DirectorReadyButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	circle:setAlpha( 0 )
 	circle:setZRot( 180 )
 	circle:setScale( 1.05, 1.05 )
-	circle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x15B163CA03FCE8B ) )
+	circle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_elliptical_ring_normal" ) )
 	circle:setShaderVector( 0, 4.66, 0, 0, 0 )
 	circle:setShaderVector( 1, 80, 80, 0, 0 )
 	circle:setShaderVector( 2, 0, 0, 0, 0 )
@@ -128,7 +128,7 @@ CoD.DirectorReadyButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local Fill = LUI.UIImage.new( 0, 1, -105, 105, 0, 1, -65, 65 )
 	Fill:setAlpha( 0 )
-	Fill:setImage( RegisterImage( 0x3F09D20CA138B49 ) )
+	Fill:setImage( RegisterImage( "uie_ui_menu_common_tab_backing" ) )
 	Fill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	Fill:setShaderVector( 1, 0, 0, 0, 0 )
 	Fill:setShaderVector( 2, 1, 0, 0, 0 )
@@ -145,7 +145,7 @@ CoD.DirectorReadyButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local Fill2 = LUI.UIImage.new( 0, 1, -105, 105, 0, 1, -65, 65 )
 	Fill2:setAlpha( 0 )
-	Fill2:setImage( RegisterImage( 0x3F09D20CA138B49 ) )
+	Fill2:setImage( RegisterImage( "uie_ui_menu_common_tab_backing" ) )
 	Fill2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	Fill2:setShaderVector( 1, 0, 0, 0, 0 )
 	Fill2:setShaderVector( 2, 1, 0, 0, 0 )
@@ -161,7 +161,7 @@ CoD.DirectorReadyButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.Fill2 = Fill2
 	
 	local PlayText = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -12, 12 )
-	PlayText:setText( LocalizeToUpperString( 0x7A9F166E7248D86 ) )
+	PlayText:setText( LocalizeToUpperString( "menu/ready_up" ) )
 	PlayText:setTTF( "ttmussels_demibold" )
 	PlayText:setLetterSpacing( 6 )
 	PlayText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -324,116 +324,116 @@ CoD.DirectorReadyButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 		CoD.Menu.UpdateButtonShownState( f26_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A] )
 		CoD.Menu.UpdateButtonShownState( f26_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3 )
-		if IsGamepad( f27_arg2 ) and CoD.DirectorUtility.CanReadyDown( f27_arg2 ) and not CoD.DirectorUtility.IsNumClientsExceeded( f27_arg2 ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f27_arg2 ) then
-			SetState( self, "DefaultState", f27_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
+		if IsGamepad( controller ) and CoD.DirectorUtility.CanReadyDown( controller ) and not CoD.DirectorUtility.IsNumClientsExceeded( controller ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			SetState( self, "DefaultState", controller )
 			CoD.DirectorUtility.SetLocalClientsReady()
 			return true
-		elseif IsGamepad( f27_arg2 ) and CoD.DirectorUtility.CanReadyDown( f27_arg2 ) and CoD.DirectorUtility.IsNumClientsExceeded( f27_arg2 ) then
-			CoD.DirectorUtility.OpenTooManyClientsPopup( self, f27_arg2 )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.CanReadyDown( controller ) and CoD.DirectorUtility.IsNumClientsExceeded( controller ) then
+			CoD.DirectorUtility.OpenTooManyClientsPopup( self, controller )
 			return true
-		elseif IsGamepad( f27_arg2 ) and CoD.DirectorUtility.CanReadyDown( f27_arg2 ) and not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f27_arg2 ) then
-			CoD.DirectorUtility.OpenMapsNotEnabledPopup( self, f27_arg2 )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.CanReadyDown( controller ) and not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			CoD.DirectorUtility.OpenMapsNotEnabledPopup( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f28_arg0, f28_arg1, f28_arg2 )
-		if IsGamepad( f28_arg2 ) and CoD.DirectorUtility.CanReadyDown( f28_arg2 ) and not CoD.DirectorUtility.IsNumClientsExceeded( f28_arg2 ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f28_arg2 ) then
-			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x6DA4540B4705513, nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) and CoD.DirectorUtility.CanReadyDown( controller ) and not CoD.DirectorUtility.IsNumClientsExceeded( controller ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel_caps", nil, "ESCAPE" )
 			return true
-		elseif IsGamepad( f28_arg2 ) and CoD.DirectorUtility.CanReadyDown( f28_arg2 ) and CoD.DirectorUtility.IsNumClientsExceeded( f28_arg2 ) then
-			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x6DA4540B4705513, nil, "ESCAPE" )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.CanReadyDown( controller ) and CoD.DirectorUtility.IsNumClientsExceeded( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel_caps", nil, "ESCAPE" )
 			return true
-		elseif IsGamepad( f28_arg2 ) and CoD.DirectorUtility.CanReadyDown( f28_arg2 ) and not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f28_arg2 ) then
-			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x6DA4540B4705513, nil, "ESCAPE" )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.CanReadyDown( controller ) and not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel_caps", nil, "ESCAPE" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f29_arg0, f29_arg1, f29_arg2, f29_arg3 )
-		if IsMouseOrKeyboard( f29_arg2 ) and CoD.DirectorUtility.CanReadyUp( f29_arg2 ) and not CoD.DirectorUtility.IsNumClientsExceeded( f29_arg2 ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f29_arg2 ) then
-			CoD.BaseUtility.StopPlayOnceSound( f29_arg0, "uin_ready_bar_fill_1shot" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.CanReadyUp( controller ) and not CoD.DirectorUtility.IsNumClientsExceeded( controller ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			CoD.BaseUtility.StopPlayOnceSound( element, "uin_ready_bar_fill_1shot" )
 			PlaySoundAlias( "uin_ready_bar_done" )
-			SetState( self, "Ready", f29_arg2 )
+			SetState( self, "Ready", controller )
 			CoD.DirectorUtility.SetLocalClientsReady()
 			return true
-		elseif IsMouseOrKeyboard( f29_arg2 ) and CoD.DirectorUtility.CanReadyDown( f29_arg2 ) and not CoD.DirectorUtility.IsNumClientsExceeded( f29_arg2 ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f29_arg2 ) then
-			SetState( self, "DefaultState", f29_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.CanReadyDown( controller ) and not CoD.DirectorUtility.IsNumClientsExceeded( controller ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			SetState( self, "DefaultState", controller )
 			CoD.DirectorUtility.SetLocalClientsReady()
 			return true
-		elseif IsMouseOrKeyboard( f29_arg2 ) and CoD.DirectorUtility.CanReadyUp( f29_arg2 ) and CoD.DirectorUtility.IsNumClientsExceeded( f29_arg2 ) then
-			CoD.BaseUtility.StopPlayOnceSound( f29_arg0, "uin_ready_bar_fill_1shot" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.CanReadyUp( controller ) and CoD.DirectorUtility.IsNumClientsExceeded( controller ) then
+			CoD.BaseUtility.StopPlayOnceSound( element, "uin_ready_bar_fill_1shot" )
 			PlaySoundAlias( "uin_ready_bar_done" )
-			CoD.DirectorUtility.OpenTooManyClientsPopup( self, f29_arg2 )
+			CoD.DirectorUtility.OpenTooManyClientsPopup( self, controller )
 			return true
-		elseif IsMouseOrKeyboard( f29_arg2 ) and CoD.DirectorUtility.CanReadyDown( f29_arg2 ) and CoD.DirectorUtility.IsNumClientsExceeded( f29_arg2 ) then
-			CoD.DirectorUtility.OpenTooManyClientsPopup( self, f29_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.CanReadyDown( controller ) and CoD.DirectorUtility.IsNumClientsExceeded( controller ) then
+			CoD.DirectorUtility.OpenTooManyClientsPopup( self, controller )
 			return true
-		elseif IsMouseOrKeyboard( f29_arg2 ) and CoD.DirectorUtility.CanReadyUp( f29_arg2 ) and not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f29_arg2 ) then
-			CoD.BaseUtility.StopPlayOnceSound( f29_arg0, "uin_ready_bar_fill_1shot" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.CanReadyUp( controller ) and not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			CoD.BaseUtility.StopPlayOnceSound( element, "uin_ready_bar_fill_1shot" )
 			PlaySoundAlias( "uin_ready_bar_done" )
-			CoD.DirectorUtility.OpenMapsNotEnabledPopup( self, f29_arg2 )
+			CoD.DirectorUtility.OpenMapsNotEnabledPopup( self, controller )
 			return true
-		elseif IsMouseOrKeyboard( f29_arg2 ) and CoD.DirectorUtility.CanReadyDown( f29_arg2 ) and not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f29_arg2 ) then
-			CoD.DirectorUtility.OpenMapsNotEnabledPopup( self, f29_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.CanReadyDown( controller ) and not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			CoD.DirectorUtility.OpenMapsNotEnabledPopup( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f30_arg0, f30_arg1, f30_arg2 )
-		if IsMouseOrKeyboard( f30_arg2 ) and CoD.DirectorUtility.CanReadyUp( f30_arg2 ) and not CoD.DirectorUtility.IsNumClientsExceeded( f30_arg2 ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f30_arg2 ) then
-			CoD.Menu.SetButtonLabel( f30_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.CanReadyUp( controller ) and not CoD.DirectorUtility.IsNumClientsExceeded( controller ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
-		elseif IsMouseOrKeyboard( f30_arg2 ) and CoD.DirectorUtility.CanReadyDown( f30_arg2 ) and not CoD.DirectorUtility.IsNumClientsExceeded( f30_arg2 ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f30_arg2 ) then
-			CoD.Menu.SetButtonLabel( f30_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.CanReadyDown( controller ) and not CoD.DirectorUtility.IsNumClientsExceeded( controller ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
-		elseif IsMouseOrKeyboard( f30_arg2 ) and CoD.DirectorUtility.CanReadyUp( f30_arg2 ) and CoD.DirectorUtility.IsNumClientsExceeded( f30_arg2 ) then
-			CoD.Menu.SetButtonLabel( f30_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.CanReadyUp( controller ) and CoD.DirectorUtility.IsNumClientsExceeded( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
-		elseif IsMouseOrKeyboard( f30_arg2 ) and CoD.DirectorUtility.CanReadyDown( f30_arg2 ) and CoD.DirectorUtility.IsNumClientsExceeded( f30_arg2 ) then
-			CoD.Menu.SetButtonLabel( f30_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.CanReadyDown( controller ) and CoD.DirectorUtility.IsNumClientsExceeded( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
-		elseif IsMouseOrKeyboard( f30_arg2 ) and CoD.DirectorUtility.CanReadyUp( f30_arg2 ) and not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f30_arg2 ) then
-			CoD.Menu.SetButtonLabel( f30_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.CanReadyUp( controller ) and not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
-		elseif IsMouseOrKeyboard( f30_arg2 ) and CoD.DirectorUtility.CanReadyDown( f30_arg2 ) and not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f30_arg2 ) then
-			CoD.Menu.SetButtonLabel( f30_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.CanReadyDown( controller ) and not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f31_arg0, f31_arg1, f31_arg2, f31_arg3 )
-		if IsMouseOrKeyboard( f31_arg2 ) and CoD.DirectorUtility.CanReadyUp( f31_arg2 ) and not CoD.DirectorUtility.IsNumClientsExceeded( f31_arg2 ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f31_arg2 ) then
-			CoD.BaseUtility.StopPlayOnceSound( f31_arg0, "uin_ready_bar_fill_1shot" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.CanReadyUp( controller ) and not CoD.DirectorUtility.IsNumClientsExceeded( controller ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			CoD.BaseUtility.StopPlayOnceSound( element, "uin_ready_bar_fill_1shot" )
 			PlaySoundAlias( "uin_ready_bar_done" )
-			SetState( self, "Ready", f31_arg2 )
+			SetState( self, "Ready", controller )
 			CoD.DirectorUtility.SetLocalClientsReady()
 			return true
-		elseif IsMouseOrKeyboard( f31_arg2 ) and CoD.DirectorUtility.CanReadyUp( f31_arg2 ) and CoD.DirectorUtility.IsNumClientsExceeded( f31_arg2 ) then
-			CoD.BaseUtility.StopPlayOnceSound( f31_arg0, "uin_ready_bar_fill_1shot" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.CanReadyUp( controller ) and CoD.DirectorUtility.IsNumClientsExceeded( controller ) then
+			CoD.BaseUtility.StopPlayOnceSound( element, "uin_ready_bar_fill_1shot" )
 			PlaySoundAlias( "uin_ready_bar_done" )
-			CoD.DirectorUtility.OpenTooManyClientsPopup( self, f31_arg2 )
+			CoD.DirectorUtility.OpenTooManyClientsPopup( self, controller )
 			return true
-		elseif IsMouseOrKeyboard( f31_arg2 ) and CoD.DirectorUtility.CanReadyUp( f31_arg2 ) and not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f31_arg2 ) then
-			CoD.BaseUtility.StopPlayOnceSound( f31_arg0, "uin_ready_bar_fill_1shot" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.CanReadyUp( controller ) and not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			CoD.BaseUtility.StopPlayOnceSound( element, "uin_ready_bar_fill_1shot" )
 			PlaySoundAlias( "uin_ready_bar_done" )
-			CoD.DirectorUtility.OpenMapsNotEnabledPopup( self, f31_arg2 )
+			CoD.DirectorUtility.OpenMapsNotEnabledPopup( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f32_arg0, f32_arg1, f32_arg2 )
-		if IsMouseOrKeyboard( f32_arg2 ) and CoD.DirectorUtility.CanReadyUp( f32_arg2 ) and not CoD.DirectorUtility.IsNumClientsExceeded( f32_arg2 ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f32_arg2 ) then
-			CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.CanReadyUp( controller ) and not CoD.DirectorUtility.IsNumClientsExceeded( controller ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_confirm" )
 			return false
-		elseif IsMouseOrKeyboard( f32_arg2 ) and CoD.DirectorUtility.CanReadyUp( f32_arg2 ) and CoD.DirectorUtility.IsNumClientsExceeded( f32_arg2 ) then
-			CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_confirm" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.CanReadyUp( controller ) and CoD.DirectorUtility.IsNumClientsExceeded( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_confirm" )
 			return false
-		elseif IsMouseOrKeyboard( f32_arg2 ) and CoD.DirectorUtility.CanReadyUp( f32_arg2 ) and not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f32_arg2 ) then
-			CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_confirm" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.CanReadyUp( controller ) and not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -495,14 +495,14 @@ CoD.DirectorReadyButton.__resetProperties = function ( f36_arg0 )
 	f36_arg0.DirectorSelectButtonMiniInternal:completeAnimation()
 	f36_arg0.Fill:setAlpha( 0 )
 	f36_arg0.Fill:setScale( 1, 1 )
-	f36_arg0.Fill:setImage( RegisterImage( 0x3F09D20CA138B49 ) )
+	f36_arg0.Fill:setImage( RegisterImage( "uie_ui_menu_common_tab_backing" ) )
 	f36_arg0.DirectorCustomStartButton:setRGB( 1, 1, 1 )
 	f36_arg0.DirectorCustomStartButton:setAlpha( 1 )
 	f36_arg0.DirectorCustomStartButton:setScale( 1, 1 )
 	f36_arg0.PlayText:setRGB( 1, 1, 1 )
 	f36_arg0.PlayText:setAlpha( 1 )
 	f36_arg0.PlayText:setScale( 1, 1 )
-	f36_arg0.PlayText:setText( LocalizeToUpperString( 0x7A9F166E7248D86 ) )
+	f36_arg0.PlayText:setText( LocalizeToUpperString( "menu/ready_up" ) )
 	f36_arg0.Fill2:setAlpha( 0 )
 	f36_arg0.Fill2:setScale( 1, 1 )
 	f36_arg0.timer:setLeftRight( 0, 0, 50, 130 )
@@ -520,8 +520,8 @@ CoD.DirectorReadyButton.__resetProperties = function ( f36_arg0 )
 	f36_arg0.Border01:setAlpha( 0 )
 	f36_arg0.FrontendFrame:setAlpha( 0 )
 	f36_arg0.DirectorSelectButtonMiniInternal:setAlpha( 0 )
-	f36_arg0.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0x7A9F166E7248D86 ) )
-	f36_arg0.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0x7A9F166E7248D86 ) )
+	f36_arg0.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( "menu/ready_up" ) )
+	f36_arg0.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( "menu/ready_up" ) )
 end
 
 CoD.DirectorReadyButton.__clipsPerState = {
@@ -542,7 +542,7 @@ CoD.DirectorReadyButton.__clipsPerState = {
 			f38_arg0.Fill:completeAnimation()
 			f38_arg0.Fill:setAlpha( 0.35 )
 			f38_arg0.Fill:setScale( 1.05, 1.05 )
-			f38_arg0.Fill:setImage( RegisterImage( 0x3F09D20CA138B49 ) )
+			f38_arg0.Fill:setImage( RegisterImage( "uie_ui_menu_common_tab_backing" ) )
 			f38_arg0.clipFinished( f38_arg0.Fill )
 			f38_arg0.Fill2:completeAnimation()
 			f38_arg0.Fill2:setAlpha( 0.35 )

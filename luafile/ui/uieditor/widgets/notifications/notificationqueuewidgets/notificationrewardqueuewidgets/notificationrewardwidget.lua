@@ -21,7 +21,7 @@ CoD.NotificationRewardWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local PixelGrid = LUI.UIImage.new( 0, 0, 312, 384, 0, 0, 12, 84 )
 	PixelGrid:setAlpha( 0.5 )
-	PixelGrid:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGrid:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PixelGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGrid:setupNineSliceShader( 64, 64 )
@@ -42,7 +42,7 @@ CoD.NotificationRewardWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.Text = Text
 	
 	local highlight = LUI.UIImage.new( 0, 0, 252, 444, 0, 0, -48, 144 )
-	highlight:setImage( RegisterImage( 0x5924CD83FB419A7 ) )
+	highlight:setImage( RegisterImage( "uie_t7_hud_notficationhighlight" ) )
 	highlight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( highlight )
 	self.highlight = highlight

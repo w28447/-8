@@ -29,12 +29,12 @@ CoD.ItemShopCyclePrompts.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( RightPageOver2, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
+	f1_arg0:AddButtonCallbackFunction( RightPageOver2, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		PlaySoundAlias( "uin_trigger_slide" )
-		SetFocusedTierModelValue( f4_arg2, "5", "decrement" )
+		SetFocusedTierModelValue( controller, "5", "decrement" )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( RightPageOver2 )
@@ -56,7 +56,7 @@ CoD.ItemShopCyclePrompts.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.Pointer = Pointer
 	
 	local RightPageOver = CoD.BumperButtonWithKeyMouse.new( f1_arg0, f1_arg1, 0.5, 0.5, 401.5, 468.5, 0, 0, 73, 118 )
-	RightPageOver.KeyMouseImage:setImage( RegisterImage( 0x49AC5C845C7E582 ) )
+	RightPageOver.KeyMouseImage:setImage( RegisterImage( "uie_bumperright" ) )
 	RightPageOver:subscribeToGlobalModel( f1_arg1, "Controller", "right_trigger_button_image", function ( model )
 		local f6_local0 = model:get()
 		if f6_local0 ~= nil then
@@ -73,12 +73,12 @@ CoD.ItemShopCyclePrompts.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( RightPageOver, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
+	f1_arg0:AddButtonCallbackFunction( RightPageOver, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		PlaySoundAlias( "uin_trigger_slide" )
-		SetFocusedTierModelValue( f8_arg2, "5", "increment" )
+		SetFocusedTierModelValue( controller, "5", "increment" )
 		return true
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( RightPageOver )

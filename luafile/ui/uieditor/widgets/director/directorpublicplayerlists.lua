@@ -146,28 +146,28 @@ CoD.DirectorPublicPlayerLists.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f16_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PartyList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f17_arg0, f17_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsPC() and not IsLAN() and IsPlayerAllowedToPlayOnline( f17_arg2 ) then
-			OpenOverlay( self, "Social_InvitePlayersPopup", f17_arg2, nil )
+	f1_arg0:AddButtonCallbackFunction( PartyList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsPC() and not IsLAN() and IsPlayerAllowedToPlayOnline( controller ) then
+			OpenOverlay( self, "Social_InvitePlayersPopup", controller, nil )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f17_arg0, f17_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and IsPC() and not IsLAN() and IsPlayerAllowedToPlayOnline( f17_arg2 ) then
-			OpenOverlay( self, "Social_InvitePlayersPopup", f17_arg2, nil )
+		elseif CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and IsPC() and not IsLAN() and IsPlayerAllowedToPlayOnline( controller ) then
+			OpenOverlay( self, "Social_InvitePlayersPopup", controller, nil )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f17_arg0, f17_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) then
-			OpenLobbyInspection( f17_arg1, f17_arg0, f17_arg2 )
+		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) then
+			OpenLobbyInspection( menu, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f18_arg0, f18_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsPC() and not IsLAN() and IsPlayerAllowedToPlayOnline( f18_arg2 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2EA47C1D2988981, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsPC() and not IsLAN() and IsPlayerAllowedToPlayOnline( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/invite_to_party", nil, "ui_confirm" )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f18_arg0, f18_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and IsPC() and not IsLAN() and IsPlayerAllowedToPlayOnline( f18_arg2 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and IsPC() and not IsLAN() and IsPlayerAllowedToPlayOnline( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f18_arg0, f18_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/inspect_player", nil, "ui_confirm" )
+		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/inspect_player", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -187,7 +187,7 @@ CoD.DirectorPublicPlayerLists.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.FooterButtonAddControllerHelpContainer = LUI.UIElement.createFake()
 	
 	dotline = LUI.UIImage.new( 0, 0, 4, 425, 0, 0, 419, 425 )
-	dotline:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	dotline:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	dotline:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	dotline:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( dotline )
@@ -333,28 +333,28 @@ CoD.DirectorPublicPlayerLists.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f34_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( LobbyList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f35_arg0, f35_arg1, f35_arg2, f35_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f35_arg0, f35_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsPC() and not IsLAN() and IsPlayerAllowedToPlayOnline( f35_arg2 ) then
-			OpenOverlay( self, "Social_Main", f35_arg2, nil )
+	f1_arg0:AddButtonCallbackFunction( LobbyList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsPC() and not IsLAN() and IsPlayerAllowedToPlayOnline( controller ) then
+			OpenOverlay( self, "Social_Main", controller, nil )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f35_arg0, f35_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and IsPC() and not IsLAN() and IsPlayerAllowedToPlayOnline( f35_arg2 ) then
-			OpenOverlay( self, "Social_InvitePlayersPopup", f35_arg2, nil )
+		elseif CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and IsPC() and not IsLAN() and IsPlayerAllowedToPlayOnline( controller ) then
+			OpenOverlay( self, "Social_InvitePlayersPopup", controller, nil )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f35_arg0, f35_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) then
-			OpenLobbyInspection( f35_arg1, f35_arg0, f35_arg2 )
+		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) then
+			OpenLobbyInspection( menu, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f36_arg0, f36_arg1, f36_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f36_arg0, f36_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsPC() and not IsLAN() and IsPlayerAllowedToPlayOnline( f36_arg2 ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2EA47C1D2988981, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsPC() and not IsLAN() and IsPlayerAllowedToPlayOnline( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/invite_to_party", nil, "ui_confirm" )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f36_arg0, f36_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and IsPC() and not IsLAN() and IsPlayerAllowedToPlayOnline( f36_arg2 ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and IsPC() and not IsLAN() and IsPlayerAllowedToPlayOnline( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f36_arg0, f36_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/inspect_player", nil, "ui_confirm" )
+		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/inspect_player", nil, "ui_confirm" )
 			return true
 		else
 			return false

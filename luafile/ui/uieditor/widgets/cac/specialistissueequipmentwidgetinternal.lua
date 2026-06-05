@@ -12,7 +12,7 @@ CoD.SpecialistIssueEquipmentWidgetInternal.new = function ( f1_arg0, f1_arg1, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local IconImage = LUI.UIImage.new( 0.5, 0.5, -200.5, 199.5, 0, 0, 0, 400 )
-	IconImage:setImage( RegisterImage( 0x216B304F7217E4 ) )
+	IconImage:setImage( RegisterImage( "uie_ui_icon_gear_specialist_eq_wire" ) )
 	self:addElement( IconImage )
 	self.IconImage = IconImage
 	
@@ -37,7 +37,7 @@ CoD.SpecialistIssueEquipmentWidgetInternal.new = function ( f1_arg0, f1_arg1, f1
 	
 	local NoCostText = LUI.UIText.new( 0.5, 0.5, -63, 62, 1, 1, -230, -214 )
 	NoCostText:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
-	NoCostText:setText( LocalizeToUpperString( 0x373A829CE2228C4 ) )
+	NoCostText:setText( LocalizeToUpperString( "mpui/no_cost" ) )
 	NoCostText:setTTF( "ttmussels_regular" )
 	NoCostText:setLetterSpacing( 4 )
 	NoCostText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

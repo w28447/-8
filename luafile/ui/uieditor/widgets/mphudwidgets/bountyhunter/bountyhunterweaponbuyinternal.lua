@@ -46,7 +46,7 @@ CoD.BountyHunterWeaponBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local PixelGrid = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	PixelGrid:setAlpha( 0.05 )
-	PixelGrid:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGrid:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PixelGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGrid:setupNineSliceShader( 128, 128 )
@@ -80,7 +80,7 @@ CoD.BountyHunterWeaponBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local AddPlus = LUI.UIImage.new( 0.5, 0.5, -24, 24, 0.5, 0.5, -24, 24 )
 	AddPlus:setAlpha( 0 )
-	AddPlus:setImage( RegisterImage( 0x1B97A54D41F4B80 ) )
+	AddPlus:setImage( RegisterImage( "uie_ui_menu_common_add_plus" ) )
 	AddPlus:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( AddPlus )
 	self.AddPlus = AddPlus

@@ -49,7 +49,7 @@ CoD.ModelUtility.IsModelValueNonEmptyString = function ( f9_arg0, f9_arg1 )
 	local f9_local0 = Engine.GetModel( Engine.GetModelForController( f9_arg0 ), f9_arg1 )
 	local f9_local1 = f9_local0 and Engine.GetModelValue( f9_local0 )
 	local f9_local2
-	if f9_local1 == nil or f9_local1 == "" or f9_local1 == 0x0 then
+	if f9_local1 == nil or f9_local1 == "" or f9_local1 == "" then
 		f9_local2 = false
 	else
 		f9_local2 = true
@@ -313,7 +313,7 @@ CoD.ModelUtility.IsControllerModelValueNonEmptyString = function ( f30_arg0, f30
 	end
 	local f30_local1 = Engine.GetModelValue( f30_local0 )
 	local f30_local2
-	if f30_local1 == nil or f30_local1 == "" or f30_local1 == 0x0 then
+	if f30_local1 == nil or f30_local1 == "" or f30_local1 == "" then
 		f30_local2 = false
 	else
 		f30_local2 = true
@@ -340,7 +340,7 @@ CoD.ModelUtility.IsClientModelValueNonEmptyString = function ( f32_arg0, f32_arg
 	local f32_local0 = Engine.GetModel( Engine[0xE4D2F32833CFA6C]( Engine.GetClientNum( f32_arg0 ) ), f32_arg1 )
 	local f32_local1 = f32_local0 and Engine.GetModelValue( f32_local0 )
 	local f32_local2
-	if f32_local1 == nil or f32_local1 == "" or f32_local1 == 0x0 then
+	if f32_local1 == nil or f32_local1 == "" or f32_local1 == "" then
 		f32_local2 = false
 	else
 		f32_local2 = true
@@ -642,7 +642,7 @@ CoD.ModelUtility.IsSelfModelValueNonEmptyString = function ( f54_arg0, f54_arg1,
 	end
 	local f54_local1 = f54_local0 and Engine.GetModelValue( f54_local0 )
 	local f54_local2
-	if f54_local1 == nil or f54_local1 == "" or f54_local1 == 0x0 then
+	if f54_local1 == nil or f54_local1 == "" or f54_local1 == "" then
 		f54_local2 = false
 	else
 		f54_local2 = true
@@ -982,7 +982,7 @@ CoD.ModelUtility.IsGlobalDataSourceModelValueNonEmptyString = function ( f78_arg
 	local f78_local1 = f78_local0 and f78_local0[f78_arg2]
 	local f78_local2 = f78_local1 and Engine.GetModelValue( f78_local1 )
 	local f78_local3
-	if f78_local2 == nil or f78_local2 == "" or f78_local2 == 0x0 then
+	if f78_local2 == nil or f78_local2 == "" or f78_local2 == "" then
 		f78_local3 = false
 	else
 		f78_local3 = true
@@ -1212,7 +1212,7 @@ CoD.ModelUtility.IsGlobalModelValueNonEmptyString = function ( f91_arg0 )
 	local f91_local0 = Engine.GetModel( Engine.GetGlobalModel(), f91_arg0 )
 	local f91_local1 = f91_local0 and Engine.GetModelValue( f91_local0 )
 	local f91_local2
-	if f91_local1 == nil or f91_local1 == "" or f91_local1 == 0x0 then
+	if f91_local1 == nil or f91_local1 == "" or f91_local1 == "" then
 		f91_local2 = false
 	else
 		f91_local2 = true

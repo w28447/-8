@@ -117,47 +117,47 @@ LUI.createMenu.TimelineEditor = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09] )
 		return f8_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( SegmentButtonList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		if not IsDisabled( f9_arg0, f9_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and not IsTimelineEditorInMoveState( f9_arg2 ) then
-			CoD.DemoUtility.TimelineEditorSetupMoveSegment( self, f9_arg0, f9_arg2, f9_arg1 )
-			UpdateAllMenuButtonPrompts( f9_arg1, f9_arg2 )
+	f1_local1:AddButtonCallbackFunction( SegmentButtonList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not IsDisabled( element, controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and not IsTimelineEditorInMoveState( controller ) then
+			CoD.DemoUtility.TimelineEditorSetupMoveSegment( self, element, controller, menu )
+			UpdateAllMenuButtonPrompts( menu, controller )
 			return true
-		elseif not IsDisabled( f9_arg0, f9_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and IsTimelineEditorInMoveState( f9_arg2 ) then
-			CoD.DemoUtility.TimelineEditorPlaceSegment( self, f9_arg0, f9_arg2, true, f9_arg1 )
-			UpdateAllMenuButtonPrompts( f9_arg1, f9_arg2 )
+		elseif not IsDisabled( element, controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and IsTimelineEditorInMoveState( controller ) then
+			CoD.DemoUtility.TimelineEditorPlaceSegment( self, element, controller, true, menu )
+			UpdateAllMenuButtonPrompts( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		if not IsDisabled( f10_arg0, f10_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and not IsTimelineEditorInMoveState( f10_arg2 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x8851419C3D83BD3, nil, nil )
+	end, function ( element, menu, controller )
+		if not IsDisabled( element, controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and not IsTimelineEditorInMoveState( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "demo/cut_segment", nil, nil )
 			return true
-		elseif not IsDisabled( f10_arg0, f10_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and IsTimelineEditorInMoveState( f10_arg2 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xEDE476A5BD7AB24, nil, nil )
+		elseif not IsDisabled( element, controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and IsTimelineEditorInMoveState( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "demo/paste_segment", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( SegmentButtonList, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		if SegmentCountGreaterThan( f11_arg2, 0 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and CanChangeSegmentTransition( f11_arg0, f11_arg2 ) and IsSegmentTransition( f11_arg0, f11_arg2, Enum.demoClipTransition[0x69612675859CEFC] ) and not IsTimelineEditorInMoveState( f11_arg2 ) then
-			TimelineEditorChangeTransition( self, f11_arg0, f11_arg2 )
-			UpdateAllMenuButtonPrompts( f11_arg1, f11_arg2 )
+	f1_local1:AddButtonCallbackFunction( SegmentButtonList, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( element, menu, controller, model )
+		if SegmentCountGreaterThan( controller, 0 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and CanChangeSegmentTransition( element, controller ) and IsSegmentTransition( element, controller, Enum.demoClipTransition[0x69612675859CEFC] ) and not IsTimelineEditorInMoveState( controller ) then
+			TimelineEditorChangeTransition( self, element, controller )
+			UpdateAllMenuButtonPrompts( menu, controller )
 			return true
-		elseif SegmentCountGreaterThan( f11_arg2, 0 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and CanChangeSegmentTransition( f11_arg0, f11_arg2 ) and IsSegmentTransition( f11_arg0, f11_arg2, Enum.demoClipTransition[0x345D425EB2FCF20] ) and not IsTimelineEditorInMoveState( f11_arg2 ) then
-			TimelineEditorChangeTransition( self, f11_arg0, f11_arg2 )
-			UpdateAllMenuButtonPrompts( f11_arg1, f11_arg2 )
+		elseif SegmentCountGreaterThan( controller, 0 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and CanChangeSegmentTransition( element, controller ) and IsSegmentTransition( element, controller, Enum.demoClipTransition[0x345D425EB2FCF20] ) and not IsTimelineEditorInMoveState( controller ) then
+			TimelineEditorChangeTransition( self, element, controller )
+			UpdateAllMenuButtonPrompts( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		if SegmentCountGreaterThan( f12_arg2, 0 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and CanChangeSegmentTransition( f12_arg0, f12_arg2 ) and IsSegmentTransition( f12_arg0, f12_arg2, Enum.demoClipTransition[0x69612675859CEFC] ) and not IsTimelineEditorInMoveState( f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0xE2C45A307C8FAB7, nil, nil )
+	end, function ( element, menu, controller )
+		if SegmentCountGreaterThan( controller, 0 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and CanChangeSegmentTransition( element, controller ) and IsSegmentTransition( element, controller, Enum.demoClipTransition[0x69612675859CEFC] ) and not IsTimelineEditorInMoveState( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "demo/transition_cut", nil, nil )
 			return true
-		elseif SegmentCountGreaterThan( f12_arg2, 0 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and CanChangeSegmentTransition( f12_arg0, f12_arg2 ) and IsSegmentTransition( f12_arg0, f12_arg2, Enum.demoClipTransition[0x345D425EB2FCF20] ) and not IsTimelineEditorInMoveState( f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x793A2303FCB2877, nil, nil )
+		elseif SegmentCountGreaterThan( controller, 0 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and CanChangeSegmentTransition( element, controller ) and IsSegmentTransition( element, controller, Enum.demoClipTransition[0x345D425EB2FCF20] ) and not IsTimelineEditorInMoveState( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "demo/transition_fade", nil, nil )
 			return true
 		else
 			return false
@@ -167,7 +167,7 @@ LUI.createMenu.TimelineEditor = function ( f1_arg0, f1_arg1 )
 	self.SegmentButtonList = SegmentButtonList
 	
 	GenericMenuFrame0 = CoD.GenericMenuFrame.new( f1_local1, f1_arg0, 0, 0, 0, 1920, 0, 0, 0, 1080 )
-	GenericMenuFrame0.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x18BBCA8DA8FE171 ) )
+	GenericMenuFrame0.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/demo_manage_segments" ) )
 	GenericMenuFrame0:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f13_local0 = model:get()
 		if f13_local0 ~= nil then
@@ -192,7 +192,7 @@ LUI.createMenu.TimelineEditor = function ( f1_arg0, f1_arg1 )
 	self.ClipEndTime = ClipEndTime
 	
 	local EmptyTimelineEditorText = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -19, 19 )
-	EmptyTimelineEditorText:setText( Engine[0xF9F1239CFD921FE]( 0x2C31F7CC245990E ) )
+	EmptyTimelineEditorText:setText( Engine[0xF9F1239CFD921FE]( "demo/empty_timeline_editor" ) )
 	EmptyTimelineEditorText:setTTF( "default" )
 	EmptyTimelineEditorText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	EmptyTimelineEditorText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -207,8 +207,8 @@ LUI.createMenu.TimelineEditor = function ( f1_arg0, f1_arg1 )
 	
 	local TimeLine = LUI.UIImage.new( 0.5, 0.5, -861, 861, 0, 0, 900, 1010 )
 	TimeLine:setAlpha( 0.05 )
-	TimeLine:setImage( RegisterImage( 0xC33B42EBAC0F6A8 ) )
-	TimeLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	TimeLine:setImage( RegisterImage( "uie_ui_theater_timelinemeter" ) )
+	TimeLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	TimeLine:setShaderVector( 0, 2, 1, 0, 0 )
 	TimeLine:setShaderVector( 1, 0, 0, 0, 0 )
 	self:addElement( TimeLine )
@@ -249,77 +249,77 @@ LUI.createMenu.TimelineEditor = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( f17_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x22361E23588705A] )
 		CoD.Menu.UpdateButtonShownState( f17_arg1, f1_local1, f1_arg0, Enum.LUIButton[0xC083113BC81F23F] )
 	end, false )
-	self:registerEventHandler( "ui_keyboard_input", function ( element, event )
+	self:registerEventHandler( "ui_keyboard_input", function ( self, event )
 		local f18_local0 = nil
-		TimelineEditorKeyboardComplete( self, element, f1_arg0, event )
+		TimelineEditorKeyboardComplete( self, self, f1_arg0, event )
 		if not f18_local0 then
-			f18_local0 = element:dispatchEventToChildren( event )
+			f18_local0 = self:dispatchEventToChildren( event )
 		end
 		return f18_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
-		if not IsTimelineEditorInMoveState( f19_arg2 ) then
-			GoBack( self, f19_arg2 )
-			ResetThumbnailViewer( f19_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		if not IsTimelineEditorInMoveState( controller ) then
+			GoBack( self, controller )
+			ResetThumbnailViewer( controller )
 			return true
-		elseif IsTimelineEditorInMoveState( f19_arg2 ) then
-			CoD.DemoUtility.TimelineEditorPlaceSegment( self, f19_arg0, f19_arg2, false, f19_arg1 )
-			UpdateAllMenuButtonPrompts( f19_arg1, f19_arg2 )
+		elseif IsTimelineEditorInMoveState( controller ) then
+			CoD.DemoUtility.TimelineEditorPlaceSegment( self, element, controller, false, menu )
+			UpdateAllMenuButtonPrompts( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f20_arg0, f20_arg1, f20_arg2 )
-		if not IsTimelineEditorInMoveState( f20_arg2 ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		if not IsTimelineEditorInMoveState( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
-		elseif IsTimelineEditorInMoveState( f20_arg2 ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel", nil, nil )
+		elseif IsTimelineEditorInMoveState( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f21_arg0, f21_arg1, f21_arg2, f21_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		if CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) then
 			return true
 		else
 			
 		end
-	end, function ( f22_arg0, f22_arg1, f22_arg2 )
+	end, function ( element, menu, controller )
 		if CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], nil, function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
-		if SegmentCountGreaterThan( f23_arg2, 0 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and not IsTimelineEditorInMoveState( f23_arg2 ) then
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], nil, function ( element, menu, controller, model )
+		if SegmentCountGreaterThan( controller, 0 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and not IsTimelineEditorInMoveState( controller ) then
 			SetGlobalModelValueTrue( "demo.showFilmOptionsSidebar" )
-			TimelineEditorFilmOptions( self, f23_arg0, f23_arg2 )
+			TimelineEditorFilmOptions( self, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f24_arg0, f24_arg1, f24_arg2 )
-		if SegmentCountGreaterThan( f24_arg2, 0 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and not IsTimelineEditorInMoveState( f24_arg2 ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options", nil, nil )
+	end, function ( element, menu, controller )
+		if SegmentCountGreaterThan( controller, 0 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and not IsTimelineEditorInMoveState( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "menu/options", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3 )
-		if SegmentCountGreaterThan( f25_arg2, 0 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and not IsTimelineEditorInMoveState( f25_arg2 ) then
-			TimelineEditorPreviewClip( self, f25_arg0, f25_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if SegmentCountGreaterThan( controller, 0 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and not IsTimelineEditorInMoveState( controller ) then
+			TimelineEditorPreviewClip( self, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f26_arg0, f26_arg1, f26_arg2 )
-		if SegmentCountGreaterThan( f26_arg2, 0 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and not IsTimelineEditorInMoveState( f26_arg2 ) then
-			CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x762B1A3AA910D84, nil, nil )
+	end, function ( element, menu, controller )
+		if SegmentCountGreaterThan( controller, 0 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.showFilmOptionsSidebar" ) and not IsTimelineEditorInMoveState( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/preview_clip", nil, nil )
 			return true
 		else
 			return false

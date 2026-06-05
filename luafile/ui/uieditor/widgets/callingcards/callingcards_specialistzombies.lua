@@ -1,30 +1,30 @@
-CoD[0x42F57FBC330969D] = InheritFrom( LUI.UIElement )
-CoD[0x42F57FBC330969D].__defaultWidth = 960
-CoD[0x42F57FBC330969D].__defaultHeight = 240
-CoD[0x42F57FBC330969D].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_specialistzombies = InheritFrom( LUI.UIElement )
+CoD.callingcards_specialistzombies.__defaultWidth = 960
+CoD.callingcards_specialistzombies.__defaultHeight = 240
+CoD.callingcards_specialistzombies.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x42F57FBC330969D] )
+	self:setClass( CoD.callingcards_specialistzombies )
 	self.id = "CallingCards_specialistzombies"
 	self.soundSet = "none"
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local bg = LUI.UIImage.new( 0, 0, 0, 1208, 0, 0, 0, 240 )
-	bg:setImage( RegisterImage( 0x5FA9918FECCBF2D ) )
+	bg:setImage( RegisterImage( "uie_ui_icon_callingcard_asset_bg" ) )
 	self:addElement( bg )
 	self.bg = bg
 	
 	local battery = LUI.UIImage.new( 0, 0, 210, 810, 0, 0, 0, 272 )
-	battery:setImage( RegisterImage( 0xA6182F38F24203 ) )
+	battery:setImage( RegisterImage( "uie_ui_icon_callingcard_asset_battery" ) )
 	self:addElement( battery )
 	self.battery = battery
 	
 	local zombie1 = LUI.UIImage.new( 0, 0, -158, 442, 0, 0, -128, 272 )
-	zombie1:setImage( RegisterImage( 0x2799DA8610F3B1B ) )
+	zombie1:setImage( RegisterImage( "uie_ui_icon_callingcard_asset_zombie1" ) )
 	self:addElement( zombie1 )
 	self.zombie1 = zombie1
 	
 	local zombie2 = LUI.UIImage.new( 0, 0, 235.5, 1059.5, 0, 0, -186, 286 )
-	zombie2:setImage( RegisterImage( 0x2799EA8610F3CCE ) )
+	zombie2:setImage( RegisterImage( "uie_ui_icon_callingcard_asset_zombie2" ) )
 	self:addElement( zombie2 )
 	self.zombie2 = zombie2
 	
@@ -35,7 +35,7 @@ CoD[0x42F57FBC330969D].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x42F57FBC330969D].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_specialistzombies.__resetProperties = function ( f2_arg0 )
 	f2_arg0.battery:completeAnimation()
 	f2_arg0.zombie1:completeAnimation()
 	f2_arg0.zombie2:completeAnimation()
@@ -49,7 +49,7 @@ CoD[0x42F57FBC330969D].__resetProperties = function ( f2_arg0 )
 	f2_arg0.bg:setLeftRight( 0, 0, 0, 1208 )
 end
 
-CoD[0x42F57FBC330969D].__clipsPerState = {
+CoD.callingcards_specialistzombies.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()

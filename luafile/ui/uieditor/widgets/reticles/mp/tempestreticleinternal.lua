@@ -11,7 +11,7 @@ CoD.TempestReticleInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local centerDot = LUI.UIImage.new( 0.5, 0.5, -9, 9, 0.5, 0.5, -9, 9 )
 	centerDot:setAlpha( 0.7 )
 	centerDot:setScale( 1.3, 1.3 )
-	centerDot:setImage( RegisterImage( 0x82F6146E1D0511D ) )
+	centerDot:setImage( RegisterImage( "uie_tempest_center_dot" ) )
 	self:addElement( centerDot )
 	self.centerDot = centerDot
 	
@@ -31,14 +31,14 @@ CoD.TempestReticleInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local ReticleLineRight = LUI.UIImage.new( 0.5, 0.5, -3, 54, 0.5, 0.5, -10.5, 10.5 )
 	ReticleLineRight:setAlpha( 0.8 )
-	ReticleLineRight:setImage( RegisterImage( 0xEAA4EEA91E8259F ) )
+	ReticleLineRight:setImage( RegisterImage( "uie_tempest_reticle_line_side" ) )
 	ReticleLineRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ReticleLineRight )
 	self.ReticleLineRight = ReticleLineRight
 	
 	local ReticleLineLeft = LUI.UIImage.new( 0.5, 0.5, -54, 3, 0.5, 0.5, -10.5, 10.5 )
 	ReticleLineLeft:setAlpha( 0.8 )
-	ReticleLineLeft:setImage( RegisterImage( 0xEAA4EEA91E8259F ) )
+	ReticleLineLeft:setImage( RegisterImage( "uie_tempest_reticle_line_side" ) )
 	ReticleLineLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ReticleLineLeft )
 	self.ReticleLineLeft = ReticleLineLeft
@@ -46,7 +46,7 @@ CoD.TempestReticleInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local OuterLineAngleCenter = LUI.UIImage.new( 0.5, 0.5, 17, 35, 0.5, 0.5, -50, 4 )
 	OuterLineAngleCenter:setAlpha( 0 )
 	OuterLineAngleCenter:setZRot( 45 )
-	OuterLineAngleCenter:setImage( RegisterImage( 0x9EB5078826CB710 ) )
+	OuterLineAngleCenter:setImage( RegisterImage( "uie_tempest_reticle_charge_top_line" ) )
 	OuterLineAngleCenter:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	OuterLineAngleCenter:setShaderVector( 0, 0, 0, 0.77, 0.05 )
 	OuterLineAngleCenter:setupNineSliceShader( 6, 6 )
@@ -55,7 +55,7 @@ CoD.TempestReticleInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local OuterLineRightTop = LUI.UIImage.new( 0.5, 0.5, 0, 18, 0.5, 0.5, -48, -38 )
 	OuterLineRightTop:setAlpha( 0 )
-	OuterLineRightTop:setImage( RegisterImage( 0x9EB5078826CB710 ) )
+	OuterLineRightTop:setImage( RegisterImage( "uie_tempest_reticle_charge_top_line" ) )
 	OuterLineRightTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	OuterLineRightTop:setShaderVector( 0, 0, 0, 0.8, 0 )
 	OuterLineRightTop:setupNineSliceShader( 6, 6 )
@@ -65,7 +65,7 @@ CoD.TempestReticleInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local OuterLineAngleCenter0 = LUI.UIImage.new( 0.5, 0.5, -33, -15, 0.5, 0.5, -50, 4 )
 	OuterLineAngleCenter0:setAlpha( 0 )
 	OuterLineAngleCenter0:setZRot( -45 )
-	OuterLineAngleCenter0:setImage( RegisterImage( 0x9EB5078826CB710 ) )
+	OuterLineAngleCenter0:setImage( RegisterImage( "uie_tempest_reticle_charge_top_line" ) )
 	OuterLineAngleCenter0:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	OuterLineAngleCenter0:setShaderVector( 0, 0, 0, 0.77, 0.05 )
 	OuterLineAngleCenter0:setupNineSliceShader( 6, 6 )
@@ -74,7 +74,7 @@ CoD.TempestReticleInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local OuterLineRightTopLeft2 = LUI.UIImage.new( 0.5, 0.5, -17, 1, 0.5, 0.5, -48, -38 )
 	OuterLineRightTopLeft2:setAlpha( 0 )
-	OuterLineRightTopLeft2:setImage( RegisterImage( 0x9EB5078826CB710 ) )
+	OuterLineRightTopLeft2:setImage( RegisterImage( "uie_tempest_reticle_charge_top_line" ) )
 	OuterLineRightTopLeft2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	OuterLineRightTopLeft2:setShaderVector( 0, 0, 0, 0.8, 0 )
 	OuterLineRightTopLeft2:setupNineSliceShader( 6, 6 )
@@ -84,7 +84,7 @@ CoD.TempestReticleInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local OuterLineAngleCenter1 = LUI.UIImage.new( 0.5, 0.5, 17, 35, 0.5, 0.5, -5, 49 )
 	OuterLineAngleCenter1:setAlpha( 0 )
 	OuterLineAngleCenter1:setZRot( -45 )
-	OuterLineAngleCenter1:setImage( RegisterImage( 0x9EB5078826CB710 ) )
+	OuterLineAngleCenter1:setImage( RegisterImage( "uie_tempest_reticle_charge_top_line" ) )
 	OuterLineAngleCenter1:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	OuterLineAngleCenter1:setShaderVector( 0, 0, 0, 0.77, 0.05 )
 	OuterLineAngleCenter1:setupNineSliceShader( 6, 6 )
@@ -93,7 +93,7 @@ CoD.TempestReticleInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local OuterLineRightTop1 = LUI.UIImage.new( 0.5, 0.5, 0, 18, 0.5, 0.5, 38, 48 )
 	OuterLineRightTop1:setAlpha( 0 )
-	OuterLineRightTop1:setImage( RegisterImage( 0x9EB5078826CB710 ) )
+	OuterLineRightTop1:setImage( RegisterImage( "uie_tempest_reticle_charge_top_line" ) )
 	OuterLineRightTop1:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	OuterLineRightTop1:setShaderVector( 0, 0, 0, 0.8, 0 )
 	OuterLineRightTop1:setupNineSliceShader( 6, 6 )
@@ -103,7 +103,7 @@ CoD.TempestReticleInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local OuterLineAngleCenterLL = LUI.UIImage.new( 0.5, 0.5, -33, -15, 0.5, 0.5, -5, 49 )
 	OuterLineAngleCenterLL:setAlpha( 0 )
 	OuterLineAngleCenterLL:setZRot( 45 )
-	OuterLineAngleCenterLL:setImage( RegisterImage( 0x9EB5078826CB710 ) )
+	OuterLineAngleCenterLL:setImage( RegisterImage( "uie_tempest_reticle_charge_top_line" ) )
 	OuterLineAngleCenterLL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	OuterLineAngleCenterLL:setShaderVector( 0, 0, 0, 0.77, 0.05 )
 	OuterLineAngleCenterLL:setupNineSliceShader( 6, 6 )
@@ -112,7 +112,7 @@ CoD.TempestReticleInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local OuterLineLeft2 = LUI.UIImage.new( 0.5, 0.5, -17, 1, 0.5, 0.5, 38, 48 )
 	OuterLineLeft2:setAlpha( 0 )
-	OuterLineLeft2:setImage( RegisterImage( 0x9EB5078826CB710 ) )
+	OuterLineLeft2:setImage( RegisterImage( "uie_tempest_reticle_charge_top_line" ) )
 	OuterLineLeft2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	OuterLineLeft2:setShaderVector( 0, 0, 0, 0.8, 0 )
 	OuterLineLeft2:setupNineSliceShader( 6, 6 )
@@ -121,7 +121,7 @@ CoD.TempestReticleInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local Image0 = LUI.UIImage.new( 0.5, 0.5, 41, 50, 0.5, 0.5, 1, 14 )
 	Image0:setAlpha( 0 )
-	Image0:setImage( RegisterImage( 0xD505C2F06F43506 ) )
+	Image0:setImage( RegisterImage( "uie_tempest_reticle_charge_top_line_side" ) )
 	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Image0:setShaderVector( 0, 0, 0, 0.04, 0 )
 	Image0:setupNineSliceShader( 6, 6 )
@@ -130,7 +130,7 @@ CoD.TempestReticleInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local Image1 = LUI.UIImage.new( 0.5, 0.5, 41, 50, 0.5, 0.5, -13, 0 )
 	Image1:setAlpha( 0 )
-	Image1:setImage( RegisterImage( 0xD505C2F06F43506 ) )
+	Image1:setImage( RegisterImage( "uie_tempest_reticle_charge_top_line_side" ) )
 	Image1:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Image1:setShaderVector( 0, 0, 0, 0.04, 0 )
 	Image1:setupNineSliceShader( 6, 6 )
@@ -139,7 +139,7 @@ CoD.TempestReticleInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local Image2 = LUI.UIImage.new( 0.5, 0.5, -48, -39, 0.5, 0.5, 0, 13 )
 	Image2:setAlpha( 0 )
-	Image2:setImage( RegisterImage( 0xD505C2F06F43506 ) )
+	Image2:setImage( RegisterImage( "uie_tempest_reticle_charge_top_line_side" ) )
 	Image2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Image2:setShaderVector( 0, 0, 0, 0.04, 0 )
 	Image2:setupNineSliceShader( 6, 6 )
@@ -148,7 +148,7 @@ CoD.TempestReticleInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local Image3 = LUI.UIImage.new( 0.5, 0.5, -48, -39, 0.5, 0.5, -13, 0 )
 	Image3:setAlpha( 0 )
-	Image3:setImage( RegisterImage( 0xD505C2F06F43506 ) )
+	Image3:setImage( RegisterImage( "uie_tempest_reticle_charge_top_line_side" ) )
 	Image3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Image3:setShaderVector( 0, 0, 0, 0.04, 0 )
 	Image3:setupNineSliceShader( 6, 6 )

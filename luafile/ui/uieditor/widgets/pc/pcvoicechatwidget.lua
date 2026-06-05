@@ -36,16 +36,16 @@ CoD.PCVoiceChatWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ButtonList2, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		if HasProperty( f3_arg0, "action" ) then
-			ProcessListAction( self, f3_arg0, f3_arg2, f3_arg1 )
+	f1_arg0:AddButtonCallbackFunction( ButtonList2, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if HasProperty( element, "action" ) then
+			ProcessListAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		if HasProperty( f4_arg0, "action" ) then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if HasProperty( element, "action" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

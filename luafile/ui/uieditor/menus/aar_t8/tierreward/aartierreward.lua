@@ -298,24 +298,24 @@ LUI.createMenu.AARTierReward = function ( f1_arg0, f1_arg1 )
 	self:addElement( LootCaseMeter )
 	self.LootCaseMeter = LootCaseMeter
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3 )
-		CoD.AARUtility.CloseTierRewardOverlay( f25_arg1, f25_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.AARUtility.CloseTierRewardOverlay( menu, controller )
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
-	end, function ( f26_arg0, f26_arg1, f26_arg2 )
-		CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
 		if IsPC() then
-			CoD.AARUtility.CloseTierRewardOverlay( f27_arg1, f27_arg2 )
+			CoD.AARUtility.CloseTierRewardOverlay( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f28_arg0, f28_arg1, f28_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		else
 			return false

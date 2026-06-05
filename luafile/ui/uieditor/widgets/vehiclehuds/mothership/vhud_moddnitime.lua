@@ -9,21 +9,21 @@ CoD.vhud_ModDNITime.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local ModDNI = LUI.UIImage.new( 0, 0, 21, 57, 0, 0, 24, 60 )
-	ModDNI:setImage( RegisterImage( 0xA99159E8773B43E ) )
+	ModDNI:setImage( RegisterImage( "uie_t7_cp_hud_ms_modulesdni" ) )
 	ModDNI:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ModDNI )
 	self.ModDNI = ModDNI
 	
 	local ModDNIBracketB = LUI.UIImage.new( 0, 0, 15, 63, 0, 0, 45, 69 )
 	ModDNIBracketB:setAlpha( 0.2 )
-	ModDNIBracketB:setImage( RegisterImage( 0xAA0E9F848AD21D6 ) )
+	ModDNIBracketB:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_ground_modulesdnibracketb" ) )
 	ModDNIBracketB:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ModDNIBracketB )
 	self.ModDNIBracketB = ModDNIBracketB
 	
 	local ModDNIBracketT = LUI.UIImage.new( 0, 0, 15, 63, 0, 0, 12, 36 )
 	ModDNIBracketT:setAlpha( 0.2 )
-	ModDNIBracketT:setImage( RegisterImage( 0xAA0DBF848AD0A0C ) )
+	ModDNIBracketT:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_ground_modulesdnibrackett" ) )
 	ModDNIBracketT:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ModDNIBracketT )
 	self.ModDNIBracketT = ModDNIBracketT
@@ -32,7 +32,7 @@ CoD.vhud_ModDNITime.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	TextBox0:setAlpha( 0 )
 	TextBox0:setText( "" )
 	TextBox0:setTTF( "ttmussels_demibold" )
-	TextBox0:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xFAEF6B981087FCE ) )
+	TextBox0:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration_no_blur" ) )
 	TextBox0:setShaderVector( 0, 0.05, 0.4, 0, 0 )
 	TextBox0:setShaderVector( 1, 0, 0, 0, 0 )
 	TextBox0:setShaderVector( 2, 0, 0, 0, 0 )
@@ -45,7 +45,7 @@ CoD.vhud_ModDNITime.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local ModDNI0 = LUI.UIImage.new( 0, 0, 14, 65, 0, 0, 16, 67 )
 	ModDNI0:setAlpha( 0 )
-	ModDNI0:setImage( RegisterImage( 0xA99159E8773B43E ) )
+	ModDNI0:setImage( RegisterImage( "uie_t7_cp_hud_ms_modulesdni" ) )
 	ModDNI0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ModDNI0 )
 	self.ModDNI0 = ModDNI0

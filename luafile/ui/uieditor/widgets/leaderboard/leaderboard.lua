@@ -54,64 +54,64 @@ CoD.Leaderboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f6_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( LeaderboardRows, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		if IsSelfInState( self, "DefaultState" ) and not IsRepeatButtonPress( f7_arg3 ) then
+	f1_arg0:AddButtonCallbackFunction( LeaderboardRows, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], nil, function ( element, menu, controller, model )
+		if IsSelfInState( self, "DefaultState" ) and not IsRepeatButtonPress( model ) then
 			PlaySoundAlias( "uin_paint_decal_nav" )
-			CoD.LeaderboardUtility.LeaderboardPageUp( self, f7_arg0, f7_arg2 )
+			CoD.LeaderboardUtility.LeaderboardPageUp( self, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
+	end, function ( element, menu, controller )
 		if IsSelfInState( self, "DefaultState" ) and not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x7630B08CE7BF317, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "menu/lb_page_up", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( LeaderboardRows, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		if IsSelfInState( self, "DefaultState" ) and not IsRepeatButtonPress( f9_arg3 ) then
+	f1_arg0:AddButtonCallbackFunction( LeaderboardRows, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], nil, function ( element, menu, controller, model )
+		if IsSelfInState( self, "DefaultState" ) and not IsRepeatButtonPress( model ) then
 			PlaySoundAlias( "uin_paint_decal_nav" )
-			CoD.LeaderboardUtility.LeaderboardPageDown( self, f9_arg0, f9_arg2 )
+			CoD.LeaderboardUtility.LeaderboardPageDown( self, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
+	end, function ( element, menu, controller )
 		if IsSelfInState( self, "DefaultState" ) and not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "menu/lb_page_down", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "menu/lb_page_down", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( LeaderboardRows, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
+	f1_arg0:AddButtonCallbackFunction( LeaderboardRows, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
 		if IsSelfInState( self, "DefaultState" ) then
 			PlaySoundAlias( "uin_paint_decal_nav" )
-			CoD.LeaderboardUtility.LeaderboardGoToTopOfList( self, f11_arg0, f11_arg2 )
+			CoD.LeaderboardUtility.LeaderboardGoToTopOfList( self, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
+	end, function ( element, menu, controller )
 		if IsSelfInState( self, "DefaultState" ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x973DD79B6545E80, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/lb_top_of_list", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( LeaderboardRows, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		if IsSelfInState( self, "DefaultState" ) and IsGamepad( f13_arg2 ) then
-			CoD.LeaderboardUtility.LeaderboardOpenPlayerDetails( self, f13_arg0, f13_arg2 )
+	f1_arg0:AddButtonCallbackFunction( LeaderboardRows, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsSelfInState( self, "DefaultState" ) and IsGamepad( controller ) then
+			CoD.LeaderboardUtility.LeaderboardOpenPlayerDetails( self, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		if IsSelfInState( self, "DefaultState" ) and IsGamepad( f14_arg2 ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsSelfInState( self, "DefaultState" ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -129,7 +129,7 @@ CoD.Leaderboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	
 	LoadingText = LUI.UIText.new( 0.5, 0.5, -82.5, 82.5, 0.5, 0.5, -14, 14 )
 	LoadingText:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	LoadingText:setText( Engine[0xF9F1239CFD921FE]( 0x6A50DC52864D7AE ) )
+	LoadingText:setText( Engine[0xF9F1239CFD921FE]( "menu/lb_loading" ) )
 	LoadingText:setTTF( "dinnext_regular" )
 	LoadingText:setLetterSpacing( 2 )
 	LoadingText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

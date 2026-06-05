@@ -13,7 +13,7 @@ CoD.StartMenu_Barracks_FactionCalling_Button.new = function ( f1_arg0, f1_arg1, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local ButtonInternal = CoD.StartMenu_Barracks_FactionCalling_Button_Internal.new( f1_arg0, f1_arg1, 0, 1, 0, 0, 0, 1, 0, 0 )
-	ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( 0x7C4CA71FFE4CB25 ) )
+	ButtonInternal.ImageContainer.ImageContainer:setImage( RegisterImage( "uie_ui_menu_start_menu_small_grid" ) )
 	ButtonInternal.ButtonTitle.HeaderText:setText( Engine[0xF9F1239CFD921FE]( 0xA8A1AE4754B2601 ) )
 	self:addElement( ButtonInternal )
 	self.ButtonInternal = ButtonInternal

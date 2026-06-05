@@ -43,17 +43,17 @@ CoD.MOTD_BannerImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	f1_local3( f1_local2, f1_local4.LastInput, function ( f6_arg0, f6_arg1 )
 		CoD.Menu.UpdateButtonShownState( f6_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		if IsPC() and IsMouseOrKeyboard( f7_arg2 ) then
-			CoD.MOTDUtility.MOTD_SelectItemPC( f7_arg1, self, f7_arg2, "ButtonsList" )
-			ClearMenuSavedState( f7_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsPC() and IsMouseOrKeyboard( controller ) then
+			CoD.MOTDUtility.MOTD_SelectItemPC( menu, self, controller, "ButtonsList" )
+			ClearMenuSavedState( menu )
 			return true
 		else
 			
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		if IsPC() and IsMouseOrKeyboard( f8_arg2 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsPC() and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false

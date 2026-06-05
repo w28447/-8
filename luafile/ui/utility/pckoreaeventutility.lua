@@ -80,7 +80,7 @@ CoD.PCKoreaEventUtility.SetupKoreaDayListDataSource = function ( f5_arg0, f5_arg
 	return DataSourceHelpers.ListSetup( f5_arg0, function ( f6_arg0 )
 		return CoD.PCKoreaEventUtility.GetEventweekProgression( f5_arg1, f5_arg2, f5_arg3, f5_arg4 )
 	end
-	, false, false, false )
+	, false, nil, nil )
 end
 
 CoD.PCKoreaEventUtility.GetEventweekProgression = function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )

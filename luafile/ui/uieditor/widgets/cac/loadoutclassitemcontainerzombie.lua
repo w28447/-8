@@ -71,7 +71,7 @@ CoD.LoadoutClassItemContainerZombie.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local BarFocus = LUI.UIImage.new( 0, 0, -7, 309, 0, 0, -7, 17 )
 	BarFocus:setAlpha( 0 )
-	BarFocus:setImage( RegisterImage( 0xD94DE981665B101 ) )
+	BarFocus:setImage( RegisterImage( "uie_ui_menu_zombies_cac_special_weapon_bar_focus" ) )
 	self:addElement( BarFocus )
 	self.BarFocus = BarFocus
 	
@@ -104,7 +104,7 @@ CoD.LoadoutClassItemContainerZombie.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local loadoutName = LUI.UIText.new( 0, 0, 3, 195, 0, 0, -15, 0 )
 	loadoutName:setRGB( 0.58, 0.58, 0.58 )
 	loadoutName:setAlpha( 0.8 )
-	loadoutName:setText( LocalizeToUpperString( 0x63E51BFF17859F1 ) )
+	loadoutName:setText( LocalizeToUpperString( "mpui/primary_caps" ) )
 	loadoutName:setTTF( "ttmussels_regular" )
 	loadoutName:setLetterSpacing( 4 )
 	loadoutName:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

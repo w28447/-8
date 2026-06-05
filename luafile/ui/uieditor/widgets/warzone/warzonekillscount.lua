@@ -11,7 +11,7 @@ CoD.WarzoneKillsCount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local Glow2 = LUI.UIImage.new( 0, 0, -9, 77, 0, 0, -6, 38 )
 	Glow2:setRGB( 1, 0, 0 )
 	Glow2:setAlpha( 0 )
-	Glow2:setImage( RegisterImage( 0xC58FF2328701EBA ) )
+	Glow2:setImage( RegisterImage( "uie_ui_hud_core_no_ammo_glow" ) )
 	Glow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow2 )
 	self.Glow2 = Glow2
@@ -19,7 +19,7 @@ CoD.WarzoneKillsCount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local Glow = LUI.UIImage.new( 0, 0, 24.5, 74.5, 0, 0, -16, 48 )
 	Glow:setRGB( 1, 0, 0 )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0x65BA0231BD57E0B ) )
+	Glow:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_led_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
@@ -60,7 +60,7 @@ CoD.WarzoneKillsCount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.PlayerKillsAdd = PlayerKillsAdd
 	
 	local playerKillsIcon = LUI.UIImage.new( 1, 1, -69, -37, 0, 0, 0, 32 )
-	playerKillsIcon:setImage( RegisterImage( 0x5EFE28D1E8EB917 ) )
+	playerKillsIcon:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_icon_kills" ) )
 	self:addElement( playerKillsIcon )
 	self.playerKillsIcon = playerKillsIcon
 	

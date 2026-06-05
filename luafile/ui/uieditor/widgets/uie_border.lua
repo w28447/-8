@@ -10,13 +10,13 @@ CoD.uie_Border.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local right = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	right:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
-	right:setImage( RegisterImage( 0xDE89A66BFC55B6D ) )
+	right:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_indicator_bg" ) )
 	self:addElement( right )
 	self.right = right
 	
 	local right2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	right2:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
-	right2:setImage( RegisterImage( 0xDE89A66BFC55B6D ) )
+	right2:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_indicator_bg" ) )
 	right2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	right2:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( right2 )

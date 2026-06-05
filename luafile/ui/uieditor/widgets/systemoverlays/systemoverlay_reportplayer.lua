@@ -44,7 +44,7 @@ CoD.systemOverlay_reportPlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local Title = LUI.UIText.new( 0.5, 0.5, -342, 864, 0, 0, 10, 44 )
 	Title:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
-	Title:setText( Engine[0xF9F1239CFD921FE]( 0xA9BFB932EE4FB07 ) )
+	Title:setText( Engine[0xF9F1239CFD921FE]( "menu/report_user_caps" ) )
 	Title:setTTF( "ttmussels_demibold" )
 	Title:setLetterSpacing( 6 )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -146,12 +146,12 @@ CoD.systemOverlay_reportPlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ReportButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		CoD.PCWidgetUtility.SendReportPlayer( self, f6_arg2 )
-		GoBack( self, f6_arg2 )
+	f1_arg0:AddButtonCallbackFunction( ReportButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.PCWidgetUtility.SendReportPlayer( self, controller )
+		GoBack( self, controller )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( ReportButton )
@@ -171,11 +171,11 @@ CoD.systemOverlay_reportPlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f8_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( CancelButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		GoBack( self, f9_arg2 )
+	f1_arg0:AddButtonCallbackFunction( CancelButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( CancelButton )
@@ -254,7 +254,7 @@ CoD.systemOverlay_reportPlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local cornerBracket = LUI.UIImage.new( 0.5, 0.5, -748, -736, 0, 0, 13, 25 )
 	cornerBracket:setAlpha( 0.5 )
 	cornerBracket:setZRot( 180 )
-	cornerBracket:setImage( RegisterImage( 0x535662F512D5F90 ) )
+	cornerBracket:setImage( RegisterImage( "uie_ui_menu_social_corner_bracket" ) )
 	cornerBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cornerBracket )
 	self.cornerBracket = cornerBracket
@@ -262,7 +262,7 @@ CoD.systemOverlay_reportPlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local cornerBracket4 = LUI.UIImage.new( 0.5, 0.5, -748, -736, 0, 0, 377, 389 )
 	cornerBracket4:setAlpha( 0.5 )
 	cornerBracket4:setZRot( 270 )
-	cornerBracket4:setImage( RegisterImage( 0x535662F512D5F90 ) )
+	cornerBracket4:setImage( RegisterImage( "uie_ui_menu_social_corner_bracket" ) )
 	cornerBracket4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cornerBracket4 )
 	self.cornerBracket4 = cornerBracket4
@@ -270,14 +270,14 @@ CoD.systemOverlay_reportPlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local cornerBracket2 = LUI.UIImage.new( 0.5, 0.5, -394, -382, 0, 0, 13, 25 )
 	cornerBracket2:setAlpha( 0.5 )
 	cornerBracket2:setZRot( 90 )
-	cornerBracket2:setImage( RegisterImage( 0x535662F512D5F90 ) )
+	cornerBracket2:setImage( RegisterImage( "uie_ui_menu_social_corner_bracket" ) )
 	cornerBracket2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cornerBracket2 )
 	self.cornerBracket2 = cornerBracket2
 	
 	local cornerBracket3 = LUI.UIImage.new( 0.5, 0.5, -394, -382, 0, 0, 377, 389 )
 	cornerBracket3:setAlpha( 0.5 )
-	cornerBracket3:setImage( RegisterImage( 0x535662F512D5F90 ) )
+	cornerBracket3:setImage( RegisterImage( "uie_ui_menu_social_corner_bracket" ) )
 	cornerBracket3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( cornerBracket3 )
 	self.cornerBracket3 = cornerBracket3

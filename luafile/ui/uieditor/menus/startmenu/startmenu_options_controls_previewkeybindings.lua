@@ -36,31 +36,31 @@ LUI.createMenu.StartMenu_Options_Controls_PreviewKeybindings = function ( f1_arg
 	
 	local PreloadImage1 = LUI.UIImage.new( 0, 0, 1350, 1478, 0, 0, -223.5, -95.5 )
 	PreloadImage1:setAlpha( 0 )
-	PreloadImage1:setImage( RegisterImage( 0xD8060B016B78EC5 ) )
+	PreloadImage1:setImage( RegisterImage( "i_mtl_keypreset_default" ) )
 	self:addElement( PreloadImage1 )
 	self.PreloadImage1 = PreloadImage1
 	
 	local PreloadImage2 = LUI.UIImage.new( 0, 0, 1496, 1624, 0, 0, -223.5, -95.5 )
 	PreloadImage2:setAlpha( 0 )
-	PreloadImage2:setImage( RegisterImage( 0xFC5C06AFCAE7380 ) )
+	PreloadImage2:setImage( RegisterImage( "i_mtl_keypreset_lefty" ) )
 	self:addElement( PreloadImage2 )
 	self.PreloadImage2 = PreloadImage2
 	
 	local PreloadImage3 = LUI.UIImage.new( 0, 0, 1634, 1762, 0, 0, -223.5, -95.5 )
 	PreloadImage3:setAlpha( 0 )
-	PreloadImage3:setImage( RegisterImage( 0xE061B05A775D343 ) )
+	PreloadImage3:setImage( RegisterImage( "i_mtl_keypreset_leftymirror" ) )
 	self:addElement( PreloadImage3 )
 	self.PreloadImage3 = PreloadImage3
 	
 	local PreloadImage5 = LUI.UIImage.new( 0, 0, 1890, 2018, 0, 0, -223.5, -95.5 )
 	PreloadImage5:setAlpha( 0 )
-	PreloadImage5:setImage( RegisterImage( 0x2C592ED9C8F62F0 ) )
+	PreloadImage5:setImage( RegisterImage( "i_mtl_keypreset_bo3" ) )
 	self:addElement( PreloadImage5 )
 	self.PreloadImage5 = PreloadImage5
 	
 	local PreloadImage4 = LUI.UIImage.new( 0, 0, 1890, 2018, 0, 0, -223.5, -95.5 )
 	PreloadImage4:setAlpha( 0 )
-	PreloadImage4:setImage( RegisterImage( 0x2D51E0C753FB7C9 ) )
+	PreloadImage4:setImage( RegisterImage( "i_mtl_keypreset_overwatch" ) )
 	self:addElement( PreloadImage4 )
 	self.PreloadImage4 = PreloadImage4
 	
@@ -81,11 +81,11 @@ LUI.createMenu.StartMenu_Options_Controls_PreviewKeybindings = function ( f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( PCStartMenuOptionsControlsTabContentKeyBindingPreviewButton2, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		CoD.PCWidgetUtility.DisplayApplyPresetConfirmationPopup( self, f3_arg2, self.PCStartMenuOptionsControlsTabContentDropDownPresetKeybindings, true, false )
+	f1_local1:AddButtonCallbackFunction( PCStartMenuOptionsControlsTabContentKeyBindingPreviewButton2, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.PCWidgetUtility.DisplayApplyPresetConfirmationPopup( self, controller, self.PCStartMenuOptionsControlsTabContentDropDownPresetKeybindings, true, false )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( PCStartMenuOptionsControlsTabContentKeyBindingPreviewButton2 )
@@ -115,7 +115,7 @@ LUI.createMenu.StartMenu_Options_Controls_PreviewKeybindings = function ( f1_arg
 	local Border = LUI.UIImage.new( 0.5, 0.5, -400, 400, 1, 1, -730, -510 )
 	Border:setRGB( 0.8, 0.76, 0.7 )
 	Border:setAlpha( 0.15 )
-	Border:setImage( RegisterImage( 0xF1E3082B39E99BB ) )
+	Border:setImage( RegisterImage( "uie_highlight_border_line" ) )
 	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 6, 6 )
@@ -139,20 +139,20 @@ LUI.createMenu.StartMenu_Options_Controls_PreviewKeybindings = function ( f1_arg
 	self:addElement( title )
 	self.title = title
 	
-	self:registerEventHandler( "close_all_ingame_menus", function ( element, event )
+	self:registerEventHandler( "close_all_ingame_menus", function ( self, event )
 		local f6_local0 = nil
 		Close( self, f1_arg0 )
 		if not f6_local0 then
-			f6_local0 = element:dispatchEventToChildren( event )
+			f6_local0 = self:dispatchEventToChildren( event )
 		end
 		return f6_local0
 	end )
-	self:registerEventHandler( "occlusion_change", function ( element, event )
+	self:registerEventHandler( "occlusion_change", function ( self, event )
 		local f7_local0 = nil
-		if element.OcclusionChange then
-			f7_local0 = element:OcclusionChange( event )
-		elseif element.super.OcclusionChange then
-			f7_local0 = element.super:OcclusionChange( event )
+		if self.OcclusionChange then
+			f7_local0 = self:OcclusionChange( event )
+		elseif self.super.OcclusionChange then
+			f7_local0 = self.super:OcclusionChange( event )
 		end
 		if IsEventPropertyEqualTo( event, "occluded", true ) then
 			SetState( self, "Hidden", f1_arg0 )
@@ -160,27 +160,27 @@ LUI.createMenu.StartMenu_Options_Controls_PreviewKeybindings = function ( f1_arg
 			SetState( self, "DefaultState", f1_arg0 )
 		end
 		if not f7_local0 then
-			f7_local0 = element:dispatchEventToChildren( event )
+			f7_local0 = self:dispatchEventToChildren( event )
 		end
 		return f7_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		CoD.PCWidgetUtility.DisplayApplyPresetConfirmationPopup( self, f8_arg2, self.PCStartMenuOptionsControlsTabContentDropDownPresetKeybindings, true, true )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		CoD.PCWidgetUtility.DisplayApplyPresetConfirmationPopup( self, controller, self.PCStartMenuOptionsControlsTabContentDropDownPresetKeybindings, true, true )
 		return true
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
 		if IsSelfPropertyValue( self, "_parentMenuId", "Director" ) then
-			CoD.PCWidgetUtility.DisplayApplyPresetConfirmationPopupAndGoToSettings( self, f10_arg2, self.PCStartMenuOptionsControlsTabContentDropDownPresetKeybindings )
+			CoD.PCWidgetUtility.DisplayApplyPresetConfirmationPopupAndGoToSettings( self, controller, self.PCStartMenuOptionsControlsTabContentDropDownPresetKeybindings )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
+	end, function ( element, menu, controller )
 		if IsSelfPropertyValue( self, "_parentMenuId", "Director" ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x72149EF86CFB295, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], 0x72149EF86CFB295, nil, nil )
 			return true
 		else
 			return false

@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/demo/demosidebarbutton" )
-require( "x64:48be5c6feaceeb4" )
-require( "x64:f93e6387e9d051" )
-require( "x64:1850ed39b9104e4" )
+require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settinginfo" )
+require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settingslider_wrapper" )
+require( "ui/uieditor/widgets/startmenu/options/startmenu_options_controllerlayout" )
 require( "x64:b710bc406e458bd" )
 require( "ui/uieditor/widgets/pc/theater/pc_theater_keyboard_shortcut_legend" )
 
@@ -48,11 +48,11 @@ CoD.StartMenu_Theater.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ButtonList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		ProcessListAction( self, f4_arg0, f4_arg2, f4_arg1 )
+	f1_arg0:AddButtonCallbackFunction( ButtonList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		ProcessListAction( self, element, controller, menu )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( ButtonList )
@@ -81,16 +81,16 @@ CoD.StartMenu_Theater.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( OptionGroups, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if HasListAction( f8_arg0, f8_arg2 ) then
-			ProcessListAction( self, f8_arg0, f8_arg2, f8_arg1 )
+	f1_arg0:AddButtonCallbackFunction( OptionGroups, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if HasListAction( element, controller ) then
+			ProcessListAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if HasListAction( f9_arg0, f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if HasListAction( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

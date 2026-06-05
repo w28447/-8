@@ -10,7 +10,7 @@ CoD.WarzoneInventoryUnlockMissionObjectiveBG.new = function ( f1_arg0, f1_arg1, 
 	
 	local failedIcon = LUI.UIImage.new( 0, 0, 0, 16, 0, 0, 1.5, 17.5 )
 	failedIcon:setAlpha( 0 )
-	failedIcon:setImage( RegisterImage( 0x4E1F97403E7D551 ) )
+	failedIcon:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_mission_x" ) )
 	failedIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( failedIcon )
 	self.failedIcon = failedIcon
@@ -18,7 +18,7 @@ CoD.WarzoneInventoryUnlockMissionObjectiveBG.new = function ( f1_arg0, f1_arg1, 
 	local completedIcon = LUI.UIImage.new( 0, 0, 0, 16, 0, 0, 1.5, 17.5 )
 	completedIcon:setAlpha( 0 )
 	completedIcon:setScale( 0.9, 0.9 )
-	completedIcon:setImage( RegisterImage( 0x82143D1E9623675 ) )
+	completedIcon:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_mission_check" ) )
 	completedIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( completedIcon )
 	self.completedIcon = completedIcon
@@ -50,7 +50,7 @@ CoD.WarzoneInventoryUnlockMissionObjectiveBG.new = function ( f1_arg0, f1_arg1, 
 			condition = function ( menu, element, event )
 				local f4_local0
 				if not CoD.ModelUtility.IsSelfModelValueNil( element, f1_arg1, "description" ) then
-					f4_local0 = not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "description", 0x0 )
+					f4_local0 = not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "description", "" )
 				else
 					f4_local0 = false
 				end

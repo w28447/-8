@@ -38,7 +38,7 @@ LUI.createMenu.WeaponSelectFlyout = function ( f1_arg0, f1_arg1 )
 	self.BackgroundSlidePanel = BackgroundSlidePanel
 	
 	local CACHeader = CoD.CACHeader.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0, 0, 0, 67 )
-	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x93CE015442D7E04 ) )
+	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/select_weapon_caps" ) )
 	CACHeader.subtitle.subtitle:setAlpha( 0 )
 	CACHeader:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
@@ -197,32 +197,32 @@ LUI.createMenu.WeaponSelectFlyout = function ( f1_arg0, f1_arg1 )
 	RestrictedText:linkToElementModel( WeaponListWidget.weaponList, nil, false, function ( model )
 		RestrictedText:setModel( model, f1_arg0 )
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		if MenuPropertyIsTrue( f15_arg1, "_showWeaponVariantList" ) and IsPC() then
-			CoD.CACUtility.HideWeaponVariantList( f15_arg1, f15_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		if MenuPropertyIsTrue( menu, "_showWeaponVariantList" ) and IsPC() then
+			CoD.CACUtility.HideWeaponVariantList( menu, controller )
 			return true
 		elseif not IsPC() then
 			PlaySoundAlias( "uin_party_ease_slide_back" )
-			CoD.CACUtility.PlayChooseScreenOutro( f15_arg1, f15_arg2, "Close" )
-			DelayUnhideFreecursorGoBack( f15_arg1, f15_arg2, 200 )
+			CoD.CACUtility.PlayChooseScreenOutro( menu, controller, "Close" )
+			DelayUnhideFreecursorGoBack( menu, controller, 200 )
 			return true
 		elseif IsPC() then
 			PlaySoundAlias( "uin_party_ease_slide_back" )
-			CoD.CACUtility.PlayChooseScreenOutro( f15_arg1, f15_arg2, "ClosePC" )
-			DelayGoBack( f15_arg1, f15_arg2, 70 )
+			CoD.CACUtility.PlayChooseScreenOutro( menu, controller, "ClosePC" )
+			DelayGoBack( menu, controller, 70 )
 			return true
 		else
 			
 		end
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		if MenuPropertyIsTrue( f16_arg1, "_showWeaponVariantList" ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		if MenuPropertyIsTrue( menu, "_showWeaponVariantList" ) and IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif not IsPC() then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif IsPC() then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false

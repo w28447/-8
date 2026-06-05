@@ -2,7 +2,7 @@ require( "ui/uieditor/widgets/common/commonfocusbrackets" )
 require( "ui/uieditor/widgets/customgames/customgames_settingsliderlist" )
 require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_customsettingsindicator" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
-require( "x64:2b3a36f75bb6e0e" )
+require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settingsliderarrow" )
 
 CoD.CustomGames_SettingSlider_Internal = InheritFrom( LUI.UIElement )
 CoD.CustomGames_SettingSlider_Internal.__defaultWidth = 700
@@ -98,7 +98,7 @@ CoD.CustomGames_SettingSlider_Internal.new = function ( f1_arg0, f1_arg1, f1_arg
 	OptionCountBorder = LUI.UIImage.new( 1, 1, -254, -4, 1, 1, -9, -5 )
 	OptionCountBorder:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	OptionCountBorder:setAlpha( 0 )
-	OptionCountBorder:setImage( RegisterImage( 0x1B69BB6285C5BBB ) )
+	OptionCountBorder:setImage( RegisterImage( "uie_hud_core_loadout_panel1" ) )
 	OptionCountBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0x31E7B3C72564429 ) )
 	OptionCountBorder:setShaderVector( 0, 0, 0, 0.55, 0.13 )
 	OptionCountBorder:setShaderVector( 1, 10, 1, 0, 0 )
@@ -109,7 +109,7 @@ CoD.CustomGames_SettingSlider_Internal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	CurrentOptionBorderDefault = LUI.UIImage.new( 1, 1, -254, -4, 1, 1, -9, -5 )
 	CurrentOptionBorderDefault:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	CurrentOptionBorderDefault:setImage( RegisterImage( 0x1B69BB6285C5BBB ) )
+	CurrentOptionBorderDefault:setImage( RegisterImage( "uie_hud_core_loadout_panel1" ) )
 	CurrentOptionBorderDefault:setMaterial( LUI.UIImage.GetCachedMaterial( 0x31E7B3C72564429 ) )
 	CurrentOptionBorderDefault:setShaderVector( 0, 0, 0, 0.55, 0.13 )
 	CurrentOptionBorderDefault:setShaderVector( 1, 10, 1, 0, 0 )
@@ -120,7 +120,7 @@ CoD.CustomGames_SettingSlider_Internal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	CurrentOptionBorderCustom = LUI.UIImage.new( 1, 1, -254, -4, 1, 1, -9, -5 )
 	CurrentOptionBorderCustom:setRGB( 0.93, 0.45, 0.05 )
-	CurrentOptionBorderCustom:setImage( RegisterImage( 0x1B69BB6285C5BBB ) )
+	CurrentOptionBorderCustom:setImage( RegisterImage( "uie_hud_core_loadout_panel1" ) )
 	CurrentOptionBorderCustom:setMaterial( LUI.UIImage.GetCachedMaterial( 0x31E7B3C72564429 ) )
 	CurrentOptionBorderCustom:setShaderVector( 0, 0, 0, 0.55, 0.13 )
 	CurrentOptionBorderCustom:setShaderVector( 1, 10, 1, 0, 0 )
@@ -173,14 +173,14 @@ CoD.CustomGames_SettingSlider_Internal.new = function ( f1_arg0, f1_arg1, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f10_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( LeftArrow, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
+	f1_arg0:AddButtonCallbackFunction( LeftArrow, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		CoD.OptionsUtility.CycleSettingListLeft( self.SettingSliderList )
-		SetFocusToElement( self, "SettingSliderList", f11_arg2 )
-		SetLoseFocusToSelf( self, f11_arg2 )
-		SetFocusToElement( self, "LeftArrow", f11_arg2 )
+		SetFocusToElement( self, "SettingSliderList", controller )
+		SetLoseFocusToSelf( self, controller )
+		SetFocusToElement( self, "LeftArrow", controller )
 		return true
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( LeftArrow )
@@ -211,14 +211,14 @@ CoD.CustomGames_SettingSlider_Internal.new = function ( f1_arg0, f1_arg1, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f14_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( RightArrow, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
+	f1_arg0:AddButtonCallbackFunction( RightArrow, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		CoD.OptionsUtility.CycleSettingListRight( self.SettingSliderList )
-		SetFocusToElement( self, "SettingSliderList", f15_arg2 )
-		SetLoseFocusToSelf( self, f15_arg2 )
-		SetFocusToElement( self, "RightArrow", f15_arg2 )
+		SetFocusToElement( self, "SettingSliderList", controller )
+		SetLoseFocusToSelf( self, controller )
+		SetFocusToElement( self, "RightArrow", controller )
 		return true
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( RightArrow )
@@ -246,14 +246,14 @@ CoD.CustomGames_SettingSlider_Internal.new = function ( f1_arg0, f1_arg1, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f18_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( UnlimitedButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
+	f1_arg0:AddButtonCallbackFunction( UnlimitedButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		CoD.GridAndListUtility.SetFocusToFirstSelectableItem( self.SettingSliderList )
 		CoD.OptionsUtility.SetFocusToGrid( self.SettingSliderList )
-		SetLoseFocusToSelf( self, f19_arg2 )
-		SetFocusToElement( self, "UnlimitedButton", f19_arg2 )
+		SetLoseFocusToSelf( self, controller )
+		SetFocusToElement( self, "UnlimitedButton", controller )
 		return true
-	end, function ( f20_arg0, f20_arg1, f20_arg2 )
-		CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( UnlimitedButton )
@@ -269,7 +269,7 @@ CoD.CustomGames_SettingSlider_Internal.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local ItemFrameAdd = LUI.UIImage.new( 0, 0, -3.5, 703.5, 0, 0, -1, 61 )
 	ItemFrameAdd:setAlpha( 0 )
-	ItemFrameAdd:setImage( RegisterImage( 0xC2AE59F4FA74812 ) )
+	ItemFrameAdd:setImage( RegisterImage( "uie_ui_menu_store_element_frame" ) )
 	ItemFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ItemFrameAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	ItemFrameAdd:setupNineSliceShader( 12, 164 )

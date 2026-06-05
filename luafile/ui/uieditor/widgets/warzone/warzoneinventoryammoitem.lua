@@ -22,7 +22,7 @@ CoD.WarzoneInventoryAmmoItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Cover = LUI.UIImage.new( 0, 0, -1, 93, 0, 0, -1.5, 91.5 )
 	Cover:setRGB( 0.15, 0.15, 0.13 )
 	Cover:setAlpha( 0 )
-	Cover:setImage( RegisterImage( 0x317CE6ADACFDAA5 ) )
+	Cover:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_frame_cover" ) )
 	Cover:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Cover:setShaderVector( 0, 0, 0, 0, 0 )
 	Cover:setupNineSliceShader( 20, 20 )

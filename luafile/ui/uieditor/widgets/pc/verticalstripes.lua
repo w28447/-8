@@ -10,14 +10,14 @@ CoD.VerticalStripes.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local MapLayoutStripe = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	MapLayoutStripe:setAlpha( 0.12 )
-	MapLayoutStripe:setImage( RegisterImage( 0xE188316C34F5BAA ) )
+	MapLayoutStripe:setImage( RegisterImage( "uie_stripes_vertical" ) )
 	MapLayoutStripe:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( MapLayoutStripe )
 	self.MapLayoutStripe = MapLayoutStripe
 	
 	local MapLayoutStripeAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	MapLayoutStripeAdd:setAlpha( 0.5 )
-	MapLayoutStripeAdd:setImage( RegisterImage( 0xE188316C34F5BAA ) )
+	MapLayoutStripeAdd:setImage( RegisterImage( "uie_stripes_vertical" ) )
 	MapLayoutStripeAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	MapLayoutStripeAdd:setShaderVector( 0, 0, 1, 0, 0 )
 	MapLayoutStripeAdd:setShaderVector( 1, 0, 0, 0, 0 )

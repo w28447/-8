@@ -57,13 +57,13 @@ CoD.ItemShopPreviewButtonContentImage.new = function ( f1_arg0, f1_arg1, f1_arg2
 		{
 			stateName = "OutfitBundle",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xC398D8E22A2269B )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "outfit_bundle" )
 			end
 		},
 		{
 			stateName = "OutfitPalette",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xDD691088352B680 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "palette" )
 			end
 		}
 	} )

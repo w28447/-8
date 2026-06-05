@@ -45,26 +45,26 @@ CoD.SupplyChainFrameContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( StreamList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f6_arg0, f6_arg2, "isUpsell" ) then
-			SetControllerModelValue( f6_arg2, "LootStreamProgress.playAnimation", false )
-			CoD.ContractUtility.OpenSupplyChainContractDetails( self, f6_arg0, f6_arg2 )
+	f1_arg0:AddButtonCallbackFunction( StreamList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isUpsell" ) then
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+			CoD.ContractUtility.OpenSupplyChainContractDetails( self, element, controller )
 			PlaySoundAlias( "uin_press_generic" )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueTrue( f6_arg0, f6_arg2, "isContract" ) then
-			SetControllerModelValue( f6_arg2, "LootStreamProgress.playAnimation", false )
-			CoD.ContractUtility.OpenSupplyChainContractDetails( self, f6_arg0, f6_arg2 )
+		elseif CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isContract" ) then
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+			CoD.ContractUtility.OpenSupplyChainContractDetails( self, element, controller )
 			PlaySoundAlias( "uin_press_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f7_arg0, f7_arg2, "isUpsell" ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9C695BAD15F589A, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isUpsell" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0x9C695BAD15F589A, nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueTrue( f7_arg0, f7_arg2, "isContract" ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9C695BAD15F589A, nil, nil )
+		elseif CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isContract" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0x9C695BAD15F589A, nil, nil )
 			return true
 		else
 			return false

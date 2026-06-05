@@ -27,15 +27,15 @@ end
 
 function GetSessionModeFromPresenceActivity( f3_arg0 )
 	if f3_arg0 == Enum.PresenceActivity[0x49372DE9D3CE680] then
-		return Enum.eModes[0xB22E0240605CFFE]
+		return Enum.eModes.mode_invalid
 	elseif Enum.PresenceActivity[0x5BC71242ADF26CC] <= f3_arg0 and f3_arg0 <= Enum.PresenceActivity[0xAE630745A488397] then
-		return Enum.eModes[0xB22E0240605CFFE]
+		return Enum.eModes.mode_invalid
 	elseif Enum.PresenceActivity[0x693885AC14523F7] <= f3_arg0 and f3_arg0 <= Enum.PresenceActivity[0xE51626309B75E83] then
-		return Enum.eModes[0x60063C67132EB69]
+		return Enum.eModes.mode_campaign
 	elseif Enum.PresenceActivity[0xD1C22A45FEE4499] <= f3_arg0 and f3_arg0 <= Enum.PresenceActivity[0xF6ADB55C320FA61] then
-		return Enum.eModes[0x83EBA96F36BC4E5]
+		return Enum.eModes.mode_multiplayer
 	elseif Enum.PresenceActivity[0x868A32F13DBE411] <= f3_arg0 and f3_arg0 <= Enum.PresenceActivity[0xF17115A3EC322A9] then
-		return Enum.eModes[0x3723205FAE52C4A]
+		return Enum.eModes.mode_zombies
 	else
 		
 	end
@@ -114,24 +114,24 @@ function RemoveItemFromClassSlot( f6_arg0, f6_arg1, f6_arg2, f6_arg3, f6_arg4 )
 			RemoveItemFromClassSlot( f6_arg0, "primarygrenadecount", f6_arg2, f6_arg3, f6_arg4 )
 		elseif LUI.startswith( f6_arg1, "bonuscard" ) then
 			local f6_local3 = Engine[0xB98952F69D937F9]( f6_local2, CoD.CACUtility.GetStatIndexOffsetForLoadoutSlot( f6_arg1, f6_arg4 ), f6_arg4 )
-			if f6_local3 == 0x7D681250287807D and not f6_arg3 then
+			if f6_local3 == "bonuscard_perk_1_greed" and not f6_arg3 then
 				RemoveItemFromClassSlot( f6_arg0, "talent.4", f6_arg2, f6_arg3, f6_arg4 )
-			elseif f6_local3 == 0x927FEA821FFA36C and not f6_arg3 then
+			elseif f6_local3 == "bonuscard_perk_2_greed" and not f6_arg3 then
 				RemoveItemFromClassSlot( f6_arg0, "talent.5", f6_arg2, f6_arg3, f6_arg4 )
-			elseif f6_local3 == 0xB03ADC532F77517 and not f6_arg3 then
+			elseif f6_local3 == "bonuscard_perk_3_greed" and not f6_arg3 then
 				RemoveItemFromClassSlot( f6_arg0, "talent.6", f6_arg2, f6_arg3, f6_arg4 )
-			elseif f6_local3 == 0xE8E25CA6D4FFCAA then
+			elseif f6_local3 == "bonuscard_perk_1_gluttony" then
 				RemoveItemFromClassSlot( f6_arg0, "talent.2", f6_arg2, f6_arg3, f6_arg4 )
 				RemoveItemFromClassSlot( f6_arg0, "talent.3", f6_arg2, f6_arg3, f6_arg4 )
-			elseif f6_local3 == 0xE2D46C69C58DED1 then
+			elseif f6_local3 == "bonuscard_perk_2_gluttony" then
 				RemoveItemFromClassSlot( f6_arg0, "talent.1", f6_arg2, f6_arg3, f6_arg4 )
 				RemoveItemFromClassSlot( f6_arg0, "talent.3", f6_arg2, f6_arg3, f6_arg4 )
-			elseif f6_local3 == 0x8EC14572D948374 then
+			elseif f6_local3 == "bonuscard_perk_3_gluttony" then
 				RemoveItemFromClassSlot( f6_arg0, "talent.1", f6_arg2, f6_arg3, f6_arg4 )
 				RemoveItemFromClassSlot( f6_arg0, "talent.2", f6_arg2, f6_arg3, f6_arg4 )
 			elseif f6_local3 == "bonuscard_overkill" then
 				RemoveItemFromClassSlot( f6_arg0, "secondary", f6_arg2, f6_arg3, f6_arg4 )
-			elseif f6_local3 == 0x439C6CFA8A0CFEB then
+			elseif f6_local3 == "bonuscard_underkill" then
 				RemoveItemFromClassSlot( f6_arg0, "primary", f6_arg2, f6_arg3, f6_arg4 )
 			elseif CoD.BonuscardUtility.IsBonuscardOfTypeList( CoD.BonuscardUtility.PrimaryGunfighterWildcards, f6_local3 ) then
 				local f6_local4 = CoD.BonuscardUtility.SpecificGunfighterEquippedCountDDL( f6_arg2, f6_arg0, CoD.BonuscardUtility.PrimaryGunfighterWildcards, f6_arg4 )
@@ -159,9 +159,9 @@ function RemoveItemFromClassSlot( f6_arg0, f6_arg1, f6_arg2, f6_arg3, f6_arg4 )
 					end
 				end
 				CoD.WeaponAttachmentsUtility.ValidateUpgradeAttachmentLoadoutHelper( f6_arg2, f6_arg0, "secondary", f6_arg4 )
-			elseif f6_local3 == 0xCFB7582AD73158B then
+			elseif f6_local3 == "bonuscard_primary_operator_mod" then
 				RemoveItemFromClassSlot( f6_arg0, "primary.attachment.5", f6_arg2, f6_arg3, f6_arg4 )
-			elseif f6_local3 == 0x846D8E9A76A4A77 then
+			elseif f6_local3 == "bonuscard_secondary_operator_mod" then
 				RemoveItemFromClassSlot( f6_arg0, "secondary.attachment.5", f6_arg2, f6_arg3, f6_arg4 )
 			end
 		end
@@ -173,7 +173,8 @@ end
 
 function AttemptAttachItem( f7_arg0, f7_arg1, f7_arg2, f7_arg3, f7_arg4, f7_arg5, f7_arg6, f7_arg7 )
 	local f7_local0 = f7_arg3.classNum:get()
-	local f7_local1, f7_local2 = false
+	local f7_local1 = false
+	local f7_local2 = nil
 	local f7_local3 = false
 	local f7_local4 = LUI.startswith( f7_arg4, "primary.attachment" )
 	if not f7_local4 then
@@ -194,7 +195,7 @@ function AttemptAttachItem( f7_arg0, f7_arg1, f7_arg2, f7_arg3, f7_arg4, f7_arg5
 			f7_local5 = Engine[0x37522AE910C327]( f7_local9, f7_arg2 ) == Enum[0x7420BCDBDE17A84][0x6EE211053211305]
 		end
 	end
-	if not f7_local7 or f7_local7 == 0x0 then
+	if not f7_local7 or f7_local7 == "" then
 		f7_local7 = Engine[0xB98952F69D937F9]( f7_arg5, f7_local6, f7_arg2 )
 	end
 	local f7_local8 = CoD.CACUtility.GetMutuallyExclusiveSlotName( f7_arg1, f7_arg3, f7_arg4, f7_arg5, f7_local7, f7_arg2 )
@@ -223,11 +224,11 @@ function AttemptAttachItem( f7_arg0, f7_arg1, f7_arg2, f7_arg3, f7_arg4, f7_arg5
 			f7_local2 = f7_arg4
 		end
 		local f7_local13 = Engine[0xB98952F69D937F9]( f7_local10, f7_local6, f7_arg2 )
-		if f7_local13 == 0x7D681250287807D then
+		if f7_local13 == "bonuscard_perk_1_greed" then
 			RemoveItemFromClassSlot( f7_arg3, "talent.4", f7_arg1, f7_local3, f7_arg2 )
-		elseif f7_local13 == 0x927FEA821FFA36C then
+		elseif f7_local13 == "bonuscard_perk_2_greed" then
 			RemoveItemFromClassSlot( f7_arg3, "talent.5", f7_arg1, f7_local3, f7_arg2 )
-		elseif f7_local13 == 0xB03ADC532F77517 then
+		elseif f7_local13 == "bonuscard_perk_3_greed" then
 			RemoveItemFromClassSlot( f7_arg3, "talent.6", f7_arg1, f7_local3, f7_arg2 )
 		end
 		RemoveItemFromClassSlot( f7_arg3, f7_local2, f7_arg1, f7_local3, f7_arg2 )
@@ -252,7 +253,7 @@ function AttemptAttachItem( f7_arg0, f7_arg1, f7_arg2, f7_arg3, f7_arg4, f7_arg5
 		local f7_local15 = f7_local12 + f7_local14 - f7_local13
 		local f7_local16 = Engine.GetModelForController( f7_arg1 )
 		f7_local16["CACMenu.numItemsToRemove"].set( f7_local16["CACMenu.numItemsToRemove"], f7_local15 )
-		if f7_arg2 == Enum.eModes[0x3723205FAE52C4A] or f7_local12 + f7_local14 <= f7_local13 or f7_local14 == 0 and not LUI.startswith( f7_arg4, "primary.attachment" ) and not LUI.startswith( f7_arg4, "secondary.attachment" ) and f7_arg4 ~= "primarygrenadecount" then
+		if f7_arg2 == Enum.eModes.mode_zombies or f7_local12 + f7_local14 <= f7_local13 or f7_local14 == 0 and not LUI.startswith( f7_arg4, "primary.attachment" ) and not LUI.startswith( f7_arg4, "secondary.attachment" ) and f7_arg4 ~= "primarygrenadecount" then
 			f7_local1 = true
 		else
 			CoD.perController[f7_arg1].overCapacityItemIndex = f7_arg5
@@ -271,7 +272,7 @@ function AttemptAttachItem( f7_arg0, f7_arg1, f7_arg2, f7_arg3, f7_arg4, f7_arg5
 	if f7_local1 and f7_arg5 > CoD.CACUtility.EmptyItemIndex then
 		if f7_local7 == "bonuscard_overkill" then
 			RemoveItemFromClassSlot( f7_arg3, "secondary", f7_arg1, f7_local3, f7_arg2 )
-		elseif f7_local7 == 0x439C6CFA8A0CFEB then
+		elseif f7_local7 == "bonuscard_underkill" then
 			RemoveItemFromClassSlot( f7_arg3, "primary", f7_arg1, f7_local3, f7_arg2 )
 		end
 		CoD.CACUtility.SetClassItem( f7_arg1, f7_local0, f7_arg4, f7_arg5, f7_arg6, f7_arg2 )
@@ -540,7 +541,7 @@ function ValidateCreateGroupInformation( f35_arg0, f35_arg1, f35_arg2 )
 	local f35_local1 = Engine.GetModelValue( Engine.GetModel( f35_local0, "groups.createGroup.name" ) )
 	local f35_local2 = Engine.GetModelValue( Engine.GetModel( f35_local0, "groups.createGroup.description" ) )
 	if f35_local1 == "" then
-		OpenGenericSmallPopup( f35_arg0, f35_arg2, 0x4553C10CA6CD641, 0x231A10628026E56, nil, 0x5BE4A02B20F31F1 )
+		OpenGenericSmallPopup( f35_arg0, f35_arg2, "groups/missing_group_name_title", "groups/missing_group_name_text", nil, "menu/ok" )
 		return false
 	else
 		return true

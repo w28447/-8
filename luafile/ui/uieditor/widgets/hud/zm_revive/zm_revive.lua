@@ -57,7 +57,7 @@ CoD.ZM_Revive.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	self.ZMReviveClampedArrow = ZMReviveClampedArrow
 	
 	local revivingText = LUI.UIText.new( 0, 0, -300, 300, 0, 0, 180, 260 )
-	revivingText:setText( Engine[0xF9F1239CFD921FE]( 0x605483F37772A32 ) )
+	revivingText:setText( Engine[0xF9F1239CFD921FE]( "zombie/reviving" ) )
 	revivingText:setTTF( "notosans_bold" )
 	revivingText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	revivingText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

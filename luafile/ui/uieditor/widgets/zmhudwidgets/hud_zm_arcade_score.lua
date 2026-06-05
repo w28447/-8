@@ -9,7 +9,7 @@ CoD.Hud_ZM_Arcade_Score.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local ScoreText = LUI.UIText.new( 0, 0, 21, 821, 0, 0, 69, 102 )
-	ScoreText:setText( Engine[0xF9F1239CFD921FE]( 0xC413F061524D307 ) )
+	ScoreText:setText( Engine[0xF9F1239CFD921FE]( "zmui/team_score" ) )
 	ScoreText:setTTF( "default" )
 	ScoreText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( ScoreText )

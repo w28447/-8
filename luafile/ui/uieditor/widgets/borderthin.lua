@@ -62,7 +62,7 @@ CoD.BorderThin.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local BoxButtonLrgIdle = LUI.UIImage.new( 0, 1, -6, 6, 0, 1, -3, 3 )
 	BoxButtonLrgIdle:setAlpha( 0 )
-	BoxButtonLrgIdle:setImage( RegisterImage( 0x535D18C44834110 ) )
+	BoxButtonLrgIdle:setImage( RegisterImage( "uie_t7_menu_cac_buttonboxlrgidlefull" ) )
 	BoxButtonLrgIdle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BoxButtonLrgIdle:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BoxButtonLrgIdle )

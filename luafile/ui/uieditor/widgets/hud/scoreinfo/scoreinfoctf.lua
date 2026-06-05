@@ -27,13 +27,13 @@ CoD.ScoreInfoCTF.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local LEDFull = LUI.UIImage.new( 0.5, 0.5, -110.5, 111.5, 0.5, 0.5, -79, 43 )
 	LEDFull:setRGB( 0, 0, 0 )
 	LEDFull:setAlpha( 0.2 )
-	LEDFull:setImage( RegisterImage( 0x322B09BC49B50F1 ) )
+	LEDFull:setImage( RegisterImage( "uie_ui_hud_core_objective_widget_led_screen_03" ) )
 	self:addElement( LEDFull )
 	self.LEDFull = LEDFull
 	
 	local frame = LUI.UIImage.new( 0.5, 0.5, -104.5, 104.5, 0.5, 0.5, -30, 30 )
 	frame:setYRot( 180 )
-	frame:setImage( RegisterImage( 0x52BE0503BCF6523 ) )
+	frame:setImage( RegisterImage( "uie_ui_hud_core_frame_stretchable" ) )
 	frame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	frame:setShaderVector( 0, 0, 0, 0, 0 )
 	frame:setupNineSliceShader( 16, 16 )
@@ -43,7 +43,7 @@ CoD.ScoreInfoCTF.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local Divider = LUI.UIImage.new( 0.5, 0.5, -100, 100, 0.5, 0.5, -2.5, 2.5 )
 	Divider:setRGB( 0, 0, 0 )
 	Divider:setImage( RegisterImage( "uie_ui_hud_common_white_box" ) )
-	Divider:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
+	Divider:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_blend" ) )
 	self:addElement( Divider )
 	self.Divider = Divider
 	
@@ -125,7 +125,7 @@ CoD.ScoreInfoCTF.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	end
 	
 	friendlyflag.__Color()
-	friendlyflag:setImage( RegisterImage( 0xC54C476FF3DDA9B ) )
+	friendlyflag:setImage( RegisterImage( "uie_ui_icon_waypoints_ctf_flag" ) )
 	self:addElement( friendlyflag )
 	self.friendlyflag = friendlyflag
 	
@@ -135,7 +135,7 @@ CoD.ScoreInfoCTF.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	end
 	
 	enemyflag.__Color()
-	enemyflag:setImage( RegisterImage( 0xC54C476FF3DDA9B ) )
+	enemyflag:setImage( RegisterImage( "uie_ui_icon_waypoints_ctf_flag" ) )
 	self:addElement( enemyflag )
 	self.enemyflag = enemyflag
 	

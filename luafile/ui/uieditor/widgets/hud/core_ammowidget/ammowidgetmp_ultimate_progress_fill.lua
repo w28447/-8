@@ -14,7 +14,7 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Fill.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local UltimateRadialMeterJumpAhead = LUI.UIImage.new( 0, 0, 0, 111, 0, 0, 0, 112 )
 	UltimateRadialMeterJumpAhead:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	UltimateRadialMeterJumpAhead:setImage( RegisterImage( 0x25ED9C7DA021F0D ) )
+	UltimateRadialMeterJumpAhead:setImage( RegisterImage( "uie_ui_hud_core_hero_widget_meter_fill" ) )
 	UltimateRadialMeterJumpAhead:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_add" ) )
 	UltimateRadialMeterJumpAhead:setShaderVector( 1, 0.5, 0, 0, 0 )
 	UltimateRadialMeterJumpAhead:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -32,7 +32,7 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Fill.new = function ( f1_arg0, f1_arg1, f1_ar
 	local UltimateRadialMeterwipe2 = LUI.UIImage.new( 0, 0, -1, 110, 0, 0, 1, 113 )
 	UltimateRadialMeterwipe2:setRGB( 1, 0.31, 0.02 )
 	UltimateRadialMeterwipe2:setAlpha( 0.5 )
-	UltimateRadialMeterwipe2:setImage( RegisterImage( 0x25ED9C7DA021F0D ) )
+	UltimateRadialMeterwipe2:setImage( RegisterImage( "uie_ui_hud_core_hero_widget_meter_fill" ) )
 	UltimateRadialMeterwipe2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	UltimateRadialMeterwipe2:setShaderVector( 1, 0.5, 0, 0, 0 )
 	UltimateRadialMeterwipe2:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -51,7 +51,7 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Fill.new = function ( f1_arg0, f1_arg1, f1_ar
 	local UltimateRadialMeterwipe = LUI.UIImage.new( 0, 0, 1, 112, 0, 0, -1, 111 )
 	UltimateRadialMeterwipe:setRGB( 1, 0.31, 0.02 )
 	UltimateRadialMeterwipe:setAlpha( 0.5 )
-	UltimateRadialMeterwipe:setImage( RegisterImage( 0x25ED9C7DA021F0D ) )
+	UltimateRadialMeterwipe:setImage( RegisterImage( "uie_ui_hud_core_hero_widget_meter_fill" ) )
 	UltimateRadialMeterwipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	UltimateRadialMeterwipe:setShaderVector( 1, 0.5, 0, 0, 0 )
 	UltimateRadialMeterwipe:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -69,7 +69,7 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Fill.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local UltimateRadialMeterwipe3 = LUI.UIImage.new( 0, 0, 0, 110, 0, 0, 0, 112 )
 	UltimateRadialMeterwipe3:setRGB( 1, 0.97, 0.36 )
-	UltimateRadialMeterwipe3:setImage( RegisterImage( 0x25ED9C7DA021F0D ) )
+	UltimateRadialMeterwipe3:setImage( RegisterImage( "uie_ui_hud_core_hero_widget_meter_fill" ) )
 	UltimateRadialMeterwipe3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	UltimateRadialMeterwipe3:setShaderVector( 1, 0.5, 0, 0, 0 )
 	UltimateRadialMeterwipe3:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -112,14 +112,14 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Fill.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local Flare = LUI.UIImage.new( 0, 0, -9, 119, 0, 0, -89, 39 )
 	Flare:setAlpha( 0 )
-	Flare:setImage( RegisterImage( 0x3C720E22C953683 ) )
+	Flare:setImage( RegisterImage( "uie_ui_hud_core_job_widget_flare" ) )
 	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Flare )
 	self.Flare = Flare
 	
 	local Burst = LUI.UIImage.new( 0, 0, 0, 110, 0, 0, 0, 112 )
 	Burst:setAlpha( 0 )
-	Burst:setImage( RegisterImage( 0xD4F7AA0A4512AE0 ) )
+	Burst:setImage( RegisterImage( "uie_ui_hud_core_hero_widget_glow_hero" ) )
 	Burst:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Burst:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( Burst )

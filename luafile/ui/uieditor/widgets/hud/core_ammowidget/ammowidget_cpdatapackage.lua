@@ -18,7 +18,7 @@ CoD.AmmoWidget_CPDataPackage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local SDBomb = LUI.UIImage.new( 0, 0, 0, 105, 0, 0, 0, 105 )
 	SDBomb:setScale( 0.8, 0.8 )
-	SDBomb:setImage( RegisterImage( 0xD5C9DE772510B42 ) )
+	SDBomb:setImage( RegisterImage( "uie_t7_hud_widget_sd_bomb" ) )
 	self:addElement( SDBomb )
 	self.SDBomb = SDBomb
 	

@@ -18,7 +18,7 @@ CoD.requirementLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local requirementLabel2 = LUI.UIText.new( 0, 0, 35, 149, 0, 0, -5, 40 )
 	requirementLabel2:setRGB( 0, 0, 0 )
 	requirementLabel2:setAlpha( 0.92 )
-	requirementLabel2:setText( Engine[0xF9F1239CFD921FE]( 0x525BE5A39DF06CA ) )
+	requirementLabel2:setText( Engine[0xF9F1239CFD921FE]( "mpui/requirement" ) )
 	requirementLabel2:setTTF( "dinnext_regular" )
 	requirementLabel2:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	LUI.OverrideFunction_CallOriginalFirst( requirementLabel2, "setText", function ( element, controller )
@@ -30,7 +30,7 @@ CoD.requirementLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local requirementLabel = LUI.UIText.new( 0, 0, 34, 148, 0, 0, -5, 40 )
 	requirementLabel:setRGB( 0, 0, 0 )
 	requirementLabel:setAlpha( 0.92 )
-	requirementLabel:setText( Engine[0xF9F1239CFD921FE]( 0x525BE5A39DF06CA ) )
+	requirementLabel:setText( Engine[0xF9F1239CFD921FE]( "mpui/requirement" ) )
 	requirementLabel:setTTF( "dinnext_regular" )
 	requirementLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	LUI.OverrideFunction_CallOriginalFirst( requirementLabel, "setText", function ( element, controller )
@@ -41,7 +41,7 @@ CoD.requirementLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local Glow = LUI.UIImage.new( 0, 1, -80, 74, 0.5, 0.5, -45, 65 )
 	Glow:setAlpha( 0.14 )
-	Glow:setImage( RegisterImage( 0x1078C36A022A4FE ) )
+	Glow:setImage( RegisterImage( "uie_t7_menu_cac_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow

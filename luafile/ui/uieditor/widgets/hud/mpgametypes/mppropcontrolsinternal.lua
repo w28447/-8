@@ -9,7 +9,7 @@ CoD.MPPropControlsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local ControlsBackingBlur = LUI.UIImage.new( 0, 0, 2, 129, 0, 0, 1, 529 )
-	ControlsBackingBlur:setImage( RegisterImage( 0xBEB1CBCE7D39F39 ) )
+	ControlsBackingBlur:setImage( RegisterImage( "uie_ui_hud_prophunt_controls_backing" ) )
 	ControlsBackingBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
 	ControlsBackingBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( ControlsBackingBlur )
@@ -18,36 +18,36 @@ CoD.MPPropControlsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local ControlsBacking = LUI.UIImage.new( 0, 0, 2, 128, 0, 0, 1, 529 )
 	ControlsBacking:setRGB( 0.24, 0.23, 0.22 )
 	ControlsBacking:setAlpha( 0.9 )
-	ControlsBacking:setImage( RegisterImage( 0xBEB1CBCE7D39F39 ) )
+	ControlsBacking:setImage( RegisterImage( "uie_ui_hud_prophunt_controls_backing" ) )
 	self:addElement( ControlsBacking )
 	self.ControlsBacking = ControlsBacking
 	
 	local DotPattern = LUI.UIImage.new( 0, 0, 0, 128, 0, 0, 0, 528 )
 	DotPattern:setAlpha( 0.1 )
-	DotPattern:setImage( RegisterImage( 0xE9A963ED1CB449E ) )
+	DotPattern:setImage( RegisterImage( "uie_ui_hud_prophunt_controls_dot_pattern" ) )
 	self:addElement( DotPattern )
 	self.DotPattern = DotPattern
 	
 	local ControlsBackingDividers = LUI.UIImage.new( 0, 0, 2, 130, 0, 0, 1, 529 )
 	ControlsBackingDividers:setAlpha( 0.15 )
-	ControlsBackingDividers:setImage( RegisterImage( 0x3EBA74365973DF8 ) )
+	ControlsBackingDividers:setImage( RegisterImage( "uie_ui_hud_prophunt_controls_dotted_lines" ) )
 	self:addElement( ControlsBackingDividers )
 	self.ControlsBackingDividers = ControlsBackingDividers
 	
 	local DottedGlow = LUI.UIImage.new( 0, 0, 3, 131, 0, 0, 1.5, 529.5 )
 	DottedGlow:setRGB( 0.91, 0.9, 0.84 )
 	DottedGlow:setAlpha( 0.05 )
-	DottedGlow:setImage( RegisterImage( 0xBE4552ACB3CC12 ) )
+	DottedGlow:setImage( RegisterImage( "uie_ui_hud_prophunt_controls_panel_glow" ) )
 	self:addElement( DottedGlow )
 	self.DottedGlow = DottedGlow
 	
 	local ControlsFrame = LUI.UIImage.new( 0, 0, 1, 129, 0, 0, 1, 529 )
-	ControlsFrame:setImage( RegisterImage( 0xCD52D372ECA6E51 ) )
+	ControlsFrame:setImage( RegisterImage( "uie_ui_hud_prophunt_controls_frame" ) )
 	self:addElement( ControlsFrame )
 	self.ControlsFrame = ControlsFrame
 	
 	local TextBoxLock = LUI.UIText.new( 0, 0, 9, 117, 0, 0, 46, 63 )
-	TextBoxLock:setText( Engine[0xF9F1239CFD921FE]( 0x9C3DCE861008C68 ) )
+	TextBoxLock:setText( Engine[0xF9F1239CFD921FE]( "mpui/lock_caps" ) )
 	TextBoxLock:setTTF( "ttmussels_demibold" )
 	TextBoxLock:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	TextBoxLock:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -55,7 +55,7 @@ CoD.MPPropControlsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.TextBoxLock = TextBoxLock
 	
 	local TextBoxLookThrough = LUI.UIText.new( 0, 0, 12, 112, 0, 0, 114.5, 131.5 )
-	TextBoxLookThrough:setText( Engine[0xF9F1239CFD921FE]( 0xA03387A61128CEE ) )
+	TextBoxLookThrough:setText( Engine[0xF9F1239CFD921FE]( "mpui/look_through_caps" ) )
 	TextBoxLookThrough:setTTF( "ttmussels_demibold" )
 	TextBoxLookThrough:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	TextBoxLookThrough:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -63,7 +63,7 @@ CoD.MPPropControlsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.TextBoxLookThrough = TextBoxLookThrough
 	
 	local TextBoxRotate = LUI.UIText.new( 0, 0, 9, 117, 0, 0, 190.5, 207.5 )
-	TextBoxRotate:setText( Engine[0xF9F1239CFD921FE]( 0xD6DF9FA110152CC ) )
+	TextBoxRotate:setText( Engine[0xF9F1239CFD921FE]( "mpui/rotate_caps" ) )
 	TextBoxRotate:setTTF( "ttmussels_demibold" )
 	TextBoxRotate:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	TextBoxRotate:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -71,7 +71,7 @@ CoD.MPPropControlsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.TextBoxRotate = TextBoxRotate
 	
 	local TextBoxSlope = LUI.UIText.new( 0, 0, 9, 117, 0, 0, 270, 287 )
-	TextBoxSlope:setText( Engine[0xF9F1239CFD921FE]( 0xA2AC356732E680E ) )
+	TextBoxSlope:setText( Engine[0xF9F1239CFD921FE]( "mpui/slope_caps" ) )
 	TextBoxSlope:setTTF( "ttmussels_demibold" )
 	TextBoxSlope:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	TextBoxSlope:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -98,7 +98,7 @@ CoD.MPPropControlsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	TextBoxChange:subscribeToGlobalModel( f1_arg1, "HUDItems", "numPropChanges", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
-			TextBoxChange:setText( LocalizeStringWithParameter( 0x1559855588AC43D, f3_local0 ) )
+			TextBoxChange:setText( LocalizeStringWithParameter( "mpui/change_caps", f3_local0 ) )
 		end
 	end )
 	self:addElement( TextBoxChange )
@@ -111,7 +111,7 @@ CoD.MPPropControlsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	TextBoxDecoy:subscribeToGlobalModel( f1_arg1, "HUDItems", "numPropDecoys", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
-			TextBoxDecoy:setText( LocalizeStringWithParameter( 0x5735A9AFD8468C7, f4_local0 ) )
+			TextBoxDecoy:setText( LocalizeStringWithParameter( "mpui/decoy_caps", f4_local0 ) )
 		end
 	end )
 	self:addElement( TextBoxDecoy )

@@ -23,7 +23,7 @@ CoD.ReadyEvents_Scorestreaks.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local BackgroundAdd = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackgroundAdd:setRGB( 1, 0.84, 0 )
 	BackgroundAdd:setAlpha( 0.5 )
-	BackgroundAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x92F09074FB20E6D ) )
+	BackgroundAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines" ) )
 	BackgroundAdd:setShaderVector( 0, 0.5, 0, 0, 0 )
 	BackgroundAdd:setShaderVector( 1, 1, 0, 0, 0 )
 	BackgroundAdd:setShaderVector( 2, 0.03, 0, 0, 0 )

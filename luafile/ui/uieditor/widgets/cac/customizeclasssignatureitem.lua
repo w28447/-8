@@ -10,13 +10,13 @@ CoD.CustomizeClassSignatureItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local BGMain = LUI.UIImage.new( 0, 0, 0, 222, 0, 0, 0, 176 )
 	BGMain:setZoom( 10 )
-	BGMain:setImage( RegisterImage( 0x291549F923145AE ) )
+	BGMain:setImage( RegisterImage( "uie_ui_menu_cac_equipment_bg" ) )
 	self:addElement( BGMain )
 	self.BGMain = BGMain
 	
 	local BGBrackets = LUI.UIImage.new( 0, 0, 0, 222, 0, 0, 0, 176 )
 	BGBrackets:setZoom( 12 )
-	BGBrackets:setImage( RegisterImage( 0x3ACFD068143D7A ) )
+	BGBrackets:setImage( RegisterImage( "uie_ui_menu_cac_equipment_bg_brackets" ) )
 	self:addElement( BGBrackets )
 	self.BGBrackets = BGBrackets
 	

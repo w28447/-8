@@ -161,7 +161,7 @@ CoD.Social_PlayersListButtonShared.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local Plus = LUI.UIImage.new( 0.5, 0.5, -12, 12, 0.5, 0.5, -12.5, 11.5 )
 	Plus:setRGB( 0.53, 0.53, 0.53 )
 	Plus:setAlpha( 0 )
-	Plus:setImage( RegisterImage( 0xEEAE023A842C318 ) )
+	Plus:setImage( RegisterImage( "uie_ui_menu_cac_plus" ) )
 	self:addElement( Plus )
 	self.Plus = Plus
 	

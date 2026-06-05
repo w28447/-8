@@ -57,19 +57,19 @@ CoD.GameSettings_Restriction.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		SetElementCanBeNavigatedTo( self.OptionCategoryGrid, true )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( CACRestrictionCategoriesPC, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		ProcessListAction( self, f5_arg0, f5_arg2, f5_arg1 )
+	f1_arg0:AddButtonCallbackFunction( CACRestrictionCategoriesPC, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		ProcessListAction( self, element, controller, menu )
 		return true
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( CACRestrictionCategoriesPC, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		SetFocusToElement( self, "OptionCategoryGrid", f7_arg2 )
+	f1_arg0:AddButtonCallbackFunction( CACRestrictionCategoriesPC, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		SetFocusToElement( self, "OptionCategoryGrid", controller )
 		CoD.OptionsUtility.SetFocusToGrid( self.OptionCategoryGrid )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( CACRestrictionCategoriesPC )
@@ -113,12 +113,12 @@ CoD.GameSettings_Restriction.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		SetElementCanBeNavigatedTo( self.OptionCategoryGrid, true )
 		return f11_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( SlidersPC, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		SetFocusToElement( self, "OptionCategoryGrid", f12_arg2 )
+	f1_arg0:AddButtonCallbackFunction( SlidersPC, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		SetFocusToElement( self, "OptionCategoryGrid", controller )
 		CoD.OptionsUtility.SetFocusToGrid( self.OptionCategoryGrid )
 		return true
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( SlidersPC )
@@ -144,13 +144,13 @@ CoD.GameSettings_Restriction.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f14_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( OptionCategoryGrid, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		SetCurrentElementAsActive( self, f15_arg0, f15_arg2 )
-		CoD.OptionsUtility.SetCurrentActiveRestrictionCategoryIndex( f15_arg0 )
-		CoD.OptionsUtility.SetFocusToRestrictionOptionsList( self, f15_arg2 )
+	f1_arg0:AddButtonCallbackFunction( OptionCategoryGrid, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		SetCurrentElementAsActive( self, element, controller )
+		CoD.OptionsUtility.SetCurrentActiveRestrictionCategoryIndex( element )
+		CoD.OptionsUtility.SetFocusToRestrictionOptionsList( self, controller )
 		return true
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( OptionCategoryGrid )

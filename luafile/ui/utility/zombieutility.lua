@@ -2,14 +2,14 @@ CoD.ZombieUtility = {}
 CoD.ZombieUtility.TrialsInfoStates = LuaEnum.createEnum( "STATE_INVISIBLE", "STATE_COUNTER", "STATE_UNCHECKED", "STATE_CHECKED" )
 CoD.ZombieUtility.TrialsGameStates = LuaEnum.createEnum( "STATE_PLAYING", "STATE_ROUND_RESET", "STATE_GAME_OVER_SUCCESS", "STATE_GAME_OVER_FAILURE" )
 CoD.ZombieUtility.MapToTrialsCSVPrefix = {
-	[0x7E9384351288E52] = 0xEFE70CADBE4C183,
-	["zm_office"] = 0xAB7DAAB01B8557E,
-	[0xAFE286CA5500B9B] = 0x879F08905406A48,
-	[0x51FD293040F234E] = 0xDA20E363F296451,
-	[0xA005252D762E06A] = 0x72CB250BE51DE37,
-	[0x63EFA8337233574] = 0x74A4EDFD6AD1375,
-	[0x57B253FE0702E3E] = 0xE5032A765530F0B,
-	[0x9E4FEA5D255373] = 0x23355D2C68D0B98
+	zm_zodt8 = 0xEFE70CADBE4C183,
+	zm_office = 0xAB7DAAB01B8557E,
+	zm_towers = 0x879F08905406A48,
+	zm_escape = 0xDA20E363F296451,
+	zm_mansion = 0x72CB250BE51DE37,
+	zm_red = 0x74A4EDFD6AD1375,
+	zm_white = 0xE5032A765530F0B,
+	zm_orange = 0x23355D2C68D0B98
 }
 CoD.ZombieUtility.MAX_CLIENTS_ZM = 4
 CoD.ZombieUtility.Rush = {
@@ -21,23 +21,23 @@ CoD.ZombieUtility.Rush = {
 	}
 }
 CoD.ZombieUtility.SpecialZombiesImages = {
-	0xE1240D1D7F265A6,
-	0xBAD659E9A74927D,
-	0x36905C9FBD6707,
-	0x1C974F3B838202F,
-	0x6B541254220A934,
-	0xBF7F65A9150E6DA,
-	0x2F324974D08F960,
-	0x73D6B1585A1B40D,
-	0xA97EC5D8C2B05A0,
-	0x4347EDD76DA4AE0,
-	0x264A32C54740FDC,
-	0xAC86591E8878571,
-	0xE4D4FAAF81E0A90,
-	0xB43D1FE4B9ECF8,
-	0x90621ED6D987BD3,
+	"uie_catalyst_splash",
+	"uie_stoker_splash",
+	"uie_blightfather_splash",
+	"uie_tigeer_splash",
+	"uie_marauder_splash",
+	"uie_gladiator_splash",
+	"uie_hellhound_splash",
+	"uie_nova_splash",
+	"uie_warden_splash",
+	"uie_werewolf_splash",
+	"uie_nosferatu_splash",
+	"uie_skeleton_fb_splash",
+	"uie_gegenees_splash",
+	"ui_hud_zm_rush_lightninghounds",
+	"ui_hud_zm_rush_nova6bombers",
 	"ui_hud_zm_rush_joltingjacks",
-	0xE15FF6A079B0562,
+	"uie_electric_splash",
 	0x9477BAAE284D117
 }
 CoD.ZombieUtility.Tcm = {
@@ -107,14 +107,14 @@ CoD.ZombieUtility.TutorialStringOverrideKBM = {
 }
 CoD.ZombieUtility.ZMTrialsEnum = {
 	"zm_zodt8_default",
-	0xB56BDCBA095CB41,
-	0x8CA3D7404460ABF,
-	0xD84C5587B7C3DD4,
-	0x77EE254A5DE65D8,
-	0xCF0F6C1E53F5282,
-	0x639494D7B07B79C,
-	0x284DE38787C8564,
-	0x788DB235878F3F9
+	"zm_towers_default",
+	"zm_office_default",
+	"zm_escape_default",
+	"zm_mansion_default",
+	"zm_red_default",
+	"zm_zodt8_variant_1",
+	"zm_white_default",
+	"zm_orange_default"
 }
 CoD.ZombieUtility.ZombiesTrialsAARStrings = {
 	[0] = {
@@ -165,7 +165,7 @@ CoD.ZombieUtility.CommonPostLoadHud = function ( f2_arg0, f2_arg1, f2_arg2 )
 			local f2_local5 = f2_local4:create( "playerName" )
 			f2_local5:set( Engine.GetGamertagForClient( f2_arg1, f2_local2 ) )
 			local f2_local6 = f2_local4:create( "prompt" )
-			f2_local6:set( 0xB6AF3AFD169995E )
+			f2_local6:set( "zmui/revive" )
 			f2_local6 = f2_local4:create( "clockPercent" )
 			f2_local6:set( 0 )
 			f2_local6 = f2_local4:create( "bleedOutPercent" )
@@ -250,13 +250,13 @@ DataSourceHelpers.GlobalDataSourceSetup( "ZMHudGlobal", "ZMHudGlobal", function 
 	local f8_local1 = f8_local0:create( "roundNumber" )
 	f8_local1:set( 0 )
 	f8_local1 = f8_local0:create( "roundTitle" )
-	f8_local1:set( 0x0 )
+	f8_local1:set( "" )
 	f8_local1 = f8_local0:create( "roundDescription" )
-	f8_local1:set( 0x0 )
+	f8_local1:set( "" )
 	f8_local1 = f8_local0:create( "failurePlayer" )
 	f8_local1:set( 0 )
 	f8_local1 = f8_local0:create( "failureReason" )
-	f8_local1:set( 0x0 )
+	f8_local1:set( "" )
 	f8_local1 = f8_local0:create( "strikes" )
 	f8_local1:set( 0 )
 	f8_local1 = f8_local0:create( "gameState" )
@@ -450,7 +450,7 @@ CoD.ZombieUtility.TrialsTimerShouldShow = function ()
 end
 
 CoD.ZombieUtility.HideIfIsArcadeMode = function ( f22_arg0 )
-	if Dvar[0xFF54369D6573B91]:get() == "zstandard" then
+	if Dvar.g_gametype:get() == "zstandard" then
 		return 0
 	else
 		return 1
@@ -458,7 +458,7 @@ CoD.ZombieUtility.HideIfIsArcadeMode = function ( f22_arg0 )
 end
 
 CoD.ZombieUtility.ShowIfIsArcadeMode = function ( f23_arg0 )
-	if Dvar[0xFF54369D6573B91]:get() == "zstandard" then
+	if Dvar.g_gametype:get() == "zstandard" then
 		return 1
 	else
 		return 0
@@ -467,9 +467,9 @@ end
 
 CoD.ZombieUtility.GetSurvivedRoundsText = function ( f24_arg0 )
 	if f24_arg0 == 1 then
-		return Engine[0xF9F1239CFD921FE]( 0x872D40F0DB1027D )
+		return Engine[0xF9F1239CFD921FE]( "zombie/survived_round" )
 	else
-		return Engine[0xF9F1239CFD921FE]( 0xC20639443C67DCA, f24_arg0 )
+		return Engine[0xF9F1239CFD921FE]( "zombie/survived_rounds", f24_arg0 )
 	end
 end
 
@@ -484,7 +484,7 @@ end
 CoD.ZombieUtility.IsZombieFactionRewardsAvailable = function ( f26_arg0 )
 	if not IsLobbyNetworkModeLAN() then
 		local f26_local0, f26_local1, f26_local2 = LuaUtils.GetCurrentFactionDvars()
-		local f26_local3 = IsBooleanDvarSet( 0x1DA02CA40639DE5 )
+		local f26_local3 = IsBooleanDvarSet( "faction_callings_enabled_zm" )
 		if f26_local3 then
 			if f26_local0 == 0 or f26_local1 == 0 then
 				f26_local3 = false
@@ -501,7 +501,7 @@ end
 CoD.ZombieUtility.IsZombieCallingsAvailable = function ( f27_arg0 )
 	if not IsLobbyNetworkModeLAN() then
 		local f27_local0, f27_local1, f27_local2 = LuaUtils.GetCurrentFactionDvars()
-		local f27_local3 = IsBooleanDvarSet( 0x1DA02CA40639DE5 )
+		local f27_local3 = IsBooleanDvarSet( "faction_callings_enabled_zm" )
 		if f27_local3 then
 			if f27_local0 ~= 0 and f27_local1 ~= 0 then
 				f27_local3 = f27_local2
@@ -519,10 +519,10 @@ CoD.ZombieUtility.IsSpeedStatusEffectActive = function ( f28_arg0 )
 	local f28_local0 = DataSources.PlayerAbilities.getModel( f28_arg0 )
 	f28_local0 = f28_local0.playerGadget2
 	if f28_local0 then
-		local f28_local1 = f28_local0.id and f28_local0.id:get() or 0x0
+		local f28_local1 = f28_local0.id and f28_local0.id:get() or ""
 		if type( f28_local1 ) == "string" and (f28_local1 == "hero_chakram_lv2_zm" or f28_local1 == "hero_chakram_lv3_zm") and f28_local0.state then
 			return f28_local0.state:get() == Enum[0xF0447219F15F7F3][0x1873A43E9D1620E]
-		elseif (f28_local1 == 0x6F188C98C5735FC or f28_local1 == 0x4758CCFEF054689) and f28_local0.state then
+		elseif (f28_local1 == "hero_chakram_lv2_zm" or f28_local1 == "hero_chakram_lv3_zm") and f28_local0.state then
 			return f28_local0.state:get() == Enum[0xF0447219F15F7F3][0x1873A43E9D1620E]
 		end
 	end
@@ -533,7 +533,7 @@ CoD.ZombieUtility.IsVigorStatusEffectActive = function ( f29_arg0 )
 	local f29_local0 = DataSources.PlayerAbilities.getModel( f29_arg0 )
 	f29_local0 = f29_local0.playerGadget2
 	if f29_local0 then
-		local f29_local1 = f29_local0.id and f29_local0.id:get() or 0x0
+		local f29_local1 = f29_local0.id and f29_local0.id:get() or ""
 		if type( f29_local1 ) == "string" then
 			local f29_local2
 			if f29_local1 ~= "hero_scepter_lv2_zm" and f29_local1 ~= "hero_scepter_lv3_zm" then
@@ -544,7 +544,7 @@ CoD.ZombieUtility.IsVigorStatusEffectActive = function ( f29_arg0 )
 			return f29_local2
 		else
 			local f29_local2
-			if f29_local1 ~= "hero_scepter_lv2_zm" and f29_local1 ~= 0x26970A561F83FC then
+			if f29_local1 ~= "hero_scepter_lv2_zm" and f29_local1 ~= "hero_scepter_lv3_zm" then
 				f29_local2 = false
 			else
 				f29_local2 = true
@@ -813,7 +813,7 @@ end
 
 CoD.ZombieUtility.GetTrialsTableForMap = function ( f59_arg0, f59_arg1 )
 	if not f59_arg1 then
-		f59_arg1 = Engine.GetGametypeSetting( 0x2D73FC2D365631E )
+		f59_arg1 = Engine.GetGametypeSetting( "zmtrialsvariant" )
 	end
 	local f59_local0 = CoD.ZombieUtility.MapToTrialsCSVPrefix[f59_arg0]
 	if f59_local0 then
@@ -829,7 +829,7 @@ end
 
 CoD.ZombieUtility.GetTrialsNameForMap = function ( f60_arg0, f60_arg1 )
 	if not f60_arg1 then
-		f60_arg1 = Engine.GetGametypeSetting( 0x2D73FC2D365631E )
+		f60_arg1 = Engine.GetGametypeSetting( "zmtrialsvariant" )
 	end
 	if f60_arg1 and f60_arg1 > 0 then
 		return f60_arg0 .. "_variant_" .. f60_arg1
@@ -866,11 +866,11 @@ CoD.ZombieUtility.SubscribeForSoloMatchLobbyTitle = function ( f63_arg0 )
 	f63_local2 = f63_local2:create( "playerCount" )
 	local f63_local3 = function ()
 		local f64_local0 = LobbyData.GetCurrentMenuTarget()
-		if f64_local0[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE then
+		if f64_local0.name == LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE then
 			if f63_local2:get() ~= 1 then
-				f63_local1:set( f64_local0[0xA31296C0C1B6029] )
+				f63_local1:set( f64_local0.title )
 			else
-				f63_local1:set( 0x50AE8D52A8AA406 )
+				f63_local1:set( "menu/solo_match" )
 			end
 		end
 	end
@@ -955,7 +955,7 @@ CoD.ZombieUtility.GetShamedPlayerPortrait = function ( f70_arg0, f70_arg1, f70_a
 				f70_local9 = f70_local8.xuid:get()
 				local f70_local10 = f70_local8.playerName:get()
 				if Engine.GetXUID64( f70_arg0 ) ~= f70_local9 then
-					for f70_local11 = 1, Dvar[0x5A2E5EE8014325D]:get() - 1, 1 do
+					for f70_local11 = 1, Dvar.com_maxclients:get() - 1, 1 do
 						if f70_local9 == LuaDefine.INVALID_XUID_X64 then
 							if f70_local6[f70_local11].playerName and f70_local6[f70_local11].playerName:get() == f70_local10 then
 								f70_local7 = f70_local11
@@ -1070,7 +1070,7 @@ CoD.ZombieUtility.GetZombieScoreboardColumnRushMultiplierTreatment = function ( 
 	if CoD.HUDUtility.IsAnyGameType( f75_arg0, "zstandard" ) or CoD.isFrontend then
 		local f75_local0
 		if f75_arg1 then
-			f75_local0 = LocalizeIntoStringIfNotEmpty( 0x674D175D3480E09, f75_arg1 )
+			f75_local0 = LocalizeIntoStringIfNotEmpty( "mp/multiplier_x", f75_arg1 )
 			if not f75_local0 then
 			
 			else
@@ -1176,7 +1176,7 @@ CoD.ZombieUtility.GetTrialsGameOverText = function ( f85_arg0 )
 	if f85_arg0 == CoD.ZombieUtility.TrialsGameStates.STATE_GAME_OVER_SUCCESS then
 		return LocalizeToUpperString( "zmtrials/trial_completed" )
 	else
-		return Engine[0xF9F1239CFD921FE]( 0x22EF41D702EE72D )
+		return Engine[0xF9F1239CFD921FE]( "zombie/game_over" )
 	end
 end
 
@@ -1239,7 +1239,7 @@ CoD.ZombieUtility.ZMPlaylistTabs = {
 CoD.ZombieUtility.GameTypeAllowsBots = function ()
 	local f89_local0 = Engine.GetGlobalModel()
 	f89_local0 = f89_local0:create( "MapVote.mapVoteGameModeNext" )
-	return f89_local0 and f89_local0:get() == 0x73B5B4896F886CB
+	return f89_local0 and f89_local0:get() == "zclassic"
 end
 
 CoD.ZombieUtility.IsZMLoadoutPreviewWidgetShown = function ( f90_arg0 )
@@ -1262,7 +1262,7 @@ CoD.ZombieUtility.GetLocalZMLobbyTitle = function ( f91_arg0 )
 end
 
 CoD.ZombieUtility.GetLocalZMDifficultyImage = function ( f92_arg0 )
-	if IsLobbyNetworkModeLAN() and f92_arg0 == 0x73B5B4896F886CB and not CoD.ZombieUtility.IsZMOfflineScreenStateCustomGame() then
+	if IsLobbyNetworkModeLAN() and f92_arg0 == "zclassic" and not CoD.ZombieUtility.IsZMOfflineScreenStateCustomGame() then
 		local f92_local0 = {
 			"ui_icon_difficulty_zm_casual_large",
 			"ui_icon_difficulty_zm_normal_large",
@@ -1282,19 +1282,19 @@ CoD.ZombieUtility.MapNameToZMOfflineLocalizedMapName = function ( f93_arg0 )
 		local f93_local0 = Engine.GetGlobalModel()
 		f93_local0 = f93_local0:create( "MapVote.mapVoteGameModeNext" )
 		f93_local0 = f93_local0:get()
-		if f93_local0 == 0xBC1A39D743DD767 then
+		if f93_local0 == "ztutorial" then
 			local f93_local1 = Engine.GetGlobalModel()
 			f93_local1 = f93_local1:create( "localZMDifficulty" )
 			f93_local1 = f93_local1:get() or 1
 			local f93_local2 = {
-				0x64122F25F791280,
-				0xC9580DAB628ED90
+				"zmui/tutorial_beginner",
+				"zmui/tutorial_advanced"
 			}
 			return Engine[0xF9F1239CFD921FE]( f93_local2[f93_local1 + 1] ) or ""
-		elseif f93_local0 == 0x8F6A072F8CF2F88 then
+		elseif f93_local0 == "ztrials" then
 			local f93_local1 = Engine.GetGlobalModel()
 			f93_local1 = f93_local1:create( "localZMTrialVariant" )
-			return LocalizeToUpperString( CoD.MapUtility.GetMapValue( f93_arg0, CoD.ZombieUtility.GetTrialMapNameFieldName( f93_local1:get() ), 0x0 ) )
+			return LocalizeToUpperString( CoD.MapUtility.GetMapValue( f93_arg0, CoD.ZombieUtility.GetTrialMapNameFieldName( f93_local1:get() ), "" ) )
 		end
 	end
 	return CoD.MapUtility.MapNameToLocalizedToUpperName( f93_arg0 )
@@ -1326,8 +1326,8 @@ CoD.ZombieUtility.HideZMLoadoutPreview = function ( f95_arg0 )
 	f95_local0.ZMLoadoutPreviewWidgetShown:set( false )
 	f95_local0.ZMLoadoutPreviewInfoShown:set( false )
 	f95_local0.ZMLoadoutPreviewItemName:set( "" )
-	f95_local0.ZMLoadoutPreviewItemDesc:set( 0x0 )
-	f95_local0.ZMLoadoutPreviewItemImage:set( 0x0 )
+	f95_local0.ZMLoadoutPreviewItemDesc:set( "" )
+	f95_local0.ZMLoadoutPreviewItemImage:set( "" )
 end
 
 CoD.ZombieUtility.SetPlaylistTab = function ( f96_arg0, f96_arg1 )
@@ -1352,7 +1352,7 @@ end
 
 CoD.ZombieUtility.GetGroupedGameType = function ( f98_arg0, f98_arg1 )
 	local f98_local0 = Engine[0xF2CD89B3C345FD3]( f98_arg0 )
-	if f98_arg1 ~= nil and f98_arg1 ~= 0x3037F6188BD285F then
+	if f98_arg1 ~= nil and f98_arg1 ~= "ztcm" then
 		return f98_local0.gametype
 	else
 		local f98_local1 = Engine[0x8D4B2F88BB8D5E7]( f98_local0.gametype )
@@ -1366,7 +1366,7 @@ CoD.ZombieUtility.GetGametypeTabName = function ( f99_arg0 )
 			return f99_local4.name
 		end
 	end
-	return 0x0
+	return ""
 end
 
 CoD.ZombieUtility.ZMOfflineScreenState = {
@@ -1498,7 +1498,7 @@ end
 CoD.ZombieUtility.GetZMPlaylistDifficulty = function ( f107_arg0 )
 	for f107_local0 = 1, #f107_arg0.rules, 1 do
 		local f107_local3 = f107_arg0.rules[f107_local0]
-		if f107_local3.type == 0 and f107_local3.name == 0x5D494C919750881 then
+		if f107_local3.type == 0 and f107_local3.name == "zmdifficulty" then
 			return tonumber( f107_local3.value )
 		end
 	end
@@ -1514,7 +1514,7 @@ CoD.ZombieUtility.GetEquivalentPublicPlaylist = function ( f108_arg0, f108_arg1 
 			local f108_local6 = f108_local2[f108_local3]
 			if f108_local6.hidden ~= true then
 				local f108_local7 = LuaUtils.GetEModeForLobbyMainMode( f108_local6.lobbyMainMode )
-				if (f108_local7 == nil or CoD.DirectorUtility.IsSessionModeAvailable( f108_arg0, f108_local7 )) and f108_local1["mainmode"] == f108_local6.lobbyMainMode then
+				if (f108_local7 == nil or CoD.DirectorUtility.IsSessionModeAvailable( f108_arg0, f108_local7 )) and f108_local1.mainmode == f108_local6.lobbyMainMode then
 					local f108_local8 = f108_local6.entries
 					for f108_local9 = 1, #f108_local8, 1 do
 						local f108_local12 = f108_local8[f108_local9]
@@ -1538,7 +1538,7 @@ CoD.ZombieUtility.GetEquivalentPrivatePlaylist = function ( f109_arg0, f109_arg1
 			local f109_local6 = f109_local2[f109_local3]
 			if f109_local6.hidden ~= true then
 				local f109_local7 = LuaUtils.GetEModeForLobbyMainMode( f109_local6.lobbyMainMode )
-				if (f109_local7 == nil or CoD.DirectorUtility.IsSessionModeAvailable( f109_arg0, f109_local7 )) and f109_local1["mainmode"] == f109_local6.lobbyMainMode then
+				if (f109_local7 == nil or CoD.DirectorUtility.IsSessionModeAvailable( f109_arg0, f109_local7 )) and f109_local1.mainmode == f109_local6.lobbyMainMode then
 					local f109_local8 = f109_local6.entries
 					for f109_local9 = 1, #f109_local8, 1 do
 						local f109_local12 = f109_local8[f109_local9]
@@ -1566,43 +1566,43 @@ end
 
 CoD.ZombieUtility.UpdateZMOfflineInfo = function ( f111_arg0, f111_arg1, f111_arg2, f111_arg3, f111_arg4 )
 	local f111_local0 = DataSources.DirectorZMPlaylistInfo.getModel( f111_arg0 )
-	f111_local0.name:set( CoD.MapUtility.GetMapValue( f111_arg1, "mapName", 0x0 ) )
-	if f111_arg2 == 0x8F6A072F8CF2F88 then
-		f111_local0.name:set( CoD.MapUtility.GetMapValue( f111_arg1, CoD.ZombieUtility.GetTrialMapNameFieldName( CoD.SafeGetModelValue( f111_arg4:getModel(), "trialVariant" ) ), 0x0 ) )
+	f111_local0.name:set( CoD.MapUtility.GetMapValue( f111_arg1, "mapName", "" ) )
+	if f111_arg2 == "ztrials" then
+		f111_local0.name:set( CoD.MapUtility.GetMapValue( f111_arg1, CoD.ZombieUtility.GetTrialMapNameFieldName( CoD.SafeGetModelValue( f111_arg4:getModel(), "trialVariant" ) ), "" ) )
 	end
-	f111_local0.image:set( CoD.MapUtility.GetMapValue( f111_arg1, "previewImage", 0x0 ) )
+	f111_local0.image:set( CoD.MapUtility.GetMapValue( f111_arg1, "previewImage", "" ) )
 	local f111_local1 = Engine[0x8D4B2F88BB8D5E7]( f111_arg2 )
 	local f111_local2 = Engine[0xC53F8D38DF9042B]( f111_local1.groupName )
-	local f111_local3 = 0x0
-	if f111_arg2 == 0x73B5B4896F886CB then
+	local f111_local3 = ""
+	if f111_arg2 == "zclassic" then
 		f111_local3 = 0xF44B71F613A7D65
-	elseif f111_arg2 == 0x8512D346B01B940 then
+	elseif f111_arg2 == "zstandard" then
 		f111_local3 = 0x59DF0D7D85936E1
-	elseif f111_local2 == 0x3037F6188BD285F then
+	elseif f111_local2 == "ztcm" then
 		f111_local3 = 0xF8845568A0DA5AD
-	elseif f111_arg2 == 0x8F6A072F8CF2F88 then
+	elseif f111_arg2 == "ztrials" then
 		f111_local3 = 0x5A74962FD2F07DE
-	elseif f111_arg2 == 0xBC1A39D743DD767 then
+	elseif f111_arg2 == "ztutorial" then
 		f111_local3 = 0x52D3B2A3C8DB965
 		local f111_local4 = {
-			0x64122F25F791280,
-			0xC9580DAB628ED90
+			"zmui/tutorial_beginner",
+			"zmui/tutorial_advanced"
 		}
 		f111_local0.name:set( f111_local4[f111_arg3 + 1] )
 	end
 	f111_local0.tabDesc:set( f111_local3 )
-	local f111_local4 = Engine[0xF9F1239CFD921FE]( CoD.MapUtility.GetMapValue( f111_arg1, "mapDescription", 0x0 ) )
-	if f111_arg2 == 0xBC1A39D743DD767 then
+	local f111_local4 = Engine[0xF9F1239CFD921FE]( CoD.MapUtility.GetMapValue( f111_arg1, "mapDescription", "" ) )
+	if f111_arg2 == "ztutorial" then
 		if f111_arg3 == 0 then
-			f111_local4 = Engine[0xF9F1239CFD921FE]( 0x856A031E976516B )
+			f111_local4 = Engine[0xF9F1239CFD921FE]( "zmui/ztutorial_desc" )
 		elseif f111_arg3 == 1 then
 			f111_local4 = Engine[0xF9F1239CFD921FE]( 0x9A181BE33C22198 )
 		end
 	end
 	f111_local0.desc:set( f111_local4 )
-	local f111_local5 = CoD.MapUtility.GetMapValue( f111_arg1, 0xA3627D705B66CDE, 0 )
-	local f111_local6 = 0x0
-	if f111_arg2 ~= 0xBC1A39D743DD767 then
+	local f111_local5 = CoD.MapUtility.GetMapValue( f111_arg1, "storyloadouttype", 0 )
+	local f111_local6 = ""
+	if f111_arg2 ~= "ztutorial" then
 		if f111_local5 == 0 then
 			f111_local6 = 0x6D26560889B0C05
 		elseif f111_local5 == 1 then
@@ -1648,13 +1648,13 @@ CoD.ZombieUtility.UpdateZMPlaylistInfo = function ( f112_arg0, f112_arg1, f112_a
 	
 	local f112_local7 = function ()
 		if f112_local0.isQuickplayCard then
-			return 0x0
+			return ""
 		end
 		local f114_local0 = nil
 		for f114_local4, f114_local5 in ipairs( f112_local0.rotationList ) do
-			local f114_local6 = CoD.MapUtility.GetMapValue( f114_local5.map, 0xA3627D705B66CDE, 0 )
+			local f114_local6 = CoD.MapUtility.GetMapValue( f114_local5.map, "storyloadouttype", 0 )
 			if f114_local0 ~= nil and f114_local0 ~= f114_local6 then
-				return 0x0
+				return ""
 			end
 			f114_local0 = f114_local6
 		end
@@ -1665,18 +1665,18 @@ CoD.ZombieUtility.UpdateZMPlaylistInfo = function ( f112_arg0, f112_arg1, f112_a
 				return 0xAAA6B748B1B361A
 			end
 		end
-		return 0x0
+		return ""
 	end
 	
 	if f112_arg2 == CoD.ZombieUtility.ZMPlaylistTabs.FEATURED or f112_arg2 == CoD.ZombieUtility.ZMPlaylistTabs.PUBLIC then
 		f112_local1.name:set( f112_local0.name )
 		f112_local1.image:set( f112_local0.imageTileSideInfo or "blacktransparent" )
-		f112_local1.tabDesc:set( 0x0 )
-		f112_local1.desc:set( Engine[0x32A860841DBD025]( f112_arg0, f112_arg1, Enum.eModes[0x3723205FAE52C4A] ) )
+		f112_local1.tabDesc:set( "" )
+		f112_local1.desc:set( Engine[0x32A860841DBD025]( f112_arg0, f112_arg1, Enum.eModes.mode_zombies ) )
 		f112_local1.storyDesc:set( f112_local7() )
 		f112_local1.lockState:set( f112_local0.lockState )
-	elseif f112_arg2 == 0x73B5B4896F886CB then
-		f112_local1.name:set( CoD.MapUtility.GetMapValue( f112_local3, "mapName", 0x0 ) )
+	elseif f112_arg2 == "zclassic" then
+		f112_local1.name:set( CoD.MapUtility.GetMapValue( f112_local3, "mapName", "" ) )
 		f112_local1.image:set( f112_local0.imageTileSideInfo or "blacktransparent" )
 		f112_local1.tabDesc:set( 0xF44B71F613A7D65 )
 		f112_local1.desc:set( MapNameToLocalizedMapDescription( f112_local3 ) )
@@ -1695,8 +1695,8 @@ CoD.ZombieUtility.UpdateZMPlaylistInfo = function ( f112_arg0, f112_arg1, f112_a
 				f112_local1.statTimeString1:set( f112_local6( f112_local9 ) )
 			end
 		end
-	elseif f112_arg2 == 0x8512D346B01B940 then
-		f112_local1.name:set( CoD.MapUtility.GetMapValue( f112_local3, "mapName", 0x0 ) )
+	elseif f112_arg2 == "zstandard" then
+		f112_local1.name:set( CoD.MapUtility.GetMapValue( f112_local3, "mapName", "" ) )
 		f112_local1.image:set( f112_local0.imageTileSideInfo or "blacktransparent" )
 		f112_local1.tabDesc:set( 0x59DF0D7D85936E1 )
 		f112_local1.desc:set( MapNameToLocalizedMapDescription( f112_local3 ) )
@@ -1709,8 +1709,8 @@ CoD.ZombieUtility.UpdateZMPlaylistInfo = function ( f112_arg0, f112_arg1, f112_a
 			f112_local1.statInt3:set( f112_local8.HIGHEST_SCORE.statValue:get() )
 			f112_local1.statInt4:set( f112_local8.HIGHEST_TEAM_SCORE.statValue:get() )
 		end
-	elseif f112_arg2 == 0x3037F6188BD285F then
-		f112_local1.name:set( CoD.MapUtility.GetMapValue( f112_local3, "mapName", 0x0 ) )
+	elseif f112_arg2 == "ztcm" then
+		f112_local1.name:set( CoD.MapUtility.GetMapValue( f112_local3, "mapName", "" ) )
 		f112_local1.image:set( f112_local0.imageTileSideInfo or "blacktransparent" )
 		f112_local1.tabDesc:set( 0xF8845568A0DA5AD )
 		f112_local1.desc:set( MapNameToLocalizedMapDescription( f112_local3 ) )
@@ -1722,8 +1722,8 @@ CoD.ZombieUtility.UpdateZMPlaylistInfo = function ( f112_arg0, f112_arg1, f112_a
 			f112_local1.statInt2:set( f112_local8.HEADSHOTS.statValue:get() )
 			f112_local1.statInt3:set( f112_local8.HIGHEST_ROUND_REACHED.statValue:get() )
 		end
-	elseif f112_arg2 == 0x8F6A072F8CF2F88 then
-		f112_local1.name:set( CoD.MapUtility.GetMapValue( f112_local3, CoD.ZombieUtility.GetTrialMapNameFieldName( CoD.ZombieUtility.GetZMPlaylistTrialVariant( f112_local0 ) ), 0x0 ) )
+	elseif f112_arg2 == "ztrials" then
+		f112_local1.name:set( CoD.MapUtility.GetMapValue( f112_local3, CoD.ZombieUtility.GetTrialMapNameFieldName( CoD.ZombieUtility.GetZMPlaylistTrialVariant( f112_local0 ) ), "" ) )
 		f112_local1.image:set( f112_local0.imageTileSideInfo or "blacktransparent" )
 		f112_local1.tabDesc:set( 0x5A74962FD2F07DE )
 		f112_local1.desc:set( MapNameToLocalizedMapDescription( f112_local3 ) )
@@ -1732,10 +1732,10 @@ CoD.ZombieUtility.UpdateZMPlaylistInfo = function ( f112_arg0, f112_arg1, f112_a
 		local f112_local9 = CoD.ZombieUtility.GetZMPlaylistTrialName( f112_local0 )
 		if f112_local2.PlayerStatsByTrial[f112_local9] then
 			local f112_local10 = f112_local2.PlayerStatsByTrial[f112_local9]
-			f112_local1.statInt1:set( f112_local10[0xBFF3D8DB7BB109E]:get() )
-			f112_local1.statInt2:set( f112_local10[0x4E570D3CBD6AFF0]:get() )
-			f112_local1.statInt3:set( f112_local10[0xEC5DC2C8D272CE9]:get() )
-			local f112_local11 = f112_local10[0xE770CEC441C9F2]:get()
+			f112_local1.statInt1:set( f112_local10.kills:get() )
+			f112_local1.statInt2:set( f112_local10.headshots:get() )
+			f112_local1.statInt3:set( f112_local10.highest_round_reached:get() )
+			local f112_local11 = f112_local10.fastest_time_to_round_10:get()
 			if f112_local11 == 0 then
 				f112_local1.statTimeString1:set( Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "zmtrials/incomplete" ) ) )
 				f112_local1.bronzeComplete:set( false )
@@ -1743,7 +1743,7 @@ CoD.ZombieUtility.UpdateZMPlaylistInfo = function ( f112_arg0, f112_arg1, f112_a
 				f112_local1.statTimeString1:set( f112_local6( f112_local11 ) )
 				f112_local1.bronzeComplete:set( true )
 			end
-			local f112_local12 = f112_local10[0xE46ACEC43F89E9]:get()
+			local f112_local12 = f112_local10.fastest_time_to_round_20:get()
 			if f112_local12 == 0 then
 				f112_local1.statTimeString2:set( Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "zmtrials/incomplete" ) ) )
 				f112_local1.silverComplete:set( false )
@@ -1751,7 +1751,7 @@ CoD.ZombieUtility.UpdateZMPlaylistInfo = function ( f112_arg0, f112_arg1, f112_a
 				f112_local1.statTimeString2:set( f112_local6( f112_local12 ) )
 				f112_local1.silverComplete:set( true )
 			end
-			local f112_local13 = f112_local10[0x112691B7B737CE0]:get()
+			local f112_local13 = f112_local10.fastest_time_to_complete_round_30:get()
 			if f112_local13 == 0 then
 				f112_local1.statTimeString3:set( Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "zmtrials/incomplete" ) ) )
 				f112_local1.goldComplete:set( false )
@@ -1760,12 +1760,12 @@ CoD.ZombieUtility.UpdateZMPlaylistInfo = function ( f112_arg0, f112_arg1, f112_a
 				f112_local1.goldComplete:set( true )
 			end
 		end
-	elseif f112_arg2 == 0xBC1A39D743DD767 then
+	elseif f112_arg2 == "ztutorial" then
 		f112_local1.name:set( f112_local0.name )
 		f112_local1.image:set( f112_local0.imageTileSideInfo or "blacktransparent" )
 		f112_local1.tabDesc:set( 0x52D3B2A3C8DB965 )
-		f112_local1.desc:set( Engine[0x32A860841DBD025]( f112_arg0, f112_arg1, Enum.eModes[0x3723205FAE52C4A] ) )
-		f112_local1.storyDesc:set( 0x0 )
+		f112_local1.desc:set( Engine[0x32A860841DBD025]( f112_arg0, f112_arg1, Enum.eModes.mode_zombies ) )
+		f112_local1.storyDesc:set( "" )
 	end
 end
 
@@ -1776,13 +1776,13 @@ CoD.ZombieUtility.GetQuickPlayPlaylistID = function ( f115_arg0 )
 		local f115_local5 = f115_local1[f115_local2]
 		if f115_local5.hidden ~= true then
 			local f115_local6 = LuaUtils.GetEModeForLobbyMainMode( f115_local5.lobbyMainMode )
-			if (f115_local6 == nil or CoD.DirectorUtility.IsSessionModeAvailable( f115_arg0, f115_local6 )) and f115_local0["mainmode"] == f115_local5.lobbyMainMode then
+			if (f115_local6 == nil or CoD.DirectorUtility.IsSessionModeAvailable( f115_arg0, f115_local6 )) and f115_local0.mainmode == f115_local5.lobbyMainMode then
 				local f115_local7 = f115_local5.entries
 				for f115_local8 = 1, #f115_local7, 1 do
 					local f115_local11 = f115_local7[f115_local8]
 					if f115_local11.rotationList and #f115_local11.rotationList == 1 then
 						local f115_local12 = Engine[0xF2CD89B3C345FD3]( f115_local11.rotationList[1].gametype )
-						if f115_local12.gametype == 0xBC1A39D743DD767 and CoD.ZombieUtility.GetZMPlaylistDifficulty( f115_local11 ) == 0 then
+						if f115_local12.gametype == "ztutorial" and CoD.ZombieUtility.GetZMPlaylistDifficulty( f115_local11 ) == 0 then
 							return f115_local11.id
 						end
 					end
@@ -1795,15 +1795,15 @@ end
 
 DataSourceHelpers.GlobalDataSourceSetup( "DirectorZMPlaylistInfo", "DirectorZMPlaylistInfo", function ( f116_arg0 )
 	local f116_local0 = f116_arg0:create( "name" )
-	f116_local0:set( 0x0 )
+	f116_local0:set( "" )
 	f116_local0 = f116_arg0:create( "image" )
-	f116_local0:set( 0x0 )
+	f116_local0:set( "" )
 	f116_local0 = f116_arg0:create( "tabDesc" )
-	f116_local0:set( 0x0 )
+	f116_local0:set( "" )
 	f116_local0 = f116_arg0:create( "desc" )
 	f116_local0:set( "" )
 	f116_local0 = f116_arg0:create( "storyDesc" )
-	f116_local0:set( 0x0 )
+	f116_local0:set( "" )
 	f116_local0 = f116_arg0:create( "statInt1" )
 	f116_local0:set( 0 )
 	f116_local0 = f116_arg0:create( "statInt2" )
@@ -2176,7 +2176,7 @@ CoD.ZombieUtility.ZMSummaryListGenericInfoTableFunc = function ( f124_arg0, f124
 	if f124_local2 == "zclassic" or f0_local2( f124_local2 ) then
 		f124_local3 = {
 			{
-				title = 0x978F253BCF5F16A,
+				title = "menu/lb_zmglobal_kills",
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.kills )
 			},
 			{
@@ -2184,7 +2184,7 @@ CoD.ZombieUtility.ZMSummaryListGenericInfoTableFunc = function ( f124_arg0, f124
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.headshots )
 			},
 			{
-				title = 0x4BCE2F951AD2A79,
+				title = "zmui/revives_caps",
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.revives )
 			},
 			{
@@ -2192,7 +2192,7 @@ CoD.ZombieUtility.ZMSummaryListGenericInfoTableFunc = function ( f124_arg0, f124
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.score )
 			},
 			{
-				title = 0xD94FC284D93FC2C,
+				title = "zmui/round_reached",
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.roundReached )
 			},
 			{
@@ -2205,7 +2205,7 @@ CoD.ZombieUtility.ZMSummaryListGenericInfoTableFunc = function ( f124_arg0, f124
 		local f124_local5 = f124_local4 and CoD.ZombieUtility.ZombiesTrialsAARStrings[f124_local4]
 		local f124_local6 = {}
 		local f124_local7 = {
-			title = 0x978F253BCF5F16A,
+			title = "menu/lb_zmglobal_kills",
 			value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.kills )
 		}
 		local f124_local8 = {
@@ -2213,7 +2213,7 @@ CoD.ZombieUtility.ZMSummaryListGenericInfoTableFunc = function ( f124_arg0, f124
 			value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.headshots )
 		}
 		local f124_local9 = {
-			title = 0xD94FC284D93FC2C,
+			title = "zmui/round_reached",
 			value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.roundReached )
 		}
 		local f124_local10 = {}
@@ -2252,17 +2252,17 @@ CoD.ZombieUtility.ZMSummaryListGenericInfoTableFunc = function ( f124_arg0, f124
 								f124_local3 = f124_local6
 							end
 						end
-						f124_local13 = 0x0
+						f124_local13 = ""
 					end
 				end
-				f124_local12 = 0x0
+				f124_local12 = ""
 			end
 		end
-		f124_local11 = 0x0
+		f124_local11 = ""
 	elseif f124_local2 == "zstandard" then
 		f124_local3 = {
 			{
-				title = 0x978F253BCF5F16A,
+				title = "menu/lb_zmglobal_kills",
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.kills )
 			},
 			{
@@ -2270,17 +2270,17 @@ CoD.ZombieUtility.ZMSummaryListGenericInfoTableFunc = function ( f124_arg0, f124
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.headshots )
 			},
 			{
-				title = 0xC2707EFE95DB779,
+				title = "zmui/highest_multiplier",
 				value = CoD.ZombieUtility.GetZombieScoreboardColumnRushMultiplierTreatment( f124_arg0, f124_local1.highestMultiplier )
 			},
 			{
-				title = 0xA75180BC7FDA8F5,
+				title = "menu/score_caps",
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.score )
 			}
 		}
 		if not f0_local1( f124_arg0 ) then
 			table.insert( f124_local3, {
-				title = 0xBC59621C600E8A8,
+				title = "codcaster/ds_team_score",
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f124_local1.teamScore )
 			} )
 		end
@@ -2312,7 +2312,7 @@ CoD.ZombieUtility.ZMAllTimeSummaryListGenericInfoTableFunc = function ( f125_arg
 	if f125_local2 == "zclassic" or f0_local2( f125_local2 ) then
 		f125_local3 = {
 			{
-				title = 0x978F253BCF5F16A,
+				title = "menu/lb_zmglobal_kills",
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f125_local1.allTimeKills )
 			},
 			{
@@ -2320,11 +2320,11 @@ CoD.ZombieUtility.ZMAllTimeSummaryListGenericInfoTableFunc = function ( f125_arg
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f125_local1.allTimeHeadshots )
 			},
 			{
-				title = 0x5B108688AC430E3,
+				title = "zmui/highest_round_reached",
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f125_local1.highestRound )
 			},
 			{
-				title = 0x34FF6AAA0F9F838,
+				title = "zmui/average_rounds_completed",
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f125_local1.averageRound )
 			}
 		}
@@ -2333,7 +2333,7 @@ CoD.ZombieUtility.ZMAllTimeSummaryListGenericInfoTableFunc = function ( f125_arg
 		local f125_local5 = f125_local4 and CoD.ZombieUtility.ZombiesTrialsAARStrings[f125_local4]
 		local f125_local6 = {}
 		local f125_local7 = {
-			title = 0x978F253BCF5F16A,
+			title = "menu/lb_zmglobal_kills",
 			value = CoD.TextUtility.FormatNumberWithDelimiters( f125_local1.allTimeKills )
 		}
 		local f125_local8 = {
@@ -2341,7 +2341,7 @@ CoD.ZombieUtility.ZMAllTimeSummaryListGenericInfoTableFunc = function ( f125_arg
 			value = CoD.TextUtility.FormatNumberWithDelimiters( f125_local1.allTimeHeadshots )
 		}
 		local f125_local9 = {
-			title = 0x5B108688AC430E3,
+			title = "zmui/highest_round_reached",
 			value = CoD.TextUtility.FormatNumberWithDelimiters( f125_local1.highestRound )
 		}
 		local f125_local10 = {}
@@ -2380,17 +2380,17 @@ CoD.ZombieUtility.ZMAllTimeSummaryListGenericInfoTableFunc = function ( f125_arg
 								f125_local3 = f125_local6
 							end
 						end
-						f125_local13 = 0x0
+						f125_local13 = ""
 					end
 				end
-				f125_local12 = 0x0
+				f125_local12 = ""
 			end
 		end
-		f125_local11 = 0x0
+		f125_local11 = ""
 	elseif f125_local2 == "zstandard" then
 		f125_local3 = {
 			{
-				title = 0x978F253BCF5F16A,
+				title = "menu/lb_zmglobal_kills",
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f125_local1.allTimeKills )
 			},
 			{
@@ -2398,17 +2398,17 @@ CoD.ZombieUtility.ZMAllTimeSummaryListGenericInfoTableFunc = function ( f125_arg
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f125_local1.allTimeHeadshots )
 			},
 			{
-				title = 0xC2707EFE95DB779,
+				title = "zmui/highest_multiplier",
 				value = CoD.ZombieUtility.GetZombieScoreboardColumnRushMultiplierTreatment( f125_arg0, f125_local1.allTimeHighestMultiplier )
 			},
 			{
-				title = 0xA75180BC7FDA8F5,
+				title = "menu/score_caps",
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f125_local1.allTimeScore )
 			}
 		}
 		if not f0_local1( f125_arg0 ) then
 			table.insert( f125_local3, {
-				title = 0xBC59621C600E8A8,
+				title = "codcaster/ds_team_score",
 				value = CoD.TextUtility.FormatNumberWithDelimiters( f125_local1.allTimeTeamScore )
 			} )
 		end
@@ -2438,7 +2438,7 @@ CoD.ZombieUtility.GetAARTrialVariant = function ( f127_arg0 )
 	local f127_local1 = f127_local0.zmTrialsVariant
 	if not f127_local1 then
 		f127_local1 = f127_local0:create( "zmTrialsVariant" )
-		f127_local1:set( Engine.GetGametypeSetting( 0x2D73FC2D365631E ) )
+		f127_local1:set( Engine.GetGametypeSetting( "zmtrialsvariant" ) )
 	end
 	return f127_local1 and f127_local1:get()
 end
@@ -2448,7 +2448,7 @@ DataSources.ZmAarTrialRoundGrid = ListHelper_SetupDataSource( "ZmAarTrialRoundGr
 	if not CoD.ZombieUtility then
 		return {}
 	else
-		return CoD.ZombieUtility.GetTrialRoundGridInfo( CoD.MapUtility.ConvertMapNameToXHash( Engine.IsInGame() and Engine[0xE67E7253CC272C9]() or CoD.AARUtility.GetCurrentMapName( f128_arg0 ) ), nil, Engine.IsInGame() and Engine.GetGametypeSetting( 0x2D73FC2D365631E ) or CoD.ZombieUtility.GetAARTrialVariant( f128_arg0 ) )
+		return CoD.ZombieUtility.GetTrialRoundGridInfo( CoD.MapUtility.ConvertMapNameToXHash( Engine.IsInGame() and Engine[0xE67E7253CC272C9]() or CoD.AARUtility.GetCurrentMapName( f128_arg0 ) ), nil, Engine.IsInGame() and Engine.GetGametypeSetting( "zmtrialsvariant" ) or CoD.ZombieUtility.GetAARTrialVariant( f128_arg0 ) )
 	end
 end, true )
 DataSources.ZmAarTrialRoundColumn = ListHelper_SetupDataSource( "ZmAarTrialRoundColumn", function ( f129_arg0, f129_arg1 )
@@ -2508,7 +2508,7 @@ DataSources.AARTrialStats = {
 }
 CoD.ZombieUtility.GetZMPlaylistTrialVariant = function ( f132_arg0 )
 	for f132_local3, f132_local4 in ipairs( f132_arg0.rules ) do
-		if f132_local4.type == 0 and f132_local4.name == 0x2D73FC2D365631E then
+		if f132_local4.type == 0 and f132_local4.name == "zmtrialsvariant" then
 			return tonumber( f132_local4.value )
 		end
 	end
@@ -2543,7 +2543,7 @@ DataSources.ZMTrialInfoRoundStat = DataSourceHelpers.ListSetup( "ZMTrialInfoRoun
 			local f135_local7 = CoD.GetPlayerStats( f135_arg0 )
 			local f135_local8 = CoD.ZombieUtility.GetZMPlaylistTrialName( f135_local3 )
 			if f135_local7.PlayerStatsByTrial[f135_local8] then
-				f135_local2 = f135_local7.PlayerStatsByTrial[f135_local8][0xEC5DC2C8D272CE9]:get()
+				f135_local2 = f135_local7.PlayerStatsByTrial[f135_local8].highest_round_reached:get()
 			end
 		end
 		f135_local0 = CoD.ZombieUtility.GetTrialRoundGridInfo( f135_local4, f135_local2, CoD.ZombieUtility.GetZMPlaylistTrialVariant( f135_local3 ) )
@@ -2554,20 +2554,20 @@ DataSourceHelpers.PerControllerDataSourceSetup( "ZMBarracksTrialStats", "ZMBarra
 	local f136_local0 = 0
 	local f136_local1 = 0
 	local f136_local2 = 0
-	if Engine.CurrentSessionMode() == Enum.eModes[0x3723205FAE52C4A] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_zombies then
 		local f136_local3 = CoD.PlayerStatsUtility.GetStorageBufferForPlayer( f136_arg1 )
-		local f136_local4 = f136_local3 and f136_local3[0xABF25946AB0CE9A]
+		local f136_local4 = f136_local3 and f136_local3.playerstatsbytrial
 		if f136_local4 then
 			for f136_local8, f136_local9 in ipairs( CoD.ZombieUtility.ZMTrialsEnum ) do
 				local f136_local10 = f136_local4[f136_local9]
 				if f136_local10 then
-					if 0 < f136_local10[0x112691B7B737CE0]:get() then
+					if 0 < f136_local10.fastest_time_to_complete_round_30:get() then
 						f136_local0 = f136_local0 + 1
 					end
-					if 0 < f136_local10[0xE46ACEC43F89E9]:get() then
+					if 0 < f136_local10.fastest_time_to_round_20:get() then
 						f136_local1 = f136_local1 + 1
 					end
-					if 0 < f136_local10[0xE770CEC441C9F2]:get() then
+					if 0 < f136_local10.fastest_time_to_round_10:get() then
 						f136_local2 = f136_local2 + 1
 					end
 				end
@@ -2616,7 +2616,7 @@ DataSources.DirectorZMPlaylistInfoMaps = DataSourceHelpers.ListSetup( "DirectorZ
 			local f137_local10 = f137_local7
 			table.insert( f137_local0, {
 				models = {
-					map = 0x0
+					map = ""
 				}
 			} )
 		end
@@ -2777,7 +2777,7 @@ DataSources.DirectorPlaylistMapList = DataSourceHelpers.ListSetup( "DirectorPlay
 	local f149_local5 = f149_local4:get()
 	local f149_local6 = CoD.LobbyUtility.GetClientList()
 	local f149_local7 = CoD.ZombieUtility.GetUnfilteredPlaylistEntriesForTab( f149_arg0, f149_local3, f149_local5 )
-	if f149_local3 ~= CoD.ZombieUtility.ZMPlaylistTabs.FEATURED and f149_local3 ~= CoD.ZombieUtility.ZMPlaylistTabs.PUBLIC and f149_local3 ~= CoD.ZombieUtility.ZMPlaylistTabs.TCM and f149_local3 ~= 0x8F6A072F8CF2F88 and f149_local3 ~= 0xBC1A39D743DD767 then
+	if f149_local3 ~= CoD.ZombieUtility.ZMPlaylistTabs.FEATURED and f149_local3 ~= CoD.ZombieUtility.ZMPlaylistTabs.PUBLIC and f149_local3 ~= CoD.ZombieUtility.ZMPlaylistTabs.TCM and f149_local3 ~= "ztrials" and f149_local3 ~= "ztutorial" then
 		local f149_local8 = {}
 		local f149_local9 = {}
 		for f149_local10 = 1, #f149_local7, 1 do
@@ -2795,7 +2795,7 @@ DataSources.DirectorPlaylistMapList = DataSourceHelpers.ListSetup( "DirectorPlay
 		local f149_local9 = {}
 		for f149_local10 = 1, #f149_local7, 1 do
 			local f149_local13 = f149_local7[f149_local10]
-			if f149_local13[0xE45AEA6EE3C751B] then
+			if f149_local13.featured then
 				f149_local8 = true
 				if f149_local13.isQuickplayCard then
 					table.insert( f149_local9, 1, f149_local13 )
@@ -2806,7 +2806,7 @@ DataSources.DirectorPlaylistMapList = DataSourceHelpers.ListSetup( "DirectorPlay
 		end
 		for f149_local10 = 1, #f149_local7, 1 do
 			local f149_local13 = f149_local7[f149_local10]
-			if not f149_local13[0xE45AEA6EE3C751B] then
+			if not f149_local13.featured then
 				table.insert( f149_local9, f149_local13 )
 			end
 		end
@@ -2830,20 +2830,20 @@ DataSources.DirectorPlaylistMapList = DataSourceHelpers.ListSetup( "DirectorPlay
 			f149_local8 = true
 		end
 		local f149_local14 = f149_local15.rotationList[1].map
-		local f149_local16 = CoD.MapUtility.GetMapValue( f149_local15.rotationList[1].map, "mapName", 0x0 )
-		local f149_local17 = CoD.MapUtility.GetMapValue( f149_local15.rotationList[1].map, "previewImage", 0x0 )
-		local f149_local18 = CoD.MapUtility.GetMapValue( f149_local15.rotationList[1].map, "bigPreviewImage", 0x0 )
-		local f149_local19 = CoD.MapUtility.GetMapValue( f149_local15.rotationList[1].map, "mapDescription", 0x0 )
+		local f149_local16 = CoD.MapUtility.GetMapValue( f149_local15.rotationList[1].map, "mapName", "" )
+		local f149_local17 = CoD.MapUtility.GetMapValue( f149_local15.rotationList[1].map, "previewImage", "" )
+		local f149_local18 = CoD.MapUtility.GetMapValue( f149_local15.rotationList[1].map, "bigPreviewImage", "" )
+		local f149_local19 = CoD.MapUtility.GetMapValue( f149_local15.rotationList[1].map, "mapDescription", "" )
 		local f149_local20 = f149_local15.description
 		local f149_local21 = f149_local16
 		local f149_local22 = f149_local15.locked
-		if not f149_local22 and CoD.DirectorUtility.IsPlaylistRankRestrictedForPlayer( f149_local15, Enum.eModes[0x3723205FAE52C4A], f149_arg0 ) then
+		if not f149_local22 and CoD.DirectorUtility.IsPlaylistRankRestrictedForPlayer( f149_local15, Enum.eModes.mode_zombies, f149_arg0 ) then
 			f149_local22 = true
 		end
-		local f149_local23 = LuaUtils.PlaylistRulesIncludes( f149_local15.rules, 0x2319BDFEBA279FB, "2" )
+		local f149_local23 = LuaUtils.PlaylistRulesIncludes( f149_local15.rules, "scr_xpscalezm", "2" )
 		local f149_local24 = LuaUtils.PlaylistRulesIncludes( f149_local15.rules, "scr_gunxpscalezm", "2" )
 		local f149_local25 = CoD.ZombieUtility.IsDoubleNP( f149_arg0 )
-		local f149_local26 = f149_local15[0xE45AEA6EE3C751B] and 2 or 1
+		local f149_local26 = f149_local15.featured and 2 or 1
 		local f149_local27 = table.insert
 		local f149_local28 = f149_local0
 		local f149_local29 = {}
@@ -2880,7 +2880,7 @@ DataSources.DirectorPlaylistMapList = DataSourceHelpers.ListSetup( "DirectorPlay
 		f149_local30.mode = f149_local15.mainMode
 		f149_local30.locked = f149_local22
 		f149_local30.lockState = Engine[0x14ECF96E169F000]( f149_arg0, f149_local15.id )
-		f149_local30.featured = f149_local15[0xE45AEA6EE3C751B] == true
+		f149_local30.featured = f149_local15.featured == true
 		f149_local30.maxPartySize = f149_local15.maxPartySize
 		f149_local30.hasDoubleXP = f149_local23
 		f149_local30.hasDoubleWeaponXP = f149_local24
@@ -2904,10 +2904,10 @@ DataSources.DirectorPlaylistMapList = DataSourceHelpers.ListSetup( "DirectorPlay
 		f149_local29.properties = f149_local30
 		f149_local27( f149_local28, f149_local29 )
 	end
-	if not f149_local8 and #f149_local0 > 0 and f149_local3 == 0x73B5B4896F886CB then
+	if not f149_local8 and #f149_local0 > 0 and f149_local3 == "zclassic" then
 		local f149_local9 = Engine[0x3ACB99DBAD24D55]( f149_local1 )
 		for f149_local10 = 1, #f149_local0, 1 do
-			if #f149_local9.rotationList == 1 and f149_local9.excludePublicLobby and f149_local0[f149_local10].models.id == f149_local9.rotationList[1].map and CoD.ZombieUtility.GetGroupedGameType( f149_local9.rotationList[1].gametype, 0x73B5B4896F886CB ) == 0x73B5B4896F886CB then
+			if #f149_local9.rotationList == 1 and f149_local9.excludePublicLobby and f149_local0[f149_local10].models.id == f149_local9.rotationList[1].map and CoD.ZombieUtility.GetGroupedGameType( f149_local9.rotationList[1].gametype, "zclassic" ) == "zclassic" then
 				f149_local0[f149_local10].properties.selectIndex = true
 				f149_local8 = true
 				Engine[0xCE25A90DC553200]( f149_local0[f149_local10].models.playlistID )
@@ -2951,7 +2951,7 @@ DataSources.DirectorPlaylistGameTypeList = DataSourceHelpers.ListSetup( "Directo
 	local f152_local7 = false
 	for f152_local8 = CoD.ZombieUtility.ZMPlaylistTabs.BEGIN, CoD.ZombieUtility.ZMPlaylistTabs.COUNT, 1 do
 		local f152_local11 = ""
-		local f152_local12 = 0x0
+		local f152_local12 = ""
 		local f152_local13 = false
 		local f152_local14 = false
 		if f152_local8 == CoD.ZombieUtility.ZMPlaylistTabs.FEATURED then
@@ -2959,7 +2959,7 @@ DataSources.DirectorPlaylistGameTypeList = DataSourceHelpers.ListSetup( "Directo
 			f152_local12 = "menu/featured"
 			f152_local13 = f152_local3.featuredCategory and f152_local3 and not f152_local3.excludePublicLobby
 		elseif f152_local8 == CoD.ZombieUtility.ZMPlaylistTabs.PUBLIC then
-			f152_local12 = 0x7E251454EDF7A26
+			f152_local12 = "menu/public_tab"
 			local f152_local15 = f152_local3
 			if not f152_local3.featuredCategory then
 				f152_local13 = not f152_local3.excludePublicLobby
@@ -2967,46 +2967,46 @@ DataSources.DirectorPlaylistGameTypeList = DataSourceHelpers.ListSetup( "Directo
 				f152_local13 = false
 			end
 		elseif f152_local8 == CoD.ZombieUtility.ZMPlaylistTabs.ZCLASSIC then
-			f152_local11 = 0x73B5B4896F886CB
+			f152_local11 = "zclassic"
 			f152_local12 = CoD.ZombieUtility.GetGametypeTabName( "zclassic" )
 			if f152_local3 and #f152_local3.rotationList == 1 then
 				local f152_local16 = Engine[0xF2CD89B3C345FD3]( f152_local3.rotationList[1].gametype )
-				f152_local13 = f152_local16 and f152_local16.gametype == 0x73B5B4896F886CB
+				f152_local13 = f152_local16 and f152_local16.gametype == "zclassic"
 			end
 		elseif f152_local8 == CoD.ZombieUtility.ZMPlaylistTabs.ZSTANDARD then
-			f152_local11 = 0x8512D346B01B940
+			f152_local11 = "zstandard"
 			f152_local12 = CoD.ZombieUtility.GetGametypeTabName( "zstandard" )
 			if f152_local3 and #f152_local3.rotationList == 1 then
 				local f152_local16 = Engine[0xF2CD89B3C345FD3]( f152_local3.rotationList[1].gametype )
-				f152_local13 = f152_local16 and f152_local16.gametype == 0x8512D346B01B940
+				f152_local13 = f152_local16 and f152_local16.gametype == "zstandard"
 			end
 		elseif f152_local8 == CoD.ZombieUtility.ZMPlaylistTabs.TCM then
 			if not LUI.DEV then
 				f152_local14 = true
 			end
-			f152_local11 = 0x3037F6188BD285F
+			f152_local11 = "ztcm"
 			f152_local12 = CoD.ZombieUtility.GetGametypeTabName( "ztcm" )
 			if f152_local3 and #f152_local3.rotationList == 1 then
 				local f152_local16 = Engine[0xF2CD89B3C345FD3]( f152_local3.rotationList[1].gametype )
-				f152_local13 = f152_local16 and f152_local16.gametype == 0x3037F6188BD285F
+				f152_local13 = f152_local16 and f152_local16.gametype == "ztcm"
 			end
 		elseif f152_local8 == CoD.ZombieUtility.ZMPlaylistTabs.ZTRIALS then
 			f152_local14 = IsBooleanDvarSet( 0x431CAAEFB37761 )
-			f152_local11 = 0x8F6A072F8CF2F88
+			f152_local11 = "ztrials"
 			f152_local12 = CoD.ZombieUtility.GetGametypeTabName( "ztrials" )
 			if f152_local3 and #f152_local3.rotationList == 1 then
 				local f152_local16 = Engine[0xF2CD89B3C345FD3]( f152_local3.rotationList[1].gametype )
-				f152_local13 = f152_local16 and f152_local16.gametype == 0x8F6A072F8CF2F88
+				f152_local13 = f152_local16 and f152_local16.gametype == "ztrials"
 			end
 		elseif f152_local8 == CoD.ZombieUtility.ZMPlaylistTabs.ZTUTORIAL then
 			if f152_local5 > 1 then
 				f152_local14 = true
 			end
-			f152_local11 = 0xBC1A39D743DD767
+			f152_local11 = "ztutorial"
 			f152_local12 = CoD.ZombieUtility.GetGametypeTabName( "ztutorial" )
 			if f152_local3 and #f152_local3.rotationList == 1 then
 				local f152_local16 = Engine[0xF2CD89B3C345FD3]( f152_local3.rotationList[1].gametype )
-				f152_local13 = f152_local16 and f152_local16.gametype == 0xBC1A39D743DD767
+				f152_local13 = f152_local16 and f152_local16.gametype == "ztutorial"
 			end
 		end
 		if not f152_local14 then
@@ -3048,7 +3048,7 @@ CoD.ZombieUtility.GetUnfilteredPlaylistEntriesForTab = function ( f154_arg0, f15
 		local f154_local6 = f154_local2[f154_local3]
 		if f154_local6.hidden ~= true then
 			local f154_local7 = LuaUtils.GetEModeForLobbyMainMode( f154_local6.lobbyMainMode )
-			if (f154_local7 == nil or CoD.DirectorUtility.IsSessionModeAvailable( f154_arg0, f154_local7 )) and f154_local1["mainmode"] == f154_local6.lobbyMainMode then
+			if (f154_local7 == nil or CoD.DirectorUtility.IsSessionModeAvailable( f154_arg0, f154_local7 )) and f154_local1.mainmode == f154_local6.lobbyMainMode then
 				local f154_local8 = f154_local6.entries
 				for f154_local9 = 1, #f154_local8, 1 do
 					local f154_local12 = false
@@ -3061,12 +3061,12 @@ CoD.ZombieUtility.GetUnfilteredPlaylistEntriesForTab = function ( f154_arg0, f15
 						if not f154_local13.featuredCategory and not f154_local13.excludePublicLobby then
 							f154_local12 = true
 						end
-					elseif f154_arg1 == 0xBC1A39D743DD767 then
+					elseif f154_arg1 == "ztutorial" then
 						local f154_local14 = Engine[0xF2CD89B3C345FD3]( f154_local13.rotationList[1].gametype )
 						if f154_local14.gametype == f154_arg1 then
 							f154_local12 = true
 						end
-					elseif f154_arg1 ~= nil and #f154_local13.rotationList == 1 and f154_local13.excludePublicLobby and (f154_arg1 ~= 0x73B5B4896F886CB or f154_arg1 == 0x73B5B4896F886CB and CoD.ZombieUtility.GetZMPlaylistDifficulty( f154_local13 ) == f154_arg2) and CoD.ZombieUtility.GetGroupedGameType( f154_local13.rotationList[1].gametype, f154_arg1 ) == f154_arg1 then
+					elseif f154_arg1 ~= nil and #f154_local13.rotationList == 1 and f154_local13.excludePublicLobby and (f154_arg1 ~= "zclassic" or f154_arg1 == "zclassic" and CoD.ZombieUtility.GetZMPlaylistDifficulty( f154_local13 ) == f154_arg2) and CoD.ZombieUtility.GetGroupedGameType( f154_local13.rotationList[1].gametype, f154_arg1 ) == f154_arg1 then
 						f154_local12 = true
 					end
 					if f154_local13.isQuickplayCard and not CoD.DirectorUtility.IsQuickplayAvailableForMode( Enum.LobbyMainMode[0x79D01499920B292] ) then
@@ -3125,7 +3125,7 @@ CoD.ZombieUtility.SetZMLoadoutPreviewInfoElement = function ( f157_arg0, f157_ar
 	end
 	local f157_local5 = CoD.SafeGetModelValue( f157_arg1:getModel(), "isRestricted" )
 	if f157_local1 then
-		CoD.ZombieUtility.SetZMLoadoutPreviewInfo( "", 0x0, "blacktransparent", f157_arg2, false )
+		CoD.ZombieUtility.SetZMLoadoutPreviewInfo( "", "", "blacktransparent", f157_arg2, false )
 	elseif f157_local2 and f157_local3 and f157_local4 and f157_local5 ~= nil then
 		CoD.ZombieUtility.SetZMLoadoutPreviewInfo( f157_local2, f157_local3, f157_local4, f157_arg2, f157_local5 )
 	end
@@ -3144,7 +3144,7 @@ end
 
 CoD.ZombieUtility.SetZMLoadoutPreviewInfo = function ( f159_arg0, f159_arg1, f159_arg2, f159_arg3, f159_arg4 )
 	local f159_local0 = DataSources.DirectorZMLoadoutPreview.getModel( f159_arg3 )
-	if not f159_arg2 or f159_arg2 == 0x0 or f159_arg2 == "blacktransparent" or f159_arg2 == "blacktransparent" then
+	if not f159_arg2 or f159_arg2 == "" or f159_arg2 == "blacktransparent" or f159_arg2 == "blacktransparent" then
 		f159_local0.ZMLoadoutPreviewInfoShown:set( false )
 	else
 		f159_local0.ZMLoadoutPreviewInfoShown:set( true )
@@ -3217,7 +3217,7 @@ end
 CoD.ZombieUtility.SelectTutorialMapDifficulty = function ( f167_arg0, f167_arg1 )
 	local f167_local0 = Engine.GetGlobalModel()
 	f167_local0 = f167_local0:create( "lobbyRoot.selectedGameType" )
-	if f167_local0 and f167_local0:get() == 0xBC1A39D743DD767 then
+	if f167_local0 and f167_local0:get() == "ztutorial" then
 		local f167_local1 = f167_arg0:getModel( f167_arg1, "difficulty" )
 		if f167_local1 and f167_local1:get() then
 			f167_local1 = f167_local1:get()
@@ -3233,7 +3233,7 @@ CoD.ZombieUtility.SelectTutorialMapDifficulty = function ( f167_arg0, f167_arg1 
 				Engine[0x202BEB9A6859B8B]( f167_local2, Enum.SessionDirty[0x9EC6BB6276BDCE6] )
 			end
 		end
-	elseif f167_local0 and f167_local0:get() == 0x8F6A072F8CF2F88 then
+	elseif f167_local0 and f167_local0:get() == "ztrials" then
 		local f167_local1 = CoD.SafeGetModelValue( f167_arg0:getModel(), "trialVariant" )
 		if f167_local1 and IsLobbyNetworkModeLAN() then
 			Engine.SetGametypeSetting( "zmTrialsVariant", f167_local1 )
@@ -3294,7 +3294,7 @@ CoD.ZombieUtility.UpdateFocusedPlaylistMapsAndGamemodes = function ( f170_arg0 )
 			table.insert( f170_local5, f170_local14 )
 			table.insert( f170_local4, f170_local14 )
 		end
-		local f170_local15 = CoD.ZombieUtility.GetGroupedGameType( f170_local13.gametype, 0x3037F6188BD285F )
+		local f170_local15 = CoD.ZombieUtility.GetGroupedGameType( f170_local13.gametype, "ztcm" )
 		if f170_local15 ~= 0x4E2E06153C069F5 then
 			local f170_local16 = Engine[0xF2CD89B3C345FD3]( f170_local13.gametype )
 			f170_local15 = f170_local16.gametype
@@ -3333,13 +3333,13 @@ CoD.ZombieUtility.UpdateFocusedPlaylistMapsAndGamemodes = function ( f170_arg0 )
 		for f170_local12 = 1, #f170_local6, 1 do
 			local f170_local15 = f170_local6[f170_local12]
 			local f170_local16 = nil
-			if f170_local15 == 0x73B5B4896F886CB then
+			if f170_local15 == "zclassic" then
 				f170_local16 = 0xF44B71F613A7D65
-			elseif f170_local15 == 0x8512D346B01B940 then
+			elseif f170_local15 == "zstandard" then
 				f170_local16 = 0x59DF0D7D85936E1
-			elseif f170_local15 == 0x3037F6188BD285F then
+			elseif f170_local15 == "ztcm" then
 				f170_local16 = 0xF8845568A0DA5AD
-			elseif f170_local15 == 0x8F6A072F8CF2F88 then
+			elseif f170_local15 == "ztrials" then
 				f170_local16 = 0x5A74962FD2F07DE
 			end
 			if f170_local16 ~= nil then
@@ -3415,7 +3415,7 @@ CoD.ZombieUtility.ShouldShowPlaylistSelection = function ( f175_arg0 )
 	f175_local0 = f175_local0:create( "ZMLobbyExclusions.ZMPlaylistTab" )
 	local f175_local1 = f175_local0:get()
 	local f175_local2
-	if f175_local1 ~= CoD.ZombieUtility.ZMPlaylistTabs.FEATURED and f175_local1 ~= CoD.ZombieUtility.ZMPlaylistTabs.PUBLIC and f175_local1 ~= 0xBC1A39D743DD767 then
+	if f175_local1 ~= CoD.ZombieUtility.ZMPlaylistTabs.FEATURED and f175_local1 ~= CoD.ZombieUtility.ZMPlaylistTabs.PUBLIC and f175_local1 ~= "ztutorial" then
 		f175_local2 = false
 	else
 		f175_local2 = true
@@ -3439,31 +3439,31 @@ end
 CoD.ZombieUtility.ClassicInfo = function ()
 	local f177_local0 = Engine.GetGlobalModel()
 	f177_local0 = f177_local0:create( "ZMLobbyExclusions.ZMPlaylistTab" )
-	return f177_local0:get() == 0x73B5B4896F886CB
+	return f177_local0:get() == "zclassic"
 end
 
 CoD.ZombieUtility.ZombieRushInfo = function ()
 	local f178_local0 = Engine.GetGlobalModel()
 	f178_local0 = f178_local0:create( "ZMLobbyExclusions.ZMPlaylistTab" )
-	return f178_local0:get() == 0x8512D346B01B940
+	return f178_local0:get() == "zstandard"
 end
 
 CoD.ZombieUtility.TCMInfo = function ()
 	local f179_local0 = Engine.GetGlobalModel()
 	f179_local0 = f179_local0:create( "ZMLobbyExclusions.ZMPlaylistTab" )
-	return f179_local0:get() == 0x3037F6188BD285F
+	return f179_local0:get() == "ztcm"
 end
 
 CoD.ZombieUtility.TrialsInfo = function ()
 	local f180_local0 = Engine.GetGlobalModel()
 	f180_local0 = f180_local0:create( "ZMLobbyExclusions.ZMPlaylistTab" )
-	return f180_local0:get() == 0x8F6A072F8CF2F88
+	return f180_local0:get() == "ztrials"
 end
 
 CoD.ZombieUtility.TutorialInfo = function ()
 	local f181_local0 = Engine.GetGlobalModel()
 	f181_local0 = f181_local0:create( "ZMLobbyExclusions.ZMPlaylistTab" )
-	return f181_local0:get() == 0xBC1A39D743DD767
+	return f181_local0:get() == "ztutorial"
 end
 
 CoD.ZombieUtility.SpecialZombieNotification = function ( f182_arg0, f182_arg1, f182_arg2 )
@@ -3471,7 +3471,7 @@ CoD.ZombieUtility.SpecialZombieNotification = function ( f182_arg0, f182_arg1, f
 	f182_arg1:appendNotification( {
 		clip = "TextAndImageSpecial",
 		title = Engine.Localize( Engine.GetIString( f182_local0[2], "CS_LOCALIZED_STRINGS" ) ),
-		description = 0x0,
+		description = "",
 		specialImage = RegisterImage( CoD.ZombieUtility.SpecialZombiesImages[f182_local0[1]] or "blacktransparent" )
 	} )
 end
@@ -3485,7 +3485,7 @@ CoD.ZombieUtility.GetTcmTitle = function ( f183_arg0 )
 end
 
 CoD.ZombieUtility.IsEasterEggsAllowed = function ( f184_arg0 )
-	if Dvar[0xFF54369D6573B91]:get() == "zclassic" and CoD.isPublicOnlineGame() and not IsGametypeSettingsValue( "zmDifficulty", 0 ) then
+	if Dvar.g_gametype:get() == "zclassic" and CoD.isPublicOnlineGame() and not IsGametypeSettingsValue( "zmDifficulty", 0 ) then
 		return true
 	else
 		return false
@@ -3498,12 +3498,12 @@ CoD.ZombieUtility.IsHighestRoundSurvivedGreaterThanOrEqualTo = function ( f185_a
 end
 
 CoD.ZombieUtility.IsHighestTrialRoundSurvivedGreaterThanOrEqualTo = function ( f186_arg0, f186_arg1 )
-	local f186_local0 = CoD.ZombieUtility.GetTrialsNameForMap( Engine.IsInGame() and Engine.GetCurrentMap() or CoD.AARUtility.GetCurrentMapName( f186_arg0 ), Engine.IsInGame() and Engine.GetGametypeSetting( 0x2D73FC2D365631E ) or CoD.ZombieUtility.GetAARTrialVariant( f186_arg0 ) )
+	local f186_local0 = CoD.ZombieUtility.GetTrialsNameForMap( Engine.IsInGame() and Engine.GetCurrentMap() or CoD.AARUtility.GetCurrentMapName( f186_arg0 ), Engine.IsInGame() and Engine.GetGametypeSetting( "zmtrialsvariant" ) or CoD.ZombieUtility.GetAARTrialVariant( f186_arg0 ) )
 	local f186_local1 = 0
 	if not IsLobbyNetworkModeLAN() then
 		local f186_local2 = CoD.GetPlayerStats( f186_arg0 )
 		if f186_local2.PlayerStatsByTrial[f186_local0] then
-			f186_local1 = f186_local2.PlayerStatsByTrial[f186_local0][0xEC5DC2C8D272CE9]:get()
+			f186_local1 = f186_local2.PlayerStatsByTrial[f186_local0].highest_round_reached:get()
 		end
 	end
 	return f186_arg1 <= f186_local1
@@ -3536,7 +3536,7 @@ CoD.ZombieUtility.IsSelfModelValueLessThanOrEqualToTrialStatVal = function ( f18
 		f188_local0 = Engine.GetModel( f188_local0, f188_arg2 )
 	end
 	local f188_local1 = f188_local0 and Engine.GetModelValue( f188_local0 )
-	local f188_local2 = CoD.ZombieUtility.GetTrialsNameForMap( Engine.IsInGame() and Engine.GetCurrentMap() or CoD.AARUtility.GetCurrentMapName( f188_arg1 ), Engine.IsInGame() and Engine.GetGametypeSetting( 0x2D73FC2D365631E ) or CoD.ZombieUtility.GetAARTrialVariant( f188_arg1 ) )
+	local f188_local2 = CoD.ZombieUtility.GetTrialsNameForMap( Engine.IsInGame() and Engine.GetCurrentMap() or CoD.AARUtility.GetCurrentMapName( f188_arg1 ), Engine.IsInGame() and Engine.GetGametypeSetting( "zmtrialsvariant" ) or CoD.ZombieUtility.GetAARTrialVariant( f188_arg1 ) )
 	local f188_local3 = 0
 	if not IsLobbyNetworkModeLAN() then
 		local f188_local4 = CoD.GetPlayerStats( f188_arg1 )
@@ -3580,7 +3580,7 @@ CoD.ZombieUtility.OrderCharacterButtonZMList = function ( f190_arg0, f190_arg1, 
 		return f190_local2
 	end
 	local f190_local4 = {
-		[0x17389C0AE1875F9] = {
+		story1 = {
 			{
 				"niko",
 				"Unik",
@@ -3602,7 +3602,7 @@ CoD.ZombieUtility.OrderCharacterButtonZMList = function ( f190_arg0, f190_arg1, 
 				"marl"
 			}
 		},
-		[0x17386C0AE1870E0] = {
+		story2 = {
 			{
 				"scar"
 			},
@@ -3701,7 +3701,7 @@ CoD.ZombieUtility.SubscribeToLobbyClientInfo = function ( f193_arg0, f193_arg1 )
 end
 
 CoD.ZombieUtility.GetShieldIconForCurrentMap = function ( f195_arg0 )
-	return CoD.MapUtility.GetMapValue( Engine.GetCurrentMap(), 0xC6CD32D003CA1F0, "blacktransparent" )
+	return CoD.MapUtility.GetMapValue( Engine.GetCurrentMap(), "shield", "blacktransparent" )
 end
 
 CoD.ZombieUtility.InitTutorialQuickPlayModel = function ( f196_arg0 )
@@ -3724,7 +3724,7 @@ CoD.ZombieUtility.IsDoubleNP = function ( f197_arg0 )
 	if IsPublicOnlineGame() then
 		f197_local0 = Engine[0x7B3B2B73B53EB34]()
 	end
-	if Engine[0xF4F47F17B3BDCB3]( f197_arg0, Engine[0xACFE452C407B25B]( Enum.eModes[0x3723205FAE52C4A] ), Enum.eModes[0x3723205FAE52C4A], f197_local0 ) then
+	if Engine[0xF4F47F17B3BDCB3]( f197_arg0, Engine[0xACFE452C407B25B]( Enum.eModes.mode_zombies ), Enum.eModes.mode_zombies, f197_local0 ) then
 		return true
 	end
 	local f197_local1 = Engine[0x22EAAB59AA27E9B]( 0x624FAAEE3C04F09 )
@@ -3784,12 +3784,12 @@ CoD.ZombieUtility.ResolveInvalidMapGametypeSelection = function ( f203_arg0 )
 	f203_local0 = f203_local0:get()
 	local f203_local1 = Engine[0xC53F8D38DF9042B]( Engine[0xE67E7253CC272C9]() )
 	local f203_local2 = {
-		[0x73B5B4896F886CB] = 0xB1B381DE2ADC014,
-		[0x8F6A072F8CF2F88] = 0x7EEA154A1D4F3C1,
-		[0xC51CA5D8EEF9CF0] = 0x4F1EA0CA4EC9E3,
-		[0x8512D346B01B940] = 0x5154C514171FEE9,
-		[0x3037F6188BD285F] = 0xD126B224D84608C,
-		[0xBC1A39D743DD767] = 0x74923AD245EF8BE
+		zclassic = 0xB1B381DE2ADC014,
+		ztrials = 0x7EEA154A1D4F3C1,
+		zgrief = 0x4F1EA0CA4EC9E3,
+		zstandard = 0x5154C514171FEE9,
+		ztcm = 0xD126B224D84608C,
+		ztutorial = 0x74923AD245EF8BE
 	}
 	local f203_local3 = function ( f204_arg0, f204_arg1 )
 		return CoD.MapUtility.MapsTable[f204_arg0].uniqueID < CoD.MapUtility.MapsTable[f204_arg1].uniqueID
@@ -3797,7 +3797,7 @@ CoD.ZombieUtility.ResolveInvalidMapGametypeSelection = function ( f203_arg0 )
 	
 	local f203_local4 = function ( f205_arg0 )
 		if CoD.MapUtility.MapsTable[f205_arg0][f203_local2[f203_local0]] == 1 then
-			if f203_local0 == 0x8F6A072F8CF2F88 then
+			if f203_local0 == "ztrials" then
 				local f205_local0 = CoD.DirectorUtility.TrialsMapEnabledDvars[f205_arg0]
 				if f205_local0 and IsBooleanDvarSet( f205_local0 ) then
 					return true
@@ -3844,10 +3844,10 @@ end
 
 CoD.ZombieUtility.LocalizeTrialMapName = function ( f210_arg0, f210_arg1 )
 	local f210_local0 = CoD.MapUtility.GetLocalizedMapValue( f210_arg0, CoD.ZombieUtility.GetTrialMapNameFieldName( f210_arg1 ), "" )
-	if f210_local0 and f210_local0 ~= 0x0 then
+	if f210_local0 and f210_local0 ~= "" then
 		return f210_local0
 	else
-		return 0x0
+		return ""
 	end
 end
 

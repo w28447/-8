@@ -15,7 +15,7 @@ CoD.Leaderboard_GameModeFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Leaderboard = CoD.Leaderboard.new( f1_arg0, f1_arg1, 0, 0, 31, 1201, 0, 0, 0, 757 )
-	Leaderboard.LeaderboardEmptyText:setText( Engine[0xF9F1239CFD921FE]( 0x297DDF6F8B1ABCF ) )
+	Leaderboard.LeaderboardEmptyText:setText( Engine[0xF9F1239CFD921FE]( "menu/lb_empty" ) )
 	Leaderboard:subscribeToGlobalModel( f1_arg1, "LeaderboardHeader", nil, function ( model )
 		Leaderboard.LeaderboardHeader:setModel( model, f1_arg1 )
 	end )

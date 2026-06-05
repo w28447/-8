@@ -16,7 +16,7 @@ CoD.vhud_hellstorm_NotificationArmed.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local InnerGlow = LUI.UIImage.new( 0.5, 0.5, -110, 110, 0.5, 0.5, -30, 15 )
 	InnerGlow:setAlpha( 0 )
-	InnerGlow:setImage( RegisterImage( 0x3CCB8ACC43F6BDC ) )
+	InnerGlow:setImage( RegisterImage( "uie_director_frontend_glow" ) )
 	InnerGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InnerGlow )
 	self.InnerGlow = InnerGlow
@@ -24,7 +24,7 @@ CoD.vhud_hellstorm_NotificationArmed.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local ARMED = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -11, 11 )
 	ARMED:setText( Engine[0xF9F1239CFD921FE]( 0xABD1D3FD0CE6DE2 ) )
 	ARMED:setTTF( "0arame_mono_stencil" )
-	ARMED:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD756CD9A5F1F1B4 ) )
+	ARMED:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration_cheap_blur" ) )
 	ARMED:setShaderVector( 0, 0, 1, 0, 0 )
 	ARMED:setShaderVector( 1, 0, 0, 0, 0 )
 	ARMED:setShaderVector( 2, 0, 0, 0, 0 )
@@ -54,7 +54,7 @@ CoD.vhud_hellstorm_NotificationArmed.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local GlowBot = LUI.UIImage.new( 0.5, 0.5, -113, 113, 0, 0, 15, 35 )
 	GlowBot:setRGB( ColorSet.EnemyOrange_Bright.r, ColorSet.EnemyOrange_Bright.g, ColorSet.EnemyOrange_Bright.b )
 	GlowBot:setAlpha( 0 )
-	GlowBot:setImage( RegisterImage( 0xAD405802E3EEE94 ) )
+	GlowBot:setImage( RegisterImage( "uie_icon_frontend_navigation_glowmed" ) )
 	GlowBot:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowBot )
 	self.GlowBot = GlowBot
@@ -62,7 +62,7 @@ CoD.vhud_hellstorm_NotificationArmed.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local GlowTop = LUI.UIImage.new( 0.5, 0.5, -113, 113, 0, 0, 7, -13 )
 	GlowTop:setRGB( ColorSet.EnemyOrange_Bright.r, ColorSet.EnemyOrange_Bright.g, ColorSet.EnemyOrange_Bright.b )
 	GlowTop:setAlpha( 0 )
-	GlowTop:setImage( RegisterImage( 0xAD405802E3EEE94 ) )
+	GlowTop:setImage( RegisterImage( "uie_icon_frontend_navigation_glowmed" ) )
 	GlowTop:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowTop )
 	self.GlowTop = GlowTop

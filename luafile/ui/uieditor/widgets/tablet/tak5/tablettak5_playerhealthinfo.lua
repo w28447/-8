@@ -11,7 +11,7 @@ CoD.TabletTak5_PlayerHealthInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local BoostFlash = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BoostFlash:setRGB( ColorSet.T8__GOLD.r, ColorSet.T8__GOLD.g, ColorSet.T8__GOLD.b )
 	BoostFlash:setAlpha( 0 )
-	BoostFlash:setMaterial( LUI.UIImage.GetCachedMaterial( 0x92F09074FB20E6D ) )
+	BoostFlash:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines" ) )
 	BoostFlash:setShaderVector( 0, 2, 0, 0, 0 )
 	BoostFlash:setShaderVector( 1, 0.4, 0, 0, 0 )
 	BoostFlash:setShaderVector( 2, 0.01, 0, 0, 0 )
@@ -26,13 +26,13 @@ CoD.TabletTak5_PlayerHealthInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local PlayerImage = LUI.UIImage.new( 0.5, 0.5, -45, 45, 0.5, 0.5, -90, 90 )
 	PlayerImage:setAlpha( 0.3 )
-	PlayerImage:setImage( RegisterImage( 0x23B74B667FE001 ) )
+	PlayerImage:setImage( RegisterImage( "uie_ui_hud_tak5_humanbody" ) )
 	self:addElement( PlayerImage )
 	self.PlayerImage = PlayerImage
 	
 	local PlayerImageHealthWipe = LUI.UIImage.new( 0.5, 0.5, -45, 45, 0.5, 0.5, -90, 90 )
 	PlayerImageHealthWipe:setAlpha( 0 )
-	PlayerImageHealthWipe:setImage( RegisterImage( 0x23B74B667FE001 ) )
+	PlayerImageHealthWipe:setImage( RegisterImage( "uie_ui_hud_tak5_humanbody" ) )
 	PlayerImageHealthWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	PlayerImageHealthWipe:setShaderVector( 0, 0, 1, 0, 0 )
 	PlayerImageHealthWipe:setShaderVector( 1, 0, 0, 0, 0 )
@@ -62,13 +62,13 @@ CoD.TabletTak5_PlayerHealthInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local playeroutline = LUI.UIImage.new( 0.5, 0.5, -45, 45, 0.5, 0.5, -90, 90 )
 	playeroutline:setAlpha( 0.25 )
-	playeroutline:setImage( RegisterImage( 0x9C12642701A73C4 ) )
+	playeroutline:setImage( RegisterImage( "uie_ui_hud_tak5_humanbody_outline" ) )
 	self:addElement( playeroutline )
 	self.playeroutline = playeroutline
 	
 	local playeroutlineAdd = LUI.UIImage.new( 0.5, 0.5, -45, 45, 0.5, 0.5, -90, 90 )
 	playeroutlineAdd:setAlpha( 0.4 )
-	playeroutlineAdd:setImage( RegisterImage( 0x9C12642701A73C4 ) )
+	playeroutlineAdd:setImage( RegisterImage( "uie_ui_hud_tak5_humanbody_outline" ) )
 	playeroutlineAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	playeroutlineAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( playeroutlineAdd )
@@ -76,8 +76,8 @@ CoD.TabletTak5_PlayerHealthInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local PlayerImageLine = LUI.UIImage.new( 0.5, 0.5, -45, 45, 0.5, 0.5, -90, 90 )
 	PlayerImageLine:setAlpha( 0.3 )
-	PlayerImageLine:setImage( RegisterImage( 0x23B74B667FE001 ) )
-	PlayerImageLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x92F09074FB20E6D ) )
+	PlayerImageLine:setImage( RegisterImage( "uie_ui_hud_tak5_humanbody" ) )
+	PlayerImageLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines" ) )
 	PlayerImageLine:setShaderVector( 0, 2, 0, 0, 0 )
 	PlayerImageLine:setShaderVector( 1, 1.5, 0, 0, 0 )
 	PlayerImageLine:setShaderVector( 2, 0.01, 0, 0, 0 )
@@ -88,7 +88,7 @@ CoD.TabletTak5_PlayerHealthInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	PlayerImageHealthWipe:linkToElementModel( self, "health.maxHealthRegen", true, PlayerImageHealthWipe.__Y_Start___Y_End_FullPath )
 	self:subscribeToGlobalModel( f1_arg1, "PerController", "scriptNotify", function ( model )
 		local f4_local0 = self
-		if CoD.ModelUtility.IsParamModelEqualToHashString( model, 0xC27B5E4F3724EA3 ) and CoD.ModelUtility.IsScriptNotifyDataArgEqualTo( model, 1, 1 ) then
+		if CoD.ModelUtility.IsParamModelEqualToHashString( model, "localheal_fire" ) and CoD.ModelUtility.IsScriptNotifyDataArgEqualTo( model, 1, 1 ) then
 			PlayClip( self, "HealthBoost", f1_arg1 )
 		end
 	end )

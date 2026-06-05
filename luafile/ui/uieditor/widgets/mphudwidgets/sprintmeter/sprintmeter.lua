@@ -17,7 +17,7 @@ CoD.SprintMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	Bg:setRGB( 0, 0, 0 )
 	Bg:setAlpha( 0.5 )
 	Bg:setYRot( 180 )
-	Bg:setImage( RegisterImage( 0x46C427DBED7301C ) )
+	Bg:setImage( RegisterImage( "uie_hud_sprintmeter_bg" ) )
 	self:addElement( Bg )
 	self.Bg = Bg
 	

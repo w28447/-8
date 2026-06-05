@@ -9,7 +9,7 @@ CoD.DirectorFindGamePlaylistInfoTimed2xp.new = function ( f1_arg0, f1_arg1, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local XpSmall = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 72 )
-	XpSmall:setImage( RegisterImage( 0x657862AC1A60EB4 ) )
+	XpSmall:setImage( RegisterImage( "ui_icon_2xp" ) )
 	self:addElement( XpSmall )
 	self.XpSmall = XpSmall
 	
@@ -19,7 +19,7 @@ CoD.DirectorFindGamePlaylistInfoTimed2xp.new = function ( f1_arg0, f1_arg1, f1_a
 	self.PromoBG = PromoBG
 	
 	local PromoLabel = LUI.UIText.new( 0, 0, 0, 72, 0, 0, 72, 89 )
-	PromoLabel:setText( Engine[0xF9F1239CFD921FE]( 0x911577C5D3F5B1A ) )
+	PromoLabel:setText( Engine[0xF9F1239CFD921FE]( "menu/promo_caps" ) )
 	PromoLabel:setTTF( "default" )
 	PromoLabel:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	PromoLabel:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -38,7 +38,7 @@ CoD.DirectorFindGamePlaylistInfoTimed2xp.new = function ( f1_arg0, f1_arg1, f1_a
 	Time:subscribeToGlobalModel( f1_arg1, "PromotionalDoubleXP", "dailyDoubleXPTimeLeft", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
-			Time:setText( LocalizeIntoString( 0xACC0A2311E2A5EA, f2_local0 ) )
+			Time:setText( LocalizeIntoString( "menu/double_xp_time_remaining_caps", f2_local0 ) )
 		end
 	end )
 	self:addElement( Time )

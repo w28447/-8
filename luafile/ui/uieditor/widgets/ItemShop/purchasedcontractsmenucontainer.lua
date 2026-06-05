@@ -89,17 +89,17 @@ CoD.PurchasedContractsMenuContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ContractList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		if not IsMenuInState( f3_arg1, "NoContracts" ) then
-			CoD.ContractUtility.OpenContractDetails( self, f3_arg0, f3_arg2 )
+	f1_arg0:AddButtonCallbackFunction( ContractList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not IsMenuInState( menu, "NoContracts" ) then
+			CoD.ContractUtility.OpenContractDetails( self, element, controller )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		if not IsMenuInState( f4_arg1, "NoContracts" ) then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if not IsMenuInState( menu, "NoContracts" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

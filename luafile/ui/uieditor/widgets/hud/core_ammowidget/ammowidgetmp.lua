@@ -28,7 +28,7 @@ CoD.AmmoWidgetMP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local Backer = LUI.UIImage.new( 0, 0, 251, 618, 0, 0, 24, 117 )
 	Backer:setAlpha( 0 )
-	Backer:setImage( RegisterImage( 0xA3887D32AFD1940 ) )
+	Backer:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_backer" ) )
 	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_edges" ) )
 	Backer:setShaderVector( 0, 0.05, 0.2, 0.05, 0.2 )
 	self:addElement( Backer )
@@ -54,20 +54,20 @@ CoD.AmmoWidgetMP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	self.AmmoWidgetOneInTheChamber = AmmoWidgetOneInTheChamber
 	
 	local Frame = LUI.UIImage.new( 0, 0, 264, 624, 0, 0, 25.5, 111.5 )
-	Frame:setImage( RegisterImage( 0xC2A880079B9F2B1 ) )
+	Frame:setImage( RegisterImage( "uie_ui_hud_core_frame_ammo_widget" ) )
 	self:addElement( Frame )
 	self.Frame = Frame
 	
 	local FrameGolden = LUI.UIImage.new( 0, 0, 264, 624, 0, 0, 25.5, 111.5 )
 	FrameGolden:setImage( RegisterImage( "uie_ui_hud_core_frame_ammo_widget_gold" ) )
-	FrameGolden:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDCEC3F40C67FD03 ) )
+	FrameGolden:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_glint_reveal" ) )
 	FrameGolden:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( FrameGolden )
 	self.FrameGolden = FrameGolden
 	
 	local FrameGoldenGlow = LUI.UIImage.new( 0, 0, 264, 624, 0, 0, 25.5, 111.5 )
-	FrameGoldenGlow:setImage( RegisterImage( 0x5CDC829DEF0025C ) )
-	FrameGoldenGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDCEC3F40C67FD03 ) )
+	FrameGoldenGlow:setImage( RegisterImage( "uie_ui_hud_core_frame_ammo_widget_gold_glow" ) )
+	FrameGoldenGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_glint_reveal" ) )
 	FrameGoldenGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( FrameGoldenGlow )
 	self.FrameGoldenGlow = FrameGoldenGlow
@@ -104,14 +104,14 @@ CoD.AmmoWidgetMP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local LEDgraph = LUI.UIImage.new( 0, 0, 284, 624, 0, 0, 25.5, 111.5 )
 	LEDgraph:setRGB( 0, 0, 0 )
 	LEDgraph:setAlpha( 0.75 )
-	LEDgraph:setImage( RegisterImage( 0x995EF23F488EAFE ) )
+	LEDgraph:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_led_graph" ) )
 	self:addElement( LEDgraph )
 	self.LEDgraph = LEDgraph
 	
 	local LEDscreen = LUI.UIImage.new( 0, 0, 264, 624, 0, 0, 25.5, 111.5 )
 	LEDscreen:setRGB( 0, 0, 0 )
 	LEDscreen:setAlpha( 0.2 )
-	LEDscreen:setImage( RegisterImage( 0xB3750B856814A3A ) )
+	LEDscreen:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_led_screen" ) )
 	self:addElement( LEDscreen )
 	self.LEDscreen = LEDscreen
 	
@@ -129,8 +129,8 @@ CoD.AmmoWidgetMP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local goldenBullet = LUI.UIImage.new( 0, 0, 292.5, 332.5, 0, 0, 80.5, 100.5 )
 	goldenBullet:setAlpha( 0 )
-	goldenBullet:setImage( RegisterImage( 0xB80FEC585CFB803 ) )
-	goldenBullet:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDCEC3F40C67FD03 ) )
+	goldenBullet:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_gold_bullet" ) )
+	goldenBullet:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_glint_reveal" ) )
 	goldenBullet:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( goldenBullet )
 	self.goldenBullet = goldenBullet

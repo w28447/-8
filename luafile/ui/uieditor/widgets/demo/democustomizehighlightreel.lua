@@ -47,7 +47,7 @@ CoD.DemoCustomizeHighlightReel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.text = text
 	
 	local numAvailableHighlights = CoD.systemOverlay_Layout_ForegroundMultilineText.new( f1_arg0, f1_arg1, 0, 0, 626, 1818, 0, 0, 155, 185 )
-	numAvailableHighlights.text:setText( Engine[0xF9F1239CFD921FE]( 0x59812214DCF8E53 ) )
+	numAvailableHighlights.text:setText( Engine[0xF9F1239CFD921FE]( "menu/demo_highlight_reel_num_available" ) )
 	numAvailableHighlights:subscribeToGlobalModel( f1_arg1, "Demo", "numHighlightReelMoments", function ( model )
 		CoD.DemoUtility.UpdateNumHighlightReelMomentsElementColor( numAvailableHighlights, f1_arg1 )
 	end )
@@ -89,16 +89,16 @@ CoD.DemoCustomizeHighlightReel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f8_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( btnStartHighlightReel, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		if not IsDisabled( f9_arg0, f9_arg2 ) then
-			ProcessListAction( self, f9_arg0, f9_arg2, f9_arg1 )
+	f1_arg0:AddButtonCallbackFunction( btnStartHighlightReel, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not IsDisabled( element, controller ) then
+			ProcessListAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		if not IsDisabled( f10_arg0, f10_arg2 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if not IsDisabled( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

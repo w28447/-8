@@ -16,7 +16,7 @@ CoD.DirectorCharacterButtonZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local DirectorDraftSelectLoadout = CoD.DirectorDraftSelectLoadout.new( f1_arg0, f1_arg1, 0.5, 0.5, -15.5, 59.5, 1, 1, -320, -245 )
 	DirectorDraftSelectLoadout:setAlpha( 0 )
-	DirectorDraftSelectLoadout.DirectorDraftSelectLoadoutInternal.LoadoutText:setText( LocalizeToUpperString( 0x2CD058C9967F620 ) )
+	DirectorDraftSelectLoadout.DirectorDraftSelectLoadoutInternal.LoadoutText:setText( LocalizeToUpperString( "menu/select_loadout" ) )
 	local f1_local2 = DirectorDraftSelectLoadout
 	local ZMLoadoutPreview = DirectorDraftSelectLoadout.subscribeToModel
 	local f1_local4 = Engine.GetGlobalModel()
@@ -33,32 +33,32 @@ CoD.DirectorCharacterButtonZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( DirectorDraftSelectLoadout, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		if CoD.DirectorUtility.ShowDirectorPrivate( f4_arg0, f4_arg2 ) then
-			CoD.ZombieUtility.ShowZMLoadoutPreviewPrivate( f4_arg2 )
+	f1_arg0:AddButtonCallbackFunction( DirectorDraftSelectLoadout, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.DirectorUtility.ShowDirectorPrivate( element, controller ) then
+			CoD.ZombieUtility.ShowZMLoadoutPreviewPrivate( controller )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
-		elseif CoD.DirectorUtility.ShowDirectorPublic( f4_arg2 ) then
-			CoD.ZombieUtility.ShowZMLoadoutPreviewPublic( f4_arg2 )
+		elseif CoD.DirectorUtility.ShowDirectorPublic( controller ) then
+			CoD.ZombieUtility.ShowZMLoadoutPreviewPublic( controller )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
-		elseif CoD.DirectorUtility.ShowDirectorCustom( f4_arg0, f4_arg2 ) then
-			DataSourceHelperRecreate( f4_arg2, "DirectorCharacterButtonZMList" )
-			CoD.ZombieUtility.ShowZMLoadoutPreviewCustom( f4_arg2 )
+		elseif CoD.DirectorUtility.ShowDirectorCustom( element, controller ) then
+			DataSourceHelperRecreate( controller, "DirectorCharacterButtonZMList" )
+			CoD.ZombieUtility.ShowZMLoadoutPreviewCustom( controller )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		if CoD.DirectorUtility.ShowDirectorPrivate( f5_arg0, f5_arg2 ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2CD058C9967F620, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.DirectorUtility.ShowDirectorPrivate( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select_loadout", nil, nil )
 			return true
-		elseif CoD.DirectorUtility.ShowDirectorPublic( f5_arg2 ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2CD058C9967F620, nil, nil )
+		elseif CoD.DirectorUtility.ShowDirectorPublic( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select_loadout", nil, nil )
 			return true
-		elseif CoD.DirectorUtility.ShowDirectorCustom( f5_arg0, f5_arg2 ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2CD058C9967F620, nil, nil )
+		elseif CoD.DirectorUtility.ShowDirectorCustom( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select_loadout", nil, nil )
 			return true
 		else
 			return false

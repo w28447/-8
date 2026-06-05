@@ -23,7 +23,7 @@ CoD.StickerSetFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local emblemListBg2 = LUI.UIImage.new( 0, 0, 17.5, 1278.5, 0, 0, 81, 926 )
 	emblemListBg2:setScale( 0.77, 0.77 )
-	emblemListBg2:setImage( RegisterImage( 0xCE384B31419E220 ) )
+	emblemListBg2:setImage( RegisterImage( "uie_ui_menu_emblem_empty_bg" ) )
 	emblemListBg2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	emblemListBg2:setShaderVector( 0, 0, 0, 0, 0 )
 	emblemListBg2:setupNineSliceShader( 212, 212 )
@@ -92,38 +92,38 @@ CoD.StickerSetFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f11_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( stickerSetList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		if IsLive() and CoD.ModelUtility.IsSelfModelValueEqualTo( f12_arg0, f12_arg2, "isNonClickableEmblem", 0 ) and not IsElementInState( f12_arg0, "BMClassified" ) and CoD.CraftUtility.Emblems_CanEnterEmblemEditor( f12_arg0, f12_arg2 ) and not CraftItemIsReadOnly( f12_arg0, f12_arg2 ) and not SelectingGroupEmblem( f12_arg2 ) and CoD.CraftUtility.EmblemEditor_IsEditor( self, f12_arg1 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f12_arg0, f12_arg2, "trialLocked" ) then
-			OpenEmblemEditor( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
+	f1_arg0:AddButtonCallbackFunction( stickerSetList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLive() and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and not IsElementInState( element, "BMClassified" ) and CoD.CraftUtility.Emblems_CanEnterEmblemEditor( element, controller ) and not CraftItemIsReadOnly( element, controller ) and not SelectingGroupEmblem( controller ) and CoD.CraftUtility.EmblemEditor_IsEditor( self, menu ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) then
+			OpenEmblemEditor( element, menu, controller, model )
 			return true
-		elseif CoD.CraftUtility.Emblem_IsOccupied( f12_arg0, f12_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f12_arg0, f12_arg2, "isNonClickableEmblem", 0 ) and not CoD.CraftUtility.EmblemEditor_IsEditor( self, f12_arg1 ) and CoD.ModelUtility.IsSelfModelValueTrue( f12_arg0, f12_arg2, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f12_arg0, f12_arg2, "trialLocked" ) and not MenuPropertyIsTrue( f12_arg1, "_selectGroupEmblem" ) then
-			CoD.CraftUtility.EmblemSelect_SetAsEmblem( self, f12_arg0, f12_arg2 )
-			UpdateSelfState( self, f12_arg2 )
+		elseif CoD.CraftUtility.Emblem_IsOccupied( element, controller ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and not CoD.CraftUtility.EmblemEditor_IsEditor( self, menu ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) and not MenuPropertyIsTrue( menu, "_selectGroupEmblem" ) then
+			CoD.CraftUtility.EmblemSelect_SetAsEmblem( self, element, controller )
+			UpdateSelfState( self, controller )
 			PlaySoundAlias( "cac_equipment_add" )
 			return true
-		elseif CoD.CraftUtility.Emblem_IsOccupied( f12_arg0, f12_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f12_arg0, f12_arg2, "isNonClickableEmblem", 0 ) and not CoD.CraftUtility.EmblemEditor_IsEditor( self, f12_arg1 ) and CoD.ModelUtility.IsSelfModelValueTrue( f12_arg0, f12_arg2, "owned" ) and MenuPropertyIsTrue( f12_arg1, "_selectGroupEmblem" ) then
-			GoBack( self, f12_arg2 )
-			UpdateSelfState( self, f12_arg2 )
+		elseif CoD.CraftUtility.Emblem_IsOccupied( element, controller ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and not CoD.CraftUtility.EmblemEditor_IsEditor( self, menu ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) and MenuPropertyIsTrue( menu, "_selectGroupEmblem" ) then
+			GoBack( self, controller )
+			UpdateSelfState( self, controller )
 			PlaySoundAlias( "cac_equipment_add" )
 			return true
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		if IsLive() and CoD.ModelUtility.IsSelfModelValueEqualTo( f13_arg0, f13_arg2, "isNonClickableEmblem", 0 ) and not IsElementInState( f13_arg0, "BMClassified" ) and CoD.CraftUtility.Emblems_CanEnterEmblemEditor( f13_arg0, f13_arg2 ) and not CraftItemIsReadOnly( f13_arg0, f13_arg2 ) and not SelectingGroupEmblem( f13_arg2 ) and CoD.CraftUtility.EmblemEditor_IsEditor( self, f13_arg1 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "trialLocked" ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/edit_emblem", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLive() and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and not IsElementInState( element, "BMClassified" ) and CoD.CraftUtility.Emblems_CanEnterEmblemEditor( element, controller ) and not CraftItemIsReadOnly( element, controller ) and not SelectingGroupEmblem( controller ) and CoD.CraftUtility.EmblemEditor_IsEditor( self, menu ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/edit_emblem", nil, "ui_confirm" )
 			return true
-		elseif CoD.CraftUtility.Emblem_IsOccupied( f13_arg0, f13_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f13_arg0, f13_arg2, "isNonClickableEmblem", 0 ) and not CoD.CraftUtility.EmblemEditor_IsEditor( self, f13_arg1 ) and CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "trialLocked" ) and not MenuPropertyIsTrue( f13_arg1, "_selectGroupEmblem" ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xA24F9854A60C871, nil, "ui_confirm" )
+		elseif CoD.CraftUtility.Emblem_IsOccupied( element, controller ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and not CoD.CraftUtility.EmblemEditor_IsEditor( self, menu ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) and not MenuPropertyIsTrue( menu, "_selectGroupEmblem" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0xA24F9854A60C871, nil, "ui_confirm" )
 			return true
-		elseif CoD.CraftUtility.Emblem_IsOccupied( f13_arg0, f13_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f13_arg0, f13_arg2, "isNonClickableEmblem", 0 ) and not CoD.CraftUtility.EmblemEditor_IsEditor( self, f13_arg1 ) and CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "owned" ) and MenuPropertyIsTrue( f13_arg1, "_selectGroupEmblem" ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif CoD.CraftUtility.Emblem_IsOccupied( element, controller ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and not CoD.CraftUtility.EmblemEditor_IsEditor( self, menu ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) and MenuPropertyIsTrue( menu, "_selectGroupEmblem" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	stickerSetList:AddContextualMenuAction( f1_arg0, f1_arg1, 0x8ADA48E694BFE2C, function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
+	stickerSetList:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/delete", function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
 		if CoD.CraftUtility.Emblem_IsOccupied( f14_arg0, f14_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f14_arg0, f14_arg2, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( f14_arg2 ) and not SelectingGroupEmblem( f14_arg2 ) then
 			return function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
 				CoD.CraftUtility.EmblemClear( self, f15_arg0, f15_arg2, "", f15_arg1 )
@@ -158,7 +158,7 @@ CoD.StickerSetFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	DotLineTop = LUI.UIImage.new( 0.5, 0.5, -799.5, 174.5, 0, 0, 161, 165 )
 	DotLineTop:setAlpha( 0.4 )
-	DotLineTop:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	DotLineTop:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	DotLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	DotLineTop:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( DotLineTop )
@@ -166,7 +166,7 @@ CoD.StickerSetFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	DotLineBottom = LUI.UIImage.new( 0.5, 0.5, -799.5, 174.5, 0, 0, 859, 863 )
 	DotLineBottom:setAlpha( 0.4 )
-	DotLineBottom:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	DotLineBottom:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	DotLineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	DotLineBottom:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( DotLineBottom )

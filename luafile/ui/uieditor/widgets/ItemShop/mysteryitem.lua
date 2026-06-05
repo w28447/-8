@@ -12,13 +12,13 @@ CoD.MysteryItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local OfferCard = LUI.UIImage.new( 0.5, 0.5, -130, 130, 0.5, 0.5, -266, 266 )
-	OfferCard:setImage( RegisterImage( 0x93F4121FAEF5A15 ) )
+	OfferCard:setImage( RegisterImage( "uie_ui_menu_mtx_card_offer" ) )
 	self:addElement( OfferCard )
 	self.OfferCard = OfferCard
 	
 	local RightPageOver = CoD.BumperButtonWithKeyMouseNoFocus.new( f1_arg0, f1_arg1, 0.5, 0.5, -33.5, 33.5, 0, 0, 436.5, 471.5 )
 	RightPageOver:setScale( 0.8, 0.8 )
-	RightPageOver.KeyMouseImage:setImage( RegisterImage( 0x49AC5C845C7E582 ) )
+	RightPageOver.KeyMouseImage:setImage( RegisterImage( "uie_bumperright" ) )
 	RightPageOver:subscribeToGlobalModel( f1_arg1, "Controller", "primary_button_image", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -29,7 +29,7 @@ CoD.MysteryItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	self.RightPageOver = RightPageOver
 	
 	local RevealOfferText = LUI.UIText.new( 0.5, 0.5, -112.5, 112.5, 0, 0, 417, 437 )
-	RevealOfferText:setText( LocalizeToUpperString( 0xF8C1DD086470892 ) )
+	RevealOfferText:setText( LocalizeToUpperString( "menu/reveal" ) )
 	RevealOfferText:setTTF( "ttmussels_demibold" )
 	RevealOfferText:setLetterSpacing( 2 )
 	RevealOfferText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

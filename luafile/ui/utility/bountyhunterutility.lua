@@ -15,7 +15,7 @@ DataSources.BountyHunterWeaponGroups = ListHelper_SetupDataSource( "BountyHunter
 		end
 		local f1_local5 = function ( f2_arg0, f2_arg1 )
 			for f2_local3, f2_local4 in ipairs( f2_arg0 ) do
-				if f2_local4.itemGroup ~= Enum.itemGroup_t[0x6F7EF424C78D2F9] then
+				if f2_local4.itemGroup ~= Enum.itemGroup_t.itemgroup_special then
 					table.insert( f1_local0, {
 						models = {
 							name = f2_local4.name,
@@ -111,7 +111,7 @@ CoD.BountyHunterUtility.SetupAttachmentDataSource = function ( f6_arg0, f6_arg1,
 				end
 				f6_local18.trackTier = f6_local16
 				f6_local18.packageType = f6_local3.packageType .. "_attachment_" .. f6_local18.trackTier
-				f6_local18.buyCost = f6_local17[0x959F675B70A2223] * f6_local2
+				f6_local18.buyCost = f6_local17.purchasecost * f6_local2
 				f6_local18.packageID = f6_local3.packageID
 				f6_local14 = f6_arg1.menu:getModel()
 				f6_local18.trackModel = f6_local14[f6_local3.packageType .. "AttachmentTrack"]
@@ -152,7 +152,7 @@ CoD.BountyHunterUtility.GetBountyHunterPackageTable = function ()
 				local f10_local8 = nil
 				local f10_local9 = {}
 				for f10_local13, f10_local14 in pairs( f10_local17.packageitems ) do
-					local f10_local15 = CoD.CACUtility.GetUnlockableItemInfoByAssetHash( f10_local14[0x841A0C596D6F426], f10_local1 )
+					local f10_local15 = CoD.CACUtility.GetUnlockableItemInfoByAssetHash( f10_local14.item, f10_local1 )
 					if f10_local15 then
 						if not f10_local8 then
 							f10_local8 = f10_local15.itemGroup
@@ -160,7 +160,7 @@ CoD.BountyHunterUtility.GetBountyHunterPackageTable = function ()
 						table.insert( f10_local9, f10_local15 )
 					end
 					if LUI.DEV then
-						Engine.PrintError( Enum[0x7A63DCD561B0FA8][0x71E8B35DBF101D7], "LUI Error: Bounty Hunter Package contains a bad unlockable item: " .. tostring( f10_local14[0x841A0C596D6F426] ) .. " (check to make sure its included in this mode.\n" )
+						Engine.PrintError( Enum[0x7A63DCD561B0FA8][0x71E8B35DBF101D7], "LUI Error: Bounty Hunter Package contains a bad unlockable item: " .. tostring( f10_local14.item ) .. " (check to make sure its included in this mode.\n" )
 					end
 				end
 				if #f10_local9 > 0 then
@@ -168,7 +168,7 @@ CoD.BountyHunterUtility.GetBountyHunterPackageTable = function ()
 					f10_local11 = f10_local2
 					f10_local12 = {}
 					if not CoD.BountyHunterUtility.UsePurchaseCostMultiplier( f10_local8 ) then
-						f10_local13 = f10_local17[0x959F675B70A2223]
+						f10_local13 = f10_local17.purchasecost
 						if not f10_local13 then
 						
 						else
@@ -184,7 +184,7 @@ CoD.BountyHunterUtility.GetBountyHunterPackageTable = function ()
 							f10_local10( f10_local11, f10_local12 )
 						end
 					end
-					f10_local13 = f10_local17[0x959F675B70A2223] * f10_local3
+					f10_local13 = f10_local17.purchasecost * f10_local3
 				end
 			end
 		end
@@ -398,7 +398,7 @@ CoD.BountyHunterUtility.PerformValidatedBuy = function ( f23_arg0, f23_arg1, f23
 		end
 		if f23_local1 <= f23_local0 then
 			Engine.SendMenuResponse( f23_arg0, f23_arg1.menuName, "buy_package_" .. f23_arg3, f23_arg2.packageID:get() )
-			Engine.PlaySound( "uin_bh_purchase" )
+			Engine.playsound( "uin_bh_purchase" )
 			local f23_local2 = Engine.GetModelForController( f23_arg0 )
 			f23_local2.hudItems.bountyUndoValid:set( true )
 			return true

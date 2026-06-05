@@ -36,7 +36,7 @@ CoD.WZObituaryCalloutContainerDown.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local ContribText2 = LUI.UIText.new( 0, 0, 400, 709, 0, 0, -2, 28 )
 	ContribText2:setRGB( 1, 0.99, 0.99 )
 	ContribText2:setAlpha( 0.8 )
-	ContribText2:setText( LocalizeToUpperString( 0xFAE7EEADCD89015 ) )
+	ContribText2:setText( LocalizeToUpperString( "warzone/downed" ) )
 	ContribText2:setTTF( "ttmussels_regular" )
 	ContribText2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	ContribText2:setShaderVector( 0, 1, 0, 0, 0 )

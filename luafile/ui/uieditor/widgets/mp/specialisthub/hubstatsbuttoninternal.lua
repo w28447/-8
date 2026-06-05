@@ -161,7 +161,7 @@ CoD.HubStatsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local statsHeader = LUI.UIText.new( 0.5, 0.5, -187.5, 187.5, 0, 0, 7, 28 )
 	statsHeader:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	statsHeader:setAlpha( 0.9 )
-	statsHeader:setText( LocalizeToUpperString( 0xC36D7988533BA02 ) )
+	statsHeader:setText( LocalizeToUpperString( "menu/stats" ) )
 	statsHeader:setTTF( "ttmussels_regular" )
 	statsHeader:setLetterSpacing( 4 )
 	statsHeader:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -181,7 +181,7 @@ CoD.HubStatsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local TabBottomLine = LUI.UIImage.new( 0.5, 0.5, -196.5, 196.5, 0, 0, 34.5, 36.5 )
 	TabBottomLine:setRGB( 0.92, 0.92, 0.92 )
 	TabBottomLine:setAlpha( 0.2 )
-	TabBottomLine:setImage( RegisterImage( 0x5526CF3733E24C4 ) )
+	TabBottomLine:setImage( RegisterImage( "uie_ui_menu_common_tab_line_bottom" ) )
 	TabBottomLine:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TabBottomLine )
 	self.TabBottomLine = TabBottomLine

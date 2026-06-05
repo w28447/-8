@@ -22,7 +22,7 @@ CoD.DupeIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local Contraband = LUI.UIImage.new( 0, 0, 0, 40, 0, 0, 0, 20 )
 	Contraband:setAlpha( 0 )
-	Contraband:setImage( RegisterImage( 0x3AFA9E5CE99FEDF ) )
+	Contraband:setImage( RegisterImage( "uie_ui_icon_blackmarket_contraband_tier" ) )
 	self:addElement( Contraband )
 	self.Contraband = Contraband
 	
@@ -44,8 +44,8 @@ CoD.DupeIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 			condition = function ( menu, element, event )
 				local f4_local0 = CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, f1_arg1, "lootType", LuaEnum.LOOT_TYPE.CONTRABAND )
 				if f4_local0 then
-					if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemName", 0x0 ) then
-						f4_local0 = not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemName", 0x37934F15B706913 )
+					if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemName", "" ) then
+						f4_local0 = not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemName", "contraband" )
 					else
 						f4_local0 = false
 					end

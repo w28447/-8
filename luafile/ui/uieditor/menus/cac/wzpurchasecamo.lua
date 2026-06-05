@@ -85,27 +85,27 @@ LUI.createMenu.WZPurchaseCamo = function ( f1_arg0, f1_arg1 )
 	local AccentLineTop = LUI.UIImage.new( 0.5, 0.5, -916, -368, 0.5, 0.5, 121, 141 )
 	AccentLineTop:setRGB( 0.5, 0.85, 1 )
 	AccentLineTop:setAlpha( 0.08 )
-	AccentLineTop:setImage( RegisterImage( 0x86466DCA17566C6 ) )
+	AccentLineTop:setImage( RegisterImage( "uie_ui_menu_common_line_accent01" ) )
 	self:addElement( AccentLineTop )
 	self.AccentLineTop = AccentLineTop
 	
 	local AccentLineBottom = LUI.UIImage.new( 0.5, 0.5, -916, -368, 0.5, 0.5, 173, 193 )
 	AccentLineBottom:setRGB( 0.5, 0.85, 1 )
 	AccentLineBottom:setAlpha( 0.08 )
-	AccentLineBottom:setImage( RegisterImage( 0x86466DCA17566C6 ) )
+	AccentLineBottom:setImage( RegisterImage( "uie_ui_menu_common_line_accent01" ) )
 	self:addElement( AccentLineBottom )
 	self.AccentLineBottom = AccentLineBottom
 	
 	local BracketRight = LUI.UIImage.new( 0.5, 0.5, -383, -359, 0.5, 0.5, 121, 193 )
 	BracketRight:setRGB( 0.79, 0.94, 1 )
-	BracketRight:setImage( RegisterImage( 0xE1C1C55D18A0A1B ) )
+	BracketRight:setImage( RegisterImage( "uie_ui_menu_common_bracket01" ) )
 	self:addElement( BracketRight )
 	self.BracketRight = BracketRight
 	
 	local BracketLeft = LUI.UIImage.new( 0.5, 0.5, -926, -902, 0.5, 0.5, 121, 193 )
 	BracketLeft:setRGB( 0.79, 0.94, 1 )
 	BracketLeft:setYRot( 180 )
-	BracketLeft:setImage( RegisterImage( 0xE1C1C55D18A0A1B ) )
+	BracketLeft:setImage( RegisterImage( "uie_ui_menu_common_bracket01" ) )
 	self:addElement( BracketLeft )
 	self.BracketLeft = BracketLeft
 	
@@ -130,7 +130,7 @@ LUI.createMenu.WZPurchaseCamo = function ( f1_arg0, f1_arg1 )
 	
 	local Purchase = LUI.UIText.new( 0.5, 0.5, -960, -330, 0.5, 0.5, 104, 124 )
 	Purchase:setRGB( 0.82, 0.95, 1 )
-	Purchase:setText( LocalizeToUpperString( 0x1A06466EC351FA7 ) )
+	Purchase:setText( LocalizeToUpperString( "menu/unlock" ) )
 	Purchase:setTTF( "ttmussels_regular" )
 	Purchase:setLetterSpacing( 3 )
 	Purchase:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -174,11 +174,11 @@ LUI.createMenu.WZPurchaseCamo = function ( f1_arg0, f1_arg1 )
 	
 	local f1_local18 = nil
 	self.CommonIdentityWidgetStreamlinedC = LUI.UIElement.createFake()
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		GoBack( self, f6_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	self.__on_menuOpened_self = function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )

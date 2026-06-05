@@ -27,7 +27,7 @@ CoD.GameEndScoreTitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local MatchInfo = LUI.UIText.new( 0.5, 0.5, -316.5, 312.5, 0, 0, 26.5, 71.5 )
 	MatchInfo:setRGB( 0.92, 0.89, 0.72 )
-	MatchInfo:setText( Engine[0xF9F1239CFD921FE]( 0xF72C8CF61961FB2 ) )
+	MatchInfo:setText( Engine[0xF9F1239CFD921FE]( "mp/round_win_caps" ) )
 	MatchInfo:setTTF( "ttmussels_demibold" )
 	MatchInfo:setLetterSpacing( 24 )
 	MatchInfo:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -56,7 +56,7 @@ CoD.GameEndScoreTitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	triangleR:setRGB( 0, 0, 0 )
 	triangleR:setAlpha( 0 )
 	triangleR:setZRot( 90 )
-	triangleR:setImage( RegisterImage( 0x1226A0CC6137EEE ) )
+	triangleR:setImage( RegisterImage( "uie_ui_hud_common_triangle" ) )
 	self:addElement( triangleR )
 	self.triangleR = triangleR
 	
@@ -64,7 +64,7 @@ CoD.GameEndScoreTitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	triangleL:setRGB( 0, 0, 0 )
 	triangleL:setAlpha( 0 )
 	triangleL:setZRot( 90 )
-	triangleL:setImage( RegisterImage( 0x1226A0CC6137EEE ) )
+	triangleL:setImage( RegisterImage( "uie_ui_hud_common_triangle" ) )
 	self:addElement( triangleL )
 	self.triangleL = triangleL
 	

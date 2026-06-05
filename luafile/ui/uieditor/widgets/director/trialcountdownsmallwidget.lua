@@ -31,7 +31,7 @@ CoD.TrialCountdownSmallWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.TrialWidget = TrialWidget
 	
 	local TrialText = LUI.UIText.new( 0, 0, 42, 238, 0, 0, 4.5, 22.5 )
-	TrialText:setText( LocalizeToUpperString( 0xF16F4088C060F3A ) )
+	TrialText:setText( LocalizeToUpperString( "menu/trial_version_caps" ) )
 	TrialText:setTTF( "ttmussels_demibold" )
 	TrialText:setLetterSpacing( 2 )
 	TrialText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

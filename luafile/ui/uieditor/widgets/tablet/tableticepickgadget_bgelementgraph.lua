@@ -10,7 +10,7 @@ CoD.TabletIcePickGadget_BgElementGraph.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local Graph02 = LUI.UIImage.new( 0, 0, 11, 211, 0, 0, 2, 26 )
 	Graph02:setImage( RegisterImage( 0xFEBAC86388E63B7 ) )
-	Graph02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x84B5D1E2B428AE3 ) )
+	Graph02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_animated" ) )
 	Graph02:setShaderVector( 0, 0, 0, 0, 0 )
 	Graph02:setShaderVector( 1, 1, 1, 0, 0 )
 	Graph02:setShaderVector( 2, 0, 0, 0, 0 )
@@ -21,7 +21,7 @@ CoD.TabletIcePickGadget_BgElementGraph.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local Graph02Add = LUI.UIImage.new( 0, 0, 11, 211, 0, 0, 2, 26 )
 	Graph02Add:setImage( RegisterImage( 0xFEBAC86388E63B7 ) )
-	Graph02Add:setMaterial( LUI.UIImage.GetCachedMaterial( 0x84B5D1E2B428AE3 ) )
+	Graph02Add:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_animated" ) )
 	Graph02Add:setShaderVector( 0, 0, 0, 0, 0 )
 	Graph02Add:setShaderVector( 1, 1, 1, 0, 0 )
 	Graph02Add:setShaderVector( 2, 0, 0, 0, 0 )
@@ -32,7 +32,7 @@ CoD.TabletIcePickGadget_BgElementGraph.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local Graph02Add2 = LUI.UIImage.new( 0, 0, 11, 211, 0, 0, 2, 26 )
 	Graph02Add2:setImage( RegisterImage( 0xFEBAC86388E63B7 ) )
-	Graph02Add2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x84B5D1E2B428AE3 ) )
+	Graph02Add2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_animated" ) )
 	Graph02Add2:setShaderVector( 0, 0, 0, 0, 0 )
 	Graph02Add2:setShaderVector( 1, 1, 1, 0, 0 )
 	Graph02Add2:setShaderVector( 2, 0, 0, 0, 0 )
@@ -43,7 +43,7 @@ CoD.TabletIcePickGadget_BgElementGraph.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local Graph01 = LUI.UIImage.new( 0, 0, 11, 211, 0, 0, 2, 26 )
 	Graph01:setImage( RegisterImage( 0xFEBAD86388E656A ) )
-	Graph01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x84B5D1E2B428AE3 ) )
+	Graph01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_animated" ) )
 	Graph01:setShaderVector( 0, 0, 0, 0, 0 )
 	Graph01:setShaderVector( 1, 1, 1, 0, 0 )
 	Graph01:setShaderVector( 2, 0, 0, 0, 0 )
@@ -54,7 +54,7 @@ CoD.TabletIcePickGadget_BgElementGraph.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local Graph01Add = LUI.UIImage.new( 0, 0, 11, 211, 0, 0, 2, 26 )
 	Graph01Add:setImage( RegisterImage( 0xFEBAD86388E656A ) )
-	Graph01Add:setMaterial( LUI.UIImage.GetCachedMaterial( 0x84B5D1E2B428AE3 ) )
+	Graph01Add:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_animated" ) )
 	Graph01Add:setShaderVector( 0, 0, 0, 0, 0 )
 	Graph01Add:setShaderVector( 1, 1, 1, 0, 0 )
 	Graph01Add:setShaderVector( 2, 0, 0, 0, 0 )
@@ -65,7 +65,7 @@ CoD.TabletIcePickGadget_BgElementGraph.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local Graph01Add2 = LUI.UIImage.new( 0, 0, 11, 211, 0, 0, 2, 26 )
 	Graph01Add2:setImage( RegisterImage( 0xFEBAD86388E656A ) )
-	Graph01Add2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x84B5D1E2B428AE3 ) )
+	Graph01Add2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_animated" ) )
 	Graph01Add2:setShaderVector( 0, 0, 0, 0, 0 )
 	Graph01Add2:setShaderVector( 1, 1, 1, 0, 0 )
 	Graph01Add2:setShaderVector( 2, 0, 0, 0, 0 )

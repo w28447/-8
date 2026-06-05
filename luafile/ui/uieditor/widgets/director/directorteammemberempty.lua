@@ -47,7 +47,7 @@ CoD.DirectorTeamMemberEmpty.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local EmptyText = LUI.UIText.new( 0.03, 0.97, 0, 0, 0.37, 0.63, 0, 0 )
 	EmptyText:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	EmptyText:setAlpha( 0.9 )
-	EmptyText:setText( Engine[0xF9F1239CFD921FE]( 0x6ADB318F8178FC ) )
+	EmptyText:setText( Engine[0xF9F1239CFD921FE]( "menu/empty_caps" ) )
 	EmptyText:setTTF( "ttmussels_regular" )
 	EmptyText:setLetterSpacing( 10 )
 	EmptyText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -59,7 +59,7 @@ CoD.DirectorTeamMemberEmpty.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	ButtonAddPlus = LUI.UIImage.new( 1, 1, -64, -20, 0.5, 0.5, -22, 22 )
 	ButtonAddPlus:setAlpha( 0 )
-	ButtonAddPlus:setImage( RegisterImage( 0x5C627FDA784DE0D ) )
+	ButtonAddPlus:setImage( RegisterImage( "uie_ui_menu_cac_button_add_plus" ) )
 	self:addElement( ButtonAddPlus )
 	self.ButtonAddPlus = ButtonAddPlus
 	
@@ -67,7 +67,7 @@ CoD.DirectorTeamMemberEmpty.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	ButtonAddPlusHighlighted = LUI.UIImage.new( 1, 1, -64, -20, 0.5, 0.5, -22, 22 )
 	ButtonAddPlusHighlighted:setAlpha( 0 )
-	ButtonAddPlusHighlighted:setImage( RegisterImage( 0x63E82F3B2442EBB ) )
+	ButtonAddPlusHighlighted:setImage( RegisterImage( "uie_ui_menu_cac_button_add_plus_highlighted" ) )
 	ButtonAddPlusHighlighted:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ButtonAddPlusHighlighted )
 	self.ButtonAddPlusHighlighted = ButtonAddPlusHighlighted

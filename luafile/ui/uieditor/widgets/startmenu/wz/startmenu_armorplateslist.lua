@@ -190,226 +190,226 @@ CoD.StartMenu_ArmorPlatesList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x4D2505E19049444] )
 		return f20_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], "ui_confirm", function ( f21_arg0, f21_arg1, f21_arg2, f21_arg3 )
-		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f21_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( f21_arg2, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f21_arg0, f21_arg2, "castTime", 1 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f21_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f21_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f21_arg2 ) then
-			CoD.WZUtility.SendInventoryEquipNotify( f21_arg2, f21_arg0, f21_arg1, false )
+	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], "ui_confirm", function ( element, menu, controller, model )
+		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( controller, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 1 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.WZUtility.SendInventoryEquipNotify( controller, element, menu, false )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f21_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f21_arg0, f21_arg2, "castTime", 1 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f21_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f21_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f21_arg2 ) then
-			CoD.WZUtility.SendInventoryEquipNotify( f21_arg2, f21_arg0, f21_arg1, false )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 1 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.WZUtility.SendInventoryEquipNotify( controller, element, menu, false )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f21_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( f21_arg2, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f21_arg0, f21_arg2, "castTime", 2 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f21_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f21_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f21_arg2 ) then
-			CoD.WZUtility.SendInventoryEquipNotify( f21_arg2, f21_arg0, f21_arg1, false )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( controller, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 2 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.WZUtility.SendInventoryEquipNotify( controller, element, menu, false )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f21_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f21_arg0, f21_arg2, "castTime", 2 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f21_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f21_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f21_arg2 ) then
-			CoD.WZUtility.SendInventoryEquipNotify( f21_arg2, f21_arg0, f21_arg1, false )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 2 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.WZUtility.SendInventoryEquipNotify( controller, element, menu, false )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f21_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( f21_arg2, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f21_arg0, f21_arg2, "castTime", 3 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f21_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f21_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f21_arg2 ) then
-			CoD.WZUtility.SendInventoryEquipNotify( f21_arg2, f21_arg0, f21_arg1, false )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( controller, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 3 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.WZUtility.SendInventoryEquipNotify( controller, element, menu, false )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f21_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f21_arg0, f21_arg2, "castTime", 3 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f21_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f21_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f21_arg2 ) then
-			CoD.WZUtility.SendInventoryEquipNotify( f21_arg2, f21_arg0, f21_arg1, false )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 3 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.WZUtility.SendInventoryEquipNotify( controller, element, menu, false )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f21_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( f21_arg2, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f21_arg0, f21_arg2, "castTime", 4 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f21_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f21_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f21_arg2 ) then
-			CoD.WZUtility.SendInventoryEquipNotify( f21_arg2, f21_arg0, f21_arg1, false )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( controller, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 4 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.WZUtility.SendInventoryEquipNotify( controller, element, menu, false )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f21_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f21_arg0, f21_arg2, "castTime", 4 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f21_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f21_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f21_arg2 ) then
-			CoD.WZUtility.SendInventoryEquipNotify( f21_arg2, f21_arg0, f21_arg1, false )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 4 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.WZUtility.SendInventoryEquipNotify( controller, element, menu, false )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f21_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( f21_arg2, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f21_arg0, f21_arg2, "castTime", 5 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f21_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f21_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f21_arg2 ) then
-			CoD.WZUtility.SendInventoryEquipNotify( f21_arg2, f21_arg0, f21_arg1, false )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( controller, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 5 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.WZUtility.SendInventoryEquipNotify( controller, element, menu, false )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f21_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f21_arg0, f21_arg2, "castTime", 5 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f21_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f21_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f21_arg2 ) then
-			CoD.WZUtility.SendInventoryEquipNotify( f21_arg2, f21_arg0, f21_arg1, false )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 5 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.WZUtility.SendInventoryEquipNotify( controller, element, menu, false )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f21_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( f21_arg2, 0xEA01DCD66EB31BC ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f21_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f21_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f21_arg2 ) then
-			CoD.WZUtility.SendInventoryEquipNotify( f21_arg2, f21_arg0, f21_arg1, false )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( controller, 0xEA01DCD66EB31BC ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.WZUtility.SendInventoryEquipNotify( controller, element, menu, false )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f21_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f21_arg0, f21_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f21_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f21_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f21_arg2 ) then
-			CoD.WZUtility.SendInventoryEquipNotify( f21_arg2, f21_arg0, f21_arg1, false )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.WZUtility.SendInventoryEquipNotify( controller, element, menu, false )
 			return true
 		else
 			
 		end
-	end, function ( f22_arg0, f22_arg1, f22_arg2 )
-		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f22_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( f22_arg2, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f22_arg0, f22_arg2, "castTime", 1 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f22_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f22_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f22_arg2 ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x2C27E2320C64A74, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 500 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( controller, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 1 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "wz/repair_armor", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 500 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f22_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f22_arg0, f22_arg2, "castTime", 1 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f22_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f22_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f22_arg2 ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x2C27E2320C64A74, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 1000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 1 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "wz/repair_armor", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 1000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f22_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( f22_arg2, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f22_arg0, f22_arg2, "castTime", 2 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f22_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f22_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f22_arg2 ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x2C27E2320C64A74, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 1000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( controller, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 2 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "wz/repair_armor", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 1000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f22_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f22_arg0, f22_arg2, "castTime", 2 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f22_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f22_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f22_arg2 ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x2C27E2320C64A74, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 2000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 2 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "wz/repair_armor", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 2000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f22_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( f22_arg2, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f22_arg0, f22_arg2, "castTime", 3 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f22_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f22_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f22_arg2 ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x2C27E2320C64A74, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 1500 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( controller, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 3 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "wz/repair_armor", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 1500 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f22_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f22_arg0, f22_arg2, "castTime", 3 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f22_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f22_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f22_arg2 ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x2C27E2320C64A74, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 3000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 3 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "wz/repair_armor", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 3000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f22_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( f22_arg2, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f22_arg0, f22_arg2, "castTime", 4 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f22_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f22_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f22_arg2 ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x2C27E2320C64A74, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 2000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( controller, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 4 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "wz/repair_armor", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 2000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f22_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f22_arg0, f22_arg2, "castTime", 4 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f22_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f22_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f22_arg2 ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x2C27E2320C64A74, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 4000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 4 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "wz/repair_armor", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 4000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f22_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( f22_arg2, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f22_arg0, f22_arg2, "castTime", 5 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f22_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f22_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f22_arg2 ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x2C27E2320C64A74, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 2500 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( controller, 0xEA01DCD66EB31BC ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 5 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "wz/repair_armor", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 2500 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f22_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( f22_arg0, f22_arg2, "castTime", 5 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f22_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f22_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f22_arg2 ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x2C27E2320C64A74, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 5000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.ModelUtility.IsSelfModelValueLessThanOrEqualTo( element, controller, "castTime", 5 ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "wz/repair_armor", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 5000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f22_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( f22_arg2, 0xEA01DCD66EB31BC ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f22_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f22_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f22_arg2 ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x2C27E2320C64A74, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 3000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and CoD.HUDUtility.PlayerHasPerk( controller, 0xEA01DCD66EB31BC ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "wz/repair_armor", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 3000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
 			return true
-		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f22_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f22_arg0, f22_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f22_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f22_arg2 ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( f22_arg2 ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x2C27E2320C64A74, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 6000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
+		elseif not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) and not CoD.WZUtility.CurrentlyIsDriverOrGunner( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "wz/repair_armor", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 6000 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
-		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f23_arg2 ) and not IsPC() and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f23_arg0, f23_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f23_arg0, f23_arg2, "stackCount", 1 ) then
-			CoD.WZUtility.SetupSplitCount( f23_arg2, f23_arg0 )
-			MenuHidesFreeCursor( f23_arg1, f23_arg2 )
-			SetElementState( self, self.InventorySplitter, f23_arg2, "Open" )
-			SetLoseFocusToElement( self, "List", f23_arg2 )
-			SetFocusToElement( self, "InventorySplitter", f23_arg2 )
+	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not IsPC() and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( element, controller, "stackCount", 1 ) then
+			CoD.WZUtility.SetupSplitCount( controller, element )
+			MenuHidesFreeCursor( menu, controller )
+			SetElementState( self, self.InventorySplitter, controller, "Open" )
+			SetLoseFocusToElement( self, "List", controller )
+			SetFocusToElement( self, "InventorySplitter", controller )
 			return true
-		elseif IsPC() and IsGamepad( f23_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f23_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f23_arg0, f23_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f23_arg0, f23_arg2, "stackCount", 1 ) then
-			CoD.WZUtility.OpenPCSplitterWidgetForElement( self, f23_arg1, f23_arg2, f23_arg0 )
+		elseif IsPC() and IsGamepad( controller ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( element, controller, "stackCount", 1 ) then
+			CoD.WZUtility.OpenPCSplitterWidgetForElement( self, menu, controller, element )
 			return true
-		elseif IsGamepad( f23_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f23_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f23_arg0, f23_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f23_arg0, f23_arg2, "stackCount", 0 ) then
-			CoD.WZUtility.SendInventoryDropNotify( f23_arg2, f23_arg0 )
+		elseif IsGamepad( controller ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( element, controller, "stackCount", 0 ) then
+			CoD.WZUtility.SendInventoryDropNotify( controller, element )
 			CoD.WZUtility.HackUpdateListDataSourceAfterDelay( self.List, true, false, true, "500" )
 			return true
-		elseif IsGamepad( f23_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f23_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f23_arg0, f23_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f23_arg0, f23_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.DISCARD ) then
-			CoD.WZUtility.SendInventoryDropNotify( f23_arg2, f23_arg0 )
+		elseif IsGamepad( controller ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.DISCARD ) then
+			CoD.WZUtility.SendInventoryDropNotify( controller, element )
 			CoD.WZUtility.HackUpdateListDataSourceAfterDelay( self.List, true, false, true, "500" )
 			return true
-		elseif IsGamepad( f23_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f23_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f23_arg0, f23_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f23_arg0, f23_arg2, "stackCount", 0 ) then
-			CoD.WZUtility.SendInventoryDropNotify( f23_arg2, f23_arg0 )
-			CoD.WZUtility.HackUpdateListDataSourceAfterDelay( self.List, true, false, true, "500" )
-			return true
-		else
-			
-		end
-	end, function ( f24_arg0, f24_arg1, f24_arg2 )
-		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f24_arg2 ) and not IsPC() and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f24_arg0, f24_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f24_arg0, f24_arg2, "stackCount", 1 ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xDCD547765767788, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
-			return true
-		elseif IsPC() and IsGamepad( f24_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f24_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f24_arg0, f24_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f24_arg0, f24_arg2, "stackCount", 1 ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xDCD547765767788, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
-			return true
-		elseif IsGamepad( f24_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f24_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f24_arg0, f24_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f24_arg0, f24_arg2, "stackCount", 0 ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
-			return true
-		elseif IsGamepad( f24_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f24_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f24_arg0, f24_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f24_arg0, f24_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.DISCARD ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x44DB3A08BE7FB92, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
-			return true
-		elseif IsGamepad( f24_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f24_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f24_arg0, f24_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f24_arg0, f24_arg2, "stackCount", 0 ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
-			return true
-		else
-			return false
-		end
-	end, false )
-	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0x22361E23588705A], "F", function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3 )
-		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f25_arg2 ) and IsMouseOrKeyboard( f25_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f25_arg0, f25_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f25_arg0, f25_arg2, "stackCount", 1 ) then
-			CoD.WZUtility.OpenPCSplitterWidgetForElement( self, f25_arg1, f25_arg2, f25_arg0 )
-			return true
-		else
-			
-		end
-	end, function ( f26_arg0, f26_arg1, f26_arg2 )
-		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f26_arg2 ) and IsMouseOrKeyboard( f26_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f26_arg0, f26_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f26_arg0, f26_arg2, "stackCount", 1 ) then
-			CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x22361E23588705A], 0xDCD547765767788, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "F" )
-			return true
-		else
-			return false
-		end
-	end, false )
-	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3 )
-		if IsMouseOrKeyboard( f27_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f27_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f27_arg0, f27_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f27_arg0, f27_arg2, "stackCount", 0 ) then
-			CoD.WZUtility.SendInventoryDropNotify( f27_arg2, f27_arg0 )
+		elseif IsGamepad( controller ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( element, controller, "stackCount", 0 ) then
+			CoD.WZUtility.SendInventoryDropNotify( controller, element )
 			CoD.WZUtility.HackUpdateListDataSourceAfterDelay( self.List, true, false, true, "500" )
 			return true
 		else
 			
 		end
-	end, function ( f28_arg0, f28_arg1, f28_arg2 )
-		if IsMouseOrKeyboard( f28_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f28_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f28_arg0, f28_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f28_arg0, f28_arg2, "stackCount", 0 ) then
-			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+	end, function ( element, menu, controller )
+		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not IsPC() and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( element, controller, "stackCount", 1 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "warzone/split", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+			return true
+		elseif IsPC() and IsGamepad( controller ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( element, controller, "stackCount", 1 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "warzone/split", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+			return true
+		elseif IsGamepad( controller ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( element, controller, "stackCount", 0 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+			return true
+		elseif IsGamepad( controller ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.DISCARD ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "warzone/discard", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+			return true
+		elseif IsGamepad( controller ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( element, controller, "stackCount", 0 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3] | Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "MOUSE1", function ( f29_arg0, f29_arg1, f29_arg2, f29_arg3 )
-		if IsMouseOrKeyboard( f29_arg2 ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( f29_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f29_arg0, f29_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f29_arg0, f29_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f29_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f29_arg2 ) then
-			CoD.WZUtility.SendInventoryConsumeNotify( f29_arg2, f29_arg0 )
+	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0x22361E23588705A], "F", function ( element, menu, controller, model )
+		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( element, controller, "stackCount", 1 ) then
+			CoD.WZUtility.OpenPCSplitterWidgetForElement( self, menu, controller, element )
 			return true
 		else
 			
 		end
-	end, function ( f30_arg0, f30_arg1, f30_arg2 )
-		if IsMouseOrKeyboard( f30_arg2 ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( f30_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f30_arg0, f30_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f30_arg0, f30_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f30_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f30_arg2 ) then
-			CoD.Menu.SetButtonLabel( f30_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x2C27E2320C64A74, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
+	end, function ( element, menu, controller )
+		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( element, controller, "stackCount", 1 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "warzone/split", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "F" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f31_arg0, f31_arg1, f31_arg2, f31_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f31_arg0, f31_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f31_arg0, f31_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f31_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f31_arg2 ) then
-			CoD.WZUtility.SendInventoryConsumeNotify( f31_arg2, f31_arg0 )
-			return true
-		else
-			
-		end
-	end, function ( f32_arg0, f32_arg1, f32_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f32_arg0, f32_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f32_arg0, f32_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f32_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f32_arg2 ) then
-			CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
-			return false
-		else
-			return false
-		end
-	end, false )
-	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "MOUSE3", function ( f33_arg0, f33_arg1, f33_arg2, f33_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f33_arg0, f33_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f33_arg0, f33_arg2, "stackCount", 1 ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( f33_arg2 ) and IsMouseOrKeyboard( f33_arg2 ) then
-			CoD.WZUtility.OpenPCSplitterWidgetForElement( self, f33_arg1, f33_arg2, f33_arg0 )
-			return true
-		else
-			
-		end
-	end, function ( f34_arg0, f34_arg1, f34_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f34_arg0, f34_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f34_arg0, f34_arg2, "stackCount", 1 ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( f34_arg2 ) and IsMouseOrKeyboard( f34_arg2 ) then
-			CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0xA86619565BE54DB], 0xDCD547765767788, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE3" )
-			return true
-		else
-			return false
-		end
-	end, false )
-	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0x4D2505E19049444], "MOUSE2", function ( f35_arg0, f35_arg1, f35_arg2, f35_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f35_arg0, f35_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f35_arg0, f35_arg2, "stackCount", 0 ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( f35_arg2 ) and IsMouseOrKeyboard( f35_arg2 ) then
-			CoD.WZUtility.SendInventoryDropNotify( f35_arg2, f35_arg0 )
+	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( element, controller, "stackCount", 0 ) then
+			CoD.WZUtility.SendInventoryDropNotify( controller, element )
 			CoD.WZUtility.HackUpdateListDataSourceAfterDelay( self.List, true, false, true, "500" )
 			return true
 		else
 			
 		end
-	end, function ( f36_arg0, f36_arg1, f36_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f36_arg0, f36_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f36_arg0, f36_arg2, "stackCount", 0 ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( f36_arg2 ) and IsMouseOrKeyboard( f36_arg2 ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x4D2505E19049444], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE2" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( element, controller, "stackCount", 0 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	List:AddContextualMenuAction( f1_arg0, f1_arg1, 0x2C27E2320C64A74, function ( f37_arg0, f37_arg1, f37_arg2, f37_arg3 )
+	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "MOUSE1", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) then
+			CoD.WZUtility.SendInventoryConsumeNotify( controller, element )
+			return true
+		else
+			
+		end
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "wz/repair_armor", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
+			return true
+		else
+			return false
+		end
+	end, false )
+	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) then
+			CoD.WZUtility.SendInventoryConsumeNotify( controller, element )
+			return true
+		else
+			
+		end
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
+			return false
+		else
+			return false
+		end
+	end, false )
+	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "MOUSE3", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( element, controller, "stackCount", 1 ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.WZUtility.OpenPCSplitterWidgetForElement( self, menu, controller, element )
+			return true
+		else
+			
+		end
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( element, controller, "stackCount", 1 ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xA86619565BE54DB], "warzone/split", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE3" )
+			return true
+		else
+			return false
+		end
+	end, false )
+	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0x4D2505E19049444], "MOUSE2", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( element, controller, "stackCount", 0 ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.WZUtility.SendInventoryDropNotify( controller, element )
+			CoD.WZUtility.HackUpdateListDataSourceAfterDelay( self.List, true, false, true, "500" )
+			return true
+		else
+			
+		end
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( element, controller, "stackCount", 0 ) and CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4D2505E19049444], "warzone/drop", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE2" )
+			return true
+		else
+			return false
+		end
+	end, false )
+	List:AddContextualMenuAction( f1_arg0, f1_arg1, "wz/repair_armor", function ( f37_arg0, f37_arg1, f37_arg2, f37_arg3 )
 		if not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f37_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f37_arg0, f37_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f37_arg0, f37_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f37_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f37_arg2 ) then
 			return function ( f38_arg0, f38_arg1, f38_arg2, f38_arg3 )
 				CoD.WZUtility.SendInventoryConsumeNotify( f38_arg2, f38_arg0 )
@@ -430,7 +430,7 @@ CoD.StartMenu_ArmorPlatesList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 			
 		end
 	end )
-	List:AddContextualMenuAction( f1_arg0, f1_arg1, 0xDCD547765767788, function ( f41_arg0, f41_arg1, f41_arg2, f41_arg3 )
+	List:AddContextualMenuAction( f1_arg0, f1_arg1, "warzone/split", function ( f41_arg0, f41_arg1, f41_arg2, f41_arg3 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f41_arg0, f41_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueGreaterThan( f41_arg0, f41_arg2, "stackCount", 1 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f41_arg2 ) then
 			return function ( f42_arg0, f42_arg1, f42_arg2, f42_arg3 )
 				CoD.WZUtility.OpenPCSplitterWidgetForElement( self, f42_arg1, f42_arg2, f42_arg0 )

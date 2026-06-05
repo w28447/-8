@@ -76,7 +76,7 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 	local HeaderFreeTeam = CoD.DirectorFixedWidthHeading.new( f1_local1, f1_arg0, 0.5, 0.5, -861, 0, 0, 0, 200, 230 )
 	HeaderFreeTeam:setAlpha( 0 )
 	HeaderFreeTeam.Label:setAlpha( 0 )
-	HeaderFreeTeam.Label:setText( LocalizeToUpperString( 0xC815AF97EE8C135 ) )
+	HeaderFreeTeam.Label:setText( LocalizeToUpperString( "mpui/allies" ) )
 	self:addElement( HeaderFreeTeam )
 	self.HeaderFreeTeam = HeaderFreeTeam
 	
@@ -161,52 +161,52 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f14_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( Team2Quads, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f15_arg2, f15_arg0 ) and IsGamepad( f15_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f15_arg2, f15_arg0 )
+	f1_local1:AddButtonCallbackFunction( Team2Quads, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f15_arg2, f15_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f15_arg2, f15_arg0 ) and IsGamepad( f15_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f15_arg2, f15_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f15_arg2, f15_arg0 ) and IsGamepad( f15_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f15_arg2, f15_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f15_arg2, f15_arg0 ) and IsMouseOrKeyboard( f15_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f15_arg2, f15_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f15_arg2, f15_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f15_arg2, f15_arg0 ) and IsMouseOrKeyboard( f15_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f15_arg2, f15_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f15_arg2, f15_arg0 ) and IsMouseOrKeyboard( f15_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f15_arg2, f15_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
 		else
 			
 		end
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f16_arg2, f16_arg0 ) and IsGamepad( f16_arg2 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/move", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f16_arg2, f16_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f16_arg2, f16_arg0 ) and IsGamepad( f16_arg2 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f16_arg2, f16_arg0 ) and IsGamepad( f16_arg2 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/add", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f16_arg2, f16_arg0 ) and IsMouseOrKeyboard( f16_arg2 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f16_arg2, f16_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f16_arg2, f16_arg0 ) and IsMouseOrKeyboard( f16_arg2 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f16_arg2, f16_arg0 ) and IsMouseOrKeyboard( f16_arg2 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -291,52 +291,52 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f29_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( Team2Duos, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f30_arg0, f30_arg1, f30_arg2, f30_arg3 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f30_arg2, f30_arg0 ) and IsGamepad( f30_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f30_arg2, f30_arg0 )
+	f1_local1:AddButtonCallbackFunction( Team2Duos, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f30_arg2, f30_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f30_arg2, f30_arg0 ) and IsGamepad( f30_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f30_arg2, f30_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f30_arg2, f30_arg0 ) and IsGamepad( f30_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f30_arg2, f30_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f30_arg2, f30_arg0 ) and IsMouseOrKeyboard( f30_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f30_arg2, f30_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f30_arg2, f30_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f30_arg2, f30_arg0 ) and IsMouseOrKeyboard( f30_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f30_arg2, f30_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f30_arg2, f30_arg0 ) and IsMouseOrKeyboard( f30_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f30_arg2, f30_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
 		else
 			
 		end
-	end, function ( f31_arg0, f31_arg1, f31_arg2 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f31_arg2, f31_arg0 ) and IsGamepad( f31_arg2 ) then
-			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/move", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f31_arg2, f31_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f31_arg2, f31_arg0 ) and IsGamepad( f31_arg2 ) then
-			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f31_arg2, f31_arg0 ) and IsGamepad( f31_arg2 ) then
-			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/add", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f31_arg2, f31_arg0 ) and IsMouseOrKeyboard( f31_arg2 ) then
-			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f31_arg2, f31_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f31_arg2, f31_arg0 ) and IsMouseOrKeyboard( f31_arg2 ) then
-			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f31_arg2, f31_arg0 ) and IsMouseOrKeyboard( f31_arg2 ) then
-			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -431,52 +431,52 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f44_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( Team1Quads, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f45_arg0, f45_arg1, f45_arg2, f45_arg3 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f45_arg2, f45_arg0 ) and IsGamepad( f45_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f45_arg2, f45_arg0 )
+	f1_local1:AddButtonCallbackFunction( Team1Quads, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f45_arg2, f45_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f45_arg2, f45_arg0 ) and IsGamepad( f45_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f45_arg2, f45_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f45_arg2, f45_arg0 ) and IsGamepad( f45_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f45_arg2, f45_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f45_arg2, f45_arg0 ) and IsMouseOrKeyboard( f45_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f45_arg2, f45_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f45_arg2, f45_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f45_arg2, f45_arg0 ) and IsMouseOrKeyboard( f45_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f45_arg2, f45_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f45_arg2, f45_arg0 ) and IsMouseOrKeyboard( f45_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f45_arg2, f45_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
 		else
 			
 		end
-	end, function ( f46_arg0, f46_arg1, f46_arg2 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f46_arg2, f46_arg0 ) and IsGamepad( f46_arg2 ) then
-			CoD.Menu.SetButtonLabel( f46_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/move", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f46_arg2, f46_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f46_arg2, f46_arg0 ) and IsGamepad( f46_arg2 ) then
-			CoD.Menu.SetButtonLabel( f46_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f46_arg2, f46_arg0 ) and IsGamepad( f46_arg2 ) then
-			CoD.Menu.SetButtonLabel( f46_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/add", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f46_arg2, f46_arg0 ) and IsMouseOrKeyboard( f46_arg2 ) then
-			CoD.Menu.SetButtonLabel( f46_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f46_arg2, f46_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f46_arg2, f46_arg0 ) and IsMouseOrKeyboard( f46_arg2 ) then
-			CoD.Menu.SetButtonLabel( f46_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f46_arg2, f46_arg0 ) and IsMouseOrKeyboard( f46_arg2 ) then
-			CoD.Menu.SetButtonLabel( f46_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -561,52 +561,52 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f59_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( Team1Duos, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f60_arg0, f60_arg1, f60_arg2, f60_arg3 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f60_arg2, f60_arg0 ) and IsGamepad( f60_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f60_arg2, f60_arg0 )
+	f1_local1:AddButtonCallbackFunction( Team1Duos, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f60_arg2, f60_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f60_arg2, f60_arg0 ) and IsGamepad( f60_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f60_arg2, f60_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f60_arg2, f60_arg0 ) and IsGamepad( f60_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f60_arg2, f60_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f60_arg2, f60_arg0 ) and IsMouseOrKeyboard( f60_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f60_arg2, f60_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f60_arg2, f60_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f60_arg2, f60_arg0 ) and IsMouseOrKeyboard( f60_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f60_arg2, f60_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f60_arg2, f60_arg0 ) and IsMouseOrKeyboard( f60_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f60_arg2, f60_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
 		else
 			
 		end
-	end, function ( f61_arg0, f61_arg1, f61_arg2 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f61_arg2, f61_arg0 ) and IsGamepad( f61_arg2 ) then
-			CoD.Menu.SetButtonLabel( f61_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/move", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f61_arg2, f61_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f61_arg2, f61_arg0 ) and IsGamepad( f61_arg2 ) then
-			CoD.Menu.SetButtonLabel( f61_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f61_arg2, f61_arg0 ) and IsGamepad( f61_arg2 ) then
-			CoD.Menu.SetButtonLabel( f61_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/add", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f61_arg2, f61_arg0 ) and IsMouseOrKeyboard( f61_arg2 ) then
-			CoD.Menu.SetButtonLabel( f61_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f61_arg2, f61_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f61_arg2, f61_arg0 ) and IsMouseOrKeyboard( f61_arg2 ) then
-			CoD.Menu.SetButtonLabel( f61_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f61_arg2, f61_arg0 ) and IsMouseOrKeyboard( f61_arg2 ) then
-			CoD.Menu.SetButtonLabel( f61_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -699,7 +699,7 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 	Team3Quads:setSpacing( 18 )
 	Team3Quads:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Team3Quads:setFilter( function ( f67_arg0 )
-		return f67_arg0.team:get() == Enum.team_t[0x51B2E92F4D8DAD7]
+		return f67_arg0.team:get() == Enum.team_t.team_three
 	end )
 	Team3Quads:setDataSource( "DirectorPartyListCustom" )
 	Team3Quads:appendEventHandler( "on_session_start", function ( f68_arg0, f68_arg1 )
@@ -766,52 +766,52 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f79_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( Team3Quads, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f80_arg0, f80_arg1, f80_arg2, f80_arg3 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f80_arg2, f80_arg0 ) and IsGamepad( f80_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f80_arg2, f80_arg0 )
+	f1_local1:AddButtonCallbackFunction( Team3Quads, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f80_arg2, f80_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f80_arg2, f80_arg0 ) and IsGamepad( f80_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f80_arg2, f80_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f80_arg2, f80_arg0 ) and IsGamepad( f80_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f80_arg2, f80_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f80_arg2, f80_arg0 ) and IsMouseOrKeyboard( f80_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f80_arg2, f80_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f80_arg2, f80_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f80_arg2, f80_arg0 ) and IsMouseOrKeyboard( f80_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f80_arg2, f80_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f80_arg2, f80_arg0 ) and IsMouseOrKeyboard( f80_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f80_arg2, f80_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
 		else
 			
 		end
-	end, function ( f81_arg0, f81_arg1, f81_arg2 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f81_arg2, f81_arg0 ) and IsGamepad( f81_arg2 ) then
-			CoD.Menu.SetButtonLabel( f81_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/move", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f81_arg2, f81_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f81_arg2, f81_arg0 ) and IsGamepad( f81_arg2 ) then
-			CoD.Menu.SetButtonLabel( f81_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f81_arg2, f81_arg0 ) and IsGamepad( f81_arg2 ) then
-			CoD.Menu.SetButtonLabel( f81_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/add", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f81_arg2, f81_arg0 ) and IsMouseOrKeyboard( f81_arg2 ) then
-			CoD.Menu.SetButtonLabel( f81_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f81_arg2, f81_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f81_arg2, f81_arg0 ) and IsMouseOrKeyboard( f81_arg2 ) then
-			CoD.Menu.SetButtonLabel( f81_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f81_arg2, f81_arg0 ) and IsMouseOrKeyboard( f81_arg2 ) then
-			CoD.Menu.SetButtonLabel( f81_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -829,7 +829,7 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 	Team3Duos:setSpacing( 18 )
 	Team3Duos:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Team3Duos:setFilter( function ( f82_arg0 )
-		return f82_arg0.team:get() == Enum.team_t[0x51B2E92F4D8DAD7]
+		return f82_arg0.team:get() == Enum.team_t.team_three
 	end )
 	Team3Duos:setDataSource( "DirectorPartyListCustom" )
 	Team3Duos:appendEventHandler( "on_session_start", function ( f83_arg0, f83_arg1 )
@@ -896,52 +896,52 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f94_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( Team3Duos, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f95_arg0, f95_arg1, f95_arg2, f95_arg3 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f95_arg2, f95_arg0 ) and IsGamepad( f95_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f95_arg2, f95_arg0 )
+	f1_local1:AddButtonCallbackFunction( Team3Duos, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f95_arg2, f95_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f95_arg2, f95_arg0 ) and IsGamepad( f95_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f95_arg2, f95_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f95_arg2, f95_arg0 ) and IsGamepad( f95_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f95_arg2, f95_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f95_arg2, f95_arg0 ) and IsMouseOrKeyboard( f95_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f95_arg2, f95_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f95_arg2, f95_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f95_arg2, f95_arg0 ) and IsMouseOrKeyboard( f95_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f95_arg2, f95_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f95_arg2, f95_arg0 ) and IsMouseOrKeyboard( f95_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f95_arg2, f95_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
 		else
 			
 		end
-	end, function ( f96_arg0, f96_arg1, f96_arg2 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f96_arg2, f96_arg0 ) and IsGamepad( f96_arg2 ) then
-			CoD.Menu.SetButtonLabel( f96_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/move", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f96_arg2, f96_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f96_arg2, f96_arg0 ) and IsGamepad( f96_arg2 ) then
-			CoD.Menu.SetButtonLabel( f96_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f96_arg2, f96_arg0 ) and IsGamepad( f96_arg2 ) then
-			CoD.Menu.SetButtonLabel( f96_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/add", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f96_arg2, f96_arg0 ) and IsMouseOrKeyboard( f96_arg2 ) then
-			CoD.Menu.SetButtonLabel( f96_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f96_arg2, f96_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f96_arg2, f96_arg0 ) and IsMouseOrKeyboard( f96_arg2 ) then
-			CoD.Menu.SetButtonLabel( f96_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f96_arg2, f96_arg0 ) and IsMouseOrKeyboard( f96_arg2 ) then
-			CoD.Menu.SetButtonLabel( f96_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -970,7 +970,7 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 	Team4:setSpacing( 18 )
 	Team4:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Team4:setFilter( function ( f97_arg0 )
-		return f97_arg0.team:get() == Enum.team_t[0x5CBEDB3D265E8F1]
+		return f97_arg0.team:get() == Enum.team_t.team_four
 	end )
 	Team4:setDataSource( "DirectorPartyListCustom" )
 	Team4:appendEventHandler( "on_session_start", function ( f98_arg0, f98_arg1 )
@@ -1037,52 +1037,52 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f109_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( Team4, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f110_arg0, f110_arg1, f110_arg2, f110_arg3 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f110_arg2, f110_arg0 ) and IsGamepad( f110_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f110_arg2, f110_arg0 )
+	f1_local1:AddButtonCallbackFunction( Team4, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f110_arg2, f110_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f110_arg2, f110_arg0 ) and IsGamepad( f110_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f110_arg2, f110_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f110_arg2, f110_arg0 ) and IsGamepad( f110_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f110_arg2, f110_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f110_arg2, f110_arg0 ) and IsMouseOrKeyboard( f110_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f110_arg2, f110_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f110_arg2, f110_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f110_arg2, f110_arg0 ) and IsMouseOrKeyboard( f110_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f110_arg2, f110_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f110_arg2, f110_arg0 ) and IsMouseOrKeyboard( f110_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f110_arg2, f110_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
 		else
 			
 		end
-	end, function ( f111_arg0, f111_arg1, f111_arg2 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f111_arg2, f111_arg0 ) and IsGamepad( f111_arg2 ) then
-			CoD.Menu.SetButtonLabel( f111_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/move", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f111_arg2, f111_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f111_arg2, f111_arg0 ) and IsGamepad( f111_arg2 ) then
-			CoD.Menu.SetButtonLabel( f111_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f111_arg2, f111_arg0 ) and IsGamepad( f111_arg2 ) then
-			CoD.Menu.SetButtonLabel( f111_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/add", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f111_arg2, f111_arg0 ) and IsMouseOrKeyboard( f111_arg2 ) then
-			CoD.Menu.SetButtonLabel( f111_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f111_arg2, f111_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f111_arg2, f111_arg0 ) and IsMouseOrKeyboard( f111_arg2 ) then
-			CoD.Menu.SetButtonLabel( f111_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f111_arg2, f111_arg0 ) and IsMouseOrKeyboard( f111_arg2 ) then
-			CoD.Menu.SetButtonLabel( f111_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -1112,7 +1112,7 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 	Team5:setSpacing( 18 )
 	Team5:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Team5:setFilter( function ( f112_arg0 )
-		return f112_arg0.team:get() == Enum.team_t[0x49554B3DA0DA3E1]
+		return f112_arg0.team:get() == Enum.team_t.team_five
 	end )
 	Team5:setDataSource( "DirectorPartyListCustom" )
 	Team5:appendEventHandler( "on_session_start", function ( f113_arg0, f113_arg1 )
@@ -1179,52 +1179,52 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f124_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( Team5, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f125_arg0, f125_arg1, f125_arg2, f125_arg3 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f125_arg2, f125_arg0 ) and IsGamepad( f125_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f125_arg2, f125_arg0 )
+	f1_local1:AddButtonCallbackFunction( Team5, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f125_arg2, f125_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f125_arg2, f125_arg0 ) and IsGamepad( f125_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f125_arg2, f125_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f125_arg2, f125_arg0 ) and IsGamepad( f125_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f125_arg2, f125_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f125_arg2, f125_arg0 ) and IsMouseOrKeyboard( f125_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f125_arg2, f125_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f125_arg2, f125_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f125_arg2, f125_arg0 ) and IsMouseOrKeyboard( f125_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f125_arg2, f125_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f125_arg2, f125_arg0 ) and IsMouseOrKeyboard( f125_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f125_arg2, f125_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
 		else
 			
 		end
-	end, function ( f126_arg0, f126_arg1, f126_arg2 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f126_arg2, f126_arg0 ) and IsGamepad( f126_arg2 ) then
-			CoD.Menu.SetButtonLabel( f126_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/move", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f126_arg2, f126_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f126_arg2, f126_arg0 ) and IsGamepad( f126_arg2 ) then
-			CoD.Menu.SetButtonLabel( f126_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f126_arg2, f126_arg0 ) and IsGamepad( f126_arg2 ) then
-			CoD.Menu.SetButtonLabel( f126_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/add", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f126_arg2, f126_arg0 ) and IsMouseOrKeyboard( f126_arg2 ) then
-			CoD.Menu.SetButtonLabel( f126_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f126_arg2, f126_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f126_arg2, f126_arg0 ) and IsMouseOrKeyboard( f126_arg2 ) then
-			CoD.Menu.SetButtonLabel( f126_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f126_arg2, f126_arg0 ) and IsMouseOrKeyboard( f126_arg2 ) then
-			CoD.Menu.SetButtonLabel( f126_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -1254,7 +1254,7 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 	Team6:setSpacing( 18 )
 	Team6:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Team6:setFilter( function ( f127_arg0 )
-		return f127_arg0.team:get() == Enum.team_t[0x7A0FCED35961F87]
+		return f127_arg0.team:get() == Enum.team_t.team_six
 	end )
 	Team6:setDataSource( "DirectorPartyListCustom" )
 	Team6:appendEventHandler( "on_session_start", function ( f128_arg0, f128_arg1 )
@@ -1321,52 +1321,52 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f139_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( Team6, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f140_arg0, f140_arg1, f140_arg2, f140_arg3 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f140_arg2, f140_arg0 ) and IsGamepad( f140_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f140_arg2, f140_arg0 )
+	f1_local1:AddButtonCallbackFunction( Team6, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f140_arg2, f140_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f140_arg2, f140_arg0 ) and IsGamepad( f140_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f140_arg2, f140_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f140_arg2, f140_arg0 ) and IsGamepad( f140_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f140_arg2, f140_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f140_arg2, f140_arg0 ) and IsMouseOrKeyboard( f140_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f140_arg2, f140_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f140_arg2, f140_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f140_arg2, f140_arg0 ) and IsMouseOrKeyboard( f140_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f140_arg2, f140_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f140_arg2, f140_arg0 ) and IsMouseOrKeyboard( f140_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f140_arg2, f140_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
 		else
 			
 		end
-	end, function ( f141_arg0, f141_arg1, f141_arg2 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f141_arg2, f141_arg0 ) and IsGamepad( f141_arg2 ) then
-			CoD.Menu.SetButtonLabel( f141_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/move", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f141_arg2, f141_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f141_arg2, f141_arg0 ) and IsGamepad( f141_arg2 ) then
-			CoD.Menu.SetButtonLabel( f141_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f141_arg2, f141_arg0 ) and IsGamepad( f141_arg2 ) then
-			CoD.Menu.SetButtonLabel( f141_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/add", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f141_arg2, f141_arg0 ) and IsMouseOrKeyboard( f141_arg2 ) then
-			CoD.Menu.SetButtonLabel( f141_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f141_arg2, f141_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f141_arg2, f141_arg0 ) and IsMouseOrKeyboard( f141_arg2 ) then
-			CoD.Menu.SetButtonLabel( f141_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f141_arg2, f141_arg0 ) and IsMouseOrKeyboard( f141_arg2 ) then
-			CoD.Menu.SetButtonLabel( f141_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -1410,16 +1410,16 @@ LUI.createMenu.DirectorCustomGameSetUpWZ = function ( f1_arg0, f1_arg1 )
 	self:linkToElementModel( self, "xuid", true, function ( model, f145_arg1 )
 		CoD.Menu.UpdateButtonShownState( f145_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A] )
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f146_arg0, f146_arg1, f146_arg2, f146_arg3 )
-		if CoD.DirectorUtility.HasSelectedClient( f146_arg2 ) then
-			CoD.DirectorUtility.ClearSelectedClient( f146_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		if CoD.DirectorUtility.HasSelectedClient( controller ) then
+			CoD.DirectorUtility.ClearSelectedClient( controller )
 			return true
 		else
-			GoBack( self, f146_arg2 )
+			GoBack( self, controller )
 			return true
 		end
-	end, function ( f147_arg0, f147_arg1, f147_arg2 )
-		CoD.Menu.SetButtonLabel( f147_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	self:subscribeToGlobalModel( f1_arg0, "GlobalModel", "lobbyRoot.selectedXuid", function ( model )

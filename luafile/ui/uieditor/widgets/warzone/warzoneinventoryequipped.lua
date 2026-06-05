@@ -15,7 +15,7 @@ CoD.WarzoneInventoryEquipped.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local Arrow01 = LUI.UIImage.new( 0, 0, 1, 89, 0, 0, 0, 88 )
 	Arrow01:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_inventory_widget_equipped_icon" ) )
-	Arrow01:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
+	Arrow01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_blend" ) )
 	self:addElement( Arrow01 )
 	self.Arrow01 = Arrow01
 	

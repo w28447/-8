@@ -1,19 +1,19 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_asset_bomber_plane" )
 
-CoD[0x8ADB7D5ED7C6A8B] = InheritFrom( LUI.UIElement )
-CoD[0x8ADB7D5ED7C6A8B].__defaultWidth = 960
-CoD[0x8ADB7D5ED7C6A8B].__defaultHeight = 240
-CoD[0x8ADB7D5ED7C6A8B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_zm_weapons_equipment = InheritFrom( LUI.UIElement )
+CoD.callingcards_zm_weapons_equipment.__defaultWidth = 960
+CoD.callingcards_zm_weapons_equipment.__defaultHeight = 240
+CoD.callingcards_zm_weapons_equipment.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x8ADB7D5ED7C6A8B] )
+	self:setClass( CoD.callingcards_zm_weapons_equipment )
 	self.id = "Callingcards_zm_Weapons_Equipment"
 	self.soundSet = "default"
 	self.anyChildUsesUpdateState = true
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local bg = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	bg:setImage( RegisterImage( 0xF088CF95E7ADDE5 ) )
-	bg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	bg:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_weapons_equipment_background" ) )
+	bg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	bg:setShaderVector( 0, 1, 1, 0, 0 )
 	bg:setShaderVector( 1, 0.01, 0, 0, 0 )
 	self:addElement( bg )
@@ -45,7 +45,7 @@ CoD[0x8ADB7D5ED7C6A8B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local clouds = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	clouds:setAlpha( 0.1 )
-	clouds:setImage( RegisterImage( 0xF2D36DE8841AB88 ) )
+	clouds:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_weapons_equipment_background_clouds" ) )
 	clouds:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	clouds:setShaderVector( 0, 1, 1, 0, 0 )
 	clouds:setShaderVector( 1, 0.03, 0, 0, 0 )
@@ -63,51 +63,51 @@ CoD[0x8ADB7D5ED7C6A8B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.blastout = blastout
 	
 	local BOT1 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	BOT1:setImage( RegisterImage( 0x102EBF534AC5A3B ) )
+	BOT1:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_weapons_equipment_robot_01" ) )
 	self:addElement( BOT1 )
 	self.BOT1 = BOT1
 	
 	local BOT2 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	BOT2:setImage( RegisterImage( 0x102ECF534AC5BEE ) )
+	BOT2:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_weapons_equipment_robot_02" ) )
 	self:addElement( BOT2 )
 	self.BOT2 = BOT2
 	
 	local BOT3 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	BOT3:setImage( RegisterImage( 0x102EDF534AC5DA1 ) )
+	BOT3:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_weapons_equipment_robot_03" ) )
 	self:addElement( BOT3 )
 	self.BOT3 = BOT3
 	
 	local BOT4 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	BOT4:setImage( RegisterImage( 0x102EEF534AC5F54 ) )
+	BOT4:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_weapons_equipment_robot_04" ) )
 	self:addElement( BOT4 )
 	self.BOT4 = BOT4
 	
 	local BOT5 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	BOT5:setImage( RegisterImage( 0x102EFF534AC6107 ) )
+	BOT5:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_weapons_equipment_robot_05" ) )
 	self:addElement( BOT5 )
 	self.BOT5 = BOT5
 	
 	local BOT6 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	BOT6:setImage( RegisterImage( 0x102F0F534AC62BA ) )
+	BOT6:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_weapons_equipment_robot_06" ) )
 	self:addElement( BOT6 )
 	self.BOT6 = BOT6
 	
 	local dust2 = LUI.UIImage.new( 0, 0, 139, 577, 0, 0, 0, 191 )
 	dust2:setRGB( 0.98, 0.88, 0.4 )
 	dust2:setScale( 1.5, 1.5 )
-	dust2:setImage( RegisterImage( 0xEA71666B3E5511F ) )
+	dust2:setImage( RegisterImage( "uie_dust_bloom" ) )
 	self:addElement( dust2 )
 	self.dust2 = dust2
 	
 	local glowShot = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	glowShot:setImage( RegisterImage( 0xB612AA4D0472154 ) )
+	glowShot:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_weapons_equipment_glowshot" ) )
 	glowShot:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( glowShot )
 	self.glowShot = glowShot
 	
 	local cropper = LUI.UIImage.new( 0, 0, -32, 992, 0, 0, -392, 632 )
 	cropper:setAlpha( 0 )
-	cropper:setImage( RegisterImage( 0x7EEE1693E39382A ) )
+	cropper:setImage( RegisterImage( "uie_stage_crop_prop" ) )
 	self:addElement( cropper )
 	self.cropper = cropper
 	
@@ -120,7 +120,7 @@ CoD[0x8ADB7D5ED7C6A8B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x8ADB7D5ED7C6A8B].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_zm_weapons_equipment.__resetProperties = function ( f2_arg0 )
 	f2_arg0.blastout:completeAnimation()
 	f2_arg0.BOT1:completeAnimation()
 	f2_arg0.BOT2:completeAnimation()
@@ -142,7 +142,7 @@ CoD[0x8ADB7D5ED7C6A8B].__resetProperties = function ( f2_arg0 )
 	f2_arg0.glowShot:setAlpha( 1 )
 end
 
-CoD[0x8ADB7D5ED7C6A8B].__clipsPerState = {
+CoD.callingcards_zm_weapons_equipment.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -457,7 +457,7 @@ CoD[0x8ADB7D5ED7C6A8B].__clipsPerState = {
 		end
 	}
 }
-CoD[0x8ADB7D5ED7C6A8B].__onClose = function ( f53_arg0 )
+CoD.callingcards_zm_weapons_equipment.__onClose = function ( f53_arg0 )
 	f53_arg0.CallingCardsAssetBomberPlane:close()
 	f53_arg0.CallingCardsAssetBomberPlane2:close()
 	f53_arg0.CallingCardsAssetBomberPlane3:close()

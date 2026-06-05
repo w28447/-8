@@ -42,7 +42,7 @@ CoD.LANServerBrowserDetails.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local TiledPlusGrid = LUI.UIImage.new( 0, 0, -181, 515, 0, 0, -92, 657 )
 	TiledPlusGrid:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	TiledPlusGrid:setAlpha( 0.1 )
-	TiledPlusGrid:setImage( RegisterImage( 0x6E37BAE22631294 ) )
+	TiledPlusGrid:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_repeat_plusgrid" ) )
 	TiledPlusGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledPlusGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledPlusGrid:setupNineSliceShader( 220, 220 )
@@ -51,7 +51,7 @@ CoD.LANServerBrowserDetails.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local PlayerListTitle = LUI.UIText.new( 0, 0, 5, 225, 0, 0, 321, 341 )
 	PlayerListTitle:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
-	PlayerListTitle:setText( Engine[0xF9F1239CFD921FE]( 0x8AA6A380B90C9BA ) )
+	PlayerListTitle:setText( Engine[0xF9F1239CFD921FE]( "menu/players_in_game" ) )
 	PlayerListTitle:setTTF( "ttmussels_regular" )
 	PlayerListTitle:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( PlayerListTitle )

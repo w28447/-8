@@ -38,111 +38,111 @@ Lobby.Pregame.StateInfo = {
 	[Lobby.Pregame.Stage.PRESTAGE] = {
 		[Lobby.Pregame.LobbyState.VOTE] = {
 			setting = "pregamePreStageTime",
-			statusString = 0x789B1BB18060943
+			statusString = "menu/starting_in"
 		},
 		[Lobby.Pregame.LobbyState.DRAFT] = {
 			setting = "pregamePreStageTime",
-			statusString = 0x789B1BB18060943
+			statusString = "menu/starting_in"
 		},
 		[Lobby.Pregame.LobbyState.CAC_EDIT] = {
 			setting = "pregamePreStageTime",
-			statusString = 0x789B1BB18060943
+			statusString = "menu/starting_in"
 		},
 		[Lobby.Pregame.LobbyState.STREAK_EDIT] = {
 			setting = "pregamePreStageTime",
-			statusString = 0x789B1BB18060943
+			statusString = "menu/starting_in"
 		},
 		[Lobby.Pregame.LobbyState.LAUNCH_GAME] = {
 			setting = "pregamePreStageTime",
-			statusString = 0x789B1BB18060943
+			statusString = "menu/starting_in"
 		}
 	},
 	[Lobby.Pregame.Stage.ROUND] = {
 		[Lobby.Pregame.LobbyState.VOTE] = {
 			setting = "pregameItemVoteRoundTime",
-			statusString = 0x0
+			statusString = ""
 		},
 		[Lobby.Pregame.LobbyState.DRAFT] = {
 			setting = "pregameDraftRoundTime",
-			statusString = 0x0
+			statusString = ""
 		},
 		[Lobby.Pregame.LobbyState.CAC_EDIT] = {
 			setting = "pregameCACModifyTime",
-			statusString = 0x0
+			statusString = ""
 		},
 		[Lobby.Pregame.LobbyState.STREAK_EDIT] = {
 			setting = "pregameScorestreakModifyTime",
-			statusString = 0x0
+			statusString = ""
 		},
 		[Lobby.Pregame.LobbyState.LAUNCH_GAME] = {
 			setting = nil,
-			statusString = 0x0
+			statusString = ""
 		}
 	},
 	[Lobby.Pregame.Stage.INTERMISSION] = {
 		[Lobby.Pregame.LobbyState.VOTE] = {
 			setting = "pregamePostRoundTime",
-			statusString = 0x0
+			statusString = ""
 		},
 		[Lobby.Pregame.LobbyState.DRAFT] = {
 			setting = "pregamePostRoundTime",
-			statusString = 0x0
+			statusString = ""
 		},
 		[Lobby.Pregame.LobbyState.CAC_EDIT] = {
 			setting = nil,
-			statusString = 0x0
+			statusString = ""
 		},
 		[Lobby.Pregame.LobbyState.STREAK_EDIT] = {
 			setting = nil,
-			statusString = 0x0
+			statusString = ""
 		},
 		[Lobby.Pregame.LobbyState.LAUNCH_GAME] = {
 			setting = nil,
-			statusString = 0x0
+			statusString = ""
 		}
 	},
 	[Lobby.Pregame.Stage.POSTSTAGE] = {
 		[Lobby.Pregame.LobbyState.VOTE] = {
 			setting = "pregamePostStageTime",
-			statusString = 0xF0C75904F29F8BC
+			statusString = "menu/complete"
 		},
 		[Lobby.Pregame.LobbyState.DRAFT] = {
 			setting = "pregamePostStageTime",
-			statusString = 0xF0C75904F29F8BC
+			statusString = "menu/complete"
 		},
 		[Lobby.Pregame.LobbyState.CAC_EDIT] = {
 			setting = "pregamePostStageTime",
-			statusString = 0xF0C75904F29F8BC
+			statusString = "menu/complete"
 		},
 		[Lobby.Pregame.LobbyState.STREAK_EDIT] = {
 			setting = "pregamePostStageTime",
-			statusString = 0xF0C75904F29F8BC
+			statusString = "menu/complete"
 		},
 		[Lobby.Pregame.LobbyState.LAUNCH_GAME] = {
 			setting = "pregamePostStageTime",
-			statusString = 0x0
+			statusString = ""
 		}
 	},
 	[Lobby.Pregame.Stage.LAUNCH] = {
 		[Lobby.Pregame.LobbyState.VOTE] = {
 			setting = "pregamePostStageTime",
-			statusString = 0x0
+			statusString = ""
 		},
 		[Lobby.Pregame.LobbyState.DRAFT] = {
 			setting = "pregamePostStageTime",
-			statusString = 0x0
+			statusString = ""
 		},
 		[Lobby.Pregame.LobbyState.CAC_EDIT] = {
 			setting = "pregamePostStageTime",
-			statusString = 0x0
+			statusString = ""
 		},
 		[Lobby.Pregame.LobbyState.STREAK_EDIT] = {
 			setting = "pregamePostStageTime",
-			statusString = 0x0
+			statusString = ""
 		},
 		[Lobby.Pregame.LobbyState.LAUNCH_GAME] = {
 			setting = "pregamePostStageTime",
-			statusString = 0x0
+			statusString = ""
 		}
 	}
 }
@@ -335,7 +335,7 @@ Lobby.Pregame.Start = function ()
 end
 
 Lobby.Pregame.GetRandomUnpickedCharacter = function ( f21_arg0 )
-	local f21_local0 = Engine.GetHeroList( Enum.eModes[0x83EBA96F36BC4E5] )
+	local f21_local0 = Engine.GetHeroList( Enum.eModes.mode_multiplayer )
 	local f21_local1 = {}
 	for f21_local5, f21_local6 in pairs( f21_arg0 ) do
 		local f21_local7 = f21_local6.characterDraft.characterIndex
@@ -511,8 +511,8 @@ Lobby.Pregame.PrestageMonitorSpecialRules = function ()
 		Lobby.Timer.HostingLobby( {
 			controller = Engine.GetPrimaryController(),
 			lobbyType = Enum.LobbyType[0x92676CF5B6FCD43],
-			mainMode = f29_local1["mainmode"],
-			lobbyTimerType = f29_local1[0x558B67A321D1120],
+			mainMode = f29_local1.mainmode,
+			lobbyTimerType = f29_local1.lobbytimertype,
 			matchEnded = false,
 			status = Lobby.Timer.LOBBY_STATUS.RESET_TO_NEED
 		} )
@@ -631,9 +631,9 @@ Lobby.Pregame.UpdateLobbyStatusInfo = function ( f36_arg0 )
 		f0_local0 = f36_local3
 		if f36_local1 == Lobby.Pregame.Stage.ROUND and Engine.GetModelValue( Engine.CreateModel( Lobby.Pregame.GetRootModelForController( f36_arg0.controller ), "clientState" ) ) == Lobby.Pregame.ClientState.SELECTING then
 			if f36_local3 <= Lobby.Pregame.Settings.TIMER_WARNING_TIME and Lobby.Pregame.Settings.TIMER_FINAL_TIME < f36_local3 then
-				Engine.PlaySound( Lobby.Pregame.Settings.TIMER_WARNING_SOUND )
+				Engine.playsound( Lobby.Pregame.Settings.TIMER_WARNING_SOUND )
 			elseif f36_local3 <= Lobby.Pregame.Settings.TIMER_FINAL_TIME and f36_local3 >= 0 then
-				Engine.PlaySound( Lobby.Pregame.Settings.TIMER_FINAL_SOUND )
+				Engine.playsound( Lobby.Pregame.Settings.TIMER_FINAL_SOUND )
 			end
 		end
 	end

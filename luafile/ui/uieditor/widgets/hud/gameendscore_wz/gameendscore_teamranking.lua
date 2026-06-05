@@ -18,14 +18,14 @@ CoD.GameEndScore_TeamRanking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.NoiseTiledBacking = NoiseTiledBacking
 	
 	local RankBg = LUI.UIImage.new( 0, 0, 0, 340, 0, 0, 0, 204 )
-	RankBg:setImage( RegisterImage( 0x26C58B2FFD5D666 ) )
+	RankBg:setImage( RegisterImage( "uie_ui_hud_wz_endgame_rank_bg" ) )
 	self:addElement( RankBg )
 	self.RankBg = RankBg
 	
 	local PlaceLabel = LUI.UIText.new( 0, 0, 15, 319, 0, 0, 160.5, 190.5 )
 	PlaceLabel:setRGB( 0.92, 0.92, 0.92 )
 	PlaceLabel:setAlpha( 0 )
-	PlaceLabel:setText( Engine[0xF9F1239CFD921FE]( 0x5E3F47B62987EF5 ) )
+	PlaceLabel:setText( Engine[0xF9F1239CFD921FE]( "ui/you_placed" ) )
 	PlaceLabel:setTTF( "ttmussels_regular" )
 	PlaceLabel:setLetterSpacing( 6 )
 	PlaceLabel:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -42,7 +42,7 @@ CoD.GameEndScore_TeamRanking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	TeamRank:subscribeToGlobalModel( f1_arg1, "GameScore", "teamRanking", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
-			TeamRank:setText( LocalizeStringWithParameter( 0x50158F8FB37F010, f2_local0 ) )
+			TeamRank:setText( LocalizeStringWithParameter( "ui/warzone_placement", f2_local0 ) )
 		end
 	end )
 	self:addElement( TeamRank )
@@ -61,7 +61,7 @@ CoD.GameEndScore_TeamRanking.__resetProperties = function ( f3_arg0 )
 	f3_arg0.PlaceLabel:completeAnimation()
 	f3_arg0.TeamRank:completeAnimation()
 	f3_arg0.PlaceLabel:setAlpha( 0 )
-	f3_arg0.PlaceLabel:setText( Engine[0xF9F1239CFD921FE]( 0x5E3F47B62987EF5 ) )
+	f3_arg0.PlaceLabel:setText( Engine[0xF9F1239CFD921FE]( "ui/you_placed" ) )
 	f3_arg0.TeamRank:setAlpha( 0 )
 end
 
@@ -84,7 +84,7 @@ CoD.GameEndScore_TeamRanking.__clipsPerState = {
 			f5_arg0:setupElementClipCounter( 2 )
 			f5_arg0.PlaceLabel:completeAnimation()
 			f5_arg0.PlaceLabel:setAlpha( 0 )
-			f5_arg0.PlaceLabel:setText( Engine[0xF9F1239CFD921FE]( 0x7092D0A21E48A22 ) )
+			f5_arg0.PlaceLabel:setText( Engine[0xF9F1239CFD921FE]( "ui/squad_placed" ) )
 			f5_arg0.clipFinished( f5_arg0.PlaceLabel )
 			f5_arg0.TeamRank:completeAnimation()
 			f5_arg0.TeamRank:setAlpha( 0 )

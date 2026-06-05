@@ -33,7 +33,7 @@ CoD.PC_TooltipsPromptsBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local Outline = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Outline:setAlpha( 0.05 )
-	Outline:setImage( RegisterImage( 0xF1E3082B39E99BB ) )
+	Outline:setImage( RegisterImage( "uie_highlight_border_line" ) )
 	Outline:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Outline:setShaderVector( 0, 0, 0, 0, 0 )
 	Outline:setupNineSliceShader( 6, 6 )

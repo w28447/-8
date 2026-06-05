@@ -36,15 +36,15 @@ CoD.ScorestreakInGameUtility.AddScorestreakListNavigation = function ( f2_arg0, 
 	
 	f2_arg1:appendEventHandler( "register_focusable_element", f2_local1 )
 	f2_arg1:appendEventHandler( "unregister_focusable_element", f2_local1 )
-	CoD.Menu.AddButtonCallbackFunction( f2_arg0, f2_arg1, f2_arg2, Enum.LUIButton[0x4B11D2B20C75A7F], "ui_navup", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		if not f5_arg0.m_disableNavigation and (not (not f2_arg1.dpadDisabled or not IsDpadButton( f5_arg3 )) or f2_arg1:navigateItemUp( f2_local0 )) then
+	CoD.Menu.AddButtonCallbackFunction( f2_arg0, f2_arg1, f2_arg2, Enum.LUIButton[0x4B11D2B20C75A7F], "ui_navup", function ( element, menu, controller, f5_arg3 )
+		if not element.m_disableNavigation and (not (not f2_arg1.dpadDisabled or not IsDpadButton( f5_arg3 )) or f2_arg1:navigateItemUp( f2_local0 )) then
 			return true
 		else
 			
 		end
 	end )
-	CoD.Menu.AddButtonCallbackFunction( f2_arg0, f2_arg1, f2_arg2, Enum.LUIButton[0xD4C15FE32148D3A], "ui_navdown", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if not f6_arg0.m_disableNavigation and (not (not f2_arg1.dpadDisabled or not IsDpadButton( f6_arg3 )) or f2_arg1:navigateItemDown( f2_local0 )) then
+	CoD.Menu.AddButtonCallbackFunction( f2_arg0, f2_arg1, f2_arg2, Enum.LUIButton[0xD4C15FE32148D3A], "ui_navdown", function ( element, menu, controller, f6_arg3 )
+		if not element.m_disableNavigation and (not (not f2_arg1.dpadDisabled or not IsDpadButton( f6_arg3 )) or f2_arg1:navigateItemDown( f2_local0 )) then
 			return true
 		else
 			

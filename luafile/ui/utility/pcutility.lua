@@ -504,11 +504,11 @@ CoD.PCUtil.SimulateDPadButtonPress = function ( f39_arg0, f39_arg1 )
 end
 
 CoD.PCUtility.ReplaceButtonLabelForPC = function ( f40_arg0, f40_arg1 )
-	if f40_arg1 == "menu/back" or f40_arg1 == 0x78D439E1B360368 or f40_arg1 == 0xEF2D3320785B51A or f40_arg1 == 0x3996BAAC73C3F6D then
+	if f40_arg1 == "menu/back" or f40_arg1 == "menu/back_caps" or f40_arg1 == "menu/leave" or f40_arg1 == "menu/dismiss" then
 		return 0xFE8B7EA55114B2A
 	elseif f40_arg1 == "menu/cancel" then
 		return 0xF30BC90052E4F39
-	elseif f40_arg1 == 0xB2EF56B4AF147B8 then
+	elseif f40_arg1 == "menu/quit" then
 		return 0xA4D5CCF602C652E
 	else
 		return f40_arg1
@@ -518,8 +518,8 @@ end
 CoD.PCUtil.SetupButtonLabelForPC = function ( f41_arg0, f41_arg1 )
 	local f41_local0 = f41_arg1.Label
 	f41_arg1.TooltipLabel:set( Engine[0xF9F1239CFD921FE]( f41_arg0 ) or nil )
-	if f41_arg0 == "menu/back" or f41_arg0 == 0x78D439E1B360368 or f41_arg0 == 0xEF2D3320785B51A or f41_arg0 == 0x3996BAAC73C3F6D or f41_arg0 == "menu/cancel" then
-		Engine.SetModelValue( Engine.CreateModel( f41_arg1, "TooltipKeyShortcut" ), 0x605DAF0D67709A )
+	if f41_arg0 == "menu/back" or f41_arg0 == "menu/back_caps" or f41_arg0 == "menu/leave" or f41_arg0 == "menu/dismiss" or f41_arg0 == "menu/cancel" then
+		Engine.SetModelValue( Engine.CreateModel( f41_arg1, "TooltipKeyShortcut" ), "key/escape" )
 	end
 end
 
@@ -622,13 +622,13 @@ CoD.PCUtil.Craft_GetEmblemEditorEditModeActions = function ( f53_arg0, f53_arg1 
 	if f53_local1 then
 		table.insert( f53_local0, {
 			models = {
-				actionName = 0x85B404E7BD35400,
+				actionName = "platform/mode",
 				widgetType = "header"
 			}
 		} )
 		table.insert( f53_local0, {
 			models = {
-				actionName = 0x3F334E151B36E5C,
+				actionName = "menu/emblem_color_picker",
 				widgetType = "button",
 				action = function ( f54_arg0, f54_arg1, f54_arg2, f54_arg3, f54_arg4 )
 					CoD.CraftUtility.EmblemEditor_EndEdit( f54_arg0, f54_arg1, f54_arg2 )
@@ -647,7 +647,7 @@ CoD.PCUtil.Craft_GetEmblemEditorEditModeActions = function ( f53_arg0, f53_arg1 
 		if CoD.BaseUtility.IsDvarEnabled( "enable_material_picker" ) then
 			table.insert( f53_local0, {
 				models = {
-					actionName = "MENU/MATERIAL_PICKER",
+					actionName = "menu/material_picker",
 					widgetType = "button",
 					action = function ( f55_arg0, f55_arg1, f55_arg2, f55_arg3, f55_arg4 )
 						CoD.CraftUtility.EmblemEditor_EndEdit( f55_arg0, f55_arg1, f55_arg2 )
@@ -747,7 +747,7 @@ CoD.PCUtil.Craft_GetEmblemEditorEditModeActions = function ( f53_arg0, f53_arg1 
 	if f53_local1 then
 		table.insert( f53_local0, {
 			models = {
-				actionName = 0xB01D7611E815CFB,
+				actionName = "platform/emblem_toggle_outline",
 				widgetType = "button",
 				action = function ( f59_arg0, f59_arg1, f59_arg2, f59_arg3, f59_arg4 )
 					CoD.CraftUtility.EmblemEditor_ToggleOutline( f59_arg0, f59_arg1, f59_arg2 )
@@ -762,7 +762,7 @@ CoD.PCUtil.Craft_GetEmblemEditorEditModeActions = function ( f53_arg0, f53_arg1 
 		f53_local3 = f53_local0
 		f53_local4 = {}
 		f53_local5 = {
-			actionName = 0x611006D6269F87D,
+			actionName = "menu/emblem_layer_opacity",
 			widgetType = "slider",
 			perControllerValueModel = "Emblem.EmblemSelectedLayerProperties.max_opacity",
 			lowValue = 0,
@@ -845,13 +845,13 @@ CoD.PCUtil.Craft_GetEmblemEditorSolidColorActions = function ( f65_arg0 )
 	local f65_local0 = {}
 	table.insert( f65_local0, {
 		models = {
-			actionName = 0x85B404E7BD35400,
+			actionName = "platform/mode",
 			widgetType = "header"
 		}
 	} )
 	table.insert( f65_local0, {
 		models = {
-			actionName = 0x69A8E3706E3A32C,
+			actionName = "platform/switch_to_gradient_mode",
 			widgetType = "button",
 			keyshortcut = "G",
 			action = function ( f66_arg0, f66_arg1, f66_arg2, f66_arg3, f66_arg4 )
@@ -898,7 +898,7 @@ CoD.PCUtil.Craft_GetEmblemEditorSolidColorActions = function ( f65_arg0 )
 				getStatusTable = function ()
 					return {
 						[0] = {
-							label = 0x4336F8BDF41A51E
+							label = "menu/emblem_toggle_to_blend"
 						},
 						[1] = {
 							label = "menu/emblem_toggle_to_sticker"
@@ -921,7 +921,7 @@ CoD.PCUtil.Craft_GetEmblemEditorSolidColorActions = function ( f65_arg0 )
 	local f65_local2 = f65_local0
 	local f65_local3 = {}
 	local f65_local4 = {
-		actionName = 0x611006D6269F87D,
+		actionName = "menu/emblem_layer_opacity",
 		widgetType = "slider",
 		perControllerValueModel = "Emblem.EmblemSelectedLayerProperties.opacity0",
 		lowValue = 0,
@@ -943,7 +943,7 @@ CoD.PCUtil.Craft_GetEmblemEditorGradientModeActions = function ( f72_arg0 )
 	local f72_local0 = {}
 	table.insert( f72_local0, {
 		models = {
-			actionName = 0x85B404E7BD35400,
+			actionName = "platform/mode",
 			widgetType = "header"
 		}
 	} )
@@ -962,7 +962,7 @@ CoD.PCUtil.Craft_GetEmblemEditorGradientModeActions = function ( f72_arg0 )
 	} )
 	table.insert( f72_local0, {
 		models = {
-			actionName = 0x51DC5128C5593A4,
+			actionName = "platform/switch_to_linear_gradient",
 			widgetType = "button",
 			perControllerStatusModel = "Emblem.EmblemSelectedLayerProperties.gradient_type",
 			action = function ( f74_arg0, f74_arg1, f74_arg2, f74_arg3, f74_arg4 )
@@ -971,10 +971,10 @@ CoD.PCUtil.Craft_GetEmblemEditorGradientModeActions = function ( f72_arg0 )
 			getStatusTable = function ()
 				return {
 					[Enum.CustomizationGradientType[0x2B2DC60726823DB]] = {
-						label = 0x51DC5128C5593A4
+						label = "platform/switch_to_linear_gradient"
 					},
 					[Enum.CustomizationGradientType[0xA00B3A2D53175C1]] = {
-						label = 0xC33C8400FCB2D4E
+						label = "platform/switch_to_radial_gradient"
 					}
 				}
 			end
@@ -995,7 +995,7 @@ CoD.PCUtil.Craft_GetEmblemEditorGradientModeActions = function ( f72_arg0 )
 				getStatusTable = function ()
 					return {
 						[0] = {
-							label = 0x4336F8BDF41A51E
+							label = "menu/emblem_toggle_to_blend"
 						},
 						[1] = {
 							label = "menu/emblem_toggle_to_sticker"
@@ -1018,7 +1018,7 @@ CoD.PCUtil.Craft_GetEmblemEditorGradientModeActions = function ( f72_arg0 )
 	local f72_local2 = f72_local0
 	local f72_local3 = {}
 	local f72_local4 = {
-		actionName = 0xD919B2D6404B47,
+		actionName = "menu/emblem_color_1_opacity",
 		widgetType = "slider",
 		perControllerValueModel = "Emblem.EmblemSelectedLayerProperties.opacity0",
 		perControllerStatusModel = "Emblem.EmblemProperties.isColor0NoColor",
@@ -1046,7 +1046,7 @@ CoD.PCUtil.Craft_GetEmblemEditorGradientModeActions = function ( f72_arg0 )
 	f72_local2 = f72_local0
 	f72_local3 = {}
 	f72_local4 = {
-		actionName = 0xBD45B66EE9ACAD2,
+		actionName = "menu/emblem_color_2_opacity",
 		widgetType = "slider",
 		perControllerValueModel = "Emblem.EmblemSelectedLayerProperties.opacity1",
 		perControllerStatusModel = "Emblem.EmblemProperties.isColor1NoColor",
@@ -1074,7 +1074,7 @@ CoD.PCUtil.Craft_GetEmblemEditorGradientModeActions = function ( f72_arg0 )
 	f72_local2 = f72_local0
 	f72_local3 = {}
 	f72_local4 = {
-		actionName = 0x12A6450C1991C6D,
+		actionName = "menu/emblem_gradient_rotation",
 		widgetType = "slider",
 		perControllerValueModel = "Emblem.EmblemSelectedLayerProperties.gradient_angle",
 		lowValue = 0,
@@ -1239,8 +1239,8 @@ CoD.PCUtility.SetupEditSliderValueModel = function ( f90_arg0, f90_arg1, f90_arg
 	end
 	
 	LUI.OverrideFunction_CallOriginalSecond( f90_arg0, "close", f90_arg0.__onEditClose )
-	CoD.Menu.AddButtonCallbackFunction( f90_arg2, f90_arg0, f90_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f93_arg0, f93_arg1 )
-		f90_arg2:ChangeInputFocus( f90_arg1, f93_arg0 )
+	CoD.Menu.AddButtonCallbackFunction( f90_arg2, f90_arg0, f90_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu )
+		f90_arg2:ChangeInputFocus( f90_arg1, element )
 		return true
 	end )
 	f90_arg0.__editboxLoseInputFocus = function ( f94_arg0, f94_arg1 )
@@ -1308,9 +1308,9 @@ end
 CoD.PCUtility.CraftActionSliderSetInputBox = function ( f99_arg0, f99_arg1, f99_arg2, f99_arg3 )
 	if f99_arg0.EditBox ~= nil then
 		DisableKeyboardNavigationByElement( f99_arg0.EditBox )
-		CoD.Menu.AddButtonCallbackFunction( f99_arg3, f99_arg0, f99_arg2, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f100_arg0, f100_arg1, f100_arg2, f100_arg3 )
-			CoD.PCWidgetUtility.BringIntoView( f99_arg0, f100_arg2 )
-			f100_arg1:ChangeInputFocus( f100_arg2, f99_arg0.EditBox )
+		CoD.Menu.AddButtonCallbackFunction( f99_arg3, f99_arg0, f99_arg2, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, f100_arg3 )
+			CoD.PCWidgetUtility.BringIntoView( f99_arg0, controller )
+			menu:ChangeInputFocus( controller, f99_arg0.EditBox )
 			return true
 		end )
 	end
@@ -1627,7 +1627,7 @@ local f0_local2 = CoD.OverlayUtility.Overlays
 local f0_local3 = {}
 local f0_local4 = {
 	menuName = "SystemOverlay_Compact",
-	title = Engine[0xF9F1239CFD921FE]( 0x10A724241848AC8 )
+	title = Engine[0xF9F1239CFD921FE]( "menu/leave_match" )
 }
 if CoD.isPublicOnlineGame() then
 	local f0_local5 = IsMultiplayer()
@@ -1663,7 +1663,7 @@ f0_local4.listDatasource = function ( f131_arg0 )
 		if f131_arg0 then
 			table.insert( f132_local0, {
 				models = {
-					displayText = Engine[0xF9F1239CFD921FE]( 0x1762CBFBF851D22 )
+					displayText = Engine[0xF9F1239CFD921FE]( "menu/settings_caps" )
 				},
 				properties = {
 					action = function ( f135_arg0, f135_arg1, f135_arg2, f135_arg3, f135_arg4 )
@@ -1716,7 +1716,7 @@ end
 f0_local4[CoD.OverlayUtility.xSquarePromptText] = function ( f142_arg0 )
 	local f142_local0
 	if f142_arg0 then
-		f142_local0 = 0x1762CBFBF851D22
+		f142_local0 = "menu/settings_caps"
 		if not f142_local0 then
 		
 		else
@@ -1730,7 +1730,7 @@ f0_local3.QuitPCMatchPopup = f0_local4
 f0_local3.QuitPCArenaMatchPopup = {
 	menuName = "SystemOverlay_Compact",
 	frameWidget = LuaUtils.IsArenaPublicGame() and "CoD.systemOverlay_QuitLeaguePlay" or nil,
-	title = Engine[0xF9F1239CFD921FE]( 0x10A724241848AC8 ),
+	title = Engine[0xF9F1239CFD921FE]( "menu/leave_match" ),
 	description = CoD.isPublicOnlineGame() and Engine[0xF9F1239CFD921FE]( 0x896B29D6A289A61 ) or Engine[0xF9F1239CFD921FE]( "menu/are_you_sure" ),
 	categoryType = CoD.OverlayUtility.OverlayTypes.Quit,
 	listDatasource = function ( f143_arg0 )
@@ -1761,7 +1761,7 @@ f0_local3.QuitPCArenaMatchPopup = {
 			if f143_arg0 then
 				table.insert( f144_local0, {
 					models = {
-						displayText = Engine[0xF9F1239CFD921FE]( 0x1762CBFBF851D22 )
+						displayText = Engine[0xF9F1239CFD921FE]( "menu/settings_caps" )
 					},
 					properties = {
 						action = function ( f147_arg0, f147_arg1, f147_arg2, f147_arg3, f147_arg4 )
@@ -1810,7 +1810,7 @@ f0_local3.QuitPCArenaMatchPopup = {
 	[CoD.OverlayUtility.xSquarePromptText] = function ( f154_arg0 )
 		local f154_local0
 		if f154_arg0 then
-			f154_local0 = 0x1762CBFBF851D22
+			f154_local0 = "menu/settings_caps"
 			if not f154_local0 then
 			
 			else
@@ -1822,8 +1822,8 @@ f0_local3.QuitPCArenaMatchPopup = {
 }
 f0_local3.QuitPCMatchWhileSpectatingPopup = {
 	menuName = "SystemOverlay_Compact",
-	title = Engine[0xF9F1239CFD921FE]( 0x10A724241848AC8 ),
-	description = Engine[0xF9F1239CFD921FE]( 0x0 ),
+	title = Engine[0xF9F1239CFD921FE]( "menu/leave_match" ),
+	description = Engine[0xF9F1239CFD921FE]( "" ),
 	categoryType = CoD.OverlayUtility.OverlayTypes.Quit,
 	listDatasource = function ( f155_arg0 )
 		DataSources.QuitGamePopup_List = DataSourceHelpers.ListSetup( "QuitGamePopup_List", function ( f156_arg0 )
@@ -1855,14 +1855,14 @@ f0_local3.QuitPCMatchWhileSpectatingPopup = {
 					},
 					properties = {
 						action = function ( f159_arg0, f159_arg1, f159_arg2, f159_arg3, f159_arg4 )
-							Engine.Exec( f159_arg2, "quit" )
+							Engine.exec( f159_arg2, "quit" )
 						end
 					}
 				}
 			}
 			table.insert( f156_local0, {
 				models = {
-					displayText = Engine[0xF9F1239CFD921FE]( 0x1762CBFBF851D22 )
+					displayText = Engine[0xF9F1239CFD921FE]( "menu/settings_caps" )
 				},
 				properties = {
 					action = function ( f160_arg0, f160_arg1, f160_arg2, f160_arg3, f160_arg4 )
@@ -1893,7 +1893,7 @@ f0_local3.QuitPCMatchWhileSpectatingPopup = {
 	[CoD.OverlayUtility.bCirclePromptText] = 0x4C0687F40244FFF,
 	[CoD.OverlayUtility.yTrianglePromptFn] = function ( f165_arg0 )
 		return function ()
-			Engine.Exec( f165_arg0, "quit" )
+			Engine.exec( f165_arg0, "quit" )
 		end
 		
 	end,
@@ -1906,12 +1906,12 @@ f0_local3.QuitPCMatchWhileSpectatingPopup = {
 		 or nil
 	end,
 	[CoD.OverlayUtility.xSquarePromptText] = function ( f169_arg0 )
-		return 0x1762CBFBF851D22 or nil
+		return "menu/settings_caps" or nil
 	end
 }
 f0_local4 = {
 	menuName = "SystemOverlay_Compact",
-	title = Engine[0xF9F1239CFD921FE]( 0x89E88D593CFB09 )
+	title = Engine[0xF9F1239CFD921FE]( "menu/are_you_sure_quit" )
 }
 if CoD.isPublicOnlineGame() then
 	local f0_local7 = IsMultiplayer()
@@ -1928,14 +1928,14 @@ f0_local4.listDatasource = function ()
 				},
 				properties = {
 					action = function ( f172_arg0, f172_arg1, f172_arg2, f172_arg3, f172_arg4 )
-						Engine.Exec( f172_arg2, "quit" )
+						Engine.exec( f172_arg2, "quit" )
 					end
 					
 				}
 			},
 			{
 				models = {
-					displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x154915937098D9E ) )
+					displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/stay" ) )
 				},
 				properties = {
 					action = function ( f173_arg0, f173_arg1, f173_arg2, f173_arg3, f173_arg4 )
@@ -1964,12 +1964,12 @@ end
 
 f0_local4[CoD.OverlayUtility.aCrossPromptFn] = function ( f176_arg0 )
 	return function ()
-		Engine.Exec( f176_arg0, "quit" )
+		Engine.exec( f176_arg0, "quit" )
 	end
 	
 end
 
-f0_local4[CoD.OverlayUtility.aCrossPromptText] = 0xB2EF56B4AF147B8
+f0_local4[CoD.OverlayUtility.aCrossPromptText] = "menu/quit"
 f0_local4[CoD.OverlayUtility.bCirclePromptFn] = function ( f178_arg0 )
 	return function ( f179_arg0, f179_arg1 )
 		local f179_local0 = GoBack( f179_arg0, f179_arg1 )
@@ -1980,12 +1980,12 @@ f0_local4[CoD.OverlayUtility.bCirclePromptFn] = function ( f178_arg0 )
 	
 end
 
-f0_local4[CoD.OverlayUtility.bCirclePromptText] = 0x154915937098D9E
+f0_local4[CoD.OverlayUtility.bCirclePromptText] = "menu/stay"
 f0_local3.QuitPCGamePopup = f0_local4
 f0_local3.QuitPCArenaGamePopup = {
 	menuName = "SystemOverlay_Compact",
 	frameWidget = LuaUtils.IsArenaPublicGame() and "CoD.systemOverlay_QuitLeaguePlay" or nil,
-	title = Engine[0xF9F1239CFD921FE]( 0x89E88D593CFB09 ),
+	title = Engine[0xF9F1239CFD921FE]( "menu/are_you_sure_quit" ),
 	description = CoD.isPublicOnlineGame() and Engine[0xF9F1239CFD921FE]( 0x9439ED4B6B6C69A ) .. "\n\n" .. Engine[0xF9F1239CFD921FE]( 0x896B29D6A289A61 ) or Engine[0xF9F1239CFD921FE]( 0x9439ED4B6B6C69A ) .. "\n\n" .. Engine[0xF9F1239CFD921FE]( "menu/are_you_sure" ),
 	categoryType = CoD.OverlayUtility.OverlayTypes.Quit,
 	listDatasource = function ()
@@ -1997,14 +1997,14 @@ f0_local3.QuitPCArenaGamePopup = {
 					},
 					properties = {
 						action = function ( f182_arg0, f182_arg1, f182_arg2, f182_arg3, f182_arg4 )
-							Engine.Exec( f182_arg2, "quit" )
+							Engine.exec( f182_arg2, "quit" )
 						end
 						
 					}
 				},
 				{
 					models = {
-						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x154915937098D9E ) )
+						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/stay" ) )
 					},
 					properties = {
 						action = function ( f183_arg0, f183_arg1, f183_arg2, f183_arg3, f183_arg4 )
@@ -2031,11 +2031,11 @@ f0_local3.QuitPCArenaGamePopup = {
 	end,
 	[CoD.OverlayUtility.aCrossPromptFn] = function ( f186_arg0 )
 		return function ()
-			Engine.Exec( f186_arg0, "quit" )
+			Engine.exec( f186_arg0, "quit" )
 		end
 		
 	end,
-	[CoD.OverlayUtility.aCrossPromptText] = 0xB2EF56B4AF147B8,
+	[CoD.OverlayUtility.aCrossPromptText] = "menu/quit",
 	[CoD.OverlayUtility.bCirclePromptFn] = function ( f188_arg0 )
 		return function ( f189_arg0, f189_arg1 )
 			local f189_local0 = GoBack( f189_arg0, f189_arg1 )
@@ -2045,7 +2045,7 @@ f0_local3.QuitPCArenaGamePopup = {
 		end
 		
 	end,
-	[CoD.OverlayUtility.bCirclePromptText] = 0x154915937098D9E
+	[CoD.OverlayUtility.bCirclePromptText] = "menu/stay"
 }
 f0_local3.OutsideCorePCPlayingHoursPopup = {
 	menuName = "SystemOverlay_Compact",
@@ -2057,11 +2057,11 @@ f0_local3.OutsideCorePCPlayingHoursPopup = {
 			return {
 				{
 					models = {
-						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xB2EF56B4AF147B8 ) )
+						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/quit" ) )
 					},
 					properties = {
 						action = function ( f192_arg0, f192_arg1, f192_arg2, f192_arg3, f192_arg4 )
-							Engine.Exec( f192_arg2, "quit" )
+							Engine.exec( f192_arg2, "quit" )
 						end
 						
 					}
@@ -2074,32 +2074,32 @@ f0_local3.OutsideCorePCPlayingHoursPopup = {
 f0_local3.LeaveLobbyPopupPC = {
 	menuName = "SystemOverlay_Compact",
 	title = function ( f193_arg0 )
-		local f193_local0 = 0x0
+		local f193_local0 = ""
 		if f193_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_PARTY then
-			f193_local0 = 0xB69F71ABEAEC777
+			f193_local0 = "menu/leave_lobby_leave_party_title"
 		elseif f193_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_AND_DISBAND_PARTY then
 			f193_local0 = "menu/leave_lobby_disband_from_party_title"
 		elseif f193_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY then
-			f193_local0 = 0x318119895303B4B
+			f193_local0 = "menu/leave_lobby_leave_lobby_title"
 		elseif f193_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY_AND_PARTY then
-			f193_local0 = 0xB69F71ABEAEC777
+			f193_local0 = "menu/leave_lobby_leave_party_title"
 		elseif f193_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.BRING_PARTY_LEAVE_ALONE then
-			f193_local0 = 0x318119895303B4B
+			f193_local0 = "menu/leave_lobby_leave_lobby_title"
 		elseif f193_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.MANAGE_PARTY_LEAVE then
-			f193_local0 = 0x7992FB2AE130417
+			f193_local0 = "menu/leave_lobby_manage_party_leave_title"
 		end
 		return Engine[0xF9F1239CFD921FE]( f193_local0 )
 	end,
 	description = function ( f194_arg0 )
-		local f194_local0 = 0x0
+		local f194_local0 = ""
 		if f194_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_PARTY then
 			f194_local0 = "menu/leave_lobby_leave_party_hint"
 		elseif f194_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_AND_DISBAND_PARTY then
-			f194_local0 = 0xEF7BFBB3912534B
+			f194_local0 = "menu/leave_lobby_disband_from_party_hint"
 		elseif f194_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY_AND_PARTY then
 			f194_local0 = "menu/leave_lobby_leave_party_hint"
 		elseif f194_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.MANAGE_PARTY_LEAVE then
-			f194_local0 = 0xE47086DBA25578E
+			f194_local0 = "menu/leave_lobby_manage_party_leave_hint"
 		end
 		return Engine[0xF9F1239CFD921FE]( f194_local0 )
 	end,
@@ -2132,12 +2132,12 @@ f0_local3.LeaveLobbyPopupPC = {
 		if f200_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_PARTY then
 			table.insert( f200_local0, {
 				action = CoD.OverlayUtility.Overlays.LobbyLeavePopup.getGoBackFn( LuaEnum.LEAVE_WITH_PARTY.WITHOUT ),
-				text = 0x4BE8031E505109A
+				text = "menu/leave_lobby_leave_party"
 			} )
 		elseif f200_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_AND_DISBAND_PARTY then
 			table.insert( f200_local0, {
 				action = CoD.OverlayUtility.Overlays.LobbyLeavePopup.getGoBackFn( LuaEnum.LEAVE_WITH_PARTY.WITHOUT ),
-				text = 0xEA3B4895763DFF0
+				text = "menu/leave_lobby_leave_and_disband_party"
 			} )
 		elseif f200_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY then
 			table.insert( f200_local0, {
@@ -2147,12 +2147,12 @@ f0_local3.LeaveLobbyPopupPC = {
 		elseif f200_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.LEAVE_LOBBY_AND_PARTY then
 			table.insert( f200_local0, {
 				action = CoD.OverlayUtility.Overlays.LobbyLeavePopup.getGoBackFn( LuaEnum.LEAVE_WITH_PARTY.WITHOUT, f200_arg1 ),
-				text = 0xACDE687F90ACD0B
+				text = "menu/leave_lobby_leave_lobby_and_party"
 			} )
 		elseif f200_arg0 == LuaEnum.LEAVE_LOBBY_POPUP.BRING_PARTY_LEAVE_ALONE then
 			table.insert( f200_local0, {
 				action = CoD.OverlayUtility.Overlays.LobbyLeavePopup.getGoBackFn( LuaEnum.LEAVE_WITH_PARTY.WITH ),
-				text = 0x7D920DBE7BE3E1D
+				text = "menu/leave_lobby_bring_party"
 			} )
 			table.insert( f200_local0, {
 				action = CoD.OverlayUtility.Overlays.LobbyLeavePopup.getGoBackFn( LuaEnum.LEAVE_WITH_PARTY.WITHOUT ),
@@ -2166,12 +2166,12 @@ f0_local3.LeaveLobbyPopupPC = {
 						controller = f201_arg1
 					} )
 				end,
-				text = 0x349737B0BDAA763
+				text = "menu/confirm_caps"
 			} )
 		end
 		table.insert( f200_local0, {
 			action = CoD.OverlayUtility.Overlays.LobbyLeavePopup.getGoBackFn( nil ),
-			text = 0x154915937098D9E,
+			text = "menu/stay",
 			isCancelOption = true
 		} )
 		return f200_local0
@@ -2205,7 +2205,7 @@ f0_local3.LeaveLobbyPopupPC = {
 				return f204_local1.text
 			end
 		end
-		return 0x0
+		return ""
 	end,
 	[CoD.OverlayUtility.xSquarePromptFn] = function ( ... )
 		local f205_local0 = CoD.OverlayUtility.callFnOrGetValue( CoD.OverlayUtility.Overlays.LeaveLobbyPopupPC.options, {
@@ -2238,7 +2238,7 @@ f0_local3.LeaveLobbyPopupPC = {
 				return f207_local1.text
 			end
 		end
-		return 0x0
+		return ""
 	end,
 	[CoD.OverlayUtility.bCirclePromptFn] = function ( ... )
 		local f208_local0 = CoD.OverlayUtility.callFnOrGetValue( CoD.OverlayUtility.Overlays.LeaveLobbyPopupPC.options, {
@@ -2267,7 +2267,7 @@ f0_local3.LeaveLobbyPopupPC = {
 				return f210_local1.text
 			end
 		end
-		return 0x0
+		return ""
 	end
 }
 f0_local3.ResetCustomGameSettingsPC = {
@@ -2280,7 +2280,7 @@ f0_local3.ResetCustomGameSettingsPC = {
 			return {
 				{
 					models = {
-						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x9947780A0E1251E ) )
+						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "platform/reset_all" ) )
 					},
 					properties = {
 						action = function ( f213_arg0, f213_arg1, f213_arg2, f213_arg3, f213_arg4 )
@@ -2292,7 +2292,7 @@ f0_local3.ResetCustomGameSettingsPC = {
 				},
 				{
 					models = {
-						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x37C39B4D7F22B61 ) )
+						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "platform/cancel" ) )
 					},
 					properties = {
 						action = function ( f214_arg0, f214_arg1, f214_arg2, f214_arg3, f214_arg4 )
@@ -2313,7 +2313,7 @@ f0_local3.ResetCustomGameSettingsPC = {
 		end
 		
 	end,
-	[CoD.OverlayUtility.aCrossPromptText] = 0x9947780A0E1251E,
+	[CoD.OverlayUtility.aCrossPromptText] = "platform/reset_all",
 	[CoD.OverlayUtility.bCirclePromptFn] = function ( f217_arg0 )
 		return function ( f218_arg0, f218_arg1 )
 			GoBack( f218_arg0, f218_arg1 )
@@ -2340,7 +2340,7 @@ f0_local3.ResetPCSettings = {
 	description = function ( f220_arg0 )
 		local f220_local0
 		if f220_arg0 == CoD.PCOptionsUtility.OptionTabIds.Graphic then
-			f220_local0 = 0x0
+			f220_local0 = ""
 			if not f220_local0 then
 			
 			else
@@ -2441,7 +2441,7 @@ f0_local3.ResetPCSettings = {
 f0_local3.ResetAllPCOptions = {
 	menuName = "SystemOverlay_Compact",
 	title = Engine[0xF9F1239CFD921FE]( 0x97B6997ACC73953 ),
-	description = 0x0,
+	description = "",
 	categoryType = CoD.OverlayUtility.OverlayTypes.Settings,
 	listDatasource = function ()
 		DataSources.ResetPCControls_List = DataSourceHelpers.ListSetup( "ResetPCControls_List", function ( f230_arg0 )
@@ -2488,7 +2488,7 @@ f0_local3.ApplyPresetConfirmation = {
 			return {
 				{
 					models = {
-						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xC26F0C4EC974DD9 ) )
+						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "options/pc_overwrite" ) )
 					},
 					properties = {
 						action = function ( f235_arg0, f235_arg1, f235_arg2, f235_arg3, f235_arg4 )
@@ -2552,7 +2552,7 @@ f0_local3.ApplyPresetConfirmation = {
 		end
 		
 	end,
-	[CoD.OverlayUtility.aCrossPromptText] = 0xC26F0C4EC974DD9,
+	[CoD.OverlayUtility.aCrossPromptText] = "options/pc_overwrite",
 	[CoD.OverlayUtility.xSquarePromptFn] = function ( f241_arg0 )
 		return function ( f242_arg0, f242_arg1 )
 			if f242_arg0._resetDropdownOnCancel then
@@ -2612,7 +2612,7 @@ f0_local3.ResetPCControls = {
 }
 f0_local3.ApplyPCGraphics = {
 	menuName = "SystemOverlay_Compact",
-	title = Engine[0xF9F1239CFD921FE]( 0x713A32CF64F9F58 ),
+	title = Engine[0xF9F1239CFD921FE]( "platform/apply_graphics_confirm" ),
 	description = 0xC5F255F9788B3A1,
 	categoryType = CoD.OverlayUtility.OverlayTypes.Settings,
 	listDatasource = function ()
@@ -2754,7 +2754,7 @@ f0_local3.ResetCodCasterSettingsPC = {
 			return {
 				{
 					models = {
-						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x9947780A0E1251E ) )
+						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "platform/reset_all" ) )
 					},
 					properties = {
 						action = function ( f267_arg0, f267_arg1, f267_arg2, f267_arg3, f267_arg4 )
@@ -2767,7 +2767,7 @@ f0_local3.ResetCodCasterSettingsPC = {
 				},
 				{
 					models = {
-						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x37C39B4D7F22B61 ) )
+						displayText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "platform/cancel" ) )
 					},
 					properties = {
 						action = function ( f268_arg0, f268_arg1, f268_arg2, f268_arg3, f268_arg4 )
@@ -2788,7 +2788,7 @@ f0_local3.ResetCodCasterSettingsPC = {
 		end
 		
 	end,
-	[CoD.OverlayUtility.aCrossPromptText] = 0x9947780A0E1251E,
+	[CoD.OverlayUtility.aCrossPromptText] = "platform/reset_all",
 	[CoD.OverlayUtility.bCirclePromptFn] = function ( f271_arg0 )
 		return function ( f272_arg0, f272_arg1 )
 			GoBack( f272_arg0, f272_arg1 )
@@ -2891,34 +2891,34 @@ end
 CoD.PCUtility.SetupButtonPromptForPC = function ( f281_arg0, f281_arg1, f281_arg2 )
 	f281_arg0:setHandleMouse( true )
 	if f281_arg2 ~= nil then
-		CoD.Menu.AddButtonCallbackFunction( f281_arg2, f281_arg0, f281_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f282_arg0, f282_arg1 )
+		CoD.Menu.AddButtonCallbackFunction( f281_arg2, f281_arg0, f281_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu )
 			if not CoD.Menu.SpinnerIsActive then
 				local f282_local0, f282_local1 = nil
-				local f282_local2 = f282_arg0:getModel()
+				local f282_local2 = element:getModel()
 				if f282_local2 then
 					f282_local0 = f282_local2.Button and f282_local2.Button:get()
 					f282_local1 = f282_local2.KeyShortcut and f282_local2.KeyShortcut:get()
 				end
-				f282_arg0:playClip( "DefaultClip" )
-				CoD.PCUtil.SimulateButtonPressUsingElement( f281_arg2, f282_arg0, f281_arg1, f282_local1 == "ui_confirm" )
+				element:playClip( "DefaultClip" )
+				CoD.PCUtil.SimulateButtonPressUsingElement( f281_arg2, element, f281_arg1, f282_local1 == "ui_confirm" )
 				return true
 			else
 				
 			end
 		end )
-		CoD.Menu.AddButtonCallbackFunction( f281_arg2, f281_arg0, f281_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f283_arg0, f283_arg1 )
+		CoD.Menu.AddButtonCallbackFunction( f281_arg2, f281_arg0, f281_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu )
 			if not CoD.Menu.SpinnerIsActive then
 				local f283_local0, f283_local1 = nil
-				local f283_local2 = f283_arg0:getModel()
+				local f283_local2 = element:getModel()
 				if f283_local2 then
 					f283_local0 = f283_local2.Button and f283_local2.Button:get()
 					f283_local1 = f283_local2.KeyShortcut and f283_local2.KeyShortcut:get()
 				end
-				f283_arg0:playClip( "DefaultClip" )
+				element:playClip( "DefaultClip" )
 				if f283_local0 == Enum.LUIButton[0x755DA1E2E7C263F] then
 					return false
 				else
-					CoD.PCUtil.SimulateButtonPressUsingElement( f281_arg2, f283_arg0, f281_arg1, f283_local1 == "ui_confirm" )
+					CoD.PCUtil.SimulateButtonPressUsingElement( f281_arg2, element, f281_arg1, f283_local1 == "ui_confirm" )
 					return true
 				end
 			else
@@ -3138,7 +3138,7 @@ end
 CoD.PCUtility.AcceptFriendRequestWrapper = function ( f313_arg0 )
 	local f313_local0 = Engine[0x558E88FD7072266]( f313_arg0 )
 	if f313_local0 then
-		CoD.PCUtility.ShowGameEvent( Engine[0xF9F1239CFD921FE]( 0x93668A760B1CB97, CoD.PCBattlenetUtility.StripBattleTagNumber( f313_local0 ) ) )
+		CoD.PCUtility.ShowGameEvent( Engine[0xF9F1239CFD921FE]( "menu/friend_request_accepted", CoD.PCBattlenetUtility.StripBattleTagNumber( f313_local0 ) ) )
 	else
 		CoD.PCUtility.ShowGameEvent( Engine[0xF9F1239CFD921FE]( 0x3F4A6D642604E19 ) )
 	end
@@ -3411,8 +3411,8 @@ CoD.PCUtility.SetupEditControlWithModel = function ( f336_arg0, f336_arg1, f336_
 	end
 	
 	LUI.OverrideFunction_CallOriginalSecond( f336_arg0, "close", f336_arg0.__onEditClose )
-	CoD.Menu.AddButtonCallbackFunction( f336_arg2, f336_arg0, f336_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f339_arg0, f339_arg1 )
-		f336_arg2:ChangeInputFocus( f336_arg1, f339_arg0 )
+	CoD.Menu.AddButtonCallbackFunction( f336_arg2, f336_arg0, f336_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu )
+		f336_arg2:ChangeInputFocus( f336_arg1, element )
 		return true
 	end )
 	f336_arg0.__editboxGainInputFocus = function ( f340_arg0, f340_arg1 )
@@ -3831,10 +3831,10 @@ CoD.PCUtility.ChatClientInputTextFieldUpdatePrompt = function ( f376_arg0, f376_
 		Engine.SetModelValue( f376_local0, Engine[0xF9F1239CFD921FE]( 0xCC67122F64C7D6A ) )
 		return 
 	elseif not ChatClientIsAvailable( f376_arg0, f376_arg1, f376_arg2 ) then
-		Engine.SetModelValue( f376_local0, Engine[0xF9F1239CFD921FE]( 0xD6681AB0261E81B ) )
+		Engine.SetModelValue( f376_local0, Engine[0xF9F1239CFD921FE]( "platform/chat_not_available" ) )
 		return 
 	else
-		Engine.SetModelValue( f376_local0, Engine[0xF9F1239CFD921FE]( 0xC145B7A0B9AFC02 ) )
+		Engine.SetModelValue( f376_local0, Engine[0xF9F1239CFD921FE]( "platform/chat_click_to_enter_chat" ) )
 		Engine.ForceNotifyModelSubscriptions( f376_local0 )
 	end
 end
@@ -4019,7 +4019,7 @@ CoD.PCUtility.BeginBattlenetCheckout = function ( f400_arg0, f400_arg1 )
 			GoBack( f400_arg0, f400_arg1 )
 			local f401_local0 = Engine[0xF42BE38AAF0C6FB]( f400_arg1 )
 			if f401_local0 ~= nil then
-				LuaUtils.ShowMessageDialog( f400_arg1, Enum.MessageDialogType[0x8BCCDF5038F1B0B], Engine[0xF9F1239CFD921FE]( 0xA6BBF6C8401F36E, f401_local0 ), Engine[0xF9F1239CFD921FE]( 0xED7AAC4B721DBBF ) )
+				LuaUtils.ShowMessageDialog( f400_arg1, Enum.MessageDialogType[0x8BCCDF5038F1B0B], Engine[0xF9F1239CFD921FE]( 0xA6BBF6C8401F36E, f401_local0 ), Engine[0xF9F1239CFD921FE]( "menu/error" ) )
 			end
 		end
 	end, false )
@@ -4043,11 +4043,11 @@ end
 
 CoD.PCUtility.ShowBattleNetCatalogError = function ( f406_arg0, f406_arg1 )
 	GoBack( f406_arg0, f406_arg1 )
-	LuaUtils.ShowMessageDialog( f406_arg1, Enum.MessageDialogType[0x8BCCDF5038F1B0B], Engine[0xF9F1239CFD921FE]( 0x421AFF727532EEC, Engine[0xF47248634BEA927]( f406_arg1 ) ), Engine[0xF9F1239CFD921FE]( 0xED7AAC4B721DBBF ) )
+	LuaUtils.ShowMessageDialog( f406_arg1, Enum.MessageDialogType[0x8BCCDF5038F1B0B], Engine[0xF9F1239CFD921FE]( 0x421AFF727532EEC, Engine[0xF47248634BEA927]( f406_arg1 ) ), Engine[0xF9F1239CFD921FE]( "menu/error" ) )
 end
 
 CoD.PCUtility.ShowBattleNetReconciliationError = function ( f407_arg0, f407_arg1 )
-	LuaUtils.ShowMessageDialog( f407_arg1, Enum.MessageDialogType[0x8BCCDF5038F1B0B], Engine[0xF9F1239CFD921FE]( 0x4A89E3BABEE02B7 ), Engine[0xF9F1239CFD921FE]( 0xED7AAC4B721DBBF ) )
+	LuaUtils.ShowMessageDialog( f407_arg1, Enum.MessageDialogType[0x8BCCDF5038F1B0B], Engine[0xF9F1239CFD921FE]( 0x4A89E3BABEE02B7 ), Engine[0xF9F1239CFD921FE]( "menu/error" ) )
 end
 
 CoD.PCUtility.ActiveParentElementGrid = function ( f408_arg0, f408_arg1, f408_arg2 )
@@ -4080,7 +4080,7 @@ CoD.PCUtility.RefreshBnetProductsList = function ( f410_arg0, f410_arg1, f410_ar
 	local f410_local0 = Engine[0x307A0A3BE745017]( f410_arg0 )
 	if table.getn( f410_local0 ) == 0 then
 		GoBack( f410_arg2, f410_arg0 )
-		LuaUtils.ShowMessageDialog( f410_arg0, Enum.MessageDialogType[0x8BCCDF5038F1B0B], Engine[0xF9F1239CFD921FE]( 0xE090CBB79C37395 ), Engine[0xF9F1239CFD921FE]( 0xED7AAC4B721DBBF ) )
+		LuaUtils.ShowMessageDialog( f410_arg0, Enum.MessageDialogType[0x8BCCDF5038F1B0B], Engine[0xF9F1239CFD921FE]( 0xE090CBB79C37395 ), Engine[0xF9F1239CFD921FE]( "menu/error" ) )
 	else
 		DataSources.BnetStore = DataSourceHelpers.ListSetup( "PC.BnetStore", function ( f411_arg0 )
 			return CoD.PCUtil.PreparePCBnetStoreCatalog( f411_arg0, f410_local0 )
@@ -4095,17 +4095,17 @@ CoD.PCUtility.RefreshBnetProductsList = function ( f410_arg0, f410_arg1, f410_ar
 end
 
 CoD.PCUtility.SetupSettingsApplyButtonPrompt = function ( f412_arg0, f412_arg1, f412_arg2 )
-	f412_arg0:AddButtonCallbackFunction( f412_arg2, f412_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_contextual_1", function ( f413_arg0, f413_arg1, f413_arg2, f413_arg3 )
-		if CoD.PCOptionsUtility.IsGraphicsOptions( f413_arg2 ) and CoD.PCOptionsUtility.AreOptionsDirty( f413_arg2 ) then
-			CoD.PCOptionsUtility.ApplyOptionsValue( f412_arg2, f413_arg2 )
+	f412_arg0:AddButtonCallbackFunction( f412_arg2, f412_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_contextual_1", function ( element, menu, controller, model )
+		if CoD.PCOptionsUtility.IsGraphicsOptions( controller ) and CoD.PCOptionsUtility.AreOptionsDirty( controller ) then
+			CoD.PCOptionsUtility.ApplyOptionsValue( f412_arg2, controller )
 			return true
 		else
 			
 		end
-	end, function ( f414_arg0, f414_arg1, f414_arg2 )
-		local f414_local0 = CoD.PCOptionsUtility.GetCurrentOptionTabId( f414_arg2 )
+	end, function ( element, menu, controller )
+		local f414_local0 = CoD.PCOptionsUtility.GetCurrentOptionTabId( controller )
 		local f414_local1 = CoD.Menu.SetButtonLabel
-		local f414_local2 = f414_arg1
+		local f414_local2 = menu
 		local f414_local3 = Enum.LUIButton[0xE6DB407A2AF8B09]
 		local f414_local4
 		if f414_local0 == CoD.PCOptionsUtility.OptionTabIds.Graphic then
@@ -4114,14 +4114,14 @@ CoD.PCUtility.SetupSettingsApplyButtonPrompt = function ( f412_arg0, f412_arg1, 
 			
 			else
 				f414_local1( f414_local2, f414_local3, f414_local4, nil, "ui_contextual_1" )
-				if CoD.PCOptionsUtility.IsGraphicsOptions( f414_arg2 ) and CoD.PCOptionsUtility.AreOptionsDirty( f414_arg2 ) then
+				if CoD.PCOptionsUtility.IsGraphicsOptions( controller ) and CoD.PCOptionsUtility.AreOptionsDirty( controller ) then
 					return true
 				else
 					return false
 				end
 			end
 		end
-		f414_local4 = 0x0
+		f414_local4 = ""
 	end, true )
 end
 
@@ -4133,7 +4133,7 @@ CoD.PCUtility.PreparePCBnetStoreListNavigation = function ( f415_arg0, f415_arg1
 		f415_arg2:ChangeFocusedElement( f415_arg1, f416_arg0, true )
 	end
 	
-	CoD.Menu.AddButtonCallbackFunction( f415_arg2, f415_arg0, f415_arg1, Enum.LUIButton[0x4B11D2B20C75A7F], "ui_navup", function ( f417_arg0, f417_arg1, f417_arg2, f417_arg3 )
+	CoD.Menu.AddButtonCallbackFunction( f415_arg2, f415_arg0, f415_arg1, Enum.LUIButton[0x4B11D2B20C75A7F], "ui_navup", function ( element, menu, controller, f417_arg3 )
 		if not f415_arg0.m_disableNavigation then
 			f415_arg0:navigateItemUp()
 			f415_local0( f415_arg0.activeWidget )
@@ -4142,7 +4142,7 @@ CoD.PCUtility.PreparePCBnetStoreListNavigation = function ( f415_arg0, f415_arg1
 			
 		end
 	end )
-	CoD.Menu.AddButtonCallbackFunction( f415_arg2, f415_arg0, f415_arg1, Enum.LUIButton[0xD4C15FE32148D3A], "ui_navdown", function ( f418_arg0, f418_arg1, f418_arg2, f418_arg3 )
+	CoD.Menu.AddButtonCallbackFunction( f415_arg2, f415_arg0, f415_arg1, Enum.LUIButton[0xD4C15FE32148D3A], "ui_navdown", function ( element, menu, controller, f418_arg3 )
 		if not f415_arg0.m_disableNavigation then
 			f415_arg0:navigateItemDown()
 			f415_local0( f415_arg0.activeWidget )
@@ -4151,8 +4151,8 @@ CoD.PCUtility.PreparePCBnetStoreListNavigation = function ( f415_arg0, f415_arg1
 			
 		end
 	end )
-	CoD.Menu.AddButtonCallbackFunction( f415_arg2, f415_arg0, f415_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "SPACE", function ( f419_arg0, f419_arg1, f419_arg2, f419_arg3 )
-		CoD.PCUtility.OpenBattlenetCheckoutMenu( f419_arg2, f419_arg1, f415_arg0 )
+	CoD.Menu.AddButtonCallbackFunction( f415_arg2, f415_arg0, f415_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "SPACE", function ( element, menu, controller, f419_arg3 )
+		CoD.PCUtility.OpenBattlenetCheckoutMenu( controller, menu, f415_arg0 )
 		return true
 	end )
 end
@@ -4173,9 +4173,9 @@ end
 
 CoD.PCUtility.SetupDismissTimerRewardsAAR = function ( f423_arg0, f423_arg1, f423_arg2 )
 	f423_arg2.__dismissRewardTimer = LUI.UITimer.newElementTimer( 350, true, function ()
-		f423_arg2:AddButtonCallbackFunction( f423_arg0, f423_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f425_arg0, f425_arg1, f425_arg2, f425_arg3 )
-			CoD.AARUtility.InitRewardsPaging( f425_arg2 )
-			GoBack( f425_arg0, f425_arg2 )
+		f423_arg2:AddButtonCallbackFunction( f423_arg0, f423_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+			CoD.AARUtility.InitRewardsPaging( controller )
+			GoBack( element, controller )
 			return true
 		end )
 		f423_arg2.__dismissRewardTimer = nil
@@ -4189,7 +4189,7 @@ end
 
 CoD.PCUtility.GetKeyboardKeybindOnly = function ( f427_arg0, f427_arg1 )
 	local f427_local0, f427_local1 = Engine[0x7C4C4DBF61B869E]( f427_arg0, f427_arg1, 0, true )
-	return f427_local1 or f427_local0 or "[" .. Engine[0xF9F1239CFD921FE]( menu/empty ) .. "]"
+	return f427_local1 or f427_local0 or "[" .. Engine[0xF9F1239CFD921FE]( "menu/empty" ) .. "]"
 end
 
 CoD.PCUtility.IsCurrentHudOccluded = function ( f428_arg0, f428_arg1 )
@@ -4210,15 +4210,15 @@ CoD.PCUtility.SetTextFromTelemetryModel = function ( f430_arg0, f430_arg1, f430_
 	local f430_local0 = Engine.GetModelValue( Engine.CreateModel( Engine.GetGlobalModel(), f430_arg2 ) )
 	if f430_local0 and f430_local0 > 0 then
 		f430_arg0.Label:setText( Engine[0xF9F1239CFD921FE]( f430_arg3, f430_local0 ) )
-	elseif f430_arg4 and f430_arg4 ~= 0x0 then
+	elseif f430_arg4 and f430_arg4 ~= "" then
 		f430_arg0.Label:setText( Engine[0xF9F1239CFD921FE]( f430_arg4 ) )
 	end
 end
 
 CoD.PCUtility.SetupSafeAreaBorders = function ( f431_arg0, f431_arg1, f431_arg2 )
 	f431_arg0.safeArea:sizeToSafeArea( f431_arg1, true )
-	CoD.SafeArea.InitialX = Engine.ProfileFloat( f431_arg1, 0x7664E60A992DFDA )
-	CoD.SafeArea.InitialY = Engine.ProfileFloat( f431_arg1, 0x803283CE6FF32EC )
+	CoD.SafeArea.InitialX = Engine.ProfileFloat( f431_arg1, "hudboundstweakable_horizontal" )
+	CoD.SafeArea.InitialY = Engine.ProfileFloat( f431_arg1, "hudboundstweakable_vertical" )
 	f431_arg0.safeArea.TBorder.emptyFocusableClic:setHandleMouse( true )
 	f431_arg0.safeArea.BBorder.emptyFocusableClic:setHandleMouse( true )
 	f431_arg0.safeArea.LBorder.emptyFocusableClic:setHandleMouse( true )
@@ -4521,7 +4521,7 @@ CoD.PCUtility.DisplayJapanPrePurchasePopup = function ( f461_arg0, f461_arg1, f4
 	assert( Engine[0x543F4AF0F31BA06]() )
 	if f461_arg3.purchaseProductElement then
 		local f461_local0 = f461_arg3.purchaseProductElement:getModel()
-		local f461_local1 = DataSources.PCKoreaRefundWarning.prepare( f461_arg2, f461_arg0, f461_arg4, f461_local0.fullName and f461_local0.fullName:get() or f461_local0.name:get(), "", f461_local0.price:get(), "Call of Duty Points (CP)?????????????????????CP????????????????????????????????????6?????????????????????1??????????????????????????????\n???????????????CP????????????????????????????????????????????????????????????????????????", "", f461_local0.productImage:get() or "blacktransparent", "blacktransparent", false, false, false, false, "", false, "menu/purchase" )
+		local f461_local1 = DataSources.PCKoreaRefundWarning.prepare( f461_arg2, f461_arg0, f461_arg4, f461_local0.fullName and f461_local0.fullName:get() or f461_local0.name:get(), "", f461_local0.price:get(), "Call of Duty Points (CP)?????????????????????CP????????????????????????????????????6?????????????????????1??????????????????????????????\n???????????????CP????????????????????????????????????????????????????????????????????????", "", f461_local0.productImage:get() or "blacktransparent", "blacktransparent", nil, false, false, false, "", false, "menu/purchase" )
 		if f461_local1 then
 			local f461_local2 = OpenPopup( f461_arg1, "PC_Store_Refund_Korea", f461_arg2 )
 			f461_local2:setModel( f461_local1, f461_arg2 )

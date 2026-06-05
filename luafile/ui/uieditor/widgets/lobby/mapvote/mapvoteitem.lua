@@ -1,4 +1,4 @@
-require( "ui/uieditor/widgets/common/CommonButtonOutlineThin" )
+require( "ui/uieditor/widgets/common/commonbuttonoutlinethin" )
 require( "ui/uieditor/widgets/lobby/mapvote/mapvotemapnamegamemodelayout" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
 
@@ -14,7 +14,7 @@ CoD.MapVoteItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local MapImage = LUI.UIImage.new( 0, 1, 6, -6, 0, 1.04, 28, -14 )
-	MapImage:setImage( RegisterImage( 0x4121E87D7795132 ) )
+	MapImage:setImage( RegisterImage( "img_t8_menu_mp_preview_mp_gridlock" ) )
 	MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	MapImage:setShaderVector( 0, 0, 0, 0, 0 )
 	MapImage:setShaderVector( 1, 1, 1, 0, 0 )
@@ -63,7 +63,7 @@ CoD.MapVoteItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	
 	local TopBracket = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 21, 41 )
 	TopBracket:setAlpha( 0.5 )
-	TopBracket:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
+	TopBracket:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_line" ) )
 	TopBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	TopBracket:setShaderVector( 0, 0, 0, 0, 0 )
 	TopBracket:setupNineSliceShader( 128, 128 )
@@ -73,7 +73,7 @@ CoD.MapVoteItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	local BtmBracket = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -20, 0 )
 	BtmBracket:setAlpha( 0.5 )
 	BtmBracket:setZRot( 180 )
-	BtmBracket:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
+	BtmBracket:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_line" ) )
 	BtmBracket:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	BtmBracket:setShaderVector( 0, 0, 0, 0, 0 )
 	BtmBracket:setupNineSliceShader( 128, 128 )

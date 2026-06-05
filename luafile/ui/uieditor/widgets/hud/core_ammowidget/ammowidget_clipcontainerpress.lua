@@ -38,7 +38,7 @@ CoD.AmmoWidget_ClipContainerPress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local Glow = LUI.UIImage.new( 0, 0, 47, 123, 0, 0, -19, 57 )
 	Glow:setRGB( 1, 0, 0 )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0xC58FF2328701EBA ) )
+	Glow:setImage( RegisterImage( "uie_ui_hud_core_no_ammo_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
@@ -46,7 +46,7 @@ CoD.AmmoWidget_ClipContainerPress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local LED = LUI.UIImage.new( 0, 0, 46, 122, 0, 0, -18, 58 )
 	LED:setRGB( 1, 0, 0 )
 	LED:setAlpha( 0 )
-	LED:setImage( RegisterImage( 0x92846624408DDB0 ) )
+	LED:setImage( RegisterImage( "uie_ui_hud_core_no_ammo_led" ) )
 	self:addElement( LED )
 	self.LED = LED
 	

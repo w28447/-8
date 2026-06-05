@@ -93,7 +93,7 @@ CoD.ArenaMapAndGameTypeInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.FocusBrackets = FocusBrackets
 	
 	MapImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	MapImage:setImage( RegisterImage( 0xAA9981A158D630C ) )
+	MapImage:setImage( RegisterImage( "img_t7_menu_mp_preview_sector" ) )
 	MapImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	MapImage:setShaderVector( 0, 0.5, 0.2, 0, 0 )
 	MapImage:setShaderVector( 1, 1, 1, 0, 0 )
@@ -134,8 +134,8 @@ CoD.ArenaMapAndGameTypeInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local DirectorMapAndGameTypeInternalTitles = CoD.DirectorMapAndGameTypeInternalTitles.new( f1_arg0, f1_arg1, 0, 0, -1, 383, 1, 1, -56, -4 )
 	DirectorMapAndGameTypeInternalTitles:setAlpha( 0 )
-	DirectorMapAndGameTypeInternalTitles.Label:setText( Engine[0xF9F1239CFD921FE]( 0xD68F0B827BDBA25 ) )
-	DirectorMapAndGameTypeInternalTitles.SubTitle:setText( Engine[0xF9F1239CFD921FE]( 0xED2FACC41C9E672 ) )
+	DirectorMapAndGameTypeInternalTitles.Label:setText( Engine[0xF9F1239CFD921FE]( "mpui/seaside" ) )
+	DirectorMapAndGameTypeInternalTitles.SubTitle:setText( Engine[0xF9F1239CFD921FE]( "mpui/gamemode_caps" ) )
 	self:addElement( DirectorMapAndGameTypeInternalTitles )
 	self.DirectorMapAndGameTypeInternalTitles = DirectorMapAndGameTypeInternalTitles
 	

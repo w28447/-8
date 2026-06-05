@@ -20,7 +20,7 @@ CoD.PC_StartMenu_Options_Controls_Description.new = function ( f1_arg0, f1_arg1,
 	self.DescriptionTextBox = DescriptionTextBox
 	
 	local PlaceHolderImage = CoD.PC_StartMenu_Options_Controls_DescriptionImage.new( f1_arg0, f1_arg1, 0, 0, 0, 675, 0, 0, 4.5, 384.5 )
-	PlaceHolderImage.PlaceHolderImage:setImage( RegisterImage( 0xD94A99F28B028CF ) )
+	PlaceHolderImage.PlaceHolderImage:setImage( RegisterImage( "img_t7_menu_mp_preview_biodome" ) )
 	self:addElement( PlaceHolderImage )
 	self.PlaceHolderImage = PlaceHolderImage
 	

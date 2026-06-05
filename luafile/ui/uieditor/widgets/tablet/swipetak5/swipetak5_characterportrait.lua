@@ -19,7 +19,7 @@ CoD.SwipeTak5_CharacterPortrait.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local TiledBacking = LUI.UIImage.new( 0, 0, 0, 102, 0, 0, 0, 147 )
 	TiledBacking:setAlpha( 0.4 )
-	TiledBacking:setImage( RegisterImage( 0x5CAABAA447A4FA5 ) )
+	TiledBacking:setImage( RegisterImage( "uie_ui_hud_tak5_player_repeat_bg" ) )
 	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 100, 72 )
@@ -28,7 +28,7 @@ CoD.SwipeTak5_CharacterPortrait.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local TiledBackingAdd = LUI.UIImage.new( 0, 0, 0, 102, 0, 0, 0, 147 )
 	TiledBackingAdd:setAlpha( 0.2 )
-	TiledBackingAdd:setImage( RegisterImage( 0x5CAABAA447A4FA5 ) )
+	TiledBackingAdd:setImage( RegisterImage( "uie_ui_hud_tak5_player_repeat_bg" ) )
 	TiledBackingAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledBackingAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBackingAdd:setupNineSliceShader( 100, 72 )
@@ -42,7 +42,7 @@ CoD.SwipeTak5_CharacterPortrait.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.HealthBg = HealthBg
 	
 	local PlayerBgGrid = LUI.UIImage.new( 0, 0, -3, 105, 0, 0, -2.5, 129.5 )
-	PlayerBgGrid:setImage( RegisterImage( 0x9DC7A683B054FFE ) )
+	PlayerBgGrid:setImage( RegisterImage( "uie_ui_hud_tak5_player_grid" ) )
 	PlayerBgGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	PlayerBgGrid:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( PlayerBgGrid )
@@ -125,7 +125,7 @@ CoD.SwipeTak5_CharacterPortrait.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local DeadStipe = LUI.UIImage.new( 0, 0, -1, 103, 0, 0, -1, 131 )
 	DeadStipe:setRGB( 0.79, 0, 0 )
-	DeadStipe:setImage( RegisterImage( 0x35F2A87257C4668 ) )
+	DeadStipe:setImage( RegisterImage( "uie_ui_hud_tak5_player_death_stripe" ) )
 	DeadStipe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	DeadStipe:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( DeadStipe )
@@ -134,7 +134,7 @@ CoD.SwipeTak5_CharacterPortrait.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local DeadStipeAdd = LUI.UIImage.new( 0, 0, -1, 103, 0, 0, -1, 131 )
 	DeadStipeAdd:setRGB( 0.79, 0, 0 )
 	DeadStipeAdd:setAlpha( 0 )
-	DeadStipeAdd:setImage( RegisterImage( 0x35F2A87257C4668 ) )
+	DeadStipeAdd:setImage( RegisterImage( "uie_ui_hud_tak5_player_death_stripe" ) )
 	DeadStipeAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	DeadStipeAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( DeadStipeAdd )
@@ -149,7 +149,7 @@ CoD.SwipeTak5_CharacterPortrait.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.FrameTop = FrameTop
 	
 	local FrameBot = LUI.UIImage.new( 0, 0, -2.5, 105.5, 0, 0, 20.5, 148.5 )
-	FrameBot:setImage( RegisterImage( 0x31697F38A66BF80 ) )
+	FrameBot:setImage( RegisterImage( "uie_ui_hud_tak5_player_repeat_bot_bracket" ) )
 	FrameBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	FrameBot:setShaderVector( 0, 0, 0, 0, 0 )
 	FrameBot:setupNineSliceShader( 6, 64 )
@@ -157,13 +157,13 @@ CoD.SwipeTak5_CharacterPortrait.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.FrameBot = FrameBot
 	
 	local FrameEmpty = LUI.UIImage.new( 0, 0, -3, 105, 0, 0, -2, 150 )
-	FrameEmpty:setImage( RegisterImage( 0xEDBCC4C2BFA3899 ) )
+	FrameEmpty:setImage( RegisterImage( "uie_ui_hud_tak5_player_empty_frame" ) )
 	FrameEmpty:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FrameEmpty )
 	self.FrameEmpty = FrameEmpty
 	
 	local FrameEmptyX = LUI.UIImage.new( 0, 0, -2.5, 105.5, 0, 0, -2, 130 )
-	FrameEmptyX:setImage( RegisterImage( 0xE2EEDF188DF80EB ) )
+	FrameEmptyX:setImage( RegisterImage( "uie_ui_hud_tak5_player_empty" ) )
 	FrameEmptyX:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FrameEmptyX )
 	self.FrameEmptyX = FrameEmptyX
@@ -177,7 +177,7 @@ CoD.SwipeTak5_CharacterPortrait.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local OperatorIndicator = LUI.UIImage.new( 0, 0, -17, 31, 0, 0, -15, 29 )
 	OperatorIndicator:setAlpha( 0 )
-	OperatorIndicator:setImage( RegisterImage( 0xF9A0F7935A578B0 ) )
+	OperatorIndicator:setImage( RegisterImage( "uie_ui_hud_tak5_player_operator_indicator" ) )
 	OperatorIndicator:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	OperatorIndicator:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( OperatorIndicator )
@@ -193,7 +193,7 @@ CoD.SwipeTak5_CharacterPortrait.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local RepeatDotline = LUI.UIImage.new( 0, 0, 0, 102, 0, 0, 127, 131 )
 	RepeatDotline:setAlpha( 0 )
-	RepeatDotline:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	RepeatDotline:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	RepeatDotline:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	RepeatDotline:setShaderVector( 0, 0, 0, 0, 0 )
 	RepeatDotline:setupNineSliceShader( 8, 4 )
@@ -202,7 +202,7 @@ CoD.SwipeTak5_CharacterPortrait.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local CornerPips = LUI.UIImage.new( 0, 0, 75, 97, 0, 0, 3, 9 )
 	CornerPips:setAlpha( 0.5 )
-	CornerPips:setImage( RegisterImage( 0xC634D26DA220F63 ) )
+	CornerPips:setImage( RegisterImage( "uie_ui_hud_tak5_player_boxes" ) )
 	CornerPips:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	CornerPips:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( CornerPips )
@@ -210,7 +210,7 @@ CoD.SwipeTak5_CharacterPortrait.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local skull = LUI.UIImage.new( 0, 0, 1, 101, 0, 0, 1, 129 )
 	skull:setAlpha( 0 )
-	skull:setImage( RegisterImage( 0xDC97E3627F1ACB1 ) )
+	skull:setImage( RegisterImage( "uie_ui_hud_tak5_skull" ) )
 	self:addElement( skull )
 	self.skull = skull
 	

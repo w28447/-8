@@ -93,14 +93,14 @@ LUI.UIList.addUpDownNavigation = function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
 	else
 		f8_arg0._hasUpDownNav = true
 		f8_arg3 = (f8_arg3 or 0) | LUI.GridLayout.NavigationFlags.CHANGE_FOCUS
-		CoD.Menu.AddButtonCallbackFunction( f8_arg1, f8_arg0, f8_arg2, Enum.LUIButton[0x4B11D2B20C75A7F], "ui_navup", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
+		CoD.Menu.AddButtonCallbackFunction( f8_arg1, f8_arg0, f8_arg2, Enum.LUIButton[0x4B11D2B20C75A7F], "ui_navup", function ( element, menu, controller, f9_arg3 )
 			if not f8_arg0.m_disableNavigation and (not (not f8_arg0.dpadDisabled or not IsDpadButton( f9_arg3 )) or f8_arg0:navigateItemUp( f8_arg3 )) then
 				return true
 			else
 				
 			end
 		end )
-		CoD.Menu.AddButtonCallbackFunction( f8_arg1, f8_arg0, f8_arg2, Enum.LUIButton[0xD4C15FE32148D3A], "ui_navdown", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+		CoD.Menu.AddButtonCallbackFunction( f8_arg1, f8_arg0, f8_arg2, Enum.LUIButton[0xD4C15FE32148D3A], "ui_navdown", function ( element, menu, controller, f10_arg3 )
 			if not f8_arg0.m_disableNavigation and (not (not f8_arg0.dpadDisabled or not IsDpadButton( f10_arg3 )) or f8_arg0:navigateItemDown( f8_arg3 )) then
 				return true
 			else
@@ -116,14 +116,14 @@ LUI.UIList.addLeftRightNavigation = function ( f11_arg0, f11_arg1, f11_arg2 )
 	else
 		f11_arg0._hasLeftRightNav = true
 		local f11_local0 = LUI.GridLayout.NavigationFlags.CHANGE_FOCUS
-		CoD.Menu.AddButtonCallbackFunction( f11_arg1, f11_arg0, f11_arg2, Enum.LUIButton[0x57783F8DA4AAEF], "ui_navleft", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
+		CoD.Menu.AddButtonCallbackFunction( f11_arg1, f11_arg0, f11_arg2, Enum.LUIButton[0x57783F8DA4AAEF], "ui_navleft", function ( element, menu, controller, f12_arg3 )
 			if not f11_arg0.m_disableNavigation and (not (not f11_arg0.dpadDisabled or not IsDpadButton( f12_arg3 )) or f11_arg0:navigateItemLeft( f11_local0 )) then
 				return true
 			else
 				
 			end
 		end )
-		CoD.Menu.AddButtonCallbackFunction( f11_arg1, f11_arg0, f11_arg2, Enum.LUIButton[0x571F08AD84807E0], "ui_navright", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
+		CoD.Menu.AddButtonCallbackFunction( f11_arg1, f11_arg0, f11_arg2, Enum.LUIButton[0x571F08AD84807E0], "ui_navright", function ( element, menu, controller, f13_arg3 )
 			if not f11_arg0.m_disableNavigation and (not (not f11_arg0.dpadDisabled or not IsDpadButton( f13_arg3 )) or f11_arg0:navigateItemRight( f11_local0 )) then
 				return true
 			else
@@ -138,8 +138,8 @@ LUI.UIList.new = function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3, f14_arg4, f1
 	f14_local0:setClass( LUI.UIList )
 	f14_local0.isUIList = true
 	f14_local0.m_focusable = true
-	CoD.Menu.AddButtonCallbackFunction( f14_arg0, f14_local0, f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		if f15_arg0 == f14_local0.activeWidget and CoD.Menu.AnyButtonConditionTrue( f15_arg0, f15_arg1, f15_arg2, Enum.LUIButton[0x755DA1E2E7C263F] ) then
+	CoD.Menu.AddButtonCallbackFunction( f14_arg0, f14_local0, f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, f15_arg3 )
+		if element == f14_local0.activeWidget and CoD.Menu.AnyButtonConditionTrue( element, menu, controller, Enum.LUIButton[0x755DA1E2E7C263F] ) then
 			f14_local0:playSound( "list_action" )
 		end
 		return false
@@ -147,14 +147,14 @@ LUI.UIList.new = function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3, f14_arg4, f1
 	f14_local0:addUpDownNavigation( f14_arg0, f14_arg1 )
 	f14_local0:addLeftRightNavigation( f14_arg0, f14_arg1 )
 	if CoD.isPC then
-		CoD.Menu.AddButtonCallbackFunction( f14_arg0, f14_local0, f14_arg1, Enum.LUIButton[0x3C68CCBB77C781C], "MWHEELUP", function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
+		CoD.Menu.AddButtonCallbackFunction( f14_arg0, f14_local0, f14_arg1, Enum.LUIButton[0x3C68CCBB77C781C], "MWHEELUP", function ( element, menu, controller, f16_arg3 )
 			if not f14_local0.m_disableNavigation then
 				return f14_local0:scrollUp()
 			else
 				
 			end
 		end )
-		CoD.Menu.AddButtonCallbackFunction( f14_arg0, f14_local0, f14_arg1, Enum.LUIButton[0x32EBED6749E6EE9], "MWHEELDOWN", function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
+		CoD.Menu.AddButtonCallbackFunction( f14_arg0, f14_local0, f14_arg1, Enum.LUIButton[0x32EBED6749E6EE9], "MWHEELDOWN", function ( element, menu, controller, f17_arg3 )
 			if not f14_local0.m_disableNavigation then
 				return f14_local0:scrollDown()
 			else

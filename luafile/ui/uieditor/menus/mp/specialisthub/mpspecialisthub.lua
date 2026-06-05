@@ -51,7 +51,7 @@ LUI.createMenu.MPSpecialistHUB = function ( f1_arg0, f1_arg1 )
 	
 	local TiledPlusGrid = LUI.UIImage.new( 0, 0, -135, 1920, 0, 0, 0, 1080 )
 	TiledPlusGrid:setAlpha( 0.05 )
-	TiledPlusGrid:setImage( RegisterImage( 0x6E37BAE22631294 ) )
+	TiledPlusGrid:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_repeat_plusgrid" ) )
 	TiledPlusGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledPlusGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledPlusGrid:setupNineSliceShader( 220, 220 )
@@ -60,7 +60,7 @@ LUI.createMenu.MPSpecialistHUB = function ( f1_arg0, f1_arg1 )
 	
 	local SocialFrame = CoD.GenericMenuFrame.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
 	SocialFrame.CommonHeader.BGSceneBlur:setAlpha( 1 )
-	SocialFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x3CB558214901699 ) )
+	SocialFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/personalize_specialist" ) )
 	SocialFrame:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -71,7 +71,7 @@ LUI.createMenu.MPSpecialistHUB = function ( f1_arg0, f1_arg1 )
 	self.SocialFrame = SocialFrame
 	
 	local equipment = CoD.HubEquipmentItem.new( f1_local1, f1_arg0, 0.5, 0.5, 582, 782, 0, 0, 391, 737 )
-	equipment.categoryHeader:setText( LocalizeToUpperString( 0x759164343B5C489 ) )
+	equipment.categoryHeader:setText( LocalizeToUpperString( "weapon/special_issue" ) )
 	self:addElement( equipment )
 	self.equipment = equipment
 	
@@ -109,35 +109,35 @@ LUI.createMenu.MPSpecialistHUB = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0xC083113BC81F23F] )
 		return f5_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( specialists, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
+	f1_local1:AddButtonCallbackFunction( specialists, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		local f6_local0 = OpenOverlay
 		local f6_local1 = self
 		local f6_local2 = "MPSpecialistHUBInspect"
-		local f6_local3 = f6_arg2
+		local f6_local3 = controller
 		local f6_local4 = {
-			_sessionMode = Enum.eModes[0x83EBA96F36BC4E5]
+			_sessionMode = Enum.eModes.mode_multiplayer
 		}
-		local f6_local5 = f6_arg0:getModel()
+		local f6_local5 = element:getModel()
 		f6_local4._selectIndex = f6_local5.characterIndex:get()
-		f6_local4._storageLoadoutBuffer = f6_arg1._storageLoadoutBuffer
+		f6_local4._storageLoadoutBuffer = menu._storageLoadoutBuffer
 		f6_local0( f6_local1, f6_local2, f6_local3, f6_local4 )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( specialists, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_1", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if not CoD.PlayerRoleUtility.IsSelectedShowcaseCharacter( f8_arg0, f8_arg2 ) then
-			CoD.PlayerRoleUtility.SetAsSelectedShowcaseCharacter( f8_arg0, f8_arg2 )
-			UpdateSelfElementState( f8_arg1, self.showcaseCheckbox, f8_arg2 )
+	f1_local1:AddButtonCallbackFunction( specialists, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_1", function ( element, menu, controller, model )
+		if not CoD.PlayerRoleUtility.IsSelectedShowcaseCharacter( element, controller ) then
+			CoD.PlayerRoleUtility.SetAsSelectedShowcaseCharacter( element, controller )
+			UpdateSelfElementState( menu, self.showcaseCheckbox, controller )
 			PlaySoundAlias( "uin_start_char_select" )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if not CoD.PlayerRoleUtility.IsSelectedShowcaseCharacter( f9_arg0, f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if not CoD.PlayerRoleUtility.IsSelectedShowcaseCharacter( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, "ui_contextual_1" )
 			return false
 		else
 			return false
@@ -231,7 +231,7 @@ LUI.createMenu.MPSpecialistHUB = function ( f1_arg0, f1_arg1 )
 			modelName = "currentShowcasedCharacterIndex"
 		} )
 	end, false )
-	showcaseCheckbox.label:setText( Engine[0xF9F1239CFD921FE]( 0xE14BE8E7A50BA2 ) )
+	showcaseCheckbox.label:setText( Engine[0xF9F1239CFD921FE]( "menu/showcase_character" ) )
 	self:addElement( showcaseCheckbox )
 	self.showcaseCheckbox = showcaseCheckbox
 	
@@ -309,11 +309,11 @@ LUI.createMenu.MPSpecialistHUB = function ( f1_arg0, f1_arg1 )
 	showcaseCheckbox:linkToElementModel( specialists, nil, false, function ( model )
 		showcaseCheckbox:setModel( model, f1_arg0 )
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3 )
-		GoBack( self, f27_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f28_arg0, f28_arg1, f28_arg2 )
-		CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

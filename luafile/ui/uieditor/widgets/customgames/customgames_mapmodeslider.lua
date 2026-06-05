@@ -16,7 +16,7 @@ CoD.CustomGames_MapModeSlider.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local ButtonBG = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	ButtonBG:setRGB( 0.38, 0.38, 0.38 )
 	ButtonBG:setAlpha( 0.8 )
-	ButtonBG:setImage( RegisterImage( 0xE3211044E61E1BB ) )
+	ButtonBG:setImage( RegisterImage( "uie_ui_menu_cac_button_bg_generic01" ) )
 	self:addElement( ButtonBG )
 	self.ButtonBG = ButtonBG
 	
@@ -89,7 +89,7 @@ CoD.CustomGames_MapModeSlider.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local ItemFrameAdd = LUI.UIImage.new( 0, 0, -3.5, 403.5, 0, 0, -1, 51 )
 	ItemFrameAdd:setAlpha( 0 )
-	ItemFrameAdd:setImage( RegisterImage( 0xC2AE59F4FA74812 ) )
+	ItemFrameAdd:setImage( RegisterImage( "uie_ui_menu_store_element_frame" ) )
 	ItemFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ItemFrameAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	ItemFrameAdd:setupNineSliceShader( 12, 164 )

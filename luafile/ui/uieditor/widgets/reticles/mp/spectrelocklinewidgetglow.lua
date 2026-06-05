@@ -8,7 +8,7 @@ CoD.SpectreLockLineWidgetGlow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.soundSet = "default"
 	
 	local Line = LUI.UIImage.new( 0, 0, 0, 24, 0, 0, 0, 24 )
-	Line:setImage( RegisterImage( 0x7BD3648A6A7724A ) )
+	Line:setImage( RegisterImage( "uie_spectre_blade_cornerline_glow" ) )
 	Line:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Line )
 	self.Line = Line

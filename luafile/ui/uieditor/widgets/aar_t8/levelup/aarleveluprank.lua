@@ -30,7 +30,7 @@ CoD.AARLevelUpRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local TiledwhiteNoiseBacking = LUI.UIImage.new( 0, 0, 4, 396, 0, 0, 4, 396 )
 	TiledwhiteNoiseBacking:setAlpha( 0.02 )
-	TiledwhiteNoiseBacking:setImage( RegisterImage( 0x7167D8C33A06020 ) )
+	TiledwhiteNoiseBacking:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
 	TiledwhiteNoiseBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledwhiteNoiseBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledwhiteNoiseBacking:setupNineSliceShader( 64, 64 )
@@ -40,7 +40,7 @@ CoD.AARLevelUpRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local FlareLevel = LUI.UIImage.new( 0.5, 0.5, -201, 201, 0.5, 0.5, 198.5, 234.5 )
 	FlareLevel:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	FlareLevel:setScale( 0, 0 )
-	FlareLevel:setImage( RegisterImage( 0xC4CCD81B90B0241 ) )
+	FlareLevel:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
 	FlareLevel:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FlareLevel:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FlareLevel )
@@ -110,7 +110,7 @@ CoD.AARLevelUpRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local Flare = LUI.UIImage.new( 0.5, 0.5, -350, 350, 0.5, 0.5, -90, 90 )
 	Flare:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	Flare:setScale( 0, 0 )
-	Flare:setImage( RegisterImage( 0xC4CCD81B90B0241 ) )
+	Flare:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
 	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Flare:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Flare )
@@ -135,7 +135,7 @@ CoD.AARLevelUpRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local infoBracketTop = LUI.UIImage.new( 0, 0, 2.5, 397.5, 0, 0, 0, 32 )
 	infoBracketTop:setAlpha( 0.6 )
-	infoBracketTop:setImage( RegisterImage( 0xCAD52FFFB7C32C1 ) )
+	infoBracketTop:setImage( RegisterImage( "uie_ui_menu_aar_common_bracket" ) )
 	infoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketTop:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketTop:setupNineSliceShader( 10, 16 )
@@ -144,7 +144,7 @@ CoD.AARLevelUpRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local ZMBotBar = LUI.UIImage.new( 0, 0, -12, 412, 1, 1, -16.5, 23.5 )
 	ZMBotBar:setAlpha( 0 )
-	ZMBotBar:setImage( RegisterImage( 0x24F1A68C216ACF6 ) )
+	ZMBotBar:setImage( RegisterImage( "uie_ui_hud_zm_aar_bot_bar" ) )
 	self:addElement( ZMBotBar )
 	self.ZMBotBar = ZMBotBar
 	

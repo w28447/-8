@@ -10,72 +10,72 @@ CoD.VHUDHawkFramesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local FuiLeft = LUI.UIImage.new( 0.5, 0.5, -484, -404, 0.5, 0.5, 240, 276 )
 	FuiLeft:setAlpha( 0.5 )
-	FuiLeft:setImage( RegisterImage( 0x184787ADFCE8425 ) )
+	FuiLeft:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_detail" ) )
 	FuiLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiLeft )
 	self.FuiLeft = FuiLeft
 	
 	local FuiRight = LUI.UIImage.new( 0.5, 0.5, 484, 404, 0.5, 0.5, 240, 276 )
 	FuiRight:setAlpha( 0.5 )
-	FuiRight:setImage( RegisterImage( 0x184787ADFCE8425 ) )
+	FuiRight:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_detail" ) )
 	FuiRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiRight )
 	self.FuiRight = FuiRight
 	
 	local HalfCircleLine = LUI.UIImage.new( 0.5, 0.5, -135, -15, 0.5, 0.5, -130, 130 )
 	HalfCircleLine:setAlpha( 0.25 )
-	HalfCircleLine:setImage( RegisterImage( 0x33FF4478DF11E9C ) )
+	HalfCircleLine:setImage( RegisterImage( "uie_ui_hud_hawk_outer_half_circle" ) )
 	self:addElement( HalfCircleLine )
 	self.HalfCircleLine = HalfCircleLine
 	
 	local HalfCircleLine2 = LUI.UIImage.new( 0.5, 0.5, 15, 135, 0.5, 0.5, -130, 130 )
 	HalfCircleLine2:setAlpha( 0.25 )
 	HalfCircleLine2:setZRot( 180 )
-	HalfCircleLine2:setImage( RegisterImage( 0x33FF4478DF11E9C ) )
+	HalfCircleLine2:setImage( RegisterImage( "uie_ui_hud_hawk_outer_half_circle" ) )
 	self:addElement( HalfCircleLine2 )
 	self.HalfCircleLine2 = HalfCircleLine2
 	
 	local HalfCircleLine3 = LUI.UIImage.new( 0.5, 0.5, -40, 40, 0.5, 0.5, -136.5, 36.5 )
 	HalfCircleLine3:setAlpha( 0.05 )
 	HalfCircleLine3:setZRot( 270 )
-	HalfCircleLine3:setImage( RegisterImage( 0x33FF4478DF11E9C ) )
+	HalfCircleLine3:setImage( RegisterImage( "uie_ui_hud_hawk_outer_half_circle" ) )
 	self:addElement( HalfCircleLine3 )
 	self.HalfCircleLine3 = HalfCircleLine3
 	
 	local HalfCircleLine4 = LUI.UIImage.new( 0.5, 0.5, -40, 40, 0.5, 0.5, -36.5, 136.5 )
 	HalfCircleLine4:setAlpha( 0.1 )
 	HalfCircleLine4:setZRot( 90 )
-	HalfCircleLine4:setImage( RegisterImage( 0x33FF4478DF11E9C ) )
+	HalfCircleLine4:setImage( RegisterImage( "uie_ui_hud_hawk_outer_half_circle" ) )
 	self:addElement( HalfCircleLine4 )
 	self.HalfCircleLine4 = HalfCircleLine4
 	
 	local HalfCircleFillLarge = LUI.UIImage.new( 0.5, 0.5, -130, 130, 0.5, 0.5, -130, 130 )
 	HalfCircleFillLarge:setAlpha( 0.15 )
-	HalfCircleFillLarge:setImage( RegisterImage( 0x58A7ACB1579B216 ) )
+	HalfCircleFillLarge:setImage( RegisterImage( "uie_ui_hud_hawk_full_half_circle_large" ) )
 	self:addElement( HalfCircleFillLarge )
 	self.HalfCircleFillLarge = HalfCircleFillLarge
 	
 	local HalfCircleFillSmall = LUI.UIImage.new( 0.5, 0.5, -130, 130, 0.5, 0.5, -130, 130 )
 	HalfCircleFillSmall:setAlpha( 0.15 )
-	HalfCircleFillSmall:setImage( RegisterImage( 0xFADF59BB3563566 ) )
+	HalfCircleFillSmall:setImage( RegisterImage( "uie_ui_hud_hawk_full_half_circle" ) )
 	self:addElement( HalfCircleFillSmall )
 	self.HalfCircleFillSmall = HalfCircleFillSmall
 	
 	local Crosshair = LUI.UIImage.new( 0.5, 0.5, -131.5, 131.5, 0.5, 0.5, -131.5, 131.5 )
-	Crosshair:setImage( RegisterImage( 0x5734FAA4CD3F53B ) )
+	Crosshair:setImage( RegisterImage( "uie_ui_hud_hawk_crosshairs" ) )
 	self:addElement( Crosshair )
 	self.Crosshair = Crosshair
 	
 	local Line = LUI.UIImage.new( 0.5, 0.5, 118.5, 178.5, 0.5, 0.5, -9, 7 )
 	Line:setAlpha( 0.25 )
-	Line:setImage( RegisterImage( 0xE405AE64F403C44 ) )
+	Line:setImage( RegisterImage( "uie_ui_hud_hawk_horizon_line" ) )
 	Line:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Line )
 	self.Line = Line
 	
 	local Line2 = LUI.UIImage.new( 0.5, 0.5, -178.5, -118.5, 0.5, 0.5, -9, 7 )
 	Line2:setAlpha( 0.25 )
-	Line2:setImage( RegisterImage( 0xE405AE64F403C44 ) )
+	Line2:setImage( RegisterImage( "uie_ui_hud_hawk_horizon_line" ) )
 	Line2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Line2 )
 	self.Line2 = Line2
@@ -83,7 +83,7 @@ CoD.VHUDHawkFramesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local Line3 = LUI.UIImage.new( 0.5, 0.5, -15, 15, 0.5, 0.5, -142, -126 )
 	Line3:setAlpha( 0.1 )
 	Line3:setZRot( 90 )
-	Line3:setImage( RegisterImage( 0xE405AE64F403C44 ) )
+	Line3:setImage( RegisterImage( "uie_ui_hud_hawk_horizon_line" ) )
 	Line3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Line3 )
 	self.Line3 = Line3
@@ -91,21 +91,21 @@ CoD.VHUDHawkFramesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local Line4 = LUI.UIImage.new( 0.5, 0.5, -15, 15, 0.5, 0.5, 126, 142 )
 	Line4:setAlpha( 0.1 )
 	Line4:setZRot( 90 )
-	Line4:setImage( RegisterImage( 0xE405AE64F403C44 ) )
+	Line4:setImage( RegisterImage( "uie_ui_hud_hawk_horizon_line" ) )
 	Line4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Line4 )
 	self.Line4 = Line4
 	
 	local Line5 = LUI.UIImage.new( 0.5, 0.5, 197.5, 217.5, 0.5, 0.5, -16, 14 )
 	Line5:setAlpha( 0.1 )
-	Line5:setImage( RegisterImage( 0xE405AE64F403C44 ) )
+	Line5:setImage( RegisterImage( "uie_ui_hud_hawk_horizon_line" ) )
 	Line5:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Line5 )
 	self.Line5 = Line5
 	
 	local Line6 = LUI.UIImage.new( 0.5, 0.5, -217.5, -197.5, 0.5, 0.5, -16, 14 )
 	Line6:setAlpha( 0.1 )
-	Line6:setImage( RegisterImage( 0xE405AE64F403C44 ) )
+	Line6:setImage( RegisterImage( "uie_ui_hud_hawk_horizon_line" ) )
 	Line6:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Line6 )
 	self.Line6 = Line6

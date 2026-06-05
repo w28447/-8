@@ -16,11 +16,11 @@ CoD.DirectorTogglePartyFill.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local DirectorTogglePartyFillInternal = CoD.DirectorTogglePartyFillInternal.new( f1_arg0, f1_arg1, 0, 1, 0, 0, 0, 1, 0, 0 )
 	DirectorTogglePartyFillInternal.Tint:setRGB( 0.16, 0.16, 0.17 )
-	DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( 0x17857948FC2CCFC ) )
-	DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( 0x17857948FC2CCFC ) )
-	DirectorTogglePartyFillInternal.MiddleText:setText( LocalizeToUpperString( 0x502AB80B388C54F ) )
+	DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( "menu/off" ) )
+	DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( "menu/off" ) )
+	DirectorTogglePartyFillInternal.MiddleText:setText( LocalizeToUpperString( "menu/fill_squad" ) )
 	DirectorTogglePartyFillInternal.MiddleText:setTTF( "ttmussels_regular" )
-	DirectorTogglePartyFillInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0x502AB80B388C54F ) )
+	DirectorTogglePartyFillInternal.MiddleTextFocus:setText( LocalizeToUpperString( "menu/fill_squad" ) )
 	DirectorTogglePartyFillInternal.MiddleTextFocus:setTTF( "ttmussels_regular" )
 	self:addElement( DirectorTogglePartyFillInternal )
 	self.DirectorTogglePartyFillInternal = DirectorTogglePartyFillInternal
@@ -29,11 +29,11 @@ CoD.DirectorTogglePartyFill.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	DirectorTogglePartyFillClientInternal:setAlpha( 0 )
 	DirectorTogglePartyFillClientInternal.Tint:setAlpha( 1 )
 	DirectorTogglePartyFillClientInternal.DotTiledBacking:setAlpha( 0.5 )
-	DirectorTogglePartyFillClientInternal.Status:setText( LocalizeToUpperString( 0x17857948FC2CCFC ) )
-	DirectorTogglePartyFillClientInternal.StatusFocus:setText( LocalizeToUpperString( 0x17857948FC2CCFC ) )
-	DirectorTogglePartyFillClientInternal.MiddleText:setText( LocalizeToUpperString( 0x502AB80B388C54F ) )
+	DirectorTogglePartyFillClientInternal.Status:setText( LocalizeToUpperString( "menu/off" ) )
+	DirectorTogglePartyFillClientInternal.StatusFocus:setText( LocalizeToUpperString( "menu/off" ) )
+	DirectorTogglePartyFillClientInternal.MiddleText:setText( LocalizeToUpperString( "menu/fill_squad" ) )
 	DirectorTogglePartyFillClientInternal.MiddleText:setTTF( "ttmussels_regular" )
-	DirectorTogglePartyFillClientInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0x502AB80B388C54F ) )
+	DirectorTogglePartyFillClientInternal.MiddleTextFocus:setText( LocalizeToUpperString( "menu/fill_squad" ) )
 	DirectorTogglePartyFillClientInternal.MiddleTextFocus:setTTF( "ttmussels_regular" )
 	self:addElement( DirectorTogglePartyFillClientInternal )
 	self.DirectorTogglePartyFillClientInternal = DirectorTogglePartyFillClientInternal
@@ -112,24 +112,24 @@ CoD.DirectorTogglePartyFill.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	f1_local4( f1_local3, f1_local5["lobbyRoot.lobbyNav"], function ( f9_arg0, f9_arg1 )
 		CoD.Menu.UpdateButtonShownState( f9_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		if IsSelfInState( self, "HostOff" ) and not IsGameLobbyActive() then
-			SetFillParty( self, f10_arg0, f10_arg2, true )
+			SetFillParty( self, element, controller, true )
 			PlaySoundAlias( "uin_paint_select" )
 			return true
 		elseif IsSelfInState( self, "HostOn" ) and not IsGameLobbyActive() then
-			SetFillParty( self, f10_arg0, f10_arg2, false )
+			SetFillParty( self, element, controller, false )
 			PlaySoundAlias( "uin_paint_select" )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
+	end, function ( element, menu, controller )
 		if IsSelfInState( self, "HostOff" ) and not IsGameLobbyActive() then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif IsSelfInState( self, "HostOn" ) and not IsGameLobbyActive() then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -151,12 +151,12 @@ CoD.DirectorTogglePartyFill.__resetProperties = function ( f12_arg0 )
 	f12_arg0.DirectorTogglePartyFillClientInternal:completeAnimation()
 	f12_arg0.DirectorTogglePartyFillInternal:setAlpha( 1 )
 	f12_arg0.DirectorTogglePartyFillInternal:setScale( 1, 1 )
-	f12_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( 0x17857948FC2CCFC ) )
-	f12_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( 0x17857948FC2CCFC ) )
+	f12_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( "menu/off" ) )
+	f12_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( "menu/off" ) )
 	f12_arg0.DirectorTogglePartyFillClientInternal:setAlpha( 0 )
 	f12_arg0.DirectorTogglePartyFillClientInternal:setScale( 1, 1 )
-	f12_arg0.DirectorTogglePartyFillClientInternal.Status:setText( LocalizeToUpperString( 0x17857948FC2CCFC ) )
-	f12_arg0.DirectorTogglePartyFillClientInternal.StatusFocus:setText( LocalizeToUpperString( 0x17857948FC2CCFC ) )
+	f12_arg0.DirectorTogglePartyFillClientInternal.Status:setText( LocalizeToUpperString( "menu/off" ) )
+	f12_arg0.DirectorTogglePartyFillClientInternal.StatusFocus:setText( LocalizeToUpperString( "menu/off" ) )
 end
 
 CoD.DirectorTogglePartyFill.__clipsPerState = {
@@ -179,8 +179,8 @@ CoD.DirectorTogglePartyFill.__clipsPerState = {
 			f15_arg0.DirectorTogglePartyFillInternal:completeAnimation()
 			f15_arg0.DirectorTogglePartyFillInternal.Status:completeAnimation()
 			f15_arg0.DirectorTogglePartyFillInternal.StatusFocus:completeAnimation()
-			f15_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( 0x17857948FC2CCFC ) )
-			f15_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( 0x17857948FC2CCFC ) )
+			f15_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( "menu/off" ) )
+			f15_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( "menu/off" ) )
 			f15_arg0.clipFinished( f15_arg0.DirectorTogglePartyFillInternal )
 		end,
 		ChildFocus = function ( f16_arg0, f16_arg1 )
@@ -190,8 +190,8 @@ CoD.DirectorTogglePartyFill.__clipsPerState = {
 			f16_arg0.DirectorTogglePartyFillInternal.Status:completeAnimation()
 			f16_arg0.DirectorTogglePartyFillInternal.StatusFocus:completeAnimation()
 			f16_arg0.DirectorTogglePartyFillInternal:setScale( 1.05, 1.05 )
-			f16_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( 0x17857948FC2CCFC ) )
-			f16_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( 0x17857948FC2CCFC ) )
+			f16_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( "menu/off" ) )
+			f16_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( "menu/off" ) )
 			f16_arg0.clipFinished( f16_arg0.DirectorTogglePartyFillInternal )
 		end,
 		GainChildFocus = function ( f17_arg0, f17_arg1 )
@@ -208,8 +208,8 @@ CoD.DirectorTogglePartyFill.__clipsPerState = {
 			f17_arg0.DirectorTogglePartyFillInternal.Status:completeAnimation()
 			f17_arg0.DirectorTogglePartyFillInternal.StatusFocus:completeAnimation()
 			f17_arg0.DirectorTogglePartyFillInternal:setScale( 1, 1 )
-			f17_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( 0x17857948FC2CCFC ) )
-			f17_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( 0x17857948FC2CCFC ) )
+			f17_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( "menu/off" ) )
+			f17_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( "menu/off" ) )
 			f17_local0( f17_arg0.DirectorTogglePartyFillInternal )
 		end,
 		LoseChildFocus = function ( f19_arg0, f19_arg1 )
@@ -226,8 +226,8 @@ CoD.DirectorTogglePartyFill.__clipsPerState = {
 			f19_arg0.DirectorTogglePartyFillInternal.Status:completeAnimation()
 			f19_arg0.DirectorTogglePartyFillInternal.StatusFocus:completeAnimation()
 			f19_arg0.DirectorTogglePartyFillInternal:setScale( 1.05, 1.05 )
-			f19_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( 0x17857948FC2CCFC ) )
-			f19_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( 0x17857948FC2CCFC ) )
+			f19_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( "menu/off" ) )
+			f19_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( "menu/off" ) )
 			f19_local0( f19_arg0.DirectorTogglePartyFillInternal )
 		end
 	},
@@ -238,8 +238,8 @@ CoD.DirectorTogglePartyFill.__clipsPerState = {
 			f21_arg0.DirectorTogglePartyFillInternal:completeAnimation()
 			f21_arg0.DirectorTogglePartyFillInternal.Status:completeAnimation()
 			f21_arg0.DirectorTogglePartyFillInternal.StatusFocus:completeAnimation()
-			f21_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
-			f21_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
+			f21_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( "menu/on" ) )
+			f21_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( "menu/on" ) )
 			f21_arg0.clipFinished( f21_arg0.DirectorTogglePartyFillInternal )
 		end,
 		ChildFocus = function ( f22_arg0, f22_arg1 )
@@ -249,8 +249,8 @@ CoD.DirectorTogglePartyFill.__clipsPerState = {
 			f22_arg0.DirectorTogglePartyFillInternal.Status:completeAnimation()
 			f22_arg0.DirectorTogglePartyFillInternal.StatusFocus:completeAnimation()
 			f22_arg0.DirectorTogglePartyFillInternal:setScale( 1.05, 1.05 )
-			f22_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
-			f22_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
+			f22_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( "menu/on" ) )
+			f22_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( "menu/on" ) )
 			f22_arg0.clipFinished( f22_arg0.DirectorTogglePartyFillInternal )
 		end,
 		GainChildFocus = function ( f23_arg0, f23_arg1 )
@@ -267,8 +267,8 @@ CoD.DirectorTogglePartyFill.__clipsPerState = {
 			f23_arg0.DirectorTogglePartyFillInternal.Status:completeAnimation()
 			f23_arg0.DirectorTogglePartyFillInternal.StatusFocus:completeAnimation()
 			f23_arg0.DirectorTogglePartyFillInternal:setScale( 1, 1 )
-			f23_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
-			f23_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
+			f23_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( "menu/on" ) )
+			f23_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( "menu/on" ) )
 			f23_local0( f23_arg0.DirectorTogglePartyFillInternal )
 		end,
 		LoseChildFocus = function ( f25_arg0, f25_arg1 )
@@ -285,8 +285,8 @@ CoD.DirectorTogglePartyFill.__clipsPerState = {
 			f25_arg0.DirectorTogglePartyFillInternal.Status:completeAnimation()
 			f25_arg0.DirectorTogglePartyFillInternal.StatusFocus:completeAnimation()
 			f25_arg0.DirectorTogglePartyFillInternal:setScale( 1.05, 1.05 )
-			f25_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
-			f25_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
+			f25_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( "menu/on" ) )
+			f25_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( "menu/on" ) )
 			f25_local0( f25_arg0.DirectorTogglePartyFillInternal )
 		end
 	},
@@ -357,15 +357,15 @@ CoD.DirectorTogglePartyFill.__clipsPerState = {
 			f33_arg0.DirectorTogglePartyFillInternal.Status:completeAnimation()
 			f33_arg0.DirectorTogglePartyFillInternal.StatusFocus:completeAnimation()
 			f33_arg0.DirectorTogglePartyFillInternal:setAlpha( 0 )
-			f33_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
-			f33_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
+			f33_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( "menu/on" ) )
+			f33_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( "menu/on" ) )
 			f33_arg0.clipFinished( f33_arg0.DirectorTogglePartyFillInternal )
 			f33_arg0.DirectorTogglePartyFillClientInternal:completeAnimation()
 			f33_arg0.DirectorTogglePartyFillClientInternal.Status:completeAnimation()
 			f33_arg0.DirectorTogglePartyFillClientInternal.StatusFocus:completeAnimation()
 			f33_arg0.DirectorTogglePartyFillClientInternal:setAlpha( 1 )
-			f33_arg0.DirectorTogglePartyFillClientInternal.Status:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
-			f33_arg0.DirectorTogglePartyFillClientInternal.StatusFocus:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
+			f33_arg0.DirectorTogglePartyFillClientInternal.Status:setText( LocalizeToUpperString( "menu/on" ) )
+			f33_arg0.DirectorTogglePartyFillClientInternal.StatusFocus:setText( LocalizeToUpperString( "menu/on" ) )
 			f33_arg0.clipFinished( f33_arg0.DirectorTogglePartyFillClientInternal )
 		end,
 		ChildFocus = function ( f34_arg0, f34_arg1 )
@@ -375,16 +375,16 @@ CoD.DirectorTogglePartyFill.__clipsPerState = {
 			f34_arg0.DirectorTogglePartyFillInternal.Status:completeAnimation()
 			f34_arg0.DirectorTogglePartyFillInternal.StatusFocus:completeAnimation()
 			f34_arg0.DirectorTogglePartyFillInternal:setAlpha( 0 )
-			f34_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
-			f34_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
+			f34_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( "menu/on" ) )
+			f34_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( "menu/on" ) )
 			f34_arg0.clipFinished( f34_arg0.DirectorTogglePartyFillInternal )
 			f34_arg0.DirectorTogglePartyFillClientInternal:completeAnimation()
 			f34_arg0.DirectorTogglePartyFillClientInternal.Status:completeAnimation()
 			f34_arg0.DirectorTogglePartyFillClientInternal.StatusFocus:completeAnimation()
 			f34_arg0.DirectorTogglePartyFillClientInternal:setAlpha( 1 )
 			f34_arg0.DirectorTogglePartyFillClientInternal:setScale( 1.05, 1.05 )
-			f34_arg0.DirectorTogglePartyFillClientInternal.Status:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
-			f34_arg0.DirectorTogglePartyFillClientInternal.StatusFocus:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
+			f34_arg0.DirectorTogglePartyFillClientInternal.Status:setText( LocalizeToUpperString( "menu/on" ) )
+			f34_arg0.DirectorTogglePartyFillClientInternal.StatusFocus:setText( LocalizeToUpperString( "menu/on" ) )
 			f34_arg0.clipFinished( f34_arg0.DirectorTogglePartyFillClientInternal )
 		end,
 		GainChildFocus = function ( f35_arg0, f35_arg1 )
@@ -394,8 +394,8 @@ CoD.DirectorTogglePartyFill.__clipsPerState = {
 			f35_arg0.DirectorTogglePartyFillInternal.Status:completeAnimation()
 			f35_arg0.DirectorTogglePartyFillInternal.StatusFocus:completeAnimation()
 			f35_arg0.DirectorTogglePartyFillInternal:setAlpha( 0 )
-			f35_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
-			f35_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
+			f35_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( "menu/on" ) )
+			f35_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( "menu/on" ) )
 			f35_arg0.clipFinished( f35_arg0.DirectorTogglePartyFillInternal )
 			local f35_local0 = function ( f36_arg0 )
 				f35_arg0.DirectorTogglePartyFillClientInternal:beginAnimation( 200 )
@@ -409,8 +409,8 @@ CoD.DirectorTogglePartyFill.__clipsPerState = {
 			f35_arg0.DirectorTogglePartyFillClientInternal.StatusFocus:completeAnimation()
 			f35_arg0.DirectorTogglePartyFillClientInternal:setAlpha( 1 )
 			f35_arg0.DirectorTogglePartyFillClientInternal:setScale( 1, 1 )
-			f35_arg0.DirectorTogglePartyFillClientInternal.Status:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
-			f35_arg0.DirectorTogglePartyFillClientInternal.StatusFocus:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
+			f35_arg0.DirectorTogglePartyFillClientInternal.Status:setText( LocalizeToUpperString( "menu/on" ) )
+			f35_arg0.DirectorTogglePartyFillClientInternal.StatusFocus:setText( LocalizeToUpperString( "menu/on" ) )
 			f35_local0( f35_arg0.DirectorTogglePartyFillClientInternal )
 		end,
 		LoseChildFocus = function ( f37_arg0, f37_arg1 )
@@ -420,8 +420,8 @@ CoD.DirectorTogglePartyFill.__clipsPerState = {
 			f37_arg0.DirectorTogglePartyFillInternal.Status:completeAnimation()
 			f37_arg0.DirectorTogglePartyFillInternal.StatusFocus:completeAnimation()
 			f37_arg0.DirectorTogglePartyFillInternal:setAlpha( 0 )
-			f37_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
-			f37_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
+			f37_arg0.DirectorTogglePartyFillInternal.Status:setText( LocalizeToUpperString( "menu/on" ) )
+			f37_arg0.DirectorTogglePartyFillInternal.StatusFocus:setText( LocalizeToUpperString( "menu/on" ) )
 			f37_arg0.clipFinished( f37_arg0.DirectorTogglePartyFillInternal )
 			local f37_local0 = function ( f38_arg0 )
 				f37_arg0.DirectorTogglePartyFillClientInternal:beginAnimation( 200 )
@@ -435,8 +435,8 @@ CoD.DirectorTogglePartyFill.__clipsPerState = {
 			f37_arg0.DirectorTogglePartyFillClientInternal.StatusFocus:completeAnimation()
 			f37_arg0.DirectorTogglePartyFillClientInternal:setAlpha( 1 )
 			f37_arg0.DirectorTogglePartyFillClientInternal:setScale( 1.05, 1.05 )
-			f37_arg0.DirectorTogglePartyFillClientInternal.Status:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
-			f37_arg0.DirectorTogglePartyFillClientInternal.StatusFocus:setText( LocalizeToUpperString( 0x5BE4D02B20F370A ) )
+			f37_arg0.DirectorTogglePartyFillClientInternal.Status:setText( LocalizeToUpperString( "menu/on" ) )
+			f37_arg0.DirectorTogglePartyFillClientInternal.StatusFocus:setText( LocalizeToUpperString( "menu/on" ) )
 			f37_local0( f37_arg0.DirectorTogglePartyFillClientInternal )
 		end
 	}

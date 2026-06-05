@@ -87,7 +87,7 @@ CoD.AARSquadSummary.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local dotline = LUI.UIImage.new( 0, 0, 320, 1600, 0, 0, 141, 145 )
 	dotline:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	dotline:setAlpha( 0 )
-	dotline:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	dotline:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	dotline:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6E9593DF28749F2 ) )
 	dotline:setShaderVector( 0, 1.8, 1, 0, 0 )
 	dotline:setShaderVector( 1, 0, 1, 0, 1 )

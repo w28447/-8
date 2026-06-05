@@ -58,29 +58,29 @@ CoD.GameSettings_ZMPlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		SetElementCanBeNavigatedTo( self.OptionCategoryGrid, true )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( SlidersPC, f1_arg1, Enum.LUIButton[0x22361E23588705A], "ui_contextual_1", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
+	f1_arg0:AddButtonCallbackFunction( SlidersPC, f1_arg1, Enum.LUIButton[0x22361E23588705A], "ui_contextual_1", function ( element, menu, controller, model )
 		if AlwaysFalse() then
-			OpenGameSettingsOptionsMenu( self, f5_arg0, f5_arg2, f5_arg1 )
+			OpenGameSettingsOptionsMenu( self, element, controller, menu )
 			PlaySoundAlias( "cac_open_wpn_cust_sub" )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
+	end, function ( element, menu, controller )
 		if AlwaysFalse() then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options", nil, "ui_contextual_1" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "menu/options", nil, "ui_contextual_1" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( SlidersPC, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		SetFocusToElement( self, "OptionCategoryGrid", f7_arg2 )
+	f1_arg0:AddButtonCallbackFunction( SlidersPC, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		SetFocusToElement( self, "OptionCategoryGrid", controller )
 		CoD.OptionsUtility.SetFocusToGrid( self.OptionCategoryGrid )
 		PlaySoundAlias( "uin_party_ease_slide_back" )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( SlidersPC )
@@ -105,14 +105,14 @@ CoD.GameSettings_ZMPlayer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f9_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( OptionCategoryGrid, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+	f1_arg0:AddButtonCallbackFunction( OptionCategoryGrid, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		ShowWidget( self.SlidersPC )
-		SetCurrentElementAsActive( self, f10_arg0, f10_arg2 )
-		SetFocusToElement( self, "SlidersPC", f10_arg2 )
+		SetCurrentElementAsActive( self, element, controller )
+		SetFocusToElement( self, "SlidersPC", controller )
 		PlaySoundAlias( "uin_party_ease_slide" )
 		return true
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( OptionCategoryGrid )

@@ -10,7 +10,7 @@ CoD.vhud_dart_CenterReticleOuterCircleDots.new = function ( f1_arg0, f1_arg1, f1
 	
 	local FuiDotTL = LUI.UIImage.new( 0, 0, -30, 42, 0, 0, -50, 130 )
 	FuiDotTL:setAlpha( 0.5 )
-	FuiDotTL:setImage( RegisterImage( 0x1360020FD750C0E ) )
+	FuiDotTL:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_meter" ) )
 	FuiDotTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiDotTL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiDotTL )
@@ -18,7 +18,7 @@ CoD.vhud_dart_CenterReticleOuterCircleDots.new = function ( f1_arg0, f1_arg1, f1
 	
 	local FuiDotTR = LUI.UIImage.new( 0, 0, 628, 556, 0, 0, -50, 130 )
 	FuiDotTR:setAlpha( 0.5 )
-	FuiDotTR:setImage( RegisterImage( 0x1360020FD750C0E ) )
+	FuiDotTR:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_meter" ) )
 	FuiDotTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiDotTR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiDotTR )
@@ -26,7 +26,7 @@ CoD.vhud_dart_CenterReticleOuterCircleDots.new = function ( f1_arg0, f1_arg1, f1
 	
 	local FuiDotBL = LUI.UIImage.new( 0, 0, -30, 42, 0, 0, 354, 174 )
 	FuiDotBL:setAlpha( 0.5 )
-	FuiDotBL:setImage( RegisterImage( 0x1360020FD750C0E ) )
+	FuiDotBL:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_meter" ) )
 	FuiDotBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiDotBL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiDotBL )
@@ -34,7 +34,7 @@ CoD.vhud_dart_CenterReticleOuterCircleDots.new = function ( f1_arg0, f1_arg1, f1
 	
 	local FuiDotBR = LUI.UIImage.new( 0, 0, 628, 556, 0, 0, 354, 174 )
 	FuiDotBR:setAlpha( 0.5 )
-	FuiDotBR:setImage( RegisterImage( 0x1360020FD750C0E ) )
+	FuiDotBR:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_meter" ) )
 	FuiDotBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiDotBR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiDotBR )

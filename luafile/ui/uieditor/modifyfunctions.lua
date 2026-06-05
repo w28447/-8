@@ -7,10 +7,10 @@ function TestModifyFunction( f1_arg0 )
 end
 
 function FractionToPercentageRounded( f2_arg0 )
-	if f2_arg0 and f2_arg0 ~= 0x0 and f2_arg0 ~= "" then
-		return Engine[0xF9F1239CFD921FE]( 0x16A7A1F8ECC8C64, math.floor( f2_arg0 * 100 + 0.5 ) )
+	if f2_arg0 and f2_arg0 ~= "" and f2_arg0 ~= "" then
+		return Engine[0xF9F1239CFD921FE]( "mpui/percent", math.floor( f2_arg0 * 100 + 0.5 ) )
 	else
-		return 0x0
+		return ""
 	end
 end
 
@@ -67,15 +67,15 @@ function SecondsAsTimeDashedZero( f8_arg0 )
 end
 
 function SecondsAsTimePlayedString( f9_arg0 )
-	if f9_arg0 and f9_arg0 ~= 0x0 and f9_arg0 ~= "" then
+	if f9_arg0 and f9_arg0 ~= "" and f9_arg0 ~= "" then
 		local f9_local0 = math.floor( f9_arg0 / 86400 )
 		f9_arg0 = f9_arg0 - f9_local0 * 86400
 		local f9_local1 = math.floor( f9_arg0 / 3600 )
 		f9_arg0 = f9_arg0 - f9_local1 * 3600
 		local f9_local2 = math.floor( f9_arg0 / 60 )
-		return Engine[0xF9F1239CFD921FE]( 0xFEBB5BF51FE663, f9_local0, f9_local1, f9_local2, f9_arg0 - f9_local2 * 60 )
+		return Engine[0xF9F1239CFD921FE]( "menu/combat_record_time_played", f9_local0, f9_local1, f9_local2, f9_arg0 - f9_local2 * 60 )
 	else
-		return Engine[0xF9F1239CFD921FE]( 0xFEBB5BF51FE663, 0, 0, 0, 0 )
+		return Engine[0xF9F1239CFD921FE]( "menu/combat_record_time_played", 0, 0, 0, 0 )
 	end
 end
 
@@ -162,11 +162,11 @@ function NumberAsPercentRounded( f22_arg0 )
 	elseif f22_arg0 > 0 and f22_local0 == 0 then
 		f22_local0 = 1
 	end
-	return Engine[0xF9F1239CFD921FE]( 0x16A7A1F8ECC8C64, tostring( f22_local0 ) )
+	return Engine[0xF9F1239CFD921FE]( "mpui/percent", tostring( f22_local0 ) )
 end
 
 function NumberAsPercent( f23_arg0 )
-	return Engine[0xF9F1239CFD921FE]( 0x16A7A1F8ECC8C64, tostring( f23_arg0 ) )
+	return Engine[0xF9F1239CFD921FE]( "mpui/percent", tostring( f23_arg0 ) )
 end
 
 function LocalizeString( f24_arg0 )
@@ -254,7 +254,7 @@ end
 
 function PrependToLocalizeStringIfNotEmpty( f39_arg0, f39_arg1 )
 	local f39_local0
-	if f39_arg1 ~= "" and f39_arg1 ~= 0x0 then
+	if f39_arg1 ~= "" and f39_arg1 ~= "" then
 		f39_local0 = f39_arg0 .. Engine[0xF9F1239CFD921FE]( f39_arg1 )
 		if not f39_local0 then
 		
@@ -270,11 +270,11 @@ function PrependLocalizedStringWithSeparator( f40_arg0, f40_arg1, f40_arg2 )
 end
 
 function PrependLevelTypeStringWithSeparator( f41_arg0, f41_arg1 )
-	local f41_local0 = 0x99A97D1A6F94031
-	if Engine.CurrentSessionMode() == Enum.eModes[0xBF1DCC8138A9D39] then
+	local f41_local0 = "menu/level_caps"
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_warzone then
 		f41_local0 = 0xE15E03CF165A930
 	elseif LuaUtils.IsArenaMode() then
-		f41_local0 = 0x3370355189B42A7
+		f41_local0 = "arena/rank"
 	end
 	return Engine[0xF9F1239CFD921FE]( f41_local0 ) .. f41_arg0 .. f41_arg1
 end
@@ -304,7 +304,7 @@ function InlineStringAsClanTag( f45_arg0 )
 end
 
 function GetFirstSignedInController( f46_arg0 )
-	return Engine[0xF9F1239CFD921FE]( 0xFAACA5179AA8A57, Engine.GetGamertagForController( 0 ) )
+	return Engine[0xF9F1239CFD921FE]( "menu/signed_in_user", Engine.GetGamertagForController( 0 ) )
 end
 
 function Negate( f47_arg0 )
@@ -445,7 +445,7 @@ function RedForHighGPUTemperature( f64_arg0, f64_arg1, f64_arg2, f64_arg3, f64_a
 		f64_arg4 = 0
 		f64_arg0.LabelIsRed = true
 	elseif f64_arg0.LabelIsRed then
-		Engine.SetModelValue( f64_local1, Engine.ProfileInt( f64_arg1, 0x866C1C9ACD412B6 ) or 0 )
+		Engine.SetModelValue( f64_local1, Engine.ProfileInt( f64_arg1, "com_show_gpu_temperature" ) or 0 )
 		f64_arg0.LabelIsRed = nil
 	end
 	return f64_arg2, f64_arg3, f64_arg4
@@ -727,12 +727,12 @@ function LevelStringFromStorage( f100_arg0, f100_arg1, f100_arg2 )
 	local f100_local0 = CoD.ModeStringToMode( f100_arg1 )
 	if LuaUtils.GameModeAvailable( f100_local0 ) then
 		if IsGameModeParagonCapable( f100_local0 ) and CoD.PrestigeUtility.GetPrestigeCap( f100_local0 ) <= StorageLookup( f100_arg0, "playerstatslist.plevel.statvalue", f100_arg2 ) then
-			return Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x21235EA457AB637, Engine.GetParagonRankDisplayLevel( StorageLookup( f100_arg0, "playerstatslist.paragon_rank.statvalue", f100_arg2 ), f100_local0 ) ) )
+			return Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "rank/level_n", Engine.GetParagonRankDisplayLevel( StorageLookup( f100_arg0, "playerstatslist.paragon_rank.statvalue", f100_arg2 ), f100_local0 ) ) )
 		else
-			return Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x21235EA457AB637, Engine.GetRankDisplayLevel( StorageLookup( f100_arg0, "playerstatslist.rank.statvalue", f100_arg2 ), f100_local0 ) ) )
+			return Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "rank/level_n", Engine.GetRankDisplayLevel( StorageLookup( f100_arg0, "playerstatslist.rank.statvalue", f100_arg2 ), f100_local0 ) ) )
 		end
 	else
-		return Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x21235EA457AB637, 0 ) )
+		return Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "rank/level_n", 0 ) )
 	end
 end
 
@@ -754,8 +754,8 @@ function GetRankOrParagonIcon( f102_arg0, f102_arg1, f102_arg2, f102_arg3, f102_
 end
 
 function GetRankIconLarge( f103_arg0 )
-	if not f103_arg0 or f103_arg0 == "" or f103_arg0 == 0x0 or f103_arg0 == "blacktransparent" or f103_arg0 == 0x214ECBA8C04D44C then
-		return 0x214ECBA8C04D44C
+	if not f103_arg0 or f103_arg0 == "" or f103_arg0 == "" or f103_arg0 == "blacktransparent" or f103_arg0 == "$blacktransparent" then
+		return "$blacktransparent"
 	else
 		return f103_arg0 .. "_large"
 	end
@@ -765,7 +765,7 @@ function LocalServerStatusToString( f104_arg0 )
 	if f104_arg0 == 0 then
 		return "menu/lobby"
 	else
-		return 0xEF105DFE1446B3B
+		return "menu/in_game"
 	end
 end
 
@@ -774,17 +774,17 @@ function PresenceToModeString( f105_arg0 )
 	if f105_local0 == Enum[0x4BBA402DE649132][0x1CF21FD793411B9] then
 		return "menu/offline"
 	elseif f105_local0 == Enum[0x4BBA402DE649132][0xA2184EBB293AF2D] or f105_local0 == Enum[0x4BBA402DE649132][0xC14960E60DA36B7] then
-		return 0x8E783C525F2FA8
+		return "menu/online"
 	elseif f105_local0 >= Enum[0x4BBA402DE649132][0x69F9F19327AE3B3] and f105_local0 <= Enum[0x4BBA402DE649132][0x59DAD56E9325476] then
-		return 0xC00E43A2AA46CC4
+		return "menu/main_menu"
 	elseif f105_local0 >= Enum[0x4BBA402DE649132][0x1DB40BC5D7A26F2] and f105_local0 <= Enum[0x4BBA402DE649132][0xDD9D1D4A601036C] then
-		return LuaUtils.GetDisplayNameForEMode( Enum.eModes[0x3723205FAE52C4A] )
+		return LuaUtils.GetDisplayNameForEMode( Enum.eModes.mode_zombies )
 	elseif f105_local0 >= Enum[0x4BBA402DE649132][0x1632587246C118A] and f105_local0 <= Enum[0x4BBA402DE649132][0xEDDB0D016B3F54] then
-		return LuaUtils.GetDisplayNameForEMode( Enum.eModes[0x83EBA96F36BC4E5] )
+		return LuaUtils.GetDisplayNameForEMode( Enum.eModes.mode_multiplayer )
 	elseif f105_local0 >= Enum[0x4BBA402DE649132][0x61619C03C7E6934] and f105_local0 <= Enum[0x4BBA402DE649132][0x886E7F57ED1ED3A] then
-		return 0x62CDF997F090DB1
+		return "menu/campaign"
 	elseif f105_local0 >= Enum[0x4BBA402DE649132][0x79F90DEF3681532] and f105_local0 <= Enum[0x4BBA402DE649132][0x35923F6DC7C09AC] then
-		return LuaUtils.GetDisplayNameForEMode( Enum.eModes[0xBF1DCC8138A9D39] )
+		return LuaUtils.GetDisplayNameForEMode( Enum.eModes.mode_warzone )
 	elseif f105_local0 >= Enum[0x4BBA402DE649132][0x5EEADE3AFEF0F50] and f105_local0 <= Enum[0x4BBA402DE649132][0xAE1F1FC5A87498E] then
 		return 0x7D527CD96A3419
 	else
@@ -806,7 +806,7 @@ function LobbyJoinableToString( f107_arg0 )
 	if f107_local0 ~= nil then
 		return f107_local0
 	else
-		return 0x34F5097A432DED7
+		return "presence/not_joinable"
 	end
 end
 
@@ -839,13 +839,13 @@ end
 function LocalizeWithNatType( f111_arg0 )
 	local f111_local0 = tonumber( f111_arg0 )
 	if f111_local0 == 1 then
-		return Engine[0xF9F1239CFD921FE]( 0xBE02352B7C7ADA9, Engine[0xF9F1239CFD921FE]( 0x6ED205D2902BCCD ) )
+		return Engine[0xF9F1239CFD921FE]( "menu/sysinfo_nat_type", Engine[0xF9F1239CFD921FE]( "menu/sysinfo_nat_type_open_lobby" ) )
 	elseif f111_local0 == 2 then
-		return Engine[0xF9F1239CFD921FE]( 0xBE02352B7C7ADA9, Engine[0xF9F1239CFD921FE]( "menu/sysinfo_nat_type_moderate_lobby" ) )
+		return Engine[0xF9F1239CFD921FE]( "menu/sysinfo_nat_type", Engine[0xF9F1239CFD921FE]( "menu/sysinfo_nat_type_moderate_lobby" ) )
 	elseif f111_local0 == 3 then
-		return Engine[0xF9F1239CFD921FE]( 0xBE02352B7C7ADA9, Engine[0xF9F1239CFD921FE]( 0x9AA44209F0D1934 ) )
+		return Engine[0xF9F1239CFD921FE]( "menu/sysinfo_nat_type", Engine[0xF9F1239CFD921FE]( "menu/sysinfo_nat_type_strict_lobby" ) )
 	else
-		return Engine[0xF9F1239CFD921FE]( 0xBE02352B7C7ADA9, Engine[0xF9F1239CFD921FE]( 0xBB00DBB82414EFB ) )
+		return Engine[0xF9F1239CFD921FE]( "menu/sysinfo_nat_type", Engine[0xF9F1239CFD921FE]( "menu/sysinfo_nat_type_unknown_lobby" ) )
 	end
 end
 
@@ -855,8 +855,8 @@ end
 
 function DivideByScoreLimit( f113_arg0, f113_arg1, f113_arg2, f113_arg3, f113_arg4 )
 	local f113_local0 = nil
-	if Dvar[0xFF54369D6573B91]:get() == "dom" or Dvar[0xFF54369D6573B91]:get() == "ball" or Dvar[0xFF54369D6573B91]:get() == "dom_dm" then
-		local f113_local1 = Engine.GetGametypeSetting( 0x1BE65BD13DB0766 ) or 0
+	if Dvar.g_gametype:get() == "dom" or Dvar.g_gametype:get() == "ball" or Dvar.g_gametype:get() == "dom_dm" then
+		local f113_local1 = Engine.GetGametypeSetting( "roundlimit" ) or 0
 		local f113_local2 = Engine.GetGametypeSetting( "roundscorelimit" ) or 0
 		if f113_local1 > 2 then
 			f113_local0 = (Engine.GetRoundsPlayed( f113_arg0 ) + 1) * f113_local2
@@ -874,21 +874,21 @@ function DivideByScoreLimit( f113_arg0, f113_arg1, f113_arg2, f113_arg3, f113_ar
 end
 
 function SessionModeToLocalizedSessionMode( f114_arg0 )
-	local f114_local0 = 0x55D96CC762EABDD
-	if f114_arg0 == Enum.eModes[0x3723205FAE52C4A] then
-		f114_local0 = 0xB06081B8B4567F2
-	elseif f114_arg0 == Enum.eModes[0x60063C67132EB69] then
-		f114_local0 = 0x62CDF997F090DB1
+	local f114_local0 = "menu/multiplayer"
+	if f114_arg0 == Enum.eModes.mode_zombies then
+		f114_local0 = "menu/zombies"
+	elseif f114_arg0 == Enum.eModes.mode_campaign then
+		f114_local0 = "menu/campaign"
 	end
 	return Engine[0xF9F1239CFD921FE]( f114_local0 )
 end
 
 function SessionModeToUnlocalizedSessionModeCaps( f115_arg0 )
-	local f115_local0 = 0x55D96CC762EABDD
-	if f115_arg0 == Enum.eModes[0x3723205FAE52C4A] then
-		f115_local0 = 0xB06081B8B4567F2
-	elseif f115_arg0 == Enum.eModes[0x60063C67132EB69] then
-		f115_local0 = 0x62CDF997F090DB1
+	local f115_local0 = "menu/multiplayer"
+	if f115_arg0 == Enum.eModes.mode_zombies then
+		f115_local0 = "menu/zombies"
+	elseif f115_arg0 == Enum.eModes.mode_campaign then
+		f115_local0 = "menu/campaign"
 	end
 	return f115_local0
 end
@@ -899,19 +899,19 @@ end
 
 function MapNameToLocalizedMapDetailedName( f117_arg0, f117_arg1, f117_arg2 )
 	local f117_local0 = Engine.ToUpper( CoD.MapUtility.GetLocalizedMapValue( f117_arg2, f117_arg1, "" ) )
-	if f117_local0 and f117_local0 ~= 0x0 then
+	if f117_local0 and f117_local0 ~= "" then
 		return CoD.StoreUtility.PrependPurchaseIconIfNeeded( f117_arg0, f117_arg2, f117_local0 )
 	else
-		return 0x0
+		return ""
 	end
 end
 
 function MapNameToLocalizedMapDetailedNameIfPurchasable( f118_arg0, f118_arg1, f118_arg2, f118_arg3 )
 	local f118_local0 = Engine.ToUpper( CoD.MapUtility.GetLocalizedMapValue( f118_arg3, f118_arg2, "" ) )
-	if f118_local0 and f118_local0 ~= 0x0 then
+	if f118_local0 and f118_local0 ~= "" then
 		return f118_local0
 	else
-		return 0x0
+		return ""
 	end
 end
 
@@ -937,7 +937,7 @@ function MapNameToMapLoadingImage( f122_arg0, f122_arg1 )
 end
 
 function GameTypeToLocalizedGameType( f123_arg0 )
-	if f123_arg0 == nil or f123_arg0 == "" or f123_arg0 == 0x0 then
+	if f123_arg0 == nil or f123_arg0 == "" or f123_arg0 == "" then
 		return ""
 	else
 		local f123_local0 = Engine[0xEA74FA7EE46E195]( f123_arg0 )
@@ -950,7 +950,7 @@ function GameTypeToLocalizedGameType( f123_arg0 )
 end
 
 function GameTypeToLocalizedGameTypeDescription( f124_arg0 )
-	if f124_arg0 == nil or f124_arg0 == "" or f124_arg0 == 0x0 then
+	if f124_arg0 == nil or f124_arg0 == "" or f124_arg0 == "" then
 		return ""
 	else
 		local f124_local0 = Engine[0xEA74FA7EE46E195]( f124_arg0 )
@@ -1067,9 +1067,9 @@ end
 
 function GetPrestigeTitleForPLevelAndMode( f136_arg0, f136_arg1 )
 	if f136_arg1 == CoD.PrestigeUtility.GetPrestigeCap( CoD.ModeStringToMode( f136_arg0 ) ) then
-		return Engine[0xF9F1239CFD921FE]( 0xD87A39C0FE06CA1 )
+		return Engine[0xF9F1239CFD921FE]( "menu/prestige_master" )
 	elseif f136_arg1 > 0 then
-		return Engine[0xF9F1239CFD921FE]( 0x910399F02006FB7, f136_arg1 )
+		return Engine[0xF9F1239CFD921FE]( "mpui/prestige_n", f136_arg1 )
 	else
 		return ""
 	end
@@ -1077,15 +1077,15 @@ end
 
 function GetPrestigeTitleText( f137_arg0, f137_arg1 )
 	if IsMaxPrestigeLevel( f137_arg0 ) then
-		return Engine[0xF9F1239CFD921FE]( 0x754A8D073F00C06 )
+		return Engine[0xF9F1239CFD921FE]( "menu/prestige_customize_icon" )
 	else
 		local f137_local0 = CoD.PrestigeUtility.GetCurrentPLevel( f137_arg0 ) + 1
 		if IsAtXPCap( f137_arg0 ) and f137_local0 ~= CoD.PrestigeUtility.GetPrestigeCap( CoD.PrestigeUtility.GetPrestigeGameMode() ) then
-			return Engine[0xF9F1239CFD921FE]( 0xE574BBAD7F9CEAE, f137_local0 )
+			return Engine[0xF9F1239CFD921FE]( "menu/prestige_enter_level", f137_local0 )
 		elseif f137_local0 == CoD.PrestigeUtility.GetPrestigeCap( CoD.PrestigeUtility.GetPrestigeGameMode() ) then
-			return Engine[0xF9F1239CFD921FE]( 0xD87A39C0FE06CA1 )
+			return Engine[0xF9F1239CFD921FE]( "menu/prestige_master" )
 		else
-			return Engine[0xF9F1239CFD921FE]( 0x910399F02006FB7, f137_local0 )
+			return Engine[0xF9F1239CFD921FE]( "mpui/prestige_n", f137_local0 )
 		end
 	end
 end
@@ -1106,9 +1106,9 @@ function SetToDisabledIfNotAtXPCap( f139_arg0, f139_arg1 )
 end
 
 function GetPermanentUnlockTokenText( f140_arg0, f140_arg1 )
-	local f140_local0 = 0xF57ABF99A89DCDD
+	local f140_local0 = "mpui/permanent_unlocks_available"
 	if f140_arg1 == 1 then
-		f140_local0 = 0x2DCDC8722C33D24
+		f140_local0 = "mpui/permanent_unlock_available"
 	end
 	return Engine[0xF9F1239CFD921FE]( f140_local0, f140_arg1 )
 end
@@ -1178,7 +1178,7 @@ function FileshareGetDownloadProgress( f147_arg0 )
 	if f147_local0 then
 		local f147_local1 = Engine.GetModelValue( f147_local0 )
 		if f147_local1 ~= nil then
-			return Engine[0xF9F1239CFD921FE]( 0x658F66BBA1E1ADF, f147_local1 )
+			return Engine[0xF9F1239CFD921FE]( "mpui/downloading_percent", f147_local1 )
 		end
 	end
 	return ""
@@ -1199,7 +1199,7 @@ function GetObjectiveProperty( f149_arg0, f149_arg1 )
 			return f149_local1
 		end
 	end
-	f149_local1 = 0x0
+	f149_local1 = ""
 end
 
 function GetObjectiveXHashProperty( f150_arg0, f150_arg1 )
@@ -1213,7 +1213,7 @@ function GetObjectiveXHashProperty( f150_arg0, f150_arg1 )
 			return f150_local1
 		end
 	end
-	f150_local1 = 0x0
+	f150_local1 = ""
 end
 
 function LocalizeWithKeyBinding( f151_arg0, f151_arg1, f151_arg2 )
@@ -1280,13 +1280,13 @@ function GetEmblemDecalDesc( f160_arg0 )
 	if f160_local0 ~= nil then
 		return f160_local0
 	else
-		return 0x0
+		return ""
 	end
 end
 
 function GetPaintjobName( f161_arg0 )
 	if f161_arg0 == "" then
-		return Engine[0xF9F1239CFD921FE]( 0xDFFD9B8A1D5E6D4 )
+		return Engine[0xF9F1239CFD921FE]( "menu/paintjob_create_new" )
 	else
 		return f161_arg0
 	end
@@ -1302,7 +1302,7 @@ function GetPaintshopExtraCamParameters( f163_arg0, f163_arg1 )
 	if f163_local1 == 0 then
 		f163_local1 = CoD.GetCustomization( f163_arg0, "weapon_index" ) or 0
 	end
-	local f163_local2 = Engine[0xB98952F69D937F9]( f163_local1, Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] )
+	local f163_local2 = Engine[0xB98952F69D937F9]( f163_local1, Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer )
 	local f163_local3 = CoD.CraftUtility.GetLoadoutSlot( f163_arg0 )
 	local f163_local4 = "left"
 	return f163_local3, f163_local2, CoD.WeaponOptionsUtility.GetWeaponOptionsString( 0, 0, 1 ), f163_local1, f163_local0, f163_arg0
@@ -1347,7 +1347,7 @@ function GetItemNameFromRef( f170_arg0, f170_arg1 )
 		f170_arg0 = Engine.CurrentSessionMode()
 	end
 	if not f170_arg1 or f170_arg1 == "" then
-		return 0x0
+		return ""
 	end
 	local f170_local0 = f170_arg1
 	if type( f170_local0 ) ~= "xhash" then
@@ -1447,7 +1447,7 @@ function GetWeaponAttributesForAttachment( f183_arg0, f183_arg1, f183_arg2, f183
 		f183_local0 = CoD.BaseUtility.GetMenuLoadoutSlot( f183_arg0 )
 		f183_local1 = CoD.BaseUtility.GetMenuAttachmentFilter( f183_arg0 )
 	end
-	if not (f183_local1 ~= nil or Engine.CurrentSessionMode() ~= Enum.eModes[0x83EBA96F36BC4E5] or f183_local0 ~= "primary" and f183_local0 ~= "secondary") or not (Engine.CurrentSessionMode() ~= Enum.eModes[0x3723205FAE52C4A] or f183_local0 ~= "zmStartWeapon" and f183_local0 ~= "armory") or IsInGame() and CoD.BountyHunterUtility.GameTypeIsBounty( nil ) then
+	if not (f183_local1 ~= nil or Engine.CurrentSessionMode() ~= Enum.eModes.mode_multiplayer or f183_local0 ~= "primary" and f183_local0 ~= "secondary") or not (Engine.CurrentSessionMode() ~= Enum.eModes.mode_zombies or f183_local0 ~= "zmStartWeapon" and f183_local0 ~= "armory") or IsInGame() and CoD.BountyHunterUtility.GameTypeIsBounty( nil ) then
 		return 0, 0, 0, 0
 	else
 		return f183_arg1 / 100, f183_arg2 / 100, f183_arg3, f183_arg4
@@ -1460,7 +1460,7 @@ function GetWeaponAttributeBaseValueForAttachment( f184_arg0, f184_arg1 )
 		f184_local0 = CoD.BaseUtility.GetMenuLoadoutSlot( f184_arg0 )
 		f184_local1 = CoD.BaseUtility.GetMenuAttachmentFilter( f184_arg0 )
 	end
-	if not (f184_local1 ~= nil or Engine.CurrentSessionMode() ~= Enum.eModes[0x83EBA96F36BC4E5] or f184_local0 ~= "primary" and f184_local0 ~= "secondary") or Engine.CurrentSessionMode() == Enum.eModes[0x3723205FAE52C4A] and f184_local0 == "zmStartWeapon" then
+	if not (f184_local1 ~= nil or Engine.CurrentSessionMode() ~= Enum.eModes.mode_multiplayer or f184_local0 ~= "primary" and f184_local0 ~= "secondary") or Engine.CurrentSessionMode() == Enum.eModes.mode_zombies and f184_local0 == "zmStartWeapon" then
 		return ""
 	else
 		local f184_local2 = LUI.splitString( f184_arg1, "," )
@@ -1478,7 +1478,7 @@ function GetWeaponAttributeAddedValueForAttachment( f185_arg0, f185_arg1 )
 		f185_local0 = CoD.BaseUtility.GetMenuLoadoutSlot( f185_arg0 )
 		f185_local1 = CoD.BaseUtility.GetMenuAttachmentFilter( f185_arg0 )
 	end
-	if not (f185_local1 ~= nil or Engine.CurrentSessionMode() ~= Enum.eModes[0x83EBA96F36BC4E5] or f185_local0 ~= "primary" and f185_local0 ~= "secondary") or Engine.CurrentSessionMode() == Enum.eModes[0x3723205FAE52C4A] and f185_local0 == "zmStartWeapon" then
+	if not (f185_local1 ~= nil or Engine.CurrentSessionMode() ~= Enum.eModes.mode_multiplayer or f185_local0 ~= "primary" and f185_local0 ~= "secondary") or Engine.CurrentSessionMode() == Enum.eModes.mode_zombies and f185_local0 == "zmStartWeapon" then
 		return ""
 	end
 	local f185_local2 = LUI.splitString( f185_arg1, "," )
@@ -1564,7 +1564,7 @@ end
 function GetScoreboardColumnHeader( f194_arg0, f194_arg1, f194_arg2 )
 	local f194_local0 = Engine.GetScoreboardColumnHeader( f194_arg0, f194_arg1 ) or ""
 	if CoD.BountyHunterUtility.GameTypeIsBounty( f194_arg0 ) and string.lower( f194_local0 ) == "objective score" then
-		f194_local0 = Engine[0xF9F1239CFD921FE]( 0xF637558C9E3D6CD )
+		f194_local0 = Engine[0xF9F1239CFD921FE]( "bounty_hunter/deposits" )
 	end
 	if CoD.HUDUtility.IsGameTypeEqualToString( "warzone_deposit" ) and string.lower( f194_local0 ) == "score" then
 		f194_local0 = Engine[0xF9F1239CFD921FE]( 0x899455D1DF9CE06 )
@@ -1589,9 +1589,9 @@ function GetScoreboardPlayerPingRange( f196_arg0 )
 	local f196_local1 = Engine.GetPingStepMS and Engine.GetPingStepMS() or 100
 	local f196_local2 = f196_local0 + 1 - f196_arg0
 	if f196_local2 == f196_local0 then
-		return Engine[0xF9F1239CFD921FE]( 0xA5DFC2E3D7DF772, f196_local1 * (f196_local2 - 1) )
+		return Engine[0xF9F1239CFD921FE]( "menu/ping_max", f196_local1 * (f196_local2 - 1) )
 	elseif f196_local2 < f196_local0 then
-		return Engine[0xF9F1239CFD921FE]( 0x2F670BEF7CB789, f196_local1 * (f196_local2 - 1), f196_local1 * f196_local2 - 1 )
+		return Engine[0xF9F1239CFD921FE]( "menu/ping_range", f196_local1 * (f196_local2 - 1), f196_local1 * f196_local2 - 1 )
 	else
 		return ""
 	end
@@ -1652,7 +1652,7 @@ function KillCamAllowRespawnToString( f200_arg0, f200_arg1 )
 	else
 		local f200_local0
 		if f200_arg1 == 1 then
-			f200_local0 = 0x874E6C47442AD9
+			f200_local0 = "platform/press_to_respawn"
 			if not f200_local0 then
 			
 			else
@@ -1829,7 +1829,7 @@ end
 
 function PrependArenaToPlaylist( f216_arg0 )
 	if IsArenaMode() then
-		return Engine[0xF9F1239CFD921FE]( 0x4B08B09636ECD9E ) .. " " .. Engine[0xF9F1239CFD921FE]( f216_arg0 )
+		return Engine[0xF9F1239CFD921FE]( "menu/arena_caps" ) .. " " .. Engine[0xF9F1239CFD921FE]( f216_arg0 )
 	else
 		return Engine[0xF9F1239CFD921FE]( f216_arg0 )
 	end
@@ -1884,10 +1884,10 @@ function GetPlayerListObjectiveImage( f222_arg0, f222_arg1 )
 		if f222_local1.waypoint_image_neutral then
 			return f222_local1.waypoint_image_neutral
 		else
-			return f222_local1.waypoint_image or 0x214ECBA8C04D44C
+			return f222_local1.waypoint_image or "$blacktransparent"
 		end
 	else
-		return 0x214ECBA8C04D44C
+		return "$blacktransparent"
 	end
 end
 
@@ -1895,9 +1895,9 @@ function GetPlayerListObjectiveMinimapImage( f223_arg0, f223_arg1 )
 	local f223_local0 = GetPlayerListObjective( f223_arg0, f223_arg1 )
 	if f223_local0 and f223_local0.name then
 		local f223_local1 = CoD.HUDUtility.GetCachedObjective( f223_local0.name )
-		return f223_local1[0xAA8267261655DF1] or 0x214ECBA8C04D44C
+		return f223_local1[0xAA8267261655DF1] or "$blacktransparent"
 	else
-		return 0x214ECBA8C04D44C
+		return "$blacktransparent"
 	end
 end
 
@@ -1979,7 +1979,7 @@ function UpdateKeyShortcutsButtonPrompts( f233_arg0, f233_arg1, f233_arg2 )
 		return f233_arg2
 	end
 	local f233_local0 = f233_arg0:getModel()
-	local f233_local1 = Engine[0xF9F1239CFD921FE]( 0x0 )
+	local f233_local1 = Engine[0xF9F1239CFD921FE]( "" )
 	if f233_local0 and f233_local0.KeyShortcut then
 		f233_local1 = Engine.GetModelValue( f233_local0.KeyShortcut )
 		if f233_local1 then
@@ -1995,11 +1995,11 @@ function UpdateKeyShortcutsButtonPrompts( f233_arg0, f233_arg1, f233_arg2 )
 end
 
 function AddLocalizeGameModeToString( f234_arg0 )
-	local f234_local0 = Engine[0xEA74FA7EE46E195]( Dvar[0xFF54369D6573B91]:get() )
+	local f234_local0 = Engine[0xEA74FA7EE46E195]( Dvar.g_gametype:get() )
 	return Engine.ToUpper( Engine[0xF9F1239CFD921FE]( f234_arg0, f234_local0.nameRef ) )
 end
 
 function SetProgressTarget( f235_arg0 )
-	return Engine[0xF9F1239CFD921FE]( 0xB5E5844327FB1A0, f235_arg0 )
+	return Engine[0xF9F1239CFD921FE]( "menu/progress_target", f235_arg0 )
 end
 

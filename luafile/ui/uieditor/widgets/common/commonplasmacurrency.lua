@@ -8,7 +8,7 @@ CoD.CommonPlasmaCurrency.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.soundSet = "default"
 	
 	local vial = LUI.UIImage.new( 0, 0, 0, 38, 0.5, 0.5, -19, 19 )
-	vial:setImage( RegisterImage( 0x5FBFE58B2BB38AC ) )
+	vial:setImage( RegisterImage( "uie_t7_hud_zm_vial_aar_256" ) )
 	self:addElement( vial )
 	self.vial = vial
 	

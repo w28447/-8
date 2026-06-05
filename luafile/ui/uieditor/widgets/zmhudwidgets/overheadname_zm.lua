@@ -1,4 +1,4 @@
-require( "x64:6c0a92e345d6635" )
+require( "ui/uieditor/widgets/health/armorbar" )
 require( "ui/uieditor/widgets/health/healthbar" )
 require( "x64:94e166fa0d10785" )
 require( "ui/uieditor/widgets/mphudwidgets/overheadname_playernameandclantag" )

@@ -267,57 +267,57 @@ LUI.createMenu.Loading_MP = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( f18_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		CoD.Menu.UpdateButtonShownState( f18_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 	end, false )
-	self:registerEventHandler( "loading_startplay", function ( element, event )
+	self:registerEventHandler( "loading_startplay", function ( self, event )
 		local f19_local0 = nil
-		CoD.HUDUtility.StartPlay( element, f1_arg0 )
+		CoD.HUDUtility.StartPlay( self, f1_arg0 )
 		if not f19_local0 then
-			f19_local0 = element:dispatchEventToChildren( event )
+			f19_local0 = self:dispatchEventToChildren( event )
 		end
 		return f19_local0
 	end )
-	self:registerEventHandler( "loading_nomovie_startplay", function ( element, event )
+	self:registerEventHandler( "loading_nomovie_startplay", function ( self, event )
 		local f20_local0 = nil
 		if IsSplitscreenAndInGame( f1_arg0 ) and IsWarzone() then
-			CoD.HUDUtility.StartPlay( element, f1_arg0 )
+			CoD.HUDUtility.StartPlay( self, f1_arg0 )
 		end
 		if not f20_local0 then
-			f20_local0 = element:dispatchEventToChildren( event )
+			f20_local0 = self:dispatchEventToChildren( event )
 		end
 		return f20_local0
 	end )
-	self:registerEventHandler( "loading_displaycontinue", function ( element, event )
+	self:registerEventHandler( "loading_displaycontinue", function ( self, event )
 		local f21_local0 = nil
 		SetGlobalModelValueTrue( "mapLoaded" )
 		if not f21_local0 then
-			f21_local0 = element:dispatchEventToChildren( event )
+			f21_local0 = self:dispatchEventToChildren( event )
 		end
 		return f21_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if CoD.ModelUtility.IsGlobalModelValueTrue( "cutsceneSkippable" ) and CoD.ModelUtility.IsGlobalModelValueTrue( "mapLoaded" ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "isIntroTutorialMovie" ) then
-			CoD.HUDUtility.StartPlay( f22_arg0, f22_arg2 )
+			CoD.HUDUtility.StartPlay( element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f23_arg0, f23_arg1, f23_arg2 )
+	end, function ( element, menu, controller )
 		if CoD.ModelUtility.IsGlobalModelValueTrue( "cutsceneSkippable" ) and CoD.ModelUtility.IsGlobalModelValueTrue( "mapLoaded" ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "isIntroTutorialMovie" ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ESCAPE", function ( f24_arg0, f24_arg1, f24_arg2, f24_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ESCAPE", function ( element, menu, controller, model )
 		if CoD.ModelUtility.IsGlobalModelValueTrue( "cutsceneSkippable" ) and CoD.ModelUtility.IsGlobalModelValueTrue( "mapLoaded" ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "isIntroTutorialMovie" ) then
-			CoD.HUDUtility.StartPlay( f24_arg0, f24_arg2 )
+			CoD.HUDUtility.StartPlay( element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f25_arg0, f25_arg1, f25_arg2 )
+	end, function ( element, menu, controller )
 		if CoD.ModelUtility.IsGlobalModelValueTrue( "cutsceneSkippable" ) and CoD.ModelUtility.IsGlobalModelValueTrue( "mapLoaded" ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "isIntroTutorialMovie" ) then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ESCAPE" )
 			return false
 		else
 			return false

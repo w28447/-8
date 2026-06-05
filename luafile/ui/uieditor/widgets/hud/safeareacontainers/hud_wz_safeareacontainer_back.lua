@@ -105,7 +105,7 @@ CoD.Hud_WZ_SafeAreaContainer_Back.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.ObituaryCallout = ObituaryCallout
 	
 	local KillcamCompass = CoD.WZKillcamCompass.new( f1_arg0, f1_arg1, 0, 0, -31, 319, 0, 0, 0, 350 )
-	KillcamCompass:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xC212964B40FA826 ) )
+	KillcamCompass:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal_rtt" ) )
 	self:addElement( KillcamCompass )
 	self.KillcamCompass = KillcamCompass
 	

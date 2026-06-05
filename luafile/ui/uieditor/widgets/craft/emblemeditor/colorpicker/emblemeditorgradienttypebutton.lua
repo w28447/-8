@@ -38,25 +38,25 @@ CoD.EmblemEditorGradientTypeButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x571F08AD84807E0] )
 		return f3_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ThicknessSlider, f1_arg1, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		CoD.CraftUtility.EmblemGradient_UpdateThicknessByStep( self, f4_arg0, -0.01, f4_arg2 )
+	f1_arg0:AddButtonCallbackFunction( ThicknessSlider, f1_arg1, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( element, menu, controller, model )
+		CoD.CraftUtility.EmblemGradient_UpdateThicknessByStep( self, element, -0.01, controller )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x57783F8DA4AAEF], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x57783F8DA4AAEF], "", nil, nil )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( ThicknessSlider, f1_arg1, Enum.LUIButton[0x571F08AD84807E0], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		CoD.CraftUtility.EmblemGradient_UpdateThicknessByStep( self, f6_arg0, 0.01, f6_arg2 )
+	f1_arg0:AddButtonCallbackFunction( ThicknessSlider, f1_arg1, Enum.LUIButton[0x571F08AD84807E0], nil, function ( element, menu, controller, model )
+		CoD.CraftUtility.EmblemGradient_UpdateThicknessByStep( self, element, 0.01, controller )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x571F08AD84807E0], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x571F08AD84807E0], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( ThicknessSlider )
 	self.ThicknessSlider = ThicknessSlider
 	
 	local ThicknessText = LUI.UIText.new( 0, 0, 0, 116, 0, 0, 40, 60 )
-	ThicknessText:setText( Engine[0xF9F1239CFD921FE]( 0x1960EFEF4BF9116 ) )
+	ThicknessText:setText( Engine[0xF9F1239CFD921FE]( "menu/gradient_thickness" ) )
 	ThicknessText:setTTF( "default" )
 	ThicknessText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	ThicknessText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -90,18 +90,18 @@ CoD.EmblemEditorGradientTypeButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x571F08AD84807E0] )
 		return f9_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( HardnessSlider, f1_arg1, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		CoD.CraftUtility.EmblemGradient_UpdateGradientFillByStep( self, f10_arg0, -0.01, f10_arg2 )
+	f1_arg0:AddButtonCallbackFunction( HardnessSlider, f1_arg1, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( element, menu, controller, model )
+		CoD.CraftUtility.EmblemGradient_UpdateGradientFillByStep( self, element, -0.01, controller )
 		return true
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x57783F8DA4AAEF], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x57783F8DA4AAEF], "", nil, nil )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( HardnessSlider, f1_arg1, Enum.LUIButton[0x571F08AD84807E0], nil, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		CoD.CraftUtility.EmblemGradient_UpdateGradientFillByStep( self, f12_arg0, 0.01, f12_arg2 )
+	f1_arg0:AddButtonCallbackFunction( HardnessSlider, f1_arg1, Enum.LUIButton[0x571F08AD84807E0], nil, function ( element, menu, controller, model )
+		CoD.CraftUtility.EmblemGradient_UpdateGradientFillByStep( self, element, 0.01, controller )
 		return true
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x571F08AD84807E0], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x571F08AD84807E0], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( HardnessSlider )

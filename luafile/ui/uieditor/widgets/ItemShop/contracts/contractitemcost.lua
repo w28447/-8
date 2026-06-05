@@ -15,7 +15,7 @@ CoD.ContractItemCost.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local Free = LUI.UIText.new( 0, 0, 0, 185, 0, 0, 0, 21 )
 	Free:setRGB( 0, 0.96, 1 )
-	Free:setText( LocalizeToUpperString( 0x29E2B68E48757AD ) )
+	Free:setText( LocalizeToUpperString( "mpui/free" ) )
 	Free:setTTF( "ttmussels_demibold" )
 	Free:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	Free:setShaderVector( 0, 1, 0, 0, 0 )

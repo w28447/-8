@@ -22,7 +22,7 @@ CoD.ArenaFindGameDetailModes.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local TiledBg = LUI.UIImage.new( 0, 0, 0, 460, 0, 0, 0, 210 )
 	TiledBg:setAlpha( 0.02 )
-	TiledBg:setImage( RegisterImage( 0x7167D8C33A06020 ) )
+	TiledBg:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
 	TiledBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledBg:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBg:setupNineSliceShader( 64, 64 )

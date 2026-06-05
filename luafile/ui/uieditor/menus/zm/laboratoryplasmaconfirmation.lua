@@ -18,7 +18,7 @@ LUI.createMenu.LaboratoryPlasmaConfirmation = function ( f1_arg0, f1_arg1 )
 	
 	local FullscreenPopupTemplate = CoD.FullscreenPopupTemplate.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
 	FullscreenPopupTemplate.ButtonList:setDataSource( "PlasmaConfirmationButtonList" )
-	FullscreenPopupTemplate.ErrorSubtitle:setText( Engine[0xF9F1239CFD921FE]( 0x306208DB7BBE129 ) )
+	FullscreenPopupTemplate.ErrorSubtitle:setText( Engine[0xF9F1239CFD921FE]( "menu/purchase_error" ) )
 	FullscreenPopupTemplate.WorkingTitle:setText( Engine[0xF9F1239CFD921FE]( "menu/purchase_processing" ) )
 	FullscreenPopupTemplate.DoneTitle:setText( Engine[0xF9F1239CFD921FE]( "menu/purchase_complete" ) )
 	FullscreenPopupTemplate:linkToElementModel( self, nil, false, function ( model )
@@ -91,44 +91,44 @@ LUI.createMenu.LaboratoryPlasmaConfirmation = function ( f1_arg0, f1_arg1 )
 	f1_local7( f1_local6, f1_local8.LastInput, function ( f9_arg0, f9_arg1 )
 		CoD.Menu.UpdateButtonShownState( f9_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
 		if not IsElementInState( self.FullscreenPopupTemplate, "WorkingState" ) and not IsElementInState( self.FullscreenPopupTemplate, "FinishedState" ) then
-			GoBack( self, f10_arg2 )
+			GoBack( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
+	end, function ( element, menu, controller )
 		if not IsElementInState( self.FullscreenPopupTemplate, "WorkingState" ) and not IsElementInState( self.FullscreenPopupTemplate, "FinishedState" ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		if IsElementInState( self.FullscreenPopupTemplate, "FinishedState" ) then
-			GoBack( self, f12_arg2 )
+			GoBack( self, controller )
 			return true
-		elseif IsElementInState( self.FullscreenPopupTemplate, "ErrorState" ) and IsGamepad( f12_arg2 ) then
-			GoBack( self, f12_arg2 )
+		elseif IsElementInState( self.FullscreenPopupTemplate, "ErrorState" ) and IsGamepad( controller ) then
+			GoBack( self, controller )
 			return true
 		elseif IsPC() and IsElementInState( self.FullscreenPopupTemplate, "DefaultState" ) then
 			PlaySoundAlias( "uin_points_purchase" )
-			SetElementWorkingStateAndPurchaseDWSKU( self.FullscreenPopupTemplate, f12_arg2 )
+			SetElementWorkingStateAndPurchaseDWSKU( self.FullscreenPopupTemplate, controller )
 			return true
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
+	end, function ( element, menu, controller )
 		if IsElementInState( self.FullscreenPopupTemplate, "FinishedState" ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
 			return true
-		elseif IsElementInState( self.FullscreenPopupTemplate, "ErrorState" ) and IsGamepad( f13_arg2 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/back", nil, nil )
+		elseif IsElementInState( self.FullscreenPopupTemplate, "ErrorState" ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/back", nil, nil )
 			return true
 		elseif IsPC() and IsElementInState( self.FullscreenPopupTemplate, "DefaultState" ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/purchase", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/purchase", nil, nil )
 			return true
 		else
 			return false

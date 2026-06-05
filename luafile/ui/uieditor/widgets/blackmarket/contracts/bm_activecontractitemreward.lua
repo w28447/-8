@@ -8,7 +8,7 @@ CoD.BM_ActiveContractItemReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.soundSet = "none"
 	
 	local RewardIcon = LUI.UIImage.new( 0, 0, 0, 60, 0.5, 0.5, -23, 37 )
-	RewardIcon:setImage( RegisterImage( 0xD0C0C9F62783A5C ) )
+	RewardIcon:setImage( RegisterImage( "ui_icon_blackmarket_reserves_case_small" ) )
 	self:addElement( RewardIcon )
 	self.RewardIcon = RewardIcon
 	

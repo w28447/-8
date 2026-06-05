@@ -10,7 +10,7 @@ CoD.DirectorSelectGlowTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TabBackingGlow = LUI.UIImage.new( 0, 1, -117, 117, 0, 1, -111, 111 )
 	TabBackingGlow:setAlpha( 0 )
-	TabBackingGlow:setImage( RegisterImage( 0x223AD1B40A93955 ) )
+	TabBackingGlow:setImage( RegisterImage( "uie_ui_menu_common_tab_glow" ) )
 	TabBackingGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	TabBackingGlow:setShaderVector( 0, 1.36, 0, 0, 0 )
 	self:addElement( TabBackingGlow )
@@ -18,7 +18,7 @@ CoD.DirectorSelectGlowTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TabBacking = LUI.UIImage.new( 0, 1, -66, 66, 0, 1, -30, 30 )
 	TabBacking:setAlpha( 0 )
-	TabBacking:setImage( RegisterImage( 0x3F09D20CA138B49 ) )
+	TabBacking:setImage( RegisterImage( "uie_ui_menu_common_tab_backing" ) )
 	TabBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	TabBacking:setShaderVector( 0, 0.9, 0, 0, 0 )
 	self:addElement( TabBacking )
@@ -57,7 +57,7 @@ CoD.DirectorSelectGlowTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	TextFocus:setBackingAlpha( 0 )
 	TextFocus:setBackingXPadding( 50 )
 	TextFocus:setBackingYPadding( 7 )
-	TextFocus:setBackingImage( RegisterImage( 0xFB5B66CB2DD078F ) )
+	TextFocus:setBackingImage( RegisterImage( "uie_circularglow" ) )
 	TextFocus:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	TextFocus:setBackingShaderVector( 0, 1, 0, 0, 0 )
 	TextFocus:linkToElementModel( self, "tabName", true, function ( model )
@@ -71,20 +71,20 @@ CoD.DirectorSelectGlowTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local TabEndLeft = LUI.UIImage.new( 0, 0, 0, 8, 0, 0, 0, 35 )
 	TabEndLeft:setAlpha( 0 )
-	TabEndLeft:setImage( RegisterImage( 0x9A262142D19A9F ) )
+	TabEndLeft:setImage( RegisterImage( "uie_ui_menu_common_tab_end_left" ) )
 	self:addElement( TabEndLeft )
 	self.TabEndLeft = TabEndLeft
 	
 	local TabEndRight = LUI.UIImage.new( 0, 0, 222, 230, 0, 0, 0, 35 )
 	TabEndRight:setAlpha( 0 )
-	TabEndRight:setImage( RegisterImage( 0xB48CD982934DAD0 ) )
+	TabEndRight:setImage( RegisterImage( "uie_ui_menu_common_tab_end_right" ) )
 	self:addElement( TabEndRight )
 	self.TabEndRight = TabEndRight
 	
 	local cover = LUI.UIImage.new( -0.02, 1.02, 0, 0, 0, 0, 27, 43 )
 	cover:setRGB( 0, 0, 0 )
 	cover:setAlpha( 0 )
-	cover:setImage( RegisterImage( 0x8638A455D7EB8F0 ) )
+	cover:setImage( RegisterImage( "uie_ui_director_tab_bar" ) )
 	cover:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	cover:setShaderVector( 0, 3, 0, 0, 0 )
 	self:addElement( cover )
@@ -93,7 +93,7 @@ CoD.DirectorSelectGlowTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local bar = LUI.UIImage.new( -0.02, 1.02, 0, 0, 0, 0, -5.5, 6.5 )
 	bar:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	bar:setAlpha( 0 )
-	bar:setImage( RegisterImage( 0x8638A455D7EB8F0 ) )
+	bar:setImage( RegisterImage( "uie_ui_director_tab_bar" ) )
 	bar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( bar )
 	self.bar = bar

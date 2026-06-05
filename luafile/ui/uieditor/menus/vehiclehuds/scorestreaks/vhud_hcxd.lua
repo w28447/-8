@@ -17,13 +17,13 @@ LUI.createMenu.VHUD_HCXD = function ( f1_arg0, f1_arg1 )
 	
 	local vignette = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	vignette:setAlpha( 0 )
-	vignette:setImage( RegisterImage( 0xA3FCEE6B2432ABF ) )
+	vignette:setImage( RegisterImage( "uie_t7_hcxd_vignette_score_streak" ) )
 	self:addElement( vignette )
 	self.vignette = vignette
 	
 	local vignetteCenter = LUI.UIImage.new( 0, 1, -304, 304, 0, 1, -177, 165 )
 	vignetteCenter:setAlpha( 0 )
-	vignetteCenter:setImage( RegisterImage( 0xEE4980C2A8CEA50 ) )
+	vignetteCenter:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_backgroundtint" ) )
 	self:addElement( vignetteCenter )
 	self.vignetteCenter = vignetteCenter
 	
@@ -63,16 +63,16 @@ LUI.createMenu.VHUD_HCXD = function ( f1_arg0, f1_arg1 )
 			modelName = "LastInput"
 		} )
 	end, false )
-	self:registerEventHandler( "menu_loaded", function ( element, event )
+	self:registerEventHandler( "menu_loaded", function ( self, event )
 		local f6_local0 = nil
-		if element.menuLoaded then
-			f6_local0 = element:menuLoaded( event )
-		elseif element.super.menuLoaded then
-			f6_local0 = element.super:menuLoaded( event )
+		if self.menuLoaded then
+			f6_local0 = self:menuLoaded( event )
+		elseif self.super.menuLoaded then
+			f6_local0 = self.super:menuLoaded( event )
 		end
-		SizeToSafeArea( element, f1_arg0 )
+		SizeToSafeArea( self, f1_arg0 )
 		if not f6_local0 then
-			f6_local0 = element:dispatchEventToChildren( event )
+			f6_local0 = self:dispatchEventToChildren( event )
 		end
 		return f6_local0
 	end )

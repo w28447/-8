@@ -16,7 +16,7 @@ CoD.PC_EquippedBGB.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	DiamondBacking2:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
 	DiamondBacking2:setAlpha( 0.5 )
 	DiamondBacking2:setZRot( 45 )
-	DiamondBacking2:setImage( RegisterImage( 0xB548E386E78802E ) )
+	DiamondBacking2:setImage( RegisterImage( "uie_ui_menu_zombies_cac_elixir_loadout_box" ) )
 	self:addElement( DiamondBacking2 )
 	self.DiamondBacking2 = DiamondBacking2
 	
@@ -36,7 +36,7 @@ CoD.PC_EquippedBGB.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local Dots2 = LUI.UIImage.new( -0.28, 1.28, 0, 0, -0.28, 1.28, 0, 0 )
 	Dots2:setRGB( 0.49, 0.09, 0.09 )
 	Dots2:setZRot( 45 )
-	Dots2:setImage( RegisterImage( 0x233E2450B088E37 ) )
+	Dots2:setImage( RegisterImage( "uie_ui_menu_zombies_cac_elixir_loadout_box_dots" ) )
 	self:addElement( Dots2 )
 	self.Dots2 = Dots2
 	

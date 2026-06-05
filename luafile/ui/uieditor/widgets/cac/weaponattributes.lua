@@ -32,7 +32,7 @@ CoD.WeaponAttributes.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 			modelName = "damage"
 		} )
 	end )
-	DamageAttribute.attributeName:setText( LocalizeToUpperString( 0xCFFC6656E99316E ) )
+	DamageAttribute.attributeName:setText( LocalizeToUpperString( "mpui/damage_caps" ) )
 	DamageAttribute:linkToElementModel( self, nil, false, function ( model )
 		DamageAttribute:setModel( model, f1_arg1 )
 	end )
@@ -69,7 +69,7 @@ CoD.WeaponAttributes.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 			modelName = "range"
 		} )
 	end )
-	RangeAttribute.attributeName:setText( LocalizeToUpperString( 0x470B2F1C3BDE7F4 ) )
+	RangeAttribute.attributeName:setText( LocalizeToUpperString( "mpui/range_caps" ) )
 	RangeAttribute:linkToElementModel( self, nil, false, function ( model )
 		RangeAttribute:setModel( model, f1_arg1 )
 	end )
@@ -106,7 +106,7 @@ CoD.WeaponAttributes.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 			modelName = "fireRate"
 		} )
 	end )
-	FireRateAttribute.attributeName:setText( LocalizeToUpperString( 0xA995770D23477EE ) )
+	FireRateAttribute.attributeName:setText( LocalizeToUpperString( "mpui/fire_rate_caps" ) )
 	FireRateAttribute:linkToElementModel( self, nil, false, function ( model )
 		FireRateAttribute:setModel( model, f1_arg1 )
 	end )
@@ -143,7 +143,7 @@ CoD.WeaponAttributes.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 			modelName = "accuracy"
 		} )
 	end )
-	AccuracyAttribute.attributeName:setText( LocalizeToUpperString( 0xF669512DF581896 ) )
+	AccuracyAttribute.attributeName:setText( LocalizeToUpperString( "menu/accuracy_caps" ) )
 	AccuracyAttribute:linkToElementModel( self, nil, false, function ( model )
 		AccuracyAttribute:setModel( model, f1_arg1 )
 	end )

@@ -9,7 +9,7 @@ CoD.TabletLocationSelector_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local TiledShaderImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledShaderImage:setAlpha( 0.02 )
-	TiledShaderImage:setImage( RegisterImage( 0x2F926473EDCBFCA ) )
+	TiledShaderImage:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_grid" ) )
 	TiledShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage:setupNineSliceShader( 22, 22 )
@@ -34,7 +34,7 @@ CoD.TabletLocationSelector_Grid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local Pip2 = LUI.UIImage.new( 1, 1, -4.5, 3.5, 1, 1, -4.5, 3.5 )
 	Pip2:setAlpha( 0 )
-	Pip2:setImage( RegisterImage( 0x364778639313CE9 ) )
+	Pip2:setImage( RegisterImage( "uie_ui_hud_core_draft_pip" ) )
 	Pip2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Pip2 )
 	self.Pip2 = Pip2

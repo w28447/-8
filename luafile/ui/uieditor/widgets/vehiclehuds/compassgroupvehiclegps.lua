@@ -16,7 +16,7 @@ CoD.CompassGroupVehicleGPS.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local SquareCompassBacking = LUI.UIImage.new( 0.5, 0.5, -135, 135, 0.5, 0.5, -135, 135 )
 	SquareCompassBacking:setRGB( 0, 0, 0 )
 	SquareCompassBacking:setScale( 0.98, 0.98 )
-	SquareCompassBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
+	SquareCompassBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_blend" ) )
 	self:addElement( SquareCompassBacking )
 	self.SquareCompassBacking = SquareCompassBacking
 	
@@ -54,7 +54,7 @@ CoD.CompassGroupVehicleGPS.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.smokeGrenadeEffect = smokeGrenadeEffect
 	
 	local StaticPositionIcon = LUI.UIImage.new( 0, 0, 119, 151, 0, 0, 119, 151 )
-	StaticPositionIcon:setImage( RegisterImage( 0x7C92505D1F238BC ) )
+	StaticPositionIcon:setImage( RegisterImage( "icon_minimap_player_mp" ) )
 	self:addElement( StaticPositionIcon )
 	self.StaticPositionIcon = StaticPositionIcon
 	

@@ -14,7 +14,7 @@ CoD.Tak5Reticle_Range.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local CenterCircle = LUI.UIImage.new( 0.5, 0.5, -9, 9, 0.5, 0.5, -9, 9 )
-	CenterCircle:setImage( RegisterImage( 0xABF5E0C677E796C ) )
+	CenterCircle:setImage( RegisterImage( "uie_ui_hud_tak5_reticle_center_dot" ) )
 	self:addElement( CenterCircle )
 	self.CenterCircle = CenterCircle
 	
@@ -29,13 +29,13 @@ CoD.Tak5Reticle_Range.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.Tak5ReticleBracketAdd = Tak5ReticleBracketAdd
 	
 	local ReticlePointerSmall = LUI.UIImage.new( 0, 0, 380, 420, 0, 0, 80, 120 )
-	ReticlePointerSmall:setImage( RegisterImage( 0x9738C49AE7BF8A2 ) )
+	ReticlePointerSmall:setImage( RegisterImage( "uie_ui_hud_tak5_reticle_center_indicator" ) )
 	self:addElement( ReticlePointerSmall )
 	self.ReticlePointerSmall = ReticlePointerSmall
 	
 	local ReticleDarkCircle = LUI.UIImage.new( 0, 0, 347, 453, 0, 0, 47, 153 )
 	ReticleDarkCircle:setAlpha( 0.5 )
-	ReticleDarkCircle:setImage( RegisterImage( 0xA3B9AFDDFDE91F6 ) )
+	ReticleDarkCircle:setImage( RegisterImage( "uie_ui_hud_tak5_reticle_dark_circle" ) )
 	self:addElement( ReticleDarkCircle )
 	self.ReticleDarkCircle = ReticleDarkCircle
 	

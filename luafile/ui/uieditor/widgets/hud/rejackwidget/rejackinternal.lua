@@ -65,7 +65,7 @@ CoD.RejackInternal.new = function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3, f5_arg4,
 	self.BlackFrame = BlackFrame
 	
 	local RejackTitle = LUI.UIText.new( 0, 0, 300, 600, 0, 0, 12, 72 )
-	RejackTitle:setText( Engine[0xF9F1239CFD921FE]( 0x43361EC3B224047 ) )
+	RejackTitle:setText( Engine[0xF9F1239CFD921FE]( "mpui/rejack_caps" ) )
 	RejackTitle:setTTF( "ttmussels_demibold" )
 	RejackTitle:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	RejackTitle:setShaderVector( 0, 0, 0, 0, 0 )
@@ -78,7 +78,7 @@ CoD.RejackInternal.new = function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3, f5_arg4,
 	self.RejackTitle = RejackTitle
 	
 	local RejackingTitle2 = LUI.UIText.new( 0, 0, 300, 600, 0, 0, 12, 72 )
-	RejackingTitle2:setText( Engine[0xF9F1239CFD921FE]( 0xB177E726D713D45 ) )
+	RejackingTitle2:setText( Engine[0xF9F1239CFD921FE]( "mpui/rejacking_caps" ) )
 	RejackingTitle2:setTTF( "ttmussels_demibold" )
 	RejackingTitle2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	RejackingTitle2:setShaderVector( 0, 0, 0, 0, 0 )
@@ -99,7 +99,7 @@ CoD.RejackInternal.new = function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3, f5_arg4,
 	self.TimeRemaining = TimeRemaining
 	
 	local Prompt = LUI.UIText.new( 0, 0, 312, 612, 0, 0, 351, 389 )
-	Prompt:setText( Engine[0xF9F1239CFD921FE]( 0xB820E00626E081B ) )
+	Prompt:setText( Engine[0xF9F1239CFD921FE]( "mp/rejack_terminate" ) )
 	Prompt:setTTF( "default" )
 	Prompt:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Prompt:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -107,24 +107,24 @@ CoD.RejackInternal.new = function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3, f5_arg4,
 	self.Prompt = Prompt
 	
 	local barHR = LUI.UIImage.new( 0, 0, 33, 168, 0, 0, 139, 312 )
-	barHR:setImage( RegisterImage( 0xDED404186DEFB3 ) )
+	barHR:setImage( RegisterImage( "uie_t7_menu_cp_datavault_heath_bars" ) )
 	self:addElement( barHR )
 	self.barHR = barHR
 	
 	local Grid = LUI.UIImage.new( 0, 0, 94, 687, 0, 0, 188, 298 )
-	Grid:setImage( RegisterImage( 0x4E5C4572193FC09 ) )
+	Grid:setImage( RegisterImage( "uie_dots_gridframe" ) )
 	Grid:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Grid )
 	self.Grid = Grid
 	
 	local Grid0 = LUI.UIImage.new( 0, 0, 94, 687, 0, 0, 188, 298 )
-	Grid0:setImage( RegisterImage( 0x4E5C4572193FC09 ) )
+	Grid0:setImage( RegisterImage( "uie_dots_gridframe" ) )
 	Grid0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Grid0 )
 	self.Grid0 = Grid0
 	
 	local HeartBeatLine = LUI.UIImage.new( 0, 0, 94, 687, 0, 0, 188, 298 )
-	HeartBeatLine:setImage( RegisterImage( 0x73195768C152827 ) )
+	HeartBeatLine:setImage( RegisterImage( "uie_line_pulse" ) )
 	HeartBeatLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	HeartBeatLine:setShaderVector( 0, 2.8, 0, 0, 0 )
 	HeartBeatLine:setShaderVector( 1, 0, 0, 0, 0 )
@@ -135,37 +135,37 @@ CoD.RejackInternal.new = function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3, f5_arg4,
 	self.HeartBeatLine = HeartBeatLine
 	
 	local dot0 = LUI.UIImage.new( 1, 1, -231, -219, 0, 0, 185, 197 )
-	dot0:setImage( RegisterImage( 0x4AAE27EA6CEDB34 ) )
+	dot0:setImage( RegisterImage( "uie_t7_menu_cp_datavault_line" ) )
 	self:addElement( dot0 )
 	self.dot0 = dot0
 	
 	local dot1 = LUI.UIImage.new( 1, 1, -112, -100, 0, 0, 185, 197 )
-	dot1:setImage( RegisterImage( 0x4AAE27EA6CEDB34 ) )
+	dot1:setImage( RegisterImage( "uie_t7_menu_cp_datavault_line" ) )
 	self:addElement( dot1 )
 	self.dot1 = dot1
 	
 	local dot2 = LUI.UIImage.new( 1, 1, -231, -219, 0, 0, 289, 301 )
-	dot2:setImage( RegisterImage( 0x4AAE27EA6CEDB34 ) )
+	dot2:setImage( RegisterImage( "uie_t7_menu_cp_datavault_line" ) )
 	self:addElement( dot2 )
 	self.dot2 = dot2
 	
 	local dot3 = LUI.UIImage.new( 1, 1, -112, -100, 0, 0, 289, 301 )
-	dot3:setImage( RegisterImage( 0x4AAE27EA6CEDB34 ) )
+	dot3:setImage( RegisterImage( "uie_t7_menu_cp_datavault_line" ) )
 	self:addElement( dot3 )
 	self.dot3 = dot3
 	
 	local dot4 = LUI.UIImage.new( 1, 1, -800, -788, 0, 0, 185, 197 )
-	dot4:setImage( RegisterImage( 0x4AAE27EA6CEDB34 ) )
+	dot4:setImage( RegisterImage( "uie_t7_menu_cp_datavault_line" ) )
 	self:addElement( dot4 )
 	self.dot4 = dot4
 	
 	local dot5 = LUI.UIImage.new( 1, 1, -800, -788, 0, 0, 289, 301 )
-	dot5:setImage( RegisterImage( 0x4AAE27EA6CEDB34 ) )
+	dot5:setImage( RegisterImage( "uie_t7_menu_cp_datavault_line" ) )
 	self:addElement( dot5 )
 	self.dot5 = dot5
 	
 	local HeartBeatLineAlive = LUI.UIImage.new( 0, 0, 94, 634, 0, 0, 188, 296 )
-	HeartBeatLineAlive:setImage( RegisterImage( 0xD3B8EC8475FF3B8 ) )
+	HeartBeatLineAlive:setImage( RegisterImage( "uie_line_pulsealive" ) )
 	HeartBeatLineAlive:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( HeartBeatLineAlive )
 	self.HeartBeatLineAlive = HeartBeatLineAlive

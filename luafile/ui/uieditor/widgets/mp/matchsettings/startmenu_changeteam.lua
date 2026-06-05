@@ -69,16 +69,16 @@ CoD.StartMenu_ChangeTeam.new = function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3, f6
 		CoD.Menu.UpdateButtonShownState( element, f6_arg0, f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f8_local0
 	end )
-	f6_arg0:AddButtonCallbackFunction( buttonList, f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f9_arg0, f9_arg2, "disabled" ) then
-			ProcessListAction( self, f9_arg0, f9_arg2, f9_arg1 )
+	f6_arg0:AddButtonCallbackFunction( buttonList, f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "disabled" ) then
+			ProcessListAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f10_arg0, f10_arg2, "disabled" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2641978FD3DC17A, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "disabled" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0x2641978FD3DC17A, nil, "ui_confirm" )
 			return true
 		else
 			return false

@@ -34,7 +34,7 @@ CoD.WarzoneQuickInventoryMenuItemAttachmentSmall_Internal.new = function ( f1_ar
 	
 	local ItemFrameAdd = LUI.UIImage.new( 0, 1, -3, 3, 0, 1, -3, 3 )
 	ItemFrameAdd:setAlpha( 0 )
-	ItemFrameAdd:setImage( RegisterImage( 0xC2AE59F4FA74812 ) )
+	ItemFrameAdd:setImage( RegisterImage( "uie_ui_menu_store_element_frame" ) )
 	ItemFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ItemFrameAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	ItemFrameAdd:setupNineSliceShader( 12, 164 )
@@ -70,7 +70,7 @@ CoD.WarzoneQuickInventoryMenuItemAttachmentSmall_Internal.new = function ( f1_ar
 	
 	local Brackets = LUI.UIImage.new( -0, 1, -1, 1, -0.03, 1.01, -1, 1 )
 	Brackets:setAlpha( 0 )
-	Brackets:setImage( RegisterImage( 0x690F4997B5ECDAD ) )
+	Brackets:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_brackets" ) )
 	Brackets:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Brackets:setShaderVector( 0, 0, 0, 0, 0 )
 	Brackets:setupNineSliceShader( 36, 36 )
@@ -78,7 +78,7 @@ CoD.WarzoneQuickInventoryMenuItemAttachmentSmall_Internal.new = function ( f1_ar
 	self.Brackets = Brackets
 	
 	local InventoryIcon = LUI.UIFixedAspectRatioImage.new( 0.5, 0.5, -20.5, 21.5, 0.5, 0.5, -19.5, 21.5 )
-	InventoryIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
+	InventoryIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_blend" ) )
 	InventoryIcon:linkToElementModel( self, "icon", true, function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then

@@ -28,11 +28,11 @@ CoD.StartMenu_Options_AccountManagementForm.new = function ( f1_arg0, f1_arg1, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( AccountOptions, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		ProcessListAction( self, f3_arg0, f3_arg2, f3_arg1 )
+	f1_arg0:AddButtonCallbackFunction( AccountOptions, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		ProcessListAction( self, element, controller, menu )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( AccountOptions )
@@ -54,11 +54,11 @@ CoD.StartMenu_Options_AccountManagementForm.new = function ( f1_arg0, f1_arg1, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( AccountButtonOptionsList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		ProcessListAction( self, f6_arg0, f6_arg2, f6_arg1 )
+	f1_arg0:AddButtonCallbackFunction( AccountButtonOptionsList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		ProcessListAction( self, element, controller, menu )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( AccountButtonOptionsList )
@@ -66,7 +66,7 @@ CoD.StartMenu_Options_AccountManagementForm.new = function ( f1_arg0, f1_arg1, f
 	
 	local Title = LUI.UIText.new( 0.5, 0.5, -362.5, 362.5, 0, 0, 210.5, 264.5 )
 	Title:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
-	Title:setText( Engine[0xF9F1239CFD921FE]( 0x30BC41F2404F851 ) )
+	Title:setText( Engine[0xF9F1239CFD921FE]( "menu/cod_account_caps" ) )
 	Title:setTTF( "ttmussels_regular" )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Title:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

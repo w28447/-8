@@ -16,7 +16,7 @@ CoD.WZAAR_PaintCans.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local led = LUI.UIImage.new( 0, 0, 4, 296, 0, 0, 17.5, 57.5 )
 	led:setAlpha( 0.02 )
-	led:setImage( RegisterImage( 0xC07F7432F86DA83 ) )
+	led:setImage( RegisterImage( "uie_wz_hud_map_danger_led" ) )
 	led:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	led:setShaderVector( 0, 0, 0.98, 0, 0 )
 	led:setShaderVector( 1, 0, 0, 0, 0 )
@@ -28,7 +28,7 @@ CoD.WZAAR_PaintCans.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local led2 = LUI.UIImage.new( 0, 0, 4, 296, 0, 0, 53.5, 93.5 )
 	led2:setAlpha( 0.02 )
-	led2:setImage( RegisterImage( 0xC07F7432F86DA83 ) )
+	led2:setImage( RegisterImage( "uie_wz_hud_map_danger_led" ) )
 	led2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	led2:setShaderVector( 0, 0, 0.98, 0, 0 )
 	led2:setShaderVector( 1, 0, 0, 0, 0 )
@@ -40,7 +40,7 @@ CoD.WZAAR_PaintCans.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local border = LUI.UIImage.new( 0, 0, 0, 296, 0, 0, 14, 77 )
 	border:setRGB( 0.07, 0.07, 0.07 )
-	border:setImage( RegisterImage( 0xA3C76B80B69874D ) )
+	border:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_chamfer_border" ) )
 	border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	border:setShaderVector( 0, 0, 0, 0, 0 )
 	border:setupNineSliceShader( 18, 24 )
@@ -49,7 +49,7 @@ CoD.WZAAR_PaintCans.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local StatLabel = LUI.UIText.new( 0, 0, 17, 177, 0, 0, 35, 57 )
 	StatLabel:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	StatLabel:setText( Engine[0xF9F1239CFD921FE]( 0x9FE863E6425C8CE ) )
+	StatLabel:setText( Engine[0xF9F1239CFD921FE]( "aar/paint_cans" ) )
 	StatLabel:setTTF( "ttmussels_regular" )
 	StatLabel:setLetterSpacing( 2 )
 	StatLabel:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )

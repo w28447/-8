@@ -76,42 +76,42 @@ CoD.ItemDetails.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ItemShopButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if CanPurchaseItem( f8_arg2, self ) and IsInDefaultState( self ) then
-			OpenPopup( self, "ItemShopConfirmation", f8_arg2, {
+	f1_arg0:AddButtonCallbackFunction( ItemShopButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CanPurchaseItem( controller, self ) and IsInDefaultState( self ) then
+			OpenPopup( self, "ItemShopConfirmation", controller, {
 				_model = self:getModel()
 			} )
 			PlaySoundAlias( "uin_press_generic" )
-			CoD.PlayerRoleUtility.StopGesturePreview( f8_arg1, f8_arg2 )
+			CoD.PlayerRoleUtility.StopGesturePreview( menu, controller )
 			return true
-		elseif CanPurchaseItem( f8_arg2, self ) and IsElementInState( self, "SubItems" ) then
-			OpenPopup( self, "ItemShopConfirmation", f8_arg2, {
+		elseif CanPurchaseItem( controller, self ) and IsElementInState( self, "SubItems" ) then
+			OpenPopup( self, "ItemShopConfirmation", controller, {
 				_model = self:getModel()
 			} )
 			PlaySoundAlias( "uin_press_generic" )
 			return true
 		elseif IsInDefaultState( self ) then
-			OpenPopup( self, "PurchaseCodPoints", f8_arg2, f8_arg1:getModel() )
-			CoD.PlayerRoleUtility.StopGesturePreview( f8_arg1, f8_arg2 )
+			OpenPopup( self, "PurchaseCodPoints", controller, menu:getModel() )
+			CoD.PlayerRoleUtility.StopGesturePreview( menu, controller )
 			return true
 		elseif IsElementInState( self, "SubItems" ) then
-			OpenPopup( self, "PurchaseCodPoints", f8_arg2, f8_arg1:getModel() )
+			OpenPopup( self, "PurchaseCodPoints", controller, menu:getModel() )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if CanPurchaseItem( f9_arg2, self ) and IsInDefaultState( self ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if CanPurchaseItem( controller, self ) and IsInDefaultState( self ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif CanPurchaseItem( f9_arg2, self ) and IsElementInState( self, "SubItems" ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif CanPurchaseItem( controller, self ) and IsElementInState( self, "SubItems" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif IsInDefaultState( self ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif IsElementInState( self, "SubItems" ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -132,7 +132,7 @@ CoD.ItemDetails.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	
 	ButtonTopLine9Slice2 = LUI.UIImage.new( 0, 0, -5, 781, 0, 0, -6, 14 )
 	ButtonTopLine9Slice2:setAlpha( 0.25 )
-	ButtonTopLine9Slice2:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
+	ButtonTopLine9Slice2:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_line" ) )
 	ButtonTopLine9Slice2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonTopLine9Slice2:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonTopLine9Slice2:setupNineSliceShader( 120, 10 )
@@ -150,7 +150,7 @@ CoD.ItemDetails.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	
 	local ButtonTopLine9Slice = LUI.UIImage.new( 0, 0, -5, 781, 0, 0, 461, 481 )
 	ButtonTopLine9Slice:setAlpha( 0.25 )
-	ButtonTopLine9Slice:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
+	ButtonTopLine9Slice:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_line" ) )
 	ButtonTopLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonTopLine9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonTopLine9Slice:setupNineSliceShader( 120, 10 )

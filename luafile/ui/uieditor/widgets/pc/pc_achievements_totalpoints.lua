@@ -14,7 +14,7 @@ CoD.PC_Achievements_TotalPoints.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local TotalPoints = LUI.UIText.new( 0.5, 0.5, 9.5, 169.5, 0.5, 0.5, -7, 12 )
 	TotalPoints:setRGB( 0.8, 0.8, 0.8 )
 	TotalPoints:setAlpha( 0.35 )
-	TotalPoints:setText( LocalizeToUpperString( 0xA3BAB954D979BB ) )
+	TotalPoints:setText( LocalizeToUpperString( "achievements/totalpoints" ) )
 	TotalPoints:setTTF( "ttmussels_regular" )
 	TotalPoints:setLetterSpacing( 6 )
 	TotalPoints:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

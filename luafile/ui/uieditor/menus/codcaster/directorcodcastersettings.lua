@@ -57,7 +57,7 @@ LUI.createMenu.DirectorCodCasterSettings = function ( f1_arg0, f1_arg1 )
 	
 	local MenuFrame = CoD.GenericMenuFrame.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
 	MenuFrame.CommonHeader.BGSceneBlur:setAlpha( 1 )
-	MenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x7F41D0B1EB0400 ) )
+	MenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "codcaster/codcaster_settings" ) )
 	MenuFrame:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
@@ -91,55 +91,55 @@ LUI.createMenu.DirectorCodCasterSettings = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( f7_arg1, f1_local1, f1_arg0, Enum.LUIButton[0xC083113BC81F23F] )
 		CoD.Menu.UpdateButtonShownState( f7_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA] )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_2", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if IsGamepad( f8_arg2 ) then
-			CoD.CodCasterUtility.ResetCodcasterSettingsGamepad( f8_arg2, f8_arg1 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_2", function ( element, menu, controller, model )
+		if IsGamepad( controller ) then
+			CoD.CodCasterUtility.ResetCodcasterSettingsGamepad( controller, menu )
 			PlaySoundAlias( "uin_party_ease_slide" )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if IsGamepad( f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xFA987631536BD44, Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 750 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/reset_to_default", Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 750 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_contextual_2" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA], "ui_contextual_2", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		if IsMouseOrKeyboard( f10_arg2 ) then
-			CoD.CodCasterUtility.OpenResetCodCasterSettingsPopup( self, f10_arg0, f10_arg2, "", f10_arg1 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA], "ui_contextual_2", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) then
+			CoD.CodCasterUtility.OpenResetCodCasterSettingsPopup( self, element, controller, "", menu )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		if IsMouseOrKeyboard( f11_arg2 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0xFA987631536BD44, nil, "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "menu/reset_to_default", nil, "ui_contextual_2" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		SaveShoutcasterSettings( self, f12_arg0, f12_arg2 )
-		GoBack( self, f12_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
+		SaveShoutcasterSettings( self, element, controller )
+		GoBack( self, controller )
 		return true
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "Z", function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
-		if CoD.CodCasterUtility.CodcasterTeamIdentityShowingTeamSetting( f14_arg2, self.CatgeoryTabs ) and CoD.CodCasterUtility.UseCustomTeamIdentity( f14_arg2 ) then
-			CoD.CodCasterUtility.SwapTeamIdentity( self, f14_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "Z", function ( element, menu, controller, model )
+		if CoD.CodCasterUtility.CodcasterTeamIdentityShowingTeamSetting( controller, self.CatgeoryTabs ) and CoD.CodCasterUtility.UseCustomTeamIdentity( controller ) then
+			CoD.CodCasterUtility.SwapTeamIdentity( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		if CoD.CodCasterUtility.CodcasterTeamIdentityShowingTeamSetting( f15_arg2, self.CatgeoryTabs ) and CoD.CodCasterUtility.UseCustomTeamIdentity( f15_arg2 ) then
-			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0xDD938AAB1C2D899, Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "Z" )
+	end, function ( element, menu, controller )
+		if CoD.CodCasterUtility.CodcasterTeamIdentityShowingTeamSetting( controller, self.CatgeoryTabs ) and CoD.CodCasterUtility.UseCustomTeamIdentity( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], 0xDD938AAB1C2D899, Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "Z" )
 			return true
 		else
 			return false

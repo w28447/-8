@@ -13,7 +13,7 @@ CoD.StartMenu_Options_Network_OverviewPanel.new = function ( f1_arg0, f1_arg1, f
 	
 	local VersionLabel = LUI.UIText.new( 0.5, 0.5, -440, 265, 0, 0, 463, 493 )
 	VersionLabel:setRGB( 0.63, 0.57, 0.2 )
-	VersionLabel:setText( LocalizeToUpperString( 0x37A279B5F116079 ) )
+	VersionLabel:setText( LocalizeToUpperString( "menu/options_network_version" ) )
 	VersionLabel:setTTF( "ttmussels_regular" )
 	VersionLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( VersionLabel )
@@ -34,7 +34,7 @@ CoD.StartMenu_Options_Network_OverviewPanel.new = function ( f1_arg0, f1_arg1, f
 	
 	local AboutPingBarsDesc = LUI.UIText.new( 0.5, 0.5, -440, 265, 0, 0, 162.5, 183.5 )
 	AboutPingBarsDesc:setRGB( 0.92, 0.92, 0.92 )
-	AboutPingBarsDesc:setText( Engine[0xF9F1239CFD921FE]( 0x86F02B46AA2ABAF ) )
+	AboutPingBarsDesc:setText( Engine[0xF9F1239CFD921FE]( "menu/options_network_about_ping_bars_des" ) )
 	AboutPingBarsDesc:setTTF( "dinnext_regular" )
 	AboutPingBarsDesc:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	AboutPingBarsDesc:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -43,7 +43,7 @@ CoD.StartMenu_Options_Network_OverviewPanel.new = function ( f1_arg0, f1_arg1, f
 	
 	local AboutPingBarsLabel = LUI.UIText.new( 0.5, 0.5, -440, 265, 0, 0, 113, 143 )
 	AboutPingBarsLabel:setRGB( 0.63, 0.57, 0.2 )
-	AboutPingBarsLabel:setText( LocalizeToUpperString( 0xCCDEE5E97C5E45C ) )
+	AboutPingBarsLabel:setText( LocalizeToUpperString( "menu/options_network_about_ping_bars" ) )
 	AboutPingBarsLabel:setTTF( "ttmussels_regular" )
 	AboutPingBarsLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( AboutPingBarsLabel )
@@ -51,7 +51,7 @@ CoD.StartMenu_Options_Network_OverviewPanel.new = function ( f1_arg0, f1_arg1, f
 	
 	local SupportLinkLabel = LUI.UIText.new( 0.5, 0.5, -440, 265, 0, 0, 52.5, 73.5 )
 	SupportLinkLabel:setRGB( 0.92, 0.92, 0.92 )
-	SupportLinkLabel:setText( Engine[0xF9F1239CFD921FE]( 0xA174F5A1C299E68 ) )
+	SupportLinkLabel:setText( Engine[0xF9F1239CFD921FE]( "menu/options_network_customer_service_link" ) )
 	SupportLinkLabel:setTTF( "dinnext_regular" )
 	SupportLinkLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( SupportLinkLabel )

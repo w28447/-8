@@ -9,7 +9,7 @@ CoD.TabletIcePickGadget_BgWindow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local PixelGrid = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	PixelGrid:setAlpha( 0.1 )
-	PixelGrid:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGrid:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	PixelGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGrid:setupNineSliceShader( 256, 256 )

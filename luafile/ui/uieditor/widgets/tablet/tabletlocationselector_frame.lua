@@ -100,7 +100,7 @@ CoD.TabletLocationSelector_Frame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local ButtonCase1 = LUI.UIImage.new( 0.5, 0.5, -355, -157, 1, 1, -54, -6 )
 	ButtonCase1:setAlpha( 0.06 )
 	ButtonCase1:setZRot( 180 )
-	ButtonCase1:setImage( RegisterImage( 0x18D8A1BD8B8BC5E ) )
+	ButtonCase1:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_container" ) )
 	self:addElement( ButtonCase1 )
 	self.ButtonCase1 = ButtonCase1
 	
@@ -112,7 +112,7 @@ CoD.TabletLocationSelector_Frame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local ButtonCase3 = LUI.UIImage.new( 0.5, 0.5, 157, 355, 1, 1, -54, -6 )
 	ButtonCase3:setAlpha( 0.06 )
 	ButtonCase3:setZRot( 180 )
-	ButtonCase3:setImage( RegisterImage( 0x18D8A1BD8B8BC5E ) )
+	ButtonCase3:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_container" ) )
 	self:addElement( ButtonCase3 )
 	self.ButtonCase3 = ButtonCase3
 	

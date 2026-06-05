@@ -70,13 +70,13 @@ CoD.ChallengesUtility.ChallengeCategoryTable = {
 	}
 }
 CoD.ChallengesUtility.ChallengeCategoryDisplayName = {
-	operations = 0xCE9A53873255D09,
+	operations = "challenge/operations",
 	career = "challenge/career",
-	scorestreaks = 0xCD2E0542DA537BE,
-	prestige = 0xF45564D1E059F32
+	scorestreaks = "challenge/scorestreaks",
+	prestige = "challenge/prestige"
 }
 CoD.ChallengesUtility.ChallengeCategorySortOrder = {
-	[Enum.eModes[0x83EBA96F36BC4E5]] = {
+	[Enum.eModes.mode_multiplayer] = {
 		mp = 0,
 		bootcamp = 1,
 		killer = 2,
@@ -100,7 +100,7 @@ CoD.ChallengesUtility.ChallengeCategorySortOrder = {
 		equipment = 20,
 		wildcards = 21
 	},
-	[Enum.eModes[0x3723205FAE52C4A]] = {
+	[Enum.eModes.mode_zombies] = {
 		zm = 0,
 		hunter = 1,
 		survivalist = 2,
@@ -109,7 +109,7 @@ CoD.ChallengesUtility.ChallengeCategorySortOrder = {
 		weapons_and_equipment = 5,
 		prestigious = 6
 	},
-	[Enum.eModes[0xBF1DCC8138A9D39]] = {
+	[Enum.eModes.mode_warzone] = {
 		wz = 0,
 		professional = 1,
 		survivalist = 2,
@@ -118,20 +118,20 @@ CoD.ChallengesUtility.ChallengeCategorySortOrder = {
 	}
 }
 CoD.ChallengesUtility.ChallengeTypeHashToEnum = {
-	[0xFB43557B54149CE] = Enum.statsMilestoneTypes_t[0x5CB1517DC5C10C1],
-	[0x6D03B583228161E] = Enum.statsMilestoneTypes_t[0x398A3DF84F4A233],
-	[0xC57E42946F6E08C] = Enum.statsMilestoneTypes_t[0x4D0D341C55C3159],
-	[0x73F89AC8D3F248] = Enum.statsMilestoneTypes_t[0x86B082C51FC2370],
-	[0x14447AC692A7D40] = Enum.statsMilestoneTypes_t[0xA3311F9A3A184EF],
-	[0x4F35AE761BD424] = Enum.statsMilestoneTypes_t[0x28E0B9B3994DEC3]
+	global = Enum.statsMilestoneTypes_t[0x5CB1517DC5C10C1],
+	daily = Enum.statsMilestoneTypes_t[0x398A3DF84F4A233],
+	group = Enum.statsMilestoneTypes_t[0x4D0D341C55C3159],
+	attachment = Enum.statsMilestoneTypes_t[0x86B082C51FC2370],
+	gamemode = Enum.statsMilestoneTypes_t[0xA3311F9A3A184EF],
+	specialist = Enum.statsMilestoneTypes_t[0x28E0B9B3994DEC3]
 }
 CoD.ChallengesUtility.SetupCategoryStatsDatasource = function ( f1_arg0, f1_arg1, f1_arg2 )
 	local f1_local0 = Engine.GetChallengeInfoForImages( f1_arg0, nil, f1_arg1 )
 	local f1_local1 = {
-		[f1_arg2] = {},
-		[f1_arg2] = 0,
-		[f1_arg2] = 0
+		[f1_arg2] = {}
 	}
+	f1_local1[f1_arg2].numComplete = 0
+	f1_local1[f1_arg2].numTotal = 0
 	for f1_local8, f1_local9 in pairs( CoD.ChallengesUtility.ChallengeCategoryTable[f1_arg2] ) do
 		for f1_local5, f1_local6 in ipairs( f1_local9 ) do
 			f1_local1[f1_local6] = {}
@@ -144,9 +144,9 @@ CoD.ChallengesUtility.SetupCategoryStatsDatasource = function ( f1_arg0, f1_arg1
 	end
 	f1_local2 = nil
 	f1_local3 = Engine.GetModelForController( f1_arg0 )
-	if f1_arg1 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f1_arg1 == Enum.eModes.mode_multiplayer then
 		f1_local2 = f1_local3:create( "ChallengesMPCategoryStats" )
-	elseif f1_arg1 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f1_arg1 == Enum.eModes.mode_zombies then
 		f1_local2 = f1_local3:create( "ChallengesZMCategoryStats" )
 	else
 		f1_local2 = f1_local3:create( "ChallengesWZCategoryStats" )
@@ -176,7 +176,8 @@ CoD.ChallengesUtility.SetupCategoryStatsDatasource = function ( f1_arg0, f1_arg1
 		end
 	end
 	for f1_local10, f1_local11 in pairs( CoD.ChallengesUtility.ChallengeCategoryTable[f1_arg2] ) do
-		local f1_local7, f1_local5, f1_local6 = false
+		local f1_local7 = false
+		local f1_local5, f1_local6 = nil
 		for f1_local13, f1_local14 in ipairs( f1_local11 ) do
 			if not f1_local7 and f1_local1[f1_local14].categoryLocked then
 				if f1_local1[f1_local14].unlockPLevel and (not f1_local6 or f1_local1[f1_local14].unlockPLevel < f1_local6) then
@@ -230,11 +231,11 @@ CoD.ChallengesUtility.RefreshCategoryStats = function ( f2_arg0, f2_arg1 )
 		local f2_local0 = CoD.StartMenuUtility.GetSessionModeFromLobby()
 		if not f2_local0 then
 			return 
-		elseif f2_local0 == Enum.eModes[0x83EBA96F36BC4E5] then
+		elseif f2_local0 == Enum.eModes.mode_multiplayer then
 			DataSources.ChallengesMPCategoryStats.init( f2_arg0 )
-		elseif f2_local0 == Enum.eModes[0x3723205FAE52C4A] then
+		elseif f2_local0 == Enum.eModes.mode_zombies then
 			DataSources.ChallengesZMCategoryStats.init( f2_arg0 )
-		elseif f2_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+		elseif f2_local0 == Enum.eModes.mode_warzone then
 			DataSources.ChallengesWZCategoryStats.init( f2_arg0 )
 		end
 	end
@@ -242,7 +243,7 @@ end
 
 DataSources.ChallengesMPCategoryStats = {
 	init = function ( f3_arg0 )
-		return CoD.ChallengesUtility.SetupCategoryStatsDatasource( f3_arg0, Enum.eModes[0x83EBA96F36BC4E5], "mp" )
+		return CoD.ChallengesUtility.SetupCategoryStatsDatasource( f3_arg0, Enum.eModes.mode_multiplayer, "mp" )
 	end,
 	getModel = function ( f4_arg0 )
 		local f4_local0 = Engine.GetModel( Engine.GetModelForController( f4_arg0 ), "ChallengesMPCategoryStats" )
@@ -254,7 +255,7 @@ DataSources.ChallengesMPCategoryStats = {
 }
 DataSources.ChallengesZMCategoryStats = {
 	init = function ( f5_arg0 )
-		return CoD.ChallengesUtility.SetupCategoryStatsDatasource( f5_arg0, Enum.eModes[0x3723205FAE52C4A], "zm" )
+		return CoD.ChallengesUtility.SetupCategoryStatsDatasource( f5_arg0, Enum.eModes.mode_zombies, "zm" )
 	end,
 	getModel = function ( f6_arg0 )
 		local f6_local0 = Engine.GetModel( Engine.GetModelForController( f6_arg0 ), "ChallengesZMCategoryStats" )
@@ -266,7 +267,7 @@ DataSources.ChallengesZMCategoryStats = {
 }
 DataSources.ChallengesWZCategoryStats = {
 	init = function ( f7_arg0 )
-		return CoD.ChallengesUtility.SetupCategoryStatsDatasource( f7_arg0, Enum.eModes[0xBF1DCC8138A9D39], "wz" )
+		return CoD.ChallengesUtility.SetupCategoryStatsDatasource( f7_arg0, Enum.eModes.mode_warzone, "wz" )
 	end,
 	getModel = function ( f8_arg0 )
 		local f8_local0 = Engine.GetModel( Engine.GetModelForController( f8_arg0 ), "ChallengesWZCategoryStats" )
@@ -389,17 +390,17 @@ DataSources.ChallengesTabs = ListHelper_SetupDataSource( "ChallengesTabs", funct
 	local f14_local1 = Engine.GetGlobalModel()
 	f14_local1 = f14_local1.defaultChallengeTab:get()
 	local f14_local2 = CoD.StartMenuUtility.GetSessionModeFromLobby()
-	if f14_local2 == Enum.eModes[0x83EBA96F36BC4E5] then
-		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, 0xCE9A53873255D09, "CoD.Challenges_FrameWidget_Operations", "operations", f14_local1 )
+	if f14_local2 == Enum.eModes.mode_multiplayer then
+		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, "challenge/operations", "CoD.Challenges_FrameWidget_Operations", "operations", f14_local1 )
 		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, "challenge/career", "CoD.Challenges_FrameWidget_Career", "career", f14_local1 )
-		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, 0xCD2E0542DA537BE, "CoD.Challenges_FrameWidget_Scorestreaks", "scorestreaks", f14_local1 )
-		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, 0xF45564D1E059F32, "CoD.Challenges_FrameWidget_Prestige", "prestige", f14_local1 )
-	elseif f14_local2 == Enum.eModes[0x3723205FAE52C4A] then
+		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, "challenge/scorestreaks", "CoD.Challenges_FrameWidget_Scorestreaks", "scorestreaks", f14_local1 )
+		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, "challenge/prestige", "CoD.Challenges_FrameWidget_Prestige", "prestige", f14_local1 )
+	elseif f14_local2 == Enum.eModes.mode_zombies then
 		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, 0x892ED10E8BF4877, "CoD.Challenges_FrameWidget_Expert", "expert", f14_local1 )
 		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, 0x677D363E896D453, "CoD.Challenges_FrameWidget_Toolkit", "toolkit", f14_local1 )
 	else
 		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, "challenge/career", "CoD.ChallengesFramewidgetCareerWZ", "career", f14_local1 )
-		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, 0xCE9A53873255D09, "CoD.ChallengesFramewidgetOperationsWZ", "operations", f14_local1 )
+		CoD.ChallengesUtility.CreateChallengeTab( f14_arg0, f14_local0, "challenge/operations", "CoD.ChallengesFramewidgetOperationsWZ", "operations", f14_local1 )
 	end
 	return f14_local0
 end )
@@ -407,45 +408,45 @@ DataSources.OperationsTabs = ListHelper_SetupDataSource( "OperationsTabs", funct
 	local f15_local0 = {}
 	local f15_local1 = Engine.GetGlobalModel()
 	f15_local1 = f15_local1.challengeCategory:get()
-	CoD.ChallengesUtility.CreateChallengeTab( f15_arg0, f15_local0, 0x77600252B55C452, "CoD.ChallengesStickerbook", "bootcamp", f15_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f15_arg0, f15_local0, 0x65DA104E9465AC0, "CoD.ChallengesStickerbook", "killer", f15_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f15_arg0, f15_local0, 0xAB782700D73E766, "CoD.ChallengesStickerbook", "humiliation", f15_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f15_arg0, f15_local0, 0x86884AAE31003E5, "CoD.ChallengesStickerbook", "precision", f15_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f15_arg0, f15_local0, 0xA9D0747734C1994, "CoD.ChallengesStickerbook", "killjoys", f15_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f15_arg0, f15_local0, "challenge/bootcamp", "CoD.ChallengesStickerbook", "bootcamp", f15_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f15_arg0, f15_local0, "challenge/killer", "CoD.ChallengesStickerbook", "killer", f15_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f15_arg0, f15_local0, "challenge/humiliation", "CoD.ChallengesStickerbook", "humiliation", f15_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f15_arg0, f15_local0, "challenge/precision", "CoD.ChallengesStickerbook", "precision", f15_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f15_arg0, f15_local0, "challenge/killjoys", "CoD.ChallengesStickerbook", "killjoys", f15_local1 )
 	return f15_local0
 end )
 DataSources.CareerTabs = ListHelper_SetupDataSource( "CareerTabs", function ( f16_arg0 )
 	local f16_local0 = {}
 	local f16_local1 = Engine.GetGlobalModel()
 	f16_local1 = f16_local1.challengeCategory:get()
-	CoD.ChallengesUtility.CreateChallengeTab( f16_arg0, f16_local0, 0x832B872C3810A1D, "CoD.ChallengesStickerbook", "gamevictories", f16_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f16_arg0, f16_local0, 0xCBFC431FF389F30, "CoD.ChallengesStickerbook", "tourofduty", f16_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f16_arg0, f16_local0, 0x1DE917BC6765D92, "CoD.ChallengesStickerbook", "gameheroics", f16_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f16_arg0, f16_local0, 0x8AD60D04B9DC260, "CoD.ChallengesStickerbook", "weaponproficiency", f16_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f16_arg0, f16_local0, 0x6DFABEBE8C8B1E1, "CoD.ChallengesStickerbook", "marksman", f16_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f16_arg0, f16_local0, 0x24F78410BB18BC0, "CoD.ChallengesStickerbook", "specialized", f16_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f16_arg0, f16_local0, "challenge/gamevictories", "CoD.ChallengesStickerbook", "gamevictories", f16_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f16_arg0, f16_local0, "challenge/tourofduty", "CoD.ChallengesStickerbook", "tourofduty", f16_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f16_arg0, f16_local0, "challenge/gameheroics", "CoD.ChallengesStickerbook", "gameheroics", f16_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f16_arg0, f16_local0, "challenge/weaponproficiency", "CoD.ChallengesStickerbook", "weaponproficiency", f16_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f16_arg0, f16_local0, "challenge/marksman", "CoD.ChallengesStickerbook", "marksman", f16_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f16_arg0, f16_local0, "challenge/specialized", "CoD.ChallengesStickerbook", "specialized", f16_local1 )
 	return f16_local0
 end )
 DataSources.ScorestreaksTabs = ListHelper_SetupDataSource( "ScorestreaksTabs", function ( f17_arg0 )
 	local f17_local0 = {}
 	local f17_local1 = Engine.GetGlobalModel()
 	f17_local1 = f17_local1.challengeCategory:get()
-	CoD.ChallengesUtility.CreateChallengeTab( f17_arg0, f17_local0, 0xB6763773FCFB224, "CoD.ChallengesStickerbook", "airassault", f17_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f17_arg0, f17_local0, 0xD4AC4AA905A80CB, "CoD.ChallengesStickerbook", "groundassault", f17_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f17_arg0, f17_local0, 0x156F86BB05EF10E, "CoD.ChallengesStickerbook", "support", f17_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f17_arg0, f17_local0, "challenge/airassault", "CoD.ChallengesStickerbook", "airassault", f17_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f17_arg0, f17_local0, "challenge/groundassault", "CoD.ChallengesStickerbook", "groundassault", f17_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f17_arg0, f17_local0, "challenge/support", "CoD.ChallengesStickerbook", "support", f17_local1 )
 	return f17_local0
 end )
 DataSources.PrestigeTabs = ListHelper_SetupDataSource( "PrestigeTabs", function ( f18_arg0 )
 	local f18_local0 = {}
 	local f18_local1 = Engine.GetGlobalModel()
 	f18_local1 = f18_local1.challengeCategory:get()
-	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, 0x5286388DDB2A3DE, "CoD.ChallengesStickerbook", "handling", f18_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, "challenge/handling", "CoD.ChallengesStickerbook", "handling", f18_local1 )
 	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, "challenge/efficiency", "CoD.ChallengesStickerbook", "efficiency", f18_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, 0x80013311B8CB58F, "CoD.ChallengesStickerbook", "tacticalkits", f18_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, 0x4AEF303ED69E004, "CoD.ChallengesStickerbook", "gear", f18_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, 0x6F78F5AEA99A7E8, "CoD.ChallengesStickerbook", "perks", f18_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, 0x7DC3FC26D23E8ED, "CoD.ChallengesStickerbook", "equipment", f18_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, 0x454D80797ED0C36, "CoD.ChallengesStickerbook", "wildcards", f18_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, "challenge/tacticalkits", "CoD.ChallengesStickerbook", "tacticalkits", f18_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, "challenge/gear", "CoD.ChallengesStickerbook", "gear", f18_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, "challenge/perks", "CoD.ChallengesStickerbook", "perks", f18_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, "challenge/equipment", "CoD.ChallengesStickerbook", "equipment", f18_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f18_arg0, f18_local0, "challenge/wildcards", "CoD.ChallengesStickerbook", "wildcards", f18_local1 )
 	return f18_local0
 end )
 DataSources.ToolkitTabs = ListHelper_SetupDataSource( "ToolkitTabs", function ( f19_arg0 )
@@ -453,16 +454,16 @@ DataSources.ToolkitTabs = ListHelper_SetupDataSource( "ToolkitTabs", function ( 
 	local f19_local1 = Engine.GetGlobalModel()
 	f19_local1 = f19_local1.challengeCategory:get()
 	CoD.ChallengesUtility.CreateChallengeTab( f19_arg0, f19_local0, 0x21B7E9D719708D1, "CoD.ChallengesStickerbook", "elixirs_and_talismans", f19_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f19_arg0, f19_local0, 0x26CD93E46733780, "CoD.ChallengesStickerbook", "weapons_and_equipment", f19_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f19_arg0, f19_local0, 0x6A1754117AB845E, "CoD.ChallengesStickerbook", "prestigious", f19_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f19_arg0, f19_local0, "zm_challenges/weapons_and_equipment", "CoD.ChallengesStickerbook", "weapons_and_equipment", f19_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f19_arg0, f19_local0, "zm_challenges/prestigious", "CoD.ChallengesStickerbook", "prestigious", f19_local1 )
 	return f19_local0
 end )
 DataSources.ExpertTabs = ListHelper_SetupDataSource( "ExpertTabs", function ( f20_arg0 )
 	local f20_local0 = {}
 	local f20_local1 = Engine.GetGlobalModel()
 	f20_local1 = f20_local1.challengeCategory:get()
-	CoD.ChallengesUtility.CreateChallengeTab( f20_arg0, f20_local0, 0xB31D6069443FEFE, "CoD.ChallengesStickerbook", "hunter", f20_local1 )
-	CoD.ChallengesUtility.CreateChallengeTab( f20_arg0, f20_local0, 0xD818E0F459A2CFA, "CoD.ChallengesStickerbook", "survivalist", f20_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f20_arg0, f20_local0, "zm_challenges/hunter", "CoD.ChallengesStickerbook", "hunter", f20_local1 )
+	CoD.ChallengesUtility.CreateChallengeTab( f20_arg0, f20_local0, "zm_challenges/survivalist", "CoD.ChallengesStickerbook", "survivalist", f20_local1 )
 	CoD.ChallengesUtility.CreateChallengeTab( f20_arg0, f20_local0, "zm_challenges/strategist", "CoD.ChallengesStickerbook", "strategist", f20_local1 )
 	return f20_local0
 end )
@@ -560,7 +561,7 @@ CoD.ChallengesUtility.SetCallingCardForWidget = function ( f28_arg0, f28_arg1, f
 	if CoD.isPC and CoD.PCKoreaUtility.ShowKorea15Plus() then
 		local f28_local2 = 19
 		local f28_local3 = Engine.TableLookup( CoD.backgroundsTable, f28_local2, f28_local2, f28_arg1 )
-		if f28_local3 and f28_local3 ~= 0x0 then
+		if f28_local3 and f28_local3 ~= "" then
 			f28_arg0.__backgroundImage = f28_arg1
 			f28_arg0.isWidgetBasedCallingCard = nil
 			f28_arg0:changeFrameWidget( CoD.CallingCards_BasicImage )
@@ -608,11 +609,11 @@ CoD.ChallengesUtility.GetGameModeInfo = function ()
 		return nil
 	end
 	local f32_local1 = {}
-	if f32_local0 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f32_local0 == Enum.eModes.mode_multiplayer then
 		f32_local1.name = "mp"
-	elseif f32_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f32_local0 == Enum.eModes.mode_zombies then
 		f32_local1.name = "zm"
-	elseif f32_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f32_local0 == Enum.eModes.mode_warzone then
 		f32_local1.name = "wz"
 	end
 	f32_local1.index = f32_local0
@@ -624,11 +625,11 @@ CoD.ChallengesUtility.GetChallengeTypeString = function ( f33_arg0 )
 end
 
 CoD.ChallengesUtility.TierString = {
-	[0] = 0x3CC221B7F8C89EC,
-	[1] = 0x3CC231B7F8C8B9F,
-	[2] = 0x3CC241B7F8C8D52,
-	[3] = 0x3CC251B7F8C8F05,
-	[4] = 0x3CC1E1B7F8C8320
+	[0] = "challenge/tier_0",
+	[1] = "challenge/tier_1",
+	[2] = "challenge/tier_2",
+	[3] = "challenge/tier_3",
+	[4] = "challenge/tier_4"
 }
 CoD.ChallengesUtility.GetChallengeTierNumeral = function ( f34_arg0 )
 	local f34_local0
@@ -640,14 +641,14 @@ CoD.ChallengesUtility.GetChallengeTierNumeral = function ( f34_arg0 )
 			return f34_local0
 		end
 	end
-	f34_local0 = 0x0
+	f34_local0 = ""
 end
 
 CoD.ChallengesUtility.GetLocalizedNameAndDescriptionForChallengeInfo = function ( f35_arg0 )
 	local f35_local0 = "mp"
-	if f35_arg0.mode == Enum.eModes[0x3723205FAE52C4A] then
+	if f35_arg0.mode == Enum.eModes.mode_zombies then
 		f35_local0 = "zm"
-	elseif f35_arg0.mode == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f35_arg0.mode == Enum.eModes.mode_warzone then
 		f35_local0 = "wz"
 	end
 	local f35_local1 = "gamedata/stats/" .. f35_local0 .. "/statsmilestones" .. f35_arg0.tableNum + 1 .. ".csv"
@@ -672,7 +673,7 @@ CoD.ChallengesUtility.GetLocalizedNameAndDescriptionForChallengeInfo = function 
 				f35_local4 = f35_local6( f35_local7 )
 			end
 		end
-		f35_local7 = 0x0
+		f35_local7 = ""
 	end
 	return Engine.Localize( f35_local2, "", f35_local4, CoD.ChallengesUtility.GetLocalizedTierText( f35_local1, f35_arg0.challengeRow ) ), Engine.Localize( f35_local3, Engine[0xC6F8EC444864600]( f35_local1, f35_arg0.challengeRow, CoD.ChallengesUtility.TargetValCol ), f35_local4 )
 end
@@ -680,7 +681,8 @@ end
 CoD.ChallengesUtility.GetLocalizedTierText = function ( f36_arg0, f36_arg1 )
 	local f36_local0 = ""
 	if f36_arg0 ~= nil and f36_arg1 ~= nil then
-		local f36_local1, f36_local2 = false
+		local f36_local1 = false
+		local f36_local2 = nil
 		local f36_local3 = tonumber( Engine[0xC6F8EC444864600]( f36_arg0, f36_arg1, 1 ) )
 		if f36_local3 > 0 or tonumber( Engine[0xC6F8EC444864600]( f36_arg0, f36_arg1 + 1, 1 ) ) == 1 then
 			f36_local1 = true
@@ -702,7 +704,7 @@ CoD.ChallengesUtility.GetBackgroundByID = function ( f37_arg0 )
 	end
 	if CoD.isPC and CoD.PCKoreaUtility.ShowKorea15Plus() then
 		local f37_local4 = Engine.TableLookup( CoD.backgroundsTable, f37_local1, f37_local2, f37_local3 )
-		if f37_local4 and f37_local4 ~= 0x0 then
+		if f37_local4 and f37_local4 ~= "" then
 			return f37_local4
 		end
 	end
@@ -774,7 +776,7 @@ CoD.ChallengesUtility.GetChallengeTable = function ( f38_arg0, f38_arg1, f38_arg
 						f38_local19 = f38_local21( f38_local22 )
 					end
 				end
-				f38_local22 = 0x0
+				f38_local22 = ""
 			end
 			if f38_local16 ~= "" then
 				f38_local23 = true
@@ -782,10 +784,10 @@ CoD.ChallengesUtility.GetChallengeTable = function ( f38_arg0, f38_arg1, f38_arg
 			if not f38_local37 then
 				if f38_local4 < f38_local18 then
 					f38_local24 = true
-					f38_local25 = Engine[0xF9F1239CFD921FE]( 0xE2EF437F27777CE, f38_local18 )
+					f38_local25 = Engine[0xF9F1239CFD921FE]( "class/prestige_unlock_desc", f38_local18 )
 				elseif f38_local4 == 0 and f38_local3 < f38_local17 then
 					f38_local24 = true
-					f38_local25 = Engine[0xF9F1239CFD921FE]( 0x10EFA40E4B9F78E, CoD.GetRankName( f38_local17, 0, f38_arg1 ), f38_local17 + 1 )
+					f38_local25 = Engine[0xF9F1239CFD921FE]( "menu/unlocked_at", CoD.GetRankName( f38_local17, 0, f38_arg1 ), f38_local17 + 1 )
 				end
 			end
 			if f38_local23 and f38_local24 then
@@ -813,7 +815,7 @@ CoD.ChallengesUtility.GetChallengeTable = function ( f38_arg0, f38_arg1, f38_arg
 			local f38_local22 = f38_local29 / f38_local10
 			local f38_local30 = f38_local22 < 1
 			if f38_local35 == "darkops" and not f38_local37 and f38_local30 then
-				f38_local27 = Engine[0xF9F1239CFD921FE]( 0x597B1BD675E38D4 )
+				f38_local27 = Engine[0xF9F1239CFD921FE]( "challenge/classified" )
 				f38_local25 = Engine[0xF9F1239CFD921FE]( 0xD39450F492BCD23 )
 			end
 			table.insert( f38_local0, {
@@ -829,11 +831,11 @@ CoD.ChallengesUtility.GetChallengeTable = function ( f38_arg0, f38_arg1, f38_arg
 					prevStatPercent = f38_local21,
 					statPercent = Dvar[0x818EB2F0EDA28E5]:get() and 1 or f38_local22,
 					statFractionText = Engine[0xF9F1239CFD921FE]( 0x31CF0F51CCA3A27, f38_local29, f38_local10 ),
-					tierStatus = Engine[0xF9F1239CFD921FE]( 0x38A59531FCD1E, f38_local26 + 1, f38_local9 + 1 ),
+					tierStatus = Engine[0xF9F1239CFD921FE]( "challenge/tier_status", f38_local26 + 1, f38_local9 + 1 ),
 					xp = f38_local13,
 					percentComplete = f38_local22,
 					isLocked = f38_local30 and not Dvar[0x818EB2F0EDA28E5]:get(),
-					isWZ = f38_arg1 == Enum.eModes[0xBF1DCC8138A9D39]
+					isWZ = f38_arg1 == Enum.eModes.mode_warzone
 				},
 				properties = {
 					isMastery = f38_local37,
@@ -873,7 +875,7 @@ end
 
 CoD.ChallengesUtility.MakeChallengeTierString = function ( f41_arg0 )
 	local f41_local0 = f41_arg0
-	if f41_arg0 == 0x0 or f41_arg0 == "" then
+	if f41_arg0 == "" or f41_arg0 == "" then
 		return ""
 	else
 		return Engine.Localize( 0xE743A7E5D0C37CD, LocalizeString( PrependString( 0x7ACFF58FDD459C3 .. "TIER_", f41_local0 ) ) )
@@ -902,10 +904,10 @@ CoD.ChallengesUtility.SetTotalMasterInfo = function ( f42_arg0 )
 	if f42_local4 then
 		f42_local5 = f42_local4.models
 		f42_local6 = nil
-		if f42_local0.index == Enum.eModes[0x83EBA96F36BC4E5] then
+		if f42_local0.index == Enum.eModes.mode_multiplayer then
 			f42_local7 = Engine.CreateModel( Engine.GetModelForController( f42_arg0 ), "ChallengesMPCategoryStats" )
 			f42_local6 = f42_local7.mp.percentComplete:get()
-		elseif f42_local0.index == Enum.eModes[0x3723205FAE52C4A] then
+		elseif f42_local0.index == Enum.eModes.mode_zombies then
 			f42_local7 = Engine.CreateModel( Engine.GetModelForController( f42_arg0 ), "ChallengesZMCategoryStats" )
 			f42_local6 = f42_local7.zm.percentComplete:get()
 		else
@@ -971,7 +973,7 @@ CoD.ChallengesUtility.GetChallengeCardsForSessionMode = function ( f46_arg0, f46
 	local f46_local2 = true
 	local f46_local3 = false
 	local f46_local4
-	if f46_arg1 ~= Enum.eModes[0x83EBA96F36BC4E5] and f46_arg1 ~= Enum.eModes[0xBF1DCC8138A9D39] then
+	if f46_arg1 ~= Enum.eModes.mode_multiplayer and f46_arg1 ~= Enum.eModes.mode_warzone then
 		f46_local4 = false
 	else
 		f46_local4 = true
@@ -1073,7 +1075,7 @@ CoD.ChallengesUtility.AddMasteryChallengeCardsToList = function ( f48_arg0, f48_
 	f48_local0.onehundredpercent.models.isLocked = f48_local0.onehundredpercent.models.percentComplete < 1
 	f48_local0.onehundredpercent.models.statFractionText = Engine[0xF9F1239CFD921FE]( 0x31CF0F51CCA3A27, f48_local4, f48_local3 )
 	table.insert( f48_arg3, f48_local0.onehundredpercent )
-	if f48_arg1 == Enum.eModes[0xBF1DCC8138A9D39] then
+	if f48_arg1 == Enum.eModes.mode_warzone then
 		f48_local5 = CoD.RankUtility.GetRankMasterCard( f48_arg0, f48_arg1 )
 		if f48_local5 then
 			table.insert( f48_arg3, f48_local5 )
@@ -1087,11 +1089,11 @@ end
 
 CoD.ChallengesUtility.GetMasteryChallengeCards = function ( f50_arg0, f50_arg1 )
 	local f50_local0 = {}
-	CoD.ChallengesUtility.AddMasteryChallengeCardsToList( f50_arg0, Enum.eModes[0x83EBA96F36BC4E5], "mp", f50_local0 )
+	CoD.ChallengesUtility.AddMasteryChallengeCardsToList( f50_arg0, Enum.eModes.mode_multiplayer, "mp", f50_local0 )
 	if not CoD.isPC or not CoD.PCKoreaUtility.ShowKorea15Plus() then
-		CoD.ChallengesUtility.AddMasteryChallengeCardsToList( f50_arg0, Enum.eModes[0x3723205FAE52C4A], "zm", f50_local0 )
+		CoD.ChallengesUtility.AddMasteryChallengeCardsToList( f50_arg0, Enum.eModes.mode_zombies, "zm", f50_local0 )
 	end
-	CoD.ChallengesUtility.AddMasteryChallengeCardsToList( f50_arg0, Enum.eModes[0xBF1DCC8138A9D39], "wz", f50_local0 )
+	CoD.ChallengesUtility.AddMasteryChallengeCardsToList( f50_arg0, Enum.eModes.mode_warzone, "wz", f50_local0 )
 	local f50_local1 = CoD.ChallengesUtility.AddGlobalChallengesToList( f50_arg0, {} )
 	if not CoD.isPC or not CoD.PCKoreaUtility.ShowKorea15Plus() then
 		table.insert( f50_local0, f50_local1 )
@@ -1122,7 +1124,7 @@ CoD.ChallengesUtility.GetMasteryChallengeCards = function ( f50_arg0, f50_arg1 )
 	f50_local7( f50_local8, f50_local9 )
 	f50_local7 = {}
 	if not CoD.isPC or not CoD.PCKoreaUtility.ShowKorea15Plus() then
-		f50_local8 = CoD.ChallengesUtility.AddDarkOpsChallengeCardsToList( f50_arg0, Enum.eModes[0x3723205FAE52C4A], "zm", f50_local7 )
+		f50_local8 = CoD.ChallengesUtility.AddDarkOpsChallengeCardsToList( f50_arg0, Enum.eModes.mode_zombies, "zm", f50_local7 )
 		if f50_local8 and not f50_local8.models.isLocked then
 			table.insert( f50_local0, f50_local8 )
 		end
@@ -1230,11 +1232,11 @@ DataSources.CallingCardsSorted = DataSourceHelpers.ListSetup( "CallingCardsSorte
 	f56_local0 = f56_local0.callingCardCategory:get()
 	local f56_local1 = {}
 	if f56_local0 == "mp" then
-		f56_local1 = CoD.ChallengesUtility.GetChallengeCardsForSessionMode( f56_arg0, Enum.eModes[0x83EBA96F36BC4E5], f56_local0, true )
+		f56_local1 = CoD.ChallengesUtility.GetChallengeCardsForSessionMode( f56_arg0, Enum.eModes.mode_multiplayer, f56_local0, true )
 	elseif f56_local0 == "zm" then
-		f56_local1 = CoD.ChallengesUtility.GetChallengeCardsForSessionMode( f56_arg0, Enum.eModes[0x3723205FAE52C4A], f56_local0, true )
+		f56_local1 = CoD.ChallengesUtility.GetChallengeCardsForSessionMode( f56_arg0, Enum.eModes.mode_zombies, f56_local0, true )
 	elseif f56_local0 == "wz" then
-		f56_local1 = CoD.ChallengesUtility.GetChallengeCardsForSessionMode( f56_arg0, Enum.eModes[0xBF1DCC8138A9D39], f56_local0, true )
+		f56_local1 = CoD.ChallengesUtility.GetChallengeCardsForSessionMode( f56_arg0, Enum.eModes.mode_warzone, f56_local0, true )
 	elseif f56_local0 == "general" then
 		f56_local1 = CoD.ChallengesUtility.GetGeneralCallingCards( f56_arg0, true )
 	elseif f56_local0 == "masters" then
@@ -1306,7 +1308,7 @@ CoD.ChallengesUtility.AddGlobalChallengesToList = function ( f57_arg0, f57_arg1 
 		if f57_local5 then
 			f57_local29 = Engine.TableLookup( f57_local1, f57_local6, f57_local4, f57_local28 )
 		end
-		if not f57_local29 or f57_local29 == 0x0 then
+		if not f57_local29 or f57_local29 == "" then
 			f57_local29 = Engine.TableLookup( f57_local1, f57_local3, f57_local4, f57_local28 )
 		end
 		local f57_local30 = Engine.TableLookup( f57_local1, f57_local2, f57_local4, f57_local28 )
@@ -1336,7 +1338,7 @@ CoD.ChallengesUtility.AddGlobalChallengesToList = function ( f57_arg0, f57_arg1 
 			return f57_local33
 		else
 			local f57_local31
-			if f57_local26 ~= 0x0 then
+			if f57_local26 ~= "" then
 				f57_local31 = {
 					f57_local24,
 					f57_local25,
@@ -1347,19 +1349,19 @@ CoD.ChallengesUtility.AddGlobalChallengesToList = function ( f57_arg0, f57_arg1 
 				else
 					local f57_local32, f57_local33, f57_local34 = nil
 					local f57_local35 = false
-					if f57_local24 ~= 0x0 then
+					if f57_local24 ~= "" then
 						f57_local32 = CoD.PlayerStatsUtility.HashStorageLookup( f57_local16, f57_local31 )
 						f57_local33 = CoD.PlayerStatsUtility.HashStorageLookup( f57_local17, f57_local31 )
 						f57_local34 = CoD.PlayerStatsUtility.HashStorageLookup( f57_local18, f57_local31 )
-						if f57_local25 == 0xDB3201FD1EB3847 then
+						if f57_local25 == "rank" then
 							f57_local35 = true
 							f57_local21 = f57_local21 - 1
 							f57_local22 = f57_local22 - 1
 							f57_local23 = f57_local23 - 1
-							if f57_local24 == 0xD59E8BFAC78A33B then
-								local f57_local36 = 0x1E79BD3853D120F
+							if f57_local24 == "playerstatslist" then
+								local f57_local36 = "plevel"
 								local f57_local37
-								if f57_local26 ~= 0x0 then
+								if f57_local26 ~= "" then
 									f57_local37 = {
 										f57_local24,
 										f57_local36,
@@ -1383,9 +1385,9 @@ CoD.ChallengesUtility.AddGlobalChallengesToList = function ( f57_arg0, f57_arg1 
 									f57_local36
 								}
 							end
-						elseif f57_local25 == 0xA9ACE0557715BCE then
+						elseif f57_local25 == "weapon_launcher" then
 							f57_local32 = CoD.PlayerStatsUtility.HashStorageLookup( f57_local16, {
-								0xD59E8BFAC78A33B,
+								"playerstatslist",
 								0xBE93D1227E6DB1
 							} )
 						end
@@ -1699,7 +1701,7 @@ DataSources.WZAARChallengeContainerList = DataSourceHelpers.ListSetup( "WZAARCha
 						rewardIcon = f66_arg0.rewardIcon:get(),
 						cases = f66_arg0.rewardAmount:get(),
 						isContract = true,
-						maxTier = 0x0
+						maxTier = ""
 					}
 					return 
 				end
@@ -1851,7 +1853,7 @@ DataSources.CallingCardSetBlackMarket = DataSourceHelpers.ListSetup( "CallingCar
 		CoD.perController[f75_arg2].callingCardSetRef = f75_arg3.setRef
 		CoD.perController[f75_arg2].isBlackMarketCallingCardNonSet = f75_arg3.nonSet == true
 		local f75_local0 = OpenOverlay( f75_arg4, "CallingCards_BlackMarket", f75_arg2, {
-			_storageClientBuffer = CoD.BreadcrumbUtility.GetStorageClientBufferForPlayer( f75_arg2, Enum.eModes[0x83EBA96F36BC4E5] )
+			_storageClientBuffer = CoD.BreadcrumbUtility.GetStorageClientBufferForPlayer( f75_arg2, Enum.eModes.mode_multiplayer )
 		} )
 		f75_local0.callingCardShowcaseSlot = f75_arg4.callingCardShowcaseSlot
 		f75_local0.callingCardShowcaseIsBM = true
@@ -1864,7 +1866,7 @@ DataSources.CallingCardSetBlackMarket = DataSourceHelpers.ListSetup( "CallingCar
 				setInfo = "",
 				rarity = Enum.LootRarityType[0x8556B83CAD0D180],
 				iconId = 0,
-				category = 0x0,
+				category = "",
 				numOwned = 0,
 				nonSet = true,
 				skipDefaultTitle = true,
@@ -1890,7 +1892,7 @@ DataSources.CallingCardSetBlackMarket = DataSourceHelpers.ListSetup( "CallingCar
 				setInfo = f74_local9.setInfoString,
 				rarity = f74_local9.rarity,
 				iconId = f74_local9.iconId,
-				category = 0x0,
+				category = "",
 				numOwned = f74_local9.numOwned,
 				breadcrumb = f74_local6
 			},
@@ -1999,13 +2001,13 @@ DataSources.CallingCardsTabs = ListHelper_SetupDataSource( "CallingCardsTabs", f
 		} )
 	end
 	
-	f79_local2( 0x90CD5BF86D24185, "CoD.CallingCardsStickerbook", "general", true )
+	f79_local2( "menu/general", "CoD.CallingCardsStickerbook", "general", true )
 	if IsOnlineGame() then
-		f79_local2( 0x55D96CC762EABDD, "CoD.CallingCardsStickerbook", "mp", true )
+		f79_local2( "menu/multiplayer", "CoD.CallingCardsStickerbook", "mp", true )
 		if not CoD.isPC or not CoD.PCKoreaUtility.ShowKorea15Plus() then
-			f79_local2( 0xB06081B8B4567F2, "CoD.CallingCardsStickerbook", "zm", true )
+			f79_local2( "menu/zombies", "CoD.CallingCardsStickerbook", "zm", true )
 		end
-		f79_local2( 0xA2DD20750465431, "CoD.CallingCardsStickerbook", "wz", true )
+		f79_local2( "menu/warzone", "CoD.CallingCardsStickerbook", "wz", true )
 		f79_local2( "menu/masters", "CoD.CallingCardsStickerbook", "masters", true )
 		if CoD.BlackMarketUtility.BuildCallingCardSets( f79_arg0, f79_arg1.menu ) then
 			f79_local2( "menu/black_market", "CoD.CallingCards_Set_BlackMarket", "loot", true )
@@ -2037,10 +2039,10 @@ CoD.ChallengesUtility.GetEmblemBackgroundImageText = function ( f81_arg0, f81_ar
 	elseif CoD.isPC and CoD.PCKoreaUtility.ShowKorea15Plus() then
 		table.insert( f81_local4, 1, 18 )
 	end
-	local f81_local5 = 0x0
+	local f81_local5 = ""
 	for f81_local9, f81_local10 in ipairs( f81_local4 ) do
 		f81_local5 = Engine[0xC6F8EC444864600]( f81_local3, f81_local0, f81_local10 )
-		if f81_local5 ~= 0x0 then
+		if f81_local5 ~= "" then
 			break
 		end
 	end
@@ -2139,19 +2141,19 @@ CoD.ChallengesUtility.GetChallengeRewardIconAndCategoryName = function ( f86_arg
 	local f86_local0 = Engine.CurrentSessionMode()
 	if f86_arg0 == "darkops" then
 		local f86_local1 = nil
-		if f86_local0 == Enum.eModes[0x83EBA96F36BC4E5] then
-			f86_local1 = 0x341BABF8FBCA1B8
-		elseif f86_local0 == Enum.eModes[0x3723205FAE52C4A] then
-			f86_local1 = 0x52348B12CA70050
+		if f86_local0 == Enum.eModes.mode_multiplayer then
+			f86_local1 = "ui_icon_challenges_mpdarkops_large"
+		elseif f86_local0 == Enum.eModes.mode_zombies then
+			f86_local1 = "ui_icon_challenges_zmdarkops_large"
 		else
-			f86_local1 = 0xE50181493FE38FC
+			f86_local1 = "ui_icon_challenges_wzdarkops_large"
 		end
-		return f86_local1, 0xD3B373F67B75C3D
+		return f86_local1, "challenge/darkops"
 	end
 	local f86_local1 = nil
-	if f86_local0 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f86_local0 == Enum.eModes.mode_multiplayer then
 		f86_local1 = "mp"
-	elseif f86_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f86_local0 == Enum.eModes.mode_zombies then
 		f86_local1 = "zm"
 	else
 		f86_local1 = "wz"
@@ -2167,43 +2169,43 @@ CoD.ChallengesUtility.GetChallengeRewardIconAndCategoryName = function ( f86_arg
 end
 
 CoD.ChallengesUtility.DiamondCamoImages = {
-	[0xECD2F25FD60F375] = 0x4E63DF28241BC3C,
-	[0x21D7E71414C058F] = 0xC85AC1398EE0D60,
-	[0x21CA371808F856E] = 0x536A313952C3C15,
-	[0xFE185BE04328801] = 0x505F93D1D6A8731,
-	[0xBB321718EF0E454] = 0xADC6BCF531C9714,
-	[0x418D65A32A8D17] = 0x4E04CA80A585E12,
-	[0x3A681C976E8D9F1] = 0x8EC8B55BAC8B49D,
-	[0x83455A968205009] = 0x80FA4DF9430A3F0,
-	[0x81D603CAEFE4CDB] = 0x80FA4DF9430A3F0,
-	[0xB0E53F588197120] = 0x660446A3E45D538,
-	[0xF8F3D92031F6F7] = 0x4E63DF28241BC3C,
-	[0x2032B32D0D142BE] = 0xC85AC1398EE0D60,
-	[0xF48082B20588E4E] = 0x8EC8B55BAC8B49D,
-	[0xB66427785660BAE] = 0x80FA4DF9430A3F0,
-	[0x40DF302FEF996C9] = 0x80FA4DF9430A3F0,
-	[0x768B46BA75651CE] = 0x80FA4DF9430A3F0,
-	[0x8228A2C81E439CA] = 0x80FA4DF9430A3F0,
-	[0xD7835133AA2DAA1] = 0xC85AC1398EE0D60,
-	[0xD24CEBED0A8EC7B] = 0xADC6BCF531C9714,
-	[0x9618269D014E1FE] = 0x505F93D1D6A8731,
-	[0xA44144DDCDC7A06] = 0x80FA4DF9430A3F0,
-	["melee_club_t8"] = 0x80FA4DF9430A3F0,
-	[0xCB6925EBE3BC0D6] = 0x4E63DF28241BC3C,
-	[0xAB1184700CE0AA6] = 0x80FA4DF9430A3F0,
-	[0x7F46C2CAF1DE7FC] = 0x536A313952C3C15,
-	[0x7B5B30F9AA8786C] = 0x505F93D1D6A8731,
-	[0xB2CB0CDA291AE11] = 0x4E04CA80A585E12,
-	[0xC2D17D2F2C857E1] = 0x4E63DF28241BC3C,
-	[0xFFCEC935D4BCD61] = 0x80FA4DF9430A3F0,
-	[0x8A2B56939A972EE] = 0x80FA4DF9430A3F0,
-	[0xF9EB7548CC02363] = 0xADC6BCF531C9714,
-	[0x3D6E545E88450C5] = 0x505F93D1D6A8731,
-	[0xDD5E58C9EB28AF6] = 0x4E04CA80A585E12
+	weapon_assault = "ui_icon_camonotification_diamond_ar",
+	weapon_smg = "ui_icon_camonotification_diamond_smg",
+	weapon_lmg = "ui_icon_camonotification_diamond_lmg",
+	weapon_sniper = "ui_icon_camonotification_diamond_snipers",
+	weapon_cqb = "ui_icon_camonotification_diamond_shotguns",
+	weapon_tactical = "ui_icon_camonotification_diamond_tactical",
+	weapon_pistol = "ui_icon_camonotification_diamond_pistols",
+	knife_loadout = "ui_icon_camonotification_diamond_knife",
+	bowie_knife = "ui_icon_camonotification_diamond_knife",
+	launcher_standard_t8 = "ui_icon_camonotification_diamond_launchers",
+	ar_standard_t8 = "ui_icon_camonotification_diamond_ar",
+	smg_fastburst_t8 = "ui_icon_camonotification_diamond_smg",
+	pistol_fullauto_t8 = "ui_icon_camonotification_diamond_pistols",
+	melee_secretsanta_t8 = "ui_icon_camonotification_diamond_knife",
+	melee_slaybell_t8 = "ui_icon_camonotification_diamond_knife",
+	melee_demohammer_t8 = "ui_icon_camonotification_diamond_knife",
+	melee_coinbag_t8_mp = "ui_icon_camonotification_diamond_knife",
+	smg_folding_t8 = "ui_icon_camonotification_diamond_smg",
+	shotgun_fullauto_t8_mp = "ui_icon_camonotification_diamond_shotguns",
+	sniper_mini14_t8 = "ui_icon_camonotification_diamond_snipers",
+	melee_cutlass_t8 = "ui_icon_camonotification_diamond_knife",
+	melee_club_t8 = "ui_icon_camonotification_diamond_knife",
+	ar_peacekeeper_t8 = "ui_icon_camonotification_diamond_ar",
+	special_ballisticknife_t8_dw = "ui_icon_camonotification_diamond_knife",
+	lmg_stealth_t8 = "ui_icon_camonotification_diamond_lmg",
+	sniper_locus_t8 = "ui_icon_camonotification_diamond_snipers",
+	tr_flechette_t8 = "ui_icon_camonotification_diamond_tactical",
+	ar_galil_t8 = "ui_icon_camonotification_diamond_ar",
+	melee_zombiearm_t8 = "ui_icon_camonotification_diamond_knife",
+	special_crossbow_t8 = "ui_icon_camonotification_diamond_knife",
+	shotgun_precision_t8 = "ui_icon_camonotification_diamond_shotguns",
+	sniper_damagesemi_t8 = "ui_icon_camonotification_diamond_snipers",
+	tr_damageburst_t8 = "ui_icon_camonotification_diamond_tactical"
 }
 CoD.ChallengesUtility.ZombiesTrialsExpToMedalImages = {
 	[0] = {
-		[1000] = 0x2638A7737E9BD02,
+		[1000] = "uie_trial_medal_bronze",
 		[2000] = "uie_trial_medal_silver",
 		[3000] = "uie_trial_medal_gold"
 	},
@@ -2235,7 +2237,7 @@ CoD.ChallengesUtility.GetChallengeRewardInfo = function ( f87_arg0, f87_arg1, f8
 	end
 	local f87_local14 = ""
 	if f87_local1 then
-		if f87_local5 ~= 0x0 then
+		if f87_local5 ~= "" then
 			f87_local14 = f87_local1 .. "_AWARD"
 		else
 			f87_local14 = f87_local1
@@ -2266,7 +2268,7 @@ CoD.ChallengesUtility.GetChallengeRewardInfo = function ( f87_arg0, f87_arg1, f8
 	local f87_local22 = ""
 	local f87_local23 = ""
 	f87_local20, f87_local21 = CoD.ChallengesUtility.GetChallengeRewardIconAndCategoryName( f87_local10 )
-	local f87_local24 = 0x0
+	local f87_local24 = ""
 	local f87_local25 = nil
 	if f87_arg3 == Enum.statsMilestoneTypes_t[0x5CB1517DC5C10C1] then
 		f87_local18 = Engine.Localize( f87_local14, f87_local4, "", f87_local17 )
@@ -2297,7 +2299,7 @@ CoD.ChallengesUtility.GetChallengeRewardInfo = function ( f87_arg0, f87_arg1, f8
 					f87_local19 = Engine.Localize( f87_local1 .. "_DESC", f87_local4, f87_local28, f87_local17 )
 				end
 			end
-			f87_local29 = 0x0
+			f87_local29 = ""
 		end
 	elseif f87_arg3 == Enum.statsMilestoneTypes_t[0x26D4317EE22AF96] then
 		f87_local24 = Engine.GetItemName( f87_arg4 )
@@ -2312,7 +2314,7 @@ CoD.ChallengesUtility.GetChallengeRewardInfo = function ( f87_arg0, f87_arg1, f8
 		local f87_local26 = Engine.GetAttachmentNameByIndex( f87_arg4 )
 		f87_local18 = Engine.Localize( f87_local14, f87_local4, f87_local26, f87_local17 )
 		f87_local19 = Engine.Localize( f87_local1 .. "_DESC", f87_local4, f87_local26, f87_local17 )
-		if f87_local5 and f87_local5 ~= 0x0 then
+		if f87_local5 and f87_local5 ~= "" then
 			local f87_local27 = Engine.GetAttachmentRefByIndex( f87_arg4 )
 			f87_local20 = 0x56868FEED8DA814 .. f87_local27
 			local f87_local28 = string.sub( f87_local10, string.len( "reticle_" ) + 1 )
@@ -2345,7 +2347,7 @@ CoD.ChallengesUtility.GetChallengeRewardInfo = function ( f87_arg0, f87_arg1, f8
 				end
 			end
 		elseif f87_arg3 == Enum.statsMilestoneTypes_t[0x4D0D341C55C3159] then
-			if f87_local5 == 0xDCAF4647CD4E672 then
+			if f87_local5 == "camo_diamond" then
 				local f87_local28 = Engine[0xC6F8EC444864600]( f87_local0, f87_arg2, Enum.milestoneTableColumns_t[0xBD6B92975B2A6AB] )
 				if not f87_local28 then
 					f87_local20 = "blacktransparent"
@@ -2356,7 +2358,7 @@ CoD.ChallengesUtility.GetChallengeRewardInfo = function ( f87_arg0, f87_arg1, f8
 		else
 			local f87_local28 = CoD.CACUtility.GetUnlockableItemInfo( f87_arg4, f87_local13 )
 			if f87_local28 then
-				if f87_local13 ~= Enum.eModes[0x3723205FAE52C4A] then
+				if f87_local13 ~= Enum.eModes.mode_zombies then
 					f87_local20 = f87_local28.nameHash .. "_" .. f87_local10 .. "_icon"
 				else
 					f87_local20 = Engine.GetItemImage( f87_arg4 )
@@ -2365,7 +2367,7 @@ CoD.ChallengesUtility.GetChallengeRewardInfo = function ( f87_arg0, f87_arg1, f8
 				f87_local20 = "blacktransparent"
 			end
 		end
-		if f87_local13 == Enum.eModes[0x3723205FAE52C4A] and not IsBooleanDvarSet( 0x30FAB929626F598 ) and (LUI.startswith( f87_local10, "camo_darkmatter" ) or f87_local10 == "camo_diamond" or f87_local10 == "camo_gold") then
+		if f87_local13 == Enum.eModes.mode_zombies and not IsBooleanDvarSet( "ui_zmenablemasterycamos" ) and (LUI.startswith( f87_local10, "camo_darkmatter" ) or f87_local10 == "camo_diamond" or f87_local10 == "camo_gold") then
 			return nil
 		end
 		f87_local26 = {
@@ -2391,7 +2393,7 @@ CoD.ChallengesUtility.GetChallengeRewardInfo = function ( f87_arg0, f87_arg1, f8
 			}
 		end
 	elseif f87_local10 == "zm" then
-		local f87_local27 = Engine.GetGametypeSetting( 0x2D73FC2D365631E )
+		local f87_local27 = Engine.GetGametypeSetting( "zmtrialsvariant" )
 		if CoD.ChallengesUtility.ZombiesTrialsExpToMedalImages[f87_local27] then
 			local f87_local30 = CoD.ChallengesUtility.ZombiesTrialsExpToMedalImages[f87_local27][f87_local11]
 		end
@@ -2412,7 +2414,7 @@ CoD.ChallengesUtility.GetChallengeRewardInfo = function ( f87_arg0, f87_arg1, f8
 		local f87_local29, f87_local31, f87_local32 = CoD.ChallengesUtility.GetEmblemBackgroundImageText( tonumber( Engine[0xC6F8EC444864600]( f87_local0, f87_arg2, Enum.milestoneTableColumns_t[0xD42865D2A0A942F] ) ), f87_arg4 )
 		local f87_local33
 		if f87_local29 then
-			f87_local33 = 0x0
+			f87_local33 = ""
 			if not f87_local33 then
 			
 			else
@@ -2445,18 +2447,18 @@ CoD.ChallengesUtility.GetChallengeRewardInfo = function ( f87_arg0, f87_arg1, f8
 		if CoD.isWarzone then
 			f87_local31 = Engine[0xF9F1239CFD921FE]( 0xBCE3D9B07DE63B7, f87_local11 )
 		else
-			f87_local31 = Engine[0xF9F1239CFD921FE]( 0xD6137AA2004DB90, f87_local11 )
+			f87_local31 = Engine[0xF9F1239CFD921FE]( "rank/xp", f87_local11 )
 		end
 		f87_local29 = {
 			displayString = f87_local31,
-			image = 0x620E589747ADBAB
+			image = "t7_hud_mp_notifications_xp_blue"
 		}
 	end
 	local f87_local31 = nil
 	if f87_local12 and f87_local12 > 0 then
 		f87_local31 = {
-			displayString = Engine[0xF9F1239CFD921FE]( 0x93971DCC7C92F86, f87_local12 ),
-			image = 0x84B4BDBA28C85D
+			displayString = Engine[0xF9F1239CFD921FE]( "zmui/bgb_tokens_gained_reward", f87_local12 ),
+			image = "t7_hud_zm_vial_256"
 		}
 	end
 	return {
@@ -2561,9 +2563,9 @@ end
 CoD.ChallengesUtility.IsCategoryLocked = function ( f93_arg0, f93_arg1 )
 	local f93_local0 = CoD.StartMenuUtility.GetSessionModeFromLobby()
 	local f93_local1 = nil
-	if f93_local0 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f93_local0 == Enum.eModes.mode_multiplayer then
 		f93_local1 = DataSources.ChallengesMPCategoryStats.getModel( f93_arg0 )
-	elseif f93_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f93_local0 == Enum.eModes.mode_zombies then
 		f93_local1 = DataSources.ChallengesZMCategoryStats.getModel( f93_arg0 )
 	else
 		f93_local1 = DataSources.ChallengesWZCategoryStats.getModel( f93_arg0 )
@@ -2574,12 +2576,12 @@ end
 CoD.ChallengesUtility.SetDarkOpsModeIcon = function ( f94_arg0 )
 	local f94_local0 = CoD.StartMenuUtility.GetSessionModeFromLobby()
 	local f94_local1 = Engine.GetModelForController( f94_arg0 )
-	if f94_local0 == Enum.eModes[0x83EBA96F36BC4E5] then
-		f94_local1.hudItems.darkOpsModeIcon:set( 0x341BABF8FBCA1B8 )
-	elseif f94_local0 == Enum.eModes[0x3723205FAE52C4A] then
-		f94_local1.hudItems.darkOpsModeIcon:set( 0x52348B12CA70050 )
-	elseif f94_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
-		f94_local1.hudItems.darkOpsModeIcon:set( 0xE50181493FE38FC )
+	if f94_local0 == Enum.eModes.mode_multiplayer then
+		f94_local1.hudItems.darkOpsModeIcon:set( "ui_icon_challenges_mpdarkops_large" )
+	elseif f94_local0 == Enum.eModes.mode_zombies then
+		f94_local1.hudItems.darkOpsModeIcon:set( "ui_icon_challenges_zmdarkops_large" )
+	elseif f94_local0 == Enum.eModes.mode_warzone then
+		f94_local1.hudItems.darkOpsModeIcon:set( "ui_icon_challenges_wzdarkops_large" )
 	end
 end
 

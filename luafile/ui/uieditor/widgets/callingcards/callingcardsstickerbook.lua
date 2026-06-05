@@ -61,17 +61,17 @@ CoD.CallingCardsStickerbook.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3,
 		CoD.Menu.UpdateButtonShownState( element, f3_arg0, f3_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f8_local0
 	end )
-	f3_arg0:AddButtonCallbackFunction( CardGrid, f3_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f9_arg0, f9_arg2, "isLocked" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f9_arg0, f9_arg2, "trialLocked" ) then
-			CallingCards_SetPlayerBackground( f9_arg1, f9_arg0, f9_arg2 )
-			ForceNotifyModel( f9_arg2, "hudItems.evalEquippedCard" )
+	f3_arg0:AddButtonCallbackFunction( CardGrid, f3_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isLocked" ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) then
+			CallingCards_SetPlayerBackground( menu, element, controller )
+			ForceNotifyModel( controller, "hudItems.evalEquippedCard" )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f10_arg0, f10_arg2, "isLocked" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f10_arg0, f10_arg2, "trialLocked" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isLocked" ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

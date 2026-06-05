@@ -2,7 +2,7 @@ require( "ui/uieditor/widgets/mphudwidgets/waypoint_textbg" )
 require( "ui/uieditor/widgets/mphudwidgets/waypointarrowcontainer" )
 require( "ui/uieditor/widgets/mphudwidgets/waypointcenter" )
 require( "ui/uieditor/widgets/mphudwidgets/waypointprogressbar" )
-require( "x64:76c14e1bc07cd98" )
+require( "ui/uieditor/widgets/mphudwidgets/waypointprogressring" )
 
 CoD.Waypoint = InheritFrom( LUI.UIElement )
 CoD.Waypoint.__defaultWidth = 120
@@ -209,7 +209,7 @@ CoD.Waypoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_ar
 	self.WaypointBacker = WaypointBacker
 	
 	local WaypointPattern = LUI.UIImage.new( 0.5, 0.5, -37, 39, 0.5, 0.5, -38, 38 )
-	WaypointPattern:setImage( RegisterImage( 0x159D9B7B7294C91 ) )
+	WaypointPattern:setImage( RegisterImage( "uie_ui_hud_core_waypoint_led" ) )
 	WaypointPattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	WaypointPattern:setShaderVector( 0, 1.3, 0, 0, 0 )
 	WaypointPattern:linkToElementModel( self, "color", true, function ( model )
@@ -282,7 +282,7 @@ CoD.Waypoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_ar
 	LED:setRGB( 0, 0, 0 )
 	LED:setAlpha( 0.18 )
 	LED:setScale( 0.94, 0.94 )
-	LED:setImage( RegisterImage( 0x832BA507D0E7663 ) )
+	LED:setImage( RegisterImage( "uie_ui_hud_core_player_widget_led_status" ) )
 	LED:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	LED:setShaderVector( 0, 0, 1, 0, 0 )
 	LED:setShaderVector( 1, 0, 0, 0, 0 )
@@ -296,7 +296,7 @@ CoD.Waypoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_ar
 	LED2:setRGB( 0, 0, 0 )
 	LED2:setAlpha( 0.18 )
 	LED2:setScale( 0.94, 0.94 )
-	LED2:setImage( RegisterImage( 0x832BA507D0E7663 ) )
+	LED2:setImage( RegisterImage( "uie_ui_hud_core_player_widget_led_status" ) )
 	LED2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	LED2:setShaderVector( 0, 0, 1, 0, 0 )
 	LED2:setShaderVector( 1, 0, 0, 0, 0 )
@@ -310,7 +310,7 @@ CoD.Waypoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_ar
 	LED3:setRGB( 0, 0, 0 )
 	LED3:setAlpha( 0.18 )
 	LED3:setScale( 0.94, 0.94 )
-	LED3:setImage( RegisterImage( 0x832BA507D0E7663 ) )
+	LED3:setImage( RegisterImage( "uie_ui_hud_core_player_widget_led_status" ) )
 	LED3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	LED3:setShaderVector( 0, 0.63, 1, 0, 0 )
 	LED3:setShaderVector( 1, 0, 0, 0, 0 )
@@ -322,14 +322,14 @@ CoD.Waypoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_ar
 	
 	local Cap = LUI.UIImage.new( 0, 0, -125.5, -106.5, 0, 0, 155, 165 )
 	Cap:setZRot( 90 )
-	Cap:setImage( RegisterImage( 0xF3E81C52AE39D91 ) )
+	Cap:setImage( RegisterImage( "uie_ui_hud_core_objective_widget_meter_cap" ) )
 	Cap:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Cap )
 	self.Cap = Cap
 	
 	local Cap2 = LUI.UIImage.new( 0, 0, 225.5, 244.5, 0, 0, 155, 165 )
 	Cap2:setZRot( 90 )
-	Cap2:setImage( RegisterImage( 0xF3E81C52AE39D91 ) )
+	Cap2:setImage( RegisterImage( "uie_ui_hud_core_objective_widget_meter_cap" ) )
 	Cap2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Cap2 )
 	self.Cap2 = Cap2

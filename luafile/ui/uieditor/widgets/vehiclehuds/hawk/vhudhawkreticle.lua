@@ -24,7 +24,7 @@ CoD.VHUDHawkReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local reticle105OuterTL = LUI.UIImage.new( 0, 0, 354, 544, 0, 0, 213.5, 346.5 )
 	reticle105OuterTL:setAlpha( 0.2 )
-	reticle105OuterTL:setImage( RegisterImage( 0x566E0B014A6CDAC ) )
+	reticle105OuterTL:setImage( RegisterImage( "uie_ui_hud_vehicle_scarab_reticle_corner" ) )
 	reticle105OuterTL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( reticle105OuterTL )
 	self.reticle105OuterTL = reticle105OuterTL
@@ -32,7 +32,7 @@ CoD.VHUDHawkReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local reticle105OuterBL = LUI.UIImage.new( 0, 0, 354, 544, 1, 1, -326.5, -193.5 )
 	reticle105OuterBL:setAlpha( 0.2 )
 	reticle105OuterBL:setXRot( 180 )
-	reticle105OuterBL:setImage( RegisterImage( 0x566E0B014A6CDAC ) )
+	reticle105OuterBL:setImage( RegisterImage( "uie_ui_hud_vehicle_scarab_reticle_corner" ) )
 	reticle105OuterBL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( reticle105OuterBL )
 	self.reticle105OuterBL = reticle105OuterBL
@@ -41,7 +41,7 @@ CoD.VHUDHawkReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	reticle105OuterBR:setAlpha( 0.2 )
 	reticle105OuterBR:setXRot( 180 )
 	reticle105OuterBR:setYRot( 180 )
-	reticle105OuterBR:setImage( RegisterImage( 0x566E0B014A6CDAC ) )
+	reticle105OuterBR:setImage( RegisterImage( "uie_ui_hud_vehicle_scarab_reticle_corner" ) )
 	reticle105OuterBR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( reticle105OuterBR )
 	self.reticle105OuterBR = reticle105OuterBR
@@ -49,7 +49,7 @@ CoD.VHUDHawkReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local reticle105OuterTR = LUI.UIImage.new( 1, 1, -543, -353, 0, 0, 213.5, 346.5 )
 	reticle105OuterTR:setAlpha( 0.2 )
 	reticle105OuterTR:setYRot( 180 )
-	reticle105OuterTR:setImage( RegisterImage( 0x566E0B014A6CDAC ) )
+	reticle105OuterTR:setImage( RegisterImage( "uie_ui_hud_vehicle_scarab_reticle_corner" ) )
 	reticle105OuterTR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( reticle105OuterTR )
 	self.reticle105OuterTR = reticle105OuterTR
@@ -81,7 +81,7 @@ CoD.VHUDHawkReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 			end
 		}
 	} )
-	HUDVehiclePrompt4.label:setText( LocalizeToUpperString( 0x577B757C1CA9678 ) )
+	HUDVehiclePrompt4.label:setText( LocalizeToUpperString( "menu/hud_vehicle_flyup" ) )
 	HUDVehiclePrompt4.HUDVehiclePromptContainer.KBMText:setText( CoD.BaseUtility.AlreadyLocalized( "[{+vehiclemoveup}]" ) )
 	HUDVehiclePrompt4.HUDVehiclePromptContainer.KBMText:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )
 	self:addElement( HUDVehiclePrompt4 )
@@ -98,7 +98,7 @@ CoD.VHUDHawkReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 			end
 		}
 	} )
-	HUDVehiclePrompt5.label:setText( LocalizeToUpperString( 0x9F6A908F9B269AD ) )
+	HUDVehiclePrompt5.label:setText( LocalizeToUpperString( "menu/hud_vehicle_flydown" ) )
 	HUDVehiclePrompt5.HUDVehiclePromptContainer.KBMText:setText( CoD.BaseUtility.AlreadyLocalized( "[{+vehiclemovedown}]" ) )
 	HUDVehiclePrompt5.HUDVehiclePromptContainer.KBMText:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )
 	self:addElement( HUDVehiclePrompt5 )
@@ -108,7 +108,7 @@ CoD.VHUDHawkReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	FuiLayoutTL:setAlpha( 0.15 )
 	FuiLayoutTL:setXRot( 180 )
 	FuiLayoutTL:setYRot( 180 )
-	FuiLayoutTL:setImage( RegisterImage( 0x5338AA8246DD618 ) )
+	FuiLayoutTL:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_frame_engine" ) )
 	FuiLayoutTL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiLayoutTL )
 	self.FuiLayoutTL = FuiLayoutTL
@@ -117,21 +117,21 @@ CoD.VHUDHawkReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	FuiLayoutTR:setAlpha( 0.15 )
 	FuiLayoutTR:setXRot( 180 )
 	FuiLayoutTR:setYRot( 180 )
-	FuiLayoutTR:setImage( RegisterImage( 0x5338AA8246DD618 ) )
+	FuiLayoutTR:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_frame_engine" ) )
 	FuiLayoutTR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiLayoutTR )
 	self.FuiLayoutTR = FuiLayoutTR
 	
 	local StripeL = LUI.UIImage.new( 0, 0, 134, 354, 0, 0, 34.5, 44.5 )
 	StripeL:setAlpha( 0.05 )
-	StripeL:setImage( RegisterImage( 0x5AFE39B9B2E68FE ) )
+	StripeL:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_message_layout_stripe" ) )
 	StripeL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( StripeL )
 	self.StripeL = StripeL
 	
 	local StripeR = LUI.UIImage.new( 1, 1, -353, -133, 0, 0, 34.5, 44.5 )
 	StripeR:setAlpha( 0.05 )
-	StripeR:setImage( RegisterImage( 0x5AFE39B9B2E68FE ) )
+	StripeR:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_message_layout_stripe" ) )
 	StripeR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( StripeR )
 	self.StripeR = StripeR

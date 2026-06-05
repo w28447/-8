@@ -15,7 +15,7 @@ local f0_local0 = function ( f1_arg0, f1_arg1 )
 			if type( f1_arg0.dropDownCurrentValue ) == "function" then
 				local f1_local0 = f1_arg0.DropDownList:findItem( {
 					value = f1_arg0.dropDownCurrentValue( f1_arg1, f1_arg0 )
-				}, nil, false, false )
+				}, nil, false, nil )
 				if f1_local0 then
 					f1_arg0.DropDownList:setActiveItem( f1_local0 )
 				end
@@ -66,13 +66,13 @@ local f0_local1 = function ( f2_arg0, f2_arg1, f2_arg2 )
 		UpdateState( element, event )
 	end )
 	f2_arg0.listBackground:setHandleMouseButton( true )
-	CoD.Menu.AddButtonCallbackFunction( f2_arg2, f2_arg0, f2_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if not f2_arg0.disabled and not f6_arg1.m_disableNavigation and f6_arg1:AcceptGamePadButtonInputFromModelCallback( f6_arg2 ) then
+	CoD.Menu.AddButtonCallbackFunction( f2_arg2, f2_arg0, f2_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, f6_arg3 )
+		if not f2_arg0.disabled and not menu.m_disableNavigation and menu:AcceptGamePadButtonInputFromModelCallback( controller ) then
 			if not f2_arg0.inUse then
-				f0_local0( f2_arg0, f6_arg2 )
+				f0_local0( f2_arg0, controller )
 				UpdateState( f2_arg0, {
 					name = "update_state",
-					controller = f6_arg2
+					controller = controller
 				} )
 			end
 			return true
@@ -165,7 +165,7 @@ CoD.OptionDropdown.new = function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3, f8_arg4,
 	local Arrow = LUI.UIImage.new( 0, 1, 702, -2, 0, 1, 7, -7 )
 	Arrow:setZRot( 90 )
 	Arrow:setScale( 0.6, 0.6 )
-	Arrow:setImage( RegisterImage( 0xBDC6779FD55FF49 ) )
+	Arrow:setImage( RegisterImage( "uie_characterminiselectorarrow" ) )
 	self:addElement( Arrow )
 	self.Arrow = Arrow
 	

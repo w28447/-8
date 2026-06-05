@@ -74,7 +74,7 @@ CoD.WZJumpKitSelectorInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local SelectedText = LUI.UIText.new( 0.5, 0.5, 526, 678, 0, 0, 175, 196 )
 	SelectedText:setRGB( 0.92, 0.89, 0.72 )
-	SelectedText:setText( LocalizeToUpperString( 0xD52B5745CF5759A ) )
+	SelectedText:setText( LocalizeToUpperString( "menu/equipped" ) )
 	SelectedText:setTTF( "ttmussels_demibold" )
 	SelectedText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	SelectedText:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -87,7 +87,7 @@ CoD.WZJumpKitSelectorInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.FramingCornerBrackets = FramingCornerBrackets
 	
 	local DotLineBottom = LUI.UIImage.new( 0.5, 0.5, -663, -185, 0, 0, 901.5, 905.5 )
-	DotLineBottom:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	DotLineBottom:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	DotLineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	DotLineBottom:setShaderVector( 0, 0, 0, 0, 0 )
 	DotLineBottom:setShaderVector( 1, 1, 1, 0, 0 )
@@ -96,7 +96,7 @@ CoD.WZJumpKitSelectorInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.DotLineBottom = DotLineBottom
 	
 	local DotLineBottom2 = LUI.UIImage.new( 0.5, 0.5, -663, -185, 0, 0, 197, 201 )
-	DotLineBottom2:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	DotLineBottom2:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	DotLineBottom2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	DotLineBottom2:setShaderVector( 0, 0, 0, 0, 0 )
 	DotLineBottom2:setShaderVector( 1, 1, 1, 0, 0 )
@@ -106,7 +106,7 @@ CoD.WZJumpKitSelectorInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local emblemListBg = LUI.UIImage.new( 0.5, 0.5, -737, -103, 0, 0, 117, 962 )
 	emblemListBg:setScale( 0.77, 0.77 )
-	emblemListBg:setImage( RegisterImage( 0xCE384B31419E220 ) )
+	emblemListBg:setImage( RegisterImage( "uie_ui_menu_emblem_empty_bg" ) )
 	emblemListBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	emblemListBg:setShaderVector( 0, 0, 0, 0, 0 )
 	emblemListBg:setupNineSliceShader( 212, 212 )
@@ -119,7 +119,7 @@ CoD.WZJumpKitSelectorInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local WingsuitText = LUI.UIText.new( 0.5, 0.5, -337, -185, 0, 0, 175, 196 )
 	WingsuitText:setRGB( 0.92, 0.89, 0.72 )
-	WingsuitText:setText( LocalizeToUpperString( 0xD31D93D47E71A15 ) )
+	WingsuitText:setText( LocalizeToUpperString( "mpui/bm_wingsuit" ) )
 	WingsuitText:setTTF( "ttmussels_demibold" )
 	WingsuitText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	WingsuitText:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -128,7 +128,7 @@ CoD.WZJumpKitSelectorInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local TrailsText = LUI.UIText.new( 0.5, 0.5, -500.5, -347.5, 0, 0, 175, 196 )
 	TrailsText:setRGB( 0.92, 0.89, 0.72 )
-	TrailsText:setText( LocalizeToUpperString( 0x2F9555D2DB46C29 ) )
+	TrailsText:setText( LocalizeToUpperString( "mpui/bm_trail" ) )
 	TrailsText:setTTF( "ttmussels_demibold" )
 	TrailsText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	TrailsText:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -137,7 +137,7 @@ CoD.WZJumpKitSelectorInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local ParachuteText = LUI.UIText.new( 0.5, 0.5, -663, -510, 0, 0, 175, 196 )
 	ParachuteText:setRGB( 0.92, 0.89, 0.72 )
-	ParachuteText:setText( LocalizeToUpperString( 0xBCAC088311E46B2 ) )
+	ParachuteText:setText( LocalizeToUpperString( "menu/parachute" ) )
 	ParachuteText:setTTF( "ttmussels_regular" )
 	ParachuteText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	ParachuteText:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -174,20 +174,20 @@ CoD.WZJumpKitSelectorInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( options, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if not CoD.PlayerRoleUtility.IsEquippedJumpkitItem( f6_arg1, f6_arg2, f6_arg0 ) then
+	f1_arg0:AddButtonCallbackFunction( options, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not CoD.PlayerRoleUtility.IsEquippedJumpkitItem( menu, controller, element ) then
 			PlaySoundAlias( "uin_cac_equip_base" )
-			CoD.PlayerRoleUtility.EquipJumpkitItem( f6_arg1, f6_arg2, f6_arg0 )
+			CoD.PlayerRoleUtility.EquipJumpkitItem( menu, controller, element )
 			UpdateElementDataSource( self, "SelectedItems" )
-			SetMenuProperty( f6_arg1, "_appliedToAll", false )
-			UpdateElementStateWithoutChildren( f6_arg1, f6_arg1, f6_arg2 )
+			SetMenuProperty( menu, "_appliedToAll", false )
+			UpdateElementStateWithoutChildren( menu, menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		if not CoD.PlayerRoleUtility.IsEquippedJumpkitItem( f7_arg1, f7_arg2, f7_arg0 ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xBDF67DCF97EBC09, nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.PlayerRoleUtility.IsEquippedJumpkitItem( menu, controller, element ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/equip", nil, nil )
 			return true
 		else
 			return false

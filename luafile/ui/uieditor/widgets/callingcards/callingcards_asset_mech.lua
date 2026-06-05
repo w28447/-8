@@ -21,13 +21,13 @@ CoD.CallingCards_Asset_mech.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local lazers = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	lazers:setAlpha( 0 )
-	lazers:setImage( RegisterImage( 0xEC1A900F544DA26 ) )
+	lazers:setImage( RegisterImage( "uie_lazers" ) )
 	self:addElement( lazers )
 	self.lazers = lazers
 	
 	local lazerOverlay = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	lazerOverlay:setAlpha( 0 )
-	lazerOverlay:setImage( RegisterImage( 0x6DA25738A34A2CC ) )
+	lazerOverlay:setImage( RegisterImage( "uie_lazer_flipbook" ) )
 	lazerOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	lazerOverlay:setShaderVector( 0, 0, 3, 0, 0 )
 	lazerOverlay:setShaderVector( 1, 30, 0, 0, 0 )

@@ -54,7 +54,7 @@ LUI.createMenu.PaintjobSelectorOptions = function ( f1_arg0, f1_arg1 )
 	
 	local TiledPlusGrid = LUI.UIImage.new( 0, 0, 1146, 1830, 0, 0, -103, 977 )
 	TiledPlusGrid:setAlpha( 0.1 )
-	TiledPlusGrid:setImage( RegisterImage( 0x6E37BAE22631294 ) )
+	TiledPlusGrid:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_repeat_plusgrid" ) )
 	TiledPlusGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledPlusGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledPlusGrid:setupNineSliceShader( 220, 220 )
@@ -99,11 +99,11 @@ LUI.createMenu.PaintjobSelectorOptions = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( OptionsList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		ProcessListAction( self, f5_arg0, f5_arg2, f5_arg1 )
+	f1_local1:AddButtonCallbackFunction( OptionsList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		ProcessListAction( self, element, controller, menu )
 		return true
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( OptionsList )
@@ -111,7 +111,7 @@ LUI.createMenu.PaintjobSelectorOptions = function ( f1_arg0, f1_arg1 )
 	
 	local Title = LUI.UIText.new( 0, 0, 1313.5, 1842.5, 0, 0, 35, 80 )
 	Title:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
-	Title:setText( Engine[0xF9F1239CFD921FE]( 0x9D5B73C75DAEB43 ) )
+	Title:setText( Engine[0xF9F1239CFD921FE]( "menu/paintjob_options_caps" ) )
 	Title:setTTF( "ttmussels_demibold" )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Title:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -268,7 +268,7 @@ LUI.createMenu.PaintjobSelectorOptions = function ( f1_arg0, f1_arg1 )
 	
 	local dotline = LUI.UIImage.new( 0, 0, 1316, 1838, 0, 0, 82.5, 86.5 )
 	dotline:setAlpha( 0.1 )
-	dotline:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	dotline:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	dotline:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	dotline:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( dotline )
@@ -292,11 +292,11 @@ LUI.createMenu.PaintjobSelectorOptions = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f21_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( BTNQuit, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
-		GoBack( self, f22_arg2 )
+	f1_local1:AddButtonCallbackFunction( BTNQuit, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f23_arg0, f23_arg1, f23_arg2 )
-		CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( BTNQuit )
@@ -305,7 +305,7 @@ LUI.createMenu.PaintjobSelectorOptions = function ( f1_arg0, f1_arg1 )
 	local featureOverlayButtonMouseOnly = nil
 	
 	featureOverlayButtonMouseOnly = CoD.featureOverlay_Button_MouseOnly.new( f1_local1, f1_arg0, 0.5, 0.5, -261, -75, 0.5, 0.5, 464, 524 )
-	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0x78D439E1B360368 ) )
+	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/back_caps" ) )
 	featureOverlayButtonMouseOnly:registerEventHandler( "gain_focus", function ( element, event )
 		local f24_local0 = nil
 		if element.gainFocus then
@@ -316,11 +316,11 @@ LUI.createMenu.PaintjobSelectorOptions = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f24_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3 )
-		GoBack( self, f25_arg2 )
+	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f26_arg0, f26_arg1, f26_arg2 )
-		CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( featureOverlayButtonMouseOnly )
@@ -346,23 +346,23 @@ LUI.createMenu.PaintjobSelectorOptions = function ( f1_arg0, f1_arg1 )
 			end
 		}
 	} )
-	self:registerEventHandler( "ui_keyboard_input", function ( element, event )
+	self:registerEventHandler( "ui_keyboard_input", function ( self, event )
 		local f29_local0 = nil
-		PaintjobSelector_HandleRenameKeyboardComplete( self, element, f1_arg0, event )
+		PaintjobSelector_HandleRenameKeyboardComplete( self, self, f1_arg0, event )
 		PaintjobSelector_RenamePaintjob( self, f1_arg0 )
 		ForceNotifyModel( f1_arg0, "Paintshop.UpdateDataSource" )
 		GoBack( self, f1_arg0 )
 		ClearMenuSavedState( f1_local1 )
 		if not f29_local0 then
-			f29_local0 = element:dispatchEventToChildren( event )
+			f29_local0 = self:dispatchEventToChildren( event )
 		end
 		return f29_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f30_arg0, f30_arg1, f30_arg2, f30_arg3 )
-		GoBack( self, f30_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f31_arg0, f31_arg1, f31_arg2 )
-		CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

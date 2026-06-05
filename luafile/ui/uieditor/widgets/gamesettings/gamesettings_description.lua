@@ -40,15 +40,15 @@ CoD.GameSettings_Description.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.GameSettingsOptionstextbox = GameSettingsOptionstextbox
 	
 	local Dotline = LUI.UIImage.new( 0.5, 0.5, -337, 337, 0, 0, 46, 48 )
-	Dotline:setImage( RegisterImage( 0xF9C7F41C631866E ) )
-	Dotline:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	Dotline:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
+	Dotline:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	Dotline:setShaderVector( 0, 1.2, 1, 0, 0 )
 	Dotline:setShaderVector( 1, 0, 0, 0, 0 )
 	self:addElement( Dotline )
 	self.Dotline = Dotline
 	
 	local Dotline2 = LUI.UIImage.new( 0.5, 0.5, -337, 337, 0, 0, 46, 48 )
-	Dotline2:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	Dotline2:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	Dotline2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	Dotline2:setShaderVector( 0, 1.2, 1, 0, 0 )
 	Dotline2:setShaderVector( 1, 0, 0, 0, 0 )

@@ -74,7 +74,7 @@ CoD.ChatClientFilterList_Item.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.DotBoxTopLeft = DotBoxTopLeft
 	
 	local CheckIcon = LUI.UIImage.new( 0.03, 0.03, 0, 19, 0.5, 0.5, -9.5, 9.5 )
-	CheckIcon:setImage( RegisterImage( 0xFEAEC46BB618295 ) )
+	CheckIcon:setImage( RegisterImage( "uie_accept_icon" ) )
 	CheckIcon:linkToElementModel( self, "active", true, function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then

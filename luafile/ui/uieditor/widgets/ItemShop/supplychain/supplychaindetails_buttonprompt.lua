@@ -46,7 +46,7 @@ CoD.SupplyChainDetails_ButtonPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local togglePreviewLabel = LUI.UIText.new( 0, 0, 95, 143, 0.5, 0.5, -7, 11 )
 	togglePreviewLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	togglePreviewLabel:setText( Engine[0xF9F1239CFD921FE]( 0x32E3CA70AD7D0D0 ) )
+	togglePreviewLabel:setText( Engine[0xF9F1239CFD921FE]( "menu/toggle_preview" ) )
 	togglePreviewLabel:setTTF( "dinnext_regular" )
 	togglePreviewLabel:setLetterSpacing( 2 )
 	togglePreviewLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

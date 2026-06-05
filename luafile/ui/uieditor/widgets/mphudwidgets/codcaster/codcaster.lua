@@ -1090,488 +1090,488 @@ CoD.CodCaster.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	f1_local15( f1_local17, f1_local18["CodCaster.showKeyboard"], function ( f84_arg0, f84_arg1 )
 		CoD.Menu.UpdateButtonShownState( f84_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x93AB4C84F113EE1], nil, function ( f85_arg0, f85_arg1, f85_arg2, f85_arg3 )
-		if CoD.ScoreboardUtility.CanShowScoreboard( f85_arg2 ) and not CoD.ModelUtility.IsModelValueTrue( f85_arg2, "CodCaster.showFullScreenMap" ) and not CoD.ModelUtility.IsModelValueEqualTo( f85_arg2, "CodCaster.showSettingsSideBar", 1 ) and not IsVisibilityBitSet( f85_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
-			CoD.ScoreboardUtility.ShowScoreboard( f85_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x93AB4C84F113EE1], nil, function ( element, menu, controller, model )
+		if CoD.ScoreboardUtility.CanShowScoreboard( controller ) and not CoD.ModelUtility.IsModelValueTrue( controller, "CodCaster.showFullScreenMap" ) and not CoD.ModelUtility.IsModelValueEqualTo( controller, "CodCaster.showSettingsSideBar", 1 ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
+			CoD.ScoreboardUtility.ShowScoreboard( controller )
 			return true
-		elseif CoD.ScoreboardUtility.CanHideScoreboard( f85_arg2 ) and not CoD.ModelUtility.IsModelValueTrue( f85_arg2, "CodCaster.showFullScreenMap" ) and not CoD.ModelUtility.IsModelValueEqualTo( f85_arg2, "CodCaster.showSettingsSideBar", 1 ) and not IsVisibilityBitSet( f85_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
-			CoD.ScoreboardUtility.HideScoreboard( f85_arg1, f85_arg2 )
+		elseif CoD.ScoreboardUtility.CanHideScoreboard( controller ) and not CoD.ModelUtility.IsModelValueTrue( controller, "CodCaster.showFullScreenMap" ) and not CoD.ModelUtility.IsModelValueEqualTo( controller, "CodCaster.showSettingsSideBar", 1 ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
+			CoD.ScoreboardUtility.HideScoreboard( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f86_arg0, f86_arg1, f86_arg2 )
-		if CoD.ScoreboardUtility.CanShowScoreboard( f86_arg2 ) and not CoD.ModelUtility.IsModelValueTrue( f86_arg2, "CodCaster.showFullScreenMap" ) and not CoD.ModelUtility.IsModelValueEqualTo( f86_arg2, "CodCaster.showSettingsSideBar", 1 ) and not IsVisibilityBitSet( f86_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
-			CoD.Menu.SetButtonLabel( f86_arg1, Enum.LUIButton[0x93AB4C84F113EE1], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ScoreboardUtility.CanShowScoreboard( controller ) and not CoD.ModelUtility.IsModelValueTrue( controller, "CodCaster.showFullScreenMap" ) and not CoD.ModelUtility.IsModelValueEqualTo( controller, "CodCaster.showSettingsSideBar", 1 ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x93AB4C84F113EE1], "", nil, nil )
 			return false
-		elseif CoD.ScoreboardUtility.CanHideScoreboard( f86_arg2 ) and not CoD.ModelUtility.IsModelValueTrue( f86_arg2, "CodCaster.showFullScreenMap" ) and not CoD.ModelUtility.IsModelValueEqualTo( f86_arg2, "CodCaster.showSettingsSideBar", 1 ) and not IsVisibilityBitSet( f86_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
-			CoD.Menu.SetButtonLabel( f86_arg1, Enum.LUIButton[0x93AB4C84F113EE1], 0x0, nil, nil )
+		elseif CoD.ScoreboardUtility.CanHideScoreboard( controller ) and not CoD.ModelUtility.IsModelValueTrue( controller, "CodCaster.showFullScreenMap" ) and not CoD.ModelUtility.IsModelValueEqualTo( controller, "CodCaster.showSettingsSideBar", 1 ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x93AB4C84F113EE1], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "M", function ( f87_arg0, f87_arg1, f87_arg2, f87_arg3 )
-		if not CoD.ModelUtility.IsModelValueTrue( f87_arg2, "CodCaster.showFullScreenMap" ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( f87_arg2 ) and not IsVisibilityBitSet( f87_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
-			ToggleControllerModelValueBoolean( f87_arg2, "CodCaster.showFullScreenMap" )
-			CoD.ScoreboardUtility.HideScoreboard( f87_arg1, f87_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "M", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsModelValueTrue( controller, "CodCaster.showFullScreenMap" ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
+			ToggleControllerModelValueBoolean( controller, "CodCaster.showFullScreenMap" )
+			CoD.ScoreboardUtility.HideScoreboard( menu, controller )
 			return true
-		elseif not CoD.CodCasterUtility.CodCasterIsInAerialCam( f87_arg2 ) and not IsVisibilityBitSet( f87_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
-			ToggleControllerModelValueBoolean( f87_arg2, "CodCaster.showFullScreenMap" )
+		elseif not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
+			ToggleControllerModelValueBoolean( controller, "CodCaster.showFullScreenMap" )
 			return true
 		else
 			
 		end
-	end, function ( f88_arg0, f88_arg1, f88_arg2 )
-		if not CoD.ModelUtility.IsModelValueTrue( f88_arg2, "CodCaster.showFullScreenMap" ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( f88_arg2 ) and not IsVisibilityBitSet( f88_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
-			CoD.Menu.SetButtonLabel( f88_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x0, nil, "M" )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsModelValueTrue( controller, "CodCaster.showFullScreenMap" ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "", nil, "M" )
 			return false
-		elseif not CoD.CodCasterUtility.CodCasterIsInAerialCam( f88_arg2 ) and not IsVisibilityBitSet( f88_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
-			CoD.Menu.SetButtonLabel( f88_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x0, nil, "M" )
+		elseif not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "", nil, "M" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "T", function ( f89_arg0, f89_arg1, f89_arg2, f89_arg3 )
-		if IsCodCasterProfileValueEqualTo( f89_arg2, "shoutcaster_ds_toolbar", 1 ) and IsGamepad( f89_arg2 ) then
-			SetCodCasterProfileValue( self, f89_arg0, f89_arg2, "shoutcaster_ds_toolbar", "0" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "T", function ( element, menu, controller, model )
+		if IsCodCasterProfileValueEqualTo( controller, "shoutcaster_ds_toolbar", 1 ) and IsGamepad( controller ) then
+			SetCodCasterProfileValue( self, element, controller, "shoutcaster_ds_toolbar", "0" )
 			return true
-		elseif IsCodCasterProfileValueEqualTo( f89_arg2, "shoutcaster_ds_toolbar", 0 ) and CoD.CodCasterUtility.HasButtonFocus( self ) and IsGamepad( f89_arg2 ) then
-			SetCodCasterProfileValue( self, f89_arg0, f89_arg2, "shoutcaster_ds_toolbar", "1" )
+		elseif IsCodCasterProfileValueEqualTo( controller, "shoutcaster_ds_toolbar", 0 ) and CoD.CodCasterUtility.HasButtonFocus( self ) and IsGamepad( controller ) then
+			SetCodCasterProfileValue( self, element, controller, "shoutcaster_ds_toolbar", "1" )
 			return true
 		else
 			
 		end
-	end, function ( f90_arg0, f90_arg1, f90_arg2 )
-		if IsCodCasterProfileValueEqualTo( f90_arg2, "shoutcaster_ds_toolbar", 1 ) and IsGamepad( f90_arg2 ) then
-			CoD.Menu.SetButtonLabel( f90_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x0, nil, "T" )
+	end, function ( element, menu, controller )
+		if IsCodCasterProfileValueEqualTo( controller, "shoutcaster_ds_toolbar", 1 ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "", nil, "T" )
 			return false
-		elseif IsCodCasterProfileValueEqualTo( f90_arg2, "shoutcaster_ds_toolbar", 0 ) and CoD.CodCasterUtility.HasButtonFocus( self ) and IsGamepad( f90_arg2 ) then
-			CoD.Menu.SetButtonLabel( f90_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x0, nil, "T" )
+		elseif IsCodCasterProfileValueEqualTo( controller, "shoutcaster_ds_toolbar", 0 ) and CoD.CodCasterUtility.HasButtonFocus( self ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "", nil, "T" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ENTER", function ( f91_arg0, f91_arg1, f91_arg2, f91_arg3 )
-		if CoD.CodCasterUtility.HasButtonFocus( self ) and not IsVisibilityBitSet( f91_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f91_arg2 ) and not GameEnded( f91_arg2 ) and not IsMouse( f91_arg2 ) then
-			CoD.CodCasterUtility.SpectatePlayer( self, f91_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ENTER", function ( element, menu, controller, model )
+		if CoD.CodCasterUtility.HasButtonFocus( self ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and not IsMouse( controller ) then
+			CoD.CodCasterUtility.SpectatePlayer( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f92_arg0, f92_arg1, f92_arg2 )
-		if CoD.CodCasterUtility.HasButtonFocus( self ) and not IsVisibilityBitSet( f92_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f92_arg2 ) and not GameEnded( f92_arg2 ) and not IsMouse( f92_arg2 ) then
-			CoD.Menu.SetButtonLabel( f92_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ENTER" )
+	end, function ( element, menu, controller )
+		if CoD.CodCasterUtility.HasButtonFocus( self ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and not IsMouse( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ENTER" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "T", function ( f93_arg0, f93_arg1, f93_arg2, f93_arg3 )
-		if IsCodCasterProfileValueEqualTo( f93_arg2, "shoutcaster_ds_toolbar", 1 ) then
-			SetCodCasterProfileValue( self, f93_arg0, f93_arg2, "shoutcaster_ds_toolbar", "0" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "T", function ( element, menu, controller, model )
+		if IsCodCasterProfileValueEqualTo( controller, "shoutcaster_ds_toolbar", 1 ) then
+			SetCodCasterProfileValue( self, element, controller, "shoutcaster_ds_toolbar", "0" )
 			return true
-		elseif IsCodCasterProfileValueEqualTo( f93_arg2, "shoutcaster_ds_toolbar", 0 ) and CoD.CodCasterUtility.HasButtonFocus( self ) then
-			SetCodCasterProfileValue( self, f93_arg0, f93_arg2, "shoutcaster_ds_toolbar", "1" )
+		elseif IsCodCasterProfileValueEqualTo( controller, "shoutcaster_ds_toolbar", 0 ) and CoD.CodCasterUtility.HasButtonFocus( self ) then
+			SetCodCasterProfileValue( self, element, controller, "shoutcaster_ds_toolbar", "1" )
 			return true
 		else
 			
 		end
-	end, function ( f94_arg0, f94_arg1, f94_arg2 )
-		if IsCodCasterProfileValueEqualTo( f94_arg2, "shoutcaster_ds_toolbar", 1 ) then
-			CoD.Menu.SetButtonLabel( f94_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "T" )
+	end, function ( element, menu, controller )
+		if IsCodCasterProfileValueEqualTo( controller, "shoutcaster_ds_toolbar", 1 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "T" )
 			return false
-		elseif IsCodCasterProfileValueEqualTo( f94_arg2, "shoutcaster_ds_toolbar", 0 ) and CoD.CodCasterUtility.HasButtonFocus( self ) then
-			CoD.Menu.SetButtonLabel( f94_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "T" )
+		elseif IsCodCasterProfileValueEqualTo( controller, "shoutcaster_ds_toolbar", 0 ) and CoD.CodCasterUtility.HasButtonFocus( self ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "T" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "R", function ( f95_arg0, f95_arg1, f95_arg2, f95_arg3 )
-		if not IsRepeatButtonPress( f95_arg3 ) and not IsVisibilityBitSet( f95_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f95_arg2 ) and not GameEnded( f95_arg2 ) then
-			ToggleControllerModelValueNumber( f95_arg2, "CodCaster.showQuickSettingsSideBar" )
-			OpenPopupWithPriority( self, "CodCasterQuickSettingsSideBar", f95_arg2, 300 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "R", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) then
+			ToggleControllerModelValueNumber( controller, "CodCaster.showQuickSettingsSideBar" )
+			OpenPopupWithPriority( self, "CodCasterQuickSettingsSideBar", controller, 300 )
 			SetLuiKeyCatcher( true )
 			return true
 		else
 			
 		end
-	end, function ( f96_arg0, f96_arg1, f96_arg2 )
-		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( f96_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f96_arg2 ) and not GameEnded( f96_arg2 ) then
-			CoD.Menu.SetButtonLabel( f96_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x0, nil, "R" )
+	end, function ( element, menu, controller )
+		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "", nil, "R" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "Y", function ( f97_arg0, f97_arg1, f97_arg2, f97_arg3 )
-		if not IsRepeatButtonPress( f97_arg3 ) and not IsVisibilityBitSet( f97_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f97_arg2 ) and not GameEnded( f97_arg2 ) then
-			ToggleControllerModelValueNumber( f97_arg2, "CodCaster.showSettingsSideBar" )
-			OpenPopupWithPriority( self, "CodCasterSettingsSideBar", f97_arg2, 300 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "Y", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) then
+			ToggleControllerModelValueNumber( controller, "CodCaster.showSettingsSideBar" )
+			OpenPopupWithPriority( self, "CodCasterSettingsSideBar", controller, 300 )
 			SetLuiKeyCatcher( true )
 			return true
 		else
 			
 		end
-	end, function ( f98_arg0, f98_arg1, f98_arg2 )
-		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( f98_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f98_arg2 ) and not GameEnded( f98_arg2 ) then
-			CoD.Menu.SetButtonLabel( f98_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x0, nil, "Y" )
+	end, function ( element, menu, controller )
+		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "", nil, "Y" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "F", function ( f99_arg0, f99_arg1, f99_arg2, f99_arg3 )
-		CoD.CodCasterUtility.ToggleCodCasterProfileValue( f99_arg2, "shoutcaster_qs_xray" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "F", function ( element, menu, controller, model )
+		CoD.CodCasterUtility.ToggleCodCasterProfileValue( controller, "shoutcaster_qs_xray" )
 		return true
-	end, function ( f100_arg0, f100_arg1, f100_arg2 )
-		CoD.Menu.SetButtonLabel( f100_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "F" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "F" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "G", function ( f101_arg0, f101_arg1, f101_arg2, f101_arg3 )
-		CoD.CodCasterUtility.ToggleCodCasterProfileValue( f101_arg2, "shoutcaster_qs_listen_in" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "G", function ( element, menu, controller, model )
+		CoD.CodCasterUtility.ToggleCodCasterProfileValue( controller, "shoutcaster_qs_listen_in" )
 		return true
-	end, function ( f102_arg0, f102_arg1, f102_arg2 )
-		CoD.Menu.SetButtonLabel( f102_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "G" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "G" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "H", function ( f103_arg0, f103_arg1, f103_arg2, f103_arg3 )
-		CoD.CodCasterUtility.ToggleCodCasterProfileValue( f103_arg2, "shoutcaster_qs_loadout" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "H", function ( element, menu, controller, model )
+		CoD.CodCasterUtility.ToggleCodCasterProfileValue( controller, "shoutcaster_qs_loadout" )
 		return true
-	end, function ( f104_arg0, f104_arg1, f104_arg2 )
-		CoD.Menu.SetButtonLabel( f104_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "H" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "H" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "J", function ( f105_arg0, f105_arg1, f105_arg2, f105_arg3 )
-		CoD.CodCasterUtility.ToggleCodCasterProfileValue( f105_arg2, "shoutcaster_qs_playercard" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "J", function ( element, menu, controller, model )
+		CoD.CodCasterUtility.ToggleCodCasterProfileValue( controller, "shoutcaster_qs_playercard" )
 		return true
-	end, function ( f106_arg0, f106_arg1, f106_arg2 )
-		CoD.Menu.SetButtonLabel( f106_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "J" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "J" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "K", function ( f107_arg0, f107_arg1, f107_arg2, f107_arg3 )
-		CoD.CodCasterUtility.ToggleCodCasterProfileValue( f107_arg2, "shoutcaster_qs_playerhud" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "K", function ( element, menu, controller, model )
+		CoD.CodCasterUtility.ToggleCodCasterProfileValue( controller, "shoutcaster_qs_playerhud" )
 		return true
-	end, function ( f108_arg0, f108_arg1, f108_arg2 )
-		CoD.Menu.SetButtonLabel( f108_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "K" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "K" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "1", function ( f109_arg0, f109_arg1, f109_arg2, f109_arg3 )
-		CoD.CodCasterUtility.SpectatePlayerNumber( self, f109_arg2, "1" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "1", function ( element, menu, controller, model )
+		CoD.CodCasterUtility.SpectatePlayerNumber( self, controller, "1" )
 		return true
-	end, function ( f110_arg0, f110_arg1, f110_arg2 )
-		CoD.Menu.SetButtonLabel( f110_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "1" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "2", function ( f111_arg0, f111_arg1, f111_arg2, f111_arg3 )
-		CoD.CodCasterUtility.SpectatePlayerNumber( self, f111_arg2, "2" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "2", function ( element, menu, controller, model )
+		CoD.CodCasterUtility.SpectatePlayerNumber( self, controller, "2" )
 		return true
-	end, function ( f112_arg0, f112_arg1, f112_arg2 )
-		CoD.Menu.SetButtonLabel( f112_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "2" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "2" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "3", function ( f113_arg0, f113_arg1, f113_arg2, f113_arg3 )
-		CoD.CodCasterUtility.SpectatePlayerNumber( self, f113_arg2, "3" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "3", function ( element, menu, controller, model )
+		CoD.CodCasterUtility.SpectatePlayerNumber( self, controller, "3" )
 		return true
-	end, function ( f114_arg0, f114_arg1, f114_arg2 )
-		CoD.Menu.SetButtonLabel( f114_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "3" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "3" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "4", function ( f115_arg0, f115_arg1, f115_arg2, f115_arg3 )
-		CoD.CodCasterUtility.SpectatePlayerNumber( self, f115_arg2, "4" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "4", function ( element, menu, controller, model )
+		CoD.CodCasterUtility.SpectatePlayerNumber( self, controller, "4" )
 		return true
-	end, function ( f116_arg0, f116_arg1, f116_arg2 )
-		CoD.Menu.SetButtonLabel( f116_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "4" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "4" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "5", function ( f117_arg0, f117_arg1, f117_arg2, f117_arg3 )
-		CoD.CodCasterUtility.SpectatePlayerNumber( self, f117_arg2, "5" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "5", function ( element, menu, controller, model )
+		CoD.CodCasterUtility.SpectatePlayerNumber( self, controller, "5" )
 		return true
-	end, function ( f118_arg0, f118_arg1, f118_arg2 )
-		CoD.Menu.SetButtonLabel( f118_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "5" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "5" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "6", function ( f119_arg0, f119_arg1, f119_arg2, f119_arg3 )
-		CoD.CodCasterUtility.SpectatePlayerNumber( self, f119_arg2, "6" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "6", function ( element, menu, controller, model )
+		CoD.CodCasterUtility.SpectatePlayerNumber( self, controller, "6" )
 		return true
-	end, function ( f120_arg0, f120_arg1, f120_arg2 )
-		CoD.Menu.SetButtonLabel( f120_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "6" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "6" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "7", function ( f121_arg0, f121_arg1, f121_arg2, f121_arg3 )
-		CoD.CodCasterUtility.SpectatePlayerNumber( self, f121_arg2, "7" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "7", function ( element, menu, controller, model )
+		CoD.CodCasterUtility.SpectatePlayerNumber( self, controller, "7" )
 		return true
-	end, function ( f122_arg0, f122_arg1, f122_arg2 )
-		CoD.Menu.SetButtonLabel( f122_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "7" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "7" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "8", function ( f123_arg0, f123_arg1, f123_arg2, f123_arg3 )
-		CoD.CodCasterUtility.SpectatePlayerNumber( self, f123_arg2, "8" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "8", function ( element, menu, controller, model )
+		CoD.CodCasterUtility.SpectatePlayerNumber( self, controller, "8" )
 		return true
-	end, function ( f124_arg0, f124_arg1, f124_arg2 )
-		CoD.Menu.SetButtonLabel( f124_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "8" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "8" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "9", function ( f125_arg0, f125_arg1, f125_arg2, f125_arg3 )
-		CoD.CodCasterUtility.SpectatePlayerNumber( self, f125_arg2, "9" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "9", function ( element, menu, controller, model )
+		CoD.CodCasterUtility.SpectatePlayerNumber( self, controller, "9" )
 		return true
-	end, function ( f126_arg0, f126_arg1, f126_arg2 )
-		CoD.Menu.SetButtonLabel( f126_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "9" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "9" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "0", function ( f127_arg0, f127_arg1, f127_arg2, f127_arg3 )
-		CoD.CodCasterUtility.SpectatePlayerNumber( self, f127_arg2, "10" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "0", function ( element, menu, controller, model )
+		CoD.CodCasterUtility.SpectatePlayerNumber( self, controller, "10" )
 		return true
-	end, function ( f128_arg0, f128_arg1, f128_arg2 )
-		CoD.Menu.SetButtonLabel( f128_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "0" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "0" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x6CE8023188D673F], "LSHIFT", function ( f129_arg0, f129_arg1, f129_arg2, f129_arg3 )
-		CoD.CodCasterUtility.ClearSelectedLoadoutElement( self, f129_arg1, f129_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x6CE8023188D673F], "LSHIFT", function ( element, menu, controller, model )
+		CoD.CodCasterUtility.ClearSelectedLoadoutElement( self, menu, controller )
 		return true
-	end, function ( f130_arg0, f130_arg1, f130_arg2 )
-		CoD.Menu.SetButtonLabel( f130_arg1, Enum.LUIButton[0x6CE8023188D673F], 0x0, nil, "LSHIFT" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x6CE8023188D673F], "", nil, "LSHIFT" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x29E5695FF1401AD], nil, function ( f131_arg0, f131_arg1, f131_arg2, f131_arg3 )
-		CoD.CodCasterUtility.ToggleCodCasterProfileValue( f131_arg2, "shoutcaster_qs_loadout" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x29E5695FF1401AD], nil, function ( element, menu, controller, model )
+		CoD.CodCasterUtility.ToggleCodCasterProfileValue( controller, "shoutcaster_qs_loadout" )
 		return true
-	end, function ( f132_arg0, f132_arg1, f132_arg2 )
-		CoD.Menu.SetButtonLabel( f132_arg1, Enum.LUIButton[0x29E5695FF1401AD], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x29E5695FF1401AD], "", nil, nil )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( f133_arg0, f133_arg1, f133_arg2, f133_arg3 )
-		if not IsRepeatButtonPress( f133_arg3 ) and not IsVisibilityBitSet( f133_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f133_arg2 ) and not GameEnded( f133_arg2 ) and IsDpadButton( f133_arg3 ) then
-			CoD.CodCasterUtility.OnDpadLeft( self, f133_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and IsDpadButton( model ) then
+			CoD.CodCasterUtility.OnDpadLeft( self, controller )
 			return true
-		elseif not IsRepeatButtonPress( f133_arg3 ) and not IsVisibilityBitSet( f133_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f133_arg2 ) and not GameEnded( f133_arg2 ) and not IsDpadButton( f133_arg3 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( f133_arg2 ) then
-			CoD.CodCasterUtility.NavigateLoadoutLeft( self, f133_arg1, f133_arg2 )
+		elseif not IsRepeatButtonPress( model ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and not IsDpadButton( model ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) then
+			CoD.CodCasterUtility.NavigateLoadoutLeft( self, menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f134_arg0, f134_arg1, f134_arg2 )
+	end, function ( element, menu, controller )
 		local f134_local0 = nil
-		if not IsRepeatButtonPress( f134_local0 ) and not IsVisibilityBitSet( f134_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f134_arg2 ) and not GameEnded( f134_arg2 ) and IsDpadButton( f134_local0 ) then
-			CoD.Menu.SetButtonLabel( f134_arg1, Enum.LUIButton[0x57783F8DA4AAEF], 0x0, nil, nil )
+		if not IsRepeatButtonPress( f134_local0 ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and IsDpadButton( f134_local0 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x57783F8DA4AAEF], "", nil, nil )
 			return false
-		elseif not IsRepeatButtonPress( f134_local0 ) and not IsVisibilityBitSet( f134_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f134_arg2 ) and not GameEnded( f134_arg2 ) and not IsDpadButton( f134_local0 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( f134_arg2 ) then
-			CoD.Menu.SetButtonLabel( f134_arg1, Enum.LUIButton[0x57783F8DA4AAEF], 0x0, nil, nil )
-			return false
-		else
-			return false
-		end
-	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "LEFTARROW", function ( f135_arg0, f135_arg1, f135_arg2, f135_arg3 )
-		if not IsRepeatButtonPress( f135_arg3 ) and not IsVisibilityBitSet( f135_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f135_arg2 ) and not GameEnded( f135_arg2 ) then
-			CoD.CodCasterUtility.OnDpadLeft( self, f135_arg2 )
-			return true
-		else
-			
-		end
-	end, function ( f136_arg0, f136_arg1, f136_arg2 )
-		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( f136_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f136_arg2 ) and not GameEnded( f136_arg2 ) then
-			CoD.Menu.SetButtonLabel( f136_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "LEFTARROW" )
+		elseif not IsRepeatButtonPress( f134_local0 ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and not IsDpadButton( f134_local0 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x57783F8DA4AAEF], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x571F08AD84807E0], nil, function ( f137_arg0, f137_arg1, f137_arg2, f137_arg3 )
-		if not IsRepeatButtonPress( f137_arg3 ) and not IsVisibilityBitSet( f137_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f137_arg2 ) and not GameEnded( f137_arg2 ) and IsDpadButton( f137_arg3 ) then
-			CoD.CodCasterUtility.OnDpadRight( self, f137_arg2 )
-			return true
-		elseif not IsRepeatButtonPress( f137_arg3 ) and not IsVisibilityBitSet( f137_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f137_arg2 ) and not GameEnded( f137_arg2 ) and not IsDpadButton( f137_arg3 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( f137_arg2 ) then
-			CoD.CodCasterUtility.NavigateLoadoutRight( self, f137_arg1, f137_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "LEFTARROW", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) then
+			CoD.CodCasterUtility.OnDpadLeft( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f138_arg0, f138_arg1, f138_arg2 )
+	end, function ( element, menu, controller )
+		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "LEFTARROW" )
+			return false
+		else
+			return false
+		end
+	end, false )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x571F08AD84807E0], nil, function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and IsDpadButton( model ) then
+			CoD.CodCasterUtility.OnDpadRight( self, controller )
+			return true
+		elseif not IsRepeatButtonPress( model ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and not IsDpadButton( model ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) then
+			CoD.CodCasterUtility.NavigateLoadoutRight( self, menu, controller )
+			return true
+		else
+			
+		end
+	end, function ( element, menu, controller )
 		local f138_local0 = nil
-		if not IsRepeatButtonPress( f138_local0 ) and not IsVisibilityBitSet( f138_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f138_arg2 ) and not GameEnded( f138_arg2 ) and IsDpadButton( f138_local0 ) then
-			CoD.Menu.SetButtonLabel( f138_arg1, Enum.LUIButton[0x571F08AD84807E0], 0x0, nil, nil )
+		if not IsRepeatButtonPress( f138_local0 ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and IsDpadButton( f138_local0 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x571F08AD84807E0], "", nil, nil )
 			return false
-		elseif not IsRepeatButtonPress( f138_local0 ) and not IsVisibilityBitSet( f138_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f138_arg2 ) and not GameEnded( f138_arg2 ) and not IsDpadButton( f138_local0 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( f138_arg2 ) then
-			CoD.Menu.SetButtonLabel( f138_arg1, Enum.LUIButton[0x571F08AD84807E0], 0x0, nil, nil )
-			return false
-		else
-			return false
-		end
-	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "RIGHTARROW", function ( f139_arg0, f139_arg1, f139_arg2, f139_arg3 )
-		if not IsRepeatButtonPress( f139_arg3 ) and not IsVisibilityBitSet( f139_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f139_arg2 ) and not GameEnded( f139_arg2 ) then
-			CoD.CodCasterUtility.OnDpadRight( self, f139_arg2 )
-			return true
-		else
-			
-		end
-	end, function ( f140_arg0, f140_arg1, f140_arg2 )
-		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( f140_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f140_arg2 ) and not GameEnded( f140_arg2 ) then
-			CoD.Menu.SetButtonLabel( f140_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "RIGHTARROW" )
+		elseif not IsRepeatButtonPress( f138_local0 ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and not IsDpadButton( f138_local0 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x571F08AD84807E0], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x4B11D2B20C75A7F], nil, function ( f141_arg0, f141_arg1, f141_arg2, f141_arg3 )
-		if not IsRepeatButtonPress( f141_arg3 ) and not IsVisibilityBitSet( f141_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f141_arg2 ) and not GameEnded( f141_arg2 ) and IsDpadButton( f141_arg3 ) and not ShouldHideCodCasterHud( f141_arg2 ) then
-			ToggleControllerModelValueBoolean( f141_arg2, "codcaster.showPortraitList" )
-			UpdateSelfElementState( f141_arg1, self.CodCasterPortraitPlayerList, f141_arg2 )
-			return true
-		elseif not IsRepeatButtonPress( f141_arg3 ) and not IsVisibilityBitSet( f141_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f141_arg2 ) and not GameEnded( f141_arg2 ) and not IsDpadButton( f141_arg3 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( f141_arg2 ) then
-			CoD.CodCasterUtility.NavigateLoadoutUp( self, f141_arg1, f141_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "RIGHTARROW", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) then
+			CoD.CodCasterUtility.OnDpadRight( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f142_arg0, f142_arg1, f142_arg2 )
+	end, function ( element, menu, controller )
+		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "RIGHTARROW" )
+			return false
+		else
+			return false
+		end
+	end, false )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x4B11D2B20C75A7F], nil, function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and IsDpadButton( model ) and not ShouldHideCodCasterHud( controller ) then
+			ToggleControllerModelValueBoolean( controller, "codcaster.showPortraitList" )
+			UpdateSelfElementState( menu, self.CodCasterPortraitPlayerList, controller )
+			return true
+		elseif not IsRepeatButtonPress( model ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and not IsDpadButton( model ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) then
+			CoD.CodCasterUtility.NavigateLoadoutUp( self, menu, controller )
+			return true
+		else
+			
+		end
+	end, function ( element, menu, controller )
 		local f142_local0 = nil
-		if not IsRepeatButtonPress( f142_local0 ) and not IsVisibilityBitSet( f142_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f142_arg2 ) and not GameEnded( f142_arg2 ) and IsDpadButton( f142_local0 ) and not ShouldHideCodCasterHud( f142_arg2 ) then
-			CoD.Menu.SetButtonLabel( f142_arg1, Enum.LUIButton[0x4B11D2B20C75A7F], 0x0, nil, nil )
+		if not IsRepeatButtonPress( f142_local0 ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and IsDpadButton( f142_local0 ) and not ShouldHideCodCasterHud( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4B11D2B20C75A7F], "", nil, nil )
 			return false
-		elseif not IsRepeatButtonPress( f142_local0 ) and not IsVisibilityBitSet( f142_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f142_arg2 ) and not GameEnded( f142_arg2 ) and not IsDpadButton( f142_local0 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( f142_arg2 ) then
-			CoD.Menu.SetButtonLabel( f142_arg1, Enum.LUIButton[0x4B11D2B20C75A7F], 0x0, nil, nil )
-			return false
-		else
-			return false
-		end
-	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "UPARROW", function ( f143_arg0, f143_arg1, f143_arg2, f143_arg3 )
-		if not IsRepeatButtonPress( f143_arg3 ) and not IsVisibilityBitSet( f143_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f143_arg2 ) and not GameEnded( f143_arg2 ) then
-			ToggleControllerModelValueBoolean( f143_arg2, "codcaster.showPortraitList" )
-			UpdateSelfElementState( f143_arg1, self.CodCasterPortraitPlayerList, f143_arg2 )
-			return true
-		else
-			
-		end
-	end, function ( f144_arg0, f144_arg1, f144_arg2 )
-		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( f144_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f144_arg2 ) and not GameEnded( f144_arg2 ) then
-			CoD.Menu.SetButtonLabel( f144_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "UPARROW" )
+		elseif not IsRepeatButtonPress( f142_local0 ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and not IsDpadButton( f142_local0 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4B11D2B20C75A7F], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xD4C15FE32148D3A], nil, function ( f145_arg0, f145_arg1, f145_arg2, f145_arg3 )
-		if not IsRepeatButtonPress( f145_arg3 ) and not IsVisibilityBitSet( f145_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f145_arg2 ) and not GameEnded( f145_arg2 ) and IsDpadButton( f145_arg3 ) and not ShouldHideCodCasterHud( f145_arg2 ) then
-			ToggleControllerModelValueBoolean( f145_arg2, "codcaster.showPlayerList" )
-			UpdateSelfElementState( f145_arg1, self.CodCasterPlayerList, f145_arg2 )
-			return true
-		elseif not IsRepeatButtonPress( f145_arg3 ) and not IsVisibilityBitSet( f145_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f145_arg2 ) and not GameEnded( f145_arg2 ) and not IsDpadButton( f145_arg3 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( f145_arg2 ) then
-			CoD.CodCasterUtility.NavigateLoadoutDown( self, f145_arg1, f145_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "UPARROW", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) then
+			ToggleControllerModelValueBoolean( controller, "codcaster.showPortraitList" )
+			UpdateSelfElementState( menu, self.CodCasterPortraitPlayerList, controller )
 			return true
 		else
 			
 		end
-	end, function ( f146_arg0, f146_arg1, f146_arg2 )
+	end, function ( element, menu, controller )
+		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "UPARROW" )
+			return false
+		else
+			return false
+		end
+	end, false )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xD4C15FE32148D3A], nil, function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and IsDpadButton( model ) and not ShouldHideCodCasterHud( controller ) then
+			ToggleControllerModelValueBoolean( controller, "codcaster.showPlayerList" )
+			UpdateSelfElementState( menu, self.CodCasterPlayerList, controller )
+			return true
+		elseif not IsRepeatButtonPress( model ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and not IsDpadButton( model ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) then
+			CoD.CodCasterUtility.NavigateLoadoutDown( self, menu, controller )
+			return true
+		else
+			
+		end
+	end, function ( element, menu, controller )
 		local f146_local0 = nil
-		if not IsRepeatButtonPress( f146_local0 ) and not IsVisibilityBitSet( f146_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f146_arg2 ) and not GameEnded( f146_arg2 ) and IsDpadButton( f146_local0 ) and not ShouldHideCodCasterHud( f146_arg2 ) then
-			CoD.Menu.SetButtonLabel( f146_arg1, Enum.LUIButton[0xD4C15FE32148D3A], 0x0, nil, nil )
+		if not IsRepeatButtonPress( f146_local0 ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and IsDpadButton( f146_local0 ) and not ShouldHideCodCasterHud( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD4C15FE32148D3A], "", nil, nil )
 			return false
-		elseif not IsRepeatButtonPress( f146_local0 ) and not IsVisibilityBitSet( f146_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f146_arg2 ) and not GameEnded( f146_arg2 ) and not IsDpadButton( f146_local0 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( f146_arg2 ) then
-			CoD.Menu.SetButtonLabel( f146_arg1, Enum.LUIButton[0xD4C15FE32148D3A], 0x0, nil, nil )
-			return false
-		else
-			return false
-		end
-	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "DOWNARROW", function ( f147_arg0, f147_arg1, f147_arg2, f147_arg3 )
-		if not IsRepeatButtonPress( f147_arg3 ) and not IsVisibilityBitSet( f147_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f147_arg2 ) and not GameEnded( f147_arg2 ) then
-			ToggleControllerModelValueBoolean( f147_arg2, "codcaster.showPlayerList" )
-			UpdateSelfElementState( f147_arg1, self.CodCasterPlayerList, f147_arg2 )
-			return true
-		else
-			
-		end
-	end, function ( f148_arg0, f148_arg1, f148_arg2 )
-		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( f148_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f148_arg2 ) and not GameEnded( f148_arg2 ) then
-			CoD.Menu.SetButtonLabel( f148_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "DOWNARROW" )
+		elseif not IsRepeatButtonPress( f146_local0 ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and not IsDpadButton( f146_local0 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD4C15FE32148D3A], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "A", function ( f149_arg0, f149_arg1, f149_arg2, f149_arg3 )
-		if not IsRepeatButtonPress( f149_arg3 ) and not IsVisibilityBitSet( f149_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f149_arg2 ) and not GameEnded( f149_arg2 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( f149_arg2 ) then
-			CoD.CodCasterUtility.NavigateLoadoutLeft( self, f149_arg1, f149_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "DOWNARROW", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) then
+			ToggleControllerModelValueBoolean( controller, "codcaster.showPlayerList" )
+			UpdateSelfElementState( menu, self.CodCasterPlayerList, controller )
 			return true
 		else
 			
 		end
-	end, function ( f150_arg0, f150_arg1, f150_arg2 )
-		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( f150_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f150_arg2 ) and not GameEnded( f150_arg2 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( f150_arg2 ) then
-			CoD.Menu.SetButtonLabel( f150_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "A" )
+	end, function ( element, menu, controller )
+		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "DOWNARROW" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "D", function ( f151_arg0, f151_arg1, f151_arg2, f151_arg3 )
-		if not IsRepeatButtonPress( f151_arg3 ) and not IsVisibilityBitSet( f151_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f151_arg2 ) and not GameEnded( f151_arg2 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( f151_arg2 ) then
-			CoD.CodCasterUtility.NavigateLoadoutRight( self, f151_arg1, f151_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "A", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) then
+			CoD.CodCasterUtility.NavigateLoadoutLeft( self, menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f152_arg0, f152_arg1, f152_arg2 )
-		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( f152_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f152_arg2 ) and not GameEnded( f152_arg2 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( f152_arg2 ) then
-			CoD.Menu.SetButtonLabel( f152_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "D" )
+	end, function ( element, menu, controller )
+		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "A" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "W", function ( f153_arg0, f153_arg1, f153_arg2, f153_arg3 )
-		if not IsRepeatButtonPress( f153_arg3 ) and not IsVisibilityBitSet( f153_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f153_arg2 ) and not GameEnded( f153_arg2 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( f153_arg2 ) then
-			CoD.CodCasterUtility.NavigateLoadoutUp( self, f153_arg1, f153_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "D", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) then
+			CoD.CodCasterUtility.NavigateLoadoutRight( self, menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f154_arg0, f154_arg1, f154_arg2 )
-		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( f154_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f154_arg2 ) and not GameEnded( f154_arg2 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( f154_arg2 ) then
-			CoD.Menu.SetButtonLabel( f154_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "W" )
+	end, function ( element, menu, controller )
+		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "D" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "S", function ( f155_arg0, f155_arg1, f155_arg2, f155_arg3 )
-		if not IsRepeatButtonPress( f155_arg3 ) and not IsVisibilityBitSet( f155_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f155_arg2 ) and not GameEnded( f155_arg2 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( f155_arg2 ) then
-			CoD.CodCasterUtility.NavigateLoadoutDown( self, f155_arg1, f155_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "W", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) then
+			CoD.CodCasterUtility.NavigateLoadoutUp( self, menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f156_arg0, f156_arg1, f156_arg2 )
-		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( f156_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( f156_arg2 ) and not GameEnded( f156_arg2 ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( f156_arg2 ) then
-			CoD.Menu.SetButtonLabel( f156_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "S" )
+	end, function ( element, menu, controller )
+		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "W" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "V", function ( f157_arg0, f157_arg1, f157_arg2, f157_arg3 )
-		if not CoD.ModelUtility.IsModelValueTrue( f157_arg2, "CodCaster.showKeyboard" ) and not IsVisibilityBitSet( f157_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
-			ToggleControllerModelValueBoolean( f157_arg2, "CodCaster.showKeyboard" )
-			CoD.ScoreboardUtility.HideScoreboard( f157_arg1, f157_arg2 )
-			return true
-		elseif not IsVisibilityBitSet( f157_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
-			ToggleControllerModelValueBoolean( f157_arg2, "CodCaster.showKeyboard" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "S", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) then
+			CoD.CodCasterUtility.NavigateLoadoutDown( self, menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f158_arg0, f158_arg1, f158_arg2 )
-		if not CoD.ModelUtility.IsModelValueTrue( f158_arg2, "CodCaster.showKeyboard" ) and not IsVisibilityBitSet( f158_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
-			CoD.Menu.SetButtonLabel( f158_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "V" )
+	end, function ( element, menu, controller )
+		if not IsRepeatButtonPress( nil ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not ScoreboardVisible( controller ) and not GameEnded( controller ) and not CoD.CodCasterUtility.CodCasterIsInAerialCam( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "S" )
 			return false
-		elseif not IsVisibilityBitSet( f158_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
-			CoD.Menu.SetButtonLabel( f158_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "V" )
+		else
+			return false
+		end
+	end, false )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "V", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsModelValueTrue( controller, "CodCaster.showKeyboard" ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
+			ToggleControllerModelValueBoolean( controller, "CodCaster.showKeyboard" )
+			CoD.ScoreboardUtility.HideScoreboard( menu, controller )
+			return true
+		elseif not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
+			ToggleControllerModelValueBoolean( controller, "CodCaster.showKeyboard" )
+			return true
+		else
+			
+		end
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsModelValueTrue( controller, "CodCaster.showKeyboard" ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "V" )
+			return false
+		elseif not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "V" )
 			return false
 		else
 			return false

@@ -15,7 +15,7 @@ CoD.PrematchCountdownMinimize.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local PrematchCountdownNumbers = CoD.PrematchCountdown_Numbers.new( f1_arg0, f1_arg1, 0, 1, 0, 0, 0.5, 0.5, -45, 30 )
-	PrematchCountdownNumbers.MatchText.MatchText:setText( Engine[0xF9F1239CFD921FE]( 0xF84718EE93F3A4D ) )
+	PrematchCountdownNumbers.MatchText.MatchText:setText( Engine[0xF9F1239CFD921FE]( "ui/deploying_in" ) )
 	self.__on_menuOpened_PrematchCountdownNumbers = function ( f2_arg0, f2_arg1, f2_arg2, f2_arg3 )
 		local f2_local0 = PrematchCountdownNumbers
 		PlayClipOnElement( self, {
@@ -30,13 +30,13 @@ CoD.PrematchCountdownMinimize.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local PrematchCountdownNumbersSmall = CoD.PrematchCountdown_NumbersSmall.new( f1_arg0, f1_arg1, 0, 0, -7, 296, 0, 0, 341, 401 )
 	PrematchCountdownNumbersSmall:setAlpha( 0 )
-	PrematchCountdownNumbersSmall.Message:setText( Engine[0xF9F1239CFD921FE]( 0xF84718EE93F3A4D ) )
+	PrematchCountdownNumbersSmall.Message:setText( Engine[0xF9F1239CFD921FE]( "ui/deploying_in" ) )
 	self:addElement( PrematchCountdownNumbersSmall )
 	self.PrematchCountdownNumbersSmall = PrematchCountdownNumbersSmall
 	
 	local GameTypeHintText = CoD.PrematchCountdown_BeginsIn.new( f1_arg0, f1_arg1, 0.5, 0.5, -280, 276, 0, 0, 305, 353 )
 	GameTypeHintText:setAlpha( 0 )
-	GameTypeHintText.MatchText:setText( Engine[0xF9F1239CFD921FE]( 0x7E04861C952E4AB ) )
+	GameTypeHintText.MatchText:setText( Engine[0xF9F1239CFD921FE]( "objectives/tdm_hint" ) )
 	GameTypeHintText.MatchText:setBackingAlpha( 0.7 )
 	self:addElement( GameTypeHintText )
 	self.GameTypeHintText = GameTypeHintText
@@ -112,12 +112,12 @@ CoD.PrematchCountdownMinimize.__resetProperties = function ( f9_arg0 )
 	f9_arg0.DoubleXPNotification:completeAnimation()
 	f9_arg0.PrematchCountdownNumbersSmall:setTopBottom( 0, 0, 341, 401 )
 	f9_arg0.PrematchCountdownNumbersSmall:setAlpha( 0 )
-	f9_arg0.PrematchCountdownNumbersSmall.Message:setText( Engine[0xF9F1239CFD921FE]( 0xF84718EE93F3A4D ) )
+	f9_arg0.PrematchCountdownNumbersSmall.Message:setText( Engine[0xF9F1239CFD921FE]( "ui/deploying_in" ) )
 	f9_arg0.PrematchCountdownNumbers:setLeftRight( 0, 1, 0, 0 )
 	f9_arg0.PrematchCountdownNumbers:setTopBottom( 0.5, 0.5, -45, 30 )
 	f9_arg0.PrematchCountdownNumbers:setAlpha( 1 )
 	f9_arg0.PrematchCountdownNumbers:setScale( 1, 1 )
-	f9_arg0.PrematchCountdownNumbers.MatchText.MatchText:setText( Engine[0xF9F1239CFD921FE]( 0xF84718EE93F3A4D ) )
+	f9_arg0.PrematchCountdownNumbers.MatchText.MatchText:setText( Engine[0xF9F1239CFD921FE]( "ui/deploying_in" ) )
 	f9_arg0.GameTypeHintText:setAlpha( 0 )
 	f9_arg0.DoubleXPNotification:setAlpha( 0 )
 end
@@ -443,11 +443,11 @@ CoD.PrematchCountdownMinimize.__clipsPerState = {
 			f52_arg0:setupElementClipCounter( 2 )
 			f52_arg0.PrematchCountdownNumbers:completeAnimation()
 			f52_arg0.PrematchCountdownNumbers.MatchText.MatchText:completeAnimation()
-			f52_arg0.PrematchCountdownNumbers.MatchText.MatchText:setText( Engine[0xF9F1239CFD921FE]( 0x40690424A5FFFE8 ) )
+			f52_arg0.PrematchCountdownNumbers.MatchText.MatchText:setText( Engine[0xF9F1239CFD921FE]( "wz/pandemic_timer" ) )
 			f52_arg0.clipFinished( f52_arg0.PrematchCountdownNumbers )
 			f52_arg0.PrematchCountdownNumbersSmall:completeAnimation()
 			f52_arg0.PrematchCountdownNumbersSmall.Message:completeAnimation()
-			f52_arg0.PrematchCountdownNumbersSmall.Message:setText( Engine[0xF9F1239CFD921FE]( 0x40690424A5FFFE8 ) )
+			f52_arg0.PrematchCountdownNumbersSmall.Message:setText( Engine[0xF9F1239CFD921FE]( "wz/pandemic_timer" ) )
 			f52_arg0.clipFinished( f52_arg0.PrematchCountdownNumbersSmall )
 		end,
 		Minimize = function ( f53_arg0, f53_arg1 )
@@ -478,7 +478,7 @@ CoD.PrematchCountdownMinimize.__clipsPerState = {
 			f53_arg0.PrematchCountdownNumbers:setTopBottom( 0.5, 0.5, -45, 30 )
 			f53_arg0.PrematchCountdownNumbers:setAlpha( 1 )
 			f53_arg0.PrematchCountdownNumbers:setScale( 1, 1 )
-			f53_arg0.PrematchCountdownNumbers.MatchText.MatchText:setText( Engine[0xF9F1239CFD921FE]( 0x40690424A5FFFE8 ) )
+			f53_arg0.PrematchCountdownNumbers.MatchText.MatchText:setText( Engine[0xF9F1239CFD921FE]( "wz/pandemic_timer" ) )
 			f53_local0( f53_arg0.PrematchCountdownNumbers )
 			local f53_local1 = function ( f57_arg0 )
 				local f57_local0 = function ( f58_arg0 )
@@ -507,7 +507,7 @@ CoD.PrematchCountdownMinimize.__clipsPerState = {
 			f53_arg0.PrematchCountdownNumbersSmall:completeAnimation()
 			f53_arg0.PrematchCountdownNumbersSmall.Message:completeAnimation()
 			f53_arg0.PrematchCountdownNumbersSmall:setAlpha( 0 )
-			f53_arg0.PrematchCountdownNumbersSmall.Message:setText( Engine[0xF9F1239CFD921FE]( 0x40690424A5FFFE8 ) )
+			f53_arg0.PrematchCountdownNumbersSmall.Message:setText( Engine[0xF9F1239CFD921FE]( "wz/pandemic_timer" ) )
 			f53_local1( f53_arg0.PrematchCountdownNumbersSmall )
 		end,
 		Stop = function ( f61_arg0, f61_arg1 )
@@ -516,12 +516,12 @@ CoD.PrematchCountdownMinimize.__clipsPerState = {
 			f61_arg0.PrematchCountdownNumbers:completeAnimation()
 			f61_arg0.PrematchCountdownNumbers.MatchText.MatchText:completeAnimation()
 			f61_arg0.PrematchCountdownNumbers:setAlpha( 0 )
-			f61_arg0.PrematchCountdownNumbers.MatchText.MatchText:setText( Engine[0xF9F1239CFD921FE]( 0x40690424A5FFFE8 ) )
+			f61_arg0.PrematchCountdownNumbers.MatchText.MatchText:setText( Engine[0xF9F1239CFD921FE]( "wz/pandemic_timer" ) )
 			f61_arg0.clipFinished( f61_arg0.PrematchCountdownNumbers )
 			f61_arg0.PrematchCountdownNumbersSmall:completeAnimation()
 			f61_arg0.PrematchCountdownNumbersSmall.Message:completeAnimation()
 			f61_arg0.PrematchCountdownNumbersSmall:setAlpha( 0.99 )
-			f61_arg0.PrematchCountdownNumbersSmall.Message:setText( Engine[0xF9F1239CFD921FE]( 0x40690424A5FFFE8 ) )
+			f61_arg0.PrematchCountdownNumbersSmall.Message:setText( Engine[0xF9F1239CFD921FE]( "wz/pandemic_timer" ) )
 			f61_arg0.clipFinished( f61_arg0.PrematchCountdownNumbersSmall )
 		end
 	}

@@ -27,31 +27,31 @@ CoD.codcaster_playlist_infobg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local KillIcon = LUI.UIImage.new( 0, 0, 56, 76, 0, 0, 6.5, 26.5 )
 	KillIcon:setScale( 0.8, 0.8 )
-	KillIcon:setImage( RegisterImage( 0xD6EA61A12AEADCE ) )
+	KillIcon:setImage( RegisterImage( "uie_codcaster_player_list_entry_kill" ) )
 	self:addElement( KillIcon )
 	self.KillIcon = KillIcon
 	
 	local DeathIcon = LUI.UIImage.new( 0, 0, 94, 118, 0, 0, 6, 26 )
 	DeathIcon:setScale( 0.8, 0.8 )
-	DeathIcon:setImage( RegisterImage( 0x9E55E6818C34348 ) )
+	DeathIcon:setImage( RegisterImage( "uie_codcaster_player_list_entry_death" ) )
 	self:addElement( DeathIcon )
 	self.DeathIcon = DeathIcon
 	
 	local heal = LUI.UIImage.new( 0, 0, 13, 33, 0, 0, 6, 26 )
 	heal:setScale( 0.8, 0.8 )
-	heal:setImage( RegisterImage( 0x5655902DAB45F22 ) )
+	heal:setImage( RegisterImage( "uie_ui_hud_wz_hud_revive_plus_icon" ) )
 	self:addElement( heal )
 	self.heal = heal
 	
 	local KillStreakIcon = LUI.UIImage.new( 0, 0, 132, 158, 0, 0, 6, 26 )
 	KillStreakIcon:setScale( 0.7, 0.7 )
-	KillStreakIcon:setImage( RegisterImage( 0x6323B83A0678830 ) )
+	KillStreakIcon:setImage( RegisterImage( "uie_codcaster_player_list_entry_streak" ) )
 	self:addElement( KillStreakIcon )
 	self.KillStreakIcon = KillStreakIcon
 	
 	local ObjectiveIcon = LUI.UIImage.new( 0, 0, 167, 187, 0, 0, 6, 26 )
 	ObjectiveIcon:setScale( 0.8, 0.8 )
-	ObjectiveIcon:setImage( RegisterImage( 0x2E4DBA41E983343 ) )
+	ObjectiveIcon:setImage( RegisterImage( "uie_ui_hud_core_waypoint_domination_fill_02" ) )
 	self:addElement( ObjectiveIcon )
 	self.ObjectiveIcon = ObjectiveIcon
 	

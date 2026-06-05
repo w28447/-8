@@ -35,16 +35,16 @@ LUI.createMenu.WildcardSelect = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f2_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( CloseOnClickOutside, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		if not IsRepeatButtonPress( f3_arg3 ) then
-			CoD.CACUtility.AnimatedMenuClose( f3_arg1, f3_arg2, "Close", 200, "cac_loadout_edit_select_primary" )
+	f1_local1:AddButtonCallbackFunction( CloseOnClickOutside, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) then
+			CoD.CACUtility.AnimatedMenuClose( menu, controller, "Close", 200, "cac_loadout_edit_select_primary" )
 			return true
 		else
 			
 		end
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
+	end, function ( element, menu, controller )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
 		else
 			return false
@@ -126,25 +126,25 @@ LUI.createMenu.WildcardSelect = function ( f1_arg0, f1_arg1 )
 	self:addElement( TopBar )
 	self.TopBar = TopBar
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
 		PlaySoundAlias( "uin_party_ease_slide_back" )
-		SetControllerModelValue( f10_arg2, "WildcardMenuOpen", false )
-		CoD.CACUtility.PlayChooseScreenOutro( f10_arg1, f10_arg2, "Close" )
-		DelayUnhideFreecursorGoBack( f10_arg1, f10_arg2, 200 )
+		SetControllerModelValue( controller, "WildcardMenuOpen", false )
+		CoD.CACUtility.PlayChooseScreenOutro( menu, controller, "Close" )
+		DelayUnhideFreecursorGoBack( menu, controller, 200 )
 		return true
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], nil, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], nil, function ( element, menu, controller, model )
 		if not IsPC() then
 			return true
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
+	end, function ( element, menu, controller )
 		if not IsPC() then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x37FD8BAF8499F87, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x37FD8BAF8499F87, nil, nil )
 			return true
 		else
 			return false

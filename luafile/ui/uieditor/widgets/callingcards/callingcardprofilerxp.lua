@@ -14,7 +14,7 @@ CoD.CallingCardProfilerXP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	XPText:linkToElementModel( self, "xp", true, function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
-			XPText:setText( LocalizeIntoString( 0xC0E387C289AD7A9, f2_local0 ) )
+			XPText:setText( LocalizeIntoString( "cpui/xp_bonus", f2_local0 ) )
 		end
 	end )
 	self:addElement( XPText )
@@ -35,7 +35,7 @@ CoD.CallingCardProfilerXP.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.MeritsText = MeritsText
 	
 	local XPIcon = LUI.UIImage.new( 0, 0, 0, 54, 0, 0, 0, 54 )
-	XPIcon:setImage( RegisterImage( 0x7B197CE33A5602C ) )
+	XPIcon:setImage( RegisterImage( "uie_t7_hud_mp_notifications_xp" ) )
 	self:addElement( XPIcon )
 	self.XPIcon = XPIcon
 	

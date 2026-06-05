@@ -23,15 +23,15 @@ CoD.PlayerRoleUtility.DraftStage = LuaEnum.createEnum( "DRAFT_STAGE_NONE", "DRAF
 CoD.PlayerRoleUtility.JumpkitOptions = {
 	{
 		type = Enum[0x8037372CBD17C20][0xBF99C226E97F1DB],
-		typeName = 0xBCAC088311E46B2
+		typeName = "menu/parachute"
 	},
 	{
 		type = Enum[0x8037372CBD17C20][0x711A76E11C936FF],
-		typeName = 0x1C7C2BF1D8C309D
+		typeName = "menu/trail"
 	},
 	{
 		type = Enum[0x8037372CBD17C20][0xD7DC1BB143B4455],
-		typeName = 0x1676BE6AC5BA578
+		typeName = "menu/wing_suit"
 	}
 }
 CoD.PlayerRoleUtility.CreatePersonalizeColorDatasource = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3 )
@@ -42,7 +42,7 @@ CoD.PlayerRoleUtility.CreatePersonalizeColorDatasource = function ( f1_arg0, f1_
 				models = {
 					color = f2_local10.red .. " " .. f2_local10.green .. " " .. f2_local10.blue,
 					icon = f2_local10.icon or "$white",
-					xOfY = Engine[0xF9F1239CFD921FE]( 0x3D235B06A9B195B, f2_local9, #DataSources[f1_arg1].colorTable )
+					xOfY = Engine[0xF9F1239CFD921FE]( "menu/x_of_y", f2_local9, #DataSources[f1_arg1].colorTable )
 				},
 				properties = {
 					optionIndex = f2_local9
@@ -146,12 +146,12 @@ CoD.PlayerRoleUtility.GetSelectedCharacterIndex = function ( f10_arg0 )
 		if not f10_local1 then
 			f10_local1 = Engine.CurrentSessionMode()
 		end
-		if f10_local1 == Enum.eModes[0x83EBA96F36BC4E5] then
+		if f10_local1 == Enum.eModes.mode_multiplayer then
 			f10_local0 = CoD.SafeGetModelValue( Engine.GetModelForController( f10_arg0 ), "PositionEditLoadout.SelectedCharacterIndex" )
 			if f10_local0 == nil then
 				f10_local0 = Engine.GetEquippedHero( f10_arg0, f10_local1 )
 			end
-		elseif f10_local1 == Enum.eModes[0xBF1DCC8138A9D39] then
+		elseif f10_local1 == Enum.eModes.mode_warzone then
 			local f10_local2 = Engine.GetXUID64( f10_arg0 )
 			local f10_local3 = Enum.LobbyModule[0xC46B73E8E18BA2]
 			return Engine[0x40145EEB2E913D2]( f10_arg0, Engine[0xEFBAAD12776201D]( f10_local3, Engine[0xC3DF042E7492B66]( f10_local3 ), f10_local2 ) )
@@ -176,7 +176,7 @@ CoD.PlayerRoleUtility.GetHeroDisplayNameAndIndex = function ( f12_arg0, f12_arg1
 			return f12_local4.displayName, f12_local4.bodyIndex
 		end
 	end
-	return 0x0, nil
+	return "", nil
 end
 
 CoD.PlayerRoleUtility.Heroes.GetPersonalizationNewCount = function ( f13_arg0, f13_arg1 )
@@ -193,9 +193,9 @@ end
 
 CoD.PlayerRoleUtility.ChooseGender = function ( f14_arg0, f14_arg1 )
 	local f14_local0 = Engine.CurrentSessionMode()
-	if f14_local0 == Enum.eModes[0x60063C67132EB69] then
+	if f14_local0 == Enum.eModes.mode_campaign then
 		selectedGender = Engine.SetGender( f14_arg1, f14_arg0.gender )
-	elseif f14_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f14_local0 == Enum.eModes.mode_warzone then
 		local f14_local1 = Engine[0xFC41172469DB251]( f14_arg1 )
 		f14_local1 = f14_local1[0xA8BD5071BCB463C]
 		if f14_arg0.characterIndex ~= f14_local1:get() then
@@ -241,16 +241,16 @@ CoD.PlayerRoleUtility.GetCharacterListForGender = function ( f17_arg0, f17_arg1,
 				table.insert( f18_local0, {
 					models = {
 						name = f18_local5.displayName,
-						fullName = f18_local5[0xCB98543E7EC137] or 0x0,
+						fullName = f18_local5[0xCB98543E7EC137] or "",
 						icon = f18_local5.positionDraftIcon,
 						characterIndex = f18_local6,
-						disabled = f18_local7["lockcharacter"] == 1,
+						disabled = f18_local7.lockcharacter == 1,
 						jobTitle = CoD.PlayerRoleUtility.GetCharacterTraitTitle( f17_arg0, f18_local6 ),
-						characterInT4 = f18_local7[0xBF1CCE3018DC22F] == 1,
-						characterInT5 = f18_local7[0xBF1CBE3018DC07C] == 1,
-						characterInT6 = f18_local7[0xBF1CEE3018DC595] == 1,
-						characterInT7 = f18_local7[0xBF1CDE3018DC3E2] == 1,
-						characterInT8 = f18_local7[0xBF1D0E3018DC8FB] == 1,
+						characterInT4 = f18_local7.characterint4 == 1,
+						characterInT5 = f18_local7.characterint5 == 1,
+						characterInT6 = f18_local7.characterint6 == 1,
+						characterInT7 = f18_local7.characterint7 == 1,
+						characterInT8 = f18_local7.characterint8 == 1,
 						isSelected = f17_arg2 == f18_local6
 					},
 					properties = {
@@ -272,13 +272,13 @@ CoD.PlayerRoleUtility.GenderListPrepare = function ( f19_arg0 )
 	local f19_local0 = nil
 	local f19_local1 = Engine.CurrentSessionMode()
 	local f19_local2 = nil
-	if f19_local1 == Enum.eModes[0x60063C67132EB69] then
-		f19_local0 = Engine.GetEquippedGender( f19_arg0, Enum.eModes[0x60063C67132EB69] )
-	elseif f19_local1 == Enum.eModes[0xBF1DCC8138A9D39] then
+	if f19_local1 == Enum.eModes.mode_campaign then
+		f19_local0 = Engine.GetEquippedGender( f19_arg0, Enum.eModes.mode_campaign )
+	elseif f19_local1 == Enum.eModes.mode_warzone then
 		local f19_local3 = Engine[0xFC41172469DB251]( f19_arg0 )
 		f19_local2 = f19_local3[0xA8BD5071BCB463C]:get()
 		if f19_local2 then
-			local f19_local4 = CoD.PlayerRoleUtility.GetCachedHeroInfo( Enum.eModes[0xBF1DCC8138A9D39], f19_local2 )
+			local f19_local4 = CoD.PlayerRoleUtility.GetCachedHeroInfo( Enum.eModes.mode_warzone, f19_local2 )
 			f19_local0 = f19_local4 and f19_local4.gender
 		end
 	end
@@ -296,8 +296,8 @@ CoD.PlayerRoleUtility.GenderListPrepare = function ( f19_arg0 )
 	end
 	
 	local f19_local4 = {}
-	local f19_local5 = f19_local3( Enum.CharacterGenderTypes[0xB99A2B81BECD183], 0x27C8255032AA99D )
-	local f19_local6 = f19_local3( Enum.CharacterGenderTypes[0xE21A9F63A6B925A], 0x2B1674419CAA7C0 )
+	local f19_local5 = f19_local3( Enum.CharacterGenderTypes[0xB99A2B81BECD183], "heroes/gender_male" )
+	local f19_local6 = f19_local3( Enum.CharacterGenderTypes[0xE21A9F63A6B925A], "heroes/gender_female" )
 	return f19_local5
 end
 
@@ -398,28 +398,28 @@ CoD.PlayerRoleUtility.GetPositionRoleDefaultInfo = function ( f22_arg0, f22_arg1
 																					return f22_local5
 																				end
 																			end
-																			f22_local7 = 0x0
+																			f22_local7 = ""
 																		end
 																	end
 																	f22_local7 = "blacktransparent"
 																end
 															end
-															f22_local7 = 0x0
+															f22_local7 = ""
 														end
 													end
-													f22_local7 = 0x0
+													f22_local7 = ""
 												end
 											end
-											f22_local7 = 0x0
+											f22_local7 = ""
 										end
 									end
 									f22_local7 = "blacktransparent"
 								end
 							end
-							f22_local7 = 0x0
+							f22_local7 = ""
 						end
 					end
-					f22_local7 = 0x0
+					f22_local7 = ""
 				end
 			end
 			f22_local4 = 0
@@ -429,31 +429,31 @@ CoD.PlayerRoleUtility.GetPositionRoleDefaultInfo = function ( f22_arg0, f22_arg1
 end
 
 CoD.PlayerRoleUtility.ZMHiddenFrontendPositionRoles = {
-	[0x6BC80636F0FDAC4] = true,
-	[0x6B92E1337B43236] = true,
-	[0xBCEBDF1BEF33311] = true,
-	[0xDF0037E3F390B15] = true,
-	["prt_zm_dempsey_whi"] = true,
-	[0x8AA6812C38263BA] = true,
-	[0x3D71FF1E886BBE9] = true,
-	[0xFD4157DCAFC6E45] = true
+	prt_zm_dempsey_ofc = true,
+	prt_zm_nikolai_ofc = true,
+	prt_zm_richtofen_ofc = true,
+	prt_zm_takeo_ofc = true,
+	prt_zm_dempsey_whi = true,
+	prt_zm_nikolai_whi = true,
+	prt_zm_richtofen_whi = true,
+	prt_zm_takeo_whi = true
 }
 CoD.PlayerRoleUtility.ZMMapHiddenFrontendPositionRoles = {
-	[0x15977E191D13967] = {
-		0xA005252D762E06A
+	prt_zm_psychic = {
+		"zm_mansion"
 	},
-	[0xC0932FA55EE6E5B] = {
-		0xA005252D762E06A
+	prt_zm_brigadier = {
+		"zm_mansion"
 	},
-	[0xE8F51EC275A4A38] = {
-		0xA005252D762E06A
+	prt_zm_gunslinger = {
+		"zm_mansion"
 	},
-	[0xEBF024E1559C04A] = {
-		0xA005252D762E06A
+	prt_zm_butler = {
+		"zm_mansion"
 	}
 }
 CoD.PlayerRoleUtility.WeaponSchemaOverrideKBM = {
-	[0x20EBBC5F603E4D4] = 0x120CDB8FEDDBFCB,
+	heroes/trapper_weapon_tips = 0x120CDB8FEDDBFCB,
 	[0x95DA416D84F50C] = 0xB33D070E5D24B3
 }
 CoD.PlayerRoleUtility.SetWeaponSchemaString = function ( f23_arg0, f23_arg1, f23_arg2 )
@@ -482,7 +482,7 @@ DataSources.PositionLoadoutList = ListHelper_SetupDataSource( "PositionLoadoutLi
 	local f26_local4 = CoD.PlayerStatsUtility.GetStorageBufferForPlayer( f26_arg0 ) or {}
 	return CoD.PlayerRoleUtility.GetPlayerRolesListHelper( f26_arg1, f26_arg0, f26_local1, function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3, f27_arg4 )
 		local f27_local0 = f27_arg4.models.characterIndex
-		if CoD.isFrontend and CoD.isZombie and f27_arg2 == Enum.eModes[0x3723205FAE52C4A] then
+		if CoD.isFrontend and CoD.isZombie and f27_arg2 == Enum.eModes.mode_zombies then
 			local f27_local1 = Engine[0x82C5756563934AE]( f27_arg2, f27_local0 )
 			local f27_local2 = function ( f28_arg0 )
 				if CoD.PlayerRoleUtility.ZMHiddenFrontendPositionRoles[f28_arg0] then
@@ -513,22 +513,22 @@ DataSources.PositionLoadoutList = ListHelper_SetupDataSource( "PositionLoadoutLi
 		end
 		f27_arg4.models.isBMLocked = CoD.PlayerRoleUtility.IsRoleBMLocked( f27_arg1, f27_arg2, f27_local0 )
 		f27_arg4.models.noContextWidget = true
-		f27_arg4.models.previewEnabled = f27_arg2 == Enum.eModes[0x83EBA96F36BC4E5]
+		f27_arg4.models.previewEnabled = f27_arg2 == Enum.eModes.mode_multiplayer
 		f27_arg4.models.detailedDesc = Engine[0xF9F1239CFD921FE]( CoD.PlayerRoleUtility.GetCharacterTraitSummary( f27_arg2, f27_local0 ) )
 		f27_arg4.models.breadcrumb = f26_local3[CoD.BreadcrumbUtility.CharacterBreadcrumbModelPrefixTable[f27_arg2] .. f27_local0]
 		f27_arg4.properties.selectIndex = f26_local2 == f27_local0
 		f27_arg4.models.isRestricted = CoD.CACUtility.IsItemIndexRestricted( f27_local3.equipment.itemIndex )
 		f27_arg4.models.requiredDvar = f27_arg4.properties.character[0x810366D1F05BBBD]
-		f27_arg4.models.bio = f27_local1["bio"] or 0x0
-		f27_arg4.models.bioHeader = f27_local1[0x668EA0FEF74A8D4] or 0x0
-		f27_arg4.models.bioHeaderImage = f27_local1[0x15AC9DAAD709DE1] or "blacktransparent"
+		f27_arg4.models.bio = f27_local1.bio or ""
+		f27_arg4.models.bioHeader = f27_local1.bioheader or ""
+		f27_arg4.models.bioHeaderImage = f27_local1.bioheaderimage or "blacktransparent"
 		f27_arg4.models.brandingImage = f27_local1[0xB2781A0B1BF2B7A] or "blacktransparent"
 		f27_arg4.models.equipment = f27_local3.equipment
-		f27_arg4.models.equipment.statValue = CoD.GetCombatRecordStatFromArgPath( f26_local4, 0x62F9B6A10FA7D66, f27_local3.equipment.refHash, 0xFADC643DBA6DBF2 )
+		f27_arg4.models.equipment.statValue = CoD.GetCombatRecordStatFromArgPath( f26_local4, "item_stats", f27_local3.equipment.refHash, "combatrecordstat" )
 		f27_arg4.models.equipment.statTitle = f27_local1[0xE5D532BF7F3B6CF]
-		f27_arg4.models.weaponHeaderImage = f27_local1[0xA923C4F85EF2BB1] or "blacktransparent"
-		f27_arg4.models.weaponValue = CoD.GetCombatRecordStatFromArgPath( f26_local4, 0xD59E8BFAC78A33B, f27_local1[0x6F1AB17EE1FC9A3], "statvalue" )
-		f27_arg4.models.weaponSchema = f27_local1[0x2231AE94A1F7E22]
+		f27_arg4.models.weaponHeaderImage = f27_local1.weaponheaderimage or "blacktransparent"
+		f27_arg4.models.weaponValue = CoD.GetCombatRecordStatFromArgPath( f26_local4, "playerstatslist", f27_local1[0x6F1AB17EE1FC9A3], "statvalue" )
+		f27_arg4.models.weaponSchema = f27_local1.weaponschema
 		f27_arg4.models.weaponMovie = {
 			stillPreview = f27_local1[0x628C417CD81F2EF],
 			lowResVideo = {
@@ -543,7 +543,7 @@ DataSources.PositionLoadoutList = ListHelper_SetupDataSource( "PositionLoadoutLi
 			}
 		}
 		f27_arg4.models.ability = f27_local3.ability
-		f27_arg4.models.ability.statValue = CoD.GetCombatRecordStatFromArgPath( f26_local4, 0x62F9B6A10FA7D66, f27_local3.ability.refHash, 0xFADC643DBA6DBF2 )
+		f27_arg4.models.ability.statValue = CoD.GetCombatRecordStatFromArgPath( f26_local4, "item_stats", f27_local3.ability.refHash, "combatrecordstat" )
 		f27_arg4.models.ability.statTitle = f27_local1[0xF8D5FE32C560DA2]
 		f27_arg4.models.specialIssueSchema = f27_local1[0xEB140A2F390287C]
 		f27_arg4.models.specialIssueMovie = {
@@ -631,11 +631,11 @@ DataSources.MPSpecialistHUBOptions = ListHelper_SetupDataSource( "MPSpecialistHU
 	local f32_local5 = CoD.BreadcrumbUtility.GetStorageLoadoutBufferForPlayer( f32_arg0, f32_local1 )
 	local f32_local6 = DataSources.SprayGestureBreadcrumbs.getModel( f32_arg0 )
 	local f32_local7 = DataSources.SpecialistOutfitBreadcrumbs.getBreadcrumbModelForCharacter( f32_arg0, f32_local1, f32_local3 )
-	if f32_local1 ~= Enum.eModes[0xBF1DCC8138A9D39] or f32_local2 and f32_local2.customizationMode:get() ~= Enum.eModes[0xBF1DCC8138A9D39] and (IsBooleanDvarSet( 0x95DD5258AC4E66B ) or f32_local2.customizationMode:get() ~= Enum.eModes[0x3723205FAE52C4A]) then
+	if f32_local1 ~= Enum.eModes.mode_warzone or f32_local2 and f32_local2.customizationMode:get() ~= Enum.eModes.mode_warzone and (IsBooleanDvarSet( 0x95DD5258AC4E66B ) or f32_local2.customizationMode:get() ~= Enum.eModes.mode_zombies) then
 		if f32_local4 then
 			table.insert( f32_local0, {
 				models = {
-					name = 0xAEABC7E65D1B259,
+					name = "menu/outfits",
 					breadcrumb = f32_local7.outfits
 				},
 				properties = {
@@ -651,10 +651,10 @@ DataSources.MPSpecialistHUBOptions = ListHelper_SetupDataSource( "MPSpecialistHU
 				}
 			} )
 		end
-	elseif f32_local1 == Enum.eModes[0xBF1DCC8138A9D39] and f32_local2 and f32_local2.isDefaultCharacter:get() then
+	elseif f32_local1 == Enum.eModes.mode_warzone and f32_local2 and f32_local2.isDefaultCharacter:get() then
 		table.insert( f32_local0, {
 			models = {
-				name = 0xF5CA503839CA925
+				name = "menu/appearance"
 			},
 			properties = {
 				action = function ( f34_arg0, f34_arg1, f34_arg2, f34_arg3, f34_arg4 )
@@ -665,7 +665,7 @@ DataSources.MPSpecialistHUBOptions = ListHelper_SetupDataSource( "MPSpecialistHU
 	end
 	table.insert( f32_local0, {
 		models = {
-			name = 0xB825BF2939A8267,
+			name = "menu/gestures",
 			breadcrumb = f32_local6.gestures
 		},
 		properties = {
@@ -682,7 +682,7 @@ DataSources.MPSpecialistHUBOptions = ListHelper_SetupDataSource( "MPSpecialistHU
 	} )
 	table.insert( f32_local0, {
 		models = {
-			name = 0x13A845278D53F22,
+			name = "menu/tags",
 			breadcrumb = f32_local6.totaltags
 		},
 		properties = {
@@ -697,7 +697,7 @@ DataSources.MPSpecialistHUBOptions = ListHelper_SetupDataSource( "MPSpecialistHU
 			end
 		}
 	} )
-	if f32_local1 == Enum.eModes[0xBF1DCC8138A9D39] and IsBooleanDvarSet( 0x9CF9B57D5140714 ) then
+	if f32_local1 == Enum.eModes.mode_warzone and IsBooleanDvarSet( 0x9CF9B57D5140714 ) then
 		table.insert( f32_local0, {
 			models = {
 				name = 0x2A8D9058AD56819,
@@ -720,15 +720,15 @@ DataSources.MPSpecialistHUBOptions = ListHelper_SetupDataSource( "MPSpecialistHU
 end, true )
 CoD.PlayerRoleUtility.GetCharacterDisplayNameByIndex = function ( f38_arg0, f38_arg1 )
 	if f38_arg0 == nil then
-		return 0x0
+		return ""
 	end
 	local f38_local0 = CoD.PlayerRoleUtility.GetCachedHeroInfo( f38_arg1, f38_arg0 )
 	if f38_local0 == nil then
-		return 0x0
-	elseif f38_arg1 == Enum.eModes[0xBF1DCC8138A9D39] then
+		return ""
+	elseif f38_arg1 == Enum.eModes.mode_warzone then
 		local f38_local1 = Engine[0xB678B832BC9DC0]( f38_arg1, f38_arg0 )
 		if f38_local1[0xC9366DE09ED7379] == 1 then
-			return 0x0
+			return ""
 		end
 	end
 	return f38_local0.displayName
@@ -763,7 +763,7 @@ CoD.PlayerRoleUtility.CreateOutfitsForTheme = function ( f40_arg0, f40_arg1, f40
 				local f41_local4 = CoD.BlackMarketTableUtility.LootInfoLookup( f41_arg0, f41_local16.lootId )
 				local f41_local5 = f41_local16.entitlement
 				if f41_local5 then
-					f41_local5 = f41_local16.entitlement ~= 0x0
+					f41_local5 = f41_local16.entitlement ~= ""
 				end
 				local f41_local6 = ""
 				local f41_local7 = true
@@ -783,7 +783,7 @@ CoD.PlayerRoleUtility.CreateOutfitsForTheme = function ( f40_arg0, f40_arg1, f40
 						f41_local11 = f41_local16.torso
 					end
 					if f41_local11 and f41_local7 then
-						f41_local7 = f41_local11 == CoD.PlayerRoleUtility.EquippedOutfitItems[f41_arg0]["outfits"][f40_arg3][f41_local8]
+						f41_local7 = f41_local11 == CoD.PlayerRoleUtility.EquippedOutfitItems[f41_arg0].outfits[f40_arg3][f41_local8]
 					end
 					f41_local6 = f41_local6 .. (f41_local11 or 0) .. ";"
 				end
@@ -882,7 +882,7 @@ CoD.PlayerRoleUtility.CreateOutfitsForTheme = function ( f40_arg0, f40_arg1, f40
 				return f43_local0
 			else
 				local f43_local0
-				if f43_arg1.properties.entitlement ~= 0x0 then
+				if f43_arg1.properties.entitlement ~= "" then
 					f43_local0 = Engine.HasEntitlement( f41_arg0, f43_arg1.properties.entitlement )
 				else
 					f43_local0 = true
@@ -922,7 +922,7 @@ CoD.PlayerRoleUtility.CreateDecalsForTheme = function ( f44_arg0, f44_arg1, f44_
 						f45_local9 = Enum.LootRarityType[0x8556B83CAD0D180]
 					end
 					f45_local8.rarity = f45_local9
-					f45_local8.category = 0x8A92677478F2E1B
+					f45_local8.category = "heroes/decal"
 					f45_local8.unlockInfo = f45_local4.unlockInfo or ""
 					f45_local9 = f45_local4.available
 					if not f45_local9 then
@@ -941,7 +941,7 @@ CoD.PlayerRoleUtility.CreateDecalsForTheme = function ( f44_arg0, f44_arg1, f44_
 					f45_local8.checkEquippedOutfit = true
 					f45_local7.models = f45_local8
 					f45_local7.properties = {
-						selectIndex = f45_local10 - 1 == CoD.PlayerRoleUtility.EquippedOutfitItems[f45_arg0]["outfits"][f44_arg3][Enum.CharacterItemType[0x7852FCB3BFCC8D1]],
+						selectIndex = f45_local10 - 1 == CoD.PlayerRoleUtility.EquippedOutfitItems[f45_arg0].outfits[f44_arg3][Enum.CharacterItemType[0x7852FCB3BFCC8D1]],
 						lootData = f45_local4,
 						lootId = f45_local11.lootId
 					}
@@ -1016,7 +1016,7 @@ CoD.PlayerRoleUtility.CreateWarPaintsForTheme = function ( f48_arg0, f48_arg1, f
 				f49_local8.checkEquippedOutfit = true
 				f49_local7.models = f49_local8
 				f49_local7.properties = {
-					selectIndex = f49_local10 - 1 == CoD.PlayerRoleUtility.EquippedOutfitItems[f49_arg0]["outfits"][f48_arg3][Enum.CharacterItemType[0x8E3A65D78229DC1]],
+					selectIndex = f49_local10 - 1 == CoD.PlayerRoleUtility.EquippedOutfitItems[f49_arg0].outfits[f48_arg3][Enum.CharacterItemType[0x8E3A65D78229DC1]],
 					lootData = f49_local4,
 					entitlement = f49_local11.entitlement
 				}
@@ -1039,7 +1039,7 @@ CoD.PlayerRoleUtility.CreateWarPaintsForTheme = function ( f48_arg0, f48_arg1, f
 				return f51_arg1.properties.lootData.owned
 			else
 				local f51_local0
-				if f51_arg1.properties.entitlement and f51_arg1.properties.entitlement ~= 0x0 then
+				if f51_arg1.properties.entitlement and f51_arg1.properties.entitlement ~= "" then
 					f51_local0 = Engine.HasEntitlement( f49_arg0, f51_arg1.properties.entitlement )
 				else
 					f51_local0 = true
@@ -1060,7 +1060,7 @@ CoD.PlayerRoleUtility.IsPaletteOwned = function ( f52_arg0, f52_arg1 )
 		return f52_local0.owned
 	else
 		local f52_local1
-		if f52_arg1.entitlement ~= 0x0 then
+		if f52_arg1.entitlement ~= "" then
 			f52_local1 = Engine.HasEntitlement( f52_arg0, f52_arg1.entitlement )
 		else
 			f52_local1 = true
@@ -1072,7 +1072,7 @@ end
 CoD.PlayerRoleUtility.IsPresetOwned = function ( f53_arg0, f53_arg1 )
 	local f53_local0, f53_local1 = CoD.BlackMarketTableUtility.SimpleLootLookup( f53_arg0, f53_arg1.lootId, f53_arg1.entitlement )
 	local f53_local2
-	if f53_local0 ~= CoD.BlackMarketTableUtility.SimpleLootLookupTypes[0xC0D17BAD169557B] then
+	if f53_local0 ~= CoD.BlackMarketTableUtility.SimpleLootLookupTypes.none then
 		f53_local2 = f53_local1
 	else
 		f53_local2 = true
@@ -1098,7 +1098,7 @@ CoD.PlayerRoleUtility.IsWarPaintOwned = function ( f55_arg0, f55_arg1, f55_arg2 
 		return false
 	end
 	local f55_local0, f55_local1 = CoD.BlackMarketTableUtility.SimpleLootLookup( f55_arg0, f55_arg1.lootId, f55_arg1.entitlement )
-	if f55_local0 ~= CoD.BlackMarketTableUtility.SimpleLootLookupTypes[0xC0D17BAD169557B] then
+	if f55_local0 ~= CoD.BlackMarketTableUtility.SimpleLootLookupTypes.none then
 		return f55_local1
 	end
 	for f55_local5, f55_local6 in ipairs( f55_arg2 ) do
@@ -1144,7 +1144,7 @@ DataSources.MPSpecialistThemes = DataSourceHelpers.ListSetup( "MPSpecialistTheme
 						decalDataSourceName = f56_local6.decalDataSourceFunction( f56_arg0, f56_local2, f56_local1, f56_local12, f56_local17 ),
 						decalCount = #f56_local17.decals,
 						outfitIndex = f56_local12,
-						category = 0x4106C155ACE8F96,
+						category = "weapon_options/theme",
 						rarity = f56_local14,
 						available = true,
 						disabled = f56_local15,
@@ -1177,7 +1177,7 @@ end, true, {
 		return f59_local1 and f59_local1( f59_arg0, f59_arg1, f59_arg2, f59_arg3 )
 	end,
 	getCategoryHelperFunctions = {
-		[0xBD6E1F8964DCE86] = function ( f60_arg0, f60_arg1, f60_arg2, f60_arg3 )
+		outfit = function ( f60_arg0, f60_arg1, f60_arg2, f60_arg3 )
 			local f60_local0 = function ( f61_arg0 )
 				if #f61_arg0.presets == 3 and (f61_arg0.presets[2].lootId == 0xAC40E28D648CB3 or f61_arg0.presets[2].lootId == 0x37D456548D22D4) then
 					for f61_local3, f61_local4 in ipairs( f61_arg0.presets ) do
@@ -1250,7 +1250,7 @@ end, true, {
 				,
 				lookupHighestRarity = f60_local2,
 				selectedIndex = function ()
-					return CoD.PlayerRoleUtility.EquippedOutfitItems[f60_arg0][0xF7F78E9EBEFCE27]
+					return CoD.PlayerRoleUtility.EquippedOutfitItems[f60_arg0].selectedoutfit
 				end
 				,
 				dataSourceFunction = CoD.PlayerRoleUtility.CreateOutfitsForTheme,
@@ -1293,7 +1293,7 @@ end, true, {
 				
 			}
 		end,
-		[0xFB8B65946FBF7A2] = function ( f71_arg0, f71_arg1, f71_arg2, f71_arg3 )
+		war_paint = function ( f71_arg0, f71_arg1, f71_arg2, f71_arg3 )
 			local f71_local0 = function ( f72_arg0, f72_arg1 )
 				local f72_local0 = Enum.LootRarityType[0x8556B83CAD0D180]
 				for f72_local5, f72_local6 in ipairs( f72_arg1.warPaints ) do
@@ -1347,7 +1347,7 @@ end, true, {
 				,
 				lookupHighestRarity = f71_local0,
 				selectedIndex = function ()
-					return CoD.PlayerRoleUtility.EquippedOutfitItems[f71_arg0][0xD9FCEAC8FF24CBD]
+					return CoD.PlayerRoleUtility.EquippedOutfitItems[f71_arg0].selectedwarpaintoutfit
 				end
 				,
 				dataSourceFunction = CoD.PlayerRoleUtility.CreateWarPaintsForTheme,
@@ -1381,11 +1381,11 @@ DataSources.MPOutfitCategories = DataSourceHelpers.ListSetup( "MPOutfitCategorie
 	local f82_local2 = Engine.CurrentSessionMode()
 	local f82_local3 = f82_local0.customizationMode and f82_local0.customizationMode:get() or f82_local2
 	local f82_local4 = {}
-	if f82_local3 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f82_local3 == Enum.eModes.mode_multiplayer then
 		table.insert( f82_local4, {
 			models = {
-				tabName = 0x3C743FD222BE966,
-				category = 0xBD6E1F8964DCE86,
+				tabName = "heroes/outfits",
+				category = "outfit",
 				breadcrumb = DataSources.SpecialistOutfitBreadcrumbs.getBreadcrumbModelForPresetsCategory( f82_arg0, f82_local2, f82_local1 ),
 				camera = "character"
 			}
@@ -1410,7 +1410,7 @@ DataSources.MPOutfitCategories = DataSourceHelpers.ListSetup( "MPOutfitCategorie
 		models = {
 			tabName = "heroes/war_paint",
 			disabled = not f82_local6,
-			category = 0xFB8B65946FBF7A2,
+			category = "war_paint",
 			breadcrumb = DataSources.SpecialistOutfitBreadcrumbs.getBreadcrumbModelForItemTypeCategory( f82_arg0, f82_local2, f82_local1, Enum.CharacterItemType[0x8E3A65D78229DC1] ),
 			camera = "face"
 		}
@@ -1422,34 +1422,34 @@ end, true, {
 		f83_local0 = f83_local0:create( "MPOutfitCategories" )
 		if not f83_local0.selectedCategory then
 			local f83_local1 = f83_local0:create( "selectedCategory" )
-			f83_local1:set( 0xBD6E1F8964DCE86 )
+			f83_local1:set( "outfit" )
 		end
 		return f83_local0
 	end
 } )
 DataSources.WZJumpKitItems = DataSourceHelpers.ListSetup( "WZJumpKitItems", function ( f84_arg0, f84_arg1 )
-	local f84_local0 = Engine[0xA7E3CD65E63086F]( 0xC4900FCA46D6C74 )
+	local f84_local0 = Engine[0xA7E3CD65E63086F]( "jumpkits" )
 	local f84_local1 = f84_arg1.menu:getModel()
 	local f84_local2 = {}
 	local f84_local3 = Engine[0xD67CC9D9A0B5948]( f84_arg0, Engine.CurrentSessionMode(), Enum[0x8037372CBD17C20][0xBF99C226E97F1DB] )
 	for f84_local21, f84_local22 in ipairs( f84_local0 ) do
-		local f84_local23 = CoD.BlackMarketTableUtility.LootInfoLookup( f84_arg0, f84_local22["lootid"], f84_local22[0x562938AF86028A0] )
+		local f84_local23 = CoD.BlackMarketTableUtility.LootInfoLookup( f84_arg0, f84_local22.lootid, f84_local22[0x562938AF86028A0] )
 		local f84_local24 = f84_local23.isLoot or f84_local23.isEntitlement
 		if not f84_local24 or f84_local23.owned then
-			local f84_local7 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f84_local22[0x72D7D6554D61FBC] ) )
-			local f84_local8 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f84_local22[0x540D91B083332C7] ) )
-			local f84_local9 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f84_local22[0xF69520E335E1DC6] ) )
+			local f84_local7 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f84_local22.parachute ) )
+			local f84_local8 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f84_local22.wingsuit ) )
+			local f84_local9 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f84_local22.dropfxtrail ) )
 			local f84_local10 = {
 				[Enum[0x8037372CBD17C20][0xBF99C226E97F1DB]] = {
-					small = f84_local7[0xBFF4CC56C2092F0],
+					small = f84_local7.icon,
 					large = f84_local7[0x3B783D946B4EE55]
 				},
 				[Enum[0x8037372CBD17C20][0x711A76E11C936FF]] = {
-					small = f84_local9[0xBFF4CC56C2092F0],
+					small = f84_local9.icon,
 					large = f84_local9[0x3B783D946B4EE55]
 				},
 				[Enum[0x8037372CBD17C20][0xD7DC1BB143B4455]] = {
-					small = f84_local8[0xBFF4CC56C2092F0],
+					small = f84_local8.icon,
 					large = f84_local8[0x3B783D946B4EE55]
 				}
 			}
@@ -1458,11 +1458,11 @@ DataSources.WZJumpKitItems = DataSourceHelpers.ListSetup( "WZJumpKitItems", func
 				local f84_local19 = f84_local2
 				local f84_local20 = {}
 				local f84_local15 = {
-					displayName = Engine[0xF9F1239CFD921FE]( f84_local22[0x55F116BF695C8F6] or 0x0 ),
+					displayName = Engine[0xF9F1239CFD921FE]( f84_local22.displayname or "" ),
 					icon = f84_local10[f84_local17.type].small or "blacktransparent",
 					largeIcon = f84_local10[f84_local17.type].large or "blacktransparent",
 					itemIndex = f84_local21 - 1,
-					lootId = f84_local22["lootid"],
+					lootId = f84_local22.lootid,
 					type = f84_local17.type,
 					category = f84_local17.typeName,
 					unlockInfo = f84_local23.unlockInfo or ""
@@ -1509,34 +1509,34 @@ end, true, {
 	end
 } )
 DataSources.WZJumpKitSelectedItems = DataSourceHelpers.ListSetup( "WZJumpKitSelectedItems", function ( f86_arg0, f86_arg1 )
-	local f86_local0 = Engine[0xA7E3CD65E63086F]( 0xC4900FCA46D6C74 )
+	local f86_local0 = Engine[0xA7E3CD65E63086F]( "jumpkits" )
 	local f86_local1 = Engine.CurrentSessionMode()
 	local f86_local2 = {}
 	for f86_local14, f86_local15 in ipairs( CoD.PlayerRoleUtility.JumpkitOptions ) do
 		local f86_local16 = f86_local15.type
 		local f86_local17 = f86_local0[Engine[0xD67CC9D9A0B5948]( f86_arg0, f86_local1, f86_local16 ) + 1]
 		if f86_local17 then
-			local f86_local6 = CoD.BlackMarketTableUtility.LootInfoLookup( f86_arg0, f86_local17["lootid"], f86_local17[0x562938AF86028A0] )
+			local f86_local6 = CoD.BlackMarketTableUtility.LootInfoLookup( f86_arg0, f86_local17.lootid, f86_local17[0x562938AF86028A0] )
 			if not f86_local6.isLoot or f86_local6.owned then
 				local f86_local7, f86_local8 = nil
 				if f86_local16 == Enum[0x8037372CBD17C20][0xBF99C226E97F1DB] then
-					local f86_local9 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f86_local17[0x72D7D6554D61FBC] ) )
-					f86_local7 = f86_local9[0xBFF4CC56C2092F0]
+					local f86_local9 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f86_local17.parachute ) )
+					f86_local7 = f86_local9.icon
 					f86_local8 = f86_local9[0x3B783D946B4EE55]
 				elseif f86_local16 == Enum[0x8037372CBD17C20][0x711A76E11C936FF] then
-					local f86_local9 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f86_local17[0xF69520E335E1DC6] ) )
-					f86_local7 = f86_local9[0xBFF4CC56C2092F0]
+					local f86_local9 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f86_local17.dropfxtrail ) )
+					f86_local7 = f86_local9.icon
 					f86_local8 = f86_local9[0x3B783D946B4EE55]
 				elseif f86_local16 == Enum[0x8037372CBD17C20][0xD7DC1BB143B4455] then
-					local f86_local9 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f86_local17[0x540D91B083332C7] ) )
-					f86_local7 = f86_local9[0xBFF4CC56C2092F0]
+					local f86_local9 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f86_local17.wingsuit ) )
+					f86_local7 = f86_local9.icon
 					f86_local8 = f86_local9[0x3B783D946B4EE55]
 				end
 				local f86_local9 = table.insert
 				local f86_local10 = f86_local2
 				local f86_local11 = {}
 				local f86_local12 = {
-					displayName = Engine[0xF9F1239CFD921FE]( f86_local17[0x55F116BF695C8F6] )
+					displayName = Engine[0xF9F1239CFD921FE]( f86_local17.displayname )
 				}
 				local f86_local13
 				if f86_local7 then
@@ -1552,7 +1552,7 @@ DataSources.WZJumpKitSelectedItems = DataSourceHelpers.ListSetup( "WZJumpKitSele
 							else
 								f86_local12.largeIcon = f86_local13
 								f86_local12.itemIndex = -1
-								f86_local12.lootId = f86_local17["lootid"]
+								f86_local12.lootId = f86_local17.lootid
 								f86_local12.type = f86_local16
 								f86_local12.category = f86_local15.typeName
 								f86_local12.unlockInfo = f86_local6.unlockInfo or ""
@@ -1588,21 +1588,21 @@ CoD.PlayerRoleUtility.EquipJumpkitItem = function ( f87_arg0, f87_arg1, f87_arg2
 		Engine[0x3E1093DB4887D7D]( f87_arg1, Engine.CurrentSessionMode(), f87_local1, f87_local0 )
 		local f87_local2 = DataSources.WZJumpKitItems.getModel( f87_arg1 )
 		f87_local2.updateSelections:forceNotifySubscriptions()
-		f87_local2 = CoD.SafeGetModelValue( f87_arg2:getModel(), "lootId" ) or 0x0
+		f87_local2 = CoD.SafeGetModelValue( f87_arg2:getModel(), "lootId" ) or ""
 		if f87_local1 == 0 then
-			Engine[0xDE279ECDDDD966]( f87_arg1, 0xCD849658F801A88, {
-				[0xAB83A8CC61E6325] = f87_local2,
-				[0xA4F18CFDFE19A20] = "parachute"
+			Engine[0xDE279ECDDDD966]( f87_arg1, "dlog_event_loot_equip", {
+				loot_id = f87_local2,
+				loot_data = "parachute"
 			} )
 		elseif f87_local1 == 1 then
-			Engine[0xDE279ECDDDD966]( f87_arg1, 0xCD849658F801A88, {
-				[0xAB83A8CC61E6325] = f87_local2,
-				[0xA4F18CFDFE19A20] = "trail"
+			Engine[0xDE279ECDDDD966]( f87_arg1, "dlog_event_loot_equip", {
+				loot_id = f87_local2,
+				loot_data = "trail"
 			} )
 		elseif f87_local1 == 2 then
-			Engine[0xDE279ECDDDD966]( f87_arg1, 0xCD849658F801A88, {
-				[0xAB83A8CC61E6325] = f87_local2,
-				[0xA4F18CFDFE19A20] = "wingsuit"
+			Engine[0xDE279ECDDDD966]( f87_arg1, "dlog_event_loot_equip", {
+				loot_id = f87_local2,
+				loot_data = "wingsuit"
 			} )
 		end
 	end
@@ -1620,10 +1620,10 @@ end
 
 CoD.PlayerRoleUtility[0x18E8191AD006E3E] = function ( f89_arg0 )
 	local f89_local0 = Engine.CurrentSessionMode()
-	if f89_local0 ~= Enum.eModes[0xBF1DCC8138A9D39] then
+	if f89_local0 ~= Enum.eModes.mode_warzone then
 		return 
 	end
-	local f89_local1 = Engine[0xA7E3CD65E63086F]( 0xC4900FCA46D6C74 )
+	local f89_local1 = Engine[0xA7E3CD65E63086F]( "jumpkits" )
 	for f89_local8, f89_local9 in ipairs( CoD.PlayerRoleUtility.JumpkitOptions ) do
 		local f89_local10 = f89_local9.type
 		local f89_local11 = f89_local1[Engine[0xD67CC9D9A0B5948]( f89_arg0, f89_local0, f89_local10 ) + 1]
@@ -1631,8 +1631,8 @@ CoD.PlayerRoleUtility[0x18E8191AD006E3E] = function ( f89_arg0 )
 		if not f89_local11 then
 			f89_local5 = true
 		else
-			local f89_local6, f89_local7 = CoD.BlackMarketTableUtility.SimpleLootLookup( f89_arg0, f89_local11["lootid"], f89_local11[0x562938AF86028A0] )
-			if f89_local6 ~= CoD.BlackMarketTableUtility.SimpleLootLookupTypes[0xC0D17BAD169557B] and not f89_local7 then
+			local f89_local6, f89_local7 = CoD.BlackMarketTableUtility.SimpleLootLookup( f89_arg0, f89_local11.lootid, f89_local11[0x562938AF86028A0] )
+			if f89_local6 ~= CoD.BlackMarketTableUtility.SimpleLootLookupTypes.none and not f89_local7 then
 				f89_local5 = true
 			end
 		end
@@ -1646,9 +1646,9 @@ CoD.PlayerRoleUtility.CreateCustomizationOptions = function ( f90_arg0, f90_arg1
 	local f90_local0 = "OutfitOptions" .. f90_arg4.type
 	DataSources[f90_local0] = DataSourceHelpers.ListSetup( f90_local0, function ( f91_arg0, f91_arg1 )
 		local f91_local0 = {}
-		local f91_local1 = CoD.PlayerRoleUtility.EquippedOutfitItems[f91_arg0][0xF7F78E9EBEFCE27]
+		local f91_local1 = CoD.PlayerRoleUtility.EquippedOutfitItems[f91_arg0].selectedoutfit
 		if f90_arg4.type == Enum.CharacterItemType[0x8E3A65D78229DC1] then
-			f91_local1 = CoD.PlayerRoleUtility.EquippedOutfitItems[f91_arg0][0xD9FCEAC8FF24CBD]
+			f91_local1 = CoD.PlayerRoleUtility.EquippedOutfitItems[f91_arg0].selectedwarpaintoutfit
 		end
 		for f91_local15, f91_local16 in ipairs( f90_arg3 ) do
 			local f91_local17 = f91_local15 - 1
@@ -1690,7 +1690,7 @@ CoD.PlayerRoleUtility.CreateCustomizationOptions = function ( f90_arg0, f90_arg1
 					f91_local10.checkEquippedOutfit = true
 					f91_local9.models = f91_local10
 					f91_local10 = {}
-					if f91_local17 ~= f91_local1 or f91_local5 ~= CoD.PlayerRoleUtility.EquippedOutfitItems[f91_arg0]["outfits"][f91_local17][f90_arg4.type] then
+					if f91_local17 ~= f91_local1 or f91_local5 ~= CoD.PlayerRoleUtility.EquippedOutfitItems[f91_arg0].outfits[f91_local17][f90_arg4.type] then
 						f91_local11 = false
 					else
 						f91_local11 = true
@@ -1842,31 +1842,31 @@ CoD.PlayerRoleUtility[0x2B307D12327547E] = function ( f97_arg0 )
 			if f97_local23 then
 				local f97_local6 = CoD.PlayerRoleUtility.GetCachedHeroCustomization( f97_local0, f97_local22 )
 				local f97_local7 = f97_local0
-				if f97_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+				if f97_local0 == Enum.eModes.mode_warzone then
 					local f97_local8 = Engine[0xB678B832BC9DC0]( f97_local0, f97_local22 )
 					f97_local7 = f97_local8 and f97_local8[0xE69216C2DA7060A]
 				end
-				if f97_local7 == Enum.eModes[0x83EBA96F36BC4E5] then
+				if f97_local7 == Enum.eModes.mode_multiplayer then
 					for f97_local11, f97_local12 in ipairs( f97_local6.outfits ) do
 						local f97_local13 = function ( f98_arg0, f98_arg1 )
 							f97_local2 = true
 							Engine[0xFD8CC50F67C9E2]( f97_arg0, f97_local0, f97_local22, f97_local11 - 1, f98_arg0, f98_arg1 )
 						end
 						
-						local f97_local14 = f97_local23["outfits"][f97_local11 - 1]
-						if not CoD.PlayerRoleUtility[0x9F1E0063F7B530D]( f97_arg0, f97_local12, f97_local14, f97_local13 ) and f97_local23[0xF7F78E9EBEFCE27] == f97_local11 - 1 then
+						local f97_local14 = f97_local23.outfits[f97_local11 - 1]
+						if not CoD.PlayerRoleUtility[0x9F1E0063F7B530D]( f97_arg0, f97_local12, f97_local14, f97_local13 ) and f97_local23.selectedoutfit == f97_local11 - 1 then
 							f97_local2 = true
 							Engine[0xB02A702F818D9A3]( f97_arg0, f97_local0, f97_local22, 0 )
 						end
-						if not CoD.PlayerRoleUtility[0x55B379B8ED13B02]( f97_arg0, f97_local12, f97_local14, f97_local13 ) and f97_local23[0xD9FCEAC8FF24CBD] == f97_local11 - 1 then
+						if not CoD.PlayerRoleUtility[0x55B379B8ED13B02]( f97_arg0, f97_local12, f97_local14, f97_local13 ) and f97_local23.selectedwarpaintoutfit == f97_local11 - 1 then
 							f97_local2 = true
 							Engine[0x449414086A8231D]( f97_arg0, f97_local0, f97_local22, 0 )
 						end
 					end
-				elseif f97_local7 == Enum.eModes[0x3723205FAE52C4A] then
+				elseif f97_local7 == Enum.eModes.mode_zombies then
 					for f97_local11, f97_local12 in ipairs( f97_local6.outfits ) do
 						for f97_local16, f97_local17 in ipairs( CoDLoadoutsShared.characterCustomizationRegions ) do
-							local f97_local19 = f97_local12[f97_local17.name][f97_local23["outfits"][f97_local11 - 1][f97_local17.type] + 1]
+							local f97_local19 = f97_local12[f97_local17.name][f97_local23.outfits[f97_local11 - 1][f97_local17.type] + 1]
 							if f97_local19 then
 								local f97_local15 = CoD.BlackMarketTableUtility.LootInfoLookup( f97_arg0, f97_local19.lootId )
 								if f97_local15.isLoot and not f97_local15.owned then
@@ -1889,7 +1889,7 @@ end
 
 CoD.PlayerRoleUtility[0xD150AB859D3C2D7] = function ( f99_arg0 )
 	local f99_local0 = Engine.CurrentSessionMode()
-	if f99_local0 ~= Enum.eModes[0x83EBA96F36BC4E5] and f99_local0 ~= Enum.eModes[0xBF1DCC8138A9D39] then
+	if f99_local0 ~= Enum.eModes.mode_multiplayer and f99_local0 ~= Enum.eModes.mode_warzone then
 		return 
 	end
 	local f99_local1 = CoDShared.GetDefaultLoadoutForCurrentMode()
@@ -1922,8 +1922,8 @@ end
 CoD.PlayerRoleUtility.GetTagIconFromIndex = function ( f100_arg0 )
 	local f100_local0 = Engine[0xB2E4CCC119597B0]()
 	local f100_local1 = f100_local0[f100_arg0 + 1]
-	if f100_local1 and f100_local1[0x79439EF7BFA9C2D] == 0x6D7AB194448A4F3 then
-		return f100_local1[0xBFF4CC56C2092F0]
+	if f100_local1 and f100_local1.type == "tag" then
+		return f100_local1.icon
 	else
 		return "blacktransparent"
 	end
@@ -1931,12 +1931,12 @@ end
 
 CoD.PlayerRoleUtility.AllowSprayOrGesture = function ( f101_arg0, f101_arg1, f101_arg2 )
 	local f101_local0 = function ()
-		return f101_arg1[0x562938AF86028A0] and f101_arg1[0x562938AF86028A0] ~= 0x0
+		return f101_arg1[0x562938AF86028A0] and f101_arg1[0x562938AF86028A0] ~= ""
 	end
 	
 	if f101_arg1[0x486837B8286880E] ~= 1 and not f101_arg2.isLoot and not f101_local0() and not IsBooleanDvarSet( 0xCDC482A7D159F8 ) then
 		return false
-	elseif f101_arg2.isLoot and not f101_arg2.owned and not f101_arg2.available and not f101_arg2.inSet and not IsBooleanDvarSet( 0x22A538E0F11B88E ) then
+	elseif f101_arg2.isLoot and not f101_arg2.owned and not f101_arg2.available and not f101_arg2.inSet and not IsBooleanDvarSet( "loot_enableblackmarket" ) then
 		return false
 	elseif f101_local0() and not Engine.HasEntitlement( f101_arg0, f101_arg1[0x562938AF86028A0] ) then
 		return false
@@ -1967,27 +1967,27 @@ DataSources.TagCategories = DataSourceHelpers.ListSetup( "TagCategories", functi
 	local f106_local6 = 0
 	local f106_local7 = 0
 	for f106_local21, f106_local22 in ipairs( f106_local3 ) do
-		if f106_local22[0x79439EF7BFA9C2D] == 0x6D7AB194448A4F3 then
+		if f106_local22.type == "tag" then
 			local f106_local11 = CoD.BlackMarketTableUtility.LootInfoLookup( f106_arg0, f106_local22[0x14C91FFB3BA4240], f106_local22[0x562938AF86028A0] )
 			if CoD.PlayerRoleUtility.AllowSprayOrGesture( f106_arg0, f106_local22, f106_local11 ) then
 				local f106_local12 = f106_local22[0x562938AF86028A0]
 				if f106_local12 then
-					f106_local12 = f106_local22[0x562938AF86028A0] ~= 0x0
+					f106_local12 = f106_local22[0x562938AF86028A0] ~= ""
 				end
 				local f106_local13 = f106_local22[0x486837B8286880E]
 				if f106_local13 then
 					f106_local13 = f106_local22[0x486837B8286880E] == 1
 				end
-				local f106_local14 = Engine[0xF9F1239CFD921FE]( f106_local22[0xA31296C0C1B6029] )
+				local f106_local14 = Engine[0xF9F1239CFD921FE]( f106_local22.title )
 				if f106_local11.isLoot and not f106_local11.available then
-					f106_local14 = Engine[0xF9F1239CFD921FE]( 0x8C899D3B96CB850 )
+					f106_local14 = Engine[0xF9F1239CFD921FE]( "menu/classified" )
 				end
 				local f106_local15 = f106_local1 == f106_local21
 				local f106_local16 = {}
 				local f106_local17 = {
-					image = f106_local22[0xBFF4CC56C2092F0],
+					image = f106_local22.icon,
 					displayName = f106_local14,
-					category = 0xC1A8B9514E01F25,
+					category = "menu/tag",
 					setInfo = "",
 					unlockInfo = f106_local11.unlockInfo or "",
 					index = f106_local21
@@ -2055,16 +2055,16 @@ DataSources.TagCategories = DataSourceHelpers.ListSetup( "TagCategories", functi
 				end
 			end
 		end
-		if f106_local22[0x79439EF7BFA9C2D] == 0x3391A0572202ED4 then
+		if f106_local22.type == "gesture" then
 			local f106_local12 = CoD.BlackMarketTableUtility.LootInfoLookup( f106_arg0, f106_local22[0x14C91FFB3BA4240], f106_local22[0x562938AF86028A0] )
 			if CoD.PlayerRoleUtility.AllowSprayOrGesture( f106_arg0, f106_local22, f106_local12 ) and (not f106_local12.isLoot or f106_local12.owned or f106_local12.available) then
 				local f106_local13 = f106_local22[0x562938AF86028A0]
 				if f106_local13 then
-					f106_local13 = f106_local22[0x562938AF86028A0] ~= 0x0
+					f106_local13 = f106_local22[0x562938AF86028A0] ~= ""
 				end
-				local f106_local14 = Engine[0xF9F1239CFD921FE]( f106_local22[0xA31296C0C1B6029] )
+				local f106_local14 = Engine[0xF9F1239CFD921FE]( f106_local22.title )
 				if f106_local12.isLoot and not f106_local12.available then
-					f106_local14 = Engine[0xF9F1239CFD921FE]( 0x8C899D3B96CB850 )
+					f106_local14 = Engine[0xF9F1239CFD921FE]( "menu/classified" )
 				end
 				if (f106_local13 or f106_local12.owned) and CoD.BreadcrumbUtility.IsStatSpecialistSprayGestureNew( f106_arg1.menu, f106_arg0, f106_local21 ) then
 					f106_local7 = f106_local7 + 1
@@ -2074,9 +2074,9 @@ DataSources.TagCategories = DataSourceHelpers.ListSetup( "TagCategories", functi
 				local f106_local17 = CoD.PlayerRoleUtility[0x9618A04E02FEFA3]
 				local f106_local18 = {}
 				local f106_local19 = {
-					image = f106_local22[0xBFF4CC56C2092F0],
+					image = f106_local22.icon,
 					displayName = f106_local14,
-					category = 0x1C35414911C9A0E,
+					category = "menu/gesture",
 					setInfo = ""
 				}
 				local f106_local20 = f106_local12.unlockInfo
@@ -2160,7 +2160,7 @@ DataSources.TagCategories = DataSourceHelpers.ListSetup( "TagCategories", functi
 		f106_local10:set( f106_local5 )
 		table.insert( f106_local8, {
 			models = {
-				tabName = 0x13A845278D53F22,
+				tabName = "menu/tags",
 				tabWidget = "CoD.MPSpecialistHUBTags_TagFrame",
 				breadcrumb = f106_local9
 			},
@@ -2253,11 +2253,11 @@ DataSources.TagCategories = DataSourceHelpers.ListSetup( "TagCategories", functi
 				end
 				f106_local14.master = f106_local17
 				f106_local14.master.models.setName = f106_local14.setTitle
-				f106_local14.master.models.setInfo = Engine[0xF9F1239CFD921FE]( 0xF4082FA89EBEDBA, f106_local15, Engine[0xF9F1239CFD921FE]( 0x20BF14474EB8696, Engine[0xF9F1239CFD921FE]( 0xC1A8B9514E01F25 ) ) )
+				f106_local14.master.models.setInfo = Engine[0xF9F1239CFD921FE]( 0xF4082FA89EBEDBA, f106_local15, Engine[0xF9F1239CFD921FE]( 0x20BF14474EB8696, Engine[0xF9F1239CFD921FE]( "menu/tag" ) ) )
 				if f106_local14.master.models.owned then
-					f106_local14.master.models.unlockInfo = Engine[0xF9F1239CFD921FE]( 0xC5DD764B51C08A5 )
+					f106_local14.master.models.unlockInfo = Engine[0xF9F1239CFD921FE]( "menu/set_complete" )
 				else
-					f106_local14.master.models.unlockInfo = Engine[0xF9F1239CFD921FE]( 0x1DA22AC662BBEFE )
+					f106_local14.master.models.unlockInfo = Engine[0xF9F1239CFD921FE]( "menu/set_incomplete" )
 				end
 				f106_local14.master.properties.customWidgetOverride = CoD.HubTagBonusButton
 				table.insert( CoD.PlayerRoleUtility[0x1435A1010208496], f106_local14.master )
@@ -2269,7 +2269,7 @@ DataSources.TagCategories = DataSourceHelpers.ListSetup( "TagCategories", functi
 			f106_local22:set( f106_local6 )
 			table.insert( f106_local8, {
 				models = {
-					tabName = 0xAACD14AF3BFBE5F,
+					tabName = "menu/tag_sets",
 					tabWidget = "CoD.MPSpecialistHUBTags_TagSetsFrame",
 					breadcrumb = f106_local21
 				},
@@ -2305,7 +2305,7 @@ DataSources.TagCategories = DataSourceHelpers.ListSetup( "TagCategories", functi
 		f106_local10:set( f106_local7 )
 		table.insert( f106_local8, {
 			models = {
-				tabName = 0xB825BF2939A8267,
+				tabName = "menu/gestures",
 				tabWidget = "CoD.MPSpecialistHUBGesturesInternal",
 				breadcrumb = f106_local9
 			},
@@ -2340,15 +2340,15 @@ DataSources.PersonalizationCategories = DataSourceHelpers.ListSetup( "Personaliz
 	f112_local2 = f112_local2:create( "PersonalizationCategories" )
 	table.insert( f112_local0, {
 		models = {
-			tabName = 0xB825BF2939A8267,
+			tabName = "menu/gestures",
 			breadcrumb = DataSources.SprayGestureBreadcrumbs.getModel( f112_arg0 ),
 			tabWidget = "CoD.MPSpecialistHUBBindWheelInternal"
 		},
 		properties = {
-			tabId = 0xA35DE40ECAF45C5
+			tabId = "gestures"
 		}
 	} )
-	if f112_local1 == Enum.eModes[0xBF1DCC8138A9D39] then
+	if f112_local1 == Enum.eModes.mode_warzone then
 		table.insert( f112_local0, {
 			models = {
 				tabName = 0x2A8D9058AD56819,
@@ -2356,7 +2356,7 @@ DataSources.PersonalizationCategories = DataSourceHelpers.ListSetup( "Personaliz
 				tabWidget = "CoD.WZJumpKitSelectorInternal"
 			},
 			properties = {
-				tabId = 0xC4900FCA46D6C74
+				tabId = "jumpkits"
 			}
 		} )
 	end
@@ -2381,7 +2381,7 @@ CoD.PlayerRoleUtility.UpdatePersonalizeSpecialistOutfit = function ( f115_arg0, 
 	local f115_local0 = CoD.SafeGetModelValue( f115_arg1:getModel(), "outfitIndex" )
 	if f115_local0 then
 		local f115_local1 = DataSources.MPOutfitCategories.getModel( f115_arg0 )
-		if f115_local1.selectedCategory:get() == 0xFB8B65946FBF7A2 then
+		if f115_local1.selectedCategory:get() == "war_paint" then
 			Engine.SendClientScriptNotify( f115_arg0, "updateSpecialistCustomization" .. CoD.GetLocalClientAdjustedNum( f115_arg0 ), {
 				event_name = "changeWarPaintOutfit",
 				outfit_index = f115_local0
@@ -2460,17 +2460,17 @@ end
 
 CoD.PlayerRoleUtility.SetCharacterWarPaintOutfitIndex = function ( f122_arg0, f122_arg1, f122_arg2, f122_arg3, f122_arg4 )
 	Engine[0x449414086A8231D]( f122_arg0, f122_arg1, f122_arg2, f122_arg3, f122_arg4 )
-	Engine[0xDE279ECDDDD966]( f122_arg0, 0xCD849658F801A88, {
-		[0xAB83A8CC61E6325] = f122_arg4,
-		[0xA4F18CFDFE19A20] = "warpaint"
+	Engine[0xDE279ECDDDD966]( f122_arg0, "dlog_event_loot_equip", {
+		loot_id = f122_arg4,
+		loot_data = "warpaint"
 	} )
 end
 
 CoD.PlayerRoleUtility.SetCharacterOutfitIndex = function ( f123_arg0, f123_arg1, f123_arg2, f123_arg3, f123_arg4 )
 	Engine[0xB02A702F818D9A3]( f123_arg0, f123_arg1, f123_arg2, f123_arg3 )
-	Engine[0xDE279ECDDDD966]( f123_arg0, 0xCD849658F801A88, {
-		[0xAB83A8CC61E6325] = f123_arg4,
-		[0xA4F18CFDFE19A20] = "outfit"
+	Engine[0xDE279ECDDDD966]( f123_arg0, "dlog_event_loot_equip", {
+		loot_id = f123_arg4,
+		loot_data = "outfit"
 	} )
 end
 
@@ -2479,28 +2479,28 @@ CoD.PlayerRoleUtility.EquipOutfit = function ( f124_arg0, f124_arg1, f124_arg2 )
 	f124_local0 = f124_local0.characterIndex:get()
 	local f124_local1 = CoD.SafeGetModelValue( f124_arg2:getModel(), "outfitIndex" )
 	if f124_local1 then
-		local f124_local2 = f124_arg2.lootId or 0x0
+		local f124_local2 = f124_arg2.lootId or ""
 		local f124_local3 = Engine.GetHeroCustomizationTable( Engine.CurrentSessionMode(), f124_local0 )
 		local f124_local4 = f124_local3.outfits[f124_local1 + 1]
 		local f124_local5 = DataSources.MPOutfitCategories.getModel( f124_arg1 )
-		if f124_local5.selectedCategory:get() == 0xFB8B65946FBF7A2 then
-			if f124_local2 == 0x0 then
-				local f124_local6 = f124_local4.warPaints[CoD.PlayerRoleUtility.EquippedOutfitItems[f124_arg1]["outfits"][f124_local1][Enum.CharacterItemType[0x8E3A65D78229DC1]] + 1]
+		if f124_local5.selectedCategory:get() == "war_paint" then
+			if f124_local2 == "" then
+				local f124_local6 = f124_local4.warPaints[CoD.PlayerRoleUtility.EquippedOutfitItems[f124_arg1].outfits[f124_local1][Enum.CharacterItemType[0x8E3A65D78229DC1]] + 1]
 				if f124_local6 then
 					f124_local2 = f124_local6.lootId
 				end
 			end
 			CoD.PlayerRoleUtility.SetCharacterWarPaintOutfitIndex( f124_arg1, Engine.CurrentSessionMode(), f124_local0, f124_local1, f124_local2 )
-			CoD.PlayerRoleUtility.EquippedOutfitItems[f124_arg1][0xD9FCEAC8FF24CBD] = f124_local1
+			CoD.PlayerRoleUtility.EquippedOutfitItems[f124_arg1].selectedwarpaintoutfit = f124_local1
 		else
-			if f124_local2 == 0x0 then
-				local f124_local6 = f124_local4.presets[CoD.PlayerRoleUtility.EquippedOutfitItems[f124_arg1]["outfits"][f124_local1][Enum.CharacterItemType[0x922FE5C41D9EE8B]] + 1]
+			if f124_local2 == "" then
+				local f124_local6 = f124_local4.presets[CoD.PlayerRoleUtility.EquippedOutfitItems[f124_arg1].outfits[f124_local1][Enum.CharacterItemType[0x922FE5C41D9EE8B]] + 1]
 				if f124_local6 then
 					f124_local2 = f124_local6.lootId
 				end
 			end
 			CoD.PlayerRoleUtility.SetCharacterOutfitIndex( f124_arg1, Engine.CurrentSessionMode(), f124_local0, f124_local1, f124_local2 )
-			CoD.PlayerRoleUtility.EquippedOutfitItems[f124_arg1][0xF7F78E9EBEFCE27] = f124_local1
+			CoD.PlayerRoleUtility.EquippedOutfitItems[f124_arg1].selectedoutfit = f124_local1
 		end
 		local f124_local7 = DataSources.MPSpecialistThemes.getModel( f124_arg1 )
 		f124_local7.update:forceNotifySubscriptions()
@@ -2519,7 +2519,7 @@ CoD.PlayerRoleUtility.EquipOutfitItem = function ( f125_arg0, f125_arg1, f125_ar
 			local f125_local5 = function ( f126_arg0, f126_arg1 )
 				local f126_local0 = CoD.SafeGetModelValue( f125_arg2:getModel(), f126_arg0 ) or 0
 				Engine[0xFD8CC50F67C9E2]( f125_arg1, Engine.CurrentSessionMode(), f125_local0, f125_local1, f126_arg1, f126_local0 )
-				CoD.PlayerRoleUtility.EquippedOutfitItems[f125_arg1]["outfits"][f125_local1][f126_arg1] = f126_local0
+				CoD.PlayerRoleUtility.EquippedOutfitItems[f125_arg1].outfits[f125_local1][f126_arg1] = f126_local0
 			end
 			
 			f125_local5( "arms", Enum.CharacterItemType[0x41B42F0A58AC50F] )
@@ -2531,7 +2531,7 @@ CoD.PlayerRoleUtility.EquipOutfitItem = function ( f125_arg0, f125_arg1, f125_ar
 			CoD.PlayerRoleUtility.EquipOutfit( f125_arg0, f125_arg1, f125_arg2 )
 		elseif f125_local2 and f125_local3 then
 			Engine[0xFD8CC50F67C9E2]( f125_arg1, Engine.CurrentSessionMode(), f125_local0, f125_local1, f125_local2, f125_local3 )
-			CoD.PlayerRoleUtility.EquippedOutfitItems[f125_arg1]["outfits"][f125_local1][f125_local2] = f125_local3
+			CoD.PlayerRoleUtility.EquippedOutfitItems[f125_arg1].outfits[f125_local1][f125_local2] = f125_local3
 			CoD.PlayerRoleUtility.EquipOutfit( f125_arg0, f125_arg1, f125_arg2 )
 		end
 		local f125_local5 = DataSources.MPSpecialistThemes.getModel( f125_arg1 )
@@ -2555,7 +2555,7 @@ CoD.PlayerRoleUtility.UnequipOutfitItem = function ( f128_arg0, f128_arg1, f128_
 	local f128_local2 = CoD.SafeGetModelValue( f128_arg2:getModel(), "itemType" )
 	if f128_local1 and f128_local2 then
 		Engine[0xFD8CC50F67C9E2]( f128_arg1, Engine.CurrentSessionMode(), f128_local0, f128_local1, f128_local2, 0 )
-		CoD.PlayerRoleUtility.EquippedOutfitItems[f128_arg1]["outfits"][f128_local1][f128_local2] = 0
+		CoD.PlayerRoleUtility.EquippedOutfitItems[f128_arg1].outfits[f128_local1][f128_local2] = 0
 		local f128_local3 = DataSources.MPSpecialistThemes.getModel( f128_arg1 )
 		f128_local3.update:forceNotifySubscriptions()
 	end
@@ -2567,10 +2567,10 @@ CoD.PlayerRoleUtility.IsSelectedOutfitIndex = function ( f129_arg0, f129_arg1 )
 		return false
 	else
 		local f129_local1 = DataSources.MPOutfitCategories.getModel( f129_arg1 )
-		if f129_local1.selectedCategory:get() == 0xFB8B65946FBF7A2 then
-			return CoD.PlayerRoleUtility.EquippedOutfitItems[f129_arg1][0xD9FCEAC8FF24CBD] == f129_local0
+		if f129_local1.selectedCategory:get() == "war_paint" then
+			return CoD.PlayerRoleUtility.EquippedOutfitItems[f129_arg1].selectedwarpaintoutfit == f129_local0
 		else
-			return CoD.PlayerRoleUtility.EquippedOutfitItems[f129_arg1][0xF7F78E9EBEFCE27] == f129_local0
+			return CoD.PlayerRoleUtility.EquippedOutfitItems[f129_arg1].selectedoutfit == f129_local0
 		end
 	end
 end
@@ -2582,9 +2582,9 @@ CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex = function ( f130_arg0, f130_arg
 		local f130_local2 = CoD.SafeGetModelValue( f130_arg0:getModel(), "itemType" )
 		local f130_local3 = CoD.SafeGetModelValue( f130_arg0:getModel(), "itemIndex" )
 		if CoD.SafeGetModelValue( f130_arg0:getModel(), "checkEquippedOutfit" ) then
-			local f130_local4 = CoD.PlayerRoleUtility.EquippedOutfitItems[f130_arg1][0xF7F78E9EBEFCE27]
+			local f130_local4 = CoD.PlayerRoleUtility.EquippedOutfitItems[f130_arg1].selectedoutfit
 			if f130_local2 == Enum.CharacterItemType[0x8E3A65D78229DC1] then
-				f130_local4 = CoD.PlayerRoleUtility.EquippedOutfitItems[f130_arg1][0xD9FCEAC8FF24CBD]
+				f130_local4 = CoD.PlayerRoleUtility.EquippedOutfitItems[f130_arg1].selectedwarpaintoutfit
 			end
 			if f130_local0 ~= f130_local4 then
 				return false
@@ -2593,7 +2593,7 @@ CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex = function ( f130_arg0, f130_arg
 		if f130_local1 and f130_local1 ~= "" then
 			local f130_local4 = true
 			local f130_local5 = function ( f131_arg0, f131_arg1 )
-				return CoD.PlayerRoleUtility.EquippedOutfitItems[f130_arg1]["outfits"][f130_local0][f131_arg1] == (CoD.SafeGetModelValue( f130_arg0:getModel(), f131_arg0 ) or 0)
+				return CoD.PlayerRoleUtility.EquippedOutfitItems[f130_arg1].outfits[f130_local0][f131_arg1] == (CoD.SafeGetModelValue( f130_arg0:getModel(), f131_arg0 ) or 0)
 			end
 			
 			if f130_local4 then
@@ -2616,7 +2616,7 @@ CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex = function ( f130_arg0, f130_arg
 			end
 			return f130_local4
 		elseif CoD.PlayerRoleUtility.EquippedOutfitItems[f130_arg1] then
-			return CoD.PlayerRoleUtility.EquippedOutfitItems[f130_arg1]["outfits"][f130_local0][f130_local2] == f130_local3
+			return CoD.PlayerRoleUtility.EquippedOutfitItems[f130_arg1].outfits[f130_local0][f130_local2] == f130_local3
 		end
 	end
 	return false
@@ -2680,9 +2680,9 @@ CoD.PlayerRoleUtility.PlayDraftGesture_Internal = function ( f136_arg0, f136_arg
 		f136_local0 = f136_local0[f136_arg1 + 1]
 		if f136_local0 then
 			Engine[0xDE279ECDDDD966]( f136_arg0, 0x8492A9F79B4D8E2, {
-				[0xB53288C022B73A7] = f136_arg1,
-				[0xE3755F8BEC75376] = -1,
-				[0x84CFBA3558B4604] = f136_local0[0x14C91FFB3BA4240]
+				gesture_index = f136_arg1,
+				gametime = -1,
+				gesture_id = f136_local0[0x14C91FFB3BA4240]
 			} )
 		end
 		Engine[0xE7A5E30BF672339]( f136_arg0, Engine[0xC3DF042E7492B66]( Enum.LobbyModule[0xC46B73E8E18BA2] ), f136_arg1 )
@@ -2725,21 +2725,21 @@ CoD.PlayerRoleUtility.SendClientNotifyGestureMenu = function ( f142_arg0, f142_a
 	local f142_local0 = CoD.BaseUtility.GetMenuSessionMode( f142_arg0 )
 	local f142_local1 = nil
 	if IsLobbyNetworkModeLive() then
-		if f142_local0 == Enum.eModes[0x83EBA96F36BC4E5] then
+		if f142_local0 == Enum.eModes.mode_multiplayer then
 			f142_local1 = Enum.StorageFileType[0x6C886CEB6BF4BCA]
-		elseif f142_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+		elseif f142_local0 == Enum.eModes.mode_warzone then
 			f142_local1 = Enum.StorageFileType[0xDF87425733853AE]
 		end
-	elseif f142_local0 == Enum.eModes[0x83EBA96F36BC4E5] then
+	elseif f142_local0 == Enum.eModes.mode_multiplayer then
 		f142_local1 = Enum.StorageFileType[0xF9A4C4451E3499E]
-	elseif f142_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f142_local0 == Enum.eModes.mode_warzone then
 		f142_local1 = Enum.StorageFileType[0x7036247812689DA]
 	end
 	if not f142_local1 then
 		return 
 	end
 	local f142_local2 = Engine.StorageGetBuffer( f142_arg1, f142_local1 )
-	local f142_local3 = f142_local2[0x766CE60E25569A3][0x8A76647E94009C3]["characterindex"]:get()
+	local f142_local3 = f142_local2.cacloadouts.charactercontext.characterindex:get()
 	if not f142_local3 or f142_local3 == 0 then
 		f142_local3 = 1
 	end
@@ -2831,8 +2831,8 @@ CoD.PlayerRoleUtility.BindGestureTagToSlot = function ( f149_arg0, f149_arg1, f1
 	f149_local2 = f149_local2[f149_local1 + 1]
 	if f149_local2 then
 		Engine[0xDE279ECDDDD966]( f149_arg2, 0x383F97940CAD275, {
-			[0xB53288C022B73A7] = f149_local1,
-			[0x84CFBA3558B4604] = f149_local2[0x14C91FFB3BA4240]
+			gesture_index = f149_local1,
+			gesture_id = f149_local2[0x14C91FFB3BA4240]
 		} )
 	end
 	local f149_local3 = f149_arg0._refreshDataSource
@@ -2864,7 +2864,7 @@ CoD.PlayerRoleUtility.GetPlayerRolesListHelper = function ( f150_arg0, f150_arg1
 		}
 		if not f150_arg3 or f150_arg3 and f150_arg3( f150_arg0, f150_arg1, f150_arg2, f150_local10, f150_local11 ) then
 			local f150_local4 = #f150_local0 + 1
-			if f150_arg2 ~= Enum.eModes[0x3723205FAE52C4A] then
+			if f150_arg2 ~= Enum.eModes.mode_zombies then
 				for f150_local5 = #f150_local0, 1, -1 do
 					if Engine[0xF9F1239CFD921FE]( f150_local0[f150_local5].models.name ) < Engine[0xF9F1239CFD921FE]( f150_local11.models.name ) then
 						break
@@ -2875,11 +2875,11 @@ CoD.PlayerRoleUtility.GetPlayerRolesListHelper = function ( f150_arg0, f150_arg1
 			table.insert( f150_local0, f150_local4, f150_local11 )
 		end
 	end
-	if f150_arg2 == Enum.eModes[0x3723205FAE52C4A] then
+	if f150_arg2 == Enum.eModes.mode_zombies then
 		f150_local1 = function ( f151_arg0 )
 			local f151_local0 = Engine[0xB678B832BC9DC0]( f150_arg2, f151_arg0 )
-			if f151_local0 and f151_local0["sortindex"] then
-				return f151_local0["sortindex"]
+			if f151_local0 and f151_local0.sortindex then
+				return f151_local0.sortindex
 			else
 				return 0
 			end
@@ -2903,7 +2903,7 @@ CoD.PlayerRoleUtility.GetCharacterTraitTitle = function ( f153_arg0, f153_arg1 )
 	if f153_local0 and f153_local0[0xCB0CDA53FD7B57A] then
 		return f153_local0[0xCB0CDA53FD7B57A]
 	else
-		return 0x0
+		return ""
 	end
 end
 
@@ -2912,12 +2912,12 @@ CoD.PlayerRoleUtility.GetCharacterTraitSummary = function ( f154_arg0, f154_arg1
 	if f154_local0 and f154_local0[0xF448362F2806424] then
 		return f154_local0[0xF448362F2806424]
 	else
-		return 0x0
+		return ""
 	end
 end
 
 CoD.PlayerRoleUtility.IsCharacterRestricted = function ( f155_arg0, f155_arg1 )
-	if f155_arg0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	if f155_arg0 == Enum.eModes.mode_warzone then
 		return false
 	else
 		local f155_local0 = Engine.GetGametypeSettings()
@@ -2931,7 +2931,7 @@ CoD.PlayerRoleUtility[0x7841254A6DA6220] = function ( f156_arg0, f156_arg1 )
 		return true
 	elseif f156_arg0 and f156_arg0.characterIndex then
 		local f156_local1 = Engine[0xB678B832BC9DC0]( Engine.CurrentSessionMode(), f156_arg0.characterIndex )
-		if f156_local1[0x5E9D6D3424C0E7E] == 0x50D7FC2ACA48B7F then
+		if f156_local1[0x5E9D6D3424C0E7E] == "wz_character_spectre" then
 			return false
 		end
 	end
@@ -2953,7 +2953,7 @@ CoD.PlayerRoleUtility.IsSelfModelSpectreRisingRestricted = function ( f157_arg0,
 		return false
 	end
 	local f157_local4 = Engine[0xB678B832BC9DC0]( Engine.CurrentSessionMode(), f157_local3 )
-	if f157_local4[0x5E9D6D3424C0E7E] == 0x50D7FC2ACA48B7F then
+	if f157_local4[0x5E9D6D3424C0E7E] == "wz_character_spectre" then
 		return true
 	end
 	return false
@@ -2974,7 +2974,7 @@ CoD.PlayerRoleUtility[0x7B96724B9CBB296] = function ( f158_arg0, f158_arg1 )
 	end
 	local f158_local3 = Engine.CurrentSessionMode()
 	local f158_local4 = Engine[0xB678B832BC9DC0]( f158_local3, f158_local2 )
-	if f158_local4[0x5E9D6D3424C0E7E] == 0x50D7FC2ACA48B7F then
+	if f158_local4[0x5E9D6D3424C0E7E] == "wz_character_spectre" then
 		return CoD.PlayerRoleUtility.IsRoleUnlocked( f158_arg1, f158_local3, f158_local2 )
 	end
 	return false
@@ -3003,7 +3003,7 @@ DataSources.PositionDraftCharacters = DataSourceHelpers.ListSetup( "PositionDraf
 		local f161_local0 = f161_arg4.models.characterIndex
 		local f161_local1 = LobbyData.GetCurrentMenuTarget()
 		local f161_local2 = false
-		if f161_local1["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
+		if f161_local1.id == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
 			if f161_local0 ~= f160_local3 then
 				return false
 			end
@@ -3011,7 +3011,7 @@ DataSources.PositionDraftCharacters = DataSourceHelpers.ListSetup( "PositionDraf
 		end
 		if f161_arg4.properties.character[0x810366D1F05BBBD] and not CoD.BaseUtility.IsDvarEnabled( f161_arg4.properties.character[0x810366D1F05BBBD] ) then
 			return false
-		elseif f161_arg2 == Enum.eModes[0x83EBA96F36BC4E5] and LuaUtils.IsArenaMode() and CoDLoadoutsShared.ArenaHiddenPositionRoles[Engine[0x82C5756563934AE]( f161_arg2, f161_local0 )] then
+		elseif f161_arg2 == Enum.eModes.mode_multiplayer and LuaUtils.IsArenaMode() and CoDLoadoutsShared.ArenaHiddenPositionRoles[Engine[0x82C5756563934AE]( f161_arg2, f161_local0 )] then
 			return false
 		end
 		local f161_local3 = CoD.TeamUtility.GetTeam( f161_arg1 )
@@ -3042,14 +3042,14 @@ DataSources.PositionDraftCharacters = DataSourceHelpers.ListSetup( "PositionDraf
 	 )
 end, nil, nil, nil )
 DataSources.PositionDraftCharactersMPPromo = DataSourceHelpers.ListSetup( "PositionDraftCharactersMPPromo", function ( f162_arg0, f162_arg1 )
-	local f162_local0 = Enum.eModes[0x83EBA96F36BC4E5]
+	local f162_local0 = Enum.eModes.mode_multiplayer
 	local f162_local1 = CoD.PlayerRoleUtility.GetHeroList( f162_local0 )
 	local f162_local2 = CoD.SafeGetModelValue( Engine.GetModelForController( f162_arg0 ), "PositionEditLoadout.SelectedCharacterIndex" )
 	f162_arg1.persistSelectedIndex = true
 	return CoD.PlayerRoleUtility.GetPlayerRolesListHelper( f162_arg1, f162_arg0, f162_local0, function ( f163_arg0, f163_arg1, f163_arg2, f163_arg3, f163_arg4 )
 		local f163_local0 = f163_arg4.models.characterIndex
 		local f163_local1 = LobbyData.GetCurrentMenuTarget()
-		if (f163_local1["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT()) and f163_local0 ~= f162_local2 then
+		if (f163_local1.id == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT()) and f163_local0 ~= f162_local2 then
 			return false
 		else
 			local f163_local2 = CoD.BlackMarketTableUtility[0x21632E84A5AAF71]( f163_arg4.models.assetName )
@@ -3352,7 +3352,7 @@ CoD.PlayerRoleUtility.UpdatePositionDraftClients = function ( f170_arg0 )
 end
 
 CoD.PlayerRoleUtility.GetPlayerNameForPositionDraftCharacter = function ( f173_arg0, f173_arg1, f173_arg2 )
-	local f173_local0 = Dvar[0x5A2E5EE8014325D]:get()
+	local f173_local0 = Dvar.com_maxclients:get()
 	for f173_local1 = 0, f173_local0 - 1, 1 do
 		local f173_local4 = Engine[0xE4D2F32833CFA6C]( f173_local1 )
 		if f173_local4.characterIndex:get() == f173_arg1 and f173_local4.team:get() == f173_arg2 then
@@ -3364,14 +3364,14 @@ end
 
 CoD.PlayerRoleUtility.UpdatePositionDraftCharacters = function ( f174_arg0 )
 	local f174_local0 = Engine.CurrentSessionMode()
-	if f174_local0 == Enum.eModes[0xB22E0240605CFFE] then
+	if f174_local0 == Enum.eModes.mode_invalid then
 		return 
 	end
 	local f174_local1 = CoD.PlayerRoleUtility.GetHeroListSorted( f174_local0 )
 	local f174_local2 = Engine.GetGametypeSettings()
 	f174_local2 = f174_local2.maxUniqueRolesPerTeam
 	local f174_local3 = CoD.TeamUtility.GetTeam( f174_arg0 )
-	local f174_local4 = Dvar[0x5A2E5EE8014325D]:get()
+	local f174_local4 = Dvar.com_maxclients:get()
 	local f174_local5 = {}
 	local f174_local6 = {}
 	for f174_local7 = 0, f174_local4 - 1, 1 do
@@ -3390,7 +3390,7 @@ CoD.PlayerRoleUtility.UpdatePositionDraftCharacters = function ( f174_arg0 )
 	local f174_local7 = 1
 	for f174_local10, f174_local11 in ipairs( f174_local1 ) do
 		local f174_local13 = false
-		if f174_local0 == Enum.eModes[0x83EBA96F36BC4E5] and LuaUtils.IsArenaMode() and CoDLoadoutsShared.ArenaHiddenPositionRoles[Engine[0x82C5756563934AE]( f174_local0, f174_local11.bodyIndex )] then
+		if f174_local0 == Enum.eModes.mode_multiplayer and LuaUtils.IsArenaMode() and CoDLoadoutsShared.ArenaHiddenPositionRoles[Engine[0x82C5756563934AE]( f174_local0, f174_local11.bodyIndex )] then
 			f174_local13 = true
 		end
 		if not f174_local13 then
@@ -3515,7 +3515,7 @@ CoD.PlayerRoleUtility.IsRoleBMLocked = function ( f184_arg0, f184_arg1, f184_arg
 		local f184_local1 = f184_local0[0xA01F4246639318C]
 		if f184_local1 and IsIntDvarNonZero( f184_local1 ) then
 			return false
-		elseif f184_local0[0x1D6157DBA773DA3] ~= nil and f184_local0[0x1D6157DBA773DA3] ~= 0x0 then
+		elseif f184_local0[0x1D6157DBA773DA3] ~= nil and f184_local0[0x1D6157DBA773DA3] ~= "" then
 			return not CoDShared.IsNotLootItemOrIsOwnedById( f184_arg0, f184_local0[0x1D6157DBA773DA3] )
 		end
 	end
@@ -3662,22 +3662,22 @@ CoD.PlayerRoleUtility.PositionDraftPostLoad = function ( f192_arg0, f192_arg1 )
 			f194_local2 = ""
 		end
 		if f194_local1 == CoD.PlayerRoleUtility.DraftStage.DRAFT_STAGE_DRAFT and f194_local0 > 5 and f194_local2 ~= "" then
-			Engine.PlaySound( f194_local2, f192_arg1 )
+			Engine.playsound( f194_local2, f192_arg1 )
 		end
 		if f194_local1 == CoD.PlayerRoleUtility.DraftStage.DRAFT_STAGE_GAME_START or f194_local1 == CoD.PlayerRoleUtility.DraftStage.DRAFT_STAGE_DRAFT then
 			if f194_local0 == 5 then
 				if CoD.isPC then
 					CoD.PCUtility.FlashWindowDefault()
 				end
-				Engine.PlaySound( "uin_timer_5", f192_arg1 )
+				Engine.playsound( "uin_timer_5", f192_arg1 )
 			elseif f194_local0 == 4 then
-				Engine.PlaySound( "uin_timer_4", f192_arg1 )
+				Engine.playsound( "uin_timer_4", f192_arg1 )
 			elseif f194_local0 == 3 then
-				Engine.PlaySound( "uin_timer_3", f192_arg1 )
+				Engine.playsound( "uin_timer_3", f192_arg1 )
 			elseif f194_local0 == 2 then
-				Engine.PlaySound( "uin_timer_2", f192_arg1 )
+				Engine.playsound( "uin_timer_2", f192_arg1 )
 			elseif f194_local0 == 1 then
-				Engine.PlaySound( "uin_timer_1", f192_arg1 )
+				Engine.playsound( "uin_timer_1", f192_arg1 )
 			end
 		end
 		if f194_local1 == CoD.PlayerRoleUtility.DraftStage.DRAFT_STAGE_GAME_START and f194_local0 == 1 then

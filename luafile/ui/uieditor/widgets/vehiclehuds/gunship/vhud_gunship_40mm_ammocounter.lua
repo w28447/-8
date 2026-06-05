@@ -22,9 +22,9 @@ CoD.vhud_gunship_40mm_ammocounter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.BackingFrame = BackingFrame
 	
 	local AmmoCounterInternal = CoD.vhud_gunship_ammo_count_internal.new( f1_arg0, f1_arg1, 0.5, 0.5, -39, 41, 0.4, 0.4, -19, 27 )
-	AmmoCounterInternal.ammoBack:setImage( RegisterImage( 0x484DB9CB2A7C17A ) )
+	AmmoCounterInternal.ammoBack:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_40mm_icon" ) )
 	AmmoCounterInternal.ammoBack:setShaderVector( 0, 4, 1, 0, 0 )
-	AmmoCounterInternal.ammoFront:setImage( RegisterImage( 0x484DB9CB2A7C17A ) )
+	AmmoCounterInternal.ammoFront:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_40mm_icon" ) )
 	AmmoCounterInternal.ammoFront:setShaderVector( 0, 4, 1, 0, 0 )
 	AmmoCounterInternal.ammoFront.__ammoFront_Wipe_X_Start_X_End_Y_Start_Y_End = function ( f3_arg0 )
 		local f3_local0 = f3_arg0:get()

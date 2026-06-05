@@ -11,21 +11,21 @@ CoD.WeaponLevelUpTitleArrows.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local TriangleLarge = LUI.UIImage.new( 0, 0, 0, 9, 0, 0, 0, 9 )
 	TriangleLarge:setRGB( 0.12, 0.12, 0.12 )
 	TriangleLarge:setAlpha( 0.5 )
-	TriangleLarge:setImage( RegisterImage( 0x364733EAB56D9B5 ) )
+	TriangleLarge:setImage( RegisterImage( "uie_ui_hud_notifications_triangle" ) )
 	self:addElement( TriangleLarge )
 	self.TriangleLarge = TriangleLarge
 	
 	local TriangleMedium = LUI.UIImage.new( 0, 0, 9.5, 16.5, 0, 0, 1, 8 )
 	TriangleMedium:setRGB( 0.12, 0.12, 0.12 )
 	TriangleMedium:setAlpha( 0.5 )
-	TriangleMedium:setImage( RegisterImage( 0x364733EAB56D9B5 ) )
+	TriangleMedium:setImage( RegisterImage( "uie_ui_hud_notifications_triangle" ) )
 	self:addElement( TriangleMedium )
 	self.TriangleMedium = TriangleMedium
 	
 	local TriangleSmall = LUI.UIImage.new( 0, 0, 17, 21, 0, 0, 2.5, 6.5 )
 	TriangleSmall:setRGB( 0.12, 0.12, 0.12 )
 	TriangleSmall:setAlpha( 0.5 )
-	TriangleSmall:setImage( RegisterImage( 0x364733EAB56D9B5 ) )
+	TriangleSmall:setImage( RegisterImage( "uie_ui_hud_notifications_triangle" ) )
 	self:addElement( TriangleSmall )
 	self.TriangleSmall = TriangleSmall
 	

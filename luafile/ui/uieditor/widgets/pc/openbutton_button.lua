@@ -13,7 +13,7 @@ CoD.OpenButton_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local Text = LUI.UIText.new( 0, 1, 8, -8, 0.5, 0.5, -9, 9 )
 	Text:setRGB( 0.76, 0.76, 0.76 )
-	Text:setText( LocalizeToUpperString( 0x68F4DC4AFAA11C3 ) )
+	Text:setText( LocalizeToUpperString( "menu/edit" ) )
 	Text:setTTF( "ttmussels_regular" )
 	Text:setLetterSpacing( 2 )
 	Text:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

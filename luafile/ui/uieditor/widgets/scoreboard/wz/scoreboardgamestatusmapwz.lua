@@ -16,7 +16,7 @@ CoD.ScoreboardGameStatusMapWZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.minimapBacking = minimapBacking
 	
 	local MinimapFogOfWar = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	MinimapFogOfWar:setImage( RegisterImage( 0x6B3F6C9FC7AEC8A ) )
+	MinimapFogOfWar:setImage( RegisterImage( "uie_hud_mp_minimap_fogofwar_range" ) )
 	MinimapFogOfWar:setMaterial( LUI.UIImage.GetCachedMaterial( 0xACA98D41A38E390 ) )
 	MinimapFogOfWar:setShaderVector( 0, 1, 0.1, 0.05, 0 )
 	MinimapFogOfWar:setupCompassFog( Enum.CompassType[0x72D54007C707EBC] )
@@ -26,7 +26,7 @@ CoD.ScoreboardGameStatusMapWZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local MinimapFogOfWarEnemyTearing = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	MinimapFogOfWarEnemyTearing:setImage( RegisterImage( 0x706DFCD9F680830 ) )
-	MinimapFogOfWarEnemyTearing:setMaterial( LUI.UIImage.GetCachedMaterial( 0x72987F9CD841ED7 ) )
+	MinimapFogOfWarEnemyTearing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_animated" ) )
 	MinimapFogOfWarEnemyTearing:setShaderVector( 0, 5, 1, 0, 0 )
 	MinimapFogOfWarEnemyTearing:setShaderVector( 1, 0, 0, 0, 0 )
 	MinimapFogOfWarEnemyTearing:setupCompassEnemyTearingFog( Enum.CompassType[0x72D54007C707EBC] )

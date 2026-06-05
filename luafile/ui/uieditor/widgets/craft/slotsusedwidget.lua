@@ -90,12 +90,12 @@ CoD.SlotsUsedWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.usedBar = usedBar
 	
 	local alertTriangle = LUI.UIImage.new( 0, 0, 2, 26, 0, 0, 68, 92 )
-	alertTriangle:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
+	alertTriangle:setImage( RegisterImage( "warning_triangle" ) )
 	self:addElement( alertTriangle )
 	self.alertTriangle = alertTriangle
 	
 	local alertText = LUI.UIText.new( 0, 0, 32, 392, 0, 0, 72, 92 )
-	alertText:setText( LocalizeToUpperString( 0x95FC5A9464AA5D4 ) )
+	alertText:setText( LocalizeToUpperString( "menu/slots_full" ) )
 	alertText:setTTF( "default" )
 	alertText:setLetterSpacing( 1 )
 	alertText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -182,7 +182,7 @@ CoD.SlotsUsedWidget.__resetProperties = function ( f11_arg0 )
 	f11_arg0.HeaderStripe:completeAnimation()
 	f11_arg0.alertText:setRGB( 1, 1, 1 )
 	f11_arg0.alertText:setAlpha( 1 )
-	f11_arg0.alertText:setText( LocalizeToUpperString( 0x95FC5A9464AA5D4 ) )
+	f11_arg0.alertText:setText( LocalizeToUpperString( "menu/slots_full" ) )
 	f11_arg0.alertTriangle:setRGB( 1, 1, 1 )
 	f11_arg0.alertTriangle:setAlpha( 1 )
 	f11_arg0.Title:setAlpha( 1 )
@@ -269,7 +269,7 @@ CoD.SlotsUsedWidget.__clipsPerState = {
 			f14_arg0.clipFinished( f14_arg0.alertTriangle )
 			f14_arg0.alertText:completeAnimation()
 			f14_arg0.alertText:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
-			f14_arg0.alertText:setText( LocalizeToUpperString( 0x96DFD614CED6C49 ) )
+			f14_arg0.alertText:setText( LocalizeToUpperString( "menu/slots_low" ) )
 			f14_arg0.clipFinished( f14_arg0.alertText )
 		end
 	},

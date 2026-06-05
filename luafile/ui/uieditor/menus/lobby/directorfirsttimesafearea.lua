@@ -63,76 +63,76 @@ LUI.createMenu.DirectorFirstTimeSafeArea = function ( f1_arg0, f1_arg1 )
 			end
 		}
 	} )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		DispatchEventToRoot( f4_arg0, "update_safe_area", f4_arg2 )
-		GoBack( self, f4_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		DispatchEventToRoot( element, "update_safe_area", controller )
+		GoBack( self, controller )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		DispatchEventToRoot( f6_arg0, "update_safe_area", f6_arg2 )
-		CoD.LobbyUtility.CompleteFirstTimeSafeArea( f6_arg1, f6_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		DispatchEventToRoot( element, "update_safe_area", controller )
+		CoD.LobbyUtility.CompleteFirstTimeSafeArea( menu, controller )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x57783F8DA4AAEF], "ui_navleft", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x57783F8DA4AAEF], "ui_navleft", function ( element, menu, controller, model )
 		if IsPC() then
-			DecreaseSafeAreaHorizontal( self, f8_arg0, f8_arg2, "HUDBoundsTweakable_horizontal", CoD.SafeArea.AdjustAmount )
-			DispatchEventToChildren( f8_arg0, "update_safe_area", f8_arg2 )
+			DecreaseSafeAreaHorizontal( self, element, controller, "HUDBoundsTweakable_horizontal", CoD.SafeArea.AdjustAmount )
+			DispatchEventToChildren( element, "update_safe_area", controller )
 			return true
 		else
-			DecreaseSafeAreaHorizontal( self, f8_arg0, f8_arg2, "safeAreaTweakable_horizontal", CoD.SafeArea.AdjustAmount )
-			DispatchEventToChildren( self, "update_safe_area", f8_arg2 )
+			DecreaseSafeAreaHorizontal( self, element, controller, "safeAreaTweakable_horizontal", CoD.SafeArea.AdjustAmount )
+			DispatchEventToChildren( self, "update_safe_area", controller )
 			return true
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x57783F8DA4AAEF], 0x0, nil, "ui_navleft" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x57783F8DA4AAEF], "", nil, "ui_navleft" )
 		return false
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x4B11D2B20C75A7F], "ui_navup", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x4B11D2B20C75A7F], "ui_navup", function ( element, menu, controller, model )
 		if IsPC() then
-			IncreaseSafeAreaVertical( self, f10_arg0, f10_arg2, "HUDBoundsTweakable_vertical", CoD.SafeArea.AdjustAmount )
-			DispatchEventToChildren( f10_arg0, "update_safe_area", f10_arg2 )
+			IncreaseSafeAreaVertical( self, element, controller, "HUDBoundsTweakable_vertical", CoD.SafeArea.AdjustAmount )
+			DispatchEventToChildren( element, "update_safe_area", controller )
 			return true
 		else
-			IncreaseSafeAreaVertical( self, f10_arg0, f10_arg2, "safeAreaTweakable_vertical", CoD.SafeArea.AdjustAmount )
-			DispatchEventToChildren( self, "update_safe_area", f10_arg2 )
+			IncreaseSafeAreaVertical( self, element, controller, "safeAreaTweakable_vertical", CoD.SafeArea.AdjustAmount )
+			DispatchEventToChildren( self, "update_safe_area", controller )
 			return true
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x4B11D2B20C75A7F], 0x0, nil, "ui_navup" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4B11D2B20C75A7F], "", nil, "ui_navup" )
 		return false
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x571F08AD84807E0], "ui_navright", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x571F08AD84807E0], "ui_navright", function ( element, menu, controller, model )
 		if IsPC() then
-			IncreaseSafeAreaHorizontal( self, f12_arg0, f12_arg2, "HUDBoundsTweakable_horizontal", CoD.SafeArea.AdjustAmount )
-			DispatchEventToChildren( f12_arg0, "update_safe_area", f12_arg2 )
+			IncreaseSafeAreaHorizontal( self, element, controller, "HUDBoundsTweakable_horizontal", CoD.SafeArea.AdjustAmount )
+			DispatchEventToChildren( element, "update_safe_area", controller )
 			return true
 		else
-			IncreaseSafeAreaHorizontal( self, f12_arg0, f12_arg2, "safeAreaTweakable_horizontal", CoD.SafeArea.AdjustAmount )
-			DispatchEventToChildren( self, "update_safe_area", f12_arg2 )
+			IncreaseSafeAreaHorizontal( self, element, controller, "safeAreaTweakable_horizontal", CoD.SafeArea.AdjustAmount )
+			DispatchEventToChildren( self, "update_safe_area", controller )
 			return true
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x571F08AD84807E0], 0x0, nil, "ui_navright" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x571F08AD84807E0], "", nil, "ui_navright" )
 		return false
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD4C15FE32148D3A], "ui_navdown", function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD4C15FE32148D3A], "ui_navdown", function ( element, menu, controller, model )
 		if IsPC() then
-			DecreaseSafeAreaVertical( self, f14_arg0, f14_arg2, "HUDBoundsTweakable_vertical", CoD.SafeArea.AdjustAmount )
-			DispatchEventToChildren( f14_arg0, "update_safe_area", f14_arg2 )
+			DecreaseSafeAreaVertical( self, element, controller, "HUDBoundsTweakable_vertical", CoD.SafeArea.AdjustAmount )
+			DispatchEventToChildren( element, "update_safe_area", controller )
 			return true
 		else
-			DecreaseSafeAreaVertical( self, f14_arg0, f14_arg2, "safeAreaTweakable_vertical", CoD.SafeArea.AdjustAmount )
-			DispatchEventToChildren( self, "update_safe_area", f14_arg2 )
+			DecreaseSafeAreaVertical( self, element, controller, "safeAreaTweakable_vertical", CoD.SafeArea.AdjustAmount )
+			DispatchEventToChildren( self, "update_safe_area", controller )
 			return true
 		end
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0xD4C15FE32148D3A], 0x0, nil, "ui_navdown" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD4C15FE32148D3A], "", nil, "ui_navdown" )
 		return false
 	end, false )
 	emptyFocusable.id = "emptyFocusable"

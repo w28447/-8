@@ -87,43 +87,43 @@ CoD.SupplyChainContentImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		{
 			stateName = "CallingCard",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "category", 0xA1163B4DB78960A )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "category", "mpui/bm_bribe_callingcard" )
 			end
 		},
 		{
 			stateName = "OutfitPalette",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xDD691088352B680 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "palette" )
 			end
 		},
 		{
 			stateName = "OutfitWarpaint",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xFB8B65946FBF7A2 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "war_paint" )
 			end
 		},
 		{
 			stateName = "SignatureWeapon",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xCC13B0F8EEFF726 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "signature_weapon" )
 			end
 		},
 		{
 			stateName = "OutfitWarpaintBundle",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0x48B82A2276A1CAF )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "war_paint_bundle" )
 			end
 		},
 		{
 			stateName = "OutfitBundle",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xC398D8E22A2269B )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "outfit_bundle" )
 			end
 		},
 		{
 			stateName = "Character",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0x2D79C9016401F0 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "character" )
 			end
 		}
 	} )

@@ -1,11 +1,11 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_summer_lenseflare" )
 
-CoD[0xD8E26CF160AEA12] = InheritFrom( LUI.UIElement )
-CoD[0xD8E26CF160AEA12].__defaultWidth = 960
-CoD[0xD8E26CF160AEA12].__defaultHeight = 240
-CoD[0xD8E26CF160AEA12].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_summer = InheritFrom( LUI.UIElement )
+CoD.callingcards_summer.__defaultWidth = 960
+CoD.callingcards_summer.__defaultHeight = 240
+CoD.callingcards_summer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0xD8E26CF160AEA12] )
+	self:setClass( CoD.callingcards_summer )
 	self.id = "CallingCards_Summer"
 	self.soundSet = "none"
 	f1_arg0:addElementToPendingUpdateStateList( self )
@@ -16,12 +16,12 @@ CoD[0xD8E26CF160AEA12].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.background = background
 	
 	local ruin = LUI.UIImage.new( 0, 0, 127, 767, 0, 0, 7, 327 )
-	ruin:setImage( RegisterImage( 0xC313941C75A6C44 ) )
+	ruin:setImage( RegisterImage( "uie_ui_icon_callingcards_summer_ruin" ) )
 	self:addElement( ruin )
 	self.ruin = ruin
 	
 	local duck = LUI.UIImage.new( 0, 0, 416, 480, 0, 0, 130, 226 )
-	duck:setImage( RegisterImage( 0xC88F9EE695EC29B ) )
+	duck:setImage( RegisterImage( "uie_ui_icon_callingcards_summer_duck" ) )
 	self:addElement( duck )
 	self.duck = duck
 	
@@ -31,7 +31,7 @@ CoD[0xD8E26CF160AEA12].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.legs = legs
 	
 	local drink = LUI.UIImage.new( 0, 0, 682, 986, 0, 0, 26, 330 )
-	drink:setImage( RegisterImage( 0x4B655E19C35695C ) )
+	drink:setImage( RegisterImage( "uie_ui_icon_callingcards_summer_drink" ) )
 	self:addElement( drink )
 	self.drink = drink
 	
@@ -48,7 +48,7 @@ CoD[0xD8E26CF160AEA12].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0xD8E26CF160AEA12].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_summer.__resetProperties = function ( f2_arg0 )
 	f2_arg0.ruin:completeAnimation()
 	f2_arg0.duck:completeAnimation()
 	f2_arg0.legs:completeAnimation()
@@ -68,7 +68,7 @@ CoD[0xD8E26CF160AEA12].__resetProperties = function ( f2_arg0 )
 	f2_arg0.lenseflare:setScale( 1, 1 )
 end
 
-CoD[0xD8E26CF160AEA12].__clipsPerState = {
+CoD.callingcards_summer.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -170,7 +170,7 @@ CoD[0xD8E26CF160AEA12].__clipsPerState = {
 		end
 	}
 }
-CoD[0xD8E26CF160AEA12].__onClose = function ( f14_arg0 )
+CoD.callingcards_summer.__onClose = function ( f14_arg0 )
 	f14_arg0.lenseflare:close()
 end
 

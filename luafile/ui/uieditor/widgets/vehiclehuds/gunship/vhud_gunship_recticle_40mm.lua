@@ -9,7 +9,7 @@ CoD.vhud_gunship_recticle_40mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local reticle40InnerBox = LUI.UIImage.new( 0, 0, 172, 266, 0, 0, 170, 264 )
-	reticle40InnerBox:setImage( RegisterImage( 0xE40AD78B35D221C ) )
+	reticle40InnerBox:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_40_inner_box" ) )
 	reticle40InnerBox:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	reticle40InnerBox:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( reticle40InnerBox )
@@ -20,14 +20,14 @@ CoD.vhud_gunship_recticle_40mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	reticle40InnerBox2:setAlpha( 0.9 )
 	reticle40InnerBox2:setZRot( 45 )
 	reticle40InnerBox2:setScale( 0.4, 0.4 )
-	reticle40InnerBox2:setImage( RegisterImage( 0xE40AD78B35D221C ) )
+	reticle40InnerBox2:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_40_inner_box" ) )
 	reticle40InnerBox2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	reticle40InnerBox2:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( reticle40InnerBox2 )
 	self.reticle40InnerBox2 = reticle40InnerBox2
 	
 	local reticle40InnerDots = LUI.UIImage.new( 0, 0, 191, 247, 0, 0, 189, 245 )
-	reticle40InnerDots:setImage( RegisterImage( 0x4F843497C67FAAF ) )
+	reticle40InnerDots:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_40_inner_dots" ) )
 	reticle40InnerDots:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	reticle40InnerDots:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( reticle40InnerDots )
@@ -35,47 +35,47 @@ CoD.vhud_gunship_recticle_40mm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local reticle40InnerLineT = LUI.UIImage.new( 0, 0, 137.5, 301.5, 0, 0, 81.5, 107.5 )
 	reticle40InnerLineT:setZRot( 90 )
-	reticle40InnerLineT:setImage( RegisterImage( 0x23F9307240E28C1 ) )
+	reticle40InnerLineT:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_40_inner_line" ) )
 	self:addElement( reticle40InnerLineT )
 	self.reticle40InnerLineT = reticle40InnerLineT
 	
 	local reticle40InnerLineR = LUI.UIImage.new( 0, 0, 259.5, 423.5, 0, 0, 204, 230 )
-	reticle40InnerLineR:setImage( RegisterImage( 0x23F9307240E28C1 ) )
+	reticle40InnerLineR:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_40_inner_line" ) )
 	self:addElement( reticle40InnerLineR )
 	self.reticle40InnerLineR = reticle40InnerLineR
 	
 	local reticle40InnerLineL = LUI.UIImage.new( 0, 0, 15, 179, 0, 0, 204, 230 )
 	reticle40InnerLineL:setZRot( 180 )
-	reticle40InnerLineL:setImage( RegisterImage( 0x23F9307240E28C1 ) )
+	reticle40InnerLineL:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_40_inner_line" ) )
 	self:addElement( reticle40InnerLineL )
 	self.reticle40InnerLineL = reticle40InnerLineL
 	
 	local reticle40InnerLineB = LUI.UIImage.new( 0, 0, 137, 301, 0, 0, 326.5, 352.5 )
 	reticle40InnerLineB:setZRot( 270 )
-	reticle40InnerLineB:setImage( RegisterImage( 0x23F9307240E28C1 ) )
+	reticle40InnerLineB:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_40_inner_line" ) )
 	self:addElement( reticle40InnerLineB )
 	self.reticle40InnerLineB = reticle40InnerLineB
 	
 	local reticle40outerBR = LUI.UIImage.new( 0, 0, 409.5, 437.5, 0, 0, 408, 436 )
-	reticle40outerBR:setImage( RegisterImage( 0x9D07F50408DB4FD ) )
+	reticle40outerBR:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_40_outer" ) )
 	self:addElement( reticle40outerBR )
 	self.reticle40outerBR = reticle40outerBR
 	
 	local reticle40outerBR2 = LUI.UIImage.new( 0, 0, 3, 31, 0, 0, 0, 28 )
 	reticle40outerBR2:setZRot( 180 )
-	reticle40outerBR2:setImage( RegisterImage( 0x9D07F50408DB4FD ) )
+	reticle40outerBR2:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_40_outer" ) )
 	self:addElement( reticle40outerBR2 )
 	self.reticle40outerBR2 = reticle40outerBR2
 	
 	local reticle40outerBL = LUI.UIImage.new( 0, 0, 0, 28, 0, 0, 408, 436 )
 	reticle40outerBL:setZRot( 270 )
-	reticle40outerBL:setImage( RegisterImage( 0x9D07F50408DB4FD ) )
+	reticle40outerBL:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_40_outer" ) )
 	self:addElement( reticle40outerBL )
 	self.reticle40outerBL = reticle40outerBL
 	
 	local reticle40outerTR = LUI.UIImage.new( 0, 0, 409.5, 437.5, 0, 0, 0, 28 )
 	reticle40outerTR:setZRot( 90 )
-	reticle40outerTR:setImage( RegisterImage( 0x9D07F50408DB4FD ) )
+	reticle40outerTR:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_reticle_40_outer" ) )
 	self:addElement( reticle40outerTR )
 	self.reticle40outerTR = reticle40outerTR
 	

@@ -10,27 +10,27 @@ CoD.Challenges_PercentCompleteWidget_LG.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local CompleteImage = LUI.UIImage.new( 0, 1, -24, 24, 0, 1, -24, 24 )
 	CompleteImage:setAlpha( 0 )
-	CompleteImage:setImage( RegisterImage( 0xBFD3F2DDDC476B1 ) )
+	CompleteImage:setImage( RegisterImage( "uie_t7_menu_challenges_complete_icon" ) )
 	self:addElement( CompleteImage )
 	self.CompleteImage = CompleteImage
 	
 	local BackgroundRing = LUI.UIImage.new( 0, 1, -24, 24, 0, 1, -24, 24 )
 	BackgroundRing:setRGB( 0.36, 0.36, 0.36 )
 	BackgroundRing:setAlpha( 0.35 )
-	BackgroundRing:setImage( RegisterImage( 0x47AA86BE90A2F0C ) )
+	BackgroundRing:setImage( RegisterImage( "uie_t7_menu_aar_whiteringback" ) )
 	self:addElement( BackgroundRing )
 	self.BackgroundRing = BackgroundRing
 	
 	local CrossLines = LUI.UIImage.new( 0.5, 0.5, -144, 144, 0.5, 0.5, -144, 144 )
 	CrossLines:setRGB( 0.36, 0.36, 0.36 )
 	CrossLines:setAlpha( 0.35 )
-	CrossLines:setImage( RegisterImage( 0xC22CB98493B489B ) )
+	CrossLines:setImage( RegisterImage( "uie_t7_menu_challenges_crosslines" ) )
 	self:addElement( CrossLines )
 	self.CrossLines = CrossLines
 	
 	local percentCompleteCircle = LUI.UIImage.new( 0, 1, -24, 24, 0, 1, -24, 24 )
 	percentCompleteCircle:setRGB( 0.95, 0.91, 0.11 )
-	percentCompleteCircle:setImage( RegisterImage( 0xF00B924BA10A94C ) )
+	percentCompleteCircle:setImage( RegisterImage( "uie_t7_menu_aar_whiteringthin" ) )
 	percentCompleteCircle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	percentCompleteCircle:setShaderVector( 1, 0.5, 0, 0, 0 )
 	percentCompleteCircle:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -71,7 +71,7 @@ CoD.Challenges_PercentCompleteWidget_LG.new = function ( f1_arg0, f1_arg1, f1_ar
 	self.Name = Name
 	
 	local Icon = LUI.UIImage.new( 0.5, 0.5, -150, 150, 0.5, 0.5, -150, 150 )
-	Icon:setImage( RegisterImage( 0x8F9972AD987B75F ) )
+	Icon:setImage( RegisterImage( "uie_t7_icons_classification_operations" ) )
 	self:addElement( Icon )
 	self.Icon = Icon
 	
@@ -114,7 +114,7 @@ CoD.Challenges_PercentCompleteWidget_LG.__resetProperties = function ( f6_arg0 )
 	f6_arg0.CompleteImage:setLeftRight( 0, 1, -24, 24 )
 	f6_arg0.CompleteImage:setTopBottom( 0, 1, -24, 24 )
 	f6_arg0.CompleteImage:setAlpha( 0 )
-	f6_arg0.CompleteImage:setImage( RegisterImage( 0xBFD3F2DDDC476B1 ) )
+	f6_arg0.CompleteImage:setImage( RegisterImage( "uie_t7_menu_challenges_complete_icon" ) )
 	f6_arg0.percentText:setLeftRight( 0.5, 0.5, -120, 118 )
 	f6_arg0.percentText:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	f6_arg0.percentText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -136,7 +136,7 @@ CoD.Challenges_PercentCompleteWidget_LG.__clipsPerState = {
 			f8_arg0.CompleteImage:setLeftRight( 0, 0, 3, 93 )
 			f8_arg0.CompleteImage:setTopBottom( 0, 0, 306, 396 )
 			f8_arg0.CompleteImage:setAlpha( 1 )
-			f8_arg0.CompleteImage:setImage( RegisterImage( 0xDF21E31DF98CD9E ) )
+			f8_arg0.CompleteImage:setImage( RegisterImage( "ui_icon_challenges_complete_large" ) )
 			f8_arg0.clipFinished( f8_arg0.CompleteImage )
 			f8_arg0.BackgroundRing:completeAnimation()
 			f8_arg0.BackgroundRing:setAlpha( 0 )

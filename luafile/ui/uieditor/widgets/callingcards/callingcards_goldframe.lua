@@ -9,15 +9,15 @@ CoD.CallingCards_GoldFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local frame = LUI.UIImage.new( 0, 0, 0, 720, 0, 0, 0, 180 )
-	frame:setImage( RegisterImage( 0x5FDC32CEFECF7B ) )
-	frame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
+	frame:setImage( RegisterImage( "uie_t7_callingcard_goldframe" ) )
+	frame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_blend" ) )
 	self:addElement( frame )
 	self.frame = frame
 	
 	local frameglint = LUI.UIImage.new( 0, 0, 0, 720, 0, 0, 0, 180 )
 	frameglint:setRGB( 1, 0.67, 0.32 )
-	frameglint:setImage( RegisterImage( 0x5FDC32CEFECF7B ) )
-	frameglint:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDCEC3F40C67FD03 ) )
+	frameglint:setImage( RegisterImage( "uie_t7_callingcard_goldframe" ) )
+	frameglint:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_glint_reveal" ) )
 	frameglint:setShaderVector( 0, 0.13, 0, 0, 0 )
 	self:addElement( frameglint )
 	self.frameglint = frameglint
@@ -90,7 +90,7 @@ CoD.CallingCards_GoldFrame.__resetProperties = function ( f2_arg0 )
 	f2_arg0.GlowSmallCorner5:completeAnimation()
 	f2_arg0.Glow:completeAnimation()
 	f2_arg0.frameglint:setAlpha( 1 )
-	f2_arg0.frameglint:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDCEC3F40C67FD03 ) )
+	f2_arg0.frameglint:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_glint_reveal" ) )
 	f2_arg0.frameglint:setShaderVector( 0, 0.13, 0, 0, 0 )
 	f2_arg0.GlowSmallCorner2:setAlpha( 1 )
 	f2_arg0.GlowSmallCorner2:setScale( 1, 1 )
@@ -128,7 +128,7 @@ CoD.CallingCards_GoldFrame.__clipsPerState = {
 			
 			f3_arg0.frameglint:completeAnimation()
 			f3_arg0.frameglint:setAlpha( 0.4 )
-			f3_arg0.frameglint:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDCEC3F40C67FD03 ) )
+			f3_arg0.frameglint:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_glint_reveal" ) )
 			f3_arg0.frameglint:setShaderVector( 0, 0, 0, 0, 0 )
 			f3_local0( f3_arg0.frameglint )
 			local f3_local1 = function ( f6_arg0 )

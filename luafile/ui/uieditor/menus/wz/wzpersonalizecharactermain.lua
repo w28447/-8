@@ -43,7 +43,7 @@ LUI.createMenu.WZPersonalizeCharacterMain = function ( f1_arg0, f1_arg1 )
 	
 	local SocialFrame = CoD.GenericMenuFrame.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
 	SocialFrame.CommonHeader.BGSceneBlur:setAlpha( 1 )
-	SocialFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x2AA2EA68ACC2317 ) )
+	SocialFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/personalize_character" ) )
 	SocialFrame:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -100,7 +100,7 @@ LUI.createMenu.WZPersonalizeCharacterMain = function ( f1_arg0, f1_arg1 )
 	
 	local TabBottomLine = LUI.UIImage.new( 0, 0, 80, 900, 0.5, 0.5, -281.5, -277.5 )
 	TabBottomLine:setAlpha( 0.08 )
-	TabBottomLine:setImage( RegisterImage( 0x5526CF3733E24C4 ) )
+	TabBottomLine:setImage( RegisterImage( "uie_ui_menu_common_tab_line_bottom" ) )
 	self:addElement( TabBottomLine )
 	self.TabBottomLine = TabBottomLine
 	
@@ -122,13 +122,13 @@ LUI.createMenu.WZPersonalizeCharacterMain = function ( f1_arg0, f1_arg1 )
 			FrameWidget:changeFrameWidget( f5_local0 )
 		end
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		GoBack( self, f6_arg2 )
-		SendClientScriptMenuChangeNotify( f6_arg2, f6_arg1, false )
-		ClearMenuSavedState( f6_arg1 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
+		GoBack( self, controller )
+		SendClientScriptMenuChangeNotify( controller, menu, false )
+		ClearMenuSavedState( menu )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 		return true
 	end, false )
 	SocialFrame:setModel( self.buttonModel, f1_arg0 )

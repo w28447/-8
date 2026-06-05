@@ -55,7 +55,7 @@ LUI.createMenu.CaseExchangeContractConfirmation = function ( f1_arg0, f1_arg1 )
 	FullscreenPopupTemplate.WorkingTitle:setText( LocalizeToUpperString( "menu/exchange_processing" ) )
 	FullscreenPopupTemplate.Title:setText( LocalizeToUpperString( 0x59139D06DB080E5 ) )
 	FullscreenPopupTemplate.DoneTitle.__Done_Title = function ()
-		FullscreenPopupTemplate.DoneTitle:setText( Engine[0xF9F1239CFD921FE]( CoD.ContractUtility.UseCaseExchangeAndActivateContractCompleteTitleIfNeeded( f1_arg0, 0x456F58A03ED7888 ) ) )
+		FullscreenPopupTemplate.DoneTitle:setText( Engine[0xF9F1239CFD921FE]( CoD.ContractUtility.UseCaseExchangeAndActivateContractCompleteTitleIfNeeded( f1_arg0, "menu/exchange_complete" ) ) )
 	end
 	
 	FullscreenPopupTemplate.DoneTitle.__Done_Title()
@@ -254,46 +254,46 @@ LUI.createMenu.CaseExchangeContractConfirmation = function ( f1_arg0, f1_arg1 )
 	f1_local17 = FullscreenPopupTemplate.subscribeToModel
 	f1_local18 = Engine.GetModelForController( f1_arg0 )
 	f1_local17( f1_local16, f1_local18.purchaseContractNoActivate, FullscreenPopupTemplate.DoneTitle.__Done_Title )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
 		if not IsElementInState( self.FullscreenPopupTemplate, "WorkingState" ) and not IsElementInState( self.FullscreenPopupTemplate, "FinishedState" ) then
-			GoBack( self, f22_arg2 )
+			GoBack( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f23_arg0, f23_arg1, f23_arg2 )
+	end, function ( element, menu, controller )
 		if not IsElementInState( self.FullscreenPopupTemplate, "WorkingState" ) and not IsElementInState( self.FullscreenPopupTemplate, "FinishedState" ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f24_arg0, f24_arg1, f24_arg2, f24_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		if IsElementInState( self.FullscreenPopupTemplate, "FinishedState" ) then
-			DelayCloseAndGoBack( f24_arg1, f24_arg2, 0 )
-			ForceNotifyGlobalModel( f24_arg2, "ContractsForceUpdate" )
-			CoD.BlackMarketUtility.UpdateSunsetPurchasedSlotModel( f24_arg2, self )
+			DelayCloseAndGoBack( menu, controller, 0 )
+			ForceNotifyGlobalModel( controller, "ContractsForceUpdate" )
+			CoD.BlackMarketUtility.UpdateSunsetPurchasedSlotModel( controller, self )
 			return true
 		elseif IsElementInState( self.FullscreenPopupTemplate, "ErrorState" ) then
-			GoBack( self, f24_arg2 )
+			GoBack( self, controller )
 			return true
-		elseif not IsElementInState( self.FullscreenPopupTemplate, "WorkingState" ) and not MenuPropertyIsTrue( f24_arg1, "__keepPopupButtonListPC" ) then
-			CoD.BlackMarketUtility.SetElementWorkingStateAndExchangeLootCases( self.FullscreenPopupTemplate, f24_arg2 )
+		elseif not IsElementInState( self.FullscreenPopupTemplate, "WorkingState" ) and not MenuPropertyIsTrue( menu, "__keepPopupButtonListPC" ) then
+			CoD.BlackMarketUtility.SetElementWorkingStateAndExchangeLootCases( self.FullscreenPopupTemplate, controller )
 			PlaySoundAlias( "uin_points_purchase" )
 			return true
 		else
 			
 		end
-	end, function ( f25_arg0, f25_arg1, f25_arg2 )
+	end, function ( element, menu, controller )
 		if IsElementInState( self.FullscreenPopupTemplate, "FinishedState" ) then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
 			return true
 		elseif IsElementInState( self.FullscreenPopupTemplate, "ErrorState" ) then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/back", nil, nil )
 			return true
-		elseif not IsElementInState( self.FullscreenPopupTemplate, "WorkingState" ) and not MenuPropertyIsTrue( f25_arg1, "__keepPopupButtonListPC" ) then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/purchase", nil, nil )
+		elseif not IsElementInState( self.FullscreenPopupTemplate, "WorkingState" ) and not MenuPropertyIsTrue( menu, "__keepPopupButtonListPC" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/purchase", nil, nil )
 			return true
 		else
 			return false

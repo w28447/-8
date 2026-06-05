@@ -140,7 +140,7 @@ CoD.SelectedClassMiniPreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.ClassMiniPreview = ClassMiniPreview
 	
 	local lightblurbar = LUI.UIImage.new( -0.05, 1.05, 0, 0, 1, 1, -272.5, -256.5 )
-	lightblurbar:setImage( RegisterImage( 0xD844960B6DEFCA1 ) )
+	lightblurbar:setImage( RegisterImage( "uie_ui_menu_draft_barflare" ) )
 	lightblurbar:registerEventHandler( "menu_loaded", function ( element, event )
 		local f8_local0 = nil
 		if element.menuLoaded then

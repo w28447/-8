@@ -9,19 +9,19 @@ CoD.ReservesRerollItemDetails.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local CaseIcon = LUI.UIImage.new( 0.5, 0.5, -75, 75, 0, 0, 0, 150 )
-	CaseIcon:setImage( RegisterImage( 0xD0C0C9F62783A5C ) )
+	CaseIcon:setImage( RegisterImage( "ui_icon_blackmarket_reserves_case_small" ) )
 	self:addElement( CaseIcon )
 	self.CaseIcon = CaseIcon
 	
 	local CrateIcon = LUI.UIImage.new( 0.5, 0.5, -75, 75, 0, 0, 0, 150 )
 	CrateIcon:setAlpha( 0 )
-	CrateIcon:setImage( RegisterImage( 0x1E88A4EE31B2D2F ) )
+	CrateIcon:setImage( RegisterImage( "ui_icon_blackmarket_reserves_crate_small" ) )
 	self:addElement( CrateIcon )
 	self.CrateIcon = CrateIcon
 	
 	local BribeIcon = LUI.UIImage.new( 0.5, 0.5, -142, 142, 0, 0, -22, 130 )
 	BribeIcon:setAlpha( 0 )
-	BribeIcon:setImage( RegisterImage( 0xD552F5197C78202 ) )
+	BribeIcon:setImage( RegisterImage( "uie_t7_blackmarket_crate_bribe_chip" ) )
 	self:addElement( BribeIcon )
 	self.BribeIcon = BribeIcon
 	
@@ -103,7 +103,7 @@ CoD.ReservesRerollItemDetails.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local WeaponBribeTitle = LUI.UIText.new( 0, 0, 0, 250, 0, 0, 155, 178 )
 	WeaponBribeTitle:setAlpha( 0 )
-	WeaponBribeTitle:setText( LocalizeToUpperString( 0xABC9E44852AC644 ) )
+	WeaponBribeTitle:setText( LocalizeToUpperString( "menu/bribes" ) )
 	WeaponBribeTitle:setTTF( "ttmussels_regular" )
 	WeaponBribeTitle:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	WeaponBribeTitle:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -253,7 +253,7 @@ CoD.ReservesRerollItemDetails.__resetProperties = function ( f15_arg0 )
 	f15_arg0.BundleCrateIcon:setAlpha( 0 )
 	f15_arg0.BribeCount:setAlpha( 0 )
 	f15_arg0.BribeIcon:setAlpha( 0 )
-	f15_arg0.BribeIcon:setImage( RegisterImage( 0xD552F5197C78202 ) )
+	f15_arg0.BribeIcon:setImage( RegisterImage( "uie_t7_blackmarket_crate_bribe_chip" ) )
 	f15_arg0.WeaponBribeTitle:setAlpha( 0 )
 	f15_arg0.WeaponBribeTitle:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
 	f15_arg0.NoDupeBribeIcon:setAlpha( 0 )

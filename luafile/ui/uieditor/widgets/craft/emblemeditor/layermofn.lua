@@ -31,7 +31,7 @@ CoD.layermofn.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	self.TiledBackingAdd = TiledBackingAdd
 	
 	local layerMOfN = LUI.UIText.new( 0.5, 0.5, -191, 192, 0.5, 0.5, -12, 13 )
-	layerMOfN:setText( Engine[0xF9F1239CFD921FE]( 0x2769909B839C4BC ) )
+	layerMOfN:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_layer_m_of_n" ) )
 	layerMOfN:setTTF( "ttmussels_regular" )
 	layerMOfN:setLetterSpacing( 2 )
 	layerMOfN:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -41,28 +41,28 @@ CoD.layermofn.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	
 	local DotPipTR = LUI.UIImage.new( 1, 1, -2, 2, 0, 0, -2, 2 )
 	DotPipTR:setAlpha( 0.5 )
-	DotPipTR:setImage( RegisterImage( 0x3854665C02218EF ) )
+	DotPipTR:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame_dot" ) )
 	DotPipTR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPipTR )
 	self.DotPipTR = DotPipTR
 	
 	local DotPipTL = LUI.UIImage.new( 0, 0, -2, 2, 0, 0, -2, 2 )
 	DotPipTL:setAlpha( 0.5 )
-	DotPipTL:setImage( RegisterImage( 0x3854665C02218EF ) )
+	DotPipTL:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame_dot" ) )
 	DotPipTL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPipTL )
 	self.DotPipTL = DotPipTL
 	
 	local DotPipBL = LUI.UIImage.new( 0, 0, -2, 2, 1, 1, -2, 2 )
 	DotPipBL:setAlpha( 0.5 )
-	DotPipBL:setImage( RegisterImage( 0x3854665C02218EF ) )
+	DotPipBL:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame_dot" ) )
 	DotPipBL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPipBL )
 	self.DotPipBL = DotPipBL
 	
 	local DotPipBR = LUI.UIImage.new( 1, 1, -2, 2, 1, 1, -2, 2 )
 	DotPipBR:setAlpha( 0.5 )
-	DotPipBR:setImage( RegisterImage( 0x3854665C02218EF ) )
+	DotPipBR:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame_dot" ) )
 	DotPipBR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPipBR )
 	self.DotPipBR = DotPipBR

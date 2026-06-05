@@ -10,7 +10,7 @@ CoD.DupeMarker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local RerollLabel = LUI.UIText.new( 0, 0, 24.5, 361.5, 0, 0, 2, 20 )
 	RerollLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	RerollLabel:setText( LocalizeToUpperString( 0x7A11286F9FD7520 ) )
+	RerollLabel:setText( LocalizeToUpperString( "ui/reroll_meter" ) )
 	RerollLabel:setTTF( "dinnext_regular" )
 	RerollLabel:setLetterSpacing( 1 )
 	RerollLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -26,7 +26,7 @@ CoD.DupeMarker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local DupeLabel = LUI.UIText.new( 0, 0, 24.5, 361.5, 0, 0, 2, 20 )
 	DupeLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	DupeLabel:setText( LocalizeToUpperString( 0xA75B4742BD9E4D0 ) )
+	DupeLabel:setText( LocalizeToUpperString( "ui/dupe" ) )
 	DupeLabel:setTTF( "dinnext_regular" )
 	DupeLabel:setLetterSpacing( 1 )
 	DupeLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -42,7 +42,7 @@ CoD.DupeMarker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local ReserveLabel = LUI.UIText.new( 0, 0, 24.5, 361.5, 0, 0, 2, 20 )
 	ReserveLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	ReserveLabel:setText( LocalizeToUpperString( 0x27653EDDA8414F2 ) )
+	ReserveLabel:setText( LocalizeToUpperString( "ui/reserve_item" ) )
 	ReserveLabel:setTTF( "dinnext_regular" )
 	ReserveLabel:setLetterSpacing( 1 )
 	ReserveLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -52,7 +52,7 @@ CoD.DupeMarker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local ReserveIcon = LUI.UIImage.new( 0, 0, 0, 20, 0, 0, 0, 20 )
 	ReserveIcon:setRGB( 0.52, 0.6, 0.68 )
-	ReserveIcon:setImage( RegisterImage( 0x3AFA9E5CE99FEDF ) )
+	ReserveIcon:setImage( RegisterImage( "uie_ui_icon_blackmarket_contraband_tier" ) )
 	self:addElement( ReserveIcon )
 	self.ReserveIcon = ReserveIcon
 	

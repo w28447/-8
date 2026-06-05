@@ -116,22 +116,22 @@ CoD.BowLauncherReticle_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.BowLauncherReticleDot = BowLauncherReticleDot
 	
 	WingL = LUI.UIImage.new( -1.31, -1.2, 220, 220, 0.27, 0.5, 34.5, 34.5 )
-	WingL:setImage( RegisterImage( 0x3CE9CF4F5C3D42F ) )
+	WingL:setImage( RegisterImage( "uie_ui_hud_reticles_bowlauncher_wing_l" ) )
 	self:addElement( WingL )
 	self.WingL = WingL
 	
 	WingR = LUI.UIImage.new( -1.08, -0.96, 304, 304, 0.4, 0.63, 12.5, 12.5 )
-	WingR:setImage( RegisterImage( 0x3CE92F4F5C3C331 ) )
+	WingR:setImage( RegisterImage( "uie_ui_hud_reticles_bowlauncher_wing_r" ) )
 	self:addElement( WingR )
 	self.WingR = WingR
 	
 	local DrawLine = LUI.UIImage.new( -1, -0.93, 235, 235, -0.02, 0.13, 12, 12 )
-	DrawLine:setImage( RegisterImage( 0x862D295DBF13568 ) )
+	DrawLine:setImage( RegisterImage( "uie_ui_hud_reticles_bowlauncher_draw_line" ) )
 	self:addElement( DrawLine )
 	self.DrawLine = DrawLine
 	
 	local DrawLine2 = LUI.UIImage.new( -1.02, -0.95, 237, 237, 0.73, 0.88, 12, 12 )
-	DrawLine2:setImage( RegisterImage( 0x862D295DBF13568 ) )
+	DrawLine2:setImage( RegisterImage( "uie_ui_hud_reticles_bowlauncher_draw_line" ) )
 	self:addElement( DrawLine2 )
 	self.DrawLine2 = DrawLine2
 	

@@ -35,14 +35,14 @@ CoD.PC_Achievement_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local PointsInnerGlowBG = LUI.UIImage.new( 1, 1, -69, -11, 0, 1, 11, -11 )
 	PointsInnerGlowBG:setAlpha( 0.01 )
-	PointsInnerGlowBG:setImage( RegisterImage( 0xFC86B798048CDF0 ) )
+	PointsInnerGlowBG:setImage( RegisterImage( "uie_innerglow" ) )
 	self:addElement( PointsInnerGlowBG )
 	self.PointsInnerGlowBG = PointsInnerGlowBG
 	
 	local PointsBorder = LUI.UIImage.new( 1, 1, -69, -11, 0, 1, 11, -11 )
 	PointsBorder:setRGB( 0.38, 0.38, 0.38 )
 	PointsBorder:setAlpha( 0.25 )
-	PointsBorder:setImage( RegisterImage( 0xF1E3082B39E99BB ) )
+	PointsBorder:setImage( RegisterImage( "uie_highlight_border_line" ) )
 	PointsBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	PointsBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	PointsBorder:setupNineSliceShader( 6, 6 )
@@ -75,7 +75,7 @@ CoD.PC_Achievement_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local ProgressBarBorder = LUI.UIImage.new( 0, 1, 110, -80, 0, 1, 11, -11 )
 	ProgressBarBorder:setRGB( 0.19, 0.19, 0.19 )
-	ProgressBarBorder:setImage( RegisterImage( 0xF1E3082B39E99BB ) )
+	ProgressBarBorder:setImage( RegisterImage( "uie_highlight_border_line" ) )
 	ProgressBarBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	ProgressBarBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	ProgressBarBorder:setupNineSliceShader( 6, 6 )
@@ -102,7 +102,7 @@ CoD.PC_Achievement_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Border = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Border:setRGB( 0.8, 0.76, 0.7 )
 	Border:setAlpha( 0.06 )
-	Border:setImage( RegisterImage( 0xF1E3082B39E99BB ) )
+	Border:setImage( RegisterImage( "uie_highlight_border_line" ) )
 	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 6, 6 )
@@ -112,7 +112,7 @@ CoD.PC_Achievement_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Dots = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Dots:setRGB( 0.92, 0.92, 0.92 )
 	Dots:setAlpha( 0.3 )
-	Dots:setImage( RegisterImage( 0xFE4B36304988C2C ) )
+	Dots:setImage( RegisterImage( "uie_highlight_border_dot" ) )
 	Dots:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Dots:setShaderVector( 0, 0, 0, 0, 0 )
 	Dots:setupNineSliceShader( 6, 6 )
@@ -122,7 +122,7 @@ CoD.PC_Achievement_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local AchievementIcon = LUI.UIFixedAspectRatioImage.new( 0, 0, 0, 110, 0.5, 0.5, -45, 45 )
 	AchievementIcon:setRGB( 0.32, 0.32, 0.32 )
 	AchievementIcon:setAlpha( 0.8 )
-	AchievementIcon:setImage( RegisterImage( 0x50537D33096A8CA ) )
+	AchievementIcon:setImage( RegisterImage( "t7_icon_achievement_safehouse_01" ) )
 	self:addElement( AchievementIcon )
 	self.AchievementIcon = AchievementIcon
 	

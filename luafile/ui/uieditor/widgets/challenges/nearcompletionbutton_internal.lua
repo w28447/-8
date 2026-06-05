@@ -41,7 +41,7 @@ CoD.NearCompletionButton_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local CompletedIcon = LUI.UIImage.new( 0.5, 0.5, -110, 110, 0.5, 0.5, -138, 82 )
 	CompletedIcon:setAlpha( 0 )
-	CompletedIcon:setImage( RegisterImage( 0xDF21E31DF98CD9E ) )
+	CompletedIcon:setImage( RegisterImage( "ui_icon_challenges_complete_large" ) )
 	self:addElement( CompletedIcon )
 	self.CompletedIcon = CompletedIcon
 	

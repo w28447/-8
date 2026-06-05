@@ -26,7 +26,7 @@ CoD.MPSpecialistHUBGesturesInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local emblemListBg = LUI.UIImage.new( 0, 0, 209, 1258, 0, 0, 74.5, 919.5 )
 	emblemListBg:setScale( 0.77, 0.77 )
-	emblemListBg:setImage( RegisterImage( 0xCE384B31419E220 ) )
+	emblemListBg:setImage( RegisterImage( "uie_ui_menu_emblem_empty_bg" ) )
 	emblemListBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	emblemListBg:setShaderVector( 0, 0, 0, 0, 0 )
 	emblemListBg:setupNineSliceShader( 212, 212 )
@@ -86,57 +86,57 @@ CoD.MPSpecialistHUBGesturesInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f9_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( gestures, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		if not IsPC() and CoD.ModelUtility.IsSelfModelValueTrue( f10_arg0, f10_arg2, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f10_arg0, f10_arg2, "trialLocked" ) then
+	f1_arg0:AddButtonCallbackFunction( gestures, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not IsPC() and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) then
 			PlaySoundAlias( "uin_main_edit" )
-			CoD.PlayerRoleUtility.BindGestureTagToSlot( f10_arg1, f10_arg0, f10_arg2 )
+			CoD.PlayerRoleUtility.BindGestureTagToSlot( menu, element, controller )
 			return true
-		elseif IsPC() and CoD.ModelUtility.IsSelfModelValueTrue( f10_arg0, f10_arg2, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f10_arg0, f10_arg2, "trialLocked" ) then
-			CoD.PlayerRoleUtility.PreviewGesture( f10_arg1, f10_arg0, f10_arg2, false )
+		elseif IsPC() and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) then
+			CoD.PlayerRoleUtility.PreviewGesture( menu, element, controller, false )
 			PlaySoundAlias( "uin_main_edit" )
-			CoD.PlayerRoleUtility.BindGestureTagToSlot( f10_arg1, f10_arg0, f10_arg2 )
+			CoD.PlayerRoleUtility.BindGestureTagToSlot( menu, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		if not IsPC() and CoD.ModelUtility.IsSelfModelValueTrue( f11_arg0, f11_arg2, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f11_arg0, f11_arg2, "trialLocked" ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if not IsPC() and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif IsPC() and CoD.ModelUtility.IsSelfModelValueTrue( f11_arg0, f11_arg2, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f11_arg0, f11_arg2, "trialLocked" ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif IsPC() and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( gestures, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		if IsGamepad( f12_arg2 ) and CoD.ModelUtility.IsSelfModelValueTrue( f12_arg0, f12_arg2, "available" ) then
+	f1_arg0:AddButtonCallbackFunction( gestures, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if IsGamepad( controller ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "available" ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.PlayerRoleUtility.PreviewGesture( f12_arg1, f12_arg0, f12_arg2, true )
+			CoD.PlayerRoleUtility.PreviewGesture( menu, element, controller, true )
 			return true
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		if IsGamepad( f13_arg2 ) and CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "available" ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0xC083113BC81F23F], "menu/preview", nil, nil )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "available" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/preview", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( gestures, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE2", function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f14_arg0, f14_arg2, "available" ) then
+	f1_arg0:AddButtonCallbackFunction( gestures, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE2", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "available" ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.PlayerRoleUtility.PreviewGesture( f14_arg1, f14_arg0, f14_arg2, true )
+			CoD.PlayerRoleUtility.PreviewGesture( menu, element, controller, true )
 			return true
 		else
 			
 		end
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f15_arg0, f15_arg2, "available" ) then
-			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE2" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "available" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE2" )
 			return false
 		else
 			return false
@@ -188,7 +188,7 @@ CoD.MPSpecialistHUBGesturesInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	DotLineBottom = LUI.UIImage.new( 0, 0, 328, 1139, 0, 0, 852.5, 856.5 )
 	DotLineBottom:setAlpha( 0.4 )
-	DotLineBottom:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	DotLineBottom:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	DotLineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	DotLineBottom:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( DotLineBottom )
@@ -196,7 +196,7 @@ CoD.MPSpecialistHUBGesturesInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local DotLineTop = LUI.UIImage.new( 0, 0, 328, 1139, 0, 0, 154.5, 158.5 )
 	DotLineTop:setAlpha( 0.4 )
-	DotLineTop:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	DotLineTop:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	DotLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	DotLineTop:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( DotLineTop )

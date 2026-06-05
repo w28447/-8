@@ -37,7 +37,7 @@ CoD.SingleScoreNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local ContestedText = LUI.UIText.new( 0, 1, 0, 0, 0, 0, 20, 48 )
 	ContestedText:setAlpha( 0 )
-	ContestedText:setText( Engine[0xF9F1239CFD921FE]( 0xE57B38B7A8EE82E ) )
+	ContestedText:setText( Engine[0xF9F1239CFD921FE]( "menu/waypoint_contested" ) )
 	ContestedText:setTTF( "default" )
 	ContestedText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	ContestedText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

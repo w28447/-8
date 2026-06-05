@@ -14,7 +14,7 @@ CoD.ui_icon_callingcards_fairytales_flames.new = function ( f1_arg0, f1_arg1, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local fire4 = LUI.UIImage.new( 0, 0, 217, 457, 0, 0, -78, 98 )
-	fire4:setImage( RegisterImage( 0x45BCA4F122A2352 ) )
+	fire4:setImage( RegisterImage( "uie_ui_icon_callingcards_fairytale_fire4" ) )
 	fire4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( fire4 )
 	self.fire4 = fire4
@@ -34,13 +34,13 @@ CoD.ui_icon_callingcards_fairytales_flames.new = function ( f1_arg0, f1_arg1, f1
 	self.fire3 = fire3
 	
 	local smoke = LUI.UIImage.new( 0, 0, -239, 65, 0, 0, -107, 117 )
-	smoke:setImage( RegisterImage( 0xDF04F0A3053647 ) )
+	smoke:setImage( RegisterImage( "uie_ui_icon_callingcards_fairytale_smoke" ) )
 	smoke:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( smoke )
 	self.smoke = smoke
 	
 	local embers = LUI.UIImage.new( 0, 0, -351, 97, 0, 0, -161, 231 )
-	embers:setImage( RegisterImage( 0xF7DD7C09334D9B2 ) )
+	embers:setImage( RegisterImage( "uie_ui_icon_callingcards_fairytale_embers" ) )
 	embers:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( embers )
 	self.embers = embers
@@ -48,7 +48,7 @@ CoD.ui_icon_callingcards_fairytales_flames.new = function ( f1_arg0, f1_arg1, f1
 	local embers2 = LUI.UIImage.new( 0, 0, -339, 109, 0, 0, -155.5, 236.5 )
 	embers2:setAlpha( 0.35 )
 	embers2:setScale( 0.8, 0.8 )
-	embers2:setImage( RegisterImage( 0xF7DD7C09334D9B2 ) )
+	embers2:setImage( RegisterImage( "uie_ui_icon_callingcards_fairytale_embers" ) )
 	embers2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( embers2 )
 	self.embers2 = embers2

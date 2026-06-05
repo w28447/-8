@@ -8,7 +8,7 @@ CoD.WZAAR_UnlockedCharacter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.soundSet = "default"
 	
 	local ImageBacker = LUI.UIImage.new( 0.5, 0.5, -216, 216, 0, 0, 27, 367 )
-	ImageBacker:setImage( RegisterImage( 0x1376FA0DA8EADA4 ) )
+	ImageBacker:setImage( RegisterImage( "uie_ui_hud_wz_hud_aar_reward_bg" ) )
 	self:addElement( ImageBacker )
 	self.ImageBacker = ImageBacker
 	
@@ -23,7 +23,7 @@ CoD.WZAAR_UnlockedCharacter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.FixedAspectRatioImage = FixedAspectRatioImage
 	
 	local Box = LUI.UIImage.new( 0.5, 0.5, -214, 214, 0, 0, 331, 487 )
-	Box:setImage( RegisterImage( 0xE8A304F1D38AD4C ) )
+	Box:setImage( RegisterImage( "uie_ui_hud_wz_hud_aar_box_reward" ) )
 	self:addElement( Box )
 	self.Box = Box
 	

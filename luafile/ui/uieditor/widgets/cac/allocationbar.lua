@@ -14,14 +14,14 @@ CoD.AllocationBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	self.dashBacking = dashBacking
 	
 	local dash = LUI.UIImage.new( 0, 0, -8, 24, 0, 0, -8, 24 )
-	dash:setImage( RegisterImage( 0xEEB4FB140EAEAC ) )
+	dash:setImage( RegisterImage( "uie_ui_menu_cac_allocation_pip_full" ) )
 	self:addElement( dash )
 	self.dash = dash
 	
 	local Glow = LUI.UIImage.new( 0, 0, -12.5, 29.5, 0, 0, -28, 45 )
 	Glow:setRGB( 0.88, 0.8, 0.45 )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0x1078C36A022A4FE ) )
+	Glow:setImage( RegisterImage( "uie_t7_menu_cac_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow

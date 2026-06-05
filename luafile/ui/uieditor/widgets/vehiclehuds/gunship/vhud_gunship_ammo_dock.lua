@@ -13,7 +13,7 @@ CoD.vhud_gunship_ammo_dock.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Backing = LUI.UIImage.new( 0, 0, 0, 256, 0, 0, 0, 136 )
-	Backing:setImage( RegisterImage( 0x9734312A977FFBE ) )
+	Backing:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_weapon_bg" ) )
 	self:addElement( Backing )
 	self.Backing = Backing
 	
@@ -64,7 +64,7 @@ CoD.vhud_gunship_ammo_dock.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local AmmoFrameOther = LUI.UIImage.new( 0, 0, 279, 343, 0, 0, 32.5, 78.5 )
 	AmmoFrameOther:setAlpha( 0 )
-	AmmoFrameOther:setImage( RegisterImage( 0x1176D5A9FDE2ACF ) )
+	AmmoFrameOther:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_weapon_frame_other" ) )
 	self:addElement( AmmoFrameOther )
 	self.AmmoFrameOther = AmmoFrameOther
 	

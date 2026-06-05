@@ -86,28 +86,28 @@ CoD.ItemDetailsSunsetPurchaseContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f9_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ItemShopButtonCP, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		if MenuPropertyIsTrue( f10_arg1, "isSunsetPurchaseContractScreen" ) and CanPurchaseItem( f10_arg2, self ) then
-			OpenPopup( self, "PurchaseContractConfirmationSunset", f10_arg2, {
+	f1_arg0:AddButtonCallbackFunction( ItemShopButtonCP, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if MenuPropertyIsTrue( menu, "isSunsetPurchaseContractScreen" ) and CanPurchaseItem( controller, self ) then
+			OpenPopup( self, "PurchaseContractConfirmationSunset", controller, {
 				_model = self:getModel()
 			} )
 			PlaySoundAlias( "uin_press_generic" )
-			CoD.PlayerRoleUtility.StopGesturePreview( f10_arg1, f10_arg2 )
+			CoD.PlayerRoleUtility.StopGesturePreview( menu, controller )
 			return true
-		elseif CanPurchaseItem( f10_arg2, self ) then
-			OpenPopup( self, "ItemShopConfirmation", f10_arg2, {
+		elseif CanPurchaseItem( controller, self ) then
+			OpenPopup( self, "ItemShopConfirmation", controller, {
 				_model = self:getModel()
 			} )
 			PlaySoundAlias( "uin_press_generic" )
-			CoD.PlayerRoleUtility.StopGesturePreview( f10_arg1, f10_arg2 )
+			CoD.PlayerRoleUtility.StopGesturePreview( menu, controller )
 			return true
 		else
-			OpenPopup( self, "PurchaseCodPoints", f10_arg2, f10_arg1:getModel() )
-			CoD.PlayerRoleUtility.StopGesturePreview( f10_arg1, f10_arg2 )
+			OpenPopup( self, "PurchaseCodPoints", controller, menu:getModel() )
+			CoD.PlayerRoleUtility.StopGesturePreview( menu, controller )
 			return true
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( ItemShopButtonCP )
@@ -183,30 +183,30 @@ CoD.ItemDetailsSunsetPurchaseContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f20_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ItemShopButtonCases, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f21_arg0, f21_arg1, f21_arg2, f21_arg3 )
-		if MenuPropertyIsTrue( f21_arg1, "isSunsetPurchaseContractScreen" ) and CoD.BlackMarketUtility.CanExchangeLootCases( f21_arg2, self ) then
-			OpenPopup( self, "CaseExchangeContractConfirmation", f21_arg2, {
+	f1_arg0:AddButtonCallbackFunction( ItemShopButtonCases, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if MenuPropertyIsTrue( menu, "isSunsetPurchaseContractScreen" ) and CoD.BlackMarketUtility.CanExchangeLootCases( controller, self ) then
+			OpenPopup( self, "CaseExchangeContractConfirmation", controller, {
 				_model = self:getModel()
 			} )
 			PlaySoundAlias( "uin_press_generic" )
-			CoD.PlayerRoleUtility.StopGesturePreview( f21_arg1, f21_arg2 )
+			CoD.PlayerRoleUtility.StopGesturePreview( menu, controller )
 			return true
-		elseif CoD.BlackMarketUtility.CanExchangeLootCases( f21_arg2, self ) then
-			OpenPopup( self, "ItemShopCaseExchangeConfirmation", f21_arg2, {
+		elseif CoD.BlackMarketUtility.CanExchangeLootCases( controller, self ) then
+			OpenPopup( self, "ItemShopCaseExchangeConfirmation", controller, {
 				_model = self:getModel()
 			} )
 			PlaySoundAlias( "uin_press_generic" )
-			CoD.PlayerRoleUtility.StopGesturePreview( f21_arg1, f21_arg2 )
+			CoD.PlayerRoleUtility.StopGesturePreview( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f22_arg0, f22_arg1, f22_arg2 )
-		if MenuPropertyIsTrue( f22_arg1, "isSunsetPurchaseContractScreen" ) and CoD.BlackMarketUtility.CanExchangeLootCases( f22_arg2, self ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if MenuPropertyIsTrue( menu, "isSunsetPurchaseContractScreen" ) and CoD.BlackMarketUtility.CanExchangeLootCases( controller, self ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif CoD.BlackMarketUtility.CanExchangeLootCases( f22_arg2, self ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif CoD.BlackMarketUtility.CanExchangeLootCases( controller, self ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

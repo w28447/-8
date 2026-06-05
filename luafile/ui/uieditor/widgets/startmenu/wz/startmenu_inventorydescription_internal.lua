@@ -50,7 +50,7 @@ CoD.StartMenu_InventoryDescription_Internal.new = function ( f1_arg0, f1_arg1, f
 			modelName = "damage"
 		} )
 	end )
-	DamageAttribute.attributeName:setText( LocalizeToUpperString( 0xCFFC6656E99316E ) )
+	DamageAttribute.attributeName:setText( LocalizeToUpperString( "mpui/damage_caps" ) )
 	DamageAttribute:linkToElementModel( self, "attributes.damage", true, function ( model )
 		local f5_local0 = model:get()
 		if f5_local0 ~= nil then
@@ -84,7 +84,7 @@ CoD.StartMenu_InventoryDescription_Internal.new = function ( f1_arg0, f1_arg1, f
 			modelName = "range"
 		} )
 	end )
-	RangeAttribute.attributeName:setText( LocalizeToUpperString( 0x470B2F1C3BDE7F4 ) )
+	RangeAttribute.attributeName:setText( LocalizeToUpperString( "mpui/range_caps" ) )
 	RangeAttribute:linkToElementModel( self, "attributes.range", true, function ( model )
 		local f9_local0 = model:get()
 		if f9_local0 ~= nil then
@@ -118,7 +118,7 @@ CoD.StartMenu_InventoryDescription_Internal.new = function ( f1_arg0, f1_arg1, f
 			modelName = "fireRate"
 		} )
 	end )
-	FireRateAttribute.attributeName:setText( LocalizeToUpperString( 0xA995770D23477EE ) )
+	FireRateAttribute.attributeName:setText( LocalizeToUpperString( "mpui/fire_rate_caps" ) )
 	FireRateAttribute:linkToElementModel( self, "attributes.fireRate", true, function ( model )
 		local f13_local0 = model:get()
 		if f13_local0 ~= nil then
@@ -152,7 +152,7 @@ CoD.StartMenu_InventoryDescription_Internal.new = function ( f1_arg0, f1_arg1, f
 			modelName = "accuracy"
 		} )
 	end )
-	AccuracyAttribute.attributeName:setText( LocalizeToUpperString( 0xF669512DF581896 ) )
+	AccuracyAttribute.attributeName:setText( LocalizeToUpperString( "menu/accuracy_caps" ) )
 	AccuracyAttribute:linkToElementModel( self, "attributes.accuracy", true, function ( model )
 		local f17_local0 = model:get()
 		if f17_local0 ~= nil then

@@ -21,7 +21,7 @@ CoD.MinimapHelper.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local MapGlitch = LUI.UIImage.new( 0, 1, -1, -1, 0, 1, 0, 0 )
 	MapGlitch:setRGB( 0.01, 0.01, 0.01 )
-	MapGlitch:setImage( RegisterImage( GetCurrentMinimapImageName( 0x6E4CF8E78AE6592 ) ) )
+	MapGlitch:setImage( RegisterImage( GetCurrentMinimapImageName( "uie_hud_t7_minimap_mp_ethiopia_full" ) ) )
 	self:addElement( MapGlitch )
 	self.MapGlitch = MapGlitch
 	
@@ -31,7 +31,7 @@ CoD.MinimapHelper.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	self.MapBacking = MapBacking
 	
 	local MinimapFogOfWar = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	MinimapFogOfWar:setImage( RegisterImage( 0x6B3F6C9FC7AEC8A ) )
+	MinimapFogOfWar:setImage( RegisterImage( "uie_hud_mp_minimap_fogofwar_range" ) )
 	MinimapFogOfWar:setMaterial( LUI.UIImage.GetCachedMaterial( 0xACA98D41A38E390 ) )
 	MinimapFogOfWar:setShaderVector( 0, 1, 0.1, 0.05, 0 )
 	MinimapFogOfWar:setupCompassFog( Enum.CompassType[0x72D54007C707EBC] )
@@ -41,7 +41,7 @@ CoD.MinimapHelper.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local MinimapFogOfWarEnemyTearing = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	MinimapFogOfWarEnemyTearing:setImage( RegisterImage( 0x706DFCD9F680830 ) )
-	MinimapFogOfWarEnemyTearing:setMaterial( LUI.UIImage.GetCachedMaterial( 0x72987F9CD841ED7 ) )
+	MinimapFogOfWarEnemyTearing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_animated" ) )
 	MinimapFogOfWarEnemyTearing:setShaderVector( 0, 5, 1, 0, 0 )
 	MinimapFogOfWarEnemyTearing:setShaderVector( 1, 0, 0, 0, 0 )
 	MinimapFogOfWarEnemyTearing:setupCompassEnemyTearingFog( Enum.CompassType[0x72D54007C707EBC] )
@@ -58,8 +58,8 @@ CoD.MinimapHelper.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	local Scanlines = LUI.UIImage.new( -0.25, 1.25, 1, 1, -0.25, 1.25, 0, 0 )
 	Scanlines:setRGB( 0.54, 0.53, 0.72 )
 	Scanlines:setAlpha( 0.03 )
-	Scanlines:setImage( RegisterImage( GetCurrentMinimapImageName( 0x6E4CF8E78AE6592 ) ) )
-	Scanlines:setMaterial( LUI.UIImage.GetCachedMaterial( 0x5D13CDAD1938D85 ) )
+	Scanlines:setImage( RegisterImage( GetCurrentMinimapImageName( "uie_hud_t7_minimap_mp_ethiopia_full" ) ) )
+	Scanlines:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines_add" ) )
 	Scanlines:setShaderVector( 0, 0.07, 0, 0, 0 )
 	Scanlines:setShaderVector( 1, 0.86, 0, 0, 0 )
 	Scanlines:setShaderVector( 2, 0.01, 0, 0, 0 )
@@ -67,7 +67,7 @@ CoD.MinimapHelper.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	self.Scanlines = Scanlines
 	
 	local MinimapMap2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	MinimapMap2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x655565C7B387234 ) )
+	MinimapMap2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_multiply" ) )
 	MinimapMap2:setupCompassMap( Enum.CompassType[0x72D54007C707EBC] )
 	self:addElement( MinimapMap2 )
 	self.MinimapMap2 = MinimapMap2
@@ -81,7 +81,7 @@ end
 
 CoD.MinimapHelper.__resetProperties = function ( f2_arg0 )
 	f2_arg0.Scanlines:completeAnimation()
-	f2_arg0.Scanlines:setMaterial( LUI.UIImage.GetCachedMaterial( 0x5D13CDAD1938D85 ) )
+	f2_arg0.Scanlines:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines_add" ) )
 	f2_arg0.Scanlines:setShaderVector( 0, 0.07, 0, 0, 0 )
 	f2_arg0.Scanlines:setShaderVector( 1, 0.86, 0, 0, 0 )
 	f2_arg0.Scanlines:setShaderVector( 2, 0.01, 0, 0, 0 )
@@ -106,7 +106,7 @@ CoD.MinimapHelper.__clipsPerState = {
 			end
 			
 			f3_arg0.Scanlines:completeAnimation()
-			f3_arg0.Scanlines:setMaterial( LUI.UIImage.GetCachedMaterial( 0x5D13CDAD1938D85 ) )
+			f3_arg0.Scanlines:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines_add" ) )
 			f3_arg0.Scanlines:setShaderVector( 0, 0.07, 0, 0, 0 )
 			f3_arg0.Scanlines:setShaderVector( 1, 0.86, 0, 0, 0 )
 			f3_arg0.Scanlines:setShaderVector( 2, 0, 0, 0, 0 )

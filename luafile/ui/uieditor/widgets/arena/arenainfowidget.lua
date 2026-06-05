@@ -32,7 +32,7 @@ CoD.ArenaInfoWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local TiledwhiteNoiseBacking = LUI.UIImage.new( 0, 0, 1.5, 132.5, 0, 0, 469, 600 )
 	TiledwhiteNoiseBacking:setAlpha( 0.01 )
-	TiledwhiteNoiseBacking:setImage( RegisterImage( 0x7167D8C33A06020 ) )
+	TiledwhiteNoiseBacking:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
 	TiledwhiteNoiseBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledwhiteNoiseBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledwhiteNoiseBacking:setupNineSliceShader( 64, 64 )
@@ -60,7 +60,7 @@ CoD.ArenaInfoWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.ArenaRubies = ArenaRubies
 	
 	local arenaFlameStreak = LUI.UIImage.new( 0, 0, -63, 197, 0, 0, 405, 665 )
-	arenaFlameStreak:setImage( RegisterImage( 0x39CD2A8412A4F6 ) )
+	arenaFlameStreak:setImage( RegisterImage( "uie_ui_menu_arena_firestreakflipbook" ) )
 	arenaFlameStreak:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	arenaFlameStreak:setShaderVector( 0, 4, 4, 0, 0 )
 	arenaFlameStreak:setShaderVector( 1, 8, 0, 0, 0 )
@@ -101,7 +101,7 @@ CoD.ArenaInfoWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local RankTitle = LUI.UIText.new( 0, 0, 140.5, 352.5, 0, 0, 492, 510 )
 	RankTitle:setRGB( 0.92, 0.92, 0.92 )
 	RankTitle:setAlpha( 0.5 )
-	RankTitle:setText( LocalizeToUpperString( 0x3370355189B42A7 ) )
+	RankTitle:setText( LocalizeToUpperString( "arena/rank" ) )
 	RankTitle:setTTF( "ttmussels_regular" )
 	RankTitle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	RankTitle:setShaderVector( 0, 1, 0, 0, 0 )

@@ -151,7 +151,7 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local StageTitle = LUI.UIText.new( 0.5, 0.5, -335, 335, 0.5, 0.5, -506, -462 )
 	StageTitle:setRGB( 0, 0, 0 )
-	StageTitle:setText( Engine[0xF9F1239CFD921FE]( 0xE8E14CAAF997B8 ) )
+	StageTitle:setText( Engine[0xF9F1239CFD921FE]( "bounty_hunter/buy_menu" ) )
 	StageTitle:setTTF( "ttmussels_demibold" )
 	StageTitle:setLetterSpacing( 8 )
 	StageTitle:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -164,7 +164,7 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.FooterContainerFrontendRight = f1_local20
 	
 	local PrimaryBuy = CoD.BountyHunterWeaponBuy.new( f1_arg0, f1_arg1, 0.5, 0.5, -692, -412, 0.5, 0.5, -329, -202 )
-	PrimaryBuy.Header:setText( Engine[0xF9F1239CFD921FE]( 0x3F59D1A91AF7F94 ) )
+	PrimaryBuy.Header:setText( Engine[0xF9F1239CFD921FE]( "bounty_hunter/primary" ) )
 	PrimaryBuy:linkToElementModel( self, "primaryModel", false, function ( model )
 		PrimaryBuy:setModel( model, f1_arg1 )
 	end )
@@ -178,16 +178,16 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PrimaryBuy, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
+	f1_arg0:AddButtonCallbackFunction( PrimaryBuy, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.BountyHunterUtility.OpenBountyHunterOverlay( self, f5_arg1, f5_arg2, "BountyHunterPackageSelect", "primary" )
+			CoD.BountyHunterUtility.OpenBountyHunterOverlay( self, menu, controller, "BountyHunterPackageSelect", "primary" )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
+	end, function ( element, menu, controller )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -213,7 +213,7 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.PrimaryUpgradesHeader = PrimaryUpgradesHeader
 	
 	local SecondaryBuy = CoD.BountyHunterWeaponBuy.new( f1_arg0, f1_arg1, 0.5, 0.5, -692, -412, 0.5, 0.5, -105, 22 )
-	SecondaryBuy.Header:setText( Engine[0xF9F1239CFD921FE]( 0x296B5FAFF3D120C ) )
+	SecondaryBuy.Header:setText( Engine[0xF9F1239CFD921FE]( "bounty_hunter/secondary" ) )
 	SecondaryBuy:linkToElementModel( self, "secondaryModel", false, function ( model )
 		SecondaryBuy:setModel( model, f1_arg1 )
 	end )
@@ -227,16 +227,16 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f8_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( SecondaryBuy, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
+	f1_arg0:AddButtonCallbackFunction( SecondaryBuy, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.BountyHunterUtility.OpenBountyHunterOverlay( self, f9_arg1, f9_arg2, "BountyHunterPackageSelect", "secondary" )
+			CoD.BountyHunterUtility.OpenBountyHunterOverlay( self, menu, controller, "BountyHunterPackageSelect", "secondary" )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
+	end, function ( element, menu, controller )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -246,7 +246,7 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.SecondaryBuy = SecondaryBuy
 	
 	local ArmorBuy = CoD.BountyHunterGenericBuy.new( f1_arg0, f1_arg1, 0.5, 0.5, -868, -741, 0.5, 0.5, -329, -202 )
-	ArmorBuy.Header:setText( Engine[0xF9F1239CFD921FE]( 0xB1C3B30E1F15C09 ) )
+	ArmorBuy.Header:setText( Engine[0xF9F1239CFD921FE]( "bounty_hunter/armor" ) )
 	ArmorBuy:linkToElementModel( self, "armorModel", false, function ( model )
 		ArmorBuy:setModel( model, f1_arg1 )
 	end )
@@ -260,16 +260,16 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f12_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ArmorBuy, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
+	f1_arg0:AddButtonCallbackFunction( ArmorBuy, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.BountyHunterUtility.OpenBountyHunterOverlay( self, f13_arg1, f13_arg2, "BountyHunterPackageSelect", "armor" )
+			CoD.BountyHunterUtility.OpenBountyHunterOverlay( self, menu, controller, "BountyHunterPackageSelect", "armor" )
 			return true
 		else
 			
 		end
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
+	end, function ( element, menu, controller )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -279,7 +279,7 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.ArmorBuy = ArmorBuy
 	
 	local ScorestreakBuy = CoD.BountyHunterGenericBuy.new( f1_arg0, f1_arg1, 0.5, 0.5, -868, -741, 0.5, 0.5, -105, 22 )
-	ScorestreakBuy.Header:setText( Engine[0xF9F1239CFD921FE]( 0x49F052E5AE3E0AA ) )
+	ScorestreakBuy.Header:setText( Engine[0xF9F1239CFD921FE]( "bounty_hunter/scorestreak" ) )
 	ScorestreakBuy:linkToElementModel( self, "scorestreakModel", false, function ( model )
 		ScorestreakBuy:setModel( model, f1_arg1 )
 	end )
@@ -293,16 +293,16 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f16_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ScorestreakBuy, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
+	f1_arg0:AddButtonCallbackFunction( ScorestreakBuy, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.BountyHunterUtility.OpenBountyHunterOverlay( self, f17_arg1, f17_arg2, "BountyHunterPackageSelect", "scorestreak" )
+			CoD.BountyHunterUtility.OpenBountyHunterOverlay( self, menu, controller, "BountyHunterPackageSelect", "scorestreak" )
 			return true
 		else
 			
 		end
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
+	end, function ( element, menu, controller )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -312,7 +312,7 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.ScorestreakBuy = ScorestreakBuy
 	
 	local EquipmentBuy = CoD.BountyHunterGenericBuy.new( f1_arg0, f1_arg1, 0.5, 0.5, -868, -741, 0.5, 0.5, 118, 245 )
-	EquipmentBuy.Header:setText( Engine[0xF9F1239CFD921FE]( 0xE5B4A22F58A0272 ) )
+	EquipmentBuy.Header:setText( Engine[0xF9F1239CFD921FE]( "bounty_hunter/equipment" ) )
 	EquipmentBuy:linkToElementModel( self, "equipmentModel", false, function ( model )
 		EquipmentBuy:setModel( model, f1_arg1 )
 	end )
@@ -326,16 +326,16 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f20_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( EquipmentBuy, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f21_arg0, f21_arg1, f21_arg2, f21_arg3 )
+	f1_arg0:AddButtonCallbackFunction( EquipmentBuy, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.BountyHunterUtility.OpenBountyHunterOverlay( self, f21_arg1, f21_arg2, "BountyHunterPackageSelect", "equipment" )
+			CoD.BountyHunterUtility.OpenBountyHunterOverlay( self, menu, controller, "BountyHunterPackageSelect", "equipment" )
 			return true
 		else
 			
 		end
-	end, function ( f22_arg0, f22_arg1, f22_arg2 )
+	end, function ( element, menu, controller )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -358,16 +358,16 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f24_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PrimaryAmmoBuy, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3 )
+	f1_arg0:AddButtonCallbackFunction( PrimaryAmmoBuy, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.BountyHunterUtility.BuyBountyPackageAmmo( f25_arg2, f25_arg1, f25_arg0 )
+			CoD.BountyHunterUtility.BuyBountyPackageAmmo( controller, menu, element )
 			return true
 		else
 			
 		end
-	end, function ( f26_arg0, f26_arg1, f26_arg2 )
+	end, function ( element, menu, controller )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 			return false
 		else
 			return false
@@ -390,16 +390,16 @@ CoD.BountyHunterBuyInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f28_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( SecondaryAmmoBuy, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f29_arg0, f29_arg1, f29_arg2, f29_arg3 )
+	f1_arg0:AddButtonCallbackFunction( SecondaryAmmoBuy, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.BountyHunterUtility.BuyBountyPackageAmmo( f29_arg2, f29_arg1, f29_arg0 )
+			CoD.BountyHunterUtility.BuyBountyPackageAmmo( controller, menu, element )
 			return true
 		else
 			
 		end
-	end, function ( f30_arg0, f30_arg1, f30_arg2 )
+	end, function ( element, menu, controller )
 		if CoD.BountyHunterUtility.IsBuyMenuVisible( self ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f30_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 			return false
 		else
 			return false

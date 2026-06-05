@@ -10,7 +10,7 @@ CoD.CACWildcardSelectionAnimContainer.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local UpgradePathBG = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, -4, 19 )
 	UpgradePathBG:setAlpha( 0.2 )
-	UpgradePathBG:setImage( RegisterImage( 0x16F59B11B25425F ) )
+	UpgradePathBG:setImage( RegisterImage( "uie_ui_menu_cac_wildcard_selected_glow_edges" ) )
 	self:addElement( UpgradePathBG )
 	self.UpgradePathBG = UpgradePathBG
 	

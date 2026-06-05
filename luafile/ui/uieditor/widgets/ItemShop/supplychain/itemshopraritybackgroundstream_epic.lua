@@ -17,7 +17,7 @@ CoD.ItemShopRarityBackgroundStream_Epic.new = function ( f1_arg0, f1_arg1, f1_ar
 	self.NoiseTiledBacking = NoiseTiledBacking
 	
 	local CommonOuterGlow01 = LUI.UIImage.new( 0, 1, -11, 11, 0, 1, -12, 12 )
-	CommonOuterGlow01:setImage( RegisterImage( 0xAE13B63B2001396 ) )
+	CommonOuterGlow01:setImage( RegisterImage( "uie_ui_menu_common_outer_glow01" ) )
 	CommonOuterGlow01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	CommonOuterGlow01:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonOuterGlow01:setupNineSliceShader( 32, 32 )
@@ -42,7 +42,7 @@ CoD.ItemShopRarityBackgroundStream_Epic.new = function ( f1_arg0, f1_arg1, f1_ar
 	self.BGBrighten = BGBrighten
 	
 	local RadialGlow2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	RadialGlow2:setImage( RegisterImage( 0x8F71B593239CEE7 ) )
+	RadialGlow2:setImage( RegisterImage( "uie_ui_menu_blackmarket_radial_glow" ) )
 	RadialGlow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	RadialGlow2:linkToElementModel( self, "rarity", true, function ( model )
 		local f4_local0 = model:get()
@@ -56,7 +56,7 @@ CoD.ItemShopRarityBackgroundStream_Epic.new = function ( f1_arg0, f1_arg1, f1_ar
 	local BottomGradient = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BottomGradient:setAlpha( 0.15 )
 	BottomGradient:setZRot( 180 )
-	BottomGradient:setImage( RegisterImage( 0xB646BE73FB8838C ) )
+	BottomGradient:setImage( RegisterImage( "uie_ui_menu_common_gradient" ) )
 	self:addElement( BottomGradient )
 	self.BottomGradient = BottomGradient
 	

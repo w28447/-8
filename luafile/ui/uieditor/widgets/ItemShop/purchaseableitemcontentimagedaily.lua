@@ -60,25 +60,25 @@ CoD.PurchaseableItemContentImageDaily.new = function ( f1_arg0, f1_arg1, f1_arg2
 		{
 			stateName = "OutfitPalette",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xDD691088352B680 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "palette" )
 			end
 		},
 		{
 			stateName = "CallingCard",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xCA2BC08C1A6BCF6 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "calling_card" )
 			end
 		},
 		{
 			stateName = "Camo",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xB0C9EF63048F282 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "weapon_camo" )
 			end
 		},
 		{
 			stateName = "WarpaintBundle",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0x48B82A2276A1CAF )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "war_paint_bundle" )
 			end
 		}
 	} )

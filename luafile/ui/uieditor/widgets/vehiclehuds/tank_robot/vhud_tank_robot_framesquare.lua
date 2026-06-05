@@ -50,7 +50,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local QuarterRing = LUI.UIImage.new( 0.5, 0.5, -90, 0, 0.5, 0.5, -90, 0 )
 	QuarterRing:setAlpha( 0.3 )
-	QuarterRing:setImage( RegisterImage( 0x935737CEC7B9628 ) )
+	QuarterRing:setImage( RegisterImage( "uie_ui_hud_vehicle_scarab_quarterreticle" ) )
 	QuarterRing:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( QuarterRing )
 	self.QuarterRing = QuarterRing
@@ -58,7 +58,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local QuarterRing2 = LUI.UIImage.new( 0.5, 0.5, 0, 90, 0.5, 0.5, -90, 0 )
 	QuarterRing2:setAlpha( 0.3 )
 	QuarterRing2:setYRot( 180 )
-	QuarterRing2:setImage( RegisterImage( 0x935737CEC7B9628 ) )
+	QuarterRing2:setImage( RegisterImage( "uie_ui_hud_vehicle_scarab_quarterreticle" ) )
 	QuarterRing2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( QuarterRing2 )
 	self.QuarterRing2 = QuarterRing2
@@ -67,7 +67,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	QuarterRing3:setAlpha( 0.3 )
 	QuarterRing3:setXRot( 180 )
 	QuarterRing3:setYRot( 180 )
-	QuarterRing3:setImage( RegisterImage( 0x935737CEC7B9628 ) )
+	QuarterRing3:setImage( RegisterImage( "uie_ui_hud_vehicle_scarab_quarterreticle" ) )
 	QuarterRing3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( QuarterRing3 )
 	self.QuarterRing3 = QuarterRing3
@@ -75,14 +75,14 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local QuarterRing4 = LUI.UIImage.new( 0.5, 0.5, -90, 0, 0.5, 0.5, 0, 90 )
 	QuarterRing4:setAlpha( 0.3 )
 	QuarterRing4:setXRot( 180 )
-	QuarterRing4:setImage( RegisterImage( 0x935737CEC7B9628 ) )
+	QuarterRing4:setImage( RegisterImage( "uie_ui_hud_vehicle_scarab_quarterreticle" ) )
 	QuarterRing4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( QuarterRing4 )
 	self.QuarterRing4 = QuarterRing4
 	
 	local BracketLeft = LUI.UIImage.new( 0, 0, 304, 364, 0.5, 0.5, -30, 30 )
 	BracketLeft:setAlpha( 0.3 )
-	BracketLeft:setImage( RegisterImage( 0x862965168D94F78 ) )
+	BracketLeft:setImage( RegisterImage( "uie_ui_hud_vehicle_scarab_bracket" ) )
 	BracketLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BracketLeft )
 	self.BracketLeft = BracketLeft
@@ -90,21 +90,21 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local BracketRight = LUI.UIImage.new( 0, 0, 814, 874, 0.5, 0.5, -30, 30 )
 	BracketRight:setAlpha( 0.3 )
 	BracketRight:setYRot( 180 )
-	BracketRight:setImage( RegisterImage( 0x862965168D94F78 ) )
+	BracketRight:setImage( RegisterImage( "uie_ui_hud_vehicle_scarab_bracket" ) )
 	BracketRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BracketRight )
 	self.BracketRight = BracketRight
 	
 	local FuiLeft = LUI.UIImage.new( 0, 0, 224, 304, 0, 0, 541, 577 )
 	FuiLeft:setAlpha( 0.5 )
-	FuiLeft:setImage( RegisterImage( 0x184787ADFCE8425 ) )
+	FuiLeft:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_detail" ) )
 	FuiLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiLeft )
 	self.FuiLeft = FuiLeft
 	
 	local FuiRight = LUI.UIImage.new( 0, 0, 954, 874, 0, 0, 541, 577 )
 	FuiRight:setAlpha( 0.5 )
-	FuiRight:setImage( RegisterImage( 0x184787ADFCE8425 ) )
+	FuiRight:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_detail" ) )
 	FuiRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiRight )
 	self.FuiRight = FuiRight
@@ -130,14 +130,14 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local FuiArrowLeft = LUI.UIImage.new( 0, 0, -26, 0, 0.5, 0.5, -13, 13 )
 	FuiArrowLeft:setZRot( 90 )
-	FuiArrowLeft:setImage( RegisterImage( 0x3213403D5FE9F16 ) )
+	FuiArrowLeft:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_arrow" ) )
 	FuiArrowLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiArrowLeft )
 	self.FuiArrowLeft = FuiArrowLeft
 	
 	local FuiArrowRight = LUI.UIImage.new( 1, 1, 0, 26, 0.5, 0.5, -13, 13 )
 	FuiArrowRight:setZRot( -90 )
-	FuiArrowRight:setImage( RegisterImage( 0x3213403D5FE9F16 ) )
+	FuiArrowRight:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_arrow" ) )
 	FuiArrowRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiArrowRight )
 	self.FuiArrowRight = FuiArrowRight
@@ -145,7 +145,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local FuiBox01Left = LUI.UIImage.new( 0.5, 0.5, -314, -280, 1, 1, -525, -559 )
 	FuiBox01Left:setAlpha( 0.2 )
 	FuiBox01Left:setYRot( 180 )
-	FuiBox01Left:setImage( RegisterImage( 0x811A80C0AADA825 ) )
+	FuiBox01Left:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
 	FuiBox01Left:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiBox01Left:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox01Left )
@@ -153,20 +153,20 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local FuiBox01Right = LUI.UIImage.new( 0.5, 0.5, 290, 324, 1, 1, -525, -559 )
 	FuiBox01Right:setAlpha( 0.2 )
-	FuiBox01Right:setImage( RegisterImage( 0x811A80C0AADA825 ) )
+	FuiBox01Right:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
 	FuiBox01Right:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiBox01Right:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox01Right )
 	self.FuiBox01Right = FuiBox01Right
 	
 	local FuiArrowTop = LUI.UIImage.new( 0.5, 0.5, -13, 13, 0, 0, -26, 0 )
-	FuiArrowTop:setImage( RegisterImage( 0x3213403D5FE9F16 ) )
+	FuiArrowTop:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_arrow" ) )
 	FuiArrowTop:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiArrowTop )
 	self.FuiArrowTop = FuiArrowTop
 	
 	local FuiArrowBot = LUI.UIImage.new( 0.5, 0.5, -13, 13, 0, 0, 676, 650 )
-	FuiArrowBot:setImage( RegisterImage( 0x3213403D5FE9F16 ) )
+	FuiArrowBot:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_arrow" ) )
 	FuiArrowBot:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiArrowBot )
 	self.FuiArrowBot = FuiArrowBot
@@ -175,7 +175,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	ringTR:setRGB( 0, 0, 0 )
 	ringTR:setAlpha( 0.2 )
 	ringTR:setScale( 1.2, 1.2 )
-	ringTR:setImage( RegisterImage( 0xF13D40449AE7486 ) )
+	ringTR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
 	ringTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	ringTR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ringTR )
@@ -185,7 +185,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	ringBL:setRGB( 0, 0, 0 )
 	ringBL:setAlpha( 0.2 )
 	ringBL:setScale( 1.2, 1.2 )
-	ringBL:setImage( RegisterImage( 0xF13D40449AE7486 ) )
+	ringBL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
 	ringBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	ringBL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ringBL )
@@ -195,7 +195,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	ringBR:setRGB( 0, 0, 0 )
 	ringBR:setAlpha( 0.2 )
 	ringBR:setScale( 1.2, 1.2 )
-	ringBR:setImage( RegisterImage( 0xF13D40449AE7486 ) )
+	ringBR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
 	ringBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	ringBR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ringBR )
@@ -205,7 +205,7 @@ CoD.vhud_tank_robot_framesquare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	ringTL:setRGB( 0, 0, 0 )
 	ringTL:setAlpha( 0.2 )
 	ringTL:setScale( 1.2, 1.2 )
-	ringTL:setImage( RegisterImage( 0xF13D40449AE7486 ) )
+	ringTL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
 	ringTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	ringTL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ringTL )

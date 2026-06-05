@@ -31,7 +31,7 @@ CoD.PC_BnetStore_ItemButton_Prices.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	Price:setBackingType( 2 )
 	Price:setBackingAlpha( 0 )
 	Price:setBackingXPadding( 2 )
-	Price:setBackingImage( RegisterImage( 0x543EE2663FE7871 ) )
+	Price:setBackingImage( RegisterImage( "white_line" ) )
 	Price:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	Price:setBackingShaderVector( 0, 0, 1, 0, 0 )
 	Price:setBackingShaderVector( 1, 0, 0, 0, 0 )

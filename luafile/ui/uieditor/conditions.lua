@@ -452,7 +452,7 @@ function IsFirstTimeSetup( f56_arg0, f56_arg1 )
 		return false
 	elseif not (not Engine.IsMultiplayerGame() or not IsLAN()) or Engine.IsInGame() then
 		return false
-	elseif f56_arg1 ~= Enum.eModes[0x60063C67132EB69] then
+	elseif f56_arg1 ~= Enum.eModes.mode_campaign then
 		return false
 	else
 		return not Engine.IsFirstTimeComplete( f56_arg0, f56_arg1 )
@@ -460,7 +460,7 @@ function IsFirstTimeSetup( f56_arg0, f56_arg1 )
 end
 
 function IsCampaignStoryFirstTimeSetup( f57_arg0 )
-	return IsFirstTimeSetup( f57_arg0, Enum.eModes[0x60063C67132EB69] ) and CoD.DirectorUtility.IsLobbyMenu( f57_arg0, LuaEnum.UI.DIRECTOR_ONLINE_CP_STORY )
+	return IsFirstTimeSetup( f57_arg0, Enum.eModes.mode_campaign ) and CoD.DirectorUtility.IsLobbyMenu( f57_arg0, LuaEnum.UI.DIRECTOR_ONLINE_CP_STORY )
 end
 
 function IsMainFirstTimeSetup( f58_arg0 )
@@ -587,28 +587,28 @@ end
 
 function IsCampaign()
 	local f79_local0 = LobbyData.GetCurrentMenuTarget()
-	return f79_local0["mainmode"] == Enum.LobbyMainMode[0x7B50049993542C0]
+	return f79_local0.mainmode == Enum.LobbyMainMode[0x7B50049993542C0]
 end
 
 function IsMultiplayer()
 	local f80_local0 = LobbyData.GetCurrentMenuTarget()
-	return f80_local0["mainmode"] == Enum.LobbyMainMode[0x7E41449995CD57E]
+	return f80_local0.mainmode == Enum.LobbyMainMode[0x7E41449995CD57E]
 end
 
 function IsZombies()
 	local f81_local0 = LobbyData.GetCurrentMenuTarget()
-	return f81_local0["mainmode"] == Enum.LobbyMainMode[0x79D01499920B292]
+	return f81_local0.mainmode == Enum.LobbyMainMode[0x79D01499920B292]
 end
 
 function IsWarzone()
 	local f82_local0 = LobbyData.GetCurrentMenuTarget()
-	return f82_local0["mainmode"] == Enum.LobbyMainMode[0x78C124999125C42]
+	return f82_local0.mainmode == Enum.LobbyMainMode[0x78C124999125C42]
 end
 
 function IsWarzoneOrCurrentMilestone()
 	local f83_local0 = LobbyData.GetCurrentMenuTarget()
 	local f83_local1
-	if f83_local0["mainmode"] ~= Enum.LobbyMainMode[0x78C124999125C42] then
+	if f83_local0.mainmode ~= Enum.LobbyMainMode[0x78C124999125C42] then
 		f83_local1 = CoD.DirectorUtility.DisableForCurrentMilestone( nil )
 	else
 		f83_local1 = true
@@ -633,7 +633,7 @@ end
 
 function IsAttackDefendGametype()
 	local f85_local0 = Engine[0xEA74FA7EE46E195]( Engine[0x6F8027A8BC75673]() )
-	return f85_local0[0xE5603BDA6A73B59] == 1
+	return f85_local0.isattackdefend == 1
 end
 
 function IsNeutralGametype( f86_arg0 )
@@ -798,7 +798,7 @@ end
 function IsBubbleGumType( f103_arg0, f103_arg1, f103_arg2 )
 	local f103_local0 = f103_arg0 and CoD.SafeGetModelValue( f103_arg0:getModel(), "itemIndex" )
 	if f103_local0 then
-		return f103_local1[0x2DC0FF35042F577] and f103_local2 and f103_arg2 == f103_local1[0x2DC0FF35042F577]
+		return f103_local1.bgblimittype and f103_local2 and f103_arg2 == f103_local1.bgblimittype
 	else
 		return false
 	end
@@ -851,7 +851,7 @@ function IsCACWeaponAttributeAddedValuePositive( f109_arg0, f109_arg1, f109_arg2
 		f109_local0 = CoD.BaseUtility.GetMenuLoadoutSlot( f109_arg0 )
 		f109_local1 = CoD.BaseUtility.GetMenuAttachmentFilter( f109_arg0 )
 	end
-	if not (f109_local1 ~= nil or Engine.CurrentSessionMode() ~= Enum.eModes[0x83EBA96F36BC4E5] or f109_local0 ~= "primary" and f109_local0 ~= "secondary") or Engine.CurrentSessionMode() == Enum.eModes[0x3723205FAE52C4A] and f109_local0 == "zmStartWeapon" then
+	if not (f109_local1 ~= nil or Engine.CurrentSessionMode() ~= Enum.eModes.mode_multiplayer or f109_local0 ~= "primary" and f109_local0 ~= "secondary") or Engine.CurrentSessionMode() == Enum.eModes.mode_zombies and f109_local0 == "zmStartWeapon" then
 		return ""
 	end
 	local f109_local2 = f109_arg1:getModel()
@@ -866,7 +866,7 @@ end
 
 function AllowWeaponPrestige( f110_arg0 )
 	local f110_local0
-	if f110_arg0 ~= Enum.eModes[0xBF1DCC8138A9D39] then
+	if f110_arg0 ~= Enum.eModes.mode_warzone then
 		f110_local0 = CoD.CACUtility.IsProgressionEnabled( f110_arg0 )
 		if not f110_local0 then
 		
@@ -992,7 +992,7 @@ end
 function AmICarryingBomb( f123_arg0 )
 	if CoD.SafeGetModelValue( Engine.GetModelForController( f123_arg0 ), "Demolition.defending" ) == false then
 		return true
-	elseif CoD.SafeGetModelValue( Engine.GetModelForController( f123_arg0 ), "SearchAndDestroy.defending" ) == false and Engine.GetGametypeSetting( 0xE90B14DBA95CA06 ) == 1 and not Engine.IsVisibilityBitSet( f123_arg0, Enum.UIVisibilityBit[0xABEA46F8DE7F02F] ) and not Engine.IsVisibilityBitSet( f123_arg0, Enum.UIVisibilityBit[0xABEA56F8DE7F1E2] ) then
+	elseif CoD.SafeGetModelValue( Engine.GetModelForController( f123_arg0 ), "SearchAndDestroy.defending" ) == false and Engine.GetGametypeSetting( "multibomb" ) == 1 and not Engine.IsVisibilityBitSet( f123_arg0, Enum.UIVisibilityBit[0xABEA46F8DE7F02F] ) and not Engine.IsVisibilityBitSet( f123_arg0, Enum.UIVisibilityBit[0xABEA56F8DE7F1E2] ) then
 		return true
 	else
 		return CoD.ModelUtility.IsModelValueEqualTo( f123_arg0, "hudItems.SDBombClient", Engine.GetPredictedClientNum( f123_arg0 ) )
@@ -1020,7 +1020,7 @@ function IsDoubleXP( f128_arg0 )
 		return false
 	else
 		local f128_local0 = LobbyData.GetCurrentMenuTarget()
-		if f128_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
+		if f128_local0.id == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
 			return false
 		elseif CoD.HUDUtility.IsGameTypeEqualToString( "ztutorial" ) and not InFrontend() then
 			return false
@@ -1041,7 +1041,7 @@ function IsDoubleWeaponXP( f129_arg0 )
 		end
 	end
 	local f129_local0 = LobbyData.GetCurrentMenuTarget()
-	if f129_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
+	if f129_local0.id == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
 		return false
 	elseif CoD.HUDUtility.IsGameTypeEqualToString( "ztutorial" ) and not InFrontend() then
 		return false
@@ -1057,7 +1057,7 @@ function IsTierBoostActive( f130_arg0 )
 		return false
 	else
 		local f130_local0 = LobbyData.GetCurrentMenuTarget()
-		if f130_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
+		if f130_local0.id == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
 			return false
 		elseif CoD.BaseUtility.IsDvarEnabled( "ui_fakeTierBoost" ) then
 			return true
@@ -1066,7 +1066,7 @@ function IsTierBoostActive( f130_arg0 )
 			if Engine[0xF4F47F17B3BDCB3]( f130_arg0, Engine[0xACFE452C407B25B]( f130_local1 ), f130_local1, Engine[0x7B3B2B73B53EB34]() ) then
 				return true
 			else
-				local f130_local2 = Dvar[0xFF4F2F1F645D6F0]:get()
+				local f130_local2 = Dvar.scr_credit_scale:get()
 				if not f130_local2 then
 					return false
 				else
@@ -1619,7 +1619,7 @@ function HasTwoPerksInSlot2( f185_arg0 )
 end
 
 function IsGameTypeWarzone()
-	local f186_local0 = Dvar[0xFF54369D6573B91]:get()
+	local f186_local0 = Dvar.g_gametype:get()
 	local f186_local1
 	if f186_local0 == nil or f186_local0 ~= "warzone_solo" and f186_local0 ~= "warzone_duo" and f186_local0 ~= "warzone_quad" and f186_local0 ~= "warzone_dbno" then
 		f186_local1 = false
@@ -1630,7 +1630,7 @@ function IsGameTypeWarzone()
 end
 
 function IsGameTypeCombatTraining()
-	local f187_local0 = Dvar[0xFF54369D6573B91]:get()
+	local f187_local0 = Dvar.g_gametype:get()
 	local f187_local1
 	if f187_local0 == nil or f187_local0 ~= "ct_ruin" and f187_local0 ~= "ct_recon" and f187_local0 ~= "ct_nomad" and f187_local0 ~= "ct_firebreak" and f187_local0 ~= "ct_crash" and f187_local0 ~= "ct_seraph" and f187_local0 ~= "ct_battery" and f187_local0 ~= "ct_prophet" and f187_local0 ~= "ct_torque" and f187_local0 ~= "ct_ajax" then
 		f187_local1 = false
@@ -1675,7 +1675,7 @@ function IsPublicOrLeagueGame( f192_arg0 )
 end
 
 function IsBombBasedGameMode()
-	local f193_local0 = Dvar[0xFF54369D6573B91]:get()
+	local f193_local0 = Dvar.g_gametype:get()
 	local f193_local1
 	if f193_local0 == nil or f193_local0 ~= "sd" and f193_local0 ~= "sr" and f193_local0 ~= "dem" then
 		f193_local1 = false
@@ -1701,10 +1701,10 @@ end
 
 function CustomClassesEnabled()
 	local f196_local0 = LobbyData.GetCurrentMenuTarget()
-	if f196_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
+	if f196_local0.id == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) or IsSimulateCT() then
 		return false
 	else
-		return Engine.GetGametypeSetting( 0xD8F4FBEC8CEDE50 ) == 0
+		return Engine.GetGametypeSetting( "disablecac" ) == 0
 	end
 end
 
@@ -1928,7 +1928,7 @@ function IsGameTypeDOA()
 end
 
 function HideScoreMeterDueToGameType()
-	local f224_local0 = Dvar[0xFF54369D6573B91]:get()
+	local f224_local0 = Dvar.g_gametype:get()
 	local f224_local1
 	if f224_local0 == nil or f224_local0 ~= "ctf" and f224_local0 ~= "dem" and f224_local0 ~= "sd" then
 		f224_local1 = false
@@ -2316,7 +2316,7 @@ end
 function CompetitiveSettingsEnabled( f270_arg0 )
 	local modelValue = Engine.GetModelValue( Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.lobbyNav" ) )
 	if modelValue == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_CUSTOM ) or modelValue == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_CUSTOM ) or modelValue == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_LAN_MP ) or modelValue == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_LAN_MP_ARENA ) then
-		if (Engine.GetGametypeSetting( 0x488B5AB6D937C00 ) == 1) or Engine.GetGametypeSetting( 0x56DD4E3FBA90D24 ) == 1 then
+		if (Engine.GetGametypeSetting( "pregameitemvoteenabled" ) == 1) or Engine.GetGametypeSetting( "pregamedraftenabled" ) == 1 then
 			return true
 		end
 	end
@@ -2324,11 +2324,11 @@ function CompetitiveSettingsEnabled( f270_arg0 )
 end
 
 function CharacterDraftEnabled()
-	return Engine.GetGametypeSetting( 0x56DD4E3FBA90D24 ) == 1
+	return Engine.GetGametypeSetting( "pregamedraftenabled" ) == 1
 end
 
 function PregameItemVoteEnabled()
-	return Engine.GetGametypeSetting( 0x488B5AB6D937C00 ) == 1
+	return Engine.GetGametypeSetting( "pregameitemvoteenabled" ) == 1
 end
 
 function IsArenaMode()
@@ -2374,7 +2374,7 @@ end
 
 function ShowCPInstructionText( f277_arg0 )
 	local f277_local0 = Engine.GetModelForController( f277_arg0 )
-	return Engine.GetIString( f277_local0.hudItems.cpInstructionText:get(), "CS_LOCALIZED_STRINGS" ) ~= 0x0
+	return Engine.GetIString( f277_local0.hudItems.cpInstructionText:get(), "CS_LOCALIZED_STRINGS" ) ~= ""
 end
 
 function ShowCPNotificationText( f278_arg0 )
@@ -2519,7 +2519,7 @@ end
 function ShouldAddDollyCameraMarker( f300_arg0 )
 	if not IsDemoContextDirectorMode() then
 		return false
-	elseif Engine.ProfileBool( f300_arg0, 0x40A39D4129C3E15 ) then
+	elseif Engine.ProfileBool( f300_arg0, "demo_autodollyrecord" ) then
 		return false
 	elseif CoD.ModelUtility.IsGlobalModelValueGreaterThan( "demo.highlightedDollyCamMarker", -1 ) then
 		return false
@@ -2892,7 +2892,7 @@ end
 
 function HideWinnersLabelsAndInfo( f339_arg0 )
 	local f339_local0 = Engine.GetModel( Engine.GetModelForController( f339_arg0 ), "gameScore.draw" )
-	local f339_local1 = Engine.GetGametypeSetting( 0xDA4FB58A54E84D3 ) < 2
+	local f339_local1 = Engine.GetGametypeSetting( "teamcount" ) < 2
 	if f339_local0 then
 		f339_local0 = Engine.GetModelValue( f339_local0 )
 	end
@@ -3006,7 +3006,7 @@ function ShouldShowPartyPrivacy( f349_arg0 )
 	end
 	if not Engine[0xEA2BE00F49480D]( f349_local2 ) then
 		return false
-	elseif f349_local0[0xEE71E4EE12BC453] <= 1 then
+	elseif f349_local0.maxclients <= 1 then
 		return false
 	else
 		return true
@@ -3109,7 +3109,7 @@ function ShouldHideButtonPromptForPC( f356_arg0, f356_arg1 )
 		end
 		if not next( f356_local0 ) then
 			return true
-		elseif f356_local0 and f356_local0.Label and f356_local0.Label == 0x0 then
+		elseif f356_local0 and f356_local0.Label and f356_local0.Label == "" then
 			return true
 		elseif f356_local0 and f356_local0.Label and f356_local0.Label == "menu/select" and f356_local0.Button == Enum.LUIButton[0x755DA1E2E7C263F] then
 			return true
@@ -3531,7 +3531,7 @@ function ChatClientStaticAllowed( f409_arg0 )
 end
 
 function IsArabicSku()
-	if Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8][0x8BDB4147F05F2A2] ) and Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8][0x4F12EFDA1B0BDD0] ) then
+	if Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8][0x8BDB4147F05F2A2] ) and Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8].language_arabic ) then
 		return true
 	else
 		return false
@@ -3549,7 +3549,7 @@ end
 function IsJapaneseSku()
 	if CoD.isPC and Engine[0x543F4AF0F31BA06]() then
 		return true
-	elseif Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8][0x9A4194D08679C69] ) and Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8][0x5D4AD876D4B4D93] ) then
+	elseif Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8][0x9A4194D08679C69] ) and Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8].language_japanese ) then
 		return true
 	else
 		return false
@@ -3557,7 +3557,7 @@ function IsJapaneseSku()
 end
 
 function IsRussianSku()
-	if Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8][0x37F47E9EC48B533] ) and Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8][0xD4A7E4FA92D24E1] ) then
+	if Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8][0x37F47E9EC48B533] ) and Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8].language_russian ) then
 		return true
 	else
 		return false
@@ -3565,7 +3565,7 @@ function IsRussianSku()
 end
 
 function IsPolishSku()
-	if Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8][0x4A6F14865F072B] ) and Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8][0xD31CB900BD1AC99] ) then
+	if Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8][0x4A6F14865F072B] ) and Engine.IsLanguageSupportedInSKU( Enum[0xAA0EE37DF15F5A8].language_polish ) then
 		return true
 	else
 		return false
@@ -3586,7 +3586,7 @@ function IsCurrentTextLanguageEnglish()
 end
 
 function IsCurrentLanguageArabic()
-	if Dvar[0xA97AE527D90FB24]:get() == Enum[0xAA0EE37DF15F5A8][0x4F12EFDA1B0BDD0] then
+	if Dvar[0xA97AE527D90FB24]:get() == Enum[0xAA0EE37DF15F5A8].language_arabic then
 		return true
 	else
 		return false
@@ -3594,7 +3594,7 @@ function IsCurrentLanguageArabic()
 end
 
 function IsCurrentLanguageKorean()
-	if Dvar[0xA97AE527D90FB24]:get() == Enum[0xAA0EE37DF15F5A8][0xB5C0CC5AE7B0E08] then
+	if Dvar[0xA97AE527D90FB24]:get() == Enum[0xAA0EE37DF15F5A8].language_korean then
 		return true
 	else
 		return false
@@ -3646,7 +3646,7 @@ function IsGameTrial()
 end
 
 function IsGameModeInstalled( f425_arg0, f425_arg1 )
-	if f425_arg1 == Enum.eModes[0xBF1DCC8138A9D39] then
+	if f425_arg1 == Enum.eModes.mode_warzone then
 		return true
 	elseif Engine[0xCB675CA7856DA25]() then
 		return false
@@ -3713,7 +3713,7 @@ function ShouldShowSplitscreenControllerText( f428_arg0, f428_arg1 )
 	else
 		local f428_local0 = Engine.GetUsedControllerCount() < Dvar[0x6BAC8B42067D2C5]:get()
 		local f428_local1 = LobbyData.GetLobbyMenuByID( Engine[0x9882F293C327557]() )
-		return f428_local0 and Engine[0x44FC97037CE42ED]( Enum.LobbyModule[0x98EA1BB7164D103], Enum.LobbyType[0xA1647599284110], Enum[0x575E471C039DBD6][0x92BC25E18D296F] ) < f428_local1[0xEE71E4EE12BC453]
+		return f428_local0 and Engine[0x44FC97037CE42ED]( Enum.LobbyModule[0x98EA1BB7164D103], Enum.LobbyType[0xA1647599284110], Enum[0x575E471C039DBD6][0x92BC25E18D296F] ) < f428_local1.maxclients
 	end
 end
 
@@ -3744,11 +3744,11 @@ function EnableCombatRecordCompare( f430_arg0 )
 end
 
 function IsMultiplayerCombatRecordMode()
-	return CoD.GetCombatRecordMode() == Enum.eModes[0x83EBA96F36BC4E5]
+	return CoD.GetCombatRecordMode() == Enum.eModes.mode_multiplayer
 end
 
 function IsZombiesCombatRecordMode()
-	return CoD.GetCombatRecordMode() == Enum.eModes[0x3723205FAE52C4A]
+	return CoD.GetCombatRecordMode() == Enum.eModes.mode_zombies
 end
 
 function IsComparingStats( f433_arg0 )
@@ -3789,7 +3789,7 @@ function ElementHasText( f436_arg0, f436_arg1 )
 		local f436_local0 = f436_arg0[f436_arg1]:getText()
 		local f436_local1 = f436_local0
 		local f436_local2
-		if f436_local0 == "" or f436_local0 == Engine[0xF9F1239CFD921FE]( 0x0 ) then
+		if f436_local0 == "" or f436_local0 == Engine[0xF9F1239CFD921FE]( "" ) then
 			f436_local2 = false
 		else
 			f436_local2 = f436_local1 and true

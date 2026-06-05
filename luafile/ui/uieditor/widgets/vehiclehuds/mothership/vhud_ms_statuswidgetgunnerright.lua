@@ -13,7 +13,7 @@ CoD.vhud_ms_StatusWidgetGunnerRight.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local SpeedNumbers = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -84, -60 )
 	SpeedNumbers:setTTF( "default" )
-	SpeedNumbers:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD756CD9A5F1F1B4 ) )
+	SpeedNumbers:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration_cheap_blur" ) )
 	SpeedNumbers:setShaderVector( 0, 0, 1, 0, 0 )
 	SpeedNumbers:setShaderVector( 1, 0, 0, 0, 0 )
 	SpeedNumbers:setShaderVector( 2, 0, 0, 0, 0 )
@@ -37,7 +37,7 @@ CoD.vhud_ms_StatusWidgetGunnerRight.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.vhudsentinelNotificationLine = vhudsentinelNotificationLine
 	
 	local vhudmsNotificationBox = CoD.vhud_ms_NotificationBox.new( f1_arg0, f1_arg1, 0, 0, 0, 122, 0, 0, -0.5, 44.5 )
-	vhudmsNotificationBox.ALTtext:setText( Engine[0xF9F1239CFD921FE]( 0x3755C926654C027 ) )
+	vhudmsNotificationBox.ALTtext:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_speed" ) )
 	self:addElement( vhudmsNotificationBox )
 	self.vhudmsNotificationBox = vhudmsNotificationBox
 	
@@ -48,9 +48,9 @@ CoD.vhud_ms_StatusWidgetGunnerRight.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.vhudsentinelNotificationLine0 = vhudsentinelNotificationLine0
 	
 	local statusText = LUI.UIText.new( 0, 1, 0, 0, 0, 0, 221, 243 )
-	statusText:setText( Engine[0xF9F1239CFD921FE]( 0xE20BF67125A4903 ) )
+	statusText:setText( Engine[0xF9F1239CFD921FE]( "menu/status_caps" ) )
 	statusText:setTTF( "default" )
-	statusText:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD756CD9A5F1F1B4 ) )
+	statusText:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration_cheap_blur" ) )
 	statusText:setShaderVector( 0, 0, 1, 0, 0 )
 	statusText:setShaderVector( 1, 0, 0, 0, 0 )
 	statusText:setShaderVector( 2, 0, 0, 0, 0 )
@@ -67,7 +67,7 @@ CoD.vhud_ms_StatusWidgetGunnerRight.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	Bar0:setAlpha( 0.15 )
 	Bar0:setZRot( 90 )
 	Bar0:setZoom( -15 )
-	Bar0:setImage( RegisterImage( 0x5534C48D872A06A ) )
+	Bar0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_timebar" ) )
 	Bar0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Bar0 )
 	self.Bar0 = Bar0
@@ -75,7 +75,7 @@ CoD.vhud_ms_StatusWidgetGunnerRight.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local Bar = LUI.UIImage.new( 0, 0, -7, 128, 0, 0, 126, 154 )
 	Bar:setRGB( 0.74, 0.94, 0.99 )
 	Bar:setZRot( 90 )
-	Bar:setImage( RegisterImage( 0x5534C48D872A06A ) )
+	Bar:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_timebar" ) )
 	Bar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Bar )
 	self.Bar = Bar
@@ -83,7 +83,7 @@ CoD.vhud_ms_StatusWidgetGunnerRight.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local solidbar = LUI.UIImage.new( 0, 0, -7, 128, 0, 0, 126, 154 )
 	solidbar:setRGB( 0.74, 0.94, 0.99 )
 	solidbar:setZRot( 90 )
-	solidbar:setImage( RegisterImage( 0x7EA3B14064D93ED ) )
+	solidbar:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_timebarsolid" ) )
 	solidbar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	solidbar:setShaderVector( 1, 0, 0, 0, 0 )
 	solidbar:setShaderVector( 2, 1, 0, 0, 0 )

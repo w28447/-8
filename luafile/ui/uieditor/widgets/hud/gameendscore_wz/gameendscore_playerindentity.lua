@@ -48,7 +48,7 @@ CoD.GameEndScore_PlayerIndentity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.ClientName = ClientName
 	
 	local WithLabel = LUI.UIText.new( 0, 0, 514, 626, 0, 0, 39, 72 )
-	WithLabel:setText( Engine[0xF9F1239CFD921FE]( 0x3406303D9338A94 ) )
+	WithLabel:setText( Engine[0xF9F1239CFD921FE]( "ui/with" ) )
 	WithLabel:setTTF( "ttmussels_regular" )
 	WithLabel:setLetterSpacing( 2 )
 	WithLabel:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

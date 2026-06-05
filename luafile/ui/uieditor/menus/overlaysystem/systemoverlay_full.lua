@@ -38,56 +38,56 @@ LUI.createMenu.SystemOverlay_Full = function ( f2_arg0, f2_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f2_local1, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f2_local1:AddButtonCallbackFunction( BTNQuit, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		PerformOverlayBack( f5_arg1, f5_arg2 )
+	f2_local1:AddButtonCallbackFunction( BTNQuit, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		PerformOverlayBack( menu, controller )
 		return true
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( BTNQuit )
 	self.BTNQuit = BTNQuit
 	
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		if HasOverlayContinueAction( f7_arg1 ) then
-			PerformOverlayContinue( f7_arg1, f7_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if HasOverlayContinueAction( menu ) then
+			PerformOverlayContinue( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		if HasOverlayContinueAction( f8_arg1 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if HasOverlayContinueAction( menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		if HasOverlayBackAction( f9_arg1 ) then
-			PerformOverlayBack( f9_arg1, f9_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		if HasOverlayBackAction( menu ) then
+			PerformOverlayBack( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		if HasOverlayBackAction( f10_arg1 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		if HasOverlayBackAction( menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
 		return true
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, nil )
 		return false
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( element, menu, controller, model )
 		return true
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "", nil, nil )
 		return false
 	end, false )
 	layout.buttons:setModel( self.buttonModel, f2_arg0 )

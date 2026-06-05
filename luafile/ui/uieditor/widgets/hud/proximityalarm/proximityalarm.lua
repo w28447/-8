@@ -26,7 +26,7 @@ CoD.ProximityAlarm.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local ProximityAlarm = CoD.ProximityAlarm_Internal.new( f1_arg0, f1_arg1, 0.5, 0.5, -161, 161, 0.5, 0.5, -38, 38 )
 	ProximityAlarm:setAlpha( 0.93 )
-	ProximityAlarm.text:setText( Engine[0xF9F1239CFD921FE]( 0x8B965A8BB3FC505 ) )
+	ProximityAlarm.text:setText( Engine[0xF9F1239CFD921FE]( "weapon/alarm_alarm" ) )
 	self:addElement( ProximityAlarm )
 	self.ProximityAlarm = ProximityAlarm
 	
@@ -94,7 +94,7 @@ CoD.ProximityAlarm.__resetProperties = function ( f8_arg0 )
 	f8_arg0.blur:completeAnimation()
 	f8_arg0.Image:completeAnimation()
 	f8_arg0.ProximityAlarm:setAlpha( 0.93 )
-	f8_arg0.ProximityAlarm.text:setText( Engine[0xF9F1239CFD921FE]( 0x8B965A8BB3FC505 ) )
+	f8_arg0.ProximityAlarm.text:setText( Engine[0xF9F1239CFD921FE]( "weapon/alarm_alarm" ) )
 	f8_arg0.blur:setAlpha( 1 )
 	f8_arg0.Image:setAlpha( 0.3 )
 end
@@ -182,7 +182,7 @@ CoD.ProximityAlarm.__clipsPerState = {
 			f14_arg0.ProximityAlarm:completeAnimation()
 			f14_arg0.ProximityAlarm.text:completeAnimation()
 			f14_arg0.ProximityAlarm:setAlpha( 1 )
-			f14_arg0.ProximityAlarm.text:setText( Engine[0xF9F1239CFD921FE]( 0x31007C3B2B31BDB ) )
+			f14_arg0.ProximityAlarm.text:setText( Engine[0xF9F1239CFD921FE]( "weapon/c4_alarm" ) )
 			f14_local0( f14_arg0.ProximityAlarm )
 			f14_arg0.nextClip = "DefaultClip"
 		end
@@ -254,7 +254,7 @@ CoD.ProximityAlarm.__clipsPerState = {
 			f22_arg0.ProximityAlarm:completeAnimation()
 			f22_arg0.ProximityAlarm.text:completeAnimation()
 			f22_arg0.ProximityAlarm:setAlpha( 1 )
-			f22_arg0.ProximityAlarm.text:setText( Engine[0xF9F1239CFD921FE]( 0x8B965A8BB3FC505 ) )
+			f22_arg0.ProximityAlarm.text:setText( Engine[0xF9F1239CFD921FE]( "weapon/alarm_alarm" ) )
 			f22_local0( f22_arg0.ProximityAlarm )
 			f22_arg0.nextClip = "DefaultClip"
 		end

@@ -65,7 +65,7 @@ LUI.createMenu.StartMenu_Main = function ( f1_arg0, f1_arg1 )
 	
 	local TiledPlusGrid = LUI.UIImage.new( 0, 0, -135, 1920, 0, 0, 0, 1080 )
 	TiledPlusGrid:setAlpha( 0.05 )
-	TiledPlusGrid:setImage( RegisterImage( 0x6E37BAE22631294 ) )
+	TiledPlusGrid:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_repeat_plusgrid" ) )
 	TiledPlusGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledPlusGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledPlusGrid:setupNineSliceShader( 220, 220 )
@@ -107,16 +107,16 @@ LUI.createMenu.StartMenu_Main = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( DirectorQuitButtonContainer, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
+	f1_local1:AddButtonCallbackFunction( DirectorQuitButtonContainer, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
 		if IsPC() then
-			OpenPCQuit( self, f3_arg1, self, f3_arg2 )
+			OpenPCQuit( self, menu, self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "MOUSE1" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "MOUSE1" )
 			return false
 		else
 			return false
@@ -256,254 +256,254 @@ LUI.createMenu.StartMenu_Main = function ( f1_arg0, f1_arg1 )
 	f1_local16( f1_local15, f1_local17["hudItems.hasStartedWZMatch"], function ( f21_arg0, f21_arg1 )
 		CoD.Menu.UpdateButtonShownState( f21_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 	end, false )
-	self:registerEventHandler( "menu_loaded", function ( element, event )
+	self:registerEventHandler( "menu_loaded", function ( self, event )
 		local f22_local0 = nil
-		if element.menuLoaded then
-			f22_local0 = element:menuLoaded( event )
-		elseif element.super.menuLoaded then
-			f22_local0 = element.super:menuLoaded( event )
+		if self.menuLoaded then
+			f22_local0 = self:menuLoaded( event )
+		elseif self.super.menuLoaded then
+			f22_local0 = self.super:menuLoaded( event )
 		end
 		PlaySoundSetSound( self, "menu_enter" )
-		FileshareGetSlots( self, element, f1_arg0 )
+		FileshareGetSlots( self, self, f1_arg0 )
 		SetHeadingKickerTextToGameMode()
 		if not f22_local0 then
-			f22_local0 = element:dispatchEventToChildren( event )
+			f22_local0 = self:dispatchEventToChildren( event )
 		end
 		return f22_local0
 	end )
-	self:registerEventHandler( "close_all_ingame_menus", function ( element, event )
+	self:registerEventHandler( "close_all_ingame_menus", function ( self, event )
 		local f23_local0 = nil
 		StartMenuGoBack( f1_local1, f1_arg0 )
 		if not f23_local0 then
-			f23_local0 = element:dispatchEventToChildren( event )
+			f23_local0 = self:dispatchEventToChildren( event )
 		end
 		return f23_local0
 	end )
-	self:registerEventHandler( "open_migration_menu", function ( element, event )
+	self:registerEventHandler( "open_migration_menu", function ( self, event )
 		local f24_local0 = nil
 		StartMenuGoBack( f1_local1, f1_arg0 )
 		if not f24_local0 then
-			f24_local0 = element:dispatchEventToChildren( event )
+			f24_local0 = self:dispatchEventToChildren( event )
 		end
 		return f24_local0
 	end )
-	self:registerEventHandler( "occlusion_change", function ( element, event )
+	self:registerEventHandler( "occlusion_change", function ( self, event )
 		local f25_local0 = nil
-		if element.OcclusionChange then
-			f25_local0 = element:OcclusionChange( event )
-		elseif element.super.OcclusionChange then
-			f25_local0 = element.super:OcclusionChange( event )
+		if self.OcclusionChange then
+			f25_local0 = self:OcclusionChange( event )
+		elseif self.super.OcclusionChange then
+			f25_local0 = self.super:OcclusionChange( event )
 		end
 		if IsPC() and IsWarzone() and IsInGame() then
 			CoD.WZUtility.ClosePCSplitterWidget( self, f1_local1, f1_arg0 )
 		end
 		if not f25_local0 then
-			f25_local0 = element:dispatchEventToChildren( event )
+			f25_local0 = self:dispatchEventToChildren( event )
 		end
 		return f25_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f26_arg0, f26_arg1, f26_arg2, f26_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
 		if InFrontend() then
-			CoD.BaseUtility.SwitchModeOnMenu( f26_arg2 )
-			RefreshLobbyRoom( f26_arg1, f26_arg2 )
-			CoD.StartMenuUtility.CleanUpBarracksTab( f26_arg1, f26_arg2 )
-			StartMenuGoBack( f26_arg1, f26_arg2 )
-			CoD.LobbyUtility.SetMenuControllerRestriction( self, f26_arg2, 0 )
+			CoD.BaseUtility.SwitchModeOnMenu( controller )
+			RefreshLobbyRoom( menu, controller )
+			CoD.StartMenuUtility.CleanUpBarracksTab( menu, controller )
+			StartMenuGoBack( menu, controller )
+			CoD.LobbyUtility.SetMenuControllerRestriction( self, controller, 0 )
 			return true
 		elseif not IsPC() and not IsDemoPlaying() then
-			CoD.BaseUtility.SwitchModeOnMenu( f26_arg2 )
-			RefreshLobbyRoom( f26_arg1, f26_arg2 )
-			StartMenuGoBack( f26_arg1, f26_arg2 )
+			CoD.BaseUtility.SwitchModeOnMenu( controller )
+			RefreshLobbyRoom( menu, controller )
+			StartMenuGoBack( menu, controller )
 			return true
 		elseif IsPC() and not IsDemoPlaying() then
-			CoD.BaseUtility.SwitchModeOnMenu( f26_arg2 )
-			RefreshLobbyRoom( f26_arg1, f26_arg2 )
-			StartMenuGoBack( f26_arg1, f26_arg2 )
+			CoD.BaseUtility.SwitchModeOnMenu( controller )
+			RefreshLobbyRoom( menu, controller )
+			StartMenuGoBack( menu, controller )
 			return true
 		elseif IsPC() and IsDemoPlaying() then
-			CoD.DemoUtility.RunPauseCommandIfNotPlayerPause( f26_arg2 )
-			RefreshLobbyRoom( f26_arg1, f26_arg2 )
-			StartMenuGoBack( f26_arg1, f26_arg2 )
+			CoD.DemoUtility.RunPauseCommandIfNotPlayerPause( controller )
+			RefreshLobbyRoom( menu, controller )
+			StartMenuGoBack( menu, controller )
 			return true
 		elseif IsDemoPlaying() and not IsPC() then
-			RefreshLobbyRoom( f26_arg1, f26_arg2 )
-			StartMenuGoBack( f26_arg1, f26_arg2 )
+			RefreshLobbyRoom( menu, controller )
+			StartMenuGoBack( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f27_arg0, f27_arg1, f27_arg2 )
+	end, function ( element, menu, controller )
 		if InFrontend() then
-			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif not IsPC() and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x3996BAAC73C3F6D, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/dismiss", nil, nil )
 			return true
 		elseif IsPC() and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif IsPC() and IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif IsDemoPlaying() and not IsPC() then
-			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f28_arg0, f28_arg1, f28_arg2, f28_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( element, menu, controller, model )
 		if IsWarzone() and IsInGame() and not IsDemoPlaying() then
-			CoD.WZUtility.NextWeapon( f28_arg2 )
+			CoD.WZUtility.NextWeapon( controller )
 			return true
 		elseif IsInGame() and not IsLobbyNetworkModeLAN() and not IsDemoPlaying() and not IsPC() and not IsGameTypeCombatTraining() then
-			OpenOverlay( self, "Social_Main", f28_arg2, nil )
+			OpenOverlay( self, "Social_Main", controller, nil )
 			return true
 		else
 			
 		end
-	end, function ( f29_arg0, f29_arg1, f29_arg2 )
+	end, function ( element, menu, controller )
 		if IsWarzone() and IsInGame() and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x0, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "", nil, nil )
 			return false
 		elseif IsInGame() and not IsLobbyNetworkModeLAN() and not IsDemoPlaying() and not IsPC() and not IsGameTypeCombatTraining() then
-			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/social", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/social", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "weapnext", function ( f30_arg0, f30_arg1, f30_arg2, f30_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "weapnext", function ( element, menu, controller, model )
 		if IsWarzone() and IsInGame() and not IsDemoPlaying() then
-			CoD.WZUtility.NextWeapon( f30_arg2 )
+			CoD.WZUtility.NextWeapon( controller )
 			return true
 		else
 			
 		end
-	end, function ( f31_arg0, f31_arg1, f31_arg2 )
+	end, function ( element, menu, controller )
 		if IsWarzone() and IsInGame() and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "weapnext" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "weapnext" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "weapprev", function ( f32_arg0, f32_arg1, f32_arg2, f32_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "weapprev", function ( element, menu, controller, model )
 		if IsWarzone() and IsInGame() and not IsDemoPlaying() then
-			CoD.WZUtility.PrevWeapon( f32_arg2 )
+			CoD.WZUtility.PrevWeapon( controller )
 			return true
 		else
 			
 		end
-	end, function ( f33_arg0, f33_arg1, f33_arg2 )
+	end, function ( element, menu, controller )
 		if IsWarzone() and IsInGame() and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f33_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "weapprev" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "weapprev" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "weapswitchprimary", function ( f34_arg0, f34_arg1, f34_arg2, f34_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "weapswitchprimary", function ( element, menu, controller, model )
 		if IsPC() and IsWarzone() and IsInGame() and not IsDemoPlaying() then
-			CoD.WZUtility.SwitchToWeaponInSlot( f34_arg2, 0 )
+			CoD.WZUtility.SwitchToWeaponInSlot( controller, 0 )
 			return true
 		else
 			
 		end
-	end, function ( f35_arg0, f35_arg1, f35_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() and IsWarzone() and IsInGame() and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "weapswitchprimary" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "weapswitchprimary" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "weapswitchsecondary", function ( f36_arg0, f36_arg1, f36_arg2, f36_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "weapswitchsecondary", function ( element, menu, controller, model )
 		if IsPC() and IsWarzone() and IsInGame() and not IsDemoPlaying() then
-			CoD.WZUtility.SwitchToWeaponInSlot( f36_arg2, 1 )
+			CoD.WZUtility.SwitchToWeaponInSlot( controller, 1 )
 			return true
 		else
 			
 		end
-	end, function ( f37_arg0, f37_arg1, f37_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() and IsWarzone() and IsInGame() and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f37_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "weapswitchsecondary" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "weapswitchsecondary" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], "F1", function ( f38_arg0, f38_arg1, f38_arg2, f38_arg3 )
-		if not IsRepeatButtonPress( f38_arg3 ) and CoD.DirectorUtility.IsMainMode( f38_arg2, Enum.LobbyMainMode[0x7E41449995CD57E] ) and not InFrontend() and AlwaysFalse() then
-			CoD.StartMenuUtility.ShowClassSelectSlideout( f38_arg1, f38_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], "F1", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) and CoD.DirectorUtility.IsMainMode( controller, Enum.LobbyMainMode[0x7E41449995CD57E] ) and not InFrontend() and AlwaysFalse() then
+			CoD.StartMenuUtility.ShowClassSelectSlideout( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f39_arg0, f39_arg1, f39_arg2 )
-		if not IsRepeatButtonPress( nil ) and CoD.DirectorUtility.IsMainMode( f39_arg2, Enum.LobbyMainMode[0x7E41449995CD57E] ) and not InFrontend() and AlwaysFalse() then
-			CoD.Menu.SetButtonLabel( f39_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x0, nil, "F1" )
+	end, function ( element, menu, controller )
+		if not IsRepeatButtonPress( nil ) and CoD.DirectorUtility.IsMainMode( controller, Enum.LobbyMainMode[0x7E41449995CD57E] ) and not InFrontend() and AlwaysFalse() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "", nil, "F1" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], nil, function ( f40_arg0, f40_arg1, f40_arg2, f40_arg3 )
-		if IsPC() and IsGamepad( f40_arg2 ) then
-			RefreshLobbyRoom( f40_arg1, f40_arg2 )
-			StartMenuGoBack( f40_arg1, f40_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], nil, function ( element, menu, controller, model )
+		if IsPC() and IsGamepad( controller ) then
+			RefreshLobbyRoom( menu, controller )
+			StartMenuGoBack( menu, controller )
 			return true
 		else
-			RefreshLobbyRoom( f40_arg1, f40_arg2 )
-			StartMenuGoBack( f40_arg1, f40_arg2 )
+			RefreshLobbyRoom( menu, controller )
+			StartMenuGoBack( menu, controller )
 			return true
 		end
-	end, function ( f41_arg0, f41_arg1, f41_arg2 )
-		CoD.Menu.SetButtonLabel( f41_arg1, Enum.LUIButton[0x22361E23588705A], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "", nil, nil )
 		return false
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f42_arg0, f42_arg1, f42_arg2, f42_arg3 )
-		if CoD.StartMenuUtility.CanChangeWZStatsFilter( f42_arg1, self.TabFrame, f42_arg2 ) then
-			CoD.PlayerStatsUtility.UpdateWZStatsFilter( f42_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if CoD.StartMenuUtility.CanChangeWZStatsFilter( menu, self.TabFrame, controller ) then
+			CoD.PlayerStatsUtility.UpdateWZStatsFilter( controller )
 			PlaySoundAlias( "uin_stats_switch" )
 			return true
 		else
 			
 		end
-	end, function ( f43_arg0, f43_arg1, f43_arg2 )
-		if CoD.StartMenuUtility.CanChangeWZStatsFilter( f43_arg1, self.TabFrame, f43_arg2 ) then
-			CoD.Menu.SetButtonLabel( f43_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.StartMenuUtility.CanChangeWZStatsFilter( menu, self.TabFrame, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_contextual_2", function ( f44_arg0, f44_arg1, f44_arg2, f44_arg3 )
-		if IsPC() and CoD.PCUtility.CanShowLeaveGameButton( f44_arg1, f44_arg2 ) then
-			QuitPCGame_MP( self, f44_arg2, false )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_contextual_2", function ( element, menu, controller, model )
+		if IsPC() and CoD.PCUtility.CanShowLeaveGameButton( menu, controller ) then
+			QuitPCGame_MP( self, controller, false )
 			return true
 		else
 			
 		end
-	end, function ( f45_arg0, f45_arg1, f45_arg2 )
-		if IsPC() and CoD.PCUtility.CanShowLeaveGameButton( f45_arg1, f45_arg2 ) then
-			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		if IsPC() and CoD.PCUtility.CanShowLeaveGameButton( menu, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_contextual_2" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_contextual_1", function ( f46_arg0, f46_arg1, f46_arg2, f46_arg3 )
-		if IsPC() and CoD.PCUtility.CanShowStartWarzoneButton( f46_arg1, f46_arg2 ) then
-			CoD.WZUtility.StartWarzone( f46_arg2 )
-			SetControllerModelValue( f46_arg2, "hudItems.hasStartedWZMatch", true )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_contextual_1", function ( element, menu, controller, model )
+		if IsPC() and CoD.PCUtility.CanShowStartWarzoneButton( menu, controller ) then
+			CoD.WZUtility.StartWarzone( controller )
+			SetControllerModelValue( controller, "hudItems.hasStartedWZMatch", true )
 			return true
 		else
 			
 		end
-	end, function ( f47_arg0, f47_arg1, f47_arg2 )
-		if IsPC() and CoD.PCUtility.CanShowStartWarzoneButton( f47_arg1, f47_arg2 ) then
-			CoD.Menu.SetButtonLabel( f47_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if IsPC() and CoD.PCUtility.CanShowStartWarzoneButton( menu, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_contextual_1" )
 			return false
 		else
 			return false

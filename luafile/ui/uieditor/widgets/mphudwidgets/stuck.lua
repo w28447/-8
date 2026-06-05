@@ -13,14 +13,14 @@ CoD.Stuck.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5,
 	graphicflare:setRGB( 0.47, 0.08, 0.08 )
 	graphicflare:setAlpha( 0 )
 	graphicflare:setScale( 0.01, 0.01 )
-	graphicflare:setImage( RegisterImage( 0xA95C65FF6596C99 ) )
+	graphicflare:setImage( RegisterImage( "uie_ui_icon_waypoint_sticky_grenade_blastflare" ) )
 	self:addElement( graphicflare )
 	self.graphicflare = graphicflare
 	
 	local stuckImage = LUI.UIImage.new( 0.5, 0.5, -64, 64, 0.5, 0.5, -64, 64 )
 	stuckImage:setAlpha( 0 )
 	stuckImage:setScale( 0.15, 0.15 )
-	stuckImage:setImage( RegisterImage( 0x67ED81974932916 ) )
+	stuckImage:setImage( RegisterImage( "uie_ui_icon_waypoint_sticky_grenade" ) )
 	self:addElement( stuckImage )
 	self.stuckImage = stuckImage
 	
@@ -66,7 +66,7 @@ CoD.Stuck.__resetProperties = function ( f5_arg0 )
 	f5_arg0.stuckImage:setRGB( 1, 1, 1 )
 	f5_arg0.stuckImage:setAlpha( 0 )
 	f5_arg0.stuckImage:setScale( 0.15, 0.15 )
-	f5_arg0.stuckImage:setImage( RegisterImage( 0x67ED81974932916 ) )
+	f5_arg0.stuckImage:setImage( RegisterImage( "uie_ui_icon_waypoint_sticky_grenade" ) )
 	f5_arg0.graphicflare:setLeftRight( 0.5, 0.5, -128, 128 )
 	f5_arg0.graphicflare:setTopBottom( 0.5, 0.5, -128, 128 )
 	f5_arg0.graphicflare:setRGB( 0.47, 0.08, 0.08 )
@@ -668,7 +668,7 @@ CoD.Stuck.__clipsPerState = {
 			f53_arg0.stuckImage:setRGB( 0.69, 0.08, 0.08 )
 			f53_arg0.stuckImage:setAlpha( 1 )
 			f53_arg0.stuckImage:setScale( 0, 0 )
-			f53_arg0.stuckImage:setImage( RegisterImage( 0xCE38EA7E907DBD8 ) )
+			f53_arg0.stuckImage:setImage( RegisterImage( "uie_ui_icon_waypoint_sticky_sparrow" ) )
 			f53_local1( f53_arg0.stuckImage )
 			f53_arg0.nextClip = "DefaultClip"
 		end

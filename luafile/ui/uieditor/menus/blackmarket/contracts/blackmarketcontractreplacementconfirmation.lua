@@ -27,10 +27,10 @@ LUI.createMenu.BlackMarketContractReplacementConfirmation = function ( f1_arg0, 
 	FullscreenPopupTemplate.ButtonList:setWidgetType( CoD.ItemShopButton )
 	FullscreenPopupTemplate.ButtonList:setDataSource( "ContractReplacementOptions" )
 	FullscreenPopupTemplate.Subtitle:setText( Engine[0xF9F1239CFD921FE]( 0xA13F0805FDA9620 ) )
-	FullscreenPopupTemplate.ErrorSubtitle:setText( LocalizeToUpperString( 0x0 ) )
-	FullscreenPopupTemplate.WorkingTitle:setText( LocalizeToUpperString( 0x0 ) )
+	FullscreenPopupTemplate.ErrorSubtitle:setText( LocalizeToUpperString( "" ) )
+	FullscreenPopupTemplate.WorkingTitle:setText( LocalizeToUpperString( "" ) )
 	FullscreenPopupTemplate.Title:setText( LocalizeToUpperString( 0x23F5EBDD2190849 ) )
-	FullscreenPopupTemplate.DoneTitle:setText( LocalizeToUpperString( 0x0 ) )
+	FullscreenPopupTemplate.DoneTitle:setText( LocalizeToUpperString( "" ) )
 	self:addElement( FullscreenPopupTemplate )
 	self.FullscreenPopupTemplate = FullscreenPopupTemplate
 	
@@ -87,11 +87,11 @@ LUI.createMenu.BlackMarketContractReplacementConfirmation = function ( f1_arg0, 
 	self:addElement( Description )
 	self.Description = Description
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		GoBack( self, f7_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	FullscreenPopupTemplate.buttons:setModel( self.buttonModel, f1_arg0 )

@@ -1,5 +1,5 @@
 require( "x64:e587cf1bb800f1f" )
-require( "ui/uieditor/widgets/ItemShop/Reserves/reservesbribestack" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservesbribestack" )
 require( "ui/uieditor/widgets/scrollbars/horizontalcountertriggerprompts" )
 require( "ui/uieditor/widgets/scrollbars/horizontalcounter" )
 
@@ -47,42 +47,42 @@ CoD.ReservesBribeStackCarousel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( CrateCarousel, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "MWHEELDOWN", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		if not IsRepeatButtonPress( f5_arg3 ) then
-			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( f5_arg0, f5_arg2, true )
+	f1_arg0:AddButtonCallbackFunction( CrateCarousel, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "MWHEELDOWN", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) then
+			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( element, controller, true )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
+	end, function ( element, menu, controller )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x0, nil, "MWHEELDOWN" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "", nil, "MWHEELDOWN" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( CrateCarousel, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "MWHEELUP", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		if not IsRepeatButtonPress( f7_arg3 ) then
-			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( f7_arg0, f7_arg2, false )
+	f1_arg0:AddButtonCallbackFunction( CrateCarousel, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "MWHEELUP", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) then
+			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( element, controller, false )
 			return true
 		else
 			
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
+	end, function ( element, menu, controller )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x0, nil, "MWHEELUP" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "", nil, "MWHEELUP" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( CrateCarousel, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		OpenOverlay( self, "WeaponBribeSelection", f9_arg2 )
+	f1_arg0:AddButtonCallbackFunction( CrateCarousel, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		OpenOverlay( self, "WeaponBribeSelection", controller )
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( CrateCarousel, "updateDataSource", function ( element, controller, f11_arg2, f11_arg3 )

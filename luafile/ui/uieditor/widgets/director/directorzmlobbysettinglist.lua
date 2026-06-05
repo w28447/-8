@@ -127,24 +127,24 @@ CoD.DirectorZMLobbySettingList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f16_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( DirectorCustomLobbySettings, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		if IsLobbyHostOfCurrentMenu() and IsMouseOrKeyboard( f17_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( f17_arg0, f17_arg2 ) then
+	f1_arg0:AddButtonCallbackFunction( DirectorCustomLobbySettings, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLobbyHostOfCurrentMenu() and IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorCustom( element, controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.LobbyUtility.OpenEditGameRules( self, f17_arg2 )
+			CoD.LobbyUtility.OpenEditGameRules( self, controller )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.ShowDirectorCustom( f17_arg0, f17_arg2 ) then
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.ShowDirectorCustom( element, controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.LobbyUtility.OpenEditGameRules( self, f17_arg2 )
+			CoD.LobbyUtility.OpenEditGameRules( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		if IsLobbyHostOfCurrentMenu() and IsMouseOrKeyboard( f18_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( f18_arg0, f18_arg2 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLobbyHostOfCurrentMenu() and IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorCustom( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.ShowDirectorCustom( f18_arg0, f18_arg2 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x61333AE050EC552, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.ShowDirectorCustom( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/emblem_select_caps", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -304,24 +304,24 @@ CoD.DirectorZMLobbySettingList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f37_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( AddBotButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f38_arg0, f38_arg1, f38_arg2, f38_arg3 )
-		if IsLobbyHostOfCurrentMenu() and IsBooleanDvarSet( "lobby_hostBots" ) and IsMouseOrKeyboard( f38_arg2 ) and CoD.LobbyUtility.CanAddMoreBotsToLobby() then
+	f1_arg0:AddButtonCallbackFunction( AddBotButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLobbyHostOfCurrentMenu() and IsBooleanDvarSet( "lobby_hostBots" ) and IsMouseOrKeyboard( controller ) and CoD.LobbyUtility.CanAddMoreBotsToLobby() then
 			PlaySoundAlias( "uin_toggle_generic" )
-			AddLobbyBots( f38_arg1, f38_arg2 )
+			AddLobbyBots( menu, controller )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and IsBooleanDvarSet( "lobby_hostBots" ) and CoD.LobbyUtility.CanAddMoreBotsToLobby() then
 			PlaySoundAlias( "uin_toggle_generic" )
-			AddLobbyBots( f38_arg1, f38_arg2 )
+			AddLobbyBots( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f39_arg0, f39_arg1, f39_arg2 )
-		if IsLobbyHostOfCurrentMenu() and IsBooleanDvarSet( "lobby_hostBots" ) and IsMouseOrKeyboard( f39_arg2 ) and CoD.LobbyUtility.CanAddMoreBotsToLobby() then
-			CoD.Menu.SetButtonLabel( f39_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLobbyHostOfCurrentMenu() and IsBooleanDvarSet( "lobby_hostBots" ) and IsMouseOrKeyboard( controller ) and CoD.LobbyUtility.CanAddMoreBotsToLobby() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		elseif IsLobbyHostOfCurrentMenu() and IsBooleanDvarSet( "lobby_hostBots" ) and CoD.LobbyUtility.CanAddMoreBotsToLobby() then
-			CoD.Menu.SetButtonLabel( f39_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x61333AE050EC552, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/emblem_select_caps", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -457,24 +457,24 @@ CoD.DirectorZMLobbySettingList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f55_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( RemoveBotButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f56_arg0, f56_arg1, f56_arg2, f56_arg3 )
-		if IsLobbyHostOfCurrentMenu() and IsBooleanDvarSet( "lobby_hostBots" ) and IsMouseOrKeyboard( f56_arg2 ) then
+	f1_arg0:AddButtonCallbackFunction( RemoveBotButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLobbyHostOfCurrentMenu() and IsBooleanDvarSet( "lobby_hostBots" ) and IsMouseOrKeyboard( controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			RemoveLobbyBots( self, f56_arg0, f56_arg2, "", f56_arg1 )
+			RemoveLobbyBots( self, element, controller, "", menu )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() and IsBooleanDvarSet( "lobby_hostBots" ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			RemoveLobbyBots( self, f56_arg0, f56_arg2, "", f56_arg1 )
+			RemoveLobbyBots( self, element, controller, "", menu )
 			return true
 		else
 			
 		end
-	end, function ( f57_arg0, f57_arg1, f57_arg2 )
-		if IsLobbyHostOfCurrentMenu() and IsBooleanDvarSet( "lobby_hostBots" ) and IsMouseOrKeyboard( f57_arg2 ) then
-			CoD.Menu.SetButtonLabel( f57_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLobbyHostOfCurrentMenu() and IsBooleanDvarSet( "lobby_hostBots" ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		elseif IsLobbyHostOfCurrentMenu() and IsBooleanDvarSet( "lobby_hostBots" ) then
-			CoD.Menu.SetButtonLabel( f57_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x61333AE050EC552, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/emblem_select_caps", nil, "ui_confirm" )
 			return true
 		else
 			return false

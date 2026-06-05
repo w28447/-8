@@ -1,4 +1,4 @@
-require( "x64:683120446682173" )
+require( "ui/uieditor/widgets/notifications/notificationqueuewidgets/notificationrewardqueuewidgets/notification2xpblackmarketreward" )
 require( "ui/uieditor/widgets/notifications/notificationqueuewidgets/notificationrewardqueuewidgets/notification2xpreward" )
 require( "ui/uieditor/widgets/notifications/notificationqueuewidgets/notificationrewardqueuewidgets/notification2xpweaponreward" )
 require( "x64:7553d3c19005336" )
@@ -19,7 +19,7 @@ CoD.DoubleXPIconsFrontendSmallInternal.new = function ( f1_arg0, f1_arg1, f1_arg
 		{
 			stateName = "VisibleWZ",
 			condition = function ( menu, element, event )
-				return CoD.DoubleXPUtility.CurrentPlaylistHasDoubleXP( f1_arg1 ) and CoD.DoubleXPUtility.CurrentPlaylistHasMainMode( f1_arg1, Enum.eModes[0xBF1DCC8138A9D39] )
+				return CoD.DoubleXPUtility.CurrentPlaylistHasDoubleXP( f1_arg1 ) and CoD.DoubleXPUtility.CurrentPlaylistHasMainMode( f1_arg1, Enum.eModes.mode_warzone )
 			end
 		},
 		{

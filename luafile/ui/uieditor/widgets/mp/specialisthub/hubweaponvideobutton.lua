@@ -55,21 +55,21 @@ CoD.HubWeaponVideoButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local DotLeft = LUI.UIImage.new( 0, 0, -2, 2, 1, 1, -13, -9 )
 	DotLeft:setAlpha( 0.7 )
-	DotLeft:setImage( RegisterImage( 0x3854665C02218EF ) )
+	DotLeft:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame_dot" ) )
 	DotLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotLeft )
 	self.DotLeft = DotLeft
 	
 	local DotRight = LUI.UIImage.new( 1, 1, -2, 2, 1, 1, -13, -9 )
 	DotRight:setAlpha( 0.7 )
-	DotRight:setImage( RegisterImage( 0x3854665C02218EF ) )
+	DotRight:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame_dot" ) )
 	DotRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotRight )
 	self.DotRight = DotRight
 	
 	local BotBarAdd = LUI.UIImage.new( 0, 1, -4, 4, 0, 0, 608, 624 )
 	BotBarAdd:setAlpha( 0 )
-	BotBarAdd:setImage( RegisterImage( 0x5AD5487D499ECDD ) )
+	BotBarAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_frame" ) )
 	BotBarAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BotBarAdd )
 	self.BotBarAdd = BotBarAdd
@@ -99,7 +99,7 @@ CoD.HubWeaponVideoButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local schemaHeader = LUI.UIText.new( 0.5, 0.5, -211.5, 212.5, 0, 0, 385.5, 406.5 )
 	schemaHeader:setRGB( 0.92, 0.92, 0.92 )
-	schemaHeader:setText( LocalizeToUpperString( 0xC0091D9DC3CC019 ) )
+	schemaHeader:setText( LocalizeToUpperString( "heroes/schema" ) )
 	schemaHeader:setTTF( "ttmussels_regular" )
 	schemaHeader:setLetterSpacing( 4 )
 	schemaHeader:setAlignment( Engine[0x7F8853DC3581AA4]( Enum.LUIAlignment[0x58C8A85F2048829] ) )
@@ -130,7 +130,7 @@ CoD.HubWeaponVideoButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local itemName = LUI.UIText.new( 0, 0, 0, 393, 0, 0, -49.5, -13.5 )
 	itemName:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	itemName:setText( LocalizeToUpperString( 0xD272D013FC30895 ) )
+	itemName:setText( LocalizeToUpperString( "weapon/grapple" ) )
 	itemName:setTTF( "dinnext_regular" )
 	itemName:setLetterSpacing( 4 )
 	itemName:setAlignment( Engine[0x7F8853DC3581AA4]( Enum.LUIAlignment[0x58C8A85F2048829] ) )
@@ -140,7 +140,7 @@ CoD.HubWeaponVideoButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local mainHeader = LUI.UIText.new( 0, 0, 0, 392, 0, 0, -71.5, -53.5 )
 	mainHeader:setRGB( 0.92, 0.92, 0.92 )
 	mainHeader:setAlpha( 0.15 )
-	mainHeader:setText( LocalizeToUpperString( 0x3AF8C1C40386D94 ) )
+	mainHeader:setText( LocalizeToUpperString( "menu/weapons" ) )
 	mainHeader:setTTF( "ttmussels_regular" )
 	mainHeader:setLetterSpacing( 2 )
 	mainHeader:setAlignment( Engine[0x7F8853DC3581AA4]( Enum.LUIAlignment[0x58C8A85F2048829] ) )
@@ -149,7 +149,7 @@ CoD.HubWeaponVideoButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local VideoBotRuler = LUI.UIImage.new( 0.5, 0.5, -144, 144, 0, 0, 248, 256 )
 	VideoBotRuler:setAlpha( 0.5 )
-	VideoBotRuler:setImage( RegisterImage( 0x2B6B094F1B9DF67 ) )
+	VideoBotRuler:setImage( RegisterImage( "uie_ui_menu_specialist_hub_window_ruler" ) )
 	VideoBotRuler:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	VideoBotRuler:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( VideoBotRuler )
@@ -166,14 +166,14 @@ CoD.HubWeaponVideoButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local Connected = LUI.UIImage.new( 1, 1, -82, -6, 0, 0, 5, 21 )
 	Connected:setAlpha( 0.2 )
-	Connected:setImage( RegisterImage( 0xC16731A01194FC8 ) )
+	Connected:setImage( RegisterImage( "uie_ui_menu_window_loading_finished" ) )
 	Connected:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	Connected:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Connected )
 	self.Connected = Connected
 	
 	local ConnectedAdd = LUI.UIImage.new( 1, 1, -82, -6, 0, 0, 5, 21 )
-	ConnectedAdd:setImage( RegisterImage( 0xC16731A01194FC8 ) )
+	ConnectedAdd:setImage( RegisterImage( "uie_ui_menu_window_loading_finished" ) )
 	ConnectedAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ConnectedAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ConnectedAdd )
@@ -220,7 +220,7 @@ CoD.HubWeaponVideoButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local CommonTiledDotline = LUI.UIImage.new( 0, 0, 0, 459, 0, 0, 375, 377 )
 	CommonTiledDotline:setAlpha( 0.15 )
-	CommonTiledDotline:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	CommonTiledDotline:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	CommonTiledDotline:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	CommonTiledDotline:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonTiledDotline:setupNineSliceShader( 4, 2 )

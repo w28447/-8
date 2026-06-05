@@ -110,7 +110,7 @@ CoD.EmblemIconClipboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 			modelName = "LastInput"
 		} )
 	end, false )
-	Copy.label:setText( Engine[0xF9F1239CFD921FE]( 0x5942F6C8861D985 ) )
+	Copy.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_layer_copy" ) )
 	Copy:subscribeToGlobalModel( f1_arg1, "Controller", "back_button_image", function ( model )
 		local f11_local0 = model:get()
 		if f11_local0 ~= nil then
@@ -135,7 +135,7 @@ CoD.EmblemIconClipboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	allGroupsUsedText = LUI.UIText.new( 0, 0, 7, 244, 0, 0, 245, 270 )
 	allGroupsUsedText:setRGB( 1, 0, 0 )
 	allGroupsUsedText:setAlpha( 0 )
-	allGroupsUsedText:setText( Engine[0xF9F1239CFD921FE]( 0x7E72EBA24396E53 ) )
+	allGroupsUsedText:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_max_groups_used" ) )
 	allGroupsUsedText:setTTF( "ttmussels_regular" )
 	allGroupsUsedText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	allGroupsUsedText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -195,7 +195,7 @@ CoD.EmblemIconClipboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.CraftLayerCount = CraftLayerCount
 	
 	PaintshopChooseSide = CoD.PaintshopChooseSide.new( f1_arg0, f1_arg1, 0, 0, 7, 327, 0, 0, 3, 35 )
-	PaintshopChooseSide.text:setText( LocalizeToUpperString( 0x3F566919BED4406 ) )
+	PaintshopChooseSide.text:setText( LocalizeToUpperString( "menu/emblem_layer_clipboard" ) )
 	self:addElement( PaintshopChooseSide )
 	self.PaintshopChooseSide = PaintshopChooseSide
 	

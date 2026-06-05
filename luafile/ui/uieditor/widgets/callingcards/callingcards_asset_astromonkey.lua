@@ -9,12 +9,12 @@ CoD.CallingCards_Asset_AstroMonkey.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local monkey = LUI.UIImage.new( 0, 0, 0, 368, 0, 0, 0.5, 392.5 )
-	monkey:setImage( RegisterImage( 0x55643812B6C42DE ) )
+	monkey:setImage( RegisterImage( "uie_ui_icon_callingcards_signature_weapon_master_monkey" ) )
 	self:addElement( monkey )
 	self.monkey = monkey
 	
 	local teethShine = LUI.UIImage.new( 0, 0, 168, 216, 0, 0, 97.5, 145.5 )
-	teethShine:setImage( RegisterImage( 0xEF5336586531263 ) )
+	teethShine:setImage( RegisterImage( "uie_ui_icon_callingcards_signature_weapon_master_teethshines" ) )
 	teethShine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	teethShine:setShaderVector( 0, -0.12, 0.11, 0, 0 )
 	teethShine:setShaderVector( 1, 0.03, 0.03, 0, 0 )
@@ -26,7 +26,7 @@ CoD.CallingCards_Asset_AstroMonkey.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local monkeyShines = LUI.UIImage.new( 0, 0, 0, 368, 0, 0, 0, 392 )
 	monkeyShines:setAlpha( 0.4 )
-	monkeyShines:setImage( RegisterImage( 0xA5972EDA70D35BE ) )
+	monkeyShines:setImage( RegisterImage( "uie_ui_icon_callingcards_signature_weapon_master_monkeyshines" ) )
 	monkeyShines:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	monkeyShines:setShaderVector( 0, 0.2, 0.24, 0, 0 )
 	monkeyShines:setShaderVector( 1, 0.03, 0.03, 0, 0 )
@@ -38,7 +38,7 @@ CoD.CallingCards_Asset_AstroMonkey.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local monkeyShines2 = LUI.UIImage.new( 0, 0, 0, 368, 0, 0, 0, 392 )
 	monkeyShines2:setAlpha( 0.65 )
-	monkeyShines2:setImage( RegisterImage( 0xA5972EDA70D35BE ) )
+	monkeyShines2:setImage( RegisterImage( "uie_ui_icon_callingcards_signature_weapon_master_monkeyshines" ) )
 	monkeyShines2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	monkeyShines2:setShaderVector( 0, 0.83, 0.91, 0, 0 )
 	monkeyShines2:setShaderVector( 1, 0.03, 0.03, 0, 0 )

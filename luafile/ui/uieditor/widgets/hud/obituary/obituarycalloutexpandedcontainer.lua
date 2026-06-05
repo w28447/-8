@@ -47,7 +47,7 @@ CoD.ObituaryCalloutExpandedContainer.new = function ( f1_arg0, f1_arg1, f1_arg2,
 			modelName = "lobbyRoot.lobbyNav"
 		} )
 	end, false )
-	ObituaryKillerIdentity.KillerLabel:setText( LocalizeToUpperString( 0x161ED05A4E04839 ) )
+	ObituaryKillerIdentity.KillerLabel:setText( LocalizeToUpperString( "warzone/killed" ) )
 	ObituaryKillerIdentity:linkToElementModel( self, nil, false, function ( model )
 		ObituaryKillerIdentity:setModel( model, f1_arg1 )
 	end )

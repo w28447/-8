@@ -39,52 +39,52 @@ CoD.OverCapacityList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( itemList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		if IsMouseOrKeyboard( f5_arg2 ) then
-			RemoveOverflowItemFromClass( f5_arg1, self, f5_arg0, f5_arg2 )
-			CoD.CACUtility.EquippedItemsChanged( f5_arg1, f5_arg2 )
+	f1_arg0:AddButtonCallbackFunction( itemList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) then
+			RemoveOverflowItemFromClass( menu, self, element, controller )
+			CoD.CACUtility.EquippedItemsChanged( menu, controller )
 			PlaySoundAlias( "cac_overload_select" )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		if IsMouseOrKeyboard( f6_arg2 ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "MOUSE1" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( itemList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		if IsMouseOrKeyboard( f7_arg2 ) then
-			RemoveOverflowItemFromClass( f7_arg1, self, f7_arg0, f7_arg2 )
-			CoD.CACUtility.EquippedItemsChanged( f7_arg1, f7_arg2 )
+	f1_arg0:AddButtonCallbackFunction( itemList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) then
+			RemoveOverflowItemFromClass( menu, self, element, controller )
+			CoD.CACUtility.EquippedItemsChanged( menu, controller )
 			PlaySoundAlias( "cac_overload_select" )
 			return true
 		else
 			
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		if IsMouseOrKeyboard( f8_arg2 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( itemList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		if IsGamepad( f9_arg2 ) then
-			RemoveOverflowItemFromClass( f9_arg1, self, f9_arg0, f9_arg2 )
-			CoD.CACUtility.EquippedItemsChanged( f9_arg1, f9_arg2 )
+	f1_arg0:AddButtonCallbackFunction( itemList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if IsGamepad( controller ) then
+			RemoveOverflowItemFromClass( menu, self, element, controller )
+			CoD.CACUtility.EquippedItemsChanged( menu, controller )
 			PlaySoundAlias( "cac_overload_select" )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		if IsGamepad( f10_arg2 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x679ACA6FFC6C8F3, nil, nil )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/remove", nil, nil )
 			return true
 		else
 			return false

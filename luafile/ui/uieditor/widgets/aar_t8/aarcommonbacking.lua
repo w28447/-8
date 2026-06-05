@@ -39,7 +39,7 @@ CoD.AARCommonBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local FuiBox02Right = LUI.UIImage.new( 1, 1, -84, -50, 1, 1, -10, -44 )
 	FuiBox02Right:setAlpha( 0.05 )
 	FuiBox02Right:setZRot( -90 )
-	FuiBox02Right:setImage( RegisterImage( 0x811A80C0AADA825 ) )
+	FuiBox02Right:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
 	FuiBox02Right:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiBox02Right:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox02Right )

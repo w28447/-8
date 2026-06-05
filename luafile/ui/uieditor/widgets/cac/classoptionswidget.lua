@@ -35,7 +35,7 @@ CoD.ClassOptionsWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local featureOverlayButtonMouseOnly = nil
 	
 	featureOverlayButtonMouseOnly = CoD.featureOverlay_Button_MouseOnly.new( f1_arg0, f1_arg1, 1, 1, -525, -365, 1, 1, -60, 0 )
-	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0x78D439E1B360368 ) )
+	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/back_caps" ) )
 	featureOverlayButtonMouseOnly:registerEventHandler( "gain_focus", function ( element, event )
 		local f2_local0 = nil
 		if element.gainFocus then
@@ -46,11 +46,11 @@ CoD.ClassOptionsWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		GoBack( self, f3_arg2 )
+	f1_arg0:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( featureOverlayButtonMouseOnly )
@@ -96,12 +96,12 @@ CoD.ClassOptionsWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ClassSetOptionsList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		ProcessListAction( self, f8_arg0, f8_arg2, f8_arg1 )
+	f1_arg0:AddButtonCallbackFunction( ClassSetOptionsList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		ProcessListAction( self, element, controller, menu )
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( ClassSetOptionsList )
@@ -142,7 +142,7 @@ CoD.ClassOptionsWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	ClassNamelLabel = LUI.UIText.new( 0.5, 0.5, -192.5, 192.5, 0, 0, 146, 175 )
 	ClassNamelLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	ClassNamelLabel:setAlpha( 0.2 )
-	ClassNamelLabel:setText( LocalizeToUpperString( 0xDD163B6B797AB91 ) )
+	ClassNamelLabel:setText( LocalizeToUpperString( "menu/class_name" ) )
 	ClassNamelLabel:setTTF( "ttmussels_regular" )
 	ClassNamelLabel:setLetterSpacing( 4 )
 	ClassNamelLabel:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -159,7 +159,7 @@ CoD.ClassOptionsWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	ClassOptionsTitle = LUI.UIText.new( 0.5, 0.5, -192.5, 192.5, 0, 0, 40, 79 )
 	ClassOptionsTitle:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
-	ClassOptionsTitle:setText( LocalizeToUpperString( 0x27F19FF8EF11A44 ) )
+	ClassOptionsTitle:setText( LocalizeToUpperString( "menu/class_options" ) )
 	ClassOptionsTitle:setTTF( "ttmussels_demibold" )
 	ClassOptionsTitle:setLetterSpacing( 2 )
 	ClassOptionsTitle:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -220,12 +220,12 @@ CoD.ClassOptionsWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f13_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ClassOptionsList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
-		ProcessListAction( self, f14_arg0, f14_arg2, f14_arg1 )
+	f1_arg0:AddButtonCallbackFunction( ClassOptionsList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		ProcessListAction( self, element, controller, menu )
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( ClassOptionsList )
@@ -257,18 +257,18 @@ CoD.ClassOptionsWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f17_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f18_arg0, f18_arg1, f18_arg2, f18_arg3 )
-		GoBack( self, f18_arg2 )
+	f1_arg0:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f19_arg0, f19_arg1, f19_arg2 )
-		CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
-		GoBack( self, f20_arg2 )
+	f1_arg0:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f21_arg0, f21_arg1, f21_arg2 )
-		CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( PCSmallCloseButton )

@@ -55,7 +55,7 @@ CoD.DirectorContractsButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local MiddleText = LUI.UIText.new( 0, 1, 16, -16, 0.5, 0.5, 23, 47 )
 	MiddleText:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	MiddleText:setText( LocalizeToUpperString( 0x616EBD2B8F67E64 ) )
+	MiddleText:setText( LocalizeToUpperString( "blackmarket/contracts" ) )
 	MiddleText:setTTF( "ttmussels_regular" )
 	MiddleText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	MiddleText:setLetterSpacing( 3 )

@@ -18,7 +18,7 @@ CoD.TabletLocationSelector_HintText.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.FEButtonPanel0 = FEButtonPanel0
 	
 	local CursorHintText = LUI.UIText.new( 0.5, 0.5, -540, 540, 0.5, 0.5, -11.5, 6.5 )
-	CursorHintText:setText( Engine[0xF9F1239CFD921FE]( 0xC1D1D888C9B0714 ) )
+	CursorHintText:setText( Engine[0xF9F1239CFD921FE]( "platform/press_to_set_airstrike" ) )
 	CursorHintText:setTTF( "0arame_mono_stencil" )
 	CursorHintText:setLetterSpacing( 0.5 )
 	CursorHintText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

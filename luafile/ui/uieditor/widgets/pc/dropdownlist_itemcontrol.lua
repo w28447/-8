@@ -46,16 +46,16 @@ CoD.DropDownList_ItemControl.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( center, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		if not CoD.PCUtility.IsUnavailable( self, f4_arg2 ) then
-			CoD.PCWidgetUtility.CreateDropdown( self, self, f4_arg2, f4_arg1, "DropDown_ItemList" )
+	f1_arg0:AddButtonCallbackFunction( center, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not CoD.PCUtility.IsUnavailable( self, controller ) then
+			CoD.PCWidgetUtility.CreateDropdown( self, self, controller, menu, "DropDown_ItemList" )
 			return true
 		else
 			
 		end
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		if not CoD.PCUtility.IsUnavailable( self, f5_arg2 ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not CoD.PCUtility.IsUnavailable( self, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false

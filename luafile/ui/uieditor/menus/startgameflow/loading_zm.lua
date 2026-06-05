@@ -45,58 +45,58 @@ LUI.createMenu.Loading_ZM = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( f2_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		CoD.Menu.UpdateButtonShownState( f2_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 	end, false )
-	self:registerEventHandler( "loading_startplay", function ( element, event )
+	self:registerEventHandler( "loading_startplay", function ( self, event )
 		local f3_local0 = nil
-		CoD.HUDUtility.StartPlay( element, f1_arg0 )
+		CoD.HUDUtility.StartPlay( self, f1_arg0 )
 		if not f3_local0 then
-			f3_local0 = element:dispatchEventToChildren( event )
+			f3_local0 = self:dispatchEventToChildren( event )
 		end
 		return f3_local0
 	end )
-	self:registerEventHandler( "loading_nomovie_startplay", function ( element, event )
+	self:registerEventHandler( "loading_nomovie_startplay", function ( self, event )
 		local f4_local0 = nil
 		if IsZombies() and IsSplitscreenAndInGame( f1_arg0 ) then
-			CoD.HUDUtility.StartPlay( element, f1_arg0 )
-			HideWidget( element )
+			CoD.HUDUtility.StartPlay( self, f1_arg0 )
+			HideWidget( self )
 		end
 		if not f4_local0 then
-			f4_local0 = element:dispatchEventToChildren( event )
+			f4_local0 = self:dispatchEventToChildren( event )
 		end
 		return f4_local0
 	end )
-	self:registerEventHandler( "loading_displaycontinue", function ( element, event )
+	self:registerEventHandler( "loading_displaycontinue", function ( self, event )
 		local f5_local0 = nil
 		SetGlobalModelValueTrue( "mapLoaded" )
 		if not f5_local0 then
-			f5_local0 = element:dispatchEventToChildren( event )
+			f5_local0 = self:dispatchEventToChildren( event )
 		end
 		return f5_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if CoD.ModelUtility.IsGlobalModelValueTrue( "mapLoaded" ) then
-			CoD.HUDUtility.StartPlay( f6_arg0, f6_arg2 )
+			CoD.HUDUtility.StartPlay( element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
+	end, function ( element, menu, controller )
 		if CoD.ModelUtility.IsGlobalModelValueTrue( "mapLoaded" ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ESCAPE", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ESCAPE", function ( element, menu, controller, model )
 		if CoD.ModelUtility.IsGlobalModelValueTrue( "mapLoaded" ) then
-			CoD.HUDUtility.StartPlay( f8_arg0, f8_arg2 )
+			CoD.HUDUtility.StartPlay( element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
+	end, function ( element, menu, controller )
 		if CoD.ModelUtility.IsGlobalModelValueTrue( "mapLoaded" ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ESCAPE" )
 			return false
 		else
 			return false

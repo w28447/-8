@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:2b3a36f75bb6e0e" )
+require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settingsliderarrow" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmaincorners" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )
 
@@ -53,7 +53,7 @@ CoD.StartMenu_Options_SettingSliderList.new = function ( f1_arg0, f1_arg1, f1_ar
 	local OptionCountBorder = LUI.UIImage.new( 0, 0.61, 0, 0, 1, 1, -4, 0 )
 	OptionCountBorder:setRGB( 0.3, 0.29, 0.28 )
 	OptionCountBorder:setAlpha( 0.9 )
-	OptionCountBorder:setImage( RegisterImage( 0x1B69BB6285C5BBB ) )
+	OptionCountBorder:setImage( RegisterImage( "uie_hud_core_loadout_panel1" ) )
 	OptionCountBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0x31E7B3C72564429 ) )
 	OptionCountBorder:setShaderVector( 0, 0, 0, 0.55, 0.13 )
 	OptionCountBorder:setShaderVector( 2, 0, 1, 0, 1 )
@@ -69,7 +69,7 @@ CoD.StartMenu_Options_SettingSliderList.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local CurrentOptionBorder = LUI.UIImage.new( 0, 0.61, 0, 0, 1, 1, -4, 0 )
 	CurrentOptionBorder:setRGB( 0.8, 0.8, 0.8 )
-	CurrentOptionBorder:setImage( RegisterImage( 0x1B69BB6285C5BBB ) )
+	CurrentOptionBorder:setImage( RegisterImage( "uie_hud_core_loadout_panel1" ) )
 	CurrentOptionBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0x31E7B3C72564429 ) )
 	CurrentOptionBorder:setShaderVector( 0, 0, 0, 0.55, 0.13 )
 	CurrentOptionBorder:setupNineSliceShader( 25, 4 )
@@ -100,11 +100,11 @@ CoD.StartMenu_Options_SettingSliderList.new = function ( f1_arg0, f1_arg1, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f6_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( RightArrow, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		SendButtonPressToMenuEx( f7_arg1, f7_arg2, Enum.LUIButton[0x571F08AD84807E0] )
+	f1_arg0:AddButtonCallbackFunction( RightArrow, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		SendButtonPressToMenuEx( menu, controller, Enum.LUIButton[0x571F08AD84807E0] )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( RightArrow )
@@ -122,11 +122,11 @@ CoD.StartMenu_Options_SettingSliderList.new = function ( f1_arg0, f1_arg1, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f9_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( LeftArrow, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		SendButtonPressToMenuEx( f10_arg1, f10_arg2, Enum.LUIButton[0x57783F8DA4AAEF] )
+	f1_arg0:AddButtonCallbackFunction( LeftArrow, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		SendButtonPressToMenuEx( menu, controller, Enum.LUIButton[0x57783F8DA4AAEF] )
 		return true
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( LeftArrow )

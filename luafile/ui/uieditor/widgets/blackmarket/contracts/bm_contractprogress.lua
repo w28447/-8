@@ -13,7 +13,7 @@ CoD.BM_ContractProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local MeterGlowComplete = LUI.UIImage.new( 0.5, 0.5, -134, 134, 0.5, 0.5, -180, 88 )
 	MeterGlowComplete:setAlpha( 0 )
-	MeterGlowComplete:setImage( RegisterImage( 0x34F2CCA3975B1DE ) )
+	MeterGlowComplete:setImage( RegisterImage( "uie_ui_menu_contracts_ring_glow_complete" ) )
 	MeterGlowComplete:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_add" ) )
 	MeterGlowComplete:setShaderVector( 0, 1, 0, 0, 0 )
 	MeterGlowComplete:setShaderVector( 1, 0.5, 0, 0, 0 )
@@ -42,13 +42,13 @@ CoD.BM_ContractProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local MeterBack = LUI.UIImage.new( 0.5, 0.5, -116, 116, 0.5, 0.5, -162, 70 )
 	MeterBack:setRGB( 0.45, 0.45, 0.45 )
 	MeterBack:setAlpha( 0.96 )
-	MeterBack:setImage( RegisterImage( 0xE30D845B50DC8C6 ) )
+	MeterBack:setImage( RegisterImage( "uie_ui_menu_contracts_ring_empty" ) )
 	MeterBack:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( MeterBack )
 	self.MeterBack = MeterBack
 	
 	local MeterFrontIngame = LUI.UIImage.new( 0.5, 0.5, -116, 116, 0.5, 0.5, -162, 70 )
-	MeterFrontIngame:setImage( RegisterImage( 0xC43B5C942D23F49 ) )
+	MeterFrontIngame:setImage( RegisterImage( "uie_ui_menu_contracts_ring_delta" ) )
 	MeterFrontIngame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	MeterFrontIngame:setShaderVector( 1, 0.5, 0, 0, 0 )
 	MeterFrontIngame:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -64,7 +64,7 @@ CoD.BM_ContractProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.MeterFrontIngame = MeterFrontIngame
 	
 	local MeterFront = LUI.UIImage.new( 0.5, 0.5, -116, 116, 0.5, 0.5, -162, 70 )
-	MeterFront:setImage( RegisterImage( 0x1C340BF43C52340 ) )
+	MeterFront:setImage( RegisterImage( "uie_ui_menu_contracts_ring_fill" ) )
 	MeterFront:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	MeterFront:setShaderVector( 1, 0.5, 0, 0, 0 )
 	MeterFront:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -81,7 +81,7 @@ CoD.BM_ContractProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local MeterFrontComplete = LUI.UIImage.new( 0.5, 0.5, -116, 116, 0.5, 0.5, -162, 70 )
 	MeterFrontComplete:setAlpha( 0 )
-	MeterFrontComplete:setImage( RegisterImage( 0xA0C36633D1572BA ) )
+	MeterFrontComplete:setImage( RegisterImage( "uie_ui_menu_contracts_ring_complete" ) )
 	MeterFrontComplete:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	MeterFrontComplete:setShaderVector( 0, 1, 0, 0, 0 )
 	MeterFrontComplete:setShaderVector( 1, 0.5, 0, 0, 0 )

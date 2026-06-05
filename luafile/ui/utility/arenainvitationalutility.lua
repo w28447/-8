@@ -55,12 +55,12 @@ CoD.ArenaInvitationalUtility.GetRoundSeriesAndGameCount = function ( f3_arg0, f3
 		return 
 	end
 	local f3_local6 = f3_local0[0xE4C4CCD9A9777BA]
-	local f3_local1 = f3_local0[0x59DF2BAFFBFC38]
+	local f3_local1 = f3_local0.objective
 	local f3_local2 = Engine[0xE00B2F29271C60B]( f3_local0[0x5BADF6732342CB6] )
 	local f3_local3 = f3_local2.serieslist
 	local f3_local4 = {}
 	for f3_local9, f3_local10 in ipairs( f3_local3 ) do
-		table.insert( f3_local4, f3_local10[0x792C1F90C3A5C7F] )
+		table.insert( f3_local4, f3_local10.gametype )
 	end
 	return f3_local4, f3_local6, f3_local1
 end

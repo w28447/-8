@@ -13,7 +13,7 @@ CoD.DirectorMapSelectItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Button = CoD.DirectorZMMapSelectItemOffline_Internal.new( f1_arg0, f1_arg1, 0, 0, 0, 246, 0, 0, 0, 104 )
-	Button.FeaturedTag:setText( LocalizeToUpperString( 0x7E251454EDF7A26 ) )
+	Button.FeaturedTag:setText( LocalizeToUpperString( "menu/public_tab" ) )
 	Button:linkToElementModel( self, nil, false, function ( model )
 		Button:setModel( model, f1_arg1 )
 	end )

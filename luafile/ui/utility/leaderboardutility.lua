@@ -5,53 +5,53 @@ CoD.LeaderboardUtility.PLAYER_POSITION_IN_LEADERBOARD = 6
 CoD.LeaderboardUtility.DEFAULT_ZM_MAPS_NUM_PLAYERS = 1
 CoD.LeaderboardUtility.TOP = 0
 CoD.LeaderboardUtility.BOTTOM = 1
-CoD.LeaderboardUtility.LB_ZM_GB_PERKS_DRANK_TITLE = 0x0
-CoD.LeaderboardUtility.LB_ZM_GB_PERKS_DRANK_TITLE = 0x4CC7C08B5DC2887
+CoD.LeaderboardUtility.LB_ZM_GB_PERKS_DRANK_TITLE = ""
+CoD.LeaderboardUtility.LB_ZM_GB_PERKS_DRANK_TITLE = "menu/lb_zmglobal_perks_drank"
 CoD.LeaderboardUtility.DefaultTrackTypes = {
 	Enum.LbTrackType[0x55ACA16E2268D1A],
 	Enum.LbTrackType[0x4ADDC81D8048FD],
 	Enum.LbTrackType[0x59A119C31BDA10B]
 }
 CoD.LeaderboardUtility.leaderboardListCore = {
-	0xEFEF03E4254449A,
-	0x9A021342E7D43D2,
-	0x1C8643AF845B430,
-	0xC7E01EC88252CA5,
-	0xD3DB133DE779F81,
-	"LB_MP_GM_KOTH",
-	0x1E74B3AF8603A44,
-	0xA041D1F27A5D913,
-	0x3921533D003B197,
+	"lb_mp_gb_score",
+	"lb_mp_gm_tdm",
+	"lb_mp_gm_dm",
+	"lb_mp_gm_conf",
+	"lb_mp_gm_dom",
+	"lb_mp_gm_koth",
+	"lb_mp_gm_sd",
+	"lb_mp_gm_escort",
+	"lb_mp_gm_gun",
 	"lb_mp_gm_heist",
-	0x305F1C4D44A197C
+	"lb_mp_gm_control"
 }
 CoD.LeaderboardUtility.leaderboardListHardcore = {
-	"LB_MP_GB_SCORE_HC",
-	"LB_MP_GM_TDM_HC",
-	0x587D5708CBC82C4,
-	0x9C1F35350983A03,
-	0x6FD89D1041D210F,
-	0xECE28903B4C4878,
-	0xF937E5C8BD79380
+	"lb_mp_gb_score_hc",
+	"lb_mp_gm_tdm_hc",
+	"lb_mp_gm_dm_hc",
+	"lb_mp_gm_conf_hc",
+	"lb_mp_gm_dom_hc",
+	"lb_mp_gm_sd_hc",
+	"lb_mp_gm_control_hc"
 }
 CoD.LeaderboardUtility.leaderboardListArena = {
-	0x684509A5266DAA5,
-	0x437480E4F75EEC,
-	0x64D7F553AF03804
+	"lb_mp_gm_koth_arena",
+	"lb_mp_gm_sd_arena",
+	"lb_mp_gm_control_arena"
 }
 CoD.LeaderboardUtility.leaderboardListZMGlobal = {
 	"lb_zm_gb"
 }
 CoD.LeaderboardUtility.leaderboardListZMGauntlet = {
-	0x4789E547635C17C,
-	0x42F5184A8BB8CF9,
+	"lb_zm_ga_zodt8",
+	"lb_zm_ga_towers",
 	"lb_zm_ga_office",
-	0x4EAA0418FCFD3FC,
-	0x5205CE55E1DA16C,
+	"lb_zm_ga_escape",
+	"lb_zm_ga_mansion",
 	"lb_zm_ga_red",
-	0x9EE8CC91C547BB9,
-	0x378C349A2F89514,
-	0x444F6E41BCB1A81
+	"lb_zm_ga_zodt8_var1",
+	"lb_zm_ga_white",
+	"lb_zm_ga_orange"
 }
 CoD.LeaderboardUtility.leaderboardListZMMaps = {}
 CoD.LeaderboardUtility.leaderboardListWZModes = {
@@ -60,21 +60,21 @@ CoD.LeaderboardUtility.leaderboardListWZModes = {
 	0x8F29CAA4F9941D5
 }
 CoD.LeaderboardUtility.leaderboardTab = {
-	["core"] = {
+	core = {
 		leaderboardList = CoD.LeaderboardUtility.leaderboardListCore,
-		leaderboardHeaderText = 0xA293EB64E03142F
+		leaderboardHeaderText = "menu/lb_tab_core_caps"
 	},
-	[0xB4E65040CD1305B] = {
+	hardcore = {
 		leaderboardList = CoD.LeaderboardUtility.leaderboardListHardcore,
-		leaderboardHeaderText = 0x77B92AED87A9600
+		leaderboardHeaderText = "menu/lb_tab_hardcore_caps"
 	},
-	[0x5D8D7B6A4C553C8] = {
+	arena = {
 		leaderboardList = CoD.LeaderboardUtility.leaderboardListArena,
-		leaderboardHeaderText = 0x866F2CC78940BCF
+		leaderboardHeaderText = "menu/lb_tab_arena_caps"
 	},
 	[0xA6EBC84C86D7FC6] = {
 		leaderboardList = CoD.LeaderboardUtility.leaderboardListZMGlobal,
-		leaderboardHeaderText = 0x8FDE5CC46116294
+		leaderboardHeaderText = "menu/lb_tab_zmglobal_caps"
 	},
 	[0x351883667F5B15B] = {
 		leaderboardList = CoD.LeaderboardUtility.leaderboardListZMGauntlet,
@@ -89,8 +89,8 @@ CoD.LeaderboardUtility.GetLeaderboardInfo = function ( f1_arg0 )
 	if not CoD.LeaderboardUtility.LeaderboardInfo then
 		CoD.LeaderboardUtility.LeaderboardInfo = {}
 		local f1_local0 = function ( f2_arg0, f2_arg1, f2_arg2, f2_arg3 )
-			local f2_local0 = CoD.GameTypeUtility.GetGameTypeValue( f2_arg3, "nameRef", 0x0 )
-			local f2_local1 = CoD.GameTypeUtility.GetGameTypeValue( f2_arg3, "image", 0x0 )
+			local f2_local0 = CoD.GameTypeUtility.GetGameTypeValue( f2_arg3, "nameRef", "" )
+			local f2_local1 = CoD.GameTypeUtility.GetGameTypeValue( f2_arg3, "image", "" )
 			CoD.LeaderboardUtility.LeaderboardInfo[f2_arg0] = {}
 			CoD.LeaderboardUtility.LeaderboardInfo[f2_arg0].title = f2_local0
 			CoD.LeaderboardUtility.LeaderboardInfo[f2_arg0].icon = f2_local1
@@ -108,22 +108,22 @@ CoD.LeaderboardUtility.GetLeaderboardInfo = function ( f1_arg0 )
 			CoD.LeaderboardUtility.LeaderboardInfo[f2_arg2].trackTypes = CoD.LeaderboardUtility.DefaultTrackTypes
 		end
 		
-		f1_local0( 0x9A021342E7D43D2, "LB_MP_GM_TDM_HC", 0xCCA8BEC64E44876, 0x6E8B11944572258 )
-		f1_local0( 0x1C8643AF845B430, 0x587D5708CBC82C4, 0xD4577D7A38160A0, "dm" )
-		f1_local0( 0xD3DB133DE779F81, 0x6FD89D1041D210F, "LB_MP_GM_DOM_ARENA", 0xAAF4118F474831B )
-		f1_local0( 0x1E74B3AF8603A44, 0xECE28903B4C4878, 0x437480E4F75EEC, "sd" )
-		f1_local0( "LB_MP_GM_CTF", 0xEE348E57439D79E, 0x665027CFD36A1A2, 0x5B707190CBF683C )
-		f1_local0( 0xD518D33DE880B5F, 0xA85485E8DF5DD21, 0x456CC65AB4F1E1F, 0xA9A2518F461F77D )
-		f1_local0( "LB_MP_GM_KOTH", 0x2600DDDA44669D7, 0x684509A5266DAA5, "koth" )
-		f1_local0( 0xC7E01EC88252CA5, 0x9C1F35350983A03, 0xE40C7C87AF2CA49, "conf" )
-		f1_local0( 0x6A3FFF2696DF3AE, "LB_MP_GM_BALL_HC", 0xA2F14A9BE3602A, 0xA13D89BA9FBCA24 )
-		f1_local0( 0xA041D1F27A5D913, 0xC7B52324D6947A5, 0x5C9E9AD2E1FC42B, 0xB60DB445FBF5155 )
-		f1_local0( 0x3921533D003B197, "LB_MP_GM_GUN_HC", 0xADC15C75B399B97, 0x5194D18FAD99705 )
-		f1_local0( "lb_mp_gm_heist", 0x35A25A6313758BC, "lb_mp_gm_heist", 0x32C064CAF1E3CA6 )
-		f1_local0( 0x305F1C4D44A197C, 0xF937E5C8BD79380, 0x64D7F553AF03804, "control" )
+		f1_local0( "lb_mp_gm_tdm", "lb_mp_gm_tdm_hc", "lb_mp_gm_tdm_arena", "tdm" )
+		f1_local0( "lb_mp_gm_dm", "lb_mp_gm_dm_hc", "lb_mp_gm_dm_arena", "dm" )
+		f1_local0( "lb_mp_gm_dom", "lb_mp_gm_dom_hc", "lb_mp_gm_dom_arena", "dom" )
+		f1_local0( "lb_mp_gm_sd", "lb_mp_gm_sd_hc", "lb_mp_gm_sd_arena", "sd" )
+		f1_local0( "lb_mp_gm_ctf", "lb_mp_gm_ctf_hc", "lb_mp_gm_ctf_arena", "ctf" )
+		f1_local0( "lb_mp_gm_dem", "lb_mp_gm_dem_hc", "lb_mp_gm_dem_arena", "dem" )
+		f1_local0( "lb_mp_gm_koth", "lb_mp_gm_koth_hc", "lb_mp_gm_koth_arena", "koth" )
+		f1_local0( "lb_mp_gm_conf", "lb_mp_gm_conf_hc", "lb_mp_gm_conf_arena", "conf" )
+		f1_local0( "lb_mp_gm_ball", "lb_mp_gm_ball_hc", "lb_mp_gm_ball_arena", "ball" )
+		f1_local0( "lb_mp_gm_escort", "lb_mp_gm_escort_hc", "lb_mp_gm_escort_arena", "escort" )
+		f1_local0( "lb_mp_gm_gun", "lb_mp_gm_gun_hc", "lb_mp_gm_gun_arena", "gun" )
+		f1_local0( "lb_mp_gm_heist", "lb_mp_gm_heist_hc", "lb_mp_gm_heist", "bounty" )
+		f1_local0( "lb_mp_gm_control", "lb_mp_gm_control_hc", "lb_mp_gm_control_arena", "control" )
 		local f1_local1 = function ( f3_arg0, f3_arg1, f3_arg2 )
-			local f3_local0 = CoD.MapUtility.GetMapValue( f3_arg1, "mapName", 0x0 )
-			local f3_local1 = CoD.MapUtility.GetMapValue( f3_arg1, "previewImage", 0x0 )
+			local f3_local0 = CoD.MapUtility.GetMapValue( f3_arg1, "mapName", "" )
+			local f3_local1 = CoD.MapUtility.GetMapValue( f3_arg1, "previewImage", "" )
 			CoD.LeaderboardUtility.LeaderboardInfo[f3_arg0] = {}
 			CoD.LeaderboardUtility.LeaderboardInfo[f3_arg0].title = f3_local0
 			CoD.LeaderboardUtility.LeaderboardInfo[f3_arg0].icon = f3_local1
@@ -133,12 +133,12 @@ CoD.LeaderboardUtility.GetLeaderboardInfo = function ( f1_arg0 )
 			}
 		end
 		
-		f1_local1( 0x4F315BDBA60FE82, 0x7E9384351288E52, CoD.DLCBits.CONTENT_ORIGINALMAPS )
-		f1_local1( 0x429613456337DCB, 0xAFE286CA5500B9B, CoD.DLCBits.CONTENT_ORIGINALMAPS )
-		f1_local1( 0x25671F57AABAF7E, 0x51FD293040F234E, CoD.DLCBits.CONTENT_ORIGINALMAPS )
+		f1_local1( 0x4F315BDBA60FE82, "zm_zodt8", CoD.DLCBits.CONTENT_ORIGINALMAPS )
+		f1_local1( 0x429613456337DCB, "zm_towers", CoD.DLCBits.CONTENT_ORIGINALMAPS )
+		f1_local1( 0x25671F57AABAF7E, "zm_escape", CoD.DLCBits.CONTENT_ORIGINALMAPS )
 		f1_local1( 0x5965088D73B7EE9, "zm_office", CoD.DLCBits.CONTENT_DLC0ZM )
-		f1_local1( 0xDDC26B6F35FF5A, 0xA005252D762E06A, CoD.DLCBits.CONTENT_DLC1ZM )
-		f1_local1( 0x30E78C01B2597B0, 0x63EFA8337233574, CoD.DLCBits.CONTENT_DLC2ZM )
+		f1_local1( 0xDDC26B6F35FF5A, "zm_mansion", CoD.DLCBits.CONTENT_DLC1ZM )
+		f1_local1( 0x30E78C01B2597B0, "zm_red", CoD.DLCBits.CONTENT_DLC2ZM )
 		local f1_local2 = function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
 			CoD.LeaderboardUtility.LeaderboardInfo[f4_arg0] = {}
 			CoD.LeaderboardUtility.LeaderboardInfo[f4_arg0].title = f4_arg2
@@ -154,15 +154,15 @@ CoD.LeaderboardUtility.GetLeaderboardInfo = function ( f1_arg0 )
 			}
 		end
 		
-		f1_local2( "lb_zm_gb", 0xFE262587F35DFB1, 0x6E45BDFB807BA0C, 0xBA23494805B2D16 )
-		f1_local2( 0x7A5E67291AD99C5, 0x205F51D8FB1C28B, 0x978F253BCF5F16A, 0x9C950584F9BA7CC )
+		f1_local2( "lb_zm_gb", 0xFE262587F35DFB1, "menu/lb_zmglobal", "ui_icon_gamemode_career_zm" )
+		f1_local2( "lb_zm_gb_kills", 0x205F51D8FB1C28B, "menu/lb_zmglobal_kills", 0x9C950584F9BA7CC )
 		f1_local2( 0x1B596331A39E41A, 0xE7B2EF603C4940A, "menu/lb_zmglobal_shots_fired", 0x30B4EA5A901E99C )
-		f1_local2( 0xBF3DFFA806B8637, 0xDD8E8DE5F6561BD, 0xF8C05A932C222F4, 0x4E7167C63987A08 )
-		f1_local2( 0x5B680443AABC3E7, 0xE9901D61854594D, 0xF84CA9A12A74B9C, 0x270D7A0C7EEDB7A )
-		f1_local2( 0x354184A955F73C, 0x28FE7102E8FC034, 0xFE639D81A7245CE, 0x8D2DAB62E02B423 )
-		f1_local2( 0xEFC6FFE429EFD62, 0xA8FEB5BB5D97832, "menu/lb_zmglobal_revives", 0xC43523103B7C377 )
-		f1_local2( 0x898F8FCA9925F65, 0x6311D9555AFBB6B, 0x47553162E2176CE, 0xD5CF1E78FE3AC15 )
-		f1_local2( 0x2DB713B9F144A4B, 0x3BF55208B06E529, 0x83F7E6E94807EDA, 0x4E5F257F9EB3955 )
+		f1_local2( 0xBF3DFFA806B8637, 0xDD8E8DE5F6561BD, "menu/lb_zmglobal_shots_hit", 0x4E7167C63987A08 )
+		f1_local2( "lb_zm_gb_headshots", 0xE9901D61854594D, "menu/lb_zmglobal_headshots", 0x270D7A0C7EEDB7A )
+		f1_local2( 0x354184A955F73C, 0x28FE7102E8FC034, "menu/lb_zmglobal_explosive_kills", 0x8D2DAB62E02B423 )
+		f1_local2( "lb_zm_gb_revives", 0xA8FEB5BB5D97832, "menu/lb_zmglobal_revives", 0xC43523103B7C377 )
+		f1_local2( "lb_zm_gb_distance_traveled", 0x6311D9555AFBB6B, "menu/lb_zmglobal_distance_traveled", 0xD5CF1E78FE3AC15 )
+		f1_local2( 0x2DB713B9F144A4B, 0x3BF55208B06E529, "menu/lb_zmglobal_doors_opened", 0x4E5F257F9EB3955 )
 		f1_local2( 0x58B29DAD4A59664, 0xAF572EBD08719FC, CoD.LeaderboardUtility.LB_ZM_GB_PERKS_DRANK_TITLE, 0xCCD4A473580CF6B )
 		local f1_local3 = function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
 			local f5_local0 = CoD.DirectorUtility.TrialsMapEnabledDvars[f5_arg2]
@@ -178,15 +178,15 @@ CoD.LeaderboardUtility.GetLeaderboardInfo = function ( f1_arg0 )
 			end
 		end
 		
-		f1_local3( 0x4789E547635C17C, 0xC6DC1A7FAC1E48, 0x7E9384351288E52, 0x1AEA8301D2466F7 )
-		f1_local3( 0x42F5184A8BB8CF9, 0xDEADD371D74E38C, 0xAFE286CA5500B9B, 0xB551941FB81823B )
-		f1_local3( "lb_zm_ga_office", 0xD04C533DC2235E6, 0x51FD293040F234E, 0x93D1D7EA7B44F24 )
-		f1_local3( 0x4EAA0418FCFD3FC, 0xF075735A3BB5BB6, "zm_office", 0x3DCD6B96C1F06A4 )
-		f1_local3( 0x5205CE55E1DA16C, 0x16859B1C782F9F2, 0xA005252D762E06A, 0x3F8E0237F44B0E2 )
-		f1_local3( "lb_zm_ga_red", 0x57782883FEE8976, 0x63EFA8337233574, 0x821F71DD7A88AC1 )
-		f1_local3( 0x9EE8CC91C547BB9, 0x4BADFDCF63F6338, 0x7E9384351288E52, 0x1AEA8301D2466F7 )
-		f1_local3( 0x378C349A2F89514, 0x40D886BB4070112, 0x57B253FE0702E3E, "ui_icon_director_zm_playlist_preview_gauntlet_white" )
-		f1_local3( 0x444F6E41BCB1A81, 0x7702CF66B8230F9, 0x9E4FEA5D255373, 0x361BC83FAA4939C )
+		f1_local3( "lb_zm_ga_zodt8", 0xC6DC1A7FAC1E48, "zm_zodt8", "ui_icon_director_zm_playlist_gauntlet_preview" )
+		f1_local3( "lb_zm_ga_towers", 0xDEADD371D74E38C, "zm_towers", "ui_icon_director_zm_playlist_preview_gauntlet_ix" )
+		f1_local3( "lb_zm_ga_office", 0xD04C533DC2235E6, "zm_escape", "ui_icon_director_zm_playlist_preview_gauntlet_deathcon" )
+		f1_local3( "lb_zm_ga_escape", 0xF075735A3BB5BB6, "zm_office", "ui_icon_director_zm_playlist_preview_gauntlet_hellcatraz" )
+		f1_local3( "lb_zm_ga_mansion", 0x16859B1C782F9F2, "zm_mansion", 0x3F8E0237F44B0E2 )
+		f1_local3( "lb_zm_ga_red", 0x57782883FEE8976, "zm_red", "ui_icon_director_zm_playlist_preview_gauntlet_red" )
+		f1_local3( "lb_zm_ga_zodt8_var1", "zmtrials/unsinkable_variant_1", "zm_zodt8", "ui_icon_director_zm_playlist_gauntlet_preview" )
+		f1_local3( "lb_zm_ga_white", "zmtrials/dac", "zm_white", "ui_icon_director_zm_playlist_preview_gauntlet_white" )
+		f1_local3( "lb_zm_ga_orange", "zmtrials/aidih", "zm_orange", 0x361BC83FAA4939C )
 		local f1_local4 = function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
 			CoD.LeaderboardUtility.LeaderboardInfo[f6_arg0] = {}
 			CoD.LeaderboardUtility.LeaderboardInfo[f6_arg0].title = f6_arg1
@@ -194,9 +194,9 @@ CoD.LeaderboardUtility.GetLeaderboardInfo = function ( f1_arg0 )
 			CoD.LeaderboardUtility.LeaderboardInfo[f6_arg0].trackTypes = f6_arg3
 		end
 		
-		f1_local4( 0xEFEF03E4254449A, 0x577FFBA4A51E340, 0xBCF1F948081F752, CoD.LeaderboardUtility.DefaultTrackTypes )
-		f1_local4( "LB_MP_GB_SCORE_HC", 0x577FFBA4A51E340, 0xBCF1F948081F752, CoD.LeaderboardUtility.DefaultTrackTypes )
-		f1_local4( 0x8CF593C6FE1D09E, 0x577FFBA4A51E340, 0xBCF1F948081F752, CoD.LeaderboardUtility.DefaultTrackTypes )
+		f1_local4( "lb_mp_gb_score", 0x577FFBA4A51E340, "ui_icon_gamemode_career_mp", CoD.LeaderboardUtility.DefaultTrackTypes )
+		f1_local4( "lb_mp_gb_score_hc", 0x577FFBA4A51E340, "ui_icon_gamemode_career_mp", CoD.LeaderboardUtility.DefaultTrackTypes )
+		f1_local4( "lb_mp_gb_score_arena", 0x577FFBA4A51E340, "ui_icon_gamemode_career_mp", CoD.LeaderboardUtility.DefaultTrackTypes )
 		local f1_local5 = function ( f7_arg0, f7_arg1, f7_arg2 )
 			CoD.LeaderboardUtility.LeaderboardInfo[f7_arg0] = {}
 			CoD.LeaderboardUtility.LeaderboardInfo[f7_arg0].title = f7_arg1
@@ -206,9 +206,9 @@ CoD.LeaderboardUtility.GetLeaderboardInfo = function ( f1_arg0 )
 			}
 		end
 		
-		f1_local5( 0x20437C01157B674, 0xD66A3D1AAD8BEB3, 0xB3E364C4EA77601 )
-		f1_local5( 0x2F5097768B0B81A, 0x2661E19A0FBC131, 0x5AA115E951DC562 )
-		f1_local5( 0x8F29CAA4F9941D5, 0xE2841875AF78500, 0xC43E75D7A81BE65 )
+		f1_local5( 0x20437C01157B674, 0xD66A3D1AAD8BEB3, "ui_icon_gamemode_wz_solo" )
+		f1_local5( 0x2F5097768B0B81A, 0x2661E19A0FBC131, "ui_icon_gamemode_wz_duo" )
+		f1_local5( 0x8F29CAA4F9941D5, 0xE2841875AF78500, "ui_icon_gamemode_wz_quad" )
 		f1_local5( 0xBBDB7C1C2499251, 0x2346D505817A54, 0xB0691C41F056744 )
 	end
 	return CoD.LeaderboardUtility.LeaderboardInfo[f1_arg0]
@@ -237,19 +237,19 @@ end
 
 CoD.LeaderboardUtility.GetZMMapsNumPlayersFilterString = function ( f11_arg0 )
 	if f11_arg0 == 1 then
-		return Engine[0xF9F1239CFD921FE]( 0xC32F659BC592E28 )
+		return Engine[0xF9F1239CFD921FE]( "menu/solo" )
 	else
-		return Engine[0xF9F1239CFD921FE]( 0xCA1F9779DCA08D, f11_arg0 )
+		return Engine[0xF9F1239CFD921FE]( "mpui/shoutcaster_number_players", f11_arg0 )
 	end
 end
 
 CoD.LeaderboardUtility.GetPlayerFilterString = function ( f12_arg0 )
 	if f12_arg0 == Enum.LbFilter[0x88054F6C5380C0C] then
-		return Engine[0xF9F1239CFD921FE]( 0x8396FC4289ACDA )
+		return Engine[0xF9F1239CFD921FE]( "menu/lb_pfilter_friends" )
 	elseif f12_arg0 == Enum.LbFilter[0x7C601779D30B9FD] then
-		return Engine[0xF9F1239CFD921FE]( 0x8EEFC66339125B3 )
+		return Engine[0xF9F1239CFD921FE]( "menu/lb_pfilter_lobby" )
 	elseif f12_arg0 == Enum.LbFilter[0xFC988076708BDA5] then
-		return Engine[0xF9F1239CFD921FE]( 0xB692D0423F11724 )
+		return Engine[0xF9F1239CFD921FE]( "menu/lb_pfilter_all" )
 	elseif f12_arg0 == Enum.LbFilter[0x8B32F474F53EFDC] then
 		return Engine[0xF9F1239CFD921FE]( 0x6B9DBC36598BF9E )
 	else
@@ -259,9 +259,9 @@ end
 
 CoD.LeaderboardUtility.GetDurationFilterString = function ( f13_arg0 )
 	if f13_arg0 == Enum.LbTrackType[0x55ACA16E2268D1A] then
-		return Engine[0xF9F1239CFD921FE]( 0x941D0ABA4C78F94 )
+		return Engine[0xF9F1239CFD921FE]( "menu/lb_dfilter_all_time" )
 	elseif f13_arg0 == Enum.LbTrackType[0x4ADDC81D8048FD] then
-		return Engine[0xF9F1239CFD921FE]( 0x1E51AF1FC9826A2 )
+		return Engine[0xF9F1239CFD921FE]( "menu/lb_dfilter_monthly" )
 	elseif f13_arg0 == Enum.LbTrackType[0x59A119C31BDA10B] then
 		return Engine[0xF9F1239CFD921FE]( "menu/lb_dfilter_weekly" )
 	else
@@ -710,7 +710,7 @@ CoD.LeaderboardUtility.LeaderboardGameModeTabsPrepare = function ( f52_arg0 )
 		if f52_local1 then
 			table.insert( f52_local0, {
 				models = {
-					name = 0x0,
+					name = "",
 					tabWidget = "CoD.Leaderboard_GameModeFrame",
 					lbDef = Engine.GetModelValue( f52_local1 )
 				},
@@ -746,19 +746,19 @@ DataSources.LeaderboardGameModeTabs = DataSourceHelpers.ListSetup( "LeaderboardG
 CoD.LeaderboardUtility.CreateModels_ZMMapsNumPlayersFilter = function ( f53_arg0 )
 	local f53_local0 = {
 		{
-			name = Engine[0xF9F1239CFD921FE]( 0xC32F659BC592E28 ),
+			name = Engine[0xF9F1239CFD921FE]( "menu/solo" ),
 			value = 1
 		},
 		{
-			name = Engine[0xF9F1239CFD921FE]( 0xCA1F9779DCA08D, 2 ),
+			name = Engine[0xF9F1239CFD921FE]( "mpui/shoutcaster_number_players", 2 ),
 			value = 2
 		},
 		{
-			name = Engine[0xF9F1239CFD921FE]( 0xCA1F9779DCA08D, 3 ),
+			name = Engine[0xF9F1239CFD921FE]( "mpui/shoutcaster_number_players", 3 ),
 			value = 3
 		},
 		{
-			name = Engine[0xF9F1239CFD921FE]( 0xCA1F9779DCA08D, 4 ),
+			name = Engine[0xF9F1239CFD921FE]( "mpui/shoutcaster_number_players", 4 ),
 			value = 4
 		}
 	}
@@ -784,17 +784,17 @@ CoD.LeaderboardUtility.CreateModels_PlayerFilter = function ( f54_arg0 )
 		value = Enum.LbFilter[0x8B32F474F53EFDC]
 	} )
 	table.insert( f54_local0, {
-		name = Engine[0xF9F1239CFD921FE]( 0x8396FC4289ACDA ),
+		name = Engine[0xF9F1239CFD921FE]( "menu/lb_pfilter_friends" ),
 		value = Enum.LbFilter[0x88054F6C5380C0C]
 	} )
 	if IsMemberOfAnyGroup( f54_arg0 ) then
 		table.insert( f54_local0, {
-			name = Engine[0xF9F1239CFD921FE]( 0xFC022F454CCBACD ),
+			name = Engine[0xF9F1239CFD921FE]( "menu/lb_pfilter_groups" ),
 			value = Enum.LbFilter[0x967FD91B94A173A]
 		} )
 	end
 	table.insert( f54_local0, {
-		name = Engine[0xF9F1239CFD921FE]( 0xB692D0423F11724 ),
+		name = Engine[0xF9F1239CFD921FE]( "menu/lb_pfilter_all" ),
 		value = Enum.LbFilter[0xFC988076708BDA5]
 	} )
 	local f54_local1 = CoD.perController[f54_arg0].leaderboardPlayerFilter
@@ -803,7 +803,7 @@ CoD.LeaderboardUtility.CreateModels_PlayerFilter = function ( f54_arg0 )
 	end
 	return {
 		models = {
-			displayText = 0xE20D5225108123D,
+			displayText = "menu/lb_filter_players",
 			hintText = "",
 			optionsDatasource = CoD.OptionsUtility.CreateCustomOptionDataSource( f54_arg0, "LeaderboardFilterOptions_PlayerFilter", f54_local0, nil, CoD.LeaderboardUtility.SetPlayerFilter, nil, nil ),
 			currentSelection = CoD.OptionsUtility.GetCustomProfileSelection( f54_arg0, f54_local0, f54_local1 )
@@ -815,11 +815,11 @@ end
 CoD.LeaderboardUtility.CreateModels_DurationFilter = function ( f55_arg0 )
 	local f55_local0 = {
 		{
-			name = Engine[0xF9F1239CFD921FE]( 0x941D0ABA4C78F94 ),
+			name = Engine[0xF9F1239CFD921FE]( "menu/lb_dfilter_all_time" ),
 			value = Enum.LbTrackType[0x55ACA16E2268D1A]
 		},
 		{
-			name = Engine[0xF9F1239CFD921FE]( 0x1E51AF1FC9826A2 ),
+			name = Engine[0xF9F1239CFD921FE]( "menu/lb_dfilter_monthly" ),
 			value = Enum.LbTrackType[0x4ADDC81D8048FD]
 		},
 		{
@@ -842,7 +842,7 @@ CoD.LeaderboardUtility.CreateModels_DurationFilter = function ( f55_arg0 )
 	end
 	return {
 		models = {
-			displayText = 0x3253D68AE15D261,
+			displayText = "menu/lb_filter_duration",
 			hintText = "",
 			optionsDatasource = CoD.OptionsUtility.CreateCustomOptionDataSource( f55_arg0, "LeaderboardFilterOptions_DurationFilter", f55_local3, nil, CoD.LeaderboardUtility.SetDurationFilter, nil, nil ),
 			currentSelection = CoD.OptionsUtility.GetCustomProfileSelection( f55_arg0, f55_local3, f55_local1 )
@@ -889,7 +889,7 @@ DataSources.LeaderboardMakerButtonList = {
 		f57_arg1.leaderboardMakerStateModel = f57_local4
 		if f57_local5 ~= nil then
 			if f57_local5 == "SelectAction" then
-				f57_local1 = 0x8458D9058E2BC71
+				f57_local1 = "groups/lbmaker_select_action_title"
 				table.insert( f57_local0, {
 					model = {
 						titleText = f57_local1,
@@ -952,7 +952,7 @@ DataSources.LeaderboardMakerButtonList = {
 									titleText = f57_local1,
 									displayText = f57_local22.stringRef,
 									action = ProcessChooseDefaultSort,
-									hintText = Engine[0xF9F1239CFD921FE]( 0x3A108B67F92F64E, f57_local22.stringRef ),
+									hintText = Engine[0xF9F1239CFD921FE]( "groups/lbmaker_default_sort_order_hint_text", f57_local22.stringRef ),
 									icon = f57_local2.icon,
 									baseLeaderboard = f57_local2.stringRef,
 									sortColumn = f57_local22.stringRef
@@ -1064,25 +1064,25 @@ DataSources.LeaderboardHeader = {
 		local f63_local9 = Engine.GetLeaderboardHeaders( f63_arg0 )
 		if f63_local9 == nil then
 			local f63_local10 = f63_local1:create( "baseLeaderboard" )
-			f63_local10:set( 0x0 )
+			f63_local10:set( "" )
 			f63_local10 = f63_local1:create( "timeFrame" )
-			f63_local10:set( 0x0 )
+			f63_local10:set( "" )
 			f63_local10 = f63_local1:create( "position" )
-			f63_local10:set( 0x0 )
+			f63_local10:set( "" )
 			f63_local10 = f63_local1:create( "rank" )
-			f63_local10:set( 0x0 )
+			f63_local10:set( "" )
 			f63_local10 = f63_local1:create( "name" )
-			f63_local10:set( 0x0 )
+			f63_local10:set( "" )
 			f63_local10 = f63_local1:create( "column0" )
-			f63_local10:set( 0x0 )
+			f63_local10:set( "" )
 			f63_local10 = f63_local1:create( "column1" )
-			f63_local10:set( 0x0 )
+			f63_local10:set( "" )
 			f63_local10 = f63_local1:create( "column2" )
-			f63_local10:set( 0x0 )
+			f63_local10:set( "" )
 			f63_local10 = f63_local1:create( "column3" )
-			f63_local10:set( 0x0 )
+			f63_local10:set( "" )
 			f63_local10 = f63_local1:create( "column4" )
-			f63_local10:set( 0x0 )
+			f63_local10:set( "" )
 			f63_local10 = f63_local1:create( "numDataColumns" )
 			f63_local10:set( 0 )
 			return f63_local1
@@ -1100,14 +1100,14 @@ DataSources.LeaderboardHeader = {
 		end
 		for f63_local12 = 1, f63_local3, 1 do
 			if f63_local12 <= f63_local11 then
-				f63_local5[f63_local12 + f63_local4] = 0x0
+				f63_local5[f63_local12 + f63_local4] = ""
 			else
 				f63_local5[f63_local12 + f63_local4] = f63_local10[f63_local8]
 				f63_local8 = f63_local8 + 1
 			end
 		end
-		local f63_local12 = 0x0
-		local f63_local13 = 0x0
+		local f63_local12 = ""
+		local f63_local13 = ""
 		if HasSelectedGroup( nil, nil, {
 			controller = f63_arg0
 		} ) then
@@ -1119,11 +1119,11 @@ DataSources.LeaderboardHeader = {
 				f63_local13 = f63_local20.stringRef
 			end
 		end
-		f63_local14 = 0x9B07D3D5E73E818
-		if Engine.CurrentSessionMode() == Enum.eModes[0xBF1DCC8138A9D39] then
+		f63_local14 = "menu/lb_level"
+		if Engine.CurrentSessionMode() == Enum.eModes.mode_warzone then
 			f63_local14 = "warzone/echelon"
 		elseif LuaUtils.IsArenaMode() then
-			f63_local14 = 0x3370355189B42A7
+			f63_local14 = "arena/rank"
 		end
 		local f63_local15 = f63_local1:create( "baseLeaderboard" )
 		f63_local15:set( f63_local12 )
@@ -1175,7 +1175,7 @@ DataSources.LeaderboardRows = LuaUtils.OverrideTable( DataSources.LeaderboardRow
 	setupItem = function ( f65_arg0, f65_arg1, f65_arg2, f65_arg3, f65_arg4 )
 		local f65_local0 = LuaUtils.LobbyMainModeData
 		local f65_local1 = LobbyData.GetCurrentMenuTarget()
-		f65_local0 = f65_local0[f65_local1["mainmode"]]
+		f65_local0 = f65_local0[f65_local1.mainmode]
 		if f65_local0 then
 			local f65_local2 = f65_local0.eMode
 		end
@@ -1250,7 +1250,7 @@ DataSources.LeaderboardRows = LuaUtils.OverrideTable( DataSources.LeaderboardRow
 				if IsGameModeParagonCapable( f65_local0 ) and f65_local13.plevel == CoD.PrestigeUtility.GetPrestigeCap( f65_local0 ) then
 					f65_local13.rank = Engine.GetParagonRankDisplayLevel( f65_local13.paragonRank, f65_local0 )
 					f65_local12 = string.format( "%d %d %d", ColorSet.ParagonRank.r * 255, ColorSet.ParagonRank.g * 255, ColorSet.ParagonRank.b * 255 )
-				elseif f65_local0 == Enum.eModes[0xBF1DCC8138A9D39] and f65_local13.rank == Engine[0xEAF2F2348AFD70B]( f65_local0 ) then
+				elseif f65_local0 == Enum.eModes.mode_warzone and f65_local13.rank == Engine[0xEAF2F2348AFD70B]( f65_local0 ) then
 					f65_local12 = string.format( "%d %d %d", ColorSet.Orange.r * 255, ColorSet.Orange.g * 255, ColorSet.Orange.b * 255 )
 				end
 			end
@@ -1259,7 +1259,7 @@ DataSources.LeaderboardRows = LuaUtils.OverrideTable( DataSources.LeaderboardRow
 			local f65_local15, f65_local16, f65_local21 = CoD.ArenaLeaguePlayUtility.GetRankAndIcon( f65_local14.points, f65_local14.bestSubdivisionRank, f65_local14.firstSubdivisionRankTotal )
 			f65_local13.rank = f65_local15
 			f65_local13.rankIcon = f65_local16
-			f65_local13.rankString = 0x0
+			f65_local13.rankString = ""
 		end
 		local f65_local14 = #f65_local13.colData
 		local f65_local15 = f65_local8 - f65_local14
@@ -1440,21 +1440,21 @@ end
 DataSources.LeaderboardTabType = ListHelper_SetupDataSource( "LeaderboardTabType", function ( f72_arg0, f72_arg1 )
 	local f72_local0 = {}
 	local f72_local1 = CoD.BaseUtility.GetMenuSessionMode( f72_arg1.menu )
-	if f72_local1 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f72_local1 == Enum.eModes.mode_multiplayer then
 		if IsArenaMode() then
 			table.insert( f72_local0, {
 				models = {
-					name = 0x866F2CC78940BCF,
+					name = "menu/lb_tab_arena_caps",
 					tabCategory = "arena"
 				},
 				properties = {
-					category = 0x5D8D7B6A4C553C8
+					category = "arena"
 				}
 			} )
 		else
 			table.insert( f72_local0, {
 				models = {
-					name = 0xA293EB64E03142F,
+					name = "menu/lb_tab_core_caps",
 					tabCategory = "core"
 				},
 				properties = {
@@ -1463,18 +1463,18 @@ DataSources.LeaderboardTabType = ListHelper_SetupDataSource( "LeaderboardTabType
 			} )
 			table.insert( f72_local0, {
 				models = {
-					name = 0x77B92AED87A9600,
+					name = "menu/lb_tab_hardcore_caps",
 					tabCategory = "hardcore"
 				},
 				properties = {
-					category = 0xB4E65040CD1305B
+					category = "hardcore"
 				}
 			} )
 		end
-	elseif f72_local1 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f72_local1 == Enum.eModes.mode_zombies then
 		table.insert( f72_local0, {
 			models = {
-				name = 0x8FDE5CC46116294,
+				name = "menu/lb_tab_zmglobal_caps",
 				tabCategory = "zm_global"
 			},
 			properties = {
@@ -1490,7 +1490,7 @@ DataSources.LeaderboardTabType = ListHelper_SetupDataSource( "LeaderboardTabType
 				category = 0x351883667F5B15B
 			}
 		} )
-	elseif f72_local1 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f72_local1 == Enum.eModes.mode_warzone then
 		table.insert( f72_local0, {
 			models = {
 				name = 0xA9DC4B9726B8B6B,
@@ -1520,7 +1520,7 @@ DataSources.LeaderboardMenuTitle = {
 				if not f73_local2 then
 					return f73_local0
 				else
-					Engine.SetModelValue( f73_local1, Engine[0xF9F1239CFD921FE]( 0xA29C2EC825A6AD8, Engine[0xF9F1239CFD921FE]( CoD.LeaderboardUtility.leaderboardTab[f73_local2].leaderboardHeaderText ) ) )
+					Engine.SetModelValue( f73_local1, Engine[0xF9F1239CFD921FE]( "menu/leaderboard_menu_header_caps", Engine[0xF9F1239CFD921FE]( CoD.LeaderboardUtility.leaderboardTab[f73_local2].leaderboardHeaderText ) ) )
 					return f73_local0
 				end
 			end

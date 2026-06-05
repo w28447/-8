@@ -11,7 +11,7 @@ CoD.CODCasterTeamBaseBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.anyChildUsesUpdateState = true
 	
 	local TeamBaseBar = CoD.CODCasterTeamBaseBarColor.new( f1_arg0, f1_arg1, 0, 0, 0, 12, 0, 0, 0, 149 )
-	TeamBaseBar:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xB17513E9D94CE76 ) )
+	TeamBaseBar:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_rft" ) )
 	TeamBaseBar:setShaderVector( 0, 0, 1, 0, 0 )
 	TeamBaseBar:setShaderVector( 1, 0, 0, 0, 0 )
 	TeamBaseBar:setShaderVector( 2, 0.96, 1, 0, 0 )

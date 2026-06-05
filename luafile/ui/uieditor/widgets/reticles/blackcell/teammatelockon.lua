@@ -17,19 +17,19 @@ CoD.TeamMateLockOn.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	self.PanelGlow = PanelGlow
 	
 	local teamLockOn = LUI.UIImage.new( 0.5, 0.5, -114, 118, 0.5, 0.5, -85, -25 )
-	teamLockOn:setImage( RegisterImage( 0xD4D03B92B49DA4D ) )
+	teamLockOn:setImage( RegisterImage( "uie_t7_hud_blackcell_teamlockline" ) )
 	self:addElement( teamLockOn )
 	self.teamLockOn = teamLockOn
 	
 	local teamLockOn0 = LUI.UIImage.new( 0.5, 0.5, -114, 118, 0.5, 0.5, 28, 88 )
-	teamLockOn0:setImage( RegisterImage( 0xD4D03B92B49DA4D ) )
+	teamLockOn0:setImage( RegisterImage( "uie_t7_hud_blackcell_teamlockline" ) )
 	self:addElement( teamLockOn0 )
 	self.teamLockOn0 = teamLockOn0
 	
 	local TeammateLockonShadow = LUI.UIText.new( 0.5, 0.5, -89, 95, 0.5, 0.5, -43, 2 )
 	TeammateLockonShadow:setRGB( 0, 0, 0 )
 	TeammateLockonShadow:setAlpha( 0.8 )
-	TeammateLockonShadow:setText( LocalizeToUpperString( 0x7E386673A19B47C ) )
+	TeammateLockonShadow:setText( LocalizeToUpperString( "weapon/teammate_lock_on" ) )
 	TeammateLockonShadow:setTTF( "ttmussels_demibold" )
 	TeammateLockonShadow:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	TeammateLockonShadow:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -37,7 +37,7 @@ CoD.TeamMateLockOn.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	self.TeammateLockonShadow = TeammateLockonShadow
 	
 	local TeammateLockon = LUI.UIText.new( 0.5, 0.5, -89, 95, 0.5, 0.5, -43, 2 )
-	TeammateLockon:setText( LocalizeToUpperString( 0x7E386673A19B47C ) )
+	TeammateLockon:setText( LocalizeToUpperString( "weapon/teammate_lock_on" ) )
 	TeammateLockon:setTTF( "ttmussels_demibold" )
 	TeammateLockon:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	TeammateLockon:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -47,7 +47,7 @@ CoD.TeamMateLockOn.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local TeammateHackingShadow = LUI.UIText.new( 0.5, 0.5, -85, 89, 0.5, 0.5, -43, 2 )
 	TeammateHackingShadow:setRGB( 0, 0, 0 )
 	TeammateHackingShadow:setAlpha( 0 )
-	TeammateHackingShadow:setText( Engine[0xF9F1239CFD921FE]( 0xCAA2EBE5B5EFE52 ) )
+	TeammateHackingShadow:setText( Engine[0xF9F1239CFD921FE]( "weapon/teammate_hacking" ) )
 	TeammateHackingShadow:setTTF( "ttmussels_demibold" )
 	TeammateHackingShadow:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	TeammateHackingShadow:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -56,7 +56,7 @@ CoD.TeamMateLockOn.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local TeammateHacking = LUI.UIText.new( 0.5, 0.5, -85, 89, 0.5, 0.5, -43, 2 )
 	TeammateHacking:setAlpha( 0 )
-	TeammateHacking:setText( Engine[0xF9F1239CFD921FE]( 0xCAA2EBE5B5EFE52 ) )
+	TeammateHacking:setText( Engine[0xF9F1239CFD921FE]( "weapon/teammate_hacking" ) )
 	TeammateHacking:setTTF( "ttmussels_demibold" )
 	TeammateHacking:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	TeammateHacking:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

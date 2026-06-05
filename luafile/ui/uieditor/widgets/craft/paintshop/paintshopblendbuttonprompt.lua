@@ -20,7 +20,7 @@ CoD.PaintshopBlendButtonPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local label = LUI.UIText.new( 0, 0, 62, 321, 0, 0, 5, 30 )
 	label:setRGB( 0.92, 0.92, 0.92 )
-	label:setText( Engine[0xF9F1239CFD921FE]( 0x4336F8BDF41A51E ) )
+	label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_toggle_to_blend" ) )
 	label:setTTF( "ttmussels_regular" )
 	label:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( label )
@@ -60,7 +60,7 @@ end
 
 CoD.PaintshopBlendButtonPrompt.__resetProperties = function ( f6_arg0 )
 	f6_arg0.label:completeAnimation()
-	f6_arg0.label:setText( Engine[0xF9F1239CFD921FE]( 0x4336F8BDF41A51E ) )
+	f6_arg0.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_toggle_to_blend" ) )
 end
 
 CoD.PaintshopBlendButtonPrompt.__clipsPerState = {

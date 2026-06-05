@@ -37,7 +37,7 @@ CoD.SupplyChainDetails.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 					if f3_local0 then
 						f3_local0 = CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, f1_arg1, "rarity", Enum.LootRarityType[0x8556B83CAD0D180] )
 						if f3_local0 then
-							if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0x4F35AE761BD424 ) then
+							if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "specialist" ) then
 								f3_local0 = not IsElementPropertyValue( self, "__selfHideSupplyChainDetailsButtons", true )
 							else
 								f3_local0 = false

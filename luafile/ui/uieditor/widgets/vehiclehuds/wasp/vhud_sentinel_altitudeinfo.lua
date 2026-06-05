@@ -14,7 +14,7 @@ CoD.vhud_sentinel_AltitudeInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	ALTnumbers:setRGB( 0.6, 0.82, 0.91 )
 	ALTnumbers:setYRot( 40 )
 	ALTnumbers:setTTF( "default" )
-	ALTnumbers:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD756CD9A5F1F1B4 ) )
+	ALTnumbers:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration_cheap_blur" ) )
 	ALTnumbers:setShaderVector( 0, 0, 1, 0, 0 )
 	ALTnumbers:setShaderVector( 1, 0, 0, 0, 0 )
 	ALTnumbers:setShaderVector( 2, 0, 0, 0, 0 )
@@ -34,7 +34,7 @@ CoD.vhud_sentinel_AltitudeInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local ALTBox = CoD.vhud_sentinel_NotificationBox.new( f1_arg0, f1_arg1, 0.5, 0.5, -65, 57, 0.5, 0.5, -31, 14 )
 	ALTBox:setRGB( 0.6, 0.82, 0.91 )
 	ALTBox:setYRot( 50 )
-	ALTBox.SignalText:setText( Engine[0xF9F1239CFD921FE]( 0xBD23A68618982EF ) )
+	ALTBox.SignalText:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_alt" ) )
 	self:addElement( ALTBox )
 	self.ALTBox = ALTBox
 	

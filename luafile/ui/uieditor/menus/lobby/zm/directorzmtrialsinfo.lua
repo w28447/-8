@@ -90,11 +90,11 @@ LUI.createMenu.DirectorZMTrialsInfo = function ( f1_arg0, f1_arg1 )
 	self:addElement( FooterContainerFrontendRight )
 	self.FooterContainerFrontendRight = FooterContainerFrontendRight
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		GoBack( self, f7_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x78D439E1B360368, nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back_caps", nil, "ESCAPE" )
 		return true
 	end, false )
 	DirectorZMTrialsInfoInternal.id = "DirectorZMTrialsInfoInternal"

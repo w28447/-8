@@ -11,7 +11,7 @@ CoD.WZObituarySquadKilled.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local SquadEliminatedBlur = LUI.UIImage.new( 0, 0, 0, 503, 0, 0, 0, 48 )
 	SquadEliminatedBlur:setAlpha( 0.5 )
-	SquadEliminatedBlur:setImage( RegisterImage( 0x6E3E83412B13039 ) )
+	SquadEliminatedBlur:setImage( RegisterImage( "uie_ui_hud_wz_hud_squad_eliminated_backing" ) )
 	SquadEliminatedBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
 	SquadEliminatedBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( SquadEliminatedBlur )
@@ -20,7 +20,7 @@ CoD.WZObituarySquadKilled.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local SquadEliminatedBacking = LUI.UIImage.new( 0, 0, 0, 503, 0, 0, 0, 48 )
 	SquadEliminatedBacking:setRGB( 0, 0, 0 )
 	SquadEliminatedBacking:setAlpha( 0.6 )
-	SquadEliminatedBacking:setImage( RegisterImage( 0x6E3E83412B13039 ) )
+	SquadEliminatedBacking:setImage( RegisterImage( "uie_ui_hud_wz_hud_squad_eliminated_backing" ) )
 	self:addElement( SquadEliminatedBacking )
 	self.SquadEliminatedBacking = SquadEliminatedBacking
 	
@@ -36,7 +36,7 @@ CoD.WZObituarySquadKilled.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local Text = LUI.UIText.new( 0.5, 0.5, -244, 242, 0.5, 0.5, -13, 21 )
 	Text:setRGB( 0.91, 0, 0 )
-	Text:setText( Engine[0xF9F1239CFD921FE]( 0x3B9B19F4DBB3F9E ) )
+	Text:setText( Engine[0xF9F1239CFD921FE]( "warzone/squad_killed" ) )
 	Text:setTTF( "default" )
 	Text:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Text:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -45,34 +45,34 @@ CoD.WZObituarySquadKilled.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local GradientLine = LUI.UIImage.new( 0, 0, -6.5, 510.5, 0, 0, 39, 55 )
 	GradientLine:setRGB( 0.91, 0, 0 )
-	GradientLine:setImage( RegisterImage( 0xED0B63C61449483 ) )
+	GradientLine:setImage( RegisterImage( "uie_ui_hud_wz_hud_squad_eliminated_gradient_line" ) )
 	self:addElement( GradientLine )
 	self.GradientLine = GradientLine
 	
 	local BracketL = LUI.UIImage.new( 0, 0, -5.5, 10.5, 0, 0, -6, 54 )
 	BracketL:setRGB( 0, 0, 0 )
-	BracketL:setImage( RegisterImage( 0xE1F751C91ABC7F8 ) )
+	BracketL:setImage( RegisterImage( "uie_ui_hud_wz_hud_squad_eliminated_bracket" ) )
 	self:addElement( BracketL )
 	self.BracketL = BracketL
 	
 	local BracketR = LUI.UIImage.new( 0, 0, 493, 509, 0, 0, -6, 54 )
 	BracketR:setRGB( 0, 0, 0 )
 	BracketR:setZRot( 180 )
-	BracketR:setImage( RegisterImage( 0xE1F751C91ABC7F8 ) )
+	BracketR:setImage( RegisterImage( "uie_ui_hud_wz_hud_squad_eliminated_bracket" ) )
 	self:addElement( BracketR )
 	self.BracketR = BracketR
 	
 	local PipL = LUI.UIImage.new( 0, 0, -6, 4, 0, 0, 20, 28 )
 	PipL:setRGB( 0.91, 0, 0 )
 	PipL:setZRot( 90 )
-	PipL:setImage( RegisterImage( 0x9D1B20838FA39D4 ) )
+	PipL:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_qe_pointer" ) )
 	self:addElement( PipL )
 	self.PipL = PipL
 	
 	local PipR = LUI.UIImage.new( 0, 0, 499, 509, 0, 0, 20, 28 )
 	PipR:setRGB( 0.91, 0, 0 )
 	PipR:setZRot( 270 )
-	PipR:setImage( RegisterImage( 0x9D1B20838FA39D4 ) )
+	PipR:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_qe_pointer" ) )
 	self:addElement( PipR )
 	self.PipR = PipR
 	

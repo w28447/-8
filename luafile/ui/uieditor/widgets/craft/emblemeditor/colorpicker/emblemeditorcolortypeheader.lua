@@ -11,7 +11,7 @@ CoD.EmblemEditorColorTypeHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local colorTypeHeader = CoD.PaintshopChooseSide.new( f1_arg0, f1_arg1, 0, 0, 0, 320, 0, 0, 0, 45 )
-	colorTypeHeader.text:setText( Engine[0xF9F1239CFD921FE]( 0x1CFC542812AB4D9 ) )
+	colorTypeHeader.text:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_solid_color" ) )
 	self:addElement( colorTypeHeader )
 	self.colorTypeHeader = colorTypeHeader
 	
@@ -27,7 +27,7 @@ end
 CoD.EmblemEditorColorTypeHeader.__resetProperties = function ( f2_arg0 )
 	f2_arg0.colorTypeHeader:completeAnimation()
 	f2_arg0.colorTypeHeader:setLeftRight( 0, 0, 0, 320 )
-	f2_arg0.colorTypeHeader.text:setText( Engine[0xF9F1239CFD921FE]( 0x1CFC542812AB4D9 ) )
+	f2_arg0.colorTypeHeader.text:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_solid_color" ) )
 end
 
 CoD.EmblemEditorColorTypeHeader.__clipsPerState = {
@@ -38,7 +38,7 @@ CoD.EmblemEditorColorTypeHeader.__clipsPerState = {
 			f3_arg0.colorTypeHeader:completeAnimation()
 			f3_arg0.colorTypeHeader.text:completeAnimation()
 			f3_arg0.colorTypeHeader:setLeftRight( 0, 0, 70, 390 )
-			f3_arg0.colorTypeHeader.text:setText( Engine[0xF9F1239CFD921FE]( 0xC4976856521A15E ) )
+			f3_arg0.colorTypeHeader.text:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_gradient" ) )
 			f3_arg0.clipFinished( f3_arg0.colorTypeHeader )
 		end
 	},
@@ -49,7 +49,7 @@ CoD.EmblemEditorColorTypeHeader.__clipsPerState = {
 			f4_arg0.colorTypeHeader:completeAnimation()
 			f4_arg0.colorTypeHeader.text:completeAnimation()
 			f4_arg0.colorTypeHeader:setLeftRight( 0, 0, 70, 390 )
-			f4_arg0.colorTypeHeader.text:setText( Engine[0xF9F1239CFD921FE]( 0xC4976856521A15E ) )
+			f4_arg0.colorTypeHeader.text:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_gradient" ) )
 			f4_arg0.clipFinished( f4_arg0.colorTypeHeader )
 		end
 	},
@@ -69,7 +69,7 @@ CoD.EmblemEditorColorTypeHeader.__clipsPerState = {
 			f6_arg0.colorTypeHeader:completeAnimation()
 			f6_arg0.colorTypeHeader.text:completeAnimation()
 			f6_arg0.colorTypeHeader:setLeftRight( 0, 0, 70, 390 )
-			f6_arg0.colorTypeHeader.text:setText( Engine[0xF9F1239CFD921FE]( 0x18A7DE2D378A687 ) )
+			f6_arg0.colorTypeHeader.text:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_color_mixer" ) )
 			f6_arg0.clipFinished( f6_arg0.colorTypeHeader )
 		end
 	}

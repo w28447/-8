@@ -15,7 +15,7 @@ CoD.GameEndScore_GameStatusPlayerLeft.new = function ( f1_arg0, f1_arg1, f1_arg2
 	self.DotCorner9Slice = DotCorner9Slice
 	
 	local playersLeftIcon = LUI.UIImage.new( 1, 1, -128, -80, 0, 0, 0, 50 )
-	playersLeftIcon:setImage( RegisterImage( 0x14B2E7558F68939 ) )
+	playersLeftIcon:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_icon_lives" ) )
 	self:addElement( playersLeftIcon )
 	self.playersLeftIcon = playersLeftIcon
 	

@@ -1,24 +1,24 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_snakegods_asset_hero" )
 require( "ui/uieditor/widgets/callingcards/callingcards_snakegods_asset_lefthand" )
 
-CoD[0xC44AA3B51953556] = InheritFrom( LUI.UIElement )
-CoD[0xC44AA3B51953556].__defaultWidth = 960
-CoD[0xC44AA3B51953556].__defaultHeight = 240
-CoD[0xC44AA3B51953556].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_snakegods = InheritFrom( LUI.UIElement )
+CoD.callingcards_snakegods.__defaultWidth = 960
+CoD.callingcards_snakegods.__defaultHeight = 240
+CoD.callingcards_snakegods.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0xC44AA3B51953556] )
+	self:setClass( CoD.callingcards_snakegods )
 	self.id = "callingcards_snakegods"
 	self.soundSet = "none"
 	self.anyChildUsesUpdateState = true
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local background = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	background:setImage( RegisterImage( 0x72BB0B85F7587BD ) )
+	background:setImage( RegisterImage( "uie_ui_menu_callingcards_snake_gods_background" ) )
 	self:addElement( background )
 	self.background = background
 	
 	local building = LUI.UIImage.new( 0, 0, 0, 608, 0, 0, -72, 240 )
-	building:setImage( RegisterImage( 0x19BCD7B2F237955 ) )
+	building:setImage( RegisterImage( "uie_ui_menu_callingcards_snake_gods_building" ) )
 	self:addElement( building )
 	self.building = building
 	
@@ -31,7 +31,7 @@ CoD[0xC44AA3B51953556].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.lefthand = lefthand
 	
 	local Image = LUI.UIImage.new( 0, 0, 600, 1500, 0, 0, -433, 467 )
-	Image:setImage( RegisterImage( 0x8CCA9609921F32A ) )
+	Image:setImage( RegisterImage( "uie_godrays" ) )
 	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image )
 	self.Image = Image
@@ -45,7 +45,7 @@ CoD[0xC44AA3B51953556].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0xC44AA3B51953556].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_snakegods.__resetProperties = function ( f2_arg0 )
 	f2_arg0.hero:completeAnimation()
 	f2_arg0.lefthand:completeAnimation()
 	f2_arg0.building:completeAnimation()
@@ -58,7 +58,7 @@ CoD[0xC44AA3B51953556].__resetProperties = function ( f2_arg0 )
 	f2_arg0.Image:setZRot( 0 )
 end
 
-CoD[0xC44AA3B51953556].__clipsPerState = {
+CoD.callingcards_snakegods.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -176,7 +176,7 @@ CoD[0xC44AA3B51953556].__clipsPerState = {
 		end
 	}
 }
-CoD[0xC44AA3B51953556].__onClose = function ( f18_arg0 )
+CoD.callingcards_snakegods.__onClose = function ( f18_arg0 )
 	f18_arg0.hero:close()
 	f18_arg0.lefthand:close()
 end

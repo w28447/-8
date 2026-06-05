@@ -10,7 +10,7 @@ CoD.PCSocialMenu_PlayerListItem_PlayerInfos_AcceptInviteToParty.new = function (
 	
 	local Border = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Border:setRGB( 0.98, 1, 0 )
-	Border:setImage( RegisterImage( 0xF1E3082B39E99BB ) )
+	Border:setImage( RegisterImage( "uie_highlight_border_line" ) )
 	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 12, 12 )

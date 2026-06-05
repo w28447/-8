@@ -50,7 +50,7 @@ CoD.WarzoneQuickInventoryMenuItemSmall.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	castTimer = LUI.UIImage.new( 0.5, 0.5, -16, 16, 0.5, 0.5, -16, 16 )
 	castTimer:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	castTimer:setImage( RegisterImage( 0xC2785B5FC0B6F18 ) )
+	castTimer:setImage( RegisterImage( "uie_ui_icon_controller_radial_fill_hud" ) )
 	castTimer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	castTimer:setShaderVector( 1, 0.5, 0, 0, 0 )
 	castTimer:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -67,7 +67,7 @@ CoD.WarzoneQuickInventoryMenuItemSmall.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local NotAvailable = LUI.UIImage.new( 0, 0, 2, 90, 0, 0, 1, 89 )
 	NotAvailable:setAlpha( 0 )
-	NotAvailable:setImage( RegisterImage( 0xB1FCC7EA3552F5A ) )
+	NotAvailable:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_drop_x" ) )
 	NotAvailable:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( NotAvailable )
 	self.NotAvailable = NotAvailable

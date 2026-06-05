@@ -60,26 +60,26 @@ CoD.DirectorGameSettingList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f8_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( MapImage, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
+	f1_arg0:AddButtonCallbackFunction( MapImage, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if not IsPC() and IsLobbyHostOfCurrentMenu() then
-			CoD.DirectorUtility.ClearSelectedClient( f9_arg2 )
-			CoD.LobbyUtility.SetLeaderActivityAndOpenOverlay( self, f9_arg2, CoD.LobbyUtility.LeaderActivity.CHOOSING_MAP, "DirectorChooseMapAndGameType" )
+			CoD.DirectorUtility.ClearSelectedClient( controller )
+			CoD.LobbyUtility.SetLeaderActivityAndOpenOverlay( self, controller, CoD.LobbyUtility.LeaderActivity.CHOOSING_MAP, "DirectorChooseMapAndGameType" )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		elseif IsPC() and IsLobbyHostOfCurrentMenu() then
-			CoD.DirectorUtility.ClearSelectedClient( f9_arg2 )
-			CoD.LobbyUtility.SetLeaderActivityAndOpenOverlay( self, f9_arg2, CoD.LobbyUtility.LeaderActivity.CHOOSING_MAP, "DirectorChooseMapAndGameType" )
+			CoD.DirectorUtility.ClearSelectedClient( controller )
+			CoD.LobbyUtility.SetLeaderActivityAndOpenOverlay( self, controller, CoD.LobbyUtility.LeaderActivity.CHOOSING_MAP, "DirectorChooseMapAndGameType" )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
+	end, function ( element, menu, controller )
 		if not IsPC() and IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsPC() and IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -145,26 +145,26 @@ CoD.DirectorGameSettingList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f18_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( GameRules, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
-		if not IsPC() and IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.ShowDirectorCustom( f19_arg0, f19_arg2 ) then
-			CoD.DirectorUtility.ClearSelectedClient( f19_arg2 )
-			CoD.LobbyUtility.OpenEditGameRules( self, f19_arg2 )
+	f1_arg0:AddButtonCallbackFunction( GameRules, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not IsPC() and IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.ShowDirectorCustom( element, controller ) then
+			CoD.DirectorUtility.ClearSelectedClient( controller )
+			CoD.LobbyUtility.OpenEditGameRules( self, controller )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
-		elseif IsPC() and IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.ShowDirectorCustom( f19_arg0, f19_arg2 ) then
-			CoD.DirectorUtility.ClearSelectedClient( f19_arg2 )
-			CoD.LobbyUtility.OpenEditGameRules( self, f19_arg2 )
+		elseif IsPC() and IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.ShowDirectorCustom( element, controller ) then
+			CoD.DirectorUtility.ClearSelectedClient( controller )
+			CoD.LobbyUtility.OpenEditGameRules( self, controller )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f20_arg0, f20_arg1, f20_arg2 )
-		if not IsPC() and IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.ShowDirectorCustom( f20_arg0, f20_arg2 ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not IsPC() and IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.ShowDirectorCustom( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif IsPC() and IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.ShowDirectorCustom( f20_arg0, f20_arg2 ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsPC() and IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.ShowDirectorCustom( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false

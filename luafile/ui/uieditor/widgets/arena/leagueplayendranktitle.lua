@@ -11,7 +11,7 @@ CoD.leaguePlayEndRankTitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local Flash = LUI.UIImage.new( 0.5, 0.5, -200, 200, 1, 1, 0, 0 )
 	Flash:setRGB( 0.92, 0.89, 0.72 )
 	Flash:setAlpha( 0 )
-	Flash:setImage( RegisterImage( 0xCA43165960A9EAA ) )
+	Flash:setImage( RegisterImage( "uie_ui_menu_aar_levelup_gradientglow" ) )
 	Flash:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Flash:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Flash )
@@ -21,7 +21,7 @@ CoD.leaguePlayEndRankTitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	LeveledUpTextBase:setRGB( ColorSet.T8_FactionTier_InProgress.r, ColorSet.T8_FactionTier_InProgress.g, ColorSet.T8_FactionTier_InProgress.b )
 	LeveledUpTextBase:setText( Engine[0xF9F1239CFD921FE]( 0xC950E3B6C414F51 ) )
 	LeveledUpTextBase:setTTF( "ttmussels_regular" )
-	LeveledUpTextBase:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xB17513E9D94CE76 ) )
+	LeveledUpTextBase:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_rft" ) )
 	LeveledUpTextBase:setShaderVector( 0, 1, 0, 0, 0 )
 	LeveledUpTextBase:setShaderVector( 1, 0, 0, 0, 0 )
 	LeveledUpTextBase:setShaderVector( 2, 0, 1, 0, 0 )
@@ -38,7 +38,7 @@ CoD.leaguePlayEndRankTitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	LeveledUpTextAdd:setText( Engine[0xF9F1239CFD921FE]( 0xC950E3B6C414F51 ) )
 	LeveledUpTextAdd:setTTF( "ttmussels_regular" )
 	LeveledUpTextAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x336C1AE82B1520A ) )
-	LeveledUpTextAdd:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xB17513E9D94CE76 ) )
+	LeveledUpTextAdd:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_rft" ) )
 	LeveledUpTextAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	LeveledUpTextAdd:setShaderVector( 1, 0, 0, 0, 0 )
 	LeveledUpTextAdd:setShaderVector( 2, 0, 1, 0, 0 )
@@ -52,7 +52,7 @@ CoD.leaguePlayEndRankTitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local Flare = LUI.UIImage.new( 0.5, 0.5, -375, 375, 0.5, 0.5, -55, 55 )
 	Flare:setRGB( 0.92, 0.89, 0.72 )
 	Flare:setAlpha( 0 )
-	Flare:setImage( RegisterImage( 0xC4CCD81B90B0241 ) )
+	Flare:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
 	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Flare:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Flare )
@@ -61,42 +61,42 @@ CoD.leaguePlayEndRankTitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local LArrow1 = LUI.UIImage.new( 0.5, 0.5, -399, -375, 1, 1, -24, 0 )
 	LArrow1:setRGB( 0.89, 0.69, 0.04 )
 	LArrow1:setAlpha( 0 )
-	LArrow1:setImage( RegisterImage( 0xBB3DFD9899D61D8 ) )
+	LArrow1:setImage( RegisterImage( "uie_ui_menu_aar_levelup_arrow" ) )
 	self:addElement( LArrow1 )
 	self.LArrow1 = LArrow1
 	
 	local LArrow2 = LUI.UIImage.new( 0.5, 0.5, -399, -375, 1, 1, -38.5, -14.5 )
 	LArrow2:setRGB( 0.89, 0.69, 0.04 )
 	LArrow2:setAlpha( 0 )
-	LArrow2:setImage( RegisterImage( 0xBB3DFD9899D61D8 ) )
+	LArrow2:setImage( RegisterImage( "uie_ui_menu_aar_levelup_arrow" ) )
 	self:addElement( LArrow2 )
 	self.LArrow2 = LArrow2
 	
 	local LArrow3 = LUI.UIImage.new( 0.5, 0.5, -399, -375, 1, 1, -53, -29 )
 	LArrow3:setRGB( 0.89, 0.69, 0.04 )
 	LArrow3:setAlpha( 0 )
-	LArrow3:setImage( RegisterImage( 0xBB3DFD9899D61D8 ) )
+	LArrow3:setImage( RegisterImage( "uie_ui_menu_aar_levelup_arrow" ) )
 	self:addElement( LArrow3 )
 	self.LArrow3 = LArrow3
 	
 	local RArrow1 = LUI.UIImage.new( 0.5, 0.5, 376, 400, 1, 1, -24, 0 )
 	RArrow1:setRGB( 0.89, 0.69, 0.04 )
 	RArrow1:setAlpha( 0 )
-	RArrow1:setImage( RegisterImage( 0xBB3DFD9899D61D8 ) )
+	RArrow1:setImage( RegisterImage( "uie_ui_menu_aar_levelup_arrow" ) )
 	self:addElement( RArrow1 )
 	self.RArrow1 = RArrow1
 	
 	local RArrow2 = LUI.UIImage.new( 0.5, 0.5, 376, 400, 1, 1, -38.5, -14.5 )
 	RArrow2:setRGB( 0.89, 0.69, 0.04 )
 	RArrow2:setAlpha( 0 )
-	RArrow2:setImage( RegisterImage( 0xBB3DFD9899D61D8 ) )
+	RArrow2:setImage( RegisterImage( "uie_ui_menu_aar_levelup_arrow" ) )
 	self:addElement( RArrow2 )
 	self.RArrow2 = RArrow2
 	
 	local RArrow3 = LUI.UIImage.new( 0.5, 0.5, 376, 400, 1, 1, -53, -29 )
 	RArrow3:setRGB( 0.89, 0.69, 0.04 )
 	RArrow3:setAlpha( 0 )
-	RArrow3:setImage( RegisterImage( 0xBB3DFD9899D61D8 ) )
+	RArrow3:setImage( RegisterImage( "uie_ui_menu_aar_levelup_arrow" ) )
 	self:addElement( RArrow3 )
 	self.RArrow3 = RArrow3
 	
@@ -514,7 +514,7 @@ CoD.leaguePlayEndRankTitle.__clipsPerState = {
 			f56_arg0.LeveledUpTextBase:completeAnimation()
 			f56_arg0.LeveledUpTextBase:setRGB( 0.92, 0.92, 0.92 )
 			f56_arg0.LeveledUpTextBase:setAlpha( 0 )
-			f56_arg0.LeveledUpTextBase:setText( Engine[0xF9F1239CFD921FE]( 0xE0ABFC5C51DD27C ) )
+			f56_arg0.LeveledUpTextBase:setText( Engine[0xF9F1239CFD921FE]( "aar/current_level" ) )
 			f56_arg0.LeveledUpTextBase:setShaderVector( 0, 1, 0, 0, 0 )
 			f56_arg0.LeveledUpTextBase:setShaderVector( 1, 0, 0, 0, 0 )
 			f56_arg0.LeveledUpTextBase:setShaderVector( 2, 1, 1, 0, 0 )

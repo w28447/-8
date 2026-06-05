@@ -74,7 +74,7 @@ LUI.createMenu.ZMStartWeaponSelect = function ( f1_arg0, f1_arg1 )
 	self.WeaponAttributes = WeaponAttributes
 	
 	local CACHeader = CoD.CommonHeader.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0, 0, 0, 67 )
-	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x93CE015442D7E04 ) )
+	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/select_weapon_caps" ) )
 	CACHeader.subtitle.subtitle:setAlpha( 0 )
 	CACHeader:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f4_local0 = model:get()
@@ -149,32 +149,32 @@ LUI.createMenu.ZMStartWeaponSelect = function ( f1_arg0, f1_arg1 )
 	WeaponAttributes:linkToElementModel( WeaponListWidget.weaponList, "weaponAttributes", false, function ( model )
 		WeaponAttributes:setModel( model, f1_arg0 )
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		if MenuPropertyIsTrue( f13_arg1, "_showWeaponVariantList" ) and IsPC() then
-			CoD.CACUtility.HideWeaponVariantList( f13_arg1, f13_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		if MenuPropertyIsTrue( menu, "_showWeaponVariantList" ) and IsPC() then
+			CoD.CACUtility.HideWeaponVariantList( menu, controller )
 			return true
 		elseif not IsPC() then
-			CoD.CACUtility.UpdateClassModelWeaponIfPrimary( self, f13_arg2 )
-			CoD.CACUtility.PlayChooseScreenOutro( f13_arg1, f13_arg2, "Close" )
-			DelayGoBack( f13_arg1, f13_arg2, 200 )
+			CoD.CACUtility.UpdateClassModelWeaponIfPrimary( self, controller )
+			CoD.CACUtility.PlayChooseScreenOutro( menu, controller, "Close" )
+			DelayGoBack( menu, controller, 200 )
 			return true
 		elseif IsPC() then
-			CoD.CACUtility.UpdateClassModelWeaponIfPrimary( self, f13_arg2 )
-			CoD.CACUtility.PlayChooseScreenOutro( f13_arg1, f13_arg2, "ClosePC" )
-			DelayGoBack( f13_arg1, f13_arg2, 200 )
+			CoD.CACUtility.UpdateClassModelWeaponIfPrimary( self, controller )
+			CoD.CACUtility.PlayChooseScreenOutro( menu, controller, "ClosePC" )
+			DelayGoBack( menu, controller, 200 )
 			return true
 		else
 			
 		end
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		if MenuPropertyIsTrue( f14_arg1, "_showWeaponVariantList" ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		if MenuPropertyIsTrue( menu, "_showWeaponVariantList" ) and IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif not IsPC() then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif IsPC() then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false

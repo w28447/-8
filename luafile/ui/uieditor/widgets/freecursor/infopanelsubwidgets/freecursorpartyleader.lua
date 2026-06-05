@@ -13,7 +13,7 @@ CoD.freeCursorPartyLeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.LeaderBacking2 = LeaderBacking2
 	
 	local PartyLeaderStar = LUI.UIImage.new( 0.5, 0.5, -182, -170, 0, 0, 5, 17 )
-	PartyLeaderStar:setImage( RegisterImage( 0xB94BBEF24882247 ) )
+	PartyLeaderStar:setImage( RegisterImage( "menu_mp_weapon_lvl_star" ) )
 	self:addElement( PartyLeaderStar )
 	self.PartyLeaderStar = PartyLeaderStar
 	

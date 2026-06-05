@@ -1,19 +1,19 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_asset_steampunkwarriors_gunarm" )
 require( "ui/uieditor/widgets/callingcards/callingcards_asset_steampunkwarriors_shoulder" )
 
-CoD[0xB3EF12304073586] = InheritFrom( LUI.UIElement )
-CoD[0xB3EF12304073586].__defaultWidth = 960
-CoD[0xB3EF12304073586].__defaultHeight = 240
-CoD[0xB3EF12304073586].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_steampunkwarriors = InheritFrom( LUI.UIElement )
+CoD.callingcards_steampunkwarriors.__defaultWidth = 960
+CoD.callingcards_steampunkwarriors.__defaultHeight = 240
+CoD.callingcards_steampunkwarriors.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0xB3EF12304073586] )
+	self:setClass( CoD.callingcards_steampunkwarriors )
 	self.id = "CallingCards_steampunkwarriors"
 	self.soundSet = "none"
 	self.anyChildUsesUpdateState = true
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local background = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	background:setImage( RegisterImage( 0x7BB8A78AF5B0E9B ) )
+	background:setImage( RegisterImage( "uie_ui_icon_callingcards_steampunkwarriors_bg" ) )
 	self:addElement( background )
 	self.background = background
 	
@@ -23,12 +23,12 @@ CoD[0xB3EF12304073586].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.arm = arm
 	
 	local body = LUI.UIImage.new( 0, 0, 488, 960, 0, 0, 23, 240 )
-	body:setImage( RegisterImage( 0xD6EC887CAA058B4 ) )
+	body:setImage( RegisterImage( "uie_ui_icon_callingcards_steampunkwarriors_body" ) )
 	self:addElement( body )
 	self.body = body
 	
 	local HEAD = LUI.UIImage.new( 0, 0, 553, 713, 0, 0, -16.5, 143.5 )
-	HEAD:setImage( RegisterImage( 0xE4525338A0F713A ) )
+	HEAD:setImage( RegisterImage( "uie_ui_icon_callingcards_steampunkwarriors_head" ) )
 	self:addElement( HEAD )
 	self.HEAD = HEAD
 	
@@ -37,7 +37,7 @@ CoD[0xB3EF12304073586].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.shoulder = shoulder
 	
 	local light2 = LUI.UIImage.new( 0, 0, 466.5, 539.5, 0, 0, 90, 163 )
-	light2:setImage( RegisterImage( 0xADBF2ABD5CCB0FC ) )
+	light2:setImage( RegisterImage( "uie_ui_icon_callingcards_steampunkwarriors_light" ) )
 	light2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( light2 )
 	self.light2 = light2
@@ -45,7 +45,7 @@ CoD[0xB3EF12304073586].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local smoke = LUI.UIImage.new( 0, 0, -200, 960, 0, 0, 28, 338 )
 	smoke:setRGB( 0.14, 0.62, 0.65 )
 	smoke:setAlpha( 0 )
-	smoke:setImage( RegisterImage( 0x2CEE357C2E51151 ) )
+	smoke:setImage( RegisterImage( "uie_ui_icon_callingcards_steampunkwarriors_smoke" ) )
 	self:addElement( smoke )
 	self.smoke = smoke
 	
@@ -62,7 +62,7 @@ CoD[0xB3EF12304073586].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0xB3EF12304073586].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_steampunkwarriors.__resetProperties = function ( f2_arg0 )
 	f2_arg0.arm:completeAnimation()
 	f2_arg0.shoulder:completeAnimation()
 	f2_arg0.body:completeAnimation()
@@ -87,7 +87,7 @@ CoD[0xB3EF12304073586].__resetProperties = function ( f2_arg0 )
 	f2_arg0.whitebox:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 end
 
-CoD[0xB3EF12304073586].__clipsPerState = {
+CoD.callingcards_steampunkwarriors.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -363,7 +363,7 @@ CoD[0xB3EF12304073586].__clipsPerState = {
 		end
 	}
 }
-CoD[0xB3EF12304073586].__onClose = function ( f42_arg0 )
+CoD.callingcards_steampunkwarriors.__onClose = function ( f42_arg0 )
 	f42_arg0.arm:close()
 	f42_arg0.shoulder:close()
 end

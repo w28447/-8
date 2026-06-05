@@ -73,13 +73,13 @@ CoD.ChooseClassSlideOutInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.focusBlocker = focusBlocker
 	
 	local LB = CoD.BumperButtonWithKeyMouseText.new( f1_arg0, f1_arg1, 0.5, 0.5, -300, -100, 0, 0, 1, 35 )
-	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBDCD5292604F434 ) )
+	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/lb" ) )
 	LB.GamepadPrompt:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	self:addElement( LB )
 	self.LB = LB
 	
 	local RB = CoD.BumperButtonWithKeyMouseText.new( f1_arg0, f1_arg1, 0.5, 0.5, 100, 300, 0, 0, 1, 35 )
-	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBFED5292621DA9A ) )
+	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/rb" ) )
 	self:addElement( RB )
 	self.RB = RB
 	
@@ -118,30 +118,30 @@ CoD.ChooseClassSlideOutInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 		end
 		return f10_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PreviewMWheelFocusable, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELUP", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		CoD.GridAndListUtility.NavigateGridItem( self.ClassPClist, f11_arg2, true )
+	f1_arg0:AddButtonCallbackFunction( PreviewMWheelFocusable, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELUP", function ( element, menu, controller, model )
+		CoD.GridAndListUtility.NavigateGridItem( self.ClassPClist, controller, true )
 		return true
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MWHEELUP" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MWHEELUP" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( PreviewMWheelFocusable, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELDOWN", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		CoD.GridAndListUtility.NavigateGridItem( self.ClassPClist, f13_arg2, false )
+	f1_arg0:AddButtonCallbackFunction( PreviewMWheelFocusable, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELDOWN", function ( element, menu, controller, model )
+		CoD.GridAndListUtility.NavigateGridItem( self.ClassPClist, controller, false )
 		return true
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MWHEELDOWN" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MWHEELDOWN" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( PreviewMWheelFocusable, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		if IsMouseOrKeyboard( f15_arg2 ) and not CoD.CACUtility.IsCurrentClassLocked( f15_arg1, f15_arg2 ) then
-			CoD.PCUtility.ConfirmChangeClass( f15_arg1, f15_arg2 )
+	f1_arg0:AddButtonCallbackFunction( PreviewMWheelFocusable, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and not CoD.CACUtility.IsCurrentClassLocked( menu, controller ) then
+			CoD.PCUtility.ConfirmChangeClass( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		if IsMouseOrKeyboard( f16_arg2 ) and not CoD.CACUtility.IsCurrentClassLocked( f16_arg1, f16_arg2 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and not CoD.CACUtility.IsCurrentClassLocked( menu, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
 		else
 			return false
@@ -204,16 +204,16 @@ CoD.ChooseClassSlideOutInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f21_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ClassPClist, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
-		if not CoD.CACUtility.IsCurrentClassLocked( f22_arg1, f22_arg2 ) then
-			CoD.PCUtility.ConfirmChangeClass( f22_arg1, f22_arg2 )
+	f1_arg0:AddButtonCallbackFunction( ClassPClist, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not CoD.CACUtility.IsCurrentClassLocked( menu, controller ) then
+			CoD.PCUtility.ConfirmChangeClass( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f23_arg0, f23_arg1, f23_arg2 )
-		if not CoD.CACUtility.IsCurrentClassLocked( f23_arg1, f23_arg2 ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not CoD.CACUtility.IsCurrentClassLocked( menu, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false

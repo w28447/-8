@@ -13,13 +13,13 @@ CoD.KillcamNemesisWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local Nemesisbar = LUI.UIImage.new( 0.5, 0.5, -538, 538, 0, 0, 128, 162 )
 	Nemesisbar:setRGB( 0.54, 0.01, 0.01 )
-	Nemesisbar:setImage( RegisterImage( 0x91D9C6D4106D23A ) )
+	Nemesisbar:setImage( RegisterImage( "uie_ui_hud_nemesis_bar" ) )
 	self:addElement( Nemesisbar )
 	self.Nemesisbar = Nemesisbar
 	
 	local KillsLabel20 = LUI.UIText.new( 0.5, 0.5, -88, 91, 0, 0, 132, 159 )
 	KillsLabel20:setRGB( 0.92, 0.92, 0.92 )
-	KillsLabel20:setText( Engine[0xF9F1239CFD921FE]( 0x30FB1CA77CF4B0C ) )
+	KillsLabel20:setText( Engine[0xF9F1239CFD921FE]( "mpui/nemesis_title_caps" ) )
 	KillsLabel20:setTTF( "0arame_mono_stencil" )
 	KillsLabel20:setLetterSpacing( 4 )
 	KillsLabel20:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -30,13 +30,13 @@ CoD.KillcamNemesisWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local NemesisIcon = LUI.UIImage.new( 0, 0, 42.5, 290.5, 0, 0, -14, 86 )
 	NemesisIcon:setRGB( 0.65, 0, 0 )
 	NemesisIcon:setScale( 0.8, 0.8 )
-	NemesisIcon:setImage( RegisterImage( 0x5A873CF40654090 ) )
+	NemesisIcon:setImage( RegisterImage( "uie_ui_hud_nemesis_icon" ) )
 	self:addElement( NemesisIcon )
 	self.NemesisIcon = NemesisIcon
 	
 	local NemesisSkull = LUI.UIImage.new( 0, 0, 42.5, 290.5, 0, 0, -24, 76 )
 	NemesisSkull:setScale( 0.75, 0.75 )
-	NemesisSkull:setImage( RegisterImage( 0x5DC0AF629835B8A ) )
+	NemesisSkull:setImage( RegisterImage( "uie_ui_hud_nemesis_skull" ) )
 	self:addElement( NemesisSkull )
 	self.NemesisSkull = NemesisSkull
 	

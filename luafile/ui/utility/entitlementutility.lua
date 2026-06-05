@@ -1,10 +1,10 @@
 CoD.EntitlementUtility = {}
 CoD.EntitlementUtility.EntitlementDisplayInfo = {
-	[0x541976A426ADB94] = {
+	predigitalgame = {
 		parents = {
-			0x54C2B9DDDD8A254,
+			"deluxegame",
 			0xB4CDBEC9F5007D3,
-			0xA6CEFD9DDE386BD,
+			"enhancedgame",
 			0x124842D07E8B0B0
 		},
 		addsCODPoints = true,
@@ -20,13 +20,13 @@ CoD.EntitlementUtility.EntitlementDisplayInfo = {
 			0x5D4C0FD1E750439
 		}
 	},
-	[0x3E413F99B7C14D9] = {
+	digitalgame = {
 		parents = {
-			0x54C2B9DDDD8A254,
+			"deluxegame",
 			0xB4CDBEC9F5007D3,
-			0xA6CEFD9DDE386BD,
+			"enhancedgame",
 			0x124842D07E8B0B0,
-			0x6582F0E479C96E9
+			"spectreeditiongame"
 		},
 		addsCODPoints = true,
 		displayName = 0x998026799B2915E,
@@ -40,9 +40,9 @@ CoD.EntitlementUtility.EntitlementDisplayInfo = {
 			0x5D4C0FD1E750439
 		}
 	},
-	[0x54C2B9DDDD8A254] = {
+	deluxegame = {
 		parents = {
-			0xA6CEFD9DDE386BD,
+			"enhancedgame",
 			0x124842D07E8B0B0
 		},
 		addsCODPoints = true,
@@ -62,7 +62,7 @@ CoD.EntitlementUtility.EntitlementDisplayInfo = {
 	},
 	[0xB4CDBEC9F5007D3] = {
 		parents = {
-			0xA6CEFD9DDE386BD,
+			"enhancedgame",
 			0x124842D07E8B0B0
 		},
 		addsCODPoints = true,
@@ -80,7 +80,7 @@ CoD.EntitlementUtility.EntitlementDisplayInfo = {
 			0x5D4C0FD1E750439
 		}
 	},
-	[0xA6CEFD9DDE386BD] = {
+	enhancedgame = {
 		addsCODPoints = true,
 		displayName = 0x26C4AF933188F11,
 		description = 0x816BC202A2D222B,
@@ -134,7 +134,7 @@ CoD.EntitlementUtility.EntitlementDisplayInfo = {
 			0xBC5B3E566D14354
 		}
 	},
-	[0xF7C1FF18A02ED4E] = {
+	retail_pro_pack = {
 		addsCODPoints = true,
 		displayName = 0x64681CFB4FF344D,
 		description = 0xD8CD36610AC4177,
@@ -174,7 +174,7 @@ CoD.EntitlementUtility.EntitlementDisplayInfo = {
 			0x5D4C0FD1E750439
 		}
 	},
-	[0x9DF29D0839A1BE1] = {
+	black_ops_pass = {
 		addsCODPoints = false,
 		displayName = 0xBB8C7DC3C3EB0CB,
 		description = 0x5B9C7B3D045CFDD,
@@ -307,7 +307,7 @@ CoD.EntitlementUtility.EntitlementDisplayInfo = {
 			0xA4E0BB7A87A54EA
 		}
 	},
-	[0xBE23F482B82219F] = {
+	beta_reward = {
 		addsCODPoints = false,
 		displayName = 0xE1D37200C8B3601,
 		description = 0x1C5D1B0FF8C86FB,
@@ -337,7 +337,7 @@ CoD.EntitlementUtility.EntitlementDisplayInfo = {
 		}
 	},
 	[0x2F6851583C61D1F] = {
-		bannerImage = 0xCC9FE5E35B5A464,
+		bannerImage = "ui_icon_blackmarket_promos_twitch_redemption",
 		displayName = 0x5D5482CC59417A0,
 		description = 0x3F1FF3532504768,
 		items = {
@@ -347,7 +347,7 @@ CoD.EntitlementUtility.EntitlementDisplayInfo = {
 		}
 	},
 	[0x7152F1598A5C3DE] = {
-		bannerImage = 0xAEC788F1608D132,
+		bannerImage = "ui_icon_blackmarket_promos_twitch_redemption_banner_2",
 		displayName = 0x12754DD27A73007,
 		description = 0x7E06CD7E7856F99,
 		items = {
@@ -356,7 +356,7 @@ CoD.EntitlementUtility.EntitlementDisplayInfo = {
 			0x8ADA739B92CFC74
 		}
 	},
-	[0x6582F0E479C96E9] = {
+	spectreeditiongame = {
 		displayName = 0x59507D962AB0868,
 		description = 0xD94D478E8696DB0,
 		items = {
@@ -370,7 +370,7 @@ CoD.EntitlementUtility.EntitlementDisplayInfo = {
 		}
 	},
 	[0x2F68E1583C62C6A] = {
-		bannerImage = 0xAEC798F1608D2E5,
+		bannerImage = "ui_icon_blackmarket_promos_twitch_redemption_banner_3",
 		displayName = 0x1B584310BE38056,
 		description = 0x9C062C90F04826,
 		items = {
@@ -382,7 +382,7 @@ CoD.EntitlementUtility.EntitlementDisplayInfo = {
 		}
 	},
 	[0xBD04E15802702BE] = {
-		bannerImage = 0xAEC738F1608C8B3,
+		bannerImage = "ui_icon_blackmarket_promos_twitch_redemption_banner_5",
 		displayName = 0xC830692FAB97775,
 		description = 0x681C2CCB1378C5F,
 		items = {
@@ -395,7 +395,7 @@ CoD.EntitlementUtility.EntitlementDisplayInfo = {
 		}
 	},
 	[0xBD04C158026FF58] = {
-		bannerImage = 0xAEC748F1608CA66,
+		bannerImage = "ui_icon_blackmarket_promos_twitch_redemption_banner_6",
 		displayName = 0xC7BFE92FAB34B2F,
 		description = 0x34B97450DF63BE1,
 		items = {
@@ -410,44 +410,44 @@ CoD.EntitlementUtility.EntitlementDisplayInfo = {
 	}
 }
 CoD.EntitlementUtility.DOTDImages = {
-	[0x5D901B2845AFFB5] = 0xC441A414036272D,
-	[0x71546989F2B39C0] = "loot_ui_icon_outfit_dotd_base_pal_exo2_crash",
-	[0x5ABB557417D97BC] = 0x3AF839BE5846199,
-	[0x4C5E1C04823489D] = 0x3BA5CAF335366EE,
-	[0x7C8471AD085983B] = 0x70C4F0BE6D90303,
-	[0x15EFCE6AF8D9A10] = 0x53AF50B9833EA1A,
-	[0x65A8BFE9E6A3A8F] = 0x1C4333BA8549A37,
-	[0x41D42086962443D] = 0x3DEF57D1F61A782,
-	[0x4A7B1F09EB77129] = 0x9F91F6B1C1B4A7A,
-	["pbt_mp_trapper"] = 0x98B9651F9462923
+	pbt_mp_battery = "loot_ui_icon_outfit_dotd_base_pal_exo2_battery",
+	pbt_mp_buffassault = "loot_ui_icon_outfit_dotd_base_pal_exo2_crash",
+	pbt_mp_enforcer = "loot_ui_icon_outfit_dotd_base_pal_exo2_seraph",
+	pbt_mp_engineer = "loot_ui_icon_outfit_dotd_base_pal_exo2_torque",
+	pbt_mp_firebreak = "loot_ui_icon_outfit_dotd_base_pal_exo2_firebreak",
+	pbt_mp_mercenary = "loot_ui_icon_outfit_dotd_base_pal_exo2_ruin",
+	pbt_mp_recon = "loot_ui_icon_outfit_dotd_base_pal_exo2_recon",
+	pbt_mp_swatpolice = "loot_ui_icon_outfit_dotd_base_pal_exo2_ajax",
+	pbt_mp_technomancer = "loot_ui_icon_outfit_dotd_base_pal_exo2_prophet",
+	pbt_mp_trapper = "loot_ui_icon_outfit_dotd_base_pal_exo2_nomad"
 }
 CoD.EntitlementUtility.DigitalGameEntitlement = {
-	[0xDCD5350DF98F438] = {
+	blackops_pack = {
 		0xB4CDBEC9F5007D3,
 		0x124842D07E8B0B0,
-		0x54C2B9DDDD8A254,
-		0x3E413F99B7C14D9,
-		0xA6CEFD9DDE386BD,
+		"deluxegame",
+		"digitalgame",
+		"enhancedgame",
 		0x9EC2B060A91A01C,
-		0x541976A426ADB94,
+		"predigitalgame",
 		0x229C75FA42FA856,
-		0xF7C1FF18A02ED4E,
+		"retail_pro_pack",
 		0x3EE7271A9A14421,
-		0x6582F0E479C96E9
+		"spectreeditiongame"
 	},
-	[0x15BE56C5EA0253] = {
-		0x6582F0E479C96E9
+	blackops_pack_spectre = {
+		"spectreeditiongame"
 	},
-	[0x77B58D9F38DE25F] = {
-		0x6582F0E479C96E9
+	blackops_pack_survivor = {
+		"spectreeditiongame"
 	},
 	[0xC94ED95E25D8246] = {
 		0xB4CDBEC9F5007D3,
 		0x124842D07E8B0B0,
-		0x54C2B9DDDD8A254,
-		0xA6CEFD9DDE386BD,
+		"deluxegame",
+		"enhancedgame",
 		0x9EC2B060A91A01C,
-		0xF7C1FF18A02ED4E
+		"retail_pro_pack"
 	}
 }
 CoD.EntitlementUtility.CheckBOpsPassValidity = function ( f1_arg0 )
@@ -482,8 +482,8 @@ end
 
 CoD.EntitlementUtility.GetViewedEntitlement = function ( f5_arg0, f5_arg1 )
 	local f5_local0 = Engine.StorageGetBuffer( f5_arg0, Enum.StorageFileType[0xFDE358A242AFA2C] )
-	if f5_local0 and f5_local0[0xA6EE0A867B10F80][f5_arg1] then
-		return f5_local0[0xA6EE0A867B10F80][f5_arg1]:get() == 1
+	if f5_local0 and f5_local0.entitlementacknowledged[f5_arg1] then
+		return f5_local0.entitlementacknowledged[f5_arg1]:get() == 1
 	else
 		return nil
 	end
@@ -491,8 +491,8 @@ end
 
 CoD.EntitlementUtility.SetViewedEntitlement = function ( f6_arg0, f6_arg1 )
 	local f6_local0 = Engine.StorageGetBuffer( f6_arg0, Enum.StorageFileType[0xFDE358A242AFA2C] )
-	if f6_local0 and f6_local0[0xA6EE0A867B10F80][f6_arg1] then
-		f6_local0[0xA6EE0A867B10F80][f6_arg1]:set( 1 )
+	if f6_local0 and f6_local0.entitlementacknowledged[f6_arg1] then
+		f6_local0.entitlementacknowledged[f6_arg1]:set( 1 )
 		Engine.StorageWrite( f6_arg0, Enum.StorageFileType[0xFDE358A242AFA2C] )
 		return true
 	else
@@ -565,15 +565,15 @@ CoD.EntitlementUtility.OpenEntitlementPopups = function ( f14_arg0, f14_arg1 )
 		return 
 	elseif Engine.HasEntitlement( f14_arg0, 0x3638EF15BA822FB ) then
 		if not CoD.EntitlementUtility.GetViewedEntitlement( f14_arg0, 0x3638EF15BA822FB ) and not CoD.EntitlementUtility.EntitlementDisplayInfo[0x3638EF15BA822FB].opened then
-			CoD.EntitlementUtility.SetViewedEntitlement( f14_arg0, 0xBE23F482B82219F )
+			CoD.EntitlementUtility.SetViewedEntitlement( f14_arg0, "beta_reward" )
 			CoD.EntitlementUtility.SetupEntitlementPopupData( f14_arg0, 0x3638EF15BA822FB )
 			CoD.EntitlementUtility.EntitlementDisplayInfo[0x3638EF15BA822FB].opened = true
 			OpenPopup( f14_arg1, "BetaUnlockPopup", f14_arg0 )
 			return 
 		end
-	elseif Engine.HasEntitlement( f14_arg0, 0xBE23F482B82219F ) and not CoD.EntitlementUtility.GetViewedEntitlement( f14_arg0, 0xBE23F482B82219F ) and not CoD.EntitlementUtility.EntitlementDisplayInfo[0xBE23F482B82219F].opened then
-		CoD.EntitlementUtility.SetupEntitlementPopupData( f14_arg0, 0xBE23F482B82219F )
-		CoD.EntitlementUtility.EntitlementDisplayInfo[0xBE23F482B82219F].opened = true
+	elseif Engine.HasEntitlement( f14_arg0, "beta_reward" ) and not CoD.EntitlementUtility.GetViewedEntitlement( f14_arg0, "beta_reward" ) and not CoD.EntitlementUtility.EntitlementDisplayInfo.beta_reward.opened then
+		CoD.EntitlementUtility.SetupEntitlementPopupData( f14_arg0, "beta_reward" )
+		CoD.EntitlementUtility.EntitlementDisplayInfo.beta_reward.opened = true
 		OpenPopup( f14_arg1, "BetaCallingCardPopup", f14_arg0 )
 		return 
 	end
@@ -597,7 +597,7 @@ CoD.EntitlementUtility.OpenEntitlementPopups = function ( f14_arg0, f14_arg1 )
 			end
 		end
 	end
-	if IsLootReady( f14_arg0 ) and CoD.EntitlementUtility.HasSeasonPassToken( f14_arg0 ) and not CoD.EntitlementUtility.BOPassSeen and Engine.CurrentSessionMode() == Enum.eModes[0xB22E0240605CFFE] then
+	if IsLootReady( f14_arg0 ) and CoD.EntitlementUtility.HasSeasonPassToken( f14_arg0 ) and not CoD.EntitlementUtility.BOPassSeen and Engine.CurrentSessionMode() == Enum.eModes.mode_invalid then
 		CoD.EntitlementUtility.BOPassSeen = true
 		OpenPopup( f14_arg1, "BOPassPopup", f14_arg0 )
 		return 
@@ -605,7 +605,7 @@ CoD.EntitlementUtility.OpenEntitlementPopups = function ( f14_arg0, f14_arg1 )
 		CoD.EntitlementUtility.BOPass5CrateIncentiveSeen = true
 		OpenPopup( f14_arg1, "RewardPopup", f14_arg0 )
 		return 
-	elseif IsLootReady( f14_arg0 ) and CoD.EntitlementUtility.ShouldOpenSpecialistDialog( f14_arg0, Enum.eModes[0x83EBA96F36BC4E5], 0xC94ED95E25D8246 ) and not CoD.EntitlementUtility.DiaDeLosMuertosPopupSeen then
+	elseif IsLootReady( f14_arg0 ) and CoD.EntitlementUtility.ShouldOpenSpecialistDialog( f14_arg0, Enum.eModes.mode_multiplayer, 0xC94ED95E25D8246 ) and not CoD.EntitlementUtility.DiaDeLosMuertosPopupSeen then
 		CoD.EntitlementUtility.DiaDeLosMuertosPopupSeen = true
 		f14_local0 = Engine.GetModelForController( f14_arg0 )
 		f14_local0 = f14_local0:create( "PositionEditLoadout" )
@@ -649,7 +649,7 @@ DataSources.EntitlementItemList = DataSourceHelpers.ListSetup( "EntitlementItemL
 					f15_local8( f15_local9, f15_local10 )
 				end
 			end
-			f15_local12 = 0x0
+			f15_local12 = ""
 		end
 	end
 	return f15_local0

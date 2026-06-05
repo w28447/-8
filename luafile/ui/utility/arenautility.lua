@@ -100,9 +100,9 @@ CoD.ArenaUtility.GetArenaSeasonElapsedSeconds = function ()
 	if Engine[0xEDCFC612B39E0C0]( "arena_day_overwrite" ) > 0 then
 		f3_local0 = Engine[0xEDCFC612B39E0C0]( "arena_day_overwrite" ) * CoD.ArenaUtility.secondsInDay
 		if CoD.ArenaUtility.ArenaDayOverwriteFixedTime == -1 then
-			CoD.ArenaUtility.ArenaDayOverwriteFixedTime = Engine[0xEFF639FB8A1BE0A]()
+			CoD.ArenaUtility.ArenaDayOverwriteFixedTime = Engine.seconds()
 		else
-			f3_local0 = f3_local0 + Engine[0xEFF639FB8A1BE0A]() - CoD.ArenaUtility.ArenaDayOverwriteFixedTime
+			f3_local0 = f3_local0 + Engine.seconds() - CoD.ArenaUtility.ArenaDayOverwriteFixedTime
 		end
 	end
 	return f3_local0
@@ -322,7 +322,7 @@ end
 
 CoD.ArenaUtility.CheckArenaStats = function ( f18_arg0, f18_arg1 )
 	if (CoD.ArenaLeaguePlayUtility.CheckLeagueID( f18_arg0, f18_arg1 ) or CoD.ArenaRankedPlayUtility.CheckSeason( f18_arg0 )) == true then
-		Engine.Exec( f18_arg0, "uploadstats" )
+		Engine.exec( f18_arg0, "uploadstats" )
 	end
 end
 
@@ -395,7 +395,7 @@ CoD.ArenaUtility.ShowCurrentEventDetails = function ( f26_arg0 )
 	local f26_local4 = Engine.GetPrimaryController()
 	if f26_local0.eventType == Enum[0xC0EA92D04BC003B][0xA9E0B7849B16CD2] then
 		local f26_local5 = f26_local1:create( "arenaSubtitle" )
-		f26_local5:set( 0x5E9527E830C1784 )
+		f26_local5:set( "arena/event_ranked_play_name" )
 		f26_arg0.RankedPlayDetails:show()
 	elseif f26_local0.eventType == Enum[0xC0EA92D04BC003B][0xC32571741C5B730] then
 		local f26_local5 = f26_local1:create( "arenaSubtitle" )
@@ -404,14 +404,14 @@ CoD.ArenaUtility.ShowCurrentEventDetails = function ( f26_arg0 )
 	elseif f26_local0.eventType == Enum[0xC0EA92D04BC003B][0x70DF63F42A5E56A] then
 		DataSources.InvitationalDetails.PopulateWidget( f26_arg0.InvitationalDetails, f26_local4, f26_local3, Engine[0xE00B2F29271C60B]( f26_local0.event ) )
 		local f26_local6 = f26_local1:create( "arenaSubtitle" )
-		f26_local6:set( 0x6842AF0D1EB283C )
+		f26_local6:set( "arena/event_invitational_name" )
 		f26_arg0.InvitationalDetails:show()
 	elseif f26_local0.eventType == Enum[0xC0EA92D04BC003B][0x3603CAC0849A965] then
 		local f26_local5 = f26_local1:create( "arenaSubtitle" )
-		f26_local5:set( 0x6CCA3784D93761D )
+		f26_local5:set( "arena/event_run_name" )
 	elseif f26_local0.eventType == Enum[0xC0EA92D04BC003B][0x185075D2D3D8497] then
 		local f26_local5 = f26_local1:create( "arenaSubtitle" )
-		f26_local5:set( 0x7F5ED5CC537D66B )
+		f26_local5:set( "arena/event_scrims_name" )
 	end
 end
 
@@ -564,7 +564,7 @@ CoD.ArenaUtility.UpdateArenaOnLobbyNav = function ()
 	local f40_local3 = Engine.GetGlobalModel()
 	local f40_local4 = f40_local3.Arena
 	local f40_local5 = f40_local3.LeaguePlay
-	if f40_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_PREGAME ) then
+	if f40_local0.id == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_PREGAME ) then
 		CoD.ArenaUtility.CheckArenaStats( f40_local2, f40_local1 )
 		CoD.ArenaLeaguePlayUtility.CheckIfProcessingLeagueID( f40_local2 )
 	end
@@ -798,7 +798,7 @@ CoD.ArenaUtility.PopulateStats = function ( f49_arg0 )
 			table.insert( f49_local5, {
 				models = {
 					gameMode = "",
-					image = 0x214ECBA8C04D44C
+					image = "$blacktransparent"
 				},
 				properties = {}
 			} )
@@ -864,7 +864,7 @@ CoD.ArenaUtility.PopulateStats = function ( f49_arg0 )
 	local f49_local18 = f49_local2.arenaSlot
 	if f49_local0.eventType == Enum[0xC0EA92D04BC003B][0xA9E0B7849B16CD2] then
 		local f49_local15 = f49_local3:create( "arenaSubtitle" )
-		f49_local15:set( 0x5E9527E830C1784 )
+		f49_local15:set( "arena/event_ranked_play_name" )
 	elseif f49_local0.eventType == Enum[0xC0EA92D04BC003B][0xC32571741C5B730] then
 		DataSources.LeaguePlay.PopulateWidget( f49_arg0, f49_local18, Engine[0xE00B2F29271C60B]( f49_local0.event ) )
 		DataSources.ArenaGauntlet.PopulateWidget( f49_arg0 )
@@ -874,14 +874,14 @@ CoD.ArenaUtility.PopulateStats = function ( f49_arg0 )
 		local f49_local15 = Engine[0xE00B2F29271C60B]( f49_local0.event )
 		local f49_local19 = f49_local0.startOffset <= f49_local14
 		local f49_local16 = f49_local3:create( "arenaSubtitle" )
-		f49_local16:set( 0x6842AF0D1EB283C )
+		f49_local16:set( "arena/event_invitational_name" )
 	elseif f49_local0.eventType == Enum[0xC0EA92D04BC003B][0x3603CAC0849A965] then
 		local f49_local15 = f49_local3:create( "arenaSubtitle" )
-		f49_local15:set( 0x6CCA3784D93761D )
+		f49_local15:set( "arena/event_run_name" )
 	elseif f49_local0.eventType == Enum[0xC0EA92D04BC003B][0x185075D2D3D8497] then
 		DataSources.LeaguePlay.PopulateWidget( f49_arg0, f49_local18, nil )
 		local f49_local15 = f49_local3:create( "arenaSubtitle" )
-		f49_local15:set( 0x7F5ED5CC537D66B )
+		f49_local15:set( "arena/event_scrims_name" )
 	end
 	if f49_local1 and f49_local1.eventType == Enum[0xC0EA92D04BC003B][0xC32571741C5B730] then
 		DataSources.LeaguePlay.PopulateWidget( f49_arg0, f49_local18, nil )
@@ -950,7 +950,7 @@ CoD.ArenaUtility.CreateArenaCards = function ( f52_arg0, f52_arg1, f52_arg2, f52
 			end
 			local f52_local9, f52_local10, f52_local11, f52_local16 = CoD.ArenaUtility.GetDaysHoursMinutesSecondsFromSeconds( f52_local15.endOffset - f52_local0 )
 			local f52_local17 = ""
-			local f52_local18 = 0x214ECBA8C04D44C
+			local f52_local18 = "$blacktransparent"
 			local f52_local19 = f52_local6 and not f52_local15.changesDaily
 			local f52_local20 = not f52_local6
 			if f52_local15.eventType == Enum[0xC0EA92D04BC003B][0xA9E0B7849B16CD2] or f52_local15.eventType == Enum[0xC0EA92D04BC003B][0x185075D2D3D8497] then
@@ -976,13 +976,13 @@ CoD.ArenaUtility.CreateArenaCards = function ( f52_arg0, f52_arg1, f52_arg2, f52
 				f52_local22 = f52_local24 and f52_local24 >= 2
 			else
 				local f52_local23 = LuaUtils.PlaylistRulesIncludes( f52_local8.rules, 0x1ED2E7B5DD0BDD, "group_party2" )
-				local f52_local25 = LuaUtils.PlaylistRulesIncludes( f52_local8.rules, 0x1F880DFEB7286D3, "2" )
+				local f52_local25 = LuaUtils.PlaylistRulesIncludes( f52_local8.rules, "scr_xpscalemp", "2" )
 				if f52_local23 and 2 > totalPartyCount - guestCount then
 					f52_local21 = false
 				else
 					f52_local21 = f52_local25 and true
 				end
-				f52_local22 = LuaUtils.PlaylistRulesIncludes( f52_local8.rules, 0xC9735B7B2ADB9E1, "2" )
+				f52_local22 = LuaUtils.PlaylistRulesIncludes( f52_local8.rules, "scr_gunxpscalemp", "2" )
 			end
 			if not f52_local3 then
 				f52_local3 = f52_local19
@@ -1072,7 +1072,7 @@ CoD.ArenaUtility.GetLadderPositionRankUpResult = function ( f55_arg0 )
 	elseif f55_arg0 <= 25 then
 		f55_arg0 = 0xC516D33B0595B88
 	else
-		f55_arg0 = 0x0
+		f55_arg0 = ""
 	end
 	return f55_arg0
 end

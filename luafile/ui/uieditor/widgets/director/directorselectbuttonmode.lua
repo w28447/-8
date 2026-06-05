@@ -47,7 +47,7 @@ CoD.DirectorSelectButtonMode.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local TabBottomLine = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, -2, 2 )
 	TabBottomLine:setAlpha( 0.09 )
-	TabBottomLine:setImage( RegisterImage( 0x5526CF3733E24C4 ) )
+	TabBottomLine:setImage( RegisterImage( "uie_ui_menu_common_tab_line_bottom" ) )
 	TabBottomLine:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TabBottomLine )
 	self.TabBottomLine = TabBottomLine

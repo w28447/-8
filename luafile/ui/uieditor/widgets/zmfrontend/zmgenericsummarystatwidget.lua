@@ -97,7 +97,7 @@ CoD.ZMGenericSummaryStatWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.YellowLine = YellowLine
 	
 	local TopBar = LUI.UIImage.new( -0.02, 1.02, 0, 0, 0, 0, 37.5, 45.5 )
-	TopBar:setImage( RegisterImage( 0x712894B3AB5924C ) )
+	TopBar:setImage( RegisterImage( "uie_ui_hud_zm_aar_common_bar" ) )
 	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	TopBar:setShaderVector( 0, 0, 0, 0, 0 )
 	TopBar:setupNineSliceShader( 20, 4 )
@@ -107,7 +107,7 @@ CoD.ZMGenericSummaryStatWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local TopBarAdd = LUI.UIImage.new( -0.02, 1.02, 0, 0, 0, 0, 37.5, 45.5 )
 	TopBarAdd:setRGB( 0.92, 0.92, 0.92 )
 	TopBarAdd:setAlpha( 0 )
-	TopBarAdd:setImage( RegisterImage( 0x712894B3AB5924C ) )
+	TopBarAdd:setImage( RegisterImage( "uie_ui_hud_zm_aar_common_bar" ) )
 	TopBarAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	TopBarAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	TopBarAdd:setupNineSliceShader( 20, 4 )

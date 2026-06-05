@@ -44,7 +44,7 @@ CoD.ReservesButtonLayoutBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local DotLineBottom = LUI.UIImage.new( 0.02, 0.98, 0, 0, 0.5, 0.5, 241, 245 )
 	DotLineBottom:setAlpha( 0.4 )
-	DotLineBottom:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	DotLineBottom:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	DotLineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	DotLineBottom:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( DotLineBottom )
@@ -52,7 +52,7 @@ CoD.ReservesButtonLayoutBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local DotLineTop = LUI.UIImage.new( 0.02, 0.98, 0, 0, 0.5, 0.5, -245, -241 )
 	DotLineTop:setAlpha( 0.4 )
-	DotLineTop:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	DotLineTop:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	DotLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	DotLineTop:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( DotLineTop )

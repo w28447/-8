@@ -22,13 +22,13 @@ CoD.WarzoneRedeployment.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local led = LUI.UIImage.new( 0.5, 0.5, -146, 146, 0.5, 0.5, -20, 20 )
 	led:setAlpha( 0.02 )
-	led:setImage( RegisterImage( 0xC07F7432F86DA83 ) )
+	led:setImage( RegisterImage( "uie_wz_hud_map_danger_led" ) )
 	self:addElement( led )
 	self.led = led
 	
 	local border = LUI.UIImage.new( 0.5, 0.5, -151.5, 151.5, 0.5, 0.5, -23, 23 )
 	border:setRGB( 0.07, 0.07, 0.07 )
-	border:setImage( RegisterImage( 0xA3C76B80B69874D ) )
+	border:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_chamfer_border" ) )
 	border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	border:setShaderVector( 0, 0, 0, 0, 0 )
 	border:setupNineSliceShader( 18, 24 )

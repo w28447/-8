@@ -14,7 +14,7 @@ CoD.vhud_turret_internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local vignetteCenter = LUI.UIImage.new( 0, 1, -300, 300, 0, 1, -188, 188 )
 	vignetteCenter:setAlpha( 0.5 )
-	vignetteCenter:setImage( RegisterImage( 0xEE4980C2A8CEA50 ) )
+	vignetteCenter:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_backgroundtint" ) )
 	self:addElement( vignetteCenter )
 	self.vignetteCenter = vignetteCenter
 	

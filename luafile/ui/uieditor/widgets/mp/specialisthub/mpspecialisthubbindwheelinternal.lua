@@ -19,7 +19,7 @@ CoD.MPSpecialistHUBBindWheelInternal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local TiledPlusGrid = LUI.UIImage.new( 0, 0, -21.5, 1898.5, 0, 0, 0, 1082 )
 	TiledPlusGrid:setAlpha( 0.02 )
-	TiledPlusGrid:setImage( RegisterImage( 0x6E37BAE22631294 ) )
+	TiledPlusGrid:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_repeat_plusgrid" ) )
 	TiledPlusGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledPlusGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledPlusGrid:setupNineSliceShader( 220, 220 )
@@ -175,7 +175,7 @@ CoD.MPSpecialistHUBBindWheelInternal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local TitleQuickAccess = LUI.UIText.new( 0.5, 0.5, 424, 854, 0.5, 0.5, 96.5, 121.5 )
 	TitleQuickAccess:setRGB( 0.96, 0.93, 0.84 )
 	TitleQuickAccess:setAlpha( 0.7 )
-	TitleQuickAccess:setText( Engine[0xF9F1239CFD921FE]( 0xFA68235049303DD ) )
+	TitleQuickAccess:setText( Engine[0xF9F1239CFD921FE]( "menu/quick_tag" ) )
 	TitleQuickAccess:setTTF( "ttmussels_regular" )
 	TitleQuickAccess:setLetterSpacing( 3 )
 	TitleQuickAccess:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -206,16 +206,16 @@ CoD.MPSpecialistHUBBindWheelInternal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f17_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( emptyFocusable, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f18_arg0, f18_arg1, f18_arg2, f18_arg3 )
+	f1_arg0:AddButtonCallbackFunction( emptyFocusable, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsPC() then
-			CoD.PlayerRoleUtility.OpenGestureTagMenu( f18_arg1, f18_arg2 )
+			CoD.PlayerRoleUtility.OpenGestureTagMenu( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f19_arg0, f19_arg1, f19_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -238,16 +238,16 @@ CoD.MPSpecialistHUBBindWheelInternal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f20_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( AssignQuickTagButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f21_arg0, f21_arg1, f21_arg2, f21_arg3 )
+	f1_arg0:AddButtonCallbackFunction( AssignQuickTagButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsPC() then
-			CoD.PlayerRoleUtility.OpenQuickSlotGestureTagMenu( f21_arg1, f21_arg2 )
+			CoD.PlayerRoleUtility.OpenQuickSlotGestureTagMenu( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f22_arg0, f22_arg1, f22_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -274,56 +274,56 @@ CoD.MPSpecialistHUBBindWheelInternal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local halfCircleBR = LUI.UIImage.new( 0.5, 0.5, 408, 0, 0.5, 0.5, 408, 0 )
 	halfCircleBR:setAlpha( 0.01 )
-	halfCircleBR:setImage( RegisterImage( 0xF13D40449AE7486 ) )
+	halfCircleBR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
 	halfCircleBR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( halfCircleBR )
 	self.halfCircleBR = halfCircleBR
 	
 	local halfCircleTR = LUI.UIImage.new( 0.5, 0.5, 408, 0, 0.5, 0.5, -408, 0 )
 	halfCircleTR:setAlpha( 0.01 )
-	halfCircleTR:setImage( RegisterImage( 0xF13D40449AE7486 ) )
+	halfCircleTR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
 	halfCircleTR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( halfCircleTR )
 	self.halfCircleTR = halfCircleTR
 	
 	local halfCircleBL = LUI.UIImage.new( 0.5, 0.5, -408, 0, 0.5, 0.5, 408, 0 )
 	halfCircleBL:setAlpha( 0.01 )
-	halfCircleBL:setImage( RegisterImage( 0xF13D40449AE7486 ) )
+	halfCircleBL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
 	halfCircleBL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( halfCircleBL )
 	self.halfCircleBL = halfCircleBL
 	
 	local halfCircleTL = LUI.UIImage.new( 0.5, 0.5, -408, 0, 0.5, 0.5, -408, 0 )
 	halfCircleTL:setAlpha( 0.01 )
-	halfCircleTL:setImage( RegisterImage( 0xF13D40449AE7486 ) )
+	halfCircleTL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
 	halfCircleTL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( halfCircleTL )
 	self.halfCircleTL = halfCircleTL
 	
 	local halfCircleTR2 = LUI.UIImage.new( 0.5, 0.5, 86, 0, 0.5, 0.5, -87.5, -1.5 )
 	halfCircleTR2:setAlpha( 0.01 )
-	halfCircleTR2:setImage( RegisterImage( 0xF13D40449AE7486 ) )
+	halfCircleTR2:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
 	halfCircleTR2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( halfCircleTR2 )
 	self.halfCircleTR2 = halfCircleTR2
 	
 	local halfCircleBL2 = LUI.UIImage.new( 0.5, 0.5, -86, 0, 0.5, 0.5, 84.5, -1.5 )
 	halfCircleBL2:setAlpha( 0.01 )
-	halfCircleBL2:setImage( RegisterImage( 0xF13D40449AE7486 ) )
+	halfCircleBL2:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
 	halfCircleBL2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( halfCircleBL2 )
 	self.halfCircleBL2 = halfCircleBL2
 	
 	local halfCircleBR2 = LUI.UIImage.new( 0.5, 0.5, 86, 0, 0.5, 0.5, 84.5, -1.5 )
 	halfCircleBR2:setAlpha( 0.01 )
-	halfCircleBR2:setImage( RegisterImage( 0xF13D40449AE7486 ) )
+	halfCircleBR2:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
 	halfCircleBR2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( halfCircleBR2 )
 	self.halfCircleBR2 = halfCircleBR2
 	
 	local halfCircleTL2 = LUI.UIImage.new( 0.5, 0.5, -86, 0, 0.5, 0.5, -87.5, -1.5 )
 	halfCircleTL2:setAlpha( 0.01 )
-	halfCircleTL2:setImage( RegisterImage( 0xF13D40449AE7486 ) )
+	halfCircleTL2:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
 	halfCircleTL2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( halfCircleTL2 )
 	self.halfCircleTL2 = halfCircleTL2

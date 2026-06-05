@@ -34,14 +34,14 @@ CoD.CraftUtility.PaintshopView = {
 	{
 		view_name = "left",
 		customization_type = Enum.CustomizationType[0x4E4802F1ABF1844],
-		view_string_ref = 0x196E2F86F770D65,
-		edit_side_ref = 0xFB461549BEFC964
+		view_string_ref = "menu/paintshop_view_left",
+		edit_side_ref = "menu/paintshop_edit_layer"
 	},
 	{
 		view_name = "top",
 		customization_type = Enum.CustomizationType[0x820B78756D14F98],
-		view_string_ref = 0xDEEAC1FE9B16907,
-		edit_side_ref = 0xFB461549BEFC964
+		view_string_ref = "menu/paintshop_view_top",
+		edit_side_ref = "menu/paintshop_edit_layer"
 	}
 }
 CoD.CraftUtility.EmblemCategoryInvalid = -1
@@ -56,12 +56,12 @@ CoD.CraftUtility.EmblemDefaultGroupCategory = 101
 CoD.CraftUtility.EMBLEM_DECALTABS = {
 	{
 		type = "ICON",
-		displayName = 0x888D16905BE26A2,
+		displayName = "menu/emblem_selector_icons_tab",
 		category = CoD.CraftUtility.EmblemDecalIconsCategory
 	},
 	{
 		type = "STICKER",
-		displayName = 0x9F480787C9809F5,
+		displayName = "menu/stickers_caps",
 		category = CoD.CraftUtility.EmblemStickerCategory,
 		stickerCategory = CoD.CraftUtility.EmblemStickerCategory
 	},
@@ -73,7 +73,7 @@ CoD.CraftUtility.EMBLEM_DECALTABS = {
 	},
 	{
 		type = "TOOLS",
-		displayName = 0x884EBFC27D9994B,
+		displayName = "menu/emblem_selector_tools_tab",
 		category = CoD.CraftUtility.EmblemDecalToolsCategory
 	},
 	{
@@ -90,12 +90,12 @@ CoD.CraftUtility.DECAL_TOOLBUTTONS = {
 	},
 	{
 		type = "PATTERNS",
-		displayName = 0x5039C0EC8887E0B,
+		displayName = "menu/emblem_selector_patterns_tab",
 		category = 2
 	},
 	{
 		type = "TYPE",
-		displayName = 0xA08D9FC9BD60E0C,
+		displayName = "menu/emblem_selector_type_tab",
 		category = 4
 	},
 	{
@@ -121,7 +121,7 @@ CoD.CraftUtility.EmblemMaterialCategory = {
 	{
 		category = 1,
 		type = "general",
-		name = 0x1A6F885A9BAD0F8
+		name = "menu/emblem_material_general"
 	},
 	{
 		category = 2,
@@ -138,48 +138,48 @@ CoD.CraftUtility.WeaponGroupNames = {
 	{
 		index = 1,
 		weapon_category = "weapon_smg",
-		lowercaseName = 0x1735DF3DD97B3E9,
-		name = 0xFD890D63546403E,
+		lowercaseName = "mpui/sub_machine_guns",
+		name = "mpui/weapon_smg_abbr_caps_with_s",
 		loadout_slot = "primary",
 		weapon_image = "t7_wpn_build_kit_smg"
 	},
 	{
 		index = 2,
 		weapon_category = "weapon_assault",
-		lowercaseName = 0xDC19D439D9A9AE4,
-		name = 0xFE1B0B2003A6CC1,
+		lowercaseName = "mpui/assault_rifles",
+		name = "mpui/weapon_assault_caps",
 		loadout_slot = "primary",
 		weapon_image = "t7_wpn_build_kit_ar"
 	},
 	{
 		index = 3,
 		weapon_category = "weapon_cqb",
-		lowercaseName = 0xC6F4A85A489BB4C,
-		name = 0x47A4BC3A33F5EFC,
+		lowercaseName = "mpui/cqbs",
+		name = "mpui/cqbs_caps",
 		loadout_slot = "primary",
 		weapon_image = "t7_wpn_build_kit_shotgun"
 	},
 	{
 		index = 4,
 		weapon_category = "weapon_lmg",
-		lowercaseName = 0x77B1B6D295544BF,
-		name = 0x6E2CCF91E26DD51,
+		lowercaseName = "mpui/light_machine_guns",
+		name = "mpui/weapon_lmg_abbr_caps_with_s",
 		loadout_slot = "primary",
 		weapon_image = "t7_wpn_build_kit_lmg"
 	},
 	{
 		index = 5,
 		weapon_category = "weapon_sniper",
-		lowercaseName = 0xD79F8FBF735D61A,
-		name = 0xEF865AD574F5FAD,
+		lowercaseName = "mpui/sniper_rifles",
+		name = "mpui/weapon_sniper_caps",
 		loadout_slot = "primary",
 		weapon_image = "t7_wpn_build_kit_sniper"
 	},
 	{
 		index = 6,
 		weapon_category = "secondary",
-		lowercaseName = 0xB00F60446232842,
-		name = 0x4CA2AC0102BE042,
+		lowercaseName = "mpui/weapon_secondaries",
+		name = "mpui/weapon_secondaries_caps",
 		loadout_slot = "secondary",
 		weapon_image = "t7_wpn_build_kit_pistol"
 	}
@@ -298,7 +298,7 @@ CoD.CraftUtility.GetModeAbbreviation = function ()
 end
 
 CoD.CraftUtility.GetCraftMode = function ()
-	return Enum.eModes[0x83EBA96F36BC4E5]
+	return Enum.eModes.mode_multiplayer
 end
 
 CoD.CraftUtility.GetLoadoutSlot = function ( f15_arg0 )
@@ -314,7 +314,7 @@ end
 CoD.CraftUtility.DisplayWeaponInPaintshop = function ( f16_arg0, f16_arg1 )
 	Engine.SendClientScriptNotify( f16_arg0, "CustomClass_update" .. CoD.GetLocalClientAdjustedNum( f16_arg0 ), {
 		base_weapon_slot = CoD.CraftUtility.GetLoadoutSlot( f16_arg0 ),
-		weapon = Engine[0xB98952F69D937F9]( CoD.GetCustomization( f16_arg0, "weapon_index" ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] ),
+		weapon = Engine[0xB98952F69D937F9]( CoD.GetCustomization( f16_arg0, "weapon_index" ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer ),
 		attachments = "",
 		camera = f16_arg1,
 		options = CoD.WeaponOptionsUtility.GetWeaponOptionsString( 0, 0, 1 )
@@ -362,7 +362,7 @@ CoD.CraftUtility.GetWeaponGroupName = function ( f23_arg0 )
 	local f23_local0 = CoD.GetCustomization( f23_arg0, "weapon_index" )
 	local f23_local1 = ""
 	if f23_local0 then
-		f23_local1 = Engine.GetItemGroup( f23_local0, Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] )
+		f23_local1 = Engine.GetItemGroup( f23_local0, Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer )
 	end
 	return f23_local1
 end
@@ -397,7 +397,7 @@ CoD.CraftUtility.Gunsmith.ClearVariantStats = function ( f26_arg0, f26_arg1, f26
 end
 
 CoD.CraftUtility.Gunsmith.GetStatsStorageType = function ( f27_arg0 )
-	if f27_arg0 == Enum.eModes[0x60063C67132EB69] then
+	if f27_arg0 == Enum.eModes.mode_campaign then
 		return Enum.StorageFileType[0xA5B261DA142B9F6]
 	else
 		return Enum.StorageFileType[0xFDE358A242AFA2C]
@@ -406,7 +406,7 @@ end
 
 CoD.CraftUtility.Gunsmith.GetSnapshotSessionMode = function ()
 	local f28_local0 = Engine.GetModel( Engine.GetGlobalModel(), "GunsmithSnapshot.SessionMode" )
-	local f28_local1 = Enum.eModes[0x83EBA96F36BC4E5]
+	local f28_local1 = Enum.eModes.mode_multiplayer
 	if f28_local0 then
 		f28_local1 = Engine.GetModelValue( f28_local0 )
 	end
@@ -500,7 +500,7 @@ CoD.CraftUtility.Gunsmith.GetWeaponStatList = function ( f34_arg0, f34_arg1, f34
 			"headshots",
 			"accuracy"
 		}
-		if f34_arg2 == Enum.eModes[0x83EBA96F36BC4E5] then
+		if f34_arg2 == Enum.eModes.mode_multiplayer then
 			table.insert( f34_local0, "kd" )
 		end
 	end
@@ -509,19 +509,19 @@ end
 
 CoD.CraftUtility.Gunsmith.GetWeaponStatHeader = function ( f35_arg0 )
 	if f35_arg0 == "kills" then
-		return 0x38DA78DAF5A2E50
+		return "menu/gunsmith_kills_caps"
 	elseif f35_arg0 == "headshots" then
 		return "menu/gunsmith_headshots_caps"
 	elseif f35_arg0 == "accuracy" then
-		return 0x4F23623155E78C2
+		return "menu/gunsmith_accuracy_caps"
 	elseif f35_arg0 == "kd" then
 		return "menu/gunsmith_kd_caps"
 	elseif f35_arg0 == "destroyed" then
-		return 0x10D2D106F97C7E2
+		return "menu/gunsmith_vehicles_destroyed_caps"
 	elseif f35_arg0 == "backstabber_kill" then
-		return 0x778DBE679792AF
+		return "menu/gunsmith_backstabs_caps"
 	else
-		return 0x80040BF08530435
+		return "menu/gunsmith_unknown_caps"
 	end
 end
 
@@ -628,7 +628,7 @@ end
 CoD.CraftUtility.Gunsmith.GetAttachmentIconList = function ( f43_arg0, f43_arg1, f43_arg2, f43_arg3 )
 	return DataSourceHelpers.ListSetup( f43_arg1, function ( f44_arg0 )
 		local f44_local0 = {}
-		local f44_local1 = Enum.eModes[0x83EBA96F36BC4E5]
+		local f44_local1 = Enum.eModes.mode_multiplayer
 		for f44_local6, f44_local7 in ipairs( f43_arg3 ) do
 			if f44_local7 > CoD.CACUtility.EmptyItemIndex then
 				local f44_local5 = Engine.GetAttachmentIndexByAttachmentTableIndex( f43_arg2, f44_local7, f44_local1 )
@@ -659,7 +659,7 @@ CoD.CraftUtility.Gunsmith.GetTotalUsedWeaponVariantsByWeaponGroup = function ( f
 	local f47_local0 = CoD.CraftUtility.Gunsmith.CachedVariants
 	local f47_local1 = 0
 	for f47_local2 = 1, #f47_local0, 1 do
-		if f47_local0[f47_local2].weaponIndex and Engine.GetWeaponGroup( f47_local0[f47_local2].weaponIndex, Enum.eModes[0x83EBA96F36BC4E5] ) == tonumber( f47_arg0 ) then
+		if f47_local0[f47_local2].weaponIndex and Engine.GetWeaponGroup( f47_local0[f47_local2].weaponIndex, Enum.eModes.mode_multiplayer ) == tonumber( f47_arg0 ) then
 			f47_local1 = f47_local1 + 1
 		end
 	end
@@ -743,7 +743,7 @@ CoD.CraftUtility.Gunsmith.GetSortedWeaponVariantList = function ( f53_arg0, f53_
 	for f53_local4 = 1, #f53_local0, 1 do
 		local f53_local7 = f53_local0[f53_local4]
 		if f53_arg1 then
-			if not (f53_arg1 ~= "" or f53_local0[f53_local4].weaponIndex == 0) or Engine.GetWeaponGroup( f53_local0[f53_local4].weaponIndex, Enum.eModes[0x83EBA96F36BC4E5] ) == tonumber( f53_arg1 ) then
+			if not (f53_arg1 ~= "" or f53_local0[f53_local4].weaponIndex == 0) or Engine.GetWeaponGroup( f53_local0[f53_local4].weaponIndex, Enum.eModes.mode_multiplayer ) == tonumber( f53_arg1 ) then
 				table.insert( f53_local2, f53_local7 )
 			end
 		end
@@ -812,7 +812,7 @@ CoD.CraftUtility.Gunsmith.AddAttachmentToWeapon = function ( f59_arg0, f59_arg1 
 end
 
 CoD.CraftUtility.Gunsmith.GetWeaponPlusAttachmentsForVariant = function ( f60_arg0, f60_arg1 )
-	local f60_local0 = Engine[0xB98952F69D937F9]( CoD.GetCustomization( f60_arg0, "weapon_index" ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] )
+	local f60_local0 = Engine[0xB98952F69D937F9]( CoD.GetCustomization( f60_arg0, "weapon_index" ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer )
 	local f60_local1 = ""
 	if f60_arg1 then
 		for f60_local2 = 1, CoD.CraftUtility.Gunsmith.MAX_ATTACHMENTS, 1 do
@@ -824,14 +824,14 @@ end
 
 CoD.CraftUtility.Gunsmith.GetWeaponAttachmentList = function ( f61_arg0, f61_arg1 )
 	local f61_local0 = CoD.GetCustomization( f61_arg0, "weapon_index" )
-	local f61_local1 = Engine.GetItemRef( f61_local0, Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] )
+	local f61_local1 = Engine.GetItemRef( f61_local0, Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer )
 	local f61_local2 = {}
 	if f61_arg1 then
 		for f61_local3 = 1, CoD.CraftUtility.Gunsmith.MAX_ATTACHMENTS, 1 do
 			local f61_local6 = Engine.GetModelValue( Engine.GetModel( f61_arg1, "attachment" .. f61_local3 ) )
 			if f61_local6 ~= CoD.CraftUtility.Gunsmith.EMPTY_ITEM_INDEX then
 				table.insert( f61_local2, {
-					index = Engine.GetAttachmentIndexByAttachmentTableIndex( f61_local0, f61_local6, Enum.eModes[0x83EBA96F36BC4E5] ),
+					index = Engine.GetAttachmentIndexByAttachmentTableIndex( f61_local0, f61_local6, Enum.eModes.mode_multiplayer ),
 					ref = Engine.GetAttachmentRefByIndex( f61_local6 )
 				} )
 			end
@@ -848,7 +848,7 @@ CoD.CraftUtility.Gunsmith.DisplayBaseWeapon = function ( f62_arg0, f62_arg1, f62
 	end
 	Engine.SendClientScriptNotify( f62_arg2, "CustomClass_update" .. CoD.GetLocalClientAdjustedNum( f62_arg2 ), {
 		base_weapon_slot = CoD.CraftUtility.GetLoadoutSlot( f62_arg2 ),
-		weapon = Engine[0xB98952F69D937F9]( f62_local0, Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] ),
+		weapon = Engine[0xB98952F69D937F9]( f62_local0, Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer ),
 		attachments = "",
 		camera = CoD.CACUtility.GetCameraNameForAttachments( "" ),
 		options = CoD.WeaponOptionsUtility.GetWeaponOptionsString( 0, 0, 0 ),
@@ -857,7 +857,7 @@ CoD.CraftUtility.Gunsmith.DisplayBaseWeapon = function ( f62_arg0, f62_arg1, f62
 end
 
 CoD.CraftUtility.Gunsmith.DisplayWeaponWithPaintjob = function ( f63_arg0, f63_arg1 )
-	local f63_local0 = Engine[0xB98952F69D937F9]( CoD.GetCustomization( f63_arg0, "weapon_index" ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] )
+	local f63_local0 = Engine[0xB98952F69D937F9]( CoD.GetCustomization( f63_arg0, "weapon_index" ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer )
 	local f63_local1 = CoD.CraftUtility.GetLoadoutSlot( f63_arg0 )
 	local f63_local2 = CoD.CACUtility.GetCameraNameForAttachments( "" )
 	Engine.SetupPaintjobData( f63_arg0, f63_arg1 )
@@ -1103,7 +1103,7 @@ CoD.CraftUtility.Paintjobs.GetPrevViewIndex = function ( f84_arg0 )
 	if CoD.perController[f84_arg0].viewIndex - 1 == 0 then
 		local f84_local2 = f84_local1
 	end
-	if f84_local0 == "weapon_knife" or Engine.GetItemRef( CoD.GetCustomization( f84_arg0, "weapon_index" ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] ) == "special_crossbow" then
+	if f84_local0 == "weapon_knife" or Engine.GetItemRef( CoD.GetCustomization( f84_arg0, "weapon_index" ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer ) == "special_crossbow" then
 		local f84_local2 = CoD.perController[f84_arg0].viewIndex
 	end
 	return f84_local2
@@ -1112,7 +1112,7 @@ end
 CoD.CraftUtility.Paintjobs.GetNextViewIndex = function ( f85_arg0 )
 	local f85_local0 = CoD.CraftUtility.GetWeaponGroupName( f85_arg0 )
 	local f85_local1 = CoD.perController[f85_arg0].viewIndex % #CoD.CraftUtility.PaintshopView + 1
-	if f85_local0 == "weapon_knife" or Engine.GetItemRef( CoD.GetCustomization( f85_arg0, "weapon_index" ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] ) == "special_crossbow" then
+	if f85_local0 == "weapon_knife" or Engine.GetItemRef( CoD.GetCustomization( f85_arg0, "weapon_index" ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer ) == "special_crossbow" then
 		f85_local1 = CoD.perController[f85_arg0].viewIndex
 	end
 	return f85_local1
@@ -1142,7 +1142,7 @@ CoD.CraftUtility.Paintjobs.GetTotalWeaponPaintjobsByWeaponGroup = function ( f87
 	for f87_local4 = 0, f87_local3 - 1, 1 do
 		if f87_local0 then
 			local f87_local7 = f87_local0[f87_local4 + 1]
-			if f87_local7 and Engine.GetWeaponGroup( f87_local7.weaponIndex, Enum.eModes[0x83EBA96F36BC4E5] ) == tonumber( f87_arg0 ) then
+			if f87_local7 and Engine.GetWeaponGroup( f87_local7.weaponIndex, Enum.eModes.mode_multiplayer ) == tonumber( f87_arg0 ) then
 				f87_local1 = f87_local1 + 1
 			end
 		end
@@ -1269,7 +1269,7 @@ CoD.CraftUtility.Paintjobs.GetSortedWeaponPaintjobList = function ( f96_arg0, f9
 			local f96_local8 = f96_local0[f96_local5 + 1]
 			if f96_local8 then
 				if f96_arg1 then
-					if not (f96_arg1 ~= "" or f96_local8.weaponIndex == CoD.CraftUtility.Gunsmith.EMPTY_ITEM_INDEX) or Engine.GetWeaponGroup( f96_local8.weaponIndex, Enum.eModes[0x83EBA96F36BC4E5] ) == tonumber( f96_arg1 ) then
+					if not (f96_arg1 ~= "" or f96_local8.weaponIndex == CoD.CraftUtility.Gunsmith.EMPTY_ITEM_INDEX) or Engine.GetWeaponGroup( f96_local8.weaponIndex, Enum.eModes.mode_multiplayer ) == tonumber( f96_arg1 ) then
 						table.insert( f96_local1, f96_local8 )
 					end
 				end
@@ -1433,7 +1433,7 @@ CoD.CraftUtility.Paintjobs.RemovePaintJobFromZM = function ( f107_arg0, f107_arg
 end
 
 CoD.CraftUtility.Paintjobs.RemovePaintJobFromAllLoadouts = function ( f108_arg0, f108_arg1 )
-	CoD.CraftUtility.Paintjobs.RemovePaintJobFromLoadout( f108_arg0, f108_arg1, Enum.StorageFileType[0x6C886CEB6BF4BCA], Enum.eModes[0x83EBA96F36BC4E5] )
+	CoD.CraftUtility.Paintjobs.RemovePaintJobFromLoadout( f108_arg0, f108_arg1, Enum.StorageFileType[0x6C886CEB6BF4BCA], Enum.eModes.mode_multiplayer )
 	CoD.CraftUtility.Paintjobs.RemovePaintJobFromZM( f108_arg0, f108_arg1 )
 end
 
@@ -1509,7 +1509,7 @@ CoD.CraftUtility.Emblems.STICKER_SET_COUNT = 6
 CoD.CraftUtility.Emblems.EDITOR_TABS = {
 	{
 		type = "custom",
-		displayName = 0x4CF1048B853C39,
+		displayName = "menu/emblem_custom_tab",
 		category = 1,
 		storageType = Enum.StorageFileType[0x791C91FD2327632],
 		frameWidget = "CoD.EmblemListFrame",
@@ -1518,7 +1518,7 @@ CoD.CraftUtility.Emblems.EDITOR_TABS = {
 	},
 	{
 		type = "prebuilt",
-		displayName = 0x8D1BE5AE2868171,
+		displayName = "menu/emblem_prebuilt_tab",
 		category = 2,
 		storageType = Enum.StorageFileType[0xB909AC87BFB6D6C],
 		frameWidget = "CoD.EmblemListFrame",
@@ -1529,7 +1529,7 @@ CoD.CraftUtility.Emblems.EDITOR_TABS = {
 CoD.CraftUtility.Emblems.SELECT_TABS = {
 	{
 		type = "sticker",
-		displayName = 0x9F480787C9809F5,
+		displayName = "menu/stickers_caps",
 		category = 4,
 		storageType = Enum.StorageFileType[0x6A0A3D1062F156F],
 		stickerCategory = CoD.CraftUtility.EmblemStickerCategory,
@@ -1549,7 +1549,7 @@ CoD.CraftUtility.Emblems.SELECT_TABS = {
 	},
 	{
 		type = "prebuilt",
-		displayName = 0x8D1BE5AE2868171,
+		displayName = "menu/emblem_prebuilt_tab",
 		category = 2,
 		storageType = Enum.StorageFileType[0xB909AC87BFB6D6C],
 		frameWidget = "CoD.EmblemListFrame",
@@ -1558,7 +1558,7 @@ CoD.CraftUtility.Emblems.SELECT_TABS = {
 	},
 	{
 		type = "custom",
-		displayName = 0x4CF1048B853C39,
+		displayName = "menu/emblem_custom_tab",
 		category = 1,
 		storageType = Enum.StorageFileType[0x791C91FD2327632],
 		frameWidget = "CoD.EmblemListFrame",
@@ -1622,7 +1622,7 @@ CoD.CraftUtility.Emblems.GetSetUnlockInfo = function ( f121_arg0, f121_arg1, f12
 	local f121_local0 = {
 		unlockedBonus = false,
 		setUnlocked = false,
-		setName = 0x0,
+		setName = "",
 		ownedCount = 0,
 		totalCount = 0
 	}
@@ -1652,7 +1652,7 @@ CoD.CraftUtility.Emblems.GetSetUnlockInfo = function ( f121_arg0, f121_arg1, f12
 		end
 		f121_local4.isBonusItem = f121_local5.setMaster
 		f121_local4.setName = f121_local6
-		f121_local0.setName = f121_local6 or 0x0
+		f121_local0.setName = f121_local6 or ""
 		if not f121_local5.setMaster then
 			f121_local0.totalCount = f121_local0.totalCount + 1
 		end
@@ -1662,7 +1662,7 @@ CoD.CraftUtility.Emblems.GetSetUnlockInfo = function ( f121_arg0, f121_arg1, f12
 		for f121_local2 = f121_arg2, f121_arg2 + CoD.CraftUtility.Emblems.STICKER_SET_COUNT - 1, 1 do
 			local f121_local5 = f121_arg1[f121_local2]
 			if f121_local5.isBonusItem then
-				f121_local5.setInfo = Engine[0xF9F1239CFD921FE]( 0xF4082FA89EBEDBA, f121_local5.setName, Engine[0xF9F1239CFD921FE]( 0x20BF14474EB8696, Engine[0xF9F1239CFD921FE]( 0x84446BBFA84177E ) ) )
+				f121_local5.setInfo = Engine[0xF9F1239CFD921FE]( 0xF4082FA89EBEDBA, f121_local5.setName, Engine[0xF9F1239CFD921FE]( 0x20BF14474EB8696, Engine[0xF9F1239CFD921FE]( "mpui/bm_sticker" ) ) )
 			else
 				f121_local5.setInfo = f121_local1
 			end
@@ -1718,9 +1718,9 @@ CoD.CraftUtility.Emblems.GetSortedStickersList = function ( f123_arg0, f123_arg1
 					f123_local10.setPieceIndex = CoD.CraftUtility.Emblems.STICKER_SET_COUNT
 					if f123_local10.lootInfo then
 						if f123_local10.lootInfo.owned then
-							f123_local10.lootInfo.unlockInfo = Engine[0xF9F1239CFD921FE]( 0xC5DD764B51C08A5 )
+							f123_local10.lootInfo.unlockInfo = Engine[0xF9F1239CFD921FE]( "menu/set_complete" )
 						else
-							f123_local10.lootInfo.unlockInfo = Engine[0xF9F1239CFD921FE]( 0x1DA22AC662BBEFE )
+							f123_local10.lootInfo.unlockInfo = Engine[0xF9F1239CFD921FE]( "menu/set_incomplete" )
 						end
 					end
 				else
@@ -1903,7 +1903,8 @@ CoD.CraftUtility.Emblems.AddStickersToDecalList = function ( f132_arg0, f132_arg
 	for f132_local2 = 0, f132_local1 - 1, 1 do
 		local f132_local5 = Engine.EmblemFilterIconID( f132_arg0, 0, f132_arg3, f132_local2 )
 		local f132_local6 = false
-		local f132_local7, f132_local8 = false
+		local f132_local7 = false
+		local f132_local8 = nil
 		if f132_arg4 then
 			f132_local8 = CoD.BlackMarketTableUtility.LootInfoLookup( f132_arg0, CoD.BlackMarketUtility.GetLootDecalName( f132_arg0, f132_local5 ) )
 			if Engine[0xD1419DCE072A0B1]( f132_local5 ) then
@@ -1914,9 +1915,9 @@ CoD.CraftUtility.Emblems.AddStickersToDecalList = function ( f132_arg0, f132_arg
 			end
 		end
 		local f132_local9 = false
-		local f132_local10 = 0x84446BBFA84177E
+		local f132_local10 = "mpui/bm_sticker"
 		if f132_arg3 == CoD.CraftUtility.EmblemDecalIconsCategory or f132_arg3 == CoD.CraftUtility.EmblemDecalToolsCategory then
-			f132_local10 = 0xF36144C61D23A38
+			f132_local10 = "mpui/decal"
 			f132_local9 = true
 		end
 		if not f132_local6 or f132_local8 and f132_local8.available then
@@ -2306,7 +2307,7 @@ CoD.CraftUtility.GetSlotsUsedHeader = function ( f163_arg0, f163_arg1 )
 	elseif f163_local0 == Enum.CustomizationType[0xAB847C1A0E71617] then
 		return 0xE3115328828AA0C
 	else
-		return 0x0
+		return ""
 	end
 end
 
@@ -2959,7 +2960,7 @@ CoD.CraftUtility.EmblemEditor_LayerGainFocus = function ( f236_arg0, f236_arg1, 
 	local f236_local0 = f236_arg2:getModel( f236_arg3, "layerIndex" )
 	local f236_local1 = f236_arg2:getModel( f236_arg3, "layerNumberString" )
 	local f236_local2 = Engine.GetModelValue( f236_local0 )
-	CoD.Menu.SetButtonLabel( f236_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], 0xAB744CDFD554F5F )
+	CoD.Menu.SetButtonLabel( f236_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "platform/emblem_edit_done" )
 	local f236_local3 = Engine.GetSelectedLayerIconID( f236_arg3, f236_local2 )
 	CoD.perController[f236_arg3].selectedLayerIndex = f236_local2
 	CoD.perController[f236_arg3].selectedLayerIconID = f236_local3
@@ -2968,9 +2969,9 @@ CoD.CraftUtility.EmblemEditor_LayerGainFocus = function ( f236_arg0, f236_arg1, 
 	local f236_local4 = CoD.GetCustomization( f236_arg3, "type" )
 	Engine[0xBB788AA2AFACFF4]( f236_local2, f236_local4 )
 	if CoD.IsLayerEmpty( f236_arg3, CoD.perController[f236_arg3].selectedLayerIndex ) == true then
-		CoD.Menu.SetButtonLabel( f236_arg0, Enum.LUIButton[0x755DA1E2E7C263F], 0xA7613F6A836BA31 )
+		CoD.Menu.SetButtonLabel( f236_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "menu/emblem_choose_decal" )
 	else
-		CoD.Menu.SetButtonLabel( f236_arg0, Enum.LUIButton[0x755DA1E2E7C263F], 0x32F41E996619F54 )
+		CoD.Menu.SetButtonLabel( f236_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "menu/emblem_edit_layer" )
 	end
 	local f236_local5 = Engine.GetLinkedLayerCount( f236_arg3, f236_local4 )
 	CoD.CraftUtility.SetEmblemEditorProperties( f236_arg3, f236_local2, "selectedLayerIndex" )
@@ -2983,13 +2984,13 @@ CoD.CraftUtility.EmblemEditor_SetLayerAndGroupCount = function ( f237_arg0 )
 	local f237_local0 = CoD.GetCustomization( f237_arg0, "type" )
 	local f237_local1 = CoD.perController[f237_arg0].totalLayers
 	local f237_local2 = Engine.GetUsedLayerCount( f237_arg0, f237_local0, f237_local1 )
-	CoD.CraftUtility.SetEmblemEditorProperties( f237_arg0, Engine[0xF9F1239CFD921FE]( 0x8AD837A6ECA017, f237_local2, f237_local1 ), "layersUsedFraction" )
+	CoD.CraftUtility.SetEmblemEditorProperties( f237_arg0, Engine[0xF9F1239CFD921FE]( "menu/emblem_layers_used_fraction", f237_local2, f237_local1 ), "layersUsedFraction" )
 	CoD.CraftUtility.SetEmblemEditorProperties( f237_arg0, f237_local2, "layersUsed" )
 	CoD.CraftUtility.SetEmblemEditorProperties( f237_arg0, f237_local1 - f237_local2, "layersAvailable" )
 	CoD.CraftUtility.SetEmblemEditorProperties( f237_arg0, f237_local1, "totalLayers" )
 	local f237_local3 = CoD.perController[f237_arg0].totalGroups
 	local f237_local4 = Engine.GetUsedGroupCount( f237_arg0, f237_local0 )
-	CoD.CraftUtility.SetEmblemEditorProperties( f237_arg0, Engine[0xF9F1239CFD921FE]( 0x8AD837A6ECA017, f237_local4, f237_local3 ), "groupsUsedFraction" )
+	CoD.CraftUtility.SetEmblemEditorProperties( f237_arg0, Engine[0xF9F1239CFD921FE]( "menu/emblem_layers_used_fraction", f237_local4, f237_local3 ), "groupsUsedFraction" )
 	CoD.CraftUtility.SetEmblemEditorProperties( f237_arg0, f237_local4, "groupsUsed" )
 	CoD.CraftUtility.SetEmblemEditorProperties( f237_arg0, f237_local3 - f237_local4, "groupsAvailable" )
 	CoD.CraftUtility.SetEmblemEditorProperties( f237_arg0, f237_local3, "totalGroups" )
@@ -3023,7 +3024,7 @@ CoD.CraftUtility.EmblemEditor_SetEditLayerTitle = function ( f240_arg0, f240_arg
 	if IsPaintshop( f240_arg1 ) then
 		f240_arg0.PaintshopFrame.CommonHeader.subtitle:setText( Engine.Localize( CoD.CraftUtility.PaintshopView[CoD.perController[f240_arg1].viewIndex].edit_side_ref ) )
 	else
-		f240_arg0.EmblemEditorFrame.CommonHeader.subtitle:setText( Engine[0xF9F1239CFD921FE]( 0x574C2AE6DC19D9D ) )
+		f240_arg0.EmblemEditorFrame.CommonHeader.subtitle:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_edit_layer_title" ) )
 	end
 end
 
@@ -3344,13 +3345,13 @@ end
 
 CoD.CraftUtility.SetupMouseScrollingEmblemScale = function ( f262_arg0, f262_arg1 )
 	if CoD.isPC then
-		CoD.Menu.AddButtonCallbackFunction( f262_arg0, f262_arg0, f262_arg1, Enum.LUIButton[0x3C68CCBB77C781C], "MWHEELUP", function ( f263_arg0, f263_arg1, f263_arg2, f263_arg3 )
-			if not f263_arg1.m_disableNavigation and CoD.CraftUtility.IsEditMode( f263_arg2 ) then
+		CoD.Menu.AddButtonCallbackFunction( f262_arg0, f262_arg0, f262_arg1, Enum.LUIButton[0x3C68CCBB77C781C], "MWHEELUP", function ( element, menu, controller, f263_arg3 )
+			if not menu.m_disableNavigation and CoD.CraftUtility.IsEditMode( controller ) then
 				Engine[0xAE71EACC5A3B69C]( 0.02, 0.02 )
 			end
 		end )
-		CoD.Menu.AddButtonCallbackFunction( f262_arg0, f262_arg0, f262_arg1, Enum.LUIButton[0x32EBED6749E6EE9], "MWHEELDOWN", function ( f264_arg0, f264_arg1, f264_arg2, f264_arg3 )
-			if not f264_arg1.m_disableNavigation and CoD.CraftUtility.IsEditMode( f264_arg2 ) then
+		CoD.Menu.AddButtonCallbackFunction( f262_arg0, f262_arg0, f262_arg1, Enum.LUIButton[0x32EBED6749E6EE9], "MWHEELDOWN", function ( element, menu, controller, f264_arg3 )
+			if not menu.m_disableNavigation and CoD.CraftUtility.IsEditMode( controller ) then
 				Engine[0xAE71EACC5A3B69C]( -0.02, -0.02 )
 			end
 		end )
@@ -3359,16 +3360,16 @@ end
 
 CoD.CraftUtility.SetupMouseScrollingEmblemMaterialScale = function ( f265_arg0, f265_arg1 )
 	if CoD.isPC then
-		CoD.Menu.AddButtonCallbackFunction( f265_arg0, f265_arg0, f265_arg1, Enum.LUIButton[0x3C68CCBB77C781C], "MWHEELUP", function ( f266_arg0, f266_arg1, f266_arg2, f266_arg3 )
-			if not f266_arg1.m_disableNavigation and CoD.CraftUtility.IsEditMode( f266_arg2 ) then
-				Engine[0x4950DB3952D39A6]( f266_arg2, 0.02 )
-				Engine[0xE6ECCE18819CF89]( f266_arg2, 0.02 )
+		CoD.Menu.AddButtonCallbackFunction( f265_arg0, f265_arg0, f265_arg1, Enum.LUIButton[0x3C68CCBB77C781C], "MWHEELUP", function ( element, menu, controller, f266_arg3 )
+			if not menu.m_disableNavigation and CoD.CraftUtility.IsEditMode( controller ) then
+				Engine[0x4950DB3952D39A6]( controller, 0.02 )
+				Engine[0xE6ECCE18819CF89]( controller, 0.02 )
 			end
 		end )
-		CoD.Menu.AddButtonCallbackFunction( f265_arg0, f265_arg0, f265_arg1, Enum.LUIButton[0x32EBED6749E6EE9], "MWHEELDOWN", function ( f267_arg0, f267_arg1, f267_arg2, f267_arg3 )
-			if not f267_arg1.m_disableNavigation and CoD.CraftUtility.IsEditMode( f267_arg2 ) then
-				Engine[0x4950DB3952D39A6]( f267_arg2, -0.02 )
-				Engine[0xE6ECCE18819CF89]( f267_arg2, -0.02 )
+		CoD.Menu.AddButtonCallbackFunction( f265_arg0, f265_arg0, f265_arg1, Enum.LUIButton[0x32EBED6749E6EE9], "MWHEELDOWN", function ( element, menu, controller, f267_arg3 )
+			if not menu.m_disableNavigation and CoD.CraftUtility.IsEditMode( controller ) then
+				Engine[0x4950DB3952D39A6]( controller, -0.02 )
+				Engine[0xE6ECCE18819CF89]( controller, -0.02 )
 			end
 		end )
 	end
@@ -3915,11 +3916,11 @@ CoD.CraftUtility.EmblemChooseIcon_UpdateDecalList = function ( f314_arg0 )
 end
 
 CoD.CraftUtility.EmblemChooseIcon_UpdateLayerCount = function ( f315_arg0, f315_arg1, f315_arg2 )
-	return f315_arg1.layerNumber:setText( Engine[0xF9F1239CFD921FE]( 0x87457CD189F982E, Engine.GetUsedLayerCount( f315_arg2, Enum.CustomizationType[0xAB847C1A0E71617], Enum.CustomizationTypeLayerCount[0x10D2BA001ED2F42] ) ) )
+	return f315_arg1.layerNumber:setText( Engine[0xF9F1239CFD921FE]( "menu/craft_layers", Engine.GetUsedLayerCount( f315_arg2, Enum.CustomizationType[0xAB847C1A0E71617], Enum.CustomizationTypeLayerCount[0x10D2BA001ED2F42] ) ) )
 end
 
 CoD.CraftUtility.EmblemChooseIcon_InitLayerCount = function ( f316_arg0, f316_arg1, f316_arg2 )
-	return f316_arg1.layerNumber:setText( Engine[0xF9F1239CFD921FE]( 0x87457CD189F982E, 0 ) )
+	return f316_arg1.layerNumber:setText( Engine[0xF9F1239CFD921FE]( "menu/craft_layers", 0 ) )
 end
 
 CoD.CraftUtility.EmblemChooseIcon_PrepareGroupIndex = function ( f317_arg0, f317_arg1 )
@@ -3963,7 +3964,7 @@ CoD.CraftUtility.EmblemChooseIcon_SelectionAccepted = function ( f319_arg0, f319
 			local f319_local4 = f319_arg2
 			local f319_local5 = 0x37D117732D0177
 			local f319_local6 = {
-				[0xAB83A8CC61E6325] = f319_local1.itemId
+				loot_id = f319_local1.itemId
 			}
 			local f319_local7
 			if f319_local2 == Enum.CustomizationType[0x979B4C08E9D67B2] then
@@ -3971,7 +3972,7 @@ CoD.CraftUtility.EmblemChooseIcon_SelectionAccepted = function ( f319_arg0, f319
 				if not f319_local7 then
 				
 				else
-					f319_local6[0x3D61FF7C962E0F6] = f319_local7
+					f319_local6.used_in = f319_local7
 					f319_local3( f319_local4, f319_local5, f319_local6 )
 				end
 			end
@@ -4432,7 +4433,7 @@ CoD.CraftUtility.EmblemSelect_TabChanged = function ( f362_arg0, f362_arg1, f362
 end
 
 CoD.CraftUtility.UpdateSlotCountText = function ( f363_arg0, f363_arg1, f363_arg2, f363_arg3 )
-	return f363_arg1:setText( Engine[0xF9F1239CFD921FE]( 0x8AD837A6ECA017, CoD.CraftUtility.GetUsedSlotsByFileType( f363_arg2, f363_arg3 ), CoD.CraftUtility.GetTotalAllowedSlotsByFileType( f363_arg2, f363_arg3 ) ) )
+	return f363_arg1:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_layers_used_fraction", CoD.CraftUtility.GetUsedSlotsByFileType( f363_arg2, f363_arg3 ), CoD.CraftUtility.GetTotalAllowedSlotsByFileType( f363_arg2, f363_arg3 ) ) )
 end
 
 CoD.CraftUtility.UploadPublicProfile = function ( f364_arg0, f364_arg1 )
@@ -4526,8 +4527,8 @@ CoD.CraftUtility.EmblemSelect_SetAsEmblem = function ( f371_arg0, f371_arg1, f37
 			local f371_local3 = CoD.BlackMarketTableUtility.LootInfoLookup( f371_arg2, CoD.BlackMarketUtility.GetLootDecalName( f371_arg2, f371_local0 ), nil )
 			if f371_local3 and f371_local3.isLoot and f371_local3.itemId then
 				Engine[0xDE279ECDDDD966]( f371_arg2, 0x37D117732D0177, {
-					[0xAB83A8CC61E6325] = f371_local3.itemId,
-					[0x3D61FF7C962E0F6] = CoD.CraftUtility.USE_STICKER_IN.EMBLEM
+					loot_id = f371_local3.itemId,
+					used_in = CoD.CraftUtility.USE_STICKER_IN.EMBLEM
 				} )
 			end
 		end
@@ -4617,7 +4618,7 @@ end
 
 CoD.CraftUtility.UpdateWeaponModel = function ( f383_arg0, f383_arg1, f383_arg2 )
 	local f383_local0 = "primary"
-	local f383_local1 = Enum.eModes[0x83EBA96F36BC4E5]
+	local f383_local1 = Enum.eModes.mode_multiplayer
 	local f383_local2 = nil
 	local f383_local3 = f383_arg1:getModel()
 	if f383_local3 and f383_local3.itemIndex then
@@ -4653,7 +4654,7 @@ CoD.CraftUtility.OpenPaintjobWeaponSelection = function ( f386_arg0, f386_arg1, 
 	else
 		CoD.SetCustomization( f386_arg2, Enum.CustomizationType[0x4E4802F1ABF1844], "type" )
 		OpenOverlay( f386_arg4, "PaintjobWeaponSelect", f386_arg2, {
-			_sessionMode = Enum.eModes[0x83EBA96F36BC4E5],
+			_sessionMode = Enum.eModes.mode_multiplayer,
 			_storageClientBuffer = f386_arg4._storageClientBuffer,
 			_isPaintjobEditor = true
 		} )
@@ -4675,8 +4676,8 @@ CoD.CraftUtility.OpenPaintjobSelection = function ( f387_arg0, f387_arg1, f387_a
 			CoD.SetCustomization( f387_arg2, f387_local1.itemIndex:get(), "weapon_index" )
 		end
 		OpenOverlay( f387_arg4, "Paintshop", f387_arg2, {
-			_sessionMode = Enum.eModes[0x83EBA96F36BC4E5],
-			_storageClientBuffer = CoD.BreadcrumbUtility.GetStorageClientBufferForPlayer( f387_arg2, Enum.eModes[0x83EBA96F36BC4E5] )
+			_sessionMode = Enum.eModes.mode_multiplayer,
+			_storageClientBuffer = CoD.BreadcrumbUtility.GetStorageClientBufferForPlayer( f387_arg2, Enum.eModes.mode_multiplayer )
 		} )
 	end
 end
@@ -4688,7 +4689,7 @@ CoD.CraftUtility.SetupPaintjobPersonalization = function ( f388_arg0, f388_arg1,
 	CoD.SetCustomization( f388_arg2, f388_local0.itemIndex:get(), "weapon_index" )
 	local f388_local1 = CoD.SafeGetModelValue( f388_local0, "refHash" )
 	if not f388_local1 then
-		f388_local1 = CoD.SafeGetModelValue( f388_local0, "weaponNameHash" ) or 0x0
+		f388_local1 = CoD.SafeGetModelValue( f388_local0, "weaponNameHash" ) or ""
 	end
 	CoD.SetCustomization( f388_arg2, f388_local1, "weaponRefHash" )
 end
@@ -4739,9 +4740,9 @@ CoD.CraftUtility.PreviewWeaponCamo = function ( f393_arg0, f393_arg1, f393_arg2,
 		local f393_local6 = f393_local4:get()
 		local f393_local7 = CoD.WeaponOptionsUtility.GetRobStageForCamoIndex( f393_local6 )
 		local f393_local8 = 0
-		if f393_local0 == Enum.eModes[0x3723205FAE52C4A] then
+		if f393_local0 == Enum.eModes.mode_zombies then
 			f393_local8 = CoD.ZMLoadoutUtility.GetArmoryCharmItemFromWeapon( f393_arg2, CoD.GetCustomization( f393_arg2, "weapon_index" ) )
-		elseif f393_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+		elseif f393_local0 == Enum.eModes.mode_warzone then
 			f393_local8 = CoD.WZUtility.GetArmoryCharmItemFromWeapon( f393_arg2, CoD.GetCustomization( f393_arg2, "weapon_index" ) )
 		else
 			local f393_local9 = CoD.BaseUtility.GetMenuLoadoutSlot( f393_arg3 )
@@ -4754,7 +4755,7 @@ CoD.CraftUtility.PreviewWeaponCamo = function ( f393_arg0, f393_arg1, f393_arg2,
 		end
 		local f393_local9 = CoD.WeaponOptionsUtility.GetWeaponOptionsString( f393_local6, 0, 1, f393_local5, f393_local7, f393_local8 )
 		local f393_local10 = ""
-		if f393_local0 == Enum.eModes[0x3723205FAE52C4A] then
+		if f393_local0 == Enum.eModes.mode_zombies then
 			f393_local10 = CoD.ZMLoadoutUtility.GetArmoryAttachmentStringForWeaponIndex( f393_arg2, CoD.GetCustomization( f393_arg2, "weapon_index" ), f393_local0 )
 		end
 		Engine.SendClientScriptNotify( f393_arg2, "CustomClass_update" .. CoD.GetLocalClientAdjustedNum( f393_arg2 ), {
@@ -4795,11 +4796,11 @@ CoD.CraftUtility.EmblemEntitlements = {
 		nameHash = "sku",
 		storageFileType = Enum.StorageFileType[0xBCE8CBF08D7751],
 		entitlementRefs = {
-			0xDCD5350DF98F438
+			"blackops_pack"
 		}
 	},
 	{
-		nameHash = 0xFE1DF0641CFE432,
+		nameHash = "endowmentem",
 		storageFileType = Enum.StorageFileType[0xBCE8CBF08D7751],
 		entitlementRefs = {
 			0x6D83FD17A87C96B
@@ -4825,17 +4826,17 @@ end
 
 CoD.CraftUtility.GradientTypes = {
 	{
-		name = 0xA50D7E437F193E5,
+		name = "menu/gradient_linear",
 		type = Enum.CustomizationGradientType[0xA00B3A2D53175C1],
 		sliderWidget = "CoD.EmblemEditorLinearRadialSliderFrame"
 	},
 	{
-		name = 0x2C21EEEBB59567,
+		name = "menu/gradient_radial",
 		type = Enum.CustomizationGradientType[0x2B2DC60726823DB],
 		sliderWidget = "CoD.EmblemEditorLinearRadialSliderFrame"
 	},
 	{
-		name = 0x64CB85F9D955F22,
+		name = "menu/gradient_contour",
 		type = Enum.CustomizationGradientType[0xA7C637A09DA3D16],
 		sliderWidget = "CoD.EmblemEditorContourSliderFrame"
 	}

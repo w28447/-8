@@ -90,11 +90,11 @@ LUI.createMenu.PC_Store_Refund_Korea = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f6_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( ButtonList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		ProcessListAction( self, f7_arg0, f7_arg2, f7_arg1 )
+	f1_local1:AddButtonCallbackFunction( ButtonList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		ProcessListAction( self, element, controller, menu )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( ButtonList )
@@ -163,12 +163,12 @@ LUI.createMenu.PC_Store_Refund_Korea = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f13_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( CommonCheckbox, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
+	f1_local1:AddButtonCallbackFunction( CommonCheckbox, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		ToggleGlobalModelValueBoolean( "PCStoreKoreaAccepts" )
-		UpdateElementState( self, "ButtonList", f14_arg2 )
+		UpdateElementState( self, "ButtonList", controller )
 		return true
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( CommonCheckbox )
@@ -239,13 +239,13 @@ LUI.createMenu.PC_Store_Refund_Korea = function ( f1_arg0, f1_arg1 )
 	
 	local codpoints = LUI.UIImage.new( 0.5, 0.5, -695, -661, 0.5, 0.5, 156, 190 )
 	codpoints:setAlpha( 0 )
-	codpoints:setImage( RegisterImage( 0xC7B458FB314A1E9 ) )
+	codpoints:setImage( RegisterImage( "uie_ui_codpoints_symbol_32x32" ) )
 	self:addElement( codpoints )
 	self.codpoints = codpoints
 	
 	local vial = LUI.UIImage.new( 0.5, 0.5, -698, -660, 0.5, 0.5, 153, 191 )
 	vial:setAlpha( 0 )
-	vial:setImage( RegisterImage( 0x5FBFE58B2BB38AC ) )
+	vial:setImage( RegisterImage( "uie_t7_hud_zm_vial_aar_256" ) )
 	self:addElement( vial )
 	self.vial = vial
 	
@@ -290,11 +290,11 @@ LUI.createMenu.PC_Store_Refund_Korea = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f22_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( QuitBtn, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
-		CoD.PCKoreaUtility.DeclineRefundPopup( f23_arg1, f23_arg2 )
+	f1_local1:AddButtonCallbackFunction( QuitBtn, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.PCKoreaUtility.DeclineRefundPopup( menu, controller )
 		return true
-	end, function ( f24_arg0, f24_arg1, f24_arg2 )
-		CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( QuitBtn )
@@ -343,13 +343,13 @@ LUI.createMenu.PC_Store_Refund_Korea = function ( f1_arg0, f1_arg1 )
 		{
 			stateName = "IsPriceCoDPoints",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualToHashString( f1_arg0, element, "Currency", 0xB7F40FB4E8165B5 )
+				return CoD.ModelUtility.IsSelfModelValueEqualToHashString( f1_arg0, element, "Currency", "cod_points" )
 			end
 		},
 		{
 			stateName = "IsPriceVials",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualToHashString( f1_arg0, element, "Currency", 0x29BE58E64C4830B )
+				return CoD.ModelUtility.IsSelfModelValueEqualToHashString( f1_arg0, element, "Currency", "nebulium_plasma" )
 			end
 		}
 	} )
@@ -371,12 +371,12 @@ LUI.createMenu.PC_Store_Refund_Korea = function ( f1_arg0, f1_arg1 )
 			modelName = "Currency"
 		} )
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f33_arg0, f33_arg1, f33_arg2, f33_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
 		SetGlobalModelValueFalse( "PCStoreKoreaAccepts" )
-		CoD.PCKoreaUtility.DeclineRefundPopup( f33_arg1, f33_arg2 )
+		CoD.PCKoreaUtility.DeclineRefundPopup( menu, controller )
 		return true
-	end, function ( f34_arg0, f34_arg1, f34_arg2 )
-		CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x0, nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "", nil, "ESCAPE" )
 		return false
 	end, false )
 	ButtonList.id = "ButtonList"

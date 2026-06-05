@@ -16,7 +16,7 @@ CoD.ChallengesSummaryCategoryList_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.anyChildUsesUpdateState = true
 	
 	local Career = CoD.ChallengesSummaryCategory.new( f1_arg0, f1_arg1, 0, 0, 0, 363, 0.5, 0.5, -112.5, 112.5 )
-	Career.SummaryCategory.Icon:setImage( RegisterImage( 0x6F9A89CB322C3C2 ) )
+	Career.SummaryCategory.Icon:setImage( RegisterImage( "ui_icon_challenges_wzcareer" ) )
 	Career.SummaryCategory.Name:setText( Engine[0xF9F1239CFD921FE]( 0x1BEB13BCC1D1E4E ) )
 	Career:subscribeToGlobalModel( f1_arg1, "ChallengesWZCategoryStats", "career", function ( model )
 		Career:setModel( model, f1_arg1 )
@@ -31,18 +31,18 @@ CoD.ChallengesSummaryCategoryList_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Career, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		if not IsElementInState( f4_arg0, "Disabled" ) then
+	f1_arg0:AddButtonCallbackFunction( Career, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not IsElementInState( element, "Disabled" ) then
 			SetGlobalModelValue( "defaultChallengeTab", "career" )
 			PlaySoundAlias( "uin_toggle_generic" )
-			OpenOverlay( self, "Challenges", f4_arg2 )
+			OpenOverlay( self, "Challenges", controller )
 			return true
 		else
 			
 		end
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		if not IsElementInState( f5_arg0, "Disabled" ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not IsElementInState( element, "Disabled" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -52,7 +52,7 @@ CoD.ChallengesSummaryCategoryList_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.Career = Career
 	
 	local Operations = CoD.ChallengesSummaryCategory.new( f1_arg0, f1_arg1, 0, 0, 407, 770, 0.5, 0.5, -112.5, 112.5 )
-	Operations.SummaryCategory.Icon:setImage( RegisterImage( 0x32F3E55D1A844D6 ) )
+	Operations.SummaryCategory.Icon:setImage( RegisterImage( "ui_icon_challenges_wzoperations" ) )
 	Operations.SummaryCategory.Name:setText( Engine[0xF9F1239CFD921FE]( 0x2177A3C9161B05A ) )
 	Operations:subscribeToGlobalModel( f1_arg1, "ChallengesWZCategoryStats", "operations", function ( model )
 		Operations:setModel( model, f1_arg1 )
@@ -67,18 +67,18 @@ CoD.ChallengesSummaryCategoryList_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Operations, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if not IsElementInState( f8_arg0, "Disabled" ) then
+	f1_arg0:AddButtonCallbackFunction( Operations, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not IsElementInState( element, "Disabled" ) then
 			SetGlobalModelValue( "defaultChallengeTab", "operations" )
 			PlaySoundAlias( "uin_toggle_generic" )
-			OpenOverlay( self, "Challenges", f8_arg2 )
+			OpenOverlay( self, "Challenges", controller )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if not IsElementInState( f9_arg0, "Disabled" ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not IsElementInState( element, "Disabled" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -96,7 +96,7 @@ CoD.ChallengesSummaryCategoryList_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2,
 			end
 		}
 	} )
-	DarkOps.SummaryCategoryBlackOps.Icon:setImage( RegisterImage( 0x31B914F53740B80 ) )
+	DarkOps.SummaryCategoryBlackOps.Icon:setImage( RegisterImage( "ui_icon_challenges_wzdarkops" ) )
 	DarkOps:registerEventHandler( "gain_focus", function ( element, event )
 		local f11_local0 = nil
 		if element.gainFocus then
@@ -107,17 +107,17 @@ CoD.ChallengesSummaryCategoryList_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f11_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( DarkOps, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		if not IsElementInState( f12_arg0, "Disabled" ) then
+	f1_arg0:AddButtonCallbackFunction( DarkOps, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not IsElementInState( element, "Disabled" ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			OpenOverlay( self, "ChallengesDarkOps", f12_arg2 )
+			OpenOverlay( self, "ChallengesDarkOps", controller )
 			return true
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		if not IsElementInState( f13_arg0, "Disabled" ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not IsElementInState( element, "Disabled" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

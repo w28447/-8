@@ -40,7 +40,7 @@ LUI.createMenu.ct_shared_button_prompt = function ( f1_arg0, f1_arg1 )
 	Prompt:setBackingAlpha( 0.75 )
 	Prompt:setBackingXPadding( 14 )
 	Prompt:setBackingYPadding( 8 )
-	Prompt:setBackingImage( RegisterImage( 0xF5B05C37854785F ) )
+	Prompt:setBackingImage( RegisterImage( "uie_ui_hud_core_match_begins_banner" ) )
 	self:addElement( Prompt )
 	self.Prompt = Prompt
 	

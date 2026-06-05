@@ -9,12 +9,12 @@ CoD.TabbedScoreboardStatBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BarBot = LUI.UIImage.new( 0, 0, -2, 86, 0, 0, 54, 64 )
-	BarBot:setImage( RegisterImage( 0xC6873B923C6686C ) )
+	BarBot:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_score_bot" ) )
 	self:addElement( BarBot )
 	self.BarBot = BarBot
 	
 	local Tint = LUI.UIImage.new( 0.5, 0.5, -42, 42, 0, 0, -1, 57 )
-	Tint:setImage( RegisterImage( 0x53EA284D6E31528 ) )
+	Tint:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_score_bg" ) )
 	self:addElement( Tint )
 	self.Tint = Tint
 	
@@ -22,7 +22,7 @@ CoD.TabbedScoreboardStatBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	TintPC = LUI.UIImage.new( 0.5, 0.5, -42, 42, 0, 0, -1, 57 )
 	TintPC:setAlpha( 0 )
-	TintPC:setImage( RegisterImage( 0xC75052CB20103 ) )
+	TintPC:setImage( RegisterImage( "uie_scoreboard_list_score_bg" ) )
 	self:addElement( TintPC )
 	self.TintPC = TintPC
 	

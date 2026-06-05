@@ -1,17 +1,17 @@
 require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_heavymetal_cop2" )
 
-CoD[0x14ECFF745AEB685] = InheritFrom( LUI.UIElement )
-CoD[0x14ECFF745AEB685].__defaultWidth = 960
-CoD[0x14ECFF745AEB685].__defaultHeight = 240
-CoD[0x14ECFF745AEB685].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_heavymetal = InheritFrom( LUI.UIElement )
+CoD.callingcards_heavymetal.__defaultWidth = 960
+CoD.callingcards_heavymetal.__defaultHeight = 240
+CoD.callingcards_heavymetal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x14ECFF745AEB685] )
+	self:setClass( CoD.callingcards_heavymetal )
 	self.id = "CallingCards_heavymetal"
 	self.soundSet = "none"
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local background = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	background:setImage( RegisterImage( 0x84D9B387573E236 ) )
+	background:setImage( RegisterImage( "uie_ui_menu_callingcards_heavymetal_bg" ) )
 	self:addElement( background )
 	self.background = background
 	
@@ -20,12 +20,12 @@ CoD[0x14ECFF745AEB685].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.cop2 = cop2
 	
 	local wall = LUI.UIImage.new( 0, 0, -148, 444, 0, 0, -18, 278 )
-	wall:setImage( RegisterImage( 0x1061E65A7BFBF45 ) )
+	wall:setImage( RegisterImage( "uie_ui_menu_callingcards_heavymetal_wall" ) )
 	self:addElement( wall )
 	self.wall = wall
 	
 	local cop1 = LUI.UIImage.new( 0, 0, 514, 954, 0, 0, 0, 248 )
-	cop1:setImage( RegisterImage( 0x1D1244822BEB5ED ) )
+	cop1:setImage( RegisterImage( "uie_ui_menu_callingcards_heavymetal_char2" ) )
 	self:addElement( cop1 )
 	self.cop1 = cop1
 	
@@ -58,7 +58,7 @@ CoD[0x14ECFF745AEB685].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x14ECFF745AEB685].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_heavymetal.__resetProperties = function ( f2_arg0 )
 	f2_arg0.cop1:completeAnimation()
 	f2_arg0.cop2:completeAnimation()
 	f2_arg0.glass1:completeAnimation()
@@ -92,7 +92,7 @@ CoD[0x14ECFF745AEB685].__resetProperties = function ( f2_arg0 )
 	f2_arg0.glass4:setScale( 1, 1 )
 end
 
-CoD[0x14ECFF745AEB685].__clipsPerState = {
+CoD.callingcards_heavymetal.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -250,7 +250,7 @@ CoD[0x14ECFF745AEB685].__clipsPerState = {
 		end
 	}
 }
-CoD[0x14ECFF745AEB685].__onClose = function ( f16_arg0 )
+CoD.callingcards_heavymetal.__onClose = function ( f16_arg0 )
 	f16_arg0.cop2:close()
 end
 

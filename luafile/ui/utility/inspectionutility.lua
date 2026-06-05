@@ -24,7 +24,7 @@ CoD.InspectionUtility.GetCallingCardInfoForSlot = function ( f1_arg0, f1_arg1, f
 				end
 			end
 		elseif not CoD.CombatRecordOtherPlayerStats then
-			f1_local1 = Engine[0xF9F1239CFD921FE]( 0xE07CA35BF6DA1AF )
+			f1_local1 = Engine[0xF9F1239CFD921FE]( "menu/select_calling_card" )
 		end
 	end
 	return {

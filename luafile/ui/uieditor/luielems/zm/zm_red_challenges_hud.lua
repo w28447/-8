@@ -116,10 +116,10 @@ LUI.createMenu.zm_red_challenges_hud = function ( f1_arg0, f1_arg1 )
 	self:addElement( AvailableItemText )
 	self.AvailableItemText = AvailableItemText
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], nil, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], nil, function ( element, menu, controller, model )
 		return true
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, nil )
 		return false
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "setState", function ( element, controller, f17_arg2, f17_arg3, f17_arg4 )

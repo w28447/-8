@@ -69,7 +69,7 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.SecondaryAttachmentHeader = SecondaryAttachmentHeader
 	
 	local SecondaryOpticsHeader = CoD.CategoryHeader.new( f1_arg0, f1_arg1, 0.5, 0.5, -305, -180, 1, 1, -287, -271 )
-	SecondaryOpticsHeader.header:setText( Engine[0xF9F1239CFD921FE]( 0xBB87386985BA15F ) )
+	SecondaryOpticsHeader.header:setText( Engine[0xF9F1239CFD921FE]( "mpui/optics_caps" ) )
 	self:addElement( SecondaryOpticsHeader )
 	self.SecondaryOpticsHeader = SecondaryOpticsHeader
 	
@@ -85,7 +85,7 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.wildcardsHeader = wildcardsHeader
 	
 	local EquipmentHeader = CoD.CategoryHeader.new( f1_arg0, f1_arg1, 0.5, 0.5, 83, 208, 1, 1, -287, -271 )
-	EquipmentHeader.header:setText( Engine[0xF9F1239CFD921FE]( 0x562BD8EE9E11C5B ) )
+	EquipmentHeader.header:setText( Engine[0xF9F1239CFD921FE]( "mpui/equipment_caps" ) )
 	EquipmentHeader:subscribeToGlobalModel( f1_arg1, "LoadoutBreadcrumbs", "primarygrenade", function ( model )
 		local f6_local0 = model:get()
 		if f6_local0 ~= nil then
@@ -101,7 +101,7 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.PrimaryAttachmentHeader = PrimaryAttachmentHeader
 	
 	local PrimaryOpticsHeader = CoD.CategoryHeader.new( f1_arg0, f1_arg1, 0.5, 0.5, -684, -559, 1, 1, -287, -271 )
-	PrimaryOpticsHeader.header:setText( Engine[0xF9F1239CFD921FE]( 0xBB87386985BA15F ) )
+	PrimaryOpticsHeader.header:setText( Engine[0xF9F1239CFD921FE]( "mpui/optics_caps" ) )
 	self:addElement( PrimaryOpticsHeader )
 	self.PrimaryOpticsHeader = PrimaryOpticsHeader
 	
@@ -148,44 +148,44 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09] )
 		return f12_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( tacticalgear, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		CoD.CACUtility.OpenCACOverlay( self, f13_arg1, f13_arg2, "EquipmentSelect", self, "tacticalgear" )
+	f1_arg0:AddButtonCallbackFunction( tacticalgear, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.CACUtility.OpenCACOverlay( self, menu, controller, "EquipmentSelect", self, "tacticalgear" )
 		return true
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( tacticalgear, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f15_arg0, f15_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( f15_arg2 ) then
-			CoD.CACUtility.UnequipItem( f15_arg2, f15_arg1, f15_arg0 )
+	f1_arg0:AddButtonCallbackFunction( tacticalgear, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( controller ) then
+			CoD.CACUtility.UnequipItem( controller, menu, element )
 			return true
 		else
 			
 		end
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f16_arg0, f16_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( f16_arg2 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( tacticalgear, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		if IsMouseOrKeyboard( f17_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( f17_arg0, f17_arg2, "itemIndex", CoDShared.EmptyItemIndex ) then
-			CoD.CACUtility.UnequipItem( f17_arg2, f17_arg1, f17_arg0 )
+	f1_arg0:AddButtonCallbackFunction( tacticalgear, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) then
+			CoD.CACUtility.UnequipItem( controller, menu, element )
 			return true
 		else
 			
 		end
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		if IsMouseOrKeyboard( f18_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( f18_arg0, f18_arg2, "itemIndex", CoDShared.EmptyItemIndex ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x679ACA6FFC6C8F3, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/remove", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	tacticalgear:AddContextualMenuAction( f1_arg0, f1_arg1, 0x679ACA6FFC6C8F3, function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
+	tacticalgear:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/remove", function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f19_arg0, f19_arg2, "itemIndex", CoDShared.EmptyItemIndex ) then
 			return function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
 				CoD.CACUtility.UnequipItem( f20_arg2, f20_arg1, f20_arg0 )
@@ -288,54 +288,54 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09] )
 		return f30_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( perkTalents, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f31_arg0, f31_arg1, f31_arg2, f31_arg3 )
-		if not CoD.BonuscardUtility.IsRequiredGreedWildcardEquipped( f31_arg1, f31_arg0 ) then
-			CoD.CACUtility.OpenWildcardPopup( self, f31_arg0, f31_arg1, f31_arg2, "WildcardSelect", self, "bonuscard", true )
+	f1_arg0:AddButtonCallbackFunction( perkTalents, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not CoD.BonuscardUtility.IsRequiredGreedWildcardEquipped( menu, element ) then
+			CoD.CACUtility.OpenWildcardPopup( self, element, menu, controller, "WildcardSelect", self, "bonuscard", true )
 			return true
 		else
-			CoD.CACUtility.OpenPerkTalentOverlay( self, f31_arg0, f31_arg1, f31_arg2, "PerkTalentSelect", self, "talent" )
+			CoD.CACUtility.OpenPerkTalentOverlay( self, element, menu, controller, "PerkTalentSelect", self, "talent" )
 			return true
 		end
-	end, function ( f32_arg0, f32_arg1, f32_arg2 )
-		CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( perkTalents, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f33_arg0, f33_arg1, f33_arg2, f33_arg3 )
-		if not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f33_arg0, f33_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( f33_arg2 ) then
-			CoD.CACUtility.UnequipLoadoutListItem( f33_arg0, f33_arg1, f33_arg2 )
-			CoD.CACUtility.UpdateItemListSlotSetupContext( f33_arg0, f33_arg2 )
-			CoD.CACUtility.UpdateButtonPromptStatesForListSlots( f33_arg1, f33_arg0, f33_arg2 )
-			CoD.CACUtility.UpdateClassWeaponModel( f33_arg1, f33_arg0, f33_arg2 )
+	f1_arg0:AddButtonCallbackFunction( perkTalents, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( controller ) then
+			CoD.CACUtility.UnequipLoadoutListItem( element, menu, controller )
+			CoD.CACUtility.UpdateItemListSlotSetupContext( element, controller )
+			CoD.CACUtility.UpdateButtonPromptStatesForListSlots( menu, element, controller )
+			CoD.CACUtility.UpdateClassWeaponModel( menu, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f34_arg0, f34_arg1, f34_arg2 )
-		if not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f34_arg0, f34_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( f34_arg2 ) then
-			CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( perkTalents, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( f35_arg0, f35_arg1, f35_arg2, f35_arg3 )
-		if IsMouseOrKeyboard( f35_arg2 ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f35_arg0, f35_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
-			CoD.CACUtility.UnequipLoadoutListItem( f35_arg0, f35_arg1, f35_arg2 )
-			CoD.CACUtility.UpdateItemListSlotSetupContext( f35_arg0, f35_arg2 )
-			CoD.CACUtility.UpdateClassWeaponModel( f35_arg1, f35_arg0, f35_arg2 )
+	f1_arg0:AddButtonCallbackFunction( perkTalents, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
+			CoD.CACUtility.UnequipLoadoutListItem( element, menu, controller )
+			CoD.CACUtility.UpdateItemListSlotSetupContext( element, controller )
+			CoD.CACUtility.UpdateClassWeaponModel( menu, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f36_arg0, f36_arg1, f36_arg2 )
-		if IsMouseOrKeyboard( f36_arg2 ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f36_arg0, f36_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x679ACA6FFC6C8F3, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/remove", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	perkTalents:AddContextualMenuAction( f1_arg0, f1_arg1, 0x679ACA6FFC6C8F3, function ( f37_arg0, f37_arg1, f37_arg2, f37_arg3 )
+	perkTalents:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/remove", function ( f37_arg0, f37_arg1, f37_arg2, f37_arg3 )
 		if not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f37_arg0, f37_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
 			return function ( f38_arg0, f38_arg1, f38_arg2, f38_arg3 )
 				CoD.CACUtility.UnequipLoadoutListItem( f38_arg0, f38_arg1, f38_arg2 )
@@ -407,109 +407,109 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x4D2505E19049444] )
 		return f45_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( primary, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f46_arg0, f46_arg1, f46_arg2, f46_arg3 )
-		if not IsElementPropertyValue( f46_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.CACUtility.OpenCACOverlay( self, f46_arg1, f46_arg2, "WeaponSelectFlyout", self, "primary" )
+	f1_arg0:AddButtonCallbackFunction( primary, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.CACUtility.OpenCACOverlay( self, menu, controller, "WeaponSelectFlyout", self, "primary" )
 			return true
 		else
 			
 		end
-	end, function ( f47_arg0, f47_arg1, f47_arg2 )
-		if not IsElementPropertyValue( f47_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.Menu.SetButtonLabel( f47_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( primary, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], "ui_remove", function ( f48_arg0, f48_arg1, f48_arg2, f48_arg3 )
-		if IsGamepad( f48_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( f48_arg0, f48_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( f48_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.CACUtility.UnequipItem( f48_arg2, f48_arg1, f48_arg0 )
+	f1_arg0:AddButtonCallbackFunction( primary, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], "ui_remove", function ( element, menu, controller, model )
+		if IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.CACUtility.UnequipItem( controller, menu, element )
 			return true
-		elseif IsMouseOrKeyboard( f48_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( f48_arg0, f48_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( f48_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.CACUtility.UnequipItem( f48_arg2, f48_arg1, f48_arg0 )
+		elseif IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.CACUtility.UnequipItem( controller, menu, element )
 			return true
 		else
 			
 		end
-	end, function ( f49_arg0, f49_arg1, f49_arg2 )
-		if IsGamepad( f49_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( f49_arg0, f49_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( f49_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.Menu.SetButtonLabel( f49_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, nil, "ui_remove" )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", nil, "ui_remove" )
 			return true
-		elseif IsMouseOrKeyboard( f49_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( f49_arg0, f49_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( f49_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.Menu.SetButtonLabel( f49_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+		elseif IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( primary, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f50_arg0, f50_arg1, f50_arg2, f50_arg3 )
-		if IsGamepad( f50_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( f50_arg0, f50_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( f50_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.CraftUtility.SetupPaintjobPersonalization( self, f50_arg0, f50_arg2 )
-			CoD.CACUtility.OpenWeaponPersonalizationOverlay( self, f50_arg1, f50_arg2, self, f50_arg0, "primary" )
+	f1_arg0:AddButtonCallbackFunction( primary, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( element, menu, controller, model )
+		if IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.CraftUtility.SetupPaintjobPersonalization( self, element, controller )
+			CoD.CACUtility.OpenWeaponPersonalizationOverlay( self, menu, controller, self, element, "primary" )
 			PlaySoundAlias( "cac_open_wpn_cust" )
 			return true
 		else
 			
 		end
-	end, function ( f51_arg0, f51_arg1, f51_arg2 )
-		if IsGamepad( f51_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( f51_arg0, f51_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( f51_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.Menu.SetButtonLabel( f51_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x94122F68876E5D9, nil, nil )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "mpui/personalize_caps", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( primary, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_contextual_1", function ( f52_arg0, f52_arg1, f52_arg2, f52_arg3 )
-		if IsMouseOrKeyboard( f52_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( f52_arg0, f52_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( f52_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.CraftUtility.SetupPaintjobPersonalization( self, f52_arg0, f52_arg2 )
-			CoD.CACUtility.OpenWeaponPersonalizationOverlay( self, f52_arg1, f52_arg2, self, f52_arg0, "primary" )
+	f1_arg0:AddButtonCallbackFunction( primary, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_contextual_1", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.CraftUtility.SetupPaintjobPersonalization( self, element, controller )
+			CoD.CACUtility.OpenWeaponPersonalizationOverlay( self, menu, controller, self, element, "primary" )
 			PlaySoundAlias( "cac_open_wpn_cust" )
 			return true
 		else
 			
 		end
-	end, function ( f53_arg0, f53_arg1, f53_arg2 )
-		if IsMouseOrKeyboard( f53_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( f53_arg0, f53_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( f53_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.Menu.SetButtonLabel( f53_arg1, Enum.LUIButton[0xA86619565BE54DB], 0x94122F68876E5D9, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xA86619565BE54DB], "mpui/personalize_caps", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( primary, f1_arg1, Enum.LUIButton[0x93AB4C84F113EE1], nil, function ( f54_arg0, f54_arg1, f54_arg2, f54_arg3 )
-		if IsGamepad( f54_arg2 ) and not IsLocal() and not IsCustomLobby() and not IsElementPropertyValue( f54_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.CACUtility.SetShowcaseWeapon( f54_arg1, f54_arg2, f54_arg0 )
+	f1_arg0:AddButtonCallbackFunction( primary, f1_arg1, Enum.LUIButton[0x93AB4C84F113EE1], nil, function ( element, menu, controller, model )
+		if IsGamepad( controller ) and not IsLocal() and not IsCustomLobby() and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.CACUtility.SetShowcaseWeapon( menu, controller, element )
 			PlaySoundAlias( "cac_overload_select" )
 			return true
 		else
 			
 		end
-	end, function ( f55_arg0, f55_arg1, f55_arg2 )
-		if IsGamepad( f55_arg2 ) and not IsLocal() and not IsCustomLobby() and not IsElementPropertyValue( f55_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.Menu.SetButtonLabel( f55_arg1, Enum.LUIButton[0x93AB4C84F113EE1], 0xE629850E7968A6E, nil, nil )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) and not IsLocal() and not IsCustomLobby() and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x93AB4C84F113EE1], "menu/gun_rack_prompt", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( primary, f1_arg1, Enum.LUIButton[0x4D2505E19049444], "ui_contextual_2", function ( f56_arg0, f56_arg1, f56_arg2, f56_arg3 )
-		if IsMouseOrKeyboard( f56_arg2 ) and not IsLocal() and not IsCustomLobby() and not CoD.ModelUtility.IsSelfModelValueEqualTo( f56_arg0, f56_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( f56_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.CACUtility.SetShowcaseWeapon( f56_arg1, f56_arg2, f56_arg0 )
+	f1_arg0:AddButtonCallbackFunction( primary, f1_arg1, Enum.LUIButton[0x4D2505E19049444], "ui_contextual_2", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and not IsLocal() and not IsCustomLobby() and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.CACUtility.SetShowcaseWeapon( menu, controller, element )
 			PlaySoundAlias( "cac_overload_select" )
 			return true
 		else
 			
 		end
-	end, function ( f57_arg0, f57_arg1, f57_arg2 )
-		if IsMouseOrKeyboard( f57_arg2 ) and not IsLocal() and not IsCustomLobby() and not CoD.ModelUtility.IsSelfModelValueEqualTo( f57_arg0, f57_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( f57_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.Menu.SetButtonLabel( f57_arg1, Enum.LUIButton[0x4D2505E19049444], 0x2BA0F750E758177, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and not IsLocal() and not IsCustomLobby() and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4D2505E19049444], "menu/gun_rack", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_2" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	primary:AddContextualMenuAction( f1_arg0, f1_arg1, 0x679ACA6FFC6C8F3, function ( f58_arg0, f58_arg1, f58_arg2, f58_arg3 )
+	primary:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/remove", function ( f58_arg0, f58_arg1, f58_arg2, f58_arg3 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f58_arg0, f58_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( f58_arg0, "__hasFocusOnVariantWidget", true ) then
 			return function ( f59_arg0, f59_arg1, f59_arg2, f59_arg3 )
 				CoD.CACUtility.UnequipItem( f59_arg2, f59_arg1, f59_arg0 )
@@ -519,7 +519,7 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 			
 		end
 	end )
-	primary:AddContextualMenuAction( f1_arg0, f1_arg1, 0xAFF37175F950D17, function ( f60_arg0, f60_arg1, f60_arg2, f60_arg3 )
+	primary:AddContextualMenuAction( f1_arg0, f1_arg1, "mpui/personalize", function ( f60_arg0, f60_arg1, f60_arg2, f60_arg3 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f60_arg0, f60_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( f60_arg0, "__hasFocusOnVariantWidget", true ) then
 			return function ( f61_arg0, f61_arg1, f61_arg2, f61_arg3 )
 				CoD.CraftUtility.SetupPaintjobPersonalization( self, f61_arg0, f61_arg2 )
@@ -639,90 +639,90 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0xA86619565BE54DB] )
 		return f74_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( primaryAttachments, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f75_arg0, f75_arg1, f75_arg2, f75_arg3 )
-		if IsListElementChildInState( f75_arg0, "AttachmentSlot", "WildcardNeeded" ) then
-			CoD.CACUtility.OpenWildcardPopup( self, f75_arg0, f75_arg1, f75_arg2, "WildcardSelect", self, "bonuscard", true )
+	f1_arg0:AddButtonCallbackFunction( primaryAttachments, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsListElementChildInState( element, "AttachmentSlot", "WildcardNeeded" ) then
+			CoD.CACUtility.OpenWildcardPopup( self, element, menu, controller, "WildcardSelect", self, "bonuscard", true )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueEqualTo( self.primary, f75_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.BaseUtility.HasChildElement( f75_arg0, "AttachmentSlot" ) and not IsListElementChildInState( f75_arg0, "AttachmentSlot", "WildcardNotAvailable" ) then
-			CoD.CACUtility.OpenCACAttachmentOverlay( self, f75_arg0, f75_arg1, f75_arg2, "WeaponAttachmentSelect", self, "primary" )
+		elseif not CoD.ModelUtility.IsSelfModelValueEqualTo( self.primary, controller, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.BaseUtility.HasChildElement( element, "AttachmentSlot" ) and not IsListElementChildInState( element, "AttachmentSlot", "WildcardNotAvailable" ) then
+			CoD.CACUtility.OpenCACAttachmentOverlay( self, element, menu, controller, "WeaponAttachmentSelect", self, "primary" )
 			PlaySoundAlias( "cac_open_wpn_cust" )
 			return true
 		else
 			
 		end
-	end, function ( f76_arg0, f76_arg1, f76_arg2 )
-		if IsListElementChildInState( f76_arg0, "AttachmentSlot", "WildcardNeeded" ) then
-			CoD.Menu.SetButtonLabel( f76_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsListElementChildInState( element, "AttachmentSlot", "WildcardNeeded" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueEqualTo( self.primary, f76_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.BaseUtility.HasChildElement( f76_arg0, "AttachmentSlot" ) and not IsListElementChildInState( f76_arg0, "AttachmentSlot", "WildcardNotAvailable" ) then
-			CoD.Menu.SetButtonLabel( f76_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif not CoD.ModelUtility.IsSelfModelValueEqualTo( self.primary, controller, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.BaseUtility.HasChildElement( element, "AttachmentSlot" ) and not IsListElementChildInState( element, "AttachmentSlot", "WildcardNotAvailable" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( primaryAttachments, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], "ui_remove", function ( f77_arg0, f77_arg1, f77_arg2, f77_arg3 )
-		if IsGamepad( f77_arg2 ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f77_arg0, f77_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
-			CoD.CACUtility.RemoveAttachmentFromClass( f77_arg0, f77_arg1, f77_arg2, "primary" )
-			CoD.CACUtility.UpdateItemListSlotSetupContext( f77_arg0, f77_arg2 )
-			CoD.CACUtility.UpdateButtonPromptStatesForListSlots( f77_arg1, f77_arg0, f77_arg2 )
-			CoD.CACUtility.UpdateClassWeaponModel( f77_arg1, f77_arg0, f77_arg2 )
+	f1_arg0:AddButtonCallbackFunction( primaryAttachments, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], "ui_remove", function ( element, menu, controller, model )
+		if IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
+			CoD.CACUtility.RemoveAttachmentFromClass( element, menu, controller, "primary" )
+			CoD.CACUtility.UpdateItemListSlotSetupContext( element, controller )
+			CoD.CACUtility.UpdateButtonPromptStatesForListSlots( menu, element, controller )
+			CoD.CACUtility.UpdateClassWeaponModel( menu, element, controller )
 			return true
-		elseif IsMouseOrKeyboard( f77_arg2 ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f77_arg0, f77_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
-			CoD.CACUtility.RemoveAttachmentFromClass( f77_arg0, f77_arg1, f77_arg2, "primary" )
-			CoD.CACUtility.UpdateItemListSlotSetupContext( f77_arg0, f77_arg2 )
-			CoD.CACUtility.UpdateButtonPromptStatesForListSlots( f77_arg1, f77_arg0, f77_arg2 )
-			CoD.CACUtility.UpdateClassWeaponModel( f77_arg1, f77_arg0, f77_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
+			CoD.CACUtility.RemoveAttachmentFromClass( element, menu, controller, "primary" )
+			CoD.CACUtility.UpdateItemListSlotSetupContext( element, controller )
+			CoD.CACUtility.UpdateButtonPromptStatesForListSlots( menu, element, controller )
+			CoD.CACUtility.UpdateClassWeaponModel( menu, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f78_arg0, f78_arg1, f78_arg2 )
-		if IsGamepad( f78_arg2 ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f78_arg0, f78_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
-			CoD.Menu.SetButtonLabel( f78_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, nil, "ui_remove" )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", nil, "ui_remove" )
 			return true
-		elseif IsMouseOrKeyboard( f78_arg2 ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f78_arg0, f78_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
-			CoD.Menu.SetButtonLabel( f78_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+		elseif IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( primaryAttachments, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f79_arg0, f79_arg1, f79_arg2, f79_arg3 )
-		if IsGamepad( f79_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self.primary, f79_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f79_arg0, f79_arg2, "attachmentSlotIndex", CoD.CACUtility.OpticSlotIndex ) and IsListElementChildInState( f79_arg0, "AttachmentSlot", "DefaultStateHiddenName" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( f79_arg1, f79_arg0 ) then
-			CoD.CraftUtility.SetUpOpticPersonalization( f79_arg0, f79_arg2 )
-			CoD.CACUtility.OpenCACAttachmentOverlay( self, f79_arg0, f79_arg1, f79_arg2, "ReticleSelect", self, "primary" )
+	f1_arg0:AddButtonCallbackFunction( primaryAttachments, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( element, menu, controller, model )
+		if IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self.primary, controller, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "attachmentSlotIndex", CoD.CACUtility.OpticSlotIndex ) and IsListElementChildInState( element, "AttachmentSlot", "DefaultStateHiddenName" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( menu, element ) then
+			CoD.CraftUtility.SetUpOpticPersonalization( element, controller )
+			CoD.CACUtility.OpenCACAttachmentOverlay( self, element, menu, controller, "ReticleSelect", self, "primary" )
 			PlaySoundAlias( "cac_open_wpn_cust" )
 			return true
 		else
 			
 		end
-	end, function ( f80_arg0, f80_arg1, f80_arg2 )
-		if IsGamepad( f80_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self.primary, f80_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f80_arg0, f80_arg2, "attachmentSlotIndex", CoD.CACUtility.OpticSlotIndex ) and IsListElementChildInState( f80_arg0, "AttachmentSlot", "DefaultStateHiddenName" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( f80_arg1, f80_arg0 ) then
-			CoD.Menu.SetButtonLabel( f80_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x94122F68876E5D9, nil, nil )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self.primary, controller, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "attachmentSlotIndex", CoD.CACUtility.OpticSlotIndex ) and IsListElementChildInState( element, "AttachmentSlot", "DefaultStateHiddenName" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( menu, element ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "mpui/personalize_caps", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( primaryAttachments, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_contextual_1", function ( f81_arg0, f81_arg1, f81_arg2, f81_arg3 )
-		if IsMouseOrKeyboard( f81_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self.primary, f81_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f81_arg0, f81_arg2, "attachmentSlotIndex", CoD.CACUtility.OpticSlotIndex ) and IsListElementChildInState( f81_arg0, "AttachmentSlot", "DefaultStateHiddenName" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( f81_arg1, f81_arg0 ) then
-			CoD.CraftUtility.SetUpOpticPersonalization( f81_arg0, f81_arg2 )
-			CoD.CACUtility.OpenCACAttachmentOverlay( self, f81_arg0, f81_arg1, f81_arg2, "ReticleSelect", self, "primary" )
+	f1_arg0:AddButtonCallbackFunction( primaryAttachments, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_contextual_1", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self.primary, controller, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "attachmentSlotIndex", CoD.CACUtility.OpticSlotIndex ) and IsListElementChildInState( element, "AttachmentSlot", "DefaultStateHiddenName" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( menu, element ) then
+			CoD.CraftUtility.SetUpOpticPersonalization( element, controller )
+			CoD.CACUtility.OpenCACAttachmentOverlay( self, element, menu, controller, "ReticleSelect", self, "primary" )
 			PlaySoundAlias( "cac_open_wpn_cust" )
 			return true
 		else
 			
 		end
-	end, function ( f82_arg0, f82_arg1, f82_arg2 )
-		if IsMouseOrKeyboard( f82_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self.primary, f82_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f82_arg0, f82_arg2, "attachmentSlotIndex", CoD.CACUtility.OpticSlotIndex ) and IsListElementChildInState( f82_arg0, "AttachmentSlot", "DefaultStateHiddenName" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( f82_arg1, f82_arg0 ) then
-			CoD.Menu.SetButtonLabel( f82_arg1, Enum.LUIButton[0xA86619565BE54DB], 0x94122F68876E5D9, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self.primary, controller, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "attachmentSlotIndex", CoD.CACUtility.OpticSlotIndex ) and IsListElementChildInState( element, "AttachmentSlot", "DefaultStateHiddenName" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( menu, element ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xA86619565BE54DB], "mpui/personalize_caps", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	primaryAttachments:AddContextualMenuAction( f1_arg0, f1_arg1, 0x679ACA6FFC6C8F3, function ( f83_arg0, f83_arg1, f83_arg2, f83_arg3 )
+	primaryAttachments:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/remove", function ( f83_arg0, f83_arg1, f83_arg2, f83_arg3 )
 		if not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f83_arg0, f83_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
 			return function ( f84_arg0, f84_arg1, f84_arg2, f84_arg3 )
 				CoD.CACUtility.RemoveAttachmentFromClass( f84_arg0, f84_arg1, f84_arg2, "primary" )
@@ -734,7 +734,7 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 			
 		end
 	end )
-	primaryAttachments:AddContextualMenuAction( f1_arg0, f1_arg1, 0xAFF37175F950D17, function ( f85_arg0, f85_arg1, f85_arg2, f85_arg3 )
+	primaryAttachments:AddContextualMenuAction( f1_arg0, f1_arg1, "mpui/personalize", function ( f85_arg0, f85_arg1, f85_arg2, f85_arg3 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualTo( self.primary, f85_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f85_arg0, f85_arg2, "attachmentSlotIndex", CoD.CACUtility.OpticSlotIndex ) and IsListElementChildInState( f85_arg0, "AttachmentSlot", "DefaultStateHiddenName" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( f85_arg1, f85_arg0 ) then
 			return function ( f86_arg0, f86_arg1, f86_arg2, f86_arg3 )
 				CoD.CraftUtility.SetUpOpticPersonalization( f86_arg0, f86_arg2 )
@@ -803,51 +803,51 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09] )
 		return f92_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( wildcards, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f93_arg0, f93_arg1, f93_arg2, f93_arg3 )
-		CoD.CACUtility.OpenWildcardPopup( self, f93_arg0, f93_arg1, f93_arg2, "WildcardSelect", self, "bonuscard", false )
+	f1_arg0:AddButtonCallbackFunction( wildcards, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.CACUtility.OpenWildcardPopup( self, element, menu, controller, "WildcardSelect", self, "bonuscard", false )
 		return true
-	end, function ( f94_arg0, f94_arg1, f94_arg2 )
-		CoD.Menu.SetButtonLabel( f94_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( wildcards, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f95_arg0, f95_arg1, f95_arg2, f95_arg3 )
-		if not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f95_arg0, f95_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( f95_arg2 ) then
-			CoD.CACUtility.UnequipLoadoutListItem( f95_arg0, f95_arg1, f95_arg2 )
-			CoD.CACUtility.EquippedItemsChanged( f95_arg1, f95_arg2 )
-			CoD.CACUtility.UpdateItemListSlotSetupContext( f95_arg0, f95_arg2 )
-			CoD.CACUtility.UpdateButtonPromptStatesForListSlots( f95_arg1, f95_arg0, f95_arg2 )
-			CoD.CACUtility.UpdateClassWeaponModel( f95_arg1, f95_arg0, f95_arg2 )
+	f1_arg0:AddButtonCallbackFunction( wildcards, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( controller ) then
+			CoD.CACUtility.UnequipLoadoutListItem( element, menu, controller )
+			CoD.CACUtility.EquippedItemsChanged( menu, controller )
+			CoD.CACUtility.UpdateItemListSlotSetupContext( element, controller )
+			CoD.CACUtility.UpdateButtonPromptStatesForListSlots( menu, element, controller )
+			CoD.CACUtility.UpdateClassWeaponModel( menu, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f96_arg0, f96_arg1, f96_arg2 )
-		if not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f96_arg0, f96_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( f96_arg2 ) then
-			CoD.Menu.SetButtonLabel( f96_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( wildcards, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( f97_arg0, f97_arg1, f97_arg2, f97_arg3 )
-		if not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f97_arg0, f97_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) and IsMouseOrKeyboard( f97_arg2 ) then
-			CoD.CACUtility.UnequipLoadoutListItem( f97_arg0, f97_arg1, f97_arg2 )
-			CoD.CACUtility.EquippedItemsChanged( f97_arg1, f97_arg2 )
-			CoD.CACUtility.UpdateItemListSlotSetupContext( f97_arg0, f97_arg2 )
-			CoD.CACUtility.UpdateClassWeaponModel( f97_arg1, f97_arg0, f97_arg2 )
+	f1_arg0:AddButtonCallbackFunction( wildcards, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) and IsMouseOrKeyboard( controller ) then
+			CoD.CACUtility.UnequipLoadoutListItem( element, menu, controller )
+			CoD.CACUtility.EquippedItemsChanged( menu, controller )
+			CoD.CACUtility.UpdateItemListSlotSetupContext( element, controller )
+			CoD.CACUtility.UpdateClassWeaponModel( menu, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f98_arg0, f98_arg1, f98_arg2 )
-		if not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f98_arg0, f98_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) and IsMouseOrKeyboard( f98_arg2 ) then
-			CoD.Menu.SetButtonLabel( f98_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x679ACA6FFC6C8F3, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/remove", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	wildcards:AddContextualMenuAction( f1_arg0, f1_arg1, 0x679ACA6FFC6C8F3, function ( f99_arg0, f99_arg1, f99_arg2, f99_arg3 )
+	wildcards:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/remove", function ( f99_arg0, f99_arg1, f99_arg2, f99_arg3 )
 		if not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f99_arg0, f99_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
 			return function ( f100_arg0, f100_arg1, f100_arg2, f100_arg3 )
 				CoD.CACUtility.UnequipLoadoutListItem( f100_arg0, f100_arg1, f100_arg2 )
@@ -921,108 +921,108 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x4D2505E19049444] )
 		return f107_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( secondary, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f108_arg0, f108_arg1, f108_arg2, f108_arg3 )
-		if not IsElementPropertyValue( f108_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.CACUtility.OpenCACOverlay( self, f108_arg1, f108_arg2, "WeaponSelectFlyout", self, "secondary" )
+	f1_arg0:AddButtonCallbackFunction( secondary, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.CACUtility.OpenCACOverlay( self, menu, controller, "WeaponSelectFlyout", self, "secondary" )
 			return true
 		else
 			
 		end
-	end, function ( f109_arg0, f109_arg1, f109_arg2 )
-		if not IsElementPropertyValue( f109_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.Menu.SetButtonLabel( f109_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( secondary, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( f110_arg0, f110_arg1, f110_arg2, f110_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f110_arg0, f110_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( f110_arg2 ) and not IsElementPropertyValue( f110_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.CraftUtility.SetupPaintjobPersonalization( self, f110_arg0, f110_arg2 )
-			CoD.CACUtility.OpenWeaponPersonalizationOverlay( self, f110_arg1, f110_arg2, self, f110_arg0, "secondary" )
+	f1_arg0:AddButtonCallbackFunction( secondary, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( controller ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.CraftUtility.SetupPaintjobPersonalization( self, element, controller )
+			CoD.CACUtility.OpenWeaponPersonalizationOverlay( self, menu, controller, self, element, "secondary" )
 			PlaySoundAlias( "cac_open_wpn_cust" )
 			return true
 		else
 			
 		end
-	end, function ( f111_arg0, f111_arg1, f111_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f111_arg0, f111_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( f111_arg2 ) and not IsElementPropertyValue( f111_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.Menu.SetButtonLabel( f111_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x94122F68876E5D9, nil, "ui_remove" )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( controller ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "mpui/personalize_caps", nil, "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( secondary, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], "ui_remove", function ( f112_arg0, f112_arg1, f112_arg2, f112_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f112_arg0, f112_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( f112_arg2 ) and not IsElementPropertyValue( f112_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.CACUtility.UnequipItem( f112_arg2, f112_arg1, f112_arg0 )
+	f1_arg0:AddButtonCallbackFunction( secondary, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], "ui_remove", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( controller ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.CACUtility.UnequipItem( controller, menu, element )
 			return true
-		elseif IsMouseOrKeyboard( f112_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( f112_arg0, f112_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( f112_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.CACUtility.UnequipItem( f112_arg2, f112_arg1, f112_arg0 )
+		elseif IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.CACUtility.UnequipItem( controller, menu, element )
 			return true
 		else
 			
 		end
-	end, function ( f113_arg0, f113_arg1, f113_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f113_arg0, f113_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( f113_arg2 ) and not IsElementPropertyValue( f113_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.Menu.SetButtonLabel( f113_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, nil, "ui_remove" )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( controller ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", nil, "ui_remove" )
 			return true
-		elseif IsMouseOrKeyboard( f113_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( f113_arg0, f113_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( f113_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.Menu.SetButtonLabel( f113_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+		elseif IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( secondary, f1_arg1, Enum.LUIButton[0x93AB4C84F113EE1], nil, function ( f114_arg0, f114_arg1, f114_arg2, f114_arg3 )
-		if IsGamepad( f114_arg2 ) and not IsLocal() and not IsCustomLobby() and not IsElementPropertyValue( f114_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.CACUtility.SetShowcaseWeapon( f114_arg1, f114_arg2, f114_arg0 )
+	f1_arg0:AddButtonCallbackFunction( secondary, f1_arg1, Enum.LUIButton[0x93AB4C84F113EE1], nil, function ( element, menu, controller, model )
+		if IsGamepad( controller ) and not IsLocal() and not IsCustomLobby() and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.CACUtility.SetShowcaseWeapon( menu, controller, element )
 			PlaySoundAlias( "cac_overload_select" )
 			return true
 		else
 			
 		end
-	end, function ( f115_arg0, f115_arg1, f115_arg2 )
-		if IsGamepad( f115_arg2 ) and not IsLocal() and not IsCustomLobby() and not IsElementPropertyValue( f115_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.Menu.SetButtonLabel( f115_arg1, Enum.LUIButton[0x93AB4C84F113EE1], 0xE629850E7968A6E, nil, nil )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) and not IsLocal() and not IsCustomLobby() and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x93AB4C84F113EE1], "menu/gun_rack_prompt", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( secondary, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_contextual_1", function ( f116_arg0, f116_arg1, f116_arg2, f116_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f116_arg0, f116_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and IsMouseOrKeyboard( f116_arg2 ) and not IsElementPropertyValue( f116_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.CraftUtility.SetupPaintjobPersonalization( self, f116_arg0, f116_arg2 )
-			CoD.CACUtility.OpenWeaponPersonalizationOverlay( self, f116_arg1, f116_arg2, self, f116_arg0, "secondary" )
+	f1_arg0:AddButtonCallbackFunction( secondary, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_contextual_1", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and IsMouseOrKeyboard( controller ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.CraftUtility.SetupPaintjobPersonalization( self, element, controller )
+			CoD.CACUtility.OpenWeaponPersonalizationOverlay( self, menu, controller, self, element, "secondary" )
 			return true
 		else
 			
 		end
-	end, function ( f117_arg0, f117_arg1, f117_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f117_arg0, f117_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and IsMouseOrKeyboard( f117_arg2 ) and not IsElementPropertyValue( f117_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.Menu.SetButtonLabel( f117_arg1, Enum.LUIButton[0xA86619565BE54DB], 0x94122F68876E5D9, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and IsMouseOrKeyboard( controller ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xA86619565BE54DB], "mpui/personalize_caps", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( secondary, f1_arg1, Enum.LUIButton[0x4D2505E19049444], "ui_contextual_2", function ( f118_arg0, f118_arg1, f118_arg2, f118_arg3 )
-		if IsMouseOrKeyboard( f118_arg2 ) and not IsLocal() and not IsCustomLobby() and not CoD.ModelUtility.IsSelfModelValueEqualTo( f118_arg0, f118_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( f118_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.CACUtility.SetShowcaseWeapon( f118_arg1, f118_arg2, f118_arg0 )
+	f1_arg0:AddButtonCallbackFunction( secondary, f1_arg1, Enum.LUIButton[0x4D2505E19049444], "ui_contextual_2", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and not IsLocal() and not IsCustomLobby() and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.CACUtility.SetShowcaseWeapon( menu, controller, element )
 			PlaySoundAlias( "cac_overload_select" )
 			return true
 		else
 			
 		end
-	end, function ( f119_arg0, f119_arg1, f119_arg2 )
-		if IsMouseOrKeyboard( f119_arg2 ) and not IsLocal() and not IsCustomLobby() and not CoD.ModelUtility.IsSelfModelValueEqualTo( f119_arg0, f119_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( f119_arg0, "__hasFocusOnVariantWidget", true ) then
-			CoD.Menu.SetButtonLabel( f119_arg1, Enum.LUIButton[0x4D2505E19049444], 0x2BA0F750E758177, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and not IsLocal() and not IsCustomLobby() and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( element, "__hasFocusOnVariantWidget", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4D2505E19049444], "menu/gun_rack", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_2" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	secondary:AddContextualMenuAction( f1_arg0, f1_arg1, 0x679ACA6FFC6C8F3, function ( f120_arg0, f120_arg1, f120_arg2, f120_arg3 )
+	secondary:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/remove", function ( f120_arg0, f120_arg1, f120_arg2, f120_arg3 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f120_arg0, f120_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( f120_arg0, "__hasFocusOnVariantWidget", true ) then
 			return function ( f121_arg0, f121_arg1, f121_arg2, f121_arg3 )
 				CoD.CACUtility.UnequipItem( f121_arg2, f121_arg1, f121_arg0 )
@@ -1032,7 +1032,7 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 			
 		end
 	end )
-	secondary:AddContextualMenuAction( f1_arg0, f1_arg1, 0xAFF37175F950D17, function ( f122_arg0, f122_arg1, f122_arg2, f122_arg3 )
+	secondary:AddContextualMenuAction( f1_arg0, f1_arg1, "mpui/personalize", function ( f122_arg0, f122_arg1, f122_arg2, f122_arg3 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f122_arg0, f122_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and not IsElementPropertyValue( f122_arg0, "__hasFocusOnVariantWidget", true ) then
 			return function ( f123_arg0, f123_arg1, f123_arg2, f123_arg3 )
 				CoD.CraftUtility.SetupPaintjobPersonalization( self, f123_arg0, f123_arg2 )
@@ -1151,90 +1151,90 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0xA86619565BE54DB] )
 		return f136_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( secondaryAttachments, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f137_arg0, f137_arg1, f137_arg2, f137_arg3 )
-		if IsListElementChildInState( f137_arg0, "AttachmentSlot", "WildcardNeeded" ) then
-			CoD.CACUtility.OpenWildcardPopup( self, f137_arg0, f137_arg1, f137_arg2, "WildcardSelect", self, "bonuscard", true )
+	f1_arg0:AddButtonCallbackFunction( secondaryAttachments, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsListElementChildInState( element, "AttachmentSlot", "WildcardNeeded" ) then
+			CoD.CACUtility.OpenWildcardPopup( self, element, menu, controller, "WildcardSelect", self, "bonuscard", true )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueEqualTo( self.secondary, f137_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.BaseUtility.HasChildElement( f137_arg0, "AttachmentSlot" ) and not IsListElementChildInState( f137_arg0, "AttachmentSlot", "WildcardNotAvailable" ) then
-			CoD.CACUtility.OpenCACAttachmentOverlay( self, f137_arg0, f137_arg1, f137_arg2, "WeaponAttachmentSelect", self, "secondary" )
+		elseif not CoD.ModelUtility.IsSelfModelValueEqualTo( self.secondary, controller, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.BaseUtility.HasChildElement( element, "AttachmentSlot" ) and not IsListElementChildInState( element, "AttachmentSlot", "WildcardNotAvailable" ) then
+			CoD.CACUtility.OpenCACAttachmentOverlay( self, element, menu, controller, "WeaponAttachmentSelect", self, "secondary" )
 			PlaySoundAlias( "cac_open_wpn_cust" )
 			return true
 		else
 			
 		end
-	end, function ( f138_arg0, f138_arg1, f138_arg2 )
-		if IsListElementChildInState( f138_arg0, "AttachmentSlot", "WildcardNeeded" ) then
-			CoD.Menu.SetButtonLabel( f138_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsListElementChildInState( element, "AttachmentSlot", "WildcardNeeded" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueEqualTo( self.secondary, f138_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.BaseUtility.HasChildElement( f138_arg0, "AttachmentSlot" ) and not IsListElementChildInState( f138_arg0, "AttachmentSlot", "WildcardNotAvailable" ) then
-			CoD.Menu.SetButtonLabel( f138_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif not CoD.ModelUtility.IsSelfModelValueEqualTo( self.secondary, controller, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.BaseUtility.HasChildElement( element, "AttachmentSlot" ) and not IsListElementChildInState( element, "AttachmentSlot", "WildcardNotAvailable" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( secondaryAttachments, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], "ui_remove", function ( f139_arg0, f139_arg1, f139_arg2, f139_arg3 )
-		if IsGamepad( f139_arg2 ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f139_arg0, f139_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
-			CoD.CACUtility.RemoveAttachmentFromClass( f139_arg0, f139_arg1, f139_arg2, "secondary" )
-			CoD.CACUtility.UpdateItemListSlotSetupContext( f139_arg0, f139_arg2 )
-			CoD.CACUtility.UpdateButtonPromptStatesForListSlots( f139_arg1, f139_arg0, f139_arg2 )
-			CoD.CACUtility.UpdateClassWeaponModel( f139_arg1, f139_arg0, f139_arg2 )
+	f1_arg0:AddButtonCallbackFunction( secondaryAttachments, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], "ui_remove", function ( element, menu, controller, model )
+		if IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
+			CoD.CACUtility.RemoveAttachmentFromClass( element, menu, controller, "secondary" )
+			CoD.CACUtility.UpdateItemListSlotSetupContext( element, controller )
+			CoD.CACUtility.UpdateButtonPromptStatesForListSlots( menu, element, controller )
+			CoD.CACUtility.UpdateClassWeaponModel( menu, element, controller )
 			return true
-		elseif IsMouseOrKeyboard( f139_arg2 ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f139_arg0, f139_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
-			CoD.CACUtility.RemoveAttachmentFromClass( f139_arg0, f139_arg1, f139_arg2, "secondary" )
-			CoD.CACUtility.UpdateItemListSlotSetupContext( f139_arg0, f139_arg2 )
-			CoD.CACUtility.UpdateButtonPromptStatesForListSlots( f139_arg1, f139_arg0, f139_arg2 )
-			CoD.CACUtility.UpdateClassWeaponModel( f139_arg1, f139_arg0, f139_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
+			CoD.CACUtility.RemoveAttachmentFromClass( element, menu, controller, "secondary" )
+			CoD.CACUtility.UpdateItemListSlotSetupContext( element, controller )
+			CoD.CACUtility.UpdateButtonPromptStatesForListSlots( menu, element, controller )
+			CoD.CACUtility.UpdateClassWeaponModel( menu, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f140_arg0, f140_arg1, f140_arg2 )
-		if IsGamepad( f140_arg2 ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f140_arg0, f140_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
-			CoD.Menu.SetButtonLabel( f140_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, nil, "ui_remove" )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", nil, "ui_remove" )
 			return true
-		elseif IsMouseOrKeyboard( f140_arg2 ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f140_arg0, f140_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
-			CoD.Menu.SetButtonLabel( f140_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+		elseif IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( secondaryAttachments, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f141_arg0, f141_arg1, f141_arg2, f141_arg3 )
-		if IsGamepad( f141_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self.secondary, f141_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f141_arg0, f141_arg2, "attachmentSlotIndex", CoD.CACUtility.OpticSlotIndex ) and IsListElementChildInState( f141_arg0, "AttachmentSlot", "DefaultStateHiddenName" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( f141_arg1, f141_arg0 ) then
-			CoD.CraftUtility.SetUpOpticPersonalization( f141_arg0, f141_arg2 )
-			CoD.CACUtility.OpenCACAttachmentOverlay( self, f141_arg0, f141_arg1, f141_arg2, "ReticleSelect", self, "secondary" )
+	f1_arg0:AddButtonCallbackFunction( secondaryAttachments, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( element, menu, controller, model )
+		if IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self.secondary, controller, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "attachmentSlotIndex", CoD.CACUtility.OpticSlotIndex ) and IsListElementChildInState( element, "AttachmentSlot", "DefaultStateHiddenName" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( menu, element ) then
+			CoD.CraftUtility.SetUpOpticPersonalization( element, controller )
+			CoD.CACUtility.OpenCACAttachmentOverlay( self, element, menu, controller, "ReticleSelect", self, "secondary" )
 			PlaySoundAlias( "cac_open_wpn_cust" )
 			return true
 		else
 			
 		end
-	end, function ( f142_arg0, f142_arg1, f142_arg2 )
-		if IsGamepad( f142_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self.secondary, f142_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f142_arg0, f142_arg2, "attachmentSlotIndex", CoD.CACUtility.OpticSlotIndex ) and IsListElementChildInState( f142_arg0, "AttachmentSlot", "DefaultStateHiddenName" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( f142_arg1, f142_arg0 ) then
-			CoD.Menu.SetButtonLabel( f142_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x94122F68876E5D9, nil, nil )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self.secondary, controller, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "attachmentSlotIndex", CoD.CACUtility.OpticSlotIndex ) and IsListElementChildInState( element, "AttachmentSlot", "DefaultStateHiddenName" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( menu, element ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "mpui/personalize_caps", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( secondaryAttachments, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_contextual_1", function ( f143_arg0, f143_arg1, f143_arg2, f143_arg3 )
-		if IsMouseOrKeyboard( f143_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self.secondary, f143_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f143_arg0, f143_arg2, "attachmentSlotIndex", CoD.CACUtility.OpticSlotIndex ) and IsListElementChildInState( f143_arg0, "AttachmentSlot", "DefaultStateHiddenName" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( f143_arg1, f143_arg0 ) then
-			CoD.CraftUtility.SetUpOpticPersonalization( f143_arg0, f143_arg2 )
-			CoD.CACUtility.OpenCACAttachmentOverlay( self, f143_arg0, f143_arg1, f143_arg2, "ReticleSelect", self, "secondary" )
+	f1_arg0:AddButtonCallbackFunction( secondaryAttachments, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_contextual_1", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self.secondary, controller, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "attachmentSlotIndex", CoD.CACUtility.OpticSlotIndex ) and IsListElementChildInState( element, "AttachmentSlot", "DefaultStateHiddenName" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( menu, element ) then
+			CoD.CraftUtility.SetUpOpticPersonalization( element, controller )
+			CoD.CACUtility.OpenCACAttachmentOverlay( self, element, menu, controller, "ReticleSelect", self, "secondary" )
 			PlaySoundAlias( "cac_open_wpn_cust" )
 			return true
 		else
 			
 		end
-	end, function ( f144_arg0, f144_arg1, f144_arg2 )
-		if IsMouseOrKeyboard( f144_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self.secondary, f144_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f144_arg0, f144_arg2, "attachmentSlotIndex", CoD.CACUtility.OpticSlotIndex ) and IsListElementChildInState( f144_arg0, "AttachmentSlot", "DefaultStateHiddenName" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( f144_arg1, f144_arg0 ) then
-			CoD.Menu.SetButtonLabel( f144_arg1, Enum.LUIButton[0xA86619565BE54DB], 0x94122F68876E5D9, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self.secondary, controller, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "attachmentSlotIndex", CoD.CACUtility.OpticSlotIndex ) and IsListElementChildInState( element, "AttachmentSlot", "DefaultStateHiddenName" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( menu, element ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xA86619565BE54DB], "mpui/personalize_caps", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	secondaryAttachments:AddContextualMenuAction( f1_arg0, f1_arg1, 0x679ACA6FFC6C8F3, function ( f145_arg0, f145_arg1, f145_arg2, f145_arg3 )
+	secondaryAttachments:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/remove", function ( f145_arg0, f145_arg1, f145_arg2, f145_arg3 )
 		if not CoD.ModelUtility.IsSelfModelPathValueEqualTo( f145_arg0, f145_arg2, "loadoutListItem->itemIndex", CoDShared.EmptyItemIndex ) then
 			return function ( f146_arg0, f146_arg1, f146_arg2, f146_arg3 )
 				CoD.CACUtility.RemoveAttachmentFromClass( f146_arg0, f146_arg1, f146_arg2, "secondary" )
@@ -1246,7 +1246,7 @@ CoD.ChooseClassWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 			
 		end
 	end )
-	secondaryAttachments:AddContextualMenuAction( f1_arg0, f1_arg1, 0xAFF37175F950D17, function ( f147_arg0, f147_arg1, f147_arg2, f147_arg3 )
+	secondaryAttachments:AddContextualMenuAction( f1_arg0, f1_arg1, "mpui/personalize", function ( f147_arg0, f147_arg1, f147_arg2, f147_arg3 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualTo( self.primary, f147_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f147_arg0, f147_arg2, "attachmentSlotIndex", CoD.CACUtility.OpticSlotIndex ) and CoD.CACUtility.IsAttachmentWithCustomReticle( f147_arg1, f147_arg0 ) and IsListElementChildInState( f147_arg0, "AttachmentSlot", "DefaultStateHiddenName" ) then
 			return function ( f148_arg0, f148_arg1, f148_arg2, f148_arg3 )
 				CoD.CraftUtility.SetUpOpticPersonalization( f148_arg0, f148_arg2 )

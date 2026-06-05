@@ -31,13 +31,13 @@ CoD.PaintshopBrowseControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local SlotsFull = CoD.PaintshopButtonPrompt.new( f1_arg0, f1_arg1, 0, 0, 20, 420, 0, 0, 420, 460 )
 	SlotsFull:setAlpha( 0 )
-	SlotsFull.buttonPromptImage:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
-	SlotsFull.label:setText( Engine[0xF9F1239CFD921FE]( 0x345431B325139E6 ) )
+	SlotsFull.buttonPromptImage:setImage( RegisterImage( "warning_triangle" ) )
+	SlotsFull.label:setText( Engine[0xF9F1239CFD921FE]( "menu/save_group" ) )
 	self:addElement( SlotsFull )
 	self.SlotsFull = SlotsFull
 	
 	local SaveGroup = CoD.PaintshopButtonPrompt.new( f1_arg0, f1_arg1, 0, 0, 20, 420, 0, 0, 380, 420 )
-	SaveGroup.label:setText( Engine[0xF9F1239CFD921FE]( 0x345431B325139E6 ) )
+	SaveGroup.label:setText( Engine[0xF9F1239CFD921FE]( "menu/save_group" ) )
 	SaveGroup:subscribeToGlobalModel( f1_arg1, "VehicleController", "right_trigger_button_image", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -81,7 +81,7 @@ CoD.PaintshopBrowseControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.LinkLayers = LinkLayers
 	
 	local GroupingTitle = CoD.EmblemEditorHeaderRight.new( f1_arg0, f1_arg1, 0, 0, 5, 325, 0, 0, 239, 276 )
-	GroupingTitle.text:setText( LocalizeToUpperString( 0x7619D823AA62EBA ) )
+	GroupingTitle.text:setText( LocalizeToUpperString( "menu/grouping" ) )
 	self:addElement( GroupingTitle )
 	self.GroupingTitle = GroupingTitle
 	
@@ -306,7 +306,7 @@ CoD.PaintshopBrowseControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 			modelName = "Emblem.EmblemProperties.layersUsed"
 		} )
 	end, false )
-	ChangeDecal.label:setText( Engine[0xF9F1239CFD921FE]( 0x4389B00AC580011 ) )
+	ChangeDecal.label:setText( Engine[0xF9F1239CFD921FE]( "menu/change_decal" ) )
 	ChangeDecal:subscribeToGlobalModel( f1_arg1, "Controller", "alt2_button_image", function ( model )
 		local f29_local0 = model:get()
 		if f29_local0 ~= nil then
@@ -317,7 +317,7 @@ CoD.PaintshopBrowseControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.ChangeDecal = ChangeDecal
 	
 	PaintshopChooseSide = CoD.PaintshopChooseSide.new( f1_arg0, f1_arg1, 0, 0, 5, 325, 0, 0, 4, 36 )
-	PaintshopChooseSide.text:setText( LocalizeToUpperString( 0xF5CA503839CA925 ) )
+	PaintshopChooseSide.text:setText( LocalizeToUpperString( "menu/appearance" ) )
 	self:addElement( PaintshopChooseSide )
 	self.PaintshopChooseSide = PaintshopChooseSide
 	
@@ -406,8 +406,8 @@ CoD.PaintshopBrowseControlsFull.__resetProperties = function ( f30_arg0 )
 	f30_arg0.SlotsFull:setTopBottom( 0, 0, 420, 460 )
 	f30_arg0.SlotsFull:setRGB( 1, 1, 1 )
 	f30_arg0.SlotsFull:setAlpha( 0 )
-	f30_arg0.SlotsFull.buttonPromptImage:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
-	f30_arg0.SlotsFull.label:setText( Engine[0xF9F1239CFD921FE]( 0x345431B325139E6 ) )
+	f30_arg0.SlotsFull.buttonPromptImage:setImage( RegisterImage( "warning_triangle" ) )
+	f30_arg0.SlotsFull.label:setText( Engine[0xF9F1239CFD921FE]( "menu/save_group" ) )
 end
 
 CoD.PaintshopBrowseControlsFull.__clipsPerState = {
@@ -483,7 +483,7 @@ CoD.PaintshopBrowseControlsFull.__clipsPerState = {
 			f33_arg0.clipFinished( f33_arg0.SaveGroup )
 			f33_arg0.LinkLayers:completeAnimation()
 			f33_arg0.LinkLayers.label:completeAnimation()
-			f33_arg0.LinkLayers.label:setText( Engine[0xF9F1239CFD921FE]( 0x82789B43F936B78 ) )
+			f33_arg0.LinkLayers.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_unlink_layers" ) )
 			f33_arg0.clipFinished( f33_arg0.LinkLayers )
 		end
 	},
@@ -516,7 +516,7 @@ CoD.PaintshopBrowseControlsFull.__clipsPerState = {
 			f35_arg0.SlotsFull:setTopBottom( 0, 0, 420, 460 )
 			f35_arg0.SlotsFull:setRGB( 1, 0, 0 )
 			f35_arg0.SlotsFull:setAlpha( 1 )
-			f35_arg0.SlotsFull.buttonPromptImage:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
+			f35_arg0.SlotsFull.buttonPromptImage:setImage( RegisterImage( "warning_triangle" ) )
 			f35_arg0.SlotsFull.label:setText( Engine[0xF9F1239CFD921FE]( 0x35E24C3255091DF ) )
 			f35_arg0.clipFinished( f35_arg0.SlotsFull )
 			f35_arg0.SaveGroup:completeAnimation()

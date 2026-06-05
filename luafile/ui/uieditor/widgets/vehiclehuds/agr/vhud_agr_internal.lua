@@ -13,7 +13,7 @@ CoD.vhud_agr_internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local vignetteCenter = LUI.UIImage.new( 0, 1, -300, 300, 0, 1, -188, 188 )
 	vignetteCenter:setAlpha( 0.6 )
-	vignetteCenter:setImage( RegisterImage( 0xEE4980C2A8CEA50 ) )
+	vignetteCenter:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_backgroundtint" ) )
 	self:addElement( vignetteCenter )
 	self.vignetteCenter = vignetteCenter
 	
@@ -65,14 +65,14 @@ CoD.vhud_agr_internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local vignetteRight = LUI.UIImage.new( 1, 1, -450, 0, 0.5, 0.5, -540, 540 )
 	vignetteRight:setAlpha( 0.2 )
-	vignetteRight:setImage( RegisterImage( 0x560D4F00008F7B7 ) )
+	vignetteRight:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_vignette" ) )
 	self:addElement( vignetteRight )
 	self.vignetteRight = vignetteRight
 	
 	local vignetteLeft = LUI.UIImage.new( 0, 0, 0, 450, 0.5, 0.5, -540, 540 )
 	vignetteLeft:setAlpha( 0.2 )
 	vignetteLeft:setYRot( -180 )
-	vignetteLeft:setImage( RegisterImage( 0x560D4F00008F7B7 ) )
+	vignetteLeft:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_vignette" ) )
 	self:addElement( vignetteLeft )
 	self.vignetteLeft = vignetteLeft
 	

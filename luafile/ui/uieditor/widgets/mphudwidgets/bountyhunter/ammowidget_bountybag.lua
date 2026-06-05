@@ -19,18 +19,18 @@ CoD.AmmoWidget_BountyBag.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.BGBlur = BGBlur
 	
 	local backplate = LUI.UIImage.new( 0, 0, 15, 107, 0, 0, 20.5, 84.5 )
-	backplate:setImage( RegisterImage( 0xDD08B725AA00DD6 ) )
+	backplate:setImage( RegisterImage( "uie_ui_hud_core_carryitem_backplate" ) )
 	self:addElement( backplate )
 	self.backplate = backplate
 	
 	local BagItem = LUI.UIImage.new( 0, 0, 3, 119, 0, 0, 6.5, 98.5 )
-	BagItem:setImage( RegisterImage( 0x15B47535A2D05E ) )
+	BagItem:setImage( RegisterImage( "uie_ui_hud_core_carryitem_heist" ) )
 	self:addElement( BagItem )
 	self.BagItem = BagItem
 	
 	local BagItem2 = LUI.UIImage.new( 0, 0, 15, 107, 0, 0, 20.5, 84.5 )
 	BagItem2:setAlpha( 0 )
-	BagItem2:setImage( RegisterImage( 0x3B2A6476860BEC8 ) )
+	BagItem2:setImage( RegisterImage( "uie_ui_hud_core_carryitem_glow" ) )
 	BagItem2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BagItem2 )
 	self.BagItem2 = BagItem2

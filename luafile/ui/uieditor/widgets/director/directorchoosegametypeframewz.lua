@@ -52,17 +52,17 @@ CoD.DirectorChooseGameTypeFrameWZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f6_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( GameTypeList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		if not CoD.DirectorUtility.IsElementMapOrGameTypeSelected( f7_arg0, f7_arg2 ) then
-			GameModeSelected( f7_arg0, f7_arg2 )
+	f1_arg0:AddButtonCallbackFunction( GameTypeList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not CoD.DirectorUtility.IsElementMapOrGameTypeSelected( element, controller ) then
+			GameModeSelected( element, controller )
 			PlaySoundAlias( "uin_main_nav" )
 			return true
 		else
 			
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		if not CoD.DirectorUtility.IsElementMapOrGameTypeSelected( f8_arg0, f8_arg2 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.DirectorUtility.IsElementMapOrGameTypeSelected( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

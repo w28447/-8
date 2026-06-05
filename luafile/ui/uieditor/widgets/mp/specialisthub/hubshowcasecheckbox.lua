@@ -31,7 +31,7 @@ CoD.HubShowcaseCheckbox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local Empty = LUI.UIImage.new( 0, 0, -5, 43, 0, 0, -6, 42 )
 	Empty:setScale( 0.67, 0.67 )
-	Empty:setImage( RegisterImage( 0xF53DA84C7B770BF ) )
+	Empty:setImage( RegisterImage( "uie_ui_menu_specialist_hub_selectbox_empty" ) )
 	Empty:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Empty )
 	self.Empty = Empty
@@ -44,14 +44,14 @@ CoD.HubShowcaseCheckbox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local dash = LUI.UIImage.new( 0, 0, 3, 35, 0, 0, 2.5, 34.5 )
 	dash:setScale( 1.5, 1.5 )
-	dash:setImage( RegisterImage( 0xEEB4FB140EAEAC ) )
+	dash:setImage( RegisterImage( "uie_ui_menu_cac_allocation_pip_full" ) )
 	self:addElement( dash )
 	self.dash = dash
 	
 	local Glow = LUI.UIImage.new( 0, 0, -1.5, 40.5, 0, 0, -17.5, 55.5 )
 	Glow:setRGB( 0.88, 0.8, 0.45 )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0x1078C36A022A4FE ) )
+	Glow:setImage( RegisterImage( "uie_t7_menu_cac_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
@@ -64,7 +64,7 @@ CoD.HubShowcaseCheckbox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local CursorOver = LUI.UIImage.new( 0, 0, -3, 41, 0, 0, -3.5, 40.5 )
 	CursorOver:setAlpha( 0 )
-	CursorOver:setImage( RegisterImage( 0xFC2EE367F8C243F ) )
+	CursorOver:setImage( RegisterImage( "uie_ui_menu_cac_allocation_pip_over" ) )
 	self:addElement( CursorOver )
 	self.CursorOver = CursorOver
 	

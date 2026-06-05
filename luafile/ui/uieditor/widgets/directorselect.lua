@@ -45,7 +45,7 @@ CoD.directorSelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local DotLineBottom = LUI.UIImage.new( 0.5, 0.5, -474.5, 474.5, 0, 0, 777, 781 )
 	DotLineBottom:setAlpha( 0.4 )
-	DotLineBottom:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	DotLineBottom:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	DotLineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	DotLineBottom:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( DotLineBottom )
@@ -53,7 +53,7 @@ CoD.directorSelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local DotLineTop = LUI.UIImage.new( 0.5, 0.5, -474.5, 474.5, 0, 0, 238, 242 )
 	DotLineTop:setAlpha( 0.4 )
-	DotLineTop:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	DotLineTop:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	DotLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	DotLineTop:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( DotLineTop )
@@ -66,7 +66,7 @@ CoD.directorSelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	HeaderPC = CoD.DirectorScreenHeader.new( f1_arg0, f1_arg1, 0.5, 0.5, -553, 81, 0.5, 0.5, -394, -297 )
 	HeaderPC:setAlpha( 0 )
 	HeaderPC:setZoom( 75 )
-	HeaderPC.Header:setText( LocalizeToUpperString( 0x56CB4013028D74E ) )
+	HeaderPC.Header:setText( LocalizeToUpperString( "menu/local" ) )
 	self:addElement( HeaderPC )
 	self.HeaderPC = HeaderPC
 	
@@ -150,24 +150,24 @@ CoD.directorSelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f11_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ButtonListLeft, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f12_arg0, f12_arg2, "trialLocked" ) and AlwaysFalse() then
-			OpenOverlay( self, "Store", f12_arg2 )
+	f1_arg0:AddButtonCallbackFunction( ButtonListLeft, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) and AlwaysFalse() then
+			OpenOverlay( self, "Store", controller )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f12_arg0, f12_arg2, "locked" ) and CoD.DirectorUtility.ShowForAllClients( f12_arg0, f12_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f12_arg0, f12_arg2, "trialLocked" ) then
-			ProcessListAction( self, f12_arg0, f12_arg2, f12_arg1 )
+		elseif not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "locked" ) and CoD.DirectorUtility.ShowForAllClients( element, controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) then
+			ProcessListAction( self, element, controller, menu )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "trialLocked" ) and AlwaysFalse() then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x191CDDA584B4408, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) and AlwaysFalse() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/store_caps", nil, "ui_confirm" )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "locked" ) and CoD.DirectorUtility.ShowForAllClients( f13_arg0, f13_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f13_arg0, f13_arg2, "trialLocked" ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "locked" ) and CoD.DirectorUtility.ShowForAllClients( element, controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -226,17 +226,17 @@ CoD.directorSelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f21_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ButtonListRight, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f22_arg0, f22_arg2, "locked" ) and CoD.DirectorUtility.ShowForAllClients( f22_arg0, f22_arg2 ) then
+	f1_arg0:AddButtonCallbackFunction( ButtonListRight, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "locked" ) and CoD.DirectorUtility.ShowForAllClients( element, controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			ProcessListAction( self, f22_arg0, f22_arg2, f22_arg1 )
+			ProcessListAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f23_arg0, f23_arg1, f23_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f23_arg0, f23_arg2, "locked" ) and CoD.DirectorUtility.ShowForAllClients( f23_arg0, f23_arg2 ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "locked" ) and CoD.DirectorUtility.ShowForAllClients( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -308,53 +308,53 @@ CoD.directorSelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f34_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ButtonFeatured, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f35_arg0, f35_arg1, f35_arg2, f35_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f35_arg0, f35_arg2, "trialLocked" ) then
-			OpenOverlay( self, "Store", f35_arg2 )
+	f1_arg0:AddButtonCallbackFunction( ButtonFeatured, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) then
+			OpenOverlay( self, "Store", controller )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
-		elseif CoD.DirectorUtility.ShowForAllClients( f35_arg0, f35_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f35_arg0, f35_arg2, "locked" ) then
-			ProcessListAction( self, f35_arg0, f35_arg2, f35_arg1 )
+		elseif CoD.DirectorUtility.ShowForAllClients( element, controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "locked" ) then
+			ProcessListAction( self, element, controller, menu )
 			PlaySoundAlias( "uin_toggle_featured_playlist" )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f35_arg0, f35_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x9B632F6362EA1BE] ) then
-			OpenSystemOverlay( self, f35_arg1, f35_arg2, "DownloadDLC", {
-				_model = f35_arg0:getModel()
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lockState", Enum[0xDACBB5C5F26BCD9][0x9B632F6362EA1BE] ) then
+			OpenSystemOverlay( self, menu, controller, "DownloadDLC", {
+				_model = element:getModel()
 			} )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f35_arg0, f35_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f35_arg0, f35_arg2, "mode", Enum.LobbyMainMode[0x79D01499920B292] ) then
-			CoD.StoreUtility.OpenStoreToDLCPack( self, f35_arg0, f35_arg2, "DirectorSelect", f35_arg1 )
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "mode", Enum.LobbyMainMode[0x79D01499920B292] ) then
+			CoD.StoreUtility.OpenStoreToDLCPack( self, element, controller, "DirectorSelect", menu )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f35_arg0, f35_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) then
-			OpenSystemOverlay( self, f35_arg1, f35_arg2, "SeasonPassUpsell", {
-				_model = f35_arg0:getModel(),
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) then
+			OpenSystemOverlay( self, menu, controller, "SeasonPassUpsell", {
+				_model = element:getModel(),
 				_description = 0x75EE3FCE54AF260
 			} )
 			return true
-		elseif CoD.DirectorUtility.ShowForAllClients( f35_arg0, f35_arg2 ) and CoD.ModelUtility.IsSelfModelValueTrue( f35_arg0, f35_arg2, "locked" ) then
-			ProcessListLockedAction( self, f35_arg0, f35_arg2, f35_arg1 )
+		elseif CoD.DirectorUtility.ShowForAllClients( element, controller ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "locked" ) then
+			ProcessListLockedAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f36_arg0, f36_arg1, f36_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f36_arg0, f36_arg2, "trialLocked" ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x191CDDA584B4408, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/store_caps", nil, "ui_confirm" )
 			return true
-		elseif CoD.DirectorUtility.ShowForAllClients( f36_arg0, f36_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f36_arg0, f36_arg2, "locked" ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif CoD.DirectorUtility.ShowForAllClients( element, controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "locked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f36_arg0, f36_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x9B632F6362EA1BE] ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lockState", Enum[0xDACBB5C5F26BCD9][0x9B632F6362EA1BE] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f36_arg0, f36_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f36_arg0, f36_arg2, "mode", Enum.LobbyMainMode[0x79D01499920B292] ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "mode", Enum.LobbyMainMode[0x79D01499920B292] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f36_arg0, f36_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif CoD.DirectorUtility.ShowForAllClients( f36_arg0, f36_arg2 ) and CoD.ModelUtility.IsSelfModelValueTrue( f36_arg0, f36_arg2, "locked" ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif CoD.DirectorUtility.ShowForAllClients( element, controller ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "locked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -419,30 +419,30 @@ CoD.directorSelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f45_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ButtonModes, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f46_arg0, f46_arg1, f46_arg2, f46_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f46_arg0, f46_arg2, "trialLocked" ) and AlwaysFalse() then
-			OpenOverlay( self, "Store", f46_arg2 )
+	f1_arg0:AddButtonCallbackFunction( ButtonModes, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) and AlwaysFalse() then
+			OpenOverlay( self, "Store", controller )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f46_arg0, f46_arg2, "locked" ) and CoD.DirectorUtility.ShowForAllClients( f46_arg0, f46_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f46_arg0, f46_arg2, "trialLocked" ) then
-			ProcessListAction( self, f46_arg0, f46_arg2, f46_arg1 )
+		elseif not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "locked" ) and CoD.DirectorUtility.ShowForAllClients( element, controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) then
+			ProcessListAction( self, element, controller, menu )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
-		elseif IsPC() and CoD.ModelUtility.IsSelfModelValueTrue( f46_arg0, f46_arg2, "locked" ) and CoD.DirectorUtility.ShowForAllClients( f46_arg0, f46_arg2 ) then
-			ProcessListLockedAction( self, f46_arg0, f46_arg2, f46_arg1 )
+		elseif IsPC() and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "locked" ) and CoD.DirectorUtility.ShowForAllClients( element, controller ) then
+			ProcessListLockedAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f47_arg0, f47_arg1, f47_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f47_arg0, f47_arg2, "trialLocked" ) and AlwaysFalse() then
-			CoD.Menu.SetButtonLabel( f47_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x191CDDA584B4408, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) and AlwaysFalse() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/store_caps", nil, "ui_confirm" )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f47_arg0, f47_arg2, "locked" ) and CoD.DirectorUtility.ShowForAllClients( f47_arg0, f47_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f47_arg0, f47_arg2, "trialLocked" ) then
-			CoD.Menu.SetButtonLabel( f47_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "locked" ) and CoD.DirectorUtility.ShowForAllClients( element, controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif IsPC() and CoD.ModelUtility.IsSelfModelValueTrue( f47_arg0, f47_arg2, "locked" ) and CoD.DirectorUtility.ShowForAllClients( f47_arg0, f47_arg2 ) then
-			CoD.Menu.SetButtonLabel( f47_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif IsPC() and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "locked" ) and CoD.DirectorUtility.ShowForAllClients( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -519,11 +519,11 @@ CoD.directorSelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f52_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PurchaseButton2, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f53_arg0, f53_arg1, f53_arg2, f53_arg3 )
-		OpenOverlay( self, "PC_Korea_Event_Menu", f53_arg2 )
+	f1_arg0:AddButtonCallbackFunction( PurchaseButton2, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		OpenOverlay( self, "PC_Korea_Event_Menu", controller )
 		return true
-	end, function ( f54_arg0, f54_arg1, f54_arg2 )
-		CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( PurchaseButton2 )
@@ -560,24 +560,24 @@ CoD.directorSelect.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f56_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( IGREventButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f57_arg0, f57_arg1, f57_arg2, f57_arg3 )
-		if IsKoreaProgressionSpecialEventActive( f57_arg2 ) then
+	f1_arg0:AddButtonCallbackFunction( IGREventButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if IsKoreaProgressionSpecialEventActive( controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			OpenOverlay( self, "PC_Korea_Event_Menu", f57_arg2 )
+			OpenOverlay( self, "PC_Korea_Event_Menu", controller )
 			return true
-		elseif IsKoreaBonusXPSpecialEventActive( f57_arg2 ) then
+		elseif IsKoreaBonusXPSpecialEventActive( controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.FTUEUtility.ShowFTUESequence( self, f57_arg2, "KoreaSpecialEvent" )
+			CoD.FTUEUtility.ShowFTUESequence( self, controller, "KoreaSpecialEvent" )
 			return true
 		else
 			
 		end
-	end, function ( f58_arg0, f58_arg1, f58_arg2 )
-		if IsKoreaProgressionSpecialEventActive( f58_arg2 ) then
-			CoD.Menu.SetButtonLabel( f58_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if IsKoreaProgressionSpecialEventActive( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 			return false
-		elseif IsKoreaBonusXPSpecialEventActive( f58_arg2 ) then
-			CoD.Menu.SetButtonLabel( f58_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+		elseif IsKoreaBonusXPSpecialEventActive( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 			return false
 		else
 			return false

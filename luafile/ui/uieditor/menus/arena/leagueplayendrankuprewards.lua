@@ -54,13 +54,13 @@ LUI.createMenu.LeaguePlayEndRankUpRewards = function ( f1_arg0, f1_arg1 )
 	local MainCornerL = LUI.UIImage.new( 0.5, 0.5, -784, -754, 0, 0, 146, 176 )
 	MainCornerL:setAlpha( 0.04 )
 	MainCornerL:setYRot( 180 )
-	MainCornerL:setImage( RegisterImage( 0xBCB7451C0F2DE33 ) )
+	MainCornerL:setImage( RegisterImage( "uie_ui_hud_notifications_bracket_topright" ) )
 	self:addElement( MainCornerL )
 	self.MainCornerL = MainCornerL
 	
 	local MainCornerR = LUI.UIImage.new( 0.5, 0.5, 756, 786, 0, 0, 145, 175 )
 	MainCornerR:setAlpha( 0.04 )
-	MainCornerR:setImage( RegisterImage( 0xBCB7451C0F2DE33 ) )
+	MainCornerR:setImage( RegisterImage( "uie_ui_hud_notifications_bracket_topright" ) )
 	self:addElement( MainCornerR )
 	self.MainCornerR = MainCornerR
 	
@@ -126,11 +126,11 @@ LUI.createMenu.LeaguePlayEndRankUpRewards = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( PCButton, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		GoBack( self, f8_arg2 )
+	f1_local1:AddButtonCallbackFunction( PCButton, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( PCButton )
@@ -155,23 +155,23 @@ LUI.createMenu.LeaguePlayEndRankUpRewards = function ( f1_arg0, f1_arg1 )
 	self:addElement( RewardTitle )
 	self.RewardTitle = RewardTitle
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		GoBack( self, f11_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
 		if IsPC() then
-			GoBack( self, f13_arg2 )
+			GoBack( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		else
 			return false

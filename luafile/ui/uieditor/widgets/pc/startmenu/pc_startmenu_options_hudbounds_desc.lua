@@ -9,7 +9,7 @@ CoD.PC_StartMenu_Options_HUDBounds_Desc.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local Description = LUI.UIText.new( 0.5, 0.5, -380, 380, 0.5, 0.5, -12.5, 12.5 )
 	Description:setRGB( 0.51, 0.51, 0.51 )
-	Description:setText( Engine[0xF9F1239CFD921FE]( 0x7A619F36F31F521 ) )
+	Description:setText( Engine[0xF9F1239CFD921FE]( "menu/allies_bot_desc" ) )
 	Description:setTTF( "dinnext_regular" )
 	Description:setLetterSpacing( 1 )
 	Description:setLineSpacing( 4 )

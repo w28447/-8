@@ -23,7 +23,7 @@ CoD.horizontalCounterVerticalSpace.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local dividor = LUI.UIText.new( 0.5, 0.5, -4.5, 4.5, 0.5, 0.5, 6, 24 )
 	dividor:setAlpha( 0.65 )
-	dividor:setText( Engine[0xF9F1239CFD921FE]( 0x993C1A7DD3452BA ) )
+	dividor:setText( Engine[0xF9F1239CFD921FE]( "mp/slash" ) )
 	dividor:setTTF( "ttmussels_regular" )
 	dividor:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	self:addElement( dividor )
@@ -110,22 +110,22 @@ CoD.horizontalCounterVerticalSpace.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f9_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( rightArrowBtn, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		if IsGamepad( f10_arg2 ) then
+	f1_arg0:AddButtonCallbackFunction( rightArrowBtn, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsGamepad( controller ) then
 			NavigateScrollButtonRight( self )
 			return true
-		elseif IsMouseOrKeyboard( f10_arg2 ) then
-			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( self, f10_arg2, true )
+		elseif IsMouseOrKeyboard( controller ) then
+			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( self, controller, true )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		if IsGamepad( f11_arg2 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsMouseOrKeyboard( f11_arg2 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -206,22 +206,22 @@ CoD.horizontalCounterVerticalSpace.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f19_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( leftArrowBtn, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
-		if IsGamepad( f20_arg2 ) then
+	f1_arg0:AddButtonCallbackFunction( leftArrowBtn, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsGamepad( controller ) then
 			NavigateScrollButtonLeft( self )
 			return true
-		elseif IsMouseOrKeyboard( f20_arg2 ) then
-			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( self, f20_arg2, false )
+		elseif IsMouseOrKeyboard( controller ) then
+			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( self, controller, false )
 			return true
 		else
 			
 		end
-	end, function ( f21_arg0, f21_arg1, f21_arg2 )
-		if IsGamepad( f21_arg2 ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsMouseOrKeyboard( f21_arg2 ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false

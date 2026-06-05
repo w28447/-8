@@ -25,7 +25,7 @@ LUI.createMenu.ScorestreakOverCapacity = function ( f1_arg0, f1_arg1 )
 	
 	local Description = LUI.UIText.new( 0.5, 0.5, -412, 607, 0, 0, 384, 405 )
 	Description:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	Description:setText( Engine[0xF9F1239CFD921FE]( 0x907CEE75F9A972D ) )
+	Description:setText( Engine[0xF9F1239CFD921FE]( "mpui/too_many_streaks_desc" ) )
 	Description:setTTF( "dinnext_regular" )
 	Description:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Description:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -34,7 +34,7 @@ LUI.createMenu.ScorestreakOverCapacity = function ( f1_arg0, f1_arg1 )
 	
 	local Title = LUI.UIText.new( 0.5, 0.5, -412, 607, 0, 0, 319, 364 )
 	Title:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
-	Title:setText( LocalizeToUpperString( 0x7F7631DF17A852D ) )
+	Title:setText( LocalizeToUpperString( "mpui/too_many_streaks_caps" ) )
 	Title:setTTF( "ttmussels_demibold" )
 	Title:setLetterSpacing( 6 )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -78,12 +78,12 @@ LUI.createMenu.ScorestreakOverCapacity = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( EquippedScorestreaks, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		CoD.ScorestreakSelectUtility.SwapScorestreaks( f6_arg0, f6_arg2, f6_arg1 )
-		GoBack( self, f6_arg2 )
+	f1_local1:AddButtonCallbackFunction( EquippedScorestreaks, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.ScorestreakSelectUtility.SwapScorestreaks( element, controller, menu )
+		GoBack( self, controller )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( EquippedScorestreaks )
@@ -103,7 +103,7 @@ LUI.createMenu.ScorestreakOverCapacity = function ( f1_arg0, f1_arg1 )
 	local featureOverlayButtonMouseOnly = nil
 	
 	featureOverlayButtonMouseOnly = CoD.featureOverlay_Button_MouseOnly.new( f1_local1, f1_arg0, 0.5, 0.5, -406, -280, 0, 0, 691, 748 )
-	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0x78D439E1B360368 ) )
+	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/back_caps" ) )
 	featureOverlayButtonMouseOnly:registerEventHandler( "gain_focus", function ( element, event )
 		local f9_local0 = nil
 		if element.gainFocus then
@@ -114,13 +114,13 @@ LUI.createMenu.ScorestreakOverCapacity = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f9_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		PlaySoundSetSound( self, "menu_no_selection" )
-		ClearMenuSavedState( f10_arg1 )
-		GoBack( self, f10_arg2 )
+		ClearMenuSavedState( menu )
+		GoBack( self, controller )
 		return true
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( featureOverlayButtonMouseOnly )
@@ -139,31 +139,31 @@ LUI.createMenu.ScorestreakOverCapacity = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f12_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
+	f1_local1:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
 		PlaySoundSetSound( self, "menu_no_selection" )
-		GoBack( self, f13_arg2 )
+		GoBack( self, controller )
 		return true
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 		return false
 	end, false )
-	f1_local1:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
+	f1_local1:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, model )
 		PlaySoundSetSound( self, "menu_no_selection" )
-		GoBack( self, f15_arg2 )
+		GoBack( self, controller )
 		return true
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( PCSmallCloseButton )
 	self.PCSmallCloseButton = PCSmallCloseButton
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		GoBack( self, f17_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		PlaySoundSetSound( self, "menu_no_selection" )
 		return true
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

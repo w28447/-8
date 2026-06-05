@@ -41,7 +41,7 @@ CoD.SupplyChainDetails_InfoPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local ButtonTopLine9Slice = LUI.UIImage.new( 0, 0, 0, 558, 0, 0, 0, 20 )
 	ButtonTopLine9Slice:setAlpha( 0.25 )
-	ButtonTopLine9Slice:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
+	ButtonTopLine9Slice:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_line" ) )
 	ButtonTopLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonTopLine9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonTopLine9Slice:setupNineSliceShader( 120, 10 )
@@ -50,7 +50,7 @@ CoD.SupplyChainDetails_InfoPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local ButtonBottomLine9Slice = LUI.UIImage.new( 0, 0, 0, 558, 0, 0, 224, 244 )
 	ButtonBottomLine9Slice:setAlpha( 0.25 )
-	ButtonBottomLine9Slice:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
+	ButtonBottomLine9Slice:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_line" ) )
 	ButtonBottomLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonBottomLine9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonBottomLine9Slice:setupNineSliceShader( 120, 10 )
@@ -59,7 +59,7 @@ CoD.SupplyChainDetails_InfoPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local HeaderGlow = LUI.UIImage.new( 0, 0, 2, 556, 0, 0, 12, 44 )
 	HeaderGlow:setAlpha( 0.1 )
-	HeaderGlow:setImage( RegisterImage( 0xFAA6C81834660D3 ) )
+	HeaderGlow:setImage( RegisterImage( "uie_ui_menu_common_box_glow" ) )
 	HeaderGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	HeaderGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	HeaderGlow:setupNineSliceShader( 12, 12 )
@@ -84,7 +84,7 @@ CoD.SupplyChainDetails_InfoPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0, 0, 5.5, 551.5, 0, 0, 16, 40 )
 	PixelGridTiledBacking:setAlpha( 0.05 )
-	PixelGridTiledBacking:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
@@ -147,7 +147,7 @@ CoD.SupplyChainDetails_InfoPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 					if f11_local0 then
 						f11_local0 = CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, f1_arg1, "rarity", Enum.LootRarityType[0x8556B83CAD0D180] )
 						if f11_local0 then
-							f11_local0 = not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0x4F35AE761BD424 )
+							f11_local0 = not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "specialist" )
 						end
 					end
 				else
@@ -171,7 +171,7 @@ CoD.SupplyChainDetails_InfoPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 		{
 			stateName = "NoRarity",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, f1_arg1, "rarity", Enum.LootRarityType[0x8556B83CAD0D180] ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0x4F35AE761BD424 )
+				return CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, f1_arg1, "rarity", Enum.LootRarityType[0x8556B83CAD0D180] ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "specialist" )
 			end
 		}
 	} )

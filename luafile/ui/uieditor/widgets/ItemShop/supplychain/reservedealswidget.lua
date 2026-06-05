@@ -112,7 +112,7 @@ CoD.ReserveDealsWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.PurchasedBanner = PurchasedBanner
 	
 	local NineSliceBMFrame = LUI.UIImage.new( 0, 0, 0, 352, 0, 0, 0, 116 )
-	NineSliceBMFrame:setImage( RegisterImage( 0x1AC151A09D526DC ) )
+	NineSliceBMFrame:setImage( RegisterImage( "uie_ui_menu_blackmarket_button_frame" ) )
 	NineSliceBMFrame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	NineSliceBMFrame:setShaderVector( 0, 0, 0, 0, 0 )
 	NineSliceBMFrame:setupNineSliceShader( 162, 52 )

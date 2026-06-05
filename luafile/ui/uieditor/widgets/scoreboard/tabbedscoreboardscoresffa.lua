@@ -78,31 +78,31 @@ CoD.TabbedScoreboardScoresFFA.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0xC083113BC81F23F] )
 		return f6_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( FFATeamScores, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		if ScoreboardVisible( f7_arg2 ) then
-			CoD.ScoreboardUtility.ToggleClientMute( f7_arg0, f7_arg2 )
+	f1_arg0:AddButtonCallbackFunction( FFATeamScores, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if ScoreboardVisible( controller ) then
+			CoD.ScoreboardUtility.ToggleClientMute( element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		if ScoreboardVisible( f8_arg2 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if ScoreboardVisible( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( FFATeamScores, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		if ScoreboardVisible( f9_arg2 ) and IsVisibilityBitSet( f9_arg2, Enum.UIVisibilityBit[0x8A5E996D4528DA2] ) then
-			BlockGameFromKeyEvent( f9_arg2 )
+	f1_arg0:AddButtonCallbackFunction( FFATeamScores, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if ScoreboardVisible( controller ) and IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x8A5E996D4528DA2] ) then
+			BlockGameFromKeyEvent( controller )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		if ScoreboardVisible( f10_arg2 ) and IsVisibilityBitSet( f10_arg2, Enum.UIVisibilityBit[0x8A5E996D4528DA2] ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if ScoreboardVisible( controller ) and IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x8A5E996D4528DA2] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, nil )
 			return false
 		else
 			return false
@@ -126,7 +126,7 @@ CoD.TabbedScoreboardScoresFFA.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	RankHashtagRight = LUI.UIText.new( 0, 0, 639, 681, 0, 0, 27.5, 42.5 )
 	RankHashtagRight:setRGB( 0.7, 0.7, 0.7 )
-	RankHashtagRight:setText( Engine[0xF9F1239CFD921FE]( 0x1F2CC836CC2EF55 ) )
+	RankHashtagRight:setText( Engine[0xF9F1239CFD921FE]( "menu/hashtag" ) )
 	RankHashtagRight:setTTF( "0arame_mono_stencil" )
 	RankHashtagRight:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	RankHashtagRight:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

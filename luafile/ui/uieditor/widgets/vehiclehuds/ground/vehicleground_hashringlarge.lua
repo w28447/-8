@@ -17,27 +17,27 @@ CoD.VehicleGround_HashRingLarge.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local Image5 = LUI.UIImage.new( 0, 0, 48, 156, 0.5, 0.5, -56, 4 )
 	Image5:setRGB( 0, 0, 0 )
-	Image5:setImage( RegisterImage( 0x679280550EF3723 ) )
+	Image5:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_ground_hashringlargemaskmid" ) )
 	self:addElement( Image5 )
 	self.Image5 = Image5
 	
 	local Image6 = LUI.UIImage.new( 0, 0, 48, 156, 0.5, 0.5, -3, 57 )
 	Image6:setRGB( 0, 0, 0 )
 	Image6:setXRot( -180 )
-	Image6:setImage( RegisterImage( 0x679280550EF3723 ) )
+	Image6:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_ground_hashringlargemaskmid" ) )
 	self:addElement( Image6 )
 	self.Image6 = Image6
 	
 	local Image7 = LUI.UIImage.new( 0, 0, 0, 120, 0.5, 0.5, 117, 249 )
 	Image7:setRGB( 0, 0, 0 )
-	Image7:setImage( RegisterImage( 0x3D69EDEF5709CCA ) )
+	Image7:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_ground_hashringlargemaskbase" ) )
 	self:addElement( Image7 )
 	self.Image7 = Image7
 	
 	local Image0 = LUI.UIImage.new( 0, 0, 0, 120, 0.5, 0.5, -249, -117 )
 	Image0:setRGB( 0, 0, 0 )
 	Image0:setXRot( -180 )
-	Image0:setImage( RegisterImage( 0x3D69EDEF5709CCA ) )
+	Image0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_ground_hashringlargemaskbase" ) )
 	self:addElement( Image0 )
 	self.Image0 = Image0
 	
@@ -64,7 +64,7 @@ CoD.VehicleGround_HashRingLarge.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local Image2 = LUI.UIImage.new( 0, 0, -23, 156, 0.5, 0.5, 81, 267 )
 	Image2:setAlpha( 0.6 )
 	Image2:setZRot( 86 )
-	Image2:setImage( RegisterImage( 0x720D5B4FA8ACB23 ) )
+	Image2:setImage( RegisterImage( "uie_t7_cp_hud_woundedsoldier_sidemask" ) )
 	self:addElement( Image2 )
 	self.Image2 = Image2
 	
@@ -72,7 +72,7 @@ CoD.VehicleGround_HashRingLarge.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	Image3:setAlpha( 0.6 )
 	Image3:setXRot( -180 )
 	Image3:setZRot( 86 )
-	Image3:setImage( RegisterImage( 0x720D5B4FA8ACB23 ) )
+	Image3:setImage( RegisterImage( "uie_t7_cp_hud_woundedsoldier_sidemask" ) )
 	self:addElement( Image3 )
 	self.Image3 = Image3
 	

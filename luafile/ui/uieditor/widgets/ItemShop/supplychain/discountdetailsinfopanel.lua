@@ -28,7 +28,7 @@ CoD.DiscountDetailsInfoPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local ButtonTopLine9Slice = LUI.UIImage.new( 0, 0, 0, 558, 0, 0, 0, 20 )
 	ButtonTopLine9Slice:setAlpha( 0.25 )
-	ButtonTopLine9Slice:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
+	ButtonTopLine9Slice:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_line" ) )
 	ButtonTopLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonTopLine9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonTopLine9Slice:setupNineSliceShader( 120, 10 )
@@ -37,7 +37,7 @@ CoD.DiscountDetailsInfoPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local ButtonBottomLine9Slice = LUI.UIImage.new( 0, 0, 0, 558, 0, 0, 224, 244 )
 	ButtonBottomLine9Slice:setAlpha( 0.25 )
-	ButtonBottomLine9Slice:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
+	ButtonBottomLine9Slice:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_line" ) )
 	ButtonBottomLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonBottomLine9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonBottomLine9Slice:setupNineSliceShader( 120, 10 )
@@ -118,7 +118,7 @@ CoD.DiscountDetailsInfoPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		{
 			stateName = "NoRarity",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, f1_arg1, "rarity", Enum.LootRarityType[0x8556B83CAD0D180] ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0x4F35AE761BD424 )
+				return CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, f1_arg1, "rarity", Enum.LootRarityType[0x8556B83CAD0D180] ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "specialist" )
 			end
 		}
 	} )

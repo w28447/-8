@@ -51,13 +51,13 @@ CoD.ReservesContentImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		{
 			stateName = "CamoImage",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xA40B9ADF060FA4A )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "single_camo" )
 			end
 		},
 		{
 			stateName = "CharmOrDeathFX",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualToEitherValue( self, f1_arg1, "itemCategory", 0x73452998C43A16, 0xAD68520D53FDBFB )
+				return CoD.ModelUtility.IsSelfModelValueEqualToEitherValue( self, f1_arg1, "itemCategory", "single_weapon_charm", "single_death_fx" )
 			end
 		}
 	} )

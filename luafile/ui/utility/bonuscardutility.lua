@@ -3,17 +3,17 @@ CoD.BonuscardUtility.PrimaryGunfighterWildcards = CoDLoadoutsShared.PrimaryGunfi
 CoD.BonuscardUtility.SecondaryGunfighterWildcards = CoDLoadoutsShared.SecondaryGunfighterWildcards
 CoD.BonuscardUtility.GluttonyWildcards = {
 	{
-		refHash = 0xE8E25CA6D4FFCAA,
+		refHash = "bonuscard_perk_1_gluttony",
 		talentFilter = "talent1",
 		loadoutSlot = "talent.1"
 	},
 	{
-		refHash = 0xE2D46C69C58DED1,
+		refHash = "bonuscard_perk_2_gluttony",
 		talentFilter = "talent2",
 		loadoutSlot = "talent.2"
 	},
 	{
-		refHash = 0x8EC14572D948374,
+		refHash = "bonuscard_perk_3_gluttony",
 		talentFilter = "talent3",
 		loadoutSlot = "talent.3"
 	}
@@ -28,80 +28,80 @@ CoD.BonuscardUtility.NumBonucardsNeededForAttachmentTable = {
 	["secondary.attachment.6"] = 3
 }
 CoD.BonuscardUtility.BonuscardNeededForAttachmentSlot = {
-	["primary.attachment.5"] = 0xCFB7582AD73158B,
-	["secondary.attachment.5"] = 0x846D8E9A76A4A77
+	["primary.attachment.5"] = "bonuscard_primary_operator_mod",
+	["secondary.attachment.5"] = "bonuscard_secondary_operator_mod"
 }
 CoD.BonuscardUtility.BonuscardNeededForTalentSlot = {
-	["talent.4"] = 0x7D681250287807D,
-	["talent.5"] = 0x927FEA821FFA36C,
-	["talent.6"] = 0xB03ADC532F77517
+	["talent.4"] = "bonuscard_perk_1_greed",
+	["talent.5"] = "bonuscard_perk_2_greed",
+	["talent.6"] = "bonuscard_perk_3_greed"
 }
 CoD.BonuscardUtility.BonuscardModifiedSlotType = LuaEnum.createEnum( "NONE", "PRIMARY", "PRIMARY_ATTACHMENT", "PRIMARY_ATTACHMENT_UBER", "SECONDARY", "SECONDARY_ATTACHMENT", "SECONDARY_ATTACHMENT_UBER", "TALENTS", "TALENT_4", "TALENT_5", "TALENT_6" )
 CoD.BonuscardUtility.BonuscardInfoTable = {
-	[0x4899EF258715D73] = {
+	bonuscard_primary_gunfighter = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.PRIMARY_ATTACHMENT
 	},
-	[0x283C41F6A1E4502] = {
+	bonuscard_primary_gunfighter_2 = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.PRIMARY_ATTACHMENT
 	},
-	[0x283C51F6A1E46B5] = {
+	bonuscard_primary_gunfighter_3 = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.PRIMARY_ATTACHMENT
 	},
-	[0xCFB7582AD73158B] = {
+	bonuscard_primary_operator_mod = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.PRIMARY_ATTACHMENT_UBER,
 		unequippableBonuscardsFn = function ()
 			return CoD.BonuscardUtility.IncompatibleGunfightersForOperatorMod, "primary"
 		end
 	},
-	[0xAD296CFA27FA607] = {
+	bonuscard_secondary_gunfighter = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.SECONDARY_ATTACHMENT
 	},
-	[0x462CB5783A2010E] = {
+	bonuscard_secondary_gunfighter_2 = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.SECONDARY_ATTACHMENT
 	},
-	[0x462CC5783A202C1] = {
+	bonuscard_secondary_gunfighter_3 = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.SECONDARY_ATTACHMENT
 	},
-	[0x846D8E9A76A4A77] = {
+	bonuscard_secondary_operator_mod = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.SECONDARY_ATTACHMENT_UBER,
 		unequippableBonuscardsFn = function ()
 			return CoD.BonuscardUtility.IncompatibleGunfightersForOperatorMod, "secondary"
 		end
 	},
-	[0xE8E25CA6D4FFCAA] = {
+	bonuscard_perk_1_gluttony = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.TALENTS,
 		unequippableBonuscards = {
-			0x927FEA821FFA36C,
-			0xB03ADC532F77517
+			"bonuscard_perk_2_greed",
+			"bonuscard_perk_3_greed"
 		}
 	},
-	[0xE2D46C69C58DED1] = {
+	bonuscard_perk_2_gluttony = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.TALENTS,
 		unequippableBonuscards = {
-			0x7D681250287807D,
-			0xB03ADC532F77517
+			"bonuscard_perk_1_greed",
+			"bonuscard_perk_3_greed"
 		}
 	},
-	[0x8EC14572D948374] = {
+	bonuscard_perk_3_gluttony = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.TALENTS,
 		unequippableBonuscards = {
-			0x7D681250287807D,
-			0x927FEA821FFA36C
+			"bonuscard_perk_1_greed",
+			"bonuscard_perk_2_greed"
 		}
 	},
-	[0x7D681250287807D] = {
+	bonuscard_perk_1_greed = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.TALENT_4
 	},
-	[0x927FEA821FFA36C] = {
+	bonuscard_perk_2_greed = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.TALENT_5
 	},
-	[0xB03ADC532F77517] = {
+	bonuscard_perk_3_greed = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.TALENT_6
 	},
-	["bonuscard_overkill"] = {
+	bonuscard_overkill = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.SECONDARY
 	},
-	[0x439C6CFA8A0CFEB] = {
+	bonuscard_underkill = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.PRIMARY
 	}
 }
@@ -115,55 +115,55 @@ CoD.BonuscardUtility.LoadoutSlotInfoTable = {
 	["primary.attachment.4"] = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.PRIMARY_ATTACHMENT,
 		contextualBonuscards = {
-			0x4899EF258715D73,
-			0x283C41F6A1E4502,
-			0x283C51F6A1E46B5,
-			0xCFB7582AD73158B
+			"bonuscard_primary_gunfighter",
+			"bonuscard_primary_gunfighter_2",
+			"bonuscard_primary_gunfighter_3",
+			"bonuscard_primary_operator_mod"
 		}
 	},
 	["primary.attachment.5"] = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.PRIMARY_ATTACHMENT,
 		contextualBonuscards = {
-			0x4899EF258715D73,
-			0x283C41F6A1E4502,
-			0x283C51F6A1E46B5,
-			0xCFB7582AD73158B
+			"bonuscard_primary_gunfighter",
+			"bonuscard_primary_gunfighter_2",
+			"bonuscard_primary_gunfighter_3",
+			"bonuscard_primary_operator_mod"
 		}
 	},
 	["primary.attachment.6"] = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.PRIMARY_ATTACHMENT,
 		contextualBonuscards = {
-			0x4899EF258715D73,
-			0x283C41F6A1E4502,
-			0x283C51F6A1E46B5,
-			0xCFB7582AD73158B
+			"bonuscard_primary_gunfighter",
+			"bonuscard_primary_gunfighter_2",
+			"bonuscard_primary_gunfighter_3",
+			"bonuscard_primary_operator_mod"
 		}
 	},
 	["secondary.attachment.4"] = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.SECONDARY_ATTACHMENT,
 		contextualBonuscards = {
-			0xAD296CFA27FA607,
-			0x462CB5783A2010E,
-			0x462CC5783A202C1,
-			0x846D8E9A76A4A77
+			"bonuscard_secondary_gunfighter",
+			"bonuscard_secondary_gunfighter_2",
+			"bonuscard_secondary_gunfighter_3",
+			"bonuscard_secondary_operator_mod"
 		}
 	},
 	["secondary.attachment.5"] = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.SECONDARY_ATTACHMENT,
 		contextualBonuscards = {
-			0xAD296CFA27FA607,
-			0x462CB5783A2010E,
-			0x462CC5783A202C1,
-			0x846D8E9A76A4A77
+			"bonuscard_secondary_gunfighter",
+			"bonuscard_secondary_gunfighter_2",
+			"bonuscard_secondary_gunfighter_3",
+			"bonuscard_secondary_operator_mod"
 		}
 	},
 	["secondary.attachment.6"] = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.SECONDARY_ATTACHMENT,
 		contextualBonuscards = {
-			0xAD296CFA27FA607,
-			0x462CB5783A2010E,
-			0x462CC5783A202C1,
-			0x846D8E9A76A4A77
+			"bonuscard_secondary_gunfighter",
+			"bonuscard_secondary_gunfighter_2",
+			"bonuscard_secondary_gunfighter_3",
+			"bonuscard_secondary_operator_mod"
 		}
 	},
 	["talent.1"] = {
@@ -178,19 +178,19 @@ CoD.BonuscardUtility.LoadoutSlotInfoTable = {
 	["talent.4"] = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.TALENT_4,
 		contextualBonuscards = {
-			0x7D681250287807D
+			"bonuscard_perk_1_greed"
 		}
 	},
 	["talent.5"] = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.TALENT_5,
 		contextualBonuscards = {
-			0x927FEA821FFA36C
+			"bonuscard_perk_2_greed"
 		}
 	},
 	["talent.6"] = {
 		modifiedSlotEnum = CoD.BonuscardUtility.BonuscardModifiedSlotType.TALENT_6,
 		contextualBonuscards = {
-			0xB03ADC532F77517
+			"bonuscard_perk_3_greed"
 		}
 	}
 }
@@ -430,7 +430,7 @@ end
 
 CoD.BonuscardUtility.GetBonucardUnlockHint = function ( f22_arg0, f22_arg1 )
 	local f22_local0 = Engine[0xD97229B24C685D5]( f22_arg0, f22_arg1 )
-	return Engine.Localize( 0xF8AF6E1799C89BB, Engine.GetItemName( f22_local0, Enum[0x6EB546760F890D2][0x1A949B83CC070B0], f22_arg1 ), Engine.GetItemUnlockLevel( f22_local0, Enum[0x6EB546760F890D2][0x1A949B83CC070B0], f22_arg1 ) + 1 )
+	return Engine.Localize( "mpui/item_unlocks_at_lvl", Engine.GetItemName( f22_local0, Enum[0x6EB546760F890D2][0x1A949B83CC070B0], f22_arg1 ), Engine.GetItemUnlockLevel( f22_local0, Enum[0x6EB546760F890D2][0x1A949B83CC070B0], f22_arg1 ) + 1 )
 end
 
 CoD.BonuscardUtility.IsBonuscardLocked = function ( f23_arg0, f23_arg1, f23_arg2 )
@@ -500,7 +500,7 @@ CoD.BonuscardUtility.IsPrereqBonuscardEquippedForSlot = function ( f27_arg0, f27
 		local f27_local5 = f27_local2.numBonuscardNeeded:get() <= (f27_local0[f27_local4].numGunfightersEquipped and f27_local0[f27_local4].numGunfightersEquipped:get() or 0)
 		if f27_local2.isUberAttachmentSlot:get() and not f27_local5 then
 			local f27_local6 = f27_local2.bonuscardNeeded:get()
-			if f27_local6 and f27_local6 ~= 0x0 then
+			if f27_local6 and f27_local6 ~= "" then
 				return CoD.BonuscardUtility.IsBonuscardEquipped( f27_local0, f27_local6, f27_local1 )
 			end
 		end
@@ -597,7 +597,7 @@ CoD.BonuscardUtility.IsRequiredGreedWildcardEquipped = function ( f31_arg0, f31_
 	local f31_local2 = f31_arg1:getModel()
 	if f31_local2 then
 		local f31_local3 = f31_local2.bonuscardNeeded:get()
-		if f31_local3 == 0x0 then
+		if f31_local3 == "" then
 			return true
 		else
 			return CoD.BonuscardUtility.IsBonuscardEquipped( f31_local0, f31_local3, f31_local1 )

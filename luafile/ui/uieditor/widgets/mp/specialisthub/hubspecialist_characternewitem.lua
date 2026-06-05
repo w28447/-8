@@ -9,13 +9,13 @@ CoD.HubSpecialist_characterNewItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local NewItemIndicator = LUI.UIImage.new( 0, 0, 6, 158, 0, 0, 7.5, 15.5 )
-	NewItemIndicator:setImage( RegisterImage( 0x165047C060FD9C1 ) )
+	NewItemIndicator:setImage( RegisterImage( "uie_ui_menu_specialist_hub_item_indicator" ) )
 	self:addElement( NewItemIndicator )
 	self.NewItemIndicator = NewItemIndicator
 	
 	local NewItemIndicatorGlowR = LUI.UIImage.new( 0, 0, 0, 164, 0, 0, 0, 24 )
 	NewItemIndicatorGlowR:setAlpha( 0 )
-	NewItemIndicatorGlowR:setImage( RegisterImage( 0xDF54E835C547E37 ) )
+	NewItemIndicatorGlowR:setImage( RegisterImage( "uie_ui_menu_specialist_hub_item_indicator_glow" ) )
 	NewItemIndicatorGlowR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	NewItemIndicatorGlowR:setShaderVector( 0, 0.58, 1, 0, 0 )
 	NewItemIndicatorGlowR:setShaderVector( 1, 0.05, 0, 0, 0 )
@@ -27,7 +27,7 @@ CoD.HubSpecialist_characterNewItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local NewItemIndicatorGlowL = LUI.UIImage.new( 0, 0, 0, 164, 0, 0, 0, 24 )
 	NewItemIndicatorGlowL:setAlpha( 0 )
-	NewItemIndicatorGlowL:setImage( RegisterImage( 0xDF54E835C547E37 ) )
+	NewItemIndicatorGlowL:setImage( RegisterImage( "uie_ui_menu_specialist_hub_item_indicator_glow" ) )
 	NewItemIndicatorGlowL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	NewItemIndicatorGlowL:setShaderVector( 0, 0, 0.42, 0, 0 )
 	NewItemIndicatorGlowL:setShaderVector( 1, 0, 0.05, 0, 0 )
@@ -39,7 +39,7 @@ CoD.HubSpecialist_characterNewItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local NewItemIndicatorGlow = LUI.UIImage.new( 0, 0, 0, 164, 0, 0, 0, 24 )
 	NewItemIndicatorGlow:setAlpha( 0.5 )
-	NewItemIndicatorGlow:setImage( RegisterImage( 0xDF54E835C547E37 ) )
+	NewItemIndicatorGlow:setImage( RegisterImage( "uie_ui_menu_specialist_hub_item_indicator_glow" ) )
 	NewItemIndicatorGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	NewItemIndicatorGlow:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( NewItemIndicatorGlow )

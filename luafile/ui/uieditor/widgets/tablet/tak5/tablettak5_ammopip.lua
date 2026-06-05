@@ -15,7 +15,7 @@ CoD.TabletTak5_AmmoPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.Backing = Backing
 	
 	local Pip = LUI.UIImage.new( 0.5, 0.5, -23, 23, 0.5, 0.5, -41, 25 )
-	Pip:setImage( RegisterImage( 0xB79971FB0E280A6 ) )
+	Pip:setImage( RegisterImage( "uie_ui_hud_tak5_ammo" ) )
 	Pip:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	Pip:setShaderVector( 0, 0, 1, 0, 0 )
 	Pip:setShaderVector( 1, 0, 0, 0, 0 )
@@ -27,8 +27,8 @@ CoD.TabletTak5_AmmoPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local PipLine = LUI.UIImage.new( 0.5, 0.5, -23, 23, 0.5, 0.5, -41, 25 )
 	PipLine:setAlpha( 0.5 )
-	PipLine:setImage( RegisterImage( 0xB79971FB0E280A6 ) )
-	PipLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x92F09074FB20E6D ) )
+	PipLine:setImage( RegisterImage( "uie_ui_hud_tak5_ammo" ) )
+	PipLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines" ) )
 	PipLine:setShaderVector( 0, 2, 0, 0, 0 )
 	PipLine:setShaderVector( 1, 1.4, 0, 0, 0 )
 	PipLine:setShaderVector( 2, 0.03, 0, 0, 0 )
@@ -36,7 +36,7 @@ CoD.TabletTak5_AmmoPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.PipLine = PipLine
 	
 	local FrameAmmo = LUI.UIImage.new( 0, 0, -3, 43, 0, 0, -3.5, 76.5 )
-	FrameAmmo:setImage( RegisterImage( 0x167A972EC98A924 ) )
+	FrameAmmo:setImage( RegisterImage( "uie_ui_hud_tak5_ammo_frame_armed" ) )
 	self:addElement( FrameAmmo )
 	self.FrameAmmo = FrameAmmo
 	
@@ -62,7 +62,7 @@ CoD.TabletTak5_AmmoPip.__resetProperties = function ( f2_arg0 )
 	f2_arg0.FrameAmmo:setAlpha( 1 )
 	f2_arg0.FrameAmmoUsed:setAlpha( 0 )
 	f2_arg0.PipLine:setAlpha( 0.5 )
-	f2_arg0.PipLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x92F09074FB20E6D ) )
+	f2_arg0.PipLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines" ) )
 	f2_arg0.PipLine:setShaderVector( 0, 2, 0, 0, 0 )
 	f2_arg0.PipLine:setShaderVector( 1, 1.4, 0, 0, 0 )
 	f2_arg0.PipLine:setShaderVector( 2, 0.03, 0, 0, 0 )
@@ -110,7 +110,7 @@ CoD.TabletTak5_AmmoPip.__clipsPerState = {
 			f4_arg0.clipFinished( f4_arg0.Pip )
 			f4_arg0.PipLine:completeAnimation()
 			f4_arg0.PipLine:setAlpha( 0.8 )
-			f4_arg0.PipLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x92F09074FB20E6D ) )
+			f4_arg0.PipLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines" ) )
 			f4_arg0.PipLine:setShaderVector( 0, 2, 0, 0, 0 )
 			f4_arg0.PipLine:setShaderVector( 1, 1.5, 0, 0, 0 )
 			f4_arg0.PipLine:setShaderVector( 2, 0.03, 0, 0, 0 )

@@ -12,14 +12,14 @@ CoD.ScrStk_MeterPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local Fill2 = LUI.UIImage.new( 0, 0, -13, 20, 0.5, 0.5, -62, 96 )
 	Fill2:setRGB( 0, 0, 0 )
-	Fill2:setImage( RegisterImage( 0x611F9CF3D5F823 ) )
+	Fill2:setImage( RegisterImage( "uie_ui_hud_core_streak_widget_meter_empty" ) )
 	self:addElement( Fill2 )
 	self.Fill2 = Fill2
 	
 	local Fill = LUI.UIImage.new( 0, 0, -2, 10, 0.5, 0.5, -90, 90 )
 	Fill:setRGB( 0, 0, 0 )
 	Fill:setAlpha( 0 )
-	Fill:setImage( RegisterImage( 0xA1726B8A4CE14DC ) )
+	Fill:setImage( RegisterImage( "uie_t7_mp_hud_scorestreak_meterfill" ) )
 	self:addElement( Fill )
 	self.Fill = Fill
 	

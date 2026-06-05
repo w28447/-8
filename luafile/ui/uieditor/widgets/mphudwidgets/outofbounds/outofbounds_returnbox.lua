@@ -10,13 +10,13 @@ CoD.outofbounds_returnbox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local BlackBox = LUI.UIImage.new( 0, 0, 0, 1148, -0.02, -0.02, 0, 50 )
 	BlackBox:setAlpha( 0.7 )
-	BlackBox:setImage( RegisterImage( 0x53C219542F385EB ) )
+	BlackBox:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_return_text_bg" ) )
 	self:addElement( BlackBox )
 	self.BlackBox = BlackBox
 	
 	local ReturnText = LUI.UIText.new( 0.5, 0.5, -422, 422, 0, 0, 7.5, 43.5 )
 	ReturnText:setAlpha( 0.95 )
-	ReturnText:setText( Engine[0xF9F1239CFD921FE]( 0x286141CEBC1E318 ) )
+	ReturnText:setText( Engine[0xF9F1239CFD921FE]( "mpui/out_of_bounds_return_to_combat_zone" ) )
 	ReturnText:setTTF( "0arame_mono_stencil" )
 	ReturnText:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	ReturnText:setShaderVector( 0, 0.05, 0, 0, 0 )

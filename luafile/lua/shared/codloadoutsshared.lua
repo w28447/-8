@@ -4,32 +4,32 @@ local f0_local0 = {
 	MaxAllocation = 10,
 	PrimaryGunfighterWildcards = {
 		{
-			refHash = 0x4899EF258715D73
+			refHash = "bonuscard_primary_gunfighter"
 		},
 		{
-			refHash = 0x283C41F6A1E4502
+			refHash = "bonuscard_primary_gunfighter_2"
 		},
 		{
-			refHash = 0x283C51F6A1E46B5
+			refHash = "bonuscard_primary_gunfighter_3"
 		}
 	},
 	SecondaryGunfighterWildcards = {
 		{
-			refHash = 0xAD296CFA27FA607
+			refHash = "bonuscard_secondary_gunfighter"
 		},
 		{
-			refHash = 0x462CB5783A2010E
+			refHash = "bonuscard_secondary_gunfighter_2"
 		},
 		{
-			refHash = 0x462CC5783A202C1
+			refHash = "bonuscard_secondary_gunfighter_3"
 		}
 	},
 	OperatorModWildcards = {
 		primary = {
-			refHash = 0xCFB7582AD73158B
+			refHash = "bonuscard_primary_operator_mod"
 		},
 		secondary = {
-			refHash = 0x846D8E9A76A4A77
+			refHash = "bonuscard_secondary_operator_mod"
 		}
 	},
 	loadoutSlotNamesZM = {
@@ -160,21 +160,21 @@ local f0_local0 = {
 		}
 	},
 	loadoutSlotNames = {
-		[Enum.eModes[0x3723205FAE52C4A]] = f0_local0.loadoutSlotNamesZM,
-		[Enum.eModes[0x83EBA96F36BC4E5]] = f0_local0.loadoutSlotNamesMP,
-		[Enum.eModes[0x60063C67132EB69]] = f0_local0.loadoutSlotNamesCP,
-		[Enum.eModes[0xBF1DCC8138A9D39]] = f0_local0.loadoutSlotNamesMP
+		[Enum.eModes.mode_zombies] = f0_local0.loadoutSlotNamesZM,
+		[Enum.eModes.mode_multiplayer] = f0_local0.loadoutSlotNamesMP,
+		[Enum.eModes.mode_campaign] = f0_local0.loadoutSlotNamesCP,
+		[Enum.eModes.mode_warzone] = f0_local0.loadoutSlotNamesMP
 	},
 	characterCustomizationRegions = {
 		{
 			name = "palettes",
-			stat = 0xDD691088352B680,
+			stat = "palette",
 			type = Enum.CharacterItemType[0x922FE5C41D9EE8B],
-			displayName = 0x68B0BEBFBF58271
+			displayName = "heroes/outfit"
 		},
 		{
 			name = "warPaints",
-			stat = 0xFB8B65946FBF7A2,
+			stat = "war_paint",
 			type = Enum.CharacterItemType[0x8E3A65D78229DC1],
 			displayName = "heroes/war_paint",
 			requiresBreadcrumb = true,
@@ -182,49 +182,49 @@ local f0_local0 = {
 		},
 		{
 			name = "decals",
-			stat = 0xAFB68F497A0C167,
+			stat = "decals",
 			type = Enum.CharacterItemType[0x7852FCB3BFCC8D1],
-			displayName = 0x8A92677478F2E1B,
+			displayName = "heroes/decal",
 			requiresBreadcrumb = true
 		},
 		{
 			name = "arms",
 			stat = "arms",
 			type = Enum.CharacterItemType[0x41B42F0A58AC50F],
-			displayName = 0xB29867907F22C9
+			displayName = "heroes/arms"
 		},
 		{
 			name = "heads",
 			stat = "head",
 			type = Enum.CharacterItemType[0x7AD40A4111A72FE],
-			displayName = 0xBB2FE19D4F795D8
+			displayName = "heroes/head"
 		},
 		{
 			name = "headgears",
-			stat = 0x215F12389F75B44,
+			stat = "headgear",
 			type = Enum.CharacterItemType[0xFF8573E011622F4],
-			displayName = 0x4234380B3E418AE
+			displayName = "heroes/head_gear"
 		},
 		{
 			name = "legs",
-			stat = 0x4B477ADA208116C,
+			stat = "legs",
 			type = Enum.CharacterItemType[0x83CBB806B732B11],
 			displayName = "heroes/legs"
 		},
 		{
 			name = "torsos",
-			stat = 0x3AAD17D73451D24,
+			stat = "torso",
 			type = Enum.CharacterItemType[0x9DDCEC39BA98B97],
-			displayName = 0x237C9513A44534D
+			displayName = "heroes/torso"
 		}
 	},
 	ArenaHiddenPositionRoles = {
-		[0xD9018EE4053E35C] = true,
-		[0x512703E2C793E0D] = true,
-		[0x78D35E03A52B01A] = true,
-		[0xA011DFFEC0DD650] = true,
-		[0xE52518EC3FFD40D] = true,
-		["prt_mp_reaper"] = true
+		prt_mp_outrider = true,
+		prt_mp_engineer = true,
+		prt_mp_trapper = true,
+		prt_mp_spectre = true,
+		prt_mp_swatpolice = true,
+		prt_mp_reaper = true
 	},
 	CreateList = function ( f1_arg0, f1_arg1, f1_arg2 )
 		local f1_local0 = {}
@@ -242,13 +242,13 @@ local f0_local0 = {
 		return f0_local0.UnlockableItemsTable
 	end,
 	SortUnlockableItemsBySortIndex = function ( f3_arg0, f3_arg1 )
-		if f3_arg1 == Enum.eModes[0x3723205FAE52C4A] then
+		if f3_arg1 == Enum.eModes.mode_zombies then
 			table.sort( f3_arg0, function ( f4_arg0, f4_arg1 )
 				return f4_arg0[0xB1CB62B2AF54BFE] < f4_arg1[0xB1CB62B2AF54BFE]
 			end )
 		else
 			table.sort( f3_arg0, function ( f5_arg0, f5_arg1 )
-				return f5_arg0["sortindex"] < f5_arg1["sortindex"]
+				return f5_arg0.sortindex < f5_arg1.sortindex
 			end )
 		end
 		return f3_arg0
@@ -301,7 +301,7 @@ local f0_local0 = {
 	end,
 	GetSpecialIssueEquipmentItemIndex = function ()
 		if f0_local0.SpecialIssueItemIndex == nil or f0_local0.SpecialIssueItemIndex == CoDShared.EmptyItemIndex then
-			f0_local0.SpecialIssueItemIndex = Engine[0xD97229B24C685D5]( CoDShared.DefaultSpecialistEquipment, Enum.eModes[0x83EBA96F36BC4E5] )
+			f0_local0.SpecialIssueItemIndex = Engine[0xD97229B24C685D5]( CoDShared.DefaultSpecialistEquipment, Enum.eModes.mode_multiplayer )
 		end
 		return f0_local0.SpecialIssueItemIndex
 	end,
@@ -345,9 +345,9 @@ local f0_local0 = {
 	end,
 	[0x526F3E053898F12] = function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
 		local f13_local0 = {
-			[0x7D681250287807D] = 3,
-			[0x927FEA821FFA36C] = 4,
-			[0xB03ADC532F77517] = 5
+			bonuscard_perk_1_greed = 3,
+			bonuscard_perk_2_greed = 4,
+			bonuscard_perk_3_greed = 5
 		}
 		local f13_local1 = function ( f14_arg0 )
 			local f14_local0 = Engine[0xD97229B24C685D5]( f14_arg0 )
@@ -371,7 +371,7 @@ local f0_local0 = {
 	[0x9CA7AE60A79C317] = function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
 		local f15_local0 = {
 			{
-				bonuscardRefHash = 0xE8E25CA6D4FFCAA,
+				bonuscardRefHash = "bonuscard_perk_1_gluttony",
 				slotName = "talent1",
 				slotsToValidate = {
 					1,
@@ -379,7 +379,7 @@ local f0_local0 = {
 				}
 			},
 			{
-				bonuscardRefHash = 0xE2D46C69C58DED1,
+				bonuscardRefHash = "bonuscard_perk_2_gluttony",
 				slotName = "talent2",
 				slotsToValidate = {
 					0,
@@ -387,7 +387,7 @@ local f0_local0 = {
 				}
 			},
 			{
-				bonuscardRefHash = 0x8EC14572D948374,
+				bonuscardRefHash = "bonuscard_perk_3_gluttony",
 				slotName = "talent3",
 				slotsToValidate = {
 					0,
@@ -497,12 +497,12 @@ local f0_local0 = {
 	end,
 	[0x59EDDE47AB63CA1] = function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
 		for f23_local18, f23_local19 in ipairs( {
-			0xF31137FF783E939,
-			0x7FBC18FBDAA00D1
+			"primary",
+			"secondary"
 		} ) do
 			local f23_local20 = f23_arg1[f23_local19]
-			local f23_local21 = f23_local20[0x3460F2DA135912A]:get()
-			local f23_local22 = f23_local20[0xD7F884DAFFAA30F]:get()
+			local f23_local21 = f23_local20.itemindex:get()
+			local f23_local22 = f23_local20.camoindex:get()
 			if f23_local22 ~= 0 then
 				local f23_local3 = CoD.WeaponOptionsUtility.GetCamoWeaponOptionIndexFromCamoOptionsIndex( f23_local22 )
 				local f23_local4 = Engine[0xF1FD722970FDBA3]( f23_arg0, f23_local21, f23_local3, f23_arg2 )
@@ -526,7 +526,7 @@ local f0_local0 = {
 								} )
 								f23_local6 = f23_local13.isLoot and f23_local13 and f23_local13.owned ~= true
 								local f23_local14 = Engine.TableLookup( CoD.attachmentTable, Enum.attachmentTableColumn_e[0x9A2FFE632B9ED93], Enum.attachmentTableColumn_e[0x419575E672F6FA2], f23_local11 )
-								if f23_local14 and f23_local14 ~= 0x0 and not IsBooleanDvarSet( "ui_allowReactiveOnAnyWeapon" ) then
+								if f23_local14 and f23_local14 ~= "" and not IsBooleanDvarSet( "ui_allowReactiveOnAnyWeapon" ) then
 									local f23_local15 = Engine[0xB98952F69D937F9]( f23_local21, Enum[0x6EB546760F890D2][0x569E84652131CD7], f23_arg2 )
 									local f23_local16 = CoD.WeaponOptionsUtility.IsGoldCamoLockedForWeapon( f23_arg0, f23_local21, f23_arg2 )
 									local f23_local17 = f23_local15
@@ -543,7 +543,7 @@ local f0_local0 = {
 				end
 				if not (not f23_local4 or f23_local5) or f23_local6 or f23_local7 then
 					if f23_arg3 then
-						f23_local20[0xD7F884DAFFAA30F]:set( 0 )
+						f23_local20.camoindex:set( 0 )
 					end
 					CoDShared.ReportUser( f23_arg0, Engine.GetXUID64( f23_arg0 ), "cheater_invalidcamo", 1, true )
 				end
@@ -552,13 +552,13 @@ local f0_local0 = {
 	end,
 	[0x1040083716E3993] = function ( f24_arg0 )
 		local f24_local0 = {}
-		local f24_local1 = Engine[0xA7E3CD65E63086F]( 0xF2DC7A2FE7EEDC5 )
+		local f24_local1 = Engine[0xA7E3CD65E63086F]( "weaponcharm_list" )
 		if f24_local1 then
 			for f24_local7, f24_local8 in ipairs( f24_local1 ) do
 				local f24_local5 = false
 				local f24_local6 = false
-				if f24_local8["lootid"] then
-					f24_local5, f24_local6 = CoDShared.IsLootItemOwnedByNameSimple( f24_arg0, f24_local8["lootid"] )
+				if f24_local8.lootid then
+					f24_local5, f24_local6 = CoDShared.IsLootItemOwnedByNameSimple( f24_arg0, f24_local8.lootid )
 				end
 				if (not f24_local5 or f24_local6) and (not f24_local8[0x562938AF86028A0] or Engine.HasEntitlement( f24_arg0, f24_local8[0x562938AF86028A0] )) then
 					table.insert( f24_local0, f24_local7 - 1 )
@@ -574,8 +574,8 @@ local f0_local0 = {
 			for f25_local7, f25_local8 in ipairs( f25_local1 ) do
 				local f25_local5 = false
 				local f25_local6 = false
-				if f25_local8["lootid"] then
-					f25_local5, f25_local6 = CoDShared.IsLootItemOwnedByNameSimple( f25_arg0, f25_local8["lootid"] )
+				if f25_local8.lootid then
+					f25_local5, f25_local6 = CoDShared.IsLootItemOwnedByNameSimple( f25_arg0, f25_local8.lootid )
 				end
 				if (not f25_local5 or f25_local6) and (not f25_local8[0x562938AF86028A0] or Engine.HasEntitlement( f25_arg0, f25_local8[0x562938AF86028A0] )) then
 					table.insert( f25_local0, f25_local7 - 1 )
@@ -585,7 +585,7 @@ local f0_local0 = {
 		return f25_local0
 	end,
 	[0x4F02E81CF4CC1BB] = function ( f26_arg0, f26_arg1 )
-		local f26_local0 = Enum.eModes[0x83EBA96F36BC4E5]
+		local f26_local0 = Enum.eModes.mode_multiplayer
 		local f26_local1 = Dvar[0xA3A4F1AC02F1439]:get()
 		if f26_local1 then
 			f26_local1 = tonumber( f26_local1 )
@@ -608,7 +608,7 @@ local f0_local0 = {
 			local f26_local11 = Engine[0xED9C4D9D6233895]( f26_arg0, f26_local8 - 1, f26_local0 )
 			if f26_local11 and f26_local1 and f26_local1 > 0 then
 				local f26_local12 = {}
-				for f26_local16, f26_local17 in DDLUtils.ipairs( f26_local11[0x5FB380CEA24A88B] ) do
+				for f26_local16, f26_local17 in DDLUtils.ipairs( f26_local11.talent ) do
 					local f26_local18 = f26_local17:get()
 					if f26_local18 ~= 0 then
 						if f26_local12[f26_local18] then
@@ -621,11 +621,11 @@ local f0_local0 = {
 					end
 				end
 				for f26_local16, f26_local17 in ipairs( {
-					0xF31137FF783E939,
-					0x7FBC18FBDAA00D1
+					"primary",
+					"secondary"
 				} ) do
 					local f26_local18 = {}
-					for f26_local20, f26_local21 in DDLUtils.ipairs( f26_local11[f26_local17][0x73F89AC8D3F248] ) do
+					for f26_local20, f26_local21 in DDLUtils.ipairs( f26_local11[f26_local17].attachment ) do
 						if f26_local20 > 0 then
 							local f26_local19 = f26_local21:get()
 							if f26_local19 ~= 0 then
@@ -639,11 +639,11 @@ local f0_local0 = {
 							end
 						end
 					end
-					if f26_local11[f26_local17]["charmindex"] and f26_local11[f26_local17]["charmindex"]:get() ~= 0 and not f26_local6( f26_local11[f26_local17]["charmindex"]:get(), f26_local4 ) then
-						f26_local11[f26_local17]["charmindex"]:set( 0 )
+					if f26_local11[f26_local17].charmindex and f26_local11[f26_local17].charmindex:get() ~= 0 and not f26_local6( f26_local11[f26_local17].charmindex:get(), f26_local4 ) then
+						f26_local11[f26_local17].charmindex:set( 0 )
 					end
-					if f26_local11[f26_local17][0xE86D585FF221CC1] and f26_local11[f26_local17][0xE86D585FF221CC1]:get() ~= 0 and not f26_local6( f26_local11[f26_local17][0xE86D585FF221CC1]:get(), f26_local5 ) then
-						f26_local11[f26_local17][0xE86D585FF221CC1]:set( 0 )
+					if f26_local11[f26_local17].deathfxindex and f26_local11[f26_local17].deathfxindex:get() ~= 0 and not f26_local6( f26_local11[f26_local17].deathfxindex:get(), f26_local5 ) then
+						f26_local11[f26_local17].deathfxindex:set( 0 )
 					end
 				end
 				f26_local13 = f26_local1 ~= 3
@@ -671,7 +671,7 @@ local f0_local0 = {
 		end
 		local f28_local1 = f28_local0.cacLoadouts
 		if f28_local1 then
-			local f28_local2 = Enum.eModes[0x83EBA96F36BC4E5]
+			local f28_local2 = Enum.eModes.mode_multiplayer
 			local f28_local3 = Engine[0xE00B2F29271C60B]( f28_arg2 )
 			if not f28_local3 then
 				return 
@@ -689,7 +689,7 @@ local f0_local0 = {
 		end
 	end,
 	CopyClassLoadout = function ( f29_arg0, f29_arg1, f29_arg2 )
-		if f29_arg2 ~= Enum.eModes[0x83EBA96F36BC4E5] then
+		if f29_arg2 ~= Enum.eModes.mode_multiplayer then
 			return 
 		end
 		local f29_local0 = f29_arg0.primary

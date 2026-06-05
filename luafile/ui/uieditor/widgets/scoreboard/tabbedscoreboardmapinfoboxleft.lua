@@ -16,13 +16,13 @@ CoD.TabbedScoreboardMapInfoboxLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local InfoLeftBGBlur = LUI.UIImage.new( 0, 0, 0.5, 142.5, 0, 0, 11.5, 129.5 )
 	InfoLeftBGBlur:setAlpha( 0 )
-	InfoLeftBGBlur:setImage( RegisterImage( 0x226F117FFC94E7F ) )
+	InfoLeftBGBlur:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_info_bg" ) )
 	self:addElement( InfoLeftBGBlur )
 	self.InfoLeftBGBlur = InfoLeftBGBlur
 	
 	local InfoLeftBG = LUI.UIImage.new( 0, 0, -1, 141, 0, 0, 128, 128 )
 	InfoLeftBG:setAlpha( 0 )
-	InfoLeftBG:setImage( RegisterImage( 0x226F117FFC94E7F ) )
+	InfoLeftBG:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_info_bg" ) )
 	self:addElement( InfoLeftBG )
 	self.InfoLeftBG = InfoLeftBG
 	
@@ -46,7 +46,7 @@ CoD.TabbedScoreboardMapInfoboxLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	self.InfoLeftBarTop = InfoLeftBarTop
 	
 	local TerminalNumber = LUI.UIImage.new( 0, 0, 100, 138, 0, 0, 105, 121 )
-	TerminalNumber:setImage( RegisterImage( 0xA97042C69BD9D14 ) )
+	TerminalNumber:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_info_terminal" ) )
 	self:addElement( TerminalNumber )
 	self.TerminalNumber = TerminalNumber
 	

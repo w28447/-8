@@ -53,7 +53,7 @@ CoD.StartMenu_Identity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 			end
 		}
 	} )
-	EmblemEditor.ButtonInternal.imageContainer.ImageContainer:setImage( RegisterImage( 0x50C9EBA50F5E0B ) )
+	EmblemEditor.ButtonInternal.imageContainer.ImageContainer:setImage( RegisterImage( "uie_ui_menu_start_menu_emblem" ) )
 	EmblemEditor.ButtonInternal.Title:setText( "" )
 	EmblemEditor.ButtonInternal.Subtitle.SubtitleText:setText( LocalizeHash( "menu/emblem_editor_caps" ) )
 	local Emblems = EmblemEditor
@@ -78,23 +78,23 @@ CoD.StartMenu_Identity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f9_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( EmblemEditor, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+	f1_arg0:AddButtonCallbackFunction( EmblemEditor, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsGameTrial() then
-			OpenPopup( self, "WZTrialUpsellPopup", f10_arg2, nil )
+			OpenPopup( self, "WZTrialUpsellPopup", controller, nil )
 			return true
-		elseif IsLive() and not IsUserContentRestricted( f10_arg2 ) then
-			OpenEmblemSelect( self, f10_arg0, f10_arg2, Enum.StorageFileType[0x791C91FD2327632], f10_arg1, "true" )
+		elseif IsLive() and not IsUserContentRestricted( controller ) then
+			OpenEmblemSelect( self, element, controller, Enum.StorageFileType[0x791C91FD2327632], menu, "true" )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
+	end, function ( element, menu, controller )
 		if IsGameTrial() then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif IsLive() and not IsUserContentRestricted( f11_arg2 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif IsLive() and not IsUserContentRestricted( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -136,7 +136,7 @@ CoD.StartMenu_Identity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 			end
 		}
 	} )
-	Paintshop.ButtonInternal.imageContainer.ImageContainer:setImage( RegisterImage( 0x60BC44EA9E8F0EF ) )
+	Paintshop.ButtonInternal.imageContainer.ImageContainer:setImage( RegisterImage( "uie_ui_menu_start_menu_paintshop" ) )
 	Paintshop.ButtonInternal.Title:setText( "" )
 	Paintshop.ButtonInternal.Subtitle.SubtitleText:setText( LocalizeHash( "menu/paintshop_caps" ) )
 	CallingCards = Paintshop
@@ -161,23 +161,23 @@ CoD.StartMenu_Identity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f19_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Paintshop, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
+	f1_arg0:AddButtonCallbackFunction( Paintshop, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsGameTrial() then
-			OpenPopup( self, "WZTrialUpsellPopup", f20_arg2, nil )
+			OpenPopup( self, "WZTrialUpsellPopup", controller, nil )
 			return true
-		elseif IsLive() and not IsUserContentRestricted( f20_arg2 ) and IsInDefaultState( f20_arg0 ) then
-			CoD.CraftUtility.OpenPaintjobWeaponSelection( self, f20_arg0, f20_arg2, "", f20_arg1 )
+		elseif IsLive() and not IsUserContentRestricted( controller ) and IsInDefaultState( element ) then
+			CoD.CraftUtility.OpenPaintjobWeaponSelection( self, element, controller, "", menu )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f21_arg0, f21_arg1, f21_arg2 )
+	end, function ( element, menu, controller )
 		if IsGameTrial() then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif IsLive() and not IsUserContentRestricted( f21_arg2 ) and IsInDefaultState( f21_arg0 ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif IsLive() and not IsUserContentRestricted( controller ) and IsInDefaultState( element ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -196,7 +196,7 @@ CoD.StartMenu_Identity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		}
 	} )
 	Emblems.ButtonInternal.Title:setText( "" )
-	Emblems.ButtonInternal.Subtitle.SubtitleText:setText( LocalizeHash( 0x4335B0D906D9B56 ) )
+	Emblems.ButtonInternal.Subtitle.SubtitleText:setText( LocalizeHash( "menu/emblems_caps" ) )
 	Emblems:subscribeToGlobalModel( f1_arg1, "PerController", "identityBadge.xuid", function ( model )
 		local f23_local0 = model:get()
 		if f23_local0 ~= nil then
@@ -225,18 +225,18 @@ CoD.StartMenu_Identity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f26_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Emblems, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3 )
-		if IsLive() and not IsUserContentRestricted( f27_arg2 ) then
-			OpenEmblemSelect( self, f27_arg0, f27_arg2, Enum.StorageFileType[0x791C91FD2327632], f27_arg1, "false" )
+	f1_arg0:AddButtonCallbackFunction( Emblems, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLive() and not IsUserContentRestricted( controller ) then
+			OpenEmblemSelect( self, element, controller, Enum.StorageFileType[0x791C91FD2327632], menu, "false" )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
-			OpenEmblemSelect( self, f27_arg0, f27_arg2, Enum.StorageFileType[0xB909AC87BFB6D6C], f27_arg1, "false" )
+			OpenEmblemSelect( self, element, controller, Enum.StorageFileType[0xB909AC87BFB6D6C], menu, "false" )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		end
-	end, function ( f28_arg0, f28_arg1, f28_arg2 )
-		CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( Emblems )
@@ -294,7 +294,7 @@ CoD.StartMenu_Identity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		} )
 	end, false )
 	CallingCards.Backing.Title:setText( "" )
-	CallingCards.Backing.Subtitle.SubtitleText:setText( LocalizeHash( 0xED22CCD3920E18B ) )
+	CallingCards.Backing.Subtitle.SubtitleText:setText( LocalizeHash( "menu/calling_cards_caps" ) )
 	CallingCards:registerEventHandler( "gain_focus", function ( element, event )
 		local f34_local0 = nil
 		if element.gainFocus then
@@ -305,17 +305,17 @@ CoD.StartMenu_Identity.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f34_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( CallingCards, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f35_arg0, f35_arg1, f35_arg2, f35_arg3 )
-		if IsInDefaultState( f35_arg0 ) then
-			OpenCallingCards( self, f35_arg0, f35_arg2, "", f35_arg1 )
+	f1_arg0:AddButtonCallbackFunction( CallingCards, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsInDefaultState( element ) then
+			OpenCallingCards( self, element, controller, "", menu )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f36_arg0, f36_arg1, f36_arg2 )
-		if IsInDefaultState( f36_arg0 ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsInDefaultState( element ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

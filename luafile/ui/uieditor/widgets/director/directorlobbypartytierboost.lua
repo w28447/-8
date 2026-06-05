@@ -18,7 +18,7 @@ CoD.DirectorLobbyPartyTierBoost.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.Backing = Backing
 	
 	local TierSkipIcon = LUI.UIImage.new( 0, 0, -29, 31, 0.5, 0.5, -30, 30 )
-	TierSkipIcon:setImage( RegisterImage( 0x6EC674D21C5C218 ) )
+	TierSkipIcon:setImage( RegisterImage( "ui_icon_2xp_blackmarket" ) )
 	self:addElement( TierSkipIcon )
 	self.TierSkipIcon = TierSkipIcon
 	

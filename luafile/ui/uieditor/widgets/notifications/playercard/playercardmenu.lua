@@ -112,8 +112,8 @@ CoD.PlayerCardMenu.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	TeamColor = LUI.UIImage.new( 0, 0, 46, 142, 0, 0, 3, 73 )
 	TeamColor:setRGB( ColorSet.FriendlyBlue.r, ColorSet.FriendlyBlue.g, ColorSet.FriendlyBlue.b )
 	TeamColor:setAlpha( 0 )
-	TeamColor:setImage( RegisterImage( 0x2D2C20F3D0B1D5D ) )
-	TeamColor:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
+	TeamColor:setImage( RegisterImage( "uie_img_t7_hud_widget_playercard_playerbackingelements" ) )
+	TeamColor:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_blend" ) )
 	self:addElement( TeamColor )
 	self.TeamColor = TeamColor
 	
@@ -183,14 +183,14 @@ CoD.PlayerCardMenu.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local IdentitySeperatorTop = LUI.UIImage.new( 0, 0, 133.5, 143.5, 0, 0, -3, 7 )
 	IdentitySeperatorTop:setAlpha( 0.25 )
-	IdentitySeperatorTop:setImage( RegisterImage( 0xCF8AB3892E52036 ) )
+	IdentitySeperatorTop:setImage( RegisterImage( "uie_ui_hud_spawnselect_identity_separator" ) )
 	self:addElement( IdentitySeperatorTop )
 	self.IdentitySeperatorTop = IdentitySeperatorTop
 	
 	local IdentitySeperatorBottom = LUI.UIImage.new( 0, 0, 132.5, 142.5, 0, 0, 75.5, 85.5 )
 	IdentitySeperatorBottom:setAlpha( 0.25 )
 	IdentitySeperatorBottom:setZRot( 180 )
-	IdentitySeperatorBottom:setImage( RegisterImage( 0xCF8AB3892E52036 ) )
+	IdentitySeperatorBottom:setImage( RegisterImage( "uie_ui_hud_spawnselect_identity_separator" ) )
 	self:addElement( IdentitySeperatorBottom )
 	self.IdentitySeperatorBottom = IdentitySeperatorBottom
 	

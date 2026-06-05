@@ -18,7 +18,7 @@ CoD.DirectorFeaturedAccentCarousel.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local LB = CoD.BumperButtonWithKeyMouseText.new( f1_arg0, f1_arg1, 0, 0, -161, 39, 0, 0, 0, 34 )
 	LB:setRGB( 0.66, 0.63, 0.52 )
 	LB:setAlpha( 0.45 )
-	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBDCD5292604F434 ) )
+	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/lb" ) )
 	LB.GamepadPrompt:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	self:addElement( LB )
 	self.LB = LB
@@ -63,11 +63,11 @@ CoD.DirectorFeaturedAccentCarousel.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( LeftArrow, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		CoD.GridAndListUtility.NavigateGridItem( self.PipsGrid, f6_arg2, false )
+	f1_arg0:AddButtonCallbackFunction( LeftArrow, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		CoD.GridAndListUtility.NavigateGridItem( self.PipsGrid, controller, false )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 		return false
 	end, false )
 	self:addElement( LeftArrow )
@@ -128,11 +128,11 @@ CoD.DirectorFeaturedAccentCarousel.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f12_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( RightArrow, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		CoD.GridAndListUtility.NavigateGridItem( self.PipsGrid, f13_arg2, true )
+	f1_arg0:AddButtonCallbackFunction( RightArrow, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		CoD.GridAndListUtility.NavigateGridItem( self.PipsGrid, controller, true )
 		return true
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 		return false
 	end, false )
 	self:addElement( RightArrow )
@@ -141,7 +141,7 @@ CoD.DirectorFeaturedAccentCarousel.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	RB = CoD.BumperButtonWithKeyMouseText.new( f1_arg0, f1_arg1, 0, 0, 542, 742, 0, 0, 0, 34 )
 	RB:setRGB( 0.66, 0.63, 0.52 )
 	RB:setAlpha( 0.45 )
-	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBFED5292621DA9A ) )
+	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/rb" ) )
 	self:addElement( RB )
 	self.RB = RB
 	

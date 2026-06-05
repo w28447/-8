@@ -61,110 +61,110 @@ CoD.MOTD_BannerContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f8_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( MOTDBanners, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		if CoD.ModelUtility.IsSelfModelPathValueEqualTo( f9_arg0, f9_arg2, "action", "store" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.MOTDUtility.MOTD_AcceptAction( self, f9_arg2, f9_arg1, self.MOTDBanners )
-			ResetThumbnailViewer( f9_arg2 )
-			ClearMenuSavedState( f9_arg1 )
+	f1_arg0:AddButtonCallbackFunction( MOTDBanners, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "store" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.MOTDUtility.MOTD_AcceptAction( self, controller, menu, self.MOTDBanners )
+			ResetThumbnailViewer( controller )
+			ClearMenuSavedState( menu )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f9_arg0, f9_arg2, "action", "registration" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.MOTDUtility.MOTD_AcceptAction( self, f9_arg2, f9_arg1, self.MOTDBanners )
-			ResetThumbnailViewer( f9_arg2 )
-			ClearMenuSavedState( f9_arg1 )
+		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "registration" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.MOTDUtility.MOTD_AcceptAction( self, controller, menu, self.MOTDBanners )
+			ResetThumbnailViewer( controller )
+			ClearMenuSavedState( menu )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f9_arg0, f9_arg2, "action", "depot" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.MOTDUtility.MOTD_AcceptAction( self, f9_arg2, f9_arg1, self.MOTDBanners )
-			ResetThumbnailViewer( f9_arg2 )
-			ClearMenuSavedState( f9_arg1 )
+		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "depot" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.MOTDUtility.MOTD_AcceptAction( self, controller, menu, self.MOTDBanners )
+			ResetThumbnailViewer( controller )
+			ClearMenuSavedState( menu )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f9_arg0, f9_arg2, "action", "shop" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.MOTDUtility.MOTD_AcceptAction( self, f9_arg2, f9_arg1, self.MOTDBanners )
-			ResetThumbnailViewer( f9_arg2 )
-			ClearMenuSavedState( f9_arg1 )
+		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "shop" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.MOTDUtility.MOTD_AcceptAction( self, controller, menu, self.MOTDBanners )
+			ResetThumbnailViewer( controller )
+			ClearMenuSavedState( menu )
 			return true
-		elseif CoD.BaseUtility.IsDvarEnabled( "motd_inPlaceVODEnabled" ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( f9_arg0, f9_arg2, "action", "vod" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) and CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f9_arg2, "MOTDVoDPreview", "frame", "CoD.VoDPreviewWidgetVideo" ) then
+		elseif CoD.BaseUtility.IsDvarEnabled( "motd_inPlaceVODEnabled" ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "vod" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) and CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "MOTDVoDPreview", "frame", "CoD.VoDPreviewWidgetVideo" ) then
 			return true
-		elseif CoD.BaseUtility.IsDvarEnabled( "motd_inPlaceVODEnabled" ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( f9_arg0, f9_arg2, "action", "vod" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.ModelUtility.SetGlobalDatasourceModelValue( f9_arg2, "MOTDVoDPreview", "frame", "CoD.VoDPreviewWidgetVideo" )
-			CoD.MOTDUtility.MOTD_MarkAsClicked( self, f9_arg2, self.MOTDBanners )
+		elseif CoD.BaseUtility.IsDvarEnabled( "motd_inPlaceVODEnabled" ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "vod" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.ModelUtility.SetGlobalDatasourceModelValue( controller, "MOTDVoDPreview", "frame", "CoD.VoDPreviewWidgetVideo" )
+			CoD.MOTDUtility.MOTD_MarkAsClicked( self, controller, self.MOTDBanners )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f9_arg0, f9_arg2, "action", "bj_reserves" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.MOTDUtility.MOTD_AcceptAction( self, f9_arg2, f9_arg1, self.MOTDBanners )
-			ResetThumbnailViewer( f9_arg2 )
-			ClearMenuSavedState( f9_arg1 )
+		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "bj_reserves" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.MOTDUtility.MOTD_AcceptAction( self, controller, menu, self.MOTDBanners )
+			ResetThumbnailViewer( controller )
+			ClearMenuSavedState( menu )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f9_arg0, f9_arg2, "action", "crate_purchase" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.MOTDUtility.MOTD_AcceptAction( self, f9_arg2, f9_arg1, self.MOTDBanners )
-			ResetThumbnailViewer( f9_arg2 )
-			ClearMenuSavedState( f9_arg1 )
+		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "crate_purchase" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.MOTDUtility.MOTD_AcceptAction( self, controller, menu, self.MOTDBanners )
+			ResetThumbnailViewer( controller )
+			ClearMenuSavedState( menu )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f9_arg0, f9_arg2, "action", "inventory" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.MOTDUtility.MOTD_AcceptAction( self, f9_arg2, f9_arg1, self.MOTDBanners )
-			ResetThumbnailViewer( f9_arg2 )
-			ClearMenuSavedState( f9_arg1 )
+		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "inventory" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.MOTDUtility.MOTD_AcceptAction( self, controller, menu, self.MOTDBanners )
+			ResetThumbnailViewer( controller )
+			ClearMenuSavedState( menu )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f9_arg0, f9_arg2, "action", "crate_bundle" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.MOTDUtility.MOTD_AcceptAction( self, f9_arg2, f9_arg1, self.MOTDBanners )
-			ResetThumbnailViewer( f9_arg2 )
-			ClearMenuSavedState( f9_arg1 )
+		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "crate_bundle" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.MOTDUtility.MOTD_AcceptAction( self, controller, menu, self.MOTDBanners )
+			ResetThumbnailViewer( controller )
+			ClearMenuSavedState( menu )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f9_arg0, f9_arg2, "action", "challenge_status" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.MOTDUtility.MOTD_AcceptAction( self, f9_arg2, f9_arg1, self.MOTDBanners )
-			ResetThumbnailViewer( f9_arg2 )
-			ClearMenuSavedState( f9_arg1 )
+		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "challenge_status" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.MOTDUtility.MOTD_AcceptAction( self, controller, menu, self.MOTDBanners )
+			ResetThumbnailViewer( controller )
+			ClearMenuSavedState( menu )
 			return true
-		elseif CoD.MOTDUtility.MOTD_IsContractAction( self, f9_arg2, f9_arg0 ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.MOTDUtility.MOTD_AcceptAction( self, f9_arg2, f9_arg1, self.MOTDBanners )
-			ResetThumbnailViewer( f9_arg2 )
-			ClearMenuSavedState( f9_arg1 )
+		elseif CoD.MOTDUtility.MOTD_IsContractAction( self, controller, element ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.MOTDUtility.MOTD_AcceptAction( self, controller, menu, self.MOTDBanners )
+			ResetThumbnailViewer( controller )
+			ClearMenuSavedState( menu )
 			return true
 		elseif CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.MOTDUtility.MOTD_AcceptAction( self, f9_arg2, f9_arg1, self.MOTDBanners )
-			ResetThumbnailViewer( f9_arg2 )
-			ClearMenuSavedState( f9_arg1 )
+			CoD.MOTDUtility.MOTD_AcceptAction( self, controller, menu, self.MOTDBanners )
+			ResetThumbnailViewer( controller )
+			ClearMenuSavedState( menu )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		if CoD.ModelUtility.IsSelfModelPathValueEqualTo( f10_arg0, f10_arg2, "action", "store" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x191CDDA584B4408, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "store" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/store_caps", nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f10_arg0, f10_arg2, "action", "registration" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x977A022B8323362, nil, nil )
+		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "registration" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/register_caps", nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f10_arg0, f10_arg2, "action", "depot" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/black_market", nil, nil )
+		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "depot" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/black_market", nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f10_arg0, f10_arg2, "action", "shop" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x90379DA9EEC8DB9, nil, nil )
+		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "shop" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/item_shop", nil, nil )
 			return true
-		elseif CoD.BaseUtility.IsDvarEnabled( "motd_inPlaceVODEnabled" ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( f10_arg0, f10_arg2, "action", "vod" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) and CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f10_arg2, "MOTDVoDPreview", "frame", "CoD.VoDPreviewWidgetVideo" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+		elseif CoD.BaseUtility.IsDvarEnabled( "motd_inPlaceVODEnabled" ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "vod" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) and CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "MOTDVoDPreview", "frame", "CoD.VoDPreviewWidgetVideo" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 			return false
-		elseif CoD.BaseUtility.IsDvarEnabled( "motd_inPlaceVODEnabled" ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( f10_arg0, f10_arg2, "action", "vod" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/play", nil, nil )
+		elseif CoD.BaseUtility.IsDvarEnabled( "motd_inPlaceVODEnabled" ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "vod" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/play", nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f10_arg0, f10_arg2, "action", "bj_reserves" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x655207CC013B5BD, nil, nil )
+		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "bj_reserves" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0x655207CC013B5BD, nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f10_arg0, f10_arg2, "action", "crate_purchase" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xAF6650B811A502B, nil, nil )
+		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "crate_purchase" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0xAF6650B811A502B, nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f10_arg0, f10_arg2, "action", "inventory" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xFF19F036B1F8248, nil, nil )
+		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "inventory" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/motd_inventory", nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f10_arg0, f10_arg2, "action", "crate_bundle" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xE1FEFD9287CA008, nil, nil )
+		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "crate_bundle" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0xE1FEFD9287CA008, nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f10_arg0, f10_arg2, "action", "challenge_status" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x33A50A66558D623, nil, nil )
+		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "action", "challenge_status" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/community_contract", nil, nil )
 			return true
-		elseif CoD.MOTDUtility.MOTD_IsContractAction( self, f10_arg2, f10_arg0 ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/motd_contracts", nil, nil )
+		elseif CoD.MOTDUtility.MOTD_IsContractAction( self, controller, element ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/motd_contracts", nil, nil )
 			return true
 		elseif CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "MOTDBanners" ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xAC3B80C833B60E1, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select_caps", nil, nil )
 			return true
 		else
 			return false
@@ -173,13 +173,13 @@ CoD.MOTD_BannerContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self:addElement( MOTDBanners )
 	self.MOTDBanners = MOTDBanners
 	
-	self:registerEventHandler( "input_source_changed", function ( element, event )
+	self:registerEventHandler( "input_source_changed", function ( self, event )
 		local f11_local0 = nil
 		if IsPC() then
 			CoD.GridAndListUtility.SetListActiveOnFocusPCBehavior( self.MOTDBanners, f1_arg1 )
 		end
 		if not f11_local0 then
-			f11_local0 = element:dispatchEventToChildren( event )
+			f11_local0 = self:dispatchEventToChildren( event )
 		end
 		return f11_local0
 	end )

@@ -9,7 +9,7 @@ CoD.StartMenu_Identity_Subtitle_BG.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Image = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	Image:setImage( RegisterImage( 0x7CDDC8A6B545B3E ) )
+	Image:setImage( RegisterImage( "uie_t7_menu_frontend_listheaderpanelfull" ) )
 	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Image:setShaderVector( 0, 0, 0, 0, 0 )
 	Image:setupNineSliceShader( 24, 6 )

@@ -236,7 +236,7 @@ CoD.Hud_ZM_RushContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	end, false )
 	HUDZMRushPointAward:subscribeToGlobalModel( f1_arg1, "PerController", "scriptNotify", function ( model )
 		local f21_local0 = HUDZMRushPointAward
-		if CoD.HUDUtility.IsAnyGameType( f1_arg1, "zstandard" ) and CoD.ModelUtility.IsParamModelEqualToHashString( model, 0xD01BE5B9CC9CC58 ) then
+		if CoD.HUDUtility.IsAnyGameType( f1_arg1, "zstandard" ) and CoD.ModelUtility.IsParamModelEqualToHashString( model, "bonus_points_player_grabbed" ) then
 			CoD.ZombieUtility.SetZombiePointPickupNotificationAmount( f21_local0, model )
 			PlayClipOnElement( self, {
 				elementName = "HUDZMRushPointAward",

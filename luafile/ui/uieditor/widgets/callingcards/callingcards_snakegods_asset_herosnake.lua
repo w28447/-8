@@ -11,7 +11,7 @@ CoD.callingcards_snakegods_asset_herosnake.new = function ( f1_arg0, f1_arg1, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local hero = LUI.UIImage.new( 0, 0, 0, 472, 0, 0, 0, 272 )
-	hero:setImage( RegisterImage( 0x3E020FF4F03F3D9 ) )
+	hero:setImage( RegisterImage( "uie_ui_menu_callingcards_snake_gods_hero" ) )
 	self:addElement( hero )
 	self.hero = hero
 	

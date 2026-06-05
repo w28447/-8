@@ -26,7 +26,7 @@ LUI.createMenu.Leaderboard_Main = function ( f1_arg0, f1_arg1 )
 	self.Background = Background
 	
 	local GenericMenuFrame = CoD.GenericMenuFrame.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	GenericMenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0xFE3665244ECF33B ) )
+	GenericMenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/leaderboards" ) )
 	GenericMenuFrame:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -55,15 +55,15 @@ LUI.createMenu.Leaderboard_Main = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( GameModeList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		CoD.LeaderboardUtility.AutoAddFriends( f4_arg2 )
-		CoD.LeaderboardUtility.SetLeaderboardDef( self, f4_arg0, f4_arg2 )
-		CoD.LeaderboardUtility.LoadLeaderboard( self, f4_arg2 )
-		OpenOverlay( self, "Leaderboard_GameMode", f4_arg2, nil )
+	f1_local1:AddButtonCallbackFunction( GameModeList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.LeaderboardUtility.AutoAddFriends( controller )
+		CoD.LeaderboardUtility.SetLeaderboardDef( self, element, controller )
+		CoD.LeaderboardUtility.LoadLeaderboard( self, controller )
+		OpenOverlay( self, "Leaderboard_GameMode", controller, nil )
 		PlaySoundAlias( "uin_paint_decal_nav" )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( GameModeList )
@@ -85,24 +85,24 @@ LUI.createMenu.Leaderboard_Main = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( PlaylistButton, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
+	f1_local1:AddButtonCallbackFunction( PlaylistButton, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if not IsPC() then
-			CoD.LeaderboardUtility.AutoAddFriends( f8_arg2 )
-			OpenPopup( self, "Leaderboards_PlayersList", f8_arg2 )
+			CoD.LeaderboardUtility.AutoAddFriends( controller )
+			OpenPopup( self, "Leaderboards_PlayersList", controller )
 			return true
 		elseif IsPC() then
-			CoD.LeaderboardUtility.AutoAddFriends( f8_arg2 )
-			OpenOverlay( self, "Leaderboards_PlayersList", f8_arg2 )
+			CoD.LeaderboardUtility.AutoAddFriends( controller )
+			OpenOverlay( self, "Leaderboards_PlayersList", controller )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
+	end, function ( element, menu, controller )
 		if not IsPC() then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xAC3B80C833B60E1, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select_caps", nil, "ui_confirm" )
 			return true
 		elseif IsPC() then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xAC3B80C833B60E1, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select_caps", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -142,11 +142,11 @@ LUI.createMenu.Leaderboard_Main = function ( f1_arg0, f1_arg1 )
 	local f1_local9 = PlaylistButton.subscribeToModel
 	local f1_local10 = Engine.GetGlobalModel()
 	f1_local9( f1_local8, f1_local10["socialRoot.playersListCount"], PlaylistButton.CommonListButtonShortInternal.Title.__CommonListButtonShortInternal_Title_String_Reference )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		GoBack( self, f12_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 		return true
 	end, false )
 	GenericMenuFrame:setModel( self.buttonModel, f1_arg0 )

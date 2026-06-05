@@ -200,7 +200,7 @@ CoD.WarzoneInventoryNag.__clipsPerState = {
 			f18_arg0.clipFinished( f18_arg0.InventoryPromptImazge )
 			f18_arg0.InventoryNag:completeAnimation()
 			f18_arg0.InventoryNag:setLeftRight( 0, 0, 24, 210 )
-			f18_arg0.InventoryNag:setText( LocalizeToUpperString( 0x9BB6384237A40B8 ) )
+			f18_arg0.InventoryNag:setText( LocalizeToUpperString( "warzone/inventory_pc" ) )
 			f18_arg0.InventoryNag:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 			f18_arg0.clipFinished( f18_arg0.InventoryNag )
 		end

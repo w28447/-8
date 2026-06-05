@@ -3,14 +3,14 @@ require( "ui/utility/overlayutility" )
 CoD.CPUtility.DIFFICULTY = {}
 CoD.CPUtility.DIFFICULTY[0] = 0xD7E1D993C0E7DEB
 CoD.CPUtility.DIFFICULTY[1] = 0x4124241026221C9
-CoD.CPUtility.DIFFICULTY[2] = 0xEB0FE85B0C234B0
+CoD.CPUtility.DIFFICULTY[2] = "menu/hardened"
 CoD.CPUtility.DIFFICULTY[3] = "menu/veteran"
 CoD.CPUtility.DIFFICULTY[4] = 0x1A2BA986D982F
 CoD.CPUtility.DIFFICULTY_DESC = {}
-CoD.CPUtility.DIFFICULTY_DESC[0] = 0xE6EE823F2A199D7
-CoD.CPUtility.DIFFICULTY_DESC[1] = 0xDD1C9C6348D427D
-CoD.CPUtility.DIFFICULTY_DESC[2] = 0xAE85AB083535732
-CoD.CPUtility.DIFFICULTY_DESC[3] = 0x5D910F0B084B1E8
+CoD.CPUtility.DIFFICULTY_DESC[0] = "menu/diff_recruit_desc"
+CoD.CPUtility.DIFFICULTY_DESC[1] = "menu/diff_regular_desc"
+CoD.CPUtility.DIFFICULTY_DESC[2] = "menu/diff_hardened_desc"
+CoD.CPUtility.DIFFICULTY_DESC[3] = "menu/diff_veteran_desc"
 CoD.CPUtility.DIFFICULTY_DESC[4] = "menu/diff_heroic_desc"
 CoD.CPUtility.DIFFICULTY_ICON = {}
 CoD.CPUtility.DIFFICULTY_ICON[0] = "playlist_sp_recr"
@@ -110,7 +110,7 @@ CoD.OverlayUtility.AddSystemOverlay( "CompleteCPFirstTimeFlow", {
 		end
 		
 	end,
-	[CoD.OverlayUtility.aCrossPromptText] = 0x5BE4A02B20F31F1,
+	[CoD.OverlayUtility.aCrossPromptText] = "menu/ok",
 	[CoD.OverlayUtility.bCirclePromptFn] = function ( f13_arg0 )
 		return function ( f14_arg0, f14_arg1 )
 			GoBack( f14_arg0, f14_arg1 )
@@ -124,7 +124,7 @@ CoD.OverlayUtility.AddSystemOverlay( "ConfirmCompanionChange", {
 	title = 0x2D53A1670E00816,
 	description = function ( f15_arg0, f15_arg1 )
 		local f15_local0 = Engine.GetPlayerStats( f15_arg0 )
-		local f15_local1 = CoD.PlayerRoleUtility.GetCachedHeroInfo( Enum.eModes[0x60063C67132EB69], f15_local0.companion:get() )
+		local f15_local1 = CoD.PlayerRoleUtility.GetCachedHeroInfo( Enum.eModes.mode_campaign, f15_local0.companion:get() )
 		return Engine[0xF9F1239CFD921FE]( 0xF68F0D6082EA8E6, f15_local1.displayName )
 	end,
 	categoryType = CoD.OverlayUtility.OverlayTypes.Notice,
@@ -137,7 +137,7 @@ CoD.OverlayUtility.AddSystemOverlay( "ConfirmCompanionChange", {
 		end
 		
 	end,
-	[CoD.OverlayUtility.aCrossPromptText] = 0xD8FF5E03592FD99,
+	[CoD.OverlayUtility.aCrossPromptText] = "menu/confirm",
 	[CoD.OverlayUtility.bCirclePromptFn] = function ( f18_arg0, f18_arg1 )
 		return function ( f19_arg0, f19_arg1 )
 			GoBack( f19_arg0, f19_arg1 )
@@ -162,7 +162,7 @@ CoD.OverlayUtility.AddSystemOverlay( "ConfirmFactionChange", {
 		end
 		
 	end,
-	[CoD.OverlayUtility.aCrossPromptText] = 0xD8FF5E03592FD99,
+	[CoD.OverlayUtility.aCrossPromptText] = "menu/confirm",
 	[CoD.OverlayUtility.bCirclePromptFn] = function ( f23_arg0, f23_arg1 )
 		return function ( f24_arg0, f24_arg1 )
 			GoBack( f24_arg0, f24_arg1 )
@@ -239,12 +239,12 @@ end
 
 CoD.CPUtility.SetupFrontendForFaction = function ( f31_arg0, f31_arg1 )
 	SendClientScriptNotify( f31_arg0, "changeFactionToken", CoD.CPUtility.GetTeamTokenXModel( f31_arg1 ) )
-	SendCustomClientScriptNotifyForAdjustedClient( f31_arg0, CoD.CPUtility.FrontendPlayerCharacterUpdate, "changeBody", CoD.CPUtility.GetFactionBodyIndexForPlayer( f31_arg1 ), Enum.eModes[0x60063C67132EB69], true )
+	SendCustomClientScriptNotifyForAdjustedClient( f31_arg0, CoD.CPUtility.FrontendPlayerCharacterUpdate, "changeBody", CoD.CPUtility.GetFactionBodyIndexForPlayer( f31_arg1 ), Enum.eModes.mode_campaign, true )
 	local f31_local0 = Engine.GetPlayerStats( f31_arg0 )
 	local f31_local1 = f31_local0.companion:get()
 	if f31_arg1 ~= CoD.CPUtility.GetFactionFromStats( f31_local0 ) then
-		for f31_local5, f31_local6 in ipairs( CoD.PlayerRoleUtility.GetHeroList( Enum.eModes[0x60063C67132EB69] ) ) do
-			if f31_local6["iscompanion"] ~= 0 and (not f31_local6[0x679A55C07A090C1] or f31_local6[0x679A55C07A090C1] == f31_arg1) then
+		for f31_local5, f31_local6 in ipairs( CoD.PlayerRoleUtility.GetHeroList( Enum.eModes.mode_campaign ) ) do
+			if f31_local6.iscompanion ~= 0 and (not f31_local6[0x679A55C07A090C1] or f31_local6[0x679A55C07A090C1] == f31_arg1) then
 				f31_local1 = f31_local6.bodyIndex
 				break
 			end
@@ -654,7 +654,7 @@ CoD.CPUtility.SpawnDynamicCPHUDWidgets = function ( f58_arg0, f58_arg1 )
 	f58_local2 = f58_local2.viewmodelWeaponName
 	if f58_local2 then
 		f58_arg0:subscribeToModel( f58_local2, function ( model )
-			if IsCurrentViewmodelWeaponName( f58_arg1, 0x501315FBFB75F72 ) then
+			if IsCurrentViewmodelWeaponName( f58_arg1, "spike_launcher" ) then
 				f58_arg0.spikeLauncherCounter = CoD.SpikeLauncherSpikeCounter.new( f58_arg0, f58_arg1, 0, 0, 0, CoD.SpikeLauncherSpikeCounter.__defaultWidth, 0, 0, 0, CoD.SpikeLauncherSpikeCounter.__defaultHeight )
 				f58_arg0:addElement( f58_arg0.spikeLauncherCounter )
 				f58_arg0.spikeLauncherCounter:dispatchEventToChildren( {
@@ -733,7 +733,7 @@ CoD.CPUtility.ChangeGender = function ( f67_arg0, f67_arg1, f67_arg2 )
 		SendCustomClientScriptNotifyForAdjustedClient( f67_arg0, CoD.PlayerRoleUtility.Heroes.heroUpdateEvent, {
 			event_name = "changeGender",
 			gender = f67_arg1.gender,
-			mode = Enum.eModes[0x60063C67132EB69]
+			mode = Enum.eModes.mode_campaign
 		} )
 	end
 end
@@ -760,9 +760,9 @@ CoD.CPUtility.SetupNewsroomDataWatchers = function ( f68_arg0, f68_arg1 )
 				local f69_local0 = f68_local4.torchdonatorentries[(model:get() or 0) + 1] or {}
 				if f69_local0 then
 					local f69_local1 = f68_local2:create( "torch.donatorName" )
-					f69_local1:set( f69_local0[0x4BCADBA8E631B86] and Engine.Localize( f69_local0[0x4BCADBA8E631B86] ) or "" )
+					f69_local1:set( f69_local0.name and Engine.Localize( f69_local0.name ) or "" )
 					f69_local1 = f68_local2:create( "torch.donatorAmount" )
-					f69_local1:set( f69_local0["amount"] or 0 )
+					f69_local1:set( f69_local0.amount or 0 )
 				end
 			end
 		end )
@@ -774,8 +774,8 @@ CoD.CPUtility.SetupNewsroomDataWatchers = function ( f68_arg0, f68_arg1 )
 		f68_arg0:linkToElementModel( f68_arg0, "uns.generalNewsIndex", true, function ( model )
 			if f68_local4.unsnewsentries then
 				local f70_local0 = f68_local4.unsnewsentries[model:get() or 0] or {}
-				local f70_local1 = f70_local0[0xA506CB501761960] and Engine.Localize( f70_local0[0xA506CB501761960] ) or ""
-				local f70_local2 = f70_local0[0xD4DE79BC6C93295] and Engine.Localize( f70_local0[0xD4DE79BC6C93295] ) or ""
+				local f70_local1 = f70_local0.header and Engine.Localize( f70_local0.header ) or ""
+				local f70_local2 = f70_local0.body and Engine.Localize( f70_local0.body ) or ""
 				f68_local2["uns.header"].set( f68_local2["uns.header"], f70_local1 )
 				f68_local2["uns.body"].set( f68_local2["uns.body"], f70_local2 )
 				local f70_local3 = CoD.CPUtility.NewsAlertTypes.REGULAR_NEWS
@@ -795,7 +795,7 @@ CoD.CPUtility.SetupNewsroomDataWatchers = function ( f68_arg0, f68_arg1 )
 		f68_arg0:linkToElementModel( f68_arg0, "noble.generalNewsIndex", true, function ( model )
 			if f68_local4.noblenewsentries then
 				local f71_local0 = f68_local4.noblenewsentries[model:get() or 0] or {}
-				f68_local2["noble.body"].set( f68_local2["noble.body"], f71_local0[0xD4DE79BC6C93295] and Engine.Localize( f71_local0[0xD4DE79BC6C93295] ) or "" )
+				f68_local2["noble.body"].set( f68_local2["noble.body"], f71_local0.body and Engine.Localize( f71_local0.body ) or "" )
 				local f71_local1 = CoD.CPUtility.NewsAlertTypes.REGULAR_NEWS
 				if f71_local0[0xF5A9D1C35E8A1E7] == 1 then
 					f71_local1 = CoD.CPUtility.NewsAlertTypes.BREAKING_NEWS
@@ -1709,7 +1709,7 @@ CoD.CPUtility.SetupChyron = function ( f144_arg0, f144_arg1 )
 	local f144_local0 = f144_arg0:getModel()
 	local f144_local1 = Engine.GetCurrentMapName()
 	for f144_local2 = 1, 5, 1 do
-		local f144_local5 = CoD.BaseUtility.GetMapValue( f144_local1, 0x2CF3130917268CA .. f144_local2, 0x0 )
+		local f144_local5 = CoD.BaseUtility.GetMapValue( f144_local1, 0x2CF3130917268CA .. f144_local2, "" )
 		local f144_local6 = f144_local0:create( "line" .. f144_local2 )
 		f144_local6:set( f144_local5 )
 	end
@@ -1731,7 +1731,7 @@ CoD.CPUtility.GetLivesRemainingTitle = function ( f147_arg0 )
 	if f147_arg0 == 1 then
 		return Engine[0xF9F1239CFD921FE]( 0x157B8AEAE96B10C, f147_arg0 )
 	else
-		return Engine[0xF9F1239CFD921FE]( 0x531E5936198E11F, f147_arg0 )
+		return Engine[0xF9F1239CFD921FE]( "coop/lives_remaining", f147_arg0 )
 	end
 end
 

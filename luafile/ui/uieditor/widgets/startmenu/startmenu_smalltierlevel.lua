@@ -25,7 +25,7 @@ CoD.StartMenu_SmallTierLevel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Gradient = LUI.UIImage.new( 0, 0, 0, 349, 0, 0, 16, 72 )
 	Gradient:setRGB( 0.08, 0.21, 0.31 )
 	Gradient:setAlpha( 0.94 )
-	Gradient:setImage( RegisterImage( 0xB646BE73FB8838C ) )
+	Gradient:setImage( RegisterImage( "uie_ui_menu_common_gradient" ) )
 	Gradient:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Gradient )
 	self.Gradient = Gradient

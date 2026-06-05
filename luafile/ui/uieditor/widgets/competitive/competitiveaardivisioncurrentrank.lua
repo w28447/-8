@@ -19,7 +19,7 @@ CoD.CompetitiveAARDivisionCurrentRank.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	PixelGridTiledBacking:setAlpha( 0.07 )
-	PixelGridTiledBacking:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
@@ -65,7 +65,7 @@ CoD.CompetitiveAARDivisionCurrentRank.new = function ( f1_arg0, f1_arg1, f1_arg2
 	LadderRank:subscribeToGlobalModel( f1_arg1, "LeaguePlay", "leaguePlayRank", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
-			LadderRank:setText( ToUpper( LocalizeStringWithParameter( 0x47AC0462E4B2132, f3_local0 ) ) )
+			LadderRank:setText( ToUpper( LocalizeStringWithParameter( "arena/arena_league_play_rank", f3_local0 ) ) )
 		end
 	end )
 	self:addElement( LadderRank )

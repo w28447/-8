@@ -33,7 +33,7 @@ CoD.OutOfBounds.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	local Timer = LUI.UIText.new( 0.5, 0.5, -97, 103, 0.5, 0.5, 123.5, 195.5 )
 	Timer:setAlpha( 0 )
 	Timer:setTTF( "0arame_mono_stencil" )
-	Timer:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xFAEF6B981087FCE ) )
+	Timer:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration_no_blur" ) )
 	Timer:setShaderVector( 0, 0.1, 0, 0, 0 )
 	Timer:setShaderVector( 1, 0, 0, 0, 0 )
 	Timer:setShaderVector( 2, 0, 0, 0, 0 )

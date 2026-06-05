@@ -9,7 +9,7 @@ require( "ui/uieditor/widgets/pc/startmenu/pc_startmenu_options_keybindmessage" 
 require( "ui/uieditor/widgets/pc/startmenu/pcstartmenuoptionsunbindkeybindmessage" )
 require( "ui/uieditor/widgets/pc/startmenu/voiceoptions/startmenu_options_pc_voice_voicebar" )
 require( "ui/uieditor/widgets/startmenu/options/pc_startmenu_optionstabs" )
-require( "x64:1850ed39b9104e4" )
+require( "ui/uieditor/widgets/startmenu/options/startmenu_options_controllerlayout" )
 
 CoD.PC_StartMenu_Options_New = InheritFrom( CoD.Menu )
 LUI.createMenu.PC_StartMenu_Options_New = function ( f1_arg0, f1_arg1 )
@@ -269,7 +269,7 @@ LUI.createMenu.PC_StartMenu_Options_New = function ( f1_arg0, f1_arg1 )
 	
 	CommonHeader = CoD.CommonHeader.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0, 0, 0, 67 )
 	CommonHeader.BGSceneBlur:setAlpha( 0 )
-	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x1762CBFBF851D22 ) )
+	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/settings_caps" ) )
 	CommonHeader.subtitle.subtitle:setAlpha( 0 )
 	CommonHeader:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f21_local0 = model:get()
@@ -320,59 +320,59 @@ LUI.createMenu.PC_StartMenu_Options_New = function ( f1_arg0, f1_arg1 )
 	f1_local20( f1_local19, f1_local21["PC.OptionsDirty"], function ( f26_arg0, f26_arg1 )
 		CoD.Menu.UpdateButtonShownState( f26_arg1, f1_local1, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09] )
 	end, false )
-	self:registerEventHandler( "close_all_ingame_menus", function ( element, event )
+	self:registerEventHandler( "close_all_ingame_menus", function ( self, event )
 		local f27_local0 = nil
 		CoD.PCUtility.ShortcutMenuGoBack( f1_local1, f1_arg0 )
 		CoD.PCOptionsUtility.StopLoopBackCalibrationRecordingIfRecording( f1_arg0 )
 		if not f27_local0 then
-			f27_local0 = element:dispatchEventToChildren( event )
+			f27_local0 = self:dispatchEventToChildren( event )
 		end
 		return f27_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f28_arg0, f28_arg1, f28_arg2, f28_arg3 )
-		if CoD.PCOptionsUtility.IsAudioOptions( f28_arg2 ) and CoD.PCOptionsUtility.IsRecordingLoopBack( f28_arg2 ) then
-			CoD.PCOptionsUtility.StopLoopBackCalibrationRecordingIfRecording( f28_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
+		if CoD.PCOptionsUtility.IsAudioOptions( controller ) and CoD.PCOptionsUtility.IsRecordingLoopBack( controller ) then
+			CoD.PCOptionsUtility.StopLoopBackCalibrationRecordingIfRecording( controller )
 			return true
 		else
-			CoD.PCOptionsUtility.CheckForPendingChanges( self, f28_arg2 )
+			CoD.PCOptionsUtility.CheckForPendingChanges( self, controller )
 			return true
 		end
-	end, function ( f29_arg0, f29_arg1, f29_arg2 )
-		CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_2", function ( f30_arg0, f30_arg1, f30_arg2, f30_arg3 )
-		CoD.PCOptionsUtility.ResetOptionsValue( self, f30_arg2, f30_arg0 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_2", function ( element, menu, controller, model )
+		CoD.PCOptionsUtility.ResetOptionsValue( self, controller, element )
 		return true
-	end, function ( f31_arg0, f31_arg1, f31_arg2 )
-		CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x2ED1CE9B3CDBA91, nil, "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], 0x2ED1CE9B3CDBA91, nil, "ui_contextual_2" )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_contextual_1", function ( f32_arg0, f32_arg1, f32_arg2, f32_arg3 )
-		if CoD.PCOptionsUtility.IsGraphicsOptions( f32_arg2 ) and CoD.PCOptionsUtility.AreOptionsDirty( f32_arg2 ) then
-			CoD.PCOptionsUtility.ApplyOptionsValue( self, f32_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_contextual_1", function ( element, menu, controller, model )
+		if CoD.PCOptionsUtility.IsGraphicsOptions( controller ) and CoD.PCOptionsUtility.AreOptionsDirty( controller ) then
+			CoD.PCOptionsUtility.ApplyOptionsValue( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f33_arg0, f33_arg1, f33_arg2 )
-		CoD.Menu.SetButtonLabel( f33_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x7D14DF1D6CBE990, nil, "ui_contextual_1" )
-		if CoD.PCOptionsUtility.IsGraphicsOptions( f33_arg2 ) and CoD.PCOptionsUtility.AreOptionsDirty( f33_arg2 ) then
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], 0x7D14DF1D6CBE990, nil, "ui_contextual_1" )
+		if CoD.PCOptionsUtility.IsGraphicsOptions( controller ) and CoD.PCOptionsUtility.AreOptionsDirty( controller ) then
 			return true
 		else
 			return false
 		end
 	end, true )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], nil, function ( f34_arg0, f34_arg1, f34_arg2, f34_arg3 )
-		if CoD.PCOptionsUtility.IsKeybindsOptions( f34_arg2 ) then
-			CoD.PCWidgetUtility.OpenPreviewKeybindsPopup( self, f34_arg2, "PC_StartMenu_Options_new" )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], nil, function ( element, menu, controller, model )
+		if CoD.PCOptionsUtility.IsKeybindsOptions( controller ) then
+			CoD.PCWidgetUtility.OpenPreviewKeybindsPopup( self, controller, "PC_StartMenu_Options_new" )
 			return true
 		else
 			
 		end
-	end, function ( f35_arg0, f35_arg1, f35_arg2 )
-		if CoD.PCOptionsUtility.IsKeybindsOptions( f35_arg2 ) then
-			CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x3A1720478353F60, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.PCOptionsUtility.IsKeybindsOptions( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x3A1720478353F60, nil, nil )
 			return true
 		else
 			return false

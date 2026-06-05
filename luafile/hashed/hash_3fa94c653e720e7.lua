@@ -1,0 +1,5 @@
+require( "x64:4fdeea0a60636b2" )
+require( "x64:2cb7dfe8738a015" )
+require( "x64:c649fc65c1842ce" )
+require( "ui/uieditor/widgets/tablet/tableticepickgadget" )
+require( "ui/uieditor/widgets/tablet/tableticepicksecondarywindow" )

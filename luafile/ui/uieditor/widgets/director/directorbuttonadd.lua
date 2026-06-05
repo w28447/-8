@@ -36,14 +36,14 @@ CoD.DirectorButtonAdd.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.FrontendFrame = FrontendFrame
 	
 	local ButtonAddPlus = LUI.UIImage.new( 0.5, 0.5, -22, 22, 0.5, 0.5, -22, 22 )
-	ButtonAddPlus:setImage( RegisterImage( 0x5C627FDA784DE0D ) )
+	ButtonAddPlus:setImage( RegisterImage( "uie_ui_menu_cac_button_add_plus" ) )
 	self:addElement( ButtonAddPlus )
 	self.ButtonAddPlus = ButtonAddPlus
 	
 	local ButtonAddPlusHighlighted = LUI.UIImage.new( 0.5, 0.5, -22, 22, 0.5, 0.5, -22, 22 )
 	ButtonAddPlusHighlighted:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	ButtonAddPlusHighlighted:setAlpha( 0 )
-	ButtonAddPlusHighlighted:setImage( RegisterImage( 0x63E82F3B2442EBB ) )
+	ButtonAddPlusHighlighted:setImage( RegisterImage( "uie_ui_menu_cac_button_add_plus_highlighted" ) )
 	ButtonAddPlusHighlighted:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ButtonAddPlusHighlighted )
 	self.ButtonAddPlusHighlighted = ButtonAddPlusHighlighted

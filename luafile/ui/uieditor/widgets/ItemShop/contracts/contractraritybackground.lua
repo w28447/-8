@@ -19,7 +19,7 @@ CoD.ContractRarityBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.Background = Background
 	
 	local UltraBacker = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	UltraBacker:setImage( RegisterImage( 0xFADCB0E46A61031 ) )
+	UltraBacker:setImage( RegisterImage( "uie_ui_menu_item_ultra_backer" ) )
 	UltraBacker:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	UltraBacker:setShaderVector( 0, 0, 0, 0, 0 )
 	UltraBacker:setupNineSliceShader( 14, 14 )
@@ -28,7 +28,7 @@ CoD.ContractRarityBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	PixelGridTiledBacking:setAlpha( 0.3 )
-	PixelGridTiledBacking:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
@@ -37,14 +37,14 @@ CoD.ContractRarityBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local BottomLine = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -2, 2 )
 	BottomLine:setAlpha( 0.3 )
-	BottomLine:setImage( RegisterImage( 0x5526CF3733E24C4 ) )
+	BottomLine:setImage( RegisterImage( "uie_ui_menu_common_tab_line_bottom" ) )
 	BottomLine:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BottomLine )
 	self.BottomLine = BottomLine
 	
 	local TopLine = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, -2, 2 )
 	TopLine:setAlpha( 0.3 )
-	TopLine:setImage( RegisterImage( 0x5526CF3733E24C4 ) )
+	TopLine:setImage( RegisterImage( "uie_ui_menu_common_tab_line_bottom" ) )
 	TopLine:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopLine )
 	self.TopLine = TopLine

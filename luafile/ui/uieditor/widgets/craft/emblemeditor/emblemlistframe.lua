@@ -25,7 +25,7 @@ CoD.EmblemListFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local emblemListBg = LUI.UIImage.new( 0, 0, 204.5, 1253.5, 0, 0, 81, 926 )
 	emblemListBg:setScale( 0.77, 0.77 )
-	emblemListBg:setImage( RegisterImage( 0xCE384B31419E220 ) )
+	emblemListBg:setImage( RegisterImage( "uie_ui_menu_emblem_empty_bg" ) )
 	emblemListBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	emblemListBg:setShaderVector( 0, 0, 0, 0, 0 )
 	emblemListBg:setupNineSliceShader( 212, 212 )
@@ -120,85 +120,85 @@ CoD.EmblemListFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09] )
 		return f13_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( emblemList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
-		if IsLive() and CoD.ModelUtility.IsSelfModelValueEqualTo( f14_arg0, f14_arg2, "isNonClickableEmblem", 0 ) and not IsElementInState( f14_arg0, "BMClassified" ) and CoD.CraftUtility.Emblems_CanEnterEmblemEditor( f14_arg0, f14_arg2 ) and not CraftItemIsReadOnly( f14_arg0, f14_arg2 ) and not SelectingGroupEmblem( f14_arg2 ) and CoD.CraftUtility.EmblemEditor_IsEditor( self, f14_arg1 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f14_arg0, f14_arg2, "trialLocked" ) and not CoD.CraftUtility.EmblemEditor_IsEditingClanEmblem( self, f14_arg1 ) then
-			OpenEmblemEditor( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
+	f1_arg0:AddButtonCallbackFunction( emblemList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLive() and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and not IsElementInState( element, "BMClassified" ) and CoD.CraftUtility.Emblems_CanEnterEmblemEditor( element, controller ) and not CraftItemIsReadOnly( element, controller ) and not SelectingGroupEmblem( controller ) and CoD.CraftUtility.EmblemEditor_IsEditor( self, menu ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) and not CoD.CraftUtility.EmblemEditor_IsEditingClanEmblem( self, menu ) then
+			OpenEmblemEditor( element, menu, controller, model )
 			PlaySoundAlias( "cac_equipment_add" )
 			return true
-		elseif CoD.CraftUtility.Emblem_IsOccupied( f14_arg0, f14_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f14_arg0, f14_arg2, "isNonClickableEmblem", 0 ) and CoD.ModelUtility.IsSelfModelValueTrue( f14_arg0, f14_arg2, "owned" ) and not CoD.CraftUtility.EmblemEditor_IsEditor( self, f14_arg1 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f14_arg0, f14_arg2, "trialLocked" ) and not MenuPropertyIsTrue( f14_arg1, "_selectGroupEmblem" ) and not CoD.CraftUtility.EmblemEditor_IsEditingClanEmblem( self, f14_arg1 ) then
-			CoD.CraftUtility.EmblemSelect_SetAsEmblem( self, f14_arg0, f14_arg2 )
-			UpdateSelfState( self, f14_arg2 )
+		elseif CoD.CraftUtility.Emblem_IsOccupied( element, controller ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) and not CoD.CraftUtility.EmblemEditor_IsEditor( self, menu ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) and not MenuPropertyIsTrue( menu, "_selectGroupEmblem" ) and not CoD.CraftUtility.EmblemEditor_IsEditingClanEmblem( self, menu ) then
+			CoD.CraftUtility.EmblemSelect_SetAsEmblem( self, element, controller )
+			UpdateSelfState( self, controller )
 			PlaySoundAlias( "cac_equipment_add" )
 			return true
-		elseif CoD.CraftUtility.Emblem_IsOccupied( f14_arg0, f14_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f14_arg0, f14_arg2, "isNonClickableEmblem", 0 ) and CoD.ModelUtility.IsSelfModelValueTrue( f14_arg0, f14_arg2, "owned" ) and not CoD.CraftUtility.EmblemEditor_IsEditor( self, f14_arg1 ) and MenuPropertyIsTrue( f14_arg1, "_selectGroupEmblem" ) then
-			GoBack( self, f14_arg2 )
-			UpdateSelfState( self, f14_arg2 )
+		elseif CoD.CraftUtility.Emblem_IsOccupied( element, controller ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) and not CoD.CraftUtility.EmblemEditor_IsEditor( self, menu ) and MenuPropertyIsTrue( menu, "_selectGroupEmblem" ) then
+			GoBack( self, controller )
+			UpdateSelfState( self, controller )
 			PlaySoundAlias( "cac_equipment_add" )
 			return true
 		else
 			
 		end
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		if IsLive() and CoD.ModelUtility.IsSelfModelValueEqualTo( f15_arg0, f15_arg2, "isNonClickableEmblem", 0 ) and not IsElementInState( f15_arg0, "BMClassified" ) and CoD.CraftUtility.Emblems_CanEnterEmblemEditor( f15_arg0, f15_arg2 ) and not CraftItemIsReadOnly( f15_arg0, f15_arg2 ) and not SelectingGroupEmblem( f15_arg2 ) and CoD.CraftUtility.EmblemEditor_IsEditor( self, f15_arg1 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f15_arg0, f15_arg2, "trialLocked" ) and not CoD.CraftUtility.EmblemEditor_IsEditingClanEmblem( self, f15_arg1 ) then
-			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/edit_emblem", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLive() and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and not IsElementInState( element, "BMClassified" ) and CoD.CraftUtility.Emblems_CanEnterEmblemEditor( element, controller ) and not CraftItemIsReadOnly( element, controller ) and not SelectingGroupEmblem( controller ) and CoD.CraftUtility.EmblemEditor_IsEditor( self, menu ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) and not CoD.CraftUtility.EmblemEditor_IsEditingClanEmblem( self, menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/edit_emblem", nil, "ui_confirm" )
 			return true
-		elseif CoD.CraftUtility.Emblem_IsOccupied( f15_arg0, f15_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f15_arg0, f15_arg2, "isNonClickableEmblem", 0 ) and CoD.ModelUtility.IsSelfModelValueTrue( f15_arg0, f15_arg2, "owned" ) and not CoD.CraftUtility.EmblemEditor_IsEditor( self, f15_arg1 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f15_arg0, f15_arg2, "trialLocked" ) and not MenuPropertyIsTrue( f15_arg1, "_selectGroupEmblem" ) and not CoD.CraftUtility.EmblemEditor_IsEditingClanEmblem( self, f15_arg1 ) then
-			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xA24F9854A60C871, nil, "ui_confirm" )
+		elseif CoD.CraftUtility.Emblem_IsOccupied( element, controller ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) and not CoD.CraftUtility.EmblemEditor_IsEditor( self, menu ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "trialLocked" ) and not MenuPropertyIsTrue( menu, "_selectGroupEmblem" ) and not CoD.CraftUtility.EmblemEditor_IsEditingClanEmblem( self, menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0xA24F9854A60C871, nil, "ui_confirm" )
 			return true
-		elseif CoD.CraftUtility.Emblem_IsOccupied( f15_arg0, f15_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f15_arg0, f15_arg2, "isNonClickableEmblem", 0 ) and CoD.ModelUtility.IsSelfModelValueTrue( f15_arg0, f15_arg2, "owned" ) and not CoD.CraftUtility.EmblemEditor_IsEditor( self, f15_arg1 ) and MenuPropertyIsTrue( f15_arg1, "_selectGroupEmblem" ) then
-			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif CoD.CraftUtility.Emblem_IsOccupied( element, controller ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) and not CoD.CraftUtility.EmblemEditor_IsEditor( self, menu ) and MenuPropertyIsTrue( menu, "_selectGroupEmblem" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( emblemList, f1_arg1, Enum.LUIButton[0x22361E23588705A], "ui_contextual_1", function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
-		if CoD.CraftUtility.Emblem_IsOccupied( f16_arg0, f16_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f16_arg0, f16_arg2, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( f16_arg2 ) and not SelectingGroupEmblem( f16_arg2 ) and IsGamepad( f16_arg2 ) then
-			OpenPopup( self, "EmblemSelectOptions", f16_arg2, nil )
+	f1_arg0:AddButtonCallbackFunction( emblemList, f1_arg1, Enum.LUIButton[0x22361E23588705A], "ui_contextual_1", function ( element, menu, controller, model )
+		if CoD.CraftUtility.Emblem_IsOccupied( element, controller ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( controller ) and not SelectingGroupEmblem( controller ) and IsGamepad( controller ) then
+			OpenPopup( self, "EmblemSelectOptions", controller, nil )
 			return true
-		elseif CoD.CraftUtility.Emblem_IsOccupied( f16_arg0, f16_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f16_arg0, f16_arg2, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( f16_arg2 ) and not SelectingGroupEmblem( f16_arg2 ) and IsMouseOrKeyboard( f16_arg2 ) then
-			OpenPopup( self, "EmblemSelectOptions", f16_arg2, nil )
+		elseif CoD.CraftUtility.Emblem_IsOccupied( element, controller ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( controller ) and not SelectingGroupEmblem( controller ) and IsMouseOrKeyboard( controller ) then
+			OpenPopup( self, "EmblemSelectOptions", controller, nil )
 			return true
 		else
 			
 		end
-	end, function ( f17_arg0, f17_arg1, f17_arg2 )
-		if CoD.CraftUtility.Emblem_IsOccupied( f17_arg0, f17_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f17_arg0, f17_arg2, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( f17_arg2 ) and not SelectingGroupEmblem( f17_arg2 ) and IsGamepad( f17_arg2 ) then
-			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options", nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.Emblem_IsOccupied( element, controller ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( controller ) and not SelectingGroupEmblem( controller ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "menu/options", nil, "ui_contextual_1" )
 			return true
-		elseif CoD.CraftUtility.Emblem_IsOccupied( f17_arg0, f17_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f17_arg0, f17_arg2, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( f17_arg2 ) and not SelectingGroupEmblem( f17_arg2 ) and IsMouseOrKeyboard( f17_arg2 ) then
-			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
+		elseif CoD.CraftUtility.Emblem_IsOccupied( element, controller ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( controller ) and not SelectingGroupEmblem( controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "menu/options", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( emblemList, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_3", function ( f18_arg0, f18_arg1, f18_arg2, f18_arg3 )
-		if CoD.CraftUtility.Emblem_IsOccupied( f18_arg0, f18_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f18_arg0, f18_arg2, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( f18_arg2 ) and not SelectingGroupEmblem( f18_arg2 ) and IsMouseOrKeyboard( f18_arg2 ) then
-			CoD.CraftUtility.EmblemSelect_CopyEmblem( self, f18_arg0, f18_arg2, f18_arg1 )
-			CoD.CraftUtility.UpdateCraftSlots( f18_arg2 )
+	f1_arg0:AddButtonCallbackFunction( emblemList, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_3", function ( element, menu, controller, model )
+		if CoD.CraftUtility.Emblem_IsOccupied( element, controller ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( controller ) and not SelectingGroupEmblem( controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.CraftUtility.EmblemSelect_CopyEmblem( self, element, controller, menu )
+			CoD.CraftUtility.UpdateCraftSlots( controller )
 			return true
 		else
 			
 		end
-	end, function ( f19_arg0, f19_arg1, f19_arg2 )
-		if CoD.CraftUtility.Emblem_IsOccupied( f19_arg0, f19_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f19_arg0, f19_arg2, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( f19_arg2 ) and not SelectingGroupEmblem( f19_arg2 ) and IsMouseOrKeyboard( f19_arg2 ) then
-			CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xA75B4742BD9E4D0, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_3" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.Emblem_IsOccupied( element, controller ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( controller ) and not SelectingGroupEmblem( controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "ui/dupe", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_3" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( emblemList, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
-		if CoD.CraftUtility.Emblem_IsOccupied( f20_arg0, f20_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f20_arg0, f20_arg2, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( f20_arg2 ) and IsMouseOrKeyboard( f20_arg2 ) then
-			CoD.CraftUtility.EmblemClear( self, f20_arg0, f20_arg2, "", f20_arg1 )
+	f1_arg0:AddButtonCallbackFunction( emblemList, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( element, menu, controller, model )
+		if CoD.CraftUtility.Emblem_IsOccupied( element, controller ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.CraftUtility.EmblemClear( self, element, controller, "", menu )
 			return true
 		else
 			
 		end
-	end, function ( f21_arg0, f21_arg1, f21_arg2 )
-		if CoD.CraftUtility.Emblem_IsOccupied( f21_arg0, f21_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f21_arg0, f21_arg2, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( f21_arg2 ) and IsMouseOrKeyboard( f21_arg2 ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x8ADA48E694BFE2C, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.Emblem_IsOccupied( element, controller ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/delete", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
@@ -207,7 +207,7 @@ CoD.EmblemListFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	LUI.OverrideFunction_CallOriginalFirst( emblemList, "updateDataSource", function ( element, controller, f22_arg2, f22_arg3 )
 		CoD.GridAndListUtility.SetFocusToFirstSelectableItem( element )
 	end )
-	emblemList:AddContextualMenuAction( f1_arg0, f1_arg1, 0xA75B4742BD9E4D0, function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
+	emblemList:AddContextualMenuAction( f1_arg0, f1_arg1, "ui/dupe", function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
 		if CoD.CraftUtility.Emblem_IsOccupied( f23_arg0, f23_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f23_arg0, f23_arg2, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( f23_arg2 ) and not SelectingGroupEmblem( f23_arg2 ) then
 			return function ( f24_arg0, f24_arg1, f24_arg2, f24_arg3 )
 				CoD.CraftUtility.EmblemSelect_CopyEmblem( self, f24_arg0, f24_arg2, f24_arg1 )
@@ -228,7 +228,7 @@ CoD.EmblemListFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 			
 		end
 	end )
-	emblemList:AddContextualMenuAction( f1_arg0, f1_arg1, 0x8ADA48E694BFE2C, function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3 )
+	emblemList:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/delete", function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3 )
 		if CoD.CraftUtility.Emblem_IsOccupied( f27_arg0, f27_arg2 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f27_arg0, f27_arg2, "isNonClickableEmblem", 0 ) and not IsPreBuiltEmblemTab( f27_arg2 ) and not SelectingGroupEmblem( f27_arg2 ) then
 			return function ( f28_arg0, f28_arg1, f28_arg2, f28_arg3 )
 				CoD.CraftUtility.EmblemClear( self, f28_arg0, f28_arg2, "", f28_arg1 )
@@ -302,7 +302,7 @@ CoD.EmblemListFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	DotLineTop = LUI.UIImage.new( 0.5, 0.5, -636.5, 174.5, 0, 0, 161, 165 )
 	DotLineTop:setAlpha( 0.4 )
-	DotLineTop:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	DotLineTop:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	DotLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	DotLineTop:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( DotLineTop )
@@ -310,7 +310,7 @@ CoD.EmblemListFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	DotLineBottom = LUI.UIImage.new( 0.5, 0.5, -636.5, 174.5, 0, 0, 859, 863 )
 	DotLineBottom:setAlpha( 0.4 )
-	DotLineBottom:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	DotLineBottom:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	DotLineBottom:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	DotLineBottom:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( DotLineBottom )
@@ -323,19 +323,19 @@ CoD.EmblemListFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	f1_local8 = SlotsUsedWidget.subscribeToModel
 	local f1_local10 = DataSources.SlotCustomization.getModel( f1_arg1 )
 	f1_local8( f1_local9, f1_local10.type, SlotsUsedWidget.Title.__alertText2_String_Reference )
-	self:registerEventHandler( "occlusion_change", function ( element, event )
+	self:registerEventHandler( "occlusion_change", function ( self, event )
 		local f38_local0 = nil
-		if element.OcclusionChange then
-			f38_local0 = element:OcclusionChange( event )
-		elseif element.super.OcclusionChange then
-			f38_local0 = element.super:OcclusionChange( event )
+		if self.OcclusionChange then
+			f38_local0 = self:OcclusionChange( event )
+		elseif self.super.OcclusionChange then
+			f38_local0 = self.super:OcclusionChange( event )
 		end
 		if not IsEventPropertyEqualTo( event, "occluded", true ) then
 			CoD.CraftUtility.SetSlotCustomizationType( f1_arg1, Enum.CustomizationType[0x979B4C08E9D67B2] )
 			CoD.CraftUtility.UpdateCraftSlots( f1_arg1 )
 		end
 		if not f38_local0 then
-			f38_local0 = element:dispatchEventToChildren( event )
+			f38_local0 = self:dispatchEventToChildren( event )
 		end
 		return f38_local0
 	end )

@@ -47,31 +47,31 @@ CoD.ZMLobbyButtonsContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f6_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PrivateMatchButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		if not CoD.DirectorUtility.IsNumClientsExceeded( f7_arg2 ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f7_arg2 ) then
+	f1_arg0:AddButtonCallbackFunction( PrivateMatchButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not CoD.DirectorUtility.IsNumClientsExceeded( controller ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.DirectorUtility.NavigateToPrivateLobbyForCurrentMode( f7_arg1, f7_arg2 )
+			CoD.DirectorUtility.NavigateToPrivateLobbyForCurrentMode( menu, controller )
 			return true
-		elseif CoD.DirectorUtility.IsNumClientsExceeded( f7_arg2 ) then
+		elseif CoD.DirectorUtility.IsNumClientsExceeded( controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.DirectorUtility.OpenTooManyClientsPopup( self, f7_arg2 )
+			CoD.DirectorUtility.OpenTooManyClientsPopup( self, controller )
 			return true
-		elseif not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f7_arg2 ) then
+		elseif not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.DirectorUtility.OpenMapsNotEnabledPopup( self, f7_arg2 )
+			CoD.DirectorUtility.OpenMapsNotEnabledPopup( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		if not CoD.DirectorUtility.IsNumClientsExceeded( f8_arg2 ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f8_arg2 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not CoD.DirectorUtility.IsNumClientsExceeded( controller ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif CoD.DirectorUtility.IsNumClientsExceeded( f8_arg2 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif CoD.DirectorUtility.IsNumClientsExceeded( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f8_arg2 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -105,31 +105,31 @@ CoD.ZMLobbyButtonsContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f11_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PublicMatchButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		if not CoD.DirectorUtility.IsNumClientsExceeded( f12_arg2 ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f12_arg2 ) then
+	f1_arg0:AddButtonCallbackFunction( PublicMatchButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not CoD.DirectorUtility.IsNumClientsExceeded( controller ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.DirectorUtility.NavigateToPublicLobbyForCurrentMenuMode( f12_arg1, f12_arg2 )
+			CoD.DirectorUtility.NavigateToPublicLobbyForCurrentMenuMode( menu, controller )
 			return true
-		elseif CoD.DirectorUtility.IsNumClientsExceeded( f12_arg2 ) then
+		elseif CoD.DirectorUtility.IsNumClientsExceeded( controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.DirectorUtility.OpenTooManyClientsPopup( self, f12_arg2 )
+			CoD.DirectorUtility.OpenTooManyClientsPopup( self, controller )
 			return true
-		elseif not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f12_arg2 ) then
+		elseif not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.DirectorUtility.OpenMapsNotEnabledPopup( self, f12_arg2 )
+			CoD.DirectorUtility.OpenMapsNotEnabledPopup( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		if not CoD.DirectorUtility.IsNumClientsExceeded( f13_arg2 ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f13_arg2 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not CoD.DirectorUtility.IsNumClientsExceeded( controller ) and CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif CoD.DirectorUtility.IsNumClientsExceeded( f13_arg2 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif CoD.DirectorUtility.IsNumClientsExceeded( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( f13_arg2 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif not CoD.DirectorUtility.AllClientsOwnDLCForPlaylist( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

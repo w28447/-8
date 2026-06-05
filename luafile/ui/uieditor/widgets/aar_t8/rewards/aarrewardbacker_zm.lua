@@ -20,7 +20,7 @@ CoD.AARRewardBacker_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local BotPatterLeft = LUI.UIImage.new( 0, 0, -1, 167, 0, 0, 605, 773 )
 	BotPatterLeft:setAlpha( 0.5 )
-	BotPatterLeft:setImage( RegisterImage( 0x148112C3722ADE9 ) )
+	BotPatterLeft:setImage( RegisterImage( "uie_ui_hud_zm_aar_bg_pattern" ) )
 	BotPatterLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	BotPatterLeft:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BotPatterLeft )
@@ -28,7 +28,7 @@ CoD.AARRewardBacker_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local BotPatterRight = LUI.UIImage.new( 0, 0, 414, 246, 0, 0, 605, 773 )
 	BotPatterRight:setAlpha( 0.5 )
-	BotPatterRight:setImage( RegisterImage( 0x148112C3722ADE9 ) )
+	BotPatterRight:setImage( RegisterImage( "uie_ui_hud_zm_aar_bg_pattern" ) )
 	BotPatterRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	BotPatterRight:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BotPatterRight )
@@ -59,7 +59,7 @@ CoD.AARRewardBacker_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.CroppedZmBacking = CroppedZmBacking
 	
 	local BotBar = LUI.UIImage.new( 0, 0, -6, 418, 1, 1, -15, 25 )
-	BotBar:setImage( RegisterImage( 0x24F1A68C216ACF6 ) )
+	BotBar:setImage( RegisterImage( "uie_ui_hud_zm_aar_bot_bar" ) )
 	self:addElement( BotBar )
 	self.BotBar = BotBar
 	

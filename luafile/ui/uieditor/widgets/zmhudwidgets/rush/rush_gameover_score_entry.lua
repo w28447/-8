@@ -34,7 +34,7 @@ CoD.Rush_Gameover_Score_Entry.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.teamPlayercardGold = teamPlayercardGold
 	
 	local ZombiesPortrait = CoD.ZombiesPortrait.new( f1_arg0, f1_arg1, 0, 0, 201, 281, 0, 0, 3, 83 )
-	ZombiesPortrait:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD79DB5C45AD6024 ) )
+	ZombiesPortrait:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_elliptical_ring_rft" ) )
 	ZombiesPortrait:setShaderVector( 0, 34, 6, 0, 0 )
 	ZombiesPortrait:setShaderVector( 1, 80, 80, 0, 0 )
 	ZombiesPortrait:setShaderVector( 2, 0, 0.05, 0, 0 )

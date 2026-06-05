@@ -27,11 +27,11 @@ CoD.AARStatTypeTabHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self:addElement( StatName )
 	self.StatName = StatName
 	
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		CoD.PCUtility.ActiveParentElementGrid( self, f4_arg1, f4_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		CoD.PCUtility.ActiveParentElementGrid( self, menu, controller )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 		return false
 	end, false )
 	LUI.OverrideFunction_CallOriginalSecond( self, "close", self.__onClose )

@@ -51,7 +51,7 @@ LUI.createMenu.DirectorDiaDeLosMuertosPopup = function ( f1_arg0, f1_arg1 )
 	local featureOverlayButtonMouseOnly = nil
 	
 	featureOverlayButtonMouseOnly = CoD.featureOverlay_Button_MouseOnly.new( f1_local1, f1_arg0, 0.5, 0.5, -609, -449, 0.5, 0.5, 285, 345 )
-	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0x78D439E1B360368 ) )
+	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/back_caps" ) )
 	featureOverlayButtonMouseOnly:registerEventHandler( "gain_focus", function ( element, event )
 		local f2_local0 = nil
 		if element.gainFocus then
@@ -62,11 +62,11 @@ LUI.createMenu.DirectorDiaDeLosMuertosPopup = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		CoD.EntitlementUtility.GoBackAndOpenEntitlementPopups( self, f3_arg2 )
+	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.EntitlementUtility.GoBackAndOpenEntitlementPopups( self, controller )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( featureOverlayButtonMouseOnly )
@@ -186,13 +186,13 @@ LUI.createMenu.DirectorDiaDeLosMuertosPopup = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f11_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( Characters, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
+	f1_local1:AddButtonCallbackFunction( Characters, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		PlaySoundAlias( "uin_start_char_select" )
-		CoD.EntitlementUtility.SelectSpecialistForEntitlement( f12_arg1, f12_arg2, f12_arg0, Enum.eModes[0x83EBA96F36BC4E5], 0xC94ED95E25D8246 )
-		GoBack( self, f12_arg2 )
+		CoD.EntitlementUtility.SelectSpecialistForEntitlement( menu, controller, element, Enum.eModes.mode_multiplayer, 0xC94ED95E25D8246 )
+		GoBack( self, controller )
 		return true
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( Characters )
@@ -262,11 +262,11 @@ LUI.createMenu.DirectorDiaDeLosMuertosPopup = function ( f1_arg0, f1_arg1 )
 			PreviewImage:setImage( RegisterImage( CoD.EntitlementUtility.GetDOTDImageFull( f14_local0 ) ) )
 		end
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		CoD.EntitlementUtility.GoBackAndOpenEntitlementPopups( self, f15_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		CoD.EntitlementUtility.GoBackAndOpenEntitlementPopups( self, controller )
 		return true
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	buttons:setModel( self.buttonModel, f1_arg0 )

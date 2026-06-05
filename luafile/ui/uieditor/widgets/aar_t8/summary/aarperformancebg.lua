@@ -24,7 +24,7 @@ CoD.AARPerformanceBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local PerformBracketBlur = LUI.UIImage.new( 0, 1, -3.5, 4.5, 1, 1, -14, 6 )
 	PerformBracketBlur:setAlpha( 0.3 )
-	PerformBracketBlur:setImage( RegisterImage( 0xD4F19B775CF07F8 ) )
+	PerformBracketBlur:setImage( RegisterImage( "uie_ui_menu_aar_perform_botline_blur" ) )
 	PerformBracketBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	PerformBracketBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	PerformBracketBlur:setupNineSliceShader( 174, 10 )
@@ -51,14 +51,14 @@ CoD.AARPerformanceBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local DotPipL = LUI.UIImage.new( 0, 0, -2, 2, 1, 1, -12.5, -8.5 )
 	DotPipL:setAlpha( 0.5 )
-	DotPipL:setImage( RegisterImage( 0x3854665C02218EF ) )
+	DotPipL:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame_dot" ) )
 	DotPipL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPipL )
 	self.DotPipL = DotPipL
 	
 	local DotPipR = LUI.UIImage.new( 1, 1, -2, 2, 1, 1, -12.5, -8.5 )
 	DotPipR:setAlpha( 0.5 )
-	DotPipR:setImage( RegisterImage( 0x3854665C02218EF ) )
+	DotPipR:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame_dot" ) )
 	DotPipR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPipR )
 	self.DotPipR = DotPipR

@@ -54,7 +54,7 @@ CoD.DirectorTeamMemberInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local PixelGrid = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	PixelGrid:setAlpha( 0.05 )
-	PixelGrid:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGrid:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PixelGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGrid:setupNineSliceShader( 128, 128 )

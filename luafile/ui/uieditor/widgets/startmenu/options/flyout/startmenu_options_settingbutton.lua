@@ -84,7 +84,7 @@ CoD.StartMenu_Options_SettingButton.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local ItemFrameAdd = LUI.UIImage.new( 0, 0, -3.5, 703.5, 0, 0, -1, 47 )
 	ItemFrameAdd:setAlpha( 0 )
-	ItemFrameAdd:setImage( RegisterImage( 0xC2AE59F4FA74812 ) )
+	ItemFrameAdd:setImage( RegisterImage( "uie_ui_menu_store_element_frame" ) )
 	ItemFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ItemFrameAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	ItemFrameAdd:setupNineSliceShader( 12, 164 )

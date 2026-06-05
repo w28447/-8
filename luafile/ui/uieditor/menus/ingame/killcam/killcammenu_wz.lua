@@ -36,7 +36,7 @@ LUI.createMenu.KillcamMenu_WZ = function ( f1_arg0, f1_arg1 )
 	self.DeathCamLabel = DeathCamLabel
 	
 	local RedBarLargeThinBtm = LUI.UIImage.new( 0.5, 0.5, -570, 570, 0.5, 0.5, 61, 101 )
-	RedBarLargeThinBtm:setImage( RegisterImage( 0x61F5031E336929F ) )
+	RedBarLargeThinBtm:setImage( RegisterImage( "uie_ui_hud_wz_deathcam_red_bar_lg_thin" ) )
 	RedBarLargeThinBtm:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	RedBarLargeThinBtm:setShaderVector( 0, 0, 1, 0, 0 )
 	RedBarLargeThinBtm:setShaderVector( 1, 0, 0, 0, 0 )
@@ -47,7 +47,7 @@ LUI.createMenu.KillcamMenu_WZ = function ( f1_arg0, f1_arg1 )
 	self.RedBarLargeThinBtm = RedBarLargeThinBtm
 	
 	local RedBarLargeThinTop = LUI.UIImage.new( 0.5, 0.5, -570, 570, 0.5, 0.5, -101, -61 )
-	RedBarLargeThinTop:setImage( RegisterImage( 0x61F5031E336929F ) )
+	RedBarLargeThinTop:setImage( RegisterImage( "uie_ui_hud_wz_deathcam_red_bar_lg_thin" ) )
 	RedBarLargeThinTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	RedBarLargeThinTop:setShaderVector( 0, 0, 1, 0, 0 )
 	RedBarLargeThinTop:setShaderVector( 1, 0, 0, 0, 0 )
@@ -58,7 +58,7 @@ LUI.createMenu.KillcamMenu_WZ = function ( f1_arg0, f1_arg1 )
 	self.RedBarLargeThinTop = RedBarLargeThinTop
 	
 	local RedBarLargeThickBtm = LUI.UIImage.new( 0.5, 0.5, -570, 570, 0.5, 0.5, 66, 114 )
-	RedBarLargeThickBtm:setImage( RegisterImage( 0xDD230C515C3FB89 ) )
+	RedBarLargeThickBtm:setImage( RegisterImage( "uie_ui_hud_wz_deathcam_red_bar_lg_thick" ) )
 	RedBarLargeThickBtm:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	RedBarLargeThickBtm:setShaderVector( 0, 0, 1, 0, 0 )
 	RedBarLargeThickBtm:setShaderVector( 1, 0, 0, 0, 0 )
@@ -69,7 +69,7 @@ LUI.createMenu.KillcamMenu_WZ = function ( f1_arg0, f1_arg1 )
 	self.RedBarLargeThickBtm = RedBarLargeThickBtm
 	
 	local RedBarLargeThickTop = LUI.UIImage.new( 0.5, 0.5, -570, 570, 0.5, 0.5, -114, -66 )
-	RedBarLargeThickTop:setImage( RegisterImage( 0xDD230C515C3FB89 ) )
+	RedBarLargeThickTop:setImage( RegisterImage( "uie_ui_hud_wz_deathcam_red_bar_lg_thick" ) )
 	RedBarLargeThickTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	RedBarLargeThickTop:setShaderVector( 0, 0, 1, 0, 0 )
 	RedBarLargeThickTop:setShaderVector( 1, 0, 0, 0, 0 )
@@ -116,20 +116,20 @@ LUI.createMenu.KillcamMenu_WZ = function ( f1_arg0, f1_arg1 )
 	
 	local TriangleBGMain = LUI.UIImage.new( 0.5, 0.5, -240, 240, 0.5, 0.5, -233, 191 )
 	TriangleBGMain:setAlpha( 0.33 )
-	TriangleBGMain:setImage( RegisterImage( 0x5A6B14D153D571E ) )
+	TriangleBGMain:setImage( RegisterImage( "uie_ui_hud_wz_deathcam_triangle_bg_main" ) )
 	TriangleBGMain:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	TriangleBGMain:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( TriangleBGMain )
 	self.TriangleBGMain = TriangleBGMain
 	
 	local LineAccents = CoD.WarzoneDeathCamLineAccents.new( f1_local1, f1_arg0, 0.5, 0.5, -555, 555, 0.5, 0.5, -108, 108 )
-	LineAccents:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xC212964B40FA826 ) )
+	LineAccents:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal_rtt" ) )
 	self:addElement( LineAccents )
 	self.LineAccents = LineAccents
 	
 	local warningStripeR = CoD.WarzoneWarningStripe.new( f1_local1, f1_arg0, 0.5, 0.5, 635, 1027, 0.5, 0.5, -54, 58 )
 	warningStripeR:setScale( 1.4, 1.4 )
-	warningStripeR:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xB17513E9D94CE76 ) )
+	warningStripeR:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_rft" ) )
 	warningStripeR:setShaderVector( 0, 0, 1, 0, 0 )
 	warningStripeR:setShaderVector( 1, 0, 0.8, 0, 0 )
 	warningStripeR:setShaderVector( 2, 0, 1, 0, 0 )
@@ -140,7 +140,7 @@ LUI.createMenu.KillcamMenu_WZ = function ( f1_arg0, f1_arg1 )
 	local warningStripeR2 = CoD.WarzoneWarningStripe.new( f1_local1, f1_arg0, 0.5, 0.5, -1027, -635, 0.5, 0.5, -54, 58 )
 	warningStripeR2:setYRot( 180 )
 	warningStripeR2:setScale( 1.4, 1.4 )
-	warningStripeR2:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xB17513E9D94CE76 ) )
+	warningStripeR2:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_rft" ) )
 	warningStripeR2:setShaderVector( 0, 0, 1, 0, 0 )
 	warningStripeR2:setShaderVector( 1, 0.8, 0, 0, 0 )
 	warningStripeR2:setShaderVector( 2, 0, 1, 0, 0 )
@@ -180,7 +180,7 @@ LUI.createMenu.KillcamMenu_WZ = function ( f1_arg0, f1_arg1 )
 	end )
 	self:subscribeToGlobalModel( f1_arg0, "PerController", "scriptNotify", function ( model )
 		local f5_local0 = self
-		if CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x937494C549C06BB ) then
+		if CoD.ModelUtility.IsParamModelEqualToHashString( model, "post_killcam_transition" ) then
 			PlayClip( self, "EndTransition", f1_arg0 )
 		end
 	end )

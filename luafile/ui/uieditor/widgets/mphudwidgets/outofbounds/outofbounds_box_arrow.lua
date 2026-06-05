@@ -10,14 +10,14 @@ CoD.outofbounds_box_arrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local ArrowSmall03 = LUI.UIImage.new( 0, 0, 80.5, 126.5, 0, 0, 0, 64 )
 	ArrowSmall03:setAlpha( 0.4 )
-	ArrowSmall03:setImage( RegisterImage( 0x231C23C30759AA1 ) )
-	ArrowSmall03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x655565C7B387234 ) )
+	ArrowSmall03:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_side_arrows" ) )
+	ArrowSmall03:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_multiply" ) )
 	self:addElement( ArrowSmall03 )
 	self.ArrowSmall03 = ArrowSmall03
 	
 	local ArrowSmallAdd03 = LUI.UIImage.new( 0, 0, 80.5, 126.5, 0, 0, 0, 64 )
 	ArrowSmallAdd03:setAlpha( 0 )
-	ArrowSmallAdd03:setImage( RegisterImage( 0x231C23C30759AA1 ) )
+	ArrowSmallAdd03:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_side_arrows" ) )
 	ArrowSmallAdd03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ArrowSmallAdd03:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ArrowSmallAdd03 )
@@ -25,14 +25,14 @@ CoD.outofbounds_box_arrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local ArrowSmall02 = LUI.UIImage.new( 0, 0, 40.5, 86.5, 0, 0, 0, 64 )
 	ArrowSmall02:setAlpha( 0.4 )
-	ArrowSmall02:setImage( RegisterImage( 0x231C23C30759AA1 ) )
-	ArrowSmall02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x655565C7B387234 ) )
+	ArrowSmall02:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_side_arrows" ) )
+	ArrowSmall02:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_multiply" ) )
 	self:addElement( ArrowSmall02 )
 	self.ArrowSmall02 = ArrowSmall02
 	
 	local ArrowSmallAdd02 = LUI.UIImage.new( 0, 0, 40.5, 86.5, 0, 0, 0, 64 )
 	ArrowSmallAdd02:setAlpha( 0 )
-	ArrowSmallAdd02:setImage( RegisterImage( 0x231C23C30759AA1 ) )
+	ArrowSmallAdd02:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_side_arrows" ) )
 	ArrowSmallAdd02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ArrowSmallAdd02:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ArrowSmallAdd02 )
@@ -40,14 +40,14 @@ CoD.outofbounds_box_arrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local ArrowSmall01 = LUI.UIImage.new( 0, 0, 0, 46, 0, 0, 0, 64 )
 	ArrowSmall01:setAlpha( 0.4 )
-	ArrowSmall01:setImage( RegisterImage( 0x231C23C30759AA1 ) )
-	ArrowSmall01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x655565C7B387234 ) )
+	ArrowSmall01:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_side_arrows" ) )
+	ArrowSmall01:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_multiply" ) )
 	self:addElement( ArrowSmall01 )
 	self.ArrowSmall01 = ArrowSmall01
 	
 	local ArrowSmallAdd01 = LUI.UIImage.new( 0, 0, 0, 46, 0, 0, 0, 64 )
 	ArrowSmallAdd01:setAlpha( 0 )
-	ArrowSmallAdd01:setImage( RegisterImage( 0x231C23C30759AA1 ) )
+	ArrowSmallAdd01:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_side_arrows" ) )
 	ArrowSmallAdd01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ArrowSmallAdd01:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ArrowSmallAdd01 )

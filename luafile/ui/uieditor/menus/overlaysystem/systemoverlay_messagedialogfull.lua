@@ -38,71 +38,71 @@ LUI.createMenu.SystemOverlay_MessageDialogFull = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( BTNQuit, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		PerformOverlayBack( f4_arg1, f4_arg2 )
+	f1_local1:AddButtonCallbackFunction( BTNQuit, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		PerformOverlayBack( menu, controller )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( BTNQuit )
 	self.BTNQuit = BTNQuit
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if CoD.OverlayUtility.HasOverlayACrossAction( f6_arg1 ) then
-			CoD.OverlayUtility.PerformOverlayACrossAction( f6_arg1, f6_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.OverlayUtility.HasOverlayACrossAction( menu ) then
+			CoD.OverlayUtility.PerformOverlayACrossAction( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		if CoD.OverlayUtility.HasOverlayACrossAction( f7_arg1 ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x28080D5840E11B2, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.OverlayUtility.HasOverlayACrossAction( menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0x28080D5840E11B2, nil, "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if CoD.OverlayUtility.HasOverlayBCircleAction( f8_arg1 ) then
-			CoD.OverlayUtility.PerformOverlayBCircleAction( f8_arg1, f8_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
+		if CoD.OverlayUtility.HasOverlayBCircleAction( menu ) then
+			CoD.OverlayUtility.PerformOverlayBCircleAction( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if CoD.OverlayUtility.HasOverlayBCircleAction( f9_arg1 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x28080D5840E11B2, nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		if CoD.OverlayUtility.HasOverlayBCircleAction( menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], 0x28080D5840E11B2, nil, "ESCAPE" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "A", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		if CoD.OverlayUtility.HasOverlayXSquareAction( f10_arg1 ) then
-			CoD.OverlayUtility.PerformOverlayXSquareAction( f10_arg1, f10_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "A", function ( element, menu, controller, model )
+		if CoD.OverlayUtility.HasOverlayXSquareAction( menu ) then
+			CoD.OverlayUtility.PerformOverlayXSquareAction( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		if CoD.OverlayUtility.HasOverlayXSquareAction( f11_arg1 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x28080D5840E11B2, nil, "A" )
+	end, function ( element, menu, controller )
+		if CoD.OverlayUtility.HasOverlayXSquareAction( menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], 0x28080D5840E11B2, nil, "A" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "S", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		if CoD.OverlayUtility.HasOverlayYTriangleAction( f12_arg1 ) then
-			CoD.OverlayUtility.PerformOverlayYTriangleAction( f12_arg1, f12_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "S", function ( element, menu, controller, model )
+		if CoD.OverlayUtility.HasOverlayYTriangleAction( menu ) then
+			CoD.OverlayUtility.PerformOverlayYTriangleAction( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		if CoD.OverlayUtility.HasOverlayYTriangleAction( f13_arg1 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x28080D5840E11B2, nil, "S" )
+	end, function ( element, menu, controller )
+		if CoD.OverlayUtility.HasOverlayYTriangleAction( menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], 0x28080D5840E11B2, nil, "S" )
 			return true
 		else
 			return false

@@ -44,35 +44,35 @@ CoD.ArenaEventProgressButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ArenaEventProgressButtonInternal2, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if CoD.ArenaUtility.CurrentArenaEventTypeEquals( self, Enum[0xC0EA92D04BC003B][0xC32571741C5B730] ) and not CoD.ArenaLeaguePlayUtility.HasPlayerCompletedPlacementMatches( f6_arg2 ) then
+	f1_arg0:AddButtonCallbackFunction( ArenaEventProgressButtonInternal2, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.ArenaUtility.CurrentArenaEventTypeEquals( self, Enum[0xC0EA92D04BC003B][0xC32571741C5B730] ) and not CoD.ArenaLeaguePlayUtility.HasPlayerCompletedPlacementMatches( controller ) then
 			PlaySoundAlias( "uin_press_generic" )
-			SetLoseFocusToSelf( self, f6_arg2 )
-			OpenOverlay( self, "ArenaSkillEvaluationPlacementMenu", f6_arg2 )
+			SetLoseFocusToSelf( self, controller )
+			OpenOverlay( self, "ArenaSkillEvaluationPlacementMenu", controller )
 			return true
-		elseif CoD.ArenaUtility.CurrentArenaEventTypeEquals( self, Enum[0xC0EA92D04BC003B][0xC32571741C5B730] ) and IsSelfInState( self, "EventActive" ) and CoD.ArenaLeaguePlayUtility.HasOneMatchPlayed( self, f6_arg2 ) then
+		elseif CoD.ArenaUtility.CurrentArenaEventTypeEquals( self, Enum[0xC0EA92D04BC003B][0xC32571741C5B730] ) and IsSelfInState( self, "EventActive" ) and CoD.ArenaLeaguePlayUtility.HasOneMatchPlayed( self, controller ) then
 			PlaySoundAlias( "uin_press_generic" )
-			SetLoseFocusToSelf( self, f6_arg2 )
-			CoD.ArenaLeaguePlayUtility.ForceRefreshLadder( f6_arg1, f6_arg2 )
-			OpenOverlay( self, "LeaguePlayLeaderboardMenu", f6_arg2 )
+			SetLoseFocusToSelf( self, controller )
+			CoD.ArenaLeaguePlayUtility.ForceRefreshLadder( menu, controller )
+			OpenOverlay( self, "LeaguePlayLeaderboardMenu", controller )
 			return true
 		elseif AlwaysFalse() then
 			PlaySoundAlias( "uin_press_generic" )
-			SetLoseFocusToSelf( self, f6_arg2 )
-			OpenOverlay( self, "ArenaGauntletProgressionDetails", f6_arg2 )
+			SetLoseFocusToSelf( self, controller )
+			OpenOverlay( self, "ArenaGauntletProgressionDetails", controller )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		if CoD.ArenaUtility.CurrentArenaEventTypeEquals( self, Enum[0xC0EA92D04BC003B][0xC32571741C5B730] ) and not CoD.ArenaLeaguePlayUtility.HasPlayerCompletedPlacementMatches( f7_arg2 ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.ArenaUtility.CurrentArenaEventTypeEquals( self, Enum[0xC0EA92D04BC003B][0xC32571741C5B730] ) and not CoD.ArenaLeaguePlayUtility.HasPlayerCompletedPlacementMatches( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif CoD.ArenaUtility.CurrentArenaEventTypeEquals( self, Enum[0xC0EA92D04BC003B][0xC32571741C5B730] ) and IsSelfInState( self, "EventActive" ) and CoD.ArenaLeaguePlayUtility.HasOneMatchPlayed( self, f7_arg2 ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif CoD.ArenaUtility.CurrentArenaEventTypeEquals( self, Enum[0xC0EA92D04BC003B][0xC32571741C5B730] ) and IsSelfInState( self, "EventActive" ) and CoD.ArenaLeaguePlayUtility.HasOneMatchPlayed( self, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif AlwaysFalse() then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

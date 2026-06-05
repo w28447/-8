@@ -111,14 +111,14 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Fill_Player_Portrait.new = function ( f1_arg0
 	
 	local Flare = LUI.UIImage.new( 0, 0, -9, 119, 0, 0, -89, 39 )
 	Flare:setAlpha( 0 )
-	Flare:setImage( RegisterImage( 0x3C720E22C953683 ) )
+	Flare:setImage( RegisterImage( "uie_ui_hud_core_job_widget_flare" ) )
 	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Flare )
 	self.Flare = Flare
 	
 	local Burst = LUI.UIImage.new( 0, 0, 0, 110, 0, 0, 0, 112 )
 	Burst:setAlpha( 0 )
-	Burst:setImage( RegisterImage( 0xD4F7AA0A4512AE0 ) )
+	Burst:setImage( RegisterImage( "uie_ui_hud_core_hero_widget_glow_hero" ) )
 	Burst:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Burst )
 	self.Burst = Burst

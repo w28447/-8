@@ -12,7 +12,7 @@ CoD.LeaguePlaySkillDivisionRankBacking.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local WhiteBacking = LUI.UIImage.new( 0, 0, 0, 411, 0, 0, 0, 94 )
 	WhiteBacking:setAlpha( 0.02 )
-	WhiteBacking:setImage( RegisterImage( 0x7167D8C33A06020 ) )
+	WhiteBacking:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
 	WhiteBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	WhiteBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	WhiteBacking:setupNineSliceShader( 64, 64 )
@@ -47,7 +47,7 @@ CoD.LeaguePlaySkillDivisionRankBacking.new = function ( f1_arg0, f1_arg1, f1_arg
 	TopTriangle:setRGB( 0.92, 0.92, 0.92 )
 	TopTriangle:setAlpha( 0 )
 	TopTriangle:setZRot( 180 )
-	TopTriangle:setImage( RegisterImage( 0xE8103AAF0932DB4 ) )
+	TopTriangle:setImage( RegisterImage( "uie_ui_menu_arena_league_hub_triangle" ) )
 	self:addElement( TopTriangle )
 	self.TopTriangle = TopTriangle
 	

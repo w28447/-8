@@ -10,7 +10,7 @@ CoD.PC_SeekerMine_Text.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.soundSet = "default"
 	
 	local PCtext = LUI.UIText.new( 0, 0, 0, 300, 0, 0, 0, 30 )
-	PCtext:setText( Engine[0xF9F1239CFD921FE]( 0xFB6FEE8FACA0DA9 ) )
+	PCtext:setText( Engine[0xF9F1239CFD921FE]( "mpui/seeker_mine_prompt" ) )
 	PCtext:setTTF( "ttmussels_regular" )
 	PCtext:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	PCtext:setBackingType( 1 )

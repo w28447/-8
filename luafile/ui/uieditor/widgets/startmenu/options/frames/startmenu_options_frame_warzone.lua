@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
-require( "x64:48be5c6feaceeb4" )
-require( "x64:f93e6387e9d051" )
+require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settinginfo" )
+require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settingslider_wrapper" )
 
 CoD.StartMenu_Options_Frame_Warzone = InheritFrom( LUI.UIElement )
 CoD.StartMenu_Options_Frame_Warzone.__defaultWidth = 1920
@@ -36,16 +36,16 @@ CoD.StartMenu_Options_Frame_Warzone.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( OptionGroups, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		if HasListAction( f3_arg0, f3_arg2 ) then
-			ProcessListAction( self, f3_arg0, f3_arg2, f3_arg1 )
+	f1_arg0:AddButtonCallbackFunction( OptionGroups, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if HasListAction( element, controller ) then
+			ProcessListAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		if HasListAction( f4_arg0, f4_arg2 ) then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if HasListAction( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -54,11 +54,11 @@ CoD.StartMenu_Options_Frame_Warzone.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self:addElement( OptionGroups )
 	self.OptionGroups = OptionGroups
 	
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		CoD.OptionsUtility.ResetPlayerSettingsGroupListToDefault( f5_arg2, self.OptionGroups )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		CoD.OptionsUtility.ResetPlayerSettingsGroupListToDefault( controller, self.OptionGroups )
 		return true
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x5D33EEAEB171341, Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 750 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/all_defaults", Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 750 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 		return true
 	end, false )
 	OptionGroups.id = "OptionGroups"

@@ -16,7 +16,7 @@ CoD.PC_StartMenu_Options_HUDBounds_Buttons.new = function ( f1_arg0, f1_arg1, f1
 	confirmButton.ButtonContainer.Blur:setAlpha( 0 )
 	confirmButton.ButtonContainer.Title:setText( LocalizeToUpperString( 0x7D14DF1D6CBE990 ) )
 	confirmButton.ButtonContainer.Icon:setRGB( 0.4, 0.55, 0.22 )
-	confirmButton.ButtonContainer.Icon:setImage( RegisterImage( 0xF82DBBC93FD9A06 ) )
+	confirmButton.ButtonContainer.Icon:setImage( RegisterImage( "uie_success_icon" ) )
 	confirmButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f2_local0 = nil
 		if element.gainFocus then
@@ -27,12 +27,12 @@ CoD.PC_StartMenu_Options_HUDBounds_Buttons.new = function ( f1_arg0, f1_arg1, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( confirmButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		DispatchEventToRoot( self, "update_safe_area", f3_arg2 )
-		GoBack( self, f3_arg2 )
+	f1_arg0:AddButtonCallbackFunction( confirmButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
+		DispatchEventToRoot( self, "update_safe_area", controller )
+		GoBack( self, controller )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "MOUSE1" )
 		return false
 	end, false )
 	self:addElement( confirmButton )
@@ -53,14 +53,14 @@ CoD.PC_StartMenu_Options_HUDBounds_Buttons.new = function ( f1_arg0, f1_arg1, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( cancelButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		SetSafeArea( self, f6_arg1, f6_arg2, "HUDBoundsTweakable_vertical", CoD.SafeArea.InitialY )
-		SetSafeArea( self, f6_arg1, f6_arg2, "HUDBoundsTweakable_horizontal", CoD.SafeArea.InitialX )
-		DispatchEventToRoot( self, "update_safe_area", f6_arg2 )
-		GoBack( self, f6_arg2 )
+	f1_arg0:AddButtonCallbackFunction( cancelButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
+		SetSafeArea( self, menu, controller, "HUDBoundsTweakable_vertical", CoD.SafeArea.InitialY )
+		SetSafeArea( self, menu, controller, "HUDBoundsTweakable_horizontal", CoD.SafeArea.InitialX )
+		DispatchEventToRoot( self, "update_safe_area", controller )
+		GoBack( self, controller )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "MOUSE1" )
 		return false
 	end, false )
 	self:addElement( cancelButton )
@@ -68,9 +68,9 @@ CoD.PC_StartMenu_Options_HUDBounds_Buttons.new = function ( f1_arg0, f1_arg1, f1
 	
 	local resetButton = CoD.featureOverlay_Button.new( f1_arg0, f1_arg1, 1, 1, -230, 0, 0, 0, 0, 60 )
 	resetButton.ButtonContainer.Blur:setAlpha( 0 )
-	resetButton.ButtonContainer.Title:setText( LocalizeToUpperString( 0x9BC2B49A2A1CCB1 ) )
+	resetButton.ButtonContainer.Title:setText( LocalizeToUpperString( "options/reset" ) )
 	resetButton.ButtonContainer.Icon:setRGB( 0.42, 0.42, 0.42 )
-	resetButton.ButtonContainer.Icon:setImage( RegisterImage( 0x770914E86BF60A2 ) )
+	resetButton.ButtonContainer.Icon:setImage( RegisterImage( "uie_reset_icon" ) )
 	resetButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f8_local0 = nil
 		if element.gainFocus then
@@ -81,14 +81,14 @@ CoD.PC_StartMenu_Options_HUDBounds_Buttons.new = function ( f1_arg0, f1_arg1, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f8_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( resetButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		ResetSafeAreaHorizontal( self, self, f9_arg2 )
-		SetSafeArea( self, self, f9_arg2, "HUDBoundsTweakable_vertical", CoD.SafeArea.Maximum )
-		DispatchEventToRoot( f9_arg0, "update_safe_area", f9_arg2 )
-		GoBack( self, f9_arg2 )
+	f1_arg0:AddButtonCallbackFunction( resetButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
+		ResetSafeAreaHorizontal( self, self, controller )
+		SetSafeArea( self, self, controller, "HUDBoundsTweakable_vertical", CoD.SafeArea.Maximum )
+		DispatchEventToRoot( element, "update_safe_area", controller )
+		GoBack( self, controller )
 		return true
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "MOUSE1" )
 		return false
 	end, false )
 	self:addElement( resetButton )

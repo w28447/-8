@@ -298,16 +298,16 @@ LUI.UIElement.playSound = function ( f24_arg0, f24_arg1, f24_arg2 )
 		local f24_local0 = f24_arg0:findSoundAlias( f24_arg1 )
 		if f24_local0 then
 			if f24_arg2 ~= nil then
-				Engine.PlaySound( f24_local0, f24_arg2 )
+				Engine.playsound( f24_local0, f24_arg2 )
 			else
-				Engine.PlaySound( f24_local0 )
+				Engine.playsound( f24_local0 )
 			end
 			return true
 		end
 	elseif f24_arg2 ~= nil then
-		Engine.PlaySound( f24_arg1, f24_arg2 )
+		Engine.playsound( f24_arg1, f24_arg2 )
 	else
-		Engine.PlaySound( f24_arg1 )
+		Engine.playsound( f24_arg1 )
 	end
 end
 
@@ -1543,54 +1543,54 @@ LUI.UIElement.AddContextualMenuAction = function ( f120_arg0, f120_arg1, f120_ar
 	end
 	if not f120_arg0.__contextualMenuRightMouseEventRegistered[f120_arg1] then
 		f120_arg0.__contextualMenuRightMouseEventRegistered[f120_arg1] = true
-		f120_arg1:AddButtonCallbackFunction( f120_arg0, f120_arg2, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE2", function ( f121_arg0, f121_arg1, f121_arg2, f121_arg3 )
-			CoD.PCWidgetUtility.CloseContextualMenu( f121_arg1, f121_arg2 )
+		f120_arg1:AddButtonCallbackFunction( f120_arg0, f120_arg2, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE2", function ( element, menu, controller, model )
+			CoD.PCWidgetUtility.CloseContextualMenu( menu, controller )
 			if f120_arg0.__contextualMenuTitleModelPath then
-				CoD.PCWidgetUtility.ContextualMenuTitleModel = CoD.ModelUtility.GetSelfModelPath( f121_arg0, f120_arg0.__contextualMenuTitleModelPath )
+				CoD.PCWidgetUtility.ContextualMenuTitleModel = CoD.ModelUtility.GetSelfModelPath( element, f120_arg0.__contextualMenuTitleModelPath )
 			else
 				CoD.PCWidgetUtility.ContextualMenuTitleModel = nil
 			end
 			if f120_arg0.__contextualMenuSecondLineModelPath and f120_arg0.__contextualMenuSecondLineModelPath ~= "" then
-				CoD.PCWidgetUtility.ContextualMenuSecondLineModel = CoD.ModelUtility.GetSelfModelPath( f121_arg0, f120_arg0.__contextualMenuSecondLineModelPath )
+				CoD.PCWidgetUtility.ContextualMenuSecondLineModel = CoD.ModelUtility.GetSelfModelPath( element, f120_arg0.__contextualMenuSecondLineModelPath )
 			else
 				CoD.PCWidgetUtility.ContextualMenuSecondLineModel = nil
 			end
 			if f120_arg0.__contextualMenuXuidModelPath and f120_arg0.__contextualMenuXuidModelPath ~= "" then
-				CoD.PCWidgetUtility.ContextualMenuXuidModel = CoD.ModelUtility.GetSelfModelPath( f121_arg0, f120_arg0.__contextualMenuXuidModelPath )
+				CoD.PCWidgetUtility.ContextualMenuXuidModel = CoD.ModelUtility.GetSelfModelPath( element, f120_arg0.__contextualMenuXuidModelPath )
 			else
 				CoD.PCWidgetUtility.ContextualMenuXuidModel = nil
 			end
-			CoD.PCWidgetUtility.PrepareContextualMenuActions( f121_arg0, f121_arg1, f121_arg2, f121_arg3, f120_arg0.__contextualMenuActions )
+			CoD.PCWidgetUtility.PrepareContextualMenuActions( element, menu, controller, model, f120_arg0.__contextualMenuActions )
 			if #CoD.PCWidgetUtility.ContextualMenuActions == 0 then
 				return false
 			end
-			f121_arg1.ContextualMenu = CoD.ContextualMenu.new( f121_arg1, f121_arg2, 0, 0, 0, 0, 0, 0, 0, 0 )
-			f121_arg1.ContextualMenu:setPriority( 2000 )
-			f121_arg1:addElement( f121_arg1.ContextualMenu )
-			f121_arg1:ChangeFocusedElement( f121_arg2, nil, false )
-			local f121_local0 = f121_arg1.ContextualMenu.ActionList
+			menu.ContextualMenu = CoD.ContextualMenu.new( menu, controller, 0, 0, 0, 0, 0, 0, 0, 0 )
+			menu.ContextualMenu:setPriority( 2000 )
+			menu:addElement( menu.ContextualMenu )
+			menu:ChangeFocusedElement( controller, nil, false )
+			local f121_local0 = menu.ContextualMenu.ActionList
 			f121_local0:setVerticalCount( #CoD.PCWidgetUtility.ContextualMenuActions )
 			f121_local0:setAutoScaleContentHeight( false )
-			f121_arg1.ContextualMenu:processEvent( {
+			menu.ContextualMenu:processEvent( {
 				name = "update_state",
-				controller = f121_arg2,
-				menu = f121_arg1
+				controller = controller,
+				menu = menu
 			} )
 			local f121_local1, f121_local2, f121_local3, f121_local4 = f121_local0:getLocalRect()
 			LUI.GridLayout.menuOpened( f121_local0 )
 			local f121_local5 = 1
 			local f121_local6 = 1
-			local f121_local7, f121_local8 = Engine[0x1A28BE9919661FA]( f121_arg2 )
-			local f121_local9, f121_local10, f121_local11, f121_local12 = f121_arg1:getRect()
+			local f121_local7, f121_local8 = Engine[0x1A28BE9919661FA]( controller )
+			local f121_local9, f121_local10, f121_local11, f121_local12 = menu:getRect()
 			if f121_local9 ~= nil then
 				f121_local5 = f121_local7 / (f121_local11 - f121_local9)
 				f121_local6 = f121_local8 / (f121_local12 - f121_local10)
 			end
-			local f121_local13 = DataSources.FreeCursor.getModel( f121_arg2 )
+			local f121_local13 = DataSources.FreeCursor.getModel( controller )
 			local f121_local13, f121_local14 = f121_local13.position:get()
 			local f121_local15 = f121_local13 * f121_local5
 			local f121_local16 = f121_local14 * f121_local6
-			local f121_local17 = math.max( CoD.ContextualMenu.__defaultWidth, f121_arg1.ContextualMenu:GetLargestTextWidth() + 20 )
+			local f121_local17 = math.max( CoD.ContextualMenu.__defaultWidth, menu.ContextualMenu:GetLargestTextWidth() + 20 )
 			local f121_local18 = f121_local0.height + CoD.ContextualMenu.__defaultHeight - f121_local4 - f121_local2
 			local f121_local19 = f121_local15 + f121_local17
 			if f121_local7 < f121_local19 then
@@ -1604,36 +1604,36 @@ LUI.UIElement.AddContextualMenuAction = function ( f120_arg0, f120_arg1, f120_ar
 				f121_local16 = f121_local16 - f121_local21
 				f121_local20 = f121_local20 - f121_local21
 			end
-			f121_arg1.ContextualMenu:setLeftRight( 0, 0, f121_local15, f121_local19 )
-			f121_arg1.ContextualMenu:setTopBottom( 0, 0, f121_local16, f121_local20 )
+			menu.ContextualMenu:setLeftRight( 0, 0, f121_local15, f121_local19 )
+			menu.ContextualMenu:setTopBottom( 0, 0, f121_local16, f121_local20 )
 			for f121_local24, f121_local25, f121_local26 in f121_local0:forEachElement() do
-				f121_arg1:AddButtonCallbackFunction( f121_local26, f121_arg2, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f122_arg0, f122_arg1, f122_arg2, f122_arg3 )
+				menu:AddButtonCallbackFunction( f121_local26, controller, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 					local f122_local0 = CoD.SafeGetModelValue( f121_local26:getModel(), "getActionFunction" )
-					local f122_local1 = f122_local0 and f122_local0( f121_arg0, f121_arg1, f121_arg2, f121_arg3 )
+					local f122_local1 = f122_local0 and f122_local0( element, menu, controller, model )
 					if f122_local1 then
-						f122_local1( f121_arg0, f121_arg1, f121_arg2, f121_arg3 )
+						f122_local1( element, menu, controller, model )
 					end
-					CoD.PCWidgetUtility.CloseContextualMenu( f121_arg1, f121_arg2 )
+					CoD.PCWidgetUtility.CloseContextualMenu( menu, controller )
 					return true
 				end, nil, false )
 			end
-			f121_arg1:AddButtonCallbackFunction( f121_arg1.ContextualMenu, f121_arg2, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f123_arg0, f123_arg1, f123_arg2, f123_arg3 )
-				CoD.PCWidgetUtility.CloseContextualMenu( f121_arg1, f121_arg2 )
+			menu:AddButtonCallbackFunction( menu.ContextualMenu, controller, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
+				CoD.PCWidgetUtility.CloseContextualMenu( menu, controller )
 				return true
 			end, nil, false )
-			f121_arg1.ContextualMenu:registerEventHandler( "input_source_changed", function ( element, event )
-				CoD.PCWidgetUtility.CloseContextualMenu( f121_arg1, f121_arg2 )
+			menu.ContextualMenu:registerEventHandler( "input_source_changed", function ( element, event )
+				CoD.PCWidgetUtility.CloseContextualMenu( menu, controller )
 				return true
 			end )
 			LUI.OverrideFunction_CallOriginalSecond( f120_arg0, "close", function ()
-				CoD.PCWidgetUtility.CloseContextualMenu( f121_arg1, f121_arg2 )
+				CoD.PCWidgetUtility.CloseContextualMenu( menu, controller )
 			end )
-			LUI.OverrideFunction_CallOriginalSecond( f121_arg0, "close", function ()
-				CoD.PCWidgetUtility.CloseContextualMenu( f121_arg1, f121_arg2 )
+			LUI.OverrideFunction_CallOriginalSecond( element, "close", function ()
+				CoD.PCWidgetUtility.CloseContextualMenu( menu, controller )
 			end )
 			if CoD.PCWidgetUtility.ContextualMenuTitleModel and not CoD.PCWidgetUtility.ContextualMenuXuidModel then
-				f121_arg1.ContextualMenu:subscribeToModel( CoD.PCWidgetUtility.ContextualMenuTitleModel, function ( model, f127_arg1 )
-					CoD.PCWidgetUtility.CloseContextualMenu( f121_arg1, f121_arg2 )
+				menu.ContextualMenu:subscribeToModel( CoD.PCWidgetUtility.ContextualMenuTitleModel, function ( model, f127_arg1 )
+					CoD.PCWidgetUtility.CloseContextualMenu( menu, controller )
 				end, false )
 			end
 			return true

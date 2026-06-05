@@ -20,7 +20,7 @@ CoD.CompassGroupMPContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local WZBlur = LUI.UIImage.new( 0, 0, 12, 332, 0, 0, 19, 331 )
 	WZBlur:setAlpha( 0 )
-	WZBlur:setImage( RegisterImage( 0xA795773B5DBEB33 ) )
+	WZBlur:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_map_square_backer_blur" ) )
 	WZBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
 	WZBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( WZBlur )
@@ -34,14 +34,14 @@ CoD.CompassGroupMPContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local Border = LUI.UIImage.new( 0, 0, 2, 322, 0, 0, 14, 326 )
 	Border:setAlpha( 0 )
 	Border:setScale( 0.99, 0.99 )
-	Border:setImage( RegisterImage( 0xE15EF82308F228B ) )
+	Border:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_map_square_border" ) )
 	self:addElement( Border )
 	self.Border = Border
 	
 	local bg = LUI.UIImage.new( 0.5, 0.5, -143.5, 143.5, 0.5, 0.5, -143.5, 143.5 )
 	bg:setRGB( 0.07, 0.07, 0.07 )
 	bg:setAlpha( 0 )
-	bg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x15B163CA03FCE8B ) )
+	bg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_elliptical_ring_normal" ) )
 	bg:setShaderVector( 0, 50, 0, 0, 0 )
 	bg:setShaderVector( 1, 100, 100, 0, 0 )
 	bg:setShaderVector( 2, 0, 0, 0, 0 )
@@ -66,14 +66,14 @@ CoD.CompassGroupMPContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local EMPbacker = LUI.UIImage.new( 0, 0, -1, 351, 0, 0, 8, 344 )
 	EMPbacker:setRGB( 0, 0, 0 )
 	EMPbacker:setAlpha( 0 )
-	EMPbacker:setImage( RegisterImage( 0x330E5EA57874A60 ) )
+	EMPbacker:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_compass" ) )
 	self:addElement( EMPbacker )
 	self.EMPbacker = EMPbacker
 	
 	local empMinimap = LUI.UIImage.new( 0, 0, -2, 350, 0, 0, 16.5, 352.5 )
 	empMinimap:setAlpha( 0 )
-	empMinimap:setImage( RegisterImage( 0x330E5EA57874A60 ) )
-	empMinimap:setMaterial( LUI.UIImage.GetCachedMaterial( 0xC284ECCBDADEF0B ) )
+	empMinimap:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_compass" ) )
+	empMinimap:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_emp" ) )
 	empMinimap:setShaderVector( 0, 30.27, 0, 0, 0 )
 	empMinimap:setShaderVector( 1, 1, 0, 0, 0 )
 	empMinimap:setShaderVector( 2, 1.5, 0, 0, 0 )
@@ -90,7 +90,7 @@ CoD.CompassGroupMPContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local EMPMinimapSquare = LUI.UIImage.new( 0, 0, 17, 333, 0, 0, 23, 335 )
 	EMPMinimapSquare:setAlpha( 0 )
 	EMPMinimapSquare:setImage( RegisterImage( 0xF6D3426FEBC0C41 ) )
-	EMPMinimapSquare:setMaterial( LUI.UIImage.GetCachedMaterial( 0xC284ECCBDADEF0B ) )
+	EMPMinimapSquare:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_emp" ) )
 	EMPMinimapSquare:setShaderVector( 0, 35.93, 0, 0, 0 )
 	EMPMinimapSquare:setShaderVector( 1, 0.83, 0, 0, 0 )
 	EMPMinimapSquare:setShaderVector( 2, 0.49, 0, 0, 0 )
@@ -98,7 +98,7 @@ CoD.CompassGroupMPContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.EMPMinimapSquare = EMPMinimapSquare
 	
 	local CompassGroupFixed = CoD.CompassGroupSquare.new( f1_arg0, f1_arg1, 0, 0, 16, 336, 0, 0, -10, 340 )
-	CompassGroupFixed:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xC212964B40FA826 ) )
+	CompassGroupFixed:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal_rtt" ) )
 	self:addElement( CompassGroupFixed )
 	self.CompassGroupFixed = CompassGroupFixed
 	
@@ -115,13 +115,13 @@ CoD.CompassGroupMPContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local LED = LUI.UIImage.new( 0, 0, 2, 352, 0, 0, 1, 351 )
 	LED:setAlpha( 0 )
-	LED:setImage( RegisterImage( 0xAB51226AFA7482D ) )
+	LED:setImage( RegisterImage( "uie_ui_hud_core_map_widget_led" ) )
 	LED:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LED )
 	self.LED = LED
 	
 	local Frame = LUI.UIImage.new( 0, 0, 1, 351, 0, 0, 1, 351 )
-	Frame:setImage( RegisterImage( 0x8948B5B65EE07D9 ) )
+	Frame:setImage( RegisterImage( "uie_ui_hud_core_frame_map_widget" ) )
 	self:addElement( Frame )
 	self.Frame = Frame
 	

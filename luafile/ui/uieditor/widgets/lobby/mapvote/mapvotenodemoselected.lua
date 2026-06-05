@@ -25,13 +25,13 @@ CoD.MapVoteNoDemoSelected.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local Icon = LUI.UIImage.new( 0.5, 0.5, -139.5, 139.5, 0.5, 0.5, -139.5, 139.5 )
 	Icon:setScale( 0.7, 0.7 )
-	Icon:setImage( RegisterImage( 0x9426B1DCBEC7B31 ) )
+	Icon:setImage( RegisterImage( "theater_film" ) )
 	self:addElement( Icon )
 	self.Icon = Icon
 	
 	local GameModeNew = CoD.MapVoteLabelLower.new( f1_arg0, f1_arg1, 0.5, 0.5, -140, 140, 1, 1, -39.5, -12.5 )
 	GameModeNew.StartMenuIdentitySubtitleBG00:setAlpha( 0.42 )
-	GameModeNew.SubTitle:setText( LocalizeToUpperString( 0x0 ) )
+	GameModeNew.SubTitle:setText( LocalizeToUpperString( "" ) )
 	self:addElement( GameModeNew )
 	self.GameModeNew = GameModeNew
 	

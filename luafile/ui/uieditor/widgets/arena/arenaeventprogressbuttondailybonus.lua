@@ -30,7 +30,7 @@ CoD.ArenaEventProgressButtonDailyBonus.new = function ( f1_arg0, f1_arg1, f1_arg
 	local DailyBonusArrow = LUI.UIImage.new( 0, 0, 1, 9, 0, 0, 27, 43 )
 	DailyBonusArrow:setRGB( 0.55, 0.77, 0.26 )
 	DailyBonusArrow:setAlpha( 0 )
-	DailyBonusArrow:setImage( RegisterImage( 0x1226A0CC6137EEE ) )
+	DailyBonusArrow:setImage( RegisterImage( "uie_ui_hud_common_triangle" ) )
 	self:addElement( DailyBonusArrow )
 	self.DailyBonusArrow = DailyBonusArrow
 	

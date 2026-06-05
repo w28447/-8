@@ -35,8 +35,8 @@ CoD.LoadingScreenHeader_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local DiagonalLine = LUI.UIImage.new( 0, 0, 21.5, 612.5, 0, 0, 1, 23 )
 	DiagonalLine:setRGB( 0.25, 0.25, 0.25 )
-	DiagonalLine:setImage( RegisterImage( 0x74DC40B8A3CDA25 ) )
-	DiagonalLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	DiagonalLine:setImage( RegisterImage( "uie_ui_menu_common_repeat_stripe" ) )
+	DiagonalLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	DiagonalLine:setShaderVector( 0, 8, 1, 0, 0 )
 	DiagonalLine:setShaderVector( 1, 0, 0, 0, 0 )
 	self:addElement( DiagonalLine )

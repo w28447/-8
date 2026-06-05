@@ -12,7 +12,7 @@ CoD.vhud_ms_StatusWidgetLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local ALTnumbers = LUI.UIText.new( 0, 1, 0, 0, 0, 0, 38, 62 )
 	ALTnumbers:setTTF( "default" )
-	ALTnumbers:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD756CD9A5F1F1B4 ) )
+	ALTnumbers:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration_cheap_blur" ) )
 	ALTnumbers:setShaderVector( 0, 0, 1, 0, 0 )
 	ALTnumbers:setShaderVector( 1, 0, 0, 0, 0 )
 	ALTnumbers:setShaderVector( 2, 0, 0, 0, 0 )

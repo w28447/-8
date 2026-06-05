@@ -14,8 +14,8 @@ CoD.StartMenu_QuitButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local DirectorGenericButton = CoD.DirectorGenericButton.new( f1_arg0, f1_arg1, 0, 0, 0, 250, 0, 0, 0, 92 )
-	DirectorGenericButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0x0 ) )
-	DirectorGenericButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0x0 ) )
+	DirectorGenericButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( "" ) )
+	DirectorGenericButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( "" ) )
 	self:addElement( DirectorGenericButton )
 	self.DirectorGenericButton = DirectorGenericButton
 	

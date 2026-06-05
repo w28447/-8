@@ -48,7 +48,7 @@ CoD.SupportSelectionOption.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 			modelName = "ScorestreakSelect.UpdateEquipped"
 		} )
 	end, false )
-	self:AddContextualMenuAction( f1_arg0, f1_arg1, 0x679ACA6FFC6C8F3, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
+	self:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/remove", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
 		if CoD.ScorestreakSelectUtility.IsScorestreakEquipped( f6_arg0, f6_arg1, f6_arg2 ) and not CoD.ScorestreakSelectUtility.IsScorestreakLocked( f6_arg0, f6_arg1, f6_arg2 ) then
 			return function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
 				CoD.ScorestreakSelectUtility.RemoveScorestreakOption( self, f7_arg1, f7_arg2 )

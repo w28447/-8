@@ -38,14 +38,14 @@ CoD.AAR_LeaguePlay_PlacementPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local Empty = LUI.UIImage.new( 0, 1, -8, 8, 0, 1, -8, 8 )
 	Empty:setScale( 0.67, 0.67 )
-	Empty:setImage( RegisterImage( 0xF53DA84C7B770BF ) )
+	Empty:setImage( RegisterImage( "uie_ui_menu_specialist_hub_selectbox_empty" ) )
 	Empty:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Empty )
 	self.Empty = Empty
 	
 	local dash = LUI.UIImage.new( 0, 0, 0, 64, 0, 0, 0, 64 )
 	dash:setScale( 1.5, 1.5 )
-	dash:setImage( RegisterImage( 0xEEB4FB140EAEAC ) )
+	dash:setImage( RegisterImage( "uie_ui_menu_cac_allocation_pip_full" ) )
 	self:addElement( dash )
 	self.dash = dash
 	

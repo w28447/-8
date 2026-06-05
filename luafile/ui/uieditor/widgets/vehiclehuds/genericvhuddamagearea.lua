@@ -12,13 +12,13 @@ CoD.genericVHUDdamageArea.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	lineBack:setRGB( 0.6, 0.82, 0.91 )
 	lineBack:setAlpha( 0.3 )
 	lineBack:setZoom( -20 )
-	lineBack:setImage( RegisterImage( 0xAF45D8BE466A938 ) )
+	lineBack:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_raps_damageiconlinergb" ) )
 	lineBack:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( lineBack )
 	self.lineBack = lineBack
 	
 	local fill = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	fill:setImage( RegisterImage( 0xAD09B90F5CA7CDA ) )
+	fill:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_raps_damageiconred" ) )
 	fill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	fill:setShaderVector( 0, 0, 1, 0, 0 )
 	fill:setShaderVector( 1, 0, 0, 0, 0 )
@@ -35,7 +35,7 @@ CoD.genericVHUDdamageArea.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local lineFront = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	lineFront:setRGB( 0.6, 0.82, 0.91 )
-	lineFront:setImage( RegisterImage( 0xAF45D8BE466A938 ) )
+	lineFront:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_raps_damageiconlinergb" ) )
 	lineFront:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( lineFront )
 	self.lineFront = lineFront

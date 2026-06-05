@@ -9,7 +9,7 @@ CoD.CallingCards_Asset_sparkle_star.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Image = LUI.UIImage.new( 0, 0, 0, 128, 0, 0, 0, 128 )
-	Image:setImage( RegisterImage( 0x7BB021BF254904C ) )
+	Image:setImage( RegisterImage( "uie_spin_star" ) )
 	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image )
 	self.Image = Image

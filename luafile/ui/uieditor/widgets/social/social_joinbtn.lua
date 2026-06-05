@@ -25,7 +25,7 @@ CoD.Social_JoinBtn.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local joinLabel = LUI.UIText.new( 0, 0, 52, 124, 0.5, 0.5, -7, 11 )
 	joinLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	joinLabel:setText( Engine[0xF9F1239CFD921FE]( 0x32C830F2EA4EA2D ) )
+	joinLabel:setText( Engine[0xF9F1239CFD921FE]( "menu/join_server_caps" ) )
 	joinLabel:setTTF( "dinnext_regular" )
 	joinLabel:setLetterSpacing( 2 )
 	joinLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

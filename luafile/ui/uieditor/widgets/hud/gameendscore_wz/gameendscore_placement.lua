@@ -13,7 +13,7 @@ CoD.GameEndScore_Placement.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local TextElimination = LUI.UIText.new( 0, 0, 0, 262, 0.5, 0.5, -6, 48 )
 	TextElimination:setAlpha( 0 )
-	TextElimination:setText( LocalizeToUpperString( 0xFF903BB7100ECD4 ) )
+	TextElimination:setText( LocalizeToUpperString( "ui/eliminated" ) )
 	TextElimination:setTTF( "ttmussels_demibold" )
 	TextElimination:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	TextElimination:setShaderVector( 0, 0.4, 0, 0, 0 )
@@ -59,7 +59,7 @@ CoD.GameEndScore_Placement.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	HeaderTextTeamRank:subscribeToGlobalModel( f1_arg1, "GameScore", "teamRanking", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
-			HeaderTextTeamRank:setText( LocalizeStringWithParameter( 0x50158F8FB37F010, f3_local0 ) )
+			HeaderTextTeamRank:setText( LocalizeStringWithParameter( "ui/warzone_placement", f3_local0 ) )
 		end
 	end )
 	self:addElement( HeaderTextTeamRank )

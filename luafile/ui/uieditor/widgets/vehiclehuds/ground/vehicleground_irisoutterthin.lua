@@ -8,14 +8,14 @@ CoD.VehicleGround_IrisOutterThin.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.soundSet = "default"
 	
 	local Image0 = LUI.UIImage.new( 0, 0, -30, 337, 0, 1, 0, 0 )
-	Image0:setImage( RegisterImage( 0x2FFC7E1F199FCAD ) )
+	Image0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_ground_irisoutterthin" ) )
 	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image0 )
 	self.Image0 = Image0
 	
 	local Image1 = LUI.UIImage.new( 1, 1, -367, 0, 0, 1, 0, 0 )
 	Image1:setZRot( -180 )
-	Image1:setImage( RegisterImage( 0x2FFC7E1F199FCAD ) )
+	Image1:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_ground_irisoutterthin" ) )
 	Image1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image1 )
 	self.Image1 = Image1

@@ -28,7 +28,7 @@ CoD.directorPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local Header = CoD.DirectorScreenHeader.new( f1_arg0, f1_arg1, 0.5, 0.5, -870, -227, 0, 0, 301, 401 )
 	Header:setAlpha( 0 )
 	Header:setZoom( 75 )
-	Header.Header:setText( LocalizeToUpperString( 0x56CB4013028D74E ) )
+	Header.Header:setText( LocalizeToUpperString( "menu/local" ) )
 	self:addElement( Header )
 	self.Header = Header
 	
@@ -223,8 +223,8 @@ CoD.directorPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 			modelName = "offlineScreenState"
 		} )
 	end, false )
-	FindMatchButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0xA14B986BB3C650A ) )
-	FindMatchButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0xA14B986BB3C650A ) )
+	FindMatchButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( "menu/find_match" ) )
+	FindMatchButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( "menu/find_match" ) )
 	CustomGamesButton = FindMatchButton
 	FindMatchMissingDLCErrorTriangle = FindMatchButton.subscribeToModel
 	DirectorLobbyPoseMembers = Engine.GetGlobalModel()
@@ -265,24 +265,24 @@ CoD.directorPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f26_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( FindMatchButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3 )
-		if not IsZombies() and not CoD.DirectorUtility.IsNumClientsExceeded( f27_arg2 ) and not CoD.DirectorUtility.ShouldLockFindMatchButton( f27_arg2 ) then
-			CoD.DirectorUtility.NavigateToPublicLobbyForCurrentMenuMode( f27_arg1, f27_arg2 )
+	f1_arg0:AddButtonCallbackFunction( FindMatchButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not IsZombies() and not CoD.DirectorUtility.IsNumClientsExceeded( controller ) and not CoD.DirectorUtility.ShouldLockFindMatchButton( controller ) then
+			CoD.DirectorUtility.NavigateToPublicLobbyForCurrentMenuMode( menu, controller )
 			PlaySoundAlias( "uin_press_generic" )
 			return true
-		elseif not IsZombies() and CoD.DirectorUtility.IsNumClientsExceeded( f27_arg2 ) then
+		elseif not IsZombies() and CoD.DirectorUtility.IsNumClientsExceeded( controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.DirectorUtility.OpenTooManyClientsPopup( self, f27_arg2 )
+			CoD.DirectorUtility.OpenTooManyClientsPopup( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f28_arg0, f28_arg1, f28_arg2 )
-		if not IsZombies() and not CoD.DirectorUtility.IsNumClientsExceeded( f28_arg2 ) and not CoD.DirectorUtility.ShouldLockFindMatchButton( f28_arg2 ) then
-			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not IsZombies() and not CoD.DirectorUtility.IsNumClientsExceeded( controller ) and not CoD.DirectorUtility.ShouldLockFindMatchButton( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif not IsZombies() and CoD.DirectorUtility.IsNumClientsExceeded( f28_arg2 ) then
-			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif not IsZombies() and CoD.DirectorUtility.IsNumClientsExceeded( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -401,13 +401,13 @@ CoD.directorPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		} )
 	end, false )
 	CustomGamesButton.DirectorSelectButtonMiniInternal.MiddleText.__MiddleText_StringReference = function ()
-		CustomGamesButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( CoD.DirectorUtility.GetCustomGamesName( 0x85D9C7D7DDC8EE0 ) ) )
+		CustomGamesButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( CoD.DirectorUtility.GetCustomGamesName( "menu/custom_games" ) ) )
 	end
 	
 	CustomGamesButton.DirectorSelectButtonMiniInternal.MiddleText.__MiddleText_StringReference()
 	CustomGamesButton.DirectorSelectButtonMiniInternal.MiddleText:setTTF( "ttmussels_regular" )
 	CustomGamesButton.DirectorSelectButtonMiniInternal.MiddleTextFocus.__MiddleTextFocus_String = function ()
-		CustomGamesButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( CoD.DirectorUtility.GetCustomGamesName( 0x85D9C7D7DDC8EE0 ) ) )
+		CustomGamesButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( CoD.DirectorUtility.GetCustomGamesName( "menu/custom_games" ) ) )
 	end
 	
 	CustomGamesButton.DirectorSelectButtonMiniInternal.MiddleTextFocus.__MiddleTextFocus_String()
@@ -428,41 +428,41 @@ CoD.directorPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f42_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( CustomGamesButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f43_arg0, f43_arg1, f43_arg2, f43_arg3 )
+	f1_arg0:AddButtonCallbackFunction( CustomGamesButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsZombies() and IsPC() then
 			PlaySoundAlias( "uin_press_generic" )
-			CoD.DirectorUtility.NavigateToCustomLobbyForCurrentMode( f43_arg1, f43_arg2 )
-			SetLoseFocusToSelf( self, f43_arg2 )
+			CoD.DirectorUtility.NavigateToCustomLobbyForCurrentMode( menu, controller )
+			SetLoseFocusToSelf( self, controller )
 			return true
 		elseif IsZombies() then
 			PlaySoundAlias( "uin_press_generic" )
-			OpenSystemOverlay( self, f43_arg1, f43_arg2, "CustomMutationsNotification" )
-			SetLoseFocusToSelf( self, f43_arg2 )
+			OpenSystemOverlay( self, menu, controller, "CustomMutationsNotification" )
+			SetLoseFocusToSelf( self, controller )
 			return true
 		elseif IsPC() and not IsZombies() then
 			PlaySoundAlias( "uin_press_generic" )
-			OpenCustomGamesLobby( f43_arg1, f43_arg2 )
+			OpenCustomGamesLobby( menu, controller )
 			return true
 		elseif not IsZombies() then
 			PlaySoundAlias( "uin_press_generic" )
-			OpenSystemOverlay( self, f43_arg1, f43_arg2, "CustomGamesNotification" )
-			SetLoseFocusToSelf( self, f43_arg2 )
+			OpenSystemOverlay( self, menu, controller, "CustomGamesNotification" )
+			SetLoseFocusToSelf( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f44_arg0, f44_arg1, f44_arg2 )
+	end, function ( element, menu, controller )
 		if IsZombies() and IsPC() then
-			CoD.Menu.SetButtonLabel( f44_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsZombies() then
-			CoD.Menu.SetButtonLabel( f44_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsPC() and not IsZombies() then
-			CoD.Menu.SetButtonLabel( f44_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif not IsZombies() then
-			CoD.Menu.SetButtonLabel( f44_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -655,17 +655,17 @@ CoD.directorPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f66_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( DirectorMapGameTypeAndDifficulty, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f67_arg0, f67_arg1, f67_arg2, f67_arg3 )
+	f1_arg0:AddButtonCallbackFunction( DirectorMapGameTypeAndDifficulty, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsLobbyHostOfCurrentMenu() and IsZombies() then
-			CoD.LobbyUtility.SetLeaderActivityAndOpenOverlayNoDeps( self, f67_arg2, CoD.LobbyUtility.LeaderActivity.CHOOSING_MAP, "DirectorGamemodeSelectionZM" )
+			CoD.LobbyUtility.SetLeaderActivityAndOpenOverlayNoDeps( self, controller, CoD.LobbyUtility.LeaderActivity.CHOOSING_MAP, "DirectorGamemodeSelectionZM" )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f68_arg0, f68_arg1, f68_arg2 )
+	end, function ( element, menu, controller )
 		if IsLobbyHostOfCurrentMenu() and IsZombies() then
-			CoD.Menu.SetButtonLabel( f68_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -764,9 +764,9 @@ CoD.directorPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		} )
 	end, false )
 	QuickPlay:setAlpha( 0 )
-	QuickPlay.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0x6A52F3FB63F2F76 ) )
+	QuickPlay.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( "zmui/play_ztutorial" ) )
 	QuickPlay.DirectorSelectButtonMiniInternal.MiddleText:setTTF( "ttmussels_regular" )
-	QuickPlay.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0x6A52F3FB63F2F76 ) )
+	QuickPlay.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( "zmui/play_ztutorial" ) )
 	QuickPlay.DirectorSelectButtonMiniInternal.MiddleTextFocus:setTTF( "ttmussels_regular" )
 	f1_local14 = QuickPlay
 	MapAndGameType = QuickPlay.subscribeToModel
@@ -790,17 +790,17 @@ CoD.directorPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f80_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( QuickPlay, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f81_arg0, f81_arg1, f81_arg2, f81_arg3 )
+	f1_arg0:AddButtonCallbackFunction( QuickPlay, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if CoD.ModelUtility.IsGlobalModelValueEqualTo( "lobbyRoot.lobbyList.playerCount", 1 ) and CoD.ModelUtility.IsGlobalModelValueTrue( "ZMLobbyExclusions.ShowTutorialQuickPlay" ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.ZombieUtility.QuickPlayPregame( f81_arg1, f81_arg2 )
+			CoD.ZombieUtility.QuickPlayPregame( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f82_arg0, f82_arg1, f82_arg2 )
+	end, function ( element, menu, controller )
 		if CoD.ModelUtility.IsGlobalModelValueEqualTo( "lobbyRoot.lobbyList.playerCount", 1 ) and CoD.ModelUtility.IsGlobalModelValueTrue( "ZMLobbyExclusions.ShowTutorialQuickPlay" ) then
-			CoD.Menu.SetButtonLabel( f82_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xAC3B80C833B60E1, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select_caps", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -877,17 +877,17 @@ CoD.directorPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f90_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( MapAndGameType, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f91_arg0, f91_arg1, f91_arg2, f91_arg3 )
-		if not IsZombies() and IsPartyLeader( f91_arg2 ) then
-			CoD.DirectorUtility.DirectorOpenOverlayWithCurrentMenuMode( f91_arg1, f91_arg2, "DirectorFindGame" )
+	f1_arg0:AddButtonCallbackFunction( MapAndGameType, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not IsZombies() and IsPartyLeader( controller ) then
+			CoD.DirectorUtility.DirectorOpenOverlayWithCurrentMenuMode( menu, controller, "DirectorFindGame" )
 			PlaySoundAlias( "uin_press_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f92_arg0, f92_arg1, f92_arg2 )
-		if not IsZombies() and IsPartyLeader( f92_arg2 ) then
-			CoD.Menu.SetButtonLabel( f92_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if not IsZombies() and IsPartyLeader( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

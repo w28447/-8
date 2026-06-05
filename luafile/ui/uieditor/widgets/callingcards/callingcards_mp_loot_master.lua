@@ -1,32 +1,32 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_asset_sparkle_star" )
 require( "ui/uieditor/widgets/callingcards/callingcards_asset_stingertail" )
 
-CoD[0xDF8326B7C9D17D4] = InheritFrom( LUI.UIElement )
-CoD[0xDF8326B7C9D17D4].__defaultWidth = 960
-CoD[0xDF8326B7C9D17D4].__defaultHeight = 240
-CoD[0xDF8326B7C9D17D4].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_mp_loot_master = InheritFrom( LUI.UIElement )
+CoD.callingcards_mp_loot_master.__defaultWidth = 960
+CoD.callingcards_mp_loot_master.__defaultHeight = 240
+CoD.callingcards_mp_loot_master.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0xDF8326B7C9D17D4] )
+	self:setClass( CoD.callingcards_mp_loot_master )
 	self.id = "CallingCards_MP_Loot_Master"
 	self.soundSet = "default"
 	self.anyChildUsesUpdateState = true
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local background = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	background:setImage( RegisterImage( 0x4308D8C61DC5DCF ) )
+	background:setImage( RegisterImage( "uie_callingcards_mp_loot_master_background" ) )
 	self:addElement( background )
 	self.background = background
 	
 	local debris01 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	debris01:setImage( RegisterImage( "uie_callingcards_mp_loot_master_debris" ) )
-	debris01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	debris01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	debris01:setShaderVector( 0, 1, 1, 0, 0 )
 	debris01:setShaderVector( 1, 0.05, 0, 0, 0 )
 	self:addElement( debris01 )
 	self.debris01 = debris01
 	
 	local lighteningGlow = LUI.UIImage.new( 0, 0, 176.5, 416.5, 0, 0, 0, 240 )
-	lighteningGlow:setImage( RegisterImage( 0xE903BC5AA4093DE ) )
+	lighteningGlow:setImage( RegisterImage( "uie_callingcards_mp_loot_master_lightening_glow" ) )
 	lighteningGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( lighteningGlow )
 	self.lighteningGlow = lighteningGlow
@@ -38,48 +38,48 @@ CoD[0xDF8326B7C9D17D4].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.lighteningGlow2 = lighteningGlow2
 	
 	local lionmouth = LUI.UIImage.new( 0, 0, 562.5, 650.5, 0, 0, 145, 233 )
-	lionmouth:setImage( RegisterImage( 0x7FF26DCFF6CBF6C ) )
+	lionmouth:setImage( RegisterImage( "uie_callingcards_mp_loot_master_lionmouth" ) )
 	self:addElement( lionmouth )
 	self.lionmouth = lionmouth
 	
 	local lionmouthHot = LUI.UIImage.new( 0, 0, 562.5, 650.5, 0, 0, 137.5, 225.5 )
-	lionmouthHot:setImage( RegisterImage( 0x1052017B555EE20 ) )
+	lionmouthHot:setImage( RegisterImage( "uie_callingcards_mp_loot_master_lionmouth_hot" ) )
 	self:addElement( lionmouthHot )
 	self.lionmouthHot = lionmouthHot
 	
 	local LionTail = LUI.UIImage.new( 0, 0, 814, 998, 0, 0, -10, 78 )
-	LionTail:setImage( RegisterImage( 0xA1063294597C7F3 ) )
+	LionTail:setImage( RegisterImage( "uie_callingcards_mp_loot_master_liontail" ) )
 	self:addElement( LionTail )
 	self.LionTail = LionTail
 	
 	local lionWing = LUI.UIImage.new( 0, 0, 233.5, 689.5, 0, 0, -24, 152 )
-	lionWing:setImage( RegisterImage( 0x7B2DC3442CF92CA ) )
+	lionWing:setImage( RegisterImage( "uie_callingcards_mp_loot_master_lionwing" ) )
 	self:addElement( lionWing )
 	self.lionWing = lionWing
 	
 	local lionbody = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	lionbody:setImage( RegisterImage( 0x7C614E2057F29E5 ) )
+	lionbody:setImage( RegisterImage( "uie_callingcards_mp_loot_master_lionbody" ) )
 	self:addElement( lionbody )
 	self.lionbody = lionbody
 	
 	local LionMane01 = LUI.UIImage.new( 0, 0, 502, 822, 0, 0, 0, 240 )
-	LionMane01:setImage( RegisterImage( 0xFF11E13194ABDE8 ) )
+	LionMane01:setImage( RegisterImage( "uie_callingcards_mp_loot_master_lionmane_01" ) )
 	self:addElement( LionMane01 )
 	self.LionMane01 = LionMane01
 	
 	local LionMane03 = LUI.UIImage.new( 0, 0, 523.5, 651.5, 0, 0, 16, 128 )
-	LionMane03:setImage( RegisterImage( 0xFF12013194AC14E ) )
+	LionMane03:setImage( RegisterImage( "uie_callingcards_mp_loot_master_lionmane_03" ) )
 	self:addElement( LionMane03 )
 	self.LionMane03 = LionMane03
 	
 	local LionMane02 = LUI.UIImage.new( 0, 0, 501, 821, 0, 0, 2, 242 )
-	LionMane02:setImage( RegisterImage( 0xFF12113194AC301 ) )
+	LionMane02:setImage( RegisterImage( "uie_callingcards_mp_loot_master_lionmane_02" ) )
 	self:addElement( LionMane02 )
 	self.LionMane02 = LionMane02
 	
 	local debris2 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	debris2:setAlpha( 0.5 )
-	debris2:setImage( RegisterImage( 0x7562860B0114742 ) )
+	debris2:setImage( RegisterImage( "uie_callingcards_mp_loot_master_debris2" ) )
 	debris2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	debris2:setShaderVector( 0, 1, 1, 0, 0 )
 	debris2:setShaderVector( 1, 0.1, 0, 0, 0 )
@@ -88,7 +88,7 @@ CoD[0xDF8326B7C9D17D4].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local lionclawSheen = LUI.UIImage.new( 0, 0, 755, 899, 0, 0, 181, 237 )
 	lionclawSheen:setAlpha( 0.5 )
-	lionclawSheen:setImage( RegisterImage( 0x29A0A7259A2A7CC ) )
+	lionclawSheen:setImage( RegisterImage( "uie_callingcards_mp_loot_master_lionclaw_sheen" ) )
 	lionclawSheen:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	lionclawSheen:setShaderVector( 0, 0.8, 1, 0, 0 )
 	lionclawSheen:setShaderVector( 1, 0.03, 0, 0, 0 )
@@ -111,7 +111,7 @@ CoD[0xDF8326B7C9D17D4].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.CallingCardsAssetsparklestar2 = CallingCardsAssetsparklestar2
 	
 	local cropper = LUI.UIImage.new( 0, 0, -32, 992, 0, 0, -392, 632 )
-	cropper:setImage( RegisterImage( 0x7EEE1693E39382A ) )
+	cropper:setImage( RegisterImage( "uie_stage_crop_prop" ) )
 	self:addElement( cropper )
 	self.cropper = cropper
 	
@@ -124,7 +124,7 @@ CoD[0xDF8326B7C9D17D4].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0xDF8326B7C9D17D4].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_mp_loot_master.__resetProperties = function ( f2_arg0 )
 	f2_arg0.LionTail:completeAnimation()
 	f2_arg0.lionmouthHot:completeAnimation()
 	f2_arg0.lionWing:completeAnimation()
@@ -162,7 +162,7 @@ CoD[0xDF8326B7C9D17D4].__resetProperties = function ( f2_arg0 )
 	f2_arg0.CallingCardsAssetsparklestar2:setTopBottom( 0, 0, 145, 273 )
 end
 
-CoD[0xDF8326B7C9D17D4].__clipsPerState = {
+CoD.callingcards_mp_loot_master.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -522,7 +522,7 @@ CoD[0xDF8326B7C9D17D4].__clipsPerState = {
 		end
 	}
 }
-CoD[0xDF8326B7C9D17D4].__onClose = function ( f54_arg0 )
+CoD.callingcards_mp_loot_master.__onClose = function ( f54_arg0 )
 	f54_arg0.CallingCardsAssetStingertail:close()
 	f54_arg0.CallingCardsAssetsparklestar:close()
 	f54_arg0.CallingCardsAssetsparklestar2:close()

@@ -39,8 +39,8 @@ CoD.ContractFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 			modelName = "ContractsForceUpdate"
 		} )
 	end, false )
-	PurchasedContractsButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0xB501D2CF5C8B98A ) )
-	PurchasedContractsButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0xB501D2CF5C8B98A ) )
+	PurchasedContractsButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( "menu/view_all" ) )
+	PurchasedContractsButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( "menu/view_all" ) )
 	PurchasedContractsButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f4_local0 = nil
 		if element.gainFocus then
@@ -51,12 +51,12 @@ CoD.ContractFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PurchasedContractsButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		OpenOverlay( self, "PurchasedContractsMenu", f5_arg2 )
+	f1_arg0:AddButtonCallbackFunction( PurchasedContractsButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		OpenOverlay( self, "PurchasedContractsMenu", controller )
 		PlaySoundAlias( "uin_press_generic" )
 		return true
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( PurchasedContractsButton )
@@ -65,8 +65,8 @@ CoD.ContractFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	TransactionDeepLinkButton = nil
 	
 	TransactionDeepLinkButton = CoD.DirectorPreGameButton.new( f1_arg0, f1_arg1, 0.88, 0.88, -936.5, -706.5, 0, 0, 781, 851 )
-	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( 0x4031C820A02E7BA ) )
-	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( 0x4031C820A02E7BA ) )
+	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( "menu/transaction_history" ) )
+	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( "menu/transaction_history" ) )
 	TransactionDeepLinkButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f7_local0 = nil
 		if element.gainFocus then
@@ -77,31 +77,31 @@ CoD.ContractFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f7_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
+	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, model )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( f8_arg2 )
+			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( controller )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( f10_arg2 )
+			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( controller )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
 		else
 			return false
@@ -212,12 +212,12 @@ CoD.ContractFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f13_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PurchasedContractList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
+	f1_arg0:AddButtonCallbackFunction( PurchasedContractList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		PlaySoundAlias( "uin_toggle_generic" )
-		CoD.ContractUtility.OpenContractDetails( self, f14_arg0, f14_arg2 )
+		CoD.ContractUtility.OpenContractDetails( self, element, controller )
 		return true
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( PurchasedContractList )
@@ -252,17 +252,17 @@ CoD.ContractFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f18_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PurchasableContractList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f19_arg0, f19_arg2, "purchased" ) then
+	f1_arg0:AddButtonCallbackFunction( PurchasableContractList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "purchased" ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.ContractUtility.OpenContractDetails( self, f19_arg0, f19_arg2 )
+			CoD.ContractUtility.OpenContractDetails( self, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f20_arg0, f20_arg1, f20_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f20_arg0, f20_arg2, "purchased" ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "purchased" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

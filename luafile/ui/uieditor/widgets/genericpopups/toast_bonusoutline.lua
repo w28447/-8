@@ -16,7 +16,7 @@ CoD.Toast_BonusOutline.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local Bonus = LUI.UIText.new( 0.5, 0.5, -113, 107, 1, 1, -25, 0 )
 	Bonus:setRGB( 0, 0, 0 )
-	Bonus:setText( Engine[0xF9F1239CFD921FE]( 0x800CBD9308E73C2 ) )
+	Bonus:setText( Engine[0xF9F1239CFD921FE]( "mpui/bonus_caps" ) )
 	Bonus:setTTF( "dinnext_regular" )
 	Bonus:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	Bonus:setShaderVector( 0, 0.06, 0, 0, 0 )

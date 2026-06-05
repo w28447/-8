@@ -9,13 +9,13 @@ Lobby.CharacterSelection.InvalidCharacterData = {
 	characterIndex = Lobby.CharacterSelection.InvalidCharacterIndex
 }
 Lobby.CharacterSelection.SelectedCharacterStats = {
-	[Enum.eModes[0x3723205FAE52C4A]] = {
-		selectedIndex = 0xF1E35475B50AFC7,
-		characterArray = 0x71004E0B0F9DB64
+	[Enum.eModes.mode_zombies] = {
+		selectedIndex = "selectedcharacterindex_zm",
+		characterArray = "zmcharacters"
 	},
-	[Enum.eModes[0xBF1DCC8138A9D39]] = {
-		selectedIndex = 0xF4B2C475B778E67,
-		characterArray = 0x45B0C69A09ED208
+	[Enum.eModes.mode_warzone] = {
+		selectedIndex = "selectedcharacterindex_wz",
+		characterArray = "wzcharacters"
 	}
 }
 Lobby.CharacterSelection.GetCurrentMap = function ()
@@ -29,7 +29,7 @@ Lobby.CharacterSelection.CharacterIsValid = function ( f2_arg0, f2_arg1 )
 		return false
 	end
 	local f2_local0 = Engine.CurrentSessionMode()
-	if f2_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	if f2_local0 == Enum.eModes.mode_zombies then
 		local f2_local1 = Lobby.CharacterSelection.GetMaxUniqueRolesPerTeam( f2_arg0, f2_arg1 )
 		local f2_local2 = Engine[0x5A93802BE50A531]( Enum.LobbyModule[0x98EA1BB7164D103], f2_arg0 )
 		local f2_local3 = Enum.LobbyModule[0x98EA1BB7164D103]
@@ -50,12 +50,12 @@ Lobby.CharacterSelection.CharacterIsValid = function ( f2_arg0, f2_arg1 )
 			for f2_local11, f2_local12 in ipairs( f2_local4.sessionClients ) do
 				if f2_local12.clientNum ~= f2_arg0 then
 					local f2_local10 = Engine[0xB678B832BC9DC0]( f2_local0, f2_local12.characterDraft.characterIndex )
-					f2_local6[f2_local10[0x3795D31807EAF6F]] = true
+					f2_local6[f2_local10.globalcharacterindex] = true
 				end
 			end
 			for f2_local11, f2_local12 in pairs( f2_local5.zmCharacters ) do
 				local f2_local10 = Engine[0xB678B832BC9DC0]( f2_local0, f2_local12.characterIndex )
-				if f2_local6[f2_local10[0x3795D31807EAF6F]] == nil and f2_local12.characterIndex == f2_arg1 then
+				if f2_local6[f2_local10.globalcharacterindex] == nil and f2_local12.characterIndex == f2_arg1 then
 					return true
 				end
 			end
@@ -67,7 +67,7 @@ end
 
 Lobby.CharacterSelection.GetDefaultCharacter = function ( f3_arg0 )
 	local f3_local0 = Engine.CurrentSessionMode()
-	if f3_local0 ~= Enum.eModes[0xBF1DCC8138A9D39] then
+	if f3_local0 ~= Enum.eModes.mode_warzone then
 		return nil
 	elseif f3_arg0 < 0 then
 		return nil
@@ -99,7 +99,7 @@ Lobby.CharacterSelection.GetDefaultCharacter = function ( f3_arg0 )
 end
 
 Lobby.CharacterSelection.InitializeLobby = function ()
-	if Engine.IsInGame() or Engine.CurrentSessionMode() ~= Enum.eModes[0x3723205FAE52C4A] then
+	if Engine.IsInGame() or Engine.CurrentSessionMode() ~= Enum.eModes.mode_zombies then
 		return 
 	end
 	local f4_local0 = Engine[0xC3DF042E7492B66]( Enum.LobbyModule[0x98EA1BB7164D103] )
@@ -114,31 +114,31 @@ Lobby.CharacterSelection.InitializeLobby = function ()
 end
 
 Lobby.CharacterSelection.OnSetGametype = function ( f5_arg0 )
-	if Engine.CurrentSessionMode() == Enum.eModes[0x3723205FAE52C4A] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_zombies then
 		Lobby.CharacterSelection.InitializeLobby()
 	end
 end
 
 Lobby.CharacterSelection.OnClientAdded = function ( f6_arg0 )
-	if Engine.CurrentSessionMode() == Enum.eModes[0x3723205FAE52C4A] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_zombies then
 		Lobby.CharacterSelection.InitializeLobby()
 	end
 end
 
 Lobby.CharacterSelection.OnChangeMap = function ( f7_arg0 )
-	if Engine.CurrentSessionMode() == Enum.eModes[0x3723205FAE52C4A] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_zombies then
 		Lobby.CharacterSelection.InitializeLobby()
 	end
 end
 
 Lobby.CharacterSelection.OnPrivateLobbyServerDataUpdate = function ( f8_arg0 )
-	if Engine.CurrentSessionMode() == Enum.eModes[0x3723205FAE52C4A] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_zombies then
 		Lobby.CharacterSelection.InitializeLobby()
 	end
 end
 
 Lobby.CharacterSelection.OnGameLobbyGameServerDataUpdate = function ( f9_arg0 )
-	if Engine.CurrentSessionMode() == Enum.eModes[0x3723205FAE52C4A] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_zombies then
 		Lobby.CharacterSelection.InitializeLobby()
 	end
 end
@@ -184,9 +184,9 @@ Lobby.CharacterSelection.OnClientSelectionReceived = function ( f14_arg0 )
 		return 
 	end
 	local f14_local0 = Engine.CurrentSessionMode()
-	if f14_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	if f14_local0 == Enum.eModes.mode_warzone then
 		Engine[0x4558F0683EF31FC]( Engine[0xC3DF042E7492B66]( Enum.LobbyModule[0x98EA1BB7164D103] ), f14_arg0.xuid, f14_arg0.characterData, 0 )
-	elseif f14_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f14_local0 == Enum.eModes.mode_zombies then
 		local f14_local1 = Lobby.CharacterSelection.GetClientNumForXUID( f14_arg0.xuid )
 		local f14_local2 = Lobby.CharacterSelection.GetSelectedCharacter( f14_arg0.xuid )
 		if f14_local1 ~= LuaDefine.INVALID_CLIENT_INDEX and Lobby.CharacterSelection.CharacterIsValid( f14_local1, f14_arg0.characterData.characterIndex ) then
@@ -196,9 +196,9 @@ Lobby.CharacterSelection.OnClientSelectionReceived = function ( f14_arg0 )
 end
 
 Lobby.CharacterSelection.GetRandomUnpickedCharacter = function ( f15_arg0 )
-	if Engine.CurrentSessionMode() == Enum.eModes[0xB22E0240605CFFE] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_invalid then
 		return Lobby.CharacterSelection.InvalidCharacterData
-	elseif Engine.CurrentSessionMode() == Enum.eModes[0x3723205FAE52C4A] then
+	elseif Engine.CurrentSessionMode() == Enum.eModes.mode_zombies then
 		local f15_local0 = Lobby.CharacterSelection.GetCurrentMap()
 		if f15_local0 and f15_local0.zmCharacters then
 			local f15_local1 = {}
@@ -221,7 +221,7 @@ end
 
 Lobby.CharacterSelection.GetValidWarzoneCharacterSelections = function ( f16_arg0 )
 	local f16_local0 = {}
-	local f16_local1 = Enum.eModes[0xBF1DCC8138A9D39]
+	local f16_local1 = Enum.eModes.mode_warzone
 	for f16_local6, f16_local7 in ipairs( Engine.GetHeroList( f16_local1 ) ) do
 		if f16_local7.disabled == false then
 			local f16_local5 = Engine[0xB678B832BC9DC0]( f16_local1, f16_local7.bodyIndex )
@@ -235,7 +235,7 @@ end
 
 Lobby.CharacterSelection.GetDefaultWarzoneCharacters = function ( f17_arg0 )
 	local f17_local0 = {}
-	local f17_local1 = Enum.eModes[0xBF1DCC8138A9D39]
+	local f17_local1 = Enum.eModes.mode_warzone
 	for f17_local6, f17_local7 in ipairs( Engine.GetHeroList( f17_local1 ) ) do
 		if f17_local7.disabled == false then
 			local f17_local5 = Engine[0xB678B832BC9DC0]( f17_local1, f17_local7.bodyIndex )

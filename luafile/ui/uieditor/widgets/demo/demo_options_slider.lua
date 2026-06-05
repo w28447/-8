@@ -16,20 +16,20 @@ CoD.demo_options_slider.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local BlackBox2 = LUI.UIImage.new( 0, 0, 364, 792, 0, 0, 5, 47 )
 	BlackBox2:setRGB( 0, 0, 0 )
 	BlackBox2:setAlpha( 0.8 )
-	BlackBox2:setImage( RegisterImage( 0x535D18C44834110 ) )
+	BlackBox2:setImage( RegisterImage( "uie_t7_menu_cac_buttonboxlrgidlefull" ) )
 	self:addElement( BlackBox2 )
 	self.BlackBox2 = BlackBox2
 	
 	local BlackBox = LUI.UIImage.new( 0, 0, 22, 351, 0, 0, 5, 47 )
 	BlackBox:setRGB( 0, 0, 0 )
 	BlackBox:setAlpha( 0.8 )
-	BlackBox:setImage( RegisterImage( 0x535D18C44834110 ) )
+	BlackBox:setImage( RegisterImage( "uie_t7_menu_cac_buttonboxlrgidlefull" ) )
 	self:addElement( BlackBox )
 	self.BlackBox = BlackBox
 	
 	local BoxButtonLrgIdle = LUI.UIImage.new( 0, 0, 16, 354, 0, 0, 5, 47 )
 	BoxButtonLrgIdle:setAlpha( 0.25 )
-	BoxButtonLrgIdle:setImage( RegisterImage( 0x535D18C44834110 ) )
+	BoxButtonLrgIdle:setImage( RegisterImage( "uie_t7_menu_cac_buttonboxlrgidlefull" ) )
 	BoxButtonLrgIdle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BoxButtonLrgIdle:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BoxButtonLrgIdle )
@@ -37,7 +37,7 @@ CoD.demo_options_slider.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local BoxButtonLrgIdle0 = LUI.UIImage.new( 0, 0, 361, 792, 0, 0, 5, 47 )
 	BoxButtonLrgIdle0:setAlpha( 0.25 )
-	BoxButtonLrgIdle0:setImage( RegisterImage( 0x535D18C44834110 ) )
+	BoxButtonLrgIdle0:setImage( RegisterImage( "uie_t7_menu_cac_buttonboxlrgidlefull" ) )
 	BoxButtonLrgIdle0:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BoxButtonLrgIdle0:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BoxButtonLrgIdle0 )
@@ -99,7 +99,7 @@ CoD.demo_options_slider.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local glitch = LUI.UIImage.new( 0, 1, 352, -18, 0, 0, -4, 16 )
 	glitch:setRGB( 1, 0.09, 0 )
 	glitch:setAlpha( 0 )
-	glitch:setImage( RegisterImage( 0xCE95AC38BD2BD41 ) )
+	glitch:setImage( RegisterImage( "uie_t7_effect_glitches_menu10" ) )
 	glitch:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( glitch )
 	self.glitch = glitch
@@ -107,7 +107,7 @@ CoD.demo_options_slider.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local glitch2 = LUI.UIImage.new( 0, 1, 352, -18, 1, 1, -13, 9 )
 	glitch2:setRGB( 1, 0.15, 0 )
 	glitch2:setAlpha( 0 )
-	glitch2:setImage( RegisterImage( 0xCE95AC38BD2BD41 ) )
+	glitch2:setImage( RegisterImage( "uie_t7_effect_glitches_menu10" ) )
 	glitch2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( glitch2 )
 	self.glitch2 = glitch2

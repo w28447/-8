@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
-require( "x64:2b3a36f75bb6e0e" )
+require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settingsliderarrow" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )
 require( "ui/uieditor/widgets/startmenu/startmenu_frame_nobg" )
 
@@ -61,11 +61,11 @@ CoD.StartMenu_Options_NumOption.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( leftArrow, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		SendButtonPressToMenuEx( f4_arg1, f4_arg2, Enum.LUIButton[0x57783F8DA4AAEF] )
+	f1_arg0:AddButtonCallbackFunction( leftArrow, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
+		SendButtonPressToMenuEx( menu, controller, Enum.LUIButton[0x57783F8DA4AAEF] )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "MOUSE1" )
 		return false
 	end, false )
 	self:addElement( leftArrow )
@@ -83,11 +83,11 @@ CoD.StartMenu_Options_NumOption.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f6_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( rightArrow, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		SendButtonPressToMenuEx( f7_arg1, f7_arg2, Enum.LUIButton[0x571F08AD84807E0] )
+	f1_arg0:AddButtonCallbackFunction( rightArrow, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
+		SendButtonPressToMenuEx( menu, controller, Enum.LUIButton[0x571F08AD84807E0] )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "MOUSE1" )
 		return false
 	end, false )
 	self:addElement( rightArrow )

@@ -19,7 +19,7 @@ CoD.PC_StartMenu_Options_KeybindMessage_Text.new = function ( f1_arg0, f1_arg1, 
 	self.Stripes = Stripes
 	
 	local Icon = LUI.UIImage.new( 0, 0, -70, -10, 0.5, 0.5, -30, 30 )
-	Icon:setImage( RegisterImage( 0xF82DBBC93FD9A06 ) )
+	Icon:setImage( RegisterImage( "uie_success_icon" ) )
 	self:addElement( Icon )
 	self.Icon = Icon
 	
@@ -75,7 +75,7 @@ CoD.PC_StartMenu_Options_KeybindMessage_Text.__resetProperties = function ( f3_a
 	f3_arg0.RecordMessage:completeAnimation()
 	f3_arg0.Icon:setRGB( 1, 1, 1 )
 	f3_arg0.Icon:setAlpha( 1 )
-	f3_arg0.Icon:setImage( RegisterImage( 0xF82DBBC93FD9A06 ) )
+	f3_arg0.Icon:setImage( RegisterImage( "uie_success_icon" ) )
 	f3_arg0.KeybindMessage:setAlpha( 1 )
 	f3_arg0.Stripes:setRGB( 1, 1, 1 )
 	f3_arg0.Stripes:setAlpha( 0.75 )
@@ -161,7 +161,7 @@ CoD.PC_StartMenu_Options_KeybindMessage_Text.__clipsPerState = {
 			f8_arg0.Icon:completeAnimation()
 			f8_arg0.Icon:setRGB( 0.85, 0.69, 0.11 )
 			f8_arg0.Icon:setAlpha( 1 )
-			f8_arg0.Icon:setImage( RegisterImage( 0x7F2DD388A81D61 ) )
+			f8_arg0.Icon:setImage( RegisterImage( "uie_warning_small" ) )
 			f8_arg0.clipFinished( f8_arg0.Icon )
 			f8_arg0.KeybindMessage:completeAnimation()
 			f8_arg0.KeybindMessage:setAlpha( 1 )
@@ -180,7 +180,7 @@ CoD.PC_StartMenu_Options_KeybindMessage_Text.__clipsPerState = {
 			f9_arg0.Icon:completeAnimation()
 			f9_arg0.Icon:setRGB( 0.72, 0.21, 0.21 )
 			f9_arg0.Icon:setAlpha( 1 )
-			f9_arg0.Icon:setImage( RegisterImage( 0x7F2DD388A81D61 ) )
+			f9_arg0.Icon:setImage( RegisterImage( "uie_warning_small" ) )
 			f9_arg0.clipFinished( f9_arg0.Icon )
 			f9_arg0.KeybindMessage:completeAnimation()
 			f9_arg0.KeybindMessage:setAlpha( 0 )

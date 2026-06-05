@@ -31,7 +31,7 @@ CoD.BM_ItemInfoCompactPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local ButtonBottomLine9Slice = LUI.UIImage.new( 0, 1, -6, 6, 1, 1, -6.5, 13.5 )
 	ButtonBottomLine9Slice:setAlpha( 0.25 )
-	ButtonBottomLine9Slice:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
+	ButtonBottomLine9Slice:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_line" ) )
 	ButtonBottomLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonBottomLine9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonBottomLine9Slice:setupNineSliceShader( 120, 10 )
@@ -69,7 +69,7 @@ CoD.BM_ItemInfoCompactPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local ButtonTopLine9Slice = LUI.UIImage.new( 0, 1, -6, 6, 0, 0, -6, 14 )
 	ButtonTopLine9Slice:setAlpha( 0.25 )
-	ButtonTopLine9Slice:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
+	ButtonTopLine9Slice:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_line" ) )
 	ButtonTopLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonTopLine9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonTopLine9Slice:setupNineSliceShader( 120, 10 )

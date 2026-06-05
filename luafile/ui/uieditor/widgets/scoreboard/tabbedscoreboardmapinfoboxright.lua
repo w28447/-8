@@ -14,7 +14,7 @@ CoD.TabbedScoreboardMapInfoboxRight.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local InfoRIghtBG = LUI.UIImage.new( 0, 0, 0, 188, 0, 0, 75, 75 )
-	InfoRIghtBG:setImage( RegisterImage( 0x179F8C7A3100CD7 ) )
+	InfoRIghtBG:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_info_bg2" ) )
 	self:addElement( InfoRIghtBG )
 	self.InfoRIghtBG = InfoRIghtBG
 	

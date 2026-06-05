@@ -52,13 +52,13 @@ LUI.createMenu.AAR_LeaguePlay_PlacementMatchesProgress = function ( f1_arg0, f1_
 	local MainCornerL = LUI.UIImage.new( 0.5, 0.5, -759, -729, 0.5, 0.5, -394, -364 )
 	MainCornerL:setAlpha( 0.04 )
 	MainCornerL:setYRot( 180 )
-	MainCornerL:setImage( RegisterImage( 0xBCB7451C0F2DE33 ) )
+	MainCornerL:setImage( RegisterImage( "uie_ui_hud_notifications_bracket_topright" ) )
 	self:addElement( MainCornerL )
 	self.MainCornerL = MainCornerL
 	
 	local MainCornerR = LUI.UIImage.new( 0.5, 0.5, 737, 767, 0.5, 0.5, -395, -365 )
 	MainCornerR:setAlpha( 0.04 )
-	MainCornerR:setImage( RegisterImage( 0xBCB7451C0F2DE33 ) )
+	MainCornerR:setImage( RegisterImage( "uie_ui_hud_notifications_bracket_topright" ) )
 	self:addElement( MainCornerR )
 	self.MainCornerR = MainCornerR
 	
@@ -69,7 +69,7 @@ LUI.createMenu.AAR_LeaguePlay_PlacementMatchesProgress = function ( f1_arg0, f1_
 	local featureOverlayButtonMouseOnly = nil
 	
 	featureOverlayButtonMouseOnly = CoD.featureOverlay_Button_MouseOnly.new( f1_local1, f1_arg0, 0.5, 0.5, 403, 589, 0.5, 0.5, 340, 400 )
-	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0x78D439E1B360368 ) )
+	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/back_caps" ) )
 	featureOverlayButtonMouseOnly:registerEventHandler( "gain_focus", function ( element, event )
 		local f3_local0 = nil
 		if element.gainFocus then
@@ -80,33 +80,33 @@ LUI.createMenu.AAR_LeaguePlay_PlacementMatchesProgress = function ( f1_arg0, f1_
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		CoD.AARUtility.ClosePlacementMatchesProgressOverlay( f4_arg1, f4_arg2 )
+	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.AARUtility.ClosePlacementMatchesProgressOverlay( menu, controller )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( featureOverlayButtonMouseOnly )
 	self.featureOverlayButtonMouseOnly = featureOverlayButtonMouseOnly
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		CoD.AARUtility.ClosePlacementMatchesProgressOverlay( f6_arg1, f6_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.AARUtility.ClosePlacementMatchesProgressOverlay( menu, controller )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
 		if IsPC() then
-			CoD.AARUtility.ClosePlacementMatchesProgressOverlay( f8_arg1, f8_arg2 )
+			CoD.AARUtility.ClosePlacementMatchesProgressOverlay( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		else
 			return false

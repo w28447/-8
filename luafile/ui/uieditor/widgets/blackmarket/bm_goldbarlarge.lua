@@ -8,7 +8,7 @@ CoD.BM_GoldBarLarge.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.soundSet = "default"
 	
 	local backing = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 58 )
-	backing:setImage( RegisterImage( 0x5A386F24ED7BB86 ) )
+	backing:setImage( RegisterImage( "ui_icon_blackmarket_lockbar_large" ) )
 	backing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	backing:setShaderVector( 0, 0, 0, 0, 0 )
 	backing:setupNineSliceShader( 150, 53 )
@@ -16,7 +16,7 @@ CoD.BM_GoldBarLarge.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.backing = backing
 	
 	local skull = LUI.UIImage.new( 0.5, 0.5, -128, 128, 0.5, 0.5, -128, 128 )
-	skull:setImage( RegisterImage( 0x11ADAF6FD1B370F ) )
+	skull:setImage( RegisterImage( "uie_ui_icon_blackmarket_lockskull_512" ) )
 	self:addElement( skull )
 	self.skull = skull
 	

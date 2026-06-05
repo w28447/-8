@@ -39,7 +39,7 @@ LUI.createMenu.zm_location = function ( f1_arg0, f1_arg1 )
 	bgbAbilitySwirl:setAlpha( 0 )
 	bgbAbilitySwirl:setZRot( 330 )
 	bgbAbilitySwirl:setScale( 1.65, 1.65 )
-	bgbAbilitySwirl:setImage( RegisterImage( 0xBBBD54E6E7B4493 ) )
+	bgbAbilitySwirl:setImage( RegisterImage( "uie_t7_core_hud_ammowidget_abilityswirl" ) )
 	bgbAbilitySwirl:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( bgbAbilitySwirl )
 	self.bgbAbilitySwirl = bgbAbilitySwirl

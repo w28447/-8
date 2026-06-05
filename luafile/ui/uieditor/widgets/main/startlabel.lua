@@ -13,7 +13,7 @@ CoD.StartLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local lblPressToPlay = LUI.UIText.new( 0, 0, 113, 871, 1, 1, -74, -46 )
 	lblPressToPlay:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	lblPressToPlay:setText( LocalizeToUpperString( 0xF5814C348E0C9F1 ) )
+	lblPressToPlay:setText( LocalizeToUpperString( "platform/press_start" ) )
 	lblPressToPlay:setTTF( "ttmussels_regular" )
 	lblPressToPlay:setLetterSpacing( 5 )
 	lblPressToPlay:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -29,7 +29,7 @@ CoD.StartLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	local ActivisionInc = LUI.UIImage.new( 1, 1, -291, -51, 1, 1, -74, -38 )
 	ActivisionInc:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
 	ActivisionInc:setAlpha( 0.9 )
-	ActivisionInc:setImage( RegisterImage( 0xF52811A5826066C ) )
+	ActivisionInc:setImage( RegisterImage( "uie_ui_menu_start_copyright" ) )
 	self:addElement( ActivisionInc )
 	self.ActivisionInc = ActivisionInc
 	

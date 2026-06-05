@@ -61,7 +61,7 @@ LUI.createMenu.Migration = function ( f1_arg0, f1_arg1 )
 	self.Team1PlayerList = Team1PlayerList
 	
 	migratingHostsLabel = LUI.UIText.new( 0.5, 0.5, -564.5, 564.5, 0, 0, 63, 143 )
-	migratingHostsLabel:setText( Engine[0xF9F1239CFD921FE]( 0x52AEA8564483540 ) )
+	migratingHostsLabel:setText( Engine[0xF9F1239CFD921FE]( "mp/migratinghosts_caps" ) )
 	migratingHostsLabel:setTTF( "default" )
 	migratingHostsLabel:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	migratingHostsLabel:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -69,8 +69,8 @@ LUI.createMenu.Migration = function ( f1_arg0, f1_arg1 )
 	self.migratingHostsLabel = migratingHostsLabel
 	
 	Image = LUI.UIImage.new( 0.5, 0.5, -64, 64, 0.5, 0.5, -64, 64 )
-	Image:setImage( RegisterImage( 0xD7107421B53850D ) )
-	Image:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD526D3FD71F281 ) )
+	Image:setImage( RegisterImage( "t7_menu_loadingspinner_flipbook" ) )
+	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook" ) )
 	Image:setShaderVector( 0, 28, 1, 0, 0 )
 	Image:setShaderVector( 1, 20.83, 0, 0, 0 )
 	self:addElement( Image )

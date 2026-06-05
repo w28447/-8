@@ -22,13 +22,13 @@ CoD.PrematchCountdown_NumbersSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local LED = LUI.UIImage.new( 0, 0, -6, 310, 0, 0, -6, 66 )
 	LED:setAlpha( 0.02 )
-	LED:setImage( RegisterImage( 0xE8F240771F2A09 ) )
+	LED:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_led_match_timer" ) )
 	self:addElement( LED )
 	self.LED = LED
 	
 	local border = LUI.UIImage.new( 0, 0, 0, 303, 0, 0, 0, 60 )
 	border:setRGB( 0, 0, 0 )
-	border:setImage( RegisterImage( 0xA3C76B80B69874D ) )
+	border:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_chamfer_border" ) )
 	border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	border:setShaderVector( 0, 0, 0, 0, 0 )
 	border:setupNineSliceShader( 18, 24 )
@@ -46,7 +46,7 @@ CoD.PrematchCountdown_NumbersSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local Message = LUI.UIText.new( 0, 0, 14, 222, 0, 0, 17, 44 )
 	Message:setRGB( 0, 0.56, 1 )
-	Message:setText( Engine[0xF9F1239CFD921FE]( 0x8E58CC95DB34427 ) )
+	Message:setText( Engine[0xF9F1239CFD921FE]( "mp/match_starting_in" ) )
 	Message:setTTF( "ttmussels_regular" )
 	Message:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	Message:setShaderVector( 0, 1.02, 0, 0, 0 )

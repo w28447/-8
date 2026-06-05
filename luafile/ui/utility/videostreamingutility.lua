@@ -46,7 +46,7 @@ end
 
 CoD.VideoStreamingUtility.LiveEventAutoDetectQuality = {
 	qualityId = "autodetect",
-	display = Engine[0xF9F1239CFD921FE]( 0x40AE254682D73CE )
+	display = Engine[0xF9F1239CFD921FE]( "menu/mlg_quality_autodetect" )
 }
 CoD.VideoStreamingUtility.LiveEventNewQualities = function ( f6_arg0 )
 	CoD.VideoStreamingUtility.LiveEventQualities = {
@@ -83,7 +83,7 @@ CoD.VideoStreamingUtility.LiveEventNewQualities = function ( f6_arg0 )
 							f6_local3 = true
 							f6_local11 = Engine[0xF9F1239CFD921FE]( "menu/mlg_quality_best" )
 						else
-							f6_local11 = Engine[0xF9F1239CFD921FE]( 0xB961CE5CE287588, f6_local10 )
+							f6_local11 = Engine[0xF9F1239CFD921FE]( "menu/mlg_quality_np", f6_local10 )
 							if not f6_local3 and f6_local10 == f6_local1 then
 								f6_local2 = true
 							end
@@ -215,7 +215,7 @@ CoD.VideoStreamingUtility.GetLiveEventImage = function ( f17_arg0 )
 			return Engine[0xC6F8EC444864600]( CoD.VideoStreamingUtility.StreamerTableName, f17_local2[1], CoD.VideoStreamingUtility.StreamImageCol )
 		end
 	end
-	return 0x0
+	return ""
 end
 
 CoD.VideoStreamingUtility.IsMLGStream = function ( f18_arg0 )
@@ -440,28 +440,28 @@ CoD.VideoStreamingUtility.VoDViewerPreLoadFunc = function ( f28_arg0, f28_arg1, 
 	f28_arg0:AddButtonCallbackFunction( f28_arg0, f28_arg1, Enum.LUIButton[0x820DDD869ABBFAA], nil, f28_local7, f28_local2, false )
 	f28_arg0:AddButtonCallbackFunction( f28_arg0, f28_arg1, Enum.LUIButton[0x6CE8023188D673F], nil, f28_local7, f28_local2, false )
 	f28_arg0:AddButtonCallbackFunction( f28_arg0, f28_arg1, Enum.LUIButton[0x29E5695FF1401AD], nil, f28_local7, f28_local2, false )
-	f28_arg0:AddButtonCallbackFunction( f28_arg0, f28_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, f28_local8, function ( f40_arg0, f40_arg1, f40_arg2 )
-		CoD.Menu.SetButtonLabel( f40_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/close" )
+	f28_arg0:AddButtonCallbackFunction( f28_arg0, f28_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, f28_local8, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/close" )
 		return true
 	end, false )
 	if f28_arg0.userData and f28_arg0.userData.allowStreamQualityChange then
-		f28_arg0:AddButtonCallbackFunction( f28_arg0, f28_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, f28_local9, function ( f41_arg0, f41_arg1, f41_arg2 )
-			if CoD.VideoStreamingUtility.HasLiveEventStreamQualities( f41_arg2 ) then
-				CoD.Menu.SetButtonLabel( f41_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x56FFD43E4B03BCF )
+		f28_arg0:AddButtonCallbackFunction( f28_arg0, f28_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, f28_local9, function ( element, menu, controller )
+			if CoD.VideoStreamingUtility.HasLiveEventStreamQualities( controller ) then
+				CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/mlg_current_quality" )
 				return true
 			else
-				CoD.Menu.SetButtonLabel( f41_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0 )
+				CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "" )
 				return false
 			end
 		end, false )
 	end
 	if f28_arg0.userData and f28_arg0.userData.allowToggleFullscreen then
-		f28_arg0:AddButtonCallbackFunction( f28_arg0, f28_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], nil, f28_local10, function ( f42_arg0, f42_arg1, f42_arg2 )
-			if f42_arg1.LiveEventViewerMovieAndBackground and IsChildElementInState( f42_arg1, "LiveEventViewerMovieAndBackground", "Windowed" ) then
-				CoD.Menu.SetButtonLabel( f42_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x70675323ADAA7D6 )
+		f28_arg0:AddButtonCallbackFunction( f28_arg0, f28_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], nil, f28_local10, function ( element, menu, controller )
+			if menu.LiveEventViewerMovieAndBackground and IsChildElementInState( menu, "LiveEventViewerMovieAndBackground", "Windowed" ) then
+				CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/fullscreen" )
 				return true
 			else
-				CoD.Menu.SetButtonLabel( f42_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0xB7DCA76B1E2C72E )
+				CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/windowed" )
 				return true
 			end
 		end, false )

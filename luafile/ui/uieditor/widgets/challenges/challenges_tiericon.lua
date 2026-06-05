@@ -22,7 +22,7 @@ CoD.Challenges_TierIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.FrameBorder = FrameBorder
 	
 	local ImageX = LUI.UIImage.new( 0, 0, 2, 52, 0, 0, 2, 52 )
-	ImageX:setImage( RegisterImage( 0xCCAE79885973D29 ) )
+	ImageX:setImage( RegisterImage( "uie_t7_menu_frontend_slidex" ) )
 	ImageX:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	ImageX:linkToElementModel( self, "rankIcon", true, function ( model )
 		local f2_local0 = model:get()
@@ -36,7 +36,7 @@ CoD.Challenges_TierIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local Glow = LUI.UIImage.new( 0, 0, -16, 69, 0, 0, -19, 73 )
 	Glow:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0xC58FF2328701EBA ) )
+	Glow:setImage( RegisterImage( "uie_ui_hud_core_no_ammo_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
@@ -78,7 +78,7 @@ CoD.Challenges_TierIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local CurrentTierArrow = LUI.UIImage.new( 0, 0, 22, 32, 1, 1, -60, -43 )
 	CurrentTierArrow:setZRot( 90 )
 	CurrentTierArrow:setScale( 0.8, 0.8 )
-	CurrentTierArrow:setImage( RegisterImage( 0x1226A0CC6137EEE ) )
+	CurrentTierArrow:setImage( RegisterImage( "uie_ui_hud_common_triangle" ) )
 	self:addElement( CurrentTierArrow )
 	self.CurrentTierArrow = CurrentTierArrow
 	

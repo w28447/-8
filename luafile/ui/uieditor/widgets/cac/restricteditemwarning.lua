@@ -11,7 +11,7 @@ CoD.RestrictedItemWarning.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local RestrictedWarning = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	RestrictedWarning:setRGB( 0.82, 0.08, 0.17 )
 	RestrictedWarning:setAlpha( 0 )
-	RestrictedWarning:setImage( RegisterImage( 0x2503EE8C658BEE6 ) )
+	RestrictedWarning:setImage( RegisterImage( "uie_ui_icon_frontend_exclamation" ) )
 	self:addElement( RestrictedWarning )
 	self.RestrictedWarning = RestrictedWarning
 	

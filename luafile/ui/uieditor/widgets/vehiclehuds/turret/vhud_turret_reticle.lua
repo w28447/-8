@@ -18,34 +18,34 @@ CoD.vhud_turret_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local TextureOverlayGrid = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TextureOverlayGrid:setAlpha( 0.45 )
-	TextureOverlayGrid:setImage( RegisterImage( 0xFB2DE01772BF700 ) )
+	TextureOverlayGrid:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_textureoverlaygrid" ) )
 	self:addElement( TextureOverlayGrid )
 	self.TextureOverlayGrid = TextureOverlayGrid
 	
 	local agrCenterPoint = LUI.UIImage.new( 0.5, 0.5, -14, 10, 0.5, 0.5, -12, 12 )
 	agrCenterPoint:setRGB( 1, 0.83, 0.39 )
-	agrCenterPoint:setImage( RegisterImage( 0x3784284ACA2BA36 ) )
+	agrCenterPoint:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_centerpoint" ) )
 	agrCenterPoint:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrCenterPoint )
 	self.agrCenterPoint = agrCenterPoint
 	
 	local agrCenterPoint0 = LUI.UIImage.new( 0.5, 0.5, -14, 10, 0.5, 0.5, -12, 12 )
 	agrCenterPoint0:setRGB( 1, 0.83, 0.39 )
-	agrCenterPoint0:setImage( RegisterImage( 0x3784284ACA2BA36 ) )
+	agrCenterPoint0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_centerpoint" ) )
 	agrCenterPoint0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrCenterPoint0 )
 	self.agrCenterPoint0 = agrCenterPoint0
 	
 	local ReticleLower = LUI.UIImage.new( 0.5, 0.5, -12, 12, 0.5, 0.5, 70, 226 )
 	ReticleLower:setRGB( 1, 0.83, 0.39 )
-	ReticleLower:setImage( RegisterImage( 0xF019388014CE9B3 ) )
+	ReticleLower:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_ground_reticlelower" ) )
 	ReticleLower:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ReticleLower )
 	self.ReticleLower = ReticleLower
 	
 	local OutsideHashLineR5 = LUI.UIImage.new( 0.5, 0.5, 380, 538, 0.5, 0.5, -10, 14 )
 	OutsideHashLineR5:setRGB( 1, 0.83, 0.39 )
-	OutsideHashLineR5:setImage( RegisterImage( 0xD26D9A0739D4532 ) )
+	OutsideHashLineR5:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsidehashlinesr4" ) )
 	OutsideHashLineR5:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR5 )
 	self.OutsideHashLineR5 = OutsideHashLineR5
@@ -53,7 +53,7 @@ CoD.vhud_turret_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local Image8 = LUI.UIImage.new( 0.5, 0.5, -508, -350, 0.5, 0.5, -12, 12 )
 	Image8:setRGB( 1, 0.83, 0.39 )
 	Image8:setZRot( 180 )
-	Image8:setImage( RegisterImage( 0xD26D9A0739D4532 ) )
+	Image8:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsidehashlinesr4" ) )
 	Image8:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image8 )
 	self.Image8 = Image8
@@ -61,7 +61,7 @@ CoD.vhud_turret_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local Image9 = LUI.UIImage.new( 0.5, 0.5, -79, 79, 0.5, 0.5, -321, -297 )
 	Image9:setRGB( 1, 0.83, 0.39 )
 	Image9:setZRot( 90 )
-	Image9:setImage( RegisterImage( 0xD26D9A0739D4532 ) )
+	Image9:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsidehashlinesr4" ) )
 	Image9:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image9 )
 	self.Image9 = Image9
@@ -70,7 +70,7 @@ CoD.vhud_turret_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	Image10:setRGB( 1, 0.83, 0.39 )
 	Image10:setAlpha( 0.5 )
 	Image10:setZRot( 90 )
-	Image10:setImage( RegisterImage( 0xF019388014CE9B3 ) )
+	Image10:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_ground_reticlelower" ) )
 	Image10:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image10 )
 	self.Image10 = Image10
@@ -80,7 +80,7 @@ CoD.vhud_turret_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	Image11:setAlpha( 0.5 )
 	Image11:setYRot( 180 )
 	Image11:setZRot( 90 )
-	Image11:setImage( RegisterImage( 0xF019388014CE9B3 ) )
+	Image11:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_ground_reticlelower" ) )
 	Image11:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image11 )
 	self.Image11 = Image11
@@ -116,7 +116,7 @@ CoD.vhud_turret_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	UpperLineRight:setYRot( 180 )
 	UpperLineRight:setZRot( -125 )
 	UpperLineRight:setScale( 0.9, 0.9 )
-	UpperLineRight:setImage( RegisterImage( 0xE5AC7FEBE9A0F7E ) )
+	UpperLineRight:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_centerlines" ) )
 	UpperLineRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	UpperLineRight:setShaderVector( 0, 0, 1, 0, 0 )
 	UpperLineRight:setShaderVector( 1, 0, 0, 0, 0 )
@@ -132,7 +132,7 @@ CoD.vhud_turret_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	UpperLineLeft:setYRot( 180 )
 	UpperLineLeft:setZRot( 125 )
 	UpperLineLeft:setScale( 0.9, 0.9 )
-	UpperLineLeft:setImage( RegisterImage( 0xE5AC7FEBE9A0F7E ) )
+	UpperLineLeft:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_centerlines" ) )
 	UpperLineLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	UpperLineLeft:setShaderVector( 0, 0, 1, 0, 0 )
 	UpperLineLeft:setShaderVector( 1, 0, 0, 0, 0 )
@@ -145,7 +145,7 @@ CoD.vhud_turret_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local FadeLeft = LUI.UIImage.new( 0.5, 0.5, -445, -94, 0.5, 0.5, -262, 243 )
 	FadeLeft:setRGB( 1, 0.83, 0.39 )
 	FadeLeft:setAlpha( 0.7 )
-	FadeLeft:setImage( RegisterImage( 0x7D26F06517114D1 ) )
+	FadeLeft:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_turret_centertexturefade" ) )
 	FadeLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FadeLeft )
 	self.FadeLeft = FadeLeft
@@ -154,7 +154,7 @@ CoD.vhud_turret_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	FadeRight:setRGB( 1, 0.83, 0.39 )
 	FadeRight:setAlpha( 0.7 )
 	FadeRight:setYRot( 180 )
-	FadeRight:setImage( RegisterImage( 0x7D26F06517114D1 ) )
+	FadeRight:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_turret_centertexturefade" ) )
 	FadeRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FadeRight )
 	self.FadeRight = FadeRight
@@ -163,7 +163,7 @@ CoD.vhud_turret_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	FadeLeftBLUR:setRGB( 1, 0.83, 0.39 )
 	FadeLeftBLUR:setAlpha( 0.25 )
 	FadeLeftBLUR:setScale( 1.7, 1.7 )
-	FadeLeftBLUR:setImage( RegisterImage( 0x7D26F06517114D1 ) )
+	FadeLeftBLUR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_turret_centertexturefade" ) )
 	FadeLeftBLUR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FadeLeftBLUR )
 	self.FadeLeftBLUR = FadeLeftBLUR
@@ -173,13 +173,13 @@ CoD.vhud_turret_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	FadeRightBLUR:setAlpha( 0.25 )
 	FadeRightBLUR:setYRot( 180 )
 	FadeRightBLUR:setScale( 1.7, 1.7 )
-	FadeRightBLUR:setImage( RegisterImage( 0x7D26F06517114D1 ) )
+	FadeRightBLUR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_turret_centertexturefade" ) )
 	FadeRightBLUR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FadeRightBLUR )
 	self.FadeRightBLUR = FadeRightBLUR
 	
 	local vhudturretdamageicon = CoD.vhud_turret_damageicon.new( f1_arg0, f1_arg1, 1, 1, -354, -204, 0, 0, 153, 303 )
-	vhudturretdamageicon:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 1 ) )
+	vhudturretdamageicon:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 1 ) )
 	vhudturretdamageicon:setYRot( -20 )
 	vhudturretdamageicon:linkToElementModel( self, nil, false, function ( model )
 		vhudturretdamageicon:setModel( model, f1_arg1 )
@@ -193,7 +193,7 @@ CoD.vhud_turret_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.vhudturretreticlearrows = vhudturretreticlearrows
 	
 	local vhuddartTimebar = CoD.vhud_dart_Timebar.new( f1_arg0, f1_arg1, 1, 1, -434, 91, 0, 0, 121, 135 )
-	vhuddartTimebar:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 1 ) )
+	vhuddartTimebar:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 1 ) )
 	vhuddartTimebar:setYRot( -20 )
 	vhuddartTimebar:linkToElementModel( self, nil, false, function ( model )
 		vhuddartTimebar:setModel( model, f1_arg1 )

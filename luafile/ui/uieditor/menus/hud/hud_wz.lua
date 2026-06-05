@@ -58,9 +58,9 @@ LUI.createMenu.Hud_WZ = function ( f2_arg0, f2_arg1 )
 	ReadyEvents:setAlpha( 0 )
 	ReadyEvents:subscribeToGlobalModel( f2_arg0, "PerController", "scriptNotify", function ( model )
 		local f3_local0 = ReadyEvents
-		if CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x3A74DE8C2726B98 ) then
+		if CoD.ModelUtility.IsParamModelEqualToHashString( model, "hero_weapon_received" ) then
 			AddHeroAbilityReceivedNotification( self, f3_local0, f2_arg0, model )
-		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x31187DD9C484333 ) then
+		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, "killstreak_received" ) then
 			AddKillstreakReceivedNotification( self, f3_local0, f2_arg0, model )
 		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0xE93575172DBE858 ) then
 			AddSlotUnlockedNotification( self, f3_local0, f2_arg0, model )
@@ -784,315 +784,315 @@ LUI.createMenu.Hud_WZ = function ( f2_arg0, f2_arg1 )
 		CoD.Menu.UpdateButtonShownState( f72_arg1, f2_local1, f2_arg0, Enum.LUIButton[0x820DDD869ABBFAA] )
 		CoD.Menu.UpdateButtonShownState( f72_arg1, f2_local1, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f73_arg0, f73_arg1, f73_arg2, f73_arg3 )
-		if IsVisibilityBitSet( f73_arg2, Enum.UIVisibilityBit[0xF4EDA8B636F3F04] ) then
-			CoD.ScoreboardUtility.HideScoreboard( f73_arg1, f73_arg2 )
-			BlockGameFromKeyEvent( f73_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		if IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xF4EDA8B636F3F04] ) then
+			CoD.ScoreboardUtility.HideScoreboard( menu, controller )
+			BlockGameFromKeyEvent( controller )
 			return true
 		else
 			
 		end
-	end, function ( f74_arg0, f74_arg1, f74_arg2 )
-		if IsVisibilityBitSet( f74_arg2, Enum.UIVisibilityBit[0xF4EDA8B636F3F04] ) then
-			CoD.Menu.SetButtonLabel( f74_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xF4EDA8B636F3F04] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x93AB4C84F113EE1], nil, function ( f75_arg0, f75_arg1, f75_arg2, f75_arg3 )
-		if CoD.ScoreboardUtility.CanHideScoreboard( f75_arg2 ) then
-			CoD.ScoreboardUtility.HideScoreboard( f75_arg1, f75_arg2 )
-			BlockGameFromKeyEvent( f75_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x93AB4C84F113EE1], nil, function ( element, menu, controller, model )
+		if CoD.ScoreboardUtility.CanHideScoreboard( controller ) then
+			CoD.ScoreboardUtility.HideScoreboard( menu, controller )
+			BlockGameFromKeyEvent( controller )
 			return true
 		else
 			
 		end
-	end, function ( f76_arg0, f76_arg1, f76_arg2 )
-		if CoD.ScoreboardUtility.CanHideScoreboard( f76_arg2 ) then
-			CoD.Menu.SetButtonLabel( f76_arg1, Enum.LUIButton[0x93AB4C84F113EE1], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ScoreboardUtility.CanHideScoreboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x93AB4C84F113EE1], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x4B11D2B20C75A7F], nil, function ( f77_arg0, f77_arg1, f77_arg2, f77_arg3 )
-		if not Engine.IsVisibilityBitSet( f77_arg2, Enum.UIVisibilityBit[0x198075B069840DC] ) and not Engine.IsVisibilityBitSet( f77_arg2, Enum.UIVisibilityBit[0xD567EDB5609CCEC] ) and not Engine.IsVisibilityBitSet( f77_arg2, Enum.UIVisibilityBit[0x534C7B2375D2D47] ) and not Engine.IsVisibilityBitSet( f77_arg2, Enum.UIVisibilityBit[0xF4EDA8B636F3F04] ) and not Engine.IsVisibilityBitSet( f77_arg2, Enum.UIVisibilityBit[0x6FFF566DCC09BBD] ) and not Engine.IsVisibilityBitSet( f77_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and Engine.IsVisibilityBitSet( f77_arg2, Enum.UIVisibilityBit[0xBB045E46E88E762] ) and not CoD.WZUtility.IsInLastStand( f77_arg2, "hudItems.lastStand" ) and CoD.ModelUtility.IsModelValueTrue( f77_arg2, "hudItems.inventory.canUseQuickInventory" ) and not CoD.ModelUtility.IsModelValueTrue( f77_arg2, "vehicle.hidePlayerInfo" ) and not IsGametypeSettingsValue( "wzDisableQuickEquipUI", 1 ) then
-			CoD.WZUtility.OpenQuickAccessInventory( f77_arg1, f77_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x4B11D2B20C75A7F], nil, function ( element, menu, controller, model )
+		if not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x198075B069840DC] ) and not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xD567EDB5609CCEC] ) and not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x534C7B2375D2D47] ) and not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xF4EDA8B636F3F04] ) and not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x6FFF566DCC09BBD] ) and not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xBB045E46E88E762] ) and not CoD.WZUtility.IsInLastStand( controller, "hudItems.lastStand" ) and CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.canUseQuickInventory" ) and not CoD.ModelUtility.IsModelValueTrue( controller, "vehicle.hidePlayerInfo" ) and not IsGametypeSettingsValue( "wzDisableQuickEquipUI", 1 ) then
+			CoD.WZUtility.OpenQuickAccessInventory( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f78_arg0, f78_arg1, f78_arg2 )
-		if not Engine.IsVisibilityBitSet( f78_arg2, Enum.UIVisibilityBit[0x198075B069840DC] ) and not Engine.IsVisibilityBitSet( f78_arg2, Enum.UIVisibilityBit[0xD567EDB5609CCEC] ) and not Engine.IsVisibilityBitSet( f78_arg2, Enum.UIVisibilityBit[0x534C7B2375D2D47] ) and not Engine.IsVisibilityBitSet( f78_arg2, Enum.UIVisibilityBit[0xF4EDA8B636F3F04] ) and not Engine.IsVisibilityBitSet( f78_arg2, Enum.UIVisibilityBit[0x6FFF566DCC09BBD] ) and not Engine.IsVisibilityBitSet( f78_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and Engine.IsVisibilityBitSet( f78_arg2, Enum.UIVisibilityBit[0xBB045E46E88E762] ) and not CoD.WZUtility.IsInLastStand( f78_arg2, "hudItems.lastStand" ) and CoD.ModelUtility.IsModelValueTrue( f78_arg2, "hudItems.inventory.canUseQuickInventory" ) and not CoD.ModelUtility.IsModelValueTrue( f78_arg2, "vehicle.hidePlayerInfo" ) and not IsGametypeSettingsValue( "wzDisableQuickEquipUI", 1 ) then
-			CoD.Menu.SetButtonLabel( f78_arg1, Enum.LUIButton[0x4B11D2B20C75A7F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x198075B069840DC] ) and not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xD567EDB5609CCEC] ) and not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x534C7B2375D2D47] ) and not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xF4EDA8B636F3F04] ) and not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x6FFF566DCC09BBD] ) and not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xBB045E46E88E762] ) and not CoD.WZUtility.IsInLastStand( controller, "hudItems.lastStand" ) and CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.canUseQuickInventory" ) and not CoD.ModelUtility.IsModelValueTrue( controller, "vehicle.hidePlayerInfo" ) and not IsGametypeSettingsValue( "wzDisableQuickEquipUI", 1 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4B11D2B20C75A7F], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0xD4C15FE32148D3A], nil, function ( f79_arg0, f79_arg1, f79_arg2, f79_arg3 )
-		if not Engine.IsVisibilityBitSet( f79_arg2, Enum.UIVisibilityBit[0xD567EDB5609CCEC] ) and not Engine.IsVisibilityBitSet( f79_arg2, Enum.UIVisibilityBit[0xF4EDA8B636F3F04] ) and not Engine.IsVisibilityBitSet( f79_arg2, Enum.UIVisibilityBit[0x6FFF566DCC09BBD] ) and not Engine.IsVisibilityBitSet( f79_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and Engine.IsVisibilityBitSet( f79_arg2, Enum.UIVisibilityBit[0xBB045E46E88E762] ) and not CoD.WZUtility.IsInLastStand( f79_arg2, "hudItems.lastStand" ) and CoD.ModelUtility.IsModelValueTrue( f79_arg2, "hudItems.inventory.open" ) then
-			CoD.WZUtility.CloseQuickAccessInventory( f79_arg1, f79_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0xD4C15FE32148D3A], nil, function ( element, menu, controller, model )
+		if not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xD567EDB5609CCEC] ) and not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xF4EDA8B636F3F04] ) and not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x6FFF566DCC09BBD] ) and not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xBB045E46E88E762] ) and not CoD.WZUtility.IsInLastStand( controller, "hudItems.lastStand" ) and CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) then
+			CoD.WZUtility.CloseQuickAccessInventory( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f80_arg0, f80_arg1, f80_arg2 )
-		if not Engine.IsVisibilityBitSet( f80_arg2, Enum.UIVisibilityBit[0xD567EDB5609CCEC] ) and not Engine.IsVisibilityBitSet( f80_arg2, Enum.UIVisibilityBit[0xF4EDA8B636F3F04] ) and not Engine.IsVisibilityBitSet( f80_arg2, Enum.UIVisibilityBit[0x6FFF566DCC09BBD] ) and not Engine.IsVisibilityBitSet( f80_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and Engine.IsVisibilityBitSet( f80_arg2, Enum.UIVisibilityBit[0xBB045E46E88E762] ) and not CoD.WZUtility.IsInLastStand( f80_arg2, "hudItems.lastStand" ) and CoD.ModelUtility.IsModelValueTrue( f80_arg2, "hudItems.inventory.open" ) then
-			CoD.Menu.SetButtonLabel( f80_arg1, Enum.LUIButton[0xD4C15FE32148D3A], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xD567EDB5609CCEC] ) and not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xF4EDA8B636F3F04] ) and not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x6FFF566DCC09BBD] ) and not Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and Engine.IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xBB045E46E88E762] ) and not CoD.WZUtility.IsInLastStand( controller, "hudItems.lastStand" ) and CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD4C15FE32148D3A], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "weapnext", function ( f81_arg0, f81_arg1, f81_arg2, f81_arg3 )
-		if IsWarzone() and CoD.WZUtility.IsInventoryOpen( f81_arg2 ) and not IsDemoPlaying() then
-			CoD.WZUtility.NextWeapon( f81_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "weapnext", function ( element, menu, controller, model )
+		if IsWarzone() and CoD.WZUtility.IsInventoryOpen( controller ) and not IsDemoPlaying() then
+			CoD.WZUtility.NextWeapon( controller )
 			return true
 		else
 			
 		end
-	end, function ( f82_arg0, f82_arg1, f82_arg2 )
-		if IsWarzone() and CoD.WZUtility.IsInventoryOpen( f82_arg2 ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f82_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "weapnext" )
+	end, function ( element, menu, controller )
+		if IsWarzone() and CoD.WZUtility.IsInventoryOpen( controller ) and not IsDemoPlaying() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "weapnext" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "weapprev", function ( f83_arg0, f83_arg1, f83_arg2, f83_arg3 )
-		if IsWarzone() and CoD.WZUtility.IsInventoryOpen( f83_arg2 ) and not IsDemoPlaying() then
-			CoD.WZUtility.PrevWeapon( f83_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "weapprev", function ( element, menu, controller, model )
+		if IsWarzone() and CoD.WZUtility.IsInventoryOpen( controller ) and not IsDemoPlaying() then
+			CoD.WZUtility.PrevWeapon( controller )
 			return true
 		else
 			
 		end
-	end, function ( f84_arg0, f84_arg1, f84_arg2 )
-		if IsWarzone() and CoD.WZUtility.IsInventoryOpen( f84_arg2 ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f84_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "weapprev" )
+	end, function ( element, menu, controller )
+		if IsWarzone() and CoD.WZUtility.IsInventoryOpen( controller ) and not IsDemoPlaying() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "weapprev" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "weapswitchprimary", function ( f85_arg0, f85_arg1, f85_arg2, f85_arg3 )
-		if IsWarzone() and CoD.WZUtility.IsInventoryOpen( f85_arg2 ) and not IsDemoPlaying() then
-			CoD.WZUtility.SwitchToWeaponInSlot( f85_arg2, 0 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "weapswitchprimary", function ( element, menu, controller, model )
+		if IsWarzone() and CoD.WZUtility.IsInventoryOpen( controller ) and not IsDemoPlaying() then
+			CoD.WZUtility.SwitchToWeaponInSlot( controller, 0 )
 			return true
 		else
 			
 		end
-	end, function ( f86_arg0, f86_arg1, f86_arg2 )
-		if IsWarzone() and CoD.WZUtility.IsInventoryOpen( f86_arg2 ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f86_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "weapswitchprimary" )
+	end, function ( element, menu, controller )
+		if IsWarzone() and CoD.WZUtility.IsInventoryOpen( controller ) and not IsDemoPlaying() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "weapswitchprimary" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "weapswitchsecondary", function ( f87_arg0, f87_arg1, f87_arg2, f87_arg3 )
-		if IsWarzone() and CoD.WZUtility.IsInventoryOpen( f87_arg2 ) and not IsDemoPlaying() then
-			CoD.WZUtility.SwitchToWeaponInSlot( f87_arg2, 1 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "weapswitchsecondary", function ( element, menu, controller, model )
+		if IsWarzone() and CoD.WZUtility.IsInventoryOpen( controller ) and not IsDemoPlaying() then
+			CoD.WZUtility.SwitchToWeaponInSlot( controller, 1 )
 			return true
 		else
 			
 		end
-	end, function ( f88_arg0, f88_arg1, f88_arg2 )
-		if IsWarzone() and CoD.WZUtility.IsInventoryOpen( f88_arg2 ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f88_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "weapswitchsecondary" )
+	end, function ( element, menu, controller )
+		if IsWarzone() and CoD.WZUtility.IsInventoryOpen( controller ) and not IsDemoPlaying() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "weapswitchsecondary" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_confirm", function ( f89_arg0, f89_arg1, f89_arg2, f89_arg3 )
-		if IsPC() and CoD.GameEndScoreUtility.CanShowWarzoneSpectate( f89_arg2 ) and not IsVisibilityBitSet( f89_arg2, Enum.UIVisibilityBit[0x8A5E996D4528DA2] ) and not IsDemoPlaying() then
-			SetControllerModelValue( f89_arg2, "huditems.warzone.aarVisible", false )
-			LockInput( self, f89_arg2, false )
-			SetAllowCursorMovement( f89_arg1, false )
-			SendMenuResponse( self, "GameEndScore", "skip_deathcam", f89_arg2 )
-			CoD.GameEndScoreUtility.ClearTransition( f89_arg2 )
-			SetFocusToElement( self, "emptyFocusablePC", f89_arg2 )
-			CoD.LobbyUtility.SetPlayerLocation( f89_arg2, Enum[0xC0AB9543C5C440B][0x9B478094C85DBBB] )
-			CoD.PCWidgetUtility.CloseChat( f89_arg1, f89_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_confirm", function ( element, menu, controller, model )
+		if IsPC() and CoD.GameEndScoreUtility.CanShowWarzoneSpectate( controller ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x8A5E996D4528DA2] ) and not IsDemoPlaying() then
+			SetControllerModelValue( controller, "huditems.warzone.aarVisible", false )
+			LockInput( self, controller, false )
+			SetAllowCursorMovement( menu, false )
+			SendMenuResponse( self, "GameEndScore", "skip_deathcam", controller )
+			CoD.GameEndScoreUtility.ClearTransition( controller )
+			SetFocusToElement( self, "emptyFocusablePC", controller )
+			CoD.LobbyUtility.SetPlayerLocation( controller, Enum[0xC0AB9543C5C440B][0x9B478094C85DBBB] )
+			CoD.PCWidgetUtility.CloseChat( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f90_arg0, f90_arg1, f90_arg2 )
-		if IsPC() and CoD.GameEndScoreUtility.CanShowWarzoneSpectate( f90_arg2 ) and not IsVisibilityBitSet( f90_arg2, Enum.UIVisibilityBit[0x8A5E996D4528DA2] ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f90_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xF8E8360C903175B, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsPC() and CoD.GameEndScoreUtility.CanShowWarzoneSpectate( controller ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x8A5E996D4528DA2] ) and not IsDemoPlaying() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "ui/spectate", nil, "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_contextual_3", function ( f91_arg0, f91_arg1, f91_arg2, f91_arg3 )
-		if IsPC() and CoD.ModelUtility.IsModelValueTrue( f91_arg2, "huditems.warzone.aarVisible" ) and IsOnlineGame() and IsBooleanDvarSet( "ui_showWZAAR" ) and not IsElementInState( self.GameEndScoreWZ, "EliminationPC" ) and not CoD.GameEndScoreUtility.CanShowWarzoneSpectate( f91_arg2 ) then
-			SetControllerModelValue( f91_arg2, "huditems.warzone.aarVisible", false )
-			BlockGameFromKeyEvent( f91_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_contextual_3", function ( element, menu, controller, model )
+		if IsPC() and CoD.ModelUtility.IsModelValueTrue( controller, "huditems.warzone.aarVisible" ) and IsOnlineGame() and IsBooleanDvarSet( "ui_showWZAAR" ) and not IsElementInState( self.GameEndScoreWZ, "EliminationPC" ) and not CoD.GameEndScoreUtility.CanShowWarzoneSpectate( controller ) then
+			SetControllerModelValue( controller, "huditems.warzone.aarVisible", false )
+			BlockGameFromKeyEvent( controller )
 			return true
 		else
 			
 		end
-	end, function ( f92_arg0, f92_arg1, f92_arg2 )
-		if IsPC() and CoD.ModelUtility.IsModelValueTrue( f92_arg2, "huditems.warzone.aarVisible" ) and IsOnlineGame() and IsBooleanDvarSet( "ui_showWZAAR" ) and not IsElementInState( self.GameEndScoreWZ, "EliminationPC" ) and not CoD.GameEndScoreUtility.CanShowWarzoneSpectate( f92_arg2 ) then
-			CoD.Menu.SetButtonLabel( f92_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0xB914F387B0A33A9, nil, "ui_contextual_3" )
+	end, function ( element, menu, controller )
+		if IsPC() and CoD.ModelUtility.IsModelValueTrue( controller, "huditems.warzone.aarVisible" ) and IsOnlineGame() and IsBooleanDvarSet( "ui_showWZAAR" ) and not IsElementInState( self.GameEndScoreWZ, "EliminationPC" ) and not CoD.GameEndScoreUtility.CanShowWarzoneSpectate( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/dismiss_menu", nil, "ui_contextual_3" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_contextual_1", function ( f93_arg0, f93_arg1, f93_arg2, f93_arg3 )
-		if IsPC() and IsMouseOrKeyboard( f93_arg2 ) and CoD.GameEndScoreUtility.CanShowWarzoneKillcam( f93_arg2 ) and not IsVisibilityBitSet( f93_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not IsDemoPlaying() and not IsInDefaultState( self.GameEndScoreWZ ) and CoD.GameEndScoreUtility.HasViewedInGameReport( f93_arg2 ) then
-			LockInput( self, f93_arg2, false )
-			SetAllowCursorMovement( f93_arg1, false )
-			SendMenuResponse( self, "GameEndScore", "play_deathcam", f93_arg2 )
-			SetControllerModelValue( f93_arg2, "gameScore.hasPlayedDeathCam", true )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_contextual_1", function ( element, menu, controller, model )
+		if IsPC() and IsMouseOrKeyboard( controller ) and CoD.GameEndScoreUtility.CanShowWarzoneKillcam( controller ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not IsDemoPlaying() and not IsInDefaultState( self.GameEndScoreWZ ) and CoD.GameEndScoreUtility.HasViewedInGameReport( controller ) then
+			LockInput( self, controller, false )
+			SetAllowCursorMovement( menu, false )
+			SendMenuResponse( self, "GameEndScore", "play_deathcam", controller )
+			SetControllerModelValue( controller, "gameScore.hasPlayedDeathCam", true )
 			PlaySoundAlias( "uin_killcam_start" )
 			CoD.BaseUtility.PlayMusic( "death" )
 			return true
 		else
 			
 		end
-	end, function ( f94_arg0, f94_arg1, f94_arg2 )
-		if IsPC() and IsMouseOrKeyboard( f94_arg2 ) and CoD.GameEndScoreUtility.CanShowWarzoneKillcam( f94_arg2 ) and not IsVisibilityBitSet( f94_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not IsDemoPlaying() and not IsInDefaultState( self.GameEndScoreWZ ) and CoD.GameEndScoreUtility.HasViewedInGameReport( f94_arg2 ) then
-			CoD.Menu.SetButtonLabel( f94_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "wz/deathcam", nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if IsPC() and IsMouseOrKeyboard( controller ) and CoD.GameEndScoreUtility.CanShowWarzoneKillcam( controller ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not IsDemoPlaying() and not IsInDefaultState( self.GameEndScoreWZ ) and CoD.GameEndScoreUtility.HasViewedInGameReport( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "wz/deathcam", nil, "ui_contextual_1" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x493152B20AE4F58], nil, function ( f95_arg0, f95_arg1, f95_arg2, f95_arg3 )
-		if CoD.ModelUtility.IsModelValueTrue( f95_arg2, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( f95_arg2, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( f95_arg2, Enum.LUIButton[0x493152B20AE4F58] ) then
-			CoD.WZUtility.CycleHealthQuickAccessInventory( f95_arg1, f95_arg2, f95_arg3 )
-			BlockGameFromKeyEvent( f95_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x493152B20AE4F58], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( controller, Enum.LUIButton[0x493152B20AE4F58] ) then
+			CoD.WZUtility.CycleHealthQuickAccessInventory( menu, controller, model )
+			BlockGameFromKeyEvent( controller )
 			return true
-		elseif CoD.ModelUtility.IsModelValueTrue( f95_arg2, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( f95_arg2, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonUseEquipment( f95_arg2, Enum.LUIButton[0x493152B20AE4F58] ) then
-			CoD.WZUtility.CycleEquipmentQuickAccessInventory( f95_arg1, f95_arg2, f95_arg3 )
-			BlockGameFromKeyEvent( f95_arg2 )
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonUseEquipment( controller, Enum.LUIButton[0x493152B20AE4F58] ) then
+			CoD.WZUtility.CycleEquipmentQuickAccessInventory( menu, controller, model )
+			BlockGameFromKeyEvent( controller )
 			return true
 		else
 			
 		end
-	end, function ( f96_arg0, f96_arg1, f96_arg2 )
-		if CoD.ModelUtility.IsModelValueTrue( f96_arg2, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( f96_arg2, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( f96_arg2, Enum.LUIButton[0x493152B20AE4F58] ) then
-			CoD.Menu.SetButtonLabel( f96_arg1, Enum.LUIButton[0x493152B20AE4F58], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( controller, Enum.LUIButton[0x493152B20AE4F58] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x493152B20AE4F58], "", nil, nil )
 			return false
-		elseif CoD.ModelUtility.IsModelValueTrue( f96_arg2, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( f96_arg2, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonUseEquipment( f96_arg2, Enum.LUIButton[0x493152B20AE4F58] ) then
-			CoD.Menu.SetButtonLabel( f96_arg1, Enum.LUIButton[0x493152B20AE4F58], 0x0, nil, nil )
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonUseEquipment( controller, Enum.LUIButton[0x493152B20AE4F58] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x493152B20AE4F58], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x49A252B20B48936], nil, function ( f97_arg0, f97_arg1, f97_arg2, f97_arg3 )
-		if CoD.ModelUtility.IsModelValueTrue( f97_arg2, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( f97_arg2, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( f97_arg2, Enum.LUIButton[0x49A252B20B48936] ) then
-			CoD.WZUtility.CycleHealthQuickAccessInventory( f97_arg1, f97_arg2, f97_arg3 )
-			BlockGameFromKeyEvent( f97_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x49A252B20B48936], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( controller, Enum.LUIButton[0x49A252B20B48936] ) then
+			CoD.WZUtility.CycleHealthQuickAccessInventory( menu, controller, model )
+			BlockGameFromKeyEvent( controller )
 			return true
-		elseif CoD.ModelUtility.IsModelValueTrue( f97_arg2, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( f97_arg2, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonUseEquipment( f97_arg2, Enum.LUIButton[0x49A252B20B48936] ) then
-			CoD.WZUtility.CycleEquipmentQuickAccessInventory( f97_arg1, f97_arg2, f97_arg3 )
-			BlockGameFromKeyEvent( f97_arg2 )
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonUseEquipment( controller, Enum.LUIButton[0x49A252B20B48936] ) then
+			CoD.WZUtility.CycleEquipmentQuickAccessInventory( menu, controller, model )
+			BlockGameFromKeyEvent( controller )
 			return true
 		else
 			
 		end
-	end, function ( f98_arg0, f98_arg1, f98_arg2 )
-		if CoD.ModelUtility.IsModelValueTrue( f98_arg2, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( f98_arg2, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( f98_arg2, Enum.LUIButton[0x49A252B20B48936] ) then
-			CoD.Menu.SetButtonLabel( f98_arg1, Enum.LUIButton[0x49A252B20B48936], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( controller, Enum.LUIButton[0x49A252B20B48936] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x49A252B20B48936], "", nil, nil )
 			return false
-		elseif CoD.ModelUtility.IsModelValueTrue( f98_arg2, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( f98_arg2, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonUseEquipment( f98_arg2, Enum.LUIButton[0x49A252B20B48936] ) then
-			CoD.Menu.SetButtonLabel( f98_arg1, Enum.LUIButton[0x49A252B20B48936], 0x0, nil, nil )
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonUseEquipment( controller, Enum.LUIButton[0x49A252B20B48936] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x49A252B20B48936], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], nil, function ( f99_arg0, f99_arg1, f99_arg2, f99_arg3 )
-		if CoD.ModelUtility.IsModelValueTrue( f99_arg2, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( f99_arg2, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( f99_arg2, Enum.LUIButton[0xD2F467A6C6DA1AC] ) then
-			CoD.WZUtility.CycleHealthQuickAccessInventory( f99_arg1, f99_arg2, f99_arg3 )
-			BlockGameFromKeyEvent( f99_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( controller, Enum.LUIButton[0xD2F467A6C6DA1AC] ) then
+			CoD.WZUtility.CycleHealthQuickAccessInventory( menu, controller, model )
+			BlockGameFromKeyEvent( controller )
 			return true
-		elseif CoD.ModelUtility.IsModelValueTrue( f99_arg2, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( f99_arg2, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonUseEquipment( f99_arg2, Enum.LUIButton[0xD2F467A6C6DA1AC] ) then
-			CoD.WZUtility.CycleEquipmentQuickAccessInventory( f99_arg1, f99_arg2, f99_arg3 )
-			BlockGameFromKeyEvent( f99_arg2 )
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonUseEquipment( controller, Enum.LUIButton[0xD2F467A6C6DA1AC] ) then
+			CoD.WZUtility.CycleEquipmentQuickAccessInventory( menu, controller, model )
+			BlockGameFromKeyEvent( controller )
 			return true
 		else
 			
 		end
-	end, function ( f100_arg0, f100_arg1, f100_arg2 )
-		if CoD.ModelUtility.IsModelValueTrue( f100_arg2, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( f100_arg2, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( f100_arg2, Enum.LUIButton[0xD2F467A6C6DA1AC] ) then
-			CoD.Menu.SetButtonLabel( f100_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( controller, Enum.LUIButton[0xD2F467A6C6DA1AC] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "", nil, nil )
 			return false
-		elseif CoD.ModelUtility.IsModelValueTrue( f100_arg2, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( f100_arg2, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonUseEquipment( f100_arg2, Enum.LUIButton[0xD2F467A6C6DA1AC] ) then
-			CoD.Menu.SetButtonLabel( f100_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x0, nil, nil )
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonUseEquipment( controller, Enum.LUIButton[0xD2F467A6C6DA1AC] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x820DDD869ABBFAA], nil, function ( f101_arg0, f101_arg1, f101_arg2, f101_arg3 )
-		if CoD.ModelUtility.IsModelValueTrue( f101_arg2, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( f101_arg2, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( f101_arg2, Enum.LUIButton[0x820DDD869ABBFAA] ) then
-			CoD.WZUtility.CycleHealthQuickAccessInventory( f101_arg1, f101_arg2, f101_arg3 )
-			BlockGameFromKeyEvent( f101_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x820DDD869ABBFAA], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( controller, Enum.LUIButton[0x820DDD869ABBFAA] ) then
+			CoD.WZUtility.CycleHealthQuickAccessInventory( menu, controller, model )
+			BlockGameFromKeyEvent( controller )
 			return true
-		elseif CoD.ModelUtility.IsModelValueTrue( f101_arg2, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( f101_arg2, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonUseEquipment( f101_arg2, Enum.LUIButton[0x820DDD869ABBFAA] ) then
-			CoD.WZUtility.CycleEquipmentQuickAccessInventory( f101_arg1, f101_arg2, f101_arg3 )
-			BlockGameFromKeyEvent( f101_arg2 )
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonUseEquipment( controller, Enum.LUIButton[0x820DDD869ABBFAA] ) then
+			CoD.WZUtility.CycleEquipmentQuickAccessInventory( menu, controller, model )
+			BlockGameFromKeyEvent( controller )
 			return true
 		else
 			
 		end
-	end, function ( f102_arg0, f102_arg1, f102_arg2 )
-		if CoD.ModelUtility.IsModelValueTrue( f102_arg2, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( f102_arg2, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( f102_arg2, Enum.LUIButton[0x820DDD869ABBFAA] ) then
-			CoD.Menu.SetButtonLabel( f102_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( controller, Enum.LUIButton[0x820DDD869ABBFAA] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "", nil, nil )
 			return false
-		elseif CoD.ModelUtility.IsModelValueTrue( f102_arg2, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( f102_arg2, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonUseEquipment( f102_arg2, Enum.LUIButton[0x820DDD869ABBFAA] ) then
-			CoD.Menu.SetButtonLabel( f102_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x0, nil, nil )
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonUseEquipment( controller, Enum.LUIButton[0x820DDD869ABBFAA] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f103_arg0, f103_arg1, f103_arg2, f103_arg3 )
-		if CoD.ModelUtility.IsModelValueTrue( f103_arg2, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( f103_arg2, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( f103_arg2, Enum.LUIButton[0x755DA1E2E7C263F] ) then
-			CoD.WZUtility.CycleHealthQuickAccessInventory( f103_arg1, f103_arg2, f103_arg3 )
-			BlockGameFromKeyEvent( f103_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( controller, Enum.LUIButton[0x755DA1E2E7C263F] ) then
+			CoD.WZUtility.CycleHealthQuickAccessInventory( menu, controller, model )
+			BlockGameFromKeyEvent( controller )
 			return true
-		elseif IsPC() and IsGamepad( f103_arg2 ) and CoD.GameEndScoreUtility.CanShowWarzoneKillcam( f103_arg2 ) and not IsVisibilityBitSet( f103_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not IsDemoPlaying() and not IsInDefaultState( self.GameEndScoreWZ ) and CoD.GameEndScoreUtility.HasViewedInGameReport( f103_arg2 ) then
-			LockInput( self, f103_arg2, false )
-			SetAllowCursorMovement( f103_arg1, false )
-			SendMenuResponse( self, "GameEndScore", "play_deathcam", f103_arg2 )
-			SetControllerModelValue( f103_arg2, "gameScore.hasPlayedDeathCam", true )
+		elseif IsPC() and IsGamepad( controller ) and CoD.GameEndScoreUtility.CanShowWarzoneKillcam( controller ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not IsDemoPlaying() and not IsInDefaultState( self.GameEndScoreWZ ) and CoD.GameEndScoreUtility.HasViewedInGameReport( controller ) then
+			LockInput( self, controller, false )
+			SetAllowCursorMovement( menu, false )
+			SendMenuResponse( self, "GameEndScore", "play_deathcam", controller )
+			SetControllerModelValue( controller, "gameScore.hasPlayedDeathCam", true )
 			PlaySoundAlias( "uin_killcam_start" )
 			CoD.BaseUtility.PlayMusic( "death" )
 			return true
 		else
 			
 		end
-	end, function ( f104_arg0, f104_arg1, f104_arg2 )
-		if CoD.ModelUtility.IsModelValueTrue( f104_arg2, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( f104_arg2, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( f104_arg2, Enum.LUIButton[0x755DA1E2E7C263F] ) then
-			CoD.Menu.SetButtonLabel( f104_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.inventory.open" ) and CoD.OptionsUtility.IsProfileIntValue( controller, "warzoneCycleItems", 1 ) and CoD.OptionsUtility.IsButtonHeal( controller, Enum.LUIButton[0x755DA1E2E7C263F] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 			return false
-		elseif IsPC() and IsGamepad( f104_arg2 ) and CoD.GameEndScoreUtility.CanShowWarzoneKillcam( f104_arg2 ) and not IsVisibilityBitSet( f104_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not IsDemoPlaying() and not IsInDefaultState( self.GameEndScoreWZ ) and CoD.GameEndScoreUtility.HasViewedInGameReport( f104_arg2 ) then
-			CoD.Menu.SetButtonLabel( f104_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+		elseif IsPC() and IsGamepad( controller ) and CoD.GameEndScoreUtility.CanShowWarzoneKillcam( controller ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not IsDemoPlaying() and not IsInDefaultState( self.GameEndScoreWZ ) and CoD.GameEndScoreUtility.HasViewedInGameReport( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x6CE8023188D673F], "ui_remove", function ( f105_arg0, f105_arg1, f105_arg2, f105_arg3 )
-		if IsPC() and CanReportPlayerEndGameWarzone( self, f105_arg2 ) and not IsElementInState( self.GameEndScoreWZ, "DefaultState" ) then
-			ShowReportPlayerDialogTargetingKiller( self, f105_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x6CE8023188D673F], "ui_remove", function ( element, menu, controller, model )
+		if IsPC() and CanReportPlayerEndGameWarzone( self, controller ) and not IsElementInState( self.GameEndScoreWZ, "DefaultState" ) then
+			ShowReportPlayerDialogTargetingKiller( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f106_arg0, f106_arg1, f106_arg2 )
-		if IsPC() and CanReportPlayerEndGameWarzone( self, f106_arg2 ) and not IsElementInState( self.GameEndScoreWZ, "DefaultState" ) then
-			CoD.Menu.SetButtonLabel( f106_arg1, Enum.LUIButton[0x6CE8023188D673F], "menu/report_player", nil, "ui_remove" )
+	end, function ( element, menu, controller )
+		if IsPC() and CanReportPlayerEndGameWarzone( self, controller ) and not IsElementInState( self.GameEndScoreWZ, "DefaultState" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x6CE8023188D673F], "menu/report_player", nil, "ui_remove" )
 			return true
 		else
 			return false
@@ -1106,7 +1106,7 @@ LUI.createMenu.Hud_WZ = function ( f2_arg0, f2_arg1 )
 	end )
 	self:subscribeToGlobalModel( f2_arg0, "PerController", "scriptNotify", function ( model )
 		local f108_local0 = self
-		if CoD.ModelUtility.IsParamModelEqualToHashString( model, 0xABC0876FC41CC7F ) then
+		if CoD.ModelUtility.IsParamModelEqualToHashString( model, "character_unlock_update" ) then
 			CoD.WZUtility.UpdateUnlockQuestState( f2_arg0, model )
 		end
 	end )

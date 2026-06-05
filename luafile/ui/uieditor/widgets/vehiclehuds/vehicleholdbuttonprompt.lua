@@ -18,7 +18,7 @@ CoD.VehicleHoldButtonPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.buttonPromptImage = buttonPromptImage
 	
 	local label = LUI.UIText.new( 0, 0, 46, 200, 0, 0, 16, 30 )
-	label:setText( LocalizeToUpperString( 0x0 ) )
+	label:setText( LocalizeToUpperString( "" ) )
 	label:setTTF( "ttmussels_regular" )
 	label:setLetterSpacing( 2 )
 	label:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -63,7 +63,7 @@ CoD.VehicleHoldButtonPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	KeyboardAction = LUI.UIText.new( 0, 0, 4.5, 37.5, 0, 0, 5, 43 )
 	KeyboardAction:setRGB( 1, 1, 0.5 )
 	KeyboardAction:setAlpha( 0 )
-	KeyboardAction:setText( Engine[0xF9F1239CFD921FE]( 0xF17B1BF58DB2590 ) )
+	KeyboardAction:setText( Engine[0xF9F1239CFD921FE]( "platform/activate_bind" ) )
 	KeyboardAction:setTTF( "default" )
 	KeyboardAction:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	KeyboardAction:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

@@ -46,14 +46,14 @@ CoD.ScrStk_Meter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	local Image00 = LUI.UIImage.new( 0, 0, 42, 62, 0, 0, 10, 30 )
 	Image00:setAlpha( 0 )
 	Image00:setZRot( 84 )
-	Image00:setImage( RegisterImage( 0x42009933320255D ) )
+	Image00:setImage( RegisterImage( "uie_t7_core_hud_ammowidget_ringdeplete" ) )
 	Image00:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image00 )
 	self.Image00 = Image00
 	
 	local Image0 = LUI.UIImage.new( 0, 0, 42, 62, 0, 0, 10, 30 )
 	Image0:setAlpha( 0 )
-	Image0:setImage( RegisterImage( 0x42009933320255D ) )
+	Image0:setImage( RegisterImage( "uie_t7_core_hud_ammowidget_ringdeplete" ) )
 	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image0 )
 	self.Image0 = Image0
@@ -92,13 +92,13 @@ CoD.ScrStk_Meter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local Cap = LUI.UIImage.new( 0, 0, 49, 56, 0, 0, 187, 197 )
 	Cap:setAlpha( 0.5 )
-	Cap:setImage( RegisterImage( 0xF3E81C52AE39D91 ) )
+	Cap:setImage( RegisterImage( "uie_ui_hud_core_objective_widget_meter_cap" ) )
 	self:addElement( Cap )
 	self.Cap = Cap
 	
 	local Cap2 = LUI.UIImage.new( 0, 0, 49, 56, 0, 0, 44.5, 54.5 )
 	Cap2:setAlpha( 0.5 )
-	Cap2:setImage( RegisterImage( 0xF3E81C52AE39D91 ) )
+	Cap2:setImage( RegisterImage( "uie_ui_hud_core_objective_widget_meter_cap" ) )
 	self:addElement( Cap2 )
 	self.Cap2 = Cap2
 	

@@ -1,29 +1,29 @@
 require( "ui/uieditor/widgets/callingcards/loot4/ui_icon_callingcards_fairytales_armgroup" )
 require( "ui/uieditor/widgets/callingcards/loot4/ui_icon_callingcards_fairytales_flames" )
 
-CoD[0x6DF244A87F06B10] = InheritFrom( LUI.UIElement )
-CoD[0x6DF244A87F06B10].__defaultWidth = 960
-CoD[0x6DF244A87F06B10].__defaultHeight = 240
-CoD[0x6DF244A87F06B10].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.ui_icon_callingcards_fairytales = InheritFrom( LUI.UIElement )
+CoD.ui_icon_callingcards_fairytales.__defaultWidth = 960
+CoD.ui_icon_callingcards_fairytales.__defaultHeight = 240
+CoD.ui_icon_callingcards_fairytales.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x6DF244A87F06B10] )
+	self:setClass( CoD.ui_icon_callingcards_fairytales )
 	self.id = "ui_icon_callingcards_fairytales"
 	self.soundSet = "none"
 	self.anyChildUsesUpdateState = true
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local background = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	background:setImage( RegisterImage( 0x8F5098864EC8D99 ) )
+	background:setImage( RegisterImage( "uie_ui_icon_callingcards_fairytale_bg" ) )
 	self:addElement( background )
 	self.background = background
 	
 	local gret = LUI.UIImage.new( 0, 0, 260, 372, 0, 0, 120, 256 )
-	gret:setImage( RegisterImage( 0xEF36F178745B32A ) )
+	gret:setImage( RegisterImage( "uie_ui_icon_callingcards_fairytale_gret" ) )
 	self:addElement( gret )
 	self.gret = gret
 	
 	local hans = LUI.UIImage.new( 0, 0, 112, 240, 0, 0, 91, 251 )
-	hans:setImage( RegisterImage( 0xA698AFF80406902 ) )
+	hans:setImage( RegisterImage( "uie_ui_icon_callingcards_fairytale_hans" ) )
 	self:addElement( hans )
 	self.hans = hans
 	
@@ -36,14 +36,14 @@ CoD[0x6DF244A87F06B10].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.smoke = smoke
 	
 	local largesmoke = LUI.UIImage.new( 0, 0, -211.5, 548.5, 0, 0, -86, 298 )
-	largesmoke:setImage( RegisterImage( 0x657CCC3058DCB02 ) )
+	largesmoke:setImage( RegisterImage( "uie_ui_icon_callingcards_fairytale_smokelarge" ) )
 	largesmoke:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( largesmoke )
 	self.largesmoke = largesmoke
 	
 	local largesmoke2 = LUI.UIImage.new( 0, 0, 580, 1340, 0, 0, -86, 298 )
 	largesmoke2:setAlpha( 0 )
-	largesmoke2:setImage( RegisterImage( 0x657CCC3058DCB02 ) )
+	largesmoke2:setImage( RegisterImage( "uie_ui_icon_callingcards_fairytale_smokelarge" ) )
 	largesmoke2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( largesmoke2 )
 	self.largesmoke2 = largesmoke2
@@ -57,7 +57,7 @@ CoD[0x6DF244A87F06B10].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x6DF244A87F06B10].__resetProperties = function ( f2_arg0 )
+CoD.ui_icon_callingcards_fairytales.__resetProperties = function ( f2_arg0 )
 	f2_arg0.arm:completeAnimation()
 	f2_arg0.gret:completeAnimation()
 	f2_arg0.hans:completeAnimation()
@@ -77,7 +77,7 @@ CoD[0x6DF244A87F06B10].__resetProperties = function ( f2_arg0 )
 	f2_arg0.largesmoke2:setAlpha( 0 )
 end
 
-CoD[0x6DF244A87F06B10].__clipsPerState = {
+CoD.ui_icon_callingcards_fairytales.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -189,7 +189,7 @@ CoD[0x6DF244A87F06B10].__clipsPerState = {
 		end
 	}
 }
-CoD[0x6DF244A87F06B10].__onClose = function ( f15_arg0 )
+CoD.ui_icon_callingcards_fairytales.__onClose = function ( f15_arg0 )
 	f15_arg0.arm:close()
 	f15_arg0.smoke:close()
 end

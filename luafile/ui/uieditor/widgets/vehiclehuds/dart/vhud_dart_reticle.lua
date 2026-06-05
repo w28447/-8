@@ -90,7 +90,7 @@ CoD.vhud_dart_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.vhuddartframeRight = vhuddartframeRight
 	
 	local CenterDot = LUI.UIImage.new( 0.5, 0.5, -17.5, 17.5, 0.5, 0.5, -27, 19 )
-	CenterDot:setImage( RegisterImage( 0xDACA8B8CFE239D7 ) )
+	CenterDot:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_center_reticle" ) )
 	CenterDot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	CenterDot:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( CenterDot )
@@ -111,21 +111,21 @@ CoD.vhud_dart_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.AltMeterL = AltMeterL
 	
 	local VerticalMeterTop = LUI.UIImage.new( 0.5, 0.5, -18, 18, 0, 0, 387, 307 )
-	VerticalMeterTop:setImage( RegisterImage( 0xC65F2B8D9519C20 ) )
+	VerticalMeterTop:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_meter_bot" ) )
 	VerticalMeterTop:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( VerticalMeterTop )
 	self.VerticalMeterTop = VerticalMeterTop
 	
 	local TrackerActive = LUI.UIImage.new( 0.5, 0.5, -36, 36, 0, 0, 237, 277 )
 	TrackerActive:setAlpha( 0.6 )
-	TrackerActive:setImage( RegisterImage( 0xB22BC6EB891EFC6 ) )
+	TrackerActive:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_active_common_info" ) )
 	TrackerActive:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TrackerActive )
 	self.TrackerActive = TrackerActive
 	
 	local BlkCircleBot = LUI.UIImage.new( 0.5, 0.5, -172, 172, 0, 0, 719, 795 )
 	BlkCircleBot:setAlpha( 0.9 )
-	BlkCircleBot:setImage( RegisterImage( 0xE55FA46415CCA09 ) )
+	BlkCircleBot:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_guide_circle_black" ) )
 	BlkCircleBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	BlkCircleBot:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( BlkCircleBot )
@@ -133,34 +133,34 @@ CoD.vhud_dart_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local BlkCircleTop = LUI.UIImage.new( 0.5, 0.5, -172, 172, 0, 0, 364, 288 )
 	BlkCircleTop:setAlpha( 0.9 )
-	BlkCircleTop:setImage( RegisterImage( 0xE55FA46415CCA09 ) )
+	BlkCircleTop:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_guide_circle_black" ) )
 	BlkCircleTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	BlkCircleTop:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( BlkCircleTop )
 	self.BlkCircleTop = BlkCircleTop
 	
 	local CircleFrameBot = LUI.UIImage.new( 0.5, 0.5, -192, 192, 0, 0, 730, 806 )
-	CircleFrameBot:setImage( RegisterImage( 0xE98C2257424FBBC ) )
+	CircleFrameBot:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_guide_circle" ) )
 	CircleFrameBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	CircleFrameBot:setShaderVector( 0, 1.7, 0, 0, 0 )
 	self:addElement( CircleFrameBot )
 	self.CircleFrameBot = CircleFrameBot
 	
 	local CircleFrameTop = LUI.UIImage.new( 0.5, 0.5, -192, 192, 0, 0, 353, 277 )
-	CircleFrameTop:setImage( RegisterImage( 0xE98C2257424FBBC ) )
+	CircleFrameTop:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_guide_circle" ) )
 	CircleFrameTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	CircleFrameTop:setShaderVector( 0, 1.7, 0, 0, 0 )
 	self:addElement( CircleFrameTop )
 	self.CircleFrameTop = CircleFrameTop
 	
 	local FuiLeft = LUI.UIImage.new( 0, 0, 555, 635, 0, 0, 755, 791 )
-	FuiLeft:setImage( RegisterImage( 0x184787ADFCE8425 ) )
+	FuiLeft:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_detail" ) )
 	FuiLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiLeft )
 	self.FuiLeft = FuiLeft
 	
 	local FuiRight = LUI.UIImage.new( 0, 0, 1365, 1285, 0, 0, 755, 791 )
-	FuiRight:setImage( RegisterImage( 0x184787ADFCE8425 ) )
+	FuiRight:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_layout_detail" ) )
 	FuiRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiRight )
 	self.FuiRight = FuiRight

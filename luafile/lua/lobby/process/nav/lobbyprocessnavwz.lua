@@ -16,7 +16,7 @@ Lobby.Core.AddProcessForward( LuaEnum.UI.DIRECTOR_ONLINE, LuaEnum.UI.DIRECTOR_ON
 	end
 end )
 Lobby.Core.AddProcessBack( LuaEnum.UI.DIRECTOR_ONLINE_WZ_PUBLIC, LuaEnum.UI.DIRECTOR_ONLINE, function ( f2_arg0, f2_arg1, f2_arg2, f2_arg3 )
-	Dvar[0x4FF45B41C6046F8]:set( f2_arg2[0xEE71E4EE12BC453] )
+	Dvar[0x4FF45B41C6046F8]:set( f2_arg2.maxclients )
 	if Dvar[0x4BADE8473F0165F]:get() == true then
 		return Lobby.ProcessNavigate.LeaveGameLobbyAsyncMatchmaking( f2_arg0, f2_arg1, f2_arg2, f2_arg3 )
 	else
@@ -24,11 +24,11 @@ Lobby.Core.AddProcessBack( LuaEnum.UI.DIRECTOR_ONLINE_WZ_PUBLIC, LuaEnum.UI.DIRE
 	end
 end )
 Lobby.Core.AddProcessForward( LuaEnum.UI.DIRECTOR_ONLINE_WZ_PUBLIC, LuaEnum.UI.DIRECTOR_ONLINE_WZ_CUSTOM, function ( f3_arg0, f3_arg1, f3_arg2 )
-	Dvar[0x4FF45B41C6046F8]:set( f3_arg2[0xEE71E4EE12BC453] )
+	Dvar[0x4FF45B41C6046F8]:set( f3_arg2.maxclients )
 	return Lobby.ProcessNavigate.PrivateLobbyNavigate( f3_arg0, f3_arg1, f3_arg2 )
 end )
 Lobby.Core.AddProcessBack( LuaEnum.UI.DIRECTOR_ONLINE_WZ_CUSTOM, LuaEnum.UI.DIRECTOR_ONLINE_WZ_PUBLIC, function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-	Dvar[0x4FF45B41C6046F8]:set( f4_arg2[0xEE71E4EE12BC453] )
+	Dvar[0x4FF45B41C6046F8]:set( f4_arg2.maxclients )
 	return Lobby.ProcessNavigate.PrivateLobbyNavigate( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
 end )
 Lobby.Core.AddProcessForward( LuaEnum.UI.DIRECTOR_ONLINE, LuaEnum.UI.DIRECTOR_ONLINE_WZ_THEATER, function ( f5_arg0, f5_arg1, f5_arg2 )

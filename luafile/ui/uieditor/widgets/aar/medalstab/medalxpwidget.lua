@@ -12,7 +12,7 @@ CoD.MedalXpWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local XpIcon = LUI.UIImage.new( 0, 0, 0, 69, 0, 0, 0, 69 )
-	XpIcon:setImage( RegisterImage( 0x7B197CE33A5602C ) )
+	XpIcon:setImage( RegisterImage( "uie_t7_hud_mp_notifications_xp" ) )
 	self:addElement( XpIcon )
 	self.XpIcon = XpIcon
 	
@@ -36,7 +36,7 @@ CoD.MedalXpWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local MeritIcon = LUI.UIImage.new( 0, 0, -1.5, 70.5, 0, 0, -1.5, 70.5 )
 	MeritIcon:setAlpha( 0 )
-	MeritIcon:setImage( RegisterImage( 0x411C56F228B2CE3 ) )
+	MeritIcon:setImage( RegisterImage( "ui_icon_wz_merrit_small" ) )
 	self:addElement( MeritIcon )
 	self.MeritIcon = MeritIcon
 	

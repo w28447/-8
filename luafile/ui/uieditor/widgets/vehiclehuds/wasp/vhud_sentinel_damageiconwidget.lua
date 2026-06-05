@@ -15,13 +15,13 @@ CoD.vhud_sentinel_DamageIconWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	DamageIconLine0:setRGB( 0.6, 0.82, 0.91 )
 	DamageIconLine0:setAlpha( 0.3 )
 	DamageIconLine0:setZoom( -20 )
-	DamageIconLine0:setImage( RegisterImage( 0xED08B34D557FBD8 ) )
+	DamageIconLine0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_damageiconline" ) )
 	DamageIconLine0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DamageIconLine0 )
 	self.DamageIconLine0 = DamageIconLine0
 	
 	local DamageIconRed = LUI.UIImage.new( 0.5, 0.5, -119, 119, 0.5, 0.5, -53.5, 53.5 )
-	DamageIconRed:setImage( RegisterImage( 0x7D37CAB1AF72F59 ) )
+	DamageIconRed:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_damageiconred" ) )
 	DamageIconRed:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	DamageIconRed:setShaderVector( 1, 0, 0, 0, 0 )
 	DamageIconRed:setShaderVector( 2, 1, 0, 0, 0 )
@@ -38,14 +38,14 @@ CoD.vhud_sentinel_DamageIconWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local DamageIconLine = LUI.UIImage.new( 0.5, 0.5, -119, 119, 0.5, 0.5, -53.5, 53.5 )
 	DamageIconLine:setRGB( 0.6, 0.82, 0.91 )
-	DamageIconLine:setImage( RegisterImage( 0xED08B34D557FBD8 ) )
+	DamageIconLine:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_damageiconline" ) )
 	DamageIconLine:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DamageIconLine )
 	self.DamageIconLine = DamageIconLine
 	
 	local DamageIconDots = LUI.UIImage.new( 0.5, 0.5, -119, 119, 0.5, 0.5, -53.5, 53.5 )
 	DamageIconDots:setRGB( 0.6, 0.82, 0.91 )
-	DamageIconDots:setImage( RegisterImage( 0x559FB77424F7896 ) )
+	DamageIconDots:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_damageicondots" ) )
 	DamageIconDots:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DamageIconDots )
 	self.DamageIconDots = DamageIconDots

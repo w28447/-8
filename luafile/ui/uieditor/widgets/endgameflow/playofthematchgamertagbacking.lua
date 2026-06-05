@@ -28,7 +28,7 @@ CoD.PlayOfTheMatchGamertagBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local DotPattern = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	DotPattern:setAlpha( 0.15 )
-	DotPattern:setImage( RegisterImage( 0xD876FDDB0C64D93 ) )
+	DotPattern:setImage( RegisterImage( "uie_ui_hud_killcam_dotpattern" ) )
 	DotPattern:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	DotPattern:setShaderVector( 0, 0, 1, 0, 0 )
 	DotPattern:setShaderVector( 1, 0, 0, 0, 0 )

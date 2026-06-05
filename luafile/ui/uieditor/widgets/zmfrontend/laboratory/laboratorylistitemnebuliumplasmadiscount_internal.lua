@@ -261,7 +261,7 @@ CoD.LaboratoryListItemNebuliumPlasmaDiscount_Internal.new = function ( f1_arg0, 
 	Quantity:linkToElementModel( self, "displayName", true, function ( model )
 		local f11_local0 = model:get()
 		if f11_local0 ~= nil then
-			Quantity:setText( LocalizeIntoString( 0x9DB9C526E6370AB, f11_local0 ) )
+			Quantity:setText( LocalizeIntoString( "menu/multiplier_x", f11_local0 ) )
 		end
 	end )
 	self:addElement( Quantity )

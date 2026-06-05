@@ -1,22 +1,22 @@
-CoD[0x141F5FCBDC4E50] = InheritFrom( LUI.UIElement )
-CoD[0x141F5FCBDC4E50].__defaultWidth = 960
-CoD[0x141F5FCBDC4E50].__defaultHeight = 240
-CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_zm_prestige_allseeingeye = InheritFrom( LUI.UIElement )
+CoD.callingcards_zm_prestige_allseeingeye.__defaultWidth = 960
+CoD.callingcards_zm_prestige_allseeingeye.__defaultHeight = 240
+CoD.callingcards_zm_prestige_allseeingeye.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x141F5FCBDC4E50] )
+	self:setClass( CoD.callingcards_zm_prestige_allseeingeye )
 	self.id = "CallingCards_zm_prestige_allseeingeye"
 	self.soundSet = "default"
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local background = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	background:setImage( RegisterImage( 0x2A0940EFA0E4344 ) )
+	background:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_prestige_allseeingeye_background" ) )
 	self:addElement( background )
 	self.background = background
 	
 	local spotlightColor = LUI.UIImage.new( 0, 0, 53, 254, 0, 0, 34, 246 )
 	spotlightColor:setRGB( 0.98, 0.87, 0 )
 	spotlightColor:setAlpha( 0.3 )
-	spotlightColor:setImage( RegisterImage( 0xCD389130C7FE72E ) )
+	spotlightColor:setImage( RegisterImage( "uie_callingcards_global_master_spotlight" ) )
 	spotlightColor:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( spotlightColor )
 	self.spotlightColor = spotlightColor
@@ -24,7 +24,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local spotlightColor3 = LUI.UIImage.new( 0, 0, 373.5, 475.5, 0, 0, 87, 195 )
 	spotlightColor3:setRGB( 0.98, 0.87, 0 )
 	spotlightColor3:setAlpha( 0.3 )
-	spotlightColor3:setImage( RegisterImage( 0xCD389130C7FE72E ) )
+	spotlightColor3:setImage( RegisterImage( "uie_callingcards_global_master_spotlight" ) )
 	spotlightColor3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( spotlightColor3 )
 	self.spotlightColor3 = spotlightColor3
@@ -32,7 +32,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local spotlightColor4 = LUI.UIImage.new( 0, 0, 260.5, 355.5, 0, 0, 108, 209 )
 	spotlightColor4:setRGB( 0.98, 0.87, 0 )
 	spotlightColor4:setAlpha( 0.3 )
-	spotlightColor4:setImage( RegisterImage( 0xCD389130C7FE72E ) )
+	spotlightColor4:setImage( RegisterImage( "uie_callingcards_global_master_spotlight" ) )
 	spotlightColor4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( spotlightColor4 )
 	self.spotlightColor4 = spotlightColor4
@@ -40,14 +40,14 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local spotlightColor2 = LUI.UIImage.new( 0, 0, 771, 972, 0, 0, 59, 271 )
 	spotlightColor2:setRGB( 0.98, 0.87, 0 )
 	spotlightColor2:setAlpha( 0.6 )
-	spotlightColor2:setImage( RegisterImage( 0xCD389130C7FE72E ) )
+	spotlightColor2:setImage( RegisterImage( "uie_callingcards_global_master_spotlight" ) )
 	spotlightColor2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( spotlightColor2 )
 	self.spotlightColor2 = spotlightColor2
 	
 	local mistBack = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	mistBack:setImage( RegisterImage( 0x4AEB4D809F65B03 ) )
-	mistBack:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	mistBack:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_prestige_allseeingeye_pyramid_mist1" ) )
+	mistBack:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	mistBack:setShaderVector( 0, 1, 1, 0, 0 )
 	mistBack:setShaderVector( 1, 0.05, 0, 0, 0 )
 	self:addElement( mistBack )
@@ -59,8 +59,8 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.monks = monks
 	
 	local mistFront = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	mistFront:setImage( RegisterImage( 0x4AEB5D809F65CB6 ) )
-	mistFront:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	mistFront:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_prestige_allseeingeye_pyramid_mist2" ) )
+	mistFront:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	mistFront:setShaderVector( 0, 1, 1, 0, 0 )
 	mistFront:setShaderVector( 1, 0.08, 0, 0, 0 )
 	self:addElement( mistFront )
@@ -108,7 +108,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.torchFlames5 = torchFlames5
 	
 	local pyramidSheen1 = LUI.UIImage.new( 0, 0, 533.5, 869.5, 0, 0, 7, 239 )
-	pyramidSheen1:setImage( RegisterImage( 0xA582D1981CFAA6C ) )
+	pyramidSheen1:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_prestige_allseeingeye_pyramid_mask1" ) )
 	pyramidSheen1:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	pyramidSheen1:setShaderVector( 0, 0, 1, 0, 0 )
 	pyramidSheen1:setShaderVector( 1, 0, 0, 0, 0 )
@@ -119,13 +119,13 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.pyramidSheen1 = pyramidSheen1
 	
 	local sunrays = LUI.UIImage.new( 0, 0, 715.5, 979.5, 0, 0, -10, 150 )
-	sunrays:setImage( RegisterImage( 0xE28491BA6D0B35A ) )
+	sunrays:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_prestige_allseeingeye_pyramid_lightrays" ) )
 	sunrays:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( sunrays )
 	self.sunrays = sunrays
 	
 	local pyramidSheen2 = LUI.UIImage.new( 0, 0, 520.5, 872.5, 0, 0, 130, 242 )
-	pyramidSheen2:setImage( RegisterImage( 0xA58301981CFAF85 ) )
+	pyramidSheen2:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_prestige_allseeingeye_pyramid_mask2" ) )
 	pyramidSheen2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	pyramidSheen2:setShaderVector( 0, 0, 1, 0, 0 )
 	pyramidSheen2:setShaderVector( 1, 0, 0, 0, 0 )
@@ -137,7 +137,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local cropper = LUI.UIImage.new( 0, 0, -32, 992, 0, 0, -392, 632 )
 	cropper:setAlpha( 0 )
-	cropper:setImage( RegisterImage( 0x7EEE1693E39382A ) )
+	cropper:setImage( RegisterImage( "uie_stage_crop_prop" ) )
 	self:addElement( cropper )
 	self.cropper = cropper
 	
@@ -148,7 +148,7 @@ CoD[0x141F5FCBDC4E50].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	return self
 end
 
-CoD[0x141F5FCBDC4E50].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_zm_prestige_allseeingeye.__resetProperties = function ( f2_arg0 )
 	f2_arg0.sunrays:completeAnimation()
 	f2_arg0.pyramidSheen1:completeAnimation()
 	f2_arg0.pyramidSheen2:completeAnimation()
@@ -172,7 +172,7 @@ CoD[0x141F5FCBDC4E50].__resetProperties = function ( f2_arg0 )
 	f2_arg0.cropper:setAlpha( 0 )
 end
 
-CoD[0x141F5FCBDC4E50].__clipsPerState = {
+CoD.callingcards_zm_prestige_allseeingeye.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()

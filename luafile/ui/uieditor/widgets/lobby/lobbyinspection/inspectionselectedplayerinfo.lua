@@ -26,14 +26,14 @@ CoD.InspectionSelectedPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local DividerDotLine = LUI.UIImage.new( 0, 0, -1.5, 350.5, 0, 0, 353, 357 )
 	DividerDotLine:setAlpha( 0.2 )
-	DividerDotLine:setImage( RegisterImage( 0xACCC46C0F9F0C21 ) )
+	DividerDotLine:setImage( RegisterImage( "uie_ui_menu_inspection_identity_dotline" ) )
 	DividerDotLine:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DividerDotLine )
 	self.DividerDotLine = DividerDotLine
 	
 	local IdentityText = LUI.UIImage.new( 0, 0, 102, 246, 0, 0, 168, 180 )
 	IdentityText:setAlpha( 0.1 )
-	IdentityText:setImage( RegisterImage( 0x30DC6EA083B9801 ) )
+	IdentityText:setImage( RegisterImage( "uie_ui_menu_inspection_identity_header" ) )
 	self:addElement( IdentityText )
 	self.IdentityText = IdentityText
 	
@@ -54,7 +54,7 @@ CoD.InspectionSelectedPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local EmblemCornerBlurBL = LUI.UIImage.new( 0, 0, -4, 16, 0, 0, 330, 350 )
 	EmblemCornerBlurBL:setAlpha( 0 )
 	EmblemCornerBlurBL:setZRot( 90 )
-	EmblemCornerBlurBL:setImage( RegisterImage( 0xD904D19448C50F7 ) )
+	EmblemCornerBlurBL:setImage( RegisterImage( "uie_ui_menu_inspection_window_corner" ) )
 	EmblemCornerBlurBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	EmblemCornerBlurBL:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( EmblemCornerBlurBL )
@@ -71,7 +71,7 @@ CoD.InspectionSelectedPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local EmblemCornerBlurTL = LUI.UIImage.new( 0, 0, -1.5, 18.5, 0, 0, -3, 17 )
 	EmblemCornerBlurTL:setAlpha( 0 )
-	EmblemCornerBlurTL:setImage( RegisterImage( 0xD904D19448C50F7 ) )
+	EmblemCornerBlurTL:setImage( RegisterImage( "uie_ui_menu_inspection_window_corner" ) )
 	EmblemCornerBlurTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	EmblemCornerBlurTL:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( EmblemCornerBlurTL )
@@ -89,7 +89,7 @@ CoD.InspectionSelectedPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local EmblemCornerBlurBR = LUI.UIImage.new( 0, 0, 331, 351, 0, 0, 331, 351 )
 	EmblemCornerBlurBR:setAlpha( 0 )
 	EmblemCornerBlurBR:setZRot( 180 )
-	EmblemCornerBlurBR:setImage( RegisterImage( 0xD904D19448C50F7 ) )
+	EmblemCornerBlurBR:setImage( RegisterImage( "uie_ui_menu_inspection_window_corner" ) )
 	EmblemCornerBlurBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	EmblemCornerBlurBR:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( EmblemCornerBlurBR )
@@ -106,7 +106,7 @@ CoD.InspectionSelectedPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local EmblemCornerBlurTR = LUI.UIImage.new( 0, 0, 329, 349, 0, 0, -3, 17 )
 	EmblemCornerBlurTR:setAlpha( 0 )
 	EmblemCornerBlurTR:setYRot( 180 )
-	EmblemCornerBlurTR:setImage( RegisterImage( 0xD904D19448C50F7 ) )
+	EmblemCornerBlurTR:setImage( RegisterImage( "uie_ui_menu_inspection_window_corner" ) )
 	EmblemCornerBlurTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	EmblemCornerBlurTR:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( EmblemCornerBlurTR )

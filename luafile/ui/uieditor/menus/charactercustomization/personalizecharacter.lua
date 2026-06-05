@@ -103,42 +103,42 @@ LUI.createMenu.PersonalizeCharacter = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0xC083113BC81F23F] )
 		return f10_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( outfitsPC, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f11_arg0, f11_arg2, "owned" ) then
+	f1_local1:AddButtonCallbackFunction( outfitsPC, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) then
 			PlaySoundAlias( "uin_cac_equip_base" )
-			CoD.PlayerRoleUtility.EquipOutfitItem( f11_arg1, f11_arg2, f11_arg0 )
+			CoD.PlayerRoleUtility.EquipOutfitItem( menu, controller, element )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f12_arg0, f12_arg2, "owned" ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xBDF67DCF97EBC09, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/equip", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( outfitsPC, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_remove", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f13_arg0, f13_arg2, "itemType", Enum.CharacterItemType[0x922FE5C41D9EE8B] ) and CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex( f13_arg0, f13_arg2 ) and IsGamepad( f13_arg2 ) then
+	f1_local1:AddButtonCallbackFunction( outfitsPC, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_remove", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "itemType", Enum.CharacterItemType[0x922FE5C41D9EE8B] ) and CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex( element, controller ) and IsGamepad( controller ) then
 			PlaySoundAlias( "uin_cac_equip_remove" )
-			CoD.PlayerRoleUtility.UnequipOutfitItem( f13_arg1, f13_arg2, f13_arg0 )
-			CoD.PlayerRoleUtility.ResetPersonalizeSpecialistOutfitItemType( f13_arg2, f13_arg0 )
+			CoD.PlayerRoleUtility.UnequipOutfitItem( menu, controller, element )
+			CoD.PlayerRoleUtility.ResetPersonalizeSpecialistOutfitItemType( controller, element )
 			return true
-		elseif IsMouseOrKeyboard( f13_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f13_arg0, f13_arg2, "itemType", Enum.CharacterItemType[0x922FE5C41D9EE8B] ) and CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex( f13_arg0, f13_arg2 ) then
+		elseif IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "itemType", Enum.CharacterItemType[0x922FE5C41D9EE8B] ) and CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex( element, controller ) then
 			PlaySoundAlias( "uin_cac_equip_remove" )
-			CoD.PlayerRoleUtility.UnequipOutfitItem( f13_arg1, f13_arg2, f13_arg0 )
-			CoD.PlayerRoleUtility.ResetPersonalizeSpecialistOutfitItemType( f13_arg2, f13_arg0 )
+			CoD.PlayerRoleUtility.UnequipOutfitItem( menu, controller, element )
+			CoD.PlayerRoleUtility.ResetPersonalizeSpecialistOutfitItemType( controller, element )
 			return true
 		else
 			
 		end
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f14_arg0, f14_arg2, "itemType", Enum.CharacterItemType[0x922FE5C41D9EE8B] ) and CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex( f14_arg0, f14_arg2 ) and IsGamepad( f14_arg2 ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, nil, "ui_remove" )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "itemType", Enum.CharacterItemType[0x922FE5C41D9EE8B] ) and CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex( element, controller ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", nil, "ui_remove" )
 			return true
-		elseif IsMouseOrKeyboard( f14_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f14_arg0, f14_arg2, "itemType", Enum.CharacterItemType[0x922FE5C41D9EE8B] ) and CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex( f14_arg0, f14_arg2 ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+		elseif IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "itemType", Enum.CharacterItemType[0x922FE5C41D9EE8B] ) and CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
@@ -147,7 +147,7 @@ LUI.createMenu.PersonalizeCharacter = function ( f1_arg0, f1_arg1 )
 	outfitsPC:subscribeToGlobalModel( f1_arg0, "MPOutfitCategories", "selectedCategory", function ( model )
 		UpdateSelfElementState( f1_local1, outfitsPC, f1_arg0 )
 	end )
-	outfitsPC:AddContextualMenuAction( f1_local1, f1_arg0, 0x679ACA6FFC6C8F3, function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
+	outfitsPC:AddContextualMenuAction( f1_local1, f1_arg0, "menu/remove", function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f16_arg0, f16_arg2, "itemType", Enum.CharacterItemType[0x922FE5C41D9EE8B] ) and CoD.PlayerRoleUtility.IsSelectedOutfitItemIndex( f16_arg0, f16_arg2 ) then
 			return function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
 				PlaySoundAlias( "uin_cac_equip_remove" )
@@ -194,17 +194,17 @@ LUI.createMenu.PersonalizeCharacter = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f20_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( themesPC, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f21_arg0, f21_arg1, f21_arg2, f21_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f21_arg0, f21_arg2, "disabled" ) then
+	f1_local1:AddButtonCallbackFunction( themesPC, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "disabled" ) then
 			PlaySoundAlias( "uin_cac_equip_base" )
-			CoD.PlayerRoleUtility.EquipOutfit( f21_arg1, f21_arg2, f21_arg0 )
+			CoD.PlayerRoleUtility.EquipOutfit( menu, controller, element )
 			return true
 		else
 			
 		end
-	end, function ( f22_arg0, f22_arg1, f22_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f22_arg0, f22_arg2, "disabled" ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "disabled" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -345,63 +345,63 @@ LUI.createMenu.PersonalizeCharacter = function ( f1_arg0, f1_arg1 )
 	self:linkToElementModel( self, "previewEnabled", true, function ( model, f37_arg1 )
 		CoD.Menu.UpdateButtonShownState( f37_arg1, f1_local1, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09] )
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f38_arg0, f38_arg1, f38_arg2, f38_arg3 )
-		GoBack( self, f38_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f39_arg0, f39_arg1, f39_arg2 )
-		CoD.Menu.SetButtonLabel( f39_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f40_arg0, f40_arg1, f40_arg2, f40_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( self.SpecialistDecalSelector, f40_arg2, "decalDataSourceName" ) and not IsPC() then
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( self.SpecialistDecalSelector, controller, "decalDataSourceName" ) and not IsPC() then
 			PlaySoundAlias( "uin_cac_equip_base" )
-			CoD.PlayerRoleUtility.CycleOutfitDecalItem( f40_arg1, f40_arg2, self.SpecialistDecalSelector )
+			CoD.PlayerRoleUtility.CycleOutfitDecalItem( menu, controller, self.SpecialistDecalSelector )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueNonEmptyString( self.SpecialistDecalSelectorPC, f40_arg2, "decalDataSourceName" ) and not CoD.ModelUtility.IsSelfModelValueTrue( self.themesPC, f40_arg2, "disabled" ) and IsPC() and IsGamepad( f40_arg2 ) then
+		elseif CoD.ModelUtility.IsSelfModelValueNonEmptyString( self.SpecialistDecalSelectorPC, controller, "decalDataSourceName" ) and not CoD.ModelUtility.IsSelfModelValueTrue( self.themesPC, controller, "disabled" ) and IsPC() and IsGamepad( controller ) then
 			PlaySoundAlias( "uin_cac_equip_base" )
-			CoD.PlayerRoleUtility.CycleOutfitDecalItem( f40_arg1, f40_arg2, self.SpecialistDecalSelectorPC )
+			CoD.PlayerRoleUtility.CycleOutfitDecalItem( menu, controller, self.SpecialistDecalSelectorPC )
 			return true
 		else
 			
 		end
-	end, function ( f41_arg0, f41_arg1, f41_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( self.SpecialistDecalSelector, f41_arg2, "decalDataSourceName" ) and not IsPC() then
-			CoD.Menu.SetButtonLabel( f41_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( self.SpecialistDecalSelector, controller, "decalDataSourceName" ) and not IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, nil )
 			return false
-		elseif CoD.ModelUtility.IsSelfModelValueNonEmptyString( self.SpecialistDecalSelectorPC, f41_arg2, "decalDataSourceName" ) and not CoD.ModelUtility.IsSelfModelValueTrue( self.themesPC, f41_arg2, "disabled" ) and IsPC() and IsGamepad( f41_arg2 ) then
-			CoD.Menu.SetButtonLabel( f41_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, nil )
+		elseif CoD.ModelUtility.IsSelfModelValueNonEmptyString( self.SpecialistDecalSelectorPC, controller, "decalDataSourceName" ) and not CoD.ModelUtility.IsSelfModelValueTrue( self.themesPC, controller, "disabled" ) and IsPC() and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_contextual_2", function ( f42_arg0, f42_arg1, f42_arg2, f42_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( self.SpecialistDecalSelectorPC, f42_arg2, "decalDataSourceName" ) and not CoD.ModelUtility.IsSelfModelValueTrue( self.themesPC, f42_arg2, "disabled" ) and IsPC() and IsMouseOrKeyboard( f42_arg2 ) then
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_contextual_2", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( self.SpecialistDecalSelectorPC, controller, "decalDataSourceName" ) and not CoD.ModelUtility.IsSelfModelValueTrue( self.themesPC, controller, "disabled" ) and IsPC() and IsMouseOrKeyboard( controller ) then
 			PlaySoundAlias( "uin_cac_equip_base" )
-			CoD.PlayerRoleUtility.CycleOutfitDecalItem( f42_arg1, f42_arg2, self.SpecialistDecalSelectorPC )
+			CoD.PlayerRoleUtility.CycleOutfitDecalItem( menu, controller, self.SpecialistDecalSelectorPC )
 			return true
 		else
 			
 		end
-	end, function ( f43_arg0, f43_arg1, f43_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( self.SpecialistDecalSelectorPC, f43_arg2, "decalDataSourceName" ) and not CoD.ModelUtility.IsSelfModelValueTrue( self.themesPC, f43_arg2, "disabled" ) and IsPC() and IsMouseOrKeyboard( f43_arg2 ) then
-			CoD.Menu.SetButtonLabel( f43_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( self.SpecialistDecalSelectorPC, controller, "decalDataSourceName" ) and not CoD.ModelUtility.IsSelfModelValueTrue( self.themesPC, controller, "disabled" ) and IsPC() and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_contextual_2" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_contextual_1", function ( f44_arg0, f44_arg1, f44_arg2, f44_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( self, f44_arg2, "previewEnabled" ) then
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_contextual_1", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueTrue( self, controller, "previewEnabled" ) then
 			PlaySoundAlias( "uin_main_edit" )
-			OpenOverlay( self, "MPSpecialistHUBPreviewMoment", f44_arg2 )
+			OpenOverlay( self, "MPSpecialistHUBPreviewMoment", controller )
 			return true
 		else
 			
 		end
-	end, function ( f45_arg0, f45_arg1, f45_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( self, f45_arg2, "previewEnabled" ) then
-			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/preview", nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueTrue( self, controller, "previewEnabled" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/preview", nil, "ui_contextual_1" )
 			return true
 		else
 			return false

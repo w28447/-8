@@ -40,13 +40,13 @@ CoD.ReservesLootButtonsGroup.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ReservesLootBribeButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if CoD.ModelUtility.IsControllerModelValueTrue( f6_arg2, "LootStreamProgress.allRngUnlocked" ) then
-			CoD.BlackMarketUtility.OpenAllReservesOwnedDialog( f6_arg1, f6_arg2 )
+	f1_arg0:AddButtonCallbackFunction( ReservesLootBribeButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsControllerModelValueTrue( controller, "LootStreamProgress.allRngUnlocked" ) then
+			CoD.BlackMarketUtility.OpenAllReservesOwnedDialog( menu, controller )
 			return true
-		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f6_arg2, "ReservesItemCounts", "lootBribeCount", 0 ) then
-			OpenOverlay( self, "OpenBribeConfirmation", f6_arg2, {
-				_model = f6_arg0:getModel(),
+		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "ReservesItemCounts", "lootBribeCount", 0 ) then
+			OpenOverlay( self, "OpenBribeConfirmation", controller, {
+				_model = element:getModel(),
 				_properties = {
 					_bribeType = LuaEnum.BRIBE_TYPES.BRIBE
 				}
@@ -55,12 +55,12 @@ CoD.ReservesLootButtonsGroup.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		if CoD.ModelUtility.IsControllerModelValueTrue( f7_arg2, "LootStreamProgress.allRngUnlocked" ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x867BE59364DD53B, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsControllerModelValueTrue( controller, "LootStreamProgress.allRngUnlocked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/redeem", nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f7_arg2, "ReservesItemCounts", "lootBribeCount", 0 ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x867BE59364DD53B, nil, nil )
+		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "ReservesItemCounts", "lootBribeCount", 0 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/redeem", nil, nil )
 			return true
 		else
 			return false
@@ -95,13 +95,13 @@ CoD.ReservesLootButtonsGroup.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f11_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( LootBundleCrateButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		if CoD.ModelUtility.IsControllerModelValueTrue( f12_arg2, "LootStreamProgress.allRngUnlocked" ) then
-			CoD.BlackMarketUtility.OpenAllReservesOwnedDialog( f12_arg1, f12_arg2 )
+	f1_arg0:AddButtonCallbackFunction( LootBundleCrateButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsControllerModelValueTrue( controller, "LootStreamProgress.allRngUnlocked" ) then
+			CoD.BlackMarketUtility.OpenAllReservesOwnedDialog( menu, controller )
 			return true
-		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f12_arg2, "ReservesItemCounts", "lootBundleCrateCount", 0 ) then
-			OpenOverlay( self, "OpenBribeConfirmation", f12_arg2, {
-				_model = f12_arg0:getModel(),
+		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "ReservesItemCounts", "lootBundleCrateCount", 0 ) then
+			OpenOverlay( self, "OpenBribeConfirmation", controller, {
+				_model = element:getModel(),
 				_properties = {
 					_bribeType = LuaEnum.BRIBE_TYPES.CRATE
 				}
@@ -110,12 +110,12 @@ CoD.ReservesLootButtonsGroup.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		if CoD.ModelUtility.IsControllerModelValueTrue( f13_arg2, "LootStreamProgress.allRngUnlocked" ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x867BE59364DD53B, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsControllerModelValueTrue( controller, "LootStreamProgress.allRngUnlocked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/redeem", nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f13_arg2, "ReservesItemCounts", "lootBundleCrateCount", 0 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x867BE59364DD53B, nil, nil )
+		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "ReservesItemCounts", "lootBundleCrateCount", 0 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/redeem", nil, nil )
 			return true
 		else
 			return false
@@ -150,13 +150,13 @@ CoD.ReservesLootButtonsGroup.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f17_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( LootCaseButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f18_arg0, f18_arg1, f18_arg2, f18_arg3 )
-		if CoD.ModelUtility.IsControllerModelValueTrue( f18_arg2, "LootStreamProgress.allRngUnlocked" ) then
-			CoD.BlackMarketUtility.OpenAllReservesOwnedDialog( f18_arg1, f18_arg2 )
+	f1_arg0:AddButtonCallbackFunction( LootCaseButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsControllerModelValueTrue( controller, "LootStreamProgress.allRngUnlocked" ) then
+			CoD.BlackMarketUtility.OpenAllReservesOwnedDialog( menu, controller )
 			return true
-		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f18_arg2, "ReservesItemCounts", "lootCaseCount", 0 ) then
-			OpenOverlay( self, "OpenBribeConfirmation", f18_arg2, {
-				_model = f18_arg0:getModel(),
+		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "ReservesItemCounts", "lootCaseCount", 0 ) then
+			OpenOverlay( self, "OpenBribeConfirmation", controller, {
+				_model = element:getModel(),
 				_properties = {
 					_bribeType = LuaEnum.BRIBE_TYPES.CASE
 				}
@@ -165,12 +165,12 @@ CoD.ReservesLootButtonsGroup.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		else
 			
 		end
-	end, function ( f19_arg0, f19_arg1, f19_arg2 )
-		if CoD.ModelUtility.IsControllerModelValueTrue( f19_arg2, "LootStreamProgress.allRngUnlocked" ) then
-			CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x867BE59364DD53B, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsControllerModelValueTrue( controller, "LootStreamProgress.allRngUnlocked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/redeem", nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f19_arg2, "ReservesItemCounts", "lootCaseCount", 0 ) then
-			CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x867BE59364DD53B, nil, nil )
+		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "ReservesItemCounts", "lootCaseCount", 0 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/redeem", nil, nil )
 			return true
 		else
 			return false

@@ -41,25 +41,25 @@ CoD.BlackMarketUtility.LootItemRevealRerollDelayMS = 1000
 CoD.BlackMarketUtility.LootItemRevealFinalDelayMS = 1250
 DataSourceHelpers.PerControllerDataSourceSetup( "LootStreamProgress", "LootStreamProgress", nil )
 CoD.BlackMarketUtility.ItemCategories = {
-	CALLING_CARD = 0xCA2BC08C1A6BCF6,
-	STICKER = 0xFB6919EC129667C,
-	TAG = 0x6D7AB194448A4F3,
-	OUTFIT = 0xBD6E1F8964DCE86,
-	OUTFIT_WARPAINT = 0xC857B47F78AC055,
-	OUTFIT_DECAL = 0x86EF06BC7598824,
-	OUTFIT_BUNDLE = 0xC398D8E22A2269B,
-	SIGNATURE_WEAPON = 0xCC13B0F8EEFF726,
-	CHARACTER = 0x2D79C9016401F0
+	CALLING_CARD = "calling_card",
+	STICKER = "sticker",
+	TAG = "tag",
+	OUTFIT = "outfit",
+	OUTFIT_WARPAINT = "outfit_warpaint",
+	OUTFIT_DECAL = "outfit_decal",
+	OUTFIT_BUNDLE = "outfit_bundle",
+	SIGNATURE_WEAPON = "signature_weapon",
+	CHARACTER = "character"
 }
 CoD.BlackMarketUtility.ItemCategoryStrings = {
 	[CoD.BlackMarketUtility.ItemCategories.CALLING_CARD] = "menu/calling_card",
-	[CoD.BlackMarketUtility.ItemCategories.STICKER] = 0x84446BBFA84177E,
-	[CoD.BlackMarketUtility.ItemCategories.OUTFIT] = 0x902540279D3297C,
-	[CoD.BlackMarketUtility.ItemCategories.OUTFIT_WARPAINT] = 0xC6DA1503405E36F,
-	[CoD.BlackMarketUtility.ItemCategories.OUTFIT_DECAL] = 0x90FDB01723264C2,
-	[CoD.BlackMarketUtility.ItemCategories.OUTFIT_BUNDLE] = 0x10FEC0D6C18D931,
+	[CoD.BlackMarketUtility.ItemCategories.STICKER] = "mpui/bm_sticker",
+	[CoD.BlackMarketUtility.ItemCategories.OUTFIT] = "mpui/bm_outfit",
+	[CoD.BlackMarketUtility.ItemCategories.OUTFIT_WARPAINT] = "mpui/bm_outfit_warpaint",
+	[CoD.BlackMarketUtility.ItemCategories.OUTFIT_DECAL] = "mpui/bm_outfit_decal",
+	[CoD.BlackMarketUtility.ItemCategories.OUTFIT_BUNDLE] = "mpui/bm_outfit_bundle",
 	[CoD.BlackMarketUtility.ItemCategories.SIGNATURE_WEAPON] = 0x568FD7857ADA7B1,
-	[CoD.BlackMarketUtility.ItemCategories.CHARACTER] = 0xA2DF1D1E83E0922
+	[CoD.BlackMarketUtility.ItemCategories.CHARACTER] = "mpui/bm_character"
 }
 CoD.BlackMarketUtility.DropTypes = {
 	COMMON = Enum.LootCrateType[0x46E10F1223063F0],
@@ -70,25 +70,25 @@ CoD.BlackMarketUtility.DropTypes = {
 }
 CoD.BlackMarketUtility.CrateTypeStrings = {
 	[CoD.BlackMarketUtility.DropTypes.COMMON] = "mpui/bm_common",
-	[CoD.BlackMarketUtility.DropTypes.RARE] = 0xA8D876D6473235B,
-	[CoD.BlackMarketUtility.DropTypes.BRIBE] = 0x97744D71B184F53,
-	[CoD.BlackMarketUtility.DropTypes.LEGENDARY] = 0x68F56915CF75F58,
-	[CoD.BlackMarketUtility.DropTypes.EPIC] = 0xF39F413DBEF779A
+	[CoD.BlackMarketUtility.DropTypes.RARE] = "mpui/bm_rare",
+	[CoD.BlackMarketUtility.DropTypes.BRIBE] = "mpui/bm_bribe",
+	[CoD.BlackMarketUtility.DropTypes.LEGENDARY] = "mpui/bm_legendary",
+	[CoD.BlackMarketUtility.DropTypes.EPIC] = "mpui/bm_epic"
 }
 CoD.BlackMarketUtility.CrateTypeIds = {
-	[CoD.BlackMarketUtility.DropTypes.COMMON] = 0xDBB8C7CA3AEB214,
-	[CoD.BlackMarketUtility.DropTypes.RARE] = 0xDA6061FD1E081BD,
-	[CoD.BlackMarketUtility.DropTypes.BRIBE] = 0x91F431E247EFC65,
-	[CoD.BlackMarketUtility.DropTypes.LEGENDARY] = 0xCD85DA54E34F20A,
-	[CoD.BlackMarketUtility.DropTypes.EPIC] = 0x3631E606828D668
+	[CoD.BlackMarketUtility.DropTypes.COMMON] = "common",
+	[CoD.BlackMarketUtility.DropTypes.RARE] = "rare",
+	[CoD.BlackMarketUtility.DropTypes.BRIBE] = "bribe",
+	[CoD.BlackMarketUtility.DropTypes.LEGENDARY] = "legendary",
+	[CoD.BlackMarketUtility.DropTypes.EPIC] = "epic"
 }
 CoD.BlackMarketUtility.LootRarityIds = {
-	[Enum.LootRarityType[0xFA11ABBEBCE1980]] = 0xDBB8C7CA3AEB214,
-	[Enum.LootRarityType[0x895F040FAFBECB9]] = 0xDA6061FD1E081BD,
-	[Enum.LootRarityType[0x35E4133DEF6B806]] = 0xCD85DA54E34F20A,
-	[Enum.LootRarityType[0xC3B1CFA5096734]] = 0x3631E606828D668,
-	[Enum.LootRarityType[0x3006FE890A202D9]] = 0xAD656415D50AC75,
-	[Enum.LootRarityType[0x8556B83CAD0D180]] = 0xBE5705C42A81BD0
+	[Enum.LootRarityType[0xFA11ABBEBCE1980]] = "common",
+	[Enum.LootRarityType[0x895F040FAFBECB9]] = "rare",
+	[Enum.LootRarityType[0x35E4133DEF6B806]] = "legendary",
+	[Enum.LootRarityType[0xC3B1CFA5096734]] = "epic",
+	[Enum.LootRarityType[0x3006FE890A202D9]] = "ultra",
+	[Enum.LootRarityType[0x8556B83CAD0D180]] = "invalid"
 }
 CoD.BlackMarketUtility.LootIdRarities = {}
 for f0_local3, f0_local4 in pairs( CoD.BlackMarketUtility.LootRarityIds ) do
@@ -96,10 +96,10 @@ for f0_local3, f0_local4 in pairs( CoD.BlackMarketUtility.LootRarityIds ) do
 end
 CoD.BlackMarketUtility.LootRarityStrings = {
 	[Enum.LootRarityType[0xFA11ABBEBCE1980]] = "mpui/bm_common",
-	[Enum.LootRarityType[0x895F040FAFBECB9]] = 0xA8D876D6473235B,
-	[Enum.LootRarityType[0x35E4133DEF6B806]] = 0x68F56915CF75F58,
-	[Enum.LootRarityType[0xC3B1CFA5096734]] = 0xF39F413DBEF779A,
-	[Enum.LootRarityType[0x3006FE890A202D9]] = 0xFC3AF23DAE9A3DB
+	[Enum.LootRarityType[0x895F040FAFBECB9]] = "mpui/bm_rare",
+	[Enum.LootRarityType[0x35E4133DEF6B806]] = "mpui/bm_legendary",
+	[Enum.LootRarityType[0xC3B1CFA5096734]] = "mpui/bm_epic",
+	[Enum.LootRarityType[0x3006FE890A202D9]] = "mpui/bm_ultra"
 }
 CoD.BlackMarketUtility.LootRarityColors = {
 	[Enum.LootRarityType[0xFA11ABBEBCE1980]] = ColorSet.BlackMarketCommon,
@@ -146,46 +146,46 @@ CoD.BlackMarketUtility.BlackjackShopSunsetOverridePopupImageItems = {
 }
 CoD.BlackMarketUtility.CharacterPRTTable = {
 	"prt_mp_mercenary",
-	0x294AA09F1128925,
-	0xE52518EC3FFD40D,
-	0x512703E2C793E0D,
+	"prt_mp_battery",
+	"prt_mp_swatpolice",
+	"prt_mp_engineer",
 	"prt_mp_buffassault",
-	0x51C3B11EFDFEC9F,
-	0x7BB98AE1BA6C32B,
-	0x78D35E03A52B01A,
-	0x42BC93E975F144C,
-	0x74B22516FF300B9,
-	0xE7BEFEFF487BA9A,
-	0xA011DFFEC0DD650,
+	"prt_mp_recon",
+	"prt_mp_firebreak",
+	"prt_mp_trapper",
+	"prt_mp_enforcer",
+	"prt_mp_technomancer",
+	"prt_mp_zero",
+	"prt_mp_spectre",
 	"prt_mp_reaper"
 }
 CoD.BlackMarketUtility.ItemNameCharacterPRTTable = {
-	[0xC214F585374E06A] = 0xB21AFAD4DE26DF7
+	[0xC214F585374E06A] = "prt_wz_hudson"
 }
 CoD.BlackMarketUtility.StreamCharacterDescTable = {
-	[0xB21AFAD4DE26DF7] = 0xCDD8929BD48E4E9,
-	[0x3D7717027A0F92] = 0x774DE2FD6C7BE88,
-	[0xDC888EECACF65D4] = 0x774DE2FD6C7BE88,
-	[0xCAFB9E3D2FC01C6] = 0xCDD8929BD48E4E9,
-	[0xE3E592BC081A2F4] = 0xCDD8929BD48E4E9,
-	[0xCA0BA1DC951406E] = 0xCDD8929BD48E4E9,
-	[0xA011DFFEC0DD650] = 0x774DE2FD6C7BE88,
-	["prt_mp_reaper"] = 0x774DE2FD6C7BE88
+	prt_wz_hudson = 0xCDD8929BD48E4E9,
+	prt_wz_zero = 0x774DE2FD6C7BE88,
+	prt_wz_outrider = 0x774DE2FD6C7BE88,
+	prt_wz_nikolai_ofc = 0xCDD8929BD48E4E9,
+	prt_wz_dempsey_ofc = 0xCDD8929BD48E4E9,
+	prt_wz_replacer = 0xCDD8929BD48E4E9,
+	prt_mp_spectre = 0x774DE2FD6C7BE88,
+	prt_mp_reaper = 0x774DE2FD6C7BE88
 }
 CoD.BlackMarketUtility.PRT_To_PBT_Table = {
-	[0xE52518EC3FFD40D] = 0x41D42086962443D,
-	[0x512703E2C793E0D] = 0x4C5E1C04823489D,
-	["prt_mp_buffassault"] = 0x71546989F2B39C0,
-	[0x51C3B11EFDFEC9F] = 0x65A8BFE9E6A3A8F,
-	[0x294AA09F1128925] = 0x5D901B2845AFFB5,
-	[0x7BB98AE1BA6C32B] = 0x7C8471AD085983B,
-	[0x78D35E03A52B01A] = "pbt_mp_trapper",
-	["prt_mp_mercenary"] = 0x15EFCE6AF8D9A10,
-	[0x42BC93E975F144C] = 0x5ABB557417D97BC,
-	[0x74B22516FF300B9] = 0x4A7B1F09EB77129,
-	[0xE7BEFEFF487BA9A] = 0xAE753FD800CB78A,
-	[0xA011DFFEC0DD650] = 0xC0746FA548D2220,
-	["prt_mp_reaper"] = "pbt_mp_reaper"
+	prt_mp_swatpolice = "pbt_mp_swatpolice",
+	prt_mp_engineer = "pbt_mp_engineer",
+	prt_mp_buffassault = "pbt_mp_buffassault",
+	prt_mp_recon = "pbt_mp_recon",
+	prt_mp_battery = "pbt_mp_battery",
+	prt_mp_firebreak = "pbt_mp_firebreak",
+	prt_mp_trapper = "pbt_mp_trapper",
+	prt_mp_mercenary = "pbt_mp_mercenary",
+	prt_mp_enforcer = "pbt_mp_enforcer",
+	prt_mp_technomancer = "pbt_mp_technomancer",
+	prt_mp_zero = "pbt_mp_zero",
+	prt_mp_spectre = "pbt_mp_spectre",
+	prt_mp_reaper = "pbt_mp_reaper"
 }
 CoD.BlackMarketUtility.ItemShopImageOverrideTable = {}
 CoD.BlackMarketUtility[0x8F1DEAFDA8DC0BC] = {
@@ -240,10 +240,10 @@ CoD.BlackMarketUtility.CrateStreams = {
 	THREE_PACK = "1001"
 }
 CoD.BlackMarketUtility.MyShopExperiments = {
-	[0x9F1C572F7CAB38B] = {
+	camo_active_dlc1_masks_wrapper = {
 		expKey = "expMaskedReactiveCamoBundle",
 		itemRefs = {
-			["1"] = 0x9F1C572F7CAB38B,
+			["1"] = "camo_active_dlc1_masks_wrapper",
 			["2"] = 0x78B5B62ACC867E6,
 			["3"] = 0x658E788D9ADF660,
 			["4"] = 0xF19E01F158B1AF5,
@@ -796,7 +796,7 @@ CoD.BlackMarketUtility.GetEventName = function ()
 	if f32_local0 and f32_local0 ~= "" then
 		return Engine[0xC53F8D38DF9042B]( f32_local0 )
 	else
-		return 0x0
+		return ""
 	end
 end
 
@@ -909,7 +909,7 @@ CoD.BlackMarketUtility.GetItemTypeStringForLootItem = function ( f44_arg0, f44_a
 		local f44_local0, f44_local1 = CoD.BlackMarketUtility.SplitIdIntoTwoValues( f44_arg0 )
 		local f44_local2 = "menu/specialist_head_theme"
 		if CoD.BlackMarketUtility.GetSpecialistThemeType( f44_local0 ) == Enum.CharacterItemType[0x4684BF763EA6658] then
-			f44_local2 = 0xA8D47EEB89C4455
+			f44_local2 = "menu/specialist_body_theme"
 		end
 		return Engine.Localize( f44_local2, CoD.BlackMarketUtility.GetHeroDisplayNameForAssetName( f44_local1 ) )
 	elseif f44_arg1 == "reticle" then
@@ -1008,14 +1008,14 @@ end
 
 CoD.BlackMarketUtility.GetSafeReward = function ( f53_arg0, f53_arg1 )
 	local f53_local0 = f53_arg0
-	if CoD.isPC and CoD.PCKoreaUtility.ShowKorea15Plus() and f53_arg1 == 0xCA2BC08C1A6BCF6 then
+	if CoD.isPC and CoD.PCKoreaUtility.ShowKorea15Plus() and f53_arg1 == "calling_card" then
 		local f53_local1 = 3
 		local f53_local2 = 19
 		f53_local0 = Engine.TableLookup( CoD.backgroundsTable, f53_local2, f53_local1, f53_arg0 )
-		if not f53_local0 or f53_local0 == 0x0 then
+		if not f53_local0 or f53_local0 == "" then
 			f53_local0 = Engine.TableLookup( CoD.backgroundsTable, f53_local2, 15, f53_arg0 )
 		end
-		if not f53_local0 or f53_local0 == 0x0 then
+		if not f53_local0 or f53_local0 == "" then
 			f53_local0 = f53_arg0
 		end
 	end
@@ -1024,9 +1024,9 @@ end
 
 CoD.BlackMarketUtility.GetSafeBonusSetMasterNameHash = function ( f54_arg0, f54_arg1 )
 	local f54_local0 = f54_arg0
-	if CoD.isPC and CoD.PCKoreaUtility.ShowKorea15Plus() and f54_arg1 == 0xCA2BC08C1A6BCF6 then
+	if CoD.isPC and CoD.PCKoreaUtility.ShowKorea15Plus() and f54_arg1 == "calling_card" then
 		f54_local0 = Engine.TableLookup( CoD.backgroundsTable, 19, 15, f54_arg0 )
-		if not f54_local0 or f54_local0 == 0x0 then
+		if not f54_local0 or f54_local0 == "" then
 			f54_local0 = f54_arg0
 		end
 	end
@@ -1060,13 +1060,13 @@ end
 
 CoD.BlackMarketUtility.GetItemLockedTextAndAvailability = function ( f58_arg0, f58_arg1, f58_arg2 )
 	if f58_arg2 == "camo" then
-		local f58_local0 = Enum.eModes[0x83EBA96F36BC4E5]
+		local f58_local0 = Enum.eModes.mode_multiplayer
 		local f58_local1 = CoD.BlackMarketUtility.GetCurrentRank( f58_arg0 )
 		local f58_local2, f58_local3 = CoD.BlackMarketUtility.SplitIdIntoTwoValues( f58_arg1 )
 		local f58_local4 = Engine.GetItemIndexFromReference( f58_local3, f58_local0 )
 		local f58_local5 = Engine.GetItemUnlockLevel( f58_local4, f58_local0 )
 		if f58_local1 < f58_local5 then
-			return Engine.GetItemName( f58_local4, Enum[0x6EB546760F890D2][0x569E84652131CD7], f58_local0 ), Engine[0xF9F1239CFD921FE]( 0x330A21A2C49C8A7, CoD.GetRankName( f58_local5, 0, f58_local0 ), "" .. f58_local5 + 1 )
+			return Engine.GetItemName( f58_local4, Enum[0x6EB546760F890D2][0x569E84652131CD7], f58_local0 ), Engine[0xF9F1239CFD921FE]( "menu/rank_name_full", CoD.GetRankName( f58_local5, 0, f58_local0 ), "" .. f58_local5 + 1 )
 		end
 	end
 	return nil, nil
@@ -1122,21 +1122,21 @@ CoD.BlackMarketUtility.GetStickerNameRef = function ( f65_arg0 )
 end
 
 CoD.BlackMarketUtility.GetJumpPackRefs = function ( f66_arg0 )
-	local f66_local0 = 0x0
-	local f66_local1 = 0x0
-	local f66_local2 = 0x0
-	for f66_local6, f66_local7 in ipairs( Engine[0xA7E3CD65E63086F]( 0xC4900FCA46D6C74 ) ) do
-		if f66_local7["lootid"] == f66_arg0 then
-			f66_local0 = f66_local7[0x55F116BF695C8F6]
+	local f66_local0 = ""
+	local f66_local1 = ""
+	local f66_local2 = ""
+	for f66_local6, f66_local7 in ipairs( Engine[0xA7E3CD65E63086F]( "jumpkits" ) ) do
+		if f66_local7.lootid == f66_arg0 then
+			f66_local0 = f66_local7.displayname
 			if f66_local7[0x964F00E612C7945] then
 				f66_local1 = Engine[0xC53F8D38DF9042B]( f66_local7[0x964F00E612C7945] )
 			end
-			if f66_local7[0xAB612888528489A] then
-				f66_local2 = Engine[0xC53F8D38DF9042B]( f66_local7[0xAB612888528489A] )
+			if f66_local7.image then
+				f66_local2 = Engine[0xC53F8D38DF9042B]( f66_local7.image )
 			end
-			if f66_local2 and f66_local1 == 0x0 then
+			if f66_local2 and f66_local1 == "" then
 			
-			elseif f66_local1 and f66_local2 == 0x0 then
+			elseif f66_local1 and f66_local2 == "" then
 				f66_local2 = f66_local1
 				break
 			end
@@ -1147,15 +1147,15 @@ CoD.BlackMarketUtility.GetJumpPackRefs = function ( f66_arg0 )
 end
 
 CoD.BlackMarketUtility.GetParachuteRefs = function ( f67_arg0 )
-	local f67_local0 = 0x0
-	local f67_local1 = 0x0
-	local f67_local2 = 0x0
-	for f67_local8, f67_local9 in ipairs( Engine[0xA7E3CD65E63086F]( 0xC4900FCA46D6C74 ) ) do
-		if f67_local9["lootid"] == f67_arg0 then
-			f67_local0 = f67_local9[0x55F116BF695C8F6]
-			local f67_local6 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f67_local9[0x72D7D6554D61FBC] ) )
-			if f67_local6[0xBFF4CC56C2092F0] then
-				local f67_local7 = Engine[0xC53F8D38DF9042B]( f67_local6[0xBFF4CC56C2092F0] )
+	local f67_local0 = ""
+	local f67_local1 = ""
+	local f67_local2 = ""
+	for f67_local8, f67_local9 in ipairs( Engine[0xA7E3CD65E63086F]( "jumpkits" ) ) do
+		if f67_local9.lootid == f67_arg0 then
+			f67_local0 = f67_local9.displayname
+			local f67_local6 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f67_local9.parachute ) )
+			if f67_local6.icon then
+				local f67_local7 = Engine[0xC53F8D38DF9042B]( f67_local6.icon )
 				f67_local1 = f67_local7
 				f67_local2 = Engine[0xC53F8D38DF9042B]( f67_local6[0x3B783D946B4EE55] ) or f67_local7
 			end
@@ -1165,15 +1165,15 @@ CoD.BlackMarketUtility.GetParachuteRefs = function ( f67_arg0 )
 end
 
 CoD.BlackMarketUtility.GetWingsuitRefs = function ( f68_arg0 )
-	local f68_local0 = 0x0
-	local f68_local1 = 0x0
-	local f68_local2 = 0x0
-	for f68_local8, f68_local9 in ipairs( Engine[0xA7E3CD65E63086F]( 0xC4900FCA46D6C74 ) ) do
-		if f68_local9["lootid"] == f68_arg0 then
-			f68_local0 = f68_local9[0x55F116BF695C8F6]
-			local f68_local6 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f68_local9[0x540D91B083332C7] ) )
-			if f68_local6[0xBFF4CC56C2092F0] then
-				local f68_local7 = Engine[0xC53F8D38DF9042B]( f68_local6[0xBFF4CC56C2092F0] )
+	local f68_local0 = ""
+	local f68_local1 = ""
+	local f68_local2 = ""
+	for f68_local8, f68_local9 in ipairs( Engine[0xA7E3CD65E63086F]( "jumpkits" ) ) do
+		if f68_local9.lootid == f68_arg0 then
+			f68_local0 = f68_local9.displayname
+			local f68_local6 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f68_local9.wingsuit ) )
+			if f68_local6.icon then
+				local f68_local7 = Engine[0xC53F8D38DF9042B]( f68_local6.icon )
 				f68_local1 = f68_local7
 				f68_local2 = Engine[0xC53F8D38DF9042B]( f68_local6[0x3B783D946B4EE55] ) or f68_local7
 			end
@@ -1183,15 +1183,15 @@ CoD.BlackMarketUtility.GetWingsuitRefs = function ( f68_arg0 )
 end
 
 CoD.BlackMarketUtility.GetTrailRefs = function ( f69_arg0 )
-	local f69_local0 = 0x0
-	local f69_local1 = 0x0
-	local f69_local2 = 0x0
-	for f69_local8, f69_local9 in ipairs( Engine[0xA7E3CD65E63086F]( 0xC4900FCA46D6C74 ) ) do
-		if f69_local9["lootid"] == f69_arg0 then
-			f69_local0 = f69_local9[0x55F116BF695C8F6]
-			local f69_local6 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f69_local9[0xF69520E335E1DC6] ) )
-			if f69_local6[0xBFF4CC56C2092F0] then
-				local f69_local7 = Engine[0xC53F8D38DF9042B]( f69_local6[0xBFF4CC56C2092F0] )
+	local f69_local0 = ""
+	local f69_local1 = ""
+	local f69_local2 = ""
+	for f69_local8, f69_local9 in ipairs( Engine[0xA7E3CD65E63086F]( "jumpkits" ) ) do
+		if f69_local9.lootid == f69_arg0 then
+			f69_local0 = f69_local9.displayname
+			local f69_local6 = Engine[0xE00B2F29271C60B]( Engine[0xC53F8D38DF9042B]( f69_local9.dropfxtrail ) )
+			if f69_local6.icon then
+				local f69_local7 = Engine[0xC53F8D38DF9042B]( f69_local6.icon )
 				f69_local1 = f69_local7
 				f69_local2 = Engine[0xC53F8D38DF9042B]( f69_local6[0x3B783D946B4EE55] ) or f69_local7
 			end
@@ -1201,7 +1201,7 @@ CoD.BlackMarketUtility.GetTrailRefs = function ( f69_arg0 )
 end
 
 CoD.BlackMarketUtility.GetDeathFxWeaponRef = function ( f70_arg0, f70_arg1, f70_arg2, f70_arg3, f70_arg4 )
-	local f70_local0 = 0x0
+	local f70_local0 = ""
 	if f70_arg2 == LuaEnum.LOOT_TYPE.SEASON then
 		f70_local0 = CoD.BlackMarketTableUtility.GetSeasonDeathFxWeaponName( f70_arg0, f70_arg1 )
 	elseif f70_arg2 == LuaEnum.LOOT_TYPE.CONTRACT then
@@ -1217,17 +1217,17 @@ CoD.BlackMarketUtility.GetDeathFxWeaponRef = function ( f70_arg0, f70_arg1, f70_
 end
 
 CoD.BlackMarketUtility.GetDeathFxRefs = function ( f71_arg0 )
-	local f71_local0 = 0x0
-	local f71_local1 = 0x0
-	local f71_local2 = 0x0
+	local f71_local0 = ""
+	local f71_local1 = ""
+	local f71_local2 = ""
 	local f71_local3 = Engine[0xA7E3CD65E63086F]( "weapondeathfx_list" )
 	if f71_local3 then
 		for f71_local7, f71_local8 in ipairs( f71_local3 ) do
-			if f71_local8["lootid"] == f71_arg0 then
-				f71_local0 = f71_local8[0x55F116BF695C8F6]
+			if f71_local8.lootid == f71_arg0 then
+				f71_local0 = f71_local8.displayname
 				f71_local1 = f71_local8[0x2F2C20443A73EAC]
-				if f71_local8[0xAB612888528489A] then
-					f71_local2 = Engine[0xC53F8D38DF9042B]( f71_local8[0xAB612888528489A] )
+				if f71_local8.image then
+					f71_local2 = Engine[0xC53F8D38DF9042B]( f71_local8.image )
 				end
 				return f71_local0, f71_local1, f71_local2
 			end
@@ -1237,17 +1237,17 @@ CoD.BlackMarketUtility.GetDeathFxRefs = function ( f71_arg0 )
 end
 
 CoD.BlackMarketUtility.GetWeaponCharmRefs = function ( f72_arg0 )
-	local f72_local0 = 0x0
-	local f72_local1 = 0x0
-	local f72_local2 = 0x0
-	local f72_local3 = Engine[0xA7E3CD65E63086F]( 0xF2DC7A2FE7EEDC5 )
+	local f72_local0 = ""
+	local f72_local1 = ""
+	local f72_local2 = ""
+	local f72_local3 = Engine[0xA7E3CD65E63086F]( "weaponcharm_list" )
 	if f72_local3 then
 		for f72_local7, f72_local8 in ipairs( f72_local3 ) do
-			if f72_local8["lootid"] == f72_arg0 then
-				f72_local0 = f72_local8[0x55F116BF695C8F6]
+			if f72_local8.lootid == f72_arg0 then
+				f72_local0 = f72_local8.displayname
 				f72_local1 = f72_local8[0x2F2C20443A73EAC]
-				if f72_local8[0xAB612888528489A] then
-					f72_local2 = Engine[0xC53F8D38DF9042B]( f72_local8[0xAB612888528489A] )
+				if f72_local8.image then
+					f72_local2 = Engine[0xC53F8D38DF9042B]( f72_local8.image )
 				end
 				return f72_local0, f72_local1, f72_local2
 			end
@@ -1324,7 +1324,7 @@ CoD.BlackMarketUtility.GetRarityForLootItemFromName = function ( f80_arg0 )
 end
 
 CoD.BlackMarketUtility.GetHeroDisplayNameForAssetName = function ( f81_arg0 )
-	for f81_local3, f81_local4 in ipairs( CoD.PlayerRoleUtility.GetHeroList( Enum.eModes[0x83EBA96F36BC4E5] ) ) do
+	for f81_local3, f81_local4 in ipairs( CoD.PlayerRoleUtility.GetHeroList( Enum.eModes.mode_multiplayer ) ) do
 		if f81_local4.assetName == f81_arg0 then
 			return f81_local4.displayName
 		end
@@ -1620,24 +1620,24 @@ end
 
 CoD.BlackMarketUtility.GetEmptyInsertItem = function ( f89_arg0, f89_arg1 )
 	return {
-		itemName = 0x0,
-		name = 0x0,
+		itemName = "",
+		name = "",
 		desc = "",
 		mainExtraText = "",
-		subExtraText = 0x0,
-		category = 0x0,
-		shopCategory = 0x0,
+		subExtraText = "",
+		category = "",
+		shopCategory = "",
 		primaryImage = "blacktransparent",
 		popupImage = "blacktransparent",
 		detailsImage = "blacktransparent",
-		rarity = 0x0,
-		character = 0x0,
+		rarity = "",
+		character = "",
 		outfitIndexes = nil,
 		gesture_index = -1,
 		signatureWeaponInfo = nil,
 		baseWeaponInfo = nil,
 		camoRef = nil,
-		setBonusImage = 0x0,
+		setBonusImage = "",
 		setComplete = false,
 		setNumOwned = 0,
 		setNumTotal = 0,
@@ -1658,7 +1658,7 @@ CoD.BlackMarketUtility.GetEmptyInsertItem = function ( f89_arg0, f89_arg1 )
 		isContract = false,
 		purchased = false,
 		movieName = "",
-		toolTipText = 0x0
+		toolTipText = ""
 	}
 end
 
@@ -1674,7 +1674,7 @@ CoD.BlackMarketUtility.ActivateContract = function ( f90_arg0, f90_arg1, f90_arg
 			if f90_local1 == nil then
 				return false
 			else
-				local f90_local2 = f90_local1[0x5951A0A644A98FB][f90_arg2]
+				local f90_local2 = f90_local1.loot_contracts[f90_arg2]
 				if f90_local2 ~= nil then
 					f90_local2.contractId:set( f90_local0 )
 					local f90_local3 = CoD.BlackMarketTableUtility.GetContractTierCount( f90_local0 ) - CoD.BlackMarketUtility.GetContractProgress( f90_arg0, f90_arg1 )
@@ -1714,7 +1714,7 @@ CoD.BlackMarketUtility.GetActiveContracts = function ( f93_arg0 )
 	end
 	local f93_local1 = {}
 	for f93_local7, f93_local8 in pairs( CoDShared.Loot.ContractSlots ) do
-		local f93_local9 = f93_local0[0x5951A0A644A98FB][f93_local8]
+		local f93_local9 = f93_local0.loot_contracts[f93_local8]
 		if f93_local9 ~= nil then
 			local f93_local5 = f93_local9.contractId:get()
 			if f93_local5 > 0 then
@@ -1745,7 +1745,7 @@ CoD.BlackMarketUtility.GetTierItemsForContractTab = function ( f94_arg0, f94_arg
 		local f94_local6 = f94_local3 <= f94_local2
 		local f94_local7 = CoD.BlackMarketTableUtility.GetContractItemsByTier( f94_arg0, f94_arg1, f94_local3, f94_local6 )
 		local f94_local8 = CoD.BlackMarketUtility.GetEmptyInsertItem( f94_local3, f94_local6 )
-		if f94_local7 ~= nil and #f94_local7 ~= 0 and f94_local7[1].name ~= nil and f94_local7[1].name ~= 0x0 and f94_local7[1].category ~= nil and f94_local7[1].rarity ~= nil then
+		if f94_local7 ~= nil and #f94_local7 ~= 0 and f94_local7[1].name ~= nil and f94_local7[1].name ~= "" and f94_local7[1].category ~= nil and f94_local7[1].rarity ~= nil then
 			local f94_local9 = {}
 			f94_local9 = CoD.BlackMarketUtility.GetItemRefs( f94_arg0, f94_local7[1].name, f94_local7[1].category, f94_local7[1].rarity, f94_local7[1].inSet, f94_arg1, f94_local7[1].lootType, f94_local7[1].refOptic, f94_local7[1].itemId )
 			f94_local9.tier = f94_local3
@@ -1784,7 +1784,7 @@ CoD.BlackMarketUtility.GetItemProductAndProperties = function ( f95_arg0 )
 		f95_local0.weaponRef = f95_local0.baseWeaponInfo.ref
 		f95_local1.baseWeaponInfo = f95_local0.baseWeaponInfo
 	else
-		f95_local0.weaponRef = 0x0
+		f95_local0.weaponRef = ""
 	end
 	if f95_local0.camoRef then
 		f95_local1.camoRef = f95_local0.camoRef
@@ -1821,7 +1821,7 @@ DataSources.ContractTierItems = ListHelper_SetupDataSource( "ContractTierItems",
 		else
 			local f96_local7 = CoD.BlackMarketUtility.GetTierItemsForContractTab( f96_arg0, f96_local1, f96_local6, f96_local6 + 4 )
 			for f96_local8 = 1, #f96_local7, 1 do
-				if f96_local7[f96_local8].name ~= 0x0 then
+				if f96_local7[f96_local8].name ~= "" then
 					local f96_local11, f96_local12 = CoD.BlackMarketUtility.GetItemProductAndProperties( f96_local7[f96_local8] )
 					f96_local11.tierCount = Engine[0xF9F1239CFD921FE]( 0x447CBFFBA0F8D66, f96_local8 + f96_local6 - 1, f96_local3 )
 					table.insert( f96_local0, {
@@ -1917,7 +1917,7 @@ CoD.BlackMarketUtility.ClassContainsLockedItems = function ( f101_arg0, f101_arg
 end
 
 CoD.BlackMarketUtility.ClassifiedName = function ( f102_arg0 )
-	local f102_local0 = 0x8C899D3B96CB850
+	local f102_local0 = "menu/classified"
 	if f102_arg0 then
 		return Engine[0xF9F1239CFD921FE]( f102_local0 )
 	else
@@ -1934,7 +1934,7 @@ CoD.BlackMarketUtility.GetCallingCardSetTable = function ( f103_arg0 )
 end
 
 CoD.BlackMarketUtility.GetCallingCardRows = function ()
-	local f104_local0 = Engine.TableFindRows( CoD.BlackMarketUtility.lootTableName, 2, 0xCA2BC08C1A6BCF6 )
+	local f104_local0 = Engine.TableFindRows( CoD.BlackMarketUtility.lootTableName, 2, "calling_card" )
 	if not f104_local0 then
 		return {}
 	end
@@ -1947,7 +1947,7 @@ CoD.BlackMarketUtility.GetCallingCardRows = function ()
 end
 
 CoD.BlackMarketUtility.GetCallingCardSetCaptstones = function ( f105_arg0 )
-	local f105_local0 = 0xCA2BC08C1A6BCF6
+	local f105_local0 = "calling_card"
 	local f105_local1 = 0
 	local f105_local2 = 1
 	local f105_local3 = 2
@@ -1985,14 +1985,14 @@ CoD.BlackMarketUtility.BuildCallingCardSets = function ( f108_arg0, f108_arg1 )
 	local f108_local4 = 4
 	local f108_local5 = 9
 	local f108_local6 = 15
-	local f108_local7 = Engine.TableFindRows( CoD.BlackMarketUtility.backgroundsTable, f108_local5, 0xDECE8AD70D584B7 )
+	local f108_local7 = Engine.TableFindRows( CoD.BlackMarketUtility.backgroundsTable, f108_local5, "loot" )
 	if f108_local7 then
 		for f108_local19, f108_local20 in ipairs( f108_local7 ) do
 			local f108_local11 = Engine[0xC6F8EC444864600]( CoD.BlackMarketUtility.backgroundsTable, f108_local20, f108_local3 )
 			local f108_local21 = Engine[0xC6F8EC444864600]( CoD.BlackMarketUtility.backgroundsTable, f108_local20, f108_local4 )
 			local f108_local22 = Engine[0xC6F8EC444864600]( CoD.BlackMarketUtility.backgroundsTable, f108_local20, f108_local6 )
 			local f108_local23 = Engine[0xC6F8EC444864600]( CoD.BlackMarketUtility.backgroundsTable, f108_local20, f108_local2 )
-			if f108_local22 and f108_local22 ~= 0x0 then
+			if f108_local22 and f108_local22 ~= "" then
 				f108_local11 = f108_local22
 			end
 			local f108_local12 = CoD.BlackMarketTableUtility.LootInfoLookup( f108_arg0, f108_local11 )
@@ -2011,7 +2011,7 @@ CoD.BlackMarketUtility.BuildCallingCardSets = function ( f108_arg0, f108_arg1 )
 				end
 				local f108_local14 = Engine[0xF9F1239CFD921FE]( f108_local21 )
 				if f108_local12.isLoot and not f108_local12.available then
-					f108_local14 = Engine[0xF9F1239CFD921FE]( 0x8C899D3B96CB850 )
+					f108_local14 = Engine[0xF9F1239CFD921FE]( "menu/classified" )
 				end
 				if f108_local13 then
 					local f108_local15 = table.insert
@@ -2069,9 +2069,9 @@ CoD.BlackMarketUtility.BuildCallingCardSets = function ( f108_arg0, f108_arg1 )
 				f108_local14.setInfoString = Engine[0xF9F1239CFD921FE]( 0xF4082FA89EBEDBA, f108_local16, Engine[0xF9F1239CFD921FE]( 0x20BF14474EB8696, Engine[0xF9F1239CFD921FE]( "menu/calling_card" ) ) )
 				if not IsJapaneseSku() and f108_local14.lootInfo.owned then
 					f108_local12 = f108_local14.iconId
-					f108_local14.lootInfo.unlockInfo = Engine[0xF9F1239CFD921FE]( 0xC5DD764B51C08A5 )
+					f108_local14.lootInfo.unlockInfo = Engine[0xF9F1239CFD921FE]( "menu/set_complete" )
 				else
-					f108_local14.lootInfo.unlockInfo = Engine[0xF9F1239CFD921FE]( 0x1DA22AC662BBEFE )
+					f108_local14.lootInfo.unlockInfo = Engine[0xF9F1239CFD921FE]( "menu/set_incomplete" )
 				end
 			end
 			if f108_local12 == 0 then
@@ -2209,7 +2209,7 @@ CoD.BlackMarketUtility.GetOufitBundleRef = function ( f119_arg0, f119_arg1, f119
 				mainExtraText = Engine[0xF9F1239CFD921FE]( "menu/title_theme", Engine[0xF9F1239CFD921FE]( f119_local4.displayName ) ),
 				subExtraText = f119_local2.displayName,
 				primaryImage = f119_local5 or "blacktransparent",
-				popupImage = 0x0,
+				popupImage = "",
 				character = f119_local0.prt,
 				outfitIndexes = f119_local1
 			}
@@ -2231,9 +2231,9 @@ CoD.BlackMarketUtility.GetWarpaintBundleRef = function ( f120_arg0, f120_arg1 )
 				name = f120_local4.warPaints[f120_local1.war_paintIndex + 1].displayName,
 				desc = Engine[0xF9F1239CFD921FE]( 0x62BC3111047BF79 ),
 				mainExtraText = "",
-				subExtraText = 0x0,
+				subExtraText = "",
 				primaryImage = f120_local4.warPaints[f120_local1.war_paintIndex + 1].image or "blacktransparent",
-				popupImage = 0x0,
+				popupImage = "",
 				character = f120_local0.prt,
 				outfitIndexes = f120_local1
 			}
@@ -2280,7 +2280,7 @@ CoD.BlackMarketUtility.GetOufitPresetRef = function ( f122_arg0, f122_arg1, f122
 			local f122_local5 = f122_local4.presets[f122_local1.presetIndex + 1]
 			local f122_local6 = f122_local5
 			local f122_local7
-			if f122_local5.matchedWarPaintLootId ~= 0x0 then
+			if f122_local5.matchedWarPaintLootId ~= "" then
 				f122_local7 = f122_local5.outfitIcon
 			else
 				f122_local7 = false
@@ -2290,10 +2290,10 @@ CoD.BlackMarketUtility.GetOufitPresetRef = function ( f122_arg0, f122_arg1, f122
 				local f122_local9 = Engine[0xF9F1239CFD921FE]( 0x225837B50C02D09, f122_local2.displayName )
 			end
 			local f122_local10 = f122_local8 and f122_local9 or Engine[0xF9F1239CFD921FE]( 0xFD60E5FA0ADD7CC, f122_local2.displayName )
-			if not f122_local7 or f122_local7 == 0x0 then
+			if not f122_local7 or f122_local7 == "" then
 				f122_local7 = f122_local5 and f122_local5.icon
 			end
-			if not f122_local7 or f122_local7 == 0x0 then
+			if not f122_local7 or f122_local7 == "" then
 				f122_local7 = "blacktransparent"
 			end
 			local f122_local11 = {}
@@ -2313,7 +2313,7 @@ CoD.BlackMarketUtility.GetOufitPresetRef = function ( f122_arg0, f122_arg1, f122
 					return f122_local11
 				end
 			end
-			f122_local12 = 0x0
+			f122_local12 = ""
 		end
 	end
 	return nil
@@ -2385,7 +2385,7 @@ CoD.BlackMarketUtility.GetOufitDecalRef = function ( f124_arg0, f124_arg1, f124_
 end
 
 CoD.BlackMarketUtility.GetWeaponRef = function ( f125_arg0 )
-	local f125_local0 = Enum.eModes[0x83EBA96F36BC4E5]
+	local f125_local0 = Enum.eModes.mode_multiplayer
 	local f125_local1 = function ()
 		local f126_local0, f126_local1, f126_local2, f126_local3, f126_local4 = nil
 		for f126_local12, f126_local13 in ipairs( {
@@ -2431,7 +2431,7 @@ end
 
 CoD.BlackMarketUtility.GetSignatureWeaponRef = function ( f127_arg0 )
 	local f127_local0 = CoD.CACUtility.GetUnlockableItemTable()
-	local f127_local1 = Enum.eModes[0x83EBA96F36BC4E5]
+	local f127_local1 = Enum.eModes.mode_multiplayer
 	local f127_local2 = function ()
 		local f128_local0, f128_local1, f128_local2, f128_local3 = nil
 		local f128_local4 = {}
@@ -2441,7 +2441,7 @@ CoD.BlackMarketUtility.GetSignatureWeaponRef = function ( f127_arg0 )
 		} ) do
 			for f128_local11, f128_local12 in ipairs( CoD.CACUtility.GetUnlockableItemsForLoadoutSlot( f127_local1, f128_local17 ) ) do
 				for f128_local8, f128_local9 in ipairs( Engine[0x9F0BB7D52A7A978]( f128_local12.nameHash ) ) do
-					if f128_local9["lootid"] == f127_arg0 then
+					if f128_local9.lootid == f127_arg0 then
 						if f128_local9[0xC2AA73D9F82E9C2] == true then
 							f128_local0 = f128_local17
 							f128_local1 = f128_local12.displayName
@@ -2460,27 +2460,27 @@ CoD.BlackMarketUtility.GetSignatureWeaponRef = function ( f127_arg0 )
 	local f127_local2, f127_local3, f127_local4, f127_local5, f127_local6 = f127_local2()
 	if f127_local4 then
 		local f127_local7 = f127_local6[0x852BDFE9E6B7AB1]
-		if not f127_local7 or f127_local7 == 0x0 or f127_local7 == "blacktransparent" then
+		if not f127_local7 or f127_local7 == "" or f127_local7 == "blacktransparent" then
 			f127_local7 = f127_local5[0x852BDFE9E6B7AB1]
 		end
 		local f127_local8 = {
-			[0xC7B3F43EB6E972A] = 0xC7B3E43EB6E9577,
-			[0xC8731A395FE6921] = 0xC872EA395FE6408,
-			["ui_icon_weapons_loot_smg_accurate_sig_01"] = "ui_icon_weapons_loot_smg_accurate_sig_02",
-			[0x41DCDBC3E815438] = 0x41DD0BC3E815951
+			ui_icon_weapons_loot_shotgun_semi_sig_01 = "ui_icon_weapons_loot_shotgun_semi_sig_02",
+			ui_icon_weapons_loot_ar_accurate_sig_01 = "ui_icon_weapons_loot_ar_accurate_sig_02",
+			ui_icon_weapons_loot_smg_accurate_sig_01 = "ui_icon_weapons_loot_smg_accurate_sig_02",
+			ui_icon_weapons_loot_lmg_titan_sig_01 = "ui_icon_weapons_loot_lmg_titan_sig_02"
 		}
 		return {
-			name = f127_local5[0x55F116BF695C8F6],
+			name = f127_local5.displayname,
 			primaryImage = f127_local8[f127_local7] or f127_local7,
 			displayNameRef = f127_local3,
-			mastercraftNameRef = f127_local6[0x55F116BF695C8F6],
+			mastercraftNameRef = f127_local6.displayname,
 			signatureWeaponInfo = {
 				weaponSlot = f127_local2,
 				ref = f127_local4,
-				signatureIndex = f127_local5["index"],
-				mastercraftIndex = f127_local6["index"],
-				displayNameRef = f127_local5[0x55F116BF695C8F6],
-				mastercraftNameRef = f127_local6[0x55F116BF695C8F6]
+				signatureIndex = f127_local5.index,
+				mastercraftIndex = f127_local6.index,
+				displayNameRef = f127_local5.displayname,
+				mastercraftNameRef = f127_local6.displayname
 			}
 		}
 	else
@@ -2490,7 +2490,7 @@ end
 
 CoD.BlackMarketUtility.GetMastercraftWeaponRef = function ( f129_arg0 )
 	local f129_local0 = CoD.CACUtility.GetUnlockableItemTable()
-	local f129_local1 = Enum.eModes[0x83EBA96F36BC4E5]
+	local f129_local1 = Enum.eModes.mode_multiplayer
 	local f129_local2 = function ()
 		local f130_local0, f130_local1, f130_local2, f130_local3 = nil
 		local f130_local4 = {}
@@ -2500,7 +2500,7 @@ CoD.BlackMarketUtility.GetMastercraftWeaponRef = function ( f129_arg0 )
 		} ) do
 			for f130_local11, f130_local12 in ipairs( CoD.CACUtility.GetUnlockableItemsForLoadoutSlot( f129_local1, f130_local17 ) ) do
 				for f130_local8, f130_local9 in ipairs( Engine[0x9F0BB7D52A7A978]( f130_local12.nameHash ) ) do
-					if f130_local9["lootid"] == f129_arg0 then
+					if f130_local9.lootid == f129_arg0 then
 						return f130_local17, f130_local12.displayName, f130_local12.nameHash, f130_local9
 					end
 				end
@@ -2513,8 +2513,8 @@ CoD.BlackMarketUtility.GetMastercraftWeaponRef = function ( f129_arg0 )
 	if f129_local4 then
 		local f129_local6 = f129_local5[0x852BDFE9E6B7AB1]
 		local f129_local7 = f129_local3
-		if f129_local5[0x55F116BF695C8F6] then
-			f129_local3 = f129_local5[0x55F116BF695C8F6]
+		if f129_local5.displayname then
+			f129_local3 = f129_local5.displayname
 		end
 		return {
 			name = f129_local3,
@@ -2523,7 +2523,7 @@ CoD.BlackMarketUtility.GetMastercraftWeaponRef = function ( f129_arg0 )
 			weaponInfo = {
 				weaponSlot = f129_local2,
 				ref = f129_local4,
-				modelIdx = f129_local5["index"],
+				modelIdx = f129_local5.index,
 				displayNameRef = f129_local7
 			}
 		}
@@ -2533,10 +2533,10 @@ CoD.BlackMarketUtility.GetMastercraftWeaponRef = function ( f129_arg0 )
 end
 
 CoD.BlackMarketUtility.GetGestureRef = function ( f131_arg0, f131_arg1, f131_arg2, f131_arg3 )
-	local f131_local0 = 0x0
+	local f131_local0 = ""
 	for f131_local12, f131_local13 in ipairs( CoD.BreadcrumbUtility.GetSprayGestureTable() ) do
 		if f131_local13[0x14C91FFB3BA4240] == f131_arg1 then
-			local f131_local4 = Enum.eModes[0x83EBA96F36BC4E5]
+			local f131_local4 = Enum.eModes.mode_multiplayer
 			local f131_local5 = nil
 			if f131_arg2 ~= nil and f131_arg3 == LuaEnum.LOOT_TYPE.CONTRACT then
 				local f131_local6 = CoD.BlackMarketTableUtility.GetContractOutfitInformation( f131_arg0, f131_arg1, f131_arg2 )
@@ -2544,18 +2544,18 @@ CoD.BlackMarketUtility.GetGestureRef = function ( f131_arg0, f131_arg1, f131_arg
 					f131_local5 = f131_local6.prt
 				end
 			end
-			if f131_local5 == nil or f131_local5 == 0x0 then
+			if f131_local5 == nil or f131_local5 == "" then
 				local f131_local6 = CoD.BlackMarketUtility.CharacterPRTTable[1]
 				local f131_local7 = CoD.BlackMarketTableUtility.LootInfoLookup( f131_arg0, f131_local13[0x14C91FFB3BA4240] )
 				f131_local5 = CoD.BlackMarketUtility.PRT_To_PBT_Table[f131_local6]
-				local f131_local8 = CoD.PlayerRoleUtility.GetCachedHeroInfo( Enum.eModes[0x83EBA96F36BC4E5], Engine[0x84E3CB0C7D8BA11]( Enum.eModes[0x83EBA96F36BC4E5], f131_local6 ) )
+				local f131_local8 = CoD.PlayerRoleUtility.GetCachedHeroInfo( Enum.eModes.mode_multiplayer, Engine[0x84E3CB0C7D8BA11]( Enum.eModes.mode_multiplayer, f131_local6 ) )
 				f131_local0 = f131_local8.displayName
 			else
 				for f131_local6 = 1, #CoD.BlackMarketUtility.CharacterPRTTable, 1 do
 					local f131_local10 = CoD.BlackMarketUtility.CharacterPRTTable[f131_local6]
 					if CoD.BlackMarketUtility.PRT_To_PBT_Table[f131_local10] == f131_local5 then
 						f131_local5 = CoD.BlackMarketUtility.PRT_To_PBT_Table[f131_local10]
-						local f131_local11 = CoD.PlayerRoleUtility.GetCachedHeroInfo( Enum.eModes[0x83EBA96F36BC4E5], Engine[0x84E3CB0C7D8BA11]( Enum.eModes[0x83EBA96F36BC4E5], f131_local10 ) )
+						local f131_local11 = CoD.PlayerRoleUtility.GetCachedHeroInfo( Enum.eModes.mode_multiplayer, Engine[0x84E3CB0C7D8BA11]( Enum.eModes.mode_multiplayer, f131_local10 ) )
 						f131_local0 = f131_local11.displayName
 						break
 					end
@@ -2567,8 +2567,8 @@ CoD.BlackMarketUtility.GetGestureRef = function ( f131_arg0, f131_arg1, f131_arg
 					mode = f131_local4,
 					prt = f131_local5
 				} ),
-				primaryImage = f131_local13[0xBFF4CC56C2092F0],
-				name = f131_local13[0xA31296C0C1B6029],
+				primaryImage = f131_local13.icon,
+				name = f131_local13.title,
 				gesture_index = f131_local12,
 				characterDisplayNameRef = f131_local0
 			}
@@ -2578,7 +2578,7 @@ CoD.BlackMarketUtility.GetGestureRef = function ( f131_arg0, f131_arg1, f131_arg
 end
 
 CoD.BlackMarketUtility.GetTableWeaponRef = function ( f132_arg0, f132_arg1, f132_arg2, f132_arg3, f132_arg4 )
-	local f132_local0 = 0x0
+	local f132_local0 = ""
 	if f132_arg2 == LuaEnum.LOOT_TYPE.SEASON then
 		f132_local0 = CoD.BlackMarketTableUtility.GetSeasonWeaponRefName( f132_arg0, f132_arg1 )
 	elseif f132_arg2 == LuaEnum.LOOT_TYPE.CONTRACT then
@@ -2602,34 +2602,34 @@ CoD.BlackMarketUtility.GetSpecialBundleInfo = function ( f133_arg0, f133_arg1 )
 	for f133_local6, f133_local7 in pairs( {
 		primaryImage = {
 			overrideFieldName = 0x2F2C20443A73EAC,
-			defaultValue = 0x0
+			defaultValue = ""
 		},
 		popupImage = {
-			overrideFieldName = 0x4E441D88E82CD02,
-			defaultValue = 0x0
+			overrideFieldName = "popupimage",
+			defaultValue = ""
 		},
 		buttonImage = {
 			overrideFieldName = "buttonimage",
 			defaultValue = "blacktransparent"
 		},
 		reservesImage = {
-			overrideFieldName = 0xA2F6F8CD52CF7B0,
+			overrideFieldName = "reserveimage",
 			defaultValue = "blacktransparent"
 		},
 		category = {
-			overrideFieldName = 0x2E9D0AD87FA0242,
-			defaultValue = 0x0
+			overrideFieldName = "categorytext",
+			defaultValue = ""
 		},
 		name = {
-			overrideFieldName = 0xB077B413377335,
-			defaultValue = 0x0
+			overrideFieldName = "nametext",
+			defaultValue = ""
 		},
 		toolTip = {
-			overrideFieldName = 0x6464C3356A42E07,
-			defaultValue = 0x0
+			overrideFieldName = "tooltiptext",
+			defaultValue = ""
 		},
 		desc = {
-			overrideFieldName = 0xE23B52CBA8DDAD7,
+			overrideFieldName = "desctext",
 			defaultValue = "",
 			localize = true
 		},
@@ -2640,11 +2640,11 @@ CoD.BlackMarketUtility.GetSpecialBundleInfo = function ( f133_arg0, f133_arg1 )
 		},
 		specialContractGoalType = {
 			overrideFieldName = 0xDA64DD8398150B7,
-			defaultValue = 0x0
+			defaultValue = ""
 		},
 		specialContractGoalUnit = {
 			overrideFieldName = 0xA4ECC2185CC1289,
-			defaultValue = 0x0
+			defaultValue = ""
 		},
 		specialContractRewardImage = {
 			overrideFieldName = 0xEE2B488845485EF,
@@ -2664,29 +2664,29 @@ CoD.BlackMarketUtility.GetSpecialBundleInfo = function ( f133_arg0, f133_arg1 )
 end
 
 CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2, f134_arg3, f134_arg4, f134_arg5, f134_arg6, f134_arg7, f134_arg8 )
-	local f134_local0 = 0x0
+	local f134_local0 = ""
 	local f134_local1 = ""
 	local f134_local2 = ""
-	local f134_local3 = 0x0
-	local f134_local4 = 0x0
-	local f134_local5 = 0x0
-	local f134_local6 = 0x0
-	local f134_local7 = 0x0
-	local f134_local8 = 0x0
-	local f134_local9 = 0x0
-	local f134_local10 = 0x0
+	local f134_local3 = ""
+	local f134_local4 = ""
+	local f134_local5 = ""
+	local f134_local6 = ""
+	local f134_local7 = ""
+	local f134_local8 = ""
+	local f134_local9 = ""
+	local f134_local10 = ""
 	local f134_local11 = nil
 	local f134_local12 = -1
 	local f134_local13, f134_local14, f134_local15 = nil
-	local f134_local16 = 0x0
-	local f134_local17 = 0x0
+	local f134_local16 = ""
+	local f134_local17 = ""
 	local f134_local18 = false
 	local f134_local19 = 0
 	local f134_local20 = 0
 	local f134_local21 = 0
 	local f134_local22 = false
 	local f134_local23
-	if f134_arg4 == nil or f134_arg4 == 0x0 then
+	if f134_arg4 == nil or f134_arg4 == "" then
 		f134_local23 = false
 	else
 		f134_local23 = true
@@ -2700,155 +2700,155 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 	local f134_local30 = false
 	local f134_local31 = Engine[0x2DA54CF5D6B7F02]()
 	local f134_local32 = ""
-	local f134_local33 = 0x0
-	if f134_arg1 == 0x37934F15B706913 then
+	local f134_local33 = ""
+	if f134_arg1 == "contraband" then
 		f134_local0 = 0x25FC26BF505BC71
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x954DFFAE6AF5CD5 )
 		f134_local4 = 0x16542A61FD09C0
 		f134_local22 = true
 		f134_local30 = true
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.CRATE
-	elseif f134_arg1 == 0x55E6190E8792FD1 then
+	elseif f134_arg1 == "case" then
 		f134_local0 = 0xD004F2913090A
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x5BF036E550C7E0B )
 		f134_local4 = 0x16542A61FD09C0
-		f134_local6 = 0x9A0827AE98DA864
+		f134_local6 = "ui_icon_blackmarket_reserves_case_large"
 		f134_local22 = true
 		f134_local30 = true
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.NONE
-	elseif f134_arg1 == 0x6C184F316D3624A then
-		f134_local0 = 0xF6B2E93559D1FE0
+	elseif f134_arg1 == "cases_10" then
+		f134_local0 = "mpui/cases"
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0xADA96E32A289F35, 10 )
-		f134_local6 = 0xB2BED9ADEB519D
-		f134_local4 = 0x5E8803CD773EACD
+		f134_local6 = "ui_icon_blackmarket_reserves_case_x10_large_preview"
+		f134_local4 = "ui_icon_blackmarket_reserves_case_x10_preview"
 		f134_local30 = true
-	elseif f134_arg1 == 0xD66DF1038F9EF22 then
-		f134_local0 = 0x3493441EE784874
+	elseif f134_arg1 == "tiers_5" then
+		f134_local0 = "mpui/tiers"
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x1705D753E6F1661, 5 )
-		f134_local6 = 0x4E36068D8DB6F34
-		f134_local4 = 0x2B3BEA74A959C8D
+		f134_local6 = "ui_icon_blackmarket_reserves_tier_x5_large_square"
+		f134_local4 = "ui_icon_blackmarket_reserves_tier_x5_preview"
 		f134_local30 = true
 	elseif f134_arg1 == "tiers_10" then
-		f134_local0 = 0x3493441EE784874
+		f134_local0 = "mpui/tiers"
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x1705D753E6F1661, 10 )
-		f134_local6 = 0x653970874D87F14
-		f134_local4 = 0x653970874D87F14
+		f134_local6 = "ui_icon_blackmarket_x10tiers_large"
+		f134_local4 = "ui_icon_blackmarket_x10tiers_large"
 		f134_local30 = true
-	elseif f134_arg1 == 0x46B488CCF757AF0 then
+	elseif f134_arg1 == "crates_2" then
 		f134_local0 = "mpui/crates"
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0xCD7C79409988EEA, 2 )
-		f134_local6 = 0xA51C23D884AB3FE
-		f134_local4 = 0xD1640CD3743CF5B
+		f134_local6 = "ui_icon_blackmarket_stream_case_x2"
+		f134_local4 = "ui_icon_blackmarket_item_shop_reserve_crate_x2_preview"
 		f134_local30 = true
-	elseif f134_arg1 == 0x46B498CCF757CA3 then
+	elseif f134_arg1 == "crates_3" then
 		f134_local0 = "mpui/crates"
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0xCD7C79409988EEA, 3 )
-		f134_local6 = 0xA51C33D884AB5B1
-		f134_local4 = 0xF85D64922B7D8DC
+		f134_local6 = "ui_icon_blackmarket_stream_case_x3"
+		f134_local4 = "ui_icon_blackmarket_item_shop_reserve_crate_x3_preview"
 		f134_local30 = true
-	elseif f134_arg1 == 0x46B4E8CCF758522 then
+	elseif f134_arg1 == "crates_4" then
 		f134_local0 = "mpui/crates"
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0xCD7C79409988EEA, 4 )
-		f134_local6 = 0xA51C43D884AB764
-		f134_local4 = 0x7671162A5069E5
+		f134_local6 = "ui_icon_blackmarket_stream_case_x4"
+		f134_local4 = "ui_icon_blackmarket_item_shop_reserve_crate_x4_preview"
 		f134_local30 = true
-	elseif f134_arg1 == 0x46B4F8CCF7586D5 then
+	elseif f134_arg1 == "crates_5" then
 		f134_local0 = "mpui/crates"
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0xCD7C79409988EEA, 5 )
-		f134_local6 = 0x864D2C2A6249BDF
-		f134_local4 = 0xD1A231F8D09E1F4
+		f134_local6 = "ui_icon_blackmarket_reserves_crate_x5_large_square"
+		f134_local4 = "ui_icon_blackmarket_reserves_crate_x5_preview"
 		f134_local30 = true
-	elseif f134_arg1 == 0x46B4C8CCF7581BC then
+	elseif f134_arg1 == "crates_6" then
 		f134_local0 = "mpui/crates"
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0xCD7C79409988EEA, 6 )
-		f134_local6 = 0xC32C3FC09A201D0
-		f134_local4 = 0xCFD4511B6E289D1
+		f134_local6 = "ui_icon_blackmarket_reserves_crate_x6_large_square"
+		f134_local4 = "ui_icon_blackmarket_reserves_crate_x6_preview"
 		f134_local30 = true
-	elseif f134_arg1 == 0x46B4D8CCF75836F then
+	elseif f134_arg1 == "crates_7" then
 		f134_local0 = "mpui/crates"
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0xCD7C79409988EEA, 7 )
-		f134_local6 = 0x5CBB8132F9331C1
-		f134_local4 = 0xDE5A76EDF945072
+		f134_local6 = "ui_icon_blackmarket_reserves_crate_x7_large_square"
+		f134_local4 = "ui_icon_blackmarket_reserves_crate_x7_preview"
 		f134_local30 = true
-	elseif f134_arg1 == 0x46B528CCF758BEE then
+	elseif f134_arg1 == "crates_8" then
 		f134_local0 = "mpui/crates"
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0xCD7C79409988EEA, 8 )
-		f134_local6 = 0xA51B83D884AA300
-		f134_local4 = 0xA51B83D884AA300
+		f134_local6 = "ui_icon_blackmarket_stream_case_x8"
+		f134_local4 = "ui_icon_blackmarket_stream_case_x8"
 		f134_local30 = true
-	elseif f134_arg1 == 0x7D1994484A8E0DB then
+	elseif f134_arg1 == "crates_10" then
 		f134_local0 = "mpui/crates"
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0xCD7C79409988EEA, 10 )
-		f134_local6 = 0x15261956CF825E5
-		f134_local4 = 0x4096F9338B127BE
+		f134_local6 = "ui_icon_blackmarket_reserves_crate_x10_large_square"
+		f134_local4 = "ui_icon_blackmarket_reserves_crate_x10_preview"
 		f134_local30 = true
-	elseif f134_arg1 == 0x7D19B4484A8E441 then
+	elseif f134_arg1 == "crates_12" then
 		f134_local0 = "mpui/crates"
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0xCD7C79409988EEA, 12 )
-		f134_local6 = 0x15261956CF825E5
-		f134_local4 = 0x4096F9338B127BE
+		f134_local6 = "ui_icon_blackmarket_reserves_crate_x10_large_square"
+		f134_local4 = "ui_icon_blackmarket_reserves_crate_x10_preview"
 		f134_local30 = true
-	elseif f134_arg1 == 0x7D19C4484A8E5F4 then
+	elseif f134_arg1 == "crates_15" then
 		f134_local0 = "mpui/crates"
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0xCD7C79409988EEA, 15 )
-		f134_local6 = 0x13F05FBEF588010
-		f134_local4 = 0x518FC0274F3AF11
+		f134_local6 = "ui_icon_blackmarket_reserves_crate_x15_large_square"
+		f134_local4 = "ui_icon_blackmarket_reserves_crate_x15_preview"
 		f134_local30 = true
-	elseif f134_arg1 == 0x7C70744849F9440 then
+	elseif f134_arg1 == "crates_20" then
 		f134_local0 = "mpui/crates"
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0xCD7C79409988EEA, 20 )
-		f134_local6 = 0xE5C67C38EB45AC0
-		f134_local4 = 0x99DF7EAA4CD07A1
+		f134_local6 = "ui_icon_blackmarket_reserves_crate_x20_large_square"
+		f134_local4 = "ui_icon_blackmarket_reserves_crate_x20_preview"
 		f134_local30 = true
-	elseif f134_arg1 == 0x87BF62DBF432123 then
+	elseif f134_arg1 == "promo_no_dupe_crate_1" then
 		f134_local0 = 0x717FF140F30014C
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x49349434018253B, 1 )
 		f134_local6 = 0xB3DD6A07BF2BF1E
 		f134_local4 = 0xAD7059EF84C6745
 		f134_local30 = true
-	elseif f134_arg1 == 0x87BF72DBF4322D6 then
+	elseif f134_arg1 == "promo_no_dupe_crate_2" then
 		f134_local0 = 0x717FF140F30014C
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x49349434018253B, 2 )
 		f134_local6 = 0x94C56B4BDDDCA57
 		f134_local4 = 0xAD7029EF84C622C
 		f134_local30 = true
-	elseif f134_arg1 == 0x87BF82DBF432489 then
+	elseif f134_arg1 == "promo_no_dupe_crate_3" then
 		f134_local0 = 0x717FF140F30014C
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x49349434018253B, 3 )
 		f134_local6 = 0x8D7D55C5793D94
 		f134_local4 = 0xAD7039EF84C63DF
 		f134_local30 = true
-	elseif f134_arg1 == 0x87BF92DBF43263C then
+	elseif f134_arg1 == "promo_no_dupe_crate_4" then
 		f134_local0 = 0x717FF140F30014C
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x49349434018253B, 4 )
 		f134_local6 = 0x68D795994207A5D
 		f134_local4 = 0xAD7009EF84C5EC6
 		f134_local30 = true
-	elseif f134_arg1 == 0x87BFA2DBF4327EF then
+	elseif f134_arg1 == "promo_no_dupe_crate_5" then
 		f134_local0 = 0x717FF140F30014C
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x49349434018253B, 5 )
 		f134_local6 = 0xFAFB2215A9DD6FA
 		f134_local4 = 0xAD7019EF84C6079
 		f134_local30 = true
-	elseif f134_arg1 == 0x87BFB2DBF4329A2 then
+	elseif f134_arg1 == "promo_no_dupe_crate_6" then
 		f134_local0 = 0x717FF140F30014C
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x49349434018253B, 6 )
 		f134_local6 = 0xA270193C87FA3B3
 		f134_local4 = 0xAD6FE9EF84C5B60
 		f134_local30 = true
-	elseif f134_arg1 == 0x87BFC2DBF432B55 then
+	elseif f134_arg1 == "promo_no_dupe_crate_7" then
 		f134_local0 = 0x717FF140F30014C
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x49349434018253B, 7 )
-		f134_local6 = 0xA51C23D884AB3FE
-		f134_local4 = 0xD1640CD3743CF5B
+		f134_local6 = "ui_icon_blackmarket_stream_case_x2"
+		f134_local4 = "ui_icon_blackmarket_item_shop_reserve_crate_x2_preview"
 		f134_local30 = true
-	elseif f134_arg1 == 0xDC462BBFF113349 then
+	elseif f134_arg1 == "promo_no_dupe_crate_10" then
 		f134_local0 = 0x717FF140F30014C
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x49349434018253B, 10 )
 		f134_local6 = 0xAA980299AAEAD68
 		f134_local4 = 0xADA8A9EF84F7F1B
 		f134_local30 = true
-	elseif f134_arg2 == 0x91F431E247EFC65 then
+	elseif f134_arg2 == "bribe" then
 		local f134_local34 = CoD.BlackMarketUtility.GetBribeAsset( f134_arg0, f134_arg1 )
 		if f134_local34 then
 			f134_local0 = f134_local34.name
@@ -2858,7 +2858,7 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			f134_local7 = f134_local34.category
 			f134_local30 = true
 		end
-	elseif f134_arg2 == 0xF75BEEE07C5BC7D then
+	elseif f134_arg2 == "special_bundle" then
 		local f134_local34 = CoD.BlackMarketUtility.GetSpecialBundleInfo( f134_arg0, f134_arg1 )
 		if f134_local34 then
 			f134_local7 = f134_local34.category
@@ -2870,7 +2870,7 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		f134_local24 = true
 		f134_local30 = true
 		f134_local28 = CoD.BlackMarketTableUtility.BundleIncludesTiers( f134_arg0, f134_arg1 )
-	elseif f134_arg2 == 0x1A672B497989ACE then
+	elseif f134_arg2 == "bribe_bundle" then
 		local f134_local34 = CoD.BlackMarketUtility.GetSpecialBundleInfo( f134_arg0, f134_arg1 )
 		if f134_local34 then
 			f134_local7 = f134_local34.category
@@ -2882,8 +2882,8 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		f134_local24 = true
 		f134_local30 = true
 		f134_local28 = CoD.BlackMarketTableUtility.BundleIncludesTiers( f134_arg0, f134_arg1 )
-	elseif f134_arg2 == 0xC398D8E22A2269B then
-		f134_local7 = 0x10FEC0D6C18D931
+	elseif f134_arg2 == "outfit_bundle" then
+		f134_local7 = "mpui/bm_outfit_bundle"
 		f134_local8 = 0x9F902A4E4F760A0
 		local f134_local34 = CoD.BlackMarketUtility.GetOufitBundleRef( f134_arg0, f134_arg1, f134_arg5, f134_arg6 )
 		if f134_local34 then
@@ -2900,8 +2900,8 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			f134_local26 = true
 		end
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.CHARACTER
-	elseif f134_arg2 == 0xDD691088352B680 or f134_arg2 == 0xBD6E1F8964DCE86 then
-		f134_arg2 = 0xDD691088352B680
+	elseif f134_arg2 == "palette" or f134_arg2 == "outfit" then
+		f134_arg2 = "palette"
 		f134_local7 = 0x402A241E7027A9C
 		f134_local8 = 0xC71CAD2D5CA1139
 		local f134_local34 = CoD.BlackMarketUtility.GetOufitPresetRef( f134_arg0, f134_arg1, f134_arg5, f134_arg6 )
@@ -2919,7 +2919,7 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			CoD.BlackMarketUtility.Error( f134_arg0, "Loot: No outfit/palette found for '" .. tostring( f134_arg1 ) .. "'.\n" )
 		end
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.CHARACTER
-	elseif f134_arg2 == 0xFB8B65946FBF7A2 then
+	elseif f134_arg2 == "war_paint" then
 		f134_local7 = "heroes/war_paint"
 		f134_local8 = "heroes/war_paint"
 		local f134_local34 = CoD.BlackMarketUtility.GetOufitWarPaintRef( f134_arg0, f134_arg1, f134_arg5, f134_arg6 )
@@ -2935,8 +2935,8 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			CoD.BlackMarketUtility.Error( f134_arg0, "Loot: No warpaint found for '" .. tostring( f134_arg1 ) .. "'.\n" )
 		end
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.WARPAINT
-	elseif f134_arg2 == 0x48B82A2276A1CAF then
-		f134_local7 = 0xA946B2CDA87A651
+	elseif f134_arg2 == "war_paint_bundle" then
+		f134_local7 = "mpui/bm_war_paint_bundle"
 		f134_local8 = 0xE530F8AE1170AEF
 		local f134_local34 = CoD.BlackMarketUtility.GetWarpaintBundleRef( f134_arg0, f134_arg1 )
 		if f134_local34 then
@@ -2951,9 +2951,9 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			f134_local24 = true
 		end
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.WARPAINT
-	elseif f134_arg2 == 0x1FE4C75ACC7DF0E then
-		f134_local7 = 0x90FDB01723264C2
-		f134_local8 = 0x90FDB01723264C2
+	elseif f134_arg2 == "decal" then
+		f134_local7 = "mpui/bm_outfit_decal"
+		f134_local8 = "mpui/bm_outfit_decal"
 		local f134_local34 = CoD.BlackMarketUtility.GetOufitDecalRef( f134_arg0, f134_arg1, f134_arg5, f134_arg6 )
 		if f134_local34 then
 			f134_local0 = f134_local34.name
@@ -2965,9 +2965,9 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		elseif f134_local31 then
 			CoD.BlackMarketUtility.Error( f134_arg0, "Loot: No decal found for '" .. tostring( f134_arg1 ) .. "'.\n" )
 		end
-	elseif f134_arg2 == 0xFB6919EC129667C then
-		f134_local7 = 0x84446BBFA84177E
-		f134_local8 = 0x84446BBFA84177E
+	elseif f134_arg2 == "sticker" then
+		f134_local7 = "mpui/bm_sticker"
+		f134_local8 = "mpui/bm_sticker"
 		f134_local0 = CoD.BlackMarketUtility.GetStickerNameRef( f134_arg1 )
 		if f134_local23 then
 			f134_local1 = Engine[0xF9F1239CFD921FE]( 0xEFBC43F128603C7 )
@@ -2976,40 +2976,40 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		end
 		f134_local4 = f134_arg1
 		f134_local6 = f134_arg1
-	elseif f134_arg2 == 0x8A7F355DC1AD7DA then
+	elseif f134_arg2 == "jump_kit" then
 		f134_local7 = 0x3F467595E1530B1
 		f134_local8 = 0x3F467595E1530B1
 		f134_local0, f134_local4, f134_local6 = CoD.BlackMarketUtility.GetJumpPackRefs( f134_arg1 )
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0xCDF03FEF797580B )
 		f134_local24 = true
-	elseif f134_arg2 == 0x72D7D6554D61FBC then
-		f134_local7 = 0x6E17CFC64CC82A6
-		f134_local8 = 0x6E17CFC64CC82A6
+	elseif f134_arg2 == "parachute" then
+		f134_local7 = "mpui/bm_parachute"
+		f134_local8 = "mpui/bm_parachute"
 		f134_local0, f134_local4, f134_local6 = CoD.BlackMarketUtility.GetParachuteRefs( f134_arg1 )
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x4F735829F6419D6 )
-	elseif f134_arg2 == 0xEE793A6C5086EA3 then
-		f134_local7 = 0x2F9555D2DB46C29
-		f134_local8 = 0x2F9555D2DB46C29
+	elseif f134_arg2 == "trail" then
+		f134_local7 = "mpui/bm_trail"
+		f134_local8 = "mpui/bm_trail"
 		f134_local0, f134_local4, f134_local6 = CoD.BlackMarketUtility.GetTrailRefs( f134_arg1 )
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x96358359F5E5023 )
-	elseif f134_arg2 == 0x540D91B083332C7 then
-		f134_local7 = 0xD31D93D47E71A15
-		f134_local8 = 0xD31D93D47E71A15
+	elseif f134_arg2 == "wingsuit" then
+		f134_local7 = "mpui/bm_wingsuit"
+		f134_local8 = "mpui/bm_wingsuit"
 		f134_local0, f134_local4, f134_local6 = CoD.BlackMarketUtility.GetWingsuitRefs( f134_arg1 )
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x8DF7DAB46723CBF )
-	elseif f134_arg2 == 0x9933346C77080D8 or f134_arg2 == 0xAD68520D53FDBFB then
-		f134_local7 = 0x7B491E0F2A8C286
-		f134_local8 = 0x7B491E0F2A8C286
+	elseif f134_arg2 == "death_fx" or f134_arg2 == "single_death_fx" then
+		f134_local7 = "mpui/bm_death_fx"
+		f134_local8 = "mpui/bm_death_fx"
 		f134_local0, f134_local4, f134_local6 = CoD.BlackMarketUtility.GetDeathFxRefs( f134_arg1 )
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0xEB5308AF890B7CA )
-		if f134_arg2 == 0xAD68520D53FDBFB then
+		if f134_arg2 == "single_death_fx" then
 			local f134_local35 = CoD.BlackMarketUtility.GetWeaponRef( CoD.BlackMarketUtility.GetTableWeaponRef( f134_arg0, f134_arg1, f134_arg6, f134_arg5, f134_arg8 ) )
 			if f134_local35 then
 				local f134_local36 = Engine[0xF9F1239CFD921FE]( f134_local35.displayNameRef )
 				f134_local14 = f134_local35.weaponInfo
 				if f134_local14.displayNameRef then
 					f134_local1 = Engine[0xF9F1239CFD921FE]( 0x47EC21C1E053403, f134_local14.displayNameRef )
-					local f134_local37 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local14.ref, Enum.eModes[0x83EBA96F36BC4E5] ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] ) )
+					local f134_local37 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local14.ref, Enum.eModes.mode_multiplayer ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer ) )
 					if f134_local37 then
 						f134_local2 = Engine[0xF9F1239CFD921FE]( f134_local37 )
 						f134_local3 = f134_local14.displayNameRef
@@ -3017,19 +3017,19 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 				end
 			end
 		end
-	elseif f134_arg2 == 0x4462B1D8EB27489 or f134_arg2 == 0x73452998C43A16 then
-		f134_local7 = 0xF5E657D5E5ED4E7
-		f134_local8 = 0xF5E657D5E5ED4E7
+	elseif f134_arg2 == "weapon_charm" or f134_arg2 == "single_weapon_charm" then
+		f134_local7 = "mpui/bm_weapon_charm"
+		f134_local8 = "mpui/bm_weapon_charm"
 		f134_local0, f134_local4, f134_local6 = CoD.BlackMarketUtility.GetWeaponCharmRefs( f134_arg1 )
-		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x2BC87FDDA42C65 )
-		if f134_arg2 == 0x73452998C43A16 then
+		f134_local1 = Engine[0xF9F1239CFD921FE]( "mpui/weapon_charm_desc" )
+		if f134_arg2 == "single_weapon_charm" then
 			local f134_local35 = CoD.BlackMarketUtility.GetWeaponRef( CoD.BlackMarketUtility.GetTableWeaponRef( f134_arg0, f134_arg1, f134_arg6, f134_arg5, f134_arg8 ) )
 			if f134_local35 then
 				local f134_local36 = Engine[0xF9F1239CFD921FE]( f134_local35.displayNameRef )
 				f134_local14 = f134_local35.weaponInfo
 				if f134_local14.displayNameRef then
 					f134_local1 = Engine[0xF9F1239CFD921FE]( 0x869AF228464E2CC, f134_local14.displayNameRef )
-					local f134_local37 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local14.ref, Enum.eModes[0x83EBA96F36BC4E5] ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] ) )
+					local f134_local37 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local14.ref, Enum.eModes.mode_multiplayer ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer ) )
 					if f134_local37 then
 						f134_local2 = Engine[0xF9F1239CFD921FE]( f134_local37 )
 						f134_local3 = f134_local14.displayNameRef
@@ -3037,36 +3037,36 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 				end
 			end
 		end
-	elseif f134_arg2 == 0x6D7AB194448A4F3 then
-		f134_local7 = 0xF3A7FC2920E9B61
-		f134_local8 = 0xF3A7FC2920E9B61
+	elseif f134_arg2 == "tag" then
+		f134_local7 = "mpui/bm_tag"
+		f134_local8 = "mpui/bm_tag"
 		for f134_local39, f134_local37 in ipairs( CoD.BreadcrumbUtility.GetSprayGestureTable() ) do
 			if f134_local37[0x14C91FFB3BA4240] == f134_arg1 then
-				f134_local0 = f134_local37[0xA31296C0C1B6029]
+				f134_local0 = f134_local37.title
 				f134_local1 = Engine[0xF9F1239CFD921FE]( 0x14B40835B8EFFA6 )
-				f134_local4 = f134_local37[0xBFF4CC56C2092F0]
-				f134_local6 = f134_local37[0xBFF4CC56C2092F0]
+				f134_local4 = f134_local37.icon
+				f134_local6 = f134_local37.icon
 			end
 		end
-	elseif f134_arg2 == 0x38E26C8B1031B54 then
-		f134_local7 = 0x59A5D0F134093B2
+	elseif f134_arg2 == "tag_bundle" then
+		f134_local7 = "mpui/bm_tag_bundle"
 		f134_local8 = 0x9F902A4E4F760A0
 		local f134_local34 = CoD.BreadcrumbUtility.GetSprayGestureTable()
 		local f134_local35 = CoD.BlackMarketTableUtility.GetBonusSetMasterNameHash( f134_arg4 )
 		for f134_local37, f134_local40 in ipairs( f134_local34 ) do
 			if f134_local40[0x14C91FFB3BA4240] == f134_local35 then
-				f134_local0 = f134_local40[0xA31296C0C1B6029]
+				f134_local0 = f134_local40.title
 				f134_local1 = Engine[0xF9F1239CFD921FE]( 0x14B40835B8EFFA6 )
-				f134_local4 = f134_local40[0xBFF4CC56C2092F0]
-				f134_local6 = f134_local40[0xBFF4CC56C2092F0]
-				f134_local16 = f134_local40[0xBFF4CC56C2092F0]
-				f134_local17 = f134_local40[0xA31296C0C1B6029]
+				f134_local4 = f134_local40.icon
+				f134_local6 = f134_local40.icon
+				f134_local16 = f134_local40.icon
+				f134_local17 = f134_local40.title
 				f134_local24 = true
 			end
 		end
-	elseif f134_arg2 == 0xCA2BC08C1A6BCF6 then
-		f134_local7 = 0xA1163B4DB78960A
-		f134_local8 = 0xA1163B4DB78960A
+	elseif f134_arg2 == "calling_card" then
+		f134_local7 = "mpui/bm_bribe_callingcard"
+		f134_local8 = "mpui/bm_bribe_callingcard"
 		if not CoD.BlackMarketUtility.GetCallingCardTitleFromImage( f134_arg1 ) then
 			f134_local0 = CoD.BlackMarketUtility.GetCallingCardTitleFromMasterImage( f134_arg1 )
 		end
@@ -3074,9 +3074,9 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		f134_arg1 = CoD.BlackMarketUtility.GetSafeReward( f134_arg1, f134_arg2 )
 		f134_local4 = f134_arg1
 		f134_local6 = f134_arg1
-	elseif f134_arg2 == 0xCC13B0F8EEFF726 then
-		f134_local7 = 0xD4314C41E9C9CFC
-		f134_local8 = 0xD4314C41E9C9CFC
+	elseif f134_arg2 == "signature_weapon" then
+		f134_local7 = "mpui/bm_signature_weapon"
+		f134_local8 = 0"mpui/bm_signature_weapon"
 		local f134_local34 = CoD.BlackMarketUtility.GetSignatureWeaponRef( f134_arg1 )
 		if f134_local34 then
 			local f134_local35 = Engine[0xF9F1239CFD921FE]( f134_local34.displayNameRef )
@@ -3086,7 +3086,7 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			f134_local13 = f134_local34.signatureWeaponInfo
 			if f134_local13.ref then
 				f134_local25 = true
-				local f134_local39 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local13.ref, Enum.eModes[0x83EBA96F36BC4E5] ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] ) )
+				local f134_local39 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local13.ref, Enum.eModes.mode_multiplayer ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer ) )
 				if f134_local39 then
 					f134_local2 = Engine[0xF9F1239CFD921FE]( 0x272B8D34315D012, Engine[0xF9F1239CFD921FE]( f134_local39 ), f134_local35 )
 				end
@@ -3095,9 +3095,9 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			CoD.BlackMarketUtility.Error( f134_arg0, "Loot: No signature weapon found for '" .. tostring( f134_arg1 ) .. "'.\n" )
 		end
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.WEAPON
-	elseif f134_arg2 == 0xD402AEB43C688F0 then
-		f134_local7 = 0x86BD6B0420B77FE
-		f134_local8 = 0x86BD6B0420B77FE
+	elseif f134_arg2 == "melee_weapon" then
+		f134_local7 = "mpui/bm_melee_weapon_caps"
+		f134_local8 = "mpui/bm_melee_weapon_caps"
 		local f134_local34 = CoD.BlackMarketUtility.GetWeaponRef( f134_arg1 )
 		if f134_local34 then
 			local f134_local35 = Engine[0xF9F1239CFD921FE]( f134_local34.displayNameRef )
@@ -3105,16 +3105,16 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			f134_local1 = Engine[0xF9F1239CFD921FE]( f134_local34.displayDescRef )
 			f134_local4 = f134_local34.primaryImage
 			f134_local14 = f134_local34.weaponInfo
-			f134_local2 = Engine[0xF9F1239CFD921FE]( 0x86BD6B0420B77FE )
+			f134_local2 = Engine[0xF9F1239CFD921FE]( "mpui/bm_melee_weapon_caps" )
 		elseif f134_local31 then
 			CoD.BlackMarketUtility.Error( f134_arg0, "Loot: No melee weapon found for '" .. tostring( f134_arg1 ) .. "'.\n" )
 		end
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.WEAPON
-	elseif f134_arg2 == 0x722B8AE0C9D0F9D then
-		f134_local7 = 0x86BD6B0420B77FE
+	elseif f134_arg2 == "melee_weapon_bundle" then
+		f134_local7 = "mpui/bm_melee_weapon_caps"
 		f134_local8 = 0x9F902A4E4F760A0
 		local f134_local34 = nil
-		local f134_local35 = CoD.BlackMarketUtility.GetBundleKeyItemRef( f134_arg0, f134_arg1, 0xD402AEB43C688F0 )
+		local f134_local35 = CoD.BlackMarketUtility.GetBundleKeyItemRef( f134_arg0, f134_arg1, "melee_weapon" )
 		if f134_local35 then
 			f134_local34 = CoD.BlackMarketUtility.GetWeaponRef( f134_local35.name )
 		end
@@ -3124,17 +3124,17 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			f134_local1 = Engine[0xF9F1239CFD921FE]( f134_local34.displayDescRef )
 			f134_local4 = f134_local34.primaryImage
 			f134_local14 = f134_local34.weaponInfo
-			f134_local2 = Engine[0xF9F1239CFD921FE]( 0x86BD6B0420B77FE )
+			f134_local2 = Engine[0xF9F1239CFD921FE]( "mpui/bm_melee_weapon_caps" )
 		elseif f134_local31 then
 			CoD.BlackMarketUtility.Error( f134_arg0, "Loot: No melee weapon found for '" .. tostring( f134_arg1 ) .. "'.\n" )
 		end
 		f134_local24 = true
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.WEAPON
-	elseif f134_arg2 == 0xF6D84B91339C8B or f134_arg2 == 0x6A7C5E0DBF9ED32 then
+	elseif f134_arg2 == "reactive_camo" or f134_arg2 == "single_reactive_camo" then
 		f134_local15 = f134_arg1
-		f134_local7 = 0x2EEF729B41D6347
-		f134_local8 = 0x2EEF729B41D6347
-		if f134_arg2 == 0xF6D84B91339C8B then
+		f134_local7 = "weapon_options/reactive_camo"
+		f134_local8 = "weapon_options/reactive_camo"
+		if f134_arg2 == "reactive_camo" then
 			f134_local4 = Engine.TableLookup( CoD.CACUtility.CamoOptionsTable, Enum[0x5DD5CC8AEA7314B][0x5B3B869AD96B53C], Enum[0x5DD5CC8AEA7314B][0xB79D07B3744EA1A], "camo", Enum[0x5DD5CC8AEA7314B][0xAA94CABDA68EB21], f134_arg1 )
 		else
 			f134_local4 = CoD.BlackMarketTableUtility.GetContrabandSingleCamoImageName( f134_arg0, f134_arg8 )
@@ -3143,7 +3143,7 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		if f134_local34 ~= nil then
 			local f134_local35 = f134_local34[1]
 			f134_local0 = Engine[0xC6F8EC444864600]( CoD.attachmentTable, f134_local35, Enum.attachmentTableColumn_e[0xF65E25C47700E9F] )
-			if f134_local4 == nil or f134_local4 == 0x0 then
+			if f134_local4 == nil or f134_local4 == "" then
 				f134_local4 = Engine[0xC6F8EC444864600]( CoD.attachmentTable, f134_local35, Enum.attachmentTableColumn_e[0x9CAE84BECEB0511] )
 			end
 		end
@@ -3151,9 +3151,9 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		if f134_local36 then
 			f134_local1 = Engine[0xF9F1239CFD921FE]( 0xB6921A298FA490B, Engine[0xF9F1239CFD921FE]( f134_local36.displayNameRef ) )
 			f134_local14 = f134_local36.weaponInfo
-			if f134_arg2 == 0x6A7C5E0DBF9ED32 and f134_local14.displayNameRef then
+			if f134_arg2 == "single_reactive_camo" and f134_local14.displayNameRef then
 				f134_local1 = Engine[0xF9F1239CFD921FE]( 0x3CC9C023A12F461, f134_local14.displayNameRef )
-				local f134_local40 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local14.ref, Enum.eModes[0x83EBA96F36BC4E5] ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] ) )
+				local f134_local40 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local14.ref, Enum.eModes.mode_multiplayer ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer ) )
 				if f134_local40 then
 					f134_local2 = Engine[0xF9F1239CFD921FE]( f134_local40 )
 					f134_local3 = f134_local14.displayNameRef
@@ -3163,21 +3163,21 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			CoD.BlackMarketUtility.Error( "Loot: No reactive camo weapon info found for '" .. tostring( f134_arg1 ) .. "'.\n" )
 		end
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.WEAPON
-	elseif f134_arg2 == 0xA72AF2C19CEFB8C then
-		local f134_local34 = CoD.BlackMarketUtility.GetBundleKeyItemRef( f134_arg0, f134_arg1, 0xF6D84B91339C8B )
+	elseif f134_arg2 == "reactive_camo_bundle" then
+		local f134_local34 = CoD.BlackMarketUtility.GetBundleKeyItemRef( f134_arg0, f134_arg1, "reactive_camo" )
 		if f134_local34 then
 			f134_local15 = f134_local34.name
 		else
-			f134_local15 = 0x0
+			f134_local15 = ""
 		end
-		f134_local7 = 0x2EEF729B41D6347
+		f134_local7 = "weapon_options/reactive_camo"
 		f134_local8 = 0x9F902A4E4F760A0
 		f134_local4 = Engine.TableLookup( CoD.CACUtility.CamoOptionsTable, Enum[0x5DD5CC8AEA7314B][0x5B3B869AD96B53C], Enum[0x5DD5CC8AEA7314B][0xB79D07B3744EA1A], "camo", Enum[0x5DD5CC8AEA7314B][0xAA94CABDA68EB21], f134_local15 )
 		local f134_local35 = Engine.TableFindRows( CoD.attachmentTable, Enum.attachmentTableColumn_e[0x419575E672F6FA2], f134_local15 )
 		if f134_local35 ~= nil then
 			local f134_local36 = f134_local35[1]
 			f134_local0 = Engine[0xC6F8EC444864600]( CoD.attachmentTable, f134_local36, Enum.attachmentTableColumn_e[0xF65E25C47700E9F] )
-			if f134_local4 == nil or f134_local4 == 0x0 then
+			if f134_local4 == nil or f134_local4 == "" then
 				f134_local4 = Engine[0xC6F8EC444864600]( CoD.attachmentTable, f134_local36, Enum.attachmentTableColumn_e[0x9CAE84BECEB0511] )
 			end
 		end
@@ -3190,12 +3190,12 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		end
 		f134_local24 = true
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.WEAPON
-	elseif f134_arg2 == 0xD74CF5A087733F7 or f134_arg2 == "mk2" then
+	elseif f134_arg2 == "mastercraft" or f134_arg2 == "mk2" then
 		f134_local15 = f134_arg1
-		if f134_arg2 == 0xD74CF5A087733F7 then
-			local f134_local41 = 0x81782ED786B4A3
+		if f134_arg2 == "mastercraft" then
+			local f134_local41 = "weapon_options/mastercraft"
 		end
-		f134_local7 = f134_local41 or 0xD4314C41E9C9CFC
+		f134_local7 = f134_local41 or "mpui/bm_signature_weapon"
 		f134_local8 = f134_local7
 		local f134_local34 = Engine.TableFindRows( CoD.attachmentTable, Enum.attachmentTableColumn_e[0x419575E672F6FA2], f134_arg1 )
 		if f134_local34 ~= nil then
@@ -3206,16 +3206,16 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		local f134_local35 = CoD.BlackMarketUtility.GetMastercraftWeaponRef( f134_arg1 )
 		if f134_local35 then
 			local f134_local36 = Engine[0xF9F1239CFD921FE]( f134_local35.displayNameRef )
-			if f134_arg2 == 0xD74CF5A087733F7 then
-				f134_local1 = Engine[0xF9F1239CFD921FE]( 0xDDD1554BFF1E20B, f134_local36 )
+			if f134_arg2 == "mastercraft" then
+				f134_local1 = Engine[0xF9F1239CFD921FE]( "menu/mastercraft_desc", f134_local36 )
 			else
-				f134_local1 = Engine[0xF9F1239CFD921FE]( 0xC0A77B42A315351, f134_local36 )
+				f134_local1 = Engine[0xF9F1239CFD921FE]( "menu/mk2_desc", f134_local36 )
 				f134_local0 = f134_local35.name
 			end
 			f134_local4 = f134_local35.primaryImage
 			f134_local14 = f134_local35.weaponInfo
 			if f134_local14.ref then
-				local f134_local37 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local14.ref, Enum.eModes[0x83EBA96F36BC4E5] ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] ) )
+				local f134_local37 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local14.ref, Enum.eModes.mode_multiplayer ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer ) )
 				if f134_local37 then
 					f134_local2 = Engine[0xF9F1239CFD921FE]( f134_local37 )
 					f134_local3 = f134_local14.displayNameRef
@@ -3225,12 +3225,12 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			CoD.BlackMarketUtility.Error( f134_arg0, "Loot: No mastercraft/mk2 weapon info found for '" .. tostring( f134_arg1 ) .. "'.\n" )
 		end
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.WEAPON
-	elseif f134_arg2 == 0x44036371584190 then
-		local f134_local34 = CoD.BlackMarketUtility.GetBundleKeyItemRef( f134_arg0, f134_arg1, 0xD74CF5A087733F7 )
+	elseif f134_arg2 == "mastercraft_bundle" then
+		local f134_local34 = CoD.BlackMarketUtility.GetBundleKeyItemRef( f134_arg0, f134_arg1, "mastercraft" )
 		if f134_local34 then
 			f134_local15 = f134_local34.name
 		else
-			f134_local15 = 0x0
+			f134_local15 = ""
 		end
 		f134_local7 = 0x672018B2DF3B222
 		f134_local8 = 0x9F902A4E4F760A0
@@ -3243,11 +3243,11 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		end
 		local f134_local36 = CoD.BlackMarketUtility.GetMastercraftWeaponRef( f134_local15 )
 		if f134_local36 then
-			f134_local1 = Engine[0xF9F1239CFD921FE]( 0xDDD1554BFF1E20B, Engine[0xF9F1239CFD921FE]( f134_local36.displayNameRef ) )
+			f134_local1 = Engine[0xF9F1239CFD921FE]( "menu/mastercraft_desc", Engine[0xF9F1239CFD921FE]( f134_local36.displayNameRef ) )
 			f134_local4 = f134_local36.primaryImage
 			f134_local14 = f134_local36.weaponInfo
 			if f134_local14.ref then
-				local f134_local40 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local14.ref, Enum.eModes[0x83EBA96F36BC4E5] ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] ) )
+				local f134_local40 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local14.ref, Enum.eModes.mode_multiplayer ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer ) )
 				if f134_local40 then
 					f134_local2 = Engine[0xF9F1239CFD921FE]( f134_local40 )
 					f134_local3 = f134_local14.displayNameRef
@@ -3255,12 +3255,12 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			end
 		end
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.WEAPON
-	elseif f134_arg2 == 0x1E4699064C916B2 then
+	elseif f134_arg2 == "mk2_bundle" then
 		local f134_local34 = CoD.BlackMarketUtility.GetBundleKeyItemRef( f134_arg0, f134_arg1, "mk2" )
 		if f134_local34 then
 			f134_local15 = f134_local34.name
 		else
-			f134_local15 = 0x0
+			f134_local15 = ""
 		end
 		f134_local7 = 0x8B384C77C6AD378
 		f134_local8 = 0x9F902A4E4F760A0
@@ -3273,12 +3273,12 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		end
 		local f134_local36 = CoD.BlackMarketUtility.GetMastercraftWeaponRef( f134_local15 )
 		if f134_local36 then
-			f134_local1 = Engine[0xF9F1239CFD921FE]( 0xC0A77B42A315351, Engine[0xF9F1239CFD921FE]( f134_local36.displayNameRef ) )
+			f134_local1 = Engine[0xF9F1239CFD921FE]( "menu/mk2_desc", Engine[0xF9F1239CFD921FE]( f134_local36.displayNameRef ) )
 			f134_local0 = f134_local36.name
 			f134_local4 = f134_local36.primaryImage
 			f134_local14 = f134_local36.weaponInfo
 			if f134_local14.ref then
-				local f134_local40 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local14.ref, Enum.eModes[0x83EBA96F36BC4E5] ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] ) )
+				local f134_local40 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local14.ref, Enum.eModes.mode_multiplayer ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer ) )
 				if f134_local40 then
 					f134_local2 = Engine[0xF9F1239CFD921FE]( f134_local40 )
 					f134_local3 = f134_local14.displayNameRef
@@ -3286,11 +3286,11 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			end
 		end
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.WEAPON
-	elseif f134_arg2 == 0xB0C9EF63048F282 or f134_arg2 == 0xA40B9ADF060FA4A then
+	elseif f134_arg2 == "weapon_camo" or f134_arg2 == "single_camo" then
 		f134_local15 = f134_arg1
-		f134_local7 = 0xF48C2D17E33B3E0
-		f134_local8 = 0xF48C2D17E33B3E0
-		if f134_arg2 == 0xB0C9EF63048F282 then
+		f134_local7 = "menu/weapon_camo"
+		f134_local8 = "menu/weapon_camo"
+		if f134_arg2 == "weapon_camo" then
 			f134_local4 = Engine.TableLookup( CoD.CACUtility.CamoOptionsTable, Enum[0x5DD5CC8AEA7314B][0x5B3B869AD96B53C], Enum[0x5DD5CC8AEA7314B][0xB79D07B3744EA1A], "camo", Enum[0x5DD5CC8AEA7314B][0xAA94CABDA68EB21], f134_arg1 )
 		elseif IsBooleanDvarSet( 0x32A243E731CD14B ) then
 			f134_local4 = "blacktransparent"
@@ -3302,7 +3302,7 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			local f134_local35 = f134_local34[1]
 			f134_local0 = Engine[0xC6F8EC444864600]( CoD.attachmentTable, f134_local35, Enum.attachmentTableColumn_e[0xF65E25C47700E9F] )
 			f134_local1 = Engine[0xF9F1239CFD921FE]( 0x80D5B51243387A8 )
-			if f134_local4 == nil or f134_local4 == 0x0 then
+			if f134_local4 == nil or f134_local4 == "" then
 				f134_local4 = Engine[0xC6F8EC444864600]( CoD.attachmentTable, f134_local35, Enum.attachmentTableColumn_e[0x9CAE84BECEB0511] )
 			end
 		end
@@ -3310,9 +3310,9 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		if f134_local36 then
 			local f134_local38 = Engine[0xF9F1239CFD921FE]( f134_local36.displayNameRef )
 			f134_local14 = f134_local36.weaponInfo
-			if f134_arg2 == 0xA40B9ADF060FA4A and f134_local14.displayNameRef then
+			if f134_arg2 == "single_camo" and f134_local14.displayNameRef then
 				f134_local1 = Engine[0xF9F1239CFD921FE]( 0xD32436AD4978A37, f134_local14.displayNameRef )
-				local f134_local40 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local14.ref, Enum.eModes[0x83EBA96F36BC4E5] ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] ) )
+				local f134_local40 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local14.ref, Enum.eModes.mode_multiplayer ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer ) )
 				if f134_local40 then
 					f134_local2 = Engine[0xF9F1239CFD921FE]( f134_local40 )
 					f134_local3 = f134_local14.displayNameRef
@@ -3324,17 +3324,17 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		f134_local15 = f134_arg1
 		local f134_local34 = nil
 		if f134_arg2 == "weapon_camo_bundle" then
-			f134_local34 = CoD.BlackMarketUtility.GetBundleKeyItemRef( f134_arg0, f134_arg1, 0xB0C9EF63048F282 )
+			f134_local34 = CoD.BlackMarketUtility.GetBundleKeyItemRef( f134_arg0, f134_arg1, "weapon_camo" )
 			if f134_local34 then
 				f134_local15 = f134_local34.name
 			end
 		else
-			f134_local34 = CoD.BlackMarketUtility.GetBundleKeyItemRef( f134_arg0, f134_arg1, 0xA40B9ADF060FA4A )
+			f134_local34 = CoD.BlackMarketUtility.GetBundleKeyItemRef( f134_arg0, f134_arg1, "single_camo" )
 			if f134_local34 then
 				f134_local15 = f134_local34.name
 			end
 		end
-		f134_local7 = 0xF48C2D17E33B3E0
+		f134_local7 = "menu/weapon_camo"
 		f134_local8 = 0x9F902A4E4F760A0
 		if f134_arg2 == "weapon_camo_bundle" then
 			f134_local4 = Engine.TableLookup( CoD.CACUtility.CamoOptionsTable, Enum[0x5DD5CC8AEA7314B][0x5B3B869AD96B53C], Enum[0x5DD5CC8AEA7314B][0xB79D07B3744EA1A], "camo", Enum[0x5DD5CC8AEA7314B][0xAA94CABDA68EB21], f134_local15 )
@@ -3346,7 +3346,7 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			local f134_local36 = f134_local35[1]
 			f134_local0 = Engine[0xC6F8EC444864600]( CoD.attachmentTable, f134_local36, Enum.attachmentTableColumn_e[0xF65E25C47700E9F] )
 			f134_local1 = Engine[0xF9F1239CFD921FE]( 0x80D5B51243387A8 )
-			if f134_local4 == nil or f134_local4 == 0x0 then
+			if f134_local4 == nil or f134_local4 == "" then
 				f134_local4 = Engine[0xC6F8EC444864600]( CoD.attachmentTable, f134_local36, Enum.attachmentTableColumn_e[0x9CAE84BECEB0511] )
 			end
 		end
@@ -3358,13 +3358,13 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		if f134_local38 then
 			local f134_local39 = Engine[0xF9F1239CFD921FE]( f134_local38.displayNameRef )
 			f134_local14 = f134_local38.weaponInfo
-			if f134_arg2 == 0xA40B9ADF060FA4A and f134_local14.displayNameRef then
+			if f134_arg2 == "single_camo" and f134_local14.displayNameRef then
 				f134_local1 = Engine[0xF9F1239CFD921FE]( 0xD32436AD4978A37, f134_local14.displayNameRef )
 			end
 		end
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.WEAPON
 		f134_local24 = true
-	elseif f134_arg2 == 0x3B6268366B085F7 then
+	elseif f134_arg2 == "range_weapon" then
 		f134_local7 = 0x7303A43CCBD4D41
 		f134_local8 = 0x7303A43CCBD4D41
 		local f134_local34 = CoD.BlackMarketUtility.GetWeaponRef( f134_arg1 )
@@ -3375,22 +3375,22 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			f134_local4 = f134_local34.primaryImage
 			f134_local14 = f134_local34.weaponInfo
 			if f134_local14.ref then
-				local f134_local39 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local14.ref, Enum.eModes[0x83EBA96F36BC4E5] ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] ) )
+				local f134_local39 = CoD.CACUtility.GetItemGroupDisplayNameFromRef( Engine.GetItemGroup( Engine[0x8FF94BB44442412]( f134_local14.ref, Enum.eModes.mode_multiplayer ), Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer ) )
 				if f134_local39 then
 					f134_local2 = Engine[0xF9F1239CFD921FE]( f134_local39 )
 				end
 			end
 		end
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.WEAPON
-	elseif f134_arg2 == 0x2D79C9016401F0 or f134_arg2 == 0x4F35AE761BD424 then
-		local f134_local34 = Enum.eModes[0xBF1DCC8138A9D39]
-		if f134_arg2 == 0x2D79C9016401F0 then
-			f134_local7 = 0xC5B6756876BBDC6
-			f134_local8 = 0xC5B6756876BBDC6
+	elseif f134_arg2 == "character" or f134_arg2 == "specialist" then
+		local f134_local34 = Enum.eModes.mode_warzone
+		if f134_arg2 == "character" then
+			f134_local7 = "menu/blackout_character"
+			f134_local8 = "menu/blackout_character"
 		else
 			f134_local7 = "menu/specialist"
 			f134_local8 = "menu/specialist"
-			f134_local34 = Enum.eModes[0x83EBA96F36BC4E5]
+			f134_local34 = Enum.eModes.mode_multiplayer
 		end
 		local f134_local35 = CoD.PlayerRoleUtility.GetHeroList( f134_local34 )
 		local f134_local36 = nil
@@ -3428,9 +3428,9 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			CoD.BlackMarketUtility.Error( f134_arg0, "Loot: No character has loot identifier '" .. tostring( f134_arg1 ) .. "'.\n" )
 		end
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.CHARACTER
-	elseif f134_arg2 == 0x3391A0572202ED4 then
-		f134_local7 = 0x1C35414911C9A0E
-		f134_local8 = 0x1C35414911C9A0E
+	elseif f134_arg2 == "gesture" then
+		f134_local7 = "menu/gesture"
+		f134_local8 = "menu/gesture"
 		local f134_local34 = CoD.BlackMarketUtility.GetGestureRef( f134_arg0, f134_arg1, f134_arg5, f134_arg6 )
 		if f134_local34 then
 			f134_local10 = f134_local34.character
@@ -3443,11 +3443,11 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 			CoD.BlackMarketUtility.Error( f134_arg0, "Loot: No gesture info found for '" .. tostring( f134_arg1 ) .. "'.\n" )
 		end
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.GESTURE
-	elseif f134_arg2 == 0xA23068A24334069 then
-		f134_local7 = 0x1C35414911C9A0E
+	elseif f134_arg2 == "gesture_bundle" then
+		f134_local7 = "menu/gesture"
 		f134_local8 = 0x9F902A4E4F760A0
-		local f134_local34 = 0x0
-		local f134_local35 = CoD.BlackMarketUtility.GetBundleKeyItemRef( f134_arg0, f134_arg1, 0x3391A0572202ED4 )
+		local f134_local34 = ""
+		local f134_local35 = CoD.BlackMarketUtility.GetBundleKeyItemRef( f134_arg0, f134_arg1, "gesture" )
 		if f134_local35 then
 			f134_local34 = f134_local35.name
 		end
@@ -3464,25 +3464,25 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		end
 		f134_local29 = LuaEnum.LOOT_CAMERA_TYPE.GESTURE
 		f134_local24 = true
-	elseif f134_arg2 == 0x33AFE50D7CDA297 then
+	elseif f134_arg2 == "reticle" then
 		f134_local7 = "mpui/reticle_caps"
 		f134_local8 = "mpui/reticle_caps"
 		local f134_local34, f134_local35, f134_local36 = CoD.WeaponOptionsUtility.GetReticleLootStreamData( f134_arg1, f134_arg7 )
-		f134_local0 = f134_local34 or 0x0
+		f134_local0 = f134_local34 or ""
 		if not f134_local36 then
-			f134_local36 = 0x0
+			f134_local36 = ""
 		end
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x93B591B40C51B96, f134_local36 )
-		f134_local4 = f134_local35 or 0x0
-		f134_local6 = f134_local35 or 0x0
-		f134_local2 = Engine[0xF9F1239CFD921FE]( 0x13BE4995FD8DBF8 )
-		f134_local3 = f134_local36 or 0x0
+		f134_local4 = f134_local35 or ""
+		f134_local6 = f134_local35 or ""
+		f134_local2 = Engine[0xF9F1239CFD921FE]( "mpui/attachment_group_optic" )
+		f134_local3 = f134_local36 or ""
 	end
 	if f134_local31 then
-		if (not f134_local4 or f134_local4 == 0x0) and not f134_arg6 == LuaEnum.LOOT_TYPE.ITEMSHOP then
+		if (not f134_local4 or f134_local4 == "") and not f134_arg6 == LuaEnum.LOOT_TYPE.ITEMSHOP then
 			CoD.BlackMarketUtility.Error( f134_arg0, "Loot: No primary image found for '" .. tostring( f134_arg1 ) .. "' (" .. tostring( f134_arg2 ) .. ").\n" )
 		end
-		if (not f134_local0 or f134_local0 == 0x0) and not f134_arg6 == LuaEnum.LOOT_TYPE.ITEMSHOP then
+		if (not f134_local0 or f134_local0 == "") and not f134_arg6 == LuaEnum.LOOT_TYPE.ITEMSHOP then
 			CoD.BlackMarketUtility.Error( f134_arg0, "Loot: No name found for '" .. tostring( f134_arg1 ) .. "' (" .. tostring( f134_arg2 ) .. ").\n" )
 		end
 	end
@@ -3491,27 +3491,27 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 	else
 		f134_local9 = CoD.BlackMarketUtility.GetLootRarityType( f134_arg3 )
 	end
-	if f134_arg4 ~= nil and f134_arg4 ~= 0x0 then
+	if f134_arg4 ~= nil and f134_arg4 ~= "" then
 		if IsJapaneseSku() then
-			f134_local17 = 0x0
+			f134_local17 = ""
 			f134_local18 = false
 		else
 			f134_local2 = Engine[0xF9F1239CFD921FE]( CoD.BlackMarketTableUtility.GetLootBonusStringRef( f134_arg0, f134_arg4 ) )
-			if f134_arg2 == 0x38E26C8B1031B54 then
-				f134_local3 = 0x0
+			if f134_arg2 == "tag_bundle" then
+				f134_local3 = ""
 			else
 				f134_local3 = 0xF6BC2AD33480070
 			end
 			f134_local16 = CoD.BlackMarketTableUtility.GetBonusSetMasterNameHash( f134_arg4 )
-			if f134_arg2 ~= 0x6D7AB194448A4F3 then
+			if f134_arg2 ~= "tag" then
 				
 			else
 				
 			end
 			for f134_local39, f134_local37 in ipairs( CoD.BreadcrumbUtility.GetSprayGestureTable() ) do
 				if f134_local37[0x14C91FFB3BA4240] == f134_local16 then
-					f134_local16 = f134_local37[0xBFF4CC56C2092F0]
-					f134_local17 = f134_local37[0xA31296C0C1B6029]
+					f134_local16 = f134_local37.icon
+					f134_local17 = f134_local37.title
 				end
 			end
 		end
@@ -3520,9 +3520,9 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 		f134_local2 = ""
 	end
 	if f134_local3 == nil then
-		f134_local3 = 0x0
+		f134_local3 = ""
 	end
-	if f134_local5 == 0x0 then
+	if f134_local5 == "" then
 		f134_local5 = f134_local4
 	end
 	if f134_local14 and not f134_local14.modelIdx then
@@ -3579,7 +3579,7 @@ CoD.BlackMarketUtility.TierItemsAppend = function ( f136_arg0, f136_arg1, f136_a
 		local f136_local4 = CoD.BlackMarketTableUtility.GetStreamItemsByTier( f136_arg0, f136_arg2, f136_local0 )
 		local f136_local5 = CoD.BlackMarketUtility.GetEmptyInsertItem( f136_local0, f136_local3 )
 		if f136_local4 ~= nil and #f136_local4 ~= 0 then
-			if f136_local4[1].name ~= nil and f136_local4[1].name ~= 0x0 and f136_local4[1].category ~= nil and f136_local4[1].rarity ~= nil then
+			if f136_local4[1].name ~= nil and f136_local4[1].name ~= "" and f136_local4[1].category ~= nil and f136_local4[1].rarity ~= nil then
 				local f136_local6 = {}
 				f136_local6 = CoD.BlackMarketUtility.GetItemRefs( f136_arg0, f136_local4[1].name, f136_local4[1].category, f136_local4[1].rarity, f136_local4[1].inSet, f136_arg2, f136_local4[1].lootType, f136_local4[1].refOptic, f136_local4[1].itemId )
 				f136_local6.tier = f136_local0
@@ -3601,7 +3601,7 @@ CoD.BlackMarketUtility.TierItemsAppend = function ( f136_arg0, f136_arg1, f136_a
 				end
 				f136_local6.gap = true
 				f136_local5 = f136_local6
-			elseif f136_local4[1].name == 0x0 and f136_local4[1].gap then
+			elseif f136_local4[1].name == "" and f136_local4[1].gap then
 				f136_local5.gap = true
 			end
 		end
@@ -3616,7 +3616,7 @@ CoD.BlackMarketUtility.GetTierItemsForStream = function ( f137_arg0, f137_arg1, 
 	end
 	local f137_local1 = CoD.BlackMarketUtility.GetCurrentSeasonTier( f137_arg0 )
 	local f137_local2 = CoDShared.Loot.GetCurrentSeason()
-	if f137_local2 and f137_local2 ~= 0x0 then
+	if f137_local2 and f137_local2 ~= "" then
 		local f137_local3 = CoDShared.Loot.GetSeasonInfo( f137_local2 )
 		if CoDShared.Loot.GetSeasonInfoParam( f137_local2, CoDShared.Loot.SEASON_INFO_NUMBER ) >= 3 then
 			for f137_local4 = f137_arg1, f137_arg2, 1 do
@@ -3635,7 +3635,7 @@ CoD.BlackMarketUtility.GetTierItemsForStream = function ( f137_arg0, f137_arg1, 
 		end
 	end
 	local f137_local3 = CoDShared.Loot.GetCurrentEventContract()
-	if f137_local3 and f137_local3 ~= 0x0 then
+	if f137_local3 and f137_local3 ~= "" then
 		local f137_local4 = CoDShared.Loot.GetContractInfo( f137_arg0, f137_local3 )
 		CoD.BlackMarketUtility.TierItemsAppend( f137_arg0, f137_local0, f137_local4.id, f137_arg1, f137_arg2, f137_local1 )
 	end
@@ -3704,7 +3704,7 @@ CoD.BlackMarketUtility.FindCharacterDetailsFromLootId = function ( f139_arg0 )
 			if f139_local2 >= 0 then
 				f139_local0.outfitIndex = f139_local2
 				local f139_local3 = function ( f140_arg0, f140_arg1 )
-					if f139_arg0[f140_arg0] ~= 0x0 then
+					if f139_arg0[f140_arg0] ~= "" then
 						local f140_local0 = Engine[0x1556270BCD75F1]( f139_local0.mode, f139_local1, f139_local2, f139_arg0[f140_arg0], f140_arg1 )
 						if f140_local0 >= 0 then
 							return f140_local0
@@ -3715,7 +3715,7 @@ CoD.BlackMarketUtility.FindCharacterDetailsFromLootId = function ( f139_arg0 )
 				
 				f139_local0.decalIndex = f139_local3( "decal", Enum.CharacterItemType[0x7852FCB3BFCC8D1] )
 				f139_local0.war_paintIndex = f139_local3( "war_paint", Enum.CharacterItemType[0x8E3A65D78229DC1] )
-				if f139_arg0.preset and f139_arg0.preset ~= 0x0 then
+				if f139_arg0.preset and f139_arg0.preset ~= "" then
 					local f139_local4, f139_local5 = Engine[0xE1AA381BC4D0919]( f139_local0.mode, f139_local1, f139_local2, f139_arg0.preset )
 					if f139_local4 >= 0 then
 						f139_local0.presetIndex = f139_local4
@@ -3786,7 +3786,7 @@ DataSources.QuarterMasterCategoryList = ListHelper_SetupDataSource( "QuarterMast
 			if not f142_local5 then
 			
 			else
-				f142_local3( "itemshop", 0x90379DA9EEC8DB9, f142_local5, f142_local4 == true, false )
+				f142_local3( "itemshop", "menu/item_shop", f142_local5, f142_local4 == true, false )
 			end
 		end
 		f142_local5 = "CoD.BlackJacksShopFrame"
@@ -3794,9 +3794,9 @@ DataSources.QuarterMasterCategoryList = ListHelper_SetupDataSource( "QuarterMast
 	if IsBooleanDvarSet( 0x989C6B82918FBCC ) and not Engine[0xCB675CA7856DA25]() then
 		f142_local3( "reserves", 0x25FC26BF505BC71, "CoD.BlackjackReserveFrame", true, true )
 	end
-	f142_local3( "supplychain", 0xDFE954EA8BE5422, "CoD.SupplyChainFrame", true, false )
+	f142_local3( "supplychain", "menu/supply_chain", "CoD.SupplyChainFrame", true, false )
 	if not Engine[0xCB675CA7856DA25]() then
-		f142_local3( "inventory", 0xBD3B433D869AB91, "CoD.ItemHistoryFrame", true, false )
+		f142_local3( "inventory", "menu/inventory", "CoD.ItemHistoryFrame", true, false )
 	end
 	return f142_local0
 end, nil, nil, function ( f144_arg0, f144_arg1, f144_arg2 )
@@ -3880,7 +3880,7 @@ end
 CoD.BlackMarketUtility.GetItemShopDatasourceModelValues = function ( f149_arg0, f149_arg1 )
 	local f149_local0 = CoD.BlackMarketUtility.GetItemRefs( f149_arg0, f149_arg1.name, f149_arg1.category, f149_arg1.rarity, f149_arg1.inSet, nil, f149_arg1.lootType, f149_arg1.refOptic, f149_arg1.itemId )
 	f149_local0.price = f149_arg1.price
-	if f149_local0.itemCategory ~= 0xCC13B0F8EEFF726 then
+	if f149_local0.itemCategory ~= "signature_weapon" then
 		f149_local0.allowTogglePreview = false
 	end
 	local f149_local1 = Engine[0xE00B2F29271C60B]( f149_arg1.name .. "_shop" )
@@ -3889,35 +3889,35 @@ CoD.BlackMarketUtility.GetItemShopDatasourceModelValues = function ( f149_arg0, 
 	end
 	if f149_local1 then
 		f149_local0.lootType = LuaEnum.LOOT_TYPE.ITEMSHOP
-		if f149_local1[0x884A61F286BB7C4] then
-			f149_local0.primaryImage = f149_local1[0x884A61F286BB7C4]
-			f149_local0.detailsImage = f149_local1[0x884A61F286BB7C4]
-			if f149_local0.popupImage ~= nil and f149_local0.popupImage ~= 0x0 and f149_local0.itemCategory ~= 0x8A7F355DC1AD7DA then
-				f149_local0.popupImage = f149_local1[0x884A61F286BB7C4]
+		if f149_local1.shopicon then
+			f149_local0.primaryImage = f149_local1.shopicon
+			f149_local0.detailsImage = f149_local1.shopicon
+			if f149_local0.popupImage ~= nil and f149_local0.popupImage ~= "" and f149_local0.itemCategory ~= "jump_kit" then
+				f149_local0.popupImage = f149_local1.shopicon
 			end
 		end
-		if f149_local1[0xB077B413377335] then
-			f149_local0.name = f149_local1[0xB077B413377335]
+		if f149_local1.nametext then
+			f149_local0.name = f149_local1.nametext
 		end
-		if f149_local1[0x2E9D0AD87FA0242] then
-			f149_local0.category = f149_local1[0x2E9D0AD87FA0242]
-			f149_local0.shopCategory = f149_local1[0x2E9D0AD87FA0242]
+		if f149_local1.categorytext then
+			f149_local0.category = f149_local1.categorytext
+			f149_local0.shopCategory = f149_local1.categorytext
 		end
-		if f149_local1[0xE23B52CBA8DDAD7] then
+		if f149_local1.desctext then
 			if f149_local1[0x705C4C12FE1D66A] then
-				f149_local0.desc = Engine[0xF9F1239CFD921FE]( f149_local1[0xE23B52CBA8DDAD7], f149_local1[0x705C4C12FE1D66A] )
+				f149_local0.desc = Engine[0xF9F1239CFD921FE]( f149_local1.desctext, f149_local1[0x705C4C12FE1D66A] )
 			else
-				f149_local0.desc = Engine[0xF9F1239CFD921FE]( f149_local1[0xE23B52CBA8DDAD7] )
+				f149_local0.desc = Engine[0xF9F1239CFD921FE]( f149_local1.desctext )
 			end
 		end
-		if f149_local1[0xC3F1121EF65852D] then
-			f149_local0.mainExtraText = Engine[0xF9F1239CFD921FE]( f149_local1[0xC3F1121EF65852D] )
+		if f149_local1.mainextratext then
+			f149_local0.mainExtraText = Engine[0xF9F1239CFD921FE]( f149_local1.mainextratext )
 		end
 		if f149_local1[0xB2638377E03D79A] then
 			f149_local0.subExtraText = f149_local1[0xB2638377E03D79A]
 		end
-		if f149_local1["detailsicon"] then
-			f149_local0.detailsImage = f149_local1["detailsicon"]
+		if f149_local1[0xE12929DDE999430] then
+			f149_local0.detailsImage = f149_local1[0xE12929DDE999430]
 		end
 	else
 		for f149_local5, f149_local6 in pairs( CoD.BlackMarketUtility.ItemShopImageOverrideTable ) do
@@ -4309,15 +4309,15 @@ CoD.BlackMarketUtility.GetMyShopWeightedItem = function ( f166_arg0 )
 end
 
 CoD.BlackMarketUtility.UpdateItemShopSunsetShopCategory = function ( f167_arg0 )
-	if f167_arg0.shopCategory == 0xF48C2D17E33B3E0 then
+	if f167_arg0.shopCategory == "menu/weapon_camo" then
 		f167_arg0.shopCategory = 0xE2BD8FAC00570CD
-	elseif f167_arg0.shopCategory == 0xF5E657D5E5ED4E7 then
-		f167_arg0.shopCategory = 0x5A209CBF7E80864
+	elseif f167_arg0.shopCategory == "mpui/bm_weapon_charm" then
+		f167_arg0.shopCategory = "menu/single_weapon_charm"
 	elseif f167_arg0.shopCategory == "heroes/war_paint" then
 		f167_arg0.shopCategory = "menu/single_warpaint"
-	elseif f167_arg0.shopCategory == 0x2EEF729B41D6347 then
-		f167_arg0.shopCategory = 0x35C59EF56FA3EC4
-	elseif f167_arg0.shopCategory == 0x7B491E0F2A8C286 then
+	elseif f167_arg0.shopCategory == "weapon_options/reactive_camo" then
+		f167_arg0.shopCategory = "menu/single_reactive_camo"
+	elseif f167_arg0.shopCategory == "mpui/bm_death_fx" then
 		f167_arg0.shopCategory = 0x82802065CF60EAA
 	end
 end
@@ -4394,7 +4394,7 @@ CoD.BlackMarketUtility.SetupItemShopSunsetSlotDatasource = function ( f168_arg0,
 		f168_local11 = nil
 		local f168_local12 = {}
 		if f168_local10 then
-			f168_local11 = 0x37934F15B706913
+			f168_local11 = "contraband"
 		else
 			f168_local11 = CoD.BlackMarketTableUtility.GetDeterministicItemCategory( f168_arg0, f168_local2 )
 			f168_local12 = CoD.BlackMarketTableUtility.GetDeterministicItemSkusAndPrices( f168_arg0, f168_local2, f168_local3 )
@@ -4455,7 +4455,7 @@ CoD.BlackMarketUtility.SetupItemShopSunsetSlotDatasource = function ( f168_arg0,
 			end
 			if f168_local11 == "loot_stream" then
 				f168_local13 = CoD.BlackMarketTableUtility.GetMyShopSeasonItemInfo( f168_arg0, f168_local1 )
-			elseif f168_local11 == 0x37934F15B706913 then
+			elseif f168_local11 == "contraband" then
 				f168_local13 = f168_local5
 				f168_local14 = f168_local13.cpPrice or f168_local14
 				f168_local15 = f168_local13.cpSku or f168_local15
@@ -4470,7 +4470,7 @@ CoD.BlackMarketUtility.SetupItemShopSunsetSlotDatasource = function ( f168_arg0,
 					if f168_arg1 == Enum[0xCF7389DF8F39785][0xAD9FB648E0B9A55] then
 						CoD.BlackMarketUtility.UpdateItemShopSunsetShopCategory( f168_local18 )
 						if f168_local18.subExtraText == 0xF6BC2AD33480070 then
-							f168_local18.subExtraText = 0x0
+							f168_local18.subExtraText = ""
 						end
 					end
 					if CoD.BlackMarketUtility.BlackjackShopSunsetOverridePopupImageItems[f168_local2] then
@@ -4842,29 +4842,29 @@ DataSources.WeaponBribeList = ListHelper_SetupDataSource( "WeaponBribeList", fun
 			local f188_local4 = {
 				itemId = f188_local8.keyItem,
 				name = CoDLootShared.GetItemNameHashFromLootId( f188_local8.keyItem ),
-				rarity = 0xAD656415D50AC75,
+				rarity = "ultra",
 				category = CoDLootShared.GetLootItemCategory( f188_local8.keyItem ),
 				lootType = CoDLootShared.GetLootItemLootType( f188_local8.keyItem )
 			}
 			local f188_local5, f188_local6 = CoD.BlackMarketUtility.GetItemProductAndProperties( CoD.BlackMarketUtility.GetItemShopDatasourceModelValues( f188_arg0, f188_local4 ) )
-			if f188_local4.category == 0xD74CF5A087733F7 then
-				f188_local5.name = Engine[0xF9F1239CFD921FE]( 0x41954FC612B5845, f188_local9[0xB077B413377335] )
+			if f188_local4.category == "mastercraft" then
+				f188_local5.name = Engine[0xF9F1239CFD921FE]( 0x41954FC612B5845, f188_local9.nametext )
 			else
-				f188_local5.name = Engine[0xF9F1239CFD921FE]( f188_local9[0xB077B413377335] )
+				f188_local5.name = Engine[0xF9F1239CFD921FE]( f188_local9.nametext )
 			end
-			f188_local5.desc = f188_local9[0xE23B52CBA8DDAD7] and Engine[0xF9F1239CFD921FE]( f188_local9[0xE23B52CBA8DDAD7] ) or ""
-			if f188_local9["popupdescoverride"] and f188_local9[0xB2BB983050B1101] and f188_local9[0x65D6CA191CE39A9] then
-				f188_local5.popupDesc = Engine[0xF9F1239CFD921FE]( f188_local9["popupdescoverride"], f188_local9[0xB2BB983050B1101], f188_local9[0x65D6CA191CE39A9] )
-			elseif f188_local9["popupdescoverride"] and f188_local9[0xB2BB983050B1101] then
-				f188_local5.popupDesc = Engine[0xF9F1239CFD921FE]( f188_local9["popupdescoverride"], f188_local9[0xB2BB983050B1101] )
-			elseif f188_local9["popupdescoverride"] then
-				f188_local5.popupDesc = Engine[0xF9F1239CFD921FE]( f188_local9["popupdescoverride"] )
+			f188_local5.desc = f188_local9.desctext and Engine[0xF9F1239CFD921FE]( f188_local9.desctext ) or ""
+			if f188_local9.popupdescoverride and f188_local9[0xB2BB983050B1101] and f188_local9[0x65D6CA191CE39A9] then
+				f188_local5.popupDesc = Engine[0xF9F1239CFD921FE]( f188_local9.popupdescoverride, f188_local9[0xB2BB983050B1101], f188_local9[0x65D6CA191CE39A9] )
+			elseif f188_local9.popupdescoverride and f188_local9[0xB2BB983050B1101] then
+				f188_local5.popupDesc = Engine[0xF9F1239CFD921FE]( f188_local9.popupdescoverride, f188_local9[0xB2BB983050B1101] )
+			elseif f188_local9.popupdescoverride then
+				f188_local5.popupDesc = Engine[0xF9F1239CFD921FE]( f188_local9.popupdescoverride )
 			else
 				f188_local5.popupDesc = f188_local5.desc
 			end
-			f188_local5.categoryText = f188_local9[0x2E9D0AD87FA0242]
-			f188_local5.image = f188_local9[0xB47C2D1A4104152] or "blacktransparent"
-			f188_local5.popupImage = f188_local9[0x4E441D88E82CD02] or "blacktransparent"
+			f188_local5.categoryText = f188_local9.categorytext
+			f188_local5.image = f188_local9.weapontileimage or "blacktransparent"
+			f188_local5.popupImage = f188_local9.popupImage or "blacktransparent"
 			f188_local5.price = f188_local8.price
 			f188_local5.casePrice = f188_local8.optionalCost
 			f188_local5.lootRule = f188_local8.lootRule
@@ -4894,7 +4894,7 @@ CoD.BlackMarketUtility.CheckForBribePopupDescOverride = function ( f191_arg0, f1
 	if f191_local0 then
 		f191_local0 = f191_arg0.popupDesc:get()
 	end
-	if f191_local0 and f191_local0 ~= "" and f191_local0 ~= 0x0 then
+	if f191_local0 and f191_local0 ~= "" and f191_local0 ~= "" then
 		return f191_local0
 	else
 		return f191_arg1
@@ -4906,7 +4906,7 @@ DataSources.ItemHistoryCategoryList = ListHelper_SetupDataSource( "ItemHistoryCa
 	table.insert( f192_local0, {
 		models = {
 			category = "specialOrders",
-			categoryNameRefXhash = 0xCABB0A804C32CEE,
+			categoryNameRefXhash = "menu/contracts",
 			imageName = ""
 		}
 	} )
@@ -4946,10 +4946,10 @@ DataSources.ItemHistoryList = ListHelper_SetupDataSource( "ItemHistoryList", fun
 			f193_local3 = Engine[0x139E55459401D30]( f193_arg0, CoD.BlackMarketUtility.ItemHistoryCount, 0, CoD.BlackMarketUtility[0x91EF6C1326C6875], CoD.BlackMarketUtility[0x2BF3E69D05D1B50], Enum[0xD59EDF6DE23A73A][0xFB737E1D309F2D5], CoD.BlackMarketUtility[0xE904580D0E4807], CoD.BlackMarketUtility[0xD620DA7785ED682], Enum[0xD59EDF6DE23A73A][0xFB737E1D309F2D5] )
 		end
 		for f193_local8, f193_local9 in ipairs( f193_local3 ) do
-			local f193_local10 = 0x0
+			local f193_local10 = ""
 			local f193_local12 = nil
 			f193_local10 = CoD.BlackMarketTableUtility.GetItemShopEntryName( f193_arg0, f193_local9.id )
-			if f193_local10 ~= nil and f193_local10 ~= 0x0 then
+			if f193_local10 ~= nil and f193_local10 ~= "" then
 				local f193_local11 = CoD.BlackMarketTableUtility.GetItemShopInformation( f193_arg0, f193_local10 )
 				if f193_local11 then
 					f193_local12 = CoD.BlackMarketUtility.GetItemShopDatasourceModelValues( f193_arg0, f193_local11 )
@@ -4980,7 +4980,7 @@ DataSources.ItemHistoryList = ListHelper_SetupDataSource( "ItemHistoryList", fun
 				else
 					f193_local11.timeStamp = 0
 				end
-				if f193_local12.itemName ~= 0x1CE95E5F79B7FF8 and f193_local12.itemName ~= 0xCBB7D242D100226 and f193_local12.itemName ~= 0x7DB946E6D758F36 and f193_local12.itemName ~= 0xC2D17D2F2C857E1 then
+				if f193_local12.itemName ~= "triple_play_dec2018" and f193_local12.itemName ~= "triple_play_feb2019" and f193_local12.itemName ~= "starter_pack_season_3" and f193_local12.itemName ~= "ar_galil_t8" then
 					table.insert( f193_local0, {
 						models = f193_local11,
 						properties = f193_local13
@@ -4998,7 +4998,7 @@ DataSources.ItemShopConfirmButtonList = ListHelper_SetupDataSource( "ItemShopCon
 	local f194_local1 = FileshareIsLocalCategory( f194_arg0 )
 	table.insert( f194_local0, {
 		displayText = "menu/purchase",
-		displayDesc = 0x1A0434D7EFB5F33,
+		displayDesc = "menu/clip_publish_desc",
 		action = SetWorkingStateAndPurchaseDWSKU,
 		params = {
 			controller = f194_arg0
@@ -5025,14 +5025,14 @@ DataSources.SupplyChainStreams = ListHelper_SetupDataSource( "SupplyChainStreams
 	local f195_local2 = {}
 	CoD.perController[f195_arg0].upsellContractRowIndex = 0
 	local f195_local3 = CoDShared.Loot.GetCurrentSeason()
-	local f195_local4 = 0xDFE954EA8BE5422
+	local f195_local4 = "menu/supply_chain"
 	local f195_local5 = Engine[0xE00B2F29271C60B]( f195_local3 )
 	if not f195_local5 then
 		return {}
 	end
 	local f195_local6 = false
-	local f195_local7 = f195_local5[0x33645EBD6764BD9] or f195_local5[0x9E07BD5D1AC62D3]
-	local f195_local8 = f195_local5[0x74C547BF0F2C029] or 0x0
+	local f195_local7 = f195_local5.streamdisplaytitle or f195_local5[0x9E07BD5D1AC62D3]
+	local f195_local8 = f195_local5[0x74C547BF0F2C029] or ""
 	if CoD.BlackMarketUtility.GetCurrentSeasonTier( f195_arg0 ) >= CoD.BlackMarketUtility.GetCurrentSeasonMaxTiers() then
 		f195_local3 = CoD.BlackMarketUtility.GetCurrentPostSeasonRef()
 		f195_local6 = CoD.SafeGetModelValue( Engine.GetModelForController( f195_arg0 ), "LootStreamProgress.allRngUnlocked" ) == true
@@ -5041,37 +5041,37 @@ DataSources.SupplyChainStreams = ListHelper_SetupDataSource( "SupplyChainStreams
 		end
 		f195_local5 = Engine[0xE00B2F29271C60B]( f195_local3 )
 		f195_local4 = 0x28A006212176E51
-		f195_local7 = 0x0
-		f195_local8 = 0x0
+		f195_local7 = ""
+		f195_local8 = ""
 	end
 	table.insert( f195_local2, {
 		featureTitle = f195_local4,
 		streamName = f195_local7,
 		streamSubtitle = f195_local8,
-		streamImage = f195_local5["contracticon"],
+		streamImage = f195_local5.contracticon,
 		price = 0,
 		active = true,
 		rarity = Enum.LootRarityType[0x8556B83CAD0D180],
 		timeRemaining = 0,
-		category = 0x0,
+		category = "",
 		isUpsell = false,
 		isSpecialEvent = false,
 		isContract = false,
 		isContractComplete = f195_local6,
-		character = 0x0,
-		weaponRef = 0x0,
+		character = "",
+		weaponRef = "",
 		properties = nil,
 		seasonal = false
 	} )
 	local f195_local9 = CoDShared.Loot.GetCurrentEventContract()
-	if f195_local9 ~= 0x0 then
+	if f195_local9 ~= "" then
 		local f195_local10 = CoDShared.Loot.GetContractInfo( f195_arg0, f195_local9 )
 		if f195_local10 ~= nil then
 			local f195_local11 = CoD.ContractUtility.GetContractListModels( f195_arg0, f195_local10.id )
 			table.insert( f195_local2, {
 				featureTitle = 0xF385CAA9605AD8C,
 				streamName = f195_local11.name,
-				streamSubtitle = 0x0,
+				streamSubtitle = "",
 				streamImage = f195_local11.icon,
 				price = 0,
 				active = true,
@@ -5081,12 +5081,12 @@ DataSources.SupplyChainStreams = ListHelper_SetupDataSource( "SupplyChainStreams
 				totalRewardCount = CoD.BlackMarketTableUtility.GetContractTierCount( f195_local10.id ),
 				earnedRewardCount = CoD.BlackMarketUtility.GetContractProgress( f195_arg0, f195_local10.name ),
 				rewardFractionString = f195_local11.rewardFractionString,
-				category = 0x0,
+				category = "",
 				isSpecialEvent = true,
 				isContract = false,
 				isContractComplete = f195_local11.purchased,
-				character = 0x0,
-				weaponRef = 0x0,
+				character = "",
+				weaponRef = "",
 				seasonal = false
 			} )
 		end
@@ -5109,9 +5109,9 @@ DataSources.SupplyChainStreams = ListHelper_SetupDataSource( "SupplyChainStreams
 				local f195_local19 = CoD.ContractUtility.GetContractListModels( f195_arg0, f195_local18.id )
 				if not f195_local19.complete or f195_local19.complete and CoD.perController[f195_arg0].haveActiveContractInStream then
 					table.insert( f195_local2, {
-						featureTitle = 0x0,
+						featureTitle = "",
 						streamName = f195_local19.name,
-						streamSubtitle = 0x0,
+						streamSubtitle = "",
 						streamImage = f195_local19.icon,
 						price = f195_local19.price,
 						active = true,
@@ -5142,9 +5142,9 @@ DataSources.SupplyChainStreams = ListHelper_SetupDataSource( "SupplyChainStreams
 				CoD.ContractUtility.AppendPurchasableContractSlotModels( f195_arg0, f195_local14, f195_local11 )
 				f195_local14.movieName = nil
 				table.insert( f195_local2, {
-					featureTitle = 0x0,
+					featureTitle = "",
 					streamName = f195_local14.name,
-					streamSubtitle = 0x0,
+					streamSubtitle = "",
 					streamImage = f195_local14.icon,
 					price = f195_local14.price,
 					active = false,
@@ -5171,27 +5171,27 @@ DataSources.SupplyChainStreams = ListHelper_SetupDataSource( "SupplyChainStreams
 				CoD.perController[f195_arg0].upsellContractRowIndex = #f195_local2
 			end
 		elseif not f195_local12 then
-			f195_local14 = Engine[0xE00B2F29271C60B]( 0x6AD25C2CB3D0808 )
+			f195_local14 = Engine[0xE00B2F29271C60B]( "loot_contract_completed" )
 			if f195_local14 then
 				f195_local15 = false
-				f195_local16 = f195_local14[0x33645EBD6764BD9] or f195_local14[0x9E07BD5D1AC62D3]
+				f195_local16 = f195_local14.streamdisplaytitle or f195_local14[0x9E07BD5D1AC62D3]
 				table.insert( f195_local2, {
-					featureTitle = 0x0,
-					streamName = 0x0,
-					streamSubtitle = 0x0,
-					streamImage = f195_local14["contracticon"],
+					featureTitle = "",
+					streamName = "",
+					streamSubtitle = "",
+					streamImage = f195_local14.contracticon,
 					price = 0,
 					active = true,
 					rarity = Enum.LootRarityType[0x8556B83CAD0D180],
 					timeRemaining = 0,
-					category = 0x0,
+					category = "",
 					contractTimerModel = CoD.ContractUtility.GetSoonestContractTimer( f195_arg0 ),
 					isUpsell = true,
 					isSpecialEvent = true,
 					isContract = true,
 					isContractComplete = f195_local15,
-					character = 0x0,
-					weaponRef = 0x0,
+					character = "",
+					weaponRef = "",
 					seasonal = false,
 					properties = nil
 				} )
@@ -5203,21 +5203,21 @@ DataSources.SupplyChainStreams = ListHelper_SetupDataSource( "SupplyChainStreams
 		for f195_local13 = 1, f195_local20, 1 do
 			local f195_local16 = f195_local13
 			table.insert( f195_local2, {
-				featureTitle = 0x0,
-				streamName = 0x0,
-				streamSubtitle = 0x0,
+				featureTitle = "",
+				streamName = "",
+				streamSubtitle = "",
 				streamImage = "blacktransparent",
 				price = 600,
 				active = false,
 				rarity = Enum.LootRarityType[0x8556B83CAD0D180],
-				category = 0x6A56A15E86A84F5,
+				category = "mpui/special_order",
 				timeRemaining = 0,
 				isUpsell = true,
 				isSpecialEvent = false,
 				isContract = false,
 				isContractComplete = false,
-				character = 0x0,
-				weaponRef = 0x0,
+				character = "",
+				weaponRef = "",
 				seasonal = false
 			} )
 		end
@@ -5333,7 +5333,7 @@ DataSources.LootTierItems = ListHelper_SetupDataSource( "LootTierItems", functio
 					end
 				end
 			end
-			if f199_local12.name ~= 0x0 then
+			if f199_local12.name ~= "" then
 				f199_local12.recentlyUnlocked = f199_local14
 			else
 				f199_local12.recentlyUnlocked = false
@@ -5377,12 +5377,12 @@ DataSources.LootTierLighthouseItems = ListHelper_SetupDataSource( "LootTierLight
 		local f202_local4 = f202_local3 + 24
 		local f202_local5 = {}
 		local f202_local6 = CoDShared.Loot.GetCurrentSeason()
-		if f202_local6 and f202_local6 ~= 0x0 then
+		if f202_local6 and f202_local6 ~= "" then
 			local f202_local7 = CoDShared.Loot.GetSeasonInfo( f202_local6 )
 			table.insert( f202_local5, f202_local7.id )
 		end
 		local f202_local7 = CoDShared.Loot.GetCurrentEventContract()
-		if f202_local7 and f202_local7 ~= 0x0 then
+		if f202_local7 and f202_local7 ~= "" then
 			local f202_local8 = CoDShared.Loot.GetContractInfo( f202_arg0, f202_local7 )
 			table.insert( f202_local5, f202_local8.id )
 		end
@@ -5480,7 +5480,7 @@ DataSourceHelpers.PerControllerDataSourceSetup( "TierPurchase", "TierPurchase", 
 		end
 		if CoD.BlackMarketUtility.IsEventActive() then
 			f206_local5 = CoD.BlackMarketUtility.GetEventName()
-			if f206_local5 ~= 0x0 and not CoD.BlackMarketUtility.IsItemPurchased( f206_arg1, CoD.BlackMarketTableUtility.GetContractId( f206_local5 ) ) then
+			if f206_local5 ~= "" and not CoD.BlackMarketUtility.IsItemPurchased( f206_arg1, CoD.BlackMarketTableUtility.GetContractId( f206_local5 ) ) then
 				f206_local4 = true
 			end
 		end
@@ -5593,9 +5593,9 @@ DataSources.ReservesPromoPopup = {
 		local f209_local2 = f209_local1:create( "title" )
 		f209_local2:set( f209_local0[0x5174E1CF5A020D4] )
 		f209_local2 = f209_local1:create( "desc" )
-		f209_local2:set( f209_local0[0x9B676C473E74B53] )
+		f209_local2:set( f209_local0.promopopupdesc )
 		f209_local2 = f209_local1:create( "image" )
-		f209_local2:set( f209_local0[0xCF52BD71B42A517] )
+		f209_local2:set( f209_local0.promopopupimage )
 		return f209_local1
 	end
 }
@@ -5879,7 +5879,7 @@ CoD.BlackMarketUtility.TriggerRevealAnimation = function ( f223_arg0, f223_arg1 
 		f223_local0 = f223_local0:create( "LootStreamProgress", true )
 		if f223_local0 and f223_local0.itemsEarned then
 			if f223_local0.itemsEarned:get() == 1 then
-				CoD.OverlayUtility.ShowToast( "BlackMarketLoot", Engine[0xF9F1239CFD921FE]( 0x908038B5F16904C, f223_local0.itemsEarned:get() ), "", nil )
+				CoD.OverlayUtility.ShowToast( "BlackMarketLoot", Engine[0xF9F1239CFD921FE]( "mpui/item_unlocked", f223_local0.itemsEarned:get() ), "", nil )
 			else
 				CoD.OverlayUtility.ShowToast( "BlackMarketLoot", Engine[0xF9F1239CFD921FE]( 0xD45D6D1C927E427, f223_local0.itemsEarned:get() ), "", nil )
 			end
@@ -5893,7 +5893,7 @@ CoD.BlackMarketUtility.TriggerRevealAnimation = function ( f223_arg0, f223_arg1 
 					if f223_local9 then
 						local f223_local10 = CoD.SafeGetModelValue( f223_local9, "recentlyUnlocked" )
 						local f223_local11 = CoD.SafeGetModelValue( f223_local9, "tier" )
-						if (f223_local10 or f223_local11 and f223_local11 == CoD.BlackMarketUtility.GetCurrentSeasonTier( f223_arg0 )) and CoD.SafeGetModelValue( f223_local9, "name" ) ~= 0x0 then
+						if (f223_local10 or f223_local11 and f223_local11 == CoD.BlackMarketUtility.GetCurrentSeasonTier( f223_arg0 )) and CoD.SafeGetModelValue( f223_local9, "name" ) ~= "" then
 							local f223_local12 = f223_local9:create( "playAnim" )
 							f223_local12:set( true )
 						end
@@ -6024,7 +6024,7 @@ CoD.BlackMarketUtility.CanPurchaseTiers = function ( f230_arg0 )
 		end
 		if CoD.BlackMarketUtility.IsEventActive() then
 			f230_local5 = CoD.BlackMarketUtility.GetEventName()
-			if f230_local5 ~= 0x0 and not CoD.BlackMarketUtility.IsItemPurchased( f230_arg0, CoD.BlackMarketTableUtility.GetContractId( f230_local5 ) ) then
+			if f230_local5 ~= "" and not CoD.BlackMarketUtility.IsItemPurchased( f230_arg0, CoD.BlackMarketTableUtility.GetContractId( f230_local5 ) ) then
 				f230_local4 = true
 			end
 		end
@@ -6078,7 +6078,7 @@ CoD.BlackMarketUtility.PurchaseTiers = function ( f231_arg0, f231_arg1, f231_arg
 				if f232_local4 ~= nil then
 					f232_local3:set( f232_local4 )
 				else
-					f232_local3:set( 0x0 )
+					f232_local3:set( "" )
 				end
 			end
 		end
@@ -6125,7 +6125,7 @@ CoD.BlackMarketUtility.PurchaseTiers = function ( f231_arg0, f231_arg1, f231_arg
 						f231_arg0:addElement( f231_arg0.redeemTiersTimer )
 					else
 						if f232_local3 then
-							f232_local3:set( 0x0 )
+							f232_local3:set( "" )
 						end
 						f231_arg0:setState( f231_arg2, "ErrorState" )
 					end
@@ -6366,7 +6366,7 @@ CoD.BlackMarketUtility.ItemUses3DPreview = function ( f254_arg0, f254_arg1 )
 end
 
 CoD.BlackMarketUtility.LootRarityToString = function ( f255_arg0 )
-	return CoD.BlackMarketUtility.LootRarityStrings[f255_arg0] or 0x0
+	return CoD.BlackMarketUtility.LootRarityStrings[f255_arg0] or ""
 end
 
 CoD.BlackMarketUtility.LootRarityToColor = function ( f256_arg0 )
@@ -6434,8 +6434,8 @@ CoD.BlackMarketUtility.GetSeasonCompleteImage = function ( f262_arg0 )
 	local f262_local0 = CoD.BlackMarketUtility.GetCurrentPostSeasonRef()
 	if f262_local0 then
 		local f262_local1 = Engine[0xE00B2F29271C60B]( f262_local0 )
-		if f262_local1 and f262_local1[0x22C49BD38F7A781] then
-			return f262_local1[0x22C49BD38F7A781]
+		if f262_local1 and f262_local1.postseasonpopupimage then
+			return f262_local1.postseasonpopupimage
 		end
 	end
 	return "blacktransparent"
@@ -6445,8 +6445,8 @@ CoD.BlackMarketUtility.GetSeasonCompleteTitle = function ( f263_arg0 )
 	local f263_local0 = CoD.BlackMarketUtility.GetCurrentPostSeasonRef()
 	if f263_local0 then
 		local f263_local1 = Engine[0xE00B2F29271C60B]( f263_local0 )
-		if f263_local1 and f263_local1[0x8CF2B49497D8762] then
-			return f263_local1[0x8CF2B49497D8762]
+		if f263_local1 and f263_local1.postseasonpopuptitle then
+			return f263_local1.postseasonpopuptitle
 		end
 	end
 	return f263_arg0
@@ -6456,18 +6456,18 @@ CoD.BlackMarketUtility.GetSeasonCompleteMessage = function ( f264_arg0 )
 	local f264_local0 = CoD.BlackMarketUtility.GetCurrentPostSeasonRef()
 	if f264_local0 then
 		local f264_local1 = Engine[0xE00B2F29271C60B]( f264_local0 )
-		if f264_local1 and f264_local1[0x6339D994438CA53] then
-			return f264_local1[0x6339D994438CA53]
+		if f264_local1 and f264_local1.postseasonpopupmessage then
+			return f264_local1.postseasonpopupmessage
 		end
 	end
-	return 0x0
+	return ""
 end
 
 CoD.BlackMarketUtility.GetSeasonCompleteMessageColor = function ( f265_arg0 )
 	local f265_local0 = CoD.BlackMarketUtility.GetCurrentPostSeasonRef()
 	if f265_local0 then
 		local f265_local1 = Engine[0xE00B2F29271C60B]( f265_local0 )
-		if f265_local1 and f265_local1[0x9014841451A5872] == 0xB5DD0ABBC6FC1E4 then
+		if f265_local1 and f265_local1[0x9014841451A5872] == "black" then
 			return 0, 0, 0
 		end
 	end
@@ -6667,7 +6667,7 @@ CoD.BlackMarketUtility.SendWeaponUpdate = function ( f279_arg0, f279_arg1, f279_
 		local f279_local2 = 0
 		if f279_arg4 then
 			f279_local1 = Engine.TableLookup( CoD.CACUtility.CamoOptionsTable, Enum[0x5DD5CC8AEA7314B][0xA6342D60A0D5AAE], Enum[0x5DD5CC8AEA7314B][0xAA94CABDA68EB21], f279_arg4 )
-			if f279_arg2.itemCategory:get() == 0xF6D84B91339C8B or f279_arg2.itemCategory:get() == 0x6A7C5E0DBF9ED32 or f279_arg2.itemCategory:get() == 0xA72AF2C19CEFB8C then
+			if f279_arg2.itemCategory:get() == "reactive_camo" or f279_arg2.itemCategory:get() == "single_reactive_camo" or f279_arg2.itemCategory:get() == "reactive_camo_bundle" then
 				f279_local2 = tonumber( CoD.CACUtility.AdjustCamoIfSignatureCamo( f279_arg1, tostring( f279_local1 ), true ) )
 			end
 		end
@@ -6675,21 +6675,21 @@ CoD.BlackMarketUtility.SendWeaponUpdate = function ( f279_arg0, f279_arg1, f279_
 			f279_local0 = f279_arg3.modelIdx
 		end
 		if f279_local0 then
-			if f279_arg2.itemCategory:get() == 0xB0C9EF63048F282 or f279_arg2.itemCategory:get() == 0xA40B9ADF060FA4A or f279_arg2.itemCategory:get() == "weapon_camo_bundle" or f279_arg2.itemCategory:get() == 0xFBA128D08C2E117 then
+			if f279_arg2.itemCategory:get() == "weapon_camo" or f279_arg2.itemCategory:get() == "single_camo" or f279_arg2.itemCategory:get() == "weapon_camo_bundle" or f279_arg2.itemCategory:get() == 0xFBA128D08C2E117 then
 				Engine.SendClientScriptNotify( f279_arg1, "QMWeaponUpdate", {
 					weapon_ref = f279_arg3.ref,
 					model_idx = f279_local0,
 					activeCamoIndex = nil,
 					camoIndex = f279_local1
 				} )
-			elseif f279_arg2.itemCategory:get() == 0xF6D84B91339C8B or f279_arg2.itemCategory:get() == 0x6A7C5E0DBF9ED32 or f279_arg2.itemCategory:get() == 0xA72AF2C19CEFB8C then
+			elseif f279_arg2.itemCategory:get() == "reactive_camo" or f279_arg2.itemCategory:get() == "single_reactive_camo" or f279_arg2.itemCategory:get() == "reactive_camo_bundle" then
 				Engine.SendClientScriptNotify( f279_arg1, "QMWeaponUpdate", {
 					weapon_ref = f279_arg3.ref,
 					model_idx = f279_local0,
 					activeCamoIndex = f279_local2,
 					camoIndex = f279_local1
 				} )
-			elseif f279_arg2.itemCategory:get() == 0xD74CF5A087733F7 or f279_arg2.itemCategory:get() == 0x44036371584190 or f279_arg2.itemCategory:get() == "mk2" then
+			elseif f279_arg2.itemCategory:get() == "mastercraft" or f279_arg2.itemCategory:get() == "mastercraft_bundle" or f279_arg2.itemCategory:get() == "mk2" then
 				Engine.SendClientScriptNotify( f279_arg1, "QMWeaponUpdate", {
 					weapon_ref = f279_arg3.ref,
 					model_idx = f279_local0,
@@ -6714,7 +6714,7 @@ CoD.BlackMarketUtility.SendSignatureWeaponUpdate = function ( f280_arg0, f280_ar
 		if not f280_arg0._showingMastercraft then
 			f280_local0 = f280_arg3.signatureIndex
 			if not f280_arg0._skipSignatureWeaponStringOverride then
-				f280_arg2.category:set( 0xD4314C41E9C9CFC )
+				f280_arg2.category:set( "mpui/bm_signature_weapon" )
 				if f280_arg2.isContract == nil or f280_arg2.isContract:get() == false then
 					f280_arg2.name:set( f280_arg3.displayNameRef )
 				end
@@ -6722,7 +6722,7 @@ CoD.BlackMarketUtility.SendSignatureWeaponUpdate = function ( f280_arg0, f280_ar
 		else
 			f280_local0 = f280_arg3.mastercraftIndex
 			if not f280_arg0._skipSignatureWeaponStringOverride then
-				f280_arg2.category:set( 0x81782ED786B4A3 )
+				f280_arg2.category:set( "weapon_options/mastercraft" )
 				if f280_arg2.isContract == nil or f280_arg2.isContract:get() == false then
 					f280_arg2.name:set( f280_arg3.mastercraftNameRef )
 				end
@@ -6969,7 +6969,7 @@ CoD.BlackMarketUtility.CanToggleSignatureWeapon = function ( f299_arg0 )
 	end
 	if f299_local0 ~= nil then
 		local f299_local1 = CoD.SafeGetModelValue( f299_local0:getModel(), "weaponRef" )
-		return f299_local1 and f299_local1 ~= 0x0
+		return f299_local1 and f299_local1 ~= ""
 	else
 		return false
 	end
@@ -7184,7 +7184,7 @@ CoD.BlackMarketUtility.ShowTierSkipNotification = function ( f329_arg0, f329_arg
 	if f329_local1 then
 		f329_local1 = f329_local0.mode:get()
 	end
-	if LuaUtils.GetEModeForLobbyMainMode( f329_local1 ) ~= Enum.eModes[0x60063C67132EB69] then
+	if LuaUtils.GetEModeForLobbyMainMode( f329_local1 ) ~= Enum.eModes.mode_campaign then
 		if f329_arg2._tierSkipNotifyTimer then
 			f329_arg2._tierSkipNotifyTimer:close()
 			f329_arg2._tierSkipNotifyTimer = nil
@@ -7321,7 +7321,7 @@ CoD.BlackMarketUtility.HasFocusedTierValue = function ( f338_arg0, f338_arg1 )
 		local f338_local3 = CoD.BlackMarketUtility.GetCurrentSeasonTier( f338_arg0 )
 		if CoD.BlackMarketUtility.IsEventActive() then
 			local f338_local4 = CoD.BlackMarketUtility.GetEventName()
-			if f338_local4 ~= 0x0 and not Engine[0xD2AC9EFD614FC94]( f338_arg0, f338_local4, 1 ) then
+			if f338_local4 ~= "" and not Engine[0xD2AC9EFD614FC94]( f338_arg0, f338_local4, 1 ) then
 				Engine[0x165DC7DAA0794C]( f338_arg0, f338_local4, 1 )
 				return false
 			end
@@ -7357,7 +7357,7 @@ CoD.BlackMarketUtility.GetFocusedTierValue = function ( f339_arg0, f339_arg1 )
 		local f339_local3 = CoD.BlackMarketUtility.GetCurrentSeasonTier( f339_arg0 )
 		if CoD.BlackMarketUtility.IsEventActive() then
 			local f339_local4 = CoD.BlackMarketUtility.GetEventName()
-			if f339_local4 ~= 0x0 and not Engine[0xD2AC9EFD614FC94]( f339_arg0, f339_local4, 1 ) then
+			if f339_local4 ~= "" and not Engine[0xD2AC9EFD614FC94]( f339_arg0, f339_local4, 1 ) then
 				Engine[0x165DC7DAA0794C]( f339_arg0, f339_local4, 1 )
 				return 
 			end
@@ -7402,7 +7402,7 @@ CoD.BlackMarketUtility.GetCurrentBlackMarketSeasonName = function ( f342_arg0 )
 			return f342_local1
 		end
 	end
-	f342_local1 = 0x0
+	f342_local1 = ""
 end
 
 CoD.BlackMarketUtility.IsCurrentLootSeasonAtLeast = function ( f343_arg0 )
@@ -7412,9 +7412,9 @@ end
 CoD.BlackMarketUtility.AppendCurrentSeasonTier = function ( f344_arg0 )
 	local f344_local0 = f344_arg0
 	if 0 < f344_local0 then
-		return ConvertToUpperString( Engine[0xF9F1239CFD921FE]( 0x67FCD52A00FD5CF, tostring( f344_local0 ) ) )
+		return ConvertToUpperString( Engine[0xF9F1239CFD921FE]( "menu/tier", tostring( f344_local0 ) ) )
 	else
-		return LocalizeToUpperString( 0xEF5B1CC076A99BC )
+		return LocalizeToUpperString( "menu/tier_single" )
 	end
 end
 
@@ -7422,14 +7422,14 @@ CoD.BlackMarketUtility.GetCurrentBlackMarketSeasonIconSmall = function ( f345_ar
 	local f345_local0 = Engine[0xE00B2F29271C60B]( CoDShared.Loot.GetCurrentSeason() )
 	local f345_local1
 	if f345_local0 then
-		f345_local1 = f345_local0[0xB87A822F3633BF1]
+		f345_local1 = f345_local0.contracticonsmall
 		if not f345_local1 then
 		
 		else
 			return f345_local1
 		end
 	end
-	f345_local1 = 0x0
+	f345_local1 = ""
 end
 
 CoD.BlackMarketUtility.GetCurrentBlackMarketBannerImage = function ( f346_arg0 )
@@ -7443,22 +7443,22 @@ CoD.BlackMarketUtility.GetCurrentBlackMarketBannerImage = function ( f346_arg0 )
 			return f346_local1
 		end
 	end
-	f346_local1 = 0x0
+	f346_local1 = ""
 end
 
 CoD.BlackMarketUtility.GetHalloweenBannerText = function ( f347_arg0 )
-	if Engine[0xC53F8D38DF9042B]( Dvar[0xA7588CE8BBBC25D]:get() ) == 0xEF3BA6380C215FA then
+	if Engine[0xC53F8D38DF9042B]( Dvar[0xA7588CE8BBBC25D]:get() ) == "loot_contract_halloween" then
 		return 0xB81B691A5FAA21D
 	else
-		return 0x0
+		return ""
 	end
 end
 
 CoD.BlackMarketUtility.GetCurrentBlackMarketBannerString = function ( f348_arg0 )
-	if f348_arg0 == 0x0 or f348_arg0 == "" then
+	if f348_arg0 == "" or f348_arg0 == "" then
 		local f348_local0 = CoD.ContractUtility.GetPurchasableContractHashes()
 		if f348_local0 and #f348_local0 > 0 then
-			return LocalizeToUpperString( 0xCABB0A804C32CEE ) .. "\n" .. LocalizeToUpperString( CoD.ContractUtility.GetContractDisplayNameRef( f348_local0[1] ) )
+			return LocalizeToUpperString( "menu/contracts" ) .. "\n" .. LocalizeToUpperString( CoD.ContractUtility.GetContractDisplayNameRef( f348_local0[1] ) )
 		else
 			return ""
 		end
@@ -7467,8 +7467,8 @@ CoD.BlackMarketUtility.GetCurrentBlackMarketBannerString = function ( f348_arg0 
 	if not f348_local0 then
 		return ""
 	end
-	local f348_local1 = Engine[0xF9F1239CFD921FE]( f348_local0[0x8A4C09FA960679A] or 0x0 )
-	if f348_local0[0x21909CA2BFCBE53] and f348_local0[0x21909CA2BFCBE53] ~= 0x0 then
+	local f348_local1 = Engine[0xF9F1239CFD921FE]( f348_local0[0x8A4C09FA960679A] or "" )
+	if f348_local0[0x21909CA2BFCBE53] and f348_local0[0x21909CA2BFCBE53] ~= "" then
 		f348_local1 = f348_local1 .. "\n" .. Engine[0xF9F1239CFD921FE]( f348_local0[0x21909CA2BFCBE53] )
 	end
 	return f348_local1
@@ -7770,7 +7770,7 @@ CoD.BlackMarketUtility.OpenNonCPBribe = function ( f371_arg0, f371_arg1 )
 	CoD.BlackMarketUtility.RedeemNonCPLootBribe( f371_arg0, f371_arg1._bribeName )
 	local f371_local1 = DataSources.ReservesLootPurchaseCase.getModel( f371_arg0 )
 	for f371_local5, f371_local6 in ipairs( CoDShared.Loot.Crates ) do
-		if f371_arg1._bribeName == f371_local6 and f371_local6 ~= 0x4DE2B5257791347 then
+		if f371_arg1._bribeName == f371_local6 and f371_local6 ~= "no_dupe_crate" then
 			f371_local1 = DataSources.ReservesLootBundleCrate.getModel( f371_arg0 )
 		end
 	end
@@ -7789,36 +7789,36 @@ CoD.BlackMarketUtility.OpenNonCPBribe = function ( f371_arg0, f371_arg1 )
 end
 
 CoD.BlackMarketUtility.GetBribeAsset = function ( f372_arg0, f372_arg1 )
-	local f372_local0 = 0x0
-	local f372_local1 = 0x0
-	local f372_local2 = 0x0
-	local f372_local3 = 0x0
-	local f372_local4 = 0x0
-	local f372_local5 = 0x0
-	local f372_local6 = 0x0
+	local f372_local0 = ""
+	local f372_local1 = ""
+	local f372_local2 = ""
+	local f372_local3 = ""
+	local f372_local4 = ""
+	local f372_local5 = ""
+	local f372_local6 = ""
 	local f372_local7 = ""
 	local f372_local8 = Engine[0xE00B2F29271C60B]( f372_arg1 )
 	if f372_local8 then
 		if f372_local8[0x2F2C20443A73EAC] then
 			f372_local0 = f372_local8[0x2F2C20443A73EAC]
 		end
-		if f372_local8[0x4E441D88E82CD02] then
-			f372_local1 = f372_local8[0x4E441D88E82CD02]
+		if f372_local8.popupImage then
+			f372_local1 = f372_local8.popupImage
 		end
-		if f372_local8["buttonimage"] then
-			f372_local2 = f372_local8["buttonimage"]
+		if f372_local8.buttonimage then
+			f372_local2 = f372_local8.buttonimage
 		end
-		if f372_local8[0x7F34532ED73FB84] then
-			f372_local3 = f372_local8[0x7F34532ED73FB84]
+		if f372_local8.stackimage then
+			f372_local3 = f372_local8.stackimage
 		end
-		if f372_local8[0xE9E2E7DDFE988B5] then
-			f372_local4 = f372_local8[0xE9E2E7DDFE988B5]
+		if f372_local8.stacktallimage then
+			f372_local4 = f372_local8.stacktallimage
 		end
-		if f372_local8[0xB077B413377335] then
-			f372_local6 = f372_local8[0xB077B413377335]
+		if f372_local8.nametext then
+			f372_local6 = f372_local8.nametext
 		end
-		if f372_local8[0xE23B52CBA8DDAD7] then
-			f372_local7 = Engine[0xF9F1239CFD921FE]( f372_local8[0xE23B52CBA8DDAD7] )
+		if f372_local8.desctext then
+			f372_local7 = Engine[0xF9F1239CFD921FE]( f372_local8.desctext )
 		end
 		return {
 			primaryImage = f372_local0,
@@ -7828,7 +7828,7 @@ CoD.BlackMarketUtility.GetBribeAsset = function ( f372_arg0, f372_arg1 )
 			stackTallImage = f372_local4,
 			name = f372_local6,
 			desc = f372_local7,
-			category = 0x97744D71B184F53
+			category = "mpui/bm_bribe"
 		}
 	else
 		return nil
@@ -8062,12 +8062,12 @@ DataSources.ReserveDealsList = ListHelper_SetupDataSource( "ReserveDealsList", f
 		if f382_local17 and f382_local16 then
 			f382_local7 = CoD.BlackMarketUtility.GetItemShopDatasourceModelValues( f382_arg0, f382_local17 )
 			if f382_local7 then
-				if f382_local16.category == 0x91F431E247EFC65 then
+				if f382_local16.category == "bribe" then
 					for f382_local11, f382_local12 in pairs( CoD.BlackMarketUtility.GetBribeAsset( f382_arg0, f382_local15 ) ) do
 						f382_local7[f382_local11] = f382_local12
 					end
 					f382_local7.discountList = true
-				elseif f382_local16.category == 0xF75BEEE07C5BC7D then
+				elseif f382_local16.category == "special_bundle" then
 					for f382_local11, f382_local12 in pairs( CoD.BlackMarketUtility.GetSpecialBundleInfo( f382_arg0, f382_local15 ) ) do
 						f382_local7[f382_local11] = f382_local12
 					end
@@ -8163,14 +8163,14 @@ DataSources.DiscountList = ListHelper_SetupDataSource( "DiscountList", function 
 					purchaseReservesItem = true,
 					isCrateItem = true,
 					desc = Engine[0xF9F1239CFD921FE]( f389_local2.desc ),
-					categoryString = 0x0,
+					categoryString = "",
 					mainExtraText = "",
-					subExtraText = 0x0,
+					subExtraText = "",
 					discountIndx = 0,
 					openCrate = 0,
 					bundleTitleRef = f389_local2.name,
 					bundleImage = f389_local2.buttonImage,
-					toolTipText = 0x0
+					toolTipText = ""
 				}
 			} )
 		else
@@ -8189,14 +8189,14 @@ DataSources.DiscountList = ListHelper_SetupDataSource( "DiscountList", function 
 					purchaseReservesItem = true,
 					isCrateItem = true,
 					desc = Engine[0xF9F1239CFD921FE]( f389_local2.desc ),
-					categoryString = 0x0,
+					categoryString = "",
 					mainExtraText = "",
-					subExtraText = 0x0,
+					subExtraText = "",
 					discountIndx = 0,
 					openCrate = 0,
 					bundleTitleRef = f389_local2.name,
 					bundleImage = f389_local2.buttonImage,
-					toolTipText = 0x0
+					toolTipText = ""
 				}
 			} )
 		end
@@ -8245,7 +8245,7 @@ DataSourceHelpers.PerControllerDataSourceSetup( "FreeBundle", "FreeBundle", func
 			f393_local2 = f393_arg0:create( "primaryImage" )
 			f393_local2:set( f393_local1.primaryImage )
 			f393_local2 = f393_arg0:create( "itemCategory" )
-			f393_local2:set( 0xF75BEEE07C5BC7D )
+			f393_local2:set( "special_bundle" )
 			f393_local2 = f393_arg0:create( "skuID" )
 			f393_local2:set( Dvar[0x13CC625DF35C3B6]:get() or "0" )
 			f393_local2 = f393_arg0:create( "percentOff" )
@@ -8296,7 +8296,7 @@ end
 
 CoD.BlackMarketUtility.OpenCrateByCurrency = function ( f396_arg0, f396_arg1 )
 	local f396_local0 = 0
-	local f396_local1 = Engine[0x9E5BE3B4BBA4E0E]( 0x9524BBFBADB78CE ) and 0x7D5A898E7F617AA or 0x148EA9EC3E2DC60
+	local f396_local1 = Engine[0x9E5BE3B4BBA4E0E]( 0x9524BBFBADB78CE ) and "half_off_crate" or "crate"
 	for f396_local6, f396_local7 in ipairs( CoD.BlackMarketTableUtility.GetRedeemableCPBribes( f396_arg0 ) ) do
 		if f396_local7.name == f396_local1 then
 			f396_local0 = f396_local7.lootRule
@@ -8315,7 +8315,7 @@ end
 CoD.BlackMarketUtility.OpenNoDupeCrateWithCases = function ( f397_arg0 )
 	local f397_local0 = 0
 	for f397_local5, f397_local6 in ipairs( CoD.BlackMarketTableUtility.GetRedeemableNonCPBribes( f397_arg0 ) ) do
-		if f397_local6.name == 0x4DE2B5257791347 then
+		if f397_local6.name == "no_dupe_crate" then
 			f397_local0 = f397_local6.lootRule
 			local f397_local4 = Engine[0x6C232D7031CE1CF]( f397_arg0, f397_local0, CoDShared.Loot.GetBribePayload( f397_arg0, f397_local6.currency, f397_local0 ) )
 			Engine.SendClientScriptNotify( f397_arg0, "BlackJackReserve", {
@@ -8349,9 +8349,9 @@ CoD.BlackMarketUtility.OpenBlackjackReservesAndItemPurchaseOverlay = function ( 
 end
 
 CoD.BlackMarketUtility.LootPurchaseCaseModelValues = {
-	name = 0x0,
+	name = "",
 	price = 0,
-	desc = 0x0,
+	desc = "",
 	isBundleCrate = false,
 	isCrateItem = false,
 	primaryImage = "blacktransparent",
@@ -8361,17 +8361,17 @@ CoD.BlackMarketUtility.LootPurchaseCrateModelValues = {
 	name = 0x83A7EF42505FCE5,
 	desc = 0x439483603981EF,
 	isCrateItem = true,
-	image = 0x58C031F24A98707,
-	primaryImage = 0x6511C5F4F8B80F3,
+	image = "ui_icon_blackmarket_reserves_crate_large_square",
+	primaryImage = "uie_ui_menu_blackmarket_blackjack_single_crate",
 	popupImage = "ui_icon_blackmarket_reserves_crate_large",
-	buttonImage = 0x703EE51FECA8823,
+	buttonImage = "uie_ui_menu_blackmarket_crates_button",
 	percentOff = 0
 }
 CoD.BlackMarketUtility.HalfOffLootPurchaseCrateModelValues = {
 	name = 0x83A7EF42505FCE5,
 	desc = 0x439483603981EF,
 	isCrateItem = true,
-	image = 0x58C031F24A98707,
+	image = "ui_icon_blackmarket_reserves_crate_large_square",
 	primaryImage = 0xC9248138678C017,
 	popupImage = "ui_icon_blackmarket_reserves_crate_large",
 	buttonImage = 0x9789792C2B80FF,
@@ -8383,8 +8383,8 @@ CoD.BlackMarketUtility.CrateBundles = {
 		expKey = "exp10And2BundleOn",
 		name = Engine[0xF9F1239CFD921FE]( 0x808C02A0C0BB64D, 10, 2 ),
 		desc = Engine[0xF9F1239CFD921FE]( 0x30D04B9A9BC6DCC, 10, 2 ),
-		primaryImage = 0x1D3F93B1DD00AA9,
-		popupImage = 0x3E9DDDDAC40B178,
+		primaryImage = "ui_icon_blackmarket_reserves_bonus_crates_2",
+		popupImage = "ui_icon_blackmarket_reserves_bundle_crates_10_confirm",
 		isCrateItem = false,
 		isReservesLootPurchaseCrateBundle = true,
 		skuId = 500401,
@@ -8395,8 +8395,8 @@ CoD.BlackMarketUtility.CrateBundles = {
 		dvar = 0x1E792E2BD77172F,
 		name = Engine[0xF9F1239CFD921FE]( 0x808C02A0C0BB64D, 5, 1 ),
 		desc = Engine[0xF9F1239CFD921FE]( 0x30D04B9A9BC6DCC, 5, 1 ),
-		primaryImage = 0x5136C8532EF6551,
-		popupImage = 0xF655E2E8A6A4802,
+		primaryImage = "ui_icon_blackmarket_reserves_bundle_crates_5",
+		popupImage = "ui_icon_blackmarket_reserves_bundle_crates_5_confirm",
 		isCrateItem = false,
 		isReservesLootPurchaseCrateBundle = true,
 		skuId = 500400,
@@ -8407,8 +8407,8 @@ CoD.BlackMarketUtility.CrateBundles = {
 		dvar = 0x163578955C48A9B,
 		name = Engine[0xF9F1239CFD921FE]( 0x808C02A0C0BB64D, 10, 10 ),
 		desc = Engine[0xF9F1239CFD921FE]( 0x301B8AB07202897, 10, 10, 5 ),
-		primaryImage = 0xB310673A8798EE0,
-		popupImage = 0x3E9DDDDAC40B178,
+		primaryImage = "ui_icon_blackmarket_reserves_bonus_crates_10",
+		popupImage = "ui_icon_blackmarket_reserves_bundle_crates_10_confirm",
 		isCrateItem = false,
 		isReservesLootPurchaseCrateBundle = true,
 		skuId = 500406,
@@ -8421,8 +8421,8 @@ CoD.BlackMarketUtility.CrateBundles = {
 		expKey = "convenienceBundleOn",
 		name = Engine[0xF9F1239CFD921FE]( 0x41EC0C908CFFDA, 10 ),
 		desc = Engine[0xF9F1239CFD921FE]( 0x1C1D12890A8F3FD, 10 ),
-		primaryImage = 0xF745F558CD4D077,
-		popupImage = 0x3E9DDDDAC40B178,
+		primaryImage = "ui_icon_blackmarket_reserves_bundle_crates_10",
+		popupImage = "ui_icon_blackmarket_reserves_bundle_crates_10_confirm",
 		isCrateItem = false,
 		isReservesLootPurchaseCrateBundle = true,
 		skuId = 500404,
@@ -8434,7 +8434,7 @@ CoD.BlackMarketUtility.CrateBundles = {
 		name = Engine[0xF9F1239CFD921FE]( 0x91C3D56DC3A34AC, 10 ),
 		desc = Engine[0xF9F1239CFD921FE]( 0xB3B24D245052AFB, 10 ),
 		primaryImage = 0xB5F4CE08C5B0187,
-		popupImage = 0x3E9DDDDAC40B178,
+		popupImage = "ui_icon_blackmarket_reserves_bundle_crates_10_confirm",
 		isCrateItem = false,
 		isReservesLootPurchaseCrateBundle = true,
 		skuId = 500407,
@@ -8445,8 +8445,8 @@ CoD.BlackMarketUtility.CrateBundles = {
 		dvar = 0xBDDD81D377BEF96,
 		name = Engine[0xF9F1239CFD921FE]( 0x41EC0C908CFFDA, 100 ),
 		desc = Engine[0xF9F1239CFD921FE]( 0x1C1D12890A8F3FD, 100 ),
-		primaryImage = 0xDDCC687468DAB70,
-		popupImage = 0x3E9DDDDAC40B178,
+		primaryImage = "ui_icon_blackmarket_reserves_bonus_crates_100",
+		popupImage = "ui_icon_blackmarket_reserves_bundle_crates_10_confirm",
 		isCrateItem = false,
 		isReservesLootPurchaseCrateBundle = true,
 		skuId = 500408,
@@ -8457,8 +8457,8 @@ CoD.BlackMarketUtility.CrateBundles = {
 		dvar = 0xFB1611BBD20C8,
 		name = Engine[0xF9F1239CFD921FE]( 0xB8CE1EFC822B9D9, 5, 5 ),
 		desc = Engine[0xF9F1239CFD921FE]( 0xD09745D293A1FB0, 5, 5 ),
-		primaryImage = 0xF1DFF8758FEB5C4,
-		popupImage = 0xF655E2E8A6A4802,
+		primaryImage = "ui_icon_blackmarket_reserves_bonus_crates_5_5",
+		popupImage = "ui_icon_blackmarket_reserves_bundle_crates_5_confirm",
 		isCrateItem = false,
 		isReservesLootPurchaseCrateBundle = true,
 		skuId = 500409,
@@ -8469,8 +8469,8 @@ CoD.BlackMarketUtility.CrateBundles = {
 		dvar = 0xE2193834F14DB57,
 		name = Engine[0xF9F1239CFD921FE]( 0xB8CE1EFC822B9D9, 10, 20 ),
 		desc = Engine[0xF9F1239CFD921FE]( 0xD09745D293A1FB0, 10, 20 ),
-		primaryImage = 0xB7BDD54EFBD8B27,
-		popupImage = 0x3E9DDDDAC40B178,
+		primaryImage = "ui_icon_blackmarket_reserves_bonus_crates_10_20",
+		popupImage = "ui_icon_blackmarket_reserves_bundle_crates_10_confirm",
 		isCrateItem = false,
 		isReservesLootPurchaseCrateBundle = true,
 		skuId = 500410,
@@ -8655,17 +8655,17 @@ DataSources.ReservesNoDupesCrate = {
 	prepare = function ( f411_arg0 )
 		local f411_local0 = Engine.GetModelForController( f411_arg0 )
 		f411_local0 = f411_local0:create( "ReservesNoDupesCrate" )
-		local f411_local1 = CoD.BlackMarketUtility.GetBribeAsset( f411_arg0, 0x4DE2B5257791347 )
+		local f411_local1 = CoD.BlackMarketUtility.GetBribeAsset( f411_arg0, "no_dupe_crate" )
 		if f411_local1 then
 			local f411_local2 = f411_local0:create( "name" )
-			f411_local2:set( f411_local1.name or 0x0 )
+			f411_local2:set( f411_local1.name or "" )
 			f411_local2 = f411_local0:create( "desc" )
-			f411_local2:set( f411_local1.desc or 0x0 )
+			f411_local2:set( f411_local1.desc or "" )
 			f411_local2 = f411_local0:create( "popupImage" )
 			f411_local2:set( f411_local1.popupImage or "blacktransparent" )
 			f411_local2 = f411_local0:create( "primaryImage" )
 			f411_local2:set( f411_local1.primaryImage or "blacktransparent" )
-			f411_local2 = CoD.BlackMarketTableUtility.GetBribeInformation( f411_arg0, 0x4DE2B5257791347 )
+			f411_local2 = CoD.BlackMarketTableUtility.GetBribeInformation( f411_arg0, "no_dupe_crate" )
 			if f411_local2 then
 				local f411_local3 = f411_local0:create( "price" )
 				f411_local3:set( f411_local2.price or 0 )
@@ -9040,7 +9040,7 @@ DataSources.PurchaseBribeStackButtons = ListHelper_SetupDataSource( "PurchaseBri
 	local f427_local5 = 0
 	local f427_local6 = false
 	local f427_local7 = false
-	local f427_local8 = 0x0
+	local f427_local8 = ""
 	local f427_local9 = false
 	if f427_arg1.menu and f427_arg1.menu.FullscreenPopupTemplate then
 		f427_local9 = f427_arg1.menu.FullscreenPopupTemplate.currentState == "FinishedState"
@@ -9215,12 +9215,12 @@ DataSources.ReservesSpecialContract = {
 		f434_local0 = f434_local0:create( "ReservesSpecialContract" )
 		local f434_local1 = false
 		local f434_local2 = false
-		local f434_local3 = 0x0
-		local f434_local4 = 0x0
+		local f434_local3 = ""
+		local f434_local4 = ""
 		local f434_local5 = ""
 		local f434_local6 = ""
-		local f434_local7 = 0x0
-		local f434_local8 = 0x0
+		local f434_local7 = ""
+		local f434_local8 = ""
 		local f434_local9 = "blacktransparent"
 		local f434_local10 = 0
 		local f434_local11 = ""
@@ -9239,7 +9239,7 @@ DataSources.ReservesSpecialContract = {
 			f434_local6 = f434_local17.specialContractDesc
 			f434_local7 = f434_local17.specialContractGoalType
 			f434_local14 = f434_local17.specialContractRewardImage
-			if f434_local17.reservesImage ~= 0x0 then
+			if f434_local17.reservesImage ~= "" then
 				f434_local9 = f434_local17.reservesImage
 			end
 			local f434_local18 = Engine[0x91AEA655912B0E8]( f434_arg0, f434_local16 )
@@ -9264,7 +9264,7 @@ DataSources.ReservesSpecialContract = {
 					end
 				end
 			end
-			if f434_local17.specialContractGoalUnit ~= 0x0 then
+			if f434_local17.specialContractGoalUnit ~= "" then
 				f434_local13 = Engine[0xF9F1239CFD921FE]( f434_local17.specialContractGoalUnit, f434_local12 )
 			end
 		end
@@ -9341,7 +9341,7 @@ DataSources.DupeMeterPulse = {
 }
 CoD.BlackMarketUtility.ReservesSpecialContractAppendCompletion = function ( f440_arg0, f440_arg1 )
 	if f440_arg0.complete and f440_arg0.complete:get() then
-		return Engine[0xF9F1239CFD921FE]( 0xCB33332BE6053BD, f440_arg1 )
+		return Engine[0xF9F1239CFD921FE]( "menu/special_contract_complete", f440_arg1 )
 	else
 		return Engine[0xF9F1239CFD921FE]( 0x47E99E2B20180F0, f440_arg1 )
 	end
@@ -9374,7 +9374,7 @@ CoD.BlackMarketUtility.SendItemShopViewEvent = function ( f443_arg0, f443_arg1, 
 		local f443_local3 = f443_local1.skuId and f443_local1.skuId:get() or 0
 		local f443_local4 = f443_local1.price and f443_local1.price:get() or 0
 		local f443_local5 = f443_local1.casePrice and f443_local1.casePrice:get() or 0
-		local f443_local6 = f443_local1.hashName and f443_local1.hashName:get() or 0x0
+		local f443_local6 = f443_local1.hashName and f443_local1.hashName:get() or ""
 		local f443_local7 = f443_arg2
 		if f443_local7 == "" then
 			f443_local7 = "viewed"
@@ -9426,15 +9426,15 @@ end
 CoD.BlackMarketUtility.MarkTabAsSeen = function ( f444_arg0, f444_arg1 )
 	if not f444_arg1._entrypoint then
 		local f444_local0 = Engine.CurrentSessionMode()
-		if f444_local0 == Enum.eModes[0x3723205FAE52C4A] then
+		if f444_local0 == Enum.eModes.mode_zombies then
 			f444_arg1._entrypoint = "zombies"
-		elseif f444_local0 == Enum.eModes[0x83EBA96F36BC4E5] then
+		elseif f444_local0 == Enum.eModes.mode_multiplayer then
 			if LuaUtils.IsArenaMode() then
 				f444_arg1._entrypoint = "arena"
 			else
 				f444_arg1._entrypoint = "multiplayer"
 			end
-		elseif f444_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+		elseif f444_local0 == Enum.eModes.mode_warzone then
 			f444_arg1._entrypoint = "warzone"
 		else
 			f444_arg1._entrypoint = "director"
@@ -9455,20 +9455,20 @@ end
 
 CoD.BlackMarketUtility.GetReservesRevealBlankItemValues = function ()
 	return {
-		name = 0x0,
+		name = "",
 		desc = "",
 		mainExtraText = "",
-		subExtraText = 0x0,
-		primaryImage = 0x0,
-		popupImage = 0x0,
-		detailsImage = 0x0,
-		category = 0x0,
-		shopCategory = 0x0,
+		subExtraText = "",
+		primaryImage = "",
+		popupImage = "",
+		detailsImage = "",
+		category = "",
+		shopCategory = "",
 		rarity = Enum.LootRarityType[0x8556B83CAD0D180],
-		character = 0x0,
+		character = "",
 		gesture_index = -1,
-		setBonusImage = 0x0,
-		setBonusName = 0x0,
+		setBonusImage = "",
+		setBonusName = "",
 		setComplete = false,
 		setNumOwned = 0,
 		setNumAvailable = 0,
@@ -9476,7 +9476,7 @@ CoD.BlackMarketUtility.GetReservesRevealBlankItemValues = function ()
 		isContrabandCrate = false,
 		isInSet = false,
 		isBundle = false,
-		itemCategory = 0x0,
+		itemCategory = "",
 		allowTogglePreview = false,
 		allowFrozenMoment = false,
 		seasonal = false,
@@ -9485,8 +9485,8 @@ CoD.BlackMarketUtility.GetReservesRevealBlankItemValues = function ()
 		reroll = false,
 		revealed = false,
 		hasRerolled = false,
-		weaponRef = 0x0,
-		toolTipText = 0x0
+		weaponRef = "",
+		toolTipText = ""
 	}
 end
 
@@ -9818,7 +9818,7 @@ CoD.BlackMarketUtility.GetBribeNameFromMenuProperty = function ( f462_arg0, f462
 			return f462_local1.name
 		end
 	end
-	return 0x0
+	return ""
 end
 
 CoD.BlackMarketUtility.GetBribeDescFromMenuProperty = function ( f463_arg0, f463_arg1, f463_arg2 )
@@ -9829,7 +9829,7 @@ CoD.BlackMarketUtility.GetBribeDescFromMenuProperty = function ( f463_arg0, f463
 			return f463_local1.desc
 		end
 	end
-	return 0x0
+	return ""
 end
 
 CoD.BlackMarketUtility.GetBribeImageFromMenuProperty = function ( f464_arg0, f464_arg1, f464_arg2 )
@@ -9846,7 +9846,7 @@ end
 CoD.BlackMarketUtility.RedeemNonCPLootBribe = function ( f465_arg0, f465_arg1 )
 	if f465_arg1 then
 		local f465_local0 = CoD.BlackMarketTableUtility.GetBribeInformation( f465_arg0, f465_arg1 )
-		if f465_local0.nonCpQuantity > 0 and f465_local0.name ~= 0x4DE2B5257791347 then
+		if f465_local0.nonCpQuantity > 0 and f465_local0.name ~= "no_dupe_crate" then
 			local f465_local1 = f465_local0.currency
 			if f465_local1 == "20" then
 				f465_local1 = f465_local0.optionalCurrency
@@ -9868,7 +9868,7 @@ CoD.BlackMarketUtility.GetFirstBribeNameByType = function ( f466_arg0, f466_arg1
 			end
 			if f466_arg1 == LuaEnum.BRIBE_TYPES.CRATE then
 				for f466_local6, f466_local7 in ipairs( CoDShared.Loot.Crates ) do
-					if f466_local10.name == f466_local7 and f466_local10.nonCpQuantity > 0 and f466_local7 ~= 0x4DE2B5257791347 then
+					if f466_local10.name == f466_local7 and f466_local10.nonCpQuantity > 0 and f466_local7 ~= "no_dupe_crate" then
 						return f466_local10.name
 					end
 				end
@@ -9904,7 +9904,7 @@ end
 
 CoD.BlackMarketUtility.RedeemNoDupeCrateBribe = function ( f468_arg0 )
 	for f468_local3, f468_local4 in ipairs( CoD.BlackMarketTableUtility.GetRedeemableNonCPBribes( f468_arg0 ) ) do
-		if f468_local4.nonCpQuantity > 0 and f468_local4.name == 0x4DE2B5257791347 then
+		if f468_local4.nonCpQuantity > 0 and f468_local4.name == "no_dupe_crate" then
 			CoD.BlackMarketUtility.OpenNoDupeCrateWithCases( f468_arg0 )
 			return 
 		end
@@ -10026,7 +10026,7 @@ CoD.BlackMarketUtility.ShowBribeNotSpentNotification = function ( f478_arg0 )
 end
 
 CoD.BlackMarketUtility.UpdateLootCaseBreadcrumbStatValue = function ( f479_arg0 )
-	local f479_local0 = CoD.BreadcrumbUtility.GetStorageClientBufferForPlayer( f479_arg0, Enum.eModes[0x83EBA96F36BC4E5] )
+	local f479_local0 = CoD.BreadcrumbUtility.GetStorageClientBufferForPlayer( f479_arg0, Enum.eModes.mode_multiplayer )
 	if f479_local0 and f479_local0.lastLootCaseCountSeen then
 		local f479_local1 = f479_local0.lastLootCaseCountSeen:get()
 		local f479_local2 = CoDShared.Loot.GetLootCaseOwnedCount( f479_arg0 )
@@ -10185,7 +10185,7 @@ CoD.BlackMarketUtility.ShowSpecialOrderBoostPercent = function ( f491_arg0, f491
 end
 
 CoD.BlackMarketUtility.ShouldShowLootCaseBreadcrumb = function ( f492_arg0 )
-	local f492_local0 = CoD.BreadcrumbUtility.GetStorageClientBufferForPlayer( f492_arg0, Enum.eModes[0x83EBA96F36BC4E5] )
+	local f492_local0 = CoD.BreadcrumbUtility.GetStorageClientBufferForPlayer( f492_arg0, Enum.eModes.mode_multiplayer )
 	if f492_local0 and f492_local0.lastLootCaseCountSeen then
 		return f492_local0.lastLootCaseCountSeen:get() < CoDShared.Loot.GetLootCaseOwnedCount( f492_arg0 )
 	else
@@ -10245,7 +10245,7 @@ CoD.BlackMarketUtility.GetCrateBundleBonusString = function ( f498_arg0 )
 end
 
 CoD.BlackMarketUtility.GetMPItemPreviewImage = function ( f499_arg0 )
-	local f499_local0 = Enum.eModes[0x83EBA96F36BC4E5]
+	local f499_local0 = Enum.eModes.mode_multiplayer
 	local f499_local1 = Engine[0xD97229B24C685D5]( f499_arg0, f499_local0 )
 	if not f499_local1 then
 		f499_local1 = shared.EmptyItemIndex
@@ -10259,7 +10259,7 @@ CoD.BlackMarketUtility.GetMPItemPreviewImage = function ( f499_arg0 )
 end
 
 CoD.BlackMarketUtility.GetMPItemPreviewImageLarge = function ( f500_arg0 )
-	local f500_local0 = Enum.eModes[0x83EBA96F36BC4E5]
+	local f500_local0 = Enum.eModes.mode_multiplayer
 	local f500_local1 = Engine[0xD97229B24C685D5]( f500_arg0, f500_local0 )
 	if not f500_local1 then
 		f500_local1 = shared.EmptyItemIndex
@@ -10392,7 +10392,7 @@ CoD.OverlayUtility.AddAutoDetectOverlay( "AllReservesOwned", {
 		return {
 			{
 				action = GoBack,
-				text = 0x5BE4A02B20F31F1
+				text = "menu/ok"
 			}
 		}
 	end
@@ -10445,9 +10445,9 @@ CoD.BlackMarketUtility.GetCurrentContractGameMode = function ( f517_arg0 )
 		return f517_local0
 	end
 	local f517_local1 = {
-		[Enum.eModes[0x83EBA96F36BC4E5]] = CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_MP,
-		[Enum.eModes[0xBF1DCC8138A9D39]] = CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_WZ,
-		[Enum.eModes[0x3723205FAE52C4A]] = CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_ZM
+		[Enum.eModes.mode_multiplayer] = CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_MP,
+		[Enum.eModes.mode_warzone] = CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_WZ,
+		[Enum.eModes.mode_zombies] = CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_ZM
 	}
 	local f517_local2 = CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_INVALID
 	if IsArenaMode() then
@@ -10460,7 +10460,7 @@ end
 
 CoD.BlackMarketUtility.GetContractStateTable = function ( f518_arg0, f518_arg1 )
 	if CoD.BaseUtility.IsDvarEnabled( "ui_fakeContracts" ) then
-		local f518_local0 = 0x222A2B349A0591D
+		local f518_local0 = "gamedata/lootcontracts/lootcontracts.csv"
 		local f518_local1 = Engine.GetTableRowCount( f518_local0 )
 		local f518_local2 = {}
 		for f518_local3 = 1, f518_local1, 1 do
@@ -10546,7 +10546,7 @@ DataSources.BlackMarketAvailableContracts = ListHelper_SetupDataSource( "BlackMa
 							if CoD.BaseUtility.IsDvarEnabled( "ui_fakeContracts" ) then
 								f520_local7.progress = math.random( 0, f520_local7.target )
 								f520_local7.progressRatio = f520_local7.progress / f520_local7.target
-								f520_local7.progressRatioText = Engine[0xF9F1239CFD921FE]( 0xE002923E581C57D, f520_local7.progress, f520_local7.target )
+								f520_local7.progressRatioText = Engine[0xF9F1239CFD921FE]( "blackmarket/x_of_y", f520_local7.progress, f520_local7.target )
 							end
 							if CoD.DoubleXPUtility.CurrentPlaylistHasDoubleXP( f520_arg0 ) then
 								f520_local7.xpReward = f520_local7.xpReward * 2
@@ -10580,7 +10580,7 @@ DataSources.BlackMarketActiveContracts = ListHelper_SetupDataSource( "BlackMarke
 					if CoD.BaseUtility.IsDvarEnabled( "ui_fakeContracts" ) then
 						f523_local0.progress = math.random( 0, f523_local0.target )
 						f523_local0.progressRatio = f523_local0.progress / f523_local0.target
-						f523_local0.progressRatioText = Engine[0xF9F1239CFD921FE]( 0xE002923E581C57D, f523_local0.progress, f523_local0.target )
+						f523_local0.progressRatioText = Engine[0xF9F1239CFD921FE]( "blackmarket/x_of_y", f523_local0.progress, f523_local0.target )
 					end
 					if CoD.DoubleXPUtility.CurrentPlaylistHasDoubleXP( f522_arg0 ) then
 						f523_local0.xpReward = f523_local0.xpReward * 2
@@ -10637,7 +10637,7 @@ CoD.BlackMarketUtility.GetContractsModelTable = function ( f524_arg0, f524_arg1 
 							if CoD.BaseUtility.IsDvarEnabled( "ui_fakeContracts" ) then
 								f524_local8.progress = math.random( 0, f524_local8.target )
 								f524_local8.progressRatio = f524_local8.progress / f524_local8.target
-								f524_local8.progressRatioText = Engine[0xF9F1239CFD921FE]( 0xE002923E581C57D, f524_local8.progress, f524_local8.target )
+								f524_local8.progressRatioText = Engine[0xF9F1239CFD921FE]( "blackmarket/x_of_y", f524_local8.progress, f524_local8.target )
 							end
 							if f524_arg1 == "dailyContracts" and f524_local2 == CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_ZM then
 								f524_local8.isDailyZombies = true
@@ -10684,7 +10684,7 @@ CoD.BlackMarketUtility.GetEmptyContractModelsTable = function ()
 	return {
 		id = 0,
 		contractMode = CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_INVALID,
-		displayName = 0x0,
+		displayName = "",
 		description = "",
 		contractIcon = "blacktransparent",
 		displayMode = 0,
@@ -10710,10 +10710,10 @@ CoD.BlackMarketUtility.GetContractModelsForContractInfo = function ( f526_arg0 )
 		return CoD.BlackMarketUtility.GetEmptyContractModelsTable()
 	end
 	local f526_local0 = {
-		[CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_MP] = 0x55D96CC762EABDD,
-		[CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_WL] = 0xCE36E3614BD4EAE,
-		[CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_WZ] = 0xA2DD20750465431,
-		[CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_ZM] = 0xB06081B8B4567F2
+		[CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_MP] = "menu/multiplayer",
+		[CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_WL] = "menu/arena",
+		[CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_WZ] = "menu/warzone",
+		[CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_ZM] = "menu/zombies"
 	}
 	local f526_local1 = f526_arg0.id
 	local f526_local2 = CoDShared.LootContracts.GetContractsGameMode( f526_local1 )
@@ -10729,12 +10729,12 @@ CoD.BlackMarketUtility.GetContractModelsForContractInfo = function ( f526_arg0 )
 	local f526_local9 = f526_arg0.reward.type
 	local f526_local10 = f526_arg0.reward.id
 	local f526_local11 = f526_arg0.progress
-	local f526_local12 = f526_local0[f526_local2] or 0x0
+	local f526_local12 = f526_local0[f526_local2] or ""
 	local f526_local13 = "blacktransparent"
 	local f526_local14 = ""
 	if f526_local9 == 1 then
 		if f526_local8 and f526_local8 > 0 then
-			f526_local13 = 0xD0C0C9F62783A5C
+			f526_local13 = "ui_icon_blackmarket_reserves_case_small"
 			local f526_local15
 			if f526_local8 > 1 then
 				f526_local15 = 0x8FD4B5379066B7A
@@ -10747,11 +10747,11 @@ CoD.BlackMarketUtility.GetContractModelsForContractInfo = function ( f526_arg0 )
 			f526_local15 = 0xC18D8F7DBC9D643
 		end
 	elseif f526_local9 == 3 and f526_local10 == "21" and f526_local8 and f526_local8 > 0 then
-		f526_local13 = 0x76C393335224D3F
+		f526_local13 = "ui_icon_nebulium_medium"
 		f526_local14 = Engine[0xF9F1239CFD921FE]( 0xF251843889153EE, f526_local8 )
 	end
 	local f526_local15 = "blacktransparent"
-	if f526_local6 == 0x5E8570DB713B763 then
+	if f526_local6 == "play" then
 		f526_local15 = CoD.ContractUtility.GetLootContractIcon( f526_local6, f526_local2 )
 	else
 		f526_local15 = CoD.ContractUtility.GetLootContractIcon( f526_local6, f526_local3 )
@@ -10768,7 +10768,7 @@ CoD.BlackMarketUtility.GetContractModelsForContractInfo = function ( f526_arg0 )
 		progress = f526_local11,
 		progressRatio = f526_local11 / f526_local4,
 		progressRatioIngame = 0,
-		progressRatioText = Engine[0xF9F1239CFD921FE]( 0xE002923E581C57D, f526_local11, f526_local4 ),
+		progressRatioText = Engine[0xF9F1239CFD921FE]( "blackmarket/x_of_y", f526_local11, f526_local4 ),
 		xpReward = f526_local7,
 		rewardType = f526_local9,
 		rewardAmount = f526_local8,
@@ -10796,7 +10796,7 @@ CoD.BlackMarketUtility.UpdateActiveContractSlotsModels = function ( f527_arg0, f
 					f528_local1.progress = f528_local4
 					f528_local1.progressRatio = f528_local4 / f528_local6
 					f528_local1.progressRatioIngame = f528_local5 / f528_local6
-					f528_local1.progressRatioText = Engine[0xF9F1239CFD921FE]( 0xE002923E581C57D, f528_local5, f528_local6 )
+					f528_local1.progressRatioText = Engine[0xF9F1239CFD921FE]( "blackmarket/x_of_y", f528_local5, f528_local6 )
 					f528_local1.completed = f528_local6 <= f528_local5
 				end
 			end
@@ -10828,7 +10828,7 @@ CoD.BlackMarketUtility.UpdateActiveContractSlotModelsForAAR = function ( f529_ar
 				f530_local1.progress = f530_local4
 				f530_local1.progressRatio = f530_local4 / f530_local6
 				f530_local1.progressRatioIngame = f530_local5 / f530_local6
-				f530_local1.progressRatioText = Engine[0xF9F1239CFD921FE]( 0xE002923E581C57D, f530_local5, f530_local6 )
+				f530_local1.progressRatioText = Engine[0xF9F1239CFD921FE]( "blackmarket/x_of_y", f530_local5, f530_local6 )
 				f530_local1.completed = f530_local6 <= f530_local5
 			end
 			LuaUtils.CreateModelsFromTable( f530_local0, f530_local1 )
@@ -10896,7 +10896,7 @@ CoD.BlackMarketUtility.SetupContractAvailabilityTimers = function ( f532_arg0, f
 				else
 					f532_local2:set( true )
 					CoD.OverlayUtility.ShowToast( "Content", Engine[0xF9F1239CFD921FE]( 0xA340B260A01392 ), "" )
-					Engine.PlaySound( "uin_points_confirmed" )
+					Engine.playsound( "uin_points_confirmed" )
 					CoD.BlackMarketUtility.SetupContractAvailabilityTimers( f532_arg0, f532_arg1 )
 				end
 				if f533_local1 > 0 then
@@ -10904,7 +10904,7 @@ CoD.BlackMarketUtility.SetupContractAvailabilityTimers = function ( f532_arg0, f
 				else
 					f532_local3:set( true )
 					CoD.OverlayUtility.ShowToast( "Content", Engine[0xF9F1239CFD921FE]( 0x3ADF7B901A76D85 ), "" )
-					Engine.PlaySound( "uin_points_confirmed" )
+					Engine.playsound( "uin_points_confirmed" )
 					CoD.BlackMarketUtility.SetupContractAvailabilityTimers( f532_arg0, f532_arg1 )
 				end
 			end )
@@ -10972,10 +10972,10 @@ CoD.BlackMarketUtility.GetContractHeaderStringFromLobbyMainMode = function ( f54
 	local f541_local1 = CoD.BlackMarketUtility.GetContractModeOverride( f541_arg0 )
 	if f541_local1 then
 		local f541_local2 = {
-			[CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_MP] = 0x55D96CC762EABDD,
-			[CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_WL] = 0xCE36E3614BD4EAE,
-			[CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_WZ] = 0xA2DD20750465431,
-			[CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_ZM] = 0xB06081B8B4567F2
+			[CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_MP] = "menu/multiplayer",
+			[CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_WL] = "menu/arena",
+			[CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_WZ] = "menu/warzone",
+			[CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_ZM] = "menu/zombies"
 		}
 		local f541_local3 = f541_local2[f541_local1]
 		if f541_local3 then
@@ -10983,7 +10983,7 @@ CoD.BlackMarketUtility.GetContractHeaderStringFromLobbyMainMode = function ( f54
 		end
 		return ToUpper( f541_local0 )
 	elseif LuaUtils.IsArenaMode() then
-		f541_local0 = LocalizeIntoStringIfNotEmpty( 0xAD22176FB154E74, 0xCE36E3614BD4EAE )
+		f541_local0 = LocalizeIntoStringIfNotEmpty( 0xAD22176FB154E74, "menu/arena" )
 	else
 		f541_local0 = LocalizeIntoStringIfNotEmpty( 0xAD22176FB154E74, CoD.DirectorUtility.ConvertLobbyMainModeToModeString( f541_arg1 ) )
 	end
@@ -11055,7 +11055,7 @@ DataSources.ContractReplacementOptions = ListHelper_SetupDataSource( "ContractRe
 	local f548_local0 = {}
 	table.insert( f548_local0, {
 		models = {
-			displayText = Engine.Localize( 0x5AB9ECEB1A97273 )
+			displayText = Engine.Localize( "menu/contract_activate" )
 		},
 		properties = {
 			action = function ( f549_arg0, f549_arg1, f549_arg2, f549_arg3 )
@@ -11199,7 +11199,7 @@ end, nil, nil, function ( f559_arg0, f559_arg1, f559_arg2 )
 end )
 DataSources.BribeMenuList = ListHelper_SetupDataSource( "BribeMenuList", function ( f561_arg0 )
 	local f561_local0 = {}
-	local f561_local1 = 0x80B19BEF737064E
+	local f561_local1 = "bribe_menu_asset"
 	local f561_local2 = CoD.BlackMarketUtility.GetBribeAsset( f561_arg0, f561_local1 )
 	local f561_local3 = CoD.BlackMarketTableUtility.GetWeaponBribeSelectionBribes( f561_arg0 )
 	local f561_local4 = f561_local3[1]
@@ -11233,10 +11233,10 @@ end, nil, nil, function ( f562_arg0, f562_arg1, f562_arg2 )
 end )
 DataSources.NoDupeBribeStack = ListHelper_SetupDataSource( "NoDupeBribeStack", function ( f564_arg0 )
 	local f564_local0 = {}
-	local f564_local1 = 0x4DE2B5257791347
+	local f564_local1 = "no_dupe_crate"
 	local f564_local2 = 0
 	if IsBooleanDvarSet( 0x48522A533967154 ) then
-		f564_local1 = 0x91701EF423E11E1
+		f564_local1 = "half_off_no_dupe_crate"
 		f564_local2 = 50
 	end
 	local f564_local3 = CoD.BlackMarketTableUtility.GetBribeInformation( f564_arg0, f564_local1 )
@@ -11301,7 +11301,7 @@ CoD.BlackMarketUtility.PurchaseAtPricePoint = function ( f568_arg0, f568_arg1, f
 			end
 			local f568_local4 = CoD.BlackMarketTableUtility.GetDeterministicItemSkusAndPrices( f568_arg0, f568_local2.name, f568_arg2 )
 			if f568_local4 and f568_local4.cpSku and f568_arg4 == true then
-				Engine.Exec( f568_arg0, "purchaseSKU " .. f568_local4.cpSku .. " 1" )
+				Engine.exec( f568_arg0, "purchaseSKU " .. f568_local4.cpSku .. " 1" )
 				LUI.roots.UIRootFull._testTimer = LUI.UITimer.newElementTimer( 1000, false, function ()
 					if not Engine.IsInventoryBusy( f568_arg0 ) and Engine.GetPurchaseDWSKUResult( f568_arg0 ) ~= Enum.InventoryPurchaseResult[0xB7C63B8EDC5BAEA] then
 						LUI.roots.UIRootFull._testTimer:close()
@@ -11319,7 +11319,7 @@ CoD.BlackMarketUtility.PurchaseAtPricePoint = function ( f568_arg0, f568_arg1, f
 				LUI.roots.UIRootFull:addElement( LUI.roots.UIRootFull._testTimer )
 			end
 			if f568_local4 and f568_local4.caseRule and f568_arg4 == false then
-				Engine.Exec( f568_arg0, "applyConversion " .. f568_local4.caseRule )
+				Engine.exec( f568_arg0, "applyConversion " .. f568_local4.caseRule )
 				LUI.roots.UIRootFull._testTimer = LUI.UITimer.newElementTimer( 1000, false, function ()
 					if not Engine.IsInventoryBusy( f568_arg0 ) and Engine[0x525090566AF670C]( f568_arg0 ) ~= Enum[0x98BB5B1F9A186F6][0x1A1F8568C1B8A5D] then
 						LUI.roots.UIRootFull._testTimer:close()
@@ -11401,7 +11401,7 @@ CoD.BlackMarketUtility.TestPurchaseItem = function ( f573_arg0, f573_arg1, f573_
 			f573_local1 = CoD.BlackMarketTableUtility.GetDeterministicItemSkusAndPrices( f573_arg0, f573_local4, f573_local2 )
 		end
 		if f573_local1 and f573_local1.caseRule and f573_arg4 == false then
-			Engine.Exec( f573_arg0, "applyConversion " .. f573_local1.caseRule )
+			Engine.exec( f573_arg0, "applyConversion " .. f573_local1.caseRule )
 			LUI.roots.UIRootFull._testTimer = LUI.UITimer.newElementTimer( 1000, false, function ()
 				if not Engine.IsInventoryBusy( f573_arg0 ) and Engine[0x525090566AF670C]( f573_arg0 ) ~= Enum[0x98BB5B1F9A186F6][0x1A1F8568C1B8A5D] then
 					LUI.roots.UIRootFull._testTimer:close()
@@ -11422,7 +11422,7 @@ CoD.BlackMarketUtility.TestPurchaseItem = function ( f573_arg0, f573_arg1, f573_
 			LUI.roots.UIRootFull:addElement( LUI.roots.UIRootFull._testTimer )
 		end
 		if f573_local1 and f573_local1.cpSku and f573_arg4 == true then
-			Engine.Exec( f573_arg0, "purchaseSKU " .. f573_local1.cpSku .. " 1" )
+			Engine.exec( f573_arg0, "purchaseSKU " .. f573_local1.cpSku .. " 1" )
 			LUI.roots.UIRootFull._testTimer = LUI.UITimer.newElementTimer( 1000, false, function ()
 				if not Engine.IsInventoryBusy( f573_arg0 ) and Engine.GetPurchaseDWSKUResult( f573_arg0 ) ~= Enum.InventoryPurchaseResult[0xB7C63B8EDC5BAEA] then
 					LUI.roots.UIRootFull._testTimer:close()
@@ -11464,7 +11464,7 @@ end
 CoD.BlackMarketUtility.TestOpenNoDupeCrate = function ()
 	local f578_local0 = 0
 	for f578_local5, f578_local6 in ipairs( CoD.BlackMarketTableUtility.GetRedeemableNonCPBribes( 0 ) ) do
-		if f578_local6.name == 0x4DE2B5257791347 then
+		if f578_local6.name == "no_dupe_crate" then
 			f578_local0 = f578_local6.lootRule
 			local f578_local4 = Engine[0x6C232D7031CE1CF]( 0, f578_local0, CoDShared.Loot.GetBribePayload( controller, nil, f578_local0 ) )
 			Engine.SendClientScriptNotify( 0, "BlackJackReserve", {

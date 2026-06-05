@@ -40,11 +40,11 @@ CoD.MOTD_FeaturedButtonContainer_PC.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( continueButtonPC, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		CoD.MOTDUtility.FeatureCard_HandlePopupAction( self, f4_arg2, f4_arg0, f4_arg1 )
+	f1_arg0:AddButtonCallbackFunction( continueButtonPC, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.MOTDUtility.FeatureCard_HandlePopupAction( self, controller, element, menu )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( continueButtonPC )
@@ -53,7 +53,7 @@ CoD.MOTD_FeaturedButtonContainer_PC.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local backButtonPC = nil
 	
 	backButtonPC = CoD.featureOverlay_Button_MouseOnly.new( f1_arg0, f1_arg1, 0.5, 0.5, -177.5, -17.5, 0.5, 0.5, -30, 30 )
-	backButtonPC.featureOverlayButtonContainer.Title:setText( LocalizeToUpperString( 0x78D439E1B360368 ) )
+	backButtonPC.featureOverlayButtonContainer.Title:setText( LocalizeToUpperString( "menu/back_caps" ) )
 	backButtonPC:registerEventHandler( "gain_focus", function ( element, event )
 		local f6_local0 = nil
 		if element.gainFocus then
@@ -64,11 +64,11 @@ CoD.MOTD_FeaturedButtonContainer_PC.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f6_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( backButtonPC, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		GoBack( self, f7_arg2 )
+	f1_arg0:AddButtonCallbackFunction( backButtonPC, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xA4032FB2AAB69F2, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "mp/back", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( backButtonPC )

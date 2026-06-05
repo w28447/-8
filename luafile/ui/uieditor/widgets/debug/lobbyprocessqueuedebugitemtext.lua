@@ -9,7 +9,7 @@ CoD.LobbyProcessQueueDebugItemText.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Name = LUI.UIText.new( 0, 0, 0, 1083, 0, 0, 0, 20 )
-	Name:setText( Engine[0xF9F1239CFD921FE]( 0x808E4CA838AD72E ) )
+	Name:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_newname" ) )
 	Name:setTTF( "dinnext_regular" )
 	Name:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Name:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

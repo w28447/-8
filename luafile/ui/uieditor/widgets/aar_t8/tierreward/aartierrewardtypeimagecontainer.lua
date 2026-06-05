@@ -100,13 +100,13 @@ CoD.AARTierRewardTypeImageContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 		{
 			stateName = "Contraband",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0x37934F15B706913 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "contraband" )
 			end
 		},
 		{
 			stateName = "CallingCard",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xCA2BC08C1A6BCF6 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "calling_card" )
 			end
 		},
 		{
@@ -118,19 +118,19 @@ CoD.AARTierRewardTypeImageContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 		{
 			stateName = "WarPaint",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xFB8B65946FBF7A2 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "war_paint" )
 			end
 		},
 		{
 			stateName = "WarPaintBundle",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0x48B82A2276A1CAF )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "war_paint_bundle" )
 			end
 		},
 		{
 			stateName = "Decal",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0x1FE4C75ACC7DF0E )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "decal" )
 			end
 		}
 	} )

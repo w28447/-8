@@ -17,7 +17,7 @@ CoD.CodCasterTimer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	self.GameTimer = GameTimer
 	
 	local NoTimeLimit = LUI.UIText.new( 0.5, 0.5, -54, 54, 0, 0, 9, 27 )
-	NoTimeLimit:setText( Engine[0xF9F1239CFD921FE]( 0x8E8304D25283DA6 ) )
+	NoTimeLimit:setText( Engine[0xF9F1239CFD921FE]( "mpui/unlimited_time_caps" ) )
 	NoTimeLimit:setTTF( "ttmussels_demibold" )
 	NoTimeLimit:setLetterSpacing( -0.5 )
 	NoTimeLimit:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

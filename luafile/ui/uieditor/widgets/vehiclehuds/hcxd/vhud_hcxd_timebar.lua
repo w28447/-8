@@ -11,14 +11,14 @@ CoD.vhud_hcxd_timebar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local DurationCornerTL = LUI.UIImage.new( 0, 0, 0, 16, 0, 0, 0, 16 )
 	DurationCornerTL:setAlpha( 0.2 )
-	DurationCornerTL:setImage( RegisterImage( 0xCE697C47EC17BA4 ) )
+	DurationCornerTL:setImage( RegisterImage( "uie_ui_hud_vehicle_hcxd_hp_layout_corner" ) )
 	self:addElement( DurationCornerTL )
 	self.DurationCornerTL = DurationCornerTL
 	
 	local DurationCornerBL = LUI.UIImage.new( 0, 0, 0, 16, 0, 0, 25, 41 )
 	DurationCornerBL:setAlpha( 0.2 )
 	DurationCornerBL:setXRot( 180 )
-	DurationCornerBL:setImage( RegisterImage( 0xCE697C47EC17BA4 ) )
+	DurationCornerBL:setImage( RegisterImage( "uie_ui_hud_vehicle_hcxd_hp_layout_corner" ) )
 	self:addElement( DurationCornerBL )
 	self.DurationCornerBL = DurationCornerBL
 	
@@ -26,14 +26,14 @@ CoD.vhud_hcxd_timebar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	DurationCornerBR:setAlpha( 0.2 )
 	DurationCornerBR:setXRot( 180 )
 	DurationCornerBR:setYRot( 180 )
-	DurationCornerBR:setImage( RegisterImage( 0xCE697C47EC17BA4 ) )
+	DurationCornerBR:setImage( RegisterImage( "uie_ui_hud_vehicle_hcxd_hp_layout_corner" ) )
 	self:addElement( DurationCornerBR )
 	self.DurationCornerBR = DurationCornerBR
 	
 	local DurationCornerTR = LUI.UIImage.new( 0, 0, 312, 328, 0, 0, 0, 16 )
 	DurationCornerTR:setAlpha( 0.2 )
 	DurationCornerTR:setYRot( 180 )
-	DurationCornerTR:setImage( RegisterImage( 0xCE697C47EC17BA4 ) )
+	DurationCornerTR:setImage( RegisterImage( "uie_ui_hud_vehicle_hcxd_hp_layout_corner" ) )
 	self:addElement( DurationCornerTR )
 	self.DurationCornerTR = DurationCornerTR
 	

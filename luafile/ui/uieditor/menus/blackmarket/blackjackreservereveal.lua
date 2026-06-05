@@ -200,31 +200,31 @@ LUI.createMenu.BlackjackReserveReveal = function ( f1_arg0, f1_arg1 )
 	f1_local14( f1_local13, f1_local15.reservesRevealSkipAvailable, function ( f16_arg0, f16_arg1 )
 		CoD.Menu.UpdateButtonShownState( f16_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		if CoD.ModelUtility.IsModelValueTrue( f17_arg2, "reservesRevealComplete" ) then
-			GoBack( self, f17_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsModelValueTrue( controller, "reservesRevealComplete" ) then
+			GoBack( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		if CoD.ModelUtility.IsModelValueTrue( f18_arg2, "reservesRevealComplete" ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsModelValueTrue( controller, "reservesRevealComplete" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
-		if CoD.BlackMarketUtility.CanSkipReservesRevealAnimation( f19_arg2 ) then
-			CoD.BlackMarketUtility.SkipReservesRevealAnimation( f19_arg2, f19_arg1, self.RevealList )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.BlackMarketUtility.CanSkipReservesRevealAnimation( controller ) then
+			CoD.BlackMarketUtility.SkipReservesRevealAnimation( controller, menu, self.RevealList )
 			return true
 		else
 			
 		end
-	end, function ( f20_arg0, f20_arg1, f20_arg2 )
-		if CoD.BlackMarketUtility.CanSkipReservesRevealAnimation( f20_arg2 ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.BlackMarketUtility.CanSkipReservesRevealAnimation( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 			return false
 		else
 			return false

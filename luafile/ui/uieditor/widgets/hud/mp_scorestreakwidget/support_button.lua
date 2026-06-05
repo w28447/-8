@@ -17,7 +17,7 @@ CoD.Support_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local Background = LUI.UIImage.new( 0, 0, -22, 60, 0, 0, -19, 64 )
 	Background:setAlpha( 0.2 )
-	Background:setImage( RegisterImage( 0x75825763EF40352 ) )
+	Background:setImage( RegisterImage( "uie_streak_flare" ) )
 	Background:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Background )
 	self.Background = Background
@@ -25,7 +25,7 @@ CoD.Support_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local LED = LUI.UIImage.new( 0, 0, -11.5, 52.5, 0, 0, -13, 51 )
 	LED:setRGB( 0.79, 0.45, 0.05 )
 	LED:setAlpha( 0 )
-	LED:setImage( RegisterImage( 0xBA589418FAFF06D ) )
+	LED:setImage( RegisterImage( "uie_ui_hud_core_streak_led_button" ) )
 	self:addElement( LED )
 	self.LED = LED
 	
@@ -204,7 +204,7 @@ CoD.Support_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	Rule = LUI.UIImage.new( 0, 0, 0, 40, 0, 0, -6, 2 )
 	Rule:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	Rule:setAlpha( 0 )
-	Rule:setImage( RegisterImage( 0x44F091BA4D4DD60 ) )
+	Rule:setImage( RegisterImage( "uie_ui_hud_core_streak_widget_rule_thin" ) )
 	Rule:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Rule )
 	self.Rule = Rule
@@ -212,7 +212,7 @@ CoD.Support_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local Rule2 = LUI.UIImage.new( 0, 0, 0, 40, 0, 0, 41.5, 49.5 )
 	Rule2:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	Rule2:setAlpha( 0 )
-	Rule2:setImage( RegisterImage( 0x44F091BA4D4DD60 ) )
+	Rule2:setImage( RegisterImage( "uie_ui_hud_core_streak_widget_rule_thin" ) )
 	Rule2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Rule2 )
 	self.Rule2 = Rule2
@@ -220,7 +220,7 @@ CoD.Support_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local Bar2 = LUI.UIImage.new( 0, 0, -0.5, 39.5, 0, 0, 41.5, 49.5 )
 	Bar2:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	Bar2:setAlpha( 0 )
-	Bar2:setImage( RegisterImage( 0x755ACF915D91894 ) )
+	Bar2:setImage( RegisterImage( "uie_ui_hud_core_streak_widget_rule_thick" ) )
 	Bar2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Bar2:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Bar2 )
@@ -229,7 +229,7 @@ CoD.Support_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local Bar3 = LUI.UIImage.new( 0, 0, -0.5, 39.5, 0, 0, -6, 2 )
 	Bar3:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	Bar3:setAlpha( 0 )
-	Bar3:setImage( RegisterImage( 0x755ACF915D91894 ) )
+	Bar3:setImage( RegisterImage( "uie_ui_hud_core_streak_widget_rule_thick" ) )
 	Bar3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Bar3:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Bar3 )
@@ -238,7 +238,7 @@ CoD.Support_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local FUItop2 = LUI.UIImage.new( 0, 0, 0.5, 40.5, 0, 0, 36, 44 )
 	FUItop2:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	FUItop2:setAlpha( 0 )
-	FUItop2:setImage( RegisterImage( 0xD21881AE56187FC ) )
+	FUItop2:setImage( RegisterImage( "uie_ui_hud_core_streak_widget_fui_selector" ) )
 	FUItop2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FUItop2 )
 	self.FUItop2 = FUItop2
@@ -246,7 +246,7 @@ CoD.Support_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local FUItop = LUI.UIImage.new( 0, 0, 0.5, 40.5, 0, 0, -5, 3 )
 	FUItop:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	FUItop:setAlpha( 0 )
-	FUItop:setImage( RegisterImage( 0xD21881AE56187FC ) )
+	FUItop:setImage( RegisterImage( "uie_ui_hud_core_streak_widget_fui_selector" ) )
 	FUItop:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FUItop )
 	self.FUItop = FUItop

@@ -56,11 +56,11 @@ LUI.createMenu.FileshareOptions = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( OptionsList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		ProcessListAction( self, f3_arg0, f3_arg2, f3_arg1 )
+	f1_local1:AddButtonCallbackFunction( OptionsList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		ProcessListAction( self, element, controller, menu )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( OptionsList )
@@ -121,7 +121,7 @@ LUI.createMenu.FileshareOptions = function ( f1_arg0, f1_arg1 )
 			end
 		}
 	} )
-	SlotsUsedWidget.Title:setText( LocalizeToUpperString( 0xE192601D65F99E ) )
+	SlotsUsedWidget.Title:setText( LocalizeToUpperString( "menu/fileshare_slots_used" ) )
 	SlotsUsedWidget:subscribeToGlobalModel( f1_arg0, "FileshareRoot", "currentCategoryQuota", function ( model )
 		local f8_local0 = model:get()
 		if f8_local0 ~= nil then
@@ -180,11 +180,11 @@ LUI.createMenu.FileshareOptions = function ( f1_arg0, f1_arg1 )
 			end
 		}
 	} )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		GoBack( self, f17_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

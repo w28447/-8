@@ -12,7 +12,7 @@ CoD.PC_PerfStatsContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.soundSet = "default"
 	
 	local Framerate = CoD.PC_TelemetryItem.new( f1_arg0, f1_arg1, 0, 0, 0, 93, 0, 0, 0, 15 )
-	Framerate.Label:setText( Engine[0xF9F1239CFD921FE]( 0xFC9D018B3560041 ) )
+	Framerate.Label:setText( Engine[0xF9F1239CFD921FE]( "options/fps" ) )
 	Framerate:subscribeToGlobalModel( f1_arg1, "PCTelemetry", "showFPS", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -20,7 +20,7 @@ CoD.PC_PerfStatsContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		end
 	end )
 	Framerate:subscribeToGlobalModel( f1_arg1, "GlobalModel", "PCTelemetry.framerateCounter", function ( model )
-		CoD.PCUtility.SetTextFromTelemetryModel( Framerate, f1_arg1, "PCTelemetry.framerateCounter", 0xFC9D018B3560041, 0x83A0261B143DFE7 )
+		CoD.PCUtility.SetTextFromTelemetryModel( Framerate, f1_arg1, "PCTelemetry.framerateCounter", "options/fps", 0x83A0261B143DFE7 )
 	end )
 	self:addElement( Framerate )
 	self.Framerate = Framerate
@@ -81,7 +81,7 @@ CoD.PC_PerfStatsContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		end
 	end )
 	CPUClient:subscribeToGlobalModel( f1_arg1, "GlobalModel", "PCTelemetry.CPUClientTime", function ( model )
-		CoD.PCUtility.SetTextFromTelemetryModel( CPUClient, f1_arg1, "PCTelemetry.CPUClientTime", 0x24312CFF5BE0980, 0x0 )
+		CoD.PCUtility.SetTextFromTelemetryModel( CPUClient, f1_arg1, "PCTelemetry.CPUClientTime", 0x24312CFF5BE0980, "" )
 	end )
 	self:addElement( CPUClient )
 	self.CPUClient = CPUClient
@@ -95,7 +95,7 @@ CoD.PC_PerfStatsContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		end
 	end )
 	CPURender:subscribeToGlobalModel( f1_arg1, "GlobalModel", "PCTelemetry.CPURenderTime", function ( model )
-		CoD.PCUtility.SetTextFromTelemetryModel( CPURender, f1_arg1, "PCTelemetry.CPURenderTime", 0x5E3881717DAB659, 0x0 )
+		CoD.PCUtility.SetTextFromTelemetryModel( CPURender, f1_arg1, "PCTelemetry.CPURenderTime", 0x5E3881717DAB659, "" )
 	end )
 	self:addElement( CPURender )
 	self.CPURender = CPURender

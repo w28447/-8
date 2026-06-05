@@ -14,7 +14,7 @@ CoD.vhud_ms_FrameBottomLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	Image0:setXRot( 180 )
 	Image0:setYRot( -180 )
 	Image0:setZoom( -40 )
-	Image0:setImage( RegisterImage( 0xC5B13A17382E497 ) )
+	Image0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_topframeside" ) )
 	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image0 )
 	self.Image0 = Image0
@@ -24,7 +24,7 @@ CoD.vhud_ms_FrameBottomLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	msBottomFrameLeft:setAlpha( 0.5 )
 	msBottomFrameLeft:setXRot( 180 )
 	msBottomFrameLeft:setYRot( -180 )
-	msBottomFrameLeft:setImage( RegisterImage( 0xC5B13A17382E497 ) )
+	msBottomFrameLeft:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_topframeside" ) )
 	msBottomFrameLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msBottomFrameLeft )
 	self.msBottomFrameLeft = msBottomFrameLeft

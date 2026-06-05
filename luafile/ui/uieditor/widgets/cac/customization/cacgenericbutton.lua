@@ -34,7 +34,7 @@ CoD.CACGenericButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local Glow = LUI.UIImage.new( 0, 1, -3, 3, 0, 1, -22, 22 )
 	Glow:setRGB( 0.88, 1, 0.04 )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0x713A30DFAEF8964 ) )
+	Glow:setImage( RegisterImage( "uie_t7_cp_hud_enemytarget_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
@@ -84,14 +84,14 @@ CoD.CACGenericButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local Arrow = LUI.UIImage.new( 0, 0, 4, 16, 0, 0, 18, 30 )
 	Arrow:setAlpha( 0 )
 	Arrow:setZoom( 10 )
-	Arrow:setImage( RegisterImage( 0x3842361F4104287 ) )
+	Arrow:setImage( RegisterImage( "uie_t7_menu_frontend_buttonfocusarrow" ) )
 	Arrow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Arrow )
 	self.Arrow = Arrow
 	
 	local Glow2 = LUI.UIImage.new( 0, 1, -3, 3, 0, 1, -22, 22 )
 	Glow2:setAlpha( 0 )
-	Glow2:setImage( RegisterImage( 0x713A30DFAEF8964 ) )
+	Glow2:setImage( RegisterImage( "uie_t7_cp_hud_enemytarget_glow" ) )
 	Glow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow2 )
 	self.Glow2 = Glow2

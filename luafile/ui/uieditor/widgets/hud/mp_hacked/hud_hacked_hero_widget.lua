@@ -12,7 +12,7 @@ CoD.hud_hacked_hero_widget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	Hacked2:setRGB( 0.32, 0.44, 0.52 )
 	Hacked2:setAlpha( 0.25 )
 	Hacked2:setZRot( 180 )
-	Hacked2:setImage( RegisterImage( 0xAD1D63C9AE2F58C ) )
+	Hacked2:setImage( RegisterImage( "uie_ui_hud_core_hacked_hero_panel" ) )
 	Hacked2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	Hacked2:setShaderVector( 0, 4, 4, 0, 0 )
 	Hacked2:setShaderVector( 1, 60, 0, 0, 0 )
@@ -21,7 +21,7 @@ CoD.hud_hacked_hero_widget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local Hacked = LUI.UIImage.new( 0, 0, 0, 274, 0, 0, 0, 138 )
 	Hacked:setRGB( 0.62, 0.76, 0.87 )
-	Hacked:setImage( RegisterImage( 0xAD1D63C9AE2F58C ) )
+	Hacked:setImage( RegisterImage( "uie_ui_hud_core_hacked_hero_panel" ) )
 	Hacked:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	Hacked:setShaderVector( 0, 4, 4, 0, 0 )
 	Hacked:setShaderVector( 1, 45, 0, 0, 0 )

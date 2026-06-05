@@ -17,14 +17,14 @@ CoD.Tak5Reticle_LockOn.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local LockOn = LUI.UIImage.new( 0.5, 0.5, -50, 50, 0.5, 0.5, -50, 50 )
 	LockOn:setRGB( ColorSet.CleanseBar.r, ColorSet.CleanseBar.g, ColorSet.CleanseBar.b )
 	LockOn:setZRot( 135 )
-	LockOn:setImage( RegisterImage( 0x5C3FF395F0A052A ) )
+	LockOn:setImage( RegisterImage( "uie_ui_hud_tak5_reticle_pointer" ) )
 	self:addElement( LockOn )
 	self.LockOn = LockOn
 	
 	local LockOnAdd = LUI.UIImage.new( 0.5, 0.5, -50, 50, 0.5, 0.5, -50, 50 )
 	LockOnAdd:setAlpha( 0.2 )
 	LockOnAdd:setZRot( 135 )
-	LockOnAdd:setImage( RegisterImage( 0x5C3FF395F0A052A ) )
+	LockOnAdd:setImage( RegisterImage( "uie_ui_hud_tak5_reticle_pointer" ) )
 	LockOnAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	LockOnAdd:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( LockOnAdd )

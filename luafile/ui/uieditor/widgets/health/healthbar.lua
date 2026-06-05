@@ -98,7 +98,7 @@ CoD.HealthBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	LED:setRGB( 0, 0, 0 )
 	LED:setAlpha( 0.09 )
 	LED:setScale( 0.94, 0.94 )
-	LED:setImage( RegisterImage( 0x832BA507D0E7663 ) )
+	LED:setImage( RegisterImage( "uie_ui_hud_core_player_widget_led_status" ) )
 	LED:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	LED:setShaderVector( 0, 0.11, 0.92, 0, 0 )
 	LED:setShaderVector( 1, 0, 0, 0, 0 )

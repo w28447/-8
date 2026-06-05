@@ -77,7 +77,7 @@ function GetPresenceString( f9_arg0 )
 	local f9_local1 = CoD.LobbyUtility.Presence.Strings[f9_local0]
 	if f9_local1 ~= nil then
 		if f9_local0 == Enum[0x4BBA402DE649132][0x322CC5E9D503B12] or f9_local0 == Enum[0x4BBA402DE649132][0x36C3C9302013104] or f9_local0 == Enum[0x4BBA402DE649132][0x4871D036CE76516] then
-			local f9_local2 = CoD.MapUtility.GetMapValueFromMapId( f9_arg0.mapid, "mapName", 0x3949D949A3E82CF )
+			local f9_local2 = CoD.MapUtility.GetMapValueFromMapId( f9_arg0.mapid, "mapName", "menu/map" )
 			local f9_local3 = Engine[0xEA74FA7EE46E195]( Engine[0x940731389BA0418]( f9_arg0.gametype ) )
 			local f9_local4
 			if f9_local3 then
@@ -92,7 +92,7 @@ function GetPresenceString( f9_arg0 )
 		elseif f9_local0 == Enum[0x4BBA402DE649132][0x36C3C9302013104] then
 			return Engine[0xF9F1239CFD921FE]( f9_local1, mapNameString )
 		elseif f9_local0 == Enum[0x4BBA402DE649132][0x9416FBBD255A16A] or f9_local0 == Enum[0x4BBA402DE649132][0xF94CFF7D3FA72DC] then
-			local f9_local2 = CoD.MapUtility.GetMapValueFromMapId( f9_arg0.mapid, "mapName", 0x3949D949A3E82CF )
+			local f9_local2 = CoD.MapUtility.GetMapValueFromMapId( f9_arg0.mapid, "mapName", "menu/map" )
 			local f9_local3 = Engine[0xEA74FA7EE46E195]( Engine[0x940731389BA0418]( f9_arg0.gametype ) )
 			local f9_local4
 			if f9_local3 then
@@ -111,7 +111,7 @@ function GetPresenceString( f9_arg0 )
 			end
 			return Engine[0xF9F1239CFD921FE]( f9_local1, f9_local2 )
 		elseif f9_local0 == Enum[0x4BBA402DE649132][0xF69882510317719] then
-			local f9_local2 = CoD.MapUtility.GetMapValueFromMapId( f9_arg0.mapid, "mapName", 0x3949D949A3E82CF )
+			local f9_local2 = CoD.MapUtility.GetMapValueFromMapId( f9_arg0.mapid, "mapName", "menu/map" )
 			local f9_local3 = Engine[0xEA74FA7EE46E195]( Engine[0x940731389BA0418]( f9_arg0.gametype ) )
 			local f9_local4
 			if f9_local3 then
@@ -135,7 +135,7 @@ function GetPresenceActivityString( f10_arg0 )
 	local f10_local0 = tonumber( f10_arg0.activity )
 	local f10_local1 = CoD.LobbyUtility.Presence.ActivityStrings[f10_local0]
 	if f10_local1 ~= nil then
-		local f10_local2 = CoD.MapUtility.GetMapValueFromMapId( f10_arg0.mapid, "mapName", 0x3949D949A3E82CF )
+		local f10_local2 = CoD.MapUtility.GetMapValueFromMapId( f10_arg0.mapid, "mapName", "menu/map" )
 		local f10_local3 = Engine.Localize( f10_local2 )
 		if f10_local0 == Enum.PresenceActivity[0x64B773BEE133CC6] then
 			return Engine[0xF9F1239CFD921FE]( f10_local1, f10_local3 )
@@ -144,7 +144,7 @@ function GetPresenceActivityString( f10_arg0 )
 		elseif f10_local0 == Enum.PresenceActivity[0x748FD38908AA0FD] then
 			local f10_local4 = f10_arg0.gametype
 			if f10_local4 == CoD.SocialUtility.GetFreerunGametypeId() then
-				return Engine[0xF9F1239CFD921FE]( 0xB684F61ABD86662, Engine.Localize( f10_local2 ) )
+				return Engine[0xF9F1239CFD921FE]( "presence/running_on_mapname", Engine.Localize( f10_local2 ) )
 			end
 			local f10_local5 = Engine[0xEA74FA7EE46E195]( Engine[0x940731389BA0418]( f10_local4 ) )
 			local f10_local6
@@ -191,7 +191,7 @@ function GetPresenceContextString( f11_arg0 )
 					end
 				end
 			end
-			return Engine[0xF9F1239CFD921FE]( 0x228A28CED0ECC72 )
+			return Engine[0xF9F1239CFD921FE]( "presence/public_match" )
 		elseif f11_local0 == Enum.PresenceCtx[0x388C548A4995338] then
 			local f11_local2 = f11_arg0.gametype
 			if f11_local2 == CoD.SocialUtility.GetFreerunGametypeId() then
@@ -217,7 +217,7 @@ function GetPresenceContextString( f11_arg0 )
 end
 
 function ShouldShowObjectiveForPlayer( f12_arg0, f12_arg1, f12_arg2 )
-	local f12_local0 = Dvar[0xFF54369D6573B91]:get()
+	local f12_local0 = Dvar.g_gametype:get()
 	if f12_local0 ~= nil then
 		if f12_local0 == "bounty" then
 			return true
@@ -251,7 +251,7 @@ function ShouldShowObjectiveForPlayer( f12_arg0, f12_arg1, f12_arg2 )
 end
 
 function ShouldShowColorForObjective( f13_arg0, f13_arg1, f13_arg2 )
-	local f13_local0 = Dvar[0xFF54369D6573B91]:get()
+	local f13_local0 = Dvar.g_gametype:get()
 	if f13_local0 ~= nil and f13_local0 == "ball" then
 		return false
 	else

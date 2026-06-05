@@ -99,7 +99,7 @@ CoD.EmblemEditorMaterialInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	PaintshopChooseSide = CoD.PaintshopChooseSide.new( f1_arg0, f1_arg1, 0, 0, 7, 327, 0, 0, 5, 37 )
 	PaintshopChooseSide:setAlpha( 0 )
 	PaintshopChooseSide:setScale( LanguageOverrideNumberForScale( "korean", 0.8, LanguageOverrideNumberForScale( "japanese", 0.8, LanguageOverrideNumberForScale( "chinese", 0.8, 1, 1 ) ) ) )
-	PaintshopChooseSide.text:setText( LocalizeToUpperString( 0xF5CA503839CA925 ) )
+	PaintshopChooseSide.text:setText( LocalizeToUpperString( "menu/appearance" ) )
 	self:addElement( PaintshopChooseSide )
 	self.PaintshopChooseSide = PaintshopChooseSide
 	
@@ -127,7 +127,7 @@ CoD.EmblemEditorMaterialInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local scaleText = LUI.UIText.new( 0, 0, 172.5, 391.5, 0, 0, 3.5, 28.5 )
 	scaleText:setRGB( 0.92, 0.89, 0.72 )
-	scaleText:setText( Engine[0xF9F1239CFD921FE]( 0x39B482734C22440 ) )
+	scaleText:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_layer_property_scale" ) )
 	scaleText:setTTF( "ttmussels_regular" )
 	scaleText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	scaleText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -162,7 +162,7 @@ CoD.EmblemEditorMaterialInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local scaleX = LUI.UIText.new( 0, 0, 173, 245, 0, 0, 37.5, 62.5 )
 	scaleX:setRGB( 0.92, 0.89, 0.72 )
-	scaleX:setText( Engine[0xF9F1239CFD921FE]( 0x9BAB2C368028BBC ) )
+	scaleX:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_x_text" ) )
 	scaleX:setTTF( "ttmussels_regular" )
 	scaleX:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	scaleX:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -171,7 +171,7 @@ CoD.EmblemEditorMaterialInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local scaleY = LUI.UIText.new( 0, 0, 250, 390, 0, 0, 37.5, 62.5 )
 	scaleY:setRGB( 0.92, 0.89, 0.72 )
-	scaleY:setText( Engine[0xF9F1239CFD921FE]( 0xC8E669F24C21949 ) )
+	scaleY:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_y_text" ) )
 	scaleY:setTTF( "ttmussels_regular" )
 	scaleY:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	scaleY:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

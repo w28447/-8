@@ -6,7 +6,7 @@ CoD.DirectorCharacterZM.__defaultWidth = 240
 CoD.DirectorCharacterZM.__defaultHeight = 44
 CoD.DirectorCharacterZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	if CoD.DirectorUtility.IsSessionModeAvailable( f1_arg1, Enum.eModes[0x3723205FAE52C4A] ) and CoD.ZombieUtility.ShowZMLobbyPoseOptions() then
+	if CoD.DirectorUtility.IsSessionModeAvailable( f1_arg1, Enum.eModes.mode_zombies ) and CoD.ZombieUtility.ShowZMLobbyPoseOptions() then
 		CoD.BaseUtility.InitControllerModel( f1_arg1, "PositionDraft.autoSelected", -1 )
 		CoD.BaseUtility.CreateControllerModel( f1_arg1, "PositionDraft.stage" )
 		CoD.BaseUtility.CreateControllerModel( f1_arg1, "PositionDraft.focusedCharacterIndex" )
@@ -108,7 +108,7 @@ CoD.DirectorCharacterZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 		PostLoadFunc( self, f1_arg1, f1_arg0 )
 	end
 	f1_local4 = self
-	if CoD.DirectorUtility.IsSessionModeAvailable( f1_arg1, Enum.eModes[0x3723205FAE52C4A] ) and CoD.ZombieUtility.ShowZMLobbyPoseOptions() then
+	if CoD.DirectorUtility.IsSessionModeAvailable( f1_arg1, Enum.eModes.mode_zombies ) and CoD.ZombieUtility.ShowZMLobbyPoseOptions() then
 		CoD.PlayerRoleUtility.PositionDraftClientsSizeOverride( self, f1_arg1 )
 	end
 	return self

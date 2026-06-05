@@ -12,7 +12,7 @@ CoD.CompassGroupContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local CompassGroup = CoD.CompassGroupMP.new( f1_arg0, f1_arg1, 0.5, 0.5, -170, 170, 0.5, 0.5, -170, 170 )
-	CompassGroup:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD79DB5C45AD6024 ) )
+	CompassGroup:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_elliptical_ring_rft" ) )
 	CompassGroup:setShaderVector( 0, 50, 0, 0, 0 )
 	CompassGroup:setShaderVector( 1, 100, 100, 0, 0 )
 	CompassGroup:setShaderVector( 2, 0, 0.07, 0, 0 )

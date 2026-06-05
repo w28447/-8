@@ -10,7 +10,7 @@ CoD.ConnectionLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local lblConnecting = LUI.UIText.new( 0, 0, 160, 960, 1, 1, -134, -104 )
 	lblConnecting:setRGB( 0.26, 0.25, 0.25 )
-	lblConnecting:setText( LocalizeToUpperString( 0x959976D30A883CB ) )
+	lblConnecting:setText( LocalizeToUpperString( "menu/connecting_dw" ) )
 	lblConnecting:setTTF( "ttmussels_demibold" )
 	lblConnecting:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	lblConnecting:setLetterSpacing( 6 )
@@ -22,7 +22,7 @@ CoD.ConnectionLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local lblSubStatus = LUI.UIText.new( 0, 0, 160, 960, 1, 1, -92, -62 )
 	lblSubStatus:setRGB( 0.26, 0.25, 0.25 )
 	lblSubStatus:setAlpha( 0 )
-	lblSubStatus:setText( LocalizeToUpperString( 0x3E26E8FAE6EC0BF ) )
+	lblSubStatus:setText( LocalizeToUpperString( "menu/checking_files" ) )
 	lblSubStatus:setTTF( "ttmussels_demibold" )
 	lblSubStatus:setLetterSpacing( 6 )
 	lblSubStatus:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

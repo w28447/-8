@@ -24,7 +24,7 @@ CoD.ScrStk_CombatEfficiencyPulse.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local Image0 = LUI.UIImage.new( 0.5, 0.5, -53, 55, 0, 1, 0, 0 )
 	Image0:setRGB( 0, 0.79, 1 )
 	Image0:setAlpha( 0 )
-	Image0:setImage( RegisterImage( 0xBA6A87EDF89D3EB ) )
+	Image0:setImage( RegisterImage( "uie_t7_mp_hud_scorestreak_fillglowvert" ) )
 	self:addElement( Image0 )
 	self.Image0 = Image0
 	

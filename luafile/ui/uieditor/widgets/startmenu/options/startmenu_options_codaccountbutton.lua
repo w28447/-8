@@ -31,8 +31,8 @@ CoD.StartMenu_Options_CoDAccountButton.new = function ( f1_arg0, f1_arg1, f1_arg
 	DirectorCustomStartButton.Tint:setRGB( 0.05, 0.08, 0.11 )
 	DirectorCustomStartButton.Tint:setAlpha( 0.25 )
 	DirectorCustomStartButton.LeaderActivityText:setText( "" )
-	DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( 0x30BC41F2404F851 ) )
-	DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( 0x30BC41F2404F851 ) )
+	DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( "menu/cod_account_caps" ) )
+	DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( "menu/cod_account_caps" ) )
 	self:addElement( DirectorCustomStartButton )
 	self.DirectorCustomStartButton = DirectorCustomStartButton
 	

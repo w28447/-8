@@ -14,7 +14,7 @@ CoD.CodCaster_Settings_CategoryTabs.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.anyChildUsesUpdateState = true
 	
 	local LB = CoD.BumperButtonWithKeyMouseText.new( f1_arg0, f1_arg1, 0, 0, 597.5, 797.5, 0, 0, 0, 34 )
-	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBDCD5292604F434 ) )
+	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/lb" ) )
 	LB.GamepadPrompt:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	self:addElement( LB )
 	self.LB = LB
@@ -43,7 +43,7 @@ CoD.CodCaster_Settings_CategoryTabs.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.categoryTabsList = f1_local4
 	
 	local RB = CoD.BumperButtonWithKeyMouseText.new( f1_arg0, f1_arg1, 1, 1, 357.5, 557.5, 0, 0, 0, 34 )
-	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBFED5292621DA9A ) )
+	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/rb" ) )
 	self:addElement( RB )
 	self.RB = RB
 	

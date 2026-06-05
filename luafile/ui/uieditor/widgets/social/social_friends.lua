@@ -45,7 +45,7 @@ CoD.Social_Friends.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local Title2 = LUI.UIText.new( 0.5, 0.5, -479, 4, 0, 0, 175, 209 )
 	Title2:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	Title2:setAlpha( 0.8 )
-	Title2:setText( Engine[0xF9F1239CFD921FE]( 0xD851B47994EA820 ) )
+	Title2:setText( Engine[0xF9F1239CFD921FE]( "menu/friends_caps" ) )
 	Title2:setTTF( "ttmussels_regular" )
 	Title2:setLetterSpacing( 2 )
 	Title2:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

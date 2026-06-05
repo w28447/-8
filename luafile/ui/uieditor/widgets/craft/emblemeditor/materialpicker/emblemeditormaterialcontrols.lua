@@ -53,7 +53,7 @@ CoD.EmblemEditorMaterialControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.leftTriggerButton = leftTriggerButton
 	
 	local FreeScale = CoD.PaintshopButtonPrompt.new( f1_arg0, f1_arg1, 0, 0, 20, 380, 0, 0, 71, 117 )
-	FreeScale.label:setText( Engine[0xF9F1239CFD921FE]( 0xDD45E7A84A50DF9 ) )
+	FreeScale.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_free_scale" ) )
 	FreeScale:subscribeToGlobalModel( f1_arg1, "Controller", "right_stick_button_image", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
@@ -65,7 +65,7 @@ CoD.EmblemEditorMaterialControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local FixedScale = CoD.PaintshopButtonPrompt.new( f1_arg0, f1_arg1, 0, 0, 20, 380, 0, 0, 71, 117 )
 	FixedScale:setAlpha( 0 )
-	FixedScale.label:setText( Engine[0xF9F1239CFD921FE]( 0xAD2AED6D89BCC15 ) )
+	FixedScale.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_fixed_scale" ) )
 	FixedScale:subscribeToGlobalModel( f1_arg1, "Controller", "move_right_stick_button_image", function ( model )
 		local f5_local0 = model:get()
 		if f5_local0 ~= nil then
@@ -76,7 +76,7 @@ CoD.EmblemEditorMaterialControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.FixedScale = FixedScale
 	
 	local ChangeColor = CoD.PaintshopButtonPrompt.new( f1_arg0, f1_arg1, 0, 0, 20, 370, 0, 0, 33, 79 )
-	ChangeColor.label:setText( Engine[0xF9F1239CFD921FE]( 0xC74469D97E52F55 ) )
+	ChangeColor.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_choose_material" ) )
 	ChangeColor:subscribeToGlobalModel( f1_arg1, "Controller", "move_left_stick_button_image", function ( model )
 		local f6_local0 = model:get()
 		if f6_local0 ~= nil then
@@ -105,7 +105,7 @@ CoD.EmblemEditorMaterialControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.Frame01 = Frame01
 	
 	local PaintshopChooseSide = CoD.PaintshopChooseSide.new( f1_arg0, f1_arg1, 0, 0, 6, 426, 0, 0, 4.5, 36.5 )
-	PaintshopChooseSide.text:setText( Engine[0xF9F1239CFD921FE]( 0xE6011EEF766C653 ) )
+	PaintshopChooseSide.text:setText( Engine[0xF9F1239CFD921FE]( "menu/controls_caps" ) )
 	self:addElement( PaintshopChooseSide )
 	self.PaintshopChooseSide = PaintshopChooseSide
 	

@@ -41,14 +41,14 @@ CoD.ScrStk_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.MeterBacker = MeterBacker
 	
 	local Frame = LUI.UIImage.new( 0, 0, 77, 169, 1, 1, -221.5, -21.5 )
-	Frame:setImage( RegisterImage( 0x549EBDC959884EE ) )
+	Frame:setImage( RegisterImage( "uie_ui_hud_core_frame_streaks_widget" ) )
 	self:addElement( Frame )
 	self.Frame = Frame
 	
 	local LED = LUI.UIImage.new( 0, 0, 77, 169, 1, 1, -221.5, -21.5 )
 	LED:setRGB( 0, 0, 0 )
 	LED:setAlpha( 0.2 )
-	LED:setImage( RegisterImage( 0xDCACA794C855791 ) )
+	LED:setImage( RegisterImage( "uie_ui_hud_core_streak_widget_led" ) )
 	self:addElement( LED )
 	self.LED = LED
 	
@@ -78,42 +78,42 @@ CoD.ScrStk_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local Rule = LUI.UIImage.new( 0, 0, 98, 138, 1, 1, -202.5, -193.5 )
 	Rule:setRGB( 0.92, 0.89, 0.72 )
 	Rule:setAlpha( 0.08 )
-	Rule:setImage( RegisterImage( 0x44F091BA4D4DD60 ) )
+	Rule:setImage( RegisterImage( "uie_ui_hud_core_streak_widget_rule_thin" ) )
 	self:addElement( Rule )
 	self.Rule = Rule
 	
 	local Rule2 = LUI.UIImage.new( 0, 0, 98, 138, 1, 1, -61, -53 )
 	Rule2:setRGB( 0.92, 0.89, 0.72 )
 	Rule2:setAlpha( 0.08 )
-	Rule2:setImage( RegisterImage( 0x44F091BA4D4DD60 ) )
+	Rule2:setImage( RegisterImage( "uie_ui_hud_core_streak_widget_rule_thin" ) )
 	self:addElement( Rule2 )
 	self.Rule2 = Rule2
 	
 	local Rule3 = LUI.UIImage.new( 0, 0, 98, 138, 1, 1, -108, -100 )
 	Rule3:setRGB( 0.92, 0.89, 0.72 )
 	Rule3:setAlpha( 0.08 )
-	Rule3:setImage( RegisterImage( 0x44F091BA4D4DD60 ) )
+	Rule3:setImage( RegisterImage( "uie_ui_hud_core_streak_widget_rule_thin" ) )
 	self:addElement( Rule3 )
 	self.Rule3 = Rule3
 	
 	local Rule4 = LUI.UIImage.new( 0, 0, 98, 138, 1, 1, -154.5, -146.5 )
 	Rule4:setRGB( 0.92, 0.89, 0.72 )
 	Rule4:setAlpha( 0.08 )
-	Rule4:setImage( RegisterImage( 0x44F091BA4D4DD60 ) )
+	Rule4:setImage( RegisterImage( "uie_ui_hud_core_streak_widget_rule_thin" ) )
 	self:addElement( Rule4 )
 	self.Rule4 = Rule4
 	
 	local triangle2 = LUI.UIImage.new( 0, 0, 140, 144, 0, 0, 205.5, 209.5 )
 	triangle2:setRGB( 0.07, 0.07, 0.07 )
 	triangle2:setZRot( 90 )
-	triangle2:setImage( RegisterImage( 0x41B9B3CAF3B7BE2 ) )
+	triangle2:setImage( RegisterImage( "uie_ui_icon_corner_triangle" ) )
 	self:addElement( triangle2 )
 	self.triangle2 = triangle2
 	
 	local triangle = LUI.UIImage.new( 0, 0, 139, 143, 0, 0, 60.5, 64.5 )
 	triangle:setRGB( 0.07, 0.07, 0.07 )
 	triangle:setZRot( 180 )
-	triangle:setImage( RegisterImage( 0x41B9B3CAF3B7BE2 ) )
+	triangle:setImage( RegisterImage( "uie_ui_icon_corner_triangle" ) )
 	self:addElement( triangle )
 	self.triangle = triangle
 	

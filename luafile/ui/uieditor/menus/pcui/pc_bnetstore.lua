@@ -45,7 +45,7 @@ LUI.createMenu.PC_BnetStore = function ( f1_arg0, f1_arg1 )
 	
 	local PrePurchase = LUI.UIText.new( 0.5, 0.5, -822, -528, 1, 1, -1018, -990 )
 	PrePurchase:setRGB( 0, 0, 0 )
-	PrePurchase:setText( Engine[0xF9F1239CFD921FE]( 0x88BFFCBDA7E5396 ) )
+	PrePurchase:setText( Engine[0xF9F1239CFD921FE]( "store/pre_purchase" ) )
 	PrePurchase:setTTF( "0arame_mono_stencil" )
 	PrePurchase:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	PrePurchase:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -54,7 +54,7 @@ LUI.createMenu.PC_BnetStore = function ( f1_arg0, f1_arg1 )
 	
 	local ReleaseDate = LUI.UIText.new( 0.5, 0.5, -822, -528, 1, 1, -990, -959 )
 	ReleaseDate:setRGB( 0.36, 0.36, 0.36 )
-	ReleaseDate:setText( Engine[0xF9F1239CFD921FE]( 0x2CD01365C5A2E61 ) )
+	ReleaseDate:setText( Engine[0xF9F1239CFD921FE]( "store/release_date" ) )
 	ReleaseDate:setTTF( "0arame_mono_stencil" )
 	ReleaseDate:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( ReleaseDate )
@@ -70,19 +70,19 @@ LUI.createMenu.PC_BnetStore = function ( f1_arg0, f1_arg1 )
 	self:addElement( ReleaseDate2 )
 	self.ReleaseDate2 = ReleaseDate2
 	
-	self:registerEventHandler( "close_all_ingame_menus", function ( element, event )
+	self:registerEventHandler( "close_all_ingame_menus", function ( self, event )
 		local f2_local0 = nil
 		CoD.PCUtility.ShortcutMenuGoBack( f1_local1, f1_arg0 )
 		if not f2_local0 then
-			f2_local0 = element:dispatchEventToChildren( event )
+			f2_local0 = self:dispatchEventToChildren( event )
 		end
 		return f2_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		GoBack( self, f3_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	FooterContainerFrontendRight:setModel( self.buttonModel, f1_arg0 )

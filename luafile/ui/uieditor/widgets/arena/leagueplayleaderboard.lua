@@ -17,7 +17,7 @@ CoD.LeaguePlayLeaderboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local ErrorText = LUI.UIText.new( 0, 0, 544, 1344, 0, 0, 521.5, 558.5 )
 	ErrorText:setAlpha( 0 )
-	ErrorText:setText( Engine[0xF9F1239CFD921FE]( 0x354A89EC41ABE97 ) )
+	ErrorText:setText( Engine[0xF9F1239CFD921FE]( "menu/generic_error_msg" ) )
 	ErrorText:setTTF( "default" )
 	ErrorText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	ErrorText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

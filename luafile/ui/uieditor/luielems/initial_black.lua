@@ -18,7 +18,7 @@ LUI.createMenu.initial_black = function ( f1_arg0, f1_arg1 )
 	f1_local1:addElementToPendingUpdateStateList( self )
 	
 	local Fullscreen = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	Fullscreen:setImage( RegisterImage( 0xD210F4BC59B4E93 ) )
+	Fullscreen:setImage( RegisterImage( "uie_default_black_0" ) )
 	self:addElement( Fullscreen )
 	self.Fullscreen = Fullscreen
 	

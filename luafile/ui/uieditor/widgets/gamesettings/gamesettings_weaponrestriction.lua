@@ -33,12 +33,12 @@ CoD.GameSettings_WeaponRestriction.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( OptionCategoryGrid, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		SetCurrentElementAsActive( self, f3_arg0, f3_arg2 )
-		SetFocusToElement( self, "SlidersPC", f3_arg2 )
+	f1_arg0:AddButtonCallbackFunction( OptionCategoryGrid, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		SetCurrentElementAsActive( self, element, controller )
+		SetFocusToElement( self, "SlidersPC", controller )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( OptionCategoryGrid )
@@ -82,12 +82,12 @@ CoD.GameSettings_WeaponRestriction.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 		SetElementCanBeNavigatedTo( self.OptionCategoryGrid, true )
 		return f7_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( SlidersPC, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		SetFocusToElement( self, "OptionCategoryGrid", f8_arg2 )
+	f1_arg0:AddButtonCallbackFunction( SlidersPC, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		SetFocusToElement( self, "OptionCategoryGrid", controller )
 		CoD.OptionsUtility.SetFocusToGrid( self.OptionCategoryGrid )
 		return true
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( SlidersPC )

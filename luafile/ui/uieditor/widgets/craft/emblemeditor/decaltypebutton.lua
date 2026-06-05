@@ -1,4 +1,4 @@
-require( "ui/uieditor/widgets/common/CommonButtonOutlineThin" )
+require( "ui/uieditor/widgets/common/commonbuttonoutlinethin" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsmainframe" )
 
 CoD.DecalTypeButton = InheritFrom( LUI.UIElement )

@@ -36,7 +36,7 @@ LUI.createMenu.AARLevelUpOverlay = function ( f1_arg0, f1_arg1 )
 	
 	local FractalGrid = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	FractalGrid:setAlpha( 0 )
-	FractalGrid:setImage( RegisterImage( 0x1DF4C930E69FFB0 ) )
+	FractalGrid:setImage( RegisterImage( "uie_ui_menu_aar_levelup_fractalgrid" ) )
 	FractalGrid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	FractalGrid:setShaderVector( 0, 1, 1, 0, 0 )
 	FractalGrid:setShaderVector( 1, 0, 0, 0, 0 )
@@ -120,13 +120,13 @@ LUI.createMenu.AARLevelUpOverlay = function ( f1_arg0, f1_arg1 )
 	XpMeter:linkToElementModel( self, "xpEarnedDuringMatch", true, function ( model )
 		local f10_local0 = model:get()
 		if f10_local0 ~= nil then
-			XpMeter.xpEarnedText:setText( LocalizeIntoString( 0x5C4E2BA06EA49A5, f10_local0 ) )
+			XpMeter.xpEarnedText:setText( LocalizeIntoString( "menu/xp_earned_caps", f10_local0 ) )
 		end
 	end )
 	XpMeter:linkToElementModel( self, "xpNeededToLevelUp", true, function ( model )
 		local f11_local0 = model:get()
 		if f11_local0 ~= nil then
-			XpMeter.xpNeededText:setText( LocalizeIntoString( 0x2B924F206C5B4D8, f11_local0 ) )
+			XpMeter.xpNeededText:setText( LocalizeIntoString( "menu/next_level_xp_needed", f11_local0 ) )
 		end
 	end )
 	self:addElement( XpMeter )
@@ -139,13 +139,13 @@ LUI.createMenu.AARLevelUpOverlay = function ( f1_arg0, f1_arg1 )
 	local MainCornerL = LUI.UIImage.new( 0.5, 0.5, -784, -754, 0, 0, 146, 176 )
 	MainCornerL:setAlpha( 0.04 )
 	MainCornerL:setYRot( 180 )
-	MainCornerL:setImage( RegisterImage( 0xBCB7451C0F2DE33 ) )
+	MainCornerL:setImage( RegisterImage( "uie_ui_hud_notifications_bracket_topright" ) )
 	self:addElement( MainCornerL )
 	self.MainCornerL = MainCornerL
 	
 	local MainCornerR = LUI.UIImage.new( 0.5, 0.5, 756, 786, 0, 0, 145, 175 )
 	MainCornerR:setAlpha( 0.04 )
-	MainCornerR:setImage( RegisterImage( 0xBCB7451C0F2DE33 ) )
+	MainCornerR:setImage( RegisterImage( "uie_ui_hud_notifications_bracket_topright" ) )
 	self:addElement( MainCornerR )
 	self.MainCornerR = MainCornerR
 	
@@ -253,55 +253,55 @@ LUI.createMenu.AARLevelUpOverlay = function ( f1_arg0, f1_arg1 )
 	f1_local20( f1_local21, f1_local22.LastInput, function ( f22_arg0, f22_arg1 )
 		CoD.Menu.UpdateButtonShownState( f22_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		if not IsPC() then
-			CoD.AARUtility.CloseLevelUpOverlay( f23_arg1, f23_arg2 )
+			CoD.AARUtility.CloseLevelUpOverlay( menu, controller )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
-		elseif IsPC() and IsGamepad( f23_arg2 ) then
-			CoD.AARUtility.CloseLevelUpOverlay( f23_arg1, f23_arg2 )
+		elseif IsPC() and IsGamepad( controller ) then
+			CoD.AARUtility.CloseLevelUpOverlay( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f24_arg0, f24_arg1, f24_arg2 )
+	end, function ( element, menu, controller )
 		if not IsPC() then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
 			return true
-		elseif IsPC() and IsGamepad( f24_arg2 ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+		elseif IsPC() and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
 		if IsPC() then
-			CoD.AARUtility.CloseLevelUpOverlay( f25_arg1, f25_arg2 )
+			CoD.AARUtility.CloseLevelUpOverlay( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f26_arg0, f26_arg1, f26_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3 )
-		CoD.AARUtility.CloseLevelUpOverlay( f27_arg1, f27_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		CoD.AARUtility.CloseLevelUpOverlay( menu, controller )
 		return true
-	end, function ( f28_arg0, f28_arg1, f28_arg2 )
-		CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 		return false
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f29_arg0, f29_arg1, f29_arg2, f29_arg3 )
-		CoD.AARUtility.CloseLevelUpOverlay( f29_arg1, f29_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, model )
+		CoD.AARUtility.CloseLevelUpOverlay( menu, controller )
 		return true
-	end, function ( f30_arg0, f30_arg1, f30_arg2 )
-		CoD.Menu.SetButtonLabel( f30_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	FooterContainerFrontendRight:setModel( self.buttonModel, f1_arg0 )

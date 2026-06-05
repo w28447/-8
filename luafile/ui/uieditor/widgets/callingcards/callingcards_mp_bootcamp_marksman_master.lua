@@ -1,24 +1,24 @@
-CoD[0x16E262B518BD2C4] = InheritFrom( LUI.UIElement )
-CoD[0x16E262B518BD2C4].__defaultWidth = 960
-CoD[0x16E262B518BD2C4].__defaultHeight = 240
-CoD[0x16E262B518BD2C4].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_mp_bootcamp_marksman_master = InheritFrom( LUI.UIElement )
+CoD.callingcards_mp_bootcamp_marksman_master.__defaultWidth = 960
+CoD.callingcards_mp_bootcamp_marksman_master.__defaultHeight = 240
+CoD.callingcards_mp_bootcamp_marksman_master.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x16E262B518BD2C4] )
+	self:setClass( CoD.callingcards_mp_bootcamp_marksman_master )
 	self.id = "CallingCards_MP_Bootcamp_Marksman_Master"
 	self.soundSet = "default"
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local bg = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	bg:setImage( RegisterImage( 0xC5FC36C791D72CE ) )
-	bg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	bg:setImage( RegisterImage( "uie_ui_icon_callingcards_mp_bootcamp_marksman_master_background" ) )
+	bg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	bg:setShaderVector( 0, 1, 1, 0, 0 )
 	bg:setShaderVector( 1, 0, 0.09, 0, 0 )
 	self:addElement( bg )
 	self.bg = bg
 	
 	local bandanna = LUI.UIImage.new( 0, 0, 444, 708, 0, 0, -6, 82 )
-	bandanna:setImage( RegisterImage( 0xFE7E57765D88B43 ) )
-	bandanna:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD526D3FD71F281 ) )
+	bandanna:setImage( RegisterImage( "uie_ui_icon_callingcards_mp_bootcamp_marksman_master_bandanna" ) )
+	bandanna:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook" ) )
 	bandanna:setShaderVector( 0, 0, 3, 0, 0 )
 	bandanna:setShaderVector( 1, 3, 0, 0, 0 )
 	self:addElement( bandanna )
@@ -26,7 +26,7 @@ CoD[0x16E262B518BD2C4].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local Chi = LUI.UIImage.new( 0, 0, 496, 960, 0, 0, 0, 240 )
 	Chi:setAlpha( 0.5 )
-	Chi:setImage( RegisterImage( 0xB2062AC12676D94 ) )
+	Chi:setImage( RegisterImage( "uie_ui_icon_callingcards_mp_bootcamp_marksman_master_chi" ) )
 	Chi:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	Chi:setShaderVector( 0, 0, 5, 0, 0 )
 	Chi:setShaderVector( 1, 10, 0, 0, 0 )
@@ -35,18 +35,18 @@ CoD[0x16E262B518BD2C4].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local dude = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	dude:setScale( 1.03, 1.03 )
-	dude:setImage( RegisterImage( 0x714FA4AAB8E8CF6 ) )
+	dude:setImage( RegisterImage( "uie_ui_icon_callingcards_mp_bootcamp_marksman_master_dude" ) )
 	self:addElement( dude )
 	self.dude = dude
 	
 	local hands = LUI.UIImage.new( 0, 0, 619, 899, 0, 0, 38, 278 )
-	hands:setImage( RegisterImage( 0x162E56257B9C118 ) )
+	hands:setImage( RegisterImage( "uie_ui_icon_callingcards_mp_bootcamp_marksman_master_dudehands" ) )
 	self:addElement( hands )
 	self.hands = hands
 	
 	local vienGlow = LUI.UIImage.new( 0, 0, 544.5, 968.5, 0, 0, 120, 248 )
 	vienGlow:setScale( 1.03, 1.03 )
-	vienGlow:setImage( RegisterImage( 0xB6F29CCE90B1935 ) )
+	vienGlow:setImage( RegisterImage( "uie_ui_icon_callingcards_mp_bootcamp_marksman_master_dudeveins" ) )
 	vienGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( vienGlow )
 	self.vienGlow = vienGlow
@@ -58,7 +58,7 @@ CoD[0x16E262B518BD2C4].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x16E262B518BD2C4].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_mp_bootcamp_marksman_master.__resetProperties = function ( f2_arg0 )
 	f2_arg0.hands:completeAnimation()
 	f2_arg0.dude:completeAnimation()
 	f2_arg0.Chi:completeAnimation()
@@ -70,7 +70,7 @@ CoD[0x16E262B518BD2C4].__resetProperties = function ( f2_arg0 )
 	f2_arg0.vienGlow:setAlpha( 1 )
 end
 
-CoD[0x16E262B518BD2C4].__clipsPerState = {
+CoD.callingcards_mp_bootcamp_marksman_master.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()

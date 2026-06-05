@@ -11,7 +11,7 @@ CoD.CancelChargeShot.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local NotificationText = LUI.UIText.new( 0, 0, 0, 300, 0, 0, 0, 30 )
-	NotificationText:setText( Engine[0xF9F1239CFD921FE]( 0x3D8A0C512FDAAE ) )
+	NotificationText:setText( Engine[0xF9F1239CFD921FE]( "hud/cancel_shot" ) )
 	NotificationText:setTTF( "ttmussels_regular" )
 	NotificationText:setLetterSpacing( 1 )
 	NotificationText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

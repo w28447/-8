@@ -10,7 +10,7 @@ CoD.TabbedScoreboardColHeaders.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local LeftCol = LUI.UIText.new( 0, 0, -5, 87, 0.5, 0.5, -9, 6 )
 	LeftCol:setRGB( 0.7, 0.7, 0.7 )
-	LeftCol:setText( Engine[0xF9F1239CFD921FE]( 0xA75180BC7FDA8F5 ) )
+	LeftCol:setText( Engine[0xF9F1239CFD921FE]( "menu/score_caps" ) )
 	LeftCol:setTTF( "0arame_mono_stencil" )
 	LeftCol:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	LeftCol:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )

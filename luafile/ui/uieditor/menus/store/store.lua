@@ -39,7 +39,7 @@ LUI.createMenu.Store = function ( f1_arg0, f1_arg1 )
 	self.editorBackground = editorBackground
 	
 	local GenericMenuFrameIdentity = CoD.GenericMenuFrameIdentity.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	GenericMenuFrameIdentity.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x191CDDA584B4408 ) )
+	GenericMenuFrameIdentity.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/store_caps" ) )
 	GenericMenuFrameIdentity:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -105,14 +105,14 @@ LUI.createMenu.Store = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( storeCategoryListPC, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		SetSelectedStoreCategory( self, f6_arg0, f6_arg2 )
-		SetControllerModelValue( f6_arg2, "StoreRoot.isCategoryListInFocus", 1 )
-		ForceNotifyControllerModel( f6_arg2, "StoreRoot.ready" )
-		SetCurrentElementAsActive( self, f6_arg0, f6_arg2 )
+	f1_local1:AddButtonCallbackFunction( storeCategoryListPC, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		SetSelectedStoreCategory( self, element, controller )
+		SetControllerModelValue( controller, "StoreRoot.isCategoryListInFocus", 1 )
+		ForceNotifyControllerModel( controller, "StoreRoot.ready" )
+		SetCurrentElementAsActive( self, element, controller )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 		return false
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( storeCategoryListPC, "setDataSource", function ( element, controller )
@@ -128,8 +128,8 @@ LUI.createMenu.Store = function ( f1_arg0, f1_arg1 )
 	local TransactionDeepLinkButton = nil
 	
 	TransactionDeepLinkButton = CoD.DirectorPreGameButton.new( f1_local1, f1_arg0, 0.5, 0.5, 541, 771, 0.5, 0.5, 406, 476 )
-	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( 0x4031C820A02E7BA ) )
-	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( 0x4031C820A02E7BA ) )
+	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( "menu/transaction_history" ) )
+	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( "menu/transaction_history" ) )
 	TransactionDeepLinkButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f9_local0 = nil
 		if element.gainFocus then
@@ -140,31 +140,31 @@ LUI.createMenu.Store = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f9_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+	f1_local1:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, model )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.PCKoreaUtility.OpenTransactionsDeepLinkStore( f10_arg2 )
+			CoD.PCKoreaUtility.OpenTransactionsDeepLinkStore( controller )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
+	f1_local1:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.PCKoreaUtility.OpenTransactionsDeepLinkStore( f12_arg2 )
+			CoD.PCKoreaUtility.OpenTransactionsDeepLinkStore( controller )
 			return true
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
 		else
 			return false
@@ -194,56 +194,56 @@ LUI.createMenu.Store = function ( f1_arg0, f1_arg1 )
 	self.StoreRightPane:linkToElementModel( self, nil, false, function ( model )
 		StoreRightPane:setModel( model, f1_arg0 )
 	end )
-	self:registerEventHandler( "occlusion_change", function ( element, event )
+	self:registerEventHandler( "occlusion_change", function ( self, event )
 		local f19_local0 = nil
-		if element.OcclusionChange then
-			f19_local0 = element:OcclusionChange( event )
-		elseif element.super.OcclusionChange then
-			f19_local0 = element.super:OcclusionChange( event )
+		if self.OcclusionChange then
+			f19_local0 = self:OcclusionChange( event )
+		elseif self.super.OcclusionChange then
+			f19_local0 = self.super:OcclusionChange( event )
 		end
 		if IsEventPropertyEqualTo( event, "occluded", true ) then
 			HidePsStoreIcon( f1_arg0 )
 		else
-			ShowPsStoreIcon( f1_arg0, Enum[0x784DC8CE13E1E13][0xF4B7EC4DCAA8AC4] )
+			ShowPsStoreIcon( f1_arg0, Enum[0x784DC8CE13E1E13].center )
 		end
 		if not f19_local0 then
-			f19_local0 = element:dispatchEventToChildren( event )
+			f19_local0 = self:dispatchEventToChildren( event )
 		end
 		return f19_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
-		if IsMenuInState( f20_arg1, "DefaultState" ) then
-			RecordStoreLastFocusedItemViewed( self, f20_arg0, f20_arg2, f20_arg1 )
-			GoBack( self, f20_arg2 )
-			ClearMenuSavedState( f20_arg1 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
+		if IsMenuInState( menu, "DefaultState" ) then
+			RecordStoreLastFocusedItemViewed( self, element, controller, menu )
+			GoBack( self, controller )
+			ClearMenuSavedState( menu )
 			return true
-		elseif IsMenuInState( f20_arg1, "ProductFocused" ) then
-			SetMenuState( f20_arg1, "DefaultState", f20_arg2 )
+		elseif IsMenuInState( menu, "ProductFocused" ) then
+			SetMenuState( menu, "DefaultState", controller )
 			return true
 		else
 			
 		end
-	end, function ( f21_arg0, f21_arg1, f21_arg2 )
-		if IsMenuInState( f21_arg1, "DefaultState" ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		if IsMenuInState( menu, "DefaultState" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
-		elseif IsMenuInState( f21_arg1, "ProductFocused" ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+		elseif IsMenuInState( menu, "ProductFocused" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
 		if not IsPC() then
-			RedeemCode( self, f22_arg0, f22_arg2 )
+			RedeemCode( self, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f23_arg0, f23_arg1, f23_arg2 )
+	end, function ( element, menu, controller )
 		if not IsPC() then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xAC7CDF7FDA3D9D3, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/store_redeem_code", nil, nil )
 			return true
 		else
 			return false

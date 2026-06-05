@@ -1,55 +1,55 @@
-CoD["callingcards_zombieapocalypse"] = InheritFrom( LUI.UIElement )
-CoD["callingcards_zombieapocalypse"].__defaultWidth = 960
-CoD["callingcards_zombieapocalypse"].__defaultHeight = 240
-CoD["callingcards_zombieapocalypse"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_zombieapocalypse = InheritFrom( LUI.UIElement )
+CoD.callingcards_zombieapocalypse.__defaultWidth = 960
+CoD.callingcards_zombieapocalypse.__defaultHeight = 240
+CoD.callingcards_zombieapocalypse.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD["callingcards_zombieapocalypse"] )
+	self:setClass( CoD.callingcards_zombieapocalypse )
 	self.id = "CallingCards_zombieapocalypse"
 	self.soundSet = "none"
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local bg = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	bg:setImage( RegisterImage( 0xD6E6311DEC75E89 ) )
+	bg:setImage( RegisterImage( "uie_ui_icon_callingcards_zombieapocalypse_bg" ) )
 	self:addElement( bg )
 	self.bg = bg
 	
 	local zombie1 = LUI.UIImage.new( 0, 0, 0, 312, 0, 0, 0, 240 )
-	zombie1:setImage( RegisterImage( 0x7D73D97F0A020EF ) )
+	zombie1:setImage( RegisterImage( "uie_ui_icon_callingcards_zombieapocalypse_zombie1" ) )
 	self:addElement( zombie1 )
 	self.zombie1 = zombie1
 	
 	local man1 = LUI.UIImage.new( 0, 0, 213, 629, 0, 0, 24, 240 )
-	man1:setImage( RegisterImage( 0x6A21FA8B9005F90 ) )
+	man1:setImage( RegisterImage( "uie_ui_icon_callingcards_zombieapocalypse_man2" ) )
 	self:addElement( man1 )
 	self.man1 = man1
 	
 	local man2 = LUI.UIImage.new( 0, 0, 451, 787, 0, 0, -15, 265 )
-	man2:setImage( RegisterImage( 0x6A222A8B90064A9 ) )
+	man2:setImage( RegisterImage( "uie_ui_icon_callingcards_zombieapocalypse_man1" ) )
 	self:addElement( man2 )
 	self.man2 = man2
 	
 	local headblood = LUI.UIImage.new( 0, 0, 624, 960, 0, 0, -35, 245 )
-	headblood:setImage( RegisterImage( 0xBE0F9F891C59FB4 ) )
+	headblood:setImage( RegisterImage( "uie_ui_icon_callingcards_zombieapocalypse_blood2" ) )
 	self:addElement( headblood )
 	self.headblood = headblood
 	
 	local head = LUI.UIImage.new( 0, 0, 811, 931, 0, 0, -15, 105 )
-	head:setImage( RegisterImage( 0x9AA19C587127898 ) )
+	head:setImage( RegisterImage( "uie_ui_icon_callingcards_zombieapocalypse_head" ) )
 	self:addElement( head )
 	self.head = head
 	
 	local armblood = LUI.UIImage.new( 0, 0, 563.5, 979.5, 0, 0, 86, 302 )
-	armblood:setImage( RegisterImage( 0xEA1798592DF7F4E ) )
+	armblood:setImage( RegisterImage( "uie_ui_icon_callingcards_zombieapocalypse_blood" ) )
 	self:addElement( armblood )
 	self.armblood = armblood
 	
 	local zombiearm = LUI.UIImage.new( 0, 0, 723.5, 979.5, 0, 0, 145, 265 )
-	zombiearm:setImage( RegisterImage( 0x354B65D9AFC3DA0 ) )
+	zombiearm:setImage( RegisterImage( "uie_ui_icon_callingcards_zombieapocalypse_arm" ) )
 	self:addElement( zombiearm )
 	self.zombiearm = zombiearm
 	
 	local smoke = LUI.UIImage.new( 0, 0, 144, 960, 0, 0, 105, 241 )
-	smoke:setImage( RegisterImage( 0x88002FBFB6ADBB7 ) )
+	smoke:setImage( RegisterImage( "uie_ui_icon_callingcards_zombieapocalypse_smoke" ) )
 	self:addElement( smoke )
 	self.smoke = smoke
 	
@@ -60,7 +60,7 @@ CoD["callingcards_zombieapocalypse"].new = function ( f1_arg0, f1_arg1, f1_arg2,
 	return self
 end
 
-CoD["callingcards_zombieapocalypse"].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_zombieapocalypse.__resetProperties = function ( f2_arg0 )
 	f2_arg0.zombie1:completeAnimation()
 	f2_arg0.man1:completeAnimation()
 	f2_arg0.man2:completeAnimation()
@@ -81,7 +81,7 @@ CoD["callingcards_zombieapocalypse"].__resetProperties = function ( f2_arg0 )
 	f2_arg0.headblood:setLeftRight( 0, 0, 624, 960 )
 end
 
-CoD["callingcards_zombieapocalypse"].__clipsPerState = {
+CoD.callingcards_zombieapocalypse.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()

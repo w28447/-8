@@ -223,7 +223,7 @@ end
 
 f0_local0.LobbyMainModeData = {
 	[Enum.LobbyMainMode[0x7E41449995CD57E]] = {
-		eMode = Enum.eModes[0x83EBA96F36BC4E5],
+		eMode = Enum.eModes.mode_multiplayer,
 		OnlineCustomMenu = LuaEnum.UI.DIRECTOR_ONLINE_MP_CUSTOM,
 		OnlineTrainingMenu = LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING,
 		OnlineArenaMenuPregame = LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_PREGAME,
@@ -237,7 +237,7 @@ f0_local0.LobbyMainModeData = {
 		TrainingMenu = LuaEnum.UI.DIRECTOR_LAN_MP_TRAINING
 	},
 	[Enum.LobbyMainMode[0x79D01499920B292]] = {
-		eMode = Enum.eModes[0x3723205FAE52C4A],
+		eMode = Enum.eModes.mode_zombies,
 		OnlineCustomMenu = LuaEnum.UI.DIRECTOR_ONLINE_ZM_CUSTOM,
 		PregameMenu = LuaEnum.UI.DIRECTOR_ONLINE_ZM_PREGAME,
 		PrivateMenu = LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE,
@@ -246,7 +246,7 @@ f0_local0.LobbyMainModeData = {
 		LanMenu = LuaEnum.UI.DIRECTOR_LAN_ZM
 	},
 	[Enum.LobbyMainMode[0x78C124999125C42]] = {
-		eMode = Enum.eModes[0xBF1DCC8138A9D39],
+		eMode = Enum.eModes.mode_warzone,
 		OnlineCustomMenu = LuaEnum.UI.DIRECTOR_ONLINE_WZ_CUSTOM,
 		PregameMenu = LuaEnum.UI.DIRECTOR_ONLINE_WZ_PUBLIC,
 		PublicMenu = LuaEnum.UI.DIRECTOR_ONLINE_WZ_PUBLIC,
@@ -255,14 +255,14 @@ f0_local0.LobbyMainModeData = {
 	}
 }
 f0_local0.EModeData = {
-	[Enum.eModes[0x83EBA96F36BC4E5]] = {
-		assetName = 0x9E82E6A2962DD60
+	[Enum.eModes.mode_multiplayer] = {
+		assetName = "sessionmode_mp"
 	},
-	[Enum.eModes[0x3723205FAE52C4A]] = {
-		assetName = 0x9CA2B6A2949DAB8
+	[Enum.eModes.mode_zombies] = {
+		assetName = "sessionmode_zm"
 	},
-	[Enum.eModes[0xBF1DCC8138A9D39]] = {
-		assetName = 0x9D4406A295252EC
+	[Enum.eModes.mode_warzone] = {
+		assetName = "sessionmode_wz"
 	}
 }
 f0_local0.ShouldShowWarzone = function ()
@@ -292,14 +292,14 @@ end
 for f0_local5, f0_local6 in pairs( f0_local0.EModeData ) do
 	local f0_local7 = Engine[0xE00B2F29271C60B]( f0_local6.assetName )
 	if f0_local7 ~= nil then
-		f0_local6.Abbreviation = f0_local7[0x89A29113F5105C1]
-		f0_local6.DefaultGameType = f0_local7[0xA64CB8DCAF6BBDC]
-		f0_local6.DefaultMap = f0_local7[0xCBD34C8AF30CC98]
-		f0_local6.PresenceIcon = 0xC4CF58835C4A472
-		f0_local6.DisplayName = f0_local7[0x55F116BF695C8F6]
-		f0_local6.SelectDescription = f0_local7[0x51DF77834F55EE1]
-		f0_local6.DefaultArenaGameType = f0_local7[0xF431A55A6F5F2CB]
-		f0_local6.DefaultArenaMap = f0_local7[0x7B49743C623CFB5]
+		f0_local6.Abbreviation = f0_local7.abbreviation
+		f0_local6.DefaultGameType = f0_local7.defaultgametype
+		f0_local6.DefaultMap = f0_local7.defaultmap
+		f0_local6.PresenceIcon = "ui_icon_gamemode_logo_orange"
+		f0_local6.DisplayName = f0_local7.displayname
+		f0_local6.SelectDescription = f0_local7.selectdescription
+		f0_local6.DefaultArenaGameType = f0_local7.defaultarenagametype
+		f0_local6.DefaultArenaMap = f0_local7.defaultarenamap
 	end
 end
 f0_local0.GetEModeForLobbyMainMode = function ( f25_arg0 )
@@ -317,41 +317,41 @@ f0_local0.GetEModeForLobbyMainMode = function ( f25_arg0 )
 end
 
 f0_local0.GetDisplayNameForEMode = function ( f26_arg0 )
-	if f26_arg0 == Enum.eModes[0xBF1DCC8138A9D39] and not f0_local0.ShouldShowWarzone() then
-		return 0x0
-	elseif f26_arg0 == Enum.eModes[0x3723205FAE52C4A] and not f0_local0.ShouldShowZombies() then
-		return 0x0
-	elseif f26_arg0 == Enum.eModes[0x83EBA96F36BC4E5] and not f0_local0.ShouldShowMultiplayer() then
-		return 0x0
+	if f26_arg0 == Enum.eModes.mode_warzone and not f0_local0.ShouldShowWarzone() then
+		return ""
+	elseif f26_arg0 == Enum.eModes.mode_zombies and not f0_local0.ShouldShowZombies() then
+		return ""
+	elseif f26_arg0 == Enum.eModes.mode_multiplayer and not f0_local0.ShouldShowMultiplayer() then
+		return ""
 	elseif f26_arg0 then
 		local f26_local0 = f0_local0.EModeData[f26_arg0]
 		local f26_local1 = f0_local0.EModeData[f26_arg0].DisplayName
 	end
-	return f26_local0 and f26_local1 or 0x0
+	return f26_local0 and f26_local1 or ""
 end
 
 f0_local0.GetSelectDescriptionForEMode = function ( f27_arg0 )
-	if f27_arg0 == Enum.eModes[0xBF1DCC8138A9D39] and not f0_local0.ShouldShowWarzone() then
-		return 0x0
-	elseif f27_arg0 == Enum.eModes[0x3723205FAE52C4A] and not f0_local0.ShouldShowZombies() then
-		return 0x0
-	elseif f27_arg0 == Enum.eModes[0x83EBA96F36BC4E5] and not f0_local0.ShouldShowMultiplayer() then
-		return 0x0
+	if f27_arg0 == Enum.eModes.mode_warzone and not f0_local0.ShouldShowWarzone() then
+		return ""
+	elseif f27_arg0 == Enum.eModes.mode_zombies and not f0_local0.ShouldShowZombies() then
+		return ""
+	elseif f27_arg0 == Enum.eModes.mode_multiplayer and not f0_local0.ShouldShowMultiplayer() then
+		return ""
 	elseif f27_arg0 then
 		local f27_local0 = f0_local0.EModeData[f27_arg0]
 		local f27_local1 = f0_local0.EModeData[f27_arg0].SelectDescription
 	end
-	return f27_local0 and f27_local1 or 0x0
+	return f27_local0 and f27_local1 or ""
 end
 
 f0_local0.GetPresenceImageForEMode = function ( f28_arg0 )
-	if f28_arg0 == Enum.eModes[0xBF1DCC8138A9D39] and not f0_local0.ShouldShowWarzone() then
-		return 0x0
+	if f28_arg0 == Enum.eModes.mode_warzone and not f0_local0.ShouldShowWarzone() then
+		return ""
 	elseif f28_arg0 then
 		local f28_local0 = f0_local0.EModeData[f28_arg0]
 		local f28_local1 = f0_local0.EModeData[f28_arg0].PresenceIcon
 	end
-	return f28_local0 and f28_local1 or 0x214ECBA8C04D44C
+	return f28_local0 and f28_local1 or "$blacktransparent"
 end
 
 f0_local0.GetDisplayNameForLobbyMainMode = function ( f29_arg0 )
@@ -360,7 +360,7 @@ f0_local0.GetDisplayNameForLobbyMainMode = function ( f29_arg0 )
 end
 
 f0_local0.GetDefaultMap = function ( f30_arg0 )
-	local f30_local0 = f0_local0.LobbyMainModeData[f30_arg0["mainmode"]]
+	local f30_local0 = f0_local0.LobbyMainModeData[f30_arg0.mainmode]
 	local f30_local1 = f30_local0 and f30_local0.eMode
 	if f30_arg0.eGameModes == Enum.eGameModes[0x7B5630CD29180CB] then
 		if f30_local1 then
@@ -376,7 +376,7 @@ f0_local0.GetDefaultMap = function ( f30_arg0 )
 end
 
 f0_local0.GetDefaultGameType = function ( f31_arg0 )
-	local f31_local0 = f0_local0.LobbyMainModeData[f31_arg0["mainmode"]]
+	local f31_local0 = f0_local0.LobbyMainModeData[f31_arg0.mainmode]
 	local f31_local1 = f31_local0 and f31_local0.eMode
 	if f31_arg0.eGameModes == Enum.eGameModes[0x7B5630CD29180CB] or f31_arg0.eGameModes == Enum.eGameModes[0x58ECA70A244C08F] then
 		if f31_local1 then
@@ -495,7 +495,7 @@ f0_local0.GetArenaPlaylistInfo = function ()
 	local f42_local1 = LuaUtils.GetOnlinePlaylists()
 	local f42_local2 = {}
 	for f42_local11, f42_local12 in ipairs( f42_local1 ) do
-		if f42_local12.nameHash == 0x5D8D7B6A4C553C8 or f42_local12.nameHash == 0x98A15D908A3089F then
+		if f42_local12.nameHash == "arena" or f42_local12.nameHash == "arenadev" then
 			for f42_local9, f42_local10 in pairs( f42_local12.entries ) do
 				table.insert( f42_local2, f42_local10 )
 			end
@@ -519,7 +519,7 @@ end
 
 f0_local0.GetLeaguePlayTierTable = function ()
 	if not f0_local0.LeaguePlayTierList then
-		f0_local0.LeaguePlayTierList = Engine[0xE00B2F29271C60B]( 0x5FB9081FBDA10BD )
+		f0_local0.LeaguePlayTierList = Engine[0xE00B2F29271C60B]( "arena_league_play_rank_list_default" )
 	end
 	return f0_local0.LeaguePlayTierList
 end
@@ -529,7 +529,7 @@ f0_local0.GetLeaguePlacementTierForPosition = function ( f46_arg0 )
 		local f46_local0 = f0_local0.GetLeaguePlayTierTable()
 		if f46_local0 then
 			for f46_local4, f46_local5 in ipairs( f46_local0.tierlist ) do
-				if f46_arg0 <= f46_local5[0x8A3024830754A20] then
+				if f46_arg0 <= f46_local5.placement then
 					return f46_local4
 				end
 			end
@@ -541,7 +541,7 @@ end
 f0_local0.GetPositionForLeaguePlacementTier = function ( f47_arg0 )
 	local f47_local0 = f0_local0.GetLeaguePlayTierTable()
 	if f47_local0 and f47_arg0 <= #f47_local0.tierlist then
-		return f47_local0.tierlist[f47_arg0][0x8A3024830754A20]
+		return f47_local0.tierlist[f47_arg0].placement
 	else
 		return nil
 	end
@@ -550,7 +550,7 @@ end
 f0_local0.GetRubiesForLeaguePlacementTier = function ( f48_arg0 )
 	local f48_local0 = f0_local0.GetLeaguePlayTierTable()
 	if f48_local0 and f48_arg0 <= #f48_local0.tierlist then
-		return f48_local0.tierlist[f48_arg0][0x4CC5373745DAE62]
+		return f48_local0.tierlist[f48_arg0].rubyreward
 	else
 		return 0
 	end
@@ -561,8 +561,8 @@ f0_local0.GetRubiesForPosition = function ( f49_arg0 )
 		local f49_local0 = f0_local0.GetLeaguePlayTierTable()
 		if f49_local0 then
 			for f49_local4, f49_local5 in ipairs( f49_local0.tierlist ) do
-				if f49_arg0 <= f49_local5[0x8A3024830754A20] then
-					return f49_local5[0x4CC5373745DAE62]
+				if f49_arg0 <= f49_local5.placement then
+					return f49_local5.rubyreward
 				end
 			end
 		end
@@ -591,86 +591,86 @@ f0_local0.GetBanMessageForFeature = function ( f52_arg0, f52_arg1, f52_arg2 )
 		local f52_local2 = Engine[0xF9F1239CFD921FE]
 		local f52_local3
 		if f52_arg2 == true then
-			f52_local3 = 0xC3D51874550E4CF
+			f52_local3 = "exe/cod_online_perm_ban_player"
 			if not f52_local3 then
 			
 			else
 				return f52_local2( f52_local3, f52_local0, f52_local1 )
 			end
 		end
-		f52_local3 = 0xEBAE48C17D1FCB
+		f52_local3 = "exe/cod_online_temp_ban_player"
 	elseif f52_arg1 == LuaEnum.FEATURE_BAN.LIVE_ZM then
 		local f52_local2 = Engine[0xF9F1239CFD921FE]
 		local f52_local3
 		if f52_arg2 == true then
-			f52_local3 = 0xC3D51874550E4CF
+			f52_local3 = "exe/cod_online_perm_ban_player"
 			if not f52_local3 then
 			
 			else
 				return f52_local2( f52_local3, f52_local0, f52_local1 )
 			end
 		end
-		f52_local3 = 0xEBAE48C17D1FCB
+		f52_local3 = "exe/cod_online_temp_ban_player"
 	elseif f52_arg1 == LuaEnum.FEATURE_BAN.LIVE_CP then
 		local f52_local2 = Engine[0xF9F1239CFD921FE]
 		local f52_local3
 		if f52_arg2 == true then
-			f52_local3 = 0xC3D51874550E4CF
+			f52_local3 = "exe/cod_online_perm_ban_player"
 			if not f52_local3 then
 			
 			else
 				return f52_local2( f52_local3, f52_local0, f52_local1 )
 			end
 		end
-		f52_local3 = 0xEBAE48C17D1FCB
+		f52_local3 = "exe/cod_online_temp_ban_player"
 	elseif f52_arg1 == LuaEnum.FEATURE_BAN.LIVE_WZ then
 		local f52_local2 = Engine[0xF9F1239CFD921FE]
 		local f52_local3
 		if f52_arg2 == true then
-			f52_local3 = 0xC3D51874550E4CF
+			f52_local3 = "exe/cod_online_perm_ban_player"
 			if not f52_local3 then
 			
 			else
 				return f52_local2( f52_local3, f52_local0, f52_local1 )
 			end
 		end
-		f52_local3 = 0xEBAE48C17D1FCB
+		f52_local3 = "exe/cod_online_temp_ban_player"
 	elseif f52_arg1 == LuaEnum.FEATURE_BAN.LEADERBOARD_WRITE_MP then
 		local f52_local2 = Engine[0xF9F1239CFD921FE]
 		local f52_local3
 		if f52_arg2 == true then
-			f52_local3 = 0xB21A4EAF3F42E24
+			f52_local3 = "exe/cod_feature_perm_ban_player"
 			if not f52_local3 then
 			
 			else
 				return f52_local2( f52_local3, f52_local0, f52_local1 )
 			end
 		end
-		f52_local3 = 0x581D0E7448BC8F4
+		f52_local3 = "exe/cod_feature_temp_ban_player"
 	elseif f52_arg1 == LuaEnum.FEATURE_BAN.LEADERBOARD_WRITE_ZM then
 		local f52_local2 = Engine[0xF9F1239CFD921FE]
 		local f52_local3
 		if f52_arg2 == true then
-			f52_local3 = 0xB21A4EAF3F42E24
+			f52_local3 = "exe/cod_feature_perm_ban_player"
 			if not f52_local3 then
 			
 			else
 				return f52_local2( f52_local3, f52_local0, f52_local1 )
 			end
 		end
-		f52_local3 = 0x581D0E7448BC8F4
+		f52_local3 = "exe/cod_feature_temp_ban_player"
 	elseif f52_arg1 == LuaEnum.FEATURE_BAN.LEADERBOARD_WRITE_CP then
 		local f52_local2 = Engine[0xF9F1239CFD921FE]
 		local f52_local3
 		if f52_arg2 == true then
-			f52_local3 = 0xB21A4EAF3F42E24
+			f52_local3 = "exe/cod_feature_perm_ban_player"
 			if not f52_local3 then
 			
 			else
 				return f52_local2( f52_local3, f52_local0, f52_local1 )
 			end
 		end
-		f52_local3 = 0x581D0E7448BC8F4
+		f52_local3 = "exe/cod_feature_temp_ban_player"
 	else
 		if f52_arg1 == LuaEnum.FEATURE_BAN.HOSTING then
 			
@@ -684,88 +684,88 @@ f0_local0.GetBanMessageForFeature = function ( f52_arg0, f52_arg1, f52_arg2 )
 			local f52_local2 = Engine[0xF9F1239CFD921FE]
 			local f52_local3
 			if f52_arg2 == true then
-				f52_local3 = 0xB21A4EAF3F42E24
+				f52_local3 = "exe/cod_feature_perm_ban_player"
 				if not f52_local3 then
 				
 				else
 					return f52_local2( f52_local3, f52_local0, f52_local1 )
 				end
 			end
-			f52_local3 = 0x581D0E7448BC8F4
+			f52_local3 = "exe/cod_feature_temp_ban_player"
 		elseif f52_arg1 == LuaEnum.FEATURE_BAN.ZM_SPLIT_SCREEN then
 			local f52_local2 = Engine[0xF9F1239CFD921FE]
 			local f52_local3
 			if f52_arg2 == true then
-				f52_local3 = 0xB21A4EAF3F42E24
+				f52_local3 = "exe/cod_feature_perm_ban_player"
 				if not f52_local3 then
 				
 				else
 					return f52_local2( f52_local3, f52_local0, f52_local1 )
 				end
 			end
-			f52_local3 = 0x581D0E7448BC8F4
+			f52_local3 = "exe/cod_feature_temp_ban_player"
 		elseif f52_arg1 == LuaEnum.FEATURE_BAN.CP_SPLIT_SCREEN then
 			local f52_local2 = Engine[0xF9F1239CFD921FE]
 			local f52_local3
 			if f52_arg2 == true then
-				f52_local3 = 0xB21A4EAF3F42E24
+				f52_local3 = "exe/cod_feature_perm_ban_player"
 				if not f52_local3 then
 				
 				else
 					return f52_local2( f52_local3, f52_local0, f52_local1 )
 				end
 			end
-			f52_local3 = 0x581D0E7448BC8F4
+			f52_local3 = "exe/cod_feature_temp_ban_player"
 		elseif f52_arg1 == LuaEnum.FEATURE_BAN.ARENA_GAMEPLAY then
 			local f52_local2 = Engine[0xF9F1239CFD921FE]
 			local f52_local3
 			if f52_arg2 == true then
-				f52_local3 = 0xB21A4EAF3F42E24
+				f52_local3 = "exe/cod_feature_perm_ban_player"
 				if not f52_local3 then
 				
 				else
 					return f52_local2( f52_local3, f52_local0, f52_local1 )
 				end
 			end
-			f52_local3 = 0x581D0E7448BC8F4
+			f52_local3 = "exe/cod_feature_temp_ban_player"
 		elseif f52_arg1 == LuaEnum.FEATURE_BAN.USER_GENERATED_CONTENT then
 			local f52_local2 = Engine[0xF9F1239CFD921FE]
 			local f52_local3
 			if f52_arg2 == true then
-				f52_local3 = 0xB21A4EAF3F42E24
+				f52_local3 = "exe/cod_feature_perm_ban_player"
 				if not f52_local3 then
 				
 				else
 					return f52_local2( f52_local3, f52_local0, f52_local1 )
 				end
 			end
-			f52_local3 = 0x581D0E7448BC8F4
+			f52_local3 = "exe/cod_feature_temp_ban_player"
 		elseif f52_arg1 == LuaEnum.FEATURE_BAN.PRESTIGE then
 			local f52_local2 = Engine[0xF9F1239CFD921FE]
 			local f52_local3
 			if f52_arg2 == true then
-				f52_local3 = 0xB21A4EAF3F42E24
+				f52_local3 = "exe/cod_feature_perm_ban_player"
 				if not f52_local3 then
 				
 				else
 					return f52_local2( f52_local3, f52_local0, f52_local1 )
 				end
 			end
-			f52_local3 = 0x581D0E7448BC8F4
+			f52_local3 = "exe/cod_feature_temp_ban_player"
 		elseif f52_arg1 == LuaEnum.FEATURE_BAN.WZ_DUOQUAD then
 			local f52_local2 = Engine[0xF9F1239CFD921FE]
 			local f52_local3
 			if f52_arg2 == true then
-				f52_local3 = 0xB21A4EAF3F42E24
+				f52_local3 = "exe/cod_feature_perm_ban_player"
 				if not f52_local3 then
 				
 				else
 					return f52_local2( f52_local3, f52_local0, f52_local1 )
 				end
 			end
-			f52_local3 = 0x581D0E7448BC8F4
+			f52_local3 = "exe/cod_feature_temp_ban_player"
 		else
-			return Engine[0xF9F1239CFD921FE]( 0x632F97C36A01BD6 )
+			return Engine[0xF9F1239CFD921FE]( "platform/demonware_disconnect" )
 		end
 	end
 end
@@ -812,11 +812,11 @@ f0_local0.GetBSPNameFromAsset = function ( f55_arg0 )
 end
 
 f0_local0.IsGameModeParagonCapable = function ( f56_arg0 )
-	if f56_arg0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	if f56_arg0 == Enum.eModes.mode_warzone then
 		return Engine[0x9E5BE3B4BBA4E0E]( "live_supports_paragon_wz" )
 	else
 		local f56_local0
-		if f56_arg0 ~= Enum.eModes[0x83EBA96F36BC4E5] and f56_arg0 ~= Enum.eModes[0x3723205FAE52C4A] then
+		if f56_arg0 ~= Enum.eModes.mode_multiplayer and f56_arg0 ~= Enum.eModes.mode_zombies then
 			f56_local0 = false
 		else
 			f56_local0 = true
@@ -986,11 +986,11 @@ f0_local0.SecondsToTimeRemainingString = function ( f73_arg0 )
 		f73_local3 = "0" .. f73_local3
 	end
 	if f73_local0 > 7 then
-		return Engine[0xF9F1239CFD921FE]( 0xBB5B34BDC891135, f73_local0 )
+		return Engine[0xF9F1239CFD921FE]( "menu/time_remaining_days", f73_local0 )
 	elseif f73_local0 > 0 then
-		return Engine[0xF9F1239CFD921FE]( 0xF15651DBC75A77F, f73_local0, f73_local1, f73_local2, f73_local3 )
+		return Engine[0xF9F1239CFD921FE]( "menu/time_remaining_d_h_m_s", f73_local0, f73_local1, f73_local2, f73_local3 )
 	else
-		return Engine[0xF9F1239CFD921FE]( 0x432FE3538638B68, f73_local1, f73_local2, f73_local3 )
+		return Engine[0xF9F1239CFD921FE]( "menu/time_remaining_h_m_s", f73_local1, f73_local2, f73_local3 )
 	end
 end
 
@@ -1069,7 +1069,7 @@ end
 
 f0_local0.GetCallingsBundle = function ()
 	if f0_local0.callingsBundle == nil then
-		f0_local0.callingsBundle = Engine[0xE00B2F29271C60B]( 0x258EFC12235EFC9 )
+		f0_local0.callingsBundle = Engine[0xE00B2F29271C60B]( "t8_callings_settings" )
 	end
 	return f0_local0.callingsBundle
 end
@@ -1077,7 +1077,7 @@ end
 f0_local0.GetCallingsStats = function ( f79_arg0 )
 	local f79_local0 = Engine.GetPlayerStats( f79_arg0 )
 	if f79_local0 then
-		return f79_local0[0xAE679FEF1E88988]
+		return f79_local0.playercalling
 	else
 		return nil
 	end
@@ -1093,8 +1093,8 @@ f0_local0.UpdateFactionCallings = function ( f81_arg0 )
 		return 
 	end
 	local f81_local1 = function ( f82_arg0, f82_arg1, f82_arg2 )
-		f82_arg0[0xB9514BB20FEC5FF]:set( f82_arg1 - 1 )
-		f82_arg0[0xA5AB6FB11258EBF]:set( f82_arg2 - 1 )
+		f82_arg0.currentseason:set( f82_arg1 - 1 )
+		f82_arg0.currentcallingid:set( f82_arg2 - 1 )
 		f82_arg0[0xBF1EBBFA7B16C64]:set( 0 )
 		f82_arg0[0xE608064D306991F]:set( Engine[0x786FFC9E621CAB7]() )
 	end
@@ -1102,7 +1102,7 @@ f0_local0.UpdateFactionCallings = function ( f81_arg0 )
 	local f81_local2 = function ( f83_arg0, f83_arg1, f83_arg2 )
 		if f83_arg0[0xD8EAF5A5A9F1CC1]:get() == 0 then
 			return true
-		elseif f83_arg1 - 1 ~= f83_arg0[0x5DB84305A85FAEA]:get() or f83_arg2 - 1 ~= f83_arg0[0x4D468697915DFAA]:get() then
+		elseif f83_arg1 - 1 ~= f83_arg0.currentseasondvar:get() or f83_arg2 - 1 ~= f83_arg0.currentcallingiddvar:get() then
 			return true
 		else
 			local f83_local0 = f83_arg0[0xE608064D306991F]:get()
@@ -1126,21 +1126,21 @@ f0_local0.UpdateFactionCallings = function ( f81_arg0 )
 		f81_local0[0xBF1EBBFA7B16C64]:set( 0 )
 		f81_local0[0xD8EAF5A5A9F1CC1]:set( 0 )
 	end
-	f81_local0[0x5DB84305A85FAEA]:set( f81_local3 - 1 )
-	f81_local0[0x4D468697915DFAA]:set( f81_local4 - 1 )
+	f81_local0.currentseasondvar:set( f81_local3 - 1 )
+	f81_local0.currentcallingiddvar:set( f81_local4 - 1 )
 	f0_local0.StorageWriteZMProgression( f81_arg0 )
 end
 
 f0_local0.UpdateAllCallings = function ()
-	if Engine[0xA63E42B2FB6EC02]() ~= Enum.LobbyNetworkMode[0xE99F41098B71960] or Engine.CurrentSessionMode() ~= Enum.eModes[0x3723205FAE52C4A] then
+	if Engine[0xA63E42B2FB6EC02]() ~= Enum.LobbyNetworkMode[0xE99F41098B71960] or Engine.CurrentSessionMode() ~= Enum.eModes.mode_zombies then
 		return 
 	end
 	for f84_local0 = 0, Engine.GetMaxControllerCount() - 1, 1 do
 		if Engine.AreStatsFetched( f84_local0 ) then
-			if Engine[0x9E5BE3B4BBA4E0E]( 0x1DA02CA40639DE5 ) then
+			if Engine[0x9E5BE3B4BBA4E0E]( "faction_callings_enabled_zm" ) then
 				f0_local0.UpdateFactionCallings( f84_local0 )
 			end
-			if Engine[0x9E5BE3B4BBA4E0E]( 0x7FF853067D7C38C ) then
+			if Engine[0x9E5BE3B4BBA4E0E]( "daily_callings_enabled_zm" ) then
 				f0_local0.UpdateDailyCalling( f84_local0 )
 			end
 		end
@@ -1159,9 +1159,9 @@ f0_local0.UploadAllLocalStatsBuffers = function ()
 end
 
 f0_local0.UploadLocalStatsBuffer = function ( f86_arg0 )
-	if Engine.CurrentSessionMode() == Enum.eModes[0x3723205FAE52C4A] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_zombies then
 		Engine.StorageWrite( f86_arg0, Enum.StorageFileType[0xA57D6164B91A8FC] )
-	elseif Engine.CurrentSessionMode() == Enum.eModes[0x83EBA96F36BC4E5] then
+	elseif Engine.CurrentSessionMode() == Enum.eModes.mode_multiplayer then
 		Engine.StorageWrite( f86_arg0, Enum.StorageFileType[0xD5A7695E03A7A90] )
 	end
 end
@@ -1175,7 +1175,7 @@ f0_local0.UpdateDailyCallingDvar = function ()
 	end
 	local f87_local1 = #f87_local0.dailyschedule - 1
 	local f87_local2 = Engine[0x786FFC9E621CAB7]()
-	local f87_local3 = Engine[0x90B6BCE69A8E08B]( tostring( f87_local0["callingstarttime"] ) )
+	local f87_local3 = Engine[0x90B6BCE69A8E08B]( tostring( f87_local0.callingstarttime ) )
 	if f87_local2 < f87_local3 then
 		Engine.SetDvar( "zm_active_daily_calling", 0 )
 		return 
@@ -1183,7 +1183,7 @@ f0_local0.UpdateDailyCallingDvar = function ()
 	local f87_local4 = (f87_local2 - f87_local3) / Engine[0x90B6BCE69A8E08B]( tostring( 86400 ) )
 	Engine.SetModelValue( Engine.CreateModel( Engine.CreateModel( Engine.GetGlobalModel(), "AutoEvents" ), "zm_daily_callings_timer" ), f0_local0.SecondsToTimeRemainingString( Engine.GetSecondsRemainingServer( Engine.Int64AsString( f87_local3 + (f87_local4 + Engine[0x90B6BCE69A8E08B]( "1" )) * Engine[0x90B6BCE69A8E08B]( tostring( 86400 ) ) ) ) + 1 ) )
 	f87_local4 = tonumber( Engine.Int64AsString( f87_local4 ) ) % f87_local1
-	local f87_local5 = Engine[0x22EAAB59AA27E9B]( 0xEF2B14C3BFEF02A )
+	local f87_local5 = Engine[0x22EAAB59AA27E9B]( "zm_active_daily_calling" )
 	local f87_local6 = f87_local4 + 1
 	Engine.SetDvar( "zm_active_daily_calling", f87_local6 )
 	if f87_local5 and f87_local5 ~= f87_local6 then
@@ -1200,17 +1200,17 @@ f0_local0.UpdateDailyCalling = function ( f88_arg0 )
 	if f88_local0 == nil then
 		return 
 	end
-	local f88_local1 = f88_local0[0x8E3320CCF4091E5]
+	local f88_local1 = f88_local0.daily_calling_stats
 	if f88_local1 == nil then
 		return 
 	end
-	local f88_local2 = Engine[0x22EAAB59AA27E9B]( 0xEF2B14C3BFEF02A )
+	local f88_local2 = Engine[0x22EAAB59AA27E9B]( "zm_active_daily_calling" )
 	if f88_local2 == nil or f88_local2 == 0 then
 		return 
 	end
 	local f88_local3 = Engine[0x786FFC9E621CAB7]()
 	local f88_local4 = function ()
-		local f89_local0 = f88_local1[0xAD32B22445C4828]:get()
+		local f89_local0 = f88_local1.calling_timestamp:get()
 		if f89_local0 == "0" then
 			return true
 		else
@@ -1218,10 +1218,10 @@ f0_local0.UpdateDailyCalling = function ( f88_arg0 )
 		end
 	end
 	
-	if f88_local2 ~= f88_local1[0x87F0FCE798B3A4B]:get() or f88_local4() then
-		f88_local1[0x9909144862249C6]:set( 0 )
-		f88_local1[0x87F0FCE798B3A4B]:set( f88_local2 )
-		f88_local1[0xAD32B22445C4828]:set( f88_local3 )
+	if f88_local2 ~= f88_local1.current_daily_calling:get() or f88_local4() then
+		f88_local1.progress:set( 0 )
+		f88_local1.current_daily_calling:set( f88_local2 )
+		f88_local1.calling_timestamp:set( f88_local3 )
 		Engine.StorageWrite( f88_arg0, Enum.StorageFileType[0xA57D6164B91A8FC] )
 	end
 end
@@ -1269,13 +1269,13 @@ f0_local0.ResetToLastSelectedSpecialistIfNeeded = function ( f93_arg0 )
 		if f93_local4 == nil or f93_local4 == "" then
 			return 
 		elseif f93_local3.consumables[f93_local4].awarded:get() <= f93_local3.consumables[f93_local4].consumed:get() then
-			local f93_local5 = f0_local0.GetBlackjackHeroIndex( Enum.eModes[0x83EBA96F36BC4E5] )
+			local f93_local5 = f0_local0.GetBlackjackHeroIndex( Enum.eModes.mode_multiplayer )
 			local f93_local6 = Engine.StorageGetBuffer( f93_arg0, Enum.StorageFileType[0x6C886CEB6BF4BCA] )
 			for f93_local10, f93_local11 in pairs( {
 				[Enum.CACType[0xF9EE7A8E21CAD9B]] = "lastSelectedCharacterIndex"
 			} ) do
-				if Engine.GetEquippedHeroForCACType( f93_arg0, Enum.eModes[0x83EBA96F36BC4E5], f93_local10 ) == f93_local5 then
-					Engine.SetHeroForCACType( f93_arg0, Enum.eModes[0x83EBA96F36BC4E5], f93_local10, f93_local6[f93_local11]:get() )
+				if Engine.GetEquippedHeroForCACType( f93_arg0, Enum.eModes.mode_multiplayer, f93_local10 ) == f93_local5 then
+					Engine.SetHeroForCACType( f93_arg0, Enum.eModes.mode_multiplayer, f93_local10, f93_local6[f93_local11]:get() )
 				end
 			end
 		end
@@ -1283,7 +1283,7 @@ f0_local0.ResetToLastSelectedSpecialistIfNeeded = function ( f93_arg0 )
 end
 
 f0_local0.ResetToLastSelectedSpecialistIfNeededAfterMatch = function ()
-	if Engine.CurrentSessionMode() ~= Enum.eModes[0x83EBA96F36BC4E5] or not Engine.SessionMode_IsPublicOnlineGame() then
+	if Engine.CurrentSessionMode() ~= Enum.eModes.mode_multiplayer or not Engine.SessionMode_IsPublicOnlineGame() then
 		return 
 	end
 	for f94_local0 = 0, Engine.GetMaxControllerCount() - 1, 1 do
@@ -1292,36 +1292,36 @@ f0_local0.ResetToLastSelectedSpecialistIfNeededAfterMatch = function ()
 end
 
 f0_local0.SetLastSelectedSpecialist = function ( f95_arg0, f95_arg1 )
-	if Engine.CurrentSessionMode() == Enum.eModes[0xBF1DCC8138A9D39] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_warzone then
 		local f95_local0 = Engine.StorageGetBuffer( f95_arg0, Enum.StorageFileType[0xDF87425733853AE] )
 		if f95_local0 then
-			f95_local0[0x766CE60E25569A3][0x8A76647E94009C3]["characterindex"]:set( f95_arg1 )
+			f95_local0.cacloadouts.charactercontext.characterindex:set( f95_arg1 )
 		end
 	end
 end
 
 f0_local2 = {
-	[Enum.XONLINE_NAT_TYPE[0x9571467DC6166AD]] = {
-		[Enum.XONLINE_NAT_TYPE[0x9571467DC6166AD]] = true,
-		[Enum.XONLINE_NAT_TYPE[0x31FC575F7E84E5C]] = true,
-		[Enum.XONLINE_NAT_TYPE[0x28476FFCBABCB0]] = true
+	[Enum.XONLINE_NAT_TYPE.xonline_nat_open] = {
+		[Enum.XONLINE_NAT_TYPE.xonline_nat_open] = true,
+		[Enum.XONLINE_NAT_TYPE.xonline_nat_moderate] = true,
+		[Enum.XONLINE_NAT_TYPE.xonline_nat_strict] = true
 	},
-	[Enum.XONLINE_NAT_TYPE[0x31FC575F7E84E5C]] = {
-		[Enum.XONLINE_NAT_TYPE[0x9571467DC6166AD]] = true,
-		[Enum.XONLINE_NAT_TYPE[0x31FC575F7E84E5C]] = true,
-		[Enum.XONLINE_NAT_TYPE[0x28476FFCBABCB0]] = false
+	[Enum.XONLINE_NAT_TYPE.xonline_nat_moderate] = {
+		[Enum.XONLINE_NAT_TYPE.xonline_nat_open] = true,
+		[Enum.XONLINE_NAT_TYPE.xonline_nat_moderate] = true,
+		[Enum.XONLINE_NAT_TYPE.xonline_nat_strict] = false
 	},
-	[Enum.XONLINE_NAT_TYPE[0x28476FFCBABCB0]] = {
-		[Enum.XONLINE_NAT_TYPE[0x9571467DC6166AD]] = true,
-		[Enum.XONLINE_NAT_TYPE[0x31FC575F7E84E5C]] = false,
-		[Enum.XONLINE_NAT_TYPE[0x28476FFCBABCB0]] = false
+	[Enum.XONLINE_NAT_TYPE.xonline_nat_strict] = {
+		[Enum.XONLINE_NAT_TYPE.xonline_nat_open] = true,
+		[Enum.XONLINE_NAT_TYPE.xonline_nat_moderate] = false,
+		[Enum.XONLINE_NAT_TYPE.xonline_nat_strict] = false
 	}
 }
 f0_local0.IsCompatibleNatConnection = function ( f96_arg0, f96_arg1 )
 	if f96_arg1 == nil then
 		f96_arg1 = Engine.GetNatType()
 	end
-	if f96_arg1 == Enum.XONLINE_NAT_TYPE["xonline_nat_unknown"] or f96_arg0 == Enum.XONLINE_NAT_TYPE["xonline_nat_unknown"] then
+	if f96_arg1 == Enum.XONLINE_NAT_TYPE.xonline_nat_unknown or f96_arg0 == Enum.XONLINE_NAT_TYPE.xonline_nat_unknown then
 		return true
 	else
 		return f0_local2[f96_arg1][f96_arg0]
@@ -1513,15 +1513,15 @@ f0_local0.CampaignModeAvailable = function ()
 end
 
 f0_local0.GameModeAvailable = function ( f114_arg0 )
-	if f114_arg0 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f114_arg0 == Enum.eModes.mode_multiplayer then
 		return f0_local0.MultiplayerModeAvailable()
-	elseif f114_arg0 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f114_arg0 == Enum.eModes.mode_zombies then
 		return f0_local0.ZombiesModeAvailable()
-	elseif f114_arg0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f114_arg0 == Enum.eModes.mode_warzone then
 		return f0_local0.WarzoneModeAvailable()
-	elseif f114_arg0 == Enum.eModes[0x60063C67132EB69] then
+	elseif f114_arg0 == Enum.eModes.mode_campaign then
 		return f0_local0.CampaignModeAvailable()
-	elseif f114_arg0 == Enum.eModes[0xB22E0240605CFFE] then
+	elseif f114_arg0 == Enum.eModes.mode_invalid then
 		return true
 	else
 		return false
@@ -1571,7 +1571,7 @@ f0_local0.IsRoleUnlocked = function ( f119_arg0, f119_arg1, f119_arg2 )
 		local f119_local2 = Engine[0x8FF94BB44442412]( f119_local0[0x5E9D6D3424C0E7E], f119_arg1 )
 		if f119_local2 > CoDShared.EmptyItemIndex and not Engine.IsItemLocked( f119_arg0, f119_local2, f119_arg1 ) then
 			return true
-		elseif f119_local0[0x1D6157DBA773DA3] ~= nil and f119_local0[0x1D6157DBA773DA3] ~= 0x0 then
+		elseif f119_local0[0x1D6157DBA773DA3] ~= nil and f119_local0[0x1D6157DBA773DA3] ~= "" then
 			local f119_local3 = CoDShared.LootIndexInfoLookup( f119_local0[0x1D6157DBA773DA3] )
 			if f119_local3 then
 				return CoDShared.IsLootItemOwnedByName( f119_arg0, f119_local3.nameHash )
@@ -1582,7 +1582,7 @@ f0_local0.IsRoleUnlocked = function ( f119_arg0, f119_arg1, f119_arg2 )
 		return true
 	elseif Dvar[0x818EB2F0EDA28E5]:get() then
 		return true
-	elseif f119_arg1 == Enum.eModes[0xBF1DCC8138A9D39] and (not CoDShared.IsIntDvarNonZero( 0xA5FD7D94CFC9DFD ) or f119_local0[0xE69216C2DA7060A] ~= Enum.eModes[0x83EBA96F36BC4E5]) then
+	elseif f119_arg1 == Enum.eModes.mode_warzone and (not CoDShared.IsIntDvarNonZero( "wz_mp_character_unlocks_outfits" ) or f119_local0[0xE69216C2DA7060A] ~= Enum.eModes.mode_multiplayer) then
 		if Engine.StorageGetBuffer( f119_arg0, Enum.StorageFileType[0xD1A0F784B3C95A0] ) == nil then
 			return false
 		elseif Engine.StorageGetBuffer( f119_arg0, Enum.StorageFileType[0x9E0698F1D820882] ) == nil then
@@ -1593,8 +1593,8 @@ f0_local0.IsRoleUnlocked = function ( f119_arg0, f119_arg1, f119_arg2 )
 			return false
 		end
 		local f119_local5 = Engine[0x82C5756563934AE]( f119_arg1, f119_arg2 )
-		if f119_local5 and f119_local4[0x147738D5CEE9199][f119_local5] then
-			return f119_local4[0x147738D5CEE9199][f119_local5][0xA55E1714AECC27C]:get() == 1
+		if f119_local5 and f119_local4.characters[f119_local5] then
+			return f119_local4.characters[f119_local5].unlocked:get() == 1
 		end
 		return false
 	end
@@ -1621,9 +1621,9 @@ f0_local0.GetArenaSeasonElapsedSeconds = function ()
 	if Engine[0xEDCFC612B39E0C0]( "arena_day_overwrite" ) > 0 then
 		f122_local0 = Engine[0xEDCFC612B39E0C0]( "arena_day_overwrite" ) * f0_local0.SecondsInDay
 		if f0_local0.ArenaDayOverwriteFixedTime == -1 then
-			f0_local0.ArenaDayOverwriteFixedTime = Engine[0xEFF639FB8A1BE0A]()
+			f0_local0.ArenaDayOverwriteFixedTime = Engine.seconds()
 		else
-			f122_local0 = f122_local0 + Engine[0xEFF639FB8A1BE0A]() - f0_local0.ArenaDayOverwriteFixedTime
+			f122_local0 = f122_local0 + Engine.seconds() - f0_local0.ArenaDayOverwriteFixedTime
 		end
 	end
 	return f122_local0

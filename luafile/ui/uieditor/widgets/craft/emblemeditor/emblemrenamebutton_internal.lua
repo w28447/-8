@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/common/commonfocusbrackets" )
-require( "ui/uieditor/widgets/common/CommonPixelBacking" )
+require( "ui/uieditor/widgets/common/commonpixelbacking" )
 
 CoD.EmblemRenameButton_Internal = InheritFrom( LUI.UIElement )
 CoD.EmblemRenameButton_Internal.__defaultWidth = 400
@@ -99,7 +99,7 @@ CoD.EmblemRenameButton_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local LineFull = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	LineFull:setRGB( 0.64, 0.71, 0.78 )
-	LineFull:setImage( RegisterImage( 0xF0B4151480B7250 ) )
+	LineFull:setImage( RegisterImage( "uie_ui_menu_store_focus_frame_white" ) )
 	LineFull:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	LineFull:setShaderVector( 0, 0, 0, 0, 0 )
 	LineFull:setupNineSliceShader( 12, 12 )

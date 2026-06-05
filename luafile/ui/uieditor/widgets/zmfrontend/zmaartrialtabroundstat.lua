@@ -12,7 +12,7 @@ CoD.ZMAARTrialTabRoundStat.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local FocusedBg = LUI.UIImage.new( 0, 0, -2, 390, 0, 1, 0, 0 )
-	FocusedBg:setImage( RegisterImage( 0x381E78F61AF206 ) )
+	FocusedBg:setImage( RegisterImage( "uie_blood_paint" ) )
 	self:addElement( FocusedBg )
 	self.FocusedBg = FocusedBg
 	
@@ -52,7 +52,7 @@ CoD.ZMAARTrialTabRoundStat.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.TitleUnknown = TitleUnknown
 	
 	local Line = LUI.UIImage.new( 0, 0, 0, 348, 0, 0, 1, 21 )
-	Line:setImage( RegisterImage( 0x9EE19EB5765A644 ) )
+	Line:setImage( RegisterImage( "uie_strike_line" ) )
 	self:addElement( Line )
 	self.Line = Line
 	

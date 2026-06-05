@@ -199,14 +199,14 @@ CoD.BaseUtility.CachedKeyedLocStringTables = {}
 CoD.BaseUtility.GetLocStringListEntry = function ( f39_arg0, f39_arg1 )
 	if tonumber( f39_arg1 ) then
 		local f39_local0 = Engine[0xE00B2F29271C60B]( f39_arg0 )
-		return f39_local0.entries[f39_arg1][0xCE4FD9430E80CEA]
+		return f39_local0.entries[f39_arg1].value
 	elseif not CoD.BaseUtility.CachedKeyedLocStringTables[f39_arg0] then
 		local f39_local0 = Engine[0xE00B2F29271C60B]( f39_arg0 )
 		CoD.BaseUtility.CachedKeyedLocStringTables[f39_arg0] = {}
 		for f39_local4, f39_local5 in ipairs( f39_local0.entries ) do
-			CoD.BaseUtility.CachedKeyedLocStringTables[f39_arg0][f39_local4] = f39_local5[0xCE4FD9430E80CEA]
-			if f39_local5[0xDC94A19365B10EC] then
-				CoD.BaseUtility.CachedKeyedLocStringTables[f39_arg0][f39_local5[0xDC94A19365B10EC]] = f39_local5[0xCE4FD9430E80CEA]
+			CoD.BaseUtility.CachedKeyedLocStringTables[f39_arg0][f39_local4] = f39_local5.value
+			if f39_local5.key then
+				CoD.BaseUtility.CachedKeyedLocStringTables[f39_arg0][f39_local5.key] = f39_local5.value
 			end
 		end
 	end
@@ -289,7 +289,7 @@ end
 
 CoD.BaseUtility.SwitchModeOnMenu = function ( f47_arg0 )
 	local f47_local0 = LobbyData.GetCurrentMenuTarget()
-	CoD.BaseUtility.SwitchMode( f47_arg0, LuaUtils.GetEModeForLobbyMainMode( f47_local0["mainmode"] ) )
+	CoD.BaseUtility.SwitchMode( f47_arg0, LuaUtils.GetEModeForLobbyMainMode( f47_local0.mainmode ) )
 end
 
 CoD.BaseUtility.ProcessGridAction = function ( f48_arg0, f48_arg1, f48_arg2, f48_arg3 )
@@ -351,7 +351,7 @@ CoD.BaseUtility.GetMapValue = function ( f53_arg0, f53_arg1, f53_arg2 )
 end
 
 CoD.BaseUtility.GetGameModeOnMapNameString = function ( f54_arg0, f54_arg1 )
-	return Engine[0xF9F1239CFD921FE]( 0x9547CB092095AC0, Engine[0xF9F1239CFD921FE]( CoD.GameTypeUtility.GetGameTypeValue( f54_arg0, "nameRef", 0x0 ) ), CoD.MapUtility.GetMapValue( f54_arg1, "mapName", 0x0 ) )
+	return Engine[0xF9F1239CFD921FE]( "menu/x_on_x", Engine[0xF9F1239CFD921FE]( CoD.GameTypeUtility.GetGameTypeValue( f54_arg0, "nameRef", "" ) ), CoD.MapUtility.GetMapValue( f54_arg1, "mapName", "" ) )
 end
 
 CoD.BaseUtility.AlreadyRegistered = function ( f55_arg0 )
@@ -613,7 +613,7 @@ CoD.BaseUtility.PlaySoundOnce = function ( f87_arg0, f87_arg1 )
 		return 
 	else
 		f87_arg0._playOnceAliases[f87_arg1] = true
-		Engine.PlaySound( f87_arg1 )
+		Engine.playsound( f87_arg1 )
 	end
 end
 
@@ -621,7 +621,7 @@ CoD.BaseUtility.StopPlayOnceSound = function ( f88_arg0, f88_arg1 )
 	if f88_arg0._playOnceAliases then
 		f88_arg0._playOnceAliases[f88_arg1] = nil
 	end
-	Engine.StopSound( f88_arg1 )
+	Engine.stopsound( f88_arg1 )
 end
 
 CoD.BaseUtility.AddToMenuList = function ( f89_arg0 )
@@ -676,11 +676,11 @@ end
 
 CoD.BaseUtility.SetStateByMenuSessionMode = function ( f98_arg0, f98_arg1, f98_arg2 )
 	local f98_local0 = CoD.BaseUtility.GetMenuSessionMode( f98_arg0 )
-	if f98_local0 == Enum.eModes[0x60063C67132EB69] then
+	if f98_local0 == Enum.eModes.mode_campaign then
 		f98_arg1:setState( f98_arg2, "Campaign" )
-	elseif f98_local0 == Enum.eModes[0x83EBA96F36BC4E5] then
+	elseif f98_local0 == Enum.eModes.mode_multiplayer then
 		f98_arg1:setState( f98_arg2, "Multiplayer" )
-	elseif f98_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f98_local0 == Enum.eModes.mode_zombies then
 		f98_arg1:setState( f98_arg2, "Zombies" )
 	else
 		f98_arg1:setState( f98_arg2, "DefaultState" )
@@ -689,13 +689,13 @@ end
 
 CoD.BaseUtility.GetCurrentSessionModeString = function ()
 	local f99_local0 = Engine.CurrentSessionMode()
-	if f99_local0 == Enum.eModes[0x60063C67132EB69] then
+	if f99_local0 == Enum.eModes.mode_campaign then
 		return "cp"
-	elseif f99_local0 == Enum.eModes[0x83EBA96F36BC4E5] then
+	elseif f99_local0 == Enum.eModes.mode_multiplayer then
 		return "mp"
-	elseif f99_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f99_local0 == Enum.eModes.mode_zombies then
 		return "zm"
-	elseif f99_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f99_local0 == Enum.eModes.mode_warzone then
 		return "wz"
 	else
 		return ""
@@ -854,7 +854,7 @@ CoD.BaseUtility.StringModulo = function ( f122_arg0, f122_arg1 )
 end
 
 CoD.BaseUtility.AddToTableIfNotEmpty = function ( f123_arg0, f123_arg1 )
-	if f123_arg1 ~= 0x0 then
+	if f123_arg1 ~= "" then
 		f123_arg0[f123_arg1] = true
 	end
 end
@@ -874,7 +874,7 @@ CoD.BaseUtility.ForceStreamHelper = function ( f124_arg0, f124_arg1 )
 end
 
 CoD.BaseUtility.AddForcedImageToTable = function ( f125_arg0, f125_arg1 )
-	if f125_arg0 ~= 0x0 and f125_arg0 ~= nil then
+	if f125_arg0 ~= "" and f125_arg0 ~= nil then
 		f125_arg1[f125_arg0] = true
 	end
 end
@@ -905,7 +905,7 @@ end
 
 CoD.BaseUtility.IsCurrentLanguageRussian = function ()
 	local f129_local0
-	if Dvar[0xA97AE527D90FB24]:get() ~= Enum[0xAA0EE37DF15F5A8][0xD4A7E4FA92D24E1] and Dvar[0xA97AE527D90FB24]:get() ~= Enum[0xAA0EE37DF15F5A8][0x37F47E9EC48B533] then
+	if Dvar[0xA97AE527D90FB24]:get() ~= Enum[0xAA0EE37DF15F5A8].language_russian and Dvar[0xA97AE527D90FB24]:get() ~= Enum[0xAA0EE37DF15F5A8][0x37F47E9EC48B533] then
 		f129_local0 = false
 	else
 		f129_local0 = true
@@ -915,7 +915,7 @@ end
 
 CoD.BaseUtility.IsCurrentLanguageAsian = function ()
 	local f130_local0 = Dvar[0xA97AE527D90FB24]:get()
-	if f130_local0 == Enum[0xAA0EE37DF15F5A8][0xB5C0CC5AE7B0E08] or f130_local0 == Enum[0xAA0EE37DF15F5A8][0x518A7E7D67F8C88] or f130_local0 == Enum[0xAA0EE37DF15F5A8][0xB481FC3055D43A1] or f130_local0 == Enum[0xAA0EE37DF15F5A8][0x9A4194D08679C69] or f130_local0 == Enum[0xAA0EE37DF15F5A8][0x5D4AD876D4B4D93] then
+	if f130_local0 == Enum[0xAA0EE37DF15F5A8].language_korean or f130_local0 == Enum[0xAA0EE37DF15F5A8][0x518A7E7D67F8C88] or f130_local0 == Enum[0xAA0EE37DF15F5A8][0xB481FC3055D43A1] or f130_local0 == Enum[0xAA0EE37DF15F5A8][0x9A4194D08679C69] or f130_local0 == Enum[0xAA0EE37DF15F5A8].language_japanese then
 		return true
 	else
 		return false

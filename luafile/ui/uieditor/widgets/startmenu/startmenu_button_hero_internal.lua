@@ -42,12 +42,12 @@ CoD.StartMenu_Button_Hero_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	self.NoiseTiledBackingAdd = NoiseTiledBackingAdd
 	
 	local imageContainer = CoD.StartMenu_ImageContainer.new( f1_arg0, f1_arg1, 0, 1, 3, -3, 0, 1, 3, -3 )
-	imageContainer.ImageContainer:setImage( RegisterImage( 0x1FC34D13866A712 ) )
+	imageContainer.ImageContainer:setImage( RegisterImage( "uie_t7_menu_control_checkbox" ) )
 	self:addElement( imageContainer )
 	self.imageContainer = imageContainer
 	
 	local Title = LUI.UIText.new( 0, 0, 19, 1065, 1, 1, -35, -5 )
-	Title:setText( Engine[0xF9F1239CFD921FE]( 0x55D96CC762EABDD ) )
+	Title:setText( Engine[0xF9F1239CFD921FE]( "menu/multiplayer" ) )
 	Title:setTTF( "dinnext_regular" )
 	Title:setLetterSpacing( 0.5 )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -57,7 +57,7 @@ CoD.StartMenu_Button_Hero_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local Subtitle = CoD.StartMenu_Identity_SubTitle.new( f1_arg0, f1_arg1, 0, 0, 8, 1076, 0, 0, 0.5, 39.5 )
 	Subtitle:setRGB( 0.92, 0.92, 0.92 )
-	Subtitle.SubtitleText:setText( Engine[0xF9F1239CFD921FE]( 0x91415DF8989B05E ) )
+	Subtitle.SubtitleText:setText( Engine[0xF9F1239CFD921FE]( "menu/gunsmith_desc" ) )
 	self:addElement( Subtitle )
 	self.Subtitle = Subtitle
 	

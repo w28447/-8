@@ -24,7 +24,7 @@ CoD.PC_Achievements.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local Border = LUI.UIImage.new( 0, 1, -72, 72, 0.5, 0.5, -360, 360 )
 	Border:setRGB( 0.8, 0.76, 0.7 )
 	Border:setAlpha( 0.03 )
-	Border:setImage( RegisterImage( 0xF1E3082B39E99BB ) )
+	Border:setImage( RegisterImage( "uie_highlight_border_line" ) )
 	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 6, 6 )

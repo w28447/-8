@@ -43,7 +43,7 @@ CoD.PC_SocialMenu_SortButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local SortText = LUI.UIText.new( 0, 0, 3, 211, 0.5, 0.5, -9, 9 )
 	SortText:setRGB( 0.76, 0.76, 0.76 )
-	SortText:setText( Engine[0xF9F1239CFD921FE]( 0xBA47B26F6A681C4 ) )
+	SortText:setText( Engine[0xF9F1239CFD921FE]( "menu/sorting_alphabetical" ) )
 	SortText:setTTF( "ttmussels_regular" )
 	SortText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	SortText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -51,42 +51,42 @@ CoD.PC_SocialMenu_SortButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.SortText = SortText
 	
 	local Arrow = LUI.UIImage.new( 0, 0, 190, 210, 0.5, 0.5, -10, 10 )
-	Arrow:setImage( RegisterImage( 0x5B12CB88F5E229D ) )
+	Arrow:setImage( RegisterImage( "keyarrowdown" ) )
 	self:addElement( Arrow )
 	self.Arrow = Arrow
 	
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f2_arg0, f2_arg1, f2_arg2, f2_arg3 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsInDefaultState( self ) then
-			CoD.PCBattlenetUtility.SetSortFunction( f2_arg2, CoD.PCBattlenetUtility.SortEnum.ALPHABETICALLY_DESC )
-			SetState( self, "AlphabeticalReversed", f2_arg2 )
+			CoD.PCBattlenetUtility.SetSortFunction( controller, CoD.PCBattlenetUtility.SortEnum.ALPHABETICALLY_DESC )
+			SetState( self, "AlphabeticalReversed", controller )
 			return true
 		elseif IsSelfInState( self, "AlphabeticalReversed" ) then
-			CoD.PCBattlenetUtility.SetSortFunction( f2_arg2, CoD.PCBattlenetUtility.SortEnum.STARTUPTIME_ASC )
-			SetState( self, "Recent", f2_arg2 )
+			CoD.PCBattlenetUtility.SetSortFunction( controller, CoD.PCBattlenetUtility.SortEnum.STARTUPTIME_ASC )
+			SetState( self, "Recent", controller )
 			return true
 		elseif IsSelfInState( self, "Recent" ) then
-			CoD.PCBattlenetUtility.SetSortFunction( f2_arg2, CoD.PCBattlenetUtility.SortEnum.STARTUPTIME_DESC )
-			SetState( self, "RecentReversed", f2_arg2 )
+			CoD.PCBattlenetUtility.SetSortFunction( controller, CoD.PCBattlenetUtility.SortEnum.STARTUPTIME_DESC )
+			SetState( self, "RecentReversed", controller )
 			return true
 		elseif IsSelfInState( self, "RecentReversed" ) then
-			CoD.PCBattlenetUtility.SetSortFunction( f2_arg2, CoD.PCBattlenetUtility.SortEnum.ALPHABETICALLY_ASC )
-			SetState( self, "DefaultState", f2_arg2 )
+			CoD.PCBattlenetUtility.SetSortFunction( controller, CoD.PCBattlenetUtility.SortEnum.ALPHABETICALLY_ASC )
+			SetState( self, "DefaultState", controller )
 			return true
 		else
 			
 		end
-	end, function ( f3_arg0, f3_arg1, f3_arg2 )
+	end, function ( element, menu, controller )
 		if IsInDefaultState( self ) then
-			CoD.Menu.SetButtonLabel( f3_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		elseif IsSelfInState( self, "AlphabeticalReversed" ) then
-			CoD.Menu.SetButtonLabel( f3_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		elseif IsSelfInState( self, "Recent" ) then
-			CoD.Menu.SetButtonLabel( f3_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		elseif IsSelfInState( self, "RecentReversed" ) then
-			CoD.Menu.SetButtonLabel( f3_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -108,7 +108,7 @@ CoD.PC_SocialMenu_SortButton.__resetProperties = function ( f4_arg0 )
 	f4_arg0.Arrow:completeAnimation()
 	f4_arg0.TextureButtonSortAdd:setAlpha( 0 )
 	f4_arg0.SortText:setRGB( 0.76, 0.76, 0.76 )
-	f4_arg0.SortText:setText( Engine[0xF9F1239CFD921FE]( 0xBA47B26F6A681C4 ) )
+	f4_arg0.SortText:setText( Engine[0xF9F1239CFD921FE]( "menu/sorting_alphabetical" ) )
 	f4_arg0.Arrow:setTopBottom( 0.5, 0.5, -10, 10 )
 end
 
@@ -207,7 +207,7 @@ CoD.PC_SocialMenu_SortButton.__clipsPerState = {
 			f15_arg0:__resetProperties()
 			f15_arg0:setupElementClipCounter( 1 )
 			f15_arg0.SortText:completeAnimation()
-			f15_arg0.SortText:setText( Engine[0xF9F1239CFD921FE]( 0xC086671554562E1 ) )
+			f15_arg0.SortText:setText( Engine[0xF9F1239CFD921FE]( "menu/sorting_recent" ) )
 			f15_arg0.clipFinished( f15_arg0.SortText )
 		end,
 		Focus = function ( f16_arg0, f16_arg1 )
@@ -218,7 +218,7 @@ CoD.PC_SocialMenu_SortButton.__clipsPerState = {
 			f16_arg0.clipFinished( f16_arg0.TextureButtonSortAdd )
 			f16_arg0.SortText:completeAnimation()
 			f16_arg0.SortText:setRGB( 1, 1, 1 )
-			f16_arg0.SortText:setText( Engine[0xF9F1239CFD921FE]( 0xC086671554562E1 ) )
+			f16_arg0.SortText:setText( Engine[0xF9F1239CFD921FE]( "menu/sorting_recent" ) )
 			f16_arg0.clipFinished( f16_arg0.SortText )
 		end,
 		LoseFocus = function ( f17_arg0, f17_arg1 )
@@ -243,7 +243,7 @@ CoD.PC_SocialMenu_SortButton.__clipsPerState = {
 			
 			f17_arg0.SortText:completeAnimation()
 			f17_arg0.SortText:setRGB( 1, 1, 1 )
-			f17_arg0.SortText:setText( Engine[0xF9F1239CFD921FE]( 0xC086671554562E1 ) )
+			f17_arg0.SortText:setText( Engine[0xF9F1239CFD921FE]( "menu/sorting_recent" ) )
 			f17_local1( f17_arg0.SortText )
 		end
 	},
@@ -252,7 +252,7 @@ CoD.PC_SocialMenu_SortButton.__clipsPerState = {
 			f20_arg0:__resetProperties()
 			f20_arg0:setupElementClipCounter( 2 )
 			f20_arg0.SortText:completeAnimation()
-			f20_arg0.SortText:setText( Engine[0xF9F1239CFD921FE]( 0xC086671554562E1 ) )
+			f20_arg0.SortText:setText( Engine[0xF9F1239CFD921FE]( "menu/sorting_recent" ) )
 			f20_arg0.clipFinished( f20_arg0.SortText )
 			f20_arg0.Arrow:completeAnimation()
 			f20_arg0.Arrow:setTopBottom( 0.5, 0.5, 10, -10 )
@@ -266,7 +266,7 @@ CoD.PC_SocialMenu_SortButton.__clipsPerState = {
 			f21_arg0.clipFinished( f21_arg0.TextureButtonSortAdd )
 			f21_arg0.SortText:completeAnimation()
 			f21_arg0.SortText:setRGB( 1, 1, 1 )
-			f21_arg0.SortText:setText( Engine[0xF9F1239CFD921FE]( 0xC086671554562E1 ) )
+			f21_arg0.SortText:setText( Engine[0xF9F1239CFD921FE]( "menu/sorting_recent" ) )
 			f21_arg0.clipFinished( f21_arg0.SortText )
 			f21_arg0.Arrow:completeAnimation()
 			f21_arg0.Arrow:setTopBottom( 0.5, 0.5, 10, -10 )
@@ -294,7 +294,7 @@ CoD.PC_SocialMenu_SortButton.__clipsPerState = {
 			
 			f22_arg0.SortText:completeAnimation()
 			f22_arg0.SortText:setRGB( 1, 1, 1 )
-			f22_arg0.SortText:setText( Engine[0xF9F1239CFD921FE]( 0xC086671554562E1 ) )
+			f22_arg0.SortText:setText( Engine[0xF9F1239CFD921FE]( "menu/sorting_recent" ) )
 			f22_local1( f22_arg0.SortText )
 			f22_arg0.Arrow:completeAnimation()
 			f22_arg0.Arrow:setTopBottom( 0.5, 0.5, 10, -10 )

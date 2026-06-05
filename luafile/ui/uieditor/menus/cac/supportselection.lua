@@ -100,60 +100,60 @@ LUI.createMenu.SupportSelection = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0xC083113BC81F23F] )
 		return f7_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( OptionsList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if not CoD.ScorestreakSelectUtility.IsScorestreakEquipped( f8_arg0, f8_arg1, f8_arg2 ) and not CoD.ScorestreakSelectUtility.IsScorestreakLocked( f8_arg0, f8_arg1, f8_arg2 ) and IsMouseOrKeyboard( f8_arg2 ) then
-			CoD.ScorestreakSelectUtility.SelectScorestreakOption( self.OptionsList, f8_arg1, f8_arg2, "" )
+	f1_local1:AddButtonCallbackFunction( OptionsList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not CoD.ScorestreakSelectUtility.IsScorestreakEquipped( element, menu, controller ) and not CoD.ScorestreakSelectUtility.IsScorestreakLocked( element, menu, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.ScorestreakSelectUtility.SelectScorestreakOption( self.OptionsList, menu, controller, "" )
 			return true
-		elseif not CoD.ScorestreakSelectUtility.IsScorestreakEquipped( f8_arg0, f8_arg1, f8_arg2 ) and not CoD.ScorestreakSelectUtility.IsScorestreakLocked( f8_arg0, f8_arg1, f8_arg2 ) and IsGamepad( f8_arg2 ) then
-			CoD.ScorestreakSelectUtility.SelectScorestreakOption( self.OptionsList, f8_arg1, f8_arg2, "" )
+		elseif not CoD.ScorestreakSelectUtility.IsScorestreakEquipped( element, menu, controller ) and not CoD.ScorestreakSelectUtility.IsScorestreakLocked( element, menu, controller ) and IsGamepad( controller ) then
+			CoD.ScorestreakSelectUtility.SelectScorestreakOption( self.OptionsList, menu, controller, "" )
 			return true
-		elseif CoD.ScorestreakSelectUtility.IsScorestreakEquipped( f8_arg0, f8_arg1, f8_arg2 ) and IsMouseOrKeyboard( f8_arg2 ) then
-			CoD.ScorestreakSelectUtility.RemoveScorestreakOption( self.OptionsList, f8_arg1, f8_arg2 )
+		elseif CoD.ScorestreakSelectUtility.IsScorestreakEquipped( element, menu, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.ScorestreakSelectUtility.RemoveScorestreakOption( self.OptionsList, menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if not CoD.ScorestreakSelectUtility.IsScorestreakEquipped( f9_arg0, f9_arg1, f9_arg2 ) and not CoD.ScorestreakSelectUtility.IsScorestreakLocked( f9_arg0, f9_arg1, f9_arg2 ) and IsMouseOrKeyboard( f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not CoD.ScorestreakSelectUtility.IsScorestreakEquipped( element, menu, controller ) and not CoD.ScorestreakSelectUtility.IsScorestreakLocked( element, menu, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif not CoD.ScorestreakSelectUtility.IsScorestreakEquipped( f9_arg0, f9_arg1, f9_arg2 ) and not CoD.ScorestreakSelectUtility.IsScorestreakLocked( f9_arg0, f9_arg1, f9_arg2 ) and IsGamepad( f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif not CoD.ScorestreakSelectUtility.IsScorestreakEquipped( element, menu, controller ) and not CoD.ScorestreakSelectUtility.IsScorestreakLocked( element, menu, controller ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif CoD.ScorestreakSelectUtility.IsScorestreakEquipped( f9_arg0, f9_arg1, f9_arg2 ) and IsMouseOrKeyboard( f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif CoD.ScorestreakSelectUtility.IsScorestreakEquipped( element, menu, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( OptionsList, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		if CoD.ScorestreakSelectUtility.IsScorestreakEquipped( f10_arg0, f10_arg1, f10_arg2 ) and IsMouseOrKeyboard( f10_arg2 ) then
-			CoD.ScorestreakSelectUtility.RemoveScorestreakOption( self.OptionsList, f10_arg1, f10_arg2 )
+	f1_local1:AddButtonCallbackFunction( OptionsList, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( element, menu, controller, model )
+		if CoD.ScorestreakSelectUtility.IsScorestreakEquipped( element, menu, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.ScorestreakSelectUtility.RemoveScorestreakOption( self.OptionsList, menu, controller )
 			PlaySoundAlias( "cac_equipment_remove" )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		if CoD.ScorestreakSelectUtility.IsScorestreakEquipped( f11_arg0, f11_arg1, f11_arg2 ) and IsMouseOrKeyboard( f11_arg2 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x679ACA6FFC6C8F3, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+	end, function ( element, menu, controller )
+		if CoD.ScorestreakSelectUtility.IsScorestreakEquipped( element, menu, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/remove", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( OptionsList, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		if CoD.ScorestreakSelectUtility.IsScorestreakEquipped( f12_arg0, f12_arg1, f12_arg2 ) and IsGamepad( f12_arg2 ) then
-			CoD.ScorestreakSelectUtility.RemoveScorestreakOption( self.OptionsList, f12_arg1, f12_arg2 )
+	f1_local1:AddButtonCallbackFunction( OptionsList, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if CoD.ScorestreakSelectUtility.IsScorestreakEquipped( element, menu, controller ) and IsGamepad( controller ) then
+			CoD.ScorestreakSelectUtility.RemoveScorestreakOption( self.OptionsList, menu, controller )
 			PlaySoundAlias( "cac_equipment_remove" )
 			return true
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		if CoD.ScorestreakSelectUtility.IsScorestreakEquipped( f13_arg0, f13_arg1, f13_arg2 ) and IsGamepad( f13_arg2 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ScorestreakSelectUtility.IsScorestreakEquipped( element, menu, controller ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", nil, nil )
 			return true
 		else
 			return false
@@ -191,7 +191,7 @@ LUI.createMenu.SupportSelection = function ( f1_arg0, f1_arg1 )
 	
 	CACHeader = CoD.CommonHeader.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0, 0, 0, 67 )
 	CACHeader.BGSceneBlur:setAlpha( 0 )
-	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0xD17CC7D16033AEA ) )
+	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/scorestreaks_caps" ) )
 	CACHeader.subtitle.subtitle:setAlpha( 0 )
 	CACHeader:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f16_local0 = model:get()
@@ -262,7 +262,7 @@ LUI.createMenu.SupportSelection = function ( f1_arg0, f1_arg1 )
 	
 	local ScoreCostHeader = LUI.UIText.new( 0.5, 0.5, 265, 443, 0.5, 0.5, 303, 321 )
 	ScoreCostHeader:setRGB( 0.86, 0.74, 0.25 )
-	ScoreCostHeader:setText( Engine[0xF9F1239CFD921FE]( 0xA75180BC7FDA8F5 ) )
+	ScoreCostHeader:setText( Engine[0xF9F1239CFD921FE]( "menu/score_caps" ) )
 	ScoreCostHeader:setTTF( "ttmussels_regular" )
 	ScoreCostHeader:setLetterSpacing( 6 )
 	ScoreCostHeader:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -408,43 +408,43 @@ LUI.createMenu.SupportSelection = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( f30_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA] )
 		CoD.Menu.UpdateButtonShownState( f30_arg1, f1_local1, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09] )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f31_arg0, f31_arg1, f31_arg2, f31_arg3 )
-		CoD.ScorestreakSelectUtility.SaveLoadout( f31_arg1, f31_arg2 )
-		GoBack( self, f31_arg2 )
-		SendClientScriptMenuChangeNotify( f31_arg2, f31_arg1, false )
-		CoD.LobbyUtility.SetMenuControllerRestriction( self, f31_arg2, 0 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		CoD.ScorestreakSelectUtility.SaveLoadout( menu, controller )
+		GoBack( self, controller )
+		SendClientScriptMenuChangeNotify( controller, menu, false )
+		CoD.LobbyUtility.SetMenuControllerRestriction( self, controller, 0 )
 		return true
-	end, function ( f32_arg0, f32_arg1, f32_arg2 )
-		CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA], "ui_contextual_2", function ( f33_arg0, f33_arg1, f33_arg2, f33_arg3 )
-		if IsMouseOrKeyboard( f33_arg2 ) then
-			CoD.ScorestreakSelectUtility.RemoveAllScorestreaks( f33_arg1, f33_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA], "ui_contextual_2", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) then
+			CoD.ScorestreakSelectUtility.RemoveAllScorestreaks( menu, controller )
 			PlaySoundAlias( "cac_equipment_remove" )
 			return true
 		else
 			
 		end
-	end, function ( f34_arg0, f34_arg1, f34_arg2 )
-		if IsMouseOrKeyboard( f34_arg2 ) then
-			CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0xE9CED3392B6716C, nil, "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "menu/clear_all_caps", nil, "ui_contextual_2" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f35_arg0, f35_arg1, f35_arg2, f35_arg3 )
-		if IsGamepad( f35_arg2 ) then
-			CoD.ScorestreakSelectUtility.RemoveAllScorestreaks( f35_arg1, f35_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( element, menu, controller, model )
+		if IsGamepad( controller ) then
+			CoD.ScorestreakSelectUtility.RemoveAllScorestreaks( menu, controller )
 			PlaySoundAlias( "cac_equipment_remove" )
 			return true
 		else
 			
 		end
-	end, function ( f36_arg0, f36_arg1, f36_arg2 )
-		if IsGamepad( f36_arg2 ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0xE9CED3392B6716C, Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/clear_all_caps", Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		else
 			return false

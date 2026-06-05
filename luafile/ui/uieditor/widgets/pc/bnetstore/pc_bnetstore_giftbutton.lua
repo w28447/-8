@@ -65,8 +65,8 @@ CoD.PC_BnetStore_GiftButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 			end
 		}
 	} )
-	ButtonTitle.GiftSalePrice:setText( Engine[0xF9F1239CFD921FE]( 0xCAF60F095239BED ) )
-	ButtonTitle.GiftPrice:setText( Engine[0xF9F1239CFD921FE]( 0xCAF60F095239BED ) )
+	ButtonTitle.GiftSalePrice:setText( Engine[0xF9F1239CFD921FE]( "store/gift" ) )
+	ButtonTitle.GiftPrice:setText( Engine[0xF9F1239CFD921FE]( "store/gift" ) )
 	self:addElement( ButtonTitle )
 	self.ButtonTitle = ButtonTitle
 	

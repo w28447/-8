@@ -8,7 +8,7 @@ CoD.CommonHeaderHUDBG02.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.soundSet = "default"
 	
 	local CommonHeaderBG01 = LUI.UIImage.new( 0, 1, 0, 0, 0.5, 0.5, -26, 26 )
-	CommonHeaderBG01:setImage( RegisterImage( 0x74F7F572B3A3C58 ) )
+	CommonHeaderBG01:setImage( RegisterImage( "uie_ui_hud_common_header_bg01" ) )
 	CommonHeaderBG01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	CommonHeaderBG01:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonHeaderBG01:setupNineSliceShader( 52, 52 )

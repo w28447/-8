@@ -10,7 +10,7 @@ CoD.CommonScalingListHorizontalPips.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local backing = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	backing:setRGB( 0.3, 0.29, 0.28 )
 	backing:setAlpha( 0.9 )
-	backing:setImage( RegisterImage( 0x1B69BB6285C5BBB ) )
+	backing:setImage( RegisterImage( "uie_hud_core_loadout_panel1" ) )
 	backing:setMaterial( LUI.UIImage.GetCachedMaterial( 0x31E7B3C72564429 ) )
 	backing:setShaderVector( 0, 0, 0, 0.55, 0.13 )
 	backing:setShaderVector( 1, 10, 1, 0, 0 )
@@ -21,7 +21,7 @@ CoD.CommonScalingListHorizontalPips.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local current = LUI.UIImage.new( 0, 1, 0, 0, 0, 2, 0, 0 )
 	current:setRGB( 0.96, 0.93, 0.84 )
-	current:setImage( RegisterImage( 0x1B69BB6285C5BBB ) )
+	current:setImage( RegisterImage( "uie_hud_core_loadout_panel1" ) )
 	current:setMaterial( LUI.UIImage.GetCachedMaterial( 0x31E7B3C72564429 ) )
 	current:setShaderVector( 0, 0, 0, 0.55, 0.13 )
 	current:setShaderVector( 1, 10, 1, 0, 0 )

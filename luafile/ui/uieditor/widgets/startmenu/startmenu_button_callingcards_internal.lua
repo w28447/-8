@@ -52,7 +52,7 @@ CoD.StartMenu_Button_CallingCards_Internal.new = function ( f1_arg0, f1_arg1, f1
 	self.Spinner = Spinner
 	
 	local Title = LUI.UIText.new( 0, 0, 17.5, 326.5, 1, 1, -36.5, -3.5 )
-	Title:setText( Engine[0xF9F1239CFD921FE]( 0x55D96CC762EABDD ) )
+	Title:setText( Engine[0xF9F1239CFD921FE]( "menu/multiplayer" ) )
 	Title:setTTF( "ttmussels_demibold" )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Title:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

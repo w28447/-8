@@ -1,34 +1,34 @@
 require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_crimewave_criminalcar" )
 require( "ui/uieditor/widgets/callingcards/loot3/ui_icon_callingcards_crimewave_policecar" )
 
-CoD[0x8F2997EDAA1CF79] = InheritFrom( LUI.UIElement )
-CoD[0x8F2997EDAA1CF79].__defaultWidth = 960
-CoD[0x8F2997EDAA1CF79].__defaultHeight = 240
-CoD[0x8F2997EDAA1CF79].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.ui_icon_callingcards_crimewave = InheritFrom( LUI.UIElement )
+CoD.ui_icon_callingcards_crimewave.__defaultWidth = 960
+CoD.ui_icon_callingcards_crimewave.__defaultHeight = 240
+CoD.ui_icon_callingcards_crimewave.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x8F2997EDAA1CF79] )
+	self:setClass( CoD.ui_icon_callingcards_crimewave )
 	self.id = "ui_icon_callingcards_crimewave"
 	self.soundSet = "none"
 	self.anyChildUsesUpdateState = true
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local bg = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	bg:setImage( RegisterImage( 0xE217470E27357D9 ) )
+	bg:setImage( RegisterImage( "uie_ui_menu_callingcards_crimewave_bg" ) )
 	self:addElement( bg )
 	self.bg = bg
 	
 	local reardirt = LUI.UIImage.new( 0, 0, -8, 656, 0, 0, -40, 240 )
-	reardirt:setImage( RegisterImage( 0x25B8FEE0AB2968D ) )
+	reardirt:setImage( RegisterImage( "uie_ui_menu_callingcards_crimewave_backdust" ) )
 	self:addElement( reardirt )
 	self.reardirt = reardirt
 	
 	local brokenwood1 = LUI.UIImage.new( 0, 0, -23, 545, 0, 0, -68, 252 )
-	brokenwood1:setImage( RegisterImage( 0x7AF460FE1408FA5 ) )
+	brokenwood1:setImage( RegisterImage( "uie_ui_menu_callingcards_crimewave_brokenwood1" ) )
 	self:addElement( brokenwood1 )
 	self.brokenwood1 = brokenwood1
 	
 	local brokenwood2 = LUI.UIImage.new( 0, 0, 584, 1024, 0, 0, -22, 242 )
-	brokenwood2:setImage( RegisterImage( 0x7AF430FE1408A8C ) )
+	brokenwood2:setImage( RegisterImage( "uie_ui_menu_callingcards_crimewave_brokenwood2" ) )
 	self:addElement( brokenwood2 )
 	self.brokenwood2 = brokenwood2
 	
@@ -37,7 +37,7 @@ CoD[0x8F2997EDAA1CF79].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.policecar = policecar
 	
 	local fence3 = LUI.UIImage.new( 0, 0, 46.5, 461.5, 0, 0, 13.5, 48.5 )
-	fence3:setImage( RegisterImage( 0xD3711A2DD59B5C ) )
+	fence3:setImage( RegisterImage( "uie_ui_menu_callingcards_crimewave_fence3" ) )
 	self:addElement( fence3 )
 	self.fence3 = fence3
 	
@@ -46,27 +46,27 @@ CoD[0x8F2997EDAA1CF79].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.criminalcar = criminalcar
 	
 	local fence2 = LUI.UIImage.new( 0, 0, 605, 973, 0, 0, 10, 66 )
-	fence2:setImage( RegisterImage( 0xD3731A2DD59EC2 ) )
+	fence2:setImage( RegisterImage( "uie_ui_menu_callingcards_crimewave_fence1" ) )
 	self:addElement( fence2 )
 	self.fence2 = fence2
 	
 	local fence4 = LUI.UIImage.new( 0, 0, 193, 385, 0, 0, 76, 252 )
-	fence4:setImage( RegisterImage( 0xD3701A2DD599A9 ) )
+	fence4:setImage( RegisterImage( "uie_ui_menu_callingcards_crimewave_fence4" ) )
 	self:addElement( fence4 )
 	self.fence4 = fence4
 	
 	local dirt = LUI.UIImage.new( 0, 0, 148, 812, 0, 0, 145, 240 )
-	dirt:setImage( RegisterImage( 0xE7E57B670B01843 ) )
+	dirt:setImage( RegisterImage( "uie_ui_menu_callingcards_crimewave_dirt" ) )
 	self:addElement( dirt )
 	self.dirt = dirt
 	
 	local frontdirt = LUI.UIImage.new( 0, 0, 0, 944, 0, 0, 120, 256 )
-	frontdirt:setImage( RegisterImage( 0x2A8A44B3B0D6AD1 ) )
+	frontdirt:setImage( RegisterImage( "uie_ui_menu_callingcards_crimewave_frontdust" ) )
 	self:addElement( frontdirt )
 	self.frontdirt = frontdirt
 	
 	local fence1 = LUI.UIImage.new( 0, 0, 572, 668, 0, 0, 48.5, 80.5 )
-	fence1:setImage( RegisterImage( 0xD3721A2DD59D0F ) )
+	fence1:setImage( RegisterImage( "uie_ui_menu_callingcards_crimewave_fence2" ) )
 	self:addElement( fence1 )
 	self.fence1 = fence1
 	
@@ -85,7 +85,7 @@ CoD[0x8F2997EDAA1CF79].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x8F2997EDAA1CF79].__resetProperties = function ( f2_arg0 )
+CoD.ui_icon_callingcards_crimewave.__resetProperties = function ( f2_arg0 )
 	f2_arg0.criminalcar:completeAnimation()
 	f2_arg0.policecar:completeAnimation()
 	f2_arg0.fence4:completeAnimation()
@@ -142,7 +142,7 @@ CoD[0x8F2997EDAA1CF79].__resetProperties = function ( f2_arg0 )
 	f2_arg0.brokenwood1:setScale( 1, 1 )
 end
 
-CoD[0x8F2997EDAA1CF79].__clipsPerState = {
+CoD.ui_icon_callingcards_crimewave.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -460,7 +460,7 @@ CoD[0x8F2997EDAA1CF79].__clipsPerState = {
 		end
 	}
 }
-CoD[0x8F2997EDAA1CF79].__onClose = function ( f33_arg0 )
+CoD.ui_icon_callingcards_crimewave.__onClose = function ( f33_arg0 )
 	f33_arg0.policecar:close()
 	f33_arg0.criminalcar:close()
 end

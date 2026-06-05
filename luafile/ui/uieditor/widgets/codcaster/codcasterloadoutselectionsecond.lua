@@ -25,7 +25,7 @@ CoD.CodCasterLoadoutSelectionSecond.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	ItemName:setBackingAlpha( 0.9 )
 	ItemName:setBackingXPadding( 10 )
 	ItemName:setBackingYPadding( 3 )
-	ItemName:setBackingMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
+	ItemName:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_blend" ) )
 	self:addElement( ItemName )
 	self.ItemName = ItemName
 	

@@ -20,7 +20,7 @@ CoD.StartMenu_Options_PC_Voice_VoiceBar.new = function ( f1_arg0, f1_arg1, f1_ar
 	local Maximum = LUI.UIText.new( 0.5, 0.5, 211.5, 336.5, 0.5, 0.5, 12.5, 27.5 )
 	Maximum:setRGB( 0.76, 0.76, 0.76 )
 	Maximum:setAlpha( 0.44 )
-	Maximum:setText( LocalizeToUpperString( 0x4EF66575DDB929 ) )
+	Maximum:setText( LocalizeToUpperString( "mpui/max_caps" ) )
 	Maximum:setTTF( "dinnext_regular" )
 	Maximum:setLetterSpacing( 1 )
 	Maximum:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
@@ -45,7 +45,7 @@ CoD.StartMenu_Options_PC_Voice_VoiceBar.new = function ( f1_arg0, f1_arg1, f1_ar
 	local OverflowIndicator4 = LUI.UIImage.new( 0.5, 0.5, 337.5, 367.5, 0.5, 0.5, -34, -4 )
 	OverflowIndicator4:setRGB( 0.76, 0.76, 0.76 )
 	OverflowIndicator4:setAlpha( 0.44 )
-	OverflowIndicator4:setImage( RegisterImage( 0x7F2DD388A81D61 ) )
+	OverflowIndicator4:setImage( RegisterImage( "uie_warning_small" ) )
 	self:addElement( OverflowIndicator4 )
 	self.OverflowIndicator4 = OverflowIndicator4
 	
@@ -84,7 +84,7 @@ CoD.StartMenu_Options_PC_Voice_VoiceBar.new = function ( f1_arg0, f1_arg1, f1_ar
 	local MicImage = LUI.UIImage.new( 0.5, 0.5, -299, -247, 0.5, 0.5, -26, 26 )
 	MicImage:setRGB( 0.76, 0.76, 0.76 )
 	MicImage:setAlpha( 0.8 )
-	MicImage:setImage( RegisterImage( 0x493FFCC947D770A ) )
+	MicImage:setImage( RegisterImage( "uie_mic" ) )
 	self:addElement( MicImage )
 	self.MicImage = MicImage
 	
@@ -105,16 +105,16 @@ CoD.StartMenu_Options_PC_Voice_VoiceBar.new = function ( f1_arg0, f1_arg1, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( GenericSimpleButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		if not CoD.PCOptionsUtility.IsRecordingLoopBack( f5_arg2 ) then
-			CoD.PCOptionsUtility.StartLoopBackCalibrationRecording( f5_arg2 )
+	f1_arg0:AddButtonCallbackFunction( GenericSimpleButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not CoD.PCOptionsUtility.IsRecordingLoopBack( controller ) then
+			CoD.PCOptionsUtility.StartLoopBackCalibrationRecording( controller )
 			return true
 		else
-			CoD.PCOptionsUtility.StopLoopBackCalibrationRecording( f5_arg2 )
+			CoD.PCOptionsUtility.StopLoopBackCalibrationRecording( controller )
 			return true
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( GenericSimpleButton )

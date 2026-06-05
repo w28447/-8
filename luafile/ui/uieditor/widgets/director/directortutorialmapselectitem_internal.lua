@@ -1,4 +1,4 @@
-require( "ui/uieditor/widgets/common/CommonPixelBacking" )
+require( "ui/uieditor/widgets/common/commonpixelbacking" )
 require( "ui/uieditor/widgets/commonbuttonoutline" )
 
 CoD.DirectorTutorialMapSelectItem_Internal = InheritFrom( LUI.UIElement )
@@ -40,7 +40,7 @@ CoD.DirectorTutorialMapSelectItem_Internal.new = function ( f1_arg0, f1_arg1, f1
 	
 	local Highlight = LUI.UIImage.new( 0, 1, -52, 52, 0, 1, -60, 60 )
 	Highlight:setAlpha( 0.03 )
-	Highlight:setImage( RegisterImage( 0xC9205D0D378F108 ) )
+	Highlight:setImage( RegisterImage( "uie_ui_menu_common_focus_fill_small" ) )
 	Highlight:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	Highlight:setShaderVector( 0, 0, 0, 0, 0.25 )
 	Highlight:setShaderVector( 1, 1, 0, 0, 0 )

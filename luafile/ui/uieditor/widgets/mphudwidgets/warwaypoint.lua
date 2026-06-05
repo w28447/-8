@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/mphudwidgets/waypoint_textbg" )
 require( "ui/uieditor/widgets/mphudwidgets/waypointarrowcontainer" )
 require( "ui/uieditor/widgets/mphudwidgets/waypointcenter" )
-require( "x64:76c14e1bc07cd98" )
+require( "ui/uieditor/widgets/mphudwidgets/waypointprogressring" )
 
 CoD.WarWaypoint = InheritFrom( LUI.UIElement )
 CoD.WarWaypoint.__defaultWidth = 120
@@ -16,7 +16,7 @@ CoD.WarWaypoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local ProgressMeterFrame = LUI.UIImage.new( 0.5, 0.5, -52.5, 54.5, 0.5, 0.5, -51.5, 52.5 )
-	ProgressMeterFrame:setImage( RegisterImage( 0x7DBFC1DE549CC49 ) )
+	ProgressMeterFrame:setImage( RegisterImage( "uie_t7_hud_waypoints_new_framefill" ) )
 	self:addElement( ProgressMeterFrame )
 	self.ProgressMeterFrame = ProgressMeterFrame
 	
@@ -76,7 +76,7 @@ CoD.WarWaypoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	local progressMeterContested = LUI.UIImage.new( 0.5, 0.5, -34, 36, 0.5, 0.5, -36, 34 )
 	progressMeterContested:setRGB( 1, 0.4, 0 )
 	progressMeterContested:setAlpha( 0 )
-	progressMeterContested:setImage( RegisterImage( 0xB1F550BBC41155E ) )
+	progressMeterContested:setImage( RegisterImage( "uie_t7_hud_interact_meter_diamond" ) )
 	progressMeterContested:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	progressMeterContested:setShaderVector( 1, 0.5, 0, 0, 0 )
 	progressMeterContested:setShaderVector( 2, 0.5, 0, 0, 0 )

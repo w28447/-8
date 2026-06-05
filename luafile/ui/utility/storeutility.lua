@@ -34,7 +34,7 @@ CoD.StoreUtility.PrependPurchaseIconIfNeeded = function ( f4_arg0, f4_arg1, f4_a
 	if not Engine.IsMapValid( f4_arg1 ) and ShowPurchasableMap( f4_arg0, f4_arg1 ) then
 		local f4_local0 = Engine[0x943893A16399DCF]( f4_arg1 )
 		if f4_local0 and CoD.DLCPackFromBit[f4_local0] then
-			return Engine[0xF9F1239CFD921FE]( 0x1001FF6B558E68C, f4_arg2 )
+			return Engine[0xF9F1239CFD921FE]( "menu/purchase_icon_and_text", f4_arg2 )
 		end
 	end
 	return f4_arg2
@@ -63,9 +63,9 @@ CoD.StoreUtility.CreateStoreFeatureCard = function ( f8_arg0, f8_arg1 )
 	table.insert( f8_arg0, {
 		models = {
 			locked = false,
-			name = Engine[0xF9F1239CFD921FE]( 0x191CDDA584B4408 ),
-			iconBackground = 0xEEC1B33FCDD11A6,
-			iconBackgroundFocus = 0xEEC1B33FCDD11A6,
+			name = Engine[0xF9F1239CFD921FE]( "menu/store_caps" ),
+			iconBackground = "ui_icon_crm_featured_welcome",
+			iconBackgroundFocus = "ui_icon_crm_featured_welcome",
 			descriptionText = "menu/upgrade_now",
 			action = OpenStore,
 			actionParam = "FeaturedCard",
@@ -105,10 +105,10 @@ CoD.OverlayUtility.AddSystemOverlay( "PurchaseMapPackConfirmation", {
 				}
 			end
 			
-			table.insert( f12_local0, f12_local1( Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x69530752CA38E65 ) ), function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3, f14_arg4 )
+			table.insert( f12_local0, f12_local1( Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/go_to_store" ) ), function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3, f14_arg4 )
 				GoBackAndOpenOverlayOnParent( f14_arg4, "Store_DLC", f14_arg2 )
 			end, true, false ) )
-			table.insert( f12_local0, f12_local1( 0x6DA4540B4705513, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3, f15_arg4 )
+			table.insert( f12_local0, f12_local1( "menu/cancel_caps", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3, f15_arg4 )
 				GoBack( f15_arg4, f15_arg2 )
 			end, false, false ) )
 			return f12_local0
@@ -168,7 +168,7 @@ end
 
 CoD.StoreUtility.GetDLCImageFromDLCName = function ( f19_arg0, f19_arg1 )
 	if f19_arg1 then
-		local f19_local0 = Engine[0xE4C9240A618B3D3]( 0xE45AEA6EE3C751B )
+		local f19_local0 = Engine[0xE4C9240A618B3D3]( "featured" )
 		for f19_local1 = 1, #f19_local0, 1 do
 			local f19_local4 = f19_local0[f19_local1]
 			if f19_arg1 == f19_local4.metadata then
@@ -176,7 +176,7 @@ CoD.StoreUtility.GetDLCImageFromDLCName = function ( f19_arg0, f19_arg1 )
 			end
 		end
 	end
-	return 0x8D65B062C99264E
+	return "ui_menu_store_product_b04_blops_pass_new_large"
 end
 
 CoD.StoreUtility.GetDLCImageByPlaylistId = function ( f20_arg0, f20_arg1 )
@@ -219,7 +219,7 @@ CoD.StoreUtility.OpenStoreToDLCPack = function ( f24_arg0, f24_arg1, f24_arg2, f
 		local f24_local1 = DataSources.StoreRoot.getModel( f24_arg2 )
 		f24_local1.ready:set( false )
 		f24_local1.actionSource:set( f24_arg3 )
-		f24_local1.storeSource:set( f24_local0[0x4BCADBA8E631B86] )
+		f24_local1.storeSource:set( f24_local0.name )
 		OpenOverlay( f24_arg4, "Store", f24_arg2, {
 			_focusProduct = CoD.StoreUtility.GetDLCPackByPlaylistId( f24_arg2, CoD.SafeGetModelValue( f24_arg1:getModel(), "playlist" ) )
 		} )
@@ -233,7 +233,7 @@ CoD.StoreUtility.OpenStoreToDLCPackByPlaylist = function ( f25_arg0, f25_arg1, f
 		local f25_local1 = DataSources.StoreRoot.getModel( f25_arg2 )
 		f25_local1.ready:set( false )
 		f25_local1.actionSource:set( f25_arg3 )
-		f25_local1.storeSource:set( f25_local0[0x4BCADBA8E631B86] )
+		f25_local1.storeSource:set( f25_local0.name )
 		OpenOverlay( f25_arg4, "Store", f25_arg2, {
 			_focusProduct = CoD.StoreUtility.GetDLCPackByPlaylistId( f25_arg2, f25_arg1 )
 		} )

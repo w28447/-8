@@ -18,19 +18,19 @@ LUI.createMenu.Loading_CP = function ( f1_arg0, f1_arg1 )
 	self:addElement( LoadingScreenSharedCPZM )
 	self.LoadingScreenSharedCPZM = LoadingScreenSharedCPZM
 	
-	self:registerEventHandler( "loading_startplay", function ( element, event )
+	self:registerEventHandler( "loading_startplay", function ( self, event )
 		local f2_local0 = nil
-		CoD.HUDUtility.StartPlay( element, f1_arg0 )
+		CoD.HUDUtility.StartPlay( self, f1_arg0 )
 		if not f2_local0 then
-			f2_local0 = element:dispatchEventToChildren( event )
+			f2_local0 = self:dispatchEventToChildren( event )
 		end
 		return f2_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ESCAPE", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		CoD.HUDUtility.StartPlay( f3_arg0, f3_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ESCAPE", function ( element, menu, controller, model )
+		CoD.HUDUtility.StartPlay( element, controller )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ESCAPE" )
 		return false
 	end, false )
 	LoadingScreenSharedCPZM.id = "LoadingScreenSharedCPZM"

@@ -29,14 +29,14 @@ CoD.WeaponLevelWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local PrestigeStar1 = LUI.UIImage.new( 0, 0, 3, 14, 0, 0, 26.5, 37.5 )
 	PrestigeStar1:setRGB( ColorSet.GroupName.r, ColorSet.GroupName.g, ColorSet.GroupName.b )
 	PrestigeStar1:setAlpha( 0 )
-	PrestigeStar1:setImage( RegisterImage( 0xB94BBEF24882247 ) )
+	PrestigeStar1:setImage( RegisterImage( "menu_mp_weapon_lvl_star" ) )
 	self:addElement( PrestigeStar1 )
 	self.PrestigeStar1 = PrestigeStar1
 	
 	local PrestigeStar2 = LUI.UIImage.new( 0, 0, 15.5, 26.5, 0, 0, 26.5, 37.5 )
 	PrestigeStar2:setRGB( ColorSet.GroupName.r, ColorSet.GroupName.g, ColorSet.GroupName.b )
 	PrestigeStar2:setAlpha( 0 )
-	PrestigeStar2:setImage( RegisterImage( 0xB94BBEF24882247 ) )
+	PrestigeStar2:setImage( RegisterImage( "menu_mp_weapon_lvl_star" ) )
 	self:addElement( PrestigeStar2 )
 	self.PrestigeStar2 = PrestigeStar2
 	

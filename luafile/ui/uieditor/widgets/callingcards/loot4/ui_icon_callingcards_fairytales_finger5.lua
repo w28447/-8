@@ -8,7 +8,7 @@ CoD.ui_icon_callingcards_fairytales_finger5.new = function ( f1_arg0, f1_arg1, f
 	self.soundSet = "default"
 	
 	local finger5 = LUI.UIImage.new( 0, 0, -35, 21, 0, 0, -10, 62 )
-	finger5:setImage( RegisterImage( 0xDAD37048BDCE0F6 ) )
+	finger5:setImage( RegisterImage( "uie_ui_icon_callingcards_fairytale_finger5" ) )
 	self:addElement( finger5 )
 	self.finger5 = finger5
 	

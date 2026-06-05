@@ -1,18 +1,18 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_asset_zombies_astronaut" )
 
-CoD[0xAF83B16AB3EE2AE] = InheritFrom( LUI.UIElement )
-CoD[0xAF83B16AB3EE2AE].__defaultWidth = 960
-CoD[0xAF83B16AB3EE2AE].__defaultHeight = 240
-CoD[0xAF83B16AB3EE2AE].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_zombies = InheritFrom( LUI.UIElement )
+CoD.callingcards_zombies.__defaultWidth = 960
+CoD.callingcards_zombies.__defaultHeight = 240
+CoD.callingcards_zombies.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0xAF83B16AB3EE2AE] )
+	self:setClass( CoD.callingcards_zombies )
 	self.id = "CallingCards_zombies"
 	self.soundSet = "none"
 	self.anyChildUsesUpdateState = true
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local bg = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	bg:setImage( RegisterImage( 0x597B0527A0B6141 ) )
+	bg:setImage( RegisterImage( "uie_ui_icon_callingcard_zombie_bg" ) )
 	self:addElement( bg )
 	self.bg = bg
 	
@@ -21,38 +21,38 @@ CoD[0xAF83B16AB3EE2AE].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.astronaut = astronaut
 	
 	local smoke = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	smoke:setImage( RegisterImage( 0x3F99156A172A6F ) )
+	smoke:setImage( RegisterImage( "uie_ui_icon_callingcard_zombie_smoke" ) )
 	smoke:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( smoke )
 	self.smoke = smoke
 	
 	local bun2 = LUI.UIImage.new( 0, 0, 664, 960, 0, 0, 80, 248 )
-	bun2:setImage( RegisterImage( 0x839BD840D8C0B97 ) )
+	bun2:setImage( RegisterImage( "uie_ui_icon_callingcard_zombie_bun2" ) )
 	self:addElement( bun2 )
 	self.bun2 = bun2
 	
 	local lettus = LUI.UIImage.new( 0, 0, 664, 960, 0, 0, 52, 260 )
-	lettus:setImage( RegisterImage( 0xDD89D11E5A6D3AD ) )
+	lettus:setImage( RegisterImage( "uie_ui_icon_callingcard_zombie_lettus" ) )
 	self:addElement( lettus )
 	self.lettus = lettus
 	
 	local cheese = LUI.UIImage.new( 0, 0, 664, 960, 0, 0, 32, 240 )
-	cheese:setImage( RegisterImage( 0xEAD39A5F7957173 ) )
+	cheese:setImage( RegisterImage( "uie_ui_icon_callingcard_zombie_cheese" ) )
 	self:addElement( cheese )
 	self.cheese = cheese
 	
 	local tomato = LUI.UIImage.new( 0, 0, 656.5, 888.5, 0, 0, 48, 192 )
-	tomato:setImage( RegisterImage( 0xD32975AF4017F58 ) )
+	tomato:setImage( RegisterImage( "uie_ui_icon_callingcard_zombie_tomato" ) )
 	self:addElement( tomato )
 	self.tomato = tomato
 	
 	local burger = LUI.UIImage.new( 0, 0, 690.5, 922.5, 0, 0, 6, 126 )
-	burger:setImage( RegisterImage( 0xCC804E9C3E7DFC3 ) )
+	burger:setImage( RegisterImage( "uie_ui_icon_callingcard_zombie_burger" ) )
 	self:addElement( burger )
 	self.burger = burger
 	
 	local bun1 = LUI.UIImage.new( 0, 0, 656.5, 888.5, 0, 0, 0, 80 )
-	bun1:setImage( RegisterImage( 0x839BE840D8C0D4A ) )
+	bun1:setImage( RegisterImage( "uie_ui_icon_callingcard_zombie_bun1" ) )
 	self:addElement( bun1 )
 	self.bun1 = bun1
 	
@@ -65,7 +65,7 @@ CoD[0xAF83B16AB3EE2AE].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0xAF83B16AB3EE2AE].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_zombies.__resetProperties = function ( f2_arg0 )
 	f2_arg0.astronaut:completeAnimation()
 	f2_arg0.bun1:completeAnimation()
 	f2_arg0.burger:completeAnimation()
@@ -82,7 +82,7 @@ CoD[0xAF83B16AB3EE2AE].__resetProperties = function ( f2_arg0 )
 	f2_arg0.bun2:setTopBottom( 0, 0, 80, 248 )
 end
 
-CoD[0xAF83B16AB3EE2AE].__clipsPerState = {
+CoD.callingcards_zombies.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -207,7 +207,7 @@ CoD[0xAF83B16AB3EE2AE].__clipsPerState = {
 		end
 	}
 }
-CoD[0xAF83B16AB3EE2AE].__onClose = function ( f19_arg0 )
+CoD.callingcards_zombies.__onClose = function ( f19_arg0 )
 	f19_arg0.astronaut:close()
 end
 

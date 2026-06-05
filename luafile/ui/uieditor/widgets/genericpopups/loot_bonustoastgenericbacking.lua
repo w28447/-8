@@ -18,7 +18,7 @@ CoD.Loot_BonusToastGenericBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local CommonStripes01Tiled = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, -7, 2 )
 	CommonStripes01Tiled:setAlpha( 0.85 )
-	CommonStripes01Tiled:setImage( RegisterImage( 0x649895CFFA4963D ) )
+	CommonStripes01Tiled:setImage( RegisterImage( "uie_ui_menu_common_stripes01" ) )
 	CommonStripes01Tiled:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	CommonStripes01Tiled:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonStripes01Tiled:setupNineSliceShader( 64, 16 )
@@ -57,7 +57,7 @@ CoD.Loot_BonusToastGenericBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local CommonFrame01 = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, 0, 2 )
 	CommonFrame01:setRGB( 0.59, 0.59, 0.59 )
 	CommonFrame01:setAlpha( 0.25 )
-	CommonFrame01:setImage( RegisterImage( 0xCA6E5C175806396 ) )
+	CommonFrame01:setImage( RegisterImage( "uie_ui_menu_common_frame01" ) )
 	CommonFrame01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	CommonFrame01:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonFrame01:setupNineSliceShader( 8, 8 )

@@ -10,7 +10,7 @@ CoD.vhud_HellstormCenterFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local FrameBR = LUI.UIImage.new( 0, 0, 582, 750, 0, 0, 490, 810 )
 	FrameBR:setAlpha( 0.9 )
-	FrameBR:setImage( RegisterImage( 0x8495D8AE44FEDB6 ) )
+	FrameBR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_center_brreticle" ) )
 	FrameBR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FrameBR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FrameBR )
@@ -18,7 +18,7 @@ CoD.vhud_HellstormCenterFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local FrameTL = LUI.UIImage.new( 0, 0, 262.5, 62.5, 0, 0, 37, 437 )
 	FrameTL:setAlpha( 0.9 )
-	FrameTL:setImage( RegisterImage( 0x803C63DF6A74D8C ) )
+	FrameTL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_center_trreticle" ) )
 	FrameTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FrameTL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FrameTL )
@@ -26,7 +26,7 @@ CoD.vhud_HellstormCenterFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local FrameTR = LUI.UIImage.new( 0, 0, 658.5, 858.5, 0, 0, 37, 437 )
 	FrameTR:setAlpha( 0.9 )
-	FrameTR:setImage( RegisterImage( 0x803C63DF6A74D8C ) )
+	FrameTR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_center_trreticle" ) )
 	FrameTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FrameTR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FrameTR )
@@ -34,7 +34,7 @@ CoD.vhud_HellstormCenterFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local FrameBL = LUI.UIImage.new( 0, 0, 338, 170, 0, 0, 490, 810 )
 	FrameBL:setAlpha( 0.9 )
-	FrameBL:setImage( RegisterImage( 0x8495D8AE44FEDB6 ) )
+	FrameBL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_center_brreticle" ) )
 	FrameBL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FrameBL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FrameBL )
@@ -42,7 +42,7 @@ CoD.vhud_HellstormCenterFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local FrameTop = LUI.UIImage.new( 0, 0, 298, 622, 0, 0, 173, 213 )
 	FrameTop:setAlpha( 0.9 )
-	FrameTop:setImage( RegisterImage( 0x72994AF62A6766 ) )
+	FrameTop:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_center_top_reticle" ) )
 	FrameTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FrameTop:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FrameTop )
@@ -50,7 +50,7 @@ CoD.vhud_HellstormCenterFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local CenterCircleL = LUI.UIImage.new( 0, 0, 460, 220, 0, 0, 225, 673 )
 	CenterCircleL:setAlpha( 0.5 )
-	CenterCircleL:setImage( RegisterImage( 0x93E76C0F76981DF ) )
+	CenterCircleL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_center_frame" ) )
 	CenterCircleL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	CenterCircleL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CenterCircleL )
@@ -58,7 +58,7 @@ CoD.vhud_HellstormCenterFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local CenterCircleR = LUI.UIImage.new( 0, 0, 460, 700, 0, 0, 225, 673 )
 	CenterCircleR:setAlpha( 0.5 )
-	CenterCircleR:setImage( RegisterImage( 0x93E76C0F76981DF ) )
+	CenterCircleR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_center_frame" ) )
 	CenterCircleR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	CenterCircleR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CenterCircleR )
@@ -97,7 +97,7 @@ CoD.vhud_HellstormCenterFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.LockTL = LockTL
 	
 	local FuiArrowTop = LUI.UIImage.new( 0, 0, 447, 473, 0, 0, 278, 304 )
-	FuiArrowTop:setImage( RegisterImage( 0x3213403D5FE9F16 ) )
+	FuiArrowTop:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_arrow" ) )
 	FuiArrowTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiArrowTop:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiArrowTop )
@@ -105,7 +105,7 @@ CoD.vhud_HellstormCenterFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local FuiArrowRight = LUI.UIImage.new( 0, 0, 621, 647, 0, 0, 447, 473 )
 	FuiArrowRight:setZRot( -90 )
-	FuiArrowRight:setImage( RegisterImage( 0x3213403D5FE9F16 ) )
+	FuiArrowRight:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_arrow" ) )
 	FuiArrowRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiArrowRight:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiArrowRight )
@@ -113,7 +113,7 @@ CoD.vhud_HellstormCenterFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local FuiArrowLeft = LUI.UIImage.new( 0, 0, 273, 298, 0, 0, 447, 473 )
 	FuiArrowLeft:setZRot( 90 )
-	FuiArrowLeft:setImage( RegisterImage( 0x3213403D5FE9F16 ) )
+	FuiArrowLeft:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_arrow" ) )
 	FuiArrowLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiArrowLeft:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiArrowLeft )

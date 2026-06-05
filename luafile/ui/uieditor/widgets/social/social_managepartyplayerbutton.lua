@@ -37,17 +37,17 @@ CoD.Social_ManagePartyPlayerButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( EmptyButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( self, f5_arg2, "empty" ) then
-			OpenOverlay( self, "Social_InvitePlayersPopup", f5_arg2, nil )
+	f1_arg0:AddButtonCallbackFunction( EmptyButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueTrue( self, controller, "empty" ) then
+			OpenOverlay( self, "Social_InvitePlayersPopup", controller, nil )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( self, f6_arg2, "empty" ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/invite_players", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueTrue( self, controller, "empty" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/invite_players", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -149,34 +149,34 @@ CoD.Social_ManagePartyPlayerButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	f1_local9( f1_local8, f1_local10.LastInput, function ( f12_arg0, f12_arg1 )
 		CoD.Menu.UpdateButtonShownState( f12_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0xC083113BC81F23F] )
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsPC() then
-			SetCurrentElementAsActive( self, self, f13_arg2 )
-			CopyModelFindElement( f13_arg1, f13_arg2, self, "playerInfo" )
-			CacheSocialOnlinePlayersListModels( self, self, f13_arg2 )
+			SetCurrentElementAsActive( self, self, controller )
+			CopyModelFindElement( menu, controller, self, "playerInfo" )
+			CacheSocialOnlinePlayersListModels( self, self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		if IsPC() and IsGamepad( f15_arg2 ) then
-			SetSelectedFriendXUID( self, self, f15_arg2 )
-			OpenOverlay( self, "Social_PlayerDetailsPopup", f15_arg2, nil )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if IsPC() and IsGamepad( controller ) then
+			SetSelectedFriendXUID( self, self, controller )
+			OpenOverlay( self, "Social_PlayerDetailsPopup", controller, nil )
 			return true
 		else
 			
 		end
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		if IsPC() and IsGamepad( f16_arg2 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xE0254269ED8FFD3, nil, nil )
+	end, function ( element, menu, controller )
+		if IsPC() and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], 0xE0254269ED8FFD3, nil, nil )
 			return true
 		else
 			return false

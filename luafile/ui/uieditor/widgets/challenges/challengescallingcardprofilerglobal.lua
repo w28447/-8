@@ -159,7 +159,7 @@ CoD.ChallengesCallingCardProfilerGlobal.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local GameModeZM = LUI.UIText.new( 0, 0, 19, 471, 0, 0, 430, 450 )
 	GameModeZM:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	GameModeZM:setText( LocalizeToUpperString( 0xB06081B8B4567F2 ) )
+	GameModeZM:setText( LocalizeToUpperString( "menu/zombies" ) )
 	GameModeZM:setTTF( "ttmussels_regular" )
 	GameModeZM:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	GameModeZM:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -168,7 +168,7 @@ CoD.ChallengesCallingCardProfilerGlobal.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local GameModeWZ = LUI.UIText.new( 0, 0, 19, 471, 0, 0, 472, 492 )
 	GameModeWZ:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	GameModeWZ:setText( LocalizeToUpperString( 0xA2DD20750465431 ) )
+	GameModeWZ:setText( LocalizeToUpperString( "menu/warzone" ) )
 	GameModeWZ:setTTF( "ttmussels_regular" )
 	GameModeWZ:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	GameModeWZ:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -177,7 +177,7 @@ CoD.ChallengesCallingCardProfilerGlobal.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local GameModeMP = LUI.UIText.new( 0, 0, 17, 469, 0, 0, 390, 410 )
 	GameModeMP:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	GameModeMP:setText( LocalizeToUpperString( 0x55D96CC762EABDD ) )
+	GameModeMP:setText( LocalizeToUpperString( "menu/multiplayer" ) )
 	GameModeMP:setTTF( "ttmussels_regular" )
 	GameModeMP:setLetterSpacing( 1 )
 	GameModeMP:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -195,7 +195,7 @@ CoD.ChallengesCallingCardProfilerGlobal.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0.5, 0.5, -21.5, 21.5, 0, 0, 43, 86 )
 	PixelGridTiledBacking:setAlpha( 0.15 )
-	PixelGridTiledBacking:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )

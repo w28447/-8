@@ -9,7 +9,7 @@ CoD.PrematchCountdown_2xpBadge.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local DoubleXPIcon = LUI.UIImage.new( 0, 0, 0, 192, 0, 0, 0, 192 )
-	DoubleXPIcon:setImage( RegisterImage( 0x85465039FE63220 ) )
+	DoubleXPIcon:setImage( RegisterImage( "ui_icon_2xp_large" ) )
 	self:addElement( DoubleXPIcon )
 	self.DoubleXPIcon = DoubleXPIcon
 	
@@ -43,7 +43,7 @@ end
 
 CoD.PrematchCountdown_2xpBadge.__resetProperties = function ( f4_arg0 )
 	f4_arg0.DoubleXPIcon:completeAnimation()
-	f4_arg0.DoubleXPIcon:setImage( RegisterImage( 0x85465039FE63220 ) )
+	f4_arg0.DoubleXPIcon:setImage( RegisterImage( "ui_icon_2xp_large" ) )
 end
 
 CoD.PrematchCountdown_2xpBadge.__clipsPerState = {
@@ -58,7 +58,7 @@ CoD.PrematchCountdown_2xpBadge.__clipsPerState = {
 			f6_arg0:__resetProperties()
 			f6_arg0:setupElementClipCounter( 1 )
 			f6_arg0.DoubleXPIcon:completeAnimation()
-			f6_arg0.DoubleXPIcon:setImage( RegisterImage( 0xB09C604626A372B ) )
+			f6_arg0.DoubleXPIcon:setImage( RegisterImage( "ui_icon_2xp_warzone_large" ) )
 			f6_arg0.clipFinished( f6_arg0.DoubleXPIcon )
 		end
 	}

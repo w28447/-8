@@ -40,7 +40,7 @@ CoD.AARContractsTabInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local DailyContracts = LUI.UIText.new( 0.5, 0.5, -740, -280, 0.5, 0.5, -361.5, -331.5 )
 	DailyContracts:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	DailyContracts:setText( LocalizeToUpperString( 0xB27DDDD116F4EFF ) )
+	DailyContracts:setText( LocalizeToUpperString( "menu/daily_contract" ) )
 	DailyContracts:setTTF( "ttmussels_demibold" )
 	DailyContracts:setLetterSpacing( 2 )
 	DailyContracts:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

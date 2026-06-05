@@ -46,37 +46,37 @@ LUI.createMenu.Store_DLC = function ( f1_arg0, f1_arg1 )
 	self:addElement( StoreNonFeaturedFrame )
 	self.StoreNonFeaturedFrame = StoreNonFeaturedFrame
 	
-	self:registerEventHandler( "menu_loaded", function ( element, event )
+	self:registerEventHandler( "menu_loaded", function ( self, event )
 		local f3_local0 = nil
-		if element.menuLoaded then
-			f3_local0 = element:menuLoaded( event )
-		elseif element.super.menuLoaded then
-			f3_local0 = element.super:menuLoaded( event )
+		if self.menuLoaded then
+			f3_local0 = self:menuLoaded( event )
+		elseif self.super.menuLoaded then
+			f3_local0 = self.super:menuLoaded( event )
 		end
-		ShowPsStoreIcon( f1_arg0, Enum[0x784DC8CE13E1E13][0xF4B7EC4DCAA8AC4] )
+		ShowPsStoreIcon( f1_arg0, Enum[0x784DC8CE13E1E13].center )
 		if not f3_local0 then
-			f3_local0 = element:dispatchEventToChildren( event )
+			f3_local0 = self:dispatchEventToChildren( event )
 		end
 		return f3_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		GoBack( self, f4_arg2 )
-		ClearMenuSavedState( f4_arg1 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
+		ClearMenuSavedState( menu )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xA4032FB2AAB69F2, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "mp/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
 		if not IsPC() then
-			RedeemCode( self, f6_arg0, f6_arg2 )
+			RedeemCode( self, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
+	end, function ( element, menu, controller )
 		if not IsPC() then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xAC7CDF7FDA3D9D3, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/store_redeem_code", nil, nil )
 			return true
 		else
 			return false

@@ -60,46 +60,46 @@ CoD.StartMenu_Options_PrivacySettingsManagementForm.new = function ( f1_arg0, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x493152B20AE4F58] )
 		return f6_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PrivacySettingsOptions, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( f7_arg2, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0x464A086C0CC2A87] ) then
-			ProcessListAction( self, f7_arg0, f7_arg2, f7_arg1 )
+	f1_arg0:AddButtonCallbackFunction( PrivacySettingsOptions, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( controller, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0x464A086C0CC2A87] ) then
+			ProcessListAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( f8_arg2, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0x464A086C0CC2A87] ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( controller, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0x464A086C0CC2A87] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( PrivacySettingsOptions, f1_arg1, Enum.LUIButton[0x49A252B20B48936], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( f9_arg2, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0x464A086C0CC2A87] ) and not CoD.OptionsUtility.IsOnLastPrivacySettingsDescPage( f9_arg2 ) then
-			CoD.OptionsUtility.ChangePrivacySettingDescPage( f9_arg2, f9_arg0, "1" )
+	f1_arg0:AddButtonCallbackFunction( PrivacySettingsOptions, f1_arg1, Enum.LUIButton[0x49A252B20B48936], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( controller, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0x464A086C0CC2A87] ) and not CoD.OptionsUtility.IsOnLastPrivacySettingsDescPage( controller ) then
+			CoD.OptionsUtility.ChangePrivacySettingDescPage( controller, element, "1" )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( f10_arg2, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0x464A086C0CC2A87] ) and not CoD.OptionsUtility.IsOnLastPrivacySettingsDescPage( f10_arg2 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x49A252B20B48936], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( controller, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0x464A086C0CC2A87] ) and not CoD.OptionsUtility.IsOnLastPrivacySettingsDescPage( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x49A252B20B48936], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( PrivacySettingsOptions, f1_arg1, Enum.LUIButton[0x493152B20AE4F58], nil, function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( f11_arg2, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0x464A086C0CC2A87] ) and CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f11_arg2, "PrivacySettingManagementForm", "currentPage", 1 ) then
-			CoD.OptionsUtility.ChangePrivacySettingDescPage( f11_arg2, f11_arg0, "-1" )
+	f1_arg0:AddButtonCallbackFunction( PrivacySettingsOptions, f1_arg1, Enum.LUIButton[0x493152B20AE4F58], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( controller, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0x464A086C0CC2A87] ) and CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "PrivacySettingManagementForm", "currentPage", 1 ) then
+			CoD.OptionsUtility.ChangePrivacySettingDescPage( controller, element, "-1" )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( f12_arg2, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0x464A086C0CC2A87] ) and CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f12_arg2, "PrivacySettingManagementForm", "currentPage", 1 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x493152B20AE4F58], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( controller, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0x464A086C0CC2A87] ) and CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "PrivacySettingManagementForm", "currentPage", 1 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x493152B20AE4F58], "", nil, nil )
 			return false
 		else
 			return false
@@ -119,7 +119,7 @@ CoD.StartMenu_Options_PrivacySettingsManagementForm.new = function ( f1_arg0, f1
 	
 	Body = LUI.UIText.new( 0.5, 0.5, -795.5, -70.5, 0, 0, 292.5, 316.5 )
 	Body:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	Body:setText( Engine[0xF9F1239CFD921FE]( 0xF42DFDF48767889 ) )
+	Body:setText( Engine[0xF9F1239CFD921FE]( "menu/privacy_settings_desc" ) )
 	Body:setTTF( "dinnext_regular" )
 	Body:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Body:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

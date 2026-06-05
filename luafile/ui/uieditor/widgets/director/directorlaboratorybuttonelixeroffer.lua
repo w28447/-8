@@ -19,7 +19,7 @@ CoD.DirectorLaboratoryButtonElixerOffer.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local Bg = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 40 )
 	Bg:setAlpha( 0.5 )
-	Bg:setImage( RegisterImage( 0xE87D886CBFA3F3B ) )
+	Bg:setImage( RegisterImage( "uie_ui_zm_laboratory_button_banner_empty" ) )
 	self:addElement( Bg )
 	self.Bg = Bg
 	

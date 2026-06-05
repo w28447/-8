@@ -16,7 +16,7 @@ CoD.BowLauncherReticle_L2.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.Line2 = Line2
 	
 	local pip1 = LUI.UIImage.new( 0.25, 0.75, 0, 0, 0.25, 0.75, 0, 0 )
-	pip1:setImage( RegisterImage( 0x62EAE1CA751BEA4 ) )
+	pip1:setImage( RegisterImage( "uie_ui_hud_reticles_bowlauncher_hipfire_dot" ) )
 	self:addElement( pip1 )
 	self.pip1 = pip1
 	

@@ -31,7 +31,7 @@ CoD.Challenges_CallingCardProfiler.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local CTClassifiedOverlay = LUI.UIImage.new( 0, 1, -1, 1, 0, 0, 0, 131 )
 	CTClassifiedOverlay:setRGB( 0, 0, 0 )
 	CTClassifiedOverlay:setAlpha( 0 )
-	CTClassifiedOverlay:setImage( RegisterImage( 0x2746D911ABDE62E ) )
+	CTClassifiedOverlay:setImage( RegisterImage( "uie_t7_icons_challenges_classified_placeholder" ) )
 	self:addElement( CTClassifiedOverlay )
 	self.CTClassifiedOverlay = CTClassifiedOverlay
 	
@@ -53,7 +53,7 @@ CoD.Challenges_CallingCardProfiler.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local blackMarketBrandIcon = LUI.UIImage.new( 0.5, 0.5, -54, 49, 0, 0, 18, 121 )
 	blackMarketBrandIcon:setAlpha( 0 )
-	blackMarketBrandIcon:setImage( RegisterImage( 0x67440195ABD2B8C ) )
+	blackMarketBrandIcon:setImage( RegisterImage( "uie_t7_icon_blackmarket_encryptedicon_large" ) )
 	self:addElement( blackMarketBrandIcon )
 	self.blackMarketBrandIcon = blackMarketBrandIcon
 	

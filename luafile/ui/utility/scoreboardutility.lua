@@ -2,7 +2,7 @@ CoD.ScoreboardUtility = {}
 CoD.ScoreboardUtility.MinRowsToShowOnEachTeam = 4
 CoD.ScoreboardUtility.MinRowsToShowOnEachTeamForFFA = 8
 CoD.ScoreboardUtility.GoldenScoreRefs = {
-	0x1472DDE8E287011,
+	"golden_kill_bonus",
 	0xB62CCBE655DC08A
 }
 CoD.ScoreboardUtility.ShowScoreboard = function ( f1_arg0 )
@@ -71,7 +71,7 @@ CoD.ScoreboardUtility.UpdateScoreboardClientMuteButtonPrompt = function ( f9_arg
 		end
 		f9_local6( f9_local7, f9_local8 )
 		if Engine[0xAC4DDADDA07242F]( f9_arg1, Engine[0xC3DF042E7492B66]( Enum.LobbyModule[0xC46B73E8E18BA2] ), f9_local4 ) then
-			Engine.SetModelValue( f9_local3, 0x6BEF50FAD886D13 )
+			Engine.SetModelValue( f9_local3, "menu/unmute_caps" )
 		else
 			Engine.SetModelValue( f9_local3, "menu/mute_caps" )
 		end
@@ -118,13 +118,13 @@ end
 CoD.ScoreboardUtility.SetRowHeader = function ( f13_arg0, f13_arg1, f13_arg2 )
 	local f13_local0 = Engine.GetScoreboardColumnHeader( f13_arg0, f13_arg2 )
 	if CoD.AARUtility.IsGameTypeEqualToString( "bounty", f13_arg0 ) and string.lower( f13_local0 ) == "score" then
-		f13_local0 = Engine[0xF9F1239CFD921FE]( 0x351AF85574BC384 )
+		f13_local0 = Engine[0xF9F1239CFD921FE]( "mpui/cash" )
 	end
 	if CoD.AARUtility.IsGameTypeEqualToString( "dm", f13_arg0 ) and string.lower( f13_local0 ) == "kills" then
-		f13_local0 = Engine[0xF9F1239CFD921FE]( 0xAB2B22D8DAC768C )
+		f13_local0 = Engine[0xF9F1239CFD921FE]( "mpui/points_caps" )
 	end
 	if CoD.AARUtility.IsGameTypeEqualToString( "infect", f13_arg0 ) and string.lower( f13_local0 ) == "objectives" then
-		f13_local0 = Engine[0xF9F1239CFD921FE]( 0x5E075C6405A7797 )
+		f13_local0 = Engine[0xF9F1239CFD921FE]( "mpui/infects" )
 	end
 	if CoD.AARUtility.IsGameTypeEqualToString( "prop", f13_arg0 ) and string.lower( f13_local0 ) == "time" then
 		f13_local0 = Engine[0xF9F1239CFD921FE]( 0xAD795C41AE2FC56 )
@@ -310,9 +310,9 @@ CoD.ScoreboardUtility.UpdatePingValue = function ( f31_arg0, f31_arg1, f31_arg2,
 		local f31_local1 = f31_arg2.ping:get()
 		f31_arg0.__lastUpdated = f31_local0
 		f31_arg0.__lastPing = f31_local1
-		return Engine[0xF9F1239CFD921FE]( 0x1DCF7585A3D89B3, f31_local1 )
+		return Engine[0xF9F1239CFD921FE]( "menu/pc_ping", f31_local1 )
 	else
-		return Engine[0xF9F1239CFD921FE]( 0x1DCF7585A3D89B3, f31_arg0.__lastPing or 0 )
+		return Engine[0xF9F1239CFD921FE]( "menu/pc_ping", f31_arg0.__lastPing or 0 )
 	end
 end
 
@@ -321,7 +321,7 @@ DataSources.TabbedScoreboardTabs = ListHelper_SetupDataSource( "TabbedScoreboard
 	if not IsGameTypeWarzone() then
 		table.insert( f32_local0, {
 			models = {
-				tabName = Engine[0xF9F1239CFD921FE]( 0x1BEC25D30B88C59 ),
+				tabName = Engine[0xF9F1239CFD921FE]( "mpui/scoreboard" ),
 				action = CoD.ScoreboardUtility.SwitchTabbedScoreboardTabs,
 				param = CoD.HUDUtility.GameStatusMode.MODE_SHOW_SCORES
 			},
@@ -333,7 +333,7 @@ DataSources.TabbedScoreboardTabs = ListHelper_SetupDataSource( "TabbedScoreboard
 	if not CoD.IsShoutcaster( f32_arg0 ) then
 		table.insert( f32_local0, {
 			models = {
-				tabName = Engine[0xF9F1239CFD921FE]( 0x3949D949A3E82CF ),
+				tabName = Engine[0xF9F1239CFD921FE]( "menu/map" ),
 				action = CoD.ScoreboardUtility.SwitchTabbedScoreboardTabs,
 				param = CoD.HUDUtility.GameStatusMode.MODE_SHOW_MAP
 			},
@@ -410,7 +410,7 @@ DataSources.ScoreboardSortOptions = ListHelper_SetupDataSource( "ScoreboardSortO
 	local f39_local5 = {
 		models = {
 			id = "scoreboard.score",
-			name = 0x703D5344B824323,
+			name = "mpui/score",
 			icon = "icon_scoreboard_badge_total_score128"
 		}
 	}
@@ -424,7 +424,7 @@ DataSources.ScoreboardSortOptions = ListHelper_SetupDataSource( "ScoreboardSortO
 	f39_local5 = {
 		models = {
 			id = "scoreboard.damageDone",
-			name = 0x89FE6A116A1EE1F,
+			name = "mpui/damage_done",
 			icon = "icon_scoreboard_badge_damage_dealt128"
 		}
 	}
@@ -439,7 +439,7 @@ DataSources.ScoreboardSortOptions = ListHelper_SetupDataSource( "ScoreboardSortO
 		f39_local5 = {
 			models = {
 				id = "scoreboard.objScore",
-				name = 0x7C9E518376089AE,
+				name = "mpui/objscore",
 				icon = "icon_scoreboard_badge_objective_score128"
 			}
 		}
@@ -574,7 +574,7 @@ CoD.ScoreboardUtility.SetScoreboardUIModels = function ( f45_arg0 )
 	end
 	Engine.SetModelValue( Engine.CreateModel( Engine.GetModelForController( f45_arg0 ), "updateClientDeadStatus" ), 0 )
 	Engine.SetModelValue( Engine.CreateModel( f45_local2, "muteButtonPromptVisible" ), false )
-	Engine.SetModelValue( Engine.CreateModel( f45_local2, "muteButtonPromptText" ), 0x0 )
+	Engine.SetModelValue( Engine.CreateModel( f45_local2, "muteButtonPromptText" ), "" )
 	local f45_local4 = MapNameToLocalizedMapName( Engine.GetCurrentMapName() )
 	Engine.SetModelValue( Engine.CreateModel( f45_local2, "mapName" ), f45_local4 )
 	Engine.SetModelValue( Engine.CreateModel( f45_local3, "mapName" ), f45_local4 )
@@ -713,7 +713,7 @@ CoD.ScoreboardUtility.MPScrPostLaod = function ( f46_arg0, f46_arg1, f46_arg2 )
 			f50_arg0.currentScore = f50_arg0.currentScore + f50_arg2
 			local f50_local0
 			if f50_arg2 > 0 then
-				f50_local0 = Engine[0xF9F1239CFD921FE]( 0x79FAB66208B3145 )
+				f50_local0 = Engine[0xF9F1239CFD921FE]( "mp/plus" )
 				if not f50_local0 then
 				
 				else
@@ -735,7 +735,7 @@ CoD.ScoreboardUtility.MPScrPostLaod = function ( f46_arg0, f46_arg1, f46_arg2 )
 					else
 						f46_arg0:playClip( "NormalScore" )
 					end
-					if f50_arg1 ~= 0x1C078C11093F212 and f50_arg1 ~= 0x80234A872BD64AC then
+					if f50_arg1 ~= "score/kill" and f50_arg1 ~= "score/blank" then
 						f50_arg0:AddScoreFeed( Engine.Localize( f50_arg1 ), f50_local1, f50_local2 )
 					end
 					if f50_local2 then

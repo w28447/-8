@@ -38,7 +38,7 @@ LUI.createMenu.WZPersonalizeWeapon = function ( f1_arg0, f1_arg1 )
 	self.BackgroundSlidePanel = BackgroundSlidePanel
 	
 	local CACHeader = CoD.CommonHeader.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0, 0, 0, 67 )
-	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x94122F68876E5D9 ) )
+	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "mpui/personalize_caps" ) )
 	CACHeader.subtitle.subtitle:setAlpha( 0 )
 	CACHeader:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
@@ -186,12 +186,12 @@ LUI.createMenu.WZPersonalizeWeapon = function ( f1_arg0, f1_arg1 )
 	self:addElement( PaintCanCount )
 	self.PaintCanCount = PaintCanCount
 	
-	self:registerEventHandler( "occlusion_change", function ( element, event )
+	self:registerEventHandler( "occlusion_change", function ( self, event )
 		local f13_local0 = nil
-		if element.OcclusionChange then
-			f13_local0 = element:OcclusionChange( event )
-		elseif element.super.OcclusionChange then
-			f13_local0 = element.super:OcclusionChange( event )
+		if self.OcclusionChange then
+			f13_local0 = self:OcclusionChange( event )
+		elseif self.super.OcclusionChange then
+			f13_local0 = self.super:OcclusionChange( event )
 		end
 		if IsEventPropertyEqualTo( event, "occluded", true ) then
 			MenuUnhideFreeCursor( f1_local1, f1_arg0 )
@@ -199,30 +199,30 @@ LUI.createMenu.WZPersonalizeWeapon = function ( f1_arg0, f1_arg1 )
 			MenuHidesFreeCursor( f1_local1, f1_arg0 )
 		end
 		if not f13_local0 then
-			f13_local0 = element:dispatchEventToChildren( event )
+			f13_local0 = self:dispatchEventToChildren( event )
 		end
 		return f13_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
-		if MenuPropertyIsTrue( f14_arg1, "_showWeaponVariantList" ) and IsPC() then
-			CoD.CACUtility.HideWeaponVariantList( f14_arg1, f14_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		if MenuPropertyIsTrue( menu, "_showWeaponVariantList" ) and IsPC() then
+			CoD.CACUtility.HideWeaponVariantList( menu, controller )
 			return true
 		else
 			PlaySoundAlias( "uin_party_ease_slide_back" )
-			CoD.CACUtility.PlayChooseScreenOutro( f14_arg1, f14_arg2, "Close" )
-			SaveLoadoutGeneric( f14_arg2 )
-			DelayGoBack( f14_arg1, f14_arg2, 200 )
-			CoD.LobbyUtility.SetMenuControllerRestriction( self, f14_arg2, 0 )
+			CoD.CACUtility.PlayChooseScreenOutro( menu, controller, "Close" )
+			SaveLoadoutGeneric( controller )
+			DelayGoBack( menu, controller, 200 )
+			CoD.LobbyUtility.SetMenuControllerRestriction( self, controller, 0 )
 			return true
 		end
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( element, menu, controller, model )
 		return true
-	end, function ( f17_arg0, f17_arg1, f17_arg2 )
-		CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "", nil, nil )
 		return false
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

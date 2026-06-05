@@ -106,16 +106,16 @@ LUI.createMenu.LUIelemText = function ( f9_arg0, f9_arg1 )
 	self:addElement( Text )
 	self.Text = Text
 	
-	self:registerEventHandler( "menu_loaded", function ( element, event )
+	self:registerEventHandler( "menu_loaded", function ( self, event )
 		local f13_local0 = nil
-		if element.menuLoaded then
-			f13_local0 = element:menuLoaded( event )
-		elseif element.super.menuLoaded then
-			f13_local0 = element.super:menuLoaded( event )
+		if self.menuLoaded then
+			f13_local0 = self:menuLoaded( event )
+		elseif self.super.menuLoaded then
+			f13_local0 = self.super:menuLoaded( event )
 		end
 		SizeToSafeArea( self, f9_arg0 )
 		if not f13_local0 then
-			f13_local0 = element:dispatchEventToChildren( event )
+			f13_local0 = self:dispatchEventToChildren( event )
 		end
 		return f13_local0
 	end )

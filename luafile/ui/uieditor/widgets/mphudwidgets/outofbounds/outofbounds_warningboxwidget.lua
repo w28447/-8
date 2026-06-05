@@ -11,7 +11,7 @@ CoD.outofbounds_warningboxwidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local CenterBoxGlow = LUI.UIImage.new( 0, 0, -75.5, 1224.5, 0, 0, -25.5, 310.5 )
-	CenterBoxGlow:setImage( RegisterImage( 0xA6ABAF4E8653C11 ) )
+	CenterBoxGlow:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_warning_glow" ) )
 	CenterBoxGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	CenterBoxGlow:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( CenterBoxGlow )
@@ -20,40 +20,40 @@ CoD.outofbounds_warningboxwidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local CenterBoxBotLine3 = LUI.UIImage.new( 0.5, 0.5, -578.5, 579.5, 0.5, 0.5, 75, 105 )
 	CenterBoxBotLine3:setAlpha( 0.4 )
 	CenterBoxBotLine3:setZoom( -10 )
-	CenterBoxBotLine3:setImage( RegisterImage( 0xB272A8F1652D0AD ) )
+	CenterBoxBotLine3:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_warning_backing" ) )
 	self:addElement( CenterBoxBotLine3 )
 	self.CenterBoxBotLine3 = CenterBoxBotLine3
 	
 	local CenterBoxBotLine2 = LUI.UIImage.new( 0.5, 0.5, -578.5, 579.5, 0.5, 0.5, 71, 101 )
-	CenterBoxBotLine2:setImage( RegisterImage( 0xB272A8F1652D0AD ) )
+	CenterBoxBotLine2:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_warning_backing" ) )
 	self:addElement( CenterBoxBotLine2 )
 	self.CenterBoxBotLine2 = CenterBoxBotLine2
 	
 	local CenterBoxBotLine = LUI.UIImage.new( 0.5, 0.5, -578.5, 579.5, 0.5, 0.5, 71, 101 )
-	CenterBoxBotLine:setImage( RegisterImage( 0xB272A8F1652D0AD ) )
+	CenterBoxBotLine:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_warning_backing" ) )
 	self:addElement( CenterBoxBotLine )
 	self.CenterBoxBotLine = CenterBoxBotLine
 	
 	local CenterBox3 = LUI.UIImage.new( 0.5, 0.5, -578.5, 579.5, 0.5, 0.5, -100.5, 39.5 )
 	CenterBox3:setAlpha( 0.4 )
-	CenterBox3:setImage( RegisterImage( 0xA7ACAAD400A469D ) )
+	CenterBox3:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_return_backing" ) )
 	self:addElement( CenterBox3 )
 	self.CenterBox3 = CenterBox3
 	
 	local CenterBox2 = LUI.UIImage.new( 0.5, 0.5, -578.5, 579.5, 0.5, 0.5, -104.5, 35.5 )
-	CenterBox2:setImage( RegisterImage( 0xA7ACAAD400A469D ) )
+	CenterBox2:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_return_backing" ) )
 	self:addElement( CenterBox2 )
 	self.CenterBox2 = CenterBox2
 	
 	local CenterBox = LUI.UIImage.new( 0.5, 0.5, -578.5, 579.5, 0.5, 0.5, -104.5, 35.5 )
-	CenterBox:setImage( RegisterImage( 0xA7ACAAD400A469D ) )
+	CenterBox:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_return_backing" ) )
 	self:addElement( CenterBox )
 	self.CenterBox = CenterBox
 	
 	local TextBoxWarningBlur = LUI.UIText.new( 0.5, 0.5, -498.5, 498.5, 0.5, 0.5, -88, 41 )
 	TextBoxWarningBlur:setAlpha( 0.5 )
 	TextBoxWarningBlur:setZoom( -40 )
-	TextBoxWarningBlur:setText( Engine[0xF9F1239CFD921FE]( 0xDBDEBD27773724A ) )
+	TextBoxWarningBlur:setText( Engine[0xF9F1239CFD921FE]( "mpui/out_of_bounds_warning" ) )
 	TextBoxWarningBlur:setTTF( "0arame_mono_stencil" )
 	TextBoxWarningBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	TextBoxWarningBlur:setShaderVector( 0, 0.03, 0, 0, 0 )
@@ -68,7 +68,7 @@ CoD.outofbounds_warningboxwidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local TextBoxWarning = LUI.UIText.new( 0.5, 0.5, -498.5, 498.5, 0.5, 0.5, -88, 41 )
 	TextBoxWarning:setAlpha( 0.9 )
-	TextBoxWarning:setText( Engine[0xF9F1239CFD921FE]( 0xDBDEBD27773724A ) )
+	TextBoxWarning:setText( Engine[0xF9F1239CFD921FE]( "mpui/out_of_bounds_warning" ) )
 	TextBoxWarning:setTTF( "0arame_mono_stencil" )
 	TextBoxWarning:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	TextBoxWarning:setShaderVector( 0, 0.03, 0, 0, 0 )

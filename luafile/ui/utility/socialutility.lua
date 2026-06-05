@@ -33,26 +33,26 @@ CoD.SocialUtility.GetRankIcons = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3 )
 		return "t7_icon_rank_" .. f1_arg0 .. "_ghost_level_01"
 	elseif f1_arg0 == "mp" then
 		if f1_arg3 > 0 then
-			return Engine[0xE21763E1EB756F8]( f1_arg3, Enum.eModes[0x83EBA96F36BC4E5] )
+			return Engine[0xE21763E1EB756F8]( f1_arg3, Enum.eModes.mode_multiplayer )
 		else
-			return Engine[0xD4A9B159BE44163]( f1_arg2, Enum.eModes[0x83EBA96F36BC4E5] )
+			return Engine[0xD4A9B159BE44163]( f1_arg2, Enum.eModes.mode_multiplayer )
 		end
 	elseif f1_arg0 == "zm" then
 		if f1_arg3 > 0 then
-			return Engine[0xE21763E1EB756F8]( f1_arg3, Enum.eModes[0x3723205FAE52C4A] )
+			return Engine[0xE21763E1EB756F8]( f1_arg3, Enum.eModes.mode_zombies )
 		else
-			return Engine[0xD4A9B159BE44163]( f1_arg2, Enum.eModes[0x3723205FAE52C4A] )
+			return Engine[0xD4A9B159BE44163]( f1_arg2, Enum.eModes.mode_zombies )
 		end
 	elseif f1_arg0 == "wz" then
 		if f1_arg3 > 0 then
-			return Engine[0xE21763E1EB756F8]( f1_arg3, Enum.eModes[0xBF1DCC8138A9D39] )
+			return Engine[0xE21763E1EB756F8]( f1_arg3, Enum.eModes.mode_warzone )
 		else
-			return Engine[0xD4A9B159BE44163]( f1_arg2, Enum.eModes[0xBF1DCC8138A9D39] )
+			return Engine[0xD4A9B159BE44163]( f1_arg2, Enum.eModes.mode_warzone )
 		end
 	elseif f1_arg0 == "cp" then
 		return "blacktransparent"
 	else
-		return Engine[0xD4A9B159BE44163]( f1_arg2, Enum.eModes[0x83EBA96F36BC4E5] )
+		return Engine[0xD4A9B159BE44163]( f1_arg2, Enum.eModes.mode_multiplayer )
 	end
 end
 
@@ -234,23 +234,23 @@ end
 CoD.SocialUtility.PresenceToIcon = function ( f16_arg0 )
 	local f16_local0 = tonumber( f16_arg0 )
 	if f16_local0 == Enum[0x4BBA402DE649132][0x1CF21FD793411B9] then
-		return 0xC4CF58835C4A472
+		return "ui_icon_gamemode_logo_orange"
 	elseif f16_local0 == Enum[0x4BBA402DE649132][0xA2184EBB293AF2D] then
-		return 0xC4CF58835C4A472
+		return "ui_icon_gamemode_logo_orange"
 	elseif f16_local0 == Enum[0x4BBA402DE649132][0xC14960E60DA36B7] then
-		return 0xC4CF58835C4A472
+		return "ui_icon_gamemode_logo_orange"
 	elseif f16_local0 >= Enum[0x4BBA402DE649132][0x69F9F19327AE3B3] and f16_local0 <= Enum[0x4BBA402DE649132][0x59DAD56E9325476] then
-		return 0xC4CF58835C4A472
+		return "ui_icon_gamemode_logo_orange"
 	elseif f16_local0 >= Enum[0x4BBA402DE649132][0x1DB40BC5D7A26F2] and f16_local0 <= Enum[0x4BBA402DE649132][0xDD9D1D4A601036C] then
-		return LuaUtils.GetPresenceImageForEMode( Enum.eModes[0x3723205FAE52C4A] )
+		return LuaUtils.GetPresenceImageForEMode( Enum.eModes.mode_zombies )
 	elseif f16_local0 >= Enum[0x4BBA402DE649132][0x1632587246C118A] and f16_local0 <= Enum[0x4BBA402DE649132][0xEDDB0D016B3F54] then
-		return LuaUtils.GetPresenceImageForEMode( Enum.eModes[0x83EBA96F36BC4E5] )
+		return LuaUtils.GetPresenceImageForEMode( Enum.eModes.mode_multiplayer )
 	elseif f16_local0 >= Enum[0x4BBA402DE649132][0x61619C03C7E6934] and f16_local0 <= Enum[0x4BBA402DE649132][0x886E7F57ED1ED3A] then
-		return LuaUtils.GetPresenceImageForEMode( Enum.eModes[0x60063C67132EB69] )
+		return LuaUtils.GetPresenceImageForEMode( Enum.eModes.mode_campaign )
 	elseif f16_local0 >= Enum[0x4BBA402DE649132][0x79F90DEF3681532] and f16_local0 <= Enum[0x4BBA402DE649132][0x35923F6DC7C09AC] then
-		return LuaUtils.GetPresenceImageForEMode( Enum.eModes[0xBF1DCC8138A9D39] )
+		return LuaUtils.GetPresenceImageForEMode( Enum.eModes.mode_warzone )
 	elseif f16_local0 >= Enum[0x4BBA402DE649132][0x5EEADE3AFEF0F50] and f16_local0 <= Enum[0x4BBA402DE649132][0xAE1F1FC5A87498E] then
-		return LuaUtils.GetPresenceImageForEMode( Enum.eModes[0x83EBA96F36BC4E5] )
+		return LuaUtils.GetPresenceImageForEMode( Enum.eModes.mode_multiplayer )
 	else
 		return "blacktransparent"
 	end
@@ -261,11 +261,11 @@ CoD.SocialUtility.PrimaryPresenceToLocalizedString = function ( f17_arg0 )
 	if f17_local0 == Enum.PresencePrimary[0xDB6E2B269A58541] then
 		return "menu/offline"
 	elseif f17_local0 == Enum.PresencePrimary[0xABAD15ABC044995] then
-		return 0x8E783C525F2FA8
+		return "menu/online"
 	elseif f17_local0 == Enum.PresencePrimary[0x44579D7D4E7C795] then
-		return 0x8E783C525F2FA8
+		return "menu/online"
 	elseif f17_local0 == Enum.PresencePrimary[0x5BE7ACD6487188] then
-		return 0x8E783C525F2FA8
+		return "menu/online"
 	else
 		return "menu/offline"
 	end
@@ -493,11 +493,11 @@ CoD.SocialUtility.GetPartyModel = function ( f31_arg0, f31_arg1, f31_arg2, f31_a
 end
 
 CoD.SocialUtility.AddRankData = function ( f32_arg0 )
-	f32_arg0.mpRankIcon = 0x214ECBA8C04D44C
-	f32_arg0.zmRankIcon = 0x214ECBA8C04D44C
-	f32_arg0.wzRankIcon = 0x214ECBA8C04D44C
-	f32_arg0.cpRankIcon = 0x214ECBA8C04D44C
-	f32_arg0.arenaRankIcon = 0x214ECBA8C04D44C
+	f32_arg0.mpRankIcon = "$blacktransparent"
+	f32_arg0.zmRankIcon = "$blacktransparent"
+	f32_arg0.wzRankIcon = "$blacktransparent"
+	f32_arg0.cpRankIcon = "$blacktransparent"
+	f32_arg0.arenaRankIcon = "$blacktransparent"
 	f32_arg0.mpRank = f32_arg0.mpRank or 0
 	f32_arg0.zmRank = f32_arg0.zmRank or 0
 	f32_arg0.wzRank = f32_arg0.wzRank or 0
@@ -507,61 +507,61 @@ CoD.SocialUtility.AddRankData = function ( f32_arg0 )
 	f32_arg0.wzPrestige = f32_arg0.wzPrestige or 0
 	f32_arg0.mpParagon = false
 	if LuaUtils.MultiplayerModeAvailable() then
-		if f32_arg0.mpPrestige == CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes[0x83EBA96F36BC4E5] ) and IsGameModeParagonCapable( Enum.eModes[0x83EBA96F36BC4E5] ) then
+		if f32_arg0.mpPrestige == CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes.mode_multiplayer ) and IsGameModeParagonCapable( Enum.eModes.mode_multiplayer ) then
 			f32_arg0.mpRankIcon = CoD.SocialUtility.GetRankIcons( "mp", true, f32_arg0.mpParagonRank, f32_arg0.mpPrestige )
-			f32_arg0.mpRank = Engine.GetParagonRankDisplayLevel( f32_arg0.mpParagonRank, Enum.eModes[0x83EBA96F36BC4E5] )
+			f32_arg0.mpRank = Engine.GetParagonRankDisplayLevel( f32_arg0.mpParagonRank, Enum.eModes.mode_multiplayer )
 			if f32_arg0.mpParagonIconId and f32_arg0.mpParagonIconId ~= CoD.PrestigeUtility.INVALID_PARAGON_ICON_ID then
-				f32_arg0.mpRankIcon = Engine.GetParagonIconById( f32_arg0.mpParagonIconId, Enum.eModes[0x83EBA96F36BC4E5] )
+				f32_arg0.mpRankIcon = Engine.GetParagonIconById( f32_arg0.mpParagonIconId, Enum.eModes.mode_multiplayer )
 			end
 		else
 			f32_arg0.mpRankIcon = CoD.SocialUtility.GetRankIcons( "mp", true, f32_arg0.mpRank, f32_arg0.mpPrestige )
-			f32_arg0.mpRank = Engine.GetRankDisplayLevel( f32_arg0.mpRank, Enum.eModes[0x83EBA96F36BC4E5] )
+			f32_arg0.mpRank = Engine.GetRankDisplayLevel( f32_arg0.mpRank, Enum.eModes.mode_multiplayer )
 		end
 		local f32_local0
-		if f32_arg0.mpPrestige == nil or f32_arg0.mpPrestige ~= CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes[0x83EBA96F36BC4E5] ) then
+		if f32_arg0.mpPrestige == nil or f32_arg0.mpPrestige ~= CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes.mode_multiplayer ) then
 			f32_local0 = false
 		else
 			f32_local0 = true
 		end
 		f32_arg0.mpParagon = f32_local0
 		if f32_arg0.mpParagon and f32_arg0.mpParagonIconId ~= nil and f32_arg0.mpParagonIconId ~= CoD.PrestigeUtility.INVALID_PARAGON_ICON_ID then
-			f32_arg0.mpRankIcon = Engine.GetParagonIconById( f32_arg0.mpParagonIconId, Enum.eModes[0x83EBA96F36BC4E5] )
+			f32_arg0.mpRankIcon = Engine.GetParagonIconById( f32_arg0.mpParagonIconId, Enum.eModes.mode_multiplayer )
 		end
 	end
 	f32_arg0.zmParagon = false
 	if LuaUtils.ZombiesModeAvailable() then
 		f32_arg0.zmRankIcon = CoD.SocialUtility.GetRankIcons( "zm", true, f32_arg0.zmRank, f32_arg0.zmPrestige )
-		if f32_arg0.zmPrestige == CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes[0x3723205FAE52C4A] ) then
-			if IsGameModeParagonCapable( Enum.eModes[0x3723205FAE52C4A] ) then
-				f32_arg0.zmRank = Engine.GetParagonRankDisplayLevel( f32_arg0.zmParagonRank, Enum.eModes[0x3723205FAE52C4A] )
+		if f32_arg0.zmPrestige == CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes.mode_zombies ) then
+			if IsGameModeParagonCapable( Enum.eModes.mode_zombies ) then
+				f32_arg0.zmRank = Engine.GetParagonRankDisplayLevel( f32_arg0.zmParagonRank, Enum.eModes.mode_zombies )
 			end
 		else
-			f32_arg0.zmRank = Engine.GetRankDisplayLevel( f32_arg0.zmRank, Enum.eModes[0x3723205FAE52C4A] )
+			f32_arg0.zmRank = Engine.GetRankDisplayLevel( f32_arg0.zmRank, Enum.eModes.mode_zombies )
 		end
 		local f32_local0
-		if f32_arg0.zmPrestige == nil or f32_arg0.zmPrestige ~= CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes[0x3723205FAE52C4A] ) then
+		if f32_arg0.zmPrestige == nil or f32_arg0.zmPrestige ~= CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes.mode_zombies ) then
 			f32_local0 = false
 		else
 			f32_local0 = true
 		end
 		f32_arg0.zmParagon = f32_local0
 		if f32_arg0.zmParagon and f32_arg0.zmParagonIconId ~= nil and f32_arg0.zmParagonIconId ~= CoD.PrestigeUtility.INVALID_PARAGON_ICON_ID then
-			f32_arg0.zmRankIcon = Engine.GetParagonIconById( f32_arg0.zmParagonIconId, Enum.eModes[0x3723205FAE52C4A] )
+			f32_arg0.zmRankIcon = Engine.GetParagonIconById( f32_arg0.zmParagonIconId, Enum.eModes.mode_zombies )
 		end
 	end
 	f32_arg0.wzParagon = false
 	if LuaUtils.WarzoneModeAvailable() then
 		f32_arg0.wzRankString = CoD.WZUtility.GetDecoratedStringForRank( f32_arg0.wzRank, f32_arg0.wzParagonRank, f32_arg0.wzPrestige )
-		if f32_arg0.wzPrestige == CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes[0xBF1DCC8138A9D39] ) and IsGameModeParagonCapable( Enum.eModes[0xBF1DCC8138A9D39] ) then
+		if f32_arg0.wzPrestige == CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes.mode_warzone ) and IsGameModeParagonCapable( Enum.eModes.mode_warzone ) then
 			f32_arg0.wzRankIcon = CoD.SocialUtility.GetRankIcons( "wz", true, f32_arg0.wzParagonRank, f32_arg0.wzPrestige )
 		else
 			f32_arg0.wzRankIcon = CoD.SocialUtility.GetRankIcons( "wz", true, f32_arg0.wzRank, f32_arg0.wzPrestige )
 		end
-		f32_arg0.wzRank = Engine.GetRankDisplayLevel( f32_arg0.wzRank, Enum.eModes[0xBF1DCC8138A9D39] )
-		f32_arg0.wzRankName = CoD.GetRankName( f32_arg0.wzRank, 0, Enum.eModes[0xBF1DCC8138A9D39] )
-		if f32_arg0.wzPrestige ~= nil and f32_arg0.wzPrestige == CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes[0xBF1DCC8138A9D39] ) and f32_arg0.wzParagonIconId ~= nil and f32_arg0.wzParagonIconId ~= CoD.PrestigeUtility.INVALID_PARAGON_ICON_ID then
+		f32_arg0.wzRank = Engine.GetRankDisplayLevel( f32_arg0.wzRank, Enum.eModes.mode_warzone )
+		f32_arg0.wzRankName = CoD.GetRankName( f32_arg0.wzRank, 0, Enum.eModes.mode_warzone )
+		if f32_arg0.wzPrestige ~= nil and f32_arg0.wzPrestige == CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes.mode_warzone ) and f32_arg0.wzParagonIconId ~= nil and f32_arg0.wzParagonIconId ~= CoD.PrestigeUtility.INVALID_PARAGON_ICON_ID then
 			f32_arg0.wzParagon = true
-			f32_arg0.wzRankIcon = Engine.GetParagonIconById( f32_arg0.wzParagonIconId, Enum.eModes[0xBF1DCC8138A9D39] )
+			f32_arg0.wzRankIcon = Engine.GetParagonIconById( f32_arg0.wzParagonIconId, Enum.eModes.mode_warzone )
 		end
 	end
 	if LuaUtils.ArenaModeAvailable() then
@@ -584,13 +584,13 @@ end
 
 CoD.SocialUtility.AddRankNamesIfAvailable = function ( f33_arg0 )
 	if f33_arg0.mpRank ~= nil and f33_arg0.mpPrestige ~= nil then
-		f33_arg0.mpRankName = CoD.GetRankName( f33_arg0.mpRank - 1, f33_arg0.mpPrestige, Enum.eModes[0x83EBA96F36BC4E5] )
+		f33_arg0.mpRankName = CoD.GetRankName( f33_arg0.mpRank - 1, f33_arg0.mpPrestige, Enum.eModes.mode_multiplayer )
 	end
 	if f33_arg0.wzRank ~= nil then
-		f33_arg0.wzRankName = CoD.GetRankName( f33_arg0.wzRank - 1, 0, Enum.eModes[0xBF1DCC8138A9D39] )
+		f33_arg0.wzRankName = CoD.GetRankName( f33_arg0.wzRank - 1, 0, Enum.eModes.mode_warzone )
 	end
 	if f33_arg0.zmRank ~= nil and f33_arg0.zmPrestige ~= nil then
-		f33_arg0.zmRankName = CoD.GetRankName( f33_arg0.zmRank - 1, f33_arg0.zmPrestige, Enum.eModes[0x3723205FAE52C4A] )
+		f33_arg0.zmRankName = CoD.GetRankName( f33_arg0.zmRank - 1, f33_arg0.zmPrestige, Enum.eModes.mode_zombies )
 	end
 	if f33_arg0.arenaRank ~= nil then
 		local f33_local0, f33_local1 = CoD.ArenaLeaguePlayUtility.GetBanner( f33_arg0.arenaLeaguePlayPoints, f33_arg0.arenaLeaguePlayBestSubdivisionRank, f33_arg0.arenaLeaguePlayFirstSubdivisionRankTotal )
@@ -658,29 +658,29 @@ DataSources.SocialPlayerInfo = {
 				local f35_local13 = LUI.ShallowCopy( f35_local7 )
 				if LuaUtils.MultiplayerModeAvailable() then
 					f35_local9.Played = true
-					f35_local9.Rank = Engine.GetRankDisplayLevel( f35_local8.info.mp.rank, Enum.eModes[0x83EBA96F36BC4E5] )
-					f35_local9.RankName = CoD.GetRankName( f35_local8.info.mp.rank, f35_local8.info.mp.prestige, Enum.eModes[0x83EBA96F36BC4E5] )
+					f35_local9.Rank = Engine.GetRankDisplayLevel( f35_local8.info.mp.rank, Enum.eModes.mode_multiplayer )
+					f35_local9.RankName = CoD.GetRankName( f35_local8.info.mp.rank, f35_local8.info.mp.prestige, Enum.eModes.mode_multiplayer )
 					f35_local9.RankIcon = CoD.SocialUtility.GetRankIcons( "mp", f35_local9.Played, f35_local8.info.mp.rank, f35_local8.info.mp.prestige )
 					f35_local9.Prestige = f35_local8.info.mp.prestige
-					if f35_local9.Prestige == CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes[0x83EBA96F36BC4E5] ) and IsGameModeParagonCapable( Enum.eModes[0x83EBA96F36BC4E5] ) then
+					if f35_local9.Prestige == CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes.mode_multiplayer ) and IsGameModeParagonCapable( Enum.eModes.mode_multiplayer ) then
 						f35_local9.Paragon = true
-						f35_local9.Rank = Engine.GetParagonRankDisplayLevel( f35_local8.info.mp.rank, Enum.eModes[0x83EBA96F36BC4E5] )
+						f35_local9.Rank = Engine.GetParagonRankDisplayLevel( f35_local8.info.mp.rank, Enum.eModes.mode_multiplayer )
 						if f35_local8.info.mp.paragonIconId ~= CoD.PrestigeUtility.INVALID_PARAGON_ICON_ID then
-							f35_local9.RankIcon = Engine.GetParagonIconById( f35_local8.info.mp.paragonIconId, Enum.eModes[0x83EBA96F36BC4E5] )
+							f35_local9.RankIcon = Engine.GetParagonIconById( f35_local8.info.mp.paragonIconId, Enum.eModes.mode_multiplayer )
 						end
 					end
 				end
 				if LuaUtils.ZombiesModeAvailable() then
 					f35_local10.Played = true
-					f35_local10.Rank = Engine.GetRankDisplayLevel( f35_local8.info.zm.rank, Enum.eModes[0x3723205FAE52C4A] )
-					f35_local10.RankName = CoD.GetRankName( f35_local8.info.zm.rank, f35_local8.info.zm.prestige, Enum.eModes[0x3723205FAE52C4A] )
+					f35_local10.Rank = Engine.GetRankDisplayLevel( f35_local8.info.zm.rank, Enum.eModes.mode_zombies )
+					f35_local10.RankName = CoD.GetRankName( f35_local8.info.zm.rank, f35_local8.info.zm.prestige, Enum.eModes.mode_zombies )
 					f35_local10.RankIcon = CoD.SocialUtility.GetRankIcons( "zm", f35_local10.Played, f35_local8.info.zm.rank, f35_local8.info.zm.prestige )
 					f35_local10.Prestige = f35_local8.info.zm.prestige
-					if IsGameModeParagonCapable( Enum.eModes[0x3723205FAE52C4A] ) and f35_local8.info.zm.prestige == CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes[0x3723205FAE52C4A] ) then
+					if IsGameModeParagonCapable( Enum.eModes.mode_zombies ) and f35_local8.info.zm.prestige == CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes.mode_zombies ) then
 						f35_local10.Paragon = true
-						f35_local10.Rank = Engine.GetParagonRankDisplayLevel( f35_local8.info.zm.rank, Enum.eModes[0x3723205FAE52C4A] )
+						f35_local10.Rank = Engine.GetParagonRankDisplayLevel( f35_local8.info.zm.rank, Enum.eModes.mode_zombies )
 						if f35_local8.info.zm.paragonIconId ~= CoD.PrestigeUtility.INVALID_PARAGON_ICON_ID then
-							f35_local10.RankIcon = Engine.GetParagonIconById( f35_local8.info.zm.paragonIconId, Enum.eModes[0x3723205FAE52C4A] )
+							f35_local10.RankIcon = Engine.GetParagonIconById( f35_local8.info.zm.paragonIconId, Enum.eModes.mode_zombies )
 						end
 					end
 				end
@@ -688,13 +688,13 @@ DataSources.SocialPlayerInfo = {
 					f35_local11.Played = true
 					f35_local11.ParagonRank = f35_local8.info.wz.paragonRank
 					f35_local11.Rank = CoD.WZUtility.GetDecoratedStringForRank( f35_local8.info.wz.rank, f35_local8.info.wz.paragonRank, f35_local8.info.wz.prestige )
-					f35_local11.RankName = CoD.GetRankName( f35_local8.info.wz.rank, 0, Enum.eModes[0xBF1DCC8138A9D39] )
+					f35_local11.RankName = CoD.GetRankName( f35_local8.info.wz.rank, 0, Enum.eModes.mode_warzone )
 					f35_local11.RankIcon = CoD.SocialUtility.GetRankIcons( "wz", f35_local11.Played, f35_local8.info.wz.rank, f35_local8.info.wz.prestige )
 					f35_local11.Prestige = f35_local8.info.wz.prestige
-					if IsGameModeParagonCapable( Enum.eModes[0xBF1DCC8138A9D39] ) and f35_local8.info.wz.prestige == CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes[0xBF1DCC8138A9D39] ) then
+					if IsGameModeParagonCapable( Enum.eModes.mode_warzone ) and f35_local8.info.wz.prestige == CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes.mode_warzone ) then
 						f35_local11.Paragon = true
 						if f35_local8.info.wz.paragonIconId ~= CoD.PrestigeUtility.INVALID_PARAGON_ICON_ID then
-							f35_local11.RankIcon = Engine.GetParagonIconById( f35_local8.info.wz.paragonIconId, Enum.eModes[0xBF1DCC8138A9D39] )
+							f35_local11.RankIcon = Engine.GetParagonIconById( f35_local8.info.wz.paragonIconId, Enum.eModes.mode_warzone )
 						end
 					end
 				end
@@ -802,7 +802,7 @@ CoD.SocialUtility.GetFriendsButtonOptions = function ( f36_arg0, f36_arg1, f36_a
 			if Engine[0xDC69CBBED0500B4]( f36_arg0, Enum.LobbyType[0xA1647599284110] ) then
 				if ShouldShowPromotePlayer( f36_arg0 ) and not f36_local3 then
 					table.insert( f36_local0, {
-						text = 0x431AAED2A65A9AC,
+						text = "menu/promote_to_party_leader",
 						id = "promoteToLeader",
 						disabled = CoD.DirectorUtility.DisableForCurrentMilestone(),
 						action = PromoteToLeader,
@@ -814,7 +814,7 @@ CoD.SocialUtility.GetFriendsButtonOptions = function ( f36_arg0, f36_arg1, f36_a
 				end
 				if Engine[0x41DC2CF4139D7]( f36_arg2 ) == false then
 					table.insert( f36_local0, {
-						text = 0xFEF051FC818F01B,
+						text = "menu/remove_from_party",
 						id = "removeFromParty",
 						disabled = false,
 						action = DisconnectClient,
@@ -836,7 +836,7 @@ CoD.SocialUtility.GetFriendsButtonOptions = function ( f36_arg0, f36_arg1, f36_a
 							f36_local10 = CoD.BaseUtility.GetMapDataFromMapID( f36_local5.info.mapid )
 						end
 						local f36_local11 = f36_local10 and f36_local10.session_mode
-						if f36_local11 and f36_local11 == Enum.eModes[0x83EBA96F36BC4E5] then
+						if f36_local11 and f36_local11 == Enum.eModes.mode_multiplayer then
 							local f36_local12 = Engine.OwnSeasonPass( f36_arg0 )
 						end
 						f36_local9 = f36_local12 or CoD.MapUtility.LobbyHasMap( f36_local5.info.mapid )
@@ -844,27 +844,27 @@ CoD.SocialUtility.GetFriendsButtonOptions = function ( f36_arg0, f36_arg1, f36_a
 					if f36_local9 then
 						if f36_local8 then
 							table.insert( f36_local0, {
-								text = 0xE49D0B0BAC3E752,
+								text = "menu/join_game",
 								id = "joinGame",
 								disabled = false,
 								action = SocialJoin,
 								params = {
 									controller = f36_arg0,
 									xuid = f36_arg2,
-									joinType = Enum.JoinType["join_type_friend"],
+									joinType = Enum.jointype.join_type_friend,
 									goBack = true
 								}
 							} )
 						else
 							table.insert( f36_local0, {
-								text = 0xE49D0B0BAC3E752,
+								text = "menu/join_game",
 								id = "joinGame",
 								disabled = false,
 								action = SocialJoin,
 								params = {
 									controller = f36_arg0,
 									xuid = f36_arg2,
-									joinType = Enum.JoinType[0x4F9C7D45FC8CB0],
+									joinType = Enum.jointype.join_type_normal,
 									goBack = true
 								}
 							} )
@@ -874,7 +874,7 @@ CoD.SocialUtility.GetFriendsButtonOptions = function ( f36_arg0, f36_arg1, f36_a
 			end
 			if (not CoD.isPC or f36_arg4) and CoD.canInviteToGame( f36_arg0, f36_arg2, true ) and not f36_local6 and not f36_local7 then
 				table.insert( f36_local0, {
-					text = 0x2EA47C1D2988981,
+					text = "menu/invite_to_party",
 					id = "inviteToParty",
 					disabled = false,
 					action = LobbyInviteFriendGoBack,
@@ -902,7 +902,7 @@ CoD.SocialUtility.GetFriendsButtonOptions = function ( f36_arg0, f36_arg1, f36_a
 	end
 	if not IsPC() and not f36_local3 then
 		table.insert( f36_local0, {
-			text = 0x250EFC225EDF7D0,
+			text = "xboxlive/view_profile",
 			id = "platformProfile",
 			disabled = false,
 			action = OpenPlatformProfile,
@@ -927,7 +927,7 @@ CoD.SocialUtility.GetFriendsButtonOptions = function ( f36_arg0, f36_arg1, f36_a
 		if not Engine.IsFriendFromXUID( f36_arg0, f36_arg2 ) then
 			if IsDurango() then
 				table.insert( f36_local0, {
-					text = 0xAE669C3D0CBB316,
+					text = "menu/follow_player",
 					id = "sendFriendRequest",
 					disabled = false,
 					action = OpenPlatformFriendRequest,
@@ -939,7 +939,7 @@ CoD.SocialUtility.GetFriendsButtonOptions = function ( f36_arg0, f36_arg1, f36_a
 				} )
 			elseif not CoD.isPC or not CoD.PCBattlenetUtility.HasSentFriendInvite( f36_arg3 ) then
 				table.insert( f36_local0, {
-					text = 0x71470E8042D087C,
+					text = "menu/send_friend_request",
 					id = "sendFriendRequest",
 					disabled = false,
 					action = OpenPlatformFriendRequest,
@@ -980,7 +980,7 @@ CoD.SocialUtility.GetFriendsButtonOptions = function ( f36_arg0, f36_arg1, f36_a
 				} )
 			else
 				table.insert( f36_local0, {
-					text = 0x12FAB6BE7D9F2EA,
+					text = "menu/mute_player",
 					id = "mutePlayer",
 					disabled = false,
 					action = MutePlayer,
@@ -1088,7 +1088,7 @@ DataSources.SocialTabs = ListHelper_SetupDataSource( "SocialTabs", function ( f4
 	if Engine.IsInGame() == false then
 		table.insert( f42_local3, {
 			models = {
-				tabName = Engine[0xF9F1239CFD921FE]( 0x7AE9A3B9A819A37 ),
+				tabName = Engine[0xF9F1239CFD921FE]( "menu/tab_party_caps" ),
 				tabWidget = "CoD.Social_Party",
 				showInQuickInvite = false
 			},
@@ -1101,7 +1101,7 @@ DataSources.SocialTabs = ListHelper_SetupDataSource( "SocialTabs", function ( f4
 	end
 	table.insert( f42_local3, {
 		models = {
-			tabName = Engine[0xF9F1239CFD921FE]( 0xD851B47994EA820 ),
+			tabName = Engine[0xF9F1239CFD921FE]( "menu/friends_caps" ),
 			tabWidget = "CoD.Social_Friends",
 			showInQuickInvite = true
 		},
@@ -1113,7 +1113,7 @@ DataSources.SocialTabs = ListHelper_SetupDataSource( "SocialTabs", function ( f4
 	if Dvar.live_clansEnabled:get() == true then
 		table.insert( f42_local3, {
 			models = {
-				tabName = LocalizeToUpperString( 0x1FE0279942E5652 ),
+				tabName = LocalizeToUpperString( "clan/clan" ),
 				tabWidget = "CoD.Social_Clan",
 				showInQuickInvite = false
 			},
@@ -1127,7 +1127,7 @@ DataSources.SocialTabs = ListHelper_SetupDataSource( "SocialTabs", function ( f4
 	if IsGroupsEnabled( f42_arg0 ) then
 		table.insert( f42_local3, {
 			models = {
-				tabName = Engine[0xF9F1239CFD921FE]( 0x170F22DBA800B37 ),
+				tabName = Engine[0xF9F1239CFD921FE]( "groups/caps" ),
 				tabWidget = "CoD.Social_Groups",
 				showInQuickInvite = true
 			},
@@ -1140,7 +1140,7 @@ DataSources.SocialTabs = ListHelper_SetupDataSource( "SocialTabs", function ( f4
 	end
 	table.insert( f42_local3, {
 		models = {
-			tabName = Engine[0xF9F1239CFD921FE]( 0xBBFF142690C3D4D ),
+			tabName = Engine[0xF9F1239CFD921FE]( "menu/tab_players_caps" ),
 			tabWidget = "CoD.Social_RecentPlayers",
 			showInQuickInvite = true
 		},
@@ -1153,7 +1153,7 @@ DataSources.SocialTabs = ListHelper_SetupDataSource( "SocialTabs", function ( f4
 	if Dvar.live_clansEnabled:get() == true then
 		table.insert( f42_local3, {
 			models = {
-				tabName = LocalizeToUpperString( 0x91511506A6D8036 ),
+				tabName = LocalizeToUpperString( "clan/inbox" ),
 				tabWidget = "CoD.Social_Inbox",
 				showInQuickInvite = false
 			},
@@ -1186,7 +1186,7 @@ DataSources.PlayersListTabs = ListHelper_SetupDataSource( "PlayersListTabs", fun
 	local f43_local3 = {}
 	table.insert( f43_local3, {
 		models = {
-			tabName = Engine[0xF9F1239CFD921FE]( 0xD851B47994EA820 ),
+			tabName = Engine[0xF9F1239CFD921FE]( "menu/friends_caps" ),
 			tabWidget = "CoD.Social_Friends",
 			showInQuickInvite = false
 		},
@@ -1198,7 +1198,7 @@ DataSources.PlayersListTabs = ListHelper_SetupDataSource( "PlayersListTabs", fun
 	if IsGroupsEnabled( f43_arg0 ) then
 		table.insert( f43_local3, {
 			models = {
-				tabName = Engine[0xF9F1239CFD921FE]( 0x170F22DBA800B37 ),
+				tabName = Engine[0xF9F1239CFD921FE]( "groups/caps" ),
 				tabWidget = "CoD.Social_Groups",
 				showInQuickInvite = false
 			},
@@ -1211,7 +1211,7 @@ DataSources.PlayersListTabs = ListHelper_SetupDataSource( "PlayersListTabs", fun
 	end
 	table.insert( f43_local3, {
 		models = {
-			tabName = Engine[0xF9F1239CFD921FE]( 0xBBFF142690C3D4D ),
+			tabName = Engine[0xF9F1239CFD921FE]( "menu/tab_players_caps" ),
 			tabWidget = "CoD.Social_RecentPlayers",
 			showInQuickInvite = false
 		},
@@ -1277,13 +1277,13 @@ DataSources.SocialOnlinePlayersList = ListHelper_SetupDataSource( "SocialOnlineP
 			f44_local20.lobbyDLCBits = f44_local19.lobbyDLCBits
 			f44_local20.mpParagon = false
 			if f44_local19.mpRank ~= nil then
-				if CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes[0x83EBA96F36BC4E5] ) <= f44_local19.mpPrestige then
-					f44_local20.mpRank = Engine.GetParagonRankDisplayLevel( f44_local19.mpRank, Enum.eModes[0x83EBA96F36BC4E5] )
+				if CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes.mode_multiplayer ) <= f44_local19.mpPrestige then
+					f44_local20.mpRank = Engine.GetParagonRankDisplayLevel( f44_local19.mpRank, Enum.eModes.mode_multiplayer )
 					f44_local20.mpParagon = true
 				else
-					f44_local20.mpRank = Engine.GetRankDisplayLevel( f44_local19.mpRank, Enum.eModes[0x83EBA96F36BC4E5] )
+					f44_local20.mpRank = Engine.GetRankDisplayLevel( f44_local19.mpRank, Enum.eModes.mode_multiplayer )
 				end
-				f44_local20.mpRankName = CoD.GetRankName( f44_local19.mpRank, f44_local19.mpPrestige, Enum.eModes[0x83EBA96F36BC4E5] )
+				f44_local20.mpRankName = CoD.GetRankName( f44_local19.mpRank, f44_local19.mpPrestige, Enum.eModes.mode_multiplayer )
 				f44_local20.mpRankIcon = IsMultiplayer() and f44_local19.rankIcon or f44_local19.mpRankIcon
 			end
 			f44_local20.wzParagon = false
@@ -1291,24 +1291,24 @@ DataSources.SocialOnlinePlayersList = ListHelper_SetupDataSource( "SocialOnlineP
 				f44_local20.wzRankString = CoD.WZUtility.GetDecoratedStringForRank( f44_local19.wzRank, f44_local19.wzParagonRank, f44_local19.wzPrestige )
 				f44_local20.wzPrestige = f44_local19.wzPrestige
 				f44_local20.wzRank = f44_local19.wzRank
-				f44_local20.wzRankName = CoD.GetRankName( f44_local19.wzRank, 0, Enum.eModes[0xBF1DCC8138A9D39] )
+				f44_local20.wzRankName = CoD.GetRankName( f44_local19.wzRank, 0, Enum.eModes.mode_warzone )
 				f44_local20.wzRankIcon = f44_local19.wzRankIcon
 				f44_local20.wzParagonRank = f44_local19.wzParagonRank
-				local f44_local12 = IsGameModeParagonCapable( Enum.eModes[0xBF1DCC8138A9D39] )
+				local f44_local12 = IsGameModeParagonCapable( Enum.eModes.mode_warzone )
 				if f44_local12 then
-					f44_local12 = Engine.GetPrestigeCap( Enum.eModes[0xBF1DCC8138A9D39] ) <= f44_local19.wzPrestige
+					f44_local12 = Engine.GetPrestigeCap( Enum.eModes.mode_warzone ) <= f44_local19.wzPrestige
 				end
 				f44_local20.wzParagon = f44_local12
 			end
 			f44_local20.zmParagon = false
 			if f44_local19.zmRank ~= nil then
-				if CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes[0x3723205FAE52C4A] ) <= f44_local19.zmPrestige then
+				if CoD.PrestigeUtility.GetPrestigeCap( Enum.eModes.mode_zombies ) <= f44_local19.zmPrestige then
 					f44_local20.zmParagon = true
-					f44_local20.zmRank = Engine.GetParagonRankDisplayLevel( f44_local19.zmRank, Enum.eModes[0x3723205FAE52C4A] )
+					f44_local20.zmRank = Engine.GetParagonRankDisplayLevel( f44_local19.zmRank, Enum.eModes.mode_zombies )
 				else
-					f44_local20.zmRank = Engine.GetRankDisplayLevel( f44_local19.zmRank, Enum.eModes[0x3723205FAE52C4A] )
+					f44_local20.zmRank = Engine.GetRankDisplayLevel( f44_local19.zmRank, Enum.eModes.mode_zombies )
 				end
-				f44_local20.zmRankName = CoD.GetRankName( f44_local19.zmRank, f44_local19.zmPrestige, Enum.eModes[0x3723205FAE52C4A] )
+				f44_local20.zmRankName = CoD.GetRankName( f44_local19.zmRank, f44_local19.zmPrestige, Enum.eModes.mode_zombies )
 				f44_local20.zmRankIcon = IsZombies() and f44_local19.rankIcon or f44_local19.zmRankIcon
 			end
 			if f44_local19.arenaLeaguePlayPoints ~= nil then
@@ -1773,7 +1773,7 @@ DataSources.SocialPlayersList = {
 					end
 					local f48_local12 = f48_local11 and f48_local11.session_mode
 					local f48_local13
-					if f48_local12 and f48_local12 == Enum.eModes[0x83EBA96F36BC4E5] then
+					if f48_local12 and f48_local12 == Enum.eModes.mode_multiplayer then
 						f48_local13 = Engine.OwnSeasonPass( f48_arg0 )
 						if not f48_local13 then
 						
@@ -1953,11 +1953,11 @@ local f0_local1 = function ( f58_arg0 )
 	return {
 		models = {
 			name = Engine[0xF9F1239CFD921FE]( 0x8713D707716544B ),
-			desc = Engine[0xF9F1239CFD921FE]( 0x9A27D679EC11266 ),
+			desc = Engine[0xF9F1239CFD921FE]( "menu/voice_chat_channel_desc" ),
 			optionsDatasource = CoD.OptionsUtility.CreateCustomOptionDataSource( f58_arg0, "PartyOptions_VoiceChatChannel", CoD.SocialUtility.VoiceChatChannelOptions, f58_local0, function ( f59_arg0 )
 				Engine.SetProfileVar( f58_arg0, "voice_favored_channel", f59_arg0 )
 				if CoD.isPC then
-					CoD.PCOptionsUtility.SyncOptionModel( f58_arg0, 0x877C6F1A42405D7 )
+					CoD.PCOptionsUtility.SyncOptionModel( f58_arg0, "voice_favored_channel" )
 				end
 			end
 			, nil, f0_local0 ),
@@ -1985,8 +1985,8 @@ DataSources.PartyControlsList = DataSourceHelpers.ListSetup( "PartyControlsList"
 		local f62_local0 = "party_privacyStatus"
 		return {
 			models = {
-				name = Engine[0xF9F1239CFD921FE]( 0xC66ADDE88E8D222 ),
-				desc = Engine[0xF9F1239CFD921FE]( 0x1E6C0A18FB50FF2 ),
+				name = Engine[0xF9F1239CFD921FE]( "menu/party_privacy" ),
+				desc = Engine[0xF9F1239CFD921FE]( "menu/party_privacy_desc" ),
 				optionsDatasource = CoD.OptionsUtility.CreateCustomOptionDataSource( f62_arg0, "PartyOptions_PartyPrivacy", CoD.SocialUtility.PartyPrivacyOptions, f62_local0, function ( f63_arg0 )
 					if Engine[0x9455799AABED509] then
 						Engine[0x9455799AABED509]( Enum.LobbyType[0xA1647599284110], f63_arg0 )
@@ -2008,7 +2008,7 @@ DataSources.PartyControlsList = DataSourceHelpers.ListSetup( "PartyControlsList"
 	
 	local f60_local0 = function ( f64_arg0 )
 		local f64_local0 = LobbyData.GetLobbyMenuByID( Engine[0x9882F293C327557]() )
-		local f64_local1 = f64_local0[0xEE71E4EE12BC453]
+		local f64_local1 = f64_local0.maxclients
 		local f64_local2 = Engine[0x44FC97037CE42ED]( Enum.LobbyModule[0x98EA1BB7164D103], Enum.LobbyType[0xA1647599284110], Enum[0x575E471C039DBD6][0x92BC25E18D296F] )
 		local f64_local3 = {}
 		for f64_local4 = f64_local2, f64_local1, 1 do
@@ -2035,8 +2035,8 @@ DataSources.PartyControlsList = DataSourceHelpers.ListSetup( "PartyControlsList"
 		end
 		return {
 			models = {
-				name = Engine[0xF9F1239CFD921FE]( 0x9F579200DA477FE ),
-				desc = Engine[0xF9F1239CFD921FE]( 0xA7923E2180D5E4E ),
+				name = Engine[0xF9F1239CFD921FE]( "menu/player_limit" ),
+				desc = Engine[0xF9F1239CFD921FE]( "menu/player_limit_desc" ),
 				optionsDatasource = CoD.OptionsUtility.CreateDvarSettingsDataSourceCustom( f64_arg0, "PartyOptions_PartyMaxSize", f64_local3, "lobbyPrivateLobbyMax", false, f64_local4 ),
 				buttonOnly = false
 			},
@@ -2051,7 +2051,7 @@ DataSources.PartyControlsList = DataSourceHelpers.ListSetup( "PartyControlsList"
 		return {
 			models = {
 				name = Engine[0xF9F1239CFD921FE]( f66_arg1 ),
-				desc = 0x0,
+				desc = "",
 				image = f66_arg2,
 				buttonOnly = true,
 				selected = false,
@@ -2073,7 +2073,7 @@ DataSources.PartyControlsList = DataSourceHelpers.ListSetup( "PartyControlsList"
 		table.insert( f60_local3, f0_local1( f60_arg0 ) )
 	end
 	if (CoD.isPC or not CoD.DirectorUtility.DisableForCurrentMilestone( f60_arg0 )) and ShouldShowLeaveParty( f60_arg0 ) then
-		table.insert( f60_local3, f60_local2( f60_arg0, "menu/manage_party_leave_button", "uie_t7_menu_social_leave_party", 0xEF2D3320785B51A, function ( f67_arg0, f67_arg1, f67_arg2, f67_arg3, f67_arg4 )
+		table.insert( f60_local3, f60_local2( f60_arg0, "menu/manage_party_leave_button", "uie_t7_menu_social_leave_party", "menu/leave", function ( f67_arg0, f67_arg1, f67_arg2, f67_arg3, f67_arg4 )
 			if not CoD.isPC then
 				CoD.OverlayUtility.CreateOverlay( f67_arg2, f67_arg4, "LobbyLeavePopup", LuaEnum.LEAVE_LOBBY_POPUP.MANAGE_PARTY_LEAVE )
 			else
@@ -2113,7 +2113,7 @@ end
 
 CoD.SocialUtility.GetCurrentPlayerLimitString = function ( f71_arg0 )
 	local f71_local0 = LobbyData.GetLobbyMenuByID( Engine[0x9882F293C327557]() )
-	local f71_local1 = f71_local0[0xEE71E4EE12BC453]
+	local f71_local1 = f71_local0.maxclients
 	return Engine[0xF9F1239CFD921FE]( f71_arg0, tostring( Dvar[0x4FF45B41C6046F8]:get() ) )
 end
 
@@ -2369,7 +2369,7 @@ CoD.SocialUtility.IsPartyMissingDLCFriendUsing = function ( f86_arg0, f86_arg1 )
 		local f86_local2 = CoD.SafeGetModelValue( f86_arg1 and f86_arg1:getModel(), "mapId" )
 		local f86_local3 = f86_local2 and CoD.BaseUtility.GetMapDataFromMapID( f86_local2 )
 		local f86_local4 = f86_local3 and f86_local3.session_mode
-		if f86_local4 and f86_local4 == Enum.eModes[0x83EBA96F36BC4E5] and Engine.OwnSeasonPass( f86_arg0 ) then
+		if f86_local4 and f86_local4 == Enum.eModes.mode_multiplayer and Engine.OwnSeasonPass( f86_arg0 ) then
 			return false
 		else
 			return not CoD.MapUtility.LobbyHasMap( f86_local2, f86_local0 )
@@ -2389,7 +2389,7 @@ CoD.SocialUtility.IsPartyMissingDLCFriendRequires = function ( f87_arg0, f87_arg
 	local f87_local2 = CoD.SafeGetModelValue( f87_arg1 and f87_arg1:getModel(), "mapId" )
 	local f87_local3 = f87_local2 and CoD.BaseUtility.GetMapDataFromMapID( f87_local2 )
 	local f87_local4 = f87_local3 and f87_local3.session_mode
-	if f87_local4 and f87_local4 == Enum.eModes[0x83EBA96F36BC4E5] and Engine.OwnSeasonPass( f87_arg0 ) then
+	if f87_local4 and f87_local4 == Enum.eModes.mode_multiplayer and Engine.OwnSeasonPass( f87_arg0 ) then
 		return false
 	end
 	return not CoD.MapUtility.LobbyHasMap( f87_local2, f87_local0 )

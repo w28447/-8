@@ -20,7 +20,7 @@ CoD.SupplyChainDetails_ButtonPromptContainer.new = function ( f1_arg0, f1_arg1, 
 				if f2_local0 then
 					f2_local0 = CoD.ModelUtility.IsSelfModelValueTrue( element, f1_arg1, "allowTogglePreview" )
 					if f2_local0 then
-						f2_local0 = not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xCC13B0F8EEFF726 )
+						f2_local0 = not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "signature_weapon" )
 					end
 				end
 				return f2_local0
@@ -35,7 +35,7 @@ CoD.SupplyChainDetails_ButtonPromptContainer.new = function ( f1_arg0, f1_arg1, 
 		{
 			stateName = "Visible",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueTrue( element, f1_arg1, "allowTogglePreview" ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xCC13B0F8EEFF726 )
+				return CoD.ModelUtility.IsSelfModelValueTrue( element, f1_arg1, "allowTogglePreview" ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "signature_weapon" )
 			end
 		}
 	} )
@@ -96,7 +96,7 @@ CoD.SupplyChainDetails_ButtonPromptContainer.new = function ( f1_arg0, f1_arg1, 
 				if f11_local0 then
 					f11_local0 = CoD.ModelUtility.IsSelfModelValueTrue( element, f1_arg1, "allowTogglePreview" )
 					if f11_local0 then
-						f11_local0 = CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xCC13B0F8EEFF726 )
+						f11_local0 = CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "signature_weapon" )
 					end
 				end
 				return f11_local0
@@ -111,7 +111,7 @@ CoD.SupplyChainDetails_ButtonPromptContainer.new = function ( f1_arg0, f1_arg1, 
 		{
 			stateName = "Visible",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueTrue( element, f1_arg1, "allowTogglePreview" ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xCC13B0F8EEFF726 )
+				return CoD.ModelUtility.IsSelfModelValueTrue( element, f1_arg1, "allowTogglePreview" ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "signature_weapon" )
 			end
 		}
 	} )
@@ -215,7 +215,7 @@ CoD.SupplyChainDetails_ButtonPromptContainer.new = function ( f1_arg0, f1_arg1, 
 		} )
 	end, false )
 	PreviewGesture.KeyPrompt.keybind:setText( CoD.BaseUtility.AlreadyLocalized( "[{ui_contextual_2}]" ) )
-	PreviewGesture.togglePreviewLabel:setText( Engine[0xF9F1239CFD921FE]( 0xDE61F05A2F38605 ) )
+	PreviewGesture.togglePreviewLabel:setText( Engine[0xF9F1239CFD921FE]( "menu/preview_gesture" ) )
 	PreviewGesture:subscribeToGlobalModel( f1_arg1, "Controller", "right_stick_button_image", function ( model )
 		local f26_local0 = model:get()
 		if f26_local0 ~= nil then
@@ -275,7 +275,7 @@ CoD.SupplyChainDetails_ButtonPromptContainer.new = function ( f1_arg0, f1_arg1, 
 		} )
 	end, false )
 	VideoPreview.KeyPrompt.keybind:setText( CoD.BaseUtility.AlreadyLocalized( "[{ui_remove}]" ) )
-	VideoPreview.togglePreviewLabel:setText( Engine[0xF9F1239CFD921FE]( 0x612B1DD49195D5 ) )
+	VideoPreview.togglePreviewLabel:setText( Engine[0xF9F1239CFD921FE]( "menu/play_video" ) )
 	VideoPreview:subscribeToGlobalModel( f1_arg1, "Controller", "primary_button_image", function ( model )
 		local f34_local0 = model:get()
 		if f34_local0 ~= nil then

@@ -80,7 +80,7 @@ CoD.Challenges_CallingCardWidgetInternal.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local DarkOpsClassifiedIcon = LUI.UIImage.new( 0, 1, 1, -1, -0, 0.71, 2, -2 )
 	DarkOpsClassifiedIcon:setAlpha( 0 )
-	DarkOpsClassifiedIcon:setImage( RegisterImage( 0x2746D911ABDE62E ) )
+	DarkOpsClassifiedIcon:setImage( RegisterImage( "uie_t7_icons_challenges_classified_placeholder" ) )
 	self:addElement( DarkOpsClassifiedIcon )
 	self.DarkOpsClassifiedIcon = DarkOpsClassifiedIcon
 	

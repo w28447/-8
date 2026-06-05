@@ -1,10 +1,10 @@
 require( "ui/uieditor/widgets/codcaster/codcasterloadoutselectionheal" )
-require( "x64:9d92dce1e4291ce" )
-require( "x64:33ec8b4b2fb3c47" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/abilityholdtoactivate" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_abilitycontainer" )
 require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_equipmentempty" )
 require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_powerbasedcount" )
 require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetequipmenttext" )
-require( "x64:24b789df27433d6" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetmp_ability_flare" )
 require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetmp_ability_flash" )
 
 CoD.AmmoWidgetMP_AbilityItem = InheritFrom( LUI.UIElement )
@@ -35,7 +35,7 @@ CoD.AmmoWidgetMP_AbilityItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local LED = LUI.UIImage.new( 0, 0, -0.5, 69.5, 0, 0, -4.5, 65.5 )
 	LED:setRGB( 0, 0, 0 )
 	LED:setAlpha( 0.3 )
-	LED:setImage( RegisterImage( 0xB7A2AC51B160918 ) )
+	LED:setImage( RegisterImage( "uie_ui_hud_core_player_widget_led_outer" ) )
 	self:addElement( LED )
 	self.LED = LED
 	
@@ -68,7 +68,7 @@ CoD.AmmoWidgetMP_AbilityItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	FullBackingDeployed:setRGB( 0.84, 0.83, 0.77 )
 	FullBackingDeployed:setAlpha( 0 )
 	FullBackingDeployed:setZRot( 180 )
-	FullBackingDeployed:setImage( RegisterImage( 0x40221656249477 ) )
+	FullBackingDeployed:setImage( RegisterImage( "uie_ui_hud_core_abeg_widget_x" ) )
 	FullBackingDeployed:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FullBackingDeployed )
 	self.FullBackingDeployed = FullBackingDeployed
@@ -92,7 +92,7 @@ CoD.AmmoWidgetMP_AbilityItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.AbilityPulse = AbilityPulse
 	
 	local Box = LUI.UIImage.new( 0, 0, -0.5, 69.5, 0, 0, -4.5, 65.5 )
-	Box:setImage( RegisterImage( 0x2A20E3F9478C322 ) )
+	Box:setImage( RegisterImage( "uie_ui_hud_core_abeg_widget_box" ) )
 	Box:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	Box:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( Box )
@@ -172,7 +172,7 @@ CoD.AmmoWidgetMP_AbilityItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local GlowRing = LUI.UIImage.new( 0, 0, -5, 75, 0, 0, -9.5, 70.5 )
 	GlowRing:setRGB( 1, 0.44, 0 )
 	GlowRing:setAlpha( 0 )
-	GlowRing:setImage( RegisterImage( 0x7028EB3BEA46612 ) )
+	GlowRing:setImage( RegisterImage( "uie_hex_flare_ring" ) )
 	GlowRing:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	GlowRing:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GlowRing )
@@ -181,7 +181,7 @@ CoD.AmmoWidgetMP_AbilityItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local FlareBack = LUI.UIImage.new( 0, 0, -45.5, 114.5, 0, 0, -40, 100 )
 	FlareBack:setAlpha( 0 )
 	FlareBack:setScale( 1.16, 1.16 )
-	FlareBack:setImage( RegisterImage( 0x49442D6D518A75D ) )
+	FlareBack:setImage( RegisterImage( "uie_abeq_flare_back" ) )
 	FlareBack:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FlareBack )
 	self.FlareBack = FlareBack

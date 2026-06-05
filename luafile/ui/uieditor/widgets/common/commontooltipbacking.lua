@@ -34,21 +34,21 @@ CoD.CommonToolTipBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local Arrow = LUI.UIImage.new( 0.5, 0.5, -7, 7, 0, 0, -24, 4 )
 	Arrow:setZRot( -90 )
-	Arrow:setImage( RegisterImage( 0x91C23A1DFE18E55 ) )
+	Arrow:setImage( RegisterImage( "uie_ui_menu_social_common_arrow" ) )
 	self:addElement( Arrow )
 	self.Arrow = Arrow
 	
 	local ArrowAdd = LUI.UIImage.new( 0.5, 0.5, -7, 7, 0, 0, -24, 4 )
 	ArrowAdd:setAlpha( 0 )
 	ArrowAdd:setZRot( -90 )
-	ArrowAdd:setImage( RegisterImage( 0x91C23A1DFE18E55 ) )
+	ArrowAdd:setImage( RegisterImage( "uie_ui_menu_social_common_arrow" ) )
 	ArrowAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ArrowAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ArrowAdd )
 	self.ArrowAdd = ArrowAdd
 	
 	local Botline = LUI.UIImage.new( 0, 1, -4, 4, 1, 1, -3, 7 )
-	Botline:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
+	Botline:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_line" ) )
 	Botline:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Botline:setShaderVector( 0, 0, 0, 0, 0 )
 	Botline:setupNineSliceShader( 60, 10 )
@@ -56,7 +56,7 @@ CoD.CommonToolTipBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.Botline = Botline
 	
 	local TopLine = LUI.UIImage.new( 0, 1, -4, 4, 0, 0, -4, 6 )
-	TopLine:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
+	TopLine:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_line" ) )
 	TopLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	TopLine:setShaderVector( 0, 0, 0, 0, 0 )
 	TopLine:setupNineSliceShader( 60, 10 )

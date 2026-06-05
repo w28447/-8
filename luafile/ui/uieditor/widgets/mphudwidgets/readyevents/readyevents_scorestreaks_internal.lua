@@ -17,7 +17,7 @@ CoD.ReadyEvents_Scorestreaks_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local Text = LUI.UIText.new( 0, 0, 72, 312, 0, 0, 5.5, 47.5 )
 	Text:setRGB( 0, 0, 0 )
-	Text:setText( Engine[0xF9F1239CFD921FE]( 0x54EB85A28216D99 ) )
+	Text:setText( Engine[0xF9F1239CFD921FE]( "menu/killstreak_ready" ) )
 	Text:setTTF( "ttmussels_demibold" )
 	Text:setLetterSpacing( 1 )
 	Text:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

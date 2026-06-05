@@ -46,7 +46,7 @@ LUI.createMenu.CamoPersonalizationDetails = function ( f1_arg0, f1_arg1 )
 	self.CamoDetailsSwatch = CamoDetailsSwatch
 	
 	local GenericMenuFrame = CoD.GenericMenuFrame.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	GenericMenuFrame.CommonHeader.subtitle.StageTitle:setText( Engine[0xF9F1239CFD921FE]( CoD.WeaponOptionsUtility.GetCamoStageDetailsHeader( f1_local1, 0x2EEF729B41D6347 ) ) )
+	GenericMenuFrame.CommonHeader.subtitle.StageTitle:setText( Engine[0xF9F1239CFD921FE]( CoD.WeaponOptionsUtility.GetCamoStageDetailsHeader( f1_local1, "weapon_options/reactive_camo" ) ) )
 	GenericMenuFrame:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
@@ -150,12 +150,12 @@ LUI.createMenu.CamoPersonalizationDetails = function ( f1_arg0, f1_arg1 )
 	self:addElement( VisualStagesHeader )
 	self.VisualStagesHeader = VisualStagesHeader
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
-		CoD.CACUtility.PlayChooseScreenOutro( f14_arg1, f14_arg2, "Close" )
-		DelayGoBack( f14_arg1, f14_arg2, 200 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		CoD.CACUtility.PlayChooseScreenOutro( menu, controller, "Close" )
+		DelayGoBack( menu, controller, 200 )
 		return true
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x78D439E1B360368, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back_caps", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

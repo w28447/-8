@@ -273,7 +273,7 @@ CoD.AttachmentSlot.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 		end
 	end )
 	PersonalizationHintTextBreadcrumb:setAlpha( 0 )
-	PersonalizationHintTextBreadcrumb.textCenterAlign:setText( Engine[0xF9F1239CFD921FE]( 0x2315E97C5F6E412 ) )
+	PersonalizationHintTextBreadcrumb.textCenterAlign:setText( Engine[0xF9F1239CFD921FE]( "mpui/button_personalize_caps" ) )
 	PersonalizationHintTextBreadcrumb:subscribeToGlobalModel( f1_arg1, "LoadoutBreadcrumbs", "optics", function ( model )
 		PersonalizationHintTextBreadcrumb.Breadcrumb:setModel( model, f1_arg1 )
 	end )

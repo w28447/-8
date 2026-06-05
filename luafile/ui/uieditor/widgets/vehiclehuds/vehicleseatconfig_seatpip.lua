@@ -32,7 +32,7 @@ CoD.VehicleSeatConfig_SeatPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.OccupiedPip = OccupiedPip
 	
 	local OccupiedPipPulse = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	OccupiedPipPulse:setImage( RegisterImage( 0xB5C93CB5E222BAD ) )
+	OccupiedPipPulse:setImage( RegisterImage( "uie_ui_hud_common_box_glow" ) )
 	OccupiedPipPulse:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	OccupiedPipPulse:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( OccupiedPipPulse )

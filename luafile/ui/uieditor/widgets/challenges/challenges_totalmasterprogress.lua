@@ -84,7 +84,7 @@ CoD.Challenges_TotalMasterProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local LockIconBackingTexture = LUI.UIImage.new( 0.74, 0.74, 101.5, 141.5, 0, 0, 30, 70 )
 	LockIconBackingTexture:setAlpha( 0.15 )
-	LockIconBackingTexture:setImage( RegisterImage( 0x311E811A3183347 ) )
+	LockIconBackingTexture:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	LockIconBackingTexture:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	LockIconBackingTexture:setShaderVector( 0, 0, 0, 0, 0 )
 	LockIconBackingTexture:setupNineSliceShader( 128, 128 )
@@ -168,7 +168,7 @@ CoD.Challenges_TotalMasterProgress.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local CompletedImage = LUI.UIImage.new( 0, 0, 642, 702, 0.5, 0.5, -30, 30 )
 	CompletedImage:setAlpha( 0 )
-	CompletedImage:setImage( RegisterImage( 0x98D02A0405ED520 ) )
+	CompletedImage:setImage( RegisterImage( "uie_ui_icon_challenges_complete_small" ) )
 	self:addElement( CompletedImage )
 	self.CompletedImage = CompletedImage
 	

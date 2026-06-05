@@ -125,11 +125,11 @@ CoD.PlayerCard_Callout.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	end, false )
 	self:subscribeToGlobalModel( f1_arg1, "PerController", "scriptNotify", function ( model )
 		local f13_local0 = self
-		if CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x1CC3F0A4046194B ) then
+		if CoD.ModelUtility.IsParamModelEqualToHashString( model, "player_callout" ) then
 			CoD.HUDUtility.ProcessPlayerCallout( f13_local0, f1_arg1, model )
-		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x2B5B25BE43AD2D7 ) then
+		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, "player_callout_colon" ) then
 			CoD.HUDUtility.ProcessPlayerCalloutWithColon( f13_local0, f1_arg1, model )
-		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0xA3C608F65B1CEAD ) then
+		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, "player_callout_number" ) then
 			CoD.HUDUtility.ProcessPlayerCalloutWithNumber( f13_local0, f1_arg1, model )
 		end
 	end )

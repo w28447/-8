@@ -54,55 +54,55 @@ LUI.createMenu.DirectorFindGame = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0xC083113BC81F23F] )
 		return f4_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( OptionsList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f5_arg0, f5_arg2, "locked" ) then
-			ProcessListAction( self, f5_arg0, f5_arg2, f5_arg1 )
-			GoBack( self, f5_arg2 )
+	f1_local1:AddButtonCallbackFunction( OptionsList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "locked" ) then
+			ProcessListAction( self, element, controller, menu )
+			GoBack( self, controller )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f5_arg0, f5_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x9B632F6362EA1BE] ) then
-			OpenSystemOverlay( self, f5_arg1, f5_arg2, "DownloadDLC", {
-				_model = f5_arg0:getModel()
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lockState", Enum[0xDACBB5C5F26BCD9][0x9B632F6362EA1BE] ) then
+			OpenSystemOverlay( self, menu, controller, "DownloadDLC", {
+				_model = element:getModel()
 			} )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f5_arg0, f5_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) then
-			OpenSystemOverlay( self, f5_arg1, f5_arg2, "SeasonPassUpsell", {
-				_model = f5_arg0:getModel(),
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) then
+			OpenSystemOverlay( self, menu, controller, "SeasonPassUpsell", {
+				_model = element:getModel(),
 				_description = 0x75EE3FCE54AF260
 			} )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f6_arg0, f6_arg2, "locked" ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "locked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f6_arg0, f6_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x9B632F6362EA1BE] ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lockState", Enum[0xDACBB5C5F26BCD9][0x9B632F6362EA1BE] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f6_arg0, f6_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( OptionsList, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_1", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( f7_arg0, f7_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x9B632F6362EA1BE] ) then
-			CoD.StoreUtility.OpenStoreToDLCPack( self, f7_arg0, f7_arg2, "DirectorFindGame", f7_arg1 )
+	f1_local1:AddButtonCallbackFunction( OptionsList, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_1", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lockState", Enum[0xDACBB5C5F26BCD9][0x9B632F6362EA1BE] ) then
+			CoD.StoreUtility.OpenStoreToDLCPack( self, element, controller, "DirectorFindGame", menu )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f7_arg0, f7_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) then
-			CoD.StoreUtility.OpenStoreToDLCPack( self, f7_arg0, f7_arg2, "DirectorFindGame", f7_arg1 )
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) then
+			CoD.StoreUtility.OpenStoreToDLCPack( self, element, controller, "DirectorFindGame", menu )
 			return true
 		else
 			
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( f8_arg0, f8_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x9B632F6362EA1BE] ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lockState", Enum[0xDACBB5C5F26BCD9][0x9B632F6362EA1BE] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, "ui_contextual_1" )
 			return false
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f8_arg0, f8_arg2, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, "ui_contextual_1" )
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lockState", Enum[0xDACBB5C5F26BCD9][0x4BDEB566326AC98] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, "ui_contextual_1" )
 			return false
 		else
 			return false
@@ -152,7 +152,7 @@ LUI.createMenu.DirectorFindGame = function ( f1_arg0, f1_arg1 )
 	self.SelectedPlaylistInfo = SelectedPlaylistInfo
 	
 	local DirectorHeaderTabSafeArea = CoD.DirectorHeaderTabSafeArea.new( f1_local1, f1_arg0, 0, 0, 0, 1920, 0, 0, 0, 1080 )
-	DirectorHeaderTabSafeArea.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x38A4FBEBCE1E6BE ) )
+	DirectorHeaderTabSafeArea.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/select_playlist" ) )
 	DirectorHeaderTabSafeArea.Tabs.customClasssList:setDataSource( "DirectorFilters" )
 	DirectorHeaderTabSafeArea:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f11_local0 = model:get()
@@ -192,11 +192,11 @@ LUI.createMenu.DirectorFindGame = function ( f1_arg0, f1_arg1 )
 	UpsellBanner:linkToElementModel( OptionsList, nil, false, function ( model )
 		UpsellBanner:setModel( model, f1_arg0 )
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
-		GoBack( self, f16_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f17_arg0, f17_arg1, f17_arg2 )
-		CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

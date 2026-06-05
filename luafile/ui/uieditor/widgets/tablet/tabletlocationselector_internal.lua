@@ -81,7 +81,7 @@ CoD.TabletLocationSelector_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 		} )
 	end, false )
 	buttonprompt:setAlpha( 0 )
-	buttonprompt.label:setText( Engine[0xF9F1239CFD921FE]( 0x7905825FED0EBD8 ) )
+	buttonprompt.label:setText( Engine[0xF9F1239CFD921FE]( "menu/waypoint_target" ) )
 	buttonprompt:subscribeToGlobalModel( f1_arg1, "Controller", "primary_button_image", function ( model )
 		local f5_local0 = model:get()
 		if f5_local0 ~= nil then
@@ -201,7 +201,7 @@ CoD.TabletLocationSelector_Internal.__clipsPerState = {
 			f15_arg0.MessagePromptStandard:completeAnimation()
 			f15_arg0.MessagePromptStandard.CursorHintText:completeAnimation()
 			f15_arg0.MessagePromptStandard:setAlpha( 1 )
-			f15_arg0.MessagePromptStandard.CursorHintText:setText( Engine[0xF9F1239CFD921FE]( 0x5E69975EAC86CC7 ) )
+			f15_arg0.MessagePromptStandard.CursorHintText:setText( Engine[0xF9F1239CFD921FE]( "platform/press_to_set_comlink" ) )
 			f15_arg0.clipFinished( f15_arg0.MessagePromptStandard )
 		end
 	},
@@ -212,7 +212,7 @@ CoD.TabletLocationSelector_Internal.__clipsPerState = {
 			f16_arg0.MessagePromptStandard:completeAnimation()
 			f16_arg0.MessagePromptStandard.CursorHintText:completeAnimation()
 			f16_arg0.MessagePromptStandard:setAlpha( 1 )
-			f16_arg0.MessagePromptStandard.CursorHintText:setText( Engine[0xF9F1239CFD921FE]( 0xC1D1D888C9B0714 ) )
+			f16_arg0.MessagePromptStandard.CursorHintText:setText( Engine[0xF9F1239CFD921FE]( "platform/press_to_set_airstrike" ) )
 			f16_arg0.clipFinished( f16_arg0.MessagePromptStandard )
 		end
 	},

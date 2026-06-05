@@ -20,7 +20,7 @@ CoD.DirectorSelectButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local ButtonBG = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 12, 0 )
 	ButtonBG:setRGB( 0.38, 0.38, 0.38 )
 	ButtonBG:setAlpha( 0.8 )
-	ButtonBG:setImage( RegisterImage( 0xE3211044E61E1BB ) )
+	ButtonBG:setImage( RegisterImage( "uie_ui_menu_cac_button_bg_generic01" ) )
 	self:addElement( ButtonBG )
 	self.ButtonBG = ButtonBG
 	
@@ -29,7 +29,7 @@ CoD.DirectorSelectButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	ButtonBGPC = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 12, 0 )
 	ButtonBGPC:setRGB( 0.38, 0.38, 0.38 )
 	ButtonBGPC:setAlpha( 0 )
-	ButtonBGPC:setImage( RegisterImage( 0xE3211044E61E1BB ) )
+	ButtonBGPC:setImage( RegisterImage( "uie_ui_menu_cac_button_bg_generic01" ) )
 	self:addElement( ButtonBGPC )
 	self.ButtonBGPC = ButtonBGPC
 	
@@ -41,7 +41,7 @@ CoD.DirectorSelectButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local PixelGrid = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 12, 0 )
 	PixelGrid:setAlpha( 0.05 )
-	PixelGrid:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGrid:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PixelGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGrid:setupNineSliceShader( 128, 128 )
@@ -79,7 +79,7 @@ CoD.DirectorSelectButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local ButtonBGGlow = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 12, 0 )
 	ButtonBGGlow:setAlpha( 0 )
-	ButtonBGGlow:setImage( RegisterImage( 0x418AFBD55D4236F ) )
+	ButtonBGGlow:setImage( RegisterImage( "uie_ui_menu_cac_glow_half" ) )
 	ButtonBGGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xC221B51E4063E3D ) )
 	ButtonBGGlow:setShaderVector( 0, 0.34, 0, 0, 0 )
 	ButtonBGGlow:setShaderVector( 1, 3, 0.71, 0, 0 )
@@ -89,7 +89,7 @@ CoD.DirectorSelectButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local TopBar = LUI.UIImage.new( -0.03, 1.03, 0, 0, 1, 1, 0, 12 )
 	TopBar:setAlpha( 0.1 )
-	TopBar:setImage( RegisterImage( 0xCE32B5C3D0E9039 ) )
+	TopBar:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_bar" ) )
 	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBar )
 	self.TopBar = TopBar
@@ -97,7 +97,7 @@ CoD.DirectorSelectButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local TopBarFocus = LUI.UIImage.new( -0.03, 1.03, 0, 0, 1, 1, 0, 12 )
 	TopBarFocus:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	TopBarFocus:setAlpha( 0 )
-	TopBarFocus:setImage( RegisterImage( 0x4684BE3938F5367 ) )
+	TopBarFocus:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_bar_focused" ) )
 	TopBarFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBarFocus )
 	self.TopBarFocus = TopBarFocus
@@ -145,7 +145,7 @@ CoD.DirectorSelectButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	circle:setAlpha( 0 )
 	circle:setZRot( 180 )
 	circle:setScale( 1.05, 1.05 )
-	circle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x15B163CA03FCE8B ) )
+	circle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_elliptical_ring_normal" ) )
 	circle:setShaderVector( 0, 4.66, 0, 0, 0 )
 	circle:setShaderVector( 1, 80, 80, 0, 0 )
 	circle:setShaderVector( 2, 0, 0, 0, 0 )

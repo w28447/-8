@@ -9,14 +9,14 @@ CoD.outofbounds_alert_icon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local AlertIcon = LUI.UIImage.new( 0, 0, 0, 64, 0, 0, 0, 58 )
-	AlertIcon:setImage( RegisterImage( 0x9E47106ADFC5151 ) )
+	AlertIcon:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_warning_icon" ) )
 	AlertIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	AlertIcon:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( AlertIcon )
 	self.AlertIcon = AlertIcon
 	
 	local AlertIconAdd = LUI.UIImage.new( 0, 0, 0, 64, 0, 0, 0, 58 )
-	AlertIconAdd:setImage( RegisterImage( 0x9E47106ADFC5151 ) )
+	AlertIconAdd:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_warning_icon" ) )
 	AlertIconAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	AlertIconAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( AlertIconAdd )

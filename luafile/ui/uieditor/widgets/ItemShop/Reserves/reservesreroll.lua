@@ -66,7 +66,7 @@ CoD.ReservesReroll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local CommonStripes01Tiled = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, -1, 15 )
 	CommonStripes01Tiled:setAlpha( 0.25 )
-	CommonStripes01Tiled:setImage( RegisterImage( 0x649895CFFA4963D ) )
+	CommonStripes01Tiled:setImage( RegisterImage( "uie_ui_menu_common_stripes01" ) )
 	CommonStripes01Tiled:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	CommonStripes01Tiled:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonStripes01Tiled:setupNineSliceShader( 64, 16 )
@@ -190,86 +190,86 @@ CoD.ReservesReroll.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f16_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( RerollButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		if CoD.ModelUtility.IsModelValueTrue( f17_arg2, "reservesRevealComplete" ) and CoD.ModelUtility.IsControllerModelValueTrue( f17_arg2, "LootStreamProgress.allRngUnlocked" ) then
-			CoD.BlackMarketUtility.OpenAllReservesOwnedDialog( f17_arg1, f17_arg2 )
+	f1_arg0:AddButtonCallbackFunction( RerollButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsModelValueTrue( controller, "reservesRevealComplete" ) and CoD.ModelUtility.IsControllerModelValueTrue( controller, "LootStreamProgress.allRngUnlocked" ) then
+			CoD.BlackMarketUtility.OpenAllReservesOwnedDialog( menu, controller )
 			return true
-		elseif CoD.ModelUtility.IsModelValueTrue( f17_arg2, "reservesRevealComplete" ) and CoD.ModelUtility.IsModelValueEqualToEnum( f17_arg2, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.CASE ) and CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f17_arg2, "ReservesItemCounts", "lootCaseCount", 0 ) then
-			OpenOverlay( self, "OpenBribeConfirmation", f17_arg2, {
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "reservesRevealComplete" ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.CASE ) and CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "ReservesItemCounts", "lootCaseCount", 0 ) then
+			OpenOverlay( self, "OpenBribeConfirmation", controller, {
 				_properties = {
 					_isReservesRevealMenu = true,
 					_bribeType = LuaEnum.BRIBE_TYPES.CASE
 				}
 			} )
 			return true
-		elseif CoD.ModelUtility.IsModelValueTrue( f17_arg2, "reservesRevealComplete" ) and CoD.ModelUtility.IsModelValueEqualToEnum( f17_arg2, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.THREE_PACK ) and CoD.ModelUtility.IsSelfModelValueTrue( self, f17_arg2, "isBundleCrate" ) and CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f17_arg2, "ReservesItemCounts", "lootBundleCrateCount", 0 ) then
-			OpenOverlay( self, "OpenBribeConfirmation", f17_arg2, {
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "reservesRevealComplete" ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.THREE_PACK ) and CoD.ModelUtility.IsSelfModelValueTrue( self, controller, "isBundleCrate" ) and CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "ReservesItemCounts", "lootBundleCrateCount", 0 ) then
+			OpenOverlay( self, "OpenBribeConfirmation", controller, {
 				_properties = {
 					_isReservesRevealMenu = true,
 					_bribeType = LuaEnum.BRIBE_TYPES.CRATE
 				}
 			} )
 			return true
-		elseif CoD.ModelUtility.IsModelValueTrue( f17_arg2, "reservesRevealComplete" ) and CoD.ModelUtility.IsSelfModelValueEqualToHashString( f17_arg2, f17_arg1, "name", 0x717FF140F30014C ) and CoD.ModelUtility.IsModelValueEqualToEnum( f17_arg2, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.THREE_PACK ) then
-			OpenOverlay( self, "PurchaseBribeStack", f17_arg2, {
-				_model = f17_arg1:getModel(),
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "reservesRevealComplete" ) and CoD.ModelUtility.IsSelfModelValueEqualToHashString( controller, menu, "name", 0x717FF140F30014C ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.THREE_PACK ) then
+			OpenOverlay( self, "PurchaseBribeStack", controller, {
+				_model = menu:getModel(),
 				_properties = {
 					_isReservesRevealMenu = true
 				}
 			} )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
-		elseif CoD.ModelUtility.IsModelValueTrue( f17_arg2, "reservesRevealComplete" ) and CoD.ModelUtility.IsModelValueEqualToEnum( f17_arg2, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.THREE_PACK ) and CanPurchaseItem( f17_arg2, self ) and not CoD.ModelUtility.IsSelfModelValueEqualToHashString( f17_arg2, f17_arg1, "name", 0x717FF140F30014C ) and not CoD.ModelUtility.IsSelfModelValueTrue( self, f17_arg2, "isBundleCrate" ) then
-			OpenPopup( self, "PurchaseReservesItem", f17_arg2, {
-				_model = f17_arg1:getModel(),
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "reservesRevealComplete" ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.THREE_PACK ) and CanPurchaseItem( controller, self ) and not CoD.ModelUtility.IsSelfModelValueEqualToHashString( controller, menu, "name", 0x717FF140F30014C ) and not CoD.ModelUtility.IsSelfModelValueTrue( self, controller, "isBundleCrate" ) then
+			OpenPopup( self, "PurchaseReservesItem", controller, {
+				_model = menu:getModel(),
 				_properties = {
 					_isReservesRevealMenu = true
 				}
 			} )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
-		elseif CoD.ModelUtility.IsModelValueTrue( f17_arg2, "reservesRevealComplete" ) and CoD.ModelUtility.IsModelValueEqualToEnum( f17_arg2, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.THREE_PACK ) and not CoD.ModelUtility.IsSelfModelValueEqualToHashString( f17_arg2, f17_arg1, "name", 0x717FF140F30014C ) and not CoD.ModelUtility.IsSelfModelValueTrue( self, f17_arg2, "isBundleCrate" ) then
-			OpenPopup( self, "PurchaseCodPoints", f17_arg2, self:getModel() )
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "reservesRevealComplete" ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.THREE_PACK ) and not CoD.ModelUtility.IsSelfModelValueEqualToHashString( controller, menu, "name", 0x717FF140F30014C ) and not CoD.ModelUtility.IsSelfModelValueTrue( self, controller, "isBundleCrate" ) then
+			OpenPopup( self, "PurchaseCodPoints", controller, self:getModel() )
 			return true
-		elseif CoD.ModelUtility.IsModelValueTrue( f17_arg2, "reservesRevealComplete" ) and CoD.BlackMarketUtility.IsBribeStream( f17_arg2 ) and CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f17_arg2, "ReservesItemCounts", "lootBribeCount", 0 ) and not CoD.BlackMarketUtility.IsBribeStackStream( f17_arg2 ) and not CoD.BlackMarketUtility.IsBribeMenuStream( f17_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( self, f17_arg2, "isBundleCrate" ) then
-			OpenOverlay( self, "OpenBribeConfirmation", f17_arg2, {
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "reservesRevealComplete" ) and CoD.BlackMarketUtility.IsBribeStream( controller ) and CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "ReservesItemCounts", "lootBribeCount", 0 ) and not CoD.BlackMarketUtility.IsBribeStackStream( controller ) and not CoD.BlackMarketUtility.IsBribeMenuStream( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( self, controller, "isBundleCrate" ) then
+			OpenOverlay( self, "OpenBribeConfirmation", controller, {
 				_properties = {
 					_isReservesRevealMenu = true,
 					_bribeType = LuaEnum.BRIBE_TYPES.BRIBE
 				}
 			} )
 			return true
-		elseif CoD.ModelUtility.IsModelValueTrue( f17_arg2, "reservesRevealComplete" ) and CoD.BlackMarketUtility.IsBribeMenuStream( f17_arg2 ) and IsBooleanDvarSet( "loot_weaponBribeMultiPurchaseActive" ) then
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "reservesRevealComplete" ) and CoD.BlackMarketUtility.IsBribeMenuStream( controller ) and IsBooleanDvarSet( "loot_weaponBribeMultiPurchaseActive" ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.BlackMarketUtility.GoBackAndOpenBribeMenu( f17_arg2, f17_arg1 )
+			CoD.BlackMarketUtility.GoBackAndOpenBribeMenu( controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		if CoD.ModelUtility.IsModelValueTrue( f18_arg2, "reservesRevealComplete" ) and CoD.ModelUtility.IsControllerModelValueTrue( f18_arg2, "LootStreamProgress.allRngUnlocked" ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x4E98D63EA5A0BD3, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsModelValueTrue( controller, "reservesRevealComplete" ) and CoD.ModelUtility.IsControllerModelValueTrue( controller, "LootStreamProgress.allRngUnlocked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0x4E98D63EA5A0BD3, nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsModelValueTrue( f18_arg2, "reservesRevealComplete" ) and CoD.ModelUtility.IsModelValueEqualToEnum( f18_arg2, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.CASE ) and CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f18_arg2, "ReservesItemCounts", "lootCaseCount", 0 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x4E98D63EA5A0BD3, nil, nil )
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "reservesRevealComplete" ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.CASE ) and CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "ReservesItemCounts", "lootCaseCount", 0 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0x4E98D63EA5A0BD3, nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsModelValueTrue( f18_arg2, "reservesRevealComplete" ) and CoD.ModelUtility.IsModelValueEqualToEnum( f18_arg2, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.THREE_PACK ) and CoD.ModelUtility.IsSelfModelValueTrue( self, f18_arg2, "isBundleCrate" ) and CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f18_arg2, "ReservesItemCounts", "lootBundleCrateCount", 0 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x4E98D63EA5A0BD3, nil, nil )
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "reservesRevealComplete" ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.THREE_PACK ) and CoD.ModelUtility.IsSelfModelValueTrue( self, controller, "isBundleCrate" ) and CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "ReservesItemCounts", "lootBundleCrateCount", 0 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0x4E98D63EA5A0BD3, nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsModelValueTrue( f18_arg2, "reservesRevealComplete" ) and CoD.ModelUtility.IsSelfModelValueEqualToHashString( f18_arg2, f18_arg1, "name", 0x717FF140F30014C ) and CoD.ModelUtility.IsModelValueEqualToEnum( f18_arg2, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.THREE_PACK ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xC2B10DCD9D6E876, nil, nil )
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "reservesRevealComplete" ) and CoD.ModelUtility.IsSelfModelValueEqualToHashString( controller, menu, "name", 0x717FF140F30014C ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.THREE_PACK ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0xC2B10DCD9D6E876, nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsModelValueTrue( f18_arg2, "reservesRevealComplete" ) and CoD.ModelUtility.IsModelValueEqualToEnum( f18_arg2, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.THREE_PACK ) and CanPurchaseItem( f18_arg2, self ) and not CoD.ModelUtility.IsSelfModelValueEqualToHashString( f18_arg2, f18_arg1, "name", 0x717FF140F30014C ) and not CoD.ModelUtility.IsSelfModelValueTrue( self, f18_arg2, "isBundleCrate" ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x4E98D63EA5A0BD3, nil, nil )
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "reservesRevealComplete" ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.THREE_PACK ) and CanPurchaseItem( controller, self ) and not CoD.ModelUtility.IsSelfModelValueEqualToHashString( controller, menu, "name", 0x717FF140F30014C ) and not CoD.ModelUtility.IsSelfModelValueTrue( self, controller, "isBundleCrate" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0x4E98D63EA5A0BD3, nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsModelValueTrue( f18_arg2, "reservesRevealComplete" ) and CoD.ModelUtility.IsModelValueEqualToEnum( f18_arg2, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.THREE_PACK ) and not CoD.ModelUtility.IsSelfModelValueEqualToHashString( f18_arg2, f18_arg1, "name", 0x717FF140F30014C ) and not CoD.ModelUtility.IsSelfModelValueTrue( self, f18_arg2, "isBundleCrate" ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x4E98D63EA5A0BD3, nil, nil )
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "reservesRevealComplete" ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "LootRNGResult.streamId", CoD.BlackMarketUtility.CrateStreams.THREE_PACK ) and not CoD.ModelUtility.IsSelfModelValueEqualToHashString( controller, menu, "name", 0x717FF140F30014C ) and not CoD.ModelUtility.IsSelfModelValueTrue( self, controller, "isBundleCrate" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0x4E98D63EA5A0BD3, nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsModelValueTrue( f18_arg2, "reservesRevealComplete" ) and CoD.BlackMarketUtility.IsBribeStream( f18_arg2 ) and CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f18_arg2, "ReservesItemCounts", "lootBribeCount", 0 ) and not CoD.BlackMarketUtility.IsBribeStackStream( f18_arg2 ) and not CoD.BlackMarketUtility.IsBribeMenuStream( f18_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( self, f18_arg2, "isBundleCrate" ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x4E98D63EA5A0BD3, nil, nil )
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "reservesRevealComplete" ) and CoD.BlackMarketUtility.IsBribeStream( controller ) and CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "ReservesItemCounts", "lootBribeCount", 0 ) and not CoD.BlackMarketUtility.IsBribeStackStream( controller ) and not CoD.BlackMarketUtility.IsBribeMenuStream( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( self, controller, "isBundleCrate" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0x4E98D63EA5A0BD3, nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsModelValueTrue( f18_arg2, "reservesRevealComplete" ) and CoD.BlackMarketUtility.IsBribeMenuStream( f18_arg2 ) and IsBooleanDvarSet( "loot_weaponBribeMultiPurchaseActive" ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xC2B10DCD9D6E876, nil, nil )
+		elseif CoD.ModelUtility.IsModelValueTrue( controller, "reservesRevealComplete" ) and CoD.BlackMarketUtility.IsBribeMenuStream( controller ) and IsBooleanDvarSet( "loot_weaponBribeMultiPurchaseActive" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0xC2B10DCD9D6E876, nil, nil )
 			return true
 		else
 			return false

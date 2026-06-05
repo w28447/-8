@@ -90,7 +90,7 @@ CoD.AARKillsWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local DistanceKillLabel = LUI.UIText.new( 0, 0, 170, 425, 0, 0, 83, 104 )
 	DistanceKillLabel:setRGB( 0.9, 0.89, 0.78 )
 	DistanceKillLabel:setAlpha( 0.25 )
-	DistanceKillLabel:setText( Engine[0xF9F1239CFD921FE]( 0x84EAC91CFC17A55 ) )
+	DistanceKillLabel:setText( Engine[0xF9F1239CFD921FE]( "aar/longest_distance_kill" ) )
 	DistanceKillLabel:setTTF( "dinnext_regular" )
 	DistanceKillLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	DistanceKillLabel:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -106,7 +106,7 @@ CoD.AARKillsWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	DistanceKill:linkToElementModel( self, "longestDistanceKill", true, function ( model )
 		local f5_local0 = model:get()
 		if f5_local0 ~= nil then
-			DistanceKill:setText( LocalizeStringWithParameter( 0x2EAE727E6AD7528, UnitsToMeters( f5_local0 ) ) )
+			DistanceKill:setText( LocalizeStringWithParameter( "menu/distance_m", UnitsToMeters( f5_local0 ) ) )
 		end
 	end )
 	self:addElement( DistanceKill )
@@ -116,7 +116,7 @@ CoD.AARKillsWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 		{
 			stateName = "Solo",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "gametype", 0x5F8EE90CBFFA9E7 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "gametype", "warzone_solo" )
 			end
 		}
 	} )

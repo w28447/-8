@@ -148,7 +148,7 @@ CoD.EmblemEditorGradientColorSwatch.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.toggleColorMixerButton = toggleColorMixerButton
 	
 	noColor = CoD.EmblemColorSaved.new( f1_arg0, f1_arg1, 0, 0, 7.5, 64.5, 0, 0, 6, 196 )
-	noColor.colorElement:setImage( RegisterImage( 0xE392CD3185E82B2 ) )
+	noColor.colorElement:setImage( RegisterImage( "uie_t7_menu_paintshop_transparent" ) )
 	noColor:registerEventHandler( "gain_focus", function ( element, event )
 		local f10_local0 = nil
 		if element.gainFocus then

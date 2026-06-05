@@ -217,7 +217,7 @@ CoD.Hud_WZ_SafeAreaContainer_Front.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	end, false )
 	self:subscribeToGlobalModel( f1_arg1, "PerController", "scriptNotify", function ( model )
 		local f20_local0 = self
-		if CoD.ModelUtility.IsParamModelEqualToHashString( model, 0xB0B843215635D02 ) then
+		if CoD.ModelUtility.IsParamModelEqualToHashString( model, "create_prematch_timer" ) then
 			CreatePrematchTimer_Minimize( self, f1_arg0, f1_arg1, model, 5000 )
 		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0xA9F7ECDA8E925F6 ) then
 			CreateHoldingPenNotification( self, f1_arg0, f1_arg1, model, 5000 )

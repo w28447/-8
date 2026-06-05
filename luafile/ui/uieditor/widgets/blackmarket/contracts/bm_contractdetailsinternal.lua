@@ -23,7 +23,7 @@ CoD.BM_ContractDetailsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.BottomDarkening = BottomDarkening
 	
 	local Art = LUI.UIImage.new( 0, 0, 3, 459, 0, 0, 4, 500 )
-	Art:setImage( RegisterImage( 0xA806569052CB2E3 ) )
+	Art:setImage( RegisterImage( "uie_ui_menu_contracts_bg_art" ) )
 	Art:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Art )
 	self.Art = Art
@@ -31,7 +31,7 @@ CoD.BM_ContractDetailsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local Backer = LUI.UIImage.new( 0.5, 0.5, -58.5, 59.5, 0, 0, 95, 213 )
 	Backer:setRGB( 0.09, 0.09, 0.09 )
 	Backer:setScale( 2.5, 2.5 )
-	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( 0x15B163CA03FCE8B ) )
+	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_elliptical_ring_normal" ) )
 	Backer:setShaderVector( 0, 40, 10, 0, 0 )
 	Backer:setShaderVector( 1, 100, 100, 0, 0 )
 	Backer:setShaderVector( 2, 0.1, 0.05, 0, 0 )
@@ -53,7 +53,7 @@ CoD.BM_ContractDetailsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 637 )
 	PixelGridTiledBacking:setAlpha( 0.04 )
-	PixelGridTiledBacking:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
@@ -62,7 +62,7 @@ CoD.BM_ContractDetailsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local ButtonTopLine9Slice = LUI.UIImage.new( 0, 0, -6, 466, 0, 0, 489, 509 )
 	ButtonTopLine9Slice:setAlpha( 0.11 )
-	ButtonTopLine9Slice:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
+	ButtonTopLine9Slice:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_line" ) )
 	ButtonTopLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonTopLine9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonTopLine9Slice:setupNineSliceShader( 120, 10 )
@@ -162,7 +162,7 @@ CoD.BM_ContractDetailsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 		{
 			stateName = "Empty",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "displayName", 0x0 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "displayName", "" )
 			end
 		},
 		{

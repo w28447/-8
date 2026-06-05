@@ -43,7 +43,7 @@ end
 
 Lobby.Launch.MapImagePreloading = function ( f4_arg0 )
 	local f4_local0 = false
-	if Engine.CurrentSessionMode() == Enum.eModes[0x3723205FAE52C4A] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_zombies then
 		if (Engine[0x44FC97037CE42ED]( f4_arg0, Engine[0xC3DF042E7492B66]( Enum.LobbyModule[0xC46B73E8E18BA2] ), Enum[0x575E471C039DBD6][0x92BC25E18D296F] ) or 0) <= 1 and Engine[0x69811927938FCD7]() ~= "ztutorial" then
 			f4_local0 = false
 		else
@@ -86,7 +86,7 @@ Lobby.Launch.HostLaunchPump = function ( f5_arg0 )
 			Engine.PrintWarning( Enum[0x7A63DCD561B0FA8][0x59962D5EF982597], "Lobby.Launch.LaunchGameExec: Not enough players (" .. tostring( f5_local2 ) .. "/" .. tostring( Dvar[0x500E4DB2F10F5EE]:get() ) .. "), restart timer.\n" )
 			f5_local1 = true
 		end
-		if CoDShared.IsGametypeTeamBased() == true and Engine.CurrentSessionMode() ~= Enum.eModes[0xBF1DCC8138A9D39] then
+		if CoDShared.IsGametypeTeamBased() == true and Engine.CurrentSessionMode() ~= Enum.eModes.mode_warzone then
 			local f5_local3 = Engine[0x755D55B3813D249]( Enum.LobbyModule[0x98EA1BB7164D103], Enum.LobbyType[0x92676CF5B6FCD43] )
 			if f5_local3 ~= nil then
 				local f5_local4 = 0
@@ -115,8 +115,8 @@ Lobby.Launch.HostLaunchPump = function ( f5_arg0 )
 			Lobby.Timer.HostingLobby( {
 				controller = Engine.GetPrimaryController(),
 				lobbyType = Enum.LobbyType[0x92676CF5B6FCD43],
-				mainMode = f5_local3["mainmode"],
-				lobbyTimerType = f5_local3[0x558B67A321D1120],
+				mainMode = f5_local3.mainmode,
+				lobbyTimerType = f5_local3.lobbytimertype,
 				matchEnded = true,
 				status = Lobby.Timer.LOBBY_STATUS.RESET_TO_NEED
 			} )
@@ -140,7 +140,7 @@ Lobby.Launch.HostLaunchPump = function ( f5_arg0 )
 			return false
 		end
 	end
-	if Engine.CurrentSessionMode() ~= Enum.eModes[0xBF1DCC8138A9D39] then
+	if Engine.CurrentSessionMode() ~= Enum.eModes.mode_warzone then
 		Engine[0xEFF9EC55782EDB]( Enum.LobbyModule[0x98EA1BB7164D103], Engine[0xC3DF042E7492B66]( Enum.LobbyModule[0x98EA1BB7164D103] ) )
 	end
 	return true

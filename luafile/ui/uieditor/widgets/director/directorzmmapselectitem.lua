@@ -14,7 +14,7 @@ CoD.DirectorZMMapSelectItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local DirectorZMMapSelectItemInternal = CoD.DirectorZMMapSelectItemInternal.new( f1_arg0, f1_arg1, 0, 1, 0, 0, 0, 1, 0, 0 )
-	DirectorZMMapSelectItemInternal.FeaturedTag:setText( LocalizeToUpperString( 0x7E251454EDF7A26 ) )
+	DirectorZMMapSelectItemInternal.FeaturedTag:setText( LocalizeToUpperString( "menu/public_tab" ) )
 	DirectorZMMapSelectItemInternal:linkToElementModel( self, nil, false, function ( model )
 		DirectorZMMapSelectItemInternal:setModel( model, f1_arg1 )
 	end )
@@ -78,16 +78,16 @@ CoD.DirectorZMMapSelectItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	f1_local3( f1_local2, f1_local4["ZMLobbyExclusions.ZMPlaylistTab"], function ( f10_arg0, f10_arg1 )
 		CoD.Menu.UpdateButtonShownState( f10_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0x22361E23588705A] )
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x22361E23588705A], "ui_contextual_2", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		if not IsGamepad( f11_arg2 ) and CoD.ZombieUtility.TrialsInfo() then
-			OpenOverlay( self, "DirectorZMTrialsInfo", f11_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x22361E23588705A], "ui_contextual_2", function ( element, menu, controller, model )
+		if not IsGamepad( controller ) and CoD.ZombieUtility.TrialsInfo() then
+			OpenOverlay( self, "DirectorZMTrialsInfo", controller )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		if not IsGamepad( f12_arg2 ) and CoD.ZombieUtility.TrialsInfo() then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x22361E23588705A], 0x41F3D5435B98808, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		if not IsGamepad( controller ) and CoD.ZombieUtility.TrialsInfo() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], 0x41F3D5435B98808, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_2" )
 			return true
 		else
 			return false

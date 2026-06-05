@@ -47,20 +47,20 @@ LUI.createMenu.Hud_MP_Codcaster = function ( f1_arg0, f1_arg1 )
 	local MPScore = CoD.MPScr.new( f1_local1, f1_arg0, 0.5, 0.5, 84, 234, 0, 0, 492, 530 )
 	MPScore:subscribeToGlobalModel( f1_arg0, "PerController", "scriptNotify", function ( model )
 		local f3_local0 = MPScore
-		if CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x57A02387D3C368A ) and CoD.BountyHunterUtility.GameTypeIsBounty( f1_arg0 ) then
+		if CoD.ModelUtility.IsParamModelEqualToHashString( model, "score_event" ) and CoD.BountyHunterUtility.GameTypeIsBounty( f1_arg0 ) then
 			SetElementProperty( f1_local1, "_ignoreNextMoneyChange", true )
 			SetMPScoreText( f1_local1, f3_local0, f1_arg0, model )
 			PlayClipOnElement( self, {
 				elementName = "MPScore",
 				clipName = "BountyCash"
 			}, f1_arg0 )
-		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x57A02387D3C368A ) and IsSpecificGadgetInUse( f1_arg0, f3_local0, "gadget_combat_efficiency" ) and not CoD.SpawnSelectionUtility.IsSpawnSelectActive( f1_arg0 ) then
+		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, "score_event" ) and IsSpecificGadgetInUse( f1_arg0, f3_local0, "gadget_combat_efficiency" ) and not CoD.SpawnSelectionUtility.IsSpawnSelectActive( f1_arg0 ) then
 			PlayClipOnElement( self, {
 				elementName = "MPScore",
 				clipName = "CombatEfficiencyScore"
 			}, f1_arg0 )
 			SetMPScoreText( f1_local1, f3_local0, f1_arg0, model )
-		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x57A02387D3C368A ) and not CoD.SpawnSelectionUtility.IsSpawnSelectActive( f1_arg0 ) then
+		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, "score_event" ) and not CoD.SpawnSelectionUtility.IsSpawnSelectActive( f1_arg0 ) then
 			PlayClipOnElement( self, {
 				elementName = "MPScore",
 				clipName = "NormalScore"
@@ -300,16 +300,16 @@ LUI.createMenu.Hud_MP_Codcaster = function ( f1_arg0, f1_arg1 )
 			modelName = "profileSettingsUpdated"
 		} )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f24_arg0, f24_arg1, f24_arg2, f24_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		if CoD.HUDUtility.AreXButtonPressesDisallowed( self ) then
-			BlockGameFromKeyEvent( f24_arg2 )
+			BlockGameFromKeyEvent( controller )
 			return true
 		else
 			
 		end
-	end, function ( f25_arg0, f25_arg1, f25_arg2 )
+	end, function ( element, menu, controller )
 		if CoD.HUDUtility.AreXButtonPressesDisallowed( self ) then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 			return false
 		else
 			return false
@@ -317,7 +317,7 @@ LUI.createMenu.Hud_MP_Codcaster = function ( f1_arg0, f1_arg1 )
 	end, false )
 	self:subscribeToGlobalModel( f1_arg0, "PerController", "scriptNotify", function ( model )
 		local f26_local0 = self
-		if CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x9FB0A7FE2E8EC41 ) and not CoD.PlayerRoleUtility.IsPositionDraftStage( f1_arg0, CoD.PlayerRoleUtility.DraftStage.DRAFT_STAGE_DRAFT ) then
+		if CoD.ModelUtility.IsParamModelEqualToHashString( model, "player_spawned" ) and not CoD.PlayerRoleUtility.IsPositionDraftStage( f1_arg0, CoD.PlayerRoleUtility.DraftStage.DRAFT_STAGE_DRAFT ) then
 			CoD.HUDUtility.DisallowXButtonPressForTime( f1_local1, self, 400 )
 		end
 	end )

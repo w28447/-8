@@ -65,7 +65,7 @@ CoD.AARScoreboardTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	AARTabHeader = CoD.AARTabHeader.new( f1_arg0, f1_arg1, 0, 0, 235, 735, 0, 0, 94, 214 )
 	AARTabHeader:setAlpha( 0 )
-	AARTabHeader.TabTitle:setText( Engine[0xF9F1239CFD921FE]( 0x7BB5E9B11633E3 ) )
+	AARTabHeader.TabTitle:setText( Engine[0xF9F1239CFD921FE]( "aar/stats" ) )
 	AARTabHeader:subscribeToGlobalModel( f1_arg1, "AARSummaryStats", nil, function ( model )
 		AARTabHeader:setModel( model, f1_arg1 )
 	end )

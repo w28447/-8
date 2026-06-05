@@ -32,7 +32,7 @@ LUI.createMenu.ChooseModeSidebar = function ( f2_arg0, f2_arg1 )
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0, 0, -87, 413, 0, 0, -63, 1163 )
 	PixelGridTiledBacking:setAlpha( 0.15 )
-	PixelGridTiledBacking:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
@@ -75,11 +75,11 @@ LUI.createMenu.ChooseModeSidebar = function ( f2_arg0, f2_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f2_local1, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f2_local1:AddButtonCallbackFunction( ButtonList, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		ProcessListAction( self, f4_arg0, f4_arg2, f4_arg1 )
+	f2_local1:AddButtonCallbackFunction( ButtonList, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		ProcessListAction( self, element, controller, menu )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( ButtonList )
@@ -87,7 +87,7 @@ LUI.createMenu.ChooseModeSidebar = function ( f2_arg0, f2_arg1 )
 	
 	local Arrow = LUI.UIImage.new( 0, 0, 30, 45, 0, 0, 666.5, 681.5 )
 	Arrow:setAlpha( 0.6 )
-	Arrow:setImage( RegisterImage( 0x6961F4FBB41134C ) )
+	Arrow:setImage( RegisterImage( "uie_t7_menu_gunsmith_arrow_white" ) )
 	self:addElement( Arrow )
 	self.Arrow = Arrow
 	
@@ -117,11 +117,11 @@ LUI.createMenu.ChooseModeSidebar = function ( f2_arg0, f2_arg1 )
 			modelName = "demo.contextMode"
 		} )
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		CoD.DemoUtility.CloseChooseModeSidebar( self, f9_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		CoD.DemoUtility.CloseChooseModeSidebar( self, controller )
 		return true
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	ButtonList.id = "ButtonList"

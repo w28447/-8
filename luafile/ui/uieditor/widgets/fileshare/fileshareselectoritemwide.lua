@@ -38,7 +38,7 @@ CoD.FileshareSelectorItemWide.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local alertTriangle = LUI.UIImage.new( 0, 0, 147.5, 179.5, 0, 0, 77, 109 )
 	alertTriangle:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	alertTriangle:setAlpha( 0 )
-	alertTriangle:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
+	alertTriangle:setImage( RegisterImage( "warning_triangle" ) )
 	self:addElement( alertTriangle )
 	self.alertTriangle = alertTriangle
 	

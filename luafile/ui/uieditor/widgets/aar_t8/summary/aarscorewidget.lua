@@ -119,7 +119,7 @@ CoD.AARScoreWidget.__clipsPerState = {
 			f10_arg0:__resetProperties()
 			f10_arg0:setupElementClipCounter( 1 )
 			f10_arg0.ScoreLabel:completeAnimation()
-			f10_arg0.ScoreLabel:setText( LocalizeToUpperString( 0x351AF85574BC384 ) )
+			f10_arg0.ScoreLabel:setText( LocalizeToUpperString( "mpui/cash" ) )
 			f10_arg0.clipFinished( f10_arg0.ScoreLabel )
 		end
 	}

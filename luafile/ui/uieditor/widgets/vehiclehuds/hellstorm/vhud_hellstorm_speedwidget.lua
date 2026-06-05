@@ -12,7 +12,7 @@ CoD.vhud_hellstorm_SpeedWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local speednumbers = LUI.UIText.new( 0.5, 0.5, -65, 65, 0, 0, 19, 34 )
 	speednumbers:setTTF( "0arame_mono_stencil" )
-	speednumbers:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD756CD9A5F1F1B4 ) )
+	speednumbers:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration_cheap_blur" ) )
 	speednumbers:setShaderVector( 0, 0, 1, 0, 0 )
 	speednumbers:setShaderVector( 1, 0, 0, 0, 0 )
 	speednumbers:setShaderVector( 2, 0, 0, 0, 0 )
@@ -31,12 +31,12 @@ CoD.vhud_hellstorm_SpeedWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local vhudmsNotificationBox0 = CoD.vhud_ms_NotificationBox.new( f1_arg0, f1_arg1, 0.5, 0.5, -65, 65, 0, 0, -0.5, 44.5 )
 	vhudmsNotificationBox0:setAlpha( 0 )
-	vhudmsNotificationBox0.ALTtext:setText( Engine[0xF9F1239CFD921FE]( 0x3755C926654C027 ) )
+	vhudmsNotificationBox0.ALTtext:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_speed" ) )
 	self:addElement( vhudmsNotificationBox0 )
 	self.vhudmsNotificationBox0 = vhudmsNotificationBox0
 	
 	local TextBox = LUI.UIText.new( 0, 0, 0, 220, 0, 0, -2.5, 12.5 )
-	TextBox:setText( Engine[0xF9F1239CFD921FE]( 0x3755C926654C027 ) )
+	TextBox:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_speed" ) )
 	TextBox:setTTF( "ttmussels_regular" )
 	TextBox:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	TextBox:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

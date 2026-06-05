@@ -13,62 +13,62 @@ CoD.vhud_dart_button_all.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local buttonBacking05 = LUI.UIImage.new( 0, 0, 858, 1056, 0, 0, 186, 228 )
-	buttonBacking05:setImage( RegisterImage( 0x9EBE9E1B70D78CC ) )
+	buttonBacking05:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_bg" ) )
 	self:addElement( buttonBacking05 )
 	self.buttonBacking05 = buttonBacking05
 	
 	local buttonBacking01 = LUI.UIImage.new( 0, 0, 216, 414, 0, 0, 236.5, 278.5 )
-	buttonBacking01:setImage( RegisterImage( 0x9EBE9E1B70D78CC ) )
+	buttonBacking01:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_bg" ) )
 	self:addElement( buttonBacking01 )
 	self.buttonBacking01 = buttonBacking01
 	
 	local buttonBacking02 = LUI.UIImage.new( 0, 0, 645, 843, 0, 0, 236.5, 278.5 )
-	buttonBacking02:setImage( RegisterImage( 0x9EBE9E1B70D78CC ) )
+	buttonBacking02:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_bg" ) )
 	self:addElement( buttonBacking02 )
 	self.buttonBacking02 = buttonBacking02
 	
 	local buttonBacking04 = LUI.UIImage.new( 0, 0, 1, 199, 0, 0, 186, 228 )
-	buttonBacking04:setImage( RegisterImage( 0x9EBE9E1B70D78CC ) )
+	buttonBacking04:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_bg" ) )
 	self:addElement( buttonBacking04 )
 	self.buttonBacking04 = buttonBacking04
 	
 	local buttonFrame01 = LUI.UIImage.new( 0, 0, 216, 414, 0, 0, 235, 287 )
-	buttonFrame01:setImage( RegisterImage( 0x18D8A1BD8B8BC5E ) )
+	buttonFrame01:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_container" ) )
 	buttonFrame01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	buttonFrame01:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonFrame01 )
 	self.buttonFrame01 = buttonFrame01
 	
 	local buttonFrame02 = LUI.UIImage.new( 0, 0, 645, 843, 0, 0, 235, 287 )
-	buttonFrame02:setImage( RegisterImage( 0x18D8A1BD8B8BC5E ) )
+	buttonFrame02:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_container" ) )
 	buttonFrame02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	buttonFrame02:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonFrame02 )
 	self.buttonFrame02 = buttonFrame02
 	
 	local buttonEmpty01 = LUI.UIImage.new( 0, 0, 429, 629, 0, 0, 235.5, 279.5 )
-	buttonEmpty01:setImage( RegisterImage( 0xDF5E4D5902EC2EF ) )
+	buttonEmpty01:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_other" ) )
 	buttonEmpty01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	buttonEmpty01:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonEmpty01 )
 	self.buttonEmpty01 = buttonEmpty01
 	
 	local buttonLinks = LUI.UIImage.new( 0, 0, 312, 746, 0, 0, 0, 220 )
-	buttonLinks:setImage( RegisterImage( 0x26D16092FB5EE37 ) )
+	buttonLinks:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_link" ) )
 	buttonLinks:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	buttonLinks:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonLinks )
 	self.buttonLinks = buttonLinks
 	
 	local buttonFrame04 = LUI.UIImage.new( 0, 0, 1, 199, 0, 0, 184.5, 236.5 )
-	buttonFrame04:setImage( RegisterImage( 0x18D8A1BD8B8BC5E ) )
+	buttonFrame04:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_container" ) )
 	buttonFrame04:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	buttonFrame04:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonFrame04 )
 	self.buttonFrame04 = buttonFrame04
 	
 	local buttonFrame05 = LUI.UIImage.new( 0, 0, 858, 1056, 0, 0, 184.5, 236.5 )
-	buttonFrame05:setImage( RegisterImage( 0x18D8A1BD8B8BC5E ) )
+	buttonFrame05:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_ctrl_button_container" ) )
 	buttonFrame05:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	buttonFrame05:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( buttonFrame05 )
@@ -114,7 +114,7 @@ CoD.vhud_dart_button_all.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	KBMCycleActionName = LUI.UIText.new( 0, 0, 4, 196, 0, 0, 199, 215 )
 	KBMCycleActionName:setAlpha( 0 )
-	KBMCycleActionName:setText( Engine[0xF9F1239CFD921FE]( 0x627DEC5036BC76C ) )
+	KBMCycleActionName:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_detonate" ) )
 	KBMCycleActionName:setTTF( "ttmussels_regular" )
 	KBMCycleActionName:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	KBMCycleActionName:setShaderVector( 0, 0, 0, 0, 0 )
@@ -140,7 +140,7 @@ CoD.vhud_dart_button_all.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	TextBox = LUI.UIText.new( 0, 0, 219, 411, 0, 0, 249.5, 265.5 )
 	TextBox:setAlpha( 0 )
-	TextBox:setText( Engine[0xF9F1239CFD921FE]( 0x9D336E3DD657B0A ) )
+	TextBox:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_speedboost" ) )
 	TextBox:setTTF( "ttmussels_regular" )
 	TextBox:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	TextBox:setShaderVector( 0, 0, 0, 0, 0 )

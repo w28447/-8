@@ -59,20 +59,20 @@ CoD.BM_ContractsFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Contract2, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
+	f1_arg0:AddButtonCallbackFunction( Contract2, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		if IsElementInState( self.Contract2, "ContractSlot" ) then
-			OpenOverlay( self, "BlackMarketContractSelect", f5_arg2, {
+			OpenOverlay( self, "BlackMarketContractSelect", controller, {
 				_contractSlot = 2,
-				_model = f5_arg0:getModel()
+				_model = element:getModel()
 			} )
 			PlaySoundAlias( "uin_press_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
+	end, function ( element, menu, controller )
 		if IsElementInState( self.Contract2, "ContractSlot" ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -103,20 +103,20 @@ CoD.BM_ContractsFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f9_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Contract1, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+	f1_arg0:AddButtonCallbackFunction( Contract1, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		if IsElementInState( self.Contract1, "ContractSlot" ) then
-			OpenOverlay( self, "BlackMarketContractSelect", f10_arg2, {
+			OpenOverlay( self, "BlackMarketContractSelect", controller, {
 				_contractSlot = 1,
-				_model = f10_arg0:getModel()
+				_model = element:getModel()
 			} )
 			PlaySoundAlias( "uin_press_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
+	end, function ( element, menu, controller )
 		if IsElementInState( self.Contract1, "ContractSlot" ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -130,7 +130,7 @@ CoD.BM_ContractsFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		{
 			stateName = "Empty",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "displayName", 0x0 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "displayName", "" )
 			end
 		}
 	} )
@@ -160,7 +160,7 @@ CoD.BM_ContractsFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local DailyContracts = LUI.UIText.new( 0.5, 0.5, -874.5, -331.5, 0.5, 0.5, -413.5, -383.5 )
 	DailyContracts:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	DailyContracts:setText( LocalizeToUpperString( 0xB27DDDD116F4EFF ) )
+	DailyContracts:setText( LocalizeToUpperString( "menu/daily_contract" ) )
 	DailyContracts:setTTF( "ttmussels_demibold" )
 	DailyContracts:setLetterSpacing( 2 )
 	DailyContracts:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

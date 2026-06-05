@@ -122,7 +122,7 @@ CoD.CommonRankIconAndRankLarge.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local rank = LUI.UIText.new( -0, 0.57, 145, 145, 0, 0, 32, 50 )
 	rank:setRGB( 0.92, 0.92, 0.92 )
 	rank:setAlpha( 0 )
-	rank:setText( LocalizeToUpperString( 0x3370355189B42A7 ) )
+	rank:setText( LocalizeToUpperString( "arena/rank" ) )
 	rank:setTTF( "ttmussels_regular" )
 	rank:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	rank:setShaderVector( 0, 1, 0, 0, 0 )

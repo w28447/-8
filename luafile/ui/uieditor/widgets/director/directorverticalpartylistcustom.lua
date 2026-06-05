@@ -57,24 +57,24 @@ CoD.DirectorVerticalPartyListCustom.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( CustomGamePlayersWithFirstEmpty, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f8_arg0, f8_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsLobbyNetworkModeLAN() and IsGamepad( f8_arg2 ) then
+	f1_arg0:AddButtonCallbackFunction( CustomGamePlayersWithFirstEmpty, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsLobbyNetworkModeLAN() and IsGamepad( controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			OpenOverlay( self, "Social_InvitePlayersPopup", f8_arg2, nil )
+			OpenOverlay( self, "Social_InvitePlayersPopup", controller, nil )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f8_arg0, f8_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsLobbyNetworkModeLAN() and IsMouseOrKeyboard( f8_arg2 ) then
+		elseif CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsLobbyNetworkModeLAN() and IsMouseOrKeyboard( controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			OpenOverlay( self, "Social_InvitePlayersPopup", f8_arg2, nil )
+			OpenOverlay( self, "Social_InvitePlayersPopup", controller, nil )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f9_arg0, f9_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsLobbyNetworkModeLAN() and IsGamepad( f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x7F02CC573E312E5, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsLobbyNetworkModeLAN() and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/invite_game", nil, "ui_confirm" )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f9_arg0, f9_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsLobbyNetworkModeLAN() and IsMouseOrKeyboard( f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsLobbyNetworkModeLAN() and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return false
 		else
 			return false

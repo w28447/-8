@@ -43,7 +43,7 @@ LUI.createMenu.LeaguePlaySkillDivisionRules = function ( f1_arg0, f1_arg1 )
 	self.BGDotPatternTop = BGDotPatternTop
 	
 	local DisplayImage = LUI.UIImage.new( 0.5, 0.5, -468, 30, 0.5, 0.5, -284, 298 )
-	DisplayImage:setImage( RegisterImage( 0x3C590AC3E812395 ) )
+	DisplayImage:setImage( RegisterImage( "ui_menu_ftue_wl_welcome" ) )
 	DisplayImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	DisplayImage:setShaderVector( 0, 0.5, 0, 0, 0 )
 	DisplayImage:setShaderVector( 1, 1, 1, 0, 0 )
@@ -68,7 +68,7 @@ LUI.createMenu.LeaguePlaySkillDivisionRules = function ( f1_arg0, f1_arg1 )
 	self.BackingTopRank = BackingTopRank
 	
 	local TopRank = CoD.ArenaSkillDivision.new( f1_local1, f1_arg0, 0.5, 0.5, 58, 469, 0.5, 0.5, -285, -191 )
-	TopRank.SkillBadge:setImage( RegisterImage( 0x9853E7CB53E6FE8 ) )
+	TopRank.SkillBadge:setImage( RegisterImage( "ui_icon_mp_league_gem_master" ) )
 	TopRank.Title:setRGB( 0.64, 0.13, 0.69 )
 	TopRank.Title:setText( LocalizeToUpperString( 0x56161D4902B44C3 ) )
 	TopRank.Description:setText( LocalizeToUpperString( 0xEC877567B5AFC55 ) )
@@ -81,7 +81,7 @@ LUI.createMenu.LeaguePlaySkillDivisionRules = function ( f1_arg0, f1_arg1 )
 	self.BackingSecondRank = BackingSecondRank
 	
 	local SecondRank = CoD.ArenaSkillDivision.new( f1_local1, f1_arg0, 0.5, 0.5, 58, 469, 0.5, 0.5, -162.5, -68.5 )
-	SecondRank.SkillBadge:setImage( RegisterImage( 0x77644A3D1920171 ) )
+	SecondRank.SkillBadge:setImage( RegisterImage( "ui_icon_mp_league_gem_elite" ) )
 	SecondRank.Title:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	SecondRank.Title:setText( LocalizeToUpperString( 0x198C584B9BE2680 ) )
 	SecondRank.Description:setText( LocalizeToUpperString( 0xF42543937B4C208 ) )
@@ -94,7 +94,7 @@ LUI.createMenu.LeaguePlaySkillDivisionRules = function ( f1_arg0, f1_arg1 )
 	self.BackingThirdRank = BackingThirdRank
 	
 	local ThirdRank = CoD.ArenaSkillDivision.new( f1_local1, f1_arg0, 0.5, 0.5, 58, 469, 0.5, 0.5, -40.5, 53.5 )
-	ThirdRank.SkillBadge:setImage( RegisterImage( 0xAE51DF99A62031E ) )
+	ThirdRank.SkillBadge:setImage( RegisterImage( "ui_icon_mp_league_gem_expert" ) )
 	ThirdRank.Title:setRGB( 0.32, 0.8, 0.1 )
 	ThirdRank.Title:setText( LocalizeToUpperString( 0x2813B2356E26CF9 ) )
 	ThirdRank.Description:setText( LocalizeToUpperString( 0xE6504108D92C8D3 ) )
@@ -107,7 +107,7 @@ LUI.createMenu.LeaguePlaySkillDivisionRules = function ( f1_arg0, f1_arg1 )
 	self.BackingFourthRank = BackingFourthRank
 	
 	local FourthRank = CoD.ArenaSkillDivision.new( f1_local1, f1_arg0, 0.5, 0.5, 58, 470, 0.5, 0.5, 81.5, 175.5 )
-	FourthRank.SkillBadge:setImage( RegisterImage( 0xDCF3FC6FA429166 ) )
+	FourthRank.SkillBadge:setImage( RegisterImage( "uie_ui_icon_mp_league_gem_advanced" ) )
 	FourthRank.Title:setRGB( 0.98, 0.86, 0.09 )
 	FourthRank.Title:setText( LocalizeToUpperString( 0x8E7615C0CA01BDC ) )
 	FourthRank.Description:setText( LocalizeToUpperString( 0x10B06685E486224 ) )
@@ -160,11 +160,11 @@ LUI.createMenu.LeaguePlaySkillDivisionRules = function ( f1_arg0, f1_arg1 )
 			end
 		}
 	} )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		GoBack( self, f6_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x3996BAAC73C3F6D, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/dismiss", nil, nil )
 		return true
 	end, false )
 	LeaguePlayRulesPopup.buttons:setModel( self.buttonModel, f1_arg0 )

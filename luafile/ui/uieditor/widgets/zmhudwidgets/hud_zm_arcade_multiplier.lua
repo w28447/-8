@@ -29,7 +29,7 @@ CoD.HUD_ZM_Arcade_Multiplier.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	Multiplier:linkToElementModel( self, "multiplier_count", true, function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
-			Multiplier:setText( LocalizeIntoString( 0x674D175D3480E09, f2_local0 ) )
+			Multiplier:setText( LocalizeIntoString( "mp/multiplier_x", f2_local0 ) )
 		end
 	end )
 	self:addElement( Multiplier )

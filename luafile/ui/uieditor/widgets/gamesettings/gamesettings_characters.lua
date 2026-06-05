@@ -24,8 +24,8 @@ local f0_local1 = function ( f2_arg0 )
 		if f2_local0 and #f2_local0 > 0 then
 			local f3_local0 = false
 			for f3_local4, f3_local5 in ipairs( f2_local0 ) do
-				if f2_local1[0x53F3A0F536232FB][f3_local5.bodyIndex]:get() ~= f3_arg3 then
-					f2_local1[0x53F3A0F536232FB][f3_local5.bodyIndex]:set( f3_arg3 )
+				if f2_local1.maxuniquerolesperteam[f3_local5.bodyIndex]:get() ~= f3_arg3 then
+					f2_local1.maxuniquerolesperteam[f3_local5.bodyIndex]:set( f3_arg3 )
 					f3_local0 = true
 				end
 			end
@@ -38,9 +38,9 @@ local f0_local1 = function ( f2_arg0 )
 	local f2_local3 = nil
 	for f2_local7, f2_local8 in ipairs( f2_local0 ) do
 		if not f2_local3 then
-			f2_local3 = f2_local1[0x53F3A0F536232FB][f2_local8.bodyIndex]:get()
+			f2_local3 = f2_local1.maxuniquerolesperteam[f2_local8.bodyIndex]:get()
 		end
-		if f2_local3 ~= f2_local1[0x53F3A0F536232FB][f2_local8.bodyIndex]:get() then
+		if f2_local3 ~= f2_local1.maxuniquerolesperteam[f2_local8.bodyIndex]:get() then
 			f2_local3 = nil
 			break
 		end
@@ -53,7 +53,7 @@ local f0_local1 = function ( f2_arg0 )
 		local f4_local2 = f4_local0
 		local f4_local3 = {
 			models = {
-				text = Engine[0xF9F1239CFD921FE]( 0xEEBDA1A33FABDC )
+				text = Engine[0xF9F1239CFD921FE]( "menu/custom" )
 			}
 		}
 		local f4_local4 = {}
@@ -87,7 +87,7 @@ local f0_local1 = function ( f2_arg0 )
 	f2_local6 = {}
 	table.insert( f2_local6, {
 		models = {
-			name = 0x3F979FF83304183,
+			name = "menu/all_specialists",
 			desc = 0x1403A7CB59B0FED,
 			image = "blacktransparent",
 			optionsDatasource = f2_local5
@@ -120,8 +120,8 @@ local f0_local2 = function ( f5_arg0, f5_arg1, f5_arg2 )
 					text = f7_local1
 				},
 				properties = {
-					title = 0x0,
-					desc = 0x0,
+					title = "",
+					desc = "",
 					image = "",
 					value = f7_local1,
 					isDefault = f5_local2 == f7_local1,
@@ -148,8 +148,8 @@ local f0_local3 = function ( f8_arg0 )
 	if f8_local4 and #f8_local4 > 0 then
 		for f8_local8, f8_local9 in ipairs( f8_local4 ) do
 			local f8_local10 = f8_local9.bodyIndex
-			local f8_local11 = f8_local3[0x53F3A0F536232FB][f8_local10]
-			local f8_local12 = f8_local2[0x53F3A0F536232FB][f8_local10]
+			local f8_local11 = f8_local3.maxuniquerolesperteam[f8_local10]
+			local f8_local12 = f8_local2.maxuniquerolesperteam[f8_local10]
 			table.insert( f8_local0, {
 				models = {
 					name = Engine[0xF9F1239CFD921FE]( f8_local9.displayName ),
@@ -229,13 +229,13 @@ CoD.GameSettings_Characters.new = function ( f14_arg0, f14_arg1, f14_arg2, f14_a
 		CoD.Menu.UpdateButtonShownState( element, f14_arg0, f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f15_local0
 	end )
-	f14_arg0:AddButtonCallbackFunction( OptionCategoryGrid, f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
+	f14_arg0:AddButtonCallbackFunction( OptionCategoryGrid, f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		ShowWidget( self.SlidersPC )
-		SetCurrentElementAsActive( self, f16_arg0, f16_arg2 )
-		SetFocusToElement( self, "SlidersPC", f16_arg2 )
+		SetCurrentElementAsActive( self, element, controller )
+		SetFocusToElement( self, "SlidersPC", controller )
 		return true
-	end, function ( f17_arg0, f17_arg1, f17_arg2 )
-		CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( OptionCategoryGrid )
@@ -280,27 +280,27 @@ CoD.GameSettings_Characters.new = function ( f14_arg0, f14_arg1, f14_arg2, f14_a
 		SetElementCanBeNavigatedTo( self.OptionCategoryGrid, true )
 		return f20_local0
 	end )
-	f14_arg0:AddButtonCallbackFunction( SlidersPC, f14_arg1, Enum.LUIButton[0x22361E23588705A], "ui_contextual_1", function ( f21_arg0, f21_arg1, f21_arg2, f21_arg3 )
+	f14_arg0:AddButtonCallbackFunction( SlidersPC, f14_arg1, Enum.LUIButton[0x22361E23588705A], "ui_contextual_1", function ( element, menu, controller, model )
 		if AlwaysFalse() then
-			OpenGameSettingsOptionsMenu( self, f21_arg0, f21_arg2, f21_arg1 )
+			OpenGameSettingsOptionsMenu( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f22_arg0, f22_arg1, f22_arg2 )
+	end, function ( element, menu, controller )
 		if AlwaysFalse() then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options", nil, "ui_contextual_1" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "menu/options", nil, "ui_contextual_1" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f14_arg0:AddButtonCallbackFunction( SlidersPC, f14_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
-		SetFocusToElement( self, "OptionCategoryGrid", f23_arg2 )
+	f14_arg0:AddButtonCallbackFunction( SlidersPC, f14_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		SetFocusToElement( self, "OptionCategoryGrid", controller )
 		CoD.OptionsUtility.SetFocusToGrid( self.OptionCategoryGrid )
 		return true
-	end, function ( f24_arg0, f24_arg1, f24_arg2 )
-		CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( SlidersPC )

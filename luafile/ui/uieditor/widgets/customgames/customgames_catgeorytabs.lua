@@ -19,7 +19,7 @@ CoD.CustomGames_CatgeoryTabs.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.TabBacking = TabBacking
 	
 	local LB = CoD.BumperButtonWithKeyMouseText.new( f1_arg0, f1_arg1, 0, 0, 0, 200, 0, 0, 53, 87 )
-	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBDCD5292604F434 ) )
+	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/lb" ) )
 	LB.GamepadPrompt:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	self:addElement( LB )
 	self.LB = LB
@@ -52,7 +52,7 @@ CoD.CustomGames_CatgeoryTabs.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.categoryTabsListPC = categoryTabsListPC
 	
 	local RB = CoD.BumperButtonWithKeyMouseText.new( f1_arg0, f1_arg1, 0, 0, 1720, 1920, 0, 0, 53, 87 )
-	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBFED5292621DA9A ) )
+	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/rb" ) )
 	self:addElement( RB )
 	self.RB = RB
 	

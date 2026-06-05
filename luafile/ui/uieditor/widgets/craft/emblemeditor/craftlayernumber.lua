@@ -16,7 +16,7 @@ CoD.CraftLayerNumber.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local layerNumber = LUI.UIText.new( 0, 0, 26, 108, 0.5, 0.5, -10, 10 )
 	layerNumber:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	layerNumber:setText( Engine[0xF9F1239CFD921FE]( 0x87457CD189F982E ) )
+	layerNumber:setText( Engine[0xF9F1239CFD921FE]( "menu/craft_layers" ) )
 	layerNumber:setTTF( "ttmussels_regular" )
 	layerNumber:setLetterSpacing( 1 )
 	layerNumber:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -28,7 +28,7 @@ CoD.CraftLayerNumber.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.layerNumber = layerNumber
 	
 	local groupIcon = LUI.UIImage.new( 0, 0, 1, 23, 0, 0, 1, 23 )
-	groupIcon:setImage( RegisterImage( 0x964B04560791FCF ) )
+	groupIcon:setImage( RegisterImage( "uie_t7_menu_emblem_group" ) )
 	self:addElement( groupIcon )
 	self.groupIcon = groupIcon
 	

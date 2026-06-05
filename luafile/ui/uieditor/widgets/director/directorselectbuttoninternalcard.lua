@@ -202,7 +202,7 @@ CoD.DirectorSelectButtonInternalCard.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local downloadIcon = LUI.UIImage.new( 0, 0, 220, 300, 0, 0, 258, 338 )
 	downloadIcon:setAlpha( 0 )
-	downloadIcon:setImage( RegisterImage( 0x9D993738EE5B550 ) )
+	downloadIcon:setImage( RegisterImage( "t7_icon_menu_options_download" ) )
 	self:addElement( downloadIcon )
 	self.downloadIcon = downloadIcon
 	

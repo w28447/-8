@@ -9,7 +9,7 @@ CoD.fe_LeftContainerMain.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local lblPressToPlay = LUI.UIText.new( 0, 1, 0, 0, 1, 1, -27.5, 0.5 )
 	lblPressToPlay:setRGB( ColorSet.T8__SLATE.r, ColorSet.T8__SLATE.g, ColorSet.T8__SLATE.b )
-	lblPressToPlay:setText( LocalizeToUpperString( 0xF5814C348E0C9F1 ) )
+	lblPressToPlay:setText( LocalizeToUpperString( "platform/press_start" ) )
 	lblPressToPlay:setTTF( "ttmussels_regular" )
 	lblPressToPlay:setLetterSpacing( 5 )
 	lblPressToPlay:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

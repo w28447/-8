@@ -73,19 +73,19 @@ Lobby.Leaderboard.PopulateCustomList = function ( f4_arg0 )
 end
 
 Lobby.Leaderboard.GetScore = function ( f5_arg0 )
-	return math.max( 0, Engine[0x6A6DD7FCE74F41]( f5_arg0, 0x10E63FBE7F624F5 ) )
+	return math.max( 0, Engine[0x6A6DD7FCE74F41]( f5_arg0, "score" ) )
 end
 
 Lobby.Leaderboard.GetPointsPerGame = function ( f6_arg0, f6_arg1, f6_arg2 )
-	return math.max( 0, (Engine[0x6A6DD7FCE74F41]( f6_arg1, 0x10E63FBE7F624F5 ) + Engine[0xA339DAAB07A46F1]( f6_arg1, "Points" )) / (Lobby.Leaderboard.GetGamesPlayed( f6_arg1 ) + Engine[0xA339DAAB07A46F1]( f6_arg1, "Games Played" )) )
+	return math.max( 0, (Engine[0x6A6DD7FCE74F41]( f6_arg1, "score" ) + Engine[0xA339DAAB07A46F1]( f6_arg1, "Points" )) / (Lobby.Leaderboard.GetGamesPlayed( f6_arg1 ) + Engine[0xA339DAAB07A46F1]( f6_arg1, "Games Played" )) )
 end
 
 Lobby.Leaderboard.GetScorePerMinute = function ( f7_arg0, f7_arg1, f7_arg2 )
-	return math.max( 0, (Engine[0x6A6DD7FCE74F41]( f7_arg1, 0x10E63FBE7F624F5 ) + Engine[0xA339DAAB07A46F1]( f7_arg1, "Score" )) / (math.max( Lobby.Leaderboard.MIN_PLAY_TIME, Engine[0x6A6DD7FCE74F41]( f7_arg1, "time_played_total" ) ) + Engine[0xA339DAAB07A46F1]( f7_arg1, "Time Played" )) / 60 )
+	return math.max( 0, (Engine[0x6A6DD7FCE74F41]( f7_arg1, "score" ) + Engine[0xA339DAAB07A46F1]( f7_arg1, "Score" )) / (math.max( Lobby.Leaderboard.MIN_PLAY_TIME, Engine[0x6A6DD7FCE74F41]( f7_arg1, "time_played_total" ) ) + Engine[0xA339DAAB07A46F1]( f7_arg1, "Time Played" )) / 60 )
 end
 
 Lobby.Leaderboard.GetKillDeathRatio = function ( f8_arg0 )
-	return math.max( 0, (Engine[0x6A6DD7FCE74F41]( f8_arg0, 0xBFF3D8DB7BB109E ) + Engine[0xA339DAAB07A46F1]( f8_arg0, "Kills" )) / (Engine[0x6A6DD7FCE74F41]( f8_arg0, 0x6ED920648D707FA ) + Engine[0xA339DAAB07A46F1]( f8_arg0, "Deaths" )) * 100 )
+	return math.max( 0, (Engine[0x6A6DD7FCE74F41]( f8_arg0, "kills" ) + Engine[0xA339DAAB07A46F1]( f8_arg0, "Kills" )) / (Engine[0x6A6DD7FCE74F41]( f8_arg0, "deaths" ) + Engine[0xA339DAAB07A46F1]( f8_arg0, "Deaths" )) * 100 )
 end
 
 Lobby.Leaderboard.GetTimePlayed = function ( f9_arg0 )
@@ -97,7 +97,7 @@ Lobby.Leaderboard.GetGamesPlayed = function ( f10_arg0 )
 end
 
 Lobby.Leaderboard.GetPrestige = function ( f11_arg0 )
-	if Engine.CurrentSessionMode() == Enum.eModes[0xBF1DCC8138A9D39] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_warzone then
 		return 0
 	else
 		local f11_local0 = Engine.GetPlayerStats( f11_arg0 )
@@ -207,7 +207,7 @@ Lobby.Leaderboard.LB_MP_GM_ESCORT = function ( f20_arg0 )
 	local f20_local0 = f20_arg0.lbColName
 	local f20_local1 = f20_arg0.controller
 	if f20_local0 == "ESCORT Avg Time" then
-		return (Engine[0xA339DAAB07A46F1]( f20_local1, "Escort Time" ) + Engine[0x6A6DD7FCE74F41]( f20_local1, 0x4E5BB2EB216E392 )) / math.max( 1, Engine[0xA339DAAB07A46F1]( f20_local1, "Games Played" ) + 1 )
+		return (Engine[0xA339DAAB07A46F1]( f20_local1, "Escort Time" ) + Engine[0x6A6DD7FCE74F41]( f20_local1, "escorts" )) / math.max( 1, Engine[0xA339DAAB07A46F1]( f20_local1, "Games Played" ) + 1 )
 	else
 		return 0
 	end
@@ -385,7 +385,7 @@ Lobby.Leaderboard.OnCalculateLBColValue = function ( f34_arg0 )
 end
 
 Lobby.Leaderboard.ShouldWrite_LB_MP_GB_HEADSHOTS = function ( f35_arg0 )
-	if Engine[0x6A6DD7FCE74F41]( f35_arg0.controller, 0x4E570D3CBD6AFF0 ) > 0 then
+	if Engine[0x6A6DD7FCE74F41]( f35_arg0.controller, "headshots" ) > 0 then
 		return true
 	else
 		return false
@@ -404,11 +404,11 @@ end
 Lobby.Leaderboard.AreLeaderboardWritesEnabled = function ( f37_arg0, f37_arg1 )
 	if not Engine[0xE39F1F30B306065]() then
 		local f37_local0 = -1
-		if f37_arg1 == Enum.eModes[0x83EBA96F36BC4E5] then
+		if f37_arg1 == Enum.eModes.mode_multiplayer then
 			f37_local0 = LuaEnum.FEATURE_BAN.LEADERBOARD_WRITE_MP
-		elseif f37_arg1 == Enum.eModes[0x3723205FAE52C4A] then
+		elseif f37_arg1 == Enum.eModes.mode_zombies then
 			f37_local0 = LuaEnum.FEATURE_BAN.LEADERBOARD_WRITE_ZM
-		elseif f37_arg1 == Enum.eModes[0x60063C67132EB69] then
+		elseif f37_arg1 == Enum.eModes.mode_campaign then
 			f37_local0 = LuaEnum.FEATURE_BAN.LEADERBOARD_WRITE_CP
 		end
 		if f37_local0 >= 0 then

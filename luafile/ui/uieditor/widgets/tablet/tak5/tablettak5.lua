@@ -25,7 +25,7 @@ CoD.TabletTak5.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	self.background = background
 	
 	local GridBackground = LUI.UIImage.new( 0, 0, -30, 530, 0, 0, 108, 392 )
-	GridBackground:setImage( RegisterImage( 0xA01874D41AD67C ) )
+	GridBackground:setImage( RegisterImage( "uie_ui_hud_tak5_bg_grid" ) )
 	GridBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	GridBackground:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( GridBackground )
@@ -290,7 +290,7 @@ CoD.TabletTak5.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local Tak5Version = LUI.UIImage.new( 0, 0, 246, 350, 0, 0, 242, 264 )
 	Tak5Version:setAlpha( 0.25 )
-	Tak5Version:setImage( RegisterImage( 0xD5E0EBBEF0B319F ) )
+	Tak5Version:setImage( RegisterImage( "uie_ui_hud_tak5_module_version" ) )
 	Tak5Version:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Tak5Version:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( Tak5Version )

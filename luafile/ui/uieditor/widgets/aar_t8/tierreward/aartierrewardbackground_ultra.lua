@@ -17,7 +17,7 @@ CoD.AARTierRewardBackground_Ultra.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.NoiseTiledBacking = NoiseTiledBacking
 	
 	local CommonOuterGlow = LUI.UIImage.new( 0, 1, -11, 11, 0, 1, -12, 12 )
-	CommonOuterGlow:setImage( RegisterImage( 0xAE13B63B2001396 ) )
+	CommonOuterGlow:setImage( RegisterImage( "uie_ui_menu_common_outer_glow01" ) )
 	CommonOuterGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	CommonOuterGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonOuterGlow:setupNineSliceShader( 32, 32 )
@@ -43,7 +43,7 @@ CoD.AARTierRewardBackground_Ultra.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local RadialGlow = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	RadialGlow:setAlpha( 0.9 )
-	RadialGlow:setImage( RegisterImage( 0x74F13AE9F5148FE ) )
+	RadialGlow:setImage( RegisterImage( "uie_ui_menu_common_radial_glow01" ) )
 	RadialGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	RadialGlow:setShaderVector( 0, 0.5, 0, 0, 0 )
 	RadialGlow:setShaderVector( 1, 1, 2, 0, 0 )
@@ -60,13 +60,13 @@ CoD.AARTierRewardBackground_Ultra.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local BottomGradient = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BottomGradient:setAlpha( 0.2 )
 	BottomGradient:setZRot( 180 )
-	BottomGradient:setImage( RegisterImage( 0xB646BE73FB8838C ) )
+	BottomGradient:setImage( RegisterImage( "uie_ui_menu_common_gradient" ) )
 	self:addElement( BottomGradient )
 	self.BottomGradient = BottomGradient
 	
 	local BGPatternThin = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BGPatternThin:setAlpha( 0.3 )
-	BGPatternThin:setImage( RegisterImage( 0xC740F3CC5928DAB ) )
+	BGPatternThin:setImage( RegisterImage( "uie_ui_menu_common_mtx_button_bg_ultra_thin" ) )
 	BGPatternThin:setMaterial( LUI.UIImage.GetCachedMaterial( 0xC221B51E4063E3D ) )
 	BGPatternThin:setShaderVector( 0, 0, 0, 0, 0 )
 	BGPatternThin:setShaderVector( 1, 1, 1, 0, 0 )

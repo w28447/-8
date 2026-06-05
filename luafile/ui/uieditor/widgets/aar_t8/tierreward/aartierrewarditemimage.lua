@@ -62,25 +62,25 @@ CoD.AARTierRewardItemImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 		{
 			stateName = "OutfitWarPaint",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xFB8B65946FBF7A2 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "war_paint" )
 			end
 		},
 		{
 			stateName = "OutfitWarPaintBundle",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0x48B82A2276A1CAF )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "war_paint_bundle" )
 			end
 		},
 		{
 			stateName = "OutfitPalette",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xDD691088352B680 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "palette" )
 			end
 		},
 		{
 			stateName = "OutfitBundle",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xC398D8E22A2269B )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "outfit_bundle" )
 			end
 		}
 	} )

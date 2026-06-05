@@ -10,14 +10,14 @@ CoD.AARWinLoseHistory.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local Bar = LUI.UIImage.new( 0, 0, 0, 124, 0, 0, -0.5, 117.5 )
 	Bar:setZRot( 180 )
-	Bar:setImage( RegisterImage( 0xEDE40DD4C9614B4 ) )
+	Bar:setImage( RegisterImage( "uie_ui_menu_aar_stat_bar_grad" ) )
 	self:addElement( Bar )
 	self.Bar = Bar
 	
 	local BarAdd = LUI.UIImage.new( 0, 0, 0, 124, 0, 0, -0.5, 117.5 )
 	BarAdd:setAlpha( 0.5 )
 	BarAdd:setZRot( 180 )
-	BarAdd:setImage( RegisterImage( 0xEDE40DD4C9614B4 ) )
+	BarAdd:setImage( RegisterImage( "uie_ui_menu_aar_stat_bar_grad" ) )
 	BarAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	BarAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BarAdd )
@@ -47,13 +47,13 @@ CoD.AARWinLoseHistory.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local InValidNormal = LUI.UIImage.new( 0, 0, 14, 110, 0, 0, 22, 214 )
 	InValidNormal:setAlpha( 0 )
-	InValidNormal:setImage( RegisterImage( 0xFDCBFA0A9BD64AE ) )
+	InValidNormal:setImage( RegisterImage( "uie_ui_menu_aar_perform_nodata" ) )
 	self:addElement( InValidNormal )
 	self.InValidNormal = InValidNormal
 	
 	local InValidAdd = LUI.UIImage.new( 0, 0, 14, 110, 0, 0, 22, 214 )
 	InValidAdd:setAlpha( 0 )
-	InValidAdd:setImage( RegisterImage( 0xFDCBFA0A9BD64AE ) )
+	InValidAdd:setImage( RegisterImage( "uie_ui_menu_aar_perform_nodata" ) )
 	InValidAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InValidAdd )
 	self.InValidAdd = InValidAdd
@@ -68,13 +68,13 @@ CoD.AARWinLoseHistory.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		{
 			stateName = "Lose",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "outcome", 0xE4BEDAD712621BA )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "outcome", "loss" )
 			end
 		},
 		{
 			stateName = "Draw",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "outcome", 0x180A666DCB87393 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "outcome", "draw" )
 			end
 		}
 	} )

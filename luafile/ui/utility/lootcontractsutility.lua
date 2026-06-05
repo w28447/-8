@@ -34,17 +34,17 @@ CoD.LootContractsUtility.UpdatePinnedContracts = function ( f2_arg0, f2_arg1, f2
 			local f2_local2 = LobbyData.GetCurrentMenuTarget()
 			local f2_local3
 			if f2_local2 then
-				f2_local3 = f2_local2["id"]
+				f2_local3 = f2_local2.id
 				if not f2_local3 then
 				
 				else
 					if not CoD.BaseUtility.IsDvarEnabled( "ui_disablePinContractDLog" ) then
-						Engine[0xDE279ECDDDD966]( f2_arg0, 0x16179386F1005C3, {
-							[0xA771618F6FE31D1] = f2_local1,
-							[0xB9C77D208D5A439] = f2_arg3,
-							["contract_mode"] = f2_arg1,
-							[0xF90D702FFE79972] = f2_local3,
-							[0x7223EC6A1AA41D3] = Engine[0x316595FEDC72451]()
+						Engine[0xDE279ECDDDD966]( f2_arg0, "dlog_event_pin_contract", {
+							slot = f2_local1,
+							contract_id = f2_arg3,
+							contract_mode = f2_arg1,
+							menu_id = f2_local3,
+							sys_ms = Engine[0x316595FEDC72451]()
 						} )
 					end
 					Engine[0x30BED10F42EC695]( f2_arg0, f2_arg1, f2_local1 )

@@ -1,4 +1,4 @@
-require( "x64:fba4267ffde82d4" )
+require( "ui/uieditor/widgets/hud/scoreinfo/scoreinfo_roundlist" )
 require( "ui/uieditor/widgets/hud/scoreinfo/scoreinfoescortbar" )
 
 CoD.ScoreInfoEscort = InheritFrom( LUI.UIElement )

@@ -28,8 +28,8 @@ CoD.WarUtility.InitializeWarDataSource = function ( f1_arg0 )
 			zoneInfo = {},
 			tierInfo = {}
 		}
-		local f1_local1 = Engine[0xE00B2F29271C60B]( 0x3B8FE87B3F2F84E )
-		for f1_local2 = 1, f1_local1[0x869549C59B6EDEB], 1 do
+		local f1_local1 = Engine[0xE00B2F29271C60B]( "warscoring" )
+		for f1_local2 = 1, f1_local1.completionsecondscount, 1 do
 			DataSources.WarData.WarInfo.completionBonus[f1_local2] = {
 				time = f1_local1[Engine[0xC53F8D38DF9042B]( string.format( "completionSeconds%02d", f1_local2 ) )],
 				score = f1_local1[Engine[0xC53F8D38DF9042B]( string.format( "completionScore%02d", f1_local2 ) )]
@@ -38,7 +38,7 @@ CoD.WarUtility.InitializeWarDataSource = function ( f1_arg0 )
 		for f1_local2 = 1, f1_local1[0x64BD41DBBCBF9D0], 1 do
 			DataSources.WarData.WarInfo.tierInfo[f1_local2] = {
 				icon = f1_local1[0x61AD72F0B9A1E3D .. f1_local2],
-				name = f1_local1[0x4BCADBA8E631B86 .. f1_local2]
+				name = f1_local1["name" .. f1_local2]
 			}
 		end
 		for f1_local2 = 1, f1_local1[0x433BE2DB6264E7E], 1 do
@@ -125,7 +125,7 @@ CoD.WarUtility.InitializeWarDataSource = function ( f1_arg0 )
 				f3_local0 = CoD.SafeGetModelValue( f1_local2, "team1.zone" .. f3_local2 ) or 0
 			end
 			if 0 < f3_local2 and 0 < f3_local0 then
-				f3_local0 = f3_local0 - tonumber( Engine.GetGametypeSetting( 0xA3759A7DF86C135 .. f3_local2 - 1 ) )
+				f3_local0 = f3_local0 - tonumber( Engine.GetGametypeSetting( "ticketsearnedatstagewin_" .. f3_local2 - 1 ) )
 			end
 		end
 		f1_local9:set( f3_local0 )

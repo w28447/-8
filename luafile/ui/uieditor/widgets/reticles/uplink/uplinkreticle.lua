@@ -12,7 +12,7 @@ CoD.uplinkReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	local reticleNew = LUI.UIImage.new( 0.5, 0.5, -98, 98, 0.5, 0.5, -98, 98 )
 	reticleNew:setAlpha( 0.9 )
 	reticleNew:setScale( 0.7, 0.7 )
-	reticleNew:setImage( RegisterImage( 0x85FBB920615FD67 ) )
+	reticleNew:setImage( RegisterImage( "uie_reticle_uplink" ) )
 	self:addElement( reticleNew )
 	self.reticleNew = reticleNew
 	

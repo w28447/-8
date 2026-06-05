@@ -15,7 +15,7 @@ CoD.ContractProgressBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local ProgressBarBacking = LUI.UIImage.new( 0, 0.78, 61, 61, 0, 0.33, 5, 5 )
 	ProgressBarBacking:setRGB( 0.28, 0.28, 0.28 )
-	ProgressBarBacking:setImage( RegisterImage( 0x1B69BB6285C5BBB ) )
+	ProgressBarBacking:setImage( RegisterImage( "uie_hud_core_loadout_panel1" ) )
 	ProgressBarBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x31E7B3C72564429 ) )
 	ProgressBarBacking:setShaderVector( 0, 0, 0, 0.55, 0.13 )
 	ProgressBarBacking:setShaderVector( 2, 0, 1, 0, 1 )
@@ -31,7 +31,7 @@ CoD.ContractProgressBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local ProgressBar = LUI.UIImage.new( 0, 0.78, 61, 61, 0, 0.33, 5, 5 )
 	ProgressBar:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	ProgressBar:setImage( RegisterImage( 0x1B69BB6285C5BBB ) )
+	ProgressBar:setImage( RegisterImage( "uie_hud_core_loadout_panel1" ) )
 	ProgressBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x31E7B3C72564429 ) )
 	ProgressBar:setShaderVector( 0, 0, 0, 0.55, 0.13 )
 	ProgressBar:setupNineSliceShader( 25, 4 )

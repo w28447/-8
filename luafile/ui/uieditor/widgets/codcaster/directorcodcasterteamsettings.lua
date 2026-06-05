@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/codcaster/codcasterteamidentityinformationpanel" )
 require( "ui/uieditor/widgets/customgames/customgames_optioncategorybutton" )
-require( "x64:48be5c6feaceeb4" )
+require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settinginfo" )
 require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settingslider" )
 require( "ui/uieditor/widgets/scrollbars/verticalcounter" )
 
@@ -59,13 +59,13 @@ CoD.DirectorCodCasterTeamSettings.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 		CoD.CodCasterUtility.UpdateTeamIdentity( self, f1_arg1, false )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ButtonListPC, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
+	f1_arg0:AddButtonCallbackFunction( ButtonListPC, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
 		CoD.GridAndListUtility.SetFocusToFirstSelectableItem( self.ButtonListPC )
-		SetControllerModelValue( f6_arg2, "customGamesEdit", false )
-		SetFocusToElement( self, "OptionCategoryListPC", f6_arg2 )
+		SetControllerModelValue( controller, "customGamesEdit", false )
+		SetFocusToElement( self, "OptionCategoryListPC", controller )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	ButtonListPC:subscribeToGlobalModel( f1_arg1, "PerController", "PlayerSettingsUpdate", function ( model )
@@ -118,24 +118,24 @@ CoD.DirectorCodCasterTeamSettings.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f11_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( OptionCategoryListPC, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		if IsElementPropertyValue( f12_arg0, "actionTeam", nil ) then
+	f1_arg0:AddButtonCallbackFunction( OptionCategoryListPC, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if IsElementPropertyValue( element, "actionTeam", nil ) then
 			ShowWidget( self.ButtonListPC )
-			SetCurrentElementAsActive( self, f12_arg0, f12_arg2 )
-			SetFocusToElement( self, "ButtonListPC", f12_arg2 )
+			SetCurrentElementAsActive( self, element, controller )
+			SetFocusToElement( self, "ButtonListPC", controller )
 			return true
-		elseif not IsElementPropertyValue( f12_arg0, "actionTeam", nil ) then
-			CoD.CodCasterUtility.OpenCodCasterEditTeamSettings( self, f12_arg0, f12_arg2 )
+		elseif not IsElementPropertyValue( element, "actionTeam", nil ) then
+			CoD.CodCasterUtility.OpenCodCasterEditTeamSettings( self, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		if IsElementPropertyValue( f13_arg0, "actionTeam", nil ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if IsElementPropertyValue( element, "actionTeam", nil ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif not IsElementPropertyValue( f13_arg0, "actionTeam", nil ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif not IsElementPropertyValue( element, "actionTeam", nil ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

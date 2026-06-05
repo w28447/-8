@@ -20,7 +20,7 @@ CoD.MeritOverlayManualLayoutVertical.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.Box2 = Box2
 	
 	local Box = LUI.UIImage.new( 0.5, 0.5, -198, 198, 0, 0, 287, 379 )
-	Box:setImage( RegisterImage( 0x2687DEDD4096817 ) )
+	Box:setImage( RegisterImage( "uie_ui_hud_wz_endgame_merits_total_box" ) )
 	self:addElement( Box )
 	self.Box = Box
 	

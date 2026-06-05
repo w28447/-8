@@ -20,7 +20,7 @@ CoD.PCWidgetUtility.VoiceChatChannelsOptions = {
 		value = 0
 	},
 	{
-		name = Engine[0xF9F1239CFD921FE]( 0x28E2EDC7107C3D6 ),
+		name = Engine[0xF9F1239CFD921FE]( "menu/voice_chat_team" ),
 		value = 2
 	}
 }
@@ -32,7 +32,7 @@ DataSources.VoiceChatChannelsSelection = {
 		if not f1_local1 then
 			f1_local1 = f1_local0:create( "VoiceChatChannelsSelection" )
 			local f1_local2 = f1_local1:create( "name" )
-			f1_local2:set( Engine[0xF9F1239CFD921FE]( 0x28E2EDC7107C3D6 ) )
+			f1_local2:set( Engine[0xF9F1239CFD921FE]( "menu/voice_chat_team" ) )
 			f1_local2 = f1_local1:create( "optionsDataSource" )
 			f1_local2:set( "VoiceChatChannelsSelectionOptions" )
 			f1_local2 = f1_local1:create( "isOpen" )
@@ -504,9 +504,9 @@ CoD.PCWidgetUtility.PrepareSliderBar = function ( f16_arg0, f16_arg1, f16_arg2, 
 	if f16_arg0.EditBox ~= nil then
 		local f16_local4 = 7
 		DisableKeyboardNavigationByElement( f16_arg0.EditBox )
-		CoD.Menu.AddButtonCallbackFunction( f16_arg2, f16_arg0, f16_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f26_arg0, f26_arg1, f26_arg2, f26_arg3 )
-			CoD.PCWidgetUtility.BringIntoView( f16_arg0, f26_arg2 )
-			f26_arg1:ChangeInputFocus( f26_arg2, f16_arg0.EditBox )
+		CoD.Menu.AddButtonCallbackFunction( f16_arg2, f16_arg0, f16_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, f26_arg3 )
+			CoD.PCWidgetUtility.BringIntoView( f16_arg0, controller )
+			menu:ChangeInputFocus( controller, f16_arg0.EditBox )
 			return true
 		end )
 		f16_arg0.__editBoxModel = f16_arg3:create( "textRepresentation" )
@@ -595,18 +595,18 @@ CoD.PCWidgetUtility.PrepareYesNoToggleButton = function ( f30_arg0, f30_arg1, f3
 			f31_local0 = f30_arg5.minValue:get()
 		end
 		
-		f30_arg4:AddButtonCallbackFunction( f30_arg1, f30_arg3, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f32_arg0, f32_arg1, f32_arg2, f32_arg3 )
+		f30_arg4:AddButtonCallbackFunction( f30_arg1, f30_arg3, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
 			f30_local0( true )
 			return true
 		end, false )
-		f30_arg4:AddButtonCallbackFunction( f30_arg2, f30_arg3, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f33_arg0, f33_arg1, f33_arg2, f33_arg3 )
+		f30_arg4:AddButtonCallbackFunction( f30_arg2, f30_arg3, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
 			f30_local0( false )
 			return true
 		end, false )
-		f30_arg4:AddButtonCallbackFunction( f30_arg0, f30_arg3, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f34_arg0, f34_arg1, f34_arg2, f34_arg3 )
+		f30_arg4:AddButtonCallbackFunction( f30_arg0, f30_arg3, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
 			return false
 		end, false )
-		f30_arg4:AddButtonCallbackFunction( f30_arg0, f30_arg3, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f35_arg0, f35_arg1, f35_arg2, f35_arg3 )
+		f30_arg4:AddButtonCallbackFunction( f30_arg0, f30_arg3, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, model )
 			f30_local0( not CoD.PCWidgetUtility.IsToggled( f30_arg0, nil ) )
 			return true
 		end, false )
@@ -675,11 +675,11 @@ CoD.PCWidgetUtility.PrepareMainAltKeyBinder = function ( f38_arg0, f38_arg1, f38
 		end
 	end
 	
-	f38_arg2:AddButtonCallbackFunction( f38_arg4, f38_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f40_arg0, f40_arg1, f40_arg2, f40_arg3 )
+	f38_arg2:AddButtonCallbackFunction( f38_arg4, f38_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		f38_arg0._bindKey( false )
 		return true
 	end, false )
-	f38_arg2:AddButtonCallbackFunction( f38_arg5, f38_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f41_arg0, f41_arg1, f41_arg2, f41_arg3 )
+	f38_arg2:AddButtonCallbackFunction( f38_arg5, f38_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		f38_arg0._bindKey( true )
 		return true
 	end, false )
@@ -698,7 +698,7 @@ CoD.PCWidgetUtility.PrepareMainAltKeyBinder = function ( f38_arg0, f38_arg1, f38
 		f38_arg2:AddButtonCallbackFunction( f38_arg5, f38_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], f38_local5, f38_local0 )
 	end
 	if not f38_arg0.__contextualPrepared then
-		f38_arg4:AddContextualMenuAction( f38_arg2, f38_arg1, 0x58B9A5DAE6B2AD6, function ( f43_arg0, f43_arg1, f43_arg2, f43_arg3 )
+		f38_arg4:AddContextualMenuAction( f38_arg2, f38_arg1, "options/unbind", function ( f43_arg0, f43_arg1, f43_arg2, f43_arg3 )
 			local f43_local0 = f43_arg0:getModel()
 			f43_local0 = f43_local0.bind_main:get()
 			if f43_local0 and f43_local0 ~= "" then
@@ -711,7 +711,7 @@ CoD.PCWidgetUtility.PrepareMainAltKeyBinder = function ( f38_arg0, f38_arg1, f38
 				
 			end
 		end )
-		f38_arg5:AddContextualMenuAction( f38_arg2, f38_arg1, 0x58B9A5DAE6B2AD6, function ( f45_arg0, f45_arg1, f45_arg2, f45_arg3 )
+		f38_arg5:AddContextualMenuAction( f38_arg2, f38_arg1, "options/unbind", function ( f45_arg0, f45_arg1, f45_arg2, f45_arg3 )
 			local f45_local0 = f45_arg0:getModel()
 			f45_local0 = f45_local0.bind_alt:get()
 			if f45_local0 and f45_local0 ~= "" then
@@ -780,7 +780,7 @@ CoD.PCWidgetUtility.PrepareMainAltKeyBinder = function ( f38_arg0, f38_arg1, f38
 								f47_local10 = DataSources.KeybindMessages.getModel( f38_arg1 )
 								f47_local10.keybindMessage:set( Engine[0xF9F1239CFD921FE]( 0x92F53A3665DC3A5, Engine.ToUpper( f47_local6 ), f47_local9 ) )
 							else
-								local f47_local10 = Engine[0xF9F1239CFD921FE]( CoD.PCOptionsUtility.CommandToXHash( f38_arg1, f47_local8[1] ) or 0x0 )
+								local f47_local10 = Engine[0xF9F1239CFD921FE]( CoD.PCOptionsUtility.CommandToXHash( f38_arg1, f47_local8[1] ) or "" )
 								local f47_local11 = DataSources.KeybindMessages.getModel( f38_arg1 )
 								f47_local11.keybindMessage:set( Engine[0xF9F1239CFD921FE]( 0xEB1FF40050E3938, Engine.ToUpper( f47_local6 ), f47_local10, f47_local9 ) )
 							end
@@ -1075,18 +1075,18 @@ CoD.PCWidgetUtility.ScrollToActiveElement = function ( f71_arg0, f71_arg1 )
 end
 
 CoD.PCWidgetUtility.AddScrollWheels = function ( f72_arg0, f72_arg1, f72_arg2 )
-	f72_arg0:AddButtonCallbackFunction( f72_arg2, f72_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELUP", function ( f73_arg0, f73_arg1, f73_arg2, f73_arg3 )
+	f72_arg0:AddButtonCallbackFunction( f72_arg2, f72_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELUP", function ( element, menu, controller, model )
 		f72_arg2.ScrollView.View:navigateItemUp()
 		return true
-	end, function ( f74_arg0, f74_arg1, f74_arg2 )
-		CoD.Menu.SetButtonLabel( f74_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MWHEELUP" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MWHEELUP" )
 		return false
 	end, false )
-	f72_arg0:AddButtonCallbackFunction( f72_arg2, f72_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELDOWN", function ( f75_arg0, f75_arg1, f75_arg2, f75_arg3, f75_arg4 )
+	f72_arg0:AddButtonCallbackFunction( f72_arg2, f72_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELDOWN", function ( element, menu, controller, model, f75_arg4 )
 		f72_arg2.ScrollView.View:navigateItemDown()
 		return true
-	end, function ( f76_arg0, f76_arg1, f76_arg2 )
-		CoD.Menu.SetButtonLabel( f76_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MWHEELDOWN" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MWHEELDOWN" )
 		return false
 	end, false )
 end
@@ -1171,7 +1171,8 @@ CoD.PCWidgetUtility.PrepareVScrollWidgetNavigation = function ( f80_arg0, f80_ar
 		if not f80_arg0.__activeList then
 			return false
 		end
-		local f83_local0, f83_local1 = false
+		local f83_local0 = false
+		local f83_local1 = nil
 		local f83_local2 = CoD.GetMouseFocus( f80_arg1 )
 		if f83_local2 ~= nil and f80_arg0.__activeList.activeWidget ~= f83_local2 and (not f80_arg0.__activeList.activeWidget or not f80_arg0.__activeList.activeWidget:isParentOf( f83_local2 )) then
 			if f80_arg0.__activeList.activeWidget then
@@ -1219,14 +1220,14 @@ CoD.PCWidgetUtility.PrepareVScrollWidgetNavigation = function ( f80_arg0, f80_ar
 		return true
 	end
 	
-	CoD.Menu.AddButtonCallbackFunction( f80_arg2, f80_arg0, f80_arg1, Enum.LUIButton[0x4B11D2B20C75A7F], "ui_navup", function ( f84_arg0, f84_arg1, f84_arg2, f84_arg3 )
+	CoD.Menu.AddButtonCallbackFunction( f80_arg2, f80_arg0, f80_arg1, Enum.LUIButton[0x4B11D2B20C75A7F], "ui_navup", function ( element, menu, controller, f84_arg3 )
 		if not f80_arg0.m_disableNavigation and (not (not f80_arg0.dpadDisabled or not IsDpadButton( f84_arg3 )) or f80_local4( f80_local0 )) then
 			return true
 		else
 			
 		end
 	end )
-	CoD.Menu.AddButtonCallbackFunction( f80_arg2, f80_arg0, f80_arg1, Enum.LUIButton[0xD4C15FE32148D3A], "ui_navdown", function ( f85_arg0, f85_arg1, f85_arg2, f85_arg3 )
+	CoD.Menu.AddButtonCallbackFunction( f80_arg2, f80_arg0, f80_arg1, Enum.LUIButton[0xD4C15FE32148D3A], "ui_navdown", function ( element, menu, controller, f85_arg3 )
 		if not f80_arg0.m_disableNavigation and (not (not f80_arg0.dpadDisabled or not IsDpadButton( f85_arg3 )) or f80_local4( f80_local1 )) then
 			return true
 		else
@@ -1246,11 +1247,11 @@ CoD.PCWidgetUtility.PrepareVScrollWidgetNavigation = function ( f80_arg0, f80_ar
 		end
 	end
 	
-	CoD.Menu.AddButtonCallbackFunction( f80_arg2, f80_arg0, f80_arg1, Enum.LUIButton[0x57783F8DA4AAEF], "ui_navleft", function ( f87_arg0, f87_arg1, f87_arg2, f87_arg3 )
+	CoD.Menu.AddButtonCallbackFunction( f80_arg2, f80_arg0, f80_arg1, Enum.LUIButton[0x57783F8DA4AAEF], "ui_navleft", function ( element, menu, controller, f87_arg3 )
 		if f80_arg0.m_disableNavigation then
 			return false
 		elseif CoD.PCOptionsUtility.OptionListFocusModelBehavior then
-			local f87_local0 = CoD.GetMouseFocus( f87_arg2 )
+			local f87_local0 = CoD.GetMouseFocus( controller )
 			while f87_local0 and not f87_local0.__navAction do
 				f87_local0 = f87_local0:getParent()
 			end
@@ -1262,11 +1263,11 @@ CoD.PCWidgetUtility.PrepareVScrollWidgetNavigation = function ( f80_arg0, f80_ar
 		end
 		return false
 	end )
-	CoD.Menu.AddButtonCallbackFunction( f80_arg2, f80_arg0, f80_arg1, Enum.LUIButton[0x571F08AD84807E0], "ui_navright", function ( f88_arg0, f88_arg1, f88_arg2, f88_arg3 )
+	CoD.Menu.AddButtonCallbackFunction( f80_arg2, f80_arg0, f80_arg1, Enum.LUIButton[0x571F08AD84807E0], "ui_navright", function ( element, menu, controller, f88_arg3 )
 		if f80_arg0.m_disableNavigation then
 			return false
 		elseif CoD.PCOptionsUtility.OptionListFocusModelBehavior then
-			local f88_local0 = CoD.GetMouseFocus( f88_arg2 )
+			local f88_local0 = CoD.GetMouseFocus( controller )
 			while f88_local0 and not f88_local0.__navAction do
 				f88_local0 = f88_local0:getParent()
 			end
@@ -1407,16 +1408,16 @@ CoD.PCWidgetUtility.SetupScrollbar = function ( f94_arg0, f94_arg1, f94_arg2, f9
 			element.m_focusable = false
 		end )
 	end
-	f94_arg2:AddButtonCallbackFunction( f94_arg5, f94_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELDOWN", function ( f104_arg0, f104_arg1, f104_arg2, f104_arg3 )
+	f94_arg2:AddButtonCallbackFunction( f94_arg5, f94_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELDOWN", function ( element, menu, controller, model )
 		CoD.PCWidgetUtility.ScrollVerticalByAmount( f94_local4, f94_arg0.wheelScrollUnit )
 		return true
-	end, function ( f105_arg0, f105_arg1, f105_arg2 )
+	end, function ( element, menu, controller )
 		return false
 	end, false )
-	f94_arg2:AddButtonCallbackFunction( f94_arg5, f94_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELUP", function ( f106_arg0, f106_arg1, f106_arg2, f106_arg3 )
+	f94_arg2:AddButtonCallbackFunction( f94_arg5, f94_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELUP", function ( element, menu, controller, model )
 		CoD.PCWidgetUtility.ScrollVerticalByAmount( f94_local4, -f94_arg0.wheelScrollUnit )
 		return true
-	end, function ( f107_arg0, f107_arg1, f107_arg2 )
+	end, function ( element, menu, controller )
 		return false
 	end, false )
 end
@@ -1761,14 +1762,14 @@ CoD.PCWidgetUtility.PrepareVScrollWidget = function ( f117_arg0, f117_arg1, f117
 		return true
 	end )
 	CoD.PCWidgetUtility.SetupScrollbar( f117_arg0, f117_arg1, f117_arg2, false, false )
-	f117_arg2:AddButtonCallbackFunction( f117_arg0.ScrollView, f117_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f128_arg0, f128_arg1, f128_arg2, f128_arg3 )
-		if CoD.GetMouseFocus( f128_arg2 ) then
-			local f128_local0 = CoD.GetMouseFocus( f128_arg2 )
+	f117_arg2:AddButtonCallbackFunction( f117_arg0.ScrollView, f117_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
+		if CoD.GetMouseFocus( controller ) then
+			local f128_local0 = CoD.GetMouseFocus( controller )
 			while f128_local0 and not f128_local0.gridInfoTable do
 				f128_local0 = f128_local0:getParent()
 			end
 			if f128_local0 then
-				SetCurrentElementAsActive( f117_arg0, f128_local0, f128_arg2 )
+				SetCurrentElementAsActive( f117_arg0, f128_local0, controller )
 			end
 			return true
 		else
@@ -1877,22 +1878,22 @@ CoD.PCWidgetUtility.PrepareCategoryButton = function ( f137_arg0, f137_arg1, f13
 	end
 	assert( f137_arg3.categoryId )
 	local f137_local0 = f137_arg3.categoryId:get()
-	f137_arg2:AddButtonCallbackFunction( f137_arg0, f137_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f138_arg0, f138_arg1, f138_arg2, f138_arg3 )
-		CoD.PCOptionsUtility.SetCurrentCategoryModel( f138_arg2, f137_local0 )
-		f137_arg0:playSound( "list_right", f138_arg2 )
+	f137_arg2:AddButtonCallbackFunction( f137_arg0, f137_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
+		CoD.PCOptionsUtility.SetCurrentCategoryModel( controller, f137_local0 )
+		f137_arg0:playSound( "list_right", controller )
 		return true
-	end, function ( f139_arg0, f139_arg1, f139_arg2 )
+	end, function ( element, menu, controller )
 		return false
 	end, false )
 	if CoD.PCWidgetUtility.CategoryScrollAndFocus then
 		DisableKeyboardNavigationByElement( f137_arg0 )
 	end
 	if f137_local0 >= 0 and f137_local0 <= 9 then
-		f137_arg2:AddButtonCallbackFunction( f137_arg2, f137_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], tostring( f137_local0 ), function ( f140_arg0, f140_arg1, f140_arg2, f140_arg3 )
+		f137_arg2:AddButtonCallbackFunction( f137_arg2, f137_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], tostring( f137_local0 ), function ( element, menu, controller, model )
 			PlaySoundSetSound( f137_arg0, "list_right" )
-			CoD.PCOptionsUtility.SetCurrentCategoryModel( f140_arg2, f137_local0 )
+			CoD.PCOptionsUtility.SetCurrentCategoryModel( controller, f137_local0 )
 			return true
-		end, function ( f141_arg0, f141_arg1, f141_arg2 )
+		end, function ( element, menu, controller )
 			return false
 		end, false )
 	end
@@ -2032,21 +2033,21 @@ CoD.PCWidgetUtility.PrepareCyclingList = function ( f151_arg0, f151_arg1, f151_a
 		end
 		
 		CoD.PCWidgetUtility.UpdateOptionList( f151_arg0, f151_arg1, true )
-		f151_arg2:AddButtonCallbackFunction( f151_arg4.center, f151_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f154_arg0, f154_arg1, f154_arg2 )
+		f151_arg2:AddButtonCallbackFunction( f151_arg4.center, f151_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller )
 			return false
 		end, false )
-		f151_arg2:AddButtonCallbackFunction( f151_arg4.center, f151_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f155_arg0, f155_arg1, f155_arg2 )
+		f151_arg2:AddButtonCallbackFunction( f151_arg4.center, f151_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller )
 			f151_local0( f151_arg0._getCurrentSelection() + 1 )
 			return true
 		end, false )
-		f151_arg2:AddButtonCallbackFunction( f151_arg4.left, f151_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f156_arg0, f156_arg1, f156_arg2 )
+		f151_arg2:AddButtonCallbackFunction( f151_arg4.left, f151_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller )
 			local f156_local0 = f151_arg0._getCurrentSelection()
 			if f156_local0 > 1 then
 				f151_local0( f156_local0 - 1 )
 			end
 			return true
 		end, false )
-		f151_arg2:AddButtonCallbackFunction( f151_arg4.right, f151_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f157_arg0, f157_arg1, f157_arg2 )
+		f151_arg2:AddButtonCallbackFunction( f151_arg4.right, f151_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller )
 			local f157_local0 = f151_arg0._getCurrentSelection()
 			if f157_local0 < #f151_arg0._optionProperties._options then
 				f151_local0( f157_local0 + 1 )
@@ -2068,10 +2069,10 @@ CoD.PCWidgetUtility.PrepareCyclingList = function ( f151_arg0, f151_arg1, f151_a
 			f158_local1 = 1
 		end
 		
-		f151_arg2:AddButtonCallbackFunction( f151_arg0, f151_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f159_arg0, f159_arg1, f159_arg2 )
+		f151_arg2:AddButtonCallbackFunction( f151_arg0, f151_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller )
 			return false
 		end, false )
-		f151_arg2:AddButtonCallbackFunction( f151_arg0, f151_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f160_arg0, f160_arg1, f160_arg2 )
+		f151_arg2:AddButtonCallbackFunction( f151_arg0, f151_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller )
 			f151_local0( f151_arg0._getCurrentSelection() + 1 )
 			return true
 		end, false )
@@ -2079,13 +2080,13 @@ CoD.PCWidgetUtility.PrepareCyclingList = function ( f151_arg0, f151_arg1, f151_a
 end
 
 CoD.PCWidgetUtility.PrepareDropdownItem = function ( f161_arg0, f161_arg1, f161_arg2, f161_arg3 )
-	f161_arg2:AddButtonCallbackFunction( f161_arg0, f161_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f162_arg0, f162_arg1, f162_arg2 )
+	f161_arg2:AddButtonCallbackFunction( f161_arg0, f161_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller )
 		local f162_local0 = f161_arg0
 		local f162_local1 = f162_local0
 		f162_local0 = f162_local0.dispatchEventToParent
 		local f162_local2 = {
 			name = "onDropdownItemChanged",
-			controller = f162_arg2
+			controller = controller
 		}
 		local f162_local3 = f161_arg0:getModel()
 		f162_local2.value = f162_local3.value:get()
@@ -2096,17 +2097,17 @@ end
 
 CoD.PCWidgetUtility.PrepareHeistBuyMenuButtons = function ( f163_arg0, f163_arg1, f163_arg2 )
 	assert( f163_arg0.BountyHunterBuyInternal and f163_arg0.BountyHunterOpenPrompt )
-	f163_arg2:AddButtonCallbackFunction( f163_arg0, f163_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "+activate", function ( f164_arg0, f164_arg1, f164_arg2 )
-		if not IsVisibilityBitSet( f164_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and IsMouseOrKeyboard( f164_arg2 ) and not IsDemoPlaying() then
-			CoD.BountyHunterUtility.ToggleBuyMenuVisible( f163_arg0, f164_arg2, f163_arg0.BountyHunterBuyInternal, f163_arg0.BountyHunterOpenPrompt, f163_arg0.PCBackButton )
+	f163_arg2:AddButtonCallbackFunction( f163_arg0, f163_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "+activate", function ( element, menu, controller )
+		if not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and IsMouseOrKeyboard( controller ) and not IsDemoPlaying() then
+			CoD.BountyHunterUtility.ToggleBuyMenuVisible( f163_arg0, controller, f163_arg0.BountyHunterBuyInternal, f163_arg0.BountyHunterOpenPrompt, f163_arg0.PCBackButton )
 			return true
 		else
 			
 		end
 	end )
-	f163_arg2:AddButtonCallbackFunction( f163_arg0, f163_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ESCAPE", function ( f165_arg0, f165_arg1, f165_arg2 )
-		if not IsVisibilityBitSet( f165_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and CoD.BountyHunterUtility.IsBuyMenuVisible( f163_arg0.BountyHunterBuyInternal ) and IsMouseOrKeyboard( f165_arg2 ) and not IsDemoPlaying() then
-			CoD.BountyHunterUtility.ToggleBuyMenuVisible( f163_arg0, f165_arg2, f163_arg0.BountyHunterBuyInternal, f163_arg0.BountyHunterOpenPrompt, f163_arg0.PCBackButton )
+	f163_arg2:AddButtonCallbackFunction( f163_arg0, f163_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ESCAPE", function ( element, menu, controller )
+		if not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and CoD.BountyHunterUtility.IsBuyMenuVisible( f163_arg0.BountyHunterBuyInternal ) and IsMouseOrKeyboard( controller ) and not IsDemoPlaying() then
+			CoD.BountyHunterUtility.ToggleBuyMenuVisible( f163_arg0, controller, f163_arg0.BountyHunterBuyInternal, f163_arg0.BountyHunterOpenPrompt, f163_arg0.PCBackButton )
 			return true
 		else
 			
@@ -2372,7 +2373,7 @@ end
 
 CoD.PCWidgetUtility.PrepareDirectorQuitButton = function ( f185_arg0, f185_arg1 )
 	local f185_local0 = function ( f186_arg0, f186_arg1 )
-		if Dvar[0x7119D0EEFF392AB]:get() == 0 then
+		if Dvar.r_fullscreen:get() == 0 then
 			f186_arg0:hide()
 		else
 			f186_arg0:show()
@@ -2572,10 +2573,10 @@ CoD.PCWidgetUtility.PrepareExpander = function ( f194_arg0, f194_arg1, f194_arg2
 			f201_local0 = f201_local1
 		end
 	end )
-	f194_arg2:AddButtonCallbackFunction( f194_arg5, f194_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f202_arg0, f202_arg1, f202_arg2, f202_arg3 )
+	f194_arg2:AddButtonCallbackFunction( f194_arg5, f194_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		f194_arg3.isOpen:set( not f194_arg3.isOpen:get() )
 		f194_arg4.updateSize()
-		f194_arg0:playSound( "toggle", f202_arg2 )
+		f194_arg0:playSound( "toggle", controller )
 		if f194_arg3.isOpen:get() then
 			local f202_local0 = f194_arg4:getFirstSelectableItem( true )
 			if Engine[0x267ACA658A43FBD]() then
@@ -2583,7 +2584,7 @@ CoD.PCWidgetUtility.PrepareExpander = function ( f194_arg0, f194_arg1, f194_arg2
 				if not f202_local1:isFocusable() then
 					f202_local1 = CoD.BaseUtility.FindSingleFocusableDescendant( f202_local1, true )
 				end
-				f202_arg1:ChangeFocusedElement( f202_arg2, f202_local1, true )
+				menu:ChangeFocusedElement( controller, f202_local1, true )
 			end
 		else
 			f194_arg0.gridInfoTable.parentGrid:setActiveItem( f194_arg0 )
@@ -2592,7 +2593,7 @@ CoD.PCWidgetUtility.PrepareExpander = function ( f194_arg0, f194_arg1, f194_arg2
 				if not f202_local0:isFocusable() then
 					f202_local0 = CoD.BaseUtility.FindSingleFocusableDescendant( f202_local0, true )
 				end
-				f202_arg1:ChangeFocusedElement( f202_arg2, f202_local0, true )
+				menu:ChangeFocusedElement( controller, f202_local0, true )
 			end
 		end
 		return true
@@ -2710,12 +2711,12 @@ CoD.PCWidgetUtility.RegisterInGameChatEventActivated = function ( f215_arg0, f21
 			Engine.LockInput( f215_arg0, false, Enum[0x9061B48916076D5][0x2334BDF2E4222EA] )
 		end
 	end )
-	CoD.Menu.AddButtonCallbackFunction( f215_arg1, f215_arg1, f215_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f217_arg0, f217_arg1, f217_arg2, f217_arg3 )
-		if not CoD.PCWidgetUtility.CanShowMenuStyleChat( f217_arg2 ) then
-			local f217_local0 = CoD.ChatClientUtility.GetInGameChattingModel( f217_arg2 )
-			if f217_local0:get() and not f215_arg2:IsMouseInsideElement( f217_arg2 ) then
+	CoD.Menu.AddButtonCallbackFunction( f215_arg1, f215_arg1, f215_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, f217_arg3 )
+		if not CoD.PCWidgetUtility.CanShowMenuStyleChat( controller ) then
+			local f217_local0 = CoD.ChatClientUtility.GetInGameChattingModel( controller )
+			if f217_local0:get() and not f215_arg2:IsMouseInsideElement( controller ) then
 				f217_local0:set( false )
-				BlockGameFromKeyEvent( f217_arg2 )
+				BlockGameFromKeyEvent( controller )
 				return true
 			else
 				return false
@@ -2891,20 +2892,20 @@ end
 
 CoD.PCWidgetUtility.SetupLeftClickableChatPlayerName = function ( f235_arg0, f235_arg1, f235_arg2 )
 	f235_arg0.handleMouseButton = true
-	CoD.Menu.AddButtonCallbackFunction( f235_arg2, f235_arg0, f235_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f236_arg0, f236_arg1, f236_arg2, f236_arg3 )
-		local f236_local0 = f236_arg0:getModel()
+	CoD.Menu.AddButtonCallbackFunction( f235_arg2, f235_arg0, f235_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, f236_arg3 )
+		local f236_local0 = element:getModel()
 		local f236_local1 = f236_local0.xuid:get()
 		local f236_local2 = nil
-		if Engine.GetXUID64( f236_arg2 ) == f236_local1 then
+		if Engine.GetXUID64( controller ) == f236_local1 then
 			f236_local2 = f236_local0.chId:get()
 			if Engine[0x5884871F4FF3ACA]( f236_local2 ) ~= Enum[0xF6296F5D7A38AD2][0x5E57997D82BCBD1] then
 				f236_local2 = nil
 			end
 		else
-			f236_local2 = CoD.ChatClientUtility.GetAndJoinWhisperChannelIdByXuid( f236_arg2, f236_local1 )
+			f236_local2 = CoD.ChatClientUtility.GetAndJoinWhisperChannelIdByXuid( controller, f236_local1 )
 		end
 		if f236_local2 then
-			local f236_local3 = CoD.ChatClientUtility.GetInputChannelModel( f236_arg2 )
+			local f236_local3 = CoD.ChatClientUtility.GetInputChannelModel( controller )
 			f236_local3:set( f236_local2 )
 		end
 	end )
@@ -3274,7 +3275,7 @@ CoD.PCWidgetUtility.PlayerContextualMenuExtraOptionsData = {
 		enableFct = nil
 	},
 	{
-		name = 0x6328062E8FE88F1,
+		name = "menu/playeraccount",
 		id = "playerAccount",
 		clickFct = CoD.PCWidgetUtility.OpenPlayerAccount,
 		visibilityFct = CoD.PCWidgetUtility.ShowOpenPlayerAccount,
@@ -3531,7 +3532,7 @@ CoD.PCWidgetUtility.ReportDropdownOptions = {
 		end
 	},
 	{
-		name = Engine[0xF9F1239CFD921FE]( 0x6BD8567C603F5A3 ),
+		name = Engine[0xF9F1239CFD921FE]( "menu/report_user_offensive_caps" ),
 		value = 2,
 		description = Engine[0xF9F1239CFD921FE]( 0xB804A7D12B045B3 ),
 		confirmation = Engine[0xF9F1239CFD921FE]( 0xBF3C356602228DA ),
@@ -3558,11 +3559,11 @@ CoD.PCWidgetUtility.ReportDropdownOptions = {
 		end
 	},
 	{
-		name = Engine[0xF9F1239CFD921FE]( 0x5919C649561B63C ),
+		name = Engine[0xF9F1239CFD921FE]( "menu/report_user_offensive_emblem_caps" ),
 		value = 4,
 		description = Engine[0xF9F1239CFD921FE]( 0x4D8434BEFFB6730 ),
 		confirmation = Engine[0xF9F1239CFD921FE]( 0x68497C5E58F25BF ),
-		chatConfirmation = Engine[0xF9F1239CFD921FE]( 0x47FE6FBD71AF9CF ),
+		chatConfirmation = Engine[0xF9F1239CFD921FE]( "menu/reportplayer_offensive_emblem_reported" ),
 		reason = -1,
 		source = Enum[0xE4996868826FAEE][0xDF74048DC41F55A],
 		action = function ( f292_arg0, f292_arg1 )
@@ -3571,11 +3572,11 @@ CoD.PCWidgetUtility.ReportDropdownOptions = {
 		end
 	},
 	{
-		name = Engine[0xF9F1239CFD921FE]( 0xCE324B8FB722A9B ),
+		name = Engine[0xF9F1239CFD921FE]( "menu/report_user_offensive_paintjob_caps" ),
 		value = 5,
 		description = Engine[0xF9F1239CFD921FE]( 0xD69EE51ABD16407 ),
 		confirmation = Engine[0xF9F1239CFD921FE]( 0xAB7F2F75ADF7E86 ),
-		chatConfirmation = Engine[0xF9F1239CFD921FE]( 0x2FDE62E23ABC28 ),
+		chatConfirmation = Engine[0xF9F1239CFD921FE]( "menu/reportplayer_offensive_paintjob_reported" ),
 		reason = -1,
 		source = Enum[0xE4996868826FAEE][0xDF74048DC41F55A],
 		action = function ( f293_arg0, f293_arg1 )
@@ -3584,11 +3585,11 @@ CoD.PCWidgetUtility.ReportDropdownOptions = {
 		end
 	},
 	{
-		name = Engine[0xF9F1239CFD921FE]( 0x2519B57188045C6 ),
+		name = Engine[0xF9F1239CFD921FE]( "menu/report_user_cheater_caps" ),
 		value = 6,
 		description = Engine[0xF9F1239CFD921FE]( 0xE3C15A99F65706 ),
 		confirmation = Engine[0xF9F1239CFD921FE]( 0x34B1B14D7769F7D ),
-		chatConfirmation = Engine[0xF9F1239CFD921FE]( 0x33A182AC50FF0D2 ),
+		chatConfirmation = Engine[0xF9F1239CFD921FE]( "menu/reportplayer_cheating_reported" ),
 		reason = -1,
 		source = Enum[0xE4996868826FAEE][0xDF74048DC41F55A],
 		action = function ( f294_arg0, f294_arg1 )
@@ -3602,7 +3603,7 @@ CoD.PCWidgetUtility.ReportDropdownOptions = {
 		value = 7,
 		description = Engine[0xF9F1239CFD921FE]( 0xF85E8086F061446 ),
 		confirmation = Engine[0xF9F1239CFD921FE]( 0xFBD108477DE79BD ),
-		chatConfirmation = Engine[0xF9F1239CFD921FE]( 0x1E6CE0A4E16A923 ),
+		chatConfirmation = Engine[0xF9F1239CFD921FE]( "menu/reportplayer_booster_reported" ),
 		reason = -1,
 		source = Enum[0xE4996868826FAEE][0xDF74048DC41F55A],
 		action = function ( f295_arg0, f295_arg1 )
@@ -3661,7 +3662,7 @@ CoD.PCWidgetUtility.ReportReasonToDescription = function ( f301_arg0, f301_arg1 
 		local f301_local2 = f301_local0.currentValue
 		return f301_local1[REG4:get()].description
 	else
-		return Engine[0xF9F1239CFD921FE]( 0x804C18CC814A475 )
+		return Engine[0xF9F1239CFD921FE]( "menu/report_player_desc" )
 	end
 end
 
@@ -3746,22 +3747,22 @@ CoD.PCWidgetUtility.PrepareOpenButton = function ( f310_arg0, f310_arg1, f310_ar
 		return 
 	else
 		local f310_local0 = f310_arg4.openMenuName:get()
-		f310_arg3:AddButtonCallbackFunction( f310_arg1, f310_arg2, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f311_arg0, f311_arg1, f311_arg2, f311_arg3 )
+		f310_arg3:AddButtonCallbackFunction( f310_arg1, f310_arg2, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 			if not f310_arg0._unavailable then
 				PlaySoundSetSound( f310_arg0, "gain_focus" )
-				OpenOverlay( f311_arg1, f310_local0, f311_arg2 )
+				OpenOverlay( menu, f310_local0, controller )
 			end
 			return true
-		end, function ( f312_arg0, f312_arg1, f312_arg2 )
+		end, function ( element, menu, controller )
 			return false
 		end, false )
-		f310_arg3:AddButtonCallbackFunction( f310_arg0, f310_arg2, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f313_arg0, f313_arg1, f313_arg2, f313_arg3 )
+		f310_arg3:AddButtonCallbackFunction( f310_arg0, f310_arg2, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, model )
 			if not f310_arg0._unavailable then
 				PlaySoundSetSound( f310_arg0, "gain_focus" )
-				OpenOverlay( f313_arg1, f310_local0, f313_arg2 )
+				OpenOverlay( menu, f310_local0, controller )
 			end
 			return true
-		end, function ( f314_arg0, f314_arg1, f314_arg2 )
+		end, function ( element, menu, controller )
 			return false
 		end, false )
 	end
@@ -3802,7 +3803,7 @@ DataSources.OptionControlKeyBindingsDropDown = {
 		if not f315_local1 then
 			f315_local1 = f315_local0:create( "OptionControlKeyBindingsDropDown" )
 			local f315_local2 = f315_local1:create( "name" )
-			f315_local2:set( Engine[0xF9F1239CFD921FE]( 0xFD7B83733B5E4F1 ) )
+			f315_local2:set( Engine[0xF9F1239CFD921FE]( "options/bindings_title" ) )
 			f315_local2 = f315_local1:create( "optionsDataSource" )
 			f315_local2:set( "OptionControlKeyBindingsDropDownList" )
 			f315_local2 = f315_local1:create( "isOpen" )
@@ -4149,8 +4150,8 @@ end
 
 CoD.PCWidgetUtility.SetupEmptyFocusableTooltip = function ( f356_arg0, f356_arg1, f356_arg2, f356_arg3 )
 	local f356_local0 = Engine.CreateModel( Engine.GetModelForController( f356_arg1 ), "EmptyFocusableTooltip" )
-	Engine.SetModelValue( Engine.CreateModel( f356_local0, "name" ), 0x0 )
-	Engine.SetModelValue( Engine.CreateModel( f356_local0, "detailedDescription" ), Engine.Localize( 0x0 ) )
+	Engine.SetModelValue( Engine.CreateModel( f356_local0, "name" ), "" )
+	Engine.SetModelValue( Engine.CreateModel( f356_local0, "detailedDescription" ), Engine.Localize( "" ) )
 	Engine.SetModelValue( Engine.CreateModel( f356_local0, "tooltipArchetype" ), CoD.FreeCursorUtility.TooltipArchetypes.FEATURE_TITLE )
 	f356_arg0:setModel( f356_local0, f356_arg1 )
 	f356_arg0:registerEventHandler( "gain_focus", function ( element, event )
@@ -4171,8 +4172,8 @@ CoD.PCWidgetUtility.SetupEmptyFocusableTooltip = function ( f356_arg0, f356_arg1
 		elseif element.super.loseFocus then
 			f358_local0 = element.super:loseFocus( event )
 		end
-		Engine.SetModelValue( Engine.CreateModel( f356_local0, "name" ), 0x0 )
-		Engine.SetModelValue( Engine.CreateModel( f356_local0, "detailedDescription" ), Engine.Localize( 0x0 ) )
+		Engine.SetModelValue( Engine.CreateModel( f356_local0, "name" ), "" )
+		Engine.SetModelValue( Engine.CreateModel( f356_local0, "detailedDescription" ), Engine.Localize( "" ) )
 		return f358_local0
 	end )
 end

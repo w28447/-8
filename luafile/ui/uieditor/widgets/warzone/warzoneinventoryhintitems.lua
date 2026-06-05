@@ -32,7 +32,7 @@ CoD.WarzoneInventoryHintItems.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local backingImage3 = LUI.UIImage.new( 0.5, 0.5, -32, 32, 0.5, 0.5, -32, 32 )
 	backingImage3:setRGB( 0.51, 0.51, 0.51 )
-	backingImage3:setImage( RegisterImage( 0xBE388304168E99F ) )
+	backingImage3:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_qe_dpad_down" ) )
 	self:addElement( backingImage3 )
 	self.backingImage3 = backingImage3
 	
@@ -198,7 +198,7 @@ CoD.WarzoneInventoryHintItems.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	EMP = LUI.UIImage.new( 0, 0, 6, 94, 0, 0, 7, 91 )
 	EMP:setAlpha( 0 )
 	EMP:setImage( RegisterImage( 0xB3436B57B647EA3 ) )
-	EMP:setMaterial( LUI.UIImage.GetCachedMaterial( 0xC284ECCBDADEF0B ) )
+	EMP:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_emp" ) )
 	EMP:setShaderVector( 0, 35.93, 0, 0, 0 )
 	EMP:setShaderVector( 1, 0.83, 0, 0, 0 )
 	EMP:setShaderVector( 2, 0.49, 0, 0, 0 )

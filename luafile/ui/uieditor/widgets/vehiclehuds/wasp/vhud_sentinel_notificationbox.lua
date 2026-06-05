@@ -10,7 +10,7 @@ CoD.vhud_sentinel_NotificationBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local NotificationAltBox = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NotificationAltBox:setAlpha( 0.08 )
 	NotificationAltBox:setZoom( -20 )
-	NotificationAltBox:setImage( RegisterImage( 0x5D6174F532A5982 ) )
+	NotificationAltBox:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_notificationbox" ) )
 	NotificationAltBox:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	NotificationAltBox:setShaderVector( 0, 0, 0, 0, 0 )
 	NotificationAltBox:setupNineSliceShader( 27, 15 )
@@ -18,7 +18,7 @@ CoD.vhud_sentinel_NotificationBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.NotificationAltBox = NotificationAltBox
 	
 	local NotificationAltBox0 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	NotificationAltBox0:setImage( RegisterImage( 0x5D6174F532A5982 ) )
+	NotificationAltBox0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_notificationbox" ) )
 	NotificationAltBox0:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	NotificationAltBox0:setShaderVector( 0, 0, 0, 0, 0 )
 	NotificationAltBox0:setupNineSliceShader( 27, 15 )
@@ -27,9 +27,9 @@ CoD.vhud_sentinel_NotificationBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local SignalText = LUI.UIText.new( 0.5, 0.5, -150, 150, 0.5, 0.5, -12, 12 )
 	SignalText:setRGB( 0.6, 0.82, 0.91 )
-	SignalText:setText( Engine[0xF9F1239CFD921FE]( 0x74F45BCDE2B3C58 ) )
+	SignalText:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_signal" ) )
 	SignalText:setTTF( "default" )
-	SignalText:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD756CD9A5F1F1B4 ) )
+	SignalText:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration_cheap_blur" ) )
 	SignalText:setShaderVector( 0, 0, 1, 0, 0 )
 	SignalText:setShaderVector( 1, 0, 0, 0, 0 )
 	SignalText:setShaderVector( 2, 0, 0, 0, 0 )

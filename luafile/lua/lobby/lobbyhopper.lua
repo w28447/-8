@@ -25,7 +25,7 @@ Lobby.Hopper.UpdateLobbyData = function ( f1_arg0, f1_arg1 )
 		Lobby.Timer.SetDedicatedDelayedCMD( Lobby.Timer.LOBBY_DEDICATED_CMD.INVALID_CMD )
 		f1_local0 = 2
 	end
-	Engine.PrintWarning( Enum[0x7A63DCD561B0FA8][0x59962D5EF982597], "Updating Lobby Data for Target: " .. f1_local3[0x4BCADBA8E631B86] .. "\n" )
+	Engine.PrintWarning( Enum[0x7A63DCD561B0FA8][0x59962D5EF982597], "Updating Lobby Data for Target: " .. f1_local3.name .. "\n" )
 	LobbyVM.OnLobbySettings( {
 		toTarget = f1_local3,
 		skipSwitchMode = true,
@@ -39,8 +39,8 @@ Lobby.Hopper.UpdateLobbyData = function ( f1_arg0, f1_arg1 )
 		Lobby.Timer.HostingLobby( {
 			controller = f1_local4,
 			lobbyType = f1_local3.LobbyType,
-			mainMode = f1_local3["mainmode"],
-			lobbyTimerType = f1_local3[0x558B67A321D1120]
+			mainMode = f1_local3.mainmode,
+			lobbyTimerType = f1_local3.lobbytimertype
 		} )
 	else
 		Lobby.Timer.HostingLobbyEnd( {
@@ -79,7 +79,7 @@ Lobby.Hopper.OnClientJoin = function ( f2_arg0 )
 			LuaUtils.SetQuickplayPlaylistID( f2_local0 )
 			Dvar[0x5B789559A59177]:set( f2_local0 )
 			Dvar[0xA96CE8EF5319D80]:set( Lobby.Matchmaking.GetMapPackBits( f2_arg0.dlcBits, f2_local0 ) )
-			Engine[0x41D81D6B58AAF3F]( Enum.LobbyType[0x92676CF5B6FCD43], Dvar[0x96545C72F0E4FE4]:get() )
+			Engine[0x41D81D6B58AAF3F]( Enum.LobbyType[0x92676CF5B6FCD43], Dvar.party_maxplayers:get() )
 			Lobby.Matchmaking.SetSkillWeight( 0.01 )
 			Lobby.Matchmaking.UpdateAdvertising( " hopper unpark " )
 			Lobby.Hopper.hopperState = Lobby.Hopper.HOPPER_STATE.UNPARKED

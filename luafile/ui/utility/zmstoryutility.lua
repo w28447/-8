@@ -26,7 +26,7 @@ end )
 CoD.ZMStoryUtility.GetCurrentMapStory = function ()
 	local f2_local0 = function ( f3_arg0 )
 		if f3_arg0 and CoD.mapsTable[f3_arg0] then
-			return CoD.mapsTable[f3_arg0][0xA3627D705B66CDE] or 0
+			return CoD.mapsTable[f3_arg0].storyloadouttype or 0
 		else
 			
 		end
@@ -37,11 +37,11 @@ CoD.ZMStoryUtility.GetCurrentMapStory = function ()
 		local f2_local2 = Engine.GetGlobalModel()
 		f2_local2 = f2_local2:create( "MapVote.mapVoteMapNext" )
 		f2_local1 = f2_local2:get()
-		if not f2_local1 or f2_local1 == 0x0 then
+		if not f2_local1 or f2_local1 == "" then
 			local f2_local3 = Engine.GetGlobalModel()
 			f2_local3 = f2_local3:create( "lobbyRoot.selectedMapId" )
 			f2_local1 = f2_local3:get()
-			if not f2_local1 or f2_local1 == 0x0 then
+			if not f2_local1 or f2_local1 == "" then
 				f2_local1 = Engine[0xC53F8D38DF9042B]( Engine[0xE67E7253CC272C9]() )
 			end
 		end
@@ -70,7 +70,7 @@ CoD.ZMStoryUtility.IsUnlockableItemAvailableInSelectedStory = function ( f4_arg0
 end
 
 CoD.ZMStoryUtility.SetSelectedStoryOnLoad = function ()
-	local f5_local0 = CoD.BaseUtility.GetMapValue( Engine.GetCurrentMap(), 0xA3627D705B66CDE )
+	local f5_local0 = CoD.BaseUtility.GetMapValue( Engine.GetCurrentMap(), "storyloadouttype" )
 	if f5_local0 then
 		Engine[0x337129162C820FB]( f5_local0 )
 	end
@@ -114,10 +114,10 @@ CoD.ZMStoryUtility.GenerateCharacterToStoryTable = function ()
 		return 
 	end
 	for f9_local8, f9_local9 in pairs( CoD.MapUtility.MapsTable ) do
-		if f9_local9.session_mode == Enum.eModes[0x3723205FAE52C4A] and f9_local9[0xA3627D705B66CDE] and f9_local9.zmCharacters then
+		if f9_local9.session_mode == Enum.eModes.mode_zombies and f9_local9.storyloadouttype and f9_local9.zmCharacters then
 			for f9_local6, f9_local7 in ipairs( f9_local9.zmCharacters ) do
 				if f9_local7.characterIndex then
-					CoD.ZMStoryUtility.CharacterIndexToStory[f9_local7.characterIndex] = f9_local9[0xA3627D705B66CDE]
+					CoD.ZMStoryUtility.CharacterIndexToStory[f9_local7.characterIndex] = f9_local9.storyloadouttype
 				end
 			end
 		end

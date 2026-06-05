@@ -68,7 +68,7 @@ CoD.DirectorConfigButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	ConfigInternal.LeaderActivityText:setAlpha( 0 )
 	ConfigInternal.LeaderActivityText:setText( "" )
 	ConfigInternal.Header:setAlpha( 0 )
-	ConfigInternal.Header:setText( LocalizeToUpperString( 0x0 ) )
+	ConfigInternal.Header:setText( LocalizeToUpperString( "" ) )
 	ConfigInternal.MiddleText:setText( "" )
 	ConfigInternal:linkToElementModel( self, "iconBackground", true, function ( model )
 		local f8_local0 = model:get()

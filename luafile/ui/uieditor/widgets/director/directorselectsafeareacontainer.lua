@@ -82,52 +82,52 @@ CoD.DirectorSelectSafeAreaContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f10_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( CRMFeatureList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		if CoD.DirectorUtility.ShowForAllClients( f11_arg0, f11_arg2 ) and IsPC() then
-			ProcessListAction( self, f11_arg0, f11_arg2, f11_arg1 )
+	f1_arg0:AddButtonCallbackFunction( CRMFeatureList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.DirectorUtility.ShowForAllClients( element, controller ) and IsPC() then
+			ProcessListAction( self, element, controller, menu )
 			return true
-		elseif CoD.DirectorUtility.ShowForAllClients( f11_arg0, f11_arg2 ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( f11_arg0, f11_arg2, "actionString", "registration" ) then
-			ProcessListAction( self, f11_arg0, f11_arg2, f11_arg1 )
+		elseif CoD.DirectorUtility.ShowForAllClients( element, controller ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "actionString", "registration" ) then
+			ProcessListAction( self, element, controller, menu )
 			return true
-		elseif CoD.DirectorUtility.ShowForAllClients( f11_arg0, f11_arg2 ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( f11_arg0, f11_arg2, "actionString", "store" ) then
-			ProcessListAction( self, f11_arg0, f11_arg2, f11_arg1 )
+		elseif CoD.DirectorUtility.ShowForAllClients( element, controller ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "actionString", "store" ) then
+			ProcessListAction( self, element, controller, menu )
 			return true
-		elseif CoD.DirectorUtility.ShowForAllClients( f11_arg0, f11_arg2 ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( f11_arg0, f11_arg2, "actionString", "motd" ) then
-			ProcessListAction( self, f11_arg0, f11_arg2, f11_arg1 )
+		elseif CoD.DirectorUtility.ShowForAllClients( element, controller ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "actionString", "motd" ) then
+			ProcessListAction( self, element, controller, menu )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f11_arg0, f11_arg2, "actionString", "vod" ) then
-			ProcessListAction( self, f11_arg0, f11_arg2, f11_arg1 )
+		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "actionString", "vod" ) then
+			ProcessListAction( self, element, controller, menu )
 			return true
-		elseif CoD.DirectorUtility.ShowForAllClients( f11_arg0, f11_arg2 ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( f11_arg0, f11_arg2, "actionString", "liveevent" ) then
-			ProcessListAction( self, f11_arg0, f11_arg2, f11_arg1 )
+		elseif CoD.DirectorUtility.ShowForAllClients( element, controller ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "actionString", "liveevent" ) then
+			ProcessListAction( self, element, controller, menu )
 			return true
-		elseif CoD.DirectorUtility.ShowForAllClients( f11_arg0, f11_arg2 ) then
-			ProcessListAction( self, f11_arg0, f11_arg2, f11_arg1 )
+		elseif CoD.DirectorUtility.ShowForAllClients( element, controller ) then
+			ProcessListAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		if CoD.DirectorUtility.ShowForAllClients( f12_arg0, f12_arg2 ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.DirectorUtility.ShowForAllClients( element, controller ) and IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif CoD.DirectorUtility.ShowForAllClients( f12_arg0, f12_arg2 ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( f12_arg0, f12_arg2, "actionString", "registration" ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x977A022B8323362, nil, "ui_confirm" )
+		elseif CoD.DirectorUtility.ShowForAllClients( element, controller ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "actionString", "registration" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/register_caps", nil, "ui_confirm" )
 			return true
-		elseif CoD.DirectorUtility.ShowForAllClients( f12_arg0, f12_arg2 ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( f12_arg0, f12_arg2, "actionString", "store" ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x191CDDA584B4408, nil, "ui_confirm" )
+		elseif CoD.DirectorUtility.ShowForAllClients( element, controller ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "actionString", "store" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/store_caps", nil, "ui_confirm" )
 			return true
-		elseif CoD.DirectorUtility.ShowForAllClients( f12_arg0, f12_arg2 ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( f12_arg0, f12_arg2, "actionString", "motd" ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2DEBC821FE9A08B, nil, "ui_confirm" )
+		elseif CoD.DirectorUtility.ShowForAllClients( element, controller ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "actionString", "motd" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/motd", nil, "ui_confirm" )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( f12_arg0, f12_arg2, "actionString", "vod" ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "actionString", "vod" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif CoD.DirectorUtility.ShowForAllClients( f12_arg0, f12_arg2 ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( f12_arg0, f12_arg2, "actionString", "liveevent" ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2A5ABE3F6C75E74, nil, "ui_confirm" )
+		elseif CoD.DirectorUtility.ShowForAllClients( element, controller ) and CoD.ModelUtility.IsSelfModelPathValueEqualTo( element, controller, "actionString", "liveevent" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0x2A5ABE3F6C75E74, nil, "ui_confirm" )
 			return true
-		elseif CoD.DirectorUtility.ShowForAllClients( f12_arg0, f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif CoD.DirectorUtility.ShowForAllClients( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

@@ -21,7 +21,7 @@ CoD.LiveEventViewerFooter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local LineLeft = LUI.UIImage.new( 0, 1, -185, 197, 1, 1, -63, -57 )
 	LineLeft:setAlpha( 0.55 )
-	LineLeft:setImage( RegisterImage( 0x563843FB53DC2A3 ) )
+	LineLeft:setImage( RegisterImage( "uie_t7_menu_frontend_featuredframeum" ) )
 	LineLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LineLeft )
 	self.LineLeft = LineLeft
@@ -54,7 +54,7 @@ CoD.LiveEventViewerFooter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 			modelName = "liveEventViewer.stream"
 		} )
 	end, false )
-	twitchIcon.image:setImage( RegisterImage( 0x259F69CEC0E85FA ) )
+	twitchIcon.image:setImage( RegisterImage( "uie_twitch_icon_white" ) )
 	self:addElement( twitchIcon )
 	self.twitchIcon = twitchIcon
 	

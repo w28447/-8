@@ -65,85 +65,85 @@ LUI.createMenu.BubblegumBuffSelect = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f6_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( selectionList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		if not CoD.CACUtility.IsCACItemLocked( f7_arg1, f7_arg0, f7_arg2 ) then
-			CoD.ZMLoadoutUtility.EquipBubblegumBuff( f7_arg1, f7_arg0, f7_arg2 )
-			CoD.ZMLoadoutUtility.UpdateBubbleGumPackForCurrentClass( f7_arg1, f7_arg0, f7_arg2 )
+	f1_local1:AddButtonCallbackFunction( selectionList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.ZMLoadoutUtility.EquipBubblegumBuff( menu, element, controller )
+			CoD.ZMLoadoutUtility.UpdateBubbleGumPackForCurrentClass( menu, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		if not CoD.CACUtility.IsCACItemLocked( f8_arg1, f8_arg0, f8_arg2 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( selectionList, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "usebgb1", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		if not CoD.CACUtility.IsCACItemLocked( f9_arg1, f9_arg0, f9_arg2 ) then
-			CoD.ZMLoadoutUtility.SetBubblegumBuffLoadoutSelectedIndexWithPromptSlot( f9_arg2, "up" )
-			CoD.ZMLoadoutUtility.EquipBubblegumBuff( f9_arg1, f9_arg0, f9_arg2 )
-			CoD.ZMLoadoutUtility.UpdateBubbleGumPackForCurrentClass( f9_arg1, f9_arg0, f9_arg2 )
+	f1_local1:AddButtonCallbackFunction( selectionList, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "usebgb1", function ( element, menu, controller, model )
+		if not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.ZMLoadoutUtility.SetBubblegumBuffLoadoutSelectedIndexWithPromptSlot( controller, "up" )
+			CoD.ZMLoadoutUtility.EquipBubblegumBuff( menu, element, controller )
+			CoD.ZMLoadoutUtility.UpdateBubbleGumPackForCurrentClass( menu, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		if not CoD.CACUtility.IsCACItemLocked( f10_arg1, f10_arg0, f10_arg2 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "usebgb1" )
+	end, function ( element, menu, controller )
+		if not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "usebgb1" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( selectionList, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "usebgb2", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		if not CoD.CACUtility.IsCACItemLocked( f11_arg1, f11_arg0, f11_arg2 ) then
-			CoD.ZMLoadoutUtility.SetBubblegumBuffLoadoutSelectedIndexWithPromptSlot( f11_arg2, "right" )
-			CoD.ZMLoadoutUtility.EquipBubblegumBuff( f11_arg1, f11_arg0, f11_arg2 )
-			CoD.ZMLoadoutUtility.UpdateBubbleGumPackForCurrentClass( f11_arg1, f11_arg0, f11_arg2 )
+	f1_local1:AddButtonCallbackFunction( selectionList, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "usebgb2", function ( element, menu, controller, model )
+		if not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.ZMLoadoutUtility.SetBubblegumBuffLoadoutSelectedIndexWithPromptSlot( controller, "right" )
+			CoD.ZMLoadoutUtility.EquipBubblegumBuff( menu, element, controller )
+			CoD.ZMLoadoutUtility.UpdateBubbleGumPackForCurrentClass( menu, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		if not CoD.CACUtility.IsCACItemLocked( f12_arg1, f12_arg0, f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "usebgb2" )
+	end, function ( element, menu, controller )
+		if not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "usebgb2" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( selectionList, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "usebgb3", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		if not CoD.CACUtility.IsCACItemLocked( f13_arg1, f13_arg0, f13_arg2 ) then
-			CoD.ZMLoadoutUtility.SetBubblegumBuffLoadoutSelectedIndexWithPromptSlot( f13_arg2, "down" )
-			CoD.ZMLoadoutUtility.EquipBubblegumBuff( f13_arg1, f13_arg0, f13_arg2 )
-			CoD.ZMLoadoutUtility.UpdateBubbleGumPackForCurrentClass( f13_arg1, f13_arg0, f13_arg2 )
+	f1_local1:AddButtonCallbackFunction( selectionList, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "usebgb3", function ( element, menu, controller, model )
+		if not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.ZMLoadoutUtility.SetBubblegumBuffLoadoutSelectedIndexWithPromptSlot( controller, "down" )
+			CoD.ZMLoadoutUtility.EquipBubblegumBuff( menu, element, controller )
+			CoD.ZMLoadoutUtility.UpdateBubbleGumPackForCurrentClass( menu, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		if not CoD.CACUtility.IsCACItemLocked( f14_arg1, f14_arg0, f14_arg2 ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "usebgb3" )
+	end, function ( element, menu, controller )
+		if not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "usebgb3" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( selectionList, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "usebgb4", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		if not CoD.CACUtility.IsCACItemLocked( f15_arg1, f15_arg0, f15_arg2 ) then
-			CoD.ZMLoadoutUtility.SetBubblegumBuffLoadoutSelectedIndexWithPromptSlot( f15_arg2, "left" )
-			CoD.ZMLoadoutUtility.EquipBubblegumBuff( f15_arg1, f15_arg0, f15_arg2 )
-			CoD.ZMLoadoutUtility.UpdateBubbleGumPackForCurrentClass( f15_arg1, f15_arg0, f15_arg2 )
+	f1_local1:AddButtonCallbackFunction( selectionList, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "usebgb4", function ( element, menu, controller, model )
+		if not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.ZMLoadoutUtility.SetBubblegumBuffLoadoutSelectedIndexWithPromptSlot( controller, "left" )
+			CoD.ZMLoadoutUtility.EquipBubblegumBuff( menu, element, controller )
+			CoD.ZMLoadoutUtility.UpdateBubbleGumPackForCurrentClass( menu, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		if not CoD.CACUtility.IsCACItemLocked( f16_arg1, f16_arg0, f16_arg2 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "usebgb4" )
+	end, function ( element, menu, controller )
+		if not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "usebgb4" )
 			return false
 		else
 			return false
@@ -199,7 +199,7 @@ LUI.createMenu.BubblegumBuffSelect = function ( f1_arg0, f1_arg1 )
 	TopBar:setRGB( 0.58, 0.85, 1 )
 	TopBar:setAlpha( 0.5 )
 	TopBar:setZoom( 2 )
-	TopBar:setImage( RegisterImage( 0x42BCCF45B82FBED ) )
+	TopBar:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_bar" ) )
 	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBar )
 	self.TopBar = TopBar
@@ -218,7 +218,7 @@ LUI.createMenu.BubblegumBuffSelect = function ( f1_arg0, f1_arg1 )
 	TopBar2:setRGB( 0.58, 0.85, 1 )
 	TopBar2:setAlpha( 0.5 )
 	TopBar2:setZoom( 2 )
-	TopBar2:setImage( RegisterImage( 0x42BCCF45B82FBED ) )
+	TopBar2:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_bar" ) )
 	TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBar2 )
 	self.TopBar2 = TopBar2
@@ -286,12 +286,12 @@ LUI.createMenu.BubblegumBuffSelect = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( f26_arg1, f1_local1, f1_arg0, Enum.LUIButton[0xD4C15FE32148D3A] )
 		CoD.Menu.UpdateButtonShownState( f26_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x57783F8DA4AAEF] )
 	end, false )
-	self:registerEventHandler( "menu_loaded", function ( element, event )
+	self:registerEventHandler( "menu_loaded", function ( self, event )
 		local f27_local0 = nil
-		if element.menuLoaded then
-			f27_local0 = element:menuLoaded( event )
-		elseif element.super.menuLoaded then
-			f27_local0 = element.super:menuLoaded( event )
+		if self.menuLoaded then
+			f27_local0 = self:menuLoaded( event )
+		elseif self.super.menuLoaded then
+			f27_local0 = self.super:menuLoaded( event )
 		end
 		ShowHeaderIconOnly( f1_local1 )
 		SetElementStateByElementName( self, "GenericMenuFrame0", f1_arg0, "Update" )
@@ -301,79 +301,79 @@ LUI.createMenu.BubblegumBuffSelect = function ( f1_arg0, f1_arg1 )
 		}, f1_arg0 )
 		PlayClip( self, "into", f1_arg0 )
 		if not f27_local0 then
-			f27_local0 = element:dispatchEventToChildren( event )
+			f27_local0 = self:dispatchEventToChildren( event )
 		end
 		return f27_local0
 	end )
-	self:registerEventHandler( "list_active_changed", function ( element, event )
+	self:registerEventHandler( "list_active_changed", function ( self, event )
 		local f28_local0 = nil
 		CoD.ZMLoadoutUtility.ShowBubblegumBuffModel( f1_local1, self, self.selectionList, f1_arg0 )
 		return f28_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f29_arg0, f29_arg1, f29_arg2, f29_arg3 )
-		GoBack( self, f29_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		PlaySoundSetSound( self, "menu_no_selection" )
-		SendClientScriptMenuChangeNotify( f29_arg2, f29_arg1, false )
+		SendClientScriptMenuChangeNotify( controller, menu, false )
 		return true
-	end, function ( f30_arg0, f30_arg1, f30_arg2 )
-		CoD.Menu.SetButtonLabel( f30_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, true )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x4B11D2B20C75A7F], nil, function ( f31_arg0, f31_arg1, f31_arg2, f31_arg3 )
-		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f31_arg2, "BGBLoadout", "selectedIndex", 0 ) then
-			SetControllerModelValue( f31_arg2, "BGBLoadout.selectedIndex", 0 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x4B11D2B20C75A7F], nil, function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "BGBLoadout", "selectedIndex", 0 ) then
+			SetControllerModelValue( controller, "BGBLoadout.selectedIndex", 0 )
 			return true
 		else
 			
 		end
-	end, function ( f32_arg0, f32_arg1, f32_arg2 )
-		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f32_arg2, "BGBLoadout", "selectedIndex", 0 ) then
-			CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x4B11D2B20C75A7F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "BGBLoadout", "selectedIndex", 0 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4B11D2B20C75A7F], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x571F08AD84807E0], nil, function ( f33_arg0, f33_arg1, f33_arg2, f33_arg3 )
-		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f33_arg2, "BGBLoadout", "selectedIndex", 1 ) then
-			SetControllerModelValue( f33_arg2, "BGBLoadout.selectedIndex", 1 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x571F08AD84807E0], nil, function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "BGBLoadout", "selectedIndex", 1 ) then
+			SetControllerModelValue( controller, "BGBLoadout.selectedIndex", 1 )
 			return true
 		else
 			
 		end
-	end, function ( f34_arg0, f34_arg1, f34_arg2 )
-		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f34_arg2, "BGBLoadout", "selectedIndex", 1 ) then
-			CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x571F08AD84807E0], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "BGBLoadout", "selectedIndex", 1 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x571F08AD84807E0], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD4C15FE32148D3A], nil, function ( f35_arg0, f35_arg1, f35_arg2, f35_arg3 )
-		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f35_arg2, "BGBLoadout", "selectedIndex", 2 ) then
-			SetControllerModelValue( f35_arg2, "BGBLoadout.selectedIndex", 2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD4C15FE32148D3A], nil, function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "BGBLoadout", "selectedIndex", 2 ) then
+			SetControllerModelValue( controller, "BGBLoadout.selectedIndex", 2 )
 			return true
 		else
 			
 		end
-	end, function ( f36_arg0, f36_arg1, f36_arg2 )
-		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f36_arg2, "BGBLoadout", "selectedIndex", 2 ) then
-			CoD.Menu.SetButtonLabel( f36_arg1, Enum.LUIButton[0xD4C15FE32148D3A], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "BGBLoadout", "selectedIndex", 2 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD4C15FE32148D3A], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( f37_arg0, f37_arg1, f37_arg2, f37_arg3 )
-		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f37_arg2, "BGBLoadout", "selectedIndex", 3 ) then
-			SetControllerModelValue( f37_arg2, "BGBLoadout.selectedIndex", 3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "BGBLoadout", "selectedIndex", 3 ) then
+			SetControllerModelValue( controller, "BGBLoadout.selectedIndex", 3 )
 			return true
 		else
 			
 		end
-	end, function ( f38_arg0, f38_arg1, f38_arg2 )
-		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f38_arg2, "BGBLoadout", "selectedIndex", 3 ) then
-			CoD.Menu.SetButtonLabel( f38_arg1, Enum.LUIButton[0x57783F8DA4AAEF], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "BGBLoadout", "selectedIndex", 3 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x57783F8DA4AAEF], "", nil, nil )
 			return false
 		else
 			return false
@@ -421,7 +421,7 @@ LUI.createMenu.BubblegumBuffSelect = function ( f1_arg0, f1_arg1 )
 	end
 	
 	f1_local13 = self
-	CoD.BaseUtility.SetMenuSessionMode( f1_local1, Enum.eModes[0x3723205FAE52C4A] )
+	CoD.BaseUtility.SetMenuSessionMode( f1_local1, Enum.eModes.mode_zombies )
 	CoD.ZMLoadoutUtility.AddBGBSelectMenuControls( f1_local1, self.CategoryTabs, self.EquippedBGBContainer, f1_arg0 )
 	return self
 end

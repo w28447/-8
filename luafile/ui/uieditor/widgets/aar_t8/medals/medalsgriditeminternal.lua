@@ -57,7 +57,7 @@ CoD.MedalsGridItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	MedalCount:linkToElementModel( self, "timesEarned", true, function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
-			MedalCount:setText( LocalizeIntoString( 0x9DB9C526E6370AB, f4_local0 ) )
+			MedalCount:setText( LocalizeIntoString( "menu/multiplier_x", f4_local0 ) )
 		end
 	end )
 	self:addElement( MedalCount )
@@ -65,7 +65,7 @@ CoD.MedalsGridItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local ItemFrameAdd = LUI.UIImage.new( 0, 1, -3, 3, 0, 1, -3, 3 )
 	ItemFrameAdd:setAlpha( 0 )
-	ItemFrameAdd:setImage( RegisterImage( 0xC2AE59F4FA74812 ) )
+	ItemFrameAdd:setImage( RegisterImage( "uie_ui_menu_store_element_frame" ) )
 	ItemFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ItemFrameAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	ItemFrameAdd:setupNineSliceShader( 12, 164 )

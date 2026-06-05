@@ -11,7 +11,7 @@ CoD.WarzoneUseTimerBeingRevived.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BeingRevivedText = LUI.UIText.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	BeingRevivedText:setText( Engine[0xF9F1239CFD921FE]( 0x632C924F3D7483F ) )
+	BeingRevivedText:setText( Engine[0xF9F1239CFD921FE]( "warzone/being_revived" ) )
 	BeingRevivedText:setTTF( "ttmussels_regular" )
 	BeingRevivedText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	BeingRevivedText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

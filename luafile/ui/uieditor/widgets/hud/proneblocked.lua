@@ -9,7 +9,7 @@ CoD.ProneBlocked.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local text = LUI.UIText.new( 0.5, 0.5, -960, 960, 0, 0, 0, 24 )
-	text:setText( Engine[0xF9F1239CFD921FE]( 0x87CB34E02DB6C32 ) )
+	text:setText( Engine[0xF9F1239CFD921FE]( "cgame/prone_blocked" ) )
 	text:setTTF( "ttmussels_regular" )
 	text:setLetterSpacing( 1 )
 	text:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -177,7 +177,7 @@ end
 CoD.ProneBlocked.__resetProperties = function ( f13_arg0 )
 	f13_arg0.text:completeAnimation()
 	f13_arg0.text:setAlpha( 1 )
-	f13_arg0.text:setText( Engine[0xF9F1239CFD921FE]( 0x87CB34E02DB6C32 ) )
+	f13_arg0.text:setText( Engine[0xF9F1239CFD921FE]( "cgame/prone_blocked" ) )
 end
 
 CoD.ProneBlocked.__clipsPerState = {
@@ -243,7 +243,7 @@ CoD.ProneBlocked.__clipsPerState = {
 			
 			f17_arg0.text:completeAnimation()
 			f17_arg0.text:setAlpha( 0 )
-			f17_arg0.text:setText( Engine[0xF9F1239CFD921FE]( 0x87CB34E02DB6C32 ) )
+			f17_arg0.text:setText( Engine[0xF9F1239CFD921FE]( "cgame/prone_blocked" ) )
 			f17_local0( f17_arg0.text )
 		end
 	}

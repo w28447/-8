@@ -143,18 +143,18 @@ CoD.ZMLoadoutPreviewFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f10_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		CoD.DirectorUtility.HideLoadoutPreview( f11_arg2 )
+	f1_arg0:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, model )
+		CoD.DirectorUtility.HideLoadoutPreview( controller )
 		return true
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_confirm" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		CoD.DirectorUtility.HideLoadoutPreview( f13_arg2 )
+	f1_arg0:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		CoD.DirectorUtility.HideLoadoutPreview( controller )
 		return true
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 		return false
 	end, false )
 	self:addElement( PCSmallCloseButton )
@@ -177,19 +177,19 @@ CoD.ZMLoadoutPreviewFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 			end
 		}
 	} )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		if IsElementInState( self.SelectedClass, "Visible" ) then
-			CoD.ZMLoadoutUtility.SetEquippedBubbleGumPackToSelectedClass( self.ActiveClassTab, f19_arg2, f19_arg1 )
-			CoD.CACUtility.SelectCustomClass( f19_arg2, self.SelectedClass )
-			CoD.ZMLoadoutUtility.SaveZMLoadoutBuffer( f19_arg2 )
+			CoD.ZMLoadoutUtility.SetEquippedBubbleGumPackToSelectedClass( self.ActiveClassTab, controller, menu )
+			CoD.CACUtility.SelectCustomClass( controller, self.SelectedClass )
+			CoD.ZMLoadoutUtility.SaveZMLoadoutBuffer( controller )
 			PlaySoundAlias( "uin_list_action_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f20_arg0, f20_arg1, f20_arg2 )
+	end, function ( element, menu, controller )
 		if IsElementInState( self.SelectedClass, "Visible" ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 			return false
 		else
 			return false

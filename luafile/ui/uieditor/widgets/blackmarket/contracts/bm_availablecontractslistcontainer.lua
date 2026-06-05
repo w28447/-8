@@ -38,29 +38,29 @@ CoD.BM_AvailableContractsListContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( AvailableContractsList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		if not CoD.BlackMarketUtility.IsActiveContractAvailable( f5_arg2, f5_arg0, f5_arg1 ) and not CoD.BlackMarketUtility.IsActiveContractCompleted( f5_arg2, f5_arg0, f5_arg1 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f5_arg0, f5_arg2, "active" ) then
-			OpenOverlay( self, "BlackMarketContractReplacementConfirmation", f5_arg2, {
-				_model = f5_arg1:getModel(),
-				_selectedModel = f5_arg0:getModel(),
-				_contractSlot = f5_arg1._contractSlot
+	f1_arg0:AddButtonCallbackFunction( AvailableContractsList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not CoD.BlackMarketUtility.IsActiveContractAvailable( controller, element, menu ) and not CoD.BlackMarketUtility.IsActiveContractCompleted( controller, element, menu ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "active" ) then
+			OpenOverlay( self, "BlackMarketContractReplacementConfirmation", controller, {
+				_model = menu:getModel(),
+				_selectedModel = element:getModel(),
+				_contractSlot = menu._contractSlot
 			} )
 			PlaySoundAlias( "cac_slide_equip_item" )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f5_arg0, f5_arg2, "active" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f5_arg0, f5_arg2, "completed" ) then
-			CoD.BlackMarketUtility.PinContract( f5_arg2, f5_arg0, f5_arg1, nil )
-			DelayGoBack( f5_arg1, f5_arg2, 250 )
+		elseif not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "active" ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "completed" ) then
+			CoD.BlackMarketUtility.PinContract( controller, element, menu, nil )
+			DelayGoBack( menu, controller, 250 )
 			PlaySoundAlias( "cac_slide_equip_item" )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		if not CoD.BlackMarketUtility.IsActiveContractAvailable( f6_arg2, f6_arg0, f6_arg1 ) and not CoD.BlackMarketUtility.IsActiveContractCompleted( f6_arg2, f6_arg0, f6_arg1 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f6_arg0, f6_arg2, "active" ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.BlackMarketUtility.IsActiveContractAvailable( controller, element, menu ) and not CoD.BlackMarketUtility.IsActiveContractCompleted( controller, element, menu ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "active" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f6_arg0, f6_arg2, "active" ) and not CoD.ModelUtility.IsSelfModelValueTrue( f6_arg0, f6_arg2, "completed" ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "active" ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "completed" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

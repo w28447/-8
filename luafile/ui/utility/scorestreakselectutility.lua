@@ -5,7 +5,7 @@ DataSources.ScorestreaksList = ListHelper_SetupDataSource( "ScorestreaksList", f
 		return f2_arg0.models.scoreToUnlock < f2_arg1.models.scoreToUnlock
 	end
 	
-	local f1_local2 = Enum.eModes[0x83EBA96F36BC4E5]
+	local f1_local2 = Enum.eModes.mode_multiplayer
 	for f1_local7, f1_local8 in pairs( Engine.GetUnlockablesByGroupName( "killstreak", f1_local2 ) ) do
 		local f1_local9 = CoD.CACUtility.GetUnlockableItemInfo( f1_local8, f1_local2 )
 		if f1_local9[0x32A46624FFC3379] ~= 1 then
@@ -52,14 +52,14 @@ DataSources.EquippedScorestreaks = ListHelper_SetupDataSource( "EquippedScorestr
 			local f3_local8 = CoD.CACUtility.GetUnlockableItemInfo( f3_local11, f3_local3 )
 			f3_local2( f3_local8.displayName, f3_local11, CoD.CACUtility.GetPreviewImageLarge( f3_local3, f3_local8 ), f3_local8.scoreToUnlock, f3_local8[0x87F8E9A3DEB31D2], f3_local8[0xB608E98BF6A8991] )
 		else
-			f3_local2( 0x0, CoD.CACUtility.EmptyItemIndex, RegisterImage( "blacktransparent" ), 0, nil, nil )
+			f3_local2( "", CoD.CACUtility.EmptyItemIndex, RegisterImage( "blacktransparent" ), 0, nil, nil )
 		end
 	end
 	table.sort( f3_local0, f3_local1 )
 	return f3_local0
 end )
 CoD.ScorestreakSelectUtility.BuildItemModelDataFromUnlockableItem = function ( f6_arg0, f6_arg1 )
-	local f6_local0 = Enum.eModes[0x83EBA96F36BC4E5]
+	local f6_local0 = Enum.eModes.mode_multiplayer
 	return {
 		models = {
 			name = f6_arg1.displayName,
@@ -174,7 +174,7 @@ CoD.ScorestreakSelectUtility.SelectScorestreakOption = function ( f16_arg0, f16_
 			CoD.ScorestreakSelectUtility.SortScoretreaksByCost( f16_arg2, f16_local0 )
 			CoD.ScorestreakSelectUtility.UpdateEquippedList( f16_arg2 )
 			local f16_local4 = f16_local1.equipSound:get()
-			if f16_local4 and f16_local4 ~= 0x0 then
+			if f16_local4 and f16_local4 ~= "" then
 				Engine[0x98954175CA6A32C]( f16_local4 )
 			end
 		else
@@ -195,7 +195,7 @@ CoD.ScorestreakSelectUtility.RemoveScorestreakOption = function ( f17_arg0, f17_
 		CoD.ScorestreakSelectUtility.EquipScorestreak( f17_arg2, f17_local2, CoD.CACUtility.EmptyItemIndex, f17_local0 )
 		CoD.ScorestreakSelectUtility.UpdateEquippedList( f17_arg2 )
 		local f17_local3 = f17_local1.unequipSound:get()
-		if f17_local3 and f17_local3 ~= 0x0 then
+		if f17_local3 and f17_local3 ~= "" then
 			Engine[0x98954175CA6A32C]( f17_local3 )
 		end
 	end
@@ -230,7 +230,7 @@ CoD.ScorestreakSelectUtility.SwapScorestreaks = function ( f19_arg0, f19_arg1, f
 			CoD.ScorestreakSelectUtility.SortScoretreaksByCost( f19_arg1, f19_local0 )
 			CoD.ScorestreakSelectUtility.UpdateEquippedList( f19_arg1 )
 			local f19_local7 = f19_local1.equipSound:get()
-			if f19_local7 ~= 0x0 then
+			if f19_local7 ~= "" then
 				Engine[0x98954175CA6A32C]( f19_local7 )
 			end
 		end
@@ -285,7 +285,7 @@ CoD.ScorestreakSelectUtility.UseEquippedItemAsDefaultFocus = function ( f26_arg0
 		if CoD.CACUtility.EmptyItemIndex < f27_local1 then
 			f27_local0 = f26_arg2:findItem( {
 				itemIndex = f27_local1
-			}, nil, false, false )
+			}, nil, false, nil )
 		end
 		if not f27_local0 then
 			f27_local0 = f26_arg2:getFirstSelectableItem( false )
@@ -302,7 +302,7 @@ CoD.ScorestreakSelectUtility.SetCurrentPreviewToSelectedScorestreak = function (
 	if CoD.CACUtility.EmptyItemIndex < f28_local1 then
 		f28_local2 = f28_arg0:findItem( {
 			itemIndex = f28_local1
-		}, nil, false, false )
+		}, nil, false, nil )
 	end
 	if f28_local2 or CoD.isPC and not IsKeyboard( f28_arg2 ) then
 		f28_arg0:setActiveItem( f28_local2 )
@@ -319,9 +319,9 @@ end
 
 CoD.ScorestreakSelectUtility.BlankTextIfNoScorestreakEquipped = function ( f29_arg0 )
 	if f29_arg0 == 0 then
-		return 0x0
+		return ""
 	else
-		return 0x8A0D0BE7383EC9
+		return "menu/score_cost"
 	end
 end
 

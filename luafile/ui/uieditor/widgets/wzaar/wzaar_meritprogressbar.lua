@@ -49,12 +49,12 @@ CoD.WZAAR_MeritProgressBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local PreviousXP = CoD.CommonWipeMeterWithGlow.new( f1_arg0, f1_arg1, 0, 1, 0, 0, 0.6, 1.6, -8, -16 )
 	PreviousXP.Meter:setRGB( 1, 0, 0 )
-	PreviousXP.Meter:setImage( RegisterImage( 0xD3DCC44C30265F7 ) )
+	PreviousXP.Meter:setImage( RegisterImage( "uie_ui_menu_aar_levelup_bar_wz_aar" ) )
 	PreviousXP.MeterAdd:setAlpha( 0 )
-	PreviousXP.MeterAdd:setImage( RegisterImage( 0xD3DCC44C30265F7 ) )
+	PreviousXP.MeterAdd:setImage( RegisterImage( "uie_ui_menu_aar_levelup_bar_wz_aar" ) )
 	PreviousXP.MeterGlow:setRGB( ColorSet.Orange.r, ColorSet.Orange.g, ColorSet.Orange.b )
 	PreviousXP.MeterGlow:setAlpha( 0.5 )
-	PreviousXP.MeterGlow:setImage( RegisterImage( 0xD3DCC44C30265F7 ) )
+	PreviousXP.MeterGlow:setImage( RegisterImage( "uie_ui_menu_aar_levelup_bar_wz_aar" ) )
 	PreviousXP:linkToElementModel( self, "previousXpProgress", true, function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then

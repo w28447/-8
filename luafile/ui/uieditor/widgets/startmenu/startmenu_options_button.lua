@@ -13,9 +13,9 @@ local f0_local0 = function ( f1_arg0, f1_arg1, f1_arg2 )
 		f1_local0( element, f1_arg1 )
 		return true
 	end )
-	CoD.Menu.AddButtonCallbackFunction( f1_arg2, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		if not f1_arg0.disabled and not f4_arg1.m_disableNavigation and f4_arg1:AcceptGamePadButtonInputFromModelCallback( f4_arg2 ) then
-			f1_local0( f4_arg0, f4_arg2 )
+	CoD.Menu.AddButtonCallbackFunction( f1_arg2, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, f4_arg3 )
+		if not f1_arg0.disabled and not menu.m_disableNavigation and menu:AcceptGamePadButtonInputFromModelCallback( controller ) then
+			f1_local0( element, controller )
 			return true
 		else
 			

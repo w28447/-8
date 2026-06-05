@@ -57,12 +57,12 @@ LUI.createMenu.ReticleSelect = function ( f1_arg0, f1_arg1 )
 	WeaponOptionInfo:linkToElementModel( ReticleGroupContainer.ReticlesList, nil, false, function ( model )
 		WeaponOptionInfo:setModel( model, f1_arg0 )
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		CoD.CACUtility.PlayChooseScreenOutro( f4_arg1, f4_arg2, "Close" )
-		DelayGoBack( f4_arg1, f4_arg2, 200 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		CoD.CACUtility.PlayChooseScreenOutro( menu, controller, "Close" )
+		DelayGoBack( menu, controller, 200 )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x78D439E1B360368, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back_caps", nil, nil )
 		return true
 	end, false )
 	if CoD.isPC then

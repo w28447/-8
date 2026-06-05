@@ -75,38 +75,38 @@ CoD.DirectorPartyList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f10_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PartyList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f11_arg0, f11_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsLAN() and IsPlayerAllowedToPlayOnline( f11_arg2 ) and IsPC() then
-			OpenOverlay( self, "Social_InvitePlayersPopup", f11_arg2, nil )
+	f1_arg0:AddButtonCallbackFunction( PartyList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsLAN() and IsPlayerAllowedToPlayOnline( controller ) and IsPC() then
+			OpenOverlay( self, "Social_InvitePlayersPopup", controller, nil )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f11_arg0, f11_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsLAN() and IsPlayerAllowedToPlayOnline( f11_arg2 ) then
-			OpenOverlay( self, "Social_InvitePlayersPopup", f11_arg2, nil )
+		elseif CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsLAN() and IsPlayerAllowedToPlayOnline( controller ) then
+			OpenOverlay( self, "Social_InvitePlayersPopup", controller, nil )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f11_arg0, f11_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and IsGamepad( f11_arg2 ) then
-			OpenLobbyInspection( f11_arg1, f11_arg0, f11_arg2 )
+		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and IsGamepad( controller ) then
+			OpenLobbyInspection( menu, element, controller )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f11_arg0, f11_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and IsMouseOrKeyboard( f11_arg2 ) then
-			OpenLobbyInspection( f11_arg1, f11_arg0, f11_arg2 )
+		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and IsMouseOrKeyboard( controller ) then
+			OpenLobbyInspection( menu, element, controller )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f12_arg0, f12_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsLAN() and IsPlayerAllowedToPlayOnline( f12_arg2 ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsLAN() and IsPlayerAllowedToPlayOnline( controller ) and IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f12_arg0, f12_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsLAN() and IsPlayerAllowedToPlayOnline( f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2EA47C1D2988981, nil, "ui_confirm" )
+		elseif CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and not IsLAN() and IsPlayerAllowedToPlayOnline( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/invite_to_party", nil, "ui_confirm" )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f12_arg0, f12_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and IsGamepad( f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/inspect_player", nil, "ui_confirm" )
+		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/inspect_player", nil, "ui_confirm" )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f12_arg0, f12_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and IsMouseOrKeyboard( f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false

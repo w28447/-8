@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/backgroundframes/genericmenuframe" )
 require( "ui/uieditor/widgets/common/commonidentitywidgetstreamlinedsafeareacontainer" )
-require( "i/uieditor/widgets/craft/emblemeditor/emblemselectsafeareacontainer" )
+require( "ui/uieditor/widgets/craft/emblemeditor/emblemselectsafeareacontainer" )
 require( "ui/uieditor/widgets/playercard/selfidentitybadge" )
 
 CoD.EmblemSelect = InheritFrom( CoD.Menu )
@@ -32,7 +32,7 @@ LUI.createMenu.EmblemSelect = function ( f1_arg0, f1_arg1 )
 	self.BackgroundImage = BackgroundImage
 	
 	local MenuFrame = CoD.GenericMenuFrame.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	MenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x4335B0D906D9B56 ) )
+	MenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/emblems_caps" ) )
 	MenuFrame:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -90,38 +90,38 @@ LUI.createMenu.EmblemSelect = function ( f1_arg0, f1_arg1 )
 			ListFrame:changeFrameWidget( f6_local0 )
 		end
 	end )
-	self:registerEventHandler( "occlusion_change", function ( element, event )
+	self:registerEventHandler( "occlusion_change", function ( self, event )
 		local f7_local0 = nil
-		if element.OcclusionChange then
-			f7_local0 = element:OcclusionChange( event )
-		elseif element.super.OcclusionChange then
-			f7_local0 = element.super:OcclusionChange( event )
+		if self.OcclusionChange then
+			f7_local0 = self:OcclusionChange( event )
+		elseif self.super.OcclusionChange then
+			f7_local0 = self.super:OcclusionChange( event )
 		end
 		CoD.CraftUtility.SetSlotCustomizationType( f1_arg0, Enum.CustomizationType[0x979B4C08E9D67B2] )
 		if not f7_local0 then
-			f7_local0 = element:dispatchEventToChildren( event )
+			f7_local0 = self:dispatchEventToChildren( event )
 		end
 		return f7_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if MenuPropertyIsTrue( f8_arg1, "_selectGroupEmblem" ) then
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		if MenuPropertyIsTrue( menu, "_selectGroupEmblem" ) then
 			CoD.CraftUtility.ClearEmblem()
-			GoBack( self, f8_arg2 )
-			UploadStats( self, f8_arg2 )
+			GoBack( self, controller )
+			UploadStats( self, controller )
 			return true
 		else
-			GoBack( self, f8_arg2 )
-			UploadStats( self, f8_arg2 )
+			GoBack( self, controller )
+			UploadStats( self, controller )
 			return true
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], nil, function ( element, menu, controller, model )
 		return true
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x22361E23588705A], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "", nil, nil )
 		return false
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

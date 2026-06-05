@@ -8,7 +8,7 @@ CoD.MetricsUtility.LobbyInit = function ()
 			if CoD.MetricsUtility.menuID ~= nil and modelValue ~= CoD.MetricsUtility.menuID then
 				local f2_local1 = 0
 				local f2_local2 = LobbyData.GetLobbyMenuByID( CoD.MetricsUtility.menuID )
-				CoD.MetricsUtility.ScreenView( f2_local1, f2_local2[0x4BCADBA8E631B86], Engine[0x9D33D652B9B0F3B]() - CoD.MetricsUtility.openTime, nil )
+				CoD.MetricsUtility.ScreenView( f2_local1, f2_local2.name, Engine[0x9D33D652B9B0F3B]() - CoD.MetricsUtility.openTime, nil )
 			end
 			CoD.MetricsUtility.menuID = modelValue
 			CoD.MetricsUtility.openTime = Engine[0x9D33D652B9B0F3B]()
@@ -57,79 +57,79 @@ CoD.MetricsUtility.ScreenView = function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
 		end
 	end
 	Engine[0xDE279ECDDDD966]( f7_arg0, "dlog_event_screen_view", {
-		[0x807A9F9A0F22827] = f7_arg1,
-		[0xA2EDD0D449524F6] = f7_arg2,
+		screen_id = f7_arg1,
+		screen_duration = f7_arg2,
 		[0xA6F594B9F4471D1] = f7_local0,
-		[0x3A1A70556201A2D] = f7_arg3,
+		crm_message_id = f7_arg3,
 		[0x357215DFA16830D] = Engine[0x9882F293C327557]()
 	} )
 end
 
 CoD.MetricsUtility.BlackMarketCratePurchasedEvent = function ( f8_arg0, f8_arg1, f8_arg2 )
 	Engine[0xDE279ECDDDD966]( f8_arg0, 0x2F4DF4CDCC668F6, {
-		[0x8F54E2E72E0EA12] = f8_arg2,
-		[0xF01D845CFE72CBB] = f8_arg1,
-		[0x8DFD5E2759BA3F8] = CoDShared.Loot.GetSeasonInfoParam( CoDShared.Loot.GetCurrentSeason(), CoDShared.Loot.SEASON_INFO_NUMBER )
+		purchased = f8_arg2,
+		entrypoint = f8_arg1,
+		season = CoDShared.Loot.GetSeasonInfoParam( CoDShared.Loot.GetCurrentSeason(), CoDShared.Loot.SEASON_INFO_NUMBER )
 	} )
 end
 
 CoD.MetricsUtility.BlackMarketTierPurchasedEvent = function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
 	Engine[0xDE279ECDDDD966]( f9_arg0, 0xC6197ED6B5112CF, {
-		[0xF01D845CFE72CBB] = f9_arg1,
-		[0x8F54E2E72E0EA12] = f9_arg2,
-		[0xDD8DC6C5FDAE3CE] = f9_arg3,
-		[0x8DFD5E2759BA3F8] = CoDShared.Loot.GetSeasonInfoParam( CoDShared.Loot.GetCurrentSeason(), CoDShared.Loot.SEASON_INFO_NUMBER )
+		entrypoint = f9_arg1,
+		purchased = f9_arg2,
+		tiers = f9_arg3,
+		season = CoDShared.Loot.GetSeasonInfoParam( CoDShared.Loot.GetCurrentSeason(), CoDShared.Loot.SEASON_INFO_NUMBER )
 	} )
 end
 
 CoD.MetricsUtility.BlackMarketEntryEvent = function ( f10_arg0, f10_arg1 )
 	Engine[0xDE279ECDDDD966]( f10_arg0, 0x17AE67806EEB45B, {
-		[0xF01D845CFE72CBB] = f10_arg1._entrypoint or "",
-		[0x6DC5E18E28E2409] = f10_arg1._shop or false,
-		[0x37934F15B706913] = f10_arg1._contraband or false,
-		[0x7707FCCD201C228] = f10_arg1._reserves or false,
-		[0xDE86446633071DF] = f10_arg1._inventory or false,
-		[0x8DFD5E2759BA3F8] = CoDShared.Loot.GetSeasonInfoParam( CoDShared.Loot.GetCurrentSeason(), CoDShared.Loot.SEASON_INFO_NUMBER )
+		entrypoint = f10_arg1._entrypoint or "",
+		shop = f10_arg1._shop or false,
+		contraband = f10_arg1._contraband or false,
+		reserves = f10_arg1._reserves or false,
+		inventory = f10_arg1._inventory or false,
+		season = CoDShared.Loot.GetSeasonInfoParam( CoDShared.Loot.GetCurrentSeason(), CoDShared.Loot.SEASON_INFO_NUMBER )
 	} )
 end
 
 CoD.MetricsUtility.BlackMarketItemShopEvent = function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3, f11_arg4, f11_arg5, f11_arg6, f11_arg7, f11_arg8, f11_arg9, f11_arg10 )
 	Engine[0xDE279ECDDDD966]( f11_arg0, 0xE92ED589816851F, {
-		[0xA771618F6FE31D1] = f11_arg1,
-		[0x568640B035A56DF] = f11_arg2,
-		["sku"] = f11_arg3,
-		["itemname"] = f11_arg4,
-		[0x8DFD5E2759BA3F8] = CoDShared.Loot.GetSeasonInfoParam( CoDShared.Loot.GetCurrentSeason(), CoDShared.Loot.SEASON_INFO_NUMBER ),
-		[0x82F5F2F5FB1340] = CoDShared.Loot.GetTierBoostItemTotal( f11_arg0 ),
-		[0x4C576376A0BBFFC] = f11_arg5,
-		["stacktotal"] = f11_arg6,
-		[0x98197E5BC91D712] = Engine[0xF40679B550DCCA2]( f11_arg0, CoD.Currencies.COD_POINTS ),
-		[0x28E78264DD0C908] = CoDShared.Loot.GetLootCaseOwnedCount( f11_arg0 ),
-		[0x6BD92EC4B0578E0] = f11_arg7,
-		[0x7989C1D95F393EE] = f11_arg8,
-		[0xB8D66C9384C2577] = f11_arg9,
-		[0x5C56D778DF1BB04] = f11_arg10
+		slot = f11_arg1,
+		action = f11_arg2,
+		sku = f11_arg3,
+		itemname = f11_arg4,
+		season = CoDShared.Loot.GetSeasonInfoParam( CoDShared.Loot.GetCurrentSeason(), CoDShared.Loot.SEASON_INFO_NUMBER ),
+		tierboost = CoDShared.Loot.GetTierBoostItemTotal( f11_arg0 ),
+		stackposition = f11_arg5,
+		stacktotal = f11_arg6,
+		codpoints = Engine[0xF40679B550DCCA2]( f11_arg0, CoD.Currencies.COD_POINTS ),
+		casecount = CoDShared.Loot.GetLootCaseOwnedCount( f11_arg0 ),
+		timeremaining = f11_arg7,
+		rotationtime = f11_arg8,
+		cpcost = f11_arg9,
+		casecost = f11_arg10
 	} )
 end
 
 CoD.MetricsUtility.StoreEntry = function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-	Engine[0xDE279ECDDDD966]( f12_arg1, 0xB3D4FD4D4299D51, {
-		[0xC881611F0802316] = f12_arg3[0x4BCADBA8E631B86],
-		[0xE7CCD6B25C00B8E] = Engine.GetModeName(),
-		[0x34268CDEE080E77] = f12_arg2,
-		[0x642DB161AD4BEAB] = Engine.GetSkuRegion()
+	Engine[0xDE279ECDDDD966]( f12_arg1, "dlog_event_store_entry", {
+		store_source = f12_arg3.name,
+		store_gamemode = Engine.GetModeName(),
+		store_action_source = f12_arg2,
+		store_region = Engine.GetSkuRegion()
 	} )
 end
 
 CoD.MetricsUtility.StoreItemViewed = function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
 	local f13_local0 = DataSources.StoreRoot.getModel( f13_arg1 )
-	Engine[0xDE279ECDDDD966]( f13_arg1, 0xC0B45CDE1F34BEF, {
-		[0xC881611F0802316] = f13_local0.storeSource:get(),
-		[0xE7CCD6B25C00B8E] = Engine.GetModeName(),
-		[0x34268CDEE080E77] = f13_local0.actionSource:get(),
-		[0x4DC92EB0D5A42AC] = f13_arg2,
+	Engine[0xDE279ECDDDD966]( f13_arg1, "dlog_event_store_item_browse", {
+		store_source = f13_local0.storeSource:get(),
+		store_gamemode = Engine.GetModeName(),
+		store_action_source = f13_local0.actionSource:get(),
+		product_id = f13_arg2,
 		[0xB880C16983CE21C] = f13_arg3,
-		[0x642DB161AD4BEAB] = Engine.GetSkuRegion()
+		store_region = Engine.GetSkuRegion()
 	} )
 end
 
@@ -165,10 +165,10 @@ CoD.MetricsUtility.CRMMessageImpression = function ( f15_arg0, f15_arg1, f15_arg
 	if f15_arg0.openTime then
 		f15_local4 = Engine[0x9D33D652B9B0F3B]() - f15_arg0.openTime
 	end
-	Engine[0xDE279ECDDDD966]( f15_arg1, 0xDFC4F3FC5FE9585, {
-		[0x3A1A70556201A2D] = f15_local0.messageID,
-		[0x3C83260DD96C90C] = f15_local0.locationID,
-		[0x2F063E57AD61490] = f15_local4
+	Engine[0xDE279ECDDDD966]( f15_arg1, "dlog_event_crm_message_view", {
+		crm_message_id = f15_local0.messageID,
+		crm_screen_id = f15_local0.locationID,
+		crm_message_duration = f15_local4
 	} )
 end
 
@@ -198,74 +198,74 @@ CoD.MetricsUtility.CRMMessageInteraction = function ( f16_arg0, f16_arg1, f16_ar
 	if not f16_arg4 then
 		f16_arg4 = ""
 	end
-	Engine[0xDE279ECDDDD966]( f16_arg1, 0xF4D09865FFDD4B4, {
-		[0x3A1A70556201A2D] = f16_local0.messageID,
-		[0x3C83260DD96C90C] = f16_local0.locationID,
-		[0x72F1795FF3E15F4] = f16_arg3,
-		[0xC3213FBE680515A] = f16_arg4
+	Engine[0xDE279ECDDDD966]( f16_arg1, "dlog_event_crm_message_click", {
+		crm_message_id = f16_local0.messageID,
+		crm_screen_id = f16_local0.locationID,
+		interaction_type = f16_arg3,
+		interaction_details = f16_arg4
 	} )
 end
 
 CoD.MetricsUtility.PaintshopEvent = function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3, f17_arg4, f17_arg5, f17_arg6, f17_arg7 )
 	Engine[0xDE279ECDDDD966]( f17_arg0, 0x1CEF64DDE4E7F7C, {
-		[0x387BB5BE85C3C86] = f17_arg1,
-		["duration"] = f17_arg2,
-		[0x1B9FADEB749D5B7] = f17_arg3,
+		operation = f17_arg1,
+		duration = f17_arg2,
+		weapon_id = f17_arg3,
 		[0x5C19815194E5A8E] = f17_arg4,
-		[0xC5C0D006BB174D0] = f17_arg5,
-		[0x39D0A763CEB875A] = f17_arg6,
-		[0xC0CC839524F23A3] = f17_arg7
+		assets_used = f17_arg5,
+		slots_used = f17_arg6,
+		total_slots = f17_arg7
 	} )
 end
 
 CoD.MetricsUtility.EmblemEvent = function ( f18_arg0, f18_arg1, f18_arg2, f18_arg3, f18_arg4 )
-	Engine[0xDE279ECDDDD966]( f18_arg0, 0xCF2128ACF6E5097, {
-		["duration"] = f18_arg1,
-		[0xC5C0D006BB174D0] = f18_arg2,
-		[0x39D0A763CEB875A] = f18_arg3,
-		[0xC0CC839524F23A3] = f18_arg4
+	Engine[0xDE279ECDDDD966]( f18_arg0, "dlog_event_save_emblem", {
+		duration = f18_arg1,
+		assets_used = f18_arg2,
+		slots_used = f18_arg3,
+		total_slots = f18_arg4
 	} )
 end
 
 CoD.MetricsUtility.PrestigeEvent = function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
 	Engine[0xDE279ECDDDD966]( f19_arg0, "dlog_event_prestige", {
-		[0xE7BBDA657E05B6A] = f19_arg1,
-		[0x622A9E6C156E077] = f19_arg2,
-		[0x231A1BEA995F83B] = f19_arg3
+		old_prestige = f19_arg1,
+		new_prestige = f19_arg2,
+		game_mode = f19_arg3
 	} )
 end
 
 CoD.MetricsUtility.WatchVideoEvent = function ( f20_arg0, f20_arg1 )
 	Engine[0xDE279ECDDDD966]( f20_arg0, 0x3602D9F9B9C6310, {
-		[0xD6B0911223229CC] = f20_arg1.fileID,
-		[0xA654F6A532DB871] = f20_arg1.duration,
-		[0x67DF9328A690422] = f20_arg1.authorName,
-		[0xAD364242ED0CB7E] = f20_arg1.isPooled
+		video_id = f20_arg1.fileID,
+		video_length = f20_arg1.duration,
+		video_author = f20_arg1.authorName,
+		video_ispooled = f20_arg1.isPooled
 	} )
 end
 
 CoD.MetricsUtility.ScreenshotEvent = function ( f21_arg0, f21_arg1, f21_arg2, f21_arg3, f21_arg4 )
 	Engine[0xDE279ECDDDD966]( f21_arg0, 0x5150CA78539C58D, {
-		[0x387BB5BE85C3C86] = f21_arg1,
-		[0x39D0A763CEB875A] = f21_arg3,
-		[0xC0CC839524F23A3] = f21_arg4
+		operation = f21_arg1,
+		slots_used = f21_arg3,
+		total_slots = f21_arg4
 	} )
 end
 
 CoD.MetricsUtility.ClipsEvent = function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3, f22_arg4 )
 	Engine[0xDE279ECDDDD966]( f22_arg0, 0x624ABA28DBDFBD7, {
-		[0x387BB5BE85C3C86] = f22_arg1,
-		[0x39D0A763CEB875A] = f22_arg3,
-		[0xC0CC839524F23A3] = f22_arg4
+		operation = f22_arg1,
+		slots_used = f22_arg3,
+		total_slots = f22_arg4
 	} )
 end
 
 CoD.MetricsUtility.FileshareEvent = function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3, f23_arg4 )
 	Engine[0xDE279ECDDDD966]( f23_arg0, 0xA85D33AEFD4A376, {
-		[0xBD2E7FFB1224E91] = f23_arg2,
-		[0x387BB5BE85C3C86] = f23_arg1,
-		[0x39D0A763CEB875A] = f23_arg3,
-		[0xC0CC839524F23A3] = f23_arg4
+		category = f23_arg2,
+		operation = f23_arg1,
+		slots_used = f23_arg3,
+		total_slots = f23_arg4
 	} )
 end
 

@@ -115,7 +115,7 @@ CoD.ZMAARTrialTabRoundList.__clipsPerState = {
 			f13_arg0.ZMAARTrialTabRoundListInternal.MedalText:completeAnimation()
 			f13_arg0.ZMAARTrialTabRoundListInternal.MedalAchievedText:completeAnimation()
 			f13_arg0.ZMAARTrialTabRoundListInternal.ListBg:setImage( RegisterImage( "uie_trial_rules_bronze_normal" ) )
-			f13_arg0.ZMAARTrialTabRoundListInternal.Medal:setImage( RegisterImage( 0x2638A7737E9BD02 ) )
+			f13_arg0.ZMAARTrialTabRoundListInternal.Medal:setImage( RegisterImage( "uie_trial_medal_bronze" ) )
 			f13_arg0.ZMAARTrialTabRoundListInternal.MedalText:setRGB( 0.66, 0.3, 0.2 )
 			f13_arg0.ZMAARTrialTabRoundListInternal.MedalText:setText( LocalizeToUpperString( "zmtrials/bronze" ) )
 			f13_arg0.ZMAARTrialTabRoundListInternal.MedalAchievedText:setRGB( 0.66, 0.3, 0.2 )
@@ -191,7 +191,7 @@ CoD.ZMAARTrialTabRoundList.__clipsPerState = {
 			f17_arg0.ZMAARTrialTabRoundListInternal.MedalText:setRGB( 0.84, 0.84, 0.84 )
 			f17_arg0.ZMAARTrialTabRoundListInternal.MedalText:setText( LocalizeToUpperString( "zmtrials/diamond" ) )
 			f17_arg0.ZMAARTrialTabRoundListInternal.MedalAchievedText:setRGB( 0.84, 0.84, 0.84 )
-			f17_arg0.ZMAARTrialTabRoundListInternal.MedalAchievedText:setText( LocalizeToUpperString( "zmtrials/diamond_achieved" ) )
+			f17_arg0.ZMAARTrialTabRoundListInternal.MedalAchievedText:setText( LocalizeToUpperString( " zmtrials/diamond_achieved" ) )
 			f17_arg0.clipFinished( f17_arg0.ZMAARTrialTabRoundListInternal )
 		end
 	},

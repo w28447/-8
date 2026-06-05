@@ -26,14 +26,14 @@ CoD.WarzoneSplitInventory_PC_ImageButton.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local Image = LUI.UIImage.new( 0.5, 0.5, -10, 10, 0.5, 0.5, -10, 10 )
 	Image:setRGB( 0.93, 0.91, 0.81 )
-	Image:setImage( RegisterImage( 0x1B97A54D41F4B80 ) )
+	Image:setImage( RegisterImage( "uie_ui_menu_common_add_plus" ) )
 	self:addElement( Image )
 	self.Image = Image
 	
 	local add = LUI.UIImage.new( 0.5, 0.5, -10, 10, 0.5, 0.5, -10, 10 )
 	add:setRGB( 0.93, 0.91, 0.81 )
 	add:setAlpha( 0 )
-	add:setImage( RegisterImage( 0x1B97A54D41F4B80 ) )
+	add:setImage( RegisterImage( "uie_ui_menu_common_add_plus" ) )
 	add:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( add )
 	self.add = add

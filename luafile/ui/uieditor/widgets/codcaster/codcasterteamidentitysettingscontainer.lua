@@ -17,7 +17,7 @@ CoD.CodCasterTeamIdentitysettingscontainer.new = function ( f1_arg0, f1_arg1, f1
 	
 	local TeamLogoTitle = LUI.UIText.new( 0, 0, 0, 300, 0, 0, 153.5, 174.5 )
 	TeamLogoTitle:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	TeamLogoTitle:setText( LocalizeToUpperString( 0xA3B7C749002927B ) )
+	TeamLogoTitle:setText( LocalizeToUpperString( "codcaster/team_logo_colon" ) )
 	TeamLogoTitle:setTTF( "ttmussels_regular" )
 	TeamLogoTitle:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	TeamLogoTitle:setShaderVector( 0, 0.08, 0, 0, 0 )
@@ -31,7 +31,7 @@ CoD.CodCasterTeamIdentitysettingscontainer.new = function ( f1_arg0, f1_arg1, f1
 	
 	local TeamNameTitle = LUI.UIText.new( 0, 0, 0, 300, 0, 0, 538, 555 )
 	TeamNameTitle:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	TeamNameTitle:setText( LocalizeToUpperString( 0x50940719C87AA8F ) )
+	TeamNameTitle:setText( LocalizeToUpperString( "codcaster/team_name_colon" ) )
 	TeamNameTitle:setTTF( "ttmussels_regular" )
 	TeamNameTitle:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	TeamNameTitle:setShaderVector( 0, 0.08, 0, 0, 0 )
@@ -68,7 +68,7 @@ CoD.CodCasterTeamIdentitysettingscontainer.new = function ( f1_arg0, f1_arg1, f1
 	
 	local TeamColorTitle = LUI.UIText.new( 0, 0, 0, 300, 0, 0, 678.5, 699.5 )
 	TeamColorTitle:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	TeamColorTitle:setText( LocalizeToUpperString( 0x89D11442E6707B ) )
+	TeamColorTitle:setText( LocalizeToUpperString( "codcaster/team_color_colon" ) )
 	TeamColorTitle:setTTF( "ttmussels_regular" )
 	TeamColorTitle:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	TeamColorTitle:setShaderVector( 0, 0.08, 0, 0, 0 )
@@ -103,11 +103,11 @@ CoD.CodCasterTeamIdentitysettingscontainer.new = function ( f1_arg0, f1_arg1, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f6_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( TeamLogoImageButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		OpenOverlay( self, "EditTeamLogo", f7_arg2 )
+	f1_arg0:AddButtonCallbackFunction( TeamLogoImageButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		OpenOverlay( self, "EditTeamLogo", controller )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( TeamLogoImageButton )
@@ -136,13 +136,13 @@ CoD.CodCasterTeamIdentitysettingscontainer.new = function ( f1_arg0, f1_arg1, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f9_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( TeamColorList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		UpdateSelectedTeamIdentityColorElement( self, f10_arg0, f10_arg2 )
-		SetTeamIdentityTeamColor( self, f10_arg0, f10_arg2 )
-		SetTeamIdentityProfileValue( self, f10_arg0, f10_arg2, "color" )
+	f1_arg0:AddButtonCallbackFunction( TeamColorList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		UpdateSelectedTeamIdentityColorElement( self, element, controller )
+		SetTeamIdentityTeamColor( self, element, controller )
+		SetTeamIdentityProfileValue( self, element, controller, "color" )
 		return true
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( TeamColorList )

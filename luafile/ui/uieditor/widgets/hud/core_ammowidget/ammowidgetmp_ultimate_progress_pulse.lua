@@ -9,7 +9,7 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Pulse.new = function ( f1_arg0, f1_arg1, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local UltimateRadialMeterPulseA = LUI.UIImage.new( 0, 0, 0, 110, 0, 0, 0, 112 )
-	UltimateRadialMeterPulseA:setImage( RegisterImage( 0x25ED9C7DA021F0D ) )
+	UltimateRadialMeterPulseA:setImage( RegisterImage( "uie_ui_hud_core_hero_widget_meter_fill" ) )
 	UltimateRadialMeterPulseA:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_add" ) )
 	UltimateRadialMeterPulseA:setShaderVector( 0, 0.06, 0, -0.68, 0 )
 	UltimateRadialMeterPulseA:setShaderVector( 1, 0.5, 0, 0, 0 )
@@ -20,7 +20,7 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Pulse.new = function ( f1_arg0, f1_arg1, f1_a
 	self.UltimateRadialMeterPulseA = UltimateRadialMeterPulseA
 	
 	local UltimateRadialMeterPulseA2 = LUI.UIImage.new( 0, 0, 0, 110, 0, 0, 0, 112 )
-	UltimateRadialMeterPulseA2:setImage( RegisterImage( 0x25ED9C7DA021F0D ) )
+	UltimateRadialMeterPulseA2:setImage( RegisterImage( "uie_ui_hud_core_hero_widget_meter_fill" ) )
 	UltimateRadialMeterPulseA2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_add" ) )
 	UltimateRadialMeterPulseA2:setShaderVector( 0, 0.06, 0, -0.68, 0 )
 	UltimateRadialMeterPulseA2:setShaderVector( 1, 0.5, 0, 0, 0 )

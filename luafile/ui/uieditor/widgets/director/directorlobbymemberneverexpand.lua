@@ -131,17 +131,17 @@ CoD.DirectorLobbyMemberNeverExpand.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	self:linkToElementModel( self, "clientListFlags", true, function ( model, f15_arg1 )
 		CoD.Menu.UpdateButtonShownState( f15_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0xC083113BC81F23F] )
 	end )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
-		if IsPC() and IsGamepad( f16_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self, f16_arg2, "xuid", Engine.StringToXUIDDecimal( "0" ) ) and not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f16_arg0, f16_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) then
-			SetSelectedFriendXUID( self, f16_arg0, f16_arg2 )
-			OpenOverlay( self, "Social_PlayerDetailsPopup", f16_arg2, nil )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if IsPC() and IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self, controller, "xuid", Engine.StringToXUIDDecimal( "0" ) ) and not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) then
+			SetSelectedFriendXUID( self, element, controller )
+			OpenOverlay( self, "Social_PlayerDetailsPopup", controller, nil )
 			return true
 		else
 			
 		end
-	end, function ( f17_arg0, f17_arg1, f17_arg2 )
-		if IsPC() and IsGamepad( f17_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self, f17_arg2, "xuid", Engine.StringToXUIDDecimal( "0" ) ) and not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( f17_arg0, f17_arg2, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) then
-			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xE0254269ED8FFD3, nil, nil )
+	end, function ( element, menu, controller )
+		if IsPC() and IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( self, controller, "xuid", Engine.StringToXUIDDecimal( "0" ) ) and not CoD.ModelUtility.IsSelfModelValueEnumFlagSet( element, controller, "clientListFlags", CoD.DirectorUtility.ClientListFlags.FIRST_EMPTY ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], 0xE0254269ED8FFD3, nil, nil )
 			return true
 		else
 			return false

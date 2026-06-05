@@ -29,7 +29,7 @@ CoD.WZObituaryCalloutContainerDamageDealt.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local ContribText = LUI.UIText.new( 0, 0, 55, 228, 0, 0, 0, 27 )
 	ContribText:setRGB( 1, 0.99, 0.99 )
-	ContribText:setText( LocalizeToUpperString( 0x95155665E8F3F4B ) )
+	ContribText:setText( LocalizeToUpperString( "mpui/damage_dealt" ) )
 	ContribText:setTTF( "ttmussels_regular" )
 	ContribText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	ContribText:setShaderVector( 0, 1, 0, 0, 0 )

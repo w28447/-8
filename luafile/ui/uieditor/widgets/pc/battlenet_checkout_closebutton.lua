@@ -10,7 +10,7 @@ CoD.Battlenet_Checkout_CloseButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local Image = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Image:setRGB( 0.39, 0.44, 0.54 )
-	Image:setImage( RegisterImage( 0x5023C927DE406D2 ) )
+	Image:setImage( RegisterImage( "uie_pc_checkoutclose_button" ) )
 	self:addElement( Image )
 	self.Image = Image
 	

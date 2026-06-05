@@ -131,26 +131,26 @@ LUI.createMenu.PerkTalentSelect = function ( f1_arg0, f1_arg1 )
 	RestrictedText:linkToElementModel( PerkTalentListWidget.itemList, nil, false, function ( model )
 		RestrictedText:setModel( model, f1_arg0 )
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
 		if not IsPC() then
 			PlaySoundAlias( "uin_party_ease_slide_back" )
-			CoD.CACUtility.PlayChooseScreenOutro( f11_arg1, f11_arg2, "Close" )
-			DelayUnhideFreecursorGoBack( f11_arg1, f11_arg2, 200 )
+			CoD.CACUtility.PlayChooseScreenOutro( menu, controller, "Close" )
+			DelayUnhideFreecursorGoBack( menu, controller, 200 )
 			return true
 		elseif IsPC() then
 			PlaySoundAlias( "uin_party_ease_slide_back" )
-			CoD.CACUtility.PlayChooseScreenOutro( f11_arg1, f11_arg2, "ClosePC" )
-			DelayGoBack( f11_arg1, f11_arg2, 70 )
+			CoD.CACUtility.PlayChooseScreenOutro( menu, controller, "ClosePC" )
+			DelayGoBack( menu, controller, 70 )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
+	end, function ( element, menu, controller )
 		if not IsPC() then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif IsPC() then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false

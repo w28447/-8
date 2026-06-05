@@ -48,7 +48,7 @@ CoD.PC_BnetStore_ItemButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local Owned = LUI.UIText.new( 0, 1, 204, -92, 0.5, 0.5, 5, 33 )
 	Owned:setRGB( 0.52, 0.52, 0.52 )
 	Owned:setAlpha( 0 )
-	Owned:setText( Engine[0xF9F1239CFD921FE]( 0x93D1EB87C5B393C ) )
+	Owned:setText( Engine[0xF9F1239CFD921FE]( "store/owned" ) )
 	Owned:setTTF( "ttmussels_regular" )
 	Owned:setLetterSpacing( 2 )
 	Owned:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -86,7 +86,7 @@ CoD.PC_BnetStore_ItemButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local OwnedIcon = LUI.UIFixedAspectRatioImage.new( 1, 1, -76, -14, 0.5, 0.5, -28, 28 )
 	OwnedIcon:setRGB( 0.52, 0.52, 0.52 )
 	OwnedIcon:setAlpha( 0 )
-	OwnedIcon:setImage( RegisterImage( 0xF82DBBC93FD9A06 ) )
+	OwnedIcon:setImage( RegisterImage( "uie_success_icon" ) )
 	self:addElement( OwnedIcon )
 	self.OwnedIcon = OwnedIcon
 	
@@ -161,11 +161,11 @@ CoD.PC_BnetStore_ItemButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 			modelName = "inSale"
 		} )
 	end )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
-		CoD.PCUtility.ActiveParentElementGrid( self, f14_arg1, f14_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		CoD.PCUtility.ActiveParentElementGrid( self, menu, controller )
 		return true
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 		return false
 	end, false )
 	LUI.OverrideFunction_CallOriginalSecond( self, "close", self.__onClose )

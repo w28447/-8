@@ -70,7 +70,7 @@ CoD.EmblemEditorColorControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.lsOpacity = lsOpacity
 	
 	local opacityText = LUI.UIText.new( 1, 1, -339, -119, 0, 0, 89, 113 )
-	opacityText:setText( Engine[0xF9F1239CFD921FE]( 0x611006D6269F87D ) )
+	opacityText:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_layer_opacity" ) )
 	opacityText:setTTF( "ttmussels_regular" )
 	opacityText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	opacityText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -78,7 +78,7 @@ CoD.EmblemEditorColorControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.opacityText = opacityText
 	
 	local ChangeColor = CoD.PaintshopButtonPrompt.new( f1_arg0, f1_arg1, 0, 0, 20, 420, 0, 0, 45, 91 )
-	ChangeColor.label:setText( Engine[0xF9F1239CFD921FE]( 0xD9555D6F5A195F2 ) )
+	ChangeColor.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_change_color" ) )
 	ChangeColor:subscribeToGlobalModel( f1_arg1, "Controller", "move_left_stick_button_image", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
@@ -89,7 +89,7 @@ CoD.EmblemEditorColorControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.ChangeColor = ChangeColor
 	
 	local rotateText = LUI.UIText.new( 1, 1, -339, -119, 0, 0, 166, 191 )
-	rotateText:setText( Engine[0xF9F1239CFD921FE]( 0x9327C6CD586A2F6 ) )
+	rotateText:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_rotate_gradient" ) )
 	rotateText:setTTF( "ttmussels_regular" )
 	rotateText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	rotateText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -119,7 +119,7 @@ CoD.EmblemEditorColorControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.leftTriggerButton = leftTriggerButton
 	
 	local ToggleOutline = CoD.PaintshopButtonPrompt.new( f1_arg0, f1_arg1, 0, 0, 20, 420, 0, 0, 123, 169 )
-	ToggleOutline.label:setText( Engine[0xF9F1239CFD921FE]( 0x219D9DA319169B ) )
+	ToggleOutline.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_toggle_to_gradient" ) )
 	ToggleOutline:subscribeToGlobalModel( f1_arg1, "Controller", "alt1_button_image", function ( model )
 		local f7_local0 = model:get()
 		if f7_local0 ~= nil then
@@ -131,7 +131,7 @@ CoD.EmblemEditorColorControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local PaintshopChooseSide = CoD.PaintshopChooseSide.new( f1_arg0, f1_arg1, 0, 0, 6, 426, 0, 0, 3.5, 35.5 )
 	PaintshopChooseSide:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	PaintshopChooseSide.text:setText( Engine[0xF9F1239CFD921FE]( 0xE6011EEF766C653 ) )
+	PaintshopChooseSide.text:setText( Engine[0xF9F1239CFD921FE]( "menu/controls_caps" ) )
 	self:addElement( PaintshopChooseSide )
 	self.PaintshopChooseSide = PaintshopChooseSide
 	
@@ -164,7 +164,7 @@ CoD.EmblemEditorColorControls.__resetProperties = function ( f8_arg0 )
 	f8_arg0.leftTriggerButton:setAlpha( 1 )
 	f8_arg0.rightTriggerButton:setAlpha( 1 )
 	f8_arg0.rotateText:setAlpha( 1 )
-	f8_arg0.ToggleOutline.label:setText( Engine[0xF9F1239CFD921FE]( 0x219D9DA319169B ) )
+	f8_arg0.ToggleOutline.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_toggle_to_gradient" ) )
 	f8_arg0.lsOpacity:setAlpha( 1 )
 	f8_arg0.rsOpacity:setAlpha( 1 )
 	f8_arg0.opacityText:setAlpha( 1 )
@@ -198,7 +198,7 @@ CoD.EmblemEditorColorControls.__clipsPerState = {
 			f11_arg0:setupElementClipCounter( 1 )
 			f11_arg0.ToggleOutline:completeAnimation()
 			f11_arg0.ToggleOutline.label:completeAnimation()
-			f11_arg0.ToggleOutline.label:setText( Engine[0xF9F1239CFD921FE]( 0xF3962C42FF92592 ) )
+			f11_arg0.ToggleOutline.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_toggle_solid" ) )
 			f11_arg0.clipFinished( f11_arg0.ToggleOutline )
 		end
 	},
@@ -217,7 +217,7 @@ CoD.EmblemEditorColorControls.__clipsPerState = {
 			f12_arg0.clipFinished( f12_arg0.opacityText )
 			f12_arg0.ToggleOutline:completeAnimation()
 			f12_arg0.ToggleOutline.label:completeAnimation()
-			f12_arg0.ToggleOutline.label:setText( Engine[0xF9F1239CFD921FE]( 0xF3962C42FF92592 ) )
+			f12_arg0.ToggleOutline.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_toggle_solid" ) )
 			f12_arg0.clipFinished( f12_arg0.ToggleOutline )
 		end
 	}

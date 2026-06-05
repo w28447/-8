@@ -72,7 +72,7 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 			modelName = "isGrouped"
 		} )
 	end )
-	ColorPicker.label:setText( Engine[0xF9F1239CFD921FE]( 0x3F334E151B36E5C ) )
+	ColorPicker.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_color_picker" ) )
 	ColorPicker:subscribeToGlobalModel( f1_arg1, "Controller", "alt2_button_image", function ( model )
 		local f6_local0 = model:get()
 		if f6_local0 ~= nil then
@@ -122,7 +122,7 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 			modelName = "isGrouped"
 		} )
 	end )
-	materialPicker.label:setText( Engine[0xF9F1239CFD921FE]( "MENU/MATERIAL_PICKER" ) )
+	materialPicker.label:setText( Engine[0xF9F1239CFD921FE]( "menu/material_picker" ) )
 	materialPicker:subscribeToGlobalModel( f1_arg1, "Controller", "dpad_up_button_image", function ( model )
 		local f12_local0 = model:get()
 		if f12_local0 ~= nil then
@@ -134,7 +134,7 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	PaintshopChooseSide0 = CoD.PaintshopChooseSide.new( f1_arg0, f1_arg1, 0, 0, 6, 326, 0, 0, 415, 447 )
 	PaintshopChooseSide0:setScale( LanguageOverrideNumberForScale( "korean", 0.8, LanguageOverrideNumberForScale( "japanese", 0.8, LanguageOverrideNumberForScale( "chinese", 0.8, 1, 1 ) ) ) )
-	PaintshopChooseSide0.text:setText( LocalizeToUpperString( 0xD9555D6F5A195F2 ) )
+	PaintshopChooseSide0.text:setText( LocalizeToUpperString( "menu/emblem_change_color" ) )
 	self:addElement( PaintshopChooseSide0 )
 	self.PaintshopChooseSide0 = PaintshopChooseSide0
 	
@@ -161,7 +161,7 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.lsOpacity = lsOpacity
 	
 	local opacity = LUI.UIText.new( 0, 0, 82, 370, 0, 0, 260, 285 )
-	opacity:setText( Engine[0xF9F1239CFD921FE]( 0x611006D6269F87D ) )
+	opacity:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_layer_opacity" ) )
 	opacity:setTTF( "ttmussels_regular" )
 	opacity:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	opacity:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -211,7 +211,7 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 			modelName = "isGrouped"
 		} )
 	end )
-	ToggleOutline.label:setText( Engine[0xF9F1239CFD921FE]( 0xB01D7611E815CFB ) )
+	ToggleOutline.label:setText( Engine[0xF9F1239CFD921FE]( "platform/emblem_toggle_outline" ) )
 	ToggleOutline:subscribeToGlobalModel( f1_arg1, "Controller", "alt1_button_image", function ( model )
 		local f20_local0 = model:get()
 		if f20_local0 ~= nil then
@@ -270,7 +270,7 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 			modelName = "isGrouped"
 		} )
 	end )
-	Clip.label:setText( Engine[0xF9F1239CFD921FE]( 0xAB63F65EEE8AB3C ) )
+	Clip.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_clip" ) )
 	Clip:subscribeToGlobalModel( f1_arg1, "Controller", "dpad_down_button_image", function ( model )
 		local f27_local0 = model:get()
 		if f27_local0 ~= nil then
@@ -282,7 +282,7 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	overrides = CoD.EmblemEditorHeaderRight.new( f1_arg0, f1_arg1, 0, 0, 5, 325, 0, 0, 232, 269 )
 	overrides:setScale( LanguageOverrideNumberForScale( "korean", 0.8, LanguageOverrideNumberForScale( "japanese", 0.8, LanguageOverrideNumberForScale( "chinese", 0.8, 1, 1 ) ) ) )
-	overrides.text:setText( Engine[0xF9F1239CFD921FE]( 0x1EE153317E38FB5 ) )
+	overrides.text:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_overrides_caps" ) )
 	self:addElement( overrides )
 	self.overrides = overrides
 	
@@ -329,7 +329,7 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.Flip = Flip
 	
 	local FixedScale = CoD.PaintshopButtonPrompt.new( f1_arg0, f1_arg1, 0, 0, 20, 420, 0, 0, 71, 117 )
-	FixedScale.label:setText( Engine[0xF9F1239CFD921FE]( 0xAD2AED6D89BCC15 ) )
+	FixedScale.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_fixed_scale" ) )
 	FixedScale:subscribeToGlobalModel( f1_arg1, "Controller", "move_right_stick_button_image", function ( model )
 		local f31_local0 = model:get()
 		if f31_local0 ~= nil then
@@ -340,7 +340,7 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.FixedScale = FixedScale
 	
 	local FreeScale = CoD.PaintshopButtonPrompt.new( f1_arg0, f1_arg1, 0, 0, 20, 420, 0, 0, 71, 117 )
-	FreeScale.label:setText( Engine[0xF9F1239CFD921FE]( 0xDD45E7A84A50DF9 ) )
+	FreeScale.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_free_scale" ) )
 	FreeScale:subscribeToGlobalModel( f1_arg1, "Controller", "move_right_stick_button_image", function ( model )
 		local f32_local0 = model:get()
 		if f32_local0 ~= nil then
@@ -363,7 +363,7 @@ CoD.PaintshopControlsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local PaintshopChooseSide = CoD.PaintshopChooseSide.new( f1_arg0, f1_arg1, 0, 0, 5, 325, 0, 0, 4, 36 )
 	PaintshopChooseSide:setScale( LanguageOverrideNumberForScale( "korean", 0.8, LanguageOverrideNumberForScale( "japanese", 0.8, LanguageOverrideNumberForScale( "chinese", 0.8, 1, 1 ) ) ) )
-	PaintshopChooseSide.text:setText( LocalizeToUpperString( 0xF5CA503839CA925 ) )
+	PaintshopChooseSide.text:setText( LocalizeToUpperString( "menu/appearance" ) )
 	self:addElement( PaintshopChooseSide )
 	self.PaintshopChooseSide = PaintshopChooseSide
 	
@@ -478,7 +478,7 @@ CoD.PaintshopControlsFull.__resetProperties = function ( f34_arg0 )
 	f34_arg0.BackingMid:setAlpha( 1 )
 	f34_arg0.BackingBot:setAlpha( 1 )
 	f34_arg0.FixedScale:setAlpha( 1 )
-	f34_arg0.FixedScale.label:setText( Engine[0xF9F1239CFD921FE]( 0xAD2AED6D89BCC15 ) )
+	f34_arg0.FixedScale.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_fixed_scale" ) )
 	f34_arg0.Frame03:setAlpha( 0.2 )
 	f34_arg0.Frame02:setAlpha( 0.2 )
 	f34_arg0.Frame01:setAlpha( 0.2 )

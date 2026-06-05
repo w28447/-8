@@ -44,9 +44,9 @@ LUI.createMenu.FileshareOptions_Delete = function ( f1_arg0, f1_arg1 )
 	FullscreenPopupTemplate0.ButtonList:setDataSource( "FileshareOptionsDeleteButtonList" )
 	FullscreenPopupTemplate0.Subtitle:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_delete_prompt_desc" ) )
 	FullscreenPopupTemplate0.ErrorSubtitle:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_delete_error" ) )
-	FullscreenPopupTemplate0.WorkingTitle:setText( Engine[0xF9F1239CFD921FE]( 0x8873C1F9EB8F341 ) )
-	FullscreenPopupTemplate0.Title:setText( Engine[0xF9F1239CFD921FE]( 0x310C36882644FC9 ) )
-	FullscreenPopupTemplate0.DoneTitle:setText( Engine[0xF9F1239CFD921FE]( 0x961E616AE14B756 ) )
+	FullscreenPopupTemplate0.WorkingTitle:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_deleting" ) )
+	FullscreenPopupTemplate0.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_delete_prompt" ) )
+	FullscreenPopupTemplate0.DoneTitle:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_delete_success" ) )
 	self:addElement( FullscreenPopupTemplate0 )
 	self.FullscreenPopupTemplate0 = FullscreenPopupTemplate0
 	
@@ -61,17 +61,17 @@ LUI.createMenu.FileshareOptions_Delete = function ( f1_arg0, f1_arg1 )
 	self:addElement( FileshareSelectedItemPreview )
 	self.FileshareSelectedItemPreview = FileshareSelectedItemPreview
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		GoBack( self, f6_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ENTER", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ENTER", function ( element, menu, controller, model )
 		return true
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ENTER" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ENTER" )
 		return false
 	end, false )
 	self:subscribeToGlobalModel( f1_arg0, "GlobalModel", "fileshareRoot.deleteTask.state", function ( model )

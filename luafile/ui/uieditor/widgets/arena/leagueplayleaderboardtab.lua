@@ -36,7 +36,7 @@ CoD.LeaguePlayLeaderboardTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local FuiBox02Right = LUI.UIImage.new( 0, 0, 1638, 1672, 0, 0, 159, 125 )
 	FuiBox02Right:setAlpha( 0.2 )
-	FuiBox02Right:setImage( RegisterImage( 0x811A80C0AADA825 ) )
+	FuiBox02Right:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
 	FuiBox02Right:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiBox02Right:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox02Right )
@@ -44,7 +44,7 @@ CoD.LeaguePlayLeaderboardTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local TiledwhiteNoiseBacking = LUI.UIImage.new( 0, 0, 240, 1677, 0, 0, 120, 216 )
 	TiledwhiteNoiseBacking:setAlpha( 0.02 )
-	TiledwhiteNoiseBacking:setImage( RegisterImage( 0x7167D8C33A06020 ) )
+	TiledwhiteNoiseBacking:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
 	TiledwhiteNoiseBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledwhiteNoiseBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledwhiteNoiseBacking:setupNineSliceShader( 64, 64 )

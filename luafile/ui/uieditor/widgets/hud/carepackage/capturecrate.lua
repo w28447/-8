@@ -37,21 +37,21 @@ CoD.CaptureCrate.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local Cap = LUI.UIImage.new( 0, 0, -0.5, 18.5, 0, 0, 63, 73 )
 	Cap:setZRot( 90 )
-	Cap:setImage( RegisterImage( 0xF3E81C52AE39D91 ) )
+	Cap:setImage( RegisterImage( "uie_ui_hud_core_objective_widget_meter_cap" ) )
 	Cap:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Cap )
 	self.Cap = Cap
 	
 	local Cap2 = LUI.UIImage.new( 0, 0, 430.5, 449.5, 0, 0, 63, 73 )
 	Cap2:setZRot( 90 )
-	Cap2:setImage( RegisterImage( 0xF3E81C52AE39D91 ) )
+	Cap2:setImage( RegisterImage( "uie_ui_hud_core_objective_widget_meter_cap" ) )
 	Cap2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Cap2 )
 	self.Cap2 = Cap2
 	
 	local bar = LUI.UIImage.new( 0, 0, 9, 441, 1, 1, -37, -19 )
 	bar:setRGB( 0.92, 0.92, 0.92 )
-	bar:setImage( RegisterImage( 0x63FAF44D3935DE4 ) )
+	bar:setImage( RegisterImage( "uie_ui_hud_core_capture_bar" ) )
 	bar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	bar:setShaderVector( 0, 1, 0, 0, 0 )
 	bar:setShaderVector( 1, 0, 0, 0, 0 )
@@ -66,7 +66,7 @@ CoD.CaptureCrate.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local text = LUI.UIText.new( 0, 1, 0, 0, 0, 0, 24.5, 51.5 )
 	text:setRGB( 0.92, 0.92, 0.92 )
-	text:setText( LocalizeToUpperString( 0x17565542D35AA75 ) )
+	text:setText( LocalizeToUpperString( "killstreak/capturing_crate" ) )
 	text:setTTF( "ttmussels_demibold" )
 	text:setLetterSpacing( 0.5 )
 	text:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -82,7 +82,7 @@ CoD.CaptureCrate.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	LED:setRGB( 0, 0, 0 )
 	LED:setAlpha( 0.18 )
 	LED:setScale( 0.94, 0.94 )
-	LED:setImage( RegisterImage( 0x832BA507D0E7663 ) )
+	LED:setImage( RegisterImage( "uie_ui_hud_core_player_widget_led_status" ) )
 	LED:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	LED:setShaderVector( 0, 0, 1, 0, 0 )
 	LED:setShaderVector( 1, 0, 0, 0, 0 )
@@ -96,7 +96,7 @@ CoD.CaptureCrate.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	LED3:setRGB( 0, 0, 0 )
 	LED3:setAlpha( 0.18 )
 	LED3:setScale( 0.94, 0.94 )
-	LED3:setImage( RegisterImage( 0x832BA507D0E7663 ) )
+	LED3:setImage( RegisterImage( "uie_ui_hud_core_player_widget_led_status" ) )
 	LED3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	LED3:setShaderVector( 0, 0.19, 1, 0, 0 )
 	LED3:setShaderVector( 1, 0, 0, 0, 0 )
@@ -110,7 +110,7 @@ CoD.CaptureCrate.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	LED2:setRGB( 0, 0, 0 )
 	LED2:setAlpha( 0.18 )
 	LED2:setScale( 0.94, 0.94 )
-	LED2:setImage( RegisterImage( 0x832BA507D0E7663 ) )
+	LED2:setImage( RegisterImage( "uie_ui_hud_core_player_widget_led_status" ) )
 	LED2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	LED2:setShaderVector( 0, 0, 1, 0, 0 )
 	LED2:setShaderVector( 1, 0, 0, 0, 0 )
@@ -173,7 +173,7 @@ CoD.CaptureCrate.__resetProperties = function ( f7_arg0 )
 	f7_arg0.ProgressBarBGBlur:completeAnimation()
 	f7_arg0.ProgressBarBacking:completeAnimation()
 	f7_arg0.text:setAlpha( 1 )
-	f7_arg0.text:setText( LocalizeToUpperString( 0x17565542D35AA75 ) )
+	f7_arg0.text:setText( LocalizeToUpperString( "killstreak/capturing_crate" ) )
 	f7_arg0.bar:setRGB( 0.92, 0.92, 0.92 )
 	f7_arg0.bar:setAlpha( 1 )
 	f7_arg0.Cap2:setAlpha( 1 )
@@ -241,7 +241,7 @@ CoD.CaptureCrate.__clipsPerState = {
 			f10_arg0.bar:setAlpha( 0.85 )
 			f10_arg0.clipFinished( f10_arg0.bar )
 			f10_arg0.text:completeAnimation()
-			f10_arg0.text:setText( LocalizeToUpperString( 0xE83473CEA04BD5B ) )
+			f10_arg0.text:setText( LocalizeToUpperString( "killstreak/hacking_crate" ) )
 			f10_arg0.clipFinished( f10_arg0.text )
 		end
 	},
@@ -254,7 +254,7 @@ CoD.CaptureCrate.__clipsPerState = {
 			f11_arg0.bar:setAlpha( 0.85 )
 			f11_arg0.clipFinished( f11_arg0.bar )
 			f11_arg0.text:completeAnimation()
-			f11_arg0.text:setText( LocalizeToUpperString( 0x5E4F35A99A1E628 ) )
+			f11_arg0.text:setText( LocalizeToUpperString( "killstreak/supply_drop_disarming_crate" ) )
 			f11_arg0.clipFinished( f11_arg0.text )
 		end
 	}

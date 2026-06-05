@@ -12,7 +12,7 @@ CoD.CPHoldToSkipSceneText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.anyChildUsesUpdateState = true
 	
 	local Hold = LUI.UIText.new( 0, 1, 121, -115, 0, 1, 0.5, 0.5 )
-	Hold:setText( Engine[0xF9F1239CFD921FE]( 0xC08CC61C226C4F5 ) )
+	Hold:setText( Engine[0xF9F1239CFD921FE]( "menu/scene_skip_preprompt" ) )
 	Hold:setTTF( "default" )
 	Hold:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( Hold )
@@ -23,7 +23,7 @@ CoD.CPHoldToSkipSceneText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.CPHoldToSkipSceneButton = CPHoldToSkipSceneButton
 	
 	local ToSkip = LUI.UIText.new( 0, 1, 210, 0, 0, 1, 0.5, 0.5 )
-	ToSkip:setText( Engine[0xF9F1239CFD921FE]( 0xECE1C7E3530500E ) )
+	ToSkip:setText( Engine[0xF9F1239CFD921FE]( "menu/scene_skip_postprompt" ) )
 	ToSkip:setTTF( "default" )
 	ToSkip:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( ToSkip )

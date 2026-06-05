@@ -31,7 +31,7 @@ CoD.GameEndScore_GameStatusPlayerKills.new = function ( f1_arg0, f1_arg1, f1_arg
 	self.PlayerKills = PlayerKills
 	
 	local playerKillsIcon = LUI.UIImage.new( 1, 1, -128, -82, 0, 0, 0, 50 )
-	playerKillsIcon:setImage( RegisterImage( 0x5EFE28D1E8EB917 ) )
+	playerKillsIcon:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_icon_kills" ) )
 	self:addElement( playerKillsIcon )
 	self.playerKillsIcon = playerKillsIcon
 	

@@ -7,7 +7,7 @@ LUI.createMenu.EmblemChooseIcon = function ( f1_arg0, f1_arg1 )
 	local self = CoD.Menu.NewForUIEditor( "EmblemChooseIcon", f1_arg0 )
 	local f1_local1 = self
 	SetMenuProperty( f1_local1, "_isEditor", "true" )
-	CoD.BreadcrumbUtility.SetClientStorageBufferForMode( f1_local1, f1_arg0, Enum.eModes[0x83EBA96F36BC4E5] )
+	CoD.BreadcrumbUtility.SetClientStorageBufferForMode( f1_local1, f1_arg0, Enum.eModes.mode_multiplayer )
 	CoD.CraftUtility.InvalidateSelectedDecalCategory( f1_arg0 )
 	self:setClass( CoD.EmblemChooseIcon )
 	self.soundSet = "ChooseDecal"
@@ -46,7 +46,7 @@ LUI.createMenu.EmblemChooseIcon = function ( f1_arg0, f1_arg1 )
 	
 	local TiledPlusGrid = LUI.UIImage.new( 0, 1.07, -135, -135, 0, 1, 0, 0 )
 	TiledPlusGrid:setAlpha( 0.05 )
-	TiledPlusGrid:setImage( RegisterImage( 0x6E37BAE22631294 ) )
+	TiledPlusGrid:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_repeat_plusgrid" ) )
 	TiledPlusGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledPlusGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledPlusGrid:setupNineSliceShader( 220, 220 )
@@ -125,53 +125,53 @@ LUI.createMenu.EmblemChooseIcon = function ( f1_arg0, f1_arg1 )
 			end
 		}
 	} )
-	self:registerEventHandler( "menu_loaded", function ( element, event )
+	self:registerEventHandler( "menu_loaded", function ( self, event )
 		local f8_local0 = nil
-		if element.menuLoaded then
-			f8_local0 = element:menuLoaded( event )
-		elseif element.super.menuLoaded then
-			f8_local0 = element.super:menuLoaded( event )
+		if self.menuLoaded then
+			f8_local0 = self:menuLoaded( event )
+		elseif self.super.menuLoaded then
+			f8_local0 = self.super:menuLoaded( event )
 		end
 		if IsEmblemEditor( f1_arg0 ) then
 			SendClientScriptMenuChangeNotify( f1_arg0, f1_local1, true )
 		elseif IsPaintshop( f1_arg0 ) then
-			CoD.CraftUtility.EmblemChooseIcon_SetPreviewDecalCamera( self, element, f1_arg0 )
+			CoD.CraftUtility.EmblemChooseIcon_SetPreviewDecalCamera( self, self, f1_arg0 )
 		end
 		if not f8_local0 then
-			f8_local0 = element:dispatchEventToChildren( event )
+			f8_local0 = self:dispatchEventToChildren( event )
 		end
 		return f8_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		if IsEmblemEditor( f9_arg2 ) then
-			CoD.CraftUtility.EmblemChooseIcon_SelectionRejected( self, f9_arg0, f9_arg2 )
-			GoBack( self, f9_arg2 )
-			ClearMenuSavedState( f9_arg1 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		if IsEmblemEditor( controller ) then
+			CoD.CraftUtility.EmblemChooseIcon_SelectionRejected( self, element, controller )
+			GoBack( self, controller )
+			ClearMenuSavedState( menu )
 			return true
-		elseif IsPaintshop( f9_arg2 ) then
-			CoD.CraftUtility.EmblemChooseIcon_SelectionRejected( self, f9_arg0, f9_arg2 )
-			CoD.CraftUtility.EmblemChooseIcon_RevertPreviewDecalCamera( self, f9_arg0, f9_arg2 )
-			GoBack( self, f9_arg2 )
-			ClearMenuSavedState( f9_arg1 )
+		elseif IsPaintshop( controller ) then
+			CoD.CraftUtility.EmblemChooseIcon_SelectionRejected( self, element, controller )
+			CoD.CraftUtility.EmblemChooseIcon_RevertPreviewDecalCamera( self, element, controller )
+			GoBack( self, controller )
+			ClearMenuSavedState( menu )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		if IsEmblemEditor( f10_arg2 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		if IsEmblemEditor( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
-		elseif IsPaintshop( f10_arg2 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+		elseif IsPaintshop( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], nil, function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], nil, function ( element, menu, controller, model )
 		return true
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x22361E23588705A], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "", nil, nil )
 		return false
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

@@ -36,7 +36,7 @@ CoD.LoadingScreenLoadbar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local LoadingBar = LUI.UIImage.new( 0, 1, 0, 0, 0.5, 0.5, -6, 6 )
 	LoadingBar:setRGB( ColorSet.CleanseBar.r, ColorSet.CleanseBar.g, ColorSet.CleanseBar.b )
-	LoadingBar:setImage( RegisterImage( 0xB21B5CD5C5090B0 ) )
+	LoadingBar:setImage( RegisterImage( "uie_t7_mp_menu_startflow_meterfill" ) )
 	LoadingBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	LoadingBar:setShaderVector( 0, 1, 0, 0, 0 )
 	LoadingBar:setShaderVector( 1, 0, 0, 0, 0 )

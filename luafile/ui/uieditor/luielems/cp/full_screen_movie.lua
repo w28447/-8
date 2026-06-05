@@ -115,16 +115,16 @@ LUI.createMenu.full_screen_movie = function ( f7_arg0, f7_arg1 )
 	self:linkToElementModel( self, "skippable", true, function ( model, f10_arg1 )
 		CoD.Menu.UpdateButtonShownState( f10_arg1, f7_local1, f7_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 	end )
-	f7_local1:AddButtonCallbackFunction( self, f7_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		if CoD.BaseUtility.IsSelfInState( self, "Skippable" ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f11_arg0, f11_arg2, "skippable", 1 ) and not CoD.VideoStreamingUtility.IsMoviePaused( self.Movie ) then
-			CoD.VideoStreamingUtility.SkipFullScreenMovie( self, f11_arg2 )
+	f7_local1:AddButtonCallbackFunction( self, f7_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.BaseUtility.IsSelfInState( self, "Skippable" ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "skippable", 1 ) and not CoD.VideoStreamingUtility.IsMoviePaused( self.Movie ) then
+			CoD.VideoStreamingUtility.SkipFullScreenMovie( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		if CoD.BaseUtility.IsSelfInState( self, "Skippable" ) and CoD.ModelUtility.IsSelfModelValueEqualTo( f12_arg0, f12_arg2, "skippable", 1 ) and not CoD.VideoStreamingUtility.IsMoviePaused( self.Movie ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.BaseUtility.IsSelfInState( self, "Skippable" ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "skippable", 1 ) and not CoD.VideoStreamingUtility.IsMoviePaused( self.Movie ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false

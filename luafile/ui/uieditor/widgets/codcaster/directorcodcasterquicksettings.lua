@@ -1,4 +1,4 @@
-require( "x64:48be5c6feaceeb4" )
+require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settinginfo" )
 require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settingslider" )
 
 CoD.DirectorCodCasterQuickSettings = InheritFrom( LUI.UIElement )
@@ -34,17 +34,17 @@ CoD.DirectorCodCasterQuickSettings.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ButtonList, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
+	f1_arg0:AddButtonCallbackFunction( ButtonList, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
 		if InFrontend() then
-			SaveShoutcasterSettings( self, f3_arg0, f3_arg2 )
-			GoBack( self, f3_arg2 )
+			SaveShoutcasterSettings( self, element, controller )
+			GoBack( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
+	end, function ( element, menu, controller )
 		if InFrontend() then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false

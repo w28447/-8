@@ -33,7 +33,7 @@ CoD.vhud_gunship_ammocounterframe.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.AmmoFrameInuse = AmmoFrameInuse
 	
 	local AmmoFrameInuseGlow = LUI.UIImage.new( 0, 0, -4, 152, 0, 0, -4, 122 )
-	AmmoFrameInuseGlow:setImage( RegisterImage( 0x40F5EB1A9F978E5 ) )
+	AmmoFrameInuseGlow:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_weapon_frame_inuse_glow" ) )
 	AmmoFrameInuseGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	AmmoFrameInuseGlow:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( AmmoFrameInuseGlow )

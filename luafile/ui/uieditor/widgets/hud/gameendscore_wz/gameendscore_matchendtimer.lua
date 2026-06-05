@@ -22,7 +22,7 @@ CoD.GameEndScore_MatchEndTimer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local led = LUI.UIImage.new( 0, 0, 1, 293, 0, 0, 2, 42 )
 	led:setAlpha( 0.02 )
-	led:setImage( RegisterImage( 0xC07F7432F86DA83 ) )
+	led:setImage( RegisterImage( "uie_wz_hud_map_danger_led" ) )
 	led:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	led:setShaderVector( 0, 0, 1, 0, 0 )
 	led:setShaderVector( 1, 0, 0, 0, 0 )
@@ -34,7 +34,7 @@ CoD.GameEndScore_MatchEndTimer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local led4 = LUI.UIImage.new( 0, 0, 289, 581, 0, 0, 38, 78 )
 	led4:setAlpha( 0.02 )
-	led4:setImage( RegisterImage( 0xC07F7432F86DA83 ) )
+	led4:setImage( RegisterImage( "uie_wz_hud_map_danger_led" ) )
 	led4:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	led4:setShaderVector( 0, 0, 0.28, 0, 0 )
 	led4:setShaderVector( 1, 0, 0, 0, 0 )
@@ -46,7 +46,7 @@ CoD.GameEndScore_MatchEndTimer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local led3 = LUI.UIImage.new( 0, 0, 289, 581, 0, 0, 2, 42 )
 	led3:setAlpha( 0.02 )
-	led3:setImage( RegisterImage( 0xC07F7432F86DA83 ) )
+	led3:setImage( RegisterImage( "uie_wz_hud_map_danger_led" ) )
 	led3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	led3:setShaderVector( 0, 0, 0.28, 0, 0 )
 	led3:setShaderVector( 1, 0, 0, 0, 0 )
@@ -58,7 +58,7 @@ CoD.GameEndScore_MatchEndTimer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local led2 = LUI.UIImage.new( 0, 0, 1, 293, 0, 0, 38, 78 )
 	led2:setAlpha( 0.02 )
-	led2:setImage( RegisterImage( 0xC07F7432F86DA83 ) )
+	led2:setImage( RegisterImage( "uie_wz_hud_map_danger_led" ) )
 	led2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	led2:setShaderVector( 0, 0, 1, 0, 0 )
 	led2:setShaderVector( 1, 0, 0, 0, 0 )
@@ -92,7 +92,7 @@ CoD.GameEndScore_MatchEndTimer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local border = LUI.UIImage.new( 0, 0, -4, 380, 0, 0, -2, 71 )
 	border:setRGB( 0.07, 0.07, 0.07 )
-	border:setImage( RegisterImage( 0xA3C76B80B69874D ) )
+	border:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_chamfer_border" ) )
 	border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	border:setShaderVector( 0, 0, 0, 0, 0 )
 	border:setupNineSliceShader( 18, 24 )

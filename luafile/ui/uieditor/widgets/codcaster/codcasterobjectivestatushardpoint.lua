@@ -9,7 +9,7 @@ CoD.CodCasterObjectiveStatusHardpoint.new = function ( f1_arg0, f1_arg1, f1_arg2
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BG = LUI.UIImage.new( 0, 0, 168.5, 198.5, 0, 0, 13, 43 )
-	BG:setImage( RegisterImage( 0x159D9B7B7294C91 ) )
+	BG:setImage( RegisterImage( "uie_ui_hud_core_waypoint_led" ) )
 	BG:subscribeToGlobalModel( f1_arg1, "HUDItems", "codcaster.hardpointVisibility", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -30,7 +30,7 @@ CoD.CodCasterObjectiveStatusHardpoint.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local objectiveCircleR = LUI.UIImage.new( 0.41, 0.41, 0, 30, 0.2, 0.2, 0, 30 )
 	objectiveCircleR:setYRot( 180 )
 	objectiveCircleR:setScale( 0.9, 0.9 )
-	objectiveCircleR:setImage( RegisterImage( 0x99464D465C38DB0 ) )
+	objectiveCircleR:setImage( RegisterImage( "uie_codcaster_objective_circle" ) )
 	objectiveCircleR:subscribeToGlobalModel( f1_arg1, "HUDItems", "codcaster.ObjectiveB.color", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
@@ -48,7 +48,7 @@ CoD.CodCasterObjectiveStatusHardpoint.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local objectiveCircleL = LUI.UIImage.new( 0.41, 0.41, 0, 30, 0.2, 0.2, 0, 30 )
 	objectiveCircleL:setScale( 0.9, 0.9 )
-	objectiveCircleL:setImage( RegisterImage( 0x99464D465C38DB0 ) )
+	objectiveCircleL:setImage( RegisterImage( "uie_codcaster_objective_circle" ) )
 	objectiveCircleL:subscribeToGlobalModel( f1_arg1, "HUDItems", "codcaster.ObjectiveA.color", function ( model )
 		local f5_local0 = model:get()
 		if f5_local0 ~= nil then
@@ -66,7 +66,7 @@ CoD.CodCasterObjectiveStatusHardpoint.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local objectiveIconL = LUI.UIImage.new( 0.41, 0.41, 0, 30, 0.2, 0.2, 0, 30 )
 	objectiveIconL:setScale( 0.9, 0.9 )
-	objectiveIconL:setImage( RegisterImage( 0x8A17F638A929803 ) )
+	objectiveIconL:setImage( RegisterImage( "uie_codcaster_objective_hardpoint_icon" ) )
 	objectiveIconL:subscribeToGlobalModel( f1_arg1, "HUDItems", "codcaster.ObjectiveA.color", function ( model )
 		local f7_local0 = model:get()
 		if f7_local0 ~= nil then
@@ -85,7 +85,7 @@ CoD.CodCasterObjectiveStatusHardpoint.new = function ( f1_arg0, f1_arg1, f1_arg2
 	local objectiveIconR = LUI.UIImage.new( 0.41, 0.41, 0, 30, 0.2, 0.2, 0, 30 )
 	objectiveIconR:setYRot( 180 )
 	objectiveIconR:setScale( 0.9, 0.9 )
-	objectiveIconR:setImage( RegisterImage( 0x8A17F638A929803 ) )
+	objectiveIconR:setImage( RegisterImage( "uie_codcaster_objective_hardpoint_icon" ) )
 	objectiveIconR:subscribeToGlobalModel( f1_arg1, "HUDItems", "codcaster.ObjectiveB.color", function ( model )
 		local f9_local0 = model:get()
 		if f9_local0 ~= nil then

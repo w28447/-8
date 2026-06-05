@@ -58,7 +58,7 @@ CoD.ContractTall.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local ContractRarityHeaderTile = CoD.ContractRarityHeaderTile.new( f1_arg0, f1_arg1, 0, 0, 16.5, 216.5, 0, 0, 9.5, 26.5 )
 	ContractRarityHeaderTile.Contract:setAlpha( 0 )
-	ContractRarityHeaderTile.Contract:setText( LocalizeToUpperString( 0x0 ) )
+	ContractRarityHeaderTile.Contract:setText( LocalizeToUpperString( "" ) )
 	ContractRarityHeaderTile:linkToElementModel( self, nil, false, function ( model )
 		ContractRarityHeaderTile:setModel( model, f1_arg1 )
 	end )
@@ -122,7 +122,7 @@ CoD.ContractTall.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	TotalTierCount:linkToElementModel( self, "totalRewardCount", true, function ( model )
 		local f11_local0 = model:get()
 		if f11_local0 ~= nil then
-			TotalTierCount:setText( LocalizeIntoString( 0x36DDA38F04CEAF, f11_local0 ) )
+			TotalTierCount:setText( LocalizeIntoString( "mpui/x_tiers", f11_local0 ) )
 		end
 	end )
 	self:addElement( TotalTierCount )
@@ -159,7 +159,7 @@ CoD.ContractTall.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local TabBottomLine = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -96, -92 )
 	TabBottomLine:setAlpha( 0.09 )
-	TabBottomLine:setImage( RegisterImage( 0x5526CF3733E24C4 ) )
+	TabBottomLine:setImage( RegisterImage( "uie_ui_menu_common_tab_line_bottom" ) )
 	TabBottomLine:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TabBottomLine )
 	self.TabBottomLine = TabBottomLine

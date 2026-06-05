@@ -18,7 +18,7 @@ CoD.AmmoWidget_CarryItem_Battery.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local Ball = LUI.UIImage.new( 0, 0, 0, 105, 0, 0, 0, 105 )
 	Ball:setScale( 0.9, 0.9 )
-	Ball:setImage( RegisterImage( 0xC81AA6AFD0B3978 ) )
+	Ball:setImage( RegisterImage( "uie_icon_carry_powercell" ) )
 	self:addElement( Ball )
 	self.Ball = Ball
 	

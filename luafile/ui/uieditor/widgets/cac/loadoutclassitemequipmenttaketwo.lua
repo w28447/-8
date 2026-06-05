@@ -58,44 +58,44 @@ CoD.LoadoutClassItemEquipmentTakeTwo.new = function ( f1_arg0, f1_arg1, f1_arg2,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09] )
 		return f8_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( EquipmentSlotLarge, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		CoD.CACUtility.OpenCACOverlay( self, f9_arg1, f9_arg2, "SpecialistEquipmentSelect", self, "primarygrenade" )
+	f1_arg0:AddButtonCallbackFunction( EquipmentSlotLarge, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.CACUtility.OpenCACOverlay( self, menu, controller, "SpecialistEquipmentSelect", self, "primarygrenade" )
 		return true
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( EquipmentSlotLarge, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualToEitherValue( f11_arg0, f11_arg2, "itemIndex", CoDShared.EmptyItemIndex, CoD.CACUtility.GetSpecialIssueEquipmentItemIndex() ) and IsGamepad( f11_arg2 ) then
-			CoD.CACUtility.EquipSpecialIssueItem( f11_arg2, f11_arg1, f11_arg0 )
+	f1_arg0:AddButtonCallbackFunction( EquipmentSlotLarge, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueEqualToEitherValue( element, controller, "itemIndex", CoDShared.EmptyItemIndex, CoD.CACUtility.GetSpecialIssueEquipmentItemIndex() ) and IsGamepad( controller ) then
+			CoD.CACUtility.EquipSpecialIssueItem( controller, menu, element )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualToEitherValue( f12_arg0, f12_arg2, "itemIndex", CoDShared.EmptyItemIndex, CoD.CACUtility.GetSpecialIssueEquipmentItemIndex() ) and IsGamepad( f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueEqualToEitherValue( element, controller, "itemIndex", CoDShared.EmptyItemIndex, CoD.CACUtility.GetSpecialIssueEquipmentItemIndex() ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( EquipmentSlotLarge, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		if IsMouseOrKeyboard( f13_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEitherValue( f13_arg0, f13_arg2, "itemIndex", CoDShared.EmptyItemIndex, CoD.CACUtility.GetSpecialIssueEquipmentItemIndex() ) then
-			CoD.CACUtility.EquipSpecialIssueItem( f13_arg2, f13_arg1, f13_arg0 )
+	f1_arg0:AddButtonCallbackFunction( EquipmentSlotLarge, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEitherValue( element, controller, "itemIndex", CoDShared.EmptyItemIndex, CoD.CACUtility.GetSpecialIssueEquipmentItemIndex() ) then
+			CoD.CACUtility.EquipSpecialIssueItem( controller, menu, element )
 			return true
 		else
 			
 		end
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		if IsMouseOrKeyboard( f14_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEitherValue( f14_arg0, f14_arg2, "itemIndex", CoDShared.EmptyItemIndex, CoD.CACUtility.GetSpecialIssueEquipmentItemIndex() ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x679ACA6FFC6C8F3, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEitherValue( element, controller, "itemIndex", CoDShared.EmptyItemIndex, CoD.CACUtility.GetSpecialIssueEquipmentItemIndex() ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/remove", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	EquipmentSlotLarge:AddContextualMenuAction( f1_arg0, f1_arg1, 0x679ACA6FFC6C8F3, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
+	EquipmentSlotLarge:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/remove", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualToEitherValue( f15_arg0, f15_arg2, "itemIndex", CoDShared.EmptyItemIndex, CoD.CACUtility.GetSpecialIssueEquipmentItemIndex() ) then
 			return function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
 				CoD.CACUtility.EquipSpecialIssueItem( f16_arg2, f16_arg1, f16_arg0 )
@@ -162,44 +162,44 @@ CoD.LoadoutClassItemEquipmentTakeTwo.new = function ( f1_arg0, f1_arg1, f1_arg2,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09] )
 		return f24_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( EquipmentSlot, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3 )
-		CoD.CACUtility.OpenCACOverlay( self, f25_arg1, f25_arg2, "SpecialistEquipmentSelect", self, "primarygrenade" )
+	f1_arg0:AddButtonCallbackFunction( EquipmentSlot, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.CACUtility.OpenCACOverlay( self, menu, controller, "SpecialistEquipmentSelect", self, "primarygrenade" )
 		return true
-	end, function ( f26_arg0, f26_arg1, f26_arg2 )
-		CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( EquipmentSlot, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f27_arg0, f27_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( f27_arg2 ) then
-			CoD.CACUtility.EquipSpecialIssueItem( f27_arg2, f27_arg1, f27_arg0 )
+	f1_arg0:AddButtonCallbackFunction( EquipmentSlot, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( controller ) then
+			CoD.CACUtility.EquipSpecialIssueItem( controller, menu, element )
 			return true
 		else
 			
 		end
-	end, function ( f28_arg0, f28_arg1, f28_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f28_arg0, f28_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( f28_arg2 ) then
-			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( EquipmentSlot, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( f29_arg0, f29_arg1, f29_arg2, f29_arg3 )
-		if IsMouseOrKeyboard( f29_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( f29_arg0, f29_arg2, "itemIndex", CoDShared.EmptyItemIndex ) then
-			CoD.CACUtility.EquipSpecialIssueItem( f29_arg2, f29_arg1, f29_arg0 )
+	f1_arg0:AddButtonCallbackFunction( EquipmentSlot, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) then
+			CoD.CACUtility.EquipSpecialIssueItem( controller, menu, element )
 			return true
 		else
 			
 		end
-	end, function ( f30_arg0, f30_arg1, f30_arg2 )
-		if IsMouseOrKeyboard( f30_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( f30_arg0, f30_arg2, "itemIndex", CoDShared.EmptyItemIndex ) then
-			CoD.Menu.SetButtonLabel( f30_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x679ACA6FFC6C8F3, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/remove", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	EquipmentSlot:AddContextualMenuAction( f1_arg0, f1_arg1, 0x679ACA6FFC6C8F3, function ( f31_arg0, f31_arg1, f31_arg2, f31_arg3 )
+	EquipmentSlot:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/remove", function ( f31_arg0, f31_arg1, f31_arg2, f31_arg3 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f31_arg0, f31_arg2, "itemIndex", CoDShared.EmptyItemIndex ) then
 			return function ( f32_arg0, f32_arg1, f32_arg2, f32_arg3 )
 				CoD.CACUtility.EquipSpecialIssueItem( f32_arg2, f32_arg1, f32_arg0 )
@@ -267,55 +267,55 @@ CoD.LoadoutClassItemEquipmentTakeTwo.new = function ( f1_arg0, f1_arg1, f1_arg2,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09] )
 		return f40_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( EquipmentSlotExtra, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f41_arg0, f41_arg1, f41_arg2, f41_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueEqualTo( f41_arg0, f41_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.BaseUtility.IsSelfInState( self, "TakeTwo" ) then
-			CoD.CACUtility.EquipAdditionalEquipment( f41_arg1, f41_arg2, f41_arg0 )
-			CoD.CACUtility.UpdateButtonPromptStatesForListSlots( f41_arg1, f41_arg0, f41_arg2 )
+	f1_arg0:AddButtonCallbackFunction( EquipmentSlotExtra, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.BaseUtility.IsSelfInState( self, "TakeTwo" ) then
+			CoD.CACUtility.EquipAdditionalEquipment( menu, controller, element )
+			CoD.CACUtility.UpdateButtonPromptStatesForListSlots( menu, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f42_arg0, f42_arg1, f42_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueEqualTo( f42_arg0, f42_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.BaseUtility.IsSelfInState( self, "TakeTwo" ) then
-			CoD.Menu.SetButtonLabel( f42_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and CoD.BaseUtility.IsSelfInState( self, "TakeTwo" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( EquipmentSlotExtra, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f43_arg0, f43_arg1, f43_arg2, f43_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f43_arg0, f43_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( f43_arg2 ) then
-			CoD.CACUtility.RemoveAdditionalEquipment( f43_arg1, f43_arg2, f43_arg0 )
-			CoD.CACUtility.UpdateButtonPromptStatesForListSlots( f43_arg1, f43_arg0, f43_arg2 )
+	f1_arg0:AddButtonCallbackFunction( EquipmentSlotExtra, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( controller ) then
+			CoD.CACUtility.RemoveAdditionalEquipment( menu, controller, element )
+			CoD.CACUtility.UpdateButtonPromptStatesForListSlots( menu, element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f44_arg0, f44_arg1, f44_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f44_arg0, f44_arg2, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( f44_arg2 ) then
-			CoD.Menu.SetButtonLabel( f44_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( EquipmentSlotExtra, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( f45_arg0, f45_arg1, f45_arg2, f45_arg3 )
-		if IsMouseOrKeyboard( f45_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( f45_arg0, f45_arg2, "itemIndex", CoDShared.EmptyItemIndex ) then
-			CoD.CACUtility.RemoveAdditionalEquipment( f45_arg1, f45_arg2, f45_arg0 )
-			CoD.FreeCursorUtility.UpdateSetupContext( f45_arg0, f45_arg2 )
+	f1_arg0:AddButtonCallbackFunction( EquipmentSlotExtra, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_remove", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) then
+			CoD.CACUtility.RemoveAdditionalEquipment( menu, controller, element )
+			CoD.FreeCursorUtility.UpdateSetupContext( element, controller )
 			return true
 		else
 			
 		end
-	end, function ( f46_arg0, f46_arg1, f46_arg2 )
-		if IsMouseOrKeyboard( f46_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( f46_arg0, f46_arg2, "itemIndex", CoDShared.EmptyItemIndex ) then
-			CoD.Menu.SetButtonLabel( f46_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x679ACA6FFC6C8F3, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoDShared.EmptyItemIndex ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/remove", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	EquipmentSlotExtra:AddContextualMenuAction( f1_arg0, f1_arg1, 0x679ACA6FFC6C8F3, function ( f47_arg0, f47_arg1, f47_arg2, f47_arg3 )
+	EquipmentSlotExtra:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/remove", function ( f47_arg0, f47_arg1, f47_arg2, f47_arg3 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f47_arg0, f47_arg2, "itemIndex", CoDShared.EmptyItemIndex ) then
 			return function ( f48_arg0, f48_arg1, f48_arg2, f48_arg3 )
 				CoD.CACUtility.RemoveAdditionalEquipment( f48_arg1, f48_arg2, f48_arg0 )

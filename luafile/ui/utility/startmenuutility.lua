@@ -7,7 +7,7 @@ CoD.StartMenuUtility.GetSessionModeFromLobby = function ()
 		f1_local1 = LuaUtils.GetEModeForLobbyMainMode( f1_local0:get() )
 	end
 	if not f1_local1 then
-		f1_local1 = Enum.eModes[0xB22E0240605CFFE]
+		f1_local1 = Enum.eModes.mode_invalid
 	end
 	return f1_local1
 end
@@ -21,7 +21,7 @@ CoD.StartMenuUtility.InitDataForStartMenu = function ( f2_arg0, f2_arg1, f2_arg2
 	CoD.StartMenuUtility.SetModeForStartMenu( f2_arg1 )
 	CoD.StartMenuUtility.SetStorageBufferForMenu( f2_arg1, f2_arg2 )
 	CoD.StartMenuUtility.SetLoadoutStorageBufferForMenu( f2_arg1, f2_arg2 )
-	CoD.BreadcrumbUtility.SetClientStorageBufferForMode( f2_arg1, f2_arg2, Enum.eModes[0x83EBA96F36BC4E5] )
+	CoD.BreadcrumbUtility.SetClientStorageBufferForMode( f2_arg1, f2_arg2, Enum.eModes.mode_multiplayer )
 	CoD.LobbyUtility.SetMenuControllerRestriction( f2_arg0, f2_arg2, 1 )
 end
 
@@ -35,9 +35,9 @@ end
 CoD.StartMenuUtility.OpenSpecialistOverlay = function ( f4_arg0, f4_arg1, f4_arg2 )
 	local f4_local0 = CoD.BaseUtility.GetMenuSessionMode( f4_arg1 )
 	local f4_local1 = "MPSpecialistHUB"
-	if f4_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	if f4_local0 == Enum.eModes.mode_zombies then
 		f4_local1 = "ZMPersonalizeCharacterMain"
-	elseif f4_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f4_local0 == Enum.eModes.mode_warzone then
 		f4_local1 = "WZPersonalizeCharacterMain"
 	end
 	return OpenOverlay( f4_arg0, f4_local1, f4_arg2, {
@@ -61,9 +61,9 @@ end
 CoD.StartMenuUtility.SetStorageBufferForMenu = function ( f7_arg0, f7_arg1 )
 	local f7_local0 = CoD.BaseUtility.GetMenuSessionMode( f7_arg0 )
 	local f7_local1 = Enum.StorageFileType[0xD5A7695E03A7A90]
-	if f7_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	if f7_local0 == Enum.eModes.mode_zombies then
 		f7_local1 = Enum.StorageFileType[0xA57D6164B91A8FC]
-	elseif f7_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f7_local0 == Enum.eModes.mode_warzone then
 		f7_local1 = Enum.StorageFileType[0xAB0E693244221BC]
 	end
 	f7_arg0._storageBuffer = Engine.StorageGetBuffer( f7_arg1, f7_local1 )
@@ -72,14 +72,14 @@ end
 CoD.StartMenuUtility.SetLoadoutStorageBufferForMenu = function ( f8_arg0, f8_arg1 )
 	local f8_local0 = CoD.BaseUtility.GetMenuSessionMode( f8_arg0 )
 	local f8_local1 = Enum.StorageFileType[0x6C886CEB6BF4BCA]
-	if f8_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	if f8_local0 == Enum.eModes.mode_zombies then
 		f8_local1 = Enum.StorageFileType[0x9E5D6DF436F1EE]
-	elseif f8_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f8_local0 == Enum.eModes.mode_warzone then
 		f8_local1 = Enum.StorageFileType[0xDF87425733853AE]
 	end
 	local f8_local2 = Engine.StorageGetBuffer( f8_arg1, f8_local1 )
 	if f8_local2 then
-		f8_arg0._storageLoadoutBuffer = f8_local2[0x766CE60E25569A3]
+		f8_arg0._storageLoadoutBuffer = f8_local2.cacloadouts
 	end
 end
 
@@ -197,7 +197,7 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 	if Engine[0xA55C3ACD0D2BCF0]() then
 		table.insert( f17_local0, {
 			models = {
-				name = Engine[0xF9F1239CFD921FE]( 0x4C78B93031D0F44 ),
+				name = Engine[0xF9F1239CFD921FE]( "menu/theater_caps" ),
 				tabWidget = "CoD.StartMenu_Theater"
 			},
 			properties = {
@@ -218,7 +218,7 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 			if CoD.BaseUtility.IsDvarEnabled( "ui_enableContractsAndBounties" ) and IsPublicOnlineGame() then
 				table.insert( f17_local0, {
 					models = {
-						name = 0x616EBD2B8F67E64,
+						name = "blackmarket/contracts",
 						tabWidget = "CoD.StartMenu_Contracts"
 					},
 					properties = {
@@ -230,7 +230,7 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 			if CoD.isWarzone then
 				table.insert( f17_local0, {
 					models = {
-						name = 0x315E0B90BD1F6DD,
+						name = "menu/team_scoreboard",
 						tabWidget = "CoD.StartMenu_WZTeamScoreboard"
 					},
 					properties = {
@@ -263,7 +263,7 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 				if CoD.BaseUtility.IsDvarEnabled( "ui_enableContractsAndBounties" ) and IsPublicOnlineGame() then
 					table.insert( f17_local0, {
 						models = {
-							name = 0x616EBD2B8F67E64,
+							name = "blackmarket/contracts",
 							tabWidget = "CoD.StartMenu_Contracts"
 						},
 						properties = {
@@ -284,7 +284,7 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 			elseif IsGameTypeCombatTraining() then
 				table.insert( f17_local0, {
 					models = {
-						name = 0x8B0D8B4A861BBC5,
+						name = "menu/specialists_caps",
 						tabWidget = "CoD.StartMenu_ChangeSpecialist_CT"
 					},
 					properties = {
@@ -296,7 +296,7 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 				if f17_local3.PositionDraft.stage:get() ~= CoD.PlayerRoleUtility.DraftStage.DRAFT_STAGE_DRAFT then
 					table.insert( f17_local0, {
 						models = {
-							name = 0x8B0D8B4A861BBC5,
+							name = "menu/specialists_caps",
 							tabWidget = "CoD.StartMenu_ChangeSpecialist"
 						},
 						properties = {
@@ -307,7 +307,7 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 				if CoD.BaseUtility.IsDvarEnabled( "ui_enableContractsAndBounties" ) and IsPublicOnlineGame() then
 					table.insert( f17_local0, {
 						models = {
-							name = 0x616EBD2B8F67E64,
+							name = "blackmarket/contracts",
 							tabWidget = "CoD.StartMenu_Contracts"
 						},
 						properties = {
@@ -319,7 +319,7 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 			if Engine.GameModeIsMode( Enum.eGameModes[0x95910ACF90F64AD] ) == false and Engine.GameModeIsMode( Enum.eGameModes[0x58ECA70A244C08F] ) == false and (not CoD.CodCasterUtility.IsCodCasterOrAssigned( f17_arg0 ) or Engine[0x22EAAB59AA27E9B]( "allow_shoutcaster_team_switch" ) == 1) and not Engine.IsVisibilityBitSet( f17_arg0, Enum.UIVisibilityBit[0x4828BED794DA0A5] ) and not Engine.IsVisibilityBitSet( f17_arg0, Enum.UIVisibilityBit[0x1CDCB451655ABCF] ) and not Engine.IsVisibilityBitSet( f17_arg0, Enum.UIVisibilityBit[0x24E603C16FCC38F] ) and CoD.IsTeamChangeAllowed( f17_arg0 ) then
 				table.insert( f17_local0, {
 					models = {
-						name = 0xE3B1996EF83F7ED,
+						name = "mpui/change_team",
 						tabWidget = "CoD.StartMenu_ChangeTeam"
 					},
 					properties = {
@@ -330,14 +330,14 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 		end
 	elseif not LuaUtils.OfflineOnlyDemo() and not IsPlayerAGuest( f17_arg0 ) then
 		local f17_local4 = LobbyData.GetCurrentMenuTarget()
-		local f17_local5 = f17_local4["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING )
+		local f17_local5 = f17_local4.id == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING )
 		local f17_local6 = DataSources.StartMenuBreadcrumbs.getModel( f17_arg0 )
 		DataSources.StartMenuBreadcrumbs.recreateStartTabBreadcrumbModelsIfNeeded( f17_arg0, f17_local1, f17_local6 )
-		if not IsLobbyNetworkModeLAN() and (not CoD.DirectorUtility.IsOfflineDemo() or Engine[0xCB675CA7856DA25]()) and f17_local1 ~= Enum.eModes[0xB22E0240605CFFE] and not f17_local5 then
+		if not IsLobbyNetworkModeLAN() and (not CoD.DirectorUtility.IsOfflineDemo() or Engine[0xCB675CA7856DA25]()) and f17_local1 ~= Enum.eModes.mode_invalid and not f17_local5 then
 			local f17_local7 = "CoD.StartMenu_Barracks"
-			if f17_local1 == Enum.eModes[0x3723205FAE52C4A] then
+			if f17_local1 == Enum.eModes.mode_zombies then
 				f17_local7 = "CoD.StartMenu_Barracks_ZM"
-			elseif f17_local1 == Enum.eModes[0xBF1DCC8138A9D39] then
+			elseif f17_local1 == Enum.eModes.mode_warzone then
 				f17_local7 = "CoD.StartMenu_Barracks_WZ"
 			elseif IsArenaMode() then
 				f17_local7 = "CoD.StartMenu_Barracks_WL"
@@ -345,7 +345,7 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 			if not IsCustomLobby() then
 				table.insert( f17_local0, {
 					models = {
-						name = 0x10B1AA71AB55844,
+						name = "menu/tab_barracks_caps",
 						tabWidget = f17_local7
 					},
 					properties = {
@@ -356,11 +356,11 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 		end
 		if not CoD.DirectorUtility.DisableForCurrentMilestone( f17_arg0 ) or Engine[0xCB675CA7856DA25]() then
 			if not IsLobbyNetworkModeLAN() and (not IsCustomLobby() or f17_local5) then
-				if f17_local1 == Enum.eModes[0x83EBA96F36BC4E5] then
+				if f17_local1 == Enum.eModes.mode_multiplayer then
 					if f17_local5 then
 						table.insert( f17_local0, {
 							models = {
-								name = 0xE66423FDAAC9FBF,
+								name = "menu/tab_challenges_caps",
 								tabWidget = "CoD.Challenges_MP_Stickerbook_CombatTraining"
 							},
 							properties = {
@@ -370,7 +370,7 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 					else
 						table.insert( f17_local0, {
 							models = {
-								name = 0xE66423FDAAC9FBF,
+								name = "menu/tab_challenges_caps",
 								tabWidget = "CoD.Challenges_MP_Summary"
 							},
 							properties = {
@@ -378,20 +378,20 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 							}
 						} )
 					end
-				elseif f17_local1 == Enum.eModes[0x3723205FAE52C4A] then
+				elseif f17_local1 == Enum.eModes.mode_zombies then
 					table.insert( f17_local0, {
 						models = {
-							name = 0xE66423FDAAC9FBF,
+							name = "menu/tab_challenges_caps",
 							tabWidget = "CoD.Challenges_ZM_Summary"
 						},
 						properties = {
 							tabId = "challenges"
 						}
 					} )
-				elseif f17_local1 == Enum.eModes[0xBF1DCC8138A9D39] then
+				elseif f17_local1 == Enum.eModes.mode_warzone then
 					table.insert( f17_local0, {
 						models = {
-							name = 0xE66423FDAAC9FBF,
+							name = "menu/tab_challenges_caps",
 							tabWidget = "CoD.ChallengesWZSummary"
 						},
 						properties = {
@@ -401,7 +401,7 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 				else
 					table.insert( f17_local0, {
 						models = {
-							name = 0xE66423FDAAC9FBF,
+							name = "menu/tab_challenges_caps",
 							tabWidget = "CoD.ChallengesGlobalStickerbook"
 						},
 						properties = {
@@ -413,7 +413,7 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 			if not f17_local5 then
 				table.insert( f17_local0, {
 					models = {
-						name = 0xF635C8E33C499F,
+						name = "menu/tab_identity_caps",
 						tabWidget = "CoD.StartMenu_Identity",
 						breadcrumb = f17_local6.identity
 					},
@@ -429,7 +429,7 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 		local f17_local4 = f17_local0
 		local f17_local5 = {
 			models = {
-				name = 0xCD4D3B3B862F8C1,
+				name = "menu/tab_options_caps",
 				tabWidget = "CoD.StartMenu_Options_DOA"
 			}
 		}
@@ -448,7 +448,7 @@ DataSources.StartMenuTabs = ListHelper_SetupDataSource( "StartMenuTabs", functio
 		local f17_local4 = f17_local0
 		local f17_local5 = {
 			models = {
-				name = 0xCD4D3B3B862F8C1,
+				name = "menu/tab_options_caps",
 				tabWidget = "CoD.StartMenu_Options"
 			}
 		}
@@ -526,7 +526,7 @@ DataSources.WZTrialUpsellOptions = ListHelper_SetupDataSource( "WZTrialUpsellOpt
 end, true )
 CoD.StartMenuUtility.GetArenaQuitPenaltyText = function ( f22_arg0, f22_arg1 )
 	local f22_local0 = CoD.TeamUtility.GetTeamCount( CoD.TeamUtility.GetTeamID( f22_arg0 ) )
-	local f22_local1 = Engine[0xE00B2F29271C60B]( 0xEF165671949ADD6 )
+	local f22_local1 = Engine[0xE00B2F29271C60B]( "arena_event_league_play_default" )
 	if f22_local1 then
 		if f22_local1[0xA1ACED8DDF5F039] < f22_local0 then
 			return tostring( -CoD.StartMenuUtility.GetArenaQuitPenalty( f22_local1, true ) )
@@ -541,7 +541,7 @@ end
 CoD.StartMenuUtility.GetArenaQuitPenalty = function ( f23_arg0, f23_arg1 )
 	local f23_local0 = 0
 	if f23_arg0 then
-		f23_local0 = f23_arg0.losepointstreak[1][0x3FEAB3544C345B1]
+		f23_local0 = f23_arg0.losepointstreak[1].point
 		if f23_arg1 then
 			f23_local0 = f23_local0 + f23_arg0[0xA210A5E11BA587C]
 		end
@@ -552,7 +552,7 @@ end
 CoD.StartMenuUtility.GetArenaQuitDeservesExtraPenalty = function ( f24_arg0 )
 	if LuaUtils.IsArenaPublicGame() then
 		local f24_local0 = CoD.TeamUtility.GetTeamCount( CoD.TeamUtility.GetTeamID( f24_arg0 ) )
-		local f24_local1 = Engine[0xE00B2F29271C60B]( 0xEF165671949ADD6 )
+		local f24_local1 = Engine[0xE00B2F29271C60B]( "arena_event_league_play_default" )
 		if f24_local1 then
 			return f24_local1[0xA1ACED8DDF5F039] < f24_local0
 		end
@@ -561,7 +561,7 @@ CoD.StartMenuUtility.GetArenaQuitDeservesExtraPenalty = function ( f24_arg0 )
 end
 
 CoD.StartMenuUtility.GetArenaQuitPopupDesc = function ( f25_arg0 )
-	local f25_local0 = Engine[0xE00B2F29271C60B]( 0xEF165671949ADD6 )
+	local f25_local0 = Engine[0xE00B2F29271C60B]( "arena_event_league_play_default" )
 	if f25_local0 then
 		if CoD.StartMenuUtility.GetArenaQuitDeservesExtraPenalty( f25_arg0 ) then
 			return Engine[0xF9F1239CFD921FE]( 0xBB9A12E59003F27, f25_local0[0xA1ACED8DDF5F039] + 1, CoD.StartMenuUtility.GetArenaQuitPenalty( f25_local0, true ) )
@@ -583,7 +583,7 @@ CoD.StartMenuUtility.QuitGameWarningPrompt = function ( f26_arg0, f26_arg1 )
 			return Engine[0xF9F1239CFD921FE]( f27_local0 )
 		end,
 		description = function ( f28_arg0 )
-			local f28_local0 = 0x0
+			local f28_local0 = ""
 			if Engine.IsMultiplayerGame() then
 				if LuaUtils.IsArenaPublicGame() then
 					return CoD.StartMenuUtility.GetArenaQuitPopupDesc( f26_arg0 )

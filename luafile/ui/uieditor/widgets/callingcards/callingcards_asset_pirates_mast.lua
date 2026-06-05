@@ -11,7 +11,7 @@ CoD.CallingCards_Asset_Pirates_Mast.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local mast = LUI.UIImage.new( 0, 0, 0, 1000, 0, 0, 0, 280 )
-	mast:setImage( RegisterImage( 0x3D1A4E4E0179D0A ) )
+	mast:setImage( RegisterImage( "uie_ui_icon_callingcards_pirates_mast" ) )
 	self:addElement( mast )
 	self.mast = mast
 	

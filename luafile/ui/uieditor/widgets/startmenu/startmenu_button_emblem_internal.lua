@@ -51,7 +51,7 @@ CoD.StartMenu_Button_Emblem_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.emblem0 = emblem0
 	
 	local Title = LUI.UIText.new( 0, 0, 18, 327, 1, 1, -36.5, -3.5 )
-	Title:setText( Engine[0xF9F1239CFD921FE]( 0x55D96CC762EABDD ) )
+	Title:setText( Engine[0xF9F1239CFD921FE]( "menu/multiplayer" ) )
 	Title:setTTF( "ttmussels_demibold" )
 	Title:setLetterSpacing( 2 )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

@@ -23,7 +23,7 @@ CoD.VHUD_Sentinel_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local TextureOverlayDots = LUI.UIImage.new( 0.5, 0.5, -960, 960, 0.5, 0.5, -540, 540 )
 	TextureOverlayDots:setAlpha( 0.9 )
-	TextureOverlayDots:setImage( RegisterImage( 0x1BB0B757582EF33 ) )
+	TextureOverlayDots:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_textureoverlaydots" ) )
 	TextureOverlayDots:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TextureOverlayDots )
 	self.TextureOverlayDots = TextureOverlayDots

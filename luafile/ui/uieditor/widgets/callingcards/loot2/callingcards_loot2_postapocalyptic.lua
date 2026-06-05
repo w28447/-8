@@ -1,32 +1,32 @@
-CoD[0xA9B99FD1C2A5E41] = InheritFrom( LUI.UIElement )
-CoD[0xA9B99FD1C2A5E41].__defaultWidth = 960
-CoD[0xA9B99FD1C2A5E41].__defaultHeight = 240
-CoD[0xA9B99FD1C2A5E41].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_loot2_postapocalyptic = InheritFrom( LUI.UIElement )
+CoD.callingcards_loot2_postapocalyptic.__defaultWidth = 960
+CoD.callingcards_loot2_postapocalyptic.__defaultHeight = 240
+CoD.callingcards_loot2_postapocalyptic.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0xA9B99FD1C2A5E41] )
+	self:setClass( CoD.callingcards_loot2_postapocalyptic )
 	self.id = "callingcards_loot2_postapocalyptic"
 	self.soundSet = "none"
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local bg = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	bg:setImage( RegisterImage( 0x575B3AC594FD081 ) )
+	bg:setImage( RegisterImage( "uie_ui_menu_callingcards_postapocalyptic_bg" ) )
 	self:addElement( bg )
 	self.bg = bg
 	
 	local light = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	light:setImage( RegisterImage( 0x58AEFA5255649BA ) )
+	light:setImage( RegisterImage( "uie_ui_menu_callingcards_postapocalyptic_light" ) )
 	self:addElement( light )
 	self.light = light
 	
 	local smoke = LUI.UIImage.new( 0, 0, 150, 1110, 0, 0, 0, 240 )
-	smoke:setImage( RegisterImage( 0x7984A234B5F0AAF ) )
+	smoke:setImage( RegisterImage( "uie_ui_menu_callingcards_postapocalyptic_smoke" ) )
 	smoke:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( smoke )
 	self.smoke = smoke
 	
 	local smoke2 = LUI.UIImage.new( 0, 0, -50, 910, 0, 0, 90, 240 )
 	smoke2:setScale( -1, 1 )
-	smoke2:setImage( RegisterImage( 0x7984A234B5F0AAF ) )
+	smoke2:setImage( RegisterImage( "uie_ui_menu_callingcards_postapocalyptic_smoke" ) )
 	smoke2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( smoke2 )
 	self.smoke2 = smoke2
@@ -38,7 +38,7 @@ CoD[0xA9B99FD1C2A5E41].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0xA9B99FD1C2A5E41].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_loot2_postapocalyptic.__resetProperties = function ( f2_arg0 )
 	f2_arg0.light:completeAnimation()
 	f2_arg0.smoke:completeAnimation()
 	f2_arg0.smoke2:completeAnimation()
@@ -49,7 +49,7 @@ CoD[0xA9B99FD1C2A5E41].__resetProperties = function ( f2_arg0 )
 	f2_arg0.smoke2:setAlpha( 1 )
 end
 
-CoD[0xA9B99FD1C2A5E41].__clipsPerState = {
+CoD.callingcards_loot2_postapocalyptic.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()

@@ -97,13 +97,13 @@ CoD.ReservesRevealItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local CardWrapper = LUI.UIImage.new( 0.5, 0.5, -176, 176, 0.5, 0.5, -336, 336 )
 	CardWrapper:setAlpha( 0 )
-	CardWrapper:setImage( RegisterImage( 0xB2D673208AD3DFC ) )
+	CardWrapper:setImage( RegisterImage( "uie_ui_menu_mtx_card_wrapper_main" ) )
 	self:addElement( CardWrapper )
 	self.CardWrapper = CardWrapper
 	
 	local CardReflection01 = LUI.UIImage.new( 0.5, 0.5, -176, 176, 0.5, 0.5, -336, 336 )
 	CardReflection01:setAlpha( 0 )
-	CardReflection01:setImage( RegisterImage( 0x921AFF0D06B9F40 ) )
+	CardReflection01:setImage( RegisterImage( "uie_ui_menu_mtx_card_wrapper_reflection" ) )
 	CardReflection01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	CardReflection01:setShaderVector( 0, 0, 1, 0, 0 )
 	CardReflection01:setShaderVector( 1, 0, 0, 0, 0 )
@@ -190,7 +190,7 @@ CoD.ReservesRevealItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local RerollCardWrapper = LUI.UIImage.new( 0.5, 0.5, -176, 176, 0.5, 0.5, -336, 336 )
 	RerollCardWrapper:setAlpha( 0 )
-	RerollCardWrapper:setImage( RegisterImage( 0xB2D673208AD3DFC ) )
+	RerollCardWrapper:setImage( RegisterImage( "uie_ui_menu_mtx_card_wrapper_main" ) )
 	self:addElement( RerollCardWrapper )
 	self.RerollCardWrapper = RerollCardWrapper
 	

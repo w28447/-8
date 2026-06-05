@@ -256,18 +256,18 @@ Lobby.ProcessQueue.CompleteEvent = function ( f14_arg0, f14_arg1, f14_arg2 )
 			Engine.PrintError( Enum[0x7A63DCD561B0FA8][0xA1C4971DA015C84], "^6LobbyAction: mismatched task completed " .. f14_arg1 .. " event. Head: " .. f14_local0.name .. " was at actionId: " .. tostring( f14_local0.actionId ) .. " but we received actionId: " .. tostring( f14_local1 ) .. ".\n" )
 			Engine.PrintError( Enum[0x7A63DCD561B0FA8][0xA1C4971DA015C84], "LOBBY VM ERROR: Please copy full log and email to codcoreonline@treyarch.com" )
 			if Engine[0x573048F8D3B4E25]() == false then
-				Engine[0xBC42C678E40DBE8]( Enum.errorCode[0x2FD312C2C06EC11], "Lobby process queue error occurred, please email your logs to codcoreonline@treyarch.com" )
+				Engine[0xBC42C678E40DBE8]( Enum.errorcode[0x2FD312C2C06EC11], "Lobby process queue error occurred, please email your logs to codcoreonline@treyarch.com" )
 			else
-				Engine[0xBC42C678E40DBE8]( Enum.errorCode[0x2FD312C2C06EC11], Engine[0xF9F1239CFD921FE]( 0x44F5E7E813DBEAB, LuaUtils.ValueToHex( LuaEnum.ERROR_CODE.TASK_MISMATCHED ) ) )
+				Engine[0xBC42C678E40DBE8]( Enum.errorcode[0x2FD312C2C06EC11], Engine[0xF9F1239CFD921FE]( 0x44F5E7E813DBEAB, LuaUtils.ValueToHex( LuaEnum.ERROR_CODE.TASK_MISMATCHED ) ) )
 			end
 			return 
 		elseif f14_local0.state ~= Lobby.ProcessQueue.ACTIONSTATE.RUNNING and (not f14_local0.canceled or f14_local0.canceled == false) then
 			Engine.PrintError( Enum[0x7A63DCD561B0FA8][0xA1C4971DA015C84], "^6LobbyAction: received a task completed " .. f14_arg1 .. " event for non-running action queue head: " .. f14_local0.name .. ", actionId: " .. tostring( f14_local0.actionId ) .. ".\n" )
 			Engine.PrintError( Enum[0x7A63DCD561B0FA8][0xA1C4971DA015C84], "LOBBY VM ERROR: Please copy full log and email to codcoreonline@treyarch.com" )
 			if Engine[0x573048F8D3B4E25]() == false then
-				Engine[0xBC42C678E40DBE8]( Enum.errorCode[0x2FD312C2C06EC11], "Lobby process queue error occurred, please email your logs to codcoreonline@treyarch.com" )
+				Engine[0xBC42C678E40DBE8]( Enum.errorcode[0x2FD312C2C06EC11], "Lobby process queue error occurred, please email your logs to codcoreonline@treyarch.com" )
 			else
-				Engine[0xBC42C678E40DBE8]( Enum.errorCode[0x2FD312C2C06EC11], Engine[0xF9F1239CFD921FE]( 0x44F5E7E813DBEAB, LuaUtils.ValueToHex( LuaEnum.ERROR_CODE.NONRUNNING_TASK ) ) )
+				Engine[0xBC42C678E40DBE8]( Enum.errorcode[0x2FD312C2C06EC11], Engine[0xF9F1239CFD921FE]( 0x44F5E7E813DBEAB, LuaUtils.ValueToHex( LuaEnum.ERROR_CODE.NONRUNNING_TASK ) ) )
 			end
 			return 
 		end

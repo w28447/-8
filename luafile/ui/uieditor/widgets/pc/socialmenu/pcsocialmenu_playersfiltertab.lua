@@ -19,7 +19,7 @@ CoD.PCSocialMenu_PlayersFilterTab.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	GlowPC = LUI.UIImage.new( 0, 1, 17, -17, 0, 0, 8, 34 )
 	GlowPC:setAlpha( 0 )
-	GlowPC:setImage( RegisterImage( 0x3738D990402E4AF ) )
+	GlowPC:setImage( RegisterImage( "uie_director_mode_text_tab_glow_pc" ) )
 	self:addElement( GlowPC )
 	self.GlowPC = GlowPC
 	

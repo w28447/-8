@@ -31,7 +31,7 @@ CoD.Loot_BonusToastStandard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local Bonus = LUI.UIText.new( 0, 0, 0, 400, 0, 0, 0, 28 )
 	Bonus:setRGB( 0.11, 0.15, 0.05 )
-	Bonus:setText( Engine[0xF9F1239CFD921FE]( 0x800CBD9308E73C2 ) )
+	Bonus:setText( Engine[0xF9F1239CFD921FE]( "mpui/bonus_caps" ) )
 	Bonus:setTTF( "ttmussels_demibold" )
 	Bonus:setLetterSpacing( 5 )
 	Bonus:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -75,7 +75,7 @@ CoD.Loot_BonusToastStandard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local CommonFrame01 = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, 24, 2 )
 	CommonFrame01:setRGB( 0.59, 0.59, 0.59 )
 	CommonFrame01:setAlpha( 0.25 )
-	CommonFrame01:setImage( RegisterImage( 0xCA6E5C175806396 ) )
+	CommonFrame01:setImage( RegisterImage( "uie_ui_menu_common_frame01" ) )
 	CommonFrame01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	CommonFrame01:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonFrame01:setupNineSliceShader( 8, 8 )

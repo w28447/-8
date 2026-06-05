@@ -27,7 +27,7 @@ CoD.AmmoWidgetVehicleReloadMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local Fill = LUI.UIImage.new( 0.11, 1.01, -2, -2, 0.31, 0.6, 4, 4 )
 	Fill:setRGB( 0.07, 1, 0 )
-	Fill:setImage( RegisterImage( 0xCBD4913D279BBCA ) )
+	Fill:setImage( RegisterImage( "uie_ui_hud_core_overheat_meter" ) )
 	Fill:setMaterial( LUI.UIImage.GetCachedMaterial( 0x5EBE8D6E802F0F5 ) )
 	Fill:setShaderVector( 1, 0, 0, 0, 0 )
 	Fill:setShaderVector( 2, 1, 0, 0, 0 )

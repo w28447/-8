@@ -24,9 +24,9 @@ CoD.vhud_tank_robot_rocket_counter.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	self.BackingFrame = BackingFrame
 	
 	local AmmoCounterInternal = CoD.vhud_gunship_ammo_count_internal.new( f1_arg0, f1_arg1, 0.5, 0.5, -39, 41, 0.4, 0.4, -19, 27 )
-	AmmoCounterInternal.ammoBack:setImage( RegisterImage( 0xBD62059304E38C7 ) )
+	AmmoCounterInternal.ammoBack:setImage( RegisterImage( "uie_ui_hud_vehicle_scarab_missle" ) )
 	AmmoCounterInternal.ammoBack:setShaderVector( 0, 4, 1, 0, 0 )
-	AmmoCounterInternal.ammoFront:setImage( RegisterImage( 0xBD62059304E38C7 ) )
+	AmmoCounterInternal.ammoFront:setImage( RegisterImage( "uie_ui_hud_vehicle_scarab_missle" ) )
 	AmmoCounterInternal.ammoFront:setShaderVector( 0, 4, 1, 0, 0 )
 	AmmoCounterInternal:linkToElementModel( self, nil, false, function ( model )
 		AmmoCounterInternal:setModel( model, f1_arg1 )

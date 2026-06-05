@@ -750,7 +750,7 @@ Lobby.Actions.SetDefaultArenaPlaylist = function ( f68_arg0 )
 				Engine.SetProfileVar( f68_arg0, "playlist_arena", tostring( f69_local2.id ) )
 				f69_local4 = Engine.CreateModel( Engine.GetGlobalModel(), "lobbyPlaylist" )
 				Engine.SetModelValue( Engine.CreateModel( f69_local4, "name" ), Engine.ToUpper( Engine[0xF9F1239CFD921FE]( f69_local2.name ) ) )
-				Engine.SetModelValue( Engine.CreateModel( f69_local4, "kickerText" ), 0x0 )
+				Engine.SetModelValue( Engine.CreateModel( f69_local4, "kickerText" ), "" )
 			end
 			LobbyVM.ProcessCompleteSuccess( {
 				actionId = f69_arg0.actionId
@@ -848,7 +848,7 @@ Lobby.Actions.OpenSurvey = function ( f79_arg0, f79_arg1 )
 		controller = f79_arg0,
 		fromTarget = f79_arg1,
 		startFuncPtr = function ( f80_arg0 )
-			if f79_arg1["mainmode"] == Enum.LobbyMainMode[0xD5FBB8D74AC6D62] then
+			if f79_arg1.mainmode == Enum.LobbyMainMode[0xD5FBB8D74AC6D62] then
 				LobbyVM.ExecuteLobbyVMOpenSurvey( f80_arg0.controller )
 			end
 			LobbyVM.ProcessCompleteSuccess( {
@@ -1228,7 +1228,7 @@ Lobby.Actions.CanHostServer = function ( f113_arg0, f113_arg1 )
 		failureReason = nil,
 		startFuncPtr = function ( f114_arg0 )
 			local f114_local0 = Engine[0x29B25E8DA873863]( Engine[0xEA2BE00F49480D]( Enum.LobbyType[0x92676CF5B6FCD43] ) and Enum.LobbyModule[0x98EA1BB7164D103] or Enum.LobbyModule[0xC46B73E8E18BA2], Enum.LobbyType[0x92676CF5B6FCD43] )
-			if f114_arg0.toTarget["mainmode"] == Enum.LobbyMainMode[0x7E41449995CD57E] then
+			if f114_arg0.toTarget.mainmode == Enum.LobbyMainMode[0x7E41449995CD57E] then
 				if Engine.IsFeatureBanned and Engine.IsFeatureBanned( f114_arg0.controller, LuaEnum.FEATURE_BAN.MP_HOSTING ) == true then
 					Engine.PrintError( Enum[0x7A63DCD561B0FA8][0x59962D5EF982597], "CANNOT HOST A SERVER: HOST_SERVER_BANNED_FROM_HOSTING.\n" )
 					LobbyVM.ProcessCompleteFailure( {
@@ -1418,7 +1418,7 @@ Lobby.Actions.SearchForLobby = function ( f117_arg0, f117_arg1 )
 		end
 		,
 		errorFuncPtr = function ()
-			return Engine[0xF9F1239CFD921FE]( 0x72F63694AEE31E0 )
+			return Engine[0xF9F1239CFD921FE]( "menu/no_sessions" )
 		end
 		,
 		cancelFuncPtr = function ( f121_arg0 )
@@ -1578,9 +1578,9 @@ Lobby.Actions.QoSJoinSearchResults = function ( f122_arg0, f122_arg1, f122_arg2 
 					xuidstr = f126_arg1.xuidstr
 				}
 				Engine[0xDE279ECDDDD966]( Engine.GetPrimaryController(), 0x69BB0F061EE9FE5, {
-					[0x4D5696D6CC12C2F] = "invalid qos",
-					[0xC301327501D1E33] = f126_arg1.validResult,
-					[0xB5C735486FC7CCB] = f126_arg1.xuid
+					status = "invalid qos",
+					valid_result = f126_arg1.validResult,
+					xuid = f126_arg1.xuid
 				} )
 				return 
 			end
@@ -1610,27 +1610,27 @@ Lobby.Actions.QoSJoinSearchResults = function ( f122_arg0, f122_arg1, f122_arg2 
 			if f126_arg1.numAvailableSlots <= 0 then
 				table.insert( f126_arg0.qosResultsInvalid, f126_local0 )
 				Engine[0xDE279ECDDDD966]( Engine.GetPrimaryController(), 0x69BB0F061EE9FE5, {
-					[0x4D5696D6CC12C2F] = "ignore qos full",
-					[0xC301327501D1E33] = f126_local0.validResult,
-					[0xB5C735486FC7CCB] = f126_local0.xuid,
-					[0x4F06C6EEDA8117E] = f126_local0.gameSecurityId,
-					["game_security_key"] = f126_local0.gameSecurityKey,
-					[0x531894BFD7141D0] = f126_local0.hostAddress,
-					[0x2B41998FA3BFFF5] = f126_local0.protocol,
-					[0x73E75F9F7CD05DB] = f126_local0.isMP,
-					[0x79084C2D9930E90] = f126_local0.isMigrating,
-					[0xC83AAF4B52386C5] = f126_local0.numAvailableSlots,
-					[0x71438D91EE14A83] = f126_local0.maxLocalPlayersAllowed,
-					[0x56C01933E1C7B2E] = f126_local0.allowGuests,
-					[0x60665EBC12305D7] = f126_local0.isMatchEndingSoon,
-					[0xFF95C0713324A4] = f126_local0.isMatchLoading,
-					[0x5C78C17E110A17] = f126_local0.isDedicated,
-					[0xF1F610DEC910DA] = f126_local0.hostXuid,
-					[0x452F941EF87D736] = f126_local0.skill,
-					[0x9B84710151BAF78] = f126_local0.largestParty,
-					[0xF0C611526EAB2B9] = f126_local0.latency,
-					[0x155D04EDC797A1A] = f126_local0.minLatency,
-					[0x259F4FBB3F7A05] = f126_local0.realAddr
+					status = "ignore qos full",
+					valid_result = f126_local0.validResult,
+					xuid = f126_local0.xuid,
+					game_security_id = f126_local0.gameSecurityId,
+					game_security_key = f126_local0.gameSecurityKey,
+					host_address = f126_local0.hostAddress,
+					protocol = f126_local0.protocol,
+					is_mp = f126_local0.isMP,
+					is_migrating = f126_local0.isMigrating,
+					num_available_slots = f126_local0.numAvailableSlots,
+					max_local_players_allowed = f126_local0.maxLocalPlayersAllowed,
+					allow_guests = f126_local0.allowGuests,
+					is_match_ending_soon = f126_local0.isMatchEndingSoon,
+					is_match_loading = f126_local0.isMatchLoading,
+					is_dedicated = f126_local0.isDedicated,
+					host_xuid = f126_local0.hostXuid,
+					skill = f126_local0.skill,
+					largest_party = f126_local0.largestParty,
+					latency = f126_local0.latency,
+					min_latency = f126_local0.minLatency,
+					real_addr = f126_local0.realAddr
 				} )
 				return 
 			end
@@ -1641,106 +1641,106 @@ Lobby.Actions.QoSJoinSearchResults = function ( f122_arg0, f122_arg1, f122_arg2 
 			if LuaUtils.IsArenaPublicGame() and not f126_local1 and math.floor( math.abs( f126_local0.skill - Engine.GetArenaPoints( f122_arg0, Engine.GetCurrentArenaSlot() ) ) ) > Lobby.MatchmakingArena.GetArenaSkillRange( true ) then
 				table.insert( f126_arg0.qosResultsInvalid, f126_local0 )
 				Engine[0xDE279ECDDDD966]( Engine.GetPrimaryController(), 0x69BB0F061EE9FE5, {
-					[0x4D5696D6CC12C2F] = "ignore qos skill",
-					[0xC301327501D1E33] = f126_local0.validResult,
-					[0xB5C735486FC7CCB] = f126_local0.xuid,
-					[0x4F06C6EEDA8117E] = f126_local0.gameSecurityId,
-					["game_security_key"] = f126_local0.gameSecurityKey,
-					[0x531894BFD7141D0] = f126_local0.hostAddress,
-					[0x2B41998FA3BFFF5] = f126_local0.protocol,
-					[0x73E75F9F7CD05DB] = f126_local0.isMP,
-					[0x79084C2D9930E90] = f126_local0.isMigrating,
-					[0xC83AAF4B52386C5] = f126_local0.numAvailableSlots,
-					[0x71438D91EE14A83] = f126_local0.maxLocalPlayersAllowed,
-					[0x56C01933E1C7B2E] = f126_local0.allowGuests,
-					[0x60665EBC12305D7] = f126_local0.isMatchEndingSoon,
-					[0xFF95C0713324A4] = f126_local0.isMatchLoading,
-					[0x5C78C17E110A17] = f126_local0.isDedicated,
-					[0xF1F610DEC910DA] = f126_local0.hostXuid,
-					[0x452F941EF87D736] = f126_local0.skill,
-					[0x9B84710151BAF78] = f126_local0.largestParty,
-					[0xF0C611526EAB2B9] = f126_local0.latency,
-					[0x155D04EDC797A1A] = f126_local0.minLatency,
-					[0x259F4FBB3F7A05] = f126_local0.realAddr
+					status = "ignore qos skill",
+					valid_result = f126_local0.validResult,
+					xuid = f126_local0.xuid,
+					game_security_id = f126_local0.gameSecurityId,
+					game_security_key = f126_local0.gameSecurityKey,
+					host_address = f126_local0.hostAddress,
+					protocol = f126_local0.protocol,
+					is_mp = f126_local0.isMP,
+					is_migrating = f126_local0.isMigrating,
+					num_available_slots = f126_local0.numAvailableSlots,
+					max_local_players_allowed = f126_local0.maxLocalPlayersAllowed,
+					allow_guests = f126_local0.allowGuests,
+					is_match_ending_soon = f126_local0.isMatchEndingSoon,
+					is_match_loading = f126_local0.isMatchLoading,
+					is_dedicated = f126_local0.isDedicated,
+					host_xuid = f126_local0.hostXuid,
+					skill = f126_local0.skill,
+					largest_party = f126_local0.largestParty,
+					latency = f126_local0.latency,
+					min_latency = f126_local0.minLatency,
+					real_addr = f126_local0.realAddr
 				} )
 				return 
 			elseif f126_local0.isDedicated == true then
 				if f126_local0.latency * 1000 > Dvar[0x39E15BDB813DCCB]:get() then
 					table.insert( f126_arg0.qosResultsInvalid, f126_local0 )
 					Engine[0xDE279ECDDDD966]( Engine.GetPrimaryController(), 0x69BB0F061EE9FE5, {
-						[0x4D5696D6CC12C2F] = "ignore qos latency",
-						[0xC301327501D1E33] = f126_local0.validResult,
-						[0xB5C735486FC7CCB] = f126_local0.xuid,
-						[0x4F06C6EEDA8117E] = f126_local0.gameSecurityId,
-						["game_security_key"] = f126_local0.gameSecurityKey,
-						[0x531894BFD7141D0] = f126_local0.hostAddress,
-						[0x2B41998FA3BFFF5] = f126_local0.protocol,
-						[0x73E75F9F7CD05DB] = f126_local0.isMP,
-						[0x79084C2D9930E90] = f126_local0.isMigrating,
-						[0xC83AAF4B52386C5] = f126_local0.numAvailableSlots,
-						[0x71438D91EE14A83] = f126_local0.maxLocalPlayersAllowed,
-						[0x56C01933E1C7B2E] = f126_local0.allowGuests,
-						[0x60665EBC12305D7] = f126_local0.isMatchEndingSoon,
-						[0xFF95C0713324A4] = f126_local0.isMatchLoading,
-						[0x5C78C17E110A17] = f126_local0.isDedicated,
-						[0xF1F610DEC910DA] = f126_local0.hostXuid,
-						[0x452F941EF87D736] = f126_local0.skill,
-						[0x9B84710151BAF78] = f126_local0.largestParty,
-						[0xF0C611526EAB2B9] = f126_local0.latency,
-						[0x155D04EDC797A1A] = f126_local0.minLatency,
-						[0x259F4FBB3F7A05] = f126_local0.realAddr
+						status = "ignore qos latency",
+						valid_result = f126_local0.validResult,
+						xuid = f126_local0.xuid,
+						game_security_id = f126_local0.gameSecurityId,
+						game_security_key = f126_local0.gameSecurityKey,
+						host_address = f126_local0.hostAddress,
+						protocol = f126_local0.protocol,
+						is_mp = f126_local0.isMP,
+						is_migrating = f126_local0.isMigrating,
+						num_available_slots = f126_local0.numAvailableSlots,
+						max_local_players_allowed = f126_local0.maxLocalPlayersAllowed,
+						allow_guests = f126_local0.allowGuests,
+						is_match_ending_soon = f126_local0.isMatchEndingSoon,
+						is_match_loading = f126_local0.isMatchLoading,
+						is_dedicated = f126_local0.isDedicated,
+						host_xuid = f126_local0.hostXuid,
+						skill = f126_local0.skill,
+						largest_party = f126_local0.largestParty,
+						latency = f126_local0.latency,
+						min_latency = f126_local0.minLatency,
+						real_addr = f126_local0.realAddr
 					} )
 					return 
 				end
 			elseif f126_local0.latency * 1000 > Dvar[0xD12B3AE4A4BEBB8]:get() then
 				table.insert( f126_arg0.qosResultsInvalid, f126_local0 )
 				Engine[0xDE279ECDDDD966]( Engine.GetPrimaryController(), 0x69BB0F061EE9FE5, {
-					[0x4D5696D6CC12C2F] = "ignore qos latency",
-					[0xC301327501D1E33] = f126_local0.validResult,
-					[0xB5C735486FC7CCB] = f126_local0.xuid,
-					[0x4F06C6EEDA8117E] = f126_local0.gameSecurityId,
-					["game_security_key"] = f126_local0.gameSecurityKey,
-					[0x531894BFD7141D0] = f126_local0.hostAddress,
-					[0x2B41998FA3BFFF5] = f126_local0.protocol,
-					[0x73E75F9F7CD05DB] = f126_local0.isMP,
-					[0x79084C2D9930E90] = f126_local0.isMigrating,
-					[0xC83AAF4B52386C5] = f126_local0.numAvailableSlots,
-					[0x71438D91EE14A83] = f126_local0.maxLocalPlayersAllowed,
-					[0x56C01933E1C7B2E] = f126_local0.allowGuests,
-					[0x60665EBC12305D7] = f126_local0.isMatchEndingSoon,
-					[0xFF95C0713324A4] = f126_local0.isMatchLoading,
-					[0x5C78C17E110A17] = f126_local0.isDedicated,
-					[0xF1F610DEC910DA] = f126_local0.hostXuid,
-					[0x452F941EF87D736] = f126_local0.skill,
-					[0x9B84710151BAF78] = f126_local0.largestParty,
-					[0xF0C611526EAB2B9] = f126_local0.latency,
-					[0x155D04EDC797A1A] = f126_local0.minLatency,
-					[0x259F4FBB3F7A05] = f126_local0.realAddr
+					status = "ignore qos latency",
+					valid_result = f126_local0.validResult,
+					xuid = f126_local0.xuid,
+					game_security_id = f126_local0.gameSecurityId,
+					game_security_key = f126_local0.gameSecurityKey,
+					host_address = f126_local0.hostAddress,
+					protocol = f126_local0.protocol,
+					is_mp = f126_local0.isMP,
+					is_migrating = f126_local0.isMigrating,
+					num_available_slots = f126_local0.numAvailableSlots,
+					max_local_players_allowed = f126_local0.maxLocalPlayersAllowed,
+					allow_guests = f126_local0.allowGuests,
+					is_match_ending_soon = f126_local0.isMatchEndingSoon,
+					is_match_loading = f126_local0.isMatchLoading,
+					is_dedicated = f126_local0.isDedicated,
+					host_xuid = f126_local0.hostXuid,
+					skill = f126_local0.skill,
+					largest_party = f126_local0.largestParty,
+					latency = f126_local0.latency,
+					min_latency = f126_local0.minLatency,
+					real_addr = f126_local0.realAddr
 				} )
 				return 
 			end
 			Engine[0xDE279ECDDDD966]( Engine.GetPrimaryController(), 0x69BB0F061EE9FE5, {
-				[0x4D5696D6CC12C2F] = "valid qos",
-				[0xC301327501D1E33] = f126_local0.validResult,
-				[0xB5C735486FC7CCB] = f126_local0.xuid,
-				[0x4F06C6EEDA8117E] = f126_local0.gameSecurityId,
-				["game_security_key"] = f126_local0.gameSecurityKey,
-				[0x531894BFD7141D0] = f126_local0.hostAddress,
-				[0x2B41998FA3BFFF5] = f126_local0.protocol,
-				[0x73E75F9F7CD05DB] = f126_local0.isMP,
-				[0x79084C2D9930E90] = f126_local0.isMigrating,
-				[0xC83AAF4B52386C5] = f126_local0.numAvailableSlots,
-				[0x71438D91EE14A83] = f126_local0.maxLocalPlayersAllowed,
-				[0x56C01933E1C7B2E] = f126_local0.allowGuests,
-				[0x60665EBC12305D7] = f126_local0.isMatchEndingSoon,
-				[0xFF95C0713324A4] = f126_local0.isMatchLoading,
-				[0x5C78C17E110A17] = f126_local0.isDedicated,
-				[0xF1F610DEC910DA] = f126_local0.hostXuid,
-				[0x452F941EF87D736] = f126_local0.skill,
-				[0x9B84710151BAF78] = f126_local0.largestParty,
-				[0xF0C611526EAB2B9] = f126_local0.latency,
-				[0x155D04EDC797A1A] = f126_local0.minLatency,
-				[0x259F4FBB3F7A05] = f126_local0.realAddr
+				status = "valid qos",
+				valid_result = f126_local0.validResult,
+				xuid = f126_local0.xuid,
+				game_security_id = f126_local0.gameSecurityId,
+				game_security_key = f126_local0.gameSecurityKey,
+				host_address = f126_local0.hostAddress,
+				protocol = f126_local0.protocol,
+				is_mp = f126_local0.isMP,
+				is_migrating = f126_local0.isMigrating,
+				num_available_slots = f126_local0.numAvailableSlots,
+				max_local_players_allowed = f126_local0.maxLocalPlayersAllowed,
+				allow_guests = f126_local0.allowGuests,
+				is_match_ending_soon = f126_local0.isMatchEndingSoon,
+				is_match_loading = f126_local0.isMatchLoading,
+				is_dedicated = f126_local0.isDedicated,
+				host_xuid = f126_local0.hostXuid,
+				skill = f126_local0.skill,
+				largest_party = f126_local0.largestParty,
+				latency = f126_local0.latency,
+				min_latency = f126_local0.minLatency,
+				real_addr = f126_local0.realAddr
 			} )
 			f126_arg0.updateTime = Engine[0x9D33D652B9B0F3B]()
 			if #f126_arg0.qosResultsValid == 0 then
@@ -1791,7 +1791,7 @@ Lobby.Actions.AdvertiseLobby = function ( f129_arg0 )
 			local f131_local0 = ""
 			local f131_local1 = ""
 			if f131_arg0.onOff == true then
-				f131_local0 = Engine[0xF9F1239CFD921FE]( 0x72F63694AEE31E0 )
+				f131_local0 = Engine[0xF9F1239CFD921FE]( "menu/no_sessions" )
 				f131_local1 = "Failed to turn on lobby advertising"
 			else
 				f131_local1 = "Failed to turn off lobby advertising"
@@ -1979,7 +1979,7 @@ Lobby.Actions.JoinHost = function ( f145_arg0, f145_arg1, f145_arg2, f145_arg3, 
 		end
 		,
 		errorFuncPtr = function ( f148_arg0 )
-			local f148_local0 = Engine[0xF9F1239CFD921FE]( 0xA26AA910A2D8FD8 )
+			local f148_local0 = Engine[0xF9F1239CFD921FE]( "menu/join_result_not_joinable" )
 			if f148_arg0.joinResult == nil and #f148_arg0.joinResults == 0 then
 				return f148_local0
 			end
@@ -1987,11 +1987,11 @@ Lobby.Actions.JoinHost = function ( f145_arg0, f145_arg1, f145_arg2, f145_arg3, 
 			local f148_local2, f148_local3 = Lobby.Join.JoinResultToString( f148_local1, true )
 			if f148_local3 then
 				local f148_local4 = Engine[0xF9F1239CFD921FE]( "menu/lobby" )
-				local f148_local5 = 0x0
+				local f148_local5 = ""
 				if f148_local1 == Enum.JoinResult[0x190D2DCFDB65D5] then
-					f148_local5 = 0x55D96CC762EABDD
+					f148_local5 = "menu/multiplayer"
 				elseif f148_local1 == Enum.JoinResult[0xFD8202DCFA3EF29] then
-					f148_local5 = 0xB06081B8B4567F2
+					f148_local5 = "menu/zombies"
 				end
 				f148_local0 = Engine[0xF9F1239CFD921FE]( f148_local2.errorMsg, f148_local4, f148_local5 )
 			else
@@ -2026,7 +2026,7 @@ Lobby.Actions.LobbyJoinXUID = function ( f149_arg0, f149_arg1, f149_arg2 )
 		end
 		,
 		errorFuncPtr = function ( f153_arg0 )
-			local f153_local0 = Engine[0xF9F1239CFD921FE]( 0xA26AA910A2D8FD8 )
+			local f153_local0 = Engine[0xF9F1239CFD921FE]( "menu/join_result_not_joinable" )
 			if #f153_arg0.joinResults == 0 then
 				return f153_local0
 			else
@@ -2095,22 +2095,22 @@ Lobby.Actions.LobbyJoinXUIDExt = function ( f154_arg0, f154_arg1, f154_arg2, f15
 		end
 		,
 		errorFuncPtr = function ( f158_arg0 )
-			local f158_local0 = Enum.XONLINE_NAT_TYPE[0x9571467DC6166AD]
+			local f158_local0 = Enum.XONLINE_NAT_TYPE.xonline_nat_open
 			if f158_arg0.infoProbe ~= nil and f158_arg0.infoProbe.probeResult ~= nil and f158_arg0.infoProbe.probeResult.natType ~= nil then
 				f158_local0 = f158_arg0.infoProbe.probeResult.natType
 			end
 			local f158_local1 = LuaUtils.IsCompatibleNatConnection( f158_local0 )
-			local f158_local2 = Engine[0xF9F1239CFD921FE]( 0xA26AA910A2D8FD8 )
+			local f158_local2 = Engine[0xF9F1239CFD921FE]( "menu/join_result_not_joinable" )
 			if #f158_arg0.joinResults == 0 then
 				if f158_local1 == false then
-					f158_local2 = Engine[0xF9F1239CFD921FE]( 0xF537235B7DCCDA1 )
+					f158_local2 = Engine[0xF9F1239CFD921FE]( "menu/join_result_not_joinable_nat_type" )
 				end
 				return f158_local2
 			end
 			local f158_local3 = f158_arg0.joinResults[#f158_arg0.joinResults].joinResult
 			local f158_local4, f158_local5 = Lobby.Join.JoinResultToString( f158_local3, true )
 			if f158_local1 == false and (f158_local3 == Enum.JoinResult[0xB4F111D99295074] or f158_local3 == Enum.JoinResult[0x5C738AF2ADFCAEF]) then
-				f158_local2 = Engine[0xF9F1239CFD921FE]( 0xF537235B7DCCDA1 )
+				f158_local2 = Engine[0xF9F1239CFD921FE]( "menu/join_result_not_joinable_nat_type" )
 			else
 				if f158_local5 == true then
 					f158_local4.errorMsg = Lobby.Join.GetRestrictedJoinFailedMessage( f158_arg0.infoProbe, true )
@@ -2161,22 +2161,22 @@ Lobby.Actions.LobbyJoinSession = function ( f159_arg0, f159_arg1, f159_arg2 )
 		end
 		,
 		errorFuncPtr = function ( f163_arg0 )
-			local f163_local0 = Enum.XONLINE_NAT_TYPE[0x9571467DC6166AD]
+			local f163_local0 = Enum.XONLINE_NAT_TYPE.xonline_nat_open
 			if f163_arg0.infoProbe ~= nil and f163_arg0.infoProbe.probeResult ~= nil and f163_arg0.infoProbe.probeResult.natType ~= nil then
 				f163_local0 = f163_arg0.infoProbe.probeResult.natType
 			end
 			local f163_local1 = LuaUtils.IsCompatibleNatConnection( f163_local0 )
-			local f163_local2 = Engine[0xF9F1239CFD921FE]( 0xA26AA910A2D8FD8 )
+			local f163_local2 = Engine[0xF9F1239CFD921FE]( "menu/join_result_not_joinable" )
 			if #f163_arg0.joinResults == 0 then
 				if f163_local1 == false then
-					f163_local2 = Engine[0xF9F1239CFD921FE]( 0xF537235B7DCCDA1 )
+					f163_local2 = Engine[0xF9F1239CFD921FE]( "menu/join_result_not_joinable_nat_type" )
 				end
 				return f163_local2
 			end
 			local f163_local3 = f163_arg0.joinResults[#f163_arg0.joinResults].joinResult
 			local f163_local4 = Lobby.Join.JoinResultToString( f163_local3, true )
 			if f163_local1 == false and (f163_local3 == Enum.JoinResult[0xB4F111D99295074] or f163_local3 == Enum.JoinResult[0x5C738AF2ADFCAEF]) then
-				f163_local2 = Engine[0xF9F1239CFD921FE]( 0xF537235B7DCCDA1 )
+				f163_local2 = Engine[0xF9F1239CFD921FE]( "menu/join_result_not_joinable_nat_type" )
 			else
 				f163_local2 = Engine[0xF9F1239CFD921FE]( f163_local4.errorMsg )
 			end
@@ -2276,7 +2276,7 @@ Lobby.Actions.UpdateUI = function ( f172_arg0, f172_arg1 )
 		controller = f172_arg0,
 		toTarget = f172_arg1,
 		startFuncPtr = function ( f173_arg0 )
-			if LuaUtils.SkipDirectorOnlineMenu() and f172_arg1[0x4BCADBA8E631B86] == "director_online" then
+			if LuaUtils.SkipDirectorOnlineMenu() and f172_arg1.name == "director_online" then
 				LobbyVM.ProcessCompleteSuccess( {
 					actionId = f173_arg0.actionId
 				} )
@@ -2302,7 +2302,7 @@ Lobby.Actions.SetNetworkMode = function ( f174_arg0, f174_arg1 )
 		networkMode = f174_arg1,
 		startFuncPtr = function ( f175_arg0 )
 			Engine[0xEF56B086D9D2C36]( f175_arg0.networkMode )
-			Engine.Exec( f175_arg0.controller, "savegameRestore" )
+			Engine.exec( f175_arg0.controller, "savegameRestore" )
 			Engine.ExecNow( f175_arg0.controller, "invalidateEmblemComponent" )
 			LobbyVM.ProcessCompleteSuccess( {
 				actionId = f175_arg0.actionId
@@ -2584,7 +2584,7 @@ Lobby.Actions.SetSavedOrDefaultMap = function ( f196_arg0, f196_arg1 )
 		startFuncPtr = function ( f197_arg0 )
 			local f197_local0 = Engine[0xC3DF042E7492B66]( Enum.LobbyModule[0x98EA1BB7164D103] )
 			if Engine.IsCampaignGame() then
-				if f196_arg1[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_ONLINE_CP_STORY then
+				if f196_arg1.name == LuaEnum.UI.DIRECTOR_ONLINE_CP_STORY then
 					local f197_local1 = Engine.GetSavedMap( "story" )
 					if string.len( f197_local1 ) == 0 then
 						f197_local1 = LuaUtils.GetDefaultMap( f196_arg1 )
@@ -2599,7 +2599,7 @@ Lobby.Actions.SetSavedOrDefaultMap = function ( f196_arg0, f196_arg1 )
 					Engine[0x9DB4788AE93C72D]( f197_local0, f197_local1 )
 				end
 			end
-			if f196_arg1["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_CUSTOM ) or f196_arg1["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_CUSTOM ) then
+			if f196_arg1.id == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_CUSTOM ) or f196_arg1.id == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_CUSTOM ) then
 				Engine[0xB4A27DBBE6D51CF]( f197_local0, true )
 			end
 			LobbyVM.ProcessCompleteSuccess( {
@@ -2784,7 +2784,7 @@ Lobby.Actions.AsyncMatchmakingStartSearch = function ( f216_arg0, f216_arg1, f21
 		controller = Engine.GetPrimaryController(),
 		timeout = f216_arg1,
 		presenceJoinInfo = f216_arg2,
-		msgOverride = 0x0,
+		msgOverride = "",
 		errorDebugMsg = "Unknown Error",
 		startFuncPtr = function ( f217_arg0 )
 			local f217_local0 = nil
@@ -2794,10 +2794,10 @@ Lobby.Actions.AsyncMatchmakingStartSearch = function ( f216_arg0, f216_arg1, f21
 			Lobby.MatchmakingAsync.EmptyEventQueue()
 			local f217_local1 = Lobby.MatchmakingAsync.MatchmakingSearchSummaryLog
 			local f217_local2 = Lobby.MatchmakingAsync.GetLocalUserInfo( f217_arg0.controller )
-			f217_local1[0x48ADCCF3C622ADC] = f217_local2.xuid
+			f217_local1.party_host_user_id = f217_local2.xuid
 			f217_local1 = Lobby.MatchmakingAsync.PartyToMatchSummary
 			f217_local2 = Lobby.MatchmakingAsync.GetLocalUserInfo( f217_arg0.controller )
-			f217_local1[0x48ADCCF3C622ADC] = f217_local2.xuid
+			f217_local1.party_host_user_id = f217_local2.xuid
 			f217_local1, f217_local2 = Lobby.JSON.CreateStartSearchParamDoc( f217_local0 )
 			if f217_local1 == nil then
 				LobbyVM.ProcessCompleteError( {
@@ -2824,7 +2824,7 @@ Lobby.Actions.AsyncMatchmakingStartSearch = function ( f216_arg0, f216_arg1, f21
 				} )
 			end
 			local f217_local3 = Engine[0x786FFC9E621CAB7]()
-			Lobby.MatchmakingAsync.MatchmakingSearchSummaryLog[0x6A1B6D783AA7A25] = f217_local3
+			Lobby.MatchmakingAsync.MatchmakingSearchSummaryLog.utc_timestamp_sent = f217_local3
 			Lobby.MatchmakingAsync.PartyToMatchSummary.last_sent_timestamp = f217_local3
 		end
 		,
@@ -2919,14 +2919,14 @@ Lobby.Actions.AsyncMatchmakingCancel = function ( f224_arg0, f224_arg1, f224_arg
 				} )
 				Lobby.MatchmakingAsync.MatchmakingSearchSummaryLogSendDLogEvent( Lobby.MatchmakingAsync.LeaveReason.CLIENT_CANCEL )
 				if f225_local0 ~= nil then
-					local f225_local1 = Lobby.MatchmakingAsync.PartyToMatchSummary[0xED6FB1B5DCCC095][tostring( f225_local0 )]
+					local f225_local1 = Lobby.MatchmakingAsync.PartyToMatchSummary.searches[tostring( f225_local0 )]
 					if f225_local1 ~= nil then
-						f225_local1[0xA14A466674314B6] = Lobby.MatchmakingAsync.SearchOutcome.SEARCH_CANCEL
-						f225_local1[0x3088D1189C30C01] = Engine[0x786FFC9E621CAB7]()
+						f225_local1.search_outcome = Lobby.MatchmakingAsync.SearchOutcome.SEARCH_CANCEL
+						f225_local1.utc_timestamp_search_end = Engine[0x786FFC9E621CAB7]()
 					end
 				end
 				if nil ~= Lobby.MatchmakingAsync.LobbyIntermissionSummary then
-					if Lobby.MatchmakingAsync.LobbyMembersTelemetry[0x2623BA80A26AD5A] > 1 then
+					if Lobby.MatchmakingAsync.LobbyMembersTelemetry.lobby_member_count > 1 then
 						Lobby.MatchmakingAsync.HardResetIntermissionSummary()
 					else
 						Lobby.MatchmakingAsync.LobbyIntermissionSummarySendDLogEvent( {
@@ -3004,8 +3004,8 @@ Lobby.Actions.AsyncMatchmakingWaitToComplete = function ( f230_arg0 )
 		updateInterval = 10000,
 		updateTime = 0,
 		updateMessage = 0,
-		msgOverride = 0x0,
-		msgOverrideTitle = 0x0,
+		msgOverride = "",
+		msgOverrideTitle = "",
 		failAndRestart = function ( f231_arg0 )
 			f231_arg0.actionWithXuidList.xuidList = nil
 			f231_arg0.msgOverride = 0x8E8D699F2706C4C
@@ -3085,7 +3085,7 @@ Lobby.Actions.AsyncMatchmakingWaitToComplete = function ( f230_arg0 )
 				f234_arg0.msgOverrideTitle = 0xF43B66193E8983D
 				if f234_local3 == LuaEnum.LobbyNotFoundCause.BD_ILLEGAL_MAP_PACK then
 					f234_arg0.errorDebugMsg = LuaEnum.LobbyNotFoundCauseString[f234_local3]
-					f234_arg0.msgOverride = 0x609344F0F879051
+					f234_arg0.msgOverride = "platform/missingmap"
 					return LobbyVM.ProcessCompleteFailure( {
 						actionId = f234_arg0.actionId
 					} )
@@ -3122,8 +3122,8 @@ Lobby.Actions.AsyncMatchmakingWaitToComplete = function ( f230_arg0 )
 		end
 		,
 		errorFuncPtr = function ( f237_arg0 )
-			local f237_local0 = 0xA26AA910A2D8FD8
-			if f237_arg0.msgOverride ~= 0x0 then
+			local f237_local0 = "menu/join_result_not_joinable"
+			if f237_arg0.msgOverride ~= "" then
 				f237_local0 = f237_arg0.msgOverride
 			end
 			if not Engine[0x2DA54CF5D6B7F02]() then
@@ -3156,10 +3156,10 @@ Lobby.Interrupt.AsyncMatchmakingErrorMsg = function ( f238_arg0, f238_arg1, f238
 					end
 					f239_arg0.errorMsg = f239_arg0.errorMsg .. "\n\nDEBUG: " .. f239_local1
 				end
-				if f239_arg0.erroredAction.msgOverride ~= nil and f239_arg0.erroredAction.msgOverride ~= 0x0 then
+				if f239_arg0.erroredAction.msgOverride ~= nil and f239_arg0.erroredAction.msgOverride ~= "" then
 					f239_arg0.errorMsg = Engine[0xF9F1239CFD921FE]( f239_arg0.erroredAction.msgOverride )
 				end
-				if f239_arg0.erroredAction.msgOverrideTitle ~= nil and f239_arg0.erroredAction.msgOverrideTitle ~= 0x0 then
+				if f239_arg0.erroredAction.msgOverrideTitle ~= nil and f239_arg0.erroredAction.msgOverrideTitle ~= "" then
 					f239_local0 = Engine[0xF9F1239CFD921FE]( f239_arg0.erroredAction.msgOverrideTitle )
 				end
 				if f239_arg0.erroredAction.errorOverlay ~= nil then
@@ -3327,18 +3327,18 @@ Lobby.Actions.AsyncMatchmakingJoin = function ( f247_arg0, f247_arg1 )
 		end
 		,
 		errorFuncPtr = function ( f250_arg0 )
-			local f250_local0 = Engine[0xF9F1239CFD921FE]( 0xA26AA910A2D8FD8 )
+			local f250_local0 = Engine[0xF9F1239CFD921FE]( "menu/join_result_not_joinable" )
 			if #f250_arg0.joinResults == 0 then
 				return f250_local0
 			end
 			local f250_local1 = f250_arg0.joinResults[#f250_arg0.joinResults].joinResult
 			local f250_local2, f250_local3 = Lobby.Join.JoinResultToString( f250_local1, true )
 			if f250_local3 then
-				local f250_local4 = 0x0
+				local f250_local4 = ""
 				if f250_local1 == Enum.JoinResult[0x190D2DCFDB65D5] then
-					f250_local4 = 0x55D96CC762EABDD
+					f250_local4 = "menu/multiplayer"
 				elseif f250_local1 == Enum.JoinResult[0xFD8202DCFA3EF29] then
-					f250_local4 = 0xB06081B8B4567F2
+					f250_local4 = "menu/zombies"
 				end
 				f250_local0 = Engine[0xF9F1239CFD921FE]( f250_local2.errorMsg, f250_arg0.hostName, f250_local4 )
 			else
@@ -3448,7 +3448,7 @@ Lobby.Actions.DirectTelemetryStart = function ( f262_arg0, f262_arg1 )
 		controller = f262_arg0,
 		toTarget = f262_arg1,
 		startFuncPtr = function ( f263_arg0 )
-			if f263_arg0.toTarget[0xBDB8620451D6112] == Enum.LobbyNetworkMode[0xBAA8EC6F3E77255] then
+			if f263_arg0.toTarget.networkmode == Enum.LobbyNetworkMode[0xBAA8EC6F3E77255] then
 				Engine[0x7778612F9CB9B0D]()
 			end
 			LobbyVM.ProcessCompleteSuccess( {

@@ -36,7 +36,7 @@ CoD.vhud_ms_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local TextureOverlayGrid = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TextureOverlayGrid:setAlpha( 0.55 )
-	TextureOverlayGrid:setImage( RegisterImage( 0xE0FC77400EBFC1 ) )
+	TextureOverlayGrid:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_textureoverlaygrid" ) )
 	self:addElement( TextureOverlayGrid )
 	self.TextureOverlayGrid = TextureOverlayGrid
 	
@@ -54,7 +54,7 @@ CoD.vhud_ms_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local msBoldLightRight = LUI.UIImage.new( 0.5, 0.5, 158, 514, 0.5, 0.5, -385, 398 )
 	msBoldLightRight:setAlpha( 0.3 )
 	msBoldLightRight:setZoom( 50 )
-	msBoldLightRight:setImage( RegisterImage( 0xAB4DC9D11F92483 ) )
+	msBoldLightRight:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_rightboldlight" ) )
 	msBoldLightRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msBoldLightRight )
 	self.msBoldLightRight = msBoldLightRight
@@ -63,7 +63,7 @@ CoD.vhud_ms_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	msBoldLightLeft:setAlpha( 0.3 )
 	msBoldLightLeft:setZRot( -177 )
 	msBoldLightLeft:setZoom( 50 )
-	msBoldLightLeft:setImage( RegisterImage( 0xAB4DC9D11F92483 ) )
+	msBoldLightLeft:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_rightboldlight" ) )
 	msBoldLightLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msBoldLightLeft )
 	self.msBoldLightLeft = msBoldLightLeft
@@ -72,7 +72,7 @@ CoD.vhud_ms_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	msDoubleArrowsLower:setRGB( 0.74, 0.94, 0.99 )
 	msDoubleArrowsLower:setAlpha( 0.3 )
 	msDoubleArrowsLower:setZRot( 180 )
-	msDoubleArrowsLower:setImage( RegisterImage( 0x21CD7B1CED9CB58 ) )
+	msDoubleArrowsLower:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_arrowdouble" ) )
 	msDoubleArrowsLower:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msDoubleArrowsLower )
 	self.msDoubleArrowsLower = msDoubleArrowsLower
@@ -80,14 +80,14 @@ CoD.vhud_ms_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local msDoubleArrowsUpper = LUI.UIImage.new( 0.5, 0.5, -15, 22, 0.5, 0.5, -337, -300 )
 	msDoubleArrowsUpper:setRGB( 0.74, 0.94, 0.99 )
 	msDoubleArrowsUpper:setAlpha( 0.3 )
-	msDoubleArrowsUpper:setImage( RegisterImage( 0x6D4131DB15D8159 ) )
+	msDoubleArrowsUpper:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_arrowsingle" ) )
 	msDoubleArrowsUpper:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msDoubleArrowsUpper )
 	self.msDoubleArrowsUpper = msDoubleArrowsUpper
 	
 	local msCenterInnerRing = LUI.UIImage.new( 0.5, 0.5, -317, 326, 0.5, 0.5, -326, 317 )
 	msCenterInnerRing:setAlpha( 0.2 )
-	msCenterInnerRing:setImage( RegisterImage( 0xB7BAE0BCEE02601 ) )
+	msCenterInnerRing:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_centerinnerring" ) )
 	msCenterInnerRing:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msCenterInnerRing )
 	self.msCenterInnerRing = msCenterInnerRing
@@ -145,7 +145,7 @@ CoD.vhud_ms_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		} )
 	end, false )
 	msCenterPoint:setYRot( 180 )
-	msCenterPoint.state1Image:setImage( RegisterImage( 0xACCB39F8082B9C9 ) )
+	msCenterPoint.state1Image:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_centerpoint" ) )
 	msCenterPoint.state1Image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	msCenterPoint.state2Image:setRGB( ColorSet.EnemyOrange.r, ColorSet.EnemyOrange.g, ColorSet.EnemyOrange.b )
 	self:addElement( msCenterPoint )
@@ -154,7 +154,7 @@ CoD.vhud_ms_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	msMidDotsR = LUI.UIImage.new( 0.5, 0.5, -960, -960, 0.5, 0.5, -540, -540 )
 	msMidDotsR:setRGB( 0.74, 0.94, 0.99 )
 	msMidDotsR:setAlpha( 0 )
-	msMidDotsR:setImage( RegisterImage( 0x252ACD29099C690 ) )
+	msMidDotsR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_rightmiddots" ) )
 	msMidDotsR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msMidDotsR )
 	self.msMidDotsR = msMidDotsR
@@ -163,14 +163,14 @@ CoD.vhud_ms_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	msMidDotsL:setRGB( 0.74, 0.94, 0.99 )
 	msMidDotsL:setAlpha( 0 )
 	msMidDotsL:setZRot( 180 )
-	msMidDotsL:setImage( RegisterImage( 0x252ACD29099C690 ) )
+	msMidDotsL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_rightmiddots" ) )
 	msMidDotsL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msMidDotsL )
 	self.msMidDotsL = msMidDotsL
 	
 	msOutsideArrowBlurR = LUI.UIImage.new( 0.5, 0.5, 477, 593, 0.5, 0.5, -59, 57 )
 	msOutsideArrowBlurR:setAlpha( 0.2 )
-	msOutsideArrowBlurR:setImage( RegisterImage( 0x585DEA94E059B5 ) )
+	msOutsideArrowBlurR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_outerarrowblur" ) )
 	msOutsideArrowBlurR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msOutsideArrowBlurR )
 	self.msOutsideArrowBlurR = msOutsideArrowBlurR
@@ -178,7 +178,7 @@ CoD.vhud_ms_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local msOutsideArrowBlurL = LUI.UIImage.new( 0.5, 0.5, -593, -477, 0.5, 0.5, -59, 57 )
 	msOutsideArrowBlurL:setAlpha( 0.2 )
 	msOutsideArrowBlurL:setYRot( 180 )
-	msOutsideArrowBlurL:setImage( RegisterImage( 0x585DEA94E059B5 ) )
+	msOutsideArrowBlurL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_outerarrowblur" ) )
 	msOutsideArrowBlurL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msOutsideArrowBlurL )
 	self.msOutsideArrowBlurL = msOutsideArrowBlurL
@@ -186,7 +186,7 @@ CoD.vhud_ms_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local msOutsideArrowR = LUI.UIImage.new( 0.5, 0.5, 525, 575, 0.5, 0.5, -39, 36 )
 	msOutsideArrowR:setRGB( 0.74, 0.94, 0.99 )
 	msOutsideArrowR:setAlpha( 0.2 )
-	msOutsideArrowR:setImage( RegisterImage( 0xC98E0005AC2B3EC ) )
+	msOutsideArrowR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_outerarrow" ) )
 	msOutsideArrowR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msOutsideArrowR )
 	self.msOutsideArrowR = msOutsideArrowR
@@ -195,7 +195,7 @@ CoD.vhud_ms_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	msOutsideArrowL:setRGB( 0.74, 0.94, 0.99 )
 	msOutsideArrowL:setAlpha( 0.2 )
 	msOutsideArrowL:setZRot( 180 )
-	msOutsideArrowL:setImage( RegisterImage( 0xC98E0005AC2B3EC ) )
+	msOutsideArrowL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_outerarrow" ) )
 	msOutsideArrowL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msOutsideArrowL )
 	self.msOutsideArrowL = msOutsideArrowL
@@ -309,7 +309,7 @@ CoD.vhud_ms_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 			modelName = "vehicleType"
 		} )
 	end, false )
-	msCenterDiamondT.state1Image:setImage( RegisterImage( 0x3C917B68C1D560E ) )
+	msCenterDiamondT.state1Image:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_centerdiamondtop" ) )
 	msCenterDiamondT.state1Image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	msCenterDiamondT.state2Image:setRGB( ColorSet.EnemyOrange.r, ColorSet.EnemyOrange.g, ColorSet.EnemyOrange.b )
 	self:addElement( msCenterDiamondT )
@@ -368,7 +368,7 @@ CoD.vhud_ms_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		} )
 	end, false )
 	msCenterDiamondB:setZRot( 180 )
-	msCenterDiamondB.state1Image:setImage( RegisterImage( 0x3C917B68C1D560E ) )
+	msCenterDiamondB.state1Image:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_centerdiamondtop" ) )
 	msCenterDiamondB.state1Image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	msCenterDiamondB.state2Image:setRGB( ColorSet.EnemyOrange.r, ColorSet.EnemyOrange.g, ColorSet.EnemyOrange.b )
 	self:addElement( msCenterDiamondB )
@@ -426,7 +426,7 @@ CoD.vhud_ms_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 			modelName = "vehicleType"
 		} )
 	end, false )
-	msCenterDiamondSideL.state1Image:setImage( RegisterImage( 0x75D443C057C1AB4 ) )
+	msCenterDiamondSideL.state1Image:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_centerdiamondside" ) )
 	msCenterDiamondSideL.state1Image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	msCenterDiamondSideL.state2Image:setRGB( ColorSet.EnemyOrange.r, ColorSet.EnemyOrange.g, ColorSet.EnemyOrange.b )
 	self:addElement( msCenterDiamondSideL )
@@ -485,7 +485,7 @@ CoD.vhud_ms_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		} )
 	end, false )
 	msCenterDiamondSideR:setZRot( 180 )
-	msCenterDiamondSideR.state1Image:setImage( RegisterImage( 0x75D443C057C1AB4 ) )
+	msCenterDiamondSideR.state1Image:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_centerdiamondside" ) )
 	msCenterDiamondSideR.state1Image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	msCenterDiamondSideR.state2Image:setRGB( ColorSet.EnemyOrange.r, ColorSet.EnemyOrange.g, ColorSet.EnemyOrange.b )
 	self:addElement( msCenterDiamondSideR )

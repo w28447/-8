@@ -17,7 +17,7 @@ CoD.AARTierRewardBackground_Epic.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.NoiseTiledBacking = NoiseTiledBacking
 	
 	local CommonOuterGlow01 = LUI.UIImage.new( 0, 1, -11, 11, 0, 1, -12, 12 )
-	CommonOuterGlow01:setImage( RegisterImage( 0xAE13B63B2001396 ) )
+	CommonOuterGlow01:setImage( RegisterImage( "uie_ui_menu_common_outer_glow01" ) )
 	CommonOuterGlow01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	CommonOuterGlow01:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonOuterGlow01:setupNineSliceShader( 32, 32 )
@@ -43,7 +43,7 @@ CoD.AARTierRewardBackground_Epic.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local RadialGlow = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	RadialGlow:setAlpha( 0.5 )
-	RadialGlow:setImage( RegisterImage( 0x74F13AE9F5148FE ) )
+	RadialGlow:setImage( RegisterImage( "uie_ui_menu_common_radial_glow01" ) )
 	RadialGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	RadialGlow:setShaderVector( 0, 0.5, 0, 0, 0 )
 	RadialGlow:setShaderVector( 1, 1, 2, 0, 0 )
@@ -59,7 +59,7 @@ CoD.AARTierRewardBackground_Epic.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local RadialGlow2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	RadialGlow2:setAlpha( 0.4 )
-	RadialGlow2:setImage( RegisterImage( 0x74F13AE9F5148FE ) )
+	RadialGlow2:setImage( RegisterImage( "uie_ui_menu_common_radial_glow01" ) )
 	RadialGlow2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	RadialGlow2:setShaderVector( 0, 0.5, 0, 0, 0 )
 	RadialGlow2:setShaderVector( 1, 1, 2, 0, 0 )
@@ -76,7 +76,7 @@ CoD.AARTierRewardBackground_Epic.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local BottomGradient = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BottomGradient:setAlpha( 0.15 )
 	BottomGradient:setZRot( 180 )
-	BottomGradient:setImage( RegisterImage( 0xB646BE73FB8838C ) )
+	BottomGradient:setImage( RegisterImage( "uie_ui_menu_common_gradient" ) )
 	self:addElement( BottomGradient )
 	self.BottomGradient = BottomGradient
 	

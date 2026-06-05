@@ -1,4 +1,4 @@
-require( "ui/uieditor/widgets/director/directormapgametypeanddifficulty3" )
+require( "x64:fda45231af81f63" )
 require( "ui/uieditor/widgets/lobby/mapvote/mapvoteitemzm" )
 
 CoD.MapVoteZM = InheritFrom( LUI.UIElement )
@@ -74,10 +74,10 @@ CoD.MapVoteZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	
 	local MapVoteItemRandomZM = CoD.MapVoteItemZM.new( f1_arg0, f1_arg1, 0, 0, 0, 394, 0, 0, 249, 355 )
 	MapVoteItemRandomZM.MapImage:setImage( RegisterImage( "uie_lui_random_map_vote" ) )
-	MapVoteItemRandomZM.GameMode:setText( LocalizeToUpperString( 0xFDFC63B040DE92E ) )
-	MapVoteItemRandomZM.MapName:setText( LocalizeToUpperString( 0x8C899D3B96CB850 ) )
+	MapVoteItemRandomZM.GameMode:setText( LocalizeToUpperString( "menu/mode_classified" ) )
+	MapVoteItemRandomZM.MapName:setText( LocalizeToUpperString( "menu/classified" ) )
 	MapVoteItemRandomZM.GameModeIcon:setImage( RegisterImage( "blacktransparent" ) )
-	MapVoteItemRandomZM.VoteType:setText( LocalizeToUpperString( 0xA0C72A43293DDE0 ) )
+	MapVoteItemRandomZM.VoteType:setText( LocalizeToUpperString( "menu/random" ) )
 	MapVoteItemRandomZM:subscribeToGlobalModel( f1_arg1, "MapVote", "mapVoteCountRandom", function ( model )
 		local f9_local0 = model:get()
 		if f9_local0 ~= nil then
@@ -102,11 +102,11 @@ CoD.MapVoteZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f11_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( MapVoteItemRandomZM, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		CoD.LobbyUtility.LobbyMapVoteSelectRandom( self, f12_arg2 )
+	f1_arg0:AddButtonCallbackFunction( MapVoteItemRandomZM, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.LobbyUtility.LobbyMapVoteSelectRandom( self, controller )
 		return true
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( MapVoteItemRandomZM )
@@ -145,7 +145,7 @@ CoD.MapVoteZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 			modelName = "lobbyRoot.lobbyNav"
 		} )
 	end, false )
-	MapVoteItemPreviousZM.VoteType:setText( LocalizeToUpperString( 0x1AC7271BB7AB90A ) )
+	MapVoteItemPreviousZM.VoteType:setText( LocalizeToUpperString( "menu/prev" ) )
 	MapVoteItemPreviousZM:subscribeToGlobalModel( f1_arg1, "MapVote", "mapVoteMapPrevious", function ( model )
 		local f17_local0 = model:get()
 		if f17_local0 ~= nil then
@@ -194,18 +194,18 @@ CoD.MapVoteZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f23_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( MapVoteItemPreviousZM, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f24_arg0, f24_arg1, f24_arg2, f24_arg3 )
-		CoD.LobbyUtility.LobbyMapVoteSelectPrevious( self, f24_arg2 )
+	f1_arg0:AddButtonCallbackFunction( MapVoteItemPreviousZM, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.LobbyUtility.LobbyMapVoteSelectPrevious( self, controller )
 		return true
-	end, function ( f25_arg0, f25_arg1, f25_arg2 )
-		CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( MapVoteItemPreviousZM )
 	self.MapVoteItemPreviousZM = MapVoteItemPreviousZM
 	
 	MapVoteItemNextZM = CoD.MapVoteItemZM.new( f1_arg0, f1_arg1, 0, 0, 0, 394, 0, 0, 37, 143 )
-	MapVoteItemNextZM.VoteType:setText( LocalizeToUpperString( 0xF0DF87756796D4E ) )
+	MapVoteItemNextZM.VoteType:setText( LocalizeToUpperString( "menu/next" ) )
 	MapVoteItemNextZM:subscribeToGlobalModel( f1_arg1, "MapVote", "mapVoteMapNext", function ( model )
 		local f26_local0 = model:get()
 		if f26_local0 ~= nil then
@@ -254,11 +254,11 @@ CoD.MapVoteZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f32_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( MapVoteItemNextZM, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f33_arg0, f33_arg1, f33_arg2, f33_arg3 )
-		CoD.LobbyUtility.LobbyMapVoteSelectNext( self, f33_arg2 )
+	f1_arg0:AddButtonCallbackFunction( MapVoteItemNextZM, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.LobbyUtility.LobbyMapVoteSelectNext( self, controller )
 		return true
-	end, function ( f34_arg0, f34_arg1, f34_arg2 )
-		CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( MapVoteItemNextZM )

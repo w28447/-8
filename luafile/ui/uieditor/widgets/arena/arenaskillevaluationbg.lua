@@ -21,13 +21,13 @@ CoD.ArenaSkillEvaluationBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local AnalysingBackingL = LUI.UIImage.new( 0, 0, 249, 1, 1, 1, -28, 0 )
 	AnalysingBackingL:setAlpha( 0.1 )
-	AnalysingBackingL:setImage( RegisterImage( 0xB018641EB968C33 ) )
+	AnalysingBackingL:setImage( RegisterImage( "uie_ui_menu_inspection_analysing_stripe" ) )
 	self:addElement( AnalysingBackingL )
 	self.AnalysingBackingL = AnalysingBackingL
 	
 	local AnalysingBackingR = LUI.UIImage.new( 1, 1, -248, 0, 1, 1, -28, 0 )
 	AnalysingBackingR:setAlpha( 0.1 )
-	AnalysingBackingR:setImage( RegisterImage( 0xB018641EB968C33 ) )
+	AnalysingBackingR:setImage( RegisterImage( "uie_ui_menu_inspection_analysing_stripe" ) )
 	self:addElement( AnalysingBackingR )
 	self.AnalysingBackingR = AnalysingBackingR
 	
@@ -47,7 +47,7 @@ CoD.ArenaSkillEvaluationBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local TiledwhiteNoiseBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledwhiteNoiseBacking:setAlpha( 0.02 )
-	TiledwhiteNoiseBacking:setImage( RegisterImage( 0x7167D8C33A06020 ) )
+	TiledwhiteNoiseBacking:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
 	TiledwhiteNoiseBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledwhiteNoiseBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledwhiteNoiseBacking:setupNineSliceShader( 64, 64 )

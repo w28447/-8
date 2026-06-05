@@ -20,7 +20,7 @@ CoD.directorTraining.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.XCamMouseControl = XCamMouseControl
 	
 	local CommonHeader = CoD.CommonHeader.new( f1_arg0, f1_arg1, 0.5, 0.5, -960, 960, 0, 0, 0, 67 )
-	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0xA47F44E3C7592DE ) )
+	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/specialist_hub" ) )
 	CommonHeader.subtitle.subtitle:setAlpha( 0 )
 	CommonHeader:subscribeToGlobalModel( f1_arg1, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()

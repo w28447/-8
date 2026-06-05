@@ -14,7 +14,7 @@ CoD.PCSocialMenu_PlayerListItem_PlayerInfos_InviteButton.new = function ( f1_arg
 	self.ButtonBG = ButtonBG
 	
 	local InviteIcon = LUI.UIImage.new( 0.15, 0.85, 0, 0, 0.1, 0.8, 0, 0 )
-	InviteIcon:setImage( RegisterImage( 0x218AEB6D7780F8E ) )
+	InviteIcon:setImage( RegisterImage( "uie_add_icon" ) )
 	self:addElement( InviteIcon )
 	self.InviteIcon = InviteIcon
 	

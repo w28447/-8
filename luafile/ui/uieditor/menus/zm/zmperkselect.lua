@@ -53,7 +53,7 @@ LUI.createMenu.ZMPerkSelect = function ( f2_arg0, f2_arg1 )
 	self.FooterContainerFrontendRight = FooterContainerFrontendRight
 	
 	local CACHeader = CoD.CommonHeader.new( f2_local1, f2_arg0, 0.5, 0.5, -960, 960, 0, 0, 0, 67 )
-	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x8BDD7F912E1E764 ) )
+	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "mpui/perks_caps" ) )
 	CACHeader.subtitle.subtitle:setAlpha( 0 )
 	CACHeader:subscribeToGlobalModel( f2_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f4_local0 = model:get()
@@ -134,17 +134,17 @@ LUI.createMenu.ZMPerkSelect = function ( f2_arg0, f2_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f2_local1, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f10_local0
 	end )
-	f2_local1:AddButtonCallbackFunction( PerksList, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		if not CoD.ZMPerkUtility.IsPerkLocked( f11_arg0, f11_arg2, f11_arg1 ) and not CoD.ZMPerkUtility.IsPerkEquippedInCurrentSlot( f11_arg0, f11_arg2, f11_arg1 ) then
-			CoD.ZMPerkUtility.PerkOptionSelected( f11_arg0, f11_arg1, f11_arg2 )
-			CoD.CACUtility.PlayElementXHashSound( f11_arg0, "equipSound" )
+	f2_local1:AddButtonCallbackFunction( PerksList, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not CoD.ZMPerkUtility.IsPerkLocked( element, controller, menu ) and not CoD.ZMPerkUtility.IsPerkEquippedInCurrentSlot( element, controller, menu ) then
+			CoD.ZMPerkUtility.PerkOptionSelected( element, menu, controller )
+			CoD.CACUtility.PlayElementXHashSound( element, "equipSound" )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		if not CoD.ZMPerkUtility.IsPerkLocked( f12_arg0, f12_arg2, f12_arg1 ) and not CoD.ZMPerkUtility.IsPerkEquippedInCurrentSlot( f12_arg0, f12_arg2, f12_arg1 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.ZMPerkUtility.IsPerkLocked( element, controller, menu ) and not CoD.ZMPerkUtility.IsPerkEquippedInCurrentSlot( element, controller, menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -206,17 +206,17 @@ LUI.createMenu.ZMPerkSelect = function ( f2_arg0, f2_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f2_local1, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f19_local0
 	end )
-	f2_local1:AddButtonCallbackFunction( PerkAltar, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
-		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( f20_arg0, f20_arg2, "ZMEquippedPerks", "currentSlot", "slotIndex" ) then
-			SelectItemIfPossible( self, f20_arg0, f20_arg2 )
+	f2_local1:AddButtonCallbackFunction( PerkAltar, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( element, controller, "ZMEquippedPerks", "currentSlot", "slotIndex" ) then
+			SelectItemIfPossible( self, element, controller )
 			PlaySoundAlias( "uin_zcac_elixir_slot" )
 			return true
 		else
 			
 		end
-	end, function ( f21_arg0, f21_arg1, f21_arg2 )
-		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( f21_arg0, f21_arg2, "ZMEquippedPerks", "currentSlot", "slotIndex" ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToSelfModelValue( element, controller, "ZMEquippedPerks", "currentSlot", "slotIndex" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
 			return true
 		else
 			return false
@@ -312,12 +312,12 @@ LUI.createMenu.ZMPerkSelect = function ( f2_arg0, f2_arg1 )
 	self.ModifierInfo = ModifierInfo
 	
 	RB = CoD.BumperButtonWithKeyMouseText.new( f2_local1, f2_arg0, 0, 0, 1435, 1635, 0, 0, 160, 194 )
-	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBFED5292621DA9A ) )
+	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/rb" ) )
 	self:addElement( RB )
 	self.RB = RB
 	
 	LB = CoD.BumperButtonWithKeyMouseText.new( f2_local1, f2_arg0, 0, 0, 285, 485, 0, 0, 160, 194 )
-	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBDCD5292604F434 ) )
+	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/lb" ) )
 	LB.GamepadPrompt:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	self:addElement( LB )
 	self.LB = LB
@@ -369,11 +369,11 @@ LUI.createMenu.ZMPerkSelect = function ( f2_arg0, f2_arg1 )
 			end
 		}
 	} )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f37_arg0, f37_arg1, f37_arg2, f37_arg3 )
-		GoBack( self, f37_arg2 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f38_arg0, f38_arg1, f38_arg2 )
-		CoD.Menu.SetButtonLabel( f38_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

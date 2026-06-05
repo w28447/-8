@@ -11,7 +11,7 @@ CoD.Challenges_Category_Title.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.anyChildUsesUpdateState = true
 	
 	local ChallengesPercentCompleteWidgetLG = CoD.Challenges_PercentCompleteWidget_LG.new( f1_arg0, f1_arg1, 0, 0, 30, 270, 0, 0, 141, 381 )
-	ChallengesPercentCompleteWidgetLG.Name:setText( Engine[0xF9F1239CFD921FE]( 0x5662A3E5DC08B87 ) )
+	ChallengesPercentCompleteWidgetLG.Name:setText( Engine[0xF9F1239CFD921FE]( "menu/operations_caps" ) )
 	ChallengesPercentCompleteWidgetLG:linkToElementModel( self, nil, false, function ( model )
 		ChallengesPercentCompleteWidgetLG:setModel( model, f1_arg1 )
 	end )

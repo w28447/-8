@@ -22,7 +22,7 @@ CoD.WarzoneInventoryMenuItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local NotAvailable = LUI.UIImage.new( 0.5, 0.5, -44, 44, 0.5, 0.5, -44, 44 )
 	NotAvailable:setAlpha( 0 )
-	NotAvailable:setImage( RegisterImage( 0xB1FCC7EA3552F5A ) )
+	NotAvailable:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_drop_x" ) )
 	NotAvailable:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( NotAvailable )
 	self.NotAvailable = NotAvailable

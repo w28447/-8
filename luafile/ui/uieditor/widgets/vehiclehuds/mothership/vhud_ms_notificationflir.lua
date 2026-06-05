@@ -20,20 +20,20 @@ CoD.vhud_ms_NotificationFlir.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	NotificationAltBox0:setRGB( 0.74, 0.94, 0.99 )
 	NotificationAltBox0:setAlpha( 0.08 )
 	NotificationAltBox0:setYRot( -20 )
-	NotificationAltBox0:setImage( RegisterImage( 0x9F6EF5CEE521AB6 ) )
+	NotificationAltBox0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_notificationsignalbox" ) )
 	self:addElement( NotificationAltBox0 )
 	self.NotificationAltBox0 = NotificationAltBox0
 	
 	local NotificationAltBox00 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NotificationAltBox00:setRGB( 0.74, 0.94, 0.99 )
-	NotificationAltBox00:setImage( RegisterImage( 0x9F6EF5CEE521AB6 ) )
+	NotificationAltBox00:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_notificationsignalbox" ) )
 	self:addElement( NotificationAltBox00 )
 	self.NotificationAltBox00 = NotificationAltBox00
 	
 	local FLIR = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -12, 12 )
 	FLIR:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_ir" ) )
 	FLIR:setTTF( "default" )
-	FLIR:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD756CD9A5F1F1B4 ) )
+	FLIR:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration_cheap_blur" ) )
 	FLIR:setShaderVector( 0, 0, 1, 0, 0 )
 	FLIR:setShaderVector( 1, 0, 0, 0, 0 )
 	FLIR:setShaderVector( 2, 0, 0, 0, 0 )
@@ -49,7 +49,7 @@ CoD.vhud_ms_NotificationFlir.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local arrowUp = LUI.UIImage.new( 0.5, 0.5, -5, 6, 0.5, 0.5, -21, -14 )
 	arrowUp:setAlpha( 0.6 )
-	arrowUp:setImage( RegisterImage( 0x53866FDE741ED56 ) )
+	arrowUp:setImage( RegisterImage( "uie_img_t7_menu_startmenu_option_arrow" ) )
 	arrowUp:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( arrowUp )
 	self.arrowUp = arrowUp

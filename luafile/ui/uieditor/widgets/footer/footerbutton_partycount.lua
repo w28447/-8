@@ -121,7 +121,7 @@ CoD.FooterButton_PartyCount.__clipsPerState = {
 			f8_arg0:__resetProperties()
 			f8_arg0:setupElementClipCounter( 3 )
 			f8_arg0.Label:completeAnimation()
-			f8_arg0.Label:setText( LocalizeToUpperString( 0xE20D5225108123D ) )
+			f8_arg0.Label:setText( LocalizeToUpperString( "menu/lb_filter_players" ) )
 			f8_arg0.clipFinished( f8_arg0.Label )
 			f8_arg0.PartyCount:completeAnimation()
 			f8_arg0.PartyCount:setAlpha( 0 )

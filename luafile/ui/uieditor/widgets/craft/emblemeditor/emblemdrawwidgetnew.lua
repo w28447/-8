@@ -37,7 +37,7 @@ CoD.EmblemDrawWidgetNew.new = function ( f2_arg0, f2_arg1, f2_arg2, f2_arg3, f2_
 	
 	local EditGrid = LUI.UIImage.new( 0, 0, 14, 526, 0, 0, 14, 526 )
 	EditGrid:setAlpha( 0 )
-	EditGrid:setImage( RegisterImage( 0x3793FD6AAAABDCD ) )
+	EditGrid:setImage( RegisterImage( "uie_ui_menu_emblem_grid" ) )
 	self:addElement( EditGrid )
 	self.EditGrid = EditGrid
 	

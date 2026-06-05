@@ -26,17 +26,17 @@ CoD.DirectorLaboratoryButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( DirectorLaboratoryButtonInternal, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		if not IsPlayerAGuest( f3_arg2 ) then
+	f1_arg0:AddButtonCallbackFunction( DirectorLaboratoryButtonInternal, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not IsPlayerAGuest( controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			OpenOverlay( self, "Laboratory", f3_arg2 )
+			OpenOverlay( self, "Laboratory", controller )
 			return true
 		else
 			
 		end
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		if not IsPlayerAGuest( f4_arg2 ) then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/laboratory", nil, nil )
+	end, function ( element, menu, controller )
+		if not IsPlayerAGuest( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/laboratory", nil, nil )
 			return true
 		else
 			return false

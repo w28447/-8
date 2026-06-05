@@ -79,7 +79,7 @@ CoD.CustomizeClassAdd.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.ButtonEmptyInnerBorderFrameAnim = ButtonEmptyInnerBorderFrameAnim
 	
 	local ButtonPlus = LUI.UIImage.new( 1, 1, -148, 0, 1, 1, -112, 0 )
-	ButtonPlus:setImage( RegisterImage( 0xB89FC695644B787 ) )
+	ButtonPlus:setImage( RegisterImage( "uie_ui_menu_cac_attachment_button_plus" ) )
 	ButtonPlus:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonPlus:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonPlus:setupNineSliceShader( 74, 74 )
@@ -87,7 +87,7 @@ CoD.CustomizeClassAdd.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.ButtonPlus = ButtonPlus
 	
 	local ButtonPlusAnim = LUI.UIImage.new( 1, 1, -148, 0, 1, 1, -112, 0 )
-	ButtonPlusAnim:setImage( RegisterImage( 0xB89FC695644B787 ) )
+	ButtonPlusAnim:setImage( RegisterImage( "uie_ui_menu_cac_attachment_button_plus" ) )
 	ButtonPlusAnim:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonPlusAnim:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonPlusAnim:setupNineSliceShader( 74, 74 )

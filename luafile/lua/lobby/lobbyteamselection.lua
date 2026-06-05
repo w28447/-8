@@ -29,15 +29,15 @@ Lobby.TeamSelection.ShouldAssignToTeam = function ( f2_arg0 )
 	local f2_local3 = LobbyData.GetCurrentMenuTarget()
 	if not f2_local3 then
 		return false
-	elseif f2_local3["mainmode"] == Enum.LobbyMainMode[0xD5FBB8D74AC6D62] or f2_local0 == Enum.LobbyModule[0xC46B73E8E18BA2] then
+	elseif f2_local3.mainmode == Enum.LobbyMainMode[0xD5FBB8D74AC6D62] or f2_local0 == Enum.LobbyModule[0xC46B73E8E18BA2] then
 		return false
-	elseif f2_local3["mainmode"] == Enum.LobbyMainMode[0x7B50049993542C0] then
+	elseif f2_local3.mainmode == Enum.LobbyMainMode[0x7B50049993542C0] then
 		return true
-	elseif f2_local3["mainmode"] == Enum.LobbyMainMode[0x7E41449995CD57E] then
+	elseif f2_local3.mainmode == Enum.LobbyMainMode[0x7E41449995CD57E] then
 		return true
-	elseif f2_local3["mainmode"] == Enum.LobbyMainMode[0x79D01499920B292] then
+	elseif f2_local3.mainmode == Enum.LobbyMainMode[0x79D01499920B292] then
 		return true
-	elseif f2_local3["mainmode"] == Enum.LobbyMainMode[0x78C124999125C42] then
+	elseif f2_local3.mainmode == Enum.LobbyMainMode[0x78C124999125C42] then
 		return true
 	else
 		return false
@@ -115,7 +115,7 @@ Lobby.TeamSelection.AutoAssignPlayers = function ( f4_arg0 )
 		end
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x59962D5EF982597], "-----------------------------------------\n" )
 	end
-	if f4_local1["mainmode"] ~= Enum.LobbyMainMode[0xD5FBB8D74AC6D62] then
+	if f4_local1.mainmode ~= Enum.LobbyMainMode[0xD5FBB8D74AC6D62] then
 		f4_local14 = {
 			[Enum.LobbyMainMode[0x7B50049993542C0]] = Lobby.TeamSelection.AutoAssignPlayersCP,
 			[Enum.LobbyMainMode[0x7E41449995CD57E]] = Lobby.TeamSelection.AutoAssignPlayersMP,
@@ -125,7 +125,7 @@ Lobby.TeamSelection.AutoAssignPlayers = function ( f4_arg0 )
 		if Dvar[0x4BADE8473F0165F]:get() == true and f4_local4 ~= Enum.LobbyMode[0xF5EE25D311E5223] then
 			Lobby.MatchmakingAsync.AssignTeams( f4_local2, true, true )
 		else
-			f4_local14[f4_local1["mainmode"]]( f4_local13 )
+			f4_local14[f4_local1.mainmode]( f4_local13 )
 		end
 	end
 end
@@ -327,14 +327,14 @@ Lobby.TeamSelection.OnMatchEnd = function ( f13_arg0 )
 		return 
 	end
 	local f13_local3 = LobbyData.GetCurrentMenuTarget()
-	if f13_local3["mainmode"] == Enum.LobbyMainMode[0x79D01499920B292] then
+	if f13_local3.mainmode == Enum.LobbyMainMode[0x79D01499920B292] then
 		local f13_local4 = Engine[0x755D55B3813D249]( Enum.LobbyModule[0x98EA1BB7164D103], f13_local1 )
 		for f13_local8, f13_local9 in ipairs( f13_local4.sessionClients ) do
 			Engine[0xD506AB0E93540B3]( f13_local1, f13_local9.xuid, Enum.team_t[0x2A34B055ADD98AB] )
 		end
-	elseif f13_local3["mainmode"] == Enum.LobbyMainMode[0x78C124999125C42] and f13_local2 == Enum.LobbyMode[0xF5EE25D311E5223] then
+	elseif f13_local3.mainmode == Enum.LobbyMainMode[0x78C124999125C42] and f13_local2 == Enum.LobbyMode[0xF5EE25D311E5223] then
 		
-	elseif f13_local3["mainmode"] ~= Enum.LobbyMainMode[0x7E41449995CD57E] then
+	elseif f13_local3.mainmode ~= Enum.LobbyMainMode[0x7E41449995CD57E] then
 		Lobby.TeamSelection.Clear()
 	elseif f13_local2 == Enum.LobbyMode[0xF5EE25D311E5223] and Engine.GetGametypeSetting( "teamAssignment" ) == LuaEnum.TEAM_ASSIGNMENT.AUTO then
 		Lobby.TeamSelection.ClearTeam( Enum.team_t[0x2A34B055ADD98AB] )
@@ -412,7 +412,7 @@ Lobby.TeamSelection.SwitchTeamHostAssignment = function ( f17_arg0 )
 		Engine[0xD506AB0E93540B3]( f17_local5, f17_local4, f17_local6 )
 	elseif f17_local2 == Engine[0x20826BD382E3A23]( Enum.LobbyModule[0x98EA1BB7164D103], f17_local5, f17_local3 ) then
 		return 
-	elseif Engine.CurrentSessionMode() == Enum.eModes[0xBF1DCC8138A9D39] and f17_local2 >= Enum.team_t[0x2A34B055ADD98AB] and f17_local2 <= Enum.team_t[0x7A0FCED35961F87] then
+	elseif Engine.CurrentSessionMode() == Enum.eModes.mode_warzone and f17_local2 >= Enum.team_t[0x2A34B055ADD98AB] and f17_local2 <= Enum.team_t.team_six then
 		Engine[0xD506AB0E93540B3]( f17_local5, f17_local3, f17_local2 )
 	elseif CoDShared.IsGametypeTeamBased() and (f17_local2 == Enum.team_t[0x2A34B055ADD98AB] or f17_local2 == Enum.team_t[0x3F83D7CE4BD7B68] or f17_local2 == Enum.team_t[0xE4DDAC9C5C45556]) then
 		Engine[0xD506AB0E93540B3]( f17_local5, f17_local3, f17_local2 )
@@ -1091,7 +1091,7 @@ Lobby.TeamSelection.OnCanFitLobbys = function ( f35_arg0 )
 	local f35_local4 = Engine[0x755D55B3813D249]( Enum.LobbyModule[0x98EA1BB7164D103], f35_local0 )
 	if f35_local1 ~= nil and f35_local1 ~= LuaDefine.INVALID_XUID and f35_local1 == Engine[0x19F19E9171B560D]( f35_local0 ) then
 		return Enum.JoinResult[0x26E669B1C0B3657]
-	elseif f35_local2[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_ONLINE_MP_PUBLIC then
+	elseif f35_local2.name == LuaEnum.UI.DIRECTOR_ONLINE_MP_PUBLIC then
 		local f35_local5 = Engine[0xB2BAD8AD577224E]( Engine[0x7B3B2B73B53EB34]() )
 		if Engine.IsMultiplayerGame() then
 			local f35_local6 = Lobby.TeamSelection.CanFitMaxPartySize( f35_arg0, f35_local4, f35_local5 )
@@ -1137,7 +1137,7 @@ Lobby.TeamSelection.OnCanFitLobbys = function ( f35_arg0 )
 			return Enum.JoinResult[0x26E669B1C0B3657]
 		end
 		return Enum.JoinResult[0x9BB0AFF5C451740]
-	elseif f35_local2[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_ONLINE_CP_CUSTOM or f35_local2[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_ONLINE_MP_CUSTOM or f35_local2[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_CUSTOM or f35_local2[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_ONLINE_ZM_CUSTOM or f35_local2[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_LAN_CP or f35_local2[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_LAN_MP or f35_local2[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_LAN_MP_ARENA or f35_local2[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_LAN_ZM or f35_local2[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_ONLINE_ZM_PREGAME or f35_local2[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_ONLINE_MP_PREGAME or f35_local2[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_ONLINE_WZ_PUBLIC or f35_local2[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_ONLINE_ZM_PUBLIC then
+	elseif f35_local2.name == LuaEnum.UI.DIRECTOR_ONLINE_CP_CUSTOM or f35_local2.name == LuaEnum.UI.DIRECTOR_ONLINE_MP_CUSTOM or f35_local2.name == LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_CUSTOM or f35_local2.name == LuaEnum.UI.DIRECTOR_ONLINE_ZM_CUSTOM or f35_local2.name == LuaEnum.UI.DIRECTOR_LAN_CP or f35_local2.name == LuaEnum.UI.DIRECTOR_LAN_MP or f35_local2.name == LuaEnum.UI.DIRECTOR_LAN_MP_ARENA or f35_local2.name == LuaEnum.UI.DIRECTOR_LAN_ZM or f35_local2.name == LuaEnum.UI.DIRECTOR_ONLINE_ZM_PREGAME or f35_local2.name == LuaEnum.UI.DIRECTOR_ONLINE_MP_PREGAME or f35_local2.name == LuaEnum.UI.DIRECTOR_ONLINE_WZ_PUBLIC or f35_local2.name == LuaEnum.UI.DIRECTOR_ONLINE_ZM_PUBLIC then
 		local f35_local13 = Engine.GetGametypeSetting( "allowSpectating" ) == 1
 		local f35_local5 = #f35_local4.sessionClients
 		local f35_local6 = 0
@@ -1193,7 +1193,7 @@ Lobby.TeamSelection.GametypeSettingsChange = function ( f37_arg0, f37_arg1 )
 	local f37_local5 = f37_local2 ~= Lobby.TeamSelection.gameSetting.allowSpectating
 	local f37_local6 = f37_local3 ~= Lobby.TeamSelection.gameSetting.teamAssignment
 	local f37_local7 = Engine[0xC3DF042E7492B66]( Enum.LobbyModule[0x98EA1BB7164D103] )
-	local f37_local8 = Enum.eModes[0xBF1DCC8138A9D39] == Engine.CurrentSessionMode()
+	local f37_local8 = Enum.eModes.mode_warzone == Engine.CurrentSessionMode()
 	if f37_local4 == false and f37_local5 == false and f37_local6 == false and not f37_local8 then
 		return 
 	end
@@ -1275,7 +1275,7 @@ Lobby.TeamSelection.Pump = function ()
 end
 
 Lobby.TeamSelection.Clear = function ()
-	if Engine.CurrentSessionMode() == Enum.eModes[0x60063C67132EB69] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_campaign then
 		return 
 	end
 	local f39_local0 = Engine[0xC3DF042E7492B66]( Enum.LobbyModule[0x98EA1BB7164D103] )

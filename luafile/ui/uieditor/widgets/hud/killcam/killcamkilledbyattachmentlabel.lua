@@ -10,7 +10,7 @@ CoD.KillcamKilledByAttachmentLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Plus = LUI.UIText.new( 0, 0, 0, 9, 0.5, 0.5, -9, 9 )
-	Plus:setText( Engine[0xF9F1239CFD921FE]( 0x79FAB66208B3145 ) )
+	Plus:setText( Engine[0xF9F1239CFD921FE]( "mp/plus" ) )
 	Plus:setTTF( "0arame_mono_stencil" )
 	Plus:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	self:addElement( Plus )

@@ -28,7 +28,7 @@ LUI.createMenu.WZPersonalizeCharacterInspect = function ( f1_arg0, f1_arg1 )
 	
 	local BackingFrame = CoD.GenericMenuFrame.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackingFrame.CommonHeader.BGSceneBlur:setAlpha( 1 )
-	BackingFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x2AA2EA68ACC2317 ) )
+	BackingFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/personalize_character" ) )
 	BackingFrame:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -56,12 +56,12 @@ LUI.createMenu.WZPersonalizeCharacterInspect = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( options, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
+	f1_local1:AddButtonCallbackFunction( options, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		PlaySoundAlias( "uin_toggle_generic" )
-		ProcessListAction( self, f4_arg0, f4_arg2, f4_arg1 )
+		ProcessListAction( self, element, controller, menu )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( options )
@@ -101,7 +101,7 @@ LUI.createMenu.WZPersonalizeCharacterInspect = function ( f1_arg0, f1_arg1 )
 	
 	local BraketBottom = LUI.UIImage.new( 0.5, 0.5, 256, 803, 0.5, 0.5, 397, 425 )
 	BraketBottom:setZRot( 180 )
-	BraketBottom:setImage( RegisterImage( 0x81D4EAAB75120FF ) )
+	BraketBottom:setImage( RegisterImage( "uie_ui_menu_specialist_hub_info_bracket" ) )
 	BraketBottom:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BraketBottom:setShaderVector( 0, 0, 0, 0, 0 )
 	BraketBottom:setupNineSliceShader( 350, 20 )
@@ -110,7 +110,7 @@ LUI.createMenu.WZPersonalizeCharacterInspect = function ( f1_arg0, f1_arg1 )
 	
 	local FuiBox02Right = LUI.UIImage.new( 0.5, 0.5, 763.5, 797.5, 0.5, 0.5, 360, 326 )
 	FuiBox02Right:setAlpha( 0.1 )
-	FuiBox02Right:setImage( RegisterImage( 0x811A80C0AADA825 ) )
+	FuiBox02Right:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
 	FuiBox02Right:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiBox02Right:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox02Right )
@@ -163,25 +163,25 @@ LUI.createMenu.WZPersonalizeCharacterInspect = function ( f1_arg0, f1_arg1 )
 	self:addElement( CharacterSelectionPrestigeInfo )
 	self.CharacterSelectionPrestigeInfo = CharacterSelectionPrestigeInfo
 	
-	self:registerEventHandler( "occlusion_change", function ( element, event )
+	self:registerEventHandler( "occlusion_change", function ( self, event )
 		local f11_local0 = nil
-		if element.OcclusionChange then
-			f11_local0 = element:OcclusionChange( event )
-		elseif element.super.OcclusionChange then
-			f11_local0 = element.super:OcclusionChange( event )
+		if self.OcclusionChange then
+			f11_local0 = self:OcclusionChange( event )
+		elseif self.super.OcclusionChange then
+			f11_local0 = self.super:OcclusionChange( event )
 		end
 		CoD.BaseUtility.SetModelFromUserData( f1_arg0, f1_local1, f1_arg1.model )
 		SendClientScriptMenuExpressionStateChangeNotify( f1_arg0, f1_local1, true, f1_arg1.model.characterIndex:get() )
 		if not f11_local0 then
-			f11_local0 = element:dispatchEventToChildren( event )
+			f11_local0 = self:dispatchEventToChildren( event )
 		end
 		return f11_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		GoBack( self, f12_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

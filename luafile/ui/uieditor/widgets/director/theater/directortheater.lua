@@ -28,7 +28,7 @@ CoD.DirectorTheater.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.BGBlack = BGBlack
 	
 	local CommonHeader = CoD.CommonHeader.new( f1_arg0, f1_arg1, 0.5, 0.5, -960, 960, 0, 0, 0, 67 )
-	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x60E17AB37AB4874 ) )
+	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/theater" ) )
 	CommonHeader.subtitle.subtitle:setAlpha( 0 )
 	CommonHeader:subscribeToGlobalModel( f1_arg1, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
@@ -75,17 +75,17 @@ CoD.DirectorTheater.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ButtonModes, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f6_arg0, f6_arg2, "locked" ) then
-			ProcessListAction( self, f6_arg0, f6_arg2, f6_arg1 )
+	f1_arg0:AddButtonCallbackFunction( ButtonModes, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "locked" ) then
+			ProcessListAction( self, element, controller, menu )
 			PlaySoundAlias( "uin_press_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f7_arg0, f7_arg2, "locked" ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "locked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -95,12 +95,12 @@ CoD.DirectorTheater.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.ButtonModes = ButtonModes
 	
 	local RecentGames = CoD.FileshareCategoryContentListMini.new( f1_arg0, f1_arg1, 0.5, 0.5, -717.5, -39.5, 0.5, 0.5, -52.5, 377.5 )
-	RecentGames.MiddleText:setText( LocalizeToUpperString( 0xC61974356EAE960 ) )
+	RecentGames.MiddleText:setText( LocalizeToUpperString( "menu/recent_games" ) )
 	self:addElement( RecentGames )
 	self.RecentGames = RecentGames
 	
 	local BookmarkedGames = CoD.FileshareCategoryContentListMini.new( f1_arg0, f1_arg1, 0.5, 0.5, 40, 718, 0.5, 0.5, -52.5, 377.5 )
-	BookmarkedGames.MiddleText:setText( LocalizeToUpperString( 0x770599226B0553A ) )
+	BookmarkedGames.MiddleText:setText( LocalizeToUpperString( "menu/bookmarked_games" ) )
 	BookmarkedGames.contentList:setDataSource( "FilesharePublishedList" )
 	self:addElement( BookmarkedGames )
 	self.BookmarkedGames = BookmarkedGames

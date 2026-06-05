@@ -12,7 +12,7 @@ CoD.ZMAARTrialTime.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local RedDivider = LUI.UIImage.new( 0, 0, -364, 200, 0, 0, -2.5, 81.5 )
-	RedDivider:setImage( RegisterImage( 0x2B4D9F66374906A ) )
+	RedDivider:setImage( RegisterImage( "uie_timer_bg" ) )
 	self:addElement( RedDivider )
 	self.RedDivider = RedDivider
 	

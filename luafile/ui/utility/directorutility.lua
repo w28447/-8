@@ -1,7 +1,7 @@
 CoD.DirectorUtility = {}
 require( "ui/utility/overlayutility" )
 CoD.DirectorUtility.Filters = nil
-CoD.DirectorUtility.FocusFeaturedFiltered = Engine.CurrentSessionMode() == Enum.eModes[0xB22E0240605CFFE]
+CoD.DirectorUtility.FocusFeaturedFiltered = Engine.CurrentSessionMode() == Enum.eModes.mode_invalid
 DataSources.DirectorFilters = DataSourceHelpers.ListSetup( "DirectorFilters", function ( f1_arg0, f1_arg1 )
 	local f1_local0 = {}
 	local f1_local1
@@ -65,7 +65,7 @@ DataSources.ServerBrowserFilters = DataSourceHelpers.ListSetup( "ServerBrowserFi
 	local f3_local0 = {
 		{
 			models = {
-				name = 0x46513144F1265BA,
+				name = "menu/all_caps",
 				filter = Enum.LobbyMainMode[0xD5FBB8D74AC6D62]
 			}
 		}
@@ -77,7 +77,7 @@ DataSources.ServerBrowserFilters = DataSourceHelpers.ListSetup( "ServerBrowserFi
 		Enum.LobbyMainMode[0x7B50049993542C0]
 	} ) do
 		local f3_local6 = LuaUtils.GetDisplayNameForLobbyMainMode( f3_local5 )
-		if f3_local6 ~= 0x0 then
+		if f3_local6 ~= "" then
 			table.insert( f3_local0, {
 				models = {
 					name = f3_local6,
@@ -99,7 +99,7 @@ CoD.DirectorUtility.CreateCardListDataSource = function ( f4_arg0, f4_arg1, f4_a
 			f4_local2 = false
 		end
 		for f4_local10, f4_local11 in ipairs( f4_arg3.cards ) do
-			if f4_local11.mode == nil or LuaUtils.GetDisplayNameForLobbyMainMode( f4_local11.mode ) ~= 0x0 then
+			if f4_local11.mode == nil or LuaUtils.GetDisplayNameForLobbyMainMode( f4_local11.mode ) ~= "" then
 				local f4_local6 = f4_local11.featured and 2 or 1
 				local f4_local7 = {
 					models = f4_local11
@@ -141,7 +141,7 @@ DataSources.DirectorTextModes = DataSourceHelpers.ListSetup( "DirectorTextModes"
 	table.insert( f5_local0, {
 		models = {
 			available = true,
-			mode = Enum.eModes[0x83EBA96F36BC4E5]
+			mode = Enum.eModes.mode_multiplayer
 		},
 		properties = {
 			selectIndex = true
@@ -150,20 +150,20 @@ DataSources.DirectorTextModes = DataSourceHelpers.ListSetup( "DirectorTextModes"
 	table.insert( f5_local0, {
 		models = {
 			available = true,
-			mode = Enum.eModes[0x3723205FAE52C4A]
+			mode = Enum.eModes.mode_zombies
 		}
 	} )
 	table.insert( f5_local0, {
 		models = {
 			available = true,
-			mode = Enum.eModes[0xBF1DCC8138A9D39]
+			mode = Enum.eModes.mode_warzone
 		}
 	} )
 	for f5_local4, f5_local5 in ipairs( f5_local0 ) do
 		f5_local5.models.name = LuaUtils.GetDisplayNameForEMode( f5_local5.models.mode )
 	end
-	if f5_arg1.menu:getSessionMode() == Enum.eModes[0xB22E0240605CFFE] then
-		f5_arg1.menu:setSessionMode( Enum.eModes[0x83EBA96F36BC4E5] )
+	if f5_arg1.menu:getSessionMode() == Enum.eModes.mode_invalid then
+		f5_arg1.menu:setSessionMode( Enum.eModes.mode_multiplayer )
 	end
 	return f5_local0
 end, true )
@@ -191,7 +191,7 @@ CoD.DirectorUtility.DirectorPartyListUpdateClientInfo = function ( f6_arg0, f6_a
 				if LuaUtils.IsGameModeParagonCapable( f6_local2 ) and f6_arg1.paragonRank and f6_arg1.prestige == CoD.PrestigeUtility.GetPrestigeCap() then
 					f6_arg1.displayRank = Engine.GetParagonRankDisplayLevel( f6_arg1.paragonRank )
 				end
-				if f6_local2 == Enum.eModes[0xBF1DCC8138A9D39] then
+				if f6_local2 == Enum.eModes.mode_warzone then
 					f6_local1 = CoD.WZUtility.GetDecoratedStringForRank( f6_arg1.wzRank, f6_arg1.wzParagonRank, f6_arg1.wzPrestige )
 				else
 					f6_local1 = tostring( f6_arg1.displayRank )
@@ -343,10 +343,10 @@ CoD.DirectorUtility.UpdateLobbyClientInfo = function ( f11_arg0, f11_arg1 )
 		DataSources.DirectorPartyList.TeamCounts = {
 			[Enum.team_t[0x2A34B055ADD98AB]] = 0,
 			[Enum.team_t[0x3F83D7CE4BD7B68]] = 0,
-			[Enum.team_t[0x51B2E92F4D8DAD7]] = 0,
-			[Enum.team_t[0x5CBEDB3D265E8F1]] = 0,
-			[Enum.team_t[0x49554B3DA0DA3E1]] = 0,
-			[Enum.team_t[0x7A0FCED35961F87]] = 0
+			[Enum.team_t.team_three] = 0,
+			[Enum.team_t.team_four] = 0,
+			[Enum.team_t.team_five] = 0,
+			[Enum.team_t.team_six] = 0
 		}
 	elseif CoDShared.IsGametypeTeamBased() then
 		DataSources.DirectorPartyList.TeamCounts = {
@@ -512,7 +512,7 @@ CoD.DirectorUtility.InitLobbyListsOnce = function ( f13_arg0, f13_arg1 )
 		end
 		
 		DataSources.DirectorPartyList.OnSubscriptionNotified = function ( f15_arg0 )
-			if f15_arg0 == f13_arg0.privateClient.update and (f13_arg0.lobbyMode:get() ~= Enum.LobbyMode[0xF5EE25D311E5223] or Enum.eModes[0x3723205FAE52C4A] == Engine.CurrentSessionMode()) then
+			if f15_arg0 == f13_arg0.privateClient.update and (f13_arg0.lobbyMode:get() ~= Enum.LobbyMode[0xF5EE25D311E5223] or Enum.eModes.mode_zombies == Engine.CurrentSessionMode()) then
 				return 
 			end
 			CoD.DirectorUtility.UpdateLobbyClientInfo( f13_arg0, f13_arg1 )
@@ -596,7 +596,7 @@ CoD.DirectorUtility.DirectorPartyAndCustomListHelper = function ( f18_arg0, f18_
 	local f18_local12 = {}
 	local f18_local13 = LobbyData.GetCurrentMenuTarget()
 	local f18_local14 = 0
-	if f18_local13[0x4BCADBA8E631B86] ~= LuaEnum.UI.DIRECTOR_ONLINE and f18_local13[0x4BCADBA8E631B86] ~= LuaEnum.UI.DIRECTOR_LAN and f18_local13[0x4BCADBA8E631B86] ~= LuaEnum.UI.DIRECTOR_ONLINE_WZ_PUBLIC then
+	if f18_local13.name ~= LuaEnum.UI.DIRECTOR_ONLINE and f18_local13.name ~= LuaEnum.UI.DIRECTOR_LAN and f18_local13.name ~= LuaEnum.UI.DIRECTOR_ONLINE_WZ_PUBLIC then
 		for f18_local18, f18_local19 in ipairs( f18_local7 ) do
 			if f18_local19.isMember == 1 then
 				f18_local14 = f18_local14 + 1
@@ -627,14 +627,14 @@ CoD.DirectorUtility.DirectorPartyAndCustomListHelper = function ( f18_arg0, f18_
 			end
 		end
 		for f18_local19, f18_local20 in ipairs( f18_local7 ) do
-			if f18_local20.isLocal == 0 and (f18_local13[0x4BCADBA8E631B86] ~= LuaEnum.UI.DIRECTOR_ONLINE_WZ_PUBLIC or f18_local20.isMember == 1) and f18_local1 then
+			if f18_local20.isLocal == 0 and (f18_local13.name ~= LuaEnum.UI.DIRECTOR_ONLINE_WZ_PUBLIC or f18_local20.isMember == 1) and f18_local1 then
 				table.insert( f18_local12, CoD.DirectorUtility.DirectorPartyListEntryForXUID( f18_arg1.menu.selectXUID, f18_local20.xuid, f18_local20.team ) )
 			end
 		end
 	end
 	local f18_local15 = Engine.GetGlobalModel()
 	f18_local15 = f18_local15.PartyPrivacy.privacy:get() == Enum.PartyPrivacy[0x8B288F48084ABC5]
-	if Engine.CurrentSessionMode() == Enum.eModes[0xBF1DCC8138A9D39] or Engine.CurrentSessionMode() == Enum.eModes[0x3723205FAE52C4A] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_warzone or Engine.CurrentSessionMode() == Enum.eModes.mode_zombies then
 		Engine.SendClientScriptNotify( f18_arg0, "PositionDraft_Update", {
 			localClientNum = Engine.GetLocalClientNum( f18_arg0 )
 		} )
@@ -653,10 +653,10 @@ CoD.DirectorUtility.DirectorPartyAndCustomListHelper = function ( f18_arg0, f18_
 		f18_local16 = {
 			[Enum.team_t[0x2A34B055ADD98AB]] = f18_local17,
 			[Enum.team_t[0x3F83D7CE4BD7B68]] = f18_local17,
-			[Enum.team_t[0x51B2E92F4D8DAD7]] = f18_local17,
-			[Enum.team_t[0x5CBEDB3D265E8F1]] = f18_local18,
-			[Enum.team_t[0x49554B3DA0DA3E1]] = f18_local18,
-			[Enum.team_t[0x7A0FCED35961F87]] = f18_local18
+			[Enum.team_t.team_three] = f18_local17,
+			[Enum.team_t.team_four] = f18_local18,
+			[Enum.team_t.team_five] = f18_local18,
+			[Enum.team_t.team_six] = f18_local18
 		}
 	elseif f18_local8 then
 		f18_local16 = {
@@ -845,7 +845,7 @@ DataSources.DirectorLobbyListAll = DataSourceHelpers.ListSetup( "DirectorLobbyLi
 end, true )
 CoD.DirectorUtility.PlaylistIDToPlaylistName = function ( f29_arg0 )
 	if not IsLobbyNetworkModeLive() then
-		return 0x0
+		return ""
 	end
 	local f29_local0 = Engine[0x3ACB99DBAD24D55]( f29_arg0 )
 	local f29_local1
@@ -857,7 +857,7 @@ CoD.DirectorUtility.PlaylistIDToPlaylistName = function ( f29_arg0 )
 			return f29_local1
 		end
 	end
-	f29_local1 = 0x0
+	f29_local1 = ""
 end
 
 CoD.DirectorUtility.PlaylistIDToPlaylistIcon = function ( f30_arg0 )
@@ -948,13 +948,13 @@ CoD.DirectorUtility.PlaylistIDToZMPlaylistImage = function ( f35_arg0 )
 		if f35_local0 then
 			if f35_local0.isQuickplayCard then
 				return f35_local0.imageTileLarge or "blacktransparent"
-			elseif f35_local0[0xE45AEA6EE3C751B] then
+			elseif f35_local0.featured then
 				local f35_local1 = f35_local0.imageTileSideInfo
 				if not f35_local1 then
 					f35_local1 = f35_local0.imageBackground or "blacktransparent"
 				end
 				return f35_local1
-			elseif not f35_local0.excludePublicLobby or CoD.DirectorUtility.IsPlaylistGametype( f35_local0, 0xBC1A39D743DD767 ) then
+			elseif not f35_local0.excludePublicLobby or CoD.DirectorUtility.IsPlaylistGametype( f35_local0, "ztutorial" ) then
 				return f35_local0.imageTileLarge or "blacktransparent"
 			else
 				return f35_local0.imageTileSmall or "blacktransparent"
@@ -967,36 +967,36 @@ end
 
 CoD.DirectorUtility.PlaylistIDToZMPlaylistName = function ( f36_arg0 )
 	if not IsLobbyNetworkModeLive() then
-		return 0x0
+		return ""
 	end
 	local f36_local0 = Engine[0x3ACB99DBAD24D55]( f36_arg0 )
 	if f36_local0 then
-		if not f36_local0.excludePublicLobby or #f36_local0.rotationList > 1 or CoD.DirectorUtility.IsPlaylistGametype( f36_local0, 0xBC1A39D743DD767 ) then
-			return f36_local0.name or 0x0
+		if not f36_local0.excludePublicLobby or #f36_local0.rotationList > 1 or CoD.DirectorUtility.IsPlaylistGametype( f36_local0, "ztutorial" ) then
+			return f36_local0.name or ""
 		elseif #f36_local0.rotationList > 0 then
 			local f36_local1 = f36_local0.rotationList[1].map
-			if CoD.DirectorUtility.IsPlaylistGametype( f36_local0, 0x8F6A072F8CF2F88 ) then
-				return CoD.MapUtility.GetMapValue( f36_local1, CoD.ZombieUtility.GetTrialMapNameFieldName( CoD.ZombieUtility.GetZMPlaylistTrialVariant( f36_local0 ) ), 0x0 )
+			if CoD.DirectorUtility.IsPlaylistGametype( f36_local0, "ztrials" ) then
+				return CoD.MapUtility.GetMapValue( f36_local1, CoD.ZombieUtility.GetTrialMapNameFieldName( CoD.ZombieUtility.GetZMPlaylistTrialVariant( f36_local0 ) ), "" )
 			else
-				return CoD.MapUtility.GetMapValue( f36_local1, "mapName", 0x0 )
+				return CoD.MapUtility.GetMapValue( f36_local1, "mapName", "" )
 			end
 		end
 	end
-	return 0x0
+	return ""
 end
 
 CoD.DirectorUtility.PlaylistIDToZMPlaylistSubtitle = function ( f37_arg0 )
 	if not IsLobbyNetworkModeLive() then
-		return 0x0
+		return ""
 	end
 	local f37_local0 = Engine[0x3ACB99DBAD24D55]( f37_arg0 )
-	if f37_local0 and f37_local0.excludePublicLobby and not CoD.DirectorUtility.IsPlaylistGametype( f37_local0, 0xBC1A39D743DD767 ) then
+	if f37_local0 and f37_local0.excludePublicLobby and not CoD.DirectorUtility.IsPlaylistGametype( f37_local0, "ztutorial" ) then
 		local f37_local1 = Engine[0xF2CD89B3C345FD3]( f37_local0.rotationList[1].gametype )
 		if f37_local1 then
 			return CoD.GameTypeUtility.GameTypeToLocalizeToUpperName( f37_local1.gametype )
 		end
 	end
-	return 0x0
+	return ""
 end
 
 CoD.DirectorUtility.PlaylistIDToZMPlaylistDifficulty = function ( f38_arg0 )
@@ -1004,7 +1004,7 @@ CoD.DirectorUtility.PlaylistIDToZMPlaylistDifficulty = function ( f38_arg0 )
 		return "blacktransparent"
 	else
 		local f38_local0 = Engine[0x3ACB99DBAD24D55]( f38_arg0 )
-		if f38_local0 and f38_local0.excludePublicLobby and CoD.DirectorUtility.IsPlaylistGametype( f38_local0, 0x73B5B4896F886CB ) and CoD.ZombieUtility then
+		if f38_local0 and f38_local0.excludePublicLobby and CoD.DirectorUtility.IsPlaylistGametype( f38_local0, "zclassic" ) and CoD.ZombieUtility then
 			local f38_local1 = {
 				"ui_icon_difficulty_zm_casual_large",
 				"ui_icon_difficulty_zm_normal_large",
@@ -1047,7 +1047,7 @@ end
 
 CoD.DirectorUtility.DifficultyToLocalizedDifficultyName = function ( f42_arg0 )
 	if f42_arg0 == -1 then
-		return 0x0
+		return ""
 	else
 		return Engine.ToUpper( CoD.ZombieUtility.GetDifficultyText( f42_arg0 ) )
 	end
@@ -1055,14 +1055,14 @@ end
 
 CoD.DirectorUtility.GetCustomGamesName = function ( f43_arg0 )
 	if IsZombies() then
-		return 0xD3DE85892CAF1F
+		return "menu/custom_mutations"
 	else
 		return f43_arg0
 	end
 end
 
 CoD.DirectorUtility.TrialsMapEnabledDvars = {
-	[0x9E4FEA5D255373] = 0x3B9C106CFCDE18B
+	zm_orange = 0x3B9C106CFCDE18B
 }
 DataSources.DirectorMapList = DataSourceHelpers.ListSetup( "DirectorMapList", function ( f44_arg0, f44_arg1 )
 	local f44_local0 = {}
@@ -1070,12 +1070,12 @@ DataSources.DirectorMapList = DataSourceHelpers.ListSetup( "DirectorMapList", fu
 	CoD.perController[f44_arg0].mapCategory = 0
 	local f44_local2 = {}
 	local f44_local3 = {
-		[0x73B5B4896F886CB] = 0xB1B381DE2ADC014,
-		[0x8F6A072F8CF2F88] = 0x7EEA154A1D4F3C1,
-		[0xC51CA5D8EEF9CF0] = 0x4F1EA0CA4EC9E3,
-		[0x8512D346B01B940] = 0x5154C514171FEE9,
-		[0x3037F6188BD285F] = 0xD126B224D84608C,
-		[0xBC1A39D743DD767] = 0x74923AD245EF8BE
+		zclassic = 0xB1B381DE2ADC014,
+		ztrials = 0x7EEA154A1D4F3C1,
+		zgrief = 0x4F1EA0CA4EC9E3,
+		zstandard = 0x5154C514171FEE9,
+		ztcm = 0xD126B224D84608C,
+		ztutorial = 0x74923AD245EF8BE
 	}
 	local f44_local4 = function ( f45_arg0 )
 		return f44_local2[f45_arg0] ~= nil
@@ -1096,7 +1096,7 @@ DataSources.DirectorMapList = DataSourceHelpers.ListSetup( "DirectorMapList", fu
 		f47_local0 = f47_local0:create( "lobbyRoot.selectedGameType" )
 		f47_local0 = f47_local0:get()
 		if CoD.MapUtility.MapsTable[f47_arg0][f44_local3[f47_local0]] == 1 then
-			if f47_local0 == 0x8F6A072F8CF2F88 then
+			if f47_local0 == "ztrials" then
 				local f47_local1 = CoD.DirectorUtility.TrialsMapEnabledDvars[f47_arg0]
 				if not f47_local1 or not IsBooleanDvarSet( f47_local1 ) then
 					return false
@@ -1107,7 +1107,7 @@ DataSources.DirectorMapList = DataSourceHelpers.ListSetup( "DirectorMapList", fu
 		end
 		local f47_local1 = false
 		local f47_local2 = LobbyData.GetCurrentMenuTarget()
-		if f47_local2[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_ONLINE_CP_STORY then
+		if f47_local2.name == LuaEnum.UI.DIRECTOR_ONLINE_CP_STORY then
 			f47_local1 = CoD.MapUtility.MapsTable[f47_arg0].dlc_pack == 4
 		else
 			f47_local1 = CoD.MapUtility.MapsTable[f47_arg0].dlc_pack > -1
@@ -1146,15 +1146,15 @@ DataSources.DirectorMapList = DataSourceHelpers.ListSetup( "DirectorMapList", fu
 			local f44_local16 = Engine.GetGlobalModel()
 			f44_local16 = f44_local16:create( "lobbyRoot.selectedGameType" )
 			local f44_local17 = 0
-			if f44_local16 and f44_local16:get() == 0x8F6A072F8CF2F88 then
-				local f44_local18 = CoD.MapUtility.GetMapValue( f44_local26, 0xC3A04783CB1D6BE, 0x0 )
-				if f44_local18 ~= 0x0 then
+			if f44_local16 and f44_local16:get() == "ztrials" then
+				local f44_local18 = CoD.MapUtility.GetMapValue( f44_local26, 0xC3A04783CB1D6BE, "" )
+				if f44_local18 ~= "" then
 					f44_local17 = Engine[0x22EAAB59AA27E9B]( f44_local18 ) or 0
 				end
 				f44_local17 = math.min( f44_local17, CoD.MapUtility.GetMapValue( f44_local26, 0x4D5E4CA4AC8AFEB, 0 ) )
 			end
 			for f44_local18 = 0, f44_local17, 1 do
-				if f44_local16 and f44_local16:get() == 0x8F6A072F8CF2F88 then
+				if f44_local16 and f44_local16:get() == "ztrials" then
 					local f44_local21 = Engine.GetGlobalModel()
 					f44_local21 = f44_local21:create( "localZMTrialVariant" )
 					if f44_local14 then
@@ -1173,7 +1173,7 @@ DataSources.DirectorMapList = DataSourceHelpers.ListSetup( "DirectorMapList", fu
 				local f44_local23 = {
 					models = {
 						id = f44_local26,
-						name = 0x0,
+						name = "",
 						text = Engine.Localize( f44_local27.mapName ),
 						buttonText = Engine.Localize( CoD.StoreUtility.PrependPurchaseIconIfNeeded( f44_arg0, f44_local26, f44_local27.mapName ) ),
 						image = f44_local27.previewImage,
@@ -1222,12 +1222,12 @@ DataSources.DirectorMapList = DataSourceHelpers.ListSetup( "DirectorMapList", fu
 	end
 	local f44_local10 = Engine.GetGlobalModel()
 	f44_local10 = f44_local10:create( "lobbyRoot.selectedGameType" )
-	if f44_local10 and f44_local10:get() == 0xBC1A39D743DD767 then
+	if f44_local10 and f44_local10:get() == "ztutorial" then
 		local f44_local11 = {}
-		local f44_local12 = Engine.GetGametypeSetting( 0x5D494C919750881 )
+		local f44_local12 = Engine.GetGametypeSetting( "zmdifficulty" )
 		local f44_local13 = {
-			0x64122F25F791280,
-			0xC9580DAB628ED90
+			"zmui/tutorial_beginner",
+			"zmui/tutorial_advanced"
 		}
 		local f44_local26 = false
 		for f44_local27 = 1, #f44_local0, 1 do
@@ -1277,7 +1277,7 @@ DataSources.CustomGamesMapModeTabs = DataSourceHelpers.ListSetup( "CustomGamesMa
 	local f48_local1 = {}
 	table.insert( f48_local1, {
 		models = {
-			tabName = 0xED2FACC41C9E672,
+			tabName = "mpui/gamemode_caps",
 			frameWidget = f48_local0
 		}
 	} )
@@ -1295,7 +1295,7 @@ DataSourceHelpers.PerControllerDataSourceSetup( "MapModePreview", "MapModePrevie
 	local f49_local0 = f49_arg0:create( "mapName" )
 	f49_local0:set( Engine[0xC53F8D38DF9042B]( Engine[0xE67E7253CC272C9]() ) )
 	f49_local0 = f49_arg0:create( "modeName" )
-	f49_local0:set( Dvar[0xFF54369D6573B91]:get() )
+	f49_local0:set( Dvar.g_gametype:get() )
 end, true )
 CoD.DirectorUtility.CombatTrainingGameTypes = {
 	"ct_recon",
@@ -1346,11 +1346,11 @@ DataSources.DirectorGameTypeList = DataSourceHelpers.ListSetup( "DirectorGameTyp
 			local f52_local0 = {}
 			if f52_arg0 == Enum.LobbyMainMode[0x79D01499920B292] then
 				f52_local0 = {
-					0x73B5B4896F886CB,
-					0x8512D346B01B940,
-					0x8F6A072F8CF2F88,
-					0x3037F6188BD285F,
-					0xBC1A39D743DD767
+					"zclassic",
+					"zstandard",
+					"ztrials",
+					"ztcm",
+					"ztutorial"
 				}
 			end
 			for f52_local4, f52_local5 in ipairs( f52_local0 ) do
@@ -1362,12 +1362,12 @@ DataSources.DirectorGameTypeList = DataSourceHelpers.ListSetup( "DirectorGameTyp
 		end
 		
 		for f51_local10, f51_local11 in pairs( f51_local4 ) do
-			if f51_local11.category == "standard" or f51_local3["mainmode"] == Enum.LobbyMainMode[0x7B50049993542C0] or f51_local3["mainmode"] == Enum.LobbyMainMode[0x79D01499920B292] and f51_local11.category ~= "hidden" then
+			if f51_local11.category == "standard" or f51_local3.mainmode == Enum.LobbyMainMode[0x7B50049993542C0] or f51_local3.mainmode == Enum.LobbyMainMode[0x79D01499920B292] and f51_local11.category ~= "hidden" then
 				local f51_local12 = Engine[0xEA74FA7EE46E195]( f51_local11.gametype )
 				local f51_local13 = Engine[0xC53F8D38DF9042B]( f51_local11.gametype )
 				local f51_local14 = Engine[0xC53F8D38DF9042B]( f51_local12.groupName )
-				if f51_local3.LobbyMode ~= Enum.LobbyMode[0xF5EE25D311E5223] or f51_local3["mainmode"] ~= Enum.LobbyMainMode[0x79D01499920B292] or f51_local13 == 0x73B5B4896F886CB or IsLobbyNetworkModeLAN() and not CoD.DirectorUtility.IsOfflineScreenStateCustomGame() then
-					if f51_local14 ~= 0x3037F6188BD285F and (f51_local13 ~= 0x8F6A072F8CF2F88 or not IsBooleanDvarSet( 0x431CAAEFB37761 ) and f51_local13 == 0x8F6A072F8CF2F88) and (f51_local13 ~= 0xBC1A39D743DD767 or f51_local13 == 0xBC1A39D743DD767 and f51_local2 == 1) then
+				if f51_local3.LobbyMode ~= Enum.LobbyMode[0xF5EE25D311E5223] or f51_local3.mainmode ~= Enum.LobbyMainMode[0x79D01499920B292] or f51_local13 == "zclassic" or IsLobbyNetworkModeLAN() and not CoD.DirectorUtility.IsOfflineScreenStateCustomGame() then
+					if f51_local14 ~= "ztcm" and (f51_local13 ~= "ztrials" or not IsBooleanDvarSet( 0x431CAAEFB37761 ) and f51_local13 == "ztrials") and (f51_local13 ~= "ztutorial" or f51_local13 == "ztutorial" and f51_local2 == 1) then
 						table.insert( f51_local0, {
 							models = {
 								id = f51_local11.gametype,
@@ -1378,7 +1378,7 @@ DataSources.DirectorGameTypeList = DataSourceHelpers.ListSetup( "DirectorGameTyp
 							},
 							properties = {
 								selectIndex = f51_local11.gametype == f51_local5,
-								sortIndex = f51_local6( f51_local3["mainmode"], f51_local13 )
+								sortIndex = f51_local6( f51_local3.mainmode, f51_local13 )
 							}
 						} )
 					end
@@ -1406,7 +1406,7 @@ CoD.DirectorUtility.GetCombatTrainingMapIterator = function ()
 	end
 	, function ( f57_arg0 )
 		local f57_local0
-		if CoD.mapsTable[f57_arg0].session_mode ~= Enum.eModes[0x83EBA96F36BC4E5] or CoD.mapsTable[f57_arg0][0xCEA99714A694D78] ~= 1 then
+		if CoD.mapsTable[f57_arg0].session_mode ~= Enum.eModes.mode_multiplayer or CoD.mapsTable[f57_arg0][0xCEA99714A694D78] ~= 1 then
 			f57_local0 = false
 		else
 			f57_local0 = true
@@ -1532,7 +1532,7 @@ DataSources.DirectorSelectTabs = ListHelper_SetupDataSource( "DirectorSelectTabs
 	if not IsLobbyNetworkModeLAN() and not CoD.DirectorUtility.DisableForCurrentMilestone( f68_arg0 ) then
 		table.insert( f68_local0, {
 			models = {
-				name = Engine[0xF9F1239CFD921FE]( 0x70D6B6F438918B5 ),
+				name = Engine[0xF9F1239CFD921FE]( "director/home" ),
 				activeTab = CoD.DirectorUtility.DirectorSelectTabValues.Home,
 				available = true
 			}
@@ -1540,7 +1540,7 @@ DataSources.DirectorSelectTabs = ListHelper_SetupDataSource( "DirectorSelectTabs
 	end
 	table.insert( f68_local0, {
 		models = {
-			name = Engine[0xF9F1239CFD921FE]( 0xA4A8D3983C3FED4 ),
+			name = Engine[0xF9F1239CFD921FE]( "director/play" ),
 			activeTab = CoD.DirectorUtility.DirectorSelectTabValues.Play,
 			available = true
 		},
@@ -1563,7 +1563,7 @@ CoD.DirectorUtility.IsPlaylistRankRestrictedForPlayer = function ( f70_arg0, f70
 	local f70_local0 = f70_arg0.locked
 	for f70_local1 = 1, #f70_arg0.rules, 1 do
 		local f70_local4 = f70_arg0.rules[f70_local1]
-		if f70_local4.name == 0xCFDEC6615EA1E55 then
+		if f70_local4.name == "scr_max_rank" then
 			local f70_local5 = tonumber( f70_local4.value )
 			local f70_local6 = Engine.GetPlayerStats( f70_arg2, CoD.STATS_LOCATION_NORMAL, f70_arg1 )
 			return f70_local5 <= (f70_local6.PlayerStatsList.RANK and f70_local6.PlayerStatsList.RANK.StatValue:get() or 0)
@@ -1586,11 +1586,11 @@ CoD.DirectorUtility.CreateFeatureCardsFromPlaylists = function ( f71_arg0, f71_a
 				local f71_local9 = CoD.DirectorUtility.CreateFilter( f71_arg1, f71_local7.lobbyMainMode, "Grp" .. f71_local3, f71_local7.nameRef, f71_local7.icon, f71_local7.entries, nil, nil )
 				if #f71_local9.cards > 0 then
 					for f71_local14, f71_local15 in ipairs( f71_local9.cards ) do
-						if f71_local15.featured and (f71_local15.mode == nil or LuaUtils.GetDisplayNameForLobbyMainMode( f71_local15.mode ) ~= 0x0) then
+						if f71_local15.featured and (f71_local15.mode == nil or LuaUtils.GetDisplayNameForLobbyMainMode( f71_local15.mode ) ~= "") then
 							local f71_local13 = f71_local15.detailedDesc
 							f71_local15.detailedDesc = nil
 							f71_local15.descriptionText = f71_local13
-							f71_local15.subtitle = 0x0
+							f71_local15.subtitle = ""
 							table.insert( f71_arg0, {
 								models = f71_local15,
 								properties = {
@@ -1626,7 +1626,7 @@ CoD.DirectorUtility.GetFirstOrFeaturedPlaylistEntry = function ( f72_arg0, f72_a
 	if f72_local2 then
 		if IsLobbyNetworkModeLAN() then
 			for f72_local13, f72_local14 in ipairs( f72_arg1 ) do
-				if f72_local14.nameHash == 0x5D8D7B6A4C553C8 and #f72_local14.entries > 0 then
+				if f72_local14.nameHash == "arena" and #f72_local14.entries > 0 then
 					f72_local9 = f72_local14.entries[1].id
 				end
 			end
@@ -1641,7 +1641,7 @@ CoD.DirectorUtility.GetFirstOrFeaturedPlaylistEntry = function ( f72_arg0, f72_a
 	for f72_local13, f72_local14 in ipairs( f72_arg1 ) do
 		if f72_local14.lobbyMainMode == f72_local1 or f72_local14.lobbyMainMode == Enum.LobbyMainMode[0xD5FBB8D74AC6D62] then
 			local f72_local15
-			if f72_local14.nameHash ~= 0x5D8D7B6A4C553C8 and f72_local14.nameHash ~= 0x98A15D908A3089F then
+			if f72_local14.nameHash ~= "arena" and f72_local14.nameHash ~= "arenadev" then
 				f72_local15 = false
 			else
 				f72_local15 = true
@@ -1656,7 +1656,7 @@ CoD.DirectorUtility.GetFirstOrFeaturedPlaylistEntry = function ( f72_arg0, f72_a
 								local f72_local19 = f72_local21.detailedDesc
 								f72_local21.detailedDesc = nil
 								f72_local21.descriptionText = f72_local19
-								f72_local21.subtitle = 0x0
+								f72_local21.subtitle = ""
 								f72_local21.locked = f72_local22
 								f72_local21.description = f72_local8
 								if f72_local21.isQuickplayCard then
@@ -1693,7 +1693,7 @@ CoD.DirectorUtility.GetFirstOrFeaturedPlaylistEntry = function ( f72_arg0, f72_a
 								end
 							elseif not f72_local2 then
 								if f72_local4 == nil then
-									f72_local21.subtitle = 0x0
+									f72_local21.subtitle = ""
 									f72_local21.locked = f72_local22
 									f72_local4 = {
 										models = f72_local21,
@@ -1703,7 +1703,7 @@ CoD.DirectorUtility.GetFirstOrFeaturedPlaylistEntry = function ( f72_arg0, f72_a
 									}
 								end
 							elseif f72_local21.playlist == f72_local9 then
-								f72_local21.subtitle = 0x0
+								f72_local21.subtitle = ""
 								f72_local21.locked = f72_local22
 								f72_local4 = {
 									models = f72_local21,
@@ -1770,7 +1770,7 @@ CoD.DirectorUtility.MainScreenModes = {
 	{
 		arena = false,
 		mainMode = Enum.LobbyMainMode[0x7E41449995CD57E],
-		stringIfLocked = 0x55D96CC762EABDD,
+		stringIfLocked = "menu/multiplayer",
 		lockedOffline = false,
 		isVisible = AlwaysTrue,
 		trialDisable = true
@@ -1778,7 +1778,7 @@ CoD.DirectorUtility.MainScreenModes = {
 	{
 		arena = true,
 		mainMode = Enum.LobbyMainMode[0x7E41449995CD57E],
-		stringIfLocked = 0xCE36E3614BD4EAE,
+		stringIfLocked = "menu/arena",
 		lockedOffline = false,
 		isVisible = CoD.DirectorUtility.HasArena,
 		trialDisable = true
@@ -1786,7 +1786,7 @@ CoD.DirectorUtility.MainScreenModes = {
 	{
 		arena = false,
 		mainMode = Enum.LobbyMainMode[0x78C124999125C42],
-		stringIfLocked = 0xA2DD20750465431,
+		stringIfLocked = "menu/warzone",
 		lockedOffline = false,
 		isVisible = CoD.DirectorUtility.IsWZFeatureCardVisible,
 		trialDisable = false
@@ -1794,7 +1794,7 @@ CoD.DirectorUtility.MainScreenModes = {
 	{
 		arena = false,
 		mainMode = Enum.LobbyMainMode[0x79D01499920B292],
-		stringIfLocked = 0xB06081B8B4567F2,
+		stringIfLocked = "menu/zombies",
 		lockedOffline = false,
 		isVisible = CoD.DirectorUtility.HasZombie,
 		trialDisable = true
@@ -1810,7 +1810,7 @@ CoD.DirectorUtility.IsMainModeLocked = function ( f77_arg0, f77_arg1 )
 	elseif CoD.DirectorUtility.DisableArenaMainMode( f77_arg0, f77_arg1 ) then
 		return true
 	else
-		return LuaUtils.GetDisplayNameForLobbyMainMode( f77_arg1.mainMode ) == 0x0
+		return LuaUtils.GetDisplayNameForLobbyMainMode( f77_arg1.mainMode ) == ""
 	end
 end
 
@@ -1915,7 +1915,7 @@ DataSources.DirectorExtraHomeButtons = ListHelper_SetupDataSource( "DirectorExtr
 		if not LuaUtils.OfflineOnlyDemo() then
 			table.insert( f85_local0, {
 				models = {
-					subtitle = 0xD63F1918C92A85D,
+					subtitle = "menu/play_online",
 					iconBackground = "blacktransparent",
 					iconBackgroundFocus = "blacktransparent",
 					showOnLeft = true,
@@ -1951,8 +1951,8 @@ DataSources.DirectorExtraHomeButtons = ListHelper_SetupDataSource( "DirectorExtr
 					small = false,
 					locked = false,
 					trialLocked = Engine[0xCB675CA7856DA25](),
-					iconBackground = 0xC3F0F5F993FE87D,
-					iconBackgroundFocus = 0x24B8D91DAAF56CA,
+					iconBackground = "ui_icon_director_ct_tile",
+					iconBackgroundFocus = "ui_icon_director_ct_tile_focus",
 					subtitle = 0xAA1920F2AF31A03,
 					showForAllClients = false
 				},
@@ -1963,7 +1963,7 @@ DataSources.DirectorExtraHomeButtons = ListHelper_SetupDataSource( "DirectorExtr
 		end
 		table.insert( f85_local0, {
 			models = {
-				subtitle = 0x60E17AB37AB4874,
+				subtitle = "menu/theater",
 				iconBackground = "blacktransparent",
 				iconBackgroundFocus = "blacktransparent",
 				showOnLeft = true,
@@ -1976,9 +1976,9 @@ DataSources.DirectorExtraHomeButtons = ListHelper_SetupDataSource( "DirectorExtr
 				actionParam = LuaEnum.UI.DIRECTOR_ONLINE_THEATER
 			}
 		} )
-		local f85_local6 = 0xBB377E081CE7EFC
-		local f85_local7 = 0xC4BA1E5ADA41033
-		if IsBooleanDvarSet( 0x22A538E0F11B88E ) then
+		local f85_local6 = "ui_icon_blackmarket_store_tile_default_01"
+		local f85_local7 = "ui_icon_blackmarket_store_tile_focus_01"
+		if IsBooleanDvarSet( "loot_enableblackmarket" ) then
 			local f85_local8 = Engine[0xE00B2F29271C60B]( CoDShared.Loot.GetCurrentSeason() )
 			local f85_local9
 			if f85_local8 then
@@ -1988,7 +1988,7 @@ DataSources.DirectorExtraHomeButtons = ListHelper_SetupDataSource( "DirectorExtr
 				else
 					local f85_local10
 					if f85_local8 then
-						f85_local10 = f85_local8[0xB4983E074152C2D]
+						f85_local10 = f85_local8.squareimagefocus
 						if not f85_local10 then
 						
 						else
@@ -2014,19 +2014,19 @@ DataSources.DirectorExtraHomeButtons = ListHelper_SetupDataSource( "DirectorExtr
 							} )
 						end
 					end
-					f85_local10 = 0xC9F76E7FD5737BF
+					f85_local10 = "ui_icon_blackmarket_store_tile_focus"
 				end
 			end
-			f85_local9 = 0xDC21F033DEE4EF2
+			f85_local9 = "ui_icon_blackmarket_store_tile_default"
 		end
 		if IsCommerceEnabledOnPC() then
 			table.insert( f85_local0, {
 				models = {
-					showOnLeft = not IsBooleanDvarSet( 0x22A538E0F11B88E ),
+					showOnLeft = not IsBooleanDvarSet( "loot_enableblackmarket" ),
 					iconBackground = f85_local6,
 					iconBackgroundFocus = f85_local7,
 					locked = false,
-					subtitle = 0x191CDDA584B4408,
+					subtitle = "menu/store_caps",
 					small = false,
 					showForAllClients = true
 				},
@@ -2039,7 +2039,7 @@ DataSources.DirectorExtraHomeButtons = ListHelper_SetupDataSource( "DirectorExtr
 		if not CoD.isPC then
 			table.insert( f85_local0, {
 				models = {
-					subtitle = 0x968A794E7F44FAD,
+					subtitle = "menu/play_local",
 					iconBackground = "blacktransparent",
 					iconBackgroundFocus = "blacktransparent",
 					showOnLeft = true,
@@ -2078,7 +2078,7 @@ CoD.DirectorUtility.AddBlackoutVODFeaturedCard = function ( f88_arg0, f88_arg1 )
 	table.insert( f88_arg0, {
 		models = {
 			locked = false,
-			name = Engine[0xF9F1239CFD921FE]( 0xA2DD20750465431 ),
+			name = Engine[0xF9F1239CFD921FE]( "menu/warzone" ),
 			iconBackground = 0x722D4EEEAD86C3A,
 			iconBackgroundFocus = 0x722D4EEEAD86C3A,
 			descriptionText = 0x6CF46BE979E096B,
@@ -2098,7 +2098,7 @@ CoD.DirectorUtility.DirectorSelectAction = function ( f89_arg0, f89_arg1, f89_ar
 	local f89_local0 = f89_arg3
 	CoD.DirectorUtility.NavigateToLobby( f89_arg4, f89_arg2, f89_local0 )
 	local f89_local1 = LobbyData.GetLobbyMenuByName( f89_local0 )
-	local f89_local2 = f89_local1["mainmode"]
+	local f89_local2 = f89_local1.mainmode
 	local f89_local3 = f89_local1.LobbyMode == Enum.LobbyMode[0xD42D003CEEA3F87]
 	if IsLobbyNetworkModeLive() then
 		CoD.DirectorUtility.LoadPreferredPlaylist( f89_arg2, f89_local2, f89_local3 )
@@ -2108,7 +2108,7 @@ end
 
 CoD.DirectorUtility.DirectorSelectLockedAction = function ( f90_arg0, f90_arg1, f90_arg2, f90_arg3, f90_arg4 )
 	local f90_local0 = LobbyData.GetLobbyMenuByName( f90_arg3 )
-	local f90_local1 = f90_local0["mainmode"]
+	local f90_local1 = f90_local0.mainmode
 	local f90_local2 = false
 	if CoD.isPC and (CoD.DirectorUtility.ZombieLimitedShouldOpenStore( f90_local1 ) or Engine[0xCB675CA7856DA25]()) then
 		OpenStore( f90_arg0, f90_arg1, f90_arg2, "", f90_arg4 )
@@ -2128,7 +2128,7 @@ end
 CoD.DirectorUtility.DirectorTheaterOpenSelectFilm = function ( f92_arg0, f92_arg1, f92_arg2, f92_arg3, f92_arg4 )
 	if not CoDShared.IsInTheaterLobby() then
 		return 
-	elseif f92_arg3 ~= Enum.eModes[0xB22E0240605CFFE] then
+	elseif f92_arg3 ~= Enum.eModes.mode_invalid then
 		CoD.FileshareUtility.SetCurrentFilter( Enum[0xA8E3D76FFA84DE1][0x309C4BC434A44FC], Engine[0x8506F73B393062F]( f92_arg3 ) )
 	end
 	CoD.LobbyUtility.OpenTheaterSelectFilm( f92_arg4, f92_arg2 )
@@ -2244,7 +2244,7 @@ CoD.DirectorUtility.OpenCACWithMenuSessionMode = function ( f100_arg0, f100_arg1
 	end
 	local f100_local0 = f100_arg3.eMode
 	local f100_local1 = "MPCustomizeClassMenu"
-	if f100_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	if f100_local0 == Enum.eModes.mode_zombies then
 		f100_local1 = "ZMCustomizeClassMenu"
 		if CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( f100_arg2 ) then
 			CoD.DirectorUtility.HideLoadoutPreview( f100_arg2 )
@@ -2268,11 +2268,11 @@ CoD.DirectorUtility.NavigateToCustomGames = function ( f103_arg0, f103_arg1, f10
 end
 
 CoD.DirectorUtility.OpenDirectorChangeCharacterMenu = function ( f104_arg0, f104_arg1, f104_arg2, f104_arg3, f104_arg4 )
-	if f104_arg3 and f104_arg3._sessionMode == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f104_arg3 and f104_arg3._sessionMode == Enum.eModes.mode_multiplayer then
 		OpenOverlay( f104_arg0, "DirectorPersonalizeCharacterMP", f104_arg2, f104_arg3 )
-	elseif f104_arg3 and f104_arg3._sessionMode == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f104_arg3 and f104_arg3._sessionMode == Enum.eModes.mode_zombies then
 		OpenOverlay( f104_arg0, "ZMPersonalizeCharacterMain", f104_arg2, f104_arg3 )
-	elseif f104_arg3 and f104_arg3._sessionMode == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f104_arg3 and f104_arg3._sessionMode == Enum.eModes.mode_warzone then
 		OpenOverlay( f104_arg0, "DirectorChangeCharacter", f104_arg2, f104_arg3 )
 	end
 end
@@ -2304,12 +2304,12 @@ DataSources.DirectorPlayButtons = ListHelper_SetupDataSource( "DirectorPlayButto
 			end
 			if f107_local8 then
 				f107_local6 = f107_local17.stringIfLocked
-				f107_local7 = 0x0
+				f107_local7 = ""
 			end
 			local f107_local9
 			if f107_local17.arena then
-				f107_local6 = 0xCE36E3614BD4EAE
-				f107_local7 = 0xD1B1F44DD4D669E
+				f107_local6 = "menu/arena"
+				f107_local7 = "menu/arena_desc"
 				if f107_local1 then
 					f107_local9 = LuaEnum.UI.DIRECTOR_LAN_MP_ARENA
 				else
@@ -2357,14 +2357,14 @@ DataSources.DirectorPlayButtons = ListHelper_SetupDataSource( "DirectorPlayButto
 	return f107_local0
 end )
 CoD.DirectorUtility.GameModeData = {
-	[Enum.eModes[0x83EBA96F36BC4E5]] = {
-		theaterButtonImage = 0x77E479052CCF3A4
+	[Enum.eModes.mode_multiplayer] = {
+		theaterButtonImage = "ui_icon_theater_tile_mp"
 	},
-	[Enum.eModes[0x3723205FAE52C4A]] = {
-		theaterButtonImage = 0x7444C90529B83DC
+	[Enum.eModes.mode_zombies] = {
+		theaterButtonImage = "ui_icon_theater_tile_zm"
 	},
-	[Enum.eModes[0xBF1DCC8138A9D39]] = {
-		theaterButtonImage = 0x76A399052BC32D0
+	[Enum.eModes.mode_warzone] = {
+		theaterButtonImage = "ui_icon_theater_tile_wz"
 	}
 }
 DataSources.DirectorTheaterLandingPageModes = ListHelper_SetupDataSource( "DirectorTheaterLandingPageModes", function ( f108_arg0, f108_arg1 )
@@ -2410,14 +2410,14 @@ DataSources.DirectorTheaterLandingPageModes = ListHelper_SetupDataSource( "Direc
 	end
 	table.insert( f108_local0, {
 		models = {
-			subtitle = 0x46513144F1265BA,
-			mode = Enum.eModes[0xB22E0240605CFFE],
+			subtitle = "menu/all_caps",
+			mode = Enum.eModes.mode_invalid,
 			small = true,
 			locked = false
 		},
 		properties = {
 			action = CoD.DirectorUtility.DirectorTheaterOpenSelectFilm,
-			actionParam = Enum.eModes[0xB22E0240605CFFE]
+			actionParam = Enum.eModes.mode_invalid
 		}
 	} )
 	return f108_local0
@@ -2467,7 +2467,7 @@ CoD.DirectorUtility.IsAutoShowcased = function ( f112_arg0, f112_arg1, f112_arg2
 	else
 		f112_local0 = CoDShared.Playlists.GetShowcased( f112_arg1 )
 	end
-	if f112_local0 ~= nil and f112_local0 ~= 0x0 and f112_arg2.uniqueName == f112_local0 then
+	if f112_local0 ~= nil and f112_local0 ~= "" and f112_arg2.uniqueName == f112_local0 then
 		return true
 	else
 		return false
@@ -2499,9 +2499,9 @@ CoD.DirectorUtility.CreateFilterCards = function ( f113_arg0, f113_arg1, f113_ar
 				local f113_local16 = Engine.GetGunXPScale( f113_arg1 )
 				f113_local12 = f113_local16 and f113_local16 >= 2
 			else
-				f113_local11 = LuaUtils.PlaylistRulesIncludes( f113_local4.rules, 0x1F880DFEB7286D3, "2" )
-				f113_local12 = LuaUtils.PlaylistRulesIncludes( f113_local4.rules, 0xC9735B7B2ADB9E1, "2" )
-				f113_local13 = LuaUtils.PlaylistRulesIncludes( f113_local4.rules, 0xFF4F2F1F645D6F0, "2" )
+				f113_local11 = LuaUtils.PlaylistRulesIncludes( f113_local4.rules, "scr_xpscalemp", "2" )
+				f113_local12 = LuaUtils.PlaylistRulesIncludes( f113_local4.rules, "scr_gunxpscalemp", "2" )
+				f113_local13 = LuaUtils.PlaylistRulesIncludes( f113_local4.rules, "scr_credit_scale", "2" )
 				f113_local14 = CoD.ZombieUtility.IsDoubleNP( f113_arg1 ) and f113_local4.mainMode == Enum.LobbyMainMode[0x79D01499920B292]
 			end
 			if not (f113_local4.minUserTier == Enum[0xB16E5B2AF9D5263][0x2731C51590EF20A] or f113_local9 >= f113_local4.minUserTier) or f113_local4.maxUserTier ~= Enum[0xB16E5B2AF9D5263][0x2731C51590EF20A] and f113_local4.maxUserTier < f113_local9 then
@@ -2544,7 +2544,7 @@ CoD.DirectorUtility.CreateFilterCards = function ( f113_arg0, f113_arg1, f113_ar
 			end
 			f113_local19, f113_local20 = nil
 			for f113_local25, f113_local26 in ipairs( f113_local15 ) do
-				local f113_local27 = Engine[0xF9F1239CFD921FE]( CoD.BaseUtility.GetMapValue( f113_local26, "mapName", 0x0 ) )
+				local f113_local27 = Engine[0xF9F1239CFD921FE]( CoD.BaseUtility.GetMapValue( f113_local26, "mapName", "" ) )
 				if CoD.MapUtility.IsDLCMapFromName( f113_local26 ) then
 					local f113_local24
 					if f113_local20 then
@@ -2606,7 +2606,7 @@ CoD.DirectorUtility.CreateFilterCards = function ( f113_arg0, f113_arg1, f113_ar
 				end
 				f113_local28 = ""
 			end
-			f113_local22 = Engine[0xF9F1239CFD921FE]( 0x650ADB7FBE404F8, f113_local4.minPlayers, f113_local4.maxPlayers )
+			f113_local22 = Engine[0xF9F1239CFD921FE]( "menu/player_range", f113_local4.minPlayers, f113_local4.maxPlayers )
 			if f113_local4.isQuickplayCard then
 				if not CoD.DirectorUtility.IsQuickplayAvailableForMode( f113_local4.mainMode ) then
 					f113_local8 = true
@@ -2626,7 +2626,7 @@ CoD.DirectorUtility.CreateFilterCards = function ( f113_arg0, f113_arg1, f113_ar
 				if CoD.DirectorUtility.ShouldFeaturedAlternativeEntry( f113_arg1, f113_local4.mainMode ) then
 					f113_local23 = f113_local4.featuredAlt == true
 				else
-					f113_local23 = f113_local4[0xE45AEA6EE3C751B] == true
+					f113_local23 = f113_local4.featured == true
 				end
 				if CoD.DirectorUtility.RegionOnlyAllowsFeaturedPlaylistForMode( f113_arg1, f113_local4.mainMode ) and Dvar.ui_wzFeaturedOnlyCountriesPlaylistEntryID:exists() and 0 ~= tonumber( Dvar.ui_wzFeaturedOnlyCountriesPlaylistEntryID:get() ) then
 					if f113_local6 == tonumber( Dvar.ui_wzFeaturedOnlyCountriesPlaylistEntryID:get() ) then
@@ -2675,11 +2675,11 @@ CoD.DirectorUtility.CreateFilterCards = function ( f113_arg0, f113_arg1, f113_ar
 end
 
 CoD.DirectorUtility.HideCustomizationGametypes = {
-	[0x32C064CAF1E3CA6] = true,
-	[0x5194D18FAD99705] = true,
-	[0xF7992E5B48CDED8] = true,
-	[0xA20B01921DEF8C2] = true,
-	["prop"] = true
+	bounty = true,
+	gun = true,
+	infect = true,
+	oic = true,
+	prop = true
 }
 CoD.DirectorUtility.HideCustomizationPlaylistGametypes = {
 	[0xBF17621068CE209] = true,
@@ -2783,9 +2783,9 @@ DataSources.DirectorPregameButtons = ListHelper_SetupDataSource( "DirectorPregam
 		if not CoDShared.IsInTheaterLobby() then
 			if not IsLobbyNetworkModeLAN() and (not CoD.DirectorUtility.IsOfflineDemo() or Engine[0xCB675CA7856DA25]()) then
 				f115_local4( {
-					name = 0xC07E700FAFA31F,
-					subtitle = 0xC07E700FAFA31F,
-					iconBackground = 0x214ECBA8C04D44C,
+					name = "menu/depot",
+					subtitle = "menu/depot",
+					iconBackground = "$blacktransparent",
 					showPregameButton = true,
 					breadcrumbModel = DataSources.DepotBreadcrumbs.getModel( f115_arg0 )
 				}, {
@@ -2799,7 +2799,7 @@ DataSources.DirectorPregameButtons = ListHelper_SetupDataSource( "DirectorPregam
 				f115_local4( {
 					name = "menu/specialists",
 					subtitle = "menu/specialists",
-					iconBackground = 0x214ECBA8C04D44C,
+					iconBackground = "$blacktransparent",
 					showPregameButton = true,
 					breadcrumbModel = DataSources.CharacterBreadcrumbs.recreateCharacterBreadcrumbModelsIfNeeded( f115_arg0, f115_local2 )
 				}, {
@@ -2812,9 +2812,9 @@ DataSources.DirectorPregameButtons = ListHelper_SetupDataSource( "DirectorPregam
 				} )
 			end
 			f115_local4( {
-				name = 0x62A056B913259CB,
-				subtitle = 0x1A1B9A85C55950F,
-				iconBackground = 0x214ECBA8C04D44C,
+				name = "menu/change",
+				subtitle = "menu/score_streaks",
+				iconBackground = "$blacktransparent",
 				showPregameButton = f115_local6,
 				newBreadcrumbFunc = CoD.BreadcrumbUtility.IsAnyScorestreaksNew,
 				hasRestrictionsEquippedFunc = CoD.CACUtility.AnyEquippedScorestreaksBanned
@@ -2826,9 +2826,9 @@ DataSources.DirectorPregameButtons = ListHelper_SetupDataSource( "DirectorPregam
 				}
 			} )
 			f115_local4( {
-				name = 0x68F4DC4AFAA11C3,
-				subtitle = 0xC705394F8BCCCC9,
-				iconBackground = 0x214ECBA8C04D44C,
+				name = "menu/edit",
+				subtitle = "feature/create_a_class",
+				iconBackground = "$blacktransparent",
 				featureItemIndex = CoD.CACUtility.GetFeatureCACItemIndex(),
 				showPregameButton = f115_local6,
 				newBreadcrumbFunc = CoD.BreadcrumbUtility.IsAnythingInCACNew,
@@ -2845,9 +2845,9 @@ DataSources.DirectorPregameButtons = ListHelper_SetupDataSource( "DirectorPregam
 	if f115_local1 == Enum.LobbyMainMode[0x79D01499920B292] then
 		if not IsLobbyNetworkModeLAN() and (not CoD.DirectorUtility.IsOfflineDemo() or Engine[0xCB675CA7856DA25]()) then
 			f115_local4( {
-				name = 0x49E353FB642CB3F,
-				subtitle = 0x49E353FB642CB3F,
-				iconBackground = 0x214ECBA8C04D44C,
+				name = "menu/characters",
+				subtitle = "menu/characters",
+				iconBackground = "$blacktransparent",
 				showPregameButton = true,
 				breadcrumbModel = DataSources.CharacterBreadcrumbs.recreateCharacterBreadcrumbModelsIfNeeded( f115_arg0, f115_local2 )
 			}, {
@@ -2860,9 +2860,9 @@ DataSources.DirectorPregameButtons = ListHelper_SetupDataSource( "DirectorPregam
 			} )
 		end
 		f115_local4( {
-			name = 0xD6BF3A3749C31CD,
-			subtitle = 0xD6BF3A3749C31CD,
-			iconBackground = 0x214ECBA8C04D44C,
+			name = "menu/armory",
+			subtitle = "menu/armory",
+			iconBackground = "$blacktransparent",
 			showPregameButton = true
 		}, {
 			action = CoD.DirectorUtility.OpenArmoryMenu,
@@ -2872,9 +2872,9 @@ DataSources.DirectorPregameButtons = ListHelper_SetupDataSource( "DirectorPregam
 			}
 		} )
 		f115_local4( {
-			name = 0x68F4DC4AFAA11C3,
-			subtitle = 0x3E876868767ECEB,
-			iconBackground = 0x214ECBA8C04D44C,
+			name = "menu/edit",
+			subtitle = "feature/loadouts",
+			iconBackground = "$blacktransparent",
 			showPregameButton = true
 		}, {
 			action = CoD.DirectorUtility.OpenCACWithMenuSessionMode,
@@ -2887,9 +2887,9 @@ DataSources.DirectorPregameButtons = ListHelper_SetupDataSource( "DirectorPregam
 	if f115_local1 == Enum.LobbyMainMode[0x78C124999125C42] then
 		if not IsLobbyNetworkModeLAN() and (not CoD.DirectorUtility.IsOfflineDemo() or Engine[0xCB675CA7856DA25]()) then
 			f115_local4( {
-				name = 0xC07E700FAFA31F,
-				subtitle = 0xC07E700FAFA31F,
-				iconBackground = 0x214ECBA8C04D44C,
+				name = "menu/depot",
+				subtitle = "menu/depot",
+				iconBackground = "$blacktransparent",
 				showPregameButton = true,
 				breadcrumbModel = DataSources.DepotBreadcrumbs.getModel( f115_arg0 )
 			}, {
@@ -2902,9 +2902,9 @@ DataSources.DirectorPregameButtons = ListHelper_SetupDataSource( "DirectorPregam
 			} )
 		end
 		f115_local4( {
-			name = 0x49E353FB642CB3F,
-			subtitle = 0x49E353FB642CB3F,
-			iconBackground = 0x214ECBA8C04D44C,
+			name = "menu/characters",
+			subtitle = "menu/characters",
+			iconBackground = "$blacktransparent",
 			showPregameButton = true,
 			breadcrumbModel = DataSources.CharacterBreadcrumbs.recreateCharacterBreadcrumbModelsIfNeeded( f115_arg0, f115_local2 )
 		}, {
@@ -2915,9 +2915,9 @@ DataSources.DirectorPregameButtons = ListHelper_SetupDataSource( "DirectorPregam
 			}
 		} )
 		f115_local4( {
-			name = 0xD6BF3A3749C31CD,
-			subtitle = 0xD6BF3A3749C31CD,
-			iconBackground = 0x214ECBA8C04D44C,
+			name = "menu/armory",
+			subtitle = "menu/armory",
+			iconBackground = "$blacktransparent",
 			showPregameButton = true,
 			trialLocked = IsGameTrial()
 		}, {
@@ -2948,19 +2948,19 @@ DataSources.DirectorPregameButtons = ListHelper_SetupDataSource( "DirectorPregam
 end )
 CoD.DirectorUtility.IsLobbyMenu = function ( f119_arg0, f119_arg1 )
 	local f119_local0 = LobbyData.GetCurrentMenuTarget()
-	return f119_local0[0x4BCADBA8E631B86] == f119_arg1
+	return f119_local0.name == f119_arg1
 end
 
 CoD.DirectorUtility.IsMainMode = function ( f120_arg0, f120_arg1 )
 	local f120_local0 = LobbyData.GetCurrentMenuTarget()
-	return f120_local0["mainmode"] == f120_arg1
+	return f120_local0.mainmode == f120_arg1
 end
 
 CoD.DirectorUtility.ShowDirectorSelect = function ( f121_arg0 )
 	local f121_local0 = LobbyData.GetCurrentMenuTarget()
 	local f121_local1 = Engine.GetModel( Engine.GetGlobalModel(), "lobbyRoot.showSelect" )
 	local f121_local2
-	if f121_local0[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_ONLINE then
+	if f121_local0.name == LuaEnum.UI.DIRECTOR_ONLINE then
 		f121_local2 = f121_local1:get()
 		if not f121_local2 then
 		
@@ -2968,7 +2968,7 @@ CoD.DirectorUtility.ShowDirectorSelect = function ( f121_arg0 )
 			return f121_local2
 		end
 	end
-	f121_local2 = f121_local0[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_LAN_SELECT
+	f121_local2 = f121_local0.name == LuaEnum.UI.DIRECTOR_LAN_SELECT
 end
 
 CoD.DirectorUtility.ShowDirectorMain = function ( f122_arg0, f122_arg1 )
@@ -2976,7 +2976,7 @@ CoD.DirectorUtility.ShowDirectorMain = function ( f122_arg0, f122_arg1 )
 	local f122_local1 = LobbyData.GetCurrentMenuTarget()
 	local f122_local2 = Engine.GetModel( Engine.GetGlobalModel(), "lobbyRoot.showSelect" )
 	local f122_local3
-	if not (f122_local1[0x4BCADBA8E631B86] ~= LuaEnum.UI.DIRECTOR_ONLINE or f122_local2:get()) or f122_local1[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_LAN then
+	if not (f122_local1.name ~= LuaEnum.UI.DIRECTOR_ONLINE or f122_local2:get()) or f122_local1.name == LuaEnum.UI.DIRECTOR_LAN then
 		f122_local3 = f122_local0
 	else
 		f122_local3 = false
@@ -2987,7 +2987,7 @@ end
 CoD.DirectorUtility.ShowDirectorPregame = function ( f123_arg0 )
 	local f123_local0 = LobbyData.GetCurrentMenuTarget()
 	local f123_local1
-	if f123_local0[0x4BCADBA8E631B86] ~= LuaEnum.UI.DIRECTOR_ONLINE_MP_PREGAME and f123_local0[0x4BCADBA8E631B86] ~= LuaEnum.UI.DIRECTOR_ONLINE_ZM_PREGAME and f123_local0[0x4BCADBA8E631B86] ~= LuaEnum.UI.DIRECTOR_ONLINE_WZ_PREGAME then
+	if f123_local0.name ~= LuaEnum.UI.DIRECTOR_ONLINE_MP_PREGAME and f123_local0.name ~= LuaEnum.UI.DIRECTOR_ONLINE_ZM_PREGAME and f123_local0.name ~= LuaEnum.UI.DIRECTOR_ONLINE_WZ_PREGAME then
 		f123_local1 = false
 	else
 		f123_local1 = true
@@ -3067,7 +3067,7 @@ end
 CoD.DirectorUtility.ShowDirectorLobbyList = function ( f131_arg0 )
 	local f131_local0 = CoD.DirectorUtility.IsMatchmakingInProgress( f131_arg0 )
 	if f131_local0 then
-		if not CoD.DirectorUtility.IsMainMode( f131_arg0, Enum.eModes[0xBF1DCC8138A9D39] ) then
+		if not CoD.DirectorUtility.IsMainMode( f131_arg0, Enum.eModes.mode_warzone ) then
 			f131_local0 = not CoD.DirectorUtility.ShowDirectorPrivate( nil, f131_arg0 )
 		else
 			f131_local0 = false
@@ -3078,9 +3078,9 @@ end
 
 CoD.DirectorUtility.ShowDirectorCustomMatchCoDCasterList = function ( f132_arg0 )
 	local f132_local0 = LobbyData.GetCurrentMenuTarget()
-	if f132_local0[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_ONLINE_CP_STORY then
+	if f132_local0.name == LuaEnum.UI.DIRECTOR_ONLINE_CP_STORY then
 		return false
-	elseif Engine[0x44FC97037CE42ED]( Enum.LobbyModule[0xC46B73E8E18BA2], Engine[0xC3DF042E7492B66]( Enum.LobbyModule[0xC46B73E8E18BA2] ), Enum[0x575E471C039DBD6][0x8A42AF1547AB4DF] ) == 1 and Engine.GetGametypeSetting( 0x1ECE5CAD71BF4EA ) == 1 then
+	elseif Engine[0x44FC97037CE42ED]( Enum.LobbyModule[0xC46B73E8E18BA2], Engine[0xC3DF042E7492B66]( Enum.LobbyModule[0xC46B73E8E18BA2] ), Enum[0x575E471C039DBD6][0x8A42AF1547AB4DF] ) == 1 and Engine.GetGametypeSetting( "allowspectating" ) == 1 then
 		return true
 	else
 		return false
@@ -3091,7 +3091,7 @@ CoD.DirectorUtility[0x1E20A632CB63092] = function ( f133_arg0 )
 	local f133_local0 = LobbyData.GetCurrentMenuTarget()
 	local f133_local1 = Engine[0xC53F8D38DF9042B]( f133_local0[0x355141FF0C48EDA] )
 	local f133_local2
-	if f133_local1 ~= 0x33990930CDDC3F1 and f133_local1 ~= 0x57E90B1451515A7 and f133_local1 ~= 0xD7B3CF37134CE94 and f133_local1 ~= "private_lobby_pose" then
+	if f133_local1 ~= "lobby_pose" and f133_local1 ~= "warzone" and f133_local1 ~= "arena_pose" and f133_local1 ~= "private_lobby_pose" then
 		f133_local2 = false
 	else
 		f133_local2 = true
@@ -3106,7 +3106,7 @@ end
 
 CoD.DirectorUtility.ShowDirectorCustomMatchPartyOverflowList = function ( f135_arg0 )
 	local f135_local0 = LobbyData.GetCurrentMenuTarget()
-	if f135_local0[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_ONLINE_CP_STORY then
+	if f135_local0.name == LuaEnum.UI.DIRECTOR_ONLINE_CP_STORY then
 		return false
 	end
 	local f135_local1 = Engine[0x6C6FE1BF41EB9AF]( Enum.LobbyModule[0xC46B73E8E18BA2], Engine[0xC3DF042E7492B66]( Enum.LobbyModule[0xC46B73E8E18BA2] ) )
@@ -3120,7 +3120,7 @@ end
 
 CoD.DirectorUtility.ShowDirectorCustomMatchBotButtons = function ( f136_arg0 )
 	local f136_local0 = LobbyData.GetCurrentMenuTarget()
-	if Dvar[0x47BB8673052413C]:get() == true and f136_local0[0x4BCADBA8E631B86] ~= LuaEnum.UI.DIRECTOR_ONLINE_CP_STORY then
+	if Dvar[0x47BB8673052413C]:get() == true and f136_local0.name ~= LuaEnum.UI.DIRECTOR_ONLINE_CP_STORY then
 		local f136_local1 = Engine.GetGlobalModel()
 		f136_local1 = f136_local1.MapVote.mapVoteGameModeNext
 		if f136_local1 and CoD.GameTypeUtility.DoesGameTypeSupportBots( f136_local1:get() ) then
@@ -3132,7 +3132,7 @@ end
 
 CoD.DirectorUtility.ShowDirectorCustomMatchStartButton = function ( f137_arg0 )
 	local f137_local0 = LobbyData.GetCurrentMenuTarget()
-	if f137_local0[0x4BCADBA8E631B86] ~= LuaEnum.UI.DIRECTOR_ONLINE_MP_CUSTOM and f137_local0[0x4BCADBA8E631B86] ~= LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_CUSTOM then
+	if f137_local0.name ~= LuaEnum.UI.DIRECTOR_ONLINE_MP_CUSTOM and f137_local0.name ~= LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_CUSTOM then
 		return false
 	else
 		return Engine[0xEA2BE00F49480D]( Enum.LobbyType[0xA1647599284110] )
@@ -3167,7 +3167,7 @@ CoD.DirectorUtility.IsLobbyReadyUp = function ( f140_arg0, f140_arg1 )
 		return false
 	else
 		local f140_local2
-		if f140_local1["id"] ~= LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE ) and f140_local1["id"] ~= LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PUBLIC ) then
+		if f140_local1.id ~= LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE ) and f140_local1.id ~= LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PUBLIC ) then
 			f140_local2 = false
 		else
 			f140_local2 = true
@@ -3323,7 +3323,7 @@ CoD.DirectorUtility.TimeRemainingForMatchStart = function ( f148_arg0 )
 end
 
 local f0_local0 = function ( f149_arg0, f149_arg1, f149_arg2 )
-	if not CoD.isZombie and IsFirstTimeSetup( f149_arg1, Enum.eModes[0x83EBA96F36BC4E5] ) and (not Engine.IsCampaignGame() or not IsFirstTimeSetup( f149_arg1, Enum.eModes[0x60063C67132EB69] )) then
+	if not CoD.isZombie and IsFirstTimeSetup( f149_arg1, Enum.eModes.mode_multiplayer ) and (not Engine.IsCampaignGame() or not IsFirstTimeSetup( f149_arg1, Enum.eModes.mode_campaign )) then
 		return 
 	end
 	local f149_local0 = f149_arg0.occludedBy
@@ -3375,7 +3375,7 @@ CoD.DirectorUtility.GetDirectorFiltersCardsForMode = function ( f150_arg0, f150_
 		local f150_local9 = f150_local1[f150_local6]
 		if f150_local9.hidden ~= true then
 			local f150_local10 = LuaUtils.GetEModeForLobbyMainMode( f150_local9.lobbyMainMode )
-			if f150_local10 == nil or LuaUtils.GetDisplayNameForEMode( f150_local10 ) ~= 0x0 then
+			if f150_local10 == nil or LuaUtils.GetDisplayNameForEMode( f150_local10 ) ~= "" then
 				local f150_local11 = CoD.DirectorUtility.CreateFilter( f150_arg1, f150_local9.lobbyMainMode, "Grp" .. f150_local5, f150_local9.nameRef, f150_local9.icon, f150_local9.entries, f150_arg2, IsArenaMode(), nil, f150_arg3 )
 				if f150_local3 and #f150_local3.cards > 0 then
 					for f150_local12 = 1, #f150_local11.cards, 1 do
@@ -3628,7 +3628,7 @@ CoD.DirectorUtility.ForceStreamPlaylistImages = function ( f169_arg0 )
 	local f169_local0 = {}
 	for f169_local7, f169_local8 in pairs( CoD.DirectorUtility.GetPlaylists() ) do
 		for f169_local4, f169_local5 in ipairs( f169_local8.entries ) do
-			if f169_arg0 == Enum.eModes[0xB22E0240605CFFE] or f169_arg0 == LuaUtils.GetEModeForLobbyMainMode( f169_local5.mainMode ) then
+			if f169_arg0 == Enum.eModes.mode_invalid or f169_arg0 == LuaUtils.GetEModeForLobbyMainMode( f169_local5.mainMode ) then
 				CoD.BaseUtility.AddForcedImageToTable( f169_local5.image, f169_local0 )
 			end
 		end
@@ -3739,7 +3739,7 @@ end
 CoD.DirectorUtility.PostLoad = function ( f181_arg0, f181_arg1 )
 	CoD.LobbyUtility.RegisterEventHandlers( f181_arg1 )
 	f181_arg1:addMenuOpenedCallback( function ()
-		if Engine.CurrentSessionMode() == Enum.eModes[0xB22E0240605CFFE] and not f181_arg1._openedEntitlementPopups then
+		if Engine.CurrentSessionMode() == Enum.eModes.mode_invalid and not f181_arg1._openedEntitlementPopups then
 			f181_arg1:registerEventHandler( "entitlement_popups_all_done", function ( element, event )
 				if IsKoreaBonusXPSpecialEventActive( f181_arg0 ) then
 					CoD.FTUEUtility.ShowFTUESequence( element, f181_arg0, "KoreaSpecialEvent" )
@@ -3758,7 +3758,7 @@ CoD.DirectorUtility.PostLoad = function ( f181_arg0, f181_arg1 )
 		f181_local0:set( f181_local0:get() - 1 )
 	end
 	local f181_local2 = Engine.CurrentSessionMode()
-	if f181_local2 ~= Enum.eModes[0xB22E0240605CFFE] and f181_local2 ~= Engine.GetMostRecentPlayedMode( f181_arg0 ) then
+	if f181_local2 ~= Enum.eModes.mode_invalid and f181_local2 ~= Engine.GetMostRecentPlayedMode( f181_arg0 ) then
 		Engine.SetMostRecentPlayedMode( f181_local2 )
 		Engine.CommitProfileChanges( f181_arg0 )
 	end
@@ -3810,14 +3810,14 @@ CoD.DirectorUtility.PostLoad = function ( f181_arg0, f181_arg1 )
 		Engine.ForceNotifyModelSubscriptions( Engine.CreateModel( Engine.GetGlobalModel(), "pubstorageFilesChanged" ) )
 		CoD.PlayFrontendMusicForLobby( modelValue )
 		local f184_local2 = LobbyData.GetLobbyMenuByID( modelValue )
-		local f184_local3 = LuaUtils.GetEModeForLobbyMainMode( f184_local2["mainmode"] )
+		local f184_local3 = LuaUtils.GetEModeForLobbyMainMode( f184_local2.mainmode )
 		if f184_local3 ~= nil then
-			if f184_local3 == Enum.eModes[0x83EBA96F36BC4E5] and f184_local2["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) then
+			if f184_local3 == Enum.eModes.mode_multiplayer and f184_local2.id == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING ) then
 				CoD.FTUEUtility.ShouldBlockMPFTUE = false
-			elseif f184_local3 == Enum.eModes[0x83EBA96F36BC4E5] and CoD.FTUEUtility.ShouldBlockMPFTUE then
+			elseif f184_local3 == Enum.eModes.mode_multiplayer and CoD.FTUEUtility.ShouldBlockMPFTUE then
 				CoD.FTUEUtility.ShouldBlockMPFTUE = false
 			elseif f181_arg1:getParent() then
-				if f184_local3 == Enum.eModes[0x83EBA96F36BC4E5] then
+				if f184_local3 == Enum.eModes.mode_multiplayer then
 					if f184_local2.LobbyMode == Enum.LobbyMode[0xD42D003CEEA3F87] then
 						if not CoD.FTUEUtility.ShowFTUESequenceIfNotSeen( f181_arg1, f181_arg0, "LeaguePlayIntroduction" ) then
 							CoD.FTUEUtility.ShowFTUESequenceIfNotSeen( f181_arg1, f181_arg0, "GestureChanges" )
@@ -3831,13 +3831,13 @@ CoD.DirectorUtility.PostLoad = function ( f181_arg0, f181_arg1 )
 				elseif not Engine.IsFirstTimeComplete( f181_arg0, f184_local3 ) and CoD.FTUEUtility.SetCurrentSequenceThroughMode( f181_arg1, f181_arg0, f184_local3 ) then
 					OpenOverlay( f181_arg1, "FTUEInfoScreen", f181_arg0, nil )
 					Engine.SetFirstTimeComplete( f181_arg0, f184_local3, true )
-				elseif f184_local3 == Enum.eModes[0xBF1DCC8138A9D39] then
+				elseif f184_local3 == Enum.eModes.mode_warzone then
 					CoD.FTUEUtility.ShowFTUESequenceIfNotSeen( f181_arg1, f181_arg0, "GestureChanges" )
-				elseif f184_local3 == Enum.eModes[0x3723205FAE52C4A] then
+				elseif f184_local3 == Enum.eModes.mode_zombies then
 					CoD.FTUEUtility.ShowFTUESequenceIfNotSeen( f181_arg1, f181_arg0, "ZMGestureChanges" )
 				end
 			end
-			if f184_local3 ~= Enum.eModes[0xB22E0240605CFFE] then
+			if f184_local3 ~= Enum.eModes.mode_invalid then
 				local f184_local4
 				if modelValue ~= LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_PUBLIC ) and modelValue ~= LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_MATCHMAKING ) then
 					f184_local4 = false
@@ -3860,7 +3860,7 @@ CoD.DirectorUtility.PostLoad = function ( f181_arg0, f181_arg1 )
 		local f185_local0 = Engine.GetGlobalModel()
 		f185_local0 = f185_local0:create( "MapVote.mapVoteMapNext" )
 		local f185_local1 = f185_local0 and f185_local0:get()
-		if not f185_local1 or f185_local1 == 0x0 then
+		if not f185_local1 or f185_local1 == "" then
 			local f185_local2 = Engine.GetGlobalModel()
 			f185_local2 = f185_local2.lobbyRoot.selectedMapId
 			f185_local1 = f185_local2 and f185_local2:get()
@@ -3870,11 +3870,11 @@ CoD.DirectorUtility.PostLoad = function ( f181_arg0, f181_arg1 )
 		if f185_local2 then
 			local f185_local3 = LobbyData.GetLobbyMenuByID( f185_local2 )
 			if f185_local3 then
-				local f185_local4 = LuaUtils.GetEModeForLobbyMainMode( f185_local3["mainmode"] )
+				local f185_local4 = LuaUtils.GetEModeForLobbyMainMode( f185_local3.mainmode )
 				if f185_local4 ~= nil and f185_local4 ~= f181_local13 then
 					if f185_local3.LobbyMode ~= Enum.LobbyMode[0xB3A1BBF18C0B176] then
 						CoD.DirectorUtility.ForceStreamDirectorImagesForMode( f181_arg0, f185_local4 )
-						if CoD.DirectorUtility.IsGameTypeCombatTraining( Dvar[0xFF54369D6573B91]:get() ) then
+						if CoD.DirectorUtility.IsGameTypeCombatTraining( Dvar.g_gametype:get() ) then
 							local f185_local5 = LuaUtils.EModeData[f185_local4]
 							if f185_local5 then
 								SetMap( f181_arg0, f185_local5.DefaultMap, false )
@@ -3882,29 +3882,29 @@ CoD.DirectorUtility.PostLoad = function ( f181_arg0, f181_arg1 )
 							end
 						end
 					end
-				elseif f185_local3["mainmode"] == Enum.LobbyMainMode[0xD5FBB8D74AC6D62] then
-					CoD.DirectorUtility.ForceStreamDirectorImagesForMode( f181_arg0, Enum.eModes[0xB22E0240605CFFE] )
+				elseif f185_local3.mainmode == Enum.LobbyMainMode[0xD5FBB8D74AC6D62] then
+					CoD.DirectorUtility.ForceStreamDirectorImagesForMode( f181_arg0, Enum.eModes.mode_invalid )
 				elseif CoD.DirectorUtility.IsLobbyMenu( f181_arg0, LuaEnum.UI.DIRECTOR_ONLINE_MP_PREGAME ) and CoD.HUDUtility.IsGameTypeBareBones() then
 					SetGameType( f181_arg0, LuaUtils.EModeData[f185_local4].DefaultGameType )
 				end
 				f181_local13 = f185_local4
-				if f185_local4 ~= nil and f185_local4 ~= Enum.eModes[0xB22E0240605CFFE] and (f181_local14 ~= f185_local3[0x4BCADBA8E631B86] == LuaUtils.LobbyMainModeData[f185_local3["mainmode"]].OnlineCustomMenu or f181_local10 ~= f185_local3[0x4BCADBA8E631B86] == LuaUtils.LobbyMainModeData[f185_local3["mainmode"]].OnlineArenaCustomMenu) then
+				if f185_local4 ~= nil and f185_local4 ~= Enum.eModes.mode_invalid and (f181_local14 ~= f185_local3.name == LuaUtils.LobbyMainModeData[f185_local3.mainmode].OnlineCustomMenu or f181_local10 ~= f185_local3.name == LuaUtils.LobbyMainModeData[f185_local3.mainmode].OnlineArenaCustomMenu) then
 					if f181_local14 or f181_local10 then
 						local f185_local6 = Engine.GetGlobalModel()
 						f185_local6 = f185_local6.lobbyRoot:create( "closePopups" )
 						f185_local6:forceNotifySubscriptions()
 					end
-					f181_local14 = f185_local3[0x4BCADBA8E631B86] == LuaUtils.LobbyMainModeData[f185_local3["mainmode"]].OnlineCustomMenu
-					f181_local10 = f185_local3[0x4BCADBA8E631B86] == LuaUtils.LobbyMainModeData[f185_local3["mainmode"]].OnlineArenaCustomMenu
+					f181_local14 = f185_local3.name == LuaUtils.LobbyMainModeData[f185_local3.mainmode].OnlineCustomMenu
+					f181_local10 = f185_local3.name == LuaUtils.LobbyMainModeData[f185_local3.mainmode].OnlineArenaCustomMenu
 				end
 			end
 			if f185_local1 and CoD.mapsTable[f185_local1] then
 				if f185_local2 == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_WZ_CUSTOM ) and (IsBooleanDvarSet( "use_wz_escape" ) or IsBooleanDvarSet( "use_wz_escape_alt" ) or IsBooleanDvarSet( "use_wz_alt" )) then
 					if IsBooleanDvarSet( "use_wz_escape" ) or IsBooleanDvarSet( "use_wz_escape_alt" ) then
 						if IsBooleanDvarSet( "use_wz_escape_alt" ) then
-							SetMap( f181_arg0, 0xC4FD4AF9DA9E4CA, false )
+							SetMap( f181_arg0, "wz_escape_alt", false )
 						else
-							SetMap( f181_arg0, 0x23B088683398E2, false )
+							SetMap( f181_arg0, "wz_escape", false )
 						end
 						SetGameType( f181_arg0, "warzone_duo" )
 						Engine.SetGametypeSetting( "killcamHistorySeconds", 1800 )
@@ -3920,12 +3920,12 @@ CoD.DirectorUtility.PostLoad = function ( f181_arg0, f181_arg1 )
 					local f185_local4 = LuaUtils.GetDefaultMap( f185_local3 )
 					if f185_local4 then
 						f185_local4 = Engine[0xC53F8D38DF9042B]( f185_local4 )
-						if f185_local4 ~= 0x0 and CoD.mapsTable[f185_local4] then
+						if f185_local4 ~= "" and CoD.mapsTable[f185_local4] then
 							SetMap( f181_arg0, f185_local4, false )
 						end
 					end
 				end
-				if f185_local3["mainmode"] == Enum.LobbyMainMode[0x79D01499920B292] then
+				if f185_local3.mainmode == Enum.LobbyMainMode[0x79D01499920B292] then
 					CoD.ZMStoryUtility.SetSelectedStoryToCurrentMapStory( f181_arg0 )
 				end
 			end
@@ -4036,7 +4036,7 @@ CoD.DirectorUtility.PostLoad = function ( f181_arg0, f181_arg1 )
 	if CoD.isPC then
 		CoD.PCUtility.SetupUIMenuShortcuts( f181_arg1, f181_arg0 )
 	end
-	if Engine.CurrentSessionMode() == Enum.eModes[0xB22E0240605CFFE] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_invalid then
 		Engine.ExecNow( f181_arg0, "exec gamedata/configs/common/frontend_gametype_settings.cfg" )
 		if IsLobbyNetworkModeLive() and Dvar[0x5ACE5F4E5F09824]:exists() then
 			local f181_local19 = Dvar[0x5ACE5F4E5F09824]:get()
@@ -4098,7 +4098,7 @@ CoD.DirectorUtility.CardNavigateToLobby = function ( f198_arg0, f198_arg1, f198_
 	end
 	if IsLobbyNetworkModeLive() then
 		if f198_local0.eGameModes == Enum.eGameModes[0x3EF1485A96433A7] then
-			if f198_local0[0x4BCADBA8E631B86] ~= LuaEnum.UI.DIRECTOR_ONLINE_THEATER then
+			if f198_local0.name ~= LuaEnum.UI.DIRECTOR_ONLINE_THEATER then
 				CoD.LobbyUtility.NavigateToLobby( f198_arg4, theaterMenuForMode, false, f198_arg2 )
 			end
 		elseif f198_local4 > LuaDefine.INVALID_PLAYLIST_ID then
@@ -4128,7 +4128,7 @@ CoD.DirectorUtility.CardNavigateToLobby = function ( f198_arg0, f198_arg1, f198_
 				if f198_local6 then
 					f198_local5 = LuaUtils.LobbyMainModeData[f198_local3].QuickPlaylistArenaTarget
 				end
-				if f198_local0[0x4BCADBA8E631B86] ~= f198_local5 then
+				if f198_local0.name ~= f198_local5 then
 					CoD.LobbyUtility.NavigateToLobby( f198_arg4, f198_local5, false, f198_arg2, f198_local4 )
 				else
 					Engine[0xCE25A90DC553200]( f198_local4 )
@@ -4147,7 +4147,7 @@ CoD.DirectorUtility.CardNavigateToLobby = function ( f198_arg0, f198_arg1, f198_
 			if IsArenaMode() then
 				customArenaMenuForMode = LuaUtils.LobbyMainModeData[f198_local3].OnlineArenaCustomMenu
 			end
-			if f198_local0[0x4BCADBA8E631B86] ~= f198_local5 then
+			if f198_local0.name ~= f198_local5 then
 				CoD.LobbyUtility.NavigateToLobby( f198_arg4, f198_local5, false, f198_arg2 )
 			end
 		end
@@ -4156,7 +4156,7 @@ CoD.DirectorUtility.CardNavigateToLobby = function ( f198_arg0, f198_arg1, f198_
 		if IsArenaMode() then
 			f198_local5 = LuaUtils.LobbyMainModeData[f198_local3].LanArenaMenu
 		end
-		if f198_local0[0x4BCADBA8E631B86] ~= f198_local5 then
+		if f198_local0.name ~= f198_local5 then
 			CoD.LobbyUtility.NavigateToLobby( f198_arg4, f198_local5, false, f198_arg2 )
 		end
 	end
@@ -4189,7 +4189,7 @@ end
 CoD.DirectorUtility.NavigateToCustomLobbyForCurrentMode = function ( f201_arg0, f201_arg1 )
 	local f201_local0 = Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.lobbyNav" )
 	local f201_local1 = LobbyData.GetLobbyMenuByID( f201_local0:get() )
-	local f201_local2 = f201_local1["mainmode"]
+	local f201_local2 = f201_local1.mainmode
 	if f201_local2 then
 		if IsLobbyNetworkModeLive() then
 			if IsArenaMode() then
@@ -4213,7 +4213,7 @@ end
 CoD.DirectorUtility.NavigateToPrivateLobbyForCurrentMode = function ( f203_arg0, f203_arg1 )
 	local f203_local0 = Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.lobbyNav" )
 	local f203_local1 = LobbyData.GetLobbyMenuByID( f203_local0:get() )
-	local f203_local2 = f203_local1["mainmode"]
+	local f203_local2 = f203_local1.mainmode
 	if f203_local2 and IsLobbyNetworkModeLive() then
 		CoD.LobbyUtility.NavigateToLobby( f203_arg0, LuaUtils.LobbyMainModeData[f203_local2].PrivateMenu, false, f203_arg1 )
 	end
@@ -4221,9 +4221,9 @@ end
 
 CoD.DirectorUtility.IsSessionModeAvailable = function ( f204_arg0, f204_arg1 )
 	if Engine[0x7D47312EBA41751]() or Engine[0xCB675CA7856DA25]() then
-		return f204_arg1 == Enum.eModes[0xBF1DCC8138A9D39]
+		return f204_arg1 == Enum.eModes.mode_warzone
 	else
-		return LuaUtils.GetDisplayNameForEMode( f204_arg1 ) ~= 0x0
+		return LuaUtils.GetDisplayNameForEMode( f204_arg1 ) ~= ""
 	end
 end
 
@@ -4469,7 +4469,7 @@ CoD.DirectorUtility.InitPublicLobbyModels = function ( f230_arg0, f230_arg1, f23
 	local f230_local1 = f230_local0:create( "stage" )
 	f230_local1:set( LuaEnum.PUBLIC_LOBBY.INVALID )
 	f230_local1 = f230_local0:create( "stageTitle" )
-	f230_local1:set( 0x0 )
+	f230_local1:set( "" )
 	f230_local1 = f230_local0:create( "stageDetails" )
 	f230_local1:set( "" )
 	f230_local1 = f230_local0:create( "stageLoadedFraction" )
@@ -4495,7 +4495,7 @@ CoD.DirectorUtility.GetMatchmakingElapsedTimeString = function ( f232_arg0 )
 end
 
 CoD.DirectorUtility.GetMatchMakingMatchStartTimeString = function ( f233_arg0 )
-	return Engine[0xF9F1239CFD921FE]( 0x54799E48E26840, f233_arg0 )
+	return Engine[0xF9F1239CFD921FE]( "menu/timeremaining_s", f233_arg0 )
 end
 
 CoD.DirectorUtility.ConvertLobbyMainModeToModeString = function ( f234_arg0 )
@@ -4504,7 +4504,7 @@ end
 
 CoD.DirectorUtility.ConvertLobbyMainModeToModeOrArenaString = function ( f235_arg0 )
 	local f235_local0 = f235_arg0
-	if f235_local0 == Enum.eModes[0x83EBA96F36BC4E5] and LuaUtils.IsArenaMode() then
+	if f235_local0 == Enum.eModes.mode_multiplayer and LuaUtils.IsArenaMode() then
 		return 0x7D527CD96A3419
 	else
 		return LuaUtils.GetDisplayNameForLobbyMainMode( f235_local0 )
@@ -4574,7 +4574,7 @@ CoD.DirectorUtility.LobbyMaxPartySizeWarningText = function ( f243_arg0 )
 	if f243_local1.lobbyRoot.lobbyList.playerCount:get() <= f243_local0 then
 		return ""
 	else
-		return Engine[0xF9F1239CFD921FE]( 0x128045808A178F3, f243_local0 )
+		return Engine[0xF9F1239CFD921FE]( "menu/too_many_clients_for_game", f243_local0 )
 	end
 end
 
@@ -4599,7 +4599,7 @@ CoD.DirectorUtility.CPOnlineNewGame = function ( f245_arg0, f245_arg1, f245_arg2
 	Engine.SetDvar( "skipto", "" )
 	Engine.SetDvar( "sv_saveGameSkipto", "" )
 	Engine.SetDvar( "ui_blocksaves", "0" )
-	Engine.SetFirstTimeComplete( f245_arg2, Enum.eModes[0x60063C67132EB69], false )
+	Engine.SetFirstTimeComplete( f245_arg2, Enum.eModes.mode_campaign, false )
 	Engine.SetModelValue( Engine.CreateModel( Engine.GetGlobalModel(), "firstTimeFlowCPConfirm" ), false )
 	OpenOverlay( f245_arg1, "ChooseFace", f245_arg2, "", "" )
 end
@@ -4631,7 +4631,7 @@ end
 
 CoD.DirectorUtility.ShowDirectorCustomLobbyModeNav = function ( f249_arg0, f249_arg1 )
 	local f249_local0 = LobbyData.GetCurrentMenuTarget()
-	if f249_local0[0x4BCADBA8E631B86] == f249_arg1 then
+	if f249_local0.name == f249_arg1 then
 		return false
 	elseif LobbyConnectedToDedicatedHost() then
 		return false
@@ -4756,7 +4756,7 @@ end
 
 CoD.DirectorUtility.IsOfflineDemo = function ()
 	local f261_local0
-	if not CoD.isPC and LuaUtils.GetDisplayNameForLobbyMainMode( Enum.LobbyMainMode[0x79D01499920B292] ) == 0x0 and not LuaUtils.OnlineOnlyDemo() then
+	if not CoD.isPC and LuaUtils.GetDisplayNameForLobbyMainMode( Enum.LobbyMainMode[0x79D01499920B292] ) == "" and not LuaUtils.OnlineOnlyDemo() then
 		f261_local0 = not Engine[0xCB675CA7856DA25]()
 	else
 		f261_local0 = false
@@ -4800,7 +4800,7 @@ CoD.DirectorUtility.OpenTooManyClientsPopup = function ( f265_arg0, f265_arg1 )
 		local f265_local0 = Engine.GetGlobalModel()
 		f265_local0 = f265_local0:create( "lobbyRoot.playlistId" )
 		local f265_local1 = Engine[0x3ACB99DBAD24D55]( f265_local0:get() )
-		OpenGenericSmallPopup( f265_arg0, f265_arg1, Engine[0xF9F1239CFD921FE]( 0xD0CB6ADB37BED49 ), Engine[0xF9F1239CFD921FE]( 0x128045808A178F3, f265_local1.maxPartySize ), nil, CoD.isPC and Engine[0xF9F1239CFD921FE]( 0x5BE4A02B20F31F1 ) or nil )
+		OpenGenericSmallPopup( f265_arg0, f265_arg1, Engine[0xF9F1239CFD921FE]( "menu/warning" ), Engine[0xF9F1239CFD921FE]( "menu/too_many_clients_for_game", f265_local1.maxPartySize ), nil, CoD.isPC and Engine[0xF9F1239CFD921FE]( "menu/ok" ) or nil )
 	end
 end
 
@@ -4826,7 +4826,7 @@ CoD.DirectorUtility.AllClientsOwnDLCForMap = function ( f267_arg0 )
 end
 
 CoD.DirectorUtility.OpenMapsNotEnabledPopup = function ( f268_arg0, f268_arg1 )
-	OpenGenericSmallPopup( f268_arg0, f268_arg1, Engine[0xF9F1239CFD921FE]( 0xD0CB6ADB37BED49 ), Engine[0xF9F1239CFD921FE]( 0xC103184D0E20B3B ), nil, CoD.isPC and Engine[0xF9F1239CFD921FE]( 0x5BE4A02B20F31F1 ) or nil )
+	OpenGenericSmallPopup( f268_arg0, f268_arg1, Engine[0xF9F1239CFD921FE]( "menu/warning" ), Engine[0xF9F1239CFD921FE]( 0xC103184D0E20B3B ), nil, CoD.isPC and Engine[0xF9F1239CFD921FE]( "menu/ok" ) or nil )
 end
 
 CoD.DirectorUtility.AllMembersHaveAMapInPlaylist = function ( f269_arg0, f269_arg1 )
@@ -4912,9 +4912,9 @@ end
 
 CoD.DirectorUtility.GetPrivateMatchName = function ( f276_arg0 )
 	if f276_arg0 then
-		return 0xB666A1A7DCE3FD8
+		return "menu/private_match"
 	else
-		return 0x50AE8D52A8AA406
+		return "menu/solo_match"
 	end
 end
 
@@ -4934,9 +4934,9 @@ CoD.DirectorUtility.UsingLobbyPoses = function ( f277_arg0 )
 end
 
 CoD.DirectorUtility.AddFeaturedWidgetListAction = function ( f278_arg0, f278_arg1, f278_arg2 )
-	f278_arg0:AddButtonCallbackFunction( f278_arg0, f278_arg2, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f279_arg0, f279_arg1, f279_arg2, f279_arg3 )
-		if CoD.DirectorUtility.ShowDirectorSelect( f279_arg2 ) and f278_arg1.activeWidget and not f278_arg1.m_disableNavigation then
-			ProcessListAction( f278_arg1, f278_arg1.activeWidget, f279_arg2, f279_arg1 )
+	f278_arg0:AddButtonCallbackFunction( f278_arg0, f278_arg2, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if CoD.DirectorUtility.ShowDirectorSelect( controller ) and f278_arg1.activeWidget and not f278_arg1.m_disableNavigation then
+			ProcessListAction( f278_arg1, f278_arg1.activeWidget, controller, menu )
 		end
 		return true
 	end )
@@ -4952,7 +4952,7 @@ CoD.DirectorUtility.GetMainModeByLobbyNav = function ()
 	local f281_local0 = Engine.GetGlobalModel()
 	local f281_local1 = LobbyData.GetLobbyMenuByID( f281_local0.lobbyRoot.lobbyNav:get() )
 	if f281_local1 then
-		return f281_local1["mainmode"]
+		return f281_local1.mainmode
 	else
 		return Enum.LobbyMainMode[0xD5FBB8D74AC6D62]
 	end
@@ -4990,9 +4990,9 @@ DataSourceHelpers.PerControllerDataSourceSetup( "DirectorZMLoadoutPreview", "Dir
 	f285_local0 = f285_arg0:create( "ZMLoadoutPreviewItemName" )
 	f285_local0:set( "" )
 	f285_local0 = f285_arg0:create( "ZMLoadoutPreviewItemDesc" )
-	f285_local0:set( 0x0 )
+	f285_local0:set( "" )
 	f285_local0 = f285_arg0:create( "ZMLoadoutPreviewItemImage" )
-	f285_local0:set( 0x0 )
+	f285_local0:set( "" )
 	f285_local0 = f285_arg0:create( "ZMLoadoutPreviewItemIsRestricted" )
 	f285_local0:set( false )
 end, false )
@@ -5013,7 +5013,7 @@ DataSourceHelpers.GlobalDataSourceSetup( "DirectorCharacterButtonZMList", "Direc
 						f286_local8 = f286_local7.characterIndex:get()
 					end
 					if f286_local8 then
-						local f286_local9 = Engine.GetHeroBundleInfo( Enum.eModes[0x3723205FAE52C4A], f286_local8 )
+						local f286_local9 = Engine.GetHeroBundleInfo( Enum.eModes.mode_zombies, f286_local8 )
 						if f286_local9 and f286_local9 ~= 0 then
 							f286_local5.bundle = f286_local9
 						end
@@ -5037,9 +5037,9 @@ CoD.DirectorUtility.IsBotByXuid = function ( f287_arg0, f287_arg1 )
 end
 
 CoD.DirectorUtility.UpdateDescriptionTextFromSelectMenu = function ( f288_arg0, f288_arg1 )
-	local f288_local0 = 0x0
+	local f288_local0 = ""
 	if f288_arg1 then
-		f288_local0 = CoD.SafeGetModelValue( f288_arg1:getModel(), "description" ) or 0x0
+		f288_local0 = CoD.SafeGetModelValue( f288_arg1:getModel(), "description" ) or ""
 	end
 	local f288_local1 = DataSources.LobbyRoot.getModel( f288_arg0 )
 	f288_local1.selectScreenDescription:set( f288_local0 )
@@ -5111,10 +5111,10 @@ CoD.OverlayUtility.AddAutoDetectOverlay( "AppLoadoutConfirmLoadout", {
 	options = function ()
 		local f297_local0 = function ( f298_arg0, f298_arg1 )
 			CoD.OverlayUtility.ShowToast( nil, Engine[0xF9F1239CFD921FE]( 0x67B78DCFF483B23 ), "" )
-			CoD.DirectorUtility.AcceptAppLoadout( f298_arg1, Enum.eModes[0x83EBA96F36BC4E5] )
+			CoD.DirectorUtility.AcceptAppLoadout( f298_arg1, Enum.eModes.mode_multiplayer )
 			Engine[0x5217EA14A38494C]( f298_arg1 )
 			OpenOverlay( GoBack( f298_arg0, f298_arg1 ), "MPCustomizeClassMenu", f298_arg1, {
-				_sessionMode = Enum.eModes[0x83EBA96F36BC4E5]
+				_sessionMode = Enum.eModes.mode_multiplayer
 			} )
 		end
 		
@@ -5122,17 +5122,17 @@ CoD.OverlayUtility.AddAutoDetectOverlay( "AppLoadoutConfirmLoadout", {
 			CoD.OverlayUtility.ShowToast( nil, Engine[0xF9F1239CFD921FE]( 0xC263BC8DC1F47D0 ), "" )
 			Engine[0x5217EA14A38494C]( f299_arg1 )
 			OpenOverlay( GoBack( f299_arg0, f299_arg1 ), "MPCustomizeClassMenu", f299_arg1, {
-				_sessionMode = Enum.eModes[0x83EBA96F36BC4E5]
+				_sessionMode = Enum.eModes.mode_multiplayer
 			} )
 		end
 		
 		local f297_local2 = {}
 		table.insert( f297_local2, {
-			text = 0xBD872543F8A833,
+			text = "menu/accept",
 			action = f297_local0
 		} )
 		table.insert( f297_local2, {
-			text = 0xFD0A4EC72EF5F3F,
+			text = "menu/decline",
 			action = f297_local1
 		} )
 		return f297_local2
@@ -5168,7 +5168,7 @@ end
 CoD.DirectorUtility.ShouldShowAppLoadoutAvailable = function ( f304_arg0, f304_arg1 )
 	local f304_local0 = CoD.DirectorUtility.IsCompanionAppEnabled()
 	local f304_local1
-	if Engine.CurrentSessionMode() == Enum.eModes[0x83EBA96F36BC4E5] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_multiplayer then
 		f304_local1 = not LuaUtils.IsArenaMode()
 	else
 		f304_local1 = false
@@ -5177,7 +5177,7 @@ CoD.DirectorUtility.ShouldShowAppLoadoutAvailable = function ( f304_arg0, f304_a
 end
 
 CoD.DirectorUtility.AcceptAppLoadout = function ( f305_arg0, f305_arg1 )
-	if f305_arg1 ~= Enum.eModes[0x83EBA96F36BC4E5] then
+	if f305_arg1 ~= Enum.eModes.mode_multiplayer then
 		return 
 	end
 	local f305_local0 = Engine.StorageGetBuffer( f305_arg0, Enum.StorageFileType[0x6C886CEB6BF4BCA] )
@@ -5267,7 +5267,7 @@ CoD.DirectorUtility.CreditsPostLoad = function ( f306_arg0, f306_arg1 )
 	
 	local f306_local5 = function ( f312_arg0, f312_arg1, f312_arg2, f312_arg3 )
 		if PropertyIsTrue( f306_arg0, "showPrompt" ) then
-			Engine.PlaySound( "uin_paint_decal_nav" )
+			Engine.playsound( "uin_paint_decal_nav" )
 			if InFrontend() then
 				GoBack( f312_arg1, f312_arg2 )
 			else
@@ -5448,26 +5448,26 @@ CoD.DirectorUtility.LiveEventViewerPreLoad = function ( f318_arg0, f318_arg1 )
 	f318_arg0:AddButtonCallbackFunction( f318_arg0, f318_arg1, Enum.LUIButton[0x820DDD869ABBFAA], nil, f318_local5, f318_local0, false )
 	f318_arg0:AddButtonCallbackFunction( f318_arg0, f318_arg1, Enum.LUIButton[0x6CE8023188D673F], nil, f318_local5, f318_local0, false )
 	f318_arg0:AddButtonCallbackFunction( f318_arg0, f318_arg1, Enum.LUIButton[0x29E5695FF1401AD], nil, f318_local5, f318_local0, false )
-	f318_arg0:AddButtonCallbackFunction( f318_arg0, f318_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, f318_local6, function ( f329_arg0, f329_arg1, f329_arg2 )
-		CoD.Menu.SetButtonLabel( f329_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x82A84E964320CF4 )
+	f318_arg0:AddButtonCallbackFunction( f318_arg0, f318_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, f318_local6, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/exit_live_event_viewer" )
 		return true
 	end, false )
 	if f318_local7 then
-		f318_arg0:AddButtonCallbackFunction( f318_arg0, f318_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, squareButtonPress, function ( f330_arg0, f330_arg1, f330_arg2 )
-			CoD.Menu.SetButtonLabel( f330_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x56FFD43E4B03BCF )
-			if CoD.VideoStreamingUtility.IsMLGStream( f330_arg2 ) then
+		f318_arg0:AddButtonCallbackFunction( f318_arg0, f318_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, squareButtonPress, function ( element, menu, controller )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/mlg_current_quality" )
+			if CoD.VideoStreamingUtility.IsMLGStream( controller ) then
 				return true
 			else
 				return true
 			end
 		end, false )
 	end
-	f318_arg0:AddButtonCallbackFunction( f318_arg0, f318_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], nil, f318_local8, function ( f331_arg0, f331_arg1, f331_arg2 )
-		if f331_arg1.LiveEventViewerMovieAndBackground and IsChildElementInState( f331_arg1, "LiveEventViewerMovieAndBackground", "Windowed" ) then
-			CoD.Menu.SetButtonLabel( f331_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x70675323ADAA7D6 )
+	f318_arg0:AddButtonCallbackFunction( f318_arg0, f318_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], nil, f318_local8, function ( element, menu, controller )
+		if menu.LiveEventViewerMovieAndBackground and IsChildElementInState( menu, "LiveEventViewerMovieAndBackground", "Windowed" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/fullscreen" )
 			return true
 		else
-			CoD.Menu.SetButtonLabel( f331_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0xB7DCA76B1E2C72E )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/windowed" )
 			return true
 		end
 	end, false )

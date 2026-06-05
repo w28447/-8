@@ -43,20 +43,20 @@ CoD.vhud_HellstormBGFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local DecoCenterR = LUI.UIImage.new( 0.5, 0.5, 251, 261, 0.5, 0.5, -101, -73 )
 	DecoCenterR:setAlpha( 0.5 )
-	DecoCenterR:setImage( RegisterImage( 0x41684EFACB94331 ) )
+	DecoCenterR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_deco2" ) )
 	self:addElement( DecoCenterR )
 	self.DecoCenterR = DecoCenterR
 	
 	local DecoCenterL = LUI.UIImage.new( 0.5, 0.5, -261, -251, 0.5, 0.5, -101, -73 )
 	DecoCenterL:setAlpha( 0.5 )
-	DecoCenterL:setImage( RegisterImage( 0x41684EFACB94331 ) )
+	DecoCenterL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_deco2" ) )
 	self:addElement( DecoCenterL )
 	self.DecoCenterL = DecoCenterL
 	
 	local DecoTR = LUI.UIImage.new( 0, 0, 1837, 1877, 0, 0, -12.5, 107.5 )
 	DecoTR:setAlpha( 0.1 )
 	DecoTR:setZRot( -90 )
-	DecoTR:setImage( RegisterImage( 0x41681EFACB93E18 ) )
+	DecoTR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_deco1" ) )
 	DecoTR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DecoTR )
 	self.DecoTR = DecoTR
@@ -64,7 +64,7 @@ CoD.vhud_HellstormBGFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local DecoBR = LUI.UIImage.new( 0, 0, 1837, 1877, 0, 0, 976, 1096 )
 	DecoBR:setAlpha( 0.1 )
 	DecoBR:setZRot( 90 )
-	DecoBR:setImage( RegisterImage( 0x41681EFACB93E18 ) )
+	DecoBR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_deco1" ) )
 	DecoBR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DecoBR )
 	self.DecoBR = DecoBR
@@ -72,7 +72,7 @@ CoD.vhud_HellstormBGFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local DecoBL = LUI.UIImage.new( 0, 0, 46, 86, 0, 0, 976, 1096 )
 	DecoBL:setAlpha( 0.1 )
 	DecoBL:setZRot( 90 )
-	DecoBL:setImage( RegisterImage( 0x41681EFACB93E18 ) )
+	DecoBL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_deco1" ) )
 	DecoBL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DecoBL )
 	self.DecoBL = DecoBL
@@ -80,7 +80,7 @@ CoD.vhud_HellstormBGFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local DecoTL = LUI.UIImage.new( 0, 0, 46, 86, 0, 0, -12.5, 107.5 )
 	DecoTL:setAlpha( 0.1 )
 	DecoTL:setZRot( 90 )
-	DecoTL:setImage( RegisterImage( 0x41681EFACB93E18 ) )
+	DecoTL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_deco1" ) )
 	DecoTL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DecoTL )
 	self.DecoTL = DecoTL
@@ -93,7 +93,7 @@ CoD.vhud_HellstormBGFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local FuiBox01Left = LUI.UIImage.new( 0, 0, 626, 660, 0, 0, 838.5, 872.5 )
 	FuiBox01Left:setAlpha( 0.5 )
 	FuiBox01Left:setYRot( 180 )
-	FuiBox01Left:setImage( RegisterImage( 0x811A80C0AADA825 ) )
+	FuiBox01Left:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
 	FuiBox01Left:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiBox01Left:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox01Left )
@@ -101,7 +101,7 @@ CoD.vhud_HellstormBGFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local FuiBox01Right = LUI.UIImage.new( 0, 0, 1258, 1292, 0, 0, 838.5, 872.5 )
 	FuiBox01Right:setAlpha( 0.5 )
-	FuiBox01Right:setImage( RegisterImage( 0x811A80C0AADA825 ) )
+	FuiBox01Right:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
 	FuiBox01Right:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiBox01Right:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox01Right )
@@ -109,7 +109,7 @@ CoD.vhud_HellstormBGFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local FuiBox02Right = LUI.UIImage.new( 0, 0, 1390.5, 1424.5, 0, 0, 324, 290 )
 	FuiBox02Right:setAlpha( 0.5 )
-	FuiBox02Right:setImage( RegisterImage( 0x811A80C0AADA825 ) )
+	FuiBox02Right:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
 	FuiBox02Right:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiBox02Right:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox02Right )
@@ -117,7 +117,7 @@ CoD.vhud_HellstormBGFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local FuiBox02Left = LUI.UIImage.new( 0, 0, 527.5, 493.5, 0, 0, 324, 290 )
 	FuiBox02Left:setAlpha( 0.5 )
-	FuiBox02Left:setImage( RegisterImage( 0x811A80C0AADA825 ) )
+	FuiBox02Left:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_fui_box01" ) )
 	FuiBox02Left:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	FuiBox02Left:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( FuiBox02Left )

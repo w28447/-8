@@ -20,7 +20,7 @@ CoD.IconRewardWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 				if f2_local0 then
 					f2_local0 = IsWarzone()
 					if f2_local0 then
-						f2_local0 = CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "icon", 0x620E589747ADBAB )
+						f2_local0 = CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "icon", "t7_hud_mp_notifications_xp_blue" )
 					end
 				end
 				return f2_local0
@@ -29,7 +29,7 @@ CoD.IconRewardWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		{
 			stateName = "Visible",
 			condition = function ( menu, element, event )
-				return IsDoubleXP( f1_arg1 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "icon", 0x620E589747ADBAB )
+				return IsDoubleXP( f1_arg1 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "icon", "t7_hud_mp_notifications_xp_blue" )
 			end
 		}
 	} )
@@ -96,7 +96,7 @@ CoD.IconRewardWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		{
 			stateName = "DoubleXP",
 			condition = function ( menu, element, event )
-				return IsDoubleXP( f1_arg1 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "icon", 0x620E589747ADBAB )
+				return IsDoubleXP( f1_arg1 ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "icon", "t7_hud_mp_notifications_xp_blue" )
 			end
 		}
 	} )

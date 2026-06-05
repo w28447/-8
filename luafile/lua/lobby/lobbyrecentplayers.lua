@@ -78,7 +78,7 @@ end
 
 Lobby.RecentPlayers.OnClientAdded = function ( f6_arg0 )
 	if f6_arg0.lobbyModule == Enum.LobbyModule[0xC46B73E8E18BA2] then
-		if Enum.eModes[0xBF1DCC8138A9D39] == Engine.CurrentSessionMode() then
+		if Enum.eModes.mode_warzone == Engine.CurrentSessionMode() then
 			if f6_arg0.lobbyType == Enum.LobbyType[0xA1647599284110] then
 				Lobby.RecentPlayers.AddToAllActiveControllers( Lobby.RecentPlayers.AddOneRecentPlayer, {
 					xuid = f6_arg0.xuid,
@@ -95,7 +95,7 @@ Lobby.RecentPlayers.OnClientAdded = function ( f6_arg0 )
 end
 
 Lobby.RecentPlayers.OnMatchStart = function ( f7_arg0 )
-	if Engine.CurrentSessionMode() ~= Enum.eModes[0xBF1DCC8138A9D39] then
+	if Engine.CurrentSessionMode() ~= Enum.eModes.mode_warzone then
 		local f7_local0 = Engine[0x755D55B3813D249]( f7_arg0.lobbyModule, f7_arg0.lobbyType )
 		Lobby.RecentPlayers.AddToAllActiveControllers( Lobby.RecentPlayers.AddListOfRecentPlayers, f7_local0.sessionClients )
 	end
@@ -137,7 +137,7 @@ Lobby.RecentPlayers.OnWarzoneMatchStart = function ( f9_arg0 )
 end
 
 Lobby.RecentPlayers.OnLocalClientObituary = function ( f10_arg0 )
-	if Engine.CurrentSessionMode() == Enum.eModes[0xBF1DCC8138A9D39] and f10_arg0.meansofdeath ~= Enum[0x52177B239BFECC1]["mod_downed"] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_warzone and f10_arg0.meansofdeath ~= Enum[0x52177B239BFECC1].mod_downed then
 		assert( f10_arg0.controller ~= nil )
 		assert( f10_arg0.xuid ~= nil )
 		if f10_arg0.xuid ~= Engine.DefaultID64Value() and not Engine[0x5CB8E6B7FBBFFD5]( f10_arg0.xuid ) then

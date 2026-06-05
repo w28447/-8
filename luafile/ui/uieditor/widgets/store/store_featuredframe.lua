@@ -27,7 +27,7 @@ CoD.Store_FeaturedFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local TextBox = LUI.UIText.new( 0.5, 0.5, -500, 500, 0.5, 0.5, -18.5, 18.5 )
 	TextBox:setAlpha( 0 )
-	TextBox:setText( Engine[0xF9F1239CFD921FE]( 0xF61DC3EA2DDC93E ) )
+	TextBox:setText( Engine[0xF9F1239CFD921FE]( "menu/store_empty" ) )
 	TextBox:setTTF( "default" )
 	TextBox:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	TextBox:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )
@@ -67,24 +67,24 @@ CoD.Store_FeaturedFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( f6_arg0, f6_arg2, "purchasestatus", Enum.StoreProductPurchaseStatus[0xFC232FC1AF749AA] ) then
-			PurchaseProduct( self, f6_arg1, f6_arg0, f6_arg2 )
+	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "purchasestatus", Enum.StoreProductPurchaseStatus[0xFC232FC1AF749AA] ) then
+			PurchaseProduct( self, menu, element, controller )
 			PlaySoundSetSound( self, "action" )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f6_arg0, f6_arg2, "purchasestatus", Enum.StoreProductPurchaseStatus[0xC3D2ED4AABEAE6C] ) then
-			PurchaseProduct( self, f6_arg1, f6_arg0, f6_arg2 )
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "purchasestatus", Enum.StoreProductPurchaseStatus[0xC3D2ED4AABEAE6C] ) then
+			PurchaseProduct( self, menu, element, controller )
 			PlaySoundSetSound( self, "action" )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( f7_arg0, f7_arg2, "purchasestatus", Enum.StoreProductPurchaseStatus[0xFC232FC1AF749AA] ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/purchase", nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "purchasestatus", Enum.StoreProductPurchaseStatus[0xFC232FC1AF749AA] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/purchase", nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f7_arg0, f7_arg2, "purchasestatus", Enum.StoreProductPurchaseStatus[0xC3D2ED4AABEAE6C] ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x4C69DA062697EC9, nil, nil )
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "purchasestatus", Enum.StoreProductPurchaseStatus[0xC3D2ED4AABEAE6C] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/store_download", nil, nil )
 			return true
 		else
 			return false
@@ -120,7 +120,7 @@ CoD.Store_FeaturedFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 			modelName = "LastInput"
 		} )
 	end, false )
-	RightPageOver.KeyMouseImage:setImage( RegisterImage( 0x49AC5C845C7E582 ) )
+	RightPageOver.KeyMouseImage:setImage( RegisterImage( "uie_bumperright" ) )
 	RightPageOver:subscribeToGlobalModel( f1_arg1, "Controller", "right_trigger_button_image", function ( model )
 		local f11_local0 = model:get()
 		if f11_local0 ~= nil then
@@ -137,11 +137,11 @@ CoD.Store_FeaturedFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f12_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( RightPageOver, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
+	f1_arg0:AddButtonCallbackFunction( RightPageOver, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		CoD.GridAndListUtility.ScrollDown( self.List )
 		return true
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( RightPageOver )
@@ -190,11 +190,11 @@ CoD.Store_FeaturedFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f19_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( LeftPageOver, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
+	f1_arg0:AddButtonCallbackFunction( LeftPageOver, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		CoD.GridAndListUtility.ScrollUp( self.List )
 		return true
-	end, function ( f21_arg0, f21_arg1, f21_arg2 )
-		CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( LeftPageOver )
@@ -238,31 +238,31 @@ CoD.Store_FeaturedFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 			modelName = "StoreRoot.ready"
 		} )
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], nil, function ( f26_arg0, f26_arg1, f26_arg2, f26_arg3 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], nil, function ( element, menu, controller, model )
 		if IsPC() then
 			CoD.GridAndListUtility.ScrollDown( self.List )
 			return true
 		else
 			
 		end
-	end, function ( f27_arg0, f27_arg1, f27_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x0, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], nil, function ( f28_arg0, f28_arg1, f28_arg2, f28_arg3 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], nil, function ( element, menu, controller, model )
 		if IsPC() then
 			CoD.GridAndListUtility.ScrollUp( self.List )
 			return true
 		else
 			
 		end
-	end, function ( f29_arg0, f29_arg1, f29_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x0, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "", nil, nil )
 			return false
 		else
 			return false

@@ -38,11 +38,11 @@ LUI.createMenu.GameSettings_OptionsMenu = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A] )
 		return f2_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( GameSettingsOptionsContainer0, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		GoBack( self, f3_arg2 )
+	f1_local1:AddButtonCallbackFunction( GameSettingsOptionsContainer0, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	self:addElement( GameSettingsOptionsContainer0 )
@@ -72,16 +72,16 @@ LUI.createMenu.GameSettings_OptionsMenu = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f5_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( emptyFocusable, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if not IsRepeatButtonPress( f6_arg3 ) then
-			GoBack( self, f6_arg2 )
+	f1_local1:AddButtonCallbackFunction( emptyFocusable, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) then
+			GoBack( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
+	end, function ( element, menu, controller )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
 		else
 			return false
@@ -90,23 +90,23 @@ LUI.createMenu.GameSettings_OptionsMenu = function ( f1_arg0, f1_arg1 )
 	self:addElement( emptyFocusable )
 	self.emptyFocusable = emptyFocusable
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], "ui_contextual_1", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		GoBack( self, f8_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], "ui_contextual_1", function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x22361E23588705A], 0x0, nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "", nil, "ui_contextual_1" )
 		return false
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
 		if IsPC() then
-			GoBack( self, f10_arg2 )
+			GoBack( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		else
 			return false

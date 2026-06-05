@@ -14,7 +14,7 @@ CoD.ScrStk_MeterInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local Back = LUI.UIImage.new( 0.5, 0.5, -9, 3, 0.5, 0.5, -90, 90 )
 	Back:setRGB( 0.51, 0.55, 0.64 )
 	Back:setAlpha( 0 )
-	Back:setImage( RegisterImage( 0xA1726B8A4CE14DC ) )
+	Back:setImage( RegisterImage( "uie_t7_mp_hud_scorestreak_meterfill" ) )
 	self:addElement( Back )
 	self.Back = Back
 	
@@ -34,14 +34,14 @@ CoD.ScrStk_MeterInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local FocusMeterBack = LUI.UIImage.new( 0.5, 0.5, -9, 3, 0.5, 0.5, -90, 90 )
 	FocusMeterBack:setRGB( 0.22, 0.38, 0.52 )
 	FocusMeterBack:setAlpha( 0 )
-	FocusMeterBack:setImage( RegisterImage( 0x8F6C52A7DE4A976 ) )
+	FocusMeterBack:setImage( RegisterImage( "uie_t7_mp_hud_scorestreak_focusmeterback" ) )
 	self:addElement( FocusMeterBack )
 	self.FocusMeterBack = FocusMeterBack
 	
 	local FocusMeterFill = LUI.UIImage.new( 0.5, 0.5, -9, 3, 0.5, 0.5, 90, -90 )
 	FocusMeterFill:setRGB( 0.15, 0.56, 0.88 )
 	FocusMeterFill:setAlpha( 0 )
-	FocusMeterFill:setImage( RegisterImage( 0xEA536493B5121C4 ) )
+	FocusMeterFill:setImage( RegisterImage( "uie_t7_mp_hud_scorestreak_focusmeterfill" ) )
 	FocusMeterFill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	FocusMeterFill:setShaderVector( 0, 1, 0, 0, 0 )
 	FocusMeterFill:setShaderVector( 1, 0, 0, 0, 0 )

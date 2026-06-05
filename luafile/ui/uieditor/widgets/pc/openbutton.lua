@@ -63,7 +63,7 @@ CoD.OpenButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 			modelName = "refreshWidget"
 		} )
 	end )
-	Button.Text:setText( LocalizeToUpperString( 0x68F4DC4AFAA11C3 ) )
+	Button.Text:setText( LocalizeToUpperString( "menu/edit" ) )
 	self:addElement( Button )
 	self.Button = Button
 	

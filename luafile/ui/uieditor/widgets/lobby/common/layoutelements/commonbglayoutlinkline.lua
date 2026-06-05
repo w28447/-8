@@ -10,7 +10,7 @@ CoD.CommonBgLayoutLinkLine.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local LinkHline = LUI.UIImage.new( 0, 0, 0, 640, 0, 0, 3, 27 )
 	LinkHline:setAlpha( 0.8 )
-	LinkHline:setImage( RegisterImage( 0xD6F661BDC3EAF65 ) )
+	LinkHline:setImage( RegisterImage( "uie_ui_menu_inspection_bg_linkline" ) )
 	LinkHline:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	LinkHline:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LinkHline )
@@ -18,7 +18,7 @@ CoD.CommonBgLayoutLinkLine.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local LinkSolidLine = LUI.UIImage.new( 0, 0, 12.5, 656.5, 0, 0, 1, 29 )
 	LinkSolidLine:setAlpha( 0.5 )
-	LinkSolidLine:setImage( RegisterImage( 0x679B77248F44891 ) )
+	LinkSolidLine:setImage( RegisterImage( "uie_ui_menu_inspection_bg_linkline_solid" ) )
 	LinkSolidLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	LinkSolidLine:setShaderVector( 0, 0, 1, 0, 0 )
 	LinkSolidLine:setShaderVector( 1, 0, 0, 0, 0 )
@@ -29,7 +29,7 @@ CoD.CommonBgLayoutLinkLine.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.LinkSolidLine = LinkSolidLine
 	
 	local LinkConnector02 = LUI.UIImage.new( 0, 0, 630.5, 658.5, 0, 0, 1, 28 )
-	LinkConnector02:setImage( RegisterImage( 0x2FF6BAFE38F0DDE ) )
+	LinkConnector02:setImage( RegisterImage( "uie_ui_menu_inspection_joint_box01" ) )
 	LinkConnector02:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	LinkConnector02:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LinkConnector02 )
@@ -37,7 +37,7 @@ CoD.CommonBgLayoutLinkLine.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local LinkConnector01 = LUI.UIImage.new( 0, 0, -1.5, 20.5, 0, 0, 3.5, 25.5 )
 	LinkConnector01:setScale( 0.2, 0.2 )
-	LinkConnector01:setImage( RegisterImage( 0xA741B17455E2EF7 ) )
+	LinkConnector01:setImage( RegisterImage( "uie_ui_menu_inspection_joint_circle01" ) )
 	LinkConnector01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	LinkConnector01:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LinkConnector01 )

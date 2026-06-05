@@ -35,14 +35,14 @@ CoD.cac_background_slide_panel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local BackgroundGlow = LUI.UIImage.new( -0.5, 1.5, 0, 0, 1, 1, -582, 30 )
 	BackgroundGlow:setRGB( 0, 0, 0 )
 	BackgroundGlow:setZoom( 2 )
-	BackgroundGlow:setImage( RegisterImage( 0x418AFBD55D4236F ) )
+	BackgroundGlow:setImage( RegisterImage( "uie_ui_menu_cac_glow_half" ) )
 	self:addElement( BackgroundGlow )
 	self.BackgroundGlow = BackgroundGlow
 	
 	local GrainBGPattern = LUI.UIImage.new( -0.1, 1.1, 0, 0, 1, 1, -582, 0 )
 	GrainBGPattern:setAlpha( 0.25 )
 	GrainBGPattern:setZoom( 2 )
-	GrainBGPattern:setImage( RegisterImage( 0xB666F49E61F417C ) )
+	GrainBGPattern:setImage( RegisterImage( "uie_ui_menu_cac_grain_pattern_bg" ) )
 	GrainBGPattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	GrainBGPattern:setShaderVector( 0, 0, 0, 0, 0 )
 	GrainBGPattern:setupNineSliceShader( 256, 256 )
@@ -52,7 +52,7 @@ CoD.cac_background_slide_panel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local TriangleBGPattern01 = LUI.UIImage.new( -0.1, 1.1, 0, 0, 1, 1, -582, 0 )
 	TriangleBGPattern01:setAlpha( 0.04 )
 	TriangleBGPattern01:setZoom( 2 )
-	TriangleBGPattern01:setImage( RegisterImage( 0x59DE271312E12EA ) )
+	TriangleBGPattern01:setImage( RegisterImage( "uie_ui_menu_cac_grid_pattern_bg01" ) )
 	TriangleBGPattern01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TriangleBGPattern01:setShaderVector( 0, 0, 0, 0, 0 )
 	TriangleBGPattern01:setupNineSliceShader( 256, 256 )
@@ -61,7 +61,7 @@ CoD.cac_background_slide_panel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local VerticalBGPattern2 = LUI.UIImage.new( -0.1, 1.1, 0, 0, 1, 1, -618, -582 )
 	VerticalBGPattern2:setAlpha( 0.02 )
-	VerticalBGPattern2:setImage( RegisterImage( 0x5D167EAB3F49E4B ) )
+	VerticalBGPattern2:setImage( RegisterImage( "uie_ui_menu_cac_vertical_pattern_bg" ) )
 	VerticalBGPattern2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	VerticalBGPattern2:setShaderVector( 0, 0, 0, 0, 0 )
 	VerticalBGPattern2:setupNineSliceShader( 256, 256 )
@@ -71,14 +71,14 @@ CoD.cac_background_slide_panel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local TopBar = LUI.UIImage.new( -0.1, 1.1, 0, 0, 0, 0, 39, 42 )
 	TopBar:setAlpha( 0.2 )
 	TopBar:setZoom( 2 )
-	TopBar:setImage( RegisterImage( 0x42BCCF45B82FBED ) )
+	TopBar:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_bar" ) )
 	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBar )
 	self.TopBar = TopBar
 	
 	local TopBar2 = LUI.UIImage.new( -0.1, 1.1, 0, 0, 0, 0, 3, 6 )
 	TopBar2:setAlpha( 0.12 )
-	TopBar2:setImage( RegisterImage( 0x42BCCF45B82FBED ) )
+	TopBar2:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_bar" ) )
 	TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBar2 )
 	self.TopBar2 = TopBar2

@@ -29,24 +29,24 @@ CoD.StartMenu_Options_SafeArea_Container.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local upArrow = LUI.UIImage.new( 0.5, 0.5, -48, 48, 0, 0, 0, 96 )
 	upArrow:setZRot( 270 )
-	upArrow:setImage( RegisterImage( 0x49D507F2803672A ) )
+	upArrow:setImage( RegisterImage( "safe_area_arrow" ) )
 	self:addElement( upArrow )
 	self.upArrow = upArrow
 	
 	local downArrow = LUI.UIImage.new( 0.5, 0.5, -48, 48, 1, 1, -96, 0 )
 	downArrow:setZRot( 90 )
-	downArrow:setImage( RegisterImage( 0x49D507F2803672A ) )
+	downArrow:setImage( RegisterImage( "safe_area_arrow" ) )
 	self:addElement( downArrow )
 	self.downArrow = downArrow
 	
 	local leftArrow = LUI.UIImage.new( 0, 0, 0, 96, 0.5, 0.5, -48, 48 )
-	leftArrow:setImage( RegisterImage( 0x49D507F2803672A ) )
+	leftArrow:setImage( RegisterImage( "safe_area_arrow" ) )
 	self:addElement( leftArrow )
 	self.leftArrow = leftArrow
 	
 	local rightArrow = LUI.UIImage.new( 1, 1, -96, 0, 0.5, 0.5, -48, 48 )
 	rightArrow:setZRot( 180 )
-	rightArrow:setImage( RegisterImage( 0x49D507F2803672A ) )
+	rightArrow:setImage( RegisterImage( "safe_area_arrow" ) )
 	self:addElement( rightArrow )
 	self.rightArrow = rightArrow
 	

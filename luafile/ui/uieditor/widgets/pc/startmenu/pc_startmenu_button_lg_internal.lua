@@ -102,7 +102,7 @@ CoD.PC_StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local NameEntryBorder = LUI.UIImage.new( 0.5, 0.5, -82.5, 82.5, 0.5, 0.5, -17, 33 )
 	NameEntryBorder:setRGB( 0.57, 0.57, 0.57 )
 	NameEntryBorder:setAlpha( 0 )
-	NameEntryBorder:setImage( RegisterImage( 0xF1E3082B39E99BB ) )
+	NameEntryBorder:setImage( RegisterImage( "uie_highlight_border_line" ) )
 	NameEntryBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	NameEntryBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	NameEntryBorder:setupNineSliceShader( 6, 6 )
@@ -140,7 +140,7 @@ CoD.PC_StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.TextBox = TextBox
 	
 	local BracketL = LUI.UIFixedAspectRatioImage.new( 0.5, 0.5, -130, -30, 0.5, 0.5, -42, 58 )
-	BracketL:setImage( RegisterImage( 0x8F14609D5578644 ) )
+	BracketL:setImage( RegisterImage( "uie_textbracket" ) )
 	BracketL:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	BracketL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BracketL )
@@ -148,7 +148,7 @@ CoD.PC_StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local BracketL2 = LUI.UIFixedAspectRatioImage.new( 0.5, 0.5, -130, -30, 0.5, 0.5, -42, 58 )
 	BracketL2:setRGB( 1, 0.88, 0.71 )
-	BracketL2:setImage( RegisterImage( 0x8F14609D5578644 ) )
+	BracketL2:setImage( RegisterImage( "uie_textbracket" ) )
 	BracketL2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	BracketL2:setShaderVector( 0, 1.3, 0, 0, 0 )
 	self:addElement( BracketL2 )
@@ -156,7 +156,7 @@ CoD.PC_StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local BracketR = LUI.UIFixedAspectRatioImage.new( 0.5, 0.5, 30, 130, 0.5, 0.5, -42, 58 )
 	BracketR:setYRot( 180 )
-	BracketR:setImage( RegisterImage( 0x8F14609D5578644 ) )
+	BracketR:setImage( RegisterImage( "uie_textbracket" ) )
 	BracketR:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	BracketR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BracketR )
@@ -165,7 +165,7 @@ CoD.PC_StartMenu_Button_LG_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local BracketR2 = LUI.UIFixedAspectRatioImage.new( 0.5, 0.5, 30, 130, 0.5, 0.5, -42, 58 )
 	BracketR2:setRGB( 1, 0.88, 0.71 )
 	BracketR2:setYRot( 180 )
-	BracketR2:setImage( RegisterImage( 0x8F14609D5578644 ) )
+	BracketR2:setImage( RegisterImage( "uie_textbracket" ) )
 	BracketR2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	BracketR2:setShaderVector( 0, 1.3, 0, 0, 0 )
 	self:addElement( BracketR2 )

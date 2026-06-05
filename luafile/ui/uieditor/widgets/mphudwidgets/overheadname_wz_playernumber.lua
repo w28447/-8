@@ -8,7 +8,7 @@ CoD.OverheadName_WZ_PlayerNumber.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.soundSet = "default"
 	
 	local Image = LUI.UIImage.new( 0.43, 1.43, -11.5, -11.5, 0, 1, 0, 0 )
-	Image:setImage( RegisterImage( 0xB63170C49335443 ) )
+	Image:setImage( RegisterImage( "uie_ui_menu_cac_selection_circle" ) )
 	Image.__Color = function ( f2_arg0 )
 		local f2_local0 = f2_arg0:get()
 		if f2_local0 ~= nil then

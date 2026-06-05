@@ -32,7 +32,7 @@ CoD.WaypointCombatTrainingTarget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 			modelName = "clamped"
 		} )
 	end )
-	WaypointBacker.image:setImage( RegisterImage( 0x8DDD1FDE43242E1 ) )
+	WaypointBacker.image:setImage( RegisterImage( "uie_ui_hud_core_waypoint_domination_backer" ) )
 	WaypointBacker.image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 	WaypointBacker:linkToElementModel( self, nil, false, function ( model )
 		WaypointBacker:setModel( model, f1_arg1 )
@@ -192,7 +192,7 @@ CoD.WaypointCombatTrainingTarget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 			modelName = "clamped"
 		} )
 	end )
-	WaypointPatternNew.image:setImage( RegisterImage( 0x159D9B7B7294C91 ) )
+	WaypointPatternNew.image:setImage( RegisterImage( "uie_ui_hud_core_waypoint_led" ) )
 	WaypointPatternNew.image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 	WaypointPatternNew:linkToElementModel( self, "color", true, function ( model )
 		local f23_local0 = model:get()
@@ -282,7 +282,7 @@ CoD.WaypointCombatTrainingTarget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	RingGlow:setAlpha( 0 )
 	RingGlow:setScale( 1.55, 1.55 )
 	RingGlow:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
-	RingGlow.image:setImage( RegisterImage( 0x333C550C1FAA4DA ) )
+	RingGlow.image:setImage( RegisterImage( "uie_hud_common_core_info_ring" ) )
 	RingGlow.image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 	RingGlow:linkToElementModel( self, "color", true, function ( model )
 		local f33_local0 = model:get()

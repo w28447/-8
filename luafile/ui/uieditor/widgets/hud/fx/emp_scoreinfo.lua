@@ -11,13 +11,13 @@ CoD.EMP_ScoreInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	local EMPbacker = LUI.UIImage.new( 0, 0, 0.5, 332.5, 0, 0, -2.5, 85.5 )
 	EMPbacker:setRGB( 0, 0, 0 )
 	EMPbacker:setAlpha( 0 )
-	EMPbacker:setImage( RegisterImage( 0x168D394DAA09685 ) )
+	EMPbacker:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_player" ) )
 	self:addElement( EMPbacker )
 	self.EMPbacker = EMPbacker
 	
 	local EMPScoreInfoBlackOps = LUI.UIImage.new( 0, 0, 0, 332, 1, 1, -256, -168 )
-	EMPScoreInfoBlackOps:setImage( RegisterImage( 0x168D394DAA09685 ) )
-	EMPScoreInfoBlackOps:setMaterial( LUI.UIImage.GetCachedMaterial( 0xC284ECCBDADEF0B ) )
+	EMPScoreInfoBlackOps:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_player" ) )
+	EMPScoreInfoBlackOps:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_emp" ) )
 	EMPScoreInfoBlackOps:setShaderVector( 0, 26, 0, 0, 0 )
 	EMPScoreInfoBlackOps:setShaderVector( 1, 1, 0, 0, 0 )
 	EMPScoreInfoBlackOps:setShaderVector( 2, 1, 0, 0, 0 )
@@ -26,8 +26,8 @@ CoD.EMP_ScoreInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local EMPScoreInfoCDP = LUI.UIImage.new( 0, 0, 0, 332, 1, 1, -256, -168 )
 	EMPScoreInfoCDP:setAlpha( 0 )
-	EMPScoreInfoCDP:setImage( RegisterImage( 0x168D394DAA09685 ) )
-	EMPScoreInfoCDP:setMaterial( LUI.UIImage.GetCachedMaterial( 0xC284ECCBDADEF0B ) )
+	EMPScoreInfoCDP:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_player" ) )
+	EMPScoreInfoCDP:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_emp" ) )
 	EMPScoreInfoCDP:setShaderVector( 0, 26, 0, 0, 0 )
 	EMPScoreInfoCDP:setShaderVector( 1, 1, 0, 0, 0 )
 	EMPScoreInfoCDP:setShaderVector( 2, 1, 0, 0, 0 )

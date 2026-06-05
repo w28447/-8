@@ -19,7 +19,7 @@ CoD.HubSpecialist_character_internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local SpecialistBg = LUI.UIImage.new( 0, 0, 46, 198, 0, 0, 46.5, 158.5 )
-	SpecialistBg:setImage( RegisterImage( 0x6E786B2595DD6FF ) )
+	SpecialistBg:setImage( RegisterImage( "uie_ui_menu_specialist_hub_portrait_bg" ) )
 	SpecialistBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	SpecialistBg:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( SpecialistBg )
@@ -34,20 +34,20 @@ CoD.HubSpecialist_character_internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local SpecialistBgAdd = LUI.UIImage.new( 0, 0, 46, 198, 0, 0, 46.5, 158.5 )
 	SpecialistBgAdd:setRGB( 0.92, 0.92, 0.92 )
 	SpecialistBgAdd:setAlpha( 0 )
-	SpecialistBgAdd:setImage( RegisterImage( 0x6E786B2595DD6FF ) )
+	SpecialistBgAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_portrait_bg" ) )
 	SpecialistBgAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	SpecialistBgAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( SpecialistBgAdd )
 	self.SpecialistBgAdd = SpecialistBgAdd
 	
 	local ItemNumBg = LUI.UIImage.new( 0, 0, 46, 198, 0, 0, 155, 187 )
-	ItemNumBg:setImage( RegisterImage( 0xBD2D1A12FF085BD ) )
+	ItemNumBg:setImage( RegisterImage( "uie_ui_menu_specialist_hub_number_bg" ) )
 	self:addElement( ItemNumBg )
 	self.ItemNumBg = ItemNumBg
 	
 	local ItemNumBgAdd = LUI.UIImage.new( 0, 0, 46, 198, 0, 0, 155, 187 )
 	ItemNumBgAdd:setAlpha( 0 )
-	ItemNumBgAdd:setImage( RegisterImage( 0xBD2D1A12FF085BD ) )
+	ItemNumBgAdd:setImage( RegisterImage( "uie_ui_menu_specialist_hub_number_bg" ) )
 	ItemNumBgAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ItemNumBgAdd )
 	self.ItemNumBgAdd = ItemNumBgAdd
@@ -66,13 +66,13 @@ CoD.HubSpecialist_character_internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local BracketTop = LUI.UIImage.new( 0, 0, 46, 198, 0, 0, 46.5, 58.5 )
 	BracketTop:setAlpha( 0.5 )
-	BracketTop:setImage( RegisterImage( 0x12A7C707CC73E51 ) )
+	BracketTop:setImage( RegisterImage( "uie_ui_menu_specialist_hub_frame_top" ) )
 	self:addElement( BracketTop )
 	self.BracketTop = BracketTop
 	
 	local BracketBot = LUI.UIImage.new( 0, 0, 46, 198, 0, 0, 59, 159 )
 	BracketBot:setAlpha( 0.5 )
-	BracketBot:setImage( RegisterImage( 0x6093E703681D717 ) )
+	BracketBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_frame_bot" ) )
 	self:addElement( BracketBot )
 	self.BracketBot = BracketBot
 	
@@ -133,7 +133,7 @@ CoD.HubSpecialist_character_internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local PurchasableText = LUI.UIText.new( 0, 0, 43, 201, 0, 0, 100.5, 137.5 )
 	PurchasableText:setAlpha( 0 )
-	PurchasableText:setText( Engine[0xF9F1239CFD921FE]( 0xCFD524E10472BF8 ) )
+	PurchasableText:setText( Engine[0xF9F1239CFD921FE]( "menu/purchase_icon" ) )
 	PurchasableText:setTTF( "default" )
 	PurchasableText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	self:addElement( PurchasableText )

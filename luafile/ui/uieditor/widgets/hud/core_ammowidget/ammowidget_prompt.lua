@@ -17,7 +17,7 @@ CoD.AmmoWidget_Prompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local PromptText = LUI.UIText.new( 0, 0, 0, 64, 0.22, 0.22, -2.5, 8.5 )
 	PromptText:setRGB( 1, 0, 0 )
 	PromptText:setAlpha( 0 )
-	PromptText:setText( Engine[0xF9F1239CFD921FE]( 0x91D99ADC60420B1 ) )
+	PromptText:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_reload" ) )
 	PromptText:setTTF( "0arame_mono_stencil" )
 	PromptText:setLetterSpacing( 3 )
 	PromptText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

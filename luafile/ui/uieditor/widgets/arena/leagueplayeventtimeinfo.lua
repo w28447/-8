@@ -38,7 +38,7 @@ CoD.LeaguePlayEventTimeInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.Description = Description
 	
 	local LeaguePlayIcon = LUI.UIImage.new( 0, 0, -58, 222, 0, 0, -48, 232 )
-	LeaguePlayIcon:setImage( RegisterImage( 0x7AD0704DD46F27F ) )
+	LeaguePlayIcon:setImage( RegisterImage( "uie_ui_icon_gamemode_wl_league" ) )
 	self:addElement( LeaguePlayIcon )
 	self.LeaguePlayIcon = LeaguePlayIcon
 	

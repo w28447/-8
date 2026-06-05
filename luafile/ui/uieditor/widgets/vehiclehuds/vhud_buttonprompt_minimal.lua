@@ -49,7 +49,7 @@ CoD.vhud_ButtonPrompt_Minimal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local triangle = LUI.UIImage.new( 0.5, 0.5, -32, 32, 0, 0, -14, 50 )
 	triangle:setRGB( 0.62, 0.61, 0.61 )
 	triangle:setScale( 0.15, 0.15 )
-	triangle:setImage( RegisterImage( 0xF54DE746A777A9A ) )
+	triangle:setImage( RegisterImage( "uie_ui_menu_draft_triangle" ) )
 	self:addElement( triangle )
 	self.triangle = triangle
 	

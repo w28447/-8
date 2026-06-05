@@ -26,7 +26,7 @@ CoD.SpecialEventSmallRewardWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.FixedAspectRatioImage = FixedAspectRatioImage
 	
 	local MainRewardLockedIcon = LUI.UIImage.new( 0.5, 0.5, -46, -18, 0.5, 0.5, 14, 42 )
-	MainRewardLockedIcon:setImage( RegisterImage( 0x8E860AEBE108BAD ) )
+	MainRewardLockedIcon:setImage( RegisterImage( "uie_t7_menu_cac_iconlock" ) )
 	self:addElement( MainRewardLockedIcon )
 	self.MainRewardLockedIcon = MainRewardLockedIcon
 	

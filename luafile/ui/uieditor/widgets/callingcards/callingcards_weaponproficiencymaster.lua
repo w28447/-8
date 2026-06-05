@@ -1,18 +1,18 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_cowboybounce" )
 
-CoD[0x1F7D0795C43A08E] = InheritFrom( LUI.UIElement )
-CoD[0x1F7D0795C43A08E].__defaultWidth = 960
-CoD[0x1F7D0795C43A08E].__defaultHeight = 240
-CoD[0x1F7D0795C43A08E].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_weaponproficiencymaster = InheritFrom( LUI.UIElement )
+CoD.callingcards_weaponproficiencymaster.__defaultWidth = 960
+CoD.callingcards_weaponproficiencymaster.__defaultHeight = 240
+CoD.callingcards_weaponproficiencymaster.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x1F7D0795C43A08E] )
+	self:setClass( CoD.callingcards_weaponproficiencymaster )
 	self.id = "CallingCards_WeaponProficiencyMaster"
 	self.soundSet = "default"
 	self.anyChildUsesUpdateState = true
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local background = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	background:setImage( RegisterImage( 0x88D6EC151BAB1B3 ) )
+	background:setImage( RegisterImage( "uie_background" ) )
 	self:addElement( background )
 	self.background = background
 	
@@ -29,7 +29,7 @@ CoD[0x1F7D0795C43A08E].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x1F7D0795C43A08E].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_weaponproficiencymaster.__resetProperties = function ( f2_arg0 )
 	f2_arg0.background:completeAnimation()
 	f2_arg0.bullet2:completeAnimation()
 	f2_arg0.background:setAlpha( 1 )
@@ -38,7 +38,7 @@ CoD[0x1F7D0795C43A08E].__resetProperties = function ( f2_arg0 )
 	f2_arg0.bullet2:setScale( 1, 1 )
 end
 
-CoD[0x1F7D0795C43A08E].__clipsPerState = {
+CoD.callingcards_weaponproficiencymaster.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -79,7 +79,7 @@ CoD[0x1F7D0795C43A08E].__clipsPerState = {
 		end
 	}
 }
-CoD[0x1F7D0795C43A08E].__onClose = function ( f8_arg0 )
+CoD.callingcards_weaponproficiencymaster.__onClose = function ( f8_arg0 )
 	f8_arg0.bullet2:close()
 end
 

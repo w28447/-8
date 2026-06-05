@@ -14,7 +14,7 @@ CoD.AmmoWidget_SingleShotPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local base2 = LUI.UIImage.new( 0.2, 0.2, -2, 10, -0.3, -0.3, -3, 13 )
 	base2:setRGB( 0.92, 0.89, 0.72 )
 	base2:setZRot( 90 )
-	base2:setImage( RegisterImage( 0xCEDA89781162E4B ) )
+	base2:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_mag_reserves_full" ) )
 	self:addElement( base2 )
 	self.base2 = base2
 	
@@ -22,7 +22,7 @@ CoD.AmmoWidget_SingleShotPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	GlowOuter:setRGB( 0.92, 0.89, 0.72 )
 	GlowOuter:setAlpha( 0.35 )
 	GlowOuter:setZRot( 90 )
-	GlowOuter:setImage( RegisterImage( 0xE48B57FD16FAD2D ) )
+	GlowOuter:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_mag_reserves_full_glow" ) )
 	GlowOuter:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowOuter )
 	self.GlowOuter = GlowOuter
@@ -48,7 +48,7 @@ CoD.AmmoWidget_SingleShotPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	plusIcon:setScale( 2, 2 )
 	plusIcon:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	plusIcon:setShaderVector( 0, 0, 0, 0, 0 )
-	plusIcon.image:setImage( RegisterImage( 0x1CCD6B7B2BDAC2 ) )
+	plusIcon.image:setImage( RegisterImage( "uie_plusicon" ) )
 	plusIcon:linkToElementModel( self, nil, false, function ( model )
 		plusIcon:setModel( model, f1_arg1 )
 	end )

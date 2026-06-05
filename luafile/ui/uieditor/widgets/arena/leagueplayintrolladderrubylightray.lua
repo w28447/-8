@@ -11,7 +11,7 @@ CoD.LeaguePlayIntrolLadderRubyLightRay.new = function ( f1_arg0, f1_arg1, f1_arg
 	local LightBurstBeckingSmall = LUI.UIImage.new( 0.1, 0.9, 0, 0, 0.17, 0.83, 0, 0 )
 	LightBurstBeckingSmall:setAlpha( 0 )
 	LightBurstBeckingSmall:setScale( 1.9, 1.9 )
-	LightBurstBeckingSmall:setImage( RegisterImage( 0xC4CCD81B90B0241 ) )
+	LightBurstBeckingSmall:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
 	LightBurstBeckingSmall:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	LightBurstBeckingSmall:setShaderVector( 0, 0, 1, 0, 0 )
 	LightBurstBeckingSmall:setShaderVector( 1, 0.25, 0.25, 0, 0 )
@@ -23,7 +23,7 @@ CoD.LeaguePlayIntrolLadderRubyLightRay.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local LightBurstBeckingLarge = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	LightBurstBeckingLarge:setAlpha( 0 )
-	LightBurstBeckingLarge:setImage( RegisterImage( 0xCDE878DE89C8808 ) )
+	LightBurstBeckingLarge:setImage( RegisterImage( "uie_light_burst" ) )
 	LightBurstBeckingLarge:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	LightBurstBeckingLarge:setShaderVector( 0, 0, 1, 0, 0 )
 	LightBurstBeckingLarge:setShaderVector( 1, 0.52, 0.52, 0, 0 )

@@ -17,7 +17,7 @@ CoD.AARNemesis.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	self.Backing = Backing
 	
 	local EnemeyBacking = LUI.UIImage.new( 0.5, 0.5, -75, 75, -0.02, -0.02, -32, -1 )
-	EnemeyBacking:setImage( RegisterImage( 0x20D05B34D3128F9 ) )
+	EnemeyBacking:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_enemy_bg" ) )
 	EnemeyBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	EnemeyBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	EnemeyBacking:setShaderVector( 1, 1.01, 0.22, 0, 0 )
@@ -43,7 +43,7 @@ CoD.AARNemesis.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local SelectedDotGlowAdd = LUI.UIImage.new( 0, 0, 0, 150, 0, 0, 0, 60 )
 	SelectedDotGlowAdd:setRGB( ColorSet.EnemyOrange.r, ColorSet.EnemyOrange.g, ColorSet.EnemyOrange.b )
-	SelectedDotGlowAdd:setImage( RegisterImage( 0xDE89A66BFC55B6D ) )
+	SelectedDotGlowAdd:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_indicator_bg" ) )
 	SelectedDotGlowAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	SelectedDotGlowAdd:setShaderVector( 0, 0.2, 0, 0, 0 )
 	SelectedDotGlowAdd:setShaderVector( 1, 5, 0.41, 0, 0 )
@@ -53,7 +53,7 @@ CoD.AARNemesis.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local SelectedDotGlowAdd2 = LUI.UIImage.new( 0, 0, 0, 150, 0, 0, 0, 60 )
 	SelectedDotGlowAdd2:setRGB( ColorSet.EnemyOrange.r, ColorSet.EnemyOrange.g, ColorSet.EnemyOrange.b )
-	SelectedDotGlowAdd2:setImage( RegisterImage( 0xDE89A66BFC55B6D ) )
+	SelectedDotGlowAdd2:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_indicator_bg" ) )
 	SelectedDotGlowAdd2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	SelectedDotGlowAdd2:setShaderVector( 0, 0.2, 0, 0, 0 )
 	SelectedDotGlowAdd2:setShaderVector( 1, 5, 0.41, 0, 0 )
@@ -63,7 +63,7 @@ CoD.AARNemesis.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local SelectedDotGlowAdd3 = LUI.UIImage.new( 0, 0, 0, 150, 0, 0, 0, 60 )
 	SelectedDotGlowAdd3:setRGB( ColorSet.EnemyOrange.r, ColorSet.EnemyOrange.g, ColorSet.EnemyOrange.b )
-	SelectedDotGlowAdd3:setImage( RegisterImage( 0xDE89A66BFC55B6D ) )
+	SelectedDotGlowAdd3:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_indicator_bg" ) )
 	SelectedDotGlowAdd3:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	SelectedDotGlowAdd3:setShaderVector( 0, 0.2, 0, 0, 0 )
 	SelectedDotGlowAdd3:setShaderVector( 1, 5, 0.41, 0, 0 )
@@ -123,7 +123,7 @@ CoD.AARNemesis.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	self.NemesisKilled = NemesisKilled
 	
 	local Skull = LUI.UIImage.new( 0, 0, 102, 192, 0, 0, -34, 4 )
-	Skull:setImage( RegisterImage( 0x5DC0AF629835B8A ) )
+	Skull:setImage( RegisterImage( "uie_ui_hud_nemesis_skull" ) )
 	self:addElement( Skull )
 	self.Skull = Skull
 	

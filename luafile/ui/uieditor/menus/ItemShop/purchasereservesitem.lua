@@ -170,42 +170,42 @@ LUI.createMenu.PurchaseReservesItem = function ( f1_arg0, f1_arg1 )
 	local BracketLeft = LUI.UIImage.new( 0.5, 0.5, -926, -902, 0.5, 0.5, 121, 193 )
 	BracketLeft:setRGB( 0.79, 0.94, 1 )
 	BracketLeft:setYRot( 180 )
-	BracketLeft:setImage( RegisterImage( 0xE1C1C55D18A0A1B ) )
+	BracketLeft:setImage( RegisterImage( "uie_ui_menu_common_bracket01" ) )
 	self:addElement( BracketLeft )
 	self.BracketLeft = BracketLeft
 	
 	local BracketRight = LUI.UIImage.new( 0.5, 0.5, -383, -359, 0.5, 0.5, 121, 193 )
 	BracketRight:setRGB( 0.79, 0.94, 1 )
-	BracketRight:setImage( RegisterImage( 0xE1C1C55D18A0A1B ) )
+	BracketRight:setImage( RegisterImage( "uie_ui_menu_common_bracket01" ) )
 	self:addElement( BracketRight )
 	self.BracketRight = BracketRight
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
 		if not IsElementInState( self.FullscreenPopupTemplate, "WorkingState" ) and not IsElementInState( self.FullscreenPopupTemplate, "ErrorState" ) then
-			GoBack( self, f15_arg2 )
-			CoD.BlackMarketUtility.SendPurchaseReservesEvent( f15_arg2, f15_arg1 )
+			GoBack( self, controller )
+			CoD.BlackMarketUtility.SendPurchaseReservesEvent( controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
+	end, function ( element, menu, controller )
 		if not IsElementInState( self.FullscreenPopupTemplate, "WorkingState" ) and not IsElementInState( self.FullscreenPopupTemplate, "ErrorState" ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		if IsElementInState( self.FullscreenPopupTemplate, "ErrorState" ) then
-			GoBack( self, f17_arg2 )
+			GoBack( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
+	end, function ( element, menu, controller )
 		if IsElementInState( self.FullscreenPopupTemplate, "ErrorState" ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/back", nil, nil )
 			return true
 		else
 			return false

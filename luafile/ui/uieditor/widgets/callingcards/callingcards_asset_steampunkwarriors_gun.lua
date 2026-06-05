@@ -12,7 +12,7 @@ CoD.CallingCards_Asset_steampunkwarriors_gun.new = function ( f1_arg0, f1_arg1, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local gun = LUI.UIImage.new( 0, 0, -176.5, 23.5, 0, 0, -141, 27 )
-	gun:setImage( RegisterImage( 0x9D40B121013CB22 ) )
+	gun:setImage( RegisterImage( "uie_ui_icon_callingcards_steampunkwarriors_gun" ) )
 	self:addElement( gun )
 	self.gun = gun
 	

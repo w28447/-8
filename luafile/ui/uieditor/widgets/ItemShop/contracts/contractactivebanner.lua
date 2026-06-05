@@ -12,7 +12,7 @@ CoD.ContractActiveBanner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local ActiveTitle = LUI.UIText.new( 0.5, 0.5, -73, 73, 0.5, 0.5, -9, 9 )
 	ActiveTitle:setRGB( 0, 0.55, 0.33 )
-	ActiveTitle:setText( LocalizeToUpperString( 0x6073E151AD27004 ) )
+	ActiveTitle:setText( LocalizeToUpperString( "menu/contract_active" ) )
 	ActiveTitle:setTTF( "ttmussels_demibold" )
 	ActiveTitle:setLetterSpacing( 4 )
 	ActiveTitle:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

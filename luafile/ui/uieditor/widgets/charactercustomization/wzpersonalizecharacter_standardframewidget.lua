@@ -1,4 +1,4 @@
-require( "ui/uieditor/menus/store/store8" )
+require( "ui/uieditor/menus/store/store" )
 require( "ui/uieditor/menus/wz/wzpersonalizecharacterinspect" )
 require( "ui/uieditor/widgets/mp/specialisthub/hubspecialist_character" )
 
@@ -56,28 +56,28 @@ CoD.WZPersonalizeCharacter_StandardFrameWidget.new = function ( f1_arg0, f1_arg1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Characters, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f8_arg0, f8_arg2, "purchasable" ) and not IsGameTrial() then
-			OpenOverlay( self, "Store", f8_arg2 )
+	f1_arg0:AddButtonCallbackFunction( Characters, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "purchasable" ) and not IsGameTrial() then
+			OpenOverlay( self, "Store", controller )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f8_arg0, f8_arg2, "disabled" ) and not IsGameTrial() then
-			OpenOverlay( self, "WZPersonalizeCharacterInspect", f8_arg2, {
-				model = f8_arg0:getModel(),
+		elseif not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "disabled" ) and not IsGameTrial() then
+			OpenOverlay( self, "WZPersonalizeCharacterInspect", controller, {
+				model = element:getModel(),
 				properties = {
-					_sessionMode = f8_arg1._sessionMode,
-					_storageLoadoutBuffer = f8_arg1._storageLoadoutBuffer
+					_sessionMode = menu._sessionMode,
+					_storageLoadoutBuffer = menu._storageLoadoutBuffer
 				}
 			} )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueTrue( f9_arg0, f9_arg2, "purchasable" ) and not IsGameTrial() then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x191CDDA584B4408, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "purchasable" ) and not IsGameTrial() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/store_caps", nil, "ui_confirm" )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f9_arg0, f9_arg2, "disabled" ) and not IsGameTrial() then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "disabled" ) and not IsGameTrial() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

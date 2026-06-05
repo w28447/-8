@@ -10,7 +10,7 @@ CoD.CODCasterTeamFlare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local FlareBase = LUI.UIImage.new( 0.5, 0.5, -90, 90, 0.5, 0.5, -90, 90 )
 	FlareBase:setAlpha( 0 )
-	FlareBase:setImage( RegisterImage( 0xC4CCD81B90B0241 ) )
+	FlareBase:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
 	FlareBase:subscribeToGlobalModel( f1_arg1, "DeadSpectate", "playerIndex", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then

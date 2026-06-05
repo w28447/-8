@@ -12,7 +12,7 @@ CoD.vhud_hellstorm_AltWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local ALTnumbers = LUI.UIText.new( 0.5, 0.5, -65, 65, 0, 0, 19, 37 )
 	ALTnumbers:setTTF( "0arame_mono_stencil" )
-	ALTnumbers:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD756CD9A5F1F1B4 ) )
+	ALTnumbers:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration_cheap_blur" ) )
 	ALTnumbers:setShaderVector( 0, 0, 1, 0, 0 )
 	ALTnumbers:setShaderVector( 1, 0, 0, 0, 0 )
 	ALTnumbers:setShaderVector( 2, 0, 0, 0, 0 )
@@ -35,7 +35,7 @@ CoD.vhud_hellstorm_AltWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.vhudmsNotificationBox0 = vhudmsNotificationBox0
 	
 	local altitudeText = LUI.UIText.new( 0.5, 0.5, -110, 110, 0, 0, -2.5, 12.5 )
-	altitudeText:setText( Engine[0xF9F1239CFD921FE]( 0xBD23A68618982EF ) )
+	altitudeText:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_alt" ) )
 	altitudeText:setTTF( "ttmussels_regular" )
 	altitudeText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	altitudeText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

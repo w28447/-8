@@ -36,14 +36,14 @@ CoD.CommonHeaderBG.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local TopBar = LUI.UIImage.new( 0.5, 0.5, -1152, 1152, 0, 0, 24.5, 27.5 )
 	TopBar:setAlpha( 0.2 )
-	TopBar:setImage( RegisterImage( 0x42BCCF45B82FBED ) )
+	TopBar:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_bar" ) )
 	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBar )
 	self.TopBar = TopBar
 	
 	local TopBar2 = LUI.UIImage.new( 0.5, 0.5, -1152, 1152, 0, 0, 65, 68 )
 	TopBar2:setRGB( 0.27, 0.27, 0.3 )
-	TopBar2:setImage( RegisterImage( 0x42BCCF45B82FBED ) )
+	TopBar2:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_bar" ) )
 	TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	TopBar2:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( TopBar2 )

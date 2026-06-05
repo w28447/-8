@@ -8,7 +8,7 @@ CoD.vhud_button_backing_lines.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.soundSet = "default"
 	
 	local ButtonHexLines = LUI.UIImage.new( 0.5, 0.5, -55, 55, 0.5, 0.5, -55, 55 )
-	ButtonHexLines:setImage( RegisterImage( 0x8F474A9E7203645 ) )
+	ButtonHexLines:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_button_framehex" ) )
 	ButtonHexLines:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ButtonHexLines )
 	self.ButtonHexLines = ButtonHexLines
@@ -36,7 +36,7 @@ CoD.vhud_button_backing_lines.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.ButtonTriLines00 = ButtonTriLines00
 	
 	local ButtonHexDots = LUI.UIImage.new( 0.5, 0.5, -55, 55, 0.5, 0.5, -55, 55 )
-	ButtonHexDots:setImage( RegisterImage( 0xCA3E3E3DC610DC0 ) )
+	ButtonHexDots:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_button_dotshex" ) )
 	ButtonHexDots:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ButtonHexDots )
 	self.ButtonHexDots = ButtonHexDots
@@ -44,7 +44,7 @@ CoD.vhud_button_backing_lines.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local ButtonHexDots0 = LUI.UIImage.new( 0.5, 0.5, -55, 55, 0.5, 0.5, -55, 55 )
 	ButtonHexDots0:setAlpha( 0.5 )
 	ButtonHexDots0:setZoom( 7 )
-	ButtonHexDots0:setImage( RegisterImage( 0xCA3E3E3DC610DC0 ) )
+	ButtonHexDots0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_button_dotshex" ) )
 	ButtonHexDots0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ButtonHexDots0 )
 	self.ButtonHexDots0 = ButtonHexDots0
@@ -52,7 +52,7 @@ CoD.vhud_button_backing_lines.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local ButtonHexDots00 = LUI.UIImage.new( 0.5, 0.5, -55, 55, 0.5, 0.5, -55, 55 )
 	ButtonHexDots00:setAlpha( 0.2 )
 	ButtonHexDots00:setZoom( 15 )
-	ButtonHexDots00:setImage( RegisterImage( 0xCA3E3E3DC610DC0 ) )
+	ButtonHexDots00:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_button_dotshex" ) )
 	ButtonHexDots00:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ButtonHexDots00 )
 	self.ButtonHexDots00 = ButtonHexDots00
@@ -60,7 +60,7 @@ CoD.vhud_button_backing_lines.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local ButtonHexLines0 = LUI.UIImage.new( 0.5, 0.5, -55, 55, 0.5, 0.5, -55, 55 )
 	ButtonHexLines0:setAlpha( 0 )
 	ButtonHexLines0:setZoom( 30 )
-	ButtonHexLines0:setImage( RegisterImage( 0x8F474A9E7203645 ) )
+	ButtonHexLines0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_button_framehex" ) )
 	ButtonHexLines0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ButtonHexLines0 )
 	self.ButtonHexLines0 = ButtonHexLines0

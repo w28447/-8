@@ -265,23 +265,23 @@ DataSources.PCKoreaRefundButtons = DataSourceHelpers.ListSetup( "PCKoreaRefundBu
 	end
 	
 	local f26_local8 = DataSources.PCKoreaRefundWarning.getModel()
-	table.insert( f26_local0, f26_local7( f26_local8.confirmButtonTextHash:get(), 0x0, nil, f26_local2, f26_local6, false ) )
-	table.insert( f26_local0, f26_local7( "menu/cancel", 0x0, nil, f26_local1, nil, false ) )
+	table.insert( f26_local0, f26_local7( f26_local8.confirmButtonTextHash:get(), "", nil, f26_local2, f26_local6, false ) )
+	table.insert( f26_local0, f26_local7( "menu/cancel", "", nil, f26_local1, nil, false ) )
 	local f26_local9 = {}
 	if f26_local8.hasTermsOfSale:get() then
-		table.insert( f26_local0, f26_local7( 0x8770CBF493EC79D, 0x0, nil, f26_local3, nil, false ) )
+		table.insert( f26_local0, f26_local7( 0x8770CBF493EC79D, "", nil, f26_local3, nil, false ) )
 	else
-		table.insert( f26_local9, f26_local7( 0x8770CBF493EC79D, 0x0, nil, f26_local3, nil, true ) )
+		table.insert( f26_local9, f26_local7( 0x8770CBF493EC79D, "", nil, f26_local3, nil, true ) )
 	end
 	if f26_local8.hasRefundPolicy:get() then
-		table.insert( f26_local0, f26_local7( 0x4D63B43357A2C1B, 0x0, nil, f26_local4, nil, false ) )
+		table.insert( f26_local0, f26_local7( 0x4D63B43357A2C1B, "", nil, f26_local4, nil, false ) )
 	else
-		table.insert( f26_local9, f26_local7( 0x4D63B43357A2C1B, 0x0, nil, f26_local4, nil, true ) )
+		table.insert( f26_local9, f26_local7( 0x4D63B43357A2C1B, "", nil, f26_local4, nil, true ) )
 	end
 	if f26_local8.hasDropRates:get() then
-		table.insert( f26_local0, f26_local7( 0xB4D9AF6DB53EB97, 0x0, nil, f26_local5, nil, false ) )
+		table.insert( f26_local0, f26_local7( 0xB4D9AF6DB53EB97, "", nil, f26_local5, nil, false ) )
 	else
-		table.insert( f26_local9, f26_local7( 0xB4D9AF6DB53EB97, 0x0, nil, f26_local5, nil, true ) )
+		table.insert( f26_local9, f26_local7( 0xB4D9AF6DB53EB97, "", nil, f26_local5, nil, true ) )
 	end
 	for f26_local13, f26_local14 in ipairs( f26_local9 ) do
 		table.insert( f26_local0, f26_local14 )

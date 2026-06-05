@@ -45,34 +45,34 @@ CoD.CACFullPopupBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local CategoryListLineTopBottom0 = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 799, 811 )
 	CategoryListLineTopBottom0:setRGB( 0.9, 0.9, 0.9 )
 	CategoryListLineTopBottom0:setAlpha( 0 )
-	CategoryListLineTopBottom0:setImage( RegisterImage( 0xFF01596CBF87338 ) )
+	CategoryListLineTopBottom0:setImage( RegisterImage( "uie_t7_menu_cac_tabline" ) )
 	self:addElement( CategoryListLineTopBottom0 )
 	self.CategoryListLineTopBottom0 = CategoryListLineTopBottom0
 	
 	local CategoryListLineTopTop = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 196, 208 )
 	CategoryListLineTopTop:setRGB( 0.9, 0.9, 0.9 )
 	CategoryListLineTopTop:setAlpha( 0 )
-	CategoryListLineTopTop:setImage( RegisterImage( 0xFF01596CBF87338 ) )
+	CategoryListLineTopTop:setImage( RegisterImage( "uie_t7_menu_cac_tabline" ) )
 	self:addElement( CategoryListLineTopTop )
 	self.CategoryListLineTopTop = CategoryListLineTopTop
 	
 	local CategoryListLineTopBottom = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 289, 301 )
 	CategoryListLineTopBottom:setRGB( 0.9, 0.9, 0.9 )
-	CategoryListLineTopBottom:setImage( RegisterImage( 0xFF01596CBF87338 ) )
+	CategoryListLineTopBottom:setImage( RegisterImage( "uie_t7_menu_cac_tabline" ) )
 	self:addElement( CategoryListLineTopBottom )
 	self.CategoryListLineTopBottom = CategoryListLineTopBottom
 	
 	local CategoryListLineBottomBottom = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 872, 884 )
 	CategoryListLineBottomBottom:setRGB( 0.9, 0.9, 0.9 )
 	CategoryListLineBottomBottom:setAlpha( 0 )
-	CategoryListLineBottomBottom:setImage( RegisterImage( 0xFF01596CBF87338 ) )
+	CategoryListLineBottomBottom:setImage( RegisterImage( "uie_t7_menu_cac_tabline" ) )
 	self:addElement( CategoryListLineBottomBottom )
 	self.CategoryListLineBottomBottom = CategoryListLineBottomBottom
 	
 	local CategoryListLineBottomTop = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 801, 813 )
 	CategoryListLineBottomTop:setRGB( 0.9, 0.9, 0.9 )
 	CategoryListLineBottomTop:setAlpha( 0 )
-	CategoryListLineBottomTop:setImage( RegisterImage( 0xFF01596CBF87338 ) )
+	CategoryListLineBottomTop:setImage( RegisterImage( "uie_t7_menu_cac_tabline" ) )
 	self:addElement( CategoryListLineBottomTop )
 	self.CategoryListLineBottomTop = CategoryListLineBottomTop
 	
@@ -84,7 +84,7 @@ CoD.CACFullPopupBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local FEButtonPanel = CoD.FE_ButtonPanelShader.new( f1_arg0, f1_arg1, 0, 1, 0, 0, 0, 1, 201, -227 )
 	FEButtonPanel:setRGB( 0.5, 0.5, 0.5 )
 	FEButtonPanel:setAlpha( 0 )
-	FEButtonPanel:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x5073BBE3838C63E ) )
+	FEButtonPanel:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_pass_2_highquality" ) )
 	FEButtonPanel:setShaderVector( 0, 30, 10, 0, 0 )
 	self:addElement( FEButtonPanel )
 	self.FEButtonPanel = FEButtonPanel

@@ -64,7 +64,7 @@ Lobby.PartyPrivacy.SetPartyPrivacy = function ()
 end
 
 Lobby.PartyPrivacy.IsPrivateGameLobby = function ( f3_arg0 )
-	local f3_local0 = f3_arg0["id"]
+	local f3_local0 = f3_arg0.id
 	if f3_local0 == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_CP_CUSTOM ) or f3_local0 == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_CUSTOM ) or f3_local0 == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_CUSTOM ) or f3_local0 == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_CUSTOM ) or f3_local0 == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_WZ_CUSTOM ) then
 		return true
 	else
@@ -116,18 +116,18 @@ Lobby.PartyPrivacy.OnJoinPartyPrivacyCheck = function ( f6_arg0 )
 	local f6_local0 = f6_arg0.lobbyType
 	local f6_local1 = f6_arg0.joinType
 	local f6_local2 = f6_arg0.fromXuid
-	if f6_local1 == Enum.JoinType[0x9707B48B88781B9] or f6_local1 == Enum.JoinType[0x1375971BA46DA71] then
+	if f6_local1 == Enum.jointype.join_type_party or f6_local1 == Enum.jointype.join_type_playlist then
 		return Enum.JoinResult[0x26E669B1C0B3657]
 	else
 		local f6_local3 = Engine[0xB4EEE57E45369DB]()
 		if f6_local3 == Enum.PartyPrivacy[0x8B288F48084ABC5] then
 			Engine.PrintError( Enum[0x7A63DCD561B0FA8][0x59962D5EF982597], "Rejecting join request from xuid(" .. tostring( f6_local2 ) .. ") because we are not joinable, session party privacy is closed.\n" )
 			return Enum.JoinResult[0x65D30E028BCE71F]
-		elseif f6_local3 == Enum.PartyPrivacy[0x2507221A765592F] and f6_local1 ~= Enum.JoinType[0xD4D58772DE8652] then
+		elseif f6_local3 == Enum.PartyPrivacy[0x2507221A765592F] and f6_local1 ~= Enum.jointype.join_type_invite then
 			Engine.PrintError( Enum[0x7A63DCD561B0FA8][0x59962D5EF982597], "Rejecting join request from xuid(" .. tostring( f6_local2 ) .. ") because we are not joinable, session party privacy is invite only.\n" )
 			return Enum.JoinResult[0x6DCFF2389FEAED5]
-		elseif f6_local3 == Enum.PartyPrivacy[0xBE1A36D69A39221] and f6_local1 ~= Enum.JoinType[0xD4D58772DE8652] then
-			if f6_local1 == Enum.JoinType["join_type_friend"] and Engine.IsFriendFromXUID( Engine.GetPrimaryController(), f6_local2 ) then
+		elseif f6_local3 == Enum.PartyPrivacy[0xBE1A36D69A39221] and f6_local1 ~= Enum.jointype.join_type_invite then
+			if f6_local1 == Enum.jointype.join_type_friend and Engine.IsFriendFromXUID( Engine.GetPrimaryController(), f6_local2 ) then
 				return Enum.JoinResult[0x26E669B1C0B3657]
 			else
 				Engine.PrintError( Enum[0x7A63DCD561B0FA8][0x59962D5EF982597], "Rejecting join request from xuid(" .. tostring( f6_local2 ) .. ") because we are not joinable, session party privacy is friends only.\n" )

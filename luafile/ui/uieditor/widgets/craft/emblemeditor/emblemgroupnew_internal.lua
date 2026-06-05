@@ -46,7 +46,7 @@ CoD.EmblemGroupNew_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.FrontendFrame = FrontendFrame
 	
 	local groupIcon = LUI.UIImage.new( 0, 0, 6, 36, 0.5, 0.5, -66, -36 )
-	groupIcon:setImage( RegisterImage( 0x964B04560791FCF ) )
+	groupIcon:setImage( RegisterImage( "uie_t7_menu_emblem_group" ) )
 	self:addElement( groupIcon )
 	self.groupIcon = groupIcon
 	

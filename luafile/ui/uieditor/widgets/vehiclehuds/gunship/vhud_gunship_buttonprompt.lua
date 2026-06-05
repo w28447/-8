@@ -1,7 +1,7 @@
 require( "x64:4f48b2a3318365e" )
 require( "ui/uieditor/widgets/vehiclehuds/vhud_buttonprompt_minimal" )
 require( "ui/uieditor/widgets/controllerdependent_textbox" )
-require( "x64:9d92dce1e4291ce" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/abilityholdtoactivate" )
 
 CoD.vhud_gunship_buttonPrompt = InheritFrom( LUI.UIElement )
 CoD.vhud_gunship_buttonPrompt.__defaultWidth = 730
@@ -220,7 +220,7 @@ CoD.vhud_gunship_buttonPrompt.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	KBMExitActionName = LUI.UIText.new( 0.5, 0.5, 65, 365, 1, 1, -78, -62 )
 	KBMExitActionName:setAlpha( 0 )
-	KBMExitActionName:setText( Engine[0xF9F1239CFD921FE]( 0xC7D903A026627FC ) )
+	KBMExitActionName:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_exit" ) )
 	KBMExitActionName:setTTF( "ttmussels_regular" )
 	KBMExitActionName:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	KBMExitActionName:setLetterSpacing( 0.5 )

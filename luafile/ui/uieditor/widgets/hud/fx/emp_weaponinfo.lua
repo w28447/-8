@@ -11,13 +11,13 @@ CoD.EMP_WeaponInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local EMPbacker = LUI.UIImage.new( 0, 0, 178, 514, 0, 0, 158.5, 246.5 )
 	EMPbacker:setRGB( 0, 0, 0 )
 	EMPbacker:setAlpha( 0 )
-	EMPbacker:setImage( RegisterImage( 0x4BD21A855F6C8FE ) )
+	EMPbacker:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_ammo" ) )
 	self:addElement( EMPbacker )
 	self.EMPbacker = EMPbacker
 	
 	local EMPWeaponInfo = LUI.UIImage.new( 0, 0, 175, 511, 0, 0, 157, 245 )
-	EMPWeaponInfo:setImage( RegisterImage( 0x4BD21A855F6C8FE ) )
-	EMPWeaponInfo:setMaterial( LUI.UIImage.GetCachedMaterial( 0xC284ECCBDADEF0B ) )
+	EMPWeaponInfo:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_ammo" ) )
+	EMPWeaponInfo:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_emp" ) )
 	EMPWeaponInfo:setShaderVector( 0, 35.93, 0, 0, 0 )
 	EMPWeaponInfo:setShaderVector( 1, 0.83, 0, 0, 0 )
 	EMPWeaponInfo:setShaderVector( 2, 0.49, 0, 0, 0 )

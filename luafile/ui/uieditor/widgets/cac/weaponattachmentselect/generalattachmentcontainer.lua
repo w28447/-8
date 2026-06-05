@@ -49,23 +49,23 @@ CoD.GeneralAttachmentContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f6_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( AttachmentList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f7_arg0, f7_arg2, "isUberAttachment" ) and not IsListElementChildInState( f7_arg0, "AttachmentSlot", "NotAvailable" ) and not CoD.CACUtility.IsCACAttachmentItemLocked( f7_arg1, f7_arg0, f7_arg2 ) then
-			CoD.CACUtility.SetWeaponAttachmentItem( f7_arg1, self, f7_arg0, f7_arg2, true )
-			CoD.BreadcrumbUtility.UpdateWeaponOpticBreadcrumbs( f7_arg1, f7_arg2 )
+	f1_arg0:AddButtonCallbackFunction( AttachmentList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isUberAttachment" ) and not IsListElementChildInState( element, "AttachmentSlot", "NotAvailable" ) and not CoD.CACUtility.IsCACAttachmentItemLocked( menu, element, controller ) then
+			CoD.CACUtility.SetWeaponAttachmentItem( menu, self, element, controller, true )
+			CoD.BreadcrumbUtility.UpdateWeaponOpticBreadcrumbs( menu, controller )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueTrue( f7_arg0, f7_arg2, "isUberAttachment" ) and CoD.WeaponAttachmentsUtility.CanEquipUberAttachmentInSlot( f7_arg1 ) and not CoD.CACUtility.IsCACAttachmentItemLocked( f7_arg1, f7_arg0, f7_arg2 ) then
-			CoD.CACUtility.SetWeaponAttachmentItem( f7_arg1, self, f7_arg0, f7_arg2, true )
+		elseif CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isUberAttachment" ) and CoD.WeaponAttachmentsUtility.CanEquipUberAttachmentInSlot( menu ) and not CoD.CACUtility.IsCACAttachmentItemLocked( menu, element, controller ) then
+			CoD.CACUtility.SetWeaponAttachmentItem( menu, self, element, controller, true )
 			return true
 		else
 			
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f8_arg0, f8_arg2, "isUberAttachment" ) and not IsListElementChildInState( f8_arg0, "AttachmentSlot", "NotAvailable" ) and not CoD.CACUtility.IsCACAttachmentItemLocked( f8_arg1, f8_arg0, f8_arg2 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isUberAttachment" ) and not IsListElementChildInState( element, "AttachmentSlot", "NotAvailable" ) and not CoD.CACUtility.IsCACAttachmentItemLocked( menu, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueTrue( f8_arg0, f8_arg2, "isUberAttachment" ) and CoD.WeaponAttachmentsUtility.CanEquipUberAttachmentInSlot( f8_arg1 ) and not CoD.CACUtility.IsCACAttachmentItemLocked( f8_arg1, f8_arg0, f8_arg2 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isUberAttachment" ) and CoD.WeaponAttachmentsUtility.CanEquipUberAttachmentInSlot( menu ) and not CoD.CACUtility.IsCACAttachmentItemLocked( menu, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

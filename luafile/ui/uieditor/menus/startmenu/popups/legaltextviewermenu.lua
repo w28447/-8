@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/footer/footercontainer_frontend_right" )
 require( "ui/uieditor/widgets/startmenu/options/legaltextviewerbody" )
 require( "ui/uieditor/widgets/pc/pc_eula_pages" )
-require( "x64:2b3a36f75bb6e0e" )
+require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settingsliderarrow" )
 
 CoD.LegalTextViewerMenu = InheritFrom( CoD.Menu )
 LUI.createMenu.LegalTextViewerMenu = function ( f1_arg0, f1_arg1 )
@@ -18,7 +18,7 @@ LUI.createMenu.LegalTextViewerMenu = function ( f1_arg0, f1_arg1 )
 	
 	local BlackBG = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BlackBG:setRGB( 0, 0, 0 )
-	BlackBG:setMaterial( LUI.UIImage.GetCachedMaterial( 0x655565C7B387234 ) )
+	BlackBG:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_multiply" ) )
 	self:addElement( BlackBG )
 	self.BlackBG = BlackBG
 	
@@ -90,11 +90,11 @@ LUI.createMenu.LegalTextViewerMenu = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f6_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( SliderArrowLeft, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		CoD.CoDAccountUtility.PreviousCurrentLegalInfoEntry( f7_arg1, self.LegalTextViewerPages, f7_arg2 )
+	f1_local1:AddButtonCallbackFunction( SliderArrowLeft, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.CoDAccountUtility.PreviousCurrentLegalInfoEntry( menu, self.LegalTextViewerPages, controller )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( SliderArrowLeft )
@@ -134,11 +134,11 @@ LUI.createMenu.LegalTextViewerMenu = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f11_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( SliderArrowRight, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		CoD.CoDAccountUtility.NextCurrentLegalInfoEntry( f12_arg1, self.LegalTextViewerPages, f12_arg2 )
+	f1_local1:AddButtonCallbackFunction( SliderArrowRight, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.CoDAccountUtility.NextCurrentLegalInfoEntry( menu, self.LegalTextViewerPages, controller )
 		return true
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( SliderArrowRight )
@@ -157,40 +157,40 @@ LUI.createMenu.LegalTextViewerMenu = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( f14_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x493152B20AE4F58] )
 		CoD.Menu.UpdateButtonShownState( f14_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x49A252B20B48936] )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		GoBack( self, f15_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x493152B20AE4F58], nil, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		if not CoD.CoDAccountUtility.IsFirstLegalInfoEntry( f17_arg2 ) then
-			CoD.CoDAccountUtility.PreviousCurrentLegalInfoEntry( f17_arg1, self.LegalTextViewerPages, f17_arg2 )
-			UpdateAllMenuButtonPrompts( f17_arg1, f17_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x493152B20AE4F58], nil, function ( element, menu, controller, model )
+		if not CoD.CoDAccountUtility.IsFirstLegalInfoEntry( controller ) then
+			CoD.CoDAccountUtility.PreviousCurrentLegalInfoEntry( menu, self.LegalTextViewerPages, controller )
+			UpdateAllMenuButtonPrompts( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		if not CoD.CoDAccountUtility.IsFirstLegalInfoEntry( f18_arg2 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x493152B20AE4F58], 0x272B11A2E0CC67C, nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.CoDAccountUtility.IsFirstLegalInfoEntry( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x493152B20AE4F58], "menu/previous_page", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x49A252B20B48936], nil, function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
-		if not CoD.CoDAccountUtility.IsLastLegalInfoEntry( f19_arg2 ) then
-			CoD.CoDAccountUtility.NextCurrentLegalInfoEntry( f19_arg1, self.LegalTextViewerPages, f19_arg2 )
-			UpdateAllMenuButtonPrompts( f19_arg1, f19_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x49A252B20B48936], nil, function ( element, menu, controller, model )
+		if not CoD.CoDAccountUtility.IsLastLegalInfoEntry( controller ) then
+			CoD.CoDAccountUtility.NextCurrentLegalInfoEntry( menu, self.LegalTextViewerPages, controller )
+			UpdateAllMenuButtonPrompts( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f20_arg0, f20_arg1, f20_arg2 )
-		if not CoD.CoDAccountUtility.IsLastLegalInfoEntry( f20_arg2 ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x49A252B20B48936], 0x92878DD19A9AAD8, nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.CoDAccountUtility.IsLastLegalInfoEntry( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x49A252B20B48936], "menu/next_page", nil, nil )
 			return true
 		else
 			return false

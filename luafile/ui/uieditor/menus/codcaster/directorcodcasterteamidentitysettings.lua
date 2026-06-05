@@ -46,7 +46,7 @@ LUI.createMenu.DirectorCodCasterTeamIdentitySettings = function ( f1_arg0, f1_ar
 	self.FadeForStreamer = FadeForStreamer
 	
 	GenericMenuFrame = CoD.GenericMenuFrame.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	GenericMenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x7A023700261F0B2 ) )
+	GenericMenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "codcaster/team_identity" ) )
 	GenericMenuFrame:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
@@ -70,27 +70,27 @@ LUI.createMenu.DirectorCodCasterTeamIdentitySettings = function ( f1_arg0, f1_ar
 	self:addElement( TeamColorList )
 	self.TeamColorList = TeamColorList
 	
-	self:registerEventHandler( "ui_keyboard_input", function ( element, event )
+	self:registerEventHandler( "ui_keyboard_input", function ( self, event )
 		local f6_local0 = nil
-		HandleTeamIdentityKeyboardComplete( self, element, f1_arg0, event )
+		HandleTeamIdentityKeyboardComplete( self, self, f1_arg0, event )
 		if not f6_local0 then
-			f6_local0 = element:dispatchEventToChildren( event )
+			f6_local0 = self:dispatchEventToChildren( event )
 		end
 		return f6_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		SaveShoutcasterSettings( self, f7_arg0, f7_arg2 )
-		RefreshLobbyGameClient( self, f7_arg2 )
-		GoBack( self, f7_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		SaveShoutcasterSettings( self, element, controller )
+		RefreshLobbyGameClient( self, controller )
+		GoBack( self, controller )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		return true
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	GenericMenuFrame:setModel( self.buttonModel, f1_arg0 )

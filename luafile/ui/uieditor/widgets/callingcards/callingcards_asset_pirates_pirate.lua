@@ -23,7 +23,7 @@ CoD.CallingCards_Asset_Pirates_Pirate.new = function ( f1_arg0, f1_arg1, f1_arg2
 	self.armwithgun = armwithgun
 	
 	local piratebody = LUI.UIImage.new( 0, 0, 517.5, 750.5, 0, 0, 0, 280 )
-	piratebody:setImage( RegisterImage( 0x9285FBAE26567BF ) )
+	piratebody:setImage( RegisterImage( "uie_ui_icon_callingcards_pirates_body" ) )
 	self:addElement( piratebody )
 	self.piratebody = piratebody
 	

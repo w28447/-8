@@ -48,14 +48,14 @@ CoD.SupplyChainItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local Gradient = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 141 )
 	Gradient:setRGB( 0.08, 0.21, 0.31 )
 	Gradient:setAlpha( 0.14 )
-	Gradient:setImage( RegisterImage( 0xB646BE73FB8838C ) )
+	Gradient:setImage( RegisterImage( "uie_ui_menu_common_gradient" ) )
 	Gradient:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Gradient )
 	self.Gradient = Gradient
 	
 	local Glow = LUI.UIImage.new( 0, 1, -16, 16, 0, 1, -16, 16 )
 	Glow:setAlpha( 0.03 )
-	Glow:setImage( RegisterImage( 0xC58FF2328701EBA ) )
+	Glow:setImage( RegisterImage( "uie_ui_hud_core_no_ammo_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
@@ -156,12 +156,12 @@ CoD.SupplyChainItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local LockBacker = LUI.UIImage.new( 0.5, 0.5, 18, 70, 0.5, 0.5, 27, 79 )
 	LockBacker:setRGB( 0, 0, 0 )
 	LockBacker:setAlpha( 0.5 )
-	LockBacker:setImage( RegisterImage( 0xB6B0FDFB6B66AF9 ) )
+	LockBacker:setImage( RegisterImage( "uie_ui_menu_item_shop_lock_backer" ) )
 	self:addElement( LockBacker )
 	self.LockBacker = LockBacker
 	
 	local LockIcon = LUI.UIImage.new( 0.5, 0.5, 16, 68, 0.5, 0.5, 25, 77 )
-	LockIcon:setImage( RegisterImage( 0x410BF8B0F9878A4 ) )
+	LockIcon:setImage( RegisterImage( "uie_ui_menu_item_shop_lock" ) )
 	LockIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_saturation_normal" ) )
 	LockIcon:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LockIcon )

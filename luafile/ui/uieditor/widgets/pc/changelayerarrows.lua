@@ -30,7 +30,7 @@ CoD.ChangeLayerArrows.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local ViewName = LUI.UIText.new( 0.5, 0.5, -71, 71, 0.5, 0.5, -7.5, 7.5 )
 	ViewName:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	ViewName:setText( Engine[0xF9F1239CFD921FE]( 0x74E5E31461D378F ) )
+	ViewName:setText( Engine[0xF9F1239CFD921FE]( "menu/change_emblem_layer_order" ) )
 	ViewName:setTTF( "ttmussels_demibold" )
 	ViewName:setLetterSpacing( 6 )
 	ViewName:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -56,17 +56,17 @@ CoD.ChangeLayerArrows.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ChangeViewRight, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		if CoD.CraftUtility.IsEditMode( f4_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_MoveLayer( self, f4_arg1, f4_arg2, "right" )
+	f1_arg0:AddButtonCallbackFunction( ChangeViewRight, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) then
+			CoD.CraftUtility.EmblemEditor_MoveLayer( self, menu, controller, "right" )
 			PlaySoundSetSound( self, "layer_switch" )
 			return true
 		else
 			
 		end
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		if CoD.CraftUtility.IsEditMode( f5_arg2 ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsEditMode( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -94,17 +94,17 @@ CoD.ChangeLayerArrows.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ChangeViewLeft, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if CoD.CraftUtility.IsEditMode( f8_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_MoveLayer( self, f8_arg1, f8_arg2, "left" )
+	f1_arg0:AddButtonCallbackFunction( ChangeViewLeft, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) then
+			CoD.CraftUtility.EmblemEditor_MoveLayer( self, menu, controller, "left" )
 			PlaySoundSetSound( self, "layer_switch" )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if CoD.CraftUtility.IsEditMode( f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsEditMode( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false

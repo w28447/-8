@@ -21,7 +21,7 @@ CoD.AARTierPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local ImageX = LUI.UIImage.new( 0, 1, 2, -2, 0, 1, 2, -2 )
 	ImageX:setAlpha( 0 )
-	ImageX:setImage( RegisterImage( 0xCCAE79885973D29 ) )
+	ImageX:setImage( RegisterImage( "uie_t7_menu_frontend_slidex" ) )
 	ImageX:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ImageX )
 	self.ImageX = ImageX
@@ -29,7 +29,7 @@ CoD.AARTierPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	local Glow = LUI.UIImage.new( 0, 1, -12, 12, 0, 1, -15, 15 )
 	Glow:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0xC58FF2328701EBA ) )
+	Glow:setImage( RegisterImage( "uie_ui_hud_core_no_ammo_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow

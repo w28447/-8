@@ -30,7 +30,7 @@ CoD.vhud_hellstorm_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local vignette2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	vignette2:setRGB( 0, 0, 0 )
 	vignette2:setAlpha( 0.65 )
-	vignette2:setImage( RegisterImage( 0xB8D7548F3591A70 ) )
+	vignette2:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_vignette02" ) )
 	self:addElement( vignette2 )
 	self.vignette2 = vignette2
 	
@@ -53,7 +53,7 @@ CoD.vhud_hellstorm_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local vignette = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	vignette:setRGB( 0, 0, 0 )
 	vignette:setAlpha( 0.4 )
-	vignette:setImage( RegisterImage( 0xB8D7548F3591A70 ) )
+	vignette:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_vignette02" ) )
 	self:addElement( vignette )
 	self.vignette = vignette
 	
@@ -85,7 +85,7 @@ CoD.vhud_hellstorm_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local DotGridCenter = LUI.UIImage.new( 0.5, 0.5, -233, 223, 0.5, 0.5, -217, 239 )
 	DotGridCenter:setAlpha( 0 )
 	DotGridCenter:setScale( 2, 2 )
-	DotGridCenter:setImage( RegisterImage( 0x39D7DB5DA7B7576 ) )
+	DotGridCenter:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_center_grid" ) )
 	DotGridCenter:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	DotGridCenter:setShaderVector( 0, 5, 0, 0, 0 )
 	self:addElement( DotGridCenter )
@@ -138,7 +138,7 @@ CoD.vhud_hellstorm_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.BGframeRight = BGframeRight
 	
 	local CenterDot = LUI.UIImage.new( 0.5, 0.5, -2, 2, 0.5, 0.5, -2, 2 )
-	CenterDot:setImage( RegisterImage( 0x3854665C02218EF ) )
+	CenterDot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame_dot" ) )
 	CenterDot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	CenterDot:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( CenterDot )
@@ -169,14 +169,14 @@ CoD.vhud_hellstorm_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local TimerSegmentsBase = LUI.UIImage.new( 0.5, 0.5, -210, 210, 0.5, 0.5, -208, 212 )
 	TimerSegmentsBase:setAlpha( 0.1 )
-	TimerSegmentsBase:setImage( RegisterImage( 0x9FDD95D9B71854D ) )
+	TimerSegmentsBase:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_timer" ) )
 	TimerSegmentsBase:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	TimerSegmentsBase:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( TimerSegmentsBase )
 	self.TimerSegmentsBase = TimerSegmentsBase
 	
 	local TimerSegments = LUI.UIImage.new( 0.5, 0.5, -210, 210, 0.5, 0.5, -208, 212 )
-	TimerSegments:setImage( RegisterImage( 0x9FDD95D9B71854D ) )
+	TimerSegments:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_timer" ) )
 	TimerSegments:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_add" ) )
 	TimerSegments:setShaderVector( 1, 0.5, 0, 0, 0 )
 	TimerSegments:setShaderVector( 2, 5.5, 0, 0, 0 )

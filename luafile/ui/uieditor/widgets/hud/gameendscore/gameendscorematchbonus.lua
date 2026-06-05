@@ -18,7 +18,7 @@ CoD.GameEndScoreMatchBonus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.DoubleXPIcon = DoubleXPIcon
 	
 	local XpIcon = LUI.UIImage.new( 0.5, 0.5, -36, 36, 0, 0, 0, 72 )
-	XpIcon:setImage( RegisterImage( 0x7B197CE33A5602C ) )
+	XpIcon:setImage( RegisterImage( "uie_t7_hud_mp_notifications_xp" ) )
 	self:addElement( XpIcon )
 	self.XpIcon = XpIcon
 	

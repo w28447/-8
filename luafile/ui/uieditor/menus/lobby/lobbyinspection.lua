@@ -73,7 +73,7 @@ LUI.createMenu.LobbyInspection = function ( f1_arg0, f1_arg1 )
 	self.FooterContainerFrontendRight = FooterContainerFrontendRight
 	
 	CommonHeader = CoD.CommonHeader.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0, 0, 0, 67 )
-	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x22CC1B322BAEC69 ) )
+	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/inspection" ) )
 	CommonHeader:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyMainMode", function ( model )
 		local f7_local0 = model:get()
 		if f7_local0 ~= nil then
@@ -136,21 +136,21 @@ LUI.createMenu.LobbyInspection = function ( f1_arg0, f1_arg1 )
 			InspectionWidget.InspectionSinglePlayerLevel:setModel( f12_local0, f1_arg0 )
 		end
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		SendClientScriptMenuChangeNotify( f13_arg2, f13_arg1, false )
-		GoBack( self, f13_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		SendClientScriptMenuChangeNotify( controller, menu, false )
+		GoBack( self, controller )
 		return true
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_contextual_1", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		OpenOverlay( self, "Social_PlayerDetailsPopup", f15_arg2, {
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_contextual_1", function ( element, menu, controller, model )
+		OpenOverlay( self, "Social_PlayerDetailsPopup", controller, {
 			disableInspection = true
 		} )
 		return true
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0xE0254269ED8FFD3, nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], 0xE0254269ED8FFD3, nil, "ui_contextual_1" )
 		return true
 	end, false )
 	InspectionWidget.id = "InspectionWidget"

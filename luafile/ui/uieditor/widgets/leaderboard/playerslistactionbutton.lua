@@ -46,7 +46,7 @@ CoD.PlayersListActionButton.__clipsPerState = {
 			f4_arg0:setupElementClipCounter( 1 )
 			f4_arg0.ActionButton:completeAnimation()
 			f4_arg0.ActionButton.Title:completeAnimation()
-			f4_arg0.ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( 0x8560D39E3DABF67 ) )
+			f4_arg0.ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/add_players" ) )
 			f4_arg0.clipFinished( f4_arg0.ActionButton )
 		end,
 		ChildFocus = function ( f5_arg0, f5_arg1 )
@@ -55,7 +55,7 @@ CoD.PlayersListActionButton.__clipsPerState = {
 			f5_arg0.ActionButton:completeAnimation()
 			f5_arg0.ActionButton.Title:completeAnimation()
 			f5_arg0.ActionButton:setScale( 1.05, 1.05 )
-			f5_arg0.ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( 0x8560D39E3DABF67 ) )
+			f5_arg0.ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/add_players" ) )
 			f5_arg0.clipFinished( f5_arg0.ActionButton )
 		end,
 		GainChildFocus = function ( f6_arg0, f6_arg1 )
@@ -71,7 +71,7 @@ CoD.PlayersListActionButton.__clipsPerState = {
 			f6_arg0.ActionButton:completeAnimation()
 			f6_arg0.ActionButton.Title:completeAnimation()
 			f6_arg0.ActionButton:setScale( 1, 1 )
-			f6_arg0.ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( 0x8560D39E3DABF67 ) )
+			f6_arg0.ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/add_players" ) )
 			f6_local0( f6_arg0.ActionButton )
 		end,
 		LoseChildFocus = function ( f8_arg0, f8_arg1 )
@@ -87,7 +87,7 @@ CoD.PlayersListActionButton.__clipsPerState = {
 			f8_arg0.ActionButton:completeAnimation()
 			f8_arg0.ActionButton.Title:completeAnimation()
 			f8_arg0.ActionButton:setScale( 1.05, 1.05 )
-			f8_arg0.ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( 0x8560D39E3DABF67 ) )
+			f8_arg0.ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/add_players" ) )
 			f8_local0( f8_arg0.ActionButton )
 		end
 	},
@@ -97,7 +97,7 @@ CoD.PlayersListActionButton.__clipsPerState = {
 			f10_arg0:setupElementClipCounter( 1 )
 			f10_arg0.ActionButton:completeAnimation()
 			f10_arg0.ActionButton.Title:completeAnimation()
-			f10_arg0.ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( 0xA24DD815FB15C3E ) )
+			f10_arg0.ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/remove_players" ) )
 			f10_arg0.clipFinished( f10_arg0.ActionButton )
 		end,
 		ChildFocus = function ( f11_arg0, f11_arg1 )
@@ -106,7 +106,7 @@ CoD.PlayersListActionButton.__clipsPerState = {
 			f11_arg0.ActionButton:completeAnimation()
 			f11_arg0.ActionButton.Title:completeAnimation()
 			f11_arg0.ActionButton:setScale( 1.05, 1.05 )
-			f11_arg0.ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( 0xA24DD815FB15C3E ) )
+			f11_arg0.ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/remove_players" ) )
 			f11_arg0.clipFinished( f11_arg0.ActionButton )
 		end,
 		GainChildFocus = function ( f12_arg0, f12_arg1 )
@@ -122,7 +122,7 @@ CoD.PlayersListActionButton.__clipsPerState = {
 			f12_arg0.ActionButton:completeAnimation()
 			f12_arg0.ActionButton.Title:completeAnimation()
 			f12_arg0.ActionButton:setScale( 1, 1 )
-			f12_arg0.ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( 0xA24DD815FB15C3E ) )
+			f12_arg0.ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/remove_players" ) )
 			f12_local0( f12_arg0.ActionButton )
 		end,
 		LoseChildFocus = function ( f14_arg0, f14_arg1 )
@@ -138,7 +138,7 @@ CoD.PlayersListActionButton.__clipsPerState = {
 			f14_arg0.ActionButton:completeAnimation()
 			f14_arg0.ActionButton.Title:completeAnimation()
 			f14_arg0.ActionButton:setScale( 1.05, 1.05 )
-			f14_arg0.ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( 0xA24DD815FB15C3E ) )
+			f14_arg0.ActionButton.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/remove_players" ) )
 			f14_local0( f14_arg0.ActionButton )
 		end
 	}

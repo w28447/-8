@@ -42,7 +42,7 @@ CoD.CoDPoints_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	glow:setRGB( 0.42, 0.4, 0.31 )
 	glow:setAlpha( 0.5 )
 	glow:setZRot( 90 )
-	glow:setImage( RegisterImage( 0x333C8E36E45B362 ) )
+	glow:setImage( RegisterImage( "uie_ui_icon_master_overlays_glow" ) )
 	glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( glow )
 	self.glow = glow
@@ -67,14 +67,14 @@ CoD.CoDPoints_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	glow2:setRGB( 0.42, 0.4, 0.31 )
 	glow2:setAlpha( 0.5 )
 	glow2:setZRot( 90 )
-	glow2:setImage( RegisterImage( 0x333C8E36E45B362 ) )
+	glow2:setImage( RegisterImage( "uie_ui_icon_master_overlays_glow" ) )
 	glow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( glow2 )
 	self.glow2 = glow2
 	
 	local PurchaseCPText = LUI.UIText.new( 0.5, 0.5, -327, 359, 0, 0, 190, 235 )
 	PurchaseCPText:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
-	PurchaseCPText:setText( Engine[0xF9F1239CFD921FE]( 0x63D5409DEC36DFA ) )
+	PurchaseCPText:setText( Engine[0xF9F1239CFD921FE]( "mpui/purchase_codpoints_caps" ) )
 	PurchaseCPText:setTTF( "ttmussels_demibold" )
 	PurchaseCPText:setLetterSpacing( 6 )
 	PurchaseCPText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -143,33 +143,33 @@ CoD.CoDPoints_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if not MenuPropertyIsTrue( f6_arg1, "dontCloseOnStoreOpen" ) and not IsPC() then
+	f1_arg0:AddButtonCallbackFunction( List, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not MenuPropertyIsTrue( menu, "dontCloseOnStoreOpen" ) and not IsPC() then
 			PlaySoundAlias( "uin_points_purchase" )
-			PurchaseProduct( self, f6_arg1, f6_arg0, f6_arg2 )
-			HidePsStoreIcon( f6_arg2 )
-			GoBack( self, f6_arg2 )
+			PurchaseProduct( self, menu, element, controller )
+			HidePsStoreIcon( controller )
+			GoBack( self, controller )
 			return true
-		elseif MenuPropertyIsTrue( f6_arg1, "dontCloseOnStoreOpen" ) then
+		elseif MenuPropertyIsTrue( menu, "dontCloseOnStoreOpen" ) then
 			PlaySoundAlias( "uin_points_purchase" )
-			PurchaseProduct( self, f6_arg1, f6_arg0, f6_arg2 )
+			PurchaseProduct( self, menu, element, controller )
 			return true
-		elseif not MenuPropertyIsTrue( f6_arg1, "dontCloseOnStoreOpen" ) and IsPC() then
-			PurchaseProduct( self, f6_arg1, f6_arg0, f6_arg2 )
-			HidePsStoreIcon( f6_arg2 )
+		elseif not MenuPropertyIsTrue( menu, "dontCloseOnStoreOpen" ) and IsPC() then
+			PurchaseProduct( self, menu, element, controller )
+			HidePsStoreIcon( controller )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		if not MenuPropertyIsTrue( f7_arg1, "dontCloseOnStoreOpen" ) and not IsPC() then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if not MenuPropertyIsTrue( menu, "dontCloseOnStoreOpen" ) and not IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif MenuPropertyIsTrue( f7_arg1, "dontCloseOnStoreOpen" ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif MenuPropertyIsTrue( menu, "dontCloseOnStoreOpen" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif not MenuPropertyIsTrue( f7_arg1, "dontCloseOnStoreOpen" ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif not MenuPropertyIsTrue( menu, "dontCloseOnStoreOpen" ) and IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -254,11 +254,11 @@ CoD.CoDPoints_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f13_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( featureOverlayButtonContainer, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
-		GoBack( self, f14_arg2 )
+	f1_arg0:AddButtonCallbackFunction( featureOverlayButtonContainer, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( featureOverlayButtonContainer )
@@ -287,7 +287,7 @@ CoD.CoDPoints_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	TiledwhiteNoiseBacking = LUI.UIImage.new( 0, 0, 74, 82, 0, 0, 85, 127 )
 	TiledwhiteNoiseBacking:setAlpha( 0.02 )
-	TiledwhiteNoiseBacking:setImage( RegisterImage( 0x7167D8C33A06020 ) )
+	TiledwhiteNoiseBacking:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
 	TiledwhiteNoiseBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledwhiteNoiseBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledwhiteNoiseBacking:setupNineSliceShader( 64, 64 )

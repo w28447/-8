@@ -111,7 +111,7 @@ CoD.CodCasterButtons.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.KeyboardShortcuts1 = KeyboardShortcuts1
 	
 	local TogglePortraits = CoD.CodCasterButtonPromptContainer.new( f1_arg0, f1_arg1, 0, 0, 856, 1120, 0, 0, -5, 33 )
-	TogglePortraits.Prompt.KeyPrompt.keybind:setText( Engine[0xF9F1239CFD921FE]( 0x1F4945715AA4BFD ) )
+	TogglePortraits.Prompt.KeyPrompt.keybind:setText( Engine[0xF9F1239CFD921FE]( "key/uparrow" ) )
 	TogglePortraits:subscribeToGlobalModel( f1_arg1, "Controller", "dpad_up_button_image", function ( model )
 		local f9_local0 = model:get()
 		if f9_local0 ~= nil then

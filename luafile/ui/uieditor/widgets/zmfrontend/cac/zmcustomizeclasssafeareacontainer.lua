@@ -20,7 +20,7 @@ CoD.ZMCustomizeClassSafeAreaContainer.new = function ( f1_arg0, f1_arg1, f1_arg2
 	self.TabBacking = TabBacking
 	
 	local CACHeader = CoD.CommonHeader.new( f1_arg0, f1_arg1, 0, 1, 0, 0, 0, 0, 0, 67 )
-	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x3E876868767ECEB ) )
+	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "feature/loadouts" ) )
 	CACHeader.subtitle.subtitle:setAlpha( 0 )
 	CACHeader:subscribeToGlobalModel( f1_arg1, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()

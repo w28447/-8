@@ -28,7 +28,7 @@ CoD.SoundUtility.PlaySoundOnceForController = function ( f4_arg0, f4_arg1 )
 		return 
 	else
 		CoD.perController[f4_arg0]._playOnceAliases[f4_arg1] = true
-		Engine.PlaySound( f4_arg1 )
+		Engine.playsound( f4_arg1 )
 	end
 end
 
@@ -36,6 +36,6 @@ CoD.SoundUtility.StopPlayOnceSoundForController = function ( f5_arg0, f5_arg1 )
 	if CoD.perController[f5_arg0]._playOnceAliases then
 		CoD.perController[f5_arg0]._playOnceAliases[f5_arg1] = nil
 	end
-	Engine.StopSound( f5_arg1 )
+	Engine.stopsound( f5_arg1 )
 end
 

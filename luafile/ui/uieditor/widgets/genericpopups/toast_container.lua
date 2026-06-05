@@ -66,7 +66,7 @@ CoD.Toast_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local ToastHeaderWidget = CoD.horizontalScrollingTextBox_30pt.new( f1_arg0, f1_arg1, 0, 0, 111, 453, 0, 0, 29, 80 )
 	ToastHeaderWidget:setRGB( 0.27, 0.76, 0.09 )
 	ToastHeaderWidget:setAlpha( 0 )
-	ToastHeaderWidget.textBox:setText( Engine[0xF9F1239CFD921FE]( 0xA447D9FA67960A3 ) )
+	ToastHeaderWidget.textBox:setText( Engine[0xF9F1239CFD921FE]( "weapon/ar_standard" ) )
 	self:addElement( ToastHeaderWidget )
 	self.ToastHeaderWidget = ToastHeaderWidget
 	

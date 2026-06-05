@@ -48,11 +48,11 @@ LUI.createMenu.StartMenu_Options_CoDAccount_CTA = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( accountOptionsList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		ProcessListAction( self, f3_arg0, f3_arg2, f3_arg1 )
+	f1_local1:AddButtonCallbackFunction( accountOptionsList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
+		ProcessListAction( self, element, controller, menu )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "MOUSE1" )
 		return true
 	end, false )
 	self:addElement( accountOptionsList )
@@ -79,7 +79,7 @@ LUI.createMenu.StartMenu_Options_CoDAccount_CTA = function ( f1_arg0, f1_arg1 )
 	
 	local Header = CoD.CommonHeader.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0, 0, 0, 67 )
 	Header.BGSceneBlur:setAlpha( 0 )
-	Header.subtitle.StageTitle:setText( LocalizeToUpperString( 0x30BC41F2404F851 ) )
+	Header.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/cod_account_caps" ) )
 	Header.subtitle.subtitle:setAlpha( 0 )
 	Header:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f5_local0 = model:get()
@@ -112,7 +112,7 @@ LUI.createMenu.StartMenu_Options_CoDAccount_CTA = function ( f1_arg0, f1_arg1 )
 	local SkipButton = nil
 	
 	SkipButton = CoD.GameSettings_OptionsButton.new( f1_local1, f1_arg0, 0, 0, 1220, 1360, 0, 0, 851, 911 )
-	SkipButton.OptionText:setText( LocalizeToUpperString( 0x663FC1AF7C5AECF ) )
+	SkipButton.OptionText:setText( LocalizeToUpperString( "menu/skip_caps1" ) )
 	SkipButton:linkToElementModel( self, "image", true, function ( model )
 		local f7_local0 = model:get()
 		if f7_local0 ~= nil then
@@ -129,12 +129,12 @@ LUI.createMenu.StartMenu_Options_CoDAccount_CTA = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f8_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( SkipButton, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		GoBack( self, f9_arg2 )
-		CoD.LobbyUtility.OpenFTUEGameIntroductionOverlay( f9_arg2 )
+	f1_local1:AddButtonCallbackFunction( SkipButton, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		GoBack( self, controller )
+		CoD.LobbyUtility.OpenFTUEGameIntroductionOverlay( controller )
 		return true
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( SkipButton )
@@ -148,29 +148,29 @@ LUI.createMenu.StartMenu_Options_CoDAccount_CTA = function ( f1_arg0, f1_arg1 )
 			end
 		}
 	} )
-	self:registerEventHandler( "occlusion_change", function ( element, event )
+	self:registerEventHandler( "occlusion_change", function ( self, event )
 		local f12_local0 = nil
-		if element.OcclusionChange then
-			f12_local0 = element:OcclusionChange( event )
-		elseif element.super.OcclusionChange then
-			f12_local0 = element.super:OcclusionChange( event )
+		if self.OcclusionChange then
+			f12_local0 = self:OcclusionChange( event )
+		elseif self.super.OcclusionChange then
+			f12_local0 = self.super:OcclusionChange( event )
 		end
 		CoD.CoDAccountUtility.UpdateOnCTAOccludedChange( f1_local1, f1_arg0, event )
 		if not f12_local0 then
-			f12_local0 = element:dispatchEventToChildren( event )
+			f12_local0 = self:dispatchEventToChildren( event )
 		end
 		return f12_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
 		if not IsSelfInState( self, "SignInRequired" ) then
-			GoBack( self, f13_arg2 )
+			GoBack( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
+	end, function ( element, menu, controller )
 		if not IsSelfInState( self, "SignInRequired" ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false

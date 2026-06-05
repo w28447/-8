@@ -21,7 +21,7 @@ LUI.createMenu.AARPrestigeMasterOverlay = function ( f1_arg0, f1_arg1 )
 	
 	local FractalGrid = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	FractalGrid:setAlpha( 0.02 )
-	FractalGrid:setImage( RegisterImage( 0x1DF4C930E69FFB0 ) )
+	FractalGrid:setImage( RegisterImage( "uie_ui_menu_aar_levelup_fractalgrid" ) )
 	FractalGrid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	FractalGrid:setShaderVector( 0, 1, 1, 0, 0 )
 	FractalGrid:setShaderVector( 1, 0, 0, 0, 0 )
@@ -52,12 +52,12 @@ LUI.createMenu.AARPrestigeMasterOverlay = function ( f1_arg0, f1_arg1 )
 	self.FooterContainerFrontendRight = FooterContainerFrontendRight
 	
 	local MasterPrestigeImage = LUI.UIImage.new( 0.5, 0.5, -233.5, 233.5, 0.5, 0.5, -233.5, 233.5 )
-	MasterPrestigeImage:setImage( RegisterImage( 0xCC0270C9E85AEDF ) )
+	MasterPrestigeImage:setImage( RegisterImage( "ui_icon_mp_masterprestige_large" ) )
 	self:addElement( MasterPrestigeImage )
 	self.MasterPrestigeImage = MasterPrestigeImage
 	
 	local MasterPrestigeTitle = LUI.UIText.new( 0.5, 0.5, -500, 500, 0, 0, 210, 258 )
-	MasterPrestigeTitle:setText( Engine[0xF9F1239CFD921FE]( 0x2EB662C892747AB ) )
+	MasterPrestigeTitle:setText( Engine[0xF9F1239CFD921FE]( "menu/prestige_master_caps" ) )
 	MasterPrestigeTitle:setTTF( "ttmussels_demibold" )
 	MasterPrestigeTitle:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	MasterPrestigeTitle:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -106,23 +106,23 @@ LUI.createMenu.AARPrestigeMasterOverlay = function ( f1_arg0, f1_arg1 )
 			modelName = "lobbyRoot.lobbyNav"
 		} )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		CoD.AARUtility.CloseLevelUpOverlay( f6_arg1, f6_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		CoD.AARUtility.CloseLevelUpOverlay( menu, controller )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
 		if IsPC() then
-			CoD.AARUtility.CloseLevelUpOverlay( f8_arg1, f8_arg2 )
+			CoD.AARUtility.CloseLevelUpOverlay( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false
@@ -154,7 +154,7 @@ CoD.AARPrestigeMasterOverlay.__resetProperties = function ( f10_arg0 )
 	f10_arg0.DescriptionText1:setText( Engine[0xF9F1239CFD921FE]( "menu/prestige_master_notification" ) )
 	f10_arg0.MasterPrestigeTitle:setAlpha( 1 )
 	f10_arg0.MasterPrestigeImage:setAlpha( 1 )
-	f10_arg0.MasterPrestigeImage:setImage( RegisterImage( 0xCC0270C9E85AEDF ) )
+	f10_arg0.MasterPrestigeImage:setImage( RegisterImage( "ui_icon_mp_masterprestige_large" ) )
 end
 
 CoD.AARPrestigeMasterOverlay.__clipsPerState = {
@@ -228,7 +228,7 @@ CoD.AARPrestigeMasterOverlay.__clipsPerState = {
 			
 			f18_arg0.MasterPrestigeImage:completeAnimation()
 			f18_arg0.MasterPrestigeImage:setAlpha( 0 )
-			f18_arg0.MasterPrestigeImage:setImage( RegisterImage( 0x3F48FBE7880AA60 ) )
+			f18_arg0.MasterPrestigeImage:setImage( RegisterImage( "ui_icon_zm_prestige_master_large" ) )
 			f18_local0( f18_arg0.MasterPrestigeImage )
 			local f18_local1 = function ( f20_arg0 )
 				f18_arg0.MasterPrestigeTitle:beginAnimation( 120 )
@@ -255,7 +255,7 @@ CoD.AARPrestigeMasterOverlay.__clipsPerState = {
 			
 			f18_arg0.DescriptionText1:completeAnimation()
 			f18_arg0.DescriptionText1:setAlpha( 0 )
-			f18_arg0.DescriptionText1:setText( Engine[0xF9F1239CFD921FE]( 0x2F1A76D4186CCC5 ) )
+			f18_arg0.DescriptionText1:setText( Engine[0xF9F1239CFD921FE]( "menu/zm_prestige_master_notification" ) )
 			f18_local2( f18_arg0.DescriptionText1 )
 			local f18_local3 = function ( f23_arg0 )
 				local f23_local0 = function ( f24_arg0 )
@@ -287,7 +287,7 @@ CoD.AARPrestigeMasterOverlay.__clipsPerState = {
 			
 			f25_arg0.MasterPrestigeImage:completeAnimation()
 			f25_arg0.MasterPrestigeImage:setAlpha( 0 )
-			f25_arg0.MasterPrestigeImage:setImage( RegisterImage( 0xF502230396E02ED ) )
+			f25_arg0.MasterPrestigeImage:setImage( RegisterImage( "uie_ui_icon_wz_prestigemain_master_large" ) )
 			f25_local0( f25_arg0.MasterPrestigeImage )
 			local f25_local1 = function ( f27_arg0 )
 				f25_arg0.MasterPrestigeTitle:beginAnimation( 120 )

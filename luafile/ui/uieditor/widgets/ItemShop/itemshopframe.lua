@@ -70,15 +70,15 @@ CoD.ItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f6_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( WeeklyItems, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		OpenOverlay( self, "ItemShopDetails", f7_arg2, {
-			_model = f7_arg0:getModel()
+	f1_arg0:AddButtonCallbackFunction( WeeklyItems, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		OpenOverlay( self, "ItemShopDetails", controller, {
+			_model = element:getModel()
 		} )
-		SetControllerModelValue( f7_arg2, "LootStreamProgress.playAnimation", false )
-		CoD.BlackMarketUtility.PlayItemShopSelectSound( f7_arg0, f7_arg2 )
+		SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+		CoD.BlackMarketUtility.PlayItemShopSelectSound( element, controller )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	WeeklyItems:subscribeToGlobalModel( f1_arg1, "GlobalModel", "ItemshopRotation.cycled", function ( model )
@@ -103,7 +103,7 @@ CoD.ItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local WeeklyItemsLabel = LUI.UIText.new( 0.5, 0.5, -835, -595, 0.5, 0.5, -388, -370 )
 	WeeklyItemsLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	WeeklyItemsLabel:setText( LocalizeToUpperString( 0x5F57FAD08B3728F ) )
+	WeeklyItemsLabel:setText( LocalizeToUpperString( "menu/weekly_items" ) )
 	WeeklyItemsLabel:setTTF( "ttmussels_regular" )
 	WeeklyItemsLabel:setLetterSpacing( 4 )
 	WeeklyItemsLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -166,15 +166,15 @@ CoD.ItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f14_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ByweeklyFeatureItems, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		OpenOverlay( self, "ItemShopDetails", f15_arg2, {
-			_model = f15_arg0:getModel()
+	f1_arg0:AddButtonCallbackFunction( ByweeklyFeatureItems, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		OpenOverlay( self, "ItemShopDetails", controller, {
+			_model = element:getModel()
 		} )
-		SetControllerModelValue( f15_arg2, "LootStreamProgress.playAnimation", false )
-		CoD.BlackMarketUtility.PlayItemShopSelectSound( f15_arg0, f15_arg2 )
+		SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+		CoD.BlackMarketUtility.PlayItemShopSelectSound( element, controller )
 		return true
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	ByweeklyFeatureItems:subscribeToGlobalModel( f1_arg1, "GlobalModel", "ItemshopRotation.cycled", function ( model )
@@ -231,15 +231,15 @@ CoD.ItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f21_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ByweeklyItems, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
-		OpenOverlay( self, "ItemShopDetails", f22_arg2, {
-			_model = f22_arg0:getModel()
+	f1_arg0:AddButtonCallbackFunction( ByweeklyItems, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		OpenOverlay( self, "ItemShopDetails", controller, {
+			_model = element:getModel()
 		} )
-		SetControllerModelValue( f22_arg2, "LootStreamProgress.playAnimation", false )
-		CoD.BlackMarketUtility.PlayItemShopSelectSound( f22_arg0, f22_arg2 )
+		SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+		CoD.BlackMarketUtility.PlayItemShopSelectSound( element, controller )
 		return true
-	end, function ( f23_arg0, f23_arg1, f23_arg2 )
-		CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	ByweeklyItems:subscribeToGlobalModel( f1_arg1, "GlobalModel", "ItemshopRotation.cycled", function ( model )
@@ -326,15 +326,15 @@ CoD.ItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f29_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( DailyItems, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f30_arg0, f30_arg1, f30_arg2, f30_arg3 )
-		OpenOverlay( self, "ItemShopDetails", f30_arg2, {
-			_model = f30_arg0:getModel()
+	f1_arg0:AddButtonCallbackFunction( DailyItems, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		OpenOverlay( self, "ItemShopDetails", controller, {
+			_model = element:getModel()
 		} )
-		SetControllerModelValue( f30_arg2, "LootStreamProgress.playAnimation", false )
-		CoD.BlackMarketUtility.PlayItemShopSelectSound( f30_arg0, f30_arg2 )
+		SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+		CoD.BlackMarketUtility.PlayItemShopSelectSound( element, controller )
 		return true
-	end, function ( f31_arg0, f31_arg1, f31_arg2 )
-		CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	DailyItems:subscribeToGlobalModel( f1_arg1, "GlobalModel", "ItemshopRotation.cycled", function ( model )
@@ -358,7 +358,7 @@ CoD.ItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	
 	local DailyItemsLabel = LUI.UIText.new( 0.5, 0.5, 22, 262, 0.5, 0.5, -388, -370 )
 	DailyItemsLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	DailyItemsLabel:setText( LocalizeToUpperString( 0xDE9B59A6E570A4B ) )
+	DailyItemsLabel:setText( LocalizeToUpperString( "menu/daily_items" ) )
 	DailyItemsLabel:setTTF( "ttmussels_regular" )
 	DailyItemsLabel:setLetterSpacing( 4 )
 	DailyItemsLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -369,8 +369,8 @@ CoD.ItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	local TransactionDeepLinkButton = nil
 	
 	TransactionDeepLinkButton = CoD.DirectorPreGameButton.new( f1_arg0, f1_arg1, 0.5, 0.5, -835, -605, 0, 0, 921, 991 )
-	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( 0x4031C820A02E7BA ) )
-	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( 0x4031C820A02E7BA ) )
+	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( "menu/transaction_history" ) )
+	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( "menu/transaction_history" ) )
 	TransactionDeepLinkButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f33_local0 = nil
 		if element.gainFocus then
@@ -381,31 +381,31 @@ CoD.ItemShopFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f33_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f34_arg0, f34_arg1, f34_arg2, f34_arg3 )
+	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, model )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( f34_arg2 )
+			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( controller )
 			return true
 		else
 			
 		end
-	end, function ( f35_arg0, f35_arg1, f35_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f36_arg0, f36_arg1, f36_arg2, f36_arg3 )
+	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( f36_arg2 )
+			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( controller )
 			return true
 		else
 			
 		end
-	end, function ( f37_arg0, f37_arg1, f37_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.Menu.SetButtonLabel( f37_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
 		else
 			return false

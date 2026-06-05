@@ -9,7 +9,7 @@ CoD.WarzoneDeathCamLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local TextBG = LUI.UIImage.new( 0.5, 0.5, -108, 108, 0.5, 0.5, -36, 36 )
-	TextBG:setImage( RegisterImage( 0x22BBD8BC5961B70 ) )
+	TextBG:setImage( RegisterImage( "uie_ui_hud_wz_deathcam_text_bg_sm" ) )
 	TextBG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	TextBG:setShaderVector( 0, 0, 1, 0, 0 )
 	TextBG:setShaderVector( 1, 0, 0, 0, 0 )
@@ -20,21 +20,21 @@ CoD.WarzoneDeathCamLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.TextBG = TextBG
 	
 	local BarBtm = LUI.UIImage.new( 0.5, 0.5, -92, 92, 0.5, 0.5, 13, 25 )
-	BarBtm:setImage( RegisterImage( 0x616817B3A112EA6 ) )
+	BarBtm:setImage( RegisterImage( "uie_ui_hud_wz_deathcam_red_bar_sm" ) )
 	BarBtm:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	BarBtm:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BarBtm )
 	self.BarBtm = BarBtm
 	
 	local BarTop = LUI.UIImage.new( 0.5, 0.5, -92, 92, 0.5, 0.5, -25, -13 )
-	BarTop:setImage( RegisterImage( 0x616817B3A112EA6 ) )
+	BarTop:setImage( RegisterImage( "uie_ui_hud_wz_deathcam_red_bar_sm" ) )
 	BarTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	BarTop:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( BarTop )
 	self.BarTop = BarTop
 	
 	local RecordDot = LUI.UIImage.new( 0, 0, 0, 32, 0.5, 0.5, -16, 16 )
-	RecordDot:setImage( RegisterImage( 0x1C3F5F0EC58E75 ) )
+	RecordDot:setImage( RegisterImage( "uie_ui_hud_wz_deathcam_record_dot" ) )
 	RecordDot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	RecordDot:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( RecordDot )

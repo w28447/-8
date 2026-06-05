@@ -70,7 +70,7 @@ CoD.uplinkBallReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.uplinkReticle = uplinkReticle
 	
 	local Trow = LUI.UIText.new( 0, 0, 1107, 1212, 0, 0, 800, 830 )
-	Trow:setText( Engine[0xF9F1239CFD921FE]( 0xB416BCD1752EC4D ) )
+	Trow:setText( Engine[0xF9F1239CFD921FE]( "mp/hud_uplink_throw" ) )
 	Trow:setTTF( "default" )
 	Trow:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	Trow:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -78,7 +78,7 @@ CoD.uplinkBallReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.Trow = Trow
 	
 	local Pass = LUI.UIText.new( 0, 0, 711, 815, 0, 0, 799, 829 )
-	Pass:setText( Engine[0xF9F1239CFD921FE]( 0xE42DC5C81202D0E ) )
+	Pass:setText( Engine[0xF9F1239CFD921FE]( "mp/hud_uplink_pass" ) )
 	Pass:setTTF( "default" )
 	Pass:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Pass:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

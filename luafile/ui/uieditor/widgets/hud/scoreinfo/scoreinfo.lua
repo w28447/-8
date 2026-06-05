@@ -257,19 +257,19 @@ CoD.ScoreInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	local LED = LUI.UIImage.new( 0, 0, -5, 217, 0, 0, -45, 77 )
 	LED:setRGB( 0, 0, 0 )
 	LED:setAlpha( 0.2 )
-	LED:setImage( RegisterImage( 0x246EAAAA50A60D7 ) )
+	LED:setImage( RegisterImage( "uie_ui_hud_core_objective_widget_led_screen" ) )
 	self:addElement( LED )
 	self.LED = LED
 	
 	local LEDFull = LUI.UIImage.new( 0, 0, -5, 217, 0, 0, -45, 77 )
 	LEDFull:setRGB( 0, 0, 0 )
 	LEDFull:setAlpha( 0.2 )
-	LEDFull:setImage( RegisterImage( 0x322B09BC49B50F1 ) )
+	LEDFull:setImage( RegisterImage( "uie_ui_hud_core_objective_widget_led_screen_03" ) )
 	self:addElement( LEDFull )
 	self.LEDFull = LEDFull
 	
 	local Frame = LUI.UIImage.new( 0, 0, -5, 217, 0, 0, -45.5, 76.5 )
-	Frame:setImage( RegisterImage( 0x5410432CF8A125A ) )
+	Frame:setImage( RegisterImage( "uie_ui_hud_core_frame_objective_widget" ) )
 	self:addElement( Frame )
 	self.Frame = Frame
 	

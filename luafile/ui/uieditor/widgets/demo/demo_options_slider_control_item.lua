@@ -44,12 +44,12 @@ CoD.demo_options_slider_control_item.new = function ( f2_arg0, f2_arg1, f2_arg2,
 		CoD.Menu.UpdateButtonShownState( element, f2_arg0, f2_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f2_arg0:AddButtonCallbackFunction( left, f2_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		CallElementModel( self, self, f5_arg2, "prevAction" )
-		SendButtonPressToMenuEx( f5_arg1, f5_arg2, Enum.LUIButton[0x57783F8DA4AAEF] )
+	f2_arg0:AddButtonCallbackFunction( left, f2_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
+		CallElementModel( self, self, controller, "prevAction" )
+		SendButtonPressToMenuEx( menu, controller, Enum.LUIButton[0x57783F8DA4AAEF] )
 		return true
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "MOUSE1" )
 		return true
 	end, false )
 	self:addElement( left )
@@ -68,12 +68,12 @@ CoD.demo_options_slider_control_item.new = function ( f2_arg0, f2_arg1, f2_arg2,
 		CoD.Menu.UpdateButtonShownState( element, f2_arg0, f2_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f2_arg0:AddButtonCallbackFunction( right, f2_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		CallElementModel( self, self, f8_arg2, "nextAction" )
-		SendButtonPressToMenuEx( f8_arg1, f8_arg2, Enum.LUIButton[0x571F08AD84807E0] )
+	f2_arg0:AddButtonCallbackFunction( right, f2_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
+		CallElementModel( self, self, controller, "nextAction" )
+		SendButtonPressToMenuEx( menu, controller, Enum.LUIButton[0x571F08AD84807E0] )
 		return true
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "MOUSE1" )
 		return true
 	end, false )
 	self:addElement( right )

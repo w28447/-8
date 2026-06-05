@@ -31,7 +31,7 @@ CoD.StartMenuOptionsHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local UnderlineTexture = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -2, 0 )
 	UnderlineTexture:setRGB( 0.15, 0.15, 0.15 )
 	UnderlineTexture:setImage( RegisterImage( "uie_ui_menu_director_grain_bg01" ) )
-	UnderlineTexture:setMaterial( LUI.UIImage.GetCachedMaterial( 0x655565C7B387234 ) )
+	UnderlineTexture:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_multiply" ) )
 	self:addElement( UnderlineTexture )
 	self.UnderlineTexture = UnderlineTexture
 	
@@ -72,37 +72,37 @@ CoD.StartMenuOptionsHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local Image = LUI.UIImage.new( 0.5, 0.5, -958, -890, 0, 0, 29, 71 )
 	Image:setRGB( 0.63, 0.57, 0.2 )
 	Image:setAlpha( 0.6 )
-	Image:setImage( RegisterImage( 0xC2359ED7F4961BF ) )
+	Image:setImage( RegisterImage( "uie_ui_menu_director_top_left_dot_pattern" ) )
 	self:addElement( Image )
 	self.Image = Image
 	
-	self:registerEventHandler( "menu_loaded", function ( element, event )
+	self:registerEventHandler( "menu_loaded", function ( self, event )
 		local f2_local0 = nil
-		if element.menuLoaded then
-			f2_local0 = element:menuLoaded( event )
-		elseif element.super.menuLoaded then
-			f2_local0 = element.super:menuLoaded( event )
+		if self.menuLoaded then
+			f2_local0 = self:menuLoaded( event )
+		elseif self.super.menuLoaded then
+			f2_local0 = self.super:menuLoaded( event )
 		end
 		ShowHeaderIconOnly( f1_arg0 )
 		DataSourceHelperRecreate( f1_arg1, "ButtonLayoutLabels" )
 		if not f2_local0 then
-			f2_local0 = element:dispatchEventToChildren( event )
+			f2_local0 = self:dispatchEventToChildren( event )
 		end
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		GoBack( self, f3_arg2 )
-		UpdateGamerprofile( self, f3_arg0, f3_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
+		UpdateGamerprofile( self, element, controller )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		CoD.OptionsUtility.ResetPlayerSettingsGroupListToDefault( f5_arg2, self.OptionGroups )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		CoD.OptionsUtility.ResetPlayerSettingsGroupListToDefault( controller, self.OptionGroups )
 		return true
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x5D33EEAEB171341, Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 750 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/all_defaults", Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 750 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 		return true
 	end, false )
 	self:subscribeToGlobalModel( f1_arg1, "PerController", "PlayerSettingsUpdate", function ( model )

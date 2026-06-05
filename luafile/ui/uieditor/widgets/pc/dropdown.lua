@@ -41,16 +41,16 @@ CoD.Dropdown.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( emptyFocusable, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		if IsInDefaultState( f3_arg0 ) then
-			SetState( self, "InUse", f3_arg2 )
+	f1_arg0:AddButtonCallbackFunction( emptyFocusable, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if IsInDefaultState( element ) then
+			SetState( self, "InUse", controller )
 			return true
 		else
 			
 		end
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		if IsInDefaultState( f4_arg0 ) then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x179662091387B23, nil, nil )
+	end, function ( element, menu, controller )
+		if IsInDefaultState( element ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "key/mouse1", nil, nil )
 			return true
 		else
 			return false
@@ -71,17 +71,17 @@ CoD.Dropdown.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( CyclingListArrow, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if IsInDefaultState( f6_arg0 ) then
-			SetState( self, "DropSide", f6_arg2 )
-			PlayClip( self, "Active", f6_arg2 )
+	f1_arg0:AddButtonCallbackFunction( CyclingListArrow, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if IsInDefaultState( element ) then
+			SetState( self, "DropSide", controller )
+			PlayClip( self, "Active", controller )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		if IsInDefaultState( f7_arg0 ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x179662091387B23, nil, nil )
+	end, function ( element, menu, controller )
+		if IsInDefaultState( element ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "key/mouse1", nil, nil )
 			return true
 		else
 			return false

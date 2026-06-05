@@ -44,7 +44,7 @@ CoD.GameSettings_MatchSettingsInfo.new = function ( f2_arg0, f2_arg1, f2_arg2, f
 	self.soundSet = "default"
 	
 	local image = LUI.UIImage.new( 0, 0, 0, 115, 1, 1, -115, 0 )
-	image:setImage( RegisterImage( 0x9585F4D720CB266 ) )
+	image:setImage( RegisterImage( "playlist_war" ) )
 	self:addElement( image )
 	self.image = image
 	
@@ -61,7 +61,7 @@ CoD.GameSettings_MatchSettingsInfo.new = function ( f2_arg0, f2_arg1, f2_arg2, f
 	
 	local GameSettingstexbox = CoD.GameSettings_texbox.new( f2_arg0, f2_arg1, 1, 1, -549, 0, 0, 0, 42, 115 )
 	GameSettingstexbox.TextBox:setAlpha( 0.15 )
-	GameSettingstexbox.TextBox:setText( Engine[0xF9F1239CFD921FE]( 0x50499BB4CC7AF75 ) )
+	GameSettingstexbox.TextBox:setText( Engine[0xF9F1239CFD921FE]( "weapon/ar_standard_desc" ) )
 	self:addElement( GameSettingstexbox )
 	self.GameSettingstexbox = GameSettingstexbox
 	

@@ -10,7 +10,7 @@ CoD.MapVoteOfficial.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local Official = LUI.UIText.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Official:setRGB( 0.63, 0.62, 0.61 )
-	Official:setText( Engine[0xF9F1239CFD921FE]( 0x3428A4FD23FDA2A ) )
+	Official:setText( Engine[0xF9F1239CFD921FE]( "menu/official_caps" ) )
 	Official:setTTF( "ttmussels_regular" )
 	Official:setLetterSpacing( 4 )
 	Official:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -71,7 +71,7 @@ end
 CoD.MapVoteOfficial.__resetProperties = function ( f7_arg0 )
 	f7_arg0.Official:completeAnimation()
 	f7_arg0.Official:setAlpha( 1 )
-	f7_arg0.Official:setText( Engine[0xF9F1239CFD921FE]( 0x3428A4FD23FDA2A ) )
+	f7_arg0.Official:setText( Engine[0xF9F1239CFD921FE]( "menu/official_caps" ) )
 end
 
 CoD.MapVoteOfficial.__clipsPerState = {
@@ -95,7 +95,7 @@ CoD.MapVoteOfficial.__clipsPerState = {
 			f10_arg0:__resetProperties()
 			f10_arg0:setupElementClipCounter( 1 )
 			f10_arg0.Official:completeAnimation()
-			f10_arg0.Official:setText( Engine[0xF9F1239CFD921FE]( 0xDD2BE2574C9D2CC ) )
+			f10_arg0.Official:setText( Engine[0xF9F1239CFD921FE]( "menu/custom_caps" ) )
 			f10_arg0.clipFinished( f10_arg0.Official )
 		end
 	}

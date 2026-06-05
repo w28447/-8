@@ -1,23 +1,23 @@
 require( "ui/uieditor/widgets/callingcards/loot2/callingcards_loot2_warriorcreatures_character" )
 
-CoD[0x687E459DB800FBA] = InheritFrom( LUI.UIElement )
-CoD[0x687E459DB800FBA].__defaultWidth = 960
-CoD[0x687E459DB800FBA].__defaultHeight = 240
-CoD[0x687E459DB800FBA].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_loot2_warriorcreatures = InheritFrom( LUI.UIElement )
+CoD.callingcards_loot2_warriorcreatures.__defaultWidth = 960
+CoD.callingcards_loot2_warriorcreatures.__defaultHeight = 240
+CoD.callingcards_loot2_warriorcreatures.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x687E459DB800FBA] )
+	self:setClass( CoD.callingcards_loot2_warriorcreatures )
 	self.id = "callingcards_loot2_warriorcreatures"
 	self.soundSet = "none"
 	self.anyChildUsesUpdateState = true
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local bg = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	bg:setImage( RegisterImage( 0xC4D075BC9005424 ) )
+	bg:setImage( RegisterImage( "uie_ui_menu_callingcards_warriorcreatures_bg" ) )
 	self:addElement( bg )
 	self.bg = bg
 	
 	local character02 = LUI.UIImage.new( 0, 0, 93, 157, 0, 0, 20, 108 )
-	character02:setImage( RegisterImage( 0x88D1BA158B1EE3 ) )
+	character02:setImage( RegisterImage( "uie_ui_menu_callingcards_warriorcreatures_char2" ) )
 	self:addElement( character02 )
 	self.character02 = character02
 	
@@ -27,7 +27,7 @@ CoD[0x687E459DB800FBA].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.helmet = helmet
 	
 	local arrow = LUI.UIImage.new( 0, 0, 101, 397, 0, 0, -72, 120 )
-	arrow:setImage( RegisterImage( 0xC535D05825D980 ) )
+	arrow:setImage( RegisterImage( "uie_ui_menu_callingcards_warriorcreatures_arrow" ) )
 	self:addElement( arrow )
 	self.arrow = arrow
 	
@@ -37,25 +37,25 @@ CoD[0x687E459DB800FBA].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local arrow01 = LUI.UIImage.new( 0, 0, -55, 305, 0, 0, -144, -88 )
 	arrow01:setZRot( -38 )
-	arrow01:setImage( RegisterImage( 0xBBA3ED361770BC6 ) )
+	arrow01:setImage( RegisterImage( "uie_ui_menu_callingcards_warriorcreatures_arrow02" ) )
 	self:addElement( arrow01 )
 	self.arrow01 = arrow01
 	
 	local arrow02 = LUI.UIImage.new( 0, 0, -379, -19, 0, 0, -124, -68 )
 	arrow02:setZRot( -29 )
-	arrow02:setImage( RegisterImage( 0xBBA3ED361770BC6 ) )
+	arrow02:setImage( RegisterImage( "uie_ui_menu_callingcards_warriorcreatures_arrow02" ) )
 	self:addElement( arrow02 )
 	self.arrow02 = arrow02
 	
 	local arrow03 = LUI.UIImage.new( 0, 0, -55, 305, 0, 0, -144, -88 )
 	arrow03:setZRot( -38 )
-	arrow03:setImage( RegisterImage( 0xBBA3ED361770BC6 ) )
+	arrow03:setImage( RegisterImage( "uie_ui_menu_callingcards_warriorcreatures_arrow02" ) )
 	self:addElement( arrow03 )
 	self.arrow03 = arrow03
 	
 	local arrow04 = LUI.UIImage.new( 0, 0, -379, -19, 0, 0, -124, -68 )
 	arrow04:setZRot( -29 )
-	arrow04:setImage( RegisterImage( 0xBBA3ED361770BC6 ) )
+	arrow04:setImage( RegisterImage( "uie_ui_menu_callingcards_warriorcreatures_arrow02" ) )
 	self:addElement( arrow04 )
 	self.arrow04 = arrow04
 	
@@ -68,7 +68,7 @@ CoD[0x687E459DB800FBA].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x687E459DB800FBA].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_loot2_warriorcreatures.__resetProperties = function ( f2_arg0 )
 	f2_arg0.character01:completeAnimation()
 	f2_arg0.arrow01:completeAnimation()
 	f2_arg0.arrow02:completeAnimation()
@@ -85,7 +85,7 @@ CoD[0x687E459DB800FBA].__resetProperties = function ( f2_arg0 )
 	f2_arg0.arrow03:setTopBottom( 0, 0, -144, -88 )
 end
 
-CoD[0x687E459DB800FBA].__clipsPerState = {
+CoD.callingcards_loot2_warriorcreatures.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -162,7 +162,7 @@ CoD[0x687E459DB800FBA].__clipsPerState = {
 		end
 	}
 }
-CoD[0x687E459DB800FBA].__onClose = function ( f11_arg0 )
+CoD.callingcards_loot2_warriorcreatures.__onClose = function ( f11_arg0 )
 	f11_arg0.character01:close()
 end
 

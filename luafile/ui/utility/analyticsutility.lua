@@ -10,12 +10,12 @@ CoD.AnalyticsUtility.RecordPostMatchSurveyResult = function ( f1_arg0, f1_arg1 )
 	}
 	local f1_local1 = CoD.AnalyticsUtility.Surveys[f1_local0.surveyId]
 	Engine[0xDE279ECDDDD966]( f1_arg0, 0x70A892033B9AD63, {
-		[0xB62C62C9808EA37] = f1_local1.version,
-		[0x96C713F4CEEAE75] = Engine[0xF9F1239CFD921FE]( f1_local1.surveyID ),
-		[0xE528455BF88DC80] = f1_local1.order[1] .. f1_local1.order[2] .. f1_local1.order[3],
-		[0x63556805EE914FD] = f1_arg1,
-		[0x336E379BA146826] = Engine[0xD52E2360F482280](),
-		[0xAD6CA05018E4411] = CoD.AnalyticsUtility.IsQuitter( f1_arg0 )
+		version = f1_local1.version,
+		survey_id = Engine[0xF9F1239CFD921FE]( f1_local1.surveyID ),
+		survey_order = f1_local1.order[1] .. f1_local1.order[2] .. f1_local1.order[3],
+		answer_id = f1_arg1,
+		match_id = Engine[0xD52E2360F482280](),
+		quitter = CoD.AnalyticsUtility.IsQuitter( f1_arg0 )
 	} )
 end
 
@@ -40,7 +40,7 @@ CoD.AnalyticsUtility.Surveys = {}
 CoD.AnalyticsUtility.Surveys[1] = {
 	buttons = {
 		{
-			displayText = 0x663FC1AF7C5AECF,
+			displayText = "menu/skip_caps1",
 			actionGamepad = function ( f4_arg0, f4_arg1 )
 				CoD.AnalyticsUtility.PostMatchSurveyButtonAction( f4_arg0, nil, f4_arg1, CoD.AnalyticsUtility.SurveyResult.SkipRead )
 			end,
@@ -49,7 +49,7 @@ CoD.AnalyticsUtility.Surveys[1] = {
 			end
 		},
 		{
-			displayText = 0xCB464A614BAB582,
+			displayText = "menu/yes_caps",
 			actionGamepad = function ( f6_arg0, f6_arg1 )
 				CoD.AnalyticsUtility.PostMatchSurveyButtonAction( f6_arg0, nil, f6_arg1, CoD.AnalyticsUtility.SurveyResult.Yes )
 			end,
@@ -58,7 +58,7 @@ CoD.AnalyticsUtility.Surveys[1] = {
 			end
 		},
 		{
-			displayText = 0xC7595D6C67FD4C4,
+			displayText = "menu/no_caps",
 			actionGamepad = function ( f8_arg0, f8_arg1 )
 				CoD.AnalyticsUtility.PostMatchSurveyButtonAction( f8_arg0, nil, f8_arg1, CoD.AnalyticsUtility.SurveyResult.No )
 			end,
@@ -72,7 +72,7 @@ CoD.AnalyticsUtility.Surveys[1] = {
 		2,
 		3
 	} ),
-	surveyID = 0x606FA6854614C23,
+	surveyID = "menu/fun_survey",
 	version = 1
 }
 CoD.AnalyticsUtility.GoBack = function ()
@@ -85,8 +85,8 @@ end
 
 CoD.OverlayUtility.AddSystemOverlay( "PostMatchSurveyPC", {
 	menuName = "SystemOverlay_Compact",
-	title = 0x15012E369942EFD,
-	description = Engine[0xF9F1239CFD921FE]( 0x849E7D09B0F3898 ),
+	title = "menu/survey_1",
+	description = Engine[0xF9F1239CFD921FE]( "menu/survey_intro" ),
 	categoryType = CoD.OverlayUtility.OverlayTypes.Connection,
 	[CoD.OverlayUtility.GoBackPropertyName] = CoD.AnalyticsUtility.GoBack,
 	listDatasource = function ( f12_arg0 )
@@ -134,9 +134,9 @@ CoD.OverlayUtility.AddSystemOverlay( "PostMatchSurveyPC", {
 } )
 CoD.OverlayUtility.AddAutoDetectOverlay( "PostMatchSurvey", {
 	menuName = "SystemOverlay_Full",
-	title = 0x15012E369942EFD,
+	title = "menu/survey_1",
 	frameWidget = "CoD.systemOverlay_Compact_BasicFrame",
-	description = Engine[0xF9F1239CFD921FE]( 0x849E7D09B0F3898 ),
+	description = Engine[0xF9F1239CFD921FE]( "menu/survey_intro" ),
 	categoryType = CoD.OverlayUtility.OverlayTypes.Connection,
 	[CoD.OverlayUtility.GoBackPropertyName] = CoD.AnalyticsUtility.GoBack,
 	options = function ()
@@ -168,7 +168,7 @@ CoD.AnalyticsUtility.SurveyShouldShow = function ( f22_arg0, f22_arg1 )
 				return false, false
 			elseif f22_local1 == 0 then
 				if CoD.AnalyticsUtility.IsQuitter( f22_arg1 ) then
-					return (Dvar[0x583519CFDFE4574]:get() or 0) >= math.random(), false
+					return (Dvar.survey_chance:get() or 0) >= math.random(), false
 				else
 					return false, true
 				end
@@ -182,7 +182,7 @@ CoD.AnalyticsUtility.SurveyShouldShow = function ( f22_arg0, f22_arg1 )
 end
 
 CoD.AnalyticsUtility.IsQuitter = function ( f23_arg0 )
-	if Engine.CurrentSessionMode() == Enum.eModes[0x83EBA96F36BC4E5] then
+	if Engine.CurrentSessionMode() == Enum.eModes.mode_multiplayer then
 		local f23_local0 = Engine.GetModel( Engine.GetGlobalModel(), "lobbyRoot.quitGameFlag" )
 		return f23_local0 and f23_local0:get() ~= LuaEnum.QUIT_FLAG.HAS_NOT_QUIT
 	else

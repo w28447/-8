@@ -16,7 +16,7 @@ CoD.WZWeaponPickupHoldButtonIcons.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	WeaponPickupWarzoneSquareActionPC = LUI.UIText.new( 0, 0, 45, 122, 0.5, 0.5, 36, 56 )
 	WeaponPickupWarzoneSquareActionPC:setRGB( 0.79, 0.76, 0.58 )
 	WeaponPickupWarzoneSquareActionPC:setAlpha( 0 )
-	WeaponPickupWarzoneSquareActionPC:setText( Engine[0xF9F1239CFD921FE]( 0x38B775D97E72F0C ) )
+	WeaponPickupWarzoneSquareActionPC:setText( Engine[0xF9F1239CFD921FE]( "warzone/equip" ) )
 	WeaponPickupWarzoneSquareActionPC:setTTF( "dinnext_regular" )
 	WeaponPickupWarzoneSquareActionPC:setLetterSpacing( 0.5 )
 	WeaponPickupWarzoneSquareActionPC:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

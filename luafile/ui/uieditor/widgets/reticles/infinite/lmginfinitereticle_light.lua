@@ -9,7 +9,7 @@ CoD.lmgInfiniteReticle_light.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local lights100 = LUI.UIImage.new( 0, 0, 0, 94, 0, 0, 0, 129 )
-	lights100:setImage( RegisterImage( 0x7A9673BAD84CFAF ) )
+	lights100:setImage( RegisterImage( "uie_t7_weapon_lmg_lights_02" ) )
 	lights100:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	lights100:setShaderVector( 0, 0.85, 1, 0, 0 )
 	lights100:setShaderVector( 1, 0.13, 0.05, 0, 0 )

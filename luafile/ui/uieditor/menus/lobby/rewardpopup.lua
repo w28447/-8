@@ -61,7 +61,7 @@ LUI.createMenu.RewardPopup = function ( f1_arg0, f1_arg1 )
 	self.RewardDotTiledBacking2 = RewardDotTiledBacking2
 	
 	local RewardImage = LUI.UIImage.new( 0.5, 0.5, -578, 578, 0.5, 0.5, -140.5, 195.5 )
-	RewardImage:setImage( RegisterImage( 0xD9F3B069441FE5 ) )
+	RewardImage:setImage( RegisterImage( "uie_ui_icon_blackmarket_promos_blackopspass_reward" ) )
 	self:addElement( RewardImage )
 	self.RewardImage = RewardImage
 	
@@ -87,11 +87,11 @@ LUI.createMenu.RewardPopup = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		CoD.EntitlementUtility.CloseRewardPopup( f4_arg1, f4_arg2 )
+	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.EntitlementUtility.CloseRewardPopup( menu, controller )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( featureOverlayButtonMouseOnly )
@@ -160,16 +160,16 @@ LUI.createMenu.RewardPopup = function ( f1_arg0, f1_arg1 )
 	self:addElement( FrontendFocusPip )
 	self.FrontendFocusPip = FrontendFocusPip
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		if not IsPC() then
-			CoD.EntitlementUtility.CloseRewardPopup( f7_arg1, f7_arg2 )
+			CoD.EntitlementUtility.CloseRewardPopup( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
+	end, function ( element, menu, controller )
 		if not IsPC() then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x5BE4A02B20F31F1, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/ok", nil, nil )
 			return true
 		else
 			return false

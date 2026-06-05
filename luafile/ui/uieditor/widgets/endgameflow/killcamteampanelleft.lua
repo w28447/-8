@@ -20,7 +20,7 @@ CoD.KIllcamTeamPanelLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	CallingCardHighlightLeft1:setRGB( ColorSet.EnemyScorestreakTarget.r, ColorSet.EnemyScorestreakTarget.g, ColorSet.EnemyScorestreakTarget.b )
 	CallingCardHighlightLeft1:setAlpha( 0.5 )
 	CallingCardHighlightLeft1:setZRot( 180 )
-	CallingCardHighlightLeft1:setImage( RegisterImage( 0x277059AB3BFAEFA ) )
+	CallingCardHighlightLeft1:setImage( RegisterImage( "uie_ui_hud_highlight2" ) )
 	CallingCardHighlightLeft1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CallingCardHighlightLeft1 )
 	self.CallingCardHighlightLeft1 = CallingCardHighlightLeft1
@@ -38,7 +38,7 @@ CoD.KIllcamTeamPanelLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	CallingCardHighlightLeft2:setRGB( 0.74, 0.02, 0.02 )
 	CallingCardHighlightLeft2:setAlpha( 0.8 )
 	CallingCardHighlightLeft2:setZRot( 180 )
-	CallingCardHighlightLeft2:setImage( RegisterImage( 0x84A15B7F82C942C ) )
+	CallingCardHighlightLeft2:setImage( RegisterImage( "uie_ui_hud_highlight" ) )
 	self:addElement( CallingCardHighlightLeft2 )
 	self.CallingCardHighlightLeft2 = CallingCardHighlightLeft2
 	

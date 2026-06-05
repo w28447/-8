@@ -90,7 +90,7 @@ CoD.ContractSupplyChainDetails_InfoPanel.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local ButtonTopLine9Slice = LUI.UIImage.new( 0, 0, 0, 558, 0, 0, 0, 20 )
 	ButtonTopLine9Slice:setAlpha( 0.25 )
-	ButtonTopLine9Slice:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
+	ButtonTopLine9Slice:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_line" ) )
 	ButtonTopLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonTopLine9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonTopLine9Slice:setupNineSliceShader( 120, 10 )
@@ -99,7 +99,7 @@ CoD.ContractSupplyChainDetails_InfoPanel.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local ButtonBottomLine9Slice = LUI.UIImage.new( 0, 0, 0, 558, 0, 0, 223, 243 )
 	ButtonBottomLine9Slice:setAlpha( 0.25 )
-	ButtonBottomLine9Slice:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
+	ButtonBottomLine9Slice:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_line" ) )
 	ButtonBottomLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonBottomLine9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonBottomLine9Slice:setupNineSliceShader( 120, 10 )
@@ -108,7 +108,7 @@ CoD.ContractSupplyChainDetails_InfoPanel.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local HeaderGlow = LUI.UIImage.new( 0, 0, 2, 556, 0, 0, 12, 44 )
 	HeaderGlow:setAlpha( 0.1 )
-	HeaderGlow:setImage( RegisterImage( 0xFAA6C81834660D3 ) )
+	HeaderGlow:setImage( RegisterImage( "uie_ui_menu_common_box_glow" ) )
 	HeaderGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	HeaderGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	HeaderGlow:setupNineSliceShader( 12, 12 )
@@ -133,7 +133,7 @@ CoD.ContractSupplyChainDetails_InfoPanel.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0, 0, 5.5, 551.5, 0, 0, 16, 40 )
 	PixelGridTiledBacking:setAlpha( 0.05 )
-	PixelGridTiledBacking:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
@@ -161,7 +161,7 @@ CoD.ContractSupplyChainDetails_InfoPanel.new = function ( f1_arg0, f1_arg1, f1_a
 	local togglePreviewLabel = LUI.UIText.new( 0, 0, 69, 117, 0.5, 0.5, -149.5, -131.5 )
 	togglePreviewLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	togglePreviewLabel:setAlpha( 0 )
-	togglePreviewLabel:setText( Engine[0xF9F1239CFD921FE]( 0x32E3CA70AD7D0D0 ) )
+	togglePreviewLabel:setText( Engine[0xF9F1239CFD921FE]( "menu/toggle_preview" ) )
 	togglePreviewLabel:setTTF( "dinnext_regular" )
 	togglePreviewLabel:setLetterSpacing( 2 )
 	togglePreviewLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -202,13 +202,13 @@ CoD.ContractSupplyChainDetails_InfoPanel.new = function ( f1_arg0, f1_arg1, f1_a
 		{
 			stateName = "Weapon",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xCC13B0F8EEFF726 ) and not IsMouseOrKeyboard( f1_arg1 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "signature_weapon" ) and not IsMouseOrKeyboard( f1_arg1 )
 			end
 		},
 		{
 			stateName = "WeaponKBM",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", 0xCC13B0F8EEFF726 ) and IsMouseOrKeyboard( f1_arg1 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "itemCategory", "signature_weapon" ) and IsMouseOrKeyboard( f1_arg1 )
 			end
 		}
 	} )

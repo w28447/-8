@@ -26,20 +26,20 @@ CoD.ZMLaboratoryUtility.RarityStrings = {
 CoD.ZMLaboratoryUtility.MaxSpecialOffers = 3
 CoD.ZMLaboratoryUtility.DefaultConcoctions = {
 	{
-		assetName = 0x79BC77A16DA8FC1
+		assetName = "zm_lab_carbon_combo"
 	},
 	{
-		assetName = 0x2EDCDA659369510
+		assetName = "zm_lab_argon_array"
 	},
 	{
-		assetName = 0x2014B7851942E17
+		assetName = "zm_lab_palladium_package"
 	}
 }
 CoD.ZMLaboratoryUtility.MaxResults = 4
 CoD.ZMLaboratoryUtility.ResultModels = {
 	{
 		modelName = "result",
-		default = 0x0
+		default = ""
 	},
 	{
 		modelName = "quantity",
@@ -116,7 +116,7 @@ CoD.ZMLaboratoryUtility.GetLaboratorySpecialOffer = function ( f8_arg0 )
 end
 
 CoD.ZMLaboratoryUtility.IsOfferAvailable = function ( f9_arg0 )
-	if not f9_arg0 or f9_arg0 == "" or f9_arg0 == 0x0 then
+	if not f9_arg0 or f9_arg0 == "" or f9_arg0 == "" then
 		return false
 	end
 	for f9_local0 = 1, CoD.ZMLaboratoryUtility.MaxSpecialOffers, 1 do
@@ -278,14 +278,14 @@ CoD.ZMLaboratoryUtility.AddExperimentalConcoctions = function ( f22_arg0 )
 		"conc3"
 	}
 	local f22_local2 = {
-		[0x79BC77A16DA8FC1] = true,
-		[0x2EDCDA659369510] = true,
-		[0x2014B7851942E17] = true,
-		[0xFE8FB3F9FAECDCB] = true,
-		[0x43897ED56A7FA90] = true,
-		[0xC397582F494CF23] = true,
-		[0xBAD77EDD75C1AB5] = true,
-		[0xC13641FD37219DC] = true
+		zm_lab_carbon_combo = true,
+		zm_lab_argon_array = true,
+		zm_lab_palladium_package = true,
+		zm_lab_beryllium_bundle = true,
+		zm_lab_selenium_selection = true,
+		zm_lab_rhodium_roundup = true,
+		zm_lab_titanium_treble = true,
+		zm_lab_tungsten_tripler = true
 	}
 	for f22_local7, f22_local8 in ipairs( f22_local1 ) do
 		local f22_local6 = CoD.StoreUtility.GetExperimentModifier( f22_arg0, f22_local8 )
@@ -458,7 +458,7 @@ CoD.ZMLaboratoryUtility.GetLaboratoryBannerImage = function ( f38_arg0 )
 			return f38_local2
 		end
 	end
-	f38_local2 = 0x0
+	f38_local2 = ""
 end
 
 CoD.ZMLaboratoryUtility.GetLaboratoryBannerTitle = function ( f39_arg0 )
@@ -473,7 +473,7 @@ CoD.ZMLaboratoryUtility.GetLaboratoryBannerTitle = function ( f39_arg0 )
 			return f39_local2
 		end
 	end
-	f39_local2 = 0x0
+	f39_local2 = ""
 end
 
 DataSources.ZMLaboratoryResultsItemList = ListHelper_SetupDataSource( "Laboratory.bottles", function ( f40_arg0, f40_arg1 )
@@ -485,49 +485,49 @@ DataSources.ZMLaboratoryResultsItemList = ListHelper_SetupDataSource( "Laborator
 	if Dvar[0x659A867DE4952AA]:exists() and tonumber( Dvar[0x659A867DE4952AA]:get() ) > 0 then
 		local f40_local2 = {
 			"zm_bgb_cache_back",
-			0x953696819BF1875,
-			0x458181EB9DBDE8B,
+			"zm_bgb_ctrl_z",
+			"zm_bgb_extra_credit",
 			"zm_bgb_free_fire",
-			0xD4A36921F5E48F0,
+			"zm_bgb_immolation_liquidation",
 			"zm_bgb_kill_joy",
-			0x5A9D6022E571C6,
-			0x6D3DF5058C56523,
-			0xBBB25554D3F7F6B,
-			0x3884A663FDDDBE3,
-			0x9627DB608C66755
+			"zm_bgb_licensed_contractor",
+			"zm_bgb_shields_up",
+			"zm_bgb_undead_man_walking",
+			"zm_bgb_wall_power",
+			"zm_bgb_whos_keeping_score"
 		}
 		local f40_local3 = {
-			0x96A42B9715FCF4E,
+			"talisman_box_guarantee_box_only",
 			"talisman_box_guarantee_lmg",
-			0xECEF105EDFCE221,
-			0xA2042B3984A50AC,
-			0xC39AFAA7B8D508C,
-			0xBD593B03DBE4709,
-			0x16F409871DE1C2A,
-			0x33AD55AC2B835D0,
-			0xE64B28EDF21732A,
-			0x567F18899A438F1,
-			0x7AFAE5369A40BC2,
-			0x7AFAD5369A40A0F,
-			0x7AFAC5369A4085C,
-			0x7AFAB5369A406A9,
-			0x89C4CE1578064B7,
-			0x89C4DE15780666A,
-			0x89C4EE15780681D,
-			0x89C47E157805C38,
-			0xBA5A74038BFFAB4,
-			0xBA5AA4038BFFFCD,
-			0xBA5A94038BFFE1A,
-			0xBA5A44038BFF59B,
-			0x4709F2CDFEC5C52,
-			0xDA3AF324B74C125,
-			0xC519F7F8371ECF8,
-			0x50670241DFB72AF,
-			0x5066F241DFB70FC,
-			0xEEBDA916971B02,
+			"talisman_coagulant",
+			"talisman_extra_claymore",
+			"talisman_extra_frag",
+			"talisman_extra_miniturret",
+			"talisman_extra_molotov",
+			"talisman_extra_semtex",
+			"talisman_impatient",
+			"talisman_perk_mod_single",
+			"talisman_perk_permanent_1",
+			"talisman_perk_permanent_2",
+			"talisman_perk_permanent_3",
+			"talisman_perk_permanent_4",
+			"talisman_perk_reducecost_1",
+			"talisman_perk_reducecost_2",
+			"talisman_perk_reducecost_3",
+			"talisman_perk_reducecost_4",
+			"talisman_perk_start_1",
+			"talisman_perk_start_2",
+			"talisman_perk_start_3",
+			"talisman_perk_start_4",
+			"talisman_shield_durability_legendary",
+			"talisman_shield_durability_rare",
+			"talisman_shield_price",
+			"talisman_special_startlv2",
+			"talisman_special_startlv3",
+			"talisman_special_xp_rate",
 			"talisman_start_weapon_ar",
-			0x76221EC95A6B4D1,
-			0xA0802EC72B26A24,
+			"talisman_start_weapon_lmg",
+			"talisman_start_weapon_smg",
 			"talisman_weapon_reducepapcost"
 		}
 		f40_local1 = {
@@ -559,7 +559,7 @@ DataSources.ZMLaboratoryResultsItemList = ListHelper_SetupDataSource( "Laborator
 			models = {
 				indexModel = 0,
 				id = "",
-				modelRef = 0x0,
+				modelRef = "",
 				rarity = -1,
 				visible = 0,
 				quantity = 0
@@ -572,11 +572,11 @@ DataSources.ZMLaboratoryResultsItemList = ListHelper_SetupDataSource( "Laborator
 		table.insert( f40_local0, f40_local2( f40_local3 ) )
 	end
 	for f40_local3 = 1, #f40_local1, 1 do
-		if f40_local1[f40_local3].result ~= 0x0 then
-			local f40_local6 = Engine[0x8FF94BB44442412]( f40_local1[f40_local3].result, Enum.eModes[0x3723205FAE52C4A] )
+		if f40_local1[f40_local3].result ~= "" then
+			local f40_local6 = Engine[0x8FF94BB44442412]( f40_local1[f40_local3].result, Enum.eModes.mode_zombies )
 			if f40_local6 ~= CoD.CACUtility.EmptyItemIndex then
-				local f40_local7 = CoD.CACUtility.GetUnlockableItemInfo( f40_local6, Enum.eModes[0x3723205FAE52C4A] )
-				local f40_local8 = 0x0
+				local f40_local7 = CoD.CACUtility.GetUnlockableItemInfo( f40_local6, Enum.eModes.mode_zombies )
+				local f40_local8 = ""
 				if f40_local7.itemGroup == "bubblegum_consumable" or f40_local7.itemGroup == "talisman" then
 					f40_local8 = f40_local7[0xB6404450C6BAEEF]
 				end
@@ -593,21 +593,21 @@ end, true )
 DataSources.ZMLaboratoryNPItemList = {
 	prepare = function ( f42_arg0, f42_arg1, f42_arg2 )
 		local f42_local0 = function ( f43_arg0, f43_arg1, f43_arg2, f43_arg3, f43_arg4, f43_arg5, f43_arg6, f43_arg7, f43_arg8, f43_arg9 )
-			local f43_local0 = f43_arg1[0xE2FEB7B0CEB9D9E] or 0x0
-			if f43_arg1[0x2E0C54A32852FA5] and f43_arg1[0x2E0C54A32852FA5] == 1 and f43_local0 ~= 0x0 then
+			local f43_local0 = f43_arg1[0xE2FEB7B0CEB9D9E] or ""
+			if f43_arg1[0x2E0C54A32852FA5] and f43_arg1[0x2E0C54A32852FA5] == 1 and f43_local0 ~= "" then
 				f43_local0 = Engine[0xF9F1239CFD921FE]( f43_local0, f43_arg1[0x4C3F8DE7B651E1E] or 0 )
 			end
 			local f43_local1 = {}
 			local f43_local2 = {
 				skuID = f43_arg1[0x6B65B4278C6C417] or 0,
 				dropType = f43_arg1[0xEDB75385C6DDD64] or 0,
-				icon = f43_arg1[0xE4B82BD24F5B464] or "blacktransparent",
+				icon = f43_arg1.tileicon or "blacktransparent",
 				name = f43_local0,
 				labelName = f43_arg1[0x55AD41F50CB5DE5] or "null/empty",
 				displayName = f43_arg1[0x291A06FDF27E479] or 0,
 				description = f43_arg1[0x5B85280BBC19A6A] or "null/empty",
 				plasmaPrice = f43_arg1[0xF7B25E757280D58] or 0,
-				price = f43_arg1[0x4A555CF71B7907A] or 0
+				price = f43_arg1.codpointprice or 0
 			}
 			local f43_local3
 			if f43_arg3 ~= nil then
@@ -637,10 +637,10 @@ DataSources.ZMLaboratoryNPItemList = {
 			if not f43_local1.properties.actionParam.price then
 				f43_local1.properties.actionParam.price = f43_local1.models.price
 			end
-			if f43_arg1[0x9D73ABDD04877EA] and f43_arg1["globstate"] then
+			if f43_arg1.centrifugecolor and f43_arg1.globstate then
 				f43_local1.properties.focusChangedNotifyParams = {
-					centrifuge_color = f43_arg1[0x9D73ABDD04877EA],
-					glob_state = f43_arg1["globstate"]
+					centrifuge_color = f43_arg1.centrifugecolor,
+					glob_state = f43_arg1.globstate
 				}
 			end
 			table.insert( f43_arg0, f43_local1 )
@@ -669,7 +669,7 @@ DataSources.ZMLaboratoryNPItemList = {
 						f42_local0( f42_local2, f42_local8, f42_local7, true, CoD.ZMLaboratoryUtility.PurchasePlasmaOrCoDPoints, {
 							openedDirectly = true,
 							amount = f42_local8[0x291A06FDF27E479] or 0,
-							image = f42_local8[0xE4B82BD24F5B464] or "blacktransparent"
+							image = f42_local8.tileicon or "blacktransparent"
 						}, CoD.LaboratoryListItemNebuliumPlasmaDiscount, 1, 3, "AutoEvents.autoevent_laboratory_special_offer_" .. f42_local4 .. "_timer" )
 					end
 				end
@@ -762,7 +762,7 @@ CoD.ZMLaboratoryUtility.OpenCoDPointsPopoutConfirmation = function ( f52_arg0, f
 				f52_arg4 = GoBack( f52_local0, f52_arg2 )
 				if not f52_arg3.openedDirectly then
 					OpenPopup( f52_arg4, "PurchasePlasma", f52_arg2, f53_local2 )
-				elseif not f53_local3 or f53_local3 == "" or f53_local3 == 0x0 or CoD.ZMLaboratoryUtility.IsOfferAvailable( f53_local3 ) then
+				elseif not f53_local3 or f53_local3 == "" or f53_local3 == "" or CoD.ZMLaboratoryUtility.IsOfferAvailable( f53_local3 ) then
 					OpenPopup( f52_arg4, "LaboratoryPlasmaConfirmation", f52_arg2, {
 						_model = f52_arg3.model,
 						_properties = f52_arg3
@@ -827,9 +827,9 @@ DataSources.ZMLaboratoryPlasmaItemList = ListHelper_SetupDataSource( "ZMLaborato
 	end
 	
 	local f56_local1 = {}
-	f56_local0( f56_local1, 500052, 0x8EB5BCEA98B4CF2, "ui_icon_laboratory_nebulium_offer_large", 300, 2000, true, CoD.ZMLaboratoryUtility.PurchasePlasmaOrCoDPoints )
-	f56_local0( f56_local1, 500051, 0xFF5560BC462E0F0, 0x4873AB8342CF356, 75, 500, false, CoD.ZMLaboratoryUtility.PurchasePlasmaOrCoDPoints )
-	f56_local0( f56_local1, 500050, 0x8EB5BCEA98B4CF2, 0x4C2114E022FF6AC, 30, 200, false, CoD.ZMLaboratoryUtility.PurchasePlasmaOrCoDPoints )
+	f56_local0( f56_local1, 500052, "zmui/bgb_aftertaste", "ui_icon_laboratory_nebulium_offer_large", 300, 2000, true, CoD.ZMLaboratoryUtility.PurchasePlasmaOrCoDPoints )
+	f56_local0( f56_local1, 500051, "zmui/bgb_always_done_swiftly", "ui_icon_laboratory_nebulium_offer_medium", 75, 500, false, CoD.ZMLaboratoryUtility.PurchasePlasmaOrCoDPoints )
+	f56_local0( f56_local1, 500050, "zmui/bgb_aftertaste", "ui_icon_laboratory_nebulium_offer_small", 30, 200, false, CoD.ZMLaboratoryUtility.PurchasePlasmaOrCoDPoints )
 	return f56_local1
 end )
 DataSources.PlasmaConfirmationButtonList = ListHelper_SetupDataSource( "PlasmaConfirmationButtonList", function ( f58_arg0, f58_arg1 )

@@ -178,7 +178,7 @@ CoD.Social_MissingDLCNotification_Internal.__clipsPerState = {
 			f14_arg0.notificationIcon:completeAnimation()
 			f14_arg0.notificationIcon:setRGB( 1, 0.92, 0 )
 			f14_arg0.notificationIcon:setAlpha( 1 )
-			f14_arg0.notificationIcon:setImage( RegisterImage( 0x6115AC21B22303A ) )
+			f14_arg0.notificationIcon:setImage( RegisterImage( "uie_warning_triangle" ) )
 			f14_arg0.clipFinished( f14_arg0.notificationIcon )
 		end
 	},
@@ -189,7 +189,7 @@ CoD.Social_MissingDLCNotification_Internal.__clipsPerState = {
 			f15_arg0.notificationIcon:completeAnimation()
 			f15_arg0.notificationIcon:setRGB( 1, 0, 0 )
 			f15_arg0.notificationIcon:setAlpha( 1 )
-			f15_arg0.notificationIcon:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
+			f15_arg0.notificationIcon:setImage( RegisterImage( "warning_triangle" ) )
 			f15_arg0.clipFinished( f15_arg0.notificationIcon )
 		end
 	},
@@ -200,7 +200,7 @@ CoD.Social_MissingDLCNotification_Internal.__clipsPerState = {
 			f16_arg0.notificationIcon:completeAnimation()
 			f16_arg0.notificationIcon:setRGB( 1, 0.92, 0 )
 			f16_arg0.notificationIcon:setAlpha( 1 )
-			f16_arg0.notificationIcon:setImage( RegisterImage( 0x6115AC21B22303A ) )
+			f16_arg0.notificationIcon:setImage( RegisterImage( "uie_warning_triangle" ) )
 			f16_arg0.clipFinished( f16_arg0.notificationIcon )
 		end
 	},
@@ -211,7 +211,7 @@ CoD.Social_MissingDLCNotification_Internal.__clipsPerState = {
 			f17_arg0.notificationIcon:completeAnimation()
 			f17_arg0.notificationIcon:setRGB( 1, 0, 0 )
 			f17_arg0.notificationIcon:setAlpha( 1 )
-			f17_arg0.notificationIcon:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
+			f17_arg0.notificationIcon:setImage( RegisterImage( "warning_triangle" ) )
 			f17_arg0.clipFinished( f17_arg0.notificationIcon )
 		end
 	}

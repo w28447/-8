@@ -10,7 +10,7 @@ CoD.AtviCopy.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_ar
 	local ActivisionIncDurango = LUI.UIImage.new( 1, 1, -291, -15, 0, 0, 45, 87 )
 	ActivisionIncDurango:setRGB( 0.31, 0.34, 0.37 )
 	ActivisionIncDurango:setAlpha( 0.9 )
-	ActivisionIncDurango:setImage( RegisterImage( 0xF52811A5826066C ) )
+	ActivisionIncDurango:setImage( RegisterImage( "uie_ui_menu_start_copyright" ) )
 	self:addElement( ActivisionIncDurango )
 	self.ActivisionIncDurango = ActivisionIncDurango
 	

@@ -25,7 +25,7 @@ CoD.LeaguePlay_AAR_PointPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	DailyBonusArrow:setAlpha( 0.1 )
 	DailyBonusArrow:setZRot( 90 )
 	DailyBonusArrow:setScale( 2, 2 )
-	DailyBonusArrow:setImage( RegisterImage( 0x1226A0CC6137EEE ) )
+	DailyBonusArrow:setImage( RegisterImage( "uie_ui_hud_common_triangle" ) )
 	self:addElement( DailyBonusArrow )
 	self.DailyBonusArrow = DailyBonusArrow
 	
@@ -45,7 +45,7 @@ CoD.LeaguePlay_AAR_PointPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local TiledShaderImage = LUI.UIImage.new( 0, 1, 0, 0, 0.02, 1, 0, 0 )
 	TiledShaderImage:setRGB( 0.92, 0.92, 0.92 )
 	TiledShaderImage:setAlpha( 0.02 )
-	TiledShaderImage:setImage( RegisterImage( 0x2F926473EDCBFCA ) )
+	TiledShaderImage:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_grid" ) )
 	TiledShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage:setupNineSliceShader( 33, 33 )
@@ -63,7 +63,7 @@ CoD.LeaguePlay_AAR_PointPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local PerformBracketBlur = LUI.UIImage.new( 0, 1, -3.5, 4.5, 1, 1, -14, 6 )
 	PerformBracketBlur:setAlpha( 0.3 )
-	PerformBracketBlur:setImage( RegisterImage( 0xD4F19B775CF07F8 ) )
+	PerformBracketBlur:setImage( RegisterImage( "uie_ui_menu_aar_perform_botline_blur" ) )
 	PerformBracketBlur:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	PerformBracketBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	PerformBracketBlur:setupNineSliceShader( 174, 10 )
@@ -154,7 +154,7 @@ CoD.LeaguePlay_AAR_PointPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		{
 			stateName = "Defeated",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f1_arg1, "AARSummaryStats", "lastMatchOutcome", 0xE4BEDAD712621BA )
+				return CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f1_arg1, "AARSummaryStats", "lastMatchOutcome", "loss" )
 			end
 		}
 	} )
@@ -198,7 +198,7 @@ CoD.LeaguePlay_AAR_PointPanel.__resetProperties = function ( f11_arg0 )
 	f11_arg0.MatchAndBonusPoints:setAlpha( 1 )
 	f11_arg0.MatchAndBonusPoints.Flare:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	f11_arg0.MatchAndBonusPoints.PlusMinus:setRGB( 1, 1, 1 )
-	f11_arg0.MatchAndBonusPoints.PlusMinus:setText( Engine[0xF9F1239CFD921FE]( 0x79FAB66208B3145 ) )
+	f11_arg0.MatchAndBonusPoints.PlusMinus:setText( Engine[0xF9F1239CFD921FE]( "mp/plus" ) )
 	f11_arg0.MatchAndBonusPoints.PointsTxt:setText( Engine[0xF9F1239CFD921FE]( 0x436CFB031FD2F44 ) )
 	f11_arg0.MatchAndBonusPoints.Points:setRGB( 1, 1, 1 )
 	f11_arg0.MatchAndBonusPoints.PointsAdd:setRGB( 1, 1, 1 )
@@ -410,7 +410,7 @@ CoD.LeaguePlay_AAR_PointPanel.__clipsPerState = {
 			f27_arg0.MatchAndBonusPoints:setAlpha( 0 )
 			f27_arg0.MatchAndBonusPoints.Flare:setRGB( ColorSet.ResistanceLow.r, ColorSet.ResistanceLow.g, ColorSet.ResistanceLow.b )
 			f27_arg0.MatchAndBonusPoints.PlusMinus:setRGB( 0.55, 0, 0 )
-			f27_arg0.MatchAndBonusPoints.PlusMinus:setText( Engine[0xF9F1239CFD921FE]( 0xCAB09ED3602B2FF ) )
+			f27_arg0.MatchAndBonusPoints.PlusMinus:setText( Engine[0xF9F1239CFD921FE]( "mp/minus" ) )
 			f27_arg0.MatchAndBonusPoints.PointsTxt:setText( Engine[0xF9F1239CFD921FE]( 0xE875FF3C976BA98 ) )
 			f27_arg0.MatchAndBonusPoints.Points:setRGB( 0.55, 0, 0 )
 			f27_arg0.MatchAndBonusPoints.PointsAdd:setRGB( 0.55, 0, 0 )

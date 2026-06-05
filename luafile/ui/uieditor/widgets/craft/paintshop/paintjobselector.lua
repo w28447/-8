@@ -69,44 +69,44 @@ CoD.PaintjobSelector.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x22361E23588705A] )
 		return f8_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( paintjobsList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		if not CraftItemIsReadOnly( f9_arg0, f9_arg2 ) then
-			OpenPaintjobEditor( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
+	f1_arg0:AddButtonCallbackFunction( paintjobsList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not CraftItemIsReadOnly( element, controller ) then
+			OpenPaintjobEditor( element, menu, controller, model )
 			PlaySoundAlias( "uin_menu_action" )
 			return true
-		elseif CraftItemIsReadOnly( f9_arg0, f9_arg2 ) then
-			CoD.FileshareUtility.ShowSimpleToast( f9_arg2, CoD.FileshareUtility.ToastTypes.READONLY )
+		elseif CraftItemIsReadOnly( element, controller ) then
+			CoD.FileshareUtility.ShowSimpleToast( controller, CoD.FileshareUtility.ToastTypes.READONLY )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		if not CraftItemIsReadOnly( f10_arg0, f10_arg2 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not CraftItemIsReadOnly( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif CraftItemIsReadOnly( f10_arg0, f10_arg2 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif CraftItemIsReadOnly( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( paintjobsList, f1_arg1, Enum.LUIButton[0x22361E23588705A], "ui_contextual_2", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		if Paintjobs_IsOccupied( f11_arg0, f11_arg2 ) and not IsMouseOrKeyboard( f11_arg2 ) then
-			OpenPopup( self, "PaintjobSelectorOptions", f11_arg2, nil )
+	f1_arg0:AddButtonCallbackFunction( paintjobsList, f1_arg1, Enum.LUIButton[0x22361E23588705A], "ui_contextual_2", function ( element, menu, controller, model )
+		if Paintjobs_IsOccupied( element, controller ) and not IsMouseOrKeyboard( controller ) then
+			OpenPopup( self, "PaintjobSelectorOptions", controller, nil )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		if Paintjobs_IsOccupied( f12_arg0, f12_arg2 ) and not IsMouseOrKeyboard( f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x22361E23588705A], 0x543AEFED5923E39, nil, "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		if Paintjobs_IsOccupied( element, controller ) and not IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "menu/paintjob_options", nil, "ui_contextual_2" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	paintjobsList:AddContextualMenuAction( f1_arg0, f1_arg1, 0x8ADA48E694BFE2C, function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
+	paintjobsList:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/delete", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
 		if Paintjobs_IsOccupied( f13_arg0, f13_arg2 ) then
 			return function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
 				CoD.CraftUtility.PaintjobClear( self, f14_arg0, f14_arg2, "", f14_arg1 )
@@ -126,7 +126,7 @@ CoD.PaintjobSelector.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 			
 		end
 	end )
-	paintjobsList:AddContextualMenuAction( f1_arg0, f1_arg1, 0x543AEFED5923E39, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
+	paintjobsList:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/paintjob_options", function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
 		if Paintjobs_IsOccupied( f17_arg0, f17_arg2 ) then
 			return function ( f18_arg0, f18_arg1, f18_arg2, f18_arg3 )
 				OpenPopup( self, "PaintjobSelectorOptions", f18_arg2, nil )

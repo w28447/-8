@@ -18,13 +18,13 @@ CoD.ContractSeasonalOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local Corner = LUI.UIImage.new( 0, 0, 413.5, 429.5, 0, 0, 135, 151 )
 	Corner:setRGB( 0.45, 0.41, 0.07 )
-	Corner:setImage( RegisterImage( 0xB998225BD626F68 ) )
+	Corner:setImage( RegisterImage( "uie_ui_menu_blackmarket_banner_corner" ) )
 	self:addElement( Corner )
 	self.Corner = Corner
 	
 	local PixelGridTiledBacking2 = LUI.UIImage.new( 0, 0, 1, 401, 0, 0, 12.5, 29.5 )
 	PixelGridTiledBacking2:setAlpha( 0.05 )
-	PixelGridTiledBacking2:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking2:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	PixelGridTiledBacking2:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking2:setupNineSliceShader( 128, 128 )
@@ -42,7 +42,7 @@ CoD.ContractSeasonalOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local Seasonal = LUI.UIText.new( 0, 0, 14.5, 385.5, 0, 0, 12.5, 29.5 )
 	Seasonal:setRGB( 1, 0.82, 0 )
-	Seasonal:setText( LocalizeToUpperString( 0x66847BAEBB3A887 ) )
+	Seasonal:setText( LocalizeToUpperString( "mpui/seasonal" ) )
 	Seasonal:setTTF( "ttmussels_demibold" )
 	Seasonal:setLetterSpacing( 4 )
 	Seasonal:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

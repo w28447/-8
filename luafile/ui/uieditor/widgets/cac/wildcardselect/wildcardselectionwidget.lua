@@ -36,7 +36,7 @@ CoD.WildcardSelectionWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local Primary = LUI.UIText.new( 0, 0, 667, 1032, 0, 0, 106, 124 )
 	Primary:setRGB( 0.39, 0.39, 0.39 )
-	Primary:setText( Engine[0xF9F1239CFD921FE]( 0x63E51BFF17859F1 ) )
+	Primary:setText( Engine[0xF9F1239CFD921FE]( "mpui/primary_caps" ) )
 	Primary:setTTF( "ttmussels_regular" )
 	Primary:setLetterSpacing( 4 )
 	Primary:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -111,24 +111,24 @@ CoD.WildcardSelectionWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( WildcardList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if IsPC() and CoD.CACUtility.IsItemEquippedInCurrentLoadout( f8_arg1, f8_arg0, f8_arg2 ) and CoD.ModelUtility.IsSelfModelValueTrue( f8_arg0, f8_arg2, "canEquipBonuscard" ) and not CoD.CACUtility.IsCACItemLocked( f8_arg1, f8_arg0, f8_arg2 ) then
-			CoD.CACUtility.PlayElementXHashSound( f8_arg0, "equipSound" )
-			GoBack( self, f8_arg2 )
+	f1_arg0:AddButtonCallbackFunction( WildcardList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsPC() and CoD.CACUtility.IsItemEquippedInCurrentLoadout( menu, element, controller ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "canEquipBonuscard" ) and not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.CACUtility.PlayElementXHashSound( element, "equipSound" )
+			GoBack( self, controller )
 			return true
-		elseif not CoD.CACUtility.IsItemEquippedInCurrentLoadout( f8_arg1, f8_arg0, f8_arg2 ) and CoD.ModelUtility.IsSelfModelValueTrue( f8_arg0, f8_arg2, "canEquipBonuscard" ) and not CoD.CACUtility.IsCACItemLocked( f8_arg1, f8_arg0, f8_arg2 ) then
-			CoD.CACUtility.EquipLoadoutListItem( f8_arg0, f8_arg1, f8_arg2, true )
-			CoD.CACUtility.EquippedItemsChanged( f8_arg1, f8_arg2 )
+		elseif not CoD.CACUtility.IsItemEquippedInCurrentLoadout( menu, element, controller ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "canEquipBonuscard" ) and not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.CACUtility.EquipLoadoutListItem( element, menu, controller, true )
+			CoD.CACUtility.EquippedItemsChanged( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if IsPC() and CoD.CACUtility.IsItemEquippedInCurrentLoadout( f9_arg1, f9_arg0, f9_arg2 ) and CoD.ModelUtility.IsSelfModelValueTrue( f9_arg0, f9_arg2, "canEquipBonuscard" ) and not CoD.CACUtility.IsCACItemLocked( f9_arg1, f9_arg0, f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsPC() and CoD.CACUtility.IsItemEquippedInCurrentLoadout( menu, element, controller ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "canEquipBonuscard" ) and not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif not CoD.CACUtility.IsItemEquippedInCurrentLoadout( f9_arg1, f9_arg0, f9_arg2 ) and CoD.ModelUtility.IsSelfModelValueTrue( f9_arg0, f9_arg2, "canEquipBonuscard" ) and not CoD.CACUtility.IsCACItemLocked( f9_arg1, f9_arg0, f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif not CoD.CACUtility.IsItemEquippedInCurrentLoadout( menu, element, controller ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "canEquipBonuscard" ) and not CoD.CACUtility.IsCACItemLocked( menu, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -184,14 +184,14 @@ CoD.WildcardSelectionWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.Description = Description
 	
 	local InfoBracketTop = LUI.UIImage.new( 0, 0, 282, 631, 0, 0, 135, 163 )
-	InfoBracketTop:setImage( RegisterImage( 0x81D4EAAB75120FF ) )
+	InfoBracketTop:setImage( RegisterImage( "uie_ui_menu_specialist_hub_info_bracket" ) )
 	InfoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InfoBracketTop )
 	self.InfoBracketTop = InfoBracketTop
 	
 	local dotline3 = LUI.UIImage.new( 0, 0, 291, 621, 0, 0, 495, 499 )
 	dotline3:setAlpha( 0.75 )
-	dotline3:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	dotline3:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	dotline3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	dotline3:setShaderVector( 0, 1.2, 0, 0, 0 )
 	self:addElement( dotline3 )
@@ -199,7 +199,7 @@ CoD.WildcardSelectionWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local InfoBracketBot = LUI.UIImage.new( 0, 0, 282, 631, 0, 0, 522.5, 550.5 )
 	InfoBracketBot:setZRot( 180 )
-	InfoBracketBot:setImage( RegisterImage( 0x81D4EAAB75120FF ) )
+	InfoBracketBot:setImage( RegisterImage( "uie_ui_menu_specialist_hub_info_bracket" ) )
 	InfoBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InfoBracketBot )
 	self.InfoBracketBot = InfoBracketBot

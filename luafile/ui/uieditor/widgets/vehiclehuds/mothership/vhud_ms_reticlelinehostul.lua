@@ -13,7 +13,7 @@ CoD.vhud_ms_ReticleLineHostUL.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	Image0:setAlpha( 0.07 )
 	Image0:setYRot( 180 )
 	Image0:setZoom( -40 )
-	Image0:setImage( RegisterImage( 0xF28657F590B16FE ) )
+	Image0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_reticlehost" ) )
 	Image0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image0 )
 	self.Image0 = Image0
@@ -22,7 +22,7 @@ CoD.vhud_ms_ReticleLineHostUL.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	msReticleHostUpperL:setRGB( 0.74, 0.94, 0.99 )
 	msReticleHostUpperL:setAlpha( 0.4 )
 	msReticleHostUpperL:setYRot( 180 )
-	msReticleHostUpperL:setImage( RegisterImage( 0xF28657F590B16FE ) )
+	msReticleHostUpperL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_reticlehost" ) )
 	msReticleHostUpperL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msReticleHostUpperL )
 	self.msReticleHostUpperL = msReticleHostUpperL

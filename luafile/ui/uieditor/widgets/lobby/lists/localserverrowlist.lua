@@ -47,24 +47,24 @@ CoD.LocalServerRowList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Servers, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if IsGamepad( f6_arg2 ) then
-			JoinSystemLinkServer( self, f6_arg0, f6_arg2 )
-			GoBack( self, f6_arg2 )
+	f1_arg0:AddButtonCallbackFunction( Servers, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsGamepad( controller ) then
+			JoinSystemLinkServer( self, element, controller )
+			GoBack( self, controller )
 			return true
-		elseif IsMouseOrKeyboard( f6_arg2 ) then
-			JoinSystemLinkServer( self, f6_arg0, f6_arg2 )
-			GoBack( self, f6_arg2 )
+		elseif IsMouseOrKeyboard( controller ) then
+			JoinSystemLinkServer( self, element, controller )
+			GoBack( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		if IsGamepad( f7_arg2 ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x797F69ACAD3858F, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/join", nil, "ui_confirm" )
 			return true
-		elseif IsMouseOrKeyboard( f7_arg2 ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false

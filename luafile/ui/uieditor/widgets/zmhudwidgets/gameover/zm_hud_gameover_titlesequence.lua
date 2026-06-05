@@ -53,7 +53,7 @@ CoD.zm_hud_gameover_titlesequence.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local TitleShadow = LUI.UIText.new( 0.5, 0.5, -400, 400, 0.5, 0.5, -73, -1 )
 	TitleShadow:setRGB( 0, 0, 0 )
 	TitleShadow:setAlpha( 0.7 )
-	TitleShadow:setText( Engine[0xF9F1239CFD921FE]( 0x22EF41D702EE72D ) )
+	TitleShadow:setText( Engine[0xF9F1239CFD921FE]( "zombie/game_over" ) )
 	TitleShadow:setTTF( "skorzhen" )
 	TitleShadow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	TitleShadow:setShaderVector( 0, 0.36, 0, 0, 0 )
@@ -67,7 +67,7 @@ CoD.zm_hud_gameover_titlesequence.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local Title = LUI.UIText.new( 0.5, 0.5, -400, 400, 0.5, 0.5, -73, -1 )
 	Title:setRGB( 0.91, 0, 0 )
-	Title:setText( Engine[0xF9F1239CFD921FE]( 0x22EF41D702EE72D ) )
+	Title:setText( Engine[0xF9F1239CFD921FE]( "zombie/game_over" ) )
 	Title:setTTF( "skorzhen" )
 	Title:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	Title:setLetterSpacing( 6 )

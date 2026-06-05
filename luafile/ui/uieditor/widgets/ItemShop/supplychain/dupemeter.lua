@@ -34,7 +34,7 @@ CoD.DupeMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	local Label = LUI.UIText.new( 0.5, 0.5, -168.5, -9.5, 0, 0, 11, 25 )
 	Label:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	Label:setAlpha( 0.5 )
-	Label:setText( LocalizeToUpperString( 0x7A11286F9FD7520 ) )
+	Label:setText( LocalizeToUpperString( "ui/reroll_meter" ) )
 	Label:setTTF( "ttmussels_demibold" )
 	Label:setLetterSpacing( 2 )
 	Label:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

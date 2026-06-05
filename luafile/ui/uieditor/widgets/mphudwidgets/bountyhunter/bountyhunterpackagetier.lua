@@ -71,11 +71,11 @@ CoD.BountyHunterPackageTier.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 			modelName = "item2.trackTier"
 		} )
 	end )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		CoD.BountyHunterUtility.BuyBountyTierPackage( f9_arg2, f9_arg1, self )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		CoD.BountyHunterUtility.BuyBountyTierPackage( controller, menu, self )
 		return true
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 		return false
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "childFocusGained", function ( element )

@@ -119,7 +119,7 @@ CoD.WarzoneArmorStashCount_PC.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	Icon = LUI.UIImage.new( 0, 0, 0, 24, 0, 0, 0, 24 )
 	Icon:setAlpha( 0 )
-	Icon:setImage( RegisterImage( 0xC919F9E1839F796 ) )
+	Icon:setImage( RegisterImage( "uie_ui_icon_inventory_armor_scrap" ) )
 	self:addElement( Icon )
 	self.Icon = Icon
 	

@@ -32,7 +32,7 @@ CoD.GenericClickButton.new = function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3, f5_a
 	
 	local FEButtonFocus = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	FEButtonFocus:setZoom( 10 )
-	FEButtonFocus:setImage( RegisterImage( 0xFB9C243FDED3D3 ) )
+	FEButtonFocus:setImage( RegisterImage( "uie_t7_menu_frontend_buttonfocusfull" ) )
 	FEButtonFocus:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	FEButtonFocus:setShaderVector( 0, 0, 0, 0.38, 0.2 )
 	FEButtonFocus:setupNineSliceShader( 90, 30 )
@@ -55,21 +55,21 @@ CoD.GenericClickButton.new = function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3, f5_a
 	local Arrow = LUI.UIImage.new( 0, 0, 0, -18, 0.5, 0.5, -10.5, 10.5 )
 	Arrow:setYRot( 180 )
 	Arrow:setZoom( 10 )
-	Arrow:setImage( RegisterImage( 0x3842361F4104287 ) )
+	Arrow:setImage( RegisterImage( "uie_t7_menu_frontend_buttonfocusarrow" ) )
 	Arrow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Arrow )
 	self.Arrow = Arrow
 	
 	local Glow21 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, -4, 4 )
 	Glow21:setAlpha( 0 )
-	Glow21:setImage( RegisterImage( 0x713A30DFAEF8964 ) )
+	Glow21:setImage( RegisterImage( "uie_t7_cp_hud_enemytarget_glow" ) )
 	Glow21:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow21 )
 	self.Glow21 = Glow21
 	
 	local label = LUI.UIText.new( 0, 1, 26, -6, 0.5, 0.5, -16.5, 16.5 )
 	label:setRGB( 0, 0, 0 )
-	label:setText( Engine[0xF9F1239CFD921FE]( 0xCB464A614BAB582 ) )
+	label:setText( Engine[0xF9F1239CFD921FE]( "menu/yes_caps" ) )
 	label:setTTF( "ttmussels_demibold" )
 	label:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	label:setShaderVector( 0, 0, 0, 0, 0 )
@@ -81,7 +81,7 @@ CoD.GenericClickButton.new = function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3, f5_a
 	self.label = label
 	
 	local Glow2 = LUI.UIImage.new( 0, 1, -72, 104, 0, 0, -37, 87 )
-	Glow2:setImage( RegisterImage( 0x713A30DFAEF8964 ) )
+	Glow2:setImage( RegisterImage( "uie_t7_cp_hud_enemytarget_glow" ) )
 	Glow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow2 )
 	self.Glow2 = Glow2

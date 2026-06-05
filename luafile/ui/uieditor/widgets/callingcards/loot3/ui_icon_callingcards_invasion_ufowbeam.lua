@@ -13,7 +13,7 @@ CoD.ui_icon_callingcards_invasion_ufowbeam.new = function ( f1_arg0, f1_arg1, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local ufo = LUI.UIImage.new( 0, 0, 0, 224, 0, 0, 0, 88 )
-	ufo:setImage( RegisterImage( 0x81BE87D4605424A ) )
+	ufo:setImage( RegisterImage( "uie_ui_menu_callingcards_invasion_ufo" ) )
 	self:addElement( ufo )
 	self.ufo = ufo
 	

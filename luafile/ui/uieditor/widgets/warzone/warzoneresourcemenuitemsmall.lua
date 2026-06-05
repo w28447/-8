@@ -48,7 +48,7 @@ CoD.WarzoneResourceMenuItemSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	castTimer = LUI.UIImage.new( 0.5, 0.5, -22, 22, 0.5, 0.5, -22, 22 )
 	castTimer:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	castTimer:setImage( RegisterImage( 0xC2785B5FC0B6F18 ) )
+	castTimer:setImage( RegisterImage( "uie_ui_icon_controller_radial_fill_hud" ) )
 	castTimer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	castTimer:setShaderVector( 1, 0.5, 0, 0, 0 )
 	castTimer:setShaderVector( 2, 0.5, 0, 0, 0 )
@@ -65,7 +65,7 @@ CoD.WarzoneResourceMenuItemSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local NotAvailable = LUI.UIImage.new( 0, 0, 2, 90, 0, 0, 1, 89 )
 	NotAvailable:setAlpha( 0 )
-	NotAvailable:setImage( RegisterImage( 0xB1FCC7EA3552F5A ) )
+	NotAvailable:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_drop_x" ) )
 	NotAvailable:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( NotAvailable )
 	self.NotAvailable = NotAvailable
@@ -200,22 +200,22 @@ CoD.WarzoneResourceMenuItemSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	f1_local8( f1_local7, f1_local9.armorMax, function ( f23_arg0, f23_arg1 )
 		CoD.Menu.UpdateButtonShownState( f23_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0xC083113BC81F23F] )
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], "ui_confirm", function ( f24_arg0, f24_arg1, f24_arg2, f24_arg3 )
-		if IsMouseOrKeyboard( f24_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f24_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f24_arg0, f24_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f24_arg0, f24_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.CONSUME ) then
-			CoD.WZUtility.SendInventoryConsumeNotify( f24_arg2, f24_arg0 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], "ui_confirm", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.CONSUME ) then
+			CoD.WZUtility.SendInventoryConsumeNotify( controller, element )
 			return true
-		elseif IsMouseOrKeyboard( f24_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f24_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f24_arg0, f24_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f24_arg0, f24_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f24_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f24_arg2 ) then
-			CoD.WZUtility.SendInventoryConsumeNotify( f24_arg2, f24_arg0 )
+		elseif IsMouseOrKeyboard( controller ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) then
+			CoD.WZUtility.SendInventoryConsumeNotify( controller, element )
 			return true
 		else
 			
 		end
-	end, function ( f25_arg0, f25_arg1, f25_arg2 )
-		if IsMouseOrKeyboard( f25_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f25_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f25_arg0, f25_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f25_arg0, f25_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.CONSUME ) then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x1F464950EB4AA26, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.CONSUME ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/use", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsMouseOrKeyboard( f25_arg2 ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( f25_arg2 ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( f25_arg0, f25_arg2, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( f25_arg0, f25_arg2, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( f25_arg2, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( f25_arg2 ) then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x2C27E2320C64A74, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsMouseOrKeyboard( controller ) and not CoD.WZUtility.ScoreboardVisibilitySetAndPC( controller ) and not CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "id", CoD.WZUtility.InventoryItem.INVENTORY_ITEM_NONE ) and CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "availableAction", CoD.WZUtility.ItemAvailableAction.REPAIR ) and not CoD.ModelUtility.IsGlobalDataSourceModelValueEqualTo( controller, "HUDItems", "armorType", 0 ) and not CoD.HUDUtility.IsArmorAtFullHealth( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "wz/repair_armor", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
 		else
 			return false

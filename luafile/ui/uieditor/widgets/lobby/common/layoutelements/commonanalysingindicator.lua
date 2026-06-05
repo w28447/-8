@@ -9,14 +9,14 @@ CoD.CommonAnalysingIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local AnalysingFrame = LUI.UIImage.new( 0, 0, 0, 112, 0, 0, 0, 112 )
-	AnalysingFrame:setImage( RegisterImage( 0xB277B737003F19B ) )
+	AnalysingFrame:setImage( RegisterImage( "uie_ui_menu_inspection_analysing_frame" ) )
 	AnalysingFrame:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	AnalysingFrame:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( AnalysingFrame )
 	self.AnalysingFrame = AnalysingFrame
 	
 	local AnalysingFrameWipe = LUI.UIImage.new( 0, 0, 0, 112, 0, 0, 0, 112 )
-	AnalysingFrameWipe:setImage( RegisterImage( 0xB277B737003F19B ) )
+	AnalysingFrameWipe:setImage( RegisterImage( "uie_ui_menu_inspection_analysing_frame" ) )
 	AnalysingFrameWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	AnalysingFrameWipe:setShaderVector( 0, 0, 1, 0, 0 )
 	AnalysingFrameWipe:setShaderVector( 1, 0, 0, 0, 0 )
@@ -27,12 +27,12 @@ CoD.CommonAnalysingIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.AnalysingFrameWipe = AnalysingFrameWipe
 	
 	local AnalysingBacking = LUI.UIImage.new( 0, 0, 70, 318, 0, 0, 14.5, 42.5 )
-	AnalysingBacking:setImage( RegisterImage( 0xB018641EB968C33 ) )
+	AnalysingBacking:setImage( RegisterImage( "uie_ui_menu_inspection_analysing_stripe" ) )
 	self:addElement( AnalysingBacking )
 	self.AnalysingBacking = AnalysingBacking
 	
 	local AnalysingBackingProgress = LUI.UIImage.new( 0, 0, 70, 318, 0, 0, 14.5, 42.5 )
-	AnalysingBackingProgress:setImage( RegisterImage( 0xB018641EB968C33 ) )
+	AnalysingBackingProgress:setImage( RegisterImage( "uie_ui_menu_inspection_analysing_stripe" ) )
 	AnalysingBackingProgress:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	AnalysingBackingProgress:setShaderVector( 0, 0, 0, 0, 0 )
 	AnalysingBackingProgress:setShaderVector( 1, 0, 0, 0, 0 )
@@ -44,7 +44,7 @@ CoD.CommonAnalysingIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local AnalysingText = LUI.UIImage.new( 0, 0, 81.5, 185.5, 0, 0, 20.5, 52.5 )
 	AnalysingText:setAlpha( 0 )
-	AnalysingText:setImage( RegisterImage( 0x9CB56DF0EFA40E1 ) )
+	AnalysingText:setImage( RegisterImage( "uie_ui_menu_inspection_analysing_text" ) )
 	AnalysingText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	AnalysingText:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( AnalysingText )

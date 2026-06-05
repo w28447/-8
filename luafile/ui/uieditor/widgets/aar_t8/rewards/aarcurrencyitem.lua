@@ -43,7 +43,7 @@ CoD.AARCurrencyItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local LockImage = LUI.UIFixedAspectRatioImage.new( 0, 0, 164, 214, 0.5, 0.5, -79.5, -29.5 )
 	LockImage:setAlpha( 0 )
-	LockImage:setImage( RegisterImage( 0x792B89ECB31E690 ) )
+	LockImage:setImage( RegisterImage( "menu_mp_lobby_locked" ) )
 	self:addElement( LockImage )
 	self.LockImage = LockImage
 	

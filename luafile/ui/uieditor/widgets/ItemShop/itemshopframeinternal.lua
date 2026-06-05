@@ -70,14 +70,14 @@ CoD.ItemShopFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f6_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( DailyItems, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		OpenOverlay( self, "ItemShopDetails", f7_arg2, {
-			_model = f7_arg0:getModel()
+	f1_arg0:AddButtonCallbackFunction( DailyItems, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		OpenOverlay( self, "ItemShopDetails", controller, {
+			_model = element:getModel()
 		} )
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	DailyItems:subscribeToGlobalModel( f1_arg1, "GlobalModel", "ItemshopRotation.cycled", function ( model )
@@ -114,14 +114,14 @@ CoD.ItemShopFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f11_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( FeaturedItems, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		OpenOverlay( self, "ItemShopDetails", f12_arg2, {
-			_model = f12_arg0:getModel()
+	f1_arg0:AddButtonCallbackFunction( FeaturedItems, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		OpenOverlay( self, "ItemShopDetails", controller, {
+			_model = element:getModel()
 		} )
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/purchase", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/purchase", nil, nil )
 		return true
 	end, false )
 	FeaturedItems:subscribeToGlobalModel( f1_arg1, "GlobalModel", "ItemshopRotation.cycled", function ( model )
@@ -146,8 +146,8 @@ CoD.ItemShopFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local TransactionDeepLinkButton = nil
 	
 	TransactionDeepLinkButton = CoD.DirectorPreGameButton.new( f1_arg0, f1_arg1, 0.5, 0.5, -835, -605, 0, 0, 921, 991 )
-	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( 0x4031C820A02E7BA ) )
-	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( 0x4031C820A02E7BA ) )
+	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( "menu/transaction_history" ) )
+	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( "menu/transaction_history" ) )
 	TransactionDeepLinkButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f15_local0 = nil
 		if element.gainFocus then
@@ -158,31 +158,31 @@ CoD.ItemShopFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f15_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
+	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, model )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( f16_arg2 )
+			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( controller )
 			return true
 		else
 			
 		end
-	end, function ( f17_arg0, f17_arg1, f17_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f18_arg0, f18_arg1, f18_arg2, f18_arg3 )
+	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( f18_arg2 )
+			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( controller )
 			return true
 		else
 			
 		end
-	end, function ( f19_arg0, f19_arg1, f19_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
 		else
 			return false
@@ -265,7 +265,7 @@ CoD.ItemShopFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	TextBox2 = LUI.UIText.new( 0.5, 0.5, -835, -480, 0, 0, 152, 170 )
 	TextBox2:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	TextBox2:setText( LocalizeToUpperString( 0x169F716D6484E8A ) )
+	TextBox2:setText( LocalizeToUpperString( "menu/featured_items" ) )
 	TextBox2:setTTF( "ttmussels_regular" )
 	TextBox2:setLetterSpacing( 4 )
 	TextBox2:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -275,7 +275,7 @@ CoD.ItemShopFrameInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	TextBox = LUI.UIText.new( 0.5, 0.5, -249, 106, 0, 0, 152, 170 )
 	TextBox:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	TextBox:setText( LocalizeToUpperString( 0xDE9B59A6E570A4B ) )
+	TextBox:setText( LocalizeToUpperString( "menu/daily_items" ) )
 	TextBox:setTTF( "ttmussels_regular" )
 	TextBox:setLetterSpacing( 4 )
 	TextBox:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

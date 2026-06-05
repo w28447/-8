@@ -18,7 +18,7 @@ CoD.AmmoWidget_Ball.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local Ball = LUI.UIImage.new( 0, 0, 0, 105, 0, 0, 0, 105 )
 	Ball:setScale( 0.9, 0.9 )
-	Ball:setImage( RegisterImage( 0xE0A46EF96DD3D69 ) )
+	Ball:setImage( RegisterImage( "uie_t7_hud_widget_uplink_ball" ) )
 	self:addElement( Ball )
 	self.Ball = Ball
 	
@@ -79,7 +79,7 @@ CoD.AmmoWidget_Ball.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		{
 			stateName = "Show",
 			condition = function ( menu, element, event )
-				return IsCurrentViewmodelWeaponName( f1_arg1, 0xA13D89BA9FBCA24 )
+				return IsCurrentViewmodelWeaponName( f1_arg1, "ball" )
 			end
 		}
 	} )

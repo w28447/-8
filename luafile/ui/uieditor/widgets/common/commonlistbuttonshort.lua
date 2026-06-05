@@ -42,14 +42,14 @@ CoD.CommonListButtonShort.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local DotRIght = LUI.UIImage.new( 0, 0, 238, 242, 0, 0, -2, 2 )
 	DotRIght:setAlpha( 0.2 )
-	DotRIght:setImage( RegisterImage( 0x3854665C02218EF ) )
+	DotRIght:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame_dot" ) )
 	DotRIght:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotRIght )
 	self.DotRIght = DotRIght
 	
 	local DotLeft = LUI.UIImage.new( 0, 0, -2, 2, 0, 0, -2, 2 )
 	DotLeft:setAlpha( 0.2 )
-	DotLeft:setImage( RegisterImage( 0x3854665C02218EF ) )
+	DotLeft:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame_dot" ) )
 	DotLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotLeft )
 	self.DotLeft = DotLeft

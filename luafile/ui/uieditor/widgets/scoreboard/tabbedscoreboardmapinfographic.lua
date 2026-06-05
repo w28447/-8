@@ -39,19 +39,19 @@ CoD.TabbedScoreboardMapInfographic.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local boxTR03 = LUI.UIImage.new( 0, 0, 1384.5, 1404.5, 0, 0, 36, 56 )
 	boxTR03:setAlpha( 0.02 )
-	boxTR03:setImage( RegisterImage( 0xDFFFD42DA60F543 ) )
+	boxTR03:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_square01" ) )
 	self:addElement( boxTR03 )
 	self.boxTR03 = boxTR03
 	
 	local boxTR02 = LUI.UIImage.new( 0, 0, 1413, 1433, 0, 0, 36, 56 )
 	boxTR02:setAlpha( 0.02 )
-	boxTR02:setImage( RegisterImage( 0xDFFFD42DA60F543 ) )
+	boxTR02:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_square01" ) )
 	self:addElement( boxTR02 )
 	self.boxTR02 = boxTR02
 	
 	local boxTR = LUI.UIImage.new( 0, 0, 1441, 1461, 0, 0, 36, 56 )
 	boxTR:setAlpha( 0.02 )
-	boxTR:setImage( RegisterImage( 0xDFFFD42DA60F543 ) )
+	boxTR:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_square01" ) )
 	self:addElement( boxTR )
 	self.boxTR = boxTR
 	
@@ -107,12 +107,12 @@ CoD.TabbedScoreboardMapInfographic.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	self.textInfoR01 = textInfoR01
 	
 	local TopIndicatorBoxBg = LUI.UIImage.new( 0, 0, 1382.5, 1462.5, 0, 0, 2, 60 )
-	TopIndicatorBoxBg:setImage( RegisterImage( 0x402FFA1699196B9 ) )
+	TopIndicatorBoxBg:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_indicator" ) )
 	self:addElement( TopIndicatorBoxBg )
 	self.TopIndicatorBoxBg = TopIndicatorBoxBg
 	
 	local TopIndicatorBoxBg2 = LUI.UIImage.new( 0, 0, 1382.5, 1462.5, 0, 0, 2, 60 )
-	TopIndicatorBoxBg2:setImage( RegisterImage( 0x402FFA1699196B9 ) )
+	TopIndicatorBoxBg2:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_indicator" ) )
 	self:addElement( TopIndicatorBoxBg2 )
 	self.TopIndicatorBoxBg2 = TopIndicatorBoxBg2
 	

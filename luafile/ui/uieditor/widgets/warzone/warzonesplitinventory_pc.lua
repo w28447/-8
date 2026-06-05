@@ -50,7 +50,7 @@ CoD.WarzoneSplitInventory_PC.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local Slash = LUI.UIText.new( 0.5, 0.5, -6.5, 6.5, 0, 0, 79, 100 )
 	Slash:setRGB( 0.04, 0.04, 0.04 )
-	Slash:setText( Engine[0xF9F1239CFD921FE]( 0x993C1A7DD3452BA ) )
+	Slash:setText( Engine[0xF9F1239CFD921FE]( "mp/slash" ) )
 	Slash:setTTF( "dinnext_regular" )
 	Slash:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Slash:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -82,11 +82,11 @@ CoD.WarzoneSplitInventory_PC.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ApplyButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		CoD.WZUtility.ApplyPCSplitterWidget( self, f5_arg1, f5_arg2 )
+	f1_arg0:AddButtonCallbackFunction( ApplyButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		CoD.WZUtility.ApplyPCSplitterWidget( self, menu, controller )
 		return true
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 		return false
 	end, false )
 	self:addElement( ApplyButton )
@@ -123,11 +123,11 @@ CoD.WarzoneSplitInventory_PC.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f9_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( AddButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		CoD.WZUtility.IncrementSplitCount( f10_arg2 )
+	f1_arg0:AddButtonCallbackFunction( AddButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		CoD.WZUtility.IncrementSplitCount( controller )
 		return true
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 		return false
 	end, false )
 	self:addElement( AddButton )
@@ -166,27 +166,27 @@ CoD.WarzoneSplitInventory_PC.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f14_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( RemoveButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		CoD.WZUtility.DecrementSplitCount( f15_arg2 )
+	f1_arg0:AddButtonCallbackFunction( RemoveButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		CoD.WZUtility.DecrementSplitCount( controller )
 		return true
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 		return false
 	end, false )
 	self:addElement( RemoveButton )
 	self.RemoveButton = RemoveButton
 	
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		CoD.WZUtility.ApplyPCSplitterWidget( self, f17_arg1, f17_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		CoD.WZUtility.ApplyPCSplitterWidget( self, menu, controller )
 		return true
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
 		return true
-	end, function ( f20_arg0, f20_arg1, f20_arg2 )
-		CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 		return false
 	end, false )
 	self:subscribeToGlobalModel( f1_arg1, "WarzoneInventory", "isOpen", function ( model )

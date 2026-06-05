@@ -55,14 +55,14 @@ LUI.createMenu.mp_laststand_client = function ( f1_arg0, f1_arg1 )
 	ReviveBarBG2:setAlpha( 0 )
 	ReviveBarBG2:setYRot( 180 )
 	ReviveBarBG2:setScale( 0.81, 0.6 )
-	ReviveBarBG2:setImage( RegisterImage( 0x7B21FDA82833F75 ) )
+	ReviveBarBG2:setImage( RegisterImage( "uie_zm_hud_revive_meterbg" ) )
 	self:addElement( ReviveBarBG2 )
 	self.ReviveBarBG2 = ReviveBarBG2
 	
 	local revive_bar = LUI.UIImage.new( 0.5, 0.5, -148, 148, 0, 0, 760, 788 )
 	revive_bar:setAlpha( 0 )
 	revive_bar:setScale( 0.8, 0.6 )
-	revive_bar:setImage( RegisterImage( 0x7C02FDA828F9801 ) )
+	revive_bar:setImage( RegisterImage( "uie_zm_hud_revive_meterfg" ) )
 	revive_bar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	revive_bar:setShaderVector( 1, 0, 0, 0, 0 )
 	revive_bar:setShaderVector( 2, 1, 0, 0, 0 )
@@ -78,12 +78,12 @@ LUI.createMenu.mp_laststand_client = function ( f1_arg0, f1_arg1 )
 	self.revive_bar = revive_bar
 	
 	local ReviveBarBG = LUI.UIImage.new( 0.5, 0.5, -148, 148, 0, 0, 740, 768 )
-	ReviveBarBG:setImage( RegisterImage( 0x7B21FDA82833F75 ) )
+	ReviveBarBG:setImage( RegisterImage( "uie_zm_hud_revive_meterbg" ) )
 	self:addElement( ReviveBarBG )
 	self.ReviveBarBG = ReviveBarBG
 	
 	local bleedout_bar = LUI.UIImage.new( 0.5, 0.5, -148, 148, 0, 0, 740, 768 )
-	bleedout_bar:setImage( RegisterImage( 0x396E2656C26F8BC ) )
+	bleedout_bar:setImage( RegisterImage( "uie_zm_hud_bleedout_meterfg" ) )
 	bleedout_bar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	bleedout_bar:setShaderVector( 1, 0, 0, 0, 0 )
 	bleedout_bar:setShaderVector( 2, 1, 0, 0, 0 )

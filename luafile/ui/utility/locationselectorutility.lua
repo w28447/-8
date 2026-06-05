@@ -136,7 +136,7 @@ CoD.LocationSelectorUtility.MoveSelectionToTargetedMarker = function ( f12_arg0,
 	if f12_local0 and f12_local1 then
 		CoD.LocationSelectorUtility.DeselectMarker( f12_local0, f12_arg1 )
 		CoD.LocationSelectorUtility.SelectMarker( f12_arg0, f12_local1, f12_arg1 )
-		Engine.PlaySound( "uin_main_edit", f12_arg1 )
+		Engine.playsound( "uin_main_edit", f12_arg1 )
 	end
 end
 
@@ -168,11 +168,11 @@ CoD.LocationSelectorUtility.SetupDatapadLocationMap = function ( f14_arg0, f14_a
 	end
 	if not f14_arg0.markers then
 		f14_arg0.markers = {}
-		local f14_local0 = 0xF0D67AEA5A55BE8
+		local f14_local0 = "datapad_location"
 		local f14_local1 = CoD.LocationSelectorUtility.AddDatapadLocation
 		local f14_local2 = CoD.LocationSelectorUtility.IsLocSelInCommandMode( f14_arg1 )
 		if f14_local2 then
-			f14_local0 = 0xFB0BE7A198B305
+			f14_local0 = "datapad_patrol_location"
 			f14_local1 = CoD.LocationSelectorUtility.AddDatapadPatrolLocation
 		end
 		local f14_local3 = Engine.GetModelForController( f14_arg1 )

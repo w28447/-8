@@ -60,7 +60,7 @@ function SetLuiKeyCatcher( f8_arg0 )
 end
 
 function EngineExec( f9_arg0, f9_arg1 )
-	Engine.Exec( f9_arg0, f9_arg1 )
+	Engine.exec( f9_arg0, f9_arg1 )
 end
 
 function UpdateAllMenuButtonPrompts( f10_arg0, f10_arg1 )
@@ -382,7 +382,7 @@ function SetIgnorePlaySoundSetSound( f67_arg0, f67_arg1 )
 end
 
 function PlaySoundAlias( f68_arg0 )
-	Engine.PlaySound( f68_arg0 )
+	Engine.playsound( f68_arg0 )
 end
 
 function DelayedPlaySoundAlias( f69_arg0, f69_arg1, f69_arg2 )
@@ -392,14 +392,14 @@ function DelayedPlaySoundAlias( f69_arg0, f69_arg1, f69_arg2 )
 end
 
 function StopSoundAlias( f71_arg0 )
-	Engine.StopSound( f71_arg0 )
+	Engine.stopsound( f71_arg0 )
 end
 
 function PlayMPMusicPreview( f72_arg0, f72_arg1 )
 	local f72_local0 = CoD.SafeGetModelValue( f72_arg1:getModel(), "alias" )
 	if f72_local0 and f72_local0 ~= "" then
 		CoD.StopFrontendMusic()
-		Engine.PlaySound( f72_local0 )
+		Engine.playsound( f72_local0 )
 		if not f72_arg1.soundTimer then
 			f72_arg1.soundTimer = LUI.UITimer.newElementTimer( Engine.GetSoundPlaybackTime( f72_local0 ), true, function ()
 				StopMPMusicPreview( f72_arg0, f72_arg1 )
@@ -414,7 +414,7 @@ end
 function StopMPMusicPreview( f74_arg0, f74_arg1 )
 	local f74_local0 = CoD.SafeGetModelValue( f74_arg1:getModel(), "alias" )
 	if f74_local0 and f74_local0 ~= "" then
-		Engine.StopSound( f74_local0 )
+		Engine.stopsound( f74_local0 )
 		CoD.ResetFrontendMusic()
 		if f74_arg1.soundTimer then
 			f74_arg1.soundTimer:close()
@@ -526,7 +526,7 @@ function DataSourceHelperGetModel( f87_arg0, f87_arg1 )
 end
 
 function ShowKeyboard( f88_arg0, f88_arg1, f88_arg2, f88_arg3 )
-	Engine.Exec( f88_arg2, "ui_keyboard_new " .. Enum.KeyboardType[Engine[0xC53F8D38DF9042B]( f88_arg3 )] )
+	Engine.exec( f88_arg2, "ui_keyboard_new " .. Enum.KeyboardType[Engine[0xC53F8D38DF9042B]( f88_arg3 )] )
 end
 
 function RefreshLobbyGameClient( f89_arg0, f89_arg1 )
@@ -559,7 +559,7 @@ end
 
 function SetHeadingKickerTextToGameMode()
 	if CoD.PrestigeUtility.isInPermanentUnlockMenu then
-		SetHeadingKickerText( 0x56F8CED179E36FD )
+		SetHeadingKickerText( "menu/permanent_unlocks" )
 		return 
 	elseif PregameActive() then
 		SetHeadingKickerText( GetGameMode() )
@@ -610,15 +610,15 @@ function JoinSystemLinkServer( f97_arg0, f97_arg1, f97_arg2 )
 	local f97_local0 = f97_arg1.gridInfoTable.zeroBasedIndex
 	local f97_local1 = Engine.GetModelValue( Engine.CreateModel( Engine.CreateModel( Engine.CreateModel( Engine.GetGlobalModel(), "serverListRoot" ), "server" .. tostring( f97_local0 ) ), "sessionMode" ) )
 	local f97_local2 = nil
-	if f97_local1 == Enum.eModes[0x60063C67132EB69] then
+	if f97_local1 == Enum.eModes.mode_campaign then
 		local f97_local3 = LobbyData.GetLobbyMenuByName( LuaEnum.UI.DIRECTOR_LAN_CP )
-		f97_local2 = f97_local3["maxlocalclientsnetwork"]
-	elseif f97_local1 == Enum.eModes[0x83EBA96F36BC4E5] then
+		f97_local2 = f97_local3.maxlocalclientsnetwork
+	elseif f97_local1 == Enum.eModes.mode_multiplayer then
 		local f97_local3 = LobbyData.GetLobbyMenuByName( LuaEnum.UI.DIRECTOR_LAN_MP )
-		f97_local2 = f97_local3["maxlocalclientsnetwork"]
-	elseif f97_local1 == Enum.eModes[0x3723205FAE52C4A] then
+		f97_local2 = f97_local3.maxlocalclientsnetwork
+	elseif f97_local1 == Enum.eModes.mode_zombies then
 		local f97_local3 = LobbyData.GetLobbyMenuByName( LuaEnum.UI.DIRECTOR_LAN_ZM )
-		f97_local2 = f97_local3["maxlocalclientsnetwork"]
+		f97_local2 = f97_local3.maxlocalclientsnetwork
 	end
 	if f97_local2 == nil then
 		f97_local2 = 1
@@ -722,8 +722,8 @@ function LobbyLANServerPlayerListRefresh( f100_arg0, f100_arg1, f100_arg2 )
 end
 
 function UploadStats( f101_arg0, f101_arg1 )
-	Engine.Exec( f101_arg1, "uploadstats" )
-	Engine.Exec( f101_arg1, "savegamerprofilestats" )
+	Engine.exec( f101_arg1, "uploadstats" )
+	Engine.exec( f101_arg1, "savegamerprofilestats" )
 end
 
 function SaveLoadout( f102_arg0, f102_arg1 )
@@ -732,11 +732,11 @@ function SaveLoadout( f102_arg0, f102_arg1 )
 		f102_local0 = CoD.PrestigeUtility.GetPermanentUnlockMode()
 	end
 	Engine[0xE6C09FDF6C8D188]( f102_arg1, f102_local0 )
-	if f102_local0 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f102_local0 == Enum.eModes.mode_multiplayer then
 		CoD.BreadcrumbUtility.UploadBuffer( f102_arg1, Enum.StorageFileType[0xFDE358A242AFA2C] )
-	elseif f102_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f102_local0 == Enum.eModes.mode_warzone then
 		CoD.BreadcrumbUtility.UploadBuffer( f102_arg1, Enum.StorageFileType[0xD1A0F784B3C95A0] )
-	elseif f102_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f102_local0 == Enum.eModes.mode_zombies then
 		CoD.BreadcrumbUtility.UploadBuffer( f102_arg1, Enum.StorageFileType[0xEC77AD28A19F8E0] )
 	end
 end
@@ -747,11 +747,11 @@ function SaveLoadoutGeneric( f103_arg0 )
 		f103_local0 = CoD.PrestigeUtility.GetPermanentUnlockMode()
 	end
 	Engine[0xE6C09FDF6C8D188]( f103_arg0, f103_local0 )
-	if f103_local0 == Enum.eModes[0x83EBA96F36BC4E5] then
+	if f103_local0 == Enum.eModes.mode_multiplayer then
 		CoD.BreadcrumbUtility.UploadBuffer( f103_arg0, Enum.StorageFileType[0xFDE358A242AFA2C] )
-	elseif f103_local0 == Enum.eModes[0xBF1DCC8138A9D39] then
+	elseif f103_local0 == Enum.eModes.mode_warzone then
 		CoD.BreadcrumbUtility.UploadBuffer( f103_arg0, Enum.StorageFileType[0xD1A0F784B3C95A0] )
-	elseif f103_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	elseif f103_local0 == Enum.eModes.mode_zombies then
 		CoD.BreadcrumbUtility.UploadBuffer( f103_arg0, Enum.StorageFileType[0xEC77AD28A19F8E0] )
 	end
 end
@@ -799,7 +799,7 @@ function PositionDraftOnFocusCharacter( f109_arg0, f109_arg1, f109_arg2 )
 	local f109_local0 = ""
 	local f109_local1 = Engine.CurrentSessionMode()
 	local f109_local2 = CoD.CACUtility.GetSelectedCustomClass( f109_arg2, f109_local1 )
-	if not CoD.BaseUtility.IsCurrentSessionModeEqualTo( Enum.eModes[0xBF1DCC8138A9D39] ) and f109_local2 and f109_local2 >= 0 then
+	if not CoD.BaseUtility.IsCurrentSessionModeEqualTo( Enum.eModes.mode_warzone ) and f109_local2 and f109_local2 >= 0 then
 		local f109_local3 = CoD.CACUtility.GetClassItem( f109_arg2, f109_local2, "primary", f109_local1 )
 		if f109_local3 and f109_local3 > CoDShared.EmptyItemIndex then
 			f109_local0 = Engine.GetItemRef( f109_local3, Enum[0x6EB546760F890D2][0x569E84652131CD7], f109_local1 )
@@ -951,7 +951,7 @@ function LaunchGamePrototype( f117_arg0, f117_arg1, f117_arg2 )
 	local f117_local2 = function ( f118_arg0, f118_arg1 )
 		local f118_local0 = LobbyData.GetLobbyMenuByName( f118_arg0 )
 		if f118_local0 then
-			f117_local1[f118_local0["id"]] = f118_arg1
+			f117_local1[f118_local0.id] = f118_arg1
 		end
 	end
 	
@@ -1063,7 +1063,7 @@ function PopAnticheatMessageAndGoForward_MP( f126_arg0, f126_arg1, f126_arg2, f1
 	Engine.PopAnticheatMessage( f126_arg2, LuaEnum.ANTICHEAT_MESSAGE_GROUPS.MP )
 	NavigateCheckForFirstTime( f126_local0, f126_arg1, f126_arg2, {
 		targetName = "MPLobbyMain",
-		mode = Enum.eModes[0x83EBA96F36BC4E5],
+		mode = Enum.eModes.mode_multiplayer,
 		firstTimeFlowAction = OpenMPFirstTimeFlow
 	}, f126_local0 )
 end
@@ -1159,7 +1159,7 @@ function SetCharacterModeToCurrentSessionMode( f138_arg0, f138_arg1, f138_arg2 )
 end
 
 function SetFirstTimeSetupComplete_MP( f139_arg0, f139_arg1, f139_arg2, f139_arg3, f139_arg4 )
-	Engine.SetFirstTimeComplete( f139_arg2, Enum.eModes[0x83EBA96F36BC4E5], true )
+	Engine.SetFirstTimeComplete( f139_arg2, Enum.eModes.mode_multiplayer, true )
 	FirstTimeSetup_SetNone( f139_arg2 )
 end
 
@@ -1200,7 +1200,7 @@ function OpenStore( f146_arg0, f146_arg1, f146_arg2, f146_arg3, f146_arg4 )
 		local f146_local1 = DataSources.StoreRoot.getModel( f146_arg2 )
 		f146_local1.ready:set( false )
 		f146_local1.actionSource:set( f146_arg3 )
-		f146_local1.storeSource:set( f146_local0[0x4BCADBA8E631B86] )
+		f146_local1.storeSource:set( f146_local0.name )
 		OpenOverlay( f146_arg4, "Store", f146_arg2 )
 	end
 end
@@ -1310,7 +1310,7 @@ function GoBackAndDisplayModalDialog( f160_arg0, f160_arg1, f160_arg2 )
 end
 
 function DisplayPlayGoJoinError( f161_arg0, f161_arg1 )
-	LuaUtils.UI_ShowWarningMessageDialog( f161_arg1, Engine[0xF9F1239CFD921FE]( 0x98057596B3D3C6B ) )
+	LuaUtils.UI_ShowWarningMessageDialog( f161_arg1, Engine[0xF9F1239CFD921FE]( "menu/cannot_join_during_install" ) )
 	GoBack( f161_arg0, f161_arg1 )
 end
 
@@ -1318,9 +1318,9 @@ function LobbyQuickJoin( f162_arg0, f162_arg1, f162_arg2, f162_arg3, f162_arg4, 
 	if CoD.isPC then
 		LobbyQuickJoinPC( f162_arg1, f162_arg2, f162_arg3, f162_arg4 )
 		return 
-	elseif LobbyData.GetLobbyNav() == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE ) and IsFirstTimeSetup( f162_arg3, Enum.eModes[0x83EBA96F36BC4E5] ) then
+	elseif LobbyData.GetLobbyNav() == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE ) and IsFirstTimeSetup( f162_arg3, Enum.eModes.mode_multiplayer ) then
 		local f162_local0 = Engine.GetModel( f162_arg2:getModel(), "activity" )
-		if f162_local0 and GetSessionModeFromPresenceActivity( Engine.GetModelValue( f162_local0 ) ) == Enum.eModes[0x83EBA96F36BC4E5] then
+		if f162_local0 and GetSessionModeFromPresenceActivity( Engine.GetModelValue( f162_local0 ) ) == Enum.eModes.mode_multiplayer then
 			if booleanArg == true then
 				GoBackAndOpenOverlayOnParent( f162_arg1, "MPIntroRequired", f162_arg3 )
 			else
@@ -1355,10 +1355,10 @@ function LobbyQuickJoin( f162_arg0, f162_arg1, f162_arg2, f162_arg3, f162_arg4, 
 		return 
 	end
 	local f162_local3 = nil
-	if f162_arg4 ~= nil and f162_arg4 >= 0 and f162_arg4 < Enum.JoinType[0xE22E4B4DDD5B19E] then
+	if f162_arg4 ~= nil and f162_arg4 >= 0 and f162_arg4 < Enum.jointype[0xE22E4B4DDD5B19E] then
 		f162_local3 = f162_arg4
 	else
-		f162_local3 = Enum.JoinType[0x4F9C7D45FC8CB0]
+		f162_local3 = Enum.jointype.join_type_normal
 	end
 	local f162_local4 = {
 		controller = f162_arg3,
@@ -1388,10 +1388,10 @@ function LobbyQuickJoinPC( f163_arg0, f163_arg1, f163_arg2, f163_arg3 )
 	local f163_local2 = f163_arg1:getModel( f163_arg2, "xuid" )
 	local f163_local3 = f163_local2 and Engine.GetModelValue( f163_local2 )
 	local f163_local4 = nil
-	if f163_arg3 and f163_arg3 >= 0 and f163_arg3 < Enum.JoinType[0xE22E4B4DDD5B19E] then
+	if f163_arg3 and f163_arg3 >= 0 and f163_arg3 < Enum.jointype[0xE22E4B4DDD5B19E] then
 		f163_local4 = f163_arg3
 	else
-		f163_local4 = Enum.JoinType[0x4F9C7D45FC8CB0]
+		f163_local4 = Enum.jointype.join_type_normal
 	end
 	local f163_local5 = LobbyQuickJoinFinal( f163_arg0, f163_arg2, f163_local4, f163_local3, f163_local1 )
 	if f163_local5 and CoD.isPC then
@@ -1403,7 +1403,7 @@ end
 
 function LobbyQuickJoinWithXuid( f164_arg0, f164_arg1, f164_arg2 )
 	local f164_local0 = Engine.GetPlayerInfo( f164_arg1, f164_arg2 )
-	return LobbyQuickJoinFinal( f164_arg0, f164_arg1, Enum.JoinType[0xD4D58772DE8652], f164_arg2, f164_local0.info.joinable )
+	return LobbyQuickJoinFinal( f164_arg0, f164_arg1, Enum.jointype.join_type_invite, f164_arg2, f164_local0.info.joinable )
 end
 
 function LobbyQuickJoinFinal( f165_arg0, f165_arg1, f165_arg2, f165_arg3, f165_arg4 )
@@ -1587,11 +1587,11 @@ function EnableMouseLockInputBinding( f182_arg0, f182_arg1, f182_arg2, f182_arg3
 end
 
 function EnableMouseLockInputForMap( f184_arg0, f184_arg1, f184_arg2 )
-	EnableMouseLockInputBinding( f184_arg0, f184_arg1, f184_arg2, Engine.ProfileInt( f184_arg1, 0x908DA91B796EF6C ) == 1 )
+	EnableMouseLockInputBinding( f184_arg0, f184_arg1, f184_arg2, Engine.ProfileInt( f184_arg1, "cursor_immediate_lock_map" ) == 1 )
 end
 
 function EnableMouseLockInputForInventory( f185_arg0, f185_arg1, f185_arg2 )
-	EnableMouseLockInputBinding( f185_arg0, f185_arg1, f185_arg2, Engine.ProfileInt( f185_arg1, 0x4AE3D347A07EF76 ) == 1 )
+	EnableMouseLockInputBinding( f185_arg0, f185_arg1, f185_arg2, Engine.ProfileInt( f185_arg1, "cursor_immediate_lock_inventory" ) == 1 )
 end
 
 function ScaleWidgetToLabelCentered( f186_arg0, f186_arg1, f186_arg2 )
@@ -1983,7 +1983,7 @@ end
 
 function DisplayPlayGoWarning( f218_arg0, f218_arg1 )
 	local f218_local0 = CoD.OverlayUtility.CreateOverlay( f218_arg1, f218_arg0, "GenericModalDialog", "", "MENU/STILLDOWNLOADING", "t7_icon_connect_overlays_bkg", {
-		0x154E30A1DF77FF1
+		"mpui/ok"
 	}, function ( f219_arg0 )
 		return true
 	end )
@@ -2164,12 +2164,12 @@ end
 
 function NavigateToLobby_SelectionList( f237_arg0, f237_arg1, f237_arg2, f237_arg3, f237_arg4 )
 	if f237_arg3 == LuaEnum.UI.DIRECTOR_ONLINE_ZM_CUSTOM then
-		Dvar[0x8CA6583B1EFAB4B]:set( Engine.GetProfileVarInt( f237_arg2, "com_privategame_ranked_zm" ) ~= 0 )
+		Dvar.zm_private_rankedmatch:set( Engine.GetProfileVarInt( f237_arg2, "com_privategame_ranked_zm" ) ~= 0 )
 		Engine[0x95FA783443EBEC3]( f237_arg2 )
 	end
 	local f237_local0 = LobbyData.GetLobbyMenuByName( f237_arg3 )
 	if f237_local0.eGameModes == Enum.eGameModes[0x58ECA70A244C08F] and Engine[0x9E5BE3B4BBA4E0E]( "arena_maintenance" ) == true then
-		LuaUtils.UI_ShowErrorMessageDialog( f237_arg2, 0xDD0FACA77FB825A, 0x2DF6ED539CA406A )
+		LuaUtils.UI_ShowErrorMessageDialog( f237_arg2, "menu/arena_maintenance_desc", "menu/arena_maintenance_caps" )
 		return 
 	end
 	local f237_local1 = Engine[0x9E5BE3B4BBA4E0E]( "probation_public_enabled" )
@@ -2180,18 +2180,18 @@ function NavigateToLobby_SelectionList( f237_arg0, f237_arg1, f237_arg2, f237_ar
 		if f237_local3 > 0 then
 			local f237_local4 = Engine.SecondsAsTime( f237_local3 )
 			if f237_local1 and f237_local0.eGameModes == Enum.eGameModes[0x95910ACF90F64AD] then
-				LuaUtils.UI_ShowErrorMessageDialog( f237_arg2, Engine[0xF9F1239CFD921FE]( "menu/probation_given_public_match", f237_local4 ), 0x9AEEA73CA9BBA3 )
+				LuaUtils.UI_ShowErrorMessageDialog( f237_arg2, Engine[0xF9F1239CFD921FE]( "menu/probation_given_public_match", f237_local4 ), "menu/probation_caps" )
 				return 
 			elseif f237_local2 and f237_local0.eGameModes == Enum.eGameModes[0x58ECA70A244C08F] then
-				LuaUtils.UI_ShowErrorMessageDialog( f237_arg2, Engine[0xF9F1239CFD921FE]( 0x1E60B8AE3979C41, f237_local4 ), 0x9AEEA73CA9BBA3 )
+				LuaUtils.UI_ShowErrorMessageDialog( f237_arg2, Engine[0xF9F1239CFD921FE]( "menu/probation_given_arena_match", f237_local4 ), "menu/probation_caps" )
 				return 
 			end
 		elseif Engine.LobbyHost_AnyClientInProbationForGameMode( f237_local0.eGameModes ) then
 			if f237_local1 and f237_local0.eGameModes == Enum.eGameModes[0x95910ACF90F64AD] then
-				LuaUtils.UI_ShowErrorMessageDialog( f237_arg2, 0x8F60BFC521CBE84 )
+				LuaUtils.UI_ShowErrorMessageDialog( f237_arg2, "menu/probation_party_public_match" )
 				return 
 			elseif f237_local2 and f237_local0.eGameModes == Enum.eGameModes[0x58ECA70A244C08F] then
-				LuaUtils.UI_ShowErrorMessageDialog( f237_arg2, 0x2B597460DFBDD08 )
+				LuaUtils.UI_ShowErrorMessageDialog( f237_arg2, "menu/probation_party_arena_match" )
 				return 
 			end
 		end
@@ -2571,12 +2571,12 @@ end
 function RestartGameImmediate( f291_arg0, f291_arg1 )
 	Engine.SetDvar( "cl_paused", 0 )
 	Dvar[0x4488B7C651BD0EC]:set( 1 )
-	Engine.Exec( f291_arg1, "stopControllerRumble" )
-	Engine.Exec( f291_arg1, "fade 0 0 0 255 0 0 1" )
-	Engine.Exec( f291_arg1, "silence" )
+	Engine.exec( f291_arg1, "stopControllerRumble" )
+	Engine.exec( f291_arg1, "fade 0 0 0 255 0 0 1" )
+	Engine.exec( f291_arg1, "silence" )
 	local f291_local0 = LobbyData.GetCurrentMenuTarget()
-	if (Engine.SessionModeIsMode( Enum[0x1DD23D27A61F09A][0x3E66A586897A605] ) == true) or (Engine.SessionModeIsMode( Enum[0x1DD23D27A61F09A][0xB674220A0C7377] ) == true) or f291_local0["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_CUSTOM ) then
-		Engine.Exec( f291_arg1, "fast_restart" )
+	if (Engine.SessionModeIsMode( Enum[0x1DD23D27A61F09A][0x3E66A586897A605] ) == true) or (Engine.SessionModeIsMode( Enum[0x1DD23D27A61F09A][0xB674220A0C7377] ) == true) or f291_local0.id == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_CUSTOM ) then
+		Engine.exec( f291_arg1, "fast_restart" )
 	else
 		SendOwnMenuResponse( f291_arg0, f291_arg1, "restart_level_zm" )
 	end
@@ -2666,7 +2666,7 @@ function SetupStageResultsWidget( f300_arg0, f300_arg1 )
 	local f300_local1 = f300_local0.StageResults:create( "winningTeam" )
 	f300_local1:set( Enum.team_t[0x97263B3C1ABADF7] )
 	f300_local1 = f300_local0.StageResults:create( "outcomeText" )
-	f300_local1:set( 0x0 )
+	f300_local1:set( "" )
 	f300_arg0:subscribeToGlobalModel( f300_arg1, "PerController", "scriptNotify", function ( model )
 		if Engine.GetModelValue( model ) == 0x21BD3EC422E5463 then
 			local f301_local0 = CoD.GetScriptNotifyData( model )
@@ -2709,16 +2709,16 @@ function SetupObjectiveNotificationWidget( f303_arg0, f303_arg1 )
 	local f303_local1 = f303_local0:create( "showGametypeObjectiveHint" )
 	f303_local1:set( false )
 	f303_local1 = f303_local0:create( "gametypeObjectiveHint" )
-	f303_local1:set( 0x0 )
+	f303_local1:set( "" )
 	f303_local1 = f303_local0:create( "gametypeObjective" )
-	f303_local1:set( 0x0 )
+	f303_local1:set( "" )
 	f303_local1 = f303_local0:create( "gametypeAttackers" )
 	f303_local1:set( false )
 	f303_local1 = f303_local0:create( "gameTypeObjectiveIcon" )
 	f303_local1:set( "" )
 	f303_arg0:subscribeToGlobalModel( f303_arg1, "PerController", "scriptNotify", function ( model )
 		local modelValue = Engine.GetModelValue( model )
-		if modelValue == 0xEE9F12E547BE609 then
+		if modelValue == "show_gametype_objective_hint" then
 			local f304_local1 = {
 				controller = f303_arg1,
 				name = modelValue,
@@ -2786,7 +2786,7 @@ function AddKillstreakReceivedNotification( f306_arg0, f306_arg1, f306_arg2, f30
 			f306_local3 = f306_local4:get()
 		end
 		f306_arg1:appendNotification( {
-			title = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x54EB85A28216D99, Engine[0xF9F1239CFD921FE]( Engine.GetItemName( f306_local1 ) ) ) ),
+			title = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/killstreak_ready", Engine[0xF9F1239CFD921FE]( Engine.GetItemName( f306_local1 ) ) ) ),
 			image = RegisterImage( Engine.GetItemImage( f306_local1 ) ),
 			type = "Killstreak",
 			bindingKBM = f306_local3,
@@ -2807,13 +2807,13 @@ function AddHeroAbilityReceivedNotification( f307_arg0, f307_arg1, f307_arg2, f3
 		local f307_local0 = CoD.GetScriptNotifyData( f307_arg3 )
 		local f307_local1 = f307_local0[1]
 		local f307_local2 = Engine.GetItemName( f307_local1 )
-		local f307_local3 = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xEE9796129C8602E, Engine.ToUpper( Engine[0xF9F1239CFD921FE]( f307_local2 ) ) ) )
-		local f307_local4 = Engine[0xF9F1239CFD921FE]( 0xC0031E0C32601B3 )
-		if f307_local2 == 0x1A5D41D6A08D74E then
-			f307_local4 = Engine[0xF9F1239CFD921FE]( 0x86F1315B244AA64 )
+		local f307_local3 = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/hero_ability_ready", Engine.ToUpper( Engine[0xF9F1239CFD921FE]( f307_local2 ) ) ) )
+		local f307_local4 = Engine[0xF9F1239CFD921FE]( "menu/activate_hero_ability_instr" )
+		if f307_local2 == "weapon/gadget_resurrect" then
+			f307_local4 = Engine[0xF9F1239CFD921FE]( "menu/activate_rejack_instr" )
 		end
 		if Engine[0xA79B18C6B32DEA3]( Engine[0xB98952F69D937F9]( f307_local1 ) ) then
-			f307_local4 = Engine[0xF9F1239CFD921FE]( 0x1F4597DF81CF039 )
+			f307_local4 = Engine[0xF9F1239CFD921FE]( "menu/activate_hero_weapon_instr" )
 		end
 		f307_arg1:appendNotification( {
 			title = f307_local3,
@@ -2845,7 +2845,7 @@ function AddSlotUnlockedNotification( f308_arg0, f308_arg1, f308_arg2, f308_arg3
 			else
 				f308_arg1:appendNotification( {
 					title = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xB966AF8CFF52CEE, f308_local2 ) ),
-					description = 0x0,
+					description = "",
 					type = "Slot",
 					priority = 0
 				} )
@@ -2863,7 +2863,7 @@ function AddZombieNotification( f309_arg0, f309_arg1, f309_arg2, f309_arg3 )
 		f309_arg1:appendNotification( {
 			clip = "TextandImageBasic_Story" .. Engine[0xBBE3328FE08B8C7]() or 0 + 1,
 			title = Engine.Localize( Engine.GetIString( f309_local0[1], "CS_LOCALIZED_STRINGS" ) ),
-			description = 0x0
+			description = ""
 		} )
 	end
 end
@@ -2873,7 +2873,7 @@ function AddZombieRushNotification( f310_arg0, f310_arg1, f310_arg2, f310_arg3 )
 	f310_arg1:appendNotification( {
 		clip = "TextandImage" .. f310_arg3,
 		title = Engine.Localize( Engine.GetIString( f310_local0[1], "CS_LOCALIZED_STRINGS" ) ),
-		description = 0x0
+		description = ""
 	} )
 end
 
@@ -2885,9 +2885,9 @@ function AddZombieBGBNotification( f311_arg0, f311_arg1, f311_arg2, f311_arg3 )
 		local f311_local1 = f311_local0[1]
 		f311_arg1:appendNotification( {
 			clip = "TextandImageBGB",
-			title = Engine[0xF9F1239CFD921FE]( Engine.GetItemName( f311_local1, Enum[0x6EB546760F890D2][0x48CD0338EE0B3AE], Enum.eModes[0x3723205FAE52C4A] ) ),
-			description = Engine[0xF9F1239CFD921FE]( Engine.GetItemDesc( f311_local1, Enum[0x6EB546760F890D2][0x48CD0338EE0B3AE], Enum.eModes[0x3723205FAE52C4A] ) ),
-			bgbImage = RegisterImage( GetItemImageForIndex( f311_local1, Enum[0x6EB546760F890D2][0x48CD0338EE0B3AE], Enum.eModes[0x3723205FAE52C4A] ) )
+			title = Engine[0xF9F1239CFD921FE]( Engine.GetItemName( f311_local1, Enum[0x6EB546760F890D2][0x48CD0338EE0B3AE], Enum.eModes.mode_zombies ) ),
+			description = Engine[0xF9F1239CFD921FE]( Engine.GetItemDesc( f311_local1, Enum[0x6EB546760F890D2][0x48CD0338EE0B3AE], Enum.eModes.mode_zombies ) ),
+			bgbImage = RegisterImage( GetItemImageForIndex( f311_local1, Enum[0x6EB546760F890D2][0x48CD0338EE0B3AE], Enum.eModes.mode_zombies ) )
 		} )
 	end
 end
@@ -2899,9 +2899,9 @@ function AddZombieBGBTokenNotification( f312_arg0, f312_arg1, f312_arg2, f312_ar
 		f312_arg0:playSound( "zmb_bgb_token" )
 		f312_arg1:appendNotification( {
 			clip = "TextandImageBGBToken",
-			title = Engine[0xF9F1239CFD921FE]( 0x8BDEBA40AFA3B45 ),
-			description = Engine[0xF9F1239CFD921FE]( 0xB2B401DDF606C74 ),
-			bgbImage = RegisterImage( 0x84B4BDBA28C85D )
+			title = Engine[0xF9F1239CFD921FE]( "zmui/bgb_token_award_notification_title" ),
+			description = Engine[0xF9F1239CFD921FE]( "zmui/bgb_token_award_notification_desc" ),
+			bgbImage = RegisterImage( "t7_hud_zm_vial_256" )
 		} )
 	end
 end
@@ -3335,7 +3335,7 @@ function BubblegumPackOptionsRename( f356_arg0, f356_arg1, f356_arg2 )
 	local f356_local0 = f356_arg0:getModel( f356_arg2, "bgbPackIndex" )
 	if f356_local0 then
 		local f356_local1 = Engine.GetModelValue( f356_local0 )
-		Engine.Exec( f356_arg2, "ui_keyboard_new " .. Enum.KeyboardType[0xC990C3C5050A0ED] )
+		Engine.exec( f356_arg2, "ui_keyboard_new " .. Enum.KeyboardType[0xC990C3C5050A0ED] )
 	end
 end
 
@@ -3370,7 +3370,7 @@ function ClassOptionsCopyLoadout( f358_arg0, f358_arg1, f358_arg2, f358_arg3 )
 		local f358_local4 = f358_local2.classNum:get()
 		if f358_local3 and f358_local4 then
 			Engine[0x6806E51D20F4DCC]( f358_arg2, f358_local3, f358_local4, f358_local0 )
-			if f358_local0 == Enum.eModes[0x3723205FAE52C4A] then
+			if f358_local0 == Enum.eModes.mode_zombies then
 				Engine.ExecNow( f358_arg2, "copybubblegumpack " .. f358_local3 .. " " .. f358_local4 )
 			end
 			SaveLoadoutGeneric( f358_arg2 )
@@ -3405,11 +3405,11 @@ function ClassOptionsResetToDefault( f360_arg0, f360_arg1, f360_arg2, f360_arg3 
 	local f360_local0 = CoD.BaseUtility.GetMenuSessionMode( f360_arg3 )
 	local f360_local1 = CoD.BaseUtility.GetMenuModel( f360_arg3 )
 	local f360_local2 = f360_arg1:getModel()
-	local f360_local3 = LuaUtils.IsArenaMode() and 0x4FF2B60D157BBB2 or 0x705A80062BD09C2
+	local f360_local3 = LuaUtils.IsArenaMode() and "mp_arena_default_loadouts" or "mp_default_loadouts"
 	local f360_local4 = nil
-	if f360_local0 == Enum.eModes[0x60063C67132EB69] then
-		f360_local3 = 0x1C53105E8C011C4
-	elseif f360_local0 == Enum.eModes[0x3723205FAE52C4A] then
+	if f360_local0 == Enum.eModes.mode_campaign then
+		f360_local3 = "cp_default_loadouts"
+	elseif f360_local0 == Enum.eModes.mode_zombies then
 		f360_local3 = "zm_default_loadouts"
 		local f360_local5 = Engine.GetModelForController( f360_arg2 )
 		f360_local5 = f360_local5.selectedZMStory
@@ -3425,7 +3425,7 @@ function ClassOptionsResetToDefault( f360_arg0, f360_arg1, f360_arg2, f360_arg3 
 			if f360_local9 then
 				local f360_local10 = Engine[0xE00B2F29271C60B]( f360_local3 )
 				CoDShared.SetDefaultLoadoutForClass( f360_local9, f360_local8, f360_local7, f360_local10, f360_local0, f360_local4 )
-				if f360_local0 == Enum.eModes[0x3723205FAE52C4A] then
+				if f360_local0 == Enum.eModes.mode_zombies then
 					CoDShared.SetDefaultBubbleGumBuffsForClass( f360_local9, f360_local8, f360_local7, f360_local10, f360_local0, f360_local4 )
 					DataSourceHelperRecreate( f360_arg2, "BGBLoadout" )
 				end
@@ -3461,7 +3461,7 @@ end
 
 function OpenBuyExtraSlotsPackDialog( f363_arg0, f363_arg1, f363_arg2 )
 	CoD.OverlayUtility.CreateOverlay( f363_arg2, f363_arg0, "PurchaseExtraSlotsConfirmation", f363_arg2, {
-		displayText = 0xE3634DA619F3701,
+		displayText = "menu/media_storage_pack",
 		itemCODPointCost = CoD.CACUtility.GetExtraSlotCODPointCost()
 	} )
 end
@@ -3497,9 +3497,9 @@ end
 function UpdateDifficulty( f366_arg0, f366_arg1, f366_arg2 )
 	local f366_local0 = Engine.GetProfileVarInt( f366_arg2, "g_gameskill" ) or 0
 	local f366_local1 = LobbyData.GetLobbyMenuByName( LuaEnum.UI.DIRECTOR_LAN_CP )
-	if f366_arg1 == f366_local1[0x4BCADBA8E631B86] then
+	if f366_arg1 == f366_local1.name then
 		Engine.SetProfileVar( f366_arg2, "g_gameskill", GetCPDifficulty( f366_arg2, "g_gameskill_offline_cp" ) or f366_local0 )
-		Engine.Exec( f366_arg2, "updategamerprofile" )
+		Engine.exec( f366_arg2, "updategamerprofile" )
 		
 	else
 		
@@ -3541,10 +3541,10 @@ function SetSelectedStoreCategory( f372_arg0, f372_arg1, f372_arg2 )
 			CoD.perController[f372_arg2].selectedStoreCategory = f372_local1
 			if f372_local1 == "featured" or f372_local1 == "codpoints" then
 				if f372_local2 ~= "featured" and f372_local2 ~= "codpoints" then
-					ShowPsStoreIcon( f372_arg2, Enum[0x784DC8CE13E1E13][0xF4B7EC4DCAA8AC4] )
+					ShowPsStoreIcon( f372_arg2, Enum[0x784DC8CE13E1E13].center )
 				end
 			else
-				ShowPsStoreIcon( f372_arg2, Enum[0x784DC8CE13E1E13][0xF4B7EC4DCAA8AC4] )
+				ShowPsStoreIcon( f372_arg2, Enum[0x784DC8CE13E1E13].center )
 			end
 			Engine[0xED84BE5BCA388FA]( f372_arg2, f372_local1, false )
 		end
@@ -3558,7 +3558,7 @@ function AutoSelectFeaturedCategory( f373_arg0, f373_arg1 )
 		if IsDurango() then
 			f373_local0 = false
 		end
-		ShowPsStoreIcon( f373_arg1, Enum[0x784DC8CE13E1E13][0xF4B7EC4DCAA8AC4] )
+		ShowPsStoreIcon( f373_arg1, Enum[0x784DC8CE13E1E13].center )
 		Engine[0xED84BE5BCA388FA]( f373_arg1, "featured", f373_local0 )
 	end
 end
@@ -3851,7 +3851,7 @@ end
 function OpenLocalClipPublishPrompt( f397_arg0, f397_arg1, f397_arg2, f397_arg3, f397_arg4 )
 	local f397_local0 = Engine[0x23AF33F30C69410]( Enum.LobbyModule[0xC46B73E8E18BA2], Engine[0xC3DF042E7492B66]( Enum.LobbyModule[0xC46B73E8E18BA2] ) )
 	if f397_local0.fileID ~= CoD.FileshareUtility.GetSelectedItemProperty( "fileId" ) then
-		LuaUtils.UI_ShowErrorMessageDialog( f397_arg2, 0xC08DDDCF42A89F1 )
+		LuaUtils.UI_ShowErrorMessageDialog( f397_arg2, "menu/fileshare_publish_only_after_downloading" )
 		return 
 	else
 		CoD.FileshareUtility.OpenPublishPrompt( f397_arg0, f397_arg2, "clip", CoD.FileshareUtility.GetSelectedItemProperty( "fileName" ), CoD.FileshareUtility.GetSelectedItemProperty( "fileDescription" ), PublishClip )
@@ -3895,7 +3895,7 @@ end
 function OpenLocalScreenshotsPublishPrompt( f400_arg0, f400_arg1, f400_arg2, f400_arg3, f400_arg4 )
 	local f400_local0 = CoD.FileshareUtility.GetSelectedItemProperty( "fileId" )
 	if Engine.IsScreenshotReady( Enum.ScreenshotViewType[0x757495F8281F7D2], f400_local0 ) == false or Engine.IsScreenshotReady( Enum.ScreenshotViewType[0x32D90B2AD4019FE], f400_local0 ) == false then
-		LuaUtils.UI_ShowErrorMessageDialog( f400_arg2, 0xB2A1F25CCD4E630 )
+		LuaUtils.UI_ShowErrorMessageDialog( f400_arg2, "menu/upload_fail_due_to_screenshot_download" )
 		return 
 	else
 		CoD.FileshareUtility.OpenPublishPrompt( f400_arg0, f400_arg2, "screenshot", CoD.FileshareUtility.GetSelectedItemProperty( "fileName" ), CoD.FileshareUtility.GetSelectedItemProperty( "fileDescription" ), PublishScreenshot )
@@ -4054,7 +4054,7 @@ function FileshareBookmarkRecentGame( f413_arg0 )
 	end
 	if f413_local3 ~= nil and f413_local3 ~= Engine.DefaultID64Value() then
 		Engine.BookmarkRecentGame( f413_arg0, f413_local3 )
-		CoD.OverlayUtility.ShowToast( "RecentGameBookmarked", Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xA009F37E1567367 ) ), Engine[0xF9F1239CFD921FE]( 0x6534C8ED6B43677 ), "uie_bookmark" )
+		CoD.OverlayUtility.ShowToast( "RecentGameBookmarked", Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/notice" ) ), Engine[0xF9F1239CFD921FE]( "menu/game_bookmarked" ), "uie_bookmark" )
 	end
 end
 
@@ -4645,60 +4645,60 @@ end
 function GetGameplayOptionsAndSendToDlog( f470_arg0 )
 	local f470_local0 = {}
 	for f470_local4, f470_local5 in ipairs( {
-		0x449C35D713F0591,
-		0xC0183841682A478,
-		0x8E2603F64924C43,
+		"hitmarkers_enable",
+		"hitmarkers_damage_type",
+		"healthbar_show_ally",
 		"healthbar_show_enemy",
-		0x908DA91B796EF6C,
-		0x4AE3D347A07EF76,
+		"cursor_immediate_lock_map",
+		"cursor_immediate_lock_inventory",
 		"show_real_names",
-		0xA1248989633ACD3,
-		0x149D47F55A63FCE,
-		0x8307BBD1B08F4F6,
-		0x2067E82557971DD,
-		0x5C8A34838083469,
-		0x2A230CA7EF4FC3B,
-		0x1ACC323E6BB7F60,
-		0x8CE07BBB4571454,
-		0x1AE8EB2799AFFDD,
-		0x40948D6DAD927CC,
-		0x3ACD00BFA946E04,
-		0x2F32416F055FB97,
-		0x776C366A031E7AA,
-		0xE40A5983CFC89E,
-		0xE097D1CD549FC9F,
-		0x9EC6E9BBF1E624,
-		0xA8185C366CE482D,
+		"chat_profanity_filter",
+		"zm_cartoonmode",
+		"display_crosshair",
+		"ui_play_intro_movies",
+		"show_global_chat",
+		"show_team_chat",
+		"out_of_ammo_auto_weapon_change",
+		"weapon_cycle_disable_wrap",
+		"windows_key_disable",
+		"vehicle_alternate_control",
+		"vehicle_alternate_control_water",
+		"trophysystem_toggle",
+		"molotov_toggle",
+		"fraggrenade_toggle",
+		"slowgrenade_toggle",
+		"combataxe_toggle",
+		"swatgrenade_toggle",
 		"altads_toggle",
 		"semtex_toggle",
-		0x7752D94F07335E2,
-		0x822BC17B9C05B55,
-		0x390921F2448418A,
-		0xDD0F63C56107AFE,
-		0xEB73EA37514AB9B,
-		0x6DE9FB5C4249D93,
-		0x8F129F338DA3F71,
+		"supplypod_toggle",
+		"radiation_toggle",
+		"radiation_inversecam",
+		"tripwire_alternate",
+		"sensordart_toggle",
+		"grapple_autohold",
+		"spawnbeacon_toggle",
 		"smartcover_toggle",
-		0x4450BE10E911B4A,
-		0x638BD10A42E5F63,
-		0x66E5DDF4F903021,
-		0xC6C61740D1F775A,
-		0x5162012A7259ACA,
-		0x7F5133E1E3E624A
+		"concertina_toggle",
+		"smokescreen_toggle",
+		"seeker_mine_toggle",
+		"cymbal_monkey_toggle",
+		"claymore_toggle",
+		"health_regen_toggle"
 	} ) do
-		if f470_local5 == 0x6DE9FB5C4249D93 then
-			f470_local0[0x6DE9FB5C4249D93] = CoD.PCOptionsUtility.GetCurrentOptionValue( f470_local5, f470_arg0 ) ~= 0
+		if f470_local5 == "grapple_autohold" then
+			f470_local0.grapple_autohold = CoD.PCOptionsUtility.GetCurrentOptionValue( f470_local5, f470_arg0 ) ~= 0
 		end
-		if f470_local5 == 0x149D47F55A63FCE then
-			f470_local0[0x149D47F55A63FCE] = CoD.PCOptionsUtility.GetCurrentOptionValue( f470_local5, f470_arg0 ) ~= 0
+		if f470_local5 == "zm_cartoonmode" then
+			f470_local0.zm_cartoonmode = CoD.PCOptionsUtility.GetCurrentOptionValue( f470_local5, f470_arg0 ) ~= 0
 		else
 			f470_local0[f470_local5] = CoD.PCOptionsUtility.GetCurrentOptionValue( f470_local5, f470_arg0 ) ~= 0
 		end
 	end
-	f470_local0[0x659B9A54E5830C7] = Dvar[0x659B9A54E5830C7]:get()
-	f470_local0[0x7ED85B05E9BCDB9] = Dvar[0x7ED85B05E9BCDB9]:get()
-	f470_local0[0xB790F54FC3DEE14] = Dvar[0x4EB1835CF0F023D]:get()
-	Engine[0xDE279ECDDDD966]( f470_arg0, 0x21034E1157F040C, f470_local0 )
+	f470_local0.m_mousesensitivity = Dvar.m_mousesensitivity:get()
+	f470_local0.cg_fov_default = Dvar.cg_fov_default:get()
+	f470_local0.weapon_cycle_delay = Dvar[0x4EB1835CF0F023D]:get()
+	Engine[0xDE279ECDDDD966]( f470_arg0, "dlog_event_gameplay_options", f470_local0 )
 end
 
 function GetKeybindsAndSendToDlog( f471_arg0 )
@@ -4882,7 +4882,7 @@ function GetKeybindsAndSendToDlog( f471_arg0 )
 		f471_local1[Engine[0xC53F8D38DF9042B]( f471_local9 )] = f471_local8
 	end
 	f471_local1[0x88C9F291EEBF570] = Dvar.cl_bindings_presetId:get()
-	Engine[0xDE279ECDDDD966]( f471_arg0, 0x519B7131242305E, f471_local1 )
+	Engine[0xDE279ECDDDD966]( f471_arg0, "dlog_event_keybinds_gp", f471_local1 )
 end
 
 function DispatchOptionRefreshEvent( f473_arg0, f473_arg1 )
@@ -4919,7 +4919,7 @@ end
 function ResetPCGraphicsOptions( f477_arg0, f477_arg1, f477_arg2, f477_arg3 )
 	Engine.ResetHardwareProfileSettings( f477_arg2 )
 	Engine.SaveHardwareProfile()
-	Engine.Exec( nil, "vid_restart" )
+	Engine.exec( nil, "vid_restart" )
 	CoD.PCOptionsUtility.RevertPCHardwareChanges( f477_arg0, f477_arg2 )
 	CoD.PCOptionsUtility.RefreshAllOptions( f477_arg1, f477_arg2 )
 	CoD.PCOptionsUtility.DelayVRAMBarUpdate( f477_arg3:getParent(), f477_arg2, 0 )
@@ -4950,8 +4950,8 @@ function Gunsmith_ClearSelectedGunsmithVariantStats( f482_arg0 )
 	local f482_local0 = CoD.perController[f482_arg0].gunsmithVariantModel
 	if f482_local0 then
 		local f482_local1 = Engine.GetModelValue( Engine.GetModel( f482_local0, "variantIndex" ) )
-		CoD.CraftUtility.Gunsmith.ClearVariantStats( f482_arg0, f482_local1, Enum.eModes[0x83EBA96F36BC4E5] )
-		CoD.CraftUtility.Gunsmith.ClearVariantStats( f482_arg0, f482_local1, Enum.eModes[0x60063C67132EB69] )
+		CoD.CraftUtility.Gunsmith.ClearVariantStats( f482_arg0, f482_local1, Enum.eModes.mode_multiplayer )
+		CoD.CraftUtility.Gunsmith.ClearVariantStats( f482_arg0, f482_local1, Enum.eModes.mode_campaign )
 	end
 end
 
@@ -4973,8 +4973,8 @@ function Gunsmith_ClearCACWithUpdatedVariant( f483_arg0, f483_arg1 )
 		end
 	end
 	
-	f483_local2( Enum.eModes[0x60063C67132EB69] )
-	f483_local2( Enum.eModes[0x83EBA96F36BC4E5] )
+	f483_local2( Enum.eModes.mode_campaign )
+	f483_local2( Enum.eModes.mode_multiplayer )
 end
 
 function Gunsmith_SnapshotToggleDisplayProperty( f486_arg0, f486_arg1, f486_arg2 )
@@ -5151,14 +5151,14 @@ function RefreshLobbyRoom( f497_arg0, f497_arg1 )
 		local f497_local6 = LobbyData.GetCurrentMenuTarget()
 		if f497_local2:get() and f497_local1:get() == Enum.LobbyMainMode[0x7E41449995CD57E] and IsLobbyMode( Enum.LobbyMode[0xBB5FD8AEFC4D4B9] ) then
 			SendCustomClientScriptMenuStateChangeNotify( f497_arg1, "Main", true, "matchmaking" )
-		elseif not f497_local3:get() and f497_local6[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_ONLINE then
+		elseif not f497_local3:get() and f497_local6.name == LuaEnum.UI.DIRECTOR_ONLINE then
 			SendCustomClientScriptMenuStateChangeNotify( f497_arg1, "Main", true, "room3" )
 		else
 			SendCustomClientScriptMenuStateChangeNotify( f497_arg1, "Main", true, f497_local5 )
 		end
 		f497_arg0.previousRoom = f497_local5
 	end
-	if LuaUtils.GetEModeForLobbyMainMode( f497_local1:get() ) == Enum.eModes[0x60063C67132EB69] and not IsFirstTimeSetup( f497_arg1, Enum.eModes[0x60063C67132EB69] ) then
+	if LuaUtils.GetEModeForLobbyMainMode( f497_local1:get() ) == Enum.eModes.mode_campaign and not IsFirstTimeSetup( f497_arg1, Enum.eModes.mode_campaign ) then
 		CoD.CPUtility.EnteredCP_FlowComplete( f497_arg1 )
 	end
 end
@@ -5253,7 +5253,7 @@ function UpdatePlayerInspectionWeapon( f500_arg0, f500_arg1, f500_arg2 )
 end
 
 function UpdateGamerprofile( f501_arg0, f501_arg1, f501_arg2 )
-	Engine.Exec( f501_arg2, "updategamerprofile" )
+	Engine.exec( f501_arg2, "updategamerprofile" )
 end
 
 function OpenGroupEmblemSelect( f502_arg0, f502_arg1, f502_arg2, f502_arg3, f502_arg4 )
@@ -5269,7 +5269,7 @@ function OpenGroupEmblemSelect( f502_arg0, f502_arg1, f502_arg2, f502_arg3, f502
 	if f502_local0 then
 		OpenOverlay( f502_arg0, "EmblemSelect", f502_arg2, {
 			_selectGroupEmblem = true,
-			_storageClientBuffer = CoD.BreadcrumbUtility.GetStorageClientBufferForPlayer( f502_arg2, Enum.eModes[0x83EBA96F36BC4E5] )
+			_storageClientBuffer = CoD.BreadcrumbUtility.GetStorageClientBufferForPlayer( f502_arg2, Enum.eModes.mode_multiplayer )
 		} )
 	end
 end
@@ -5300,7 +5300,7 @@ function OpenEmblemSelect( f503_arg0, f503_arg1, f503_arg2, f503_arg3, f503_arg4
 	if f503_local0 then
 		OpenOverlay( f503_arg0, "EmblemSelect", f503_arg2, {
 			_isEditor = f503_arg5,
-			_storageClientBuffer = CoD.BreadcrumbUtility.GetStorageClientBufferForPlayer( f503_arg2, Enum.eModes[0x83EBA96F36BC4E5] )
+			_storageClientBuffer = CoD.BreadcrumbUtility.GetStorageClientBufferForPlayer( f503_arg2, Enum.eModes.mode_multiplayer )
 		} )
 	end
 end
@@ -5315,7 +5315,7 @@ function OpenEmblemEditor( f504_arg0, f504_arg1, f504_arg2, f504_arg3 )
 	else
 		CoD.CraftUtility.EmblemSelect_ChooseEmblem( f504_arg1, f504_arg0, f504_arg2 )
 		OpenOverlay( f504_arg1, "EmblemEditor", f504_arg2, {
-			_storageClientBuffer = CoD.BreadcrumbUtility.GetStorageClientBufferForPlayer( f504_arg2, Enum.eModes[0x83EBA96F36BC4E5] )
+			_storageClientBuffer = CoD.BreadcrumbUtility.GetStorageClientBufferForPlayer( f504_arg2, Enum.eModes.mode_multiplayer )
 		} )
 	end
 end
@@ -5345,7 +5345,7 @@ function OpenCallingCards( f507_arg0, f507_arg1, f507_arg2, f507_arg3, f507_arg4
 	if f507_arg3 and f507_arg3 ~= "" then
 		f507_local0.callingCardShowcaseSlot = f507_arg3
 	end
-	f507_local0._storageClientBuffer = CoD.BreadcrumbUtility.GetStorageClientBufferForPlayer( f507_arg2, Enum.eModes[0x83EBA96F36BC4E5] )
+	f507_local0._storageClientBuffer = CoD.BreadcrumbUtility.GetStorageClientBufferForPlayer( f507_arg2, Enum.eModes.mode_multiplayer )
 	f507_local0._sessionMode = f507_arg4._sessionMode
 	f507_arg4:openOverlay( "CallingCards", f507_arg2, f507_local0 )
 end
@@ -5359,7 +5359,7 @@ function OpenGroups( f508_arg0, f508_arg1, f508_arg2, f508_arg3, f508_arg4 )
 end
 
 function OpenChooseCharacterLoadout( f509_arg0, f509_arg1, f509_arg2, f509_arg3, f509_arg4 )
-	CoD.PlayerRoleUtility.customizationMode = Enum.eModes[0x83EBA96F36BC4E5]
+	CoD.PlayerRoleUtility.customizationMode = Enum.eModes.mode_multiplayer
 	CoD.LobbyUtility.OpenChooseCharacterLoadout( f509_arg4, f509_arg2, f509_arg3 )
 end
 
@@ -5393,7 +5393,7 @@ function TimelineEditorPreviewClip( f515_arg0, f515_arg1, f515_arg2 )
 		name = "close_all_ingame_menus",
 		controller = f515_arg2
 	} )
-	Engine.Exec( f515_arg2, "demo_previewclip" )
+	Engine.exec( f515_arg2, "demo_previewclip" )
 end
 
 function TimelineEditorFilmOptions( f516_arg0, f516_arg1, f516_arg2 )
@@ -5434,7 +5434,7 @@ end
 
 function IncreaseSafeAreaVertical( f520_arg0, f520_arg1, f520_arg2, f520_arg3, f520_arg4 )
 	if f520_arg3 == nil then
-		f520_arg3 = 0xAAB73AB54470DF2
+		f520_arg3 = "safeareatweakable_vertical"
 	end
 	if not CoD.SafeArea or not CoD.SafeArea.Maximum or not CoD.SafeArea.AdjustAmount then
 		return 
@@ -5451,7 +5451,7 @@ end
 
 function DecreaseSafeAreaVertical( f521_arg0, f521_arg1, f521_arg2, f521_arg3, f521_arg4 )
 	if f521_arg3 == nil then
-		f521_arg3 = 0xAAB73AB54470DF2
+		f521_arg3 = "safeareatweakable_vertical"
 	end
 	if not CoD.SafeArea or not CoD.SafeArea.Maximum or not CoD.SafeArea.AdjustAmount then
 		return 
@@ -5468,7 +5468,7 @@ end
 
 function IncreaseSafeAreaHorizontal( f522_arg0, f522_arg1, f522_arg2, f522_arg3, f522_arg4 )
 	if f522_arg3 == nil then
-		f522_arg3 = 0x169739596DE678
+		f522_arg3 = "safeareatweakable_horizontal"
 	end
 	if not CoD.SafeArea or not CoD.SafeArea.Maximum or not CoD.SafeArea.AdjustAmount then
 		return 
@@ -5485,7 +5485,7 @@ end
 
 function DecreaseSafeAreaHorizontal( f523_arg0, f523_arg1, f523_arg2, f523_arg3, f523_arg4 )
 	if f523_arg3 == nil then
-		f523_arg3 = 0x169739596DE678
+		f523_arg3 = "safeareatweakable_horizontal"
 	end
 	if not CoD.SafeArea or not CoD.SafeArea.Maximum or not CoD.SafeArea.AdjustAmount then
 		return 
@@ -5531,9 +5531,9 @@ end
 function ResetSafeAreaHorizontal( f526_arg0, f526_arg1, f526_arg2 )
 	local f526_local0, f526_local1, f526_local2 = Engine[0x6913E41040C17FD]( f526_arg2 )
 	if f526_local0 / f526_local1 <= CoD.SafeArea.DefaultWidthHeightRatioPC then
-		SetSafeArea( f526_arg0, f526_arg1, f526_arg2, 0x7664E60A992DFDA, CoD.SafeArea.Maximum )
+		SetSafeArea( f526_arg0, f526_arg1, f526_arg2, "hudboundstweakable_horizontal", CoD.SafeArea.Maximum )
 	else
-		SetSafeArea( f526_arg0, f526_arg1, f526_arg2, 0x7664E60A992DFDA, CoD.SafeArea.DefaultWidthHeightRatioPC * f526_local1 / f526_local0 )
+		SetSafeArea( f526_arg0, f526_arg1, f526_arg2, "hudboundstweakable_horizontal", CoD.SafeArea.DefaultWidthHeightRatioPC * f526_local1 / f526_local0 )
 	end
 	DispatchEventToRoot( f526_arg0, "update_safe_area", f526_arg2 )
 end
@@ -5594,7 +5594,7 @@ function OpenCustomizePrestigeMenu( f532_arg0, f532_arg1, f532_arg2 )
 	if CheckIfFeatureIsBanned( f532_arg1, LuaEnum.FEATURE_BAN.PRESTIGE_EXTRAS ) then
 		LuaUtils.UI_ShowErrorMessageDialog( f532_arg1, GetFeatureBanInfo( f532_arg1, LuaEnum.FEATURE_BAN.PRESTIGE_EXTRAS ) )
 		return 
-	elseif CoD.PrestigeUtility.GetPrestigeGameMode() == Enum.eModes[0x3723205FAE52C4A] then
+	elseif CoD.PrestigeUtility.GetPrestigeGameMode() == Enum.eModes.mode_zombies then
 		OpenOverlay( f532_arg0, "Prestige_CustomizePrestigeIconZM", f532_arg1, "", "" )
 	else
 		OpenOverlay( f532_arg0, "Prestige_CustomizePrestigeIcon", f532_arg1, "", "" )
@@ -5610,7 +5610,7 @@ function OpenPermanentUnlockMenu( f533_arg0, f533_arg1, f533_arg2 )
 		CoD.PrestigeUtility.previousStatsMilestonePath = CoD.statsMilestonePath
 		CoD.gameMode = "MP"
 		CoD.statsMilestonePath = "gamedata/stats/mp/statsmilestones"
-		SetHeadingKickerText( 0x56F8CED179E36FD )
+		SetHeadingKickerText( "menu/permanent_unlocks" )
 		CoD.PrestigeUtility.CreatePermanentUnlockTokenModel( f533_arg1 )
 		local f533_local0 = Engine.CreateModel( Engine.GetModelForController( f533_arg1 ), "PermanentlyUnlockClass" )
 		CoD.CACUtility.GetCustomClassModel( f533_arg1, 0, f533_local0 )
@@ -5666,7 +5666,7 @@ function SetMap( f541_arg0, f541_arg1, f541_arg2 )
 		f541_local0 = CoD.MapUtility.MapsTable[f541_arg1]
 	end
 	if f541_local0[0xB514EC7141EE89B] and f541_local0[0xB514EC7141EE89B] ~= "" then
-		Engine.Exec( f541_arg0, f541_local0[0xB514EC7141EE89B] )
+		Engine.exec( f541_arg0, f541_local0[0xB514EC7141EE89B] )
 	end
 	local f541_local1 = Engine[0xC3DF042E7492B66]( Enum.LobbyModule[0x98EA1BB7164D103] )
 	if f541_local0[0xE2D141CB22F2813] and f541_local0[0xE2D141CB22F2813] ~= "" then
@@ -5771,7 +5771,7 @@ function OpenCustomGamePublishPrompt( f552_arg0, f552_arg1, f552_arg2, f552_arg3
 		f552_local2 = "Custom Game"
 	end
 	if not f552_local3 then
-		f552_local3 = 0x0
+		f552_local3 = ""
 	end
 	CoD.FileshareUtility.OpenPublishPrompt( f552_arg4, f552_arg2, "customgame", f552_local2, f552_local3, PublishCustomGame )
 end
@@ -5827,7 +5827,7 @@ function OpenrRecentCustomGames( f556_arg0, f556_arg1, f556_arg2 )
 end
 
 function SetGameType( f557_arg0, f557_arg1 )
-	Engine.Exec( f557_arg0, "resetCustomGametype" )
+	Engine.exec( f557_arg0, "resetCustomGametype" )
 	local f557_local0 = CoDShared.IsGametypeTeamBased()
 	if f557_arg1 == "" then
 		return 
@@ -5845,10 +5845,10 @@ function SetGameType( f557_arg0, f557_arg1 )
 			Engine[0xA468BF674010CE8]( f557_local2, f557_local3 )
 		end
 	end
-	Engine.Exec( f557_arg0, "xupdatepartystate" )
+	Engine.exec( f557_arg0, "xupdatepartystate" )
 	Engine.SetProfileVar( f557_arg0, CoD.profileKey_gametype, f557_arg1 )
 	Engine.CommitProfileChanges( f557_arg0 )
-	Engine.Exec( f557_arg0, "lobby_setgametype " .. f557_arg1 )
+	Engine.exec( f557_arg0, "lobby_setgametype " .. f557_arg1 )
 	local f557_local1 = Engine.GetGlobalModel()
 	f557_local1 = f557_local1:create( "lobbyRoot.selectedGameType" )
 	f557_local1:set( Engine[0xC53F8D38DF9042B]( f557_arg1 ) )
@@ -5906,13 +5906,13 @@ function ChatClientInputArrangeText( f563_arg0, f563_arg1, f563_arg2 )
 end
 
 function ResetControlsToDefault( f564_arg0, f564_arg1, f564_arg2, f564_arg3 )
-	Engine.Exec( f564_arg2, "resetprofilecommon" )
-	Engine.Exec( f564_arg2, "updategamerprofile" )
-	Engine.Exec( f564_arg2, "storagereset stats_mp_offline" )
+	Engine.exec( f564_arg2, "resetprofilecommon" )
+	Engine.exec( f564_arg2, "updategamerprofile" )
+	Engine.exec( f564_arg2, "storagereset stats_mp_offline" )
 	CoD.OverlayUtility.AddSystemOverlay( "ResetControlsToDefault", {
 		menuName = "SystemOverlay_Compact",
-		title = 0x49770A897DE23D4,
-		description = 0x409E828997F3F6C,
+		title = "menu/reset_to_default_caps",
+		description = "menu/reset_to_defaults_successful",
 		[CoD.OverlayUtility.GoBackPropertyName] = CoD.OverlayUtility.DefaultGoBack,
 		categoryType = CoD.OverlayUtility.OverlayTypes.GenericMessage,
 		listDatasource = function ()
@@ -5943,8 +5943,8 @@ function ChangeLanguage( f568_arg0, f568_arg1, f568_arg2, f568_arg3, f568_arg4, 
 	else
 		local f568_local0 = f568_arg0
 		CoD.OverlayUtility.AddAutoDetectOverlay( "Restart_Popup", {
-			title = 0xA009F37E1567367,
-			description = 0x5A171736553C17D,
+			title = "menu/notice",
+			description = "menu/restart_warning",
 			categoryType = CoD.OverlayUtility.OverlayTypes.Alert,
 			options = function ()
 				return {
@@ -5968,7 +5968,7 @@ function ChangeLanguage( f568_arg0, f568_arg1, f568_arg2, f568_arg3, f568_arg4, 
 							end
 						end
 						,
-						text = 0x5BE4A02B20F31F1
+						text = "menu/ok"
 					}
 				}
 			end
@@ -6010,15 +6010,15 @@ function CombatRecordSetHeadingKickerTextToCombatRecordGameMode()
 end
 
 function CombatRecordSetHeadingKickerTextToCombatRecordMode()
-	if CoD.GetCombatRecordMode() ~= Enum.eModes[0x83EBA96F36BC4E5] then
+	if CoD.GetCombatRecordMode() ~= Enum.eModes.mode_multiplayer then
 		CombatRecordSetHeadingKickerTextToCombatRecordGameMode()
 		return 
 	end
-	local f576_local0 = Engine[0xF9F1239CFD921FE]( 0x7BAA05710CE37D3 )
+	local f576_local0 = Engine[0xF9F1239CFD921FE]( "mpui/summary_caps" )
 	if CoD.CombatRecordMode == "public" then
-		f576_local0 = Engine[0xF9F1239CFD921FE]( 0x8159ECA1876AE99 )
+		f576_local0 = Engine[0xF9F1239CFD921FE]( "menu/combat_record_tab_public_caps" )
 	elseif CoD.CombatRecordMode == "arena" then
-		f576_local0 = Engine[0xF9F1239CFD921FE]( 0x4B08B09636ECD9E )
+		f576_local0 = Engine[0xF9F1239CFD921FE]( "menu/arena_caps" )
 	end
 	local f576_local1 = Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.headingKickerText" )
 	if f576_local1 then
@@ -6131,7 +6131,7 @@ function CombatRecordUpdateSelfIdentityWidget( f585_arg0, f585_arg1 )
 end
 
 function StartLiveEvent( f586_arg0, f586_arg1 )
-	Engine.Exec( f586_arg0, "setliveevent " .. (Engine.TableLookup( "gamedata/tables/common/live_event_streamers.csv", 1, 0, f586_arg1 or 0 ) or "") )
+	Engine.exec( f586_arg0, "setliveevent " .. (Engine.TableLookup( "gamedata/tables/common/live_event_streamers.csv", 1, 0, f586_arg1 or 0 ) or "") )
 end
 
 function CollapseFreeCursorElementParent( f587_arg0 )

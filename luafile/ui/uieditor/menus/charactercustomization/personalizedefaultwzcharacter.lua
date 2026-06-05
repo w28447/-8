@@ -24,7 +24,7 @@ LUI.createMenu.PersonalizeDefaultWZCharacter = function ( f1_arg0, f1_arg1 )
 	self.XCamMouseControl = XCamMouseControl
 	
 	local GenericMenuFrame = CoD.GenericMenuFrame.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	GenericMenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x2AA2EA68ACC2317 ) )
+	GenericMenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/personalize_character" ) )
 	GenericMenuFrame:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -56,19 +56,19 @@ LUI.createMenu.PersonalizeDefaultWZCharacter = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( Characters, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		if IsElementInState( f5_arg0, "DefaultState" ) then
-			CoD.PlayerRoleUtility.ChooseGender( f5_arg0, f5_arg2 )
-			GoBack( self, f5_arg2 )
+	f1_local1:AddButtonCallbackFunction( Characters, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsElementInState( element, "DefaultState" ) then
+			CoD.PlayerRoleUtility.ChooseGender( element, controller )
+			GoBack( self, controller )
 			PlaySoundAlias( "cac_equipment_add" )
-			SendClientScriptMenuChangeNotify( f5_arg2, f5_arg1, false )
+			SendClientScriptMenuChangeNotify( controller, menu, false )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		if IsElementInState( f6_arg0, "DefaultState" ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsElementInState( element, "DefaultState" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -90,13 +90,13 @@ LUI.createMenu.PersonalizeDefaultWZCharacter = function ( f1_arg0, f1_arg1 )
 			Characters:setDataSource( f7_local0 )
 		end
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		GoBack( self, f8_arg2 )
-		SendClientScriptMenuChangeNotify( f8_arg2, f8_arg1, false )
-		ClearMenuSavedState( f8_arg1 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
+		SendClientScriptMenuChangeNotify( controller, menu, false )
+		ClearMenuSavedState( menu )
 		return true
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	self.__on_menuOpened_self = function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )

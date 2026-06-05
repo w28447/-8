@@ -59,26 +59,26 @@ LUI.createMenu.PC_PlayerAccount = function ( f1_arg0, f1_arg1 )
 			TabFrame:changeFrameWidget( f4_local0 )
 		end
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_1", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		if CoD.StartMenuUtility.CanChangeWZStatsFilter( f5_arg1, self.TabFrame, f5_arg2 ) then
-			CoD.PlayerStatsUtility.UpdateWZStatsFilter( f5_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_1", function ( element, menu, controller, model )
+		if CoD.StartMenuUtility.CanChangeWZStatsFilter( menu, self.TabFrame, controller ) then
+			CoD.PlayerStatsUtility.UpdateWZStatsFilter( controller )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		if CoD.StartMenuUtility.CanChangeWZStatsFilter( f6_arg1, self.TabFrame, f6_arg2 ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if CoD.StartMenuUtility.CanChangeWZStatsFilter( menu, self.TabFrame, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, "ui_contextual_1" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		GoBack( self, f7_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	PlayerAccountTabs.id = "PlayerAccountTabs"

@@ -89,16 +89,16 @@ CoD.PlayerCard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	HeroBacking = LUI.UIImage.new( 0, 0, -3, 93, 0, 0, -12, 96 )
 	HeroBacking:setAlpha( 0 )
-	HeroBacking:setImage( RegisterImage( 0x5FA309EA9D3CE14 ) )
-	HeroBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
+	HeroBacking:setImage( RegisterImage( "uie_img_t7_hud_widget_playercard_playerbacking" ) )
+	HeroBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_blend" ) )
 	self:addElement( HeroBacking )
 	self.HeroBacking = HeroBacking
 	
 	TeamColor = LUI.UIImage.new( 0, 0, 46, 142, 0, 0, 3, 73 )
 	TeamColor:setRGB( ColorSet.FriendlyBlue.r, ColorSet.FriendlyBlue.g, ColorSet.FriendlyBlue.b )
 	TeamColor:setAlpha( 0 )
-	TeamColor:setImage( RegisterImage( 0x2D2C20F3D0B1D5D ) )
-	TeamColor:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
+	TeamColor:setImage( RegisterImage( "uie_img_t7_hud_widget_playercard_playerbackingelements" ) )
+	TeamColor:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_blend" ) )
 	self:addElement( TeamColor )
 	self.TeamColor = TeamColor
 	

@@ -77,7 +77,7 @@ CoD.codcaster_player_portraittop_team2.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local teamcolorbg = LUI.UIImage.new( 0.5, 0.5, -61, 61, 0, 0, 3, 61 )
 	teamcolorbg:setAlpha( 0.9 )
-	teamcolorbg:setImage( RegisterImage( 0x97941765AC1B3BE ) )
+	teamcolorbg:setImage( RegisterImage( "uie_codcaster_teamcolloredbg_generic" ) )
 	teamcolorbg:subscribeToGlobalModel( f1_arg1, "FactionsGlobal", "axisFactionColor", function ( model )
 		local f7_local0 = model:get()
 		if f7_local0 ~= nil then

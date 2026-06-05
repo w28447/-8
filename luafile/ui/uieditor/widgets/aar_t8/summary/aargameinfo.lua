@@ -62,13 +62,13 @@ CoD.AARGameInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 		{
 			stateName = "Defeated",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "lastMatchOutcome", 0xE4BEDAD712621BA )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "lastMatchOutcome", "loss" )
 			end
 		},
 		{
 			stateName = "Draw",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "lastMatchOutcome", 0x180A666DCB87393 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "lastMatchOutcome", "draw" )
 			end
 		}
 	} )

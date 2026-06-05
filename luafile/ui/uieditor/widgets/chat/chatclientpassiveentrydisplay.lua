@@ -14,7 +14,7 @@ CoD.ChatClientPassiveEntryDisplay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local ChatBackground = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	ChatBackground:setAlpha( 0 )
-	ChatBackground:setImage( RegisterImage( 0xFECB0E0003975BA ) )
+	ChatBackground:setImage( RegisterImage( "uie_chat_background" ) )
 	self:addElement( ChatBackground )
 	self.ChatBackground = ChatBackground
 	

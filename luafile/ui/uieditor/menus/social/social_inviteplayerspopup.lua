@@ -111,24 +111,24 @@ LUI.createMenu.Social_InvitePlayersPopup = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( SendInvitesButton, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
+	f1_local1:AddButtonCallbackFunction( SendInvitesButton, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if not IsPC() then
-			CoD.SocialUtility.SendInvites( self, f5_arg2 )
-			GoBack( self, f5_arg2 )
+			CoD.SocialUtility.SendInvites( self, controller )
+			GoBack( self, controller )
 			return true
 		elseif IsPC() then
-			CoD.SocialUtility.SendInvites( self, f5_arg2 )
-			GoBack( self, f5_arg2 )
+			CoD.SocialUtility.SendInvites( self, controller )
+			GoBack( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
+	end, function ( element, menu, controller )
 		if not IsPC() then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xAC3B80C833B60E1, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select_caps", nil, "ui_confirm" )
 			return true
 		elseif IsPC() then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -183,7 +183,7 @@ LUI.createMenu.Social_InvitePlayersPopup = function ( f1_arg0, f1_arg1 )
 	self.LayoutTopBar2 = LayoutTopBar2
 	
 	local Stripes = LUI.UIImage.new( 0.5, 0.5, -471.5, 471.5, 0, 0, 39, 55 )
-	Stripes:setImage( RegisterImage( 0x3859DD0C5ABD325 ) )
+	Stripes:setImage( RegisterImage( "uie_ui_menu_social_bar_stripe" ) )
 	self:addElement( Stripes )
 	self.Stripes = Stripes
 	
@@ -262,17 +262,17 @@ LUI.createMenu.Social_InvitePlayersPopup = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09] )
 		return f11_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( PCSimpleVScrollList, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		if IsGamepad( f12_arg2 ) then
-			SetSelectedFriendXUID( self, f12_arg0, f12_arg2 )
-			OpenOverlay( self, "Social_PlayerDetailsPopup", f12_arg2, nil )
+	f1_local1:AddButtonCallbackFunction( PCSimpleVScrollList, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( element, menu, controller, model )
+		if IsGamepad( controller ) then
+			SetSelectedFriendXUID( self, element, controller )
+			OpenOverlay( self, "Social_PlayerDetailsPopup", controller, nil )
 			return true
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		if IsGamepad( f13_arg2 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0xE0254269ED8FFD3, nil, nil )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], 0xE0254269ED8FFD3, nil, nil )
 			return true
 		else
 			return false
@@ -299,11 +299,11 @@ LUI.createMenu.Social_InvitePlayersPopup = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f14_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( BTNQuit, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		GoBack( self, f15_arg2 )
+	f1_local1:AddButtonCallbackFunction( BTNQuit, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( BTNQuit )
@@ -312,7 +312,7 @@ LUI.createMenu.Social_InvitePlayersPopup = function ( f1_arg0, f1_arg1 )
 	featureOverlayButtonMouseOnly = nil
 	
 	featureOverlayButtonMouseOnly = CoD.featureOverlay_Button_MouseOnly.new( f1_local1, f1_arg0, 0.5, 0.5, -408.5, -222.5, 0.5, 0.5, 426, 486 )
-	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0x78D439E1B360368 ) )
+	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/back_caps" ) )
 	featureOverlayButtonMouseOnly:registerEventHandler( "gain_focus", function ( element, event )
 		local f17_local0 = nil
 		if element.gainFocus then
@@ -323,11 +323,11 @@ LUI.createMenu.Social_InvitePlayersPopup = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f17_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f18_arg0, f18_arg1, f18_arg2, f18_arg3 )
-		GoBack( self, f18_arg2 )
+	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f19_arg0, f19_arg1, f19_arg2 )
-		CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( featureOverlayButtonMouseOnly )
@@ -356,26 +356,26 @@ LUI.createMenu.Social_InvitePlayersPopup = function ( f1_arg0, f1_arg1 )
 			modelName = "visibleCount"
 		} )
 	end, false )
-	self:registerEventHandler( "menu_loaded", function ( element, event )
+	self:registerEventHandler( "menu_loaded", function ( self, event )
 		local f23_local0 = nil
-		if element.menuLoaded then
-			f23_local0 = element:menuLoaded( event )
-		elseif element.super.menuLoaded then
-			f23_local0 = element.super:menuLoaded( event )
+		if self.menuLoaded then
+			f23_local0 = self:menuLoaded( event )
+		elseif self.super.menuLoaded then
+			f23_local0 = self.super:menuLoaded( event )
 		end
 		if not IsPC() then
 			CoD.FreeCursorUtility.AddLockedFocusLeftOrRightNavigation( f1_local1, f1_arg0, self.onlineList, self.SendInvitesButton )
 		end
 		if not f23_local0 then
-			f23_local0 = element:dispatchEventToChildren( event )
+			f23_local0 = self:dispatchEventToChildren( event )
 		end
 		return f23_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f24_arg0, f24_arg1, f24_arg2, f24_arg3 )
-		GoBack( self, f24_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f25_arg0, f25_arg1, f25_arg2 )
-		CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xA4032FB2AAB69F2, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "mp/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

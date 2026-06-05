@@ -45,7 +45,7 @@ CoD.CompetitiveOverviewRankBanner.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	rank:subscribeToGlobalModel( f1_arg1, "LeaguePlay", "leaguePlayRank", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
-			rank:setText( ToUpper( LocalizeStringWithParameter( 0x47AC0462E4B2132, f4_local0 ) ) )
+			rank:setText( ToUpper( LocalizeStringWithParameter( "arena/arena_league_play_rank", f4_local0 ) ) )
 		end
 	end )
 	self:addElement( rank )

@@ -15,10 +15,10 @@ CoD.AARUtility.GunRefCol = 2
 CoD.AARUtility.GunAttachmentRefCol = 3
 CoD.AARUtility.GunRankXPCol = 4
 CoD.AARUtility.GameOrder = {}
-CoD.AARUtility.GameOrder[0x88F5B13A5B62C55] = 1
-CoD.AARUtility.GameOrder[0x88F5A13A5B62AA2] = 2
-CoD.AARUtility.GameOrder[0x88F5913A5B628EF] = 3
-CoD.AARUtility.GameOrder["menu/prestige_icons_game_waw"] = 4
+CoD.AARUtility.GameOrder.menu/prestige_icons_game_bo3 = 1
+CoD.AARUtility.GameOrder.menu/prestige_icons_game_bo2 = 2
+CoD.AARUtility.GameOrder.menu/prestige_icons_game_bo1 = 3
+CoD.AARUtility.GameOrder.menu/prestige_icons_game_waw = 4
 CoD.AARUtility.MaxRank = 55
 require( "ui/utility/overlayutility" )
 require( "ui/utility/challengesutility" )
@@ -435,7 +435,7 @@ end
 CoD.AARUtility.GetBlueprintStringPrefixForItem = function ( f22_arg0 )
 	local f22_local0 = Engine.GetLoadoutSlotForItem( f22_arg0 )
 	if f22_local0 == "primary" or f22_local0 == "secondary" then
-		return Engine.GetItemGroup( f22_arg0, Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] )
+		return Engine.GetItemGroup( f22_arg0, Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer )
 	else
 		return f22_local0
 	end
@@ -537,9 +537,9 @@ CoD.AARUtility.DoXPBarAnimationSequence = function ( f31_arg0, f31_arg1, f31_arg
 	f31_local1.XpBarEarnedXPBg:setShaderVector( 0, f31_local4, 0, 0, 0 )
 	f31_local1.XpBarEarnedXPBg:beginAnimation( "animate_bar", f31_local0, true, true )
 	f31_local1.XpBarEarnedXPBg:setShaderVector( 0, f31_local5, 0, 0, 0 )
-	Engine.PlaySound( "uin_aar_bar_fill_main" )
+	Engine.playsound( "uin_aar_bar_fill_main" )
 	CoD.AARUtility.CountdownRequiredXPNumber( f31_arg0, f31_arg1, f31_local1, f31_local3 - f31_arg2, f31_local6, function ()
-		Engine.PlaySound( "uin_aar_bar_fill_tail" )
+		Engine.playsound( "uin_aar_bar_fill_tail" )
 		if f31_arg4 <= f31_arg3 then
 			if Engine.IsCampaignGame() then
 				CoD.AARUtilityCP.hasSeenXPBarAnim = true
@@ -742,7 +742,7 @@ DataSources.AARTabs = ListHelper_SetupDataSource( "AARTabs", function ( f38_arg0
 			end
 			table.insert( f38_local0, {
 				models = {
-					tabName = Engine[0xF9F1239CFD921FE]( 0x5E9C86634E25EA8 ),
+					tabName = Engine[0xF9F1239CFD921FE]( "aar/summary" ),
 					action = CoD.AARUtility.SwitchAARTabs,
 					param = CoD.AARUtility.AARTabs.AAR_SUMMARY
 				},
@@ -753,7 +753,7 @@ DataSources.AARTabs = ListHelper_SetupDataSource( "AARTabs", function ( f38_arg0
 			if CoD.BaseUtility.IsDvarEnabled( "ui_enableContractsAndBounties" ) and IsPublicOnlineGame() then
 				table.insert( f38_local0, {
 					models = {
-						tabName = Engine[0xF9F1239CFD921FE]( 0x616EBD2B8F67E64 ),
+						tabName = Engine[0xF9F1239CFD921FE]( "blackmarket/contracts" ),
 						action = CoD.AARUtility.SwitchAARTabs,
 						param = CoD.AARUtility.AARTabs.AAR_CONTRACTS
 					},
@@ -774,7 +774,7 @@ DataSources.AARTabs = ListHelper_SetupDataSource( "AARTabs", function ( f38_arg0
 			} )
 			table.insert( f38_local0, {
 				models = {
-					tabName = Engine[0xF9F1239CFD921FE]( 0x7BB5E9B11633E3 ),
+					tabName = Engine[0xF9F1239CFD921FE]( "aar/stats" ),
 					action = CoD.AARUtility.SwitchAARTabs,
 					param = CoD.AARUtility.AARTabs.AAR_SCOREBOARD
 				},
@@ -797,7 +797,7 @@ DataSources.AARTabs = ListHelper_SetupDataSource( "AARTabs", function ( f38_arg0
 			end
 			table.insert( f38_local0, {
 				models = {
-					tabName = Engine[0xF9F1239CFD921FE]( 0x5E9C86634E25EA8 ),
+					tabName = Engine[0xF9F1239CFD921FE]( "aar/summary" ),
 					action = CoD.AARUtility.SwitchAARTabs,
 					param = CoD.AARUtility.AARTabs.AAR_SUMMARY
 				},
@@ -808,7 +808,7 @@ DataSources.AARTabs = ListHelper_SetupDataSource( "AARTabs", function ( f38_arg0
 			if CoD.BaseUtility.IsDvarEnabled( "ui_enableContractsAndBounties" ) and IsPublicOnlineGame() then
 				table.insert( f38_local0, {
 					models = {
-						tabName = Engine[0xF9F1239CFD921FE]( 0x616EBD2B8F67E64 ),
+						tabName = Engine[0xF9F1239CFD921FE]( "blackmarket/contracts" ),
 						action = CoD.AARUtility.SwitchAARTabs,
 						param = CoD.AARUtility.AARTabs.AAR_CONTRACTS
 					},
@@ -829,7 +829,7 @@ DataSources.AARTabs = ListHelper_SetupDataSource( "AARTabs", function ( f38_arg0
 			} )
 			table.insert( f38_local0, {
 				models = {
-					tabName = Engine[0xF9F1239CFD921FE]( 0x7BB5E9B11633E3 ),
+					tabName = Engine[0xF9F1239CFD921FE]( "aar/stats" ),
 					action = CoD.AARUtility.SwitchAARTabs,
 					param = CoD.AARUtility.AARTabs.AAR_SCOREBOARD
 				},
@@ -865,7 +865,7 @@ DataSources.AARTabs = ListHelper_SetupDataSource( "AARTabs", function ( f38_arg0
 		end
 		table.insert( f38_local0, {
 			models = {
-				tabName = Engine[0xF9F1239CFD921FE]( 0x5E9C86634E25EA8 ),
+				tabName = Engine[0xF9F1239CFD921FE]( "aar/summary" ),
 				action = CoD.AARUtility.SwitchAARTabs,
 				param = CoD.AARUtility.AARTabs.AAR_SUMMARY
 			},
@@ -876,7 +876,7 @@ DataSources.AARTabs = ListHelper_SetupDataSource( "AARTabs", function ( f38_arg0
 		if CoD.BaseUtility.IsDvarEnabled( "ui_enableContractsAndBounties" ) and IsPublicOnlineGame() then
 			table.insert( f38_local0, {
 				models = {
-					tabName = Engine[0xF9F1239CFD921FE]( 0x616EBD2B8F67E64 ),
+					tabName = Engine[0xF9F1239CFD921FE]( "blackmarket/contracts" ),
 					action = CoD.AARUtility.SwitchAARTabs,
 					param = CoD.AARUtility.AARTabs.AAR_CONTRACTS
 				},
@@ -887,7 +887,7 @@ DataSources.AARTabs = ListHelper_SetupDataSource( "AARTabs", function ( f38_arg0
 		end
 		table.insert( f38_local0, {
 			models = {
-				tabName = Engine[0xF9F1239CFD921FE]( 0x7BB5E9B11633E3 ),
+				tabName = Engine[0xF9F1239CFD921FE]( "aar/stats" ),
 				action = CoD.AARUtility.SwitchAARTabs,
 				param = CoD.AARUtility.AARTabs.ZM_AAR_SCOREBOARD
 			},
@@ -913,7 +913,7 @@ DataSources.AARTabs = ListHelper_SetupDataSource( "AARTabs", function ( f38_arg0
 		end
 		table.insert( f38_local0, {
 			models = {
-				tabName = Engine[0xF9F1239CFD921FE]( 0x5E9C86634E25EA8 ),
+				tabName = Engine[0xF9F1239CFD921FE]( "aar/summary" ),
 				action = CoD.AARUtility.SwitchAARTabs,
 				param = CoD.AARUtility.AARTabs.AAR_SUMMARY
 			},
@@ -924,7 +924,7 @@ DataSources.AARTabs = ListHelper_SetupDataSource( "AARTabs", function ( f38_arg0
 		if CoD.BaseUtility.IsDvarEnabled( "ui_enableContractsAndBounties" ) and IsPublicOnlineGame() then
 			table.insert( f38_local0, {
 				models = {
-					tabName = Engine[0xF9F1239CFD921FE]( 0x616EBD2B8F67E64 ),
+					tabName = Engine[0xF9F1239CFD921FE]( "blackmarket/contracts" ),
 					action = CoD.AARUtility.SwitchAARTabs,
 					param = CoD.AARUtility.AARTabs.AAR_CONTRACTS
 				},
@@ -985,7 +985,7 @@ DataSources.AARStatTypeTabHeader = ListHelper_SetupDataSource( "AARStatTypeTabHe
 			} )
 			table.insert( f39_local0, {
 				models = {
-					title = 0xFEF0BD519A1F77B,
+					title = "aar/cash",
 					type = CoD.AARUtility.AARStatType.SCORE_PER_MINUTE
 				}
 			} )
@@ -1110,10 +1110,10 @@ DataSources.AARGameHistory = ListHelper_SetupDataSource( "AARGameHistory", funct
 				f40_local14 = 0
 				f40_local15 = f40_local22.outcome:get()
 				if f40_local24 == 1 then
-					if f40_local15 == 0xEC9DD1948951D39 then
+					if f40_local15 == "win" then
 						f40_local16 = f40_local16 + 1
 					end
-					if f40_local15 == 0xE4BEDAD712621BA then
+					if f40_local15 == "loss" then
 						f40_local17 = f40_local17 + 1
 					end
 					f40_local18 = f40_local18 + 1
@@ -1278,7 +1278,7 @@ DataSources.AARRewardPages = ListHelper_SetupDataSource( "AARRewardPages", funct
 		for f53_local9 = 1, f53_local8, 1 do
 			table.insert( f53_local0, {
 				models = {
-					title = Engine[0xF9F1239CFD921FE]( 0xCFFDEFC0F2E1786, f53_local9 )
+					title = Engine[0xF9F1239CFD921FE]( "aar/page_n", f53_local9 )
 				},
 				properties = {
 					page = f53_local9
@@ -1391,7 +1391,7 @@ DataSources.AARMedalsList = ListHelper_SetupDataSource( "AARMedalsList", functio
 				local f56_local9 = f56_local1 * (tonumber( Engine[0x5DC2BA4A99CE43E]( CoD.scoreInfoTable, f56_local14, CoD.AARUtility.MedalXPCol ) ) or 0) * f56_local13
 				local f56_local10 = nil
 				if not IsWarzone() then
-					f56_local10 = Engine[0xF9F1239CFD921FE]( 0xD6137AA2004DB90, f56_local9 )
+					f56_local10 = Engine[0xF9F1239CFD921FE]( "rank/xp", f56_local9 )
 				else
 					f56_local10 = Engine[0xF9F1239CFD921FE]( 0xBCE3D9B07DE63B7, f56_local9 )
 				end
@@ -1489,22 +1489,22 @@ CoD.AARUtility.GetPlayerRewards = function ( f60_arg0 )
 					f61_local1 = f61_local1 + f61_local6.models.npEarned
 				end
 			end
-			f61_local2 = CoD.AARUtility.GetCurrencyEarned( f61_arg0, "initialPlasma", 0x29BE58E64C4830B, f61_local1 )
+			f61_local2 = CoD.AARUtility.GetCurrencyEarned( f61_arg0, "initialPlasma", "nebulium_plasma", f61_local1 )
 			if CoD.BaseUtility.IsDvarEnabled( "ui_forceAAR" ) and f61_local2 <= 0 then
 				f61_local2 = 1
 			end
 			if f61_local2 > 0 then
-				f61_local3 = 0x76C393335224D3F
+				f61_local3 = "ui_icon_nebulium_medium"
 				f61_local4 = f61_local3
 				if CoD.ZombieUtility.IsDoubleNP( f61_arg0 ) then
-					f61_local4 = 0x84EBD21DEEA026A
+					f61_local4 = "ui_icon_nebulium_2x"
 				end
-				f61_local0.mainTitle = 0x80234A872BD64AC
+				f61_local0.mainTitle = "score/blank"
 				f61_local0.levelText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "zmui/nebulium_plasma" ) )
 				f61_local0.mainIcon = f61_local4
 				f61_local0.rewardType = CoD.AARUtility.AARRewardType.CURRENCY
 				f61_local0.reward1Icon = f61_local3
-				f61_local0.reward1Desc = Engine[0xF9F1239CFD921FE]( 0x9DB9C526E6370AB, f61_local2 )
+				f61_local0.reward1Desc = Engine[0xF9F1239CFD921FE]( "menu/multiplier_x", f61_local2 )
 				table.insert( f61_arg1, 1, {
 					models = f61_local0
 				} )
@@ -1514,7 +1514,7 @@ CoD.AARUtility.GetPlayerRewards = function ( f60_arg0 )
 	
 	local f60_local9 = function ( f62_arg0, f62_arg1 )
 		if IsZombies() and f60_local1 and f60_local2 then
-			if IsBooleanDvarSet( 0x1DA02CA40639DE5 ) then
+			if IsBooleanDvarSet( "faction_callings_enabled_zm" ) then
 				for f62_local3, f62_local4 in ipairs( CoD.ZombiesCallingsUtility.GetFactionCallingRewardModels( f62_arg0, f60_local1, f60_local2 ) ) do
 					table.insert( f62_arg1, {
 						models = f62_local4
@@ -1560,9 +1560,9 @@ CoD.AARUtility.GetPlayerRewards = function ( f60_arg0 )
 				if f63_local6 and not f63_local4 then
 					table.insert( f63_arg1, {
 						models = {
-							mainTitle = 0x318F49227D658CF,
+							mainTitle = "zmtrials/sticker_unlocked",
 							levelText = Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0xA1AD934441EF46B, f63_local8.lockedStringRef ) ),
-							mainIcon = 0x14D28140643CD54,
+							mainIcon = "ui_icon_gamemode_zm_gauntlet_large",
 							rewardType = CoD.AARUtility.AARRewardType.CHALLENGE,
 							challengeImage = f63_local7,
 							challengeName = f63_local8.lockedStringRef,
@@ -1591,12 +1591,12 @@ CoD.AARUtility.GetPlayerRewards = function ( f60_arg0 )
 	end
 	
 	local f60_local12 = function ( f65_arg0, f65_arg1, f65_arg2 )
-		f65_arg0.title = f65_arg1["customclassname"]
-		f65_arg0.primaryImage = f60_local11( f65_arg1[0xF31137FF783E939] )
-		f65_arg0.secondaryImage = f60_local11( f65_arg1[0x7FBC18FBDAA00D1] )
-		f65_arg0.grenadeImage = f60_local11( f65_arg1[0x64BE52A1BDE5211] )
-		f65_arg0.tacticalGearImage = f60_local11( f65_arg1[0xC76C1E0D1EE45F7], true )
-		f65_arg0.perksDataSource = CoD.AARUtility.CreateClassRewardPreviewDataSource( "AARClassRewardPerks_" .. f65_arg2, f65_arg1.talents, 0x5FB380CEA24A88B, Enum[0x6EB546760F890D2][0x8EA6ADA81FD4511] )
+		f65_arg0.title = f65_arg1.customclassname
+		f65_arg0.primaryImage = f60_local11( f65_arg1.primary )
+		f65_arg0.secondaryImage = f60_local11( f65_arg1.secondary )
+		f65_arg0.grenadeImage = f60_local11( f65_arg1.primarygrenade )
+		f65_arg0.tacticalGearImage = f60_local11( f65_arg1.tacticalgear, true )
+		f65_arg0.perksDataSource = CoD.AARUtility.CreateClassRewardPreviewDataSource( "AARClassRewardPerks_" .. f65_arg2, f65_arg1.talents, "talent", Enum[0x6EB546760F890D2][0x8EA6ADA81FD4511] )
 		f65_arg0.wildcardsDataSource = CoD.AARUtility.CreateClassRewardPreviewDataSource( "AARClassRewardWildcards_" .. f65_arg2, f65_arg1.bonuscards, "bonuscard", Enum[0x6EB546760F890D2][0x1A949B83CC070B0] )
 	end
 	
@@ -1621,16 +1621,16 @@ CoD.AARUtility.GetPlayerRewards = function ( f60_arg0 )
 			featureType = f66_local0[0x1BF6EBC1ED37F75]
 		}
 		if f66_local1 then
-			local f66_local4 = Engine[0xE00B2F29271C60B]( 0x705A80062BD09C2 )
-			local f66_local5 = f66_local0[0x5F6A8A5DA7C0919]
+			local f66_local4 = Engine[0xE00B2F29271C60B]( "mp_default_loadouts" )
+			local f66_local5 = f66_local0.loadoutindex
 			if f66_local0[0x1BF6EBC1ED37F75] == CoD.AARUtility.AARFeatureRewardType.CAC then
-				f66_local3.desc = 0x0
+				f66_local3.desc = ""
 			elseif f66_local0[0x1BF6EBC1ED37F75] == CoD.AARUtility.AARFeatureRewardType.DEFAULT_CLASS then
 				f60_local12( f66_local3, f66_local4.defaultloadouts[f66_local5], f66_arg1 )
-				f66_local3.desc = 0xF75210679B788D6
+				f66_local3.desc = "aar/default_class"
 			elseif f66_local0[0x1BF6EBC1ED37F75] == CoD.AARUtility.AARFeatureRewardType.CUSTOM_CLASS then
 				f60_local12( f66_local3, f66_local4.defaultcustomloadouts[f66_local5], f66_arg1 )
-				f66_local3.desc = 0x9AF52F9F90F6244
+				f66_local3.desc = "aar/custom_class"
 			end
 		end
 		table.insert( f66_local2[f66_arg0], f66_local3 )
@@ -1645,7 +1645,7 @@ CoD.AARUtility.GetPlayerRewards = function ( f60_arg0 )
 			local f60_local22 = {
 				mainTitle = f60_local23.fullNameRef,
 				level = f60_local23.level,
-				levelText = Engine[0xF9F1239CFD921FE]( 0xBC1D826D76D607F, f60_local23.level ),
+				levelText = Engine[0xF9F1239CFD921FE]( "aar/level_n", f60_local23.level ),
 				mainIcon = f60_local23.iconLarge,
 				multiItem = false,
 				rewardType = CoD.AARUtility.AARRewardType.CLASS,
@@ -1677,7 +1677,7 @@ CoD.AARUtility.GetPlayerRewards = function ( f60_arg0 )
 			local f60_local19 = {
 				mainTitle = f60_local23.fullNameRef,
 				level = f60_local24,
-				levelText = Engine[0xF9F1239CFD921FE]( 0xBC1D826D76D607F, f60_local24 ),
+				levelText = Engine[0xF9F1239CFD921FE]( "aar/level_n", f60_local24 ),
 				mainIcon = f60_local23.iconLarge,
 				multiItem = #f60_local18 > 1,
 				rewardType = CoD.AARUtility.AARRewardType.PLAYER
@@ -1765,7 +1765,7 @@ CoD.AARUtility.GetWeaponRewards = function ( f69_arg0 )
 		for f69_local11, f69_local12 in pairs( f69_local21 ) do
 			local f69_local13 = {
 				mainTitle = f69_local22,
-				levelText = Engine[0xF9F1239CFD921FE]( 0x6CE4C353AA0FCC9, f69_local11 + 2 ),
+				levelText = Engine[0xF9F1239CFD921FE]( "aar/weapon_level", f69_local11 + 2 ),
 				mainIcon = f69_local23,
 				multiItem = false,
 				rewardType = CoD.AARUtility.AARRewardType.WEAPON
@@ -1790,7 +1790,7 @@ CoD.AARUtility.GetWeaponRewards = function ( f69_arg0 )
 				f69_local15 = f69_local15 + f69_local17.xp
 				f69_local13.multiItem = true
 			end
-			f69_local13.totalXP = Engine[0xF9F1239CFD921FE]( 0xD6137AA2004DB90, f69_local15 )
+			f69_local13.totalXP = Engine[0xF9F1239CFD921FE]( "rank/xp", f69_local15 )
 			table.insert( f69_local0, {
 				models = f69_local13,
 				level = f69_local11
@@ -1821,7 +1821,7 @@ CoD.AARUtility.GetChallengeRewards = function ( f72_arg0 )
 		f73_local0.challengeDesc = f73_arg0.subtitleText
 		f73_local0.tierProgress = f73_arg0.currentTier + 1
 		f73_local0.tierMax = f73_arg0.maxTier + 1
-		f73_local0.tierProgressText = Engine[0xF9F1239CFD921FE]( 0x38A59531FCD1E, f73_local0.tierProgress, f73_local0.tierMax )
+		f73_local0.tierProgressText = Engine[0xF9F1239CFD921FE]( "challenge/tier_status", f73_local0.tierProgress, f73_local0.tierMax )
 		f73_local0.isTiered = f73_local0.tierMax > 1
 		f73_local0.challengeRewardLocked = false
 		f73_local0.rotateChallengeRewardIcon = false
@@ -1834,12 +1834,12 @@ CoD.AARUtility.GetChallengeRewards = function ( f72_arg0 )
 			if f73_arg0.camoInfo.category == "activecamounveil" then
 				f73_local0.levelText = Engine[0xF9F1239CFD921FE]( 0xB19AFEA158DD0DF )
 			else
-				f73_local0.levelText = Engine[0xF9F1239CFD921FE]( 0xE2BF0935706BEDD )
+				f73_local0.levelText = Engine[0xF9F1239CFD921FE]( "aar/camo_unlock" )
 				if f73_arg0.camoInfo.aarDescription ~= "" then
 					f73_local0.challengeDesc = f73_arg0.camoInfo.aarDescription
 				end
 			end
-			if IsZombies() and not IsBooleanDvarSet( 0x30FAB929626F598 ) then
+			if IsZombies() and not IsBooleanDvarSet( "ui_zmenablemasterycamos" ) then
 				local f73_local1 = f73_arg0.camoInfo.camoRef
 				if f73_local1 == "camo_gold" or f73_local1 == "camo_diamond" or f73_local1 == "camo_darkmatter" then
 					return 
@@ -1964,7 +1964,7 @@ end
 CoD.AARUtility.InitAARDevgui = function ( f76_arg0, f76_arg1 )
 	f76_arg0:subscribeToGlobalModel( f76_arg1, "PerController", "scriptNotify", function ( model )
 		local f77_local0 = model:get()
-		if f77_local0 == 0x9E73CC1A3C701FE then
+		if f77_local0 == "aar_clear_rewards" then
 			DebugPrint( "aar_clear_rewards" )
 			CoD.AARUtility.ClearChallengeRewards()
 		elseif f77_local0 == 0x5727F8A59698B1 then
@@ -1981,7 +1981,7 @@ CoD.AARUtility.GetContractRewards = function ( f78_arg0 )
 		local f79_local0 = f78_local1[f79_arg0]
 		if f79_local0 and f79_local0.completed and f79_local0.completed:get() and f79_arg1 and f79_arg1.models then
 			local f79_local1 = f79_arg1.models
-			local f79_local2 = Engine[0xF9F1239CFD921FE]( 0xD6137AA2004DB90, f79_local1.xpReward )
+			local f79_local2 = Engine[0xF9F1239CFD921FE]( "rank/xp", f79_local1.xpReward )
 			if f79_local1.contractMode == CoDShared.LootContracts.ContractGameMode.LOOT_CONTRACT_GAME_MODE_WZ then
 				f79_local2 = Engine[0xF9F1239CFD921FE]( 0xBCE3D9B07DE63B7, f79_local1.xpReward )
 			end
@@ -1992,8 +1992,8 @@ CoD.AARUtility.GetContractRewards = function ( f78_arg0 )
 					contractRewardIcon = f79_local1.rewardIcon,
 					contractRewardAmount = f79_local1.rewardDisplay,
 					contractXPAmount = f79_local2,
-					levelText = Engine[0xF9F1239CFD921FE]( 0x55B609EA20C4D97 ),
-					mainTitle = 0x0,
+					levelText = Engine[0xF9F1239CFD921FE]( "blackmarket/contract_complete" ),
+					mainTitle = "",
 					mainIcon = f79_local1.contractIcon,
 					rewardType = CoD.AARUtility.AARRewardType.CONTRACT
 				}
@@ -2033,7 +2033,7 @@ end
 
 DataSources.CharacterUnlock = ListHelper_SetupDataSource( "CharacterUnlock", function ( f81_arg0 )
 	local f81_local0 = {}
-	local f81_local1 = Enum.eModes[0xBF1DCC8138A9D39]
+	local f81_local1 = Enum.eModes.mode_warzone
 	local f81_local2 = Engine.GetRecentlyUnlockedItems( f81_arg0 )
 	if CoD.BaseUtility.IsDvarEnabled( "ui_debugWZCharUnlock" ) then
 		f81_local2 = {}
@@ -2089,7 +2089,7 @@ DataSources.CharacterUnlock = ListHelper_SetupDataSource( "CharacterUnlock", fun
 				if f81_local22.refHash == f81_local27[0x5E9D6D3424C0E7E] then
 					local f81_local8 = nil
 					local f81_local9 = 0xC6F2E103E4397D
-					if IsBooleanDvarSet( 0xA5FD7D94CFC9DFD ) and f81_local27[0xE69216C2DA7060A] == Enum.eModes[0x83EBA96F36BC4E5] then
+					if IsBooleanDvarSet( "wz_mp_character_unlocks_outfits" ) and f81_local27[0xE69216C2DA7060A] == Enum.eModes.mode_multiplayer then
 						local f81_local10 = CoD.PlayerRoleUtility.GetCachedHeroCustomization( f81_local1, f81_local26 )
 						for f81_local17, f81_local18 in ipairs( f81_local10.outfits ) do
 							for f81_local14, f81_local15 in ipairs( f81_local18.presets ) do
@@ -2130,7 +2130,7 @@ DataSources.CharacterUnlock = ListHelper_SetupDataSource( "CharacterUnlock", fun
 			local f81_local28 = Engine[0xB678B832BC9DC0]( f81_local1, f81_local26 )
 			local f81_local29 = nil
 			local f81_local23 = 0xC6F2E103E4397D
-			if IsBooleanDvarSet( 0xA5FD7D94CFC9DFD ) and f81_local28[0xE69216C2DA7060A] == Enum.eModes[0x83EBA96F36BC4E5] then
+			if IsBooleanDvarSet( "wz_mp_character_unlocks_outfits" ) and f81_local28[0xE69216C2DA7060A] == Enum.eModes.mode_multiplayer then
 				local f81_local21 = CoD.PlayerRoleUtility.GetCachedHeroCustomization( f81_local1, f81_local26 )
 				for f81_local10, f81_local11 in ipairs( f81_local21.outfits ) do
 					for f81_local18, f81_local19 in ipairs( f81_local11.presets ) do
@@ -2481,14 +2481,14 @@ CoD.AARUtility.RegisterForRightStickGridControl = function ( f113_arg0, f113_arg
 	end
 	f113_arg0._rStickGrids[f113_arg3] = f113_arg1
 	if IsFreeCursorActive( f113_arg2 ) then
-		f113_arg0:AddButtonCallbackFunction( f113_arg0, f113_arg2, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( f114_arg0, f114_arg1, f114_arg2, f114_arg3 )
-			local f114_local0 = f114_arg1._rStickGrids[CoD.AARUtility.GetActiveTab( f114_arg2 )]
+		f113_arg0:AddButtonCallbackFunction( f113_arg0, f113_arg2, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( element, menu, controller, model )
+			local f114_local0 = menu._rStickGrids[CoD.AARUtility.GetActiveTab( controller )]
 			if f114_local0 then
 				f114_local0:navigateItemLeft()
 			end
 		end, AlwaysFalse, false )
-		f113_arg0:AddButtonCallbackFunction( f113_arg0, f113_arg2, Enum.LUIButton[0x571F08AD84807E0], nil, function ( f115_arg0, f115_arg1, f115_arg2, f115_arg3 )
-			local f115_local0 = f115_arg1._rStickGrids[CoD.AARUtility.GetActiveTab( f115_arg2 )]
+		f113_arg0:AddButtonCallbackFunction( f113_arg0, f113_arg2, Enum.LUIButton[0x571F08AD84807E0], nil, function ( element, menu, controller, model )
+			local f115_local0 = menu._rStickGrids[CoD.AARUtility.GetActiveTab( controller )]
 			if f115_local0 then
 				f115_local0:navigateItemRight()
 			end
@@ -2503,11 +2503,11 @@ CoD.AARUtility.RegisterForTriggerNavigation = function ( f116_arg0, f116_arg1, f
 	local f116_local0 = LUI.getTableFromPath( f116_arg3, f116_arg1 )
 	if f116_local0 then
 		f116_arg0._triggerGrids[f116_arg4] = f116_local0
-		f116_arg0:AddButtonCallbackFunction( f116_arg0, f116_arg2, Enum.LUIButton[0xD2F467A6C6DA1AC], "ui_prevtab", function ( f117_arg0, f117_arg1, f117_arg2, f117_arg3 )
-			if IsRepeatButtonPress( f117_arg3 ) then
+		f116_arg0:AddButtonCallbackFunction( f116_arg0, f116_arg2, Enum.LUIButton[0xD2F467A6C6DA1AC], "ui_prevtab", function ( element, menu, controller, model )
+			if IsRepeatButtonPress( model ) then
 				return 
 			else
-				local f117_local0 = f117_arg1._triggerGrids[CoD.AARUtility.GetActiveTab( f117_arg2 )]
+				local f117_local0 = menu._triggerGrids[CoD.AARUtility.GetActiveTab( controller )]
 				if f117_local0 then
 					f117_local0:navigateItemLeft()
 					return true
@@ -2516,11 +2516,11 @@ CoD.AARUtility.RegisterForTriggerNavigation = function ( f116_arg0, f116_arg1, f
 				end
 			end
 		end, AlwaysFalse, false )
-		f116_arg0:AddButtonCallbackFunction( f116_arg0, f116_arg2, Enum.LUIButton[0x820DDD869ABBFAA], "ui_nexttab", function ( f118_arg0, f118_arg1, f118_arg2, f118_arg3 )
-			if IsRepeatButtonPress( f118_arg3 ) then
+		f116_arg0:AddButtonCallbackFunction( f116_arg0, f116_arg2, Enum.LUIButton[0x820DDD869ABBFAA], "ui_nexttab", function ( element, menu, controller, model )
+			if IsRepeatButtonPress( model ) then
 				return 
 			else
-				local f118_local0 = f118_arg1._triggerGrids[CoD.AARUtility.GetActiveTab( f118_arg2 )]
+				local f118_local0 = menu._triggerGrids[CoD.AARUtility.GetActiveTab( controller )]
 				if f118_local0 then
 					f118_local0:navigateItemRight()
 					return true
@@ -2584,7 +2584,7 @@ CoD.AARUtility.SetupSummaryStats = function ( f119_arg0 )
 	f119_local8.gametype = Engine[0xC53F8D38DF9042B]( f119_local3 )
 	f119_local8.gametypeAndMap = f119_local5
 	f119_local8.gametypeIcon = f119_local6
-	f119_local8.lastMatchOutcome = 0x180A666DCB87393
+	f119_local8.lastMatchOutcome = "draw"
 	f119_local8.wins = 0
 	f119_local8.losses = 0
 	f119_local8.winRatio = ""
@@ -2622,11 +2622,11 @@ CoD.AARUtility.SetupSummaryStats = function ( f119_arg0 )
 		f119_local8.objectiveTotal = f119_local8.ctfCaptures + f119_local8.ctfReturns
 	end
 	if not IsPublicOnlineGame() then
-		f119_local8.rankLabel = Engine[0xF9F1239CFD921FE]( 0xBC1D826D76D607F, 0 )
+		f119_local8.rankLabel = Engine[0xF9F1239CFD921FE]( "aar/level_n", 0 )
 		f119_local8.rankIcon = "blacktransparent"
 		f119_local8.nextRank = 0
 		f119_local8.nextRankIcon = "blacktransparent"
-		f119_local8.nextRankLabel = Engine[0xF9F1239CFD921FE]( 0xBC1D826D76D607F, 1 )
+		f119_local8.nextRankLabel = Engine[0xF9F1239CFD921FE]( "aar/level_n", 1 )
 		f119_local8.levelProgress = 0
 		f119_local8.xpNeededToLevelUp = 0
 		f119_local8.barCurrentTier = 0
@@ -2668,7 +2668,7 @@ CoD.AARUtility.SetupSummaryStats = function ( f119_arg0 )
 		end
 		if f119_local24 then
 			f119_local8.rank = f119_local24.level
-			f119_local8.rankLabel = Engine[0xF9F1239CFD921FE]( 0xBC1D826D76D607F, f119_local24.level )
+			f119_local8.rankLabel = Engine[0xF9F1239CFD921FE]( "aar/level_n", f119_local24.level )
 			f119_local8.rankIcon = f119_local24.iconLarge
 			f119_local8.previousProgressThisLevel = math.max( f119_local11 - f119_local27, 0 ) / math.max( 1, f119_local28 - f119_local27 )
 			f119_local8.xpNeededToLevelUp = f119_local28 - f119_local10
@@ -2681,7 +2681,7 @@ CoD.AARUtility.SetupSummaryStats = function ( f119_arg0 )
 		if f119_local26 then
 			f119_local8.nextRank = f119_local26.level
 			f119_local8.nextRankIcon = f119_local26.iconLarge
-			f119_local8.nextRankLabel = Engine[0xF9F1239CFD921FE]( 0xBC1D826D76D607F, f119_local26.level )
+			f119_local8.nextRankLabel = Engine[0xF9F1239CFD921FE]( "aar/level_n", f119_local26.level )
 		else
 			f119_local8.nextRank = 0
 			f119_local8.nextRankIcon = "blacktransparent"
@@ -2719,12 +2719,12 @@ CoD.AARUtility.SetupSummaryStats = function ( f119_arg0 )
 			end
 		end
 	end
-	Engine[0xDE279ECDDDD966]( f119_arg0, 0x43529817734F2D9, {
-		[0x336E379BA146826] = Engine[0xD52E2360F482280](),
-		[0x26EC9C0483B3469] = f119_local8.damage,
-		[0x10E63FBE7F624F5] = f119_local8.score,
-		[0x80C2F604F99D74B] = f119_local8.kills,
-		[0x6ED920648D707FA] = f119_local8.deaths
+	Engine[0xDE279ECDDDD966]( f119_arg0, "dlog_event_aar_mp", {
+		match_id = Engine[0xD52E2360F482280](),
+		damage_dealt = f119_local8.damage,
+		score = f119_local8.score,
+		ekia = f119_local8.kills,
+		deaths = f119_local8.deaths
 	} )
 	for f119_local25, f119_local26 in pairs( f119_local8 ) do
 		local f119_local27 = f119_local0:create( f119_local25 )
@@ -2763,7 +2763,7 @@ CoD.AARUtility.SetupSummaryStats_WZ = function ( f121_arg0 )
 		f121_local4.finishes = f121_local8( "KILLS_ELIMINATED" )
 		local f121_local9
 		if f121_local2 then
-			f121_local9 = f121_local2[0x6BFF22CED3C153C][0x641EA33357552C6]:get()
+			f121_local9 = f121_local2.afteractionreportstats.longestdistancekill:get()
 			if not f121_local9 then
 			
 			else
@@ -2793,12 +2793,12 @@ CoD.AARUtility.SetupSummaryStats_WZ = function ( f121_arg0 )
 					f121_local4.rankLabel = Engine[0xF9F1239CFD921FE]( 0xC538B68F8CA671, CoD.WZUtility.GetWZLevel( f121_local13.level ) )
 					local f121_local18
 					if f121_local11 ~= nil then
-						f121_local18 = Engine.GetRankIcon( f121_local13.level, f121_local11, Enum.eModes[0xBF1DCC8138A9D39] )
+						f121_local18 = Engine.GetRankIcon( f121_local13.level, f121_local11, Enum.eModes.mode_warzone )
 						if not f121_local18 then
 						
 						else
 							f121_local4.rankIcon = f121_local18
-							if f121_local4.rankIcon == 0x0 then
+							if f121_local4.rankIcon == "" then
 								f121_local4.rankIcon = f121_local13.iconLarge
 							end
 							f121_local4.rank = f121_local13.level
@@ -2814,12 +2814,12 @@ CoD.AARUtility.SetupSummaryStats_WZ = function ( f121_arg0 )
 					f121_local4.nextRankLabel = Engine[0xF9F1239CFD921FE]( 0xC538B68F8CA671, CoD.WZUtility.GetWZLevel( f121_local14.level ) )
 					local f121_local18
 					if f121_local11 ~= nil then
-						f121_local18 = Engine.GetRankIcon( f121_local14.level, f121_local11, Enum.eModes[0xBF1DCC8138A9D39] )
+						f121_local18 = Engine.GetRankIcon( f121_local14.level, f121_local11, Enum.eModes.mode_warzone )
 						if not f121_local18 then
 						
 						else
 							f121_local4.nextRankIcon = f121_local18
-							if f121_local4.nextRankIcon == 0x0 then
+							if f121_local4.nextRankIcon == "" then
 								f121_local4.nextRankIcon = f121_local14.iconLarge
 							end
 							f121_local4.nextRank = f121_local14.level
@@ -2917,7 +2917,7 @@ CoD.AARUtility.AnimateAARSummaryLootCaseProgress = function ( f124_arg0, f124_ar
 			return 
 		else
 			f124_arg0:addElement( LUI.UITimer.newElementTimer( 250, true, function ()
-				Engine.PlaySound( "uin_aar_bar_fill_main" )
+				Engine.playsound( "uin_aar_bar_fill_main" )
 				f124_arg0._animateLootCaseProgress = LUI.UITimer.newElementTimer( 10, false, function ( f126_arg0 )
 					f124_local1 = f124_local1 + f126_arg0.timeElapsed
 					local f126_local0 = f124_local1 / f124_local0
@@ -2928,7 +2928,7 @@ CoD.AARUtility.AnimateAARSummaryLootCaseProgress = function ( f124_arg0, f124_ar
 							f124_arg0._animateLootCaseProgress = nil
 						end
 						f124_local2.lootCaseProgress:set( f124_local4 )
-						Engine.PlaySound( "uin_aar_bar_fill_tail" )
+						Engine.playsound( "uin_aar_bar_fill_tail" )
 					else
 						f124_local2.lootCaseProgress:set( f126_local0 * (f124_local4 - f124_local3) + f124_local3 )
 					end
@@ -2952,14 +2952,14 @@ CoD.AARUtility.AnimateCurrentTierProgress = function ( f127_arg0, f127_arg1 )
 		local f127_local3 = f127_local2.previousTierProgress:get()
 		local f127_local4 = f127_local2.earnedTierProgress:get()
 		f127_arg0:addElement( LUI.UITimer.newElementTimer( 250, true, function ()
-			Engine.PlaySound( "uin_aar_bar_fill_main" )
+			Engine.playsound( "uin_aar_bar_fill_main" )
 			f127_arg0._animateTierProgress = LUI.UITimer.newElementTimer( 10, false, function ( f129_arg0 )
 				f127_local1 = f127_local1 + f129_arg0.timeElapsed
 				local f129_local0 = f127_local1 / f127_local0
 				f129_local0 = f129_local0 * (2 - f129_local0)
 				if f127_local0 <= f127_local1 then
 					f127_local2.tierProgress:set( f127_local4 )
-					Engine.PlaySound( "uin_aar_bar_fill_tail" )
+					Engine.playsound( "uin_aar_bar_fill_tail" )
 					f127_arg0._animateTierProgress:close()
 					if not IsZombies() then
 						CoD.AARUtility.AnimateAARSummaryLootCaseProgress( f127_arg0, f127_arg1 )
@@ -2986,7 +2986,7 @@ CoD.AARUtility.AnimateCurrentLevelProgress = function ( f130_arg0, f130_arg1 )
 	if f130_local2 ~= nil then
 		f130_arg0:addElement( LUI.UITimer.newElementTimer( 0, true, function ()
 			f130_arg0:addElement( LUI.UITimer.newElementTimer( 250, true, function ()
-				Engine.PlaySound( "uin_aar_bar_fill_main" )
+				Engine.playsound( "uin_aar_bar_fill_main" )
 				f130_arg0._animateProgressTimer = LUI.UITimer.newElementTimer( 10, false, function ( f133_arg0 )
 					f130_local1 = f130_local1 + f133_arg0.timeElapsed
 					local f133_local0 = f130_local1 / f130_local0
@@ -2994,7 +2994,7 @@ CoD.AARUtility.AnimateCurrentLevelProgress = function ( f130_arg0, f130_arg1 )
 					if f130_local0 <= f130_local1 then
 						f130_local2.xpNeededToLevelUp:set( f130_local3 )
 						f130_local2.levelProgress:set( f130_local5 )
-						Engine.PlaySound( "uin_aar_bar_fill_tail" )
+						Engine.playsound( "uin_aar_bar_fill_tail" )
 						f130_arg0._animateProgressTimer:close()
 						CoD.AARUtility.AnimateCurrentTierProgress( f130_arg0, f130_arg1 )
 					else
@@ -3246,7 +3246,7 @@ CoD.AARUtility.AddForceStreamAARImages = function ( f141_arg0 )
 					f141_local9( f141_local10, f141_local0 )
 				end
 			end
-			f141_local10 = 0x0
+			f141_local10 = ""
 		end
 		local f141_local5 = function ( f142_arg0 )
 			for f142_local3, f142_local4 in pairs( f142_arg0 ) do
@@ -3429,17 +3429,17 @@ CoD.AARUtility.AddTierRewardDataToTable = function ( f153_arg0, f153_arg1, f153_
 			f153_local4.weaponRef = f153_local4.signatureWeaponInfo.ref
 			f153_local5.signatureWeaponInfo = f153_local4.signatureWeaponInfo
 		else
-			f153_local4.weaponRef = 0x0
+			f153_local4.weaponRef = ""
 		end
 		if f153_local4.outfitIndexes then
 			f153_local5 = f153_local4.outfitIndexes
 		end
 		local f153_local6 = function ( f154_arg0 )
 			for f154_local3, f154_local4 in ipairs( {
-				0xA2E4E7EB993B95A,
-				0x8F8028D9C81781C,
-				0xFF7352068DF6710,
-				0xCB5B4C6D31CECE7,
+				"loot_character_zero",
+				"loot_character_outrider",
+				"loot_character_spectre",
+				"loot_character_reaper",
 				"weapon_bribe"
 			} ) do
 				if f154_local4 == f154_arg0 then
@@ -3463,7 +3463,7 @@ CoD.AARUtility.AddTierRewardDataToTable = function ( f153_arg0, f153_arg1, f153_
 				f153_local4.rarity = tonumber( f153_local6 )
 			end
 		end
-		if not f153_arg5 or f153_local4.name and f153_local4.name ~= 0x0 then
+		if not f153_arg5 or f153_local4.name and f153_local4.name ~= "" then
 			table.insert( f153_arg1, {
 				models = f153_local4,
 				properties = f153_local5
@@ -3476,13 +3476,13 @@ CoD.AARUtility.AddLootCaseRewardDataToTable = function ( f155_arg0, f155_arg1, f
 	table.insert( f155_arg1, {
 		models = {
 			name = 0xD004F2913090A,
-			itemName = 0x0,
+			itemName = "",
 			desc = Engine[0xF9F1239CFD921FE]( 0x5BF036E550C7E0B ),
 			category = 0xB59099CB3805DEB,
 			tier = f155_arg2,
 			isContrabandCrate = true,
 			isLootCase = true,
-			itemCategory = 0x55E6190E8792FD1,
+			itemCategory = "case",
 			primaryImage = 0x16542A61FD09C0,
 			rarity = Enum.LootRarityType[0x8556B83CAD0D180],
 			lootType = LuaEnum.LOOT_TYPE.CONTRABAND,
@@ -3586,11 +3586,11 @@ CoD.AARUtility.UnlockTierRewardShowcase = function ( f160_arg0, f160_arg1 )
 				f162_local3.unlocked:set( true )
 				if f162_local3.setComplete:get() then
 					local f162_local8 = f162_local3.setBonusImage:get()
-					if f162_local8 and f162_local8 ~= 0x0 then
-						local f162_local9 = LocalizeToUpperString( f162_local3.mainExtraText and f162_local3.mainExtraText:get() or 0x0 )
-						local f162_local10 = LocalizeToUpperString( f162_local3.category:get() and f162_local3.category:get() or 0x0 )
-						local f162_local11 = LocalizeToUpperString( f162_local3.setBonusName and f162_local3.setBonusName:get() or 0x0 )
-						if f162_local3.itemCategory:get() == 0xCA2BC08C1A6BCF6 then
+					if f162_local8 and f162_local8 ~= "" then
+						local f162_local9 = LocalizeToUpperString( f162_local3.mainExtraText and f162_local3.mainExtraText:get() or "" )
+						local f162_local10 = LocalizeToUpperString( f162_local3.category:get() and f162_local3.category:get() or "" )
+						local f162_local11 = LocalizeToUpperString( f162_local3.setBonusName and f162_local3.setBonusName:get() or "" )
+						if f162_local3.itemCategory:get() == "calling_card" then
 							CoD.OverlayUtility.ShowToast( "LootBonusCallingCard", f162_local11, f162_local9, f162_local8, nil, nil, nil, f162_local10 )
 						else
 							CoD.OverlayUtility.ShowToast( "LootBonusStandard", f162_local11, f162_local9, f162_local8, nil, nil, nil, f162_local10 )
@@ -3632,7 +3632,7 @@ CoD.AARUtility.UnlockTierRewards = function ( f163_arg0, f163_arg1 )
 		if f165_local0 > 0 and f163_local4 <= f165_local0 then
 			local f165_local1 = f163_local2.getItem( f163_arg0, f163_local0, f163_local4 )
 			f165_local1.unlocked:set( true )
-			if f165_local1.itemName and f165_local1.itemName:get() == 0x55E6190E8792FD1 then
+			if f165_local1.itemName and f165_local1.itemName:get() == "case" then
 				f163_local1._lootCaseCurrentCount = f163_local1._lootCaseCurrentCount + 1
 				f163_local3.lootCaseCount:set( f163_local1._lootCaseCurrentCount )
 				if not f163_local3.lootCaseEarned:set( true ) then
@@ -3708,7 +3708,7 @@ CoD.AARUtility.AnimateTierBar = function ( f170_arg0, f170_arg1 )
 		f170_arg0._barAnimTimer:close()
 		f170_arg0._barAnimTimer = nil
 	end
-	Engine.PlaySound( "uin_aar_bar_fill_main" )
+	Engine.playsound( "uin_aar_bar_fill_main" )
 	f170_arg0._barAnimTimer = LUI.UITimer.newElementTimer( 10, false, function ( f171_arg0 )
 		f170_local4 = f170_local4 + f171_arg0.timeElapsed
 		local f171_local0 = f170_local4 / f170_local3
@@ -3716,7 +3716,7 @@ CoD.AARUtility.AnimateTierBar = function ( f170_arg0, f170_arg1 )
 		if f170_local3 <= f170_local4 then
 			f170_local0.earnedBarProgress:set( f170_local2 )
 			f170_arg0._barAnimTimer:close()
-			Engine.PlaySound( "uin_aar_bar_fill_tail" )
+			Engine.playsound( "uin_aar_bar_fill_tail" )
 			if f170_arg0._currentTier < f170_arg0._tierSkipStart then
 				f170_arg0._hasUnlockedItems = true
 				local f171_local1 = f170_arg0._currentTier + 1
@@ -3852,7 +3852,7 @@ CoD.AARUtility.AnimateLootCaseMeter = function ( f178_arg0, f178_arg1 )
 		f178_arg0._lootCaseMeterAnimTimer:close()
 		f178_arg0._lootCaseMeterAnimTimer = nil
 	end
-	Engine.PlaySound( "uin_aar_bar_fill_main" )
+	Engine.playsound( "uin_aar_bar_fill_main" )
 	f178_arg0._lootCaseMeterAnimTimer = LUI.UITimer.newElementTimer( 10, false, function ( f179_arg0 )
 		f178_local4 = f178_local4 + f179_arg0.timeElapsed
 		local f179_local0 = f178_local4 / f178_local3
@@ -3862,7 +3862,7 @@ CoD.AARUtility.AnimateLootCaseMeter = function ( f178_arg0, f178_arg1 )
 				f178_arg0._lootCaseMeterAnimTimer = nil
 			end
 			f178_local0.lootCaseProgress:set( f178_local2 )
-			Engine.PlaySound( "uin_aar_bar_fill_tail" )
+			Engine.playsound( "uin_aar_bar_fill_tail" )
 			if f178_arg0._lootCaseCurrentCount < f178_arg0._lootCaseEndCount then
 				f178_local0.lootCaseEarned:set( true )
 				f178_arg0._hasLootCaseProgressBarFilled = true
@@ -3888,10 +3888,10 @@ CoD.AARUtility.SetupRerolledRewardItemModels = function ( f180_arg0, f180_arg1 )
 	if f180_local1.recentRerolledItem then
 		local f180_local2 = f180_local1.recentRerolledItem:get()
 		local f180_local3 = CoDShared.Loot.GetCurrentSeason()
-		if f180_local3 and f180_local3 ~= 0x0 then
+		if f180_local3 and f180_local3 ~= "" then
 			local f180_local4 = CoDShared.Loot.GetSeasonInfo( f180_local3 )
 			local f180_local5 = CoD.BlackMarketTableUtility.GetContrabandItemInfo( f180_arg0, f180_local2, f180_arg1 )
-			if f180_local5.name and f180_local5.name ~= 0x0 and f180_local5.category and f180_local5.rarity then
+			if f180_local5.name and f180_local5.name ~= "" and f180_local5.category and f180_local5.rarity then
 				local f180_local6 = CoD.BlackMarketUtility.GetItemRefs( f180_arg0, f180_local5.name, f180_local5.category, f180_local5.rarity, f180_local5.inSet, f180_local4.id, f180_local5.lootType, f180_local5.refOptic, f180_local5.itemId )
 				local f180_local7 = CoD.AARUtility.GetAARTierRewardRootModel( f180_arg0 )
 				local f180_local8 = f180_local7:create( "rerolledItem" )
@@ -3946,7 +3946,7 @@ CoD.AARUtility.SetupTierRewardModels = function ( f181_arg0, f181_arg1 )
 	local f181_local12, f181_local13 = CoD.AARUtility.GetPreMatchLootCaseData( f181_arg1 )
 	if f181_local0 < f181_local2 then
 		for f181_local17, f181_local18 in ipairs( CoD.BlackMarketUtility.GetTierItemsForStream( f181_arg1, f181_local0 + 1, f181_local2, false, true ) ) do
-			if f181_local18.unlocked and f181_local18.itemName == 0x55E6190E8792FD1 then
+			if f181_local18.unlocked and f181_local18.itemName == "case" then
 				f181_local9 = f181_local9 - 1
 			end
 		end
@@ -4083,7 +4083,7 @@ CoD.AARUtility.IsTierRewardCharacterType = function ( f192_arg0, f192_arg1 )
 	if f192_local0 and f192_local0.itemCategory then
 		local f192_local1 = f192_local0.itemCategory:get()
 		local f192_local2
-		if f192_local1 ~= 0xDD691088352B680 and f192_local1 ~= 0xC398D8E22A2269B then
+		if f192_local1 ~= "palette" and f192_local1 ~= "outfit_bundle" then
 			f192_local2 = false
 		else
 			f192_local2 = true
@@ -4207,12 +4207,12 @@ CoD.AARUtility.GetUnlockedWarzoneCharacters = function ( f199_arg0 )
 	local f199_local0 = {}
 	local f199_local1, f199_local2 = CoD.AARUtility.GetStats( f199_arg0 )
 	if f199_local2 then
-		local f199_local3 = f199_local2[0x147738D5CEE9199]
+		local f199_local3 = f199_local2.characters
 		if f199_local3 then
-			f199_local3 = f199_local2[0x147738D5CEE9199].__keys
+			f199_local3 = f199_local2.characters.__keys
 		end
 		for f199_local7, f199_local8 in ipairs( f199_local3 ) do
-			if f199_local2[0x147738D5CEE9199][f199_local8][0xA55E1714AECC27C]:get() == 1 then
+			if f199_local2.characters[f199_local8].unlocked:get() == 1 then
 				table.insert( f199_local0, f199_local8 )
 			end
 		end
@@ -4224,9 +4224,9 @@ CoD.AARUtility.GetUnlockedWZTagRewards = function ( f200_arg0 )
 	local f200_local0 = {}
 	local f200_local1, f200_local2 = CoD.AARUtility.GetStats( f200_arg0 )
 	if f200_local1 and f200_local2 then
-		local f200_local3 = f200_local1[0xEE8B4A6073F7825]
-		local f200_local4 = f200_local2[0xEE8B4A6073F7825]
-		local f200_local5 = f200_local2[0xEE8B4A6073F7825].__keys
+		local f200_local3 = f200_local1.unlockedtags
+		local f200_local4 = f200_local2.unlockedtags
+		local f200_local5 = f200_local2.unlockedtags.__keys
 		local f200_local6 = Engine[0xB2E4CCC119597B0]()
 		for f200_local16, f200_local17 in ipairs( f200_local5 ) do
 			if f200_local3[f200_local17] then
@@ -4245,8 +4245,8 @@ CoD.AARUtility.GetUnlockedWZTagRewards = function ( f200_arg0 )
 								levelText = Engine[0xF9F1239CFD921FE]( 0x7FC454B26C88374 ),
 								mainIcon = f200_local10[0xEBCB3D3B3ECFBC0],
 								rewardType = CoD.AARUtility.AARRewardType.SPECIAL_EVENT,
-								reward1Icon = f200_local10[0xBFF4CC56C2092F0],
-								reward1Title = f200_local10[0xA31296C0C1B6029],
+								reward1Icon = f200_local10.icon,
+								reward1Title = f200_local10.title,
 								tierProgress = 1,
 								tierMax = 1,
 								tierProgressText = "",
@@ -4265,8 +4265,8 @@ CoD.AARUtility.GetRecentlyUnlockedWarzoneCharacters = function ( f201_arg0 )
 	local f201_local0 = {}
 	local f201_local1, f201_local2 = CoD.AARUtility.GetStats( f201_arg0 )
 	if f201_local1 and f201_local2 then
-		for f201_local6, f201_local7 in ipairs( f201_local2[0x147738D5CEE9199].__keys ) do
-			if f201_local1[0x147738D5CEE9199][f201_local7][0xA55E1714AECC27C]:get() == 0 and f201_local2[0x147738D5CEE9199][f201_local7][0xA55E1714AECC27C]:get() == 1 then
+		for f201_local6, f201_local7 in ipairs( f201_local2.characters.__keys ) do
+			if f201_local1.characters[f201_local7].unlocked:get() == 0 and f201_local2.characters[f201_local7].unlocked:get() == 1 then
 				table.insert( f201_local0, f201_local7 )
 			end
 		end
@@ -4308,20 +4308,20 @@ CoD.AARUtility.SetMeritModelsFromRankInfo = function ( f205_arg0, f205_arg1, f20
 	if f205_arg1 then
 		local f205_local1
 		if f205_arg3 ~= nil then
-			f205_local1 = Engine.GetRankIcon( f205_arg1.level, f205_arg3, Enum.eModes[0xBF1DCC8138A9D39] )
+			f205_local1 = Engine.GetRankIcon( f205_arg1.level, f205_arg3, Enum.eModes.mode_warzone )
 			if not f205_local1 then
 			
 			else
-				if f205_local1 == 0x0 then
+				if f205_local1 == "" then
 					f205_local1 = f205_arg1.iconLarge
 				end
 				local f205_local2
 				if f205_arg3 ~= nil then
-					f205_local2 = Engine[0x1F63E4E0932DCCF]( f205_arg1.level, f205_arg3, Enum.eModes[0xBF1DCC8138A9D39] )
+					f205_local2 = Engine[0x1F63E4E0932DCCF]( f205_arg1.level, f205_arg3, Enum.eModes.mode_warzone )
 					if not f205_local2 then
 					
 					else
-						if f205_local2 == 0x0 then
+						if f205_local2 == "" then
 							f205_local2 = f205_arg1.iconLarge
 						end
 						local f205_local3 = f205_local0:create( "echelon" )
@@ -4343,11 +4343,11 @@ CoD.AARUtility.SetMeritModelsFromRankInfo = function ( f205_arg0, f205_arg1, f20
 	if f205_arg2 then
 		local f205_local1
 		if f205_arg3 ~= nil then
-			f205_local1 = Engine.GetRankIcon( f205_arg2.level, f205_arg3, Enum.eModes[0xBF1DCC8138A9D39] )
+			f205_local1 = Engine.GetRankIcon( f205_arg2.level, f205_arg3, Enum.eModes.mode_warzone )
 			if not f205_local1 then
 			
 			else
-				if f205_local1 == 0x0 then
+				if f205_local1 == "" then
 					f205_local1 = f205_arg2.iconLarge
 				end
 				local f205_local2 = f205_local0:create( "nextRankIcon" )
@@ -4527,7 +4527,7 @@ CoD.AARUtility.SetupMeritRewardModels = function ( f207_arg0, f207_arg1, f207_ar
 			end
 		end
 		
-		f207_local19 = Engine[0xF9F1239CFD921FE]( 0xF3AA35A77FB540C, f207_local20( f207_arg0._placementMerits ) )
+		f207_local19 = Engine[0xF9F1239CFD921FE]( "aar/top_x", f207_local20( f207_arg0._placementMerits ) )
 	else
 		f207_local19 = Engine[0xF9F1239CFD921FE]( 0x6503D553D4D6C3 )
 	end
@@ -4536,7 +4536,7 @@ CoD.AARUtility.SetupMeritRewardModels = function ( f207_arg0, f207_arg1, f207_ar
 	if f207_arg0._placementMerits > 0 then
 		f207_local21 = f207_arg0._placementMerits
 	end
-	local f207_local20 = LocalizeStringWithParameter( 0x50158F8FB37F010, tostring( f207_local17 ) )
+	local f207_local20 = LocalizeStringWithParameter( "ui/warzone_placement", tostring( f207_local17 ) )
 	if f207_local17 == 0 then
 		f207_local20 = "--"
 	end
@@ -4555,7 +4555,7 @@ CoD.AARUtility.SetupMeritRewardModels = function ( f207_arg0, f207_arg1, f207_ar
 	f207_local23 = f207_local22:create( "middleLabel" )
 	f207_local23:set( f207_local19 )
 	f207_local23 = f207_local22:create( "bottomLabel" )
-	f207_local23:set( 0x3EC1D01B53129AE )
+	f207_local23:set( "aar/challenges" )
 	f207_local23 = f207_local22:create( "bottomValue" )
 	f207_local24 = f207_local23
 	f207_local23 = f207_local23.set
@@ -4742,7 +4742,7 @@ CoD.AARUtility.AnimateMeritReportNumbers = function ( f216_arg0, f216_arg1 )
 	local f216_local8 = f216_local6 > 0
 	local f216_local9 = CoD.AARUtility.GetAARMeritReportRootModel( f216_arg1 )
 	f216_arg0:addElement( LUI.UITimer.newElementTimer( 1000, true, function ()
-		Engine.PlaySound( "uin_aar_bar_fill_main" )
+		Engine.playsound( "uin_aar_bar_fill_main" )
 		f216_arg0._numAnimTimer = LUI.UITimer.newElementTimer( 10, false, function ( f218_arg0 )
 			f216_local1 = f216_local1 + f218_arg0.timeElapsed
 			local f218_local0 = f216_local1 / f216_local0
@@ -4763,7 +4763,7 @@ CoD.AARUtility.AnimateMeritReportNumbers = function ( f216_arg0, f216_arg1 )
 							f216_local9.winValue:set( f216_local6 )
 						end
 						f216_arg0._numAnimTimer:close()
-						Engine.PlaySound( "uin_aar_bar_fill_tail" )
+						Engine.playsound( "uin_aar_bar_fill_tail" )
 					end
 				end
 				f218_local1 = 0
@@ -4835,7 +4835,7 @@ CoD.AARUtility.AnimateMeritBar = function ( f219_arg0, f219_arg1 )
 			end
 			f219_arg0._currentRank = f219_arg0._currentRank + 1
 			if f219_arg0._currentRank <= f219_arg0._endRank then
-				Engine.PlaySound( "mpl_promotion", f219_arg1 )
+				Engine.playsound( "mpl_promotion", f219_arg1 )
 				CoD.AARUtility.AnimateMeritBar( f219_arg0, f219_arg1 )
 			else
 				if f219_arg0._challengeCoin then
@@ -4913,15 +4913,16 @@ CoD.AARUtility.SetLevelUpModelsFromRankInfo = function ( f222_arg0, f222_arg1, f
 	f222_local1 = f222_local0:create( "rankName" )
 	f222_local1:set( f222_arg1.fullNameRef )
 	f222_local1 = f222_local0:create( "rankLabel" )
-	f222_local1:set( Engine[0xF9F1239CFD921FE]( 0xBC1D826D76D607F, f222_arg1.level ) )
+	f222_local1:set( Engine[0xF9F1239CFD921FE]( "aar/level_n", f222_arg1.level ) )
 	f222_local1 = f222_local0:create( "rankIcon" )
 	f222_local1:set( f222_arg1.iconLarge )
-	f222_local1 = 0x0
-	local f222_local2 = 0x0
-	local f222_local3 = 0x0
+	f222_local1 = ""
+	local f222_local2 = ""
+	local f222_local3 = ""
 	local f222_local4 = CoD.AARUtility.AARRewardType.PLAYER
 	local f222_local5 = CoD.AARUtility.GetPlayerRewards( f222_arg0 )
-	local f222_local6, f222_local7 = false
+	local f222_local6 = false
+	local f222_local7 = nil
 	for f222_local12, f222_local13 in pairs( f222_local5 ) do
 		if f222_local13.models.level == f222_arg1.level then
 			local f222_local11 = f222_local13.models.rewardType
@@ -4967,7 +4968,7 @@ end
 CoD.AARUtility.GetParagonRankInfo = function ( f223_arg0, f223_arg1 )
 	return {
 		level = f223_arg0 + 1,
-		fullNameRef = 0x0,
+		fullNameRef = "",
 		iconLarge = Engine[0xFC100C7712C1987]( f223_arg1, Engine.CurrentSessionMode() )
 	}
 end
@@ -5078,7 +5079,7 @@ CoD.AARUtility.AnimateRankXpBar = function ( f226_arg0, f226_arg1 )
 			if f226_arg0._currentRank <= f226_arg0._endRank then
 				CoD.AARUtility.AnimateRankXpBar( f226_arg0, f226_arg1 )
 			end
-			Engine.PlaySound( "mpl_promotion", f226_arg1 )
+			Engine.playsound( "mpl_promotion", f226_arg1 )
 		else
 			f226_local0.earnedXpProgress:set( f227_local0 * (f226_local2 - f226_local1) + f226_local1 )
 		end
@@ -5209,7 +5210,7 @@ CoD.AARUtility.CloseMissionRewardOverlay = function ( f238_arg0, f238_arg1 )
 end
 
 CoD.AARUtility.ProcessAAROverlays_ZM = function ( f239_arg0, f239_arg1 )
-	if IsBooleanDvarSet( 0x1DA02CA40639DE5 ) and CoD.ZombiesCallingsUtility.ShowFactionCallingFullscreen( f239_arg1 ) then
+	if IsBooleanDvarSet( "faction_callings_enabled_zm" ) and CoD.ZombiesCallingsUtility.ShowFactionCallingFullscreen( f239_arg1 ) then
 		f239_arg0.factionCallingFullscreenOverlay = OpenOverlay( f239_arg0, "AAR_FactionCalling", f239_arg1, nil )
 	else
 		CoD.AARUtility.ProcessAAROverlays( f239_arg0, f239_arg1 )
@@ -5333,7 +5334,7 @@ CoD.AARUtility.ProcessAAROverlays_WZ = function ( f244_arg0, f244_arg1 )
 		local f246_local5 = f246_local1.PlayerStatsList.RANK.StatValue:get()
 		local f246_local6 = CoD.RankUtility.GetRankCap()
 		local f246_local7
-		if f246_local4 ~= Engine.GetPrestigeCap( Enum.eModes[0xBF1DCC8138A9D39] ) or f246_local3 ~= f246_local6 - 1 or f246_local5 ~= f246_local6 then
+		if f246_local4 ~= Engine.GetPrestigeCap( Enum.eModes.mode_warzone ) or f246_local3 ~= f246_local6 - 1 or f246_local5 ~= f246_local6 then
 			f246_local7 = false
 		else
 			f246_local7 = true
@@ -5430,7 +5431,7 @@ CoD.OverlayUtility.AddSystemOverlay( "AAR_LeaguePlayDivPlacement", {
 	title = function ( f251_arg0 )
 		local f251_local0 = DataSources.LeaguePlayLadder.getModel( f251_arg0 )
 		if f251_local0 and f251_local0.leagueNameCode and f251_local0.leagueNameCode:get() then
-			return Engine[0xF9F1239CFD921FE]( 0xA833716CBB8F05A )
+			return Engine[0xF9F1239CFD921FE]( "menu/congratulations_caps" )
 		else
 			return Engine[0xF9F1239CFD921FE]( "menu/error_caps" )
 		end

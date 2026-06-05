@@ -21,7 +21,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BackgroundTint = LUI.UIImage.new( 0, 1, -960, 960, 0, 1, -540, 540 )
-	BackgroundTint:setImage( RegisterImage( 0x8B0F963112093E7 ) )
+	BackgroundTint:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_backgroundtint" ) )
 	self:addElement( BackgroundTint )
 	self.BackgroundTint = BackgroundTint
 	
@@ -34,7 +34,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local BackgroundLinesTexture = LUI.UIImage.new( 0.5, 0.5, -645, 675, 0.5, 0.5, -545, 545 )
 	BackgroundLinesTexture:setRGB( 0.74, 0.93, 1 )
 	BackgroundLinesTexture:setAlpha( 0.8 )
-	BackgroundLinesTexture:setImage( RegisterImage( 0x101DA3F1C717AD9 ) )
+	BackgroundLinesTexture:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_centertexturelines" ) )
 	BackgroundLinesTexture:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BackgroundLinesTexture )
 	self.BackgroundLinesTexture = BackgroundLinesTexture
@@ -42,7 +42,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local OutsideRing = LUI.UIImage.new( 0.5, 0.5, -301.5, 301.5, 0.5, 0.5, -301.5, 301.5 )
 	OutsideRing:setRGB( 0.6, 0.82, 0.91 )
 	OutsideRing:setAlpha( 0.3 )
-	OutsideRing:setImage( RegisterImage( 0x62FECE0C0E19FE7 ) )
+	OutsideRing:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsidering" ) )
 	OutsideRing:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideRing )
 	self.OutsideRing = OutsideRing
@@ -57,7 +57,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local CenterUpperLine = LUI.UIImage.new( 0.5, 0.5, -209, 209, 0.5, 0.5, -181, -157 )
 	CenterUpperLine:setRGB( 0.6, 0.82, 0.91 )
 	CenterUpperLine:setAlpha( 0.2 )
-	CenterUpperLine:setImage( RegisterImage( 0xE5AC7FEBE9A0F7E ) )
+	CenterUpperLine:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_centerlines" ) )
 	CenterUpperLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	CenterUpperLine:setShaderVector( 0, 0, 1, 0, 0 )
 	CenterUpperLine:setShaderVector( 1, 0, 0, 0, 0 )
@@ -70,7 +70,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local CenterLowerLine = LUI.UIImage.new( 0.5, 0.5, -209, 209, 0.5, 0.5, 164, 188 )
 	CenterLowerLine:setRGB( 0.6, 0.82, 0.91 )
 	CenterLowerLine:setAlpha( 0.2 )
-	CenterLowerLine:setImage( RegisterImage( 0xE5AC7FEBE9A0F7E ) )
+	CenterLowerLine:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_centerlines" ) )
 	CenterLowerLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	CenterLowerLine:setShaderVector( 0, 0, 1, 0, 0 )
 	CenterLowerLine:setShaderVector( 1, 0, 0, 0, 0 )
@@ -92,7 +92,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	CenterReticleLineR:setAlpha( 0.6 )
 	CenterReticleLineR:setXRot( 180 )
 	CenterReticleLineR:setZRot( 180 )
-	CenterReticleLineR:setImage( RegisterImage( 0xDB5A315CE4E7178 ) )
+	CenterReticleLineR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_centerreticlesideline" ) )
 	CenterReticleLineR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterReticleLineR )
 	self.CenterReticleLineR = CenterReticleLineR
@@ -100,14 +100,14 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local CenterReticleLineL = LUI.UIImage.new( 0.5, 0.5, -127, -90, 0.5, 0.5, -66, 70 )
 	CenterReticleLineL:setRGB( 0.6, 0.82, 0.91 )
 	CenterReticleLineL:setAlpha( 0.6 )
-	CenterReticleLineL:setImage( RegisterImage( 0xDB5A315CE4E7178 ) )
+	CenterReticleLineL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_centerreticlesideline" ) )
 	CenterReticleLineL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterReticleLineL )
 	self.CenterReticleLineL = CenterReticleLineL
 	
 	local OutsideRingLineBlurR = LUI.UIImage.new( 0.5, 0.5, 335, 454, 0.5, 0.5, -256, 258 )
 	OutsideRingLineBlurR:setAlpha( 0.25 )
-	OutsideRingLineBlurR:setImage( RegisterImage( 0x44F54B95877C748 ) )
+	OutsideRingLineBlurR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsideringlineblur" ) )
 	OutsideRingLineBlurR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideRingLineBlurR )
 	self.OutsideRingLineBlurR = OutsideRingLineBlurR
@@ -115,7 +115,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local OusideRingLineBlurL = LUI.UIImage.new( 0.5, 0.5, -442, -323, 0.5, 0.5, -256, 258 )
 	OusideRingLineBlurL:setAlpha( 0.25 )
 	OusideRingLineBlurL:setZRot( 180 )
-	OusideRingLineBlurL:setImage( RegisterImage( 0x44F54B95877C748 ) )
+	OusideRingLineBlurL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsideringlineblur" ) )
 	OusideRingLineBlurL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OusideRingLineBlurL )
 	self.OusideRingLineBlurL = OusideRingLineBlurL
@@ -130,7 +130,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local OutsideHashLineR1 = LUI.UIImage.new( 0.5, 0.5, 474, 630, 0.5, 0.5, -338, 344 )
 	OutsideHashLineR1:setRGB( 0.6, 0.82, 0.91 )
 	OutsideHashLineR1:setAlpha( 0.9 )
-	OutsideHashLineR1:setImage( RegisterImage( 0xD26D6A0739D4019 ) )
+	OutsideHashLineR1:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsidehashlinesr1" ) )
 	OutsideHashLineR1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR1 )
 	self.OutsideHashLineR1 = OutsideHashLineR1
@@ -138,7 +138,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local OutsideHashLineR2 = LUI.UIImage.new( 0.5, 0.5, 473, 630, 0.5, 0.5, -192, 195 )
 	OutsideHashLineR2:setRGB( 0.6, 0.82, 0.91 )
 	OutsideHashLineR2:setAlpha( 0.8 )
-	OutsideHashLineR2:setImage( RegisterImage( 0xD26DAA0739D46E5 ) )
+	OutsideHashLineR2:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsidehashlinesr5" ) )
 	OutsideHashLineR2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR2 )
 	self.OutsideHashLineR2 = OutsideHashLineR2
@@ -146,14 +146,14 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local OutsideHashLineR3 = LUI.UIImage.new( 0.5, 0.5, 473, 630, 0.5, 0.5, -66, 67 )
 	OutsideHashLineR3:setRGB( 0.6, 0.82, 0.91 )
 	OutsideHashLineR3:setAlpha( 0.7 )
-	OutsideHashLineR3:setImage( RegisterImage( 0xD26D3A0739D3B00 ) )
+	OutsideHashLineR3:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsidehashlinesr2" ) )
 	OutsideHashLineR3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR3 )
 	self.OutsideHashLineR3 = OutsideHashLineR3
 	
 	local OutsideHashLineR4 = LUI.UIImage.new( 0.5, 0.5, 474, 630, 0.5, 0.5, -17, 21 )
 	OutsideHashLineR4:setRGB( 0.6, 0.82, 0.91 )
-	OutsideHashLineR4:setImage( RegisterImage( 0xD26D4A0739D3CB3 ) )
+	OutsideHashLineR4:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsidehashlinesr3" ) )
 	OutsideHashLineR4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR4 )
 	self.OutsideHashLineR4 = OutsideHashLineR4
@@ -162,7 +162,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	OutsideHashLineR10:setRGB( 0.6, 0.82, 0.91 )
 	OutsideHashLineR10:setAlpha( 0.9 )
 	OutsideHashLineR10:setZRot( 180 )
-	OutsideHashLineR10:setImage( RegisterImage( 0xD26D6A0739D4019 ) )
+	OutsideHashLineR10:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsidehashlinesr1" ) )
 	OutsideHashLineR10:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR10 )
 	self.OutsideHashLineR10 = OutsideHashLineR10
@@ -171,7 +171,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	OutsideHashLineR20:setRGB( 0.6, 0.82, 0.91 )
 	OutsideHashLineR20:setAlpha( 0.8 )
 	OutsideHashLineR20:setZRot( 180 )
-	OutsideHashLineR20:setImage( RegisterImage( 0xD26DAA0739D46E5 ) )
+	OutsideHashLineR20:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsidehashlinesr5" ) )
 	OutsideHashLineR20:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR20 )
 	self.OutsideHashLineR20 = OutsideHashLineR20
@@ -180,7 +180,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	OutsideHashLineR30:setRGB( 0.6, 0.82, 0.91 )
 	OutsideHashLineR30:setAlpha( 0.7 )
 	OutsideHashLineR30:setZRot( 180 )
-	OutsideHashLineR30:setImage( RegisterImage( 0xD26D3A0739D3B00 ) )
+	OutsideHashLineR30:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsidehashlinesr2" ) )
 	OutsideHashLineR30:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR30 )
 	self.OutsideHashLineR30 = OutsideHashLineR30
@@ -188,7 +188,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local OutsideHashLineR40 = LUI.UIImage.new( 0.5, 0.5, -628, -472, 0.5, 0.5, -19, 21 )
 	OutsideHashLineR40:setRGB( 0.6, 0.82, 0.91 )
 	OutsideHashLineR40:setZRot( 180 )
-	OutsideHashLineR40:setImage( RegisterImage( 0xD26D4A0739D3CB3 ) )
+	OutsideHashLineR40:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsidehashlinesr3" ) )
 	OutsideHashLineR40:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( OutsideHashLineR40 )
 	self.OutsideHashLineR40 = OutsideHashLineR40
@@ -242,7 +242,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local OutsideLineUR = LUI.UIImage.new( 0.5, 0.5, 375, 528, 0.5, 0.5, -181, -157 )
 	OutsideLineUR:setRGB( 0.6, 0.82, 0.91 )
 	OutsideLineUR:setAlpha( 0.6 )
-	OutsideLineUR:setImage( RegisterImage( 0xE5AC7FEBE9A0F7E ) )
+	OutsideLineUR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_centerlines" ) )
 	OutsideLineUR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	OutsideLineUR:setShaderVector( 0, 0, 1, 0, 0 )
 	OutsideLineUR:setShaderVector( 1, 0, 0, 0, 0 )
@@ -255,7 +255,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local OutsideLineLR = LUI.UIImage.new( 0.5, 0.5, 375, 528, 0.5, 0.5, 164, 188 )
 	OutsideLineLR:setRGB( 0.6, 0.82, 0.91 )
 	OutsideLineLR:setAlpha( 0.8 )
-	OutsideLineLR:setImage( RegisterImage( 0xE5AC7FEBE9A0F7E ) )
+	OutsideLineLR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_centerlines" ) )
 	OutsideLineLR:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	OutsideLineLR:setShaderVector( 0, 0, 1, 0, 0 )
 	OutsideLineLR:setShaderVector( 1, 0, 0, 0, 0 )
@@ -268,7 +268,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local OutsideLineUL = LUI.UIImage.new( 0.5, 0.5, -521, -368, 0.5, 0.5, -181, -157 )
 	OutsideLineUL:setRGB( 0.6, 0.82, 0.91 )
 	OutsideLineUL:setAlpha( 0.8 )
-	OutsideLineUL:setImage( RegisterImage( 0xE5AC7FEBE9A0F7E ) )
+	OutsideLineUL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_centerlines" ) )
 	OutsideLineUL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	OutsideLineUL:setShaderVector( 0, 0, 1, 0, 0 )
 	OutsideLineUL:setShaderVector( 1, 0, 0, 0, 0 )
@@ -281,7 +281,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local OutsideLineLL = LUI.UIImage.new( 0.5, 0.5, -521, -368, 0.5, 0.5, 164, 188 )
 	OutsideLineLL:setRGB( 0.6, 0.82, 0.91 )
 	OutsideLineLL:setAlpha( 0.8 )
-	OutsideLineLL:setImage( RegisterImage( 0xE5AC7FEBE9A0F7E ) )
+	OutsideLineLL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_centerlines" ) )
 	OutsideLineLL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	OutsideLineLL:setShaderVector( 0, 0, 1, 0, 0 )
 	OutsideLineLL:setShaderVector( 1, 0, 0, 0, 0 )
@@ -293,28 +293,28 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local RGBLineUR = LUI.UIImage.new( 0.5, 0.5, 229, 274, 0.5, 0.5, -58, -36 )
 	RGBLineUR:setAlpha( 0.6 )
-	RGBLineUR:setImage( RegisterImage( 0x1A7BDBC7AF5C2 ) )
+	RGBLineUR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsidelinergb" ) )
 	RGBLineUR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( RGBLineUR )
 	self.RGBLineUR = RGBLineUR
 	
 	local RGBLineLR = LUI.UIImage.new( 0.5, 0.5, 229, 274, 0.5, 0.5, 39, 61 )
 	RGBLineLR:setAlpha( 0.6 )
-	RGBLineLR:setImage( RegisterImage( 0x1A7BDBC7AF5C2 ) )
+	RGBLineLR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsidelinergb" ) )
 	RGBLineLR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( RGBLineLR )
 	self.RGBLineLR = RGBLineLR
 	
 	local RGBLineUL = LUI.UIImage.new( 0.5, 0.5, -275, -230, 0.5, 0.5, -58, -36 )
 	RGBLineUL:setAlpha( 0.6 )
-	RGBLineUL:setImage( RegisterImage( 0x1A7BDBC7AF5C2 ) )
+	RGBLineUL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsidelinergb" ) )
 	RGBLineUL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( RGBLineUL )
 	self.RGBLineUL = RGBLineUL
 	
 	local RGBLineLL = LUI.UIImage.new( 0.5, 0.5, -275, -230, 0.5, 0.5, 39, 61 )
 	RGBLineLL:setAlpha( 0.6 )
-	RGBLineLL:setImage( RegisterImage( 0x1A7BDBC7AF5C2 ) )
+	RGBLineLL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_wasp_outsidelinergb" ) )
 	RGBLineLL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( RGBLineLL )
 	self.RGBLineLL = RGBLineLL
@@ -341,7 +341,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		} )
 	end, false )
 	vhudsentinelTimeBar:setRGB( 0.6, 0.82, 0.91 )
-	vhudsentinelTimeBar:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 1 ) )
+	vhudsentinelTimeBar:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 1 ) )
 	vhudsentinelTimeBar:setYRot( -20 )
 	vhudsentinelTimeBar:linkToElementModel( self, nil, false, function ( model )
 		vhudsentinelTimeBar:setModel( model, f1_arg1 )
@@ -350,7 +350,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.vhudsentinelTimeBar = vhudsentinelTimeBar
 	
 	vhudsentinelDamageIconWidget = CoD.vhud_sentinel_DamageIconWidget.new( f1_arg0, f1_arg1, 1, 1, -386, -148, 0, 0, 140, 247 )
-	vhudsentinelDamageIconWidget:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 1 ) )
+	vhudsentinelDamageIconWidget:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 1 ) )
 	vhudsentinelDamageIconWidget:setYRot( -20 )
 	vhudsentinelDamageIconWidget:setScale( 0.8, 0.8 )
 	vhudsentinelDamageIconWidget:linkToElementModel( self, nil, false, function ( model )
@@ -361,10 +361,10 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	SpeedNumbers = LUI.UIText.new( 1, 1, -340, -196, 0.5, 0.5, 8, 32 )
 	SpeedNumbers:setRGB( 0.6, 0.82, 0.91 )
-	SpeedNumbers:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 1 ) )
+	SpeedNumbers:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 1 ) )
 	SpeedNumbers:setYRot( -40 )
 	SpeedNumbers:setTTF( "default" )
-	SpeedNumbers:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD756CD9A5F1F1B4 ) )
+	SpeedNumbers:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration_cheap_blur" ) )
 	SpeedNumbers:setShaderVector( 0, 0, 1, 0, 0 )
 	SpeedNumbers:setShaderVector( 1, 0, 0, 0, 0 )
 	SpeedNumbers:setShaderVector( 2, 0, 0, 0, 0 )
@@ -383,9 +383,9 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	speedBox = CoD.vhud_sentinel_NotificationBox.new( f1_arg0, f1_arg1, 1, 1, -330, -208, 0.5, 0.5, -30, 15 )
 	speedBox:setRGB( 0.6, 0.82, 0.91 )
-	speedBox:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 1 ) )
+	speedBox:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 1 ) )
 	speedBox:setYRot( -50 )
-	speedBox.SignalText:setText( Engine[0xF9F1239CFD921FE]( 0x3755C926654C027 ) )
+	speedBox.SignalText:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_speed" ) )
 	self:addElement( speedBox )
 	self.speedBox = speedBox
 	
@@ -451,7 +451,7 @@ CoD.VHUD_Sentinel_Reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 			modelName = "vehicleType"
 		} )
 	end, false )
-	vhudsentinelAltitudeInfo0:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 1 ) )
+	vhudsentinelAltitudeInfo0:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 1 ) )
 	vhudsentinelAltitudeInfo0:linkToElementModel( self, nil, false, function ( model )
 		vhudsentinelAltitudeInfo0:setModel( model, f1_arg1 )
 	end )
@@ -544,7 +544,7 @@ CoD.VHUD_Sentinel_Reticle.__resetProperties = function ( f20_arg0 )
 	f20_arg0.CenterReticleLineR:setLeftRight( 0.5, 0.5, 91, 128 )
 	f20_arg0.CenterReticleLineR:setTopBottom( 0.5, 0.5, -66, 70 )
 	f20_arg0.CenterReticleLineR:setAlpha( 0.6 )
-	f20_arg0.vhudsentinelTimeBar:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 1 ) )
+	f20_arg0.vhudsentinelTimeBar:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 1 ) )
 	f20_arg0.OusideRingLineBlurL:setLeftRight( 0.5, 0.5, -442, -323 )
 	f20_arg0.OusideRingLineBlurL:setTopBottom( 0.5, 0.5, -256, 258 )
 	f20_arg0.OusideRingLineBlurL:setAlpha( 0.25 )
@@ -557,7 +557,7 @@ CoD.VHUD_Sentinel_Reticle.__resetProperties = function ( f20_arg0 )
 	f20_arg0.OutsideRingLines:setTopBottom( 0.5, 0.5, -187, 187 )
 	f20_arg0.OutsideRingLines:setAlpha( 0.3 )
 	f20_arg0.OutsideRingLines:setZoom( 0 )
-	f20_arg0.vhudsentinelDamageIconWidget:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 1 ) )
+	f20_arg0.vhudsentinelDamageIconWidget:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 1 ) )
 	f20_arg0.OutsideHashLineR1:setLeftRight( 0.5, 0.5, 474, 630 )
 	f20_arg0.OutsideHashLineR1:setTopBottom( 0.5, 0.5, -338, 344 )
 	f20_arg0.OutsideHashLineR1:setAlpha( 0.9 )
@@ -1078,34 +1078,34 @@ CoD.VHUD_Sentinel_Reticle.__clipsPerState = {
 			f22_arg0.RGBLineLL:registerEventHandler( "transition_complete_keyframe", f22_local26 )
 			local f22_local27 = function ( f65_arg0 )
 				f65_arg0:beginAnimation( 100 )
-				f65_arg0:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 1 ) )
+				f65_arg0:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 1 ) )
 				f65_arg0:registerEventHandler( "transition_complete_keyframe", f22_arg0.clipFinished )
 			end
 			
 			f22_arg0.vhudsentinelTimeBar:beginAnimation( 200 )
-			f22_arg0.vhudsentinelTimeBar:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 0 ) )
+			f22_arg0.vhudsentinelTimeBar:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 0 ) )
 			f22_arg0.vhudsentinelTimeBar:registerEventHandler( "interrupted_keyframe", f22_arg0.clipInterrupted )
 			f22_arg0.vhudsentinelTimeBar:registerEventHandler( "transition_complete_keyframe", f22_local27 )
 			local f22_local28 = function ( f66_arg0 )
 				local f66_local0 = function ( f67_arg0 )
 					local f67_local0 = function ( f68_arg0 )
 						f68_arg0:beginAnimation( 30 )
-						f68_arg0:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 1 ) )
+						f68_arg0:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 1 ) )
 						f68_arg0:registerEventHandler( "transition_complete_keyframe", f22_arg0.clipFinished )
 					end
 					
 					f67_arg0:beginAnimation( 29 )
-					f67_arg0:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 0 ) )
+					f67_arg0:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 0 ) )
 					f67_arg0:registerEventHandler( "transition_complete_keyframe", f67_local0 )
 				end
 				
 				f66_arg0:beginAnimation( 100 )
-				f66_arg0:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 1 ) )
+				f66_arg0:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 1 ) )
 				f66_arg0:registerEventHandler( "transition_complete_keyframe", f66_local0 )
 			end
 			
 			f22_arg0.vhudsentinelDamageIconWidget:beginAnimation( 260 )
-			f22_arg0.vhudsentinelDamageIconWidget:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 0 ) )
+			f22_arg0.vhudsentinelDamageIconWidget:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 0 ) )
 			f22_arg0.vhudsentinelDamageIconWidget:registerEventHandler( "interrupted_keyframe", f22_arg0.clipInterrupted )
 			f22_arg0.vhudsentinelDamageIconWidget:registerEventHandler( "transition_complete_keyframe", f22_local28 )
 		end,
@@ -2382,34 +2382,34 @@ CoD.VHUD_Sentinel_Reticle.__clipsPerState = {
 			f145_arg0.RGBLineLL:registerEventHandler( "transition_complete_keyframe", f145_local25 )
 			local f145_local26 = function ( f187_arg0 )
 				f187_arg0:beginAnimation( 100 )
-				f187_arg0:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 1 ) )
+				f187_arg0:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 1 ) )
 				f187_arg0:registerEventHandler( "transition_complete_keyframe", f145_arg0.clipFinished )
 			end
 			
 			f145_arg0.vhudsentinelTimeBar:beginAnimation( 200 )
-			f145_arg0.vhudsentinelTimeBar:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 0 ) )
+			f145_arg0.vhudsentinelTimeBar:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 0 ) )
 			f145_arg0.vhudsentinelTimeBar:registerEventHandler( "interrupted_keyframe", f145_arg0.clipInterrupted )
 			f145_arg0.vhudsentinelTimeBar:registerEventHandler( "transition_complete_keyframe", f145_local26 )
 			local f145_local27 = function ( f188_arg0 )
 				local f188_local0 = function ( f189_arg0 )
 					local f189_local0 = function ( f190_arg0 )
 						f190_arg0:beginAnimation( 30 )
-						f190_arg0:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 1 ) )
+						f190_arg0:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 1 ) )
 						f190_arg0:registerEventHandler( "transition_complete_keyframe", f145_arg0.clipFinished )
 					end
 					
 					f189_arg0:beginAnimation( 29 )
-					f189_arg0:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 0 ) )
+					f189_arg0:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 0 ) )
 					f189_arg0:registerEventHandler( "transition_complete_keyframe", f189_local0 )
 				end
 				
 				f188_arg0:beginAnimation( 100 )
-				f188_arg0:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 1 ) )
+				f188_arg0:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 1 ) )
 				f188_arg0:registerEventHandler( "transition_complete_keyframe", f188_local0 )
 			end
 			
 			f145_arg0.vhudsentinelDamageIconWidget:beginAnimation( 260 )
-			f145_arg0.vhudsentinelDamageIconWidget:setAlpha( SessionModeOverrideNumber( Enum.eModes[0x60063C67132EB69], 0, 0 ) )
+			f145_arg0.vhudsentinelDamageIconWidget:setAlpha( SessionModeOverrideNumber( Enum.eModes.mode_campaign, 0, 0 ) )
 			f145_arg0.vhudsentinelDamageIconWidget:registerEventHandler( "interrupted_keyframe", f145_arg0.clipInterrupted )
 			f145_arg0.vhudsentinelDamageIconWidget:registerEventHandler( "transition_complete_keyframe", f145_local27 )
 		end,

@@ -104,13 +104,13 @@ CoD.AARNumericalStatHistory.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local InValidNormal = LUI.UIImage.new( 0, 0, 14, 110, 0, 0, 22, 214 )
 	InValidNormal:setAlpha( 0 )
-	InValidNormal:setImage( RegisterImage( 0xFDCBFA0A9BD64AE ) )
+	InValidNormal:setImage( RegisterImage( "uie_ui_menu_aar_perform_nodata" ) )
 	self:addElement( InValidNormal )
 	self.InValidNormal = InValidNormal
 	
 	local InValidAdd = LUI.UIImage.new( 0, 0, 14, 110, 0, 0, 22, 214 )
 	InValidAdd:setAlpha( 0 )
-	InValidAdd:setImage( RegisterImage( 0xFDCBFA0A9BD64AE ) )
+	InValidAdd:setImage( RegisterImage( "uie_ui_menu_aar_perform_nodata" ) )
 	InValidAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InValidAdd )
 	self.InValidAdd = InValidAdd

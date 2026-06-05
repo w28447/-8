@@ -10,7 +10,7 @@ CoD.AARTierRewardItemGlowAnimationRare.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local FocusHighlight = LUI.UIImage.new( 0, 1, -38, 38, 0, 1, -47, 47 )
 	FocusHighlight:setAlpha( 0 )
-	FocusHighlight:setImage( RegisterImage( 0x4A1176ABBF1AB4C ) )
+	FocusHighlight:setImage( RegisterImage( "uie_ui_hud_notifications_glow" ) )
 	FocusHighlight:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusHighlight:setShaderVector( 0, 0, 0, 0.27, 0.18 )
 	FocusHighlight:setShaderVector( 1, 0.9, 0, 0, 0 )
@@ -26,7 +26,7 @@ CoD.AARTierRewardItemGlowAnimationRare.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local FocusHighlight2 = LUI.UIImage.new( 0, 1, -38, 38, 0, 1, -47, 47 )
 	FocusHighlight2:setAlpha( 0 )
-	FocusHighlight2:setImage( RegisterImage( 0x4A1176ABBF1AB4C ) )
+	FocusHighlight2:setImage( RegisterImage( "uie_ui_hud_notifications_glow" ) )
 	FocusHighlight2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusHighlight2:setShaderVector( 0, 0, 0, 0.27, 0.18 )
 	FocusHighlight2:setShaderVector( 1, 0.9, 0, 0, 0 )
@@ -42,7 +42,7 @@ CoD.AARTierRewardItemGlowAnimationRare.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local FocusGlow = LUI.UIImage.new( 0, 1, -64, 64, 0, 1, -169, 169 )
 	FocusGlow:setAlpha( 0 )
-	FocusGlow:setImage( RegisterImage( 0x4A1176ABBF1AB4C ) )
+	FocusGlow:setImage( RegisterImage( "uie_ui_hud_notifications_glow" ) )
 	FocusGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	FocusGlow:setShaderVector( 0, 0, 0, 0.21, 0.09 )
 	FocusGlow:setShaderVector( 1, 1, 0, 0, 0 )
@@ -58,7 +58,7 @@ CoD.AARTierRewardItemGlowAnimationRare.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local CardCover = LUI.UIImage.new( 0, 1, -13, 13, 0, 1, -13, 13 )
 	CardCover:setAlpha( 0 )
-	CardCover:setImage( RegisterImage( 0xFAA6C81834660D3 ) )
+	CardCover:setImage( RegisterImage( "uie_ui_menu_common_box_glow" ) )
 	CardCover:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	CardCover:setShaderVector( 0, 0, 0, 0, 0 )
 	CardCover:setupNineSliceShader( 32, 32 )

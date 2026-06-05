@@ -53,12 +53,12 @@ CoD.CodCasterObjectiveStatusLifeCount.new = function ( f1_arg0, f1_arg1, f1_arg2
 	self.DarkBackingRight = DarkBackingRight
 	
 	local objectiveStatusBackground = LUI.UIImage.new( 0.5, 0.5, -260, 260, 0.5, 0.5, -16, 16 )
-	objectiveStatusBackground:setImage( RegisterImage( 0x4E12CF2E0563961 ) )
+	objectiveStatusBackground:setImage( RegisterImage( "uie_ui_codcaster_scoreboard_livebg" ) )
 	self:addElement( objectiveStatusBackground )
 	self.objectiveStatusBackground = objectiveStatusBackground
 	
 	local RoundCount = LUI.UIText.new( 0.5, 0.5, -49, 51, 0.08, 0.08, 1, 19 )
-	RoundCount:setText( Engine[0xF9F1239CFD921FE]( 0x4583E7C93D5801E ) )
+	RoundCount:setText( Engine[0xF9F1239CFD921FE]( "codcaster/round" ) )
 	RoundCount:setTTF( "ttmussels_demibold" )
 	RoundCount:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	RoundCount:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

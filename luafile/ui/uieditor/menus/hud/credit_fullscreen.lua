@@ -103,7 +103,7 @@ CoD.Credit_Fullscreen.__resetProperties = function ( f9_arg0 )
 	f9_arg0.skipPrompt:completeAnimation()
 	f9_arg0.speedUpPrompt:setAlpha( 1 )
 	f9_arg0.speedUpPrompt.pressXtext:setText( Engine[0xF9F1239CFD921FE]( 0xE839A39F74BC0A2 ) )
-	f9_arg0.skipPrompt.pressXtext:setText( Engine[0xF9F1239CFD921FE]( 0x8F7A20360760C ) )
+	f9_arg0.skipPrompt.pressXtext:setText( Engine[0xF9F1239CFD921FE]( "platform/skip" ) )
 end
 
 CoD.Credit_Fullscreen.__clipsPerState = {

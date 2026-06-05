@@ -17,7 +17,7 @@ CoD.AARTierRewardDupeIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local Message = LUI.UIText.new( 0, 0, 35, 298, 0, 0, 6, 24 )
 	Message:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	Message:setText( LocalizeToUpperString( 0xA75B4742BD9E4D0 ) )
+	Message:setText( LocalizeToUpperString( "ui/dupe" ) )
 	Message:setTTF( "dinnext_regular" )
 	Message:setLetterSpacing( 2 )
 	Message:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -40,7 +40,7 @@ CoD.AARTierRewardDupeIndicator.__resetProperties = function ( f2_arg0 )
 	f2_arg0.Icon:setImage( RegisterImage( 0xF395928C19E9B99 ) )
 	f2_arg0.Message:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	f2_arg0.Message:setAlpha( 1 )
-	f2_arg0.Message:setText( LocalizeToUpperString( 0xA75B4742BD9E4D0 ) )
+	f2_arg0.Message:setText( LocalizeToUpperString( "ui/dupe" ) )
 end
 
 CoD.AARTierRewardDupeIndicator.__clipsPerState = {
@@ -74,7 +74,7 @@ CoD.AARTierRewardDupeIndicator.__clipsPerState = {
 			f4_arg0.Message:completeAnimation()
 			f4_arg0.Message:setRGB( ColorSet.Orange.r, ColorSet.Orange.g, ColorSet.Orange.b )
 			f4_arg0.Message:setAlpha( 0 )
-			f4_arg0.Message:setText( LocalizeToUpperString( 0xA75B4742BD9E4D0 ) )
+			f4_arg0.Message:setText( LocalizeToUpperString( "ui/dupe" ) )
 			f4_local1( f4_arg0.Message )
 		end,
 		ReRolling = function ( f7_arg0, f7_arg1 )

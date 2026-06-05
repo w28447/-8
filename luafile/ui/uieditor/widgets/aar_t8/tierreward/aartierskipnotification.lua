@@ -17,13 +17,13 @@ CoD.AARTierSkipNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.Backing = Backing
 	
 	local TierSkipIcon = LUI.UIImage.new( 0, 0, -50, 50, 0.5, 0.5, -50, 50 )
-	TierSkipIcon:setImage( RegisterImage( 0x3162CFF8BC56A18 ) )
+	TierSkipIcon:setImage( RegisterImage( "ui_icon_blackmarket_tier_token" ) )
 	self:addElement( TierSkipIcon )
 	self.TierSkipIcon = TierSkipIcon
 	
 	local Header = LUI.UIText.new( 0, 0, 61, 253, 0, 0, 10, 34 )
 	Header:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	Header:setText( LocalizeToUpperString( 0x59AB2B00A337CBE ) )
+	Header:setText( LocalizeToUpperString( "aar/tier_skip" ) )
 	Header:setTTF( "ttmussels_regular" )
 	Header:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	Header:setLetterSpacing( 4 )
@@ -48,7 +48,7 @@ CoD.AARTierSkipNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local Glow = LUI.UIImage.new( 0, 0, -35, 35, 0, 0, -25.5, 102.5 )
 	Glow:setRGB( 0.8, 0.58, 0.12 )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0x4A1176ABBF1AB4C ) )
+	Glow:setImage( RegisterImage( "uie_ui_hud_notifications_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Glow:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( Glow )

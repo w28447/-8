@@ -17,7 +17,7 @@ CoD.Hud_ZM_Trial_Shame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local Portrait = CoD.ZombiesPortrait.new( f1_arg0, f1_arg1, 0.5, 0.5, -80, 80, 0, 0, 18, 178 )
 	Portrait:setScale( 0.55, 0.55 )
-	Portrait:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD79DB5C45AD6024 ) )
+	Portrait:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_elliptical_ring_rft" ) )
 	Portrait:setShaderVector( 0, 50, 0, 0, 0 )
 	Portrait:setShaderVector( 1, 100, 100, 0, 0 )
 	Portrait:setShaderVector( 2, 0.1, 0.1, 0, 0 )

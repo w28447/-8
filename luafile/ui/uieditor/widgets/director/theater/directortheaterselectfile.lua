@@ -39,10 +39,10 @@ CoD.DirectorTheaterSelectFile.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 			TabFrame:changeFrameWidget( f3_local0 )
 		end
 	end )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x22361E23588705A], nil, function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x22361E23588705A], nil, function ( element, menu, controller, model )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x22361E23588705A], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "", nil, nil )
 		return false
 	end, false )
 	TabFrame.id = "TabFrame"

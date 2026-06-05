@@ -29,7 +29,7 @@ CoD.ChallengesCallingCardProfilerCombatTraining.new = function ( f1_arg0, f1_arg
 	
 	local CardIconClassifiedOverlay = LUI.UIImage.new( 0, 1, -1, 1, 0, 0, 0, 129 )
 	CardIconClassifiedOverlay:setAlpha( 0 )
-	CardIconClassifiedOverlay:setImage( RegisterImage( 0x2746D911ABDE62E ) )
+	CardIconClassifiedOverlay:setImage( RegisterImage( "uie_t7_icons_challenges_classified_placeholder" ) )
 	self:addElement( CardIconClassifiedOverlay )
 	self.CardIconClassifiedOverlay = CardIconClassifiedOverlay
 	

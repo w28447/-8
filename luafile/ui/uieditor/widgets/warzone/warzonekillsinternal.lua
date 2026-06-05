@@ -35,14 +35,14 @@ CoD.WarzoneKillsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.PanelLight2 = PanelLight2
 	
 	local Frame = LUI.UIImage.new( 1, 1, -156, 0, 0, 0, 0, 44 )
-	Frame:setImage( RegisterImage( 0xCAC8D6877831B75 ) )
-	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
+	Frame:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_lives_counter_backer" ) )
+	Frame:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_blend" ) )
 	self:addElement( Frame )
 	self.Frame = Frame
 	
 	local Frame2 = LUI.UIImage.new( 1, 1, -156, 0, 0, 0, 0, 44 )
-	Frame2:setImage( RegisterImage( 0xCAC8D6877831B75 ) )
-	Frame2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
+	Frame2:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_lives_counter_backer" ) )
+	Frame2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_blend" ) )
 	self:addElement( Frame2 )
 	self.Frame2 = Frame2
 	
@@ -67,12 +67,12 @@ CoD.WarzoneKillsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.spectators = spectators
 	
 	local spectateIcon = LUI.UIImage.new( 1, 1, -74.5, -46.5, 0, 0, 13.5, 32.5 )
-	spectateIcon:setImage( RegisterImage( 0x2AE79631E8041A4 ) )
+	spectateIcon:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_spectate_eyeball" ) )
 	self:addElement( spectateIcon )
 	self.spectateIcon = spectateIcon
 	
 	local playersLeftIcon = LUI.UIImage.new( 1, 1, -151, -119, 0, 0, 6, 38 )
-	playersLeftIcon:setImage( RegisterImage( 0x14B2E7558F68939 ) )
+	playersLeftIcon:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_icon_lives" ) )
 	self:addElement( playersLeftIcon )
 	self.playersLeftIcon = playersLeftIcon
 	
@@ -96,14 +96,14 @@ CoD.WarzoneKillsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local LED = LUI.UIImage.new( 0, 0, 0, 156, 0, 0, 0, 44 )
 	LED:setRGB( 0, 0, 0 )
 	LED:setAlpha( 0.2 )
-	LED:setImage( RegisterImage( 0x51459DE6C7F148A ) )
+	LED:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_lives_counter_led" ) )
 	self:addElement( LED )
 	self.LED = LED
 	
 	local LED2 = LUI.UIImage.new( 0, 0, 72, 150, 0, 0, 0, 44 )
 	LED2:setRGB( 0, 0, 0 )
 	LED2:setAlpha( 0.2 )
-	LED2:setImage( RegisterImage( 0x51459DE6C7F148A ) )
+	LED2:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_lives_counter_led" ) )
 	LED2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	LED2:setShaderVector( 0, 0, 0, 0, 0 )
 	LED2:setShaderVector( 1, 1, 1, 0, 0 )

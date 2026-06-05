@@ -15,7 +15,7 @@ CoD.BlackCellInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.anyChildUsesUpdateState = true
 	
 	local OverlayBG = LUI.UIImage.new( 0.5, 0.5, -960, 960, 0.5, 0.5, -540, 540 )
-	OverlayBG:setImage( RegisterImage( 0x7B025D6C2CA1C9B ) )
+	OverlayBG:setImage( RegisterImage( "uie_t7_hud_blackcell_720overlaybg" ) )
 	self:addElement( OverlayBG )
 	self.OverlayBG = OverlayBG
 	

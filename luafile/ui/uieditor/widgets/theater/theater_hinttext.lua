@@ -21,7 +21,7 @@ CoD.Theater_HintText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local Arrow = LUI.UIImage.new( 0, 0, 3, 18, 0.5, 0.5, -7.5, 7.5 )
 	Arrow:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
 	Arrow:setAlpha( 0.6 )
-	Arrow:setImage( RegisterImage( 0x6961F4FBB41134C ) )
+	Arrow:setImage( RegisterImage( "uie_t7_menu_gunsmith_arrow_white" ) )
 	self:addElement( Arrow )
 	self.Arrow = Arrow
 	

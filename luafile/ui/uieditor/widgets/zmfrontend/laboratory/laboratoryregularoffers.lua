@@ -58,39 +58,39 @@ CoD.LaboratoryRegularOffers.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f6_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( RegularOffers, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		if CoD.ModelUtility.IsModelValueEqualToEnum( f7_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ZMLaboratoryUtility.CanPurchase( f7_arg2, f7_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f7_arg2, "Laboratory.disableInput", 0 ) then
-			ProcessListAction( self, f7_arg0, f7_arg2, f7_arg1 )
-			CoD.ZMLaboratoryUtility.CacheOfferButtonModel( f7_arg2, f7_arg0, f7_arg1 )
+	f1_arg0:AddButtonCallbackFunction( RegularOffers, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ZMLaboratoryUtility.CanPurchase( controller, element ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) then
+			ProcessListAction( self, element, controller, menu )
+			CoD.ZMLaboratoryUtility.CacheOfferButtonModel( controller, element, menu )
 			return true
-		elseif CoD.ModelUtility.IsModelValueEqualToEnum( f7_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and not CoD.ZMLaboratoryUtility.CanPurchase( f7_arg2, f7_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f7_arg2, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) then
-			CoD.ZMLaboratoryUtility.CacheOfferButtonModel( f7_arg2, f7_arg0, f7_arg1 )
-			OpenPopup( self, "PurchasePlasma", f7_arg2, f7_arg0:getModel() )
+		elseif CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and not CoD.ZMLaboratoryUtility.CanPurchase( controller, element ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) then
+			CoD.ZMLaboratoryUtility.CacheOfferButtonModel( controller, element, menu )
+			OpenPopup( self, "PurchasePlasma", controller, element:getModel() )
 			return true
-		elseif CoD.ModelUtility.IsModelValueEqualToEnum( f7_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and not CoD.ZMLaboratoryUtility.CanPurchase( f7_arg2, f7_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f7_arg2, "Laboratory.disableInput", 0 ) then
-			CoD.ZMLaboratoryUtility.CacheOfferButtonModel( f7_arg2, f7_arg0, f7_arg1 )
+		elseif CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and not CoD.ZMLaboratoryUtility.CanPurchase( controller, element ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) then
+			CoD.ZMLaboratoryUtility.CacheOfferButtonModel( controller, element, menu )
 			local f7_local0 = OpenSystemOverlay
 			local f7_local1 = self
-			local f7_local2 = f7_arg1
-			local f7_local3 = f7_arg2
+			local f7_local2 = menu
+			local f7_local3 = controller
 			local f7_local4 = "NotEnoughNPPopup"
 			local f7_local5 = {}
-			local f7_local6 = f7_arg0:getModel()
+			local f7_local6 = element:getModel()
 			f7_local5.npRequired = f7_local6.plasmaPrice:get()
 			f7_local0( f7_local1, f7_local2, f7_local3, f7_local4, f7_local5 )
 			return true
 		else
 			
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		if CoD.ModelUtility.IsModelValueEqualToEnum( f8_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ZMLaboratoryUtility.CanPurchase( f8_arg2, f8_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f8_arg2, "Laboratory.disableInput", 0 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ZMLaboratoryUtility.CanPurchase( controller, element ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsModelValueEqualToEnum( f8_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and not CoD.ZMLaboratoryUtility.CanPurchase( f8_arg2, f8_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f8_arg2, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and not CoD.ZMLaboratoryUtility.CanPurchase( controller, element ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsModelValueEqualToEnum( f8_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and not CoD.ZMLaboratoryUtility.CanPurchase( f8_arg2, f8_arg0 ) and CoD.ModelUtility.IsModelValueEqualTo( f8_arg2, "Laboratory.disableInput", 0 ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and not CoD.ZMLaboratoryUtility.CanPurchase( controller, element ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

@@ -16,26 +16,26 @@ CoD.Support_ExtraButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BGTopBlur = LUI.UIImage.new( 0, 0, -12, 60, 0, 0, 5, 69 )
-	BGTopBlur:setImage( RegisterImage( 0x8109EAF75437C9B ) )
+	BGTopBlur:setImage( RegisterImage( "uie_ui_hud_core_frame_streaks_widget_top_mask" ) )
 	BGTopBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
 	BGTopBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BGTopBlur )
 	self.BGTopBlur = BGTopBlur
 	
 	local BGTop = LUI.UIImage.new( 0, 0, -12, 60, 0, 0, 5, 69 )
-	BGTop:setImage( RegisterImage( 0x79F067B6F93C63A ) )
+	BGTop:setImage( RegisterImage( "uie_ui_hud_core_frame_streaks_widget_top" ) )
 	self:addElement( BGTop )
 	self.BGTop = BGTop
 	
 	local PanelDark = LUI.UIImage.new( 0, 0, -22, 60, 0, 0, -3.5, 79.5 )
 	PanelDark:setAlpha( 0.97 )
-	PanelDark:setImage( RegisterImage( 0xE0682AD1DCF1678 ) )
+	PanelDark:setImage( RegisterImage( "uie_streak_flare_bg" ) )
 	self:addElement( PanelDark )
 	self.PanelDark = PanelDark
 	
 	local Background = LUI.UIImage.new( 0, 0, -22, 60, 0, 0, -3.5, 79.5 )
 	Background:setAlpha( 0.2 )
-	Background:setImage( RegisterImage( 0x75825763EF40352 ) )
+	Background:setImage( RegisterImage( "uie_streak_flare" ) )
 	Background:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Background )
 	self.Background = Background
@@ -43,7 +43,7 @@ CoD.Support_ExtraButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local LED = LUI.UIImage.new( 0, 0, -11.5, 52.5, 0, 0, 3, 67 )
 	LED:setRGB( 0.79, 0.45, 0.05 )
 	LED:setAlpha( 0 )
-	LED:setImage( RegisterImage( 0xBA589418FAFF06D ) )
+	LED:setImage( RegisterImage( "uie_ui_hud_core_streak_led_button" ) )
 	self:addElement( LED )
 	self.LED = LED
 	
@@ -222,7 +222,7 @@ CoD.Support_ExtraButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	FUItop2 = LUI.UIImage.new( 0, 0, 0.5, 40.5, 0, 0, 52, 60 )
 	FUItop2:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	FUItop2:setAlpha( 0 )
-	FUItop2:setImage( RegisterImage( 0xD21881AE56187FC ) )
+	FUItop2:setImage( RegisterImage( "uie_ui_hud_core_streak_widget_fui_selector" ) )
 	FUItop2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FUItop2 )
 	self.FUItop2 = FUItop2

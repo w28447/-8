@@ -26,7 +26,7 @@ CoD.CraftAuthorInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local CreatedTitle = LUI.UIText.new( 0, 0, 0, 132, 0, 0, 60, 75 )
 	CreatedTitle:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
-	CreatedTitle:setText( AppendString( ":", LocalizeHash( 0xD3788D7E2C0B9C9 ) ) )
+	CreatedTitle:setText( AppendString( ":", LocalizeHash( "menu/created" ) ) )
 	CreatedTitle:setTTF( "notosans_regular" )
 	CreatedTitle:setLetterSpacing( 1 )
 	CreatedTitle:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -50,7 +50,7 @@ CoD.CraftAuthorInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local AuthorTitle = LUI.UIText.new( 0, 0, 0, 132, 0, 0, 30, 45 )
 	AuthorTitle:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
-	AuthorTitle:setText( AppendString( ":", LocalizeHash( 0xBB51460D8D38CE0 ) ) )
+	AuthorTitle:setText( AppendString( ":", LocalizeHash( "menu/author" ) ) )
 	AuthorTitle:setTTF( "notosans_regular" )
 	AuthorTitle:setLetterSpacing( 1 )
 	AuthorTitle:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

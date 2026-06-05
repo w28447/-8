@@ -92,12 +92,12 @@ LUI.createMenu.PC_StartMenu_Options_CoDAccount_NewAccount = function ( f1_arg0, 
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( DirectorSelectButtonMiniInternal2, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		CoD.CoDAccountUtility.SetupCurrentLegalInfo( f8_arg1, f8_arg2, "TermsOfUsePages" )
-		OpenOverlay( self, "LegalTextViewerMenu", f8_arg2 )
+	f1_local1:AddButtonCallbackFunction( DirectorSelectButtonMiniInternal2, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		CoD.CoDAccountUtility.SetupCurrentLegalInfo( menu, controller, "TermsOfUsePages" )
+		OpenOverlay( self, "LegalTextViewerMenu", controller )
 		return true
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( DirectorSelectButtonMiniInternal2 )
@@ -130,36 +130,36 @@ LUI.createMenu.PC_StartMenu_Options_CoDAccount_NewAccount = function ( f1_arg0, 
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f12_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( DirectorSelectButtonMiniInternal, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		CoD.CoDAccountUtility.SetupCurrentLegalInfo( f13_arg1, f13_arg2, "PrivacyPolicyPages" )
-		OpenOverlay( self, "LegalTextViewerMenu", f13_arg2 )
+	f1_local1:AddButtonCallbackFunction( DirectorSelectButtonMiniInternal, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		CoD.CoDAccountUtility.SetupCurrentLegalInfo( menu, controller, "PrivacyPolicyPages" )
+		OpenOverlay( self, "LegalTextViewerMenu", controller )
 		return true
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( DirectorSelectButtonMiniInternal )
 	self.DirectorSelectButtonMiniInternal = DirectorSelectButtonMiniInternal
 	
-	self:registerEventHandler( "ui_keyboard_input", function ( element, event )
+	self:registerEventHandler( "ui_keyboard_input", function ( self, event )
 		local f15_local0 = nil
 		CoD.CoDAccountUtility.CodAccountHandleKeyboardComplete( self, f1_arg0, event, self.PCStartMenuOptionsRegistrationForm )
 		if not f15_local0 then
-			f15_local0 = element:dispatchEventToChildren( event )
+			f15_local0 = self:dispatchEventToChildren( event )
 		end
 		return f15_local0
 	end )
-	self:registerEventHandler( "list_active_changed", function ( element, event )
+	self:registerEventHandler( "list_active_changed", function ( self, event )
 		local f16_local0 = nil
-		CoD.CoDAccountUtility.OnNewAccountItemFocusChange( f1_local1, f1_arg0, element )
+		CoD.CoDAccountUtility.OnNewAccountItemFocusChange( f1_local1, f1_arg0, self )
 		return f16_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		GoBack( self, f17_arg2 )
-		CoD.CoDAccountUtility.ClearRegistrationEmailAndPasswordModels( f17_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
+		CoD.CoDAccountUtility.ClearRegistrationEmailAndPasswordModels( controller )
 		return true
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	self:subscribeToGlobalModel( f1_arg0, "UNOAccountInfo", "iTransactionResult", function ( model )

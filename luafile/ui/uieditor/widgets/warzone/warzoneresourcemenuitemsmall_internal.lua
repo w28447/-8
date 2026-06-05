@@ -31,7 +31,7 @@ CoD.WarzoneResourceMenuItemSmall_Internal.new = function ( f1_arg0, f1_arg1, f1_
 	local InUseBacking = LUI.UIImage.new( 0.5, 0.5, -48, 48, 0.5, 0.5, -47.5, 45.5 )
 	InUseBacking:setRGB( 0.34, 0.32, 0.2 )
 	InUseBacking:setAlpha( 0 )
-	InUseBacking:setImage( RegisterImage( 0xF3974F8EE78598C ) )
+	InUseBacking:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_player_widget_ability_backer" ) )
 	self:addElement( InUseBacking )
 	self.InUseBacking = InUseBacking
 	
@@ -46,7 +46,7 @@ CoD.WarzoneResourceMenuItemSmall_Internal.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local ItemFrameAdd = LUI.UIImage.new( 0, 1, -3, 3, 0, 1, -3, 3 )
 	ItemFrameAdd:setAlpha( 0 )
-	ItemFrameAdd:setImage( RegisterImage( 0xC2AE59F4FA74812 ) )
+	ItemFrameAdd:setImage( RegisterImage( "uie_ui_menu_store_element_frame" ) )
 	ItemFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ItemFrameAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	ItemFrameAdd:setupNineSliceShader( 12, 164 )

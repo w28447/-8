@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/controllerdependent_textbox" )
-require( "x64:714f18fa2092a4a" )
+require( "ui/uieditor/widgets/prompt_arrow" )
 
 CoD.AmmoWidget_AbilityText = InheritFrom( LUI.UIElement )
 CoD.AmmoWidget_AbilityText.__defaultWidth = 192
@@ -36,7 +36,7 @@ CoD.AmmoWidget_AbilityText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local TabletLocationSelectorFlare = LUI.UIImage.new( 0, 0, 23, 151, 0, 0, -56.5, 71.5 )
 	TabletLocationSelectorFlare:setScale( 0, 0 )
-	TabletLocationSelectorFlare:setImage( RegisterImage( 0x3F79D2A45FD842E ) )
+	TabletLocationSelectorFlare:setImage( RegisterImage( "uie_ui_hud_cp_hud_tacmode_flare" ) )
 	self:addElement( TabletLocationSelectorFlare )
 	self.TabletLocationSelectorFlare = TabletLocationSelectorFlare
 	
@@ -250,7 +250,7 @@ CoD.AmmoWidget_AbilityText.__resetProperties = function ( f23_arg0 )
 	f23_arg0.TabletLocationSelectorFlare:setTopBottom( 0, 0, -56.5, 71.5 )
 	f23_arg0.TabletLocationSelectorFlare:setAlpha( 1 )
 	f23_arg0.TabletLocationSelectorFlare:setScale( 0, 0 )
-	f23_arg0.TabletLocationSelectorFlare:setImage( RegisterImage( 0x3F79D2A45FD842E ) )
+	f23_arg0.TabletLocationSelectorFlare:setImage( RegisterImage( "uie_ui_hud_cp_hud_tacmode_flare" ) )
 	f23_arg0.TabletLocationSelectorFlare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_normal" ) )
 end
 
@@ -261,7 +261,7 @@ CoD.AmmoWidget_AbilityText.__clipsPerState = {
 			f24_arg0:setupElementClipCounter( 1 )
 			f24_arg0.AbilityTextInfo:completeAnimation()
 			f24_arg0.AbilityTextInfo:setAlpha( 0 )
-			f24_arg0.AbilityTextInfo:setText( Engine[0xF9F1239CFD921FE]( 0xD23BFBCD5F26261 ) )
+			f24_arg0.AbilityTextInfo:setText( Engine[0xF9F1239CFD921FE]( "mpui/tank_inbound" ) )
 			f24_arg0.clipFinished( f24_arg0.AbilityTextInfo )
 		end,
 		TankInbound = function ( f25_arg0, f25_arg1 )
@@ -315,7 +315,7 @@ CoD.AmmoWidget_AbilityText.__clipsPerState = {
 			f29_arg0:setupElementClipCounter( 3 )
 			f29_arg0.AbilityTextInfo:completeAnimation()
 			f29_arg0.AbilityTextInfo:setAlpha( 1 )
-			f29_arg0.AbilityTextInfo:setText( Engine[0xF9F1239CFD921FE]( 0xD23BFBCD5F26261 ) )
+			f29_arg0.AbilityTextInfo:setText( Engine[0xF9F1239CFD921FE]( "mpui/tank_inbound" ) )
 			f29_arg0.clipFinished( f29_arg0.AbilityTextInfo )
 			f29_arg0.Text_Prompt_Arrow:completeAnimation()
 			f29_arg0.Text_Prompt_Arrow:setLeftRight( 0, 0, -10, 0 )
@@ -338,7 +338,7 @@ CoD.AmmoWidget_AbilityText.__clipsPerState = {
 			
 			f30_arg0.AbilityTextInfo:completeAnimation()
 			f30_arg0.AbilityTextInfo:setAlpha( 1 )
-			f30_arg0.AbilityTextInfo:setText( Engine[0xF9F1239CFD921FE]( 0xD23BFBCD5F26261 ) )
+			f30_arg0.AbilityTextInfo:setText( Engine[0xF9F1239CFD921FE]( "mpui/tank_inbound" ) )
 			f30_local0( f30_arg0.AbilityTextInfo )
 			f30_arg0.Text_Prompt_Arrow:completeAnimation()
 			f30_arg0.Text_Prompt_Arrow:setAlpha( 0.99 )
@@ -376,7 +376,7 @@ CoD.AmmoWidget_AbilityText.__clipsPerState = {
 			f30_arg0.TabletLocationSelectorFlare:setTopBottom( 0, 0, -56.5, 71.5 )
 			f30_arg0.TabletLocationSelectorFlare:setAlpha( 0 )
 			f30_arg0.TabletLocationSelectorFlare:setScale( 1.75, 1.75 )
-			f30_arg0.TabletLocationSelectorFlare:setImage( RegisterImage( 0x3F79D2A45FD842E ) )
+			f30_arg0.TabletLocationSelectorFlare:setImage( RegisterImage( "uie_ui_hud_cp_hud_tacmode_flare" ) )
 			f30_arg0.TabletLocationSelectorFlare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 			f30_local1( f30_arg0.TabletLocationSelectorFlare )
 			local f30_local2 = function ( f36_arg0 )
@@ -414,7 +414,7 @@ CoD.AmmoWidget_AbilityText.__clipsPerState = {
 			f38_arg0:setupElementClipCounter( 5 )
 			local f38_local0 = function ( f39_arg0 )
 				f38_arg0.AbilityTextInfo:beginAnimation( 200 )
-				f38_arg0.AbilityTextInfo:setText( Engine[0xF9F1239CFD921FE]( 0xD23BFBCD5F26261 ) )
+				f38_arg0.AbilityTextInfo:setText( Engine[0xF9F1239CFD921FE]( "mpui/tank_inbound" ) )
 				f38_arg0.AbilityTextInfo:registerEventHandler( "interrupted_keyframe", f38_arg0.clipInterrupted )
 				f38_arg0.AbilityTextInfo:registerEventHandler( "transition_complete_keyframe", f38_arg0.clipFinished )
 			end
@@ -461,7 +461,7 @@ CoD.AmmoWidget_AbilityText.__clipsPerState = {
 			f38_arg0.TabletLocationSelectorFlare:setTopBottom( 0, 0, -56.5, 71.5 )
 			f38_arg0.TabletLocationSelectorFlare:setAlpha( 0 )
 			f38_arg0.TabletLocationSelectorFlare:setScale( 1.75, 1.75 )
-			f38_arg0.TabletLocationSelectorFlare:setImage( RegisterImage( 0x3F79D2A45FD842E ) )
+			f38_arg0.TabletLocationSelectorFlare:setImage( RegisterImage( "uie_ui_hud_cp_hud_tacmode_flare" ) )
 			f38_arg0.TabletLocationSelectorFlare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 			f38_local1( f38_arg0.TabletLocationSelectorFlare )
 			local f38_local2 = function ( f44_arg0 )
@@ -484,7 +484,7 @@ CoD.AmmoWidget_AbilityText.__clipsPerState = {
 			f45_arg0.AbilityTextInfo:setLeftRight( 0, 1, 0, 0 )
 			f45_arg0.AbilityTextInfo:setTopBottom( 0.5, 0.5, -9, 9 )
 			f45_arg0.AbilityTextInfo:setAlpha( 1 )
-			f45_arg0.AbilityTextInfo:setText( Engine[0xF9F1239CFD921FE]( 0x7ED51B55D2D46E4 ) )
+			f45_arg0.AbilityTextInfo:setText( Engine[0xF9F1239CFD921FE]( "mp/remote_exit" ) )
 			f45_arg0.clipFinished( f45_arg0.AbilityTextInfo )
 			f45_arg0.Text_Prompt_Arrow:completeAnimation()
 			f45_arg0.Text_Prompt_Arrow:setAlpha( 0.99 )
@@ -552,7 +552,7 @@ CoD.AmmoWidget_AbilityText.__clipsPerState = {
 			f46_arg0.TabletLocationSelectorFlare:setTopBottom( 0, 0, -56.5, 71.5 )
 			f46_arg0.TabletLocationSelectorFlare:setAlpha( 0 )
 			f46_arg0.TabletLocationSelectorFlare:setScale( 1.75, 1.75 )
-			f46_arg0.TabletLocationSelectorFlare:setImage( RegisterImage( 0x3F79D2A45FD842E ) )
+			f46_arg0.TabletLocationSelectorFlare:setImage( RegisterImage( "uie_ui_hud_cp_hud_tacmode_flare" ) )
 			f46_arg0.TabletLocationSelectorFlare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 			f46_local1( f46_arg0.TabletLocationSelectorFlare )
 			f46_arg0.HeroAbilityUseString:completeAnimation()

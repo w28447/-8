@@ -1,18 +1,18 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_goldframe" )
 
-CoD[0xAEBB28681A82F4D] = InheritFrom( LUI.UIElement )
-CoD[0xAEBB28681A82F4D].__defaultWidth = 720
-CoD[0xAEBB28681A82F4D].__defaultHeight = 180
-CoD[0xAEBB28681A82F4D].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_legendaryImage = InheritFrom( LUI.UIElement )
+CoD.callingcards_legendaryImage.__defaultWidth = 720
+CoD.callingcards_legendaryImage.__defaultHeight = 180
+CoD.callingcards_legendaryImage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0xAEBB28681A82F4D] )
+	self:setClass( CoD.callingcards_legendaryImage )
 	self.id = "CallingCards_LegendaryImage"
 	self.soundSet = "default"
 	self.anyChildUsesUpdateState = true
 	
 	local CardIcon = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	CardIcon:setImage( RegisterImage( 0x434A15996B65B48 ) )
-	CardIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
+	CardIcon:setImage( RegisterImage( "uie_t7_icon_callingcard_temp2_lrg" ) )
+	CardIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_blend" ) )
 	self:addElement( CardIcon )
 	self.CardIcon = CardIcon
 	
@@ -29,7 +29,7 @@ CoD[0xAEBB28681A82F4D].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0xAEBB28681A82F4D].__onClose = function ( f2_arg0 )
+CoD.callingcards_legendaryImage.__onClose = function ( f2_arg0 )
 	f2_arg0.CallingCardsGoldFrame:close()
 end
 

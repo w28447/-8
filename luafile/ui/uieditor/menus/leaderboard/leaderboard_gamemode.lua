@@ -33,7 +33,7 @@ LUI.createMenu.Leaderboard_GameMode = function ( f3_arg0, f3_arg1 )
 	self.TabFrame = TabFrame
 	
 	local MenuFrame = CoD.GenericMenuFrameIdentity.new( f3_local1, f3_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	MenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0xFE3665244ECF33B ) )
+	MenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/leaderboards" ) )
 	MenuFrame:subscribeToGlobalModel( f3_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
@@ -133,16 +133,16 @@ LUI.createMenu.Leaderboard_GameMode = function ( f3_arg0, f3_arg1 )
 			TabFrame:changeFrameWidget( f13_local0 )
 		end
 	end )
-	self:registerEventHandler( "menu_loaded", function ( element, event )
+	self:registerEventHandler( "menu_loaded", function ( self, event )
 		local f14_local0 = nil
-		if element.menuLoaded then
-			f14_local0 = element:menuLoaded( event )
-		elseif element.super.menuLoaded then
-			f14_local0 = element.super:menuLoaded( event )
+		if self.menuLoaded then
+			f14_local0 = self:menuLoaded( event )
+		elseif self.super.menuLoaded then
+			f14_local0 = self.super:menuLoaded( event )
 		end
 		if CoD.LeaderboardUtility.IsLobbyLeaderboard( f3_arg0 ) then
 			ShowHeaderKickerAndIcon( f3_local1 )
-			SetHeadingKickerText( 0xDE4B1936ABC08E4 )
+			SetHeadingKickerText( "menu/custom_lobby_leaderboards" )
 			MenuHidesFreeCursor( f3_local1, f3_arg0 )
 			PlaySoundAlias( "uin_paint_decal_nav" )
 		else
@@ -152,17 +152,17 @@ LUI.createMenu.Leaderboard_GameMode = function ( f3_arg0, f3_arg1 )
 			PlaySoundAlias( "uin_paint_decal_nav" )
 		end
 		if not f14_local0 then
-			f14_local0 = element:dispatchEventToChildren( event )
+			f14_local0 = self:dispatchEventToChildren( event )
 		end
 		return f14_local0
 	end )
-	f3_local1:AddButtonCallbackFunction( self, f3_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		GoBack( self, f15_arg2 )
-		ClearMenuSavedState( f15_arg1 )
+	f3_local1:AddButtonCallbackFunction( self, f3_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
+		GoBack( self, controller )
+		ClearMenuSavedState( menu )
 		PlaySoundAlias( "uin_paint_decal_nav" )
 		return true
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 		return true
 	end, false )
 	TabFrame.id = "TabFrame"

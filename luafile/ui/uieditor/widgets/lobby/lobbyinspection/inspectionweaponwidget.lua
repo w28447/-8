@@ -23,7 +23,7 @@ CoD.InspectionWeaponWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local GunRackTitleText = LUI.UIText.new( 0, 0, 0, 250, 0, 0, -39, -18 )
 	GunRackTitleText:setRGB( 0.92, 0.92, 0.92 )
 	GunRackTitleText:setAlpha( 0.5 )
-	GunRackTitleText:setText( Engine[0xF9F1239CFD921FE]( 0x2BA0F750E758177 ) )
+	GunRackTitleText:setText( Engine[0xF9F1239CFD921FE]( "menu/gun_rack" ) )
 	GunRackTitleText:setTTF( "ttmussels_regular" )
 	GunRackTitleText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	GunRackTitleText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

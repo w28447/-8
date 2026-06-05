@@ -44,7 +44,7 @@ CoD.BountyHunterPackagePreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local Cost = LUI.UIText.new( 0, 0, 4.5, 373.5, 1, 1, -62, -45 )
 	Cost:setRGB( 0.54, 0.55, 0.58 )
-	Cost:setText( Engine[0xF9F1239CFD921FE]( 0xE14C0D42B565C03 ) )
+	Cost:setText( Engine[0xF9F1239CFD921FE]( "bounty_hunter/cost" ) )
 	Cost:setTTF( "ttmussels_demibold" )
 	Cost:setLetterSpacing( 4 )
 	Cost:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -154,7 +154,7 @@ CoD.BountyHunterPackagePreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local CommonLineAccent01Btm = LUI.UIImage.new( -0.04, 1.04, 0, 0, 1, 1, -10, 6 )
 	CommonLineAccent01Btm:setAlpha( 0.5 )
-	CommonLineAccent01Btm:setImage( RegisterImage( 0xE1962E1E085D031 ) )
+	CommonLineAccent01Btm:setImage( RegisterImage( "uie_hud_common_line_accent01" ) )
 	CommonLineAccent01Btm:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	CommonLineAccent01Btm:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonLineAccent01Btm:setupNineSliceShader( 32, 16 )
@@ -163,7 +163,7 @@ CoD.BountyHunterPackagePreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local CommonLineAccent01Top = LUI.UIImage.new( -0.04, 1.04, 0, 0, 0, 0, -7, 9 )
 	CommonLineAccent01Top:setAlpha( 0.5 )
-	CommonLineAccent01Top:setImage( RegisterImage( 0xE1962E1E085D031 ) )
+	CommonLineAccent01Top:setImage( RegisterImage( "uie_hud_common_line_accent01" ) )
 	CommonLineAccent01Top:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	CommonLineAccent01Top:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonLineAccent01Top:setupNineSliceShader( 32, 16 )

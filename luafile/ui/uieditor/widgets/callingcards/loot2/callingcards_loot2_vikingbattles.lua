@@ -1,24 +1,24 @@
 require( "ui/uieditor/widgets/callingcards/loot2/callingcards_loot2_vikingbattles_blood01" )
 require( "ui/uieditor/widgets/callingcards/loot2/callingcards_loot2_vikingbattles_characters" )
 
-CoD[0x8C2EA50F867B09B] = InheritFrom( LUI.UIElement )
-CoD[0x8C2EA50F867B09B].__defaultWidth = 960
-CoD[0x8C2EA50F867B09B].__defaultHeight = 240
-CoD[0x8C2EA50F867B09B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_loot2_vikingbattles = InheritFrom( LUI.UIElement )
+CoD.callingcards_loot2_vikingbattles.__defaultWidth = 960
+CoD.callingcards_loot2_vikingbattles.__defaultHeight = 240
+CoD.callingcards_loot2_vikingbattles.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x8C2EA50F867B09B] )
+	self:setClass( CoD.callingcards_loot2_vikingbattles )
 	self.id = "callingcards_loot2_vikingbattles"
 	self.soundSet = "none"
 	self.anyChildUsesUpdateState = true
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local bg = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	bg:setImage( RegisterImage( 0x73B058977451C2B ) )
+	bg:setImage( RegisterImage( "uie_ui_menu_callingcards_vikingbattles_bg" ) )
 	self:addElement( bg )
 	self.bg = bg
 	
 	local crowd = LUI.UIImage.new( 0, 0, 0, 952, 0, 0, -60, 308 )
-	crowd:setImage( RegisterImage( 0xDFEED09C56AAE21 ) )
+	crowd:setImage( RegisterImage( "uie_ui_menu_callingcards_vikingbattles_crowd" ) )
 	self:addElement( crowd )
 	self.crowd = crowd
 	
@@ -27,7 +27,7 @@ CoD[0x8C2EA50F867B09B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.characters = characters
 	
 	local blood02 = LUI.UIImage.new( 0, 0, 511, 951, 0, 0, 0, 104 )
-	blood02:setImage( RegisterImage( 0x5B18E75E02A767E ) )
+	blood02:setImage( RegisterImage( "uie_ui_menu_callingcards_vikingbattles_blood2" ) )
 	self:addElement( blood02 )
 	self.blood02 = blood02
 	
@@ -44,7 +44,7 @@ CoD[0x8C2EA50F867B09B].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x8C2EA50F867B09B].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_loot2_vikingbattles.__resetProperties = function ( f2_arg0 )
 	f2_arg0.characters:completeAnimation()
 	f2_arg0.crowd:completeAnimation()
 	f2_arg0.blood01:completeAnimation()
@@ -59,7 +59,7 @@ CoD[0x8C2EA50F867B09B].__resetProperties = function ( f2_arg0 )
 	f2_arg0.blood02:setTopBottom( 0, 0, 0, 104 )
 end
 
-CoD[0x8C2EA50F867B09B].__clipsPerState = {
+CoD.callingcards_loot2_vikingbattles.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -142,7 +142,7 @@ CoD[0x8C2EA50F867B09B].__clipsPerState = {
 		end
 	}
 }
-CoD[0x8C2EA50F867B09B].__onClose = function ( f13_arg0 )
+CoD.callingcards_loot2_vikingbattles.__onClose = function ( f13_arg0 )
 	f13_arg0.characters:close()
 	f13_arg0.blood01:close()
 end

@@ -69,16 +69,16 @@ CoD.MedalsTabInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( MedalsGrid, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		if IsCurrentMenu( f3_arg1, "Barracks_Medals" ) then
-			CoD.PlayerStatsUtility.SetShowcaseMedal( f3_arg2, f3_arg0 )
+	f1_arg0:AddButtonCallbackFunction( MedalsGrid, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if IsCurrentMenu( menu, "Barracks_Medals" ) then
+			CoD.PlayerStatsUtility.SetShowcaseMedal( controller, element )
 			return true
 		else
 			
 		end
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		if IsCurrentMenu( f4_arg1, "Barracks_Medals" ) then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if IsCurrentMenu( menu, "Barracks_Medals" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

@@ -90,7 +90,7 @@ CoD.ScoreboardGameStatusScores.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.GameTypeStat1 = GameTypeStat1
 	
 	local CoreStat2 = CoD.ScoreboardCoreStat.new( f1_arg0, f1_arg1, 0, 0, 664.5, 740.5, 0, 0, 76.5, 127.5 )
-	CoreStat2.StatName:setText( Engine[0xF9F1239CFD921FE]( 0x297A0D6FB981600 ) )
+	CoreStat2.StatName:setText( Engine[0xF9F1239CFD921FE]( "menu/deaths_caps" ) )
 	CoreStat2:linkToElementModel( self, "scoreboard.deaths", true, function ( model )
 		local f7_local0 = model:get()
 		if f7_local0 ~= nil then
@@ -101,7 +101,7 @@ CoD.ScoreboardGameStatusScores.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.CoreStat2 = CoreStat2
 	
 	local CoreStat1 = CoD.ScoreboardCoreStat.new( f1_arg0, f1_arg1, 0, 0, 558.5, 634.5, 0, 0, 76.5, 127.5 )
-	CoreStat1.StatName:setText( Engine[0xF9F1239CFD921FE]( 0xB2C7E74787B96E9 ) )
+	CoreStat1.StatName:setText( Engine[0xF9F1239CFD921FE]( "mpui/ekia" ) )
 	CoreStat1:linkToElementModel( self, "scoreboard.ekia", true, function ( model )
 		local f8_local0 = model:get()
 		if f8_local0 ~= nil then
@@ -193,7 +193,7 @@ CoD.ScoreboardGameStatusScores.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local StatName = LUI.UIText.new( 0, 0, 866.5, 942.5, 0, 0, 76.5, 97.5 )
 	StatName:setRGB( 0.92, 0.89, 0.72 )
-	StatName:setText( Engine[0xF9F1239CFD921FE]( 0x4478A903275510A ) )
+	StatName:setText( Engine[0xF9F1239CFD921FE]( "menu/objective_caps" ) )
 	StatName:setTTF( "ttmussels_regular" )
 	StatName:setLetterSpacing( 2 )
 	StatName:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -250,19 +250,19 @@ CoD.ScoreboardGameStatusScores.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.PlayerName = PlayerName
 	
 	local InfoDivider1 = LUI.UIImage.new( 0, 0, 498, 502, 0, 0, 64, 156 )
-	InfoDivider1:setImage( RegisterImage( 0x6DDA4086EA0EF02 ) )
+	InfoDivider1:setImage( RegisterImage( "uie_ui_menu_specialist_hub_info_divider" ) )
 	InfoDivider1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InfoDivider1 )
 	self.InfoDivider1 = InfoDivider1
 	
 	local InfoDivider3 = LUI.UIImage.new( 0, 0, 1003, 1007, 0, 0, 64, 156 )
-	InfoDivider3:setImage( RegisterImage( 0x6DDA4086EA0EF02 ) )
+	InfoDivider3:setImage( RegisterImage( "uie_ui_menu_specialist_hub_info_divider" ) )
 	InfoDivider3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InfoDivider3 )
 	self.InfoDivider3 = InfoDivider3
 	
 	local InfoDivider2 = LUI.UIImage.new( 0, 0, 801, 805, 0, 0, 64, 156 )
-	InfoDivider2:setImage( RegisterImage( 0x6DDA4086EA0EF02 ) )
+	InfoDivider2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_info_divider" ) )
 	InfoDivider2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InfoDivider2 )
 	self.InfoDivider2 = InfoDivider2
@@ -478,7 +478,7 @@ CoD.ScoreboardGameStatusScores.__resetProperties = function ( f38_arg0, f38_arg1
 	f38_arg0.SpecialistName:setAlpha( 1 )
 	f38_arg0.StatName:setLeftRight( 0, 0, 866.5, 942.5 )
 	f38_arg0.StatName:setAlpha( 1 )
-	f38_arg0.StatName:setText( Engine[0xF9F1239CFD921FE]( 0x4478A903275510A ) )
+	f38_arg0.StatName:setText( Engine[0xF9F1239CFD921FE]( "menu/objective_caps" ) )
 	f38_arg0.StatValueHardpoint:setAlpha( 0 )
 	f38_arg0.StatValueBounty:setAlpha( 0 )
 	f38_arg0.StatValue:setLeftRight( 0, 0, 866.5, 942.5 )
@@ -670,7 +670,7 @@ CoD.ScoreboardGameStatusScores.__clipsPerState = {
 			f43_arg0.GameTypeStat1:setTopBottom( 0, 0, 97.5, 118.5 )
 			f43_arg0.clipFinished( f43_arg0.GameTypeStat1 )
 			f43_arg0.StatName:completeAnimation()
-			f43_arg0.StatName:setText( Engine[0xF9F1239CFD921FE]( 0x9B521FC58C6C10A ) )
+			f43_arg0.StatName:setText( Engine[0xF9F1239CFD921FE]( "menu/ratio_caps" ) )
 			f43_arg0.clipFinished( f43_arg0.StatName )
 		end
 	},
@@ -772,7 +772,7 @@ CoD.ScoreboardGameStatusScores.__clipsPerState = {
 			f49_arg0.clipFinished( f49_arg0.StatValue )
 			f49_arg0.StatName:completeAnimation()
 			f49_arg0.StatName:setLeftRight( 0, 0, 565.5, 641.5 )
-			f49_arg0.StatName:setText( Engine[0xF9F1239CFD921FE]( 0x9B521FC58C6C10A ) )
+			f49_arg0.StatName:setText( Engine[0xF9F1239CFD921FE]( "menu/ratio_caps" ) )
 			f49_arg0.clipFinished( f49_arg0.StatName )
 			f49_arg0.InfoDivider3:completeAnimation()
 			f49_arg0.InfoDivider3:setLeftRight( 0, 0, 702, 706 )
@@ -808,7 +808,7 @@ CoD.ScoreboardGameStatusScores.__clipsPerState = {
 			f50_arg0.clipFinished( f50_arg0.StatValue )
 			f50_arg0.StatName:completeAnimation()
 			f50_arg0.StatName:setLeftRight( 0, 0, 565.5, 641.5 )
-			f50_arg0.StatName:setText( Engine[0xF9F1239CFD921FE]( 0x9B521FC58C6C10A ) )
+			f50_arg0.StatName:setText( Engine[0xF9F1239CFD921FE]( "menu/ratio_caps" ) )
 			f50_arg0.clipFinished( f50_arg0.StatName )
 			f50_arg0.InfoDivider3:completeAnimation()
 			f50_arg0.InfoDivider3:setLeftRight( 0, 0, 702, 706 )
@@ -853,7 +853,7 @@ CoD.ScoreboardGameStatusScores.__clipsPerState = {
 			f52_arg0.GameTypeStat1:setAlpha( 0 )
 			f52_arg0.clipFinished( f52_arg0.GameTypeStat1 )
 			f52_arg0.StatName:completeAnimation()
-			f52_arg0.StatName:setText( Engine[0xF9F1239CFD921FE]( 0x9B521FC58C6C10A ) )
+			f52_arg0.StatName:setText( Engine[0xF9F1239CFD921FE]( "menu/ratio_caps" ) )
 			f52_arg0.clipFinished( f52_arg0.StatName )
 		end
 	},
@@ -877,7 +877,7 @@ CoD.ScoreboardGameStatusScores.__clipsPerState = {
 			f53_arg0.StatValueSas:setAlpha( 0.7 )
 			f53_arg0.clipFinished( f53_arg0.StatValueSas )
 			f53_arg0.StatName:completeAnimation()
-			f53_arg0.StatName:setText( Engine[0xF9F1239CFD921FE]( 0x9B521FC58C6C10A ) )
+			f53_arg0.StatName:setText( Engine[0xF9F1239CFD921FE]( "menu/ratio_caps" ) )
 			f53_arg0.clipFinished( f53_arg0.StatName )
 		end
 	},
@@ -923,7 +923,7 @@ CoD.ScoreboardGameStatusScores.__clipsPerState = {
 			f55_arg0.StatValueHardpoint:setAlpha( 0.7 )
 			f55_arg0.clipFinished( f55_arg0.StatValueHardpoint )
 			f55_arg0.StatName:completeAnimation()
-			f55_arg0.StatName:setText( Engine[0xF9F1239CFD921FE]( 0x9B521FC58C6C10A ) )
+			f55_arg0.StatName:setText( Engine[0xF9F1239CFD921FE]( "menu/ratio_caps" ) )
 			f55_arg0.clipFinished( f55_arg0.StatName )
 		end
 	},
@@ -954,7 +954,7 @@ CoD.ScoreboardGameStatusScores.__clipsPerState = {
 			f56_arg0.StatValueHardpoint:setAlpha( 0.7 )
 			f56_arg0.clipFinished( f56_arg0.StatValueHardpoint )
 			f56_arg0.StatName:completeAnimation()
-			f56_arg0.StatName:setText( Engine[0xF9F1239CFD921FE]( 0x9B521FC58C6C10A ) )
+			f56_arg0.StatName:setText( Engine[0xF9F1239CFD921FE]( "menu/ratio_caps" ) )
 			f56_arg0.clipFinished( f56_arg0.StatName )
 		end
 	}

@@ -53,18 +53,18 @@ CoD.MPPropControlsSafeAreaContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 			modelName = "UIVisibilityBit." .. Enum.UIVisibilityBit[0x24E603C16FCC38F]
 		} )
 	end, false )
-	self:registerEventHandler( "menu_loaded", function ( element, event )
+	self:registerEventHandler( "menu_loaded", function ( self, event )
 		local f5_local0 = nil
-		if element.menuLoaded then
-			f5_local0 = element:menuLoaded( event )
-		elseif element.super.menuLoaded then
-			f5_local0 = element.super:menuLoaded( event )
+		if self.menuLoaded then
+			f5_local0 = self:menuLoaded( event )
+		elseif self.super.menuLoaded then
+			f5_local0 = self.super:menuLoaded( event )
 		end
 		if IsPC() then
-			SizeToHudArea( element, f1_arg1 )
+			SizeToHudArea( self, f1_arg1 )
 		end
 		if not f5_local0 then
-			f5_local0 = element:dispatchEventToChildren( event )
+			f5_local0 = self:dispatchEventToChildren( event )
 		end
 		return f5_local0
 	end )

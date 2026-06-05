@@ -96,7 +96,7 @@ LUI.createMenu.Paintshop = function ( f1_arg0, f1_arg1 )
 	local categoryName = LUI.UIText.new( 0.5, 0.5, -378, 7, 0.5, 0.5, -368, -340 )
 	categoryName:setRGB( 0.97, 0.32, 0.05 )
 	categoryName:setAlpha( 0 )
-	categoryName:setText( LocalizeToUpperString( 0x7E4B041D9216644 ) )
+	categoryName:setText( LocalizeToUpperString( "menu/paintjob" ) )
 	categoryName:setTTF( "dinnext_regular" )
 	categoryName:setLetterSpacing( 1 )
 	categoryName:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -122,17 +122,17 @@ LUI.createMenu.Paintshop = function ( f1_arg0, f1_arg1 )
 	self:addElement( weaponVerticalCounter )
 	self.weaponVerticalCounter = weaponVerticalCounter
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		GoBack( self, f8_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], nil, function ( element, menu, controller, model )
 		return true
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x22361E23588705A], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "", nil, nil )
 		return false
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

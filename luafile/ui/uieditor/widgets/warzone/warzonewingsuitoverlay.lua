@@ -25,7 +25,7 @@ CoD.WarzoneWingsuitOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.altitudeValue = altitudeValue
 	
 	local altitudeTitle = LUI.UIText.new( 0.5, 0.5, -240, -40, 0, 0, 130, 167 )
-	altitudeTitle:setText( Engine[0xF9F1239CFD921FE]( 0xBD23A68618982EF ) )
+	altitudeTitle:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_alt" ) )
 	altitudeTitle:setTTF( "default" )
 	altitudeTitle:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	altitudeTitle:setBackingType( 2 )
@@ -36,7 +36,7 @@ CoD.WarzoneWingsuitOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.altitudeTitle = altitudeTitle
 	
 	local speedTitle = LUI.UIText.new( 0.5, 0.5, 40, 240, 0, 0, 130, 167 )
-	speedTitle:setText( Engine[0xF9F1239CFD921FE]( 0x3755C926654C027 ) )
+	speedTitle:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_speed" ) )
 	speedTitle:setTTF( "default" )
 	speedTitle:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	speedTitle:setBackingType( 2 )

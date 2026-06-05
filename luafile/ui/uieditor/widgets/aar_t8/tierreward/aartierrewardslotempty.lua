@@ -16,7 +16,7 @@ CoD.AARTierRewardSlotEmpty.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local Border = LUI.UIImage.new( 0, 1, -1, 1, 0, 1, -1, 1 )
 	Border:setRGB( 0.2, 0.2, 0.22 )
 	Border:setAlpha( 0.25 )
-	Border:setImage( RegisterImage( 0xCA6E5C175806396 ) )
+	Border:setImage( RegisterImage( "uie_ui_menu_common_frame01" ) )
 	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 8, 8 )

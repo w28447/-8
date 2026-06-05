@@ -9,13 +9,13 @@ CoD.AARHistoryBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local LatestBar = LUI.UIImage.new( 0, 0, -3, 127, 0, 0, -11, 15 )
-	LatestBar:setImage( RegisterImage( 0x4B756B7F944AD62 ) )
+	LatestBar:setImage( RegisterImage( "uie_ui_menu_aar_stat_latest_topbar" ) )
 	LatestBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LatestBar )
 	self.LatestBar = LatestBar
 	
 	local NormalBar = LUI.UIImage.new( 0, 0, -4, 126, 0, 0, -8, 14 )
-	NormalBar:setImage( RegisterImage( 0x229FD98C99805CA ) )
+	NormalBar:setImage( RegisterImage( "uie_ui_menu_aar_stat_normal_topbar" ) )
 	NormalBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( NormalBar )
 	self.NormalBar = NormalBar
@@ -36,21 +36,21 @@ CoD.AARHistoryBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	self.Number = Number
 	
 	local LatestIndicator = LUI.UIImage.new( 0, 0, 4.5, 96.5, 0, 0, 9, 31 )
-	LatestIndicator:setImage( RegisterImage( 0x350708BBEF760FF ) )
+	LatestIndicator:setImage( RegisterImage( "uie_ui_menu_aar_stat_latest_indicator" ) )
 	LatestIndicator:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	LatestIndicator:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LatestIndicator )
 	self.LatestIndicator = LatestIndicator
 	
 	local LatestIndicatorAdd = LUI.UIImage.new( 0, 0, 4.5, 96.5, 0, 0, 10, 32 )
-	LatestIndicatorAdd:setImage( RegisterImage( 0x350708BBEF760FF ) )
+	LatestIndicatorAdd:setImage( RegisterImage( "uie_ui_menu_aar_stat_latest_indicator" ) )
 	LatestIndicatorAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	LatestIndicatorAdd:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( LatestIndicatorAdd )
 	self.LatestIndicatorAdd = LatestIndicatorAdd
 	
 	local barGrad = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, -5, -5 )
-	barGrad:setImage( RegisterImage( 0xEDE40DD4C9614B4 ) )
+	barGrad:setImage( RegisterImage( "uie_ui_menu_aar_stat_bar_grad" ) )
 	barGrad:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( barGrad )
 	self.barGrad = barGrad

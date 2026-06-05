@@ -10,7 +10,7 @@ Lobby.Core.AddProcessForward( LuaEnum.UI.DIRECTOR_ONLINE, LuaEnum.UI.DIRECTOR_ON
 	end
 end )
 Lobby.Core.AddProcessBack( LuaEnum.UI.DIRECTOR_ONLINE_MP_PREGAME, LuaEnum.UI.DIRECTOR_ONLINE, function ( f2_arg0, f2_arg1, f2_arg2, f2_arg3 )
-	Dvar[0x4FF45B41C6046F8]:set( f2_arg2[0xEE71E4EE12BC453] )
+	Dvar[0x4FF45B41C6046F8]:set( f2_arg2.maxclients )
 	if LuaUtils.SkipDirectorOnlineMenu() then
 		return Lobby.ProcessNavigate.LeavePrivateLobby( f2_arg0, f2_arg1, LobbyData.GetLobbyMenuByName( LuaEnum.UI.MAIN ) )
 	else
@@ -39,11 +39,11 @@ Lobby.Core.AddProcessBack( LuaEnum.UI.DIRECTOR_ONLINE_MP_PUBLIC, LuaEnum.UI.DIRE
 	end
 end )
 Lobby.Core.AddProcessForward( LuaEnum.UI.DIRECTOR_ONLINE_MP_PREGAME, LuaEnum.UI.DIRECTOR_ONLINE_MP_CUSTOM, function ( f6_arg0, f6_arg1, f6_arg2 )
-	Dvar[0x4FF45B41C6046F8]:set( f6_arg2[0xEE71E4EE12BC453] )
+	Dvar[0x4FF45B41C6046F8]:set( f6_arg2.maxclients )
 	return Lobby.ProcessNavigate.PrivateLobbyNavigate( f6_arg0, f6_arg1, f6_arg2 )
 end )
 Lobby.Core.AddProcessBack( LuaEnum.UI.DIRECTOR_ONLINE_MP_CUSTOM, LuaEnum.UI.DIRECTOR_ONLINE_MP_PREGAME, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-	Dvar[0x4FF45B41C6046F8]:set( f7_arg2[0xEE71E4EE12BC453] )
+	Dvar[0x4FF45B41C6046F8]:set( f7_arg2.maxclients )
 	return Lobby.ProcessNavigate.PrivateLobbyNavigate( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
 end )
 Lobby.Core.AddProcessForward( LuaEnum.UI.DIRECTOR_ONLINE, LuaEnum.UI.DIRECTOR_ONLINE_MP_TRAINING, function ( f8_arg0, f8_arg1, f8_arg2 )
@@ -79,11 +79,11 @@ Lobby.Core.AddProcessBack( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_MATCHMAKING, LuaE
 	end
 end )
 Lobby.Core.AddProcessForward( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_PREGAME, LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_CUSTOM, function ( f14_arg0, f14_arg1, f14_arg2 )
-	Dvar[0x4FF45B41C6046F8]:set( f14_arg2[0xEE71E4EE12BC453] )
+	Dvar[0x4FF45B41C6046F8]:set( f14_arg2.maxclients )
 	return Lobby.ProcessNavigate.PrivateLobbyNavigate( f14_arg0, f14_arg1, f14_arg2 )
 end )
 Lobby.Core.AddProcessBack( LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_CUSTOM, LuaEnum.UI.DIRECTOR_ONLINE_MP_ARENA_PREGAME, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-	Dvar[0x4FF45B41C6046F8]:set( f15_arg2[0xEE71E4EE12BC453] )
+	Dvar[0x4FF45B41C6046F8]:set( f15_arg2.maxclients )
 	return Lobby.ProcessNavigate.PrivateLobbyNavigate( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
 end )
 Lobby.Core.AddProcessForward( LuaEnum.UI.DIRECTOR_ONLINE, LuaEnum.UI.DIRECTOR_ONLINE_MP_THEATER, function ( f16_arg0, f16_arg1, f16_arg2 )

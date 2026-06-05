@@ -63,7 +63,7 @@ CoD.CustomGames_Restrictions_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self.SettingLabel = SettingLabel
 	
 	local ItemFrameAdd = LUI.UIImage.new( 0, 1, -3, 3, 0, 1, -1, 1 )
-	ItemFrameAdd:setImage( RegisterImage( 0xC2AE59F4FA74812 ) )
+	ItemFrameAdd:setImage( RegisterImage( "uie_ui_menu_store_element_frame" ) )
 	ItemFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ItemFrameAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	ItemFrameAdd:setupNineSliceShader( 12, 164 )
@@ -146,12 +146,12 @@ CoD.CustomGames_Restrictions_Button.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	self:addElement( ItemImage )
 	self.ItemImage = ItemImage
 	
-	self:registerEventHandler( "gain_focus", function ( element, event )
+	self:registerEventHandler( "gain_focus", function ( self, event )
 		local f8_local0 = nil
-		if element.gainFocus then
-			f8_local0 = element:gainFocus( event )
-		elseif element.super.gainFocus then
-			f8_local0 = element.super:gainFocus( event )
+		if self.gainFocus then
+			f8_local0 = self:gainFocus( event )
+		elseif self.super.gainFocus then
+			f8_local0 = self.super:gainFocus( event )
 		end
 		SetFocusToElement( self, "emptyFocusable", f1_arg1 )
 		return f8_local0

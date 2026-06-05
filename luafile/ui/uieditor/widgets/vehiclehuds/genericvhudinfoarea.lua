@@ -13,7 +13,7 @@ CoD.genericVHUDInfoArea.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local value = LUI.UIText.new( 1, 1, -133, 0, 0.5, 0.5, 7, 31 )
 	value:setText( 0 )
 	value:setTTF( "default" )
-	value:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD756CD9A5F1F1B4 ) )
+	value:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration_cheap_blur" ) )
 	value:setShaderVector( 0, 0, 1, 0, 0 )
 	value:setShaderVector( 1, 0, 0, 0, 0 )
 	value:setShaderVector( 2, 0, 0, 0, 0 )
@@ -25,7 +25,7 @@ CoD.genericVHUDInfoArea.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.value = value
 	
 	local vhudsentinelNotificationBox = CoD.vhud_sentinel_NotificationBox.new( f1_arg0, f1_arg1, 0.5, 0.5, -66, 67, 0.5, 0.5, -31, 14 )
-	vhudsentinelNotificationBox.SignalText:setText( Engine[0xF9F1239CFD921FE]( 0x3755C926654C027 ) )
+	vhudsentinelNotificationBox.SignalText:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_speed" ) )
 	self:addElement( vhudsentinelNotificationBox )
 	self.vhudsentinelNotificationBox = vhudsentinelNotificationBox
 	

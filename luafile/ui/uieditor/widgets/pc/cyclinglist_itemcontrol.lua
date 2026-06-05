@@ -59,7 +59,7 @@ CoD.CyclingList_ItemControl.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local OptionCountBorder = LUI.UIImage.new( 0, 0, 0, 214, 1, 1, -5, -1 )
 	OptionCountBorder:setAlpha( 0.05 )
-	OptionCountBorder:setImage( RegisterImage( 0x1B69BB6285C5BBB ) )
+	OptionCountBorder:setImage( RegisterImage( "uie_hud_core_loadout_panel1" ) )
 	OptionCountBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0x31E7B3C72564429 ) )
 	OptionCountBorder:setShaderVector( 0, 0, 0, 0.55, 0.13 )
 	OptionCountBorder:setShaderVector( 2, 0, 1, 0, 1 )
@@ -75,7 +75,7 @@ CoD.CyclingList_ItemControl.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local CurrentOptionBorder = LUI.UIImage.new( 0, 0, 0, 214, 1, 1, -5, -1 )
 	CurrentOptionBorder:setRGB( 0.8, 0.8, 0.8 )
-	CurrentOptionBorder:setImage( RegisterImage( 0x1B69BB6285C5BBB ) )
+	CurrentOptionBorder:setImage( RegisterImage( "uie_hud_core_loadout_panel1" ) )
 	CurrentOptionBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0x31E7B3C72564429 ) )
 	CurrentOptionBorder:setShaderVector( 0, 0, 0, 0.55, 0.13 )
 	CurrentOptionBorder:setupNineSliceShader( 25, 4 )

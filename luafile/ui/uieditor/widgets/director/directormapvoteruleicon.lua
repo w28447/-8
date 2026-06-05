@@ -9,7 +9,7 @@ CoD.DirectorMapVoteRuleIcon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local officialIcon = LUI.UIImage.new( 0.5, 0.5, -75, 75, 0.5, 0.5, -75, 75 )
-	officialIcon:setImage( RegisterImage( 0xA92DF43D53DFABF ) )
+	officialIcon:setImage( RegisterImage( "uie_menu_mp_frontend_icon_medal" ) )
 	self:addElement( officialIcon )
 	self.officialIcon = officialIcon
 	

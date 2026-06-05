@@ -62,7 +62,7 @@ local f0_local2 = function ( f3_arg0, f3_arg1, f3_arg2 )
 end
 
 LUI.GridLayout.addLeftRightActiveNavigation = function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-	CoD.Menu.AddButtonCallbackFunction( f8_arg1, f8_arg1, f8_arg2, Enum.LUIButton[0x57783F8DA4AAEF], "ui_navleft", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
+	CoD.Menu.AddButtonCallbackFunction( f8_arg1, f8_arg1, f8_arg2, Enum.LUIButton[0x57783F8DA4AAEF], "ui_navleft", function ( element, menu, controller, f9_arg3 )
 		if not f8_arg0.m_disableNavigation then
 			if not (not f8_arg0.dpadDisabled or not IsDpadButton( f9_arg3 )) or f8_arg0:navigateItemLeft() then
 				return true
@@ -71,7 +71,7 @@ LUI.GridLayout.addLeftRightActiveNavigation = function ( f8_arg0, f8_arg1, f8_ar
 			end
 		end
 	end )
-	CoD.Menu.AddButtonCallbackFunction( f8_arg1, f8_arg1, f8_arg2, Enum.LUIButton[0x571F08AD84807E0], "ui_navright", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+	CoD.Menu.AddButtonCallbackFunction( f8_arg1, f8_arg1, f8_arg2, Enum.LUIButton[0x571F08AD84807E0], "ui_navright", function ( element, menu, controller, f10_arg3 )
 		if not f8_arg0.m_disableNavigation then
 			if not (not f8_arg0.dpadDisabled or not IsDpadButton( f10_arg3 )) or f8_arg0:navigateItemRight() then
 				return true
@@ -83,17 +83,17 @@ LUI.GridLayout.addLeftRightActiveNavigation = function ( f8_arg0, f8_arg1, f8_ar
 end
 
 LUI.GridLayout.AddBumperPaging = function ( f11_arg0, f11_arg1, f11_arg2 )
-	CoD.Menu.AddButtonCallbackFunction( f11_arg1, f11_arg0, f11_arg2, Enum.LUIButton[0x493152B20AE4F58], "ui_pageup", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
+	CoD.Menu.AddButtonCallbackFunction( f11_arg1, f11_arg0, f11_arg2, Enum.LUIButton[0x493152B20AE4F58], "ui_pageup", function ( element, menu, controller, f12_arg3 )
 		if not f11_arg0.m_disableNavigation then
-			BlockGameFromKeyEvent( f12_arg2 )
+			BlockGameFromKeyEvent( controller )
 			if f11_arg0:pageUp() then
 				return true
 			end
 		end
 	end )
-	CoD.Menu.AddButtonCallbackFunction( f11_arg1, f11_arg0, f11_arg2, Enum.LUIButton[0x49A252B20B48936], "ui_pagedown", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
+	CoD.Menu.AddButtonCallbackFunction( f11_arg1, f11_arg0, f11_arg2, Enum.LUIButton[0x49A252B20B48936], "ui_pagedown", function ( element, menu, controller, f13_arg3 )
 		if not f11_arg0.m_disableNavigation then
-			BlockGameFromKeyEvent( f13_arg2 )
+			BlockGameFromKeyEvent( controller )
 			if f11_arg0:pageDown() then
 				return true
 			end

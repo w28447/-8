@@ -15,7 +15,7 @@ CoD.StartMenu_Options_PC_GraphicsOptions_VRAMBar.new = function ( f1_arg0, f1_ar
 	local Maximum = LUI.UIText.new( 1, 1, -125, 0, 0.5, 0.5, 12.5, 27.5 )
 	Maximum:setRGB( 0.76, 0.76, 0.76 )
 	Maximum:setAlpha( 0.44 )
-	Maximum:setText( LocalizeToUpperString( 0x4EF66575DDB929 ) )
+	Maximum:setText( LocalizeToUpperString( "mpui/max_caps" ) )
 	Maximum:setTTF( "dinnext_regular" )
 	Maximum:setLetterSpacing( 1 )
 	Maximum:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
@@ -50,7 +50,7 @@ CoD.StartMenu_Options_PC_GraphicsOptions_VRAMBar.new = function ( f1_arg0, f1_ar
 	local OverflowIndicator4 = LUI.UIImage.new( 1, 1, -4, 26, 0.5, 0.5, -32, -2 )
 	OverflowIndicator4:setRGB( 0.76, 0.76, 0.76 )
 	OverflowIndicator4:setAlpha( 0.44 )
-	OverflowIndicator4:setImage( RegisterImage( 0x7F2DD388A81D61 ) )
+	OverflowIndicator4:setImage( RegisterImage( "uie_warning_small" ) )
 	self:addElement( OverflowIndicator4 )
 	self.OverflowIndicator4 = OverflowIndicator4
 	

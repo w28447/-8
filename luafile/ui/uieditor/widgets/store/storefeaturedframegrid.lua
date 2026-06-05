@@ -85,7 +85,7 @@ CoD.StoreFeaturedFrameGrid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local DotlineH04 = LUI.UIImage.new( 0, 0, 1062, 1389, 0, 0, 339.5, 341.5 )
 	DotlineH04:setAlpha( 0.2 )
-	DotlineH04:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	DotlineH04:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	DotlineH04:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotlineH04:setShaderVector( 0, 0, 0, 0, 0 )
 	DotlineH04:setupNineSliceShader( 8, 4 )
@@ -94,7 +94,7 @@ CoD.StoreFeaturedFrameGrid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local DotlineH03 = LUI.UIImage.new( 0, 0, 717, 1044, 0, 0, 339.5, 341.5 )
 	DotlineH03:setAlpha( 0.2 )
-	DotlineH03:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	DotlineH03:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	DotlineH03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotlineH03:setShaderVector( 0, 0, 0, 0, 0 )
 	DotlineH03:setupNineSliceShader( 8, 4 )
@@ -103,7 +103,7 @@ CoD.StoreFeaturedFrameGrid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local DotlineH02 = LUI.UIImage.new( 0, 0, 352, 679, 0, 0, 339.5, 341.5 )
 	DotlineH02:setAlpha( 0.2 )
-	DotlineH02:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	DotlineH02:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	DotlineH02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotlineH02:setShaderVector( 0, 0, 0, 0, 0 )
 	DotlineH02:setupNineSliceShader( 8, 4 )
@@ -112,7 +112,7 @@ CoD.StoreFeaturedFrameGrid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local DotlineH01 = LUI.UIImage.new( 0, 0, 0, 327, 0, 0, 339.5, 341.5 )
 	DotlineH01:setAlpha( 0.2 )
-	DotlineH01:setImage( RegisterImage( 0xF5E8F1B8586D9C5 ) )
+	DotlineH01:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_dotline" ) )
 	DotlineH01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	DotlineH01:setShaderVector( 0, 0, 0, 0, 0 )
 	DotlineH01:setupNineSliceShader( 8, 4 )

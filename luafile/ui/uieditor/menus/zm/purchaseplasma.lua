@@ -46,7 +46,7 @@ LUI.createMenu.PurchasePlasma = function ( f1_arg0, f1_arg1 )
 	local featureOverlayButtonMouseOnly = nil
 	
 	featureOverlayButtonMouseOnly = CoD.featureOverlay_Button_MouseOnly.new( f1_local1, f1_arg0, 0.5, 0.5, 1035, 1161, 0.5, 0.5, 418, 475 )
-	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0x78D439E1B360368 ) )
+	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/back_caps" ) )
 	featureOverlayButtonMouseOnly:registerEventHandler( "gain_focus", function ( element, event )
 		local f3_local0 = nil
 		if element.gainFocus then
@@ -57,13 +57,13 @@ LUI.createMenu.PurchasePlasma = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
+	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		PlaySoundSetSound( self, "menu_no_selection" )
-		PlayClip( self, "Close", f4_arg2 )
-		DelayGoBack( f4_arg1, f4_arg2, 300 )
+		PlayClip( self, "Close", controller )
+		DelayGoBack( menu, controller, 300 )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( featureOverlayButtonMouseOnly )
@@ -82,20 +82,20 @@ LUI.createMenu.PurchasePlasma = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f6_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		PlayClip( self, "Close", f7_arg2 )
-		DelayGoBack( f7_arg1, f7_arg2, 300 )
+	f1_local1:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		PlayClip( self, "Close", controller )
+		DelayGoBack( menu, controller, 300 )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 		return false
 	end, false )
-	f1_local1:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		PlayClip( self, "Close", f9_arg2 )
-		DelayGoBack( f9_arg1, f9_arg2, 300 )
+	f1_local1:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, model )
+		PlayClip( self, "Close", controller )
+		DelayGoBack( menu, controller, 300 )
 		return true
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( PCSmallCloseButton )
@@ -109,12 +109,12 @@ LUI.createMenu.PurchasePlasma = function ( f1_arg0, f1_arg1 )
 			end
 		}
 	} )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		PlayClip( self, "Close", f12_arg2 )
-		DelayGoBack( f12_arg1, f12_arg2, 300 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		PlayClip( self, "Close", controller )
+		DelayGoBack( menu, controller, 300 )
 		return true
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

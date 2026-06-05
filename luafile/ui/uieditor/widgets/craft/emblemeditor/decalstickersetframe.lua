@@ -68,29 +68,29 @@ CoD.DecalStickerSetFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( emblemIconList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if IsEmblemEditor( f8_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f8_arg0, f8_arg2, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "emblemIconList" ) and CoD.ModelUtility.IsSelfModelValueTrue( f8_arg0, f8_arg2, "owned" ) then
-			CoD.CraftUtility.EmblemChooseIcon_SelectionAccepted( self, f8_arg0, f8_arg2 )
-			CoD.CraftUtility.EmblemEditor_SetEditMode( f8_arg2 )
-			GoBack( self, f8_arg2 )
-			ClearMenuSavedState( f8_arg1 )
+	f1_arg0:AddButtonCallbackFunction( emblemIconList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if IsEmblemEditor( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "emblemIconList" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) then
+			CoD.CraftUtility.EmblemChooseIcon_SelectionAccepted( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_SetEditMode( controller )
+			GoBack( self, controller )
+			ClearMenuSavedState( menu )
 			return true
-		elseif IsPaintshop( f8_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f8_arg0, f8_arg2, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "emblemIconList" ) and CoD.ModelUtility.IsSelfModelValueTrue( f8_arg0, f8_arg2, "owned" ) then
-			CoD.CraftUtility.EmblemChooseIcon_SelectionAccepted( self, f8_arg0, f8_arg2 )
-			CoD.CraftUtility.EmblemEditor_SetEditMode( f8_arg2 )
-			CoD.CraftUtility.EmblemChooseIcon_RevertPreviewDecalCamera( self, f8_arg0, f8_arg2 )
-			GoBack( self, f8_arg2 )
-			ClearMenuSavedState( f8_arg1 )
+		elseif IsPaintshop( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "emblemIconList" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) then
+			CoD.CraftUtility.EmblemChooseIcon_SelectionAccepted( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_SetEditMode( controller )
+			CoD.CraftUtility.EmblemChooseIcon_RevertPreviewDecalCamera( self, element, controller )
+			GoBack( self, controller )
+			ClearMenuSavedState( menu )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if IsEmblemEditor( f9_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f9_arg0, f9_arg2, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "emblemIconList" ) and CoD.ModelUtility.IsSelfModelValueTrue( f9_arg0, f9_arg2, "owned" ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if IsEmblemEditor( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "emblemIconList" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif IsPaintshop( f9_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f9_arg0, f9_arg2, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "emblemIconList" ) and CoD.ModelUtility.IsSelfModelValueTrue( f9_arg0, f9_arg2, "owned" ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif IsPaintshop( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "emblemIconList" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "owned" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false

@@ -73,7 +73,7 @@ CoD.CallingCards_BlackMarket_Profiler.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local HeaderGlow = LUI.UIImage.new( 0.01, 1.01, -10, 0, 1, 1, -89, -55 )
 	HeaderGlow:setAlpha( 0.1 )
-	HeaderGlow:setImage( RegisterImage( 0xFAA6C81834660D3 ) )
+	HeaderGlow:setImage( RegisterImage( "uie_ui_menu_common_box_glow" ) )
 	HeaderGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	HeaderGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	HeaderGlow:setupNineSliceShader( 12, 12 )
@@ -98,7 +98,7 @@ CoD.CallingCards_BlackMarket_Profiler.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -84, -60 )
 	PixelGridTiledBacking:setAlpha( 0.3 )
-	PixelGridTiledBacking:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )

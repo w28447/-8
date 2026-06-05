@@ -9,7 +9,7 @@ CoD.WaypointCloseMessage.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local bg = LUI.UIImage.new( 0, 1, 0, 0, 0.5, 0.5, -10.5, 10.5 )
-	bg:setImage( RegisterImage( 0xDFCDBD94F9DD0AC ) )
+	bg:setImage( RegisterImage( "uie_t7_hud_waypoints_namebg_left_mp" ) )
 	self:addElement( bg )
 	self.bg = bg
 	

@@ -23,14 +23,14 @@ CoD.GameSettings_titlesecbox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Glow = LUI.UIImage.new( 0, 1, -81, 73, 0.5, 0.5, -45, 65 )
 	Glow:setRGB( 0, 0, 0 )
 	Glow:setAlpha( 0.5 )
-	Glow:setImage( RegisterImage( 0x1078C36A022A4FE ) )
+	Glow:setImage( RegisterImage( "uie_t7_menu_cac_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	
 	local Textbox = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -16.5, 16.5 )
 	Textbox:setRGB( 0.96, 0.93, 0.84 )
-	Textbox:setText( LocalizeIntoString( 0x0, "Care Package" ) )
+	Textbox:setText( LocalizeIntoString( "", "Care Package" ) )
 	Textbox:setTTF( "ttmussels_regular" )
 	Textbox:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	Textbox:setShaderVector( 0, 0.06, 0, 0, 0 )

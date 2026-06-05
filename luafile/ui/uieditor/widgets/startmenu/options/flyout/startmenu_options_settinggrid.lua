@@ -78,12 +78,12 @@ CoD.StartMenu_Options_SettingGrid.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f7_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( SettingsGrid, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		ProcessListAction( self, f8_arg0, f8_arg2, f8_arg1 )
+	f1_arg0:AddButtonCallbackFunction( SettingsGrid, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		ProcessListAction( self, element, controller, menu )
 		PlaySoundAlias( "uin_paint_decal_nav" )
 		return true
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( SettingsGrid, "setHeight", function ( element, controller )

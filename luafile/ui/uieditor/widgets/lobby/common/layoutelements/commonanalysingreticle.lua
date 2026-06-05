@@ -9,26 +9,26 @@ CoD.CommonAnalysingReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local InspecReticleCenter = LUI.UIImage.new( 0, 0, 116, 160, 0, 0, 116, 160 )
-	InspecReticleCenter:setImage( RegisterImage( 0xD6ACC6670AE45F9 ) )
-	InspecReticleCenter:setMaterial( LUI.UIImage.GetCachedMaterial( 0x655565C7B387234 ) )
+	InspecReticleCenter:setImage( RegisterImage( "uie_ui_menu_inspection_reticle_center" ) )
+	InspecReticleCenter:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_multiply" ) )
 	self:addElement( InspecReticleCenter )
 	self.InspecReticleCenter = InspecReticleCenter
 	
 	local InspecReticleCenter2 = LUI.UIImage.new( 0, 0, 116, 160, 0, 0, 116, 160 )
-	InspecReticleCenter2:setImage( RegisterImage( 0xD6ACC6670AE45F9 ) )
-	InspecReticleCenter2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x655565C7B387234 ) )
+	InspecReticleCenter2:setImage( RegisterImage( "uie_ui_menu_inspection_reticle_center" ) )
+	InspecReticleCenter2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_multiply" ) )
 	self:addElement( InspecReticleCenter2 )
 	self.InspecReticleCenter2 = InspecReticleCenter2
 	
 	local InspecReticleDetail = LUI.UIImage.new( 0, 0, 0, 276, 0, 0, 0, 276 )
-	InspecReticleDetail:setImage( RegisterImage( 0x2E9364D8C51E3E1 ) )
+	InspecReticleDetail:setImage( RegisterImage( "uie_ui_menu_inspection_reticle_detail" ) )
 	InspecReticleDetail:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	InspecReticleDetail:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( InspecReticleDetail )
 	self.InspecReticleDetail = InspecReticleDetail
 	
 	local InspecReticleWipe = LUI.UIImage.new( 0, 0, 0, 276, 0, 0, 0, 276 )
-	InspecReticleWipe:setImage( RegisterImage( 0xB4BD882151DD89F ) )
+	InspecReticleWipe:setImage( RegisterImage( "uie_ui_menu_inspection_reticle" ) )
 	InspecReticleWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	InspecReticleWipe:setShaderVector( 0, 0, 1, 0, 0 )
 	InspecReticleWipe:setShaderVector( 1, 0, 0, 0, 0 )
@@ -39,8 +39,8 @@ CoD.CommonAnalysingReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.InspecReticleWipe = InspecReticleWipe
 	
 	local InspecReticle = LUI.UIImage.new( 0, 0, 0, 276, 0, 0, 0, 276 )
-	InspecReticle:setImage( RegisterImage( 0xB4BD882151DD89F ) )
-	InspecReticle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x5956C6C1FD41D3C ) )
+	InspecReticle:setImage( RegisterImage( "uie_ui_menu_inspection_reticle" ) )
+	InspecReticle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration" ) )
 	InspecReticle:setShaderVector( 0, 0.2, 1, 0, 0 )
 	InspecReticle:setShaderVector( 1, 0, 0, 0, 0 )
 	InspecReticle:setShaderVector( 2, 0, 0, 0, 0 )
@@ -50,8 +50,8 @@ CoD.CommonAnalysingReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.InspecReticle = InspecReticle
 	
 	local InspecReticleCornerDots = LUI.UIImage.new( 0, 0, 110, 166, 0, 0, 110, 166 )
-	InspecReticleCornerDots:setImage( RegisterImage( 0x23FBEAF2C01C54C ) )
-	InspecReticleCornerDots:setMaterial( LUI.UIImage.GetCachedMaterial( 0x5956C6C1FD41D3C ) )
+	InspecReticleCornerDots:setImage( RegisterImage( "uie_ui_menu_inspection_reticle_dots" ) )
+	InspecReticleCornerDots:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration" ) )
 	InspecReticleCornerDots:setShaderVector( 0, 0.2, 1, 0, 0 )
 	InspecReticleCornerDots:setShaderVector( 1, 0, 0, 0, 0 )
 	InspecReticleCornerDots:setShaderVector( 2, 0, 0, 0, 0 )

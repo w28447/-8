@@ -10,7 +10,7 @@ CoD.BM_ActiveContractRewards_ZMTierSkip.new = function ( f1_arg0, f1_arg1, f1_ar
 	self.soundSet = "none"
 	
 	local RewardsAmount = LUI.UIText.new( 0, 0, 44, 156, 0, 0, 13, 37 )
-	RewardsAmount:setText( Engine[0xF9F1239CFD921FE]( 0x59AB2B00A337CBE ) )
+	RewardsAmount:setText( Engine[0xF9F1239CFD921FE]( "aar/tier_skip" ) )
 	RewardsAmount:setTTF( "dinnext_regular" )
 	RewardsAmount:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	RewardsAmount:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -18,13 +18,13 @@ CoD.BM_ActiveContractRewards_ZMTierSkip.new = function ( f1_arg0, f1_arg1, f1_ar
 	self.RewardsAmount = RewardsAmount
 	
 	local RewardIcon = LUI.UIImage.new( 0, 0, 1, 42, 0.5, 0.5, -20.5, 20.5 )
-	RewardIcon:setImage( RegisterImage( 0x16C9468009EAFAA ) )
+	RewardIcon:setImage( RegisterImage( "uie_ui_icon_blackmarket_tier_token" ) )
 	self:addElement( RewardIcon )
 	self.RewardIcon = RewardIcon
 	
 	local Promo = LUI.UIText.new( 0, 0, 44.5, 244.5, 0, 0, -9, 7 )
 	Promo:setRGB( 0, 0, 0 )
-	Promo:setText( LocalizeToUpperString( 0x561EC3EDCF4487A ) )
+	Promo:setText( LocalizeToUpperString( "menu/zombies_bonus" ) )
 	Promo:setTTF( "ttmussels_demibold" )
 	Promo:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Promo:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )

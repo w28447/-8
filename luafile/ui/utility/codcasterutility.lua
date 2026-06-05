@@ -289,7 +289,7 @@ end
 CoD.CodCasterUtility.IsCodCasterSupportedGameType = function ( f31_arg0 )
 	local f31_local0 = Engine.GetGlobalModel()
 	f31_local0 = f31_local0["MapVote.mapVoteGameModeNext"].get( f31_local0["MapVote.mapVoteGameModeNext"] )
-	if f31_local0 == "dm" or f31_local0 == 0x5194D18FAD99705 then
+	if f31_local0 == "dm" or f31_local0 == "gun" then
 		return false
 	else
 		return true
@@ -325,7 +325,7 @@ end
 CoD.CodCasterUtility.Announcement.ExtraDataToStringParameter = function ( f35_arg0, f35_arg1 )
 	if f35_arg0 <= 0 then
 		return nil
-	elseif f35_arg1 == 0xE6607166B31C6DD then
+	elseif f35_arg1 == "letter" then
 		if f35_arg0 == 1 then
 			return "A"
 		elseif f35_arg0 == 2 then
@@ -335,7 +335,7 @@ CoD.CodCasterUtility.Announcement.ExtraDataToStringParameter = function ( f35_ar
 		elseif f35_arg0 == 4 then
 			return "D"
 		end
-	elseif f35_arg1 == 0x3E164CE08D58747 then
+	elseif f35_arg1 == "killstreak" then
 		return Engine[0xF9F1239CFD921FE]( Engine.GetIString( f35_arg0, "CS_LOCALIZED_STRINGS" ) )
 	end
 	return f35_arg0
@@ -349,19 +349,19 @@ end
 CoD.CodCasterUtility.Announcement.Data = nil
 CoD.CodCasterUtility.Announcement.OnNewAnnouncement = function ( f37_arg0, f37_arg1, f37_arg2 )
 	return function ( f38_arg0 )
-		if f38_arg0:get() ~= 0xF8D0153AA606F7D then
+		if f38_arg0:get() ~= "announcement_event" then
 			return 
 		end
 		local f38_local0 = {}
 		f38_local0.announcementID, f38_local0.teamColor, f38_local0.playerClientNum, f38_local0.extraData, f38_local0.teamId = CoD.CodCasterUtility.Announcement.ModelValueToData( f37_arg0, f37_arg1, f38_arg0 )
 		if CoD.CodCasterUtility.Announcement.Data == nil then
-			CoD.CodCasterUtility.Announcement.Data = Engine[0xE00B2F29271C60B]( 0xBAC2BE54C1FC57A )
+			CoD.CodCasterUtility.Announcement.Data = Engine[0xE00B2F29271C60B]( "codcaster_announcements" )
 		end
 		local f38_local1 = CoD.CodCasterUtility.Announcement.Data.announcementslist[f38_local0.announcementID]
 		if f38_local1 == nil then
 			return 
 		end
-		local f38_local2 = f38_local1[0x5B6EA8C35AC1E89]
+		local f38_local2 = f38_local1.priority
 		if f38_local2 == nil then
 			error( "LUI Error: invalid broadcaster announcement ID " .. f38_local0.announcementID )
 			return 
@@ -406,8 +406,8 @@ CoD.CodCasterUtility.Announcement.ShowAnnouncement = function ( f40_arg0, f40_ar
 	end
 	local f40_local1 = f40_arg3.announcementImageBackground:getParent()
 	local f40_local2 = f40_local0[0xDE167907C171A]
-	local f40_local3 = f40_local0[0x8A3366583423D67]
-	local f40_local4 = math.floor( f40_local0[0x1C74A75EBDD8D38] * 1000 ) + 400
+	local f40_local3 = f40_local0.eventtype
+	local f40_local4 = math.floor( f40_local0.delay * 1000 ) + 400
 	local f40_local5 = nil
 	local f40_local6 = CoD.CodCasterUtility.Announcement.ExtraDataToStringParameter( f40_arg2.extraData, f40_local0[0xFA4B83BCF32178] )
 	if f40_local6 then
@@ -1244,7 +1244,7 @@ CoD.CodCasterUtility.CodCasterSettings = {}
 CoD.CodCasterUtility.CodCasterSettings.DisplaySettingsCategories = {
 	{
 		ref = "Xray",
-		groupName = 0xC110A89F1CE335C,
+		groupName = "codcaster/ds_xray",
 		datasourceNameHeader = "CodCasterDisplaySettingsXrayList",
 		datasourceFunc = CoD.CodCasterUtility.CodCasterSettingsDisplaySettingsXray,
 		isDefaultCondition = CoD.CodCasterUtility.AreCodCasterOptionsDefault,
@@ -1312,7 +1312,7 @@ CoD.CodCasterUtility.CodCasterSettings.LoadoutSettingsCategories = {
 CoD.CodCasterUtility.CodCasterSettings.TeamSettingsCategories = {
 	{
 		ref = "TeamIdentity",
-		groupName = 0x7A023700261F0B2,
+		groupName = "codcaster/team_identity",
 		datasourceNameHeader = "CodCasterTeamSettingsTeamIdentityList",
 		datasourceFunc = CoD.CodCasterUtility.CodCasterSettingsTeamSettingsTeamIdentity,
 		isDefaultCondition = CoD.CodCasterUtility.AreCodCasterOptionsDefault,
@@ -1320,11 +1320,11 @@ CoD.CodCasterUtility.CodCasterSettings.TeamSettingsCategories = {
 	},
 	{
 		ref = "Team1Settings",
-		groupName = 0x30692B7DE1E3032
+		groupName = "codcaster/team1_settings"
 	},
 	{
 		ref = "Team2Settings",
-		groupName = 0xE3E43881DB13D15
+		groupName = "codcaster/team2_settings"
 	}
 }
 CoD.CodCasterUtility.CodCasterSettings.QuickSettingsCategories = {
@@ -1388,7 +1388,8 @@ CoD.CodCasterUtility.PrepareSettingsTeamCategories = function ( f115_arg0, f115_
 			f115_local5 = CoD.OptionsUtility.IsPlayerSettingDefault( f115_arg0, "codcaster_fe_team_identity" )
 		end
 		local f115_local6 = false
-		local f115_local7, f115_local8 = false
+		local f115_local7 = false
+		local f115_local8 = nil
 		if f115_local13.ref == "Team1Settings" then
 			f115_local6 = true
 			f115_local8 = "team1"
@@ -2022,7 +2023,7 @@ CoD.CodCasterUtility.SetLoadoutWildcardsText = function ( f143_arg0 )
 		local f143_local4 = LUI.GridLayout.getItemAt( f143_arg0, f143_local1 )
 		if f143_local4 ~= nil then
 			local f143_local5 = Engine.GetModel( f143_local4:getModel(), "name" )
-			f143_local4.CodCasterLoadoutSelection.ItemName:setText( Engine[0xF9F1239CFD921FE]( Engine.GetItemName( Engine[0xD97229B24C685D5]( f143_local5:get(), Enum.eModes[0x83EBA96F36BC4E5] ), Enum[0x6EB546760F890D2][0x1A949B83CC070B0], Enum.eModes[0x83EBA96F36BC4E5] ) ) )
+			f143_local4.CodCasterLoadoutSelection.ItemName:setText( Engine[0xF9F1239CFD921FE]( Engine.GetItemName( Engine[0xD97229B24C685D5]( f143_local5:get(), Enum.eModes.mode_multiplayer ), Enum[0x6EB546760F890D2][0x1A949B83CC070B0], Enum.eModes.mode_multiplayer ) ) )
 		end
 	end
 end
@@ -2055,7 +2056,7 @@ CoD.CodCasterUtility.SetLoadoutElementsText = function ( f147_arg0, f147_arg1, f
 	CoD.CodCasterUtility.SetLoadoutWildcardsText( f147_local2.CodCasterLoadoutModulePerkWildcard.CodCasterLoadoutWildcardList )
 	local f147_local3 = f147_local1:getParent()
 	local f147_local4 = f147_local3.T7HudMenuGameMode.HudMPSafeAreaContainer.AmmoWidgetMPUltimate
-	f147_local4.HealCooldown.CodCasterLoadoutSelection.ItemName:setText( Engine[0xF9F1239CFD921FE]( 0x8CADD3D78C04519 ) )
+	f147_local4.HealCooldown.CodCasterLoadoutSelection.ItemName:setText( Engine[0xF9F1239CFD921FE]( "hud/heal" ) )
 	local f147_local5 = Engine.GetModel( f147_local4.UltimateRadialMeterwipe:getModel(), "name" )
 	f147_local4.CodCasterLoadoutSelection.ItemName:setText( Engine[0xF9F1239CFD921FE]( f147_local5:get() ) )
 	local f147_local6 = Engine.GetModel( f147_local4.AmmoWidgetMPAbilityItem:getModel(), "name" )
@@ -2067,7 +2068,7 @@ CoD.CodCasterUtility.SetLoadoutElementsText = function ( f147_arg0, f147_arg1, f
 	f147_local8 = f147_local8:get()
 	local f147_local9 = nil
 	if f147_local8 ~= nil then
-		f147_local7.CodCasterLoadoutModulePrimaryWeapon.CodCasterLoadoutSelection.ItemName:setText( Engine[0xF9F1239CFD921FE]( Engine.GetItemName( f147_local8, Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] ) ) )
+		f147_local7.CodCasterLoadoutModulePrimaryWeapon.CodCasterLoadoutSelection.ItemName:setText( Engine[0xF9F1239CFD921FE]( Engine.GetItemName( f147_local8, Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer ) ) )
 	end
 	local f147_local10 = f147_local0.CodCasterLoadoutSecondary
 	CoD.CodCasterUtility.SetLoadoutWildcardsText( f147_local10.CodCasterLoadoutModuleSecondaryWildcard.CodCasterLoadoutWildcards )
@@ -2075,7 +2076,7 @@ CoD.CodCasterUtility.SetLoadoutElementsText = function ( f147_arg0, f147_arg1, f
 	local f147_local11 = Engine.GetModel( Engine.GetModelForController( f147_arg2 ), "secondaryWeapon.indexIndex" )
 	f147_local8 = f147_local11:get()
 	if f147_local8 ~= nil then
-		f147_local10.CodCasterLoadoutModuleSecondaryWeapon.CodCasterLoadoutSelection.ItemName:setText( Engine[0xF9F1239CFD921FE]( Engine.GetItemName( f147_local8, Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes[0x83EBA96F36BC4E5] ) ) )
+		f147_local10.CodCasterLoadoutModuleSecondaryWeapon.CodCasterLoadoutSelection.ItemName:setText( Engine[0xF9F1239CFD921FE]( Engine.GetItemName( f147_local8, Enum[0x6EB546760F890D2][0x569E84652131CD7], Enum.eModes.mode_multiplayer ) ) )
 	end
 end
 
@@ -2546,7 +2547,7 @@ CoD.CodCasterUtility.ResetCodCasterSettingsDefault = function ( f180_arg0, f180_
 		if f180_local3 then
 			for f180_local7, f180_local8 in ipairs( Engine[0xA7E3CD65E63086F]( f180_local3 ) ) do
 				CoD.SetShoutcasterProfileVarValue( f180_arg0, f180_local8[0x6E183377E0C37F4], CoD.OptionsUtility.GetPlayerSettingDefaultValueFromOptionInfo( f180_arg0, f180_local8 ) )
-				CoD.OptionsUtility.NotifyPlayerSettingsUpdate( f180_arg0, f180_local8[0x4BCADBA8E631B86] )
+				CoD.OptionsUtility.NotifyPlayerSettingsUpdate( f180_arg0, f180_local8.name )
 				if Engine.IsInGame() and f180_local8[0x6E183377E0C37F4] == "shoutcaster_ds_thirdperson" then
 					Engine.ExecNow( f180_arg0, "shoutcaster_thirdperson " .. CoD.ShoutcasterProfileVarValue( f180_arg0, f180_local8[0x6E183377E0C37F4] ) )
 				end
@@ -2613,13 +2614,13 @@ CoD.CodCasterUtility.HandleListenInForPlayer = function ( f189_arg0, f189_arg1 )
 	end
 	local f189_local0 = Engine.GetTeamID( f189_arg0, f189_arg1 )
 	if f189_local0 ~= -1 then
-		Engine.Exec( f189_arg0, "shoutcastSetListenInTeam " .. f189_local0 )
+		Engine.exec( f189_arg0, "shoutcastSetListenInTeam " .. f189_local0 )
 	end
 end
 
 CoD.CodCasterUtility.HandleListenInForProfileChange = function ( f190_arg0 )
 	if not CoD.ShoutcasterProfileVarBool( f190_arg0, "shoutcaster_qs_listen_in" ) then
-		Engine.Exec( f190_arg0, "shoutcastSetListenInTeam " .. Enum.team_t[0xBD65CBD25CCBEDC] )
+		Engine.exec( f190_arg0, "shoutcastSetListenInTeam " .. Enum.team_t[0xBD65CBD25CCBEDC] )
 		return 
 	end
 	local f190_local0 = Engine.GetModel( Engine.GetModelForController( f190_arg0 ), "deadSpectator.playerIndex" )

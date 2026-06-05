@@ -105,7 +105,7 @@ CoD.AAREfficiencyWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 		{
 			stateName = "Solo",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "gametype", 0x5F8EE90CBFFA9E7 )
+				return CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "gametype", "warzone_solo" )
 			end
 		}
 	} )

@@ -33,7 +33,7 @@ CoD.ContractDetailsPanelBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local ButtonTopLine9Slice2 = LUI.UIImage.new( 0, 0, -5, 781, 0, 0, -6, 14 )
 	ButtonTopLine9Slice2:setAlpha( 0.25 )
-	ButtonTopLine9Slice2:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
+	ButtonTopLine9Slice2:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_line" ) )
 	ButtonTopLine9Slice2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonTopLine9Slice2:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonTopLine9Slice2:setupNineSliceShader( 120, 10 )
@@ -42,7 +42,7 @@ CoD.ContractDetailsPanelBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local ButtonTopLine9Slice = LUI.UIImage.new( 0, 0, -5, 781, 1, 1, -7, 13 )
 	ButtonTopLine9Slice:setAlpha( 0.25 )
-	ButtonTopLine9Slice:setImage( RegisterImage( 0xC752149A1FA1AAE ) )
+	ButtonTopLine9Slice:setImage( RegisterImage( "uie_ui_menu_cac_secondary_button_top_line" ) )
 	ButtonTopLine9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ButtonTopLine9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ButtonTopLine9Slice:setupNineSliceShader( 120, 10 )

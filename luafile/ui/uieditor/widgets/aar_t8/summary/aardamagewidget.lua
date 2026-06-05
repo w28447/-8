@@ -39,7 +39,7 @@ CoD.AARDamageWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local DamageLabel = LUI.UIText.new( 0, 0, 18, 311, 0, 0, 12, 33 )
 	DamageLabel:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
 	DamageLabel:setAlpha( 0.2 )
-	DamageLabel:setText( Engine[0xF9F1239CFD921FE]( 0xC4B84A4968AAC62 ) )
+	DamageLabel:setText( Engine[0xF9F1239CFD921FE]( "aar/damage_done" ) )
 	DamageLabel:setTTF( "dinnext_regular" )
 	DamageLabel:setLetterSpacing( 2 )
 	DamageLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -159,7 +159,7 @@ CoD.AARDamageWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	CleanDeposits:linkToElementModel( self, "cleanDeposits", true, function ( model )
 		local f9_local0 = model:get()
 		if f9_local0 ~= nil then
-			CleanDeposits:setText( LocalizeStringWithParameter( 0x7946EF6C8E2AAFF, f9_local0 ) )
+			CleanDeposits:setText( LocalizeStringWithParameter( "aar/deposits", f9_local0 ) )
 		end
 	end )
 	self:addElement( CleanDeposits )
@@ -189,7 +189,7 @@ CoD.AARDamageWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	CleanDenies:linkToElementModel( self, "cleanDenies", true, function ( model )
 		local f11_local0 = model:get()
 		if f11_local0 ~= nil then
-			CleanDenies:setText( LocalizeStringWithParameter( 0x13FB98504BD012, f11_local0 ) )
+			CleanDenies:setText( LocalizeStringWithParameter( "aar/denies", f11_local0 ) )
 		end
 	end )
 	self:addElement( CleanDenies )
@@ -314,7 +314,7 @@ CoD.AARDamageWidget.__resetProperties = function ( f22_arg0 )
 	f22_arg0.ObjectiveTotal:setAlpha( 0 )
 	f22_arg0.ObjectiveTotalGlow:setAlpha( 0 )
 	f22_arg0.Damage:setAlpha( 0.8 )
-	f22_arg0.DamageLabel:setText( Engine[0xF9F1239CFD921FE]( 0xC4B84A4968AAC62 ) )
+	f22_arg0.DamageLabel:setText( Engine[0xF9F1239CFD921FE]( "aar/damage_done" ) )
 	f22_arg0.EscortDeliveries:setTopBottom( 0, 0, 59.5, 80.5 )
 	f22_arg0.EscortDeliveries:setAlpha( 0 )
 	f22_arg0.EscortDisables:setTopBottom( 0, 0, 36, 57 )

@@ -37,13 +37,13 @@ CoD.EmblemEditorColorMixerBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.pointer = pointer
 	
 	local RightArrow = LUI.UIImage.new( 1, 1, 10, 20, 0, 0, 0, 20 )
-	RightArrow:setImage( RegisterImage( 0x1226A0CC6137EEE ) )
+	RightArrow:setImage( RegisterImage( "uie_ui_hud_common_triangle" ) )
 	self:addElement( RightArrow )
 	self.RightArrow = RightArrow
 	
 	local LeftArrow = LUI.UIImage.new( 0, 0, -20, -10, 0, 0, 0, 20 )
 	LeftArrow:setZRot( 180 )
-	LeftArrow:setImage( RegisterImage( 0x1226A0CC6137EEE ) )
+	LeftArrow:setImage( RegisterImage( "uie_ui_hud_common_triangle" ) )
 	self:addElement( LeftArrow )
 	self.LeftArrow = LeftArrow
 	

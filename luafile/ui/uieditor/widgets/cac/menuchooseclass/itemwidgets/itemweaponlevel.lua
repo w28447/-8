@@ -48,14 +48,14 @@ CoD.ItemWeaponLevel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	levelLabel:setBackingColor( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
 	levelLabel:setBackingXPadding( 13 )
 	levelLabel:setBackingYPadding( 6 )
-	levelLabel:setBackingImage( RegisterImage( 0x7D0A70047B9795C ) )
+	levelLabel:setBackingImage( RegisterImage( "uie_ui_menu_cac_attachment_lvl_bg_colorless01" ) )
 	levelLabel:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	levelLabel:setBackingShaderVector( 0, 0, 0, 0, 0 )
 	levelLabel:setupBackingNineSliceShader( 55, 16 )
 	levelLabel:linkToElementModel( self, "itemIndex", true, function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
-			levelLabel:setText( CoD.CACUtility.LocalizeCurrentWeaponLevelIntoString( f1_arg0, 0xD8F445CA5BD1B0E, f1_arg1, f4_local0 ) )
+			levelLabel:setText( CoD.CACUtility.LocalizeCurrentWeaponLevelIntoString( f1_arg0, "mpui/weapon_rank", f1_arg1, f4_local0 ) )
 		end
 	end )
 	self:addElement( levelLabel )
@@ -63,7 +63,7 @@ CoD.ItemWeaponLevel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local prestigeStar2 = CoD.onOffImage.new( f1_arg0, f1_arg1, 0, 0, -14, -3, 1, 1, -12, -1 )
 	prestigeStar2:setRGB( 0.97, 0.93, 0.07 )
-	prestigeStar2.image:setImage( RegisterImage( 0x1CEC5168AA639BA ) )
+	prestigeStar2.image:setImage( RegisterImage( "uie_t7_arena_star_petit_white" ) )
 	prestigeStar2:linkToElementModel( self, nil, false, function ( model )
 		prestigeStar2:setModel( model, f1_arg1 )
 	end )
@@ -72,7 +72,7 @@ CoD.ItemWeaponLevel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local prestigeStar1 = CoD.onOffImage.new( f1_arg0, f1_arg1, 0, 0, -14, -3, 1, 1, -31, -20 )
 	prestigeStar1:setRGB( 0.97, 0.93, 0.07 )
-	prestigeStar1.image:setImage( RegisterImage( 0x1CEC5168AA639BA ) )
+	prestigeStar1.image:setImage( RegisterImage( "uie_t7_arena_star_petit_white" ) )
 	prestigeStar1:linkToElementModel( self, nil, false, function ( model )
 		prestigeStar1:setModel( model, f1_arg1 )
 	end )
@@ -81,7 +81,7 @@ CoD.ItemWeaponLevel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local Glow = LUI.UIImage.new( 0, 0, -3, 7, 0, 0, -36, 8 )
 	Glow:setRGB( ColorSet.T8__OCHRE.r, ColorSet.T8__OCHRE.g, ColorSet.T8__OCHRE.b )
-	Glow:setImage( RegisterImage( 0x3BF2E37984B1A8B ) )
+	Glow:setImage( RegisterImage( "uie_ui_menu_cac_attachment_meter_tick_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Glow:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Glow )

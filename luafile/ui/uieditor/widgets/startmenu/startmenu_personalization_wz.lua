@@ -69,17 +69,17 @@ CoD.StartMenu_Personalization_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f8_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( options, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		if IsMouseOrKeyboard( f9_arg2 ) then
-			SetCurrentElementAsActive( self, f9_arg0, f9_arg2 )
-			ProcessListAction( self, f9_arg0, f9_arg2, f9_arg1 )
+	f1_arg0:AddButtonCallbackFunction( options, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) then
+			SetCurrentElementAsActive( self, element, controller )
+			ProcessListAction( self, element, controller, menu )
 			return true
 		else
-			ProcessListAction( self, f9_arg0, f9_arg2, f9_arg1 )
+			ProcessListAction( self, element, controller, menu )
 			return true
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( options )
@@ -100,17 +100,17 @@ CoD.StartMenu_Personalization_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	f1_local5( f1_local4, f1_local6["personalization.breadcrumbCount"], function ( f13_arg0, f13_arg1 )
 		CoD.Menu.UpdateButtonShownState( f13_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09] )
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
-		if CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f14_arg2, "StartMenuBreadcrumbs", "personalization.breadcrumbCount", 0 ) and not IsPC() then
-			CoD.BreadcrumbUtility.ClearAllPersonalizationBreadcrumbs( f14_arg1, f14_arg2 )
-			UpdateElementState( self, "specialists", f14_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "StartMenuBreadcrumbs", "personalization.breadcrumbCount", 0 ) and not IsPC() then
+			CoD.BreadcrumbUtility.ClearAllPersonalizationBreadcrumbs( menu, controller )
+			UpdateElementState( self, "specialists", controller )
 			return true
 		else
 			
 		end
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		if CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f15_arg2, "StartMenuBreadcrumbs", "personalization.breadcrumbCount", 0 ) and not IsPC() then
-			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x5619D8212EDA599, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "StartMenuBreadcrumbs", "personalization.breadcrumbCount", 0 ) and not IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], 0x5619D8212EDA599, nil, nil )
 			return true
 		else
 			return false

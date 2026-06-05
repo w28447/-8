@@ -9,7 +9,7 @@ CoD.DiscountTiersNumber.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local FixedAspectRatioImage = LUI.UIFixedAspectRatioImage.new( 0, 0, 0, 50, 0, 0, 0, 50 )
 	FixedAspectRatioImage:setAlpha( 0 )
-	FixedAspectRatioImage:setImage( RegisterImage( 0x83164AD29684964 ) )
+	FixedAspectRatioImage:setImage( RegisterImage( "ui_icon_blackmarket_tier_medium" ) )
 	FixedAspectRatioImage:setStretchedDimension( 6 )
 	self:addElement( FixedAspectRatioImage )
 	self.FixedAspectRatioImage = FixedAspectRatioImage

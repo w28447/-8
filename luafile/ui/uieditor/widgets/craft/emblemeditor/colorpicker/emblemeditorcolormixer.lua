@@ -141,7 +141,7 @@ CoD.EmblemEditorColorMixer.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3, 
 	
 	local redColor = LUI.UIText.new( 0, 0, 107.5, 227.5, 0, 0, 24.5, 51.5 )
 	redColor:setRGB( 0.92, 0.92, 0.92 )
-	redColor:setText( LocalizeToUpperString( 0xD6726B93C89AA3D ) )
+	redColor:setText( LocalizeToUpperString( "menu/emblem_rgb_red" ) )
 	redColor:setTTF( "ttmussels_regular" )
 	redColor:setLetterSpacing( 2 )
 	redColor:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -150,7 +150,7 @@ CoD.EmblemEditorColorMixer.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3, 
 	
 	local greenColor = LUI.UIText.new( 0, 0, 107.5, 227.5, 0, 0, 93.5, 120.5 )
 	greenColor:setRGB( 0.92, 0.92, 0.92 )
-	greenColor:setText( LocalizeToUpperString( 0xBCBD80A292877C1 ) )
+	greenColor:setText( LocalizeToUpperString( "menu/emblem_rgb_green" ) )
 	greenColor:setTTF( "ttmussels_regular" )
 	greenColor:setLetterSpacing( 2 )
 	greenColor:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -159,7 +159,7 @@ CoD.EmblemEditorColorMixer.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3, 
 	
 	local blueColor = LUI.UIText.new( 0, 0, 107.5, 227.5, 0, 0, 161, 188 )
 	blueColor:setRGB( 0.92, 0.92, 0.92 )
-	blueColor:setText( LocalizeToUpperString( 0x714D845DAF54E6E ) )
+	blueColor:setText( LocalizeToUpperString( "menu/emblem_rgb_blue" ) )
 	blueColor:setTTF( "ttmussels_regular" )
 	blueColor:setLetterSpacing( 2 )
 	blueColor:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -191,38 +191,38 @@ CoD.EmblemEditorColorMixer.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3, 
 		CoD.Menu.UpdateButtonShownState( element, f3_arg0, f3_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f10_local0
 	end )
-	f3_arg0:AddButtonCallbackFunction( redBar, f3_arg1, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		CoD.CraftUtility.EmblemChooseColor_DecrementColorComponent( self, f11_arg0, f11_arg2, "red" )
+	f3_arg0:AddButtonCallbackFunction( redBar, f3_arg1, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( element, menu, controller, model )
+		CoD.CraftUtility.EmblemChooseColor_DecrementColorComponent( self, element, controller, "red" )
 		PlaySoundSetSound( self, "manipulate_slider" )
 		return true
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x57783F8DA4AAEF], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x57783F8DA4AAEF], "", nil, nil )
 		return false
 	end, false )
-	f3_arg0:AddButtonCallbackFunction( redBar, f3_arg1, Enum.LUIButton[0x571F08AD84807E0], nil, function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		CoD.CraftUtility.EmblemChooseColor_IncrementColorComponent( self, f13_arg0, f13_arg2, "red" )
+	f3_arg0:AddButtonCallbackFunction( redBar, f3_arg1, Enum.LUIButton[0x571F08AD84807E0], nil, function ( element, menu, controller, model )
+		CoD.CraftUtility.EmblemChooseColor_IncrementColorComponent( self, element, controller, "red" )
 		PlaySoundSetSound( self, "manipulate_slider" )
 		return true
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x571F08AD84807E0], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x571F08AD84807E0], "", nil, nil )
 		return false
 	end, false )
-	f3_arg0:AddButtonCallbackFunction( redBar, f3_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		if CoD.ModelUtility.IsModelValueEqualTo( f15_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f15_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.CraftUtility.EmblemGradient_BackFromColorPicker( self, f15_arg0, f15_arg1, f15_arg2 )
+	f3_arg0:AddButtonCallbackFunction( redBar, f3_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsModelValueEqualTo( controller, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
+			CoD.CraftUtility.EmblemGradient_BackFromColorPicker( self, element, menu, controller )
 			return true
-		elseif CoD.ModelUtility.IsModelValueEqualTo( f15_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f15_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.CraftUtility.EmblemGradient_ShowSwatchContainer( self, f15_arg0, f15_arg1, f15_arg2 )
+		elseif CoD.ModelUtility.IsModelValueEqualTo( controller, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
+			CoD.CraftUtility.EmblemGradient_ShowSwatchContainer( self, element, menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		if CoD.ModelUtility.IsModelValueEqualTo( f16_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f16_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsModelValueEqualTo( controller, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsModelValueEqualTo( f16_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f16_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif CoD.ModelUtility.IsModelValueEqualTo( controller, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -256,38 +256,38 @@ CoD.EmblemEditorColorMixer.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3, 
 		CoD.Menu.UpdateButtonShownState( element, f3_arg0, f3_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f19_local0
 	end )
-	f3_arg0:AddButtonCallbackFunction( greenBar, f3_arg1, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
-		CoD.CraftUtility.EmblemChooseColor_DecrementColorComponent( self, f20_arg0, f20_arg2, "green" )
+	f3_arg0:AddButtonCallbackFunction( greenBar, f3_arg1, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( element, menu, controller, model )
+		CoD.CraftUtility.EmblemChooseColor_DecrementColorComponent( self, element, controller, "green" )
 		PlaySoundSetSound( self, "manipulate_slider" )
 		return true
-	end, function ( f21_arg0, f21_arg1, f21_arg2 )
-		CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x57783F8DA4AAEF], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x57783F8DA4AAEF], "", nil, nil )
 		return false
 	end, false )
-	f3_arg0:AddButtonCallbackFunction( greenBar, f3_arg1, Enum.LUIButton[0x571F08AD84807E0], nil, function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
-		CoD.CraftUtility.EmblemChooseColor_IncrementColorComponent( self, f22_arg0, f22_arg2, "green" )
+	f3_arg0:AddButtonCallbackFunction( greenBar, f3_arg1, Enum.LUIButton[0x571F08AD84807E0], nil, function ( element, menu, controller, model )
+		CoD.CraftUtility.EmblemChooseColor_IncrementColorComponent( self, element, controller, "green" )
 		PlaySoundSetSound( self, "manipulate_slider" )
 		return true
-	end, function ( f23_arg0, f23_arg1, f23_arg2 )
-		CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x571F08AD84807E0], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x571F08AD84807E0], "", nil, nil )
 		return false
 	end, false )
-	f3_arg0:AddButtonCallbackFunction( greenBar, f3_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f24_arg0, f24_arg1, f24_arg2, f24_arg3 )
-		if CoD.ModelUtility.IsModelValueEqualTo( f24_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f24_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.CraftUtility.EmblemGradient_BackFromColorPicker( self, f24_arg0, f24_arg1, f24_arg2 )
+	f3_arg0:AddButtonCallbackFunction( greenBar, f3_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsModelValueEqualTo( controller, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
+			CoD.CraftUtility.EmblemGradient_BackFromColorPicker( self, element, menu, controller )
 			return true
-		elseif CoD.ModelUtility.IsModelValueEqualTo( f24_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f24_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.CraftUtility.EmblemGradient_ShowSwatchContainer( self, f24_arg0, f24_arg1, f24_arg2 )
+		elseif CoD.ModelUtility.IsModelValueEqualTo( controller, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
+			CoD.CraftUtility.EmblemGradient_ShowSwatchContainer( self, element, menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f25_arg0, f25_arg1, f25_arg2 )
-		if CoD.ModelUtility.IsModelValueEqualTo( f25_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f25_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsModelValueEqualTo( controller, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsModelValueEqualTo( f25_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f25_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif CoD.ModelUtility.IsModelValueEqualTo( controller, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -321,38 +321,38 @@ CoD.EmblemEditorColorMixer.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3, 
 		CoD.Menu.UpdateButtonShownState( element, f3_arg0, f3_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f28_local0
 	end )
-	f3_arg0:AddButtonCallbackFunction( blueBar, f3_arg1, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( f29_arg0, f29_arg1, f29_arg2, f29_arg3 )
-		CoD.CraftUtility.EmblemChooseColor_DecrementColorComponent( self, f29_arg0, f29_arg2, "blue" )
+	f3_arg0:AddButtonCallbackFunction( blueBar, f3_arg1, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( element, menu, controller, model )
+		CoD.CraftUtility.EmblemChooseColor_DecrementColorComponent( self, element, controller, "blue" )
 		PlaySoundSetSound( self, "manipulate_slider" )
 		return true
-	end, function ( f30_arg0, f30_arg1, f30_arg2 )
-		CoD.Menu.SetButtonLabel( f30_arg1, Enum.LUIButton[0x57783F8DA4AAEF], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x57783F8DA4AAEF], "", nil, nil )
 		return false
 	end, false )
-	f3_arg0:AddButtonCallbackFunction( blueBar, f3_arg1, Enum.LUIButton[0x571F08AD84807E0], nil, function ( f31_arg0, f31_arg1, f31_arg2, f31_arg3 )
-		CoD.CraftUtility.EmblemChooseColor_IncrementColorComponent( self, f31_arg0, f31_arg2, "blue" )
+	f3_arg0:AddButtonCallbackFunction( blueBar, f3_arg1, Enum.LUIButton[0x571F08AD84807E0], nil, function ( element, menu, controller, model )
+		CoD.CraftUtility.EmblemChooseColor_IncrementColorComponent( self, element, controller, "blue" )
 		PlaySoundSetSound( self, "manipulate_slider" )
 		return true
-	end, function ( f32_arg0, f32_arg1, f32_arg2 )
-		CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x571F08AD84807E0], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x571F08AD84807E0], "", nil, nil )
 		return false
 	end, false )
-	f3_arg0:AddButtonCallbackFunction( blueBar, f3_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f33_arg0, f33_arg1, f33_arg2, f33_arg3 )
-		if CoD.ModelUtility.IsModelValueEqualTo( f33_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f33_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.CraftUtility.EmblemGradient_BackFromColorPicker( self, f33_arg0, f33_arg1, f33_arg2 )
+	f3_arg0:AddButtonCallbackFunction( blueBar, f3_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsModelValueEqualTo( controller, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
+			CoD.CraftUtility.EmblemGradient_BackFromColorPicker( self, element, menu, controller )
 			return true
-		elseif CoD.ModelUtility.IsModelValueEqualTo( f33_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f33_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.CraftUtility.EmblemGradient_ShowSwatchContainer( self, f33_arg0, f33_arg1, f33_arg2 )
+		elseif CoD.ModelUtility.IsModelValueEqualTo( controller, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
+			CoD.CraftUtility.EmblemGradient_ShowSwatchContainer( self, element, menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f34_arg0, f34_arg1, f34_arg2 )
-		if CoD.ModelUtility.IsModelValueEqualTo( f34_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( f34_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsModelValueEqualTo( controller, "Emblem.EmblemProperties.isGradientMode", 1 ) and not CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsModelValueEqualTo( f34_arg2, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f34_arg2, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
-			CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif CoD.ModelUtility.IsModelValueEqualTo( controller, "Emblem.EmblemProperties.isGradientMode", 1 ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Emblem.EmblemProperties.colorMode", Enum.CustomizationColorMode[0x8F7F4A0A6A3678B] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -392,7 +392,7 @@ CoD.EmblemEditorColorMixer.new = function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3, 
 			modelName = "LastInput"
 		} )
 	end, false )
-	toggleSolidColorButton.label:setText( Engine[0xF9F1239CFD921FE]( 0xC01001B9AF5D45E ) )
+	toggleSolidColorButton.label:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_toggle_to_solid_fill" ) )
 	toggleSolidColorButton:subscribeToGlobalModel( f3_arg1, "Controller", "back_button_image", function ( model )
 		local f39_local0 = model:get()
 		if f39_local0 ~= nil then

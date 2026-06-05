@@ -31,7 +31,7 @@ CoD.ArenaProgressWidgetRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local TeamText = LUI.UIText.new( 0, 0, 424, 624, 0, 0, 0, 25 )
 	TeamText:setRGB( 0.92, 0.92, 0.92 )
-	TeamText:setText( LocalizeToUpperString( 0x3370355189B42A7 ) )
+	TeamText:setText( LocalizeToUpperString( "arena/rank" ) )
 	TeamText:setTTF( "ttmussels_demibold" )
 	TeamText:setLetterSpacing( 2 )
 	TeamText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

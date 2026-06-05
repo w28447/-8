@@ -122,7 +122,7 @@ LUI.createMenu.AAR_T8_Arena = function ( f1_arg0, f1_arg1 )
 	self.StageNotificationContainer = StageNotificationContainer
 	
 	local CommonHeader = CoD.CommonHeader.new( f1_local1, f1_arg0, 0, 0, 0, 1920, 0, 0, 0, 67 )
-	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0xEEF90B1483C4C23 ) )
+	CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "mpui/aar_caps" ) )
 	CommonHeader.subtitle.subtitle:setAlpha( 0 )
 	CommonHeader:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f10_local0 = model:get()
@@ -232,47 +232,47 @@ LUI.createMenu.AAR_T8_Arena = function ( f1_arg0, f1_arg1 )
 	f1_local16( f1_local15, f1_local17["lobbyRoot.lobbyNav"], function ( f18_arg0, f18_arg1 )
 		CoD.Menu.UpdateButtonShownState( f18_arg1, f1_local1, f1_arg0, Enum.LUIButton[0xC083113BC81F23F] )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ui_confirm", function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ui_confirm", function ( element, menu, controller, model )
 		if not IsPC() then
-			CoD.AnalyticsUtility.GoBackAndShowMatchSurveyIfNecessary( f19_arg1, f19_arg2 )
-			MenuUnhideFreeCursor( f19_arg1, f19_arg2 )
+			CoD.AnalyticsUtility.GoBackAndShowMatchSurveyIfNecessary( menu, controller )
+			MenuUnhideFreeCursor( menu, controller )
 			return true
 		elseif IsPC() then
-			CoD.AnalyticsUtility.GoBackAndShowMatchSurveyIfNecessary( f19_arg1, f19_arg2 )
-			MenuUnhideFreeCursor( f19_arg1, f19_arg2 )
+			CoD.AnalyticsUtility.GoBackAndShowMatchSurveyIfNecessary( menu, controller )
+			MenuUnhideFreeCursor( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f20_arg0, f20_arg1, f20_arg2 )
+	end, function ( element, menu, controller )
 		if not IsPC() then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xE4E038F4690D38D, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/done_caps", nil, "ui_confirm" )
 			return true
 		elseif IsPC() then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x93AB4C84F113EE1], "ESCAPE", function ( f21_arg0, f21_arg1, f21_arg2, f21_arg3 )
-		CoD.AnalyticsUtility.GoBackAndShowMatchSurveyIfNecessary( f21_arg1, f21_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x93AB4C84F113EE1], "ESCAPE", function ( element, menu, controller, model )
+		CoD.AnalyticsUtility.GoBackAndShowMatchSurveyIfNecessary( menu, controller )
 		return true
-	end, function ( f22_arg0, f22_arg1, f22_arg2 )
-		CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0x93AB4C84F113EE1], 0x0, nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x93AB4C84F113EE1], "", nil, "ESCAPE" )
 		return false
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_1", function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
-		if IsLobbyNetworkModeLive() and not IsRecentGameBookmarked( f23_arg2 ) then
-			FileshareBookmarkRecentGame( f23_arg2 )
-			UpdateButtonPromptState( f23_arg1, f23_arg0, f23_arg2, Enum.LUIButton[0xC083113BC81F23F] )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_1", function ( element, menu, controller, model )
+		if IsLobbyNetworkModeLive() and not IsRecentGameBookmarked( controller ) then
+			FileshareBookmarkRecentGame( controller )
+			UpdateButtonPromptState( menu, element, controller, Enum.LUIButton[0xC083113BC81F23F] )
 			return true
 		else
 			
 		end
-	end, function ( f24_arg0, f24_arg1, f24_arg2 )
-		if IsLobbyNetworkModeLive() and not IsRecentGameBookmarked( f24_arg2 ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x941662A2E0BF65E, nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if IsLobbyNetworkModeLive() and not IsRecentGameBookmarked( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/bookmark_game", nil, "ui_contextual_1" )
 			return true
 		else
 			return false

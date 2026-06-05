@@ -36,7 +36,7 @@ CoD.StartMenu_Options_SimpleCheckOption.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local Dash = LUI.UIImage.new( 0, 0, 18.5, 42.5, 0, 0, 18, 42 )
 	Dash:setScale( 1.5, 1.5 )
-	Dash:setImage( RegisterImage( 0xEEB4FB140EAEAC ) )
+	Dash:setImage( RegisterImage( "uie_ui_menu_cac_allocation_pip_full" ) )
 	self:addElement( Dash )
 	self.Dash = Dash
 	
@@ -67,7 +67,7 @@ CoD.StartMenu_Options_SimpleCheckOption.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local Empty = LUI.UIImage.new( 0, 0, 11.5, 46.5, 0, 0, 12.5, 47.5 )
 	Empty:setScale( 0.67, 0.67 )
-	Empty:setImage( RegisterImage( 0xF53DA84C7B770BF ) )
+	Empty:setImage( RegisterImage( "uie_ui_menu_specialist_hub_selectbox_empty" ) )
 	Empty:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Empty )
 	self.Empty = Empty
@@ -88,7 +88,7 @@ CoD.StartMenu_Options_SimpleCheckOption.new = function ( f1_arg0, f1_arg1, f1_ar
 	local Glow = LUI.UIImage.new( 0, 0.06, 8, 8, 0, 0, -6.5, 66.5 )
 	Glow:setRGB( 0.88, 0.8, 0.45 )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0x1078C36A022A4FE ) )
+	Glow:setImage( RegisterImage( "uie_t7_menu_cac_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow

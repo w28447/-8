@@ -25,8 +25,8 @@ CoD.vhud_gunship_105mm_ammocounter.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	self.BackingFrame = BackingFrame
 	
 	local AmmoCounterInternal = CoD.vhud_gunship_ammo_count_internal.new( f1_arg0, f1_arg1, 0.5, 0.5, -26, 28, 0.4, 0.4, -32, 42 )
-	AmmoCounterInternal.ammoBack:setImage( RegisterImage( 0xD439694D568A062 ) )
-	AmmoCounterInternal.ammoFront:setImage( RegisterImage( 0xD439694D568A062 ) )
+	AmmoCounterInternal.ammoBack:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_105mm_icon" ) )
+	AmmoCounterInternal.ammoFront:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_105mm_icon" ) )
 	AmmoCounterInternal.ammoFront.__ammoFront_Wipe_X_Start_X_End_Y_Start_Y_End = function ( f4_arg0 )
 		local f4_local0 = f4_arg0:get()
 		if f4_local0 ~= nil then

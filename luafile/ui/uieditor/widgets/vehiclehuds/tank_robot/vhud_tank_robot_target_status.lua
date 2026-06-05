@@ -29,7 +29,7 @@ CoD.vhud_tank_robot_target_status.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.TargetIdentified = TargetIdentified
 	
 	local TargetLocked = LUI.UIText.new( 0, 0, 0.5, 300.5, 0, 0, 57, 89 )
-	TargetLocked:setText( Engine[0xF9F1239CFD921FE]( 0xD2DCC0FA9B3BC61 ) )
+	TargetLocked:setText( Engine[0xF9F1239CFD921FE]( "mpui/target_locked" ) )
 	TargetLocked:setTTF( "ttmussels_regular" )
 	TargetLocked:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	TargetLocked:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

@@ -10,7 +10,7 @@ CoD.CommonGlowFlickerAnim.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local GlowLarge01 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	GlowLarge01:setRGB( 1, 0.35, 0 )
-	GlowLarge01:setImage( RegisterImage( 0x3A09C1C0B8DFF4D ) )
+	GlowLarge01:setImage( RegisterImage( "uie_ui_menu_common_radial_glow_large" ) )
 	GlowLarge01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	GlowLarge01:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( GlowLarge01 )
@@ -18,7 +18,7 @@ CoD.CommonGlowFlickerAnim.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local GlowLarge02 = LUI.UIImage.new( 0, 1, 40, -40, 0, 1, 40, -40 )
 	GlowLarge02:setRGB( 1, 0.93, 0.4 )
-	GlowLarge02:setImage( RegisterImage( 0x3A09C1C0B8DFF4D ) )
+	GlowLarge02:setImage( RegisterImage( "uie_ui_menu_common_radial_glow_large" ) )
 	GlowLarge02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	GlowLarge02:setShaderVector( 0, 1.25, 0, 0, 0 )
 	self:addElement( GlowLarge02 )

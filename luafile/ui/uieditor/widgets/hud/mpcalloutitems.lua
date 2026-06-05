@@ -23,7 +23,7 @@ CoD.MPCalloutItems.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	self.BGDarkening = BGDarkening
 	
 	local CenterCircle = LUI.UIImage.new( 0.5, 0.5, -78, 78, 0.5, 0.5, -78, 78 )
-	CenterCircle:setImage( RegisterImage( 0x9795F40414AD24A ) )
+	CenterCircle:setImage( RegisterImage( "uie_ui_hud_radial_menu_center_circle" ) )
 	CenterCircle:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	CenterCircle:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( CenterCircle )
@@ -71,16 +71,16 @@ CoD.MPCalloutItems.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( emptyFocusable, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
+	f1_arg0:AddButtonCallbackFunction( emptyFocusable, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsPC() then
-			SetElementState( self, self, f5_arg2, "DefaultState" )
+			SetElementState( self, self, controller, "DefaultState" )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

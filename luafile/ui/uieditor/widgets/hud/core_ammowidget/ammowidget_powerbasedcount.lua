@@ -83,7 +83,7 @@ CoD.AmmoWidget_PowerBasedCount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 			modelName = "clipMaxAmmo"
 		} )
 	end )
-	pipx2.Image:setImage( RegisterImage( 0x78EFD6D25F6ECDF ) )
+	pipx2.Image:setImage( RegisterImage( "uie_hud_core_loadout_reservebar" ) )
 	pipx2:linkToElementModel( self, nil, false, function ( model )
 		pipx2:setModel( model, f1_arg1 )
 	end )
@@ -123,7 +123,7 @@ CoD.AmmoWidget_PowerBasedCount.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 			modelName = "clipMaxAmmo"
 		} )
 	end )
-	pipx3.Image:setImage( RegisterImage( 0x78EFD6D25F6ECDF ) )
+	pipx3.Image:setImage( RegisterImage( "uie_hud_core_loadout_reservebar" ) )
 	pipx3:linkToElementModel( self, nil, false, function ( model )
 		pipx3:setModel( model, f1_arg1 )
 	end )

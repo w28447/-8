@@ -26,7 +26,7 @@ CoD.MedalPreviewWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0.02, 0.02, -9.5, 540.5, 0.31, 0.31, -220, 492 )
 	PixelGridTiledBacking:setAlpha( 0.07 )
-	PixelGridTiledBacking:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
@@ -110,28 +110,28 @@ CoD.MedalPreviewWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local DotPip = LUI.UIImage.new( 0, 0, 548, 552, 0, 0, 712, 716 )
 	DotPip:setAlpha( 0.5 )
-	DotPip:setImage( RegisterImage( 0x3854665C02218EF ) )
+	DotPip:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame_dot" ) )
 	DotPip:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPip )
 	self.DotPip = DotPip
 	
 	local DotPip2 = LUI.UIImage.new( 0, 0, -2, 2, 0, 0, 712, 716 )
 	DotPip2:setAlpha( 0.5 )
-	DotPip2:setImage( RegisterImage( 0x3854665C02218EF ) )
+	DotPip2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame_dot" ) )
 	DotPip2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPip2 )
 	self.DotPip2 = DotPip2
 	
 	local DotPip4 = LUI.UIImage.new( 0, 0, 548, 552, 0, 0, -2, 2 )
 	DotPip4:setAlpha( 0.5 )
-	DotPip4:setImage( RegisterImage( 0x3854665C02218EF ) )
+	DotPip4:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame_dot" ) )
 	DotPip4:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPip4 )
 	self.DotPip4 = DotPip4
 	
 	local DotPip3 = LUI.UIImage.new( 0, 0, -2, 2, 0, 0, -2, 2 )
 	DotPip3:setAlpha( 0.5 )
-	DotPip3:setImage( RegisterImage( 0x3854665C02218EF ) )
+	DotPip3:setImage( RegisterImage( "uie_ui_menu_specialist_hub_bot_frame_dot" ) )
 	DotPip3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotPip3 )
 	self.DotPip3 = DotPip3

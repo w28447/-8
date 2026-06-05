@@ -45,7 +45,7 @@ LUI.createMenu.AARMissionRewardOverlay = function ( f1_arg0, f1_arg1 )
 	local AmbientCornerR = LUI.UIImage.new( 0.5, 0.5, 960, 850, 0, 0, 689, 799 )
 	AmbientCornerR:setAlpha( 0.2 )
 	AmbientCornerR:setZRot( -180 )
-	AmbientCornerR:setImage( RegisterImage( 0xD87B290C1BEDDA0 ) )
+	AmbientCornerR:setImage( RegisterImage( "uie_ui_menu_aar_levelup_ambientcorner" ) )
 	AmbientCornerR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( AmbientCornerR )
 	self.AmbientCornerR = AmbientCornerR
@@ -131,23 +131,23 @@ LUI.createMenu.AARMissionRewardOverlay = function ( f1_arg0, f1_arg1 )
 			CharacterUnlocked:setText( LocalizeToUpperString( f8_local0 ) )
 		end
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		CoD.AARUtility.CloseMissionRewardOverlay( f9_arg1, f9_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		CoD.AARUtility.CloseMissionRewardOverlay( menu, controller )
 		return true
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
 		if IsPC() then
-			CoD.AARUtility.CloseMissionRewardOverlay( f11_arg1, f11_arg2 )
+			CoD.AARUtility.CloseMissionRewardOverlay( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false

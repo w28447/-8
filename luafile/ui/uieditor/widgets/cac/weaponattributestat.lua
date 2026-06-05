@@ -12,7 +12,7 @@ CoD.WeaponAttributeStat.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local attributeName = LUI.UIText.new( 0, 0, -5, 139, 0, 0, 0, 18 )
 	attributeName:setRGB( 0.39, 0.39, 0.39 )
-	attributeName:setText( LocalizeToUpperString( 0xF669512DF581896 ) )
+	attributeName:setText( LocalizeToUpperString( "menu/accuracy_caps" ) )
 	attributeName:setTTF( "ttmussels_regular" )
 	attributeName:setLetterSpacing( 6 )
 	attributeName:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )

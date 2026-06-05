@@ -4,12 +4,12 @@ CoD.WeaponAttachmentsUtility.ContainerPadding = 25
 CoD.WeaponAttachmentsUtility.UberAttachmentPadding = 20
 CoD.WeaponAttachmentsUtility.WeaponAttachmentListTable = {
 	primary = {
-		weaponRefHash = 0x0,
+		weaponRefHash = "",
 		attachmentList = {},
 		isArenaMode = false
 	},
 	secondary = {
-		weaponRefHash = 0x0,
+		weaponRefHash = "",
 		attachmentList = {},
 		isArenaMode = false
 	}
@@ -17,7 +17,7 @@ CoD.WeaponAttachmentsUtility.WeaponAttachmentListTable = {
 CoD.WeaponAttachmentsUtility.WeaponAttachmentGroupNames = {
 	{
 		attachmentGroup = Enum[0x7420BCDBDE17A84][0x6AC43DB9B6634DA],
-		name = 0x13BE4995FD8DBF8
+		name = "mpui/attachment_group_optic"
 	},
 	{
 		attachmentGroup = Enum[0x7420BCDBDE17A84][0x2FDACB5DC7958DD],
@@ -40,7 +40,7 @@ CoD.WeaponAttachmentsUtility.AttachmentTierType = LuaEnum.createEnum( "NONE", "B
 CoD.WeaponAttachmentsUtility.GetBaseAttachmentRef = function ( f1_arg0, f1_arg1 )
 	if f1_arg1 and f1_arg0.attachmentUpgrades then
 		for f1_local3, f1_local4 in ipairs( f1_arg0.attachmentUpgrades ) do
-			if f1_local4[0xBF43C7495E3788C] == f1_arg1 then
+			if f1_local4.upgradedattachment == f1_arg1 then
 				return f1_local4[0x7EB5A64A49DE165]
 			end
 		end
@@ -51,7 +51,7 @@ CoD.WeaponAttachmentsUtility.GetUpgradedAttachmentRef = function ( f2_arg0, f2_a
 	if f2_arg1 and f2_arg0.attachmentUpgrades then
 		for f2_local3, f2_local4 in ipairs( f2_arg0.attachmentUpgrades ) do
 			if f2_local4[0x7EB5A64A49DE165] == f2_arg1 then
-				return f2_local4[0xBF43C7495E3788C]
+				return f2_local4.upgradedattachment
 			end
 		end
 	end
@@ -94,15 +94,15 @@ end
 
 CoD.WeaponAttachmentsUtility.GetAttachmentCautionText = function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3, f9_arg4, f9_arg5 )
 	local f9_local0 = f9_arg1.classNum:get()
-	local f9_local1 = 0x0
+	local f9_local1 = ""
 	local f9_local2 = CoD.CACUtility.GetMutuallyExclusiveAttachments( f9_arg0, f9_local0, f9_arg2, f9_arg4, f9_arg5 )
 	if #f9_local2 > 0 then
 		local f9_local3 = Engine.GetItemAttachment( f9_arg3, f9_local2[1].attachmentIndex, f9_arg5 )
 		if not Engine.IsOptic( f9_arg3, f9_arg4 ) or not Engine.IsOptic( f9_arg3, f9_local2[1].attachmentIndex ) then
 			if Engine[0x37522AE910C327]( f9_local3, f9_arg5 ) == Enum[0x7420BCDBDE17A84][0x6EE211053211305] then
-				f9_local1 = 0x91F59C33FE184A9
+				f9_local1 = "menu/removes_uber"
 			else
-				f9_local1 = 0x73A7619DEA60089
+				f9_local1 = "menu/removes_attachments"
 			end
 		end
 	end
@@ -244,7 +244,7 @@ CoD.WeaponAttachmentsUtility.GetWeaponAttachmentAttributes = function ( f14_arg0
 	local f14_local2 = Engine[0xB98952F69D937F9]( f14_arg0, Enum[0x6EB546760F890D2][0x569E84652131CD7], f14_arg2 )
 	local f14_local3 = CoD.CACUtility.GetUnlockableItemInfo( f14_arg0, f14_arg2 )
 	local f14_local4 = f14_local3.attributesTable
-	if f14_local3.attributesTableZM and f14_arg2 == Enum.eModes[0x3723205FAE52C4A] then
+	if f14_local3.attributesTableZM and f14_arg2 == Enum.eModes.mode_zombies then
 		f14_local4 = f14_local3.attributesTableZM
 	end
 	local f14_local5 = function ( f15_arg0, f15_arg1 )
@@ -271,8 +271,8 @@ CoD.WeaponAttachmentsUtility.GetWeaponAttachmentAttributes = function ( f14_arg0
 		accuracy = f14_local5( "accuracy", Enum.WeaponAttributesColumn[0x295ABB48F2C6284] ),
 		magCount = 0,
 		magSize = 0,
-		uberName = 0x0,
-		uberImage = 0x0
+		uberName = "",
+		uberImage = ""
 	}
 	local f14_local7 = LUI.ShallowCopy( f14_arg3 )
 	for f14_local11, f14_local12 in ipairs( f14_arg3 ) do
@@ -281,7 +281,7 @@ CoD.WeaponAttachmentsUtility.GetWeaponAttachmentAttributes = function ( f14_arg0
 			break
 		end
 	end
-	if f14_arg2 == Enum.eModes[0x3723205FAE52C4A] then
+	if f14_arg2 == Enum.eModes.mode_zombies then
 		if #f14_local7 < CoD.ZMLoadoutUtility.MaxArmoryAttachments then
 			table.insert( f14_local7, f14_arg1 )
 		end
@@ -404,7 +404,7 @@ CoD.WeaponAttachmentsUtility.GetWeaponAttachmentList = function ( f18_arg0, f18_
 			elseif f18_local27 then
 				f18_local30 = CoD.AttachmentUpgradeSlotContainer
 			elseif f18_local28 then
-				if f18_local2 == Enum.eModes[0x83EBA96F36BC4E5] then
+				if f18_local2 == Enum.eModes.mode_multiplayer then
 					f18_local30 = CoD.WeaponAttachmentsUtility.GetUberAttachmentWidget
 				else
 					f18_local30 = CoD.UberAttachmentSlot
@@ -787,7 +787,7 @@ CoD.WeaponAttachmentsUtility.SetupUberHintText = function ( f37_arg0, f37_arg1, 
 	local f37_local4 = CoD.WeaponAttachmentsUtility.CanEquipUberAttachmentInSlot( f37_arg0 )
 	if f37_local0 then
 		local f37_local5 = CoD.BonuscardUtility.IsOperatorModBonuscardEquipped( f37_local0, f37_local2, f37_local1 )
-		local f37_local6 = 0x0
+		local f37_local6 = ""
 		if not f37_local5 then
 			f37_local6 = 0x7A1F89C3CFA8A86
 			if f37_local2 == "secondary" then
@@ -895,7 +895,7 @@ end
 CoD.WeaponAttachmentsUtility.UpdateAttachmentHeader = function ( f45_arg0, f45_arg1 )
 	local f45_local0 = CoD.BaseUtility.GetMenuAttachmentFilter( f45_arg0 )
 	if f45_local0 == "optic" then
-		f45_arg1 = 0xBB87386985BA15F
+		f45_arg1 = "mpui/optics_caps"
 	elseif f45_local0 == "uber" then
 		f45_arg1 = 0x912DE50663D611C
 	end

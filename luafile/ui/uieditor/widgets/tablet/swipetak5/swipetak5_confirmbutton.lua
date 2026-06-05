@@ -34,7 +34,7 @@ CoD.SwipeTak5_ConfirmButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.BgStripeColor = BgStripeColor
 	
 	local ConfirmText = LUI.UIText.new( 0, 0, 22.5, 277.5, 0, 0, 41.5, 59.5 )
-	ConfirmText:setText( Engine[0xF9F1239CFD921FE]( 0x349737B0BDAA763 ) )
+	ConfirmText:setText( Engine[0xF9F1239CFD921FE]( "menu/confirm_caps" ) )
 	ConfirmText:setTTF( "0arame_mono_stencil" )
 	ConfirmText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	ConfirmText:setLetterSpacing( 4 )
@@ -46,7 +46,7 @@ CoD.SwipeTak5_ConfirmButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local ConfirmTextColor = LUI.UIText.new( 0, 0, 22.5, 277.5, 0, 0, 41.5, 59.5 )
 	ConfirmTextColor:setRGB( 1, 0.8, 0 )
 	ConfirmTextColor:setAlpha( 0 )
-	ConfirmTextColor:setText( Engine[0xF9F1239CFD921FE]( 0x349737B0BDAA763 ) )
+	ConfirmTextColor:setText( Engine[0xF9F1239CFD921FE]( "menu/confirm_caps" ) )
 	ConfirmTextColor:setTTF( "0arame_mono_stencil" )
 	ConfirmTextColor:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	ConfirmTextColor:setLetterSpacing( 4 )
@@ -57,7 +57,7 @@ CoD.SwipeTak5_ConfirmButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local ConfirmTextAdd = LUI.UIText.new( 0, 0, 22.5, 277.5, 0, 0, 41.5, 59.5 )
 	ConfirmTextAdd:setAlpha( 0 )
-	ConfirmTextAdd:setText( Engine[0xF9F1239CFD921FE]( 0x349737B0BDAA763 ) )
+	ConfirmTextAdd:setText( Engine[0xF9F1239CFD921FE]( "menu/confirm_caps" ) )
 	ConfirmTextAdd:setTTF( "0arame_mono_stencil" )
 	ConfirmTextAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x336C1AE82B1520A ) )
 	ConfirmTextAdd:setLetterSpacing( 4 )
@@ -85,7 +85,7 @@ CoD.SwipeTak5_ConfirmButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.ConfirmButtonFrameColor = ConfirmButtonFrameColor
 	
 	local ButtonBarR = LUI.UIImage.new( 0, 0, 249.5, 257.5, 0, 0, 32, 68 )
-	ButtonBarR:setImage( RegisterImage( 0xDED648CCEF05DFC ) )
+	ButtonBarR:setImage( RegisterImage( "uie_ui_hud_tak5_confirmation_button_bar" ) )
 	ButtonBarR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ButtonBarR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ButtonBarR )
@@ -94,7 +94,7 @@ CoD.SwipeTak5_ConfirmButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local ButtonBarRColor = LUI.UIImage.new( 0, 0, 249.5, 257.5, 0, 0, 32, 68 )
 	ButtonBarRColor:setRGB( 1, 0.8, 0 )
 	ButtonBarRColor:setAlpha( 0 )
-	ButtonBarRColor:setImage( RegisterImage( 0xDED648CCEF05DFC ) )
+	ButtonBarRColor:setImage( RegisterImage( "uie_ui_hud_tak5_confirmation_button_bar" ) )
 	ButtonBarRColor:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	ButtonBarRColor:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ButtonBarRColor )
@@ -102,7 +102,7 @@ CoD.SwipeTak5_ConfirmButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local ButtonBarL = LUI.UIImage.new( 0, 0, 42, 50, 0, 0, 32, 68 )
 	ButtonBarL:setZRot( 180 )
-	ButtonBarL:setImage( RegisterImage( 0xDED648CCEF05DFC ) )
+	ButtonBarL:setImage( RegisterImage( "uie_ui_hud_tak5_confirmation_button_bar" ) )
 	ButtonBarL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ButtonBarL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ButtonBarL )
@@ -112,7 +112,7 @@ CoD.SwipeTak5_ConfirmButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	ButtonBarLColor:setRGB( 1, 0.8, 0 )
 	ButtonBarLColor:setAlpha( 0 )
 	ButtonBarLColor:setZRot( 180 )
-	ButtonBarLColor:setImage( RegisterImage( 0xDED648CCEF05DFC ) )
+	ButtonBarLColor:setImage( RegisterImage( "uie_ui_hud_tak5_confirmation_button_bar" ) )
 	ButtonBarLColor:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	ButtonBarLColor:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ButtonBarLColor )
@@ -120,7 +120,7 @@ CoD.SwipeTak5_ConfirmButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	self:subscribeToGlobalModel( f1_arg1, "PerController", "scriptNotify", function ( model )
 		local f2_local0 = self
-		if CoD.ModelUtility.IsParamModelEqualToHashString( model, 0xC27B5E4F3724EA3 ) then
+		if CoD.ModelUtility.IsParamModelEqualToHashString( model, "localheal_fire" ) then
 			PlayClip( self, "ButtonPress", f1_arg1 )
 		end
 	end )

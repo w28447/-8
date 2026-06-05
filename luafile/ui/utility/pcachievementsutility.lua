@@ -1,12 +1,12 @@
 CoD.PCAchievementsUtility = {}
 CoD.PCAchievementsUtility.CreatePCAchievementTable = function ( f1_arg0, f1_arg1 )
-	local f1_local0 = f1_arg1[0xD885806B56289E]
+	local f1_local0 = f1_arg1.enabled
 	local f1_local1 = {}
 	local f1_local2 = {
-		name = f1_arg1[0xA31296C0C1B6029],
-		desc = f1_arg1["description"],
-		image = f1_arg1[0xAB612888528489A],
-		score = f1_arg1[0x10E63FBE7F624F5],
+		name = f1_arg1.title,
+		desc = f1_arg1.description,
+		image = f1_arg1.image,
+		score = f1_arg1.score,
 		maxValue = 1
 	}
 	local f1_local3

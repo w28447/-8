@@ -1,11 +1,11 @@
 CoD.TeamUtility = {}
 CoD.TeamUtility.TeamName = {}
 CoD.TeamUtility.TeamName[Enum.team_t[0x97263B3C1ABADF7]] = "mpui/autoassign"
-CoD.TeamUtility.TeamName[Enum.team_t[0xBD65CBD25CCBEDC]] = 0x75AD55270B8D7CE
+CoD.TeamUtility.TeamName[Enum.team_t[0xBD65CBD25CCBEDC]] = "mpui/neutral"
 CoD.TeamUtility.TeamName[Enum.team_t[0xE4DDAC9C5C45556]] = "mpui/shoutcaster"
 if not CoD.isMultiplayer then
-	CoD.TeamUtility.TeamName[Enum.team_t[0xBD65CBD25CCBEDC]] = 0x75AD55270B8D7CE
-	CoD.TeamUtility.TeamName[Enum.team_t[0x855F9A6F0EA0143]] = 0xE283EA5896DD5A6
+	CoD.TeamUtility.TeamName[Enum.team_t[0xBD65CBD25CCBEDC]] = "mpui/neutral"
+	CoD.TeamUtility.TeamName[Enum.team_t[0x855F9A6F0EA0143]] = "game/dead"
 end
 CoD.TeamUtility.GetTeam = function ( f1_arg0 )
 	if IsCodCaster( f1_arg0 ) then
@@ -54,9 +54,9 @@ end
 
 CoD.TeamUtility.GetDefaultCodCasterTeamName = function ( f5_arg0 )
 	if f5_arg0 == "team2" then
-		return Engine[0xF9F1239CFD921FE]( 0x39A9E427416E0C7 )
+		return Engine[0xF9F1239CFD921FE]( "codcaster/team2" )
 	else
-		return Engine[0xF9F1239CFD921FE]( 0x39A9F427416E27A )
+		return Engine[0xF9F1239CFD921FE]( "codcaster/team1" )
 	end
 end
 
@@ -131,18 +131,18 @@ end
 CoD.TeamUtility.GetDefaultTeamName = function ( f12_arg0 )
 	if IsMultiplayer() then
 		if f12_arg0 == Enum.team_t[0x2A34B055ADD98AB] then
-			return 0xC815AF97EE8C135
+			return "mpui/allies"
 		elseif f12_arg0 == Enum.team_t[0x3F83D7CE4BD7B68] then
-			return 0x12BD5927860415A
+			return "mpui/axis"
 		end
 	elseif IsCampaign() then
 		if f12_arg0 == Enum.team_t[0x2A34B055ADD98AB] then
-			return 0x2B048C5B8811227
+			return "cpui/allies"
 		elseif f12_arg0 == Enum.team_t[0x3F83D7CE4BD7B68] then
-			return 0x8223F843A2C25CC
+			return "cpui/axis"
 		end
 	end
-	return CoD.TeamUtility.TeamName[f12_arg0] or 0x0
+	return CoD.TeamUtility.TeamName[f12_arg0] or ""
 end
 
 CoD.TeamUtility.TeamDevStringToEnumTable = {
@@ -160,35 +160,35 @@ end
 CoD.TeamUtility.GetDefaultTeamShortName = function ( f14_arg0 )
 	if IsMultiplayer() then
 		if f14_arg0 == Enum.team_t[0x2A34B055ADD98AB] then
-			return 0xEDCCEFE94375E18
+			return "mpui/allies_short"
 		elseif f14_arg0 == Enum.team_t[0x3F83D7CE4BD7B68] then
-			return 0xFFCFA8A74D3E077
+			return "mpui/axis_short"
 		end
 	elseif IsCampaign() then
 		if f14_arg0 == Enum.team_t[0x2A34B055ADD98AB] then
-			return 0x64A981F51DACF0A
+			return "cpui/allies_short"
 		elseif f14_arg0 == Enum.team_t[0x3F83D7CE4BD7B68] then
-			return 0x258ADD73950461
+			return "cpui/axis_short"
 		end
 	end
-	return CoD.TeamUtility.TeamName[f14_arg0] or 0x0
+	return CoD.TeamUtility.TeamName[f14_arg0] or ""
 end
 
 CoD.TeamUtility.GetDefaultTeamFactionDescription = function ( f15_arg0 )
 	if IsMultiplayer() then
 		if f15_arg0 == Enum.team_t[0x2A34B055ADD98AB] then
-			return 0xF61ADAF3651241F
+			return "mpui/allies_desc"
 		elseif f15_arg0 == Enum.team_t[0x3F83D7CE4BD7B68] then
-			return 0xA8BCD7E744625EA
+			return "mpui/axis_desc"
 		end
 	elseif IsCampaign() then
 		if f15_arg0 == Enum.team_t[0x2A34B055ADD98AB] then
-			return 0x712156435B5EBF9
+			return "cpui/allies_desc"
 		elseif f15_arg0 == Enum.team_t[0x3F83D7CE4BD7B68] then
-			return 0x2FED463C97B0434
+			return "cpui/axis_desc"
 		end
 	end
-	return CoD.TeamUtility.TeamName[f15_arg0] or 0x0
+	return CoD.TeamUtility.TeamName[f15_arg0] or ""
 end
 
 CoD.TeamUtility.GetDefaultTeamFactionColor = function ( f16_arg0 )
@@ -197,13 +197,13 @@ CoD.TeamUtility.GetDefaultTeamFactionColor = function ( f16_arg0 )
 		f16_local0 = ColorSet.FriendlyBlue
 	elseif f16_arg0 == Enum.team_t[0x3F83D7CE4BD7B68] then
 		f16_local0 = ColorSet.EnemyOrange
-	elseif f16_arg0 == Enum.team_t[0x51B2E92F4D8DAD7] then
+	elseif f16_arg0 == Enum.team_t.team_three then
 		f16_local0 = ColorSet.WarzoneCustomTeam3
-	elseif f16_arg0 == Enum.team_t[0x5CBEDB3D265E8F1] then
+	elseif f16_arg0 == Enum.team_t.team_four then
 		f16_local0 = ColorSet.WarzoneCustomTeam4
-	elseif f16_arg0 == Enum.team_t[0x49554B3DA0DA3E1] then
+	elseif f16_arg0 == Enum.team_t.team_five then
 		f16_local0 = ColorSet.WarzoneCustomTeam5
-	elseif f16_arg0 == Enum.team_t[0x7A0FCED35961F87] then
+	elseif f16_arg0 == Enum.team_t.team_six then
 		f16_local0 = ColorSet.WarzoneCustomTeam6
 	elseif f16_arg0 == Enum.team_t[0xE4DDAC9C5C45556] then
 		f16_local0 = ColorSet.CodCaster
@@ -298,10 +298,10 @@ end
 
 CoD.TeamUtility.GetTeamNameCaps = function ( f22_arg0 )
 	if Engine.GameModeIsMode( Enum.eGameModes[0x58ECA70A244C08F] ) then
-		if f22_arg0 == Enum.team_t[0x2A34B055ADD98AB] and Dvar[0x11512429BB852D5]:get() ~= "" then
-			return Engine.ToUpper( Dvar[0x11512429BB852D5]:get() )
-		elseif f22_arg0 == Enum.team_t[0x3F83D7CE4BD7B68] and Dvar[0x8BE7B1FE08578FA]:get() ~= "" then
-			return Engine.ToUpper( Dvar[0x8BE7B1FE08578FA]:get() )
+		if f22_arg0 == Enum.team_t[0x2A34B055ADD98AB] and Dvar.g_customteamname_allies:get() ~= "" then
+			return Engine.ToUpper( Dvar.g_customteamname_allies:get() )
+		elseif f22_arg0 == Enum.team_t[0x3F83D7CE4BD7B68] and Dvar.g_customteamname_axis:get() ~= "" then
+			return Engine.ToUpper( Dvar.g_customteamname_axis:get() )
 		end
 	end
 	if CoD.CodCasterUtility.IsCodCasterOrAssigned( Engine.GetPrimaryController() ) then
@@ -512,7 +512,7 @@ DataSources.InGamePlayerListRowData = DataSourceHelpers.ListSetup( "InGamePlayer
 	end
 	
 	local f39_local2 = {}
-	local f39_local3 = Engine.GetGametypeSetting( 0xDA4FB58A54E84D3 )
+	local f39_local3 = Engine.GetGametypeSetting( "teamcount" )
 	for f39_local4 = 1, f39_local3, 1 do
 		f39_local1( f39_arg0, f39_local2, f39_local4 )
 	end
@@ -524,7 +524,7 @@ DataSources.ChangeTeamOptions = DataSourceHelpers.ListSetup( "ChangeTeamOptions"
 		local f43_local1 = f43_arg1
 		if f43_arg4 ~= "" then
 			f43_local0 = 1
-			f43_local1 = 0x0
+			f43_local1 = ""
 		end
 		return {
 			models = {
@@ -581,9 +581,9 @@ DataSources.ChangeTeamOptions = DataSourceHelpers.ListSetup( "ChangeTeamOptions"
 	end
 	
 	local f42_local2 = {}
-	local f42_local3 = Engine.Team( f42_arg0, "index" )
+	local f42_local3 = Engine.team( f42_arg0, "index" )
 	local f42_local4
-	if Engine.GetGametypeSetting( 0xD623B3D91D904BA ) >= 1 and Engine.GetGametypeSetting( 0x1ECE5CAD71BF4EA ) == 1 then
+	if Engine.GetGametypeSetting( "spectatetype" ) >= 1 and Engine.GetGametypeSetting( "allowspectating" ) == 1 then
 		f42_local4 = not Engine.IsSplitscreen()
 	else
 		f42_local4 = false
@@ -612,21 +612,21 @@ DataSources.ChangeTeamOptions = DataSourceHelpers.ListSetup( "ChangeTeamOptions"
 	if CoDShared.IsGametypeTeamBased() == true and CoD.IsTeamChangeAllowed( f42_arg0 ) then
 		if f42_local3 ~= Enum.team_t[0x2A34B055ADD98AB] then
 			if f42_local1( f42_arg0, Enum.team_t[0x2A34B055ADD98AB] ) then
-				table.insert( f42_local2, f42_local0( f42_arg0, 0xC815AF97EE8C135, "allies", 0x17E759991A40568, CoD.TeamUtility.GetTeamFactionIcon( Enum.team_t[0x2A34B055ADD98AB] ), false ) )
+				table.insert( f42_local2, f42_local0( f42_arg0, "mpui/allies", "allies", 0x17E759991A40568, CoD.TeamUtility.GetTeamFactionIcon( Enum.team_t[0x2A34B055ADD98AB] ), false ) )
 			else
-				table.insert( f42_local2, f42_local0( f42_arg0, 0xC815AF97EE8C135, "allies", 0xA3EE0239CF6265D, CoD.TeamUtility.GetTeamFactionIcon( Enum.team_t[0x2A34B055ADD98AB] ), true ) )
+				table.insert( f42_local2, f42_local0( f42_arg0, "mpui/allies", "allies", 0xA3EE0239CF6265D, CoD.TeamUtility.GetTeamFactionIcon( Enum.team_t[0x2A34B055ADD98AB] ), true ) )
 			end
 		end
 		if f42_local3 ~= Enum.team_t[0x3F83D7CE4BD7B68] then
 			if f42_local1( f42_arg0, Enum.team_t[0x3F83D7CE4BD7B68] ) then
-				table.insert( f42_local2, f42_local0( f42_arg0, 0x12BD5927860415A, "axis", 0x6838CD03F01BF13, CoD.TeamUtility.GetTeamFactionIcon( Enum.team_t[0x3F83D7CE4BD7B68] ), false ) )
+				table.insert( f42_local2, f42_local0( f42_arg0, "mpui/axis", "axis", 0x6838CD03F01BF13, CoD.TeamUtility.GetTeamFactionIcon( Enum.team_t[0x3F83D7CE4BD7B68] ), false ) )
 			else
-				table.insert( f42_local2, f42_local0( f42_arg0, 0x12BD5927860415A, "axis", 0xA3EE0239CF6265D, CoD.TeamUtility.GetTeamFactionIcon( Enum.team_t[0x3F83D7CE4BD7B68] ), true ) )
+				table.insert( f42_local2, f42_local0( f42_arg0, "mpui/axis", "axis", 0xA3EE0239CF6265D, CoD.TeamUtility.GetTeamFactionIcon( Enum.team_t[0x3F83D7CE4BD7B68] ), true ) )
 			end
 		end
 	end
 	if CoDShared.IsGametypeTeamBased() == true or f42_local3 == Enum.team_t[0xE4DDAC9C5C45556] then
-		table.insert( f42_local2, f42_local0( f42_arg0, 0xAD8F376215AE5D7, "autoassign", 0x8BFAF5D14337A27, "" ) )
+		table.insert( f42_local2, f42_local0( f42_arg0, "mpui/autoassign_caps", "autoassign", "mpui/autoassign_desc", "" ) )
 	end
 	if f42_local3 ~= Enum.team_t[0xE4DDAC9C5C45556] and f42_local4 == true then
 		table.insert( f42_local2, f42_local0( f42_arg0, 0x79A28BE744E24FB, "spectator", 0xE6B92255B28A2BF, "", false ) )

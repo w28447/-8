@@ -8,7 +8,7 @@ CoD.DemoPlaybackControlsBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	self.soundSet = "none"
 	
 	local BGBlur = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	BGBlur:setImage( RegisterImage( 0x8FD6CEEA1F2AEEA ) )
+	BGBlur:setImage( RegisterImage( "uie_ui_hud_theater_playbackcontrol_backing" ) )
 	BGBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
 	BGBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BGBlur )
@@ -17,7 +17,7 @@ CoD.DemoPlaybackControlsBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local BGTint = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 176 )
 	BGTint:setRGB( 0, 0, 0 )
 	BGTint:setAlpha( 0.7 )
-	BGTint:setImage( RegisterImage( 0x8FD6CEEA1F2AEEA ) )
+	BGTint:setImage( RegisterImage( "uie_ui_hud_theater_playbackcontrol_backing" ) )
 	BGTint:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	BGTint:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( BGTint )
@@ -25,7 +25,7 @@ CoD.DemoPlaybackControlsBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0.5, 0.5, -470, 470, 0.5, 0.5, -69, 69 )
 	PixelGridTiledBacking:setAlpha( 0.15 )
-	PixelGridTiledBacking:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
@@ -34,7 +34,7 @@ CoD.DemoPlaybackControlsBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local FrameInnerTL = LUI.UIImage.new( 0.5, 0.5, -480, 0, 0.5, 0.5, -88, 0 )
 	FrameInnerTL:setAlpha( 0.8 )
-	FrameInnerTL:setImage( RegisterImage( 0x15BAED0FC792DA9 ) )
+	FrameInnerTL:setImage( RegisterImage( "uie_ui_hud_theater_playbackcontrol_frame_inner" ) )
 	self:addElement( FrameInnerTL )
 	self.FrameInnerTL = FrameInnerTL
 	
@@ -42,7 +42,7 @@ CoD.DemoPlaybackControlsBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	FrameInnerBL:setAlpha( 0.8 )
 	FrameInnerBL:setYRot( 180 )
 	FrameInnerBL:setZRot( 180 )
-	FrameInnerBL:setImage( RegisterImage( 0x15BAED0FC792DA9 ) )
+	FrameInnerBL:setImage( RegisterImage( "uie_ui_hud_theater_playbackcontrol_frame_inner" ) )
 	self:addElement( FrameInnerBL )
 	self.FrameInnerBL = FrameInnerBL
 	
@@ -55,13 +55,13 @@ CoD.DemoPlaybackControlsBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local FrameInnerBR = LUI.UIImage.new( 0.5, 0.5, 0, 480, 0.5, 0.5, 0, 88 )
 	FrameInnerBR:setAlpha( 0.8 )
 	FrameInnerBR:setZRot( 180 )
-	FrameInnerBR:setImage( RegisterImage( 0x15BAED0FC792DA9 ) )
+	FrameInnerBR:setImage( RegisterImage( "uie_ui_hud_theater_playbackcontrol_frame_inner" ) )
 	self:addElement( FrameInnerBR )
 	self.FrameInnerBR = FrameInnerBR
 	
 	local FrameOutterTL = LUI.UIImage.new( 0.5, 0.5, -480, 0, 0.5, 0.5, -88, 0 )
 	FrameOutterTL:setAlpha( 0.8 )
-	FrameOutterTL:setImage( RegisterImage( 0x927CBFFFB6EE834 ) )
+	FrameOutterTL:setImage( RegisterImage( "uie_ui_hud_theater_playbackcontrol_frame_outter" ) )
 	self:addElement( FrameOutterTL )
 	self.FrameOutterTL = FrameOutterTL
 	
@@ -74,7 +74,7 @@ CoD.DemoPlaybackControlsBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local FrameOutterBL = LUI.UIImage.new( 0.5, 0.5, -480, 0, 0.5, 0.5, 0, 88 )
 	FrameOutterBL:setAlpha( 0.8 )
 	FrameOutterBL:setXRot( 180 )
-	FrameOutterBL:setImage( RegisterImage( 0x927CBFFFB6EE834 ) )
+	FrameOutterBL:setImage( RegisterImage( "uie_ui_hud_theater_playbackcontrol_frame_outter" ) )
 	self:addElement( FrameOutterBL )
 	self.FrameOutterBL = FrameOutterBL
 	
@@ -82,7 +82,7 @@ CoD.DemoPlaybackControlsBackground.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	FrameOutterBR:setAlpha( 0.8 )
 	FrameOutterBR:setXRot( 180 )
 	FrameOutterBR:setYRot( 180 )
-	FrameOutterBR:setImage( RegisterImage( 0x927CBFFFB6EE834 ) )
+	FrameOutterBR:setImage( RegisterImage( "uie_ui_hud_theater_playbackcontrol_frame_outter" ) )
 	self:addElement( FrameOutterBR )
 	self.FrameOutterBR = FrameOutterBR
 	

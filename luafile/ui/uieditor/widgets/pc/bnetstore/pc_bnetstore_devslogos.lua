@@ -18,7 +18,7 @@ CoD.PC_BnetStore_DevsLogos.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local ActivisionLogo = LUI.UIFixedAspectRatioImage.new( 0, 0, 798.5, 905.5, 0, 0, 0, 25 )
 	ActivisionLogo:setRGB( 0.5, 0.5, 0.5 )
-	ActivisionLogo:setImage( RegisterImage( 0xB4BE6CEAA1DC218 ) )
+	ActivisionLogo:setImage( RegisterImage( "uie_pc_bnetstore_activisionlogo" ) )
 	self:addElement( ActivisionLogo )
 	self.ActivisionLogo = ActivisionLogo
 	
@@ -32,7 +32,7 @@ CoD.PC_BnetStore_DevsLogos.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local TreyarchLogo = LUI.UIFixedAspectRatioImage.new( 0, 0, 1023.5, 1118.5, 0, 0, 0, 25 )
 	TreyarchLogo:setRGB( 0.5, 0.5, 0.5 )
-	TreyarchLogo:setImage( RegisterImage( 0x4EF201984658EE7 ) )
+	TreyarchLogo:setImage( RegisterImage( "uie_pc_bnetstore_treyarchlogo" ) )
 	self:addElement( TreyarchLogo )
 	self.TreyarchLogo = TreyarchLogo
 	

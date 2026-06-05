@@ -37,25 +37,25 @@ CoD.GridAndListUtility.DoBumperGridButtonAction = function ( f1_arg0, f1_arg1, f
 end
 
 CoD.GridAndListUtility.AddKeyboardGridTabNavigationInternal = function ( f2_arg0, f2_arg1, f2_arg2, f2_arg3, f2_arg4 )
-	f2_arg0:AddButtonCallbackFunction( f2_arg0, f2_arg2, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_prevtab", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		if f2_arg4 and not f2_arg4( f3_arg2 ) then
+	f2_arg0:AddButtonCallbackFunction( f2_arg0, f2_arg2, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_prevtab", function ( element, menu, controller, model )
+		if f2_arg4 and not f2_arg4( controller ) then
 			return 
-		elseif f3_arg1.m_disableGridNavigation then
+		elseif menu.m_disableGridNavigation then
 			return 
 		elseif not f2_arg1.m_disableNavigation and f2_arg1:navigateItemLeft() then
 			f2_arg1:setActiveItem( f2_arg1.activeWidget )
-			ProcessListAction( f2_arg1, f2_arg1.activeWidget, f3_arg2 )
+			ProcessListAction( f2_arg1, f2_arg1.activeWidget, controller )
 		end
 		return true
 	end )
-	f2_arg0:AddButtonCallbackFunction( f2_arg0, f2_arg2, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_nexttab", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		if f2_arg4 and not f2_arg4( f4_arg2 ) then
+	f2_arg0:AddButtonCallbackFunction( f2_arg0, f2_arg2, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_nexttab", function ( element, menu, controller, model )
+		if f2_arg4 and not f2_arg4( controller ) then
 			return 
-		elseif f4_arg1.m_disableGridNavigation then
+		elseif menu.m_disableGridNavigation then
 			return 
 		elseif not f2_arg1.m_disableNavigation and f2_arg1:navigateItemRight() then
 			f2_arg1:setActiveItem( f2_arg1.activeWidget )
-			ProcessListAction( f2_arg1, f2_arg1.activeWidget, f4_arg2 )
+			ProcessListAction( f2_arg1, f2_arg1.activeWidget, controller )
 		end
 		return true
 	end )
@@ -64,39 +64,39 @@ end
 
 CoD.GridAndListUtility.MakeBumperGridKeyboardNavigable = function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3, f5_arg4 )
 	local f5_local0 = LUI.GridLayout.NavigationFlags.CHANGE_FOCUS
-	f5_arg0:AddButtonCallbackFunction( f5_arg1, f5_arg2, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_navleft", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if f5_arg4 and not f5_arg4( f6_arg2 ) then
+	f5_arg0:AddButtonCallbackFunction( f5_arg1, f5_arg2, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_navleft", function ( element, menu, controller, model )
+		if f5_arg4 and not f5_arg4( controller ) then
 			return 
-		elseif f6_arg1.m_disableGridNavigation then
+		elseif menu.m_disableGridNavigation then
 			return 
 		elseif not f5_arg1.m_disableNavigation and f5_arg1:navigateItemLeft( f5_local0 ) then
 			f5_arg1:setActiveItem( f5_arg1.activeWidget )
-			ProcessListAction( f5_arg1, f5_arg1.activeWidget, f6_arg2 )
+			ProcessListAction( f5_arg1, f5_arg1.activeWidget, controller )
 		end
 		return true
 	end )
-	f5_arg0:AddButtonCallbackFunction( f5_arg1, f5_arg2, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_navright", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		if f5_arg4 and not f5_arg4( f7_arg2 ) then
+	f5_arg0:AddButtonCallbackFunction( f5_arg1, f5_arg2, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_navright", function ( element, menu, controller, model )
+		if f5_arg4 and not f5_arg4( controller ) then
 			return 
-		elseif f7_arg1.m_disableGridNavigation then
+		elseif menu.m_disableGridNavigation then
 			return 
 		elseif not f5_arg1.m_disableNavigation and f5_arg1:navigateItemRight( f5_local0 ) then
 			f5_arg1:setActiveItem( f5_arg1.activeWidget )
-			ProcessListAction( f5_arg1, f5_arg1.activeWidget, f7_arg2 )
+			ProcessListAction( f5_arg1, f5_arg1.activeWidget, controller )
 		end
 		return true
 	end )
 	CoD.PCUtility.SetListOrGridAsAcceptingFocusToActiveElement( f5_arg1 )
 	if not f5_arg1.__enablePCListSelectionBehavior then
-		f5_arg0:AddButtonCallbackFunction( f5_arg1, f5_arg2, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-			if f5_arg4 and not f5_arg4( f8_arg2 ) then
+		f5_arg0:AddButtonCallbackFunction( f5_arg1, f5_arg2, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+			if f5_arg4 and not f5_arg4( controller ) then
 				return 
-			elseif f8_arg1.m_disableGridNavigation then
+			elseif menu.m_disableGridNavigation then
 				return 
 			elseif not f5_arg1.m_disableNavigation then
-				f5_arg1:setActiveItem( f8_arg0 )
-				ProcessListAction( f5_arg1, f8_arg0, f8_arg2, f8_arg1 )
-				f8_arg0:playSound( f5_arg1.__bumperGridKeyboardMouseConfirmSound and f5_arg1.__bumperGridKeyboardMouseConfirmSound or "list_right", f8_arg2 )
+				f5_arg1:setActiveItem( element )
+				ProcessListAction( f5_arg1, element, controller, menu )
+				element:playSound( f5_arg1.__bumperGridKeyboardMouseConfirmSound and f5_arg1.__bumperGridKeyboardMouseConfirmSound or "list_right", controller )
 			end
 			return true
 		end )
@@ -117,24 +117,24 @@ CoD.GridAndListUtility.AddGenericNavigationInternal = function ( f9_arg0, f9_arg
 		if f9_arg1.__gridKeyboardNavDisabled then
 			f9_local0 = nil
 		end
-		f9_arg0:AddButtonCallbackFunction( f9_arg0, f9_arg2, f9_arg5, f9_local0, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-			if CoD.isPC and f10_arg0.__gridNavFrame == Engine[0xC60FB88F484616D]() then
+		f9_arg0:AddButtonCallbackFunction( f9_arg0, f9_arg2, f9_arg5, f9_local0, function ( element, menu, controller, model )
+			if CoD.isPC and element.__gridNavFrame == Engine[0xC60FB88F484616D]() then
 				return 
-			elseif not f9_arg8 and IsRepeatButtonPress( f10_arg3 ) then
+			elseif not f9_arg8 and IsRepeatButtonPress( model ) then
 				return 
 			end
-			f10_arg0.__gridNavFrame = Engine[0xC60FB88F484616D]()
+			element.__gridNavFrame = Engine[0xC60FB88F484616D]()
 			if not f9_arg1.m_disableNavigation and f9_arg3 then
 				f9_arg3()
-				CoD.FreeCursorUtility.RetriggerCursorPosition( f10_arg1, f10_arg2 )
+				CoD.FreeCursorUtility.RetriggerCursorPosition( menu, controller )
 			end
-			if f9_arg4 and not f9_arg4( f10_arg2 ) then
+			if f9_arg4 and not f9_arg4( controller ) then
 				return 
-			elseif f10_arg1.m_disableGridNavigation then
+			elseif menu.m_disableGridNavigation then
 				return 
 			end
-			local f10_local0 = CoD.GridAndListUtility.DoBumperGridButtonAction( f10_arg1, f10_arg2, f9_arg7, true )
-			CoD.FreeCursorUtility.RetriggerCursorPosition( f10_arg1, f10_arg2 )
+			local f10_local0 = CoD.GridAndListUtility.DoBumperGridButtonAction( menu, controller, f9_arg7, true )
+			CoD.FreeCursorUtility.RetriggerCursorPosition( menu, controller )
 			if f9_arg9 then
 				f9_arg9()
 			end
@@ -144,24 +144,24 @@ CoD.GridAndListUtility.AddGenericNavigationInternal = function ( f9_arg0, f9_arg
 		if f9_arg1.__gridKeyboardNavDisabled then
 			f9_local0 = nil
 		end
-		f9_arg0:AddButtonCallbackFunction( f9_arg0, f9_arg2, f9_arg6, f9_local0, function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-			if CoD.isPC and f11_arg0.__gridNavFrame == Engine[0xC60FB88F484616D]() then
+		f9_arg0:AddButtonCallbackFunction( f9_arg0, f9_arg2, f9_arg6, f9_local0, function ( element, menu, controller, model )
+			if CoD.isPC and element.__gridNavFrame == Engine[0xC60FB88F484616D]() then
 				return 
-			elseif not f9_arg8 and IsRepeatButtonPress( f11_arg3 ) then
+			elseif not f9_arg8 and IsRepeatButtonPress( model ) then
 				return 
 			end
-			f11_arg0.__gridNavFrame = Engine[0xC60FB88F484616D]()
+			element.__gridNavFrame = Engine[0xC60FB88F484616D]()
 			if not f9_arg1.m_disableNavigation and f9_arg3 then
 				f9_arg3()
-				CoD.FreeCursorUtility.RetriggerCursorPosition( f11_arg1, f11_arg2 )
+				CoD.FreeCursorUtility.RetriggerCursorPosition( menu, controller )
 			end
-			if f9_arg4 and not f9_arg4( f11_arg2 ) then
+			if f9_arg4 and not f9_arg4( controller ) then
 				return 
-			elseif f11_arg1.m_disableGridNavigation then
+			elseif menu.m_disableGridNavigation then
 				return 
 			end
-			local f11_local0 = CoD.GridAndListUtility.DoBumperGridButtonAction( f11_arg1, f11_arg2, f9_arg7, false )
-			CoD.FreeCursorUtility.RetriggerCursorPosition( f11_arg1, f11_arg2 )
+			local f11_local0 = CoD.GridAndListUtility.DoBumperGridButtonAction( menu, controller, f9_arg7, false )
+			CoD.FreeCursorUtility.RetriggerCursorPosition( menu, controller )
 			if f9_arg9 then
 				f9_arg9()
 			end
@@ -218,7 +218,7 @@ CoD.GridAndListUtility.AddHostOnlyBumperNavigation = function ( f18_arg0, f18_ar
 		local f19_local0 = LobbyData.GetCurrentMenuTarget()
 		local f19_local1 = IsLobbyHostOfCurrentMenu()
 		if f19_local1 then
-			if CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) or f19_local0[0x4BCADBA8E631B86] == LuaEnum.UI.DIRECTOR_ONLINE_CP_STORY then
+			if CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) or f19_local0.name == LuaEnum.UI.DIRECTOR_ONLINE_CP_STORY then
 				f19_local1 = false
 			else
 				f19_local1 = true
@@ -235,75 +235,75 @@ CoD.GridAndListUtility.AddOptionsBumperNavigation = function ( f20_arg0, f20_arg
 		f20_arg0._BumperGrids = {
 			f20_arg1
 		}
-		f20_arg0:AddButtonCallbackFunction( f20_arg0, f20_arg2, Enum.LUIButton[0x493152B20AE4F58], "ui_prevtab", function ( f21_arg0, f21_arg1, f21_arg2, f21_arg3 )
-			if CoD.isPC and f21_arg0.__gridNavFrame == Engine[0xC60FB88F484616D]() then
+		f20_arg0:AddButtonCallbackFunction( f20_arg0, f20_arg2, Enum.LUIButton[0x493152B20AE4F58], "ui_prevtab", function ( element, menu, controller, model )
+			if CoD.isPC and element.__gridNavFrame == Engine[0xC60FB88F484616D]() then
 				return 
-			elseif CoD.PCOptionsUtility.AreOptionsDirty( f21_arg2 ) and CoD.PCOptionsUtility.IsGraphicsOptions( f21_arg2 ) then
-				CoD.OverlayUtility.CreateOverlay( f21_arg2, f21_arg1, "PendingChangesOnQuitOptionsMenu", function ()
-					f21_arg0.__gridNavFrame = Engine[0xC60FB88F484616D]()
+			elseif CoD.PCOptionsUtility.AreOptionsDirty( controller ) and CoD.PCOptionsUtility.IsGraphicsOptions( controller ) then
+				CoD.OverlayUtility.CreateOverlay( controller, menu, "PendingChangesOnQuitOptionsMenu", function ()
+					element.__gridNavFrame = Engine[0xC60FB88F484616D]()
 					CoD.GridAndListUtility.ActivateNextOptionTab( f20_arg1, -1 )
 				end )
 			else
-				f21_arg0.__gridNavFrame = Engine[0xC60FB88F484616D]()
+				element.__gridNavFrame = Engine[0xC60FB88F484616D]()
 				CoD.GridAndListUtility.ActivateNextOptionTab( f20_arg1, -1 )
 			end
 			return true
 		end )
-		f20_arg0:AddButtonCallbackFunction( f20_arg0, f20_arg2, Enum.LUIButton[0x49A252B20B48936], "ui_nexttab", function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
-			if CoD.isPC and f23_arg0.__gridNavFrame == Engine[0xC60FB88F484616D]() then
+		f20_arg0:AddButtonCallbackFunction( f20_arg0, f20_arg2, Enum.LUIButton[0x49A252B20B48936], "ui_nexttab", function ( element, menu, controller, model )
+			if CoD.isPC and element.__gridNavFrame == Engine[0xC60FB88F484616D]() then
 				return 
-			elseif CoD.PCOptionsUtility.AreOptionsDirty( f23_arg2 ) and CoD.PCOptionsUtility.IsGraphicsOptions( f23_arg2 ) then
-				CoD.OverlayUtility.CreateOverlay( f23_arg2, f23_arg1, "PendingChangesOnQuitOptionsMenu", function ()
-					f23_arg0.__gridNavFrame = Engine[0xC60FB88F484616D]()
+			elseif CoD.PCOptionsUtility.AreOptionsDirty( controller ) and CoD.PCOptionsUtility.IsGraphicsOptions( controller ) then
+				CoD.OverlayUtility.CreateOverlay( controller, menu, "PendingChangesOnQuitOptionsMenu", function ()
+					element.__gridNavFrame = Engine[0xC60FB88F484616D]()
 					CoD.GridAndListUtility.ActivateNextOptionTab( f20_arg1, 1 )
 				end )
 			else
-				f23_arg0.__gridNavFrame = Engine[0xC60FB88F484616D]()
+				element.__gridNavFrame = Engine[0xC60FB88F484616D]()
 				CoD.GridAndListUtility.ActivateNextOptionTab( f20_arg1, 1 )
 			end
 			return true
 		end )
 	end
-	f20_arg0:AddButtonCallbackFunction( f20_arg1, f20_arg2, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_navleft", function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3 )
-		if CoD.isPC and f25_arg0.__gridNavFrame == Engine[0xC60FB88F484616D]() then
+	f20_arg0:AddButtonCallbackFunction( f20_arg1, f20_arg2, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_navleft", function ( element, menu, controller, model )
+		if CoD.isPC and element.__gridNavFrame == Engine[0xC60FB88F484616D]() then
 			return 
-		elseif CoD.PCOptionsUtility.AreOptionsDirty( f25_arg2 ) and CoD.PCOptionsUtility.IsGraphicsOptions( f25_arg2 ) then
-			CoD.OverlayUtility.CreateOverlay( f25_arg2, f25_arg1, "PendingChangesOnQuitOptionsMenu", function ()
-				f25_arg0.__gridNavFrame = Engine[0xC60FB88F484616D]()
+		elseif CoD.PCOptionsUtility.AreOptionsDirty( controller ) and CoD.PCOptionsUtility.IsGraphicsOptions( controller ) then
+			CoD.OverlayUtility.CreateOverlay( controller, menu, "PendingChangesOnQuitOptionsMenu", function ()
+				element.__gridNavFrame = Engine[0xC60FB88F484616D]()
 				CoD.GridAndListUtility.ActivateNextOptionTab( f20_arg1, -1 )
 			end )
 		else
-			f25_arg0.__gridNavFrame = Engine[0xC60FB88F484616D]()
+			element.__gridNavFrame = Engine[0xC60FB88F484616D]()
 			CoD.GridAndListUtility.ActivateNextOptionTab( f20_arg1, -1 )
 		end
 		return true
 	end )
-	f20_arg0:AddButtonCallbackFunction( f20_arg1, f20_arg2, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_navright", function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3 )
-		if CoD.isPC and f27_arg0.__gridNavFrame == Engine[0xC60FB88F484616D]() then
+	f20_arg0:AddButtonCallbackFunction( f20_arg1, f20_arg2, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_navright", function ( element, menu, controller, model )
+		if CoD.isPC and element.__gridNavFrame == Engine[0xC60FB88F484616D]() then
 			return 
-		elseif CoD.PCOptionsUtility.AreOptionsDirty( f27_arg2 ) and CoD.PCOptionsUtility.IsGraphicsOptions( f27_arg2 ) then
-			CoD.OverlayUtility.CreateOverlay( f27_arg2, f27_arg1, "PendingChangesOnQuitOptionsMenu", function ()
-				f27_arg0.__gridNavFrame = Engine[0xC60FB88F484616D]()
+		elseif CoD.PCOptionsUtility.AreOptionsDirty( controller ) and CoD.PCOptionsUtility.IsGraphicsOptions( controller ) then
+			CoD.OverlayUtility.CreateOverlay( controller, menu, "PendingChangesOnQuitOptionsMenu", function ()
+				element.__gridNavFrame = Engine[0xC60FB88F484616D]()
 				CoD.GridAndListUtility.ActivateNextOptionTab( f20_arg1, 1 )
 			end )
 		else
-			f27_arg0.__gridNavFrame = Engine[0xC60FB88F484616D]()
+			element.__gridNavFrame = Engine[0xC60FB88F484616D]()
 			CoD.GridAndListUtility.ActivateNextOptionTab( f20_arg1, 1 )
 		end
 		return true
 	end )
-	f20_arg0:AddButtonCallbackFunction( f20_arg1, f20_arg2, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f29_arg0, f29_arg1, f29_arg2, f29_arg3 )
-		if not f20_arg1.m_disableNavigation and f20_arg1.activeWidget ~= f29_arg0 then
-			if CoD.PCOptionsUtility.AreOptionsDirty( f29_arg2 ) and CoD.PCOptionsUtility.IsGraphicsOptions( f29_arg2 ) then
-				CoD.OverlayUtility.CreateOverlay( f29_arg2, f29_arg1, "PendingChangesOnQuitOptionsMenu", function ()
-					f20_arg1:setActiveItem( f29_arg0 )
+	f20_arg0:AddButtonCallbackFunction( f20_arg1, f20_arg2, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not f20_arg1.m_disableNavigation and f20_arg1.activeWidget ~= element then
+			if CoD.PCOptionsUtility.AreOptionsDirty( controller ) and CoD.PCOptionsUtility.IsGraphicsOptions( controller ) then
+				CoD.OverlayUtility.CreateOverlay( controller, menu, "PendingChangesOnQuitOptionsMenu", function ()
+					f20_arg1:setActiveItem( element )
 					f20_arg1:playSound( "list_right" )
-					ProcessListAction( f20_arg1, f29_arg0, f29_arg2, f29_arg1 )
+					ProcessListAction( f20_arg1, element, controller, menu )
 				end )
 			else
-				f20_arg1:setActiveItem( f29_arg0 )
+				f20_arg1:setActiveItem( element )
 				f20_arg1:playSound( "list_right" )
-				ProcessListAction( f20_arg1, f29_arg0, f29_arg2, f29_arg1 )
+				ProcessListAction( f20_arg1, element, controller, menu )
 			end
 		end
 		return true
@@ -363,19 +363,19 @@ end
 CoD.GridAndListUtility.AddRightStickSingleItemControl = function ( f37_arg0, f37_arg1, f37_arg2 )
 	local f37_local0 = f37_arg1
 	if IsFreeCursorActive( f37_arg2 ) then
-		f37_arg0:AddButtonCallbackFunction( f37_local0, f37_arg2, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( f38_arg0, f38_arg1, f38_arg2, f38_arg3 )
-			if IsFreeCursorActive( f38_arg2 ) and not IsDpadButton( f38_arg3 ) and not PropertyIsTrue( f37_local0, "m_disableNavigation" ) then
+		f37_arg0:AddButtonCallbackFunction( f37_local0, f37_arg2, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( element, menu, controller, model )
+			if IsFreeCursorActive( controller ) and not IsDpadButton( model ) and not PropertyIsTrue( f37_local0, "m_disableNavigation" ) then
 				f37_local0:navigateItemLeft()
-				if ScoreboardVisible( f38_arg2 ) then
-					BlockGameFromKeyEvent( f38_arg2 )
+				if ScoreboardVisible( controller ) then
+					BlockGameFromKeyEvent( controller )
 				end
 			end
 		end, AlwaysFalse, false )
-		f37_arg0:AddButtonCallbackFunction( f37_local0, f37_arg2, Enum.LUIButton[0x571F08AD84807E0], nil, function ( f39_arg0, f39_arg1, f39_arg2, f39_arg3 )
-			if IsFreeCursorActive( f39_arg2 ) and not IsDpadButton( f39_arg3 ) and not PropertyIsTrue( f37_local0, "m_disableNavigation" ) then
+		f37_arg0:AddButtonCallbackFunction( f37_local0, f37_arg2, Enum.LUIButton[0x571F08AD84807E0], nil, function ( element, menu, controller, model )
+			if IsFreeCursorActive( controller ) and not IsDpadButton( model ) and not PropertyIsTrue( f37_local0, "m_disableNavigation" ) then
 				f37_local0:navigateItemRight()
-				if ScoreboardVisible( f39_arg2 ) then
-					BlockGameFromKeyEvent( f39_arg2 )
+				if ScoreboardVisible( controller ) then
+					BlockGameFromKeyEvent( controller )
 				end
 			end
 		end, AlwaysFalse, false )
@@ -385,35 +385,35 @@ end
 CoD.GridAndListUtility.AddGlobalRightStickSingleItemControl = function ( f40_arg0, f40_arg1, f40_arg2, f40_arg3 )
 	local f40_local0 = f40_arg1
 	if IsFreeCursorActive( f40_arg2 ) then
-		f40_arg0:AddButtonCallbackFunction( f40_arg0, f40_arg2, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( f41_arg0, f41_arg1, f41_arg2, f41_arg3 )
-			if IsFreeCursorActive( f41_arg2 ) and not IsDpadButton( f41_arg3 ) and not PropertyIsTrue( f40_local0, "m_disableNavigation" ) then
+		f40_arg0:AddButtonCallbackFunction( f40_arg0, f40_arg2, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( element, menu, controller, model )
+			if IsFreeCursorActive( controller ) and not IsDpadButton( model ) and not PropertyIsTrue( f40_local0, "m_disableNavigation" ) then
 				f40_local0:navigateItemLeft()
-				if ScoreboardVisible( f41_arg2 ) then
-					BlockGameFromKeyEvent( f41_arg2 )
+				if ScoreboardVisible( controller ) then
+					BlockGameFromKeyEvent( controller )
 				end
 			end
 		end, AlwaysFalse, false )
-		f40_arg0:AddButtonCallbackFunction( f40_arg0, f40_arg2, Enum.LUIButton[0x571F08AD84807E0], nil, function ( f42_arg0, f42_arg1, f42_arg2, f42_arg3 )
-			if IsFreeCursorActive( f42_arg2 ) and not IsDpadButton( f42_arg3 ) and not PropertyIsTrue( f40_local0, "m_disableNavigation" ) then
+		f40_arg0:AddButtonCallbackFunction( f40_arg0, f40_arg2, Enum.LUIButton[0x571F08AD84807E0], nil, function ( element, menu, controller, model )
+			if IsFreeCursorActive( controller ) and not IsDpadButton( model ) and not PropertyIsTrue( f40_local0, "m_disableNavigation" ) then
 				f40_local0:navigateItemRight()
-				if ScoreboardVisible( f42_arg2 ) then
-					BlockGameFromKeyEvent( f42_arg2 )
+				if ScoreboardVisible( controller ) then
+					BlockGameFromKeyEvent( controller )
 				end
 			end
 		end, AlwaysFalse, false )
-		f40_arg0:AddButtonCallbackFunction( f40_arg0, f40_arg2, Enum.LUIButton[0x4B11D2B20C75A7F], nil, function ( f43_arg0, f43_arg1, f43_arg2, f43_arg3 )
-			if IsFreeCursorActive( f43_arg2 ) and not IsDpadButton( f43_arg3 ) and not PropertyIsTrue( f40_local0, "m_disableNavigation" ) then
+		f40_arg0:AddButtonCallbackFunction( f40_arg0, f40_arg2, Enum.LUIButton[0x4B11D2B20C75A7F], nil, function ( element, menu, controller, model )
+			if IsFreeCursorActive( controller ) and not IsDpadButton( model ) and not PropertyIsTrue( f40_local0, "m_disableNavigation" ) then
 				f40_local0:navigateItemUp()
-				if ScoreboardVisible( f43_arg2 ) then
-					BlockGameFromKeyEvent( f43_arg2 )
+				if ScoreboardVisible( controller ) then
+					BlockGameFromKeyEvent( controller )
 				end
 			end
 		end, AlwaysFalse, false )
-		f40_arg0:AddButtonCallbackFunction( f40_arg0, f40_arg2, Enum.LUIButton[0xD4C15FE32148D3A], nil, function ( f44_arg0, f44_arg1, f44_arg2, f44_arg3 )
-			if IsFreeCursorActive( f44_arg2 ) and not IsDpadButton( f44_arg3 ) and not PropertyIsTrue( f40_local0, "m_disableNavigation" ) then
+		f40_arg0:AddButtonCallbackFunction( f40_arg0, f40_arg2, Enum.LUIButton[0xD4C15FE32148D3A], nil, function ( element, menu, controller, model )
+			if IsFreeCursorActive( controller ) and not IsDpadButton( model ) and not PropertyIsTrue( f40_local0, "m_disableNavigation" ) then
 				f40_local0:navigateItemDown()
-				if ScoreboardVisible( f44_arg2 ) then
-					BlockGameFromKeyEvent( f44_arg2 )
+				if ScoreboardVisible( controller ) then
+					BlockGameFromKeyEvent( controller )
 				end
 			end
 		end, AlwaysFalse, false )
@@ -738,14 +738,14 @@ end
 
 CoD.GridAndListUtility.SetGridScrolling = function ( f86_arg0, f86_arg1, f86_arg2 )
 	if CoD.isPC then
-		CoD.Menu.AddButtonCallbackFunction( f86_arg0, f86_arg1, f86_arg2, Enum.LUIButton[0x3C68CCBB77C781C], "MWHEELUP", function ( f87_arg0 )
+		CoD.Menu.AddButtonCallbackFunction( f86_arg0, f86_arg1, f86_arg2, Enum.LUIButton[0x3C68CCBB77C781C], "MWHEELUP", function ( element )
 			if not f86_arg1.m_disableNavigation then
 				return f86_arg1:scrollUp()
 			else
 				
 			end
 		end )
-		CoD.Menu.AddButtonCallbackFunction( f86_arg0, f86_arg1, f86_arg2, Enum.LUIButton[0x32EBED6749E6EE9], "MWHEELDOWN", function ( f88_arg0 )
+		CoD.Menu.AddButtonCallbackFunction( f86_arg0, f86_arg1, f86_arg2, Enum.LUIButton[0x32EBED6749E6EE9], "MWHEELDOWN", function ( element )
 			if not f86_arg1.m_disableNavigation then
 				return f86_arg1:scrollDown()
 			else

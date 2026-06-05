@@ -178,52 +178,52 @@ LUI.createMenu.DirectorCustomGameSetUp = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f16_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( FreeTeam, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f17_arg2, f17_arg0 ) and IsGamepad( f17_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f17_arg2, f17_arg0 )
+	f1_local1:AddButtonCallbackFunction( FreeTeam, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f17_arg2, f17_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f17_arg2, f17_arg0 ) and IsGamepad( f17_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f17_arg2, f17_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f17_arg2, f17_arg0 ) and IsGamepad( f17_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f17_arg2, f17_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f17_arg2, f17_arg0 ) and IsMouseOrKeyboard( f17_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f17_arg2, f17_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f17_arg2, f17_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f17_arg2, f17_arg0 ) and IsMouseOrKeyboard( f17_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f17_arg2, f17_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f17_arg2, f17_arg0 ) and IsMouseOrKeyboard( f17_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f17_arg2, f17_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
 		else
 			
 		end
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f18_arg2, f18_arg0 ) and IsGamepad( f18_arg2 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/move", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f18_arg2, f18_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f18_arg2, f18_arg0 ) and IsGamepad( f18_arg2 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f18_arg2, f18_arg0 ) and IsGamepad( f18_arg2 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/add", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f18_arg2, f18_arg0 ) and IsMouseOrKeyboard( f18_arg2 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f18_arg2, f18_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f18_arg2, f18_arg0 ) and IsMouseOrKeyboard( f18_arg2 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f18_arg2, f18_arg0 ) and IsMouseOrKeyboard( f18_arg2 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -238,7 +238,7 @@ LUI.createMenu.DirectorCustomGameSetUp = function ( f1_arg0, f1_arg1 )
 	HeaderFreeTeam = CoD.DirectorFixedWidthHeading.new( f1_local1, f1_arg0, 0.5, 0.5, -861, 0, 0, 0, 200, 230 )
 	HeaderFreeTeam.Label:setRGB( ColorSet.CodCasterFactionAllies.r, ColorSet.CodCasterFactionAllies.g, ColorSet.CodCasterFactionAllies.b )
 	HeaderFreeTeam.Label:setAlpha( 0 )
-	HeaderFreeTeam.Label:setText( LocalizeToUpperString( 0xC815AF97EE8C135 ) )
+	HeaderFreeTeam.Label:setText( LocalizeToUpperString( "mpui/allies" ) )
 	self:addElement( HeaderFreeTeam )
 	self.HeaderFreeTeam = HeaderFreeTeam
 	
@@ -323,52 +323,52 @@ LUI.createMenu.DirectorCustomGameSetUp = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f32_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( AxisTeam, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f33_arg0, f33_arg1, f33_arg2, f33_arg3 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f33_arg2, f33_arg0 ) and IsGamepad( f33_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f33_arg2, f33_arg0 )
+	f1_local1:AddButtonCallbackFunction( AxisTeam, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f33_arg2, f33_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f33_arg2, f33_arg0 ) and IsGamepad( f33_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f33_arg2, f33_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f33_arg2, f33_arg0 ) and IsGamepad( f33_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f33_arg2, f33_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f33_arg2, f33_arg0 ) and IsMouseOrKeyboard( f33_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f33_arg2, f33_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f33_arg2, f33_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f33_arg2, f33_arg0 ) and IsMouseOrKeyboard( f33_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f33_arg2, f33_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f33_arg2, f33_arg0 ) and IsMouseOrKeyboard( f33_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f33_arg2, f33_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
 		else
 			
 		end
-	end, function ( f34_arg0, f34_arg1, f34_arg2 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f34_arg2, f34_arg0 ) and IsGamepad( f34_arg2 ) then
-			CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/move", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f34_arg2, f34_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f34_arg2, f34_arg0 ) and IsGamepad( f34_arg2 ) then
-			CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f34_arg2, f34_arg0 ) and IsGamepad( f34_arg2 ) then
-			CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/add", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f34_arg2, f34_arg0 ) and IsMouseOrKeyboard( f34_arg2 ) then
-			CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f34_arg2, f34_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f34_arg2, f34_arg0 ) and IsMouseOrKeyboard( f34_arg2 ) then
-			CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f34_arg2, f34_arg0 ) and IsMouseOrKeyboard( f34_arg2 ) then
-			CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -383,7 +383,7 @@ LUI.createMenu.DirectorCustomGameSetUp = function ( f1_arg0, f1_arg1 )
 	HeaderAxisTeam = CoD.DirectorFixedWidthHeading.new( f1_local1, f1_arg0, 0.5, 0.5, -409, 33, 0, 0, 200, 230 )
 	HeaderAxisTeam.Backing:setRGB( ColorSet.CodCasterFactionAxis.r, ColorSet.CodCasterFactionAxis.g, ColorSet.CodCasterFactionAxis.b )
 	HeaderAxisTeam.Label:setRGB( ColorSet.CodCasterFactionAxis.r, ColorSet.CodCasterFactionAxis.g, ColorSet.CodCasterFactionAxis.b )
-	HeaderAxisTeam.Label:setText( LocalizeToUpperString( 0x12BD5927860415A ) )
+	HeaderAxisTeam.Label:setText( LocalizeToUpperString( "mpui/axis" ) )
 	self:addElement( HeaderAxisTeam )
 	self.HeaderAxisTeam = HeaderAxisTeam
 	
@@ -468,52 +468,52 @@ LUI.createMenu.DirectorCustomGameSetUp = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f48_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( AlliesTeam, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f49_arg0, f49_arg1, f49_arg2, f49_arg3 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f49_arg2, f49_arg0 ) and IsGamepad( f49_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f49_arg2, f49_arg0 )
+	f1_local1:AddButtonCallbackFunction( AlliesTeam, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f49_arg2, f49_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f49_arg2, f49_arg0 ) and IsGamepad( f49_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f49_arg2, f49_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f49_arg2, f49_arg0 ) and IsGamepad( f49_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f49_arg2, f49_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f49_arg2, f49_arg0 ) and IsMouseOrKeyboard( f49_arg2 ) then
-			CoD.DirectorUtility.SelectClient( f49_arg2, f49_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SelectClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f49_arg2, f49_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f49_arg2, f49_arg0 ) and IsMouseOrKeyboard( f49_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f49_arg2, f49_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f49_arg2, f49_arg0 ) and IsMouseOrKeyboard( f49_arg2 ) then
-			CoD.DirectorUtility.SwapWithSelectedClient( f49_arg2, f49_arg0 )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.DirectorUtility.SwapWithSelectedClient( controller, element )
 			PlaySoundSetSound( self, "list_action" )
 			return true
 		else
 			
 		end
-	end, function ( f50_arg0, f50_arg1, f50_arg2 )
-		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f50_arg2, f50_arg0 ) and IsGamepad( f50_arg2 ) then
-			CoD.Menu.SetButtonLabel( f50_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x2D7AF821FE36BC6, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/move", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f50_arg2, f50_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f50_arg2, f50_arg0 ) and IsGamepad( f50_arg2 ) then
-			CoD.Menu.SetButtonLabel( f50_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/swap", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f50_arg2, f50_arg0 ) and IsGamepad( f50_arg2 ) then
-			CoD.Menu.SetButtonLabel( f50_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9038794D2FBCFAA, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/add", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return true
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( f50_arg2, f50_arg0 ) and IsMouseOrKeyboard( f50_arg2 ) then
-			CoD.Menu.SetButtonLabel( f50_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSelectClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f50_arg2, f50_arg0 ) and not CoD.DirectorUtility.IsClientEmpty( f50_arg2, f50_arg0 ) and IsMouseOrKeyboard( f50_arg2 ) then
-			CoD.Menu.SetButtonLabel( f50_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and not CoD.DirectorUtility.IsClientEmpty( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( f50_arg2, f50_arg0 ) and IsMouseOrKeyboard( f50_arg2 ) then
-			CoD.Menu.SetButtonLabel( f50_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif IsLobbyHostOfCurrentMenu() and CoD.DirectorUtility.CanSwapWithSelectedClient( controller, element ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -528,7 +528,7 @@ LUI.createMenu.DirectorCustomGameSetUp = function ( f1_arg0, f1_arg1 )
 	HeaderAlliesTeam = CoD.DirectorFixedWidthHeading.new( f1_local1, f1_arg0, 0.5, 0.5, -861, -419, 0, 0, 200, 230 )
 	HeaderAlliesTeam.Backing:setRGB( ColorSet.CodCasterFactionAllies.r, ColorSet.CodCasterFactionAllies.g, ColorSet.CodCasterFactionAllies.b )
 	HeaderAlliesTeam.Label:setRGB( ColorSet.CodCasterFactionAllies.r, ColorSet.CodCasterFactionAllies.g, ColorSet.CodCasterFactionAllies.b )
-	HeaderAlliesTeam.Label:setText( LocalizeToUpperString( 0xC815AF97EE8C135 ) )
+	HeaderAlliesTeam.Label:setText( LocalizeToUpperString( "mpui/allies" ) )
 	self:addElement( HeaderAlliesTeam )
 	self.HeaderAlliesTeam = HeaderAlliesTeam
 	
@@ -708,16 +708,16 @@ LUI.createMenu.DirectorCustomGameSetUp = function ( f1_arg0, f1_arg1 )
 	self:linkToElementModel( self, "xuid", true, function ( model, f66_arg1 )
 		CoD.Menu.UpdateButtonShownState( f66_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A] )
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f67_arg0, f67_arg1, f67_arg2, f67_arg3 )
-		if CoD.DirectorUtility.HasSelectedClient( f67_arg2 ) then
-			CoD.DirectorUtility.ClearSelectedClient( f67_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		if CoD.DirectorUtility.HasSelectedClient( controller ) then
+			CoD.DirectorUtility.ClearSelectedClient( controller )
 			return true
 		else
-			GoBack( self, f67_arg2 )
+			GoBack( self, controller )
 			return true
 		end
-	end, function ( f68_arg0, f68_arg1, f68_arg2 )
-		CoD.Menu.SetButtonLabel( f68_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "setState", function ( element, controller, f69_arg2, f69_arg3, f69_arg4 )
@@ -798,12 +798,12 @@ CoD.DirectorCustomGameSetUp.__resetProperties = function ( f71_arg0 )
 	f71_arg0.HeaderAlliesTeam.Backing:setAlpha( 1 )
 	f71_arg0.HeaderAlliesTeam.Label:setRGB( ColorSet.CodCasterFactionAllies.r, ColorSet.CodCasterFactionAllies.g, ColorSet.CodCasterFactionAllies.b )
 	f71_arg0.HeaderAlliesTeam.Label:setAlpha( 1 )
-	f71_arg0.HeaderAlliesTeam.Label:setText( LocalizeToUpperString( 0xC815AF97EE8C135 ) )
+	f71_arg0.HeaderAlliesTeam.Label:setText( LocalizeToUpperString( "mpui/allies" ) )
 	f71_arg0.HeaderAxisTeam:setAlpha( 1 )
 	f71_arg0.HeaderAxisTeam.Backing:setRGB( ColorSet.CodCasterFactionAxis.r, ColorSet.CodCasterFactionAxis.g, ColorSet.CodCasterFactionAxis.b )
 	f71_arg0.HeaderAxisTeam.Backing:setAlpha( 1 )
 	f71_arg0.HeaderAxisTeam.Label:setRGB( ColorSet.CodCasterFactionAxis.r, ColorSet.CodCasterFactionAxis.g, ColorSet.CodCasterFactionAxis.b )
-	f71_arg0.HeaderAxisTeam.Label:setText( LocalizeToUpperString( 0x12BD5927860415A ) )
+	f71_arg0.HeaderAxisTeam.Label:setText( LocalizeToUpperString( "mpui/axis" ) )
 	f71_arg0.HeaderCODCaster:setAlpha( 1 )
 	f71_arg0.HeaderCODCaster.Backing:setRGB( 0.29, 0.29, 0.29 )
 	f71_arg0.DirectorCoDCasterList:setAlpha( 1 )
@@ -856,7 +856,7 @@ CoD.DirectorCustomGameSetUp.__clipsPerState = {
 			f73_arg0.HeaderAxisTeam.Backing:setRGB( 0.29, 0.29, 0.29 )
 			f73_arg0.HeaderAxisTeam.Backing:setAlpha( 1 )
 			f73_arg0.HeaderAxisTeam.Label:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-			f73_arg0.HeaderAxisTeam.Label:setText( LocalizeToUpperString( 0x39A9E427416E0C7 ) )
+			f73_arg0.HeaderAxisTeam.Label:setText( LocalizeToUpperString( "codcaster/team2" ) )
 			f73_arg0.clipFinished( f73_arg0.HeaderAxisTeam )
 			f73_arg0.BackingAllies:completeAnimation()
 			f73_arg0.BackingAllies:setAlpha( 0 )
@@ -872,7 +872,7 @@ CoD.DirectorCustomGameSetUp.__clipsPerState = {
 			f73_arg0.HeaderAlliesTeam.Backing:setAlpha( 1 )
 			f73_arg0.HeaderAlliesTeam.Label:setRGB( ColorSet.CodCasterFactionAllies.r, ColorSet.CodCasterFactionAllies.g, ColorSet.CodCasterFactionAllies.b )
 			f73_arg0.HeaderAlliesTeam.Label:setAlpha( 0 )
-			f73_arg0.HeaderAlliesTeam.Label:setText( LocalizeToUpperString( 0xC815AF97EE8C135 ) )
+			f73_arg0.HeaderAlliesTeam.Label:setText( LocalizeToUpperString( "mpui/allies" ) )
 			f73_arg0.clipFinished( f73_arg0.HeaderAlliesTeam )
 			f73_arg0.BackingCODCaster:completeAnimation()
 			f73_arg0.BackingCODCaster:setAlpha( 0 )
@@ -913,7 +913,7 @@ CoD.DirectorCustomGameSetUp.__clipsPerState = {
 			f74_arg0.HeaderAxisTeam.Backing:setRGB( 0.29, 0.29, 0.29 )
 			f74_arg0.HeaderAxisTeam.Backing:setAlpha( 1 )
 			f74_arg0.HeaderAxisTeam.Label:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-			f74_arg0.HeaderAxisTeam.Label:setText( LocalizeToUpperString( 0x39A9E427416E0C7 ) )
+			f74_arg0.HeaderAxisTeam.Label:setText( LocalizeToUpperString( "codcaster/team2" ) )
 			f74_arg0.clipFinished( f74_arg0.HeaderAxisTeam )
 			f74_arg0.BackingAllies:completeAnimation()
 			f74_arg0.BackingAllies:setAlpha( 0.15 )
@@ -928,7 +928,7 @@ CoD.DirectorCustomGameSetUp.__clipsPerState = {
 			f74_arg0.HeaderAlliesTeam.Backing:setAlpha( 1 )
 			f74_arg0.HeaderAlliesTeam.Label:setRGB( 1, 1, 1 )
 			f74_arg0.HeaderAlliesTeam.Label:setAlpha( 1 )
-			f74_arg0.HeaderAlliesTeam.Label:setText( LocalizeToUpperString( 0x39A9F427416E27A ) )
+			f74_arg0.HeaderAlliesTeam.Label:setText( LocalizeToUpperString( "codcaster/team1" ) )
 			f74_arg0.clipFinished( f74_arg0.HeaderAlliesTeam )
 			f74_arg0.BackingCODCaster:completeAnimation()
 			f74_arg0.BackingCODCaster:setAlpha( 0 )

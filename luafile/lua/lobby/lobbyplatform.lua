@@ -209,7 +209,7 @@ end
 Lobby.Platform.OnPlatformPlayTogether = function ( f14_arg0 )
 	local f14_local0 = f14_arg0.controller
 	if Lobby.Timer.LobbyIsLocked() then
-		LuaUtils.UI_ShowErrorMessageDialog( f14_local0, Engine[0xF9F1239CFD921FE]( 0x1EC124551C8B7E5 ), Engine[0xF9F1239CFD921FE]( 0xFA1F1A14BB49273 ) )
+		LuaUtils.UI_ShowErrorMessageDialog( f14_local0, Engine[0xF9F1239CFD921FE]( "menu/cannot_join_lobby_locked" ), Engine[0xF9F1239CFD921FE]( "menu/match_locked" ) )
 		return 
 	elseif f14_arg0.error == true then
 		local f14_local1 = f14_arg0.debugInfo
@@ -259,7 +259,7 @@ Lobby.Platform.OnPlatformJoinOrbis = function ( f16_arg0 )
 	local f16_local4 = f16_arg0.invitationId
 	local f16_local5 = f16_arg0.sessionId
 	local f16_local6 = f16_local0
-	local f16_local7 = Enum.JoinType[0xD4D58772DE8652]
+	local f16_local7 = Enum.jointype.join_type_invite
 	if not Engine.IsRunningUILevel() then
 		local f16_local8 = {
 			controller = f16_local6,
@@ -267,7 +267,7 @@ Lobby.Platform.OnPlatformJoinOrbis = function ( f16_arg0 )
 		}
 		local f16_local9
 		if f16_local3 then
-			f16_local9 = Enum.JoinType[0xD4D58772DE8652]
+			f16_local9 = Enum.jointype.join_type_invite
 			if not f16_local9 then
 			
 			else
@@ -279,10 +279,10 @@ Lobby.Platform.OnPlatformJoinOrbis = function ( f16_arg0 )
 				return 
 			end
 		end
-		f16_local9 = Enum.JoinType["join_type_friend"]
+		f16_local9 = Enum.jointype.join_type_friend
 	else
 		if f16_local3 == false then
-			f16_local7 = Enum.JoinType["join_type_friend"]
+			f16_local7 = Enum.jointype.join_type_friend
 			f16_local4 = nil
 		end
 		Lobby.ProcessQueue.AddToQueue( "PS4SessionJoin", Lobby.ProcessPlatform.PS4AcceptInvite( f16_local0, f16_local1, f16_local4, f16_local5, f16_local7, LuaEnum.LEAVE_WITH_PARTY.WITHOUT ) )
@@ -297,10 +297,10 @@ Lobby.Platform.InGamePlatformJoinOrbis = function ( f17_arg0 )
 	local f17_local4 = f17_arg0.invitationId
 	local f17_local5 = f17_arg0.sessionId
 	local f17_local6 = f17_local0
-	local f17_local7 = Enum.JoinType[0xD4D58772DE8652]
+	local f17_local7 = Enum.jointype.join_type_invite
 	if f17_local3 == false then
 		f17_local4 = nil
-		f17_local7 = Enum.JoinType["join_type_friend"]
+		f17_local7 = Enum.jointype.join_type_friend
 	end
 	return Lobby.ProcessPlatform.PS4AcceptInvite( f17_local0, f17_local1, f17_local4, f17_local5, f17_local7, LuaEnum.LEAVE_WITH_PARTY.WITHOUT )
 end
@@ -330,7 +330,7 @@ Lobby.Platform.OnPlatformJoinDurango = function ( f18_arg0 )
 		}
 		local f18_local4
 		if f18_local0 then
-			f18_local4 = Enum.JoinType[0xD4D58772DE8652]
+			f18_local4 = Enum.jointype.join_type_invite
 			if not f18_local4 then
 			
 			else
@@ -342,26 +342,26 @@ Lobby.Platform.OnPlatformJoinDurango = function ( f18_arg0 )
 				return nil
 			end
 		end
-		f18_local4 = Enum.JoinType["join_type_friend"]
+		f18_local4 = Enum.jointype.join_type_friend
 	elseif f18_arg0.invite == true then
-		Lobby.ProcessQueue.AddToQueue( "XboxAcceptInvite", Lobby.ProcessPlatform.XboxJoin( Engine.GetControllerForXuid( f18_arg0.invitedXuid ), f18_arg0.senderXuid, Enum.JoinType[0xD4D58772DE8652], LuaEnum.LEAVE_WITH_PARTY.WITHOUT ) )
+		Lobby.ProcessQueue.AddToQueue( "XboxAcceptInvite", Lobby.ProcessPlatform.XboxJoin( Engine.GetControllerForXuid( f18_arg0.invitedXuid ), f18_arg0.senderXuid, Enum.jointype.join_type_invite, LuaEnum.LEAVE_WITH_PARTY.WITHOUT ) )
 	else
-		Lobby.ProcessQueue.AddToQueue( "XboxSessionJoin", Lobby.ProcessPlatform.XboxJoin( Engine.GetControllerForXuid( f18_arg0.joinerXuid ), f18_arg0.joineeXuid, Enum.JoinType["join_type_friend"], LuaEnum.LEAVE_WITH_PARTY.WITHOUT ) )
+		Lobby.ProcessQueue.AddToQueue( "XboxSessionJoin", Lobby.ProcessPlatform.XboxJoin( Engine.GetControllerForXuid( f18_arg0.joinerXuid ), f18_arg0.joineeXuid, Enum.jointype.join_type_friend, LuaEnum.LEAVE_WITH_PARTY.WITHOUT ) )
 	end
 end
 
 Lobby.Platform.InGamePlatformJoinDurango = function ( f19_arg0 )
 	if f19_arg0.invite == true then
-		return Lobby.ProcessPlatform.XboxJoin( Engine.GetControllerForXuid( f19_arg0.invitedXuid ), f19_arg0.senderXuid, Enum.JoinType[0xD4D58772DE8652], LuaEnum.LEAVE_WITH_PARTY.WITHOUT )
+		return Lobby.ProcessPlatform.XboxJoin( Engine.GetControllerForXuid( f19_arg0.invitedXuid ), f19_arg0.senderXuid, Enum.jointype.join_type_invite, LuaEnum.LEAVE_WITH_PARTY.WITHOUT )
 	else
-		return Lobby.ProcessPlatform.XboxJoin( Engine.GetControllerForXuid( f19_arg0.joinerXuid ), f19_arg0.joineeXuid, Enum.JoinType["join_type_friend"], LuaEnum.LEAVE_WITH_PARTY.WITHOUT )
+		return Lobby.ProcessPlatform.XboxJoin( Engine.GetControllerForXuid( f19_arg0.joinerXuid ), f19_arg0.joineeXuid, Enum.jointype.join_type_friend, LuaEnum.LEAVE_WITH_PARTY.WITHOUT )
 	end
 end
 
 Lobby.Platform.OnPlatformJoin = function ( f20_arg0 )
 	if LuaDefine.isPS4 or LuaDefine.isXbox then
 		if Lobby.Timer.LobbyIsLocked() then
-			LuaUtils.UI_ShowErrorMessageDialog( controller, Engine[0xF9F1239CFD921FE]( 0x1EC124551C8B7E5 ), Engine[0xF9F1239CFD921FE]( 0xFA1F1A14BB49273 ) )
+			LuaUtils.UI_ShowErrorMessageDialog( controller, Engine[0xF9F1239CFD921FE]( "menu/cannot_join_lobby_locked" ), Engine[0xF9F1239CFD921FE]( "menu/match_locked" ) )
 			return 
 		elseif LuaDefine.isXbox then
 			local f20_local0 = f20_arg0.invite
@@ -457,13 +457,13 @@ Lobby.Platform.PlatformSessionPS4Error = function ( f27_arg0, f27_arg1 )
 	Lobby.Platform.PS4.taskInProgress = false
 	Engine[0xAF2EDE16C0386FE]()
 	if f27_local0 == Enum.PlatformSessions[0x75E6BB927BE46B4] then
-		f0_local1( f27_arg0, true, Engine[0xEFF639FB8A1BE0A]() + Engine[0x22EAAB59AA27E9B]( Lobby.Platform.DISABLE_PLATFORM_SESSIONS ) )
+		f0_local1( f27_arg0, true, Engine.seconds() + Engine[0x22EAAB59AA27E9B]( Lobby.Platform.DISABLE_PLATFORM_SESSIONS ) )
 	elseif f27_local0 == Enum.PlatformSessions[0xDB75ABE61E9C81F] then
 		if Engine.IsInGame() == true then
 			return 
 		end
 		local f27_local1 = LobbyData.GetCurrentMenuTarget()
-		if f27_local1["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.MAIN ) then
+		if f27_local1.id == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.MAIN ) then
 			return 
 		end
 		local f27_local2 = {
@@ -544,7 +544,7 @@ end
 
 Lobby.Platform.PlatformSessionPS4Create = function ( f31_arg0, f31_arg1, f31_arg2 )
 	Lobby.Platform.PS4.taskInProgress = true
-	Dvar[0xC97FE4F00531D2C]:set( Engine.LocalizeWithoutLocsMarkers( 0xCE60C4536B54FF3 ) )
+	Dvar[0xC97FE4F00531D2C]:set( Engine.LocalizeWithoutLocsMarkers( "menu/platform_session_name" ) )
 	local f31_local0, f31_local1 = Engine[0x40EC85343E0181F]()
 	if f31_local0 == Enum[0x48909109238341F][0xCBD4CF0639724C3] then
 		Dvar[0xC97FE4F00531D2C]:set( Engine.LocalizeWithoutLocsMarkers( 0xC466D0DC2A965FA ) )
@@ -984,9 +984,9 @@ Lobby.Platform.PlatformSessionXboxError = function ( f52_arg0, f52_arg1, f52_arg
 	elseif f52_local0 == Enum.PlatformSessions[0xDB75ABE61E9C81F] then
 		LobbyVM.ExecuteLobbyVMRequest( LuaEnum.LOBBYVM_REQUEST.FORCE_LOCAL_MODE )
 		if Dvar[0x9D38D804EC061EB]:get() == true then
-			Engine[0xBC42C678E40DBE8]( Enum.errorCode[0x2FD312C2C06EC11], "Platform Session Error: " .. f52_arg2 )
+			Engine[0xBC42C678E40DBE8]( Enum.errorcode[0x2FD312C2C06EC11], "Platform Session Error: " .. f52_arg2 )
 		else
-			Engine[0xBC42C678E40DBE8]( Enum.errorCode[0x2FD312C2C06EC11], Engine[0xF9F1239CFD921FE]( 0x95A36FDA596D61E ) )
+			Engine[0xBC42C678E40DBE8]( Enum.errorcode[0x2FD312C2C06EC11], Engine[0xF9F1239CFD921FE]( 0x95A36FDA596D61E ) )
 		end
 	end
 end
@@ -1516,7 +1516,7 @@ end
 
 Lobby.Platform.PlatformSessionXboxDisabled = function ( f76_arg0, f76_arg1, f76_arg2, f76_arg3, f76_arg4 )
 	local f76_local0 = f76_arg0 + 1
-	if LuaUtils.OnlineOnlyDemo() == true and LuaUtils.WarzoneModeAvailable() and Engine.CurrentSessionMode() == Enum.eModes[0xBF1DCC8138A9D39] and f76_arg2 == Enum.LobbyType[0x92676CF5B6FCD43] then
+	if LuaUtils.OnlineOnlyDemo() == true and LuaUtils.WarzoneModeAvailable() and Engine.CurrentSessionMode() == Enum.eModes.mode_warzone and f76_arg2 == Enum.LobbyType[0x92676CF5B6FCD43] then
 		return true
 	elseif Lobby.Platform.XBOX.disabled[f76_local0] == true then
 		return true
@@ -1534,7 +1534,7 @@ Lobby.Platform.PlatformSessionXboxDisabled = function ( f76_arg0, f76_arg1, f76_
 	if Lobby.Platform.XBOX.sessionFailure[f76_local0] == true then
 		if Lobby.Platform.XBOX.sessionFailureTime[f76_local0] == Lobby.Platform.DISABLE_PLATFORM_SESSIONS then
 			return true
-		elseif Lobby.Platform.XBOX.sessionFailureTime[f76_local0] < Engine[0xEFF639FB8A1BE0A]() then
+		elseif Lobby.Platform.XBOX.sessionFailureTime[f76_local0] < Engine.seconds() then
 			Lobby.Platform.XBOX.sessionFailure[f76_local0] = false
 			return false
 		end
@@ -2168,7 +2168,7 @@ Lobby.Platform.Invite = function ( f102_arg0 )
 	local f102_local2 = f102_arg0["xuid" .. f102_arg0.currentInvite]
 	local f102_local3 = f102_arg0["gamertag" .. f102_arg0.currentInvite]
 	local f102_local4 = Engine.GetGamertagForController( f102_local0 )
-	local f102_local5 = Engine.LocalizeWithoutLocsMarkers( 0xECDEEEFDD99A267, f102_local4 )
+	local f102_local5 = Engine.LocalizeWithoutLocsMarkers( "menu/game_invite_message", f102_local4 )
 	local f102_local6, f102_local7 = Engine[0x40EC85343E0181F]()
 	if f102_local6 == Enum[0x48909109238341F][0xCBD4CF0639724C3] then
 		f102_local5 = Engine.LocalizeWithoutLocsMarkers( 0xD0B67A7783104FE, f102_local4 )
@@ -2268,7 +2268,7 @@ Lobby.Platform.OnComError = function ( f106_arg0 )
 	local f106_local0 = f106_arg0.errorCode
 	if f106_arg0.isInCleanup then
 		return 
-	elseif f106_local0 == Enum.errorCode[0x7039D0A1017FE92] then
+	elseif f106_local0 == Enum.errorcode[0x7039D0A1017FE92] then
 		Lobby.Platform.SaveState()
 	end
 end

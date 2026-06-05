@@ -57,7 +57,7 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local Stripe = LUI.UIImage.new( 0, 0, -38.5, 153.5, 0, 0, -1.5, 22.5 )
 	Stripe:setImage( RegisterImage( 0xA7E361974EC3A2E ) )
-	Stripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x84B5D1E2B428AE3 ) )
+	Stripe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_animated" ) )
 	Stripe:setShaderVector( 0, 0, 0, 0, 0 )
 	Stripe:setShaderVector( 1, 1, 1, 0, 0 )
 	Stripe:setShaderVector( 2, 0, 0, 0, 0 )
@@ -131,7 +131,7 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local warning = LUI.UIText.new( 0, 0, -44.5, 155.5, 0, 0, 0, 21 )
 	warning:setRGB( 1, 0, 0 )
 	warning:setAlpha( 0 )
-	warning:setText( Engine[0xF9F1239CFD921FE]( 0xDBDEBD27773724A ) )
+	warning:setText( Engine[0xF9F1239CFD921FE]( "mpui/out_of_bounds_warning" ) )
 	warning:setTTF( "0arame_mono_stencil" )
 	warning:setMaterial( LUI.UIImage.GetCachedMaterial( 0x336C1AE82B1520A ) )
 	warning:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -143,7 +143,7 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	LayoutLabelL:setRGB( 0.22, 0.77, 1 )
 	LayoutLabelL:setAlpha( 0.4 )
 	LayoutLabelL:setZRot( 180 )
-	LayoutLabelL:setImage( RegisterImage( 0x62FB554884B9B68 ) )
+	LayoutLabelL:setImage( RegisterImage( "uie_ui_hud_tak5_layout_common_element03" ) )
 	LayoutLabelL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LayoutLabelL )
 	self.LayoutLabelL = LayoutLabelL
@@ -151,7 +151,7 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local LayoutLabelR = LUI.UIImage.new( 0, 0, 280, 348, 0, 0, 30, 46 )
 	LayoutLabelR:setRGB( 0.22, 0.77, 1 )
 	LayoutLabelR:setAlpha( 0.4 )
-	LayoutLabelR:setImage( RegisterImage( 0x62FB554884B9B68 ) )
+	LayoutLabelR:setImage( RegisterImage( "uie_ui_hud_tak5_layout_common_element03" ) )
 	LayoutLabelR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( LayoutLabelR )
 	self.LayoutLabelR = LayoutLabelR

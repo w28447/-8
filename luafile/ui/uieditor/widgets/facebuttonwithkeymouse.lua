@@ -14,7 +14,7 @@ CoD.FaceButtonWithKeyMouse.new = function ( f2_arg0, f2_arg1, f2_arg2, f2_arg3, 
 	local KeyMouseImage = nil
 	
 	KeyMouseImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	KeyMouseImage:setImage( RegisterImage( 0xE84DB39761B4029 ) )
+	KeyMouseImage:setImage( RegisterImage( "uie_smallsquarebutton" ) )
 	self:addElement( KeyMouseImage )
 	self.KeyMouseImage = KeyMouseImage
 	

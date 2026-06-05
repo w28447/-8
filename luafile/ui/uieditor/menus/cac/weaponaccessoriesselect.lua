@@ -24,12 +24,12 @@ LUI.createMenu.WeaponAccessoriesSelect = function ( f1_arg0, f1_arg1 )
 	self:addElement( WeaponAccessoriesSelectInternal )
 	self.WeaponAccessoriesSelectInternal = WeaponAccessoriesSelectInternal
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f2_arg0, f2_arg1, f2_arg2, f2_arg3 )
-		CoD.CACUtility.UpdateCustomClassModelIfModified( f2_arg1, f2_arg2 )
-		GoBack( self, f2_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		CoD.CACUtility.UpdateCustomClassModelIfModified( menu, controller )
+		GoBack( self, controller )
 		return true
-	end, function ( f3_arg0, f3_arg1, f3_arg2 )
-		CoD.Menu.SetButtonLabel( f3_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

@@ -1,5 +1,5 @@
 require( "ui/uieditor/widgets/controllerdependent_textbox" )
-require( "x64:9d92dce1e4291ce" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/abilityholdtoactivate" )
 require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetwz_equipmentempty" )
 require( "ui/uieditor/widgets/warzone/warzoneabilityitemcounter" )
 
@@ -39,7 +39,7 @@ CoD.AmmoWidgetWZ_AbilityItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.ClockMeterAdd = ClockMeterAdd
 	
 	local Box = LUI.UIImage.new( 0, 0, -1, 69, 0, 0, -5, 65 )
-	Box:setImage( RegisterImage( 0x2A20E3F9478C322 ) )
+	Box:setImage( RegisterImage( "uie_ui_hud_core_abeg_widget_box" ) )
 	Box:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	Box:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( Box )
@@ -356,7 +356,7 @@ CoD.AmmoWidgetWZ_AbilityItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	LED = LUI.UIImage.new( 0, 0, 0.5, 68.5, 0, 0, -4.5, 63.5 )
 	LED:setRGB( 0, 0, 0 )
 	LED:setAlpha( 0.2 )
-	LED:setImage( RegisterImage( 0xD6566449C808FFB ) )
+	LED:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_player_widget_led_heal" ) )
 	self:addElement( LED )
 	self.LED = LED
 	

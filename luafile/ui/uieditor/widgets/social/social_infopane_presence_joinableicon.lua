@@ -11,7 +11,7 @@ CoD.Social_InfoPane_Presence_JoinableIcon.new = function ( f1_arg0, f1_arg1, f1_
 	local joinableIcon = LUI.UIImage.new( 0, 0, 0, 32, 0.5, 0.5, -16, 16 )
 	joinableIcon:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	joinableIcon:setImage( RegisterImage( "uie_t7_menu_frontend_iconjoinable" ) )
-	joinableIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
+	joinableIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_blend" ) )
 	self:addElement( joinableIcon )
 	self.joinableIcon = joinableIcon
 	
@@ -19,7 +19,7 @@ CoD.Social_InfoPane_Presence_JoinableIcon.new = function ( f1_arg0, f1_arg1, f1_
 	notjoinableText:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	notjoinableText:setAlpha( 0 )
 	notjoinableText:setScale( LanguageOverrideNumber( "japanese", 0.9, 1, 1 ) )
-	notjoinableText:setText( LocalizeToUpperString( 0x34F5097A432DED7 ) )
+	notjoinableText:setText( LocalizeToUpperString( "presence/not_joinable" ) )
 	notjoinableText:setTTF( "dinnext_regular" )
 	notjoinableText:setLetterSpacing( 2 )
 	notjoinableText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -30,7 +30,7 @@ CoD.Social_InfoPane_Presence_JoinableIcon.new = function ( f1_arg0, f1_arg1, f1_
 	local joinableText = LUI.UIText.new( 0, 0, 36, 236, 0.5, 0.5, -7, 11 )
 	joinableText:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	joinableText:setScale( LanguageOverrideNumber( "japanese", 0.9, 1, 1 ) )
-	joinableText:setText( LocalizeToUpperString( 0x6AA4BA2A90A62C5 ) )
+	joinableText:setText( LocalizeToUpperString( "presence/joinable" ) )
 	joinableText:setTTF( "dinnext_regular" )
 	joinableText:setLetterSpacing( 2 )
 	joinableText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

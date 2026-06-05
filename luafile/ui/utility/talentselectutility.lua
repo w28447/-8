@@ -118,7 +118,7 @@ CoD.TalentSelectUtility.IsTalentEquippedInCurrentSlot = function ( f15_arg0, f15
 end
 
 CoD.TalentSelectUtility.GetMaxAllowedSkills = function ()
-	local f16_local0 = Engine.GetGametypeSetting( 0x635A26C94B56725 ) or 0
+	local f16_local0 = Engine.GetGametypeSetting( "maxallowedskills" ) or 0
 	if f16_local0 > 0 and f16_local0 < #CoD.CACUtility.TalentSlotNameList then
 		return f16_local0
 	else

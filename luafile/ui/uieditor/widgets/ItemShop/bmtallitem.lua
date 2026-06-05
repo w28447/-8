@@ -40,7 +40,7 @@ CoD.BMTallItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	local GlowBorder = LUI.UIImage.new( 0, 1, -26, 26, 0, 1, -26, 26 )
 	GlowBorder:setRGB( 0.77, 0.4, 0.1 )
 	GlowBorder:setAlpha( 0 )
-	GlowBorder:setImage( RegisterImage( 0x254D6690EDE327D ) )
+	GlowBorder:setImage( RegisterImage( "uie_ui_menu_item_shop_glow_border" ) )
 	GlowBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	GlowBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	GlowBorder:setupNineSliceShader( 70, 70 )
@@ -50,7 +50,7 @@ CoD.BMTallItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	local GlowBorder2 = LUI.UIImage.new( 0, 1, -3, 3, 0, 1, -3, 3 )
 	GlowBorder2:setRGB( 1, 0.87, 0 )
 	GlowBorder2:setAlpha( 0 )
-	GlowBorder2:setImage( RegisterImage( 0x254D6690EDE327D ) )
+	GlowBorder2:setImage( RegisterImage( "uie_ui_menu_item_shop_glow_border" ) )
 	GlowBorder2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	GlowBorder2:setShaderVector( 0, 0, 0, 0, 0 )
 	GlowBorder2:setupNineSliceShader( 12, 12 )
@@ -133,7 +133,7 @@ CoD.BMTallItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	
 	local MysteryItemSilver = LUI.UIImage.new( 0, 0, -10, 250, 0, 0, -12, 520 )
 	MysteryItemSilver:setAlpha( 0 )
-	MysteryItemSilver:setImage( RegisterImage( 0x5CE0150279655AB ) )
+	MysteryItemSilver:setImage( RegisterImage( "uie_ui_menu_mtx_card_offer_silver" ) )
 	self:addElement( MysteryItemSilver )
 	self.MysteryItemSilver = MysteryItemSilver
 	

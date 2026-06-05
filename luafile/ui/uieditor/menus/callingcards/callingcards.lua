@@ -22,7 +22,7 @@ LUI.createMenu.CallingCards = function ( f1_arg0, f1_arg1 )
 	self.Background = Background
 	
 	local MenuFrame = CoD.GenericMenuFrameIdentity.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	MenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0xED22CCD3920E18B ) )
+	MenuFrame.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/calling_cards_caps" ) )
 	MenuFrame:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -78,17 +78,17 @@ LUI.createMenu.CallingCards = function ( f1_arg0, f1_arg1 )
 	TrialWidget:linkToElementModel( SafeAreaTabs.FETabBar.Tabs.grid, nil, false, function ( model )
 		TrialWidget:setModel( model, f1_arg0 )
 	end )
-	self:registerEventHandler( "list_active_changed", function ( element, event )
+	self:registerEventHandler( "list_active_changed", function ( self, event )
 		local f8_local0 = nil
-		CoD.ChallengesUtility.UpdateCardListFromTabChanged( f1_local1, element, f1_arg0 )
+		CoD.ChallengesUtility.UpdateCardListFromTabChanged( f1_local1, self, f1_arg0 )
 		return f8_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		GoBack( self, f9_arg2 )
-		UploadStats( self, f9_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
+		UploadStats( self, controller )
 		return true
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

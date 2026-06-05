@@ -145,7 +145,7 @@ CoD.PaintjobSelectorItem_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local PlusIcon = LUI.UIImage.new( 0.5, 0.5, -12, 12, 0.5, 0.5, -12, 12 )
 	PlusIcon:setAlpha( 0 )
-	PlusIcon:setImage( RegisterImage( 0x1B97A54D41F4B80 ) )
+	PlusIcon:setImage( RegisterImage( "uie_ui_menu_common_add_plus" ) )
 	self:addElement( PlusIcon )
 	self.PlusIcon = PlusIcon
 	

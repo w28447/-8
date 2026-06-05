@@ -22,12 +22,12 @@ CoD.CodCaster_Keyboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local TintBody02 = LUI.UIImage.new( 0, 0, 387.5, 1514.5, 0, 0, 198, 882 )
 	TintBody02:setRGB( 0.87, 0.87, 0.87 )
-	TintBody02:setImage( RegisterImage( 0xDEEBB22EE3BB003 ) )
+	TintBody02:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_bg" ) )
 	self:addElement( TintBody02 )
 	self.TintBody02 = TintBody02
 	
 	local Keyboard = LUI.UIImage.new( 0, 0, 393, 1527, 0, 0, 221, 859 )
-	Keyboard:setImage( RegisterImage( 0xF0B3E9CF39EE5E4 ) )
+	Keyboard:setImage( RegisterImage( "uie_ui_codcaster_keyboard" ) )
 	self:addElement( Keyboard )
 	self.Keyboard = Keyboard
 	

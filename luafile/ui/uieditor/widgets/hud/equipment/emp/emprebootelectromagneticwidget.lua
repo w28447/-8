@@ -14,7 +14,7 @@ CoD.EmpRebootElectromagneticWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local CenterBox = LUI.UIImage.new( 0.5, 0.5, -321, 321, 0.5, 0.5, -37, 37 )
 	CenterBox:setRGB( 0.73, 0, 0 )
-	CenterBox:setImage( RegisterImage( 0xA091CA57D6C0666 ) )
+	CenterBox:setImage( RegisterImage( "uie_t7_hud_outofbounds_centerbox" ) )
 	CenterBox:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterBox )
 	self.CenterBox = CenterBox
@@ -22,13 +22,13 @@ CoD.EmpRebootElectromagneticWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local CenterBox0 = LUI.UIImage.new( 0.5, 0.5, -321, 321, 0.5, 0.5, -37, 37 )
 	CenterBox0:setRGB( 0.73, 0, 0 )
 	CenterBox0:setZoom( -20 )
-	CenterBox0:setImage( RegisterImage( 0xA091CA57D6C0666 ) )
+	CenterBox0:setImage( RegisterImage( "uie_t7_hud_outofbounds_centerbox" ) )
 	CenterBox0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CenterBox0 )
 	self.CenterBox0 = CenterBox0
 	
 	local TextBoxWarningText2 = LUI.UIText.new( 0.5, 0.5, -351, 352, 0.5, 0.5, -15, 18 )
-	TextBoxWarningText2:setText( Engine[0xF9F1239CFD921FE]( 0xD14BFAC3A35DCCF ) )
+	TextBoxWarningText2:setText( Engine[0xF9F1239CFD921FE]( "mp/hud_emp" ) )
 	TextBoxWarningText2:setTTF( "ttmussels_regular" )
 	TextBoxWarningText2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	TextBoxWarningText2:setShaderVector( 0, 0.1, 0, 0, 0 )

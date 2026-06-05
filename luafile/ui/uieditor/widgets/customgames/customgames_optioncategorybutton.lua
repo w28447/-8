@@ -16,7 +16,7 @@ CoD.CustomGames_OptionCategoryButton.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local ButtonBG = LUI.UIImage.new( 0, 0, 0, 240, 0, 0, 0, 110 )
 	ButtonBG:setRGB( 0.38, 0.38, 0.38 )
 	ButtonBG:setAlpha( 0.8 )
-	ButtonBG:setImage( RegisterImage( 0xE3211044E61E1BB ) )
+	ButtonBG:setImage( RegisterImage( "uie_ui_menu_cac_button_bg_generic01" ) )
 	self:addElement( ButtonBG )
 	self.ButtonBG = ButtonBG
 	
@@ -82,7 +82,7 @@ CoD.CustomGames_OptionCategoryButton.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	PixelGrid = LUI.UIImage.new( 0, 0.96, 0, 0, -0.11, 1, 12, 0 )
 	PixelGrid:setAlpha( 0.08 )
-	PixelGrid:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGrid:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PixelGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGrid:setupNineSliceShader( 128, 128 )
@@ -126,7 +126,7 @@ CoD.CustomGames_OptionCategoryButton.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	ItemFrameAdd = LUI.UIImage.new( 0, 0, -3.5, 243.5, 0, 0, -1, 111 )
 	ItemFrameAdd:setAlpha( 0 )
-	ItemFrameAdd:setImage( RegisterImage( 0xC2AE59F4FA74812 ) )
+	ItemFrameAdd:setImage( RegisterImage( "uie_ui_menu_store_element_frame" ) )
 	ItemFrameAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	ItemFrameAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	ItemFrameAdd:setupNineSliceShader( 12, 164 )
@@ -155,7 +155,7 @@ CoD.CustomGames_OptionCategoryButton.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	TopBar:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	TopBar:setAlpha( 0.2 )
 	TopBar:setZRot( -90 )
-	TopBar:setImage( RegisterImage( 0x42BCCF45B82FBED ) )
+	TopBar:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_bar" ) )
 	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBar )
 	self.TopBar = TopBar

@@ -8,7 +8,7 @@ CoD.BM_GoldBarMed.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	self.soundSet = "default"
 	
 	local backing = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 30 )
-	backing:setImage( RegisterImage( 0x5A386F24ED7BB86 ) )
+	backing:setImage( RegisterImage( "ui_icon_blackmarket_lockbar_large" ) )
 	backing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	backing:setShaderVector( 0, 0, 0, 0, 0 )
 	backing:setupNineSliceShader( 150, 53 )

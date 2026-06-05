@@ -1,36 +1,36 @@
-CoD[0xA99D05EEE776A3] = InheritFrom( LUI.UIElement )
-CoD[0xA99D05EEE776A3].__defaultWidth = 720
-CoD[0xA99D05EEE776A3].__defaultHeight = 180
-CoD[0xA99D05EEE776A3].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_specialized_master = InheritFrom( LUI.UIElement )
+CoD.callingcards_specialized_master.__defaultWidth = 720
+CoD.callingcards_specialized_master.__defaultHeight = 180
+CoD.callingcards_specialized_master.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0xA99D05EEE776A3] )
+	self:setClass( CoD.callingcards_specialized_master )
 	self.id = "CallingCards_Specialized_Master"
 	self.soundSet = "default"
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local CardIcon = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	CardIcon:setImage( RegisterImage( 0x434A15996B65B48 ) )
-	CardIcon:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
+	CardIcon:setImage( RegisterImage( "uie_t7_icon_callingcard_temp2_lrg" ) )
+	CardIcon:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_blend" ) )
 	self:addElement( CardIcon )
 	self.CardIcon = CardIcon
 	
 	local background = LUI.UIImage.new( 0, 0, 0, 720, 0, 0, 0, 180 )
-	background:setImage( RegisterImage( 0x900097710BBB537 ) )
-	background:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	background:setImage( RegisterImage( "uie_background_01" ) )
+	background:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	background:setShaderVector( 0, 1, 1, 0, 0 )
 	background:setShaderVector( 1, 0.03, 0, 0, 0 )
 	self:addElement( background )
 	self.background = background
 	
 	local bear = LUI.UIImage.new( 0, 0, 0, 720, 0, 0, 0, 180 )
-	bear:setImage( RegisterImage( 0x310EFE34D01D55 ) )
+	bear:setImage( RegisterImage( "uie_bear" ) )
 	self:addElement( bear )
 	self.bear = bear
 	
 	local colorOverlay = LUI.UIImage.new( 0, 0, 0, 720, 0, 0, 0, 180 )
 	colorOverlay:setAlpha( 0.7 )
 	colorOverlay:setImage( RegisterImage( "uie_color_overlay" ) )
-	colorOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( 0x655565C7B387234 ) )
+	colorOverlay:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_multiply" ) )
 	self:addElement( colorOverlay )
 	self.colorOverlay = colorOverlay
 	
@@ -41,20 +41,20 @@ CoD[0xA99D05EEE776A3].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.bearBlack = bearBlack
 	
 	local bearDetails = LUI.UIImage.new( 0, 0, 0, 720, 0, 0, 0, 180 )
-	bearDetails:setImage( RegisterImage( 0x96C0FB12017B709 ) )
+	bearDetails:setImage( RegisterImage( "uie_bear_features" ) )
 	self:addElement( bearDetails )
 	self.bearDetails = bearDetails
 	
 	local eyeGlow = LUI.UIImage.new( 0, 0, 398.5, 493.5, 0, 0, 16, 68 )
 	eyeGlow:setZRot( -35 )
-	eyeGlow:setImage( RegisterImage( 0x299DDAEBACCEECD ) )
+	eyeGlow:setImage( RegisterImage( "uie_fire_glow" ) )
 	eyeGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( eyeGlow )
 	self.eyeGlow = eyeGlow
 	
 	local eyeGlow2 = LUI.UIImage.new( 0, 0, 481.5, 576.5, 0, 0, 59, 111 )
 	eyeGlow2:setZRot( -24 )
-	eyeGlow2:setImage( RegisterImage( 0x299DDAEBACCEECD ) )
+	eyeGlow2:setImage( RegisterImage( "uie_fire_glow" ) )
 	eyeGlow2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( eyeGlow2 )
 	self.eyeGlow2 = eyeGlow2
@@ -66,7 +66,7 @@ CoD[0xA99D05EEE776A3].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	return self
 end
 
-CoD[0xA99D05EEE776A3].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_specialized_master.__resetProperties = function ( f2_arg0 )
 	f2_arg0.bear:completeAnimation()
 	f2_arg0.bearBlack:completeAnimation()
 	f2_arg0.bearDetails:completeAnimation()
@@ -80,7 +80,7 @@ CoD[0xA99D05EEE776A3].__resetProperties = function ( f2_arg0 )
 	f2_arg0.eyeGlow2:setAlpha( 1 )
 end
 
-CoD[0xA99D05EEE776A3].__clipsPerState = {
+CoD.callingcards_specialized_master.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()

@@ -10,7 +10,7 @@ CoD.CommonIdentityMemberNameStreamlined.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local TiledwhiteNoiseBacking = LUI.UIImage.new( 0, 0, -4, 442, 0, 0, -9.5, 33.5 )
 	TiledwhiteNoiseBacking:setAlpha( 0.02 )
-	TiledwhiteNoiseBacking:setImage( RegisterImage( 0x7167D8C33A06020 ) )
+	TiledwhiteNoiseBacking:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
 	TiledwhiteNoiseBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledwhiteNoiseBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledwhiteNoiseBacking:setupNineSliceShader( 64, 64 )

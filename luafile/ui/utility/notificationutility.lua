@@ -78,7 +78,7 @@ CoD.NotificationUtility.GameUpdateMessages = {
 		title = 0x222CD96258234C9
 	},
 	[CoD.NotificationUtility.GameUpdateMessageEnum.CHANGE_CLASS_NEXT_SPAWN] = {
-		title = 0x81A96FE9C28ADA2,
+		title = "mp/change_class_next_spawn",
 		colorSet = ColorSet.White
 	},
 	[CoD.NotificationUtility.GameUpdateMessageEnum.NO_RESPAWNS_REMAINING] = {
@@ -90,11 +90,11 @@ CoD.NotificationUtility.GameUpdateMessages = {
 		colorSet = ColorSet.White
 	},
 	[CoD.NotificationUtility.GameUpdateMessageEnum.SPRECTRE_RISING_KILL_TARGET] = {
-		title = 0xAF6C5BE452685B,
+		title = "wz/sprectre_rising_kill_target",
 		colorSet = ColorSet.White
 	},
 	[CoD.NotificationUtility.GameUpdateMessageEnum.SPRECTRE_RISING_SURVIVE] = {
-		title = 0x51255F540A6BED,
+		title = "wz/sprectre_rising_survive",
 		colorSet = ColorSet.White
 	},
 	[CoD.NotificationUtility.GameUpdateMessageEnum.SPRECTRE_RISING_TARGET_KILLED] = {
@@ -107,7 +107,7 @@ CoD.NotificationUtility.GameUpdateMessages = {
 	}
 }
 CoD.NotificationUtility.InvalidCmdHintStrings = {
-	[Enum[0x871813ED3FF6169][0xC53A048EA2553DF]] = 0x7605398DCE96965
+	[Enum[0x871813ED3FF6169][0xC53A048EA2553DF]] = "weapon/cant_plant_equipment"
 }
 CoD.NotificationUtility.TieredChallengeCheck = function ( f1_arg0, f1_arg1 )
 	if not IsMultiplayer() then
@@ -132,7 +132,7 @@ CoD.NotificationUtility.PriorityFunctions = {
 CoD.NotificationUtility.CreateNotification = {}
 CoD.NotificationUtility.CombineNotifications = {}
 CoD.NotificationUtility.DoNotificationsCombine = {}
-CoD.NotificationUtility.XPRewardImage = 0x620E589747ADBAB
+CoD.NotificationUtility.XPRewardImage = "t7_hud_mp_notifications_xp_blue"
 CoD.NotificationUtility.UpdateVisibility = function ( f2_arg0, f2_arg1 )
 	if not (not CoD.IsShoutcaster( f2_arg1.controller ) or CoD.ShoutcasterProfileVarBool( f2_arg1.controller, "shoutcaster_ds_playernotifications" )) or Engine.IsVisibilityBitSet( f2_arg0.controller, Enum.UIVisibilityBit[0xD3ABF9A2753CE40] ) or Engine.IsVisibilityBitSet( f2_arg0.controller, Enum.UIVisibilityBit[0xB8E9B69F4B87954] ) then
 		f2_arg0:setAlpha( 0 )
@@ -176,13 +176,13 @@ CoD.NotificationUtility.InitNotifications = function ( f3_arg0, f3_arg1, f3_arg2
 			name = modelValue,
 			data = CoD.GetScriptNotifyData( model )
 		}
-		if CoD.HUDUtility.IsAnyGameType( f3_arg1, "ztrials" ) and CoD.ModelUtility.IsGlobalModelValueEqualTo( "ZMHudGlobal.trials.hudDeactivated", 1 ) and not modelValue == 0xEF28E20D6506D98 then
+		if CoD.HUDUtility.IsAnyGameType( f3_arg1, "ztrials" ) and CoD.ModelUtility.IsGlobalModelValueEqualTo( "ZMHudGlobal.trials.hudDeactivated", 1 ) and not modelValue == "clear_notification_queue" then
 			return 
-		elseif modelValue == 0x14C233AD9DDE75E then
-			if (Engine[0x9E5BE3B4BBA4E0E]( "ui_show_medals" ) or Engine[0x573048F8D3B4E25]()) and CoD.JobFeedUtility.GetJobType( f4_local1.data[1] ) == 0x0 and (CoD.HUDUtility.FullscreenController == nil or f3_arg1 == CoD.HUDUtility.FullscreenController) then
+		elseif modelValue == "medal_received" then
+			if (Engine[0x9E5BE3B4BBA4E0E]( "ui_show_medals" ) or Engine[0x573048F8D3B4E25]()) and CoD.JobFeedUtility.GetJobType( f4_local1.data[1] ) == "" and (CoD.HUDUtility.FullscreenController == nil or f3_arg1 == CoD.HUDUtility.FullscreenController) then
 				CoD.NotificationUtility.OnMedalReceived( f3_arg0, f4_local1 )
 			end
-		elseif modelValue == 0x9EF7B727A7074D0 and not IsWarzone() then
+		elseif modelValue == "challenge_complete" and not IsWarzone() then
 			local f4_local2 = {
 				challengeID = f4_local1.data[1],
 				itemIndex = f4_local1.data[2],
@@ -200,7 +200,7 @@ CoD.NotificationUtility.InitNotifications = function ( f3_arg0, f3_arg1, f3_arg2
 			if f4_local2.rewardInfo then
 				CoD.NotificationUtility.AddNotification( f3_arg0, f4_local2 )
 			end
-		elseif modelValue == 0x59FF24D49CE42D6 then
+		elseif modelValue == "gun_level_complete" then
 			CoD.NotificationUtility.AddNotification( f3_arg0, {
 				rank = f4_local1.data[1],
 				itemIndex = f4_local1.data[2],
@@ -208,23 +208,23 @@ CoD.NotificationUtility.InitNotifications = function ( f3_arg0, f3_arg1, f3_arg2
 				rewardXP = f4_local1.data[4],
 				type = "WeaponLevelUp"
 			} )
-		elseif modelValue == 0x82A75A8974ED6D5 then
+		elseif modelValue == "rank_up" then
 			CoD.NotificationUtility.AddNotification( f3_arg0, {
 				rank = f4_local1.data[1],
 				prestige = f4_local1.data[2],
 				unlockTokensAdded = f4_local1.data[3],
 				type = "RankUp"
 			} )
-		elseif modelValue == 0xEF28E20D6506D98 then
+		elseif modelValue == "clear_notification_queue" then
 			CoD.NotificationUtility.ClearNotificationQueue( f3_arg0 )
-		elseif modelValue == 0x89BACBF80B953C9 then
+		elseif modelValue == "waypoint_captured" then
 			local f4_local2 = CoD.GetScriptNotifyData( model )
 			CoD.NotificationUtility.AddNotification( f3_arg0, {
 				objName = Engine.GetIString( f4_local2[1], "CS_LOCALIZED_STRINGS" ),
 				percentage = f4_local2[2],
 				type = "WaypointCaptured"
 			} )
-		elseif modelValue == 0x739C4BD5BAF83BC and not IsWarzone() then
+		elseif modelValue == "loot_contract_complete" and not IsWarzone() then
 			CoD.NotificationUtility.AddNotification( f3_arg0, {
 				contractId = f4_local1.data[1],
 				type = "LootContractComplete"
@@ -328,7 +328,7 @@ CoD.NotificationUtility.CreateNotification.WeaponLevelUp = function ( f15_arg0, 
 	local f15_local0 = f15_arg2:create( "title" )
 	f15_local0:set( Engine[0xF9F1239CFD921FE]( Engine.GetItemName( f15_arg1.itemIndex ) ) )
 	f15_local0 = f15_arg2:create( "subtitle" )
-	f15_local0:set( Engine[0xF9F1239CFD921FE]( 0xDF1FC4A933D0FDA, f15_arg1.rank + 2 ) )
+	f15_local0:set( Engine[0xF9F1239CFD921FE]( "mpui/level_n", f15_arg1.rank + 2 ) )
 	f15_local0 = CoD.CACUtility.GetUnlockableItemInfo( f15_arg1.itemIndex, CoD.NotificationUtility.SessionMode )
 	local f15_local1
 	if f15_local0 then
@@ -344,7 +344,7 @@ CoD.NotificationUtility.CreateNotification.WeaponLevelUp = function ( f15_arg0, 
 				f15_arg0:setAlpha( 0 )
 			end
 			if f15_arg1.rewardXP and f15_arg1.rewardXP > 0 then
-				f15_arg0.NotificationRewardQueue:addReward( CoD.NotificationUtility.AccentColors[f15_arg1.type], CoD.NotificationUtility.XPRewardImage, Engine[0xF9F1239CFD921FE]( 0xD6137AA2004DB90, f15_arg1.rewardXP ) )
+				f15_arg0.NotificationRewardQueue:addReward( CoD.NotificationUtility.AccentColors[f15_arg1.type], CoD.NotificationUtility.XPRewardImage, Engine[0xF9F1239CFD921FE]( "rank/xp", f15_arg1.rewardXP ) )
 			end
 			f15_local2 = f15_arg1.attachmentIndex
 			if f15_local2 and f15_local2 ~= 0 then
@@ -383,13 +383,13 @@ CoD.NotificationUtility.CreateNotification.RankUp = function ( f16_arg0, f16_arg
 	local f16_local3 = f16_arg2:create( "title" )
 	f16_local3:set( CoD.BaseUtility.LocalizeIfXHash( CoD.GetRankName( f16_arg1.rank, f16_arg1.prestige ) ) )
 	f16_local3 = f16_arg2:create( "subtitle" )
-	f16_local3:set( Engine[0xF9F1239CFD921FE]( 0xDF1FC4A933D0FDA, f16_local1 ) )
+	f16_local3:set( Engine[0xF9F1239CFD921FE]( "mpui/level_n", f16_local1 ) )
 	f16_local3 = f16_arg2:create( "icon" )
 	f16_local3:set( GetRankIconLarge( f16_local2 ) )
 	f16_local3 = f16_arg2:create( "color" )
 	f16_local3:set( CoD.NotificationUtility.AccentColors[f16_arg1.type] )
 	if f16_arg1.rewardXP and f16_arg1.rewardXP > 0 then
-		f16_arg0.NotificationRewardQueue:addReward( CoD.NotificationUtility.AccentColors[f16_arg1.type], CoD.NotificationUtility.XPRewardImage, Engine[0xF9F1239CFD921FE]( 0xD6137AA2004DB90, f16_arg1.rewardXP ) )
+		f16_arg0.NotificationRewardQueue:addReward( CoD.NotificationUtility.AccentColors[f16_arg1.type], CoD.NotificationUtility.XPRewardImage, Engine[0xF9F1239CFD921FE]( "rank/xp", f16_arg1.rewardXP ) )
 	end
 	if not f16_local0 then
 		f16_local3 = Engine.GetUnlockedItemsForLevel( f16_arg0.controller, f16_arg1.rank )
@@ -494,7 +494,7 @@ CoD.NotificationUtility.CreateNotification.LootContractComplete = function ( f18
 	local f18_local4 = CoDShared.LootContracts.GetContractsDifficulty( f18_arg1.contractId )
 	local f18_local5 = Engine[0xF9F1239CFD921FE]( f18_local1, f18_local2 )
 	local f18_local6 = CoD.ContractUtility.GetLootContractIcon( f18_local3, f18_local4 )
-	if f18_local3 == 0x5E8570DB713B763 then
+	if f18_local3 == "play" then
 		f18_local6 = CoD.ContractUtility.GetLootContractIcon( f18_local3, CoDShared.LootContracts.GetContractsGameMode( f18_arg1.contractId ) )
 	end
 	local f18_local7 = CoDShared.LootContracts.GetCurrentContractGameMode()
@@ -503,12 +503,12 @@ CoD.NotificationUtility.CreateNotification.LootContractComplete = function ( f18
 		for f18_local13, f18_local14 in ipairs( f18_local8.pinnedContracts[f18_local7] ) do
 			if f18_local14.id == f18_arg1.contractId then
 				if f18_local14.xpAmount and f18_local14.xpAmount > 0 then
-					f18_arg0.NotificationRewardQueue:addReward( CoD.NotificationUtility.AccentColors[f18_arg1.type], CoD.NotificationUtility.XPRewardImage, Engine[0xF9F1239CFD921FE]( 0xD6137AA2004DB90, f18_local14.xpAmount ) )
+					f18_arg0.NotificationRewardQueue:addReward( CoD.NotificationUtility.AccentColors[f18_arg1.type], CoD.NotificationUtility.XPRewardImage, Engine[0xF9F1239CFD921FE]( "rank/xp", f18_local14.xpAmount ) )
 				end
 				if f18_local14.reward and f18_local14.reward.type == 1 and f18_local14.reward.amount > 0 then
 				
 				elseif f18_local14.reward and f18_local14.reward.type == 3 and f18_local14.reward.id == "21" and f18_local14.reward.amount > 0 then
-					f18_arg0.NotificationRewardQueue:addReward( CoD.NotificationUtility.AccentColors[f18_arg1.type], 0x76C393335224D3F, Engine[0xF9F1239CFD921FE]( 0xF251843889153EE, f18_local14.reward.amount ) )
+					f18_arg0.NotificationRewardQueue:addReward( CoD.NotificationUtility.AccentColors[f18_arg1.type], "ui_icon_nebulium_medium", Engine[0xF9F1239CFD921FE]( 0xF251843889153EE, f18_local14.reward.amount ) )
 					break
 				end
 				local f18_local12
@@ -517,7 +517,7 @@ CoD.NotificationUtility.CreateNotification.LootContractComplete = function ( f18
 					if not f18_local12 then
 					
 					else
-						f18_arg0.NotificationRewardQueue:addReward( CoD.NotificationUtility.AccentColors[f18_arg1.type], 0xD0C0C9F62783A5C, Engine[0xF9F1239CFD921FE]( f18_local12, f18_local14.reward.amount ) )
+						f18_arg0.NotificationRewardQueue:addReward( CoD.NotificationUtility.AccentColors[f18_arg1.type], "ui_icon_blackmarket_reserves_case_small", Engine[0xF9F1239CFD921FE]( f18_local12, f18_local14.reward.amount ) )
 					end
 				end
 				f18_local12 = 0xC18D8F7DBC9D643
@@ -541,19 +541,19 @@ end
 
 CoD.NotificationUtility.GetMedalData = function ( f20_arg0 )
 	local f20_local0 = {
-		name = 0x0,
-		description = 0x0,
-		iconSmall = 0xC18DE1AB1EC31C4,
-		iconLarge = 0xC18DE1AB1EC31C4,
+		name = "",
+		description = "",
+		iconSmall = "$default",
+		iconLarge = "$default",
 		widgetName = "BadasseryMedal",
 		foundMedal = false
 	}
 	local f20_local1 = Engine[0x5DC2BA4A99CE43E]( CoD.scoreInfoTable, f20_arg0, CoD.AARUtility.MedalRefCol )
-	if f20_local1 and f20_local1 ~= 0x0 then
+	if f20_local1 and f20_local1 ~= "" then
 		local f20_local2 = Engine[0xE00B2F29271C60B]( f20_local1 )
 		if f20_local2 then
-			f20_local0.name = f20_local2[0x8E69067413FE145] or 0x0
-			f20_local0.description = f20_local2["description"] or 0x0
+			f20_local0.name = f20_local2[0x8E69067413FE145] or ""
+			f20_local0.description = f20_local2.description or ""
 			f20_local0.iconSmall = f20_local2[0xDA32D2BFAA81507]
 			f20_local0.iconLarge = f20_local2[0x8027A8209C5D65F]
 			f20_local0.widgetName = f20_local2[0x7F0119E3154625]
@@ -571,7 +571,7 @@ CoD.NotificationUtility.OnMedalReceived = function ( f21_arg0, f21_arg1 )
 	self:setAlpha( 0 )
 	self:setImage( RegisterImage( f21_local1.iconSmall ) )
 	self:setupUIStreamedImage( 4000 )
-	self:registerEventHandler( "streamed_image_ready", function ( element, event )
+	self:registerEventHandler( "streamed_image_ready", function ( self, event )
 		f21_arg0.streamedImages[self] = nil
 		CoD.NotificationUtility.AddNotification( f21_arg0, {
 			scoreInfoIndex = f21_local0,
@@ -579,7 +579,7 @@ CoD.NotificationUtility.OnMedalReceived = function ( f21_arg0, f21_arg1 )
 			streamingMedalImage = self
 		} )
 	end )
-	self:registerEventHandler( "streamed_image_timed_out", function ( element, event )
+	self:registerEventHandler( "streamed_image_timed_out", function ( self, event )
 		f21_arg0.streamedImages[self] = nil
 		self:close()
 	end )
@@ -880,7 +880,7 @@ CoD.NotificationUtility.RewardCreateRewardWidget = function ( f42_arg0, f42_arg1
 		f42_local0:set( f42_arg1.size )
 	else
 		f42_local0 = f42_arg2:create( "size" )
-		f42_local0:set( 0x0 )
+		f42_local0:set( "" )
 	end
 	return CoD.NotificationRewardWidget.new( f42_arg0.menu, f42_arg0.controller, 0, 0, 0, 384, 0, 0, 0, 96 )
 end
@@ -973,11 +973,11 @@ CoD.NotificationUtility.ReadyEventsPostLoad = function ( f47_arg0, f47_arg1 )
 	
 	local f47_local1 = function ()
 		local f49_local0 = Engine.GetModel( DataSources.PerController.getModel( f47_arg1 ), "vehicle.vehicleType" )
-		return f49_local0 and Engine.GetModelValue( f49_local0 ) ~= 0x0
+		return f49_local0 and Engine.GetModelValue( f49_local0 ) ~= ""
 	end
 	
 	local f47_local2 = function ()
-		return CoD.HUDUtility.IsGameTypeEqualToString( "ball" ) and IsCurrentWeaponReference( f47_arg1, 0xA13D89BA9FBCA24 )
+		return CoD.HUDUtility.IsGameTypeEqualToString( "ball" ) and IsCurrentWeaponReference( f47_arg1, "ball" )
 	end
 	
 	f47_arg0.appendNotification = function ( f51_arg0, f51_arg1 )
@@ -1259,6 +1259,6 @@ CoD.NotificationUtility.InitHealNagNotification = function ( f67_arg0, f67_arg1 
 end
 
 CoD.NotificationUtility.GetInvalidCmdHint = function ( f75_arg0 )
-	return Engine[0xF9F1239CFD921FE]( CoD.NotificationUtility.InvalidCmdHintStrings[f75_arg0] or 0x0 )
+	return Engine[0xF9F1239CFD921FE]( CoD.NotificationUtility.InvalidCmdHintStrings[f75_arg0] or "" )
 end
 

@@ -18,7 +18,7 @@ CoD.LiveEventViewerStatusWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local liveCircle = LUI.UIImage.new( 0, 0, 0, 30, 0.5, 0.5, -15, 15 )
 	liveCircle:setRGB( 1, 0, 0 )
-	liveCircle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x50BD503A1EC49C7 ) )
+	liveCircle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_elliptical_ring" ) )
 	liveCircle:setShaderVector( 0, 8, 2, 0, 0 )
 	liveCircle:setShaderVector( 1, 20, 20, 0, 0 )
 	liveCircle:setShaderVector( 2, 0.2, 0.2, 0, 0 )
@@ -96,7 +96,7 @@ CoD.LiveEventViewerStatusWidget.__clipsPerState = {
 			f9_arg0:__resetProperties()
 			f9_arg0:setupElementClipCounter( 2 )
 			f9_arg0.liveLabel:completeAnimation()
-			f9_arg0.liveLabel:setText( Engine[0xF9F1239CFD921FE]( 0xD9EF34E16C4EB58 ) )
+			f9_arg0.liveLabel:setText( Engine[0xF9F1239CFD921FE]( "menu/replay_caps" ) )
 			f9_arg0.clipFinished( f9_arg0.liveLabel )
 			f9_arg0.liveCircle:completeAnimation()
 			f9_arg0.liveCircle:setRGB( 0.02, 1, 0 )

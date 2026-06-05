@@ -44,7 +44,7 @@ LUI.createMenu.LeaguePlayGameModeRules = function ( f1_arg0, f1_arg1 )
 	self.BGDotPatternTop = BGDotPatternTop
 	
 	local Control = LUI.UIImage.new( 0.5, 0.5, -433.5, -193.5, 0, 0, 648, 888 )
-	Control:setImage( RegisterImage( 0xB257A30BA2452FB ) )
+	Control:setImage( RegisterImage( "uie_ui_icon_gamemode_infiltration_large" ) )
 	self:addElement( Control )
 	self.Control = Control
 	
@@ -70,7 +70,7 @@ LUI.createMenu.LeaguePlayGameModeRules = function ( f1_arg0, f1_arg1 )
 	self.ControlTitle = ControlTitle
 	
 	local Hardpoint = LUI.UIImage.new( 0.5, 0.5, -433.5, -193.5, 0, 0, 423, 663 )
-	Hardpoint:setImage( RegisterImage( 0x427C23199BBDE9F ) )
+	Hardpoint:setImage( RegisterImage( "uie_ui_icon_gamemode_hardpoint_large" ) )
 	self:addElement( Hardpoint )
 	self.Hardpoint = Hardpoint
 	
@@ -96,7 +96,7 @@ LUI.createMenu.LeaguePlayGameModeRules = function ( f1_arg0, f1_arg1 )
 	self.HardpointTitle = HardpointTitle
 	
 	local SearchAndDestroy = LUI.UIImage.new( 0.5, 0.5, -433.5, -193.5, 0, 0, 197, 437 )
-	SearchAndDestroy:setImage( RegisterImage( 0xD6533ECA6B3F5DF ) )
+	SearchAndDestroy:setImage( RegisterImage( "uie_ui_icon_gamemode_searchanddestroy_large" ) )
 	self:addElement( SearchAndDestroy )
 	self.SearchAndDestroy = SearchAndDestroy
 	
@@ -167,11 +167,11 @@ LUI.createMenu.LeaguePlayGameModeRules = function ( f1_arg0, f1_arg1 )
 			end
 		}
 	} )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		GoBack( self, f4_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x3996BAAC73C3F6D, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/dismiss", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

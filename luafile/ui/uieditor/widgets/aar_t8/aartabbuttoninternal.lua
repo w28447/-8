@@ -14,7 +14,7 @@ CoD.AARTabButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.anyChildUsesUpdateState = true
 	
 	local LB = CoD.BumperButtonWithKeyMouseText.new( f1_arg0, f1_arg1, 0.5, 0.5, -775, -575, 0, 0, 1, 31 )
-	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBDCD5292604F434 ) )
+	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/lb" ) )
 	LB.GamepadPrompt:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	LB.KeyPrompt.keybind:setText( CoD.BaseUtility.AlreadyLocalized( "Q" ) )
 	self:addElement( LB )
@@ -40,7 +40,7 @@ CoD.AARTabButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.Tabs = Tabs
 	
 	local RB = CoD.BumperButtonWithKeyMouseText.new( f1_arg0, f1_arg1, 0.5, 0.5, 575, 775, 0, 0, 1, 35 )
-	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBFED5292621DA9A ) )
+	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/rb" ) )
 	RB.KeyPrompt.keybind:setText( CoD.BaseUtility.AlreadyLocalized( "E" ) )
 	self:addElement( RB )
 	self.RB = RB

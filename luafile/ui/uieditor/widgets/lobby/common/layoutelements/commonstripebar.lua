@@ -9,14 +9,14 @@ CoD.CommonStripeBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local TopStripe = LUI.UIImage.new( 0, 0, 0, 696, 0, 0, 0, 16 )
-	TopStripe:setImage( RegisterImage( 0xA0F654633E4C64E ) )
+	TopStripe:setImage( RegisterImage( "uie_ui_menu_inspection_window_loading_stripe" ) )
 	TopStripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	TopStripe:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( TopStripe )
 	self.TopStripe = TopStripe
 	
 	local TopStripeWipe = LUI.UIImage.new( 0, 0, 0, 696, 0, 0, 0, 16 )
-	TopStripeWipe:setImage( RegisterImage( 0xA0F654633E4C64E ) )
+	TopStripeWipe:setImage( RegisterImage( "uie_ui_menu_inspection_window_loading_stripe" ) )
 	TopStripeWipe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	TopStripeWipe:setShaderVector( 0, 0, 1, 0, 0 )
 	TopStripeWipe:setShaderVector( 1, 0, 0, 0, 0 )

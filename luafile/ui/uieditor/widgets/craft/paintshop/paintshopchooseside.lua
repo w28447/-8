@@ -9,7 +9,7 @@ CoD.PaintshopChooseSide.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local text = LUI.UIText.new( 0, 0, 0, 320, 0, 0, 1, 16 )
 	text:setRGB( 0.92, 0.89, 0.72 )
-	text:setText( Engine[0xF9F1239CFD921FE]( 0x63E51BFF17859F1 ) )
+	text:setText( Engine[0xF9F1239CFD921FE]( "mpui/primary_caps" ) )
 	text:setTTF( "ttmussels_demibold" )
 	text:setLetterSpacing( 6 )
 	text:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

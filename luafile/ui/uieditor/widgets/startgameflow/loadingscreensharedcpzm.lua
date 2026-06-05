@@ -63,7 +63,7 @@ CoD.LoadingScreenSharedCPZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local loadingBar = LUI.UIImage.new( 0, 1, 186, -186, 0, 0, 1000, 1032 )
 	loadingBar:setRGB( 0.6, 0.6, 0.6 )
-	loadingBar:setImage( RegisterImage( 0x6578D654172F92F ) )
+	loadingBar:setImage( RegisterImage( "uie_ui_menu_loadingbar_fill_zm" ) )
 	loadingBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_normal" ) )
 	loadingBar:setShaderVector( 1, 0, 0, 0, 0 )
 	loadingBar:setShaderVector( 2, 1, 0, 0, 0 )
@@ -80,7 +80,7 @@ CoD.LoadingScreenSharedCPZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local loadingBarAdd = LUI.UIImage.new( 0, 1, 186, -186, 0, 0, 1004, 1028 )
 	loadingBarAdd:setRGB( 0.6, 0.6, 0.6 )
-	loadingBarAdd:setImage( RegisterImage( 0x6578D654172F92F ) )
+	loadingBarAdd:setImage( RegisterImage( "uie_ui_menu_loadingbar_fill_zm" ) )
 	loadingBarAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	loadingBarAdd:setShaderVector( 1, 0, 0, 0, 0 )
 	loadingBarAdd:setShaderVector( 2, 1, 0, 0, 0 )

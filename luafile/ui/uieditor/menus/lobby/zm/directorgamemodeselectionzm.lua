@@ -47,7 +47,7 @@ LUI.createMenu.DirectorGamemodeSelectionZM = function ( f1_arg0, f1_arg1 )
 	
 	local TiledPlusGrid = LUI.UIImage.new( 0.5, 0.5, -1095, 960, 0, 0, 0, 1080 )
 	TiledPlusGrid:setAlpha( 0.05 )
-	TiledPlusGrid:setImage( RegisterImage( 0x6E37BAE22631294 ) )
+	TiledPlusGrid:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_repeat_plusgrid" ) )
 	TiledPlusGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledPlusGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledPlusGrid:setupNineSliceShader( 220, 220 )
@@ -168,23 +168,23 @@ LUI.createMenu.DirectorGamemodeSelectionZM = function ( f1_arg0, f1_arg1 )
 	f1_local11( f1_local10, f1_local12.LastInput, function ( f14_arg0, f14_arg1 )
 		CoD.Menu.UpdateButtonShownState( f14_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x22361E23588705A] )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		GoBack( self, f15_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], nil, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		if CoD.ZombieUtility.TrialsInfo() and IsGamepad( f17_arg2 ) then
-			OpenOverlay( self, "DirectorZMTrialsInfo", f17_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], nil, function ( element, menu, controller, model )
+		if CoD.ZombieUtility.TrialsInfo() and IsGamepad( controller ) then
+			OpenOverlay( self, "DirectorZMTrialsInfo", controller )
 			return true
 		else
 			
 		end
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		if CoD.ZombieUtility.TrialsInfo() and IsGamepad( f18_arg2 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x22361E23588705A], 0xAB419DD8BD872BA, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ZombieUtility.TrialsInfo() and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], 0xAB419DD8BD872BA, nil, nil )
 			return true
 		else
 			return false

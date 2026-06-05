@@ -63,33 +63,33 @@ CoD.ChooseClass_InGame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( customClasssList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if IsPerControllerTablePropertyValue( f6_arg2, "isInMobileArmory", true ) then
-			ChangeClass( f6_arg1, self, f6_arg0, f6_arg2 )
-			LockInput( self, f6_arg2, false )
-			Close( self, f6_arg2 )
-			SetPerControllerTableProperty( f6_arg2, "isInMobileArmory", false )
+	f1_arg0:AddButtonCallbackFunction( customClasssList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if IsPerControllerTablePropertyValue( controller, "isInMobileArmory", true ) then
+			ChangeClass( menu, self, element, controller )
+			LockInput( self, controller, false )
+			Close( self, controller )
+			SetPerControllerTableProperty( controller, "isInMobileArmory", false )
 			return true
-		elseif IsCurrentMenu( f6_arg1, "PositionDraft" ) then
-			ChangeClass( f6_arg1, self, f6_arg0, f6_arg2 )
-			SetMenuState( f6_arg1, "CharacterSelected", f6_arg2 )
+		elseif IsCurrentMenu( menu, "PositionDraft" ) then
+			ChangeClass( menu, self, element, controller )
+			SetMenuState( menu, "CharacterSelected", controller )
 			return true
-		elseif not IsDisabled( f6_arg0, f6_arg2 ) then
-			ChangeClass( f6_arg1, self, f6_arg0, f6_arg2 )
-			CloseStartMenu( f6_arg1, f6_arg2 )
+		elseif not IsDisabled( element, controller ) then
+			ChangeClass( menu, self, element, controller )
+			CloseStartMenu( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		if IsPerControllerTablePropertyValue( f7_arg2, "isInMobileArmory", true ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
+	end, function ( element, menu, controller )
+		if IsPerControllerTablePropertyValue( controller, "isInMobileArmory", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
 			return true
-		elseif IsCurrentMenu( f7_arg1, "PositionDraft" ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
+		elseif IsCurrentMenu( menu, "PositionDraft" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
 			return true
-		elseif not IsDisabled( f7_arg0, f7_arg2 ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
+		elseif not IsDisabled( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], nil )
 			return true
 		else
 			return false
@@ -165,47 +165,47 @@ CoD.ChooseClass_InGame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 		CoD.Menu.UpdateButtonShownState( f14_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0x493152B20AE4F58] )
 		CoD.Menu.UpdateButtonShownState( f14_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0x49A252B20B48936] )
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		if IsCurrentMenu( f15_arg1, "PositionDraft" ) then
-			SetMenuState( f15_arg1, "CharacterSelected", f15_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		if IsCurrentMenu( menu, "PositionDraft" ) then
+			SetMenuState( menu, "CharacterSelected", controller )
 			return true
 		else
-			SendMenuResponse( self, "ChooseClass_InGame", "cancel", f15_arg2 )
-			LockInput( self, f15_arg2, false )
-			ClearMenuSavedState( f15_arg1 )
+			SendMenuResponse( self, "ChooseClass_InGame", "cancel", controller )
+			LockInput( self, controller, false )
+			ClearMenuSavedState( menu )
 			PlaySoundSetSound( self, "menu_go_back" )
-			Close( self, f15_arg2 )
+			Close( self, controller )
 			return true
 		end
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x493152B20AE4F58], nil, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		if IsMultiplayer() and not IsCACCustomClassCountDefault( f17_arg2 ) then
-			chooseClass_TabMPClassesListLeft( self, f17_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x493152B20AE4F58], nil, function ( element, menu, controller, model )
+		if IsMultiplayer() and not IsCACCustomClassCountDefault( controller ) then
+			chooseClass_TabMPClassesListLeft( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		if IsMultiplayer() and not IsCACCustomClassCountDefault( f18_arg2 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x493152B20AE4F58], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if IsMultiplayer() and not IsCACCustomClassCountDefault( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x493152B20AE4F58], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x49A252B20B48936], nil, function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
-		if IsMultiplayer() and not IsCACCustomClassCountDefault( f19_arg2 ) then
-			chooseClass_TabMPClassesListRight( self, f19_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x49A252B20B48936], nil, function ( element, menu, controller, model )
+		if IsMultiplayer() and not IsCACCustomClassCountDefault( controller ) then
+			chooseClass_TabMPClassesListRight( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f20_arg0, f20_arg1, f20_arg2 )
-		if IsMultiplayer() and not IsCACCustomClassCountDefault( f20_arg2 ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x49A252B20B48936], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if IsMultiplayer() and not IsCACCustomClassCountDefault( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x49A252B20B48936], "", nil, nil )
 			return false
 		else
 			return false

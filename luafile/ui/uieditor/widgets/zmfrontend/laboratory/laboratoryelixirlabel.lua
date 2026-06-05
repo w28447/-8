@@ -34,7 +34,7 @@ CoD.LaboratoryElixirLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	name:linkToElementModel( self, "id", true, function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
-			name:setText( Engine[0xF9F1239CFD921FE]( GetItemNameFromRef( Enum.eModes[0x3723205FAE52C4A], f3_local0 ) ) )
+			name:setText( Engine[0xF9F1239CFD921FE]( GetItemNameFromRef( Enum.eModes.mode_zombies, f3_local0 ) ) )
 		end
 	end )
 	self:addElement( name )
@@ -50,7 +50,7 @@ CoD.LaboratoryElixirLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	quantity:linkToElementModel( self, "quantity", true, function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
-			quantity:setText( LocalizeIntoStringIfNotEmpty( 0x9DB9C526E6370AB, f4_local0 ) )
+			quantity:setText( LocalizeIntoStringIfNotEmpty( "menu/multiplier_x", f4_local0 ) )
 		end
 	end )
 	self:addElement( quantity )

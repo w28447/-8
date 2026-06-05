@@ -1,31 +1,31 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_futureracing_asset01" )
 require( "ui/uieditor/widgets/callingcards/callingcards_futureracing_asset02" )
 
-CoD["callingcards_futureracing"] = InheritFrom( LUI.UIElement )
-CoD["callingcards_futureracing"].__defaultWidth = 960
-CoD["callingcards_futureracing"].__defaultHeight = 240
-CoD["callingcards_futureracing"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_futureracing = InheritFrom( LUI.UIElement )
+CoD.callingcards_futureracing.__defaultWidth = 960
+CoD.callingcards_futureracing.__defaultHeight = 240
+CoD.callingcards_futureracing.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD["callingcards_futureracing"] )
+	self:setClass( CoD.callingcards_futureracing )
 	self.id = "CallingCards_FutureRacing"
 	self.soundSet = "none"
 	self.anyChildUsesUpdateState = true
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local backgroundcity = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	backgroundcity:setImage( RegisterImage( 0x38E2385D8CB102 ) )
+	backgroundcity:setImage( RegisterImage( "uie_cc_carsbg" ) )
 	self:addElement( backgroundcity )
 	self.backgroundcity = backgroundcity
 	
 	local smallcars01 = LUI.UIImage.new( 0, 0, 47.5, 655.5, 0, 0, 37, 85 )
 	smallcars01:setZRot( -337 )
-	smallcars01:setImage( RegisterImage( 0xEB3F3D18D6B81AE ) )
+	smallcars01:setImage( RegisterImage( "uie_smallcars01" ) )
 	self:addElement( smallcars01 )
 	self.smallcars01 = smallcars01
 	
 	local smallcars = LUI.UIImage.new( 0, 0, -131, 477, 0, 0, 128, 176 )
 	smallcars:setZRot( -337 )
-	smallcars:setImage( RegisterImage( 0xEB3F3D18D6B81AE ) )
+	smallcars:setImage( RegisterImage( "uie_smallcars01" ) )
 	self:addElement( smallcars )
 	self.smallcars = smallcars
 	
@@ -67,7 +67,7 @@ CoD["callingcards_futureracing"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	return self
 end
 
-CoD["callingcards_futureracing"].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_futureracing.__resetProperties = function ( f2_arg0 )
 	f2_arg0.roadtop:completeAnimation()
 	f2_arg0.explosion1:completeAnimation()
 	f2_arg0.roadbottom:completeAnimation()
@@ -100,7 +100,7 @@ CoD["callingcards_futureracing"].__resetProperties = function ( f2_arg0 )
 	f2_arg0.explosion4:setScale( 1, 1 )
 end
 
-CoD["callingcards_futureracing"].__clipsPerState = {
+CoD.callingcards_futureracing.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -261,7 +261,7 @@ CoD["callingcards_futureracing"].__clipsPerState = {
 		end
 	}
 }
-CoD["callingcards_futureracing"].__onClose = function ( f20_arg0 )
+CoD.callingcards_futureracing.__onClose = function ( f20_arg0 )
 	f20_arg0.roadbottom:close()
 	f20_arg0.roadtop:close()
 end

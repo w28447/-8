@@ -2,19 +2,19 @@ require( "ui/uieditor/widgets/callingcards/loot4/ui_icon_callingcards_assassin_a
 require( "ui/uieditor/widgets/callingcards/loot4/ui_icon_callingcards_assassin_fastlines" )
 require( "ui/uieditor/widgets/callingcards/loot4/ui_icon_callingcards_assassin_victim" )
 
-CoD[0xC823B1D75860E03] = InheritFrom( LUI.UIElement )
-CoD[0xC823B1D75860E03].__defaultWidth = 960
-CoD[0xC823B1D75860E03].__defaultHeight = 240
-CoD[0xC823B1D75860E03].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.ui_icon_callingcards_assassin = InheritFrom( LUI.UIElement )
+CoD.ui_icon_callingcards_assassin.__defaultWidth = 960
+CoD.ui_icon_callingcards_assassin.__defaultHeight = 240
+CoD.ui_icon_callingcards_assassin.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0xC823B1D75860E03] )
+	self:setClass( CoD.ui_icon_callingcards_assassin )
 	self.id = "ui_icon_callingcards_assassin"
 	self.soundSet = "none"
 	self.anyChildUsesUpdateState = true
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local background = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	background:setImage( RegisterImage( 0x7BF15DB5C38AE19 ) )
+	background:setImage( RegisterImage( "uie_ui_icon_callingcards_assassin_bg" ) )
 	self:addElement( background )
 	self.background = background
 	
@@ -39,7 +39,7 @@ CoD[0xC823B1D75860E03].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0xC823B1D75860E03].__resetProperties = function ( f2_arg0 )
+CoD.ui_icon_callingcards_assassin.__resetProperties = function ( f2_arg0 )
 	f2_arg0.hand:completeAnimation()
 	f2_arg0.bentarm:completeAnimation()
 	f2_arg0.fastlines:completeAnimation()
@@ -47,7 +47,7 @@ CoD[0xC823B1D75860E03].__resetProperties = function ( f2_arg0 )
 	f2_arg0.bentarm:setLeftRight( 0, 0, 0, 384 )
 end
 
-CoD[0xC823B1D75860E03].__clipsPerState = {
+CoD.ui_icon_callingcards_assassin.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -99,7 +99,7 @@ CoD[0xC823B1D75860E03].__clipsPerState = {
 		end
 	}
 }
-CoD[0xC823B1D75860E03].__onClose = function ( f10_arg0 )
+CoD.ui_icon_callingcards_assassin.__onClose = function ( f10_arg0 )
 	f10_arg0.fastlines:close()
 	f10_arg0.bentarm:close()
 	f10_arg0.hand:close()

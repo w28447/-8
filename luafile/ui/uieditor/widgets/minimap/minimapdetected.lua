@@ -10,7 +10,7 @@ CoD.MinimapDetected.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local IconDetected = LUI.UIImage.new( 0.5, 0.5, -28, 28, 0.5, 0.5, -28, 28 )
-	IconDetected:setImage( RegisterImage( 0x621725BBEBDF7F9 ) )
+	IconDetected:setImage( RegisterImage( "uie_icon_minimap_detected" ) )
 	self:addElement( IconDetected )
 	self.IconDetected = IconDetected
 	

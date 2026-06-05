@@ -12,7 +12,7 @@ CoD.MPJoinedInProgressLoss.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local GameTypeHintText = CoD.PrematchCountdown_BeginsIn.new( f1_arg0, f1_arg1, 0.5, 0.5, -959.5, 959.5, 0.5, 0.5, -24, 24 )
 	GameTypeHintText.MatchText:setAlpha( 1 )
-	GameTypeHintText.MatchText:setText( Engine[0xF9F1239CFD921FE]( 0x8659165510B8525 ) )
+	GameTypeHintText.MatchText:setText( Engine[0xF9F1239CFD921FE]( "mp/join_in_progress_loss" ) )
 	GameTypeHintText.MatchText:setTTF( "ttmussels_demibold" )
 	GameTypeHintText.MatchText:setLetterSpacing( 1 )
 	GameTypeHintText:subscribeToGlobalModel( f1_arg1, "PerController", "scriptNotify", function ( model )

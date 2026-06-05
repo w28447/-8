@@ -417,7 +417,7 @@ LUI.createMenu.Hud = function ( f1_arg0, f1_arg1 )
 	f1_local19( f1_local18, f1_local20["lobbyRoot.lobbyNav"], function ( f28_arg0, f28_arg1 )
 		CoD.Menu.UpdateButtonShownState( f28_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x93AB4C84F113EE1] )
 	end, false )
-	self:registerEventHandler( "hud_boot", function ( element, event )
+	self:registerEventHandler( "hud_boot", function ( self, event )
 		local f29_local0 = nil
 		if ShouldBootUpHUD( f1_arg0, f1_local1 ) then
 			
@@ -425,26 +425,26 @@ LUI.createMenu.Hud = function ( f1_arg0, f1_arg1 )
 			
 		end
 		if not f29_local0 then
-			f29_local0 = element:dispatchEventToChildren( event )
+			f29_local0 = self:dispatchEventToChildren( event )
 		end
 		return f29_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x93AB4C84F113EE1], nil, function ( f30_arg0, f30_arg1, f30_arg2, f30_arg3 )
-		if CoD.ScoreboardUtility.CanShowScoreboard( f30_arg2 ) then
-			CoD.ScoreboardUtility.ShowScoreboard( f30_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x93AB4C84F113EE1], nil, function ( element, menu, controller, model )
+		if CoD.ScoreboardUtility.CanShowScoreboard( controller ) then
+			CoD.ScoreboardUtility.ShowScoreboard( controller )
 			return true
-		elseif CoD.ScoreboardUtility.CanHideScoreboard( f30_arg2 ) and not IsWarzone() then
-			CoD.ScoreboardUtility.HideScoreboard( f30_arg1, f30_arg2 )
+		elseif CoD.ScoreboardUtility.CanHideScoreboard( controller ) and not IsWarzone() then
+			CoD.ScoreboardUtility.HideScoreboard( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f31_arg0, f31_arg1, f31_arg2 )
-		if CoD.ScoreboardUtility.CanShowScoreboard( f31_arg2 ) then
-			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x93AB4C84F113EE1], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ScoreboardUtility.CanShowScoreboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x93AB4C84F113EE1], "", nil, nil )
 			return false
-		elseif CoD.ScoreboardUtility.CanHideScoreboard( f31_arg2 ) and not IsWarzone() then
-			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x93AB4C84F113EE1], 0x0, nil, nil )
+		elseif CoD.ScoreboardUtility.CanHideScoreboard( controller ) and not IsWarzone() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x93AB4C84F113EE1], "", nil, nil )
 			return false
 		else
 			return false
@@ -452,20 +452,20 @@ LUI.createMenu.Hud = function ( f1_arg0, f1_arg1 )
 	end, false )
 	self:subscribeToGlobalModel( f1_arg0, "PerController", "scriptNotify", function ( model )
 		local f32_local0 = self
-		if CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x9FB0A7FE2E8EC41 ) and IsInPrematchPeriod( f1_arg0 ) and not IsCampaign() then
+		if CoD.ModelUtility.IsParamModelEqualToHashString( model, "player_spawned" ) and IsInPrematchPeriod( f1_arg0 ) and not IsCampaign() then
 			
-		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x9FB0A7FE2E8EC41 ) and not IsInPrematchPeriod( f1_arg0 ) and not IsCampaign() then
+		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, "player_spawned" ) and not IsInPrematchPeriod( f1_arg0 ) and not IsCampaign() then
 			
-		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0xB0B843215635D02 ) and not IsWarzone() then
+		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, "create_prematch_timer" ) and not IsWarzone() then
 			CreatePrematchTimer( self, f1_arg0, model )
-		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x14431C3CAF07786 ) then
+		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, "prematch_timer_ended" ) then
 			SetControllerModelValue( f1_arg0, "isInPrematchPeriod", 0 )
-		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x59653257FE765B6 ) then
+		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, "draft_complete" ) then
 			CreatePrematchTimer( self, f1_arg0, model )
 			TryBootHUD( self, "0" )
-		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0x739C4BD5BAF83BC ) then
+		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, "loot_contract_complete" ) then
 			CoD.BlackMarketUtility.RecordCompletedContractInGame( f1_arg0, model, f1_local1 )
-		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0xB04B1CB4B3498D0 ) then
+		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, "loot_contract_progress" ) then
 			CoD.BlackMarketUtility.UpdateInGameContractRecord( f1_arg0, model, f1_local1 )
 		end
 	end )

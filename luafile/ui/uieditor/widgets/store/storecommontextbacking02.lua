@@ -11,7 +11,7 @@ CoD.StoreCommonTextBacking02.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local NoiseBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseBacking:setAlpha( 0.85 )
-	NoiseBacking:setImage( RegisterImage( 0xC082CFCA3C180E5 ) )
+	NoiseBacking:setImage( RegisterImage( "uie_ui_menu_store_price_bg" ) )
 	NoiseBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	NoiseBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseBacking:setupNineSliceShader( 24, 24 )

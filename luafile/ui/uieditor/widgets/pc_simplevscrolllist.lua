@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/emptyfocusable" )
 require( "ui/uieditor/widgets/pc/pc_simplevscrolllist_list" )
-require( "ui/uieditor/widgets/pc/PC_VScrollbar" )
+require( "ui/uieditor/widgets/pc/pc_vscrollbar" )
 
 CoD.PC_SimpleVScrollList = InheritFrom( LUI.UIElement )
 CoD.PC_SimpleVScrollList.__defaultWidth = 1007

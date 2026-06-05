@@ -9,7 +9,7 @@ CoD.codcasterTeamscoreboardColor.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local DarkBase = LUI.UIImage.new( 0, 0, 0, 180, 0, 0, 0, 104 )
 	DarkBase:setAlpha( 0.9 )
-	DarkBase:setImage( RegisterImage( 0xE346B5B8A0516D3 ) )
+	DarkBase:setImage( RegisterImage( "uie_ui_codcaster_scoreboard_windowbg" ) )
 	self:addElement( DarkBase )
 	self.DarkBase = DarkBase
 	

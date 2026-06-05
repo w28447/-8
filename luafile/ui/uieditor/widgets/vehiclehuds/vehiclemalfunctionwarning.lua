@@ -10,14 +10,14 @@ CoD.vehicleMalfunctionWarning.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local GlowRed = LUI.UIImage.new( 0, 0, -311, 631, 0, 0, -240, 281 )
 	GlowRed:setRGB( 1, 0, 0 )
-	GlowRed:setImage( RegisterImage( 0x562B0510D028651 ) )
+	GlowRed:setImage( RegisterImage( "uie_ui_hud_vehicle_lockon_glow" ) )
 	GlowRed:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowRed )
 	self.GlowRed = GlowRed
 	
 	local GlowRed2 = LUI.UIImage.new( 0, 0, -311, 631, 0, 0, -240, 281 )
 	GlowRed2:setRGB( 1, 0, 0 )
-	GlowRed2:setImage( RegisterImage( 0x562B0510D028651 ) )
+	GlowRed2:setImage( RegisterImage( "uie_ui_hud_vehicle_lockon_glow" ) )
 	GlowRed2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	GlowRed2:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GlowRed2 )
@@ -91,7 +91,7 @@ CoD.vehicleMalfunctionWarning.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local GlowStatic = LUI.UIImage.new( 0.5, 0.5, -160, 160, 0, 0, -23.5, 64.5 )
 	GlowStatic:setRGB( 0.86, 0, 0 )
 	GlowStatic:setScale( 1.3, 1.5 )
-	GlowStatic:setImage( RegisterImage( 0x324200BE4EB6AEB ) )
+	GlowStatic:setImage( RegisterImage( "uie_ui_hud_common_glow" ) )
 	GlowStatic:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	GlowStatic:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GlowStatic )
@@ -99,7 +99,7 @@ CoD.vehicleMalfunctionWarning.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local Glow = LUI.UIImage.new( 0.5, 0.5, -160, 160, 0, 0, -23.5, 64.5 )
 	Glow:setRGB( 1, 0, 0 )
-	Glow:setImage( RegisterImage( 0x324200BE4EB6AEB ) )
+	Glow:setImage( RegisterImage( "uie_ui_hud_common_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Glow:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Glow )
@@ -115,7 +115,7 @@ CoD.vehicleMalfunctionWarning.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local FooterStripeScroll = LUI.UIImage.new( 0, 0, 0, 320, 0, 0, 44, 46 )
 	FooterStripeScroll:setImage( RegisterImage( 0xC7A051F5EFC70E5 ) )
-	FooterStripeScroll:setMaterial( LUI.UIImage.GetCachedMaterial( 0x84B5D1E2B428AE3 ) )
+	FooterStripeScroll:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_animated" ) )
 	FooterStripeScroll:setShaderVector( 0, 0.74, 0, 0, 0 )
 	FooterStripeScroll:setShaderVector( 1, 1, 1, 0, 0 )
 	FooterStripeScroll:setShaderVector( 2, 0, 0, 0, 0 )
@@ -126,7 +126,7 @@ CoD.vehicleMalfunctionWarning.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local HeaderStripeScroll = LUI.UIImage.new( 0, 0, 0, 320, 0, 0, -5, -3 )
 	HeaderStripeScroll:setImage( RegisterImage( 0xC7A051F5EFC70E5 ) )
-	HeaderStripeScroll:setMaterial( LUI.UIImage.GetCachedMaterial( 0x84B5D1E2B428AE3 ) )
+	HeaderStripeScroll:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_animated" ) )
 	HeaderStripeScroll:setShaderVector( 0, 0.11, 0, 0, 0 )
 	HeaderStripeScroll:setShaderVector( 1, 1, 1, 0, 0 )
 	HeaderStripeScroll:setShaderVector( 2, 0, 0, 0, 0 )

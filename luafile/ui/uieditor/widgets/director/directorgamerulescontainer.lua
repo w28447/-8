@@ -79,7 +79,7 @@ CoD.DirectorGameRulesContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local RulesImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	RulesImage:setRGB( 0.78, 0.78, 0.78 )
 	RulesImage:setAlpha( 0 )
-	RulesImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
+	RulesImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_blend" ) )
 	self:addElement( RulesImage )
 	self.RulesImage = RulesImage
 	

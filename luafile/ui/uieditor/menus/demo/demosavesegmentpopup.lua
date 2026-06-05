@@ -25,17 +25,17 @@ LUI.createMenu.DemoSaveSegmentPopup = function ( f1_arg0, f1_arg1 )
 	self.emptyFocusableNoCursorUpdate = emptyFocusableNoCursorUpdate
 	
 	local FullscreenPopupTemplate = CoD.FullscreenPopupTemplate.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	FullscreenPopupTemplate.Subtitle:setText( Engine[0xF9F1239CFD921FE]( 0x7BDC7223FDD20A0 ) )
-	FullscreenPopupTemplate.ErrorSubtitle:setText( Engine[0xF9F1239CFD921FE]( 0x9C62D3C1C35DC01 ) )
-	FullscreenPopupTemplate.WorkingTitle:setText( Engine[0xF9F1239CFD921FE]( 0xC76223999D97EC9 ) )
-	FullscreenPopupTemplate.Title:setText( Engine[0xF9F1239CFD921FE]( 0x471098B0579A24C ) )
+	FullscreenPopupTemplate.Subtitle:setText( Engine[0xF9F1239CFD921FE]( "demo/keep_segment_hint" ) )
+	FullscreenPopupTemplate.ErrorSubtitle:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_upload_error" ) )
+	FullscreenPopupTemplate.WorkingTitle:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_upload_working_title" ) )
+	FullscreenPopupTemplate.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/keep_segment" ) )
 	FullscreenPopupTemplate.DoneTitle:setText( LocalizeToUpperString( "menu/new" ) )
 	self:addElement( FullscreenPopupTemplate )
 	self.FullscreenPopupTemplate = FullscreenPopupTemplate
 	
 	local TitleText = LUI.UIText.new( 0.5, 0.5, -267, 835, 0.5, 0.5, -93, -72 )
 	TitleText:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
-	TitleText:setText( Engine[0xF9F1239CFD921FE]( 0x6C2F065A6AA8DA7 ) )
+	TitleText:setText( Engine[0xF9F1239CFD921FE]( "menu/title" ) )
 	TitleText:setTTF( "ttmussels_regular" )
 	TitleText:setLetterSpacing( 2 )
 	TitleText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -55,7 +55,7 @@ LUI.createMenu.DemoSaveSegmentPopup = function ( f1_arg0, f1_arg1 )
 	
 	local LblPermissions = LUI.UIText.new( 0.5, 0.5, -267, -217, 0.5, 0.5, 88, 126 )
 	LblPermissions:setAlpha( 0 )
-	LblPermissions:setText( Engine[0xF9F1239CFD921FE]( 0x843FACDBE21C207 ) )
+	LblPermissions:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_permissions" ) )
 	LblPermissions:setTTF( "default" )
 	LblPermissions:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	LblPermissions:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -67,7 +67,7 @@ LUI.createMenu.DemoSaveSegmentPopup = function ( f1_arg0, f1_arg1 )
 	self.leftButtonBar = leftButtonBar
 	
 	local ButtonSave = CoD.EmblemOptionsButton.new( f1_local1, f1_arg0, 0.5, 0.5, -267, 133, 0.5, 0.5, 114, 174 )
-	ButtonSave.Button.Title:setText( Engine[0xF9F1239CFD921FE]( 0x3B7168B75575032 ) )
+	ButtonSave.Button.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/name_segment" ) )
 	ButtonSave:registerEventHandler( "gain_focus", function ( element, event )
 		local f2_local0 = nil
 		if element.gainFocus then
@@ -78,11 +78,11 @@ LUI.createMenu.DemoSaveSegmentPopup = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( ButtonSave, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ENTER", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		CoD.DemoUtility.SaveSegment( f3_arg1, f3_arg2 )
+	f1_local1:AddButtonCallbackFunction( ButtonSave, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ENTER", function ( element, menu, controller, model )
+		CoD.DemoUtility.SaveSegment( menu, controller )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ENTER" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ENTER" )
 		return true
 	end, false )
 	self:addElement( ButtonSave )
@@ -100,11 +100,11 @@ LUI.createMenu.DemoSaveSegmentPopup = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( ButtonPreview, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		CoD.DemoUtility.PreviewSegment( f6_arg1, f6_arg2 )
+	f1_local1:AddButtonCallbackFunction( ButtonPreview, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		CoD.DemoUtility.PreviewSegment( menu, controller )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( ButtonPreview )

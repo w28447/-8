@@ -13,7 +13,7 @@ CoD.AARTierBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local ProgressBarBG9Slice = LUI.UIImage.new( 0, 1, -1, 1, 0.5, 0.5, -4, 4 )
-	ProgressBarBG9Slice:setImage( RegisterImage( 0x45A18362FE3CA31 ) )
+	ProgressBarBG9Slice:setImage( RegisterImage( "uie_ui_menu_cac_attachment_meter_backing_01" ) )
 	ProgressBarBG9Slice:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	ProgressBarBG9Slice:setShaderVector( 0, 0, 0, 0, 0 )
 	ProgressBarBG9Slice:setupNineSliceShader( 675, 4 )
@@ -99,7 +99,7 @@ CoD.AARTierBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	local Glow = LUI.UIImage.new( 0, 0, -140, 60, 0.5, 0.5, -37.5, 37.5 )
 	Glow:setRGB( 0.8, 0.58, 0.12 )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0x4A1176ABBF1AB4C ) )
+	Glow:setImage( RegisterImage( "uie_ui_hud_notifications_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Glow:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( Glow )

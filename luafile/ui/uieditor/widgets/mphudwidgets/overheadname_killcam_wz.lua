@@ -13,7 +13,7 @@ CoD.OverheadName_Killcam_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local YouCircle = LUI.UIImage.new( 0.5, 0.5, -32, 32, 0, 0, -71, -7 )
 	YouCircle:setRGB( 0, 0.76, 1 )
-	YouCircle:setImage( RegisterImage( 0xB63170C49335443 ) )
+	YouCircle:setImage( RegisterImage( "uie_ui_menu_cac_selection_circle" ) )
 	self:addElement( YouCircle )
 	self.YouCircle = YouCircle
 	

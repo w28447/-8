@@ -110,7 +110,7 @@ LUI.createMenu.LeaguePlayContentRules = function ( f1_arg0, f1_arg1 )
 	
 	local Restrictions = LUI.UIText.new( 0.5, 0.5, -391, 349, 0.5, 0.5, -241, -214 )
 	Restrictions:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	Restrictions:setText( Engine[0xF9F1239CFD921FE]( 0x4CAE0EF959361FA ) )
+	Restrictions:setText( Engine[0xF9F1239CFD921FE]( "arena/restrictions" ) )
 	Restrictions:setTTF( "ttmussels_demibold" )
 	Restrictions:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Restrictions:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -172,20 +172,20 @@ LUI.createMenu.LeaguePlayContentRules = function ( f1_arg0, f1_arg1 )
 			end
 		}
 	} )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
 		if IsPC() then
-			GoBack( self, f7_arg2 )
+			GoBack( self, controller )
 			return true
 		else
-			GoBack( self, f7_arg2 )
+			GoBack( self, controller )
 			return true
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		else
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x3996BAAC73C3F6D, nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/dismiss", nil, "ESCAPE" )
 			return true
 		end
 	end, false )

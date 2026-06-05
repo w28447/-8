@@ -33,7 +33,7 @@ CoD.AutoAddFriendsButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 			modelName = "socialRoot.showPlayersList"
 		} )
 	end, false )
-	AutoAddFriendsButton.Title:setText( Engine[0xF9F1239CFD921FE]( 0x83B7C8E45BB59D2 ) )
+	AutoAddFriendsButton.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/auto_add_friends" ) )
 	f1_local2 = AutoAddFriendsButton
 	TextBox = AutoAddFriendsButton.subscribeToModel
 	f1_local4 = Engine.GetGlobalModel()
@@ -50,29 +50,29 @@ CoD.AutoAddFriendsButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( AutoAddFriendsButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if CoD.LeaderboardUtility.GetAutoAddFriends( f6_arg2 ) then
+	f1_arg0:AddButtonCallbackFunction( AutoAddFriendsButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.LeaderboardUtility.GetAutoAddFriends( controller ) then
 			PlaySoundSetSound( self, "tab_changed" )
-			CoD.LeaderboardUtility.SetAutoAddFriendsFalse( f6_arg2 )
-			ForceNotifyGlobalModel( f6_arg2, "socialRoot.tab" )
-			ForceNotifyGlobalModel( f6_arg2, "socialRoot.showPlayersList" )
+			CoD.LeaderboardUtility.SetAutoAddFriendsFalse( controller )
+			ForceNotifyGlobalModel( controller, "socialRoot.tab" )
+			ForceNotifyGlobalModel( controller, "socialRoot.showPlayersList" )
 			return true
-		elseif not CoD.LeaderboardUtility.GetAutoAddFriends( f6_arg2 ) then
+		elseif not CoD.LeaderboardUtility.GetAutoAddFriends( controller ) then
 			PlaySoundSetSound( self, "tab_changed" )
-			CoD.LeaderboardUtility.SetAutoAddFriendsTrue( f6_arg2 )
-			CoD.LeaderboardUtility.AutoAddFriends( f6_arg2 )
-			ForceNotifyGlobalModel( f6_arg2, "socialRoot.tab" )
-			ForceNotifyGlobalModel( f6_arg2, "socialRoot.showPlayersList" )
+			CoD.LeaderboardUtility.SetAutoAddFriendsTrue( controller )
+			CoD.LeaderboardUtility.AutoAddFriends( controller )
+			ForceNotifyGlobalModel( controller, "socialRoot.tab" )
+			ForceNotifyGlobalModel( controller, "socialRoot.showPlayersList" )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		if CoD.LeaderboardUtility.GetAutoAddFriends( f7_arg2 ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xAC3B80C833B60E1, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.LeaderboardUtility.GetAutoAddFriends( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select_caps", nil, "ui_confirm" )
 			return true
-		elseif not CoD.LeaderboardUtility.GetAutoAddFriends( f7_arg2 ) then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xAC3B80C833B60E1, nil, "ui_confirm" )
+		elseif not CoD.LeaderboardUtility.GetAutoAddFriends( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select_caps", nil, "ui_confirm" )
 			return true
 		else
 			return false

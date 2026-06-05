@@ -23,19 +23,19 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local TextureOverlayGrid = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TextureOverlayGrid:setAlpha( 0.45 )
-	TextureOverlayGrid:setImage( RegisterImage( 0xFB2DE01772BF700 ) )
+	TextureOverlayGrid:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_textureoverlaygrid" ) )
 	self:addElement( TextureOverlayGrid )
 	self.TextureOverlayGrid = TextureOverlayGrid
 	
 	local agrCenterPoint = LUI.UIImage.new( 0.5, 0.5, -14, 10, 0.5, 0.5, -12, 12 )
-	agrCenterPoint:setImage( RegisterImage( 0x3784284ACA2BA36 ) )
+	agrCenterPoint:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_centerpoint" ) )
 	agrCenterPoint:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrCenterPoint )
 	self.agrCenterPoint = agrCenterPoint
 	
 	local agrCenterPoint0 = LUI.UIImage.new( 0.5, 0.5, -14, 10, 0.5, 0.5, -12, 12 )
 	agrCenterPoint0:setAlpha( 0 )
-	agrCenterPoint0:setImage( RegisterImage( 0x3784284ACA2BA36 ) )
+	agrCenterPoint0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_centerpoint" ) )
 	agrCenterPoint0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrCenterPoint0 )
 	self.agrCenterPoint0 = agrCenterPoint0
@@ -46,7 +46,7 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local agrReticleOutsideDotsBlurUR = LUI.UIImage.new( 0.5, 0.5, 391, 634, 0.5, 0.5, -193, -103 )
 	agrReticleOutsideDotsBlurUR:setAlpha( 0.5 )
-	agrReticleOutsideDotsBlurUR:setImage( RegisterImage( 0xD6286A94A8DEE8D ) )
+	agrReticleOutsideDotsBlurUR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_reticleoutsidedotsrgb" ) )
 	agrReticleOutsideDotsBlurUR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleOutsideDotsBlurUR )
 	self.agrReticleOutsideDotsBlurUR = agrReticleOutsideDotsBlurUR
@@ -54,7 +54,7 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local agrReticleOutsideDotsBlurUL = LUI.UIImage.new( 0.5, 0.5, -623, -380, 0.5, 0.5, -193, -103 )
 	agrReticleOutsideDotsBlurUL:setAlpha( 0.53 )
 	agrReticleOutsideDotsBlurUL:setYRot( -180 )
-	agrReticleOutsideDotsBlurUL:setImage( RegisterImage( 0xD6286A94A8DEE8D ) )
+	agrReticleOutsideDotsBlurUL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_reticleoutsidedotsrgb" ) )
 	agrReticleOutsideDotsBlurUL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleOutsideDotsBlurUL )
 	self.agrReticleOutsideDotsBlurUL = agrReticleOutsideDotsBlurUL
@@ -62,7 +62,7 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local agrReticleOutsideDotsBlurLR = LUI.UIImage.new( 0.5, 0.5, 390, 633, 0.5, 0.5, 113, 203 )
 	agrReticleOutsideDotsBlurLR:setAlpha( 0.53 )
 	agrReticleOutsideDotsBlurLR:setXRot( -180 )
-	agrReticleOutsideDotsBlurLR:setImage( RegisterImage( 0xD6286A94A8DEE8D ) )
+	agrReticleOutsideDotsBlurLR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_reticleoutsidedotsrgb" ) )
 	agrReticleOutsideDotsBlurLR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleOutsideDotsBlurLR )
 	self.agrReticleOutsideDotsBlurLR = agrReticleOutsideDotsBlurLR
@@ -71,7 +71,7 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	agrReticleOutsideDotsBlurLL:setAlpha( 0.53 )
 	agrReticleOutsideDotsBlurLL:setXRot( -180 )
 	agrReticleOutsideDotsBlurLL:setYRot( -180 )
-	agrReticleOutsideDotsBlurLL:setImage( RegisterImage( 0xD6286A94A8DEE8D ) )
+	agrReticleOutsideDotsBlurLL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_reticleoutsidedotsrgb" ) )
 	agrReticleOutsideDotsBlurLL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleOutsideDotsBlurLL )
 	self.agrReticleOutsideDotsBlurLL = agrReticleOutsideDotsBlurLL
@@ -79,14 +79,14 @@ CoD.vhud_agr_reticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local agrReticleFocusBlurL = LUI.UIImage.new( 0.5, 0.5, -441, -173, 0.5, 0.5, -139.5, 139.5 )
 	agrReticleFocusBlurL:setAlpha( 0.35 )
 	agrReticleFocusBlurL:setYRot( -180 )
-	agrReticleFocusBlurL:setImage( RegisterImage( 0x1A4DD47A70C3880 ) )
+	agrReticleFocusBlurL:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_reticlefocusblur" ) )
 	agrReticleFocusBlurL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleFocusBlurL )
 	self.agrReticleFocusBlurL = agrReticleFocusBlurL
 	
 	local agrReticleFocusBlurR = LUI.UIImage.new( 0.5, 0.5, 183, 451, 0.5, 0.5, -139.5, 139.5 )
 	agrReticleFocusBlurR:setAlpha( 0.35 )
-	agrReticleFocusBlurR:setImage( RegisterImage( 0x1A4DD47A70C3880 ) )
+	agrReticleFocusBlurR:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_agr_reticlefocusblur" ) )
 	agrReticleFocusBlurR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( agrReticleFocusBlurR )
 	self.agrReticleFocusBlurR = agrReticleFocusBlurR

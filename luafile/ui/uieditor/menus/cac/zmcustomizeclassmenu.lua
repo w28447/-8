@@ -66,28 +66,28 @@ LUI.createMenu.ZMCustomizeClassMenu = function ( f1_arg0, f1_arg1 )
 	self:linkToElementModel( self, nil, true, function ( model, f6_arg1 )
 		CoD.Menu.UpdateButtonShownState( f6_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x22361E23588705A] )
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		GoBack( self, f7_arg2 )
-		SendClientScriptMenuChangeNotify( f7_arg2, f7_arg1, false )
-		SaveLoadoutGeneric( f7_arg2 )
-		UpdateGamerprofile( self, f7_arg0, f7_arg2 )
-		CoD.ZMLoadoutUtility.SaveZMLoadoutBuffer( f7_arg2 )
-		CoD.LobbyUtility.SetMenuControllerRestriction( self, f7_arg2, 0 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
+		SendClientScriptMenuChangeNotify( controller, menu, false )
+		SaveLoadoutGeneric( controller )
+		UpdateGamerprofile( self, element, controller )
+		CoD.ZMLoadoutUtility.SaveZMLoadoutBuffer( controller )
+		CoD.LobbyUtility.SetMenuControllerRestriction( self, controller, 0 )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], "ui_contextual_1", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		if not CoD.CACUtility.IsCurrentClassLocked( f9_arg1, f9_arg2 ) then
-			CoD.CACUtility.OpenClassOptions( self, f9_arg1, f9_arg2, "ClassOptions" )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], "ui_contextual_1", function ( element, menu, controller, model )
+		if not CoD.CACUtility.IsCurrentClassLocked( menu, controller ) then
+			CoD.CACUtility.OpenClassOptions( self, menu, controller, "ClassOptions" )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		if not CoD.CACUtility.IsCurrentClassLocked( f10_arg1, f10_arg2 ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x22361E23588705A], 0x27F19FF8EF11A44, nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if not CoD.CACUtility.IsCurrentClassLocked( menu, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "menu/class_options", nil, "ui_contextual_1" )
 			return true
 		else
 			return false
@@ -115,11 +115,11 @@ LUI.createMenu.ZMCustomizeClassMenu = function ( f1_arg0, f1_arg1 )
 		PostLoadFunc( self, f1_arg0 )
 	end
 	local f1_local6 = self
-	if not CoD.BaseUtility.IsMenuSessionModeEqualTo( f1_local1, Enum.eModes[0xB22E0240605CFFE] ) then
+	if not CoD.BaseUtility.IsMenuSessionModeEqualTo( f1_local1, Enum.eModes.mode_invalid ) then
 		CoD.BaseUtility.SetStateByMenuSessionMode( f1_local1, self, f1_arg0 )
 		CoD.FTUEUtility.ShowFTUESequenceIfNotSeen( self, f1_arg0, "ZMLoadoutIntroduction" )
 	else
-		SetCharacterModeToSessionMode( self, f1_arg0, Enum.eModes[0x3723205FAE52C4A] )
+		SetCharacterModeToSessionMode( self, f1_arg0, Enum.eModes.mode_zombies )
 		CoD.FTUEUtility.ShowFTUESequenceIfNotSeen( self, f1_arg0, "ZMLoadoutIntroduction" )
 	end
 	return self

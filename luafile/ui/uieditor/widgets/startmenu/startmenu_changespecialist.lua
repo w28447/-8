@@ -142,24 +142,24 @@ CoD.StartMenu_ChangeSpecialist.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f12_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Characters, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		if CoD.PlayerRoleUtility.IsSpecialistSelectable( f13_arg0, f13_arg2 ) and not IsElementInState( f13_arg0, "Unavailable" ) and not IsElementInState( f13_arg0, "UnavailablePC" ) and not IsPC() and CoD.BaseUtility.IsButtonHoldFinished( f13_arg3 ) then
-			CoD.PlayerRoleUtility.InGameChangeSpecialist( f13_arg0, f13_arg2 )
+	f1_arg0:AddButtonCallbackFunction( Characters, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.PlayerRoleUtility.IsSpecialistSelectable( element, controller ) and not IsElementInState( element, "Unavailable" ) and not IsElementInState( element, "UnavailablePC" ) and not IsPC() and CoD.BaseUtility.IsButtonHoldFinished( model ) then
+			CoD.PlayerRoleUtility.InGameChangeSpecialist( element, controller )
 			PlaySoundAlias( "uin_start_char_select" )
 			return true
-		elseif CoD.PlayerRoleUtility.IsSpecialistSelectable( f13_arg0, f13_arg2 ) and not IsElementInState( f13_arg0, "Unavailable" ) and not IsElementInState( f13_arg0, "UnavailablePC" ) and IsPC() and not CoD.BaseUtility.IsButtonHoldFinished( f13_arg3 ) then
-			CoD.PlayerRoleUtility.InGameChangeSpecialist( f13_arg0, f13_arg2 )
+		elseif CoD.PlayerRoleUtility.IsSpecialistSelectable( element, controller ) and not IsElementInState( element, "Unavailable" ) and not IsElementInState( element, "UnavailablePC" ) and IsPC() and not CoD.BaseUtility.IsButtonHoldFinished( model ) then
+			CoD.PlayerRoleUtility.InGameChangeSpecialist( element, controller )
 			PlaySoundAlias( "uin_start_char_select" )
 			return true
 		else
 			
 		end
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		if CoD.PlayerRoleUtility.IsSpecialistSelectable( f14_arg0, f14_arg2 ) and not IsElementInState( f14_arg0, "Unavailable" ) and not IsElementInState( f14_arg0, "UnavailablePC" ) and not IsPC() then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.PlayerRoleUtility.IsSpecialistSelectable( element, controller ) and not IsElementInState( element, "Unavailable" ) and not IsElementInState( element, "UnavailablePC" ) and not IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_confirm" )
 			return true
-		elseif CoD.PlayerRoleUtility.IsSpecialistSelectable( f14_arg0, f14_arg2 ) and not IsElementInState( f14_arg0, "Unavailable" ) and not IsElementInState( f14_arg0, "UnavailablePC" ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif CoD.PlayerRoleUtility.IsSpecialistSelectable( element, controller ) and not IsElementInState( element, "Unavailable" ) and not IsElementInState( element, "UnavailablePC" ) and IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -198,16 +198,16 @@ CoD.StartMenu_ChangeSpecialist.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f16_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ChangeClassButtonPC, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		if CoD.ModelUtility.IsModelValueLessThan( f17_arg2, "PositionDraft.stage", 6 ) then
-			CoD.StartMenuUtility.ShowClassSelectSlideout( f17_arg1, f17_arg2 )
+	f1_arg0:AddButtonCallbackFunction( ChangeClassButtonPC, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsModelValueLessThan( controller, "PositionDraft.stage", 6 ) then
+			CoD.StartMenuUtility.ShowClassSelectSlideout( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		if CoD.ModelUtility.IsModelValueLessThan( f18_arg2, "PositionDraft.stage", 6 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsModelValueLessThan( controller, "PositionDraft.stage", 6 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -273,13 +273,13 @@ CoD.StartMenu_ChangeSpecialist.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	XpMeter:linkToElementModel( self, "xpEarnedDuringMatch", true, function ( model )
 		local f24_local0 = model:get()
 		if f24_local0 ~= nil then
-			XpMeter.xpEarnedText:setText( LocalizeIntoString( 0x5C4E2BA06EA49A5, f24_local0 ) )
+			XpMeter.xpEarnedText:setText( LocalizeIntoString( "menu/xp_earned_caps", f24_local0 ) )
 		end
 	end )
 	XpMeter:linkToElementModel( self, "xpNeededToLevelUp", true, function ( model )
 		local f25_local0 = model:get()
 		if f25_local0 ~= nil then
-			XpMeter.xpNeededText:setText( LocalizeIntoString( 0x2B924F206C5B4D8, f25_local0 ) )
+			XpMeter.xpNeededText:setText( LocalizeIntoString( "menu/next_level_xp_needed", f25_local0 ) )
 		end
 	end )
 	self:addElement( XpMeter )

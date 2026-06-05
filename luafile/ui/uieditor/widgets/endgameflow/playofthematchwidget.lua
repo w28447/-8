@@ -56,7 +56,7 @@ CoD.PlayOfTheMatchWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local TextGamertag = CoD.PlayOfTheMatchGamertag.new( f1_arg0, f1_arg1, 0, 0, 0, 1692, 0, 0, 718, 824 )
 	TextGamertag:setAlpha( 0 )
-	TextGamertag:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xB17513E9D94CE76 ) )
+	TextGamertag:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_rft" ) )
 	TextGamertag:setShaderVector( 0, 0, 1, 0, 0 )
 	TextGamertag:setShaderVector( 1, 0, 0, 0, 0 )
 	TextGamertag:setShaderVector( 2, 0, 1, 0, 0 )
@@ -128,7 +128,7 @@ CoD.PlayOfTheMatchWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local spermflare = LUI.UIImage.new( 0, 0, -49, 1871, 0, 0, 798, 952 )
 	spermflare:setAlpha( 0 )
-	spermflare:setImage( RegisterImage( 0xFB683D5D1061C79 ) )
+	spermflare:setImage( RegisterImage( "uie_ui_hud_killcam_spermflare" ) )
 	spermflare:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( spermflare )
 	self.spermflare = spermflare
@@ -175,7 +175,7 @@ CoD.PlayOfTheMatchWidget.__resetProperties = function ( f6_arg0 )
 	f6_arg0.FluffGradientRight:setShaderVector( 0, 0, 0.5, 0, 0 )
 	f6_arg0.TextGamertag:setTopBottom( 0, 0, 718, 824 )
 	f6_arg0.TextGamertag:setAlpha( 0 )
-	f6_arg0.TextGamertag:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xB17513E9D94CE76 ) )
+	f6_arg0.TextGamertag:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_rft" ) )
 	f6_arg0.TextGamertag:setShaderVector( 0, 0, 1, 0, 0 )
 	f6_arg0.TextGamertag:setShaderVector( 1, 0, 0, 0, 0 )
 	f6_arg0.TextGamertag:setShaderVector( 2, 0, 1, 0, 0 )
@@ -308,7 +308,7 @@ CoD.PlayOfTheMatchWidget.__clipsPerState = {
 			
 			f8_arg0.TextGamertag:beginAnimation( 170 )
 			f8_arg0.TextGamertag:setAlpha( 0 )
-			f8_arg0.TextGamertag:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xB17513E9D94CE76 ) )
+			f8_arg0.TextGamertag:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_rft" ) )
 			f8_arg0.TextGamertag:setShaderVector( 0, 1, 1, 0, 0 )
 			f8_arg0.TextGamertag:setShaderVector( 1, 0, 0, 0, 0 )
 			f8_arg0.TextGamertag:setShaderVector( 2, 0, 1, 0, 0 )
@@ -685,7 +685,7 @@ CoD.PlayOfTheMatchWidget.__clipsPerState = {
 			
 			f52_arg0.TextGamertag:beginAnimation( 170 )
 			f52_arg0.TextGamertag:setAlpha( 0 )
-			f52_arg0.TextGamertag:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xB17513E9D94CE76 ) )
+			f52_arg0.TextGamertag:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_rft" ) )
 			f52_arg0.TextGamertag:setShaderVector( 0, 1, 1, 0, 0 )
 			f52_arg0.TextGamertag:setShaderVector( 1, 0, 0, 0, 0 )
 			f52_arg0.TextGamertag:setShaderVector( 2, 0, 1, 0, 0 )

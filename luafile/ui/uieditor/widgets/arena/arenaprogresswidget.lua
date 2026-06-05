@@ -35,13 +35,13 @@ CoD.ArenaProgressWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local CornerBottomRight = LUI.UIImage.new( 1, 1, -3, 1, 1, 1, -78, -74 )
 	CornerBottomRight:setAlpha( 0.2 )
-	CornerBottomRight:setImage( RegisterImage( 0xCD2D51C614BCB51 ) )
+	CornerBottomRight:setImage( RegisterImage( "uie_ui_hud_notifications_cornerpip" ) )
 	self:addElement( CornerBottomRight )
 	self.CornerBottomRight = CornerBottomRight
 	
 	local CornerTopRight = LUI.UIImage.new( 1, 1, -3, 1, 0, 0, -2, 2 )
 	CornerTopRight:setAlpha( 0.2 )
-	CornerTopRight:setImage( RegisterImage( 0xCD2D51C614BCB51 ) )
+	CornerTopRight:setImage( RegisterImage( "uie_ui_hud_notifications_cornerpip" ) )
 	self:addElement( CornerTopRight )
 	self.CornerTopRight = CornerTopRight
 	

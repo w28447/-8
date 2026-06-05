@@ -10,7 +10,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local BackgroundRightBlur = LUI.UIImage.new( 0, 0, 1018, 550, 0, 0, 77.5, 353.5 )
 	BackgroundRightBlur:setRGB( 0, 0, 0 )
-	BackgroundRightBlur:setImage( RegisterImage( 0xEFEA396BE791BB6 ) )
+	BackgroundRightBlur:setImage( RegisterImage( "uie_ui_hud_wz_endgame_eliminated_bg02" ) )
 	BackgroundRightBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
 	BackgroundRightBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BackgroundRightBlur )
@@ -18,7 +18,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local BackgroundLeftBlur = LUI.UIImage.new( 0, 0, 82, 550, 0, 0, 77.5, 353.5 )
 	BackgroundLeftBlur:setRGB( 0, 0, 0 )
-	BackgroundLeftBlur:setImage( RegisterImage( 0xEFEA396BE791BB6 ) )
+	BackgroundLeftBlur:setImage( RegisterImage( "uie_ui_hud_wz_endgame_eliminated_bg02" ) )
 	BackgroundLeftBlur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
 	BackgroundLeftBlur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( BackgroundLeftBlur )
@@ -27,33 +27,33 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local BackgroundDarkRight = LUI.UIImage.new( 0, 0, 1018, 550, 0, 0, 77.5, 353.5 )
 	BackgroundDarkRight:setRGB( 0, 0, 0 )
 	BackgroundDarkRight:setAlpha( 0.9 )
-	BackgroundDarkRight:setImage( RegisterImage( 0xEFEA396BE791BB6 ) )
+	BackgroundDarkRight:setImage( RegisterImage( "uie_ui_hud_wz_endgame_eliminated_bg02" ) )
 	self:addElement( BackgroundDarkRight )
 	self.BackgroundDarkRight = BackgroundDarkRight
 	
 	local BackgroundDarkLeft = LUI.UIImage.new( 0, 0, 82, 550, 0, 0, 77.5, 353.5 )
 	BackgroundDarkLeft:setRGB( 0, 0, 0 )
 	BackgroundDarkLeft:setAlpha( 0.9 )
-	BackgroundDarkLeft:setImage( RegisterImage( 0xEFEA396BE791BB6 ) )
+	BackgroundDarkLeft:setImage( RegisterImage( "uie_ui_hud_wz_endgame_eliminated_bg02" ) )
 	self:addElement( BackgroundDarkLeft )
 	self.BackgroundDarkLeft = BackgroundDarkLeft
 	
 	local BackgroundRight = LUI.UIImage.new( 0, 0, 1018, 550, 0, 0, 77.5, 353.5 )
 	BackgroundRight:setAlpha( 0.4 )
-	BackgroundRight:setImage( RegisterImage( 0xEFEA396BE791BB6 ) )
+	BackgroundRight:setImage( RegisterImage( "uie_ui_hud_wz_endgame_eliminated_bg02" ) )
 	self:addElement( BackgroundRight )
 	self.BackgroundRight = BackgroundRight
 	
 	local BackgroundLeft = LUI.UIImage.new( 0, 0, 82, 550, 0, 0, 77.5, 353.5 )
 	BackgroundLeft:setAlpha( 0.4 )
-	BackgroundLeft:setImage( RegisterImage( 0xEFEA396BE791BB6 ) )
+	BackgroundLeft:setImage( RegisterImage( "uie_ui_hud_wz_endgame_eliminated_bg02" ) )
 	self:addElement( BackgroundLeft )
 	self.BackgroundLeft = BackgroundLeft
 	
 	local Grid = LUI.UIImage.new( 0, 0, 86, 1013, 0, 0, 84, 308 )
 	Grid:setRGB( 0, 0, 0 )
 	Grid:setAlpha( 0.5 )
-	Grid:setImage( RegisterImage( 0x2F926473EDCBFCA ) )
+	Grid:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_grid" ) )
 	Grid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	Grid:setShaderVector( 0, 0, 0, 0, 0 )
 	Grid:setupNineSliceShader( 44, 44 )
@@ -63,7 +63,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local Grid2 = LUI.UIImage.new( 0, 0, 130, 970, 0, 0, 304, 349 )
 	Grid2:setRGB( 0, 0, 0 )
 	Grid2:setAlpha( 0.5 )
-	Grid2:setImage( RegisterImage( 0x2F926473EDCBFCA ) )
+	Grid2:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_grid" ) )
 	Grid2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	Grid2:setShaderVector( 0, 0, 0, 0, 0 )
 	Grid2:setupNineSliceShader( 44, 44 )
@@ -72,33 +72,33 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local EliminatedBgL = LUI.UIImage.new( 0, 0, 83, 551, 0, 0, 82, 206 )
 	EliminatedBgL:setAlpha( 0.9 )
-	EliminatedBgL:setImage( RegisterImage( 0xEFEA296BE791A03 ) )
+	EliminatedBgL:setImage( RegisterImage( "uie_ui_hud_wz_endgame_eliminated_bg01" ) )
 	self:addElement( EliminatedBgL )
 	self.EliminatedBgL = EliminatedBgL
 	
 	local EliminatedBgR = LUI.UIImage.new( 0, 0, 1018, 550, 0, 0, 82, 206 )
 	EliminatedBgR:setAlpha( 0.9 )
-	EliminatedBgR:setImage( RegisterImage( 0xEFEA296BE791A03 ) )
+	EliminatedBgR:setImage( RegisterImage( "uie_ui_hud_wz_endgame_eliminated_bg01" ) )
 	self:addElement( EliminatedBgR )
 	self.EliminatedBgR = EliminatedBgR
 	
 	local dotlineBot = LUI.UIImage.new( 0, 0, 90, 1012, 0, 0, 202, 206 )
 	dotlineBot:setRGB( 0, 0, 0 )
-	dotlineBot:setImage( RegisterImage( 0xF9C7F41C631866E ) )
+	dotlineBot:setImage( RegisterImage( "uie_ui_menu_social_emblem_dotline" ) )
 	dotlineBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	dotlineBot:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( dotlineBot )
 	self.dotlineBot = dotlineBot
 	
 	local centerStripe = LUI.UIImage.new( 0, 0, 89, 1013, 0, 0, 84, 204 )
-	centerStripe:setImage( RegisterImage( 0x2614A1F8CAC78EC ) )
+	centerStripe:setImage( RegisterImage( "uie_ui_hud_wz_endgame_redstripe" ) )
 	centerStripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	centerStripe:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( centerStripe )
 	self.centerStripe = centerStripe
 	
 	local centerStripeAdd = LUI.UIImage.new( 0, 0, 89, 1013, 0, 0, 84, 204 )
-	centerStripeAdd:setImage( RegisterImage( 0x2614A1F8CAC78EC ) )
+	centerStripeAdd:setImage( RegisterImage( "uie_ui_hud_wz_endgame_redstripe" ) )
 	centerStripeAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	centerStripeAdd:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( centerStripeAdd )
@@ -106,7 +106,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus02 = LUI.UIImage.new( 0, 0, 281, 291, 0, 0, 209.5, 219.5 )
 	GridPlus02:setRGB( 0, 0, 0 )
-	GridPlus02:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus02:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus02:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus02:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus02 )
@@ -114,7 +114,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus03 = LUI.UIImage.new( 0, 0, 413, 423, 0, 0, 209.5, 219.5 )
 	GridPlus03:setRGB( 0, 0, 0 )
-	GridPlus03:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus03:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus03:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus03:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus03 )
@@ -122,7 +122,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus04 = LUI.UIImage.new( 0, 0, 545, 555, 0, 0, 209.5, 219.5 )
 	GridPlus04:setRGB( 0, 0, 0 )
-	GridPlus04:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus04:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus04:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus04:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus04 )
@@ -130,7 +130,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus05 = LUI.UIImage.new( 0, 0, 677, 687, 0, 0, 209.5, 219.5 )
 	GridPlus05:setRGB( 0, 0, 0 )
-	GridPlus05:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus05:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus05:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus05:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus05 )
@@ -138,7 +138,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus06 = LUI.UIImage.new( 0, 0, 809, 819, 0, 0, 209.5, 219.5 )
 	GridPlus06:setRGB( 0, 0, 0 )
-	GridPlus06:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus06:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus06:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus06:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus06 )
@@ -146,7 +146,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus07 = LUI.UIImage.new( 0, 0, 149, 159, 0, 0, 122, 132 )
 	GridPlus07:setRGB( 0, 0, 0 )
-	GridPlus07:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus07:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus07:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus07:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus07 )
@@ -154,7 +154,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus08 = LUI.UIImage.new( 0, 0, 281, 291, 0, 0, 122, 132 )
 	GridPlus08:setRGB( 0, 0, 0 )
-	GridPlus08:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus08:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus08:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus08:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus08 )
@@ -162,7 +162,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus09 = LUI.UIImage.new( 0, 0, 413, 423, 0, 0, 122, 132 )
 	GridPlus09:setRGB( 0, 0, 0 )
-	GridPlus09:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus09:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus09:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus09:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus09 )
@@ -170,7 +170,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus10 = LUI.UIImage.new( 0, 0, 545, 555, 0, 0, 122, 132 )
 	GridPlus10:setRGB( 0, 0, 0 )
-	GridPlus10:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus10:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus10:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus10:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus10 )
@@ -178,7 +178,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus11 = LUI.UIImage.new( 0, 0, 677, 687, 0, 0, 122, 132 )
 	GridPlus11:setRGB( 0, 0, 0 )
-	GridPlus11:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus11:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus11:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus11:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus11 )
@@ -186,7 +186,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus12 = LUI.UIImage.new( 0, 0, 809, 819, 0, 0, 122, 132 )
 	GridPlus12:setRGB( 0, 0, 0 )
-	GridPlus12:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus12:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus12:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus12:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus12 )
@@ -194,7 +194,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus13 = LUI.UIImage.new( 0, 0, 941, 951, 0, 0, 209.5, 219.5 )
 	GridPlus13:setRGB( 0, 0, 0 )
-	GridPlus13:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus13:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus13:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus13:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus13 )
@@ -202,7 +202,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus01 = LUI.UIImage.new( 0, 0, 149, 159, 0, 0, 209.5, 219.5 )
 	GridPlus01:setRGB( 0, 0, 0 )
-	GridPlus01:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus01:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus01:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus01:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus01 )
@@ -210,7 +210,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus14 = LUI.UIImage.new( 0, 0, 941, 951, 0, 0, 122, 132 )
 	GridPlus14:setRGB( 0, 0, 0 )
-	GridPlus14:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus14:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus14:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus14:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus14 )
@@ -218,7 +218,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus18 = LUI.UIImage.new( 0, 0, 941, 951, 0, 0, 297.5, 307.5 )
 	GridPlus18:setRGB( 0, 0, 0 )
-	GridPlus18:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus18:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus18:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus18:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus18 )
@@ -226,7 +226,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus22 = LUI.UIImage.new( 0, 0, 809, 819, 0, 0, 297.5, 307.5 )
 	GridPlus22:setRGB( 0, 0, 0 )
-	GridPlus22:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus22:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus22:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus22:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus22 )
@@ -234,7 +234,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus23 = LUI.UIImage.new( 0, 0, 677, 687, 0, 0, 297.5, 307.5 )
 	GridPlus23:setRGB( 0, 0, 0 )
-	GridPlus23:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus23:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus23:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus23:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus23 )
@@ -242,7 +242,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus24 = LUI.UIImage.new( 0, 0, 545, 555, 0, 0, 297.5, 307.5 )
 	GridPlus24:setRGB( 0, 0, 0 )
-	GridPlus24:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus24:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus24:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus24:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus24 )
@@ -250,7 +250,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus25 = LUI.UIImage.new( 0, 0, 413, 423, 0, 0, 297.5, 307.5 )
 	GridPlus25:setRGB( 0, 0, 0 )
-	GridPlus25:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus25:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus25:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus25:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus25 )
@@ -258,7 +258,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus26 = LUI.UIImage.new( 0, 0, 281, 291, 0, 0, 297.5, 307.5 )
 	GridPlus26:setRGB( 0, 0, 0 )
-	GridPlus26:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus26:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus26:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus26:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus26 )
@@ -266,7 +266,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GridPlus27 = LUI.UIImage.new( 0, 0, 149, 159, 0, 0, 297.5, 307.5 )
 	GridPlus27:setRGB( 0, 0, 0 )
-	GridPlus27:setImage( RegisterImage( 0x43D9C0C33B14125 ) )
+	GridPlus27:setImage( RegisterImage( "uie_ui_hud_tak5_grid_plus" ) )
 	GridPlus27:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GridPlus27:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( GridPlus27 )
@@ -274,7 +274,7 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local ArrowTL = LUI.UIImage.new( 0, 0, 108, 90, 0, 0, 130, 158 )
 	ArrowTL:setRGB( 0, 0, 0 )
-	ArrowTL:setImage( RegisterImage( 0x1481C7ADBB91434 ) )
+	ArrowTL:setImage( RegisterImage( "uie_ui_hud_wz_endgame_common_triangle" ) )
 	ArrowTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	ArrowTL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ArrowTL )
@@ -282,42 +282,42 @@ CoD.GameEndScore_EliminatedBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local ArrowTR = LUI.UIImage.new( 0, 0, 994, 1012, 0, 0, 130, 158 )
 	ArrowTR:setRGB( 0, 0, 0 )
-	ArrowTR:setImage( RegisterImage( 0x1481C7ADBB91434 ) )
+	ArrowTR:setImage( RegisterImage( "uie_ui_hud_wz_endgame_common_triangle" ) )
 	ArrowTR:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	ArrowTR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ArrowTR )
 	self.ArrowTR = ArrowTR
 	
 	local FrameInnerLeft = LUI.UIImage.new( 0, 0, 82, 550, 0, 0, 76.5, 352.5 )
-	FrameInnerLeft:setImage( RegisterImage( 0x45B571C4E723 ) )
+	FrameInnerLeft:setImage( RegisterImage( "uie_ui_hud_wz_endgame_eliminated_inner_frame" ) )
 	self:addElement( FrameInnerLeft )
 	self.FrameInnerLeft = FrameInnerLeft
 	
 	local FrameInnerRight = LUI.UIImage.new( 0, 0, 1018, 550, 0, 0, 76.5, 352.5 )
-	FrameInnerRight:setImage( RegisterImage( 0x45B571C4E723 ) )
+	FrameInnerRight:setImage( RegisterImage( "uie_ui_hud_wz_endgame_eliminated_inner_frame" ) )
 	self:addElement( FrameInnerRight )
 	self.FrameInnerRight = FrameInnerRight
 	
 	local FrameLeft = LUI.UIImage.new( 0, 0, 82, 550, 0, 0, 75.5, 355.5 )
-	FrameLeft:setImage( RegisterImage( 0xA7704FEB95AF074 ) )
+	FrameLeft:setImage( RegisterImage( "uie_ui_hud_wz_endgame_eliminated_frame" ) )
 	self:addElement( FrameLeft )
 	self.FrameLeft = FrameLeft
 	
 	local FrameRight = LUI.UIImage.new( 0, 0, 1018, 550, 0, 0, 75.5, 355.5 )
-	FrameRight:setImage( RegisterImage( 0xA7704FEB95AF074 ) )
+	FrameRight:setImage( RegisterImage( "uie_ui_hud_wz_endgame_eliminated_frame" ) )
 	self:addElement( FrameRight )
 	self.FrameRight = FrameRight
 	
 	local FrameBoxesRight = LUI.UIImage.new( 1, 1, -251, -151, 0, 0, 326.5, 342.5 )
 	FrameBoxesRight:setAlpha( 0.5 )
-	FrameBoxesRight:setImage( RegisterImage( 0xFBB88F9AE58B6A6 ) )
+	FrameBoxesRight:setImage( RegisterImage( "uie_ui_hud_wz_endgame_frame_detail01" ) )
 	self:addElement( FrameBoxesRight )
 	self.FrameBoxesRight = FrameBoxesRight
 	
 	local Arrow = LUI.UIImage.new( 0.5, 0.5, -17, 11, 0, 0, 192.5, 236.5 )
 	Arrow:setRGB( 0, 0, 0 )
 	Arrow:setZRot( 90 )
-	Arrow:setImage( RegisterImage( 0x1481C7ADBB91434 ) )
+	Arrow:setImage( RegisterImage( "uie_ui_hud_wz_endgame_common_triangle" ) )
 	Arrow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	Arrow:setShaderVector( 0, 1.5, 0, 0, 0 )
 	self:addElement( Arrow )

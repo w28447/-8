@@ -47,7 +47,7 @@ CoD.ContractRarityHeaderTile.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local Contract = LUI.UIText.new( 0, 0, 133, 224, 0, 0, 0, 17 )
 	Contract:setAlpha( 0.94 )
-	Contract:setText( LocalizeToUpperString( 0x0 ) )
+	Contract:setText( LocalizeToUpperString( "" ) )
 	Contract:setTTF( "ttmussels_regular" )
 	Contract:setLetterSpacing( 4 )
 	Contract:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

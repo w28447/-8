@@ -16,7 +16,7 @@ CoD.Codcaster_annoncement_bg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local colorbg = LUI.UIImage.new( 0.5, 0.5, -217, 217, 0, 0, 7, 27 )
 	colorbg:setAlpha( 0.9 )
-	colorbg:setImage( RegisterImage( 0x97941765AC1B3BE ) )
+	colorbg:setImage( RegisterImage( "uie_codcaster_teamcolloredbg_generic" ) )
 	self:addElement( colorbg )
 	self.colorbg = colorbg
 	

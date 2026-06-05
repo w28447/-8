@@ -1,10 +1,10 @@
 require( "ui/uieditor/widgets/mphudwidgets/waypoint_textbg" )
 require( "ui/uieditor/widgets/mphudwidgets/waypointarrowcontainer" )
-require( "x64:eae785b5338418f" )
-require( "x64:3887b6415ad6188" )
-require( "x64:f1ec649151bc0b8" )
+require( "ui/uieditor/widgets/mphudwidgets/waypointhardpoint_coloricon" )
+require( "ui/uieditor/widgets/mphudwidgets/waypointhardpoint_colorpattern" )
+require( "ui/uieditor/widgets/mphudwidgets/waypointhardpoint_timer" )
 require( "ui/uieditor/widgets/mphudwidgets/waypointprogressbar" )
-require( "x64:76c14e1bc07cd98" )
+require( "ui/uieditor/widgets/mphudwidgets/waypointprogressring" )
 
 CoD.WaypointHardpoint = InheritFrom( LUI.UIElement )
 CoD.WaypointHardpoint.__defaultWidth = 120
@@ -224,7 +224,7 @@ CoD.WaypointHardpoint.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local WaypointPatternClock = LUI.UIImage.new( 0.5, 0.5, -37, 39, 0.5, 0.5, -38, 38 )
 	WaypointPatternClock:setRGB( 0.25, 0.25, 0.25 )
 	WaypointPatternClock:setAlpha( 0.92 )
-	WaypointPatternClock:setImage( RegisterImage( 0x159D9B7B7294C91 ) )
+	WaypointPatternClock:setImage( RegisterImage( "uie_ui_hud_core_waypoint_led" ) )
 	WaypointPatternClock:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	WaypointPatternClock:setShaderVector( 1, 0.5, 0, 0, 0 )
 	WaypointPatternClock:setShaderVector( 2, 0.5, 0, 0, 0 )

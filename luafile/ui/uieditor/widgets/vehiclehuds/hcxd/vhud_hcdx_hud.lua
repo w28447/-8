@@ -334,21 +334,21 @@ CoD.vhud_hcdx_hud.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	FuiLayoutTL:setAlpha( 0.15 )
 	FuiLayoutTL:setXRot( 180 )
 	FuiLayoutTL:setYRot( 180 )
-	FuiLayoutTL:setImage( RegisterImage( 0x5338AA8246DD618 ) )
+	FuiLayoutTL:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_frame_engine" ) )
 	FuiLayoutTL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiLayoutTL )
 	self.FuiLayoutTL = FuiLayoutTL
 	
 	local StripeL = LUI.UIImage.new( 0, 0, 134, 354, 0, 0, 34.5, 44.5 )
 	StripeL:setAlpha( 0.05 )
-	StripeL:setImage( RegisterImage( 0x5AFE39B9B2E68FE ) )
+	StripeL:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_message_layout_stripe" ) )
 	StripeL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( StripeL )
 	self.StripeL = StripeL
 	
 	local StripeR = LUI.UIImage.new( 1, 1, -353, -133, 0, 0, 34.5, 44.5 )
 	StripeR:setAlpha( 0.05 )
-	StripeR:setImage( RegisterImage( 0x5AFE39B9B2E68FE ) )
+	StripeR:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_message_layout_stripe" ) )
 	StripeR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( StripeR )
 	self.StripeR = StripeR
@@ -357,7 +357,7 @@ CoD.vhud_hcdx_hud.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	FuiLayoutTR:setAlpha( 0.15 )
 	FuiLayoutTR:setXRot( 180 )
 	FuiLayoutTR:setYRot( 180 )
-	FuiLayoutTR:setImage( RegisterImage( 0x5338AA8246DD618 ) )
+	FuiLayoutTR:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_frame_engine" ) )
 	FuiLayoutTR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FuiLayoutTR )
 	self.FuiLayoutTR = FuiLayoutTR

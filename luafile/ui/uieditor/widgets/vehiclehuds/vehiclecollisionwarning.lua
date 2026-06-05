@@ -17,7 +17,7 @@ CoD.vehicleCollisionWarning.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local text = LUI.UIText.new( 0.5, 0.5, -125, 125, 0.5, 0.5, -18.5, 18.5 )
 	text:setRGB( 1, 0.52, 0 )
-	text:setText( Engine[0xF9F1239CFD921FE]( 0x991968E9BE6C1EA ) )
+	text:setText( Engine[0xF9F1239CFD921FE]( "hud/collision_warning" ) )
 	text:setTTF( "default" )
 	text:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6250C6FCAC36BD4 ) )
 	text:setShaderVector( 0, 0, 0, 0, 0 )

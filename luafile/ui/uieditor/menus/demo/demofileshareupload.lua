@@ -61,17 +61,17 @@ LUI.createMenu.DemoFileshareUpload = function ( f1_arg0, f1_arg1 )
 			modelName = "fileshareRoot.uploadTask.state"
 		} )
 	end, false )
-	FullscreenPopupTemplate.Subtitle:setText( Engine[0xF9F1239CFD921FE]( 0x9503CD034274830 ) )
-	FullscreenPopupTemplate.ErrorSubtitle:setText( Engine[0xF9F1239CFD921FE]( 0x9C62D3C1C35DC01 ) )
-	FullscreenPopupTemplate.WorkingTitle:setText( Engine[0xF9F1239CFD921FE]( 0xC76223999D97EC9 ) )
-	FullscreenPopupTemplate.Title:setText( Engine[0xF9F1239CFD921FE]( 0x4FBFD6B591E8B59 ) )
+	FullscreenPopupTemplate.Subtitle:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_upload_desc" ) )
+	FullscreenPopupTemplate.ErrorSubtitle:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_upload_error" ) )
+	FullscreenPopupTemplate.WorkingTitle:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_upload_working_title" ) )
+	FullscreenPopupTemplate.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_upload_title" ) )
 	FullscreenPopupTemplate.DoneTitle:setText( LocalizeToUpperString( "menu/new" ) )
 	self:addElement( FullscreenPopupTemplate )
 	self.FullscreenPopupTemplate = FullscreenPopupTemplate
 	
 	TitleDescription = LUI.UIText.new( 0.5, 0.5, -273, 829, 0.5, 0.5, -1, 20 )
 	TitleDescription:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
-	TitleDescription:setText( Engine[0xF9F1239CFD921FE]( 0xA2AC7D3118B5303 ) )
+	TitleDescription:setText( Engine[0xF9F1239CFD921FE]( "menu/description" ) )
 	TitleDescription:setTTF( "ttmussels_regular" )
 	TitleDescription:setLetterSpacing( 2 )
 	TitleDescription:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -81,7 +81,7 @@ LUI.createMenu.DemoFileshareUpload = function ( f1_arg0, f1_arg1 )
 	
 	TitleText = LUI.UIText.new( 0.5, 0.5, -273, 829, 0.5, 0.5, -94, -73 )
 	TitleText:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
-	TitleText:setText( Engine[0xF9F1239CFD921FE]( 0x6C2F065A6AA8DA7 ) )
+	TitleText:setText( Engine[0xF9F1239CFD921FE]( "menu/title" ) )
 	TitleText:setTTF( "ttmussels_regular" )
 	TitleText:setLetterSpacing( 2 )
 	TitleText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -91,7 +91,7 @@ LUI.createMenu.DemoFileshareUpload = function ( f1_arg0, f1_arg1 )
 	
 	LblPermissions = LUI.UIText.new( 0.5, 0.5, -267, -217, 0.5, 0.5, 88, 126 )
 	LblPermissions:setAlpha( 0 )
-	LblPermissions:setText( Engine[0xF9F1239CFD921FE]( 0x843FACDBE21C207 ) )
+	LblPermissions:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_permissions" ) )
 	LblPermissions:setTTF( "default" )
 	LblPermissions:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	LblPermissions:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -122,7 +122,7 @@ LUI.createMenu.DemoFileshareUpload = function ( f1_arg0, f1_arg1 )
 			end
 		}
 	} )
-	SlotsUsedWidget.Title:setText( LocalizeToUpperString( 0xE192601D65F99E ) )
+	SlotsUsedWidget.Title:setText( LocalizeToUpperString( "menu/fileshare_slots_used" ) )
 	SlotsUsedWidget:subscribeToGlobalModel( f1_arg0, "FileshareRoot", "currentCategoryQuota", function ( model )
 		local f7_local0 = model:get()
 		if f7_local0 ~= nil then
@@ -187,7 +187,7 @@ LUI.createMenu.DemoFileshareUpload = function ( f1_arg0, f1_arg1 )
 	self.ThumbnailFrame = ThumbnailFrame
 	
 	local ButtonSave2 = CoD.EmblemOptionsButton.new( f1_local1, f1_arg0, 0.5, 0.5, -273, 127, 0.5, 0.5, 113, 173 )
-	ButtonSave2.Button.Title:setText( Engine[0xF9F1239CFD921FE]( 0x8BF98F9DA1FC248 ) )
+	ButtonSave2.Button.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_upload_caps" ) )
 	local f1_local14 = ButtonSave2
 	local f1_local15 = ButtonSave2.subscribeToModel
 	local TitleTextBox = Engine.GetGlobalModel()
@@ -204,16 +204,16 @@ LUI.createMenu.DemoFileshareUpload = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f15_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( ButtonSave2, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ENTER", function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
-		if not CoD.FileshareUtility.FileshareIsUploading() and not CoD.FileshareUtility.ShouldDisablePrivateUpload( f16_arg2 ) then
-			CoD.FileshareUtility.FilesharePrivateUpload( f16_arg2 )
+	f1_local1:AddButtonCallbackFunction( ButtonSave2, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ENTER", function ( element, menu, controller, model )
+		if not CoD.FileshareUtility.FileshareIsUploading() and not CoD.FileshareUtility.ShouldDisablePrivateUpload( controller ) then
+			CoD.FileshareUtility.FilesharePrivateUpload( controller )
 			return true
 		else
 			
 		end
-	end, function ( f17_arg0, f17_arg1, f17_arg2 )
-		if not CoD.FileshareUtility.FileshareIsUploading() and not CoD.FileshareUtility.ShouldDisablePrivateUpload( f17_arg2 ) then
-			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ENTER" )
+	end, function ( element, menu, controller )
+		if not CoD.FileshareUtility.FileshareIsUploading() and not CoD.FileshareUtility.ShouldDisablePrivateUpload( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ENTER" )
 			return true
 		else
 			return false
@@ -346,36 +346,36 @@ LUI.createMenu.DemoFileshareUpload = function ( f1_arg0, f1_arg1 )
 			modelName = "fileshareRoot.uploadTask.state"
 		} )
 	end, false )
-	self:registerEventHandler( "occlusion_change", function ( element, event )
+	self:registerEventHandler( "occlusion_change", function ( self, event )
 		local f31_local0 = nil
-		if element.OcclusionChange then
-			f31_local0 = element:OcclusionChange( event )
-		elseif element.super.OcclusionChange then
-			f31_local0 = element.super:OcclusionChange( event )
+		if self.OcclusionChange then
+			f31_local0 = self:OcclusionChange( event )
+		elseif self.super.OcclusionChange then
+			f31_local0 = self.super:OcclusionChange( event )
 		end
 		UpdateSelfState( self, f1_arg0 )
 		if not f31_local0 then
-			f31_local0 = element:dispatchEventToChildren( event )
+			f31_local0 = self:dispatchEventToChildren( event )
 		end
 		return f31_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f32_arg0, f32_arg1, f32_arg2, f32_arg3 )
-		CoD.DemoUtility.UploadClip_GoBack( self, f32_arg0, f32_arg2, f32_arg1 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		CoD.DemoUtility.UploadClip_GoBack( self, element, controller, menu )
 		return true
-	end, function ( f33_arg0, f33_arg1, f33_arg2 )
-		CoD.Menu.SetButtonLabel( f33_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f34_arg0, f34_arg1, f34_arg2, f34_arg3 )
-		if CoD.FileshareUtility.AreSlotsFull( f34_arg2 ) then
-			CoD.FileshareUtility.OpenDeleteFileshareFile( self, f34_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( element, menu, controller, model )
+		if CoD.FileshareUtility.AreSlotsFull( controller ) then
+			CoD.FileshareUtility.OpenDeleteFileshareFile( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f35_arg0, f35_arg1, f35_arg2 )
-		if CoD.FileshareUtility.AreSlotsFull( f35_arg2 ) then
-			CoD.Menu.SetButtonLabel( f35_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0xA9A7F1FDCC1803E, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.FileshareUtility.AreSlotsFull( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], 0xA9A7F1FDCC1803E, nil, nil )
 			return true
 		else
 			return false
@@ -480,9 +480,9 @@ CoD.DemoFileshareUpload.__resetProperties = function ( f39_arg0 )
 	f39_arg0.TitleDescription:setAlpha( 1 )
 	f39_arg0.TitleTextBox:setAlpha( 1 )
 	f39_arg0.DescTextBox:setAlpha( 1 )
-	f39_arg0.FullscreenPopupTemplate.Subtitle:setText( Engine[0xF9F1239CFD921FE]( 0x9503CD034274830 ) )
-	f39_arg0.FullscreenPopupTemplate.WorkingTitle:setText( Engine[0xF9F1239CFD921FE]( 0xC76223999D97EC9 ) )
-	f39_arg0.FullscreenPopupTemplate.Title:setText( Engine[0xF9F1239CFD921FE]( 0x4FBFD6B591E8B59 ) )
+	f39_arg0.FullscreenPopupTemplate.Subtitle:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_upload_desc" ) )
+	f39_arg0.FullscreenPopupTemplate.WorkingTitle:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_upload_working_title" ) )
+	f39_arg0.FullscreenPopupTemplate.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_upload_title" ) )
 	f39_arg0.FullscreenPopupTemplate.DoneTitle:setText( LocalizeToUpperString( "menu/new" ) )
 end
 
@@ -564,8 +564,8 @@ CoD.DemoFileshareUpload.__clipsPerState = {
 			f42_arg0.FullscreenPopupTemplate.Title:completeAnimation()
 			f42_arg0.FullscreenPopupTemplate.DoneTitle:completeAnimation()
 			f42_arg0.FullscreenPopupTemplate.Subtitle:setText( Engine[0xF9F1239CFD921FE]( "null/empty" ) )
-			f42_arg0.FullscreenPopupTemplate.WorkingTitle:setText( Engine[0xF9F1239CFD921FE]( 0x7525250556C866C ) )
-			f42_arg0.FullscreenPopupTemplate.Title:setText( Engine[0xF9F1239CFD921FE]( 0x7525250556C866C ) )
+			f42_arg0.FullscreenPopupTemplate.WorkingTitle:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_waiting" ) )
+			f42_arg0.FullscreenPopupTemplate.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/fileshare_waiting" ) )
 			f42_arg0.FullscreenPopupTemplate.DoneTitle:setText( LocalizeToUpperString( "null/empty" ) )
 			f42_arg0.clipFinished( f42_arg0.FullscreenPopupTemplate )
 			f42_arg0.TitleDescription:completeAnimation()

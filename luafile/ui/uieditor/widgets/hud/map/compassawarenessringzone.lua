@@ -10,23 +10,23 @@ CoD.CompassAwarenessRingZone.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local Image = LUI.UIImage.new( 0.5, 0.5, -82, 82, 0, 0, -28, 176 )
 	Image:setAlpha( 0 )
-	Image:setImage( RegisterImage( 0x929388B11087005 ) )
+	Image:setImage( RegisterImage( "uie_ui_hud_awareness_wedge01" ) )
 	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Image )
 	self.Image = Image
 	
 	local jammedImage = LUI.UIImage.new( 0.5, 0.5, -82, 82, 0, 0, -28, 176 )
 	jammedImage:setAlpha( 0 )
-	jammedImage:setImage( RegisterImage( 0xFB9FDE87942AD69 ) )
-	jammedImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xEA736E2B2799BB4 ) )
+	jammedImage:setImage( RegisterImage( "uie_ui_hud_awareness_wedge01_cuav" ) )
+	jammedImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scrambled" ) )
 	jammedImage:setShaderVector( 2, 1, 0, 0, 0 )
 	self:addElement( jammedImage )
 	self.jammedImage = jammedImage
 	
 	local cuavImage = LUI.UIImage.new( 0.5, 0.5, -82, 82, 0, 0, -28, 176 )
 	cuavImage:setAlpha( 0 )
-	cuavImage:setImage( RegisterImage( 0xFB9FDE87942AD69 ) )
-	cuavImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0xEA736E2B2799BB4 ) )
+	cuavImage:setImage( RegisterImage( "uie_ui_hud_awareness_wedge01_cuav" ) )
+	cuavImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scrambled" ) )
 	cuavImage:setShaderVector( 2, 1, 0, 0, 0 )
 	self:addElement( cuavImage )
 	self.cuavImage = cuavImage

@@ -21,28 +21,28 @@ CoD.ScrStk_ContainerWrapper.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local EMPbacker = LUI.UIImage.new( 0, 0, 82.5, 162.5, 0, 0, 44, 244 )
 	EMPbacker:setRGB( 0, 0, 0 )
 	EMPbacker:setAlpha( 0 )
-	EMPbacker:setImage( RegisterImage( 0xA6D80A4FDE89BB1 ) )
+	EMPbacker:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_score_streak" ) )
 	self:addElement( EMPbacker )
 	self.EMPbacker = EMPbacker
 	
 	local ScrStkHackedBg = LUI.UIImage.new( 0, 0, 88, 158, 0, 0, 49.5, 237.5 )
 	ScrStkHackedBg:setAlpha( 0 )
-	ScrStkHackedBg:setImage( RegisterImage( 0xA6D80A4FDE89BB1 ) )
+	ScrStkHackedBg:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_score_streak" ) )
 	self:addElement( ScrStkHackedBg )
 	self.ScrStkHackedBg = ScrStkHackedBg
 	
 	local ScrStkHackedScrambled02 = LUI.UIImage.new( 0, 0, 88, 158, 0, 0, 49.5, 237.5 )
 	ScrStkHackedScrambled02:setAlpha( 0 )
-	ScrStkHackedScrambled02:setImage( RegisterImage( 0xA6D80A4FDE89BB1 ) )
-	ScrStkHackedScrambled02:setMaterial( LUI.UIImage.GetCachedMaterial( 0xEA736E2B2799BB4 ) )
+	ScrStkHackedScrambled02:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_score_streak" ) )
+	ScrStkHackedScrambled02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scrambled" ) )
 	ScrStkHackedScrambled02:setShaderVector( 2, 3.8, 0, 0, 0 )
 	self:addElement( ScrStkHackedScrambled02 )
 	self.ScrStkHackedScrambled02 = ScrStkHackedScrambled02
 	
 	local ScrStkHackedEMP = LUI.UIImage.new( 0, 0, 88, 158, 0, 0, 49.5, 237.5 )
 	ScrStkHackedEMP:setAlpha( 0 )
-	ScrStkHackedEMP:setImage( RegisterImage( 0xA6D80A4FDE89BB1 ) )
-	ScrStkHackedEMP:setMaterial( LUI.UIImage.GetCachedMaterial( 0xC284ECCBDADEF0B ) )
+	ScrStkHackedEMP:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_score_streak" ) )
+	ScrStkHackedEMP:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_emp" ) )
 	ScrStkHackedEMP:setShaderVector( 0, 20, 0, 0, 0 )
 	ScrStkHackedEMP:setShaderVector( 1, 1, 0, 0, 0 )
 	ScrStkHackedEMP:setShaderVector( 2, 1, 0, 0, 0 )
@@ -51,8 +51,8 @@ CoD.ScrStk_ContainerWrapper.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local ScrStkHackedScrambled01 = LUI.UIImage.new( 0, 0, 88, 158, 0, 0, 49.5, 237.5 )
 	ScrStkHackedScrambled01:setAlpha( 0 )
-	ScrStkHackedScrambled01:setImage( RegisterImage( 0xA6D80A4FDE89BB1 ) )
-	ScrStkHackedScrambled01:setMaterial( LUI.UIImage.GetCachedMaterial( 0xEA736E2B2799BB4 ) )
+	ScrStkHackedScrambled01:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_score_streak" ) )
+	ScrStkHackedScrambled01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scrambled" ) )
 	ScrStkHackedScrambled01:setShaderVector( 2, 2.5, 0, 0, 0 )
 	self:addElement( ScrStkHackedScrambled01 )
 	self.ScrStkHackedScrambled01 = ScrStkHackedScrambled01

@@ -11,7 +11,7 @@ CoD.ThrustMeterDots.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local dots = LUI.UIImage.new( 0, 0, -5.5, 216.5, 0, 0, 6, 50 )
 	dots:setAlpha( 0 )
-	dots:setImage( RegisterImage( 0x677B44B66445FE3 ) )
+	dots:setImage( RegisterImage( "uie_ui_hud_core_thrust_widget_container" ) )
 	dots:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	dots:setShaderVector( 0, 0.8, 0, 0, 0 )
 	dots:setShaderVector( 1, 0.5, 0, 0, 0 )

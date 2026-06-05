@@ -109,7 +109,7 @@ CoD.AARPlayerReward.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	self.VerticalListSpacer4 = VerticalListSpacer4
 	
 	local InfoDotline2 = LUI.UIImage.new( 0.5, 0.5, -196, 184, 0, 0, 641, 645 )
-	InfoDotline2:setImage( RegisterImage( 0x805FC715189E506 ) )
+	InfoDotline2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_info_dotline" ) )
 	self:addElement( InfoDotline2 )
 	self.InfoDotline2 = InfoDotline2
 	

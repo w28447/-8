@@ -1,4 +1,4 @@
-require( "x64:ce485b24bba006e" )
+require( "ui/uieditor/widgets/pc/theater/pc_theater_keyboard_shortcut" )
 
 CoD.PC_Theater_Keyboard_Shortcut_Container = InheritFrom( LUI.UIElement )
 CoD.PC_Theater_Keyboard_Shortcut_Container.__defaultWidth = 280

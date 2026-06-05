@@ -1,6 +1,6 @@
 require( "ui/uieditor/widgets/controllerdependent_textbox" )
-require( "x64:9d92dce1e4291ce" )
-require( "x64:33ec8b4b2fb3c47" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/abilityholdtoactivate" )
+require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_abilitycontainer" )
 require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_abilitytext" )
 require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidget_heroempty" )
 require( "ui/uieditor/widgets/hud/core_ammowidget/ammowidgetmp_ability_flash" )
@@ -18,7 +18,7 @@ CoD.AmmoWidgetMP_Ultimate_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Blur = LUI.UIImage.new( 0, 0, 79.5, 183.5, 0, 0, 10.5, 120.5 )
-	Blur:setImage( RegisterImage( 0x7C42B938F911DF9 ) )
+	Blur:setImage( RegisterImage( "uie_ui_hud_core_player_widget_panel_hex" ) )
 	Blur:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE2354BE557C4C7A ) )
 	Blur:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Blur )
@@ -51,7 +51,7 @@ CoD.AmmoWidgetMP_Ultimate_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local Panel = LUI.UIImage.new( 0, 0, 79.5, 183.5, 0, 0, 10.5, 120.5 )
 	Panel:setRGB( 0.18, 0.17, 0.16 )
 	Panel:setAlpha( 0.94 )
-	Panel:setImage( RegisterImage( 0x7C42B938F911DF9 ) )
+	Panel:setImage( RegisterImage( "uie_ui_hud_core_player_widget_panel_hex" ) )
 	self:addElement( Panel )
 	self.Panel = Panel
 	
@@ -222,13 +222,13 @@ CoD.AmmoWidgetMP_Ultimate_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	self.TankUseString = TankUseString
 	
 	Frame = LUI.UIImage.new( 0, 0, 0, 268, 0, 0, -10, 140 )
-	Frame:setImage( RegisterImage( 0xF56F1460BB4F637 ) )
+	Frame:setImage( RegisterImage( "uie_ui_hud_core_frame_hero_widget" ) )
 	self:addElement( Frame )
 	self.Frame = Frame
 	
 	GlowHero = LUI.UIImage.new( 0, 0, 78.5, 188.5, 0, 0, 13, 125 )
 	GlowHero:setAlpha( 0 )
-	GlowHero:setImage( RegisterImage( 0xD4F7AA0A4512AE0 ) )
+	GlowHero:setImage( RegisterImage( "uie_ui_hud_core_hero_widget_glow_hero" ) )
 	GlowHero:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	GlowHero:setShaderVector( 0, 4, 0, 0, 0 )
 	self:addElement( GlowHero )
@@ -237,7 +237,7 @@ CoD.AmmoWidgetMP_Ultimate_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	LED = LUI.UIImage.new( 0, 0, 79, 183, 0, 0, 11.5, 121.5 )
 	LED:setRGB( 0, 0, 0 )
 	LED:setAlpha( 0.3 )
-	LED:setImage( RegisterImage( 0x6A97BE1E61599B6 ) )
+	LED:setImage( RegisterImage( "uie_ui_hud_core_player_widget_led_hex" ) )
 	self:addElement( LED )
 	self.LED = LED
 	
@@ -278,7 +278,7 @@ CoD.AmmoWidgetMP_Ultimate_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local UltimateRadialMeterpath2 = LUI.UIImage.new( 0, 0, 80, 188, 0, 0, 11.5, 121.5 )
 	UltimateRadialMeterpath2:setRGB( 0.57, 0.57, 0.57 )
 	UltimateRadialMeterpath2:setAlpha( 0.06 )
-	UltimateRadialMeterpath2:setImage( RegisterImage( 0xDC66F93B7868335 ) )
+	UltimateRadialMeterpath2:setImage( RegisterImage( "uie_ui_hud_core_hero_widget_meter_empty" ) )
 	UltimateRadialMeterpath2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	UltimateRadialMeterpath2:setShaderVector( 0, 6, 0, 0, 0 )
 	self:addElement( UltimateRadialMeterpath2 )
@@ -310,7 +310,7 @@ CoD.AmmoWidgetMP_Ultimate_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local combatEfficiencyActive = LUI.UIImage.new( 0, 0, 48, 80, 0, 0, -16, 16 )
 	combatEfficiencyActive:setAlpha( 0 )
-	combatEfficiencyActive:setImage( RegisterImage( 0xC43A727D93CE8E8 ) )
+	combatEfficiencyActive:setImage( RegisterImage( "t7_hud_mp_ability_hero_combatefficiency_available" ) )
 	self:addElement( combatEfficiencyActive )
 	self.combatEfficiencyActive = combatEfficiencyActive
 	
@@ -339,7 +339,7 @@ CoD.AmmoWidgetMP_Ultimate_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GlowRing = LUI.UIImage.new( 0, 0, 71.5, 195.5, 0, 0, -4, 134 )
 	GlowRing:setAlpha( 0 )
-	GlowRing:setImage( RegisterImage( 0xCDD8E4DEC7EA034 ) )
+	GlowRing:setImage( RegisterImage( "uie_abeq_flare_ring" ) )
 	GlowRing:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	GlowRing:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GlowRing )
@@ -348,7 +348,7 @@ CoD.AmmoWidgetMP_Ultimate_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local FlareBack = LUI.UIImage.new( 0, 0, 32, 232, 0, 0, -10, 138 )
 	FlareBack:setAlpha( 0 )
 	FlareBack:setScale( 1, 0.8 )
-	FlareBack:setImage( RegisterImage( 0x650DB36D4791063 ) )
+	FlareBack:setImage( RegisterImage( "uie_hex_flare_back" ) )
 	FlareBack:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( FlareBack )
 	self.FlareBack = FlareBack

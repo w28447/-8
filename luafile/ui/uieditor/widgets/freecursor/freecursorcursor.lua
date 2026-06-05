@@ -9,25 +9,25 @@ CoD.freeCursorCursor.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local middle_overlay = LUI.UIImage.new( 0, 0, 42.5, 98.5, 0, 0, 40, 96 )
-	middle_overlay:setImage( RegisterImage( 0xDD0A252997B3A83 ) )
+	middle_overlay:setImage( RegisterImage( "uie_ui_menu_cursor_middle_overlay" ) )
 	self:addElement( middle_overlay )
 	self.middle_overlay = middle_overlay
 	
 	local inner_ring = LUI.UIImage.new( 0, 0, 42.5, 98.5, 0, 0, 40, 96 )
 	inner_ring:setAlpha( 0.3 )
-	inner_ring:setImage( RegisterImage( 0xF6896182F81702 ) )
+	inner_ring:setImage( RegisterImage( "uie_ui_menu_cursor_inner_ring" ) )
 	self:addElement( inner_ring )
 	self.inner_ring = inner_ring
 	
 	local innerring = LUI.UIImage.new( 0, 0, 42.5, 98.5, 0, 0, 40, 96 )
 	innerring:setAlpha( 0 )
-	innerring:setImage( RegisterImage( 0x548B4D2E38800BE ) )
+	innerring:setImage( RegisterImage( "uie_ui_menu_cursor_focus_ring" ) )
 	self:addElement( innerring )
 	self.innerring = innerring
 	
 	local middle_ring = LUI.UIImage.new( 0, 0, 42.5, 98.5, 0, 0, 40, 96 )
 	middle_ring:setAlpha( 0.42 )
-	middle_ring:setImage( RegisterImage( 0xA70E45B13E481AB ) )
+	middle_ring:setImage( RegisterImage( "uie_ui_menu_cursor_middle_ring" ) )
 	self:addElement( middle_ring )
 	self.middle_ring = middle_ring
 	

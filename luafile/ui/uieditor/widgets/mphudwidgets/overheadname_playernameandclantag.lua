@@ -62,7 +62,7 @@ CoD.OverheadName_PlayerNameAndClanTag.new = function ( f1_arg0, f1_arg1, f1_arg2
 	end, false )
 	self:subscribeToGlobalModel( f1_arg1, "PerController", "PlayerSettingsUpdate", function ( model )
 		local f7_local0 = self
-		if CoD.ModelUtility.IsModelValueEqualToEitherValue( f1_arg1, "PlayerSettingsUpdate", "gamertag_indicator", 0xA88A13987A72D7A ) then
+		if CoD.ModelUtility.IsModelValueEqualToEitherValue( f1_arg1, "PlayerSettingsUpdate", "gamertag_indicator", "team_indicator" ) then
 			UpdateSelfState( self, f1_arg1 )
 		end
 	end )

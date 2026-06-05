@@ -343,7 +343,7 @@ Lobby.Arena.UpdateLockoutTimer = function ()
 			return 
 		end
 	end
-	f14_local0:set( 0x0 )
+	f14_local0:set( "" )
 	f14_local1:set( "" )
 end
 
@@ -390,7 +390,7 @@ Lobby.Arena.ProcesLeagueAEEvent = function ( f19_arg0 )
 		local f19_local2 = f19_local1.arenaBest.leaguePlayStats
 		if f19_local2 and f19_local2.leagueID:get() == f19_local2.processLeagueID:get() then
 			local f19_local3 = f19_local2.lastSubdivisionRank:get()
-			if f19_local3 == f19_local0.tierlist[1][0x8A3024830754A20] then
+			if f19_local3 == f19_local0.tierlist[1].placement then
 				f19_local2.firstSubdivisionRankTotalBarrack:set( f19_local2.firstSubdivisionRankTotalBarrack:get() + 1 )
 				if f19_local2.firstGoldPointsBarrack:get() == 0 then
 					f19_local2.firstGoldPointsBarrack:set( f19_local2.points:get() )
@@ -398,17 +398,17 @@ Lobby.Arena.ProcesLeagueAEEvent = function ( f19_arg0 )
 				if f19_local2.firstDiamondPointsBarrack:get() == 0 and f19_local2.firstSubdivisionRankTotal:get() == f19_local0[0x5AB8CB56CCAB0D9] then
 					f19_local2.firstDiamondPointsBarrack:set( f19_local2.points:get() )
 				end
-			elseif f19_local3 <= f19_local0.tierlist[2][0x8A3024830754A20] then
+			elseif f19_local3 <= f19_local0.tierlist[2].placement then
 				f19_local2.top5SubdivisionRankTotalBarrack:set( f19_local2.top5SubdivisionRankTotalBarrack:get() + 1 )
 				if f19_local2.firstSilverGoldPointsBarrack:get() == 0 then
 					f19_local2.firstSilverGoldPointsBarrack:set( f19_local2.points:get() )
 				end
-			elseif f19_local3 <= f19_local0.tierlist[3][0x8A3024830754A20] then
+			elseif f19_local3 <= f19_local0.tierlist[3].placement then
 				f19_local2.top10SubdivisionRankTotalBarrack:set( f19_local2.top10SubdivisionRankTotalBarrack:get() + 1 )
 				if f19_local2.firstSilverPointsBarrack:get() == 0 then
 					f19_local2.firstSilverPointsBarrack:set( f19_local2.points:get() )
 				end
-			elseif f19_local3 <= f19_local0.tierlist[4][0x8A3024830754A20] then
+			elseif f19_local3 <= f19_local0.tierlist[4].placement then
 				f19_local2.top25SubdivisionRankTotalBarrack:set( f19_local2.top25SubdivisionRankTotalBarrack:get() + 1 )
 				if f19_local2.firstBronzePointsBarrack:get() == 0 then
 					f19_local2.firstBronzePointsBarrack:set( f19_local2.points:get() )
@@ -421,7 +421,7 @@ Lobby.Arena.ProcesLeagueAEEvent = function ( f19_arg0 )
 				local f19_local6 = f19_local5:create( "processingEvent" )
 				f19_local6:set( false )
 			end
-			Engine.Exec( f19_arg0, "uploadstats" )
+			Engine.exec( f19_arg0, "uploadstats" )
 			return true
 		end
 	end
@@ -455,7 +455,7 @@ Lobby.Arena.OnNavToArenaPregame = function ()
 				if f21_local6 ~= f21_local3.leagueCount:get() or Dvar.arena_league_play_show_end_rank_up:get() then
 					f21_local3.leagueCount:set( f21_local6 )
 					if not Lobby.Arena.ProcesLeagueAEEvent( f21_local0 ) then
-						Engine.Exec( f21_local0, "uploadstats" )
+						Engine.exec( f21_local0, "uploadstats" )
 					end
 					local f21_local7 = f21_local5:create( "arenaLeaguePlayShowEndRankUp" )
 					f21_local7:set( true )

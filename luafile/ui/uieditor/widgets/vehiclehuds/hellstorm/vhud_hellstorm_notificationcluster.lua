@@ -17,15 +17,15 @@ CoD.vhud_hellstorm_NotificationCluster.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local InnerGlow = LUI.UIImage.new( 0.5, 0.5, -110, 110, 0.5, 0.5, -30.5, 14.5 )
 	InnerGlow:setAlpha( 0 )
-	InnerGlow:setImage( RegisterImage( 0x3CCB8ACC43F6BDC ) )
+	InnerGlow:setImage( RegisterImage( "uie_director_frontend_glow" ) )
 	InnerGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( InnerGlow )
 	self.InnerGlow = InnerGlow
 	
 	local CLUSTER = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -11, 11 )
-	CLUSTER:setText( Engine[0xF9F1239CFD921FE]( 0xCBC1B6252C70EE6 ) )
+	CLUSTER:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_cluster" ) )
 	CLUSTER:setTTF( "0arame_mono_stencil" )
-	CLUSTER:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD756CD9A5F1F1B4 ) )
+	CLUSTER:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration_cheap_blur" ) )
 	CLUSTER:setShaderVector( 0, 0, 1, 0, 0 )
 	CLUSTER:setShaderVector( 1, 0, 0, 0, 0 )
 	CLUSTER:setShaderVector( 2, 0, 0, 0, 0 )
@@ -38,7 +38,7 @@ CoD.vhud_hellstorm_NotificationCluster.new = function ( f1_arg0, f1_arg1, f1_arg
 	self.CLUSTER = CLUSTER
 	
 	local CLUSTER0 = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -11, 11 )
-	CLUSTER0:setText( Engine[0xF9F1239CFD921FE]( 0xCBC1B6252C70EE6 ) )
+	CLUSTER0:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_cluster" ) )
 	CLUSTER0:setTTF( "0arame_mono_stencil" )
 	CLUSTER0:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	CLUSTER0:setLetterSpacing( 2 )
@@ -55,7 +55,7 @@ CoD.vhud_hellstorm_NotificationCluster.new = function ( f1_arg0, f1_arg1, f1_arg
 	local GlowBot = LUI.UIImage.new( 0.5, 0.5, -113, 113, 0, 0, 15, 35 )
 	GlowBot:setRGB( ColorSet.EnemyOrange_Bright.r, ColorSet.EnemyOrange_Bright.g, ColorSet.EnemyOrange_Bright.b )
 	GlowBot:setAlpha( 0 )
-	GlowBot:setImage( RegisterImage( 0xAD405802E3EEE94 ) )
+	GlowBot:setImage( RegisterImage( "uie_icon_frontend_navigation_glowmed" ) )
 	GlowBot:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowBot )
 	self.GlowBot = GlowBot
@@ -63,7 +63,7 @@ CoD.vhud_hellstorm_NotificationCluster.new = function ( f1_arg0, f1_arg1, f1_arg
 	local GlowTop = LUI.UIImage.new( 0.5, 0.5, -113, 113, 0, 0, 7, -13 )
 	GlowTop:setRGB( ColorSet.EnemyOrange_Bright.r, ColorSet.EnemyOrange_Bright.g, ColorSet.EnemyOrange_Bright.b )
 	GlowTop:setAlpha( 0 )
-	GlowTop:setImage( RegisterImage( 0xAD405802E3EEE94 ) )
+	GlowTop:setImage( RegisterImage( "uie_icon_frontend_navigation_glowmed" ) )
 	GlowTop:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowTop )
 	self.GlowTop = GlowTop

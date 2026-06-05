@@ -10,41 +10,41 @@ CoD.vhud_HellstormRing.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local L1 = LUI.UIImage.new( 0, 0, 0, 368, 0, 0, 0, 368 )
 	L1:setAlpha( 0.2 )
-	L1:setImage( RegisterImage( 0xF13D40449AE7486 ) )
+	L1:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
 	L1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( L1 )
 	self.L1 = L1
 	
 	local R1 = LUI.UIImage.new( 0.5, 0.5, 368, 0, 0, 0, 0, 368 )
 	R1:setAlpha( 0.2 )
-	R1:setImage( RegisterImage( 0xF13D40449AE7486 ) )
+	R1:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
 	R1:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( R1 )
 	self.R1 = R1
 	
 	local L2 = LUI.UIImage.new( 0, 0, 0, 368, 0.5, 0.5, 368, 0 )
 	L2:setAlpha( 0.2 )
-	L2:setImage( RegisterImage( 0xF13D40449AE7486 ) )
+	L2:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
 	L2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( L2 )
 	self.L2 = L2
 	
 	local R2 = LUI.UIImage.new( 0.5, 0.5, 368, 0, 0.5, 0.5, 368, 0 )
 	R2:setAlpha( 0.2 )
-	R2:setImage( RegisterImage( 0xF13D40449AE7486 ) )
+	R2:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring" ) )
 	R2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( R2 )
 	self.R2 = R2
 	
 	local GlowL = LUI.UIImage.new( 0, 0, 0, 368, 0, 0, 0, 736 )
-	GlowL:setImage( RegisterImage( 0xCAB86BB52B74C56 ) )
+	GlowL:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring_glow" ) )
 	GlowL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	GlowL:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GlowL )
 	self.GlowL = GlowL
 	
 	local GlowR = LUI.UIImage.new( 0.5, 0.5, 368, 0, 0, 0, 0, 736 )
-	GlowR:setImage( RegisterImage( 0xCAB86BB52B74C56 ) )
+	GlowR:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_ring_glow" ) )
 	GlowR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	GlowR:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( GlowR )

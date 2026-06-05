@@ -21,7 +21,7 @@ CoD.GameEndScoreSubtitle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local SwitchingSidesText = LUI.UIText.new( 0.5, 0.5, -460, 460, 0, 0, 2.5, 26.5 )
 	SwitchingSidesText:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	SwitchingSidesText:setAlpha( 0 )
-	SwitchingSidesText:setText( Engine[0xF9F1239CFD921FE]( 0x9034D05CE32DB88 ) )
+	SwitchingSidesText:setText( Engine[0xF9F1239CFD921FE]( "mp/switching_sides" ) )
 	SwitchingSidesText:setTTF( "0arame_mono_stencil" )
 	SwitchingSidesText:setLetterSpacing( 4 )
 	SwitchingSidesText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

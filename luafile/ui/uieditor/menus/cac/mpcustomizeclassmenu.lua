@@ -125,31 +125,31 @@ LUI.createMenu.MPCustomizeClassMenu = function ( f1_arg0, f1_arg1 )
 	self:linkToElementModel( self, nil, true, function ( model, f11_arg1 )
 		CoD.Menu.UpdateButtonShownState( f11_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x22361E23588705A] )
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], "ui_contextual_3", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		if not CoD.CACUtility.IsCurrentClassLocked( f12_arg1, f12_arg2 ) then
-			CoD.CACUtility.OpenClassOptions( self, f12_arg1, f12_arg2, "ClassOptions" )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], "ui_contextual_3", function ( element, menu, controller, model )
+		if not CoD.CACUtility.IsCurrentClassLocked( menu, controller ) then
+			CoD.CACUtility.OpenClassOptions( self, menu, controller, "ClassOptions" )
 			return true
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		if not CoD.CACUtility.IsCurrentClassLocked( f13_arg1, f13_arg2 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x22361E23588705A], 0x27F19FF8EF11A44, nil, "ui_contextual_3" )
+	end, function ( element, menu, controller )
+		if not CoD.CACUtility.IsCurrentClassLocked( menu, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "menu/class_options", nil, "ui_contextual_3" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
-		GoBack( self, f14_arg2 )
-		SendClientScriptMenuChangeNotify( f14_arg2, f14_arg1, false )
-		SaveLoadoutGeneric( f14_arg2 )
-		ClearMenuSavedState( f14_arg1 )
-		UpdateGamerprofile( self, f14_arg0, f14_arg2 )
-		CoD.LobbyUtility.SetMenuControllerRestriction( self, f14_arg2, 0 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
+		SendClientScriptMenuChangeNotify( controller, menu, false )
+		SaveLoadoutGeneric( controller )
+		ClearMenuSavedState( menu )
+		UpdateGamerprofile( self, element, controller )
+		CoD.LobbyUtility.SetMenuControllerRestriction( self, controller, 0 )
 		return true
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

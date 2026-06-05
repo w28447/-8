@@ -2,13 +2,13 @@ require( "ui/uieditor/widgets/demo/demobuttonprompt" )
 require( "ui/uieditor/widgets/demo/democontrolsspectatingbar" )
 
 local f0_local0 = function ( f1_arg0, f1_arg1 )
-	local f1_local0 = 0x3EF6A41762515E9
+	local f1_local0 = "mp/unknown"
 	if IsDemoClipPreviewRunning() then
-		f1_local0 = 0x1BF53D95E5AC2B5
+		f1_local0 = "menu/demo_mode_previewing_segment"
 	elseif IsDemoCreatingHighlightReel() then
-		f1_local0 = 0xAAD9F5A753F0418
+		f1_local0 = "mpui/creating_highlight_reel"
 	elseif IsDemoContextPlaybackMode() then
-		f1_local0 = 0xC985CBA47878B1C
+		f1_local0 = "demo/playback_mode"
 	elseif IsDemoContextBasicMode() then
 		f1_local0 = "demo/basic_mode"
 	elseif IsDemoContextDirectorMode() then
@@ -18,7 +18,7 @@ local f0_local0 = function ( f1_arg0, f1_arg1 )
 	elseif IsDemoContextLighterMode() then
 		f1_local0 = "demo/lighter_mode"
 	elseif IsDemoContextHighlightReelMode() then
-		f1_local0 = 0xE4E395171E8600C
+		f1_local0 = "demo/highlight_reel_mode"
 	end
 	f1_arg0.ModeName:setText( Engine[0xF9F1239CFD921FE]( f1_local0 ) )
 end
@@ -71,7 +71,7 @@ CoD.DemoContextPanel.new = function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3, f6_arg
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0.5, 0.5, -150, 150, 1, 1, -30, 0 )
 	PixelGridTiledBacking:setAlpha( 0.1 )
-	PixelGridTiledBacking:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
@@ -300,7 +300,7 @@ CoD.DemoContextPanel.__clipsPerState = {
 			f23_arg0.DemoControlsSpectatingBar:setAlpha( 0 )
 			f23_arg0.clipFinished( f23_arg0.DemoControlsSpectatingBar )
 			f23_arg0.ModeName:completeAnimation()
-			f23_arg0.ModeName:setText( Engine[0xF9F1239CFD921FE]( 0x1BF53D95E5AC2B5 ) )
+			f23_arg0.ModeName:setText( Engine[0xF9F1239CFD921FE]( "menu/demo_mode_previewing_segment" ) )
 			f23_arg0.clipFinished( f23_arg0.ModeName )
 			f23_arg0.ButtonPrompt:completeAnimation()
 			f23_arg0.ButtonPrompt.label:completeAnimation()
@@ -319,7 +319,7 @@ CoD.DemoContextPanel.__clipsPerState = {
 			f24_arg0.DemoControlsSpectatingBar:setAlpha( 0 )
 			f24_arg0.clipFinished( f24_arg0.DemoControlsSpectatingBar )
 			f24_arg0.ModeName:completeAnimation()
-			f24_arg0.ModeName:setText( Engine[0xF9F1239CFD921FE]( 0xAAD9F5A753F0418 ) )
+			f24_arg0.ModeName:setText( Engine[0xF9F1239CFD921FE]( "mpui/creating_highlight_reel" ) )
 			f24_arg0.clipFinished( f24_arg0.ModeName )
 			f24_arg0.ButtonPrompt:completeAnimation()
 			f24_arg0.ButtonPrompt:setLeftRight( 0.5, 0.5, -115.5, 115.5 )

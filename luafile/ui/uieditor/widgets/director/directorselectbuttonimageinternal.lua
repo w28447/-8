@@ -1,4 +1,4 @@
-require( "ui/uieditor/widgets/common/CommonPixelBacking" )
+require( "ui/uieditor/widgets/common/commonpixelbacking" )
 require( "ui/uieditor/widgets/commonbuttonoutline" )
 require( "ui/uieditor/widgets/director/directorselectbuttonmode" )
 

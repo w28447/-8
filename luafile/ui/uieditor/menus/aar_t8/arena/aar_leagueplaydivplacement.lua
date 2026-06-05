@@ -30,7 +30,7 @@ LUI.createMenu.AAR_LeaguePlayDivPlacement = function ( f1_arg0, f1_arg1 )
 	
 	local FractalGrid = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	FractalGrid:setAlpha( 0 )
-	FractalGrid:setImage( RegisterImage( 0x1DF4C930E69FFB0 ) )
+	FractalGrid:setImage( RegisterImage( "uie_ui_menu_aar_levelup_fractalgrid" ) )
 	FractalGrid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	FractalGrid:setShaderVector( 0, 1, 1, 0, 0 )
 	FractalGrid:setShaderVector( 1, 0, 0, 0, 0 )
@@ -94,13 +94,13 @@ LUI.createMenu.AAR_LeaguePlayDivPlacement = function ( f1_arg0, f1_arg1 )
 	local MainCornerL = LUI.UIImage.new( 0.5, 0.5, -759, -729, 0, 0, 146, 176 )
 	MainCornerL:setAlpha( 0.04 )
 	MainCornerL:setYRot( 180 )
-	MainCornerL:setImage( RegisterImage( 0xBCB7451C0F2DE33 ) )
+	MainCornerL:setImage( RegisterImage( "uie_ui_hud_notifications_bracket_topright" ) )
 	self:addElement( MainCornerL )
 	self.MainCornerL = MainCornerL
 	
 	local MainCornerR = LUI.UIImage.new( 0.5, 0.5, 737, 767, 0, 0, 145, 175 )
 	MainCornerR:setAlpha( 0.04 )
-	MainCornerR:setImage( RegisterImage( 0xBCB7451C0F2DE33 ) )
+	MainCornerR:setImage( RegisterImage( "uie_ui_hud_notifications_bracket_topright" ) )
 	self:addElement( MainCornerR )
 	self.MainCornerR = MainCornerR
 	
@@ -109,24 +109,24 @@ LUI.createMenu.AAR_LeaguePlayDivPlacement = function ( f1_arg0, f1_arg1 )
 	self:addElement( Sound )
 	self.Sound = Sound
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		CoD.AARUtility.CloseArenaLeaguePlayPlacementOverlay( f3_arg1, f3_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.AARUtility.CloseArenaLeaguePlayPlacementOverlay( menu, controller )
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, "ui_confirm" )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
 		if IsPC() then
-			CoD.AARUtility.CloseArenaLeaguePlayPlacementOverlay( f5_arg1, f5_arg2 )
+			CoD.AARUtility.CloseArenaLeaguePlayPlacementOverlay( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		else
 			return false

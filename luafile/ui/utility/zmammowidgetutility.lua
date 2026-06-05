@@ -52,7 +52,7 @@ end
 
 DataSources.AmmoWidgetZMEquippedWeaponsList = DataSourceHelpers.CustomListSetup( "AmmoWidgetZMEquippedWeaponsList", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3, f5_arg4 )
 	local f5_local0 = 2
-	if CoD.ZMAmmoWidgetUtility.HasPerk( f5_arg1, 0x8C176152188E03F, Enum.eModes[0x3723205FAE52C4A] ) then
+	if CoD.ZMAmmoWidgetUtility.HasPerk( f5_arg1, "perk_additional_primary_weapon", Enum.eModes.mode_zombies ) then
 		f5_local0 = 3
 	end
 	local f5_local1 = CoD.ZMAmmoWidgetUtility.GetHeldWeaponsList( f5_arg1, f5_local0 )

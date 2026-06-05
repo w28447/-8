@@ -64,7 +64,7 @@ CoD.DirectorMatchmakingTimer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	MatchStartLabel = LUI.UIText.new( 0, 0, 10, 310, 0, 0, 30, 48 )
 	MatchStartLabel:setAlpha( 0 )
-	MatchStartLabel:setText( LocalizeToUpperString( 0x55976A26B75E99D ) )
+	MatchStartLabel:setText( LocalizeToUpperString( "mpui/match_starting_in" ) )
 	MatchStartLabel:setTTF( "ttmussels_demibold" )
 	MatchStartLabel:setLetterSpacing( 6 )
 	MatchStartLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

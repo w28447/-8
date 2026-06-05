@@ -199,7 +199,7 @@ else
 			f12_arg2 = f12_arg0.vehicleHUD.vehicleType
 		end
 		if f12_arg0.vehicleHUD then
-			if (f12_arg0.vehicleHUD.vehicleType == f12_arg2 or CoD.isPC and f12_arg2 ~= 0x0) and not f12_arg3 then
+			if (f12_arg0.vehicleHUD.vehicleType == f12_arg2 or CoD.isPC and f12_arg2 ~= "") and not f12_arg3 then
 				return 
 			end
 			f12_arg0.vehicleHUD:close()
@@ -374,7 +374,7 @@ else
 		f0_local1( f17_local0 )
 		f17_local0:registerEventHandler( "debug_reload", HUD_DebugReload )
 		if CoD.isPC then
-			Engine.Exec( f17_arg0, "ui_keyboard_cancel" )
+			Engine.exec( f17_arg0, "ui_keyboard_cancel" )
 			CoD.PCUtility.RegisterPlaytimeLeftWatcher( f17_local0 )
 		end
 		Engine.PlayMenuMusic( "" )
@@ -468,9 +468,9 @@ else
 		local f30_local0 = f30_arg1.isError
 		local f30_local1 = f30_arg1.gamertag
 		if f30_local0 == false then
-			CoD.OverlayUtility.ShowToast( "Invite", Engine[0xF9F1239CFD921FE]( 0x513526C1CA23EB9 ), f30_local1, LuaDefine.INVITE_TOAST_POPUP_ICON )
+			CoD.OverlayUtility.ShowToast( "Invite", Engine[0xF9F1239CFD921FE]( "menu/invite_sent" ), f30_local1, LuaDefine.INVITE_TOAST_POPUP_ICON )
 		else
-			CoD.OverlayUtility.ShowToast( "Invite", Engine.ToUpper( Engine[0xF9F1239CFD921FE]( 0x248E1604D27C8DA ) ), f30_local1, LuaDefine.INVITE_TOAST_POPUP_ERROR_ICON )
+			CoD.OverlayUtility.ShowToast( "Invite", Engine.ToUpper( Engine[0xF9F1239CFD921FE]( "menu/invite_failed" ) ), f30_local1, LuaDefine.INVITE_TOAST_POPUP_ERROR_ICON )
 		end
 		return true
 	end
@@ -485,19 +485,19 @@ else
 		f31_arg0:registerEventHandler( "open_toaster_popup", f0_local17 )
 		f31_arg0:subscribeToModel( Engine.GetModel( Engine.GetModelForController( f31_arg0.controller ), "scriptNotify" ), function ( model )
 			local modelValue = Engine.GetModelValue( model )
-			if modelValue == 0x4F971799B2C4D3F then
+			if modelValue == "show_outcome" then
 				f0_local16( f31_arg0, {
 					controller = f31_arg0.controller,
 					name = modelValue,
 					data = CoD.GetScriptNotifyData( model )
 				} )
-			elseif modelValue == 0x3F755C31BEFD708 then
+			elseif modelValue == "track_victim_death" then
 				f0_local5( f31_arg0, {
 					controller = f31_arg0.controller,
 					name = modelValue,
 					data = CoD.GetScriptNotifyData( model )
 				} )
-			elseif modelValue == 0x4AEDFEF39E0B097 then
+			elseif modelValue == "force_scoreboard" then
 				if Engine[0xA55C3ACD0D2BCF0]() == false or CoD.isZombie == false then
 					local f32_local1 = 1
 					if CoD.isZombie == true then
@@ -508,7 +508,7 @@ else
 					end
 					Engine.SetModelValue( Engine.CreateModel( Engine.GetModelForController( f31_arg0.controller ), "forceScoreboard" ), f32_local1 )
 				end
-			elseif modelValue == 0xB524C1480EF80A7 then
+			elseif modelValue == "open_ingame_menu" then
 				f0_local0( f31_arg0, {
 					controller = f31_arg0.controller,
 					name = modelValue,
@@ -526,7 +526,7 @@ else
 					name = modelValue,
 					data = CoD.GetScriptNotifyData( model )
 				} )
-			elseif modelValue == 0x55F54E72449F4E3 then
+			elseif modelValue == "potm_client" then
 				local f32_local1 = CoD.GetScriptNotifyData( model )
 				if f32_local1 ~= nil then
 					local f32_local2 = f32_local1[1]
@@ -968,7 +968,7 @@ else
 			local f59_local9 = LUI.UIElement.new()
 			f59_local9:setLeftRight( true, true, 0, 0 )
 			f59_local9:setTopBottom( true, true, 0, 0 )
-			f59_local9:setImage( RegisterMaterial( 0xEA85353DDCA6682 ) )
+			f59_local9:setImage( RegisterMaterial( "compassping_enemysatellite_diamond" ) )
 			f59_local9:setRGB( CoD.ColorUtility.ExplodeColor( CoD.ColorUtility.GetColorBlindColorForPlayer( f59_arg1, "PlayerYellow" ) ) )
 			f59_arg0:addForceClosedChild( f59_local9 )
 			f59_local9:setupTargetHighlights_Friendly()
@@ -980,7 +980,7 @@ else
 			local f59_local10 = LUI.UIElement.new()
 			f59_local10:setLeftRight( true, true, 0, 0 )
 			f59_local10:setTopBottom( true, true, 0, 0 )
-			f59_local10:setImage( RegisterMaterial( 0xEA85353DDCA6682 ) )
+			f59_local10:setImage( RegisterMaterial( "compassping_enemysatellite_diamond" ) )
 			f59_local10:setRGB( 1, 0, 0 )
 			f59_arg0:addForceClosedChild( f59_local10 )
 			f59_local10:setupPlayerPivotTargetting()
@@ -995,7 +995,7 @@ else
 			local f59_local9 = LUI.UIElement.new()
 			f59_local9:setLeftRight( true, true, 0, 0 )
 			f59_local9:setTopBottom( true, true, 0, 0 )
-			f59_local9:setImage( RegisterMaterial( 0xEA85353DDCA6682 ) )
+			f59_local9:setImage( RegisterMaterial( "compassping_enemysatellite_diamond" ) )
 			f59_local9:setRGB( CoD.ColorUtility.ExplodeColor( CoD.ColorUtility.GetColorBlindColorForPlayer( f59_arg1, "EnemyScorestreakTarget" ) ) )
 			f59_arg0:addForceClosedChild( f59_local9 )
 			f59_local9:setupLockonHighlights()
@@ -1635,7 +1635,7 @@ else
 				name = "hud_boot",
 				controller = f100_arg0.controller
 			} )
-			Engine.SetModelValue( Engine.GetModel( Engine.GetModelForController( f100_arg0.controller ), "scriptNotify" ), 0x9FB0A7FE2E8EC41 )
+			Engine.SetModelValue( Engine.GetModel( Engine.GetModelForController( f100_arg0.controller ), "scriptNotify" ), "player_spawned" )
 		end
 	end
 	
@@ -1804,7 +1804,7 @@ else
 	end
 	
 	function HUD_Handle_ChooseClass_HotKey( f116_arg0, f116_arg1 )
-		if UIExpression.Team( f116_arg1.controller, "name" ) ~= "TEAM_SPECTATOR" and CoD.IsWagerMode() == false and not (Engine.GetGametypeSetting( 0xC78F5F54144DEA5 ) == 1) then
+		if UIExpression.Team( f116_arg1.controller, "name" ) ~= "TEAM_SPECTATOR" and CoD.IsWagerMode() == false and not (Engine.GetGametypeSetting( "disableclassselection" ) == 1) then
 			f0_local0( f116_arg0, {
 				menuName = "changeclass",
 				controller = f116_arg1.controller

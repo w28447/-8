@@ -8,7 +8,7 @@ CoD.CodCasterAnnouncementFeedText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.soundSet = "default"
 	
 	local AnnouncementFeedHeader = LUI.UIText.new( 0.5, 0.5, -302.5, 302.5, 0.5, 0.5, -9.5, 8.5 )
-	AnnouncementFeedHeader:setText( Engine[0xF9F1239CFD921FE]( 0x89BC51ECA1CF2FF ) )
+	AnnouncementFeedHeader:setText( Engine[0xF9F1239CFD921FE]( "codcaster/an_first_blood" ) )
 	AnnouncementFeedHeader:setTTF( "notosans_bold" )
 	AnnouncementFeedHeader:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	AnnouncementFeedHeader:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -16,7 +16,7 @@ CoD.CodCasterAnnouncementFeedText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.AnnouncementFeedHeader = AnnouncementFeedHeader
 	
 	local AnnouncementFeed = LUI.UIText.new( 0.5, 0.5, -302.5, 302.5, 0.5, 0.5, -9.5, 8.5 )
-	AnnouncementFeed:setText( Engine[0xF9F1239CFD921FE]( 0x89BC51ECA1CF2FF ) )
+	AnnouncementFeed:setText( Engine[0xF9F1239CFD921FE]( "codcaster/an_first_blood" ) )
 	AnnouncementFeed:setTTF( "notosans_bold" )
 	AnnouncementFeed:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	AnnouncementFeed:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

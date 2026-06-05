@@ -106,58 +106,58 @@ CoD.Armory_AttachmentList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f10_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Attachments, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		if not IsListElementChildInState( f11_arg0, "AttachmentSlot", "NotAvailable" ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( f11_arg1, f11_arg0, f11_arg2 ) and not CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f11_arg0, f11_arg2, f11_arg1 ) and CoD.ZMLoadoutUtility.CanArmoryElementAttachmentBeEquipped( f11_arg0, f11_arg2, f11_arg1 ) then
-			CoD.ZMLoadoutUtility.EquipArmoryElementAttachment( f11_arg0, f11_arg2, f11_arg1 )
+	f1_arg0:AddButtonCallbackFunction( Attachments, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not IsListElementChildInState( element, "AttachmentSlot", "NotAvailable" ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( menu, element, controller ) and not CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) and CoD.ZMLoadoutUtility.CanArmoryElementAttachmentBeEquipped( element, controller, menu ) then
+			CoD.ZMLoadoutUtility.EquipArmoryElementAttachment( element, controller, menu )
 			return true
-		elseif IsPC() and not IsListElementChildInState( f11_arg0, "AttachmentSlot", "NotAvailable" ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( f11_arg1, f11_arg0, f11_arg2 ) and CoD.ZMLoadoutUtility.CanArmoryElementAttachmentBeEquipped( f11_arg0, f11_arg2, f11_arg1 ) and not CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f11_arg0, f11_arg2, f11_arg1 ) then
-			CoD.ZMLoadoutUtility.EquipArmoryElementAttachment( f11_arg0, f11_arg2, f11_arg1 )
+		elseif IsPC() and not IsListElementChildInState( element, "AttachmentSlot", "NotAvailable" ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( menu, element, controller ) and CoD.ZMLoadoutUtility.CanArmoryElementAttachmentBeEquipped( element, controller, menu ) and not CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) then
+			CoD.ZMLoadoutUtility.EquipArmoryElementAttachment( element, controller, menu )
 			return true
-		elseif IsPC() and not IsListElementChildInState( f11_arg0, "AttachmentSlot", "NotAvailable" ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f11_arg0, f11_arg2, f11_arg1 ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( f11_arg1, f11_arg0, f11_arg2 ) then
-			CoD.ZMLoadoutUtility.RemoveArmoryElementAttachment( f11_arg0, f11_arg2, f11_arg1 )
+		elseif IsPC() and not IsListElementChildInState( element, "AttachmentSlot", "NotAvailable" ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( menu, element, controller ) then
+			CoD.ZMLoadoutUtility.RemoveArmoryElementAttachment( element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		if not IsListElementChildInState( f12_arg0, "AttachmentSlot", "NotAvailable" ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( f12_arg1, f12_arg0, f12_arg2 ) and not CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f12_arg0, f12_arg2, f12_arg1 ) and CoD.ZMLoadoutUtility.CanArmoryElementAttachmentBeEquipped( f12_arg0, f12_arg2, f12_arg1 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not IsListElementChildInState( element, "AttachmentSlot", "NotAvailable" ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( menu, element, controller ) and not CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) and CoD.ZMLoadoutUtility.CanArmoryElementAttachmentBeEquipped( element, controller, menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif IsPC() and not IsListElementChildInState( f12_arg0, "AttachmentSlot", "NotAvailable" ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( f12_arg1, f12_arg0, f12_arg2 ) and CoD.ZMLoadoutUtility.CanArmoryElementAttachmentBeEquipped( f12_arg0, f12_arg2, f12_arg1 ) and not CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f12_arg0, f12_arg2, f12_arg1 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif IsPC() and not IsListElementChildInState( element, "AttachmentSlot", "NotAvailable" ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( menu, element, controller ) and CoD.ZMLoadoutUtility.CanArmoryElementAttachmentBeEquipped( element, controller, menu ) and not CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif IsPC() and not IsListElementChildInState( f12_arg0, "AttachmentSlot", "NotAvailable" ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f12_arg0, f12_arg2, f12_arg1 ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( f12_arg1, f12_arg0, f12_arg2 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif IsPC() and not IsListElementChildInState( element, "AttachmentSlot", "NotAvailable" ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( menu, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( Attachments, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		if IsGamepad( f13_arg2 ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f13_arg0, f13_arg2, f13_arg1 ) then
-			CoD.ZMLoadoutUtility.RemoveArmoryElementAttachment( f13_arg0, f13_arg2, f13_arg1 )
+	f1_arg0:AddButtonCallbackFunction( Attachments, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if IsGamepad( controller ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) then
+			CoD.ZMLoadoutUtility.RemoveArmoryElementAttachment( element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		if IsGamepad( f14_arg2 ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f14_arg0, f14_arg2, f14_arg1 ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, nil, nil )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( Attachments, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_remove", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		if IsMouseOrKeyboard( f15_arg2 ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f15_arg0, f15_arg2, f15_arg1 ) then
-			CoD.ZMLoadoutUtility.RemoveArmoryElementAttachment( f15_arg0, f15_arg2, f15_arg1 )
+	f1_arg0:AddButtonCallbackFunction( Attachments, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_remove", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) then
+			CoD.ZMLoadoutUtility.RemoveArmoryElementAttachment( element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		if IsMouseOrKeyboard( f16_arg2 ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f16_arg0, f16_arg2, f16_arg1 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_remove" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_remove" )
 			return false
 		else
 			return false

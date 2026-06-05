@@ -58,14 +58,14 @@ CoD.GameEndScoreOutcomeFFABarSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GlowTexture = LUI.UIImage.new( 0, 0, 6, 106, 0, 0, 10.5, 110.5 )
 	GlowTexture:setAlpha( 0.1 )
-	GlowTexture:setImage( RegisterImage( 0xC58FF2328701EBA ) )
+	GlowTexture:setImage( RegisterImage( "uie_ui_hud_core_no_ammo_glow" ) )
 	GlowTexture:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowTexture )
 	self.GlowTexture = GlowTexture
 	
 	local Glow = LUI.UIImage.new( 0, 0, 1, 111, 0, 0, 5.5, 115.5 )
 	Glow:setAlpha( 0.6 )
-	Glow:setImage( RegisterImage( 0xFAA6C81834660D3 ) )
+	Glow:setImage( RegisterImage( "uie_ui_menu_common_box_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
@@ -101,7 +101,7 @@ CoD.GameEndScoreOutcomeFFABarSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local GlowSphere = LUI.UIImage.new( 0, 0, 21, 92, 0, 0, 5.5, 115.5 )
 	GlowSphere:setAlpha( 0.95 )
-	GlowSphere:setImage( RegisterImage( 0x299DDAEBACCEECD ) )
+	GlowSphere:setImage( RegisterImage( "uie_fire_glow" ) )
 	GlowSphere:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowSphere )
 	self.GlowSphere = GlowSphere
@@ -174,7 +174,7 @@ CoD.GameEndScoreOutcomeFFABarSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local UnderLine1 = LUI.UIImage.new( 0, 0, 3, 109, 0, 0, 113.5, 117.5 )
 	UnderLine1:setAlpha( 0.2 )
-	UnderLine1:setImage( RegisterImage( 0x7167D8C33A06020 ) )
+	UnderLine1:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
 	UnderLine1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	UnderLine1:setShaderVector( 0, 0, 0, 0, 0 )
 	UnderLine1:setupNineSliceShader( 64, 64 )
@@ -183,7 +183,7 @@ CoD.GameEndScoreOutcomeFFABarSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local UnderLine2 = LUI.UIImage.new( 0, 0, 111, 680, 0, 0, 113.5, 117.5 )
 	UnderLine2:setAlpha( 0.2 )
-	UnderLine2:setImage( RegisterImage( 0x7167D8C33A06020 ) )
+	UnderLine2:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
 	UnderLine2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	UnderLine2:setShaderVector( 0, 0, 0, 0, 0 )
 	UnderLine2:setupNineSliceShader( 64, 64 )
@@ -192,7 +192,7 @@ CoD.GameEndScoreOutcomeFFABarSmall.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local UnderLine3 = LUI.UIImage.new( 0, 0, 683, 823, 0, 0, 113.5, 117.5 )
 	UnderLine3:setAlpha( 0.2 )
-	UnderLine3:setImage( RegisterImage( 0x7167D8C33A06020 ) )
+	UnderLine3:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
 	UnderLine3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	UnderLine3:setShaderVector( 0, 0, 0, 0, 0 )
 	UnderLine3:setupNineSliceShader( 64, 64 )

@@ -65,7 +65,7 @@ CoD.ZMLoadoutPreviewLockedOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local UnlockDescription = LUI.UIText.new( 0.5, 0.5, -130.5, 130.5, 0, 0, 111, 132 )
 	UnlockDescription:setRGB( 0.96, 0.93, 0.84 )
 	UnlockDescription.__String_Reference = function ()
-		UnlockDescription:setText( ConvertToUpperString( CoD.ZMLoadoutUtility.GetUnlockDescriptionForFeature( self, f1_arg1, 0x0 ) ) )
+		UnlockDescription:setText( ConvertToUpperString( CoD.ZMLoadoutUtility.GetUnlockDescriptionForFeature( self, f1_arg1, "" ) ) )
 	end
 	
 	UnlockDescription.__String_Reference()

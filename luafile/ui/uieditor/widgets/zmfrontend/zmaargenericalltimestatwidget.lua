@@ -58,7 +58,7 @@ CoD.ZMAARGenericAllTimeStatWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.Title = Title
 	
 	local TopBar = LUI.UIImage.new( 0, 1, -5, 5, 0, 0, 17, 25 )
-	TopBar:setImage( RegisterImage( 0x712894B3AB5924C ) )
+	TopBar:setImage( RegisterImage( "uie_ui_hud_zm_aar_common_bar" ) )
 	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	TopBar:setShaderVector( 0, 0, 0, 0, 0 )
 	TopBar:setupNineSliceShader( 20, 4 )

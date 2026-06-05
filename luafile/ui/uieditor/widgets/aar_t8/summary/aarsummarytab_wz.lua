@@ -136,7 +136,7 @@ CoD.AARSummaryTab_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	
 	local PerformanceLabel = LUI.UIText.new( 0.5, 0.5, -321.5, 533.5, 0.5, 0.5, -255, -217 )
 	PerformanceLabel:setRGB( 0.9, 0.89, 0.78 )
-	PerformanceLabel:setText( Engine[0xF9F1239CFD921FE]( 0x4B072C59118316 ) )
+	PerformanceLabel:setText( Engine[0xF9F1239CFD921FE]( "aar/performance" ) )
 	PerformanceLabel:setTTF( "dinnext_regular" )
 	PerformanceLabel:setLetterSpacing( 10 )
 	PerformanceLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

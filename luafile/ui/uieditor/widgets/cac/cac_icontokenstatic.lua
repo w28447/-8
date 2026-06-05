@@ -10,7 +10,7 @@ CoD.cac_IconTokenStatic.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local imgTokenBox = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	imgTokenBox:setAlpha( 0 )
-	imgTokenBox:setImage( RegisterImage( 0xACB6BFF8B3FFB88 ) )
+	imgTokenBox:setImage( RegisterImage( "uie_t7_menu_cac_icontokenbox" ) )
 	imgTokenBox:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( imgTokenBox )
 	self.imgTokenBox = imgTokenBox
@@ -24,7 +24,7 @@ CoD.cac_IconTokenStatic.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local imgIconTokenMultCP = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	imgIconTokenMultCP:setRGB( 0, 0, 0 )
 	imgIconTokenMultCP:setAlpha( 0 )
-	imgIconTokenMultCP:setImage( RegisterImage( 0x53E30FEAEAC8F83 ) )
+	imgIconTokenMultCP:setImage( RegisterImage( "uie_t7_menu_cac_icontoken_cp" ) )
 	self:addElement( imgIconTokenMultCP )
 	self.imgIconTokenMultCP = imgIconTokenMultCP
 	
@@ -36,14 +36,14 @@ CoD.cac_IconTokenStatic.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local imgIconTokenCP = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	imgIconTokenCP:setAlpha( 0 )
-	imgIconTokenCP:setImage( RegisterImage( 0x53E30FEAEAC8F83 ) )
+	imgIconTokenCP:setImage( RegisterImage( "uie_t7_menu_cac_icontoken_cp" ) )
 	self:addElement( imgIconTokenCP )
 	self.imgIconTokenCP = imgIconTokenCP
 	
 	local glow = LUI.UIImage.new( 0, 1, 0, 20, 0, 1, -3, 17 )
 	glow:setRGB( 1, 0.48, 0 )
 	glow:setAlpha( RandomAddPercent( -15, 0.26 ) )
-	glow:setImage( RegisterImage( 0x1078C36A022A4FE ) )
+	glow:setImage( RegisterImage( "uie_t7_menu_cac_glow" ) )
 	glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( glow )
 	self.glow = glow

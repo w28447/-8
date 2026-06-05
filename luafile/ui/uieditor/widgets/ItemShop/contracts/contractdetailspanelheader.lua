@@ -22,7 +22,7 @@ CoD.ContractDetailsPanelHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0, 0, 0, 761, 0, 0, 5, 29 )
 	PixelGridTiledBacking:setAlpha( 0.05 )
-	PixelGridTiledBacking:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
@@ -47,7 +47,7 @@ CoD.ContractDetailsPanelHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local HeaderGlow = LUI.UIImage.new( 0, 0, 0, 768, 0, 0, 0, 32 )
 	HeaderGlow:setAlpha( 0.1 )
-	HeaderGlow:setImage( RegisterImage( 0xFAA6C81834660D3 ) )
+	HeaderGlow:setImage( RegisterImage( "uie_ui_menu_common_box_glow" ) )
 	HeaderGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	HeaderGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	HeaderGlow:setupNineSliceShader( 12, 12 )

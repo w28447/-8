@@ -30,7 +30,7 @@ CoD.Social_Party.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local Title = LUI.UIText.new( 0.5, 0.5, -479, 4, 0, 0, 175, 209 )
 	Title:setAlpha( 0.8 )
-	Title:setText( Engine[0xF9F1239CFD921FE]( 0x7AE9A3B9A819A37 ) )
+	Title:setText( Engine[0xF9F1239CFD921FE]( "menu/tab_party_caps" ) )
 	Title:setTTF( "ttmussels_regular" )
 	Title:setLetterSpacing( 2 )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -79,12 +79,12 @@ CoD.Social_Party.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( SocialPartySettingsButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		OpenPopup( self, "Social_PartySettings", f4_arg2 )
+	f1_arg0:AddButtonCallbackFunction( SocialPartySettingsButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		OpenPopup( self, "Social_PartySettings", controller )
 		PlaySoundAlias( "uin_toggle_generic" )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( SocialPartySettingsButton )

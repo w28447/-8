@@ -16,41 +16,41 @@ CoD.KeyboardTextFieldInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local popupBG = LUI.UIImage.new( 0, 1, -76, 0, 0, 1, -67, -37 )
 	popupBG:setRGB( 0, 0, 0 )
 	popupBG:setAlpha( 0 )
-	popupBG:setImage( RegisterImage( 0x6440978352789DB ) )
+	popupBG:setImage( RegisterImage( "menu_mp_popup_bg" ) )
 	self:addElement( popupBG )
 	self.popupBG = popupBG
 	
 	local bottomFade = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -141, -45 )
 	bottomFade:setXRot( 180 )
-	bottomFade:setImage( RegisterImage( 0xDB6A7927DB7D288 ) )
+	bottomFade:setImage( RegisterImage( "dots_top_bottom_fade" ) )
 	self:addElement( bottomFade )
 	self.bottomFade = bottomFade
 	
 	local middleTile = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 96, 288 )
-	middleTile:setImage( RegisterImage( 0xBCECD4DFF70A017 ) )
-	middleTile:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	middleTile:setImage( RegisterImage( "dots_middle_repeat" ) )
+	middleTile:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	middleTile:setShaderVector( 0, 1, 32, 0, 0 )
 	middleTile:setShaderVector( 1, 0, 0, 0, 0 )
 	self:addElement( middleTile )
 	self.middleTile = middleTile
 	
 	local topFade = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 96 )
-	topFade:setImage( RegisterImage( 0xDB6A7927DB7D288 ) )
+	topFade:setImage( RegisterImage( "dots_top_bottom_fade" ) )
 	self:addElement( topFade )
 	self.topFade = topFade
 	
 	local bottomPart = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -24, 0 )
-	bottomPart:setImage( RegisterImage( 0xE17B1790A885DBD ) )
+	bottomPart:setImage( RegisterImage( "popup_bottom" ) )
 	self:addElement( bottomPart )
 	self.bottomPart = bottomPart
 	
 	local middleStretch = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 48, -24 )
-	middleStretch:setImage( RegisterImage( 0x1D100BFEEA8C973 ) )
+	middleStretch:setImage( RegisterImage( "popup_stretch" ) )
 	self:addElement( middleStretch )
 	self.middleStretch = middleStretch
 	
 	local topPart = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 48 )
-	topPart:setImage( RegisterImage( 0xCDA15E059EDF3D1 ) )
+	topPart:setImage( RegisterImage( "popup_top" ) )
 	self:addElement( topPart )
 	self.topPart = topPart
 	
@@ -93,16 +93,16 @@ CoD.KeyboardTextFieldInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f3_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( options, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		if not IsDisabled( f4_arg0, f4_arg2 ) then
-			ProcessListAction( self, f4_arg0, f4_arg2, f4_arg1 )
+	f1_arg0:AddButtonCallbackFunction( options, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		if not IsDisabled( element, controller ) then
+			ProcessListAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		if not IsDisabled( f5_arg0, f5_arg2 ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "menu/select", nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		if not IsDisabled( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "menu/select", nil, "MOUSE1" )
 			return true
 		else
 			return false

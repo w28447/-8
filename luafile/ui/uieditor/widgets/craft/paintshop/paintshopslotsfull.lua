@@ -30,7 +30,7 @@ CoD.PaintshopSlotsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local Image = LUI.UIImage.new( 0, 0, -2, 182, 0, 0, 0, 29 )
 	Image:setAlpha( 0.5 )
-	Image:setImage( RegisterImage( 0x8F6569FEEE42A57 ) )
+	Image:setImage( RegisterImage( "uie_t7_menu_frontend_titlenumbrdrfull" ) )
 	Image:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	Image:setShaderVector( 0, 0, 0, 0, 0 )
 	Image:setupNineSliceShader( 6, 6 )
@@ -38,7 +38,7 @@ CoD.PaintshopSlotsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.Image = Image
 	
 	local count = LUI.UIText.new( 0, 0, 9, 170, 0, 0, 31, 64 )
-	count:setText( Engine[0xF9F1239CFD921FE]( 0x8AD837A6ECA017 ) )
+	count:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_layers_used_fraction" ) )
 	count:setTTF( "default" )
 	count:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	count:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -50,7 +50,7 @@ CoD.PaintshopSlotsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local VariantSlots = LUI.UIText.new( 0, 0, 0, 180, 0, 0, 2, 26 )
 	VariantSlots:setRGB( 0.77, 0.77, 0.77 )
-	VariantSlots:setText( Engine[0xF9F1239CFD921FE]( 0x1C060FB717AF782 ) )
+	VariantSlots:setText( Engine[0xF9F1239CFD921FE]( "menu/paintjob_slots" ) )
 	VariantSlots:setTTF( "default" )
 	VariantSlots:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	VariantSlots:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -59,7 +59,7 @@ CoD.PaintshopSlotsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local slotFulltext = LUI.UIText.new( 0, 0, 346, 624, 0, 0, 46, 84 )
 	slotFulltext:setAlpha( 0 )
-	slotFulltext:setText( Engine[0xF9F1239CFD921FE]( 0xB1C6DD77C8B6CA ) )
+	slotFulltext:setText( Engine[0xF9F1239CFD921FE]( "menu/paintjob_sots_full" ) )
 	slotFulltext:setTTF( "default" )
 	slotFulltext:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	slotFulltext:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -75,7 +75,7 @@ CoD.PaintshopSlotsFull.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local slotfullWarningImage = LUI.UIImage.new( 0, 0, 299, 347, 0, 0, 41, 89 )
 	slotfullWarningImage:setRGB( 1, 0, 0 )
 	slotfullWarningImage:setAlpha( 0 )
-	slotfullWarningImage:setImage( RegisterImage( 0xE62D5AE201C20EF ) )
+	slotfullWarningImage:setImage( RegisterImage( "t7_icon_error_overlays" ) )
 	self:addElement( slotfullWarningImage )
 	self.slotfullWarningImage = slotfullWarningImage
 	

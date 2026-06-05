@@ -18,9 +18,9 @@ CoD.genericVHUDProgressBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.flashingText = flashingText
 	
 	local SignalText = LUI.UIText.new( 0, 1, 0, 0, 0, 0, 0, 24 )
-	SignalText:setText( Engine[0xF9F1239CFD921FE]( 0x74F45BCDE2B3C58 ) )
+	SignalText:setText( Engine[0xF9F1239CFD921FE]( "menu/hud_vehicle_signal" ) )
 	SignalText:setTTF( "default" )
-	SignalText:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD756CD9A5F1F1B4 ) )
+	SignalText:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration_cheap_blur" ) )
 	SignalText:setShaderVector( 0, 0, 1, 0, 0 )
 	SignalText:setShaderVector( 1, 0, 0, 0, 0 )
 	SignalText:setShaderVector( 2, 0, 0, 0, 0 )

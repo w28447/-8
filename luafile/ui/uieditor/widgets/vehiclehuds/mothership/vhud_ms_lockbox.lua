@@ -11,7 +11,7 @@ CoD.vhud_ms_LockBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local Glow = LUI.UIImage.new( 0.5, 0.5, -59, 59, 0.5, 0.5, -35, 34 )
 	Glow:setRGB( 1, 0.52, 0 )
 	Glow:setAlpha( 0.4 )
-	Glow:setImage( RegisterImage( 0x57022864019762C ) )
+	Glow:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_textlockonglow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
@@ -19,7 +19,7 @@ CoD.vhud_ms_LockBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local msLockOn = LUI.UIImage.new( 0.5, 0.5, -41.5, 41.5, 0.5, 0.5, -41, 42 )
 	msLockOn:setRGB( 1, 0.07, 0 )
 	msLockOn:setAlpha( 0.7 )
-	msLockOn:setImage( RegisterImage( 0x73119C17C345435 ) )
+	msLockOn:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_textlockon" ) )
 	msLockOn:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( msLockOn )
 	self.msLockOn = msLockOn

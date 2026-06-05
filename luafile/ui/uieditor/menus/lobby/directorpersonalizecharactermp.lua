@@ -48,16 +48,16 @@ LUI.createMenu.DirectorPersonalizeCharacterMP = function ( f1_arg0, f1_arg1 )
 	f1_local7( f1_local6, f1_local8.breadcrumbCount, function ( f3_arg0, f3_arg1 )
 		CoD.Menu.UpdateButtonShownState( f3_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x29E5695FF1401AD] )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		GoBack( self, f4_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x29E5695FF1401AD], "ui_contextual_2", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		if CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f6_arg2, "CharacterBreadcrumbs", "breadcrumbCount", 0 ) and IsPC() then
-			CoD.BreadcrumbUtility.ClearAllPersonalizationBreadcrumbs( f6_arg1, f6_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x29E5695FF1401AD], "ui_contextual_2", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "CharacterBreadcrumbs", "breadcrumbCount", 0 ) and IsPC() then
+			CoD.BreadcrumbUtility.ClearAllPersonalizationBreadcrumbs( menu, controller )
 			return true
 		elseif not IsPC() then
 			CoD.BaseUtility.UINoAction()
@@ -65,12 +65,12 @@ LUI.createMenu.DirectorPersonalizeCharacterMP = function ( f1_arg0, f1_arg1 )
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		if CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( f7_arg2, "CharacterBreadcrumbs", "breadcrumbCount", 0 ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x29E5695FF1401AD], 0x5619D8212EDA599, nil, "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsGlobalDataSourceModelValueGreaterThan( controller, "CharacterBreadcrumbs", "breadcrumbCount", 0 ) and IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x29E5695FF1401AD], 0x5619D8212EDA599, nil, "ui_contextual_2" )
 			return true
 		elseif not IsPC() then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x29E5695FF1401AD], 0x0, nil, "ui_contextual_2" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x29E5695FF1401AD], "", nil, "ui_contextual_2" )
 			return false
 		else
 			return false

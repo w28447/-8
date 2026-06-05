@@ -10,14 +10,14 @@ CoD.AmmoWidget_StockAmmo_EmptyPulse.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	local Glow = LUI.UIImage.new( 0, 0, -36.5, 135.5, 0, 0, -17, 37 )
 	Glow:setRGB( 1, 0, 0 )
-	Glow:setImage( RegisterImage( 0xC58FF2328701EBA ) )
+	Glow:setImage( RegisterImage( "uie_ui_hud_core_no_ammo_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	
 	local pulseImage = LUI.UIImage.new( 0, 0, -13, 111, 0, 0, -12, 28 )
 	pulseImage:setRGB( 1, 0, 0 )
-	pulseImage:setImage( RegisterImage( 0x79EFF63C895F04B ) )
+	pulseImage:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_led_reload" ) )
 	self:addElement( pulseImage )
 	self.pulseImage = pulseImage
 	

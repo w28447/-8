@@ -14,7 +14,7 @@ local PostLoadFunc = function ( self, controller, menu )
 			elseif f2_local0 == Enum.LbTrackType[0x4ADDC81D8048FD] then
 				f2_local1 = LuaEnum.LB_MP_GAMES_NEEDED.MONTHLY
 			end
-			self.Text:setText( Engine[0xF9F1239CFD921FE]( 0x33467BF1A6467C2, f2_local1 ) )
+			self.Text:setText( Engine[0xF9F1239CFD921FE]( "menu/leaderboard_games_required", f2_local1 ) )
 		end )
 	end
 end

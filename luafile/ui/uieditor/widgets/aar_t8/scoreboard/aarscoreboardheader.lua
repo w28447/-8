@@ -22,12 +22,12 @@ CoD.AARScoreboardHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.BlurBG = BlurBG
 	
 	local TintBodyL = LUI.UIImage.new( 0, 0, -1, 725, 0, 0, 18, 194 )
-	TintBodyL:setImage( RegisterImage( 0xFF1F4F6EBBE150 ) )
+	TintBodyL:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_half_bg" ) )
 	self:addElement( TintBodyL )
 	self.TintBodyL = TintBodyL
 	
 	local TintBodyR = LUI.UIImage.new( 0, 0, 1451, 725, 0, 0, 18, 194 )
-	TintBodyR:setImage( RegisterImage( 0xFF1F4F6EBBE150 ) )
+	TintBodyR:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_half_bg" ) )
 	self:addElement( TintBodyR )
 	self.TintBodyR = TintBodyR
 	
@@ -62,7 +62,7 @@ CoD.AARScoreboardHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local VS = LUI.UIText.new( 0.5, 0.5, -228, 228, 0, 0, 104, 134 )
 	VS:setRGB( 0.91, 0.91, 0.91 )
 	VS:setAlpha( 0.8 )
-	VS:setText( Engine[0xF9F1239CFD921FE]( 0x4F347C78B3F5793 ) )
+	VS:setText( Engine[0xF9F1239CFD921FE]( "mp/versus" ) )
 	VS:setTTF( "0arame_mono_stencil" )
 	VS:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	VS:setAlignment( Enum.LUIAlignment[0x6ED4298C93DC5ED] )

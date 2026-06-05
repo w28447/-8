@@ -84,7 +84,7 @@ LUI.createMenu.WeaponAttachmentSelect = function ( f1_arg0, f1_arg1 )
 	self.DirectorDividerWithGradient = DirectorDividerWithGradient
 	
 	local CACHeader = CoD.CACHeader.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0, 0, 0, 67 )
-	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x560ECCA7484F00E ) )
+	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/customize_caps" ) )
 	CACHeader.subtitle.subtitle:setAlpha( 0 )
 	CACHeader:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f4_local0 = model:get()
@@ -220,41 +220,41 @@ LUI.createMenu.WeaponAttachmentSelect = function ( f1_arg0, f1_arg1 )
 	f1_local17( f1_local16, f1_local18.LastInput, function ( f19_arg0, f19_arg1 )
 		CoD.Menu.UpdateButtonShownState( f19_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA] )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
 		if not IsPC() then
 			PlaySoundAlias( "uin_party_ease_slide_back" )
-			CoD.CACUtility.PlayChooseScreenOutro( f20_arg1, f20_arg2, "Close" )
-			DelayUnhideFreecursorGoBack( f20_arg1, f20_arg2, 200 )
+			CoD.CACUtility.PlayChooseScreenOutro( menu, controller, "Close" )
+			DelayUnhideFreecursorGoBack( menu, controller, 200 )
 			return true
 		elseif IsPC() then
 			PlaySoundAlias( "uin_party_ease_slide_back" )
-			CoD.CACUtility.PlayChooseScreenOutro( f20_arg1, f20_arg2, "ClosePC" )
-			DelayGoBack( f20_arg1, f20_arg2, 70 )
+			CoD.CACUtility.PlayChooseScreenOutro( menu, controller, "ClosePC" )
+			DelayGoBack( menu, controller, 70 )
 			return true
 		else
 			
 		end
-	end, function ( f21_arg0, f21_arg1, f21_arg2 )
+	end, function ( element, menu, controller )
 		if not IsPC() then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		elseif IsPC() then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA], "F10", function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
-		if IsMouseOrKeyboard( f22_arg2 ) then
-			CoD.CACUtility.RemoveAllAttachmentsFromClass( f22_arg1, f22_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA], "F10", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) then
+			CoD.CACUtility.RemoveAllAttachmentsFromClass( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f23_arg0, f23_arg1, f23_arg2 )
-		if IsMouseOrKeyboard( f23_arg2 ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0xE9CED3392B6716C, nil, "F10" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "menu/clear_all_caps", nil, "F10" )
 			return true
 		else
 			return false

@@ -11,13 +11,13 @@ CoD.ScytheReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local CenterChevronRight = LUI.UIImage.new( 0.5, 0.5, -42.5, 57.5, 0.5, 0.5, -50, 50 )
-	CenterChevronRight:setImage( RegisterImage( 0x35FFF2503E1CA12 ) )
+	CenterChevronRight:setImage( RegisterImage( "uie_ui_hud_reticles_reaper_scythe_center_chevron" ) )
 	self:addElement( CenterChevronRight )
 	self.CenterChevronRight = CenterChevronRight
 	
 	local CenterChevronLeft = LUI.UIImage.new( 0.5, 0.5, -57.5, 42.5, 0.5, 0.5, -50, 50 )
 	CenterChevronLeft:setZRot( 180 )
-	CenterChevronLeft:setImage( RegisterImage( 0x35FFF2503E1CA12 ) )
+	CenterChevronLeft:setImage( RegisterImage( "uie_ui_hud_reticles_reaper_scythe_center_chevron" ) )
 	self:addElement( CenterChevronLeft )
 	self.CenterChevronLeft = CenterChevronLeft
 	
@@ -28,13 +28,13 @@ CoD.ScytheReticle.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	self.HipReticle = HipReticle
 	
 	local OuterCircle = LUI.UIImage.new( 0.5, 0.5, -50, 50, 0.5, 0.5, -50, 50 )
-	OuterCircle:setImage( RegisterImage( 0x152F217D0C21DEB ) )
+	OuterCircle:setImage( RegisterImage( "uie_ui_hud_reticles_reaper_scythe_hip_outter_circle" ) )
 	self:addElement( OuterCircle )
 	self.OuterCircle = OuterCircle
 	
 	local SupportingElements = LUI.UIImage.new( 0.5, 0.5, -50, 50, 0.5, 0.5, -50, 50 )
 	SupportingElements:setAlpha( 0.1 )
-	SupportingElements:setImage( RegisterImage( 0x3203EADC3279210 ) )
+	SupportingElements:setImage( RegisterImage( "uie_ui_hud_reticles_reaper_scythe_hip_supporting_elements" ) )
 	self:addElement( SupportingElements )
 	self.SupportingElements = SupportingElements
 	

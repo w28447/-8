@@ -26,7 +26,7 @@ CoD.ReservesMeterInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	local RewardName = LUI.UIText.new( 0, 0, 188.5, 433.5, 0, 0, 15.5, 33.5 )
 	RewardName:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	RewardName:setAlpha( 0 )
-	RewardName:setText( LocalizeToUpperString( 0x0 ) )
+	RewardName:setText( LocalizeToUpperString( "" ) )
 	RewardName:setTTF( "ttmussels_demibold" )
 	RewardName:setLetterSpacing( 4 )
 	RewardName:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

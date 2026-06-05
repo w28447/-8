@@ -58,7 +58,7 @@ CoD.EmblemEditorLayerProperties.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local opacityText = LUI.UIText.new( 0, 0, 600, 691, 0, 0, 3.5, 28.5 )
 	opacityText:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	opacityText:setText( Engine[0xF9F1239CFD921FE]( 0x611006D6269F87D ) )
+	opacityText:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_layer_opacity" ) )
 	opacityText:setTTF( "ttmussels_regular" )
 	opacityText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	opacityText:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -80,7 +80,7 @@ CoD.EmblemEditorLayerProperties.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local rotationText = LUI.UIText.new( 0, 0, 498.5, 594.5, 0, 0, 3.5, 28.5 )
 	rotationText:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	rotationText:setText( Engine[0xF9F1239CFD921FE]( 0xCEAD96F8011A558 ) )
+	rotationText:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_layer_property_rotation" ) )
 	rotationText:setTTF( "ttmussels_regular" )
 	rotationText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	rotationText:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -141,7 +141,7 @@ CoD.EmblemEditorLayerProperties.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local ScaleTextY = LUI.UIText.new( 1, 1, -282, -200, 0, 0, 38, 63 )
 	ScaleTextY:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	ScaleTextY:setText( Engine[0xF9F1239CFD921FE]( 0xC8E669F24C21949 ) )
+	ScaleTextY:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_y_text" ) )
 	ScaleTextY:setTTF( "ttmussels_regular" )
 	ScaleTextY:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	ScaleTextY:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -150,7 +150,7 @@ CoD.EmblemEditorLayerProperties.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local ScaleTextX = LUI.UIText.new( 0, 0, 338, 395, 0, 0, 38, 63 )
 	ScaleTextX:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	ScaleTextX:setText( Engine[0xF9F1239CFD921FE]( 0x9BAB2C368028BBC ) )
+	ScaleTextX:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_x_text" ) )
 	ScaleTextX:setTTF( "ttmussels_regular" )
 	ScaleTextX:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	ScaleTextX:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -159,7 +159,7 @@ CoD.EmblemEditorLayerProperties.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local scaleText = LUI.UIText.new( 0, 0, 336, 476, 0, 0, 3.5, 28.5 )
 	scaleText:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	scaleText:setText( Engine[0xF9F1239CFD921FE]( 0x39B482734C22440 ) )
+	scaleText:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_layer_property_scale" ) )
 	scaleText:setTTF( "ttmussels_regular" )
 	scaleText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	scaleText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -220,7 +220,7 @@ CoD.EmblemEditorLayerProperties.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local PositionTextY = LUI.UIText.new( 1, 1, -445, -387, 0, 0, 38, 63 )
 	PositionTextY:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	PositionTextY:setText( Engine[0xF9F1239CFD921FE]( 0xC8E669F24C21949 ) )
+	PositionTextY:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_y_text" ) )
 	PositionTextY:setTTF( "ttmussels_regular" )
 	PositionTextY:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	PositionTextY:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -229,7 +229,7 @@ CoD.EmblemEditorLayerProperties.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local PositionTextX = LUI.UIText.new( 0, 0, 174, 232, 0, 0, 38, 63 )
 	PositionTextX:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	PositionTextX:setText( Engine[0xF9F1239CFD921FE]( 0x9BAB2C368028BBC ) )
+	PositionTextX:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_x_text" ) )
 	PositionTextX:setTTF( "ttmussels_regular" )
 	PositionTextX:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	PositionTextX:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -238,7 +238,7 @@ CoD.EmblemEditorLayerProperties.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local positionText = LUI.UIText.new( 0, 0, 173, 313, 0, 0, 3.5, 28.5 )
 	positionText:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	positionText:setText( Engine[0xF9F1239CFD921FE]( 0x4F645CAB5BA8FD5 ) )
+	positionText:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_layer_property_position" ) )
 	positionText:setTTF( "ttmussels_regular" )
 	positionText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	positionText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -292,7 +292,7 @@ CoD.EmblemEditorLayerProperties.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	linkedLayerText = LUI.UIText.new( 0, 0, 441.5, 619.5, 0, 0, 3.5, 28.5 )
 	linkedLayerText:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	linkedLayerText:setText( Engine[0xF9F1239CFD921FE]( 0xF8B9E5635CD1E81 ) )
+	linkedLayerText:setText( Engine[0xF9F1239CFD921FE]( "menu/linked_layers" ) )
 	linkedLayerText:setTTF( "ttmussels_regular" )
 	linkedLayerText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	linkedLayerText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -301,7 +301,7 @@ CoD.EmblemEditorLayerProperties.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	groupsUsedText = LUI.UIText.new( 0, 0, 261, 439, 0, 0, 3.5, 28.5 )
 	groupsUsedText:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	groupsUsedText:setText( Engine[0xF9F1239CFD921FE]( 0x374BB53B879BB06 ) )
+	groupsUsedText:setText( Engine[0xF9F1239CFD921FE]( "menu/emblem_groups_used" ) )
 	groupsUsedText:setTTF( "ttmussels_regular" )
 	groupsUsedText:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	groupsUsedText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

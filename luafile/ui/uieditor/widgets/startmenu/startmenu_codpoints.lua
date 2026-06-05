@@ -18,25 +18,25 @@ CoD.StartMenu_CODpoints.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local ring = LUI.UIImage.new( 0, 0, -16, 64, 0, 0, 1, 81 )
 	ring:setAlpha( 0 )
-	ring:setImage( RegisterImage( 0xDD0602FBF312927 ) )
+	ring:setImage( RegisterImage( "uie_t7_blackmarket_keyringglow_glow" ) )
 	self:addElement( ring )
 	self.ring = ring
 	
 	local Glow = LUI.UIImage.new( 0, 0, -21, 69, 0, 0, -4, 88 )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0x6B6EFEF9BB2D92E ) )
+	Glow:setImage( RegisterImage( "uie_t7_blackmarket_keyglow_gold" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	
 	local codpoints = LUI.UIImage.new( 0, 0, 7, 41, 0, 0, 25, 59 )
-	codpoints:setImage( RegisterImage( 0xC7B458FB314A1E9 ) )
+	codpoints:setImage( RegisterImage( "uie_ui_codpoints_symbol_32x32" ) )
 	self:addElement( codpoints )
 	self.codpoints = codpoints
 	
 	local codpointGlint = LUI.UIImage.new( 0, 0, 7, 41, 0, 0, 25, 59 )
 	codpointGlint:setRGB( 1, 0.94, 0.57 )
-	codpointGlint:setImage( RegisterImage( 0xC7B458FB314A1E9 ) )
-	codpointGlint:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDCEC3F40C67FD03 ) )
+	codpointGlint:setImage( RegisterImage( "uie_ui_codpoints_symbol_32x32" ) )
+	codpointGlint:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_glint_reveal" ) )
 	codpointGlint:setShaderVector( 0, 0.01, 0, 0, 0 )
 	self:addElement( codpointGlint )
 	self.codpointGlint = codpointGlint
@@ -122,7 +122,7 @@ CoD.StartMenu_CODpoints.__resetProperties = function ( f8_arg0 )
 	f8_arg0.Glow:completeAnimation()
 	f8_arg0.ring:completeAnimation()
 	f8_arg0.codpointGlint:setAlpha( 1 )
-	f8_arg0.codpointGlint:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDCEC3F40C67FD03 ) )
+	f8_arg0.codpointGlint:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_glint_reveal" ) )
 	f8_arg0.codpointGlint:setShaderVector( 0, 0.01, 0, 0, 0 )
 	f8_arg0.codpoints:setAlpha( 1 )
 	f8_arg0.codpointsCount:setAlpha( 1 )
@@ -287,7 +287,7 @@ CoD.StartMenu_CODpoints.__clipsPerState = {
 			
 			f10_arg0.codpointGlint:completeAnimation()
 			f10_arg0.codpointGlint:setAlpha( 0 )
-			f10_arg0.codpointGlint:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDCEC3F40C67FD03 ) )
+			f10_arg0.codpointGlint:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_glint_reveal" ) )
 			f10_arg0.codpointGlint:setShaderVector( 0, 0.01, 0, 0, 0 )
 			f10_local3( f10_arg0.codpointGlint )
 			f10_arg0.nextClip = "DefaultClip"

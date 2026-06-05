@@ -11,7 +11,7 @@ CoD.ClanUtility.clan_privacy_levels = {
 		value = Enum[0xC491AC72605E0C3][0x6C66A50C1991611]
 	},
 	{
-		display_string = 0x818F22EF9A1728D,
+		display_string = "clan/privacy_invite_only",
 		value = Enum[0xC491AC72605E0C3][0x4A7DCCE66FFD267]
 	},
 	{
@@ -25,11 +25,11 @@ CoD.ClanUtility.clan_styles = {
 		value = LuaEnum.CLAN_STYLE.NONE
 	},
 	{
-		display_string = 0xB3910644531DFE7,
+		display_string = "clan/casual",
 		value = LuaEnum.CLAN_STYLE.CASUAL
 	},
 	{
-		display_string = 0x4542B8F119A1ABD,
+		display_string = "clan/competitive",
 		value = LuaEnum.CLAN_STYLE.COMPETITIVE
 	}
 }
@@ -78,9 +78,9 @@ end
 CoD.ClanUtility.CurrentGroupFinderString = function ( f6_arg0 )
 	local f6_local0 = CoD.ClanUtility.GetCurrentGroupKindDependingOnCurrentTab()
 	if f6_local0 == LuaEnum.CLAN_KINDS.TEAM then
-		return 0x3D7816DFB72EAF8
+		return "clan/team_finder"
 	elseif f6_local0 == LuaEnum.CLAN_KINDS.SQUAD then
-		return 0x5C0A96701A346F5
+		return "clan/squad_finder"
 	else
 		return "clan/clan_finder"
 	end
@@ -88,24 +88,24 @@ end
 
 CoD.ClanUtility.GetGroupPrivacyString = function ( f7_arg0 )
 	local f7_local0 = math.floor( tonumber( f7_arg0 ) )
-	f7_arg0 = 0x0
+	f7_arg0 = ""
 	if f7_local0 == Enum[0xC491AC72605E0C3][0xB91F60B176A25F1] then
 		f7_arg0 = 0x40B0BA5E6EC0A0F
 	elseif f7_local0 == Enum[0xC491AC72605E0C3][0x6C66A50C1991611] then
 		f7_arg0 = 0x9CB638F61EA2233
 	elseif f7_local0 == Enum[0xC491AC72605E0C3][0x4A7DCCE66FFD267] then
-		f7_arg0 = 0x818F22EF9A1728D
+		f7_arg0 = "clan/privacy_invite_only"
 	elseif f7_local0 == Enum[0xC491AC72605E0C3][0xC009B7E8A40812] then
-		f7_arg0 = 0x0
+		f7_arg0 = ""
 	end
 	return f7_arg0
 end
 
 CoD.ClanUtility.GetGroupMemberRoleString = function ( f8_arg0 )
 	local f8_local0 = math.floor( tonumber( f8_arg0 ) )
-	f8_arg0 = 0x0
+	f8_arg0 = ""
 	if f8_local0 == Enum[0x10C0A769A29C38F][0xB17C2FE5CC7F0BC] then
-		f8_arg0 = 0x0
+		f8_arg0 = ""
 	elseif f8_local0 == Enum[0x10C0A769A29C38F][0x9B9CAA2877C8082] then
 		f8_arg0 = 0xB6A6E92CD2A9A42
 	elseif f8_local0 == Enum[0x10C0A769A29C38F][0xE94BCDEEB8AE946] then
@@ -116,7 +116,7 @@ end
 
 CoD.ClanUtility.GetClanJoinPopupTitle = function ( f9_arg0 )
 	local f9_local0 = math.floor( tonumber( f9_arg0 ) )
-	f9_arg0 = 0x0
+	f9_arg0 = ""
 	if f9_local0 == Enum[0xC491AC72605E0C3][0xB91F60B176A25F1] then
 		f9_arg0 = 0x2D45A9F09D391D1
 	elseif f9_local0 == Enum[0xC491AC72605E0C3][0x6C66A50C1991611] then
@@ -124,14 +124,14 @@ CoD.ClanUtility.GetClanJoinPopupTitle = function ( f9_arg0 )
 	elseif f9_local0 == Enum[0xC491AC72605E0C3][0x4A7DCCE66FFD267] then
 		f9_arg0 = 0x7F35B82EA88A7D5
 	elseif f9_local0 == Enum[0xC491AC72605E0C3][0xC009B7E8A40812] then
-		f9_arg0 = 0x0
+		f9_arg0 = ""
 	end
 	return f9_arg0
 end
 
 CoD.ClanUtility.GetClanJoinPopupDescription = function ( f10_arg0, f10_arg1 )
 	local f10_local0 = math.floor( tonumber( f10_arg1 ) )
-	f10_arg1 = 0x0
+	f10_arg1 = ""
 	if f10_local0 == Enum[0xC491AC72605E0C3][0xB91F60B176A25F1] then
 		if LuaEnum.CLAN_GROUP_MAX_SIZE[f10_arg0.kind:get()] < f10_arg0.memberCount:get() then
 			f10_arg1 = 0x354D07C0FDBED43
@@ -143,7 +143,7 @@ CoD.ClanUtility.GetClanJoinPopupDescription = function ( f10_arg0, f10_arg1 )
 	elseif f10_local0 == Enum[0xC491AC72605E0C3][0x4A7DCCE66FFD267] then
 		f10_arg1 = 0xC4AEDECF4F5AE8D
 	elseif f10_local0 == Enum[0xC491AC72605E0C3][0xC009B7E8A40812] then
-		f10_arg1 = 0x0
+		f10_arg1 = ""
 	end
 	return f10_arg1
 end
@@ -154,7 +154,7 @@ CoD.ClanUtility.GetMailTitle = function ( f11_arg0, f11_arg1 )
 		f11_local0 = false
 	end
 	local f11_local1 = f11_arg0.groupIdentifier.kind:get()
-	f11_arg1 = 0x0
+	f11_arg1 = ""
 	if f11_local1 == LuaEnum.CLAN_KINDS.CLAN then
 		if f11_local0 then
 			local f11_local2 = 0x3DE0E78E533C055
@@ -181,7 +181,7 @@ CoD.ClanUtility.GetMailMessage = function ( f12_arg0, f12_arg1 )
 		f12_local0 = false
 	end
 	local f12_local1 = f12_arg0.groupIdentifier.kind:get()
-	f12_arg1 = 0x0
+	f12_arg1 = ""
 	if f12_local1 == LuaEnum.CLAN_KINDS.CLAN then
 		if f12_local0 then
 			local f12_local2 = 0x48DE650F395FECD
@@ -409,7 +409,7 @@ CoD.ClanUtility.GetProposalPopupTitle = function ( f33_arg0 )
 		f33_local0 = false
 	end
 	local f33_local1 = f33_arg0.groupIdentifier.kind:get()
-	local f33_local2 = 0x0
+	local f33_local2 = ""
 	if f33_local1 == LuaEnum.CLAN_KINDS.CLAN then
 		if f33_local0 then
 			local f33_local3 = 0xCCFAE77A99C4D2F
@@ -435,7 +435,7 @@ CoD.ClanUtility.GetProposalPopupDescription = function ( f34_arg0 )
 		f34_local0 = false
 	end
 	local f34_local1 = f34_arg0.groupIdentifier.kind:get()
-	local f34_local2 = 0x0
+	local f34_local2 = ""
 	if f34_local1 == LuaEnum.CLAN_KINDS.CLAN then
 		if f34_local0 then
 			local f34_local3 = 0x570239D24E2A232
@@ -457,7 +457,7 @@ end
 
 CoD.ClanUtility.GetAcceptProposalButtonPrompt = function ( f35_arg0, f35_arg1 )
 	local f35_local0 = f35_arg1.groupIdentifier.kind:get()
-	local f35_local1 = 0xBD872543F8A833
+	local f35_local1 = "menu/accept"
 	if f35_local0 == LuaEnum.CLAN_KINDS.CLAN and CoD.ClanUtility.IsInClan( f35_arg0 ) then
 		f35_local1 = 0xC0E086801BD8156
 	end
@@ -507,7 +507,7 @@ CoD.ClanUtility.GetGroupIDToReplace = function ( f39_arg0, f39_arg1 )
 end
 
 CoD.ClanUtility.GetWarningProposalPrompt = function ( f40_arg0, f40_arg1 )
-	local f40_local0 = 0x0
+	local f40_local0 = ""
 	if CoD.ClanUtility.IsTeamAdminOrOwner( f40_arg0 ) then
 		f40_local0 = 0xB5AC2259A5C0DAE
 	elseif CoD.ClanUtility.IsClanAdminOrOwner( f40_arg0 ) then
@@ -551,8 +551,8 @@ CoD.ClanUtility.ClanAcceptCancelInboxProposal = function ( f43_arg0, f43_arg1, f
 	local f43_local0 = f43_arg1:getModel()
 	local f43_local1 = CoD.ClanUtility.GetProposalPopupTitle( f43_local0 )
 	local f43_local2 = CoD.ClanUtility.GetWarningProposalPrompt( f43_arg2, f43_local0 )
-	if f43_local2 ~= 0x0 then
-		OpenGenericSmallPopup( f43_arg0, f43_arg2, Engine[0xF9F1239CFD921FE]( f43_local1 ), Engine[0xF9F1239CFD921FE]( f43_local2 ), nil, Engine[0xF9F1239CFD921FE]( 0x5BE4A02B20F31F1 ) )
+	if f43_local2 ~= "" then
+		OpenGenericSmallPopup( f43_arg0, f43_arg2, Engine[0xF9F1239CFD921FE]( f43_local1 ), Engine[0xF9F1239CFD921FE]( f43_local2 ), nil, Engine[0xF9F1239CFD921FE]( "menu/ok" ) )
 		return 
 	else
 		CoD.OverlayUtility.CreateOverlay( f43_arg2, f43_arg4, "GroupProposalOverlay", {
@@ -679,7 +679,7 @@ DataSources.ClanInboxButtonList = DataSourceHelpers.ListSetup( "ClanInboxButtonL
 			return f51_local6
 		end
 	end
-	f51_local9 = 0x19B9D7FEF31F185
+	f51_local9 = "clan/reject"
 end )
 CoD.ClanUtility.AssignEmblemsToClanSquadTeam = function ( f52_arg0, f52_arg1, f52_arg2 )
 	local f52_local0 = 0
@@ -1024,7 +1024,7 @@ CoD.ClanUtility.OpenGroupEmblemSelect = function ( f74_arg0, f74_arg1, f74_arg2,
 	if CoD.CraftUtility.Groups.ParseDDL( f74_arg2 ) then
 		OpenOverlay( f74_arg0, "EmblemSelect", f74_arg2, {
 			_isEditor = "false",
-			_storageClientBuffer = CoD.BreadcrumbUtility.GetStorageClientBufferForPlayer( f74_arg2, Enum.eModes[0x83EBA96F36BC4E5] ),
+			_storageClientBuffer = CoD.BreadcrumbUtility.GetStorageClientBufferForPlayer( f74_arg2, Enum.eModes.mode_multiplayer ),
 			_isClan = true
 		} )
 	end
@@ -1177,7 +1177,7 @@ DataSources.ClanTabs = ListHelper_SetupDataSource( "ClanTabs", function ( f85_ar
 	local f85_local3 = {}
 	table.insert( f85_local3, {
 		models = {
-			tabName = LocalizeToUpperString( 0x8745563CF3B8C74 ),
+			tabName = LocalizeToUpperString( "clan/clan_hq" ),
 			tabWidget = "CoD.Clan_HQ",
 			showInQuickInvite = true
 		},
@@ -1188,7 +1188,7 @@ DataSources.ClanTabs = ListHelper_SetupDataSource( "ClanTabs", function ( f85_ar
 	} )
 	table.insert( f85_local3, {
 		models = {
-			tabName = LocalizeToUpperString( 0x4D2079A95A2CD00 ),
+			tabName = LocalizeToUpperString( "clan/squad" ),
 			tabWidget = "CoD.Clan_Squad",
 			showInQuickInvite = true
 		},
@@ -1210,7 +1210,7 @@ DataSources.ClanTabs = ListHelper_SetupDataSource( "ClanTabs", function ( f85_ar
 	} )
 	table.insert( f85_local3, {
 		models = {
-			tabName = LocalizeToUpperString( 0xE15BA3CAE4EB429 ),
+			tabName = LocalizeToUpperString( "clan/members" ),
 			tabWidget = "CoD.Clan_Members",
 			showInQuickInvite = true
 		},
@@ -1232,7 +1232,7 @@ DataSources.ClanTabs = ListHelper_SetupDataSource( "ClanTabs", function ( f85_ar
 	} )
 	table.insert( f85_local3, {
 		models = {
-			tabName = LocalizeToUpperString( 0x91511506A6D8036 ),
+			tabName = LocalizeToUpperString( "clan/inbox" ),
 			tabWidget = "CoD.Clan_Inbox",
 			showInQuickInvite = true
 		},
@@ -1355,7 +1355,7 @@ end, false, {
 			end
 			if f90_local8 ~= nil then
 				local f90_local9 = f90_local7:create( "emblem" )
-				f90_local9:set( 0x72D595AC206B43E )
+				f90_local9:set( "ui_host" )
 				f90_local9 = f90_local7:create( "groupInfo" )
 				f90_local9:set( f90_local8 )
 				table.insert( f90_arg1._items, f90_local7 )
@@ -1391,7 +1391,7 @@ end, false, {
 			end
 			if f95_local8 ~= nil then
 				local f95_local9 = f95_local7:create( "emblem" )
-				f95_local9:set( 0x72D595AC206B43E )
+				f95_local9:set( "ui_host" )
 				f95_local9 = f95_local7:create( "groupInfo" )
 				f95_local9:set( f95_local8 )
 				table.insert( f95_arg1._items, f95_local7 )
@@ -1528,7 +1528,7 @@ end, false, {
 					local f106_local17 = f106_local11:create( "groupInfo", true )
 					f106_local17:set( f106_local16 )
 					f106_local17 = f106_local11:create( "emblem", true )
-					f106_local17:set( 0x72D595AC206B43E )
+					f106_local17:set( "ui_host" )
 					table.insert( f106_arg1._items, f106_local11 )
 					f106_local7 = f106_local7 + 1
 				end
@@ -1577,7 +1577,7 @@ DataSources.ClanSocialOptionsButtonList = ListHelper_SetupDataSource( "ClanSocia
 	local f119_local1 = {}
 	table.insert( f119_local1, {
 		displayText = "clan/clan_finder",
-		displayImage = 0x72D595AC206B43E,
+		displayImage = "ui_host",
 		action = CoD.ClanUtility.ClanButtonPress,
 		frameWidget = "CoD.ClanFinderFrame",
 		params = {
@@ -1585,8 +1585,8 @@ DataSources.ClanSocialOptionsButtonList = ListHelper_SetupDataSource( "ClanSocia
 		}
 	} )
 	table.insert( f119_local1, {
-		displayText = 0xE11D7D4DCBEADF8,
-		displayImage = 0x72D595AC206B43E,
+		displayText = "clan/join_request",
+		displayImage = "ui_host",
 		action = CoD.ClanUtility.ClanButtonPress,
 		frameWidget = "CoD.JoinRequestFrame",
 		params = {
@@ -1594,8 +1594,8 @@ DataSources.ClanSocialOptionsButtonList = ListHelper_SetupDataSource( "ClanSocia
 		}
 	} )
 	table.insert( f119_local1, {
-		displayText = 0xDEB4B8C3DB6B117,
-		displayImage = 0x72D595AC206B43E,
+		displayText = "clan/create_clan",
+		displayImage = "ui_host",
 		action = CoD.ClanUtility.ClanButtonPress,
 		frameWidget = "CoD.CreateClanFrame",
 		disabled = f119_local0,
@@ -1631,7 +1631,7 @@ DataSources.ClanSquadOptionsButtonList = ListHelper_SetupDataSource( "ClanSquadO
 	local f120_local1 = {}
 	table.insert( f120_local1, {
 		displayText = "clan/friends_squads",
-		displayImage = 0x72D595AC206B43E,
+		displayImage = "ui_host",
 		action = CoD.ClanUtility.SquadAdminButtonPress,
 		frameWidget = "CoD.FriendsClansFrame",
 		params = {
@@ -1639,8 +1639,8 @@ DataSources.ClanSquadOptionsButtonList = ListHelper_SetupDataSource( "ClanSquadO
 		}
 	} )
 	table.insert( f120_local1, {
-		displayText = 0x5C0A96701A346F5,
-		displayImage = 0x72D595AC206B43E,
+		displayText = "clan/squad_finder",
+		displayImage = "ui_host",
 		action = CoD.ClanUtility.SquadAdminButtonPress,
 		frameWidget = "CoD.ClanFinderFrame",
 		params = {
@@ -1648,8 +1648,8 @@ DataSources.ClanSquadOptionsButtonList = ListHelper_SetupDataSource( "ClanSquadO
 		}
 	} )
 	table.insert( f120_local1, {
-		displayText = 0x8F07CF5A510C972,
-		displayImage = 0x72D595AC206B43E,
+		displayText = "clan/search_for_player",
+		displayImage = "ui_host",
 		action = CoD.ClanUtility.SquadAdminButtonPress,
 		frameWidget = "CoD.SearchForPlayerFrame",
 		params = {
@@ -1657,8 +1657,8 @@ DataSources.ClanSquadOptionsButtonList = ListHelper_SetupDataSource( "ClanSquadO
 		}
 	} )
 	table.insert( f120_local1, {
-		displayText = 0xE11D7D4DCBEADF8,
-		displayImage = 0x72D595AC206B43E,
+		displayText = "clan/join_request",
+		displayImage = "ui_host",
 		action = CoD.ClanUtility.SquadAdminButtonPress,
 		frameWidget = "CoD.JoinRequestFrame",
 		params = {
@@ -1666,8 +1666,8 @@ DataSources.ClanSquadOptionsButtonList = ListHelper_SetupDataSource( "ClanSquadO
 		}
 	} )
 	table.insert( f120_local1, {
-		displayText = 0x9B196AC8D1E4923,
-		displayImage = 0x72D595AC206B43E,
+		displayText = "clan/create_squad",
+		displayImage = "ui_host",
 		action = CoD.ClanUtility.SquadAdminButtonPress,
 		frameWidget = "CoD.CreateClanFrame",
 		disabled = f120_local0,
@@ -1701,8 +1701,8 @@ DataSources.ClanTeamOptionsButtonList = ListHelper_SetupDataSource( "ClanTeamOpt
 	f121_local0 = f121_local0.socialRoot.clans.ownerTeam:get()
 	local f121_local1 = {}
 	table.insert( f121_local1, {
-		displayText = 0x153C2AF3F541EB2,
-		displayImage = 0x72D595AC206B43E,
+		displayText = "clan/friends_teams",
+		displayImage = "ui_host",
 		action = CoD.ClanUtility.TeamAdminButtonPress,
 		frameWidget = "CoD.FriendsClansFrame",
 		params = {
@@ -1710,8 +1710,8 @@ DataSources.ClanTeamOptionsButtonList = ListHelper_SetupDataSource( "ClanTeamOpt
 		}
 	} )
 	table.insert( f121_local1, {
-		displayText = 0x3D7816DFB72EAF8,
-		displayImage = 0x72D595AC206B43E,
+		displayText = "clan/team_finder",
+		displayImage = "ui_host",
 		action = CoD.ClanUtility.TeamAdminButtonPress,
 		frameWidget = "CoD.ClanFinderFrame",
 		params = {
@@ -1719,8 +1719,8 @@ DataSources.ClanTeamOptionsButtonList = ListHelper_SetupDataSource( "ClanTeamOpt
 		}
 	} )
 	table.insert( f121_local1, {
-		displayText = 0x8F07CF5A510C972,
-		displayImage = 0x72D595AC206B43E,
+		displayText = "clan/search_for_player",
+		displayImage = "ui_host",
 		action = CoD.ClanUtility.TeamAdminButtonPress,
 		frameWidget = "CoD.SearchForPlayerFrame",
 		params = {
@@ -1728,8 +1728,8 @@ DataSources.ClanTeamOptionsButtonList = ListHelper_SetupDataSource( "ClanTeamOpt
 		}
 	} )
 	table.insert( f121_local1, {
-		displayText = 0xE11D7D4DCBEADF8,
-		displayImage = 0x72D595AC206B43E,
+		displayText = "clan/join_request",
+		displayImage = "ui_host",
 		action = CoD.ClanUtility.TeamAdminButtonPress,
 		frameWidget = "CoD.JoinRequestFrame",
 		params = {
@@ -1737,8 +1737,8 @@ DataSources.ClanTeamOptionsButtonList = ListHelper_SetupDataSource( "ClanTeamOpt
 		}
 	} )
 	table.insert( f121_local1, {
-		displayText = 0x5D5BCFD93BE1F26,
-		displayImage = 0x72D595AC206B43E,
+		displayText = "clan/create_team",
+		displayImage = "ui_host",
 		action = CoD.ClanUtility.TeamAdminButtonPress,
 		frameWidget = "CoD.CreateClanFrame",
 		disabled = f121_local0,
@@ -1791,7 +1791,7 @@ DataSources.ClanJoinButtonList = ListHelper_SetupDataSource( "ClanJoinButtonList
 	if f122_local1 == Enum[0xC491AC72605E0C3][0xB91F60B176A25F1] then
 		if LuaEnum.CLAN_GROUP_MAX_SIZE[f122_local2.kind] < f122_local2.memberCount then
 			table.insert( f122_local3, {
-				displayText = 0x5BE4A02B20F31F1,
+				displayText = "menu/ok",
 				action = CoD.ClanUtility.ClanJoinPopupButtonPress,
 				params = {
 					event = LuaEnum.POPUP_ACTION.CANCEL
@@ -1803,7 +1803,7 @@ DataSources.ClanJoinButtonList = ListHelper_SetupDataSource( "ClanJoinButtonList
 			else
 				
 			end
-			local f122_local4 = 0xCC5D02482CF027
+			local f122_local4 = "clan/join_clan"
 			if f122_local2.kind == LuaEnum.CLAN_KINDS.TEAM then
 				f122_local4 = 0xFDDCF7F9CBFF616
 			elseif f122_local2.kind == LuaEnum.CLAN_KINDS.SQUAD then
@@ -1837,7 +1837,7 @@ DataSources.ClanJoinButtonList = ListHelper_SetupDataSource( "ClanJoinButtonList
 		} )
 	elseif f122_local1 == Enum[0xC491AC72605E0C3][0x4A7DCCE66FFD267] then
 		table.insert( f122_local3, {
-			displayText = 0x5BE4A02B20F31F1,
+			displayText = "menu/ok",
 			action = CoD.ClanUtility.ClanJoinPopupButtonPress,
 			params = {
 				event = LuaEnum.POPUP_ACTION.CANCEL
@@ -1865,9 +1865,9 @@ DataSources.ClanAdminOptionsButtonList = ListHelper_SetupDataSource( "ClanAdminO
 	local f123_local1 = {}
 	if f123_local0 == Enum[0x10C0A769A29C38F][0xE94BCDEEB8AE946] then
 		table.insert( f123_local1, {
-			displayText = 0x9CAA53C4504E513,
-			displayImage = 0x72D595AC206B43E,
-			displayDesc = 0x5BAF6BC7F1F75C5,
+			displayText = "clan/transfer_ownership",
+			displayImage = "ui_host",
+			displayDesc = "clan/transfer_ownership_desc",
 			action = CoD.ClanUtility.ClanButtonPress,
 			params = {
 				event = "transfer_ownership"
@@ -1875,9 +1875,9 @@ DataSources.ClanAdminOptionsButtonList = ListHelper_SetupDataSource( "ClanAdminO
 		} )
 	end
 	table.insert( f123_local1, {
-		displayText = 0xDC06E1D45AF813A,
-		displayImage = 0x72D595AC206B43E,
-		displayDesc = 0x8DA8816BDC7010A,
+		displayText = "clan/leave_clan",
+		displayImage = "ui_host",
+		displayDesc = "clan/leave_clan_desc",
 		action = CoD.ClanUtility.ClanButtonPress,
 		params = {
 			event = "leave_clan"
@@ -1885,9 +1885,9 @@ DataSources.ClanAdminOptionsButtonList = ListHelper_SetupDataSource( "ClanAdminO
 	} )
 	if f123_local0 == Enum[0x10C0A769A29C38F][0xE94BCDEEB8AE946] then
 		table.insert( f123_local1, {
-			displayText = 0x352A550AB4D746,
-			displayImage = 0x72D595AC206B43E,
-			displayDesc = 0x5253E43235D5736,
+			displayText = "clan/delete_clan",
+			displayImage = "ui_host",
+			displayDesc = "clan/delete_clan_desc",
 			action = CoD.ClanUtility.ClanButtonPress,
 			params = {
 				event = "delete_clan"
@@ -1915,8 +1915,8 @@ DataSources.TeamAdminOptionsButtonList = ListHelper_SetupDataSource( "TeamAdminO
 	local f124_local1 = {}
 	if f124_local0 == Enum[0x10C0A769A29C38F][0xE94BCDEEB8AE946] then
 		table.insert( f124_local1, {
-			displayText = 0x9CAA53C4504E513,
-			displayImage = 0x72D595AC206B43E,
+			displayText = "clan/transfer_ownership",
+			displayImage = "ui_host",
 			action = CoD.ClanUtility.TeamAdminButtonPress,
 			params = {
 				event = "transfer_ownership"
@@ -1924,8 +1924,8 @@ DataSources.TeamAdminOptionsButtonList = ListHelper_SetupDataSource( "TeamAdminO
 		} )
 	end
 	table.insert( f124_local1, {
-		displayText = 0x7FD8B7D8412D017,
-		displayImage = 0x72D595AC206B43E,
+		displayText = "clan/leave_team",
+		displayImage = "ui_host",
 		action = CoD.ClanUtility.TeamAdminButtonPress,
 		params = {
 			event = "leave_team"
@@ -1933,8 +1933,8 @@ DataSources.TeamAdminOptionsButtonList = ListHelper_SetupDataSource( "TeamAdminO
 	} )
 	if f124_local0 == Enum[0x10C0A769A29C38F][0xE94BCDEEB8AE946] then
 		table.insert( f124_local1, {
-			displayText = 0xDB06907F7FD272B,
-			displayImage = 0x72D595AC206B43E,
+			displayText = "clan/delete_team",
+			displayImage = "ui_host",
 			action = CoD.ClanUtility.TeamAdminButtonPress,
 			params = {
 				event = "delete_team"
@@ -1961,8 +1961,8 @@ DataSources.SquadAdminOptionsButtonList = ListHelper_SetupDataSource( "SquadAdmi
 	local f125_local1 = {}
 	if f125_local0 == Enum[0x10C0A769A29C38F][0xE94BCDEEB8AE946] then
 		table.insert( f125_local1, {
-			displayText = 0x9CAA53C4504E513,
-			displayImage = 0x72D595AC206B43E,
+			displayText = "clan/transfer_ownership",
+			displayImage = "ui_host",
 			action = CoD.ClanUtility.SquadAdminButtonPress,
 			params = {
 				event = "transfer_ownership"
@@ -1971,7 +1971,7 @@ DataSources.SquadAdminOptionsButtonList = ListHelper_SetupDataSource( "SquadAdmi
 	end
 	table.insert( f125_local1, {
 		displayText = "clan/leave_squad",
-		displayImage = 0x72D595AC206B43E,
+		displayImage = "ui_host",
 		action = CoD.ClanUtility.SquadAdminButtonPress,
 		params = {
 			event = "leave_squad"
@@ -1979,8 +1979,8 @@ DataSources.SquadAdminOptionsButtonList = ListHelper_SetupDataSource( "SquadAdmi
 	} )
 	if f125_local0 == Enum[0x10C0A769A29C38F][0xE94BCDEEB8AE946] then
 		table.insert( f125_local1, {
-			displayText = 0x9B34500A39D0A1C,
-			displayImage = 0x72D595AC206B43E,
+			displayText = "clan/delete_squad",
+			displayImage = "ui_host",
 			action = CoD.ClanUtility.SquadAdminButtonPress,
 			params = {
 				event = "delete_squad"
@@ -2028,7 +2028,7 @@ end
 DataSources.SearchClanNameDescription = ListHelper_SetupDataSource( "SearchClanNameDescription", function ( f129_arg0 )
 	local f129_local0 = {}
 	if not CoD.isPC then
-		table.insert( f129_local0, CoD.CoDAccountUtility.packageOptionsButtonData( 0x6264D0536BC9414, 0xA6FBC982BCC92DC, "", function ( f130_arg0, f130_arg1, f130_arg2, f130_arg3, f130_arg4 )
+		table.insert( f129_local0, CoD.CoDAccountUtility.packageOptionsButtonData( "clan/clan_name", "clan/clan_name_desc", "", function ( f130_arg0, f130_arg1, f130_arg2, f130_arg3, f130_arg4 )
 			ShowKeyboard( f130_arg0, f130_arg1, f130_arg2, "KEYBOARD_TYPE_CLAN_NAME" )
 		end, {
 			actionType = "name"
@@ -2073,10 +2073,10 @@ DataSources.CreateClanNameDescription = ListHelper_SetupDataSource( "CreateClanN
 			ShowKeyboard( f134_arg0, f134_arg1, f134_arg2, "KEYBOARD_TYPE_CLAN_DESCRIPTION" )
 		end
 		
-		table.insert( f132_local0, CoD.CoDAccountUtility.packageOptionsButtonData( 0x6264D0536BC9414, 0xA6FBC982BCC92DC, "", f132_local1, {
+		table.insert( f132_local0, CoD.CoDAccountUtility.packageOptionsButtonData( "clan/clan_name", "clan/clan_name_desc", "", f132_local1, {
 			actionType = "name"
 		} ) )
-		table.insert( f132_local0, CoD.CoDAccountUtility.packageOptionsButtonData( 0xE51F7B584C39C8, 0xC0049AE16662ED0, "", f132_local2, {
+		table.insert( f132_local0, CoD.CoDAccountUtility.packageOptionsButtonData( "clan/description", "clan/description_desc", "", f132_local2, {
 			actionType = "description"
 		} ) )
 	end
@@ -2110,7 +2110,7 @@ DataSources.CreateClanType = ListHelper_SetupDataSource( "CreateClanType", funct
 	
 	local f135_local3 = DataSources.CreateClanForm.getModel( f135_arg0 )
 	f135_local3 = f135_local3.type:get()
-	table.insert( f135_local0, CoD.CoDAccountUtility.packageNumOptionsButtonData( 0xCB5C04C1EAE13CF, 0x8C87035F8D6E641, Engine[0xF9F1239CFD921FE]( CoD.ClanUtility.clan_privacy_levels[f135_local3.type:get()].display_string ), f135_local1, f135_local2 ) )
+	table.insert( f135_local0, CoD.CoDAccountUtility.packageNumOptionsButtonData( "clan/clan_type", "clan/clan_type_desc", Engine[0xF9F1239CFD921FE]( CoD.ClanUtility.clan_privacy_levels[f135_local3.type:get()].display_string ), f135_local1, f135_local2 ) )
 	return f135_local0
 end, true )
 DataSources.CreateClanStyle = ListHelper_SetupDataSource( "CreateClanStyle", function ( f138_arg0 )
@@ -2141,7 +2141,7 @@ DataSources.CreateClanStyle = ListHelper_SetupDataSource( "CreateClanStyle", fun
 	
 	local f138_local3 = DataSources.CreateClanForm.getModel( f138_arg0 )
 	f138_local3 = f138_local3.style:get()
-	table.insert( f138_local0, CoD.CoDAccountUtility.packageNumOptionsButtonData( 0xD0DA8823B3B303B, 0xE98C5F06E62AB2D, Engine[0xF9F1239CFD921FE]( CoD.ClanUtility.clan_styles[f138_local3.style:get()].display_string ), f138_local1, f138_local2 ) )
+	table.insert( f138_local0, CoD.CoDAccountUtility.packageNumOptionsButtonData( "clan/style", "clan/style_desc", Engine[0xF9F1239CFD921FE]( CoD.ClanUtility.clan_styles[f138_local3.style:get()].display_string ), f138_local1, f138_local2 ) )
 	return f138_local0
 end, true )
 DataSources.CreateClanModes = ListHelper_SetupDataSource( "CreateClanModes", function ( f141_arg0 )
@@ -2184,8 +2184,8 @@ DataSources.CreateClanModes = ListHelper_SetupDataSource( "CreateClanModes", fun
 	local f141_local3 = table.insert
 	local f141_local4 = f141_local0
 	local f141_local5 = f141_local1
-	local f141_local6 = 0xB12B3E335B4B1AD
-	local f141_local7 = 0x0
+	local f141_local6 = "exe/cod_multiplayer"
+	local f141_local7 = ""
 	local f141_local8 = DataSources.CreateClanForm.getModel( f141_arg0 )
 	f141_local3( f141_local4, f141_local5( f141_local6, f141_local7, f141_local8.modeMultiplayer:get(), f141_local2, {
 		toggle = "Multiplayer"
@@ -2194,7 +2194,7 @@ DataSources.CreateClanModes = ListHelper_SetupDataSource( "CreateClanModes", fun
 	f141_local4 = f141_local0
 	f141_local5 = f141_local1
 	f141_local6 = 0x7D527CD96A3419
-	f141_local7 = 0x0
+	f141_local7 = ""
 	f141_local8 = DataSources.CreateClanForm.getModel( f141_arg0 )
 	f141_local3( f141_local4, f141_local5( f141_local6, f141_local7, f141_local8.modeArena:get(), f141_local2, {
 		toggle = "Arena"
@@ -2203,7 +2203,7 @@ DataSources.CreateClanModes = ListHelper_SetupDataSource( "CreateClanModes", fun
 	f141_local4 = f141_local0
 	f141_local5 = f141_local1
 	f141_local6 = "menu/zombie"
-	f141_local7 = 0x0
+	f141_local7 = ""
 	f141_local8 = DataSources.CreateClanForm.getModel( f141_arg0 )
 	f141_local3( f141_local4, f141_local5( f141_local6, f141_local7, f141_local8.modeZombies:get(), f141_local2, {
 		toggle = "Zombies"
@@ -2212,7 +2212,7 @@ DataSources.CreateClanModes = ListHelper_SetupDataSource( "CreateClanModes", fun
 	f141_local4 = f141_local0
 	f141_local5 = f141_local1
 	f141_local6 = 0xF9BF174CCFAA519
-	f141_local7 = 0x0
+	f141_local7 = ""
 	f141_local8 = DataSources.CreateClanForm.getModel( f141_arg0 )
 	f141_local3( f141_local4, f141_local5( f141_local6, f141_local7, f141_local8.modeBlackout:get(), f141_local2, {
 		toggle = "Blackout"
@@ -2221,7 +2221,7 @@ DataSources.CreateClanModes = ListHelper_SetupDataSource( "CreateClanModes", fun
 end, true )
 DataSources.CreateClanConfirmation = ListHelper_SetupDataSource( "CreateClanConfirmation", function ( f144_arg0 )
 	local f144_local0 = {}
-	table.insert( f144_local0, CoD.CoDAccountUtility.packageOptionsButtonData( 0xDEB4B8C3DB6B117, 0xDBC259F0BBED809, nil, function ( f145_arg0, f145_arg1, f145_arg2, f145_arg3, f145_arg4 )
+	table.insert( f144_local0, CoD.CoDAccountUtility.packageOptionsButtonData( "clan/create_clan", "clan/create_clan_desc", nil, function ( f145_arg0, f145_arg1, f145_arg2, f145_arg3, f145_arg4 )
 		local f145_local0 = DataSources.CreateClanForm.getModel( f145_arg2 )
 		local f145_local1 = f145_local0.name:get()
 		local f145_local2 = f145_local0.description:get()
@@ -2234,16 +2234,16 @@ DataSources.CreateClanConfirmation = ListHelper_SetupDataSource( "CreateClanConf
 		local f145_local7 = f145_local0.modeZombies:get()
 		local f145_local8 = f145_local0.modeBlackout:get()
 		if not f145_local1 or string.len( f145_local1 ) == 0 then
-			LuaUtils.UI_ShowErrorMessageDialog( f145_arg2, 0x419BBF769DD4724, 0x31E422BC40B2429 )
+			LuaUtils.UI_ShowErrorMessageDialog( f145_arg2, 0x419BBF769DD4724, "menu/notice_caps" )
 			return 
 		elseif not f145_local2 or string.len( f145_local2 ) == 0 then
-			LuaUtils.UI_ShowErrorMessageDialog( f145_arg2, 0x6319AECC843F92B, 0x31E422BC40B2429 )
+			LuaUtils.UI_ShowErrorMessageDialog( f145_arg2, 0x6319AECC843F92B, "menu/notice_caps" )
 			return 
 		elseif not f145_local5 and not f145_local6 and not f145_local7 and not f145_local8 then
-			LuaUtils.UI_ShowErrorMessageDialog( f145_arg2, 0x9071218D66BA869, 0x31E422BC40B2429 )
+			LuaUtils.UI_ShowErrorMessageDialog( f145_arg2, 0x9071218D66BA869, "menu/notice_caps" )
 			return 
 		elseif CoD.CraftUtility.IsClanEmblemEmpty( f145_arg2 ) then
-			LuaUtils.UI_ShowErrorMessageDialog( f145_arg2, 0x719ACB7DA0AACF9, 0x31E422BC40B2429 )
+			LuaUtils.UI_ShowErrorMessageDialog( f145_arg2, 0x719ACB7DA0AACF9, "menu/notice_caps" )
 			return 
 		else
 			local f145_local9 = Engine.GetGlobalModel()
@@ -2282,7 +2282,7 @@ DataSources.CreateSquadForm = {
 }
 DataSources.CreateSquadNameDescription = ListHelper_SetupDataSource( "CreateSquadNameDescription", function ( f147_arg0 )
 	local f147_local0 = {}
-	table.insert( f147_local0, CoD.CoDAccountUtility.packageOptionsButtonData( 0x34F1F662908AAAE, 0x6CEB4714E89FA9E, "", function ( f148_arg0, f148_arg1, f148_arg2, f148_arg3, f148_arg4 )
+	table.insert( f147_local0, CoD.CoDAccountUtility.packageOptionsButtonData( "clan/squad_name", 0x6CEB4714E89FA9E, "", function ( f148_arg0, f148_arg1, f148_arg2, f148_arg3, f148_arg4 )
 		ShowKeyboard( f148_arg0, f148_arg1, f148_arg2, "KEYBOARD_TYPE_CLAN_NAME" )
 	end, {
 		actionType = "name"
@@ -2317,21 +2317,21 @@ DataSources.CreateSquadType = ListHelper_SetupDataSource( "CreateSquadType", fun
 	
 	local f149_local3 = DataSources.CreateSquadForm.getModel( f149_arg0 )
 	f149_local3 = f149_local3.type:get()
-	table.insert( f149_local0, CoD.CoDAccountUtility.packageNumOptionsButtonData( 0x41ABC196E1EEBE5, 0x839B97B8D3EEEF, Engine[0xF9F1239CFD921FE]( CoD.ClanUtility.clan_privacy_levels[f149_local3.type:get()].display_string ), f149_local1, f149_local2 ) )
+	table.insert( f149_local0, CoD.CoDAccountUtility.packageNumOptionsButtonData( 0x41ABC196E1EEBE5, "clan/squad_type_desc", Engine[0xF9F1239CFD921FE]( CoD.ClanUtility.clan_privacy_levels[f149_local3.type:get()].display_string ), f149_local1, f149_local2 ) )
 	return f149_local0
 end, true )
 DataSources.CreateSquadConfirmation = ListHelper_SetupDataSource( "CreateSquadConfirmation", function ( f152_arg0 )
 	local f152_local0 = {}
-	table.insert( f152_local0, CoD.CoDAccountUtility.packageOptionsButtonData( 0x9B196AC8D1E4923, 0x865F8A3065298F5, nil, function ( f153_arg0, f153_arg1, f153_arg2, f153_arg3, f153_arg4 )
+	table.insert( f152_local0, CoD.CoDAccountUtility.packageOptionsButtonData( "clan/create_squad", "clan/create_squad_desc", nil, function ( f153_arg0, f153_arg1, f153_arg2, f153_arg3, f153_arg4 )
 		local f153_local0 = DataSources.CreateSquadForm.getModel( f153_arg2 )
 		local f153_local1 = f153_local0.name:get()
 		local f153_local2 = f153_local0.type
 		f153_local2 = CoD.ClanUtility.clan_privacy_levels[REG7:get()].value
 		if not f153_local1 or string.len( f153_local1 ) == 0 then
-			LuaUtils.UI_ShowErrorMessageDialog( f153_arg2, 0x419BBF769DD4724, 0x31E422BC40B2429 )
+			LuaUtils.UI_ShowErrorMessageDialog( f153_arg2, 0x419BBF769DD4724, "menu/notice_caps" )
 			return 
 		elseif CoD.CraftUtility.IsClanEmblemEmpty( f153_arg2 ) then
-			LuaUtils.UI_ShowErrorMessageDialog( f153_arg2, 0x719ACB7DA0AACF9, 0x31E422BC40B2429 )
+			LuaUtils.UI_ShowErrorMessageDialog( f153_arg2, 0x719ACB7DA0AACF9, "menu/notice_caps" )
 			return 
 		else
 			local f153_local3 = Engine.GetGlobalModel()
@@ -2363,7 +2363,7 @@ DataSources.CreateTeamForm = {
 }
 DataSources.CreateTeamNameDescription = ListHelper_SetupDataSource( "CreateTeamNameDescription", function ( f155_arg0 )
 	local f155_local0 = {}
-	table.insert( f155_local0, CoD.CoDAccountUtility.packageOptionsButtonData( 0x701611BF6804343, 0x5F915D1491A67D5, "", function ( f156_arg0, f156_arg1, f156_arg2, f156_arg3, f156_arg4 )
+	table.insert( f155_local0, CoD.CoDAccountUtility.packageOptionsButtonData( "clan/team_name", "clan/team_name_desc", "", function ( f156_arg0, f156_arg1, f156_arg2, f156_arg3, f156_arg4 )
 		ShowKeyboard( f156_arg0, f156_arg1, f156_arg2, "KEYBOARD_TYPE_CLAN_NAME" )
 	end, {
 		actionType = "name"
@@ -2398,24 +2398,24 @@ DataSources.CreateTeamType = ListHelper_SetupDataSource( "CreateTeamType", funct
 	
 	local f157_local3 = DataSources.CreateTeamForm.getModel( f157_arg0 )
 	f157_local3 = f157_local3.type:get()
-	table.insert( f157_local0, CoD.CoDAccountUtility.packageNumOptionsButtonData( 0x6985D51346D79E8, "clan/team_type_desc", Engine[0xF9F1239CFD921FE]( CoD.ClanUtility.clan_privacy_levels[f157_local3.type:get()].display_string ), f157_local1, f157_local2 ) )
+	table.insert( f157_local0, CoD.CoDAccountUtility.packageNumOptionsButtonData( "clan/team_type", "clan/team_type_desc", Engine[0xF9F1239CFD921FE]( CoD.ClanUtility.clan_privacy_levels[f157_local3.type:get()].display_string ), f157_local1, f157_local2 ) )
 	return f157_local0
 end, true )
 DataSources.CreateTeamConfirmation = ListHelper_SetupDataSource( "CreateTeamConfirmation", function ( f160_arg0 )
 	local f160_local0 = {}
-	table.insert( f160_local0, CoD.CoDAccountUtility.packageOptionsButtonData( 0x5D5BCFD93BE1F26, 0x49F16619D209F56, nil, function ( f161_arg0, f161_arg1, f161_arg2, f161_arg3, f161_arg4 )
+	table.insert( f160_local0, CoD.CoDAccountUtility.packageOptionsButtonData( "clan/create_team", "clan/create_team_desc", nil, function ( f161_arg0, f161_arg1, f161_arg2, f161_arg3, f161_arg4 )
 		local f161_local0 = DataSources.CreateTeamForm.getModel( f161_arg2 )
 		local f161_local1 = f161_local0.name:get()
 		local f161_local2 = f161_local0.type
 		f161_local2 = CoD.ClanUtility.clan_privacy_levels[REG7:get()].value
 		if not f161_local1 or string.len( f161_local1 ) == 0 then
-			LuaUtils.UI_ShowErrorMessageDialog( f161_arg2, 0x419BBF769DD4724, 0x31E422BC40B2429 )
+			LuaUtils.UI_ShowErrorMessageDialog( f161_arg2, 0x419BBF769DD4724, "menu/notice_caps" )
 			return 
 		else
 			local f161_local3 = Engine.GetGlobalModel()
 			f161_local3.socialRoot.teams.loaded:set( LuaEnum.CLAN_INFO_MODELS.CREATING_TEAM )
 			if CoD.CraftUtility.IsClanEmblemEmpty( f161_arg2 ) then
-				LuaUtils.UI_ShowErrorMessageDialog( f161_arg2, 0x719ACB7DA0AACF9, 0x31E422BC40B2429 )
+				LuaUtils.UI_ShowErrorMessageDialog( f161_arg2, 0x719ACB7DA0AACF9, "menu/notice_caps" )
 				return 
 			else
 				Engine[0x87AE7E64BA5AD61]( "OnClanUIEvent", {

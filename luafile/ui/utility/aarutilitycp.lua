@@ -114,7 +114,7 @@ CoD.AARUtilityCP.GetScoreboardTeamTable = function ( f11_arg0, f11_arg1 )
 			f11_local11 = Engine.GetScoreboardPlayerData( f11_local7 - 1, f11_local1, Enum.scoreBoardColumns_e[0x3A1B2ED08B85E14] )
 		end
 		f11_local10 = f11_local10 .. " " .. Engine[0x9D33D652B9B0F3B]()
-		table.insert( f11_local6, {
+		local f11_local12 = {
 			models = {
 				team = f11_local1,
 				clientNum = tonumber( f11_local11 ),
@@ -123,9 +123,10 @@ CoD.AARUtilityCP.GetScoreboardTeamTable = function ( f11_arg0, f11_arg1 )
 				deaths = f11_local3.AfterActionReportStats.playerStats[f11_local11].deaths:get(),
 				assists = f11_local3.AfterActionReportStats.playerStats[f11_local11].assists:get(),
 				revives = f11_local3.AfterActionReportStats.playerStats[f11_local11].revives:get()
-			},
-			models = Engine.GetModelValue( Engine.GetModel( Engine.GetGlobalModel(), "scoreboard.team1." .. f11_local11 .. ".ping" ) )
-		} )
+			}
+		}
+		f11_local12.models.ping = Engine.GetModelValue( Engine.GetModel( Engine.GetGlobalModel(), "scoreboard.team1." .. f11_local11 .. ".ping" ) )
+		table.insert( f11_local6, f11_local12 )
 	end
 	return f11_local6
 end
@@ -224,11 +225,11 @@ CoD.AARUtilityCP.CheckRankRewards = function ( f15_arg0, f15_arg1, f15_arg2 )
 			if f15_local5 ~= nil and f15_local5 ~= "" then
 				f15_local4 = f15_local4 + tonumber( f15_local5 )
 			end
-			f15_local8.name = Engine[0xF9F1239CFD921FE]( 0x7C13CC7BFE47E5C, f15_local4 )
-			f15_local8.description = 0x0
+			f15_local8.name = Engine[0xF9F1239CFD921FE]( "cpui/add_unlock_tokens", f15_local4 )
+			f15_local8.description = ""
 			f15_local8.icon = CoD.AARUtilityCP.UnlockTokenIcon
 		else
-			local f15_local4 = Enum.eModes[0x60063C67132EB69]
+			local f15_local4 = Enum.eModes.mode_campaign
 			local f15_local5 = Engine.GetItemIndexFromReference( f15_local7, f15_local4 )
 			local f15_local6 = Engine.GetItemImage( f15_local5, Enum[0x6EB546760F890D2][0x3057ABF96AF8289], f15_local4 )
 			if not string.find( f15_local7, "cybercom" ) then
@@ -278,7 +279,7 @@ CoD.AARUtilityCP.CheckRankAndPrestige = function ( f17_arg0, f17_arg1, f17_arg2 
 				local f17_local14 = {
 					icon = "t7_icon_rank_cp_level_" .. string.format( "%02d", f17_local5 + f17_local11 + 1 ) .. "_lrg",
 					title = CoD.GetRankName( f17_local5 + f17_local11, 0 ),
-					description = Engine[0xF9F1239CFD921FE]( 0x87EBD31A8B55EAF ) .. " " .. f17_local5 + f17_local11 + 1,
+					description = Engine[0xF9F1239CFD921FE]( "menu/level" ) .. " " .. f17_local5 + f17_local11 + 1,
 					rank = f17_local5 + f17_local11
 				}
 				for f17_local15 = f17_local9, f17_local10, 1 do
@@ -299,22 +300,22 @@ CoD.AARUtilityCP.CheckWeaponRewards = function ( f18_arg0, f18_arg1, f18_arg2, f
 		local f18_local0 = {}
 		local f18_local1 = Engine.TableLookup( CoD.attachmentTable, 0, 4, f18_arg3 )
 		f18_local0.name = Engine.TableLookup( CoD.attachmentTable, 3, 4, f18_arg3 )
-		f18_local0.icon = Engine.GetAttachmentUniqueImageByAttachmentIndex( Enum.eModes[0x83EBA96F36BC4E5], f18_arg2, tonumber( f18_local1 ) )
+		f18_local0.icon = Engine.GetAttachmentUniqueImageByAttachmentIndex( Enum.eModes.mode_multiplayer, f18_arg2, tonumber( f18_local1 ) )
 		f18_local0.description = "cpui/attachment"
 		CoD.AARUtilityCP.AddToArray( f18_arg1.Rewards, f18_local0 )
 	end
 	if f18_arg4 ~= nil and f18_arg4 ~= "0" and f18_arg4 ~= "" then
 		CoD.AARUtilityCP.AddToArray( f18_arg1.Rewards, {
-			name = Engine[0xF9F1239CFD921FE]( 0xC0E387C289AD7A9, f18_arg4 ),
+			name = Engine[0xF9F1239CFD921FE]( "cpui/xp_bonus", f18_arg4 ),
 			icon = "t7_hud_mp_notifications_xp_blue",
-			description = 0x0
+			description = ""
 		} )
 	end
 end
 
 CoD.AARUtilityCP.CheckWeaponLevels = function ( f19_arg0, f19_arg1, f19_arg2 )
 	local f19_local0 = CoD.AARUtilityCP.UseTestData()
-	local f19_local1 = Enum.eModes[0x60063C67132EB69]
+	local f19_local1 = Enum.eModes.mode_campaign
 	if f19_local0 then
 		local f19_local2 = {
 			icon = "t7_icon_weapon_ar_standard_sm",
@@ -351,7 +352,7 @@ CoD.AARUtilityCP.CheckWeaponLevels = function ( f19_arg0, f19_arg1, f19_arg2 )
 								local f19_local17 = {
 									icon = Engine.GetItemImage( f19_local2, Enum[0x6EB546760F890D2][0x569E84652131CD7], f19_local1 ),
 									title = f19_local6,
-									description = Engine[0xF9F1239CFD921FE]( 0x87EBD31A8B55EAF ) .. " " .. tonumber( f19_local16 ) + 2
+									description = Engine[0xF9F1239CFD921FE]( "menu/level" ) .. " " .. tonumber( f19_local16 ) + 2
 								}
 								CoD.AARUtilityCP.CheckWeaponRewards( f19_arg0, f19_local17, f19_local2, f19_local14, f19_local15 )
 								CoD.AARUtilityCP.AddReward( f19_arg2, f19_local17, "WEAPON" )
@@ -379,9 +380,9 @@ CoD.AARUtilityCP.CheckWeaponLevels = function ( f19_arg0, f19_arg1, f19_arg2 )
 								Rewards = {}
 							}
 							CoD.AARUtilityCP.AddToArray( f19_local18.Rewards, {
-								name = Engine[0xF9F1239CFD921FE]( 0xC0E387C289AD7A9, tonumber( Engine[0xC6F8EC444864600]( CoD.getStatsMilestoneTable( 3, f19_local1 ), f19_local11[f19_local12], 6 ) ) ),
+								name = Engine[0xF9F1239CFD921FE]( "cpui/xp_bonus", tonumber( Engine[0xC6F8EC444864600]( CoD.getStatsMilestoneTable( 3, f19_local1 ), f19_local11[f19_local12], 6 ) ) ),
 								icon = "t7_hud_mp_notifications_xp_blue",
-								description = 0x0
+								description = ""
 							} )
 							CoD.AARUtilityCP.AddReward( f19_arg2, f19_local18, "WEAPON_CHALLENGE" )
 							f19_arg1.ItemStats[f19_local2].challengeCompleted[f19_local12 - 1]:set( 0 )
@@ -488,7 +489,7 @@ CoD.AARUtilityCP.CheckAccolades = function ( f25_arg0, f25_arg1, f25_arg2 )
 					local f25_local8 = "uie_headicon_dead"
 					for f25_local12, f25_local13 in pairs( f25_local2 ) do
 						if f25_local13[0xF5AD32CD03EB6EB] == f25_local7 then
-							f25_local8 = CoD.AARUtilityCP.GetAccoladeIconFromType( f25_local13["challengewidget"] )
+							f25_local8 = CoD.AARUtilityCP.GetAccoladeIconFromType( f25_local13[0x5DA6A510BA77322] )
 							break
 						end
 					end
@@ -501,16 +502,16 @@ CoD.AARUtilityCP.CheckAccolades = function ( f25_arg0, f25_arg1, f25_arg2 )
 					f25_local9.Rewards = {}
 					if f25_local10 ~= nil and f25_local10 ~= "" then
 						CoD.AARUtilityCP.AddToArray( f25_local9.Rewards, {
-							name = 0x663BFDF80BC4247,
-							description = 0x0,
+							name = "cpui/add_unlock_token",
+							description = "",
 							icon = CoD.AARUtilityCP.UnlockTokenIcon
 						} )
 					end
 					f25_local11 = Engine.TableLookup( CoD.statsMilestone, 6, 0, f25_local3 + f25_local1 )
 					if f25_local11 ~= nil and f25_local11 ~= "" then
 						CoD.AARUtilityCP.AddToArray( f25_local9.Rewards, {
-							name = Engine[0xF9F1239CFD921FE]( 0xC0E387C289AD7A9, tonumber( f25_local11 ) ),
-							description = 0x0,
+							name = Engine[0xF9F1239CFD921FE]( "cpui/xp_bonus", tonumber( f25_local11 ) ),
+							description = "",
 							icon = "t7_hud_mp_notifications_xp_blue"
 						} )
 					end
@@ -563,26 +564,26 @@ CoD.AARUtilityCP.CheckMissionRewards = function ( f27_arg0, f27_arg1, f27_arg2 )
 	if f27_local1 == true then
 		local f27_local6 = {
 			icon = "t7_cp_hud_mission_complete",
-			title = 0xBB7B88B33DF484,
+			title = "coop/smui_mission_complete",
 			description = CoD.MapUtility.MapsTable[f27_local0].mapName,
 			Rewards = {}
 		}
 		CoD.AARUtilityCP.AddToArray( f27_local6.Rewards, {
-			name = Engine[0xF9F1239CFD921FE]( 0xC0E387C289AD7A9, f27_local3 ),
+			name = Engine[0xF9F1239CFD921FE]( "cpui/xp_bonus", f27_local3 ),
 			icon = "t7_hud_mp_notifications_xp_blue",
 			description = "MENU_COMPLETED_" .. CoD.AARUtilityCP.GetDifficultyFromIndex( f27_arg1.PlayerStatsByMap[CoD.AARUtilityCP.GetLastMapName( f27_arg0 )].lastCompletedDifficulty:get() )
 		} )
 		if f27_local4 ~= 0 then
 			CoD.AARUtilityCP.AddToArray( f27_local6.Rewards, {
-				name = Engine[0xF9F1239CFD921FE]( 0xC0E387C289AD7A9, f27_local4 ),
+				name = Engine[0xF9F1239CFD921FE]( "cpui/xp_bonus", f27_local4 ),
 				icon = "t7_hud_mp_notifications_xp_blue",
 				description = 0xC2415D35D75C92E
 			} )
 		end
 		if f27_local2 == true then
 			CoD.AARUtilityCP.AddToArray( f27_local6.Rewards, {
-				name = 0x663BFDF80BC4247,
-				description = 0x0,
+				name = "cpui/add_unlock_token",
+				description = "",
 				icon = CoD.AARUtilityCP.UnlockTokenIcon
 			} )
 		end
@@ -601,18 +602,18 @@ CoD.AARUtilityCP.CheckRatingRewards = function ( f28_arg0, f28_arg1, f28_arg2 )
 			local f28_local5 = {
 				icon = f28_local4.ratingImage,
 				title = f28_local4.ratingName,
-				description = 0x6BE861D2FE82E56,
+				description = "cpui/rating_earned",
 				Rewards = {}
 			}
 			CoD.AARUtilityCP.AddToArray( f28_local5.Rewards, {
-				name = Engine[0xF9F1239CFD921FE]( 0x7C13CC7BFE47E5C, f28_local4.tokensAwarded ),
+				name = Engine[0xF9F1239CFD921FE]( "cpui/add_unlock_tokens", f28_local4.tokensAwarded ),
 				icon = CoD.AARUtilityCP.UnlockTokenIcon,
-				description = 0x0
+				description = ""
 			} )
 			CoD.AARUtilityCP.AddToArray( f28_local5.Rewards, {
-				name = Engine[0xF9F1239CFD921FE]( 0xC0E387C289AD7A9, f28_local4.xpAwarded ),
+				name = Engine[0xF9F1239CFD921FE]( "cpui/xp_bonus", f28_local4.xpAwarded ),
 				icon = "t7_hud_mp_notifications_xp_blue",
-				description = 0x0
+				description = ""
 			} )
 			CoD.AARUtilityCP.AddReward( f28_arg2, f28_local5, "RATING" )
 		end
@@ -629,21 +630,21 @@ CoD.AARUtilityCP.contains = function ( f29_arg0, f29_arg1 )
 end
 
 CoD.AARUtilityCP.CheckRedDotRewards = function ( f30_arg0, f30_arg1, f30_arg2 )
-	local f30_local0 = Engine.TableFindRows( CoD.getStatsMilestoneTable( 3, Enum.eModes[0x60063C67132EB69] ), 3, "attachment" )
+	local f30_local0 = Engine.TableFindRows( CoD.getStatsMilestoneTable( 3, Enum.eModes.mode_campaign ), 3, "attachment" )
 	local f30_local1 = {}
 	for f30_local2 = 1, #f30_local0, 1 do
-		local f30_local5 = Engine[0xC6F8EC444864600]( CoD.getStatsMilestoneTable( 3, Enum.eModes[0x60063C67132EB69] ), f30_local0[f30_local2], 13 )
+		local f30_local5 = Engine[0xC6F8EC444864600]( CoD.getStatsMilestoneTable( 3, Enum.eModes.mode_campaign ), f30_local0[f30_local2], 13 )
 		if not CoD.AARUtilityCP.contains( f30_local1, f30_local5 ) then
 			table.insert( f30_local1, f30_local5 )
 		end
 	end
 	for f30_local2 = 1, #f30_local1, 1 do
 		local f30_local5 = f30_local1[f30_local2]
-		local f30_local6 = Engine.TableFindRows( CoD.getStatsMilestoneTable( 3, Enum.eModes[0x60063C67132EB69] ), 13, f30_local5 )
+		local f30_local6 = Engine.TableFindRows( CoD.getStatsMilestoneTable( 3, Enum.eModes.mode_campaign ), 13, f30_local5 )
 		if f30_local6 ~= nil then
 			for f30_local7 = 1, #f30_local6, 1 do
 				if f30_arg1.Attachments[f30_local5].challengeCompleted[f30_local7 - 1]:get() == 1 then
-					local f30_local10 = Engine[0xC6F8EC444864600]( CoD.getStatsMilestoneTable( 3, Enum.eModes[0x60063C67132EB69] ), f30_local6[f30_local7], 9 )
+					local f30_local10 = Engine[0xC6F8EC444864600]( CoD.getStatsMilestoneTable( 3, Enum.eModes.mode_campaign ), f30_local6[f30_local7], 9 )
 					local f30_local11 = {
 						icon = f30_local5 .. "_" .. f30_local7,
 						title = "mpui_reticle_" .. f30_local5 .. "_" .. f30_local7,
@@ -651,9 +652,9 @@ CoD.AARUtilityCP.CheckRedDotRewards = function ( f30_arg0, f30_arg1, f30_arg2 )
 						Rewards = {}
 					}
 					CoD.AARUtilityCP.AddToArray( f30_local11.Rewards, {
-						name = Engine[0xF9F1239CFD921FE]( 0xC0E387C289AD7A9, tonumber( Engine[0xC6F8EC444864600]( CoD.getStatsMilestoneTable( 3, Enum.eModes[0x60063C67132EB69] ), f30_local6[f30_local7], 6 ) ) ),
+						name = Engine[0xF9F1239CFD921FE]( "cpui/xp_bonus", tonumber( Engine[0xC6F8EC444864600]( CoD.getStatsMilestoneTable( 3, Enum.eModes.mode_campaign ), f30_local6[f30_local7], 6 ) ) ),
 						icon = "t7_hud_mp_notifications_xp_blue",
-						description = 0x0
+						description = ""
 					} )
 					CoD.AARUtilityCP.AddReward( f30_arg2, f30_local11, "WEAPON_CHALLENGE" )
 					f30_arg1.Attachments[f30_local5].challengeCompleted[f30_local7 - 1]:set( 0 )
@@ -670,14 +671,14 @@ CoD.AARUtilityCP.CheckCampaignDecorations = function ( f31_arg0, f31_arg1, f31_a
 		if f31_arg1.currentPlayerCPDecorations[f31_local1 - 1]:get() ~= f31_arg1.PlayerCPDecorations[f31_local1 - 1]:get() then
 			local f31_local5 = {
 				icon = f31_local4[0xB5AE475DA94C43D],
-				title = f31_local4[0x55F116BF695C8F6],
-				description = 0xBDD39B3FB1538BA,
+				title = f31_local4.displayname,
+				description = "cpui/campaign_decoration",
 				Rewards = {}
 			}
 			CoD.AARUtilityCP.AddToArray( f31_local5.Rewards, {
-				name = Engine[0xF9F1239CFD921FE]( 0xC0E387C289AD7A9, f31_local4[0xA292E63D66D8E94] ),
+				name = Engine[0xF9F1239CFD921FE]( "cpui/xp_bonus", f31_local4[0xA292E63D66D8E94] ),
 				icon = "t7_hud_mp_notifications_xp_blue",
-				description = 0x0
+				description = ""
 			} )
 			CoD.AARUtilityCP.AddReward( f31_arg2, f31_local5, "DECORATION" )
 		end
@@ -687,20 +688,20 @@ end
 CoD.AARUtilityCP.AddRewardsToChallengeReward = function ( f32_arg0, f32_arg1, f32_arg2, f32_arg3 )
 	local f32_local0 = {}
 	if not f32_arg3 then
-		f32_local0.name = Engine[0xF9F1239CFD921FE]( 0xC0E387C289AD7A9, f32_arg2 )
+		f32_local0.name = Engine[0xF9F1239CFD921FE]( "cpui/xp_bonus", f32_arg2 )
 		f32_local0.icon = "t7_hud_mp_notifications_xp_blue"
-		f32_local0.description = 0x0
+		f32_local0.description = ""
 	else
-		f32_local0.name = Engine[0xF9F1239CFD921FE]( 0x9C133695663ED79, f32_arg3 + 1 )
+		f32_local0.name = Engine[0xF9F1239CFD921FE]( "cp_challenges/tier_x", f32_arg3 + 1 )
 		f32_local0.icon = "t7_hud_mp_notifications_xp_blue"
-		f32_local0.description = Engine[0xF9F1239CFD921FE]( 0xC0E387C289AD7A9, f32_arg2 )
+		f32_local0.description = Engine[0xF9F1239CFD921FE]( "cpui/xp_bonus", f32_arg2 )
 	end
 	CoD.AARUtilityCP.AddToArray( f32_arg1.Rewards, f32_local0 )
 	return f32_arg1
 end
 
 CoD.AARUtilityCP.CreateChallengeReward = function ( f33_arg0, f33_arg1, f33_arg2, f33_arg3 )
-	local f33_local0 = CoD.getStatsMilestoneTable( 3, Enum.eModes[0x60063C67132EB69] )
+	local f33_local0 = CoD.getStatsMilestoneTable( 3, Enum.eModes.mode_campaign )
 	local f33_local1 = {
 		title = LocalizeIntoString( Engine[0xC6F8EC444864600]( f33_local0, f33_arg2, 5 ), "", "", "" ),
 		icon = Engine.TableLookup( "gamedata/emblems/backgrounds.csv", 3, 4, Engine[0xC6F8EC444864600]( f33_local0, f33_arg2, 12 ) ) .. "_nstrm"
@@ -708,7 +709,7 @@ CoD.AARUtilityCP.CreateChallengeReward = function ( f33_arg0, f33_arg1, f33_arg2
 	if f33_arg3 then
 		f33_local1.description = 0xA8CC1BBD259D2F6
 	else
-		f33_local1.description = 0xF2A25EAC0D5B2AD
+		f33_local1.description = "mpui/aar_awards_stats_milestone"
 	end
 	f33_local1.Rewards = {}
 	return f33_local1
@@ -716,13 +717,13 @@ end
 
 CoD.AARUtilityCP.BuildChallengeTable = function ( f34_arg0 )
 	CoD.AARUtilityCP.challengeTable = {}
-	local f34_local0 = CoD.getStatsMilestoneTable( 3, Enum.eModes[0x60063C67132EB69] )
+	local f34_local0 = CoD.getStatsMilestoneTable( 3, Enum.eModes.mode_campaign )
 	for f34_local11, f34_local12 in ipairs( {
 		"missions",
 		"tott",
 		"career"
 	} ) do
-		for f34_local8, f34_local9 in ipairs( Engine.GetChallengeInfoForImages( f34_arg0, f34_local12, Enum.eModes[0x60063C67132EB69] ) ) do
+		for f34_local8, f34_local9 in ipairs( Engine.GetChallengeInfoForImages( f34_arg0, f34_local12, Enum.eModes.mode_campaign ) ) do
 			if f34_local9 ~= nil then
 				local f34_local4 = Engine[0xC6F8EC444864600]( f34_local0, f34_local9.challengeRow, 1 )
 				if f34_local4 and f34_local4 ~= "0" then
@@ -745,7 +746,7 @@ CoD.AARUtilityCP.BuildChallengeTable = function ( f34_arg0 )
 end
 
 CoD.AARUtilityCP.CheckChallengeCompletion = function ( f35_arg0, f35_arg1, f35_arg2 )
-	local f35_local0 = CoD.getStatsMilestoneTable( 3, Enum.eModes[0x60063C67132EB69] )
+	local f35_local0 = CoD.getStatsMilestoneTable( 3, Enum.eModes.mode_campaign )
 	CoD.AARUtilityCP.BuildChallengeTable( f35_arg0 )
 	for f35_local11, f35_local12 in ipairs( CoD.AARUtilityCP.challengeTable ) do
 		if not f35_local12.tiers then

@@ -3,19 +3,19 @@ require( "ui/uieditor/widgets/callingcards/callingcards_asset_jaw02" )
 require( "ui/uieditor/widgets/callingcards/callingcards_asset_skelladog_eyeglow" )
 require( "ui/uieditor/widgets/callingcards/callingcards_asset_vortex" )
 
-CoD[0x39A2F3C5F2BECC8] = InheritFrom( LUI.UIElement )
-CoD[0x39A2F3C5F2BECC8].__defaultWidth = 960
-CoD[0x39A2F3C5F2BECC8].__defaultHeight = 240
-CoD[0x39A2F3C5F2BECC8].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_prestige_equipment_master = InheritFrom( LUI.UIElement )
+CoD.callingcards_prestige_equipment_master.__defaultWidth = 960
+CoD.callingcards_prestige_equipment_master.__defaultHeight = 240
+CoD.callingcards_prestige_equipment_master.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x39A2F3C5F2BECC8] )
+	self:setClass( CoD.callingcards_prestige_equipment_master )
 	self.id = "CallingCards_Prestige_Equipment_Master"
 	self.soundSet = "default"
 	self.anyChildUsesUpdateState = true
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local bg = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	bg:setImage( RegisterImage( 0xB792BABB0F79C64 ) )
+	bg:setImage( RegisterImage( "uie_vortex_background" ) )
 	self:addElement( bg )
 	self.bg = bg
 	
@@ -28,12 +28,12 @@ CoD[0x39A2F3C5F2BECC8].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.jaw01 = jaw01
 	
 	local drool01 = LUI.UIImage.new( 0, 0, 254.5, 288.5, 0, 0, 167.5, 214.5 )
-	drool01:setImage( RegisterImage( 0x43F28082082768D ) )
+	drool01:setImage( RegisterImage( "uie_drool_01" ) )
 	self:addElement( drool01 )
 	self.drool01 = drool01
 	
 	local drool02 = LUI.UIImage.new( 0, 0, 767.5, 810.5, 0, 0, 163.5, 206.5 )
-	drool02:setImage( RegisterImage( 0x43F250820827174 ) )
+	drool02:setImage( RegisterImage( "uie_drool_02" ) )
 	self:addElement( drool02 )
 	self.drool02 = drool02
 	
@@ -42,7 +42,7 @@ CoD[0x39A2F3C5F2BECC8].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.vortex = vortex
 	
 	local gang = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	gang:setImage( RegisterImage( 0x50671D4A3D83CE8 ) )
+	gang:setImage( RegisterImage( "uie_gang" ) )
 	self:addElement( gang )
 	self.gang = gang
 	
@@ -60,7 +60,7 @@ CoD[0x39A2F3C5F2BECC8].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x39A2F3C5F2BECC8].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_prestige_equipment_master.__resetProperties = function ( f2_arg0 )
 	f2_arg0.eyeFlareImage:completeAnimation()
 	f2_arg0.vortex:completeAnimation()
 	f2_arg0.jaw01:completeAnimation()
@@ -79,7 +79,7 @@ CoD[0x39A2F3C5F2BECC8].__resetProperties = function ( f2_arg0 )
 	f2_arg0.jaw02:setTopBottom( 0, 0, 145.5, 214.5 )
 end
 
-CoD[0x39A2F3C5F2BECC8].__clipsPerState = {
+CoD.callingcards_prestige_equipment_master.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -431,7 +431,7 @@ CoD[0x39A2F3C5F2BECC8].__clipsPerState = {
 		end
 	}
 }
-CoD[0x39A2F3C5F2BECC8].__onClose = function ( f55_arg0 )
+CoD.callingcards_prestige_equipment_master.__onClose = function ( f55_arg0 )
 	f55_arg0.jaw02:close()
 	f55_arg0.jaw01:close()
 	f55_arg0.vortex:close()

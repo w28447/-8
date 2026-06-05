@@ -69,63 +69,63 @@ LUI.createMenu.ZMTalismanSelect = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0xA86619565BE54DB] )
 		return f7_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( selectionList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if CoD.CACUtility.DoesCACItemHaveConsumablesRemaining( f8_arg1, f8_arg0, f8_arg2, Enum[0x6EB546760F890D2][0x5544C104CD15F10] ) and not CoD.ZMTalismanUtility.IsTalismanEqipped( f8_arg1, f8_arg0, f8_arg2 ) then
-			CoD.CACUtility.EquipWeapon( self, f8_arg0, f8_arg1, f8_arg2, false )
-			CoD.ZMTalismanUtility.UpdateEquippedSlot( f8_arg2 )
-			UpdateButtonPromptState( f8_arg1, f8_arg0, f8_arg2, Enum.LUIButton[0x755DA1E2E7C263F] )
+	f1_local1:AddButtonCallbackFunction( selectionList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.CACUtility.DoesCACItemHaveConsumablesRemaining( menu, element, controller, Enum[0x6EB546760F890D2][0x5544C104CD15F10] ) and not CoD.ZMTalismanUtility.IsTalismanEqipped( menu, element, controller ) then
+			CoD.CACUtility.EquipWeapon( self, element, menu, controller, false )
+			CoD.ZMTalismanUtility.UpdateEquippedSlot( controller )
+			UpdateButtonPromptState( menu, element, controller, Enum.LUIButton[0x755DA1E2E7C263F] )
 			return true
-		elseif CoD.ZMTalismanUtility.IsTalismanEqipped( f8_arg1, f8_arg0, f8_arg2 ) and IsPC() then
-			CoD.ZMTalismanUtility.UnequipTalisman( f8_arg1, f8_arg0, f8_arg2 )
-			CoD.ZMTalismanUtility.UpdateEquippedSlot( f8_arg2 )
+		elseif CoD.ZMTalismanUtility.IsTalismanEqipped( menu, element, controller ) and IsPC() then
+			CoD.ZMTalismanUtility.UnequipTalisman( menu, element, controller )
+			CoD.ZMTalismanUtility.UpdateEquippedSlot( controller )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if CoD.CACUtility.DoesCACItemHaveConsumablesRemaining( f9_arg1, f9_arg0, f9_arg2, Enum[0x6EB546760F890D2][0x5544C104CD15F10] ) and not CoD.ZMTalismanUtility.IsTalismanEqipped( f9_arg1, f9_arg0, f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.CACUtility.DoesCACItemHaveConsumablesRemaining( menu, element, controller, Enum[0x6EB546760F890D2][0x5544C104CD15F10] ) and not CoD.ZMTalismanUtility.IsTalismanEqipped( menu, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif CoD.ZMTalismanUtility.IsTalismanEqipped( f9_arg1, f9_arg0, f9_arg2 ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x679ACA6FFC6C8F3, nil, "ui_confirm" )
+		elseif CoD.ZMTalismanUtility.IsTalismanEqipped( menu, element, controller ) and IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/remove", nil, "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( selectionList, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		if IsGamepad( f10_arg2 ) and CoD.ZMTalismanUtility.IsTalismanEqipped( f10_arg1, f10_arg0, f10_arg2 ) then
-			CoD.ZMTalismanUtility.UnequipTalisman( f10_arg1, f10_arg0, f10_arg2 )
-			CoD.ZMTalismanUtility.UpdateEquippedSlot( f10_arg2 )
+	f1_local1:AddButtonCallbackFunction( selectionList, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if IsGamepad( controller ) and CoD.ZMTalismanUtility.IsTalismanEqipped( menu, element, controller ) then
+			CoD.ZMTalismanUtility.UnequipTalisman( menu, element, controller )
+			CoD.ZMTalismanUtility.UpdateEquippedSlot( controller )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		if IsGamepad( f11_arg2 ) and CoD.ZMTalismanUtility.IsTalismanEqipped( f11_arg1, f11_arg0, f11_arg2 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, nil, nil )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) and CoD.ZMTalismanUtility.IsTalismanEqipped( menu, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( selectionList, f1_arg0, Enum.LUIButton[0xA86619565BE54DB], "ui_remove", function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		if CoD.ZMTalismanUtility.IsTalismanEqipped( f12_arg1, f12_arg0, f12_arg2 ) and IsMouseOrKeyboard( f12_arg2 ) then
-			CoD.ZMTalismanUtility.UnequipTalisman( f12_arg1, f12_arg0, f12_arg2 )
-			CoD.ZMTalismanUtility.UpdateEquippedSlot( f12_arg2 )
+	f1_local1:AddButtonCallbackFunction( selectionList, f1_arg0, Enum.LUIButton[0xA86619565BE54DB], "ui_remove", function ( element, menu, controller, model )
+		if CoD.ZMTalismanUtility.IsTalismanEqipped( menu, element, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.ZMTalismanUtility.UnequipTalisman( menu, element, controller )
+			CoD.ZMTalismanUtility.UpdateEquippedSlot( controller )
 			return true
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		if CoD.ZMTalismanUtility.IsTalismanEqipped( f13_arg1, f13_arg0, f13_arg2 ) and IsMouseOrKeyboard( f13_arg2 ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0xA86619565BE54DB], 0x679ACA6FFC6C8F3, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+	end, function ( element, menu, controller )
+		if CoD.ZMTalismanUtility.IsTalismanEqipped( menu, element, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xA86619565BE54DB], "menu/remove", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	selectionList:AddContextualMenuAction( f1_local1, f1_arg0, 0x679ACA6FFC6C8F3, function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
+	selectionList:AddContextualMenuAction( f1_local1, f1_arg0, "menu/remove", function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
 		if CoD.ZMTalismanUtility.IsTalismanEqipped( f14_arg1, f14_arg0, f14_arg2 ) then
 			return function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
 				CoD.ZMTalismanUtility.UnequipTalisman( f15_arg1, f15_arg0, f15_arg2 )
@@ -178,7 +178,7 @@ LUI.createMenu.ZMTalismanSelect = function ( f1_arg0, f1_arg1 )
 	TopBar:setRGB( 0.58, 0.85, 1 )
 	TopBar:setAlpha( 0.5 )
 	TopBar:setZoom( 2 )
-	TopBar:setImage( RegisterImage( 0x42BCCF45B82FBED ) )
+	TopBar:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_bar" ) )
 	TopBar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBar )
 	self.TopBar = TopBar
@@ -197,7 +197,7 @@ LUI.createMenu.ZMTalismanSelect = function ( f1_arg0, f1_arg1 )
 	TopBar2:setRGB( 0.58, 0.85, 1 )
 	TopBar2:setAlpha( 0.5 )
 	TopBar2:setZoom( 2 )
-	TopBar2:setImage( RegisterImage( 0x42BCCF45B82FBED ) )
+	TopBar2:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_bar" ) )
 	TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopBar2 )
 	self.TopBar2 = TopBar2
@@ -232,12 +232,12 @@ LUI.createMenu.ZMTalismanSelect = function ( f1_arg0, f1_arg1 )
 	RestrictedText:linkToElementModel( selectionList, nil, false, function ( model )
 		RestrictedText:setModel( model, f1_arg0 )
 	end )
-	self:registerEventHandler( "menu_loaded", function ( element, event )
+	self:registerEventHandler( "menu_loaded", function ( self, event )
 		local f22_local0 = nil
-		if element.menuLoaded then
-			f22_local0 = element:menuLoaded( event )
-		elseif element.super.menuLoaded then
-			f22_local0 = element.super:menuLoaded( event )
+		if self.menuLoaded then
+			f22_local0 = self:menuLoaded( event )
+		elseif self.super.menuLoaded then
+			f22_local0 = self.super:menuLoaded( event )
 		end
 		ShowHeaderIconOnly( f1_local1 )
 		SetElementStateByElementName( self, "GenericMenuFrame0", f1_arg0, "Update" )
@@ -247,22 +247,22 @@ LUI.createMenu.ZMTalismanSelect = function ( f1_arg0, f1_arg1 )
 		}, f1_arg0 )
 		PlayClip( self, "into", f1_arg0 )
 		if not f22_local0 then
-			f22_local0 = element:dispatchEventToChildren( event )
+			f22_local0 = self:dispatchEventToChildren( event )
 		end
 		return f22_local0
 	end )
-	self:registerEventHandler( "list_active_changed", function ( element, event )
+	self:registerEventHandler( "list_active_changed", function ( self, event )
 		local f23_local0 = nil
 		CoD.ZMTalismanUtility.UpdateTalismanModel( self, self.selectionList, f1_arg0 )
 		return f23_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f24_arg0, f24_arg1, f24_arg2, f24_arg3 )
-		GoBack( self, f24_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		PlaySoundSetSound( self, "menu_no_selection" )
-		SendClientScriptMenuChangeNotify( f24_arg2, f24_arg1, false )
+		SendClientScriptMenuChangeNotify( controller, menu, false )
 		return true
-	end, function ( f25_arg0, f25_arg1, f25_arg2 )
-		CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, true )
 	self.__on_menuOpened_self = function ( f26_arg0, f26_arg1, f26_arg2, f26_arg3 )
@@ -298,7 +298,7 @@ LUI.createMenu.ZMTalismanSelect = function ( f1_arg0, f1_arg1 )
 		PostLoadFunc( self, f1_arg0 )
 	end
 	local f1_local10 = self
-	CoD.BaseUtility.SetMenuSessionMode( f1_local1, Enum.eModes[0x3723205FAE52C4A] )
+	CoD.BaseUtility.SetMenuSessionMode( f1_local1, Enum.eModes.mode_zombies )
 	f1_local10 = selectionList
 	if IsPC() then
 		CoD.PCWidgetUtility.SetupContextualMenu( f1_local10, f1_arg0, "displayName", "", "" )

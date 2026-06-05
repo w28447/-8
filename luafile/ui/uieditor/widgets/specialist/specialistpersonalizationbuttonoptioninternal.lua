@@ -81,7 +81,7 @@ CoD.SpecialistPersonalizationButtonOptionInternal.new = function ( f1_arg0, f1_a
 	
 	local Header = LUI.UIText.new( 0, 0, 20, 200, 0.5, 0.5, -12, 12 )
 	Header:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	Header:setText( LocalizeToUpperString( 0x0 ) )
+	Header:setText( LocalizeToUpperString( "" ) )
 	Header:setTTF( "ttmussels_demibold" )
 	Header:setLetterSpacing( 4 )
 	Header:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

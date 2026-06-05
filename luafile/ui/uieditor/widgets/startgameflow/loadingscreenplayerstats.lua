@@ -118,21 +118,21 @@ CoD.LoadingScreenPlayerStats.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local Arrow = LUI.UIImage.new( 0, 0, 66.5, 86.5, 0, 0, -5, 15 )
 	Arrow:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	Arrow:setAlpha( 0.7 )
-	Arrow:setImage( RegisterImage( 0xCF17BCD1C7BB254 ) )
+	Arrow:setImage( RegisterImage( "uie_ui_loadscreen_arrow" ) )
 	self:addElement( Arrow )
 	self.Arrow = Arrow
 	
 	local Image = LUI.UIImage.new( 0, 0, 222.5, 242.5, 0, 0, -5, 15 )
 	Image:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	Image:setAlpha( 0.7 )
-	Image:setImage( RegisterImage( 0xCF17BCD1C7BB254 ) )
+	Image:setImage( RegisterImage( "uie_ui_loadscreen_arrow" ) )
 	self:addElement( Image )
 	self.Image = Image
 	
 	local Image2 = LUI.UIImage.new( 0, 0, 378.5, 398.5, 0, 0, -5, 15 )
 	Image2:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
 	Image2:setAlpha( 0.7 )
-	Image2:setImage( RegisterImage( 0xCF17BCD1C7BB254 ) )
+	Image2:setImage( RegisterImage( "uie_ui_loadscreen_arrow" ) )
 	self:addElement( Image2 )
 	self.Image2 = Image2
 	

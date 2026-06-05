@@ -31,7 +31,7 @@ CoD.directorArenaPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local Header = CoD.DirectorScreenHeader.new( f1_arg0, f1_arg1, 0.5, 0.5, -870, -227, 0, 0, 301, 401 )
 	Header:setAlpha( 0 )
 	Header:setZoom( 75 )
-	Header.Header:setText( LocalizeToUpperString( 0x56CB4013028D74E ) )
+	Header.Header:setText( LocalizeToUpperString( "menu/local" ) )
 	self:addElement( Header )
 	self.Header = Header
 	
@@ -160,8 +160,8 @@ CoD.directorArenaPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 			modelName = "offlineScreenState"
 		} )
 	end, false )
-	FindMatchButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( 0xA14B986BB3C650A ) )
-	FindMatchButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( 0xA14B986BB3C650A ) )
+	FindMatchButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( "menu/find_match" ) )
+	FindMatchButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( "menu/find_match" ) )
 	CompetitiveOverviewRankBanner = FindMatchButton
 	DirectorLobbyPoseMembers = FindMatchButton.subscribeToModel
 	LeagueEventEndDelayMessageTitle = Engine.GetGlobalModel()
@@ -202,24 +202,24 @@ CoD.directorArenaPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f19_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( FindMatchButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
-		if IsPartyLeader( f20_arg2 ) and not CoD.ArenaLeaguePlayUtility.ForceCheckLeaverLockoutActive() and not CoD.DirectorUtility.IsNumClientsExceeded( f20_arg2 ) then
-			CoD.DirectorUtility.NavigateToArenaMatchmakingLobby( self, f20_arg1, f20_arg2, f20_arg0 )
+	f1_arg0:AddButtonCallbackFunction( FindMatchButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsPartyLeader( controller ) and not CoD.ArenaLeaguePlayUtility.ForceCheckLeaverLockoutActive() and not CoD.DirectorUtility.IsNumClientsExceeded( controller ) then
+			CoD.DirectorUtility.NavigateToArenaMatchmakingLobby( self, menu, controller, element )
 			PlaySoundAlias( "uin_press_generic" )
 			return true
-		elseif IsPartyLeader( f20_arg2 ) and CoD.DirectorUtility.IsNumClientsExceeded( f20_arg2 ) then
+		elseif IsPartyLeader( controller ) and CoD.DirectorUtility.IsNumClientsExceeded( controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.DirectorUtility.OpenTooManyClientsPopup( self, f20_arg2 )
+			CoD.DirectorUtility.OpenTooManyClientsPopup( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f21_arg0, f21_arg1, f21_arg2 )
-		if IsPartyLeader( f21_arg2 ) and not CoD.ArenaLeaguePlayUtility.ForceCheckLeaverLockoutActive() and not CoD.DirectorUtility.IsNumClientsExceeded( f21_arg2 ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsPartyLeader( controller ) and not CoD.ArenaLeaguePlayUtility.ForceCheckLeaverLockoutActive() and not CoD.DirectorUtility.IsNumClientsExceeded( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif IsPartyLeader( f21_arg2 ) and CoD.DirectorUtility.IsNumClientsExceeded( f21_arg2 ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif IsPartyLeader( controller ) and CoD.DirectorUtility.IsNumClientsExceeded( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -354,13 +354,13 @@ CoD.directorArenaPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		} )
 	end, false )
 	CustomGamesButton.DirectorSelectButtonMiniInternal.MiddleText.__MiddleText_StringReference = function ()
-		CustomGamesButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( CoD.DirectorUtility.GetCustomGamesName( 0x85D9C7D7DDC8EE0 ) ) )
+		CustomGamesButton.DirectorSelectButtonMiniInternal.MiddleText:setText( LocalizeToUpperString( CoD.DirectorUtility.GetCustomGamesName( "menu/custom_games" ) ) )
 	end
 	
 	CustomGamesButton.DirectorSelectButtonMiniInternal.MiddleText.__MiddleText_StringReference()
 	CustomGamesButton.DirectorSelectButtonMiniInternal.MiddleText:setTTF( "ttmussels_regular" )
 	CustomGamesButton.DirectorSelectButtonMiniInternal.MiddleTextFocus.__MiddleTextFocus_String = function ()
-		CustomGamesButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( CoD.DirectorUtility.GetCustomGamesName( 0x85D9C7D7DDC8EE0 ) ) )
+		CustomGamesButton.DirectorSelectButtonMiniInternal.MiddleTextFocus:setText( LocalizeToUpperString( CoD.DirectorUtility.GetCustomGamesName( "menu/custom_games" ) ) )
 	end
 	
 	CustomGamesButton.DirectorSelectButtonMiniInternal.MiddleTextFocus.__MiddleTextFocus_String()
@@ -375,19 +375,19 @@ CoD.directorArenaPregame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f36_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( CustomGamesButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f37_arg0, f37_arg1, f37_arg2, f37_arg3 )
+	f1_arg0:AddButtonCallbackFunction( CustomGamesButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsPC() then
 			PlaySoundAlias( "uin_press_generic" )
-			OpenCustomGamesLobby( f37_arg1, f37_arg2 )
+			OpenCustomGamesLobby( menu, controller )
 			return true
 		else
 			PlaySoundAlias( "uin_press_generic" )
-			OpenSystemOverlay( self, f37_arg1, f37_arg2, "CustomGamesNotification" )
-			SetLoseFocusToSelf( self, f37_arg2 )
+			OpenSystemOverlay( self, menu, controller, "CustomGamesNotification" )
+			SetLoseFocusToSelf( self, controller )
 			return true
 		end
-	end, function ( f38_arg0, f38_arg1, f38_arg2 )
-		CoD.Menu.SetButtonLabel( f38_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( CustomGamesButton )

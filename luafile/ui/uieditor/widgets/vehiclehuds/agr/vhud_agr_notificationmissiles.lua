@@ -85,7 +85,7 @@ CoD.vhud_agr_NotificationMissiles.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local Bar = LUI.UIImage.new( 0.5, 0.5, -28, 28, 0.5, 0.5, 36, 43 )
 	Bar:setRGB( 0.74, 0.99, 0.84 )
 	Bar:setYRot( 130 )
-	Bar:setImage( RegisterImage( 0x5534C48D872A06A ) )
+	Bar:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_timebar" ) )
 	Bar:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Bar )
 	self.Bar = Bar
@@ -93,7 +93,7 @@ CoD.vhud_agr_NotificationMissiles.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local solidbar = LUI.UIImage.new( 0.5, 0.5, -28, 28, 0.5, 0.5, 36, 43 )
 	solidbar:setRGB( 0.74, 0.99, 0.84 )
 	solidbar:setYRot( -50 )
-	solidbar:setImage( RegisterImage( 0x7EA3B14064D93ED ) )
+	solidbar:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_mothership_timebarsolid" ) )
 	solidbar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	solidbar:setShaderVector( 1, 0, 0, 0, 0 )
 	solidbar:setShaderVector( 2, 1, 0, 0, 0 )

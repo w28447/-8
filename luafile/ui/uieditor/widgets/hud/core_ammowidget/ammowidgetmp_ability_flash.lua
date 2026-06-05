@@ -17,7 +17,7 @@ CoD.AmmoWidgetMP_Ability_Flash.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	Backing:setRGB( 0.89, 0.89, 0.89 )
 	Backing:setAlpha( 0 )
 	Backing:setZRot( 180 )
-	Backing:setImage( RegisterImage( 0x7B36897EA2EA839 ) )
+	Backing:setImage( RegisterImage( "uie_hud_common_core_ammo_panelcenter" ) )
 	Backing:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Backing )
 	self.Backing = Backing
@@ -25,7 +25,7 @@ CoD.AmmoWidgetMP_Ability_Flash.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local scanline = LUI.UIImage.new( 0, 0, -1, 65, 0, 0, 20, 48 )
 	scanline:setRGB( 0.8, 0.8, 0.8 )
 	scanline:setAlpha( 0 )
-	scanline:setImage( RegisterImage( 0xB905E625E84E15 ) )
+	scanline:setImage( RegisterImage( "uie_hud_common_core_ammo_scanline" ) )
 	scanline:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( scanline )
 	self.scanline = scanline

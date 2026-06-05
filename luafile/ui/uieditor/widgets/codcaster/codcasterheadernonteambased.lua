@@ -39,43 +39,43 @@ CoD.CodCasterHeaderNonTeamBased.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local modeBG0 = LUI.UIImage.new( 0.5, 0.5, -453, 455, 0, 0, 3, 400 )
 	modeBG0:setAlpha( 0 )
-	modeBG0:setImage( RegisterImage( 0x76B8113FB0F8790 ) )
+	modeBG0:setImage( RegisterImage( "uie_t7_codcaster_centerheader_ffa" ) )
 	self:addElement( modeBG0 )
 	self.modeBG0 = modeBG0
 	
 	local leftBG0000 = LUI.UIImage.new( 0, 0, 57, 327, 0, 0, 169, 203 )
 	leftBG0000:setAlpha( 0 )
-	leftBG0000:setImage( RegisterImage( 0xC5054EE4529339A ) )
+	leftBG0000:setImage( RegisterImage( "uie_t7_codcaster_gamemodebacking" ) )
 	self:addElement( leftBG0000 )
 	self.leftBG0000 = leftBG0000
 	
 	local modeBG = LUI.UIImage.new( 0.5, 0.5, -453, 455, 0, 0, 3, 400 )
 	modeBG:setAlpha( 0 )
-	modeBG:setImage( RegisterImage( 0x76B8113FB0F8790 ) )
+	modeBG:setImage( RegisterImage( "uie_t7_codcaster_centerheader_ffa" ) )
 	self:addElement( modeBG )
 	self.modeBG = modeBG
 	
 	local modeBG1 = LUI.UIImage.new( 0.5, 0.5, -453, 455, 0, 0, 3, 400 )
 	modeBG1:setAlpha( 0 )
-	modeBG1:setImage( RegisterImage( 0x76B8113FB0F8790 ) )
+	modeBG1:setImage( RegisterImage( "uie_t7_codcaster_centerheader_ffa" ) )
 	self:addElement( modeBG1 )
 	self.modeBG1 = modeBG1
 	
 	local leftBG000 = LUI.UIImage.new( 0, 0, 338, 608, 0, 0, 167, 201 )
 	leftBG000:setAlpha( 0 )
-	leftBG000:setImage( RegisterImage( 0xC5054EE4529339A ) )
+	leftBG000:setImage( RegisterImage( "uie_t7_codcaster_gamemodebacking" ) )
 	self:addElement( leftBG000 )
 	self.leftBG000 = leftBG000
 	
 	local leftBG00 = LUI.UIImage.new( 0, 0, 612, 882, 0, 0, 167, 201 )
 	leftBG00:setAlpha( 0 )
-	leftBG00:setImage( RegisterImage( 0xC5054EE4529339A ) )
+	leftBG00:setImage( RegisterImage( "uie_t7_codcaster_gamemodebacking" ) )
 	self:addElement( leftBG00 )
 	self.leftBG00 = leftBG00
 	
 	local light = LUI.UIImage.new( 0, 0, 213, 678, 0, 0, 0, 238 )
 	light:setAlpha( 0.35 )
-	light:setImage( RegisterImage( 0x1D4A7822C00BEC4 ) )
+	light:setImage( RegisterImage( "uie_t7_codcaster_light" ) )
 	light:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( light )
 	self.light = light
@@ -138,7 +138,7 @@ CoD.CodCasterHeaderNonTeamBased.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local widgetSelfName = LUI.UIText.new( 0, 0, 638, 860, 0, 0, 172.5, 209.5 )
 	widgetSelfName:setAlpha( 0 )
-	widgetSelfName:setText( Engine[0xF9F1239CFD921FE]( 0x3749AB36B85056D ) )
+	widgetSelfName:setText( Engine[0xF9F1239CFD921FE]( "menu/playername" ) )
 	widgetSelfName:setTTF( "ttmussels_demibold" )
 	widgetSelfName:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	widgetSelfName:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

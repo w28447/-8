@@ -93,11 +93,11 @@ CoD.PCSocialMenu_PlayerListItem_PlayerInfos.new = function ( f1_arg0, f1_arg1, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f6_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( BTN_Accept, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		CoD.PCUtility.AcceptFriendRequest( self, f7_arg2 )
+	f1_arg0:AddButtonCallbackFunction( BTN_Accept, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.PCUtility.AcceptFriendRequest( self, controller )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( BTN_Accept )
@@ -118,28 +118,28 @@ CoD.PCSocialMenu_PlayerListItem_PlayerInfos.new = function ( f1_arg0, f1_arg1, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f10_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( BTN_Remove, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( self, f11_arg2, "inviteStatus", CoD.PCWidgetUtility.SocialInviteStatus.IN_PARTY ) then
-			CoD.PCUtility.RemoveFriend( self, f11_arg2 )
+	f1_arg0:AddButtonCallbackFunction( BTN_Remove, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( self, controller, "inviteStatus", CoD.PCWidgetUtility.SocialInviteStatus.IN_PARTY ) then
+			CoD.PCUtility.RemoveFriend( self, controller )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( self, f11_arg2, "inviteStatus", CoD.PCWidgetUtility.SocialInviteStatus.PENDING ) then
-			CoD.PCUtility.RevokeSentFriendRequest( self, f11_arg2 )
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( self, controller, "inviteStatus", CoD.PCWidgetUtility.SocialInviteStatus.PENDING ) then
+			CoD.PCUtility.RevokeSentFriendRequest( self, controller )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( self, f11_arg2, "inviteStatus", CoD.PCWidgetUtility.SocialInviteStatus.RECEIVED ) then
-			CoD.PCUtility.IgnoreFriendRequest( self, f11_arg2 )
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( self, controller, "inviteStatus", CoD.PCWidgetUtility.SocialInviteStatus.RECEIVED ) then
+			CoD.PCUtility.IgnoreFriendRequest( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( self, f12_arg2, "inviteStatus", CoD.PCWidgetUtility.SocialInviteStatus.IN_PARTY ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( self, controller, "inviteStatus", CoD.PCWidgetUtility.SocialInviteStatus.IN_PARTY ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( self, f12_arg2, "inviteStatus", CoD.PCWidgetUtility.SocialInviteStatus.PENDING ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( self, controller, "inviteStatus", CoD.PCWidgetUtility.SocialInviteStatus.PENDING ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( self, f12_arg2, "inviteStatus", CoD.PCWidgetUtility.SocialInviteStatus.RECEIVED ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( self, controller, "inviteStatus", CoD.PCWidgetUtility.SocialInviteStatus.RECEIVED ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -177,11 +177,11 @@ CoD.PCSocialMenu_PlayerListItem_PlayerInfos.new = function ( f1_arg0, f1_arg1, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f13_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( BTNInviteToParty, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
-		LobbyInviteFriendByXuid( self, self, f14_arg2 )
+	f1_arg0:AddButtonCallbackFunction( BTNInviteToParty, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		LobbyInviteFriendByXuid( self, self, controller )
 		return true
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( BTNInviteToParty )
@@ -199,11 +199,11 @@ CoD.PCSocialMenu_PlayerListItem_PlayerInfos.new = function ( f1_arg0, f1_arg1, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f16_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( BTNCancelPartyInvite, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		CancelPartyInvite( self, self, f17_arg2 )
+	f1_arg0:AddButtonCallbackFunction( BTNCancelPartyInvite, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CancelPartyInvite( self, self, controller )
 		return true
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( BTNCancelPartyInvite )
@@ -221,11 +221,11 @@ CoD.PCSocialMenu_PlayerListItem_PlayerInfos.new = function ( f1_arg0, f1_arg1, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f19_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( BTNAcceptInviteToParty, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
-		LobbyQuickJoin( f20_arg1, self, self, f20_arg2, Enum.JoinType["join_type_friend"], true )
+	f1_arg0:AddButtonCallbackFunction( BTNAcceptInviteToParty, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		LobbyQuickJoin( menu, self, self, controller, Enum.jointype.join_type_friend, true )
 		return true
-	end, function ( f21_arg0, f21_arg1, f21_arg2 )
-		CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( BTNAcceptInviteToParty )

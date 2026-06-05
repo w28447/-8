@@ -1,4 +1,4 @@
-require( "ui/uieditor/widgets/common/CommonPixelBacking" )
+require( "ui/uieditor/widgets/common/commonpixelbacking" )
 require( "ui/uieditor/widgets/commonbuttonoutline" )
 require( "ui/uieditor/widgets/notifications/xp/doublexpcardiconsleftaligned" )
 
@@ -49,7 +49,7 @@ CoD.DirectorPlaylistOptionInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local Highlight = LUI.UIImage.new( 0, 1, -52, 52, 0, 1, -60, 60 )
 	Highlight:setAlpha( 0.03 )
-	Highlight:setImage( RegisterImage( 0xC9205D0D378F108 ) )
+	Highlight:setImage( RegisterImage( "uie_ui_menu_common_focus_fill_small" ) )
 	Highlight:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDAB59B2CAE01851 ) )
 	Highlight:setShaderVector( 0, 0, 0, 0, 0.25 )
 	Highlight:setShaderVector( 1, 1, 0, 0, 0 )
@@ -201,7 +201,7 @@ CoD.DirectorPlaylistOptionInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local upsellIcon = LUI.UIText.new( 0.5, 0.5, -100, 100, 0.5, 0.5, -35.5, 36.5 )
 	upsellIcon:setAlpha( 0 )
-	upsellIcon:setText( Engine[0xF9F1239CFD921FE]( 0xCFD524E10472BF8 ) )
+	upsellIcon:setText( Engine[0xF9F1239CFD921FE]( "menu/purchase_icon" ) )
 	upsellIcon:setTTF( "default" )
 	upsellIcon:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	upsellIcon:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -210,7 +210,7 @@ CoD.DirectorPlaylistOptionInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	
 	local downloadIcon = LUI.UIImage.new( 0, 0, 289, 369, 1, 1, -104, -24 )
 	downloadIcon:setAlpha( 0 )
-	downloadIcon:setImage( RegisterImage( 0x9D993738EE5B550 ) )
+	downloadIcon:setImage( RegisterImage( "t7_icon_menu_options_download" ) )
 	self:addElement( downloadIcon )
 	self.downloadIcon = downloadIcon
 	

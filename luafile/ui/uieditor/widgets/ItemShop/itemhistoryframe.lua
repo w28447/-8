@@ -65,51 +65,51 @@ CoD.ItemHistoryFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f4_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( HistoryList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( f5_arg0, f5_arg2, "lootType", LuaEnum.LOOT_TYPE.CONTRACT ) then
-			CoD.BlackMarketUtility.PlayItemShopSelectSound( f5_arg0, f5_arg2 )
-			CoD.ContractUtility.OpenContractDetails( self, f5_arg0, f5_arg2 )
+	f1_arg0:AddButtonCallbackFunction( HistoryList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lootType", LuaEnum.LOOT_TYPE.CONTRACT ) then
+			CoD.BlackMarketUtility.PlayItemShopSelectSound( element, controller )
+			CoD.ContractUtility.OpenContractDetails( self, element, controller )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f5_arg0, f5_arg2, "lootType", LuaEnum.LOOT_TYPE.ITEMSHOP ) then
-			CoD.BlackMarketUtility.PlayItemShopSelectSound( f5_arg0, f5_arg2 )
-			OpenOverlay( self, "ItemShopDetails", f5_arg2, {
-				_model = f5_arg0:getModel()
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lootType", LuaEnum.LOOT_TYPE.ITEMSHOP ) then
+			CoD.BlackMarketUtility.PlayItemShopSelectSound( element, controller )
+			OpenOverlay( self, "ItemShopDetails", controller, {
+				_model = element:getModel()
 			} )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( f6_arg0, f6_arg2, "lootType", LuaEnum.LOOT_TYPE.CONTRACT ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9C695BAD15F589A, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lootType", LuaEnum.LOOT_TYPE.CONTRACT ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0x9C695BAD15F589A, nil, nil )
 			return true
-		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( f6_arg0, f6_arg2, "lootType", LuaEnum.LOOT_TYPE.ITEMSHOP ) then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x9C695BAD15F589A, nil, nil )
+		elseif CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lootType", LuaEnum.LOOT_TYPE.ITEMSHOP ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], 0x9C695BAD15F589A, nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( HistoryList, f1_arg1, Enum.LUIButton[0x4B11D2B20C75A7F], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
+	f1_arg0:AddButtonCallbackFunction( HistoryList, f1_arg1, Enum.LUIButton[0x4B11D2B20C75A7F], nil, function ( element, menu, controller, model )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x4B11D2B20C75A7F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4B11D2B20C75A7F], "", nil, nil )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( HistoryList, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELUP", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
+	f1_arg0:AddButtonCallbackFunction( HistoryList, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELUP", function ( element, menu, controller, model )
 		CoD.GridAndListUtility.ScrollLeft( self.HistoryList )
 		CoD.GridAndListUtility.ValidateActiveItemVisibility( self.HistoryList )
 		return true
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MWHEELUP" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MWHEELUP" )
 		return false
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( HistoryList, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELDOWN", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
+	f1_arg0:AddButtonCallbackFunction( HistoryList, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELDOWN", function ( element, menu, controller, model )
 		CoD.GridAndListUtility.ScrollRight( self.HistoryList )
 		CoD.GridAndListUtility.ValidateActiveItemVisibility( self.HistoryList )
 		return true
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MWHEELDOWN" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MWHEELDOWN" )
 		return false
 	end, false )
 	self:addElement( HistoryList )

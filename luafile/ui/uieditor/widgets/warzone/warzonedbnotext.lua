@@ -10,7 +10,7 @@ CoD.WarzoneDBNOText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local DeathCamLabel2 = LUI.UIText.new( 0.5, 0.5, -661.5, 661.5, 0.5, 0.5, -41, 49 )
 	DeathCamLabel2:setRGB( 1, 0.9, 0.9 )
-	DeathCamLabel2:setText( LocalizeToUpperString( 0xC50DE254023889B ) )
+	DeathCamLabel2:setText( LocalizeToUpperString( "wz/downbutnotout" ) )
 	DeathCamLabel2:setTTF( "ttmussels_demibold" )
 	DeathCamLabel2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	DeathCamLabel2:setShaderVector( 0, 1, 0, 0, 0 )
@@ -46,7 +46,7 @@ end
 
 CoD.WarzoneDBNOText.__resetProperties = function ( f4_arg0 )
 	f4_arg0.DeathCamLabel2:completeAnimation()
-	f4_arg0.DeathCamLabel2:setText( LocalizeToUpperString( 0xC50DE254023889B ) )
+	f4_arg0.DeathCamLabel2:setText( LocalizeToUpperString( "wz/downbutnotout" ) )
 end
 
 CoD.WarzoneDBNOText.__clipsPerState = {
@@ -61,7 +61,7 @@ CoD.WarzoneDBNOText.__clipsPerState = {
 			f6_arg0:__resetProperties()
 			f6_arg0:setupElementClipCounter( 1 )
 			f6_arg0.DeathCamLabel2:completeAnimation()
-			f6_arg0.DeathCamLabel2:setText( LocalizeToUpperString( 0x5E4BEAF2F4B166A ) )
+			f6_arg0.DeathCamLabel2:setText( LocalizeToUpperString( "wz/pandemic_dbno" ) )
 			f6_arg0.clipFinished( f6_arg0.DeathCamLabel2 )
 		end
 	},

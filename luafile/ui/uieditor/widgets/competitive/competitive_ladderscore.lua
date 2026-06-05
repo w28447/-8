@@ -20,7 +20,7 @@ CoD.Competitive_ladderScore.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local PLUS = LUI.UIText.new( 0, 0, 3, 63, 0.5, 0.5, -52.5, 52.5 )
 	PLUS:setRGB( ColorSet.SelectedGreen.r, ColorSet.SelectedGreen.g, ColorSet.SelectedGreen.b )
 	PLUS:setScale( 1.25, 1.25 )
-	PLUS:setText( Engine[0xF9F1239CFD921FE]( 0x79FAB66208B3145 ) )
+	PLUS:setText( Engine[0xF9F1239CFD921FE]( "mp/plus" ) )
 	PLUS:setTTF( "0arame_mono_stencil" )
 	PLUS:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	PLUS:setAlignment( Engine[0x7F8853DC3581AA4]( Enum.LUIAlignment[0xFEEB12BCB0D7041] ) )

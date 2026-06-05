@@ -118,16 +118,16 @@ LUI.createMenu.EmpRebootIndicator = function ( f3_arg0, f3_arg1 )
 			modelName = "hudItems.killCamHideEmpReboot"
 		} )
 	end, false )
-	self:registerEventHandler( "menu_loaded", function ( element, event )
+	self:registerEventHandler( "menu_loaded", function ( self, event )
 		local f11_local0 = nil
-		if element.menuLoaded then
-			f11_local0 = element:menuLoaded( event )
-		elseif element.super.menuLoaded then
-			f11_local0 = element.super:menuLoaded( event )
+		if self.menuLoaded then
+			f11_local0 = self:menuLoaded( event )
+		elseif self.super.menuLoaded then
+			f11_local0 = self.super:menuLoaded( event )
 		end
 		PlayClip( self, "Boot", f3_arg0 )
 		if not f11_local0 then
-			f11_local0 = element:dispatchEventToChildren( event )
+			f11_local0 = self:dispatchEventToChildren( event )
 		end
 		return f11_local0
 	end )

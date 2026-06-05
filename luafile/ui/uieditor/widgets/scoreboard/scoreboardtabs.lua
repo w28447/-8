@@ -56,7 +56,7 @@ CoD.ScoreboardTabs.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 			modelName = "LastInput"
 		} )
 	end, false )
-	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBFED5292621DA9A ) )
+	RB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/rb" ) )
 	RB.KeyPrompt.keybind:setText( CoD.BaseUtility.AlreadyLocalized( "E" ) )
 	self:addElement( RB )
 	self.RB = RB
@@ -86,7 +86,7 @@ CoD.ScoreboardTabs.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 			modelName = "LastInput"
 		} )
 	end, false )
-	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( 0xBDCD5292604F434 ) )
+	LB.GamepadPrompt:setText( Engine[0xF9F1239CFD921FE]( "groups/lb" ) )
 	LB.KeyPrompt.keybind:setText( CoD.BaseUtility.AlreadyLocalized( "Q" ) )
 	self:addElement( LB )
 	self.LB = LB

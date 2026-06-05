@@ -62,7 +62,7 @@ CoD.DirectorCODCasterMemberInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local PixelGrid = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	PixelGrid:setAlpha( 0.05 )
-	PixelGrid:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGrid:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	PixelGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGrid:setupNineSliceShader( 128, 128 )
@@ -112,7 +112,7 @@ CoD.DirectorCODCasterMemberInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local EmptyText = LUI.UIText.new( 0, 0.5, 86, 86, 0.5, 0.5, -11, 11 )
 	EmptyText:setRGB( 0.33, 0.3, 0.25 )
 	EmptyText:setAlpha( 0 )
-	EmptyText:setText( Engine[0xF9F1239CFD921FE]( 0x6ADB318F8178FC ) )
+	EmptyText:setText( Engine[0xF9F1239CFD921FE]( "menu/empty_caps" ) )
 	EmptyText:setTTF( "ttmussels_regular" )
 	EmptyText:setLetterSpacing( 10 )
 	EmptyText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -124,7 +124,7 @@ CoD.DirectorCODCasterMemberInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	ButtonAddPlus = LUI.UIImage.new( 1, 1, -64, -20, 0.5, 0.5, -22, 22 )
 	ButtonAddPlus:setAlpha( 0 )
-	ButtonAddPlus:setImage( RegisterImage( 0x5C627FDA784DE0D ) )
+	ButtonAddPlus:setImage( RegisterImage( "uie_ui_menu_cac_button_add_plus" ) )
 	self:addElement( ButtonAddPlus )
 	self.ButtonAddPlus = ButtonAddPlus
 	
@@ -132,7 +132,7 @@ CoD.DirectorCODCasterMemberInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	ButtonAddPlusHighlighted = LUI.UIImage.new( 1, 1, -64, -20, 0.5, 0.5, -22, 22 )
 	ButtonAddPlusHighlighted:setAlpha( 0 )
-	ButtonAddPlusHighlighted:setImage( RegisterImage( 0x63E82F3B2442EBB ) )
+	ButtonAddPlusHighlighted:setImage( RegisterImage( "uie_ui_menu_cac_button_add_plus_highlighted" ) )
 	ButtonAddPlusHighlighted:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ButtonAddPlusHighlighted )
 	self.ButtonAddPlusHighlighted = ButtonAddPlusHighlighted

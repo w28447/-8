@@ -17,7 +17,7 @@ CoD.ItemShopRarityBackgroundStream_Ultra.new = function ( f1_arg0, f1_arg1, f1_a
 	self.NoiseTiledBacking = NoiseTiledBacking
 	
 	local CommonOuterGlow = LUI.UIImage.new( 0, 1, -11, 11, 0, 1, -12, 12 )
-	CommonOuterGlow:setImage( RegisterImage( 0xAE13B63B2001396 ) )
+	CommonOuterGlow:setImage( RegisterImage( "uie_ui_menu_common_outer_glow01" ) )
 	CommonOuterGlow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	CommonOuterGlow:setShaderVector( 0, 0, 0, 0, 0 )
 	CommonOuterGlow:setupNineSliceShader( 32, 32 )
@@ -43,7 +43,7 @@ CoD.ItemShopRarityBackgroundStream_Ultra.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local BGPatternThin = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BGPatternThin:setAlpha( 0.3 )
-	BGPatternThin:setImage( RegisterImage( 0xC740F3CC5928DAB ) )
+	BGPatternThin:setImage( RegisterImage( "uie_ui_menu_common_mtx_button_bg_ultra_thin" ) )
 	BGPatternThin:setMaterial( LUI.UIImage.GetCachedMaterial( 0xC221B51E4063E3D ) )
 	BGPatternThin:setShaderVector( 0, 0, 0, 0, 0 )
 	BGPatternThin:setShaderVector( 1, 1, 1, 0, 0 )
@@ -71,7 +71,7 @@ CoD.ItemShopRarityBackgroundStream_Ultra.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local Gradient = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Gradient:setRGB( 0, 0, 0 )
-	Gradient:setImage( RegisterImage( 0x8F71B593239CEE7 ) )
+	Gradient:setImage( RegisterImage( "uie_ui_menu_blackmarket_radial_glow" ) )
 	self:addElement( Gradient )
 	self.Gradient = Gradient
 	

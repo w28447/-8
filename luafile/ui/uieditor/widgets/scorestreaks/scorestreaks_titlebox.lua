@@ -17,14 +17,14 @@ CoD.scorestreaks_TitleBox.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local Glow = LUI.UIImage.new( 0, 1, -81, 73, 0.5, 0.5, -45, 65 )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0x1078C36A022A4FE ) )
+	Glow:setImage( RegisterImage( "uie_t7_menu_cac_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Glow )
 	self.Glow = Glow
 	
 	local ScorestreaksLabel = LUI.UIText.new( 0, 0, 0, 674, 0.5, 0.5, -25.5, 10.5 )
 	ScorestreaksLabel:setRGB( 0.96, 0.93, 0.84 )
-	ScorestreaksLabel:setText( LocalizeToUpperString( LocalizeIntoString( 0x0, 0x0 ) ) )
+	ScorestreaksLabel:setText( LocalizeToUpperString( LocalizeIntoString( "", "" ) ) )
 	ScorestreaksLabel:setTTF( "ttmussels_regular" )
 	ScorestreaksLabel:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	ScorestreaksLabel:setShaderVector( 0, 0.06, 0, 0, 0 )

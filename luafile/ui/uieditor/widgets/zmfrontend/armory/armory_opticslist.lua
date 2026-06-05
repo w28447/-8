@@ -31,7 +31,7 @@ CoD.Armory_OpticsList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local OpticsHeader = LUI.UIText.new( 0.5, 0.5, -192.5, 192.5, 0, 0, -8, 10 )
 	OpticsHeader:setRGB( 0.39, 0.39, 0.39 )
-	OpticsHeader:setText( Engine[0xF9F1239CFD921FE]( 0xBB87386985BA15F ) )
+	OpticsHeader:setText( Engine[0xF9F1239CFD921FE]( "mpui/optics_caps" ) )
 	OpticsHeader:setTTF( "ttmussels_demibold" )
 	OpticsHeader:setLetterSpacing( 4 )
 	OpticsHeader:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -116,93 +116,93 @@ CoD.Armory_OpticsList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0xA86619565BE54DB] )
 		return f10_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( Optics, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		if not IsListElementChildInState( f11_arg0, "AttachmentSlot", "NotAvailable" ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( f11_arg1, f11_arg0, f11_arg2 ) and not CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f11_arg0, f11_arg2, f11_arg1 ) and not CoD.ZMLoadoutUtility.IsArmoryAnyOpticAttachmentEquipped( f11_arg2, f11_arg1 ) then
-			CoD.ZMLoadoutUtility.EquipArmoryElementAttachment( f11_arg0, f11_arg2, f11_arg1 )
+	f1_arg0:AddButtonCallbackFunction( Optics, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not IsListElementChildInState( element, "AttachmentSlot", "NotAvailable" ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( menu, element, controller ) and not CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) and not CoD.ZMLoadoutUtility.IsArmoryAnyOpticAttachmentEquipped( controller, menu ) then
+			CoD.ZMLoadoutUtility.EquipArmoryElementAttachment( element, controller, menu )
 			PlaySoundAlias( "uin_cac_attach_base" )
 			return true
-		elseif IsPC() and not IsListElementChildInState( f11_arg0, "AttachmentSlot", "NotAvailable" ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( f11_arg1, f11_arg0, f11_arg2 ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f11_arg0, f11_arg2, f11_arg1 ) then
-			CoD.ZMLoadoutUtility.ToggleArmoryElementAttachment( f11_arg0, f11_arg2, f11_arg1 )
+		elseif IsPC() and not IsListElementChildInState( element, "AttachmentSlot", "NotAvailable" ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( menu, element, controller ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) then
+			CoD.ZMLoadoutUtility.ToggleArmoryElementAttachment( element, controller, menu )
 			return true
-		elseif IsPC() and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( f11_arg1, f11_arg0, f11_arg2 ) and not IsListElementChildInState( f11_arg0, "AttachmentSlot", "NotAvailable" ) then
-			CoD.ZMLoadoutUtility.ForceEquipArmoryOpticElementAttachment( f11_arg0, f11_arg2, f11_arg1 )
+		elseif IsPC() and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( menu, element, controller ) and not IsListElementChildInState( element, "AttachmentSlot", "NotAvailable" ) then
+			CoD.ZMLoadoutUtility.ForceEquipArmoryOpticElementAttachment( element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		if not IsListElementChildInState( f12_arg0, "AttachmentSlot", "NotAvailable" ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( f12_arg1, f12_arg0, f12_arg2 ) and not CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f12_arg0, f12_arg2, f12_arg1 ) and not CoD.ZMLoadoutUtility.IsArmoryAnyOpticAttachmentEquipped( f12_arg2, f12_arg1 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not IsListElementChildInState( element, "AttachmentSlot", "NotAvailable" ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( menu, element, controller ) and not CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) and not CoD.ZMLoadoutUtility.IsArmoryAnyOpticAttachmentEquipped( controller, menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif IsPC() and not IsListElementChildInState( f12_arg0, "AttachmentSlot", "NotAvailable" ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( f12_arg1, f12_arg0, f12_arg2 ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f12_arg0, f12_arg2, f12_arg1 ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif IsPC() and not IsListElementChildInState( element, "AttachmentSlot", "NotAvailable" ) and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( menu, element, controller ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
-		elseif IsPC() and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( f12_arg1, f12_arg0, f12_arg2 ) and not IsListElementChildInState( f12_arg0, "AttachmentSlot", "NotAvailable" ) then
-			CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif IsPC() and not CoD.ZMLoadoutUtility.IsArmoryAttachmentItemLocked( menu, element, controller ) and not IsListElementChildInState( element, "AttachmentSlot", "NotAvailable" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( Optics, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		if IsGamepad( f13_arg2 ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f13_arg0, f13_arg2, f13_arg1 ) then
-			CoD.ZMLoadoutUtility.RemoveArmoryElementAttachment( f13_arg0, f13_arg2, f13_arg1 )
+	f1_arg0:AddButtonCallbackFunction( Optics, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if IsGamepad( controller ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) then
+			CoD.ZMLoadoutUtility.RemoveArmoryElementAttachment( element, controller, menu )
 			PlaySoundAlias( "uin_cac_attach_remove" )
 			return true
 		else
 			
 		end
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		if IsGamepad( f14_arg2 ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f14_arg0, f14_arg2, f14_arg1 ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, nil, nil )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( Optics, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_remove", function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		if IsMouseOrKeyboard( f15_arg2 ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f15_arg0, f15_arg2, f15_arg1 ) then
-			CoD.ZMLoadoutUtility.RemoveArmoryElementAttachment( f15_arg0, f15_arg2, f15_arg1 )
+	f1_arg0:AddButtonCallbackFunction( Optics, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_remove", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) then
+			CoD.ZMLoadoutUtility.RemoveArmoryElementAttachment( element, controller, menu )
 			PlaySoundAlias( "uin_cac_attach_remove" )
 			return true
 		else
 			
 		end
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		if IsMouseOrKeyboard( f16_arg2 ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f16_arg0, f16_arg2, f16_arg1 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_remove" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_remove" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( Optics, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		if IsGamepad( f17_arg2 ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f17_arg0, f17_arg2, f17_arg1 ) and not IsListElementChildInState( f17_arg0, "AttachmentSlot", "NotAvailable" ) and IsBooleanDvarSet( "tu12_zmEnableReticleCustomization" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( f17_arg1, f17_arg0 ) then
-			CoD.CraftUtility.SetUpOpticPersonalization( f17_arg0, f17_arg2 )
-			CoD.CACUtility.OpenCACAttachmentOverlay( self, f17_arg0, f17_arg1, f17_arg2, "ReticleSelect", f17_arg0, "primary" )
+	f1_arg0:AddButtonCallbackFunction( Optics, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( element, menu, controller, model )
+		if IsGamepad( controller ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) and not IsListElementChildInState( element, "AttachmentSlot", "NotAvailable" ) and IsBooleanDvarSet( "tu12_zmEnableReticleCustomization" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( menu, element ) then
+			CoD.CraftUtility.SetUpOpticPersonalization( element, controller )
+			CoD.CACUtility.OpenCACAttachmentOverlay( self, element, menu, controller, "ReticleSelect", element, "primary" )
 			return true
 		else
 			
 		end
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		if IsGamepad( f18_arg2 ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f18_arg0, f18_arg2, f18_arg1 ) and not IsListElementChildInState( f18_arg0, "AttachmentSlot", "NotAvailable" ) and IsBooleanDvarSet( "tu12_zmEnableReticleCustomization" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( f18_arg1, f18_arg0 ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0xAFF37175F950D17, nil, nil )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) and not IsListElementChildInState( element, "AttachmentSlot", "NotAvailable" ) and IsBooleanDvarSet( "tu12_zmEnableReticleCustomization" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( menu, element ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "mpui/personalize", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( Optics, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_contextual_1", function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
-		if IsMouseOrKeyboard( f19_arg2 ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f19_arg0, f19_arg2, f19_arg1 ) and not IsListElementChildInState( f19_arg0, "AttachmentSlot", "NotAvailable" ) and IsBooleanDvarSet( "tu12_zmEnableReticleCustomization" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( f19_arg1, f19_arg0 ) then
-			CoD.CraftUtility.SetUpOpticPersonalization( f19_arg0, f19_arg2 )
-			CoD.CACUtility.OpenCACAttachmentOverlay( self, f19_arg0, f19_arg1, f19_arg2, "ReticleSelect", f19_arg0, "primary" )
+	f1_arg0:AddButtonCallbackFunction( Optics, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_contextual_1", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) and not IsListElementChildInState( element, "AttachmentSlot", "NotAvailable" ) and IsBooleanDvarSet( "tu12_zmEnableReticleCustomization" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( menu, element ) then
+			CoD.CraftUtility.SetUpOpticPersonalization( element, controller )
+			CoD.CACUtility.OpenCACAttachmentOverlay( self, element, menu, controller, "ReticleSelect", element, "primary" )
 			return true
 		else
 			
 		end
-	end, function ( f20_arg0, f20_arg1, f20_arg2 )
-		if IsMouseOrKeyboard( f20_arg2 ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f20_arg0, f20_arg2, f20_arg1 ) and not IsListElementChildInState( f20_arg0, "AttachmentSlot", "NotAvailable" ) and IsBooleanDvarSet( "tu12_zmEnableReticleCustomization" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( f20_arg1, f20_arg0 ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0xA86619565BE54DB], 0xAFF37175F950D17, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( element, controller, menu ) and not IsListElementChildInState( element, "AttachmentSlot", "NotAvailable" ) and IsBooleanDvarSet( "tu12_zmEnableReticleCustomization" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( menu, element ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xA86619565BE54DB], "mpui/personalize", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_contextual_1" )
 			return true
 		else
 			return false
@@ -214,7 +214,7 @@ CoD.Armory_OpticsList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 			CoD.ZMLoadoutUtility.UpdateArmoryAttachmentModel( f1_arg0, f21_local0, f1_arg1, true )
 		end
 	end )
-	Optics:AddContextualMenuAction( f1_arg0, f1_arg1, 0x679ACA6FFC6C8F3, function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
+	Optics:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/remove", function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
 		if CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f22_arg0, f22_arg2, f22_arg1 ) then
 			return function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
 				CoD.ZMLoadoutUtility.RemoveArmoryElementAttachment( f23_arg0, f23_arg2, f23_arg1 )
@@ -225,7 +225,7 @@ CoD.Armory_OpticsList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 			
 		end
 	end )
-	Optics:AddContextualMenuAction( f1_arg0, f1_arg1, 0xAFF37175F950D17, function ( f24_arg0, f24_arg1, f24_arg2, f24_arg3 )
+	Optics:AddContextualMenuAction( f1_arg0, f1_arg1, "mpui/personalize", function ( f24_arg0, f24_arg1, f24_arg2, f24_arg3 )
 		if CoD.ZMLoadoutUtility.IsArmoryElementAttachmentEquipped( f24_arg0, f24_arg2, f24_arg1 ) and not IsListElementChildInState( f24_arg0, "AttachmentSlot", "NotAvailable" ) and IsBooleanDvarSet( "tu12_zmEnableReticleCustomization" ) and CoD.CACUtility.IsAttachmentWithCustomReticle( f24_arg1, f24_arg0 ) then
 			return function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3 )
 				CoD.CraftUtility.SetUpOpticPersonalization( f25_arg0, f25_arg2 )

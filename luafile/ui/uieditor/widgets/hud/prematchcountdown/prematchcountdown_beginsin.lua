@@ -11,7 +11,7 @@ CoD.PrematchCountdown_BeginsIn.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local MatchText = LUI.UIText.new( 0.5, 0.5, -600, 600, 0.5, 0.5, -19.5, 19.5 )
 	MatchText:setAlpha( 0.95 )
-	MatchText:setText( LocalizeToUpperString( 0x8E58CC95DB34427 ) )
+	MatchText:setText( LocalizeToUpperString( "mp/match_starting_in" ) )
 	MatchText:setTTF( "ttmussels_regular" )
 	MatchText:setLetterSpacing( 3 )
 	MatchText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

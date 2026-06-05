@@ -11,7 +11,7 @@ CoD.vhud_turret_damageicon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	Line0:setRGB( 1, 0.83, 0.39 )
 	Line0:setAlpha( 0.2 )
 	Line0:setZoom( -50 )
-	Line0:setImage( RegisterImage( 0x753F952B3C143C2 ) )
+	Line0:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_turret_damageiconlinergb" ) )
 	Line0:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Line0 )
 	self.Line0 = Line0
@@ -35,7 +35,7 @@ CoD.vhud_turret_damageicon.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local Line = LUI.UIImage.new( 0.5, 0.5, -73, 74, 0.5, 0.5, -73, 74 )
 	Line:setRGB( 1, 0.83, 0.39 )
-	Line:setImage( RegisterImage( 0x753F952B3C143C2 ) )
+	Line:setImage( RegisterImage( "uie_t7_cp_hud_vehicle_turret_damageiconlinergb" ) )
 	Line:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Line )
 	self.Line = Line

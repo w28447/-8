@@ -52,7 +52,7 @@ LUI.createMenu.OverCapacity = function ( f1_arg0, f1_arg1 )
 	
 	local Title = LUI.UIText.new( 0.5, 0.5, -612, 407, 0, 0, 319, 364 )
 	Title:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
-	Title:setText( LocalizeToUpperString( 0x96CBF472B3593BB ) )
+	Title:setText( LocalizeToUpperString( "menu/remove_item" ) )
 	Title:setTTF( "ttmussels_regular" )
 	Title:setLetterSpacing( 6 )
 	Title:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -63,7 +63,7 @@ LUI.createMenu.OverCapacity = function ( f1_arg0, f1_arg1 )
 	local featureOverlayButtonMouseOnly = nil
 	
 	featureOverlayButtonMouseOnly = CoD.featureOverlay_Button_MouseOnly.new( f1_local1, f1_arg0, 0.5, 0.5, -606, -480, 0, 0, 675, 732 )
-	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0x78D439E1B360368 ) )
+	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/back_caps" ) )
 	featureOverlayButtonMouseOnly:registerEventHandler( "gain_focus", function ( element, event )
 		local f4_local0 = nil
 		if element.gainFocus then
@@ -74,13 +74,13 @@ LUI.createMenu.OverCapacity = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f4_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
+	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		PlaySoundSetSound( self, "menu_no_selection" )
-		ClearMenuSavedState( f5_arg1 )
-		GoBack( self, f5_arg2 )
+		ClearMenuSavedState( menu )
+		GoBack( self, controller )
 		return true
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
-		CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( featureOverlayButtonMouseOnly )
@@ -99,34 +99,34 @@ LUI.createMenu.OverCapacity = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f7_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		ClearMenuSavedState( f8_arg1 )
+	f1_local1:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		ClearMenuSavedState( menu )
 		PlaySoundSetSound( self, "menu_no_selection" )
-		GoBack( self, f8_arg2 )
+		GoBack( self, controller )
 		return true
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 		return false
 	end, false )
-	f1_local1:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		ClearMenuSavedState( f10_arg1 )
+	f1_local1:AddButtonCallbackFunction( PCSmallCloseButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, model )
+		ClearMenuSavedState( menu )
 		PlaySoundSetSound( self, "menu_no_selection" )
-		GoBack( self, f10_arg2 )
+		GoBack( self, controller )
 		return true
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( PCSmallCloseButton )
 	self.PCSmallCloseButton = PCSmallCloseButton
 	
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		GoBack( self, f12_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		PlaySoundSetSound( self, "menu_no_selection" )
-		ClearMenuSavedState( f12_arg1 )
+		ClearMenuSavedState( menu )
 		return true
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	background:setModel( self.buttonModel, f1_arg0 )

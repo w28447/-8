@@ -6,7 +6,7 @@ local PostLoadFunc = function ( self, controller, menu )
 	self.mode:subscribeToGlobalModel( controller, "Demo", "cameraMode", function ( model )
 		local modelValue = Engine.GetModelValue( model )
 		if modelValue then
-			local f2_local1 = 0x3EF6A41762515E9
+			local f2_local1 = "mp/unknown"
 			if modelValue == Enum.demoCameraMode[0x448CED16817146D] then
 				f2_local1 = 0xD52B52EF950D3EF
 			elseif modelValue == Enum.demoCameraMode[0xFCA80C27FBE8269] then

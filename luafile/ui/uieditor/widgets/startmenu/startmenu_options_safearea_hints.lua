@@ -11,7 +11,7 @@ CoD.StartMenu_Options_SafeArea_Hints.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BestResults = LUI.UIText.new( 0.5, 0.5, -700, 700, 0.38, 0.38, -15, 15 )
-	BestResults:setText( Engine[0xF9F1239CFD921FE]( 0xFFAE216C06B818 ) )
+	BestResults:setText( Engine[0xF9F1239CFD921FE]( "menu/safe_area_best_results" ) )
 	BestResults:setTTF( "dinnext_regular" )
 	BestResults:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	BestResults:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -19,7 +19,7 @@ CoD.StartMenu_Options_SafeArea_Hints.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.BestResults = BestResults
 	
 	local AdjustInSoundAndScreen = LUI.UIText.new( 0, 0, 0, 1920, 0, 0, 632, 662 )
-	AdjustInSoundAndScreen:setText( Engine[0xF9F1239CFD921FE]( 0x37A7998E13FAB88 ) )
+	AdjustInSoundAndScreen:setText( Engine[0xF9F1239CFD921FE]( "menu/adjust_safe_area_visit" ) )
 	AdjustInSoundAndScreen:setTTF( "dinnext_regular" )
 	AdjustInSoundAndScreen:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	AdjustInSoundAndScreen:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -27,7 +27,7 @@ CoD.StartMenu_Options_SafeArea_Hints.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.AdjustInSoundAndScreen = AdjustInSoundAndScreen
 	
 	local InstructionText = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, -20, 10 )
-	InstructionText:setText( Engine[0xF9F1239CFD921FE]( 0x988D4F345D061 ) )
+	InstructionText:setText( Engine[0xF9F1239CFD921FE]( "platform/safearea_instructions" ) )
 	InstructionText:setTTF( "dinnext_regular" )
 	InstructionText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	InstructionText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -35,7 +35,7 @@ CoD.StartMenu_Options_SafeArea_Hints.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.InstructionText = InstructionText
 	
 	local HorizontalAdjustment = LUI.UIText.new( 0, 1, 0, 0, 0.5, 0.5, 14, 46 )
-	HorizontalAdjustment:setText( Engine[0xF9F1239CFD921FE]( 0x89C37DF996CF951 ) )
+	HorizontalAdjustment:setText( Engine[0xF9F1239CFD921FE]( "platform/safe_area_adjust_horizontal" ) )
 	HorizontalAdjustment:setTTF( "dinnext_regular" )
 	HorizontalAdjustment:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	HorizontalAdjustment:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -51,7 +51,7 @@ CoD.StartMenu_Options_SafeArea_Hints.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.VerticalAdjustment = VerticalAdjustment
 	
 	local SafeAreaAdjustment = LUI.UIText.new( 0, 0, 260, 1660, 0, 0, 317, 368 )
-	SafeAreaAdjustment:setText( Engine[0xF9F1239CFD921FE]( 0x159E1557183121C ) )
+	SafeAreaAdjustment:setText( Engine[0xF9F1239CFD921FE]( "menu/safe_area_adjustment" ) )
 	SafeAreaAdjustment:setTTF( "ttmussels_demibold" )
 	SafeAreaAdjustment:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	SafeAreaAdjustment:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -72,7 +72,7 @@ CoD.StartMenu_Options_SafeArea_Hints.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local GotItButtonPrompt = CoD.buttonprompt.new( f1_arg0, f1_arg1, 0, 0, 937, 1081, 0, 0, 706, 752 )
 	GotItButtonPrompt:setScale( 2, 2 )
-	GotItButtonPrompt.label:setText( Engine[0xF9F1239CFD921FE]( 0x127692C63C00054 ) )
+	GotItButtonPrompt.label:setText( Engine[0xF9F1239CFD921FE]( "menu/welcome_menu_got_it" ) )
 	GotItButtonPrompt:subscribeToGlobalModel( f1_arg1, "Controller", "primary_button_image", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
@@ -83,7 +83,7 @@ CoD.StartMenu_Options_SafeArea_Hints.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.GotItButtonPrompt = GotItButtonPrompt
 	
 	local DisplayAreaAdjustment = LUI.UIText.new( 0, 0, 260, 1660, 0, 0, 317, 368 )
-	DisplayAreaAdjustment:setText( Engine[0xF9F1239CFD921FE]( 0x2CCB8DC93E73DA1 ) )
+	DisplayAreaAdjustment:setText( Engine[0xF9F1239CFD921FE]( "menu/display_area_adjustment" ) )
 	DisplayAreaAdjustment:setTTF( "ttmussels_demibold" )
 	DisplayAreaAdjustment:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	DisplayAreaAdjustment:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

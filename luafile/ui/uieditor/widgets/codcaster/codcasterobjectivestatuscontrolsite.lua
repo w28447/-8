@@ -11,13 +11,13 @@ CoD.CodCasterObjectiveStatusControlSite.new = function ( f1_arg0, f1_arg1, f1_ar
 	local siteBacker = LUI.UIImage.new( 0, 0, 0, 60, 0, 0, 0, 60 )
 	siteBacker:setAlpha( 0 )
 	siteBacker:setScale( 0.5, 0.5 )
-	siteBacker:setImage( RegisterImage( 0xAF5C3E3D56DE922 ) )
+	siteBacker:setImage( RegisterImage( "uie_ui_hud_core_waypoint_control_backer" ) )
 	self:addElement( siteBacker )
 	self.siteBacker = siteBacker
 	
 	local siteLED = LUI.UIImage.new( 0, 0, 0, 60, 0, 0, 0, 60 )
 	siteLED:setScale( 0.5, 0.5 )
-	siteLED:setImage( RegisterImage( 0x159D9B7B7294C91 ) )
+	siteLED:setImage( RegisterImage( "uie_ui_hud_core_waypoint_led" ) )
 	siteLED:subscribeToGlobalModel( f1_arg1, "HUDItems", "codcaster.ObjectiveA.color", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -29,13 +29,13 @@ CoD.CodCasterObjectiveStatusControlSite.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local siteEmpty = LUI.UIImage.new( 0, 0, 0, 60, 0, 0, 0, 60 )
 	siteEmpty:setScale( 0.5, 0.5 )
-	siteEmpty:setImage( RegisterImage( 0x59CBB04316B552F ) )
+	siteEmpty:setImage( RegisterImage( "uie_ui_hud_core_waypoint_control_empty" ) )
 	self:addElement( siteEmpty )
 	self.siteEmpty = siteEmpty
 	
 	local siteFill = LUI.UIImage.new( 0, 0, 0, 60, 0, 0, 0, 60 )
 	siteFill:setScale( 0.5, 0.5 )
-	siteFill:setImage( RegisterImage( 0xC876EA47A5042E ) )
+	siteFill:setImage( RegisterImage( "uie_ui_hud_core_waypoint_control_fill_02" ) )
 	siteFill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_normal" ) )
 	siteFill:setShaderVector( 0, 1, 0, 0, 0 )
 	siteFill:setShaderVector( 1, 0.5, 0, 0, 0 )
@@ -53,7 +53,7 @@ CoD.CodCasterObjectiveStatusControlSite.new = function ( f1_arg0, f1_arg1, f1_ar
 	
 	local siteLetter = LUI.UIImage.new( 0, 0, 0, 60, 0, 0, 0, 60 )
 	siteLetter:setScale( 0.5, 0.5 )
-	siteLetter:setImage( RegisterImage( 0x1859ED472AB4E4F ) )
+	siteLetter:setImage( RegisterImage( "uie_ui_hud_core_waypoint_letter_a_02" ) )
 	siteLetter:subscribeToGlobalModel( f1_arg1, "HUDItems", "codcaster.ObjectiveA.color", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then

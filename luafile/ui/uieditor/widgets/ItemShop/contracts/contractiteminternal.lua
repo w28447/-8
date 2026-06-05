@@ -94,7 +94,7 @@ CoD.ContractItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0, 0, 1, 401, 0, 0, 12.5, 29.5 )
 	PixelGridTiledBacking:setAlpha( 0.05 )
-	PixelGridTiledBacking:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
@@ -188,7 +188,7 @@ CoD.ContractItemInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	self.ProgressBarBacking = ProgressBarBacking
 	
 	local ContractRarityHeaderTile = CoD.ContractRarityHeaderTile.new( f1_arg0, f1_arg1, 0, 0, 15, 215, 0, 0, 12.5, 29.5 )
-	ContractRarityHeaderTile.Contract:setText( LocalizeToUpperString( 0x0 ) )
+	ContractRarityHeaderTile.Contract:setText( LocalizeToUpperString( "" ) )
 	ContractRarityHeaderTile:linkToElementModel( self, nil, false, function ( model )
 		ContractRarityHeaderTile:setModel( model, f1_arg1 )
 	end )

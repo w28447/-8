@@ -21,7 +21,7 @@ LUI.createMenu.ClassOptions = function ( f1_arg0, f1_arg1 )
 	self.BlackfadeBlur = BlackfadeBlur
 	
 	local ClassOptionsWidget = CoD.ClassOptionsWidget.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0.5, 0.5, -540, 540 )
-	ClassOptionsWidget.ClassNamelLabel:setText( LocalizeToUpperString( 0xDD163B6B797AB91 ) )
+	ClassOptionsWidget.ClassNamelLabel:setText( LocalizeToUpperString( "menu/class_name" ) )
 	ClassOptionsWidget:registerEventHandler( "menu_loaded", function ( element, event )
 		local f2_local0 = nil
 		if element.menuLoaded then
@@ -40,20 +40,20 @@ LUI.createMenu.ClassOptions = function ( f1_arg0, f1_arg1 )
 	self:addElement( ClassOptionsWidget )
 	self.ClassOptionsWidget = ClassOptionsWidget
 	
-	self:registerEventHandler( "ui_keyboard_input", function ( element, event )
+	self:registerEventHandler( "ui_keyboard_input", function ( self, event )
 		local f3_local0 = nil
-		CallCustomElementFunction_Self( self, "handleKeyboardComplete", element, f1_arg0, event )
+		CallCustomElementFunction_Self( self, "handleKeyboardComplete", self, f1_arg0, event )
 		if not f3_local0 then
-			f3_local0 = element:dispatchEventToChildren( event )
+			f3_local0 = self:dispatchEventToChildren( event )
 		end
 		return f3_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ui_contextual_1", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		GoBack( self, f4_arg2 )
-		ClearMenuSavedState( f4_arg1 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ui_contextual_1", function ( element, menu, controller, model )
+		GoBack( self, controller )
+		ClearMenuSavedState( menu )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ui_contextual_1" )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

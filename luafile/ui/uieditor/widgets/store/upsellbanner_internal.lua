@@ -63,7 +63,7 @@ CoD.UpsellBanner_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.Description = Description
 	
 	local upsellIcon = LUI.UIText.new( 0, 0, -51, 149, 0, 0, 10.5, 82.5 )
-	upsellIcon:setText( Engine[0xF9F1239CFD921FE]( 0xCFD524E10472BF8 ) )
+	upsellIcon:setText( Engine[0xF9F1239CFD921FE]( "menu/purchase_icon" ) )
 	upsellIcon:setTTF( "default" )
 	upsellIcon:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	upsellIcon:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -71,7 +71,7 @@ CoD.UpsellBanner_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.upsellIcon = upsellIcon
 	
 	local downloadIcon = LUI.UIImage.new( 0, 0, 26.5, 106.5, 0, 0, 10.5, 90.5 )
-	downloadIcon:setImage( RegisterImage( 0x9D993738EE5B550 ) )
+	downloadIcon:setImage( RegisterImage( "t7_icon_menu_options_download" ) )
 	self:addElement( downloadIcon )
 	self.downloadIcon = downloadIcon
 	
@@ -85,7 +85,7 @@ CoD.UpsellBanner_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local BraketBottom = LUI.UIImage.new( 0, 1, -2, 2, 1, 1, -28, 1 )
 	BraketBottom:setZRot( 180 )
-	BraketBottom:setImage( RegisterImage( 0x81D4EAAB75120FF ) )
+	BraketBottom:setImage( RegisterImage( "uie_ui_menu_specialist_hub_info_bracket" ) )
 	BraketBottom:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BraketBottom:setShaderVector( 0, 0, 0, 0, 0 )
 	BraketBottom:setupNineSliceShader( 200, 100 )
@@ -93,7 +93,7 @@ CoD.UpsellBanner_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	self.BraketBottom = BraketBottom
 	
 	local BraketTop = LUI.UIImage.new( 0, 1, -2, 2, 0, 0, -1, 28 )
-	BraketTop:setImage( RegisterImage( 0x81D4EAAB75120FF ) )
+	BraketTop:setImage( RegisterImage( "uie_ui_menu_specialist_hub_info_bracket" ) )
 	BraketTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BraketTop:setShaderVector( 0, 0, 0, 0, 0 )
 	BraketTop:setupNineSliceShader( 200, 100 )
@@ -248,7 +248,7 @@ CoD.UpsellBanner_Internal.__clipsPerState = {
 			f15_arg0.clipFinished( f15_arg0.buttonPromptImage )
 			f15_arg0.Description:completeAnimation()
 			f15_arg0.Description:setLeftRight( 0, 0, 9, 392 )
-			f15_arg0.Description:setText( LocalizeToUpperString( 0x7C54DA59ED86E15 ) )
+			f15_arg0.Description:setText( LocalizeToUpperString( "menu/download_pc" ) )
 			f15_arg0.Description:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
 			f15_arg0.clipFinished( f15_arg0.Description )
 			f15_arg0.upsellIcon:completeAnimation()
@@ -268,7 +268,7 @@ CoD.UpsellBanner_Internal.__clipsPerState = {
 			f16_arg0.clipFinished( f16_arg0.buttonPromptImage )
 			f16_arg0.Description:completeAnimation()
 			f16_arg0.Description:setLeftRight( 0, 0, 10, 389 )
-			f16_arg0.Description:setText( LocalizeToUpperString( 0xDB92212A96CDABC ) )
+			f16_arg0.Description:setText( LocalizeToUpperString( "menu/purchase_pc" ) )
 			f16_arg0.Description:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
 			f16_arg0.clipFinished( f16_arg0.Description )
 			f16_arg0.downloadIcon:completeAnimation()

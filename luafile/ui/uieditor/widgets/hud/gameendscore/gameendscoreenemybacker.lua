@@ -24,7 +24,7 @@ CoD.GameEndScoreEnemyBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local PixelGridTiledBacking = LUI.UIImage.new( 0.02, 0.02, -16, 940, 0.31, 0.31, -44.5, 107.5 )
 	PixelGridTiledBacking:setAlpha( 0.05 )
-	PixelGridTiledBacking:setImage( RegisterImage( 0x311E811A3183347 ) )
+	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
 	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
@@ -84,7 +84,7 @@ CoD.GameEndScoreEnemyBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	triangle:setRGB( 0, 0, 0 )
 	triangle:setAlpha( 0.94 )
 	triangle:setZRot( 180 )
-	triangle:setImage( RegisterImage( 0x1226A0CC6137EEE ) )
+	triangle:setImage( RegisterImage( "uie_ui_hud_common_triangle" ) )
 	self:addElement( triangle )
 	self.triangle = triangle
 	

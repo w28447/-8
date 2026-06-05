@@ -1,4 +1,4 @@
-require( "ui/uieditor/widgets/common/CommonPixelBacking" )
+require( "ui/uieditor/widgets/common/commonpixelbacking" )
 
 CoD.CommonPixelBackingWithTopPadding = InheritFrom( LUI.UIElement )
 CoD.CommonPixelBackingWithTopPadding.__defaultWidth = 504

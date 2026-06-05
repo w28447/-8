@@ -38,14 +38,14 @@ CoD.PC_AchievementNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local PointsInnerGlowBG = LUI.UIImage.new( 1, 1, -54, -11, 0, 1, 11, -11 )
 	PointsInnerGlowBG:setRGB( 0.67, 0.67, 0.67 )
 	PointsInnerGlowBG:setAlpha( 0.01 )
-	PointsInnerGlowBG:setImage( RegisterImage( 0xFC86B798048CDF0 ) )
+	PointsInnerGlowBG:setImage( RegisterImage( "uie_innerglow" ) )
 	self:addElement( PointsInnerGlowBG )
 	self.PointsInnerGlowBG = PointsInnerGlowBG
 	
 	local PointsBorder = LUI.UIImage.new( 1, 1, -54, -11, 0, 1, 11, -11 )
 	PointsBorder:setRGB( 0.38, 0.38, 0.38 )
 	PointsBorder:setAlpha( 0.1 )
-	PointsBorder:setImage( RegisterImage( 0xF1E3082B39E99BB ) )
+	PointsBorder:setImage( RegisterImage( "uie_highlight_border_line" ) )
 	PointsBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	PointsBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	PointsBorder:setupNineSliceShader( 6, 6 )
@@ -79,7 +79,7 @@ CoD.PC_AchievementNotification.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local TabBacking = LUI.UIImage.new( 0.23, 0, -125, 7, -0.4, 1.4, -30, 30 )
 	TabBacking:setAlpha( 0 )
-	TabBacking:setImage( RegisterImage( 0x3F09D20CA138B49 ) )
+	TabBacking:setImage( RegisterImage( "uie_ui_menu_common_tab_backing" ) )
 	TabBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	TabBacking:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( TabBacking )

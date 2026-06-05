@@ -21,7 +21,7 @@ CoD.WZAAR_MeritBreakdown.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local Box = LUI.UIImage.new( 0.5, 0.5, -198, 198, 0, 0, 287, 379 )
 	Box:setAlpha( 0 )
-	Box:setImage( RegisterImage( 0x2687DEDD4096817 ) )
+	Box:setImage( RegisterImage( "uie_ui_hud_wz_endgame_merits_total_box" ) )
 	self:addElement( Box )
 	self.Box = Box
 	

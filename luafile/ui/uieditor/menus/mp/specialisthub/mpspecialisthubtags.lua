@@ -31,7 +31,7 @@ LUI.createMenu.MPSpecialistHUBTags = function ( f1_arg0, f1_arg1 )
 	
 	local TiledPlusGrid = LUI.UIImage.new( 0.5, 0.5, -1095, 960, 0, 0, 0, 1080 )
 	TiledPlusGrid:setAlpha( 0.05 )
-	TiledPlusGrid:setImage( RegisterImage( 0x6E37BAE22631294 ) )
+	TiledPlusGrid:setImage( RegisterImage( "uie_ui_hud_vehicle_hellstorm_repeat_plusgrid" ) )
 	TiledPlusGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	TiledPlusGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledPlusGrid:setupNineSliceShader( 220, 220 )
@@ -49,7 +49,7 @@ LUI.createMenu.MPSpecialistHUBTags = function ( f1_arg0, f1_arg1 )
 	self.Frame = Frame
 	
 	local MPSpecialistHUBTagsSafeAreaContainer = CoD.MPSpecialistHUBTags_SafeAreaContainer.new( f1_local1, f1_arg0, 0, 1, 0, 0, 0, 1, 0, 0 )
-	MPSpecialistHUBTagsSafeAreaContainer.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x46EFDF3FB2763B5 ) )
+	MPSpecialistHUBTagsSafeAreaContainer.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/personalization" ) )
 	MPSpecialistHUBTagsSafeAreaContainer:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f3_local0 = model:get()
 		if f3_local0 ~= nil then
@@ -100,18 +100,18 @@ LUI.createMenu.MPSpecialistHUBTags = function ( f1_arg0, f1_arg1 )
 			modelName = "MPSpecialistHUBBindWheel.NoBackground"
 		} )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		GoBack( self, f8_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
 		CoD.BaseUtility.UINoAction()
 		return true
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, nil )
 		return false
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

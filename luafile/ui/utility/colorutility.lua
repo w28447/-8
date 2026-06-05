@@ -66,8 +66,8 @@ end
 CoD.ColorUtility.GetColorBlindColorNameForPlayer = function ( f6_arg0, f6_arg1 )
 	local f6_local0 = Enum.ColorVisionDeficiencies[0xD44A16999E1790A]
 	local f6_local1 = Engine.GetPlayerCommonGamerProfile( f6_arg0 )
-	if f6_local1 ~= nil and f6_local1[0xF7EA50ADC77CDD0] ~= nil then
-		f6_local0 = f6_local1[0xF7EA50ADC77CDD0]:get()
+	if f6_local1 ~= nil and f6_local1.colorblindmode ~= nil then
+		f6_local0 = f6_local1.colorblindmode:get()
 	end
 	return CoD.ColorUtility.GetColorBlindSafeColorNameForSetting( f6_arg1, f6_local0 )
 end

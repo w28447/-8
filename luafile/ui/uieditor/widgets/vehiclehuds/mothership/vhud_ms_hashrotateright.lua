@@ -15,7 +15,7 @@ CoD.vhud_ms_HashRotateRight.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local VehicleGroundHashText0 = CoD.VehicleGround_HashText.new( f1_arg0, f1_arg1, 0.5, 0.5, -78, 81, 0.5, 0.5, -22, 17 )
 	VehicleGroundHashText0:setAlpha( 0 )
-	VehicleGroundHashText0:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0xD756CD9A5F1F1B4 ) )
+	VehicleGroundHashText0:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_aberration_cheap_blur" ) )
 	VehicleGroundHashText0:setShaderVector( 0, 0.1, 0, 0, 0 )
 	VehicleGroundHashText0:setShaderVector( 1, 1, 0, 0, 0 )
 	VehicleGroundHashText0:setShaderVector( 2, 5, 7, 0, 0 )

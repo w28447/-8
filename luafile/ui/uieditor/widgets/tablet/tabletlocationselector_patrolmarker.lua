@@ -20,7 +20,7 @@ CoD.TabletLocationSelector_PatrolMarker.new = function ( f1_arg0, f1_arg1, f1_ar
 	self.Icon = Icon
 	
 	local Temp = LUI.UIImage.new( 0.5, 0.5, -32, 32, 0.5, 0.5, -32, 32 )
-	Temp:setImage( RegisterImage( 0xF56AE389E7FBC85 ) )
+	Temp:setImage( RegisterImage( "uie_hud_mp_icon_forwardspawn" ) )
 	self:addElement( Temp )
 	self.Temp = Temp
 	

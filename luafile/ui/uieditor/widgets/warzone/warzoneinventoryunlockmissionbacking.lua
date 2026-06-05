@@ -53,7 +53,7 @@ CoD.WarzoneInventoryUnlockMissionBacking.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local BraketBottom = LUI.UIImage.new( 0, 1, -2, 2, 1, 1, -28, 1 )
 	BraketBottom:setZRot( 180 )
-	BraketBottom:setImage( RegisterImage( 0x81D4EAAB75120FF ) )
+	BraketBottom:setImage( RegisterImage( "uie_ui_menu_specialist_hub_info_bracket" ) )
 	BraketBottom:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BraketBottom:setShaderVector( 0, 0, 0, 0, 0 )
 	BraketBottom:setupNineSliceShader( 200, 100 )

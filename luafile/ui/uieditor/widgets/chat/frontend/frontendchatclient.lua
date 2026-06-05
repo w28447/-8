@@ -20,7 +20,7 @@ CoD.FrontendChatClient.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.emptyFocusable = emptyFocusable
 	
 	local FrontendChatBG = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	FrontendChatBG:setImage( RegisterImage( 0xFECB0E0003975BA ) )
+	FrontendChatBG:setImage( RegisterImage( "uie_chat_background" ) )
 	self:addElement( FrontendChatBG )
 	self.FrontendChatBG = FrontendChatBG
 	

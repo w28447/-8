@@ -78,38 +78,38 @@ CoD.FileshareCategoryContentList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	contentList:registerEventHandler( "list_item_lose_focus", function ( element, event )
 		return nil
 	end )
-	f1_arg0:AddButtonCallbackFunction( contentList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
+	f1_arg0:AddButtonCallbackFunction( contentList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		if not IsDemoPlaying() then
-			ProcessListAction( self, f6_arg0, f6_arg2, f6_arg1 )
+			ProcessListAction( self, element, controller, menu )
 			return true
 		elseif IsDemoPlaying() then
-			ProcessListAction( self, f6_arg0, f6_arg2, f6_arg1 )
+			ProcessListAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
+	end, function ( element, menu, controller )
 		if not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		elseif IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x8ADA48E694BFE2C, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/delete", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( contentList, f1_arg1, Enum.LUIButton[0x22361E23588705A], nil, function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if FileshareCanShowOptionsMenu( f8_arg2 ) then
-			PreserveThumbnails( f8_arg2, true )
-			OpenPopup( self, "FileshareOptions", f8_arg2 )
+	f1_arg0:AddButtonCallbackFunction( contentList, f1_arg1, Enum.LUIButton[0x22361E23588705A], nil, function ( element, menu, controller, model )
+		if FileshareCanShowOptionsMenu( controller ) then
+			PreserveThumbnails( controller, true )
+			OpenPopup( self, "FileshareOptions", controller )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if FileshareCanShowOptionsMenu( f9_arg2 ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options", nil, nil )
+	end, function ( element, menu, controller )
+		if FileshareCanShowOptionsMenu( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "menu/options", nil, nil )
 			return true
 		else
 			return false
@@ -143,7 +143,7 @@ CoD.FileshareCategoryContentList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local EmptyText = LUI.UIText.new( 0.5, 0.5, -331, 331, 0.5, 0.5, -18.5, 18.5 )
 	EmptyText:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	EmptyText:setText( Engine[0xF9F1239CFD921FE]( 0x9E740AD10EEAD80 ) )
+	EmptyText:setText( Engine[0xF9F1239CFD921FE]( "menu/not_available" ) )
 	EmptyText:setTTF( "ttmussels_regular" )
 	EmptyText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	EmptyText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

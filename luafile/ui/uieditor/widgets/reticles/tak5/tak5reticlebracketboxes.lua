@@ -10,13 +10,13 @@ CoD.Tak5ReticleBracketBoxes.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local ReticleBox03 = LUI.UIImage.new( 0, 0, 30, 46, 0, 0, 0, 16 )
 	ReticleBox03:setAlpha( 0.2 )
-	ReticleBox03:setImage( RegisterImage( 0xD3A68D4E41728CE ) )
+	ReticleBox03:setImage( RegisterImage( "uie_ui_hud_tak5_bracket_box" ) )
 	self:addElement( ReticleBox03 )
 	self.ReticleBox03 = ReticleBox03
 	
 	local ReticleBox03Add = LUI.UIImage.new( 0, 0, 30, 46, 0, 0, 0, 16 )
 	ReticleBox03Add:setAlpha( 0 )
-	ReticleBox03Add:setImage( RegisterImage( 0xD3A68D4E41728CE ) )
+	ReticleBox03Add:setImage( RegisterImage( "uie_ui_hud_tak5_bracket_box" ) )
 	ReticleBox03Add:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ReticleBox03Add:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ReticleBox03Add )
@@ -24,26 +24,26 @@ CoD.Tak5ReticleBracketBoxes.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local ReticleBox02 = LUI.UIImage.new( 0, 0, 15, 31, 0, 0, 0, 16 )
 	ReticleBox02:setAlpha( 0.5 )
-	ReticleBox02:setImage( RegisterImage( 0xD3A68D4E41728CE ) )
+	ReticleBox02:setImage( RegisterImage( "uie_ui_hud_tak5_bracket_box" ) )
 	self:addElement( ReticleBox02 )
 	self.ReticleBox02 = ReticleBox02
 	
 	local ReticleBox02Add = LUI.UIImage.new( 0, 0, 15, 31, 0, 0, 0, 16 )
 	ReticleBox02Add:setAlpha( 0 )
-	ReticleBox02Add:setImage( RegisterImage( 0xD3A68D4E41728CE ) )
+	ReticleBox02Add:setImage( RegisterImage( "uie_ui_hud_tak5_bracket_box" ) )
 	ReticleBox02Add:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ReticleBox02Add:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ReticleBox02Add )
 	self.ReticleBox02Add = ReticleBox02Add
 	
 	local ReticleBox01 = LUI.UIImage.new( 0, 0, 0, 16, 0, 0, 0, 16 )
-	ReticleBox01:setImage( RegisterImage( 0xD3A68D4E41728CE ) )
+	ReticleBox01:setImage( RegisterImage( "uie_ui_hud_tak5_bracket_box" ) )
 	self:addElement( ReticleBox01 )
 	self.ReticleBox01 = ReticleBox01
 	
 	local ReticleBox01Add = LUI.UIImage.new( 0, 0, 0, 16, 0, 0, 0, 16 )
 	ReticleBox01Add:setAlpha( 0 )
-	ReticleBox01Add:setImage( RegisterImage( 0xD3A68D4E41728CE ) )
+	ReticleBox01Add:setImage( RegisterImage( "uie_ui_hud_tak5_bracket_box" ) )
 	ReticleBox01Add:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ReticleBox01Add:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ReticleBox01Add )

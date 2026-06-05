@@ -9,28 +9,28 @@ CoD.TabletConnectionArrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local RightArrow03 = LUI.UIImage.new( 1, 1, -65, -41, 0, 0, 0.5, 30.5 )
-	RightArrow03:setImage( RegisterImage( 0xB74F856BFDB37C1 ) )
+	RightArrow03:setImage( RegisterImage( "uie_ui_hud_tak5_data_arrow01" ) )
 	self:addElement( RightArrow03 )
 	self.RightArrow03 = RightArrow03
 	
 	local RightArrow02 = LUI.UIImage.new( 1, 1, -52, -28, 0, 0, 0.5, 30.5 )
-	RightArrow02:setImage( RegisterImage( 0xB74F856BFDB37C1 ) )
+	RightArrow02:setImage( RegisterImage( "uie_ui_hud_tak5_data_arrow01" ) )
 	self:addElement( RightArrow02 )
 	self.RightArrow02 = RightArrow02
 	
 	local RightArrow01 = LUI.UIImage.new( 1, 1, -39, -15, 0, 0, 0.5, 30.5 )
-	RightArrow01:setImage( RegisterImage( 0xB74F856BFDB37C1 ) )
+	RightArrow01:setImage( RegisterImage( "uie_ui_hud_tak5_data_arrow01" ) )
 	self:addElement( RightArrow01 )
 	self.RightArrow01 = RightArrow01
 	
 	local RightArrow00 = LUI.UIImage.new( 0, 0, 38.5, 64.5, 0, 0, 0, 30 )
-	RightArrow00:setImage( RegisterImage( 0xB74F556BFDB32A8 ) )
+	RightArrow00:setImage( RegisterImage( "uie_ui_hud_tak5_data_arrow02" ) )
 	self:addElement( RightArrow00 )
 	self.RightArrow00 = RightArrow00
 	
 	local RightArrowAdd03 = LUI.UIImage.new( 1, 1, -65, -41, 0, 0, 0.5, 30.5 )
 	RightArrowAdd03:setAlpha( 0 )
-	RightArrowAdd03:setImage( RegisterImage( 0xB74F856BFDB37C1 ) )
+	RightArrowAdd03:setImage( RegisterImage( "uie_ui_hud_tak5_data_arrow01" ) )
 	RightArrowAdd03:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	RightArrowAdd03:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( RightArrowAdd03 )
@@ -38,7 +38,7 @@ CoD.TabletConnectionArrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local RightArrowAdd02 = LUI.UIImage.new( 1, 1, -52, -28, 0, 0, 0.5, 30.5 )
 	RightArrowAdd02:setAlpha( 0 )
-	RightArrowAdd02:setImage( RegisterImage( 0xB74F856BFDB37C1 ) )
+	RightArrowAdd02:setImage( RegisterImage( "uie_ui_hud_tak5_data_arrow01" ) )
 	RightArrowAdd02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	RightArrowAdd02:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( RightArrowAdd02 )
@@ -46,7 +46,7 @@ CoD.TabletConnectionArrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local RightArrowAdd01 = LUI.UIImage.new( 1, 1, -39, -15, 0, 0, 0.5, 30.5 )
 	RightArrowAdd01:setAlpha( 0 )
-	RightArrowAdd01:setImage( RegisterImage( 0xB74F856BFDB37C1 ) )
+	RightArrowAdd01:setImage( RegisterImage( "uie_ui_hud_tak5_data_arrow01" ) )
 	RightArrowAdd01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	RightArrowAdd01:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( RightArrowAdd01 )
@@ -54,7 +54,7 @@ CoD.TabletConnectionArrow.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local RightArrowAdd00 = LUI.UIImage.new( 0, 0, 38.5, 64.5, 0, 0, 0, 30 )
 	RightArrowAdd00:setAlpha( 0 )
-	RightArrowAdd00:setImage( RegisterImage( 0xB74F556BFDB32A8 ) )
+	RightArrowAdd00:setImage( RegisterImage( "uie_ui_hud_tak5_data_arrow02" ) )
 	RightArrowAdd00:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	RightArrowAdd00:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( RightArrowAdd00 )

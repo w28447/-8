@@ -33,14 +33,14 @@ CoD.DirectorChooseGameTypeFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( GameTypeCategoryGridPC, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		SetCurrentElementAsActive( self, f3_arg0, f3_arg2 )
-		SetControllerModelValue( f3_arg2, "mapModeSelection", true )
-		SetFocusToElement( self, "GameTypeListPC", f3_arg2 )
+	f1_arg0:AddButtonCallbackFunction( GameTypeCategoryGridPC, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		SetCurrentElementAsActive( self, element, controller )
+		SetControllerModelValue( controller, "mapModeSelection", true )
+		SetFocusToElement( self, "GameTypeListPC", controller )
 		PlaySoundAlias( "cac_open_wpn_cust" )
 		return true
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( GameTypeCategoryGridPC )
@@ -72,22 +72,22 @@ CoD.DirectorChooseGameTypeFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A] )
 		return f6_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( GameTypeListPC, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		GameModeSelected( f7_arg0, f7_arg2 )
+	f1_arg0:AddButtonCallbackFunction( GameTypeListPC, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		GameModeSelected( element, controller )
 		PlaySoundAlias( "cac_open_wpn_cust" )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( GameTypeListPC, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
+	f1_arg0:AddButtonCallbackFunction( GameTypeListPC, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
 		CoD.OptionsUtility.SetFocusToGrid( self.GameTypeCategoryGridPC )
-		SetControllerModelValue( f9_arg2, "mapModeSelection", false )
-		DataSourceHelperRecreate( f9_arg2, "MapModePreview" )
+		SetControllerModelValue( controller, "mapModeSelection", false )
+		DataSourceHelperRecreate( controller, "MapModePreview" )
 		PlaySoundAlias( "cac_wpn_cust_exit" )
 		return true
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	self:addElement( GameTypeListPC )

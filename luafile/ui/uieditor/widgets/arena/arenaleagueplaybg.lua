@@ -14,35 +14,35 @@ CoD.arenaLeaguePlayBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local AmbientCornerR = LUI.UIImage.new( 0.5, 0.5, 794, 904, 0, 0, 84, 194 )
 	AmbientCornerR:setAlpha( 0.7 )
-	AmbientCornerR:setImage( RegisterImage( 0xD87B290C1BEDDA0 ) )
+	AmbientCornerR:setImage( RegisterImage( "uie_ui_menu_aar_levelup_ambientcorner" ) )
 	AmbientCornerR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( AmbientCornerR )
 	self.AmbientCornerR = AmbientCornerR
 	
 	local AmbientCornerL = LUI.UIImage.new( 0.5, 0.5, -793, -903, 0, 0, 84, 194 )
 	AmbientCornerL:setAlpha( 0.5 )
-	AmbientCornerL:setImage( RegisterImage( 0xD87B290C1BEDDA0 ) )
+	AmbientCornerL:setImage( RegisterImage( "uie_ui_menu_aar_levelup_ambientcorner" ) )
 	AmbientCornerL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( AmbientCornerL )
 	self.AmbientCornerL = AmbientCornerL
 	
 	local DotL = LUI.UIImage.new( 0, 0, 50, 62, 1, 1, -90, -78 )
 	DotL:setAlpha( 0.04 )
-	DotL:setImage( RegisterImage( 0x520FD38B273BF8 ) )
+	DotL:setImage( RegisterImage( "uie_ui_menu_aar_common_square" ) )
 	DotL:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotL )
 	self.DotL = DotL
 	
 	local DotR = LUI.UIImage.new( 1, 1, -59, -47, 1, 1, -90, -78 )
 	DotR:setAlpha( 0.04 )
-	DotR:setImage( RegisterImage( 0x520FD38B273BF8 ) )
+	DotR:setImage( RegisterImage( "uie_ui_menu_aar_common_square" ) )
 	DotR:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( DotR )
 	self.DotR = DotR
 	
 	local DotTop = LUI.UIImage.new( 0.5, 0.5, -960, 960, 0, 0, 78, 178 )
 	DotTop:setAlpha( 0.01 )
-	DotTop:setImage( RegisterImage( 0xD264154A80493DE ) )
+	DotTop:setImage( RegisterImage( "uie_ui_menu_director_stage_bar_dots" ) )
 	self:addElement( DotTop )
 	self.DotTop = DotTop
 	
@@ -57,7 +57,7 @@ CoD.arenaLeaguePlayBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local bgLineBot = LUI.UIImage.new( 0, 0, 51, 1871, 0, 0, 638, 1002 )
 	bgLineBot:setAlpha( 0.08 )
 	bgLineBot:setZRot( 180 )
-	bgLineBot:setImage( RegisterImage( 0x3467C5D506EA009 ) )
+	bgLineBot:setImage( RegisterImage( "uie_ui_menu_aar_common_halfbox_blur" ) )
 	bgLineBot:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	bgLineBot:setShaderVector( 0, 0, 0, 0, 0 )
 	bgLineBot:setupNineSliceShader( 16, 10 )
@@ -66,7 +66,7 @@ CoD.arenaLeaguePlayBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local bgLineTop = LUI.UIImage.new( 0, 0, 51, 1869, 0, 0, 78, 442 )
 	bgLineTop:setAlpha( 0.08 )
-	bgLineTop:setImage( RegisterImage( 0x3467C5D506EA009 ) )
+	bgLineTop:setImage( RegisterImage( "uie_ui_menu_aar_common_halfbox_blur" ) )
 	bgLineTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	bgLineTop:setShaderVector( 0, 0, 0, 0, 0 )
 	bgLineTop:setupNineSliceShader( 16, 10 )
@@ -75,7 +75,7 @@ CoD.arenaLeaguePlayBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local boxRight = LUI.UIImage.new( 0, 0, 1834, 1894, 0, 0, 526, 554 )
 	boxRight:setAlpha( 0.18 )
-	boxRight:setImage( RegisterImage( 0x9AD4DC738B8D870 ) )
+	boxRight:setImage( RegisterImage( "uie_ui_menu_aar_common_box" ) )
 	boxRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	boxRight:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( boxRight )
@@ -83,7 +83,7 @@ CoD.arenaLeaguePlayBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local boxLeft = LUI.UIImage.new( 0, 0, 84, 24, 0, 0, 526, 554 )
 	boxLeft:setAlpha( 0.18 )
-	boxLeft:setImage( RegisterImage( 0x9AD4DC738B8D870 ) )
+	boxLeft:setImage( RegisterImage( "uie_ui_menu_aar_common_box" ) )
 	boxLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	boxLeft:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( boxLeft )
@@ -91,7 +91,7 @@ CoD.arenaLeaguePlayBg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local connectionText = LUI.UIImage.new( 0, 0, 1719, 1855, 0, 0, 978, 990 )
 	connectionText:setAlpha( 0.29 )
-	connectionText:setImage( RegisterImage( 0x9CC4F19737093CE ) )
+	connectionText:setImage( RegisterImage( "uie_ui_menu_aar_common_online_text" ) )
 	connectionText:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( connectionText )
 	self.connectionText = connectionText

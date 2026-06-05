@@ -9,7 +9,7 @@ CoD.StartMenu_Barracks_WZ_WinRecordWidget.new = function ( f1_arg0, f1_arg1, f1_
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BgGrid = LUI.UIImage.new( 0, 0, 0, 457, 0, 1, 0, 0 )
-	BgGrid:setImage( RegisterImage( 0x7C4CA71FFE4CB25 ) )
+	BgGrid:setImage( RegisterImage( "uie_ui_menu_start_menu_small_grid" ) )
 	BgGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0xA02C44161370F6D ) )
 	BgGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	BgGrid:setShaderVector( 1, 1, 1, 0, 0 )
@@ -49,7 +49,7 @@ CoD.StartMenu_Barracks_WZ_WinRecordWidget.new = function ( f1_arg0, f1_arg1, f1_
 	local IconEmpty = LUI.UIImage.new( 0, 0, 45.5, 215.5, 0.5, 0.5, -85, 85 )
 	IconEmpty:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
 	IconEmpty:setAlpha( 0 )
-	IconEmpty:setImage( RegisterImage( 0x2D0580F3D157D69 ) )
+	IconEmpty:setImage( RegisterImage( "uie_ui_icon_wz_prestige_empty" ) )
 	self:addElement( IconEmpty )
 	self.IconEmpty = IconEmpty
 	

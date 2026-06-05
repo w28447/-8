@@ -26,7 +26,7 @@ CoD.AmmoWidget_OverheatMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	self.BGDotPatternLarge = BGDotPatternLarge
 	
 	local Fill = LUI.UIImage.new( 0.11, 1.01, -2, -2, 0.31, 0.6, 4, 4 )
-	Fill:setImage( RegisterImage( 0xCBD4913D279BBCA ) )
+	Fill:setImage( RegisterImage( "uie_ui_hud_core_overheat_meter" ) )
 	Fill:setMaterial( LUI.UIImage.GetCachedMaterial( 0x5EBE8D6E802F0F5 ) )
 	Fill:setShaderVector( 1, 0, 0, 0, 0 )
 	Fill:setShaderVector( 2, 1, 0, 0, 0 )
@@ -43,7 +43,7 @@ CoD.AmmoWidget_OverheatMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local OverheatingPulse = LUI.UIText.new( 0, 0, 17, 102, 0, 0, 48.5, 63.5 )
 	OverheatingPulse:setRGB( 0.27, 0.01, 0.01 )
-	OverheatingPulse:setText( LocalizeToUpperString( 0x43761F8C382135B ) )
+	OverheatingPulse:setText( LocalizeToUpperString( "weapon/overheated" ) )
 	OverheatingPulse:setTTF( "0arame_mono_stencil" )
 	OverheatingPulse:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	OverheatingPulse:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -52,7 +52,7 @@ CoD.AmmoWidget_OverheatMeter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local Overheating = LUI.UIText.new( 0, 0, 17, 102, 0, 0, 48.5, 63.5 )
 	Overheating:setRGB( 0.67, 0.11, 0.11 )
-	Overheating:setText( LocalizeToUpperString( 0x43761F8C382135B ) )
+	Overheating:setText( LocalizeToUpperString( "weapon/overheated" ) )
 	Overheating:setTTF( "0arame_mono_stencil" )
 	Overheating:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Overheating:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )

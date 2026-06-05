@@ -12,12 +12,12 @@ LUI.createMenu.SpectreRisingIndicator = function ( f1_arg0, f1_arg1 )
 	f1_local1:addElementToPendingUpdateStateList( self )
 	
 	local BountyIndicator = LUI.UIImage.new( 0.5, 0.5, -30, 30, 0.5, 0.5, -30, 30 )
-	BountyIndicator:setImage( RegisterImage( 0x651B795DA754E93 ) )
+	BountyIndicator:setImage( RegisterImage( "uie_ui_hud_wz_hud_bounty" ) )
 	self:addElement( BountyIndicator )
 	self.BountyIndicator = BountyIndicator
 	
 	local pointer = LUI.UIImage.new( 0.5, 0.5, -37.5, 37.5, 0.5, 0.5, -1, 74 )
-	pointer:setImage( RegisterImage( 0x63910B0A0B26F0D ) )
+	pointer:setImage( RegisterImage( "uie_ui_hud_wz_hud_bounty_pointer" ) )
 	self:addElement( pointer )
 	self.pointer = pointer
 	

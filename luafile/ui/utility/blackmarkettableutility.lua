@@ -9,7 +9,7 @@ CoD.BlackMarketTableUtility[0xC73F5908A5FD309] = function ( f1_arg0 )
 		}
 	else
 		return {
-			title = 0x0
+			title = ""
 		}
 	end
 end
@@ -17,7 +17,7 @@ end
 CoD.BlackMarketTableUtility.DEFAULT_RNG_CP_PRICE = 100
 CoD.BlackMarketTableUtility.DEFAULT_RNG_CASE_PRICE = 2
 CoD.BlackMarketTableUtility.MasterContractTable = {}
-CoD.BlackMarketTableUtility.MasterContractTable.name = 0x9FA37692BF3254F
+CoD.BlackMarketTableUtility.MasterContractTable.name = "gamedata/loot/loot_contracts.csv"
 CoD.BlackMarketTableUtility.MasterContractTable.COL_ID = 0
 CoD.BlackMarketTableUtility.MasterContractTable.COL_NAMEHASH = 1
 CoD.BlackMarketTableUtility.MasterContractTable.COL_RARITY = 2
@@ -41,70 +41,70 @@ CoD.BlackMarketTableUtility.ContractsTable.COL_MPPRT = 10
 CoD.BlackMarketTableUtility.ContractsTable.COL_WZPRT = 11
 CoD.BlackMarketTableUtility.ContractsTable.COL_OUTFIT = 12
 CoD.BlackMarketTableUtility.ContractsTable.names = {
-	[0xD3916C363E9B980] = 0xAF012FA447E54A0,
-	[0x6F58F14E7899DEB] = 0x14D835E744D0CB,
-	[0xFA997983AA038DC] = 0xA5316D31DE70234,
-	[0xD5B58A7C44E0BC9] = 0xDB3F62E91D6D4AD,
-	[0x650E2D48996A074] = 0x336BD62B45CB0D0,
-	[0x752D82E21C59CA2] = 0xC64CBCB4009D532,
-	["loot_contract_battery_muertos"] = 0x6E3947D0C285856,
-	[0x1B99BA75FC6815B] = 0xA197B26A979BA03,
-	[0x62B4C89DF6C4748] = 0xB792A1E77329130,
-	[0x5572016F98EBF] = 0xDFF687B4909D53F,
-	[0x54FEC57E810F500] = 0x3AD22FE59BB6FCC,
-	[0x6CBA3B9A82EECC0] = 0xB1CFFC7C5038848,
-	[0x76BC271DD0D0153] = 0x5E7BDCB5AC08E9F,
-	[0xEF3BA6380C215FA] = 0xB98D930AAAF7316,
-	[0xCE320ACBEC7290] = 0x13CEC2364DF5AFC,
-	[0x6C3A0C6A5852E6C] = 0x95E85714371B8FC,
-	[0x5F6E52B608F6C7E] = 0x145AE564FD82FBE,
-	["loot_contract_patriot"] = 0x2198DABA1541BB6,
-	[0xDB59140223584C0] = 0xA6F0C62E947A34,
-	[0xFEE79CED1E551FE] = 0x827A99C57C1B6C2,
-	["loot_contract_zero_cyberpunk"] = 0x3DAB37E1DEF60D3,
-	[0xFC6CB71E2F11C96] = 0x31C625E585AA402,
-	[0x604EA469518489] = 0x8FC5C29700A10C9,
-	[0xAF2C89CAAA95830] = 0xB4AC0940ECC3F38,
-	[0x8C5F9C26D6BFD62] = 0x25A0D37D7ABC4BA,
-	[0xE19340EC03E16E2] = 0x26775083C09AC62,
-	[0xA9F4E2CBBA7040C] = 0x564E6A117034834,
-	[0xE7FDE1BD5E47B70] = 0x94BD1A0F5BF3C10,
-	[0x5D47C8C08C8A28B] = 0xC83D1A0A6BA0F7B,
-	["loot_contract_misty"] = 0xA5195F46F22BC31,
-	[0xEFF03983B758670] = 0xDDDFFB3C508A690,
-	[0x223F86D05190129] = 0xEDA0608CF97548D,
-	[0xAB1C8C15097A6A7] = 0xBF4180C336F0D0B,
-	[0x42A1EC8C7D527CB] = 0x80C722259A9950F,
-	[0xD310A26870C9133] = 0x25C3644FDCCCFAF,
-	[0x35B8EE2FFF03EE6] = 0xDE297F3D53BD86E,
-	[0x403D89F35E32813] = 0x6586E2580AADDB,
-	["loot_contract_fourth_of_july_event_stream"] = 0x8D926D4195CCFC8,
-	[0x634027E6133E1B0] = 0xDB01E2D49663E38,
-	["loot_contract_replacer_vacation"] = 0xC2657C533E45C45,
-	[0x93237993610A155] = 0x5664BCA02258FE5,
-	[0x1BDE9579F6B96DB] = 0x6B7E027B542D407,
-	[0xB41BB8669A0A872] = 0x4D842D45F57F3A6,
-	[0xC600181600E00BB] = 0x68C66D2BE918A3F,
-	[0xEBF29638C829434] = 0xD55311398568128,
-	[0x2253E31EE802772] = 0x9965A9AE971DADE,
-	[0xA06A927097B05A5] = 0x76D9062C3C37CB5,
-	[0x5BB4569C8A011FE] = 0xF2AFDC5580487CA,
-	[0x2E547864133321] = 0x986664E382AA135,
-	[0x22E668AD573497] = 0xECD1931CDCEB2FB
+	loot_contract_nomad_muertos = 0xAF012FA447E54A0,
+	loot_contract_ruin_muertos = 0x14D835E744D0CB,
+	loot_contract_recon_muertos = 0xA5316D31DE70234,
+	loot_contract_prophet_muertos = 0xDB3F62E91D6D4AD,
+	loot_contract_crash_muertos = 0x336BD62B45CB0D0,
+	loot_contract_ajax_roman_warrior = 0xC64CBCB4009D532,
+	loot_contract_battery_muertos = 0x6E3947D0C285856,
+	loot_contract_recon_samurai = 0xA197B26A979BA03,
+	loot_contract_ruin_modern_viking = 0xB792A1E77329130,
+	loot_contract_torque_muertos = 0xDFF687B4909D53F,
+	loot_contract_seraph_muertos = 0x3AD22FE59BB6FCC,
+	loot_contract_seraph_crimson_lotus = 0xB1CFFC7C5038848,
+	loot_contract_ajax_muertos = 0x5E7BDCB5AC08E9F,
+	loot_contract_halloween = 0xB98D930AAAF7316,
+	loot_contract_firebreak_muertos = 0x13CEC2364DF5AFC,
+	loot_contract_torque_highlander = 0x95E85714371B8FC,
+	loot_contract_seraph_splinter = 0x145AE564FD82FBE,
+	loot_contract_patriot = 0x2198DABA1541BB6,
+	loot_contract_carbon_cobra = 0xA6F0C62E947A34,
+	loot_contract_nomad_splinter = 0x827A99C57C1B6C2,
+	loot_contract_zero_cyberpunk = 0x3DAB37E1DEF60D3,
+	loot_contract_battery_snakeskin = 0x31C625E585AA402,
+	loot_contract_richtofen = 0x8FC5C29700A10C9,
+	loot_contract_crash_snakeskin = 0xB4AC0940ECC3F38,
+	loot_contract_valkyrie = 0x25A0D37D7ABC4BA,
+	loot_contract_winter = 0x26775083C09AC62,
+	loot_contract_firebreak_snakeskin = 0x564E6A117034834,
+	loot_contract_season_2_bonus_stream = 0x94BD1A0F5BF3C10,
+	loot_contract_party_rock = 0xC83D1A0A6BA0F7B,
+	loot_contract_misty = 0xA5195F46F22BC31,
+	loot_contract_nomad_heist = 0xDDDFFB3C508A690,
+	loot_contract_space_shuttle = 0xEDA0608CF97548D,
+	loot_contract_seraph_cop = 0xBF4180C336F0D0B,
+	loot_contract_crash_cop = 0x80C722259A9950F,
+	loot_contract_deep_voyage = 0x25C3644FDCCCFAF,
+	loot_contract_sergei = 0xDE297F3D53BD86E,
+	loot_contract_ahabs_revenge = 0x6586E2580AADDB,
+	loot_contract_fourth_of_july_event_stream = 0x8D926D4195CCFC8,
+	loot_contract_russman = 0xDB01E2D49663E38,
+	loot_contract_replacer_vacation = 0xC2657C533E45C45,
+	loot_contract_koshka_mastercraft = 0x5664BCA02258FE5,
+	loot_contract_icr7_mastercraft = 0x6B7E027B542D407,
+	loot_contract_afterglow = 0x4D842D45F57F3A6,
+	loot_contract_rampart_mastercraft = 0x68C66D2BE918A3F,
+	loot_contract_tedd = 0xD55311398568128,
+	loot_contract_labor_day_event_stream = 0x9965A9AE971DADE,
+	loot_contract_gks_mastercraft = 0x76D9062C3C37CB5,
+	loot_contract_stuhlinger = 0xF2AFDC5580487CA,
+	loot_contract_kn57_mastercraft = 0x986664E382AA135,
+	loot_contract_grigori_weaver = 0xECD1931CDCEB2FB
 }
 CoD.BlackMarketTableUtility.StatBasedOutfitUnlocks = {
-	["zm_halloween_2018_reward_1"] = {
+	zm_halloween_2018_reward_1 = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
 			0xB52E51401F0229C,
-			0xEA9AC6C7DB71C76,
+			"zm_halloween_2018",
 			"reward_1"
 		},
 		lockedStringRef = 0x369ABF4C17436E3,
 		unlockedStringRef = 0xD655AC8E9A3ACCC,
 		itemUnlockable = function ()
 			local f2_local0 = CoD.SpecialEventUtility.GetCurrentSpecialEventInfo()
-			return f2_local0 and f2_local0.statHash == 0xEA9AC6C7DB71C76
+			return f2_local0 and f2_local0.statHash == "zm_halloween_2018"
 		end,
 		lootIds = {
 			0xA17204F81E27EA0,
@@ -131,18 +131,18 @@ CoD.BlackMarketTableUtility.StatBasedOutfitUnlocks = {
 			0x3716D88CBAEEB95
 		}
 	},
-	["zm_halloween_2018_reward_2"] = {
+	zm_halloween_2018_reward_2 = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
 			0xB52E51401F0229C,
-			0xEA9AC6C7DB71C76,
+			"zm_halloween_2018",
 			"reward_2"
 		},
 		lockedStringRef = 0x369ABF4C17436E3,
 		unlockedStringRef = 0xD655AC8E9A3ACCC,
 		itemUnlockable = function ()
 			local f3_local0 = CoD.SpecialEventUtility.GetCurrentSpecialEventInfo()
-			return f3_local0 and f3_local0.statHash == 0xEA9AC6C7DB71C76
+			return f3_local0 and f3_local0.statHash == "zm_halloween_2018"
 		end,
 		lootIds = {
 			0xECB296F71F5F325,
@@ -169,18 +169,18 @@ CoD.BlackMarketTableUtility.StatBasedOutfitUnlocks = {
 			0x88070541D135C3C
 		}
 	},
-	["zm_halloween_2018_reward_3"] = {
+	zm_halloween_2018_reward_3 = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
 			0xB52E51401F0229C,
-			0xEA9AC6C7DB71C76,
+			"zm_halloween_2018",
 			"reward_3"
 		},
 		lockedStringRef = 0x369ABF4C17436E3,
 		unlockedStringRef = 0xD655AC8E9A3ACCC,
 		itemUnlockable = function ()
 			local f4_local0 = CoD.SpecialEventUtility.GetCurrentSpecialEventInfo()
-			return f4_local0 and f4_local0.statHash == 0xEA9AC6C7DB71C76
+			return f4_local0 and f4_local0.statHash == "zm_halloween_2018"
 		end,
 		lootIds = {
 			0xA3922047F487AC,
@@ -207,18 +207,18 @@ CoD.BlackMarketTableUtility.StatBasedOutfitUnlocks = {
 			0x2CCDA68FB9F2501
 		}
 	},
-	["zm_halloween_2018_reward_4"] = {
+	zm_halloween_2018_reward_4 = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
 			0xB52E51401F0229C,
-			0xEA9AC6C7DB71C76,
+			"zm_halloween_2018",
 			"reward_4"
 		},
 		lockedStringRef = 0x369ABF4C17436E3,
 		unlockedStringRef = 0xD655AC8E9A3ACCC,
 		itemUnlockable = function ()
 			local f5_local0 = CoD.SpecialEventUtility.GetCurrentSpecialEventInfo()
-			return f5_local0 and f5_local0.statHash == 0xEA9AC6C7DB71C76
+			return f5_local0 and f5_local0.statHash == "zm_halloween_2018"
 		end,
 		lootIds = {
 			0x75912091D384F94,
@@ -245,18 +245,18 @@ CoD.BlackMarketTableUtility.StatBasedOutfitUnlocks = {
 			0xF754311FE4C0539
 		}
 	},
-	[0x87D5FCC96142CF4] = {
+	zm_winter_2018_reward_1 = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
 			0xB52E51401F0229C,
-			0xEE6634B4CB6E9E2,
+			"zm_winter_2018",
 			"reward_1"
 		},
 		lockedStringRef = 0x59A4FBDA30BC349,
 		unlockedStringRef = 0x780F5BDCFEFA0A6,
 		itemUnlockable = function ()
 			local f6_local0 = CoD.SpecialEventUtility.GetCurrentSpecialEventInfo()
-			return f6_local0 and f6_local0.statHash == 0xEE6634B4CB6E9E2
+			return f6_local0 and f6_local0.statHash == "zm_winter_2018"
 		end,
 		lootIds = {
 			0xAD487C35DCF6FC3,
@@ -284,18 +284,18 @@ CoD.BlackMarketTableUtility.StatBasedOutfitUnlocks = {
 			0x55A382B548E2098
 		}
 	},
-	[0x87D62CC9614320D] = {
+	zm_winter_2018_reward_2 = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
 			0xB52E51401F0229C,
-			0xEE6634B4CB6E9E2,
+			"zm_winter_2018",
 			"reward_2"
 		},
 		lockedStringRef = 0x59A4FBDA30BC349,
 		unlockedStringRef = 0x780F5BDCFEFA0A6,
 		itemUnlockable = function ()
 			local f7_local0 = CoD.SpecialEventUtility.GetCurrentSpecialEventInfo()
-			return f7_local0 and f7_local0.statHash == 0xEE6634B4CB6E9E2
+			return f7_local0 and f7_local0.statHash == "zm_winter_2018"
 		end,
 		lootIds = {
 			0xFAE28D345693152,
@@ -323,18 +323,18 @@ CoD.BlackMarketTableUtility.StatBasedOutfitUnlocks = {
 			0xF008EDB198501B7
 		}
 	},
-	[0x87D61CC9614305A] = {
+	zm_winter_2018_reward_3 = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
 			0xB52E51401F0229C,
-			0xEE6634B4CB6E9E2,
+			"zm_winter_2018",
 			"reward_3"
 		},
 		lockedStringRef = 0x59A4FBDA30BC349,
 		unlockedStringRef = 0x780F5BDCFEFA0A6,
 		itemUnlockable = function ()
 			local f8_local0 = CoD.SpecialEventUtility.GetCurrentSpecialEventInfo()
-			return f8_local0 and f8_local0.statHash == 0xEE6634B4CB6E9E2
+			return f8_local0 and f8_local0.statHash == "zm_winter_2018"
 		end,
 		lootIds = {
 			0x39531747A150EC2,
@@ -362,18 +362,18 @@ CoD.BlackMarketTableUtility.StatBasedOutfitUnlocks = {
 			0xC698394A5B92C7
 		}
 	},
-	[0x87D5CCC961427DB] = {
+	zm_winter_2018_reward_4 = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
 			0xB52E51401F0229C,
-			0xEE6634B4CB6E9E2,
+			"zm_winter_2018",
 			"reward_4"
 		},
 		lockedStringRef = 0x59A4FBDA30BC349,
 		unlockedStringRef = 0x780F5BDCFEFA0A6,
 		itemUnlockable = function ()
 			local f9_local0 = CoD.SpecialEventUtility.GetCurrentSpecialEventInfo()
-			return f9_local0 and f9_local0.statHash == 0xEE6634B4CB6E9E2
+			return f9_local0 and f9_local0.statHash == "zm_winter_2018"
 		end,
 		lootIds = {
 			0x31FB2969AB22B2A,
@@ -403,32 +403,32 @@ CoD.BlackMarketTableUtility.StatBasedOutfitUnlocks = {
 	}
 }
 CoD.BlackMarketTableUtility[0x33358695872A441] = {
-	[0xAAEF8C1B2CB1C79] = 0xF410B145DCE17BD,
-	[0x1205A986B4A89A7] = 0xA9842F6BEC0E568,
-	[0x814FA48F1A5AE2A] = 0x999516E5E35A515,
+	[0xAAEF8C1B2CB1C79] = "prt_wz_battery",
+	[0x1205A986B4A89A7] = "prt_wz_buffassault",
+	[0x814FA48F1A5AE2A] = "prt_wz_engineer",
 	[0x3AEA5A87AEA226F] = "prt_wz_firebreak",
-	[0xADFBB57B3F4939E] = 0x3D7717027A0F92,
-	[0xD1E23073FFE5E47] = 0xB77F84C47802222,
-	[0x2802518C8458986] = 0x2361C68E083D401,
-	[0x2031E9BA4DA5393] = 0x8C357C8A5680D67,
-	[0x2C6BA9E60BDB826] = 0x3B894FA4D634238,
-	[0x682F9EF36F4D4AD] = 0x7C02481305F0E24,
-	[0xEE280A4B988F4FB] = 0x9BBE1EC48F79DF5,
-	[0x1DE4E977B12948] = 0xDC888EECACF65D4,
-	[0xFE24B15C9DE2184] = 0xEE2659E8DFF07D8,
-	[0xE89B11A63B156A] = 0x6CCE42BFC9866CD
+	[0xADFBB57B3F4939E] = "prt_wz_zero",
+	[0xD1E23073FFE5E47] = "prt_wz_trapper",
+	[0x2802518C8458986] = "prt_wz_technomancer",
+	[0x2031E9BA4DA5393] = "prt_wz_recon",
+	[0x2C6BA9E60BDB826] = "prt_wz_mercenary",
+	[0x682F9EF36F4D4AD] = "prt_wz_enforcer",
+	[0xEE280A4B988F4FB] = "prt_wz_swatpolice",
+	[0x1DE4E977B12948] = "prt_wz_outrider",
+	[0xFE24B15C9DE2184] = "prt_wz_spectre",
+	[0xE89B11A63B156A] = "prt_wz_reaper_bo4"
 }
-CoD.BlackMarketTableUtility[0x986E4198CE10DF3] = 0x9A9BD2389B3C356
+CoD.BlackMarketTableUtility[0x986E4198CE10DF3] = "loot_weapon_deathfx_raven"
 CoD.BlackMarketTableUtility[0x3C671F618E1D758] = {
 	linkedLootIdTable = CoD.BlackMarketTableUtility[0x33358695872A441],
 	lockedStringRef = 0x6F8A6FDE43A4789,
 	unlockedStringRef = 0x76D201B1691A3E6
 }
 CoD.BlackMarketTableUtility[0x48F022EAF4F53A3] = {
-	[0x849C0C137A5F87A] = {
+	ui_icon_stickers_gauntlet_unsinkable = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
-			0xD59E8BFAC78A33B,
+			"playerstatslist",
 			0x2C88C6128E0BE61,
 			"statvalue"
 		},
@@ -438,10 +438,10 @@ CoD.BlackMarketTableUtility[0x48F022EAF4F53A3] = {
 			return false
 		end
 	},
-	[0x15614685BC4E85E] = {
+	ui_icon_stickers_gauntlet_vinividizombie = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
-			0xD59E8BFAC78A33B,
+			"playerstatslist",
 			0xD31F5C1693D096,
 			"statvalue"
 		},
@@ -451,10 +451,10 @@ CoD.BlackMarketTableUtility[0x48F022EAF4F53A3] = {
 			return false
 		end
 	},
-	[0xB8EAEE9FABFC3AC] = {
+	ui_icon_stickers_gauntlet_deathconfive = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
-			0xD59E8BFAC78A33B,
+			"playerstatslist",
 			0xFEEBDA8BD7FDC,
 			"statvalue"
 		},
@@ -464,10 +464,10 @@ CoD.BlackMarketTableUtility[0x48F022EAF4F53A3] = {
 			return false
 		end
 	},
-	["ui_icon_stickers_gauntlet_hellcatraz"] = {
+	ui_icon_stickers_gauntlet_hellcatraz = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
-			0xD59E8BFAC78A33B,
+			"playerstatslist",
 			0x402D97CCDAE530F,
 			"statvalue"
 		},
@@ -477,10 +477,10 @@ CoD.BlackMarketTableUtility[0x48F022EAF4F53A3] = {
 			return false
 		end
 	},
-	[0xFC2CC342ABE6E3A] = {
+	loot_ui_icon_stickers_zm_wolf_moon = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
-			0xD59E8BFAC78A33B,
+			"playerstatslist",
 			0x3D2D5674D304C2D,
 			"statvalue"
 		},
@@ -490,10 +490,10 @@ CoD.BlackMarketTableUtility[0x48F022EAF4F53A3] = {
 			return false
 		end
 	},
-	[0xB11C88B67CC5AAE] = {
+	loot_ui_icon_stickers_zm_delphi = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
-			0xD59E8BFAC78A33B,
+			"playerstatslist",
 			0x12C92D966D3F90B,
 			"statvalue"
 		},
@@ -503,10 +503,10 @@ CoD.BlackMarketTableUtility[0x48F022EAF4F53A3] = {
 			return false
 		end
 	},
-	[0x4FC1A6022BC8E4] = {
+	ui_icon_stickers_gauntlet_unsinkable_variant_1 = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
-			0xD59E8BFAC78A33B,
+			"playerstatslist",
 			0x5A6063DD5DC5425,
 			"statvalue"
 		},
@@ -519,7 +519,7 @@ CoD.BlackMarketTableUtility[0x48F022EAF4F53A3] = {
 	[0x2EB1680B294E084] = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
-			0xD59E8BFAC78A33B,
+			"playerstatslist",
 			0x5018EB03FB43999,
 			"statvalue"
 		},
@@ -532,7 +532,7 @@ CoD.BlackMarketTableUtility[0x48F022EAF4F53A3] = {
 	[0xA15336CFB3AE9CE] = {
 		storageFile = Enum.StorageFileType[0xA57D6164B91A8FC],
 		path = {
-			0xD59E8BFAC78A33B,
+			"playerstatslist",
 			0x5FB724D439B8956,
 			"statvalue"
 		},
@@ -567,13 +567,13 @@ CoD.BlackMarketTableUtility.GetStatsBasedUnlockId = function ()
 			end
 		end
 		for f19_local8, f19_local9 in pairs( CoD.BlackMarketTableUtility[0x33358695872A441] ) do
-			local f19_local3 = Enum.eModes[0xBF1DCC8138A9D39]
+			local f19_local3 = Enum.eModes.mode_warzone
 			CoD.BlackMarketTableUtility.StatsBasedUnlockId[f19_local8] = {
 				storageFile = Enum.StorageFileType[0xAB0E693244221BC],
 				path = {
-					0x147738D5CEE9199,
+					"characters",
 					f19_local9,
-					0xA55E1714AECC27C
+					"unlocked"
 				},
 				lockedStringLookup = function ()
 					local f20_local0 = Engine[0x84E3CB0C7D8BA11]( f19_local3, f19_local9 )
@@ -599,27 +599,27 @@ CoD.BlackMarketTableUtility.GetStatsBasedUnlockId = function ()
 					local f22_local0 = Engine[0x84E3CB0C7D8BA11]( f19_local3, f19_local9 )
 					if f22_local0 then
 						local f22_local1 = Engine[0xB678B832BC9DC0]( f19_local3, f22_local0 )
-						if f22_local1[0x5B085B6F0EF35E2] and f22_local1[0x5B085B6F0EF35E2] ~= 0x0 and not IsBooleanDvarSet( f22_local1[0x5B085B6F0EF35E2] ) then
+						if f22_local1[0x5B085B6F0EF35E2] and f22_local1[0x5B085B6F0EF35E2] ~= "" and not IsBooleanDvarSet( f22_local1[0x5B085B6F0EF35E2] ) then
 							return false
 						end
 					end
-					return IsBooleanDvarSet( 0xA5FD7D94CFC9DFD )
+					return IsBooleanDvarSet( "wz_mp_character_unlocks_outfits" )
 				end,
 				notOwnedWhenUnavilable = true
 			}
 		end
 		for f19_local8, f19_local9 in ipairs( {
-			0xC068BC5135B7DF0,
-			0xB8F5BADEA243DDA,
-			0x8AE86C11D64760A,
-			0x8AE81C11D646D8B,
-			0xC057428D4E91AE8,
-			0x1A942F2AEECCB69
+			"loot_tags_halloweenevent_jack_final",
+			"loot_tags_halloweenevent_monster",
+			"loot_tags_halloweenevent_monster_1",
+			"loot_tags_halloweenevent_monster_6",
+			"loot_tags_halloweenevent_phantasm",
+			"loot_tags_halloweenevent_werewolf"
 		} ) do
 			CoD.BlackMarketTableUtility.StatsBasedUnlockId[f19_local9] = {
 				storageFile = Enum.StorageFileType[0xAB0E693244221BC],
 				path = {
-					0xEE8B4A6073F7825,
+					"unlockedtags",
 					f19_local9
 				},
 				unlockedStringRef = 0x74BDFDE54AFF033,
@@ -628,7 +628,7 @@ CoD.BlackMarketTableUtility.GetStatsBasedUnlockId = function ()
 				end
 			}
 		end
-		if CoD.ZombiesCallingsUtility and IsBooleanDvarSet( 0x1DA02CA40639DE5 ) then
+		if CoD.ZombiesCallingsUtility and IsBooleanDvarSet( "faction_callings_enabled_zm" ) then
 			CoD.ZombiesCallingsUtility.AddFactionCallingStatUnlocks( CoD.BlackMarketTableUtility.StatsBasedUnlockId )
 		end
 	end
@@ -636,11 +636,11 @@ CoD.BlackMarketTableUtility.GetStatsBasedUnlockId = function ()
 end
 
 CoD.BlackMarketTableUtility[0xB789987DAEDF129] = {
-	["loot_pistol_standard_sig_01"] = "346173322",
-	[0x5B27C275D00AFF6] = "345570600"
+	loot_pistol_standard_sig_01 = "346173322",
+	loot_ar_fastfire_sig_01 = "345570600"
 }
 CoD.BlackMarketTableUtility[0xACB591F93627122] = {
-	[0x230D8D739579C05] = {
+	loot_smg_standard_sig_01 = {
 		entitlement = 0xC94ED95E25D8246,
 		deluxe_pack_id = "500016",
 		itemID = "377952817"
@@ -664,28 +664,28 @@ CoD.BlackMarketTableUtility[0x5DDB72D0172A035] = function ( f24_arg0, f24_arg1 )
 end
 
 CoD.BlackMarketTableUtility[0x152E2ED863A7D7A] = {
-	["c_t8_bo_jumpkit_game_cartridge"] = {
-		entitlement = 0x15BE56C5EA0253,
+	c_t8_bo_jumpkit_game_cartridge = {
+		entitlement = "blackops_pack_spectre",
 		_id = "500036",
 		itemID = "445584988"
 	},
 	[0x68A29BD720AEEFB] = {
-		entitlement = 0x15BE56C5EA0253,
+		entitlement = "blackops_pack_spectre",
 		_id = "500036",
 		itemID = "437925560"
 	},
-	[0x3617BA9FBFD5096] = {
-		entitlement = 0x77B58D9F38DE25F,
+	loot_character_trejo = {
+		entitlement = "blackops_pack_survivor",
 		_id = "500037",
 		itemID = "423973420"
 	},
-	[0x9584B062F88908D] = {
-		entitlement = 0x77B58D9F38DE25F,
+	jumppack_hide = {
+		entitlement = "blackops_pack_survivor",
 		_id = "500037",
 		itemID = "476947721"
 	},
-	[0x52641DAB6CBB097] = {
-		entitlement = 0x77B58D9F38DE25F,
+	charm_9mm_bullet = {
+		entitlement = "blackops_pack_survivor",
 		_id = "500037",
 		itemID = "404926528"
 	}
@@ -772,16 +772,16 @@ CoD.BlackMarketTableUtility[0x62B0EE548400BF2] = function ( f26_arg0, f26_arg1 )
 end
 
 CoD.BlackMarketTableUtility[0x14DE8345BDDBCA8] = {
-	[0x41D42086962443D] = 500201,
-	[0x5D901B2845AFFB5] = 500202,
-	[0x71546989F2B39C0] = 500203,
-	[0x7C8471AD085983B] = 500204,
-	["pbt_mp_trapper"] = 500205,
-	[0x4A7B1F09EB77129] = 500206,
-	[0x65A8BFE9E6A3A8F] = 500207,
-	[0x15EFCE6AF8D9A10] = 500208,
-	[0x5ABB557417D97BC] = 500209,
-	[0x4C5E1C04823489D] = 500210
+	pbt_mp_swatpolice = 500201,
+	pbt_mp_battery = 500202,
+	pbt_mp_buffassault = 500203,
+	pbt_mp_firebreak = 500204,
+	pbt_mp_trapper = 500205,
+	pbt_mp_technomancer = 500206,
+	pbt_mp_recon = 500207,
+	pbt_mp_mercenary = 500208,
+	pbt_mp_enforcer = 500209,
+	pbt_mp_engineer = 500210
 }
 CoD.BlackMarketTableUtility[0x21632E84A5AAF71] = function ( f27_arg0 )
 	return CoD.BlackMarketTableUtility[0x14DE8345BDDBCA8][f27_arg0]
@@ -793,10 +793,10 @@ CoD.BlackMarketTableUtility.GetInfoIfOnlyOwnedNonBaseWeapon = function ( f28_arg
 		if f28_local0 and #f28_local0 > 0 then
 			for f28_local6, f28_local7 in ipairs( f28_local0 ) do
 				if f28_local7 then
-					local f28_local4 = f28_local7["lootid"]
+					local f28_local4 = f28_local7.lootid
 					local f28_local5 = CoD.BlackMarketTableUtility.GetContrabandInfoForPlayer( f28_arg0, f28_local4, f28_arg4 )
 					if f28_local5 and f28_local5.owned and not CoD.CACUtility.DvarHideUnlockableItem( f28_local4, Engine.CurrentSessionMode() ) then
-						f28_local5.useVariantSlot = f28_local7["index"]
+						f28_local5.useVariantSlot = f28_local7.index
 						return f28_local5
 					end
 				end
@@ -812,7 +812,7 @@ CoD.BlackMarketTableUtility.FindCorrectRow = function ( f29_arg0, f29_arg1, f29_
 	for f29_local4, f29_local5 in ipairs( f29_arg0 ) do
 		if f29_arg2.weaponRef then
 			local f29_local3 = Engine[0xC6F8EC444864600]( f29_arg1, f29_local5, f29_arg3 )
-			if not f29_local3 or f29_local3 == 0x0 or f29_local3 == f29_arg2.weaponRef then
+			if not f29_local3 or f29_local3 == "" or f29_local3 == f29_arg2.weaponRef then
 				return f29_local5
 			end
 		end
@@ -869,7 +869,7 @@ CoD.BlackMarketTableUtility.GetContractItemsByTier = function ( f33_arg0, f33_ar
 				for f33_local4 = 1, #f33_local3, 1 do
 					if f33_local3[f33_local4].flags >= LuaEnum.LOOT_FLAGS.VALID then
 						local f33_local7 = CoD.BlackMarketTableUtility.GetContractItemInfo( f33_arg0, f33_arg1, tostring( f33_local3[f33_local4].name ) )
-						if f33_local7 == nil or f33_local7.name == 0x0 then
+						if f33_local7 == nil or f33_local7.name == "" then
 							f33_local7 = CoD.BlackMarketTableUtility.GetContrabandItemInfo( f33_arg0, tostring( f33_local3[f33_local4].name ), f33_arg2 )
 						end
 						if f33_local7 ~= nil then
@@ -882,7 +882,7 @@ CoD.BlackMarketTableUtility.GetContractItemsByTier = function ( f33_arg0, f33_ar
 						end
 					end
 					table.insert( f33_local0, {
-						name = 0x0,
+						name = "",
 						gap = true
 					} )
 				end
@@ -906,9 +906,9 @@ CoD.BlackMarketTableUtility.GetContractCompletionTier = function ( f34_arg0, f34
 	if f34_local0 ~= nil then
 		for f34_local5, f34_local6 in pairs( CoDShared.Loot.ContractSlots ) do
 			if f34_local6 ~= nil then
-				local f34_local4 = f34_local0[0x5951A0A644A98FB][f34_local6]
-				if f34_local4 ~= nil and f34_arg1 == f34_local4[0x871FFFC5C709FEE]:get() then
-					return f34_local4[0xE9906ECAFE9EDD7]:get()
+				local f34_local4 = f34_local0.loot_contracts[f34_local6]
+				if f34_local4 ~= nil and f34_arg1 == f34_local4.contractid:get() then
+					return f34_local4.completiontier:get()
 				end
 			end
 		end
@@ -928,7 +928,7 @@ CoD.BlackMarketTableUtility.GetContractItemsByRelativeTier = function ( f35_arg0
 	if CoD.BlackMarketUtility.IsContractCompleted( f35_arg0, f35_local0.id ) then
 		local f35_local5 = nil
 		local f35_local6 = CoDShared.Loot.GetCurrentEventContract()
-		if f35_local6 ~= nil and f35_local6 ~= 0x0 then
+		if f35_local6 ~= nil and f35_local6 ~= "" then
 			local f35_local7 = CoDShared.Loot.GetContractInfo( f35_arg0, f35_local6 )
 			if f35_local7 ~= nil then
 				f35_local5 = f35_local7.id
@@ -1007,9 +1007,9 @@ end
 CoD.BlackMarketTableUtility.GetContractPalette = function ( f38_arg0, f38_arg1 )
 	local f38_local0 = CoD.BlackMarketTableUtility.GetContractInfo( f38_arg1 )
 	if f38_local0 and CoD.BlackMarketTableUtility.ContractsTable.names[f38_local0.namehash] then
-		local f38_local1 = Engine.TableFindRows( CoD.BlackMarketTableUtility.ContractsTable.names[f38_local0.namehash], CoD.BlackMarketTableUtility.ContractsTable.COL_TYPE, 0xDD691088352B680 )
+		local f38_local1 = Engine.TableFindRows( CoD.BlackMarketTableUtility.ContractsTable.names[f38_local0.namehash], CoD.BlackMarketTableUtility.ContractsTable.COL_TYPE, "palette" )
 		if f38_local1 == nil then
-			return 0x0
+			return ""
 		else
 			return Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContractsTable.names[f38_local0.namehash], f38_local1[1], CoD.BlackMarketTableUtility.ContractsTable.COL_NAMEHASH )
 		end
@@ -1021,9 +1021,9 @@ end
 CoD.BlackMarketTableUtility.GetContractSignatureWeapon = function ( f39_arg0, f39_arg1 )
 	local f39_local0 = CoD.BlackMarketTableUtility.GetContractInfo( f39_arg1 )
 	if f39_local0 and CoD.BlackMarketTableUtility.ContractsTable.names[f39_local0.namehash] then
-		local f39_local1 = Engine.TableFindRows( CoD.BlackMarketTableUtility.ContractsTable.names[f39_local0.namehash], CoD.BlackMarketTableUtility.ContractsTable.COL_TYPE, 0xCC13B0F8EEFF726 )
+		local f39_local1 = Engine.TableFindRows( CoD.BlackMarketTableUtility.ContractsTable.names[f39_local0.namehash], CoD.BlackMarketTableUtility.ContractsTable.COL_TYPE, "signature_weapon" )
 		if f39_local1 == nil then
-			return 0x0
+			return ""
 		else
 			return Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContractsTable.names[f39_local0.namehash], f39_local1[#f39_local1], CoD.BlackMarketTableUtility.ContractsTable.COL_NAMEHASH )
 		end
@@ -1035,9 +1035,9 @@ end
 CoD.BlackMarketTableUtility.GetContractReactiveCamoRef = function ( f40_arg0, f40_arg1 )
 	local f40_local0 = CoD.BlackMarketTableUtility.GetContractInfo( f40_arg1 )
 	if f40_local0 and CoD.BlackMarketTableUtility.ContractsTable.names[f40_local0.namehash] then
-		local f40_local1 = Engine.TableFindRows( CoD.BlackMarketTableUtility.ContractsTable.names[f40_local0.namehash], CoD.BlackMarketTableUtility.ContractsTable.COL_TYPE, 0xF6D84B91339C8B )
+		local f40_local1 = Engine.TableFindRows( CoD.BlackMarketTableUtility.ContractsTable.names[f40_local0.namehash], CoD.BlackMarketTableUtility.ContractsTable.COL_TYPE, "reactive_camo" )
 		if f40_local1 == nil then
-			return 0x0
+			return ""
 		else
 			return Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContractsTable.names[f40_local0.namehash], f40_local1[#f40_local1], CoD.BlackMarketTableUtility.ContractsTable.COL_NAMEHASH ), Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContractsTable.names[f40_local0.namehash], f40_local1[#f40_local1], CoD.BlackMarketTableUtility.ContractsTable.COL_REFWEAPON )
 		end
@@ -1049,9 +1049,9 @@ end
 CoD.BlackMarketTableUtility.GetContractMastercraft = function ( f41_arg0, f41_arg1 )
 	local f41_local0 = CoD.BlackMarketTableUtility.GetContractInfo( f41_arg1 )
 	if f41_local0 and CoD.BlackMarketTableUtility.ContractsTable.names[f41_local0.namehash] then
-		local f41_local1 = Engine.TableFindRows( CoD.BlackMarketTableUtility.ContractsTable.names[f41_local0.namehash], CoD.BlackMarketTableUtility.ContractsTable.COL_TYPE, 0xD74CF5A087733F7 )
+		local f41_local1 = Engine.TableFindRows( CoD.BlackMarketTableUtility.ContractsTable.names[f41_local0.namehash], CoD.BlackMarketTableUtility.ContractsTable.COL_TYPE, "mastercraft" )
 		if f41_local1 == nil then
-			return 0x0
+			return ""
 		else
 			return Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContractsTable.names[f41_local0.namehash], f41_local1[#f41_local1], CoD.BlackMarketTableUtility.ContractsTable.COL_NAMEHASH )
 		end
@@ -1065,7 +1065,7 @@ CoD.BlackMarketTableUtility.GetContractWeaponRefName = function ( f42_arg0, f42_
 	if f42_local0 and CoD.BlackMarketTableUtility.ContractsTable.names[f42_local0.namehash] then
 		local f42_local1 = Engine.TableFindRows( CoD.BlackMarketTableUtility.ContractsTable.names[f42_local0.namehash], CoD.BlackMarketTableUtility.ContractsTable.COL_NAMEHASH, f42_arg1 )
 		if f42_local1 == nil then
-			return 0x0
+			return ""
 		else
 			return Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContractsTable.names[f42_local0.namehash], f42_local1[#f42_local1], CoD.BlackMarketTableUtility.ContractsTable.COL_REFWEAPON )
 		end
@@ -1077,7 +1077,7 @@ end
 CoD.BlackMarketTableUtility.GetContractChaseOutfit = function ( f43_arg0, f43_arg1 )
 	local f43_local0 = CoD.BlackMarketTableUtility.GetContractInfo( f43_arg1 )
 	if f43_local0 and CoD.BlackMarketTableUtility.ContractsTable.names[f43_local0.namehash] then
-		local f43_local1 = Engine.TableFindRows( CoD.BlackMarketTableUtility.ContractsTable.names[f43_local0.namehash], CoD.BlackMarketTableUtility.ContractsTable.COL_TYPE, 0xDD691088352B680 )
+		local f43_local1 = Engine.TableFindRows( CoD.BlackMarketTableUtility.ContractsTable.names[f43_local0.namehash], CoD.BlackMarketTableUtility.ContractsTable.COL_TYPE, "palette" )
 		if f43_local1 == nil then
 			return nil
 		end
@@ -1096,15 +1096,15 @@ CoD.BlackMarketTableUtility.GetContractOutfitInfo = function ( f44_arg0, f44_arg
 		if f44_local1 == nil then
 			return nil
 		end
-		local f44_local2 = Enum.eModes[0x83EBA96F36BC4E5]
+		local f44_local2 = Enum.eModes.mode_multiplayer
 		local f44_local3 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContractsTable.names[f44_local0.namehash], f44_local1[#f44_local1], CoD.BlackMarketTableUtility.ContractsTable.COL_MPPRT )
-		if f44_local3 == 0x0 then
+		if f44_local3 == "" then
 			f44_local3 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContractsTable.names[f44_local0.namehash], f44_local1[#f44_local1], CoD.BlackMarketTableUtility.ContractsTable.COL_WZPRT )
-			f44_local2 = Enum.eModes[0xBF1DCC8138A9D39]
+			f44_local2 = Enum.eModes.mode_warzone
 		end
 		local f44_local4 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContractsTable.names[f44_local0.namehash], f44_local1[#f44_local1], CoD.BlackMarketTableUtility.ContractsTable.COL_OUTFIT )
 		if f44_local4 == nil then
-			f44_local4 = 0x0
+			f44_local4 = ""
 		end
 		return {
 			mode = f44_local2,
@@ -1119,9 +1119,9 @@ end
 CoD.BlackMarketTableUtility.GetContractCharacter = function ( f45_arg0, f45_arg1 )
 	local f45_local0 = CoD.BlackMarketTableUtility.GetContractInfo( f45_arg1 )
 	if f45_local0 and CoD.BlackMarketTableUtility.ContractsTable.names[f45_local0.namehash] then
-		local f45_local1 = Engine.TableFindRows( CoD.BlackMarketTableUtility.ContractsTable.names[f45_local0.namehash], CoD.BlackMarketTableUtility.ContractsTable.COL_TYPE, 0x2D79C9016401F0 )
+		local f45_local1 = Engine.TableFindRows( CoD.BlackMarketTableUtility.ContractsTable.names[f45_local0.namehash], CoD.BlackMarketTableUtility.ContractsTable.COL_TYPE, "character" )
 		if f45_local1 == nil then
-			return 0x0
+			return ""
 		else
 			return Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContractsTable.names[f45_local0.namehash], f45_local1[#f45_local1], CoD.BlackMarketTableUtility.ContractsTable.COL_NAMEHASH )
 		end
@@ -1131,9 +1131,9 @@ CoD.BlackMarketTableUtility.GetContractCharacter = function ( f45_arg0, f45_arg1
 end
 
 CoD.BlackMarketTableUtility.GetContractOutfitInformation = function ( f46_arg0, f46_arg1, f46_arg2 )
-	local f46_local0 = 0x0
-	local f46_local1 = 0x0
-	local f46_local2 = 0x0
+	local f46_local0 = ""
+	local f46_local1 = ""
+	local f46_local2 = ""
 	local f46_local3 = CoD.BlackMarketTableUtility.GetContractInfo( f46_arg2 )
 	if f46_local3 and CoD.BlackMarketTableUtility.ContractsTable.names[f46_local3.namehash] then
 		local f46_local4 = Engine.TableFindRows( CoD.BlackMarketTableUtility.ContractsTable.names[f46_local3.namehash], CoD.BlackMarketTableUtility.ContractsTable.COL_NAMEHASH, f46_arg1 )
@@ -1145,10 +1145,10 @@ CoD.BlackMarketTableUtility.GetContractOutfitInformation = function ( f46_arg0, 
 			local f46_local6 = f46_local5.prt
 			local f46_local7 = f46_local5.mode
 			local f46_local8 = f46_local5.outfit
-			if f46_local6 == 0x0 then
+			if f46_local6 == "" then
 				f46_local6 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContractsTable.names[f46_local3.namehash], f46_local4[1], CoD.BlackMarketTableUtility.ContractsTable.COL_WZPRT )
 			end
-			if f46_local8 == 0x0 then
+			if f46_local8 == "" then
 				f46_local8 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContractsTable.names[f46_local3.namehash], f46_local4[1], CoD.BlackMarketTableUtility.ContractsTable.COL_OUTFIT )
 			end
 			f46_local1 = CoD.BlackMarketTableUtility.GetContractPalette( f46_arg0, f46_arg2 )
@@ -1198,9 +1198,9 @@ CoD.BlackMarketTableUtility.GetFullContractOutfitInfo = function ( f48_arg0, f48
 		local f48_local2 = f48_local1.prt
 		local f48_local3 = f48_local1.mode
 		local f48_local4 = f48_local1.outfit
-		local f48_local5 = 0x0
-		local f48_local6 = 0x0
-		local f48_local7 = 0x0
+		local f48_local5 = ""
+		local f48_local6 = ""
+		local f48_local7 = ""
 		local f48_local8 = Engine.GetTableRowCount( f48_local0 )
 		for f48_local9 = 1, f48_local8, 1 do
 			local f48_local12 = Engine[0xC6F8EC444864600]( f48_local0, f48_local9 - 1, CoD.BlackMarketTableUtility.ContractsTable.COL_TYPE )
@@ -1261,7 +1261,7 @@ CoD.BlackMarketTableUtility.GetContractInfoForPlayer = function ( f49_arg0, f49_
 				return f49_local13
 			end
 			local f49_local14 = Engine[0xC6F8EC444864600]( f49_local20, f49_local3, CoD.BlackMarketTableUtility.ContractsTable.COL_SET )
-			if f49_local14 == 0x0 then
+			if f49_local14 == "" then
 				f49_local14 = nil
 			end
 			local f49_local15 = false
@@ -1367,7 +1367,7 @@ CoD.BlackMarketTableUtility.GetSeasonItemsByTier = function ( f52_arg0, f52_arg1
 				for f52_local5 = 1, #f52_local4, 1 do
 					if f52_local4[f52_local5].flags >= LuaEnum.LOOT_FLAGS.VALID then
 						local f52_local8 = CoD.BlackMarketTableUtility.GetSeasonItemInfo( f52_arg0, f52_arg1, tostring( f52_local4[f52_local5].name ) )
-						if f52_local8 == nil or f52_local8.name == 0x0 then
+						if f52_local8 == nil or f52_local8.name == "" then
 							if CoDShared.Loot.GetSeasonInfoParam( f52_local1.namehash, CoDShared.Loot.SEASON_INFO_NUMBER ) >= 3 then
 								f52_local8 = CoD.BlackMarketTableUtility.GetCaseItemInfo( f52_arg2, true )
 							else
@@ -1411,9 +1411,9 @@ CoD.BlackMarketTableUtility.GetEmptyContrabandItemInfo = function ( f53_arg0, f5
 	return {
 		itemId = "0",
 		tier = f53_arg0,
-		category = 0x0,
-		rarity = 0x0,
-		name = 0x37934F15B706913,
+		category = "",
+		rarity = "",
+		name = "contraband",
 		lootType = LuaEnum.LOOT_TYPE.EMPTY,
 		movieName = f53_local0
 	}
@@ -1431,9 +1431,9 @@ CoD.BlackMarketTableUtility.GetCaseItemInfo = function ( f54_arg0, f54_arg1 )
 	return {
 		itemId = "0",
 		tier = f54_arg0,
-		category = 0x0,
-		rarity = 0x0,
-		name = 0x55E6190E8792FD1,
+		category = "",
+		rarity = "",
+		name = "case",
 		lootType = LuaEnum.LOOT_TYPE.EMPTY,
 		movieName = f54_local0
 	}
@@ -1489,24 +1489,24 @@ CoD.BlackMarketTableUtility.GetSeasonItemInfo = function ( f57_arg0, f57_arg1, f
 end
 
 CoD.BlackMarketTableUtility.GetSeasonOutfitInformation = function ( f58_arg0, f58_arg1 )
-	local f58_local0 = 0x0
-	local f58_local1 = 0x0
-	local f58_local2 = 0x0
+	local f58_local0 = ""
+	local f58_local1 = ""
+	local f58_local2 = ""
 	local f58_local3, f58_local4 = CoD.BlackMarketTableUtility.GetSeasonTableAndRowsForItemRef( f58_arg0, f58_arg1 )
 	if f58_local3 == nil or f58_local4 == nil then
 		return {}
 	end
 	local f58_local5 = Engine[0xC6F8EC444864600]( f58_local3, f58_local4[1], CoD.BlackMarketTableUtility.SeasonsTable.COL_MPPRT )
-	local f58_local6 = Enum.eModes[0x83EBA96F36BC4E5]
-	if f58_local5 == 0x0 then
+	local f58_local6 = Enum.eModes.mode_multiplayer
+	if f58_local5 == "" then
 		f58_local5 = Engine[0xC6F8EC444864600]( f58_local3, f58_local4[1], CoD.BlackMarketTableUtility.SeasonsTable.COL_WZPRT )
-		f58_local6 = Enum.eModes[0xBF1DCC8138A9D39]
-		if f58_local5 == 0x0 then
+		f58_local6 = Enum.eModes.mode_warzone
+		if f58_local5 == "" then
 			return {}
 		end
 	end
 	local f58_local7 = Engine[0xC6F8EC444864600]( f58_local3, f58_local4[1], CoD.BlackMarketTableUtility.SeasonsTable.COL_OUTFIT )
-	if f58_local7 == 0x0 then
+	if f58_local7 == "" then
 		return {}
 	end
 	local f58_local8 = Engine[0xC6F8EC444864600]( f58_local3, f58_local4[1], CoD.BlackMarketTableUtility.SeasonsTable.COL_TYPE )
@@ -1533,7 +1533,7 @@ CoD.BlackMarketTableUtility.GetMyShopSeasonItemInfo = function ( f59_arg0, f59_a
 	local f59_local0 = 1
 	for f59_local4, f59_local5 in pairs( CoDShared.Loot.SeasonParams ) do
 		local f59_local6 = Engine[0xDE65B393F703EB1]( CoDShared.Loot.GetSeasonInfoParam( f59_local4, CoDShared.Loot.SEASON_INFO_TABLENAME ), CoD.BlackMarketTableUtility.SeasonsTable.COL_ID, f59_arg1, CoD.BlackMarketTableUtility.SeasonsTable.COL_NAMEHASH )
-		if f59_local6 ~= nil and f59_local6 ~= 0x0 then
+		if f59_local6 ~= nil and f59_local6 ~= "" then
 			return CoD.BlackMarketTableUtility.GetSeasonItemInfo( f59_arg0, CoD.BlackMarketTableUtility.GetSeasonId( f59_local4 ), f59_arg1 )
 		end
 	end
@@ -1571,7 +1571,7 @@ CoD.BlackMarketTableUtility.GetSeasonInfoForPlayer = function ( f61_arg0, f61_ar
 					return f61_local12
 				end
 				local f61_local13 = Engine[0xC6F8EC444864600]( f61_local4, f61_local6, CoD.BlackMarketTableUtility.SeasonsTable.COL_SET )
-				if f61_local13 == 0x0 then
+				if f61_local13 == "" then
 					f61_local13 = nil
 				end
 				local f61_local14 = false
@@ -1695,24 +1695,24 @@ CoD.BlackMarketTableUtility.GetContrabandItemInfo = function ( f67_arg0, f67_arg
 end
 
 CoD.BlackMarketTableUtility.GetContrabandOutfitInformation = function ( f68_arg0, f68_arg1 )
-	local f68_local0 = 0x0
-	local f68_local1 = 0x0
-	local f68_local2 = 0x0
+	local f68_local0 = ""
+	local f68_local1 = ""
+	local f68_local2 = ""
 	local f68_local3 = Engine.TableFindRows( CoD.BlackMarketTableUtility.ContrabandTable.name, CoD.BlackMarketTableUtility.ContrabandTable.COL_NAMEHASH, f68_arg1 )
 	if f68_local3 == nil then
 		return {}
 	end
 	local f68_local4 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContrabandTable.name, f68_local3[1], CoD.BlackMarketTableUtility.ContrabandTable.COL_MPPRT )
-	local f68_local5 = Enum.eModes[0x83EBA96F36BC4E5]
-	if f68_local4 == 0x0 then
+	local f68_local5 = Enum.eModes.mode_multiplayer
+	if f68_local4 == "" then
 		f68_local4 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContrabandTable.name, f68_local3[1], CoD.BlackMarketTableUtility.ContrabandTable.COL_WZPRT )
-		f68_local5 = Enum.eModes[0xBF1DCC8138A9D39]
-		if f68_local4 == 0x0 then
+		f68_local5 = Enum.eModes.mode_warzone
+		if f68_local4 == "" then
 			return {}
 		end
 	end
 	local f68_local6 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContrabandTable.name, f68_local3[1], CoD.BlackMarketTableUtility.ContrabandTable.COL_OUTFIT )
-	if f68_local6 == 0x0 then
+	if f68_local6 == "" then
 		return {}
 	end
 	local f68_local7 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContrabandTable.name, f68_local3[1], CoD.BlackMarketTableUtility.ContrabandTable.COL_TYPE )
@@ -1758,7 +1758,7 @@ CoD.BlackMarketTableUtility.GetContrabandInfoForPlayer = function ( f71_arg0, f7
 				return f71_local7
 			end
 			local f71_local8 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContrabandTable.name, f71_local1, CoD.BlackMarketTableUtility.ContrabandTable.COL_SET )
-			if f71_local8 == 0x0 then
+			if f71_local8 == "" then
 				f71_local8 = nil
 			end
 			local f71_local9 = false
@@ -1805,7 +1805,7 @@ CoD.BlackMarketTableUtility.GetAllContrabandItem = function ( f72_arg0, f72_arg1
 end
 
 CoD.BlackMarketTableUtility.BundleTable = {}
-CoD.BlackMarketTableUtility.BundleTable.name = 0x33FC487684E8C69
+CoD.BlackMarketTableUtility.BundleTable.name = "gamedata/loot/loot_bundles.csv"
 CoD.BlackMarketTableUtility.BundleTable.COL_BUNDLE = 0
 CoD.BlackMarketTableUtility.BundleTable.COL_NAMEHASH = 1
 CoD.BlackMarketTableUtility.BundleTable.COL_TYPE = 2
@@ -1890,7 +1890,7 @@ CoD.BlackMarketTableUtility.GetBundlePiecesInformation = function ( f77_arg0, f7
 	for f77_local2 = 1, #f77_local1, 1 do
 		local f77_local5 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BundleTable.name, f77_local1[f77_local2], CoD.BlackMarketTableUtility.BundleTable.COL_NAMEHASH )
 		local f77_local6 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BundleTable.name, f77_local1[f77_local2], CoD.BlackMarketTableUtility.BundleTable.COL_TYPE )
-		if f77_local5 ~= 0x0 and f77_local6 ~= 0x0 then
+		if f77_local5 ~= "" and f77_local6 ~= "" then
 			table.insert( f77_local0, CoD.BlackMarketTableUtility.GetBundleItemInformation( f77_arg0, f77_local5, f77_local6 ) )
 		end
 	end
@@ -1898,24 +1898,24 @@ CoD.BlackMarketTableUtility.GetBundlePiecesInformation = function ( f77_arg0, f7
 end
 
 CoD.BlackMarketTableUtility.GetBundleOutfitInformation = function ( f78_arg0, f78_arg1 )
-	local f78_local0 = 0x0
-	local f78_local1 = 0x0
-	local f78_local2 = 0x0
+	local f78_local0 = ""
+	local f78_local1 = ""
+	local f78_local2 = ""
 	local f78_local3 = Engine.TableFindRows( CoD.BlackMarketTableUtility.BundleTable.name, CoD.BlackMarketTableUtility.BundleTable.COL_NAMEHASH, f78_arg1 )
 	if f78_local3 == nil then
 		return {}
 	end
 	local f78_local4 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BundleTable.name, f78_local3[1], CoD.BlackMarketTableUtility.BundleTable.COL_MPPRT )
-	local f78_local5 = Enum.eModes[0x83EBA96F36BC4E5]
-	if f78_local4 == 0x0 then
+	local f78_local5 = Enum.eModes.mode_multiplayer
+	if f78_local4 == "" then
 		f78_local4 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BundleTable.name, f78_local3[1], CoD.BlackMarketTableUtility.BundleTable.COL_WZPRT )
-		f78_local5 = Enum.eModes[0xBF1DCC8138A9D39]
-		if f78_local4 == 0x0 then
+		f78_local5 = Enum.eModes.mode_warzone
+		if f78_local4 == "" then
 			return {}
 		end
 	end
 	local f78_local6 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BundleTable.name, f78_local3[1], CoD.BlackMarketTableUtility.BundleTable.COL_OUTFIT )
-	if f78_local6 == 0x0 then
+	if f78_local6 == "" then
 		return {}
 	end
 	local f78_local7 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BundleTable.name, f78_local3[1], CoD.BlackMarketTableUtility.BundleTable.COL_TYPE )
@@ -1940,12 +1940,12 @@ end
 
 CoD.BlackMarketTableUtility.GetOutfitBundleInformation = function ( f79_arg0, f79_arg1 )
 	local f79_local0 = {}
-	local f79_local1 = 0x0
-	local f79_local2 = 0x0
-	local f79_local3 = 0x0
-	local f79_local4 = 0x0
-	local f79_local5 = 0x0
-	local f79_local6 = CoD.BlackMarketUtility.GetBundleKeyItemRef( f79_arg0, f79_arg1, 0xDD691088352B680 )
+	local f79_local1 = ""
+	local f79_local2 = ""
+	local f79_local3 = ""
+	local f79_local4 = ""
+	local f79_local5 = ""
+	local f79_local6 = CoD.BlackMarketUtility.GetBundleKeyItemRef( f79_arg0, f79_arg1, "palette" )
 	if not f79_local6 then
 		return f79_local0
 	end
@@ -1955,10 +1955,10 @@ CoD.BlackMarketTableUtility.GetOutfitBundleInformation = function ( f79_arg0, f7
 		return f79_local0
 	end
 	local f79_local9 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BundleTable.name, f79_local8[1], CoD.BlackMarketTableUtility.BundleTable.COL_MPPRT )
-	local f79_local10 = Enum.eModes[0x83EBA96F36BC4E5]
+	local f79_local10 = Enum.eModes.mode_multiplayer
 	if f79_local9 == "" then
 		f79_local9 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BundleTable.name, f79_local8[1], CoD.BlackMarketTableUtility.BundleTable.COL_WZPRT )
-		f79_local10 = Enum.eModes[0xBF1DCC8138A9D39]
+		f79_local10 = Enum.eModes.mode_warzone
 		if f79_local9 == "" then
 			return f79_local0
 		end
@@ -1992,33 +1992,33 @@ end
 
 CoD.BlackMarketTableUtility.GetOutfitItemBundleInformation = function ( f80_arg0, f80_arg1 )
 	local f80_local0 = {}
-	local f80_local1 = 0x0
-	local f80_local2 = 0x0
-	local f80_local3 = 0x0
-	local f80_local4 = 0x0
-	local f80_local5 = 0x0
+	local f80_local1 = ""
+	local f80_local2 = ""
+	local f80_local3 = ""
+	local f80_local4 = ""
+	local f80_local5 = ""
 	local f80_local6 = Engine.TableFindRows( CoD.BlackMarketTableUtility.BundleTable.name, CoD.BlackMarketTableUtility.BundleTable.COL_BUNDLE, f80_arg1 )
 	if f80_local6 == nil then
 		return f80_local0
 	end
 	local f80_local7 = 1
 	for f80_local8 = 1, #f80_local6, 1 do
-		if Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BundleTable.name, f80_local6[f80_local8], CoD.BlackMarketTableUtility.BundleTable.COL_CHARACTER ) == 0xFDCC91F6F49BB5F then
+		if Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BundleTable.name, f80_local6[f80_local8], CoD.BlackMarketTableUtility.BundleTable.COL_CHARACTER ) == "ruin" then
 			f80_local7 = f80_local8
 			break
 		end
 	end
 	f80_local1 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BundleTable.name, f80_local6[f80_local7], CoD.BlackMarketTableUtility.BundleTable.COL_MPPRT )
-	local f80_local8 = Enum.eModes[0x83EBA96F36BC4E5]
-	if f80_local1 == 0x0 then
+	local f80_local8 = Enum.eModes.mode_multiplayer
+	if f80_local1 == "" then
 		f80_local1 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BundleTable.name, f80_local6[f80_local7], CoD.BlackMarketTableUtility.BundleTable.COL_WZPRT )
-		f80_local8 = Enum.eModes[0xBF1DCC8138A9D39]
-		if f80_local1 == 0x0 then
+		f80_local8 = Enum.eModes.mode_warzone
+		if f80_local1 == "" then
 			return f80_local0
 		end
 	end
 	f80_local2 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BundleTable.name, f80_local6[f80_local7], CoD.BlackMarketTableUtility.BundleTable.COL_OUTFIT )
-	if f80_local2 == 0x0 then
+	if f80_local2 == "" then
 		return f80_local0
 	end
 	local f80_local9 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BundleTable.name, f80_local6[f80_local7], CoD.BlackMarketTableUtility.BundleTable.COL_TYPE )
@@ -2044,7 +2044,7 @@ CoD.BlackMarketTableUtility.BundleIncludesTiers = function ( f81_arg0, f81_arg1 
 	local f81_local0 = Engine.TableFindRows( CoD.BlackMarketTableUtility.BundleTable.name, CoD.BlackMarketTableUtility.BundleTable.COL_BUNDLE, f81_arg1 )
 	if f81_local0 and #f81_local0 > 0 then
 		for f81_local1 = 1, #f81_local0, 1 do
-			if Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BundleTable.name, f81_local0[f81_local1], CoD.BlackMarketTableUtility.BundleTable.COL_TYPE ) == 0xDD8DC6C5FDAE3CE then
+			if Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BundleTable.name, f81_local0[f81_local1], CoD.BlackMarketTableUtility.BundleTable.COL_TYPE ) == "tiers" then
 				return true
 			end
 		end
@@ -2073,7 +2073,7 @@ CoD.BlackMarketTableUtility.GetBundleItemInfoForPlayer = function ( f82_arg0, f8
 end
 
 CoD.BlackMarketTableUtility.ItemShopTable = {}
-CoD.BlackMarketTableUtility.ItemShopTable.name = 0x2F6538EA0AF7458
+CoD.BlackMarketTableUtility.ItemShopTable.name = "gamedata/loot/loot_item_shop.csv"
 CoD.BlackMarketTableUtility.ItemShopTable.COL_ID = 0
 CoD.BlackMarketTableUtility.ItemShopTable.COL_NAMEHASH = 1
 CoD.BlackMarketTableUtility.ItemShopTable.COL_TYPE = 2
@@ -2100,24 +2100,24 @@ CoD.BlackMarketTableUtility.GetItemShopWeaponRefName = function ( f83_arg0, f83_
 end
 
 CoD.BlackMarketTableUtility.GetItemShopOutfitInformation = function ( f84_arg0, f84_arg1 )
-	local f84_local0 = 0x0
-	local f84_local1 = 0x0
-	local f84_local2 = 0x0
+	local f84_local0 = ""
+	local f84_local1 = ""
+	local f84_local2 = ""
 	local f84_local3 = Engine.TableFindRows( CoD.BlackMarketTableUtility.ItemShopTable.name, CoD.BlackMarketTableUtility.ItemShopTable.COL_NAMEHASH, f84_arg1 )
 	if f84_local3 == nil then
 		return {}
 	end
 	local f84_local4 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ItemShopTable.name, f84_local3[1], CoD.BlackMarketTableUtility.ItemShopTable.COL_MPPRT )
-	local f84_local5 = Enum.eModes[0x83EBA96F36BC4E5]
-	if f84_local4 == 0x0 then
+	local f84_local5 = Enum.eModes.mode_multiplayer
+	if f84_local4 == "" then
 		f84_local4 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ItemShopTable.name, f84_local3[1], CoD.BlackMarketTableUtility.ItemShopTable.COL_WZPRT )
-		f84_local5 = Enum.eModes[0xBF1DCC8138A9D39]
-		if f84_local4 == 0x0 then
+		f84_local5 = Enum.eModes.mode_warzone
+		if f84_local4 == "" then
 			return {}
 		end
 	end
 	local f84_local6 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ItemShopTable.name, f84_local3[1], CoD.BlackMarketTableUtility.ItemShopTable.COL_OUTFIT )
-	if f84_local6 == 0x0 then
+	if f84_local6 == "" then
 		return {}
 	end
 	local f84_local7 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ItemShopTable.name, f84_local3[1], CoD.BlackMarketTableUtility.ItemShopTable.COL_TYPE )
@@ -2208,7 +2208,7 @@ CoD.BlackMarketTableUtility.GetItemShopInfoForPlayer = function ( f89_arg0, f89_
 			end
 		end
 		local f89_local8 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ItemShopTable.name, f89_local1, CoD.BlackMarketTableUtility.ItemShopTable.COL_SET )
-		if f89_local8 == 0x0 then
+		if f89_local8 == "" then
 			f89_local8 = nil
 		end
 		local f89_local9 = false
@@ -2262,7 +2262,7 @@ CoD.BlackMarketTableUtility.GetBonusItemInfoForPlayer = function ( f91_arg0, f91
 		local f91_local3 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.LootBonusTable.name, f91_local1, CoD.BlackMarketTableUtility.LootBonusTable.COL_TYPE )
 		local f91_local4 = true
 		local f91_local5 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.LootBonusTable.name, f91_local1, CoD.BlackMarketTableUtility.LootBonusTable.COL_SET )
-		if f91_local5 == 0x0 then
+		if f91_local5 == "" then
 			f91_local5 = nil
 		end
 		local f91_local6, f91_local7 = CoD.BlackMarketTableUtility.GetBonusSetUnlockedAvailableStates( f91_arg0, f91_local5 )
@@ -2296,7 +2296,7 @@ CoD.BlackMarketTableUtility.IsContractOwned = function ( f92_arg0, f92_arg1 )
 end
 
 CoD.BlackMarketTableUtility.IsEventContract = function ( f93_arg0 )
-	if Engine[0xDA5510920F6B1C4]( CoD.BlackMarketTableUtility.MasterContractTable.name, CoD.BlackMarketTableUtility.MasterContractTable.COL_TYPE, CoD.BlackMarketTableUtility.MasterContractTable.COL_NAMEHASH, f93_arg0 ) == 0x12B8C0079B0649F then
+	if Engine[0xDA5510920F6B1C4]( CoD.BlackMarketTableUtility.MasterContractTable.name, CoD.BlackMarketTableUtility.MasterContractTable.COL_TYPE, CoD.BlackMarketTableUtility.MasterContractTable.COL_NAMEHASH, f93_arg0 ) == "event" then
 		return true
 	else
 		return false
@@ -2380,7 +2380,7 @@ CoD.BlackMarketTableUtility.GetNumberOwnedAndAvailableOfSet = function ( f97_arg
 			local f97_local15 = f97_local6[f97_local7]
 			local f97_local16 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ItemShopTable.name, f97_local15, CoD.BlackMarketTableUtility.ItemShopTable.COL_TYPE )
 			local f97_local10 = 0 < Engine[0x4509DFCBC7BC5CE]( f97_arg0, Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ItemShopTable.name, f97_local15, CoD.BlackMarketTableUtility.ItemShopTable.COL_ID ) )
-			if f97_local16 == 0x38E26C8B1031B54 or f97_local16 == 0xC398D8E22A2269B then
+			if f97_local16 == "tag_bundle" or f97_local16 == "outfit_bundle" then
 				f97_local2 = true
 				f97_local3 = f97_local10
 			end
@@ -2419,12 +2419,12 @@ CoD.BlackMarketTableUtility.GetLootBonusStringRef = function ( f100_arg0, f100_a
 	if f100_local0 ~= nil and #f100_local0 > 0 then
 		return Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.LootBonusTable.name, f100_local0[1], CoD.BlackMarketTableUtility.LootBonusTable.COL_STRINGREF )
 	else
-		return 0x0
+		return ""
 	end
 end
 
 CoD.BlackMarketTableUtility.BackfillTable = {}
-CoD.BlackMarketTableUtility.BackfillTable.name = 0x2C85CA9A2CE0E06
+CoD.BlackMarketTableUtility.BackfillTable.name = "gamedata/loot/loot_backfill.csv"
 CoD.BlackMarketTableUtility.BackfillTable.COL_NAMEHASH = 0
 CoD.BlackMarketTableUtility.BackfillTable.COL_TYPE = 1
 CoD.BlackMarketTableUtility.BackfillTable.COL_RARITY = 2
@@ -2463,24 +2463,24 @@ CoD.BlackMarketTableUtility.GetBackfillItemInfo = function ( f102_arg0, f102_arg
 end
 
 CoD.BlackMarketTableUtility.GetBackfillOutfitInformation = function ( f103_arg0, f103_arg1 )
-	local f103_local0 = 0x0
-	local f103_local1 = 0x0
-	local f103_local2 = 0x0
+	local f103_local0 = ""
+	local f103_local1 = ""
+	local f103_local2 = ""
 	local f103_local3 = Engine.TableFindRows( CoD.BlackMarketTableUtility.BackfillTable.name, CoD.BlackMarketTableUtility.BackfillTable.COL_NAMEHASH, f103_arg1 )
 	if f103_local3 == nil then
 		return {}
 	end
 	local f103_local4 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BackfillTable.name, f103_local3[1], CoD.BlackMarketTableUtility.BackfillTable.COL_MPPRT )
-	local f103_local5 = Enum.eModes[0x83EBA96F36BC4E5]
-	if f103_local4 == 0x0 then
+	local f103_local5 = Enum.eModes.mode_multiplayer
+	if f103_local4 == "" then
 		f103_local4 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BackfillTable.name, f103_local3[1], CoD.BlackMarketTableUtility.BackfillTable.COL_WZPRT )
-		f103_local5 = Enum.eModes[0xBF1DCC8138A9D39]
-		if f103_local4 == 0x0 then
+		f103_local5 = Enum.eModes.mode_warzone
+		if f103_local4 == "" then
 			return {}
 		end
 	end
 	local f103_local6 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BackfillTable.name, f103_local3[1], CoD.BlackMarketTableUtility.BackfillTable.COL_OUTFIT )
-	if f103_local6 == 0x0 then
+	if f103_local6 == "" then
 		return {}
 	end
 	local f103_local7 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BackfillTable.name, f103_local3[1], CoD.BlackMarketTableUtility.BackfillTable.COL_TYPE )
@@ -2544,7 +2544,7 @@ CoD.BlackMarketTableUtility.GetMyShopItemId = function ( f106_arg0, f106_arg1 )
 				return CoD.BlackMarketTableUtility.GetContractId( f106_local4 )
 			end
 		end
-	elseif f106_local0 == 0x31315EF3FB1AE07 then
+	elseif f106_local0 == "item_shop" then
 		return CoD.BlackMarketTableUtility.GetItemShopEntryId( f106_arg0, f106_arg1 )
 	elseif f106_local0 == "loot_stream" then
 		return CoD.BlackMarketTableUtility.GetSeasonItemId( f106_arg0, f106_arg1 )
@@ -2599,7 +2599,7 @@ CoD.BlackMarketTableUtility.GetMyShopItemNameFromId = function ( f109_arg0, f109
 		return f109_local0.namehash
 	else
 		f109_local0 = CoD.BlackMarketTableUtility.GetItemShopEntryName( f109_arg0, f109_arg1 )
-		if f109_local0 ~= nil and f109_local0 ~= 0x0 then
+		if f109_local0 ~= nil and f109_local0 ~= "" then
 			return f109_local0
 		else
 			f109_local0 = CoD.BlackMarketTableUtility.GetMyShopSeasonItemInfo( f109_arg0, f109_arg1 )
@@ -2613,7 +2613,7 @@ CoD.BlackMarketTableUtility.GetMyShopItemNameFromId = function ( f109_arg0, f109
 end
 
 CoD.BlackMarketTableUtility.DetItemsTable = {}
-CoD.BlackMarketTableUtility.DetItemsTable.name = 0xC6DC30FFB97EE8B
+CoD.BlackMarketTableUtility.DetItemsTable.name = "gamedata/loot/loot_detitems.csv"
 CoD.BlackMarketTableUtility.DetItemsTable.COL_NAMEHASH = 0
 CoD.BlackMarketTableUtility.DetItemsTable.COL_LOOT_TYPE = 1
 CoD.BlackMarketTableUtility.DetItemsTable.COL_CP_SKU = 2
@@ -2641,7 +2641,7 @@ CoD.BlackMarketTableUtility.GetDeterministicItemId = function ( f111_arg0, f111_
 				return CoD.BlackMarketTableUtility.GetContractId( f111_local4 )
 			end
 		end
-	elseif f111_local0 == 0x31315EF3FB1AE07 then
+	elseif f111_local0 == "item_shop" then
 		return CoD.BlackMarketTableUtility.GetItemShopEntryId( f111_arg0, f111_arg1 )
 	elseif f111_local0 == "loot_stream" then
 		return CoD.BlackMarketTableUtility.GetSeasonItemId( f111_arg0, f111_arg1 )
@@ -2719,7 +2719,7 @@ CoD.BlackMarketTableUtility.GetDeterministicItemNameFromId = function ( f114_arg
 		return f114_local0.namehash
 	else
 		f114_local0 = CoD.BlackMarketTableUtility.GetItemShopEntryName( f114_arg0, f114_arg1 )
-		if f114_local0 ~= nil and f114_local0 ~= 0x0 then
+		if f114_local0 ~= nil and f114_local0 ~= "" then
 			return f114_local0
 		else
 			f114_local0 = CoD.BlackMarketTableUtility.GetMyShopSeasonItemInfo( f114_arg0, f114_arg1 )
@@ -3017,7 +3017,7 @@ CoD.BlackMarketTableUtility.GetWeaponBribeSelectionBribes = function ( f124_arg0
 end
 
 CoD.BlackMarketTableUtility.GetLootInfoForCamo = function ( f125_arg0, f125_arg1, f125_arg2, f125_arg3 )
-	if f125_arg3 and f125_arg3 ~= 0x0 then
+	if f125_arg3 and f125_arg3 ~= "" then
 		return {
 			isLoot = false,
 			isEntitlement = true,
@@ -3036,14 +3036,14 @@ CoD.BlackMarketTableUtility.DefaultWeaponCamoLookupResult = {
 	isLoot = false,
 	available = false,
 	owned = false,
-	rarity = 0xBE5705C42A81BD0
+	rarity = "invalid"
 }
 CoD.BlackMarketTableUtility.PerWeaponCamoLookup = function ( f126_arg0, f126_arg1, f126_arg2 )
-	if not f126_arg1 or f126_arg1 == 0x0 then
+	if not f126_arg1 or f126_arg1 == "" then
 		return CoD.BlackMarketTableUtility.DefaultWeaponCamoLookupResult
 	end
 	local f126_local0 = true
-	if not IsBooleanDvarSet( 0x22A538E0F11B88E ) then
+	if not IsBooleanDvarSet( "loot_enableblackmarket" ) then
 		f126_local0 = false
 	end
 	local f126_local1 = Engine.TableFindRows( CoD.BlackMarketTableUtility.ContrabandTable.name, CoD.BlackMarketTableUtility.ContrabandTable.COL_NAMEHASH, f126_arg1 )
@@ -3056,7 +3056,7 @@ CoD.BlackMarketTableUtility.PerWeaponCamoLookup = function ( f126_arg0, f126_arg
 				local f126_local8 = Engine[0x4509DFCBC7BC5CE]( f126_arg0, Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContrabandTable.name, f126_local5, CoD.BlackMarketTableUtility.ContrabandTable.COL_ID ) ) > 0
 				local f126_local9 = f126_local8
 				local f126_local10 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContrabandTable.name, f126_local5, CoD.BlackMarketTableUtility.ContrabandTable.COL_SET )
-				if f126_local10 == 0x0 then
+				if f126_local10 == "" then
 					f126_local10 = nil
 				end
 				local f126_local11 = false
@@ -3081,36 +3081,36 @@ CoD.BlackMarketTableUtility.PerWeaponCamoLookup = function ( f126_arg0, f126_arg
 	return CoD.BlackMarketTableUtility.DefaultWeaponCamoLookupResult
 end
 
-CoD.BlackMarketTableUtility.SimpleLootLookupTypes = LuaEnum.createEnum( 0xC0D17BAD169557B, 0xDECE8AD70D584B7, 0x562938AF86028A0, 0xEFD5A191D95E3F7 )
+CoD.BlackMarketTableUtility.SimpleLootLookupTypes = LuaEnum.createEnum( "none", "loot", 0x562938AF86028A0, "stat" )
 CoD.BlackMarketTableUtility.SimpleLootLookup = function ( f127_arg0, f127_arg1, f127_arg2 )
-	if not f127_arg1 or f127_arg1 == 0x0 then
-		return CoD.BlackMarketTableUtility.SimpleLootLookupTypes[0xC0D17BAD169557B], false
+	if not f127_arg1 or f127_arg1 == "" then
+		return CoD.BlackMarketTableUtility.SimpleLootLookupTypes.none, false
 	elseif CoD.isPC and CoD.PCKoreaUtility.ShowKorea15Plus() then
 		local f127_local0 = Engine.TableLookup( CoD.BlackMarketUtility.lootEmblemTableName, 3, 13, f127_arg1 )
-		if f127_local0 and f127_local0 ~= 0x0 then
+		if f127_local0 and f127_local0 ~= "" then
 			f127_arg1 = f127_local0
 		else
 			f127_local0 = Engine.TableLookup( CoD.BlackMarketUtility.backgroundsTable, 3, 19, f127_arg1 )
-			if f127_local0 and f127_local0 ~= 0x0 then
+			if f127_local0 and f127_local0 ~= "" then
 				f127_arg1 = f127_local0
 			end
 		end
 	end
 	local f127_local0, f127_local1 = CoD.BlackMarketTableUtility[0x62B0EE548400BF2]( f127_arg0, f127_arg1 )
 	if f127_local0 and not f127_local1 then
-		return CoD.BlackMarketTableUtility.SimpleLootLookupTypes[0xDECE8AD70D584B7], false
+		return CoD.BlackMarketTableUtility.SimpleLootLookupTypes.loot, false
 	end
 	local f127_local2, f127_local3 = CoD.BlackMarketTableUtility[0x5DDB72D0172A035]( f127_arg0, f127_arg1 )
 	if f127_local2 and not f127_local3 then
-		return CoD.BlackMarketTableUtility.SimpleLootLookupTypes[0xDECE8AD70D584B7], false
+		return CoD.BlackMarketTableUtility.SimpleLootLookupTypes.loot, false
 	end
 	local f127_local4, f127_local5 = CoD.BlackMarketTableUtility[0x214319EDB448F3B]( f127_arg0, f127_arg1 )
 	if f127_local4 and not f127_local5 then
-		return CoD.BlackMarketTableUtility.SimpleLootLookupTypes[0xDECE8AD70D584B7], false
+		return CoD.BlackMarketTableUtility.SimpleLootLookupTypes.loot, false
 	end
 	local f127_local6, f127_local7 = CoDShared.IsLootItemOwnedByNameSimple( f127_arg0, f127_arg1 )
 	if f127_local6 then
-		return CoD.BlackMarketTableUtility.SimpleLootLookupTypes[0xDECE8AD70D584B7], f127_local7
+		return CoD.BlackMarketTableUtility.SimpleLootLookupTypes.loot, f127_local7
 	end
 	local f127_local8 = CoD.BlackMarketTableUtility.GetStatsBasedUnlockId()
 	local f127_local9 = f127_local8 and f127_local8[f127_arg1]
@@ -3154,34 +3154,34 @@ CoD.BlackMarketTableUtility.SimpleLootLookup = function ( f127_arg0, f127_arg1, 
 		else
 			f127_local11 = f127_local10( f127_local9 )
 		end
-		return CoD.BlackMarketTableUtility.SimpleLootLookupTypes[0xEFD5A191D95E3F7], f127_local11
-	elseif f127_arg2 and f127_arg2 ~= 0x0 then
+		return CoD.BlackMarketTableUtility.SimpleLootLookupTypes.stat, f127_local11
+	elseif f127_arg2 and f127_arg2 ~= "" then
 		return CoD.BlackMarketTableUtility.SimpleLootLookupTypes[0x562938AF86028A0], Engine.HasEntitlement( f127_arg0, f127_arg2 )
 	end
-	return CoD.BlackMarketTableUtility.SimpleLootLookupTypes[0xC0D17BAD169557B], false
+	return CoD.BlackMarketTableUtility.SimpleLootLookupTypes.none, false
 end
 
 local f0_local0 = {
 	isLoot = false,
 	available = false,
 	owned = false,
-	rarity = 0xBE5705C42A81BD0
+	rarity = "invalid"
 }
 CoD.BlackMarketTableUtility.LootInfoLookup = function ( f129_arg0, f129_arg1, f129_arg2, f129_arg3 )
-	if not f129_arg1 or f129_arg1 == 0x0 then
+	if not f129_arg1 or f129_arg1 == "" then
 		return f0_local0
 	end
 	local f129_local0 = true
-	if not IsBooleanDvarSet( 0x22A538E0F11B88E ) then
+	if not IsBooleanDvarSet( "loot_enableblackmarket" ) then
 		f129_local0 = false
 	end
 	if CoD.isPC and CoD.PCKoreaUtility.ShowKorea15Plus() then
 		local f129_local1 = Engine.TableLookup( CoD.BlackMarketUtility.lootEmblemTableName, 3, 13, f129_arg1 )
-		if f129_local1 and f129_local1 ~= 0x0 then
+		if f129_local1 and f129_local1 ~= "" then
 			f129_arg1 = f129_local1
 		else
 			f129_local1 = Engine.TableLookup( CoD.BlackMarketUtility.backgroundsTable, 3, 19, f129_arg1 )
-			if f129_local1 and f129_local1 ~= 0x0 then
+			if f129_local1 and f129_local1 ~= "" then
 				f129_arg1 = f129_local1
 			end
 		end
@@ -3192,7 +3192,7 @@ CoD.BlackMarketTableUtility.LootInfoLookup = function ( f129_arg0, f129_arg1, f1
 			isLoot = true,
 			available = false,
 			owned = false,
-			rarity = 0xBE5705C42A81BD0
+			rarity = "invalid"
 		}
 	end
 	local f129_local3, f129_local4 = CoD.BlackMarketTableUtility[0x5DDB72D0172A035]( f129_arg0, f129_arg1 )
@@ -3201,7 +3201,7 @@ CoD.BlackMarketTableUtility.LootInfoLookup = function ( f129_arg0, f129_arg1, f1
 			isLoot = true,
 			available = false,
 			owned = false,
-			rarity = 0xBE5705C42A81BD0
+			rarity = "invalid"
 		}
 	end
 	local f129_local5, f129_local6 = CoD.BlackMarketTableUtility[0x214319EDB448F3B]( f129_arg0, f129_arg1 )
@@ -3210,38 +3210,38 @@ CoD.BlackMarketTableUtility.LootInfoLookup = function ( f129_arg0, f129_arg1, f1
 			isLoot = true,
 			available = false,
 			owned = false,
-			rarity = 0xBE5705C42A81BD0
+			rarity = "invalid"
 		}
 	end
 	local f129_local7 = CoDShared.LootIndexInfoLookup( f129_arg1, f129_arg3 )
 	if f129_local7 then
 		local f129_local8 = {}
 		local f129_local9 = f129_local7.table
-		if f129_local9 == 0x8DFD5E2759BA3F8 then
+		if f129_local9 == "season" then
 			local f129_local10 = CoD.BlackMarketTableUtility.GetSeasonInfoForPlayer( f129_arg0, f129_arg1, f129_local7.season, f129_local7.bundles, f129_arg3 )
 			if not f129_local10 then
 				f129_local10 = f0_local0
 			end
 			return f129_local10
-		elseif f129_local9 == 0x37934F15B706913 then
+		elseif f129_local9 == "contraband" then
 			local f129_local10 = CoD.BlackMarketTableUtility.GetContrabandInfoForPlayer( f129_arg0, f129_arg1, f129_local7.bundles, f129_arg3 )
 			if not f129_local10 then
 				f129_local10 = f0_local0
 			end
 			return f129_local10
-		elseif f129_local9 == 0xB3B9A8F4B87E2A3 then
+		elseif f129_local9 == "contract" then
 			local f129_local10 = CoD.BlackMarketTableUtility.GetContractInfoForPlayer( f129_arg0, f129_arg1, f129_local7.bundles, f129_arg3 )
 			if not f129_local10 then
 				f129_local10 = f0_local0
 			end
 			return f129_local10
-		elseif f129_local9 == 0xDAFE9B296967DE4 then
+		elseif f129_local9 == "bonus" then
 			local f129_local10 = CoD.BlackMarketTableUtility.GetBonusItemInfoForPlayer( f129_arg0, f129_arg1, f129_arg3 )
 			if not f129_local10 then
 				f129_local10 = f0_local0
 			end
 			return f129_local10
-		elseif f129_local9 == 0x31315EF3FB1AE07 then
+		elseif f129_local9 == "item_shop" then
 			local f129_local10 = CoD.BlackMarketTableUtility.GetItemShopInfoForPlayer( f129_arg0, f129_arg1, f129_local7.bundles, f129_arg3 )
 			if f129_local10 then
 				return f129_local10
@@ -3251,13 +3251,13 @@ CoD.BlackMarketTableUtility.LootInfoLookup = function ( f129_arg0, f129_arg1, f1
 				f129_local11 = f0_local0
 			end
 			return f129_local11
-		elseif f129_local9 == 0x83E236481DF1EE2 then
+		elseif f129_local9 == "bundles" then
 			local f129_local10 = CoD.BlackMarketTableUtility.GetBundleItemInfoForPlayer( f129_arg0, f129_arg1, f129_arg3 )
 			if not f129_local10 then
 				f129_local10 = f0_local0
 			end
 			return f129_local10
-		elseif f129_local9 == 0x25F48CC1FA6E55F then
+		elseif f129_local9 == "backfill" then
 			local f129_local10 = CoD.BlackMarketTableUtility[0xC3056CABEF9D99]( f129_arg1, f129_arg3 )
 			if not f129_local10 then
 				f129_local10 = f0_local0
@@ -3312,7 +3312,7 @@ CoD.BlackMarketTableUtility.LootInfoLookup = function ( f129_arg0, f129_arg1, f1
 				isLoot = true,
 				available = f130_local0 or f130_local1,
 				owned = f130_local0,
-				rarity = 0xBE5705C42A81BD0,
+				rarity = "invalid",
 				unlockInfo = f130_local2,
 				hideRarity = true,
 				isStatsBasedUnlock = true,
@@ -3325,7 +3325,7 @@ CoD.BlackMarketTableUtility.LootInfoLookup = function ( f129_arg0, f129_arg1, f1
 				isLoot = true,
 				available = false,
 				owned = false,
-				rarity = 0xBE5705C42A81BD0,
+				rarity = "invalid",
 				unlockInfo = "",
 				hideRarity = true,
 				isStatsBasedUnlock = true,
@@ -3360,7 +3360,7 @@ CoD.BlackMarketTableUtility.LootInfoLookup = function ( f129_arg0, f129_arg1, f1
 			return f129_local11
 		end
 		return f129_local10( f129_local9 )
-	elseif f129_arg2 and f129_arg2 ~= 0x0 then
+	elseif f129_arg2 and f129_arg2 ~= "" then
 		return {
 			isLoot = false,
 			isEntitlement = true,
@@ -3374,7 +3374,7 @@ CoD.BlackMarketTableUtility.LootInfoLookup = function ( f129_arg0, f129_arg1, f1
 end
 
 CoD.BlackMarketTableUtility.TestLookupOfType = function ()
-	CoD.BlackMarketTableUtility.GetItemsOfType( 0, 0xCA2BC08C1A6BCF6 )
+	CoD.BlackMarketTableUtility.GetItemsOfType( 0, "calling_card" )
 end
 
 CoD.BlackMarketTableUtility.GetItemsOfType = function ( f132_arg0, f132_arg1 )
@@ -3383,7 +3383,7 @@ CoD.BlackMarketTableUtility.GetItemsOfType = function ( f132_arg0, f132_arg1 )
 	if f132_local1 ~= nil then
 		for f132_local2 = 1, #f132_local1, 1 do
 			local f132_local5 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ContrabandTable.name, f132_local1[f132_local2], CoD.BlackMarketTableUtility.ContrabandTable.COL_NAMEHASH )
-			if f132_local5 ~= nil and f132_local5 ~= 0x0 then
+			if f132_local5 ~= nil and f132_local5 ~= "" then
 				table.insert( f132_local0, f132_local5 )
 			end
 		end
@@ -3394,7 +3394,7 @@ CoD.BlackMarketTableUtility.GetItemsOfType = function ( f132_arg0, f132_arg1 )
 		if f132_local12 ~= nil then
 			for f132_local6 = 1, #f132_local12, 1 do
 				local f132_local9 = Engine[0xC6F8EC444864600]( f132_local5, f132_local12[f132_local6], CoD.BlackMarketTableUtility.SeasonsTable.COL_NAMEHASH )
-				if f132_local9 ~= nil and f132_local9 ~= 0x0 then
+				if f132_local9 ~= nil and f132_local9 ~= "" then
 					table.insert( f132_local0, f132_local9 )
 				end
 			end
@@ -3405,7 +3405,7 @@ CoD.BlackMarketTableUtility.GetItemsOfType = function ( f132_arg0, f132_arg1 )
 		if f132_local5 ~= nil then
 			for f132_local12 = 1, #f132_local5, 1 do
 				local f132_local13 = Engine[0xC6F8EC444864600]( f132_local11, f132_local5[f132_local12], CoD.BlackMarketTableUtility.ContractsTable.COL_NAMEHASH )
-				if f132_local13 ~= nil and f132_local13 ~= 0x0 then
+				if f132_local13 ~= nil and f132_local13 ~= "" then
 					table.insert( f132_local0, f132_local13 )
 				end
 			end
@@ -3415,7 +3415,7 @@ CoD.BlackMarketTableUtility.GetItemsOfType = function ( f132_arg0, f132_arg1 )
 	if f132_local2 ~= nil then
 		for f132_local3 = 1, #f132_local2, 1 do
 			local f132_local12 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.ItemShopTable.name, f132_local2[f132_local3], CoD.BlackMarketTableUtility.ItemShopTable.COL_NAMEHASH )
-			if f132_local12 ~= nil and f132_local12 ~= 0x0 then
+			if f132_local12 ~= nil and f132_local12 ~= "" then
 				table.insert( f132_local0, f132_local12 )
 			end
 		end
@@ -3424,7 +3424,7 @@ CoD.BlackMarketTableUtility.GetItemsOfType = function ( f132_arg0, f132_arg1 )
 	if f132_local3 ~= nil then
 		for f132_local4 = 1, #f132_local3, 1 do
 			local f132_local6 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.LootBonusTable.name, f132_local3[f132_local4], CoD.BlackMarketTableUtility.LootBonusTable.COL_NAMEHASH )
-			if f132_local6 ~= nil and f132_local6 ~= 0x0 then
+			if f132_local6 ~= nil and f132_local6 ~= "" then
 				table.insert( f132_local0, f132_local6 )
 			end
 		end
@@ -3433,7 +3433,7 @@ CoD.BlackMarketTableUtility.GetItemsOfType = function ( f132_arg0, f132_arg1 )
 	if f132_local4 ~= nil then
 		for f132_local10 = 1, #f132_local4, 1 do
 			local f132_local7 = Engine[0xC6F8EC444864600]( CoD.BlackMarketTableUtility.BundleTable.name, f132_local4[f132_local10], CoD.BlackMarketTableUtility.BundleTable.COL_NAMEHASH )
-			if f132_local7 ~= nil and f132_local7 ~= 0x0 then
+			if f132_local7 ~= nil and f132_local7 ~= "" then
 				table.insert( f132_local0, f132_local7 )
 			end
 		end

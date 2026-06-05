@@ -13,18 +13,18 @@ CoD.AmmoWidget_SDBomb.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local backplate = LUI.UIImage.new( 0, 0, 15, 107, 0, 0, 20.5, 84.5 )
-	backplate:setImage( RegisterImage( 0xDD08B725AA00DD6 ) )
+	backplate:setImage( RegisterImage( "uie_ui_hud_core_carryitem_backplate" ) )
 	self:addElement( backplate )
 	self.backplate = backplate
 	
 	local SndItem = LUI.UIImage.new( 0, 0, 3, 119, 0, 0, 6.5, 98.5 )
-	SndItem:setImage( RegisterImage( 0xEE0A69BD3122E4 ) )
+	SndItem:setImage( RegisterImage( "uie_ui_hud_core_carryitem_snd" ) )
 	self:addElement( SndItem )
 	self.SndItem = SndItem
 	
 	local SndItem2 = LUI.UIImage.new( 0, 0, 15, 107, 0, 0, 20.5, 84.5 )
 	SndItem2:setAlpha( 0 )
-	SndItem2:setImage( RegisterImage( 0x3B2A6476860BEC8 ) )
+	SndItem2:setImage( RegisterImage( "uie_ui_hud_core_carryitem_glow" ) )
 	SndItem2:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( SndItem2 )
 	self.SndItem2 = SndItem2

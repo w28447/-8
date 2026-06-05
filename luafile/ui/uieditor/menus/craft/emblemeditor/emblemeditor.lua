@@ -119,76 +119,76 @@ LUI.createMenu.EmblemEditor = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0xD4C15FE32148D3A] )
 		return f12_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( emptyFocusable, f1_arg0, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		if CoD.CraftUtility.IsEditMode( f13_arg2 ) and not IsRepeatButtonPress( f13_arg3 ) and IsDpadButton( f13_arg3 ) and IsGamepad( f13_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_MoveLayer( self, f13_arg1, f13_arg2, "left" )
+	f1_local1:AddButtonCallbackFunction( emptyFocusable, f1_arg0, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) and not IsRepeatButtonPress( model ) and IsDpadButton( model ) and IsGamepad( controller ) then
+			CoD.CraftUtility.EmblemEditor_MoveLayer( self, menu, controller, "left" )
 			PlaySoundSetSound( self, "layer_switch" )
 			PlayClipOnElement( self, {
 				elementName = "emblemHiddenPulseLayer",
 				clipName = "DefaultClip"
-			}, f13_arg2 )
+			}, controller )
 			return true
 		else
 			
 		end
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
+	end, function ( element, menu, controller )
 		local f14_local0 = nil
-		if CoD.CraftUtility.IsEditMode( f14_arg2 ) and not IsRepeatButtonPress( f14_local0 ) and IsDpadButton( f14_local0 ) and IsGamepad( f14_arg2 ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0x57783F8DA4AAEF], 0x0, nil, nil )
+		if CoD.CraftUtility.IsEditMode( controller ) and not IsRepeatButtonPress( f14_local0 ) and IsDpadButton( f14_local0 ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x57783F8DA4AAEF], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( emptyFocusable, f1_arg0, Enum.LUIButton[0x571F08AD84807E0], nil, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		if CoD.CraftUtility.IsEditMode( f15_arg2 ) and not IsRepeatButtonPress( f15_arg3 ) and IsDpadButton( f15_arg3 ) and IsGamepad( f15_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_MoveLayer( self, f15_arg1, f15_arg2, "right" )
+	f1_local1:AddButtonCallbackFunction( emptyFocusable, f1_arg0, Enum.LUIButton[0x571F08AD84807E0], nil, function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) and not IsRepeatButtonPress( model ) and IsDpadButton( model ) and IsGamepad( controller ) then
+			CoD.CraftUtility.EmblemEditor_MoveLayer( self, menu, controller, "right" )
 			PlaySoundSetSound( self, "layer_switch" )
 			PlayClipOnElement( self, {
 				elementName = "emblemHiddenPulseLayer",
 				clipName = "DefaultClip"
-			}, f15_arg2 )
+			}, controller )
 			return true
 		else
 			
 		end
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
+	end, function ( element, menu, controller )
 		local f16_local0 = nil
-		if CoD.CraftUtility.IsEditMode( f16_arg2 ) and not IsRepeatButtonPress( f16_local0 ) and IsDpadButton( f16_local0 ) and IsGamepad( f16_arg2 ) then
-			CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x571F08AD84807E0], 0x0, nil, nil )
+		if CoD.CraftUtility.IsEditMode( controller ) and not IsRepeatButtonPress( f16_local0 ) and IsDpadButton( f16_local0 ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x571F08AD84807E0], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( emptyFocusable, f1_arg0, Enum.LUIButton[0x4B11D2B20C75A7F], nil, function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		if CoD.CraftUtility.IsEditMode( f17_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f17_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, f17_arg2 ) and not CoD.CraftUtility.Emblem_IsGroupedLayerWithSticker( self.layerCarousel, f17_arg2 ) and IsDpadButton( f17_arg3 ) and CoD.BaseUtility.IsDvarEnabled( "enable_material_picker" ) then
-			CoD.CraftUtility.EmblemEditor_SaveLayer( self, f17_arg2 )
-			CoD.CraftUtility.EmblemEditor_EndEdit( self, f17_arg0, f17_arg2 )
-			OpenOverlay( self, "EmblemEditorMaterialPicker", f17_arg2, nil )
+	f1_local1:AddButtonCallbackFunction( emptyFocusable, f1_arg0, Enum.LUIButton[0x4B11D2B20C75A7F], nil, function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, controller ) and not CoD.CraftUtility.Emblem_IsGroupedLayerWithSticker( self.layerCarousel, controller ) and IsDpadButton( model ) and CoD.BaseUtility.IsDvarEnabled( "enable_material_picker" ) then
+			CoD.CraftUtility.EmblemEditor_SaveLayer( self, controller )
+			CoD.CraftUtility.EmblemEditor_EndEdit( self, element, controller )
+			OpenOverlay( self, "EmblemEditorMaterialPicker", controller, nil )
 			return true
 		else
 			
 		end
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		if CoD.CraftUtility.IsEditMode( f18_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f18_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, f18_arg2 ) and not CoD.CraftUtility.Emblem_IsGroupedLayerWithSticker( self.layerCarousel, f18_arg2 ) and IsDpadButton( nil ) and CoD.BaseUtility.IsDvarEnabled( "enable_material_picker" ) then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0x4B11D2B20C75A7F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, controller ) and not CoD.CraftUtility.Emblem_IsGroupedLayerWithSticker( self.layerCarousel, controller ) and IsDpadButton( nil ) and CoD.BaseUtility.IsDvarEnabled( "enable_material_picker" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4B11D2B20C75A7F], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( emptyFocusable, f1_arg0, Enum.LUIButton[0xD4C15FE32148D3A], nil, function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
-		if CoD.CraftUtility.IsEditMode( f19_arg2 ) and not IsRepeatButtonPress( f19_arg3 ) and IsDpadButton( f19_arg3 ) and CoD.BaseUtility.IsDvarEnabled( "enable_clip_mask" ) then
-			CoD.CraftUtility.EmblemEditor_ClipLayer( self, self.layerCarousel, f19_arg2 )
+	f1_local1:AddButtonCallbackFunction( emptyFocusable, f1_arg0, Enum.LUIButton[0xD4C15FE32148D3A], nil, function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) and not IsRepeatButtonPress( model ) and IsDpadButton( model ) and CoD.BaseUtility.IsDvarEnabled( "enable_clip_mask" ) then
+			CoD.CraftUtility.EmblemEditor_ClipLayer( self, self.layerCarousel, controller )
 			return true
 		else
 			
 		end
-	end, function ( f20_arg0, f20_arg1, f20_arg2 )
+	end, function ( element, menu, controller )
 		local f20_local0 = nil
-		if CoD.CraftUtility.IsEditMode( f20_arg2 ) and not IsRepeatButtonPress( f20_local0 ) and IsDpadButton( f20_local0 ) and CoD.BaseUtility.IsDvarEnabled( "enable_clip_mask" ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0xD4C15FE32148D3A], 0x0, nil, nil )
+		if CoD.CraftUtility.IsEditMode( controller ) and not IsRepeatButtonPress( f20_local0 ) and IsDpadButton( f20_local0 ) and CoD.BaseUtility.IsDvarEnabled( "enable_clip_mask" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD4C15FE32148D3A], "", nil, nil )
 			return false
 		else
 			return false
@@ -240,7 +240,7 @@ LUI.createMenu.EmblemEditor = function ( f1_arg0, f1_arg1 )
 		} )
 	end, false )
 	GroupFull:setAlpha( 0 )
-	GroupFull.buttonPromptImage:setImage( RegisterImage( "uie_hud_common_core_score_waricon" ) )
+	GroupFull.buttonPromptImage:setImage( RegisterImage( "warning_triangle" ) )
 	GroupFull.label:setText( Engine[0xF9F1239CFD921FE]( 0x35E24C3255091DF ) )
 	self:addElement( GroupFull )
 	self.GroupFull = GroupFull
@@ -335,214 +335,214 @@ LUI.createMenu.EmblemEditor = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f37_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f38_arg0, f38_arg1, f38_arg2, f38_arg3 )
-		if not CoD.CraftUtility.IsLayerEmpty( self, f38_arg0, f38_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_LayerGainFocus( f38_arg1, self, f38_arg0, f38_arg2 )
-			CoD.CraftUtility.EmblemEditor_EditSelectedLayer( self, f38_arg0, f38_arg2 )
-			CoD.CraftUtility.EmblemEditor_StoreAllChanges( self, f38_arg2 )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, f38_arg2, f38_arg0 )
-			UpdateElementState( self, "GroupFull", f38_arg2 )
+	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		if not CoD.CraftUtility.IsLayerEmpty( self, element, controller ) then
+			CoD.CraftUtility.EmblemEditor_LayerGainFocus( menu, self, element, controller )
+			CoD.CraftUtility.EmblemEditor_EditSelectedLayer( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_StoreAllChanges( self, controller )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, controller, element )
+			UpdateElementState( self, "GroupFull", controller )
 			PlayClipOnElement( self, {
 				elementName = "emblemHiddenPulseLayerPC",
 				clipName = "DefaultClip"
-			}, f38_arg2 )
+			}, controller )
 			return true
-		elseif CoD.CraftUtility.IsLayerEmpty( self, f38_arg0, f38_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_LayerGainFocus( f38_arg1, self, f38_arg0, f38_arg2 )
-			OpenOverlay( self, "EmblemChooseIcon", f38_arg2, nil )
-			CoD.CraftUtility.EmblemEditor_StoreAllChanges( self, f38_arg2 )
+		elseif CoD.CraftUtility.IsLayerEmpty( self, element, controller ) then
+			CoD.CraftUtility.EmblemEditor_LayerGainFocus( menu, self, element, controller )
+			OpenOverlay( self, "EmblemChooseIcon", controller, nil )
+			CoD.CraftUtility.EmblemEditor_StoreAllChanges( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f39_arg0, f39_arg1, f39_arg2 )
-		if not CoD.CraftUtility.IsLayerEmpty( self, f39_arg0, f39_arg2 ) then
-			CoD.Menu.SetButtonLabel( f39_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		if not CoD.CraftUtility.IsLayerEmpty( self, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
-		elseif CoD.CraftUtility.IsLayerEmpty( self, f39_arg0, f39_arg2 ) then
-			CoD.Menu.SetButtonLabel( f39_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+		elseif CoD.CraftUtility.IsLayerEmpty( self, element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_link", function ( f40_arg0, f40_arg1, f40_arg2, f40_arg3 )
-		if CoD.CraftUtility.IsBrowseMode( f40_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, f40_arg0, f40_arg2 ) and IsMouseOrKeyboard( f40_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_LayerGainFocus( f40_arg1, self, f40_arg0, f40_arg2 )
-			CoD.CraftUtility.EmblemEditor_LinkUnlinkActiveLayer( self, f40_arg2, f40_arg0 )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, f40_arg2, f40_arg0 )
-			UpdateElementState( self, "BrowseControls", f40_arg2 )
+	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_link", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, element, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.CraftUtility.EmblemEditor_LayerGainFocus( menu, self, element, controller )
+			CoD.CraftUtility.EmblemEditor_LinkUnlinkActiveLayer( self, controller, element )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, controller, element )
+			UpdateElementState( self, "BrowseControls", controller )
 			PlaySoundAlias( "uin_paint_image_flip_toggle" )
 			return true
 		else
 			
 		end
-	end, function ( f41_arg0, f41_arg1, f41_arg2 )
-		if CoD.CraftUtility.IsBrowseMode( f41_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, f41_arg0, f41_arg2 ) and IsMouseOrKeyboard( f41_arg2 ) then
-			CoD.Menu.SetButtonLabel( f41_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_link" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, element, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_link" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_contextual_3", function ( f42_arg0, f42_arg1, f42_arg2, f42_arg3 )
-		if CoD.CraftUtility.IsBrowseMode( f42_arg2 ) and not CoD.CraftUtility.IsClipboardEmpty( f42_arg2 ) and CoD.CraftUtility.Emblem_CanPastFromClipboard( f42_arg0, f42_arg2 ) and CoD.CraftUtility.Clipboard_HasEnoughLayersToPaste( self, f42_arg2 ) and IsMouseOrKeyboard( f42_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_LayerGainFocus( f42_arg1, self, f42_arg0, f42_arg2 )
-			CoD.CraftUtility.EmblemEditor_InsertLayer( self, f42_arg0, f42_arg2 )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, f42_arg2, f42_arg0 )
+	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_contextual_3", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsClipboardEmpty( controller ) and CoD.CraftUtility.Emblem_CanPastFromClipboard( element, controller ) and CoD.CraftUtility.Clipboard_HasEnoughLayersToPaste( self, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.CraftUtility.EmblemEditor_LayerGainFocus( menu, self, element, controller )
+			CoD.CraftUtility.EmblemEditor_InsertLayer( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, controller, element )
 			PlaySoundSetSound( self, "opacity" )
 			return true
 		else
 			
 		end
-	end, function ( f43_arg0, f43_arg1, f43_arg2 )
-		if CoD.CraftUtility.IsBrowseMode( f43_arg2 ) and not CoD.CraftUtility.IsClipboardEmpty( f43_arg2 ) and CoD.CraftUtility.Emblem_CanPastFromClipboard( f43_arg0, f43_arg2 ) and CoD.CraftUtility.Clipboard_HasEnoughLayersToPaste( self, f43_arg2 ) and IsMouseOrKeyboard( f43_arg2 ) then
-			CoD.Menu.SetButtonLabel( f43_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_contextual_3" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsClipboardEmpty( controller ) and CoD.CraftUtility.Emblem_CanPastFromClipboard( element, controller ) and CoD.CraftUtility.Clipboard_HasEnoughLayersToPaste( self, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_contextual_3" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_remove", function ( f44_arg0, f44_arg1, f44_arg2, f44_arg3 )
-		if CoD.CraftUtility.IsBrowseMode( f44_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, f44_arg2 ) and IsMouseOrKeyboard( f44_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_LayerGainFocus( f44_arg1, self, f44_arg0, f44_arg2 )
-			CoD.CraftUtility.EmblemEditor_StoreSelectedLayer( self, f44_arg2 )
-			CoD.CraftUtility.EmblemEditor_StoreAllChanges( self, f44_arg2 )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerAndGroupCountWithReplace( self, f44_arg2 )
-			OpenOverlay( self, "EmblemChooseIcon", f44_arg2, nil )
+	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_remove", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.CraftUtility.EmblemEditor_LayerGainFocus( menu, self, element, controller )
+			CoD.CraftUtility.EmblemEditor_StoreSelectedLayer( self, controller )
+			CoD.CraftUtility.EmblemEditor_StoreAllChanges( self, controller )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerAndGroupCountWithReplace( self, controller )
+			OpenOverlay( self, "EmblemChooseIcon", controller, nil )
 			return true
 		else
 			
 		end
-	end, function ( f45_arg0, f45_arg1, f45_arg2 )
-		if CoD.CraftUtility.IsBrowseMode( f45_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, f45_arg2 ) and IsMouseOrKeyboard( f45_arg2 ) then
-			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_remove" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_remove" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_layertop", function ( f46_arg0, f46_arg1, f46_arg2, f46_arg3 )
-		if CoD.CraftUtility.IsEditMode( f46_arg2 ) and IsMouseOrKeyboard( f46_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_LayerGainFocus( f46_arg1, self, f46_arg0, f46_arg2 )
-			CoD.CraftUtility.EmblemEditor_EditSelectedLayer( self, f46_arg0, f46_arg2 )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, f46_arg2, f46_arg0 )
-			CoD.CraftUtility.EmblemEditor_MoveLayer( self, f46_arg1, f46_arg2, "left" )
+	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_layertop", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.CraftUtility.EmblemEditor_LayerGainFocus( menu, self, element, controller )
+			CoD.CraftUtility.EmblemEditor_EditSelectedLayer( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, controller, element )
+			CoD.CraftUtility.EmblemEditor_MoveLayer( self, menu, controller, "left" )
 			PlaySoundSetSound( self, "layer_switch" )
 			PlayClipOnElement( self, {
 				elementName = "emblemHiddenPulseLayer",
 				clipName = "DefaultClip"
-			}, f46_arg2 )
-			SetCurrentElementAsActive( self, f46_arg0, f46_arg2 )
-			CoD.CraftUtility.EmblemEditor_LayerGainFocus( f46_arg1, self, f46_arg0, f46_arg2 )
-			CoD.CraftUtility.EmblemEditor_EditSelectedLayer( self, f46_arg0, f46_arg2 )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, f46_arg2, f46_arg0 )
+			}, controller )
+			SetCurrentElementAsActive( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_LayerGainFocus( menu, self, element, controller )
+			CoD.CraftUtility.EmblemEditor_EditSelectedLayer( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, controller, element )
 			return true
 		else
 			
 		end
-	end, function ( f47_arg0, f47_arg1, f47_arg2 )
-		if CoD.CraftUtility.IsEditMode( f47_arg2 ) and IsMouseOrKeyboard( f47_arg2 ) then
-			CoD.Menu.SetButtonLabel( f47_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_layertop" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsEditMode( controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_layertop" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_layerbottom", function ( f48_arg0, f48_arg1, f48_arg2, f48_arg3 )
-		if CoD.CraftUtility.IsEditMode( f48_arg2 ) and IsMouseOrKeyboard( f48_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_LayerGainFocus( f48_arg1, self, f48_arg0, f48_arg2 )
-			CoD.CraftUtility.EmblemEditor_EditSelectedLayer( self, f48_arg0, f48_arg2 )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, f48_arg2, f48_arg0 )
-			CoD.CraftUtility.EmblemEditor_MoveLayer( self, f48_arg1, f48_arg2, "right" )
+	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_layerbottom", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.CraftUtility.EmblemEditor_LayerGainFocus( menu, self, element, controller )
+			CoD.CraftUtility.EmblemEditor_EditSelectedLayer( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, controller, element )
+			CoD.CraftUtility.EmblemEditor_MoveLayer( self, menu, controller, "right" )
 			PlaySoundSetSound( self, "layer_switch" )
 			PlayClipOnElement( self, {
 				elementName = "emblemHiddenPulseLayer",
 				clipName = "DefaultClip"
-			}, f48_arg2 )
-			SetCurrentElementAsActive( self, f48_arg0, f48_arg2 )
-			CoD.CraftUtility.EmblemEditor_LayerGainFocus( f48_arg1, self, f48_arg0, f48_arg2 )
-			CoD.CraftUtility.EmblemEditor_EditSelectedLayer( self, f48_arg0, f48_arg2 )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, f48_arg2, f48_arg0 )
+			}, controller )
+			SetCurrentElementAsActive( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_LayerGainFocus( menu, self, element, controller )
+			CoD.CraftUtility.EmblemEditor_EditSelectedLayer( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, controller, element )
 			return true
 		else
 			
 		end
-	end, function ( f49_arg0, f49_arg1, f49_arg2 )
-		if CoD.CraftUtility.IsEditMode( f49_arg2 ) and IsMouseOrKeyboard( f49_arg2 ) then
-			CoD.Menu.SetButtonLabel( f49_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_layerbottom" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsEditMode( controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_layerbottom" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_newlayer", function ( f50_arg0, f50_arg1, f50_arg2, f50_arg3 )
-		if CoD.CraftUtility.IsBrowseMode( f50_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, f50_arg0, f50_arg2 ) and CoD.CraftUtility.Emblem_IsAnyLayerEmpty( f50_arg2 ) and IsMouseOrKeyboard( f50_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_StoreAllChanges( self, f50_arg2 )
-			CoD.CraftUtility.EmblemEditor_LayerGainFocus( f50_arg1, self, f50_arg0, f50_arg2 )
-			CoD.CraftUtility.EmblemEditor_InsertDecalPressed( self, f50_arg0, f50_arg2 )
-			OpenOverlay( self, "EmblemChooseIcon", f50_arg2, nil )
+	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_newlayer", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, element, controller ) and CoD.CraftUtility.Emblem_IsAnyLayerEmpty( controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.CraftUtility.EmblemEditor_StoreAllChanges( self, controller )
+			CoD.CraftUtility.EmblemEditor_LayerGainFocus( menu, self, element, controller )
+			CoD.CraftUtility.EmblemEditor_InsertDecalPressed( self, element, controller )
+			OpenOverlay( self, "EmblemChooseIcon", controller, nil )
 			return true
 		else
 			
 		end
-	end, function ( f51_arg0, f51_arg1, f51_arg2 )
-		if CoD.CraftUtility.IsBrowseMode( f51_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, f51_arg0, f51_arg2 ) and CoD.CraftUtility.Emblem_IsAnyLayerEmpty( f51_arg2 ) and IsMouseOrKeyboard( f51_arg2 ) then
-			CoD.Menu.SetButtonLabel( f51_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_newlayer" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, element, controller ) and CoD.CraftUtility.Emblem_IsAnyLayerEmpty( controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_newlayer" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_cutlayer", function ( f52_arg0, f52_arg1, f52_arg2, f52_arg3 )
-		if CoD.CraftUtility.IsBrowseMode( f52_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, f52_arg0, f52_arg2 ) and IsMouseOrKeyboard( f52_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_LayerGainFocus( f52_arg1, self, f52_arg0, f52_arg2 )
-			CoD.CraftUtility.EmblemEditor_CutLayer( self, f52_arg0, f52_arg2 )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, f52_arg2, f52_arg0 )
+	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_cutlayer", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, element, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.CraftUtility.EmblemEditor_LayerGainFocus( menu, self, element, controller )
+			CoD.CraftUtility.EmblemEditor_CutLayer( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, controller, element )
 			PlaySoundAlias( "uin_paint_image_flip_toggle" )
 			return true
 		else
 			
 		end
-	end, function ( f53_arg0, f53_arg1, f53_arg2 )
-		if CoD.CraftUtility.IsBrowseMode( f53_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, f53_arg0, f53_arg2 ) and IsMouseOrKeyboard( f53_arg2 ) then
-			CoD.Menu.SetButtonLabel( f53_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_cutlayer" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, element, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_cutlayer" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_copylayer", function ( f54_arg0, f54_arg1, f54_arg2, f54_arg3 )
-		if CoD.CraftUtility.IsBrowseMode( f54_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, f54_arg0, f54_arg2 ) and IsMouseOrKeyboard( f54_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_LayerGainFocus( f54_arg1, self, f54_arg0, f54_arg2 )
-			CoD.CraftUtility.EmblemEditor_CopyLayerToClipboard( self, f54_arg0, f54_arg2 )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, f54_arg2, f54_arg0 )
+	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_copylayer", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, element, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.CraftUtility.EmblemEditor_LayerGainFocus( menu, self, element, controller )
+			CoD.CraftUtility.EmblemEditor_CopyLayerToClipboard( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, controller, element )
 			PlaySoundSetSound( self, "scale" )
 			return true
 		else
 			
 		end
-	end, function ( f55_arg0, f55_arg1, f55_arg2 )
-		if CoD.CraftUtility.IsBrowseMode( f55_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, f55_arg0, f55_arg2 ) and IsMouseOrKeyboard( f55_arg2 ) then
-			CoD.Menu.SetButtonLabel( f55_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_copylayer" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, element, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_copylayer" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_group", function ( f56_arg0, f56_arg1, f56_arg2, f56_arg3 )
-		if CoD.CraftUtility.IsBrowseMode( f56_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, f56_arg0, f56_arg2 ) and CoD.CraftUtility.Emblems_IsLayerLinked( f56_arg0, f56_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_LayerGainFocus( f56_arg1, self, f56_arg0, f56_arg2 )
-			CoD.CraftUtility.EmblemEditor_GroupUngroupLayers( self, f56_arg2, f56_arg0 )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, f56_arg2, f56_arg0 )
+	f1_local1:AddButtonCallbackFunction( layerGrid, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_group", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, element, controller ) and CoD.CraftUtility.Emblems_IsLayerLinked( element, controller ) then
+			CoD.CraftUtility.EmblemEditor_LayerGainFocus( menu, self, element, controller )
+			CoD.CraftUtility.EmblemEditor_GroupUngroupLayers( self, controller, element )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, controller, element )
 			PlaySoundAlias( "uin_paint_image_flip_toggle" )
 			return true
 		else
 			
 		end
-	end, function ( f57_arg0, f57_arg1, f57_arg2 )
-		if CoD.CraftUtility.IsBrowseMode( f57_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, f57_arg0, f57_arg2 ) and CoD.CraftUtility.Emblems_IsLayerLinked( f57_arg0, f57_arg2 ) then
-			CoD.Menu.SetButtonLabel( f57_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_group" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, element, controller ) and CoD.CraftUtility.Emblems_IsLayerLinked( element, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_group" )
 			return false
 		else
 			return false
@@ -560,7 +560,7 @@ LUI.createMenu.EmblemEditor = function ( f1_arg0, f1_arg1 )
 			
 		end
 	end )
-	layerGrid:AddContextualMenuAction( f1_local1, f1_arg0, 0x82789B43F936B78, function ( f60_arg0, f60_arg1, f60_arg2, f60_arg3 )
+	layerGrid:AddContextualMenuAction( f1_local1, f1_arg0, "menu/emblem_unlink_layers", function ( f60_arg0, f60_arg1, f60_arg2, f60_arg3 )
 		if not CoD.CraftUtility.IsLayerEmpty( self, f60_arg0, f60_arg2 ) and not CoD.CraftUtility.Emblem_IsLayerGrouped( f60_arg0, f60_arg2 ) and CoD.CraftUtility.Emblems_IsLayerLinked( f60_arg0, f60_arg2 ) then
 			return function ( f61_arg0, f61_arg1, f61_arg2, f61_arg3 )
 				CoD.CraftUtility.EmblemEditor_LayerGainFocus( f61_arg1, self, f61_arg0, f61_arg2 )
@@ -609,7 +609,7 @@ LUI.createMenu.EmblemEditor = function ( f1_arg0, f1_arg1 )
 			
 		end
 	end )
-	layerGrid:AddContextualMenuAction( f1_local1, f1_arg0, 0x345431B325139E6, function ( f68_arg0, f68_arg1, f68_arg2, f68_arg3 )
+	layerGrid:AddContextualMenuAction( f1_local1, f1_arg0, "menu/save_group", function ( f68_arg0, f68_arg1, f68_arg2, f68_arg3 )
 		if CoD.CraftUtility.Emblem_IsLayerGrouped( f68_arg0, f68_arg2 ) and CoD.CraftUtility.EmblemEditor_CustomDecalGroupsSlotsRemaining( f68_arg2 ) then
 			return function ( f69_arg0, f69_arg1, f69_arg2, f69_arg3 )
 				CoD.CraftUtility.EmblemEditor_LayerGainFocus( f69_arg1, self, f69_arg0, f69_arg2 )
@@ -622,7 +622,7 @@ LUI.createMenu.EmblemEditor = function ( f1_arg0, f1_arg1 )
 			
 		end
 	end )
-	layerGrid:AddContextualMenuAction( f1_local1, f1_arg0, 0x4389B00AC580011, function ( f70_arg0, f70_arg1, f70_arg2, f70_arg3 )
+	layerGrid:AddContextualMenuAction( f1_local1, f1_arg0, "menu/change_decal", function ( f70_arg0, f70_arg1, f70_arg2, f70_arg3 )
 		if not CoD.CraftUtility.IsLayerEmpty( self, f70_arg0, f70_arg2 ) and not CoD.CraftUtility.Emblem_IsLayerGrouped( f70_arg0, f70_arg2 ) then
 			return function ( f71_arg0, f71_arg1, f71_arg2, f71_arg3 )
 				CoD.CraftUtility.EmblemEditor_LayerGainFocus( f71_arg1, self, f71_arg0, f71_arg2 )
@@ -817,18 +817,18 @@ LUI.createMenu.EmblemEditor = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0xD4C15FE32148D3A] )
 		return f93_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( layerCarousel, f1_arg0, Enum.LUIButton[0xD4C15FE32148D3A], nil, function ( f94_arg0, f94_arg1, f94_arg2, f94_arg3 )
-		if CoD.CraftUtility.IsBrowseMode( f94_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f94_arg2 ) and IsDpadButton( f94_arg3 ) and CoD.CraftUtility.Emblem_IsAnyLayerEmpty( f94_arg2 ) and IsGamepad( f94_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_StoreAllChanges( self, f94_arg2 )
-			CoD.CraftUtility.EmblemEditor_InsertDecalPressed( self, f94_arg0, f94_arg2 )
-			OpenOverlay( self, "EmblemChooseIcon", f94_arg2, nil )
+	f1_local1:AddButtonCallbackFunction( layerCarousel, f1_arg0, Enum.LUIButton[0xD4C15FE32148D3A], nil, function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and IsDpadButton( model ) and CoD.CraftUtility.Emblem_IsAnyLayerEmpty( controller ) and IsGamepad( controller ) then
+			CoD.CraftUtility.EmblemEditor_StoreAllChanges( self, controller )
+			CoD.CraftUtility.EmblemEditor_InsertDecalPressed( self, element, controller )
+			OpenOverlay( self, "EmblemChooseIcon", controller, nil )
 			return true
 		else
 			
 		end
-	end, function ( f95_arg0, f95_arg1, f95_arg2 )
-		if CoD.CraftUtility.IsBrowseMode( f95_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f95_arg2 ) and IsDpadButton( nil ) and CoD.CraftUtility.Emblem_IsAnyLayerEmpty( f95_arg2 ) and IsGamepad( f95_arg2 ) then
-			CoD.Menu.SetButtonLabel( f95_arg1, Enum.LUIButton[0xD4C15FE32148D3A], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and IsDpadButton( nil ) and CoD.CraftUtility.Emblem_IsAnyLayerEmpty( controller ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD4C15FE32148D3A], "", nil, nil )
 			return false
 		else
 			return false
@@ -1446,7 +1446,7 @@ LUI.createMenu.EmblemEditor = function ( f1_arg0, f1_arg1 )
 	layermofnPC.layerMOfN.__layermofntext = function ( f154_arg0 )
 		local f154_local0 = f154_arg0:get()
 		if f154_local0 ~= nil then
-			layermofnPC.layerMOfN:setText( LocalizeLayerMOfN( 0x2769909B839C4BC, f1_arg0, f154_local0 ) )
+			layermofnPC.layerMOfN:setText( LocalizeLayerMOfN( "menu/emblem_layer_m_of_n", f1_arg0, f154_local0 ) )
 		end
 	end
 	
@@ -1472,7 +1472,7 @@ LUI.createMenu.EmblemEditor = function ( f1_arg0, f1_arg1 )
 	layermofn.layerMOfN.__layermofntext = function ( f157_arg0 )
 		local f157_local0 = f157_arg0:get()
 		if f157_local0 ~= nil then
-			layermofn.layerMOfN:setText( LocalizeLayerMOfN( 0x2769909B839C4BC, f1_arg0, f157_local0 ) )
+			layermofn.layerMOfN:setText( LocalizeLayerMOfN( "menu/emblem_layer_m_of_n", f1_arg0, f157_local0 ) )
 		end
 	end
 	
@@ -1631,27 +1631,27 @@ LUI.createMenu.EmblemEditor = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( f173_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x29E5695FF1401AD] )
 		CoD.Menu.UpdateButtonShownState( f173_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 	end, false )
-	self:registerEventHandler( "menu_loaded", function ( element, event )
+	self:registerEventHandler( "menu_loaded", function ( self, event )
 		local f174_local0 = nil
-		if element.menuLoaded then
-			f174_local0 = element:menuLoaded( event )
-		elseif element.super.menuLoaded then
-			f174_local0 = element.super:menuLoaded( event )
+		if self.menuLoaded then
+			f174_local0 = self:menuLoaded( event )
+		elseif self.super.menuLoaded then
+			f174_local0 = self.super:menuLoaded( event )
 		end
 		UpdateElementState( self, "layermofn", f1_arg0 )
 		UpdateElementState( self, "BrowseControls", f1_arg0 )
 		UpdateElementState( self, "EditControls", f1_arg0 )
 		if not f174_local0 then
-			f174_local0 = element:dispatchEventToChildren( event )
+			f174_local0 = self:dispatchEventToChildren( event )
 		end
 		return f174_local0
 	end )
-	self:registerEventHandler( "occlusion_change", function ( element, event )
+	self:registerEventHandler( "occlusion_change", function ( self, event )
 		local f175_local0 = nil
-		if element.OcclusionChange then
-			f175_local0 = element:OcclusionChange( event )
-		elseif element.super.OcclusionChange then
-			f175_local0 = element.super:OcclusionChange( event )
+		if self.OcclusionChange then
+			f175_local0 = self:OcclusionChange( event )
+		elseif self.super.OcclusionChange then
+			f175_local0 = self.super:OcclusionChange( event )
 		end
 		if IsEventPropertyEqualTo( event, "occluded", true ) then
 			MenuUnhideFreeCursor( f1_local1, f1_arg0 )
@@ -1666,435 +1666,435 @@ LUI.createMenu.EmblemEditor = function ( f1_arg0, f1_arg1 )
 			UpdateElementState( self, "layerCarousel", f1_arg0 )
 		end
 		if not f175_local0 then
-			f175_local0 = element:dispatchEventToChildren( event )
+			f175_local0 = self:dispatchEventToChildren( event )
 		end
 		return f175_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x493152B20AE4F58], nil, function ( f176_arg0, f176_arg1, f176_arg2, f176_arg3 )
-		if CoD.CraftUtility.IsBrowseMode( f176_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f176_arg2 ) and not CoD.CraftUtility.Emblem_IsLayerGrouped( self.layerCarousel, f176_arg2 ) and not IsRepeatButtonPress( f176_arg3 ) then
-			CoD.CraftUtility.EmblemEditor_LinkUnlinkActiveLayer( self, f176_arg2, self )
-			UpdateElementState( self, "BrowseControls", f176_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x493152B20AE4F58], nil, function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and not CoD.CraftUtility.Emblem_IsLayerGrouped( self.layerCarousel, controller ) and not IsRepeatButtonPress( model ) then
+			CoD.CraftUtility.EmblemEditor_LinkUnlinkActiveLayer( self, controller, self )
+			UpdateElementState( self, "BrowseControls", controller )
 			PlaySoundAlias( "uin_paint_image_flip_toggle" )
 			return true
-		elseif CoD.CraftUtility.IsEditMode( f176_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f176_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, f176_arg2 ) then
-			CoD.CraftUtility.EmblemChooseColor_UpdateBothColorOpacity( self, f176_arg0, "-0.01", f176_arg2 )
+		elseif CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, controller ) then
+			CoD.CraftUtility.EmblemChooseColor_UpdateBothColorOpacity( self, element, "-0.01", controller )
 			PlaySoundSetSound( self, "opacity" )
 			return true
 		else
 			
 		end
-	end, function ( f177_arg0, f177_arg1, f177_arg2 )
-		if CoD.CraftUtility.IsBrowseMode( f177_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f177_arg2 ) and not CoD.CraftUtility.Emblem_IsLayerGrouped( self.layerCarousel, f177_arg2 ) and not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f177_arg1, Enum.LUIButton[0x493152B20AE4F58], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and not CoD.CraftUtility.Emblem_IsLayerGrouped( self.layerCarousel, controller ) and not IsRepeatButtonPress( nil ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x493152B20AE4F58], "", nil, nil )
 			return false
-		elseif CoD.CraftUtility.IsEditMode( f177_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f177_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, f177_arg2 ) then
-			CoD.Menu.SetButtonLabel( f177_arg1, Enum.LUIButton[0x493152B20AE4F58], 0x0, nil, nil )
+		elseif CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x493152B20AE4F58], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], nil, function ( f178_arg0, f178_arg1, f178_arg2, f178_arg3 )
-		if CoD.CraftUtility.IsBrowseMode( f178_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f178_arg2 ) and not CoD.CraftUtility.IsEmblemEmpty( f178_arg2 ) and not CoD.CraftUtility.Emblem_IsLayerGrouped( self.layerCarousel, f178_arg2 ) and not IsRepeatButtonPress( f178_arg3 ) then
-			CoD.CraftUtility.EmblemEditor_LinkAllLayers( self, f178_arg2 )
-			UpdateElementState( self, "BrowseControls", f178_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], nil, function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and not CoD.CraftUtility.IsEmblemEmpty( controller ) and not CoD.CraftUtility.Emblem_IsLayerGrouped( self.layerCarousel, controller ) and not IsRepeatButtonPress( model ) then
+			CoD.CraftUtility.EmblemEditor_LinkAllLayers( self, controller )
+			UpdateElementState( self, "BrowseControls", controller )
 			PlaySoundAlias( "uin_paint_image_flip_toggle" )
 			return true
 		else
 			
 		end
-	end, function ( f179_arg0, f179_arg1, f179_arg2 )
-		if CoD.CraftUtility.IsBrowseMode( f179_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f179_arg2 ) and not CoD.CraftUtility.IsEmblemEmpty( f179_arg2 ) and not CoD.CraftUtility.Emblem_IsLayerGrouped( self.layerCarousel, f179_arg2 ) and not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f179_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and not CoD.CraftUtility.IsEmblemEmpty( controller ) and not CoD.CraftUtility.Emblem_IsLayerGrouped( self.layerCarousel, controller ) and not IsRepeatButtonPress( nil ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x49A252B20B48936], nil, function ( f180_arg0, f180_arg1, f180_arg2, f180_arg3 )
-		if CoD.CraftUtility.IsBrowseMode( f180_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f180_arg2 ) and CoD.CraftUtility.Emblems_IsLayerLinked( self.layerCarousel, f180_arg2 ) and not IsRepeatButtonPress( f180_arg3 ) then
-			CoD.CraftUtility.EmblemEditor_GroupUngroupLayers( self, f180_arg2, f180_arg0 )
-			UpdateElementState( self, "BrowseControls", f180_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x49A252B20B48936], nil, function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and CoD.CraftUtility.Emblems_IsLayerLinked( self.layerCarousel, controller ) and not IsRepeatButtonPress( model ) then
+			CoD.CraftUtility.EmblemEditor_GroupUngroupLayers( self, controller, element )
+			UpdateElementState( self, "BrowseControls", controller )
 			PlaySoundAlias( "uin_paint_image_flip_toggle" )
 			return true
-		elseif CoD.CraftUtility.IsEditMode( f180_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f180_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, f180_arg2 ) then
-			CoD.CraftUtility.EmblemChooseColor_UpdateBothColorOpacity( self, f180_arg0, "0.01", f180_arg2 )
+		elseif CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, controller ) then
+			CoD.CraftUtility.EmblemChooseColor_UpdateBothColorOpacity( self, element, "0.01", controller )
 			PlaySoundSetSound( self, "opacity" )
 			return true
 		else
 			
 		end
-	end, function ( f181_arg0, f181_arg1, f181_arg2 )
-		if CoD.CraftUtility.IsBrowseMode( f181_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f181_arg2 ) and CoD.CraftUtility.Emblems_IsLayerLinked( self.layerCarousel, f181_arg2 ) and not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f181_arg1, Enum.LUIButton[0x49A252B20B48936], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and CoD.CraftUtility.Emblems_IsLayerLinked( self.layerCarousel, controller ) and not IsRepeatButtonPress( nil ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x49A252B20B48936], "", nil, nil )
 			return false
-		elseif CoD.CraftUtility.IsEditMode( f181_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f181_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, f181_arg2 ) then
-			CoD.Menu.SetButtonLabel( f181_arg1, Enum.LUIButton[0x49A252B20B48936], 0x0, nil, nil )
+		elseif CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x49A252B20B48936], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA], "ui_contextual_2", function ( f182_arg0, f182_arg1, f182_arg2, f182_arg3 )
-		if CoD.CraftUtility.IsBrowseMode( f182_arg2 ) and CoD.CraftUtility.Emblem_IsLayerGrouped( self.layerCarousel, f182_arg2 ) and CoD.CraftUtility.EmblemEditor_CustomDecalGroupsSlotsRemaining( f182_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_StoreSelectedGroup( self, f182_arg2 )
-			CoD.CraftUtility.EmblemEditor_OpenSaveGroupPopup( self, f182_arg0, f182_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA], "ui_contextual_2", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and CoD.CraftUtility.Emblem_IsLayerGrouped( self.layerCarousel, controller ) and CoD.CraftUtility.EmblemEditor_CustomDecalGroupsSlotsRemaining( controller ) then
+			CoD.CraftUtility.EmblemEditor_StoreSelectedGroup( self, controller )
+			CoD.CraftUtility.EmblemEditor_OpenSaveGroupPopup( self, element, controller )
 			PlaySoundAlias( "uin_paint_image_flip_toggle" )
 			return true
-		elseif IsElementInState( self.EmblemEditorPCLegend, "Close" ) and IsMouseOrKeyboard( f182_arg2 ) then
-			SetElementState( self, self.EmblemEditorPCLegend, f182_arg2, "Open" )
+		elseif IsElementInState( self.EmblemEditorPCLegend, "Close" ) and IsMouseOrKeyboard( controller ) then
+			SetElementState( self, self.EmblemEditorPCLegend, controller, "Open" )
 			return true
-		elseif IsElementInState( self.EmblemEditorPCLegend, "Open" ) and IsMouseOrKeyboard( f182_arg2 ) then
-			SetElementState( self, self.EmblemEditorPCLegend, f182_arg2, "Close" )
+		elseif IsElementInState( self.EmblemEditorPCLegend, "Open" ) and IsMouseOrKeyboard( controller ) then
+			SetElementState( self, self.EmblemEditorPCLegend, controller, "Close" )
 			return true
 		else
 			
 		end
-	end, function ( f183_arg0, f183_arg1, f183_arg2 )
-		if CoD.CraftUtility.IsBrowseMode( f183_arg2 ) and CoD.CraftUtility.Emblem_IsLayerGrouped( self.layerCarousel, f183_arg2 ) and CoD.CraftUtility.EmblemEditor_CustomDecalGroupsSlotsRemaining( f183_arg2 ) then
-			CoD.Menu.SetButtonLabel( f183_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x0, nil, "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and CoD.CraftUtility.Emblem_IsLayerGrouped( self.layerCarousel, controller ) and CoD.CraftUtility.EmblemEditor_CustomDecalGroupsSlotsRemaining( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "", nil, "ui_contextual_2" )
 			return false
-		elseif IsElementInState( self.EmblemEditorPCLegend, "Close" ) and IsMouseOrKeyboard( f183_arg2 ) then
-			CoD.Menu.SetButtonLabel( f183_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x90E9019810E01CA, nil, "ui_contextual_2" )
+		elseif IsElementInState( self.EmblemEditorPCLegend, "Close" ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "menu/shortcuts", nil, "ui_contextual_2" )
 			return true
-		elseif IsElementInState( self.EmblemEditorPCLegend, "Open" ) and IsMouseOrKeyboard( f183_arg2 ) then
-			CoD.Menu.SetButtonLabel( f183_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x90E9019810E01CA, nil, "ui_contextual_2" )
+		elseif IsElementInState( self.EmblemEditorPCLegend, "Open" ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "menu/shortcuts", nil, "ui_contextual_2" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f184_arg0, f184_arg1, f184_arg2, f184_arg3 )
-		if CoD.CraftUtility.IsEditMode( f184_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, f184_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_ToggleOutline( self, f184_arg0, f184_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, controller ) then
+			CoD.CraftUtility.EmblemEditor_ToggleOutline( self, element, controller )
 			PlaySoundSetSound( self, "toggle_outline" )
 			PlaySoundAlias( "uin_paint_image_flip_toggle" )
 			return true
-		elseif CoD.CraftUtility.IsBrowseMode( f184_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f184_arg2 ) and IsGamepad( f184_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_CutLayer( self, f184_arg0, f184_arg2 )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, f184_arg2, f184_arg0 )
+		elseif CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and IsGamepad( controller ) then
+			CoD.CraftUtility.EmblemEditor_CutLayer( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, controller, element )
 			PlaySoundAlias( "uin_paint_image_flip_toggle" )
 			return true
 		else
 			
 		end
-	end, function ( f185_arg0, f185_arg1, f185_arg2 )
-		if CoD.CraftUtility.IsEditMode( f185_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, f185_arg2 ) then
-			CoD.Menu.SetButtonLabel( f185_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, nil )
 			return false
-		elseif CoD.CraftUtility.IsBrowseMode( f185_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f185_arg2 ) and IsGamepad( f185_arg2 ) then
-			CoD.Menu.SetButtonLabel( f185_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, nil )
+		elseif CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f186_arg0, f186_arg1, f186_arg2, f186_arg3 )
-		if CoD.CraftUtility.IsEditMode( f186_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f186_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, f186_arg2 ) and not CoD.CraftUtility.Emblem_IsGroupedLayerWithSticker( self.layerCarousel, f186_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_SaveLayer( self, f186_arg2 )
-			CoD.CraftUtility.EmblemEditor_EndEdit( self, f186_arg0, f186_arg2 )
-			OpenOverlay( self, "EmblemIconColorPicker", f186_arg2, nil )
-			CoD.CraftUtility.EmblemChooseColor_ClearSelectedLayerMaterial( self, f186_arg0, f186_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, controller ) and not CoD.CraftUtility.Emblem_IsGroupedLayerWithSticker( self.layerCarousel, controller ) then
+			CoD.CraftUtility.EmblemEditor_SaveLayer( self, controller )
+			CoD.CraftUtility.EmblemEditor_EndEdit( self, element, controller )
+			OpenOverlay( self, "EmblemIconColorPicker", controller, nil )
+			CoD.CraftUtility.EmblemChooseColor_ClearSelectedLayerMaterial( self, element, controller )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
-		elseif CoD.CraftUtility.IsBrowseMode( f186_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f186_arg2 ) and IsGamepad( f186_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_StoreSelectedLayer( self, f186_arg2 )
-			CoD.CraftUtility.EmblemEditor_StoreAllChanges( self, f186_arg2 )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerAndGroupCountWithReplace( self, f186_arg2 )
-			OpenOverlay( self, "EmblemChooseIcon", f186_arg2, nil )
+		elseif CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and IsGamepad( controller ) then
+			CoD.CraftUtility.EmblemEditor_StoreSelectedLayer( self, controller )
+			CoD.CraftUtility.EmblemEditor_StoreAllChanges( self, controller )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerAndGroupCountWithReplace( self, controller )
+			OpenOverlay( self, "EmblemChooseIcon", controller, nil )
 			return true
 		else
 			
 		end
-	end, function ( f187_arg0, f187_arg1, f187_arg2 )
-		if CoD.CraftUtility.IsEditMode( f187_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f187_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, f187_arg2 ) and not CoD.CraftUtility.Emblem_IsGroupedLayerWithSticker( self.layerCarousel, f187_arg2 ) then
-			CoD.Menu.SetButtonLabel( f187_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerCarousel, controller ) and not CoD.CraftUtility.Emblem_IsGroupedLayerWithSticker( self.layerCarousel, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "", nil, nil )
 			return false
-		elseif CoD.CraftUtility.IsBrowseMode( f187_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f187_arg2 ) and IsGamepad( f187_arg2 ) then
-			CoD.Menu.SetButtonLabel( f187_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x0, nil, nil )
+		elseif CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x93AB4C84F113EE1], nil, function ( f188_arg0, f188_arg1, f188_arg2, f188_arg3 )
-		if CoD.CraftUtility.IsEditMode( f188_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_FlipIcon( self, f188_arg0, f188_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x93AB4C84F113EE1], nil, function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) then
+			CoD.CraftUtility.EmblemEditor_FlipIcon( self, element, controller )
 			PlaySoundSetSound( self, "flip_image" )
 			return true
-		elseif CoD.CraftUtility.IsBrowseMode( f188_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f188_arg2 ) and IsGamepad( f188_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_CopyLayerToClipboard( self, f188_arg0, f188_arg2 )
-			UpdateElementState( self, "clipboard", f188_arg2 )
+		elseif CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and IsGamepad( controller ) then
+			CoD.CraftUtility.EmblemEditor_CopyLayerToClipboard( self, element, controller )
+			UpdateElementState( self, "clipboard", controller )
 			PlaySoundSetSound( self, "scale" )
 			return true
 		else
 			
 		end
-	end, function ( f189_arg0, f189_arg1, f189_arg2 )
-		if CoD.CraftUtility.IsEditMode( f189_arg2 ) then
-			CoD.Menu.SetButtonLabel( f189_arg1, Enum.LUIButton[0x93AB4C84F113EE1], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsEditMode( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x93AB4C84F113EE1], "", nil, nil )
 			return false
-		elseif CoD.CraftUtility.IsBrowseMode( f189_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f189_arg2 ) and IsGamepad( f189_arg2 ) then
-			CoD.Menu.SetButtonLabel( f189_arg1, Enum.LUIButton[0x93AB4C84F113EE1], 0x0, nil, nil )
+		elseif CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x93AB4C84F113EE1], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f190_arg0, f190_arg1, f190_arg2, f190_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
 		if IsPC() and IsElementInState( self.EmblemEditorPCLegend, "Open" ) then
-			SetElementState( self, self.EmblemEditorPCLegend, f190_arg2, "Close" )
+			SetElementState( self, self.EmblemEditorPCLegend, controller, "Close" )
 			return true
-		elseif CoD.CraftUtility.IsBrowseMode( f190_arg2 ) and not CoD.CraftUtility.IsEmblemEmpty( f190_arg2 ) and CoD.CraftUtility.Emblems_HasChanges( self, f190_arg2 ) and IsMouseOrKeyboard( f190_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_OpenSavePopup( self, f190_arg0, f190_arg2, f190_arg1, "true" )
+		elseif CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsEmblemEmpty( controller ) and CoD.CraftUtility.Emblems_HasChanges( self, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.CraftUtility.EmblemEditor_OpenSavePopup( self, element, controller, menu, "true" )
 			PlaySoundSetSound( self, "save_box" )
 			return true
-		elseif CoD.CraftUtility.IsBrowseMode( f190_arg2 ) and not CoD.CraftUtility.IsEmblemEmpty( f190_arg2 ) and CoD.CraftUtility.Emblems_HasChanges( self, f190_arg2 ) and IsGamepad( f190_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_OpenSavePopup( self, f190_arg0, f190_arg2, f190_arg1, "true" )
+		elseif CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsEmblemEmpty( controller ) and CoD.CraftUtility.Emblems_HasChanges( self, controller ) and IsGamepad( controller ) then
+			CoD.CraftUtility.EmblemEditor_OpenSavePopup( self, element, controller, menu, "true" )
 			PlaySoundSetSound( self, "save_box" )
 			return true
-		elseif CoD.CraftUtility.IsEditMode( f190_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_RevertAllChanges( self, f190_arg2 )
+		elseif CoD.CraftUtility.IsEditMode( controller ) then
+			CoD.CraftUtility.EmblemEditor_RevertAllChanges( self, controller )
 			CoD.CraftUtility.EmblemEditor_RefreshDatasource( self, self.layerCarousel )
-			CoD.CraftUtility.EmblemEditor_HandleBackInEditMode( self, f190_arg0, f190_arg2 )
+			CoD.CraftUtility.EmblemEditor_HandleBackInEditMode( self, element, controller )
 			PlaySoundSetSound( self, "list_action" )
-			UpdateElementState( self, "layermofn", f190_arg2 )
-			UpdateElementState( self, "BrowseControls", f190_arg2 )
-			UpdateElementState( self, "clipboard", f190_arg2 )
-			UpdateButtonPromptState( f190_arg1, f190_arg0, f190_arg2, Enum.LUIButton[0x805EFA15E9E7E5A] )
+			UpdateElementState( self, "layermofn", controller )
+			UpdateElementState( self, "BrowseControls", controller )
+			UpdateElementState( self, "clipboard", controller )
+			UpdateButtonPromptState( menu, element, controller, Enum.LUIButton[0x805EFA15E9E7E5A] )
 			return true
 		else
-			GoBack( self, f190_arg2 )
-			ForceNotifyControllerModel( f190_arg2, "Emblem.UpdateDataSource" )
+			GoBack( self, controller )
+			ForceNotifyControllerModel( controller, "Emblem.UpdateDataSource" )
 			return true
 		end
-	end, function ( f191_arg0, f191_arg1, f191_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() and IsElementInState( self.EmblemEditorPCLegend, "Open" ) then
-			CoD.Menu.SetButtonLabel( f191_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
-		elseif CoD.CraftUtility.IsBrowseMode( f191_arg2 ) and not CoD.CraftUtility.IsEmblemEmpty( f191_arg2 ) and CoD.CraftUtility.Emblems_HasChanges( self, f191_arg2 ) and IsMouseOrKeyboard( f191_arg2 ) then
-			CoD.Menu.SetButtonLabel( f191_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+		elseif CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsEmblemEmpty( controller ) and CoD.CraftUtility.Emblems_HasChanges( self, controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
-		elseif CoD.CraftUtility.IsBrowseMode( f191_arg2 ) and not CoD.CraftUtility.IsEmblemEmpty( f191_arg2 ) and CoD.CraftUtility.Emblems_HasChanges( self, f191_arg2 ) and IsGamepad( f191_arg2 ) then
-			CoD.Menu.SetButtonLabel( f191_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xAB744CDFD554F5F, nil, "ESCAPE" )
+		elseif CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsEmblemEmpty( controller ) and CoD.CraftUtility.Emblems_HasChanges( self, controller ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "platform/emblem_edit_done", nil, "ESCAPE" )
 			return true
-		elseif CoD.CraftUtility.IsEditMode( f191_arg2 ) then
-			CoD.Menu.SetButtonLabel( f191_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+		elseif CoD.CraftUtility.IsEditMode( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		else
-			CoD.Menu.SetButtonLabel( f191_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, "ESCAPE" )
 			return true
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x29E5695FF1401AD], nil, function ( f192_arg0, f192_arg1, f192_arg2, f192_arg3 )
-		if CoD.CraftUtility.IsEditMode( f192_arg2 ) and not CoD.CraftUtility.Emblem_IsLayerGrouped( self.layerCarousel, f192_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_ToggleScaleMode( self, f192_arg0, f192_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x29E5695FF1401AD], nil, function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.Emblem_IsLayerGrouped( self.layerCarousel, controller ) then
+			CoD.CraftUtility.EmblemEditor_ToggleScaleMode( self, element, controller )
 			return true
-		elseif CoD.CraftUtility.IsBrowseMode( f192_arg2 ) and not CoD.CraftUtility.IsClipboardEmpty( f192_arg2 ) and CoD.CraftUtility.Emblem_CanPastFromClipboard( f192_arg0, f192_arg2 ) and CoD.CraftUtility.Clipboard_HasEnoughLayersToPaste( self, f192_arg2 ) and IsGamepad( f192_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_InsertLayer( self, f192_arg0, f192_arg2 )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, f192_arg2, self )
+		elseif CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsClipboardEmpty( controller ) and CoD.CraftUtility.Emblem_CanPastFromClipboard( element, controller ) and CoD.CraftUtility.Clipboard_HasEnoughLayersToPaste( self, controller ) and IsGamepad( controller ) then
+			CoD.CraftUtility.EmblemEditor_InsertLayer( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, controller, self )
 			PlaySoundSetSound( self, "opacity" )
 			return true
 		else
 			
 		end
-	end, function ( f193_arg0, f193_arg1, f193_arg2 )
-		if CoD.CraftUtility.IsEditMode( f193_arg2 ) and not CoD.CraftUtility.Emblem_IsLayerGrouped( self.layerCarousel, f193_arg2 ) then
-			CoD.Menu.SetButtonLabel( f193_arg1, Enum.LUIButton[0x29E5695FF1401AD], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.Emblem_IsLayerGrouped( self.layerCarousel, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x29E5695FF1401AD], "", nil, nil )
 			return false
-		elseif CoD.CraftUtility.IsBrowseMode( f193_arg2 ) and not CoD.CraftUtility.IsClipboardEmpty( f193_arg2 ) and CoD.CraftUtility.Emblem_CanPastFromClipboard( f193_arg0, f193_arg2 ) and CoD.CraftUtility.Clipboard_HasEnoughLayersToPaste( self, f193_arg2 ) and IsGamepad( f193_arg2 ) then
-			CoD.Menu.SetButtonLabel( f193_arg1, Enum.LUIButton[0x29E5695FF1401AD], 0x0, nil, nil )
+		elseif CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsClipboardEmpty( controller ) and CoD.CraftUtility.Emblem_CanPastFromClipboard( element, controller ) and CoD.CraftUtility.Clipboard_HasEnoughLayersToPaste( self, controller ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x29E5695FF1401AD], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_contextual_3", function ( f194_arg0, f194_arg1, f194_arg2, f194_arg3 )
-		if CoD.CraftUtility.IsBrowseMode( f194_arg2 ) and not CoD.CraftUtility.IsClipboardEmpty( f194_arg2 ) and CoD.CraftUtility.Emblem_CanPastFromClipboard( f194_arg0, f194_arg2 ) and CoD.CraftUtility.Clipboard_HasEnoughLayersToPaste( self, f194_arg2 ) and IsGamepad( f194_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_InsertLayer( self, f194_arg0, f194_arg2 )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, f194_arg2, self )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_contextual_3", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsClipboardEmpty( controller ) and CoD.CraftUtility.Emblem_CanPastFromClipboard( element, controller ) and CoD.CraftUtility.Clipboard_HasEnoughLayersToPaste( self, controller ) and IsGamepad( controller ) then
+			CoD.CraftUtility.EmblemEditor_InsertLayer( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerData( self, controller, self )
 			PlaySoundSetSound( self, "opacity" )
 			return true
 		else
 			
 		end
-	end, function ( f195_arg0, f195_arg1, f195_arg2 )
-		if CoD.CraftUtility.IsBrowseMode( f195_arg2 ) and not CoD.CraftUtility.IsClipboardEmpty( f195_arg2 ) and CoD.CraftUtility.Emblem_CanPastFromClipboard( f195_arg0, f195_arg2 ) and CoD.CraftUtility.Clipboard_HasEnoughLayersToPaste( self, f195_arg2 ) and IsGamepad( f195_arg2 ) then
-			CoD.Menu.SetButtonLabel( f195_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_contextual_3" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and not CoD.CraftUtility.IsClipboardEmpty( controller ) and CoD.CraftUtility.Emblem_CanPastFromClipboard( element, controller ) and CoD.CraftUtility.Clipboard_HasEnoughLayersToPaste( self, controller ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_contextual_3" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f196_arg0, f196_arg1, f196_arg2, f196_arg3 )
-		if CoD.CraftUtility.IsEditMode( f196_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_HandleBackInEditMode( self, f196_arg0, f196_arg2 )
-			UpdateElementState( self, "layermofn", f196_arg2 )
-			UpdateElementState( self, "BrowseControls", f196_arg2 )
-			UpdateElementState( self, "clipboard", f196_arg2 )
-			UpdateElementState( self, "layerCarousel", f196_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) then
+			CoD.CraftUtility.EmblemEditor_HandleBackInEditMode( self, element, controller )
+			UpdateElementState( self, "layermofn", controller )
+			UpdateElementState( self, "BrowseControls", controller )
+			UpdateElementState( self, "clipboard", controller )
+			UpdateElementState( self, "layerCarousel", controller )
 			return true
-		elseif not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f196_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_EditSelectedLayer( self, f196_arg0, f196_arg2 )
-			CoD.CraftUtility.EmblemEditor_SetFocusOnEditSelectedLayerPC( self, self.emptyFocusable, f196_arg2 )
-			CoD.CraftUtility.EmblemEditor_StoreAllChanges( self, f196_arg2 )
-			UpdateElementState( self, "BrowseControls", f196_arg2 )
-			UpdateElementState( self, "EditControls", f196_arg2 )
+		elseif not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) then
+			CoD.CraftUtility.EmblemEditor_EditSelectedLayer( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_SetFocusOnEditSelectedLayerPC( self, self.emptyFocusable, controller )
+			CoD.CraftUtility.EmblemEditor_StoreAllChanges( self, controller )
+			UpdateElementState( self, "BrowseControls", controller )
+			UpdateElementState( self, "EditControls", controller )
 			PlayClipOnElement( self, {
 				elementName = "emblemHiddenPulseLayer",
 				clipName = "DefaultClip"
-			}, f196_arg2 )
+			}, controller )
 			return true
-		elseif CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f196_arg2 ) then
-			OpenOverlay( self, "EmblemChooseIcon", f196_arg2, nil )
-			CoD.CraftUtility.EmblemEditor_StoreAllChanges( self, f196_arg2 )
+		elseif CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) then
+			OpenOverlay( self, "EmblemChooseIcon", controller, nil )
+			CoD.CraftUtility.EmblemEditor_StoreAllChanges( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f197_arg0, f197_arg1, f197_arg2 )
-		if CoD.CraftUtility.IsEditMode( f197_arg2 ) then
-			CoD.Menu.SetButtonLabel( f197_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xE84DC9704A3FB30, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsEditMode( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/emblem_apply_changes", nil, "ui_confirm" )
 			return true
-		elseif not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f197_arg2 ) then
-			CoD.Menu.SetButtonLabel( f197_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xE84DC9704A3FB30, nil, "ui_confirm" )
+		elseif not CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/emblem_apply_changes", nil, "ui_confirm" )
 			return true
-		elseif CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, f197_arg2 ) then
-			CoD.Menu.SetButtonLabel( f197_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xE84DC9704A3FB30, nil, "ui_confirm" )
+		elseif CoD.CraftUtility.IsLayerEmpty( self, self.layerCarousel, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/emblem_apply_changes", nil, "ui_confirm" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], "ui_contextual_1", function ( f198_arg0, f198_arg1, f198_arg2, f198_arg3 )
-		if CoD.CraftUtility.IsBrowseMode( f198_arg2 ) and IsPC() then
-			CoD.CraftUtility.EmblemEditor_OpenSavePopup( self, f198_arg0, f198_arg2, f198_arg1, "true" )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], "ui_contextual_1", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and IsPC() then
+			CoD.CraftUtility.EmblemEditor_OpenSavePopup( self, element, controller, menu, "true" )
 			return true
-		elseif CoD.CraftUtility.IsBrowseMode( f198_arg2 ) then
-			CoD.CraftUtility.CraftEditor_OpenEditorOptions( self, f198_arg2 )
+		elseif CoD.CraftUtility.IsBrowseMode( controller ) then
+			CoD.CraftUtility.CraftEditor_OpenEditorOptions( self, controller )
 			return true
-		elseif CoD.CraftUtility.IsEditMode( f198_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_FlipIcon( self, f198_arg0, f198_arg2 )
+		elseif CoD.CraftUtility.IsEditMode( controller ) then
+			CoD.CraftUtility.EmblemEditor_FlipIcon( self, element, controller )
 			PlaySoundSetSound( self, "flip_image" )
 			return true
 		else
 			
 		end
-	end, function ( f199_arg0, f199_arg1, f199_arg2 )
-		if CoD.CraftUtility.IsBrowseMode( f199_arg2 ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f199_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options_caps", nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsBrowseMode( controller ) and IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "menu/options_caps", nil, "ui_contextual_1" )
 			return true
-		elseif CoD.CraftUtility.IsBrowseMode( f199_arg2 ) then
-			CoD.Menu.SetButtonLabel( f199_arg1, Enum.LUIButton[0x22361E23588705A], "menu/options_caps", nil, "ui_contextual_1" )
+		elseif CoD.CraftUtility.IsBrowseMode( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "menu/options_caps", nil, "ui_contextual_1" )
 			return true
-		elseif CoD.CraftUtility.IsEditMode( f199_arg2 ) then
-			CoD.Menu.SetButtonLabel( f199_arg1, Enum.LUIButton[0x22361E23588705A], 0x0, nil, "ui_contextual_1" )
+		elseif CoD.CraftUtility.IsEditMode( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "", nil, "ui_contextual_1" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_loweropacity", function ( f200_arg0, f200_arg1, f200_arg2, f200_arg3 )
-		if CoD.CraftUtility.IsEditMode( f200_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, f200_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerGrid, f200_arg2 ) then
-			CoD.CraftUtility.EmblemChooseColor_UpdateBothColorOpacity( self, f200_arg0, "-0.01", f200_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_loweropacity", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, controller ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerGrid, controller ) then
+			CoD.CraftUtility.EmblemChooseColor_UpdateBothColorOpacity( self, element, "-0.01", controller )
 			PlaySoundSetSound( self, "opacity" )
-			CoD.CraftUtility.EmblemEditor_EditLayerListActive( self, f200_arg2, self.layerGrid )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerDataWithListActive( self, f200_arg2, self.layerGrid )
+			CoD.CraftUtility.EmblemEditor_EditLayerListActive( self, controller, self.layerGrid )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerDataWithListActive( self, controller, self.layerGrid )
 			return true
 		else
 			
 		end
-	end, function ( f201_arg0, f201_arg1, f201_arg2 )
-		if CoD.CraftUtility.IsEditMode( f201_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, f201_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerGrid, f201_arg2 ) then
-			CoD.Menu.SetButtonLabel( f201_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_loweropacity" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, controller ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerGrid, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_loweropacity" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_raiseopacity", function ( f202_arg0, f202_arg1, f202_arg2, f202_arg3 )
-		if CoD.CraftUtility.IsEditMode( f202_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, f202_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerGrid, f202_arg2 ) then
-			CoD.CraftUtility.EmblemChooseColor_UpdateBothColorOpacity( self, f202_arg0, "0.01", f202_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_raiseopacity", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, controller ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerGrid, controller ) then
+			CoD.CraftUtility.EmblemChooseColor_UpdateBothColorOpacity( self, element, "0.01", controller )
 			PlaySoundSetSound( self, "opacity" )
-			CoD.CraftUtility.EmblemEditor_EditLayerListActive( self, f202_arg2, self.layerGrid )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerDataWithListActive( self, f202_arg2, self.layerGrid )
+			CoD.CraftUtility.EmblemEditor_EditLayerListActive( self, controller, self.layerGrid )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerDataWithListActive( self, controller, self.layerGrid )
 			return true
 		else
 			
 		end
-	end, function ( f203_arg0, f203_arg1, f203_arg2 )
-		if CoD.CraftUtility.IsEditMode( f203_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, f203_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerGrid, f203_arg2 ) then
-			CoD.Menu.SetButtonLabel( f203_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_raiseopacity" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, controller ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerGrid, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_raiseopacity" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_prevtab", function ( f204_arg0, f204_arg1, f204_arg2, f204_arg3 )
-		if CoD.CraftUtility.IsEditMode( f204_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, f204_arg2 ) then
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_prevtab", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, controller ) then
 			CoD.CraftUtility.EmblemEditor_RotateLayer( -1 )
-			CoD.CraftUtility.EmblemEditor_EditLayerListActive( self, f204_arg2, self.layerGrid )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerDataWithListActive( self, f204_arg2, self.layerGrid )
+			CoD.CraftUtility.EmblemEditor_EditLayerListActive( self, controller, self.layerGrid )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerDataWithListActive( self, controller, self.layerGrid )
 			return true
 		else
 			
 		end
-	end, function ( f205_arg0, f205_arg1, f205_arg2 )
-		if CoD.CraftUtility.IsEditMode( f205_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, f205_arg2 ) then
-			CoD.Menu.SetButtonLabel( f205_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_prevtab" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_prevtab" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_nexttab", function ( f206_arg0, f206_arg1, f206_arg2, f206_arg3 )
-		if CoD.CraftUtility.IsEditMode( f206_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, f206_arg2 ) then
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_nexttab", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, controller ) then
 			CoD.CraftUtility.EmblemEditor_RotateLayer( 1 )
-			CoD.CraftUtility.EmblemEditor_EditLayerListActive( self, f206_arg2, self.layerGrid )
-			CoD.CraftUtility.EmblemEditor_UpdateLayerDataWithListActive( self, f206_arg2, self.layerGrid )
+			CoD.CraftUtility.EmblemEditor_EditLayerListActive( self, controller, self.layerGrid )
+			CoD.CraftUtility.EmblemEditor_UpdateLayerDataWithListActive( self, controller, self.layerGrid )
 			return true
 		else
 			
 		end
-	end, function ( f207_arg0, f207_arg1, f207_arg2 )
-		if CoD.CraftUtility.IsEditMode( f207_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, f207_arg2 ) then
-			CoD.Menu.SetButtonLabel( f207_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_nexttab" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_nexttab" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_open", function ( f208_arg0, f208_arg1, f208_arg2, f208_arg3 )
-		if CoD.CraftUtility.IsEditMode( f208_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, f208_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerGrid, f208_arg2 ) and not CoD.CraftUtility.Emblem_IsGroupedLayerWithSticker( self.layerGrid, f208_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_SaveLayer( self, f208_arg2 )
-			CoD.CraftUtility.EmblemEditor_EndEdit( self, f208_arg0, f208_arg2 )
-			OpenOverlay( self, "EmblemIconColorPicker", f208_arg2, nil )
-			CoD.CraftUtility.EmblemChooseColor_ClearSelectedLayerMaterial( self, f208_arg0, f208_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_open", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, controller ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerGrid, controller ) and not CoD.CraftUtility.Emblem_IsGroupedLayerWithSticker( self.layerGrid, controller ) then
+			CoD.CraftUtility.EmblemEditor_SaveLayer( self, controller )
+			CoD.CraftUtility.EmblemEditor_EndEdit( self, element, controller )
+			OpenOverlay( self, "EmblemIconColorPicker", controller, nil )
+			CoD.CraftUtility.EmblemChooseColor_ClearSelectedLayerMaterial( self, element, controller )
 			PlaySoundAlias( "uin_toggle_generic" )
 			return true
 		else
 			
 		end
-	end, function ( f209_arg0, f209_arg1, f209_arg2 )
-		if CoD.CraftUtility.IsEditMode( f209_arg2 ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, f209_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerGrid, f209_arg2 ) and not CoD.CraftUtility.Emblem_IsGroupedLayerWithSticker( self.layerGrid, f209_arg2 ) then
-			CoD.Menu.SetButtonLabel( f209_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_open" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.IsLayerEmpty( self, self.layerGrid, controller ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerGrid, controller ) and not CoD.CraftUtility.Emblem_IsGroupedLayerWithSticker( self.layerGrid, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_open" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_toggleoutline", function ( f210_arg0, f210_arg1, f210_arg2, f210_arg3 )
-		if CoD.CraftUtility.IsEditMode( f210_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerGrid, f210_arg2 ) then
-			CoD.CraftUtility.EmblemEditor_ToggleOutline( self, f210_arg0, f210_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_toggleoutline", function ( element, menu, controller, model )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerGrid, controller ) then
+			CoD.CraftUtility.EmblemEditor_ToggleOutline( self, element, controller )
 			PlaySoundSetSound( self, "toggle_outline" )
 			PlaySoundAlias( "uin_paint_image_flip_toggle" )
 			return true
 		else
 			
 		end
-	end, function ( f211_arg0, f211_arg1, f211_arg2 )
-		if CoD.CraftUtility.IsEditMode( f211_arg2 ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerGrid, f211_arg2 ) then
-			CoD.Menu.SetButtonLabel( f211_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_toggleoutline" )
+	end, function ( element, menu, controller )
+		if CoD.CraftUtility.IsEditMode( controller ) and not CoD.CraftUtility.Emblems_IsLayerASticker( self.layerGrid, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_toggleoutline" )
 			return false
 		else
 			return false

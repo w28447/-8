@@ -18,7 +18,7 @@ CoD.DirectorLobbyTierSkipNotification.new = function ( f1_arg0, f1_arg1, f1_arg2
 	self.Backing = Backing
 	
 	local TierSkipIcon = LUI.UIImage.new( 0, 0, -49, 49, 0.5, 0.5, -49, 49 )
-	TierSkipIcon:setImage( RegisterImage( 0x3162CFF8BC56A18 ) )
+	TierSkipIcon:setImage( RegisterImage( "ui_icon_blackmarket_tier_token" ) )
 	self:addElement( TierSkipIcon )
 	self.TierSkipIcon = TierSkipIcon
 	

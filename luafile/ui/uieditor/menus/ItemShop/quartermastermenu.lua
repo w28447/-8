@@ -146,221 +146,221 @@ LUI.createMenu.QuarterMasterMenu = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( f12_arg1, f1_local1, f1_arg0, Enum.LUIButton[0xC083113BC81F23F] )
 		CoD.Menu.UpdateButtonShownState( f12_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 	end, false )
-	self:registerEventHandler( "occlusion_change", function ( element, event )
+	self:registerEventHandler( "occlusion_change", function ( self, event )
 		local f13_local0 = nil
-		if element.OcclusionChange then
-			f13_local0 = element:OcclusionChange( event )
-		elseif element.super.OcclusionChange then
-			f13_local0 = element.super:OcclusionChange( event )
+		if self.OcclusionChange then
+			f13_local0 = self:OcclusionChange( event )
+		elseif self.super.OcclusionChange then
+			f13_local0 = self.super:OcclusionChange( event )
 		end
 		UpdateAllMenuButtonPrompts( f1_local1, f1_arg0 )
 		if not f13_local0 then
-			f13_local0 = element:dispatchEventToChildren( event )
+			f13_local0 = self:dispatchEventToChildren( event )
 		end
 		return f13_local0
 	end )
-	self:registerEventHandler( "list_active_changed", function ( element, event )
+	self:registerEventHandler( "list_active_changed", function ( self, event )
 		local f14_local0 = nil
 		CoD.BlackMarketUtility.MarkTabAsSeen( f1_arg0, f1_local1 )
 		return f14_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3 )
-		GoBack( self, f15_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		PlaySoundAlias( "uin_cmn_backout" )
 		return true
-	end, function ( f16_arg0, f16_arg1, f16_arg2 )
-		CoD.Menu.SetButtonLabel( f16_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_contextual_3", function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3 )
-		if not CoD.ModelUtility.IsModelValueEqualTo( f17_arg2, "LootStreamProgress.pagedRequestStatus", "Requested" ) and IsCommerceEnabledOnPC() and AreCodPointsEnabled( f17_arg2 ) and not CoD.BlackMarketUtility.IsMenuOccluded( f17_arg1 ) and not IsGameTrial() then
-			OpenPopup( self, "PurchaseCodPoints", f17_arg2 )
-			SetControllerModelValue( f17_arg2, "LootStreamProgress.playAnimation", false )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_contextual_3", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsModelValueEqualTo( controller, "LootStreamProgress.pagedRequestStatus", "Requested" ) and IsCommerceEnabledOnPC() and AreCodPointsEnabled( controller ) and not CoD.BlackMarketUtility.IsMenuOccluded( menu ) and not IsGameTrial() then
+			OpenPopup( self, "PurchaseCodPoints", controller )
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
 			return true
 		else
 			
 		end
-	end, function ( f18_arg0, f18_arg1, f18_arg2 )
-		if not CoD.ModelUtility.IsModelValueEqualTo( f18_arg2, "LootStreamProgress.pagedRequestStatus", "Requested" ) and IsCommerceEnabledOnPC() and AreCodPointsEnabled( f18_arg2 ) and not CoD.BlackMarketUtility.IsMenuOccluded( f18_arg1 ) and not IsGameTrial() then
-			CoD.Menu.SetButtonLabel( f18_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x63D5409DEC36DFA, nil, "ui_contextual_3" )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsModelValueEqualTo( controller, "LootStreamProgress.pagedRequestStatus", "Requested" ) and IsCommerceEnabledOnPC() and AreCodPointsEnabled( controller ) and not CoD.BlackMarketUtility.IsMenuOccluded( menu ) and not IsGameTrial() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "mpui/purchase_codpoints_caps", nil, "ui_contextual_3" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA], nil, function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
-		if CoD.BlackMarketUtility.IsPageStreamHoldActionReady( f19_arg1, Enum.LUIButton[0x820DDD869ABBFAA] ) and IsDesiredFrameWidget( f19_arg2, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( f19_arg1, "Processing" ) and IsPerControllerTablePropertyValue( f19_arg2, "allowTierPurchase", true ) then
-			CoD.BlackMarketUtility.PageStreamHoldUpdateAction( f19_arg1 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA], nil, function ( element, menu, controller, model )
+		if CoD.BlackMarketUtility.IsPageStreamHoldActionReady( menu, Enum.LUIButton[0x820DDD869ABBFAA] ) and IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( menu, "Processing" ) and IsPerControllerTablePropertyValue( controller, "allowTierPurchase", true ) then
+			CoD.BlackMarketUtility.PageStreamHoldUpdateAction( menu )
 			PlaySoundAlias( "uin_trigger_slide" )
-			SetFocusedTierModelValue( f19_arg2, "5", "increment" )
-			CoD.PlayerRoleUtility.StopGesturePreview( f19_arg1, f19_arg2 )
+			SetFocusedTierModelValue( controller, "5", "increment" )
+			CoD.PlayerRoleUtility.StopGesturePreview( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f20_arg0, f20_arg1, f20_arg2 )
-		if CoD.BlackMarketUtility.IsPageStreamHoldActionReady( f20_arg1, Enum.LUIButton[0x820DDD869ABBFAA] ) and IsDesiredFrameWidget( f20_arg2, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( f20_arg1, "Processing" ) and IsPerControllerTablePropertyValue( f20_arg2, "allowTierPurchase", true ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.BlackMarketUtility.IsPageStreamHoldActionReady( menu, Enum.LUIButton[0x820DDD869ABBFAA] ) and IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( menu, "Processing" ) and IsPerControllerTablePropertyValue( controller, "allowTierPurchase", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], nil, function ( f21_arg0, f21_arg1, f21_arg2, f21_arg3 )
-		if CoD.BlackMarketUtility.IsPageStreamHoldActionReady( f21_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC] ) and IsDesiredFrameWidget( f21_arg2, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( f21_arg1, "Processing" ) and IsPerControllerTablePropertyValue( f21_arg2, "allowTierPurchase", true ) then
-			CoD.BlackMarketUtility.PageStreamHoldUpdateAction( f21_arg1 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], nil, function ( element, menu, controller, model )
+		if CoD.BlackMarketUtility.IsPageStreamHoldActionReady( menu, Enum.LUIButton[0xD2F467A6C6DA1AC] ) and IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( menu, "Processing" ) and IsPerControllerTablePropertyValue( controller, "allowTierPurchase", true ) then
+			CoD.BlackMarketUtility.PageStreamHoldUpdateAction( menu )
 			PlaySoundAlias( "uin_trigger_slide" )
-			SetFocusedTierModelValue( f21_arg2, "5", "decrement" )
-			CoD.PlayerRoleUtility.StopGesturePreview( f21_arg1, f21_arg2 )
+			SetFocusedTierModelValue( controller, "5", "decrement" )
+			CoD.PlayerRoleUtility.StopGesturePreview( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f22_arg0, f22_arg1, f22_arg2 )
-		if CoD.BlackMarketUtility.IsPageStreamHoldActionReady( f22_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC] ) and IsDesiredFrameWidget( f22_arg2, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( f22_arg1, "Processing" ) and IsPerControllerTablePropertyValue( f22_arg2, "allowTierPurchase", true ) then
-			CoD.Menu.SetButtonLabel( f22_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.BlackMarketUtility.IsPageStreamHoldActionReady( menu, Enum.LUIButton[0xD2F467A6C6DA1AC] ) and IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( menu, "Processing" ) and IsPerControllerTablePropertyValue( controller, "allowTierPurchase", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
-		if IsDesiredFrameWidget( f23_arg2, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( f23_arg1, "Processing" ) and CoD.BlackMarketUtility.ShowPurchaseTiersPrompt( f23_arg2, self.Frame, "PurchaseTiers" ) and AreCodPointsEnabled( f23_arg2 ) and IsPerControllerTablePropertyValue( f23_arg2, "allowTierPurchase", true ) and not IsGameTrial() then
-			CoD.BlackMarketUtility.SetHighlightedPurchaseTier( f23_arg2, self.Frame )
-			CoD.BlackMarketUtility.OpenPurchaseTiersConfirmation( f23_arg2, self, self.Frame )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( menu, "Processing" ) and CoD.BlackMarketUtility.ShowPurchaseTiersPrompt( controller, self.Frame, "PurchaseTiers" ) and AreCodPointsEnabled( controller ) and IsPerControllerTablePropertyValue( controller, "allowTierPurchase", true ) and not IsGameTrial() then
+			CoD.BlackMarketUtility.SetHighlightedPurchaseTier( controller, self.Frame )
+			CoD.BlackMarketUtility.OpenPurchaseTiersConfirmation( controller, self, self.Frame )
 			PlaySoundSetSound( self, "action" )
 			return true
-		elseif IsDesiredFrameWidget( f23_arg2, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( f23_arg1, "Processing" ) and AreCodPointsEnabled( f23_arg2 ) and IsPerControllerTablePropertyValue( f23_arg2, "allowTierPurchase", true ) and not IsGameTrial() then
-			CoD.BlackMarketUtility.SetHighlightedPurchaseTier( f23_arg2, self.Frame )
-			CoD.BlackMarketUtility.OpenPurchaseTiersConfirmation( f23_arg2, self, self.Frame )
+		elseif IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( menu, "Processing" ) and AreCodPointsEnabled( controller ) and IsPerControllerTablePropertyValue( controller, "allowTierPurchase", true ) and not IsGameTrial() then
+			CoD.BlackMarketUtility.SetHighlightedPurchaseTier( controller, self.Frame )
+			CoD.BlackMarketUtility.OpenPurchaseTiersConfirmation( controller, self, self.Frame )
 			PlaySoundSetSound( self, "action" )
 			return true
-		elseif IsDesiredFrameWidget( f23_arg2, self.Frame, "BlackjackReserveFrame" ) and CoD.BlackMarketUtility.CanShowReservesPreview( f23_arg2 ) and IsGamepad( f23_arg2 ) then
-			CoD.BlackMarketUtility.PlayReservesPreviewVideo( f23_arg2, f23_arg1, false, true )
+		elseif IsDesiredFrameWidget( controller, self.Frame, "BlackjackReserveFrame" ) and CoD.BlackMarketUtility.CanShowReservesPreview( controller ) and IsGamepad( controller ) then
+			CoD.BlackMarketUtility.PlayReservesPreviewVideo( controller, menu, false, true )
 			return true
 		else
 			
 		end
-	end, function ( f24_arg0, f24_arg1, f24_arg2 )
-		if IsDesiredFrameWidget( f24_arg2, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( f24_arg1, "Processing" ) and CoD.BlackMarketUtility.ShowPurchaseTiersPrompt( f24_arg2, self.Frame, "PurchaseTiers" ) and AreCodPointsEnabled( f24_arg2 ) and IsPerControllerTablePropertyValue( f24_arg2, "allowTierPurchase", true ) and not IsGameTrial() then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xFAF2C4773992641, nil, nil )
+	end, function ( element, menu, controller )
+		if IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( menu, "Processing" ) and CoD.BlackMarketUtility.ShowPurchaseTiersPrompt( controller, self.Frame, "PurchaseTiers" ) and AreCodPointsEnabled( controller ) and IsPerControllerTablePropertyValue( controller, "allowTierPurchase", true ) and not IsGameTrial() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], 0xFAF2C4773992641, nil, nil )
 			return true
-		elseif IsDesiredFrameWidget( f24_arg2, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( f24_arg1, "Processing" ) and AreCodPointsEnabled( f24_arg2 ) and IsPerControllerTablePropertyValue( f24_arg2, "allowTierPurchase", true ) and not IsGameTrial() then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, nil )
+		elseif IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( menu, "Processing" ) and AreCodPointsEnabled( controller ) and IsPerControllerTablePropertyValue( controller, "allowTierPurchase", true ) and not IsGameTrial() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, nil )
 			return false
-		elseif IsDesiredFrameWidget( f24_arg2, self.Frame, "BlackjackReserveFrame" ) and CoD.BlackMarketUtility.CanShowReservesPreview( f24_arg2 ) and IsGamepad( f24_arg2 ) then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, nil )
+		elseif IsDesiredFrameWidget( controller, self.Frame, "BlackjackReserveFrame" ) and CoD.BlackMarketUtility.CanShowReservesPreview( controller ) and IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_remove", function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3 )
-		if IsDesiredFrameWidget( f25_arg2, self.Frame, "BlackjackReserveFrame" ) and CoD.BlackMarketUtility.CanShowReservesPreview( f25_arg2 ) and IsMouseOrKeyboard( f25_arg2 ) then
-			CoD.BlackMarketUtility.PlayReservesPreviewVideo( f25_arg2, f25_arg1, false, true )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_remove", function ( element, menu, controller, model )
+		if IsDesiredFrameWidget( controller, self.Frame, "BlackjackReserveFrame" ) and CoD.BlackMarketUtility.CanShowReservesPreview( controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.BlackMarketUtility.PlayReservesPreviewVideo( controller, menu, false, true )
 			return true
-		elseif IsDesiredFrameWidget( f25_arg2, self.Frame, "SupplyChainFrame" ) and not CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueNil( self.Frame, f25_arg2, "movieName" ) and not CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueEqualTo( self.Frame, f25_arg2, "movieName", "" ) and not IsMenuInState( f25_arg1, "Processing" ) then
-			SetControllerModelValue( f25_arg2, "LootStreamProgress.playAnimation", false )
-			CoD.BlackMarketUtility.SetupSupplyChainMovie( self.Frame, f25_arg2, "" )
-			DelayOpenOverlay( f25_arg1, "VoDViewer", f25_arg2, {
+		elseif IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and not CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueNil( self.Frame, controller, "movieName" ) and not CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueEqualTo( self.Frame, controller, "movieName", "" ) and not IsMenuInState( menu, "Processing" ) then
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+			CoD.BlackMarketUtility.SetupSupplyChainMovie( self.Frame, controller, "" )
+			DelayOpenOverlay( menu, "VoDViewer", controller, {
 				fullscreen = true
 			} )
 			return true
-		elseif IsDesiredFrameWidget( f25_arg2, self.Frame, "SupplyChainFrame" ) and CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueEqualTo( self.Frame, f25_arg2, "allowFrozenMoment", true ) and not IsMenuInState( f25_arg1, "Processing" ) then
-			SetControllerModelValue( f25_arg2, "LootStreamProgress.playAnimation", false )
-			OpenOverlay( self, "MPSpecialistHUBPreviewMoment", f25_arg2 )
+		elseif IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueEqualTo( self.Frame, controller, "allowFrozenMoment", true ) and not IsMenuInState( menu, "Processing" ) then
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+			OpenOverlay( self, "MPSpecialistHUBPreviewMoment", controller )
 			return true
 		else
 			
 		end
-	end, function ( f26_arg0, f26_arg1, f26_arg2 )
-		if IsDesiredFrameWidget( f26_arg2, self.Frame, "BlackjackReserveFrame" ) and CoD.BlackMarketUtility.CanShowReservesPreview( f26_arg2 ) and IsMouseOrKeyboard( f26_arg2 ) then
-			CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_remove" )
+	end, function ( element, menu, controller )
+		if IsDesiredFrameWidget( controller, self.Frame, "BlackjackReserveFrame" ) and CoD.BlackMarketUtility.CanShowReservesPreview( controller ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_remove" )
 			return false
-		elseif IsDesiredFrameWidget( f26_arg2, self.Frame, "SupplyChainFrame" ) and not CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueNil( self.Frame, f26_arg2, "movieName" ) and not CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueEqualTo( self.Frame, f26_arg2, "movieName", "" ) and not IsMenuInState( f26_arg1, "Processing" ) then
-			CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_remove" )
+		elseif IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and not CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueNil( self.Frame, controller, "movieName" ) and not CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueEqualTo( self.Frame, controller, "movieName", "" ) and not IsMenuInState( menu, "Processing" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_remove" )
 			return false
-		elseif IsDesiredFrameWidget( f26_arg2, self.Frame, "SupplyChainFrame" ) and CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueEqualTo( self.Frame, f26_arg2, "allowFrozenMoment", true ) and not IsMenuInState( f26_arg1, "Processing" ) then
-			CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_remove" )
+		elseif IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueEqualTo( self.Frame, controller, "allowFrozenMoment", true ) and not IsMenuInState( menu, "Processing" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_remove" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x29E5695FF1401AD], "ui_contextual_2", function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3 )
-		if IsDesiredFrameWidget( f27_arg2, self.Frame, "SupplyChainFrame" ) and CoD.BlackMarketUtility.CanPlayGesture( self.Frame ) and not IsMenuInState( f27_arg1, "Processing" ) then
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x29E5695FF1401AD], "ui_contextual_2", function ( element, menu, controller, model )
+		if IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and CoD.BlackMarketUtility.CanPlayGesture( self.Frame ) and not IsMenuInState( menu, "Processing" ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.BlackMarketUtility.PlayGesture( self, self.Frame, f27_arg2 )
+			CoD.BlackMarketUtility.PlayGesture( self, self.Frame, controller )
 			return true
-		elseif IsDesiredFrameWidget( f27_arg2, self.Frame, "ItemShopFrame" ) and CoD.BlackMarketUtility.CanPlayGesture( self.Frame ) then
+		elseif IsDesiredFrameWidget( controller, self.Frame, "ItemShopFrame" ) and CoD.BlackMarketUtility.CanPlayGesture( self.Frame ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.BlackMarketUtility.PlayGesture( self, self.Frame, f27_arg2 )
+			CoD.BlackMarketUtility.PlayGesture( self, self.Frame, controller )
 			return true
 		else
 			
 		end
-	end, function ( f28_arg0, f28_arg1, f28_arg2 )
-		if IsDesiredFrameWidget( f28_arg2, self.Frame, "SupplyChainFrame" ) and CoD.BlackMarketUtility.CanPlayGesture( self.Frame ) and not IsMenuInState( f28_arg1, "Processing" ) then
-			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x29E5695FF1401AD], 0x0, nil, "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		if IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and CoD.BlackMarketUtility.CanPlayGesture( self.Frame ) and not IsMenuInState( menu, "Processing" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x29E5695FF1401AD], "", nil, "ui_contextual_2" )
 			return false
-		elseif IsDesiredFrameWidget( f28_arg2, self.Frame, "ItemShopFrame" ) and CoD.BlackMarketUtility.CanPlayGesture( self.Frame ) then
-			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0x29E5695FF1401AD], 0x0, nil, "ui_contextual_2" )
+		elseif IsDesiredFrameWidget( controller, self.Frame, "ItemShopFrame" ) and CoD.BlackMarketUtility.CanPlayGesture( self.Frame ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x29E5695FF1401AD], "", nil, "ui_contextual_2" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x93AB4C84F113EE1], "ui_contextual_1", function ( f29_arg0, f29_arg1, f29_arg2, f29_arg3 )
-		if not IsMenuInState( f29_arg1, "Processing" ) and CoD.BlackMarketUtility.CanToggleSignatureWeapon( self.Frame ) then
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x93AB4C84F113EE1], "ui_contextual_1", function ( element, menu, controller, model )
+		if not IsMenuInState( menu, "Processing" ) and CoD.BlackMarketUtility.CanToggleSignatureWeapon( self.Frame ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.BlackMarketUtility.ToggleSignatureWeapon( f29_arg1, f29_arg2, self.Frame )
+			CoD.BlackMarketUtility.ToggleSignatureWeapon( menu, controller, self.Frame )
 			return true
-		elseif IsDesiredFrameWidget( f29_arg2, self.Frame, "SupplyChainFrame" ) and CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueEqualTo( self.Frame, f29_arg2, "allowTogglePreview", true ) and not CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueEqualTo( self.Frame, f29_arg2, "itemCategory", 0xCC13B0F8EEFF726 ) then
-			CoD.BlackMarketUtility.ToggleCharacterModelCamera( f29_arg1, self.Frame, f29_arg2 )
+		elseif IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueEqualTo( self.Frame, controller, "allowTogglePreview", true ) and not CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueEqualTo( self.Frame, controller, "itemCategory", "signature_weapon" ) then
+			CoD.BlackMarketUtility.ToggleCharacterModelCamera( menu, self.Frame, controller )
 			return true
 		else
 			
 		end
-	end, function ( f30_arg0, f30_arg1, f30_arg2 )
-		if not IsMenuInState( f30_arg1, "Processing" ) and CoD.BlackMarketUtility.CanToggleSignatureWeapon( self.Frame ) then
-			CoD.Menu.SetButtonLabel( f30_arg1, Enum.LUIButton[0x93AB4C84F113EE1], 0x0, nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if not IsMenuInState( menu, "Processing" ) and CoD.BlackMarketUtility.CanToggleSignatureWeapon( self.Frame ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x93AB4C84F113EE1], "", nil, "ui_contextual_1" )
 			return false
-		elseif IsDesiredFrameWidget( f30_arg2, self.Frame, "SupplyChainFrame" ) and CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueEqualTo( self.Frame, f30_arg2, "allowTogglePreview", true ) and not CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueEqualTo( self.Frame, f30_arg2, "itemCategory", 0xCC13B0F8EEFF726 ) then
-			CoD.Menu.SetButtonLabel( f30_arg1, Enum.LUIButton[0x93AB4C84F113EE1], 0x0, nil, "ui_contextual_1" )
+		elseif IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueEqualTo( self.Frame, controller, "allowTogglePreview", true ) and not CoD.BlackMarketUtility.IsSupplyChainActiveWidgetModelValueEqualTo( self.Frame, controller, "itemCategory", "signature_weapon" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x93AB4C84F113EE1], "", nil, "ui_contextual_1" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELDOWN", function ( f31_arg0, f31_arg1, f31_arg2, f31_arg3 )
-		if not IsRepeatButtonPress( f31_arg3 ) and IsDesiredFrameWidget( f31_arg2, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( f31_arg1, "Processing" ) then
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELDOWN", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) and IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( menu, "Processing" ) then
 			PlaySoundAlias( "uin_trigger_slide" )
-			SetFocusedTierModelValue( f31_arg2, "5", "increment" )
-			CoD.PlayerRoleUtility.StopGesturePreview( f31_arg1, f31_arg2 )
+			SetFocusedTierModelValue( controller, "5", "increment" )
+			CoD.PlayerRoleUtility.StopGesturePreview( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f32_arg0, f32_arg1, f32_arg2 )
-		if not IsRepeatButtonPress( nil ) and IsDesiredFrameWidget( f32_arg2, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( f32_arg1, "Processing" ) then
-			CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MWHEELDOWN" )
+	end, function ( element, menu, controller )
+		if not IsRepeatButtonPress( nil ) and IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( menu, "Processing" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MWHEELDOWN" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELUP", function ( f33_arg0, f33_arg1, f33_arg2, f33_arg3 )
-		if not IsRepeatButtonPress( f33_arg3 ) and IsDesiredFrameWidget( f33_arg2, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( f33_arg1, "Processing" ) then
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MWHEELUP", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) and IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( menu, "Processing" ) then
 			PlaySoundAlias( "uin_trigger_slide" )
-			SetFocusedTierModelValue( f33_arg2, "5", "decrement" )
-			CoD.PlayerRoleUtility.StopGesturePreview( f33_arg1, f33_arg2 )
+			SetFocusedTierModelValue( controller, "5", "decrement" )
+			CoD.PlayerRoleUtility.StopGesturePreview( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f34_arg0, f34_arg1, f34_arg2 )
-		if not IsRepeatButtonPress( nil ) and IsDesiredFrameWidget( f34_arg2, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( f34_arg1, "Processing" ) then
-			CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MWHEELUP" )
+	end, function ( element, menu, controller )
+		if not IsRepeatButtonPress( nil ) and IsDesiredFrameWidget( controller, self.Frame, "SupplyChainFrame" ) and not IsMenuInState( menu, "Processing" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MWHEELUP" )
 			return false
 		else
 			return false

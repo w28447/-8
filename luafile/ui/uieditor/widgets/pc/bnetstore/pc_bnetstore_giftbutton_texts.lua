@@ -11,7 +11,7 @@ CoD.PC_BnetStore_GiftButton_Texts.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local ButtonTitle = LUI.UIText.new( 0, 0, 134.5, 184.5, 0.5, 0.5, -12, 12 )
 	ButtonTitle:setRGB( 1, 0.75, 0.09 )
-	ButtonTitle:setText( Engine[0xF9F1239CFD921FE]( 0xCAF60F095239BED ) )
+	ButtonTitle:setText( Engine[0xF9F1239CFD921FE]( "store/gift" ) )
 	ButtonTitle:setTTF( "ttmussels_regular" )
 	ButtonTitle:setLetterSpacing( 2 )
 	ButtonTitle:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -40,7 +40,7 @@ CoD.PC_BnetStore_GiftButton_Texts.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	GiftPrice:setBackingType( 2 )
 	GiftPrice:setBackingAlpha( 0 )
 	GiftPrice:setBackingXPadding( 2 )
-	GiftPrice:setBackingImage( RegisterImage( 0x543EE2663FE7871 ) )
+	GiftPrice:setBackingImage( RegisterImage( "white_line" ) )
 	GiftPrice:setBackingMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	GiftPrice:setBackingShaderVector( 0, 0, 1, 0, 0 )
 	GiftPrice:setBackingShaderVector( 1, 0, 0, 0, 0 )

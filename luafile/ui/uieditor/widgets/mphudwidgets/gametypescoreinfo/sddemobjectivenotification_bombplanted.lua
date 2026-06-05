@@ -1,4 +1,4 @@
-require( "x64:7122e658d3b8228" )
+require( "ui/uieditor/widgets/mphudwidgets/waypoint_contestedarrowwidget" )
 
 CoD.SDDemObjectiveNotification_BombPlanted = InheritFrom( LUI.UIElement )
 CoD.SDDemObjectiveNotification_BombPlanted.__defaultWidth = 142
@@ -35,7 +35,7 @@ CoD.SDDemObjectiveNotification_BombPlanted.new = function ( f1_arg0, f1_arg1, f1
 	self.ArrowLeft = ArrowLeft
 	
 	local EnemyBombA = LUI.UIImage.new( 0.5, 0.5, -24, 24, 0, 0, 6, 54 )
-	EnemyBombA:setImage( RegisterImage( 0xBA08AEAD2336626 ) )
+	EnemyBombA:setImage( RegisterImage( "ui_icon_waypoint_bomb" ) )
 	EnemyBombA:subscribeToGlobalModel( f1_arg1, "HUDItems", "colorBlindSensitiveEnemyColor", function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
@@ -46,7 +46,7 @@ CoD.SDDemObjectiveNotification_BombPlanted.new = function ( f1_arg0, f1_arg1, f1
 	self.EnemyBombA = EnemyBombA
 	
 	local EnemyBombB = LUI.UIImage.new( 0.5, 0.5, -24, 24, 0, 0, 6, 54 )
-	EnemyBombB:setImage( RegisterImage( 0xBA08AEAD2336626 ) )
+	EnemyBombB:setImage( RegisterImage( "ui_icon_waypoint_bomb" ) )
 	EnemyBombB:subscribeToGlobalModel( f1_arg1, "HUDItems", "colorBlindSensitiveEnemyColor", function ( model )
 		local f5_local0 = model:get()
 		if f5_local0 ~= nil then
@@ -58,7 +58,7 @@ CoD.SDDemObjectiveNotification_BombPlanted.new = function ( f1_arg0, f1_arg1, f1
 	
 	local FriendlyBombA = LUI.UIImage.new( 0, 0, 15, 63, 0, 0, 6, 54 )
 	FriendlyBombA:setAlpha( 0 )
-	FriendlyBombA:setImage( RegisterImage( 0xBA08AEAD2336626 ) )
+	FriendlyBombA:setImage( RegisterImage( "ui_icon_waypoint_bomb" ) )
 	FriendlyBombA:subscribeToGlobalModel( f1_arg1, "HUDItems", "colorBlindSensitiveFriendlyColor", function ( model )
 		local f6_local0 = model:get()
 		if f6_local0 ~= nil then
@@ -70,7 +70,7 @@ CoD.SDDemObjectiveNotification_BombPlanted.new = function ( f1_arg0, f1_arg1, f1
 	
 	local FriendlyBombB = LUI.UIImage.new( 1, 1, -63, -15, 0, 0, 6, 54 )
 	FriendlyBombB:setAlpha( 0 )
-	FriendlyBombB:setImage( RegisterImage( 0xBA08AEAD2336626 ) )
+	FriendlyBombB:setImage( RegisterImage( "ui_icon_waypoint_bomb" ) )
 	FriendlyBombB:subscribeToGlobalModel( f1_arg1, "HUDItems", "colorBlindSensitiveFriendlyColor", function ( model )
 		local f7_local0 = model:get()
 		if f7_local0 ~= nil then

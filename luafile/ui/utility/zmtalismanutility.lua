@@ -16,169 +16,169 @@ CoD.ZMTalismanUtility.N_ENUM_MBOX_OFF = 0
 CoD.ZMTalismanUtility.N_SETTING_PACK_OFF = 0
 CoD.ZMTalismanUtility.N_SETTING_LAST_STAND_DURATION_OFF = 0
 CoD.ZMTalismanUtility.TalismanToEnumGameSettingsHash = {
-	[0x96A42B9715FCF4E] = {
+	talisman_box_guarantee_box_only = {
 		{
-			hash = 0xE0EC3FE56F08B47,
+			hash = "zmmysteryboxstate",
 			restrictedValue = CoD.ZMTalismanUtility.N_ENUM_MBOX_OFF
 		}
 	},
-	["talisman_box_guarantee_lmg"] = {
+	talisman_box_guarantee_lmg = {
 		{
-			hash = 0xE0EC3FE56F08B47,
+			hash = "zmmysteryboxstate",
 			restrictedValue = CoD.ZMTalismanUtility.N_ENUM_MBOX_OFF
 		}
 	},
-	["talisman_weapon_reducepapcost"] = {
+	talisman_weapon_reducepapcost = {
 		{
-			hash = 0x9D48A0D4490B0A2,
+			hash = "zmpapenabled",
 			restrictedValue = CoD.ZMTalismanUtility.N_SETTING_PACK_OFF
 		}
 	},
-	[0xECEF105EDFCE221] = {
+	talisman_coagulant = {
 		{
-			hash = 0x517C36D49B4EE0,
+			hash = "zmlaststandduration",
 			restrictedValue = CoD.ZMTalismanUtility.N_SETTING_LAST_STAND_DURATION_OFF
 		}
 	}
 }
 CoD.ZMTalismanUtility.TalismanToBooleanGameSettingsHash = {
-	[0x96A42B9715FCF4E] = {
-		0x53FCFBEE32E3655
+	talisman_box_guarantee_box_only = {
+		"zmtalismanboxguaranteeboxonly"
 	},
-	["talisman_box_guarantee_lmg"] = {
-		0xB59BB7608355512,
-		0xF6740B518DBEB8F
+	talisman_box_guarantee_lmg = {
+		"zmtalismanboxguaranteelmg",
+		"zmweaponslmg"
 	},
-	[0xECEF105EDFCE221] = {
-		0x8A8F3CFEF7B86D1
+	talisman_coagulant = {
+		"zmtalismancoagulant"
 	},
-	[0xA2042B3984A50AC] = {
+	talisman_extra_claymore = {
 		"zmtalismanextraclaymore",
-		0x5A1298089D361F1
+		"zmequipmentisenabled"
 	},
-	[0xC39AFAA7B8D508C] = {
-		0x6A78AC345A3E2BB,
-		0x5A1298089D361F1
+	talisman_extra_frag = {
+		"zmtalismanextrafrag",
+		"zmequipmentisenabled"
 	},
-	[0xBD593B03DBE4709] = {
-		0x52EBA9759A4A52A,
-		0x5A1298089D361F1
+	talisman_extra_miniturret = {
+		"zmtalismanextraminiturret",
+		"zmequipmentisenabled"
 	},
-	[0x16F409871DE1C2A] = {
-		0x6943D48D878715F,
-		0x5A1298089D361F1
+	talisman_extra_molotov = {
+		"zmtalismanextramolotov",
+		"zmequipmentisenabled"
 	},
-	[0x33AD55AC2B835D0] = {
+	talisman_extra_semtex = {
 		"zmtalismanextrasemtex",
-		0x5A1298089D361F1
+		"zmequipmentisenabled"
 	},
-	[0xE64B28EDF21732A] = {
-		0x1987D25A3717A
+	talisman_impatient = {
+		"zmtalismanimpatient"
 	},
-	[0x567F18899A438F1] = {
-		0x3BF3E5A51CB8FAD,
-		0xD18F84F48BD5D1F
+	talisman_perk_mod_single = {
+		"zmtalismanperkmodsingle",
+		"zmperksactive"
 	},
-	[0x7AFAE5369A40BC2] = {
-		0xF51E04634DAFE36,
-		0xD18F84F48BD5D1F
+	talisman_perk_permanent_1 = {
+		"zmtalismanperkpermanent1",
+		"zmperksactive"
 	},
-	[0x7AFAD5369A40A0F] = {
-		0xF51DF4634DAFC83,
-		0xD18F84F48BD5D1F
+	talisman_perk_permanent_2 = {
+		"zmtalismanperkpermanent2",
+		"zmperksactive"
 	},
-	[0x7AFAC5369A4085C] = {
-		0xF51DE4634DAFAD0,
-		0xD18F84F48BD5D1F
+	talisman_perk_permanent_3 = {
+		"zmtalismanperkpermanent3",
+		"zmperksactive"
 	},
-	[0x7AFAB5369A406A9] = {
-		0xF51E54634DB06B5,
-		0xD18F84F48BD5D1F
+	talisman_perk_permanent_4 = {
+		"zmtalismanperkpermanent4",
+		"zmperksactive"
 	},
-	[0x89C4CE1578064B7] = {
-		0x6DB42B55542EC33,
-		0xD18F84F48BD5D1F
+	talisman_perk_reducecost_1 = {
+		"zmtalismanperkreducecost1",
+		"zmperksactive"
 	},
-	[0x89C4DE15780666A] = {
-		0x6DB43B55542EDE6,
-		0xD18F84F48BD5D1F
+	talisman_perk_reducecost_2 = {
+		"zmtalismanperkreducecost2",
+		"zmperksactive"
 	},
-	[0x89C4EE15780681D] = {
-		0x6DB44B55542EF99,
-		0xD18F84F48BD5D1F
+	talisman_perk_reducecost_3 = {
+		"zmtalismanperkreducecost3",
+		"zmperksactive"
 	},
-	[0x89C47E157805C38] = {
-		0x6DB45B55542F14C,
-		0xD18F84F48BD5D1F
+	talisman_perk_reducecost_4 = {
+		"zmtalismanperkreducecost4",
+		"zmperksactive"
 	},
-	[0xBA5A74038BFFAB4] = {
-		0xFE0BA92C67980E8,
-		0xD18F84F48BD5D1F
+	talisman_perk_start_1 = {
+		"zmtalismanperkstart1",
+		"zmperksactive"
 	},
-	[0xBA5AA4038BFFFCD] = {
-		0xFE0BD92C6798601,
-		0xD18F84F48BD5D1F
+	talisman_perk_start_2 = {
+		"zmtalismanperkstart2",
+		"zmperksactive"
 	},
-	[0xBA5A94038BFFE1A] = {
-		0xFE0BC92C679844E,
-		0xD18F84F48BD5D1F
+	talisman_perk_start_3 = {
+		"zmtalismanperkstart3",
+		"zmperksactive"
 	},
-	[0xBA5A44038BFF59B] = {
-		0xFE0BF92C6798967,
-		0xD18F84F48BD5D1F
+	talisman_perk_start_4 = {
+		"zmtalismanperkstart4",
+		"zmperksactive"
 	},
-	[0x4709F2CDFEC5C52] = {
-		0xF973A92562BC3B6,
-		0x5A1D440F78A3B2
+	talisman_shield_durability_legendary = {
+		"zmtalismanshielddurabilitylegendary",
+		"zmshieldisenabled"
 	},
-	[0xDA3AF324B74C125] = {
-		0x6D19199D37D4549,
-		0x5A1D440F78A3B2
+	talisman_shield_durability_rare = {
+		"zmtalismanshielddurabilityrare",
+		"zmshieldisenabled"
 	},
-	[0xC519F7F8371ECF8] = {
-		0x2C6D1CA5EAB82AB,
-		0x5A1D440F78A3B2
+	talisman_shield_price = {
+		"zmtalismanshieldprice",
+		"zmshieldisenabled"
 	},
-	[0x50670241DFB72AF] = {
-		0xEFEF475C9DE052E,
+	talisman_special_startlv2 = {
+		"zmtalismanspecialstartlvl2",
 		"zmspecweaponisenabled"
 	},
-	[0x5066F241DFB70FC] = {
-		0xEFEF575C9DE06E1,
+	talisman_special_startlv3 = {
+		"zmtalismanspecialstartlvl3",
 		"zmspecweaponisenabled"
 	},
-	[0xEEBDA916971B02] = {
+	talisman_special_xp_rate = {
 		"zmtalismanspecialxprate",
 		"zmspecweaponisenabled"
 	},
-	["talisman_start_weapon_ar"] = {
-		0x9A9D40272333762,
-		0xD5C8E6F0E20201A
+	talisman_start_weapon_ar = {
+		"zmtalismanstartweaponar",
+		"zmweaponsar"
 	},
-	[0x76221EC95A6B4D1] = {
-		0x11DB227D86CC407,
-		0xF6740B518DBEB8F
+	talisman_start_weapon_lmg = {
+		"zmtalismanstartweaponlmg",
+		"zmweaponslmg"
 	},
-	[0xA0802EC72B26A24] = {
-		0xA6E4728651AFF36,
-		0xF6665B5581F6B6E
+	talisman_start_weapon_smg = {
+		"zmtalismanstartweaponsmg",
+		"zmweaponssmg"
 	},
-	["talisman_weapon_reducepapcost"] = {
+	talisman_weapon_reducepapcost = {
 		"zmtalismanreducepapcost"
 	},
-	[0x734F461CBE4850D] = {
-		0xF55E280D866341D,
+	talisman_permanent_heroweap_armor = {
+		"zmtalismanpermanentheroweaparmor",
 		"zmspecweaponisenabled"
 	},
-	[0x53DCE90F31AA76] = {
-		0x2EE429BB9CE771C
+	talisman_extra_self_revive = {
+		"zmtalismanextraselfrevive"
 	}
 }
 DataSources.TalismanCategories = ListHelper_SetupDataSource( "TalismanCategories", function ( f1_arg0, f1_arg1 )
 	local f1_local0 = CoD.CACUtility.GetItemEquippedInSlot( CoD.BaseUtility.GetMenuLoadoutSlot( f1_arg1.menu ), nil, CoD.BaseUtility.GetMenuModel( f1_arg1.menu ) )
 	local f1_local1 = nil
 	if f1_local0 ~= CoD.CACUtility.EmptyItemIndex then
-		f1_local1 = Engine[0x87395843D470BE2]( f1_local0, Enum[0x6EB546760F890D2][0x5544C104CD15F10], Enum.eModes[0x3723205FAE52C4A] )
+		f1_local1 = Engine[0x87395843D470BE2]( f1_local0, Enum[0x6EB546760F890D2][0x5544C104CD15F10], Enum.eModes.mode_zombies )
 	end
 	local f1_local2 = function ( f2_arg0 )
 		return f1_local1 and f1_local1[0xEAC0467BA97BCA9] == f2_arg0
@@ -231,7 +231,7 @@ CoD.ZMTalismanUtility.IsEquippedTalismanOfType = function ( f3_arg0, f3_arg1, f3
 	local f3_local0 = f3_arg0:getModel( f3_arg1, "itemIndex" )
 	local f3_local1 = f3_local0 and f3_local0:get()
 	if f3_local1 and f3_local1 > CoD.CACUtility.EmptyItemIndex then
-		local f3_local2 = Engine[0x87395843D470BE2]( f3_local1, Enum[0x6EB546760F890D2][0x5544C104CD15F10], Enum.eModes[0x3723205FAE52C4A] )
+		local f3_local2 = Engine[0x87395843D470BE2]( f3_local1, Enum[0x6EB546760F890D2][0x5544C104CD15F10], Enum.eModes.mode_zombies )
 		return f3_local2 and f3_local2[0xE73D6BF951E301E] == f3_arg2
 	else
 		return false
@@ -247,14 +247,14 @@ CoD.ZMTalismanUtility.UpdateTalismanModel = function ( f5_arg0, f5_arg1, f5_arg2
 	if f5_local0 then
 		local f5_local1 = f5_local0.itemIndex:get()
 		local f5_local2 = f5_local0.globalItemIndex:get()
-		local f5_local3 = Engine.GetItemGroup( f5_local1, Enum[0x6EB546760F890D2][0x5544C104CD15F10], Enum.eModes[0x3723205FAE52C4A] )
+		local f5_local3 = Engine.GetItemGroup( f5_local1, Enum[0x6EB546760F890D2][0x5544C104CD15F10], Enum.eModes.mode_zombies )
 		local f5_local4 = true
 		local f5_local5 = "select01"
-		local f5_local6 = 0x0
+		local f5_local6 = ""
 		local f5_local7 = 1
-		local f5_local8 = CoD.CACUtility.GetUnlockableItemInfo( f5_local2, Enum.eModes[0x3723205FAE52C4A] )
+		local f5_local8 = CoD.CACUtility.GetUnlockableItemInfo( f5_local2, Enum.eModes.mode_zombies )
 		if f5_local8 then
-			f5_local6 = f5_local8[0xB6404450C6BAEEF] or 0x0
+			f5_local6 = f5_local8[0xB6404450C6BAEEF] or ""
 			f5_local7 = f5_local8[0xB49D7582CD08B0E] or 1
 		end
 		Engine.SendClientScriptNotify( f5_arg2, "CustomClass_update" .. CoD.GetLocalClientAdjustedNum( f5_arg2 ), {
@@ -276,7 +276,7 @@ CoD.ZMTalismanUtility.UnequipTalisman = function ( f6_arg0, f6_arg1, f6_arg2 )
 			CoD.CACUtility.GetCustomClassModel( f6_arg2, f6_local0.classNum:get(), f6_local0, nil, f6_local1 )
 			CoD.CACUtility.UpdateClassWeaponModel( f6_arg0, f6_arg1, f6_arg2 )
 			CoD.FreeCursorUtility.UpdateSetupContext( f6_arg1, f6_arg2 )
-			if f6_local3 and f6_local3 ~= 0x0 then
+			if f6_local3 and f6_local3 ~= "" then
 				Engine[0x98954175CA6A32C]( f6_local3 )
 			end
 		end

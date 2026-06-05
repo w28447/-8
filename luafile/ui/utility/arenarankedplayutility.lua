@@ -41,9 +41,9 @@ end
 CoD.ArenaRankedPlayUtility.GetRankName = function ( f6_arg0 )
 	local f6_local0 = CoD.ArenaRankedPlayUtility.GetRankInfo( f6_arg0 )
 	if f6_local0.mode == Engine[0xC53F8D38DF9042B]( "stars_locked" ) then
-		return Engine[0xF9F1239CFD921FE]( 0xB6BFAA47BB29EA8, f6_local0.rank + 1 )
+		return Engine[0xF9F1239CFD921FE]( "menu/rank_n", f6_local0.rank + 1 )
 	elseif f6_local0.mode == Engine[0xC53F8D38DF9042B]( "master" ) then
-		return Engine[0xF9F1239CFD921FE]( 0xB2C76F458B88732 )
+		return Engine[0xF9F1239CFD921FE]( "menu/masters_caps" )
 	else
 		return ""
 	end
@@ -128,7 +128,7 @@ CoD.ArenaRankedPlayUtility.ArenaPregameStart = function ( f15_arg0 )
 					f15_local3.points:set( f15_local6 )
 				end
 				f15_local3.matchStartPoints:set( f15_local4 )
-				Engine.Exec( f15_arg0, "uploadstats" )
+				Engine.exec( f15_arg0, "uploadstats" )
 			end
 		end
 	end
@@ -149,7 +149,7 @@ CoD.ArenaRankedPlayUtility.ArenaPregameError = function ( f16_arg0 )
 				local f16_local5 = f16_local3.matchStartPoints:get()
 				if f16_local4 ~= f16_local5 then
 					f16_local3.points:set( f16_local5 )
-					Engine.Exec( f16_arg0, "uploadstats" )
+					Engine.exec( f16_arg0, "uploadstats" )
 				end
 			end
 		end

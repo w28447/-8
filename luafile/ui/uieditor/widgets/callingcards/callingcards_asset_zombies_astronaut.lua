@@ -11,7 +11,7 @@ CoD.CallingCards_Asset_zombies_astronaut.new = function ( f1_arg0, f1_arg1, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local astronaut = LUI.UIImage.new( 0, 0, 0, 392, 0, 0, 0, 240 )
-	astronaut:setImage( RegisterImage( 0x1F1548BBF6B8059 ) )
+	astronaut:setImage( RegisterImage( "uie_ui_icon_callingcard_zombie_astronaut" ) )
 	self:addElement( astronaut )
 	self.astronaut = astronaut
 	

@@ -66,7 +66,7 @@ LUI.createMenu.mp_revive_prompt = function ( f1_arg0, f1_arg1 )
 	self.clamparrow = clamparrow
 	
 	local revivingText = LUI.UIText.new( 0, 0, -300, 300, 0, 0, 85, 110 )
-	revivingText:setText( Engine[0xF9F1239CFD921FE]( 0x6326FF81589A75B ) )
+	revivingText:setText( Engine[0xF9F1239CFD921FE]( "coop/reviving" ) )
 	revivingText:setTTF( "ttmussels_regular" )
 	revivingText:setLetterSpacing( 2 )
 	revivingText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
@@ -81,7 +81,7 @@ LUI.createMenu.mp_revive_prompt = function ( f1_arg0, f1_arg1 )
 	
 	local reviveNameLine = LUI.UIImage.new( 0, 0, 92, 415, 0, 0, -15, -8 )
 	reviveNameLine:setAlpha( 0 )
-	reviveNameLine:setImage( RegisterImage( 0x13BBC116738D85D ) )
+	reviveNameLine:setImage( RegisterImage( "uie_ui_hud_revive_name_seperator" ) )
 	self:addElement( reviveNameLine )
 	self.reviveNameLine = reviveNameLine
 	

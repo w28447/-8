@@ -20,7 +20,7 @@ CoD.LeaguePlayEndRankUpRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	CurrentRank:linkToElementModel( self, "leaguePlayRank", true, function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
-			CurrentRank:setText( ToUpper( LocalizeStringWithParameter( 0x47AC0462E4B2132, f2_local0 ) ) )
+			CurrentRank:setText( ToUpper( LocalizeStringWithParameter( "arena/arena_league_play_rank", f2_local0 ) ) )
 		end
 	end )
 	self:addElement( CurrentRank )

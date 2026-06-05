@@ -39,22 +39,22 @@ end
 
 CoD.DemoUtility.SetEditingDollyCameraMarker = function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3, f7_arg4 )
 	if f7_arg3 == true then
-		Engine.Exec( f7_arg2, "demo_editdollycammarker 1" )
+		Engine.exec( f7_arg2, "demo_editdollycammarker 1" )
 	else
-		Engine.Exec( f7_arg2, "demo_editdollycammarker 0" )
+		Engine.exec( f7_arg2, "demo_editdollycammarker 0" )
 	end
 end
 
 CoD.DemoUtility.SwitchToDollyCamMarker = function ( f8_arg0, f8_arg1 )
-	Engine.Exec( f8_arg0, "demo_switchdollycammarker " .. f8_arg1 )
+	Engine.exec( f8_arg0, "demo_switchdollycammarker " .. f8_arg1 )
 end
 
 CoD.DemoUtility.RemoveDollyCamMarker = function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3, f9_arg4 )
-	Engine.Exec( f9_arg2, "demo_removedollycammarker " .. f9_arg3 )
+	Engine.exec( f9_arg2, "demo_removedollycammarker " .. f9_arg3 )
 end
 
 CoD.DemoUtility.RepositionDollyCamMarker = function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3, f10_arg4 )
-	Engine.Exec( f10_arg2, "demo_repositiondollycammarker " .. f10_arg3 )
+	Engine.exec( f10_arg2, "demo_repositiondollycammarker " .. f10_arg3 )
 end
 
 CoD.DemoUtility.RemoveCurrentDollyCamMarker = function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3, f11_arg4 )
@@ -69,14 +69,14 @@ end
 
 CoD.DemoUtility.SetEditingLightmanMarker = function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3, f13_arg4 )
 	if f13_arg3 == true then
-		Engine.Exec( f13_arg2, "demo_editlightmanmarker 1" )
+		Engine.exec( f13_arg2, "demo_editlightmanmarker 1" )
 	else
-		Engine.Exec( f13_arg2, "demo_editlightmanmarker 0" )
+		Engine.exec( f13_arg2, "demo_editlightmanmarker 0" )
 	end
 end
 
 CoD.DemoUtility.SwitchToLightmanMarker = function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3, f14_arg4 )
-	Engine.Exec( f14_arg2, "demo_switchlightmanmarker " .. f14_arg3 )
+	Engine.exec( f14_arg2, "demo_switchlightmanmarker " .. f14_arg3 )
 end
 
 CoD.DemoUtility.CycleLightmanMarker = function ( f15_arg0, f15_arg1, f15_arg2, f15_arg3, f15_arg4 )
@@ -95,11 +95,11 @@ CoD.DemoUtility.CycleLightmanMarker = function ( f15_arg0, f15_arg1, f15_arg2, f
 end
 
 CoD.DemoUtility.RemoveLightmanMarker = function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3, f16_arg4 )
-	Engine.Exec( f16_arg2, "demo_removelightmanmarker " .. f16_arg3 )
+	Engine.exec( f16_arg2, "demo_removelightmanmarker " .. f16_arg3 )
 end
 
 CoD.DemoUtility.RepositionLightmanMarker = function ( f17_arg0, f17_arg1, f17_arg2, f17_arg3, f17_arg4 )
-	Engine.Exec( f17_arg2, "demo_repositionlightmanmarker " .. f17_arg3 )
+	Engine.exec( f17_arg2, "demo_repositionlightmanmarker " .. f17_arg3 )
 end
 
 CoD.DemoUtility.RemoveCurrentLightmanMarker = function ( f18_arg0, f18_arg1, f18_arg2, f18_arg3, f18_arg4 )
@@ -115,7 +115,7 @@ CoD.DemoUtility.SetCurrentLightmanColor = function ( f19_arg0, f19_arg1 )
 	f19_local1.demo.currentLightmanMarkerLightColorG:set( f19_local0.g )
 	f19_local1 = Engine.GetGlobalModel()
 	f19_local1.demo.currentLightmanMarkerLightColorB:set( f19_local0.b )
-	Engine.Exec( f19_arg0, "demo_updatelightmanmarkerparameters " .. Engine.GetHighlightedCameraMarker() )
+	Engine.exec( f19_arg0, "demo_updatelightmanmarkerparameters " .. Engine.GetHighlightedCameraMarker() )
 end
 
 CoD.DemoUtility.RunPauseCommand = function ( f20_arg0 )
@@ -159,14 +159,14 @@ CoD.DemoUtility.IsFastForwardingDisabled = function ()
 end
 
 CoD.DemoUtility.TakeScreenshot = function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3, f25_arg4 )
-	Engine.Exec( f25_arg2, "demo_screenshot" )
+	Engine.exec( f25_arg2, "demo_screenshot" )
 end
 
 CoD.DemoUtility.DemoSwitchPlayer = function ( f26_arg0, f26_arg1, f26_arg2, f26_arg3, f26_arg4 )
 	if f26_arg3 == "forward" then
-		Engine.Exec( f26_arg2, "demo_switchplayer 0" )
+		Engine.exec( f26_arg2, "demo_switchplayer 0" )
 	elseif f26_arg3 == "back" then
-		Engine.Exec( f26_arg2, "demo_switchplayer 1" )
+		Engine.exec( f26_arg2, "demo_switchplayer 1" )
 	end
 end
 
@@ -228,9 +228,9 @@ CoD.DemoUtility.UpdateDemoTimeScaleDelta = function ( f29_arg0, f29_arg1, f29_ar
 	local f29_local2 = tonumber( f29_arg3 )
 	local f29_local3 = f29_local1 + f29_arg3
 	if not (f29_local0 > f29_local1 or f29_local3 > Dvar[0x65BE4626D4D30D0]:get() or f29_local2 <= 0) or f29_local1 <= f29_local0 and f29_local3 >= 0.1 and f29_local2 < 0 then
-		Engine.Exec( f29_arg2, "demo_timescale " .. f29_local3 )
+		Engine.exec( f29_arg2, "demo_timescale " .. f29_local3 )
 	else
-		Engine.Exec( f29_arg2, "demo_timescale " .. f29_local0 )
+		Engine.exec( f29_arg2, "demo_timescale " .. f29_local0 )
 	end
 end
 
@@ -258,55 +258,55 @@ CoD.DemoUtility.DemoTimeJump = function ( f31_arg0, f31_arg1, f31_arg2, f31_arg3
 		if CoD.GameEndScoreUtility.IsInTransition( f31_arg2 ) then
 			CoD.GameEndScoreUtility.ClearTransitionModels( f31_arg2 )
 		end
-		Engine.Exec( f31_arg2, "demo_forward" )
+		Engine.exec( f31_arg2, "demo_forward" )
 	elseif f31_arg3 == "back" then
 		if CoD.GameEndScoreUtility.IsInTransition( f31_arg2 ) then
 			CoD.GameEndScoreUtility.ClearTransitionModels( f31_arg2 )
 		end
-		Engine.Exec( f31_arg2, "demo_back" )
+		Engine.exec( f31_arg2, "demo_back" )
 	end
 end
 
 CoD.DemoUtility.DemoToggleGameHud = function ( f32_arg0 )
-	Engine.Exec( f32_arg0, "demo_togglegamehud" )
+	Engine.exec( f32_arg0, "demo_togglegamehud" )
 end
 
 CoD.DemoUtility.DemoToggleDemoHud = function ( f33_arg0, f33_arg1, f33_arg2, f33_arg3, f33_arg4 )
-	Engine.Exec( f33_arg2, "demo_toggledemohud" )
+	Engine.exec( f33_arg2, "demo_toggledemohud" )
 	if CoD.isPC then
 		f33_arg0.demoShowMouse = not f33_arg0.demoShowMouse
 	end
 end
 
 CoD.DemoUtility.DemoCancelPreview = function ( f34_arg0, f34_arg1, f34_arg2, f34_arg3, f34_arg4 )
-	Engine.Exec( f34_arg2, "demo_cancelpreview" )
+	Engine.exec( f34_arg2, "demo_cancelpreview" )
 end
 
 CoD.DemoUtility.DemoStartAutoDollyCamera = function ( f35_arg0, f35_arg1, f35_arg2, f35_arg3, f35_arg4 )
 	CoD.DemoUtility.UnpauseIfPaused( f35_arg2 )
-	Engine.Exec( f35_arg2, "demo_startautodollycam" )
+	Engine.exec( f35_arg2, "demo_startautodollycam" )
 end
 
 CoD.DemoUtility.DemoStopAutoDollyCamera = function ( f36_arg0, f36_arg1, f36_arg2, f36_arg3, f36_arg4 )
-	Engine.Exec( f36_arg2, "demo_stopautodollycam" )
+	Engine.exec( f36_arg2, "demo_stopautodollycam" )
 end
 
 CoD.DemoUtility.DemoAddDollyCameraMarker = function ( f37_arg0, f37_arg1, f37_arg2, f37_arg3, f37_arg4 )
-	Engine.Exec( f37_arg2, "demo_adddollycammarker" )
+	Engine.exec( f37_arg2, "demo_adddollycammarker" )
 end
 
 CoD.DemoUtility.StartStopRecordClip = function ( f38_arg0, f38_arg1, f38_arg2, f38_arg3, f38_arg4 )
 	if Engine[0x5EC757FC8E459CB]() then
-		Engine.Exec( f38_arg2, "demo_pausecliprecord" )
+		Engine.exec( f38_arg2, "demo_pausecliprecord" )
 	else
 		if Engine[0xFCF13BF1C420FCE]() then
 			CoD.DemoUtility.UnpauseIfPaused( f38_arg2 )
 			Engine[0x18E18660B901CA0]( Enum.demoFreeCameraMode[0xF3D42DF364CABF1] )
 		end
-		if Engine.ProfileBool( f38_arg2, 0x7B9CFAC708D387F ) then
+		if Engine.ProfileBool( f38_arg2, "demo_recordwithautoplay" ) then
 			CoD.DemoUtility.UnpauseIfPaused( f38_arg2 )
 		end
-		Engine.Exec( f38_arg2, "demo_startcliprecord" )
+		Engine.exec( f38_arg2, "demo_startcliprecord" )
 	end
 end
 
@@ -330,16 +330,16 @@ CoD.DemoUtility.DemoEditDollyCameraMarker = function ( f40_arg0, f40_arg1, f40_a
 end
 
 CoD.DemoUtility.DemoExitEditDollyCameraMarker = function ( f41_arg0, f41_arg1, f41_arg2, f41_arg3, f41_arg4 )
-	Engine.Exec( f41_arg2, "demo_updatedollycammarkerparameters " .. Engine.GetHighlightedCameraMarker() )
+	Engine.exec( f41_arg2, "demo_updatedollycammarkerparameters " .. Engine.GetHighlightedCameraMarker() )
 	CoD.DemoUtility.SetEditingDollyCameraMarker( f41_arg0, f41_arg1, f41_arg2, false, f41_arg4 )
 end
 
 CoD.DemoUtility.DemoPlaceDollyCameraMarker = function ( f42_arg0, f42_arg1, f42_arg2, f42_arg3, f42_arg4 )
-	Engine.Exec( f42_arg2, "demo_applynewdollycammarkerposition 0" )
+	Engine.exec( f42_arg2, "demo_applynewdollycammarkerposition 0" )
 end
 
 CoD.DemoUtility.DemoCancelPlaceDollyCameraMarker = function ( f43_arg0, f43_arg1, f43_arg2, f43_arg3, f43_arg4 )
-	Engine.Exec( f43_arg2, "demo_applynewdollycammarkerposition 1" )
+	Engine.exec( f43_arg2, "demo_applynewdollycammarkerposition 1" )
 end
 
 CoD.DemoUtility.UpdateDollyCameraTimeScaleMode = function ( f44_arg0, f44_arg1, f44_arg2, f44_arg3, f44_arg4 )
@@ -396,15 +396,15 @@ CoD.DemoUtility.ToggleDollyCameraMode = function ( f46_arg0, f46_arg1, f46_arg2,
 end
 
 CoD.DemoUtility.DemoFreeCameraLockOnObject = function ( f47_arg0, f47_arg1, f47_arg2, f47_arg3, f47_arg4 )
-	Engine.Exec( f47_arg2, "demo_activatefreecameralockon" )
+	Engine.exec( f47_arg2, "demo_activatefreecameralockon" )
 end
 
 CoD.DemoUtility.DemoFreeCameraUnlockObject = function ( f48_arg0, f48_arg1, f48_arg2, f48_arg3, f48_arg4 )
-	Engine.Exec( f48_arg2, "demo_deactivatefreecameralockon" )
+	Engine.exec( f48_arg2, "demo_deactivatefreecameralockon" )
 end
 
 CoD.DemoUtility.DemoAddLightmanMarker = function ( f49_arg0, f49_arg1, f49_arg2, f49_arg3, f49_arg4 )
-	Engine.Exec( f49_arg2, "demo_addlightmanmarker" )
+	Engine.exec( f49_arg2, "demo_addlightmanmarker" )
 end
 
 CoD.DemoUtility.DemoEditLightmanMarker = function ( f50_arg0, f50_arg1, f50_arg2, f50_arg3, f50_arg4 )
@@ -413,16 +413,16 @@ CoD.DemoUtility.DemoEditLightmanMarker = function ( f50_arg0, f50_arg1, f50_arg2
 end
 
 CoD.DemoUtility.DemoExitEditLightmanMarker = function ( f51_arg0, f51_arg1, f51_arg2, f51_arg3, f51_arg4 )
-	Engine.Exec( f51_arg2, "demo_updatelightmanmarkerparameters " .. Engine.GetHighlightedCameraMarker() )
+	Engine.exec( f51_arg2, "demo_updatelightmanmarkerparameters " .. Engine.GetHighlightedCameraMarker() )
 	CoD.DemoUtility.SetEditingLightmanMarker( f51_arg0, f51_arg1, f51_arg2, false, f51_arg4 )
 end
 
 CoD.DemoUtility.DemoPlaceLightmanMarker = function ( f52_arg0, f52_arg1, f52_arg2, f52_arg3, f52_arg4 )
-	Engine.Exec( f52_arg2, "demo_applynewlightmanmarkerposition 0" )
+	Engine.exec( f52_arg2, "demo_applynewlightmanmarkerposition 0" )
 end
 
 CoD.DemoUtility.DemoCancelPlaceLightmanMarker = function ( f53_arg0, f53_arg1, f53_arg2, f53_arg3, f53_arg4 )
-	Engine.Exec( f53_arg2, "demo_applynewlightmanmarkerposition 1" )
+	Engine.exec( f53_arg2, "demo_applynewlightmanmarkerposition 1" )
 end
 
 CoD.DemoUtility.UpdateLightmanLightMode = function ( f54_arg0, f54_arg1, f54_arg2, f54_arg3, f54_arg4 )
@@ -449,7 +449,7 @@ CoD.DemoUtility.UpdateLightmanLightMode = function ( f54_arg0, f54_arg1, f54_arg
 		end
 	end
 	f54_local0:set( f54_local2 )
-	Engine.Exec( f54_arg2, "demo_updatelightmanmarkerparameters " .. Engine.GetHighlightedCameraMarker() )
+	Engine.exec( f54_arg2, "demo_updatelightmanmarkerparameters " .. Engine.GetHighlightedCameraMarker() )
 end
 
 CoD.DemoUtility.UpdateLightmanFloatParam = function ( f55_arg0, f55_arg1, f55_arg2 )
@@ -462,7 +462,7 @@ CoD.DemoUtility.UpdateLightmanFloatParam = function ( f55_arg0, f55_arg1, f55_ar
 	local f55_local3 = f55_arg1:get() + f55_arg2
 	if not (not f55_local0 or f55_local3 > f55_local2) or not f55_local0 and f55_local1 <= f55_local3 then
 		f55_arg1:set( f55_local3 )
-		Engine.Exec( f55_arg0, "demo_updatelightmanmarkerparameters " .. Engine.GetHighlightedCameraMarker() )
+		Engine.exec( f55_arg0, "demo_updatelightmanmarkerparameters " .. Engine.GetHighlightedCameraMarker() )
 	end
 end
 
@@ -532,9 +532,9 @@ end
 
 CoD.DemoUtility.OpenDemoKeyboard = function ( f64_arg0, f64_arg1, f64_arg2, f64_arg3, f64_arg4 )
 	if f64_arg4 and f64_arg4 ~= "" then
-		Engine.Exec( f64_arg2, "demo_keyboard " .. f64_arg3 .. " " .. f64_arg4 )
+		Engine.exec( f64_arg2, "demo_keyboard " .. f64_arg3 .. " " .. f64_arg4 )
 	else
-		Engine.Exec( f64_arg2, "demo_keyboard " .. f64_arg3 )
+		Engine.exec( f64_arg2, "demo_keyboard " .. f64_arg3 )
 	end
 	f64_arg1.keyboardName = f64_arg3
 end
@@ -571,7 +571,7 @@ CoD.DemoUtility.UploadClip_GoBack = function ( f67_arg0, f67_arg1, f67_arg2, f67
 	local f67_local0 = GoBack( f67_arg0, f67_arg2 )
 	ClearMenuSavedState( f67_arg0 )
 	if f67_local0.menuName == "TimelineEditor" then
-		Engine.Exec( f67_arg2, "setupThumbnailsForManageSegments" )
+		Engine.exec( f67_arg2, "setupThumbnailsForManageSegments" )
 	else
 		ResetThumbnailViewer( f67_arg2 )
 	end
@@ -594,7 +594,7 @@ CoD.DemoUtility.UpdateNumHighlightReelMomentsElementColor = function ( f68_arg0,
 end
 
 CoD.DemoUtility.DemoCancelHighlightReelCreation = function ( f69_arg0, f69_arg1, f69_arg2, f69_arg3, f69_arg4 )
-	Engine.Exec( f69_arg2, "demo_cancelhighlightreelcreation" )
+	Engine.exec( f69_arg2, "demo_cancelhighlightreelcreation" )
 end
 
 CoD.DemoUtility.OpenChooseModeSidebar = function ( f70_arg0, f70_arg1, f70_arg2, f70_arg3, f70_arg4 )
@@ -609,7 +609,7 @@ end
 CoD.DemoUtility.ShouldStartAutoDollyCamera = function ( f72_arg0 )
 	if not IsDemoContextDirectorMode() then
 		return false
-	elseif not Engine.ProfileBool( f72_arg0, 0x40A39D4129C3E15 ) then
+	elseif not Engine.ProfileBool( f72_arg0, "demo_autodollyrecord" ) then
 		return false
 	elseif CoD.ModelUtility.IsGlobalModelValueGreaterThan( "demo.highlightedDollyCamMarker", -1 ) then
 		return false
@@ -623,7 +623,7 @@ end
 CoD.DemoUtility.ShouldStopAutoDollyCamera = function ( f73_arg0 )
 	if not IsDemoContextDirectorMode() then
 		return false
-	elseif not Engine.ProfileBool( f73_arg0, 0x40A39D4129C3E15 ) then
+	elseif not Engine.ProfileBool( f73_arg0, "demo_autodollyrecord" ) then
 		return false
 	elseif not CoD.ModelUtility.IsGlobalModelValueTrue( "demo.isRecordingDollyCameraPath" ) then
 		return false
@@ -977,7 +977,7 @@ end
 CoD.DemoUtility.StartMenuUploadClip = function ( f102_arg0, f102_arg1, f102_arg2, f102_arg3, f102_arg4 )
 	local f102_local0 = Engine[0xF3230EBDE32BFB2]()
 	if f102_local0 < 100 then
-		LuaUtils.ShowMessageDialog( f102_arg2, Enum.MessageDialogType[0x8BCCDF5038F1B0B], Engine[0xF9F1239CFD921FE]( 0x166EE50B1458BCD, math.floor( f102_local0 ) ), Engine[0xF9F1239CFD921FE]( 0xA009F37E1567367 ) )
+		LuaUtils.ShowMessageDialog( f102_arg2, Enum.MessageDialogType[0x8BCCDF5038F1B0B], Engine[0xF9F1239CFD921FE]( "mpui/demo_download_in_progress", math.floor( f102_local0 ) ), Engine[0xF9F1239CFD921FE]( "menu/notice" ) )
 		return 
 	else
 		Engine.ExecNow( f102_arg2, "demo_updatesavepopupuimodels clip" )
@@ -996,7 +996,7 @@ CoD.DemoUtility.StartMenuJumpToStart = function ( f105_arg0, f105_arg1, f105_arg
 	if CoD.GameEndScoreUtility.IsInTransition( f105_arg2 ) then
 		CoD.GameEndScoreUtility.ClearTransitionModels( f105_arg2 )
 	end
-	Engine.Exec( f105_arg2, "demo_jumptostart" )
+	Engine.exec( f105_arg2, "demo_jumptostart" )
 	StartMenuGoBack( f105_arg4, f105_arg2 )
 end
 
@@ -1013,7 +1013,7 @@ CoD.DemoUtility.StartMenuEndDemo = function ( f106_arg0, f106_arg1, f106_arg2, f
 end
 
 CoD.DemoUtility.ProcessSettingsChange = function ( f107_arg0 )
-	if Engine.ProfileBool( f107_arg0, 0xBC470BF66BA3C46 ) then
+	if Engine.ProfileBool( f107_arg0, "demo_togglegamehud" ) then
 		Engine.ExecNow( f107_arg0, "demo_hidegamehud 0" )
 	else
 		Engine.ExecNow( f107_arg0, "demo_hidegamehud 1" )
@@ -1024,9 +1024,9 @@ CoD.DemoUtility.EndDemo = function ( f108_arg0 )
 	if not Engine[0xEA2BE00F49480D]( Enum.LobbyType[0xA1647599284110] ) then
 		Engine.GameModeResetModes()
 		Engine.SessionModeResetModes()
-		Engine.Exec( f108_arg0, "disconnect" )
+		Engine.exec( f108_arg0, "disconnect" )
 	else
-		Engine.Exec( f108_arg0, "xpartystopdemo" )
+		Engine.exec( f108_arg0, "xpartystopdemo" )
 	end
 end
 
@@ -1048,7 +1048,7 @@ CoD.DemoUtility.ActivateInformationScreen = function ( f110_arg0, f110_arg1 )
 		return 
 	elseif f110_arg1.informationScreenType == Enum.demoInformationScreenTypes[0xBE38590EC5B7996] or f110_arg1.informationScreenType == Enum.demoInformationScreenTypes[0x30934197B020D7] then
 		CoD.DemoUtility.AnimateToAlpha( LUI.roots.UIRootFull.demoInformationScreenBlackBackground, f110_arg1.animationTime, f110_local0 )
-		LUI.roots.UIRootFull.demoInformationScreenInformationText:setText( Engine[0xF9F1239CFD921FE]( 0xBBD6582279C398D ) )
+		LUI.roots.UIRootFull.demoInformationScreenInformationText:setText( Engine[0xF9F1239CFD921FE]( "menu/preparing" ) )
 		CoD.DemoUtility.AnimateToAlpha( LUI.roots.UIRootFull.demoInformationScreenInformationText, f110_arg1.animationTime * 0.8, f110_local0 )
 		CoD.DemoUtility.AnimateToAlpha( LUI.roots.UIRootFull.demoInformationScreenSpinner, f110_arg1.animationTime * 0.8, f110_local0 )
 	end
@@ -1062,7 +1062,7 @@ CoD.DemoUtility.ActivateInformationScreen = function ( f110_arg0, f110_arg1 )
 	if f110_arg1.informationScreenType == Enum.demoInformationScreenTypes[0xDA90BCE024C68A5] then
 		CoD.DemoUtility.AnimateToAlpha( LUI.roots.UIRootFull.demoInformationScreenBlackBackground, f110_arg1.animationTime, 0 )
 		CoD.DemoUtility.AnimateToAlpha( LUI.roots.UIRootFull.demoInformationScreenInformationText, f110_arg1.animationTime, f110_local0 )
-		LUI.roots.UIRootFull.demoInformationScreenInformationText:setText( Engine[0xF9F1239CFD921FE]( 0xD8B5675C766DBBB ) )
+		LUI.roots.UIRootFull.demoInformationScreenInformationText:setText( Engine[0xF9F1239CFD921FE]( "menu/buffering" ) )
 		CoD.DemoUtility.AnimateToAlpha( LUI.roots.UIRootFull.demoInformationScreenSpinner, f110_arg1.animationTime, f110_local0 )
 	end
 end
@@ -1087,7 +1087,7 @@ CoD.DemoUtility.AddInformationScreen = function ( f111_arg0 )
 		local f111_local3 = 60
 		local f111_local4 = LUI.UIImage.new( 0.5, 0.5, -f111_local3 / 2, f111_local3 / 2, 0.5, 0.5, CoD.textSize.Condensed, CoD.textSize.Condensed + f111_local3 )
 		f111_local4:setAlpha( 0 )
-		f111_local4:setMaterial( RegisterMaterial( 0x1F04D6E9BDEC22D ) )
+		f111_local4:setMaterial( RegisterMaterial( "lui_loader" ) )
 		f111_local4:setShaderVector( 0, 0, 0, 0, 0 )
 		LUI.roots.UIRootFull.demoInformationScreenSpinner = f111_local4
 		self:addElement( f111_local4 )
@@ -1182,9 +1182,9 @@ CoD.DemoUtility.AddHUDWidgets = function ( f114_arg0, f114_arg1 )
 		elseif f114_arg1.openHighlightStartScreen then
 			CoD.DemoUtility.RebuildHighlightReelTimeline( f114_local1 )
 			if Engine[0xDCCF490619F1876]() > 0 then
-				Engine.Exec( f114_local1, "demo_regeneratehighlightreel" )
+				Engine.exec( f114_local1, "demo_regeneratehighlightreel" )
 			else
-				LuaUtils.ShowMessageDialog( f114_local1, Enum.MessageDialogType[0x8BCCDF5038F1B0B], Engine[0xF9F1239CFD921FE]( 0x4F1B56A7BD9CDF ), Engine[0xF9F1239CFD921FE]( 0xA009F37E1567367 ) )
+				LuaUtils.ShowMessageDialog( f114_local1, Enum.MessageDialogType[0x8BCCDF5038F1B0B], Engine[0xF9F1239CFD921FE]( 0x4F1B56A7BD9CDF ), Engine[0xF9F1239CFD921FE]( "menu/notice" ) )
 				Dvar[0xFF56845FD43D403]:set( true )
 			end
 		end
@@ -1212,7 +1212,7 @@ CoD.DemoUtility.SetupDemoSegmentModel = function ( f116_arg0 )
 	if f116_arg0 < f116_local6 then
 		f116_local0 = Engine[0x61A661773462085]( f116_arg0, "name" )
 		f116_local1 = Engine[0x61A661773462085]( f116_arg0, "durationTimeDisplay" )
-		f116_local2 = Engine[0xF9F1239CFD921FE]( 0xCAD56C63DBCAC00 ) .. Engine[0x61A661773462085]( f116_arg0, "transition" )
+		f116_local2 = Engine[0xF9F1239CFD921FE]( "menu/transition" ) .. Engine[0x61A661773462085]( f116_arg0, "transition" )
 		if Engine[0x7FF6BC9358B7BA5]() then
 			local f116_local10 = tonumber( Engine[0x61A661773462085]( f116_arg0, "score" ) )
 			local f116_local11 = tonumber( Engine[0x61A661773462085]( f116_arg0, "stars" ) )
@@ -1279,12 +1279,12 @@ CoD.DemoUtility.Timeline_GetHighlightedSegmentModel = function ()
 end
 
 CoD.DemoUtility.PreviewSegment = function ( f120_arg0, f120_arg1 )
-	Engine.Exec( f120_arg1, "demo_previewsegment" )
+	Engine.exec( f120_arg1, "demo_previewsegment" )
 	GoBack( f120_arg0, f120_arg1 )
 end
 
 CoD.DemoUtility.SaveSegment = function ( f121_arg0, f121_arg1 )
-	Engine.Exec( f121_arg1, "demo_savesegment 0" )
+	Engine.exec( f121_arg1, "demo_savesegment 0" )
 	GoBack( f121_arg0, f121_arg1 )
 end
 
@@ -1476,7 +1476,7 @@ CoD.DemoUtility.TimelineEditorPostLoad = function ( f133_arg0, f133_arg1 )
 	end
 	
 	CoD.DemoUtility.TimelineEditor_AddTimeline( f133_arg0 )
-	Engine.Exec( f133_arg1, "setupThumbnailsForManageSegments" )
+	Engine.exec( f133_arg1, "setupThumbnailsForManageSegments" )
 	f133_local0( f133_arg0, f133_arg1 )
 	f133_arg0:subscribeToModel( Engine.GetModel( Engine.GetGlobalModel(), "DemoSegments.refresh" ), function ( model )
 		UpdateElementDataSource( f133_arg0, "SegmentButtonList" )
@@ -1585,7 +1585,7 @@ CoD.DemoUtility.UpdatePlayerNameTextField = function ( f153_arg0, f153_arg1 )
 		local f153_local3 = Engine.GetGlobalModel()
 		f153_local1 = GetClientNameAndClanTag( f153_arg1, f153_local3.demo.clientNum:get() )
 	elseif IsDemoContextObjectLinkMode() and IsFreeCameraLockedOnEntity( f153_arg1 ) then
-		f153_local1 = Engine[0xF9F1239CFD921FE]( 0x8903AE364895CE8 )
+		f153_local1 = Engine[0xF9F1239CFD921FE]( "demo/linked_to_object" )
 	elseif IsDemoContextDirectorMode() and IsEditingDollyCameraMarker( f153_arg1 ) then
 		local f153_local3 = Engine[0xF9F1239CFD921FE]
 		local f153_local4 = 0xA4EB256F6CA0980
@@ -1607,32 +1607,32 @@ end
 CoD.DemoUtility.BasicDemoShortcutsKBM = {
 	{
 		models = {
-			text = 0x597F5DD8A0C5760,
+			text = "menu/move_forward",
 			keyprompt = LocalizeToUpperString( 0x49B065E66E9596C )
 		}
 	},
 	{
 		models = {
-			text = 0x280131879E5ADC2,
+			text = "menu/move_left",
 			keyprompt = LocalizeToUpperString( 0x10F8E0BD934E07E )
 		}
 	},
 	{
 		models = {
-			text = 0x8BF76F79E90F6CF,
+			text = "menu/move_right",
 			keyprompt = LocalizeToUpperString( 0x7CA4B50830721D )
 		}
 	},
 	{
 		models = {
-			text = 0x6C0BE258C969BF4,
+			text = "menu/move_back",
 			keyprompt = LocalizeToUpperString( 0x63AA7B7405E74BC )
 		}
 	},
 	{
 		models = {
 			text = 0xE2B2C0952894C4D,
-			keyprompt = LocalizeToUpperString( 0xA4153A04CFECFE9 )
+			keyprompt = LocalizeToUpperString( "key/space" )
 		}
 	},
 	{
@@ -1644,12 +1644,12 @@ CoD.DemoUtility.BasicDemoShortcutsKBM = {
 	{
 		models = {
 			text = 0x11CF7B88D647093,
-			keyprompt = LocalizeToUpperString( 0xC29CFDDA408A8E5 )
+			keyprompt = LocalizeToUpperString( "key/lshift" )
 		}
 	},
 	{
 		models = {
-			text = 0x34BCA0ADE1DF991,
+			text = "demo/jump_backward",
 			keyprompt = "1"
 		}
 	},
@@ -1667,7 +1667,7 @@ CoD.DemoUtility.BasicDemoShortcutsKBM = {
 	},
 	{
 		models = {
-			text = 0x26F3509075FC393,
+			text = "demo/fast_forward",
 			keyprompt = "E"
 		}
 	},
@@ -1735,7 +1735,7 @@ CoD.DemoUtility.DirectorDemoShortcutsKBM = {
 	},
 	{
 		models = {
-			text = 0xC1DB4098ABE577F,
+			text = "demo/move_dolly_camera_hint",
 			keyprompt = "X"
 		}
 	},
@@ -1817,7 +1817,7 @@ CoD.DemoUtility.ObjectLinkDemoShortcutsKBM = {
 	},
 	{
 		models = {
-			text = 0x1AF6628A5C863B9,
+			text = "demo/link_to_object",
 			keyprompt = "F"
 		}
 	},

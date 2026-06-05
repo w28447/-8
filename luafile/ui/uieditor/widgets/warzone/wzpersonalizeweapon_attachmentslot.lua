@@ -175,7 +175,7 @@ CoD.WZPersonalizeWeapon_AttachmentSlot.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local ItemHintTextBreadcrumb = CoD.ItemHintTextBreadcrumb.new( f1_arg0, f1_arg1, 0, 0, 0.5, 292.5, 0, 0, 161, 195 )
 	ItemHintTextBreadcrumb:setAlpha( 0 )
-	ItemHintTextBreadcrumb.textCenterAlign:setText( Engine[0xF9F1239CFD921FE]( 0x2315E97C5F6E412 ) )
+	ItemHintTextBreadcrumb.textCenterAlign:setText( Engine[0xF9F1239CFD921FE]( "mpui/button_personalize_caps" ) )
 	self:addElement( ItemHintTextBreadcrumb )
 	self.ItemHintTextBreadcrumb = ItemHintTextBreadcrumb
 	
@@ -214,7 +214,7 @@ CoD.WZPersonalizeWeapon_AttachmentSlot.new = function ( f1_arg0, f1_arg1, f1_arg
 		} )
 	end )
 	MastercraftDetailsHintText:setAlpha( 0 )
-	MastercraftDetailsHintText.textCenterAlign:setText( Engine[0xF9F1239CFD921FE]( 0xD087E4011D7527C ) )
+	MastercraftDetailsHintText.textCenterAlign:setText( Engine[0xF9F1239CFD921FE]( "menu/details_button" ) )
 	MastercraftDetailsHintText:linkToElementModel( self, nil, false, function ( model )
 		MastercraftDetailsHintText:setModel( model, f1_arg1 )
 	end )

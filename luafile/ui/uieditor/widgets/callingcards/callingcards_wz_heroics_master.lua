@@ -1,37 +1,37 @@
-CoD["callingcards_wz_heroics_master"] = InheritFrom( LUI.UIElement )
-CoD["callingcards_wz_heroics_master"].__defaultWidth = 960
-CoD["callingcards_wz_heroics_master"].__defaultHeight = 240
-CoD["callingcards_wz_heroics_master"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_wz_heroics_master = InheritFrom( LUI.UIElement )
+CoD.callingcards_wz_heroics_master.__defaultWidth = 960
+CoD.callingcards_wz_heroics_master.__defaultHeight = 240
+CoD.callingcards_wz_heroics_master.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD["callingcards_wz_heroics_master"] )
+	self:setClass( CoD.callingcards_wz_heroics_master )
 	self.id = "CallingCards_wz_Heroics_Master"
 	self.soundSet = "default"
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local bg = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	bg:setImage( RegisterImage( 0xC91C36E9A8B312A ) )
+	bg:setImage( RegisterImage( "uie_callingcards_heroics_master_background" ) )
 	self:addElement( bg )
 	self.bg = bg
 	
 	local ParticlesBack = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	ParticlesBack:setImage( RegisterImage( 0xB68E3112EFC739D ) )
-	ParticlesBack:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	ParticlesBack:setImage( RegisterImage( "uie_callingcards_heroics_master_particles_back" ) )
+	ParticlesBack:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	ParticlesBack:setShaderVector( 0, 1, 1, 0, 0 )
 	ParticlesBack:setShaderVector( 1, 0, -0.1, 0, 0 )
 	self:addElement( ParticlesBack )
 	self.ParticlesBack = ParticlesBack
 	
 	local ParticlesFront = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	ParticlesFront:setImage( RegisterImage( 0xE8D4F3F1117DE49 ) )
-	ParticlesFront:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	ParticlesFront:setImage( RegisterImage( "uie_callingcards_heroics_master_particles_front" ) )
+	ParticlesFront:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	ParticlesFront:setShaderVector( 0, 1, 1, 0, 0 )
 	ParticlesFront:setShaderVector( 1, 0, -0.25, 0, 0 )
 	self:addElement( ParticlesFront )
 	self.ParticlesFront = ParticlesFront
 	
 	local BlackSmoke = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	BlackSmoke:setImage( RegisterImage( 0x470B2630EA26787 ) )
-	BlackSmoke:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD526D3FD71F281 ) )
+	BlackSmoke:setImage( RegisterImage( "uie_callingcards_heroics_master_black_smoke" ) )
+	BlackSmoke:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook" ) )
 	BlackSmoke:setShaderVector( 0, 0, 5, 0, 0 )
 	BlackSmoke:setShaderVector( 1, 5, 0, 0, 0 )
 	self:addElement( BlackSmoke )
@@ -39,26 +39,26 @@ CoD["callingcards_wz_heroics_master"].new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local BlackSmoke2 = LUI.UIImage.new( 0, 0, -265, 695, 0, 0, 33, 273 )
 	BlackSmoke2:setScale( 1.38, 0.8 )
-	BlackSmoke2:setImage( RegisterImage( 0x470B2630EA26787 ) )
-	BlackSmoke2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD526D3FD71F281 ) )
+	BlackSmoke2:setImage( RegisterImage( "uie_callingcards_heroics_master_black_smoke" ) )
+	BlackSmoke2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook" ) )
 	BlackSmoke2:setShaderVector( 0, 0, 5, 0, 0 )
 	BlackSmoke2:setShaderVector( 1, 5, 0, 0, 0 )
 	self:addElement( BlackSmoke2 )
 	self.BlackSmoke2 = BlackSmoke2
 	
 	local soldier1 = LUI.UIImage.new( 0, 0, 480, 856, 0, 0, 0, 240 )
-	soldier1:setImage( RegisterImage( 0x9ED06E1713767EF ) )
+	soldier1:setImage( RegisterImage( "uie_callingcards_heroics_master_soldier1" ) )
 	self:addElement( soldier1 )
 	self.soldier1 = soldier1
 	
 	local soldier2 = LUI.UIImage.new( 0, 0, 480, 856, 0, 0, 0, 240 )
-	soldier2:setImage( RegisterImage( 0x9ED07E1713769A2 ) )
+	soldier2:setImage( RegisterImage( "uie_callingcards_heroics_master_soldier2" ) )
 	self:addElement( soldier2 )
 	self.soldier2 = soldier2
 	
 	local glows = LUI.UIImage.new( 0, 0, -17, 943, 0, 0, 0, 240 )
 	glows:setAlpha( 0.4 )
-	glows:setImage( RegisterImage( 0xF5CCACC23C817D7 ) )
+	glows:setImage( RegisterImage( "uie_callingcards_heroics_master_glow_shoot" ) )
 	glows:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	glows:setShaderVector( 0, 0, 3, 0, 0 )
 	glows:setShaderVector( 1, 9, 0, 0, 0 )
@@ -77,7 +77,7 @@ CoD["callingcards_wz_heroics_master"].new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local cropper = LUI.UIImage.new( 0, 0, -32, 992, 0, 0, -392, 632 )
 	cropper:setAlpha( 0 )
-	cropper:setImage( RegisterImage( 0x7EEE1693E39382A ) )
+	cropper:setImage( RegisterImage( "uie_stage_crop_prop" ) )
 	self:addElement( cropper )
 	self.cropper = cropper
 	
@@ -88,7 +88,7 @@ CoD["callingcards_wz_heroics_master"].new = function ( f1_arg0, f1_arg1, f1_arg2
 	return self
 end
 
-CoD["callingcards_wz_heroics_master"].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_wz_heroics_master.__resetProperties = function ( f2_arg0 )
 	f2_arg0.soldier1:completeAnimation()
 	f2_arg0.soldier2:completeAnimation()
 	f2_arg0.glows:completeAnimation()
@@ -99,7 +99,7 @@ CoD["callingcards_wz_heroics_master"].__resetProperties = function ( f2_arg0 )
 	f2_arg0.bullets:setAlpha( 1 )
 end
 
-CoD["callingcards_wz_heroics_master"].__clipsPerState = {
+CoD.callingcards_wz_heroics_master.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()

@@ -82,13 +82,13 @@ LUI.createMenu.StartMenu_Options_Graphics_Colorblind = function ( f1_arg0, f1_ar
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f6_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( Buttons, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		ProcessListAction( self, f7_arg0, f7_arg2, f7_arg1 )
-		ForceNotifyControllerModel( f7_arg2, "profile.colorblindMode" )
+	f1_local1:AddButtonCallbackFunction( Buttons, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		ProcessListAction( self, element, controller, menu )
+		ForceNotifyControllerModel( controller, "profile.colorblindMode" )
 		PlaySoundAlias( "uin_paint_decal_nav" )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( Buttons )
@@ -150,20 +150,20 @@ LUI.createMenu.StartMenu_Options_Graphics_Colorblind = function ( f1_arg0, f1_ar
 			CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( f10_local0 ) )
 		end
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f11_arg0, f11_arg1, f11_arg2, f11_arg3 )
-		GoBack( self, f11_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f12_arg0, f12_arg1, f12_arg2 )
-		CoD.Menu.SetButtonLabel( f12_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_2", function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		CoD.OptionsUtility.ResetPlayerSettingToDefault( self, f13_arg2 )
-		ForceNotifyControllerModel( f13_arg2, "profile.colorblindMode" )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_2", function ( element, menu, controller, model )
+		CoD.OptionsUtility.ResetPlayerSettingToDefault( self, controller )
+		ForceNotifyControllerModel( controller, "profile.colorblindMode" )
 		PlaySoundAlias( "uin_paint_decal_nav" )
 		return true
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x19D60864B204458, nil, "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/default", nil, "ui_contextual_2" )
 		return true
 	end, false )
 	MenuFrame:setModel( self.buttonModel, f1_arg0 )

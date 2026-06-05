@@ -24,7 +24,7 @@ CoD.CodCaster_Settings_CategoryTabs_BG.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local TabBottomLine = LUI.UIImage.new( 0.5, 0.5, -410, 410, 0, 0, 34, 38 )
 	TabBottomLine:setAlpha( 0.08 )
-	TabBottomLine:setImage( RegisterImage( 0x5526CF3733E24C4 ) )
+	TabBottomLine:setImage( RegisterImage( "uie_ui_menu_common_tab_line_bottom" ) )
 	self:addElement( TabBottomLine )
 	self.TabBottomLine = TabBottomLine
 	

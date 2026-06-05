@@ -33,7 +33,7 @@ CoD.ClassAllocation.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local TextBoxSlash = LUI.UIText.new( 0, 0, 277, 316, 0, 0, 0, 18 )
 	TextBoxSlash:setRGB( 0.58, 0.58, 0.58 )
 	TextBoxSlash:setAlpha( 0.5 )
-	TextBoxSlash:setText( Engine[0xF9F1239CFD921FE]( 0x993C1A7DD3452BA ) )
+	TextBoxSlash:setText( Engine[0xF9F1239CFD921FE]( "mp/slash" ) )
 	TextBoxSlash:setTTF( "ttmussels_demibold" )
 	TextBoxSlash:setAlignment( Enum.LUIAlignment[0x830CFD395E6AA0A] )
 	TextBoxSlash:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

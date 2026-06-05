@@ -12,7 +12,7 @@ CoD.ui_icon_callingcards_fairytales_armgroup.new = function ( f1_arg0, f1_arg1, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local arm = LUI.UIImage.new( 0, 0, -312, 16, 0, 0, -31, 41 )
-	arm:setImage( RegisterImage( 0xEBCA1C38C8654B0 ) )
+	arm:setImage( RegisterImage( "uie_ui_icon_callingcards_fairytale_arm" ) )
 	self:addElement( arm )
 	self.arm = arm
 	

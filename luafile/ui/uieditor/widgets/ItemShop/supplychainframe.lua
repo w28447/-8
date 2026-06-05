@@ -153,58 +153,58 @@ CoD.SupplyChainFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x571F08AD84807E0] )
 		return f9_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ItemList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		if IsMouseOrKeyboard( f10_arg2 ) then
-			SetCurrentElementAsActive( self, f10_arg0, f10_arg2 )
-			CoD.BlackMarketUtility.AutoPlayGestureIfApplicable( f10_arg1, f10_arg0, f10_arg2 )
+	f1_arg0:AddButtonCallbackFunction( ItemList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) then
+			SetCurrentElementAsActive( self, element, controller )
+			CoD.BlackMarketUtility.AutoPlayGestureIfApplicable( menu, element, controller )
 			return true
 		elseif AlwaysFalse() then
-			SetControllerModelValue( f10_arg2, "LootStreamProgress.playAnimation", false )
-			OpenOverlay( self, "ReservesPromoImagePopup", f10_arg2 )
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+			OpenOverlay( self, "ReservesPromoImagePopup", controller )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		if IsMouseOrKeyboard( f11_arg2 ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 			return false
 		elseif AlwaysFalse() then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x871519113740169, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/details_caps", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( ItemList, f1_arg1, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( f12_arg0, f12_arg1, f12_arg2, f12_arg3 )
-		if IsDpadButton( f12_arg3 ) and CoD.GridAndListUtility.IsElementAtColumnIndex( f12_arg0, 1 ) and not CoD.BlackMarketUtility.IsTierItemInUpsellRow( f12_arg2, f12_arg0 ) and not IsMenuInState( f12_arg1, "Processing" ) then
-			SetFocusedTierModelValue( f12_arg2, "1", "decrement" )
-			CoD.PlayerRoleUtility.StopGesturePreview( f12_arg1, f12_arg2 )
+	f1_arg0:AddButtonCallbackFunction( ItemList, f1_arg1, Enum.LUIButton[0x57783F8DA4AAEF], nil, function ( element, menu, controller, model )
+		if IsDpadButton( model ) and CoD.GridAndListUtility.IsElementAtColumnIndex( element, 1 ) and not CoD.BlackMarketUtility.IsTierItemInUpsellRow( controller, element ) and not IsMenuInState( menu, "Processing" ) then
+			SetFocusedTierModelValue( controller, "1", "decrement" )
+			CoD.PlayerRoleUtility.StopGesturePreview( menu, controller )
 			PlaySoundAlias( "uin_trigger_slide" )
 			return true
 		else
 			
 		end
-	end, function ( f13_arg0, f13_arg1, f13_arg2 )
-		if IsDpadButton( nil ) and CoD.GridAndListUtility.IsElementAtColumnIndex( f13_arg0, 1 ) and not CoD.BlackMarketUtility.IsTierItemInUpsellRow( f13_arg2, f13_arg0 ) and not IsMenuInState( f13_arg1, "Processing" ) then
-			CoD.Menu.SetButtonLabel( f13_arg1, Enum.LUIButton[0x57783F8DA4AAEF], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if IsDpadButton( nil ) and CoD.GridAndListUtility.IsElementAtColumnIndex( element, 1 ) and not CoD.BlackMarketUtility.IsTierItemInUpsellRow( controller, element ) and not IsMenuInState( menu, "Processing" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x57783F8DA4AAEF], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( ItemList, f1_arg1, Enum.LUIButton[0x571F08AD84807E0], nil, function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
-		if IsDpadButton( f14_arg3 ) and CoD.GridAndListUtility.IsElementAtColumnIndex( f14_arg0, 5 ) and not IsMenuInState( f14_arg1, "Processing" ) then
-			SetFocusedTierModelValue( f14_arg2, "1", "increment" )
-			CoD.PlayerRoleUtility.StopGesturePreview( f14_arg1, f14_arg2 )
+	f1_arg0:AddButtonCallbackFunction( ItemList, f1_arg1, Enum.LUIButton[0x571F08AD84807E0], nil, function ( element, menu, controller, model )
+		if IsDpadButton( model ) and CoD.GridAndListUtility.IsElementAtColumnIndex( element, 5 ) and not IsMenuInState( menu, "Processing" ) then
+			SetFocusedTierModelValue( controller, "1", "increment" )
+			CoD.PlayerRoleUtility.StopGesturePreview( menu, controller )
 			PlaySoundAlias( "uin_trigger_slide" )
 			return true
 		else
 			
 		end
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		if IsDpadButton( nil ) and CoD.GridAndListUtility.IsElementAtColumnIndex( f15_arg0, 5 ) and not IsMenuInState( f15_arg1, "Processing" ) then
-			CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x571F08AD84807E0], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if IsDpadButton( nil ) and CoD.GridAndListUtility.IsElementAtColumnIndex( element, 5 ) and not IsMenuInState( menu, "Processing" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x571F08AD84807E0], "", nil, nil )
 			return false
 		else
 			return false
@@ -276,7 +276,7 @@ CoD.SupplyChainFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	self.PurchaseTiers = PurchaseTiers
 	
 	local RightPageOver = CoD.BumperButtonWithKeyMouse.new( f1_arg0, f1_arg1, 0.5, 0.5, 236.5, 303.5, 0, 0, 194, 239 )
-	RightPageOver.KeyMouseImage:setImage( RegisterImage( 0x49AC5C845C7E582 ) )
+	RightPageOver.KeyMouseImage:setImage( RegisterImage( "uie_bumperright" ) )
 	RightPageOver:subscribeToGlobalModel( f1_arg1, "Controller", "right_trigger_button_image", function ( model )
 		local f24_local0 = model:get()
 		if f24_local0 ~= nil then
@@ -293,12 +293,12 @@ CoD.SupplyChainFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f25_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( RightPageOver, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f26_arg0, f26_arg1, f26_arg2, f26_arg3 )
+	f1_arg0:AddButtonCallbackFunction( RightPageOver, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		PlaySoundAlias( "uin_trigger_slide" )
-		SetFocusedTierModelValue( f26_arg2, "5", "increment" )
+		SetFocusedTierModelValue( controller, "5", "increment" )
 		return true
-	end, function ( f27_arg0, f27_arg1, f27_arg2 )
-		CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( RightPageOver )
@@ -321,12 +321,12 @@ CoD.SupplyChainFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f29_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( RightPageOver2, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f30_arg0, f30_arg1, f30_arg2, f30_arg3 )
+	f1_arg0:AddButtonCallbackFunction( RightPageOver2, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		PlaySoundAlias( "uin_trigger_slide" )
-		SetFocusedTierModelValue( f30_arg2, "5", "decrement" )
+		SetFocusedTierModelValue( controller, "5", "decrement" )
 		return true
-	end, function ( f31_arg0, f31_arg1, f31_arg2 )
-		CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( RightPageOver2 )
@@ -410,12 +410,12 @@ CoD.SupplyChainFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f37_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PurchaseButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f38_arg0, f38_arg1, f38_arg2, f38_arg3 )
-		CoD.BlackMarketUtility.SetHighlightedPurchaseTierFromItemList( f38_arg2, self.ItemList )
-		CoD.BlackMarketUtility.PCOpenPurchaseTiersConfirmation( self, "PurchaseTiersConfirmation", f38_arg2, self.ItemList )
+	f1_arg0:AddButtonCallbackFunction( PurchaseButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		CoD.BlackMarketUtility.SetHighlightedPurchaseTierFromItemList( controller, self.ItemList )
+		CoD.BlackMarketUtility.PCOpenPurchaseTiersConfirmation( self, "PurchaseTiersConfirmation", controller, self.ItemList )
 		return true
-	end, function ( f39_arg0, f39_arg1, f39_arg2 )
-		CoD.Menu.SetButtonLabel( f39_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( PurchaseButton )
@@ -432,8 +432,8 @@ CoD.SupplyChainFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 			end
 		}
 	} )
-	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( 0x4031C820A02E7BA ) )
-	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( 0x4031C820A02E7BA ) )
+	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( "menu/transaction_history" ) )
+	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( "menu/transaction_history" ) )
 	TransactionDeepLinkButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f41_local0 = nil
 		if element.gainFocus then
@@ -444,31 +444,31 @@ CoD.SupplyChainFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f41_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f42_arg0, f42_arg1, f42_arg2, f42_arg3 )
+	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, model )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( f42_arg2 )
+			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( controller )
 			return true
 		else
 			
 		end
-	end, function ( f43_arg0, f43_arg1, f43_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.Menu.SetButtonLabel( f43_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f44_arg0, f44_arg1, f44_arg2, f44_arg3 )
+	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( f44_arg2 )
+			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( controller )
 			return true
 		else
 			
 		end
-	end, function ( f45_arg0, f45_arg1, f45_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
 		else
 			return false
@@ -504,16 +504,16 @@ CoD.SupplyChainFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f47_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( SpecialDeal, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f48_arg0, f48_arg1, f48_arg2, f48_arg3 )
-		if IsElementInState( f48_arg0, "HasAction" ) then
-			CoD.BlackMarketUtility.SpecialDealAction( self, f48_arg0, f48_arg2, f48_arg1 )
+	f1_arg0:AddButtonCallbackFunction( SpecialDeal, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if IsElementInState( element, "HasAction" ) then
+			CoD.BlackMarketUtility.SpecialDealAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f49_arg0, f49_arg1, f49_arg2 )
-		if IsElementInState( f49_arg0, "HasAction" ) then
-			CoD.Menu.SetButtonLabel( f49_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if IsElementInState( element, "HasAction" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
@@ -563,20 +563,20 @@ CoD.SupplyChainFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	f1_local19( f1_local18, f1_local20.LastInput, function ( f56_arg0, f56_arg1 )
 		CoD.Menu.UpdateButtonShownState( f56_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0xA86619565BE54DB] )
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_remove", function ( f57_arg0, f57_arg1, f57_arg2, f57_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( self.ItemList, f57_arg2, "movieName" ) and IsMouseOrKeyboard( f57_arg2 ) then
-			SetControllerModelValue( f57_arg2, "LootStreamProgress.playAnimation", false )
-			CoD.VideoStreamingUtility.SetupVoDMovie( f57_arg2, self.ItemList, "" )
-			DelayOpenOverlay( f57_arg1, "VoDViewer", f57_arg2, {
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_remove", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( self.ItemList, controller, "movieName" ) and IsMouseOrKeyboard( controller ) then
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+			CoD.VideoStreamingUtility.SetupVoDMovie( controller, self.ItemList, "" )
+			DelayOpenOverlay( menu, "VoDViewer", controller, {
 				fullscreen = true
 			} )
 			return true
 		else
 			
 		end
-	end, function ( f58_arg0, f58_arg1, f58_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( self.ItemList, f58_arg2, "movieName" ) and IsMouseOrKeyboard( f58_arg2 ) then
-			CoD.Menu.SetButtonLabel( f58_arg1, Enum.LUIButton[0xA86619565BE54DB], 0x0, nil, "ui_remove" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( self.ItemList, controller, "movieName" ) and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xA86619565BE54DB], "", nil, "ui_remove" )
 			return false
 		else
 			return false

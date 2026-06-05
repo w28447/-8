@@ -51,7 +51,7 @@ CoD.PlayerCard_KilledBy.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.LeftPanel = LeftPanel
 	
 	local Top3PlayerScoreBlurBox0 = CoD.Top3PlayerScoreBlurBox.new( f1_arg0, f1_arg1, 0, 0, 0, 136, 0, 0, 3, 85 )
-	Top3PlayerScoreBlurBox0:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x5073BBE3838C63E ) )
+	Top3PlayerScoreBlurBox0:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_scene_blur_pass_2_highquality" ) )
 	Top3PlayerScoreBlurBox0:setShaderVector( 0, 10, 10, 0, 0 )
 	self:addElement( Top3PlayerScoreBlurBox0 )
 	self.Top3PlayerScoreBlurBox0 = Top3PlayerScoreBlurBox0
@@ -90,8 +90,8 @@ CoD.PlayerCard_KilledBy.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local HeroBacking = LUI.UIImage.new( 0, 0, -3, 93, 0, 0, -12, 96 )
 	HeroBacking:setAlpha( 0 )
-	HeroBacking:setImage( RegisterImage( 0x5FA309EA9D3CE14 ) )
-	HeroBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0xE8F55203998700A ) )
+	HeroBacking:setImage( RegisterImage( "uie_img_t7_hud_widget_playercard_playerbacking" ) )
+	HeroBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_feather_blend" ) )
 	self:addElement( HeroBacking )
 	self.HeroBacking = HeroBacking
 	
@@ -100,27 +100,27 @@ CoD.PlayerCard_KilledBy.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.PlayerEmblem = PlayerEmblem
 	
 	local TopLeftPip = LUI.UIImage.new( 0, 0, -29, -5, 0, 0, -4, 8 )
-	TopLeftPip:setImage( RegisterImage( 0x6797C01A9EED183 ) )
+	TopLeftPip:setImage( RegisterImage( "uie_t7_menu_cac_pixelblurred" ) )
 	TopLeftPip:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopLeftPip )
 	self.TopLeftPip = TopLeftPip
 	
 	local BotLeftPip = LUI.UIImage.new( 0, 0, -29, -5, 0, 0, 80, 92 )
-	BotLeftPip:setImage( RegisterImage( 0x6797C01A9EED183 ) )
+	BotLeftPip:setImage( RegisterImage( "uie_t7_menu_cac_pixelblurred" ) )
 	BotLeftPip:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BotLeftPip )
 	self.BotLeftPip = BotLeftPip
 	
 	local TopRightPip = LUI.UIImage.new( 0, 0, 459, 483, 0, 0, -3, 9 )
 	TopRightPip:setZRot( 180 )
-	TopRightPip:setImage( RegisterImage( 0x6797C01A9EED183 ) )
+	TopRightPip:setImage( RegisterImage( "uie_t7_menu_cac_pixelblurred" ) )
 	TopRightPip:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( TopRightPip )
 	self.TopRightPip = TopRightPip
 	
 	local BotRightPip = LUI.UIImage.new( 0, 0, 459, 483, 0, 0, 80, 92 )
 	BotRightPip:setZRot( 180 )
-	BotRightPip:setImage( RegisterImage( 0x6797C01A9EED183 ) )
+	BotRightPip:setImage( RegisterImage( "uie_t7_menu_cac_pixelblurred" ) )
 	BotRightPip:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( BotRightPip )
 	self.BotRightPip = BotRightPip

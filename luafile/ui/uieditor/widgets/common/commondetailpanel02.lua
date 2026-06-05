@@ -46,7 +46,7 @@ CoD.CommonDetailPanel02.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local BraketBottom = LUI.UIImage.new( 0, 1, -3.5, 2.5, 1, 1, -28, 1 )
 	BraketBottom:setZRot( 180 )
-	BraketBottom:setImage( RegisterImage( 0x81D4EAAB75120FF ) )
+	BraketBottom:setImage( RegisterImage( "uie_ui_menu_specialist_hub_info_bracket" ) )
 	BraketBottom:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BraketBottom:setShaderVector( 0, 0, 0, 0, 0 )
 	BraketBottom:setupNineSliceShader( 350, 20 )
@@ -54,7 +54,7 @@ CoD.CommonDetailPanel02.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	self.BraketBottom = BraketBottom
 	
 	local BraketTop = LUI.UIImage.new( 0, 1, -2.5, 3.5, 0, 0, -1, 28 )
-	BraketTop:setImage( RegisterImage( 0x81D4EAAB75120FF ) )
+	BraketTop:setImage( RegisterImage( "uie_ui_menu_specialist_hub_info_bracket" ) )
 	BraketTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	BraketTop:setShaderVector( 0, 0, 0, 0, 0 )
 	BraketTop:setupNineSliceShader( 350, 20 )

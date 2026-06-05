@@ -22,14 +22,14 @@ CoD.AmmoWidget_PowerWeaponDrain.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.ReadyGlow1b = ReadyGlow1b
 	
 	local Empty = LUI.UIImage.new( 0, 0, 20, 164, 0, 0, 29, 61 )
-	Empty:setImage( RegisterImage( 0x168181C6D890BDD ) )
+	Empty:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_special_box" ) )
 	Empty:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( Empty )
 	self.Empty = Empty
 	
 	local Fill2 = LUI.UIImage.new( 0.21, 0.21, -14.5, 129.5, 0.56, 0.56, -5, 27 )
 	Fill2:setAlpha( 0.4 )
-	Fill2:setImage( RegisterImage( 0x4DEA7FE15F6129D ) )
+	Fill2:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_special_meter" ) )
 	Fill2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	Fill2:setShaderVector( 0, 0, 1, 0, 0 )
 	Fill2:setShaderVector( 1, 0, 0, 0, 0 )
@@ -40,7 +40,7 @@ CoD.AmmoWidget_PowerWeaponDrain.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.Fill2 = Fill2
 	
 	local Fill = LUI.UIImage.new( 0.21, 0.21, -16.5, 127.5, 0.56, 0.56, -7, 25 )
-	Fill:setImage( RegisterImage( 0x4DEA7FE15F6129D ) )
+	Fill:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_special_meter" ) )
 	Fill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	Fill:setShaderVector( 0, 0, 1, 0, 0 )
 	Fill:setShaderVector( 1, 0, 0, 0, 0 )
@@ -52,7 +52,7 @@ CoD.AmmoWidget_PowerWeaponDrain.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local Fill3 = LUI.UIImage.new( 0.21, 0.21, -16.5, 127.5, 0.56, 0.56, -7, 25 )
 	Fill3:setAlpha( 0.5 )
-	Fill3:setImage( RegisterImage( 0x4DEA7FE15F6129D ) )
+	Fill3:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_special_meter" ) )
 	Fill3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	Fill3:setShaderVector( 0, 0, 1, 0, 0 )
 	Fill3:setShaderVector( 1, 0, 0, 0, 0 )

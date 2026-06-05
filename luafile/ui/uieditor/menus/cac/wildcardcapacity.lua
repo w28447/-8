@@ -34,7 +34,7 @@ LUI.createMenu.WildcardCapacity = function ( f1_arg0, f1_arg1 )
 	
 	local Description = LUI.UIText.new( 0, 0, 705, 1724, 0, 0, 365, 387 )
 	Description:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	Description:setText( Engine[0xF9F1239CFD921FE]( 0xA83310B9F003575 ) )
+	Description:setText( Engine[0xF9F1239CFD921FE]( "menu/too_many_wildcards_desc" ) )
 	Description:setTTF( "dinnext_regular" )
 	Description:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
 	Description:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -64,13 +64,13 @@ LUI.createMenu.WildcardCapacity = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( selectionList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		RemoveOverflowWildcardFromClass( self, f4_arg0, f4_arg1, f4_arg2, "WildcardSelect" )
-		CoD.CACUtility.EquippedItemsChanged( f4_arg1, f4_arg2 )
+	f1_local1:AddButtonCallbackFunction( selectionList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		RemoveOverflowWildcardFromClass( self, element, menu, controller, "WildcardSelect" )
+		CoD.CACUtility.EquippedItemsChanged( menu, controller )
 		PlaySoundAlias( "cac_overload_select" )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x679ACA6FFC6C8F3, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/remove", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( selectionList )
@@ -79,7 +79,7 @@ LUI.createMenu.WildcardCapacity = function ( f1_arg0, f1_arg1 )
 	local featureOverlayButtonMouseOnly = nil
 	
 	featureOverlayButtonMouseOnly = CoD.featureOverlay_Button_MouseOnly.new( f1_local1, f1_arg0, 0.5, 0.5, -255, -129, 0, 0, 675, 732 )
-	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0x78D439E1B360368 ) )
+	featureOverlayButtonMouseOnly.featureOverlayButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/back_caps" ) )
 	featureOverlayButtonMouseOnly:registerEventHandler( "gain_focus", function ( element, event )
 		local f6_local0 = nil
 		if element.gainFocus then
@@ -90,12 +90,12 @@ LUI.createMenu.WildcardCapacity = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f6_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
+	f1_local1:AddButtonCallbackFunction( featureOverlayButtonMouseOnly, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		PlaySoundSetSound( self, "menu_no_selection" )
-		GoBack( self, f7_arg2 )
+		GoBack( self, controller )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 		return false
 	end, false )
 	self:addElement( featureOverlayButtonMouseOnly )
@@ -107,12 +107,12 @@ LUI.createMenu.WildcardCapacity = function ( f1_arg0, f1_arg1 )
 			SelectedImage:setImage( RegisterImage( f9_local0 ) )
 		end
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		GoBack( self, f10_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		PlaySoundSetSound( self, "menu_no_selection" )
 		return true
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

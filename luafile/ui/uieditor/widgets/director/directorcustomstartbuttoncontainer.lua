@@ -19,7 +19,7 @@ CoD.DirectorCustomStartButtonContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 	circle:setAlpha( 0 )
 	circle:setZRot( 180 )
 	circle:setScale( 1.05, 1.05 )
-	circle:setMaterial( LUI.UIImage.GetCachedMaterial( 0x15B163CA03FCE8B ) )
+	circle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_elliptical_ring_normal" ) )
 	circle:setShaderVector( 0, 4.66, 0, 0, 0 )
 	circle:setShaderVector( 1, 80, 80, 0, 0 )
 	circle:setShaderVector( 2, 0, 0, 0, 0 )
@@ -59,7 +59,7 @@ CoD.DirectorCustomStartButtonContainer.new = function ( f1_arg0, f1_arg1, f1_arg
 	local glow = LUI.UIImage.new( -0.01, 1.02, -3.5, -3.5, -0.5, 0.98, -41, -41 )
 	glow:setAlpha( 0 )
 	glow:setZRot( 180 )
-	glow:setImage( RegisterImage( 0xAD405802E3EEE94 ) )
+	glow:setImage( RegisterImage( "uie_icon_frontend_navigation_glowmed" ) )
 	self:addElement( glow )
 	self.glow = glow
 	

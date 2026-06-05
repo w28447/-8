@@ -35,7 +35,7 @@ CoD.AARMissionReward_PlayerRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local RankGridBg = LUI.UIImage.new( 0, 0, 222, 478, 0, 0, 3, 259 )
 	RankGridBg:setAlpha( 0.03 )
-	RankGridBg:setImage( RegisterImage( 0x6975DA716B3A3FD ) )
+	RankGridBg:setImage( RegisterImage( "uie_ui_menu_aar_info_grid_sub" ) )
 	RankGridBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	RankGridBg:setShaderVector( 0, 0, 0, 0, 0 )
 	RankGridBg:setupNineSliceShader( 292, 236 )
@@ -53,7 +53,7 @@ CoD.AARMissionReward_PlayerRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local infoBracketTop = LUI.UIImage.new( 0, 0, 222, 478, 0, 0, 0, 32 )
 	infoBracketTop:setAlpha( 0.6 )
-	infoBracketTop:setImage( RegisterImage( 0xCAD52FFFB7C32C1 ) )
+	infoBracketTop:setImage( RegisterImage( "uie_ui_menu_aar_common_bracket" ) )
 	infoBracketTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_add" ) )
 	infoBracketTop:setShaderVector( 0, 0, 0, 0, 0 )
 	infoBracketTop:setupNineSliceShader( 10, 16 )
@@ -73,7 +73,7 @@ CoD.AARMissionReward_PlayerRank.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local Flare = LUI.UIImage.new( 0.5, 0.5, -368, 332, 0.5, 0.5, -87.5, 92.5 )
 	Flare:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	Flare:setAlpha( 0 )
-	Flare:setImage( RegisterImage( 0xC4CCD81B90B0241 ) )
+	Flare:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
 	Flare:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Flare:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Flare )

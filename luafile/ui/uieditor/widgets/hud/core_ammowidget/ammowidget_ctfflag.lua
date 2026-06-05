@@ -13,20 +13,20 @@ CoD.AmmoWidget_ctfflag.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local backplate = LUI.UIImage.new( 0, 0, 15, 107, 0, 0, 20.5, 84.5 )
-	backplate:setImage( RegisterImage( 0xDD08B725AA00DD6 ) )
+	backplate:setImage( RegisterImage( "uie_ui_hud_core_carryitem_backplate" ) )
 	self:addElement( backplate )
 	self.backplate = backplate
 	
 	local glow = LUI.UIImage.new( 0, 0, 15, 107, 0, 0, 20.5, 83.5 )
 	glow:setRGB( 1, 0.17, 0 )
 	glow:setAlpha( 0.25 )
-	glow:setImage( RegisterImage( 0xE0F9061AF34A631 ) )
+	glow:setImage( RegisterImage( "uie_ui_hud_core_carryitem_ctfglow" ) )
 	glow:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( glow )
 	self.glow = glow
 	
 	local SndItem3 = LUI.UIImage.new( 0, 0, 3, 119, 0, 0, 6.5, 98.5 )
-	SndItem3:setImage( RegisterImage( 0x53C64277C5C7A9F ) )
+	SndItem3:setImage( RegisterImage( "uie_ui_hud_core_carryitem_ctf_flag" ) )
 	self:addElement( SndItem3 )
 	self.SndItem3 = SndItem3
 	

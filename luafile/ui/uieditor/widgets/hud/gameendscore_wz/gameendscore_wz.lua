@@ -370,16 +370,16 @@ CoD.GameEndScore_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f23_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( DirectorQuitButtonContainer, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f24_arg0, f24_arg1, f24_arg2, f24_arg3 )
+	f1_arg0:AddButtonCallbackFunction( DirectorQuitButtonContainer, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
 		if IsPC() then
-			OpenPCQuit( self, f24_arg1, self, f24_arg2 )
+			OpenPCQuit( self, menu, self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f25_arg0, f25_arg1, f25_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "MOUSE1" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "MOUSE1" )
 			return false
 		else
 			return false
@@ -407,7 +407,7 @@ CoD.GameEndScore_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local ChallengeCoinFlare2 = LUI.UIImage.new( 0.5, 0.5, 515, 965, 0.5, 0.5, -626, -176 )
 	ChallengeCoinFlare2:setRGB( ColorSet.ParagonRank.r, ColorSet.ParagonRank.g, ColorSet.ParagonRank.b )
 	ChallengeCoinFlare2:setAlpha( 0 )
-	ChallengeCoinFlare2:setImage( RegisterImage( 0xC4CCD81B90B0241 ) )
+	ChallengeCoinFlare2:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
 	ChallengeCoinFlare2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ChallengeCoinFlare2:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ChallengeCoinFlare2 )
@@ -416,7 +416,7 @@ CoD.GameEndScore_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local ChallengeCoinFlare3 = LUI.UIImage.new( 0.5, 0.5, 515, 965, 0.5, 0.5, -626, -176 )
 	ChallengeCoinFlare3:setRGB( 0.96, 0.31, 0.06 )
 	ChallengeCoinFlare3:setAlpha( 0 )
-	ChallengeCoinFlare3:setImage( RegisterImage( 0xC4CCD81B90B0241 ) )
+	ChallengeCoinFlare3:setImage( RegisterImage( "uie_ui_menu_aar_levelup_flare" ) )
 	ChallengeCoinFlare3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	ChallengeCoinFlare3:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( ChallengeCoinFlare3 )
@@ -480,8 +480,8 @@ CoD.GameEndScore_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		} )
 	end )
 	KillerIdentity:setAlpha( 0 )
-	KillerIdentity.TextBoxShadow:setText( LocalizeToUpperString( 0x384588C2F4949A5 ) )
-	KillerIdentity.TextBox:setText( LocalizeToUpperString( 0x384588C2F4949A5 ) )
+	KillerIdentity.TextBoxShadow:setText( LocalizeToUpperString( "cgame/killedby" ) )
+	KillerIdentity.TextBox:setText( LocalizeToUpperString( "cgame/killedby" ) )
 	KillerIdentity:subscribeToGlobalModel( f1_arg1, "GameScore", nil, function ( model )
 		KillerIdentity:setModel( model, f1_arg1 )
 	end )
@@ -756,8 +756,8 @@ CoD.GameEndScore_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		} )
 	end )
 	WeaponIdentity:setAlpha( 0 )
-	WeaponIdentity.HeaderTextBoxShadow:setText( LocalizeToUpperString( 0x3406303D9338A94 ) )
-	WeaponIdentity.HeaderTextBox:setText( LocalizeToUpperString( 0x3406303D9338A94 ) )
+	WeaponIdentity.HeaderTextBoxShadow:setText( LocalizeToUpperString( "ui/with" ) )
+	WeaponIdentity.HeaderTextBox:setText( LocalizeToUpperString( "ui/with" ) )
 	WeaponIdentity:subscribeToGlobalModel( f1_arg1, "GameScore", nil, function ( model )
 		WeaponIdentity:setModel( model, f1_arg1 )
 	end )
@@ -821,7 +821,7 @@ CoD.GameEndScore_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	DirectorStageIndicator = CoD.WarzoneDirectorStageIndicator.new( f1_arg0, f1_arg1, 0, 0, 76, 605, 1, 1, -188, -118 )
 	DirectorStageIndicator:setAlpha( 0 )
-	DirectorStageIndicator.StageTitle:setText( LocalizeToUpperString( 0x968D3B043BAE7EA ) )
+	DirectorStageIndicator.StageTitle:setText( LocalizeToUpperString( "ui/redeploying" ) )
 	self:addElement( DirectorStageIndicator )
 	self.DirectorStageIndicator = DirectorStageIndicator
 	
@@ -1131,114 +1131,114 @@ CoD.GameEndScore_WZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	f1_local32( f1_local31, f1_local33.LastInput, function ( f99_arg0, f99_arg1 )
 		CoD.Menu.UpdateButtonShownState( f99_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f100_arg0, f100_arg1, f100_arg2, f100_arg3 )
-		if CoD.GameEndScoreUtility.CanShowWarzoneSpectate( f100_arg2 ) and not IsPC() and not IsDemoPlaying() and not IsVisibilityBitSet( f100_arg2, Enum.UIVisibilityBit[0x8A5E996D4528DA2] ) and not IsVisibilityBitSet( f100_arg2, Enum.UIVisibilityBit[0x198075B069840DC] ) then
-			SetControllerModelValue( f100_arg2, "huditems.warzone.aarVisible", false )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if CoD.GameEndScoreUtility.CanShowWarzoneSpectate( controller ) and not IsPC() and not IsDemoPlaying() and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x8A5E996D4528DA2] ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x198075B069840DC] ) then
+			SetControllerModelValue( controller, "huditems.warzone.aarVisible", false )
 			HideWidget( self.WZAAR )
-			SendMenuResponse( self, "GameEndScore", "skip_deathcam", f100_arg2 )
-			CoD.GameEndScoreUtility.ClearTransition( f100_arg2 )
-			CoD.LobbyUtility.SetPlayerLocation( f100_arg2, Enum[0xC0AB9543C5C440B][0x9B478094C85DBBB] )
+			SendMenuResponse( self, "GameEndScore", "skip_deathcam", controller )
+			CoD.GameEndScoreUtility.ClearTransition( controller )
+			CoD.LobbyUtility.SetPlayerLocation( controller, Enum[0xC0AB9543C5C440B][0x9B478094C85DBBB] )
 			HideWidget( self.CrosshairOccluder )
 			return true
-		elseif not IsPC() and CoD.ModelUtility.IsModelValueTrue( f100_arg2, "hudItems.warzone.aarVisible" ) and IsOnlineGame() and IsBooleanDvarSet( "ui_showWZAAR" ) and not CoD.HUDUtility.IsWZCustomGame( f100_arg2 ) and not CoD.GameEndScoreUtility.CanShowWarzoneSpectate( f100_arg2 ) then
-			SetControllerModelValue( f100_arg2, "hudItems.warzone.aarVisible", false )
-			BlockGameFromKeyEvent( f100_arg2 )
+		elseif not IsPC() and CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.warzone.aarVisible" ) and IsOnlineGame() and IsBooleanDvarSet( "ui_showWZAAR" ) and not CoD.HUDUtility.IsWZCustomGame( controller ) and not CoD.GameEndScoreUtility.CanShowWarzoneSpectate( controller ) then
+			SetControllerModelValue( controller, "hudItems.warzone.aarVisible", false )
+			BlockGameFromKeyEvent( controller )
 			HideWidget( self.WZAAR )
 			return true
 		else
 			
 		end
-	end, function ( f101_arg0, f101_arg1, f101_arg2 )
-		if CoD.GameEndScoreUtility.CanShowWarzoneSpectate( f101_arg2 ) and not IsPC() and not IsDemoPlaying() and not IsVisibilityBitSet( f101_arg2, Enum.UIVisibilityBit[0x8A5E996D4528DA2] ) and not IsVisibilityBitSet( f101_arg2, Enum.UIVisibilityBit[0x198075B069840DC] ) then
-			CoD.Menu.SetButtonLabel( f101_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xF8E8360C903175B, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.GameEndScoreUtility.CanShowWarzoneSpectate( controller ) and not IsPC() and not IsDemoPlaying() and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x8A5E996D4528DA2] ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x198075B069840DC] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "ui/spectate", nil, nil )
 			return true
-		elseif not IsPC() and CoD.ModelUtility.IsModelValueTrue( f101_arg2, "hudItems.warzone.aarVisible" ) and IsOnlineGame() and IsBooleanDvarSet( "ui_showWZAAR" ) and not CoD.HUDUtility.IsWZCustomGame( f101_arg2 ) and not CoD.GameEndScoreUtility.CanShowWarzoneSpectate( f101_arg2 ) then
-			CoD.Menu.SetButtonLabel( f101_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xB914F387B0A33A9, nil, nil )
+		elseif not IsPC() and CoD.ModelUtility.IsModelValueTrue( controller, "hudItems.warzone.aarVisible" ) and IsOnlineGame() and IsBooleanDvarSet( "ui_showWZAAR" ) and not CoD.HUDUtility.IsWZCustomGame( controller ) and not CoD.GameEndScoreUtility.CanShowWarzoneSpectate( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/dismiss_menu", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f102_arg0, f102_arg1, f102_arg2, f102_arg3 )
-		if IsLobbyPrivateHost() and CoD.LobbyUtility.AllMembersCanRedeploy() and not CoD.DirectorUtility.IsMatchmakingInProgress( f102_arg2 ) and IsBooleanDvarSet( "redeploy_enabled" ) and not CoD.HUDUtility.IsWZCustomGame( f102_arg2 ) then
-			CoD.GameEndScoreUtility.Redeploy( f102_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( element, menu, controller, model )
+		if IsLobbyPrivateHost() and CoD.LobbyUtility.AllMembersCanRedeploy() and not CoD.DirectorUtility.IsMatchmakingInProgress( controller ) and IsBooleanDvarSet( "redeploy_enabled" ) and not CoD.HUDUtility.IsWZCustomGame( controller ) then
+			CoD.GameEndScoreUtility.Redeploy( controller )
 			return true
 		else
 			
 		end
-	end, function ( f103_arg0, f103_arg1, f103_arg2 )
-		if IsLobbyPrivateHost() and CoD.LobbyUtility.AllMembersCanRedeploy() and not CoD.DirectorUtility.IsMatchmakingInProgress( f103_arg2 ) and IsBooleanDvarSet( "redeploy_enabled" ) and not CoD.HUDUtility.IsWZCustomGame( f103_arg2 ) then
-			CoD.Menu.SetButtonLabel( f103_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x4BA12BF6BDEAE57, Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+	end, function ( element, menu, controller )
+		if IsLobbyPrivateHost() and CoD.LobbyUtility.AllMembersCanRedeploy() and not CoD.DirectorUtility.IsMatchmakingInProgress( controller ) and IsBooleanDvarSet( "redeploy_enabled" ) and not CoD.HUDUtility.IsWZCustomGame( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "wz/redeploy", Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f104_arg0, f104_arg1, f104_arg2, f104_arg3 )
-		if CoD.GameEndScoreUtility.CanShowWarzoneKillcam( f104_arg2 ) and not IsPC() and not IsBooleanDvarSet( "ui_killcamButtonAlt" ) and not IsVisibilityBitSet( f104_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not IsDemoPlaying() and not IsInDefaultState( f104_arg0 ) and CoD.GameEndScoreUtility.HasViewedInGameReport( f104_arg2 ) then
-			SendMenuResponse( self, "GameEndScore", "play_deathcam", f104_arg2 )
-			SetControllerModelValue( f104_arg2, "gameScore.hasPlayedDeathCam", true )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.GameEndScoreUtility.CanShowWarzoneKillcam( controller ) and not IsPC() and not IsBooleanDvarSet( "ui_killcamButtonAlt" ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not IsDemoPlaying() and not IsInDefaultState( element ) and CoD.GameEndScoreUtility.HasViewedInGameReport( controller ) then
+			SendMenuResponse( self, "GameEndScore", "play_deathcam", controller )
+			SetControllerModelValue( controller, "gameScore.hasPlayedDeathCam", true )
 			PlaySoundAlias( "uin_killcam_start" )
 			CoD.BaseUtility.PlayMusic( "death" )
 			return true
 		else
 			
 		end
-	end, function ( f105_arg0, f105_arg1, f105_arg2 )
-		if CoD.GameEndScoreUtility.CanShowWarzoneKillcam( f105_arg2 ) and not IsPC() and not IsBooleanDvarSet( "ui_killcamButtonAlt" ) and not IsVisibilityBitSet( f105_arg2, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not IsDemoPlaying() and not IsInDefaultState( f105_arg0 ) and CoD.GameEndScoreUtility.HasViewedInGameReport( f105_arg2 ) then
-			CoD.Menu.SetButtonLabel( f105_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.GameEndScoreUtility.CanShowWarzoneKillcam( controller ) and not IsPC() and not IsBooleanDvarSet( "ui_killcamButtonAlt" ) and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0xA69E34E231CE8B6] ) and not IsDemoPlaying() and not IsInDefaultState( element ) and CoD.GameEndScoreUtility.HasViewedInGameReport( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( f106_arg0, f106_arg1, f106_arg2, f106_arg3 )
-		if not IsPC() and not IsDemoPlaying() and CoD.BaseUtility.IsButtonHoldFinished( f106_arg3 ) then
-			QuitGame_Raw( self, f106_arg0, f106_arg2, "", f106_arg1 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "ESCAPE", function ( element, menu, controller, model )
+		if not IsPC() and not IsDemoPlaying() and CoD.BaseUtility.IsButtonHoldFinished( model ) then
+			QuitGame_Raw( self, element, controller, "", menu )
 			return true
-		elseif IsPC() and not IsVisibilityBitSet( f106_arg2, Enum.UIVisibilityBit[0x6FFF566DCC09BBD] ) and not IsDemoPlaying() and not CoD.BaseUtility.IsButtonHoldFinished( f106_arg3 ) then
-			QuitPCGame_MP( self, f106_arg2, true )
-			BlockGameFromKeyEvent( f106_arg2 )
+		elseif IsPC() and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x6FFF566DCC09BBD] ) and not IsDemoPlaying() and not CoD.BaseUtility.IsButtonHoldFinished( model ) then
+			QuitPCGame_MP( self, controller, true )
+			BlockGameFromKeyEvent( controller )
 			return true
-		elseif IsPC() and not CoD.GameEndScoreUtility.IsGameScoreCurrentState( f106_arg2, "" ) and not IsDemoPlaying() and not CoD.BaseUtility.IsButtonHoldFinished( f106_arg3 ) then
-			QuitPCGame_MP( self, f106_arg2, true )
-			BlockGameFromKeyEvent( f106_arg2 )
+		elseif IsPC() and not CoD.GameEndScoreUtility.IsGameScoreCurrentState( controller, "" ) and not IsDemoPlaying() and not CoD.BaseUtility.IsButtonHoldFinished( model ) then
+			QuitPCGame_MP( self, controller, true )
+			BlockGameFromKeyEvent( controller )
 			return true
 		else
 			
 		end
-	end, function ( f107_arg0, f107_arg1, f107_arg2 )
+	end, function ( element, menu, controller )
 		if not IsPC() and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f107_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x8E2D4EADF54AA3, Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 1500 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ESCAPE" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "ui/leave", Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 1500 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ESCAPE" )
 			return true
-		elseif IsPC() and not IsVisibilityBitSet( f107_arg2, Enum.UIVisibilityBit[0x6FFF566DCC09BBD] ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f107_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x0, nil, "ESCAPE" )
+		elseif IsPC() and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x6FFF566DCC09BBD] ) and not IsDemoPlaying() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "", nil, "ESCAPE" )
 			return false
-		elseif IsPC() and not CoD.GameEndScoreUtility.IsGameScoreCurrentState( f107_arg2, "" ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f107_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x0, nil, "ESCAPE" )
+		elseif IsPC() and not CoD.GameEndScoreUtility.IsGameScoreCurrentState( controller, "" ) and not IsDemoPlaying() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "", nil, "ESCAPE" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_contextual_2", function ( f108_arg0, f108_arg1, f108_arg2, f108_arg3 )
-		if IsPC() and not IsVisibilityBitSet( f108_arg2, Enum.UIVisibilityBit[0x6FFF566DCC09BBD] ) and not IsDemoPlaying() and IsMouseOrKeyboard( f108_arg2 ) then
-			QuitPCGame_MP( self, f108_arg2, true )
-			BlockGameFromKeyEvent( f108_arg2 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_contextual_2", function ( element, menu, controller, model )
+		if IsPC() and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x6FFF566DCC09BBD] ) and not IsDemoPlaying() and IsMouseOrKeyboard( controller ) then
+			QuitPCGame_MP( self, controller, true )
+			BlockGameFromKeyEvent( controller )
 			return true
-		elseif IsPC() and not CoD.GameEndScoreUtility.IsGameScoreCurrentState( f108_arg2, "" ) and not IsDemoPlaying() then
-			QuitPCGame_MP( self, f108_arg2, true )
-			BlockGameFromKeyEvent( f108_arg2 )
+		elseif IsPC() and not CoD.GameEndScoreUtility.IsGameScoreCurrentState( controller, "" ) and not IsDemoPlaying() then
+			QuitPCGame_MP( self, controller, true )
+			BlockGameFromKeyEvent( controller )
 			return true
 		else
 			
 		end
-	end, function ( f109_arg0, f109_arg1, f109_arg2 )
-		if IsPC() and not IsVisibilityBitSet( f109_arg2, Enum.UIVisibilityBit[0x6FFF566DCC09BBD] ) and not IsDemoPlaying() and IsMouseOrKeyboard( f109_arg2 ) then
-			CoD.Menu.SetButtonLabel( f109_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		if IsPC() and not IsVisibilityBitSet( controller, Enum.UIVisibilityBit[0x6FFF566DCC09BBD] ) and not IsDemoPlaying() and IsMouseOrKeyboard( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_contextual_2" )
 			return false
-		elseif IsPC() and not CoD.GameEndScoreUtility.IsGameScoreCurrentState( f109_arg2, "" ) and not IsDemoPlaying() then
-			CoD.Menu.SetButtonLabel( f109_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_contextual_2" )
+		elseif IsPC() and not CoD.GameEndScoreUtility.IsGameScoreCurrentState( controller, "" ) and not IsDemoPlaying() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_contextual_2" )
 			return false
 		else
 			return false

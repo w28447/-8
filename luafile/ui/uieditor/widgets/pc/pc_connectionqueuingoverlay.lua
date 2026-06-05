@@ -46,14 +46,14 @@ CoD.PC_ConnectionQueuingOverlay.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local BottomBar = LUI.UIImage.new( 0, 1, 0, 0, 0.95, 0.95, -8, 0 )
 	BottomBar:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
-	BottomBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	BottomBar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	BottomBar:setShaderVector( 0, 2, 1, 0, 0 )
 	BottomBar:setShaderVector( 1, 0, 0, 0, 0 )
 	self:addElement( BottomBar )
 	self.BottomBar = BottomBar
 	
 	local Header = LUI.UIText.new( 0.5, 0.5, -324.5, 324.5, 0.2, 0.2, 0, 30 )
-	Header:setText( Engine[0xF9F1239CFD921FE]( 0xC51866DCC22F69A ) )
+	Header:setText( Engine[0xF9F1239CFD921FE]( "menu/login_queue_default" ) )
 	Header:setTTF( "ttmussels_demibold" )
 	Header:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	Header:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

@@ -13,7 +13,7 @@ CoD.BumperButtonWithKeyMouseNoFocus.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	
 	KeyMouseImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	KeyMouseImage:setScale( 0.5, 0.5 )
-	KeyMouseImage:setImage( RegisterImage( 0x68630CE404D04A1 ) )
+	KeyMouseImage:setImage( RegisterImage( "uie_bumperleft" ) )
 	self:addElement( KeyMouseImage )
 	self.KeyMouseImage = KeyMouseImage
 	

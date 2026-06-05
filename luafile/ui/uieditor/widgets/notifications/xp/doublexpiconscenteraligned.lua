@@ -1,4 +1,4 @@
-require( "x64:683120446682173" )
+require( "ui/uieditor/widgets/notifications/notificationqueuewidgets/notificationrewardqueuewidgets/notification2xpblackmarketreward" )
 require( "ui/uieditor/widgets/notifications/notificationqueuewidgets/notificationrewardqueuewidgets/notification2xpweaponreward" )
 require( "ui/uieditor/widgets/notifications/xp/doublexppromotionalicon" )
 

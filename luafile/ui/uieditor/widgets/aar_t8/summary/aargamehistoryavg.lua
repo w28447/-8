@@ -9,13 +9,13 @@ CoD.AARGameHistoryAvg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local AverageLine = LUI.UIImage.new( 0, 0, 69, 1243, 0.5, 0.5, -8, 8 )
-	AverageLine:setImage( RegisterImage( 0x237B2D5273A7211 ) )
+	AverageLine:setImage( RegisterImage( "uie_ui_menu_aar_stat_avg_line" ) )
 	self:addElement( AverageLine )
 	self.AverageLine = AverageLine
 	
 	local AverageLineAdd = LUI.UIImage.new( 0, 0, 69, 1243, 0.5, 0.5, -8, 8 )
 	AverageLineAdd:setAlpha( 0.65 )
-	AverageLineAdd:setImage( RegisterImage( 0x237B2D5273A7211 ) )
+	AverageLineAdd:setImage( RegisterImage( "uie_ui_menu_aar_stat_avg_line" ) )
 	AverageLineAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	AverageLineAdd:setShaderVector( 0, 1.56, 0, 0, 0 )
 	self:addElement( AverageLineAdd )
@@ -23,21 +23,21 @@ CoD.AARGameHistoryAvg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local StatAverageR = LUI.UIImage.new( 0, 0, 1243, 1311, 0, 0, -3, 25 )
 	StatAverageR:setAlpha( 0.8 )
-	StatAverageR:setImage( RegisterImage( 0xD6558314E95C2F ) )
+	StatAverageR:setImage( RegisterImage( "uie_ui_menu_aar_stat_avg_right" ) )
 	self:addElement( StatAverageR )
 	self.StatAverageR = StatAverageR
 	
 	local StatAverageL = LUI.UIImage.new( 0, 0, 0, 68, 0, 0, -3, 25 )
 	StatAverageL:setAlpha( 0 )
 	StatAverageL:setZRot( 180 )
-	StatAverageL:setImage( RegisterImage( 0xD6558314E95C2F ) )
+	StatAverageL:setImage( RegisterImage( "uie_ui_menu_aar_stat_avg_right" ) )
 	self:addElement( StatAverageL )
 	self.StatAverageL = StatAverageL
 	
 	local AVGL = LUI.UIText.new( 0, 0, 31.5, 60.5, 0, 0, 6, 16 )
 	AVGL:setRGB( 0, 0, 0 )
 	AVGL:setAlpha( 0 )
-	AVGL:setText( LocalizeToUpperString( 0x9339694D3250CE9 ) )
+	AVGL:setText( LocalizeToUpperString( "menu/avg" ) )
 	AVGL:setTTF( "ttmussels_demibold" )
 	AVGL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	AVGL:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -48,7 +48,7 @@ CoD.AARGameHistoryAvg.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local AVGR = LUI.UIText.new( 0, 0, 1263.5, 1292.5, 0, 0, 6, 16 )
 	AVGR:setRGB( 0, 0, 0 )
 	AVGR:setAlpha( 0.95 )
-	AVGR:setText( LocalizeToUpperString( 0x9339694D3250CE9 ) )
+	AVGR:setText( LocalizeToUpperString( "menu/avg" ) )
 	AVGR:setTTF( "ttmussels_demibold" )
 	AVGR:setMaterial( LUI.UIImage.GetCachedMaterial( 0x71E049B161CD00A ) )
 	AVGR:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

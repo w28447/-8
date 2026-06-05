@@ -30,7 +30,7 @@ CoD.DirectorSimpleButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	DirectorCustomStartButton.LeaderActivityText:setAlpha( 0 )
 	DirectorCustomStartButton.LeaderActivityText:setText( "" )
 	DirectorCustomStartButton.Header:setAlpha( 0 )
-	DirectorCustomStartButton.Header:setText( LocalizeToUpperString( 0x0 ) )
+	DirectorCustomStartButton.Header:setText( LocalizeToUpperString( "" ) )
 	DirectorCustomStartButton.MiddleText:setAlpha( 0 )
 	DirectorCustomStartButton.MiddleText:setText( "" )
 	DirectorCustomStartButton:linkToElementModel( self, "iconBackground", true, function ( model )

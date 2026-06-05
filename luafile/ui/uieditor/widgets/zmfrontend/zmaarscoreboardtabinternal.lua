@@ -1,4 +1,4 @@
-require( "x64:1c6bd5c481bc2be" )
+require( "ui/uieditor/widgets/scoreboard/zm/scoreboardzm" )
 require( "ui/uieditor/widgets/zmfrontend/zmaargameinfo" )
 
 CoD.ZMAARScoreboardTabInternal = InheritFrom( LUI.UIElement )

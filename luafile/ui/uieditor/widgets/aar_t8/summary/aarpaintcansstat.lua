@@ -34,7 +34,7 @@ CoD.AARPaintCansStat.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local StatLabel = LUI.UIText.new( 0, 0, 17.5, 179.5, 0, 0, 12, 33 )
 	StatLabel:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
 	StatLabel:setAlpha( 0 )
-	StatLabel:setText( Engine[0xF9F1239CFD921FE]( 0x9FE863E6425C8CE ) )
+	StatLabel:setText( Engine[0xF9F1239CFD921FE]( "aar/paint_cans" ) )
 	StatLabel:setTTF( "dinnext_regular" )
 	StatLabel:setLetterSpacing( 2 )
 	StatLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

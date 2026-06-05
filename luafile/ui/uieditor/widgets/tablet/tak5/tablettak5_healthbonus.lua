@@ -9,14 +9,14 @@ CoD.TabletTak5_HealthBonus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BoostBacking = LUI.UIImage.new( 0, 0, -1, 107, 0, 0, -9.5, 38.5 )
-	BoostBacking:setImage( RegisterImage( 0xE2400B0AFCCE216 ) )
+	BoostBacking:setImage( RegisterImage( "uie_ui_hud_tak5_score_stripe" ) )
 	self:addElement( BoostBacking )
 	self.BoostBacking = BoostBacking
 	
 	local BoostBacking2 = LUI.UIImage.new( 0, 0, -1, 107, 0, 0, -9.5, 38.5 )
 	BoostBacking2:setAlpha( 0.5 )
-	BoostBacking2:setImage( RegisterImage( 0xE2400B0AFCCE216 ) )
-	BoostBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x92F09074FB20E6D ) )
+	BoostBacking2:setImage( RegisterImage( "uie_ui_hud_tak5_score_stripe" ) )
+	BoostBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines" ) )
 	BoostBacking2:setShaderVector( 0, 2, 0, 0, 0 )
 	BoostBacking2:setShaderVector( 1, 2, 0, 0, 0 )
 	BoostBacking2:setShaderVector( 2, 0.03, 0, 0, 0 )
@@ -24,7 +24,7 @@ CoD.TabletTak5_HealthBonus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.BoostBacking2 = BoostBacking2
 	
 	local BoostBackingGlow = LUI.UIImage.new( 0, 0, -1, 107, 0, 0, -9.5, 38.5 )
-	BoostBackingGlow:setImage( RegisterImage( 0xB0CF4FAE0C9D546 ) )
+	BoostBackingGlow:setImage( RegisterImage( "uie_ui_hud_tak5_score_stripe_glow" ) )
 	BoostBackingGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	BoostBackingGlow:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( BoostBackingGlow )
@@ -48,7 +48,7 @@ CoD.TabletTak5_HealthBonus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local BonusText = LUI.UIText.new( 0, 0, -15, 185, 0, 0, 12.5, 30.5 )
 	BonusText:setRGB( ColorSet.CleanseBar.r, ColorSet.CleanseBar.g, ColorSet.CleanseBar.b )
-	BonusText:setText( Engine[0xF9F1239CFD921FE]( 0x800CBD9308E73C2 ) )
+	BonusText:setText( Engine[0xF9F1239CFD921FE]( "mpui/bonus_caps" ) )
 	BonusText:setTTF( "0arame_mono_stencil" )
 	BonusText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	self:addElement( BonusText )
@@ -63,9 +63,9 @@ CoD.TabletTak5_HealthBonus.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	self:subscribeToGlobalModel( f1_arg1, "PerController", "scriptNotify", function ( model )
 		local f2_local0 = self
-		if CoD.ModelUtility.IsParamModelEqualToHashString( model, 0xC27B5E4F3724EA3 ) and CoD.ModelUtility.IsScriptNotifyDataArgEqualTo( model, 1, 1 ) and CoD.ModelUtility.IsScriptNotifyDataArgEqualTo( model, 2, 1 ) then
+		if CoD.ModelUtility.IsParamModelEqualToHashString( model, "localheal_fire" ) and CoD.ModelUtility.IsScriptNotifyDataArgEqualTo( model, 1, 1 ) and CoD.ModelUtility.IsScriptNotifyDataArgEqualTo( model, 2, 1 ) then
 			PlayClip( self, "BonusHealth", f1_arg1 )
-		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, 0xC27B5E4F3724EA3 ) and CoD.ModelUtility.IsScriptNotifyDataArgEqualTo( model, 1, 1 ) then
+		elseif CoD.ModelUtility.IsParamModelEqualToHashString( model, "localheal_fire" ) and CoD.ModelUtility.IsScriptNotifyDataArgEqualTo( model, 1, 1 ) then
 			PlayClip( self, "HealthBoost", f1_arg1 )
 		end
 	end )
@@ -93,7 +93,7 @@ CoD.TabletTak5_HealthBonus.__resetProperties = function ( f3_arg0 )
 	f3_arg0.ScorePip:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	f3_arg0.ScorePip:setShaderVector( 0, 2, 0, 0, 0 )
 	f3_arg0.BoostBacking2:setAlpha( 0.5 )
-	f3_arg0.BoostBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x92F09074FB20E6D ) )
+	f3_arg0.BoostBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines" ) )
 	f3_arg0.BoostBacking2:setShaderVector( 0, 2, 0, 0, 0 )
 	f3_arg0.BoostBacking2:setShaderVector( 1, 2, 0, 0, 0 )
 	f3_arg0.BoostBacking2:setShaderVector( 2, 0.03, 0, 0, 0 )
@@ -109,7 +109,7 @@ CoD.TabletTak5_HealthBonus.__clipsPerState = {
 			f4_arg0:setupElementClipCounter( 5 )
 			f4_arg0.BoostBacking2:completeAnimation()
 			f4_arg0.BoostBacking2:setAlpha( 0.5 )
-			f4_arg0.BoostBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x92F09074FB20E6D ) )
+			f4_arg0.BoostBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_scanlines" ) )
 			f4_arg0.BoostBacking2:setShaderVector( 0, 2, 0, 0, 0 )
 			f4_arg0.BoostBacking2:setShaderVector( 1, 2, 0, 0, 0 )
 			f4_arg0.BoostBacking2:setShaderVector( 2, 0.03, 0, 0, 0 )

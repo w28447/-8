@@ -11,7 +11,7 @@ CoD.AARSquadStat.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local BarBot = LUI.UIImage.new( -0.03, 1.03, 2, 2, 0, 0, 54, 64 )
-	BarBot:setImage( RegisterImage( 0xC6873B923C6686C ) )
+	BarBot:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_list_score_bot" ) )
 	self:addElement( BarBot )
 	self.BarBot = BarBot
 	

@@ -26,17 +26,17 @@ CoD.Challenges_ZM_Summary.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( NearCompletionButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
-		if not IsElementInState( f3_arg0, "AllChallengesComplete" ) then
+	f1_arg0:AddButtonCallbackFunction( NearCompletionButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if not IsElementInState( element, "AllChallengesComplete" ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			OpenPopup( self, "Challenges_NearCompletion", f3_arg2, nil )
+			OpenPopup( self, "Challenges_NearCompletion", controller, nil )
 			return true
 		else
 			
 		end
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
-		if not IsElementInState( f4_arg0, "AllChallengesComplete" ) then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if not IsElementInState( element, "AllChallengesComplete" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false

@@ -1,4 +1,4 @@
-require( "x64:2d036841e5c17bf" )
+require( "ui/uieditor/widgets/pc/footer/footerbutton_tooltip" )
 
 CoD.PC_ChooseClassTabs = InheritFrom( LUI.UIElement )
 CoD.PC_ChooseClassTabs.__defaultWidth = 65
@@ -13,7 +13,7 @@ CoD.PC_ChooseClassTabs.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local TabBackingGlow = LUI.UIImage.new( 0, 1, -30, 30, 0, 1, -70, 70 )
 	TabBackingGlow:setAlpha( 0 )
-	TabBackingGlow:setImage( RegisterImage( 0x223AD1B40A93955 ) )
+	TabBackingGlow:setImage( RegisterImage( "uie_ui_menu_common_tab_glow" ) )
 	TabBackingGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	TabBackingGlow:setShaderVector( 0, 1.36, 0, 0, 0 )
 	self:addElement( TabBackingGlow )
@@ -21,7 +21,7 @@ CoD.PC_ChooseClassTabs.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local TabBacking = LUI.UIImage.new( 0, 1, -15, 15, 0, 1, -22, 22 )
 	TabBacking:setAlpha( 0 )
-	TabBacking:setImage( RegisterImage( 0x3F09D20CA138B49 ) )
+	TabBacking:setImage( RegisterImage( "uie_ui_menu_common_tab_backing" ) )
 	TabBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	TabBacking:setShaderVector( 0, 0.9, 0, 0, 0 )
 	self:addElement( TabBacking )
@@ -58,13 +58,13 @@ CoD.PC_ChooseClassTabs.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local TabEndLeft = LUI.UIImage.new( 0, 0, 0, 8, 0, 0, 0, 35 )
 	TabEndLeft:setAlpha( 0 )
-	TabEndLeft:setImage( RegisterImage( 0x9A262142D19A9F ) )
+	TabEndLeft:setImage( RegisterImage( "uie_ui_menu_common_tab_end_left" ) )
 	self:addElement( TabEndLeft )
 	self.TabEndLeft = TabEndLeft
 	
 	local TabEndRight = LUI.UIImage.new( 1, 1, -8, 0, 0, 0, 0, 35 )
 	TabEndRight:setAlpha( 0 )
-	TabEndRight:setImage( RegisterImage( 0xB48CD982934DAD0 ) )
+	TabEndRight:setImage( RegisterImage( "uie_ui_menu_common_tab_end_right" ) )
 	self:addElement( TabEndRight )
 	self.TabEndRight = TabEndRight
 	

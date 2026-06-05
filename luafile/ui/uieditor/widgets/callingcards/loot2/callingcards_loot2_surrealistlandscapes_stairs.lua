@@ -12,7 +12,7 @@ CoD.callingcards_loot2_surrealistlandscapes_stairs.new = function ( f1_arg0, f1_
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local stairs = LUI.UIImage.new( 0, 0, 0, 512, 0, 0, 0, 240 )
-	stairs:setImage( RegisterImage( 0xE4270E32F580058 ) )
+	stairs:setImage( RegisterImage( "uie_ui_menu_callingcards_surrealistlandscape_stairs" ) )
 	self:addElement( stairs )
 	self.stairs = stairs
 	

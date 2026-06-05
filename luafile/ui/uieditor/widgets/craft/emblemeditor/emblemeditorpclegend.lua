@@ -27,16 +27,16 @@ CoD.EmblemEditorPCLegend.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( emptyFocusable, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
+	f1_arg0:AddButtonCallbackFunction( emptyFocusable, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
 		if IsSelfInState( self, "Open" ) then
-			SetState( self, "Close", f3_arg2 )
+			SetState( self, "Close", controller )
 			return true
 		else
 			
 		end
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
+	end, function ( element, menu, controller )
 		if IsSelfInState( self, "Open" ) then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "MOUSE1" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "MOUSE1" )
 			return false
 		else
 			return false
@@ -99,7 +99,7 @@ CoD.EmblemEditorPCLegend.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local text = LUI.UIText.new( 0.5, 0.5, -160, 160, 1, 1, -365.5, -350.5 )
 	text:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	text:setText( Engine[0xF9F1239CFD921FE]( 0x90E9019810E01CA ) )
+	text:setText( Engine[0xF9F1239CFD921FE]( "menu/shortcuts" ) )
 	text:setTTF( "ttmussels_demibold" )
 	text:setLetterSpacing( 6 )
 	text:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )

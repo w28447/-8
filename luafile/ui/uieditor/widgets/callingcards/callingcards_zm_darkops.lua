@@ -1,24 +1,24 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_asset_ghost_spin" )
 
-CoD["callingcards_zm_darkops"] = InheritFrom( LUI.UIElement )
-CoD["callingcards_zm_darkops"].__defaultWidth = 960
-CoD["callingcards_zm_darkops"].__defaultHeight = 240
-CoD["callingcards_zm_darkops"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_zm_darkops = InheritFrom( LUI.UIElement )
+CoD.callingcards_zm_darkops.__defaultWidth = 960
+CoD.callingcards_zm_darkops.__defaultHeight = 240
+CoD.callingcards_zm_darkops.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD["callingcards_zm_darkops"] )
+	self:setClass( CoD.callingcards_zm_darkops )
 	self.id = "CallingCards_zm_DarkOps"
 	self.soundSet = "default"
 	self.anyChildUsesUpdateState = true
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local bg = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	bg:setImage( RegisterImage( 0xC7FA1C0EF867E7B ) )
+	bg:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_darkops_background" ) )
 	self:addElement( bg )
 	self.bg = bg
 	
 	local candles = LUI.UIImage.new( 0, 0, 656, 920, 0, 0, -7, 233 )
-	candles:setImage( RegisterImage( 0xAA0B41381FB84B3 ) )
-	candles:setMaterial( LUI.UIImage.GetCachedMaterial( 0xFD526D3FD71F281 ) )
+	candles:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_darkops_candles" ) )
+	candles:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook" ) )
 	candles:setShaderVector( 0, 0, 3, 0, 0 )
 	candles:setShaderVector( 1, 15, 0, 0, 0 )
 	self:addElement( candles )
@@ -32,7 +32,7 @@ CoD["callingcards_zm_darkops"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local dust2 = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, -159, 240 )
 	dust2:setAlpha( 0.3 )
-	dust2:setImage( RegisterImage( 0xEA71666B3E5511F ) )
+	dust2:setImage( RegisterImage( "uie_dust_bloom" ) )
 	dust2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll" ) )
 	dust2:setShaderVector( 0, 1, 1, 0, 0 )
 	dust2:setShaderVector( 1, 0.35, 0, 0, 0 )
@@ -41,19 +41,19 @@ CoD["callingcards_zm_darkops"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local dust = LUI.UIImage.new( 0, 0, 337, 992, 0, 0, -321, 240 )
 	dust:setRGB( 1, 0.68, 0 )
-	dust:setImage( RegisterImage( 0xEA71666B3E5511F ) )
+	dust:setImage( RegisterImage( "uie_dust_bloom" ) )
 	dust:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( dust )
 	self.dust = dust
 	
 	local monks = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	monks:setImage( RegisterImage( 0x4FBCFCF7A6DFDF5 ) )
+	monks:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_darkops_monks" ) )
 	self:addElement( monks )
 	self.monks = monks
 	
 	local Lightshimmer = LUI.UIImage.new( 0, 0, 344, 960, 0, 0, 0, 240 )
 	Lightshimmer:setAlpha( 0.75 )
-	Lightshimmer:setImage( RegisterImage( 0x85D28B3432378D9 ) )
+	Lightshimmer:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_darkops_light_shimmer" ) )
 	Lightshimmer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	Lightshimmer:setShaderVector( 0, 0, 3, 0, 0 )
 	Lightshimmer:setShaderVector( 1, 6, 0, 0, 0 )
@@ -62,7 +62,7 @@ CoD["callingcards_zm_darkops"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local paranormal = LUI.UIImage.new( 0, 0, 430, 702, 0, 0, 26, 266 )
 	paranormal:setAlpha( 0.5 )
-	paranormal:setImage( RegisterImage( 0x2D34C8BFE864557 ) )
+	paranormal:setImage( RegisterImage( "uie_ui_icon_callingcards_zm_darkops_light_paranormal" ) )
 	paranormal:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_add" ) )
 	paranormal:setShaderVector( 0, 0, 5, 0, 0 )
 	paranormal:setShaderVector( 1, 5, 0, 0, 0 )
@@ -71,7 +71,7 @@ CoD["callingcards_zm_darkops"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local cropper = LUI.UIImage.new( 0, 0, -32, 992, 0, 0, -392, 632 )
 	cropper:setAlpha( 0 )
-	cropper:setImage( RegisterImage( 0x7EEE1693E39382A ) )
+	cropper:setImage( RegisterImage( "uie_stage_crop_prop" ) )
 	self:addElement( cropper )
 	self.cropper = cropper
 	
@@ -84,14 +84,14 @@ CoD["callingcards_zm_darkops"].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	return self
 end
 
-CoD["callingcards_zm_darkops"].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_zm_darkops.__resetProperties = function ( f2_arg0 )
 	f2_arg0.ghostSpin:completeAnimation()
 	f2_arg0.paranormal:completeAnimation()
 	f2_arg0.ghostSpin:setAlpha( 1 )
 	f2_arg0.paranormal:setAlpha( 0.5 )
 end
 
-CoD["callingcards_zm_darkops"].__clipsPerState = {
+CoD.callingcards_zm_darkops.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -132,7 +132,7 @@ CoD["callingcards_zm_darkops"].__clipsPerState = {
 		end
 	}
 }
-CoD["callingcards_zm_darkops"].__onClose = function ( f8_arg0 )
+CoD.callingcards_zm_darkops.__onClose = function ( f8_arg0 )
 	f8_arg0.ghostSpin:close()
 end
 

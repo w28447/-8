@@ -53,22 +53,22 @@ LUI.createMenu.DirectorFindGameWZ = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( OptionsList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		if CoD.DirectorUtility.PartyExceedsPlaylistMax( f4_arg0 ) then
+	f1_local1:AddButtonCallbackFunction( OptionsList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if CoD.DirectorUtility.PartyExceedsPlaylistMax( element ) then
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f4_arg0, f4_arg2, "locked" ) then
-			ProcessListAction( self, f4_arg0, f4_arg2, f4_arg1 )
-			GoBack( self, f4_arg2 )
+		elseif not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "locked" ) then
+			ProcessListAction( self, element, controller, menu )
+			GoBack( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		if CoD.DirectorUtility.PartyExceedsPlaylistMax( f5_arg0 ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
+	end, function ( element, menu, controller )
+		if CoD.DirectorUtility.PartyExceedsPlaylistMax( element ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_confirm" )
 			return false
-		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f5_arg0, f5_arg2, "locked" ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+		elseif not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "locked" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -97,7 +97,7 @@ LUI.createMenu.DirectorFindGameWZ = function ( f1_arg0, f1_arg1 )
 	self.FooterContainerFrontendRight = FooterContainerFrontendRight
 	
 	local CACHeader = CoD.CommonHeader.new( f1_local1, f1_arg0, 0.5, 0.5, -960, 960, 0, 0, 0, 67 )
-	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( 0x38A4FBEBCE1E6BE ) )
+	CACHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/select_playlist" ) )
 	CACHeader.subtitle.subtitle:setAlpha( 0 )
 	CACHeader:subscribeToGlobalModel( f1_arg0, "LobbyRoot", "lobbyTitle", function ( model )
 		local f7_local0 = model:get()
@@ -206,11 +206,11 @@ LUI.createMenu.DirectorFindGameWZ = function ( f1_arg0, f1_arg1 )
 			OptionsList:setDataSource( f17_local0 )
 		end
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f18_arg0, f18_arg1, f18_arg2, f18_arg3 )
-		GoBack( self, f18_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f19_arg0, f19_arg1, f19_arg2 )
-		CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

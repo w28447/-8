@@ -20,13 +20,13 @@ CoD.SpecialDeal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	local Backing2 = LUI.UIImage.new( 0, 0, 58, 716, 0, 0, 1, 129 )
 	Backing2:setAlpha( 0.55 )
 	Backing2:setImage( RegisterImage( 0x95E240D18D8D396 ) )
-	Backing2:setMaterial( LUI.UIImage.GetCachedMaterial( 0xDCEC3F40C67FD03 ) )
+	Backing2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_glint_reveal" ) )
 	Backing2:setShaderVector( 0, 0, 0, 0, 0 )
 	self:addElement( Backing2 )
 	self.Backing2 = Backing2
 	
 	local PromoImage = LUI.UIImage.new( 0, 0, 0, 150, 0, 0, -11, 139 )
-	PromoImage:setImage( RegisterImage( CoD.BlackMarketUtility.SpecialDealImage( 0x83164AD29684964 ) ) )
+	PromoImage:setImage( RegisterImage( CoD.BlackMarketUtility.SpecialDealImage( "ui_icon_blackmarket_tier_medium" ) ) )
 	self:addElement( PromoImage )
 	self.PromoImage = PromoImage
 	
@@ -48,7 +48,7 @@ CoD.SpecialDeal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	
 	local TitleText = LUI.UIText.new( 0, 0, 155, 689, 0, 0, 31.5, 60.5 )
 	TitleText:setRGB( 0.89, 0.79, 0.26 )
-	TitleText:setText( LocalizeToUpperString( CoD.BlackMarketUtility.SpecialDealTitle( f1_arg1, 0x2C2A081852E8870 ) ) )
+	TitleText:setText( LocalizeToUpperString( CoD.BlackMarketUtility.SpecialDealTitle( f1_arg1, "menu/blackmarket_offer_halfoff_tiers" ) ) )
 	TitleText:setTTF( "ttmussels_demibold" )
 	TitleText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	TitleText:setShaderVector( 0, 1, 0, 0, 0 )
@@ -72,7 +72,7 @@ CoD.SpecialDeal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 	local TimerText = LUI.UIText.new( 0, 0, 316, 704, 0, 0, 12.5, 35.5 )
 	TimerText:setRGB( 0.09, 0.09, 0.09 )
 	TimerText:setAlpha( 0 )
-	TimerText:setText( LocalizeToUpperString( CoD.BlackMarketUtility.SpecialDealTitle( f1_arg1, 0x2C2A081852E8870 ) ) )
+	TimerText:setText( LocalizeToUpperString( CoD.BlackMarketUtility.SpecialDealTitle( f1_arg1, "menu/blackmarket_offer_halfoff_tiers" ) ) )
 	TimerText:setTTF( "ttmussels_demibold" )
 	TimerText:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	TimerText:setShaderVector( 0, 0, 0, 0, 0 )
@@ -107,16 +107,16 @@ CoD.SpecialDeal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1
 			end
 		}
 	} )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		if IsSelfInState( self, "HasAction" ) then
-			CoD.BlackMarketUtility.SpecialDealAction( self, f4_arg0, f4_arg2, f4_arg1 )
+			CoD.BlackMarketUtility.SpecialDealAction( self, element, controller, menu )
 			return true
 		else
 			
 		end
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
+	end, function ( element, menu, controller )
 		if IsSelfInState( self, "HasAction" ) then
-			CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xAC3B80C833B60E1, nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select_caps", nil, nil )
 			return true
 		else
 			return false

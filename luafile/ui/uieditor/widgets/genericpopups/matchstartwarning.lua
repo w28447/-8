@@ -24,7 +24,7 @@ CoD.MatchStartWarning.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local Frame = LUI.UIImage.new( 0.5, 0.5, -65, 65, 0, 0, 55, 185 )
 	Frame:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
 	Frame:setAlpha( 0.9 )
-	Frame:setImage( RegisterImage( 0x1A4736A2632AE28 ) )
+	Frame:setImage( RegisterImage( "uie_ui_menu_popups_matchstart_circularframe" ) )
 	self:addElement( Frame )
 	self.Frame = Frame
 	
@@ -75,7 +75,7 @@ CoD.MatchStartWarning.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	Base:setRGB( ColorSet.T8__RED.r, ColorSet.T8__RED.g, ColorSet.T8__RED.b )
 	Base:setAlpha( 0.4 )
 	Base:setScale( 0, 0 )
-	Base:setImage( RegisterImage( 0xEE39ABD2A43A84 ) )
+	Base:setImage( RegisterImage( "uie_ui_menu_popups_matchstart_ring" ) )
 	self:addElement( Base )
 	self.Base = Base
 	

@@ -110,40 +110,40 @@ LUI.createMenu.StartMenu_Options_PrivacySettings = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( f7_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A] )
 		CoD.Menu.UpdateButtonShownState( f7_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f8_arg0, f8_arg1, f8_arg2, f8_arg3 )
-		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( f8_arg2, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0x464A086C0CC2A87] ) then
-			ClearRecordedFocus( f8_arg1, f8_arg2 )
-			GoBack( self, f8_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( controller, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0x464A086C0CC2A87] ) then
+			ClearRecordedFocus( menu, controller )
+			GoBack( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f9_arg0, f9_arg1, f9_arg2 )
-		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( f9_arg2, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0x464A086C0CC2A87] ) then
-			CoD.Menu.SetButtonLabel( f9_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x78D439E1B360368, nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( controller, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0x464A086C0CC2A87] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back_caps", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( f10_arg2, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0xF100F564F11A910] ) and CoD.BaseUtility.IsButtonHoldFinished( f10_arg3 ) then
-			ClearRecordedFocus( f10_arg1, f10_arg2 )
-			GoBack( self, f10_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( controller, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0xF100F564F11A910] ) and CoD.BaseUtility.IsButtonHoldFinished( model ) then
+			ClearRecordedFocus( menu, controller )
+			GoBack( self, controller )
 			return true
-		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( f10_arg2, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0xDE287BA1764B6AE] ) and not CoD.BaseUtility.IsButtonHoldFinished( f10_arg3 ) then
-			ClearRecordedFocus( f10_arg1, f10_arg2 )
-			GoBack( self, f10_arg2 )
+		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( controller, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0xDE287BA1764B6AE] ) and not CoD.BaseUtility.IsButtonHoldFinished( model ) then
+			ClearRecordedFocus( menu, controller )
+			GoBack( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( f11_arg2, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0xF100F564F11A910] ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( controller, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0xF100F564F11A910] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 400 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return true
-		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( f11_arg2, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0xDE287BA1764B6AE] ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
+		elseif CoD.ModelUtility.IsGlobalDataSourceModelValueEqualToEnum( controller, "PrivacySettingManagementForm", "updateProgressState", Enum[0x65887EAAB38F9F8][0xDE287BA1764B6AE] ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/continue", nil, nil )
 			return true
 		else
 			return false

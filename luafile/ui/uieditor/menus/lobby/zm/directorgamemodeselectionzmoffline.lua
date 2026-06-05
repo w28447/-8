@@ -90,24 +90,24 @@ LUI.createMenu.DirectorGamemodeSelectionZMOffline = function ( f1_arg0, f1_arg1 
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f8_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( Maps, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
-		if IsLobbyHostOfCurrentMenu() and not IsElementPropertyValue( f9_arg0, "purchasable", true ) then
-			CoD.ZombieUtility.SelectTutorialMapDifficulty( f9_arg0, f9_arg2 )
-			MapSelected( f9_arg0, f9_arg2 )
+	f1_local1:AddButtonCallbackFunction( Maps, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLobbyHostOfCurrentMenu() and not IsElementPropertyValue( element, "purchasable", true ) then
+			CoD.ZombieUtility.SelectTutorialMapDifficulty( element, controller )
+			MapSelected( element, controller )
 			PlaySoundSetSound( self, "action" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() then
-			OpenPurchaseMapPackConfirmation( f9_arg2, f9_arg0, f9_arg1 )
+			OpenPurchaseMapPackConfirmation( controller, element, menu )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
-		if IsLobbyHostOfCurrentMenu() and not IsElementPropertyValue( f10_arg0, "purchasable", true ) then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLobbyHostOfCurrentMenu() and not IsElementPropertyValue( element, "purchasable", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -175,24 +175,24 @@ LUI.createMenu.DirectorGamemodeSelectionZMOffline = function ( f1_arg0, f1_arg1 
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f19_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( GauntletMaps, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
-		if IsLobbyHostOfCurrentMenu() and not IsElementPropertyValue( f20_arg0, "purchasable", true ) then
-			CoD.ZombieUtility.SelectTutorialMapDifficulty( f20_arg0, f20_arg2 )
-			MapSelected( f20_arg0, f20_arg2 )
+	f1_local1:AddButtonCallbackFunction( GauntletMaps, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLobbyHostOfCurrentMenu() and not IsElementPropertyValue( element, "purchasable", true ) then
+			CoD.ZombieUtility.SelectTutorialMapDifficulty( element, controller )
+			MapSelected( element, controller )
 			PlaySoundSetSound( self, "action" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() then
-			OpenPurchaseMapPackConfirmation( f20_arg2, f20_arg0, f20_arg1 )
+			OpenPurchaseMapPackConfirmation( controller, element, menu )
 			return true
 		else
 			
 		end
-	end, function ( f21_arg0, f21_arg1, f21_arg2 )
-		if IsLobbyHostOfCurrentMenu() and not IsElementPropertyValue( f21_arg0, "purchasable", true ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLobbyHostOfCurrentMenu() and not IsElementPropertyValue( element, "purchasable", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -259,24 +259,24 @@ LUI.createMenu.DirectorGamemodeSelectionZMOffline = function ( f1_arg0, f1_arg1 
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f30_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( TutorialMaps, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f31_arg0, f31_arg1, f31_arg2, f31_arg3 )
-		if IsLobbyHostOfCurrentMenu() and not IsElementPropertyValue( f31_arg0, "purchasable", true ) then
-			CoD.ZombieUtility.SelectTutorialMapDifficulty( f31_arg0, f31_arg2 )
-			MapSelected( f31_arg0, f31_arg2 )
+	f1_local1:AddButtonCallbackFunction( TutorialMaps, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		if IsLobbyHostOfCurrentMenu() and not IsElementPropertyValue( element, "purchasable", true ) then
+			CoD.ZombieUtility.SelectTutorialMapDifficulty( element, controller )
+			MapSelected( element, controller )
 			PlaySoundSetSound( self, "action" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() then
-			OpenPurchaseMapPackConfirmation( f31_arg2, f31_arg0, f31_arg1 )
+			OpenPurchaseMapPackConfirmation( controller, element, menu )
 			return true
 		else
 			
 		end
-	end, function ( f32_arg0, f32_arg1, f32_arg2 )
-		if IsLobbyHostOfCurrentMenu() and not IsElementPropertyValue( f32_arg0, "purchasable", true ) then
-			CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsLobbyHostOfCurrentMenu() and not IsElementPropertyValue( element, "purchasable", true ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		elseif IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f32_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, "ui_confirm" )
 			return true
 		else
 			return false
@@ -335,11 +335,11 @@ LUI.createMenu.DirectorGamemodeSelectionZMOffline = function ( f1_arg0, f1_arg1 
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f37_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( DifficultyList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f38_arg0, f38_arg1, f38_arg2, f38_arg3 )
-		CoD.ZombieUtility.SelectDifficulty( f38_arg0, f38_arg2 )
+	f1_local1:AddButtonCallbackFunction( DifficultyList, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
+		CoD.ZombieUtility.SelectDifficulty( element, controller )
 		return true
-	end, function ( f39_arg0, f39_arg1, f39_arg2 )
-		CoD.Menu.SetButtonLabel( f39_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xAC3B80C833B60E1, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select_caps", nil, "ui_confirm" )
 		return true
 	end, false )
 	self:addElement( DifficultyList )
@@ -388,7 +388,7 @@ LUI.createMenu.DirectorGamemodeSelectionZMOffline = function ( f1_arg0, f1_arg1 
 	
 	local DirectorHeaderTabSafeArea = CoD.DirectorHeaderTabSafeArea.new( f1_local1, f1_arg0, -0, 1, 0, 0, 0, 0, 0, 1080 )
 	DirectorHeaderTabSafeArea.CommonHeader.subtitle.StageTitle:setText( LocalizeToUpperString( "menu/zombies_modes" ) )
-	DirectorHeaderTabSafeArea.CommonHeader.subtitle.subtitle:setText( LocalizeToUpperString( 0x7F5AD3549344EFF ) )
+	DirectorHeaderTabSafeArea.CommonHeader.subtitle.subtitle:setText( LocalizeToUpperString( "exe/offline" ) )
 	DirectorHeaderTabSafeArea.Tabs.customClasssList:setDataSource( "DirectorGameTypeList" )
 	DirectorHeaderTabSafeArea:registerEventHandler( "menu_loaded", function ( element, event )
 		local f43_local0 = nil
@@ -421,19 +421,19 @@ LUI.createMenu.DirectorGamemodeSelectionZMOffline = function ( f1_arg0, f1_arg1 
 		{
 			stateName = "Tutorial",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsGlobalModelValueEqualTo( "lobbyRoot.selectedGameType", 0xBC1A39D743DD767 )
+				return CoD.ModelUtility.IsGlobalModelValueEqualTo( "lobbyRoot.selectedGameType", "ztutorial" )
 			end
 		},
 		{
 			stateName = "Trials",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsGlobalModelValueEqualTo( "lobbyRoot.selectedGameType", 0x8F6A072F8CF2F88 )
+				return CoD.ModelUtility.IsGlobalModelValueEqualTo( "lobbyRoot.selectedGameType", "ztrials" )
 			end
 		},
 		{
 			stateName = "Classic",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsGlobalModelValueEqualTo( "lobbyRoot.selectedGameType", 0x73B5B4896F886CB )
+				return CoD.ModelUtility.IsGlobalModelValueEqualTo( "lobbyRoot.selectedGameType", "zclassic" )
 			end
 		}
 	} )
@@ -449,12 +449,12 @@ LUI.createMenu.DirectorGamemodeSelectionZMOffline = function ( f1_arg0, f1_arg1 
 			modelName = "lobbyRoot.selectedGameType"
 		} )
 	end, false )
-	self:registerEventHandler( "occlusion_change", function ( element, event )
+	self:registerEventHandler( "occlusion_change", function ( self, event )
 		local f48_local0 = nil
-		if element.OcclusionChange then
-			f48_local0 = element:OcclusionChange( event )
-		elseif element.super.OcclusionChange then
-			f48_local0 = element.super:OcclusionChange( event )
+		if self.OcclusionChange then
+			f48_local0 = self:OcclusionChange( event )
+		elseif self.super.OcclusionChange then
+			f48_local0 = self.super:OcclusionChange( event )
 		end
 		if not CoD.BaseUtility.IsSelfInEitherState( self, "Tutorial", "Trials" ) then
 			CoD.FreeCursorUtility.GiveFocusToElementsDefaultFocus( f1_local1, self.Maps, f1_arg0 )
@@ -464,16 +464,16 @@ LUI.createMenu.DirectorGamemodeSelectionZMOffline = function ( f1_arg0, f1_arg1 
 			CoD.FreeCursorUtility.GiveFocusToElementsDefaultFocus( f1_local1, self.GauntletMaps, f1_arg0 )
 		end
 		if not f48_local0 then
-			f48_local0 = element:dispatchEventToChildren( event )
+			f48_local0 = self:dispatchEventToChildren( event )
 		end
 		return f48_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f49_arg0, f49_arg1, f49_arg2, f49_arg3 )
-		CoD.ZombieUtility.ResolveInvalidMapGametypeSelection( f49_arg2 )
-		GoBack( self, f49_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		CoD.ZombieUtility.ResolveInvalidMapGametypeSelection( controller )
+		GoBack( self, controller )
 		return true
-	end, function ( f50_arg0, f50_arg1, f50_arg2 )
-		CoD.Menu.SetButtonLabel( f50_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "setState", function ( element, controller, f51_arg2, f51_arg3, f51_arg4 )

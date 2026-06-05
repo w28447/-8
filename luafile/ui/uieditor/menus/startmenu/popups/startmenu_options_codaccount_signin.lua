@@ -63,24 +63,24 @@ LUI.createMenu.StartMenu_Options_CoDAccount_SignIn = function ( f1_arg0, f1_arg1
 	self:addElement( BackingGrayMediumLeft )
 	self.BackingGrayMediumLeft = BackingGrayMediumLeft
 	
-	self:registerEventHandler( "ui_keyboard_input", function ( element, event )
+	self:registerEventHandler( "ui_keyboard_input", function ( self, event )
 		local f5_local0 = nil
 		CoD.CoDAccountUtility.CodAccountHandleSignInKeyboardComplete( self, f1_arg0, event, self.StartMenuOptionsSignInForm )
 		if not f5_local0 then
-			f5_local0 = element:dispatchEventToChildren( event )
+			f5_local0 = self:dispatchEventToChildren( event )
 		end
 		return f5_local0
 	end )
-	self:registerEventHandler( "list_item_gain_focus", function ( element, event )
+	self:registerEventHandler( "list_item_gain_focus", function ( self, event )
 		local f6_local0 = nil
-		CoD.CoDAccountUtility.OnSignInItemFocusChange( f1_local1, f1_arg0, element )
+		CoD.CoDAccountUtility.OnSignInItemFocusChange( f1_local1, f1_arg0, self )
 		return f6_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		GoBack( self, f7_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 		return true
 	end, false )
 	self:subscribeToGlobalModel( f1_arg0, "UNOAccountInfo", "iTransactionResult", function ( model )

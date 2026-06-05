@@ -33,13 +33,13 @@ CoD.VehicleGround_HashText.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local Image0 = LUI.UIImage.new( 0.5, 0.5, -55, -40, 0.5, 0.5, -18, 44 )
 	Image0:setZRot( 90 )
-	Image0:setImage( RegisterImage( 0x720D5B4FA8ACB23 ) )
+	Image0:setImage( RegisterImage( "uie_t7_cp_hud_woundedsoldier_sidemask" ) )
 	self:addElement( Image0 )
 	self.Image0 = Image0
 	
 	local Image1 = LUI.UIImage.new( 0.5, 0.5, -55, -46, 0.5, 0.5, -49, 13 )
 	Image1:setZRot( -90 )
-	Image1:setImage( RegisterImage( 0x720D5B4FA8ACB23 ) )
+	Image1:setImage( RegisterImage( "uie_t7_cp_hud_woundedsoldier_sidemask" ) )
 	self:addElement( Image1 )
 	self.Image1 = Image1
 	

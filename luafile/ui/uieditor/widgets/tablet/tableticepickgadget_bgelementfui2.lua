@@ -19,13 +19,13 @@ CoD.TabletIcePickGadget_BgElementFui2.new = function ( f1_arg0, f1_arg1, f1_arg2
 	
 	local AnalysingBacking = LUI.UIImage.new( 0, 0, 0, 248, 0, 0, 0, 28 )
 	AnalysingBacking:setRGB( 0.02, 0.82, 0.99 )
-	AnalysingBacking:setImage( RegisterImage( 0xB018641EB968C33 ) )
+	AnalysingBacking:setImage( RegisterImage( "uie_ui_menu_inspection_analysing_stripe" ) )
 	self:addElement( AnalysingBacking )
 	self.AnalysingBacking = AnalysingBacking
 	
 	local AnalysingBackingAdd = LUI.UIImage.new( 0, 0, 0, 248, 0, 0, 0, 28 )
 	AnalysingBackingAdd:setRGB( 0.02, 0.59, 0.99 )
-	AnalysingBackingAdd:setImage( RegisterImage( 0xB018641EB968C33 ) )
+	AnalysingBackingAdd:setImage( RegisterImage( "uie_ui_menu_inspection_analysing_stripe" ) )
 	self:addElement( AnalysingBackingAdd )
 	self.AnalysingBackingAdd = AnalysingBackingAdd
 	

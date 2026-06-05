@@ -7,7 +7,7 @@ Lobby.Anticheat.MessageGroups[LuaEnum.ANTICHEAT_MESSAGE_GROUPS.ZM] = {
 	{
 		{
 			messageId = 0,
-			reference = 0xAB2A4735B1E2DC7,
+			reference = "exe/ext_msg_pirated_content",
 			url = 0x4938E5C15C98E66
 		},
 		{
@@ -35,7 +35,7 @@ Lobby.Anticheat.MessageGroups[LuaEnum.ANTICHEAT_MESSAGE_GROUPS.ZM] = {
 		{
 			messageId = 5,
 			reference = 0x1A62CC9B13DBECE,
-			url = 0x0
+			url = ""
 		},
 		{
 			messageId = 6,
@@ -44,36 +44,36 @@ Lobby.Anticheat.MessageGroups[LuaEnum.ANTICHEAT_MESSAGE_GROUPS.ZM] = {
 		},
 		{
 			messageId = 7,
-			reference = 0xA78A8017FAF2DCF,
+			reference = "exe/ext_msg_stat_reset_request_uncom_zm",
 			url = 0x3B1ABD297FF1711
 		},
 		{
 			messageId = 8,
-			reference = 0xAA15665A4037B68,
+			reference = "exe/ext_msg_stat_reset_request_denied_zm",
 			url = 0x3B1ABD297FF1711
 		}
 	},
 	{
 		{
 			messageId = 9,
-			reference = 0x71769C6FA2959CD,
+			reference = "exe/ext_msg_boosting_heavy_zm",
 			url = 0xA95B8449E323A37
 		},
 		{
 			messageId = 10,
-			reference = 0x4D86A8F871548D0,
+			reference = "exe/ext_msg_boosting_warning_zm",
 			url = 0xA95B8449E323A37
 		}
 	},
 	{
 		{
 			messageId = 11,
-			reference = 0x6890920F6B4DC69,
+			reference = "exe/ext_msg_glitching_extreme_offense_zm",
 			url = 0x11525217C192CAF
 		},
 		{
 			messageId = 12,
-			reference = 0x897915286C71E1B,
+			reference = "exe/ext_msg_glitching_first_offense_zm",
 			url = 0x11525217C192CAF
 		}
 	}
@@ -82,7 +82,7 @@ Lobby.Anticheat.MessageGroups[LuaEnum.ANTICHEAT_MESSAGE_GROUPS.MP] = {
 	{
 		{
 			messageId = 0,
-			reference = 0xAB2A4735B1E2DC7,
+			reference = "exe/ext_msg_pirated_content",
 			url = 0x4938E5C15C98E66
 		},
 		{
@@ -110,7 +110,7 @@ Lobby.Anticheat.MessageGroups[LuaEnum.ANTICHEAT_MESSAGE_GROUPS.MP] = {
 		{
 			messageId = 15,
 			reference = 0x1D227C9B162F13A,
-			url = 0x0
+			url = ""
 		},
 		{
 			messageId = 16,
@@ -119,53 +119,53 @@ Lobby.Anticheat.MessageGroups[LuaEnum.ANTICHEAT_MESSAGE_GROUPS.MP] = {
 		},
 		{
 			messageId = 17,
-			reference = 0xAC6A5017FF14A07,
+			reference = "exe/ext_msg_stat_reset_request_uncom_mp",
 			url = 0x3B1ABD297FF1711
 		},
 		{
 			messageId = 18,
-			reference = 0xA533965A3C128D0,
+			reference = "exe/ext_msg_stat_reset_request_denied_mp",
 			url = 0x3B1ABD297FF1711
 		}
 	},
 	{
 		{
 			messageId = 19,
-			reference = 0x73C4EC6FA484829,
+			reference = "exe/ext_msg_boosting_heavy_mp",
 			url = 0xA95B8449E323A37
 		},
 		{
 			messageId = 20,
-			reference = 0x4F65D8F872E3048,
+			reference = "exe/ext_msg_boosting_warning_mp",
 			url = 0xA95B8449E323A37
 		}
 	},
 	{
 		{
 			messageId = 21,
-			reference = 0x6C8F620F6EAA015,
+			reference = "exe/ext_msg_glitching_extreme_offense_mp",
 			url = 0x11525217C192CAF
 		},
 		{
 			messageId = 22,
-			reference = 0x85D7652869577F3,
+			reference = "exe/ext_msg_glitching_first_offense_mp",
 			url = 0x11525217C192CAF
 		}
 	},
 	{
 		{
 			messageId = 23,
-			reference = 0xF8CD6F333C49CA,
+			reference = "exe/ext_msg_offensive_extreme",
 			url = 0x658B0A257255CA2
 		},
 		{
 			messageId = 24,
-			reference = 0xAB6EC5598227F26,
+			reference = "exe/ext_msg_offensive_second",
 			url = 0x658B0A257255CA2
 		},
 		{
 			messageId = 25,
-			reference = 0x89DD4503956E8E6,
+			reference = "exe/ext_msg_offensive_warning",
 			url = 0x658B0A257255CA2
 		}
 	}
@@ -179,7 +179,7 @@ Lobby.Anticheat.MessageGroups[LuaEnum.ANTICHEAT_MESSAGE_GROUPS.UGC] = {
 		},
 		{
 			messageId = 27,
-			reference = 0x991CD40FAC0F6D8,
+			reference = "exe/ext_msg_ugc_warning",
 			url = 0xD88A6FB4020F721
 		}
 	}
@@ -193,17 +193,17 @@ Lobby.Anticheat.MessageGroups[LuaEnum.ANTICHEAT_MESSAGE_GROUPS.LOOT] = {
 		},
 		{
 			messageId = 29,
-			reference = 0x1FBF5175F8A9411,
+			reference = "exe/ext_msg_loot_offense",
 			url = 0x6DADF146B977D62
 		},
 		{
 			messageId = 30,
-			reference = 0xEC209AAD289A157,
-			url = 0x0
+			reference = "exe/ext_msg_loot_incident_approved",
+			url = ""
 		},
 		{
 			messageId = 31,
-			reference = 0x7DD85A138ACA5B,
+			reference = "exe/ext_msg_loot_incident_denied",
 			url = 0x6595351CF3DD856
 		},
 		{
@@ -217,12 +217,12 @@ Lobby.Anticheat.MessageGroups[LuaEnum.ANTICHEAT_MESSAGE_GROUPS.ARENA] = {
 	{
 		{
 			messageId = 33,
-			reference = 0x8C49EBB60083359,
+			reference = "exe/ext_msg_arena_extreme_offense_mp",
 			url = 0x6595351CF3DD856
 		},
 		{
 			messageId = 34,
-			reference = 0x4F7FD033ABA51A5,
+			reference = "exe/ext_msg_arena_warning_offense_mp",
 			url = 0x3B1ABD297FF1711
 		}
 	}
@@ -237,7 +237,7 @@ Lobby.Anticheat.SetupDataModelForController = function ( f1_arg0 )
 	local f1_local1 = Engine.CreateModel( Engine.GetModelForController( f1_arg0 ), "lobbyRoot.anticheat", true )
 	local f1_local2 = Engine.CreateModel( f1_local1, "message", true )
 	Engine.SetModelValue( Engine.CreateModel( f1_local2, "string", true ), "" )
-	Engine.SetModelValue( Engine.CreateModel( f1_local2, "url", true ), 0x0 )
+	Engine.SetModelValue( Engine.CreateModel( f1_local2, "url", true ), "" )
 	Engine.SetModelValue( Engine.CreateModel( f1_local1, "reputation", true ), 0 )
 	local f1_local3 = Engine.CreateModel( f1_local1, "featureBans", true )
 	for f1_local4 = 1, LuaEnum.FEATURE_BAN.COUNT - 1, 1 do
@@ -300,7 +300,7 @@ Lobby.Anticheat.CheckIsFeatureBanned = function ( f7_arg0 )
 			return true, Engine.GetModelValue( Engine.GetModel( Engine.GetModel( featureBansRoot, "featureBans" ), "feature_" .. f7_arg0 .. "_end" ) )
 		end
 	end
-	return false, false
+	return false, nil
 end
 
 Lobby.Anticheat.CheckIsFeatureBannedForIndex = function ( f8_arg0, f8_arg1 )
@@ -351,7 +351,7 @@ Lobby.Anticheat.IsFeatureBanned = function ( f10_arg0, f10_arg1 )
 			if f10_local6 ~= nil then
 				if f10_arg1 == true then
 					Lobby.Anticheat.BanDisconnect()
-					Engine[0xBC42C678E40DBE8]( Enum.errorCode[0x2FD312C2C06EC11], f10_local6 )
+					Engine[0xBC42C678E40DBE8]( Enum.errorcode[0x2FD312C2C06EC11], f10_local6 )
 				end
 				return true, f10_local6
 			end
@@ -378,7 +378,7 @@ Lobby.Anticheat.OnPlayerBanned = function ( f12_arg0 )
 	local f12_local3 = f12_arg0.expiry
 	Engine.SetModelValue( Engine.GetModel( Engine.GetModel( Engine.GetModelForController( f12_local0 ), "lobbyRoot.anticheat" ), "reputation" ), f12_local2 )
 	Lobby.Anticheat.BanDisconnect()
-	local f12_local4 = 0x6208BCAF54CF9F
+	local f12_local4 = "exe/cod_online_perm_ban_console"
 	local f12_local5 = -1
 	local f12_local6 = 1000
 	if f12_local1 ~= 0 then
@@ -387,18 +387,18 @@ Lobby.Anticheat.OnPlayerBanned = function ( f12_arg0 )
 			f12_local7 = Lobby.Anticheat.StripBattleTagNumber( f12_local7 )
 		end
 		if f12_local2 < LuaEnum.DW_REPUTATION_BAN or f12_local0 == f12_local5 or f12_local7 == "" then
-			f12_local4 = 0x632F97C36A01BD6
+			f12_local4 = "platform/demonware_disconnect"
 		elseif f12_local2 == f12_local6 then
-			f12_local4 = Engine[0xF9F1239CFD921FE]( 0x47566D53FC56998, f12_local7 )
+			f12_local4 = Engine[0xF9F1239CFD921FE]( "exe/cod_profile_maintenance", f12_local7 )
 		else
-			f12_local4 = Engine[0xF9F1239CFD921FE]( 0x7DBBB9C5E6880AC, f12_local7 )
+			f12_local4 = Engine[0xF9F1239CFD921FE]( "exe/demonware_player_ban", f12_local7 )
 		end
 	end
 	Dvar[0xC851E2925BC63E4]:set( 0 )
 	Engine.AnticheatDisconnectAndDisableDemonwareNoReconnect()
 	local f12_local7 = Engine[0x9882F293C327557]()
 	if Engine[0x9882F293C327557]() ~= LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.MAIN ) then
-		Engine[0xBC42C678E40DBE8]( Enum.errorCode[0x2FD312C2C06EC11], f12_local4 )
+		Engine[0xBC42C678E40DBE8]( Enum.errorcode[0x2FD312C2C06EC11], f12_local4 )
 	else
 		LuaUtils.UI_ShowErrorMessageDialog( f12_local0, f12_local4 )
 	end
@@ -414,9 +414,9 @@ Lobby.Anticheat.OnPlayerVacBanned = function ( f13_arg0 )
 	local f13_local3 = f13_arg0.expiry
 	Lobby.Anticheat.BanDisconnect()
 	Engine.AnticheatDisconnectAndDisableDemonwareNoReconnect()
-	local f13_local4 = 0x4A8DFB557FD736F
+	local f13_local4 = "platform/vacbanned"
 	if Engine.SessionMode_IsOnlineGame() then
-		Engine[0xBC42C678E40DBE8]( Enum.errorCode[0x100911D2B38A4EF], Engine[0xF9F1239CFD921FE]( f13_local4 ) )
+		Engine[0xBC42C678E40DBE8]( Enum.errorcode[0x100911D2B38A4EF], Engine[0xF9F1239CFD921FE]( f13_local4 ) )
 	end
 end
 
@@ -438,7 +438,7 @@ Lobby.Anticheat.OnLogonTimeProhibited = function ( f15_arg0 )
 	Engine[0x82A35D1159903D0]()
 	local f15_local2 = Engine[0x9882F293C327557]()
 	if Engine[0x9882F293C327557]() ~= LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.MAIN ) then
-		Engine[0xBC42C678E40DBE8]( Enum.errorCode[0x2FD312C2C06EC11], 0xB9B73C6BCDAD46B )
+		Engine[0xBC42C678E40DBE8]( Enum.errorcode[0x2FD312C2C06EC11], 0xB9B73C6BCDAD46B )
 	end
 end
 
@@ -526,7 +526,7 @@ Lobby.Anticheat.OnCheckPrestigeFeatureBan = function ( f18_arg0 )
 				feature = LuaEnum.FEATURE_BAN.PRESTIGE
 			} ) )
 		end
-		Engine[0xBC42C678E40DBE8]( Enum.errorCode[0x2FD312C2C06EC11], string.format( "%s\n\n%s", f18_local6, f18_local5 ) )
+		Engine[0xBC42C678E40DBE8]( Enum.errorcode[0x2FD312C2C06EC11], string.format( "%s\n\n%s", f18_local6, f18_local5 ) )
 	end
 end
 
@@ -634,11 +634,11 @@ Lobby.Anticheat.Pump = function ()
 		return 
 	end
 	local f24_local0 = LobbyData.GetCurrentMenuTarget()
-	if f24_local0["mainmode"] == Enum.LobbyMainMode[0x7E41449995CD57E] then
+	if f24_local0.mainmode == Enum.LobbyMainMode[0x7E41449995CD57E] then
 		Lobby.Anticheat.IsFeatureBanned( LuaEnum.FEATURE_BAN.LIVE_MP, true )
-	elseif f24_local0["mainmode"] == Enum.LobbyMainMode[0x79D01499920B292] then
+	elseif f24_local0.mainmode == Enum.LobbyMainMode[0x79D01499920B292] then
 		Lobby.Anticheat.IsFeatureBanned( LuaEnum.FEATURE_BAN.LIVE_ZM, true )
-	elseif f24_local0["mainmode"] == Enum.LobbyMainMode[0x7B50049993542C0] then
+	elseif f24_local0.mainmode == Enum.LobbyMainMode[0x7B50049993542C0] then
 		Lobby.Anticheat.IsFeatureBanned( LuaEnum.FEATURE_BAN.LIVE_CP, true )
 	end
 end

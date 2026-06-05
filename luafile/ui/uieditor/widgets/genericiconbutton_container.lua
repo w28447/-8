@@ -60,7 +60,7 @@ CoD.GenericIconButton_Container.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	self.TopBorder = TopBorder
 	
 	local icon = LUI.UIImage.new( 0, 0, 2, 62, 0.5, 0.5, -26, 34 )
-	icon:setImage( RegisterImage( 0xB7A1CFD87AACAEA ) )
+	icon:setImage( RegisterImage( "uie_t8_mp_setup_bots" ) )
 	self:addElement( icon )
 	self.icon = icon
 	

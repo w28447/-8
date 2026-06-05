@@ -104,8 +104,8 @@ Lobby.Timer.OnMatchEnd = function ( f5_arg0 )
 	local f5_local5 = {
 		controller = f5_local3,
 		lobbyType = f5_local1,
-		mainMode = f5_local4["mainmode"],
-		lobbyTimerType = f5_local4[0x558B67A321D1120],
+		mainMode = f5_local4.mainmode,
+		lobbyTimerType = f5_local4.lobbytimertype,
 		matchEnded = true
 	}
 	Lobby.Timer.HostingLobby( f5_local5 )
@@ -197,7 +197,7 @@ Lobby.Timer.HostPlaySoundAndUpdateTime = function ( f14_arg0, f14_arg1 )
 	if f14_arg0 ~= Lobby.Timer.lastValue then
 		Lobby.Timer.lastValue = f14_arg0
 		if f14_arg0 <= 5 then
-			Engine.PlaySound( LobbyData.Sounds.TimerTick )
+			Engine.playsound( LobbyData.Sounds.TimerTick )
 		end
 		if f14_arg1 then
 			Engine.SetModelValue( Engine.CreateModel( Engine.GetGlobalModel(), "MapVote.timerActive" ), 1 )
@@ -210,7 +210,7 @@ Lobby.Timer.ClientPlaySoundAndUpdateTime = function ( f15_arg0 )
 	if f15_arg0 ~= Lobby.Timer.lastValue then
 		Lobby.Timer.lastValue = f15_arg0
 		if f15_arg0 <= 5 then
-			Engine.PlaySound( LobbyData.Sounds.TimerTick )
+			Engine.playsound( LobbyData.Sounds.TimerTick )
 		end
 		Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0xD48A9770CD84BB6], "Client Time Left: " .. f15_arg0 .. "\n" )
 	end
@@ -244,7 +244,7 @@ Lobby.Timer.AutoCPPump = function ()
 	if f16_local13 < f16_local11 then
 		f16_local13 = f16_local11
 	end
-	f16_local15 = math.floor( math.ceil( Dvar["lobby_readyuppercentrequired"]:get() * f16_local13 ) - f16_local12 )
+	f16_local15 = math.floor( math.ceil( Dvar.lobby_readyuppercentrequired:get() * f16_local13 ) - f16_local12 )
 	f16_local16 = Engine[0x69811927938FCD7]() == "doa"
 	if f16_local7 then
 		f16_local2 = Lobby.Timer.LOBBY_STATUS.IDLE
@@ -252,13 +252,13 @@ Lobby.Timer.AutoCPPump = function ()
 	elseif f16_local3 == Lobby.Timer.MATCH_START_INVALID then
 		f16_local3 = Engine[0x9D33D652B9B0F3B]() + Dvar[0x4832F85F8B2FA6A]:get()
 	elseif f16_local2 == Lobby.Timer.LOBBY_STATUS.NEED_READYUP then
-		if 0 < Dvar["lobby_readyuppercentrequired"]:get() then
+		if 0 < Dvar.lobby_readyuppercentrequired:get() then
 			if f16_local15 > 0 then
 				f16_local17 = Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.lobbyStatus" )
 				if f16_local15 == 1 then
-					Engine.SetModelValue( f16_local17, Engine[0xF9F1239CFD921FE]( 0x231FC751DC50156 ) )
+					Engine.SetModelValue( f16_local17, Engine[0xF9F1239CFD921FE]( "menu/waiting_for_player_to_be_ready" ) )
 				else
-					Engine.SetModelValue( f16_local17, Engine[0xF9F1239CFD921FE]( 0x96C7DC086052CF, f16_local15 ) )
+					Engine.SetModelValue( f16_local17, Engine[0xF9F1239CFD921FE]( "menu/waiting_for_players_to_be_ready", f16_local15 ) )
 				end
 				f16_local4 = f16_local15
 			else
@@ -273,12 +273,12 @@ Lobby.Timer.AutoCPPump = function ()
 		f16_local5 = math.floor( (f16_local3 - Engine[0x9D33D652B9B0F3B]()) / 1000 )
 		f16_local2 = Lobby.Timer.LOBBY_STATUS.STARTING
 		if f16_local5 > 0 then
-			Engine.SetModelValue( f16_local17, Engine[0xF9F1239CFD921FE]( 0x3938FD7959AB087, f16_local5 ) )
+			Engine.SetModelValue( f16_local17, Engine[0xF9F1239CFD921FE]( "mp/match_starting", f16_local5 ) )
 			f16_local10 = f16_local5
 		else
 			Engine.SetModelValue( f16_local17, "" )
 		end
-		if f16_local16 == true and 0 < Dvar["lobby_readyuppercentrequired"]:get() and f16_local15 > 0 then
+		if f16_local16 == true and 0 < Dvar.lobby_readyuppercentrequired:get() and f16_local15 > 0 then
 			f16_local2 = Lobby.Timer.LOBBY_STATUS.NEED_READYUP
 			f16_local4 = Lobby.Timer.MATCH_START_INVALID
 		end
@@ -327,7 +327,7 @@ Lobby.Timer.AutoCPPumpClient = function ( f18_arg0 )
 		Engine.SetModelValue( f18_local4, "" )
 	elseif f18_local2 == Lobby.Timer.LOBBY_STATUS.STARTING then
 		if f18_local3 > 0 then
-			Engine.SetModelValue( f18_local4, Engine[0xF9F1239CFD921FE]( 0x3938FD7959AB087, f18_local3 ) )
+			Engine.SetModelValue( f18_local4, Engine[0xF9F1239CFD921FE]( "mp/match_starting", f18_local3 ) )
 			f18_local6 = f18_local3
 		else
 			Engine.SetModelValue( f18_local4, "" )
@@ -336,9 +336,9 @@ Lobby.Timer.AutoCPPumpClient = function ( f18_arg0 )
 	elseif f18_local2 == Lobby.Timer.LOBBY_STATUS.NEED_READYUP then
 		local f18_local7 = f18_local3
 		if f18_local7 == 1 then
-			Engine.SetModelValue( f18_local4, Engine[0xF9F1239CFD921FE]( 0x231FC751DC50156 ) )
+			Engine.SetModelValue( f18_local4, Engine[0xF9F1239CFD921FE]( "menu/waiting_for_player_to_be_ready" ) )
 		else
-			Engine.SetModelValue( f18_local4, Engine[0xF9F1239CFD921FE]( 0x96C7DC086052CF, f18_local7 ) )
+			Engine.SetModelValue( f18_local4, Engine[0xF9F1239CFD921FE]( "menu/waiting_for_players_to_be_ready", f18_local7 ) )
 		end
 	end
 	Engine.SetModelValue( f18_local5, f18_local6 )
@@ -392,7 +392,7 @@ Lobby.Timer.AutoMPPump = function ()
 			f19_local6 = Engine[0x9D33D652B9B0F3B]() + Dvar[0xA0A01C39967B404]:get()
 			Lobby.TeamSelection.ClearTeam( Enum.team_t[0x97263B3C1ABADF7] )
 		else
-			Engine.SetModelValue( f19_local14, Engine[0xF9F1239CFD921FE]( 0x8E27051A1C44827 ) .. ": " .. f19_local7 )
+			Engine.SetModelValue( f19_local14, Engine[0xF9F1239CFD921FE]( "menu/votingtimeremaining" ) .. ": " .. f19_local7 )
 			Lobby.Matchmaking.UpdatePublicLobby( {
 				stage = LuaEnum.PUBLIC_LOBBY.INTERMISSION,
 				intermissionTime = f19_local7
@@ -435,14 +435,14 @@ Lobby.Timer.AutoMPPump = function ()
 			if f19_local9 == 1 then
 				f19_local13.stage = LuaEnum.PUBLIC_LOBBY.SEARCH_STAGE_3
 				f19_local13.stageTitle = 0xC4D2D56E3932FAB
-				f19_local13.stageDetails = Engine[0xF9F1239CFD921FE]( 0x5A08D09755BAA8E )
+				f19_local13.stageDetails = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_1_more_player" )
 				f19_local13.showWaitingWidget = true
 				Lobby.Matchmaking.UpdatePublicLobby( f19_local13 )
 				f19_local16 = f19_local7
 			else
 				f19_local13.stage = LuaEnum.PUBLIC_LOBBY.SEARCH_STAGE_3
 				f19_local13.stageTitle = 0xC4D2D56E3932FAB
-				f19_local13.stageDetails = Engine[0xF9F1239CFD921FE]( 0x46A0BCA90BC2137, f19_local9 )
+				f19_local13.stageDetails = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_more_players", f19_local9 )
 				f19_local13.showWaitingWidget = true
 				Lobby.Matchmaking.UpdatePublicLobby( f19_local13 )
 			end
@@ -582,7 +582,7 @@ Lobby.Timer.AutoMPPumpClient = function ( f21_arg0 )
 		Lobby.Timer.UnlockLobby( f21_local0, true )
 	elseif f21_local2 == Lobby.Timer.LOBBY_STATUS.VOTING then
 		Lobby.MapVote.ShowVote()
-		Engine.SetModelValue( f21_local6, Engine[0xF9F1239CFD921FE]( 0x8E27051A1C44827 ) .. ": " .. f21_local3 )
+		Engine.SetModelValue( f21_local6, Engine[0xF9F1239CFD921FE]( "menu/votingtimeremaining" ) .. ": " .. f21_local3 )
 		Lobby.Matchmaking.UpdatePublicLobby( {
 			stage = LuaEnum.PUBLIC_LOBBY.INTERMISSION,
 			intermissionTime = f21_local3
@@ -593,7 +593,7 @@ Lobby.Timer.AutoMPPumpClient = function ( f21_arg0 )
 		f21_local8.stageTitle = 0xC4D2D56E3932FAB
 		local f21_local10
 		if f21_local4 > 1 then
-			f21_local10 = Engine[0xF9F1239CFD921FE]( 0x46A0BCA90BC2137, f21_local4 )
+			f21_local10 = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_more_players", f21_local4 )
 			if not f21_local10 then
 			
 			else
@@ -603,7 +603,7 @@ Lobby.Timer.AutoMPPumpClient = function ( f21_arg0 )
 				Engine.SetModelValue( f21_local6, "" )
 			end
 		end
-		f21_local10 = Engine[0xF9F1239CFD921FE]( 0x5A08D09755BAA8E )
+		f21_local10 = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_1_more_player" )
 	elseif f21_local2 == Lobby.Timer.LOBBY_STATUS.NEED_BALANCE then
 		Lobby.MapVote.ShowLockedIn()
 		f21_local8.stageDetails = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_more_players_teams" )
@@ -617,7 +617,7 @@ Lobby.Timer.AutoMPPumpClient = function ( f21_arg0 )
 		Lobby.Matchmaking.UpdatePublicLobby( {
 			stage = LuaEnum.PUBLIC_LOBBY.START_MATCH,
 			startTime = f21_local3,
-			stageDetails = Engine[0xF9F1239CFD921FE]( 0x3938FD7959AB087, f21_local3 )
+			stageDetails = Engine[0xF9F1239CFD921FE]( "mp/match_starting", f21_local3 )
 		} )
 		f21_local9 = f21_local3
 	elseif f21_local2 == Lobby.Timer.LOBBY_STATUS.STARTING then
@@ -627,7 +627,7 @@ Lobby.Timer.AutoMPPumpClient = function ( f21_arg0 )
 			Lobby.Matchmaking.UpdatePublicLobby( {
 				stage = LuaEnum.PUBLIC_LOBBY.START_MATCH,
 				startTime = f21_local3,
-				stageDetails = Engine[0xF9F1239CFD921FE]( 0x3938FD7959AB087, f21_local3 )
+				stageDetails = Engine[0xF9F1239CFD921FE]( "mp/match_starting", f21_local3 )
 			} )
 			f21_local9 = f21_local3
 			Engine[0x3B9F1AA6A523204]( Engine[0x20826BD382E3A23]( Enum.LobbyModule[0xC46B73E8E18BA2], f21_local1, Engine.GetXUID64( f21_local0 ) ) )
@@ -688,7 +688,7 @@ Lobby.Timer.AutoMPArenaPump = function ()
 			f22_local6 = Engine[0x9D33D652B9B0F3B]() + Dvar[0xA0A01C39967B404]:get()
 			Lobby.TeamSelection.ClearTeam( Enum.team_t[0x97263B3C1ABADF7] )
 		else
-			Engine.SetModelValue( f22_local14, Engine[0xF9F1239CFD921FE]( 0x8E27051A1C44827 ) .. ": " .. f22_local7 )
+			Engine.SetModelValue( f22_local14, Engine[0xF9F1239CFD921FE]( "menu/votingtimeremaining" ) .. ": " .. f22_local7 )
 			Lobby.Matchmaking.UpdatePublicLobby( {
 				stage = LuaEnum.PUBLIC_LOBBY.INTERMISSION,
 				intermissionTime = f22_local7
@@ -728,14 +728,14 @@ Lobby.Timer.AutoMPArenaPump = function ()
 			if f22_local9 == 1 then
 				f22_local13.stage = LuaEnum.PUBLIC_LOBBY.SEARCH_STAGE_3
 				f22_local13.stageTitle = 0xC4D2D56E3932FAB
-				f22_local13.stageDetails = Engine[0xF9F1239CFD921FE]( 0x5A08D09755BAA8E )
+				f22_local13.stageDetails = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_1_more_player" )
 				f22_local13.showWaitingWidget = true
 				Lobby.Matchmaking.UpdatePublicLobby( f22_local13 )
 				f22_local17 = f22_local7
 			else
 				f22_local13.stage = LuaEnum.PUBLIC_LOBBY.SEARCH_STAGE_3
 				f22_local13.stageTitle = 0xC4D2D56E3932FAB
-				f22_local13.stageDetails = Engine[0xF9F1239CFD921FE]( 0x46A0BCA90BC2137, f22_local9 )
+				f22_local13.stageDetails = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_more_players", f22_local9 )
 				f22_local13.showWaitingWidget = true
 				Lobby.Matchmaking.UpdatePublicLobby( f22_local13 )
 			end
@@ -895,7 +895,7 @@ Lobby.Timer.AutoMPArenaPumpClient = function ( f24_arg0 )
 		Lobby.Timer.UnlockLobby( f24_local0, true )
 	elseif f24_local2 == Lobby.Timer.LOBBY_STATUS.VOTING then
 		Lobby.MapVote.ShowVote()
-		Engine.SetModelValue( f24_local6, Engine[0xF9F1239CFD921FE]( 0x8E27051A1C44827 ) .. ": " .. f24_local3 )
+		Engine.SetModelValue( f24_local6, Engine[0xF9F1239CFD921FE]( "menu/votingtimeremaining" ) .. ": " .. f24_local3 )
 		Lobby.Matchmaking.UpdatePublicLobby( {
 			stage = LuaEnum.PUBLIC_LOBBY.INTERMISSION,
 			intermissionTime = f24_local3
@@ -909,7 +909,7 @@ Lobby.Timer.AutoMPArenaPumpClient = function ( f24_arg0 )
 		f24_local8.stageTitle = 0xC4D2D56E3932FAB
 		local f24_local11
 		if f24_local4 > 1 then
-			f24_local11 = Engine[0xF9F1239CFD921FE]( 0x46A0BCA90BC2137, f24_local4 )
+			f24_local11 = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_more_players", f24_local4 )
 			if not f24_local11 then
 			
 			else
@@ -919,7 +919,7 @@ Lobby.Timer.AutoMPArenaPumpClient = function ( f24_arg0 )
 				Engine.SetModelValue( f24_local6, "" )
 			end
 		end
-		f24_local11 = Engine[0xF9F1239CFD921FE]( 0x5A08D09755BAA8E )
+		f24_local11 = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_1_more_player" )
 	elseif f24_local2 == Lobby.Timer.LOBBY_STATUS.NEED_BALANCE then
 		Lobby.MapVote.ShowLockedIn()
 		f24_local8.stageDetails = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_more_players_teams" )
@@ -943,7 +943,7 @@ Lobby.Timer.AutoMPArenaPumpClient = function ( f24_arg0 )
 			Lobby.Matchmaking.UpdatePublicLobby( {
 				stage = LuaEnum.PUBLIC_LOBBY.START_MATCH,
 				startTime = f24_local3,
-				stageDetails = Engine[0xF9F1239CFD921FE]( 0x3938FD7959AB087, f24_local3 )
+				stageDetails = Engine[0xF9F1239CFD921FE]( "mp/match_starting", f24_local3 )
 			} )
 			f24_local9 = f24_local3
 			Engine[0x3B9F1AA6A523204]( Engine[0x20826BD382E3A23]( Enum.LobbyModule[0xC46B73E8E18BA2], f24_local1, Engine.GetXUID64( f24_local0 ) ) )
@@ -1009,7 +1009,7 @@ Lobby.Timer.AutoZMPump = function ()
 	if f25_local21 < f25_local7 then
 		f25_local21 = f25_local7
 	end
-	f25_local22 = math.floor( math.ceil( Dvar["lobby_readyuppercentrequired"]:get() * f25_local21 ) - f25_local20 )
+	f25_local22 = math.floor( math.ceil( Dvar.lobby_readyuppercentrequired:get() * f25_local21 ) - f25_local20 )
 	if f25_local9 then
 		if f25_local10 then
 			Lobby.MapVote.Hide()
@@ -1030,13 +1030,13 @@ Lobby.Timer.AutoZMPump = function ()
 			if f25_local8 == 1 then
 				f25_local16.stage = LuaEnum.PUBLIC_LOBBY.SEARCH_STAGE_3
 				f25_local16.stageTitle = 0xC4D2D56E3932FAB
-				f25_local16.stageDetails = Engine[0xF9F1239CFD921FE]( 0x5A08D09755BAA8E )
+				f25_local16.stageDetails = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_1_more_player" )
 				Lobby.Matchmaking.UpdatePublicLobby( f25_local16 )
 				f25_local17 = f25_local5
 			else
 				f25_local16.stage = LuaEnum.PUBLIC_LOBBY.SEARCH_STAGE_3
 				f25_local16.stageTitle = 0xC4D2D56E3932FAB
-				f25_local16.stageDetails = Engine[0xF9F1239CFD921FE]( 0x46A0BCA90BC2137, f25_local8 )
+				f25_local16.stageDetails = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_more_players", f25_local8 )
 				Lobby.Matchmaking.UpdatePublicLobby( f25_local16 )
 			end
 			f25_local2 = Lobby.Timer.LOBBY_STATUS.NEED_PLAYERS
@@ -1049,7 +1049,7 @@ Lobby.Timer.AutoZMPump = function ()
 		if f25_local10 and Lobby.MapVote.GetMapVoteStatus() ~= LuaEnum.MAP_VOTE_STATE.LOCKEDIN then
 			Lobby.MapVote.ShowVote()
 		end
-		if 0 < Dvar["lobby_readyuppercentrequired"]:get() then
+		if 0 < Dvar.lobby_readyuppercentrequired:get() then
 			if f25_local8 > 0 then
 				f25_local2 = Lobby.Timer.LOBBY_STATUS.NEED_PLAYERS
 				f25_local3 = Lobby.Timer.MATCH_START_INVALID
@@ -1057,12 +1057,12 @@ Lobby.Timer.AutoZMPump = function ()
 				if f25_local22 == 1 then
 					f25_local16.stage = LuaEnum.PUBLIC_LOBBY.SEARCH_STAGE_3
 					f25_local16.stageTitle = 0xC4D2D56E3932FAB
-					f25_local16.stageDetails = Engine[0xF9F1239CFD921FE]( 0x231FC751DC50156 )
+					f25_local16.stageDetails = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_player_to_be_ready" )
 					Lobby.Matchmaking.UpdatePublicLobby( f25_local16 )
 				else
 					f25_local16.stage = LuaEnum.PUBLIC_LOBBY.SEARCH_STAGE_3
 					f25_local16.stageTitle = 0xC4D2D56E3932FAB
-					f25_local16.stageDetails = Engine[0xF9F1239CFD921FE]( 0x96C7DC086052CF, f25_local22 )
+					f25_local16.stageDetails = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_players_to_be_ready", f25_local22 )
 					Lobby.Matchmaking.UpdatePublicLobby( f25_local16 )
 				end
 				f25_local3 = f25_local22
@@ -1071,7 +1071,7 @@ Lobby.Timer.AutoZMPump = function ()
 					Lobby.MapVote.LockedInVote()
 				end
 				f25_local23 = LobbyData.GetCurrentMenuTarget()
-				if f25_local21 == 1 and f25_local23["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE ) then
+				if f25_local21 == 1 and f25_local23.id == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE ) then
 					f25_local2 = Lobby.Timer.LOBBY_STATUS.STARTING
 					f25_local4 = Engine[0x9D33D652B9B0F3B]() + Dvar[0x1458BE78EBED7B]:get()
 				else
@@ -1092,7 +1092,7 @@ Lobby.Timer.AutoZMPump = function ()
 		if f25_local8 > 0 then
 			f25_local2 = Lobby.Timer.LOBBY_STATUS.NEED_PLAYERS
 			f25_local3 = Lobby.Timer.MATCH_START_INVALID
-		elseif 0 < Dvar["lobby_readyuppercentrequired"]:get() and f25_local22 > 0 then
+		elseif 0 < Dvar.lobby_readyuppercentrequired:get() and f25_local22 > 0 then
 			f25_local2 = Lobby.Timer.LOBBY_STATUS.NEED_READYUP
 			f25_local3 = Lobby.Timer.MATCH_START_INVALID
 		else
@@ -1100,7 +1100,7 @@ Lobby.Timer.AutoZMPump = function ()
 				Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x59962D5EF982597], "Current Preload Precentage " .. f25_local15 .. "\n" )
 				Lobby.Timer.lastValue = f25_local15
 			end
-			Engine.SetModelValue( Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.lobbyStatus" ), Engine[0xF9F1239CFD921FE]( 0xA395ECFCBED4975, f25_local15 ) )
+			Engine.SetModelValue( Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.lobbyStatus" ), Engine[0xF9F1239CFD921FE]( "director/preloading", f25_local15 ) )
 			f25_local25 = 75
 			if Dvar[0x46363E3FF24B1CF]:exists() then
 				f25_local25 = Dvar[0x46363E3FF24B1CF]:get()
@@ -1110,7 +1110,7 @@ Lobby.Timer.AutoZMPump = function ()
 				f25_local2 = Lobby.Timer.LOBBY_STATUS.STARTING
 				f25_local26 = 0
 				local f25_local27 = LobbyData.GetCurrentMenuTarget()
-				if f25_local21 == 1 and f25_local27["id"] == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE ) then
+				if f25_local21 == 1 and f25_local27.id == LobbyData.GetLobbyMenuIDByName( LuaEnum.UI.DIRECTOR_ONLINE_ZM_PRIVATE ) then
 					f25_local26 = Dvar[0x1458BE78EBED7B]:get()
 				else
 					f25_local26 = Dvar[0x676A47FE42DA15A]:get()
@@ -1138,17 +1138,17 @@ Lobby.Timer.AutoZMPump = function ()
 		if f25_local8 > 0 then
 			f25_local2 = Lobby.Timer.LOBBY_STATUS.NEED_PLAYERS
 			f25_local3 = Lobby.Timer.MATCH_START_INVALID
-		elseif 0 < Dvar["lobby_readyuppercentrequired"]:get() and f25_local22 > 0 then
+		elseif 0 < Dvar.lobby_readyuppercentrequired:get() and f25_local22 > 0 then
 			f25_local2 = Lobby.Timer.LOBBY_STATUS.NEED_READYUP
 			f25_local3 = Lobby.Timer.MATCH_START_INVALID
 		else
 			f25_local5 = math.floor( (f25_local4 - Engine[0x9D33D652B9B0F3B]()) / 1000 )
 			if f25_local5 > 0 then
-				Engine.SetModelValue( f25_local11, Engine[0xF9F1239CFD921FE]( 0x3938FD7959AB087, f25_local5 ) )
+				Engine.SetModelValue( f25_local11, Engine[0xF9F1239CFD921FE]( "mp/match_starting", f25_local5 ) )
 				Lobby.Matchmaking.UpdatePublicLobby( {
 					stage = LuaEnum.PUBLIC_LOBBY.START_MATCH,
 					startTime = f25_local5,
-					stageDetails = Engine[0xF9F1239CFD921FE]( 0x3938FD7959AB087, f25_local5 )
+					stageDetails = Engine[0xF9F1239CFD921FE]( "mp/match_starting", f25_local5 )
 				} )
 				f25_local17 = f25_local5
 			else
@@ -1250,7 +1250,7 @@ Lobby.Timer.AutoZMPumpClient = function ( f27_arg0 )
 		f27_local7.stageTitle = 0xC4D2D56E3932FAB
 		local f27_local10
 		if f27_local9 > 1 then
-			f27_local10 = Engine[0xF9F1239CFD921FE]( 0x46A0BCA90BC2137, f27_local9 )
+			f27_local10 = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_more_players", f27_local9 )
 			if not f27_local10 then
 			
 			else
@@ -1258,7 +1258,7 @@ Lobby.Timer.AutoZMPumpClient = function ( f27_arg0 )
 				Lobby.Matchmaking.UpdatePublicLobby( f27_local7 )
 			end
 		end
-		f27_local10 = Engine[0xF9F1239CFD921FE]( 0x5A08D09755BAA8E )
+		f27_local10 = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_1_more_player" )
 	elseif f27_local2 == Lobby.Timer.LOBBY_STATUS.NEED_READYUP then
 		if f27_local6 then
 			Lobby.MapVote.ShowVote()
@@ -1268,7 +1268,7 @@ Lobby.Timer.AutoZMPumpClient = function ( f27_arg0 )
 		f27_local7.stageTitle = 0xC4D2D56E3932FAB
 		local f27_local10
 		if f27_local9 > 1 then
-			f27_local10 = Engine[0xF9F1239CFD921FE]( 0x96C7DC086052CF, f27_local9 )
+			f27_local10 = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_players_to_be_ready", f27_local9 )
 			if not f27_local10 then
 			
 			else
@@ -1276,7 +1276,7 @@ Lobby.Timer.AutoZMPumpClient = function ( f27_arg0 )
 				Lobby.Matchmaking.UpdatePublicLobby( f27_local7 )
 			end
 		end
-		f27_local10 = Engine[0xF9F1239CFD921FE]( 0x231FC751DC50156 )
+		f27_local10 = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_player_to_be_ready" )
 	elseif f27_local2 == Lobby.Timer.LOBBY_STATUS.STARTING then
 		if f27_local6 then
 			Lobby.MapVote.ShowLockedIn()
@@ -1286,7 +1286,7 @@ Lobby.Timer.AutoZMPumpClient = function ( f27_arg0 )
 			Lobby.Matchmaking.UpdatePublicLobby( {
 				stage = LuaEnum.PUBLIC_LOBBY.START_MATCH,
 				startTime = f27_local9,
-				stageDetails = Engine[0xF9F1239CFD921FE]( 0x3938FD7959AB087, f27_local9 )
+				stageDetails = Engine[0xF9F1239CFD921FE]( "mp/match_starting", f27_local9 )
 			} )
 			f27_local8 = f27_local9
 		else
@@ -1356,7 +1356,7 @@ Lobby.Timer.ManualPump = function ()
 			Engine.PrintInfo( Enum[0x7A63DCD561B0FA8][0x59962D5EF982597], "Current Preload Precentage " .. f30_local11 .. "\n" )
 			Lobby.Timer.lastValue = f30_local11
 		end
-		Engine.SetModelValue( Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.lobbyStatus" ), Engine[0xF9F1239CFD921FE]( 0xA395ECFCBED4975, f30_local11 ) )
+		Engine.SetModelValue( Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.lobbyStatus" ), Engine[0xF9F1239CFD921FE]( "director/preloading", f30_local11 ) )
 		local f30_local14 = 75
 		if Dvar[0x46363E3FF24B1CF]:exists() then
 			f30_local14 = Dvar[0x46363E3FF24B1CF]:get()
@@ -1379,7 +1379,7 @@ Lobby.Timer.ManualPump = function ()
 		Lobby.Timer.lobbyTimer.status = f30_local2
 		local f30_local13 = Engine.CreateModel( Engine.GetGlobalModel(), "lobbyRoot.lobbyStatus" )
 		if f30_local4 > 0 then
-			Engine.SetModelValue( f30_local13, Engine[0xF9F1239CFD921FE]( 0x3938FD7959AB087, f30_local4 ) )
+			Engine.SetModelValue( f30_local13, Engine[0xF9F1239CFD921FE]( "mp/match_starting", f30_local4 ) )
 			f30_local9 = f30_local4
 		else
 			Engine.SetModelValue( f30_local13, "" )
@@ -1465,7 +1465,7 @@ Lobby.Timer.ManualPumpClient = function ( f32_arg0 )
 		Engine.SetModelValue( f32_local4, "" )
 	elseif f32_local2 == Lobby.Timer.LOBBY_STATUS.STARTING then
 		if f32_local3 > 0 then
-			Engine.SetModelValue( f32_local4, Engine[0xF9F1239CFD921FE]( 0x3938FD7959AB087, f32_local3 ) )
+			Engine.SetModelValue( f32_local4, Engine[0xF9F1239CFD921FE]( "mp/match_starting", f32_local3 ) )
 			f32_local6 = f32_local3
 		else
 			Engine.SetModelValue( f32_local4, "" )
@@ -1503,7 +1503,7 @@ Lobby.Timer.ManualCPPump = function ()
 			f33_local4 = math.floor( (Lobby.Timer.lobbyTimer.endTime - Engine[0x9D33D652B9B0F3B]()) / 1000 )
 			f33_local2 = Lobby.Timer.LOBBY_STATUS.STARTING
 			if f33_local4 > 0 then
-				Engine.SetModelValue( f33_local10, Engine[0xF9F1239CFD921FE]( 0x3938FD7959AB087, f33_local4 ) )
+				Engine.SetModelValue( f33_local10, Engine[0xF9F1239CFD921FE]( "mp/match_starting", f33_local4 ) )
 				f33_local9 = f33_local4
 			else
 				Engine.SetModelValue( f33_local10, "" )
@@ -1561,7 +1561,7 @@ Lobby.Timer.ManualCPPumpClient = function ( f35_arg0 )
 		Engine.SetModelValue( f35_local4, "" )
 	elseif f35_local2 == Lobby.Timer.LOBBY_STATUS.STARTING then
 		if f35_local3 > 0 then
-			Engine.SetModelValue( f35_local4, Engine[0xF9F1239CFD921FE]( 0x3938FD7959AB087, f35_local3 ) )
+			Engine.SetModelValue( f35_local4, Engine[0xF9F1239CFD921FE]( "mp/match_starting", f35_local3 ) )
 			f35_local6 = f35_local3
 		else
 			Engine.SetModelValue( f35_local4, "" )
@@ -1633,14 +1633,14 @@ Lobby.Timer.AutoWZPump = function ()
 			if f36_local9 == 1 then
 				f36_local13.stage = LuaEnum.PUBLIC_LOBBY.SEARCH_STAGE_3
 				f36_local13.stageTitle = 0xC4D2D56E3932FAB
-				f36_local13.stageDetails = Engine[0xF9F1239CFD921FE]( 0x5A08D09755BAA8E )
+				f36_local13.stageDetails = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_1_more_player" )
 				f36_local13.showWaitingWidget = true
 				Lobby.Matchmaking.UpdatePublicLobby( f36_local13 )
 				f36_local16 = f36_local7
 			else
 				f36_local13.stage = LuaEnum.PUBLIC_LOBBY.SEARCH_STAGE_3
 				f36_local13.stageTitle = 0xC4D2D56E3932FAB
-				f36_local13.stageDetails = Engine[0xF9F1239CFD921FE]( 0x46A0BCA90BC2137, f36_local9 )
+				f36_local13.stageDetails = Engine[0xF9F1239CFD921FE]( "menu/waiting_for_more_players", f36_local9 )
 				f36_local13.showWaitingWidget = true
 				Lobby.Matchmaking.UpdatePublicLobby( f36_local13 )
 			end
@@ -1754,7 +1754,7 @@ Lobby.Timer.AutoWZPumpClient = function ( f38_arg0 )
 			Lobby.Matchmaking.UpdatePublicLobby( {
 				stage = LuaEnum.PUBLIC_LOBBY.START_MATCH,
 				startTime = f38_local3,
-				stageDetails = Engine[0xF9F1239CFD921FE]( 0x3938FD7959AB087, f38_local3 )
+				stageDetails = Engine[0xF9F1239CFD921FE]( "mp/match_starting", f38_local3 )
 			} )
 			f38_local9 = f38_local3
 			Engine[0x3B9F1AA6A523204]( Engine[0x20826BD382E3A23]( Enum.LobbyModule[0xC46B73E8E18BA2], f38_local1, Engine.GetXUID64( f38_local0 ) ) )
@@ -1793,7 +1793,7 @@ Lobby.Timer.TestingPump = function ()
 		f39_local4 = math.floor( (Lobby.Timer.lobbyTimer.endTime - Engine[0x9D33D652B9B0F3B]()) / 1000 )
 		f39_local2 = Lobby.Timer.LOBBY_STATUS.STARTING
 		if f39_local4 > 0 then
-			Engine.SetModelValue( f39_local9, Engine[0xF9F1239CFD921FE]( 0x3938FD7959AB087, f39_local4 ) )
+			Engine.SetModelValue( f39_local9, Engine[0xF9F1239CFD921FE]( "mp/match_starting", f39_local4 ) )
 			f39_local8 = f39_local4
 		else
 			Engine.SetModelValue( f39_local9, "" )
@@ -1842,7 +1842,7 @@ Lobby.Timer.TestingPumpClient = function ( f41_arg0 )
 		Engine.SetModelValue( f41_local4, "" )
 	elseif f41_local2 == Lobby.Timer.LOBBY_STATUS.STARTING then
 		if f41_local3 > 0 then
-			Engine.SetModelValue( f41_local4, Engine[0xF9F1239CFD921FE]( 0x3938FD7959AB087, f41_local3 ) )
+			Engine.SetModelValue( f41_local4, Engine[0xF9F1239CFD921FE]( "mp/match_starting", f41_local3 ) )
 			f41_local6 = f41_local3
 		else
 			Engine.SetModelValue( f41_local4, "" )
@@ -1876,7 +1876,7 @@ Lobby.Timer.UpdateLobbyStatusInfo = function ( f45_arg0 )
 		return 
 	end
 	local f45_local5 = LobbyData.GetLobbyMenuByID( Engine[0x9882F293C327557]() )
-	local f45_local6 = f45_local5[0x558B67A321D1120]
+	local f45_local6 = f45_local5.lobbytimertype
 	if f45_local6 == LuaEnum.TIMER_TYPE.NONE then
 		
 	elseif f45_local6 == LuaEnum.TIMER_TYPE.AUTO_CP then
@@ -1921,7 +1921,7 @@ Lobby.Timer.HostingLobby = function ( f46_arg0 )
 	Lobby.Timer.lobbyTimer.lobbyTimerType = f46_local3
 	if LuaUtils.IsArenaPublicGame() and f46_local4 then
 		Lobby.Timer.lobbyTimer.status = Lobby.Timer.LOBBY_STATUS.POST_GAME
-	elseif Engine.CurrentSessionMode() == Enum.eModes[0xBF1DCC8138A9D39] and f46_local4 then
+	elseif Engine.CurrentSessionMode() == Enum.eModes.mode_warzone and f46_local4 then
 		Lobby.Timer.lobbyTimer.status = Lobby.Timer.LOBBY_STATUS.POST_GAME
 	else
 		Lobby.Timer.lobbyTimer.status = Lobby.Timer.LOBBY_STATUS.IDLE

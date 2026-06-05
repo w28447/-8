@@ -37,7 +37,7 @@ LUI.createMenu.zm_arcade_keys = function ( f1_arg0, f1_arg1 )
 	self.KeyEnabled = KeyEnabled
 	
 	local KeyCount = LUI.UIText.new( 0, 0, 171.5, 202.5, 0, 0, 95.5, 128.5 )
-	KeyCount:setText( Engine[0xF9F1239CFD921FE]( 0x78C6299DB16E268 ) )
+	KeyCount:setText( Engine[0xF9F1239CFD921FE]( "zmarcade/key_count" ) )
 	KeyCount:setTTF( "skorzhen" )
 	KeyCount:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	KeyCount:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

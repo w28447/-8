@@ -125,7 +125,7 @@ CoD.ZMAARGameInfo.__clipsPerState = {
 			f11_arg0:setupElementClipCounter( 1 )
 			f11_arg0.VictoryDefeat:completeAnimation()
 			f11_arg0.VictoryDefeat:setAlpha( 0 )
-			f11_arg0.VictoryDefeat:setText( Engine[0xF9F1239CFD921FE]( 0x7BB5E9B11633E3 ) )
+			f11_arg0.VictoryDefeat:setText( Engine[0xF9F1239CFD921FE]( "aar/stats" ) )
 			f11_arg0.clipFinished( f11_arg0.VictoryDefeat )
 		end
 	},
@@ -135,7 +135,7 @@ CoD.ZMAARGameInfo.__clipsPerState = {
 			f12_arg0:setupElementClipCounter( 1 )
 			f12_arg0.VictoryDefeat:completeAnimation()
 			f12_arg0.VictoryDefeat:setAlpha( 0 )
-			f12_arg0.VictoryDefeat:setText( Engine[0xF9F1239CFD921FE]( 0x5E9C86634E25EA8 ) )
+			f12_arg0.VictoryDefeat:setText( Engine[0xF9F1239CFD921FE]( "aar/summary" ) )
 			f12_arg0.clipFinished( f12_arg0.VictoryDefeat )
 		end
 	},

@@ -66,7 +66,7 @@ CoD.AARPerformanceWidgets.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 		{
 			stateName = "VisibleSolo",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsModelValueEqualToEnum( f1_arg1, "AAR.activeTab", CoD.AARUtility.AARTabs.AAR_SUMMARY ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "gametype", 0x5F8EE90CBFFA9E7 )
+				return CoD.ModelUtility.IsModelValueEqualToEnum( f1_arg1, "AAR.activeTab", CoD.AARUtility.AARTabs.AAR_SUMMARY ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "gametype", "warzone_solo" )
 			end
 		},
 		{

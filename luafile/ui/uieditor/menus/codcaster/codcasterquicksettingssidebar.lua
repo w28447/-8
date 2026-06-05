@@ -1,7 +1,7 @@
 require( "ui/uieditor/widgets/codcaster/codcastersettingfooter" )
 require( "ui/uieditor/widgets/codcaster/codcastersettingssidebarleftbuttoncontainer" )
 require( "ui/uieditor/widgets/header/header_container_frontend" )
-require( "x64:48be5c6feaceeb4" )
+require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settinginfo" )
 require( "ui/uieditor/widgets/startmenu/options/flyout/startmenu_options_settingslider" )
 require( "ui/uieditor/widgets/startmenu/options/startmenuoptionsbackground" )
 require( "ui/uieditor/widgets/store/storecommontextbacking" )
@@ -66,12 +66,12 @@ LUI.createMenu.CodCasterQuickSettingsSideBar = function ( f2_arg0, f2_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f2_local1, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f3_local0
 	end )
-	f2_local1:AddButtonCallbackFunction( ButtonList, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f4_arg0, f4_arg1, f4_arg2, f4_arg3 )
-		ToggleCodCasterQuickSettings( self, f4_arg0, f4_arg2 )
-		ToggleControllerModelValueNumber( f4_arg2, "CodCaster.profileSettingsUpdated" )
+	f2_local1:AddButtonCallbackFunction( ButtonList, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		ToggleCodCasterQuickSettings( self, element, controller )
+		ToggleControllerModelValueNumber( controller, "CodCaster.profileSettingsUpdated" )
 		return true
-	end, function ( f5_arg0, f5_arg1, f5_arg2 )
-		CoD.Menu.SetButtonLabel( f5_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, nil )
 		return false
 	end, false )
 	self:addElement( ButtonList )
@@ -95,7 +95,7 @@ LUI.createMenu.CodCasterQuickSettingsSideBar = function ( f2_arg0, f2_arg1 )
 	local TopBar2 = LUI.UIImage.new( 0, 0, 0, 820, 0, 0, 51, 54 )
 	TopBar2:setRGB( 0.46, 0.46, 0.51 )
 	TopBar2:setAlpha( 0.8 )
-	TopBar2:setImage( RegisterImage( 0x42BCCF45B82FBED ) )
+	TopBar2:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_bar" ) )
 	TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	TopBar2:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( TopBar2 )
@@ -132,15 +132,15 @@ LUI.createMenu.CodCasterQuickSettingsSideBar = function ( f2_arg0, f2_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f2_local1, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f6_local0
 	end )
-	f2_local1:AddButtonCallbackFunction( backButton, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
+	f2_local1:AddButtonCallbackFunction( backButton, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
 		CoD.GridAndListUtility.SetFocusToFirstSelectableItem( self.ButtonList )
-		ToggleControllerModelValueNumber( f7_arg2, "CodCaster.showQuickSettingsSideBar" )
-		SaveShoutcasterSettings( self, f7_arg0, f7_arg2 )
-		GoBack( self, f7_arg2 )
+		ToggleControllerModelValueNumber( controller, "CodCaster.showQuickSettingsSideBar" )
+		SaveShoutcasterSettings( self, element, controller )
+		GoBack( self, controller )
 		SetLuiKeyCatcher( false )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "MOUSE1" )
 		return false
 	end, false )
 	self:addElement( backButton )
@@ -149,7 +149,7 @@ LUI.createMenu.CodCasterQuickSettingsSideBar = function ( f2_arg0, f2_arg1 )
 	local resetButton = nil
 	
 	resetButton = CoD.featureOverlay_Button.new( f2_local1, f2_arg0, 0, 0, 302, 502, 0, 0, 924, 984 )
-	resetButton.ButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0xFA987631536BD44 ) )
+	resetButton.ButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/reset_to_default" ) )
 	resetButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f9_local0 = nil
 		if element.gainFocus then
@@ -160,11 +160,11 @@ LUI.createMenu.CodCasterQuickSettingsSideBar = function ( f2_arg0, f2_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f2_local1, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f9_local0
 	end )
-	f2_local1:AddButtonCallbackFunction( resetButton, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		CoD.CodCasterUtility.OpenResetCodCasterSettingsPopup( self, f10_arg0, f10_arg2, "", f10_arg1 )
+	f2_local1:AddButtonCallbackFunction( resetButton, f2_arg0, Enum.LUIButton[0x755DA1E2E7C263F], "MOUSE1", function ( element, menu, controller, model )
+		CoD.CodCasterUtility.OpenResetCodCasterSettingsPopup( self, element, controller, "", menu )
 		return true
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "MOUSE1" )
 		return false
 	end, false )
 	self:addElement( resetButton )
@@ -228,36 +228,36 @@ LUI.createMenu.CodCasterQuickSettingsSideBar = function ( f2_arg0, f2_arg1 )
 	f2_local17( f2_local16, f2_local18.LastInput, function ( f19_arg0, f19_arg1 )
 		CoD.Menu.UpdateButtonShownState( f19_arg1, f2_local1, f2_arg0, Enum.LUIButton[0xC083113BC81F23F] )
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], "R", function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
-		if not IsRepeatButtonPress( f20_arg3 ) then
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], "R", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) then
 			CoD.GridAndListUtility.SetFocusToFirstSelectableItem( self.ButtonList )
-			ToggleControllerModelValueNumber( f20_arg2, "CodCaster.showQuickSettingsSideBar" )
-			SaveShoutcasterSettings( self, f20_arg0, f20_arg2 )
-			GoBack( self, f20_arg2 )
+			ToggleControllerModelValueNumber( controller, "CodCaster.showQuickSettingsSideBar" )
+			SaveShoutcasterSettings( self, element, controller )
+			GoBack( self, controller )
 			SetLuiKeyCatcher( false )
 			return true
 		else
 			
 		end
-	end, function ( f21_arg0, f21_arg1, f21_arg2 )
+	end, function ( element, menu, controller )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "menu/back", nil, "R" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "menu/back", nil, "R" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_2", function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
-		if IsGamepad( f22_arg2 ) then
-			CoD.CodCasterUtility.ResetCodcasterSettingsGamepad( f22_arg2, f22_arg1 )
+	f2_local1:AddButtonCallbackFunction( self, f2_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_2", function ( element, menu, controller, model )
+		if IsGamepad( controller ) then
+			CoD.CodCasterUtility.ResetCodcasterSettingsGamepad( controller, menu )
 			PlaySoundAlias( "uin_party_ease_slide" )
 			return true
 		else
 			
 		end
-	end, function ( f23_arg0, f23_arg1, f23_arg2 )
-		if IsGamepad( f23_arg2 ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xFA987631536BD44, Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 750 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/reset_to_default", Enum[0xBEBDBAEEB3ECCCA][0x2919C98A7A845F0] | 750 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], "ui_contextual_2" )
 			return true
 		else
 			return false
@@ -317,7 +317,7 @@ CoD.CodCasterQuickSettingsSideBar.__resetProperties = function ( f25_arg0 )
 	f25_arg0.backButton:setAlpha( 1 )
 	f25_arg0.backButton.ButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/back" ) )
 	f25_arg0.resetButton:setAlpha( 1 )
-	f25_arg0.resetButton.ButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0xFA987631536BD44 ) )
+	f25_arg0.resetButton.ButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/reset_to_default" ) )
 	f25_arg0.FooterContainerIngameRight:setLeftRight( 0, 0, 140, 720 )
 	f25_arg0.FooterContainerIngameRight:setTopBottom( 0, 0, 1032, 1080 )
 	f25_arg0.FooterContainerIngameRight:setAlpha( 1 )
@@ -342,7 +342,7 @@ CoD.CodCasterQuickSettingsSideBar.__clipsPerState = {
 			f26_arg0:setupElementClipCounter( 1 )
 			f26_arg0.backButton:completeAnimation()
 			f26_arg0.backButton.ButtonContainer.Title:completeAnimation()
-			f26_arg0.backButton.ButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0xFA987631536BD44 ) )
+			f26_arg0.backButton.ButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/reset_to_default" ) )
 			f26_arg0.clipFinished( f26_arg0.backButton )
 		end
 	},
@@ -439,7 +439,7 @@ CoD.CodCasterQuickSettingsSideBar.__clipsPerState = {
 			f29_arg0.resetButton:completeAnimation()
 			f29_arg0.resetButton.ButtonContainer.Title:completeAnimation()
 			f29_arg0.resetButton:setAlpha( 1 )
-			f29_arg0.resetButton.ButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( 0xFA987631536BD44 ) )
+			f29_arg0.resetButton.ButtonContainer.Title:setText( Engine[0xF9F1239CFD921FE]( "menu/reset_to_default" ) )
 			f29_arg0.clipFinished( f29_arg0.resetButton )
 		end
 	}

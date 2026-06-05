@@ -99,7 +99,7 @@ CoD.ItemShopPreviewButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local VideoPlayIcon = LUI.UIImage.new( 0.5, 0.5, -32, 32, 0.5, 0.5, -42, 22 )
 	VideoPlayIcon:setAlpha( 0.58 )
-	VideoPlayIcon:setImage( RegisterImage( 0x28C77CAF49CB973 ) )
+	VideoPlayIcon:setImage( RegisterImage( "uie_ui_icon_blackmarket_play_button" ) )
 	self:addElement( VideoPlayIcon )
 	self.VideoPlayIcon = VideoPlayIcon
 	
@@ -121,7 +121,7 @@ CoD.ItemShopPreviewButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 				local f7_local0 = IsPC()
 				if f7_local0 then
 					if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "allowFrozenMoment", true ) and not CoD.ModelUtility.IsSelfModelValueNonEmptyString( element, f1_arg1, "movieName" ) then
-						f7_local0 = CoD.ModelUtility.IsSelfModelValueEqualToEitherValue( self, f1_arg1, "itemCategory", 0x73452998C43A16, 0xAD68520D53FDBFB )
+						f7_local0 = CoD.ModelUtility.IsSelfModelValueEqualToEitherValue( self, f1_arg1, "itemCategory", "single_weapon_charm", "single_death_fx" )
 					else
 						f7_local0 = false
 					end
@@ -132,7 +132,7 @@ CoD.ItemShopPreviewButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 		{
 			stateName = "CamoOrDeathFXPreview",
 			condition = function ( menu, element, event )
-				return CoD.ModelUtility.IsSelfModelValueEqualToEitherValue( self, f1_arg1, "itemCategory", 0x73452998C43A16, 0xAD68520D53FDBFB )
+				return CoD.ModelUtility.IsSelfModelValueEqualToEitherValue( self, f1_arg1, "itemCategory", "single_weapon_charm", "single_death_fx" )
 			end
 		},
 		{

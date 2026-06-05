@@ -9,7 +9,7 @@ CoD.CodCasterTeamIdentityInformation.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local outlinelogo3 = LUI.UIImage.new( 0, 0, 237, 553, 0, 0, 163, 217 )
-	outlinelogo3:setImage( RegisterImage( 0x1122167FC04DCF4 ) )
+	outlinelogo3:setImage( RegisterImage( "uie_ui_menu_common_line_square" ) )
 	outlinelogo3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	outlinelogo3:setShaderVector( 0, 0, 0, 0, 0 )
 	outlinelogo3:setupNineSliceShader( 20, 20 )
@@ -17,7 +17,7 @@ CoD.CodCasterTeamIdentityInformation.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.outlinelogo3 = outlinelogo3
 	
 	local outlinelogo2 = LUI.UIImage.new( 0, 0, 237, 553, 0, 0, 58, 112 )
-	outlinelogo2:setImage( RegisterImage( 0x1122167FC04DCF4 ) )
+	outlinelogo2:setImage( RegisterImage( "uie_ui_menu_common_line_square" ) )
 	outlinelogo2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	outlinelogo2:setShaderVector( 0, 0, 0, 0, 0 )
 	outlinelogo2:setupNineSliceShader( 20, 20 )
@@ -25,7 +25,7 @@ CoD.CodCasterTeamIdentityInformation.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.outlinelogo2 = outlinelogo2
 	
 	local outlinelogo = LUI.UIImage.new( 0, 0, 9, 201, 0, 0, 58, 250 )
-	outlinelogo:setImage( RegisterImage( 0x1122167FC04DCF4 ) )
+	outlinelogo:setImage( RegisterImage( "uie_ui_menu_common_line_square" ) )
 	outlinelogo:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	outlinelogo:setShaderVector( 0, 0, 0, 0, 0 )
 	outlinelogo:setupNineSliceShader( 20, 20 )
@@ -34,7 +34,7 @@ CoD.CodCasterTeamIdentityInformation.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local TeamLogoTitle = LUI.UIText.new( 0, 0, 13, 311, 0, 0, 30, 51 )
 	TeamLogoTitle:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	TeamLogoTitle:setText( Engine[0xF9F1239CFD921FE]( 0x53D63E3F4E6CDC0 ) )
+	TeamLogoTitle:setText( Engine[0xF9F1239CFD921FE]( "codcaster/team1_logo" ) )
 	TeamLogoTitle:setTTF( "ttmussels_regular" )
 	TeamLogoTitle:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	TeamLogoTitle:setShaderVector( 0, 0.08, 0, 0, 0 )
@@ -58,7 +58,7 @@ CoD.CodCasterTeamIdentityInformation.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local TeamNameTitle = LUI.UIText.new( 0, 0, 241, 541, 0, 0, 30, 51 )
 	TeamNameTitle:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	TeamNameTitle:setText( Engine[0xF9F1239CFD921FE]( 0xD1CDFD2190AC31C ) )
+	TeamNameTitle:setText( Engine[0xF9F1239CFD921FE]( "codcaster/team1_name" ) )
 	TeamNameTitle:setTTF( "ttmussels_regular" )
 	TeamNameTitle:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	TeamNameTitle:setShaderVector( 0, 0.08, 0, 0, 0 )
@@ -85,7 +85,7 @@ CoD.CodCasterTeamIdentityInformation.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local TeamColorTitle = LUI.UIText.new( 0, 0, 241, 541, 0, 0, 141, 162 )
 	TeamColorTitle:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	TeamColorTitle:setText( Engine[0xF9F1239CFD921FE]( 0x1BE11FFFC43DC2E ) )
+	TeamColorTitle:setText( Engine[0xF9F1239CFD921FE]( "codcaster/team1_color" ) )
 	TeamColorTitle:setTTF( "ttmussels_regular" )
 	TeamColorTitle:setMaterial( LUI.UIImage.GetCachedMaterial( 0xAE166D9BA8C6907 ) )
 	TeamColorTitle:setShaderVector( 0, 0.08, 0, 0, 0 )

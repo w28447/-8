@@ -9,7 +9,7 @@ CoD.CustomGames_OptionCategoryCustomLabel.new = function ( f1_arg0, f1_arg1, f1_
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Default = LUI.UIText.new( 0, 0, 0, 220, 0, 0, 0, 18 )
-	Default:setText( Engine[0xF9F1239CFD921FE]( 0x19D60864B204458 ) )
+	Default:setText( Engine[0xF9F1239CFD921FE]( "menu/default" ) )
 	Default:setTTF( "ttmussels_regular" )
 	Default:setAlignment( Engine[0x7F8853DC3581AA4]( Enum.LUIAlignment[0x58C8A85F2048829] ) )
 	Default:setAlignment( Engine[0x7F8853DC3581AA4]( Enum.LUIAlignment[0xF41D595A2B0EDF3] ) )
@@ -19,7 +19,7 @@ CoD.CustomGames_OptionCategoryCustomLabel.new = function ( f1_arg0, f1_arg1, f1_
 	local Custom = LUI.UIText.new( 0, 0, 0, 220, 0, 0, 0, 18 )
 	Custom:setRGB( 0.93, 0.45, 0.05 )
 	Custom:setAlpha( 0 )
-	Custom:setText( Engine[0xF9F1239CFD921FE]( 0xEEBDA1A33FABDC ) )
+	Custom:setText( Engine[0xF9F1239CFD921FE]( "menu/custom" ) )
 	Custom:setTTF( "ttmussels_regular" )
 	Custom:setAlignment( Engine[0x7F8853DC3581AA4]( Enum.LUIAlignment[0x58C8A85F2048829] ) )
 	Custom:setAlignment( Engine[0x7F8853DC3581AA4]( Enum.LUIAlignment[0xF41D595A2B0EDF3] ) )

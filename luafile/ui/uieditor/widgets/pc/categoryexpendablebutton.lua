@@ -55,7 +55,7 @@ CoD.CategoryExpendableButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	GlowAdditive = LUI.UIImage.new( 0, 0, 6, 72, 0.5, 0.5, -18, 18 )
 	GlowAdditive:setAlpha( 0 )
 	GlowAdditive:setZRot( -90 )
-	GlowAdditive:setImage( RegisterImage( 0xAD405802E3EEE94 ) )
+	GlowAdditive:setImage( RegisterImage( "uie_icon_frontend_navigation_glowmed" ) )
 	GlowAdditive:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowAdditive )
 	self.GlowAdditive = GlowAdditive

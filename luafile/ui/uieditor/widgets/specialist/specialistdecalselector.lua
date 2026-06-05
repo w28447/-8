@@ -73,18 +73,18 @@ CoD.SpecialistDecalSelector.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( decals, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
+	f1_arg0:AddButtonCallbackFunction( decals, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "ui_confirm", function ( element, menu, controller, model )
 		if IsPC() then
-			SetCurrentElementAsActive( self, f6_arg0, f6_arg2 )
-			CoD.PlayerRoleUtility.UpdatePersonalizeSpecialistOutfitItem( f6_arg2, f6_arg0 )
-			CoD.PlayerRoleUtility.EquipOutfitItem( f6_arg1, f6_arg2, f6_arg0 )
+			SetCurrentElementAsActive( self, element, controller )
+			CoD.PlayerRoleUtility.UpdatePersonalizeSpecialistOutfitItem( controller, element )
+			CoD.PlayerRoleUtility.EquipOutfitItem( menu, controller, element )
 			return true
 		else
 			
 		end
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() then
-			CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "", nil, "ui_confirm" )
 			return false
 		else
 			return false

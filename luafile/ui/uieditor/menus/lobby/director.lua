@@ -333,7 +333,7 @@ LUI.createMenu.Director = function ( f1_arg0, f1_arg1 )
 	
 	KoreaErrorMessage = LUI.UIText.new( 0, 0, 374.5, 1583.5, 0, 0, 417, 454 )
 	KoreaErrorMessage:setAlpha( 0 )
-	KoreaErrorMessage:setText( Engine[0xF9F1239CFD921FE]( 0xB582AE90C06D4FF ) )
+	KoreaErrorMessage:setText( Engine[0xF9F1239CFD921FE]( "menu/korea_15plus_blocked_gamemode" ) )
 	KoreaErrorMessage:setTTF( "default" )
 	KoreaErrorMessage:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	KoreaErrorMessage:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -552,317 +552,317 @@ LUI.createMenu.Director = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( f43_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x4D2505E19049444] )
 		CoD.Menu.UpdateButtonShownState( f43_arg1, f1_local1, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A] )
 	end, false )
-	self:registerEventHandler( "unused_gamepad_button", function ( element, event )
+	self:registerEventHandler( "unused_gamepad_button", function ( self, event )
 		local f44_local0 = nil
 		LobbyAddLocalClient( self, event.controller or f1_arg0 )
 		if not f44_local0 then
-			f44_local0 = element:dispatchEventToChildren( event )
+			f44_local0 = self:dispatchEventToChildren( event )
 		end
 		return f44_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], nil, function ( f45_arg0, f45_arg1, f45_arg2, f45_arg3 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x22361E23588705A], nil, function ( element, menu, controller, model )
 		if not IsPC() then
 			PlaySoundAlias( "uin_toggle_generic" )
-			OpenOverlay( self, "StartMenu_Main", f45_arg2, nil )
+			OpenOverlay( self, "StartMenu_Main", controller, nil )
 			return true
 		else
 			
 		end
-	end, function ( f46_arg0, f46_arg1, f46_arg2 )
+	end, function ( element, menu, controller )
 		if not IsPC() then
-			CoD.Menu.SetButtonLabel( f46_arg1, Enum.LUIButton[0x22361E23588705A], "menu/menu", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x22361E23588705A], "menu/menu", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( f47_arg0, f47_arg1, f47_arg2, f47_arg3 )
-		if not IsPC() and not IsLAN() and not IsPlayerAGuest( f47_arg2 ) and IsPlayerAllowedToPlayOnline( f47_arg2 ) and not CoD.DirectorUtility.IsSocialButtonDisabledForDemo( f47_arg2 ) and not CoD.DirectorUtility.ShowDirectorTraining( f47_arg2 ) then
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], nil, function ( element, menu, controller, model )
+		if not IsPC() and not IsLAN() and not IsPlayerAGuest( controller ) and IsPlayerAllowedToPlayOnline( controller ) and not CoD.DirectorUtility.IsSocialButtonDisabledForDemo( controller ) and not CoD.DirectorUtility.ShowDirectorTraining( controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			OpenOverlay( self, "Social_Main", f47_arg2, nil )
+			OpenOverlay( self, "Social_Main", controller, nil )
 			return true
-		elseif CoD.DirectorUtility.ShowDirectorSelect( f47_arg2 ) and IsPC() and not IsLAN() then
-			CoD.BaseUtility.CallCustomElementFunction( self, self.DirectorSelect, f47_arg2, f47_arg1, "_activateFeaturedWidget" )
+		elseif CoD.DirectorUtility.ShowDirectorSelect( controller ) and IsPC() and not IsLAN() then
+			CoD.BaseUtility.CallCustomElementFunction( self, self.DirectorSelect, controller, menu, "_activateFeaturedWidget" )
 			return true
 		else
 			
 		end
-	end, function ( f48_arg0, f48_arg1, f48_arg2 )
-		if not IsPC() and not IsLAN() and not IsPlayerAGuest( f48_arg2 ) and IsPlayerAllowedToPlayOnline( f48_arg2 ) and not CoD.DirectorUtility.IsSocialButtonDisabledForDemo( f48_arg2 ) and not CoD.DirectorUtility.ShowDirectorTraining( f48_arg2 ) then
-			CoD.Menu.SetButtonLabel( f48_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/social", nil, nil )
+	end, function ( element, menu, controller )
+		if not IsPC() and not IsLAN() and not IsPlayerAGuest( controller ) and IsPlayerAllowedToPlayOnline( controller ) and not CoD.DirectorUtility.IsSocialButtonDisabledForDemo( controller ) and not CoD.DirectorUtility.ShowDirectorTraining( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "menu/social", nil, nil )
 			return true
-		elseif CoD.DirectorUtility.ShowDirectorSelect( f48_arg2 ) and IsPC() and not IsLAN() then
-			CoD.Menu.SetButtonLabel( f48_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x0, nil, nil )
+		elseif CoD.DirectorUtility.ShowDirectorSelect( controller ) and IsPC() and not IsLAN() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f49_arg0, f49_arg1, f49_arg2, f49_arg3 )
-		if CoD.DirectorUtility.ShowDirectorCustom( self, f49_arg2 ) and CoD.DirectorUtility.IsOfflineDemo() and IsLobbyNetworkModeLAN() and CoD.BaseUtility.IsButtonHoldFinished( f49_arg3 ) then
-			LobbyGoBack( self, f49_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if CoD.DirectorUtility.ShowDirectorCustom( self, controller ) and CoD.DirectorUtility.IsOfflineDemo() and IsLobbyNetworkModeLAN() and CoD.BaseUtility.IsButtonHoldFinished( model ) then
+			LobbyGoBack( self, controller )
 			return true
-		elseif CoD.DirectorUtility.ShowDirectorSelect( f49_arg2 ) and CoD.DirectorUtility.IsOfflineDemo() and IsLobbyNetworkModeLAN() and CoD.BaseUtility.IsButtonHoldFinished( f49_arg3 ) then
-			CoD.DirectorUtility.NavigateToLobby( f49_arg1, f49_arg2, LuaEnum.UI.DIRECTOR_LAN_MP )
+		elseif CoD.DirectorUtility.ShowDirectorSelect( controller ) and CoD.DirectorUtility.IsOfflineDemo() and IsLobbyNetworkModeLAN() and CoD.BaseUtility.IsButtonHoldFinished( model ) then
+			CoD.DirectorUtility.NavigateToLobby( menu, controller, LuaEnum.UI.DIRECTOR_LAN_MP )
 			return true
-		elseif CoD.DirectorUtility.ShowDirectorSelect( f49_arg2 ) and not IsLAN() and not IsPC() and not CoD.BaseUtility.IsButtonHoldFinished( f49_arg3 ) then
-			CoD.BaseUtility.CallCustomElementFunction( self, self.DirectorSelect, f49_arg2, f49_arg1, "_activateFeaturedWidget" )
+		elseif CoD.DirectorUtility.ShowDirectorSelect( controller ) and not IsLAN() and not IsPC() and not CoD.BaseUtility.IsButtonHoldFinished( model ) then
+			CoD.BaseUtility.CallCustomElementFunction( self, self.DirectorSelect, controller, menu, "_activateFeaturedWidget" )
 			return true
 		else
 			
 		end
-	end, function ( f50_arg0, f50_arg1, f50_arg2 )
-		if CoD.DirectorUtility.ShowDirectorCustom( self, f50_arg2 ) and CoD.DirectorUtility.IsOfflineDemo() and IsLobbyNetworkModeLAN() then
-			CoD.Menu.SetButtonLabel( f50_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 1500 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+	end, function ( element, menu, controller )
+		if CoD.DirectorUtility.ShowDirectorCustom( self, controller ) and CoD.DirectorUtility.IsOfflineDemo() and IsLobbyNetworkModeLAN() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 1500 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return false
-		elseif CoD.DirectorUtility.ShowDirectorSelect( f50_arg2 ) and CoD.DirectorUtility.IsOfflineDemo() and IsLobbyNetworkModeLAN() then
-			CoD.Menu.SetButtonLabel( f50_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 1500 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
+		elseif CoD.DirectorUtility.ShowDirectorSelect( controller ) and CoD.DirectorUtility.IsOfflineDemo() and IsLobbyNetworkModeLAN() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", Enum[0xBEBDBAEEB3ECCCA][0x71B04FAC5BE0E35] | 1500 << Enum[0xBEBDBAEEB3ECCCA][0x76ADD225D738C93], nil )
 			return false
-		elseif CoD.DirectorUtility.ShowDirectorSelect( f50_arg2 ) and not IsLAN() and not IsPC() then
-			CoD.Menu.SetButtonLabel( f50_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x0, nil, nil )
+		elseif CoD.DirectorUtility.ShowDirectorSelect( controller ) and not IsLAN() and not IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "", nil, nil )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x4D2505E19049444], "ESCAPE", function ( f51_arg0, f51_arg1, f51_arg2, f51_arg3 )
-		if IsMouseOrKeyboard( f51_arg2 ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( f51_arg2 ) then
-			CoD.DirectorUtility.HideLoadoutPreview( f51_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x4D2505E19049444], "ESCAPE", function ( element, menu, controller, model )
+		if IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( controller ) then
+			CoD.DirectorUtility.HideLoadoutPreview( controller )
 			return true
-		elseif IsMouseOrKeyboard( f51_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( self, f51_arg2 ) and CoD.DirectorUtility.HasSelectedClient( f51_arg2 ) then
-			CoD.DirectorUtility.ClearSelectedClient( f51_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorCustom( self, controller ) and CoD.DirectorUtility.HasSelectedClient( controller ) then
+			CoD.DirectorUtility.ClearSelectedClient( controller )
 			return true
-		elseif IsMouseOrKeyboard( f51_arg2 ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( f51_arg2 ) then
-			CoD.DirectorUtility.HideLoadoutPreview( f51_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( controller ) then
+			CoD.DirectorUtility.HideLoadoutPreview( controller )
 			return true
-		elseif IsMouseOrKeyboard( f51_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( self, f51_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and not CoD.DirectorUtility.IsOfflineDemo() and not CoD.DirectorUtility.ShowDirectorPregame( f51_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			LobbyGoBack( self, f51_arg2 )
-			CoD.DirectorUtility.ClearSelectedClient( f51_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorCustom( self, controller ) and not CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and not CoD.DirectorUtility.IsOfflineDemo() and not CoD.DirectorUtility.ShowDirectorPregame( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
+			LobbyGoBack( self, controller )
+			CoD.DirectorUtility.ClearSelectedClient( controller )
 			return true
-		elseif IsMouseOrKeyboard( f51_arg2 ) and CoD.DirectorUtility.ShowDirectorArenaMatchmaking( f51_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and not CoD.ArenaUtility.ArenaMatchSet( self ) then
-			LobbyGoBack( self, f51_arg2 )
-			CoD.DirectorUtility.ClearSelectedClient( f51_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorArenaMatchmaking( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and not CoD.ArenaUtility.ArenaMatchSet( self ) then
+			LobbyGoBack( self, controller )
+			CoD.DirectorUtility.ClearSelectedClient( controller )
 			return true
-		elseif IsMouseOrKeyboard( f51_arg2 ) and CoD.DirectorUtility.ShowDirectorTheater( f51_arg2 ) and CoD.DirectorUtility.HasSelectedClient( f51_arg2 ) then
-			CoD.DirectorUtility.ClearSelectedClient( f51_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorTheater( controller ) and CoD.DirectorUtility.HasSelectedClient( controller ) then
+			CoD.DirectorUtility.ClearSelectedClient( controller )
 			return true
-		elseif IsMouseOrKeyboard( f51_arg2 ) and CoD.DirectorUtility.ShowDirectorTheater( f51_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			LobbyGoBack( self, f51_arg2 )
-			CoD.DirectorUtility.ClearSelectedClient( f51_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorTheater( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
+			LobbyGoBack( self, controller )
+			CoD.DirectorUtility.ClearSelectedClient( controller )
 			return true
-		elseif IsMouseOrKeyboard( f51_arg2 ) and CoD.DirectorUtility.ShowDirectorPublic( f51_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() and IsPC() then
-			LobbyGoBack( self, f51_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorPublic( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() and IsPC() then
+			LobbyGoBack( self, controller )
 			return true
-		elseif IsMouseOrKeyboard( f51_arg2 ) and CoD.DirectorUtility.ShowDirectorPublic( f51_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() then
-			LobbyGoBack( self, f51_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorPublic( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() then
+			LobbyGoBack( self, controller )
 			return true
-		elseif IsMouseOrKeyboard( f51_arg2 ) and CoD.DirectorUtility.ShowDirectorPublic( f51_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			LobbyGoBack( self, f51_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorPublic( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
+			LobbyGoBack( self, controller )
 			return true
-		elseif IsMouseOrKeyboard( f51_arg2 ) and CoD.LobbyUtility.ShouldShowLeaveLobbyPopup() and not CoD.DirectorUtility.ShowDirectorPublic( f51_arg2 ) and not CoD.DirectorUtility.IsOfflineDemo() and not CoD.DirectorUtility.ShowDirectorArenaMatchmaking( f51_arg2 ) then
-			CoD.LobbyUtility.LobbyGoBack( self, f51_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and CoD.LobbyUtility.ShouldShowLeaveLobbyPopup() and not CoD.DirectorUtility.ShowDirectorPublic( controller ) and not CoD.DirectorUtility.IsOfflineDemo() and not CoD.DirectorUtility.ShowDirectorArenaMatchmaking( controller ) then
+			CoD.LobbyUtility.LobbyGoBack( self, controller )
 			return true
-		elseif IsMouseOrKeyboard( f51_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( self, f51_arg2 ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
-			LobbyGoBack( self, f51_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorCustom( self, controller ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
+			LobbyGoBack( self, controller )
 			return true
-		elseif IsMouseOrKeyboard( f51_arg2 ) and CoD.DirectorUtility.ShowDirectorTheater( f51_arg2 ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
-			LobbyGoBack( self, f51_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorTheater( controller ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
+			LobbyGoBack( self, controller )
 			return true
-		elseif IsMouseOrKeyboard( f51_arg2 ) and CoD.DirectorUtility.ShowDirectorSelect( f51_arg2 ) then
-			OpenPCQuit( self, f51_arg1, self, f51_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorSelect( controller ) then
+			OpenPCQuit( self, menu, self, controller )
 			return true
-		elseif IsMouseOrKeyboard( f51_arg2 ) and CoD.DirectorUtility.AllowShortPressToGoBack( self, f51_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			LobbyGoBack( self, f51_arg2 )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.AllowShortPressToGoBack( self, controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
+			LobbyGoBack( self, controller )
 			return true
 		else
 			
 		end
-	end, function ( f52_arg0, f52_arg1, f52_arg2 )
-		if IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( f52_arg2 ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		if IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
-		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( self, f52_arg2 ) and CoD.DirectorUtility.HasSelectedClient( f52_arg2 ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/cancel", nil, "ESCAPE" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorCustom( self, controller ) and CoD.DirectorUtility.HasSelectedClient( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4D2505E19049444], "menu/cancel", nil, "ESCAPE" )
 			return true
-		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( f52_arg2 ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
-		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( self, f52_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and not CoD.DirectorUtility.IsOfflineDemo() and not CoD.DirectorUtility.ShowDirectorPregame( f52_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorCustom( self, controller ) and not CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and not CoD.DirectorUtility.IsOfflineDemo() and not CoD.DirectorUtility.ShowDirectorPregame( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
-		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorArenaMatchmaking( f52_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and not CoD.ArenaUtility.ArenaMatchSet( self ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorArenaMatchmaking( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and not CoD.ArenaUtility.ArenaMatchSet( self ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
-		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorTheater( f52_arg2 ) and CoD.DirectorUtility.HasSelectedClient( f52_arg2 ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/cancel", nil, "ESCAPE" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorTheater( controller ) and CoD.DirectorUtility.HasSelectedClient( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4D2505E19049444], "menu/cancel", nil, "ESCAPE" )
 			return true
-		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorTheater( f52_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorTheater( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
-		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorPublic( f52_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() and IsPC() then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorPublic( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() and IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
-		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorPublic( f52_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorPublic( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
-		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorPublic( f52_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorPublic( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
-		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.LobbyUtility.ShouldShowLeaveLobbyPopup() and not CoD.DirectorUtility.ShowDirectorPublic( f52_arg2 ) and not CoD.DirectorUtility.IsOfflineDemo() and not CoD.DirectorUtility.ShowDirectorArenaMatchmaking( f52_arg2 ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.LobbyUtility.ShouldShowLeaveLobbyPopup() and not CoD.DirectorUtility.ShowDirectorPublic( controller ) and not CoD.DirectorUtility.IsOfflineDemo() and not CoD.DirectorUtility.ShowDirectorArenaMatchmaking( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
-		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( self, f52_arg2 ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/cancel", nil, "ESCAPE" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorCustom( self, controller ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4D2505E19049444], "menu/cancel", nil, "ESCAPE" )
 			return true
-		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorTheater( f52_arg2 ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/cancel", nil, "ESCAPE" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorTheater( controller ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4D2505E19049444], "menu/cancel", nil, "ESCAPE" )
 			return true
-		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.ShowDirectorSelect( f52_arg2 ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], 0xB2EF56B4AF147B8, nil, "ESCAPE" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.ShowDirectorSelect( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4D2505E19049444], "menu/quit", nil, "ESCAPE" )
 			return true
-		elseif IsMouseOrKeyboard( f52_arg2 ) and CoD.DirectorUtility.AllowShortPressToGoBack( self, f52_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			CoD.Menu.SetButtonLabel( f52_arg1, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
+		elseif IsMouseOrKeyboard( controller ) and CoD.DirectorUtility.AllowShortPressToGoBack( self, controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x4D2505E19049444], "menu/back", nil, "ESCAPE" )
 			return true
 		else
 			return false
 		end
 	end, true )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f53_arg0, f53_arg1, f53_arg2, f53_arg3 )
-		if IsGamepad( f53_arg2 ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( f53_arg2 ) and not IsPC() then
-			CoD.DirectorUtility.HideLoadoutPreview( f53_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		if IsGamepad( controller ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( controller ) and not IsPC() then
+			CoD.DirectorUtility.HideLoadoutPreview( controller )
 			return true
-		elseif IsGamepad( f53_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( self, f53_arg2 ) and CoD.DirectorUtility.HasSelectedClient( f53_arg2 ) then
-			CoD.DirectorUtility.ClearSelectedClient( f53_arg2 )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorCustom( self, controller ) and CoD.DirectorUtility.HasSelectedClient( controller ) then
+			CoD.DirectorUtility.ClearSelectedClient( controller )
 			return true
-		elseif IsGamepad( f53_arg2 ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( f53_arg2 ) then
-			CoD.DirectorUtility.HideLoadoutPreview( f53_arg2 )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( controller ) then
+			CoD.DirectorUtility.HideLoadoutPreview( controller )
 			return true
-		elseif IsGamepad( f53_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( self, f53_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and not CoD.DirectorUtility.ShowDirectorPregame( f53_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			LobbyGoBack( self, f53_arg2 )
-			CoD.DirectorUtility.ClearSelectedClient( f53_arg2 )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorCustom( self, controller ) and not CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and not CoD.DirectorUtility.ShowDirectorPregame( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
+			LobbyGoBack( self, controller )
+			CoD.DirectorUtility.ClearSelectedClient( controller )
 			return true
-		elseif IsGamepad( f53_arg2 ) and CoD.DirectorUtility.ShowDirectorArenaMatchmaking( f53_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and not CoD.ArenaUtility.ArenaMatchSet( self ) then
-			LobbyGoBack( self, f53_arg2 )
-			CoD.DirectorUtility.ClearSelectedClient( f53_arg2 )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorArenaMatchmaking( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and not CoD.ArenaUtility.ArenaMatchSet( self ) then
+			LobbyGoBack( self, controller )
+			CoD.DirectorUtility.ClearSelectedClient( controller )
 			return true
-		elseif IsGamepad( f53_arg2 ) and CoD.DirectorUtility.ShowDirectorTheater( f53_arg2 ) and CoD.DirectorUtility.HasSelectedClient( f53_arg2 ) then
-			CoD.DirectorUtility.ClearSelectedClient( f53_arg2 )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorTheater( controller ) and CoD.DirectorUtility.HasSelectedClient( controller ) then
+			CoD.DirectorUtility.ClearSelectedClient( controller )
 			return true
-		elseif IsGamepad( f53_arg2 ) and CoD.DirectorUtility.ShowDirectorTheater( f53_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			LobbyGoBack( self, f53_arg2 )
-			CoD.DirectorUtility.ClearSelectedClient( f53_arg2 )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorTheater( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
+			LobbyGoBack( self, controller )
+			CoD.DirectorUtility.ClearSelectedClient( controller )
 			return true
-		elseif IsGamepad( f53_arg2 ) and CoD.DirectorUtility.ShowDirectorPublic( f53_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() and IsPC() then
-			LobbyGoBack( self, f53_arg2 )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorPublic( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() and IsPC() then
+			LobbyGoBack( self, controller )
 			return true
-		elseif IsGamepad( f53_arg2 ) and CoD.DirectorUtility.ShowDirectorPublic( f53_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() then
-			LobbyGoBack( self, f53_arg2 )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorPublic( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() then
+			LobbyGoBack( self, controller )
 			return true
-		elseif IsGamepad( f53_arg2 ) and CoD.DirectorUtility.ShowDirectorPublic( f53_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			LobbyGoBack( self, f53_arg2 )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorPublic( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
+			LobbyGoBack( self, controller )
 			return true
-		elseif IsGamepad( f53_arg2 ) and CoD.LobbyUtility.ShouldShowLeaveLobbyPopup() and not CoD.DirectorUtility.ShowDirectorPublic( f53_arg2 ) and not CoD.DirectorUtility.IsOfflineDemo() and not CoD.DirectorUtility.ShowDirectorArenaMatchmaking( f53_arg2 ) then
-			CoD.LobbyUtility.LobbyGoBack( self, f53_arg2 )
+		elseif IsGamepad( controller ) and CoD.LobbyUtility.ShouldShowLeaveLobbyPopup() and not CoD.DirectorUtility.ShowDirectorPublic( controller ) and not CoD.DirectorUtility.IsOfflineDemo() and not CoD.DirectorUtility.ShowDirectorArenaMatchmaking( controller ) then
+			CoD.LobbyUtility.LobbyGoBack( self, controller )
 			return true
-		elseif IsGamepad( f53_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( self, f53_arg2 ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
-			LobbyGoBack( self, f53_arg2 )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorCustom( self, controller ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
+			LobbyGoBack( self, controller )
 			return true
-		elseif IsGamepad( f53_arg2 ) and CoD.DirectorUtility.ShowDirectorTheater( f53_arg2 ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
-			LobbyGoBack( self, f53_arg2 )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorTheater( controller ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
+			LobbyGoBack( self, controller )
 			return true
-		elseif IsGamepad( f53_arg2 ) and CoD.DirectorUtility.ShowDirectorSelect( f53_arg2 ) and IsPC() then
-			OpenPCQuit( self, f53_arg1, self, f53_arg2 )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorSelect( controller ) and IsPC() then
+			OpenPCQuit( self, menu, self, controller )
 			return true
-		elseif IsGamepad( f53_arg2 ) and CoD.DirectorUtility.AllowShortPressToGoBack( self, f53_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			LobbyGoBack( self, f53_arg2 )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.AllowShortPressToGoBack( self, controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
+			LobbyGoBack( self, controller )
 			return true
-		elseif IsGamepad( f53_arg2 ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( f53_arg2 ) and IsPC() then
-			CoD.DirectorUtility.HideLoadoutPreview( f53_arg2 )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( controller ) and IsPC() then
+			CoD.DirectorUtility.HideLoadoutPreview( controller )
 			return true
 		else
 			
 		end
-	end, function ( f54_arg0, f54_arg1, f54_arg2 )
-		if IsGamepad( f54_arg2 ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( f54_arg2 ) and not IsPC() then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x6287CA575B55EC0, nil, nil )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( controller ) and not IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/hide_loadout", nil, nil )
 			return true
-		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( self, f54_arg2 ) and CoD.DirectorUtility.HasSelectedClient( f54_arg2 ) then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel", nil, nil )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorCustom( self, controller ) and CoD.DirectorUtility.HasSelectedClient( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel", nil, nil )
 			return true
-		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( f54_arg2 ) then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xEF2D3320785B51A, nil, nil )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/leave", nil, nil )
 			return true
-		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( self, f54_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and not CoD.DirectorUtility.ShowDirectorPregame( f54_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xEF2D3320785B51A, nil, nil )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorCustom( self, controller ) and not CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and not CoD.DirectorUtility.ShowDirectorPregame( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/leave", nil, nil )
 			return true
-		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorArenaMatchmaking( f54_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and not CoD.ArenaUtility.ArenaMatchSet( self ) then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xEF2D3320785B51A, nil, nil )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorArenaMatchmaking( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and not CoD.ArenaUtility.ArenaMatchSet( self ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/leave", nil, nil )
 			return true
-		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorTheater( f54_arg2 ) and CoD.DirectorUtility.HasSelectedClient( f54_arg2 ) then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel", nil, nil )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorTheater( controller ) and CoD.DirectorUtility.HasSelectedClient( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel", nil, nil )
 			return true
-		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorTheater( f54_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorTheater( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
-		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorPublic( f54_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() and IsPC() then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorPublic( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() and IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
-		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorPublic( f54_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xFF006933C958CA6, nil, nil )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorPublic( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) and IsLobbyPrivateHost() and IsWarzone() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], 0xFF006933C958CA6, nil, nil )
 			return true
-		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorPublic( f54_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xEF2D3320785B51A, nil, nil )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorPublic( controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/leave", nil, nil )
 			return true
-		elseif IsGamepad( f54_arg2 ) and CoD.LobbyUtility.ShouldShowLeaveLobbyPopup() and not CoD.DirectorUtility.ShowDirectorPublic( f54_arg2 ) and not CoD.DirectorUtility.IsOfflineDemo() and not CoD.DirectorUtility.ShowDirectorArenaMatchmaking( f54_arg2 ) then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xEF2D3320785B51A, nil, nil )
+		elseif IsGamepad( controller ) and CoD.LobbyUtility.ShouldShowLeaveLobbyPopup() and not CoD.DirectorUtility.ShowDirectorPublic( controller ) and not CoD.DirectorUtility.IsOfflineDemo() and not CoD.DirectorUtility.ShowDirectorArenaMatchmaking( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/leave", nil, nil )
 			return true
-		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorCustom( self, f54_arg2 ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel", nil, nil )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorCustom( self, controller ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel", nil, nil )
 			return true
-		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorTheater( f54_arg2 ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel", nil, nil )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorTheater( controller ) and CoD.ModelUtility.IsGlobalModelValueGreaterThan( "lobbyRoot.lobbyTimeRemaining", 0 ) and IsLobbyHostOfCurrentMenu() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/cancel", nil, nil )
 			return true
-		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.ShowDirectorSelect( f54_arg2 ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0xB2EF56B4AF147B8, nil, nil )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.ShowDirectorSelect( controller ) and IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/quit", nil, nil )
 			return true
-		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.AllowShortPressToGoBack( self, f54_arg2 ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.AllowShortPressToGoBack( self, controller ) and not CoD.ModelUtility.IsGlobalModelValueTrue( "lobbyRoot.spinnerActive" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
-		elseif IsGamepad( f54_arg2 ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( f54_arg2 ) and IsPC() then
-			CoD.Menu.SetButtonLabel( f54_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+		elseif IsGamepad( controller ) and CoD.DirectorUtility.IsLoadoutPreviewWidgetShown( controller ) and IsPC() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x93AB4C84F113EE1], "ui_contextual_1", function ( f55_arg0, f55_arg1, f55_arg2, f55_arg3 )
-		if CoD.AARUtility.CanShowAAR( f55_arg1, f55_arg2 ) then
-			CoD.AARUtility.OpenAAR( f55_arg1, f55_arg2 )
-			UpdateButtonPromptState( f55_arg1, f55_arg0, f55_arg2, Enum.LUIButton[0x93AB4C84F113EE1] )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x93AB4C84F113EE1], "ui_contextual_1", function ( element, menu, controller, model )
+		if CoD.AARUtility.CanShowAAR( menu, controller ) then
+			CoD.AARUtility.OpenAAR( menu, controller )
+			UpdateButtonPromptState( menu, element, controller, Enum.LUIButton[0x93AB4C84F113EE1] )
 			return true
 		else
 			
 		end
-	end, function ( f56_arg0, f56_arg1, f56_arg2 )
-		if CoD.AARUtility.CanShowAAR( f56_arg1, f56_arg2 ) then
-			CoD.Menu.SetButtonLabel( f56_arg1, Enum.LUIButton[0x93AB4C84F113EE1], 0xEEF90B1483C4C23, nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if CoD.AARUtility.CanShowAAR( menu, controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x93AB4C84F113EE1], "mpui/aar_caps", nil, "ui_contextual_1" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA], "ui_contextual_2", function ( f57_arg0, f57_arg1, f57_arg2, f57_arg3 )
-		if IsBooleanDvarSet( "lobby_gestures_enabled" ) and CoD.DirectorUtility[0x1E20A632CB63092]( f57_arg2 ) then
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x820DDD869ABBFAA], "ui_contextual_2", function ( element, menu, controller, model )
+		if IsBooleanDvarSet( "lobby_gestures_enabled" ) and CoD.DirectorUtility[0x1E20A632CB63092]( controller ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			CoD.BaseUtility.MenuPreservesButton( f57_arg1, Enum.LUIButton[0x820DDD869ABBFAA], true )
-			OpenOverlay( self, "DirectorGestureSelector", f57_arg2 )
+			CoD.BaseUtility.MenuPreservesButton( menu, Enum.LUIButton[0x820DDD869ABBFAA], true )
+			OpenOverlay( self, "DirectorGestureSelector", controller )
 			return true
 		else
 			
 		end
-	end, function ( f58_arg0, f58_arg1, f58_arg2 )
-		if IsBooleanDvarSet( "lobby_gestures_enabled" ) and CoD.DirectorUtility[0x1E20A632CB63092]( f58_arg2 ) then
-			CoD.Menu.SetButtonLabel( f58_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x1C35414911C9A0E, nil, "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		if IsBooleanDvarSet( "lobby_gestures_enabled" ) and CoD.DirectorUtility[0x1E20A632CB63092]( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "menu/gesture", nil, "ui_contextual_2" )
 			return true
 		else
 			return false

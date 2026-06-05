@@ -49,18 +49,18 @@ CoD.DirectorCustomizeClassZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f5_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( startWeapon, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f6_arg0, f6_arg1, f6_arg2, f6_arg3 )
-		CoD.CACUtility.OpenCACOverlay( self, f6_arg1, f6_arg2, "ZMStartWeaponSelect", self, "zmStartWeapon" )
+	f1_arg0:AddButtonCallbackFunction( startWeapon, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		CoD.CACUtility.OpenCACOverlay( self, menu, controller, "ZMStartWeaponSelect", self, "zmStartWeapon" )
 		return true
-	end, function ( f7_arg0, f7_arg1, f7_arg2 )
-		CoD.Menu.SetButtonLabel( f7_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( startWeapon )
 	self.startWeapon = startWeapon
 	
 	local primarygrenade = CoD.LoadoutClassItemZombie.new( f1_arg0, f1_arg1, 0.5, 0.5, 622, 922, 0.5, 0.5, -111, 32 )
-	primarygrenade.LoadoutClassItemContainerZombie.loadoutName:setText( LocalizeToUpperString( 0x6933F4D2B4D95C9 ) )
+	primarygrenade.LoadoutClassItemContainerZombie.loadoutName:setText( LocalizeToUpperString( "zmui/equipment" ) )
 	primarygrenade:linkToElementModel( self, "primarygrenade", false, function ( model )
 		primarygrenade:setModel( model, f1_arg1 )
 	end )
@@ -74,11 +74,11 @@ CoD.DirectorCustomizeClassZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f9_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( primarygrenade, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		CoD.CACUtility.OpenCACOverlay( self, f10_arg1, f10_arg2, "ZMEquipmentSelect", self, "primarygrenade" )
+	f1_arg0:AddButtonCallbackFunction( primarygrenade, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		CoD.CACUtility.OpenCACOverlay( self, menu, controller, "ZMEquipmentSelect", self, "primarygrenade" )
 		return true
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( primarygrenade )
@@ -86,7 +86,7 @@ CoD.DirectorCustomizeClassZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local specialWeapon = CoD.LoadoutClassItemZombie.new( f1_arg0, f1_arg1, 0.5, 0.5, 622, 922, 0.5, 0.5, -333, -133 )
 	specialWeapon.LoadoutClassItemContainerZombie.itemImage:setScale( 1.2, 1.2 )
-	specialWeapon.LoadoutClassItemContainerZombie.loadoutName:setText( LocalizeToUpperString( 0x987AAEBF5D492B ) )
+	specialWeapon.LoadoutClassItemContainerZombie.loadoutName:setText( LocalizeToUpperString( "zmui/special_weapon" ) )
 	specialWeapon:linkToElementModel( self, "herogadget", false, function ( model )
 		specialWeapon:setModel( model, f1_arg1 )
 	end )
@@ -100,11 +100,11 @@ CoD.DirectorCustomizeClassZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f13_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( specialWeapon, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f14_arg0, f14_arg1, f14_arg2, f14_arg3 )
-		CoD.CACUtility.OpenCACOverlay( self, f14_arg1, f14_arg2, "ZMSpecialWeaponSelect", self, "herogadget" )
+	f1_arg0:AddButtonCallbackFunction( specialWeapon, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		CoD.CACUtility.OpenCACOverlay( self, menu, controller, "ZMSpecialWeaponSelect", self, "herogadget" )
 		return true
-	end, function ( f15_arg0, f15_arg1, f15_arg2 )
-		CoD.Menu.SetButtonLabel( f15_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	self:addElement( specialWeapon )
@@ -158,52 +158,52 @@ CoD.DirectorCustomizeClassZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0xC083113BC81F23F] )
 		return f22_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( ZMTallismanStatusButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f23_arg0, f23_arg1, f23_arg2, f23_arg3 )
+	f1_arg0:AddButtonCallbackFunction( ZMTallismanStatusButton, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
 		if IsLive() then
-			CoD.CACUtility.OpenCACOverlay( self, f23_arg1, f23_arg2, "ZMTalismanSelect", self, "talisman1" )
+			CoD.CACUtility.OpenCACOverlay( self, menu, controller, "ZMTalismanSelect", self, "talisman1" )
 			return true
 		else
 			
 		end
-	end, function ( f24_arg0, f24_arg1, f24_arg2 )
+	end, function ( element, menu, controller )
 		if IsLive() then
-			CoD.Menu.SetButtonLabel( f24_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( ZMTallismanStatusButton, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_remove", function ( f25_arg0, f25_arg1, f25_arg2, f25_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f25_arg0, f25_arg2, "itemIndex", CoD.CACUtility.EmptyItemIndex ) and IsMouseOrKeyboard( f25_arg2 ) and IsLive() then
-			CoD.CACUtility.UnequipItem( f25_arg2, f25_arg1, f25_arg0 )
+	f1_arg0:AddButtonCallbackFunction( ZMTallismanStatusButton, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_remove", function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoD.CACUtility.EmptyItemIndex ) and IsMouseOrKeyboard( controller ) and IsLive() then
+			CoD.CACUtility.UnequipItem( controller, menu, element )
 			return true
 		else
 			
 		end
-	end, function ( f26_arg0, f26_arg1, f26_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f26_arg0, f26_arg2, "itemIndex", CoD.CACUtility.EmptyItemIndex ) and IsMouseOrKeyboard( f26_arg2 ) and IsLive() then
-			CoD.Menu.SetButtonLabel( f26_arg1, Enum.LUIButton[0xA86619565BE54DB], 0x679ACA6FFC6C8F3, Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoD.CACUtility.EmptyItemIndex ) and IsMouseOrKeyboard( controller ) and IsLive() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xA86619565BE54DB], "menu/remove", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( ZMTallismanStatusButton, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f27_arg0, f27_arg1, f27_arg2, f27_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f27_arg0, f27_arg2, "itemIndex", CoD.CACUtility.EmptyItemIndex ) and IsGamepad( f27_arg2 ) and IsLive() then
-			CoD.CACUtility.UnequipItem( f27_arg2, f27_arg1, f27_arg0 )
+	f1_arg0:AddButtonCallbackFunction( ZMTallismanStatusButton, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoD.CACUtility.EmptyItemIndex ) and IsGamepad( controller ) and IsLive() then
+			CoD.CACUtility.UnequipItem( controller, menu, element )
 			return true
 		else
 			
 		end
-	end, function ( f28_arg0, f28_arg1, f28_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f28_arg0, f28_arg2, "itemIndex", CoD.CACUtility.EmptyItemIndex ) and IsGamepad( f28_arg2 ) and IsLive() then
-			CoD.Menu.SetButtonLabel( f28_arg1, Enum.LUIButton[0xC083113BC81F23F], 0x679ACA6FFC6C8F3, nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueEqualTo( element, controller, "itemIndex", CoD.CACUtility.EmptyItemIndex ) and IsGamepad( controller ) and IsLive() then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/remove", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	ZMTallismanStatusButton:AddContextualMenuAction( f1_arg0, f1_arg1, 0x679ACA6FFC6C8F3, function ( f29_arg0, f29_arg1, f29_arg2, f29_arg3 )
+	ZMTallismanStatusButton:AddContextualMenuAction( f1_arg0, f1_arg1, "menu/remove", function ( f29_arg0, f29_arg1, f29_arg2, f29_arg3 )
 		if not CoD.ModelUtility.IsSelfModelValueEqualTo( f29_arg0, f29_arg2, "itemIndex", CoD.CACUtility.EmptyItemIndex ) and IsLive() then
 			return function ( f30_arg0, f30_arg1, f30_arg2, f30_arg3 )
 				CoD.CACUtility.UnequipItem( f30_arg2, f30_arg1, f30_arg0 )
@@ -242,12 +242,12 @@ CoD.DirectorCustomizeClassZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f32_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( PerkAltars, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f33_arg0, f33_arg1, f33_arg2, f33_arg3 )
-		CoD.ZMPerkUtility.PerkSlotHighlighted( f33_arg0, f33_arg2 )
-		CoD.CACUtility.OpenCACOverlay( self, f33_arg1, f33_arg2, "ZMPerkSelect", self, "specialty" )
+	f1_arg0:AddButtonCallbackFunction( PerkAltars, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		CoD.ZMPerkUtility.PerkSlotHighlighted( element, controller )
+		CoD.CACUtility.OpenCACOverlay( self, menu, controller, "ZMPerkSelect", self, "specialty" )
 		return true
-	end, function ( f34_arg0, f34_arg1, f34_arg2 )
-		CoD.Menu.SetButtonLabel( f34_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 		return true
 	end, false )
 	PerkAltars:linkToElementModel( self, "classNum", true, function ( model )
@@ -265,7 +265,7 @@ CoD.DirectorCustomizeClassZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	LabelWeapons = LUI.UIText.new( 0.5, 0.5, 625, 825, 0.5, 0.5, -377, -356 )
 	LabelWeapons:setRGB( 0.58, 0.86, 1 )
-	LabelWeapons:setText( Engine[0xF9F1239CFD921FE]( 0x58AE0822C5041FC ) )
+	LabelWeapons:setText( Engine[0xF9F1239CFD921FE]( "zmui/weapons" ) )
 	LabelWeapons:setTTF( "ttmussels_regular" )
 	LabelWeapons:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	LabelWeapons:setShaderVector( 0, 1, 0, 0, 0 )
@@ -279,7 +279,7 @@ CoD.DirectorCustomizeClassZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local LabelPerks = LUI.UIText.new( 0.5, 0.5, -481, -281, 0.5, 0.5, -377, -356 )
 	LabelPerks:setRGB( 0.58, 0.86, 1 )
-	LabelPerks:setText( Engine[0xF9F1239CFD921FE]( 0xFD7640D13C9158C ) )
+	LabelPerks:setText( Engine[0xF9F1239CFD921FE]( "zmui/perks" ) )
 	LabelPerks:setTTF( "ttmussels_regular" )
 	LabelPerks:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	LabelPerks:setShaderVector( 0, 1, 0, 0, 0 )
@@ -293,7 +293,7 @@ CoD.DirectorCustomizeClassZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local LabelElixirs = LUI.UIText.new( 0.5, 0.5, -824, -624, 0.5, 0.5, -377, -356 )
 	LabelElixirs:setRGB( 0.58, 0.85, 1 )
-	LabelElixirs:setText( Engine[0xF9F1239CFD921FE]( 0xA83642C38DB951 ) )
+	LabelElixirs:setText( Engine[0xF9F1239CFD921FE]( "zmui/elixirs" ) )
 	LabelElixirs:setTTF( "ttmussels_regular" )
 	LabelElixirs:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	LabelElixirs:setShaderVector( 0, 1, 0, 0, 0 )
@@ -307,7 +307,7 @@ CoD.DirectorCustomizeClassZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local LabelTalisman = LUI.UIText.new( 0.5, 0.5, -824, -624, 0.5, 0.5, 181, 202 )
 	LabelTalisman:setRGB( 0.58, 0.85, 1 )
-	LabelTalisman:setText( Engine[0xF9F1239CFD921FE]( 0x8C0FE859EC263E0 ) )
+	LabelTalisman:setText( Engine[0xF9F1239CFD921FE]( "zmui/talisman" ) )
 	LabelTalisman:setTTF( "ttmussels_regular" )
 	LabelTalisman:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	LabelTalisman:setShaderVector( 0, 1, 0, 0, 0 )

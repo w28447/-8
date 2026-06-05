@@ -19,28 +19,28 @@ CoD.AmmoWidget_CurrentClipPip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local backing = LUI.UIImage.new( 0, 0, 0, 28, 0.46, 0.46, -10.5, 45.5 )
 	backing:setRGB( 0.81, 0.79, 0.69 )
-	backing:setImage( RegisterImage( 0xFCD1D5879D11559 ) )
+	backing:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_mag_empty" ) )
 	self:addElement( backing )
 	self.backing = backing
 	
 	local GlowOuter = LUI.UIImage.new( 0, 0, 0, 28, 0, 0, 24, 78 )
 	GlowOuter:setRGB( 0.76, 0.76, 0.73 )
 	GlowOuter:setAlpha( 0.2 )
-	GlowOuter:setImage( RegisterImage( 0x949918ED1F03E4F ) )
+	GlowOuter:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_mag_empty_glow" ) )
 	GlowOuter:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( GlowOuter )
 	self.GlowOuter = GlowOuter
 	
 	local slots = LUI.UIImage.new( 0, 0, 0, 28, 0.46, 0.46, -9.5, 44.5 )
 	slots:setRGB( 0, 0, 0 )
-	slots:setImage( RegisterImage( 0xF6D4695EB6ADF24 ) )
+	slots:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_mag_slot" ) )
 	self:addElement( slots )
 	self.slots = slots
 	
 	local fill = LUI.UIImage.new( 0.1, 0.1, -2, 26, 0.5, 0.5, -11.5, 34.5 )
 	fill:setAlpha( 0.85 )
 	fill:setZRot( 180 )
-	fill:setImage( RegisterImage( 0x5768316A400E7D ) )
+	fill:setImage( RegisterImage( "uie_ui_hud_core_ammo_widget_mag_full" ) )
 	fill:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe" ) )
 	fill:setShaderVector( 0, 1, 0, 0, 0 )
 	fill:setShaderVector( 1, 0, 0, 0, 0 )

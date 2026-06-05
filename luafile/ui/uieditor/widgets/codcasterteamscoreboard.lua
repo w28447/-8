@@ -121,7 +121,7 @@ CoD.CodCasterTeamScoreboard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.SelectArrowLeft = SelectArrowLeft
 	
 	local frame = LUI.UIImage.new( 0.5, 0.5, -260, 260, 0, 0, 0, 116 )
-	frame:setImage( RegisterImage( 0x61C3519381A43C7 ) )
+	frame:setImage( RegisterImage( "uie_ui_codcaster_scoreboard_bg" ) )
 	self:addElement( frame )
 	self.frame = frame
 	

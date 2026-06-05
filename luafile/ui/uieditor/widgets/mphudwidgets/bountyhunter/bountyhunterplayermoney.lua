@@ -24,7 +24,7 @@ CoD.BountyHunterPlayerMoney.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local TiledShaderImage = LUI.UIImage.new( 0.5, 0.5, -110.5, 98.5, 0.5, 0.5, -27.5, 17.5 )
 	TiledShaderImage:setRGB( 0, 0, 0 )
 	TiledShaderImage:setAlpha( 0.2 )
-	TiledShaderImage:setImage( RegisterImage( 0x322AF9BC49B4F3E ) )
+	TiledShaderImage:setImage( RegisterImage( "uie_ui_hud_core_objective_widget_led_screen_02" ) )
 	TiledShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage:setupNineSliceShader( 220, 60 )
@@ -32,7 +32,7 @@ CoD.BountyHunterPlayerMoney.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.TiledShaderImage = TiledShaderImage
 	
 	local StretchableFrameThin = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	StretchableFrameThin:setImage( RegisterImage( 0x36F08D3F7171B77 ) )
+	StretchableFrameThin:setImage( RegisterImage( "uie_ui_hud_core_frame_top_thin_stretchable" ) )
 	StretchableFrameThin:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	StretchableFrameThin:setShaderVector( 0, 0, 0, 0, 0 )
 	StretchableFrameThin:setupNineSliceShader( 22, 22 )

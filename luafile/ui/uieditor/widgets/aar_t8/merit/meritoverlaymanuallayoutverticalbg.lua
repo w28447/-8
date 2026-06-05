@@ -84,7 +84,7 @@ CoD.MeritOverlayManualLayoutVerticalBG.new = function ( f1_arg0, f1_arg1, f1_arg
 	
 	local ProgressTitle = LUI.UIText.new( 0.5, 0.5, -100, 100, 0, 0, 455, 479 )
 	ProgressTitle:setAlpha( 0 )
-	ProgressTitle:setText( Engine[0xF9F1239CFD921FE]( 0xDB9EE2A23526998 ) )
+	ProgressTitle:setText( Engine[0xF9F1239CFD921FE]( "aar/echelon" ) )
 	ProgressTitle:setTTF( "default" )
 	ProgressTitle:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	ProgressTitle:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

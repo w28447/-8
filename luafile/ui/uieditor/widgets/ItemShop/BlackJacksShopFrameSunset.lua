@@ -4,9 +4,9 @@ require( "ui/uieditor/widgets/itemshop/bmtallitemcontainer" )
 require( "ui/uieditor/widgets/itemshop/contracts/contractsupplychaindetails" )
 require( "ui/uieditor/widgets/itemshop/discounttierscontainer" )
 require( "ui/uieditor/widgets/itemshop/itemshopslottimer" )
-require( "ui/uieditor/widgets/ItemShop/ItemShopWeaponBribePreviewWidget" )
+require( "ui/uieditor/widgets/itemshop/itemshopweaponbribepreviewwidget" )
 require( "ui/uieditor/widgets/itemshop/listlabelhideable" )
-require( "ui/uieditor/widgets/ItemShop/Reserves/ReservesBribeStackCarouselTall" )
+require( "ui/uieditor/widgets/itemshop/reserves/reservesbribestackcarouseltall" )
 require( "ui/uieditor/widgets/scrollbars/horizontalcountertriggerprompts" )
 require( "ui/uieditor/widgets/director/directorpregamebutton" )
 
@@ -26,8 +26,8 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local TransactionDeepLinkButton = nil
 	
 	TransactionDeepLinkButton = CoD.DirectorPreGameButton.new( f1_arg0, f1_arg1, 0.5, 0.5, -840, -610, 0, 0, 748, 818 )
-	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( 0x4031C820A02E7BA ) )
-	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( 0x4031C820A02E7BA ) )
+	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( "menu/transaction_history" ) )
+	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( "menu/transaction_history" ) )
 	TransactionDeepLinkButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f2_local0 = nil
 		if element.gainFocus then
@@ -38,31 +38,31 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f2_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f3_arg0, f3_arg1, f3_arg2, f3_arg3 )
+	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, model )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( f3_arg2 )
+			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( controller )
 			return true
 		else
 			
 		end
-	end, function ( f4_arg0, f4_arg1, f4_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.Menu.SetButtonLabel( f4_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f5_arg0, f5_arg1, f5_arg2, f5_arg3 )
+	f1_arg0:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( f5_arg2 )
+			CoD.PCKoreaUtility.OpenTransactionsDeepLinkBlackmarket( controller )
 			return true
 		else
 			
 		end
-	end, function ( f6_arg0, f6_arg1, f6_arg2 )
+	end, function ( element, menu, controller )
 		if IsPC() and CoD.PCKoreaUtility.IsInKorea() then
-			CoD.Menu.SetButtonLabel( f6_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
 		else
 			return false
@@ -146,88 +146,88 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC] )
 		return f15_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( RNGItemSlot, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f16_arg0, f16_arg1, f16_arg2, f16_arg3 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f16_arg0, f16_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f16_arg0, f16_arg2, "revealed" ) then
-			CoD.BlackMarketUtility.PlayItemShopSelectSound( f16_arg0, f16_arg2 )
-			OpenOverlay( self, "ItemShopDetailsSunset", f16_arg2, {
-				_model = f16_arg0:getModel()
+	f1_arg0:AddButtonCallbackFunction( RNGItemSlot, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			CoD.BlackMarketUtility.PlayItemShopSelectSound( element, controller )
+			OpenOverlay( self, "ItemShopDetailsSunset", controller, {
+				_model = element:getModel()
 			} )
-			SetControllerModelValue( f16_arg2, "LootStreamProgress.playAnimation", false )
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
 			return true
 		else
 			
 		end
-	end, function ( f17_arg0, f17_arg1, f17_arg2 )
-		if not CoD.ModelUtility.IsSelfModelValueTrue( f17_arg0, f17_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f17_arg0, f17_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f17_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( RNGItemSlot, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f18_arg0, f18_arg1, f18_arg2, f18_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f18_arg0, f18_arg2, "movieName" ) and IsGamepad( f18_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f18_arg0, f18_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f18_arg0, f18_arg2, "revealed" ) then
-			SetControllerModelValue( f18_arg2, "LootStreamProgress.playAnimation", false )
-			CoD.VideoStreamingUtility.SetupVoDMovie( f18_arg2, f18_arg0, "" )
-			DelayOpenOverlay( f18_arg1, "VoDViewer", f18_arg2, {
+	f1_arg0:AddButtonCallbackFunction( RNGItemSlot, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( element, controller, "movieName" ) and IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+			CoD.VideoStreamingUtility.SetupVoDMovie( controller, element, "" )
+			DelayOpenOverlay( menu, "VoDViewer", controller, {
 				fullscreen = true
 			} )
 			return true
 		else
 			
 		end
-	end, function ( f19_arg0, f19_arg1, f19_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f19_arg0, f19_arg2, "movieName" ) and IsGamepad( f19_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f19_arg0, f19_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f19_arg0, f19_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f19_arg1, Enum.LUIButton[0xC083113BC81F23F], "menu/preview", nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( element, controller, "movieName" ) and IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/preview", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( RNGItemSlot, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_remove", function ( f20_arg0, f20_arg1, f20_arg2, f20_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f20_arg0, f20_arg2, "movieName" ) and IsMouseOrKeyboard( f20_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f20_arg0, f20_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f20_arg0, f20_arg2, "revealed" ) then
-			SetControllerModelValue( f20_arg2, "LootStreamProgress.playAnimation", false )
-			CoD.VideoStreamingUtility.SetupVoDMovie( f20_arg2, f20_arg0, "" )
-			DelayOpenOverlay( f20_arg1, "VoDViewer", f20_arg2, {
+	f1_arg0:AddButtonCallbackFunction( RNGItemSlot, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_remove", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( element, controller, "movieName" ) and IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+			CoD.VideoStreamingUtility.SetupVoDMovie( controller, element, "" )
+			DelayOpenOverlay( menu, "VoDViewer", controller, {
 				fullscreen = true
 			} )
 			return true
 		else
 			
 		end
-	end, function ( f21_arg0, f21_arg1, f21_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f21_arg0, f21_arg2, "movieName" ) and IsMouseOrKeyboard( f21_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f21_arg0, f21_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f21_arg0, f21_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f21_arg1, Enum.LUIButton[0xA86619565BE54DB], "menu/preview", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( element, controller, "movieName" ) and IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xA86619565BE54DB], "menu/preview", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( RNGItemSlot, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "MWHEELDOWN", function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
-		if not IsRepeatButtonPress( f22_arg3 ) then
-			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( f22_arg0, f22_arg2, true )
+	f1_arg0:AddButtonCallbackFunction( RNGItemSlot, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "MWHEELDOWN", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) then
+			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( element, controller, true )
 			return true
 		else
 			
 		end
-	end, function ( f23_arg0, f23_arg1, f23_arg2 )
+	end, function ( element, menu, controller )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x0, nil, "MWHEELDOWN" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "", nil, "MWHEELDOWN" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( RNGItemSlot, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "MWHEELUP", function ( f24_arg0, f24_arg1, f24_arg2, f24_arg3 )
-		if not IsRepeatButtonPress( f24_arg3 ) then
-			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( f24_arg0, f24_arg2, false )
+	f1_arg0:AddButtonCallbackFunction( RNGItemSlot, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "MWHEELUP", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) then
+			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( element, controller, false )
 			return true
 		else
 			
 		end
-	end, function ( f25_arg0, f25_arg1, f25_arg2 )
+	end, function ( element, menu, controller )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x0, nil, "MWHEELUP" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "", nil, "MWHEELUP" )
 			return false
 		else
 			return false
@@ -345,96 +345,96 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC] )
 		return f41_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot2, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f42_arg0, f42_arg1, f42_arg2, f42_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( f42_arg0, f42_arg2, "lootType", LuaEnum.LOOT_TYPE.CONTRACT ) and not CoD.ModelUtility.IsSelfModelValueTrue( f42_arg0, f42_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f42_arg0, f42_arg2, "revealed" ) then
+	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot2, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lootType", LuaEnum.LOOT_TYPE.CONTRACT ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			SetControllerModelValue( f42_arg2, "LootStreamProgress.playAnimation", false )
-			CoD.ContractUtility.OpenContractDetailsSunset( self, f42_arg0, f42_arg2 )
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+			CoD.ContractUtility.OpenContractDetailsSunset( self, element, controller )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f42_arg0, f42_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f42_arg0, f42_arg2, "revealed" ) then
-			CoD.BlackMarketUtility.PlayItemShopSelectSound( f42_arg0, f42_arg2 )
-			OpenOverlay( self, "ItemShopDetailsSunset", f42_arg2, {
-				_model = f42_arg0:getModel()
+		elseif not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			CoD.BlackMarketUtility.PlayItemShopSelectSound( element, controller )
+			OpenOverlay( self, "ItemShopDetailsSunset", controller, {
+				_model = element:getModel()
 			} )
-			SetControllerModelValue( f42_arg2, "LootStreamProgress.playAnimation", false )
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
 			return true
 		else
 			
 		end
-	end, function ( f43_arg0, f43_arg1, f43_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( f43_arg0, f43_arg2, "lootType", LuaEnum.LOOT_TYPE.CONTRACT ) and not CoD.ModelUtility.IsSelfModelValueTrue( f43_arg0, f43_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f43_arg0, f43_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f43_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lootType", LuaEnum.LOOT_TYPE.CONTRACT ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f43_arg0, f43_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f43_arg0, f43_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f43_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot2, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f44_arg0, f44_arg1, f44_arg2, f44_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f44_arg0, f44_arg2, "movieName" ) and IsGamepad( f44_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f44_arg0, f44_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f44_arg0, f44_arg2, "revealed" ) then
-			SetControllerModelValue( f44_arg2, "LootStreamProgress.playAnimation", false )
-			CoD.VideoStreamingUtility.SetupVoDMovie( f44_arg2, f44_arg0, "" )
-			DelayOpenOverlay( f44_arg1, "VoDViewer", f44_arg2, {
+	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot2, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( element, controller, "movieName" ) and IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+			CoD.VideoStreamingUtility.SetupVoDMovie( controller, element, "" )
+			DelayOpenOverlay( menu, "VoDViewer", controller, {
 				fullscreen = true
 			} )
 			return true
 		else
 			
 		end
-	end, function ( f45_arg0, f45_arg1, f45_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f45_arg0, f45_arg2, "movieName" ) and IsGamepad( f45_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f45_arg0, f45_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f45_arg0, f45_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f45_arg1, Enum.LUIButton[0xC083113BC81F23F], "menu/preview", nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( element, controller, "movieName" ) and IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/preview", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot2, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_remove", function ( f46_arg0, f46_arg1, f46_arg2, f46_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f46_arg0, f46_arg2, "movieName" ) and IsMouseOrKeyboard( f46_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f46_arg0, f46_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f46_arg0, f46_arg2, "revealed" ) then
-			SetControllerModelValue( f46_arg2, "LootStreamProgress.playAnimation", false )
-			CoD.VideoStreamingUtility.SetupVoDMovie( f46_arg2, f46_arg0, "" )
-			DelayOpenOverlay( f46_arg1, "VoDViewer", f46_arg2, {
+	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot2, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_remove", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( element, controller, "movieName" ) and IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+			CoD.VideoStreamingUtility.SetupVoDMovie( controller, element, "" )
+			DelayOpenOverlay( menu, "VoDViewer", controller, {
 				fullscreen = true
 			} )
 			return true
 		else
 			
 		end
-	end, function ( f47_arg0, f47_arg1, f47_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f47_arg0, f47_arg2, "movieName" ) and IsMouseOrKeyboard( f47_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f47_arg0, f47_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f47_arg0, f47_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f47_arg1, Enum.LUIButton[0xA86619565BE54DB], "menu/preview", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( element, controller, "movieName" ) and IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xA86619565BE54DB], "menu/preview", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot2, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "MWHEELDOWN", function ( f48_arg0, f48_arg1, f48_arg2, f48_arg3 )
-		if not IsRepeatButtonPress( f48_arg3 ) then
-			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( f48_arg0, f48_arg2, true )
+	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot2, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "MWHEELDOWN", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) then
+			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( element, controller, true )
 			return true
 		else
 			
 		end
-	end, function ( f49_arg0, f49_arg1, f49_arg2 )
+	end, function ( element, menu, controller )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f49_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x0, nil, "MWHEELDOWN" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "", nil, "MWHEELDOWN" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot2, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "MWHEELUP", function ( f50_arg0, f50_arg1, f50_arg2, f50_arg3 )
-		if not IsRepeatButtonPress( f50_arg3 ) then
-			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( f50_arg0, f50_arg2, false )
+	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot2, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "MWHEELUP", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) then
+			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( element, controller, false )
 			return true
 		else
 			
 		end
-	end, function ( f51_arg0, f51_arg1, f51_arg2 )
+	end, function ( element, menu, controller )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f51_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x0, nil, "MWHEELUP" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "", nil, "MWHEELUP" )
 			return false
 		else
 			return false
@@ -552,96 +552,96 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC] )
 		return f67_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot1, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f68_arg0, f68_arg1, f68_arg2, f68_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( f68_arg0, f68_arg2, "lootType", LuaEnum.LOOT_TYPE.CONTRACT ) and not CoD.ModelUtility.IsSelfModelValueTrue( f68_arg0, f68_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f68_arg0, f68_arg2, "revealed" ) then
+	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot1, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lootType", LuaEnum.LOOT_TYPE.CONTRACT ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
 			PlaySoundAlias( "uin_toggle_generic" )
-			SetControllerModelValue( f68_arg2, "LootStreamProgress.playAnimation", false )
-			CoD.ContractUtility.OpenContractDetailsSunset( self, f68_arg0, f68_arg2 )
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+			CoD.ContractUtility.OpenContractDetailsSunset( self, element, controller )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f68_arg0, f68_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f68_arg0, f68_arg2, "revealed" ) then
-			CoD.BlackMarketUtility.PlayItemShopSelectSound( f68_arg0, f68_arg2 )
-			OpenOverlay( self, "ItemShopDetailsSunset", f68_arg2, {
-				_model = f68_arg0:getModel()
+		elseif not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			CoD.BlackMarketUtility.PlayItemShopSelectSound( element, controller )
+			OpenOverlay( self, "ItemShopDetailsSunset", controller, {
+				_model = element:getModel()
 			} )
-			SetControllerModelValue( f68_arg2, "LootStreamProgress.playAnimation", false )
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
 			return true
 		else
 			
 		end
-	end, function ( f69_arg0, f69_arg1, f69_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( f69_arg0, f69_arg2, "lootType", LuaEnum.LOOT_TYPE.CONTRACT ) and not CoD.ModelUtility.IsSelfModelValueTrue( f69_arg0, f69_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f69_arg0, f69_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f69_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueEqualToEnum( element, controller, "lootType", LuaEnum.LOOT_TYPE.CONTRACT ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif not CoD.ModelUtility.IsSelfModelValueTrue( f69_arg0, f69_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f69_arg0, f69_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f69_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot1, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f70_arg0, f70_arg1, f70_arg2, f70_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f70_arg0, f70_arg2, "movieName" ) and IsGamepad( f70_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f70_arg0, f70_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f70_arg0, f70_arg2, "revealed" ) then
-			SetControllerModelValue( f70_arg2, "LootStreamProgress.playAnimation", false )
-			CoD.VideoStreamingUtility.SetupVoDMovie( f70_arg2, f70_arg0, "" )
-			DelayOpenOverlay( f70_arg1, "VoDViewer", f70_arg2, {
+	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot1, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( element, controller, "movieName" ) and IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+			CoD.VideoStreamingUtility.SetupVoDMovie( controller, element, "" )
+			DelayOpenOverlay( menu, "VoDViewer", controller, {
 				fullscreen = true
 			} )
 			return true
 		else
 			
 		end
-	end, function ( f71_arg0, f71_arg1, f71_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f71_arg0, f71_arg2, "movieName" ) and IsGamepad( f71_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f71_arg0, f71_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f71_arg0, f71_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f71_arg1, Enum.LUIButton[0xC083113BC81F23F], "menu/preview", nil, nil )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( element, controller, "movieName" ) and IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "menu/preview", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot1, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_remove", function ( f72_arg0, f72_arg1, f72_arg2, f72_arg3 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f72_arg0, f72_arg2, "movieName" ) and IsMouseOrKeyboard( f72_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f72_arg0, f72_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f72_arg0, f72_arg2, "revealed" ) then
-			SetControllerModelValue( f72_arg2, "LootStreamProgress.playAnimation", false )
-			CoD.VideoStreamingUtility.SetupVoDMovie( f72_arg2, f72_arg0, "" )
-			DelayOpenOverlay( f72_arg1, "VoDViewer", f72_arg2, {
+	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot1, f1_arg1, Enum.LUIButton[0xA86619565BE54DB], "ui_remove", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( element, controller, "movieName" ) and IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			SetControllerModelValue( controller, "LootStreamProgress.playAnimation", false )
+			CoD.VideoStreamingUtility.SetupVoDMovie( controller, element, "" )
+			DelayOpenOverlay( menu, "VoDViewer", controller, {
 				fullscreen = true
 			} )
 			return true
 		else
 			
 		end
-	end, function ( f73_arg0, f73_arg1, f73_arg2 )
-		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( f73_arg0, f73_arg2, "movieName" ) and IsMouseOrKeyboard( f73_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f73_arg0, f73_arg2, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( f73_arg0, f73_arg2, "revealed" ) then
-			CoD.Menu.SetButtonLabel( f73_arg1, Enum.LUIButton[0xA86619565BE54DB], "menu/preview", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsSelfModelValueNonEmptyString( element, controller, "movieName" ) and IsMouseOrKeyboard( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "emptyItem" ) and CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "revealed" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xA86619565BE54DB], "menu/preview", Enum[0xBEBDBAEEB3ECCCA][0xB6372335C630AD3], "ui_remove" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot1, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "MWHEELDOWN", function ( f74_arg0, f74_arg1, f74_arg2, f74_arg3 )
-		if not IsRepeatButtonPress( f74_arg3 ) then
-			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( f74_arg0, f74_arg2, true )
+	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot1, f1_arg1, Enum.LUIButton[0x820DDD869ABBFAA], "MWHEELDOWN", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) then
+			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( element, controller, true )
 			return true
 		else
 			
 		end
-	end, function ( f75_arg0, f75_arg1, f75_arg2 )
+	end, function ( element, menu, controller )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f75_arg1, Enum.LUIButton[0x820DDD869ABBFAA], 0x0, nil, "MWHEELDOWN" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x820DDD869ABBFAA], "", nil, "MWHEELDOWN" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot1, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "MWHEELUP", function ( f76_arg0, f76_arg1, f76_arg2, f76_arg3 )
-		if not IsRepeatButtonPress( f76_arg3 ) then
-			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( f76_arg0, f76_arg2, false )
+	f1_arg0:AddButtonCallbackFunction( DeterministicItemSlot1, f1_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], "MWHEELUP", function ( element, menu, controller, model )
+		if not IsRepeatButtonPress( model ) then
+			CoD.GridAndListUtility.NavigateGridItemOnParentGridOrList( element, controller, false )
 			return true
 		else
 			
 		end
-	end, function ( f77_arg0, f77_arg1, f77_arg2 )
+	end, function ( element, menu, controller )
 		if not IsRepeatButtonPress( nil ) then
-			CoD.Menu.SetButtonLabel( f77_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0x0, nil, "MWHEELUP" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "", nil, "MWHEELUP" )
 			return false
 		else
 			return false
@@ -793,7 +793,7 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	TiledwhiteNoiseBacking = LUI.UIImage.new( 0, 0, 115, 649, 0, 0, 148, 174 )
 	TiledwhiteNoiseBacking:setRGB( 0.81, 0.89, 0.93 )
 	TiledwhiteNoiseBacking:setAlpha( 0.04 )
-	TiledwhiteNoiseBacking:setImage( RegisterImage( 0x7167D8C33A06020 ) )
+	TiledwhiteNoiseBacking:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
 	TiledwhiteNoiseBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledwhiteNoiseBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledwhiteNoiseBacking:setupNineSliceShader( 64, 64 )
@@ -803,7 +803,7 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local TiledwhiteNoiseBacking2 = LUI.UIImage.new( 0, 0, 684, 933, 0, 0, 148, 174 )
 	TiledwhiteNoiseBacking2:setRGB( 0.81, 0.89, 0.93 )
 	TiledwhiteNoiseBacking2:setAlpha( 0.04 )
-	TiledwhiteNoiseBacking2:setImage( RegisterImage( 0x7167D8C33A06020 ) )
+	TiledwhiteNoiseBacking2:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
 	TiledwhiteNoiseBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledwhiteNoiseBacking2:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledwhiteNoiseBacking2:setupNineSliceShader( 64, 64 )
@@ -813,7 +813,7 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local TiledwhiteNoiseBacking3 = LUI.UIImage.new( 0, 0, 968, 1217, 0, 0, 148, 174 )
 	TiledwhiteNoiseBacking3:setRGB( 0.81, 0.89, 0.93 )
 	TiledwhiteNoiseBacking3:setAlpha( 0.04 )
-	TiledwhiteNoiseBacking3:setImage( RegisterImage( 0x7167D8C33A06020 ) )
+	TiledwhiteNoiseBacking3:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
 	TiledwhiteNoiseBacking3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	TiledwhiteNoiseBacking3:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledwhiteNoiseBacking3:setupNineSliceShader( 64, 64 )
@@ -822,7 +822,7 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local RNGItemSlotLabel = LUI.UIText.new( 0.5, 0.5, -270, -32, 0.5, 0.5, -388, -370 )
 	RNGItemSlotLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	RNGItemSlotLabel:setText( LocalizeToUpperString( 0xDD64FB205312314 ) )
+	RNGItemSlotLabel:setText( LocalizeToUpperString( "menu/reserve_offer" ) )
 	RNGItemSlotLabel:setTTF( "ttmussels_regular" )
 	RNGItemSlotLabel:setLetterSpacing( 4 )
 	RNGItemSlotLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -832,7 +832,7 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local DeterministicItemLabel = LUI.UIText.new( 0.5, 0.5, -840, -316, 0.5, 0.5, -388, -370 )
 	DeterministicItemLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	DeterministicItemLabel:setText( LocalizeToUpperString( 0x5DAEFC4C9B0A8FA ) )
+	DeterministicItemLabel:setText( LocalizeToUpperString( "menu/my_shop" ) )
 	DeterministicItemLabel:setTTF( "ttmussels_regular" )
 	DeterministicItemLabel:setLetterSpacing( 4 )
 	DeterministicItemLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )
@@ -876,7 +876,7 @@ CoD.BlackJacksShopFrameSunset.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local MyShopLabel = LUI.UIText.new( 0.5, 0.5, 14, 252, 0.5, 0.5, -388, -370 )
 	MyShopLabel:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	MyShopLabel:setText( LocalizeToUpperString( 0xFCC6C603186E74 ) )
+	MyShopLabel:setText( LocalizeToUpperString( "mpui/bm_bribe_bundle" ) )
 	MyShopLabel:setTTF( "ttmussels_regular" )
 	MyShopLabel:setLetterSpacing( 4 )
 	MyShopLabel:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

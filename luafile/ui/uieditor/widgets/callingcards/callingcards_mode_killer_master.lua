@@ -1,11 +1,11 @@
 require( "ui/uieditor/widgets/callingcards/callingcards_asset_birds" )
 
-CoD[0x323BABA7CF22289] = InheritFrom( LUI.UIElement )
-CoD[0x323BABA7CF22289].__defaultWidth = 960
-CoD[0x323BABA7CF22289].__defaultHeight = 240
-CoD[0x323BABA7CF22289].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
+CoD.callingcards_mode_killer_master = InheritFrom( LUI.UIElement )
+CoD.callingcards_mode_killer_master.__defaultWidth = 960
+CoD.callingcards_mode_killer_master.__defaultHeight = 240
+CoD.callingcards_mode_killer_master.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
 	local self = LUI.UIElement.new( f1_arg2, f1_arg3, f1_arg4, f1_arg5, f1_arg6, f1_arg7, f1_arg8, f1_arg9 )
-	self:setClass( CoD[0x323BABA7CF22289] )
+	self:setClass( CoD.callingcards_mode_killer_master )
 	self.id = "CallingCards_Mode_Killer_Master"
 	self.soundSet = "default"
 	self.anyChildUsesUpdateState = true
@@ -13,8 +13,8 @@ CoD[0x323BABA7CF22289].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	
 	local fog = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
 	fog:setAlpha( 0.8 )
-	fog:setImage( RegisterImage( 0xD11ABCC4046591D ) )
-	fog:setMaterial( LUI.UIImage.GetCachedMaterial( 0x73D72BCD14C2AAD ) )
+	fog:setImage( RegisterImage( "uie_mode_background" ) )
+	fog:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tile_scroll_normal" ) )
 	fog:setShaderVector( 0, 1, 1, 0, 0 )
 	fog:setShaderVector( 1, -0.01, 0, 0, 0 )
 	self:addElement( fog )
@@ -26,7 +26,7 @@ CoD[0x323BABA7CF22289].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.birds = birds
 	
 	local pirateship = LUI.UIImage.new( 0, 0, -90, 870, 0, 0, 0, 240 )
-	pirateship:setImage( RegisterImage( 0xE59BDA9564AC719 ) )
+	pirateship:setImage( RegisterImage( "uie_pirate_ship" ) )
 	self:addElement( pirateship )
 	self.pirateship = pirateship
 	
@@ -37,7 +37,7 @@ CoD[0x323BABA7CF22289].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.boatHighlight = boatHighlight
 	
 	local skelly = LUI.UIImage.new( 0, 0, 0, 960, 0, 0, 0, 240 )
-	skelly:setImage( RegisterImage( 0x3253A46565BFDD8 ) )
+	skelly:setImage( RegisterImage( "uie_skeleton" ) )
 	self:addElement( skelly )
 	self.skelly = skelly
 	
@@ -47,12 +47,12 @@ CoD[0x323BABA7CF22289].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.lightOverlay = lightOverlay
 	
 	local eyeFlareImage = LUI.UIImage.new( 0, 0, 687, 1042, 0, 0, -9, 189 )
-	eyeFlareImage:setImage( RegisterImage( 0x9E525E6B1CD616F ) )
+	eyeFlareImage:setImage( RegisterImage( "uie_eye_flare" ) )
 	self:addElement( eyeFlareImage )
 	self.eyeFlareImage = eyeFlareImage
 	
 	local eyeFlareImage2 = LUI.UIImage.new( 0, 0, 792, 1147, 0, 0, -9, 189 )
-	eyeFlareImage2:setImage( RegisterImage( 0x9E525E6B1CD616F ) )
+	eyeFlareImage2:setImage( RegisterImage( "uie_eye_flare" ) )
 	self:addElement( eyeFlareImage2 )
 	self.eyeFlareImage2 = eyeFlareImage2
 	
@@ -65,7 +65,7 @@ CoD[0x323BABA7CF22289].new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	return self
 end
 
-CoD[0x323BABA7CF22289].__resetProperties = function ( f2_arg0 )
+CoD.callingcards_mode_killer_master.__resetProperties = function ( f2_arg0 )
 	f2_arg0.lightOverlay:completeAnimation()
 	f2_arg0.eyeFlareImage:completeAnimation()
 	f2_arg0.eyeFlareImage2:completeAnimation()
@@ -82,7 +82,7 @@ CoD[0x323BABA7CF22289].__resetProperties = function ( f2_arg0 )
 	f2_arg0.birds:setScale( 1, 1 )
 end
 
-CoD[0x323BABA7CF22289].__clipsPerState = {
+CoD.callingcards_mode_killer_master.__clipsPerState = {
 	DefaultState = {
 		DefaultClip = function ( f3_arg0, f3_arg1 )
 			f3_arg0:__resetProperties()
@@ -181,7 +181,7 @@ CoD[0x323BABA7CF22289].__clipsPerState = {
 		end
 	}
 }
-CoD[0x323BABA7CF22289].__onClose = function ( f15_arg0 )
+CoD.callingcards_mode_killer_master.__onClose = function ( f15_arg0 )
 	f15_arg0.birds:close()
 end
 

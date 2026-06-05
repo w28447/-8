@@ -1,5 +1,5 @@
-require( "x64:fba4267ffde82d4" )
-require( "x64:d9555af6faa42f8" )
+require( "ui/uieditor/widgets/hud/scoreinfo/scoreinfo_roundlist" )
+require( "ui/uieditor/widgets/hud/scoreinfo/scoreinfo_ticketsystemteam" )
 
 CoD.ScoreInfoProp = InheritFrom( LUI.UIElement )
 CoD.ScoreInfoProp.__defaultWidth = 222
@@ -13,7 +13,7 @@ CoD.ScoreInfoProp.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local FrameProp = LUI.UIImage.new( 0, 0, 0, 221, 0, 0, 40, 118 )
-	FrameProp:setImage( RegisterImage( 0xBB98C5B85B952AD ) )
+	FrameProp:setImage( RegisterImage( "uie_ui_hud_prophunt_match_widget_frame" ) )
 	self:addElement( FrameProp )
 	self.FrameProp = FrameProp
 	

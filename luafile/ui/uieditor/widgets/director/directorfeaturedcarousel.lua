@@ -58,7 +58,7 @@ CoD.DirectorFeaturedCarousel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	
 	local IdentityBracketBot = LUI.UIImage.new( 0, 1.01, -3, -3, 0, 0, -2, 10 )
 	IdentityBracketBot:setAlpha( 0.15 )
-	IdentityBracketBot:setImage( RegisterImage( 0x5D6BC90D2477559 ) )
+	IdentityBracketBot:setImage( RegisterImage( "uie_ui_menu_social_info_bracket" ) )
 	IdentityBracketBot:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	IdentityBracketBot:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( IdentityBracketBot )
@@ -67,7 +67,7 @@ CoD.DirectorFeaturedCarousel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local IdentityBracketBot2 = LUI.UIImage.new( -0.01, 1.01, 0, 0, 1, 1, -10, 2 )
 	IdentityBracketBot2:setAlpha( 0.15 )
 	IdentityBracketBot2:setZRot( 180 )
-	IdentityBracketBot2:setImage( RegisterImage( 0x5D6BC90D2477559 ) )
+	IdentityBracketBot2:setImage( RegisterImage( "uie_ui_menu_social_info_bracket" ) )
 	IdentityBracketBot2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	IdentityBracketBot2:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( IdentityBracketBot2 )
@@ -88,7 +88,7 @@ CoD.DirectorFeaturedCarousel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 			DirectorFeaturedItem.Header:setText( ToUpper( f6_local0 ) )
 		end
 	end )
-	self:registerEventHandler( "grid_item_changed", function ( element, event )
+	self:registerEventHandler( "grid_item_changed", function ( self, event )
 		local f7_local0 = nil
 		UpdateAllMenuButtonPrompts( f1_arg0, f1_arg1 )
 		return f7_local0

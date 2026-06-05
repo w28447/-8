@@ -85,7 +85,7 @@ CoD.CACHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	local TopBar2 = LUI.UIImage.new( -0.65, 1.85, -192, -192, 0, 0, 50, 53 )
 	TopBar2:setRGB( 0.46, 0.46, 0.51 )
 	TopBar2:setAlpha( 0.8 )
-	TopBar2:setImage( RegisterImage( 0x42BCCF45B82FBED ) )
+	TopBar2:setImage( RegisterImage( "uie_ui_menu_cac_primary_button_top_bar" ) )
 	TopBar2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	TopBar2:setShaderVector( 0, 2, 0, 0, 0 )
 	TopBar2:registerEventHandler( "menu_loaded", function ( element, event )
@@ -107,7 +107,7 @@ CoD.CACHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	self.TopBar2 = TopBar2
 	
 	local subtitle = CoD.CommonHeaderText.new( f1_arg0, f1_arg1, 0.5, 0.5, -926.5, 107.5, 0, 0, 16, 46 )
-	subtitle.StageTitle:setText( LocalizeToUpperString( 0xEEF90B1483C4C23 ) )
+	subtitle.StageTitle:setText( LocalizeToUpperString( "mpui/aar_caps" ) )
 	subtitle:subscribeToGlobalModel( f1_arg1, "LobbyRoot", "lobbyTitle", function ( model )
 		local f7_local0 = model:get()
 		if f7_local0 ~= nil then

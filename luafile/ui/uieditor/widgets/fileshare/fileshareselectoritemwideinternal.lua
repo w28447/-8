@@ -50,7 +50,7 @@ CoD.FileshareSelectorItemWideInternal.new = function ( f1_arg0, f1_arg1, f1_arg2
 	self.FileImage = FileImage
 	
 	local PlusImage = LUI.UIImage.new( 0.5, 0.5, -48, 48, 0.5, 0.5, -57, 39 )
-	PlusImage:setImage( RegisterImage( 0x596ECE61E222F53 ) )
+	PlusImage:setImage( RegisterImage( "uie_t7_icon_menu_simple_publish_green" ) )
 	self:addElement( PlusImage )
 	self.PlusImage = PlusImage
 	

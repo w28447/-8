@@ -9,8 +9,8 @@ CoD.AnimationLoadingWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local Base = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	Base:setImage( RegisterImage( 0xD7107421B53850D ) )
-	Base:setMaterial( LUI.UIImage.GetCachedMaterial( 0x72987F9CD841ED7 ) )
+	Base:setImage( RegisterImage( "t7_menu_loadingspinner_flipbook" ) )
+	Base:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_animated" ) )
 	Base:setShaderVector( 0, 28, 1, 0, 0 )
 	Base:setShaderVector( 1, 0, 0, 0, 0 )
 	self:addElement( Base )
@@ -18,8 +18,8 @@ CoD.AnimationLoadingWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	
 	local Add = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	Add:setAlpha( 0.8 )
-	Add:setImage( RegisterImage( 0xD7107421B53850D ) )
-	Add:setMaterial( LUI.UIImage.GetCachedMaterial( 0x72987F9CD841ED7 ) )
+	Add:setImage( RegisterImage( "t7_menu_loadingspinner_flipbook" ) )
+	Add:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_animated" ) )
 	Add:setShaderVector( 0, 28, 1, 0, 0 )
 	Add:setShaderVector( 1, 0, 0, 0, 0 )
 	self:addElement( Add )
@@ -35,10 +35,10 @@ end
 CoD.AnimationLoadingWidget.__resetProperties = function ( f2_arg0 )
 	f2_arg0.Add:completeAnimation()
 	f2_arg0.Base:completeAnimation()
-	f2_arg0.Add:setMaterial( LUI.UIImage.GetCachedMaterial( 0x72987F9CD841ED7 ) )
+	f2_arg0.Add:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_animated" ) )
 	f2_arg0.Add:setShaderVector( 0, 28, 1, 0, 0 )
 	f2_arg0.Add:setShaderVector( 1, 0, 0, 0, 0 )
-	f2_arg0.Base:setMaterial( LUI.UIImage.GetCachedMaterial( 0x72987F9CD841ED7 ) )
+	f2_arg0.Base:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_animated" ) )
 	f2_arg0.Base:setShaderVector( 0, 28, 1, 0, 0 )
 	f2_arg0.Base:setShaderVector( 1, 0, 0, 0, 0 )
 end
@@ -56,7 +56,7 @@ CoD.AnimationLoadingWidget.__clipsPerState = {
 			end
 			
 			f3_arg0.Base:completeAnimation()
-			f3_arg0.Base:setMaterial( LUI.UIImage.GetCachedMaterial( 0x72987F9CD841ED7 ) )
+			f3_arg0.Base:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_animated" ) )
 			f3_arg0.Base:setShaderVector( 0, 28, 1, 0, 0 )
 			f3_arg0.Base:setShaderVector( 1, 0, 0, 0, 0 )
 			f3_local0( f3_arg0.Base )
@@ -68,7 +68,7 @@ CoD.AnimationLoadingWidget.__clipsPerState = {
 			end
 			
 			f3_arg0.Add:completeAnimation()
-			f3_arg0.Add:setMaterial( LUI.UIImage.GetCachedMaterial( 0x72987F9CD841ED7 ) )
+			f3_arg0.Add:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_flipbook_animated" ) )
 			f3_arg0.Add:setShaderVector( 0, 28, 1, 0, 0 )
 			f3_arg0.Add:setShaderVector( 1, 0, 0, 0, 0 )
 			f3_local1( f3_arg0.Add )

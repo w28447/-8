@@ -10,7 +10,7 @@ CoD.leaguePlayEndRankRulesRewards.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local WhiteBacking = LUI.UIImage.new( 0, 0, 0, 210, 0, 0, 0, 350 )
 	WhiteBacking:setAlpha( 0.02 )
-	WhiteBacking:setImage( RegisterImage( 0x7167D8C33A06020 ) )
+	WhiteBacking:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
 	WhiteBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
 	WhiteBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	WhiteBacking:setupNineSliceShader( 64, 64 )
@@ -64,7 +64,7 @@ CoD.leaguePlayEndRankRulesRewards.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.Reward = Reward
 	
 	local BronzeRankIcon = LUI.UIImage.new( 0, 0, 5, 205, 0, 0, 0, 200 )
-	BronzeRankIcon:setImage( RegisterImage( 0xF6D3B20E1974FD1 ) )
+	BronzeRankIcon:setImage( RegisterImage( "uie_ui_icon_mp_league_07_01_large" ) )
 	self:addElement( BronzeRankIcon )
 	self.BronzeRankIcon = BronzeRankIcon
 	
@@ -72,7 +72,7 @@ CoD.leaguePlayEndRankRulesRewards.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	TopTriangle:setRGB( 0, 0, 0 )
 	TopTriangle:setAlpha( 0 )
 	TopTriangle:setZRot( 90 )
-	TopTriangle:setImage( RegisterImage( 0xE8103AAF0932DB4 ) )
+	TopTriangle:setImage( RegisterImage( "uie_ui_menu_arena_league_hub_triangle" ) )
 	self:addElement( TopTriangle )
 	self.TopTriangle = TopTriangle
 	

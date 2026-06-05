@@ -84,7 +84,7 @@ LUI.createMenu.LeaguePlayRankRules = function ( f1_arg0, f1_arg1 )
 	
 	local PlaceDiamond2 = LUI.UIText.new( 0.5, 0.5, 395, 565, 0.5, 0.5, -70.5, -43.5 )
 	PlaceDiamond2:setRGB( ColorSet.T8__BIEGE.r, ColorSet.T8__BIEGE.g, ColorSet.T8__BIEGE.b )
-	PlaceDiamond2:setText( Engine[0xF9F1239CFD921FE]( 0xA8FD6FB4B0AC2A6 ) )
+	PlaceDiamond2:setText( Engine[0xF9F1239CFD921FE]( "arena/champion" ) )
 	PlaceDiamond2:setTTF( "default" )
 	PlaceDiamond2:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	PlaceDiamond2:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )
@@ -136,13 +136,13 @@ LUI.createMenu.LeaguePlayRankRules = function ( f1_arg0, f1_arg1 )
 	
 	local SilverGoldRankReward = CoD.leaguePlayEndRankRulesRewards.new( f1_local1, f1_arg0, 0.5, 0.5, -106, 104, 0.5, 0.5, -276.5, 73.5 )
 	SilverGoldRankReward.Top25:setText( Engine[0xF9F1239CFD921FE]( 0x7C475D48916CFB0 ) )
-	SilverGoldRankReward.BronzeRankIcon:setImage( RegisterImage( 0x62D3AF284C996EC ) )
+	SilverGoldRankReward.BronzeRankIcon:setImage( RegisterImage( "ui_icon_mp_league_07_02b_large" ) )
 	self:addElement( SilverGoldRankReward )
 	self.SilverGoldRankReward = SilverGoldRankReward
 	
 	local GoldRankReward = CoD.leaguePlayEndRankRulesRewards.new( f1_local1, f1_arg0, 0.5, 0.5, 135, 345, 0.5, 0.5, -276.5, 73.5 )
 	GoldRankReward.Top25:setText( Engine[0xF9F1239CFD921FE]( 0x57048D9800418D4 ) )
-	GoldRankReward.BronzeRankIcon:setImage( RegisterImage( 0x7FDAA868DA4CB7 ) )
+	GoldRankReward.BronzeRankIcon:setImage( RegisterImage( "uie_ui_icon_mp_league_07_03_large" ) )
 	self:addElement( GoldRankReward )
 	self.GoldRankReward = GoldRankReward
 	
@@ -159,13 +159,13 @@ LUI.createMenu.LeaguePlayRankRules = function ( f1_arg0, f1_arg1 )
 	self.FirstStreak = FirstStreak
 	
 	local SecondStreak = CoD.leaguePlayEndRankRulesStreaks.new( f1_local1, f1_arg0, 0.5, 0.5, -75, 75, 0.5, 0.5, 220.5, 402.5 )
-	SecondStreak.FireStreakIcon:setImage( RegisterImage( 0x67E6AD73B271371 ) )
+	SecondStreak.FireStreakIcon:setImage( RegisterImage( "ui_menu_arena_firestreakflipbook_blue" ) )
 	SecondStreak.FirstWin:setText( Engine[0xF9F1239CFD921FE]( 0x89F586B5B1DCEF0 ) )
 	self:addElement( SecondStreak )
 	self.SecondStreak = SecondStreak
 	
 	local ThirdStreak = CoD.leaguePlayEndRankRulesStreaks.new( f1_local1, f1_arg0, 0.5, 0.5, 150, 300, 0.5, 0.5, 220.5, 402.5 )
-	ThirdStreak.FireStreakIcon:setImage( RegisterImage( 0x43E50CC0FCB2633 ) )
+	ThirdStreak.FireStreakIcon:setImage( RegisterImage( "ui_menu_arena_firestreakflipbook_purple" ) )
 	ThirdStreak.FirstWin:setText( Engine[0xF9F1239CFD921FE]( 0x1D2973E846B0C63 ) )
 	self:addElement( ThirdStreak )
 	self.ThirdStreak = ThirdStreak
@@ -174,7 +174,7 @@ LUI.createMenu.LeaguePlayRankRules = function ( f1_arg0, f1_arg1 )
 	TopTriangle:setRGB( 0.92, 0.92, 0.92 )
 	TopTriangle:setAlpha( 0.02 )
 	TopTriangle:setZRot( 90 )
-	TopTriangle:setImage( RegisterImage( 0xE8103AAF0932DB4 ) )
+	TopTriangle:setImage( RegisterImage( "uie_ui_menu_arena_league_hub_triangle" ) )
 	self:addElement( TopTriangle )
 	self.TopTriangle = TopTriangle
 	
@@ -296,7 +296,7 @@ LUI.createMenu.LeaguePlayRankRules = function ( f1_arg0, f1_arg1 )
 	
 	local Diamond = LUI.UIText.new( 0.5, 0.5, 380, 580, 0.5, 0.5, -43.5, -25.5 )
 	Diamond:setRGB( ColorSet.T8__OFF__WHITE.r, ColorSet.T8__OFF__WHITE.g, ColorSet.T8__OFF__WHITE.b )
-	Diamond:setText( Engine[0xF9F1239CFD921FE]( 0xF625B54E9F11807 ) )
+	Diamond:setText( Engine[0xF9F1239CFD921FE]( "arena/diamond" ) )
 	Diamond:setTTF( "ttmussels_regular" )
 	Diamond:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Diamond:setAlignment( Enum.LUIAlignment[0xE821F0ECFF8D1C7] )
@@ -323,11 +323,11 @@ LUI.createMenu.LeaguePlayRankRules = function ( f1_arg0, f1_arg1 )
 			end
 		}
 	} )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		GoBack( self, f7_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		GoBack( self, controller )
 		return true
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], 0x3996BAAC73C3F6D, nil, nil )
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/dismiss", nil, nil )
 		return true
 	end, false )
 	LUI.OverrideFunction_CallOriginalFirst( self, "close", function ( element )

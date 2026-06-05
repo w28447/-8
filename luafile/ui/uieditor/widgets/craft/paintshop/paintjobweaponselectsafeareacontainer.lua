@@ -20,7 +20,7 @@ CoD.PaintjobWeaponSelectSafeAreaContainer.new = function ( f1_arg0, f1_arg1, f1_
 	
 	local CommonHeader = CoD.CommonHeader.new( f1_arg0, f1_arg1, 0.5, 0.5, -960, 960, 0, 0, 0, 67 )
 	CommonHeader.BGSceneBlur:setAlpha( 0 )
-	CommonHeader.subtitle.StageTitle:setText( Engine[0xF9F1239CFD921FE]( 0x93CE015442D7E04 ) )
+	CommonHeader.subtitle.StageTitle:setText( Engine[0xF9F1239CFD921FE]( "menu/select_weapon_caps" ) )
 	CommonHeader.subtitle.subtitle:setAlpha( 0 )
 	CommonHeader:subscribeToGlobalModel( f1_arg1, "LobbyRoot", "lobbyMainMode", function ( model )
 		local f2_local0 = model:get()

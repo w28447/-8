@@ -10,12 +10,12 @@ CoD.vhud_attack_helicopter_flare.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local flareOutline = LUI.UIImage.new( 0.5, 0.5, -41, 41, 0.5, 0.5, -19, 19 )
 	flareOutline:setRGB( 0.33, 0.33, 0.33 )
-	flareOutline:setImage( RegisterImage( 0x4D2AF0AA8C0A376 ) )
+	flareOutline:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_flare_indicator" ) )
 	self:addElement( flareOutline )
 	self.flareOutline = flareOutline
 	
 	local flare = LUI.UIImage.new( 0.5, 0.5, -41, 41, 0.5, 0.5, -19, 19 )
-	flare:setImage( RegisterImage( 0x4D2AF0AA8C0A376 ) )
+	flare:setImage( RegisterImage( "uie_ui_hud_vehicle_ac130_flare_indicator" ) )
 	self:addElement( flare )
 	self.flare = flare
 	

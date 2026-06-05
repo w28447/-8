@@ -24,7 +24,7 @@ CoD.ZMLoadoutPreviewClassPipPC.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local Border = LUI.UIImage.new( 0.08, 0.93, 0, 0, 0.08, 0.93, 0, 0 )
 	Border:setRGB( 0.33, 0.33, 0.33 )
-	Border:setImage( RegisterImage( 0xF1E3082B39E99BB ) )
+	Border:setImage( RegisterImage( "uie_highlight_border_line" ) )
 	Border:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	Border:setShaderVector( 0, 0, 0, 0, 0 )
 	Border:setupNineSliceShader( 7, 7 )
@@ -39,7 +39,7 @@ CoD.ZMLoadoutPreviewClassPipPC.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local Glow = LUI.UIImage.new( -0.15, 1.15, 0, 0, -0.21, 1.21, 0, 0 )
 	Glow:setAlpha( 0 )
-	Glow:setImage( RegisterImage( 0xC58FF2328701EBA ) )
+	Glow:setImage( RegisterImage( "uie_ui_hud_core_no_ammo_glow" ) )
 	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	Glow:setShaderVector( 0, 0.05, 0.95, 0, 0 )
 	Glow:setShaderVector( 1, 0.2, 0.2, 0, 0 )
@@ -109,18 +109,18 @@ CoD.ZMLoadoutPreviewClassPipPC.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self:linkToElementModel( self, "classNum", true, function ( model, f9_arg1 )
 		CoD.Menu.UpdateButtonShownState( f9_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 	end )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f10_arg0, f10_arg1, f10_arg2, f10_arg3 )
-		if not CoD.ZMLoadoutUtility.ShouldHideLoadoutPreviewSelectButton( f10_arg1, f10_arg0, f10_arg2, "selectedCustomClass", "classNum" ) then
-			CoD.ZMLoadoutUtility.SetEquippedBubbleGumPackToSelectedClass( f10_arg0, f10_arg2, f10_arg1 )
-			CoD.CACUtility.SelectCustomClass( f10_arg2, f10_arg0 )
-			CoD.BaseUtility.SetControllerModelToSelfModelValue( f10_arg2, self, "selectedCustomClass", "classNum" )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
+		if not CoD.ZMLoadoutUtility.ShouldHideLoadoutPreviewSelectButton( menu, element, controller, "selectedCustomClass", "classNum" ) then
+			CoD.ZMLoadoutUtility.SetEquippedBubbleGumPackToSelectedClass( element, controller, menu )
+			CoD.CACUtility.SelectCustomClass( controller, element )
+			CoD.BaseUtility.SetControllerModelToSelfModelValue( controller, self, "selectedCustomClass", "classNum" )
 			return true
 		else
 			
 		end
-	end, function ( f11_arg0, f11_arg1, f11_arg2 )
-		if not CoD.ZMLoadoutUtility.ShouldHideLoadoutPreviewSelectButton( f11_arg1, f11_arg0, f11_arg2, "selectedCustomClass", "classNum" ) then
-			CoD.Menu.SetButtonLabel( f11_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+	end, function ( element, menu, controller )
+		if not CoD.ZMLoadoutUtility.ShouldHideLoadoutPreviewSelectButton( menu, element, controller, "selectedCustomClass", "classNum" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
 		else
 			return false

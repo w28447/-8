@@ -21,7 +21,7 @@ CoD.CodCasterPlayerListHeaderWidgetContainer.new = function ( f1_arg0, f1_arg1, 
 	self.Header = Header
 	
 	local ListenIn = LUI.UIImage.new( 1.15, 1.15, -493, -472, 0, 0, 27, 48 )
-	ListenIn:setImage( RegisterImage( 0x985CBF5844BD821 ) )
+	ListenIn:setImage( RegisterImage( "uie_t7_core_hud_voiptemp-01" ) )
 	self:addElement( ListenIn )
 	self.ListenIn = ListenIn
 	

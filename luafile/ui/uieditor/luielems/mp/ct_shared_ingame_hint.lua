@@ -34,7 +34,7 @@ LUI.createMenu.ct_shared_ingame_hint = function ( f1_arg0, f1_arg1 )
 	InGameHint:setBackingAlpha( 0.95 )
 	InGameHint:setBackingXPadding( 50 )
 	InGameHint:setBackingYPadding( 10 )
-	InGameHint:setBackingImage( RegisterImage( 0xF5B05C37854785F ) )
+	InGameHint:setBackingImage( RegisterImage( "uie_ui_hud_core_match_begins_banner" ) )
 	InGameHint:linkToElementModel( self, "inGameHint", true, function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then

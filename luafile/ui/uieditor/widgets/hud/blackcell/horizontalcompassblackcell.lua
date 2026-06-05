@@ -8,7 +8,7 @@ CoD.HorizontalCompassBlackCell.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.soundSet = "default"
 	
 	local user = LUI.UIImage.new( 0.5, 0.5, -28, 28, 1, 1, -51, 5 )
-	user:setImage( RegisterImage( 0x65AA457EFC48EF6 ) )
+	user:setImage( RegisterImage( "uie_t7_hud_blackcell_user" ) )
 	self:addElement( user )
 	self.user = user
 	

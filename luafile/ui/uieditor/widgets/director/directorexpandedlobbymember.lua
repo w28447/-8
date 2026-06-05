@@ -94,7 +94,7 @@ CoD.DirectorExpandedLobbyMember.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local Spinner = LUI.UIImage.new( 0, 0, 195.5, 229.5, 0, 0, 18, 52 )
 	Spinner:setAlpha( 0 )
-	Spinner:setImage( RegisterImage( 0xC96F6285B1D996C ) )
+	Spinner:setImage( RegisterImage( "ui_icon_loading_spinner" ) )
 	Spinner:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Spinner:setShaderVector( 0, 1, 0, 0, 0 )
 	self:addElement( Spinner )
@@ -103,7 +103,7 @@ CoD.DirectorExpandedLobbyMember.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local PlayerFound = LUI.UIText.new( 0.5, 0.5, -90, 90, 0.5, 0.5, -10, 10 )
 	PlayerFound:setRGB( ColorSet.T8__OFF__GRAY.r, ColorSet.T8__OFF__GRAY.g, ColorSet.T8__OFF__GRAY.b )
 	PlayerFound:setAlpha( 0 )
-	PlayerFound:setText( LocalizeToUpperString( 0xEB699BFD0440905 ) )
+	PlayerFound:setText( LocalizeToUpperString( "director/playerfound" ) )
 	PlayerFound:setTTF( "ttmussels_regular" )
 	PlayerFound:setMaterial( LUI.UIImage.GetCachedMaterial( 0x90D57B1E92D39D7 ) )
 	PlayerFound:setShaderVector( 0, 0.2, 0, 0, 0 )
@@ -250,17 +250,17 @@ CoD.DirectorExpandedLobbyMember.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 			end )
 		end
 	end )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f19_arg0, f19_arg1, f19_arg2, f19_arg3 )
-		if IsPC() and IsGamepad( f19_arg2 ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( self, f19_arg2, "info->xuid", Engine.StringToXUIDDecimal( "0" ) ) then
-			SetSelectedFriendXUID( self, f19_arg0, f19_arg2 )
-			OpenOverlay( self, "Social_PlayerDetailsPopup", f19_arg2, nil )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if IsPC() and IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( self, controller, "info->xuid", Engine.StringToXUIDDecimal( "0" ) ) then
+			SetSelectedFriendXUID( self, element, controller )
+			OpenOverlay( self, "Social_PlayerDetailsPopup", controller, nil )
 			return true
 		else
 			
 		end
-	end, function ( f20_arg0, f20_arg1, f20_arg2 )
-		if IsPC() and IsGamepad( f20_arg2 ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( self, f20_arg2, "info->xuid", Engine.StringToXUIDDecimal( "0" ) ) then
-			CoD.Menu.SetButtonLabel( f20_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xE0254269ED8FFD3, nil, nil )
+	end, function ( element, menu, controller )
+		if IsPC() and IsGamepad( controller ) and not CoD.ModelUtility.IsSelfModelPathValueEqualTo( self, controller, "info->xuid", Engine.StringToXUIDDecimal( "0" ) ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], 0xE0254269ED8FFD3, nil, nil )
 			return true
 		else
 			return false

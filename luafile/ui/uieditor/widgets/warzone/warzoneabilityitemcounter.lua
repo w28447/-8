@@ -43,7 +43,7 @@ CoD.WarzoneAbilityItemCounter.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 		{
 			stateName = "InvisibleHeavyMetalHeroes",
 			condition = function ( menu, element, event )
-				return CoD.HUDUtility.IsGameTypeEqualToString( "warzone_heavy_metal_heroes" ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "id", 0xD794B7E34CF01C9 )
+				return CoD.HUDUtility.IsGameTypeEqualToString( "warzone_heavy_metal_heroes" ) and CoD.ModelUtility.IsSelfModelValueEqualTo( element, f1_arg1, "id", "eq_grapple_wz" )
 			end
 		}
 	} )

@@ -19,7 +19,7 @@ CoD.AARSquadHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local Number = LUI.UIText.new( 0, 0, 0, 60, 0.5, 0.5, -10, 10 )
 	Number:setRGB( 0.7, 0.7, 0.7 )
-	Number:setText( Engine[0xF9F1239CFD921FE]( 0x1F2CC836CC2EF55 ) )
+	Number:setText( Engine[0xF9F1239CFD921FE]( "menu/hashtag" ) )
 	Number:setTTF( "0arame_mono_stencil" )
 	Number:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	Number:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

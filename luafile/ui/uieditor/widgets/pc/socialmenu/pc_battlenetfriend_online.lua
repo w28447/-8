@@ -58,7 +58,7 @@ CoD.PC_BattlenetFriend_Online.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.TXTPending = TXTPending
 	
 	local IMG_PlayerStatusIcon = LUI.UIImage.new( 0.16, 0.16, 0, 40, 0.44, 0.44, 0, 40 )
-	IMG_PlayerStatusIcon:setImage( RegisterImage( 0x9B492EAA2070F06 ) )
+	IMG_PlayerStatusIcon:setImage( RegisterImage( "uie_sliderbar_handle_alt" ) )
 	IMG_PlayerStatusIcon:linkToElementModel( self, "battlenetPresence", true, function ( model )
 		local f4_local0 = model:get()
 		if f4_local0 ~= nil then
@@ -125,17 +125,17 @@ CoD.PC_BattlenetFriend_Online.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	f1_local10( f1_local9, f1_local11.LastInput, function ( f12_arg0, f12_arg1 )
 		CoD.Menu.UpdateButtonShownState( f12_arg1, f1_arg0, f1_arg1, Enum.LUIButton[0xC083113BC81F23F] )
 	end, false )
-	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( f13_arg0, f13_arg1, f13_arg2, f13_arg3 )
-		if IsGamepad( f13_arg2 ) then
-			SetSelectedFriendXUID( self, f13_arg0, f13_arg2 )
-			OpenOverlay( self, "Social_PlayerDetailsPopup", f13_arg2, nil )
+	f1_arg0:AddButtonCallbackFunction( self, f1_arg1, Enum.LUIButton[0xC083113BC81F23F], nil, function ( element, menu, controller, model )
+		if IsGamepad( controller ) then
+			SetSelectedFriendXUID( self, element, controller )
+			OpenOverlay( self, "Social_PlayerDetailsPopup", controller, nil )
 			return true
 		else
 			
 		end
-	end, function ( f14_arg0, f14_arg1, f14_arg2 )
-		if IsGamepad( f14_arg2 ) then
-			CoD.Menu.SetButtonLabel( f14_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xE0254269ED8FFD3, nil, nil )
+	end, function ( element, menu, controller )
+		if IsGamepad( controller ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], 0xE0254269ED8FFD3, nil, nil )
 			return true
 		else
 			return false

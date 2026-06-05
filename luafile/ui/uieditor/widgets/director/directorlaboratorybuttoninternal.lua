@@ -59,7 +59,7 @@ CoD.DirectorLaboratoryButtonInternal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	self.SpecialEventBanner = SpecialEventBanner
 	
 	local StreamImageSmall = LUI.UIFixedAspectRatioImage.new( 0, 0, 1, 97, 1, 1, -124, -6 )
-	StreamImageSmall:setImage( RegisterImage( 0x76C393335224D3F ) )
+	StreamImageSmall:setImage( RegisterImage( "ui_icon_nebulium_medium" ) )
 	StreamImageSmall:setStretchedDimension( 5 )
 	self:addElement( StreamImageSmall )
 	self.StreamImageSmall = StreamImageSmall

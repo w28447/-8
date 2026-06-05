@@ -10,7 +10,7 @@ CoD.WarzoneKilledByName.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local KilledBy = LUI.UIText.new( 0, 0, 240, 398, 0, 0, 0, 45 )
-	KilledBy:setText( Engine[0xF9F1239CFD921FE]( 0x384588C2F4949A5 ) )
+	KilledBy:setText( Engine[0xF9F1239CFD921FE]( "cgame/killedby" ) )
 	KilledBy:setTTF( "ttmussels_demibold" )
 	KilledBy:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6250C6FCAC36BD4 ) )
 	KilledBy:setShaderVector( 0, 0, 0, 0, 0 )

@@ -102,8 +102,8 @@ LUI.createMenu.Laboratory = function ( f1_arg0, f1_arg1 )
 			end
 		}
 	} )
-	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( 0x4031C820A02E7BA ) )
-	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( 0x4031C820A02E7BA ) )
+	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleText:setText( LocalizeToUpperString( "menu/transaction_history" ) )
+	TransactionDeepLinkButton.DirectorCustomStartButton.MiddleTextFocus:setText( LocalizeToUpperString( "menu/transaction_history" ) )
 	TransactionDeepLinkButton:registerEventHandler( "gain_focus", function ( element, event )
 		local f6_local0 = nil
 		if element.gainFocus then
@@ -114,31 +114,31 @@ LUI.createMenu.Laboratory = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( element, f1_local1, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8] )
 		return f6_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
+	f1_local1:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "MOUSE1", function ( element, menu, controller, model )
 		if CoD.PCKoreaUtility.ShowTransactionHistoryButton() then
-			CoD.PCKoreaUtility.OpenTransactionsDeepLinkLab( f7_arg2 )
+			CoD.PCKoreaUtility.OpenTransactionsDeepLinkLab( controller )
 			return true
 		else
 			
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
+	end, function ( element, menu, controller )
 		if CoD.PCKoreaUtility.ShowTransactionHistoryButton() then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "MOUSE1" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "MOUSE1" )
 			return false
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( f9_arg0, f9_arg1, f9_arg2, f9_arg3 )
+	f1_local1:AddButtonCallbackFunction( TransactionDeepLinkButton, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ui_confirm", function ( element, menu, controller, model )
 		if CoD.PCKoreaUtility.ShowTransactionHistoryButton() then
-			CoD.PCKoreaUtility.OpenTransactionsDeepLinkLab( f9_arg2 )
+			CoD.PCKoreaUtility.OpenTransactionsDeepLinkLab( controller )
 			return true
 		else
 			
 		end
-	end, function ( f10_arg0, f10_arg1, f10_arg2 )
+	end, function ( element, menu, controller )
 		if CoD.PCKoreaUtility.ShowTransactionHistoryButton() then
-			CoD.Menu.SetButtonLabel( f10_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0x0, nil, "ui_confirm" )
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "", nil, "ui_confirm" )
 			return false
 		else
 			return false
@@ -239,131 +239,131 @@ LUI.createMenu.Laboratory = function ( f1_arg0, f1_arg1 )
 		CoD.Menu.UpdateButtonShownState( f20_arg1, f1_local1, f1_arg0, Enum.LUIButton[0xC083113BC81F23F] )
 		CoD.Menu.UpdateButtonShownState( f20_arg1, f1_local1, f1_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC] )
 	end, false )
-	self:registerEventHandler( "occlusion_change", function ( element, event )
+	self:registerEventHandler( "occlusion_change", function ( self, event )
 		local f21_local0 = nil
-		if element.OcclusionChange then
-			f21_local0 = element:OcclusionChange( event )
-		elseif element.super.OcclusionChange then
-			f21_local0 = element.super:OcclusionChange( event )
+		if self.OcclusionChange then
+			f21_local0 = self:OcclusionChange( event )
+		elseif self.super.OcclusionChange then
+			f21_local0 = self.super:OcclusionChange( event )
 		end
 		UpdateAllMenuButtonPrompts( f1_local1, f1_arg0 )
 		if not f21_local0 then
-			f21_local0 = element:dispatchEventToChildren( event )
+			f21_local0 = self:dispatchEventToChildren( event )
 		end
 		return f21_local0
 	end )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ESCAPE", function ( f22_arg0, f22_arg1, f22_arg2, f22_arg3 )
-		if CoD.ZMLaboratoryUtility.IsInAnimState1( f22_arg2, CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( f22_arg2, "Laboratory.disableInput", 0 ) then
-			DelayGoBack( f22_arg1, f22_arg2, 200 )
-			SetControllerModelValue( f22_arg2, "Laboratory.disableInput", 1 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x865DD2DB1EFE9F8], "ESCAPE", function ( element, menu, controller, model )
+		if CoD.ZMLaboratoryUtility.IsInAnimState1( controller, CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) then
+			DelayGoBack( menu, controller, 200 )
+			SetControllerModelValue( controller, "Laboratory.disableInput", 1 )
 			return true
-		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( f22_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) then
-			SendClientScriptNotify( f22_arg2, "mix_again", "0" )
+		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( controller, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) then
+			SendClientScriptNotify( controller, "mix_again", "0" )
 			return true
-		elseif CoD.ModelUtility.IsModelValueEqualToEnum( f22_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.PLAYING ) and CoD.ModelUtility.IsModelValueTrue( f22_arg2, "Laboratory.skipReady" ) then
-			SendClientScriptNotify( f22_arg2, "skip_to_reveal", "" )
+		elseif CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.PLAYING ) and CoD.ModelUtility.IsModelValueTrue( controller, "Laboratory.skipReady" ) then
+			SendClientScriptNotify( controller, "skip_to_reveal", "" )
 			return true
 		else
 			
 		end
-	end, function ( f23_arg0, f23_arg1, f23_arg2 )
-		if CoD.ZMLaboratoryUtility.IsInAnimState1( f23_arg2, CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( f23_arg2, "Laboratory.disableInput", 0 ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "menu/back", nil, "ESCAPE" )
+	end, function ( element, menu, controller )
+		if CoD.ZMLaboratoryUtility.IsInAnimState1( controller, CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "menu/back", nil, "ESCAPE" )
 			return true
-		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( f23_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], "menu/back", nil, "ESCAPE" )
+		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( controller, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "menu/back", nil, "ESCAPE" )
 			return true
-		elseif CoD.ModelUtility.IsModelValueEqualToEnum( f23_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.PLAYING ) and CoD.ModelUtility.IsModelValueTrue( f23_arg2, "Laboratory.skipReady" ) then
-			CoD.Menu.SetButtonLabel( f23_arg1, Enum.LUIButton[0x865DD2DB1EFE9F8], 0xFEC7D3E29D7EBCC, nil, "ESCAPE" )
+		elseif CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.PLAYING ) and CoD.ModelUtility.IsModelValueTrue( controller, "Laboratory.skipReady" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x865DD2DB1EFE9F8], "zmui/skip", nil, "ESCAPE" )
 			return true
 		else
 			return false
 		end
 	end, true )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( f24_arg0, f24_arg1, f24_arg2, f24_arg3 )
-		if CoD.ZMLaboratoryUtility.IsInAnimState1( f24_arg2, CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( f24_arg2, "Laboratory.disableInput", 0 ) then
-			DelayGoBack( f24_arg1, f24_arg2, 200 )
-			SetControllerModelValue( f24_arg2, "Laboratory.disableInput", 1 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x805EFA15E9E7E5A], nil, function ( element, menu, controller, model )
+		if CoD.ZMLaboratoryUtility.IsInAnimState1( controller, CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) then
+			DelayGoBack( menu, controller, 200 )
+			SetControllerModelValue( controller, "Laboratory.disableInput", 1 )
 			return true
-		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( f24_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) then
-			SendClientScriptNotify( f24_arg2, "mix_again", "0" )
+		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( controller, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) then
+			SendClientScriptNotify( controller, "mix_again", "0" )
 			return true
 		else
 			
 		end
-	end, function ( f25_arg0, f25_arg1, f25_arg2 )
-		CoD.Menu.SetButtonLabel( f25_arg1, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
-		if CoD.ZMLaboratoryUtility.IsInAnimState1( f25_arg2, CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( f25_arg2, "Laboratory.disableInput", 0 ) then
+	end, function ( element, menu, controller )
+		CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x805EFA15E9E7E5A], "menu/back", nil, nil )
+		if CoD.ZMLaboratoryUtility.IsInAnimState1( controller, CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) then
 			return true
-		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( f25_arg2, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) then
+		elseif CoD.ZMLaboratoryUtility.IsInAnimState1( controller, CoD.ZMLaboratoryUtility.LabAnimState.MIX_AGAIN ) then
 			return true
 		else
 			return false
 		end
 	end, true )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f26_arg0, f26_arg1, f26_arg2, f26_arg3 )
-		if not IsPC() and CoD.ModelUtility.IsModelValueEqualToEnum( f26_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.PLAYING ) and CoD.ModelUtility.IsModelValueTrue( f26_arg2, "Laboratory.skipReady" ) then
-			SendClientScriptNotify( f26_arg2, "skip_to_reveal", "" )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if not IsPC() and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.PLAYING ) and CoD.ModelUtility.IsModelValueTrue( controller, "Laboratory.skipReady" ) then
+			SendClientScriptNotify( controller, "skip_to_reveal", "" )
 			return true
 		else
 			
 		end
-	end, function ( f27_arg0, f27_arg1, f27_arg2 )
-		if not IsPC() and CoD.ModelUtility.IsModelValueEqualToEnum( f27_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.PLAYING ) and CoD.ModelUtility.IsModelValueTrue( f27_arg2, "Laboratory.skipReady" ) then
-			CoD.Menu.SetButtonLabel( f27_arg1, Enum.LUIButton[0x755DA1E2E7C263F], 0xFEC7D3E29D7EBCC, nil, nil )
+	end, function ( element, menu, controller )
+		if not IsPC() and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.PLAYING ) and CoD.ModelUtility.IsModelValueTrue( controller, "Laboratory.skipReady" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "zmui/skip", nil, nil )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_contextual_1", function ( f28_arg0, f28_arg1, f28_arg2, f28_arg3 )
-		if CoD.ModelUtility.IsModelValueEqualToEnum( f28_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( f28_arg2, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) and not CoD.BlackMarketUtility.IsMenuOccluded( f28_arg1 ) then
-			OpenPopup( self, "PurchaseCodPoints", f28_arg2, nil )
-			UpdateAllMenuButtonPrompts( f28_arg1, f28_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xE6DB407A2AF8B09], "ui_contextual_1", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) and not CoD.BlackMarketUtility.IsMenuOccluded( menu ) then
+			OpenPopup( self, "PurchaseCodPoints", controller, nil )
+			UpdateAllMenuButtonPrompts( menu, controller )
 			return true
 		else
 			
 		end
-	end, function ( f29_arg0, f29_arg1, f29_arg2 )
-		if CoD.ModelUtility.IsModelValueEqualToEnum( f29_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( f29_arg2, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) and not CoD.BlackMarketUtility.IsMenuOccluded( f29_arg1 ) then
-			CoD.Menu.SetButtonLabel( f29_arg1, Enum.LUIButton[0xE6DB407A2AF8B09], 0x63D5409DEC36DFA, nil, "ui_contextual_1" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) and not CoD.BlackMarketUtility.IsMenuOccluded( menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xE6DB407A2AF8B09], "mpui/purchase_codpoints_caps", nil, "ui_contextual_1" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_2", function ( f30_arg0, f30_arg1, f30_arg2, f30_arg3 )
-		if CoD.ModelUtility.IsModelValueEqualToEnum( f30_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( f30_arg2, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) and not CoD.BlackMarketUtility.IsMenuOccluded( f30_arg1 ) then
-			OpenPopup( self, "PurchasePlasma", f30_arg2, nil )
-			UpdateAllMenuButtonPrompts( f30_arg1, f30_arg2 )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xC083113BC81F23F], "ui_contextual_2", function ( element, menu, controller, model )
+		if CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) and not CoD.BlackMarketUtility.IsMenuOccluded( menu ) then
+			OpenPopup( self, "PurchasePlasma", controller, nil )
+			UpdateAllMenuButtonPrompts( menu, controller )
 			return true
-		elseif IsPC() and IsGamepad( f30_arg2 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f30_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.PLAYING ) and CoD.ModelUtility.IsModelValueTrue( f30_arg2, "Laboratory.skipReady" ) then
-			SendClientScriptNotify( f30_arg2, "skip_to_reveal", "" )
+		elseif IsPC() and IsGamepad( controller ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.PLAYING ) and CoD.ModelUtility.IsModelValueTrue( controller, "Laboratory.skipReady" ) then
+			SendClientScriptNotify( controller, "skip_to_reveal", "" )
 			return true
 		else
 			
 		end
-	end, function ( f31_arg0, f31_arg1, f31_arg2 )
-		if CoD.ModelUtility.IsModelValueEqualToEnum( f31_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( f31_arg2, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) and not CoD.BlackMarketUtility.IsMenuOccluded( f31_arg1 ) then
-			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0xC083113BC81F23F], "zmui/purchase_nebulium_plasma", nil, "ui_contextual_2" )
+	end, function ( element, menu, controller )
+		if CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.NOT_PLAYING ) and CoD.ModelUtility.IsModelValueEqualTo( controller, "Laboratory.disableInput", 0 ) and IsBooleanDvarSet( "laboratory_codpoints_enabled" ) and not CoD.BlackMarketUtility.IsMenuOccluded( menu ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "zmui/purchase_nebulium_plasma", nil, "ui_contextual_2" )
 			return true
-		elseif IsPC() and IsGamepad( f31_arg2 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f31_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.PLAYING ) and CoD.ModelUtility.IsModelValueTrue( f31_arg2, "Laboratory.skipReady" ) then
-			CoD.Menu.SetButtonLabel( f31_arg1, Enum.LUIButton[0xC083113BC81F23F], 0xFEC7D3E29D7EBCC, nil, "ui_contextual_2" )
+		elseif IsPC() and IsGamepad( controller ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.PLAYING ) and CoD.ModelUtility.IsModelValueTrue( controller, "Laboratory.skipReady" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xC083113BC81F23F], "zmui/skip", nil, "ui_contextual_2" )
 			return true
 		else
 			return false
 		end
 	end, false )
-	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], "ui_confirm", function ( f32_arg0, f32_arg1, f32_arg2, f32_arg3 )
-		if IsPC() and not IsGamepad( f32_arg2 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f32_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.PLAYING ) and CoD.ModelUtility.IsModelValueTrue( f32_arg2, "Laboratory.skipReady" ) then
-			SendClientScriptNotify( f32_arg2, "skip_to_reveal", "" )
+	f1_local1:AddButtonCallbackFunction( self, f1_arg0, Enum.LUIButton[0xD2F467A6C6DA1AC], "ui_confirm", function ( element, menu, controller, model )
+		if IsPC() and not IsGamepad( controller ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.PLAYING ) and CoD.ModelUtility.IsModelValueTrue( controller, "Laboratory.skipReady" ) then
+			SendClientScriptNotify( controller, "skip_to_reveal", "" )
 			return true
 		else
 			
 		end
-	end, function ( f33_arg0, f33_arg1, f33_arg2 )
-		if IsPC() and not IsGamepad( f33_arg2 ) and CoD.ModelUtility.IsModelValueEqualToEnum( f33_arg2, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.PLAYING ) and CoD.ModelUtility.IsModelValueTrue( f33_arg2, "Laboratory.skipReady" ) then
-			CoD.Menu.SetButtonLabel( f33_arg1, Enum.LUIButton[0xD2F467A6C6DA1AC], 0xFEC7D3E29D7EBCC, nil, "ui_confirm" )
+	end, function ( element, menu, controller )
+		if IsPC() and not IsGamepad( controller ) and CoD.ModelUtility.IsModelValueEqualToEnum( controller, "Laboratory.animState", CoD.ZMLaboratoryUtility.LabAnimState.PLAYING ) and CoD.ModelUtility.IsModelValueTrue( controller, "Laboratory.skipReady" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0xD2F467A6C6DA1AC], "zmui/skip", nil, "ui_confirm" )
 			return true
 		else
 			return false

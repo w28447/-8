@@ -78,29 +78,29 @@ CoD.DecalToolsFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 		CoD.Menu.UpdateButtonShownState( element, f1_arg0, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F] )
 		return f6_local0
 	end )
-	f1_arg0:AddButtonCallbackFunction( emblemIconList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( f7_arg0, f7_arg1, f7_arg2, f7_arg3 )
-		if IsEmblemEditor( f7_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f7_arg0, f7_arg2, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "emblemIconList" ) then
-			CoD.CraftUtility.EmblemChooseIcon_SelectionAccepted( self, f7_arg0, f7_arg2 )
-			CoD.CraftUtility.EmblemEditor_SetEditMode( f7_arg2 )
-			GoBack( self, f7_arg2 )
-			ClearMenuSavedState( f7_arg1 )
+	f1_arg0:AddButtonCallbackFunction( emblemIconList, f1_arg1, Enum.LUIButton[0x755DA1E2E7C263F], nil, function ( element, menu, controller, model )
+		if IsEmblemEditor( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "emblemIconList" ) then
+			CoD.CraftUtility.EmblemChooseIcon_SelectionAccepted( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_SetEditMode( controller )
+			GoBack( self, controller )
+			ClearMenuSavedState( menu )
 			return true
-		elseif IsPaintshop( f7_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f7_arg0, f7_arg2, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "emblemIconList" ) then
-			CoD.CraftUtility.EmblemChooseIcon_SelectionAccepted( self, f7_arg0, f7_arg2 )
-			CoD.CraftUtility.EmblemEditor_SetEditMode( f7_arg2 )
-			CoD.CraftUtility.EmblemChooseIcon_RevertPreviewDecalCamera( self, f7_arg0, f7_arg2 )
-			GoBack( self, f7_arg2 )
-			ClearMenuSavedState( f7_arg1 )
+		elseif IsPaintshop( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "emblemIconList" ) then
+			CoD.CraftUtility.EmblemChooseIcon_SelectionAccepted( self, element, controller )
+			CoD.CraftUtility.EmblemEditor_SetEditMode( controller )
+			CoD.CraftUtility.EmblemChooseIcon_RevertPreviewDecalCamera( self, element, controller )
+			GoBack( self, controller )
+			ClearMenuSavedState( menu )
 			return true
 		else
 			
 		end
-	end, function ( f8_arg0, f8_arg1, f8_arg2 )
-		if IsEmblemEditor( f8_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f8_arg0, f8_arg2, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "emblemIconList" ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+	end, function ( element, menu, controller )
+		if IsEmblemEditor( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "emblemIconList" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
-		elseif IsPaintshop( f8_arg2 ) and not CoD.ModelUtility.IsSelfModelValueTrue( f8_arg0, f8_arg2, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "emblemIconList" ) then
-			CoD.Menu.SetButtonLabel( f8_arg1, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
+		elseif IsPaintshop( controller ) and not CoD.ModelUtility.IsSelfModelValueTrue( element, controller, "isBMClassified" ) and CoD.BaseUtility.DoesElementOrChildHaveFocus( self, "emblemIconList" ) then
+			CoD.Menu.SetButtonLabel( menu, Enum.LUIButton[0x755DA1E2E7C263F], "menu/select", nil, nil )
 			return true
 		else
 			return false
