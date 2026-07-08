@@ -88,7 +88,7 @@ function init_clientfields()
     clientfield::register( "world", "" + #"engineer_spark_fx", 1, 1, "int" );
     clientfield::register( "world", "" + #"fireworks_fx", 1, 2, "counter" );
     clientfield::register( "world", "" + #"crash_fx", 1, 1, "int" );
-    clientfield::register( "world", "" + #"hash_4f672a8a7ae530e5", 1, 1, "int" );
+    clientfield::register( "world", "" + #"hero_weapons_in_box", 1, 1, "int" );
 }
 
 // Namespace zodt8_side_quests/zm_zodt8_side_quests
@@ -123,8 +123,8 @@ function init_quests()
     zm_sq::register( #"fishy_offering", #"step_2", #"fishy_step_2", &fishy_offering_step_2_setup, &fishy_offering_step_2_cleanup );
     zm_sq::register( #"portal_pass", #"step_1", #"portal_pass_step_1", &portal_pass_step_1_setup, &portal_pass_step_1_cleanup );
     zm_sq::register( #"portal_pass", #"step_2", #"portal_pass_step_2", &portal_pass_step_2_setup, &portal_pass_step_2_cleanup );
-    zm_sq::register( #"skull_singers", #"step_1", #"hash_4ba91dee7d31240b", &function_b87c71d7, &function_46a445cd );
-    zm_sq::register( #"skull_singers", #"step_2", #"hash_4ba91eee7d3125be", &function_9a209775, &function_2ae7b2a6 );
+    zm_sq::register( #"skull_singers", #"step_1", #"skull_singers_step_1", &skull_singers_step_1_setup, &skull_singers_step_1_cleanup );
+    zm_sq::register( #"skull_singers", #"step_2", #"skull_singers_step_2", &skull_singers_step_2_setup, &skull_singers_step_2_cleanup );
     zm_sq::register( #"ships_engineer", #"step_1", #"ships_engineer_step_1", &ships_engineer_1_setup, &ships_engineer_1_cleanup );
     zm_sq::register( #"ships_engineer", #"step_2", #"ships_engineer_step_2", &ships_engineer_2_setup, &ships_engineer_2_cleanup );
     zm_sq::register( #"ships_engineer", #"step_3", #"ships_engineer_step_3", &ships_engineer_3_setup, &ships_engineer_3_cleanup );
@@ -2113,7 +2113,7 @@ function function_9693e041( player )
     {
         if ( isdefined( self.blueprint.w_result.isriotshield ) && self.blueprint.w_result.isriotshield && isdefined( player.player_shield_reset_health ) && isdefined( player.var_d3345483 ) && player.var_d3345483 )
         {
-            self.hint_string = zm_utility::function_d6046228( #"hash_5c35bbb6c39ba19a", #"hash_3bf7b3dc87b1015e" );
+            self.hint_string = zm_utility::function_d6046228( #"zombie/repair_shield_upg", #"zombie/repair_shield_upg_keyboard" );
             _shad_turret_debug_server = 1;
         }
     }
@@ -2875,7 +2875,7 @@ function vomit_blade_fx()
 // Params 1
 // Checksum 0x619ace28, Offset: 0xab68
 // Size: 0x1cc
-function function_b87c71d7( var_a276c861 )
+function skull_singers_step_1_setup( var_a276c861 )
 {
     a_s_pianos = struct::get_array( #"ivory_number" );
     
@@ -2892,7 +2892,7 @@ function function_b87c71d7( var_a276c861 )
     }
     
     level waittill( #"start_of_round" );
-    level thread function_9a209775();
+    level thread skull_singers_step_2_setup();
     util::waittill_multiple_ents( a_s_pianos[ 0 ], #"hash_2de28171d87b35cf", a_s_pianos[ 1 ], #"hash_2de28171d87b35cf", a_s_pianos[ 2 ], #"hash_2de28171d87b35cf" );
 }
 
@@ -3062,7 +3062,7 @@ function function_1f7f2030( var_2c2d042a )
 // Params 2
 // Checksum 0xcde53b35, Offset: 0xb460
 // Size: 0x1a8
-function function_46a445cd( var_a276c861, var_19e802fa )
+function skull_singers_step_1_cleanup( var_a276c861, var_19e802fa )
 {
     a_s_pianos = struct::get_array( #"ivory_number" );
     
@@ -3089,7 +3089,7 @@ function function_46a445cd( var_a276c861, var_19e802fa )
 // Params 1
 // Checksum 0xa790f218, Offset: 0xb610
 // Size: 0x110
-function function_9a209775( var_a276c861 )
+function skull_singers_step_2_setup( var_a276c861 )
 {
     if ( !( isdefined( level.var_7812c982 ) && level.var_7812c982 ) )
     {
@@ -3316,7 +3316,7 @@ function function_d684005e( a_keys )
     var_9fd301cd = getweapon( var_8e4297a8 );
     zm_weapons::include_zombie_weapon( var_8e4297a8, 1 );
     zm_weapons::add_zombie_weapon( var_8e4297a8, "", 0, 0, undefined, undefined, 0, "", "special", 0, undefined, 1 );
-    level clientfield::set( "" + #"hash_4f672a8a7ae530e5", 1 );
+    level clientfield::set( "" + #"hero_weapons_in_box", 1 );
     level thread function_3fa7aef2( var_9fd301cd, self );
     arrayinsert( a_keys, var_9fd301cd, 0 );
     return a_keys;
@@ -3377,7 +3377,7 @@ function function_3fa7aef2( var_8352fb8a, e_player )
     }
     
     zm_weapons::function_f1114209( var_8352fb8a );
-    level clientfield::set( "" + #"hash_4f672a8a7ae530e5", 0 );
+    level clientfield::set( "" + #"hero_weapons_in_box", 0 );
     
     if ( isalive( e_player ) && e_player.var_fd05e363 === var_8352fb8a )
     {
@@ -3389,7 +3389,7 @@ function function_3fa7aef2( var_8352fb8a, e_player )
 // Params 2
 // Checksum 0x5aad5632, Offset: 0xc7f8
 // Size: 0x14
-function function_2ae7b2a6( var_a276c861, var_19e802fa )
+function skull_singers_step_2_cleanup( var_a276c861, var_19e802fa )
 {
     
 }

@@ -34,9 +34,9 @@ function __init__()
         return;
     }
     
-    clientfield::register( "toplayer", "" + #"hash_b905d796914b710", 14000, 1, "int" );
+    clientfield::register( "toplayer", "" + #"zm_trial_silent_film", 14000, 1, "int" );
     clientfield::register( "toplayer", "" + #"hash_1b9477ddcf30191f", 16000, 1, "int" );
-    clientfield::register( "toplayer", "" + #"hash_52347bec3f1339fd", 16000, 4, "int" );
+    clientfield::register( "toplayer", "" + #"zm_trial_perk_drunk", 16000, 4, "int" );
     zm_trial::register_challenge( #"hash_6c768f3c15d55377", &on_begin, &on_end );
 }
 
@@ -92,7 +92,7 @@ function private on_end( round_reset )
         case #"silent_film":
             foreach ( player in getplayers() )
             {
-                player thread clientfield::set_to_player( "" + #"hash_b905d796914b710", 0 );
+                player thread clientfield::set_to_player( "" + #"zm_trial_silent_film", 0 );
             }
             
             setslowmotion( 1.25, 1 );
@@ -117,7 +117,7 @@ function private on_end( round_reset )
         case #"perk_drunk":
             foreach ( player in getplayers() )
             {
-                player clientfield::set_to_player( "" + #"hash_52347bec3f1339fd", 0 );
+                player clientfield::set_to_player( "" + #"zm_trial_perk_drunk", 0 );
             }
             
             break;
@@ -138,7 +138,7 @@ function private on_player_spawned()
 {
     if ( level.var_4ecf5754 === #"silent_film" )
     {
-        self clientfield::set_to_player( "" + #"hash_b905d796914b710", 1 );
+        self clientfield::set_to_player( "" + #"zm_trial_silent_film", 1 );
     }
 }
 
@@ -153,7 +153,7 @@ function function_40c7a8fd()
     
     foreach ( player in getplayers() )
     {
-        player clientfield::set_to_player( "" + #"hash_b905d796914b710", 1 );
+        player clientfield::set_to_player( "" + #"zm_trial_silent_film", 1 );
     }
     
     wait 2;
@@ -204,7 +204,7 @@ function function_6d8cf829()
     while ( true )
     {
         n_perks = self.var_67ba1237.size + self.var_466b927f.size;
-        self clientfield::set_to_player( "" + #"hash_52347bec3f1339fd", n_perks );
+        self clientfield::set_to_player( "" + #"zm_trial_perk_drunk", n_perks );
         wait 1;
     }
 }

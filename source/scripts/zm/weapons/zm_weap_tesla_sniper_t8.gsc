@@ -73,13 +73,13 @@ function function_5ff12a45( inflictor, attacker, damage, flags, meansofdeath, we
 // Size: 0xa4
 function on_weapon_change( s_params )
 {
-    if ( function_b7a6f208( s_params.weapon ) )
+    if ( is_tesla_sniper( s_params.weapon ) )
     {
         self clientfield::set_to_player( "" + #"tesla_sniper_equipped", 1 );
         return;
     }
     
-    if ( function_b7a6f208( s_params.last_weapon ) )
+    if ( is_tesla_sniper( s_params.last_weapon ) )
     {
         self clientfield::set_to_player( "" + #"tesla_sniper_equipped", 0 );
     }
@@ -197,7 +197,7 @@ function function_487ae8a7( e_source, meansofdeath, weapon, shitloc )
 // Params 1
 // Checksum 0x56814cad, Offset: 0xc40
 // Size: 0x3c, Type: bool
-function function_b7a6f208( w_weapon )
+function is_tesla_sniper( w_weapon )
 {
     return isdefined( w_weapon ) && ( w_weapon == level.w_tesla_sniper_t8 || w_weapon == level.w_tesla_sniper_upgraded_t8 );
 }

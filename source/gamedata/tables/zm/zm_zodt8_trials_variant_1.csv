@@ -8,7 +8,7 @@
 4,#perk_up,&#hash_558f1b6c18e268a8,&#hash_7658eaa76903af0,&#,#acquire_perks,#1,#,#,#,#,#,#,#
 4,#,&#,&#,&#,#super_sprinters_only,#,#,#,#,#,#,#,#
 5,#never_say_lever,&#hash_62883f895b889bbf,&#hash_6ead493757653891,&#,#restrict_loadout,#leveraction,#,#,#,#,#,#,#
-5,#,&#,&#,&#,#hash_4043192ca121b4d4,#,#50,#,#,#,#,#,#
+5,#,&#,&#,&#,#no_missed_shots,#,#50,#,#,#,#,#,#
 5,#,&#,&#,&#,#disable_regen,#,#,#,#,#,#,#,#
 6,#artifacts_of_life,&#hash_37bf874d1c086636,&#hash_6f01423f46111946,&#,#turn_on_power,#,#,#,#,#,#,#,#
 6,#,&#,&#,&#,#timeout,#hash_6e1d873c28de9fc2,#hash_644ab7ffec4f69b0,#10,#90,#120,#180,#180,#

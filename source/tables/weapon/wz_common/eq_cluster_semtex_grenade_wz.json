@@ -3,7 +3,7 @@
     "baseWeapon": "#eq_cluster_semtex_grenade",
     "displayname": "#weapon/sticky_grenade",
     "weapon70": "#eq_cluster_semtex_grenade",
-    "grenadeWeaponName": "#hash_62a23d8a9c5e502e",
+    "grenadeWeaponName": "#eq_cluster_semtex_mini_grenade_wz",
     "soundbank": "#eq_cluster_semtex_grenade_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_accessory_right",

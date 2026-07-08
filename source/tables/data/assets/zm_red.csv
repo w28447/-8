@@ -1088,7 +1088,7 @@ xanim,#hash_3e5085ca6a129174
 xanim,#hash_3e5dbaefe1f71856
 xanim,#hash_3e670fa1c2a90fc6
 xanim,#hash_3e6729a1c2a93bf4
-xanim,#hash_3e937fff0e0a4362
+xanim,#ai_t8_zm_zod_bltfthr_dth_destroy_head_01_nofx
 xanim,d#pt_rifle_prone_concussed_loop
 xanim,#hash_3e96651895e5b82d
 xanim,#hash_3ea87c3a15a36d10
@@ -27911,7 +27911,7 @@ rumble,#crossbow_fire
 rumble,#zm_red_omphalos_rumble
 rumble,d#grenade_rumble
 rumble,#zm_red_step_complete_rumble
-rumble,#hash_5d8a1a68b12dfb24
+rumble,#zm_fasttravel_vortex_rumble
 rumble,#zm_red_gegenees_land_rumble
 rumble,d#defaultweapon_fire
 rumble,#hash_620ca77f414a6e4b
@@ -38106,7 +38106,7 @@ fx,#hash_7386a579a9e9515c
 fx,#hash_73afd7d5f4304a3d
 fx,#hash_73d4ca636a4d91a6
 fx,d#player/fx_plyr_footstep_dust
-fx,#hash_7425021c14828449
+fx,#maps/zm_red/fx8_soul_charge_yellow
 fx,#hash_742d605eb8eb7d67
 fx,#hash_744b12b64f0c4104
 fx,#hash_749d6ee7eea4a790
@@ -38564,7 +38564,7 @@ fx,#hash_1f50245b48afa80
 fx,#hash_2400fa44d8b5a2f
 fx,#hash_2a8233f8a1d00e7
 fx,d#hash_2ad3efc14a03b90
-fx,#hash_36d2617efc112fc
+fx,#maps/zm_red/fx8_soul_yellow
 fx,d#hash_374e1ecdc3f38d1
 fx,#hash_392b80b294ea346
 fx,d#hash_3b22162a96d9389
@@ -38773,7 +38773,7 @@ fx,#hash_50c7bb0e4dcee15c
 fx,#hash_50ce930e4dd4bc12
 fx,#hash_51285e93c850147a
 fx,#hash_513bda1b67490064
-fx,#hash_5199aa40f704fb10
+fx,#maps/zm_red/fx8_soul_blue
 fx,d#hash_53e10878cd6a6eef
 fx,#hash_5400356a313e2ec3
 fx,#zm_ai/fx8_blightfather_vomit_purchase
@@ -38781,7 +38781,7 @@ fx,#hash_54b810af1fb36d6d
 fx,#hash_55cc904817de4a07
 fx,d#hash_55efa71212ad7d38
 fx,#hash_569b6effe4db6f54
-fx,#hash_56c34b9c914d89a7
+fx,#maps/zm_red/fx8_soul_green
 fx,#hash_57817f8de95527cd
 fx,#hash_57f0b0383ecadad0
 fx,#hash_5873b3e8eed6eece

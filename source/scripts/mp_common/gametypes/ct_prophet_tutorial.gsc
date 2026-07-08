@@ -221,8 +221,8 @@ function function_9b9525e9()
     e_player function_7536db69();
     waitframe( 1 );
     e_player function_67483f8c();
-    e_player function_235b259b();
-    e_player function_c7bb6e59();
+    e_player tut_fin1();
+    e_player tut_fin2();
     ct_utils::function_9aca2fa0( "ct_endgame" );
     e_player ct_utils::function_61c3d59c( #"hash_6cf10fe813765772", undefined, undefined, 1 );
     e_player ct_vo::function_831e0584( array( "vox_tvoi_tutor_prop_end_0", "vox_tvoi_tutor_prop_end_1" ) );
@@ -1189,7 +1189,7 @@ function function_b559b2a5()
 // Params 0
 // Checksum 0xbf5e033a, Offset: 0x56c0
 // Size: 0x614
-function function_235b259b()
+function tut_fin1()
 {
     level.var_8ca3c62 = 8;
     ct_utils::function_9e33850b();
@@ -1427,7 +1427,7 @@ function function_80ad1ef6()
 // Params 0
 // Checksum 0x9a10e613, Offset: 0x64d8
 // Size: 0x32a
-function function_c7bb6e59()
+function tut_fin2()
 {
     level.var_8ca3c62 = 9;
     wait 1;
@@ -1446,7 +1446,7 @@ function function_c7bb6e59()
     self thread function_f868e3e2();
     level flag::wait_till( "fin2_enemy_chopper_destroyed" );
     level notify( #"surround_spawn_end" );
-    level notify( #"hash_73522d92576b145b" );
+    level notify( #"enemy_chopper_setup_end" );
     level notify( #"hash_60e26e14a51c5211" );
     self thread ct_vo::function_831e0584( array( "vox_tvoi_tutor_prop_score_hit" ) );
     a_e_enemies = self ct_bots::function_dde6edbd();
@@ -1893,8 +1893,8 @@ function function_58c62280( b_keyline, var_2f3964e3 )
 // Size: 0x1bc
 function function_f868e3e2()
 {
-    level notify( #"hash_73522d92576b145b" );
-    level endon( #"combattraining_logic_finished", #"hash_73522d92576b145b", #"fin2_enemy_chopper_destroyed" );
+    level notify( #"enemy_chopper_setup_end" );
+    level endon( #"combattraining_logic_finished", #"enemy_chopper_setup_end", #"fin2_enemy_chopper_destroyed" );
     s_spawn = struct::get( "s_chopper_spawn", "targetname" );
     level.vh_enemy_chopper = spawnvehicle( #"veh_t8_helicopter_gunship_mp", s_spawn.origin, s_spawn.angles, "vh_enemy_chopper" );
     level.vh_enemy_chopper setteam( #"axis" );

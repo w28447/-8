@@ -865,11 +865,11 @@ function function_2560f130()
             }
             
             n_depth = getwaterheight( self.origin ) - self.origin[ 2 ];
-            var_62ce46e5 = self.origin + ( 0, 0, n_depth );
+            v_water = self.origin + ( 0, 0, n_depth );
             print3d( self.origin, "<dev string:x382>" + n_depth, ( 0, 1, 0 ), 1, 0.6 );
-            circle( var_62ce46e5, 16, ( 0, 1, 0 ), 0, 1 );
+            circle( v_water, 16, ( 0, 1, 0 ), 0, 1 );
             debugstar( self.origin, 1, ( 0, 1, 0 ) );
-            line( self.origin, var_62ce46e5, ( 0, 1, 0 ) );
+            line( self.origin, v_water, ( 0, 1, 0 ) );
         }
     }
 
@@ -892,11 +892,11 @@ function function_2560f130()
             }
             
             n_depth = self depthinwater();
-            var_62ce46e5 = self.origin + ( 0, 0, n_depth );
+            v_water = self.origin + ( 0, 0, n_depth );
             print3d( self.origin, "<dev string:x382>" + n_depth, ( 1, 0, 0 ), 1, 0.6 );
-            circle( var_62ce46e5, 16, ( 1, 0, 0 ), 0, 1 );
+            circle( v_water, 16, ( 1, 0, 0 ), 0, 1 );
             debugstar( self.origin, 1, ( 1, 0, 0 ) );
-            line( self.origin, var_62ce46e5, ( 1, 0, 0 ) );
+            line( self.origin, v_water, ( 1, 0, 0 ) );
         }
     }
 
@@ -947,7 +947,7 @@ function function_2560f130()
             a_trace = bullettrace( v_eye, v_eye + vectorscale( anglestoforward( self getplayerangles() ), 1000000 ), 0, self );
             var_af2b54d8.origin = a_trace[ #"position" ];
             n_depth = getwaterheight( var_af2b54d8.origin ) - var_af2b54d8.origin[ 2 ];
-            var_62ce46e5 = var_af2b54d8.origin + ( 0, 0, n_depth );
+            v_water = var_af2b54d8.origin + ( 0, 0, n_depth );
             v_color = ( 1, 0, 0 );
             
             if ( n_depth > 0 )
@@ -964,9 +964,9 @@ function function_2560f130()
             }
             
             print3d( var_af2b54d8.origin, "<dev string:x382>" + n_depth, v_color, 1, 0.6 );
-            circle( var_62ce46e5, 96, ( 0, 1, 0 ), 0, 1 );
+            circle( v_water, 96, ( 0, 1, 0 ), 0, 1 );
             sphere( var_af2b54d8.origin, n_radius, v_color );
-            line( var_af2b54d8.origin, var_62ce46e5, v_color );
+            line( var_af2b54d8.origin, v_water, v_color );
             debug2dtext( ( 810, 635, 0 ), "<dev string:x3c0>" + n_depth, v_color );
             waitframe( 1 );
         }

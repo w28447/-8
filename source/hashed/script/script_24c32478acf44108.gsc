@@ -481,12 +481,12 @@ function slowdown( str_type, var_a47cf2b2 )
             
             if ( var_dc1625a7.n_duration == -1 )
             {
-                self waittill( #"hash_62a477d53a6bbad" );
+                self waittill( #"end_slowdown_ai" );
             }
             else
             {
                 n_duration = var_e489fea - n_time;
-                self waittilltimeout( float( n_duration ) / 1000, #"hash_62a477d53a6bbad" );
+                self waittilltimeout( float( n_duration ) / 1000, #"end_slowdown_ai" );
             }
             
             if ( var_e489fea < gettime() && var_dc1625a7.n_duration != -1 )
@@ -533,14 +533,14 @@ function function_5d2b8af2()
 // Params 1
 // Checksum 0x9716ba51, Offset: 0x15f8
 // Size: 0x5e
-function function_520f4da5( str_type )
+function end_slowdown( str_type )
 {
     if ( isdefined( str_type ) && isdefined( self.a_n_slowdown_timeouts ) && isdefined( self.a_n_slowdown_timeouts[ str_type ] ) )
     {
         self.a_n_slowdown_timeouts[ str_type ] = -1;
     }
     
-    self notify( #"hash_62a477d53a6bbad" );
+    self notify( #"end_slowdown_ai" );
 }
 
 // Namespace namespace_9ff9f642/namespace_9ff9f642

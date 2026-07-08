@@ -28,7 +28,7 @@ function __init__()
     
     bgb::register( #"zm_bgb_in_plain_sight", "activated" );
     visionset_mgr::register_visionset_info( "zm_bgb_in_plain_sight", 1, 31, undefined, "zm_bgb_in_plain_sight" );
-    clientfield::register( "toplayer", "" + #"hash_321b58d22755af74", 1, 1, "int", &function_8b05d1ce, 0, 0 );
+    clientfield::register( "toplayer", "" + #"zm_bgb_in_plain_sight_postfx", 1, 1, "int", &function_8b05d1ce, 0, 0 );
 }
 
 // Namespace zm_bgb_in_plain_sight/zm_bgb_in_plain_sight

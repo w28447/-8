@@ -373,7 +373,7 @@ function private function_e4ef4e27( entity, attribute, oldvalue, value )
         return;
     }
     
-    entity thread namespace_9ff9f642::function_520f4da5( "stoker_undewater_slow_type" );
+    entity thread namespace_9ff9f642::end_slowdown( "stoker_undewater_slow_type" );
 }
 
 // Namespace zm_ai_stoker/zm_ai_stoker

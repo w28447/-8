@@ -34,19 +34,19 @@ function __init__()
 {
     level thread init_switch();
     level thread init_buried_piano();
-    level thread function_624de77b();
+    level thread init_buried_jail_door();
 }
 
 // Namespace namespace_21c59b5/namespace_21c59b5
 // Params 0
 // Checksum 0xbf2948d0, Offset: 0x3b8
 // Size: 0x2fa
-function function_624de77b()
+function init_buried_jail_door()
 {
     if ( !level.var_30c7dc14 )
     {
         var_3382b1fd = getdynentarray( #"hash_65a897c4ba6cd264" );
-        var_dee87f84 = getdynentarray( #"hash_1418b0814d35f392" );
+        jaildoors = getdynentarray( #"buried_jail_door" );
         item_world::function_1b11e73c();
         
         foreach ( var_24f3a953 in var_3382b1fd )
@@ -54,9 +54,9 @@ function function_624de77b()
             setdynentstate( var_24f3a953, 2 );
         }
         
-        foreach ( var_8f38aad5 in var_dee87f84 )
+        foreach ( jaildoor in jaildoors )
         {
-            setdynentstate( var_8f38aad5, 1 );
+            setdynentstate( jaildoor, 1 );
         }
         
         item_world::function_4de3ca98();
@@ -66,9 +66,9 @@ function function_624de77b()
             setdynentstate( var_24f3a953, 2 );
         }
         
-        foreach ( var_8f38aad5 in var_dee87f84 )
+        foreach ( jaildoor in jaildoors )
         {
-            setdynentstate( var_8f38aad5, 1 );
+            setdynentstate( jaildoor, 1 );
         }
         
         return;
@@ -161,11 +161,11 @@ function function_63f86aa3()
 // Size: 0xa8
 function function_a9f512c2()
 {
-    var_dee87f84 = getdynentarray( #"hash_1418b0814d35f392" );
+    jaildoors = getdynentarray( #"buried_jail_door" );
     
-    foreach ( var_8f38aad5 in var_dee87f84 )
+    foreach ( jaildoor in jaildoors )
     {
-        setdynentstate( var_8f38aad5, 1 );
+        setdynentstate( jaildoor, 1 );
     }
 }
 

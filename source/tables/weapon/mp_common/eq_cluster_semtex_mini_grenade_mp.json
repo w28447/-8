@@ -1,9 +1,9 @@
 {
-    "name": "#hash_62fb4f8a9caa979a",
-    "baseWeapon": "#hash_66401df7cd6bf292",
+    "name": "#eq_cluster_semtex_mini_grenade_mp",
+    "baseWeapon": "#eq_cluster_semtex_mini_grenade",
     "displayname": "#weapon/fraggrenade",
     "weapon70": "#eq_cluster_semtex_grenade",
-    "soundbank": "#hash_72d80a1a6a531c38",
+    "soundbank": "#eq_cluster_semtex_mini_grenade_soundbank",
     "worldModelTagRight": "tag_accessory_left",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

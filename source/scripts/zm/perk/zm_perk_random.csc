@@ -427,7 +427,7 @@ function fx_bottle_cycling( localclientnum )
 // Size: 0x78
 function function_6a9b1884( localclientnum )
 {
-    self endon( #"hash_fcaf7071581a306" );
+    self endon( #"ball_departed" );
     self endon( #"death" );
     level endon( #"demo_jump" );
     

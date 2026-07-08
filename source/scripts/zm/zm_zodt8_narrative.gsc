@@ -114,7 +114,7 @@ function function_a425bf07()
 function function_e7fd1a33()
 {
     self endon( #"death" );
-    var_f21d9eb3 = int( self.origin[ 0 ] - 12 );
+    n_min_x = int( self.origin[ 0 ] - 12 );
     n_max_x = int( self.origin[ 0 ] + 12 );
     
     while ( isdefined( self ) )
@@ -151,7 +151,7 @@ function function_e7fd1a33()
         }
         
         n_rotate = randomintrange( 160, 200 );
-        n_x_move = randomintrange( var_f21d9eb3, n_max_x );
+        n_x_move = randomintrange( n_min_x, n_max_x );
         self rotateto( ( self.angles[ 0 ], n_rotate, self.angles[ 2 ] ), 0.25 );
         self moveto( ( n_x_move, self.origin[ 1 ], self.origin[ 2 ] ), 0.25 );
     }
@@ -683,7 +683,7 @@ function function_b11c26c9()
 // Size: 0x2c0
 function function_e1a452f5( e_homunculus, var_21bb918c, var_c8279d50 )
 {
-    level endon( #"hash_6aec924aa525b354" );
+    level endon( #"end_flag_semaphore" );
     e_homunculus setinvisibletoplayer( self );
     var_21bb918c setinvisibletoplayer( self );
     var_c8279d50 setinvisibletoplayer( self );
@@ -703,7 +703,7 @@ function function_e1a452f5( e_homunculus, var_21bb918c, var_c8279d50 )
                 
                 if ( isalive( player ) )
                 {
-                    level notify( #"hash_57175159706ca9bf" );
+                    level notify( #"start_flag_semaphore" );
                     e_homunculus setvisibletoplayer( player );
                     var_21bb918c setvisibletoplayer( player );
                     var_c8279d50 setvisibletoplayer( player );
@@ -747,7 +747,7 @@ function function_c867ac0a( e_homunculus, var_21bb918c, var_c8279d50 )
     }
     
     callback::on_connect( &function_e1a452f5, undefined, e_homunculus, var_21bb918c, var_c8279d50 );
-    level waittill( #"hash_57175159706ca9bf" );
+    level waittill( #"start_flag_semaphore" );
     e_homunculus sethighdetail( 1 );
     var_21bb918c sethighdetail( 1 );
     var_c8279d50 sethighdetail( 1 );
@@ -841,7 +841,7 @@ function function_c867ac0a( e_homunculus, var_21bb918c, var_c8279d50 )
     function_dc92e2d4( a_angles, var_21bb918c, var_c8279d50, #"a" );
     function_dc92e2d4( a_angles, var_21bb918c, var_c8279d50, #"d" );
     callback::remove_on_connect( &function_e1a452f5 );
-    level notify( #"hash_6aec924aa525b354" );
+    level notify( #"end_flag_semaphore" );
     var_21bb918c.var_55e11aa9 delete();
     var_c8279d50.var_55e11aa9 delete();
     var_21bb918c delete();

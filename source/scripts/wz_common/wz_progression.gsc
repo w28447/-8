@@ -313,7 +313,7 @@ function private function_fb20ad56()
 {
     player = self;
     assert( isplayer( player ) );
-    player stats::function_d40764f3( #"hash_6d5e162204f447f4", 1 );
+    player stats::function_d40764f3( #"top_25_placement_player", 1 );
 }
 
 // Namespace wz_progression/wz_progression
@@ -324,7 +324,7 @@ function private function_d61fdbef()
 {
     player = self;
     assert( isplayer( player ) );
-    player stats::function_d40764f3( #"hash_25f4611fc9d40aa8", 1 );
+    player stats::function_d40764f3( #"top_10_placement_player", 1 );
 }
 
 // Namespace wz_progression/wz_progression
@@ -335,7 +335,7 @@ function private function_67949803()
 {
     player = self;
     assert( isplayer( player ) );
-    player stats::function_d40764f3( #"hash_63307a0460c698ac", 1 );
+    player stats::function_d40764f3( #"top_5_placement_player", 1 );
 }
 
 // Namespace wz_progression/wz_progression
@@ -408,7 +408,7 @@ function private function_a0fea1a9()
 {
     player = self;
     assert( isplayer( player ) );
-    player stats::function_d40764f3( #"hash_6429d1fccdef2c9", 1 );
+    player stats::function_d40764f3( #"top_15_placement_team", 1 );
 }
 
 // Namespace wz_progression/wz_progression
@@ -419,7 +419,7 @@ function private function_3217b0d2()
 {
     player = self;
     assert( isplayer( player ) );
-    player stats::function_d40764f3( #"hash_7b8d2c77874a1c24", 1 );
+    player stats::function_d40764f3( #"top_10_placement_team", 1 );
     
     if ( player function_ec3a8858() )
     {
@@ -440,7 +440,7 @@ function private function_6a7970fe()
 {
     player = self;
     assert( isplayer( player ) );
-    player stats::function_d40764f3( #"hash_5e9a745460a10f80", 1 );
+    player stats::function_d40764f3( #"top_5_placement_team", 1 );
     
     if ( isdefined( player.avenger ) && player.avenger )
     {

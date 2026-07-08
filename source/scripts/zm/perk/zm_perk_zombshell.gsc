@@ -62,7 +62,7 @@ function enable_zombshell_perk_for_level()
     }
     
     callback::on_ai_killed( &on_ai_killed );
-    callback::function_74872db6( &function_74872db6 );
+    callback::on_round_begin( &on_round_begin );
 }
 
 // Namespace zm_perk_zombshell/zm_perk_zombshell
@@ -501,7 +501,7 @@ function reset_cooldown()
 // Params 0
 // Checksum 0xabcafb3d, Offset: 0x1928
 // Size: 0x8a
-function function_74872db6()
+function on_round_begin()
 {
     a_players = getplayers();
     

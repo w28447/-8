@@ -89,7 +89,7 @@ function init_clientfields()
 {
     clientfield::register( "scriptmover", "lighthouse_on", 24000, 3, "int" );
     clientfield::register( "vehicle", "" + #"lighthouse_beam_fx", 24000, 1, "int" );
-    clientfield::register( "actor", "" + #"hash_5af1cd27f90895ae", 24000, 1, "counter" );
+    clientfield::register( "actor", "" + #"lighthouse_beam_hit_fx", 24000, 1, "counter" );
 }
 
 // Namespace zm_orange_lighthouse/zm_orange_lighthouse
@@ -392,7 +392,7 @@ function function_ad646ef8( n_state )
                 array::thread_all( level.var_f92c8836, &function_76adab5e );
                 break;
             case 1:
-                e_lighthouse notify( #"hash_6e9ab520bd7ba3c" );
+                e_lighthouse notify( #"stop_trap_timers" );
                 function_d85bd834();
                 array::run_all( level.var_f92c8836, &function_f7e6bf61, 0 );
                 n_cooldown = zm_traps::function_da13db45( 60, e_lighthouse.var_d9ae30d6 );
@@ -439,7 +439,7 @@ function function_ad646ef8( n_state )
 // Size: 0x94
 function function_74b930af( n_time, n_state )
 {
-    self endon( #"death", #"hash_6e9ab520bd7ba3c" );
+    self endon( #"death", #"stop_trap_timers" );
     wait n_time;
     
     while ( n_state == 1 && ( self.var_58df9892 == 5 || self.var_58df9892 == 6 ) )
@@ -917,7 +917,7 @@ function is_trap_active()
 function function_2853c44e( e_trap )
 {
     self endon( #"death" );
-    self clientfield::increment( "" + #"hash_5af1cd27f90895ae", 1 );
+    self clientfield::increment( "" + #"lighthouse_beam_hit_fx", 1 );
     
     if ( isdefined( self.fire_damage_func ) )
     {

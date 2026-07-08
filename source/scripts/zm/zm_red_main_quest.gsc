@@ -4222,7 +4222,7 @@ function function_d45f304f()
         
         while ( true )
         {
-            self waittill( #"hash_488d86d3e6f92c" );
+            self waittill( #"light_left_hemera_beam" );
             
             if ( self.var_6e4f26e5 <= 0 )
             {
@@ -4269,7 +4269,7 @@ function function_c2d50fdc( t_beam )
         }
         
         self.var_6e4f26e5--;
-        self notify( #"hash_488d86d3e6f92c" );
+        self notify( #"light_left_hemera_beam" );
     }
 }
 

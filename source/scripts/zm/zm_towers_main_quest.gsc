@@ -105,7 +105,7 @@ function init()
     init_defend();
     level thread function_a2e1777c();
     level thread key_glint();
-    zm_sq::register( #"main_quest", #"hash_616226b026783ca3", #"hash_616226b026783ca3", &function_a3cd497c, &function_ff02b202 );
+    zm_sq::register( #"main_quest", #"wait_for_pap_quest", #"wait_for_pap_quest", &wait_for_pap_quest_setup, &wait_for_pap_quest_cleanup );
     zm_sq::register( #"hash_7848e22b4305215c", #"collect_charcoal", #"collect_charcoal", &collect_charcoal_setup, &collect_charcoal_cleanup );
     zm_sq::register( #"hash_39d41ab4004ca686", #"hash_1c34d1cbe7a35ae1", #"hash_1c34d1cbe7a35ae1", &function_e289a374, &function_468cbe89 );
     zm_sq::register( #"hash_1da6434ce50c3713", #"collect_dung", #"collect_dung", &collect_dung_setup, &collect_dung_cleanup );
@@ -246,7 +246,7 @@ function function_64c8ff91()
 // Params 1
 // Checksum 0xeb1acdfa, Offset: 0x2a58
 // Size: 0x84
-function function_a3cd497c( b_skipped )
+function wait_for_pap_quest_setup( b_skipped )
 {
     waitframe( 1 );
     level zm_ui_inventory::function_7df6bb60( #"zm_towers_objective_progress", 0 );
@@ -264,7 +264,7 @@ function function_a3cd497c( b_skipped )
 // Params 2
 // Checksum 0x4655673e, Offset: 0x2ae8
 // Size: 0x1e
-function function_ff02b202( b_skipped, var_19e802fa )
+function wait_for_pap_quest_cleanup( b_skipped, var_19e802fa )
 {
     if ( b_skipped )
     {
@@ -1595,7 +1595,7 @@ function function_59d775d2( s_spot )
     self ai::set_behavior_attribute( "axe_throw", 0 );
     self ai::set_behavior_attribute( "run", 1 );
     self thread zm_towers::function_f1e7bc35( s_spot );
-    self clientfield::set( "" + #"hash_233e31d0c2b47b1b", 1 );
+    self clientfield::set( "" + #"ra_destroyer_head_glow", 1 );
     self clientfield::set( "" + #"hash_12dfb8249f8212d2", 1 );
     self clientfield::set( "" + #"hash_17e3041649954b9f", 1 );
     self thread function_31e86ccd( "left" );
@@ -1620,7 +1620,7 @@ function function_59d775d2( s_spot )
     self stoploopsound();
     self scene::stop( "aib_t8_zm_gladiator_dth_ra_puzzle" );
     self val::reset( #"hash_56df0defacc86bb7", "allowdeath" );
-    self clientfield::set( "" + #"hash_233e31d0c2b47b1b", 0 );
+    self clientfield::set( "" + #"ra_destroyer_head_glow", 0 );
     self function_e4a7d89( "left" );
     self function_e4a7d89( "right" );
     gibserverutils::annihilate( self );
@@ -1976,7 +1976,7 @@ function function_fac3622f()
 // Size: 0x8c
 function function_d1007b59()
 {
-    level zm_audio::sndannouncerplayvox( #"hash_5719edb294612f4c" );
+    level zm_audio::sndannouncerplayvox( #"main_quest_puzzle_complete" );
     e_player = array::random( zm_vo::get_valid_players() );
     
     if ( isdefined( e_player ) )
@@ -6369,7 +6369,7 @@ function function_e50623f()
     wait 1;
     zm_vo::function_7e4562d7( #"hash_58fcefd43425141f", undefined, 1 );
     wait 2;
-    level zm_audio::sndannouncerplayvox( #"hash_1b8dd2e5977116cb", undefined, undefined, 4, 1 );
+    level zm_audio::sndannouncerplayvox( #"stage_1_end", undefined, undefined, 4, 1 );
     level notify( #"hash_26a91ce7b67d0e6d" );
     level waittill( #"second_boss_spawn" );
     wait 0.5;

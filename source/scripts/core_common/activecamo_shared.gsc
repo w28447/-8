@@ -592,7 +592,7 @@ function function_c1f96c48( weapon )
         case #"ar_fastfire_t8":
             return #"hash_9da725fe15aa048";
         case #"lmg_standard_t8":
-            return #"hash_5cf945d7954a39e0";
+            return #"camo_active_kill_counter_base_kills";
         case #"pistol_standard_t8":
             return #"hash_1ffb9d5647330a52";
         case #"shotgun_semiauto_t8":
@@ -624,7 +624,7 @@ function function_938534a8( permanentstatname )
         case #"hash_9da725fe15aa048":
             var_19ef0b8d = #"camo_active_ar_fastfire_base";
             break;
-        case #"hash_5cf945d7954a39e0":
+        case #"camo_active_kill_counter_base_kills":
             var_19ef0b8d = #"camo_active_lmg_standard_base";
             break;
         case #"hash_1ffb9d5647330a52":

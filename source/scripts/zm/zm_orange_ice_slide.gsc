@@ -11,9 +11,9 @@
 // Size: 0x5a
 function init()
 {
-    var_fa0bcfcc = getent( "ice_slide", "targetname" );
-    var_fa0bcfcc callback::on_trigger( &function_a8fc3bf1 );
-    var_fa0bcfcc.var_80360a02 = 0;
+    t_slide = getent( "ice_slide", "targetname" );
+    t_slide callback::on_trigger( &function_a8fc3bf1 );
+    t_slide.var_80360a02 = 0;
 }
 
 // Namespace zm_orange_ice_slide/zm_orange_ice_slide

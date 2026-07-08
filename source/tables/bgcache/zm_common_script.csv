@@ -214,7 +214,7 @@ string,#zombie/perk_deadshot
 string,#hash_3b522b4b62050e3c
 string,#zombie/grab_shield_keyboard
 string,#hash_3ba7caee60b964e1
-string,#hash_3bf7b3dc87b1015e
+string,#zombie/repair_shield_upg_keyboard
 string,#hash_3c3d6fe023a5db0c
 string,#hash_3d1e4f7ac23674b5
 string,#hash_3d34018a57f83b7c
@@ -326,7 +326,7 @@ string,#hash_5a8f2d9ee2cca12a
 string,#zombie/perk_packapunch_busy
 string,#hash_5ba076fa5c544ee8
 string,#zmarcade/power_on
-string,#hash_5c35bbb6c39ba19a
+string,#zombie/repair_shield_upg
 string,#zombie/electric_switch_keyboard
 string,#hash_5c4b994618e485b6
 string,#hash_5d7144cc16556865

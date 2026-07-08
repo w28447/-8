@@ -9,7 +9,7 @@
             "team": "any"
         },
         {
-            "mainanim": "anim#hash_4f2b2f1b4df13119",
+            "mainanim": "anim#p8_fxanim_wz_parachute_supplydrop_open_anim",
             "model": "model#c_t7_ally_fb",
             "type": "prop",
             "vmtype": "server",

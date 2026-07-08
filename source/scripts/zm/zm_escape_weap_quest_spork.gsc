@@ -89,7 +89,7 @@ function vtol_dig()
 {
     self endon( #"disconnect" );
     self flag::init( #"hash_6b33efdeedf241f" );
-    self flag::init( #"hash_30ae3926b2d211db" );
+    self flag::init( #"roof_battle_step_completed" );
     self flag::init( #"hash_3ade5b9424a14f81" );
     self flag::init( #"hash_79ab766693ef2532" );
     self waittill( #"spawned" );
@@ -105,7 +105,7 @@ function function_537f413d()
     self endon( #"disconnect" );
     self.var_8c79ac3f = 0;
     self thread function_7927b4f1();
-    self flag::wait_till( #"hash_30ae3926b2d211db" );
+    self flag::wait_till( #"roof_battle_step_completed" );
     
     if ( !isdefined( level.var_92a01e03.var_da0824c7 ) )
     {
@@ -154,7 +154,7 @@ function function_cd53088e( params )
         waitresult = self waittill( #"trigger" );
         e_player = waitresult.activator;
         
-        if ( isplayer( e_player ) && e_player flag::get( #"hash_30ae3926b2d211db" ) )
+        if ( isplayer( e_player ) && e_player flag::get( #"roof_battle_step_completed" ) )
         {
             e_player clientfield::set_to_player( "" + #"place_spoon", 0 );
             wait 0.1;
@@ -233,7 +233,7 @@ function function_85cfc2a3( e_player )
             e_player notify( #"roof_kills_completed" );
             e_player playsoundtoplayer( #"hash_65b4e7aafb64c1a1", e_player );
             e_player.var_8c79ac3f = undefined;
-            e_player flag::set( #"hash_30ae3926b2d211db" );
+            e_player flag::set( #"roof_battle_step_completed" );
         }
     }
 }
@@ -327,7 +327,7 @@ function function_34b43e30( e_player )
 // Size: 0x4e, Type: bool
 function function_c5c760a1( e_player )
 {
-    return e_player flag::get( #"hash_30ae3926b2d211db" ) && !e_player flag::get( #"hash_3ade5b9424a14f81" );
+    return e_player flag::get( #"roof_battle_step_completed" ) && !e_player flag::get( #"hash_3ade5b9424a14f81" );
 }
 
 // Namespace zm_escape_weap_quest_spork/zm_escape_weap_quest_spork
@@ -568,7 +568,7 @@ function function_14a795c2( e_player )
             }
             
             player notify( #"roof_kills_completed" );
-            player flag::set( #"hash_30ae3926b2d211db" );
+            player flag::set( #"roof_battle_step_completed" );
             
             if ( isdefined( player.var_8c79ac3f ) )
             {

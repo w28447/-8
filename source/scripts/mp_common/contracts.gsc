@@ -375,7 +375,7 @@ function private function_902ef0de( var_38280f2f, delta )
 function function_90a854d2( slot )
 {
     /#
-        if ( getdvarint( #"hash_657185da33fd5f8", 0 ) > 0 )
+        if ( getdvarint( #"contract_testdata", 0 ) > 0 )
         {
             var_38280f2f = #"undefined_contract_name";
             

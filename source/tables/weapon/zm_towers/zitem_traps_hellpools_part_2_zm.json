@@ -1,7 +1,7 @@
 {
-    "name": "#hash_cbca54286491987",
-    "baseWeapon": "#hash_72cbac6681a7b431",
-    "soundbank": "#hash_cec1692d60f311b",
+    "name": "#zitem_traps_hellpools_part_2_zm",
+    "baseWeapon": "#zitem_traps_hellpools_part_2",
+    "soundbank": "#zitem_traps_hellpools_part_2_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

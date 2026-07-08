@@ -301,7 +301,7 @@ function function_40abb79a( in_enemy_mute_smoke, applicant )
     
     if ( player getplayerresistance( 0 ) > 0 )
     {
-        var_65ce58a2 = #"hash_74cdcf6548f09fcd";
+        var_65ce58a2 = #"deaf_resisted";
     }
     
     var_56d6af0e = getstatuseffect( var_65ce58a2 );

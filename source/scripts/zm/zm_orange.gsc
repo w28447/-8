@@ -199,7 +199,7 @@ function event_handler[level_init] main( eventstruct )
     level thread function_681c28c9();
     level thread function_486119ea();
     level thread function_30829a12();
-    callback::function_74872db6( &play_avalanche );
+    callback::on_round_begin( &play_avalanche );
     
     if ( !zm_utility::is_ee_enabled() )
     {
@@ -871,7 +871,7 @@ function play_avalanche()
     wait 2;
     level thread scene::play( "p8_fxanim_zm_ora_spawn_avalanche_bundle" );
     exploder::exploder( "fxexp_avalanche_event_fx" );
-    callback::function_50fdac80( &play_avalanche );
+    callback::remove_on_round_begin( &play_avalanche );
 }
 
 // Namespace zm_orange/zm_orange

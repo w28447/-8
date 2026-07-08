@@ -173,7 +173,7 @@ localizeentry,#zombie/perk_deadshot
 localizeentry,#hash_3b522b4b62050e3c
 localizeentry,#zombie/grab_shield_keyboard
 localizeentry,#hash_3ba7caee60b964e1
-localizeentry,#hash_3bf7b3dc87b1015e
+localizeentry,#zombie/repair_shield_upg_keyboard
 localizeentry,#hash_3c3d6fe023a5db0c
 localizeentry,#hash_3d1e4f7ac23674b5
 localizeentry,#hash_3d34018a57f83b7c
@@ -282,7 +282,7 @@ localizeentry,#hash_5a8f2d9ee2cca12a
 localizeentry,#zombie/perk_packapunch_busy
 localizeentry,#hash_5ba076fa5c544ee8
 localizeentry,#zmarcade/power_on
-localizeentry,#hash_5c35bbb6c39ba19a
+localizeentry,#zombie/repair_shield_upg
 localizeentry,#zombie/electric_switch_keyboard
 localizeentry,#hash_5c4b994618e485b6
 localizeentry,#hash_5d7144cc16556865

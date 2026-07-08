@@ -1,5 +1,5 @@
 #using script_1714a05732f8e2c;
-#using script_3688d332e17e9ac1;
+#using scripts\zm_common\trials\zm_trial_no_missed_shots.gsc;
 #using script_69e3966400876ea0;
 #using script_760b801e43fe3017;
 #using scripts\zm_common\trials\zm_trial_activate_hazards;

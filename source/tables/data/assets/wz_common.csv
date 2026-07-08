@@ -3578,7 +3578,7 @@ xanim,d#hash_4f1bc6ef57d486ef
 xanim,d#vm_zom_arm_swim_pullout
 xanim,d#vm_ar_double_barrel_first_raise
 xanim,#vm_spork_taunt
-xanim,#hash_4f2b2f1b4df13119
+xanim,#p8_fxanim_wz_parachute_supplydrop_open_anim
 xanim,d#hash_4f2ece5ca2a5a90d
 xanim,d#vm_titan_ads_acog_upper_up
 xanim,d#vm_sniper_fast_rechamber_swim_to_land
@@ -99814,7 +99814,7 @@ weapon,d#tr_flechette_t8_wz
 weapon,d#launcher_standard_t8_wz
 weapon,d#lmg_standard_t8_wz
 weapon,d#smg_minigun_t8_wz
-weapon,#hash_62a23d8a9c5e502e
+weapon,#eq_cluster_semtex_mini_grenade_wz
 weapon,d#smg_vmp_t8_wz
 weapon,#sniper_mini14_t8_operator_wz
 weapon,d#special_crossbow_t8_wz

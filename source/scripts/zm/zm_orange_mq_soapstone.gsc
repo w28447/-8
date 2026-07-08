@@ -39,7 +39,7 @@
 function preload()
 {
     level flag::init( #"soapstones_collected" );
-    level flag::init( #"hash_3a8a317fc0b5e5b0" );
+    level flag::init( #"soapstone_step_complete" );
     level flag::init( #"hash_57d2cbf7d6c2035a" );
     level flag::init( #"hash_238e5c8b416f855" );
     clientfield::register( "scriptmover", "soapstone_start_fx", 24000, 2, "int" );
@@ -126,7 +126,7 @@ function function_d878e1ee( var_a276c861 )
         e_stone.s_unitrigger = e_stone zm_unitrigger::create( "", 96 );
         e_stone.is_placed = 0;
         e_stone thread function_9961d00();
-        level flag::wait_till( #"hash_3a8a317fc0b5e5b0" );
+        level flag::wait_till( #"soapstone_step_complete" );
         e_fuse = getent( "porridge", "targetname" );
         e_fuse.s_unitrigger = e_fuse zm_unitrigger::create( "", 96 );
         e_fuse function_afa2f621();
@@ -219,7 +219,7 @@ function function_88a86ef8( n_position )
 function function_476d4cb5()
 {
     level endon( #"soapstone_placed" );
-    level endon( #"hash_3a8a317fc0b5e5b0" );
+    level endon( #"soapstone_step_complete" );
     s_activation = self waittill( #"trigger_activated" );
     
     if ( !level.s_soapstone.is_charged )
@@ -275,7 +275,7 @@ function function_476d4cb5()
 // Size: 0x118
 function function_b4ad839e()
 {
-    level endon( #"hash_3a8a317fc0b5e5b0" );
+    level endon( #"soapstone_step_complete" );
     s_activation = self waittill( #"trigger_activated" );
     self.e_stone clientfield::set( "soapstone_start_fx", 0 );
     self.e_stone playsound( #"hash_5f8cb5b7320b0002" );
@@ -297,7 +297,7 @@ function function_b4ad839e()
 // Size: 0x1b0
 function function_1c744b3f()
 {
-    level endon( #"hash_3a8a317fc0b5e5b0" );
+    level endon( #"soapstone_step_complete" );
     
     foreach ( s_soapstone in level.var_9369090c )
     {
@@ -326,7 +326,7 @@ function function_1c744b3f()
 // Size: 0xb4
 function function_557d25c1()
 {
-    level endon( #"hash_3a8a317fc0b5e5b0" );
+    level endon( #"soapstone_step_complete" );
     level.var_6b37a126.s_unitrigger = level.var_6b37a126 zm_unitrigger::create( "", 128 );
     
     while ( true )
@@ -344,7 +344,7 @@ function function_557d25c1()
 // Size: 0x350
 function function_2b438f6f()
 {
-    level endon( #"hash_3a8a317fc0b5e5b0" );
+    level endon( #"soapstone_step_complete" );
     level endon( #"soapstone_placed" );
     s_activation = self waittill( #"trigger_activated" );
     
@@ -402,7 +402,7 @@ function function_2b438f6f()
 // Size: 0x118
 function function_a9511f0f()
 {
-    level endon( #"hash_3a8a317fc0b5e5b0" );
+    level endon( #"soapstone_step_complete" );
     s_activation = self waittill( #"trigger_activated" );
     self.e_stone clientfield::set( "soapstone_start_fx", 0 );
     self.e_stone playsound( #"hash_5f8cb5b7320b0002" );
@@ -424,7 +424,7 @@ function function_a9511f0f()
 // Size: 0x54e
 function function_9961d00()
 {
-    level endon( #"hash_3a8a317fc0b5e5b0" );
+    level endon( #"soapstone_step_complete" );
     
     while ( !self.is_placed )
     {
@@ -442,7 +442,7 @@ function function_9961d00()
                     level.s_soapstone.var_b6e5b65f -= 1;
                     self.is_placed = 1;
                     level flag::clear( #"hash_57d2cbf7d6c2035a" );
-                    level flag::set( #"hash_3a8a317fc0b5e5b0" );
+                    level flag::set( #"soapstone_step_complete" );
                 }
                 else
                 {
@@ -487,7 +487,7 @@ function function_9961d00()
                     level.s_soapstone.var_b6e5b65f -= 1;
                     self.is_placed = 1;
                     level flag::clear( #"hash_238e5c8b416f855" );
-                    level flag::set( #"hash_3a8a317fc0b5e5b0" );
+                    level flag::set( #"soapstone_step_complete" );
                 }
                 else
                 {
@@ -507,7 +507,7 @@ function function_9ee4c8c3( var_a276c861, var_19e802fa )
 {
     if ( var_a276c861 || var_19e802fa )
     {
-        level flag::set( #"hash_3a8a317fc0b5e5b0" );
+        level flag::set( #"soapstone_step_complete" );
         getent( "mama_bear", "targetname" ) show();
         getent( "papa_bear", "targetname" ) show();
         e_stone = getent( "electro", "targetname" );

@@ -1,5 +1,5 @@
 #using script_11c9779550732489;
-#using script_711bbbba637da80;
+#using scripts\zm\zm_escape_paschal_s3.csc;
 #using scripts\core_common\clientfield_shared;
 #using scripts\core_common\exploder_shared;
 #using scripts\core_common\struct;

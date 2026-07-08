@@ -492,7 +492,7 @@ function function_985c08e7()
 // Params 1
 // Checksum 0x679e1b60, Offset: 0x2020
 // Size: 0x46, Type: bool
-function function_85edbfb9( w_weapon )
+function is_ray_gun_mk2( w_weapon )
 {
     return isdefined( w_weapon ) && ( w_weapon == level.a_w_ray_guns[ 2 ] || w_weapon == level.a_w_ray_guns[ 3 ] );
 }

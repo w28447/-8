@@ -19,8 +19,8 @@ function init()
     callback::on_ai_killed( &function_60f79e9c );
     level.n_electric_trap_kills = 0;
     callback::on_ai_killed( &function_7fe4eb1d );
-    callback::function_74872db6( &function_60193f7d );
-    callback::function_74872db6( &function_dab4588 );
+    callback::on_round_begin( &function_60193f7d );
+    callback::on_round_begin( &function_dab4588 );
     callback::on_round_end( &function_d62a70b4 );
 }
 
@@ -115,7 +115,7 @@ function function_60193f7d()
 {
     if ( level flag::get( "power_on" ) )
     {
-        callback::function_50fdac80( &function_60193f7d );
+        callback::remove_on_round_begin( &function_60193f7d );
         return;
     }
     
@@ -126,7 +126,7 @@ function function_60193f7d()
         #/
         
         zm_utility::giveachievement_wrapper( "zm_office_power", 1 );
-        callback::function_50fdac80( &function_60193f7d );
+        callback::remove_on_round_begin( &function_60193f7d );
     }
 }
 
@@ -173,7 +173,7 @@ function function_dab4588()
 {
     if ( zm_zonemgr::zone_is_enabled( "war_room_zone_top" ) )
     {
-        callback::function_50fdac80( &function_dab4588 );
+        callback::remove_on_round_begin( &function_dab4588 );
         return;
     }
     
@@ -184,7 +184,7 @@ function function_dab4588()
         #/
         
         zm_utility::giveachievement_wrapper( "zm_office_office", 1 );
-        callback::function_50fdac80( &function_dab4588 );
+        callback::remove_on_round_begin( &function_dab4588 );
     }
 }
 

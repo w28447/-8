@@ -1973,7 +1973,7 @@ function function_f632c17e( weapon )
     switch ( weapon.name )
     {
         case #"ar_accurate_t8_swat":
-        case #"hash_17df39d53492b0bf":
+        case #"ac130_main_cannon":
         case #"tank_robot_launcher_turret":
         case #"ac130_chaingun":
         case #"ac130_autocannon":
@@ -2160,7 +2160,7 @@ function private function_395ef176()
             
             foreach ( player in teammates )
             {
-                player luinotifyevent( #"hash_6b67aa04e378d681", 1, 7 );
+                player luinotifyevent( #"game_update_notification", 1, 7 );
             }
             
             util::function_5a68c330( 24, self.team );
@@ -2181,7 +2181,7 @@ function private function_395ef176()
                 
                 foreach ( player in teammates )
                 {
-                    player luinotifyevent( #"hash_6b67aa04e378d681", 2, 1, level.var_9161927e[ self.team ] );
+                    player luinotifyevent( #"game_update_notification", 2, 1, level.var_9161927e[ self.team ] );
                 }
             }
             
@@ -2228,7 +2228,7 @@ function private function_395ef176()
                     continue;
                 }
                 
-                player luinotifyevent( #"hash_6b67aa04e378d681", 3, 2, var_e6caaa48, var_5724b72f );
+                player luinotifyevent( #"game_update_notification", 3, 2, var_e6caaa48, var_5724b72f );
             }
         }
     }

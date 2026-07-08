@@ -144,7 +144,7 @@ function event_handler[level_init] main( eventstruct )
     clientfield::register( "scriptmover", "" + #"fertilizer_smell", 1, 1, "int" );
     clientfield::register( "world", "" + #"fertilizer_smell_bowl", 1, 1, "int" );
     clientfield::register( "world", "" + #"hash_73088ea3053b96f1", 1, 1, "int" );
-    clientfield::register( "actor", "" + #"hash_233e31d0c2b47b1b", 1, 1, "int" );
+    clientfield::register( "actor", "" + #"ra_destroyer_head_glow", 1, 1, "int" );
     clientfield::register( "actor", "" + #"hash_12dfb8249f8212d2", 1, 1, "int" );
     clientfield::register( "actor", "" + #"hash_17e3041649954b9f", 1, 1, "int" );
     clientfield::register( "scriptmover", "ra_eyes_beam_fire", 1, 1, "int" );
@@ -701,7 +701,7 @@ function init_announcer()
     zm_audio::sndannouncervoxadd( #"pap_quest_completed", #"hash_20930393d4b597bd" );
     zm_audio::sndannouncervoxadd( #"hash_28dbb5b91d8a954e", #"vox_imp_jar_pickup" );
     zm_audio::sndannouncervoxadd( #"hash_3d5fccf222ba3ab6", #"vox_m_quest_danu_complete" );
-    zm_audio::sndannouncervoxadd( #"hash_5719edb294612f4c", #"hash_e36933881b70a00" );
+    zm_audio::sndannouncervoxadd( #"main_quest_puzzle_complete", #"hash_e36933881b70a00" );
     zm_audio::sndannouncervoxadd( #"hash_42bbe4989b9a4cbe", #"vox_m_quest_zeus_complete" );
     zm_audio::sndannouncervoxadd( #"main_quest_defend_complete", #"vox_m_quest_odin_complete" );
     zm_audio::sndannouncervoxadd( #"hash_bc10546af7f7b09", #"hash_2c87f4c5bf8b38f4" );
@@ -715,7 +715,7 @@ function init_announcer()
     zm_audio::sndannouncervoxadd( #"hash_43b0860b33146764", #"vox_m_quest_fury_start" );
     zm_audio::sndannouncervoxadd( #"hash_c8182d04e7f43c9", #"vox_m_quest_fury_arrive" );
     zm_audio::sndannouncervoxadd( #"hash_77080de04389f4df", #"vox_m_quest_fury_kill" );
-    zm_audio::sndannouncervoxadd( #"hash_1b8dd2e5977116cb", #"hash_58fcefd43425141f" );
+    zm_audio::sndannouncervoxadd( #"stage_1_end", #"hash_58fcefd43425141f" );
     zm_audio::sndannouncervoxadd( #"hash_436d318af3fd771f", #"vox_m_quest_wrath_arrive" );
     zm_audio::sndannouncervoxadd( #"hash_62c7007e0bc4eab6", #"vox_m_quest_wrath_kill" );
 }

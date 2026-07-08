@@ -38772,7 +38772,7 @@ weapon,d#ges_plyr_gesture004
 weapon,d#ges_plyr_gesture000
 weapon,d#ges_plyr_gesture002
 weapon,d#ges_plyr_gesture003
-weapon,#hash_17df39d53492b0bf
+weapon,#ac130_main_cannon
 weapon,#sig_buckler_lh_mp
 weapon,#remote_missile_missile_mp
 weapon,#ir_strobe_mp
@@ -39315,7 +39315,7 @@ attachmentunique,d#hash_4e31dad579790c1a
 attachmentunique,d#hash_6d19b66454adc21f
 attachmentunique,d#hash_7cd664dda3070b0
 weapon,#pistol_standard_t8_oic_mp
-weapon,#hash_62fb4f8a9caa979a
+weapon,#eq_cluster_semtex_mini_grenade_mp
 weapon,#amws_launcher_turret_mp_player
 weapon,#eq_localheal_mp
 weapon,#hash_64bfd08f30c3796f

@@ -2877,7 +2877,7 @@ function function_5b59f3b7( var_9a79d89d, var_5ab7c19c, var_bab91f2, var_4c7240f
 function function_9fe3c3f4()
 {
     self notify( #"ai_guard_radius" );
-    self notify( #"hash_140ce23fccc7b0c" );
+    self notify( #"ai_guard_lookaround" );
     self.var_1574ae06 = 1;
 }
 
@@ -2889,7 +2889,7 @@ function function_78545a05( n_wait )
 {
     self endon( #"death" );
     self notify( #"ai_guard_radius" );
-    self notify( #"hash_140ce23fccc7b0c" );
+    self notify( #"ai_guard_lookaround" );
     self.var_1574ae06 = 1;
     wait n_wait;
     self.var_1574ae06 = 0;
@@ -2933,8 +2933,8 @@ function function_22af9bfc()
 function function_34f0dd27()
 {
     self endon( #"death" );
-    self notify( #"hash_140ce23fccc7b0c" );
-    self endon( #"hash_140ce23fccc7b0c" );
+    self notify( #"ai_guard_lookaround" );
+    self endon( #"ai_guard_lookaround" );
     
     while ( true )
     {
@@ -4496,7 +4496,7 @@ function kill_bots( str_team, var_4e15a2e9 )
 function function_6b5781eb()
 {
     self endon( #"death" );
-    level endon( #"hash_6d34a5dd0e177bb8" );
+    level endon( #"bots_stop_following_player" );
     
     while ( true )
     {

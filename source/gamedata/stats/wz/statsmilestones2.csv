@@ -1,6 +1,6 @@
 256,0,3,#global,#camo_active_headshot_base_headshots,&#hash_738b1106fc534e64,0,0,u3?0,#camo_active_headshot_wrapper,#,0,&#hash_63e36ad9e3a816cc,u3?0,0,FALSE,activecamounveil,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 257,0,3,#global,#camo_active_rapid_kills_base,&#hash_4b1f3ea8779a3b43,0,0,u3?0,#camo_active_rapid_kills_wrapper,#,0,&#hash_9d225b77ed54fd5,u3?0,0,FALSE,activecamounveil,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
-258,0,5,#global,#hash_5cf945d7954a39e0,&#hash_4d1add8fb10e77c2,0,0,u3?0,#camo_active_kill_counter_wrapper,#,0,&#hash_5f5b4b5421ac8652,u3?0,0,FALSE,activecamounveil,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
+258,0,5,#global,#camo_active_kill_counter_base_kills,&#hash_4d1add8fb10e77c2,0,0,u3?0,#camo_active_kill_counter_wrapper,#,0,&#hash_5f5b4b5421ac8652,u3?0,0,FALSE,activecamounveil,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 259,0,2,#global,#hash_1ffb9d5647330a52,&#hash_d8d9dbe51a2c2a7,0,0,u3?0,#camo_active_showstopper_wrapper,#,0,&#hash_15e0a8358522d79,u3?0,0,FALSE,activecamounveil,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 260,0,3,#global,#hash_6ed19b98000fb441,&#hash_54e64e8e9374cf32,0,0,u3?0,#camo_active_objective_kills_wrapper,#,0,&#hash_4540f852f496b8a2,u3?0,0,FALSE,activecamounveil,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0
 261,0,3,#global,#hash_4b703256e8707894,&#hash_5323d2f9f089c83,0,0,u3?0,#camo_active_kills_without_dying_wrapper,#,0,&#hash_581e071b4ed3c15,u3?0,0,FALSE,activecamounveil,FALSE,FALSE,FALSE,FALSE,FALSE,#,#,0

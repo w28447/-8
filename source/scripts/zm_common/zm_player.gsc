@@ -2839,7 +2839,7 @@ function slowdown( str_type, var_a47cf2b2 )
 // Params 0
 // Checksum 0x10c67db4, Offset: 0x7a60
 // Size: 0x16
-function function_520f4da5()
+function end_slowdown()
 {
     self notify( #"hash_28af7943f07d93e2" );
 }

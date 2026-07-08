@@ -1027,7 +1027,7 @@ function fasttravel_spline( var_5314bd63, nd_path_start, var_384528 )
 function function_62686dda( var_6c365dbf )
 {
     var_a16f5b07 = self.origin;
-    self playrumbleonentity( #"hash_5d8a1a68b12dfb24" );
+    self playrumbleonentity( #"zm_fasttravel_vortex_rumble" );
     wait 0.5;
     self clientfield::set_to_player( "player_stargate_fx", 1 );
     self clientfield::set_to_player( "fasttravel_teleport_sfx", 1 );
@@ -1287,7 +1287,7 @@ function function_a78584c0( var_6c365dbf )
     self.var_805b8325.angles = self.angles;
     self linkto( self.var_805b8325 );
     waittillframeend();
-    self playrumbleonentity( #"hash_5d8a1a68b12dfb24" );
+    self playrumbleonentity( #"zm_fasttravel_vortex_rumble" );
     self function_82c1415f();
     
     if ( isdefined( self.var_805b8325 ) )
@@ -1376,7 +1376,7 @@ function function_82c1415f()
             s_wormhole thread scene::stop( "p8_fxanim_zm_zod_wormhole_bundle" );
         }
         
-        self stoprumble( #"hash_5d8a1a68b12dfb24" );
+        self stoprumble( #"zm_fasttravel_vortex_rumble" );
     }
     
     s_wormhole struct::delete();

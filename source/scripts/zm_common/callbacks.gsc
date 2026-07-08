@@ -120,18 +120,18 @@ function function_66d5d485( func, obj )
 // Params 2
 // Checksum 0x688aa04f, Offset: 0x518
 // Size: 0x3c
-function function_74872db6( func, obj )
+function on_round_begin( func, obj )
 {
-    add_callback( #"hash_6df5348c2fb9a509", func, obj );
+    add_callback( #"on_round_begin", func, obj );
 }
 
 // Namespace callback/callbacks
 // Params 2
 // Checksum 0xa3b2ed01, Offset: 0x560
 // Size: 0x3c
-function function_50fdac80( func, obj )
+function remove_on_round_begin( func, obj )
 {
-    remove_callback( #"hash_6df5348c2fb9a509", func, obj );
+    remove_callback( #"on_round_begin", func, obj );
 }
 
 // Namespace callback/callbacks

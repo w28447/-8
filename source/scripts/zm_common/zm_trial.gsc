@@ -816,7 +816,7 @@ function private function_17b04fd7()
 // Params 0
 // Checksum 0xb371b243, Offset: 0x28c0
 // Size: 0x358
-function function_74872db6()
+function on_round_begin()
 {
     if ( !is_trial_mode() )
     {

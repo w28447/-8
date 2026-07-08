@@ -913,7 +913,7 @@ xanim,#ai_t8_zm_zod_bltfthr_tongue_grab_release
 xanim,d#vm_crouch_to_prone
 xanim,#hash_3debee1ffa0092ef
 xanim,#hash_3e1120d4abe59ce8
-xanim,#hash_3e937fff0e0a4362
+xanim,#ai_t8_zm_zod_bltfthr_dth_destroy_head_01_nofx
 xanim,#hash_3e96651895e5b82d
 xanim,#hash_3ea87c3a15a36d10
 xanim,#ai_t8_zm_zod_catalyst_corrosive_death_02_scale
@@ -32067,11 +32067,11 @@ xmodel,#p8_mov_zm_gla_weapon_spear_01
 xmodel,#p8_fxanim_zm_towers_cage_hang_02_mod
 xmodel,#c_t8_zmb_catalyst_water_larm_gib
 weapon,#zitem_zhield_zword_part_3_zm
-weapon,#hash_cbca54286491987
+weapon,#zitem_traps_hellpools_part_2_zm
 weapon,#zhield_zword_lh_upgraded_zm
-weapon,#hash_357e452940a24480
+weapon,#zitem_traps_hellpools_part_1_zm
 weapon,#zitem_zhield_zword_part_2_zm
-weapon,#hash_392389373e7f5e32
+weapon,#zitem_traps_hellpools_part_3_zm
 weapon,#buildable_piece_zm
 weapon,#zhield_zword_lh_zm
 weapon,#zitem_zhield_zword_part_1_zm

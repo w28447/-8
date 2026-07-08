@@ -285,7 +285,7 @@ function function_ae7c2601( n_max )
 // Params 0
 // Checksum 0x4e43ac1e, Offset: 0x1b98
 // Size: 0x86
-function function_74872db6()
+function on_round_begin()
 {
     if ( level.round_number <= 7 )
     {

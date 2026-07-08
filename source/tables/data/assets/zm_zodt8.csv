@@ -940,7 +940,7 @@ xanim,#ai_t8_zm_zod_bltfthr_tongue_grab_release
 xanim,d#vm_crouch_to_prone
 xanim,#hash_3e3435a5c4a60400
 xanim,#ai_zombie_base_boardtear_aligned_m_4_grab
-xanim,#hash_3e937fff0e0a4362
+xanim,#ai_t8_zm_zod_bltfthr_dth_destroy_head_01_nofx
 xanim,#hash_3e96651895e5b82d
 xanim,#hash_3ea87c3a15a36d10
 xanim,#ai_t8_zm_zod_catalyst_corrosive_death_02_scale
@@ -35289,7 +35289,7 @@ rumble,d#pistol_fire
 rumble,#zod_shield_juke
 rumble,#hash_466de80ca824adcf
 rumble,#hash_55b8ea7312be930e
-rumble,#hash_5d8a1a68b12dfb24
+rumble,#zm_fasttravel_vortex_rumble
 rumble,d#artillery_rumble
 rumble,d#defaultweapon_fire
 rumble,#hash_65c33f14fe3f7a8d

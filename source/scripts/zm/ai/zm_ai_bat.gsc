@@ -356,7 +356,7 @@ function function_607df9c6( ai )
     }
     
     ai.var_e21c1964 = 1;
-    var_cd1cfeed = ai animmappingsearch( #"hash_605e435c80f0d33b" );
+    transformanim = ai animmappingsearch( #"anim_transform_spawn" );
     pos = physicstrace( ai.origin, ai.origin + ( 0, 0, -10000 ), ( -2, -2, -2 ), ( 2, 2, 2 ), ai, 1 );
     pos = pos[ #"position" ];
     
@@ -365,15 +365,15 @@ function function_607df9c6( ai )
         level thread [[ level.var_84b2907f ]]( ai );
     }
     
-    if ( isdefined( var_cd1cfeed ) )
+    if ( isdefined( transformanim ) )
     {
         if ( isdefined( pos ) )
         {
-            ai animation::play( var_cd1cfeed, pos, ai.angles, 1, 0.2, 0.1, undefined, undefined, undefined, 0 );
+            ai animation::play( transformanim, pos, ai.angles, 1, 0.2, 0.1, undefined, undefined, undefined, 0 );
             return;
         }
         
-        ai animation::play( var_cd1cfeed, ai.origin, ai.angles, 1, 0.2, 0.1, undefined, undefined, undefined, 0 );
+        ai animation::play( transformanim, ai.origin, ai.angles, 1, 0.2, 0.1, undefined, undefined, undefined, 0 );
     }
 }
 

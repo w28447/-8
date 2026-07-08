@@ -75,7 +75,7 @@ function private function_18a1849f( e_player )
 // Size: 0x4c, Type: bool
 function private function_a4ea69bf( w_weapon )
 {
-    return isdefined( w_weapon ) && ( w_weapon == level.var_23674b8f.var_905d8263 || w_weapon == level.var_23674b8f.var_3b5ae85 );
+    return isdefined( w_weapon ) && ( w_weapon == level.var_23674b8f.w_mk2y || w_weapon == level.var_23674b8f.var_3b5ae85 );
 }
 
 // Namespace zm_white_ww_quest_mk2y/zm_white_ww_quest_mk2y
@@ -659,13 +659,13 @@ function private start_step_4()
 function private function_cba90c3c()
 {
     self endon( #"death" );
-    self waittill( #"hash_13f3f231b45420ef" );
+    self waittill( #"mk2_modded" );
     
     if ( zm_utility::is_classic() )
     {
         if ( !zm_white_main_quest::function_6cebbce1() )
         {
-            level.var_23674b8f.e_player zm_white_util::function_491673da( #"hash_4b04746b2f367ca3" );
+            level.var_23674b8f.e_player zm_white_util::function_491673da( #"vox_ww_y_craft_rush_1" );
         }
         
         level.var_23674b8f.e_player zm_hms_util::function_51b752a9( "vox_ww_y_craft", 0 );

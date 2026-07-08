@@ -1,7 +1,7 @@
 0,#zm_orange_default,&#,&#,&#,#,#,#,#,#,#,#,#,#
 1,#cold_feet,&#hash_509f257dd61c4e66,&#hash_3c45fab1ceb9fb96,&#,#shoot_from_water,#,#,#,#,#,#,#,#
 2,#safe_haven,&#hash_509f247dd61c4cb3,&#hash_170ae9542e9ccea5,&#,#safe_zone,#hash_6f77696e49283640,#5,#,#,#,#,#,#
-3,#side_job,&#hash_509f237dd61c4b00,&#hash_652b072deeb9df88,&#,#restrict_loadout,#hash_7416cabf26f52c5f,#,#,#,#,#,#,#
+3,#side_job,&#hash_509f237dd61c4b00,&#hash_652b072deeb9df88,&#,#restrict_loadout,#any_pistol_no_upgrades,#,#,#,#,#,#,#
 4,#perched,&#hash_509f2a7dd61c56e5,&#hash_34a741ede3224fef,&#,#death_from_above,#,#,#,#,#,#,#,#
 5,#shocking_revelation,&#hash_509f297dd61c5532,&#hash_1b140e9372db8aa2,&#,#special_enemy,#zombie_electric,#40,#80,#,#,#,#,#
 6,#situation_handled,&#hash_509f287dd61c537f,&#hash_16245ae627ba6651,&#,#flag_check,#zipline_handle_picked_up,#hash_52f58e31a90916e3,#,#,#,#,#,#
@@ -15,7 +15,7 @@
 13,#toss_up,&#hash_509c237dd61a1529,&#hash_2a88e974fda8ab23,&#,#kills_with_flinger,#15,#25,#35,#50,#,#,#,#
 14,#hash_3a07efaa19ef7fc7,&#hash_509c247dd61a16dc,&#hash_4d2064193f627324,&#,#flag_check,#hash_4e33fc3d32735214,#hash_2965a935caf13052,#,#,#,#,#,#
 15,#hash_39293de37586605c,&#hash_509c257dd61a188f,&#hash_5fca199af03b1501,&#,#defend_area,#s_destination_crevasse,#hash_43dabbb2b40e3d09,#hash_629d5fe4a75781c8,#frozen_crevasse,#,#,#,#
-16,#steady_aim,&#hash_509c267dd61a1a42,&#hash_642160b2ebf55dd2,&#,#restrict_loadout,#hash_44dcc4dbf2ce47de,#,#,#,#,#,#,#
+16,#steady_aim,&#hash_509c267dd61a1a42,&#hash_642160b2ebf55dd2,&#,#restrict_loadout,#any_tr_no_upgrades,#,#,#,#,#,#,#
 17,#gilded_rage,&#hash_509c277dd61a1bf5,&#hash_282b1c9acf3429df,&#,#upgrade_multiple,#2,#4,#,#,#,#,#,#
 18,#hash_6eacb0aaeb22666,&#hash_509c287dd61a1da8,&#hash_2d5b3e718f0d39f0,&#,#flag_check,#hash_701aa76674161d36,#hash_298f465469b5e458,#,#,#,#,#,#
 19,#hush_puppies,&#hash_509c297dd61a1f5b,&#hash_fb402ff44f08e0d,&#,#special_enemy,#zombie_dog,#40,#80,#,#,#,#,#
@@ -28,7 +28,7 @@
 24,#dead_line,&#hash_50a6367dd62289f7,&#hash_2013d9c66d651329,&#,#hash_671231fa368e1829,#15,#25,#35,#50,#,#,#,#
 25,#forecastle_frenzy,&#hash_50a6357dd6228844,&#hash_1431bdde60bbe56c,&#,#defend_area,#s_destination_forecastle,#hash_14d1d9ee53a85901,#hash_5d0d048a32c96ad8,#forecastle,#,#,#,#
 26,#hash_fc3b6678dd03c0f,&#hash_50a6387dd6228d5d,&#hash_41bdafe80992b867,&#,#flag_check,#hash_5b3ea84b9db5af50,#hash_b98a1f80d904fb2,#,#,#,#,#,#
-27,#hash_398e3f74349000ae,&#hash_50a6377dd6228baa,&#hash_50558b5bb603d49a,&#,#restrict_loadout,#hash_1dd9431fbe7472b7,#,#,#,#,#,#,#
+27,#hash_398e3f74349000ae,&#hash_50a6377dd6228baa,&#hash_50558b5bb603d49a,&#,#restrict_loadout,#any_sniper_no_upgrades,#,#,#,#,#,#,#
 28,#bloody_mess,&#hash_50a62a7dd6227593,&#hash_71df11dbf2e35745,&#,#defend_area,#s_destination_beach,#hash_2936406873b0946e,#hash_4503e3e5bbc2e509,#beach,#,#,#,#
 29,#molten_mayhem,&#hash_50a6297dd62273e0,&#hash_6339a2cd4107c7a8,&#,#hash_5124770c13a75bab,#health,#5,#,#,#,#,#,#
 30,#infused_fury,&#hash_50a2ac7dd61f69a2,&#hash_74b00507470ca672,&#,#defend_area,#s_destination_infusion,#hash_5e2f764ee170b70,#hash_16752aa6ec4b6715,#human_infusion,#,#,#,#

@@ -988,11 +988,11 @@ function private function_e5f2ff53( elephant, ridertag, targetname )
     
     rider.ai.var_6fe5490e = rider animmappingsearch( #"hash_3cfb620b1f6d2192" );
     assert( isdefined( rider.ai.var_6fe5490e ) );
-    rider.ai.var_9ca71a12 = rider animmappingsearch( #"hash_52c3d7bee8eabebc" );
+    rider.ai.var_9ca71a12 = rider animmappingsearch( #"anim_rider_attack" );
     assert( isdefined( rider.ai.var_9ca71a12 ) );
-    rider.ai.var_182e3181 = rider animmappingsearch( #"hash_4950e0c9a2675981" );
+    rider.ai.var_182e3181 = rider animmappingsearch( #"anim_rider_attack_right" );
     assert( isdefined( rider.ai.var_182e3181 ) );
-    rider.ai.var_debedb6f = rider animmappingsearch( #"hash_37f92f1082115f74" );
+    rider.ai.var_debedb6f = rider animmappingsearch( #"anim_rider_attack_left" );
     assert( isdefined( rider.ai.var_debedb6f ) );
     n_health = 60000;
     

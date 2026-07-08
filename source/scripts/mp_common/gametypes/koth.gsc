@@ -1665,7 +1665,7 @@ function function_841cf30a()
     
     foreach ( player in level.players )
     {
-        player luinotifyevent( #"hash_6b67aa04e378d681", 1, 8 );
+        player luinotifyevent( #"game_update_notification", 1, 8 );
     }
 }
 

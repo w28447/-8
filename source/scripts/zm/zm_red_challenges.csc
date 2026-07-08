@@ -40,7 +40,7 @@ function init()
     level._effect[ #"brazier_fire_white" ] = #"hash_79207c9d697f9e30";
     level._effect[ #"apollo_soul_capture" ][ 1 ] = #"hash_676d05725a4ffab9";
     level._effect[ #"hash_eafc8632695ccef" ][ 1 ] = #"maps/zm_red/fx8_soul_charge_white";
-    level._effect[ #"apollo_soul_capture" ][ 2 ] = #"hash_5199aa40f704fb10";
+    level._effect[ #"apollo_soul_capture" ][ 2 ] = #"maps/zm_red/fx8_soul_blue";
     level._effect[ #"hash_eafc8632695ccef" ][ 2 ] = #"maps/zm_red/fx8_soul_charge_blue";
     level._effect[ #"apollo_soul_capture" ][ 3 ] = #"hash_6bfc5d7fce6b2a4e";
     level._effect[ #"hash_eafc8632695ccef" ][ 3 ] = #"maps/zm_red/fx8_soul_charge_purple";

@@ -1,7 +1,7 @@
 0,#zm_towers_default,&#,&#,&#,#,#,#,#,#,#,#,#,#
 1,#whats_the_point,&#zmtrials/whats_the_point,&#zmtrials/whats_the_point_desc,&#,#damage_drains_points,#100,#,#,#,#,#,#,#
 2,#hash_6a169738c6691e01,&#hash_1cc4303a4301c66,&#hash_43c5dc7745aea596,&#,#sprinters_only,#,#,#,#,#,#,#,#
-3,#shoot_straight,&#zmtrials/shoot_straight,&#zmtrials/shoot_straight_desc,&#,#hash_4043192ca121b4d4,#50,#,#,#,#,#,#,#
+3,#shoot_straight,&#zmtrials/shoot_straight,&#zmtrials/shoot_straight_desc,&#,#no_missed_shots,#50,#,#,#,#,#,#,#
 4,#ride_shotgun,&#zmtrials/ride_shotgun,&#zmtrials/ride_shotgun_desc,&#,#restrict_loadout,#hash_33380540d3ae5004,#,#,#,#,#,#,#
 5,#shielded,&#zmtrials/shielded,&#zmtrials/shielded_desc,&#,#acquire_weapon,#zhield_zword_dw,#,#,#,#,#,#,#
 6,#open_sesame,&#zmtrials/open_sesame,&#zmtrials/open_sesame_desc,&#,#open_all_doors,#,#,#,#,#,#,#,#

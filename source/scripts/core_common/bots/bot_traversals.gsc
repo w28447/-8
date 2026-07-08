@@ -488,13 +488,13 @@ function edge_approach( edgepos, normal, dist = 0 )
 // Params 1
 // Checksum 0xd3b6286d, Offset: 0x17b0
 // Size: 0xa2
-function jump( var_75f5c2cb )
+function jump( jumppos )
 {
     /#
         if ( self should_record( "<dev string:x152>" ) )
         {
-            record3dtext( "<dev string:x1f0>", var_75f5c2cb, ( 1, 1, 1 ), "<dev string:x163>", undefined, 0.5 );
-            recordsphere( var_75f5c2cb, 3, ( 1, 1, 1 ), "<dev string:x163>", self );
+            record3dtext( "<dev string:x1f0>", jumppos, ( 1, 1, 1 ), "<dev string:x163>", undefined, 0.5 );
+            recordsphere( jumppos, 3, ( 1, 1, 1 ), "<dev string:x163>", self );
         }
     #/
     

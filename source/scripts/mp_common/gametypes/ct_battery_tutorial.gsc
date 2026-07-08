@@ -1894,7 +1894,7 @@ function function_8670e3b1( s_loc )
     s_loc = struct::get( "sticky_run_goal" );
     self thread ct_utils::function_5b59f3b7( s_loc.origin, s_loc.angles, 32 );
     self notify( #"ai_guard_radius" );
-    self notify( #"hash_140ce23fccc7b0c" );
+    self notify( #"ai_guard_lookaround" );
 }
 
 // Namespace ct_battery_tutorial/ct_battery_tutorial

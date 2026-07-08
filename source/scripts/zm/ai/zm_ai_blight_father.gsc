@@ -158,7 +158,7 @@ function private function_3e8300e9( entity, attribute, oldvalue, value )
         return;
     }
     
-    entity thread namespace_9ff9f642::function_520f4da5( #"hash_2fd5f5f16583a427" );
+    entity thread namespace_9ff9f642::end_slowdown( #"hash_2fd5f5f16583a427" );
 }
 
 // Namespace zm_ai_blight_father/zm_ai_blight_father
@@ -796,7 +796,7 @@ function private blightfatherdeathstart( entity )
             return;
         }
         
-        gib_model animscripted( #"hash_56a346d1e0dd61cd", gib_model.origin, gib_model.angles, #"hash_3e937fff0e0a4362", "normal" );
+        gib_model animscripted( #"hash_56a346d1e0dd61cd", gib_model.origin, gib_model.angles, #"ai_t8_zm_zod_bltfthr_dth_destroy_head_01_nofx", "normal" );
         gib_model thread function_529b7fb9();
         entity.gib_model = gib_model;
     }

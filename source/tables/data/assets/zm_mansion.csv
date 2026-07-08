@@ -869,7 +869,7 @@ xanim,#p8_fxanim_zm_man_pap_platter_idle_anim
 xanim,#hash_3e1a3825102bf6d2
 xanim,#hash_3e32e8d69876b6e8
 xanim,#hash_3e91a78653fcdc1b
-xanim,#hash_3e937fff0e0a4362
+xanim,#ai_t8_zm_zod_bltfthr_dth_destroy_head_01_nofx
 xanim,#hash_3e96651895e5b82d
 xanim,#hash_3ea87c3a15a36d10
 xanim,#ai_t8_zm_zod_catalyst_corrosive_death_02_scale
@@ -37425,7 +37425,7 @@ rumble,#hash_494ab02bb886c25c
 rumble,#zm_mansion_boss_footstep
 rumble,#zm_mansion_boss_roar
 rumble,#crossbow_fire
-rumble,#hash_5d8a1a68b12dfb24
+rumble,#zm_fasttravel_vortex_rumble
 rumble,#zm_mansion_mq_rumble
 rumble,d#defaultweapon_fire
 rumble,#zm_mansion_atlas_interact_rumble

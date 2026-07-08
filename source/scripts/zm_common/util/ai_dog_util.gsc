@@ -58,7 +58,7 @@ function __init__()
     level thread dog_clip_monitor();
     zm_round_spawning::register_archetype( #"zombie_dog", &function_b168b424, &dog_round_spawn, &spawn_single_dog, 25 );
     zm_score::function_e5d6e6dd( #"zombie_dog", 60 );
-    callback::function_74872db6( &function_81f9083e );
+    callback::on_round_begin( &function_81f9083e );
 }
 
 // Namespace zombie_dog_util/ai_dog_util

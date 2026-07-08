@@ -2,7 +2,7 @@
 1,#hash_7ac908d3550cdbbe,&#hash_6269f07516f26789,&#hash_a3f529029c76943,&#,#defend_area,#s_destination_security_checkpoint,#hash_347769c185a82a43,#hash_3b98ce4689a33c1e,#zone_security_checkpoint,#,#,#,#
 2,#death_from_above,&#hash_6269ed7516f26270,&#hash_44bfe0ecd80c6d8,&#,#death_from_above,#,#,#,#,#,#,#,#
 3,#hash_274a2240f4d02a25,&#hash_6269ee7516f26423,&#hash_68f57be57b8709f5,&#,#round_ending_zone,#zone_culdesac_green,#zone_culdesac_yellow,#,#,#,#,#,#
-4,#piss_around,&#hash_6269f37516f26ca2,&#hash_415e5f11a4e4cf72,&#,#restrict_loadout,#hash_7416cabf26f52c5f,#,#,#,#,#,#,#
+4,#piss_around,&#hash_6269f37516f26ca2,&#hash_415e5f11a4e4cf72,&#,#restrict_loadout,#any_pistol_no_upgrades,#,#,#,#,#,#,#
 5,#duck,&#hash_6269f47516f26e55,&#hash_47b85b5f86fbeff,&#,#hash_64d77357e69aee75,#crouch,#,#,#,#,#,#,#
 6,#and_cover,&#hash_6269f17516f2693c,&#hash_2dc36277fb350dc4,&#,#hash_64d77357e69aee75,#prone,#,#,#,#,#,#,#
 7,#deep_breath,&#hash_6269f27516f26aef,&#hash_c35f5d2925fdda1,&#,#flag_check,#power_room_event_complete,#hash_473eac95e36e4ab6,#,#,#,#,#,#
@@ -14,7 +14,7 @@
 11,#hash_4618bdd6ab5de60c,&#hash_626d747516f57dac,&#hash_75f98ebcf669654,&#,#upgrade_multiple,#1,#,#,#,#,#,#,#
 12,#shocking_development,&#hash_626d777516f582c5,&#hash_5c29c4800541018f,&#,#special_enemy,#nova_crawler,#60,#200,#,#,#,#,#
 13,#nukerun,&#hash_626d767516f58112,&#hash_4296912594fa3c42,&#,#nukerun,#,#,#,#,#,#,#,#
-14,#sawed_off,&#hash_626d717516f57893,&#hash_3e8d6be650bb8045,&#,#restrict_loadout,#hash_706c2575a1c4f65e,#,#,#,#,#,#,#
+14,#sawed_off,&#hash_626d717516f57893,&#hash_3e8d6be650bb8045,&#,#restrict_loadout,#any_shotgun_no_upgrades,#,#,#,#,#,#,#
 15,#slumber_party,&#hash_626d707516f576e0,&#hash_2fe7fcd79edff0a8,&#,#defend_area,#s_destination_beds,#hash_1bf1ded4916b4aa6,#hash_4379f5f9c69cd0c1,#zone_bunker_beds_1,#zone_bunker_beds_2,#,#,#
 16,#hash_158c922f8cd936d8,&#hash_626d737516f57bf9,&#hash_5d81af6a5a2795d3,&#,#restrict_loadout,#galvaknuckles,#,#,#,#,#,#,#
 17,#hash_24a91f12cbb07ead,&#hash_626d727516f57a46,&#hash_63c97d43f0da6036,&#,#flag_check,#hash_6f791dc137e0b695,#hash_5a88da5258ab1883,#,#,#,#,#,#
@@ -27,7 +27,7 @@
 23,#hash_3ad5e71a03ad70c1,&#hash_6263067516ec6e3d,&#hash_6273e8b67129d687,&#,#hash_3ad5e71a03ad70c1,#,#,#,#,#,#,#,#
 24,#shocking_spree,&#hash_6262ff7516ec6258,&#hash_fb9837a686bdd40,&#,#shocking_spree,#6,#3000,#,#,#,#,#,#
 25,#backyard_barbecue,&#hash_6263007516ec640b,&#hash_46190369166fdf1d,&#,#defend_area,#s_destination_yellow_backyard,#hash_44b9614fdafbab40,#hash_19d9b476fd1cf241,#zone_yellow_backyard,#,#,#,#
-26,#hash_46c1b0a5a9968157,&#hash_6263017516ec65be,&#hash_6c3ce176afd81e0e,&#,#restrict_loadout,#hash_54d4bc51239254b8,#,#,#,#,#,#,#
+26,#hash_46c1b0a5a9968157,&#hash_6263017516ec65be,&#hash_6c3ce176afd81e0e,&#,#restrict_loadout,#any_lmg_no_upgrades,#,#,#,#,#,#,#
 27,#eyes_open,&#hash_6263027516ec6771,&#hash_105d44d51d562bcb,&#,#eyes_open,#,#,#,#,#,#,#,#
 28,#mobile_plan,&#hash_6262fb7516ec5b8c,&#hash_5a7ae26c4971aef4,&#,#mobile_plan,#10,#,#,#,#,#,#,#
 29,#mannequin_american,&#hash_6262fc7516ec5d3f,&#hash_11aebc3c53980d11,&#,#mannequin_american,#,#,#,#,#,#,#,#

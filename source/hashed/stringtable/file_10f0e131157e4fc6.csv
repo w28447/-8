@@ -1,5 +1,5 @@
 1,150066743,#charm_salty_shaker,#weapon_charm,#legendary,0,#,,#,#,#,#,#
-2,127267626,#hash_75d578ac31bee71a,#gesture,#rare,0,#,,#,#,#,#,#
+2,127267626,#loot_emote_shared_ruin_war_face,#gesture,#rare,0,#,,#,#,#,#,#
 3,148084389,#loot_ui_icon_stickers_pixelzombies_01,#sticker,#common,0,#hash_504e9057606bfcaa,,#,#,#,#,#
 4,107613904,#loot_ui_icon_callingcards_zombiediner_01,#calling_card,#rare,0,#hash_108c94c8db09c566,,#,#,#,#,#
 5,113315665,#jumppack_diner,#jump_kit,#legendary,0,#,,#,#,#,#,#
@@ -7,7 +7,7 @@
 7,500163,#Case,#Case,#invalid,0,#,,#,#,#,#,#
 8,101827948,#loot_ui_icon_callingcards_zombiediner_07,#calling_card,#rare,0,#hash_108c94c8db09c566,,#,#,#,#,#
 9,119896115,#loot_ui_icon_stickers_pixelzombies_02,#sticker,#common,0,#hash_504e9057606bfcaa,,#,#,#,#,#
-10,168648308,#hash_8bf3776b1ddf293,#palette,#legendary,0,#,,#,#,#pbt_mp_mercenary,#pbt_wz_mercenary,#hash_42b6b1185e5845da
+10,168648308,#outfit_vampire_legendary1_ruin,#palette,#legendary,0,#,,#,#,#pbt_mp_mercenary,#pbt_wz_mercenary,#hash_42b6b1185e5845da
 11,153611696,#loot_ui_icon_stickers_survival_tools_05,#sticker,#common,0,#hash_5b8f8ce9c0ea477b,,#,#,#,#,#
 12,500163,#Case,#Case,#invalid,0,#,,#,#,#,#,#
 13,139669102,#loot_ui_icon_callingcards_zombiediner_03,#calling_card,#rare,0,#hash_108c94c8db09c566,,#,#,#,#,#
@@ -32,7 +32,7 @@
 32,195772267,#loot_ui_icon_callingcards_zombiecamp_01,#calling_card,#rare,0,#hash_5a10c7d2c3b8db5b,,#,#,#,#,#
 33,122803019,#loot_ui_icon_stickers_campbadges_01,#sticker,#common,0,#hash_42db41873dae6324,,#,#,#,#,#
 34,105969067,#loot_ui_icon_stickers_cartoon_zombies_02,#sticker,#common,0,#hash_767637e4848364a9,,#,#,#,#,#
-35,192356716,#hash_6c46ccf98aa0a834,#palette,#legendary,0,#,,#,#,#pbt_mp_outrider,#pbt_wz_outrider,#hash_209cd5f59d59c353
+35,192356716,#outfit_demonology_legendary1_outrider,#palette,#legendary,0,#,,#,#,#pbt_mp_outrider,#pbt_wz_outrider,#hash_209cd5f59d59c353
 36,500163,#Case,#Case,#invalid,0,#,,#,#,#,#,#
 37,197556127,#loot_emote_shared_finger_glasses,#gesture,#rare,0,#,,#,#,#,#,#
 38,123951593,#loot_ui_icon_stickers_campbadges_02,#sticker,#common,0,#hash_42db41873dae6324,,#,#,#,#,#
@@ -47,7 +47,7 @@
 47,160918956,#loot_ui_icon_stickers_cartoon_zombies_04,#sticker,#common,0,#hash_767637e4848364a9,,#,#,#,#,#
 48,500163,#Case,#Case,#invalid,0,#,,#,#,#,#,#
 49,149532364,#loot_ui_icon_stickers_campbadges_04,#sticker,#common,0,#hash_42db41873dae6324,,#,#,#,#,#
-50,108496870,#hash_2b06282248057ea6,#palette,#legendary,0,#,,#,#,#pbt_mp_zero,#pbt_mp_zero,#hash_36a0cd27ae9a46fd
+50,108496870,#outfit_mean_legendary1_zero,#palette,#legendary,0,#,,#,#,#pbt_mp_zero,#pbt_mp_zero,#hash_36a0cd27ae9a46fd
 51,189184075,#loot_ui_icon_callingcards_zombiecamp_04,#calling_card,#rare,0,#hash_5a10c7d2c3b8db5b,,#,#,#,#,#
 52,500163,#Case,#Case,#invalid,0,#,,#,#,#,#,#
 53,107017073,#loot_ui_icon_stickers_cartoon_zombies_05,#sticker,#common,0,#hash_767637e4848364a9,,#,#,#,#,#

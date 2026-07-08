@@ -34527,7 +34527,7 @@ rumble,#zod_idgun_vortex_shockwave
 rumble,d#grenade_rumble
 rumble,d#grenade_throw
 rumble,#zod_idgun_vortex_interior
-rumble,#hash_5d8a1a68b12dfb24
+rumble,#zm_fasttravel_vortex_rumble
 rumble,d#defaultweapon_fire
 rumble,#zm_white_nuke_impact
 rumble,#zm_shield_damage

@@ -59,7 +59,7 @@ function __init__()
     callback::on_spawned( &onplayerspawned );
     callback::on_joined_team( &onplayerjoinedteam );
     callback::on_finalize_initialization( &function_3675de8b );
-    callback::add_callback( #"hash_425352b435722271", &fx_flesh_hit_neck_fatal );
+    callback::add_callback( #"killstreak_process_assist", &function_cd40bdcf );
     callback::on_finalize_initialization( &function_1c601b99 );
     setmatchflag( "radar_allies", 0 );
     setmatchflag( "radar_axis", 0 );
@@ -100,7 +100,7 @@ function function_bff5c062( uav, attackingplayer )
 // Params 1
 // Checksum 0xa20cb3e2, Offset: 0x618
 // Size: 0x240
-function fx_flesh_hit_neck_fatal( params )
+function function_cd40bdcf( params )
 {
     enemycuavactive = 0;
     

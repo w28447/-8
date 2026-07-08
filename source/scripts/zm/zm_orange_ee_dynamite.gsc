@@ -46,7 +46,7 @@ function main()
     level flag::init( #"hash_16c15e4538336bb5" );
     level.var_d867b9f3 = array( zm_crafting::get_component( "zitem_orange_dynamite_bomb_part_1" ), zm_crafting::get_component( "zitem_orange_dynamite_bomb_part_2" ), zm_crafting::get_component( "zitem_orange_dynamite_bomb_part_3" ) );
     level.var_1daa43ee = 1;
-    callback::function_74872db6( &function_74872db6 );
+    callback::on_round_begin( &on_round_begin );
     zm_items::function_4d230236( level.var_d867b9f3[ 0 ], &function_168f686b );
     zm_items::function_4d230236( level.var_d867b9f3[ 1 ], &function_168f686b );
     zm_items::function_4d230236( level.var_d867b9f3[ 2 ], &function_168f686b );
@@ -138,12 +138,12 @@ function function_70f4c8c3( str_targetname )
 // Params 0
 // Checksum 0xb6f22ad0, Offset: 0xb68
 // Size: 0x54
-function function_74872db6()
+function on_round_begin()
 {
     if ( level.round_number > 2 )
     {
         callback::on_ai_spawned( &function_e3203a2 );
-        callback::function_50fdac80( &function_74872db6 );
+        callback::remove_on_round_begin( &on_round_begin );
     }
 }
 

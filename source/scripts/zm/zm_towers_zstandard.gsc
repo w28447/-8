@@ -48,7 +48,7 @@ function init_level_vars()
     level.var_ecdf38f = 20;
     level.var_55e562f9 = 20;
     level.zombie_hints[ #"default_treasure_chest" ] = #"hash_57a34375dddce337";
-    callback::function_74872db6( &function_74872db6 );
+    callback::on_round_begin( &on_round_begin );
     level thread defend_areas();
 }
 
@@ -56,7 +56,7 @@ function init_level_vars()
 // Params 0
 // Checksum 0xd36c873b, Offset: 0x4c0
 // Size: 0x3e
-function function_74872db6()
+function on_round_begin()
 {
     level.var_2e3a6cbe = undefined;
     level.var_d614a8b4 = undefined;

@@ -336,13 +336,13 @@ function private function_413cffae( n_interval, e_player )
 // Params 1
 // Checksum 0x54556445, Offset: 0x1218
 // Size: 0x126
-function function_27cd9d6( var_41f1a085 = 0 )
+function function_27cd9d6( n_min_wait_time = 0 )
 {
     self endon( #"disconnect", #"hash_14795fd12c6dae32" );
     level endon( #"trial_round_end" );
     n_time = 0;
     
-    while ( !isalive( self ) || self laststand::player_is_in_laststand() || self isusingoffhand() || self function_55acff10() || self zm_laststand::is_reviving_any() || n_time < var_41f1a085 )
+    while ( !isalive( self ) || self laststand::player_is_in_laststand() || self isusingoffhand() || self function_55acff10() || self zm_laststand::is_reviving_any() || n_time < n_min_wait_time )
     {
         waitframe( 1 );
         n_time += float( function_60d95f53() ) / 1000;

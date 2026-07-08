@@ -224,8 +224,8 @@ function function_584d6092( e_user )
         }
         
         e_user zm_weapons::weapon_give( level.var_57f4595b[ e_user.var_f7694097 ] );
-        e_user notify( #"hash_13f3f231b45420ef", { #e_player:e_user } );
-        level notify( #"hash_13f3f231b45420ef" );
+        e_user notify( #"mk2_modded", { #e_player:e_user } );
+        level notify( #"mk2_modded" );
         
         if ( zm_utility::is_trials() )
         {

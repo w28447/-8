@@ -36,7 +36,7 @@ function preload()
 function init()
 {
     level.var_9eccff99 = spawnstruct();
-    level.var_9eccff99.var_10630268 = getweapon( "ray_gun_mk2v" );
+    level.var_9eccff99.w_mk2v = getweapon( "ray_gun_mk2v" );
     level.var_9eccff99.var_d58b0729 = getweapon( "ray_gun_mk2v_upgraded" );
     level.var_9eccff99.n_step = 0;
     callback::on_disconnect( &on_disconnect );
@@ -122,7 +122,7 @@ function private function_5b4f9f76( e_player )
 // Size: 0x4c, Type: bool
 function private function_a8e75297( w_weapon )
 {
-    return isdefined( w_weapon ) && ( w_weapon == level.var_9eccff99.var_10630268 || w_weapon == level.var_9eccff99.var_d58b0729 );
+    return isdefined( w_weapon ) && ( w_weapon == level.var_9eccff99.w_mk2v || w_weapon == level.var_9eccff99.var_d58b0729 );
 }
 
 // Namespace zm_white_ww_quest_mk2v/zm_white_ww_quest_mk2v
@@ -561,7 +561,7 @@ function private start_step_4()
 function private function_cba90c3c()
 {
     self endon( #"death" );
-    self waittill( #"hash_13f3f231b45420ef" );
+    self waittill( #"mk2_modded" );
     self thread function_62ac32b9();
     complete_quest();
 }

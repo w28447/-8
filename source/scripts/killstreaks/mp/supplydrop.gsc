@@ -1039,7 +1039,7 @@ function supplydropwatcher( package_contents_id, trigger_event, supplydropweapon
 // Size: 0x8c
 function checkforemp()
 {
-    self endon( #"supplydropwatcher", #"spawned_player", #"hash_5fa67b447400c1a5", #"weapon_change", #"death", #"trigger_weapon_shutdown" );
+    self endon( #"supplydropwatcher", #"spawned_player", #" disconnect", #"weapon_change", #"death", #"trigger_weapon_shutdown" );
     self waittill( #"emp_jammed" );
     self killstreaks::switch_to_last_non_killstreak_weapon();
 }

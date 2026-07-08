@@ -37973,7 +37973,7 @@ scriptparsetree,#scripts/zm/perk/zm_perk_wolf_protector.csc
 scriptparsetree,#scripts/zm_common/zm_devgui.gsc
 scriptparsetree,#scripts/zm_common/bgbs/zm_bgb_power_keg.gsc
 scriptparsetree,#scripts/zm_common/bgbs/zm_bgb_nowhere_but_there.csc
-scriptparsetree,#hash_7adbb9939d1dd9bd
+scriptparsetree,#scripts/zm_common/bots/zm_bot_soak_test.gsc
 scriptparsetree,#scripts/zm_common/bgbs/zm_bgb_reign_drops.gsc
 scriptparsetree,#scripts/zm/perk/zm_perk_mod_wolf_protector.csc
 scriptparsetree,#scripts/zm_common/bgbs/zm_bgb_burned_out.csc

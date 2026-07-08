@@ -47,7 +47,7 @@ function finalize_init()
     if ( can_process_contracts() )
     {
         callback::on_connect( &on_player_connect );
-        callback::function_74872db6( &function_74872db6 );
+        callback::on_round_begin( &on_round_begin );
         callback::on_round_end( &on_round_end );
         zm_player::function_a827358a( &function_8968a076 );
         level.var_79a93566 = &function_902ef0de;
@@ -107,7 +107,7 @@ function function_8968a076( einflictor, eattacker, idamage, idflags, smeansofdea
 // Params 0
 // Checksum 0xaf8d9f68, Offset: 0x4e0
 // Size: 0x1bc
-function function_74872db6()
+function on_round_begin()
 {
     if ( level.round_number == 20 )
     {
@@ -129,7 +129,7 @@ function function_74872db6()
             e_player increment_zm_contract( #"contract_zm_rounds", 1, #"zstandard" );
         }
         
-        callback::function_50fdac80( &function_74872db6 );
+        callback::remove_on_round_begin( &on_round_begin );
     }
 }
 

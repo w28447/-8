@@ -54,7 +54,7 @@ function init_level_vars()
     function_ac904e5e();
     level thread init_pack_a_punch();
     level.fn_custom_round_ai_spawn = undefined;
-    level callback::function_74872db6( &function_74872db6 );
+    level callback::on_round_begin( &on_round_begin );
     level.var_3f86fd35 = 13;
     level.var_d7853f35 = 23;
     level.var_ecdf38f = 15;
@@ -145,7 +145,7 @@ function init_pack_a_punch()
 // Params 0
 // Checksum 0xb3882964, Offset: 0x7d0
 // Size: 0x7e
-function function_74872db6()
+function on_round_begin()
 {
     if ( level.round_number <= 7 )
     {

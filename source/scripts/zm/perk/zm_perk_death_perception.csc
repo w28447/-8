@@ -107,7 +107,7 @@ function perk_death_perception_visuals( localclientnum, oldval, newval, bnewent,
         ai stoprenderoverridebundle( #"hash_30651f363ef055e9" );
     }
     
-    self notify( #"hash_45ed6efeef67b773" );
+    self notify( #"stop_zombie_indicators" );
 }
 
 // Namespace zm_perk_death_perception/zm_perk_death_perception
@@ -128,7 +128,7 @@ function function_731d83de( localclientnum )
 // Size: 0x284
 function function_fff5377e( localclientnum )
 {
-    self endon( #"death", #"hash_45ed6efeef67b773" );
+    self endon( #"death", #"stop_zombie_indicators" );
     
     while ( true )
     {

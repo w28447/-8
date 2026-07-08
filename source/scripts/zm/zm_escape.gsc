@@ -1,5 +1,5 @@
 #using script_36222395658446f5;
-#using script_668c4fbb94671fb4;
+#using scripts\zm\zm_escape_paschal_s3.gsc;
 #using scripts\core_common\ai\zombie_utility;
 #using scripts\core_common\array_shared;
 #using scripts\core_common\callbacks_shared;
@@ -1256,7 +1256,7 @@ function function_172ac1b5()
             case #"super_open_sesame":
                 level thread super_open_sesame();
                 return 1;
-            case #"hash_19614ce604c9ce92":
+            case #"test_player_respawn_points":
                 level thread function_2b57b5d6();
                 return 1;
             case #"hash_be933dada1170a":

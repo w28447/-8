@@ -8,7 +8,7 @@
     "name": "#sas",
     "nameRef": "#playlist/sas",
     "nameRefCaps": "#playlist/sas",
-    "descriptionRef": "#hash_4b7849c7012717ff",
+    "descriptionRef": "#playlist/sas_desc",
     "baseGameTypeHash": "#sas",
     "hardcoreNameRef": "#mpui/hcdm",
     "presenceString": "#presence/sticks_and_stones",

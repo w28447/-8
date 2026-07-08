@@ -492,7 +492,7 @@ function function_1b848dc2()
         
         if ( isalive( self ) && s_waitresult._notify == "timeout" )
         {
-            self function_b8dfa139( #"hash_1ecab55fd270f67b" );
+            self function_b8dfa139( #"player_has_not_killed" );
         }
     }
 }
@@ -508,7 +508,7 @@ function function_5d6119de()
     level flag::init( #"hash_1a9f6d0c1e7684b4" );
     level flag::init( #"hash_80fa0541e21f744" );
     level.var_8cdff3aa = 20;
-    callback::function_74872db6( &function_74872db6 );
+    callback::on_round_begin( &on_round_begin );
     level flag::wait_till( "start_zombie_round_logic" );
     
     while ( true )
@@ -686,7 +686,7 @@ function function_79b77be1( a_players )
 // Params 0
 // Checksum 0x27c77623, Offset: 0x2580
 // Size: 0xa8
-function function_74872db6()
+function on_round_begin()
 {
     foreach ( player in level.players )
     {
@@ -1042,7 +1042,7 @@ function function_b8dfa139( str_event )
         case #"crawler_created":
             var_9c93ba8f = -1;
             break;
-        case #"hash_1ecab55fd270f67b":
+        case #"player_has_not_killed":
             var_9c93ba8f = -20;
             break;
         case #"hash_1dc206ff31de03eb":
@@ -1410,7 +1410,7 @@ function function_9c5fb1b5()
                 {
                     if ( level flag::get( "special_round" ) )
                     {
-                        level notify( #"hash_37b8eeaed85f1b4c" );
+                        level notify( #"special_round_music_start" );
                         player clientfield::set_to_player( "snd_crowd_react", 14 );
                         var_748cd0a0 = 1;
                         level thread function_75d594ec();
@@ -1894,7 +1894,7 @@ function function_308a32f0( e_player )
             case #"hash_197ae1fc115dc636":
             case #"first_tiger_kill":
             case #"hash_1dc206ff31de03eb":
-            case #"hash_1ecab55fd270f67b":
+            case #"player_has_not_killed":
             case #"trap_kill_self":
             case #"crawler_kill":
             case #"elephant_weak_point":

@@ -30636,7 +30636,7 @@ scriptparsetree,#scripts/zm/powerup/zm_powerup_zombie_blood.gsc
 scriptparsetree,#scripts/zm/ai/zm_ai_catalyst.gsc
 scriptparsetree,#scripts/zm/zm_escape_weap_quest_spork.csc
 scriptparsetree,#scripts/zm/ai/zm_ai_brutus.csc
-scriptparsetree,#hash_711bbbba637da80
+scriptparsetree,#scripts/zm/zm_escape_paschal_s3.csc
 scriptparsetree,#scripts/zm/zm_escape_traps.csc
 scriptparsetree,#scripts/zm/zm_escape_fx.gsc
 scriptparsetree,#scripts/zm_common/gametypes/ztcm_escape.csc
@@ -30709,7 +30709,7 @@ scriptparsetree,#scripts/zm/zm_escape_weap_quest_spork.gsc
 scriptparsetree,#scripts/core_common/ai/archetype_catalyst.csc
 scriptparsetree,#scripts/zm/zm_escape_pebble.csc
 scriptparsetree,#scripts/zm/zm_escape_fx.csc
-scriptparsetree,#hash_668c4fbb94671fb4
+scriptparsetree,#scripts/zm/zm_escape_paschal_s3.gsc
 scriptparsetree,#scripts/zm/weapons/zm_weap_riotshield.csc
 scriptparsetree,#scripts/zm/zm_escape_catwalk_event.csc
 scriptparsetree,#scripts/zm/zm_escape_nixie_clock.csc
@@ -44946,7 +44946,7 @@ gesture,d#ges_swim_idle
 gesture,#hash_4c34962941265b15
 gesture,#hash_62a2373d6a3a13b3
 weapon,#ww_blundergat_fire_t8_unfinished_zm
-weapon,#hash_73ece7ad89ad188
+weapon,#blundergat_acid_bullet_zm
 weapon,#ww_blundergat_acid_t8_upgraded_zm
 weapon,#ww_blundergat_fire_t8_upgraded_zm
 weapon,#hash_2f2554ceaa4eaa3f

@@ -37,15 +37,15 @@ function __init__()
 // Size: 0x6e
 function on_weapon_change( s_params )
 {
-    if ( function_5b0214e( s_params.weapon ) )
+    if ( is_ray_gun_mk2y( s_params.weapon ) )
     {
         self thread function_54922a21();
         return;
     }
     
-    if ( function_5b0214e( s_params.last_weapon ) )
+    if ( is_ray_gun_mk2y( s_params.last_weapon ) )
     {
-        self notify( #"hash_414b2baf34e01af8" );
+        self notify( #"unequip_ray_gun_mk2y" );
     }
 }
 
@@ -55,7 +55,7 @@ function on_weapon_change( s_params )
 // Size: 0x180
 function function_54922a21()
 {
-    self endoncallback( &function_a059fe7f, #"death", #"hash_414b2baf34e01af8" );
+    self endoncallback( &function_a059fe7f, #"death", #"unequip_ray_gun_mk2y" );
     w_current = self getcurrentweapon();
     
     while ( true )
@@ -98,7 +98,7 @@ function function_a059fe7f( str_notify )
 // Params 1
 // Checksum 0xb334dd33, Offset: 0x570
 // Size: 0x3c, Type: bool
-function function_5b0214e( weapon )
+function is_ray_gun_mk2y( weapon )
 {
     return isdefined( weapon ) && isinarray( level.var_585eeded.a_w_ray_gun_mk2y, weapon );
 }

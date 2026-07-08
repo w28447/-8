@@ -37,7 +37,7 @@ function init_clientfields()
     clientfield::register( "world", "" + #"engineer_spark_fx", 1, 1, "int", &engineer_fx, 0, 0 );
     clientfield::register( "world", "" + #"fireworks_fx", 1, 2, "counter", &fireworks_fx, 0, 0 );
     clientfield::register( "world", "" + #"crash_fx", 1, 1, "int", &car_crash_fx, 0, 0 );
-    clientfield::register( "world", "" + #"hash_4f672a8a7ae530e5", 1, 1, "int", &function_f99ce12b, 0, 0 );
+    clientfield::register( "world", "" + #"hero_weapons_in_box", 1, 1, "int", &function_f99ce12b, 0, 0 );
 }
 
 // Namespace zodt8_side_quests/zm_zodt8_side_quests

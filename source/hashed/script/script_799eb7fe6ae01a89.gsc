@@ -22,15 +22,15 @@ function autoexec __init__system__()
 // Size: 0x84
 function init()
 {
-    zm_sq::register( #"hash_32f778a60edd89af", #"step_1", #"hash_703e7ca00bf77f59", &function_5d6ee8e9, &function_65937bee );
-    zm_sq::start( #"hash_32f778a60edd89af" );
+    zm_sq::register( #"ee_lullaby", #"step_1", #"ee_lullaby_step1", &ee_lullaby_step1_setup, &ee_lullaby_step1_cleanup );
+    zm_sq::start( #"ee_lullaby" );
 }
 
 // Namespace namespace_35b7c648/namespace_35b7c648
 // Params 1
 // Checksum 0x59deacd3, Offset: 0x1a8
 // Size: 0x1c4
-function function_5d6ee8e9( var_5ea5c94d )
+function ee_lullaby_step1_setup( var_5ea5c94d )
 {
     var_21569a93 = getent( "morgue_stand_trig", "targetname" );
     s_lookat = struct::get( "morgue_lookat" );
@@ -82,7 +82,7 @@ function function_5d6ee8e9( var_5ea5c94d )
 // Params 2
 // Checksum 0xd3143e13, Offset: 0x378
 // Size: 0x64
-function function_65937bee( var_5ea5c94d, ended_early )
+function ee_lullaby_step1_cleanup( var_5ea5c94d, ended_early )
 {
     if ( var_5ea5c94d || ended_early )
     {

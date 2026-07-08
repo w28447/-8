@@ -1217,7 +1217,7 @@ function charon_slow( e_target, n_damage )
         wait 2;
     }
     
-    e_target thread namespace_9ff9f642::function_520f4da5( #"charon_slowdown_time" );
+    e_target thread namespace_9ff9f642::end_slowdown( #"charon_slowdown_time" );
 }
 
 // Namespace zm_weap_hand_charon/zm_weap_hand_charon

@@ -98,7 +98,7 @@ function function_7cc8a854()
     
     mdl_clip = getent( "mdl_acid_trap_cauldron_piece_clip", "targetname" );
     mdl_clip notsolid();
-    var_d58ee8b5 = getweapon( #"hash_72cba96681a7af18" );
+    var_d58ee8b5 = getweapon( #"zitem_traps_hellpools_part_1" );
     zm_items::function_4d230236( var_d58ee8b5, &function_b54b9d5e );
     a_zombie_traps = getentarray( "zombie_trap", "targetname" );
     level.var_482bcfef = array::filter( a_zombie_traps, 0, &function_9cc4d7b9 );

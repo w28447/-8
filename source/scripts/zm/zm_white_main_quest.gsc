@@ -3099,7 +3099,7 @@ function function_dbb98ad1()
 // Size: 0x394
 function function_63f24bb1( e_player )
 {
-    level endon( #"hash_6e610cd7ddf719c7" );
+    level endon( #"stop_marlton_vo" );
     
     if ( !level.var_5af37cf8 )
     {
@@ -3174,7 +3174,7 @@ function function_63f24bb1( e_player )
 // Size: 0x2e4
 function function_c1ac94bf()
 {
-    level endon( #"hash_6e610cd7ddf719c7" );
+    level endon( #"stop_marlton_vo" );
     
     if ( level.var_3e7698ce.size == 0 && level.var_8bd0fb2e < 4 )
     {
@@ -3232,7 +3232,7 @@ function function_3937a01d( e_player = undefined, is_adam = 0 )
     if ( is_adam )
     {
         level.mannequin_ally zm_hms_util::function_6a0d675d( "vox_adam_activated", 3, 0 );
-        level notify( #"hash_6e610cd7ddf719c7" );
+        level notify( #"stop_marlton_vo" );
         level.var_5e2c12d8 = 1;
         level.var_1409b3a9 = 0;
         level zm_hms_util::vo_stop_all();
@@ -5313,7 +5313,7 @@ function mannequin_activate( n_difficulty )
         
         self zm_unitrigger::create( &function_b7afb313, 64 );
         self thread function_a728dd4c();
-        self waittill( #"hash_c03409dbf4f2cb9" );
+        self waittill( #"head_interact_finished" );
         e_body clientfield::set( "fx8_quest_mannequin_initial_sparks", 0 );
         self zm_unitrigger::unregister_unitrigger( self.s_unitrigger );
         e_head rotateroll( -20, 0.1 );
@@ -5384,7 +5384,7 @@ function mannequin_activate( n_difficulty )
 // Size: 0x132
 function function_a728dd4c()
 {
-    self endon( #"hash_c03409dbf4f2cb9" );
+    self endon( #"head_interact_finished" );
     
     while ( true )
     {
@@ -5397,7 +5397,7 @@ function function_a728dd4c()
             if ( n_players == level.players.size )
             {
                 level.var_f7acb793 = s_activation.e_who;
-                self notify( #"hash_c03409dbf4f2cb9" );
+                self notify( #"head_interact_finished" );
             }
             
             continue;
@@ -5406,7 +5406,7 @@ function function_a728dd4c()
         if ( zm_zonemgr::get_players_in_zone( self.zone ) == level.players.size )
         {
             level.var_f7acb793 = s_activation.e_who;
-            self notify( #"hash_c03409dbf4f2cb9" );
+            self notify( #"head_interact_finished" );
         }
     }
 }

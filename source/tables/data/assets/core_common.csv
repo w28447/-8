@@ -99553,7 +99553,7 @@ lightdescription,#hash_c9d1a9507164ccd
 statuseffect,#deaf
 statuseffect,#hash_2608bf886a137e8e
 statuseffect,#stunned_swat_grenade
-statuseffect,#hash_74cdcf6548f09fcd
+statuseffect,#deaf_resisted
 statuseffect,#wound
 statuseffect,#riotshield_hit_slow
 xcam,#ui_scene_cam_swat_play6
@@ -107228,7 +107228,7 @@ sprayorgestureitem,#hash_3c1aeb02f664c10c
 sprayorgestureitem,#loot_emote_shared_clapping
 sprayorgestureitem,#hash_3fa2041461550527
 sprayorgestureitem,#loot_emote_shared_thumbs_up
-sprayorgestureitem,#hash_41583c714d53dbba
+sprayorgestureitem,#loot_emote_shared_laughing_at_you
 sprayorgestureitem,#loot_emote_shared_disgusting
 sprayorgestureitem,#hash_44b6ce7a7f28812b
 sprayorgestureitem,#hash_466a97d9b24055ee
@@ -107248,7 +107248,7 @@ sprayorgestureitem,#loot_emote_shared_salute
 sprayorgestureitem,#hash_6be0e18c13a77ab7
 sprayorgestureitem,#loot_emote_shared_legs_crossed
 sprayorgestureitem,#loot_emote_shared_angry_dance
-sprayorgestureitem,#hash_75d578ac31bee71a
+sprayorgestureitem,#loot_emote_shared_ruin_war_face
 sprayorgestureitem,#hash_7792a6244477374b
 sprayorgestureitem,#hash_78720cce5e4563e7
 sprayorgestureitem,#loot_emote_shared_pushups
@@ -109605,7 +109605,7 @@ statuseffect,#dot_radiation_final_stage_comp
 playeroutfit,#hash_25688ba1733afdec
 playeroutfit,#hash_5995f278b3eb6a2d
 playeroutfit,#hash_75b7ab5c9de6bc7e
-sprayorgestureitem,#hash_29c8256a31c9fb0
+sprayorgestureitem,#loot_emote_wetwork_parrot_on_arm
 sprayorgestureitem,#hash_51621610d162233
 sprayorgestureitem,#loot_emote_exotic_shared_sparkler
 sprayorgestureitem,#loot_emote_exotic_shared_dog_tags
@@ -109631,7 +109631,7 @@ sprayorgestureitem,#loot_emote_exotic_shared_rubiks
 sprayorgestureitem,#loot_emote_exotic_shared_slapshot
 sprayorgestureitem,#loot_emote_exotic_shared_white_flag
 sprayorgestureitem,#hash_204a5805ee0eb4e1
-sprayorgestureitem,#hash_210628c39deb6c83
+sprayorgestureitem,#loot_emote_exotic_shared_matrix_dodge
 sprayorgestureitem,#loot_emote_wetwork_joker_gun
 sprayorgestureitem,#hash_21c8ff48f7098f22
 sprayorgestureitem,#hash_2394e6538d2d606a
@@ -109657,7 +109657,7 @@ sprayorgestureitem,#hash_4770fad97752a9f2
 sprayorgestureitem,#loot_emote_zapoc_nuke
 sprayorgestureitem,#hash_4a75593b9275f0dd
 sprayorgestureitem,#hash_4b8add27ad045f0c
-sprayorgestureitem,#hash_4c1c89c4dd09c6db
+sprayorgestureitem,#loot_emote_exotic_shared_heres_to_you
 sprayorgestureitem,#hash_4cbbdbd43011b154
 sprayorgestureitem,#loot_emote_exotic_shared_raving_dance
 sprayorgestureitem,#hash_4d99d5eda668a20b
@@ -109666,13 +109666,13 @@ sprayorgestureitem,#hash_4f2a35fabe259c0e
 sprayorgestureitem,#loot_emote_zapoc_roadwarrior_unicycle
 sprayorgestureitem,#hash_51cdc63aa8ed713c
 sprayorgestureitem,#loot_emote_exotic_shared_rock
-sprayorgestureitem,#hash_53e2ef3b00c546d5
+sprayorgestureitem,#loot_emote_exotic_shared_hula_hoop
 sprayorgestureitem,#hash_547e6273fb411af4
 sprayorgestureitem,#hash_5adde89041aa45a2
 sprayorgestureitem,#loot_emote_exotic_shared_mistletoe
 sprayorgestureitem,#loot_emote_exotic_shared_megaphone
 sprayorgestureitem,#hash_60cf517e2b45d8bf
-sprayorgestureitem,#hash_61bc88f336591d1f
+sprayorgestureitem,#loot_emote_exotic_shared_make_it_rain
 sprayorgestureitem,#loot_emote_exotic_shared_fragile
 sprayorgestureitem,#hash_65802de7ac08fb4a
 sprayorgestureitem,#hash_65e1ce15002a2480
@@ -110233,13 +110233,13 @@ sprayorgestureitem,#loot_emote_shared_champagne
 sprayorgestureitem,#hash_182f0e2b31a3c06b
 sprayorgestureitem,#loot_emote_exotic_shared_roman_candle
 sprayorgestureitem,#hash_239159f8bc4004e9
-sprayorgestureitem,#hash_323226006eb23dea
+sprayorgestureitem,#loot_emote_exotic_shared_blowing_bubbles
 sprayorgestureitem,#hash_34b4f11adeaa9a4d
 sprayorgestureitem,#hash_3b21d549ba47f39b
 sprayorgestureitem,#hash_45e60a74488b420c
 sprayorgestureitem,#hash_6199f46fcd6e2fd7
 sprayorgestureitem,#hash_6ae413c421045299
-sprayorgestureitem,#hash_6ed891a49a479e12
+sprayorgestureitem,#loot_emote_shared_male_book_of_hell
 sprayorgestureitem,#loot_emote_shared_brains
 sprayorgestureitem,#loot_emote_exotic_shared_bottle_rocket
 attachmentunique,#hash_4a98e166881303b

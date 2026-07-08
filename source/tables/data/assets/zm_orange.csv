@@ -33002,7 +33002,7 @@ rumble,d#sniper_fire
 rumble,d#grenade_rumble
 rumble,d#grenade_throw
 rumble,#zod_idgun_vortex_interior
-rumble,#hash_5d8a1a68b12dfb24
+rumble,#zm_fasttravel_vortex_rumble
 rumble,d#defaultweapon_fire
 rumble,#zm_mansion_atlas_interact_rumble
 rumble,#zm_shield_damage

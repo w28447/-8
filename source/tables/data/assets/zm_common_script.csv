@@ -183,7 +183,7 @@ scriptparsetree,#scripts/zm_common/trials/zm_trial_magicbox_hunt.gsc
 scriptparsetree,#scripts/zm_common/gametypes/zclassic.csc
 scriptparsetree,#scripts/zm_common/gametypes/zgrief.gsc
 scriptparsetree,#scripts/zm_common/trials/zm_trial_special_enemy.gsc
-scriptparsetree,#hash_3688d332e17e9ac1
+scriptparsetree,#scripts/zm_common/trials/zm_trial_no_missed_shots.gsc
 scriptparsetree,#scripts/zm_common/trials/zm_trial_use_pack_a_punch.gsc
 scriptparsetree,#scripts/zm_common/zm_challenges.gsc
 scriptparsetree,#scripts/zm_common/gametypes/dev.gsc

@@ -56956,7 +56956,7 @@ luafile,#ui/uieditor/menus/aar_t8/levelup/aarlevelupoverlay.lua
 luafile,#hash_1ce9679b2f548619
 luafile,d#ui/uieditor/widgets/social/social_rankiconandranklargecontainer.lua
 luafile,#ui/uieditor/widgets/itemshop/reserves/reserveslootcasebuttoncontainer.lua
-luafile,#hash_1d02d67ea0c5eff1
+luafile,#ui/uieditor/widgets/zmfrontend/laboratory/laboratorylistiteminternal.lua
 luafile,#ui/uieditor/widgets/lobby/common/vodviewerfootercontainer.lua
 luafile,#hash_1d1487b7dc9f92d1
 luafile,#ui/uieditor/menus/lobby/entitlementpopup.lua
@@ -80468,7 +80468,7 @@ weapon,#hero_pineapplegun_mp
 weapon,#bowie_knife_mp
 weapon,#eq_sensor_mp
 weapon,#hero_katana_t8_lv1_mp
-weapon,#hash_62fb4f8a9caa979a
+weapon,#eq_cluster_semtex_mini_grenade_mp
 weapon,#eq_localheal_mp
 weapon,#hash_64bfd08f30c3796f
 weapon,#eq_cluster_semtex_grenade_mp

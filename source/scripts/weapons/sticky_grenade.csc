@@ -26,7 +26,7 @@ function __init__()
     callback::add_weapon_type( #"eq_sticky_grenade", &spawned );
     callback::add_weapon_type( #"eq_sticky_grenade_l2", &spawned );
     callback::add_weapon_type( #"eq_cluster_semtex_grenade", &spawned );
-    callback::add_weapon_type( #"hash_66401df7cd6bf292", &function_6054cc1e );
+    callback::add_weapon_type( #"eq_cluster_semtex_mini_grenade", &minigrenadespawned );
     callback::add_weapon_type( #"sig_bow_explosive", &function_117f61b8 );
     callback::add_weapon_type( #"sig_bow_explosive2", &function_117f61b8 );
     callback::add_weapon_type( #"sig_bow_explosive3", &function_117f61b8 );
@@ -70,7 +70,7 @@ function spawned_arrow( localclientnum )
 // Params 1
 // Checksum 0xffe783d2, Offset: 0x4e8
 // Size: 0x3c
-function function_6054cc1e( localclientnum )
+function minigrenadespawned( localclientnum )
 {
     if ( self isgrenadedud() )
     {

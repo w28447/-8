@@ -900,7 +900,7 @@ function function_43f61cad()
     }
     
     var_45ba344f = function_144a052b( self.archetype );
-    self namespace_9ff9f642::function_520f4da5( var_45ba344f );
+    self namespace_9ff9f642::end_slowdown( var_45ba344f );
     self ai::clear_stun();
 }
 

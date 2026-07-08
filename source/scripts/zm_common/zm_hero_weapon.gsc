@@ -269,7 +269,7 @@ function function_56d2c5d0( n_points )
         if ( self.var_184a3854 >= self.var_9f176816 )
         {
             self.var_184a3854 = 0;
-            level notify( #"hash_159486ad4746f53e", { #e_player:self } );
+            level notify( #"hero_weapon_recharged", { #e_player:self } );
             
             switch ( self.var_72d6f15d )
             {

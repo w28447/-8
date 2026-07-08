@@ -3,7 +3,7 @@ server,#scripts/zm/weapons/zm_weap_bowie.gsc
 server,#scripts/zm_common/bgbs/zm_bgb_pop_shocks.gsc
 server,#scripts/zm/weapons/zm_weap_sticky_grenade.gsc
 server,#scripts/zm/weapons/zm_weap_frag_grenade.gsc
-server,#script_7adbb9939d1dd9bd
+server,#scripts\zm_common\bots\zm_bot_soak_test.gsc
 server,#scripts/zm/powerup/zm_powerup_bonfire_sale.gsc
 server,#scripts/zm/perk/zm_perk_widows_wine.gsc
 server,#scripts/zm/powerup/zm_powerup_bonus_points_player.gsc

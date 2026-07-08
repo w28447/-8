@@ -88,7 +88,7 @@ function on_weapon_fired( weapon )
 // Size: 0x54
 function on_ai_killed( s_params )
 {
-    if ( function_4e923311( s_params.weapon ) )
+    if ( is_ray_gun_mk2v( s_params.weapon ) )
     {
         self clientfield::set( "" + #"ray_gun_mk2v_death", 1 );
     }
@@ -98,7 +98,7 @@ function on_ai_killed( s_params )
 // Params 1
 // Checksum 0x77ed273d, Offset: 0x6a0
 // Size: 0x3c, Type: bool
-function function_4e923311( weapon )
+function is_ray_gun_mk2v( weapon )
 {
     return isdefined( weapon ) && ( weapon == level.w_ray_gun_mk2v || weapon == level.var_5bda3938 );
 }

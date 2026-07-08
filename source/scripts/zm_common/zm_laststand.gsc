@@ -1552,7 +1552,7 @@ function function_8fd9d8b9( e_reviver )
         zm_audio::create_and_play_dialog( #"revive", self.selfrevivevox );
     }
     
-    self notify( #"hash_1fe68a6b935c321d", { #reviver:e_reviver } );
+    self notify( #"revive_success_vo_start", { #reviver:e_reviver } );
     
     if ( !isdefined( self.var_6d772cb ) && !( isdefined( self.var_54cb40e6 ) && self.var_54cb40e6 ) )
     {

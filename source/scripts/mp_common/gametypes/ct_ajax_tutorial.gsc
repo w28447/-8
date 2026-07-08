@@ -417,7 +417,7 @@ function function_f907b408()
     level thread ct_bots::activate_bots( level.var_7b46025.size, #"axis" );
     var_c897b566 = array( #"hash_563e6afd71dd6968" );
     level thread ct_vo::function_14b08e49( var_c897b566, "kill_off_enemies" );
-    level waittill( #"hash_59ab222626525669" );
+    level waittill( #"grenade_objective_complete" );
     ct_vo::function_3ca1b77d();
     ct_vo::function_831e0584( array( #"hash_21e513f28d50977" ) );
     ct_vo::function_3ca1b77d();
@@ -430,7 +430,7 @@ function function_f907b408()
 // Size: 0x1b8
 function function_192a6db2()
 {
-    level endon( #"combattraining_logic_finished", #"hash_59ab222626525669" );
+    level endon( #"combattraining_logic_finished", #"grenade_objective_complete" );
     
     while ( true )
     {
@@ -492,7 +492,7 @@ function function_593bdda2( n_level, var_e8d6f89, var_eed14f5e, var_ec3da253, va
             wait 0.1;
             ct_utils::function_c2a10fc();
             ct_vo::function_3ca1b77d();
-            level notify( #"hash_59ab222626525669" );
+            level notify( #"grenade_objective_complete" );
             return;
         }
         
@@ -590,7 +590,7 @@ function function_593bdda2( n_level, var_e8d6f89, var_eed14f5e, var_ec3da253, va
     
     wait 0.1;
     level.var_7b46025 = undefined;
-    level notify( #"hash_59ab222626525669" );
+    level notify( #"grenade_objective_complete" );
 }
 
 // Namespace ct_ajax_tutorial/ct_ajax_tutorial

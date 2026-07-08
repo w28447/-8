@@ -183,7 +183,7 @@ function private on_player_loadout_changed( eventstruct )
                 self thread function_cb1c46b8( 0 );
             }
             
-            self notify( #"hash_1a22e1dd781f58d6" );
+            self notify( #"spectral_shield_lost" );
         }
     }
 }
@@ -488,7 +488,7 @@ function function_5f950378()
     
     while ( true )
     {
-        s_result = self waittill( #"hash_22a49f7903e394a5", #"hash_1a22e1dd781f58d6", #"weapon_change", #"weapon_change_complete" );
+        s_result = self waittill( #"hash_22a49f7903e394a5", #"spectral_shield_lost", #"weapon_change", #"weapon_change_complete" );
         var_74e62fc6 = self clientfield::get( "" + #"spectral_key_charging" );
         
         if ( ( s_result._notify == "weapon_change" || s_result._notify == "weapon_change_complete" ) && !( isdefined( function_98890cd8( s_result.weapon ) ) && function_98890cd8( s_result.weapon ) ) )
@@ -521,7 +521,7 @@ function function_5f950378()
             self clientfield::set( "" + #"spectral_key_charging", 0 );
         }
         
-        if ( s_result._notify === #"hash_1a22e1dd781f58d6" )
+        if ( s_result._notify === #"spectral_shield_lost" )
         {
             return;
         }
@@ -1886,7 +1886,7 @@ function function_7067b673( origin1, origin2, color )
     {
         switch ( cmd )
         {
-            case #"hash_2346833eb7280698":
+            case #"spectral_shield_charged":
                 foreach ( e_player in level.players )
                 {
                     if ( e_player hasweapon( level.var_4e845c84 ) )

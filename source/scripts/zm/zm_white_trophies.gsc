@@ -97,7 +97,7 @@ function function_f37ba127()
     
     while ( true )
     {
-        waitresult = self waittill( #"hash_13f3f231b45420ef" );
+        waitresult = self waittill( #"mk2_modded" );
         
         if ( waitresult.e_player === self )
         {
@@ -123,7 +123,7 @@ function function_9785ebce()
     
     for ( i = 0; i < 4 ; i++ )
     {
-        level waittill( #"hash_13f3f231b45420ef" );
+        level waittill( #"mk2_modded" );
     }
     
     /#

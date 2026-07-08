@@ -1030,7 +1030,7 @@ function private function_1f04fda( einflictor, eattacker, idamage, idflags, smea
     }
     
     w_cluster = getweapon( #"eq_cluster_semtex_grenade" );
-    var_60350909 = getweapon( #"hash_66401df7cd6bf292" );
+    w_cluster_mini = getweapon( #"eq_cluster_semtex_mini_grenade" );
     w_pineapple = getweapon( #"hero_pineapple_grenade" );
     
     if ( weapon === w_pineapple )
@@ -1041,7 +1041,7 @@ function private function_1f04fda( einflictor, eattacker, idamage, idflags, smea
     {
         self.damagetaken += 1501;
     }
-    else if ( smeansofdeath !== "MOD_IMPACT" && weapon === var_60350909 )
+    else if ( smeansofdeath !== "MOD_IMPACT" && weapon === w_cluster_mini )
     {
         self.damagetaken += 751;
     }

@@ -2,7 +2,7 @@
 2,173643154,#reticle_reflex_7,#reticle,#legendary,0,#,,#reflex,#,#,#,#
 3,166828177,#outfit_global_warpaint_bundle_facepalm,#war_paint_bundle,#rare,1,#,,#,#,#,#,#
 4,171924779,#camo_dlc1_circuitboard,#weapon_camo,#rare,0,#,,#,#ar_standard_t8,#,#,#
-5,137182602,#hash_66b5134cfd603ecb,#palette,#legendary,0,#,,#,#,#pbt_mp_mercenary,#pbt_wz_mercenary,#hash_6128e9cc5d6be1e0
+5,137182602,#outfit_northern_lights_legendary1_ruin,#palette,#legendary,0,#,,#,#,#pbt_mp_mercenary,#pbt_wz_mercenary,#hash_6128e9cc5d6be1e0
 6,137713556,#loot_ui_icon_stickers_chromedout_1_large,#sticker,#common,0,#hash_621537e1d06d356f,,#,#,#,#,#
 7,189271102,#loot_ui_icon_callingcards_space_cowboys_01,#calling_card,#rare,0,#hash_51197481e8e5fe81,,#,#,#,#,#
 8,119320578,#loot_tags_heavenlybodies_01,#tag,#common,0,#hash_1e5720e894805747,,#,#,#,#,#
@@ -58,7 +58,7 @@
 58,149074603,#loot02_ui_icon_stickers_voodoodolls_2,#sticker,#common,0,#hash_574fa5f1241a8ef1,,#,#,#,#,#
 59,191421529,#loot_ui_icon_callingcards_twistedcircus_03,#calling_card,#rare,0,#hash_6246da4e6ac44175,,#,#,#,#,#
 60,171824076,#camo_dlc1_shimmer,#weapon_camo,#legendary,0,#,,#,#ar_standard_t8,#,#,#
-61,185243617,#hash_74dc4960f373fe79,#war_paint_bundle,#rare,1,#,,#,#,#,#,#
+61,185243617,#outfit_global_warpaint_bundle_boogie_man,#war_paint_bundle,#rare,1,#,,#,#,#,#,#
 62,107929095,#loot_tags_cutemonsters_02,#tag,#common,0,#hash_ed09e08d99d601f,,#,#,#,#,#
 63,108722434,#loot_ui_icon_callingcards_twistedcircus_04,#calling_card,#rare,0,#hash_6246da4e6ac44175,,#,#,#,#,#
 64,194606123,#loot02_ui_icon_stickers_voodoodolls_3,#sticker,#common,0,#hash_574fa5f1241a8ef1,,#,#,#,#,#
@@ -82,7 +82,7 @@
 82,115930224,#loot_ui_icon_callingcards_surrealist_landscapes_02,#calling_card,#rare,0,#hash_2623bf11e13f4669,,#,#,#,#,#
 83,186385812,#loot_ui_icon_stickers_graffitiparts_3,#sticker,#common,0,#hash_53cba046466df6b1,,#,#,#,#,#
 84,143578087,#hash_5aa65b4735197695,#tag,#common,0,#hash_14d4d68c01ca5e92,,#,#,#,#,#
-85,163967091,#hash_179f84bcadefba24,#palette,#legendary,0,#,,#,#,#pbt_mp_zero,#pbt_mp_zero,#hash_11f5a53f2508ae78
+85,163967091,#outfit_northern_lights_legendary2_zero,#palette,#legendary,0,#,,#,#,#pbt_mp_zero,#pbt_mp_zero,#hash_11f5a53f2508ae78
 86,182310883,#loot_ui_icon_callingcards_surrealist_landscapes_03,#calling_card,#rare,0,#hash_2623bf11e13f4669,,#,#,#,#,#
 87,143142711,#loot_ui_icon_stickers_graffitiparts_4,#sticker,#common,0,#hash_53cba046466df6b1,,#,#,#,#,#
 88,196833120,#hash_7300f9a5c885bd6f,#palette,#rare,0,#,,#,#,#pbt_mp_engineer,#pbt_wz_engineer,#hash_4a18f917aa0a1d47

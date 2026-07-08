@@ -447,8 +447,8 @@ function function_9b9525e9()
     e_player function_feee3d4f();
     e_player function_eca698c0();
     e_player function_fcc23983();
-    e_player function_235b259b();
-    e_player function_c7bb6e59();
+    e_player tut_fin1();
+    e_player tut_fin2();
     ct_utils::function_9aca2fa0( "ct_endgame" );
     e_player setnormalhealth( 1 );
     e_player ct_vo::function_3ca1b77d();
@@ -1283,7 +1283,7 @@ function function_c0bccc48( _hash )
 // Params 0
 // Checksum 0x42173a94, Offset: 0x56e8
 // Size: 0x1ae
-function function_235b259b()
+function tut_fin1()
 {
     level endoncallback( &function_e73b7704, #"combattraining_logic_finished", #"tut_stop" );
     level.var_8ca3c62 = 7;
@@ -1764,7 +1764,7 @@ function function_bb81bf93( s_loc )
 // Params 0
 // Checksum 0x74e771e7, Offset: 0x7098
 // Size: 0x1d4
-function function_c7bb6e59()
+function tut_fin2()
 {
     level endon( #"combattraining_logic_finished" );
     level.var_8ca3c62 = 8;

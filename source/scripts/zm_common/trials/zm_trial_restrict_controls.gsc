@@ -49,7 +49,7 @@ function private on_begin( var_bd9d962 = #"invert" )
         case #"invert":
             foreach ( player in getplayers() )
             {
-                player clientfield::set_to_player( "" + #"hash_6536ca4fb2858a9f", 1 );
+                player clientfield::set_to_player( "" + #"zm_trial_invert_controls", 1 );
             }
             
             break;
@@ -87,7 +87,7 @@ function private on_end( round_reset )
         case #"invert":
             foreach ( player in getplayers() )
             {
-                player clientfield::set_to_player( "" + #"hash_6536ca4fb2858a9f", 0 );
+                player clientfield::set_to_player( "" + #"zm_trial_invert_controls", 0 );
             }
             
             break;

@@ -1,8 +1,8 @@
 {
-    "name": "#hash_73ece7ad89ad188",
+    "name": "#blundergat_acid_bullet_zm",
     "baseWeapon": "#blundergat_acid_bullet",
     "grenadeWeaponName": "#hash_2f2554ceaa4eaa3f",
-    "soundbank": "#hash_490722a6cb3ab9b2",
+    "soundbank": "#blundergat_acid_bullet_soundbank",
     "worldModelTagRight": "tag_weapon_right",
     "worldModelTagLeft": "tag_weapon_left",
     "stowedModelTag": "tag_stowed_back",

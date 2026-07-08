@@ -5,18 +5,18 @@
 #using scripts\zm_common\zm_trial;
 #using scripts\zm_common\zm_trial_util;
 
-#namespace namespace_ae2d0839;
+#namespace zm_trial_no_missed_shots;
 
-// Namespace namespace_ae2d0839/namespace_ae2d0839
+// Namespace zm_trial_no_missed_shots/zm_trial_no_missed_shots
 // Params 0, eflags: 0x2
 // Checksum 0xf06e91e2, Offset: 0xc8
 // Size: 0x3c
 function autoexec __init__system__()
 {
-    system::register( #"hash_7c9607fd2f57a1c7", &__init__, undefined, undefined );
+    system::register( #"zm_trial_no_missed_shots", &__init__, undefined, undefined );
 }
 
-// Namespace namespace_ae2d0839/namespace_ae2d0839
+// Namespace zm_trial_no_missed_shots/zm_trial_no_missed_shots
 // Params 0
 // Checksum 0x733adc69, Offset: 0x110
 // Size: 0x5c
@@ -27,10 +27,10 @@ function __init__()
         return;
     }
     
-    zm_trial::register_challenge( #"hash_4043192ca121b4d4", &on_begin, &on_end );
+    zm_trial::register_challenge( #"no_missed_shots", &on_begin, &on_end );
 }
 
-// Namespace namespace_ae2d0839/namespace_ae2d0839
+// Namespace zm_trial_no_missed_shots/zm_trial_no_missed_shots
 // Params 1, eflags: 0x4
 // Checksum 0x530b07dd, Offset: 0x178
 // Size: 0x344
@@ -71,7 +71,7 @@ function private on_begin( var_59803fa8 )
     level zm_trial::function_cd75b690( 1 );
 }
 
-// Namespace namespace_ae2d0839/namespace_ae2d0839
+// Namespace zm_trial_no_missed_shots/zm_trial_no_missed_shots
 // Params 1, eflags: 0x4
 // Checksum 0x906c7059, Offset: 0x4c8
 // Size: 0x30c
@@ -113,7 +113,7 @@ function private on_end( round_reset )
     level zm_trial::function_cd75b690( 0 );
 }
 
-// Namespace namespace_ae2d0839/namespace_ae2d0839
+// Namespace zm_trial_no_missed_shots/zm_trial_no_missed_shots
 // Params 1, eflags: 0x4
 // Checksum 0x52b974f6, Offset: 0x7e0
 // Size: 0xf2
@@ -125,7 +125,7 @@ function private on_ai_damage( params )
     }
 }
 
-// Namespace namespace_ae2d0839/namespace_ae2d0839
+// Namespace zm_trial_no_missed_shots/zm_trial_no_missed_shots
 // Params 1, eflags: 0x4
 // Checksum 0x85d9b19d, Offset: 0x8e0
 // Size: 0x1a4
@@ -143,10 +143,10 @@ function private on_weapon_fired( params )
     
     if ( params.weapon.firetype === "Auto Burst" || params.weapon.firetype === "Burst" || params.weapon.firetype === "Full Auto" )
     {
-        self notify( #"hash_593afdd4317784a0" );
+        self notify( #"end_on_rapid_fire" );
     }
     
-    self endon( #"disconnect", #"hash_593afdd4317784a0" );
+    self endon( #"disconnect", #"end_on_rapid_fire" );
     level endon( #"trial_round_end" );
     
     if ( !isdefined( self.var_9979ffd6 ) )
@@ -163,7 +163,7 @@ function private on_weapon_fired( params )
     self function_b33ed7bd();
 }
 
-// Namespace namespace_ae2d0839/namespace_ae2d0839
+// Namespace zm_trial_no_missed_shots/zm_trial_no_missed_shots
 // Params 0
 // Checksum 0x32c9e1d8, Offset: 0xa90
 // Size: 0x7e
@@ -178,17 +178,17 @@ function function_b33ed7bd()
     self.var_9979ffd6 = 0.2;
 }
 
-// Namespace namespace_ae2d0839/namespace_ae2d0839
+// Namespace zm_trial_no_missed_shots/zm_trial_no_missed_shots
 // Params 0
 // Checksum 0x1262f4ea, Offset: 0xb18
 // Size: 0x32, Type: bool
 function is_active()
 {
-    challenge = zm_trial::function_a36e8c38( #"hash_4043192ca121b4d4" );
+    challenge = zm_trial::function_a36e8c38( #"no_missed_shots" );
     return isdefined( challenge );
 }
 
-// Namespace namespace_ae2d0839/namespace_ae2d0839
+// Namespace zm_trial_no_missed_shots/zm_trial_no_missed_shots
 // Params 1, eflags: 0x4
 // Checksum 0xa5498fae, Offset: 0xb58
 // Size: 0xd4
@@ -208,7 +208,7 @@ function private on_player_loadout_changed( s_event )
     }
 }
 
-// Namespace namespace_ae2d0839/missile_fire
+// Namespace zm_trial_no_missed_shots/missile_fire
 // Params 1, eflags: 0x40
 // Checksum 0xccbcc7be, Offset: 0xc38
 // Size: 0xb4

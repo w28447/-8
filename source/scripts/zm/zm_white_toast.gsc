@@ -1416,7 +1416,7 @@ function function_b58e5865()
     level.var_45827161 = [];
     level.func_get_zombie_spawn_delay = &function_61dc1b0;
     level.func_get_delay_between_rounds = &function_f85d3d98;
-    callback::function_74872db6( &function_3d06f24e );
+    callback::on_round_begin( &function_3d06f24e );
     
     if ( isdefined( level.e_weeper ) )
     {

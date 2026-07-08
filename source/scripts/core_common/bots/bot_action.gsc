@@ -37,7 +37,7 @@ function register_actions()
     register_action( #"revive_player", &rank_priority, &revive_player_weight, &revive_player );
     register_action( #"use_gameobject", &rank_priority, &function_3cb4c00e, &use_gameobject );
     register_action( #"switch_to_weapon", &best_stowed_primary_weapon_rank, &switch_to_weapon_weight, &switch_to_weapon );
-    register_action( #"hash_78881ac649c38041", &rank_priority, &function_5647e838, &function_40aa6f87 );
+    register_action( #"look_traversal_end", &rank_priority, &look_traversal_end_weight, &look_traversal_end );
     register_action( #"melee_glass", &current_melee_weapon_rank, &function_abf40e98, &melee_glass );
     register_action( #"melee_enemy", &current_melee_weapon_rank, &melee_enemy_weight, &melee_enemy );
     register_action( #"reload_weapon", &current_weapon_rank, &reload_weapon_weight, &reload_weapon );
@@ -1904,7 +1904,7 @@ function use_gameobject( actionparams )
 // Params 1
 // Checksum 0x48a3621e, Offset: 0x56d0
 // Size: 0x242
-function function_5647e838( actionparams )
+function look_traversal_end_weight( actionparams )
 {
     if ( !isdefined( self.bot.traversal ) )
     {
@@ -1967,7 +1967,7 @@ function function_5647e838( actionparams )
 // Params 1
 // Checksum 0xbba63f64, Offset: 0x5920
 // Size: 0x66
-function function_40aa6f87( actionparams )
+function look_traversal_end( actionparams )
 {
     while ( isdefined( self.bot.traversal ) )
     {

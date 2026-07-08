@@ -55,7 +55,7 @@ function __init__()
     level.var_c8de519d.multikill = &function_19e8b086;
     level.var_c8de519d.var_ec391d55 = &function_3ee91387;
     level.var_7897141a = [];
-    level.var_7897141a[ getweapon( #"hash_66401df7cd6bf292" ) ] = 1;
+    level.var_7897141a[ getweapon( #"eq_cluster_semtex_mini_grenade" ) ] = 1;
     level.var_7897141a[ getweapon( #"swat_grenade_payload" ) ] = 1;
     level.var_ca4ce464 = [];
     level.var_ca4ce464[ getweapon( #"ability_smart_cover" ) ] = 1;
@@ -2486,8 +2486,8 @@ function function_223ff464()
         array::add( marksmanarray, #"gold_any_pistol" );
         array::add( marksmanarray, #"gold_any_shotgun" );
         array::add( marksmanarray, #"gold_any_launcher" );
-        array::add( marksmanarray, #"hash_6c1c399dcbe1af97" );
-        array::add( marksmanarray, #"hash_5630ec40181e1db3" );
+        array::add( marksmanarray, #"diamond_any_primary" );
+        array::add( marksmanarray, #"diamond_any_secondary" );
         array::add( marksmanarray, #"hash_354bfe5c140365bf" );
         array::add( marksmanarray, #"hash_51eff59939399dc9" );
         
@@ -3082,7 +3082,7 @@ function function_2f462ffd( victim, weapon, inflictor, objective )
         }
         else if ( weapon.issignatureweapon )
         {
-            self stats::function_dad108fa( #"hash_6c3172682467122", 1 );
+            self stats::function_dad108fa( #"objective_ekia_specialized_weapon", 1 );
         }
         
         if ( isdefined( weapon.attachments ) && weapon.attachments.size > 2 )

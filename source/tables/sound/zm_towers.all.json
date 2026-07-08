@@ -8557,13 +8557,13 @@
         {
             "value": 136,
             "next": 89,
-            "name": "#hash_f35db774de79d2",
+            "name": "#evt_head_pickup",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_f35db774de79d2",
+                    "name": "#evt_head_pickup",
                     "assetId": "#hash_2bb4e08b59eaf03",
                     "assetFileNameSustain": "#zm_towers.all",
                     "assetIdRelease": "#zm_towers.all",

@@ -537,7 +537,7 @@ function function_c9195d31()
 {
     level endon( #"hash_4e1c4cd8c0b0a609" );
     level endon( #"hash_3ff453a959b4445b" );
-    level.pablo_npc waittill( #"hash_276524e7f5657e50" );
+    level.pablo_npc waittill( #"dumbwaiter_interact_started" );
     
     if ( level.pablo_npc.var_df3d62aa == 10 )
     {

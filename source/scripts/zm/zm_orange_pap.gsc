@@ -116,7 +116,7 @@ function function_f415e4d5()
     
     if ( zm_custom::function_901b751c( #"zmpapenabled" ) == 2 )
     {
-        callback::function_74872db6( &function_88228c58 );
+        callback::on_round_begin( &function_88228c58 );
     }
 }
 
@@ -135,7 +135,7 @@ function private function_88228c58()
         }
     }
     
-    callback::function_50fdac80( &function_88228c58 );
+    callback::remove_on_round_begin( &function_88228c58 );
 }
 
 // Namespace zm_orange_pap/zm_orange_pap

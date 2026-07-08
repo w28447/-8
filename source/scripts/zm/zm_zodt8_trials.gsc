@@ -1,7 +1,7 @@
 #using script_112484f657ccd8b7;
 #using scripts\zm_common\trials\zm_trial_damage_during_movement.gsc;
 #using script_30ba61ad5559c51d;
-#using script_3688d332e17e9ac1;
+#using scripts\zm_common\trials\zm_trial_no_missed_shots.gsc;
 #using script_3c775b8df460b415;
 #using script_444bc5b4fa0fe14f;
 #using script_45993630a26b2d85;

@@ -107,7 +107,7 @@ localizeentry,#hash_375608dd74dad25
 localizeentry,#hash_375618dd74daed8
 localizeentry,d#zombie/points_pickup
 localizeentry,#hash_386935a89ca890f
-localizeentry,d#hash_38a2cf22c48d6c3
+localizeentry,d#menu/camo_loot_zombie_maitai
 localizeentry,#zmweapon/riotshield
 localizeentry,#hash_3ccce9df08b7eb0
 localizeentry,#hash_3d0bedfa0fcd62c
@@ -118,7 +118,7 @@ localizeentry,#hash_3f56df6c0fd5a91
 localizeentry,#hash_409a2e6f0a66c21
 localizeentry,d#hash_40c47b72c083914
 localizeentry,d#hash_41274fb72d5a17e
-localizeentry,d#hash_43b319457bc818e
+localizeentry,d#mpui/camo_active_take_it_personally
 localizeentry,#hash_45a642fca354e50
 localizeentry,#hash_463d9ce9821d55b
 localizeentry,d#mpui/camo_flectarn
@@ -184,7 +184,7 @@ localizeentry,#hash_696244fac94c169
 localizeentry,#hash_6962d4fac94d0b4
 localizeentry,#hash_6962e4fac94d267
 localizeentry,#hash_6962f4fac94d41a
-localizeentry,d#hash_6a9c5353f6e0729
+localizeentry,d#menu/camo_loot_scratchnsniff
 localizeentry,#hash_6ca188776e25e2c
 localizeentry,#hash_6ca1d8776e266ab
 localizeentry,#hash_6ca1e8776e2685e
@@ -255,7 +255,7 @@ localizeentry,#hash_8c5fa6a11aa715e
 localizeentry,#hash_8ca5e58de1b68e8
 localizeentry,#hash_8d0cf7113d296c4
 localizeentry,#hash_9287c8e1fcd850c
-localizeentry,d#hash_9340177dbe3be9f
+localizeentry,d#menu/camo_loot_roadhouse
 localizeentry,#hash_9406c84eb059caf
 localizeentry,#hash_9406d84eb059e62
 localizeentry,#hash_9406e84eb05a015
@@ -271,7 +271,7 @@ localizeentry,#hash_94c91c5eac4c961
 localizeentry,#hash_9628433f14f9cdf
 localizeentry,#hash_9628633f14fa045
 localizeentry,#hash_9628933f14fa55e
-localizeentry,d#hash_963e4c4a1430d25
+localizeentry,d#menu/camo_loot_trifecta
 localizeentry,#hash_97480cf641be132
 localizeentry,#hash_97481cf641be2e5
 localizeentry,#hash_97483cf641be64b
@@ -391,7 +391,7 @@ localizeentry,#hash_e74ddeb9095e2d0
 localizeentry,#hash_e92d94ccd5f8675
 localizeentry,#hash_ed01e635dadf8cb
 localizeentry,d#hash_ee567911dd1ce83
-localizeentry,d#hash_f3011ec9092dca2
+localizeentry,d#menu/camo_loot_circuitboard
 localizeentry,#zombie/item_meat
 localizeentry,d#hash_f60cd1936dfe2ae
 localizeentry,#hash_f842d5baba3b343
@@ -433,7 +433,7 @@ localizeentry,#hash_11376ca636638bcb
 localizeentry,#hash_11376ea636638f31
 localizeentry,d#hash_11416e3dffba8d50
 localizeentry,d#mpui/mk
-localizeentry,d#hash_115f614ac4e9cc5a
+localizeentry,d#menu/camo_loot_fractalized
 localizeentry,d#mpui/ir
 localizeentry,d#mpui/is
 localizeentry,#hash_116be5bed14b80f8
@@ -579,7 +579,7 @@ localizeentry,#hash_176f1bd17af0fe31
 localizeentry,d#hash_17783814d047454c
 localizeentry,#zm_office/location_offices_level1
 localizeentry,#hash_1796d85a4ee770b1
-localizeentry,d#hash_17c0eb37199a2d92
+localizeentry,d#menu/camo_loot_fullsuite
 localizeentry,d#mp/remote_exit
 localizeentry,#hash_17ed87ee54a2082f
 localizeentry,#hash_17ed88ee54a209e2
@@ -604,7 +604,7 @@ localizeentry,d#hash_18841a02137aeede
 localizeentry,#hash_18b5171a4baf94bf
 localizeentry,#hash_18b5191a4baf9825
 localizeentry,#hash_18b51c1a4baf9d3e
-localizeentry,d#hash_18b7797e532aa1bb
+localizeentry,d#menu/camo_loot_goosebumps
 localizeentry,#hash_18dc5e7b0f30359c
 localizeentry,#hash_18dc607b0f303902
 localizeentry,#hash_18dc617b0f303ab5
@@ -789,7 +789,7 @@ localizeentry,#hash_20190f451cc46572
 localizeentry,#hash_201911451cc468d8
 localizeentry,#hash_201912451cc46a8b
 localizeentry,#hash_201914451cc46df1
-localizeentry,d#hash_208eb7d41301aac0
+localizeentry,d#menu/camo_loot_benjamins
 localizeentry,#hash_20d2f530a56927ff
 localizeentry,#hash_20d2f830a5692d18
 localizeentry,#hash_20d2fa30a569307e
@@ -806,7 +806,7 @@ localizeentry,#hash_2173d05aad69fac9
 localizeentry,#hash_2173d95aad6a0a14
 localizeentry,#hash_2173da5aad6a0bc7
 localizeentry,#hash_2173db5aad6a0d7a
-localizeentry,d#hash_21868d247829d827
+localizeentry,d#menu/camo_loot_fearhaze
 localizeentry,d#hash_21ae94021c967d51
 localizeentry,#hash_21bcfdda61b5eaaf
 localizeentry,#hash_21bcfeda61b5ec62
@@ -833,10 +833,10 @@ localizeentry,#hash_22403f43ff20f2db
 localizeentry,#hash_2263dbda274889a4
 localizeentry,#hash_2263ddda27488d0a
 localizeentry,#hash_2263deda27488ebd
-localizeentry,d#hash_226442eca8affe87
+localizeentry,d#menu/camo_loot_seaflake
 localizeentry,d#zombie/trap_locked
 localizeentry,#hash_22a3cebab2a611d0
-localizeentry,d#hash_22ec60cd78b8277f
+localizeentry,d#menu/camo_loot_astronomy
 localizeentry,#hash_22f27d6a208bafb7
 localizeentry,#hash_22f3c5aca0207646
 localizeentry,d#hash_23184906a849ac54
@@ -887,7 +887,7 @@ localizeentry,#hash_24b5872d30479b29
 localizeentry,#hash_24b5922d3047adda
 localizeentry,d#hash_24c9561478db5594
 localizeentry,#hash_2550f10ea5634590
-localizeentry,d#hash_255c9cc584359d0e
+localizeentry,d#menu/camo_loot_shimmer
 localizeentry,#hash_256008961e585529
 localizeentry,#hash_256011961e586474
 localizeentry,#hash_256012961e586627
@@ -898,7 +898,7 @@ localizeentry,#hash_258f60f733c7a181
 localizeentry,d#mpui/elo_desc
 localizeentry,d#menu/no
 localizeentry,d#hash_25d3f454e864bb4a
-localizeentry,d#hash_25edfec743a2fb28
+localizeentry,d#menu/camo_loot_picnic_royale
 localizeentry,#hash_25ef8c0c744ab74c
 localizeentry,#hash_25ef8e0c744abab2
 localizeentry,#hash_25ef8f0c744abc65
@@ -1266,14 +1266,14 @@ localizeentry,#hash_3853e1f6ed61703f
 localizeentry,#hash_3853e2f6ed6171f2
 localizeentry,#hash_3853e7f6ed617a71
 localizeentry,d#hash_38698d6863661eb6
-localizeentry,d#hash_38702abdee3837d0
+localizeentry,d#menu/camo_loot_dinoglyphs
 localizeentry,d#zmui/fmj2_desc
 localizeentry,d#hash_388256f1e5a62d7c
 localizeentry,#hash_38aec412b15daa7f
 localizeentry,#hash_38c7ac2a0cbc49fc
 localizeentry,#hash_38e3259093667f4b
 localizeentry,d#hash_38ed3ff8bccdd054
-localizeentry,d#hash_3916397fbdb60669
+localizeentry,d#menu/camo_loot_streetrace
 localizeentry,#hash_391a404afee2cbc6
 localizeentry,#hash_391a414afee2cd79
 localizeentry,#hash_391a4b4afee2de77
@@ -1309,7 +1309,7 @@ localizeentry,#hash_39fb664567ce8266
 localizeentry,#hash_39fb674567ce8419
 localizeentry,#hash_39fb714567ce9517
 localizeentry,#hash_3a052a4cae42bed1
-localizeentry,d#hash_3a294441722f3c4d
+localizeentry,d#mpui/camo_active_showstopper
 localizeentry,#hash_3a6fa8ae2b669e62
 localizeentry,#hash_3a6faaae2b66a1c8
 localizeentry,#hash_3a6fabae2b66a37b
@@ -1387,8 +1387,8 @@ localizeentry,#hash_3db4d1c56adb44df
 localizeentry,#hash_3db4d3c56adb4845
 localizeentry,#hash_3db4d4c56adb49f8
 localizeentry,d#mpui/tacknife
-localizeentry,d#hash_3de8e053a2e6c69b
-localizeentry,d#hash_3dfd2cf9c5589207
+localizeentry,d#menu/camo_loot_chrysalis
+localizeentry,d#menu/camo_loot_cherryblossom
 localizeentry,#hash_3e044c1e948eb579
 localizeentry,#hash_3e04551e948ec4c4
 localizeentry,#hash_3e04561e948ec677
@@ -1420,7 +1420,7 @@ localizeentry,#hash_3ed1b5026bd13b72
 localizeentry,#hash_3ed1b6026bd13d25
 localizeentry,#hash_3ed1b7026bd13ed8
 localizeentry,d#mpui/gl_desc
-localizeentry,d#hash_3ee20f103a454178
+localizeentry,d#menu/camo_loot_jellymaw
 localizeentry,#hash_3f1c167b8cb0a92e
 localizeentry,#hash_3f1eba1ec81afa60
 localizeentry,#hash_3f1ec71ec81b1077
@@ -1495,7 +1495,7 @@ localizeentry,#hash_41b9a3e20ab837a8
 localizeentry,#hash_41b9a4e20ab8395b
 localizeentry,d#hash_41bd4c5cdc9ef279
 localizeentry,d#mpui/elo
-localizeentry,d#hash_41ed99048f6cb7f0
+localizeentry,d#menu/camo_loot_datamine
 localizeentry,#hash_41f0a0badf1ca529
 localizeentry,d#mpui/damage_desc
 localizeentry,d#hash_420861c64b6e9e7c
@@ -1522,7 +1522,7 @@ localizeentry,#hash_43363ec057035cb6
 localizeentry,#hash_433648c057036db4
 localizeentry,#hash_433649c057036f67
 localizeentry,#hash_43364bc0570372cd
-localizeentry,d#hash_43374b5ab9becdaa
+localizeentry,d#menu/camo_loot_blueup
 localizeentry,#hash_434a72a387bf5b23
 localizeentry,d#mpui/camo_jungletek
 localizeentry,d#menu/playername
@@ -1770,7 +1770,7 @@ localizeentry,d#zmweapon/bowie
 localizeentry,d#hash_4dff11036295b59f
 localizeentry,#hash_4e2495c99a50f326
 localizeentry,d#hash_4e3c597d83bc0cfa
-localizeentry,d#hash_4ecfa703971b8aae
+localizeentry,d#menu/camo_loot_afterglow
 localizeentry,d#mpui/extclip2_desc
 localizeentry,d#hash_4ed6f1ab0cbc899b
 localizeentry,#hash_4eeee0218081870c
@@ -1793,7 +1793,7 @@ localizeentry,d#hash_506621193b404166
 localizeentry,d#mpui/vzoom_desc
 localizeentry,d#hash_507959e59d640b9b
 localizeentry,#hash_5087b62dc9e51d90
-localizeentry,d#hash_50acb81dbe07fbfe
+localizeentry,d#menu/camo_loot_smokeblast
 localizeentry,#hash_50b8da930c8e4516
 localizeentry,#hash_50b8e4930c8e5614
 localizeentry,#hash_50b8e5930c8e57c7
@@ -1895,7 +1895,7 @@ localizeentry,#hash_54e32357ed3b0432
 localizeentry,#hash_54e32557ed3b0798
 localizeentry,#hash_54e32657ed3b094b
 localizeentry,#hash_54e32857ed3b0cb1
-localizeentry,d#hash_54e4fb1367aa3001
+localizeentry,d#menu/camo_loot_megalodon
 localizeentry,#hash_54f41cc63e456fc3
 localizeentry,#hash_5532fc048dc74780
 localizeentry,#hash_55653316f18e1d18
@@ -1965,7 +1965,7 @@ localizeentry,#hash_5818e1d328e246c4
 localizeentry,#hash_5818e3d328e24a2a
 localizeentry,#hash_5818e4d328e24bdd
 localizeentry,d#mpui/steadyaim2_desc
-localizeentry,d#hash_5835ce824db9fc92
+localizeentry,d#menu/camo_loot_bacon
 localizeentry,#hash_589fa8d2f617d640
 localizeentry,#hash_589faad2f617d9a6
 localizeentry,#hash_589fb7d2f617efbd
@@ -2238,7 +2238,7 @@ localizeentry,d#hash_62503932e1d53a87
 localizeentry,d#mpui/reddot
 localizeentry,#hash_626722e23c912fcb
 localizeentry,d#hash_627f640830ae263b
-localizeentry,d#hash_628b6122d68a8d45
+localizeentry,d#menu/camo_loot_america
 localizeentry,d#hash_629d187300caa85d
 localizeentry,#hash_62b38bcbe5e59666
 localizeentry,#hash_62b9f4974de13b76
@@ -2452,7 +2452,7 @@ localizeentry,#hash_6bfbdb2466560614
 localizeentry,#hash_6c1016a92b68ca13
 localizeentry,#hash_6c1017a92b68cbc6
 localizeentry,#hash_6c1021a92b68dcc4
-localizeentry,d#hash_6c1e82cce2e2763e
+localizeentry,d#menu/camo_loot_donuts
 localizeentry,#hash_6c25b48587abb10c
 localizeentry,#hash_6c25b68587abb472
 localizeentry,#hash_6c25b78587abb625
@@ -2495,7 +2495,7 @@ localizeentry,#hash_6e134bc7be197105
 localizeentry,#hash_6e134cc7be1972b8
 localizeentry,#hash_6e134dc7be19746b
 localizeentry,#hash_6e134ec7be19761e
-localizeentry,d#hash_6e155a8da74ae1b6
+localizeentry,d#menu/camo_loot_smooch
 localizeentry,#hash_6e1d873c28de9fc2
 localizeentry,d#mpui/camo_active_objective_kills
 localizeentry,#hash_6e3ce1a9886ad780
@@ -2587,7 +2587,7 @@ localizeentry,#hash_71b2e995646396ef
 localizeentry,#hash_71b2ea95646398a2
 localizeentry,#hash_71b2eb9564639a55
 localizeentry,#hash_71b2ec9564639c08
-localizeentry,d#hash_71bf3704c3ae5a0e
+localizeentry,d#menu/camo_loot_connected
 localizeentry,#hash_71c1529327a1dd3a
 localizeentry,#hash_71c889cf310a58fc
 localizeentry,#hash_71d58f9abb9b506c
@@ -2675,7 +2675,7 @@ localizeentry,d#hash_758d93baadbc199d
 localizeentry,#hash_759fce80168fc70a
 localizeentry,#hash_75a00ad7655d23ab
 localizeentry,#hash_75a70b32107c2848
-localizeentry,d#hash_75c36a6b651e7775
+localizeentry,d#mpui/camo_active_kills_without_dying
 localizeentry,#hash_75c913c86f0c2501
 localizeentry,d#weapon/pistol_topbreak_t8
 localizeentry,#hash_75ff32acbac47fbc
@@ -2735,7 +2735,7 @@ localizeentry,#hash_78282b4104e03fc0
 localizeentry,#hash_78282c4104e04173
 localizeentry,#hash_78282e4104e044d9
 localizeentry,#hash_7828394104e0578a
-localizeentry,d#hash_7833cc16d9fa0749
+localizeentry,d#menu/camo_loot_citrus
 localizeentry,#hash_783dc2cf3412d817
 localizeentry,d#mpui/rf_desc
 localizeentry,#hash_78587394329d9374
@@ -2783,13 +2783,13 @@ localizeentry,d#mpui/speedreloader
 localizeentry,#hash_7a4375969e311723
 localizeentry,d#hash_7a5614b91f27d6ca
 localizeentry,d#mpui/dw_desc
-localizeentry,d#hash_7a780871028530f5
+localizeentry,d#menu/camo_loot_disavowed
 localizeentry,#hash_7a7a39cebf1f088e
 localizeentry,#hash_7a7faeb89ebd2159
 localizeentry,#hash_7a7fb7b89ebd30a4
 localizeentry,#hash_7a7fb8b89ebd3257
 localizeentry,#hash_7a7fb9b89ebd340a
-localizeentry,d#hash_7a899f8fa9163c6e
+localizeentry,d#mpui/camo_active_headshots
 localizeentry,#hash_7aafcf7597fdf674
 localizeentry,#hash_7ad0af6d5cc98782
 localizeentry,d#mpui/rangefinder_desc
@@ -2844,7 +2844,7 @@ localizeentry,d#hash_7d3c5dc68217337a
 localizeentry,#hash_7d3cd67fea75827c
 localizeentry,d#hash_7d3e69af1a992cec
 localizeentry,d#hash_7d438e3fdf01c4dd
-localizeentry,d#hash_7d4c19fb8173c5ee
+localizeentry,d#menu/camo_loot_greengradient
 localizeentry,#hash_7d6885546c703d59
 localizeentry,#hash_7d7b2a9d27cc75a0
 localizeentry,#hash_7db066010310ac0a
@@ -2854,7 +2854,7 @@ localizeentry,#hash_7dee5ea89502be52
 localizeentry,d#hash_7df18b5276f84ca6
 localizeentry,d#hash_7e31505384e0837a
 localizeentry,d#mpui/tacknife_desc
-localizeentry,d#hash_7e6ea41ef4c9afe6
+localizeentry,d#menu/camo_loot_paradise
 localizeentry,#hash_7e8edd2e1e1d64cf
 localizeentry,#hash_7e8ede2e1e1d6682
 localizeentry,#hash_7e8edf2e1e1d6835

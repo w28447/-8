@@ -66,7 +66,7 @@ function __init__()
     callback::on_joined_team( &onplayerjoinedteam );
     callback::on_finalize_initialization( &function_3675de8b );
     callback::on_connect( &onplayerconnect );
-    callback::add_callback( #"hash_425352b435722271", &fx_flesh_hit_neck_fatal );
+    callback::add_callback( #"killstreak_process_assist", &function_cd40bdcf );
     
     /#
         if ( getdvarint( #"scr_cuav_offset_debug", 0 ) )
@@ -80,7 +80,7 @@ function __init__()
 // Params 1
 // Checksum 0x8173a109, Offset: 0x500
 // Size: 0x118
-function fx_flesh_hit_neck_fatal( params )
+function function_cd40bdcf( params )
 {
     foreach ( player in params.players )
     {

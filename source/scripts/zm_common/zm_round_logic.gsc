@@ -1011,8 +1011,8 @@ function round_think( restart = 0 )
     
     setroundsplayed( level.round_number );
     level.var_21e22beb = gettime();
-    zm_trial::function_74872db6();
-    callback::callback( #"hash_6df5348c2fb9a509" );
+    zm_trial::on_round_begin();
+    callback::callback( #"on_round_begin" );
     
     if ( level flag::exists( #"ztcm" ) )
     {
@@ -1194,8 +1194,8 @@ function round_think( restart = 0 )
         }
         
         level flag::clear( "round_reset" );
-        zm_trial::function_74872db6();
-        callback::callback( #"hash_6df5348c2fb9a509" );
+        zm_trial::on_round_begin();
+        callback::callback( #"on_round_begin" );
         array::thread_all( level.players, &zm_blockers::rebuild_barrier_reward_reset );
         level round_over();
         level notify( #"between_round_over" );

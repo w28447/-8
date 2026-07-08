@@ -1486,7 +1486,7 @@ weapon,#tank_robot_launcher_turret_mp
 weapon,#hero_bowlauncher3_mp
 weapon,#killstreak_qrdrone_mp
 weapon,#dog_ai_defaultmelee_mp
-weapon,#hash_17df39d53492b0bf
+weapon,#ac130_main_cannon
 weapon,#sig_buckler_lh_mp
 weapon,#explodable_barrel_mp
 weapon,#briefcase_bomb_mp
@@ -1624,7 +1624,7 @@ weapon,#willy_pete_mp
 weapon,#scavenger_item_mp
 weapon,#pistol_standard_t8_oic_mp
 weapon,#gadget_smart_cover_mp
-weapon,#hash_62fb4f8a9caa979a
+weapon,#eq_cluster_semtex_mini_grenade_mp
 weapon,#amws_launcher_turret_mp_player
 weapon,#spawn_beacon_held_mp
 weapon,#eq_localheal_mp
@@ -7324,7 +7324,7 @@ string,#hash_2e379a9a40b2463
 string,#mpui/fastreload2_desc
 string,#zmui/fmj_desc
 string,#hash_33e497e4d3690fb
-string,#hash_38a2cf22c48d6c3
+string,#menu/camo_loot_zombie_maitai
 string,#hash_39b3a168d543ab3
 string,#hash_3c5ed5229eb6809
 string,#hash_3cb20a2a714ca57
@@ -7332,7 +7332,7 @@ string,#hash_3d13389ee2095bf
 string,#hash_4012b43bf3458a7
 string,#hash_40c47b72c083914
 string,#hash_427a48030202fda
-string,#hash_43b319457bc818e
+string,#mpui/camo_active_take_it_personally
 string,#mp/rampage
 string,#hash_45b19d24273e808
 string,#hash_46099ddc56532a3
@@ -7362,7 +7362,7 @@ string,#hash_625da864ae1f050
 string,#hash_62b4e5d5bbeb380
 string,#mp/flag_returned
 string,#killstreak/dart_inbound
-string,#hash_6a9c5353f6e0729
+string,#menu/camo_loot_scratchnsniff
 string,#mp_ph_sloped
 string,#hash_6d04a35f4ee1b01
 string,#hash_6d618a9f705ba66
@@ -7386,10 +7386,10 @@ string,#hash_86143de86596436
 string,#mp_ph_flash
 string,#hash_870732dcf823d00
 string,#hash_8a60229db7d9f06
-string,#hash_9340177dbe3be9f
+string,#menu/camo_loot_roadhouse
 string,#hash_94c2bd8b788ebca
 string,#weapon/bouncingbetty
-string,#hash_963e4c4a1430d25
+string,#menu/camo_loot_trifecta
 string,#hash_9d6017f6c7829ad
 string,#hash_9e43b70f5fc84ff
 string,#hash_a270385be3632ec
@@ -7437,7 +7437,7 @@ string,#hash_ee567911dd1ce83
 string,#weapon/hero_bowlauncher
 string,#hash_f132b2ca7bae8be
 string,#mp_ph_final_whistle
-string,#hash_f3011ec9092dca2
+string,#menu/camo_loot_circuitboard
 string,#weapon/ar_accurate_t8
 string,#hash_f4e5967478f35b7
 string,#hash_f7acd82f33a667e
@@ -7455,7 +7455,7 @@ string,#hash_10c1ccd08be6e1f9
 string,#hash_10cd4e849e292519
 string,#hash_11416e3dffba8d50
 string,#mpui/mk
-string,#hash_115f614ac4e9cc5a
+string,#menu/camo_loot_fractalized
 string,#mpui/ir
 string,#mpui/is
 string,#mpui/gl
@@ -7517,11 +7517,11 @@ string,#hash_1736a34805e7e1cc
 string,#mpui/suppressed_desc
 string,#hash_176dcb27e4a0b1f4
 string,#hash_17783814d047454c
-string,#hash_17c0eb37199a2d92
+string,#menu/camo_loot_fullsuite
 string,#hash_17c6b0524e578976
 string,#mpui/no_attachment_desc
 string,#mp/change_class_next_spawn
-string,#hash_18b7797e532aa1bb
+string,#menu/camo_loot_goosebumps
 string,#hash_18de6f0d90849315
 string,#mp/match_starting_in
 string,#weapon/radar_shroud
@@ -7581,19 +7581,19 @@ string,#mp/planting_explosive
 string,#killstreak/supply_drop_disarm_hint
 string,#platform/press_to_spawn
 string,#hash_205204fe7ba38950
-string,#hash_208eb7d41301aac0
+string,#menu/camo_loot_benjamins
 string,#mp/capture_koth
 string,#killstreak/ai_tank_inbound
 string,#weapon/hero_lightninggun
 string,#killstreak/capturing_crate
-string,#hash_21868d247829d827
+string,#menu/camo_loot_fearhaze
 string,#hash_21a511b98e1e87eb
 string,#hash_21ed9c8385401f5d
 string,#mp/item_on_respawn
 string,#hash_2221d2449435a643
-string,#hash_226442eca8affe87
+string,#menu/camo_loot_seaflake
 string,#hash_22835225646d5f24
-string,#hash_22ec60cd78b8277f
+string,#menu/camo_loot_astronomy
 string,#weapon/acid_bomb
 string,#hash_23184906a849ac54
 string,#hash_2325be4e764d2cd0
@@ -7615,7 +7615,7 @@ string,#hash_24b56919b50565e0
 string,#hash_24c9561478db5594
 string,#weapon/jammer
 string,#weapon/eq_emp_grenade
-string,#hash_255c9cc584359d0e
+string,#menu/camo_loot_shimmer
 string,#hash_2560bddc064fa7cb
 string,#mp/defend_koth
 string,#hash_257fe3f9f874a989
@@ -7629,7 +7629,7 @@ string,#mp_ph_minigame_second
 string,#hash_25e40595b91b80fc
 string,#hash_25ec105b11a01a2d
 string,#mp/enemy_flag_taken
-string,#hash_25edfec743a2fb28
+string,#menu/camo_loot_picnic_royale
 string,#hash_25fc6c872fa95f5e
 string,#hash_25fd00b5dda353c3
 string,#hash_262142273aedf81a
@@ -7786,11 +7786,11 @@ string,#mp/explosives_recovered_by
 string,#hash_3824d76b4a721017
 string,#mpui/escort_robot_moving
 string,#hash_38698d6863661eb6
-string,#hash_38702abdee3837d0
+string,#menu/camo_loot_dinoglyphs
 string,#zmui/fmj2_desc
 string,#hash_38fddaabf4244c2c
 string,#hash_390cef32b1105c1d
-string,#hash_3916397fbdb60669
+string,#menu/camo_loot_streetrace
 string,#score_decoy_killed
 string,#mpui/killcounter
 string,#hash_3967aa9d33b8058b
@@ -7802,7 +7802,7 @@ string,#mpui/reticle_color_1
 string,#mp_ph_spin_pc
 string,#hash_39ef32192475cedd
 string,#killstreak/earned_radar
-string,#hash_3a294441722f3c4d
+string,#mpui/camo_active_showstopper
 string,#hash_3a9b595d0bf81f13
 string,#hash_3aa47b7b8258ebd2
 string,#hash_3aa97047a8295772
@@ -7832,8 +7832,8 @@ string,#killstreak/planemortar
 string,#zmui/suppressor_desc
 string,#hash_3daf240f47b72da9
 string,#mpui/tacknife
-string,#hash_3de8e053a2e6c69b
-string,#hash_3dfd2cf9c5589207
+string,#menu/camo_loot_chrysalis
+string,#menu/camo_loot_cherryblossom
 string,#mp/target_destroyed
 string,#hash_3e1c84f20dbc93c2
 string,#mp/autobalance_now
@@ -7846,7 +7846,7 @@ string,#mpui/camo_chameleon
 string,#hash_3e9e530155c75666
 string,#weapon/tank_robot
 string,#mpui/gl_desc
-string,#hash_3ee20f103a454178
+string,#menu/camo_loot_jellymaw
 string,#killstreak/rcbomb_hacked
 string,#hash_3f1eb5d28fdd2071
 string,#mpui/is_desc
@@ -7877,7 +7877,7 @@ string,#hash_4194c81053f07918
 string,#mp/gun_prev_level_other
 string,#hash_41df5f0ebdcf8b66
 string,#mpui/elo
-string,#hash_41ed99048f6cb7f0
+string,#menu/camo_loot_datamine
 string,#mpui/damage_desc
 string,#hash_420861c64b6e9e7c
 string,#killstreak/straferun_not_available
@@ -7893,7 +7893,7 @@ string,#mpui/supply
 string,#hash_42fb522d8067c039
 string,#hash_43308bd441c5527f
 string,#hash_4332df24cde68c12
-string,#hash_43374b5ab9becdaa
+string,#menu/camo_loot_blueup
 string,#hash_4343701e06ee1033
 string,#mpui/camo_jungletek
 string,#hash_43759bf8e83e9cdb
@@ -7992,7 +7992,7 @@ string,#killstreak/earned_counteruav
 string,#hash_4eacd78bb7b344fe
 string,#hash_4eb4022a33bb2b6b
 string,#hash_4ebfe875c2651663
-string,#hash_4ecfa703971b8aae
+string,#menu/camo_loot_afterglow
 string,#hash_4ed04f4af886ba7d
 string,#mpui/extclip2_desc
 string,#hash_4ed6f1ab0cbc899b
@@ -8016,7 +8016,7 @@ string,#killstreak/airspace_full
 string,#hash_508f1a5bc110c570
 string,#hash_5097457fdcdb6265
 string,#hash_509dac27c7bd944a
-string,#hash_50acb81dbe07fbfe
+string,#menu/camo_loot_smokeblast
 string,#weapon/tripwire
 string,#mpui/camo_gold
 string,#mission_koth
@@ -8054,7 +8054,7 @@ string,#hash_5479a4673b07ca35
 string,#mpui/extrapellets
 string,#hash_54b4095c481e4186
 string,#mp_ph_showprop
-string,#hash_54e4fb1367aa3001
+string,#menu/camo_loot_megalodon
 string,#dom_a
 string,#dom_b
 string,#dom_c
@@ -8089,7 +8089,7 @@ string,#hash_57fd8dbe2b8c239d
 string,#mp/survivors_eliminated
 string,#hash_5819663f7686fa3c
 string,#mpui/steadyaim2_desc
-string,#hash_5835ce824db9fc92
+string,#menu/camo_loot_bacon
 string,#mp/humiliated
 string,#killstreak/supply_drop_inbound
 string,#hash_5885b4abb984f9df
@@ -8194,7 +8194,7 @@ string,#hash_62503932e1d53a87
 string,#mpui/reddot
 string,#hash_625d17fd42e71819
 string,#hash_627f640830ae263b
-string,#hash_628b6122d68a8d45
+string,#menu/camo_loot_america
 string,#hash_6294dadea114ab41
 string,#hash_629d187300caa85d
 string,#hash_629d4f9c61888a79
@@ -8292,7 +8292,7 @@ string,#mp/friendly_flag_taken
 string,#hash_6bea5c334a4ab164
 string,#weapon/gadget_combat_efficiency
 string,#mp_ph_locked
-string,#hash_6c1e82cce2e2763e
+string,#menu/camo_loot_donuts
 string,#mp_ph_starts_in
 string,#killstreak/helicopter_comlink
 string,#hash_6c8d7834e1591a50
@@ -8309,7 +8309,7 @@ string,#hash_6d8e73150d26a3ea
 string,#hash_6d973e1934818fdc
 string,#hash_6dc62affb1ccee6e
 string,#hash_6dce5987ff1f2c59
-string,#hash_6e155a8da74ae1b6
+string,#menu/camo_loot_smooch
 string,#mpui/camo_active_objective_kills
 string,#mp/explosives_dropped_by
 string,#hash_6e680b15656b935d
@@ -8339,7 +8339,7 @@ string,#mpui/acog
 string,#hash_71659806ee41fcf7
 string,#weapon/pistol_fullauto_t8
 string,#mpui/damage2
-string,#hash_71bf3704c3ae5a0e
+string,#menu/camo_loot_connected
 string,#hash_71cd040e856d2d69
 string,#weapon/pistol_standard_t8
 string,#hash_72184c0d3296c40b
@@ -8371,7 +8371,7 @@ string,#mpui/damage
 string,#hash_758d93baadbc199d
 string,#hash_75a61367f89fc81a
 string,#hash_75c2aca845270377
-string,#hash_75c36a6b651e7775
+string,#mpui/camo_active_kills_without_dying
 string,#hash_75eaa8ffc71cdd9d
 string,#weapon/pistol_topbreak_t8
 string,#hash_762137381466a6de
@@ -8393,7 +8393,7 @@ string,#hash_77fa7edf837436cb
 string,#hash_7804ec43ffd16028
 string,#killstreak/ai_tank_drop
 string,#killstreak/auto_turret_inbound
-string,#hash_7833cc16d9fa0749
+string,#menu/camo_loot_citrus
 string,#mpui/rf_desc
 string,#hash_787413c9e1a647fc
 string,#hash_787416c9e1a64d15
@@ -8414,8 +8414,8 @@ string,#hash_7a2e2caa5f180ee3
 string,#weapon/ultimate_turret
 string,#mpui/speedreloader
 string,#mpui/dw_desc
-string,#hash_7a780871028530f5
-string,#hash_7a899f8fa9163c6e
+string,#menu/camo_loot_disavowed
+string,#mpui/camo_active_headshots
 string,#killstreak/ai_tank_hacked
 string,#hash_7ae3c7f801226d64
 string,#mpui/rangefinder_desc
@@ -8442,7 +8442,7 @@ string,#hash_7d076ea2dc0661a2
 string,#hash_7d2ab288acd31d2a
 string,#hash_7d37cafde0ab4ecd
 string,#hash_7d3e69af1a992cec
-string,#hash_7d4c19fb8173c5ee
+string,#menu/camo_loot_greengradient
 string,#hash_7da128b8b09ee5e3
 string,#hash_7dab5ca446733c72
 string,#mpui/camo_woodlums
@@ -8455,7 +8455,7 @@ string,#hash_7e12d7d88d57c810
 string,#hash_7e28358c078ebb60
 string,#hash_7e31505384e0837a
 string,#mpui/tacknife_desc
-string,#hash_7e6ea41ef4c9afe6
+string,#menu/camo_loot_paradise
 string,#killstreak/hacking_crate
 string,#mp/losing_flag
 string,#hash_7ef28e29f276c2a4
@@ -8465,7 +8465,7 @@ string,#mp_ph_slope
 string,#hash_7f670c9cab084284
 string,#hash_7fcaeb7f148aba86
 string,#hash_7fd496c4cf9ec713
-eventstring,#hash_9ab42b593c66ed
+eventstring,#track_kill_stats
 eventstring,#show_player_profile
 eventstring,#id
 eventstring,#class_smg
@@ -8531,7 +8531,7 @@ eventstring,#player_callout
 eventstring,#draft_complete
 eventstring,#mpl_killstreak_radar
 eventstring,#challenge_complete
-eventstring,#hash_6b67aa04e378d681
+eventstring,#game_update_notification
 eventstring,#class_assault
 eventstring,#hide_player_profile
 eventstring,#custom8

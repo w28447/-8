@@ -2262,7 +2262,7 @@ function function_5ef52c07()
     
     while ( isalive( self ) )
     {
-        s_result = self waittill( #"zone_change", #"hash_20a44fff6b27cb96" );
+        s_result = self waittill( #"zone_change", #"main_quest_step_10_started" );
         
         if ( isalive( self ) && s_result._notify === #"zone_change" )
         {

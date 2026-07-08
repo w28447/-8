@@ -297,7 +297,7 @@ function player_add_points( event, mod, hit_location, e_target, zombie_team, dam
                     scoreevents::processscoreevent( "transform_kill", self, undefined, damage_weapon );
                 }
                 
-                player_points = zombie_utility::get_zombie_var( #"hash_68aa9b4c8de33261" );
+                player_points = zombie_utility::get_zombie_var( #"zombie_score_bonus_transform" );
                 break;
             default:
                 assert( 0, "<dev string:x38>" );

@@ -101,7 +101,7 @@ localizeentry,#hash_373519ba1e3232e
 localizeentry,d#hash_373cd11e79123a2
 localizeentry,#hash_376a194ff413be2
 localizeentry,d#hash_37c0d99e99809ed
-localizeentry,d#hash_38a2cf22c48d6c3
+localizeentry,d#menu/camo_loot_zombie_maitai
 localizeentry,#hash_38d2a6b60fd6018
 localizeentry,d#objectives/dom_score
 localizeentry,d#hash_3ba9d8506bb9afb
@@ -119,7 +119,7 @@ localizeentry,#menu/charm_basketball_william
 localizeentry,d#objectives/dom
 localizeentry,#hash_431b44abc4cae69
 localizeentry,d#challenge/efficiency
-localizeentry,d#hash_43b319457bc818e
+localizeentry,d#mpui/camo_active_take_it_personally
 localizeentry,#hash_444c98bbf9afad5
 localizeentry,d#arena/ranked_play
 localizeentry,#hash_4516bc3828deead
@@ -190,7 +190,7 @@ localizeentry,d#menu/tier_boost
 localizeentry,#hash_688e63483a35418
 localizeentry,#hash_69db6d07c46e748
 localizeentry,d#menu/lb_returns
-localizeentry,d#hash_6a9c5353f6e0729
+localizeentry,d#menu/camo_loot_scratchnsniff
 localizeentry,d#hash_6af779bb9407343
 localizeentry,d#hash_6b5739cdaa9dbfa
 localizeentry,#zmtrials/diamond
@@ -288,12 +288,12 @@ localizeentry,d#mpui/deathmatch
 localizeentry,d#heroes/enforcer_weapon_tips
 localizeentry,d#hash_9113879dca04c51
 localizeentry,#menu/emblem_material_rotation
-localizeentry,d#hash_9340177dbe3be9f
+localizeentry,d#menu/camo_loot_roadhouse
 localizeentry,#hash_9468d4a43a62d12
 localizeentry,d#hash_9496c11029171c7
 localizeentry,d#hash_96084a4d9a6c554
 localizeentry,#hash_962e2316c2c1235
-localizeentry,d#hash_963e4c4a1430d25
+localizeentry,d#menu/camo_loot_trifecta
 localizeentry,#hash_9642346a81daa3c
 localizeentry,d#menu/laboratory
 localizeentry,#menu/emblem_link_layers
@@ -488,7 +488,7 @@ localizeentry,d#hash_f0418298d80e185
 localizeentry,d#hash_f14024e66241b82
 localizeentry,d#hash_f20c8f91381efeb
 localizeentry,d#menu/featured
-localizeentry,d#hash_f3011ec9092dca2
+localizeentry,d#menu/camo_loot_circuitboard
 localizeentry,d#menu/selected
 localizeentry,#hash_f401677693b96d8
 localizeentry,d#hash_f40a939a6ffb377
@@ -543,7 +543,7 @@ localizeentry,#hash_11496b17dc3093f9
 localizeentry,d#mp/host_sucks
 localizeentry,d#mpui/mk
 localizeentry,d#hash_115bf1d94808e922
-localizeentry,d#hash_115f614ac4e9cc5a
+localizeentry,d#menu/camo_loot_fractalized
 localizeentry,d#hash_1162f9f5932fbe6c
 localizeentry,d#mpui/ir
 localizeentry,d#mpui/is
@@ -745,7 +745,7 @@ localizeentry,#menu/ready_up
 localizeentry,d#hash_17bbdb87c62cb98c
 localizeentry,d#hash_17bbdc87c62cbb3f
 localizeentry,d#hash_17bbdd87c62cbcf2
-localizeentry,d#hash_17c0eb37199a2d92
+localizeentry,d#menu/camo_loot_fullsuite
 localizeentry,d#hash_17c31cf00061c818
 localizeentry,d#hash_17c71e5aa2530585
 localizeentry,#hash_17c9d41d120a6ad1
@@ -773,7 +773,7 @@ localizeentry,d#menu/level
 localizeentry,#hash_18836ef77899c469
 localizeentry,#menu/fileshare_deleting
 localizeentry,#menu/current_tier
-localizeentry,d#hash_18b7797e532aa1bb
+localizeentry,d#menu/camo_loot_goosebumps
 localizeentry,d#mp/ctf_overtime_round_2_loser
 localizeentry,#hash_18dc8ecefebf1515
 localizeentry,d#hash_18e8c0862204180a
@@ -993,7 +993,7 @@ localizeentry,d#hash_2071a64c16f44bca
 localizeentry,d#hash_2076197971acef53
 localizeentry,d#objectives/dm_hint
 localizeentry,d#zombie/richtofen
-localizeentry,d#hash_208eb7d41301aac0
+localizeentry,d#menu/camo_loot_benjamins
 localizeentry,d#hash_208fc540b8884f14
 localizeentry,d#heroes/hacker_weapon_tips
 localizeentry,#zmui/special_weapon
@@ -1019,7 +1019,7 @@ localizeentry,d#weapon/hero_lightninggun
 localizeentry,d#hash_216c09bce59c94da
 localizeentry,d#hash_217b9342ef50e005
 localizeentry,#hash_217c33b2f8087f0d
-localizeentry,d#hash_21868d247829d827
+localizeentry,d#menu/camo_loot_fearhaze
 localizeentry,d#hash_218bf56c4998fcb2
 localizeentry,d#hash_21928b3f3fbe816f
 localizeentry,d#menu/controls
@@ -1050,7 +1050,7 @@ localizeentry,d#mp/ctf_overtime_round_2_tie
 localizeentry,#hash_224c54fdcef87dd4
 localizeentry,d#challenge/specialized
 localizeentry,#hash_225f1ac89fa59c9d
-localizeentry,d#hash_226442eca8affe87
+localizeentry,d#menu/camo_loot_seaflake
 localizeentry,d#hash_22654c1dda327657
 localizeentry,d#hash_22654d1dda32780a
 localizeentry,d#hash_22654e1dda3279bd
@@ -1074,7 +1074,7 @@ localizeentry,#menu/move
 localizeentry,d#menu/motd
 localizeentry,d#hash_22e478c9a3ee41c3
 localizeentry,#menu/distance_m
-localizeentry,d#hash_22ec60cd78b8277f
+localizeentry,d#menu/camo_loot_astronomy
 localizeentry,d#hash_22f5cd6c9d5b7484
 localizeentry,d#hash_2303fe8649a07cf1
 localizeentry,d#weapon/acid_bomb
@@ -1148,7 +1148,7 @@ localizeentry,d#objectives/shamrock
 localizeentry,#menu/score_per_minute
 localizeentry,#zmui/rhodium_roundup_title
 localizeentry,#hash_254cc701cbac6851
-localizeentry,d#hash_255c9cc584359d0e
+localizeentry,d#menu/camo_loot_shimmer
 localizeentry,#hash_256cae539ffe6011
 localizeentry,d#hash_257048d9800418d4
 localizeentry,d#hash_257c88f70eb4907f
@@ -1170,7 +1170,7 @@ localizeentry,d#hash_25d76236ffacad0c
 localizeentry,d#hash_25d76336ffacaebf
 localizeentry,d#hash_25d76536ffacb225
 localizeentry,#menu/my_shop
-localizeentry,d#hash_25edfec743a2fb28
+localizeentry,d#menu/camo_loot_picnic_royale
 localizeentry,d#hash_25fc6c872fa95f5e
 localizeentry,d#hash_25fd2c1464e1c556
 localizeentry,d#mp/trophy_system_hacking
@@ -1670,7 +1670,7 @@ localizeentry,#aar/longest_distance_kill
 localizeentry,#menu/charm_paint_shop
 localizeentry,#menu/refresh_caps
 localizeentry,d#hash_38698d6863661eb6
-localizeentry,d#hash_38702abdee3837d0
+localizeentry,d#menu/camo_loot_dinoglyphs
 localizeentry,#menu/damage_minute
 localizeentry,#hash_387bd839c552fe90
 localizeentry,d#zmui/fmj2_desc
@@ -1688,7 +1688,7 @@ localizeentry,d#hash_38fa33de16848bb0
 localizeentry,d#presence/clean
 localizeentry,d#menu/gunsmith_desc
 localizeentry,d#clan/inbox
-localizeentry,d#hash_3916397fbdb60669
+localizeentry,d#menu/camo_loot_streetrace
 localizeentry,d#hash_3921fdcc4a67a525
 localizeentry,d#menu/new
 localizeentry,#hash_393f12745a24670f
@@ -1718,7 +1718,7 @@ localizeentry,d#hash_3a08f8d6796dec18
 localizeentry,#menu/replace_layer
 localizeentry,#hash_3a201c5cba235aa1
 localizeentry,d#hash_3a21c509e26b07a4
-localizeentry,d#hash_3a294441722f3c4d
+localizeentry,d#mpui/camo_active_showstopper
 localizeentry,d#hash_3a322ce6c61298f9
 localizeentry,#menu/purchase_tiers_error
 localizeentry,#hash_3a389192b9c0ad97
@@ -1827,11 +1827,11 @@ localizeentry,d#hash_3dc03beae637fccc
 localizeentry,d#hash_3dc91d57c7ff7cf9
 localizeentry,d#mpui/tacknife
 localizeentry,#hash_3de6a90417a1818a
-localizeentry,d#hash_3de8e053a2e6c69b
+localizeentry,d#menu/camo_loot_chrysalis
 localizeentry,#menu/players_list
 localizeentry,#hash_3df564f24968e2db
 localizeentry,d#presence/ct_crash
-localizeentry,d#hash_3dfd2cf9c5589207
+localizeentry,d#menu/camo_loot_cherryblossom
 localizeentry,#hash_3dff0b6c9e6a2356
 localizeentry,#hash_3e0e37bbb99439f9
 localizeentry,d#clan/members
@@ -1858,7 +1858,7 @@ localizeentry,d#mp/defeat
 localizeentry,#menu/gametype_caps
 localizeentry,d#menu/calling_cards_caps
 localizeentry,d#mpui/gl_desc
-localizeentry,d#hash_3ee20f103a454178
+localizeentry,d#menu/camo_loot_jellymaw
 localizeentry,d#menu/lb_escort_time
 localizeentry,d#menu/leave
 localizeentry,#menu/trial_version_caps
@@ -1946,7 +1946,7 @@ localizeentry,d#zombie/takeo
 localizeentry,d#challenge/gameheroics
 localizeentry,#hash_41e16d05512643bc
 localizeentry,d#mpui/elo
-localizeentry,d#hash_41ed99048f6cb7f0
+localizeentry,d#menu/camo_loot_datamine
 localizeentry,#menu/hashtag
 localizeentry,#hash_41f7c1c4f068b2b9
 localizeentry,#hash_4200b67057602974
@@ -1990,7 +1990,7 @@ localizeentry,#hash_431ff30cb4a2e18f
 localizeentry,d#hash_43239feaffd3a7cb
 localizeentry,#hash_432d390e3ff28b53
 localizeentry,#menu/leaderboard_games_required
-localizeentry,d#hash_43374b5ab9becdaa
+localizeentry,d#menu/camo_loot_blueup
 localizeentry,d#mpui/cash
 localizeentry,d#mpui/camo_jungletek
 localizeentry,d#heroes/brutus
@@ -2144,7 +2144,7 @@ localizeentry,#menu/remove_item
 localizeentry,d#hash_496edb1627c797ee
 localizeentry,#hash_497091f4671710a8
 localizeentry,d#hash_4973da5ba484b2ae
-localizeentry,#hash_497bd69827609591
+localizeentry,#challenge/air_assault
 localizeentry,#menu/bots
 localizeentry,d#hash_49825883266ed51f
 localizeentry,d#hash_49871cce28d2d712
@@ -2200,7 +2200,7 @@ localizeentry,#hash_4b446844ff94c9eb
 localizeentry,#hash_4b489d5e5a067675
 localizeentry,d#hash_4b6618ba8adc8898
 localizeentry,#hash_4b68602edde787af
-localizeentry,d#hash_4b7849c7012717ff
+localizeentry,d#playlist/sas_desc
 localizeentry,d#menu/gestures
 localizeentry,d#hash_4b85c8dc83baccf8
 localizeentry,d#hash_4b87969fdae93020
@@ -2293,7 +2293,7 @@ localizeentry,#hash_4eac4945dcdc2806
 localizeentry,#hash_4eb273c30e06d7ab
 localizeentry,#hash_4ecd9cfb7e38f47d
 localizeentry,d#hash_4ecf043abb22bdd5
-localizeentry,d#hash_4ecfa703971b8aae
+localizeentry,d#menu/camo_loot_afterglow
 localizeentry,d#mpui/extclip2_desc
 localizeentry,d#hash_4ed6f1ab0cbc899b
 localizeentry,#zmui/beryllium_bundle_desc
@@ -2348,7 +2348,7 @@ localizeentry,#hash_5081f9ea80321a05
 localizeentry,#hash_508d9731e71d0d54
 localizeentry,d#hash_508f337171a6135d
 localizeentry,d#hash_509da9197179068f
-localizeentry,d#hash_50acb81dbe07fbfe
+localizeentry,d#menu/camo_loot_smokeblast
 localizeentry,d#hash_50bdfa6845ded90e
 localizeentry,d#objectives/ctf_hint
 localizeentry,d#weapon/tripwire
@@ -2459,7 +2459,7 @@ localizeentry,d#mpui/extrapellets
 localizeentry,d#mp/switching_sides_caps
 localizeentry,d#hash_54d3b6ebc3f0b45c
 localizeentry,#hash_54e1c0a5f7b46f2b
-localizeentry,d#hash_54e4fb1367aa3001
+localizeentry,d#menu/camo_loot_megalodon
 localizeentry,d#zombie/odin
 localizeentry,#hash_54f2d8f7156a5524
 localizeentry,d#hash_5508d91703181d8c
@@ -2545,7 +2545,7 @@ localizeentry,d#mpui/steadyaim2_desc
 localizeentry,#hash_581f48e2025c4244
 localizeentry,d#hash_5828ae232a499144
 localizeentry,#menu/purchase_complete
-localizeentry,d#hash_5835ce824db9fc92
+localizeentry,d#menu/camo_loot_bacon
 localizeentry,#zmui/kills
 localizeentry,#menu/permanently_unlocked
 localizeentry,#hash_5862e9bf360bcc1b
@@ -2843,7 +2843,7 @@ localizeentry,d#menu/previous_page
 localizeentry,d#presence/ct_seraph
 localizeentry,d#hash_627f640830ae263b
 localizeentry,d#hash_62836407c340f042
-localizeentry,d#hash_628b6122d68a8d45
+localizeentry,d#menu/camo_loot_america
 localizeentry,d#hash_628d5565bac0535a
 localizeentry,#hash_6290c31a7c92817f
 localizeentry,d#hash_629796b93fa4abf5
@@ -3131,7 +3131,7 @@ localizeentry,d#hash_6bfa2e4bfa402f0a
 localizeentry,d#hash_6bfa2f4bfa4030bd
 localizeentry,#heroes/schema
 localizeentry,#hash_6c0ffddca009994b
-localizeentry,d#hash_6c1e82cce2e2763e
+localizeentry,d#menu/camo_loot_donuts
 localizeentry,#hash_6c2788ad56251259
 localizeentry,d#hash_6c444da206823f9c
 localizeentry,d#weapon/tr_leveraction_t8
@@ -3194,7 +3194,7 @@ localizeentry,#hash_6df923c238938c67
 localizeentry,#hash_6e00774fa3f4a55d
 localizeentry,#hash_6e0f6940089c0233
 localizeentry,d#hash_6e10ffacdc047919
-localizeentry,d#hash_6e155a8da74ae1b6
+localizeentry,d#menu/camo_loot_smooch
 localizeentry,#hash_6e183cf1f7d46a06
 localizeentry,d#hash_6e29221b4b2bf846
 localizeentry,d#mpui/camo_active_objective_kills
@@ -3305,7 +3305,7 @@ localizeentry,d#hash_71a9db9ee81b9de9
 localizeentry,#menu/prev
 localizeentry,d#presence/ct_prophet
 localizeentry,#hash_71ba81fa79edfb14
-localizeentry,d#hash_71bf3704c3ae5a0e
+localizeentry,d#menu/camo_loot_connected
 localizeentry,d#hash_71cbaf59752af9db
 localizeentry,d#menu/set_incomplete
 localizeentry,d#hash_71da51b1df87a1c0
@@ -3456,7 +3456,7 @@ localizeentry,d#heroes/battery
 localizeentry,#hash_75a5e3ed2b02a33b
 localizeentry,#hash_75ae4bad096c7df3
 localizeentry,d#hash_75c1c72658bffa1f
-localizeentry,d#hash_75c36a6b651e7775
+localizeentry,d#mpui/camo_active_kills_without_dying
 localizeentry,#menu/xp_earned_caps
 localizeentry,d#heroes/reaper_bo3
 localizeentry,d#hash_75d28fb319a7c1e8
@@ -3531,7 +3531,7 @@ localizeentry,d#hash_78157925be50b206
 localizeentry,#hash_7825c39d6059a1bc
 localizeentry,#menu/emblem_unlink_layers
 localizeentry,#hash_7833c3ef026023e0
-localizeentry,d#hash_7833cc16d9fa0749
+localizeentry,d#menu/camo_loot_citrus
 localizeentry,d#hash_783c94cdd7c5587f
 localizeentry,d#hash_783c95cdd7c55a32
 localizeentry,#hash_783ee7a2e9ff3330
@@ -3604,8 +3604,8 @@ localizeentry,d#mpui/speedreloader
 localizeentry,d#mpui/dw_desc
 localizeentry,#hash_7a5fed1eb127f44d
 localizeentry,d#hash_7a6d629fd7cdee28
-localizeentry,d#hash_7a780871028530f5
-localizeentry,d#hash_7a899f8fa9163c6e
+localizeentry,d#menu/camo_loot_disavowed
+localizeentry,d#mpui/camo_active_headshots
 localizeentry,d#objectives/tdm
 localizeentry,d#hash_7a9e949a1ed5792d
 localizeentry,d#platform/emblem_edit_done
@@ -3665,7 +3665,7 @@ localizeentry,d#mp/round_draw
 localizeentry,d#hash_7d3c5dc68217337a
 localizeentry,d#hash_7d3e69af1a992cec
 localizeentry,d#hash_7d438e3fdf01c4dd
-localizeentry,d#hash_7d4c19fb8173c5ee
+localizeentry,d#menu/camo_loot_greengradient
 localizeentry,#menu/equipped
 localizeentry,#hash_7d572b009afca0a4
 localizeentry,#hash_7d5b5c03e55f6fc1
@@ -3699,7 +3699,7 @@ localizeentry,d#hash_7e233f17608287fd
 localizeentry,d#hash_7e31505384e0837a
 localizeentry,#menu/controls_caps
 localizeentry,d#mpui/tacknife_desc
-localizeentry,d#hash_7e6ea41ef4c9afe6
+localizeentry,d#menu/camo_loot_paradise
 localizeentry,d#hash_7e76e2108b7fa967
 localizeentry,d#hash_7e839a39f74bc0a2
 localizeentry,#menu/emblem_apply_changes

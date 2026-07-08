@@ -12803,13 +12803,13 @@
         {
             "value": 994,
             "next": 65535,
-            "name": "#hash_556656930bf32b28",
+            "name": "#evt_chair_light_change",
             "sequence": 0,
             "cullDistance": 3000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_556656930bf32b28",
+                    "name": "#evt_chair_light_change",
                     "assetId": "#hash_4723af13cb4f9829",
                     "assetFileNameSustain": "#zm_escape.all",
                     "assetIdRelease": "#zm_escape.all",
@@ -12848,7 +12848,7 @@
                     "unk178": "#hash_16000a0801"
                 },
                 {
-                    "name": "#hash_556656930bf32b28",
+                    "name": "#evt_chair_light_change",
                     "assetId": "#hash_e0f4f25dd42c344",
                     "assetFileNameSustain": "#zm_escape.all",
                     "assetIdRelease": "#zm_escape.all",
@@ -12887,7 +12887,7 @@
                     "unk178": "#hash_16000a0801"
                 },
                 {
-                    "name": "#hash_556656930bf32b28",
+                    "name": "#evt_chair_light_change",
                     "assetId": "#hash_1a46e82bd4807d1b",
                     "assetFileNameSustain": "#zm_escape.all",
                     "assetIdRelease": "#zm_escape.all",
@@ -16733,13 +16733,13 @@
         {
             "value": 20,
             "next": 189,
-            "name": "#hash_14e38e92efca6db0",
+            "name": "#evt_orb_destroyed",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_14e38e92efca6db0",
+                    "name": "#evt_orb_destroyed",
                     "assetId": "#hash_71e0a62585322dfe",
                     "assetFileNameSustain": "#zm_escape.all",
                     "assetIdRelease": "#zm_escape.all",

@@ -73,7 +73,7 @@
             
             switch ( str_command )
             {
-                case #"hash_78bca375c84177d4":
+                case #"debug_jump1":
                     getplayers()[ 0 ] jump_to( "<dev string:x8eb>" );
                     break;
                 case #"hash_18769c2b6ae60247":

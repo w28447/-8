@@ -3,24 +3,24 @@
 #using scripts\core_common\system_shared;
 #using scripts\core_common\util_shared;
 
-#namespace namespace_8eb9bc0a;
+#namespace zm_bot_soak_test;
 
-// Namespace namespace_8eb9bc0a/namespace_8eb9bc0a
+// Namespace zm_bot_soak_test/zm_bot_soak_test
 // Params 0, eflags: 0x2
 // Checksum 0xadfce61f, Offset: 0xf8
 // Size: 0x3c
 function autoexec __init__system__()
 {
-    system::register( #"hash_6d3c5317001d4fc6", &__init__, undefined, undefined );
+    system::register( #"zm_bot_soak_test", &__init__, undefined, undefined );
 }
 
-// Namespace namespace_8eb9bc0a/namespace_8eb9bc0a
+// Namespace zm_bot_soak_test/zm_bot_soak_test
 // Params 0
 // Checksum 0xdb0786a9, Offset: 0x140
 // Size: 0xbc
 function __init__()
 {
-    setdvar( #"hash_6d3c5317001d4fc6", 0 );
+    setdvar( #"zm_bot_soak_test", 0 );
     
     /#
         adddebugcommand( "<dev string:x38>" );
@@ -40,7 +40,7 @@ function __init__()
     }
 }
 
-// Namespace namespace_8eb9bc0a/namespace_8eb9bc0a
+// Namespace zm_bot_soak_test/zm_bot_soak_test
 // Params 0
 // Checksum 0x125944b0, Offset: 0x208
 // Size: 0x3c4
@@ -103,17 +103,17 @@ function zombie_open_sesame()
     setdvar( #"zombie_unlock_all", 0 );
 }
 
-// Namespace namespace_8eb9bc0a/namespace_8eb9bc0a
+// Namespace zm_bot_soak_test/zm_bot_soak_test
 // Params 0
 // Checksum 0x6235d259, Offset: 0x5d8
 // Size: 0x27a
 function function_97346595()
 {
-    var_2e0b8925 = getdvarint( #"hash_6d3c5317001d4fc6", 0 );
+    var_2e0b8925 = getdvarint( #"zm_bot_soak_test", 0 );
     
     while ( true )
     {
-        new_value = getdvarint( #"hash_6d3c5317001d4fc6", 0 );
+        new_value = getdvarint( #"zm_bot_soak_test", 0 );
         players = getplayers();
         
         if ( new_value )

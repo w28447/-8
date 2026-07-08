@@ -740,13 +740,13 @@ function function_946c1972( eventstruct )
             case #"hash_57892c7b7a106128":
                 zm_devgui::spawn_archetype( "<dev string:x344>" );
                 break;
-            case #"hash_3889ece40febdc1e":
+            case #"skeleton_speed_walk":
                 function_2d69eef6( "<dev string:x36b>" );
                 break;
-            case #"hash_1d61c627e61ca434":
+            case #"skeleton_speed_run":
                 function_2d69eef6( "<dev string:x372>" );
                 break;
-            case #"hash_2a2ceb9249805ca7":
+            case #"skeleton_speed_sprint":
                 function_2d69eef6( "<dev string:x378>" );
                 break;
             default:
