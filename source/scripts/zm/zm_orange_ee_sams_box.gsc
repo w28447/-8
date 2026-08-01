@@ -51,7 +51,7 @@ function main()
     level.var_79260935.a_s_vault_keyholes = struct::get_array( "s_vault_keyhole", "targetname" );
     level.var_79260935.e_vault_defend_blocker = getent( "e_vault_defend_blocker", "targetname" );
     level.var_79260935.s_vault_reward = struct::get( "s_vault_reward", "targetname" );
-    level.var_79260935.var_7ff5dbc4 = struct::get( "facility_vault_door_bundle", "targetname" );
+    level.var_79260935.s_vault_door_bundle = struct::get( "facility_vault_door_bundle", "targetname" );
     zm_sq::register( #"sams_box", #"step_1", #"sams_box_step1", &sams_box_step1_setup, &sams_box_step1_cleanup );
     zm_sq::register( #"sams_box", #"step_2", #"sams_box_step2", &sams_box_step2_setup, &sams_box_step2_cleanup );
     zm_sq::register( #"sams_box", #"step_3", #"sams_box_step3", &sams_box_step3_setup, &sams_box_step3_cleanup );
@@ -102,40 +102,40 @@ function function_ee2edc25()
     level.var_79260935.var_f4c36022 = 0;
     level.var_79260935.var_30df7623 = 0;
     a_s_keycards = struct::get_array( "sam_keycard", "targetname" );
-    var_88f6f50a = [];
-    var_7ab3d884 = [];
+    a_s_keycard_a = [];
+    a_s_keycard_b = [];
     
     foreach ( s_keycard in a_s_keycards )
     {
         if ( s_keycard.script_int === 0 )
         {
-            if ( !isdefined( var_88f6f50a ) )
+            if ( !isdefined( a_s_keycard_a ) )
             {
-                var_88f6f50a = [];
+                a_s_keycard_a = [];
             }
-            else if ( !isarray( var_88f6f50a ) )
+            else if ( !isarray( a_s_keycard_a ) )
             {
-                var_88f6f50a = array( var_88f6f50a );
+                a_s_keycard_a = array( a_s_keycard_a );
             }
             
-            var_88f6f50a[ var_88f6f50a.size ] = s_keycard;
+            a_s_keycard_a[ a_s_keycard_a.size ] = s_keycard;
             continue;
         }
         
-        if ( !isdefined( var_7ab3d884 ) )
+        if ( !isdefined( a_s_keycard_b ) )
         {
-            var_7ab3d884 = [];
+            a_s_keycard_b = [];
         }
-        else if ( !isarray( var_7ab3d884 ) )
+        else if ( !isarray( a_s_keycard_b ) )
         {
-            var_7ab3d884 = array( var_7ab3d884 );
+            a_s_keycard_b = array( a_s_keycard_b );
         }
         
-        var_7ab3d884[ var_7ab3d884.size ] = s_keycard;
+        a_s_keycard_b[ a_s_keycard_b.size ] = s_keycard;
     }
     
     level.var_79260935.a_s_keycards = [];
-    var_986b4af2 = array::random( var_88f6f50a );
+    s_keycard_a = array::random( a_s_keycard_a );
     
     if ( !isdefined( level.var_79260935.a_s_keycards ) )
     {
@@ -146,9 +146,9 @@ function function_ee2edc25()
         level.var_79260935.a_s_keycards = array( level.var_79260935.a_s_keycards );
     }
     
-    level.var_79260935.a_s_keycards[ level.var_79260935.a_s_keycards.size ] = var_986b4af2;
-    arrayremovevalue( var_88f6f50a, var_986b4af2 );
-    var_f3d781b9 = array::random( var_7ab3d884 );
+    level.var_79260935.a_s_keycards[ level.var_79260935.a_s_keycards.size ] = s_keycard_a;
+    arrayremovevalue( a_s_keycard_a, s_keycard_a );
+    s_keycard_b = array::random( a_s_keycard_b );
     
     if ( !isdefined( level.var_79260935.a_s_keycards ) )
     {
@@ -159,8 +159,8 @@ function function_ee2edc25()
         level.var_79260935.a_s_keycards = array( level.var_79260935.a_s_keycards );
     }
     
-    level.var_79260935.a_s_keycards[ level.var_79260935.a_s_keycards.size ] = var_f3d781b9;
-    arrayremovevalue( var_7ab3d884, var_f3d781b9 );
+    level.var_79260935.a_s_keycards[ level.var_79260935.a_s_keycards.size ] = s_keycard_b;
+    arrayremovevalue( a_s_keycard_b, s_keycard_b );
     
     foreach ( s_keycard in level.var_79260935.a_s_keycards )
     {
@@ -168,7 +168,7 @@ function function_ee2edc25()
     }
     
     var_5731429e = [];
-    var_5731429e = arraycombine( var_88f6f50a, var_7ab3d884, 1, 0 );
+    var_5731429e = arraycombine( a_s_keycard_a, a_s_keycard_b, 1, 0 );
     
     foreach ( s_keycard in var_5731429e )
     {
@@ -239,7 +239,7 @@ function function_f83bfaa()
             }
             else
             {
-                e_who thread zm_orange_util::function_51b752a9( #"hash_6b8c87cc827523c2" );
+                e_who thread zm_orange_util::function_51b752a9( #"vox_punchcard_2_insert" );
                 self function_2ec6a1aa();
             }
             
@@ -248,7 +248,7 @@ function function_f83bfaa()
         
         e_who thread zm_orange_util::function_51b752a9( #"vox_punchcard_1_insert" );
         self function_61298be5();
-        e_who thread zm_orange_util::function_51b752a9( #"hash_6b8c87cc827523c2" );
+        e_who thread zm_orange_util::function_51b752a9( #"vox_punchcard_2_insert" );
         self function_2ec6a1aa();
     }
 }
@@ -570,7 +570,7 @@ function sams_box_step5_setup( var_5ea5c94d )
     {
         level thread function_1f269398();
         exploder::exploder( "fxexp_vault_door_facility_steam" );
-        level.var_79260935.var_7ff5dbc4 scene::play( "open" );
+        level.var_79260935.s_vault_door_bundle scene::play( "open" );
         level flag::wait_till( #"vault_unlocked" );
     }
 }
@@ -583,7 +583,7 @@ function sams_box_step5_cleanup( var_5ea5c94d, ended_early )
 {
     if ( var_5ea5c94d || ended_early )
     {
-        level.var_79260935.var_7ff5dbc4 scene::play( "open_fast" );
+        level.var_79260935.s_vault_door_bundle scene::play( "open_fast" );
         level flag::clear( #"infinite_round_spawning" );
         level flag::clear( #"pause_round_timeout" );
         zm_bgb_anywhere_but_here::function_886fce8f( 1 );
@@ -635,10 +635,10 @@ function function_1f269398()
 // Size: 0x168
 function function_b53212e5()
 {
-    var_408fc16d = struct::get_array( "vault_alarm", "targetname" );
+    a_s_vault_alarm = struct::get_array( "vault_alarm", "targetname" );
     wait 2;
     
-    foreach ( alarm in var_408fc16d )
+    foreach ( alarm in a_s_vault_alarm )
     {
         alarm.e_snd = spawn( "script_origin", alarm.origin );
         alarm.e_snd playloopsound( #"evt_vault_alarm" );
@@ -647,7 +647,7 @@ function function_b53212e5()
     
     wait 60;
     
-    foreach ( alarm in var_408fc16d )
+    foreach ( alarm in a_s_vault_alarm )
     {
         alarm.e_snd delete();
     }

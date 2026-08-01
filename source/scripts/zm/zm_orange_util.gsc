@@ -750,7 +750,7 @@ function function_c3d56ed8()
 // Params 2
 // Checksum 0xb4a4e7c3, Offset: 0x2438
 // Size: 0x6c
-function start_zombies_collision_manager( w_pickup, func_cleanup )
+function function_dfa12910( w_pickup, func_cleanup )
 {
     self.w_pickup = w_pickup;
     self.func_cleanup = func_cleanup;

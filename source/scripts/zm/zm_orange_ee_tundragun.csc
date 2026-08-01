@@ -25,7 +25,7 @@ function play_dynamite_explosion_fx( localclientnum, oldval, newval, bnewent, bi
 // Params 7
 // Checksum 0x9b0a4335, Offset: 0x120
 // Size: 0x74
-function function_ee32b1b8( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
+function play_dynamite_zombie_aura_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     util::playfxontag( localclientnum, level._effect[ #"dynamite_zombie_aura" ], self, "j_spine4" );
 }

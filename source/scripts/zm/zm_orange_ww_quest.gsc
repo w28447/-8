@@ -762,7 +762,7 @@ function ww_quest_step10_setup( var_5ea5c94d )
     
     if ( !var_5ea5c94d )
     {
-        s_reward_crate.e_weapon zm_orange_util::start_zombies_collision_manager( getweapon( "ww_tesla_sniper_t8" ), &function_b8f6f344 );
+        s_reward_crate.e_weapon zm_orange_util::function_dfa12910( getweapon( "ww_tesla_sniper_t8" ), &function_b8f6f344 );
         level flag::wait_till( #"ww_weapon_picked_up" );
     }
 }

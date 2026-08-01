@@ -32,7 +32,7 @@
 function init()
 {
     clientfield::register( "scriptmover", "" + #"dynamite_explosion_fx", 24000, 1, "counter" );
-    clientfield::register( "actor", "" + #"hash_6adfdd12c9656e1c", 24000, 1, "int" );
+    clientfield::register( "actor", "" + #"dynamite_zombie_aura_fx", 24000, 1, "int" );
     clientfield::register( "actor", "" + #"dynamite_zombie_explosion_fx", 24000, 1, "counter" );
 }
 
@@ -278,7 +278,7 @@ function function_8427e524()
     level.var_1daa43ee = 0;
     level flag::clear( #"debug_dynamite_zombie" );
     self.var_f3908ae9 = 1;
-    self clientfield::set( "" + #"hash_6adfdd12c9656e1c", 1 );
+    self clientfield::set( "" + #"dynamite_zombie_aura_fx", 1 );
     self function_4baeb885();
     self.ignoremelee = 1;
     self playloopsound( #"hash_494dd6f60ab1e3a8" );
@@ -292,7 +292,7 @@ function function_8427e524()
     
     if ( isdefined( self ) )
     {
-        self clientfield::set( "" + #"hash_6adfdd12c9656e1c", 0 );
+        self clientfield::set( "" + #"dynamite_zombie_aura_fx", 0 );
         
         if ( self.water_damage === 1 )
         {

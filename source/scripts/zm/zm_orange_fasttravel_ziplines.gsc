@@ -104,7 +104,7 @@ function function_53b616a4()
 // Size: 0xce
 function function_6eb4fb79()
 {
-    s_zipline_use = struct::get( self.var_68ae361b, "targetname" );
+    s_zipline_use = struct::get( self.str_zipline_use, "targetname" );
     s_zipline_use.var_508d5a11 = struct::get_array( s_zipline_use.var_10582773, "targetname" );
     s_zipline_use thread function_220a8687();
     s_zipline_use zm_unitrigger::create( &function_e82679f8, 85 );
@@ -256,18 +256,18 @@ function function_665b4fa6()
     self endon( #"zipline_in_place" );
     self.var_191e6b71 = 5;
     
-    if ( self.var_68ae361b == "s_zipline_use_aft_to_beach" )
+    if ( self.str_zipline_use == "s_zipline_use_aft_to_beach" )
     {
-        self.var_3bc09679 = struct::get( "scene_zipline_aft", "targetname" );
+        self.s_zipline_scene = struct::get( "scene_zipline_aft", "targetname" );
     }
-    else if ( self.var_68ae361b == "s_zipline_use_lighthouse_to_fore" )
+    else if ( self.str_zipline_use == "s_zipline_use_lighthouse_to_fore" )
     {
-        self.var_3bc09679 = struct::get( "scene_zipline_fore", "targetname" );
+        self.s_zipline_scene = struct::get( "scene_zipline_fore", "targetname" );
     }
     
-    self.var_3bc09679.play_queue = 0;
+    self.s_zipline_scene.play_queue = 0;
     var_ba7236d5 = 0;
-    self.var_3bc09679 thread function_e76a1a06();
+    self.s_zipline_scene thread function_e76a1a06();
     
     while ( true )
     {
@@ -295,7 +295,7 @@ function function_665b4fa6()
                 
                 if ( var_ba7236d5 % 5 == 0 )
                 {
-                    self.var_3bc09679.play_queue++;
+                    self.s_zipline_scene.play_queue++;
                 }
             }
             
@@ -946,16 +946,16 @@ function function_a393b77f()
                     level flag::set( #"hash_e29d662bb90e4bc" );
                 }
                 
-                if ( s_zipline_crank.var_68ae361b == "<dev string:x77>" )
+                if ( s_zipline_crank.str_zipline_use == "<dev string:x77>" )
                 {
-                    s_zipline_crank.var_3bc09679 = struct::get( "<dev string:x94>", "<dev string:xa8>" );
+                    s_zipline_crank.s_zipline_scene = struct::get( "<dev string:x94>", "<dev string:xa8>" );
                 }
-                else if ( s_zipline_crank.var_68ae361b == "<dev string:xb5>" )
+                else if ( s_zipline_crank.str_zipline_use == "<dev string:xb5>" )
                 {
-                    s_zipline_crank.var_3bc09679 = struct::get( "<dev string:xd8>", "<dev string:xa8>" );
+                    s_zipline_crank.s_zipline_scene = struct::get( "<dev string:xd8>", "<dev string:xa8>" );
                 }
                 
-                s_zipline_crank.var_3bc09679 scene::play( "<dev string:xed>" );
+                s_zipline_crank.s_zipline_scene scene::play( "<dev string:xed>" );
                 linktraversal( s_zipline_crank.var_f316eff6 );
                 s_zipline_crank.var_68a09be4 = 1;
                 s_zipline_crank notify( #"zipline_in_place" );

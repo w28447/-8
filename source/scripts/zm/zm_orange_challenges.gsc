@@ -171,7 +171,7 @@ function function_d3fc7131()
         case #"specimen_storage":
             self.a_s_challenges[ self.a_s_challenges.size ] = init_challenge( 13, 15, 25, #"hash_6ded98ee1bc95925", &function_b40fed60, &function_a4b66a2b, "insta_kill", #"hash_78a6b67ab7d98b2f" );
             self.a_s_challenges[ self.a_s_challenges.size ] = init_challenge( 14, 10, 15, #"hash_6ded95ee1bc9540c", &registersplicestarttraverse, &function_7d030c3d, "hero_weapon_power", #"hash_697d3cc07f8424da" );
-            self.a_s_challenges[ self.a_s_challenges.size ] = init_challenge( 15, 3, 3, #"hash_6ded96ee1bc955bf", &function_a36ace8b, &vox_rounds round, "half_price_traps", #"vox_challenge_two" );
+            self.a_s_challenges[ self.a_s_challenges.size ] = init_challenge( 15, 3, 3, #"hash_6ded96ee1bc955bf", &function_a36ace8b, &function_6884e5b8, "half_price_traps", #"vox_challenge_two" );
             break;
     }
 }
@@ -532,7 +532,7 @@ function function_735037d4()
     self.e_lid waittill( #"rotatedone" );
     self.e_weapon movez( 24, 2 );
     self.e_weapon waittill( #"movedone" );
-    self.e_weapon zm_orange_util::start_zombies_collision_manager( getweapon( "thundergun" ), &function_3e185177 );
+    self.e_weapon zm_orange_util::function_dfa12910( getweapon( "thundergun" ), &function_3e185177 );
 }
 
 // Namespace zm_orange_challenges/zm_orange_challenges
@@ -976,7 +976,7 @@ function function_a36ace8b()
 // Params 0
 // Checksum 0x1df99cfa, Offset: 0x3650
 // Size: 0x34
-function vox_rounds round()
+function function_6884e5b8()
 {
     level endon( #"end_game" );
     self.var_d6578e1f function_8288a87();

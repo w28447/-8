@@ -35,17 +35,17 @@ function main()
     level flag::init( #"freeze_mode" );
     level flag::init( #"all_freeze" );
     zm_audio::sndannouncervoxadd( #"freeze_mode", #"vox_freeze_mode" );
-    level.var_50c3a25b = getentarray( "freeze_mode_ice", "targetname" );
+    level.a_e_freeze_mode_ice = getentarray( "freeze_mode_ice", "targetname" );
     
-    foreach ( ice in level.var_50c3a25b )
+    foreach ( ice in level.a_e_freeze_mode_ice )
     {
         ice hide();
         ice notsolid();
     }
     
-    level.var_c422a9ae = getentarray( "freeze_mode_blockers", "targetname" );
+    level.a_e_freeze_mode_barrier = getentarray( "freeze_mode_blockers", "targetname" );
     
-    foreach ( barrier in level.var_c422a9ae )
+    foreach ( barrier in level.a_e_freeze_mode_barrier )
     {
         barrier notsolid();
     }
@@ -105,13 +105,13 @@ function freeze_quest_cleanup( var_a276c861, var_19e802fa )
         }
     }
     
-    foreach ( ice in level.var_50c3a25b )
+    foreach ( ice in level.a_e_freeze_mode_ice )
     {
         ice show();
         ice solid();
     }
     
-    foreach ( barrier in level.var_c422a9ae )
+    foreach ( barrier in level.a_e_freeze_mode_barrier )
     {
         barrier solid();
         barrier disconnectpaths();
@@ -146,17 +146,17 @@ function function_1aab918f()
 function function_1bb74851()
 {
     self.var_e1257157 = 0;
-    self.var_adf5d9b4 = [];
-    self.var_adf5d9b4[ #"zm_orange/location_lighthouse_cove" ] = 0;
-    self.var_adf5d9b4[ #"zm_orange/location_beach" ] = 0;
-    self.var_adf5d9b4[ #"zm_orange/location_cargo_hold" ] = 0;
-    self.var_adf5d9b4[ #"zm_orange/location_artifact_storage" ] = 0;
-    self.var_adf5d9b4[ #"zm_orange/location_frozen_crevasse" ] = 0;
-    self.var_adf5d9b4[ #"zm_orange/location_hidden_path" ] = 0;
-    self.var_adf5d9b4[ #"zm_orange/location_ice_grotto" ] = 0;
-    self.var_adf5d9b4[ #"zm_orange/location_docks" ] = 0;
-    self.var_adf5d9b4[ #"zm_orange/location_lagoon" ] = 0;
-    self.var_adf5d9b4[ #"zm_orange/location_sunken_path" ] = 0;
+    self.a_freeze_locations = [];
+    self.a_freeze_locations[ #"zm_orange/location_lighthouse_cove" ] = 0;
+    self.a_freeze_locations[ #"zm_orange/location_beach" ] = 0;
+    self.a_freeze_locations[ #"zm_orange/location_cargo_hold" ] = 0;
+    self.a_freeze_locations[ #"zm_orange/location_artifact_storage" ] = 0;
+    self.a_freeze_locations[ #"zm_orange/location_frozen_crevasse" ] = 0;
+    self.a_freeze_locations[ #"zm_orange/location_hidden_path" ] = 0;
+    self.a_freeze_locations[ #"zm_orange/location_ice_grotto" ] = 0;
+    self.a_freeze_locations[ #"zm_orange/location_docks" ] = 0;
+    self.a_freeze_locations[ #"zm_orange/location_lagoon" ] = 0;
+    self.a_freeze_locations[ #"zm_orange/location_sunken_path" ] = 0;
 }
 
 // Namespace zm_orange_ee_freeze_mode/zm_orange_ee_freeze_mode
@@ -165,12 +165,12 @@ function function_1bb74851()
 // Size: 0x8c
 function function_3931c78()
 {
-    if ( isdefined( self.var_adf5d9b4[ self.var_5417136 ] ) && !self.var_adf5d9b4[ self.var_5417136 ] )
+    if ( isdefined( self.a_freeze_locations[ self.var_5417136 ] ) && !self.a_freeze_locations[ self.var_5417136 ] )
     {
-        self.var_adf5d9b4[ self.var_5417136 ] = 1;
+        self.a_freeze_locations[ self.var_5417136 ] = 1;
         self.var_e1257157++;
         
-        if ( self.var_e1257157 >= self.var_adf5d9b4.size )
+        if ( self.var_e1257157 >= self.a_freeze_locations.size )
         {
             level flag::set( #"all_freeze" );
         }

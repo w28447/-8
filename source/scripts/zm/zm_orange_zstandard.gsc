@@ -641,16 +641,16 @@ function function_80a9077f()
                 level flag::set( #"hash_e29d662bb90e4bc" );
             }
             
-            if ( s_zipline_crank.var_68ae361b == "s_zipline_use_aft_to_beach" )
+            if ( s_zipline_crank.str_zipline_use == "s_zipline_use_aft_to_beach" )
             {
-                s_zipline_crank.var_3bc09679 = struct::get( "scene_zipline_aft", "targetname" );
+                s_zipline_crank.s_zipline_scene = struct::get( "scene_zipline_aft", "targetname" );
             }
-            else if ( s_zipline_crank.var_68ae361b == "s_zipline_use_lighthouse_to_fore" )
+            else if ( s_zipline_crank.str_zipline_use == "s_zipline_use_lighthouse_to_fore" )
             {
-                s_zipline_crank.var_3bc09679 = struct::get( "scene_zipline_fore", "targetname" );
+                s_zipline_crank.s_zipline_scene = struct::get( "scene_zipline_fore", "targetname" );
             }
             
-            s_zipline_crank.var_3bc09679 thread scene::play( "move_down_9" );
+            s_zipline_crank.s_zipline_scene thread scene::play( "move_down_9" );
             s_zipline_crank.var_68a09be4 = 1;
             s_zipline_crank notify( #"zipline_in_place" );
         }

@@ -5,7 +5,7 @@
 #general,#gib,#vox_gib_zombie,50,0,TRUE,TRUE,FALSE,FALSE
 #revive,#down,#vox_revive_down,0,0,FALSE,FALSE,FALSE,TRUE
 #revive,#support,#vox_revive_support,0,0,FALSE,FALSE,FALSE,TRUE
-#revive,#up,#hash_600ae1105d71b666,0,0,FALSE,FALSE,FALSE,TRUE
+#revive,#up,#vox_revive_thanks,0,0,FALSE,FALSE,FALSE,TRUE
 #revive,#self,#vox_revive_self,0,0,FALSE,FALSE,FALSE,TRUE
 #ammo,#buy,#vox_ammo_buy,0,0,TRUE,FALSE,FALSE,FALSE
 #ammo,#low,#vox_ammo_low,0,10,FALSE,FALSE,FALSE,FALSE

@@ -62,14 +62,14 @@ function main()
     zm_sq::register( #"jump_scare_note", #"step_1", #"hash_2572fbc6efde23a8", &jump_scare_note, &function_ee63b8a7 );
     zm_sq::register( #"trinket_tincture", #"step_1", #"trinket_quest", &trinket_quest, &trinket_quest_cleanup );
     zm_sq::register( #"edge_of_the_world", #"step_1", #"edge_quest", &edge_quest, &edge_quest_cleanup );
-    zm_sq::register( #"edge_of_the_world", #"step_2", #"edge_quest", &function_8bc27fd3, &security_balcony_time_ );
+    zm_sq::register( #"edge_of_the_world", #"step_2", #"edge_quest", &function_8bc27fd3, &function_f2bde2d9 );
     level.e_edge_spot = getent( "edge_flinger_spot", "targetname" );
     level flag::init( #"hash_72bd35eacb1940de" );
     level flag::init( #"hash_59d5ba61f4b8f405" );
-    zm_sq::register( #"hash_66685502a7dee586", #"step_1", #"hash_66685502a7dee586", &function_a589e722, &function_239ae2e1 );
-    zm_sq::register( #"hash_3e4c279707a5abe5", #"step_1", #"hash_3e4c279707a5abe5", &function_594f2c26, &function_5c6d5a0e );
-    zm_sq::start( #"hash_66685502a7dee586", !zm_utility::is_standard() );
-    zm_sq::start( #"hash_3e4c279707a5abe5", !zm_utility::is_standard() );
+    zm_sq::register( #"flinger_quest_boat", #"step_1", #"flinger_quest_boat", &flinger_quest_boat, &flinger_quest_boat_cleanup );
+    zm_sq::register( #"flinger_quest_facility", #"step_1", #"flinger_quest_facility", &flinger_quest_facility, &flinger_quest_facility_cleanup );
+    zm_sq::start( #"flinger_quest_boat", !zm_utility::is_standard() );
+    zm_sq::start( #"flinger_quest_facility", !zm_utility::is_standard() );
     level flag::init( #"hidden_song_2_activated" );
     function_779045();
     
@@ -102,12 +102,12 @@ function function_779045()
     level.var_d2ed4be7 = array( #"zombie" );
     level.a_e_trinkets = getentarray( "sq_trinket", "targetname" );
     level.a_e_trinkets = array::sort_by_script_int( level.a_e_trinkets, 1 );
-    level.var_b4b3ecd1 = struct::get( "sq_trinket_shrine", "targetname" );
-    level.var_b4b3ecd1.n_collected = 0;
-    level.var_b4b3ecd1.a_e_trinkets = getentarray( "sq_trinket_placed", "targetname" );
-    level.var_b4b3ecd1.a_e_trinkets = array::sort_by_script_int( level.var_b4b3ecd1.a_e_trinkets, 1 );
+    level.s_trinket_shrine = struct::get( "sq_trinket_shrine", "targetname" );
+    level.s_trinket_shrine.n_collected = 0;
+    level.s_trinket_shrine.a_e_trinkets = getentarray( "sq_trinket_placed", "targetname" );
+    level.s_trinket_shrine.a_e_trinkets = array::sort_by_script_int( level.s_trinket_shrine.a_e_trinkets, 1 );
     
-    foreach ( e_trinket in level.var_b4b3ecd1.a_e_trinkets )
+    foreach ( e_trinket in level.s_trinket_shrine.a_e_trinkets )
     {
         e_trinket hide();
         e_trinket.b_pickedup = 0;
@@ -121,8 +121,8 @@ function function_779045()
 // Size: 0x10c
 function trinket_quest( var_a276c861 )
 {
-    level.var_b4b3ecd1 zm_unitrigger::create( "", 64 );
-    level.var_b4b3ecd1 thread function_abf8d5ce();
+    level.s_trinket_shrine zm_unitrigger::create( "", 64 );
+    level.s_trinket_shrine thread function_abf8d5ce();
     
     foreach ( e_trinket in level.a_e_trinkets )
     {
@@ -158,7 +158,7 @@ function trinket_think()
         
         if ( pap_lock flag::get( "Pack_A_Punch_on" ) )
         {
-            level.var_b4b3ecd1.a_e_trinkets[ self.script_int ].b_pickedup = 1;
+            level.s_trinket_shrine.a_e_trinkets[ self.script_int ].b_pickedup = 1;
             self playsound( "zmb_trinket_pickup" );
             e_who playrumbleonentity( "zm_office_drawer_rumble" );
             self hide();
@@ -226,7 +226,7 @@ function trinket_quest_cleanup( var_a276c861, var_19e802fa )
             e_trinket hide();
         }
         
-        foreach ( e_trinket in level.var_b4b3ecd1.a_e_trinkets )
+        foreach ( e_trinket in level.s_trinket_shrine.a_e_trinkets )
         {
             e_trinket show();
             e_trinket.b_pickedup = 1;
@@ -400,7 +400,7 @@ function function_8b0417eb()
 {
     if ( !zm_utility::is_standard() )
     {
-        drop_point = level.var_b4b3ecd1.origin - ( 0, 0, 20 );
+        drop_point = level.s_trinket_shrine.origin - ( 0, 0, 20 );
         level thread zm_powerups::specific_powerup_drop( "free_perk", drop_point, undefined, 0.1, undefined, 1 );
     }
 }
@@ -455,7 +455,7 @@ function function_ea04cfd2()
 // Params 1
 // Checksum 0xc9ed6278, Offset: 0x1b00
 // Size: 0x1c4
-function function_a589e722( var_5ea5c94d )
+function flinger_quest_boat( var_5ea5c94d )
 {
     level endon( #"end_game" );
     
@@ -483,7 +483,7 @@ function function_a589e722( var_5ea5c94d )
 // Params 2
 // Checksum 0x3ad2d803, Offset: 0x1cd0
 // Size: 0x44
-function function_239ae2e1( var_5ea5c94d, ended_early )
+function flinger_quest_boat_cleanup( var_5ea5c94d, ended_early )
 {
     if ( var_5ea5c94d || ended_early )
     {
@@ -601,7 +601,7 @@ function function_1856c416()
 // Params 1
 // Checksum 0xc0d8eed8, Offset: 0x2270
 // Size: 0x1c4
-function function_594f2c26( var_5ea5c94d )
+function flinger_quest_facility( var_5ea5c94d )
 {
     level endon( #"end_game" );
     
@@ -629,7 +629,7 @@ function function_594f2c26( var_5ea5c94d )
 // Params 2
 // Checksum 0xe17527de, Offset: 0x2440
 // Size: 0x44
-function function_5c6d5a0e( var_5ea5c94d, ended_early )
+function flinger_quest_facility_cleanup( var_5ea5c94d, ended_early )
 {
     if ( var_5ea5c94d || ended_early )
     {
@@ -1054,7 +1054,7 @@ function function_8bc27fd3( var_5ea5c94d )
 // Params 2
 // Checksum 0x2085ba10, Offset: 0x3828
 // Size: 0xd0
-function security_balcony_time_( var_5ea5c94d, ended_early )
+function function_f2bde2d9( var_5ea5c94d, ended_early )
 {
     if ( var_5ea5c94d || ended_early )
     {

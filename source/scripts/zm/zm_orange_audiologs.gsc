@@ -152,7 +152,7 @@ function pickup_reel( e_item, e_player )
 // Params 0
 // Checksum 0x85841818, Offset: 0xa10
 // Size: 0x114
-function doa_streak_udem()
+function function_59bbea8d()
 {
     self endon( #"death" );
     n_id = level.s_audiologs.s_reels.n_played;
@@ -189,7 +189,7 @@ function function_62fea2fe()
     while ( true )
     {
         self waittill( #"trigger_activated" );
-        self doa_streak_udem();
+        self function_59bbea8d();
     }
 }
 

@@ -2186,33 +2186,33 @@ function function_de0d6843( localclientnum, a_ents )
 // Params 4
 // Checksum 0xf8504865, Offset: 0xa358
 // Size: 0x60c
-function setup_bottles( localclientnum, var_56448842, var_cf59fa73, var_bb17d1ef )
+function setup_bottles( localclientnum, e_bottle_1, e_bottle_2, e_bottle_3 )
 {
     function_6198ffc( 5, 0 );
-    var_56448842.mdl_bottle = util::spawn_model( localclientnum, "tag_origin", var_56448842 gettagorigin( "bottle_01_link_jnt" ), var_56448842 gettagangles( "bottle_01_link_jnt" ) );
-    var_56448842.mdl_tube = util::spawn_model( localclientnum, level.var_49f26c00.var_13123ed2, var_56448842 gettagorigin( "bottle_01_link_jnt" ), var_56448842 gettagangles( "bottle_01_link_jnt" ) );
-    var_56448842.mdl_lid = util::spawn_model( localclientnum, #"hash_cbaf587ef8564b8", var_56448842 gettagorigin( "bottlecap_01_link_jnt" ), var_56448842 gettagangles( "bottlecap_01_link_jnt" ) );
-    var_cf59fa73.mdl_bottle = util::spawn_model( localclientnum, "tag_origin", var_cf59fa73 gettagorigin( "bottle_02_link_jnt" ), var_cf59fa73 gettagangles( "bottle_02_link_jnt" ) );
-    var_cf59fa73.mdl_tube = util::spawn_model( localclientnum, level.var_49f26c00.var_13123ed2, var_cf59fa73 gettagorigin( "bottle_02_link_jnt" ), var_cf59fa73 gettagangles( "bottle_02_link_jnt" ) );
-    var_cf59fa73.mdl_lid = util::spawn_model( localclientnum, #"hash_cbaf587ef8564b8", var_cf59fa73 gettagorigin( "bottlecap_02_link_jnt" ), var_cf59fa73 gettagangles( "bottlecap_02_link_jnt" ) );
-    var_bb17d1ef.mdl_bottle = util::spawn_model( localclientnum, "tag_origin", var_bb17d1ef gettagorigin( "bottle_03_link_jnt" ), var_bb17d1ef gettagangles( "bottle_03_link_jnt" ) );
-    var_bb17d1ef.mdl_tube = util::spawn_model( localclientnum, level.var_49f26c00.var_13123ed2, var_bb17d1ef gettagorigin( "bottle_03_link_jnt" ), var_bb17d1ef gettagangles( "bottle_03_link_jnt" ) );
-    var_bb17d1ef.mdl_lid = util::spawn_model( localclientnum, #"hash_cbaf587ef8564b8", var_bb17d1ef gettagorigin( "bottlecap_03_link_jnt" ), var_bb17d1ef gettagangles( "bottlecap_03_link_jnt" ) );
-    var_56448842.mdl_bottle linkto( var_56448842, "bottle_01_link_jnt" );
-    var_cf59fa73.mdl_bottle linkto( var_cf59fa73, "bottle_02_link_jnt" );
-    var_bb17d1ef.mdl_bottle linkto( var_bb17d1ef, "bottle_03_link_jnt" );
-    var_56448842.mdl_tube linkto( var_56448842, "bottle_01_link_jnt" );
-    var_cf59fa73.mdl_tube linkto( var_cf59fa73, "bottle_02_link_jnt" );
-    var_bb17d1ef.mdl_tube linkto( var_bb17d1ef, "bottle_03_link_jnt" );
-    var_56448842.mdl_lid linkto( var_56448842, "bottlecap_01_link_jnt" );
-    var_cf59fa73.mdl_lid linkto( var_cf59fa73, "bottlecap_02_link_jnt" );
-    var_bb17d1ef.mdl_lid linkto( var_bb17d1ef, "bottlecap_03_link_jnt" );
-    var_56448842.mdl_bottle setmodel( level.var_49f26c00.var_6138b381 );
-    var_cf59fa73.mdl_bottle setmodel( level.var_49f26c00.var_887781fe );
-    var_bb17d1ef.mdl_bottle setmodel( level.var_49f26c00.var_84c77a9e );
-    var_56448842.mdl_tube setmodel( level.var_49f26c00.var_13123ed2 );
-    var_cf59fa73.mdl_tube setmodel( level.var_49f26c00.var_13123ed2 );
-    var_bb17d1ef.mdl_tube setmodel( level.var_49f26c00.var_13123ed2 );
+    e_bottle_1.mdl_bottle = util::spawn_model( localclientnum, "tag_origin", e_bottle_1 gettagorigin( "bottle_01_link_jnt" ), e_bottle_1 gettagangles( "bottle_01_link_jnt" ) );
+    e_bottle_1.mdl_tube = util::spawn_model( localclientnum, level.var_49f26c00.var_13123ed2, e_bottle_1 gettagorigin( "bottle_01_link_jnt" ), e_bottle_1 gettagangles( "bottle_01_link_jnt" ) );
+    e_bottle_1.mdl_lid = util::spawn_model( localclientnum, #"hash_cbaf587ef8564b8", e_bottle_1 gettagorigin( "bottlecap_01_link_jnt" ), e_bottle_1 gettagangles( "bottlecap_01_link_jnt" ) );
+    e_bottle_2.mdl_bottle = util::spawn_model( localclientnum, "tag_origin", e_bottle_2 gettagorigin( "bottle_02_link_jnt" ), e_bottle_2 gettagangles( "bottle_02_link_jnt" ) );
+    e_bottle_2.mdl_tube = util::spawn_model( localclientnum, level.var_49f26c00.var_13123ed2, e_bottle_2 gettagorigin( "bottle_02_link_jnt" ), e_bottle_2 gettagangles( "bottle_02_link_jnt" ) );
+    e_bottle_2.mdl_lid = util::spawn_model( localclientnum, #"hash_cbaf587ef8564b8", e_bottle_2 gettagorigin( "bottlecap_02_link_jnt" ), e_bottle_2 gettagangles( "bottlecap_02_link_jnt" ) );
+    e_bottle_3.mdl_bottle = util::spawn_model( localclientnum, "tag_origin", e_bottle_3 gettagorigin( "bottle_03_link_jnt" ), e_bottle_3 gettagangles( "bottle_03_link_jnt" ) );
+    e_bottle_3.mdl_tube = util::spawn_model( localclientnum, level.var_49f26c00.var_13123ed2, e_bottle_3 gettagorigin( "bottle_03_link_jnt" ), e_bottle_3 gettagangles( "bottle_03_link_jnt" ) );
+    e_bottle_3.mdl_lid = util::spawn_model( localclientnum, #"hash_cbaf587ef8564b8", e_bottle_3 gettagorigin( "bottlecap_03_link_jnt" ), e_bottle_3 gettagangles( "bottlecap_03_link_jnt" ) );
+    e_bottle_1.mdl_bottle linkto( e_bottle_1, "bottle_01_link_jnt" );
+    e_bottle_2.mdl_bottle linkto( e_bottle_2, "bottle_02_link_jnt" );
+    e_bottle_3.mdl_bottle linkto( e_bottle_3, "bottle_03_link_jnt" );
+    e_bottle_1.mdl_tube linkto( e_bottle_1, "bottle_01_link_jnt" );
+    e_bottle_2.mdl_tube linkto( e_bottle_2, "bottle_02_link_jnt" );
+    e_bottle_3.mdl_tube linkto( e_bottle_3, "bottle_03_link_jnt" );
+    e_bottle_1.mdl_lid linkto( e_bottle_1, "bottlecap_01_link_jnt" );
+    e_bottle_2.mdl_lid linkto( e_bottle_2, "bottlecap_02_link_jnt" );
+    e_bottle_3.mdl_lid linkto( e_bottle_3, "bottlecap_03_link_jnt" );
+    e_bottle_1.mdl_bottle setmodel( level.var_49f26c00.var_6138b381 );
+    e_bottle_2.mdl_bottle setmodel( level.var_49f26c00.var_887781fe );
+    e_bottle_3.mdl_bottle setmodel( level.var_49f26c00.var_84c77a9e );
+    e_bottle_1.mdl_tube setmodel( level.var_49f26c00.var_13123ed2 );
+    e_bottle_2.mdl_tube setmodel( level.var_49f26c00.var_13123ed2 );
+    e_bottle_3.mdl_tube setmodel( level.var_49f26c00.var_13123ed2 );
 }
 
 // Namespace zm_laboratory/frontend_zm_laboratory
