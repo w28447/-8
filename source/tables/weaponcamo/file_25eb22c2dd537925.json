@@ -29082,7 +29082,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         },
                         {
@@ -30368,7 +30368,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -31812,7 +31812,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -32990,7 +32990,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -34298,7 +34298,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -35482,7 +35482,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -36476,7 +36476,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -37502,7 +37502,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -39487,7 +39487,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -40443,7 +40443,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -41399,7 +41399,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -42355,7 +42355,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -44614,7 +44614,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -45844,7 +45844,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -47074,7 +47074,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -48304,7 +48304,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -50533,7 +50533,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -51733,7 +51733,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -52933,7 +52933,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -54133,7 +54133,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -56422,7 +56422,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -57682,7 +57682,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -58942,7 +58942,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -60142,7 +60142,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -61342,7 +61342,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -67220,7 +67220,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -68502,7 +68502,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -69741,7 +69741,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -70877,7 +70877,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -72094,7 +72094,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -73213,7 +73213,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -76557,7 +76557,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -78596,7 +78596,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -79606,7 +79606,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -82190,7 +82190,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -83745,7 +83745,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -85047,7 +85047,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -86135,7 +86135,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -87223,7 +87223,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -88462,7 +88462,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -89598,7 +89598,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -90837,7 +90837,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -91953,7 +91953,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -93069,7 +93069,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -95234,7 +95234,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -96370,7 +96370,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -98567,7 +98567,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -100835,7 +100835,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -102074,7 +102074,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -103313,7 +103313,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -104449,7 +104449,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -107137,7 +107137,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -108376,7 +108376,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -142534,7 +142534,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -143803,7 +143803,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -145072,7 +145072,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -146341,7 +146341,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -147610,7 +147610,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -149750,7 +149750,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         },
                         {
@@ -151047,7 +151047,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         },
                         {
@@ -160263,7 +160263,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         },
                         {
@@ -161560,7 +161560,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         },
                         {
@@ -162857,7 +162857,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         },
                         {
@@ -164143,7 +164143,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -165412,7 +165412,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -166681,7 +166681,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -167950,7 +167950,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -169219,7 +169219,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -170488,7 +170488,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -195466,7 +195466,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -196899,7 +196899,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -198332,7 +198332,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -199765,7 +199765,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -201198,7 +201198,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -203473,7 +203473,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -204732,7 +204732,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -205991,7 +205991,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -207250,7 +207250,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -208509,7 +208509,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -209768,7 +209768,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -212053,7 +212053,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -213949,7 +213949,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -214896,7 +214896,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -215843,7 +215843,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -216790,7 +216790,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -218711,7 +218711,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -219603,7 +219603,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -220495,7 +220495,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -221387,7 +221387,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -223655,7 +223655,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -224881,7 +224881,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -226107,7 +226107,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -227333,7 +227333,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -229426,7 +229426,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -230503,7 +230503,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -231580,7 +231580,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -232657,7 +232657,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -237644,7 +237644,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         },
                         {
@@ -238930,7 +238930,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -240199,7 +240199,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -242034,7 +242034,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -243122,7 +243122,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -244258,7 +244258,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -245374,7 +245374,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -246990,7 +246990,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -248126,7 +248126,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -249214,7 +249214,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -250330,7 +250330,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -251466,7 +251466,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -252602,7 +252602,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -254747,7 +254747,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -256892,7 +256892,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -258008,7 +258008,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -259124,7 +259124,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -261269,7 +261269,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -262385,7 +262385,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -263501,7 +263501,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -264617,7 +264617,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -266821,7 +266821,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -267957,7 +267957,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -269093,7 +269093,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -270229,7 +270229,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -271345,7 +271345,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -273462,7 +273462,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -275627,7 +275627,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -276763,7 +276763,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -277879,7 +277879,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -278995,7 +278995,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -280111,7 +280111,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"
@@ -281666,7 +281666,7 @@
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_barrel_sig_01"
                         },
                         {
-                            "material": "#hash_4643003295198190"
+                            "material": "#mc/mtl_t8_wpn_lmg_heavy_clip_sig_01"
                         },
                         {
                             "material": "#mc/mtl_t8_wpn_lmg_heavy_frame_sig_01"

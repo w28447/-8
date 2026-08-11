@@ -604,7 +604,7 @@ soundalias,#hash_7e070e6a240d01ee
 soundalias,#hash_7f209edbc9e8b538
 soundalias,#hash_7f8c067739269f3c
 soundalias,#tst_test_system
-client_fx,#hash_3613e307817774e
+client_fx,#weapon/fx8_shellejects_rifle
 client_fx,#_debug/fx_missing_fx
-client_fx,#hash_5f301164661e5a37
-client_fx,#hash_69b5bab2fa9bbf5d
+client_fx,#weapon/fx8_muz_lg_rifle_1p_4sqr_mb
+client_fx,#weapon/fx8_muz_lg_rifle_3p_4sqr_mb

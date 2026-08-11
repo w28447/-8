@@ -75,8 +75,8 @@
     "reticleSide": "#reticle_side_small",
     "inventoryIconZm": "#ui_icon_weapons_zm_raygun_mk2",
     "fireRumble": "#defaultweapon_fire",
-    "fx_bc8": "#hash_24a1ed7fe233c494",
-    "fx_bd0": "#hash_54138e183a0d2b8f",
+    "fx_bc8": "#zm_weapons/fx8_raygun2_view",
+    "fx_bd0": "#zm_weapons/fx8_raygun2_world",
     "fx_be0": "#hash_4235c8a93c8feae2",
     "normalImpactFX": "#hash_2004861352ba17b3"
 }

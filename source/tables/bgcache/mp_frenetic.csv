@@ -392,8 +392,8 @@ soundalias,#hash_1f9b1d980061ea0e
 soundalias,#dst_fern
 soundalias,#hash_200e28bcd26bab77
 soundalias,#hash_200e2ebcd26bb5a9
-soundalias,#hash_20b25322abf4095a
-soundalias,#hash_21cfccc8ada14c68
+soundalias,#pfx_spark_shower_shrt
+soundalias,#pfx_spark_bounce
 soundalias,#hash_227578991948ff6d
 soundalias,#hash_22d01da9a5078de7
 soundalias,#hash_23881d05de9f114a
@@ -505,7 +505,7 @@ soundalias,#hash_436a4f77c54e7912
 soundalias,#vox_tvoi_tutor_torq_razor_wire_bad_place
 soundalias,#hash_438b930b61d96f77
 soundalias,#hash_438dac17f69b90a2
-soundalias,#hash_44c55a442909d57d
+soundalias,#pfx_spark_generic
 soundalias,#hash_44f8b794cb0ec26b
 soundalias,#hash_44f8b894cb0ec41e
 soundalias,#hash_4538c3d9b150793e
@@ -549,7 +549,7 @@ soundalias,#hash_54538dea28a0400e
 soundalias,#hash_547104dd82ba9c7c
 soundalias,#vox_tvoi_tutor_torq_razor_wire_destroy
 soundalias,#dst_wood
-soundalias,#hash_568c7e7592bb887d
+soundalias,#pfx_spark_bounce_blue
 soundalias,#vox_tvoi_tutor_torq_smrt_cvr_nag
 soundalias,#dst_steam_pipe_lp
 soundalias,#hash_58e24f4b7ee415d9
@@ -608,7 +608,7 @@ soundalias,#vox_tvoi_tutor_noma_slide_6_0
 soundalias,#hash_6b57965455923f2c
 soundalias,#vox_tvoi_tutor_torq_rad_field_player_dead
 soundalias,#hash_6c5be5a0764e1e3c
-soundalias,#hash_6dadd9af1b59c7de
+soundalias,#dst_electronics_elc_sm
 soundalias,#pfx_spark_med
 soundalias,#pfx_spark_pop
 soundalias,#vox_tvoi_tutor_torq_final_event_1_arrive

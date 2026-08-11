@@ -40,8 +40,8 @@ function __init__()
 // Size: 0x92
 function function_efe56acb()
 {
-    level._effect[ #"zombshell_aoe" ] = #"hash_3d2e7548c7dfc406";
-    level._effect[ #"zombshell_explosion" ] = #"hash_1900ec48b2f264fe";
+    level._effect[ #"zombshell_aoe" ] = #"zombie/fx8_perk_zombshell_aoe";
+    level._effect[ #"zombshell_explosion" ] = #"zombie/fx8_perk_zombshell_exp";
     level._effect[ #"zombie_blood_1st" ] = #"player/fx8_plyr_pstfx_katana_rush_loop";
 }
 

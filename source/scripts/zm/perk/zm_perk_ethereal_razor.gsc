@@ -89,7 +89,7 @@ function function_ee114cab()
 function function_f20b4260()
 {
     clientfield::register( "actor", "" + #"ethereal_melee_impact", 13000, 1, "counter" );
-    clientfield::register( "allplayers", "" + #"hash_450d9f824068dcc2", 13000, 1, "counter" );
+    clientfield::register( "allplayers", "" + #"ethereal_melee_3p", 13000, 1, "counter" );
     clientfield::register( "allplayers", "" + #"hash_4de2dbcd551f1fb7", 13000, 1, "counter" );
 }
 
@@ -149,7 +149,7 @@ function function_f86e4c3d()
             }
             else
             {
-                self clientfield::increment( "" + #"hash_450d9f824068dcc2" );
+                self clientfield::increment( "" + #"ethereal_melee_3p" );
             }
             
             if ( var_c34665fc === #"weapon_melee_charge" )

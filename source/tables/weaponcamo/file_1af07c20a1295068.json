@@ -20606,7 +20606,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -20869,7 +20869,7 @@
                             "material": "#mc/mtl_attach_t8_sniper_koshka_grip_02"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -89205,7 +89205,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -89468,7 +89468,7 @@
                             "material": "#mc/mtl_attach_t8_sniper_koshka_grip_02"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -90622,7 +90622,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -90885,7 +90885,7 @@
                             "material": "#mc/mtl_attach_t8_sniper_koshka_grip_02"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -92039,7 +92039,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -92302,7 +92302,7 @@
                             "material": "#mc/mtl_attach_t8_sniper_koshka_grip_02"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -93456,7 +93456,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -93719,7 +93719,7 @@
                             "material": "#mc/mtl_attach_t8_sniper_koshka_grip_02"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -94873,7 +94873,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -95136,7 +95136,7 @@
                             "material": "#mc/mtl_attach_t8_sniper_koshka_grip_02"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -117204,7 +117204,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -117467,7 +117467,7 @@
                             "material": "#mc/mtl_attach_t8_sniper_koshka_grip_02"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -118621,7 +118621,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -118884,7 +118884,7 @@
                             "material": "#mc/mtl_attach_t8_sniper_koshka_grip_02"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -120038,7 +120038,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -120301,7 +120301,7 @@
                             "material": "#mc/mtl_attach_t8_sniper_koshka_grip_02"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -121455,7 +121455,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -121718,7 +121718,7 @@
                             "material": "#mc/mtl_attach_t8_sniper_koshka_grip_02"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -122872,7 +122872,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -123135,7 +123135,7 @@
                             "material": "#mc/mtl_attach_t8_sniper_koshka_grip_02"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -124289,7 +124289,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -124552,7 +124552,7 @@
                             "material": "#mc/mtl_attach_t8_sniper_koshka_grip_02"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -165615,7 +165615,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -165878,7 +165878,7 @@
                             "material": "#mc/mtl_attach_t8_sniper_koshka_grip_02"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"
@@ -167032,7 +167032,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -167295,7 +167295,7 @@
                             "material": "#mc/mtl_attach_t8_sniper_koshka_grip_02"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_optic_thermal"

@@ -23219,13 +23219,13 @@
         {
             "value": 126,
             "next": 65535,
-            "name": "#hash_44c55a442909d57d",
+            "name": "#pfx_spark_generic",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_44c55a442909d57d",
+                    "name": "#pfx_spark_generic",
                     "assetId": "#pfx/sparks/generic/fresh/spark_gen_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -23264,7 +23264,7 @@
                     "unk178": "#hash_500000804"
                 },
                 {
-                    "name": "#hash_44c55a442909d57d",
+                    "name": "#pfx_spark_generic",
                     "assetId": "#pfx/sparks/generic/fresh/spark_gen_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -23303,7 +23303,7 @@
                     "unk178": "#hash_500000804"
                 },
                 {
-                    "name": "#hash_44c55a442909d57d",
+                    "name": "#pfx_spark_generic",
                     "assetId": "#pfx/sparks/generic/fresh/spark_gen_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -23342,7 +23342,7 @@
                     "unk178": "#hash_500000804"
                 },
                 {
-                    "name": "#hash_44c55a442909d57d",
+                    "name": "#pfx_spark_generic",
                     "assetId": "#pfx/sparks/generic/fresh/spark_gen_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -23381,7 +23381,7 @@
                     "unk178": "#hash_500000804"
                 },
                 {
-                    "name": "#hash_44c55a442909d57d",
+                    "name": "#pfx_spark_generic",
                     "assetId": "#pfx/sparks/generic/fresh/spark_gen_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -23420,7 +23420,7 @@
                     "unk178": "#hash_500000804"
                 },
                 {
-                    "name": "#hash_44c55a442909d57d",
+                    "name": "#pfx_spark_generic",
                     "assetId": "#pfx/sparks/generic/fresh/spark_gen_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",
@@ -23459,7 +23459,7 @@
                     "unk178": "#hash_500000804"
                 },
                 {
-                    "name": "#hash_44c55a442909d57d",
+                    "name": "#pfx_spark_generic",
                     "assetId": "#pfx/sparks/generic/fresh/spark_gen_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore.all",
                     "assetIdRelease": "#mp_offshore.all",

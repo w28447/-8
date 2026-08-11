@@ -11134,13 +11134,13 @@
         {
             "value": 87,
             "next": 65535,
-            "name": "#hash_65f24e989cf891b3",
+            "name": "#dst_spark_bounce",
             "sequence": 0,
             "cullDistance": 800,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_65f24e989cf891b3",
+                    "name": "#dst_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -11179,7 +11179,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_65f24e989cf891b3",
+                    "name": "#dst_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -11218,7 +11218,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_65f24e989cf891b3",
+                    "name": "#dst_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -11257,7 +11257,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_65f24e989cf891b3",
+                    "name": "#dst_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -11296,7 +11296,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_65f24e989cf891b3",
+                    "name": "#dst_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -11335,7 +11335,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_65f24e989cf891b3",
+                    "name": "#dst_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -11374,7 +11374,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_65f24e989cf891b3",
+                    "name": "#dst_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -11413,7 +11413,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_65f24e989cf891b3",
+                    "name": "#dst_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -11452,7 +11452,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_65f24e989cf891b3",
+                    "name": "#dst_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -23673,13 +23673,13 @@
         {
             "value": 59,
             "next": 65535,
-            "name": "#hash_21cfccc8ada14c68",
+            "name": "#pfx_spark_bounce",
             "sequence": 0,
             "cullDistance": 1250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_21cfccc8ada14c68",
+                    "name": "#pfx_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -23718,7 +23718,7 @@
                     "unk178": "#hash_200000606"
                 },
                 {
-                    "name": "#hash_21cfccc8ada14c68",
+                    "name": "#pfx_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -23757,7 +23757,7 @@
                     "unk178": "#hash_200000606"
                 },
                 {
-                    "name": "#hash_21cfccc8ada14c68",
+                    "name": "#pfx_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -23796,7 +23796,7 @@
                     "unk178": "#hash_200000606"
                 },
                 {
-                    "name": "#hash_21cfccc8ada14c68",
+                    "name": "#pfx_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -23835,7 +23835,7 @@
                     "unk178": "#hash_200000606"
                 },
                 {
-                    "name": "#hash_21cfccc8ada14c68",
+                    "name": "#pfx_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -23874,7 +23874,7 @@
                     "unk178": "#hash_200000606"
                 },
                 {
-                    "name": "#hash_21cfccc8ada14c68",
+                    "name": "#pfx_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -23913,7 +23913,7 @@
                     "unk178": "#hash_200000606"
                 },
                 {
-                    "name": "#hash_21cfccc8ada14c68",
+                    "name": "#pfx_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -23952,7 +23952,7 @@
                     "unk178": "#hash_200000606"
                 },
                 {
-                    "name": "#hash_21cfccc8ada14c68",
+                    "name": "#pfx_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -23991,7 +23991,7 @@
                     "unk178": "#hash_200000606"
                 },
                 {
-                    "name": "#hash_21cfccc8ada14c68",
+                    "name": "#pfx_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",

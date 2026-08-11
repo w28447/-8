@@ -46,7 +46,7 @@ function private update_light( localclientnum )
     
     while ( true )
     {
-        self.light_fx = util::playfxontag( localclientnum, #"hash_69272c24309abc33", self, "tag_fx_front" );
+        self.light_fx = util::playfxontag( localclientnum, #"weapon/fx8_equip_seeker_light_os", self, "tag_fx_front" );
         
         if ( isdefined( self.attacking ) && self.attacking )
         {

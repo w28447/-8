@@ -78,8 +78,8 @@ function init_fx()
     level._effect[ #"soul_fx_water" ] = #"zm_ai/fx8_cata_water_purify_trail";
     level._effect[ #"soul_fx_air" ] = #"zm_ai/fx8_cata_elec_aura";
     level._effect[ #"soul_fx_fire" ] = #"hash_641c2257723638c2";
-    level._effect[ #"soul_capture_earth" ] = #"hash_62eafc17a432322a";
-    level._effect[ #"soul_capture_water" ] = #"hash_1832a0ef5af0040d";
+    level._effect[ #"soul_capture_earth" ] = #"zm_ai/fx8_cata_cor_death";
+    level._effect[ #"soul_capture_water" ] = #"zm_ai/fx8_cata_water_death";
     level._effect[ #"soul_capture_air" ] = #"hash_619361bb6a9a5d2d";
     level._effect[ #"soul_capture_fire" ] = #"hash_3009e42178ffd484";
     level._effect[ #"hash_4ab2496c89a7d871" ] = #"hash_4a305119bc50ca3d";

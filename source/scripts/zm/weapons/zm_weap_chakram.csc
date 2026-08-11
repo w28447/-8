@@ -40,7 +40,7 @@ function __init__()
     level._effect[ #"hash_720f204e4406ddbf" ] = #"hash_59cdb0226e644934";
     level._effect[ #"hash_15593b3f860346f5" ] = #"hash_1e957556dba822e6";
     level._effect[ #"chakram_head_pop" ] = #"hash_68100f653a5baf2f";
-    level._effect[ #"chakram_throw_trail" ] = #"hash_1ff88e4b147015b2";
+    level._effect[ #"chakram_throw_trail" ] = #"zm_weapons/fx8_chakram_trail";
     level._effect[ #"chakram_throw_impact" ] = #"hash_656272f0184ae1fc";
     level._effect[ #"hash_5c2ba805602ea484" ] = #"hash_3904517ed3636935";
     level._effect[ #"hash_455a47023bc1da46" ] = #"hash_2109d3278a7b54fa";

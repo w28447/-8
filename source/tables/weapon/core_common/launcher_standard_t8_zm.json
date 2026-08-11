@@ -105,13 +105,13 @@
     "fireRumble": "#launcher_fire",
     "rumble_de8": "#barrel_explosion",
     "rumble_e20": "#hash_322cc8a226215312",
-    "fx_bc8": "#hash_3403eb3e87feae66",
-    "fx_bd0": "#hash_33fdff3e87fa64b4",
-    "fx_f00": "#hash_fc5556d48651b9e",
+    "fx_bc8": "#weapon/fx8_muz_rocket_xm_1p",
+    "fx_bd0": "#weapon/fx8_muz_rocket_xm_3p",
+    "fx_f00": "#weapon/fx8_trail_rocket_xm_mp",
     "underwaterExplosionSurfaceFX": [
         "#explosions/fx8_exp_grenade_water",
         "#hash_415b461b7420c6d2",
-        "#hash_3b3f97cf646813ac"
+        "#explosions/fx8_exp_grenade_water_surface_deep"
     ],
     "normalImpactFX": "#rocket_explosion",
     "bounceImpactFX": "#rocket_bounce",

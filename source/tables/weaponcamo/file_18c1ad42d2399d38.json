@@ -41582,7 +41582,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_8913bb17653a8db"
+                            "material": "#mc/mtl_attach_t8_loot_ar_an94_ext_barrel_01"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -41645,7 +41645,7 @@
                             "material": "#mc/mtl_attach_t8_loot_ar_an94_ext_mag_01"
                         },
                         {
-                            "material": "#hash_5beea594bba6db22"
+                            "material": "#mc/mtl_attach_t8_loot_ar_an94_fastmag_01"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_ar_an94_mag_base"
@@ -41900,7 +41900,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_33ec7eb84920286"
+                            "material": "#mc/mtl_attach_t8_loot_ar_an94_stock_tape_01"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_loot_ar_an94_stock_01"

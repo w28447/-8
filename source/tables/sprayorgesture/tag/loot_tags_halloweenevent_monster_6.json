@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_halloweenevent_monster_6",
     "type": "#tag",
-    "material": "#hash_67de833947a21d07",
+    "material": "#vd/mtl_loot_ui_icon_tags_halloweenevent_monster_6",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_5477bf18b90ee893",

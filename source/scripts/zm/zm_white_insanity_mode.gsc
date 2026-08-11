@@ -789,18 +789,18 @@ function function_7cb78bcd()
     
     if ( isdefined( a_e_zombie_doors ) )
     {
-        foreach ( var_6620353d in a_e_zombie_doors )
+        foreach ( e_zombie_door in a_e_zombie_doors )
         {
-            switch ( var_6620353d.script_flag )
+            switch ( e_zombie_door.script_flag )
             {
                 case #"green_backyard_to_green_house":
                 case #"culdesac_to_yellow_house_f1":
                 case #"culdesac_to_green_house":
                 case #"yellow_backyard_to_yellow_house":
-                    if ( !( isdefined( var_6620353d.has_been_opened ) && var_6620353d.has_been_opened ) )
+                    if ( !( isdefined( e_zombie_door.has_been_opened ) && e_zombie_door.has_been_opened ) )
                     {
                         a_e_players = getplayers();
-                        var_6620353d notify( #"trigger", { #activator:a_e_players[ 0 ], #is_forced:1 } );
+                        e_zombie_door notify( #"trigger", { #activator:a_e_players[ 0 ], #is_forced:1 } );
                     }
                     
                     break;

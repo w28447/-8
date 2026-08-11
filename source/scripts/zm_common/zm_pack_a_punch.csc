@@ -29,7 +29,7 @@ function autoexec __init__system__()
 // Size: 0x154
 function __init__()
 {
-    level._effect[ #"pap_idle_fxx" ] = #"hash_669f8d1e3151a677";
+    level._effect[ #"pap_idle_fxx" ] = #"zombie/fx8_pap_idle";
     clientfield::register( "zbarrier", "pap_working_fx", 1, 1, "int", &pap_working_fx_handler, 0, 0 );
     clientfield::register( "zbarrier", "pap_idle_fx", 1, 1, "int", &function_2a80c24d, 0, 0 );
     clientfield::register( "world", "pap_force_stream", 1, 1, "int", &pap_force_stream, 0, 0 );

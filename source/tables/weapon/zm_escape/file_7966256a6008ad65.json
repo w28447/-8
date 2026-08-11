@@ -76,6 +76,6 @@
     "image_e90": "#t7_icon_weapon_shotgun_semiauto_kf",
     "image_1048": "#t7_icon_weapon_shotgun_semiauto_pu",
     "fireRumble": "#damage_heavy",
-    "fx_bc8": "#hash_61c5d96cb8067ade",
-    "fx_bd0": "#hash_4345af7e7b44f50"
+    "fx_bc8": "#zm_weapons/fx8_blundersplat_muzzleflash",
+    "fx_bd0": "#zm_weapons/fx8_blundersplat_muzzleflash_3p"
 }

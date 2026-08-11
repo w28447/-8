@@ -17773,13 +17773,13 @@
         {
             "value": 73,
             "next": 162,
-            "name": "#hash_54a0dc115c0e15fa",
+            "name": "#pfx_dirt_impact",
             "sequence": 0,
             "cullDistance": 700,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_54a0dc115c0e15fa",
+                    "name": "#pfx_dirt_impact",
                     "assetId": "#pfx/dirt/impact/dirt_debris_impact_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -17818,7 +17818,7 @@
                     "unk178": "#hash_500000208"
                 },
                 {
-                    "name": "#hash_54a0dc115c0e15fa",
+                    "name": "#pfx_dirt_impact",
                     "assetId": "#pfx/dirt/impact/dirt_debris_impact_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -17857,7 +17857,7 @@
                     "unk178": "#hash_500000208"
                 },
                 {
-                    "name": "#hash_54a0dc115c0e15fa",
+                    "name": "#pfx_dirt_impact",
                     "assetId": "#pfx/dirt/impact/dirt_debris_impact_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -17896,7 +17896,7 @@
                     "unk178": "#hash_500000208"
                 },
                 {
-                    "name": "#hash_54a0dc115c0e15fa",
+                    "name": "#pfx_dirt_impact",
                     "assetId": "#pfx/dirt/impact/dirt_debris_impact_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -17935,7 +17935,7 @@
                     "unk178": "#hash_500000208"
                 },
                 {
-                    "name": "#hash_54a0dc115c0e15fa",
+                    "name": "#pfx_dirt_impact",
                     "assetId": "#pfx/dirt/impact/dirt_debris_impact_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",

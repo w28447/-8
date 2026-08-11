@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_halloweenevent_phantasm",
     "type": "#tag",
-    "material": "#hash_6d5bc5a629731e1c",
+    "material": "#vd/mtl_loot_ui_icon_tags_halloweenevent_phantasm",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_5477c218b90eedac",

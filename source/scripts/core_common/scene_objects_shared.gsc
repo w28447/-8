@@ -1455,7 +1455,7 @@ class csceneobject
         
         if ( isdefined( _o_scene._e_root ) )
         {
-            _o_scene._e_root notify( #"hash_5bb6862842cacfe8", { #var_b551c535:_e, #var_5cd2f3ce:_str_name, #str_shot:s_shot.name, #var_37fa9b04:var_37fa9b04 } );
+            _o_scene._e_root notify( #"hash_5bb6862842cacfe8", { #e_destroyed:_e, #var_5cd2f3ce:_str_name, #str_shot:s_shot.name, #var_37fa9b04:var_37fa9b04 } );
         }
         
         level notify( #"damage_threshold_scene", { #str_shot:s_shot.name, #str_scene:_o_scene._str_name } );

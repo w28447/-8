@@ -60,7 +60,7 @@
     "sound4f0": "#gear_player",
     "sound500": "#hash_55bca176b2a2d59d",
     "sound510": "#gear_player",
-    "projexplosionsound": "#hash_11f01abbd7a5c6f5",
+    "projexplosionsound": "#wpn_rgun_exp",
     "sound800": "#hash_6f5f990a945df8f8",
     "sound810": "#hash_21cba6ae89a3493c",
     "tunables1": "#ray_gun_upgraded_tunables_zm",
@@ -75,8 +75,8 @@
     "reticleSide": "#reticle_side_small",
     "inventoryIconZm": "#ui_icon_weapons_zm_raygun",
     "fireRumble": "#defaultweapon_fire",
-    "fx_bc8": "#hash_6b985d3c20786f71",
-    "fx_bd0": "#hash_12a82669af8f6be0",
-    "fx_ed8": "#hash_6b1984c0004a2840",
-    "fx_f00": "#hash_1e3b91086200f013"
+    "fx_bc8": "#zm_weapons/fx8_raygun_view_ug_zmb",
+    "fx_bd0": "#zm_weapons/fx8_raygun_world_ug_zmb",
+    "fx_ed8": "#zm_weapons/fx8_raygun_impact_ug_zmb",
+    "fx_f00": "#zm_weapons/fx8_raygun_geotrail_ug_zmb"
 }

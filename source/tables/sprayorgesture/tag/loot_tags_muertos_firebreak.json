@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_muertos_firebreak",
     "type": "#tag",
-    "material": "#hash_455d21cd1cbef883",
+    "material": "#vd/mtl_loot_ui_icon_tags_muertos_firebreak",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/muertos_firebreak",

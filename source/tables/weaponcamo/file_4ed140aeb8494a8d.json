@@ -115,7 +115,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_1eb5b82fb2073dec",
+                            "camoMaterial": "#mc/mtl_p8_zm_elixir_icon_kill_joy",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -179,7 +179,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_4e2ef0616a8296d7",
+                            "camoMaterial": "#mc/mtl_p8_zm_elixir_icon_extra_credit",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,

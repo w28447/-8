@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_muertos_ruin",
     "type": "#tag",
-    "material": "#hash_50361b274759569a",
+    "material": "#vd/mtl_loot_ui_icon_tags_muertos_ruin",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/muertos_ruin",

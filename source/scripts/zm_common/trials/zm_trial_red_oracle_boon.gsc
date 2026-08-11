@@ -70,12 +70,12 @@ function private on_end( round_reset )
         }
     }
     
-    var_e4ee403e = struct::get_array( "trials_oracle_boon_weapon_spawns" );
+    a_s_weapon_spawns = struct::get_array( "trials_oracle_boon_weapon_spawns" );
     
-    foreach ( var_9a1edfd9 in var_e4ee403e )
+    foreach ( s_weapon_spawn in a_s_weapon_spawns )
     {
-        zm_unitrigger::unregister_unitrigger( var_9a1edfd9.s_unitrigger );
-        var_9a1edfd9.s_unitrigger = undefined;
+        zm_unitrigger::unregister_unitrigger( s_weapon_spawn.s_unitrigger );
+        s_weapon_spawn.s_unitrigger = undefined;
     }
 }
 
@@ -130,18 +130,18 @@ function function_cec06121( var_264ee2f5 )
     
     while ( true )
     {
-        var_e4ee403e = struct::get_array( "trials_oracle_boon_weapon_spawns" );
-        var_e4ee403e = array::filter( var_e4ee403e, 0, &function_c55d2b6e );
-        var_e4ee403e = array::randomize( var_e4ee403e );
+        a_s_weapon_spawns = struct::get_array( "trials_oracle_boon_weapon_spawns" );
+        a_s_weapon_spawns = array::filter( a_s_weapon_spawns, 0, &function_c55d2b6e );
+        a_s_weapon_spawns = array::randomize( a_s_weapon_spawns );
         a_players = util::get_active_players();
         
         foreach ( player in a_players )
         {
-            var_9a1edfd9 = var_e4ee403e[ player getentitynumber() ];
+            s_weapon_spawn = a_s_weapon_spawns[ player getentitynumber() ];
             
-            if ( isdefined( var_9a1edfd9 ) )
+            if ( isdefined( s_weapon_spawn ) )
             {
-                var_9a1edfd9 thread spawn_weapon( max( var_264ee2f5 - 10, 10 ) );
+                s_weapon_spawn thread spawn_weapon( max( var_264ee2f5 - 10, 10 ) );
             }
         }
         
@@ -153,9 +153,9 @@ function function_cec06121( var_264ee2f5 )
 // Params 1
 // Checksum 0x999489b9, Offset: 0x908
 // Size: 0x34, Type: bool
-function function_c55d2b6e( var_9a1edfd9 )
+function function_c55d2b6e( s_weapon_spawn )
 {
-    if ( isdefined( var_9a1edfd9.var_ff08ccc ) && var_9a1edfd9.var_ff08ccc )
+    if ( isdefined( s_weapon_spawn.var_ff08ccc ) && s_weapon_spawn.var_ff08ccc )
     {
         return false;
     }

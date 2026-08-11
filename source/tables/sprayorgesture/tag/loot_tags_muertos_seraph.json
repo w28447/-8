@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_muertos_seraph",
     "type": "#tag",
-    "material": "#hash_33a588a3fab84219",
+    "material": "#vd/mtl_loot_ui_icon_tags_muertos_seraph",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/muertos_seraph",

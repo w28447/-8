@@ -75,10 +75,10 @@
     "reticleSide": "#reticle_side_small",
     "inventoryIconZm": "#ui_icon_weapons_zm_raygun_mk2",
     "fireRumble": "#defaultweapon_fire",
-    "fx_bc8": "#hash_1ae2008ec657ea6b",
-    "fx_bd0": "#hash_2b9e83ad23928f9e",
+    "fx_bc8": "#zm_weapons/fx8_raygun2_ug_view",
+    "fx_bd0": "#zm_weapons/fx8_raygun2_ug_world",
     "fx_be0": "#hash_51cca4aa04103b43",
-    "fx_ed8": "#hash_20ef20be1f0aa72d",
-    "fx_f00": "#hash_4fe3a8dfdd67f179",
+    "fx_ed8": "#zm_weapons/fx8_raygun2_ug_impact_flesh",
+    "fx_f00": "#zm_weapons/fx8_raygun2_ug_bolt_emit",
     "normalImpactFX": "#hash_4f9b74ed3bdc36ea"
 }

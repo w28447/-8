@@ -14163,7 +14163,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$white"
                         }
                     ],
@@ -83706,7 +83706,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$white"
                         }
                     ],
@@ -84952,7 +84952,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$white"
                         }
                     ],
@@ -96996,7 +96996,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$white"
                         }
                     ],
@@ -98242,7 +98242,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$white"
                         }
                     ],
@@ -99488,7 +99488,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$white"
                         }
                     ],
@@ -109221,7 +109221,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$black"
                         },
                         {
@@ -109229,7 +109229,7 @@
                             "mask": "#$black"
                         },
                         {
-                            "material": "#hash_4306a30dfe6aa272",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_lens",
                             "mask": "#$black"
                         },
                         {
@@ -109328,7 +109328,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$black"
                         },
                         {
@@ -109336,7 +109336,7 @@
                             "mask": "#$black"
                         },
                         {
-                            "material": "#hash_4306a30dfe6aa272",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_lens",
                             "mask": "#$black"
                         },
                         {
@@ -145422,7 +145422,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$white"
                         }
                     ],

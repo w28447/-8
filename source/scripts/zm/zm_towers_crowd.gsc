@@ -813,7 +813,7 @@ function crowd_throw_item( var_2bd26cff )
         
         if ( str_powerup === "rock" )
         {
-            e_item = util::spawn_model( #"hash_5a78e7591a2e5e39", var_4d611aa2.origin, var_4d611aa2.angles );
+            e_item = util::spawn_model( #"p8_fxp_debris_rock_02", var_4d611aa2.origin, var_4d611aa2.angles );
             e_item fx::play( #"hash_4c4f96aa02c32a2a", e_item.origin, e_item.angles, "crowd_item_fly_fx_stop", 1 );
             e_item setscale( 8 );
             n_time = e_item zm_utility::fake_physicslaunch( self geteye(), 5000 );

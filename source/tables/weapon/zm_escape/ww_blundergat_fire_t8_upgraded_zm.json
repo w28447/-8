@@ -71,8 +71,8 @@
     "image_e90": "#ui_icon_weapons_zm_blundergat_red",
     "image_1048": "#ui_icon_weapons_zm_blundergat_red",
     "fireRumble": "#damage_heavy",
-    "fx_bc8": "#hash_52171f7e87d102f",
-    "fx_bd0": "#hash_43d6485ff720120b",
-    "fx_ed8": "#hash_26d0dc927aee6793",
+    "fx_bc8": "#zm_weapons/fx8_blundersplat_muzzleflash_ug",
+    "fx_bd0": "#zm_weapons/fx8_blundersplat_muzzleflash_ug_3p",
+    "fx_ed8": "#zm_weapons/fx8_magmagat_explosion",
     "fx_f00": "#hash_53c0bb17712386bf"
 }

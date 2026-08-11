@@ -274,11 +274,11 @@ function function_71112c33()
     level.var_a89ec78a[ 2 ] = array( #"hash_57f8e51889f743c3", #"hash_57816dfd94b9b352", #"hash_439e7d7396867bd4", #"hash_632ef10ed2354e49", #"hash_25292058dbedb657", #"hash_3464e1361c110c93", #"hash_16da5f7943762301", #"hash_5bef1a64d1005f3d", #"hash_5fc94d78acba95c2", #"hash_bc708021d5ffe2a", #"hash_3d9e6aff21ee8707", #"hash_5b99d9fe629c6292", #"hash_74429c6a98d817f1", #"hash_45733118d0ab49fc" );
     level.var_a89ec78a[ 3 ] = array( #"hash_3c81348483747d36", #"hash_38037405482765a2", #"hash_4ffb0e1f3887178c", #"hash_1f23829ad8824dcc", #"hash_226fa7aac29cddb2", #"hash_646ede7a45b7ca66", #"hash_2638b34fdd2f6c68", #"hash_595af4b9ed084900", #"hash_3c8a7ff5d0522b5e", #"hash_58fb7cdd31cf54a", #"hash_45f2c29e23ffdd2f", #"hash_179a327c774fcc09", #"hash_6ccfc362521493f1", #"hash_5e72cb2fb4e0d39f", #"hash_70badcef86b372ab" );
     level.var_a89ec78a[ 4 ] = array( #"hash_62840ebed9c7874f", #"hash_5902360292a8f3da", #"hash_2d78d5727436aadc", #"hash_6b48b1697c8053c4", #"hash_1c27ba67437c3b83", #"hash_4c80779f08dfcd9a", #"hash_420b3ad6e53509ed", #"hash_4c63d40d61f36578", #"hash_ac02f6a2481256f", #"hash_25fd913716475ef2", #"hash_6fdb1c84726adddc", #"hash_4c2efd8466c4d0d1" );
-    level.var_62d5b9c9 = struct::get_array( "office_audio_log" );
+    level.a_s_office_audio_logs = struct::get_array( "office_audio_log" );
     
-    foreach ( var_ac8ede2d in level.var_62d5b9c9 )
+    foreach ( s_office_audio_log in level.a_s_office_audio_logs )
     {
-        var_ac8ede2d function_488e39dc();
+        s_office_audio_log function_488e39dc();
     }
 }
 

@@ -29,7 +29,7 @@
 function init()
 {
     level._effect[ #"ww_quest_brazier_fire" ] = #"hash_387c78244f5f45e5";
-    level._effect[ #"hash_5b4e7c178480d885" ] = #"hash_62eafc17a432322a";
+    level._effect[ #"hash_5b4e7c178480d885" ] = #"zm_ai/fx8_cata_cor_death";
     level flag::init( #"hash_57454e59c155098d" );
     level flag::init( #"hash_2fb4b4431d3ed627" );
     level flag::init( #"hash_40f20925227353f4" );
@@ -709,14 +709,14 @@ function take_impervious_jar_setup( b_skipped )
         return;
     }
     
-    var_97323694 = struct::get_array( "s_ww_quest_impervious_jar_start" );
+    a_s_jar_start = struct::get_array( "s_ww_quest_impervious_jar_start" );
     var_a53ca88a = [];
     
     foreach ( e_player in util::get_active_players() )
     {
         if ( isdefined( e_player ) )
         {
-            foreach ( s_option in var_97323694 )
+            foreach ( s_option in a_s_jar_start )
             {
                 if ( e_player util::is_player_looking_at( s_option.origin, 0.9, 0 ) )
                 {
@@ -740,16 +740,16 @@ function take_impervious_jar_setup( b_skipped )
     
     if ( var_a53ca88a.size == 0 )
     {
-        var_1a472b57 = array::random( var_97323694 );
+        s_jar_start = array::random( a_s_jar_start );
     }
     else
     {
-        var_1a472b57 = array::random( var_a53ca88a );
+        s_jar_start = array::random( var_a53ca88a );
     }
     
-    arrayremovevalue( var_97323694, var_1a472b57 );
+    arrayremovevalue( a_s_jar_start, s_jar_start );
     
-    foreach ( s_option in var_97323694 )
+    foreach ( s_option in a_s_jar_start )
     {
         s_end = struct::get( s_option.target );
         s_end struct::delete();
@@ -757,8 +757,8 @@ function take_impervious_jar_setup( b_skipped )
     }
     
     zm_towers_util::function_afd37143( #"hash_28dbb5b91d8a954e" );
-    var_8fa68ef = struct::get( var_1a472b57.target );
-    mdl_jar = util::spawn_model( #"p8_zm_gla_jar_gold_01", var_1a472b57.origin, var_1a472b57.angles );
+    s_jar_end = struct::get( s_jar_start.target );
+    mdl_jar = util::spawn_model( #"p8_zm_gla_jar_gold_01", s_jar_start.origin, s_jar_start.angles );
     
     if ( !isdefined( mdl_jar ) )
     {
@@ -768,13 +768,13 @@ function take_impervious_jar_setup( b_skipped )
     
     mdl_jar notsolid();
     mdl_jar clientfield::set( "" + #"impervious_jar_petals", 1 );
-    n_time = mdl_jar zm_utility::fake_physicslaunch( var_8fa68ef.origin, 1000 );
+    n_time = mdl_jar zm_utility::fake_physicslaunch( s_jar_end.origin, 1000 );
     wait n_time;
-    mdl_jar.origin = var_8fa68ef.origin;
-    mdl_jar.angles = var_8fa68ef.angles;
+    mdl_jar.origin = s_jar_end.origin;
+    mdl_jar.angles = s_jar_end.angles;
     mdl_jar clientfield::set( "" + #"impervious_jar_landed", 1 );
     mdl_jar clientfield::set( "" + #"impervious_jar_petals", 0 );
-    s_loc = struct::get( var_8fa68ef.target );
+    s_loc = struct::get( s_jar_end.target );
     s_loc.var_6d6bbd67 = mdl_jar;
     e_player = s_loc zm_unitrigger::function_fac87205( &function_5f2a9b69 );
     mdl_jar delete();

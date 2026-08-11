@@ -608,12 +608,12 @@ function function_79672a3d()
         
         if ( isdefined( a_e_zombie_doors ) )
         {
-            foreach ( var_6620353d in a_e_zombie_doors )
+            foreach ( e_zombie_door in a_e_zombie_doors )
             {
-                if ( isdefined( var_6620353d.script_flag ) && var_6620353d.script_flag == e_green_backyard_bunker_door_release.script_string )
+                if ( isdefined( e_zombie_door.script_flag ) && e_zombie_door.script_flag == e_green_backyard_bunker_door_release.script_string )
                 {
-                    e_green_backyard_bunker_door_release.var_a450cb6a = var_6620353d;
-                    var_6620353d setinvisibletoall();
+                    e_green_backyard_bunker_door_release.var_a450cb6a = e_zombie_door;
+                    e_zombie_door setinvisibletoall();
                     break;
                 }
             }

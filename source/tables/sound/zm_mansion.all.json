@@ -213572,13 +213572,13 @@
         {
             "value": 1616,
             "next": 65535,
-            "name": "#hash_11f01abbd7a5c6f5",
+            "name": "#wpn_rgun_exp",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_11f01abbd7a5c6f5",
+                    "name": "#wpn_rgun_exp",
                     "secondaryname": "#hash_6104152071df5471",
                     "assetId": "#wpn/energy/raygun/projectile/impact/wpn_ray_exp.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_mansion.all",

@@ -93,7 +93,7 @@ function event_handler[level_init] main( eventstruct )
     level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_escape_weapons.csv";
     level._effect[ #"hash_2bba72fdcc5508b5" ] = #"hash_2ac7ec38d265c496";
     level._effect[ #"chest_light_closed" ] = #"hash_5b118cefec864e37";
-    level._effect[ #"magic_box_arrive" ] = #"hash_5a9159bef624d260";
+    level._effect[ #"magic_box_arrive" ] = #"maps/zm_escape/fx8_magicbox_arrival";
     level._effect[ #"magic_box_leave" ] = #"hash_2b008afec3e70add";
     level._effect[ #"switch_sparks" ] = #"hash_26f37488feec03c3";
     level.var_5603a802 = "pstfx_zm_hellhole";

@@ -493,9 +493,9 @@ function door()
     a_e_zombie_debris = getentarray( "zombie_debris", "targetname" );
     a_script_flags = [];
     
-    foreach ( var_6620353d in a_e_zombie_doors )
+    foreach ( e_zombie_door in a_e_zombie_doors )
     {
-        if ( isdefined( var_6620353d.script_noteworthy ) && var_6620353d.script_noteworthy == "electric_door" )
+        if ( isdefined( e_zombie_door.script_noteworthy ) && e_zombie_door.script_noteworthy == "electric_door" )
         {
             continue;
         }
@@ -509,13 +509,13 @@ function door()
             a_script_flags = array( a_script_flags );
         }
         
-        if ( !isinarray( a_script_flags, var_6620353d.script_flag ) )
+        if ( !isinarray( a_script_flags, e_zombie_door.script_flag ) )
         {
-            a_script_flags[ a_script_flags.size ] = var_6620353d.script_flag;
+            a_script_flags[ a_script_flags.size ] = e_zombie_door.script_flag;
         }
     }
     
-    foreach ( var_dc373a8d in a_e_zombie_debris )
+    foreach ( e_zombie_debris in a_e_zombie_debris )
     {
         if ( !isdefined( a_script_flags ) )
         {
@@ -526,9 +526,9 @@ function door()
             a_script_flags = array( a_script_flags );
         }
         
-        if ( !isinarray( a_script_flags, var_dc373a8d.script_flag ) )
+        if ( !isinarray( a_script_flags, e_zombie_debris.script_flag ) )
         {
-            a_script_flags[ a_script_flags.size ] = var_dc373a8d.script_flag;
+            a_script_flags[ a_script_flags.size ] = e_zombie_debris.script_flag;
         }
     }
     
@@ -641,14 +641,14 @@ function shed()
     
     a_e_zombie_doors = getentarray( "zombie_door", "targetname" );
     
-    foreach ( var_6620353d in a_e_zombie_doors )
+    foreach ( e_zombie_door in a_e_zombie_doors )
     {
-        if ( isdefined( var_6620353d.script_flag ) && var_6620353d.script_flag == "yellow_backyard_to_ammo_door" )
+        if ( isdefined( e_zombie_door.script_flag ) && e_zombie_door.script_flag == "yellow_backyard_to_ammo_door" )
         {
-            if ( !( isdefined( var_6620353d.has_been_opened ) && var_6620353d.has_been_opened ) )
+            if ( !( isdefined( e_zombie_door.has_been_opened ) && e_zombie_door.has_been_opened ) )
             {
                 a_e_players = getplayers();
-                var_6620353d notify( #"trigger", { #activator:a_e_players[ 0 ], #is_forced:1 } );
+                e_zombie_door notify( #"trigger", { #activator:a_e_players[ 0 ], #is_forced:1 } );
                 
                 /#
                     iprintlnbold( "<dev string:x32c>" );

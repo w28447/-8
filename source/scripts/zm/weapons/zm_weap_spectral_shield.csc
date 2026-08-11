@@ -48,20 +48,20 @@ function __init__()
     level._effect[ #"spectral_key_muzzle_flash1p_idle" ] = #"hash_74f3e07770b3c780";
     level._effect[ #"spectral_key_muzzle_flash3p_idle" ] = #"hash_74faec7770b9fa92";
     level._effect[ #"hash_5a834a39ce281cef" ] = #"hash_42b1e9abdde1d678";
-    level._effect[ #"hash_6ca5cf8a3ac2254a" ] = #"hash_6894b23015ff2626";
+    level._effect[ #"hash_6ca5cf8a3ac2254a" ] = #"maps/zm_escape/fx8_glow_eye_blue";
     level._effect[ #"spectral_key_charging_1p" ] = #"hash_db890f21c0af009";
     level._effect[ #"spectral_key_charging_3p" ] = #"hash_dbf9cf21c11231b";
     level._effect[ #"hash_3ae08d08271270d6" ] = #"hash_35b66c4bdba4f1a8";
     level._effect[ #"hash_3ad9a108270c7424" ] = #"hash_35bd784bdbab24ba";
-    level._effect[ #"hash_4a41e8484e30822e" ] = #"hash_55a201e66dbc23d3";
-    level._effect[ #"hash_4a3bdc484e2c021c" ] = #"hash_559b15e66db62721";
+    level._effect[ #"hash_4a41e8484e30822e" ] = #"maps/zm_escape/fx8_shield_glow_1p";
+    level._effect[ #"hash_4a3bdc484e2c021c" ] = #"maps/zm_escape/fx8_shield_glow_3p";
     level._effect[ #"hash_29b0420a85baa71b" ] = #"hash_4a8de7cdf2716f1b";
     level._effect[ #"hash_28b1c64bd72686eb" ] = #"hash_5e46c3cecd080eeb";
     level._effect[ #"hash_a64dd624f3d5eff" ] = #"hash_3a4825045da5aa1f";
     level._effect[ #"hash_a5ef1624f39154d" ] = #"hash_3a4139045d9fad6d";
     level._effect[ #"air_blast" ] = #"hash_70630dd76a790b4";
-    level._effect[ #"hash_3757ad652a2b0e54" ] = #"hash_382d55804b58cfcb";
-    level._effect[ #"shield_crafting" ] = #"hash_1e261e7fd620ac9e";
+    level._effect[ #"spectral_shield_light" ] = #"zm_weapons/fx8_spectral_shield_light_3p";
+    level._effect[ #"shield_crafting" ] = #"maps/zm_escape/fx8_shield_crafting";
     level._effect[ #"spectral_heal" ] = #"zombie/fx_bgb_near_death_3p";
 }
 
@@ -128,7 +128,7 @@ function afterlife_vision_play( localclientnum, oldval, newval, bnewent, binitia
         }
         else
         {
-            self.var_1d12110c[ localclientnum ] = util::playfxontag( localclientnum, level._effect[ #"hash_3757ad652a2b0e54" ], self, "tag_window_fx" );
+            self.var_1d12110c[ localclientnum ] = util::playfxontag( localclientnum, level._effect[ #"spectral_shield_light" ], self, "tag_window_fx" );
         }
         
         return;

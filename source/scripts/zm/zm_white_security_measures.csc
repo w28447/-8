@@ -28,7 +28,7 @@ function init()
     level._effect[ #"hash_4391e5c4b43c63c9" ] = #"hash_709cca7d0048aa72";
     level._effect[ #"hash_5647f8e593893bce" ] = #"hash_69af1783a31b44f7";
     level._effect[ #"zombie_eye_trail" ] = #"zm_ai/fx8_zombie_eye_glow_red_trail";
-    level._effect[ #"spinning_blood" ] = #"hash_358533e8293f131d";
+    level._effect[ #"spinning_blood" ] = #"maps/zm_escape/fx8_spinning_trap_blood";
     level._effect[ #"fire_trap_blue" ] = #"hash_5fdb13b4843bc710";
 }
 

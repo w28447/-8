@@ -3721,9 +3721,9 @@ function function_317ab257( localclientnum, menu_name, var_83a11058 )
     level endon( #"disconnect" );
     level endon( menu_name + "_closed" );
     self endon( #"cancel_deathfx" );
-    body_fx = #"hash_521de69029125f63";
-    var_7d89d45 = #"hash_33ffd8c85b4da392";
-    var_e04a6c21 = #"hash_4c04b62047703a60";
+    body_fx = #"impacts/fx8_bul_impact_blood_body_nonfatal_exit";
+    body_fatal_fx = #"impacts/fx8_bul_impact_blood_body_fatal_exit";
+    head_fatal_fx = #"impacts/fx8_bul_impact_blood_head_fatal_exit";
     
     if ( ![[ self ]]->function_ea4ac9f8() )
     {
@@ -3734,9 +3734,9 @@ function function_317ab257( localclientnum, menu_name, var_83a11058 )
     
     if ( isdefined( var_2ae2bfde ) )
     {
-        body_fx = isdefined( var_2ae2bfde.body_fx ) ? var_2ae2bfde.body_fx : #"hash_521de69029125f63";
-        var_7d89d45 = isdefined( var_2ae2bfde.var_7d89d45 ) ? var_2ae2bfde.var_7d89d45 : #"hash_521de69029125f63";
-        var_e04a6c21 = isdefined( var_2ae2bfde.var_e04a6c21 ) ? var_2ae2bfde.var_e04a6c21 : #"hash_4c04b62047703a60";
+        body_fx = isdefined( var_2ae2bfde.body_fx ) ? var_2ae2bfde.body_fx : #"impacts/fx8_bul_impact_blood_body_nonfatal_exit";
+        body_fatal_fx = isdefined( var_2ae2bfde.body_fatal_fx ) ? var_2ae2bfde.body_fatal_fx : #"impacts/fx8_bul_impact_blood_body_nonfatal_exit";
+        head_fatal_fx = isdefined( var_2ae2bfde.head_fatal_fx ) ? var_2ae2bfde.head_fatal_fx : #"impacts/fx8_bul_impact_blood_head_fatal_exit";
     }
     
     self function_ca43d336( localclientnum );
@@ -3769,7 +3769,7 @@ function function_317ab257( localclientnum, menu_name, var_83a11058 )
         {
             var_bee5328d += v_forward;
             var_78a78382 += anglestoforward( ( 0, var_bee5328d[ 1 ], 0 ) );
-            [[ self ]]->function_82e05d64().var_bef648d0 = playfx( localclientnum, var_7d89d45, var_78a78382, anglestoforward( var_bee5328d ), anglestoup( var_bee5328d ) );
+            [[ self ]]->function_82e05d64().var_bef648d0 = playfx( localclientnum, body_fatal_fx, var_78a78382, anglestoforward( var_bee5328d ), anglestoup( var_bee5328d ) );
             wait 0.5;
         }
     }
@@ -3785,7 +3785,7 @@ function function_317ab257( localclientnum, menu_name, var_83a11058 )
         {
             var_7110530b += v_forward;
             var_ad65ea66 += anglestoforward( ( 0, var_7110530b[ 1 ], 0 ) );
-            [[ self ]]->function_82e05d64().var_21cb8ea6 = playfx( localclientnum, var_e04a6c21, var_ad65ea66, anglestoforward( var_7110530b ), anglestoup( var_7110530b ) );
+            [[ self ]]->function_82e05d64().var_21cb8ea6 = playfx( localclientnum, head_fatal_fx, var_ad65ea66, anglestoforward( var_7110530b ), anglestoup( var_7110530b ) );
         }
     }
 }

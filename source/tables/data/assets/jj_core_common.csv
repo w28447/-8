@@ -32,7 +32,7 @@ localizeentry,#hash_5ae6c5061df4c0
 localizeentry,#hash_5d25db15f940bc
 localizeentry,#challenge/gamevictories_master
 localizeentry,#hash_617eae358f7a85
-localizeentry,#hash_65c122a1a0545e
+localizeentry,#coop_score/kill_assist_theia
 localizeentry,#hash_675940c81a33c8
 localizeentry,#wz_escape/map_dest_parade_grounds
 localizeentry,#zm_contract/shotgun_kills
@@ -79,7 +79,7 @@ localizeentry,#hash_10f77bea1805117
 localizeentry,#hash_113df3aac2a3508
 localizeentry,#hash_1204269480d99a2
 localizeentry,#challenge/wildcard_ekia_perk2_greed
-localizeentry,#hash_12747d26ba541b8
+localizeentry,#coop_score/kill_quadtank
 localizeentry,#hash_12aaba8f4724268
 localizeentry,#hash_12cb9f1737e6b11
 localizeentry,#medal/defused_bomb_last_man_alive_desc
@@ -288,7 +288,7 @@ localizeentry,#challenge/perks_kill_lightweight
 localizeentry,#weapon/smg_drum_pistol_t8_desc
 localizeentry,#hash_4042d46613f46cb
 localizeentry,d#hash_40c47b72c083914
-localizeentry,#hash_413ba727298278b
+localizeentry,#coop_score/melee_kill_wasp
 localizeentry,#hash_41b79b5df4d54cd
 localizeentry,#hash_41bd8607166b2be
 localizeentry,#hash_41e483e14fa51b9
@@ -419,7 +419,7 @@ localizeentry,d#hash_5d7eb1442a4f213
 localizeentry,d#menu/months_feb
 localizeentry,#hash_5e312b25aa39a3a
 localizeentry,#hash_5e481a2a425d60a
-localizeentry,#hash_5e4e7dc4792267a
+localizeentry,#coop_score/kill_assault
 localizeentry,#hash_5e5c96032f68efb
 localizeentry,#hash_5e5cc6032f69414
 localizeentry,#hash_5e7a06d7827f961
@@ -496,7 +496,7 @@ localizeentry,d#mpui/quickdraw2_desc
 localizeentry,#hash_714b31066bac563
 localizeentry,#hash_715affdbdb5ae97
 localizeentry,#hash_7179c152ecf1e39
-localizeentry,#hash_717a2e0e7985b90
+localizeentry,#coop_score/kill_assist_robotsniper
 localizeentry,#hash_72065622c5dbccc
 localizeentry,#hash_7255d1169436847
 localizeentry,#challenge/killjoy_end_enemy_specialist_weapon_on_objective
@@ -526,12 +526,12 @@ localizeentry,#emotes/battle_mug
 localizeentry,#hash_77782f954b7f7a0
 localizeentry,#medal/clean_multi_deposit_normal
 localizeentry,#game/vote_gametype
-localizeentry,#hash_7846a0b9cfb20be
+localizeentry,#coop_score/kill_assist_dannyli
 localizeentry,#menu/lb_captures
 localizeentry,d#hash_78f83989b913e0a
 localizeentry,d#weapon/seeker_mine
 localizeentry,#hash_79b3c53eef5924d
-localizeentry,#hash_79e589f0b6ae45e
+localizeentry,#coop_score/melee_kill_robotsuppressor
 localizeentry,#hash_7af3e2b51494242
 localizeentry,#exe/checkpoint_reached
 localizeentry,#hash_7b5ce43aeb4f05c
@@ -556,14 +556,14 @@ localizeentry,#talent/armor_t1_desc
 localizeentry,d#weapon/shotgun_pump_t8
 localizeentry,d#weapon/smg_accurate_t8
 localizeentry,#presence/ct_nomad
-localizeentry,#hash_8272b342b35ff65
+localizeentry,#coop_score/kill_assist_tiger_tank
 localizeentry,#rank/lt_full_n
 localizeentry,#zm_contract/escape_rounds
 localizeentry,#hash_833fc5b8caa5914
 localizeentry,#hash_83b145a001b2952
 localizeentry,#hash_840e885e0995fd4
 localizeentry,#hash_8449daeb976f126
-localizeentry,#hash_8457e2b04fdd1e2
+localizeentry,#coop_score/melee_kill_cqb
 localizeentry,#hash_845a87d333e1805
 localizeentry,#hash_8492933bf8753fd
 localizeentry,#hash_84fb4b0a5677fe6
@@ -602,7 +602,7 @@ localizeentry,#score/stim_assist
 localizeentry,#hash_8cc01aa2d754ecf
 localizeentry,#hash_8d058e51f7b0263
 localizeentry,#emotes/pogo_slam
-localizeentry,#hash_8d67932ef3552af
+localizeentry,#coop_score/kill_assist_hunter
 localizeentry,#tags/caricature_crash
 localizeentry,#hash_8e7a719075772a1
 localizeentry,#hash_8f0061e41602bf2
@@ -619,7 +619,7 @@ localizeentry,d#menu/talisman_box_guarantee_box_only
 localizeentry,#killstreak/overwatch_snipers_desc
 localizeentry,#hash_9113879dca04c51
 localizeentry,#challenge/bootcamp_recover_full_health_from_critical
-localizeentry,#hash_921f24e86efe4e0
+localizeentry,#coop_score/kill_assist_robotdemo
 localizeentry,#hash_926230d8a44e6a1
 localizeentry,#hash_927b4652e0dbcda
 localizeentry,#challenge/mastery_expert_smg_award
@@ -641,7 +641,7 @@ localizeentry,#hash_9644cccc981e86f
 localizeentry,d#hash_9654642b64e8514
 localizeentry,#hash_966e740e8c8d040
 localizeentry,#talent/outlander
-localizeentry,#hash_97781b7dbe26e49
+localizeentry,#coop_score/kill_assist_amws
 localizeentry,#mp/enemy_flag_captured
 localizeentry,#hash_981b93a154bd3cc
 localizeentry,#class/zm_chakram
@@ -743,7 +743,7 @@ localizeentry,#hash_a9f6ee650175a51
 localizeentry,#zmui/trials_caps
 localizeentry,#zmui/bgb_aftertaste_desc
 localizeentry,#game/nospectatorvote
-localizeentry,#hash_ac82385ae41deef
+localizeentry,#coop_score/melee_kill_robotsniper
 localizeentry,#menu/capture_and_hold_the
 localizeentry,#hash_acfd672f8aaac93
 localizeentry,#hash_acfd972f8aab1ac
@@ -824,7 +824,7 @@ localizeentry,#hash_bd40524fbfce6c4
 localizeentry,#hash_bd4929f227caa4e
 localizeentry,#challenge/darkops_kill_enemy_after_surviving_rcxd
 localizeentry,d#weapon/semtexcluster
-localizeentry,#hash_bdb1cfc6331958f
+localizeentry,#coop_score/kill_assist_suppressor
 localizeentry,#groups/enter_group_name
 localizeentry,#heroes/replacer
 localizeentry,#hash_be27c322e107ce2
@@ -863,7 +863,7 @@ localizeentry,#tags/default_02
 localizeentry,#tags/default_05
 localizeentry,#tags/default_04
 localizeentry,#tags/default_06
-localizeentry,#hash_c6453704470df0a
+localizeentry,#coop_score/kill_assist_wasp
 localizeentry,#hash_c7284c1e57d4db5
 localizeentry,#emotes/happy_hour
 localizeentry,d#hash_c78328ff7303b63
@@ -946,14 +946,14 @@ localizeentry,#menu/victorious_tortoise
 localizeentry,#menu/zombshell_mod
 localizeentry,#hash_d83c1772a532421
 localizeentry,d#hash_d8622d38b0078a8
-localizeentry,#hash_d87336964c675a1
+localizeentry,#coop_score/melee_kill_parasite
 localizeentry,#hash_d87b9e21dbfba71
 localizeentry,#hash_d8ac2a51f6368e8
 localizeentry,#hash_d8d9dbe51a2c2a7
 localizeentry,#menu/lb_confirms
 localizeentry,#hash_d928ef62f09dc34
 localizeentry,d#menu/lobby
-localizeentry,#hash_da97f8ff4473090
+localizeentry,#coop_score/kill_assist_robotsapper
 localizeentry,#class/zm_katana
 localizeentry,#hash_dae674d050f8158
 localizeentry,#hash_db14fb106476d87
@@ -994,7 +994,7 @@ localizeentry,#hash_e1f7f30fc7a6c2e
 localizeentry,#mp/waiting_for_players_shoutcaster
 localizeentry,#hash_e2871bfa7c93671
 localizeentry,d#hash_e2971bbfafcfe66
-localizeentry,#hash_e2ab212efe6af1a
+localizeentry,#coop_score/kill_parasite
 localizeentry,d#hash_e2baa8ffbc54c6a
 localizeentry,#emotes/surrender
 localizeentry,#hash_e389b600aa6eede
@@ -1210,7 +1210,7 @@ localizeentry,d#mpui/dw
 localizeentry,d#mpui/camo_dante
 localizeentry,#hash_11894c88451b8c54
 localizeentry,#menu/demo_max_segments_reached
-localizeentry,#hash_11918fdcc7284eee
+localizeentry,#coop_score/melee_kill_robotsoldier
 localizeentry,#medal/hellstorm_missile_kill
 localizeentry,#hash_119acb5427fe027a
 localizeentry,#platform/usevehiclegunner
@@ -1253,7 +1253,7 @@ localizeentry,#hash_12391f016ab20e0f
 localizeentry,#hash_123ae4a60ccf6bfd
 localizeentry,#weapon/sf
 localizeentry,#medal/swat_team_killjoy_desc
-localizeentry,#hash_123f87024e0b24c9
+localizeentry,#coop_score/kill_assist_robotsuppressor
 localizeentry,#hash_1246274f7b4e132f
 localizeentry,#mp/explosives_planted_by
 localizeentry,#hash_1249c752f0063653
@@ -1267,7 +1267,7 @@ localizeentry,d#hash_12603565a9c4ccd5
 localizeentry,#xboxlive/signedoutoflive
 localizeentry,#zm_contract/wonder_weapon_kills
 localizeentry,d#hash_1264a46ec0d1a356
-localizeentry,#hash_126848e9d71d870d
+localizeentry,#coop_score/kill_pamws
 localizeentry,#menu/join_denied_public_probation
 localizeentry,#hash_12780400b9b6d9c4
 localizeentry,#hash_127a308e747ba383
@@ -1277,7 +1277,7 @@ localizeentry,#weapon/eq_smoke_desc
 localizeentry,#mpui/ekia_ratio
 localizeentry,#hash_1297545e48d65c9f
 localizeentry,d#challenge/darkops_multikill_5_desc
-localizeentry,#hash_12a3c97dcc213d85
+localizeentry,#coop_score/kill_hunter
 localizeentry,#medal/multikill_5_desc
 localizeentry,#hash_12a79ea45d9b2686
 localizeentry,#hash_12a8f8045fd94671
@@ -1294,7 +1294,7 @@ localizeentry,d#menu/arena_maintenance_caps
 localizeentry,#hash_12e4a9fcc89f7691
 localizeentry,#hash_12e6d4b743967827
 localizeentry,#emotes/kiss_the_cook
-localizeentry,#hash_12e8754512792541
+localizeentry,#coop_score/kill_assist_gomin
 localizeentry,#hash_12ec236168355fda
 localizeentry,#hash_12efece39ad28e2d
 localizeentry,#mp/3rd
@@ -1305,7 +1305,7 @@ localizeentry,#hash_1303385b42601fb9
 localizeentry,#medal/dart_kill
 localizeentry,#hash_130770fb34e0148d
 localizeentry,#medal/escort_robot_escort_goal_desc
-localizeentry,#hash_1308a016b647ce49
+localizeentry,#coop_score/kill_assist_concussion
 localizeentry,#rank/2ndlt_full2
 localizeentry,#rank/2ndlt_full3
 localizeentry,d#class/sentinel
@@ -1332,9 +1332,9 @@ localizeentry,#mpui/last_met_n_hours_ago
 localizeentry,#hash_137ef28b08b28233
 localizeentry,#bonuscard/primary_operator_mod_short
 localizeentry,#emotes/summer_delight
-localizeentry,#hash_13a0889e5a9c36eb
+localizeentry,#coop_score/melee_kill_robotsapper
 localizeentry,#hash_13a32b690b0cf2c8
-localizeentry,#hash_13a3b2be7987b6d1
+localizeentry,#coop_score/kill_lotus_gunship
 localizeentry,#hash_13a9ed44a7554209
 localizeentry,#medal/traversal_kill
 localizeentry,#menu/demo_total_duration_less_than_one
@@ -1380,7 +1380,7 @@ localizeentry,#tags/barbarians_02
 localizeentry,#tags/barbarians_05
 localizeentry,#tags/barbarians_04
 localizeentry,#tags/barbarians_06
-localizeentry,#hash_1442c96c332a761d
+localizeentry,#coop_score/melee_kill_vtol
 localizeentry,#hash_1450c776c6020de5
 localizeentry,d#zmui/bgb_now_you_see_me
 localizeentry,#hash_1454641b6ab0c05d
@@ -1684,12 +1684,12 @@ localizeentry,#hash_18b7a04e895ea48a
 localizeentry,#hash_18c0f9113c342f70
 localizeentry,#hash_18c1b3e7d9641b3f
 localizeentry,#hash_18c537082af95584
-localizeentry,#hash_18cdcf7b6df5b536
+localizeentry,#coop_score/kill_vtol
 localizeentry,#menu/talisman_impatient_desc
 localizeentry,#mp/ctf_overtime_round_2_loser
 localizeentry,d#challenge/gameheroics_master_desc
 localizeentry,#hash_18d4ab91dd5e22fd
-localizeentry,#hash_18da44a6ebfcf0eb
+localizeentry,#coop_score/melee_kill_macv
 localizeentry,#hash_18dc9f10254df03c
 localizeentry,#hash_18dca010254df1ef
 localizeentry,d#hash_18de839538fc52b3
@@ -1817,7 +1817,7 @@ localizeentry,#hash_1a9fb1870dbd3755
 localizeentry,#challenge/mastery_expert_desc
 localizeentry,#mpui/error_caps
 localizeentry,#hash_1aaf0cf773d21317
-localizeentry,#hash_1abbc16e6038861d
+localizeentry,#coop_score/kill_zombie
 localizeentry,#hash_1abc3e659bfd69df
 localizeentry,#zm_challenges/survivalist_survive_rounds
 localizeentry,#contract/lmg_kills
@@ -1847,7 +1847,7 @@ localizeentry,#hash_1b41bda0337255bd
 localizeentry,#exe/cod_temp_ban_minutes
 localizeentry,#talent/stimulant_desc
 localizeentry,#medal/revenge_kill
-localizeentry,#hash_1b56d0d11cf86ac9
+localizeentry,#coop_score/melee_kill_theia
 localizeentry,#challenge/weapon_noattachment_award
 localizeentry,#contract/play_control_desc
 localizeentry,#menu/demo_dollycam_speed_setting_linear
@@ -1902,7 +1902,7 @@ localizeentry,#hash_1c31248c2c8f9edf
 localizeentry,#hash_1c31258c2c8fa092
 localizeentry,#hash_1c31268c2c8fa245
 localizeentry,d#xboxlive/noguestaccounts
-localizeentry,#hash_1c39fd37f387be5b
+localizeentry,#coop_score/award_calling_card
 localizeentry,#hash_1c489083f5cdb3f6
 localizeentry,#menu/days_tue
 localizeentry,d#hash_1c4d12f7e3a1ca7b
@@ -1939,8 +1939,8 @@ localizeentry,#zmtrials/deathcon
 localizeentry,#hash_1cccdf3e71b5d14b
 localizeentry,#hash_1cccf42405720988
 localizeentry,#hash_1ccd0489623dd5f7
-localizeentry,#hash_1cd8771967e3f16c
-localizeentry,#hash_1cdb36538ab697f1
+localizeentry,#coop_score/complete_mission_veteran
+localizeentry,#coop_score/kill_assist_raps
 localizeentry,#hash_1cdf3b97c08c76bd
 localizeentry,#objectives/dom_hint
 localizeentry,#hash_1ce88dc99937bd86
@@ -1957,7 +1957,7 @@ localizeentry,d#class/slot3
 localizeentry,d#hash_1d0a5ef6dfa88559
 localizeentry,#hash_1d0b67a7783104fe
 localizeentry,#hash_1d101d6b8ed614f8
-localizeentry,#hash_1d22ce29d2618dd1
+localizeentry,#coop_score/complete_mission_heroic
 localizeentry,#key/lctrl
 localizeentry,#hash_1d25161cb6ea2fef
 localizeentry,#hash_1d25924ca477662e
@@ -2002,7 +2002,7 @@ localizeentry,#game/cheatsnotenabled
 localizeentry,#key/f10
 localizeentry,#key/f11
 localizeentry,#key/f12
-localizeentry,#hash_1de09dbc99e6a892
+localizeentry,#coop_score/kill_robotsapper
 localizeentry,#objectives/koth_score
 localizeentry,#hash_1dec6bef788c1b08
 localizeentry,#hash_1dfe770ed272a831
@@ -2036,7 +2036,7 @@ localizeentry,d#hash_1e707de859bae530
 localizeentry,d#hash_1e74ae356247c01a
 localizeentry,#medal/kill_enemy_injuring_teammate_desc
 localizeentry,#tags/muertos_battery
-localizeentry,#hash_1e8b2f238626167a
+localizeentry,#coop_score/melee_kill_robotcqb
 localizeentry,#contract/specialist_equipment_multikills
 localizeentry,#hash_1eaf1ed02634faf3
 localizeentry,#hash_1eb2c64b75e85366
@@ -2069,7 +2069,7 @@ localizeentry,#hash_1f10e5458d9bdc5f
 localizeentry,d#hash_1f128bd324460602
 localizeentry,#menu/demo_lightman_max_points
 localizeentry,#hash_1f1ee8e45151f7c3
-localizeentry,#hash_1f21a9ee6514b27f
+localizeentry,#coop_score/pickup_collectible
 localizeentry,#contract/trophy_system_defense_desc
 localizeentry,#score/kill_gun
 localizeentry,#contract/blood_thirsty
@@ -2101,7 +2101,7 @@ localizeentry,#hash_1f7e54600499d61a
 localizeentry,d#weapon/smg_fastburst_t8_desc
 localizeentry,#weapon/local_heal_desc
 localizeentry,#talent/paranoia_desc
-localizeentry,#hash_1f8c785f64cb471b
+localizeentry,#coop_score/kill_assist_robotcqb
 localizeentry,#hash_1f8e875c66da10b3
 localizeentry,#hash_1f8f84cd08d76874
 localizeentry,#hash_1f8f85cd08d76a27
@@ -2221,7 +2221,7 @@ localizeentry,#hash_2137a2e83efbaa9d
 localizeentry,d#zmui/bgb_arsenal_accelerator
 localizeentry,#hash_2141b7df98791d1e
 localizeentry,#hash_21470103c18f7bfd
-localizeentry,#hash_2148659a87162a77
+localizeentry,#coop_score/kill_raps
 localizeentry,#hash_214f8987d40f209d
 localizeentry,#wz/attach_laser_sight
 localizeentry,#hash_21628c7872e4d42c
@@ -2319,7 +2319,7 @@ localizeentry,#menu/wolf_protector
 localizeentry,#hash_22f0ed1c5d2f3a48
 localizeentry,#hash_22f5cd6c9d5b7484
 localizeentry,#hash_22f76a2f0d05e31f
-localizeentry,#hash_22f851a2c213a005
+localizeentry,#coop_score/melee_kill_warlord
 localizeentry,#menu/store_zmpacks
 localizeentry,#hash_2303fe8649a07cf1
 localizeentry,#weapon/acid_bomb
@@ -2395,7 +2395,7 @@ localizeentry,#weapon/lmg_heavy_t8_desc
 localizeentry,#score/flag_capture
 localizeentry,d#hash_23ef750d826bae90
 localizeentry,#hash_23eff28a1691940d
-localizeentry,#hash_23f8ab9779d23698
+localizeentry,#coop_score/kill_assist_assault
 localizeentry,#weapon/gadget_denied_already_active
 localizeentry,#challenge/weaponproficiency_career_kills
 localizeentry,d#mpui/dualoptic_desc
@@ -2472,7 +2472,7 @@ localizeentry,#hash_24db6aba9b77deb7
 localizeentry,#hash_24db6bba9b77e06a
 localizeentry,#hash_24db6cba9b77e21d
 localizeentry,d#challenge/bootcamp_kill_while_underwater_desc
-localizeentry,#hash_24e6cc81efc2160f
+localizeentry,#score/dart_destroyed
 localizeentry,#hash_24eaacc1367d00fc
 localizeentry,#hash_24ebd120cd79746f
 localizeentry,#weapon/uber_speedcenter_desc
@@ -2503,7 +2503,7 @@ localizeentry,d#hash_254ab7013d677953
 localizeentry,#hash_254b123b81f213e5
 localizeentry,#hash_254dd648b29d0dea
 localizeentry,#mp/launcher_unavailable_for_n
-localizeentry,#hash_2550ea4c153dfb9b
+localizeentry,#coop_score/melee_kill_assault
 localizeentry,#weapon/mute_smoke_desc
 localizeentry,#emotes/jamn_on_the_one
 localizeentry,d#menu/camo_loot_shimmer
@@ -2525,7 +2525,7 @@ localizeentry,#hash_2591943cdd75f363
 localizeentry,d#hash_2591963cdd75f6c9
 localizeentry,#weapon/smg_drum_pistol_t8
 localizeentry,#hash_2599ce66a90d4432
-localizeentry,#hash_259ed3ef4dd9bd1b
+localizeentry,#coop_score/kill_assist_depth_charge
 localizeentry,#hash_259f64664b1b4d4e
 localizeentry,#hash_25a2d82476428ac4
 localizeentry,#hash_25abe49a49fbae82
@@ -2622,7 +2622,7 @@ localizeentry,#hash_26ab966800371262
 localizeentry,#hash_26ad5a1835c06534
 localizeentry,d#hash_26adc6b84f143b29
 localizeentry,#feature/default_class5_desc
-localizeentry,#hash_26b8062355b28d2e
+localizeentry,#coop_score/kill_assist_warlord
 localizeentry,#menu/lb_disables
 localizeentry,#hash_26bac3a97643b80b
 localizeentry,d#gadget_radiation_field/name
@@ -2634,7 +2634,7 @@ localizeentry,#hash_26cec63e356f25a4
 localizeentry,d#hash_26cec93e356f2abd
 localizeentry,#mpui/nuketown_4
 localizeentry,#hash_26ddcb133013e451
-localizeentry,#hash_26e11a65ec989ad5
+localizeentry,#score/overwatch_helicopter_destroyed
 localizeentry,#hash_26e3849db019fe4d
 localizeentry,d#menu/sysinfo_nat_type_open_lobby
 localizeentry,#hash_26ed695fddf597f3
@@ -2683,13 +2683,13 @@ localizeentry,#hash_2793ecc383c9cd69
 localizeentry,d#hash_27a2a2b71e49149d
 localizeentry,#hash_27a2da88cdb31061
 localizeentry,#medal/uav_killjoy_desc
-localizeentry,#hash_27abd7ec98b7230c
+localizeentry,#score/gravityspikes_kill
 localizeentry,#medal/revenge_kill_desc
-localizeentry,#hash_27b2fbedcb605440
+localizeentry,#coop_score/kill_theia
 localizeentry,#hash_27b39c9228b02d3f
 localizeentry,#hash_27b6370099fd52ea
 localizeentry,#hash_27b869ac14830908
-localizeentry,#hash_27b991db03ad2397
+localizeentry,#coop_score/accolade_infection_score
 localizeentry,#zmui/standard_caps
 localizeentry,#hash_27be7d22dcb92638
 localizeentry,#hash_27be7e22dcb927eb
@@ -2714,14 +2714,14 @@ localizeentry,#hash_27e2a9ffea27976c
 localizeentry,#score/hardpoint_kill
 localizeentry,#hash_27e482156e8378a8
 localizeentry,#key/or
-localizeentry,#hash_27e5d3cb73b00653
+localizeentry,#coop_score/kill_assist_turret
 localizeentry,#hash_27e5dfd9dc7d261b
 localizeentry,#objectives/sd_attacker_score
 localizeentry,d#menu/months_sep
 localizeentry,#hash_27ec863426c7f9ef
 localizeentry,#hash_27f30623c3ad681e
 localizeentry,#hash_27f6d7ded638b361
-localizeentry,#hash_27fbf4ad15972346
+localizeentry,#coop_score/complete_mission_hardened
 localizeentry,d#hash_27fdf05c62ccecdd
 localizeentry,#medal/war_killed_enemy_while_capping_control_desc
 localizeentry,#key/f9
@@ -2746,7 +2746,7 @@ localizeentry,#hash_28358d7f218d9950
 localizeentry,d#hash_283a8dd17e52fc64
 localizeentry,#zm_contract/rush_wins
 localizeentry,#hash_284c29ae2d83d53f
-localizeentry,#hash_2855dec74aef2e5d
+localizeentry,#coop_score/shield_blocked_damage_reduced
 localizeentry,#hash_2855e8fe94593c64
 localizeentry,d#zmui/ztutorial_desc
 localizeentry,#wz_escape/map_dest_shipwreck
@@ -2772,7 +2772,7 @@ localizeentry,#hash_28c01891e689ccbd
 localizeentry,d#hash_28c8b5bbf9a3e644
 localizeentry,d#mpui/fmj2_desc
 localizeentry,#hash_28ca9054987f2fcb
-localizeentry,#hash_28d6414c18f17e04
+localizeentry,#coop_score/kill_macv
 localizeentry,d#feature/custom_class6
 localizeentry,d#feature/custom_class4
 localizeentry,d#feature/custom_class5
@@ -2928,7 +2928,7 @@ localizeentry,#hash_2b99a2cafed13c5a
 localizeentry,#zmui/bgb_now_you_see_me_desc
 localizeentry,#hash_2ba92b838dd6b186
 localizeentry,#hash_2baa225f38f886af
-localizeentry,#hash_2bada5f93505dfe4
+localizeentry,#score/care_package_destroyed
 localizeentry,#hash_2bb32441107b5fea
 localizeentry,#hash_2bc8378adfc1737c
 localizeentry,#medal/assisted_suicide_desc
@@ -2992,7 +2992,7 @@ localizeentry,#zm_contract/trap_kills_desc
 localizeentry,d#hash_2cba75de84c17293
 localizeentry,d#weapon/launcher_standard_t8
 localizeentry,#hash_2cc559c5033d358f
-localizeentry,#hash_2ccc429a801dbf68
+localizeentry,#coop_score/melee_kill_robotrocketeer
 localizeentry,#hash_2ccca9c44e8fde5f
 localizeentry,#score/spectre_smoke_assist
 localizeentry,#hash_2cd7b64166b9eca8
@@ -3056,7 +3056,7 @@ localizeentry,#hash_2dcef906736f45f9
 localizeentry,#hash_2dd018c4de2e6ba6
 localizeentry,d#hash_2dd15607a749cf15
 localizeentry,#hash_2dd20603757b0269
-localizeentry,#hash_2dd3e5a260ef3726
+localizeentry,#score/uav_destroyed
 localizeentry,#hash_2dd9b243f4c05fbc
 localizeentry,#xboxlive/signinchanged
 localizeentry,d#hash_2ddfd4dacf1faf6f
@@ -3129,7 +3129,7 @@ localizeentry,#hash_2eb8581ff6899582
 localizeentry,#hash_2eb8591ff6899735
 localizeentry,#platform/demo_config_dpad_left
 localizeentry,#weapon/local_heal
-localizeentry,#hash_2ecb8ef5bf6de3c5
+localizeentry,#coop_score/kill_assist_robotrocketeer
 localizeentry,#hash_2ed10f5e91a70c68
 localizeentry,#wz_open_skyscrapers/map_dest_array
 localizeentry,#hash_2ed365abffd14143
@@ -3339,7 +3339,7 @@ localizeentry,d#hash_322e8b59d8859785
 localizeentry,#hash_323604e7b8b3c2ad
 localizeentry,#weapon/target_out_of_range
 localizeentry,#hash_323c7dc6a618ba91
-localizeentry,#hash_323df30825103088
+localizeentry,#coop_score/kill_warlord
 localizeentry,#talent/cold_blooded
 localizeentry,#hash_3244dd793ae537d6
 localizeentry,#hash_3249a5a828b0d8ae
@@ -3499,7 +3499,7 @@ localizeentry,d#hash_34a1412bd528e2b8
 localizeentry,d#mpui/stabs
 localizeentry,#wz/woods_caps
 localizeentry,#mpui/full_auto
-localizeentry,#hash_34ba64196d3915cf
+localizeentry,#coop_score/kill_robotrocketeer
 localizeentry,#hash_34beecef5d7f74d0
 localizeentry,#hash_34c196ce3d0a7583
 localizeentry,#challenge/type_hp
@@ -3698,7 +3698,7 @@ localizeentry,#hash_37c233dd17a73d23
 localizeentry,#menu/days_fri
 localizeentry,#hash_37c98ceeb1b8dfd3
 localizeentry,#hash_37cc92e07acaa4ae
-localizeentry,#hash_37cd44b72ec7021a
+localizeentry,#coop_score/award_accolade
 localizeentry,#bonuscard/perk_2_greed_short
 localizeentry,#weapon/grenades_not_allowed
 localizeentry,#score/hacked_equipment
@@ -3795,7 +3795,7 @@ localizeentry,#hash_3921fdcc4a67a525
 localizeentry,#hash_392d7b94e280b50f
 localizeentry,#hash_392dfe0f9a83371f
 localizeentry,d#mpui/killcounter
-localizeentry,#hash_39532c0759be0628
+localizeentry,#coop_score/melee_kill_amws
 localizeentry,#menu/offline_lobby
 localizeentry,#mpui/desc_geothermal
 localizeentry,d#hash_3963c3e923f20726
@@ -3810,7 +3810,7 @@ localizeentry,#hash_3981bcfc33da7c0d
 localizeentry,d#hash_3985f2f816999c75
 localizeentry,#hash_398604b6ebb4da99
 localizeentry,#rank/cpt_full_n
-localizeentry,#hash_3988ded028ad8813
+localizeentry,#coop_score/kill_robotsuppressor
 localizeentry,#zmui/bgb_ctrl_z_desc
 localizeentry,#zm_challenges/survivalist_buy_magic_box
 localizeentry,d#mpui/grip_desc
@@ -3844,7 +3844,7 @@ localizeentry,#hash_3a1e617f1d018e94
 localizeentry,#hash_3a2055a428f8aa04
 localizeentry,#hash_3a21c509e26b07a4
 localizeentry,#hash_3a27918a9d54786b
-localizeentry,#hash_3a285a28854ef3f7
+localizeentry,#coop_score/kill_amws
 localizeentry,d#mpui/camo_active_showstopper
 localizeentry,d#challenge/perks_kill_lightweight_desc
 localizeentry,#weapon/uber_dualwield
@@ -3895,7 +3895,7 @@ localizeentry,d#hash_3ae42f7d6eabab5a
 localizeentry,d#hash_3ae80ef6ea79f903
 localizeentry,#menu/minutes_abbreviation
 localizeentry,#hash_3af183b305492f61
-localizeentry,#hash_3af3f592423e8bf0
+localizeentry,#coop_score/melee_kill_rocketeer
 localizeentry,#hash_3afbdc04a0d16f1b
 localizeentry,#mpui/revives
 localizeentry,#menu/staminup_mod
@@ -3934,11 +3934,11 @@ localizeentry,#hash_3b74264982fc17b9
 localizeentry,#hash_3b7574758a2049ce
 localizeentry,#hash_3b76740d5dc4992b
 localizeentry,#hash_3b78e32a22c0be7c
-localizeentry,#hash_3b8311d04c1b6993
+localizeentry,#coop_score/kill_assist_rocketeer
 localizeentry,d#heroes/enforcer
 localizeentry,#hash_3b8a13a7a35bfb30
 localizeentry,#hash_3b8d3200633693e0
-localizeentry,#hash_3b8d60112af6a672
+localizeentry,#score/warthog_destroyed
 localizeentry,#hash_3b8fe5d823f60c86
 localizeentry,#objectives/infect
 localizeentry,#medal/retrieve_own_tags_desc
@@ -4108,7 +4108,7 @@ localizeentry,#hash_3e567c220f7511e6
 localizeentry,#hash_3e59b2d23ee9184c
 localizeentry,#hash_3e5c72aa389ce5b2
 localizeentry,#menu/bandolier_desc
-localizeentry,#hash_3e69d643450a281f
+localizeentry,#coop_score/kill_tiger_tank
 localizeentry,#hash_3e6de6e1b244aa9b
 localizeentry,#platform/follownextplayer_mouse
 localizeentry,d#heroes/technomancer
@@ -4187,7 +4187,7 @@ localizeentry,#challenge/handling_attachment_ekia
 localizeentry,d#zmui/bgb_nowhere_but_there
 localizeentry,#mpui/frenetic
 localizeentry,#menu/talisman_perk_start_2_desc
-localizeentry,#hash_3fba5a614607e3c9
+localizeentry,#coop_score/kill_robotcqb
 localizeentry,#hash_3fc19442246ea776
 localizeentry,#score/killed_enemy_while_carrying_flag
 localizeentry,d#hash_3fc7d2473d4b18ea
@@ -4294,7 +4294,7 @@ localizeentry,#score/neutral_position_secure
 localizeentry,#hash_416a2ad60889ae48
 localizeentry,#bonuscard/secondary_gunfighter_3_short
 localizeentry,#hash_41746926408b72ed
-localizeentry,#hash_417472ec44d85adc
+localizeentry,#coop_score/shield_blocked_damage
 localizeentry,#hash_4176d961d96c5d98
 localizeentry,#contract/attachments5_primary_ekia
 localizeentry,#hash_4189ac87a715908b
@@ -4303,7 +4303,7 @@ localizeentry,#groups/error_unknown
 localizeentry,#score/ice_pick_shutdown
 localizeentry,#menu/victorious_tortoise_mod
 localizeentry,#menu/death_dash_mod
-localizeentry,#hash_41995431bce45dcf
+localizeentry,#coop_score/player_did_revive
 localizeentry,#zmweapon/hero_flamethrower_s1_desc
 localizeentry,#hash_41a54217700f3d98
 localizeentry,#hash_41afc1948219ec6e
@@ -4427,7 +4427,7 @@ localizeentry,#weapon/snowball
 localizeentry,#hash_43aa31025e53ab20
 localizeentry,#hash_43ac4913d79d105c
 localizeentry,d#hash_43b0cfc850dbcc04
-localizeentry,#hash_43dac25dc601c8cd
+localizeentry,#coop_score/kill_assist_flash
 localizeentry,#score/shamrock_enemy_deposit
 localizeentry,#hash_43dd7f0817ffa7a2
 localizeentry,#platform/nomotd
@@ -4459,7 +4459,7 @@ localizeentry,#hash_44630ced7ddeb58a
 localizeentry,#hash_44630ded7ddeb73d
 localizeentry,#hash_447a3e5055f27129
 localizeentry,#menu/sysinfo_nat_type_open
-localizeentry,#hash_4486dbb656ee335d
+localizeentry,#score/rcxd_destroyed
 localizeentry,#emotes/gag
 localizeentry,#hash_44920e148e4fcf16
 localizeentry,d#weapon/ar_peacekeeper_t8_desc
@@ -4475,7 +4475,7 @@ localizeentry,#hash_44b48cb82a40409c
 localizeentry,#hash_44b658c5dabc378b
 localizeentry,#hash_44b70b29ed32922a
 localizeentry,d#hash_44bd0e430d0ca41d
-localizeentry,#hash_44c1f547abf4fa8c
+localizeentry,#coop_score/kill_assist_technical
 localizeentry,#menu/sysinfo_nat_type_moderate
 localizeentry,#game/ufoon
 localizeentry,d#hash_44d4404723658aa0
@@ -4492,7 +4492,7 @@ localizeentry,#mp/play_of_the_match
 localizeentry,#emotes/tworque
 localizeentry,#hash_44fc6480367c263c
 localizeentry,d#killstreak/uav
-localizeentry,#hash_44ffcd0ad714dc9d
+localizeentry,#score/cuav_destroyed
 localizeentry,#hash_45050f17dacada55
 localizeentry,#game/unknownclientcommand
 localizeentry,#zmweapon/ray_gun_mk2z
@@ -4572,7 +4572,7 @@ localizeentry,d#zmui/bgb_alchemical_antithesis
 localizeentry,d#mpui/holo
 localizeentry,#platform/invite_not_joinable_privacy_closed
 localizeentry,#hash_462df7675dc24d45
-localizeentry,#hash_462ecb177997cf5f
+localizeentry,#coop_score/kill_gomin
 localizeentry,#zmui/bgb_shields_up_desc
 localizeentry,#mpui/icebreaker
 localizeentry,d#hash_464b98607bdf1e34
@@ -4777,7 +4777,7 @@ localizeentry,#medal/kill_enemy_who_killed_teammate_desc
 localizeentry,#rank/gysgt_full2
 localizeentry,#rank/gysgt_full3
 localizeentry,#challenge/weapon_revenge
-localizeentry,#hash_4993b768bb31e375
+localizeentry,#score/tank_robot_destroyed
 localizeentry,#hash_49a891cb0a25d88a
 localizeentry,#hash_49ae320ffeece366
 localizeentry,d#killstreak/drone_squadron
@@ -4808,7 +4808,7 @@ localizeentry,d#hash_4a0bcd8f9bd6da40
 localizeentry,#weapon/gadget_health_regen_large_desc
 localizeentry,#hash_4a11480df7513962
 localizeentry,#hash_4a121fc2f4c37c19
-localizeentry,#hash_4a13bf8a44475d80
+localizeentry,#coop_score/melee_kill_raps
 localizeentry,#hash_4a18209112e5c9f3
 localizeentry,#killstreak/uav_desc
 localizeentry,#hash_4a24740941328c2e
@@ -4842,7 +4842,7 @@ localizeentry,#exe/month_abv_jun
 localizeentry,#emotes/home_run
 localizeentry,#hash_4ab3fd4294c21d31
 localizeentry,#hash_4ab41a680707e55f
-localizeentry,#hash_4ab80c76f87352e8
+localizeentry,#coop_score/kill_assist_vtol
 localizeentry,#hash_4abd192255393c9e
 localizeentry,d#hash_4abd93f224ee6e2e
 localizeentry,#hash_4ac04c3a652fc5f1
@@ -4884,7 +4884,7 @@ localizeentry,d#hash_4b7b6b19245dd21f
 localizeentry,#tags/muertos_ruin
 localizeentry,#hash_4b7e6e2cb491165c
 localizeentry,d#zmui/bgb_pop_shocks
-localizeentry,#hash_4b853e901371ee67
+localizeentry,#coop_score/melee_kill_sniper
 localizeentry,d#hash_4b8dd4c97c2df5b1
 localizeentry,d#weapon/smg_minigun_t8_desc
 localizeentry,#hash_4b97e078ff6d29de
@@ -4944,8 +4944,8 @@ localizeentry,#menu/talisman_special_startlv2_desc
 localizeentry,#heroes/zombie_female
 localizeentry,#hash_4c54ecd9dfb3b3fd
 localizeentry,#medal/prop_killed_all_props_desc
-localizeentry,#hash_4c5cd9cb9504a47c
-localizeentry,#hash_4c61f0b6d3e18961
+localizeentry,#coop_score/melee_kill_tiger_tank
+localizeentry,#coop_score/kill_turret
 localizeentry,d#hash_4c6815d9163e5871
 localizeentry,#hash_4c778ee9a8587639
 localizeentry,#medal/overwatch_helicopter_kill_desc
@@ -5021,7 +5021,7 @@ localizeentry,#challenge/humiliation_backfire
 localizeentry,#hash_4d8ef7c3e1b8f835
 localizeentry,#hash_4d930da68940707c
 localizeentry,#hash_4d9b34ae24036c36
-localizeentry,#hash_4d9be11ce732ee26
+localizeentry,#coop_score/kill_assist_macv
 localizeentry,#hash_4da5806e83b24f57
 localizeentry,#zm_contract/gauntlet_rounds_desc
 localizeentry,#hash_4db8f6557b2d74bd
@@ -5058,7 +5058,7 @@ localizeentry,#hash_4e413fbdde10b051
 localizeentry,#hash_4e4c0b523a014ab9
 localizeentry,#hash_4e4dd26f32c009e8
 localizeentry,#hash_4e4e3963ae2a75e5
-localizeentry,#hash_4e4fdd30b7ca2e16
+localizeentry,#coop_score/kill_assist_goxiulan
 localizeentry,#zm_contract/kills_desc
 localizeentry,#weapon/ar_mg1909_t8_desc
 localizeentry,#hash_4e5d28473f46f3bb
@@ -5077,7 +5077,7 @@ localizeentry,#zm_contract/move_box_desc
 localizeentry,d#platform/options_network_not_signed_in
 localizeentry,#rank/lcpl_full
 localizeentry,#exe/ext_msg_loot_incident_approved
-localizeentry,#hash_4ec5851b161d0fa7
+localizeentry,#coop_score/kill_assist_lotus_gunship
 localizeentry,#score/golden_ammo_kill
 localizeentry,#hash_4ec7532b4d5db1e2
 localizeentry,#score/shamrock_enemy_collect
@@ -5114,7 +5114,7 @@ localizeentry,#contract/play_gun_game
 localizeentry,#hash_4f302645bf68b519
 localizeentry,#menu/demo_highlight_reel_found
 localizeentry,#hash_4f3201489095f493
-localizeentry,#hash_4f328d20aa0e3e8e
+localizeentry,#coop_score/kill_robotdemo
 localizeentry,#hash_4f37dd68b2a5e38e
 localizeentry,d#weapon/sniper_powerbolt_t8
 localizeentry,#hash_4f3cf83acbaa0cd2
@@ -5136,7 +5136,7 @@ localizeentry,#platform/invite_friend_offline
 localizeentry,#hash_4f878e789fcfd0a1
 localizeentry,#class/zm_scepter
 localizeentry,#menu/end_of_beta_unexpected
-localizeentry,#hash_4f9629defd152a00
+localizeentry,#coop_score/melee_kill_pamws
 localizeentry,#mp/ended_game
 localizeentry,d#hash_4f99bcb4b9950fd9
 localizeentry,#hash_4fa1ca99240c789e
@@ -5341,7 +5341,7 @@ localizeentry,d#hash_5215419b58749412
 localizeentry,#hash_5216b0b790ee3d7c
 localizeentry,#hash_5216b1b790ee3f2f
 localizeentry,#medal/zeroed_out_desc
-localizeentry,#hash_52200724f614dd0a
+localizeentry,#coop_score/melee_kill_hunter
 localizeentry,#hash_522151067d0735bd
 localizeentry,#hash_5224528097647d8d
 localizeentry,#hash_52247a50022aea27
@@ -5374,7 +5374,7 @@ localizeentry,#hash_526fcc5b87e9beb9
 localizeentry,#weapon/shotgun_pump_t8_desc
 localizeentry,#hash_5279b360abe18023
 localizeentry,#hash_527e9c27c50ebbd6
-localizeentry,#hash_52821ef5665dad77
+localizeentry,#coop_score/melee_kill_technical
 localizeentry,#rank/ltcol_full
 localizeentry,#feature/custom_class5_desc
 localizeentry,#hash_528fb3b684b78575
@@ -5439,7 +5439,7 @@ localizeentry,#hash_538fd1ccc3f31222
 localizeentry,d#weapon/melee_actionfigure_t8
 localizeentry,d#hash_539e0b798546e3ff
 localizeentry,#talent/looter_desc
-localizeentry,#hash_53a21a097988cf7e
+localizeentry,#coop_score/kill_assist_proximity
 localizeentry,#hash_53a6aaae52503edf
 localizeentry,d#hash_53a6abae52504092
 localizeentry,#menu/twitch_password
@@ -5451,7 +5451,7 @@ localizeentry,d#hash_53d03f499c521344
 localizeentry,#hash_53d291f102f810a7
 localizeentry,#weapon/ar_fastfire_t8_zm_desc
 localizeentry,#hash_53dd1232efc88328
-localizeentry,#hash_53e20789d46b084c
+localizeentry,#coop_score/kill_sniper
 localizeentry,#zmui/bgb_kill_joy_desc
 localizeentry,#medal/disrupted_desc
 localizeentry,#hash_53f9bfd05e8c2005
@@ -5474,7 +5474,7 @@ localizeentry,#hash_5418d85080b7d82d
 localizeentry,#hash_541d9856ebc9b804
 localizeentry,#hash_54201bc451ed9ae4
 localizeentry,#menu/time_remaining_h_m_s
-localizeentry,#hash_5437995e2acdf749
+localizeentry,#coop_score/sm_scavenger_assist
 localizeentry,#hash_54394cfa5201f2ee
 localizeentry,d#hash_543c63ae95153ea6
 localizeentry,d#mpui/speedreloader_desc
@@ -5509,7 +5509,7 @@ localizeentry,#hash_54910835828690bd
 localizeentry,d#hash_5497ad930aa37ad8
 localizeentry,d#mpui/extrapellets
 localizeentry,#hash_54a0d3d0eee1eb90
-localizeentry,#hash_54a19c6a2d6a9e48
+localizeentry,#coop_score/kill_dannyli
 localizeentry,#hash_54a6ab0504def330
 localizeentry,#hash_54a6ac0504def4e3
 localizeentry,#hash_54a6ad0504def696
@@ -5533,7 +5533,7 @@ localizeentry,#medal/kill_enemies_one_bullet
 localizeentry,#emotes/5_hole
 localizeentry,#hash_55078daa5960472a
 localizeentry,#medal/destroyed_remote_missile
-localizeentry,#hash_55084f6f8128ed0c
+localizeentry,#coop_score/kill_assist_parasite
 localizeentry,#hash_5508d91703181d8c
 localizeentry,#weapon/melee_cutlass_t8_desc
 localizeentry,#hash_550dfbdcb4464fef
@@ -5640,7 +5640,7 @@ localizeentry,#challenge/type_weapon_grenade
 localizeentry,#platform/demo_insert_camera_marker_keyboard
 localizeentry,#hash_56c8e8f26d19b464
 localizeentry,#hash_56c94fdf6c4015ef
-localizeentry,#hash_56cd32e0c8482cd3
+localizeentry,#coop_score/kill_assist_pamws
 localizeentry,d#zmui/bgb_whos_keeping_score
 localizeentry,#hash_56d2601cf5da034f
 localizeentry,#hash_56d4c4e712098b4c
@@ -5652,12 +5652,12 @@ localizeentry,#hash_56e4f3cdeca1754f
 localizeentry,#hash_56ec396bb1e4e368
 localizeentry,#menu/kill_everyone_first_player
 localizeentry,#exe/synchronizing
-localizeentry,#hash_56fd67d0beaf32c6
+localizeentry,#coop_score/melee_kill_suppressor
 localizeentry,#groups/error_owner_of_non_empty_team
 localizeentry,d#weapon/ar_modular_t8
-localizeentry,#hash_570ba9b201c231aa
+localizeentry,#coop_score/melee_kill_depth_charge
 localizeentry,#mpui/desc_slums2
-localizeentry,#hash_5714e9bc5a15202d
+localizeentry,#coop_score/kill_suppressor
 localizeentry,#weapon/bare_hands
 localizeentry,#platform/chain_melee_right_hint
 localizeentry,#hash_571ecc6ae8e72658
@@ -5684,7 +5684,7 @@ localizeentry,#hash_577af97d69b0606f
 localizeentry,#weapon/gadget_health_regen_desc
 localizeentry,d#hash_57881432ca70cab7
 localizeentry,d#challenge/killjoy_end_enemy_specialist_weapon_on_objective_desc
-localizeentry,#hash_5793fa26162e61bb
+localizeentry,#coop_score/melee_kill_robotdemo
 localizeentry,#menu/currency_exchange_failure_2
 localizeentry,#menu/currency_exchange_failure_1
 localizeentry,#hash_57a114372de9ae74
@@ -5732,7 +5732,7 @@ localizeentry,d#hash_582959e9bd301711
 localizeentry,#hash_582cfd4c72644f70
 localizeentry,d#menu/camo_loot_bacon
 localizeentry,#hash_583aeb2f06dde8ae
-localizeentry,#hash_583f767755e56320
+localizeentry,#coop_score/melee_kill_siegebot
 localizeentry,#hash_584117bc19a97d22
 localizeentry,#hash_584e07a1708fce25
 localizeentry,#groups/application_accept_success_desc
@@ -5795,7 +5795,7 @@ localizeentry,#menu/death_dash_desc
 localizeentry,#hash_595e82600d9dd8eb
 localizeentry,#hash_5960c378848fad26
 localizeentry,#hash_5960c478848faed9
-localizeentry,#hash_59682fdbe8ccf5a9
+localizeentry,#score/hellstorm_missile_destroyed
 localizeentry,#mpui/geothermal
 localizeentry,#hash_59725cb1b1af1d57
 localizeentry,d#menu/talisman_extra_miniturret
@@ -5862,7 +5862,7 @@ localizeentry,#hash_5a4705083d51caad
 localizeentry,#hash_5a47b2454f4fece0
 localizeentry,#hash_5a48af85b3133c9d
 localizeentry,#hash_5a4d3f98c356076f
-localizeentry,#hash_5a5024ece7a4ea1c
+localizeentry,#coop_score/melee_kill_lotus_gunship
 localizeentry,#mpui/escort_caps
 localizeentry,d#hash_5a52f106fb9b2ed6
 localizeentry,#mpui/grind
@@ -6019,7 +6019,7 @@ localizeentry,#tags/muertos_nomad
 localizeentry,#hash_5c388c4978fc5976
 localizeentry,#hash_5c3fdfecacbb0ba1
 localizeentry,#hash_5c496ebe015b6a40
-localizeentry,#hash_5c531d1a5bb665d5
+localizeentry,#coop_score/kill_assist_cqb
 localizeentry,#hash_5c53c46dc41abcd8
 localizeentry,#hash_5c53c66dc41ac03e
 localizeentry,#hash_5c53c76dc41ac1f1
@@ -6053,7 +6053,7 @@ localizeentry,d#hash_5c8296496fbba1aa
 localizeentry,#hash_5c829b7487a4b2d7
 localizeentry,#hash_5c857df57fd0b66c
 localizeentry,#hash_5c857ef57fd0b81f
-localizeentry,#hash_5c87fc97ef65f28d
+localizeentry,#coop_score/kill_robotsoldier
 localizeentry,#hash_5c8e3a82970f9fc7
 localizeentry,#hash_5c8e43c9b8f90574
 localizeentry,#zombie/bruno
@@ -6112,13 +6112,13 @@ localizeentry,#hash_5d65b0d99fdce098
 localizeentry,#medal/molotov_kill
 localizeentry,#mpui/seaside
 localizeentry,#weapon/sniper_mini14_t8_operator
-localizeentry,#hash_5d6c7bcfc4868e65
+localizeentry,#coop_score/kill_assist_siegebot
 localizeentry,#weapon/no_los
 localizeentry,#hash_5d7167ce757d1ede
 localizeentry,d#hash_5d71d676bdcb5c7d
 localizeentry,d#hash_5d723ae8855383fa
 localizeentry,#exe/lostreliablecommands
-localizeentry,#hash_5d7ab1caa1b4bd42
+localizeentry,#score/gunship_destroyed
 localizeentry,#weapon/ar_stealth_t8_desc
 localizeentry,#contract/match_wins_desc
 localizeentry,#hash_5d8a91c43216643a
@@ -6178,9 +6178,9 @@ localizeentry,d#hash_5e6ae4119dda43e0
 localizeentry,#zmui/red
 localizeentry,d#challenge/humiliation_stop_enemy_killstreak_desc
 localizeentry,#hash_5e70cdc6933482f5
-localizeentry,#hash_5e72cc4fc3b2abfb
+localizeentry,#coop_score/kill_assist_robotsoldier
 localizeentry,#medal/radiation_field_shutdown
-localizeentry,#hash_5e7562c02254f1b3
+localizeentry,#coop_score/kill_assist_zombie
 localizeentry,#score/purifier_shutdown
 localizeentry,#hash_5e7e51cac12b93c6
 localizeentry,d#exe/loading_film
@@ -6353,7 +6353,7 @@ localizeentry,#hash_60f5890f26d16836
 localizeentry,#medal/kill_enemy_with_armor
 localizeentry,#mpui/hcdom
 localizeentry,#hash_60fad80afaa63292
-localizeentry,#hash_6107c5a43f26d52f
+localizeentry,#coop_score/kill_cqb
 localizeentry,#hash_6114901c1266e95d
 localizeentry,#hash_611f107a967cd66c
 localizeentry,d#hash_6123f941e10fd5f8
@@ -6455,8 +6455,8 @@ localizeentry,#hash_625d16c75a666144
 localizeentry,#hash_625d17c75a6662f7
 localizeentry,#hash_625d19c75a66665d
 localizeentry,#hash_625e8f6e59d49b24
-localizeentry,#hash_6260ea70eb9d6f70
-localizeentry,#hash_62624077b19f54bb
+localizeentry,#coop_score/kill_goxiulan
+localizeentry,#coop_score/melee_kill_goxiulan
 localizeentry,#hash_62680025f1b41304
 localizeentry,#hash_626f717d17a08170
 localizeentry,#challenge/darkops_shutdown_gravslam_midair_after_grapple
@@ -6572,14 +6572,14 @@ localizeentry,d#zmui/bgb_suit_up
 localizeentry,#bonuscard/primary_operator_mod_desc
 localizeentry,#hash_63c104a04c534625
 localizeentry,#game/mustbealivecommand
-localizeentry,#hash_63c458bce1319d7e
+localizeentry,#coop_score/melee_kill_gomin
 localizeentry,d#hash_63c9af81dd8978ef
 localizeentry,#rank/majgen_full2
 localizeentry,#rank/majgen_full3
 localizeentry,#hash_63d948fa39bd1cf4
 localizeentry,#hash_63d9808785c9393b
 localizeentry,#menu/talisman_special_xp_desc
-localizeentry,#hash_63dcb5e0c520cac5
+localizeentry,#coop_score/sm_boss_defeated
 localizeentry,#hash_63dcee58d6bd572e
 localizeentry,#platform/demo_config_dpad_down
 localizeentry,#medal/kill_enemy_who_has_high_score_desc
@@ -6674,7 +6674,7 @@ localizeentry,#hash_654f703447266951
 localizeentry,#hash_654f713447266b04
 localizeentry,#hash_654f733447266e6a
 localizeentry,#hash_654f74344726701d
-localizeentry,#hash_655321c4f7a7c50e
+localizeentry,#coop_score/kill_robotsniper
 localizeentry,#hash_6559ae7a3b738512
 localizeentry,#hash_655a04a5b6ecb9d5
 localizeentry,#hash_655aa46bbfd449b1
@@ -6709,7 +6709,7 @@ localizeentry,d#zmui/bgb_shields_up
 localizeentry,d#zmui/classic
 localizeentry,#hash_65b5936ba5551baa
 localizeentry,#weapon/decoy_grenade_desc
-localizeentry,#hash_65bd5aebfc387272
+localizeentry,#coop_score/kill_assist_quadtank
 localizeentry,#weapon/trophy_system_short
 localizeentry,d#challenge/wildcard_ekia_perk1_greed_desc
 localizeentry,d#weapon/smg_fastfire_t8
@@ -6923,7 +6923,7 @@ localizeentry,#hash_6902d4dc8a715a7f
 localizeentry,d#hash_69100878a7c0e1a4
 localizeentry,#hash_691582a5739af876
 localizeentry,#platform/demo_shoutcast_controls_keyboard
-localizeentry,#hash_6926ae6fa88a2710
+localizeentry,#coop_score/kill_wasp
 localizeentry,#hash_692ab4c434bdec63
 localizeentry,#hash_693bc9346e0e28e4
 localizeentry,d#challenge/humiliation_kill_after_shot_in_back_desc
@@ -7020,7 +7020,7 @@ localizeentry,#score/clean_assist_collect
 localizeentry,#exe/ext_msg_stat_reset_request_denied_zm
 localizeentry,#hash_6aadee44f9d4d8e4
 localizeentry,#hash_6ab8c7e37cfeec07
-localizeentry,#hash_6aba591a630b0d59
+localizeentry,#coop_score/kill_assist_emp
 localizeentry,#menu/lb_kills
 localizeentry,#hash_6abbd7a88ee593ed
 localizeentry,#weapon/tr_midburst_operator
@@ -7089,7 +7089,7 @@ localizeentry,#hash_6b9a45a8fa35a4c0
 localizeentry,#hash_6b9b73c6bcdad46b
 localizeentry,#objectives/conf_hint
 localizeentry,#challenge/killer_master
-localizeentry,#hash_6ba1f3a4c5b8594f
+localizeentry,#coop_score/complete_mission_regular
 localizeentry,#challenge/type_grip
 localizeentry,#hash_6bad69e3dbe61c75
 localizeentry,#hash_6bbba3eed04a02e8
@@ -7232,8 +7232,8 @@ localizeentry,#hash_6d865aadf878f797
 localizeentry,#hash_6d882aaa4beb85de
 localizeentry,#contract/play_prop_hunt_desc
 localizeentry,#objectives/conf
-localizeentry,#hash_6d99ea20b9cb0556
-localizeentry,#hash_6da055292a91f706
+localizeentry,#score/attack_chopper_destroyed
+localizeentry,#coop_score/melee_kill_turret
 localizeentry,d#menu/error_code
 localizeentry,#hash_6dc2e244bc98d92d
 localizeentry,#mpui/playlist_noguests_desc
@@ -7343,7 +7343,7 @@ localizeentry,#hash_6f721b1922d692d6
 localizeentry,#exe/default_player
 localizeentry,#hash_6f8099041b78ef7e
 localizeentry,#hash_6f812db529862125
-localizeentry,#hash_6f8b2fa59dbd5b1d
+localizeentry,#coop_score/melee_kill_dannyli
 localizeentry,#score/lightning_strike_kill
 localizeentry,#rank/cpl_full
 localizeentry,#hash_6f93d6170c7fdd33
@@ -7409,7 +7409,7 @@ localizeentry,#game/ufooff
 localizeentry,#mpui/burst
 localizeentry,#hash_70661a4fb333fd11
 localizeentry,#hash_706b08016ffa2b9b
-localizeentry,#hash_706cdca33facb2d2
+localizeentry,#coop_score/kill_assist_sniper
 localizeentry,#hash_707cd11f30f7d0d9
 localizeentry,#hash_707dd4abab680170
 localizeentry,d#mpui/reticle_default
@@ -7562,7 +7562,7 @@ localizeentry,#zmui/bgb_point_drops_desc
 localizeentry,#weapon/bare_hands_desc
 localizeentry,d#hash_728518924bb2459e
 localizeentry,#menu/gear_equipment_charge_desc
-localizeentry,#hash_728e7ce95ca18ae2
+localizeentry,#coop_score/kill_technical
 localizeentry,#hash_728f4817286e73b9
 localizeentry,d#hash_7295f92289369de8
 localizeentry,#tags/caricature_recon
@@ -7638,7 +7638,7 @@ localizeentry,#hash_73ece7337fceede1
 localizeentry,d#hash_73f67accd208c34b
 localizeentry,#hash_73f8426aa212b9f5
 localizeentry,d#weapon/special_ballisticknife_t8
-localizeentry,#hash_73fcb990e8df0b26
+localizeentry,#coop_score/melee_kill_zombie
 localizeentry,#weapon/sig_buckler_dw_desc
 localizeentry,#wz/menendez
 localizeentry,#medal/end_enemy_gravity_spike_attack
@@ -7836,7 +7836,7 @@ localizeentry,d#challenge/darkops_kill_enemy_after_surviving_rcxd_desc
 localizeentry,#hash_771421be468ef5d5
 localizeentry,#exe/ext_msg_boosting_heavy_zm
 localizeentry,#weapon/icepick_unavailable
-localizeentry,#hash_772052076f9290b9
+localizeentry,#coop_score/complete_mission_recruit
 localizeentry,d#weapon/lmg_stealth_t8
 localizeentry,d#hash_7725a43a5e8755ad
 localizeentry,#hash_772a60eb64300a2d
@@ -7908,7 +7908,7 @@ localizeentry,#medal/drone_squadron_kill_desc
 localizeentry,#hash_783c94cdd7c5587f
 localizeentry,d#hash_783c95cdd7c55a32
 localizeentry,#hash_78443fb9c80680e3
-localizeentry,#hash_7846ae5ba36a27ad
+localizeentry,#coop_score/sm_scavenger
 localizeentry,#hash_784b6c5e9fae6f50
 localizeentry,#hash_784d2f32b95f045b
 localizeentry,d#mpui/rf_desc
@@ -7950,7 +7950,7 @@ localizeentry,#hash_78c69fdc2a7df3fb
 localizeentry,#hash_78c7db8498a72253
 localizeentry,#talent/lightweight_short
 localizeentry,d#hash_78d753143b405d88
-localizeentry,#hash_78d7aff4d6bf1319
+localizeentry,#coop_score/kill_depth_charge
 localizeentry,#hash_78d8dbc2e189765f
 localizeentry,#menu/votingtimeremaining
 localizeentry,d#zmui/bgb_aftertaste
@@ -8141,7 +8141,7 @@ localizeentry,#hash_7b9854877ab767b5
 localizeentry,#hash_7b9a28c39f839bef
 localizeentry,#menu/emblem_keyboard_title
 localizeentry,#score/enemy_position_neutralized
-localizeentry,#hash_7bb278f41edbd1b3
+localizeentry,#coop_score/kill_siegebot
 localizeentry,#heroes/head
 localizeentry,#hash_7bb31f180eab141c
 localizeentry,#hash_7bbb51539d7fc4cf
@@ -8327,8 +8327,8 @@ localizeentry,#hash_7ead725d5f344dba
 localizeentry,#hash_7eb7910e3e10457a
 localizeentry,#key/printscreen
 localizeentry,#hash_7ec654d28300fddd
-localizeentry,#hash_7ec8f878d8ba15f7
-localizeentry,#hash_7ed803492b6bc5a1
+localizeentry,#coop_score/melee_kill_quadtank
+localizeentry,#coop_score/kill_rocketeer
 localizeentry,#weapon/targeting_aborted
 localizeentry,#hash_7edf9c45858b1e3d
 localizeentry,#hash_7ee23e72d89e24f1

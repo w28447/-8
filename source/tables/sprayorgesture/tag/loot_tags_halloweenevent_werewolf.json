@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_halloweenevent_werewolf",
     "type": "#tag",
-    "material": "#hash_31160695feb93bd",
+    "material": "#vd/mtl_loot_ui_icon_tags_halloweenevent_werewolf",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_5477c518b90ef2c5",

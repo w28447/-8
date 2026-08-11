@@ -34,7 +34,7 @@ function __init__()
 // Size: 0x182
 function init_dog_fx()
 {
-    level._effect[ #"dog_eye_glow" ] = #"hash_70696527ecb861ae";
+    level._effect[ #"dog_eye_glow" ] = #"zm_ai/fx8_dog_eye_single";
     level._effect[ #"hash_55d6ab2c7eecbad4" ] = #"zm_ai/fx8_dog_eye_glow";
     level._effect[ #"dog_head_glow" ] = #"hash_78f02617f4f71d8a";
     level._effect[ #"hash_5e4d4083a69396b8" ] = #"hash_36a9dd505e78a";

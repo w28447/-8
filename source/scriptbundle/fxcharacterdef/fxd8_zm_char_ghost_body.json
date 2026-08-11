@@ -1,7 +1,7 @@
 {
     "hash_4634d13e2f891fc:hash_b2353cab": "fx#hash_4634d13e2f891fc",
     "effectcount": 7,
-    "hash_8c3582044a657b4:hash_803c11e0": "fx#hash_8c3582044a657b4",
+    "maps/zm_escape/fx8_ghoul_trail:hash_803c11e0": "fx#maps/zm_escape/fx8_ghoul_trail",
     "configstringfiletype": "scriptbundle",
     "hash_702e93ea": "j_elbow_ri",
     "type": "fxcharacterdef",
@@ -12,7 +12,7 @@
     "name": "fxd8_zm_char_ghost_body",
     "hash_a0d91763": "tag_eye",
     "hash_46a2513e2fe6cb2:hash_320e9190": "fx#hash_46a2513e2fe6cb2",
-    "hash_6c098d8cc4fabe6a:hash_c7a3c7dd": "fx#hash_6c098d8cc4fabe6a",
+    "maps/zm_escape/fx8_ghoul_head:hash_c7a3c7dd": "fx#maps/zm_escape/fx8_ghoul_head",
     "hash_183d93c35d82bacd:hash_bae031ea": "fx#hash_183d93c35d82bacd",
     "hash_edb57500": "j_elbow_le",
     "hash_b0618344": "j_spinelower",

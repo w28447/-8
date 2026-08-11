@@ -52,7 +52,7 @@ function autoexec __init__system__()
 function __init__()
 {
     level.start_chest_name = "start_chest";
-    level._effect[ #"hash_2ff87d61167ea531" ] = #"hash_d66a9f5776f1fba";
+    level._effect[ #"hash_2ff87d61167ea531" ] = #"zombie/fx8_magicbox_marker";
     level._effect[ #"hash_4048cb4967032c4a" ] = #"hash_1e43d43c6586fcb5";
     level._effect[ #"lght_marker" ] = #"zombie/fx_weapon_box_marker_zmb";
     level._effect[ #"lght_marker_flare" ] = #"zombie/fx_weapon_box_marker_fl_zmb";

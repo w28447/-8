@@ -158895,13 +158895,13 @@
         {
             "value": 428,
             "next": 605,
-            "name": "#hash_21cfccc8ada14c68",
+            "name": "#pfx_spark_bounce",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_21cfccc8ada14c68",
+                    "name": "#pfx_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_00.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_office.all",
                     "assetIdRelease": "#zm_office.all",
@@ -158940,7 +158940,7 @@
                     "unk178": "#hash_500000608"
                 },
                 {
-                    "name": "#hash_21cfccc8ada14c68",
+                    "name": "#pfx_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_01.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_office.all",
                     "assetIdRelease": "#zm_office.all",
@@ -158979,7 +158979,7 @@
                     "unk178": "#hash_500000608"
                 },
                 {
-                    "name": "#hash_21cfccc8ada14c68",
+                    "name": "#pfx_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_02.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_office.all",
                     "assetIdRelease": "#zm_office.all",
@@ -159018,7 +159018,7 @@
                     "unk178": "#hash_500000608"
                 },
                 {
-                    "name": "#hash_21cfccc8ada14c68",
+                    "name": "#pfx_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_03.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_office.all",
                     "assetIdRelease": "#zm_office.all",
@@ -159057,7 +159057,7 @@
                     "unk178": "#hash_500000608"
                 },
                 {
-                    "name": "#hash_21cfccc8ada14c68",
+                    "name": "#pfx_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_04.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_office.all",
                     "assetIdRelease": "#zm_office.all",
@@ -159096,7 +159096,7 @@
                     "unk178": "#hash_500000608"
                 },
                 {
-                    "name": "#hash_21cfccc8ada14c68",
+                    "name": "#pfx_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_05.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_office.all",
                     "assetIdRelease": "#zm_office.all",
@@ -159135,7 +159135,7 @@
                     "unk178": "#hash_500000608"
                 },
                 {
-                    "name": "#hash_21cfccc8ada14c68",
+                    "name": "#pfx_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_06.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_office.all",
                     "assetIdRelease": "#zm_office.all",
@@ -159174,7 +159174,7 @@
                     "unk178": "#hash_500000608"
                 },
                 {
-                    "name": "#hash_21cfccc8ada14c68",
+                    "name": "#pfx_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_07.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_office.all",
                     "assetIdRelease": "#zm_office.all",
@@ -159213,7 +159213,7 @@
                     "unk178": "#hash_500000608"
                 },
                 {
-                    "name": "#hash_21cfccc8ada14c68",
+                    "name": "#pfx_spark_bounce",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_08.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_office.all",
                     "assetIdRelease": "#zm_office.all",
@@ -159256,13 +159256,13 @@
         {
             "value": 70,
             "next": 65535,
-            "name": "#hash_44c55a442909d57d",
+            "name": "#pfx_spark_generic",
             "sequence": 0,
             "cullDistance": 750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_44c55a442909d57d",
+                    "name": "#pfx_spark_generic",
                     "assetId": "#pfx/sparks/generic/fresh/spark_gen_00.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_office.all",
                     "assetIdRelease": "#zm_office.all",
@@ -159301,7 +159301,7 @@
                     "unk178": "#hash_500000802"
                 },
                 {
-                    "name": "#hash_44c55a442909d57d",
+                    "name": "#pfx_spark_generic",
                     "assetId": "#pfx/sparks/generic/fresh/spark_gen_01.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_office.all",
                     "assetIdRelease": "#zm_office.all",
@@ -159340,7 +159340,7 @@
                     "unk178": "#hash_500000802"
                 },
                 {
-                    "name": "#hash_44c55a442909d57d",
+                    "name": "#pfx_spark_generic",
                     "assetId": "#pfx/sparks/generic/fresh/spark_gen_02.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_office.all",
                     "assetIdRelease": "#zm_office.all",
@@ -159379,7 +159379,7 @@
                     "unk178": "#hash_500000802"
                 },
                 {
-                    "name": "#hash_44c55a442909d57d",
+                    "name": "#pfx_spark_generic",
                     "assetId": "#pfx/sparks/generic/fresh/spark_gen_03.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_office.all",
                     "assetIdRelease": "#zm_office.all",
@@ -159418,7 +159418,7 @@
                     "unk178": "#hash_500000802"
                 },
                 {
-                    "name": "#hash_44c55a442909d57d",
+                    "name": "#pfx_spark_generic",
                     "assetId": "#pfx/sparks/generic/fresh/spark_gen_04.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_office.all",
                     "assetIdRelease": "#zm_office.all",
@@ -159457,7 +159457,7 @@
                     "unk178": "#hash_500000802"
                 },
                 {
-                    "name": "#hash_44c55a442909d57d",
+                    "name": "#pfx_spark_generic",
                     "assetId": "#pfx/sparks/generic/fresh/spark_gen_05.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_office.all",
                     "assetIdRelease": "#zm_office.all",
@@ -159496,7 +159496,7 @@
                     "unk178": "#hash_500000802"
                 },
                 {
-                    "name": "#hash_44c55a442909d57d",
+                    "name": "#pfx_spark_generic",
                     "assetId": "#pfx/sparks/generic/fresh/spark_gen_06.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_office.all",
                     "assetIdRelease": "#zm_office.all",
@@ -184456,13 +184456,13 @@
         {
             "value": 816,
             "next": 65535,
-            "name": "#hash_11f01abbd7a5c6f5",
+            "name": "#wpn_rgun_exp",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_11f01abbd7a5c6f5",
+                    "name": "#wpn_rgun_exp",
                     "secondaryname": "#hash_6104152071df5471",
                     "assetId": "#wpn/energy/raygun/projectile/impact/wpn_ray_exp.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_office.all",

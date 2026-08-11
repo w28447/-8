@@ -4439,7 +4439,7 @@ fx,#electric/fx8_sparks_burst_dir_sm_orange_os
 fx,#hash_3c9948ab313a6483
 fx,#maps/zm_red/fx8_wq_dormant_transform_ouranos
 fx,#zm_ai/fx8_gegenees_weakpoint_impact
-fx,#hash_4c04b62047703a60
+fx,#impacts/fx8_bul_impact_blood_head_fatal_exit
 fx,#hash_4c24e997afad36e0
 fx,#hash_4d91ce766ebeda81
 fx,#hash_4db3c6766edbb34f
@@ -9819,8 +9819,8 @@ soundalias,#hash_7ff41417f780afbd
 soundalias,#hash_7ffb375159d9b67b
 client_fx,#hash_b3bc039e7aca94
 client_fx,#weapon/fx_trail_grenade
-client_fx,#hash_139f311e8d25450
-client_fx,#hash_14afd11e8e0d881
+client_fx,#impacts/fx8_proj_impact_water_lg
+client_fx,#impacts/fx8_proj_impact_water_sm
 client_fx,#hash_1d9fd55ec74837c
 client_fx,#hash_224a2a7d7295284
 client_fx,#hash_240783e54de51f0
@@ -9830,7 +9830,7 @@ client_fx,#zm_ai/fx8_cata_elec_aura
 client_fx,#explosions/fx8_exp_grenade_default
 client_fx,#hash_33771e94b2c2583
 client_fx,#maps/zm_red/fx8_soul_yellow
-client_fx,#hash_3b52862cbfae664
+client_fx,#impacts/fx8_bul_impact_blood_head_nonfatal
 client_fx,#hash_4390857c11cf46d
 client_fx,#hash_45df7abd6ad1c06
 client_fx,#hash_4611402cb26df20
@@ -9853,7 +9853,7 @@ client_fx,#hash_8f0bc31efc7463e
 client_fx,#zombie/fx_spawn_body_cp_zmb
 client_fx,#hash_9c7935d1106ec1d
 client_fx,#hash_a522275afc959a7
-client_fx,#hash_a5567d0168ae02f
+client_fx,#weapon/fx8_shellejects_pistol
 client_fx,#zm_ai/fx8_gegenees_shield_guard
 client_fx,#fire/fx_fire_ai_human_leg_right_loop
 client_fx,#hash_b182c132d2321d0
@@ -9940,7 +9940,7 @@ client_fx,#zm_ai/fx8_blightfather_vomit_statue_purchase
 client_fx,#hash_269f259a4cd762e8
 client_fx,#zm_ai/fx8_cata_water_aura
 client_fx,#hash_26ef50e01d7e97e5
-client_fx,#hash_27604ee16fb27e93
+client_fx,#impacts/fx8_bul_impact_metal_xsm
 client_fx,#hash_276c55785b205f4e
 client_fx,#hash_278c744d7ef41186
 client_fx,#hash_281a29752dd70fec
@@ -9953,7 +9953,7 @@ client_fx,#hash_2a095e7cd20884a9
 client_fx,#hash_2a46ebc323110b3d
 client_fx,#explosions/fx8_exp_grenade_snow
 client_fx,#hash_2b3a857498481375
-client_fx,#hash_2b71a6c9f08cfe3b
+client_fx,#maps/zm_escape/fx8_lightning_trail_red
 client_fx,#hash_2b910e77f63948fb
 client_fx,#fire/fx_fire_ai_human_leg_left_loop
 client_fx,#zm_ai/fx8_blightfather_maggot_death_exp
@@ -10005,7 +10005,7 @@ client_fx,#hash_3b0b9cc4cdb70c89
 client_fx,#hash_3b12a8c4cdbd3f9b
 client_fx,#hash_3be9c523d47d5593
 client_fx,#maps/zm_towers/fx8_crowd_reward_flower_exp
-client_fx,#hash_3c2d31e47159de2f
+client_fx,#impacts/fx8_bul_impact_blood_head_fatal
 client_fx,#zm_ai/fx8_elec_shock_eyes
 client_fx,#hash_3c9948ab313a6483
 client_fx,#zm_ai/fx8_blightfather_vomit
@@ -10052,7 +10052,7 @@ client_fx,#hash_4bbfe2d612f8393d
 client_fx,#hash_4bd8c2963780c080
 client_fx,#hash_4bdfce963786f392
 client_fx,#hash_4bfca9124b4b177e
-client_fx,#hash_4c04b62047703a60
+client_fx,#impacts/fx8_bul_impact_blood_head_fatal_exit
 client_fx,#hash_4c14004cd89a0d66
 client_fx,#hash_4c24e997afad36e0
 client_fx,#hash_4cc40e13ee8dff61
@@ -10077,7 +10077,7 @@ client_fx,#hash_50ce930e4dd4bc12
 client_fx,#maps/zm_red/fx8_soul_charge_white
 client_fx,#hash_513bda1b67490064
 client_fx,#hash_515548ac872ebd06
-client_fx,#hash_5156900b61510d36
+client_fx,#impacts/fx8_bul_impact_blood_limb_nonfatal
 client_fx,#maps/zm_red/fx8_soul_blue
 client_fx,#hash_51b33bb22601397b
 client_fx,#hash_51fd09e47e0cd679
@@ -10093,7 +10093,7 @@ client_fx,#hash_53e10878cd6a6eef
 client_fx,#hash_5400356a313e2ec3
 client_fx,#zm_ai/fx8_blightfather_vomit_purchase
 client_fx,#hash_5493d96403f608c6
-client_fx,#hash_54a4fdc179823939
+client_fx,#impacts/fx8_bul_impact_blood_limb_fatal
 client_fx,#hash_54b810af1fb36d6d
 client_fx,#zombie/fx_egg_ready_zod_zmb
 client_fx,#hash_556b5a8aa255768d

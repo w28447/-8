@@ -30,7 +30,7 @@ function __init__()
         return;
     }
     
-    clientfield::register( "zbarrier", "" + #"hash_100f180bf5d2a517", 14000, 1, "int" );
+    clientfield::register( "zbarrier", "" + #"zm_trial_pap_sacrifice", 14000, 1, "int" );
     zm_trial::register_challenge( #"pack_a_punch_sacrifice", &on_begin, &on_end );
 }
 
@@ -149,9 +149,9 @@ function private pap_machine_fx()
             continue;
         }
         
-        var_4c755588 clientfield::set( "" + #"hash_100f180bf5d2a517", 1 );
+        var_4c755588 clientfield::set( "" + #"zm_trial_pap_sacrifice", 1 );
         var_4c755588 waittill( #"pap_taken", #"pap_timeout" );
-        var_4c755588 clientfield::set( "" + #"hash_100f180bf5d2a517", 0 );
+        var_4c755588 clientfield::set( "" + #"zm_trial_pap_sacrifice", 0 );
     }
 }
 

@@ -22277,7 +22277,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         },
                         {
@@ -23210,7 +23210,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         }
                     ],
@@ -25451,7 +25451,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_sniper_vanguard_bolt_01"
@@ -176157,7 +176157,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_sniper_vanguard_bolt_01"
@@ -178145,7 +178145,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_sniper_vanguard_bolt_01"
@@ -180133,7 +180133,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_sniper_vanguard_bolt_01"
@@ -182121,7 +182121,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_sniper_vanguard_bolt_01"
@@ -184109,7 +184109,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_sniper_vanguard_bolt_01"
@@ -186963,7 +186963,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         },
                         {
@@ -187896,7 +187896,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         }
                     ],
@@ -190523,7 +190523,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         },
                         {
@@ -191456,7 +191456,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         }
                     ],
@@ -210293,7 +210293,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         },
                         {
@@ -211226,7 +211226,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         }
                     ],
@@ -213853,7 +213853,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         },
                         {
@@ -214786,7 +214786,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         }
                     ],
@@ -217413,7 +217413,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         },
                         {
@@ -218346,7 +218346,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         }
                     ],
@@ -220587,7 +220587,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_sniper_vanguard_bolt_01"
@@ -222567,7 +222567,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_sniper_vanguard_bolt_01"
@@ -224555,7 +224555,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_sniper_vanguard_bolt_01"
@@ -226543,7 +226543,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_sniper_vanguard_bolt_01"
@@ -228531,7 +228531,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_sniper_vanguard_bolt_01"
@@ -230519,7 +230519,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_sniper_vanguard_bolt_01"
@@ -292301,7 +292301,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         },
                         {
@@ -293234,7 +293234,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a",
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside",
                             "mask": "#$alpha"
                         }
                     ],
@@ -295475,7 +295475,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_sniper_vanguard_bolt_01"
@@ -297463,7 +297463,7 @@
                             "material": "#mc/mtl_attach_t8_optic_thermal"
                         },
                         {
-                            "material": "#hash_3bc3f4a7276df33a"
+                            "material": "#mc/mtl_attach_t8_optic_thermal_scope_inside"
                         },
                         {
                             "material": "#mc/mtl_attach_t8_sniper_vanguard_bolt_01"

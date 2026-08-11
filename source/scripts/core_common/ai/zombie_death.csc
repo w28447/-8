@@ -16,7 +16,7 @@ function autoexec init_fire_fx()
     }
     
     level._effect[ #"character_fire_death_sm" ] = #"hash_c9cf0acc938a7f6";
-    level._effect[ #"character_fire_death_torso" ] = #"hash_5686def5b4c85661";
+    level._effect[ #"character_fire_death_torso" ] = #"zombie/fx8_fire_torso_zmb";
 }
 
 // Namespace zombie_death/zombie_death

@@ -36,5 +36,5 @@
     "handModel": "#viewmodel_hands_no_model",
     "projectilemodel": "#wpn_t8_zm_blundergat_acid_projectile",
     "reticleCenter": "#reticle_center_cross",
-    "fx_ed8": "#hash_134f5281def200d8"
+    "fx_ed8": "#zm_weapons/fx8_blundersplat_exp"
 }

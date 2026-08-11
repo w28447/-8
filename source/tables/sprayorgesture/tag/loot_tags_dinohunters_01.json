@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_dinohunters_01",
     "type": "#tag",
-    "material": "#hash_7e23411bd4be291d",
+    "material": "#vd/mtl_loot_ui_icon_tags_dinohunters_01",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/dinohunters_01",

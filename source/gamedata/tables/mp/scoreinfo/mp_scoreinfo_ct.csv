@@ -377,7 +377,7 @@
 #gravity_slam_objective_multikill,0,100,0,75,15,FALSE,0,FALSE,&#,#,8#events_gravity_slam_objective_multikill,FALSE,TRUE,TRUE,#,#ability,#,#major,#,FALSE
 #gravity_slam_aggression,0,50,0,50,15,FALSE,2,FALSE,&#,#,8#events_gravity_slam_aggression,FALSE,TRUE,TRUE,#,#ability,#,#core,#,FALSE
 #gravity_slam_objective_kill,0,50,0,50,15,FALSE,2,FALSE,&#,#,8#events_gravity_slam_objective_kill,FALSE,TRUE,TRUE,#,#ability,#,#core,#,FALSE
-#gravity_slam_kill,0,25,50,50,15,FALSE,8,FALSE,&#hash_27abd7ec98b7230c,#,8#events_gravity_slam_kill,FALSE,TRUE,TRUE,#,#ability,#,#core,#,FALSE
+#gravity_slam_kill,0,25,50,50,15,FALSE,8,FALSE,&#score/gravityspikes_kill,#,8#events_gravity_slam_kill,FALSE,TRUE,TRUE,#,#ability,#,#core,#,FALSE
 #gravity_slam_multikill_2,0,75,0,50,20,FALSE,0,FALSE,&#,#,8#events_gravity_slam_multikill_2,FALSE,TRUE,TRUE,#,#ability,#,#major,#,FALSE
 #gravity_slam_multikill_3,0,100,0,75,20,FALSE,0,FALSE,&#,#,8#events_gravity_slam_multikill_3,FALSE,TRUE,TRUE,#,#ability,#,#major,#,FALSE
 #gravity_slam_multikill_4,0,125,0,75,25,FALSE,0,FALSE,&#,#,8#events_gravity_slam_multikill_4,FALSE,TRUE,TRUE,#,#ability,#,#major,#,FALSE

@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_muertos_prophet",
     "type": "#tag",
-    "material": "#hash_1ce42c272341c3fa",
+    "material": "#vd/mtl_loot_ui_icon_tags_muertos_prophet",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/muertos_prophet",

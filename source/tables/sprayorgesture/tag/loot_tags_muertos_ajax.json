@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_muertos_ajax",
     "type": "#tag",
-    "material": "#hash_5eda1b98ce871402",
+    "material": "#vd/mtl_loot_ui_icon_tags_muertos_ajax",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/muertos_ajax",

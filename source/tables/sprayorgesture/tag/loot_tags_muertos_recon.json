@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_muertos_recon",
     "type": "#tag",
-    "material": "#hash_4ff2744644ebf7b7",
+    "material": "#vd/mtl_loot_ui_icon_tags_muertos_recon",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/muertos_recon",

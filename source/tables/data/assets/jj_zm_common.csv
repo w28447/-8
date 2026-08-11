@@ -284,7 +284,7 @@ localizeentry,d#hash_13402ca216747121
 localizeentry,#hash_135c709adddc1d4c
 localizeentry,#zmweapon/smg_folding_t8_upgraded
 localizeentry,#hash_136de3c71d347b5b
-localizeentry,#hash_138e5af4b40cb066
+localizeentry,#zmtrials/defend_the_arena_desc
 localizeentry,#zmtrials/defend_area
 localizeentry,d#menu/x_of_y
 localizeentry,d#mpui/barrelchoke_desc
@@ -1231,7 +1231,7 @@ localizeentry,d#hash_556fbdaebf02d158
 localizeentry,#hash_5585afd07d9abe93
 localizeentry,#hash_558f1b6c18e268a8
 localizeentry,#hash_559659e3129018db
-localizeentry,#hash_55e02dd5d39f9106
+localizeentry,#zmtrials/defend_the_temple
 localizeentry,#hash_55f71da199eb1694
 localizeentry,d#zmui/high_caliber_desc
 localizeentry,d#hash_560d002c6e40e5df
@@ -1257,7 +1257,7 @@ localizeentry,#demo/transition_fade
 localizeentry,d#zombie/stanton
 localizeentry,d#demo/keep_segment_hint
 localizeentry,d#hash_57cd3797ce7fc9b8
-localizeentry,#hash_5807dc4b69518bf6
+localizeentry,#zmtrials/defend_the_temple_desc
 localizeentry,#hash_581816623d4cf8a4
 localizeentry,d#mpui/steadyaim2_desc
 localizeentry,#hash_581f48e2025c4244
@@ -1309,7 +1309,7 @@ localizeentry,d#mpui/camo_battle
 localizeentry,#hash_5b85b914f370d1c1
 localizeentry,#hash_5ba4f6bd62a74330
 localizeentry,#hash_5bb3517d2db4f389
-localizeentry,#hash_5bbb940392f0ba96
+localizeentry,#zmtrials/defend_the_arena
 localizeentry,#hash_5bee0d394b63ef8c
 localizeentry,#mp/overtime
 localizeentry,d#hash_5c0d9b140a188ce0

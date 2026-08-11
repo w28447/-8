@@ -53,8 +53,8 @@
     ],
     "reticleSide": "#reticle_side_small",
     "fireRumble": "#defaultweapon_fire",
-    "fx_bc8": "#hash_5f301164661e5a37",
-    "fx_bd0": "#hash_69b5bab2fa9bbf5d",
-    "fx_c80": "#hash_3613e307817774e",
-    "fx_c88": "#hash_3613e307817774e"
+    "fx_bc8": "#weapon/fx8_muz_lg_rifle_1p_4sqr_mb",
+    "fx_bd0": "#weapon/fx8_muz_lg_rifle_3p_4sqr_mb",
+    "fx_c80": "#weapon/fx8_shellejects_rifle",
+    "fx_c88": "#weapon/fx8_shellejects_rifle"
 }

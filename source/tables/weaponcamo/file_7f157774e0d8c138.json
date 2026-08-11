@@ -48468,7 +48468,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_rapidfire"
                         },
                         {
-                            "material": "#hash_1bf49bda02e959df"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_rail_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_base_weapon_02"
@@ -48489,16 +48489,16 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_screws"
                         },
                         {
-                            "material": "#hash_3f5c27759beee264"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_upper_receiver_right"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_tacsac"
                         },
                         {
-                            "material": "#hash_69fec172f283cf6a"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_rail_base1"
                         },
                         {
-                            "material": "#hash_2aab72b81abb2d9b"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_upper_receiver_left"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_sac_mount"
@@ -48510,7 +48510,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sac_mount"
                         },
                         {
-                            "material": "#hash_afbf8d36d4b31e"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_assist_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_front_hical"
@@ -48540,7 +48540,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_front_hical"
                         },
                         {
-                            "material": "#hash_344299f3dbe04cf"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_base_weapon_back_03"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_base_weapon_03"
@@ -48967,10 +48967,10 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_barrel"
                         },
                         {
-                            "material": "#hash_154873bb3c5ed1a2"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_side_lower_pocket"
                         },
                         {
-                            "material": "#hash_4d97b6af5dbc1b98"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_base_weapon_03"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_rapidfire"
@@ -48985,7 +48985,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_skull_eyes"
                         },
                         {
-                            "material": "#hash_17c425bd8790e598"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_bulet"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_skull"
@@ -49006,7 +49006,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_front_sight"
                         },
                         {
-                            "material": "#hash_1a6c513cae4acb3f"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_small_chain"
                         },
                         {
                             "material": "#hash_3f15ebad6704fe4a"
@@ -49015,16 +49015,16 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_base_weapon_03"
                         },
                         {
-                            "material": "#hash_319eef56dff2a783"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_assist_base"
                         },
                         {
-                            "material": "#hash_1e30d9b634bea03e"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_front_wood_picks"
                         },
                         {
                             "material": "#hash_7c4a71e98350d1d2"
                         },
                         {
-                            "material": "#hash_564a10572604a0ed"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rail_base1"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_talisman"
@@ -49042,7 +49042,7 @@
                             "material": "#mc/mtl_p8_zm_gla_stake_tower_wood_01_wood"
                         },
                         {
-                            "material": "#hash_4d97b7af5dbc1d4b"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_base_weapon_02"
                         },
                         {
                             "material": "#mc/mtl_c_t8_blockout_leather"
@@ -49060,13 +49060,13 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sights"
                         },
                         {
-                            "material": "#hash_3871bd97f28d7444"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_side_top_pocket"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_talisman_blood"
                         },
                         {
-                            "material": "#hash_368f05ff9ca142ee"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rail_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rapidfire"
@@ -50089,7 +50089,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_rapidfire"
                         },
                         {
-                            "material": "#hash_1bf49bda02e959df"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_rail_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_base_weapon_02"
@@ -50110,16 +50110,16 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_screws"
                         },
                         {
-                            "material": "#hash_3f5c27759beee264"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_upper_receiver_right"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_tacsac"
                         },
                         {
-                            "material": "#hash_69fec172f283cf6a"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_rail_base1"
                         },
                         {
-                            "material": "#hash_2aab72b81abb2d9b"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_upper_receiver_left"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_sac_mount"
@@ -50131,7 +50131,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sac_mount"
                         },
                         {
-                            "material": "#hash_afbf8d36d4b31e"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_assist_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_front_hical"
@@ -50161,7 +50161,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_front_hical"
                         },
                         {
-                            "material": "#hash_344299f3dbe04cf"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_base_weapon_back_03"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_base_weapon_03"
@@ -50588,10 +50588,10 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_barrel"
                         },
                         {
-                            "material": "#hash_154873bb3c5ed1a2"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_side_lower_pocket"
                         },
                         {
-                            "material": "#hash_4d97b6af5dbc1b98"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_base_weapon_03"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_rapidfire"
@@ -50606,7 +50606,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_skull_eyes"
                         },
                         {
-                            "material": "#hash_17c425bd8790e598"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_bulet"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_skull"
@@ -50627,7 +50627,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_front_sight"
                         },
                         {
-                            "material": "#hash_1a6c513cae4acb3f"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_small_chain"
                         },
                         {
                             "material": "#hash_3f15ebad6704fe4a"
@@ -50636,16 +50636,16 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_base_weapon_03"
                         },
                         {
-                            "material": "#hash_319eef56dff2a783"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_assist_base"
                         },
                         {
-                            "material": "#hash_1e30d9b634bea03e"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_front_wood_picks"
                         },
                         {
                             "material": "#hash_7c4a71e98350d1d2"
                         },
                         {
-                            "material": "#hash_564a10572604a0ed"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rail_base1"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_talisman"
@@ -50663,7 +50663,7 @@
                             "material": "#mc/mtl_p8_zm_gla_stake_tower_wood_01_wood"
                         },
                         {
-                            "material": "#hash_4d97b7af5dbc1d4b"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_base_weapon_02"
                         },
                         {
                             "material": "#mc/mtl_c_t8_blockout_leather"
@@ -50681,13 +50681,13 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sights"
                         },
                         {
-                            "material": "#hash_3871bd97f28d7444"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_side_top_pocket"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_talisman_blood"
                         },
                         {
-                            "material": "#hash_368f05ff9ca142ee"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rail_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rapidfire"
@@ -51714,7 +51714,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_rapidfire"
                         },
                         {
-                            "material": "#hash_1bf49bda02e959df"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_rail_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_base_weapon_02"
@@ -51735,16 +51735,16 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_screws"
                         },
                         {
-                            "material": "#hash_3f5c27759beee264"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_upper_receiver_right"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_tacsac"
                         },
                         {
-                            "material": "#hash_69fec172f283cf6a"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_rail_base1"
                         },
                         {
-                            "material": "#hash_2aab72b81abb2d9b"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_upper_receiver_left"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_sac_mount"
@@ -51756,7 +51756,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sac_mount"
                         },
                         {
-                            "material": "#hash_afbf8d36d4b31e"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_assist_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_front_hical"
@@ -51786,7 +51786,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_front_hical"
                         },
                         {
-                            "material": "#hash_344299f3dbe04cf"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_base_weapon_back_03"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_base_weapon_03"
@@ -52213,10 +52213,10 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_barrel"
                         },
                         {
-                            "material": "#hash_154873bb3c5ed1a2"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_side_lower_pocket"
                         },
                         {
-                            "material": "#hash_4d97b6af5dbc1b98"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_base_weapon_03"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_rapidfire"
@@ -52231,7 +52231,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_skull_eyes"
                         },
                         {
-                            "material": "#hash_17c425bd8790e598"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_bulet"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_skull"
@@ -52252,7 +52252,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_front_sight"
                         },
                         {
-                            "material": "#hash_1a6c513cae4acb3f"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_small_chain"
                         },
                         {
                             "material": "#hash_3f15ebad6704fe4a"
@@ -52261,16 +52261,16 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_base_weapon_03"
                         },
                         {
-                            "material": "#hash_319eef56dff2a783"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_assist_base"
                         },
                         {
-                            "material": "#hash_1e30d9b634bea03e"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_front_wood_picks"
                         },
                         {
                             "material": "#hash_7c4a71e98350d1d2"
                         },
                         {
-                            "material": "#hash_564a10572604a0ed"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rail_base1"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_talisman"
@@ -52288,7 +52288,7 @@
                             "material": "#mc/mtl_p8_zm_gla_stake_tower_wood_01_wood"
                         },
                         {
-                            "material": "#hash_4d97b7af5dbc1d4b"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_base_weapon_02"
                         },
                         {
                             "material": "#mc/mtl_c_t8_blockout_leather"
@@ -52306,13 +52306,13 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sights"
                         },
                         {
-                            "material": "#hash_3871bd97f28d7444"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_side_top_pocket"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_talisman_blood"
                         },
                         {
-                            "material": "#hash_368f05ff9ca142ee"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rail_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rapidfire"
@@ -53339,7 +53339,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_rapidfire"
                         },
                         {
-                            "material": "#hash_1bf49bda02e959df"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_rail_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_base_weapon_02"
@@ -53360,16 +53360,16 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_screws"
                         },
                         {
-                            "material": "#hash_3f5c27759beee264"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_upper_receiver_right"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_tacsac"
                         },
                         {
-                            "material": "#hash_69fec172f283cf6a"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_rail_base1"
                         },
                         {
-                            "material": "#hash_2aab72b81abb2d9b"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_upper_receiver_left"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_sac_mount"
@@ -53381,7 +53381,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sac_mount"
                         },
                         {
-                            "material": "#hash_afbf8d36d4b31e"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_assist_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_front_hical"
@@ -53411,7 +53411,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_front_hical"
                         },
                         {
-                            "material": "#hash_344299f3dbe04cf"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_base_weapon_back_03"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_base_weapon_03"
@@ -53838,10 +53838,10 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_barrel"
                         },
                         {
-                            "material": "#hash_154873bb3c5ed1a2"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_side_lower_pocket"
                         },
                         {
-                            "material": "#hash_4d97b6af5dbc1b98"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_base_weapon_03"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_rapidfire"
@@ -53856,7 +53856,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_skull_eyes"
                         },
                         {
-                            "material": "#hash_17c425bd8790e598"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_bulet"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_skull"
@@ -53877,7 +53877,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_front_sight"
                         },
                         {
-                            "material": "#hash_1a6c513cae4acb3f"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_small_chain"
                         },
                         {
                             "material": "#hash_3f15ebad6704fe4a"
@@ -53886,16 +53886,16 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_base_weapon_03"
                         },
                         {
-                            "material": "#hash_319eef56dff2a783"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_assist_base"
                         },
                         {
-                            "material": "#hash_1e30d9b634bea03e"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_front_wood_picks"
                         },
                         {
                             "material": "#hash_7c4a71e98350d1d2"
                         },
                         {
-                            "material": "#hash_564a10572604a0ed"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rail_base1"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_talisman"
@@ -53913,7 +53913,7 @@
                             "material": "#mc/mtl_p8_zm_gla_stake_tower_wood_01_wood"
                         },
                         {
-                            "material": "#hash_4d97b7af5dbc1d4b"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_base_weapon_02"
                         },
                         {
                             "material": "#mc/mtl_c_t8_blockout_leather"
@@ -53931,13 +53931,13 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sights"
                         },
                         {
-                            "material": "#hash_3871bd97f28d7444"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_side_top_pocket"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_talisman_blood"
                         },
                         {
-                            "material": "#hash_368f05ff9ca142ee"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rail_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rapidfire"
@@ -61235,7 +61235,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_rapidfire"
                         },
                         {
-                            "material": "#hash_1bf49bda02e959df"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_rail_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_base_weapon_02"
@@ -61256,16 +61256,16 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_screws"
                         },
                         {
-                            "material": "#hash_3f5c27759beee264"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_upper_receiver_right"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_tacsac"
                         },
                         {
-                            "material": "#hash_69fec172f283cf6a"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_rail_base1"
                         },
                         {
-                            "material": "#hash_2aab72b81abb2d9b"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_upper_receiver_left"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_sac_mount"
@@ -61277,7 +61277,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sac_mount"
                         },
                         {
-                            "material": "#hash_afbf8d36d4b31e"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_assist_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_front_hical"
@@ -61307,7 +61307,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_front_hical"
                         },
                         {
-                            "material": "#hash_344299f3dbe04cf"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_base_weapon_back_03"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_base_weapon_03"
@@ -61734,10 +61734,10 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_barrel"
                         },
                         {
-                            "material": "#hash_154873bb3c5ed1a2"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_side_lower_pocket"
                         },
                         {
-                            "material": "#hash_4d97b6af5dbc1b98"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_base_weapon_03"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_rapidfire"
@@ -61752,7 +61752,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_skull_eyes"
                         },
                         {
-                            "material": "#hash_17c425bd8790e598"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_bulet"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_skull"
@@ -61773,7 +61773,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_front_sight"
                         },
                         {
-                            "material": "#hash_1a6c513cae4acb3f"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_small_chain"
                         },
                         {
                             "material": "#hash_3f15ebad6704fe4a"
@@ -61782,16 +61782,16 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_base_weapon_03"
                         },
                         {
-                            "material": "#hash_319eef56dff2a783"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_assist_base"
                         },
                         {
-                            "material": "#hash_1e30d9b634bea03e"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_front_wood_picks"
                         },
                         {
                             "material": "#hash_7c4a71e98350d1d2"
                         },
                         {
-                            "material": "#hash_564a10572604a0ed"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rail_base1"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_talisman"
@@ -61809,7 +61809,7 @@
                             "material": "#mc/mtl_p8_zm_gla_stake_tower_wood_01_wood"
                         },
                         {
-                            "material": "#hash_4d97b7af5dbc1d4b"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_base_weapon_02"
                         },
                         {
                             "material": "#mc/mtl_c_t8_blockout_leather"
@@ -61827,13 +61827,13 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sights"
                         },
                         {
-                            "material": "#hash_3871bd97f28d7444"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_side_top_pocket"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_talisman_blood"
                         },
                         {
-                            "material": "#hash_368f05ff9ca142ee"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rail_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rapidfire"
@@ -62903,7 +62903,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_rapidfire"
                         },
                         {
-                            "material": "#hash_1bf49bda02e959df"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_rail_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_base_weapon_02"
@@ -62924,16 +62924,16 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_screws"
                         },
                         {
-                            "material": "#hash_3f5c27759beee264"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_upper_receiver_right"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_tacsac"
                         },
                         {
-                            "material": "#hash_69fec172f283cf6a"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_rail_base1"
                         },
                         {
-                            "material": "#hash_2aab72b81abb2d9b"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_upper_receiver_left"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_sac_mount"
@@ -62945,7 +62945,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sac_mount"
                         },
                         {
-                            "material": "#hash_afbf8d36d4b31e"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_assist_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_front_hical"
@@ -62975,7 +62975,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_front_hical"
                         },
                         {
-                            "material": "#hash_344299f3dbe04cf"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_base_weapon_back_03"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_base_weapon_03"
@@ -63402,10 +63402,10 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_barrel"
                         },
                         {
-                            "material": "#hash_154873bb3c5ed1a2"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_side_lower_pocket"
                         },
                         {
-                            "material": "#hash_4d97b6af5dbc1b98"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_base_weapon_03"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_rapidfire"
@@ -63420,7 +63420,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_skull_eyes"
                         },
                         {
-                            "material": "#hash_17c425bd8790e598"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_bulet"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_skull"
@@ -63441,7 +63441,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_front_sight"
                         },
                         {
-                            "material": "#hash_1a6c513cae4acb3f"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_small_chain"
                         },
                         {
                             "material": "#hash_3f15ebad6704fe4a"
@@ -63450,16 +63450,16 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_base_weapon_03"
                         },
                         {
-                            "material": "#hash_319eef56dff2a783"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_assist_base"
                         },
                         {
-                            "material": "#hash_1e30d9b634bea03e"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_front_wood_picks"
                         },
                         {
                             "material": "#hash_7c4a71e98350d1d2"
                         },
                         {
-                            "material": "#hash_564a10572604a0ed"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rail_base1"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_talisman"
@@ -63477,7 +63477,7 @@
                             "material": "#mc/mtl_p8_zm_gla_stake_tower_wood_01_wood"
                         },
                         {
-                            "material": "#hash_4d97b7af5dbc1d4b"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_base_weapon_02"
                         },
                         {
                             "material": "#mc/mtl_c_t8_blockout_leather"
@@ -63495,13 +63495,13 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sights"
                         },
                         {
-                            "material": "#hash_3871bd97f28d7444"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_side_top_pocket"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_talisman_blood"
                         },
                         {
-                            "material": "#hash_368f05ff9ca142ee"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rail_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rapidfire"
@@ -64571,7 +64571,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_rapidfire"
                         },
                         {
-                            "material": "#hash_1bf49bda02e959df"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_rail_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_base_weapon_02"
@@ -64592,16 +64592,16 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_screws"
                         },
                         {
-                            "material": "#hash_3f5c27759beee264"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_upper_receiver_right"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_tacsac"
                         },
                         {
-                            "material": "#hash_69fec172f283cf6a"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_rail_base1"
                         },
                         {
-                            "material": "#hash_2aab72b81abb2d9b"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_upper_receiver_left"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_sac_mount"
@@ -64613,7 +64613,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sac_mount"
                         },
                         {
-                            "material": "#hash_afbf8d36d4b31e"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_assist_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_front_hical"
@@ -64643,7 +64643,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_front_hical"
                         },
                         {
-                            "material": "#hash_344299f3dbe04cf"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_01_base_weapon_back_03"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_base_weapon_03"
@@ -65070,10 +65070,10 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_barrel"
                         },
                         {
-                            "material": "#hash_154873bb3c5ed1a2"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_side_lower_pocket"
                         },
                         {
-                            "material": "#hash_4d97b6af5dbc1b98"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_base_weapon_03"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_rapidfire"
@@ -65088,7 +65088,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_skull_eyes"
                         },
                         {
-                            "material": "#hash_17c425bd8790e598"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_bulet"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_skull"
@@ -65109,7 +65109,7 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_front_sight"
                         },
                         {
-                            "material": "#hash_1a6c513cae4acb3f"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_small_chain"
                         },
                         {
                             "material": "#hash_3f15ebad6704fe4a"
@@ -65118,16 +65118,16 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_base_weapon_03"
                         },
                         {
-                            "material": "#hash_319eef56dff2a783"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_assist_base"
                         },
                         {
-                            "material": "#hash_1e30d9b634bea03e"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_front_wood_picks"
                         },
                         {
                             "material": "#hash_7c4a71e98350d1d2"
                         },
                         {
-                            "material": "#hash_564a10572604a0ed"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rail_base1"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_talisman"
@@ -65145,7 +65145,7 @@
                             "material": "#mc/mtl_p8_zm_gla_stake_tower_wood_01_wood"
                         },
                         {
-                            "material": "#hash_4d97b7af5dbc1d4b"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_base_weapon_02"
                         },
                         {
                             "material": "#mc/mtl_c_t8_blockout_leather"
@@ -65163,13 +65163,13 @@
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sights"
                         },
                         {
-                            "material": "#hash_3871bd97f28d7444"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_side_top_pocket"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_talisman_blood"
                         },
                         {
-                            "material": "#hash_368f05ff9ca142ee"
+                            "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rail_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_ar_stealth_sig_02_rapidfire"

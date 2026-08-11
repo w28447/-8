@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_barbarians_04",
     "type": "#tag",
-    "material": "#hash_4edfb6263e00b2f6",
+    "material": "#vd/mtl_loot_ui_icon_tags_barbarians_04",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/barbarians_04",

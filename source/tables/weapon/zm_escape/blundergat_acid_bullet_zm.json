@@ -31,5 +31,5 @@
     "sound250": "#hash_242aa17124751841",
     "tunables1": "#hash_468528d06864e303",
     "projectilemodel": "#wpn_t8_zm_blundergat_acid_projectile",
-    "fx_ed8": "#hash_303c56d9305fbba7"
+    "fx_ed8": "#zm_weapons/fx8_blundersplat_impact"
 }

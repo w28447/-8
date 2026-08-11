@@ -52,8 +52,8 @@
     "hudIcon": "#ui_icon_inventory_tomahawk",
     "image_e90": "#ui_icon_inventory_tomahawk",
     "image_e98": "#ui_icon_inventory_tomahawk",
-    "fx_ed8": "#hash_681b2b47d9fb71c9",
-    "fx_f00": "#hash_77b995b902df3cd9",
+    "fx_ed8": "#zm_weapons/fx8_tomahawk_impact",
+    "fx_f00": "#zm_weapons/fx8_tomahawk_trail",
     "bounceImpactFX": "#knife_large_enter",
     "bounceImpactSounds": "#hatchet_bounce"
 }

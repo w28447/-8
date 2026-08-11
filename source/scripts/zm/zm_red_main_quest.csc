@@ -103,7 +103,7 @@ function init()
     level._effect[ #"hash_30660c47aae060a9" ] = #"zm_ai/fx8_elec_bolt";
     level._effect[ #"hash_22acf133b0aa208a" ] = #"hash_4d09e042a77cfba3";
     level._effect[ #"hash_530e1caa1a8c81d2" ] = #"hash_4bbfe2d612f8393d";
-    level._effect[ #"hash_6d76e4b7a31537af" ] = #"hash_2b71a6c9f08cfe3b";
+    level._effect[ #"hash_6d76e4b7a31537af" ] = #"maps/zm_escape/fx8_lightning_trail_red";
     level._effect[ #"hash_4d77ba61cd7f3eb7" ] = #"hash_25c4a39b373bfc67";
     level._effect[ #"hash_7fc7f7b5958831d4" ] = #"hash_520fd2427c5fcea3";
     level._effect[ #"hash_431f319e4b8fe9db" ] = #"hash_37bc7da216893b77";

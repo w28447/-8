@@ -70,7 +70,7 @@
     "meleeImpactRumble": "#defaultweapon_melee",
     "fx_bc8": "#hash_3e3caddc73aa8167",
     "fx_bd0": "#hash_3e35a1dc73a44e55",
-    "fx_f00": "#hash_5fdd021d80dd8fc6",
+    "fx_f00": "#weapon/fx8_trail_grenade",
     "normalImpactFX": "#knife_large_enter",
     "bounceImpactFX": "#bullet_small_enter",
     "bounceImpactSounds": "#hatchet_bounce"

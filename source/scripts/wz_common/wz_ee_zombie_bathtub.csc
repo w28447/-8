@@ -38,7 +38,7 @@ function zombie_arm_blood_splash( localclientnum, oldval, newval, bnewent, binit
     
     if ( isdefined( bathtub ) )
     {
-        playfx( localclientnum, #"hash_6e2b2bcea07134d1", bathtub.origin, ( 0, 0, 1 ) );
+        playfx( localclientnum, #"impacts/fx8_knife_impact_blood", bathtub.origin, ( 0, 0, 1 ) );
     }
 }
 

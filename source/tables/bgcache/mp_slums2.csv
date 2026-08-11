@@ -244,7 +244,7 @@ soundalias,#hash_200e2ebcd26bb5a9
 soundalias,#hash_208f0fa01c042df2
 soundalias,#hash_2149db0c502305e3
 soundalias,#hash_216d884bc3670a16
-soundalias,#hash_21cfccc8ada14c68
+soundalias,#pfx_spark_bounce
 soundalias,#hash_2250c1fa4b3ba63b
 soundalias,#hash_2292879155c54477
 soundalias,#hash_22d01da9a5078de7
@@ -362,7 +362,7 @@ soundalias,#hash_626d49a9b63510ec
 soundalias,#evt_veh_small
 soundalias,#amb_flies
 soundalias,#hash_655da476017283df
-soundalias,#hash_65f24e989cf891b3
+soundalias,#dst_spark_bounce
 soundalias,#hash_663899d42687914d
 soundalias,#exp_incindiary_large
 soundalias,#hash_67e1b634a1e1c1ba

@@ -32,7 +32,7 @@ function init()
 // Size: 0x1c4
 function ee_lullaby_step1_setup( var_5ea5c94d )
 {
-    var_21569a93 = getent( "morgue_stand_trig", "targetname" );
+    e_stand_trigger = getent( "morgue_stand_trig", "targetname" );
     s_lookat = struct::get( "morgue_lookat" );
     var_ca7809eb = 20000;
     var_87706f3b = 0;
@@ -41,12 +41,12 @@ function ee_lullaby_step1_setup( var_5ea5c94d )
     {
         while ( !var_87706f3b )
         {
-            s_result = var_21569a93 trigger::wait_till();
+            s_result = e_stand_trigger trigger::wait_till();
             e_player = s_result.who;
             var_2c116c59 = gettime();
             var_ca7809eb = 20000;
             
-            while ( isdefined( e_player ) && !var_87706f3b && e_player istouching( var_21569a93 ) )
+            while ( isdefined( e_player ) && !var_87706f3b && e_player istouching( e_stand_trigger ) )
             {
                 if ( e_player util::is_looking_at( s_lookat.origin, 0.99 ) )
                 {
@@ -75,7 +75,7 @@ function ee_lullaby_step1_setup( var_5ea5c94d )
         return;
     }
     
-    var_21569a93 delete();
+    e_stand_trigger delete();
 }
 
 // Namespace namespace_35b7c648/namespace_35b7c648
@@ -88,8 +88,8 @@ function ee_lullaby_step1_cleanup( var_5ea5c94d, ended_early )
     {
     }
     
-    var_21569a93 = getent( "morgue_stand_trig", "targetname" );
-    var_21569a93 delete();
+    e_stand_trigger = getent( "morgue_stand_trig", "targetname" );
+    e_stand_trigger delete();
 }
 
 // Namespace namespace_35b7c648/namespace_35b7c648

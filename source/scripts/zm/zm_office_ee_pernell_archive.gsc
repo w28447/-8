@@ -99,10 +99,10 @@ function init_quest()
     level.var_5a599dbf[ 4 ] = { #in_inventory:0, #vo_line:var_b37ebf6 };
     level.var_5a599dbf[ 5 ] = { #in_inventory:0, #vo_line:var_4e4ef50e };
     level.var_5a599dbf[ 6 ] = { #in_inventory:0, #vo_line:var_2c28b1bb };
-    level.var_a035a0b9 = zm_hms_util::function_bffcedde( "office_punch_card", "targetname", "script_int" );
+    level.a_e_punch_cards = zm_hms_util::function_bffcedde( "office_punch_card", "targetname", "script_int" );
     level.var_3d015a65 = 0;
     
-    foreach ( e_punch_card in level.var_a035a0b9 )
+    foreach ( e_punch_card in level.a_e_punch_cards )
     {
         e_punch_card zm_item_pickup::item_pickup_init( &function_e8d6a81b, 1 );
     }

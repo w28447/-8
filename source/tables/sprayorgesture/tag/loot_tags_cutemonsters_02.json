@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_cutemonsters_02",
     "type": "#tag",
-    "material": "#hash_64c96feaaea7f70d",
+    "material": "#vd/mtl_loot_ui_icon_tags_cutemonsters_02",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/cutemonsters_02",

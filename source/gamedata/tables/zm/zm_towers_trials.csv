@@ -8,7 +8,7 @@
 7,#shields_up,&#zmtrials/shields_up,&#zmtrials/shields_up_desc,&#,#restrict_loadout,#shield,#,#,#,#,#,#,#
 8,#creeper,&#zmtrials/creeper,&#zmtrials/creeper_desc,&#,#hash_64d77357e69aee75,#crouch,#,#,#,#,#,#,#
 9,#ix_lives,&#zmtrials/ix_lives,&#zmtrials/ix_lives_desc,&#,#kill_in_area,#hash_5fea2159d1a2a904,#gladiator,#9,#hash_f7011df2ad413b5,#zone_starting_area_center,#,#,#
-10,#hash_6ab5543f25d2b74b,&#hash_55e02dd5d39f9106,&#hash_5807dc4b69518bf6,&#,#defend_area,#s_destination_temple,#hash_7cd92738d04c1625,#hash_79cbb781f15087ce,#zone_pap_room,#zone_pap_room_balcony_flooded_crypt,#,#,#
+10,#hash_6ab5543f25d2b74b,&#zmtrials/defend_the_temple,&#zmtrials/defend_the_temple_desc,&#,#defend_area,#s_destination_temple,#hash_7cd92738d04c1625,#hash_79cbb781f15087ce,#zone_pap_room,#zone_pap_room_balcony_flooded_crypt,#,#,#
 10,#,&#,&#,&#,#give_reward,#fastest_time_to_round_10,#hash_3ad6fd4b554f42a0,#uie_trial_medal_bronze,#hash_6dd1118d38426588,#,#,#,#
 11,#shoot_from_the_hip,&#zmtrials/shoot_from_the_hip,&#zmtrials/shoot_from_the_hip_desc,&#,#no_ads,#,#,#,#,#,#,#,#
 12,#slowpoke,&#zmtrials/slowpoke,&#zmtrials/slowpoke_desc,&#,#no_sprint,#,#,#,#,#,#,#,#
@@ -19,7 +19,7 @@
 17,#shotgun_wedding,&#zmtrials/shotgun_wedding,&#zmtrials/shotgun_wedding_desc,&#,#restrict_loadout,#hash_33380540d3ae5004,#,#,#,#,#,#,#
 18,#heads_up,&#zmtrials/heads_up,&#zmtrials/heads_up_desc,&#,#headshots_only,#,#,#,#,#,#,#,#
 19,#ix_minutes_of_hell,&#zmtrials/ix_minutes_of_hell,&#zmtrials/ix_minutes_of_hell_desc,&#,#timed_round,#hash_6e1d873c28de9fc2,#15,#540,#,#,#,#,#
-20,#defend_arena,&#hash_5bbb940392f0ba96,&#hash_138e5af4b40cb066,&#,#defend_area,#s_destination_arena,#hash_495112655250e1cf,#hash_16c301550a06a27c,#zone_starting_area_center,#zone_starting_area_ra,#zone_starting_area_odin,#zone_starting_area_zeus,#zone_starting_area_danu
+20,#defend_arena,&#zmtrials/defend_the_arena,&#zmtrials/defend_the_arena_desc,&#,#defend_area,#s_destination_arena,#hash_495112655250e1cf,#hash_16c301550a06a27c,#zone_starting_area_center,#zone_starting_area_ra,#zone_starting_area_odin,#zone_starting_area_zeus,#zone_starting_area_danu
 20,#,&#,&#,&#,#activate_hazards,#,#,#,#,#,#,#,#
 20,#,&#,&#,&#,#give_reward,#fastest_time_to_round_20,#hash_46044d0ce4567ceb,#uie_trial_medal_silver,#hash_461f4cde5d994295,#,#,#,#
 21,#you_made_your_points,&#zmtrials/you_made_your_points,&#zmtrials/you_made_your_points_desc,&#,#damage_drains_points,#10,#,#,#,#,#,#,#
