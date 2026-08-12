@@ -36,18 +36,18 @@
     "tunables1": "#status_effect_grenade_dot_tunables_mp",
     "cacWeaponXCam": "#ui_cam_cac_equip_emp",
     "sharedWeaponSounds": "#equipment",
-    "projectilemodel": "#hash_4124910a128435d5",
+    "projectilemodel": "#wpn_t7_grenade_dot_projectile",
     "viewmodel": [
-        "#hash_1f415a1d28a59c7"
+        "#wpn_t7_grenade_dot_view"
     ],
     "worldModel": [
-        "#hash_595c5909b0ed853a"
+        "#wpn_t7_grenade_dot_world"
     ],
     "reticleCenter": "#emp_reticle",
     "inventoryIconZm": "#icons_equipment_dot",
     "hudIcon": "#icons_equipment_dot_hud",
     "image_e90": "#t7_hud_icon_menu_emp_kf",
-    "fx_ed8": "#hash_30c601fd5abd792b",
+    "fx_ed8": "#explosions/fx_exp_grenade_smoke_dot",
     "bounceImpactFX": "#grenade_bounce",
     "bounceImpactSounds": "#emp_bounce"
 }

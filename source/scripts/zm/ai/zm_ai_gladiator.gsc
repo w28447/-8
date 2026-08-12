@@ -1059,7 +1059,7 @@ function function_c7748c4a( entity, mocompanim, mocompanimblendouttime, mocompan
         self.meleeinfo.var_98bc84b7 = getnotetracktimes( mocompanim, "start_procedural" )[ 0 ];
         self.meleeinfo.var_6392c3a2 = getnotetracktimes( mocompanim, "stop_procedural" )[ 0 ];
         var_e397f54c = getmovedelta( mocompanim, 0, 1, entity );
-        self.meleeinfo.var_cb28f380 = entity localtoworldcoords( var_e397f54c );
+        self.meleeinfo.originalendpos = entity localtoworldcoords( var_e397f54c );
         
         /#
             movedelta = getmovedelta( mocompanim, 0, 1, entity );
@@ -1097,7 +1097,7 @@ function function_3f15e557( entity, mocompanim, mocompanimblendouttime, mocompan
         var_83fd29ee = vectornormalize( predictedenemypos - entity.origin );
         var_1efb2395 = predictedenemypos - var_83fd29ee * entity getpathfindingradius();
         self.meleeinfo.adjustedendpos = var_1efb2395;
-        var_776ddabf = distancesquared( self.meleeinfo.var_cb28f380, self.meleeinfo.adjustedendpos );
+        var_776ddabf = distancesquared( self.meleeinfo.originalendpos, self.meleeinfo.adjustedendpos );
         var_65cbfb52 = distancesquared( self.meleeinfo.var_9bfa8497, self.meleeinfo.adjustedendpos );
         
         if ( var_776ddabf <= 20 * 20 )
@@ -1127,11 +1127,11 @@ function function_3f15e557( entity, mocompanim, mocompanimblendouttime, mocompan
         
         if ( self.meleeinfo.var_425c4c8b )
         {
-            var_776ddabf = distancesquared( self.meleeinfo.var_cb28f380, self.meleeinfo.adjustedendpos );
+            var_776ddabf = distancesquared( self.meleeinfo.originalendpos, self.meleeinfo.adjustedendpos );
             myforward = anglestoforward( self.angles );
             var_1c3641f2 = ( entity.favoriteenemy.origin[ 0 ], entity.favoriteenemy.origin[ 1 ], entity.origin[ 2 ] );
             dirtoenemy = vectornormalize( var_1c3641f2 - entity.origin );
-            zdiff = self.meleeinfo.var_cb28f380[ 2 ] - entity.favoriteenemy.origin[ 2 ];
+            zdiff = self.meleeinfo.originalendpos[ 2 ] - entity.favoriteenemy.origin[ 2 ];
             withinzrange = abs( zdiff ) <= 45;
             withinfov = vectordot( myforward, dirtoenemy ) > cos( 30 );
             var_7948b2f3 = withinzrange && withinfov;
@@ -1153,7 +1153,7 @@ function function_3f15e557( entity, mocompanim, mocompanimblendouttime, mocompan
             
             if ( var_425c4c8b )
             {
-                var_90c3cdd2 = length( self.meleeinfo.adjustedendpos - self.meleeinfo.var_cb28f380 );
+                var_90c3cdd2 = length( self.meleeinfo.adjustedendpos - self.meleeinfo.originalendpos );
                 timestep = function_60d95f53();
                 animlength = getanimlength( mocompanim ) * 1000;
                 starttime = self.meleeinfo.var_98bc84b7 * animlength;
@@ -1161,7 +1161,7 @@ function function_3f15e557( entity, mocompanim, mocompanimblendouttime, mocompan
                 starttime = floor( starttime / timestep );
                 stoptime = floor( stoptime / timestep );
                 adjustduration = stoptime - starttime;
-                self.meleeinfo.var_10b8b6d1 = vectornormalize( self.meleeinfo.adjustedendpos - self.meleeinfo.var_cb28f380 );
+                self.meleeinfo.var_10b8b6d1 = vectornormalize( self.meleeinfo.adjustedendpos - self.meleeinfo.originalendpos );
                 self.meleeinfo.var_8b9a15a6 = var_90c3cdd2 / adjustduration;
                 self.meleeinfo.var_425c4c8b = 1;
                 self.meleeinfo.adjustmentstarted = 1;
@@ -1178,7 +1178,7 @@ function function_3f15e557( entity, mocompanim, mocompanimblendouttime, mocompan
         assert( isdefined( self.meleeinfo.var_10b8b6d1 ) && isdefined( self.meleeinfo.var_8b9a15a6 ) );
         
         /#
-            recordsphere( self.meleeinfo.var_cb28f380, 3, ( 0, 1, 0 ), "<dev string:x38>" );
+            recordsphere( self.meleeinfo.originalendpos, 3, ( 0, 1, 0 ), "<dev string:x38>" );
             recordsphere( self.meleeinfo.adjustedendpos, 3, ( 0, 0, 1 ), "<dev string:x38>" );
         #/
         

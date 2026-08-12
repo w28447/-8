@@ -1583,7 +1583,7 @@ function soul_captured( var_f0e6c7a2, ent )
     {
         var_f0e6c7a2.charged = 1;
         var_f0e6c7a2.fx_handle clientfield::set( "soul_capture_filled", 1 );
-        zm_sq_modules::function_2a94055d( var_f0e6c7a2.script_string );
+        zm_sq_modules::end_soul_capture( var_f0e6c7a2.script_string );
     }
 }
 
@@ -1694,7 +1694,7 @@ function function_dbbdda4c( e_player )
         }
         
         self notify( #"hash_4d9ae187d6e333c7" );
-        zm_sq_modules::function_2a94055d( self.script_string );
+        zm_sq_modules::end_soul_capture( self.script_string );
         level.e_avogadro.var_885c1824 = undefined;
         level flag::clear( #"hash_56dcbeaf295dd09e" );
         

@@ -6092,7 +6092,7 @@ function function_2aa1c625( var_896fa160, var_1f61bd3e )
     for ( i = 1; i <= 3 ; i++ )
     {
         s_orb = struct::get( var_896fa160 + "_" + i );
-        mdl_orb = util::spawn_model( #"hash_6d68fe0dc773635f", s_orb.origin, s_orb.angles );
+        mdl_orb = util::spawn_model( #"p7_energy_ball", s_orb.origin, s_orb.angles );
         mdl_orb setcandamage( 1 );
         mdl_orb.health = 1116 * util::get_active_players().size;
         mdl_orb.var_1f61bd3e = var_1f61bd3e;

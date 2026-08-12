@@ -2,7 +2,7 @@ type,name
 vehicle,#hash_3c7ad3f215cfc8d5
 vehicle,#hash_7774be8a9a5c21ad
 model,#p7_fxanim_gp_fan_electric_wall_01_mod
-model,#hash_7f94df31a08ce6
+model,#p8_stuffed_bull_bagged_black
 model,#p8_food_vegetable_carrot_cap_crate
 model,#p8_food_vegetable_cauliflower_pile_crate_dmg
 model,#p8_stuffed_bull
@@ -52,7 +52,7 @@ model,#p8_food_pastry_churro
 model,#p8_food_fruit_mango
 model,#p8_food_fruit_orange_cap_crate_dmg
 model,#p8_food_vegetable_carrot
-model,#hash_130c80140c317436
+model,#p8_stuffed_donkey_bagged_pink
 model,#p7_food_cheese_wheel_sml_qtr_red
 model,#p7_food_fruit_banana_bunch_dmg_01a
 model,#p7_food_cheese_wheel_lrg_slice_red
@@ -347,7 +347,7 @@ model,#p7_food_cheese_wheel_lrg_half_yellow
 model,#hash_7021737dc6b83e07
 model,#hash_7021747dc6b83fba
 model,#p7_spl_bottles_pirate_rum
-model,#hash_702a1cea2c2699ba
+model,#veh_t8_civ_van_utility_dest_attach
 model,#p8_fire_extinguisher_01_dmg_01
 model,#p7_fxp_debris_newspaper_01
 model,#p7_zm_ctl_book_vintage_row_01
@@ -412,7 +412,7 @@ model,#p7_office_paper_sheet_09
 model,#p7_office_paper_sheet_08
 model,#p7_office_paper_sheet_03
 model,#p7_office_paper_sheet_02
-model,#hash_7defc77aa593e72e
+model,#p8_fxanim_gp_seagull_01_mod
 model,#p7_dinnerware_01_fork
 model,#p8_food_fruit_mango_cap_crate
 model,#p8_food_pastry_xuixo
@@ -445,7 +445,7 @@ xanim,#pb_rifle_endgame_2ndplace_idle
 xanim,#hash_b835d2185145a37
 xanim,#hash_d5fe406e4d15c48
 xanim,#hash_df7744a0d52ca08
-xanim,#hash_fb2c0469c5daf2e
+xanim,#p8_fxanim_gp_rollup_blinds_short_01_anim
 xanim,#hash_11be9aa4823c5a1b
 xanim,#hash_135b45caec979373
 xanim,#pb_rifle_endgame_3rdplace_idle
@@ -495,7 +495,7 @@ xanim,#hash_3b46c164d0fb6733
 xanim,#hash_3c397e6d764d34ec
 xanim,#hash_3d77b8326975301c
 xanim,#hash_3dabaf93826bd381
-xanim,#hash_3e808c20e733c28e
+xanim,#p8_fxanim_gp_rollup_blinds_long_01_anim
 xanim,#hash_3ebed21e4f49eca9
 xanim,#hash_41d18aa8eb46a959
 xanim,#hash_43581ab456bdada1
@@ -1099,7 +1099,7 @@ soundalias,#amb_chain_swing_3
 soundalias,#amb_chain_swing_2
 soundalias,#fly_step_tarp_plr
 soundalias,#hash_3cf59cd437fa67f8
-soundalias,#hash_3d3ccfc2be063ea9
+soundalias,#pfx_fire_sml
 soundalias,#hash_3d67cbb26df49c64
 soundalias,#hash_3dbfa6bf28cd58d5
 soundalias,#hash_3e5a4dbc35d1e68a
@@ -1321,13 +1321,13 @@ soundalias,#hash_7fc26c598d080448
 soundalias,#exp_barrel_dist
 client_fx,#hash_c720ceb85f8d58
 client_fx,#hash_15df7a3c718102a
-client_fx,#hash_1dc451a16def3d6
+client_fx,#vehicle/fx_headlight_hemtt_left
 client_fx,#weapon/fx_trail_quad_rocket
 client_fx,#explosions/fx8_exp_grenade_default
 client_fx,#impacts/fx_bul_impact_heavy_head_nonfatal_exit
 client_fx,#ui/fx_dom_cap_indicator_team_r90
 client_fx,#dirt/fx8_dust_fall_crumble_rattle
-client_fx,#hash_dcc3d27512fa044
+client_fx,#water/fx8_water_surface_rattle
 client_fx,#impacts/fx_bul_impact_boss_body_nonfatal_exit
 client_fx,#hash_1008bbbc9ba91883
 client_fx,#impacts/fx8_bul_impact_metal_sm
@@ -1336,7 +1336,7 @@ client_fx,#hash_1310ea39ad59decb
 client_fx,#hash_14afd4768e3a89ef
 client_fx,#hash_1521ce53ec399273
 client_fx,#destruct/fx_dest_window_glass_edge
-client_fx,#hash_1847077627974c80
+client_fx,#impacts/fx8_bul_impact_blood_limb_zm
 client_fx,#hash_1890445e80341b3e
 client_fx,#tools/fx_null
 client_fx,#hash_19464c4c5b91297b
@@ -1361,11 +1361,11 @@ client_fx,#hash_2e94c3f0bd739180
 client_fx,#impacts/fx_bul_impact_heavy_body_nonfatal_exit
 client_fx,#hash_30c6743904798c76
 client_fx,#impacts/fx8_bul_impact_blood_body_fatal_exit
-client_fx,#hash_34cab5a8272eeb4f
+client_fx,#debris/fx8_debris_glass_fall_rattle
 client_fx,#impacts/fx_bul_impact_snow_sm
 client_fx,#hash_39acb811aabc7232
 client_fx,#impacts/fx8_bul_impact_blood_limb_nonfatal_exit
-client_fx,#hash_3eec9722c838ae73
+client_fx,#foliage/fx8_leaves_ground_rattle
 client_fx,#impacts/fx_bul_impact_armor_body_fatal_exit
 client_fx,#hash_40f4c2f5a7d7e23a
 client_fx,#impacts/fx_bul_impact_armor_head_fatal_exit
@@ -1378,7 +1378,7 @@ client_fx,#vehicle/fx_treadfx_asphalt_skid_emit
 client_fx,#hash_49a7a614c75cfdbf
 client_fx,#vehicle/fx_treadfx_snow_skid_emit
 client_fx,#impacts/fx8_bul_impact_blood_head_fatal_exit
-client_fx,#hash_4d885739142015b7
+client_fx,#snow/fx8_snow_ground_wet_rattle
 client_fx,#hash_4e7218bfa9566ef0
 client_fx,#hash_503192839d9bde33
 client_fx,#impacts/fx_bul_impact_armor_body_nonfatal_exit
@@ -1389,7 +1389,7 @@ client_fx,#hash_579249bb3e73d8c9
 client_fx,#hash_5821ea4cefbbfac9
 client_fx,#hash_586445f2c9a8db89
 client_fx,#ui/fx_dom_marker_neutral_r90
-client_fx,#hash_5e4e366619beb3f4
+client_fx,#dirt/fx8_dust_debris_wall_rattle
 client_fx,#explosions/fx_exp_grenade_water
 client_fx,#impacts/fx_bul_impact_armor_head_nonfatal_exit
 client_fx,#hash_5fbdbf1783f703ae
@@ -1399,7 +1399,7 @@ client_fx,#ui/fx_dom_marker_team_r120
 client_fx,#hash_63683460e66400a8
 client_fx,#impacts/fx_bul_impact_boss_body_fatal_exit
 client_fx,#hash_6627d7581658d780
-client_fx,#hash_67a4679378e51bf7
+client_fx,#dirt/fx8_dust_ground_rattle
 client_fx,#impacts/fx8_bul_impact_blood_corpse_nonfatal
 client_fx,#hash_6da8e3354673a4c0
 client_fx,#explosions/fx_exp_rocket_quadtank_default

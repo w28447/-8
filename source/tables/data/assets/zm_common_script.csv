@@ -433,7 +433,7 @@ material,d#hash_43667746bc7d2128
 material,d#ei/gfx_lightning_bolt_ground_em_pb_i16
 material,d#hash_55994d4430298053
 material,d#hash_5b119406ce3a6f04
-material,#hash_7030b207131c8991
+material,#ei/gfx8_smk_md_thick_lobe_anim_em_pb_i16
 bgcache,#zm_common_script
 fx,#zm_ai/fx8_elec_shock_os
 fx,#zm_ai/fx8_elec_bolt

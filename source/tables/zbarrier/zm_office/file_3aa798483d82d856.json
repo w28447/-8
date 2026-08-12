@@ -15,7 +15,7 @@
     "attackSpotHorzOffset": 0,
     "boards": [
         {
-            "boardModel": "#hash_6d1662d9c331239e",
+            "boardModel": "#zm_office_debris_roll_door_xmodel",
             "tearAnim": "#hash_48a3b99c691acf89",
             "boardAnim": "#hash_61c6754307af5648",
             "staticAnim": "#hash_61c6754307af5648",

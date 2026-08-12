@@ -1,6 +1,6 @@
 type,name
 model,#p7_fxanim_mou_light_emergency_mod
-model,#hash_22b9b49d52e9bcf
+model,#p7_mou_coffee_mug_mphd
 model,#p8_mp_bomb_crate_palette
 model,#p7_zm_kin_data_reel_plastic_gray_lrg
 model,#p7_mou_console_control_a_lrg
@@ -354,8 +354,8 @@ client_fx,#destruct/fx_dest_window_glass_edge
 client_fx,#ui/fx_dom_cap_indicator_neutral_r120
 client_fx,#ui/fx_dom_marker_neutral_r120
 client_fx,#destruct/fx_dest_paper
-client_fx,#hash_2eec3c0ee053a6cf
+client_fx,#snow/fx8_snow_fall_line_rattle
 client_fx,#ui/fx_dom_cap_indicator_team_r120
-client_fx,#hash_55dfddfc63c9d556
+client_fx,#snow/fx8_snow_ground_rattle
 client_fx,#ui/fx_dom_marker_team_r120
 client_fx,#hash_7e68dfc1a77f9f59

@@ -51,7 +51,7 @@
     "laser_e30": "#default_laser",
     "fx_bc8": "#hash_5dc10a4cbf8ef0b0",
     "fx_bd0": "#hash_5dc8164cbf9523c2",
-    "fx_f00": "#hash_8f8d0a431403706",
+    "fx_f00": "#killstreaks/fx8_agr_rocket_trail",
     "#hash_96850284": "#jammer_tankrobot",
     "normalImpactFX": "#hero_pineapple_explosion",
     "exitImpactFX": "#grenade_exit",

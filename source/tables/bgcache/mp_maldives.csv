@@ -106,7 +106,7 @@ model,#hash_71d5aa0254a60182
 model,#p8_cas_alcohol_shot_glass_flute
 model,#p7_mp_flag_neutral
 model,#hash_75f12770ec5960a2
-model,#hash_76beb1412c9e9ab1
+model,#p8_chi_fan_roof_blades
 model,#p8_mal_power_core_main_pipe_med_connect_xsml
 model,#hash_78f32466070b77c9
 model,#p8_wz_supply_stash_ammo
@@ -460,4 +460,4 @@ client_fx,#destruct/fx_dest_paper
 client_fx,#hash_35b22872aa5d71da
 client_fx,#ui/fx_dom_cap_indicator_team_r120
 client_fx,#ui/fx_dom_marker_team_r120
-client_fx,#hash_67a4679378e51bf7
+client_fx,#dirt/fx8_dust_ground_rattle

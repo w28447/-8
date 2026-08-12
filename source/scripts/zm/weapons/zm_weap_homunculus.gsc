@@ -239,7 +239,7 @@ function function_dcaa7a4a( e_grenade, var_bbab4f84, var_c4a5788c, var_2f916462 
                 e_grenade thread function_1dba4a2();
             }
             
-            e_grenade function_f33bde5c( 1 );
+            e_grenade homunculus_drop_to_ground( 1 );
             e_grenade scene::stop();
             e_grenade.var_69e642c7 scene::play( #"aib_t8_zm_zod_homunculus_deploy_01", e_grenade.mdl_anchor );
             e_grenade.var_69e642c7 scene::stop();
@@ -421,7 +421,7 @@ function function_cc9535d0( var_c4a5788c, var_bbab4f84, var_2f916462 )
                 {
                     b_first_loop = undefined;
                     wait 0.1;
-                    self function_f33bde5c();
+                    self homunculus_drop_to_ground();
                     break;
                 }
                 else if ( isdefined( b_first_loop ) && b_first_loop )
@@ -811,7 +811,7 @@ function function_e383ca2f()
     self waittilltimeout( 15, #"hash_90cfd38343f41f2" );
     self function_4d71ac38( #"hash_6e471fde121d0263", 1 );
     self notify( #"explode" );
-    self function_f33bde5c();
+    self homunculus_drop_to_ground();
     self.var_69e642c7 scene::stop();
     self.var_69e642c7 scene::play( #"aib_t8_zm_zod_homunculus_dth_01", self.mdl_anchor );
     mdl_anchor = self.mdl_anchor;
@@ -837,7 +837,7 @@ function function_e383ca2f()
 // Params 1
 // Checksum 0x4fbb1a68, Offset: 0x26e8
 // Size: 0x224
-function function_f33bde5c( b_immediate = 0 )
+function homunculus_drop_to_ground( b_immediate = 0 )
 {
     self endon( #"death", #"explode" );
     s_trace = groundtrace( self.mdl_anchor.origin + ( 0, 0, 16 ), self.mdl_anchor.origin + ( 0, 0, -1000 ), 0, self.mdl_anchor );

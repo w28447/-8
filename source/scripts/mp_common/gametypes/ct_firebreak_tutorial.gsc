@@ -70,14 +70,14 @@ function setup()
 // Size: 0x24
 function function_8cea4f8f( e_player )
 {
-    e_player function_c9ff0dce();
+    e_player player_spawned_callback();
 }
 
 // Namespace ct_firebreak_tutorial/ct_firebreak_tutorial
 // Params 0
 // Checksum 0xf0ae1805, Offset: 0x1528
 // Size: 0x80c
-function function_c9ff0dce()
+function player_spawned_callback()
 {
     self ct_utils::player_reset();
     

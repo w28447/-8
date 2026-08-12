@@ -177,7 +177,7 @@ function function_26185fc3()
 // Params 0
 // Checksum 0x6d61e6cf, Offset: 0x2100
 // Size: 0x4bc
-function function_c9ff0dce()
+function player_spawned_callback()
 {
     self thread ct_utils::player_reset();
     

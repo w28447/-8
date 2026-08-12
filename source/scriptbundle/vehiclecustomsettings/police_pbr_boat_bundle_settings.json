@@ -1,19 +1,19 @@
 {
     "lightgroups_1_slots": [
         {
-            "fx": "fx#hash_45212649bf4162b3",
+            "fx": "fx#light/fx_light_headlight_pbr",
             "tag": "tag_fx_light_01"
         },
         {
-            "fx": "fx#hash_45212649bf4162b3",
+            "fx": "fx#light/fx_light_headlight_pbr",
             "tag": "tag_fx_light_02"
         },
         {
-            "fx": "fx#hash_45212649bf4162b3",
+            "fx": "fx#light/fx_light_headlight_pbr",
             "tag": "tag_fx_light_03"
         },
         {
-            "fx": "fx#hash_45212649bf4162b3",
+            "fx": "fx#light/fx_light_headlight_pbr",
             "tag": "tag_fx_light_04"
         }
     ],

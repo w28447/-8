@@ -344,10 +344,10 @@ function function_e8ad1d81( position, owner, normal, velocity, killcament, weapo
 // Params 7
 // Checksum 0xe542a424, Offset: 0x1250
 // Size: 0x98
-function function_523961e2( startpos, normal, var_4997e17c, fxindex, fxcount, defaultdistance, rotation )
+function function_523961e2( startpos, normal, planevec, fxindex, fxcount, defaultdistance, rotation )
 {
     currentangle = 360 / fxcount * fxindex;
-    var_7ee25402 = rotatepointaroundaxis( var_4997e17c * defaultdistance, normal, currentangle + rotation );
+    var_7ee25402 = rotatepointaroundaxis( planevec * defaultdistance, normal, currentangle + rotation );
     return startpos + var_7ee25402;
 }
 
@@ -440,11 +440,11 @@ function function_8a03d3f3( owner, impactpos, startpos, normal, multiplier, rota
         fxcount = 7;
     }
     
-    var_4997e17c = perpendicularvector( normal );
+    planevec = perpendicularvector( normal );
     
     for ( fxindex = 0; fxindex < fxcount ; fxindex++ )
     {
-        locations[ #"point" ][ fxindex ] = function_523961e2( startpos, normal, var_4997e17c, fxindex, fxcount, defaultdistance, rotation );
+        locations[ #"point" ][ fxindex ] = function_523961e2( startpos, normal, planevec, fxindex, fxcount, defaultdistance, rotation );
         function_1493c734( locations[ #"point" ][ fxindex ], 10, ( 0, fxindex * 20, 0 ), 0.6, 200 );
         locations[ #"color" ][ fxindex ] = colorarray[ fxindex % colorarray.size ];
     }
@@ -498,7 +498,7 @@ function function_8a03d3f3( owner, impactpos, startpos, normal, multiplier, rota
         
         randangle = randomint( 360 );
         var_c4b09917 = randomfloatrange( -25, 25 );
-        var_7ee25402 = rotatepointaroundaxis( var_4997e17c, normal, randangle );
+        var_7ee25402 = rotatepointaroundaxis( planevec, normal, randangle );
         var_995eb37a = int( min( var_33ad9452 * multiplier * trace[ #"fraction" ] + 1, var_33ad9452 ) );
         
         for ( var_ecef2fde = 0; var_ecef2fde < var_995eb37a && count % 2 == 0 ; var_ecef2fde++ )

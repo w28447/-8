@@ -23,7 +23,7 @@ function autoexec __init__system__()
 function private __init__()
 {
     level.var_7d95e1ed = [];
-    level.var_7c5c96dc = &function_4f90c4c2;
+    level.var_7c5c96dc = &monkey_detonate_immediate;
     level thread function_a23699fe();
     callback::on_finalize_initialization( &function_1c601b99 );
 }
@@ -199,7 +199,7 @@ function function_b9934c1d()
         waitframe( 1 );
     }
     
-    self function_4f90c4c2();
+    self monkey_detonate_immediate();
 }
 
 // Namespace gadget_cymbal_monkey/gadget_cymbal_monkey
@@ -215,7 +215,7 @@ function function_4e61e1d()
 // Params 0
 // Checksum 0x97373d5c, Offset: 0x950
 // Size: 0x8c
-function function_4f90c4c2()
+function monkey_detonate_immediate()
 {
     if ( isdefined( self.var_38af96b9 ) )
     {
@@ -275,6 +275,6 @@ function function_127fb8f3( cymbal_monkey, attackingplayer )
     
     wait 1.1;
     playfx( #"hash_65c5042becfbaa7d", cymbal_monkey.origin );
-    cymbal_monkey function_4f90c4c2();
+    cymbal_monkey monkey_detonate_immediate();
 }
 

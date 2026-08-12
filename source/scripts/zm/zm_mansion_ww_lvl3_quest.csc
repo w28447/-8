@@ -33,7 +33,7 @@ function init()
         clientfield::register( "scriptmover", "" + #"ww_lvl3_crafting_table_fx", 8000, 1, "int", &ww_lvl3_crafting_table_fx, 0, 0 );
         level._effect[ #"hash_63ffcbb6c8f4bc11" ] = #"hash_9c1cc9cff68a30b";
         level._effect[ #"hash_62ee80337662b3cd" ] = #"hash_d49412589217ae5";
-        level._effect[ #"hash_7ef82b98770c5c0d" ] = #"hash_5faeba7ac14ce809";
+        level._effect[ #"hash_7ef82b98770c5c0d" ] = #"zm_ai/fx8_bat_transform";
         level._effect[ #"bile_idle_fx" ] = #"hash_26219308102ab88";
         level._effect[ #"hash_1789fef86cd8b57e" ] = #"hash_6155f098cde9b5d6";
         level._effect[ #"hash_6ded20ebb8e016ba" ] = #"hash_12294859753682f";

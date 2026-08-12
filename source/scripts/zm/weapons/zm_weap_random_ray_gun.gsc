@@ -620,16 +620,16 @@ function function_5114b093()
         
         if ( var_4a7cc161.size )
         {
-            foreach ( var_688083e6 in var_4a7cc161 )
+            foreach ( shot_enemy in var_4a7cc161 )
             {
-                if ( var_688083e6.damageweapon === s_waitresult.weapon )
+                if ( shot_enemy.damageweapon === s_waitresult.weapon )
                 {
-                    var_688083e6.no_gib = undefined;
+                    shot_enemy.no_gib = undefined;
                     
-                    if ( isvehicle( var_688083e6 ) )
+                    if ( isvehicle( shot_enemy ) )
                     {
                         var_8c561676 = 1;
-                        self thread function_af59b4aa( var_688083e6, s_waitresult );
+                        self thread function_af59b4aa( shot_enemy, s_waitresult );
                         
                         /#
                             if ( getdvarint( #"hash_e2e03328b366e75", 0 ) )
@@ -643,9 +643,9 @@ function function_5114b093()
                     
                     var_dc70aff9 = 1;
                     
-                    if ( var_688083e6.zm_ai_category === #"heavy" || var_688083e6.zm_ai_category === #"miniboss" )
+                    if ( shot_enemy.zm_ai_category === #"heavy" || shot_enemy.zm_ai_category === #"miniboss" )
                     {
-                        if ( isdefined( var_688083e6.var_287c79bd ) && gettime() - var_688083e6.var_287c79bd > 50 )
+                        if ( isdefined( shot_enemy.var_287c79bd ) && gettime() - shot_enemy.var_287c79bd > 50 )
                         {
                             /#
                                 n_test = gettime();
@@ -657,8 +657,8 @@ function function_5114b093()
                     
                     if ( var_dc70aff9 )
                     {
-                        var_c74d5934 = function_2ce99526( var_688083e6 );
-                        var_41bf50f = var_688083e6;
+                        var_c74d5934 = function_2ce99526( shot_enemy );
+                        var_41bf50f = shot_enemy;
                         
                         /#
                             if ( getdvarint( #"hash_e2e03328b366e75", 0 ) )

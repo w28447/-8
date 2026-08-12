@@ -139,8 +139,8 @@ function function_c0101095( weapon, forward, var_62e5b78 )
     var_87c01c60 = vectorscale( forward, var_6b469265 );
     trace_start = player.origin + ( 0, 0, var_c346c56f + 5 ) + var_87c01c60;
     trace_end = trace_start + ( 0, 0, -10 );
-    var_4f64fb6b = 3;
-    trace = physicstrace( trace_start, trace_end, ( var_4f64fb6b * -1, var_4f64fb6b * -1, 0 ), ( var_4f64fb6b, var_4f64fb6b, 1 ), player, 1 );
+    trace_radius = 3;
+    trace = physicstrace( trace_start, trace_end, ( trace_radius * -1, trace_radius * -1, 0 ), ( trace_radius, trace_radius, 1 ), player, 1 );
     
     if ( trace[ #"fraction" ] < 1 )
     {
@@ -499,14 +499,14 @@ function function_7a677105( weapon )
         level.var_825acea = [];
     }
     
-    var_f0bf9259 = hash( weapon.name );
+    weapon_name_hash = hash( weapon.name );
     
-    if ( !isdefined( level.var_825acea[ var_f0bf9259 ] ) )
+    if ( !isdefined( level.var_825acea[ weapon_name_hash ] ) )
     {
-        level.var_825acea[ var_f0bf9259 ] = getscriptbundle( weapon.customsettings );
+        level.var_825acea[ weapon_name_hash ] = getscriptbundle( weapon.customsettings );
     }
     
-    return level.var_825acea[ var_f0bf9259 ];
+    return level.var_825acea[ weapon_name_hash ];
 }
 
 // Namespace weapons/weapons_shared

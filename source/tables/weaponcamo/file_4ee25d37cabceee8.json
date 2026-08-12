@@ -141,7 +141,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_3122eb68b925fe2e",
+                            "camoMaterial": "#mc/mtl_p8_zm_elixir_icon_burned_out",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -381,7 +381,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_530b7a68329d286b",
+                            "camoMaterial": "#mc/mtl_p8_zm_elixir_icon_stock_option",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,

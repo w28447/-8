@@ -940,7 +940,7 @@ function function_1ad502a0( entity, mocompanim, mocompanimblendouttime, mocompan
         entity.meleeinfo.var_98bc84b7 = getnotetracktimes( mocompanim, "start_adjust" )[ 0 ];
         entity.meleeinfo.var_6392c3a2 = getnotetracktimes( mocompanim, "end_adjust" )[ 0 ];
         var_e397f54c = getmovedelta( mocompanim, 0, 1, entity );
-        entity.meleeinfo.var_cb28f380 = entity localtoworldcoords( var_e397f54c );
+        entity.meleeinfo.originalendpos = entity localtoworldcoords( var_e397f54c );
         
         /#
             movedelta = getmovedelta( mocompanim, 0, 1, entity );
@@ -972,8 +972,8 @@ function function_3511ecd1( entity, mocompanim, mocompanimblendouttime, mocompan
         }
         
         entity.meleeinfo.adjustedendpos = predictedenemypos;
-        var_cf699df5 = distancesquared( entity.meleeinfo.var_9bfa8497, entity.meleeinfo.var_cb28f380 );
-        var_776ddabf = distancesquared( entity.meleeinfo.var_cb28f380, entity.meleeinfo.adjustedendpos );
+        var_cf699df5 = distancesquared( entity.meleeinfo.var_9bfa8497, entity.meleeinfo.originalendpos );
+        var_776ddabf = distancesquared( entity.meleeinfo.originalendpos, entity.meleeinfo.adjustedendpos );
         var_65cbfb52 = distancesquared( entity.meleeinfo.var_9bfa8497, entity.meleeinfo.adjustedendpos );
         var_201660e6 = tracepassedonnavmesh( entity.meleeinfo.var_9bfa8497, entity.meleeinfo.adjustedendpos, entity getpathfindingradius() );
         traceresult = bullettrace( entity.origin, entity.meleeinfo.adjustedendpos + ( 0, 0, 30 ), 0, entity, 0, 0, entity.enemy );
@@ -1031,11 +1031,11 @@ function function_3511ecd1( entity, mocompanim, mocompanimblendouttime, mocompan
         
         if ( entity.meleeinfo.var_425c4c8b )
         {
-            var_776ddabf = distancesquared( entity.meleeinfo.var_cb28f380, entity.meleeinfo.adjustedendpos );
+            var_776ddabf = distancesquared( entity.meleeinfo.originalendpos, entity.meleeinfo.adjustedendpos );
             myforward = anglestoforward( entity.angles );
             var_1c3641f2 = ( entity.enemy.origin[ 0 ], entity.enemy.origin[ 1 ], entity.origin[ 2 ] );
             dirtoenemy = vectornormalize( var_1c3641f2 - entity.origin );
-            zdiff = entity.meleeinfo.var_cb28f380[ 2 ] - entity.enemy.origin[ 2 ];
+            zdiff = entity.meleeinfo.originalendpos[ 2 ] - entity.enemy.origin[ 2 ];
             withinzrange = abs( zdiff ) <= 64;
             withinfov = vectordot( myforward, dirtoenemy ) > cos( 50 );
             var_7948b2f3 = withinzrange && withinfov;
@@ -1056,7 +1056,7 @@ function function_3511ecd1( entity, mocompanim, mocompanimblendouttime, mocompan
             
             if ( var_425c4c8b )
             {
-                var_90c3cdd2 = length( entity.meleeinfo.adjustedendpos - entity.meleeinfo.var_cb28f380 );
+                var_90c3cdd2 = length( entity.meleeinfo.adjustedendpos - entity.meleeinfo.originalendpos );
                 timestep = function_60d95f53();
                 animlength = getanimlength( mocompanim ) * 1000;
                 starttime = entity.meleeinfo.var_98bc84b7 * animlength;
@@ -1064,7 +1064,7 @@ function function_3511ecd1( entity, mocompanim, mocompanimblendouttime, mocompan
                 starttime = ceil( starttime / timestep );
                 stoptime = ceil( stoptime / timestep );
                 adjustduration = stoptime - starttime;
-                entity.meleeinfo.var_10b8b6d1 = vectornormalize( entity.meleeinfo.adjustedendpos - entity.meleeinfo.var_cb28f380 );
+                entity.meleeinfo.var_10b8b6d1 = vectornormalize( entity.meleeinfo.adjustedendpos - entity.meleeinfo.originalendpos );
                 entity.meleeinfo.var_8b9a15a6 = var_90c3cdd2 / adjustduration;
                 entity.meleeinfo.var_425c4c8b = 1;
                 entity.meleeinfo.adjustmentstarted = 1;
@@ -1083,7 +1083,7 @@ function function_3511ecd1( entity, mocompanim, mocompanimblendouttime, mocompan
             assert( isdefined( entity.meleeinfo.var_10b8b6d1 ) && isdefined( entity.meleeinfo.var_8b9a15a6 ) );
             
             /#
-                recordsphere( entity.meleeinfo.var_cb28f380, 3, ( 0, 1, 0 ), "<dev string:x53>" );
+                recordsphere( entity.meleeinfo.originalendpos, 3, ( 0, 1, 0 ), "<dev string:x53>" );
                 recordsphere( entity.meleeinfo.adjustedendpos, 3, ( 0, 0, 1 ), "<dev string:x53>" );
             #/
             

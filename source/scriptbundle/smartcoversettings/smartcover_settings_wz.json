@@ -38,7 +38,7 @@
     "hash_7ba68eb6": 100,
     "hash_d1118cd9": 160,
     "hash_7a4fd57b": 3,
-    "shockrifledestructionfx": "fx#hash_3f9d0a8e45ee201f",
+    "shockrifledestructionfx": "fx#explosions/fx8_exp_elec_equip",
     "enablemicrowave": 1,
     "hash_ff8b0975": "rumble&microwave_rumble_med",
     "selfdestructaudio": "mpl_smartcover_destroy",

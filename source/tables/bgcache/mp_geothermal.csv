@@ -5,7 +5,7 @@ model,#p8_fxanim_mp_geo_shakers_hanging_mod
 model,#p8_mp_bomb_crate_palette
 model,#hash_5c70be0864efcce
 model,#hash_714c2f7b0ee2970
-model,#hash_76280f8f979382f
+model,#veh_t8_mil_helicopter_attack_rockets_attach_wz
 model,#p7_fxp_debris_dirt_clod_03_brown
 model,#p7_ntx_tool_tape_measure
 model,#p7_fxp_debris_metal_scrap_01
@@ -22,7 +22,7 @@ model,#p8_nt4_crafting_table_tool_glove_rt
 model,#p8_camera_dslr_decal_graphics
 model,#veh_t8_mil_truck_cargo_engine_attach
 model,#hash_194b6a63264e580f
-model,#hash_196deb21631b27ae
+model,#veh_t8_mil_truck_cargo_attachments_bed_seats_dead
 model,#c_t7_mp_battery_mpc_fb1_skin1
 model,#p8_fxp_fluid_splash_water
 model,#hash_1b66b002e235b507
@@ -61,11 +61,11 @@ model,#p8_bucket_plastic_5_gal_closed_white
 model,#p7_gib_chunk_flesh_01
 model,#p7_gib_chunk_flesh_03
 model,#p7_gib_chunk_flesh_02
-model,#hash_3c6b24c87965c4a7
+model,#veh_t8_civ_van_utility_dest_attach_geothermal
 model,#p8_camera_dslr
 model,#p7_toolbox_handheld_small_red
 model,#hash_3d920e7ddbaee55d
-model,#hash_3e5b039d6a279260
+model,#veh_t8_mil_truck_cargo_attachments_bed_seats_dirty
 model,#c_t7_mp_technomancer_mpc_fb1_skin1
 model,#p8_bucket_plastic_5_gal_white
 model,#p7_gib_chunk_bone_01
@@ -83,7 +83,7 @@ model,#p8_def_bar_beer_bottle_label
 model,#fx_char_gib_chunk_bone02
 model,#fx_char_gib_chunk_bone03
 model,#fx_char_gib_chunk_bone01
-model,#hash_4ec8837ddb1955a7
+model,#veh_t8_mil_helicopter_attack_engine_exhaust_attach
 model,#skybox_default_day
 model,#p8_col_laptop_military_screen
 model,#p8_wz_supply_stash_health
@@ -142,12 +142,12 @@ model,#p8_wz_supply_stash_ammo
 model,#hash_79bcc161853607a2
 model,#hash_7b9b148f60b77eff
 model,#hash_7bcb388f60e0dfed
-model,#hash_7cf9697b979c8837
+model,#veh_t8_mil_truck_cargo_armored_geothermal_decal_attach
 model,#p8_mp_bomb_crate_whole
 model,#hash_7e9e08e32501c79a
-model,#hash_7f134b56cc9f6de0
+model,#veh_t8_mil_helicopter_attack_decals_attach
 model,#hash_7fc5b065203d7f41
-model,#hash_7fc63ec9e947d27c
+model,#veh_t8_mil_helicopter_attack_wz_dark
 gesture,#ges_force_slide_loop
 rumble,#tank_rumble
 xcam,#ui_cam_draft_common
@@ -393,7 +393,7 @@ client_fx,#hash_a2ebf392514d1ee
 client_fx,#impacts/fx_bul_impact_boss_body_nonfatal
 client_fx,#impacts/fx8_bul_impact_metal_sm
 client_fx,#hash_12b944b36953a819
-client_fx,#hash_1847077627974c80
+client_fx,#impacts/fx8_bul_impact_blood_limb_zm
 client_fx,#hash_19fd67d4066e7da5
 client_fx,#impacts/fx8_bul_impact_robot_body_fatal
 client_fx,#impacts/fx_bul_impact_boss_body_fatal
@@ -420,7 +420,7 @@ client_fx,#impacts/fx_bul_impact_armor_body_nonfatal
 client_fx,#impacts/fx_bul_impact_boss_head_fatal
 client_fx,#impacts/fx_bul_impact_robot_body_nonfatal
 client_fx,#impacts/fx_bul_impact_heavy_head_nonfatal
-client_fx,#hash_4d885739142015b7
+client_fx,#snow/fx8_snow_ground_wet_rattle
 client_fx,#impacts/fx8_bul_impact_blood_limb_nonfatal
 client_fx,#impacts/fx8_bul_impact_robot_limb_fatal
 client_fx,#impacts/fx8_bul_impact_blood_limb_fatal
@@ -428,7 +428,7 @@ client_fx,#impacts/fx8_bul_impact_blood_body_nonfatal_zm
 client_fx,#impacts/fx_bul_impact_heavy_body_fatal
 client_fx,#ui/fx_dom_marker_team_r120
 client_fx,#impacts/fx8_bul_impact_blood_body_nonfatal
-client_fx,#hash_67a4679378e51bf7
+client_fx,#dirt/fx8_dust_ground_rattle
 client_fx,#impacts/fx8_bul_impact_blood_corpse_nonfatal
 client_fx,#impacts/fx_bul_impact_blood_head_fatal
 client_fx,#hash_6accb3311c2c042f
@@ -436,5 +436,5 @@ client_fx,#hash_6c4419ac0428d536
 client_fx,#impacts/fx8_bul_impact_robot_head_nonfatal
 client_fx,#impacts/fx8_bul_impact_blood_body_fatal_zm
 client_fx,#hash_77ef74e6ed450b5c
-client_fx,#hash_7b74ede35f3681c5
+client_fx,#dirt/fx8_mud_ground_rattle
 client_fx,#impacts/fx8_bul_impact_robot_head_fatal

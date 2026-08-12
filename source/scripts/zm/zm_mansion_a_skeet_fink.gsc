@@ -605,7 +605,7 @@ function function_9bb74431( var_f0e6c7a2, ent )
     
     if ( level.var_f8babb50 >= 10 )
     {
-        zm_sq_modules::function_2a94055d( "ee_asf_altar" );
+        zm_sq_modules::end_soul_capture( "ee_asf_altar" );
         var_f0e6c7a2 notify( #"hash_20911f4af4e75472" );
     }
 }

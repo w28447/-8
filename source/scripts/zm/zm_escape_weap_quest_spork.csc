@@ -110,7 +110,7 @@ function function_f72f97af( localclientnum, oldval, newval, bnewent, binitialsna
             level.var_a8f38afe[ localclientnum ] thread animation::play( #"hash_4a67388210398d52" );
             break;
         case 8:
-            level.var_a8f38afe[ localclientnum ] animation::play( #"hash_4e65f766225b67df" );
+            level.var_a8f38afe[ localclientnum ] animation::play( #"p8_fxanim_zm_esc_bathtub_filling_drain" );
             level.var_a8f38afe[ localclientnum ] thread animation::play( #"hash_5f152090f657bfe" );
             break;
     }

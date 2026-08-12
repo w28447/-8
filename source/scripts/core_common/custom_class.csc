@@ -118,7 +118,7 @@ function custom_class_update( localclientnum )
     level endon( "CustomClass_closed" + localclientnum );
     waitresult = level waittill( "CustomClass_update" + localclientnum );
     base_weapon_slot = waitresult.base_weapon_slot;
-    var_f0bf9259 = waitresult.weapon;
+    weapon_name_hash = waitresult.weapon;
     attachments = waitresult.attachments;
     camera = waitresult.camera;
     weapon_options_param = waitresult.options;
@@ -141,7 +141,7 @@ function custom_class_update( localclientnum )
         xmodel_name = #"";
     }
     
-    if ( isdefined( var_f0bf9259 ) )
+    if ( isdefined( weapon_name_hash ) )
     {
         if ( isdefined( weapon_options_param ) && weapon_options_param != "none" )
         {
@@ -159,7 +159,7 @@ function custom_class_update( localclientnum )
         }
         
         toggle_locked_weapon_shader( localclientnum, is_item_unlocked );
-        update_weapon_script_model( localclientnum, var_f0bf9259, attachments, undefined, is_item_unlocked, xmodel_scale, xmodel_name );
+        update_weapon_script_model( localclientnum, weapon_name_hash, attachments, undefined, is_item_unlocked, xmodel_scale, xmodel_name );
         level notify( #"xcammoved" );
         lerpduration = get_lerp_duration( camera );
         setup_paintshop_bg( localclientnum, camera );

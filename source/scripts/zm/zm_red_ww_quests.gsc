@@ -3780,13 +3780,13 @@ function function_1775f520()
     
     switch ( self.model )
     {
-        case #"hash_17ff8b184015c0d0":
+        case #"p8_zm_red_gaia_bush_01_chaos_01":
             str_tag = "tag_center_01";
             break;
-        case #"hash_17ff8e184015c5e9":
+        case #"p8_zm_red_gaia_bush_01_chaos_02":
             str_tag = "tag_center_02";
             break;
-        case #"hash_17ff8d184015c436":
+        case #"p8_zm_red_gaia_bush_01_chaos_03":
             str_tag = "tag_center_03";
             break;
     }
@@ -5007,7 +5007,7 @@ function soul_captured( var_f0e6c7a2, ent )
             if ( level.var_50a078bd >= 10 )
             {
                 level.var_b40a2558++;
-                zm_sq_modules::function_2a94055d( #"ww_sc_earth" );
+                zm_sq_modules::end_soul_capture( #"ww_sc_earth" );
                 s_quest = level.var_d225ea18[ #"earth" ];
                 var_d02a32e2 = getent( s_quest.var_52584ae6, "targetname" );
                 var_d02a32e2 clientfield::set( "" + #"hash_7f97409952dd051b", 0 );
@@ -5022,7 +5022,7 @@ function soul_captured( var_f0e6c7a2, ent )
             if ( level.var_626adbe3 >= 10 )
             {
                 level.var_b40a2558++;
-                zm_sq_modules::function_2a94055d( #"ww_sc_death" );
+                zm_sq_modules::end_soul_capture( #"ww_sc_death" );
                 s_quest = level.var_d225ea18[ #"death" ];
                 var_d02a32e2 = getent( s_quest.var_52584ae6, "targetname" );
                 var_d02a32e2 clientfield::set( "" + #"hash_7f97409952dd051b", 0 );
@@ -5037,7 +5037,7 @@ function soul_captured( var_f0e6c7a2, ent )
             if ( level.var_2eadf8bc >= 10 )
             {
                 level.var_b40a2558++;
-                zm_sq_modules::function_2a94055d( #"ww_sc_light" );
+                zm_sq_modules::end_soul_capture( #"ww_sc_light" );
                 s_quest = level.var_d225ea18[ #"light" ];
                 var_d02a32e2 = getent( s_quest.var_52584ae6, "targetname" );
                 var_d02a32e2 clientfield::set( "" + #"hash_7f97409952dd051b", 0 );
@@ -5052,7 +5052,7 @@ function soul_captured( var_f0e6c7a2, ent )
             if ( level.var_a08be993 >= 10 )
             {
                 level.var_b40a2558++;
-                zm_sq_modules::function_2a94055d( #"ww_sc_air" );
+                zm_sq_modules::end_soul_capture( #"ww_sc_air" );
                 s_quest = level.var_d225ea18[ #"air" ];
                 var_d02a32e2 = getent( s_quest.var_52584ae6, "targetname" );
                 var_d02a32e2 clientfield::set( "" + #"hash_7f97409952dd051b", 0 );
@@ -6157,13 +6157,13 @@ function function_8d47bf8( e_player )
             {
                 switch ( mdl_chaos.model )
                 {
-                    case #"hash_17ff8b184015c0d0":
+                    case #"p8_zm_red_gaia_bush_01_chaos_01":
                         v_tag_pos = mdl_chaos gettagorigin( "<dev string:xdf>" );
                         break;
-                    case #"hash_17ff8e184015c5e9":
+                    case #"p8_zm_red_gaia_bush_01_chaos_02":
                         v_tag_pos = mdl_chaos gettagorigin( "<dev string:xef>" );
                         break;
-                    case #"hash_17ff8d184015c436":
+                    case #"p8_zm_red_gaia_bush_01_chaos_03":
                         v_tag_pos = mdl_chaos gettagorigin( "<dev string:xff>" );
                         break;
                 }

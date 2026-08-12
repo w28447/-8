@@ -1,7 +1,7 @@
 {
     "lightgroups_1_slots": [
         {
-            "fx": "fx#hash_52eb37303494db28",
+            "fx": "fx#light/fx_light_veh_wasp_under",
             "tag": "tag_body"
         }
     ],

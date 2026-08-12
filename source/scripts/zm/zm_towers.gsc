@@ -175,7 +175,7 @@ function event_handler[level_init] main( eventstruct )
     level._effect[ #"animscript_gib_fx" ] = #"zombie/fx_blood_torso_explo_zmb";
     level._effect[ #"animscript_gibtrail_fx" ] = #"blood/fx_blood_gib_limb_trail";
     level._effect[ #"switch_sparks" ] = #"electric/fx8_sparks_burst_dir_sm_orange_os";
-    level._effect[ #"custom_pandora_light" ] = #"hash_b6f89a048c38cf6";
+    level._effect[ #"custom_pandora_light" ] = #"zombie/fx8_magicbox_marker_red";
     level.default_start_location = "zone_starting_area_ra";
     level.default_game_mode = "zclassic";
     level.var_cd8b6cd0 = 2;

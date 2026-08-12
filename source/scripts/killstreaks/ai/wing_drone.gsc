@@ -443,7 +443,7 @@ function function_b0c75ada( leader )
 // Params 0
 // Checksum 0x164b4a8b, Offset: 0x1570
 // Size: 0xd6
-function function_5ebe7443()
+function followdebug()
 {
     self endon( #"death" );
     
@@ -476,7 +476,7 @@ function state_combat_update( params )
 {
     self endon( #"change_state" );
     self endon( #"death" );
-    self thread function_5ebe7443();
+    self thread followdebug();
     self thread attackthread();
     
     for ( ;; )

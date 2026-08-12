@@ -1,7 +1,7 @@
 {
     "name": "#hash_29dc8594645b948f",
     "model": "#veh_t8_mil_boat_pbr_wz_black",
-    "unk20": "#hash_17ee00261a0bad3b",
+    "unk20": "#veh_t8_mil_boat_pbr_wz_black_dead",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [

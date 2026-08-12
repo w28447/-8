@@ -87,14 +87,14 @@ function function_7a677105( weapon )
         level.var_825acea = [];
     }
     
-    var_f0bf9259 = hash( weapon.name );
+    weapon_name_hash = hash( weapon.name );
     
-    if ( !isdefined( level.var_825acea[ var_f0bf9259 ] ) )
+    if ( !isdefined( level.var_825acea[ weapon_name_hash ] ) )
     {
-        level.var_825acea[ var_f0bf9259 ] = getscriptbundle( weapon.customsettings );
+        level.var_825acea[ weapon_name_hash ] = getscriptbundle( weapon.customsettings );
     }
     
-    return level.var_825acea[ var_f0bf9259 ];
+    return level.var_825acea[ weapon_name_hash ];
 }
 
 // Namespace weapons_shared/weapons_shared

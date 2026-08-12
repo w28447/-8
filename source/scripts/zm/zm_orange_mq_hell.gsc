@@ -625,7 +625,7 @@ function function_f578fb22( var_f0e6c7a2, ent )
 // Size: 0x2e4
 function function_5e3a92e()
 {
-    zm_sq_modules::function_2a94055d( self.var_5f9f040 );
+    zm_sq_modules::end_soul_capture( self.var_5f9f040 );
     level thread function_a4210fd2( 6 );
     playsoundatposition( #"evt_nuke_flash", ( 0, 0, 0 ) );
     a_e_players = getplayers();
@@ -752,7 +752,7 @@ function function_3c3bee91()
     wait 15;
     zm_orange_util::function_fd24e47f( #"vox_hell_on_earth_final" );
     wait 5;
-    zm_sq_modules::function_2a94055d( #"sc_lantern_end" );
+    zm_sq_modules::end_soul_capture( #"sc_lantern_end" );
     zm_hms_util::pause_zombies( 1 );
     
     if ( getplayers().size > 1 )

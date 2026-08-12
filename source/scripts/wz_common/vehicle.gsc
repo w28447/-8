@@ -1234,7 +1234,7 @@ function event_handler[exit_vehicle] codecallback_vehicleexit( eventstruct )
         return;
     }
     
-    vehicle.var_8e382c5f = gettime();
+    vehicle.last_exit = gettime();
     a_occupants = vehicle getvehoccupants();
     
     if ( a_occupants.size == 0 )

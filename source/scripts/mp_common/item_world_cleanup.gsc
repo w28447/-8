@@ -181,7 +181,7 @@ function private function_35e11623( deathcircle, var_898879a6 )
     
     for ( index = 0; index < var_90afc439.size ; index++ )
     {
-        var_90afc439[ index ] gadget_cymbal_monkey::function_4f90c4c2();
+        var_90afc439[ index ] gadget_cymbal_monkey::monkey_detonate_immediate();
     }
     
     var_2e20127d = [];
@@ -333,7 +333,7 @@ function private function_ada16428( deathcircle, var_898879a6 )
             {
                 delay = 60000;
                 
-                if ( isdefined( vehicle.var_8e382c5f ) )
+                if ( isdefined( vehicle.last_exit ) )
                 {
                     delay += 300000;
                 }

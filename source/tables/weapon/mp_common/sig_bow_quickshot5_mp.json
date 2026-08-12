@@ -85,7 +85,7 @@
     "rumble_df8": "#bow_draw_loop",
     "fx_bc8": "#hash_5fc376e533776975",
     "fx_bd0": "#hash_5fca82e5337d9c87",
-    "fx_f00": "#hash_6146c36f1793cdc",
+    "fx_f00": "#weapon/fx8_hero_bow_lnchr_trail_sm",
     "underwaterExplosionSurfaceFX": [
         "#explosions/fx8_exp_grenade_water",
         "#hash_c15b461b7420c6d2",

@@ -28,7 +28,7 @@
     "displayname": "localized17#weapon/sensor_dart",
     "hash_99edb6a3": 0,
     "stackcount": 1,
-    "icon": "image#hash_e02c2f146b573f8",
+    "icon": "image#ui_icon_inventory_eq_sensor",
     "explosivedamagescale": 0,
     "casttime": 0,
     "modelscale": 1,

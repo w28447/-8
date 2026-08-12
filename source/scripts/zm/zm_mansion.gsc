@@ -1301,7 +1301,7 @@ function function_2d164b86()
     mdl_artifact_card clientfield::set( "" + #"activate_mansion_artifact_card", 0 );
     wait 3;
     mdl_artifact_card delete();
-    mdl_artifact setmodel( #"hash_57d5802b9383f9c7" );
+    mdl_artifact setmodel( #"p8_zm_man_artifact_sentinel_combined_fire" );
     mdl_artifact clientfield::set( "" + #"activate_mansion_artifact", 3 );
     var_8a281f69 = getvehiclenode( "power_on_projectile_path_1", "targetname" );
     v_pos = var_8a281f69.origin + ( 0, 0, -16 );

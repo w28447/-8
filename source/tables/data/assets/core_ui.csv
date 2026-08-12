@@ -2783,7 +2783,7 @@ image,d#sniper_damagesemi_t8_camo_mike_icon
 image,d#ar_fastfire_t8_camo_foxtrot_zm_icon
 image,d#pistol_standard_t8_camo_active_dlc3_mystic_01_icon
 image,d#pistol_standard_t8_camo_bravo_zm_icon
-image,#hash_28eb901aae424a2b
+image,#uie_img_t8_menu_doublearrow_horizontal
 image,d#ar_modular_t8_camo_india_wz_icon
 image,d#ui_icon_camonotification_diamond_pistols
 image,d#ui_icon_callingcards_mp_marksman_lmg_marksman
@@ -10857,7 +10857,7 @@ material,#ps4_controller_top
 material,#nottalkingicon
 material,#hash_1dc408fafc6d5cd
 material,#hash_2b50da92c71b7e2
-material,#hash_4a56fda8ced350e
+material,#uie_wedge_multiply
 material,#hash_60b40e4740ed465
 material,#t8_codcaster_icon_team01
 material,#t8_codcaster_icon_team02
@@ -10867,7 +10867,7 @@ material,#t8_codcaster_icon_team05
 material,#t8_codcaster_icon_team06
 material,#t8_codcaster_icon_team07
 material,#t8_codcaster_icon_team08
-material,#hash_6e9593df28749f2
+material,#uie_repeat_normal
 material,#hash_7948ac2378b0cbf
 material,#hash_8f44960bec559ba
 material,#hash_8f90d8cbe304314
@@ -10888,12 +10888,12 @@ material,#uie_elliptical_ring_normal
 material,#headicon_dead
 material,#menu_zm_popup
 material,#hash_14126824b958641f
-material,#hash_14aded5d41680486
+material,#uie_crop_multiply
 material,#hash_161fe85edd9f1ed1
 material,#ui_multiply
 material,#hash_16a7171d365f4648
 material,#ui_normal
-material,#hash_16cbe95c250c6d15
+material,#uie_tiled_normal
 material,#hash_171e049b161cd00a
 material,#uie_aar_segment
 material,#hash_17e89392b94a41de
@@ -10936,10 +10936,10 @@ material,#hash_2e621ccfee545d32
 material,#hash_2f8ac1cbcbfe187d
 material,#extracam
 material,#uie_aberration_no_blur
-material,#hash_3027ebc307abf865
+material,#uie_wedge_normal
 material,#uie_slice
 material,#hash_31cc85d0a86303b0
-material,#hash_32770bbd1277d061
+material,#uie_repeat_nineslice_add
 material,#uie_flipbook_animated_add
 material,#hash_3336c1ae82b1520a
 material,#uie_scene_blur_pass_2_highquality
@@ -10979,8 +10979,8 @@ material,#hash_4fb9f1a22257e145
 material,#uie_feather_add
 material,#hash_5108f3d2b4381d2a
 material,#hash_5146ecdac27d1842
-material,#hash_51de43899593e67e
-material,#hash_5263b6f6834dd9ac
+material,#uie_wipe_delta_rft_add
+material,#uie_triangle_multiply
 material,#uie_fractal_reveal
 material,#ui_add
 material,#hash_56250c6fcac36bd4
@@ -11003,8 +11003,8 @@ material,#ui_cursor
 material,#menu_mp_popup
 material,#voice_on
 material,#hash_624bd2243886d8ea
-material,#hash_628c8ea936a933be
-material,#hash_631e7b3c72564429
+material,#uie_dual_gradient
+material,#uie_repeat_nineslice_normal
 material,#hash_63213e815717c328
 material,#hash_639be7fc2aaccdfe
 material,#hash_63b63d969b74f83d

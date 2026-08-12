@@ -1,7 +1,7 @@
 {
     "name": "#hash_65d17f85262a3eec",
-    "model": "#hash_7298bfc99c91c9",
-    "unk20": "#hash_665a396b9d7a0bfb",
+    "model": "#veh_t8_civ_forklift_modular_manned_forklift_yellow_dest",
+    "unk20": "#veh_t8_civ_forklift_modular_manned_forklift_dead_yellow",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [

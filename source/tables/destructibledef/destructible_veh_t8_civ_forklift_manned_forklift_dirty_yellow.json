@@ -1,7 +1,7 @@
 {
     "name": "#destructible_veh_t8_civ_forklift_manned_forklift_dirty_yellow",
     "model": "#veh_t8_civ_forklift_modular_manned_forklift_dirty_yellow_dest",
-    "unk20": "#hash_665a396b9d7a0bfb",
+    "unk20": "#veh_t8_civ_forklift_modular_manned_forklift_dead_yellow",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [

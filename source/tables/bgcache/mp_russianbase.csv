@@ -23,7 +23,7 @@ model,#p8_nt4_continental_typewritter
 model,#veh_mphd_train_engine
 model,#p8_boot_military_lt
 model,#p8_boot_military_rt
-model,#hash_181c205b662810ad
+model,#p8_geo_ice_chunk_lrg_01
 model,#p7_rus_box_electric_base_02_lid
 model,#c_t7_mp_battery_mpc_fb1_skin1
 model,#p8_telephone_transformer
@@ -41,7 +41,7 @@ model,#p8_mp_bomb_crate_open
 model,#p8_mp_bomb_crate_single
 model,#veh_mphd_train_fuelcar_attach
 model,#p7_rus_bookshelf_metal_door
-model,#hash_2977c43e218cbf7c
+model,#p8_fir_monitor_security_base_dmg
 model,#p8_zm_zod_ice_chunk_sml_01
 model,#p7_slu_panel_electrical_02_lid_01
 model,#p8_wmd_box_electric_base_08_lid
@@ -131,7 +131,7 @@ model,#p8_construction_hardhat
 model,#hash_70fbfd2391d06759
 model,#p7_fxp_debris_newspaper_01
 model,#p7_mou_trash_can
-model,#hash_71510e48e9a8a022
+model,#p8_geo_ice_chunk_med_01
 model,#p8_wmd_can_metal_01_small
 model,#p7_mp_flag_neutral
 model,#p8_boot_military_rt_brown
@@ -145,7 +145,7 @@ model,#p7_office_paper_sheet_09
 model,#p7_office_paper_sheet_08
 model,#p7_office_paper_sheet_03
 model,#p7_office_paper_sheet_02
-model,#hash_7e2cb36d0b38a51f
+model,#p8_fir_monitor_security_base
 model,#p8_box_electric_commercial_med_02_allstates
 model,#hash_7f70d973de9b422a
 xcam,#ui_cam_draft_common
@@ -439,9 +439,9 @@ client_fx,#ui/fx_dom_marker_neutral_r120
 client_fx,#destruct/fx_dest_paper
 client_fx,#hash_3784b8ce7aad5d50
 client_fx,#ui/fx_dom_cap_indicator_team_r120
-client_fx,#hash_55dfddfc63c9d556
+client_fx,#snow/fx8_snow_ground_rattle
 client_fx,#hash_5bc02b93591da938
 client_fx,#ui/fx_dom_marker_team_r120
 client_fx,#hash_615d462aa9389bb8
 client_fx,#hash_67b4c943f24ad152
-client_fx,#hash_7b74ede35f3681c5
+client_fx,#dirt/fx8_mud_ground_rattle

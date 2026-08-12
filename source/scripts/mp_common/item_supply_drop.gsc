@@ -693,7 +693,7 @@ function private function_eafcba42( startpoint, endpoint, droppoint, maxheight, 
     points = [];
     startpoint = trace_point( startpoint );
     endpoint = trace_point( endpoint );
-    var_bb96e272 = vectornormalize( endpoint - startpoint );
+    todirection = vectornormalize( endpoint - startpoint );
     pathlength = distance2d( startpoint, endpoint );
     var_28021cac = int( pathlength / 5000 );
     points[ 0 ] = startpoint;
@@ -705,7 +705,7 @@ function private function_eafcba42( startpoint, endpoint, droppoint, maxheight, 
     
     for ( var_c742cad6 = 1; var_c742cad6 <= var_28021cac ; var_c742cad6++ )
     {
-        var_a1bc57e1 = startpoint + var_bb96e272 * 5000 * var_c742cad6;
+        var_a1bc57e1 = startpoint + todirection * 5000 * var_c742cad6;
         
         if ( isdefined( droppoint ) )
         {
@@ -1046,21 +1046,21 @@ function function_7d4a448f( var_47d17dcb = 0 )
     droppoint = deathcirclecenter;
     var_8df04549 = function_c7bd0aa8( var_8df04549, droppoint );
     exitpoint = function_c7bd0aa8( exitpoint, droppoint );
-    var_bb96e272 = vectornormalize( exitpoint - var_8df04549 );
+    todirection = vectornormalize( exitpoint - var_8df04549 );
     var_142db926 = 5000;
     nextcircledistance = distance2d( deathcircle.origin, deathcirclecenter );
     var_6eae2ffb = var_396cbf6e + nextcircledistance + var_142db926;
     var_429b69c0 = max( var_6eae2ffb, 15000 );
     despawndistance = max( var_396cbf6e, 45000 );
-    spawnpoint = var_8df04549 - var_bb96e272 * var_429b69c0;
+    spawnpoint = var_8df04549 - todirection * var_429b69c0;
     spawnpoint = function_c7bd0aa8( spawnpoint, droppoint );
-    endpoint = exitpoint + var_bb96e272 * despawndistance;
+    endpoint = exitpoint + todirection * despawndistance;
     endpoint = function_c7bd0aa8( endpoint, droppoint );
     level thread function_261b0e67( spawnpoint, endpoint, droppoint, 1 );
-    angles = vectortoangles( var_bb96e272 );
+    angles = vectortoangles( todirection );
     rightoffset = vectornormalize( anglestoright( angles ) ) * 1024;
     leftoffset = rightoffset * -1;
-    var_ae85ee87 = var_bb96e272 * -1024;
+    var_ae85ee87 = todirection * -1024;
     vehicleoverride = undefined;
     offset = rightoffset + var_ae85ee87 + ( 0, 0, randomintrange( 25, 50 ) );
     level thread function_261b0e67( spawnpoint + offset, endpoint + offset, droppoint + offset, 0, vehicleoverride );
@@ -1147,12 +1147,12 @@ function function_418e26fe( var_2118f785 = undefined, helicopter = 0, voiceevent
     var_8df04549 = trace_point( var_8df04549, undefined, var_f5f2246e, var_729c4495 );
     exitpoint = function_c7bd0aa8( exitpoint, droppoint );
     exitpoint = trace_point( exitpoint, undefined, var_f5f2246e, var_729c4495 );
-    var_bb96e272 = vectornormalize( exitpoint - var_8df04549 );
+    todirection = vectornormalize( exitpoint - var_8df04549 );
     var_429b69c0 = max( var_396cbf6e, 15000 );
     despawndistance = max( var_396cbf6e, 45000 );
-    spawnpoint = var_8df04549 - var_bb96e272 * var_429b69c0;
+    spawnpoint = var_8df04549 - todirection * var_429b69c0;
     spawnpoint = function_c7bd0aa8( spawnpoint, droppoint );
-    endpoint = exitpoint + var_bb96e272 * despawndistance;
+    endpoint = exitpoint + todirection * despawndistance;
     endpoint = function_c7bd0aa8( endpoint, droppoint );
     
     if ( helicopter )

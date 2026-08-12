@@ -2108,7 +2108,7 @@ function zm_white_main_quest_step7_cleanup( var_5ea5c94d, ended_early )
         level flag::set( #"infinite_round_spawning" );
         level flag::clear( "world_is_paused" );
         s_apd = struct::get( "cp_toast_apd", "script_noteworthy" );
-        zm_sq_modules::function_2a94055d( "sc_toast_apd" );
+        zm_sq_modules::end_soul_capture( "sc_toast_apd" );
         s_apd zm_white_toast::function_8c2bda65( 1, 0 );
         level flag::set( #"hash_2b7c76b6b0dfc0fd" );
     }
@@ -5765,7 +5765,7 @@ function soul_captured( var_f0e6c7a2, ent )
     if ( level.n_captured >= n_souls_required )
     {
         var_f0e6c7a2.charged = 1;
-        zm_sq_modules::function_2a94055d( var_f0e6c7a2.script_string );
+        zm_sq_modules::end_soul_capture( var_f0e6c7a2.script_string );
         level.n_captured = 0;
         e_head = getent( var_f0e6c7a2.script_string + "_head", "script_noteworthy" );
         e_body = getent( var_f0e6c7a2.script_string + "_body", "script_noteworthy" );

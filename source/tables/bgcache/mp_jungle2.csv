@@ -177,7 +177,7 @@ soundalias,#hash_373c94e1ffb849b0
 soundalias,#hash_3b66638c6f40e4d3
 soundalias,#hash_3b66818c6f4117cd
 soundalias,#hash_3b6983b084cfef53
-soundalias,#hash_3d3ccfc2be063ea9
+soundalias,#pfx_fire_sml
 soundalias,#exp_barrel_flux_r
 soundalias,#exp_barrel_flux_l
 soundalias,#hash_3f8d713abf4d10fe
@@ -290,10 +290,10 @@ client_fx,#dirt/fx8_dust_fall_crumble_rattle
 client_fx,#ui/fx_dom_cap_indicator_neutral_r120
 client_fx,#ui/fx_dom_marker_neutral_r120
 client_fx,#hash_28d89d447c354265
-client_fx,#hash_3b9537ef1ee1d345
-client_fx,#hash_3eec9722c838ae73
+client_fx,#foliage/fx8_leaves_fall_rattle
+client_fx,#foliage/fx8_leaves_ground_rattle
 client_fx,#ui/fx_dom_cap_indicator_team_r120
 client_fx,#ui/fx_dom_marker_team_r120
 client_fx,#hash_7b2e4176bb94d5e8
-client_fx,#hash_7b74ede35f3681c5
+client_fx,#dirt/fx8_mud_ground_rattle
 client_fx,#hash_7e68dfc1a77f9f59

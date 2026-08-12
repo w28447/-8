@@ -76,7 +76,7 @@ function event_handler[level_init] main( eventstruct )
     level._effect[ #"animscript_gibtrail_fx" ] = #"blood/fx_blood_gib_limb_trail";
     level._effect[ #"power_on_projectile" ] = #"hash_6009053e911b946a";
     level._effect[ #"power_on_projectile_end" ] = #"hash_6c0eb029adb5f6c6";
-    level._effect[ #"clock_zombie" ] = #"hash_52239162cbb1d01f";
+    level._effect[ #"clock_zombie" ] = #"zombie/fx_ritual_gateworm_glow_red_zod_zmb";
     level._effect[ #"clock_zombie_le" ] = #"hash_5a3bedd0f4e1fb20";
     level._effect[ #"clock_zombie_ri" ] = #"hash_5a7915d0f515ed36";
     level._effect[ #"clock_zombie_eye" ] = #"hash_482a9c9681f3db75";

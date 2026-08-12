@@ -133,8 +133,8 @@ function event_handler[level_init] main( eventstruct )
     level._allow_melee_weapon_switching = 1;
     level.zombiemode_reusing_pack_a_punch = 1;
     level._effect[ #"lght_marker" ] = #"hash_2eb17822848d1484";
-    level._effect[ #"lght_marker_flare" ] = #"hash_4d4ecfd7d55314e9";
-    level._effect[ #"poltergeist" ] = #"hash_64ab8440e31c3057";
+    level._effect[ #"lght_marker_flare" ] = #"maps/zm_escape/fx8_magicbox_flare";
+    level._effect[ #"poltergeist" ] = #"maps/zm_escape/fx8_magicbox_poltergeist";
     level.var_a9c40fde = &function_2d2f3503;
     level.var_1e480ea7 = &function_bcc6a9d8;
     fast_travel_hellholes::init();

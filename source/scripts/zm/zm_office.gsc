@@ -370,14 +370,14 @@ function function_31085f45()
 // Size: 0x16a
 function function_785cadc4()
 {
-    level.var_678333a6 = #"hash_11347f5077a17dcb";
+    level.var_678333a6 = #"maps/zm_office/fx8_barrier_buy_zmb";
     level._effect[ #"chest_light" ] = #"hash_1e8cb303d3103833";
     level._effect[ #"chest_light_closed" ] = #"hash_602f075818a2fb2e";
-    level._effect[ #"hash_2ff87d61167ea531" ] = #"hash_1eb426cfbfef7486";
-    level._effect[ #"hash_4048cb4967032c4a" ] = #"hash_7e272f1a9f143051";
+    level._effect[ #"hash_2ff87d61167ea531" ] = #"maps/zm_office/fx8_magicbox_marker";
+    level._effect[ #"hash_4048cb4967032c4a" ] = #"maps/zm_office/fx8_magicbox_marker_fl";
     level._effect[ #"lght_marker" ] = #"hash_7dec2fde8393c0f4";
-    level._effect[ #"lght_marker_flare" ] = #"hash_11347f5077a17dcb";
-    level._effect[ #"poltergeist_magicbox" ] = #"hash_11347f5077a17dcb";
+    level._effect[ #"lght_marker_flare" ] = #"maps/zm_office/fx8_barrier_buy_zmb";
+    level._effect[ #"poltergeist_magicbox" ] = #"maps/zm_office/fx8_barrier_buy_zmb";
 }
 
 // Namespace zm_office/zm_office

@@ -37,7 +37,7 @@ function private function_9b3fe343( localclientnum )
         self duplicate_render::update_dr_filters( localclientnum );
     }
     
-    util::playfxontag( localclientnum, #"hash_1cb1e3e527bd121c", self, "tag_eye" );
+    util::playfxontag( localclientnum, #"zm_ai/fx8_bat_eye_glow", self, "tag_eye" );
 }
 
 // Namespace bat/zm_ai_bat

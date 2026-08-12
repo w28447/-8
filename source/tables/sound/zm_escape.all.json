@@ -193601,13 +193601,13 @@
         {
             "value": 223,
             "next": 65535,
-            "name": "#hash_3d3ccfc2be063ea9",
+            "name": "#pfx_fire_sml",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3d3ccfc2be063ea9",
+                    "name": "#pfx_fire_sml",
                     "assetId": "#pfx/fire/small/fire_small_00.sl100.pc.snd",
                     "assetFileNameSustain": "#zm_escape.all",
                     "assetIdRelease": "#zm_escape.all",

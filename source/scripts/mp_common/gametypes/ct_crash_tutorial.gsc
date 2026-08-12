@@ -92,7 +92,7 @@ function tak5_start( slot, weapon )
 // Params 0
 // Checksum 0x208273e0, Offset: 0x1078
 // Size: 0x1c4
-function function_c9ff0dce()
+function player_spawned_callback()
 {
     self.health_start = self.health;
     self.overrideplayerdamage = &callback_player_damage;

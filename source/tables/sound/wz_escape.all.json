@@ -20802,13 +20802,13 @@
         {
             "value": 439,
             "next": 148,
-            "name": "#hash_f743d336f8b7764",
+            "name": "#evt_ammo_stash_open",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_f743d336f8b7764",
+                    "name": "#evt_ammo_stash_open",
                     "assetId": "#blk/stashes/ammo_stash.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_escape.all",
                     "assetIdRelease": "#wz_escape.all",
@@ -22848,13 +22848,13 @@
         {
             "value": 112,
             "next": 228,
-            "name": "#hash_36e23ce3e5f7e4c0",
+            "name": "#evt_health_stash_open",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_36e23ce3e5f7e4c0",
+                    "name": "#evt_health_stash_open",
                     "assetId": "#blk/stashes/health_stash.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_escape.all",
                     "assetIdRelease": "#wz_escape.all",

@@ -30804,13 +30804,13 @@
         {
             "value": 670,
             "next": 65535,
-            "name": "#hash_f743d336f8b7764",
+            "name": "#evt_ammo_stash_open",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_f743d336f8b7764",
+                    "name": "#evt_ammo_stash_open",
                     "assetId": "#blk/stashes/ammo_stash.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -32949,13 +32949,13 @@
         {
             "value": 563,
             "next": 65535,
-            "name": "#hash_36e23ce3e5f7e4c0",
+            "name": "#evt_health_stash_open",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_36e23ce3e5f7e4c0",
+                    "name": "#evt_health_stash_open",
                     "assetId": "#blk/stashes/health_stash.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -65904,13 +65904,13 @@
         {
             "value": 661,
             "next": 273,
-            "name": "#hash_3d3ccfc2be063ea9",
+            "name": "#pfx_fire_sml",
             "sequence": 0,
             "cullDistance": 650,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3d3ccfc2be063ea9",
+                    "name": "#pfx_fire_sml",
                     "assetId": "#pfx/fire/small/fire_small_00.ll100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",

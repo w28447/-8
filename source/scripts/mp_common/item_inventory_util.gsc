@@ -662,7 +662,7 @@ function function_6e9e7169( item )
     
     weapon = getweapon( weapon.name, attachments );
     weapon = function_1242e467( weapon );
-    item.var_627c698b = weapon;
+    item.cachedweapon = weapon;
 }
 
 // Namespace item_inventory_util/item_inventory_util
@@ -678,9 +678,9 @@ function function_2b83d3ff( item )
         return undefined;
     }
     
-    if ( isdefined( item.var_627c698b ) )
+    if ( isdefined( item.cachedweapon ) )
     {
-        return item.var_627c698b;
+        return item.cachedweapon;
     }
     
     var_48cfb6ca = 0;

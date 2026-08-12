@@ -38,9 +38,9 @@ model,#veh_t8_civ_license_plate_front_panama_truck_blu
 model,#c_t7_mp_battery_mpc_fb1_skin1
 model,#veh_mphd_van_blue
 model,#hash_1ac4e62cf9ec88d1
-model,#hash_201ae5dfad4e328a
+model,#veh_t8_civ_license_plate_front_panama_compact_red
 model,#fx_decal_burnt_paper
-model,#hash_216c7d5cc4982d8e
+model,#veh_t8_civ_license_plate_back_panama_compact_red
 model,#p8_mp_bomb_crate_open
 model,#p8_mp_bomb_crate_single
 model,#p7_debris_trash_bottle_water_02
@@ -66,7 +66,7 @@ model,#p7_cup_coffee_paper
 model,#hash_42af69912ff1ddb4
 model,#c_t7_mp_warrior_mpc_fb1_skin1
 model,#veh_mphd_car_compact_grey_dead
-model,#hash_4627f5e00bc61891
+model,#veh_t8_civ_license_plate_front_panama_compact_gry
 model,#p7_food_fruit_pineapple_01b_dmg
 model,#p8_mp_bomb_crate_whole_destroyed
 model,#hash_4a32417f1f096cf2
@@ -108,7 +108,7 @@ model,#veh_mphd_car_compact_dead
 model,#p7_box_copy_paper_sheet
 model,#p7_slu_meter_electric_01_door_lt
 model,#p7_slu_meter_electric_01_door_rt
-model,#hash_6cad0d5c5e8b775d
+model,#veh_t8_civ_license_plate_back_panama_compact_gry
 model,#p8_mp_bomb_crate_clamp
 model,#hash_6dcf4cbc961e0f14
 model,#p7_fxanim_gp_trash_bag_large_03_blue_s3_mod
@@ -152,7 +152,7 @@ destructible,#hash_610be216143c59cc
 xanim,#hash_273495719efdc54
 xanim,#hash_74cc9c28b0f8569
 xanim,#pb_rifle_endgame_2ndplace_idle
-xanim,#hash_ed338a160597c69
+xanim,#p7_fxanim_mp_slums_wire_control_anim
 xanim,#hash_12bed01cda085a1e
 xanim,#pb_rifle_endgame_3rdplace_idle
 xanim,#hash_17dd3bf518e65877
@@ -168,8 +168,8 @@ xanim,#hash_5648e6a0b514cb07
 xanim,#p7_fxanim_gp_vent_roof_wobble_anim
 xanim,#o_veh_t7_civ_sedan_midsize_police_explode
 xanim,#p7_fxanim_gp_vent_roof_slow_anim
-xanim,#hash_7b79fb44c02e5dc7
-xanim,#hash_7d793ebdf8267965
+xanim,#p7_fxanim_mp_slums_tarp_plastic_roof_01_anim
+xanim,#p7_fxanim_mp_slums_tarp_plastic_wall_01_anim
 scriptbundle,#p7_fxanim_mp_slums_tarp_plastic_wall_01_bundle
 scriptbundle,#sb_mp_endgame_player_06
 scriptbundle,#sb_mp_endgame_player_05
@@ -288,7 +288,7 @@ soundalias,#hash_373c94e1ffb849b0
 soundalias,#hash_3b66638c6f40e4d3
 soundalias,#hash_3b66818c6f4117cd
 soundalias,#hash_3b6983b084cfef53
-soundalias,#hash_3d3ccfc2be063ea9
+soundalias,#pfx_fire_sml
 soundalias,#hash_3d9c41b3fdfb643f
 soundalias,#hash_3d9c57b3fdfb89a1
 soundalias,#exp_barrel_flux_r
@@ -416,7 +416,7 @@ client_fx,#ui/fx_dom_cap_indicator_neutral_r120
 client_fx,#ui/fx_dom_marker_neutral_r120
 client_fx,#hash_35ae471440e2eaaf
 client_fx,#hash_3826b4ba3964f119
-client_fx,#hash_3b9537ef1ee1d345
+client_fx,#foliage/fx8_leaves_fall_rattle
 client_fx,#hash_41b29604ece529b3
 client_fx,#ui/fx_dom_cap_indicator_team_r120
 client_fx,#hash_54a3a194a65affd8

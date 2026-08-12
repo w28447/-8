@@ -19,7 +19,7 @@ model,#p8_fxanim_mp_icebreaker_antenna_01_mod
 model,#p8_zm_zod_ice_chunk_med_01
 model,#hash_190a7b14b043c858
 model,#c_t7_mp_battery_mpc_fb1_skin1
-model,#hash_1b4ab0edf0d44911
+model,#veh_t8_civ_snowcat_dest_attach
 model,#hash_1cda67d7e80a07d0
 model,#hash_1f249827a9e89e9b
 model,#p8_fxanim_mp_icebreaker_light_generator_01_mod
@@ -30,7 +30,7 @@ model,#p7_mou_dish_satellite_02_snow
 model,#p8_usa_container_nuclear_384_side_01_orange
 model,#p8_usa_container_nuclear_384_01_top_snow
 model,#p8_box_electric_commercial_sml_01_allstates
-model,#hash_2e283b27910b6296
+model,#veh_t8_civ_snowcat_dest_orange
 model,#p8_fxanim_mp_icebreaker_antenna_03_mod
 model,#p8_food_dinnerware_cup_coffee
 model,#hash_335d51429ae697a3
@@ -53,7 +53,7 @@ model,#p8_wz_supply_stash_health
 model,#wpn_t8_eqp_briefcase_bomb_stow
 model,#veh_t8_civ_snowcat_plow
 model,#p8_mp_flag_pole_1
-model,#hash_54f79240cb3cae22
+model,#p8_usa_icicle_single
 model,#p8_usa_vista_icebreaker_ship_crane_lrg_base
 model,#p7_clipboard_01_wpaper
 model,#p8_box_electric_commercial_sml_01
@@ -91,7 +91,7 @@ xanim,#hash_6eeb8240b7b3ad
 xanim,#hash_2a0577fc4c3b8d7
 xanim,#hash_3e554c5e47103e8
 xanim,#pb_rifle_endgame_2ndplace_idle
-xanim,#hash_a5cf4cbfa94270a
+xanim,#p8_fxanim_mp_icebreaker_wires_01_anim
 xanim,#hash_e87cf4cee4a7262
 xanim,#hash_f87fd3e5472f866
 xanim,#hash_11dde46eadb88ee7
@@ -286,6 +286,6 @@ client_fx,#tools/fx_null
 client_fx,#ui/fx_dom_cap_indicator_neutral_r120
 client_fx,#ui/fx_dom_marker_neutral_r120
 client_fx,#ui/fx_dom_cap_indicator_team_r120
-client_fx,#hash_55dfddfc63c9d556
+client_fx,#snow/fx8_snow_ground_rattle
 client_fx,#ui/fx_dom_marker_team_r120
-client_fx,#hash_7803981b283b48e8
+client_fx,#snow/fx8_icicle_fall_rattle

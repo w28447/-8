@@ -6,7 +6,7 @@
     "bodyImpactType": 2,
     "destructibleDef": "#c_t8_mp_zombie_male_helmet1_dst_def",
     "gibDef": "#c_t8_mp_zombie_male_gib_def",
-    "body": "#hash_207529d7919b05da",
+    "body": "#c_t8_mp_zombie_male_body3",
     "headAlias": "#hash_3de5f2abcf868ff",
     "hat": "#c_t8_mp_zombie_male_helmet1",
     "damagedTorso_Clean": "#hash_7eaea0b73ee6a769",

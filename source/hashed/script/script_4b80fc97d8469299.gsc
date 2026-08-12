@@ -601,7 +601,7 @@ function soul_captured( var_f0e6c7a2, ent )
 // Size: 0xa4
 function complete_soul_capture()
 {
-    zm_sq_modules::function_2a94055d( self.var_b9989e12 );
+    zm_sq_modules::end_soul_capture( self.var_b9989e12 );
     level.var_d7374603++;
     self notify( #"soul_capture_complete" );
     level flag::clear( #"infinite_round_spawning" );

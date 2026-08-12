@@ -135,7 +135,7 @@ function event_handler[level_init] main( eventstruct )
     level._effect[ #"animscript_gibtrail_fx" ] = #"blood/fx_blood_gib_limb_trail";
     level._effect[ #"hash_73172b799c18404e" ] = #"zombie/fx_teleport_flashback_zmb";
     level._effect[ #"entry_gate_dust" ] = #"hash_43b2eaf6037de947";
-    level._effect[ #"special_round_smoke" ] = #"hash_7f90f442be248933";
+    level._effect[ #"special_round_smoke" ] = #"maps/zm_towers/fx8_special_round_green_gas_lg";
     level._effect[ #"special_round_fire" ] = #"hash_573f4333a69a2e97";
     level._effect[ #"special_round_camera_start" ] = #"hash_5e456969dcb6d449";
     level._effect[ #"special_round_camera_persist" ] = #"hash_30a51086d1de2e56";
@@ -176,12 +176,12 @@ function event_handler[level_init] main( eventstruct )
     level._effect[ #"hash_3f79f6da0222ebc2" ] = #"hash_2f1958cd9b473bec";
     level._effect[ #"fertilizer_smell" ] = #"hash_48344f893bb65bf2";
     level._effect[ #"fertilizer_smell_bowl" ] = #"hash_62ef4090559ca8c8";
-    level._effect[ #"hash_1f7bfd354d2472e3" ] = #"hash_153286962fe0c0c5";
-    level._effect[ #"hash_1f7511354d1e7631" ] = #"hash_153992962fe6f3d7";
+    level._effect[ #"hash_1f7bfd354d2472e3" ] = #"player/fx8_plyr_breath_steam_1p";
+    level._effect[ #"hash_1f7511354d1e7631" ] = #"player/fx8_plyr_breath_steam_3p";
     level._effect[ #"maelstrom_initiate" ] = #"hash_223c6a623adb13fb";
-    level._effect[ #"maelstrom_conduct_elbow" ] = #"hash_26b672f2c1c8a570";
-    level._effect[ #"maelstrom_conduct_elbow_l" ] = #"hash_50ce930e4dd4bc12";
-    level._effect[ #"maelstrom_conduct_elbow_r" ] = #"hash_50c7bb0e4dcee15c";
+    level._effect[ #"maelstrom_conduct_elbow" ] = #"zm_ai/fx8_cata_elec_elbow";
+    level._effect[ #"maelstrom_conduct_elbow_l" ] = #"zm_ai/fx8_cata_elec_elbow_le";
+    level._effect[ #"maelstrom_conduct_elbow_r" ] = #"zm_ai/fx8_cata_elec_elbow_ri";
     level._effect[ #"hash_4a9ad8ec06102c34" ] = #"hash_4d91ce766ebeda81";
     level._effect[ #"hash_4a9abeec06100006" ] = #"hash_4db3c6766edbb34f";
     level._effect[ #"hash_59efd6cf7ca11195" ] = #"hash_35d31a887a79e68e";

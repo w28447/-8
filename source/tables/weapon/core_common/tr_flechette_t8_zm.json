@@ -116,7 +116,7 @@
     "fx_c88": "#hash_83613e307817774e",
     "fx_c90": "#hash_83613e307817774e",
     "fx_c98": "#hash_83613e307817774e",
-    "fx_f00": "#hash_611c104f1f9c8dbc",
+    "fx_f00": "#weapon/fx8_trail_flechette",
     "normalImpactFX": "#flechette_enter",
     "exitImpactFX": "#bullet_large_exit",
     "bounceImpactFX": "#flechette_enter",

@@ -61,7 +61,7 @@ function function_3f808d3d( id )
 // Params 1
 // Checksum 0xe7901836, Offset: 0x320
 // Size: 0x6a
-function function_2a94055d( id )
+function end_soul_capture( id )
 {
     var_1d81ef2d = level.var_d2540500[ id ];
     

@@ -1311,12 +1311,12 @@ class csceneplayer : csceneobject
             {
                 if ( csceneobject::function_a808aac7() )
                 {
-                    var_778409ab = csceneobject::get_shot( _str_shot );
+                    n_current_shot = csceneobject::get_shot( _str_shot );
                     
-                    if ( var_778409ab > 0 && isdefined( _s.shots[ var_778409ab - 1 ] ) && csceneobject::function_e91c94b9( var_778409ab - 1 ) && !( isdefined( _s.shots[ var_778409ab - 1 ].var_751fe16b ) && _s.shots[ var_778409ab - 1 ].var_751fe16b ) )
+                    if ( n_current_shot > 0 && isdefined( _s.shots[ n_current_shot - 1 ] ) && csceneobject::function_e91c94b9( n_current_shot - 1 ) && !( isdefined( _s.shots[ n_current_shot - 1 ].var_751fe16b ) && _s.shots[ n_current_shot - 1 ].var_751fe16b ) )
                     {
                         var_a3cc5416 = 1;
-                        _o_scene.var_2e9fdf35 = _s.shots[ var_778409ab - 1 ].name;
+                        _o_scene.var_2e9fdf35 = _s.shots[ n_current_shot - 1 ].name;
                         waitframe( 1 );
                     }
                     else

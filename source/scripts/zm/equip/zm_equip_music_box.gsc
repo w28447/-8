@@ -135,7 +135,7 @@ function function_9d9bff80( var_2fe3186e, attacker )
         
         if ( isdefined( e_zombie ) && isdefined( e_zombie.e_floater ) )
         {
-            e_zombie function_4ada560e();
+            e_zombie delete_link();
         }
     }
     
@@ -145,7 +145,7 @@ function function_9d9bff80( var_2fe3186e, attacker )
     {
         if ( isalive( e_zombie ) )
         {
-            e_zombie function_4ada560e();
+            e_zombie delete_link();
         }
     }
     
@@ -255,7 +255,7 @@ function function_da6a44df( s_result )
 // Params 0
 // Checksum 0x1142c4c1, Offset: 0x10d8
 // Size: 0x64
-function function_4ada560e()
+function delete_link()
 {
     if ( isdefined( self ) )
     {

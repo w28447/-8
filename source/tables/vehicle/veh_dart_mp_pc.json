@@ -8,13 +8,13 @@
     "spawnerType": "#none",
     "spawnInfluencers1": "#none",
     "spawnInfluencers2": "#none",
-    "exhaustFx": "#hash_50e269dfa9bb6a69",
+    "exhaustFx": "#killstreaks/fx8_dart_thruster",
     "exhaustFxTag1": "tag_fx_thruster",
-    "deathFx": "#hash_2ab8bcf86391b223",
+    "deathFx": "#killstreaks/fx8_dart_explosion",
     "deathFxTag": "tag_body_animate",
     "deathFxSound": "#hash_36798f1cfbcaec95",
     "lightFx": [
-        "#hash_8862d9565589bb9"
+        "#killstreaks/fx8_dart_lights"
     ],
     "lightFxTag": [
         "tag_laser"

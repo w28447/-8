@@ -140,7 +140,7 @@ function function_f8bfe7b4( predictedspawn )
     
     if ( level.ctdifficulty == 0 )
     {
-        self ct_nomad_tutorial::function_c9ff0dce();
+        self ct_nomad_tutorial::player_spawned_callback();
         return;
     }
     

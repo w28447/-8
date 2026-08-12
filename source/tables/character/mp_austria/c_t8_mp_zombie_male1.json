@@ -5,7 +5,7 @@
     "headImpactType": 2,
     "bodyImpactType": 2,
     "gibDef": "#c_t8_mp_zombie_male_gib_def",
-    "body": "#hash_207527d7919b0274",
+    "body": "#c_t8_mp_zombie_male_body1",
     "headAlias": "#hash_38a7c0b8b38a8f5a",
     "damagedTorso_Clean": "#hash_688f6926ac2b4a3f",
     "damagedTorso_RightArmGone": "#hash_5a4dbc892de0bdac",

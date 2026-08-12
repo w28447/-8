@@ -14,7 +14,7 @@
     "unk13c0": "#hash_159b5506095be354",
     "unk13c8": "tag_body",
     "scriptBundleSettings": "#cargo_truck_bundle_settings",
-    "deathFx": "#hash_f2a59f22bc1e7ff",
+    "deathFx": "#explosions/fx8_vexp_truck_cargo",
     "deathFxTag": "tag_body",
     "deathFxSound": "#hash_2149db0c502305e3",
     "unk1438": [

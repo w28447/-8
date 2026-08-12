@@ -80,9 +80,9 @@ function init_fx()
     level._effect[ #"soul_fx_fire" ] = #"hash_641c2257723638c2";
     level._effect[ #"soul_capture_earth" ] = #"zm_ai/fx8_cata_cor_death";
     level._effect[ #"soul_capture_water" ] = #"zm_ai/fx8_cata_water_death";
-    level._effect[ #"soul_capture_air" ] = #"hash_619361bb6a9a5d2d";
-    level._effect[ #"soul_capture_fire" ] = #"hash_3009e42178ffd484";
-    level._effect[ #"hash_4ab2496c89a7d871" ] = #"hash_4a305119bc50ca3d";
+    level._effect[ #"soul_capture_air" ] = #"zm_ai/fx8_cata_elec_death";
+    level._effect[ #"soul_capture_fire" ] = #"zm_ai/fx8_cata_plasma_transform";
+    level._effect[ #"hash_4ab2496c89a7d871" ] = #"fire/fx8_line_md";
     level._effect[ #"packed_artifact" ] = #"zombie/fx_ritual_glow_relic_zod_zmb";
     level._effect[ #"catalyst_blocker" ] = #"zombie/fx8_power_door_amb_quest";
     level._effect[ #"sentinel_aura" ] = #"hash_3def678deb7f4078";

@@ -97,8 +97,8 @@ function init_fx()
     level._effect[ #"hash_14c7ae107e96344f" ] = #"hash_35345b470c26af97";
     level._effect[ #"hash_7f40415d2fd7eca7" ] = #"hash_140d0b129306d6bf";
     level._effect[ #"hash_139a09a4b1249370" ] = #"hash_7881fc0381feec68";
-    level._effect[ #"hash_76da38284b0c73ed" ] = #"hash_153286962fe0c0c5";
-    level._effect[ #"hash_76e124284b12709f" ] = #"hash_153992962fe6f3d7";
+    level._effect[ #"hash_76da38284b0c73ed" ] = #"player/fx8_plyr_breath_steam_1p";
+    level._effect[ #"hash_76e124284b12709f" ] = #"player/fx8_plyr_breath_steam_3p";
     level._effect[ #"hash_6788a08fe46cb4c4" ] = #"hash_6bb32223711e216c";
     level._effect[ #"hash_2b51d1fecfaa7ae6" ] = #"hash_682ef6e33412958e";
     level._effect[ #"hash_3a6842a4656de818" ] = #"hash_2b2be81e66f5e3ea";

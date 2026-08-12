@@ -1,6 +1,6 @@
 {
     "piece2_detachmodel": "model#c_t8_zmb_titanic_stoker_lshoulder_cap1",
-    "piece1_gibfx": "fx#hash_644e534eab86631f",
+    "piece1_gibfx": "fx#zm_ai/fx8_stoker_dest_weak_point_exp_arm",
     "piece4_hidetag": "j_head_deadshot",
     "piece3_hitlocation": "right_arm_upper",
     "configstringfiletype": "scriptbundle",
@@ -26,7 +26,7 @@
     "piece5_hitlocation": "right_arm_lower",
     "piece3_gibeffecttag": "j_clavicle_ri",
     "piece2_hitlocation": "left_arm_upper",
-    "piece1_gibdynentfx": "fx#hash_4b21dffc82e53ef6",
+    "piece1_gibdynentfx": "fx#zm_ai/fx8_stoker_dest_weak_point_dynent_arm",
     "piece5_gibmodel": "model#c_t8_zmb_titanic_stoker_shovel1",
     "hash_20d00e0": "tag_weapon_right"
 }

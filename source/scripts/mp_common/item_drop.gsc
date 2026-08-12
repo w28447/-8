@@ -309,11 +309,11 @@ function private function_23b6897( player, position )
         heightoffset = max( player getplayerviewheight() + -20, 18 );
         var_891dc751 = ( 0, 0, heightoffset );
         centerpoint = player.origin;
-        var_bb96e272 = position - centerpoint;
-        var_bb96e272 = ( var_bb96e272[ 0 ], var_bb96e272[ 1 ], 0 );
-        var_bb96e272 = vectornormalize( var_bb96e272 );
+        todirection = position - centerpoint;
+        todirection = ( todirection[ 0 ], todirection[ 1 ], 0 );
+        todirection = vectornormalize( todirection );
         forward = ( 1, 0, 0 );
-        theta = vectortoangles( var_bb96e272 )[ 1 ] - vectortoangles( forward )[ 1 ];
+        theta = vectortoangles( todirection )[ 1 ] - vectortoangles( forward )[ 1 ];
         var_9942a6e3 = 13;
         var_ed81de82 = var_9942a6e3 * var_9942a6e3;
         var_f6c0e955 = 25;
@@ -1314,7 +1314,7 @@ function drop_item( weapon = undefined, count = 0, amount = 0, itemid, position,
     dropitem = spawn( "script_model", position );
     dropitem.angles = angles;
     dropitem.attachments = attachments;
-    dropitem.var_627c698b = weapon;
+    dropitem.cachedweapon = weapon;
     dropitem.targetnamehash = targetname;
     dropitem.deathstash = deathstash;
     dropitem.id = function_4ba8fde( item.itementry.name ).id;

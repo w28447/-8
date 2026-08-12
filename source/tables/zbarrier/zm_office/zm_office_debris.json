@@ -16,9 +16,9 @@
     "boards": [
         {
             "boardModel": "#zm_office_debris_01",
-            "tearAnim": "#hash_2cda8cabc29cb5e1",
-            "boardAnim": "#hash_5f083261721821fc",
-            "staticAnim": "#hash_5f083261721821fc",
+            "tearAnim": "#zm_office_debris_01_purchase",
+            "boardAnim": "#zm_office_debris_01_idle",
+            "staticAnim": "#zm_office_debris_01_idle",
             "repairEffect1Offset": "0 0 0",
             "repairEffect2Offset": "0 0 0",
             "minPause": 0.3,

@@ -42,7 +42,7 @@
     "skidSpeedMin": 250,
     "skidSpeedMax": 600,
     "peelSpeedMax": 176,
-    "model": "#hash_14651845f484599d",
+    "model": "#veh_t8_mil_atv_recon_wz_police",
     "deathModel": "#veh_t8_mil_atv_recon_dead_police",
     "soundDef": "#hash_1d4605479cd520a7",
     "compassIconMaterial": "#hash_bd1d0ee2c21b12",

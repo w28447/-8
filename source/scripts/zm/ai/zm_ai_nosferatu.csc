@@ -191,7 +191,7 @@ function function_84346679( var_c34665fc )
 // Size: 0x8c
 function nosferatu_spawn_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
-    util::playfxontag( localclientnum, #"hash_611d887cc85e2cb8", self, "j_spine2" );
+    util::playfxontag( localclientnum, #"zm_ai/fx8_bat_transform_impact", self, "j_spine2" );
     playsound( localclientnum, #"hash_15f98d1e471b4335", self.origin );
 }
 

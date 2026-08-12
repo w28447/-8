@@ -1,7 +1,7 @@
 type,name
 model,#p8_fxanim_gp_vehicle_moving_truck_semi_damaged_mod
 model,#veh_t8_mil_atv_recon_tire_right
-model,#hash_281174f941ad461
+model,#veh_t8_mil_atv_recon_dead_blu_militia
 model,#hash_29b261cf0f3a992
 model,#hash_2efa9e25095a4c7
 model,#hash_3685b4aa6bd0923
@@ -20,7 +20,7 @@ model,#p7_can_metal_01_small
 model,#hash_ad3e0d3f43130ab
 model,#hash_b1004cbd77a6347
 model,#hash_b5ed194900da724
-model,#hash_bdab43488187327
+model,#veh_t8_civ_truck_pickup_decal
 model,#p7_fxp_debris_metal_scrap_01
 model,#p7_fxp_debris_metal_scrap_02
 model,#hash_d6293efc4661692
@@ -30,7 +30,7 @@ model,#hash_f222ec5f21d57a2
 model,#hash_10a07c0146fda115
 model,#p8_candle_stick_02_thin_burnt
 model,#p8_def_bar_beer_bottle_02_open
-model,#hash_1459d0df37575d35
+model,#veh_t8_mil_truck_technical_engine_attach
 model,#p8_zm_zod_cookware_tea_kettle
 model,#hash_15747d9c80c3b776
 model,#p8_boot_military_lt
@@ -48,7 +48,7 @@ model,#hash_1d171c4a0fc881f9
 model,#p7_world_globe_vintage_globe_01
 model,#p8_zm_zod_crafting_table_tool_glove_rt
 model,#hash_1d9ddc0f57434737
-model,#hash_1f82b856924b40dd
+model,#veh_t8_civ_license_plate_back_ny_blk
 model,#hash_20718e559f90c744
 model,#fx_decal_burnt_paper
 model,#veh_t8_mil_atv_recon_guard_rear
@@ -79,7 +79,7 @@ model,#p7_can_metal_cube_01
 model,#hash_3235dfedc172ce41
 model,#p8_debris_trash_bottle_water_01
 model,#hash_3533c12c9e62938e
-model,#hash_35aea0ba09ae7544
+model,#veh_t8_mil_atv_recon_blk_militia
 model,#hash_362644b938543f99
 model,#p8_two_way_radio
 model,#p8_mp_flag_base_light_fixture_1
@@ -90,11 +90,11 @@ model,#p8_zm_zod_bell_wall
 model,#hash_3b7a2ff88382fb83
 model,#hash_3be7bbd1584f6ad4
 model,#hash_3e62d6f26997386b
-model,#hash_3e6366b2a8f785fb
+model,#veh_t8_mil_truck_technical_interior_attach
 model,#hash_3e9bfc2a3c78a375
 model,#p8_food_jar_olives_closed_full
 model,#c_t7_mp_technomancer_mpc_fb1_skin1
-model,#hash_4046c6efddced99a
+model,#veh_t8_civ_truck_pickup_dest_attach
 model,#hash_406b3b3d4bb3d637
 model,#veh_t8_mil_atv_recon_decals_dead_blk
 model,#p8_zm_zod_tea_plate_lrg
@@ -135,7 +135,7 @@ model,#hash_5920d6a3c30782aa
 model,#p7_wes_skull_deer
 model,#p8_candle_holder_vintage_01_brass
 model,#p7_book_vintage_open_01
-model,#hash_5b7cbaedb5aee4b6
+model,#veh_t8_mil_atv_recon_blu_militia
 model,#fx_decal_burnt_paper2
 model,#fx_decal_burnt_paper3
 model,#hash_5ce848c18bb22572
@@ -160,7 +160,7 @@ model,#veh_t8_mil_atv_recon_decals_blk
 model,#hash_63140a04809445f3
 model,#hash_63140b04809447a6
 model,#hash_63140c0480944959
-model,#hash_633d5fa5ec401cd7
+model,#veh_t8_mil_atv_recon_dead_blk_militia
 model,#veh_t8_mil_atv_recon_tire_right_blk
 model,#hash_645978f2dec69f88
 model,#hash_6489d1b9aec0924a
@@ -177,7 +177,7 @@ model,#p7_ris_bucket_plastic_5_gal_bucket_paint_grey
 model,#p8_mp_bomb_crate_clamp
 model,#p7_magazine_stack_hunting_03
 model,#hash_6fe2e5294dcd1884
-model,#hash_702a1cea2c2699ba
+model,#veh_t8_civ_van_utility_dest_attach
 model,#p7_zm_ctl_book_vintage_row_03
 model,#p7_zm_ctl_book_vintage_row_01
 model,#hash_72b51b82ac901d1c
@@ -197,7 +197,7 @@ model,#hash_786e105ab9015be9
 model,#p7_food_fruit_pineapple_01c_dmg
 model,#p8_mp_flag_base_boots_1
 model,#p8_food_jar_olives_contents_02
-model,#hash_78fac5895baec1c8
+model,#veh_t8_mil_atv_recon_wheel_bolts_dead
 model,#p7_hazmat_boot_right
 model,#p8_wz_supply_stash_ammo
 model,#p8_food_jar_jam_sml_01
@@ -241,7 +241,7 @@ xanim,#p8_fxanim_mp_militia_pulley_anim
 xanim,#pb_rifle_endgame_1stplace_idle
 xanim,#o_veh_t7_civ_sedan_midsize_police_explode
 xanim,#hash_7068d8d0c8c94373
-xanim,#hash_7936bc35225a3b8c
+xanim,#p8_fxanim_gp_raven_idle_standing_anim
 xanim,#p8_fxanim_mp_militia_cabin_bell_01_anim
 scriptbundle,#sb_mp_endgame_player_06
 scriptbundle,#sb_mp_endgame_player_05
@@ -448,14 +448,14 @@ soundalias,#hash_7e17e533381a8506
 soundalias,#hash_7eb51f1a0028ab28
 soundalias,#hash_7f118ea3a4874268
 soundalias,#exp_barrel_dist
-client_fx,#hash_92bfa5adbff2599
+client_fx,#dirt/fx8_dust_fall_rattle
 client_fx,#tools/fx_null
 client_fx,#ui/fx_dom_cap_indicator_neutral_r120
 client_fx,#ui/fx_dom_marker_neutral_r120
 client_fx,#hash_28d89d447c354265
 client_fx,#destruct/fx_dest_paper
 client_fx,#ui/fx_dom_cap_indicator_team_r120
-client_fx,#hash_4d885739142015b7
+client_fx,#snow/fx8_snow_ground_wet_rattle
 client_fx,#ui/fx_dom_marker_team_r120
-client_fx,#hash_67a4679378e51bf7
+client_fx,#dirt/fx8_dust_ground_rattle
 client_fx,#hash_743aa928e83286d6

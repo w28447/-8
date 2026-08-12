@@ -2345,7 +2345,7 @@ function private function_c5b6693a()
     item.id = 32767;
     item.networkid = 32767;
     item.itementry = undefined;
-    item.var_627c698b = undefined;
+    item.cachedweapon = undefined;
     return item;
 }
 

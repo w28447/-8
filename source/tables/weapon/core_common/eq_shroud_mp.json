@@ -49,7 +49,7 @@
     "#hash_2e4a8800": "#eq_shroud_scoreevents",
     "projectilemodel": "#hash_5e3d51b8f1c6fde2",
     "viewmodel": [
-        "#hash_582f262dfc0f72e8"
+        "#wpn_t8_eqp_radar_shroud_gun_view"
     ],
     "worldModel": [
         "#wpn_t8_eqp_radar_shroud_gun_world"
@@ -61,8 +61,8 @@
     "hudIcon": "#ui_icon_equipment_shroud",
     "image_e90": "#ui_icon_equipment_shroud",
     "image_1048": "#ui_icon_equipment_shroud",
-    "fx_bc8": "#hash_52381fc401c9fe06",
-    "fx_bd0": "#hash_523133c401c40154",
+    "fx_bc8": "#weapon/fx8_muz_smg_stand_1p",
+    "fx_bd0": "#weapon/fx8_muz_smg_stand_3p",
     "fx_f00": "#hash_2f0d90d4922be0a2",
     "#hash_96850284": "#jammer_sensordart",
     "#hash_26f68e75": "#icepick_sensordart",

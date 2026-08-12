@@ -199,7 +199,7 @@ soundalias,#hash_3b6224b8a3cc98fa
 soundalias,#hash_3b66638c6f40e4d3
 soundalias,#hash_3b66818c6f4117cd
 soundalias,#hash_3b6983b084cfef53
-soundalias,#hash_3d3ccfc2be063ea9
+soundalias,#pfx_fire_sml
 soundalias,#exp_barrel_flux_r
 soundalias,#exp_barrel_flux_l
 soundalias,#hash_41e2490ce43bdaca
@@ -295,7 +295,7 @@ client_fx,#dirt/fx8_dust_fall_crumble_rattle
 client_fx,#impacts/fx_bul_impact_boss_body_nonfatal
 client_fx,#impacts/fx8_bul_impact_metal_sm
 client_fx,#hash_12b944b36953a819
-client_fx,#hash_1847077627974c80
+client_fx,#impacts/fx8_bul_impact_blood_limb_zm
 client_fx,#hash_19fd67d4066e7da5
 client_fx,#impacts/fx8_bul_impact_robot_body_fatal
 client_fx,#impacts/fx_bul_impact_boss_body_fatal
@@ -313,9 +313,9 @@ client_fx,#impacts/fx8_bul_impact_robot_body_nonfatal
 client_fx,#impacts/fx_bul_impact_boss_head_nonfatal
 client_fx,#impacts/fx_bul_impact_heavy_body_nonfatal
 client_fx,#impacts/fx_bul_impact_snow_sm
-client_fx,#hash_3b9537ef1ee1d345
+client_fx,#foliage/fx8_leaves_fall_rattle
 client_fx,#impacts/fx8_bul_impact_blood_head_fatal
-client_fx,#hash_3eec9722c838ae73
+client_fx,#foliage/fx8_leaves_ground_rattle
 client_fx,#hash_3f9e861a8394a8a3
 client_fx,#impacts/fx8_bul_impact_blood_body_fatal
 client_fx,#ui/fx_dom_cap_indicator_team_r120
@@ -338,6 +338,6 @@ client_fx,#hash_6fec94225bb3270f
 client_fx,#impacts/fx8_bul_impact_robot_head_nonfatal
 client_fx,#impacts/fx8_bul_impact_blood_body_fatal_zm
 client_fx,#hash_7b2e4176bb94d5e8
-client_fx,#hash_7b74ede35f3681c5
+client_fx,#dirt/fx8_mud_ground_rattle
 client_fx,#hash_7e68dfc1a77f9f59
 client_fx,#impacts/fx8_bul_impact_robot_head_fatal

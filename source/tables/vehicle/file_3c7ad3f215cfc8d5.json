@@ -12,8 +12,8 @@
     "deathFxTag": "tag_origin",
     "deathFxSound": "#hash_2149db0c502305e3",
     "lightFx": [
-        "#hash_1dc451a16def3d6",
-        "#hash_1dc451a16def3d6"
+        "#vehicle/fx_headlight_hemtt_left",
+        "#vehicle/fx_headlight_hemtt_left"
     ],
     "lightFxTag": [
         "tag_fx_headlight_left",

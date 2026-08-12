@@ -513,7 +513,7 @@ function soul_captured( var_f0e6c7a2, ent )
 // Size: 0x3c
 function complete_soul_capture()
 {
-    zm_sq_modules::function_2a94055d( self.var_b9989e12 );
+    zm_sq_modules::end_soul_capture( self.var_b9989e12 );
     level flag::set( #"hash_174f5682aa48c4b" );
 }
 

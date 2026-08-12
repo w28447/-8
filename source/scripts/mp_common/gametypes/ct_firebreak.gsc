@@ -68,7 +68,7 @@ function function_7c4ef26b( predictedspawn )
     
     if ( level.ctdifficulty == 0 )
     {
-        self ct_firebreak_tutorial::function_c9ff0dce();
+        self ct_firebreak_tutorial::player_spawned_callback();
         return;
     }
     

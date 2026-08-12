@@ -31,7 +31,7 @@ function __init__()
     level._effect[ #"flamethrower_tornado" ] = #"zm_weapons/fx8_flamethrower_tornado";
     level._effect[ #"wind_blast_flash" ] = #"zm_weapons/fx8_flamethrower_wind_blast";
     level._effect[ #"wind_blast_flash_3p" ] = #"zm_weapons/fx8_flamethrower_wind_blast_3p";
-    level._effect[ #"tornado_blast_flash" ] = #"hash_5c5ffb835c39dce3";
+    level._effect[ #"tornado_blast_flash" ] = #"zm_weapons/fx8_flamethrower_tornado_muz";
 }
 
 // Namespace zm_weap_flamethrower/zm_weap_flamethrower

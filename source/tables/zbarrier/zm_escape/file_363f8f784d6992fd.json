@@ -16,9 +16,9 @@
     "boards": [
         {
             "boardModel": "#p8_fxanim_zm_esc_door_debris_buy_mod",
-            "tearAnim": "#hash_6bbe9015dd7af428",
-            "boardAnim": "#hash_55fcc2ce80765449",
-            "staticAnim": "#hash_55fcc2ce80765449",
+            "tearAnim": "#p8_fxanim_zm_esc_door_debris_buy_office_up_anim",
+            "boardAnim": "#p8_fxanim_zm_esc_door_debris_buy_office_idle_anim",
+            "staticAnim": "#p8_fxanim_zm_esc_door_debris_buy_office_idle_anim",
             "repairEffect1Offset": "0 0 0",
             "repairEffect2Offset": "0 0 0",
             "minPause": 0.3,

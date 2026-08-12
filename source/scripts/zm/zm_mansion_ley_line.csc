@@ -50,7 +50,7 @@ function coil_hit_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fie
 {
     if ( newval )
     {
-        self util::playfxontag( localclientnum, #"hash_71f448e1a71c505d", self, "tag_origin" );
+        self util::playfxontag( localclientnum, #"maps/zm_mansion/fx8_silver_hit_coil", self, "tag_origin" );
     }
 }
 

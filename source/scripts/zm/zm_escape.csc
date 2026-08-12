@@ -91,7 +91,7 @@ function event_handler[level_init] main( eventstruct )
     level._uses_sticky_grenades = 1;
     level._uses_taser_knuckles = 1;
     level.var_d0ab70a2 = #"gamedata/weapons/zm/zm_escape_weapons.csv";
-    level._effect[ #"hash_2bba72fdcc5508b5" ] = #"hash_2ac7ec38d265c496";
+    level._effect[ #"hash_2bba72fdcc5508b5" ] = #"maps/zm_escape/fx8_magicbox_opened";
     level._effect[ #"chest_light_closed" ] = #"hash_5b118cefec864e37";
     level._effect[ #"magic_box_arrive" ] = #"maps/zm_escape/fx8_magicbox_arrival";
     level._effect[ #"magic_box_leave" ] = #"hash_2b008afec3e70add";

@@ -44,7 +44,7 @@ function setup()
 // Params 0
 // Checksum 0x19419b75, Offset: 0x1008
 // Size: 0x74a
-function function_c9ff0dce()
+function player_spawned_callback()
 {
     self.overrideplayerdamage = &callback_player_damage;
     

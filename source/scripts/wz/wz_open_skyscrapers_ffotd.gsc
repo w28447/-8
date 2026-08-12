@@ -30,7 +30,7 @@ function __main__()
     
     if ( isdefined( rock ) )
     {
-        rock setmodel( #"hash_283f153de0d2b7ac" );
+        rock setmodel( #"p8_wz_rock_large_02" );
         rock.angles = ( 0, 240, 27 );
         rock setscale( 2 );
     }
@@ -40,7 +40,7 @@ function __main__()
     
     if ( isdefined( rock ) )
     {
-        rock setmodel( #"hash_5d5c82725edc89c8" );
+        rock setmodel( #"p8_wz_med_rock_01" );
         rock.angles = ( 357, 353, -4 );
     }
     
@@ -48,7 +48,7 @@ function __main__()
     
     if ( isdefined( rock ) )
     {
-        rock setmodel( #"hash_5d5c82725edc89c8" );
+        rock setmodel( #"p8_wz_med_rock_01" );
         rock.angles = ( 348, 343, -7 );
     }
     
@@ -56,7 +56,7 @@ function __main__()
     
     if ( isdefined( rock ) )
     {
-        rock setmodel( #"hash_5d5c82725edc89c8" );
+        rock setmodel( #"p8_wz_med_rock_01" );
         rock.angles = ( 1, 328, -17 );
     }
 }

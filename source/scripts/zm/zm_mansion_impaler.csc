@@ -26,7 +26,7 @@ function init_clientfields()
     clientfield::register( "scriptmover", "" + #"jewelry_dropped", 8000, 1, "int", &function_4e782d34, 0, 0 );
     clientfield::register( "scriptmover", "" + #"hash_3d5a64bed5e39d24", 8000, 1, "int", &function_3f039efc, 0, 0 );
     clientfield::register( "world", "" + #"hash_73123721764d7374", 8000, 1, "int", &function_12852d1a, 0, 0 );
-    level._effect[ #"candle_light" ] = #"hash_7c3ce9a7a1d0be65";
+    level._effect[ #"candle_light" ] = #"fire/fx8_fire_candle_sml_melt_on";
     level._effect[ #"candle_extinguish" ] = #"hash_46177358e1ae4e80";
     level._effect[ #"monolith_water" ] = #"hash_4290601f9ae7b873";
     level._effect[ #"soul_possess_orb" ] = #"hash_59977c4c851916e0";

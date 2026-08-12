@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_16eeee3376b76054",
+                            "anim": "anim#p8_fxanim_zm_orange_frozen_key_init",
                             "entrytype": "anim"
                         }
                     ],
@@ -34,7 +34,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_529edb10d5201dd4",
+                            "anim": "anim#p8_fxanim_zm_orange_frozen_key_melt",
                             "entrytype": "anim"
                         }
                     ],

@@ -18,8 +18,8 @@
     "unk1498": [
         "#hash_da3d8514beb8f2c",
         "#hash_da3d8514beb8f2c",
-        "#hash_45212649bf4162b3",
-        "#hash_45212649bf4162b3"
+        "#light/fx_light_headlight_pbr",
+        "#light/fx_light_headlight_pbr"
     ],
     "unk14b8": [
         "tag_fx_nav_light_rear_green",
@@ -37,7 +37,7 @@
     "skidSpeedMax": 650,
     "peelSpeedMax": 600,
     "model": "#veh_t8_mil_boat_pbr_wz_green",
-    "deathModel": "#hash_aed49ff050e6373",
+    "deathModel": "#veh_t8_mil_boat_pbr_wz_green_dead",
     "soundDef": "#veh_pbr",
     "compassIconMaterial": "#hash_29aba9deeb2d3a03",
     "destructibleDef": "#hash_28b316d999870277",

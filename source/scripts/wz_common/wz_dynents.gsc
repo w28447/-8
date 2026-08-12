@@ -285,7 +285,7 @@ function function_777e012d( t_damage )
                 
                 if ( device.weapon.name === #"cymbal_monkey" )
                 {
-                    device gadget_cymbal_monkey::function_4f90c4c2();
+                    device gadget_cymbal_monkey::monkey_detonate_immediate();
                     continue;
                 }
                 

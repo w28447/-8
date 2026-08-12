@@ -23,8 +23,8 @@
     "boards": [
         {
             "boardModel": "#p8_zm_esc_wall_custom_tear_in_chunk_01",
-            "tearAnim": "#hash_5709f06b708f43c8",
-            "boardAnim": "#hash_dd3f7376a97b77e",
+            "tearAnim": "#o_t8_zm_zombie_wallchunk_1_pull",
+            "boardAnim": "#o_t8_zm_zombie_wallchunk_1_repair",
             "boardRepairSound": "#hash_c6184d5003a80f5",
             "boardRepairHoverSound": "#zmb_boards_float",
             "pauseAndRepeatRepSound": "#hash_1",
@@ -36,8 +36,8 @@
         },
         {
             "boardModel": "#p8_zm_esc_wall_custom_tear_in_chunk_02",
-            "tearAnim": "#hash_4cf26205b15782ff",
-            "boardAnim": "#hash_4e0f23746db4e635",
+            "tearAnim": "#o_t8_zm_zombie_wallchunk_2_pull",
+            "boardAnim": "#o_t8_zm_zombie_wallchunk_2_repair",
             "boardRepairSound": "#hash_c6184d5003a80f5",
             "boardRepairHoverSound": "#zmb_boards_float",
             "pauseAndRepeatRepSound": "#hash_1",
@@ -49,8 +49,8 @@
         },
         {
             "boardModel": "#p8_zm_esc_wall_custom_tear_in_chunk_03",
-            "tearAnim": "#hash_3df4ecf6ff31735a",
-            "boardAnim": "#hash_4facecf00ecddac0",
+            "tearAnim": "#o_t8_zm_zombie_wallchunk_3_pull",
+            "boardAnim": "#o_t8_zm_zombie_wallchunk_3_repair",
             "boardRepairSound": "#hash_c6184d5003a80f5",
             "boardRepairHoverSound": "#zmb_boards_float",
             "pauseAndRepeatRepSound": "#hash_1",
@@ -62,8 +62,8 @@
         },
         {
             "boardModel": "#p8_zm_esc_wall_custom_tear_in_chunk_04",
-            "tearAnim": "#hash_270aee90ef950689",
-            "boardAnim": "#hash_81ebae714462baf",
+            "tearAnim": "#o_t8_zm_zombie_wallchunk_4_pull",
+            "boardAnim": "#o_t8_zm_zombie_wallchunk_4_repair",
             "boardRepairSound": "#hash_c6184d5003a80f5",
             "boardRepairHoverSound": "#zmb_boards_float",
             "pauseAndRepeatRepSound": "#hash_1",
@@ -75,8 +75,8 @@
         },
         {
             "boardModel": "#p8_zm_esc_wall_custom_tear_in_chunk_05",
-            "tearAnim": "#hash_1e8aeec06e7c12e4",
-            "boardAnim": "#hash_27179fb7efc57d8a",
+            "tearAnim": "#o_t8_zm_zombie_wallchunk_5_pull",
+            "boardAnim": "#o_t8_zm_zombie_wallchunk_5_repair",
             "boardRepairSound": "#hash_c6184d5003a80f5",
             "boardRepairHoverSound": "#zmb_boards_float",
             "pauseAndRepeatRepSound": "#hash_1",
@@ -88,8 +88,8 @@
         },
         {
             "boardModel": "#p8_zm_esc_wall_custom_tear_in_chunk_06",
-            "tearAnim": "#hash_6ee1e5ddad45172b",
-            "boardAnim": "#hash_143341a31e83bcf1",
+            "tearAnim": "#o_t8_zm_zombie_wallchunk_6_pull",
+            "boardAnim": "#o_t8_zm_zombie_wallchunk_6_repair",
             "boardRepairSound": "#hash_c6184d5003a80f5",
             "boardRepairHoverSound": "#zmb_boards_float",
             "pauseAndRepeatRepSound": "#hash_1",

@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_poster_firebreak",
     "type": "#tag",
-    "material": "#hash_72ffb5a5b6e1a9a3",
+    "material": "#vd/mtl_loot_ui_icon_tags_poster_firebreak",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_701af7819510e201",

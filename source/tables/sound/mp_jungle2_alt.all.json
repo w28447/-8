@@ -16360,13 +16360,13 @@
         {
             "value": 100,
             "next": 65535,
-            "name": "#hash_3d3ccfc2be063ea9",
+            "name": "#pfx_fire_sml",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3d3ccfc2be063ea9",
+                    "name": "#pfx_fire_sml",
                     "assetId": "#amb/fire/medium/medium.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2_alt.all",
                     "assetIdRelease": "#mp_jungle2_alt.all",

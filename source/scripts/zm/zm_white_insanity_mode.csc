@@ -18,7 +18,7 @@ function init_clientfields()
 // Size: 0x32
 function init_fx()
 {
-    level._effect[ #"fx8_insanity_wisp" ] = #"hash_75046ca8114af653";
+    level._effect[ #"fx8_insanity_wisp" ] = #"maps/zm_white/fx8_insanity_wisp";
 }
 
 // Namespace zm_white_insanity_mode/zm_white_insanity_mode

@@ -47,7 +47,7 @@ function end( id )
     {
         s_sc = level.var_345df07[ id ];
         exploder::stop_exploder( s_sc.fx_exp );
-        zm_sq_modules::function_2a94055d( id );
+        zm_sq_modules::end_soul_capture( id );
         s_sc.var_f929d531 notify( #"event_end" );
     }
 }

@@ -1225,14 +1225,14 @@ function private function_1d65bc12( enemy, elephant, var_60e4c6b7 = 1 )
     
     facingvec = anglestoforward( elephant.angles );
     enemyvec = enemy.origin - elephant.origin;
-    var_3e3c8075 = ( enemyvec[ 0 ], enemyvec[ 1 ], 0 );
-    var_c2ee8451 = ( facingvec[ 0 ], facingvec[ 1 ], 0 );
-    var_3e3c8075 = vectornormalize( var_3e3c8075 );
-    var_c2ee8451 = vectornormalize( var_c2ee8451 );
+    enemyyawvec = ( enemyvec[ 0 ], enemyvec[ 1 ], 0 );
+    facingyawvec = ( facingvec[ 0 ], facingvec[ 1 ], 0 );
+    enemyyawvec = vectornormalize( enemyyawvec );
+    facingyawvec = vectornormalize( facingyawvec );
     
     if ( var_60e4c6b7 )
     {
-        enemydot = vectordot( var_c2ee8451, var_3e3c8075 );
+        enemydot = vectordot( facingyawvec, enemyyawvec );
         
         if ( enemydot < 0 )
         {

@@ -249,7 +249,7 @@ function fasttravel_end_fx( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 2
 // Checksum 0xea1b324, Offset: 0xf08
 // Size: 0x12c
-function play_fasttravel_end_fx( localclientnum, var_b8763ebc = "fasttravel_end" )
+function play_fasttravel_end_fx( localclientnum, str_fx_id = "fasttravel_end" )
 {
     level endon( #"end_game" );
     self endon( #"bled_out", #"disconnect" );
@@ -259,7 +259,7 @@ function play_fasttravel_end_fx( localclientnum, var_b8763ebc = "fasttravel_end"
         v_angles = combineangles( self.angles, ( -90, 0, 0 ) );
         mdl_fx = util::spawn_model( localclientnum, "tag_origin", self.origin, v_angles );
         waitframe( 1 );
-        util::playfxontag( localclientnum, level._effect[ var_b8763ebc ], mdl_fx, "tag_origin" );
+        util::playfxontag( localclientnum, level._effect[ str_fx_id ], mdl_fx, "tag_origin" );
         wait 1.15;
         mdl_fx delete();
     }

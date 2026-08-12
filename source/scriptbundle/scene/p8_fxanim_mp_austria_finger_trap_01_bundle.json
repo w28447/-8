@@ -176,7 +176,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_348e4f35e01f44c3",
+                            "anim": "anim#p8_fxanim_mp_austria_finger_trap_debris_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -228,7 +228,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_348e4f35e01f44c3",
+                            "anim": "anim#p8_fxanim_mp_austria_finger_trap_debris_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -306,7 +306,7 @@
             "skipdeathanim": 0,
             "hash_9de1f44c": 0,
             "lerptime": 0,
-            "model": "model#hash_736b9a72dfb3cbe",
+            "model": "model#p8_fxanim_mp_austria_finger_trap_debris_mod",
             "type": "prop",
             "disablehitmarker": 0,
             "usefakeactor": 0,

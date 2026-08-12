@@ -252,7 +252,7 @@ function function_9233eb94( localclientnum, oldval, newval, bnewent, binitialsna
     {
         self endon( #"death" );
         self util::waittill_dobj( localclientnum );
-        self.beam_fx = util::playfxontag( localclientnum, #"hash_253c31a9114d6029", self, "tag_origin" );
+        self.beam_fx = util::playfxontag( localclientnum, #"weapon/fx8_equip_ied_active", self, "tag_origin" );
         return;
     }
     

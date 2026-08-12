@@ -45,7 +45,7 @@
     "piece1_hitlocation": "left_arm_lower",
     "vmtype": "both",
     "name": "c_t8_zmb_blightfather1_dst_def",
-    "piece5_gibfx": "fx#hash_5e849aa59b00bbb5",
+    "piece5_gibfx": "fx#zm_ai/fx8_blightfather_weakspot_jaw_exp",
     "hash_125aa24f": 1,
     "piece2_hidetag": "tag_elbow_weakspot_ri_deadshot",
     "hash_55d2a6b2": 1,

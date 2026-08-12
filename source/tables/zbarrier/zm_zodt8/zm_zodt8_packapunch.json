@@ -61,7 +61,7 @@
             "boardModel": "#hash_129339f4a4da8ea2",
             "tearAnim": "#p8_fxanim_zm_pap_disassemble_anim",
             "boardAnim": "#hash_6eeafc7dbcbcde96",
-            "staticAnim": "#hash_586b870b2b35eb14",
+            "staticAnim": "#p8_fxanim_zm_pap_static_anim",
             "pauseAndRepeatRepSound": "#hash_1",
             "repairEffect1Offset": "0 0 0",
             "repairEffect2Offset": "0 0 0",

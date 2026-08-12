@@ -934,7 +934,7 @@ function function_520b16d6()
     item.id = 32767;
     item.networkid = 32767;
     item.itementry = undefined;
-    item.var_627c698b = undefined;
+    item.cachedweapon = undefined;
     item.weaponoptions = undefined;
     item.charmindex = undefined;
     item.deathfxindex = undefined;

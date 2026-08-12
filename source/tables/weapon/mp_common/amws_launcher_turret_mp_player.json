@@ -44,7 +44,7 @@
     "laser_e30": "#default_laser",
     "fx_bc8": "#killstreaks/fx_agr_rocket_flash_1p",
     "fx_bd0": "#killstreaks/fx_agr_rocket_flash_3p",
-    "fx_f00": "#hash_8f8d0a431403706",
+    "fx_f00": "#killstreaks/fx8_agr_rocket_trail",
     "normalImpactFX": "#agr_explosion",
     "exitImpactFX": "#grenade_exit",
     "normalImpactSounds": "#grenade_explode_material"

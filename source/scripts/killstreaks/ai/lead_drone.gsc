@@ -649,7 +649,7 @@ function function_ede09a4e( owner )
 // Params 0
 // Checksum 0xfddcb625, Offset: 0x1c08
 // Size: 0xce
-function function_5ebe7443()
+function followdebug()
 {
     self endon( #"death" );
     
@@ -681,7 +681,7 @@ function function_5ebe7443()
 function state_combat_update( params )
 {
     self endon( #"change_state", #"death" );
-    self thread function_5ebe7443();
+    self thread followdebug();
     self thread attackthread();
     
     for ( ;; )

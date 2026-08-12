@@ -42,7 +42,7 @@ function init_fx()
 {
     level._effect[ #"perk_fire_trail" ] = #"hash_2edb406c045a5b80";
     level._effect[ #"perk_marker" ] = #"hash_2eb17822848d1484";
-    level._effect[ #"perk_marker_flare" ] = #"hash_4d4ecfd7d55314e9";
+    level._effect[ #"perk_marker_flare" ] = #"maps/zm_escape/fx8_magicbox_flare";
 }
 
 // Namespace zm_white_perk_pap/zm_white_perk_pap

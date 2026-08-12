@@ -45,6 +45,6 @@
     "fireRumble": "#tank_fire_mp",
     "rumble_de8": "#grenade_rumble",
     "fx_ed8": "#hash_1ae397a2f822f91f",
-    "fx_f00": "#hash_d11b6a553b5ab91",
+    "fx_f00": "#killstreaks/fx8_hellstorm_trail",
     "normalImpactSounds": "#grenade_explode_material"
 }

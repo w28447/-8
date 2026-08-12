@@ -4229,16 +4229,16 @@ function function_2b8f7067()
     {
         self.var_83867a22 = undefined;
         self.var_b6b6a5d9 = self.origin;
-        var_7607a546 = getclosesttacpoint( self.origin );
+        botnearesttacpoint = getclosesttacpoint( self.origin );
         
-        if ( !isdefined( var_7607a546 ) )
+        if ( !isdefined( botnearesttacpoint ) )
         {
             return;
         }
         
-        var_7607a546.searched = 1;
-        var_b43277fd = [ var_7607a546 ];
-        var_d56aeea7 = [ var_7607a546 ];
+        botnearesttacpoint.searched = 1;
+        var_b43277fd = [ botnearesttacpoint ];
+        var_d56aeea7 = [ botnearesttacpoint ];
         v_start_hardpoint_navmesh_collision = [];
         var_4a39f740 = [];
         self.var_77ae9678 = [];
@@ -4255,7 +4255,7 @@ function function_2b8f7067()
                     point.searched = 1;
                     var_d56aeea7[ var_d56aeea7.size ] = point;
                     
-                    if ( var_7607a546.region != point.region )
+                    if ( botnearesttacpoint.region != point.region )
                     {
                         if ( !array::contains( v_start_hardpoint_navmesh_collision, currentpoint ) )
                         {
@@ -4265,7 +4265,7 @@ function function_2b8f7067()
                         continue;
                     }
                     
-                    if ( !function_96c81b85( var_7607a546, point.origin + ( 0, 0, 60 ) ) )
+                    if ( !function_96c81b85( botnearesttacpoint, point.origin + ( 0, 0, 60 ) ) )
                     {
                         if ( !array::contains( var_4a39f740, currentpoint ) )
                         {
@@ -4856,9 +4856,9 @@ function function_2a24a928()
     }
     
     var_137299d = [];
-    var_7607a546 = getclosesttacpoint( self.origin );
+    botnearesttacpoint = getclosesttacpoint( self.origin );
     
-    if ( isdefined( var_7607a546 ) )
+    if ( isdefined( botnearesttacpoint ) )
     {
         foreach ( target in potentialtargets )
         {
@@ -4874,7 +4874,7 @@ function function_2a24a928()
                     continue;
                 }
                 
-                if ( function_96c81b85( var_7607a546, target.origin ) )
+                if ( function_96c81b85( botnearesttacpoint, target.origin ) )
                 {
                     var_137299d[ var_137299d.size ] = target;
                 }

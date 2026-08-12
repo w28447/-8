@@ -45,7 +45,7 @@
     "mainobjective": "spawnbeacon_objective",
     "hash_a9f4819c": "spawnbeacon_building",
     "hash_79efc1": "spawnbeacondestroyedenemy",
-    "shockrifledestructionfx": "fx#hash_416ab5cb13a9af8c",
+    "shockrifledestructionfx": "fx#explosions/fx8_exp_elec_equip_sm",
     "pickupaudio": "mpl_spawn_beacon_pickup_npc",
     "hash_6430812efad535c8:hash_c21bf0d0": "localized18#hash_6430812efad535c8",
     "ksmeleedamagemultiplier": 2,

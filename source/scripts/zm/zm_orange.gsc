@@ -765,14 +765,14 @@ function function_cf95fbb7()
 // Size: 0x19a
 function function_681c28c9()
 {
-    level.var_678333a6 = #"hash_11347f5077a17dcb";
+    level.var_678333a6 = #"maps/zm_office/fx8_barrier_buy_zmb";
     level._effect[ #"chest_light" ] = #"hash_1e8cb303d3103833";
     level._effect[ #"chest_light_closed" ] = #"hash_602f075818a2fb2e";
-    level._effect[ #"hash_2ff87d61167ea531" ] = #"hash_1eb426cfbfef7486";
-    level._effect[ #"hash_4048cb4967032c4a" ] = #"hash_7e272f1a9f143051";
+    level._effect[ #"hash_2ff87d61167ea531" ] = #"maps/zm_office/fx8_magicbox_marker";
+    level._effect[ #"hash_4048cb4967032c4a" ] = #"maps/zm_office/fx8_magicbox_marker_fl";
     level._effect[ #"lght_marker" ] = #"hash_7dec2fde8393c0f4";
-    level._effect[ #"lght_marker_flare" ] = #"hash_11347f5077a17dcb";
-    level._effect[ #"poltergeist_magicbox" ] = #"hash_11347f5077a17dcb";
+    level._effect[ #"lght_marker_flare" ] = #"maps/zm_office/fx8_barrier_buy_zmb";
+    level._effect[ #"poltergeist_magicbox" ] = #"maps/zm_office/fx8_barrier_buy_zmb";
     level._effect[ #"lght_marker_override" ] = #"zombie/fx_weapon_box_marker_zmb";
 }
 

@@ -1186,10 +1186,10 @@ function function_ba182aaa( var_5ea5c94d, ended_early )
         
         if ( ended_early )
         {
-            zm_sq_modules::function_2a94055d( #"hash_41a5c5168ffb2a97" );
-            zm_sq_modules::function_2a94055d( #"hash_400a481490a4e390" );
-            zm_sq_modules::function_2a94055d( #"hash_5562e324d230f057" );
-            zm_sq_modules::function_2a94055d( #"hash_41fae186552f1259" );
+            zm_sq_modules::end_soul_capture( #"hash_41a5c5168ffb2a97" );
+            zm_sq_modules::end_soul_capture( #"hash_400a481490a4e390" );
+            zm_sq_modules::end_soul_capture( #"hash_5562e324d230f057" );
+            zm_sq_modules::end_soul_capture( #"hash_41fae186552f1259" );
             level notify( #"main_quest_step_4_ended_early" );
         }
     #/
@@ -1482,7 +1482,7 @@ function function_6ae57d29( s_struct, ai_killed )
 // Size: 0x12c
 function function_3965c201( s_struct )
 {
-    zm_sq_modules::function_2a94055d( s_struct.script_noteworthy );
+    zm_sq_modules::end_soul_capture( s_struct.script_noteworthy );
     level flag::set( #"hash_27a2746eb30e61c" );
     util::delay( "end_of_round", undefined, &flag::clear, #"hash_27a2746eb30e61c" );
     s_portal = struct::get( s_struct.target );
@@ -1968,7 +1968,7 @@ function function_ad0eee44( str_element )
     
     mdl_artifact bobbing( ( 0, 0, 1 ), 2, 3 );
     level flag::wait_till( #"hash_317170e3689d18aa" + str_element );
-    zm_sq_modules::function_2a94055d( #"hash_34f827c2750a5a25" + str_element );
+    zm_sq_modules::end_soul_capture( #"hash_34f827c2750a5a25" + str_element );
     waitframe( 1 );
     
     if ( level flag::get( #"catalyst_spark_" + str_element + "_completed" ) )

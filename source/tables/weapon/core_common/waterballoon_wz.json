@@ -58,6 +58,6 @@
     "image_1048": "#ui_icon_inventory_eq_water_balloon",
     "fireRumble": "#defaultweapon_melee",
     "fx_ed8": "#hash_5ecb415812805fdb",
-    "fx_f00": "#hash_604da0fdbc9511cf",
+    "fx_f00": "#weapon/fx8_trail_balloon",
     "bounceImpactFX": "#grenade_bounce"
 }

@@ -1,7 +1,7 @@
 {
     "name": "#hash_4af80254146a4a0f",
-    "model": "#hash_35aea0ba09ae7544",
-    "unk20": "#hash_633d5fa5ec401cd7",
+    "model": "#veh_t8_mil_atv_recon_blk_militia",
+    "unk20": "#veh_t8_mil_atv_recon_dead_blk_militia",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [

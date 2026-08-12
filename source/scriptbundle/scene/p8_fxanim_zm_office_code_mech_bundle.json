@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_3afbcf94a65e5e97",
+                            "anim": "anim#p8_fxanim_zm_office_code_mech_init",
                             "entrytype": "anim"
                         }
                     ],
@@ -63,7 +63,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_7c27ecf84d7fd9de",
+                            "anim": "anim#p8_fxanim_zm_office_code_mech_01",
                             "entrytype": "anim"
                         }
                     ],
@@ -92,7 +92,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_7c27ebf84d7fd82b",
+                            "anim": "anim#p8_fxanim_zm_office_code_mech_02",
                             "entrytype": "anim"
                         }
                     ],
@@ -121,7 +121,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_7c27eaf84d7fd678",
+                            "anim": "anim#p8_fxanim_zm_office_code_mech_03",
                             "entrytype": "anim"
                         }
                     ],
@@ -150,7 +150,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_7c27f1f84d7fe25d",
+                            "anim": "anim#p8_fxanim_zm_office_code_mech_04",
                             "entrytype": "anim"
                         }
                     ],
@@ -179,7 +179,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_7c27f0f84d7fe0aa",
+                            "anim": "anim#p8_fxanim_zm_office_code_mech_05",
                             "entrytype": "anim"
                         }
                     ],
@@ -208,7 +208,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_7c27eff84d7fdef7",
+                            "anim": "anim#p8_fxanim_zm_office_code_mech_06",
                             "entrytype": "anim"
                         }
                     ],

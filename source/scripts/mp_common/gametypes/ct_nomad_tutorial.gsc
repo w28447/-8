@@ -35,7 +35,7 @@ function init()
 // Params 0
 // Checksum 0x2ef7c931, Offset: 0xe20
 // Size: 0x482
-function function_c9ff0dce()
+function player_spawned_callback()
 {
     self ct_utils::player_reset();
     self.overrideplayerdamage = &callback_player_damage;

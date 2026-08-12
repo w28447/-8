@@ -513,7 +513,7 @@ function function_a8024c77()
 // Size: 0x4c
 function function_c2237c03()
 {
-    self setmodel( #"hash_233df8109c680010" );
+    self setmodel( #"p8_fxanim_zm_esc_shockbox_on_mod" );
     self thread scene::play( #"p8_fxanim_zm_esc_shockbox_bundle", "Activated", self );
 }
 

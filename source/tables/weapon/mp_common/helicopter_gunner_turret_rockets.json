@@ -48,7 +48,7 @@
     "fireRumble": "#tank_fire_mp",
     "rumble_de8": "#grenade_rumble",
     "fx_bc8": "#weapon/fx_muz_chppr_vtol",
-    "fx_bd0": "#hash_164c32da69bb27cc",
+    "fx_bd0": "#weapon/fx8_muz_chppr_flash_3p",
     "fx_ed8": "#killstreaks/fx_predator_exp",
     "fx_f00": "#weapon/fx_trail_rpg",
     "normalImpactFX": "#bullet_xtreme_enter",

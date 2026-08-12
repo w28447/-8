@@ -5,11 +5,11 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_3aeaefe5c418adef",
+                            "anim": "anim#ai_t8_zm_mob_brutus_tesla_in",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "anim#hash_272b0bf7ae3fb76e",
+                            "anim": "anim#ai_t8_zm_mob_brutus_tesla_loop",
                             "entrytype": "anim"
                         }
                     ],
@@ -38,7 +38,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_68632e6c521ef1f4",
+                            "anim": "anim#ai_t8_zm_mob_brutus_tesla_out",
                             "entrytype": "anim"
                         }
                     ],

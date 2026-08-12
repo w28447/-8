@@ -37,7 +37,7 @@
     ],
     "sharedWeaponSounds": "#knife_zm_spknifeork",
     "viewmodel": [
-        "#hash_3e1eff3b458d4b76"
+        "#wpn_t8_wz_spknifeork_view"
     ],
     "worldModel": [
         "#wpn_t8_zm_spknifeork_world"

@@ -16,9 +16,9 @@
     "boards": [
         {
             "boardModel": "#p8_fxanim_zm_white_debris_buy_01",
-            "tearAnim": "#hash_15ccdb700d02339a",
-            "boardAnim": "#hash_30c200cf0697ffcb",
-            "staticAnim": "#hash_30c200cf0697ffcb",
+            "tearAnim": "#p8_fxanim_zm_white_debris_buy_01_clear",
+            "boardAnim": "#p8_fxanim_zm_white_debris_buy_01_idle",
+            "staticAnim": "#p8_fxanim_zm_white_debris_buy_01_idle",
             "repairEffect1Offset": "0 0 0",
             "repairEffect2Offset": "0 0 0",
             "minPause": 0.3,

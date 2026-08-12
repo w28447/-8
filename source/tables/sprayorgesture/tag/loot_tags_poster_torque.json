@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_poster_torque",
     "type": "#tag",
-    "material": "#hash_20c01fc846b6090e",
+    "material": "#vd/mtl_loot_ui_icon_tags_poster_torque",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_46d3456c3ac27c8c",

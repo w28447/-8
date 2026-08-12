@@ -2,7 +2,7 @@
     "piece2_detachmodel": "model#c_t8_zmb_dlc0_zombie_marauder_rarm1",
     "piece1_gibtag": "j_head",
     "hash_20a1cc0c": 1,
-    "piece1_gibfx": "fx#hash_72894650a04f70bf",
+    "piece1_gibfx": "fx#zm_ai/fx8_marauder_dest_weak_point_exp_generic",
     "hash_5e937f7f": 1,
     "configstringfiletype": "scriptbundle",
     "piece1_detachmodel": "model#c_t8_zmb_dlc0_zombie_marauder_helmet1",
@@ -16,7 +16,7 @@
     "piece1_gibeffecttag": "j_head",
     "piece2_gibeffecttag": "j_shouldertwist_ri",
     "piececount": 2,
-    "piece2_gibfx": "fx#hash_72894650a04f70bf",
+    "piece2_gibfx": "fx#zm_ai/fx8_marauder_dest_weak_point_exp_generic",
     "piece2_hitlocation": "right_arm_lower",
     "piece1_gibmodel": "model#c_t8_zmb_dlc0_zombie_marauder_helmet1",
     "hash_56d63213": "j_shoulder_ri"

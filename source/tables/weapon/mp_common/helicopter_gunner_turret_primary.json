@@ -50,7 +50,7 @@
     "image_e90": "#t7_hud_obit_gunship",
     "fireRumble": "#heavygun_fire",
     "fx_bc8": "#weapon/fx_muz_chppr_vtol",
-    "fx_bd0": "#hash_164c32da69bb27cc",
+    "fx_bd0": "#weapon/fx8_muz_chppr_flash_3p",
     "normalImpactFX": "#bullet_xtreme_enter",
     "normalImpactSounds": "#heavy_bullet_impact"
 }

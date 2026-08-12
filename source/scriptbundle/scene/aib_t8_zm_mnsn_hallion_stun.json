@@ -5,11 +5,11 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_28d0d7261e23e3f5",
+                            "anim": "anim#ai_t8_zm_mnsn_hallion_stun_intro",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "anim#hash_7116679a409ed587",
+                            "anim": "anim#ai_t8_zm_mnsn_hallion_stun_loop",
                             "entrytype": "anim"
                         }
                     ],
@@ -38,7 +38,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_3b748d3c78fcfde4",
+                            "anim": "anim#ai_t8_zm_mnsn_hallion_stun_outro",
                             "entrytype": "anim"
                         }
                     ],
@@ -67,7 +67,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_436570e4a6dcea4",
+                            "anim": "anim#ai_t8_zm_mnsn_hallion_stun_timeout",
                             "entrytype": "anim"
                         }
                     ],

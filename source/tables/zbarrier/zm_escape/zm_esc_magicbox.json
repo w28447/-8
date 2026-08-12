@@ -26,8 +26,8 @@
         },
         {
             "boardModel": "#p8_zm_esc_magic_box",
-            "tearAnim": "#hash_795a43ad40873a4d",
-            "boardAnim": "#hash_14a67b4d9c623c05",
+            "tearAnim": "#p8_fxanim_zm_esc_magic_box_arrive_anim",
+            "boardAnim": "#p8_fxanim_zm_esc_magic_box_leave_anim",
             "pauseAndRepeatRepSound": "#hash_1",
             "repairEffect1Offset": "0 0 0",
             "repairEffect2Offset": "0 0 0",
@@ -37,8 +37,8 @@
         },
         {
             "boardModel": "#p8_zm_esc_magic_box",
-            "tearAnim": "#hash_19ab6cf268c124e0",
-            "boardAnim": "#hash_1c81a9b7ed0fc33c",
+            "tearAnim": "#p8_fxanim_zm_esc_magic_box_open_anim",
+            "boardAnim": "#p8_fxanim_zm_esc_magic_box_close_anim",
             "pauseAndRepeatRepSound": "#hash_1",
             "repairEffect1Offset": "0 0 0",
             "repairEffect2Offset": "0 0 0",
@@ -70,8 +70,8 @@
         },
         {
             "boardModel": "#p8_zm_esc_magic_box",
-            "tearAnim": "#hash_611f208f61fa91e4",
-            "boardAnim": "#hash_3bb897cd21daa07d",
+            "tearAnim": "#p8_fxanim_zm_esc_magic_box_unlock_anim",
+            "boardAnim": "#p8_fxanim_zm_esc_magic_box_lock_anim",
             "pauseAndRepeatRepSound": "#hash_1",
             "repairEffect1Offset": "0 0 0",
             "repairEffect2Offset": "0 0 0",

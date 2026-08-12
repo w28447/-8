@@ -51,7 +51,7 @@
     "inventoryIconZm": "#ui_icon_equipment_menu_concussion_grenade",
     "hudIcon": "#t7_hud_mp_inventory_smoke",
     "image_e90": "#t7_hud_mp_inventory_smoke",
-    "fx_ed8": "#hash_6d0b462715d6d1e8",
+    "fx_ed8": "#maps/zm_escape/fx8_alcatraz_brut_gas",
     "bounceImpactFX": "#grenade_bounce",
     "bounceImpactSounds": "#smoke_bounce"
 }

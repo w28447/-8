@@ -350,7 +350,7 @@ function getenemies()
 // Params 0
 // Checksum 0x2c4ef1c8, Offset: 0xf20
 // Size: 0x10, Type: bool
-function function_d12cde1c()
+function emp_initialized()
 {
     return isdefined( level.emp_shared );
 }
@@ -361,7 +361,7 @@ function function_d12cde1c()
 // Size: 0x16a, Type: bool
 function enemyempactive()
 {
-    if ( !function_d12cde1c() )
+    if ( !emp_initialized() )
     {
         return false;
     }

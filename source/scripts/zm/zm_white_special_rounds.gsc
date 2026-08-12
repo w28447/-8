@@ -148,7 +148,7 @@ function function_2ae2045c()
         {
             waitresult = level waittill( #"buffed" );
             
-            if ( zm_audio::function_63f85f39( #"nova_effect", #"react" ) )
+            if ( zm_audio::does_category_exist( #"nova_effect", #"react" ) )
             {
                 b_played = waitresult.ai zm_audio::function_ef9ba49c( #"nova_effect" );
             }

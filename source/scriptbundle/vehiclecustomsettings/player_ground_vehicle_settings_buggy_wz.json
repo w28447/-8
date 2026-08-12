@@ -1,7 +1,7 @@
 {
     "lightgroups_1_slots": [
         {
-            "fx": "fx#hash_77e6518b91fa9e98",
+            "fx": "fx#vehicle/fx8_headlight_arav",
             "tag": "tag_fx_iff_front"
         },
         {

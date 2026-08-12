@@ -105,8 +105,8 @@
     "image_e90": "#t7_icon_weapon_special_crossbow_kf",
     "image_e98": "#t7_icon_weapon_special_crossbow_bayonet_kf",
     "image_1048": "#t7_icon_weapon_hero_outrider_kf",
-    "fx_ed8": "#hash_51b33bb22601397b",
-    "fx_f00": "#hash_6ef0f1647e3ba536",
+    "fx_ed8": "#zm_ai/fx8_gegenees_spear_impact",
+    "fx_f00": "#zm_ai/fx8_gegenees_spear_trail_gold",
     "normalImpactSounds": "#ww_crossbow_impact",
     "bounceImpactSounds": "#ww_crossbow_impact",
     "dudImpactSounds": "#ww_crossbow_impact"

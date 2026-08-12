@@ -106,7 +106,7 @@
     "image_e98": "#t7_icon_weapon_special_crossbow_bayonet_kf",
     "image_1048": "#t7_icon_weapon_hero_outrider_kf",
     "fireRumble": "#crossbow_fire",
-    "fx_f00": "#hash_75fbc74ecece09dd",
+    "fx_f00": "#maps/zm_towers/fx8_boss_attack_eye_trail_sm",
     "normalImpactSounds": "#ww_crossbow_impact",
     "bounceImpactSounds": "#ww_crossbow_impact",
     "dudImpactSounds": "#ww_crossbow_impact"

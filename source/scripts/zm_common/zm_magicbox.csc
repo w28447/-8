@@ -20,7 +20,7 @@ function autoexec __init__system__()
 // Size: 0x4a4
 function __init__()
 {
-    level._effect[ #"hash_2bba72fdcc5508b5" ] = #"hash_3b22162a96d9389";
+    level._effect[ #"hash_2bba72fdcc5508b5" ] = #"zombie/fx8_magicbox_opened";
     level._effect[ #"chest_light_closed" ] = #"zombie/fx_weapon_box_closed_glow_zmb";
     level._effect[ #"t8_leave_fx" ] = #"hash_5f376e9395e16666";
     level._effect[ #"hash_246062f68a34e289" ] = #"hash_55cc904817de4a07";

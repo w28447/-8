@@ -7,7 +7,7 @@
     "vmtype": "client",
     "name": "fxd8_zm_char_stoker_body",
     "hash_a0d91763": "j_spine4",
-    "hash_637c58a55751d9e6:hash_c7a3c7dd": "fx#hash_637c58a55751d9e6",
-    "hash_185cdaabe8b1c840:hash_bae031ea": "fx#hash_185cdaabe8b1c840",
+    "zm_ai/fx8_stoker_amb_torso:hash_c7a3c7dd": "fx#zm_ai/fx8_stoker_amb_torso",
+    "zm_ai/fx8_stoker_amb_shovel:hash_bae031ea": "fx#zm_ai/fx8_stoker_amb_shovel",
     "hash_edb57500": "tag_fx_foot_l"
 }

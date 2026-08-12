@@ -409,10 +409,10 @@ function function_1e84c767()
     function_9a022fbc( "close" );
     
     /#
-        level.var_63c19b1b = getdvarint( #"scr_skip_ct_tutorial", 0 ) == 1;
+        level.skiptutorial = getdvarint( #"scr_skip_ct_tutorial", 0 ) == 1;
     #/
     
-    if ( !( isdefined( level.var_63c19b1b ) && level.var_63c19b1b ) )
+    if ( !( isdefined( level.skiptutorial ) && level.skiptutorial ) )
     {
         gamedifficulty = function_1aeaebae();
         level thread function_f8f94589( gamedifficulty );

@@ -500,7 +500,7 @@ fx,#_t6/misc/fx_zombie_cola_revive_on
 fx,#hash_1695e8ac20dd5629
 fx,#_t6/bio/player/fx_footstep_dust
 fx,#zombie/fx_bul_flesh_head_nochunks_zmb
-fx,#hash_1e43d43c6586fcb5
+fx,#zombie/fx8_magicbox_marker_fl
 fx,#zombie/fx_blood_torso_explo_zmb
 fx,#zombie/fx_bul_flesh_neck_spurt_zmb
 fx,#_t6/misc/fx_zombie_cola_dtap_on
@@ -549,7 +549,7 @@ client_fx,#zombie/fx8_perk_altar_symbol_ambient_mule_kick
 client_fx,#zombie/fx8_perk_altar_symbol_ambient_dying_wish
 client_fx,#maps/zm_escape/fx8_flame_wall_64x64
 client_fx,#hash_37257517a8fd29e
-client_fx,#hash_3b22162a96d9389
+client_fx,#zombie/fx8_magicbox_opened
 client_fx,#zombie/fx8_perk_altar_symbol_ambient_widows_wine
 client_fx,#zm_weapons/fx8_aat_elec_exp
 client_fx,#zm_weapons/fx8_aat_elec_eye

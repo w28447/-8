@@ -61,7 +61,7 @@ function __init__()
     level._effect[ #"portal_activate" ] = #"maps/zm_escape/fx8_energy_portal_activate";
     level._effect[ #"hash_1e033a5d335f9c80" ] = #"hash_23bccae9728cc69";
     level._effect[ #"tugboat_surround" ] = #"hash_263ef2a7714f7e0";
-    level._effect[ #"tugboat_fx" ] = #"hash_2ab0dbe0ca737540";
+    level._effect[ #"tugboat_fx" ] = #"maps/zm_escape/fx8_ghost_boat";
     level._effect[ #"tugboat_spawn_fx" ] = #"hash_584c98e347b6f907";
     level._effect[ #"shower_circle_80" ] = #"hash_1a2cfde50dc2ab2f";
     level._effect[ #"shower_circle_98" ] = #"hash_1a297fe50dbf9f3e";
@@ -72,7 +72,7 @@ function __init__()
     level._effect[ #"ghost_death_fx" ] = #"hash_680b356c3283464f";
     level._effect[ #"ghost_spawn_fx" ] = #"hash_7c6c9fc790a994bb";
     level._effect[ #"ghost_despawn_fx" ] = #"hash_652d04bb8b685664";
-    level._effect[ #"ghost_spoon_fx" ] = #"hash_4f551af60c2eb5d";
+    level._effect[ #"ghost_spoon_fx" ] = #"maps/zm_escape/fx8_ghoul_spoon";
 }
 
 // Namespace zm_escape_paschal_s3/zm_escape_paschal_s3

@@ -944,11 +944,11 @@ function private function_3d752709( enemy, target )
     
     facingvec = anglestoforward( target.angles );
     enemyvec = enemy.origin - target.origin;
-    var_3e3c8075 = ( enemyvec[ 0 ], enemyvec[ 1 ], 0 );
-    var_c2ee8451 = ( facingvec[ 0 ], facingvec[ 1 ], 0 );
-    var_3e3c8075 = vectornormalize( var_3e3c8075 );
-    var_c2ee8451 = vectornormalize( var_c2ee8451 );
-    enemydot = vectordot( var_c2ee8451, var_3e3c8075 );
+    enemyyawvec = ( enemyvec[ 0 ], enemyvec[ 1 ], 0 );
+    facingyawvec = ( facingvec[ 0 ], facingvec[ 1 ], 0 );
+    enemyyawvec = vectornormalize( enemyyawvec );
+    facingyawvec = vectornormalize( facingyawvec );
+    enemydot = vectordot( facingyawvec, enemyyawvec );
     
     if ( enemydot < 0 )
     {

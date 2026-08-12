@@ -26,7 +26,7 @@
     "skidSpeedMin": 100,
     "skidSpeedMax": 600,
     "peelSpeedMax": 600,
-    "model": "#hash_5b2c34b661af79e1",
+    "model": "#veh_t8_mil_helicopter_light_gunner_warzone_tan_dest",
     "deathModel": "#veh_t8_mil_helicopter_light_debris_fuselage",
     "soundDef": "#veh_heli_wz",
     "compassIconMaterial": "#hash_169458fb2df20b0e",

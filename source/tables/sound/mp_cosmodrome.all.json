@@ -18020,13 +18020,13 @@
         {
             "value": 168,
             "next": 65535,
-            "name": "#hash_3d3ccfc2be063ea9",
+            "name": "#pfx_fire_sml",
             "sequence": 0,
             "cullDistance": 900,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3d3ccfc2be063ea9",
+                    "name": "#pfx_fire_sml",
                     "assetId": "#pfx/fire/small/fire_small_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_cosmodrome.all",
                     "assetIdRelease": "#mp_cosmodrome.all",

@@ -58,9 +58,9 @@
     "fx_be8": "#hash_4c51dd2438351a87",
     "fx_ee0": "#weapon/fx_hero_grvity_spk_grnd_hit_1p",
     "underwaterExplosionSurfaceFX": [
-        "#hash_6ada54108943d70e",
+        "#impacts/fx8_hero_impact_grvity_spk_water",
         "#hash_6128f8fb069e15e1",
-        "#hash_783e35c3cf1ae7dd"
+        "#impacts/fx8_hero_impact_grvity_spk_water_deep"
     ],
     "viewPersistentEffectSet": "#weapon_hero_gravityspikes_1p_persist",
     "normalImpactFX": "#hero_gravityspikes_explosion",

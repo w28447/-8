@@ -72,7 +72,7 @@
     "image_e98": "#t7_icon_weapon_special_crossbow_bayonet_kf",
     "image_1048": "#t7_icon_weapon_hero_outrider_kf",
     "fireRumble": "#crossbow_fire",
-    "fx_f00": "#hash_1fdca22d949f33df",
+    "fx_f00": "#weapon/fx8_trail_crossbow_impaler",
     "viewPersistentEffectSet": "#hash_64bdd1c73b61b539",
     "normalImpactFX": "#knife_large_enter",
     "bounceImpactFX": "#crossbow_enter",

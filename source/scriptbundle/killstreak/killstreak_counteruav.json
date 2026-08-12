@@ -102,7 +102,7 @@
     "name": "killstreak_counteruav",
     "ksweaponreloadtime": 1,
     "hash_c28c2429": 30,
-    "ksexplosionfx": "fx#hash_38106a2c86a4b5f5",
+    "ksexplosionfx": "fx#killstreaks/fx8_cuav_exp",
     "ksexplosioninnerdamage": 350,
     "hash_ed4e0bcc": 300,
     "hash_2f1567fb": 200,

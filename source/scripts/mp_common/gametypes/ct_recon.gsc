@@ -67,7 +67,7 @@ function function_6e336363( predictedspawn )
     
     if ( level.ctdifficulty == 0 )
     {
-        self ct_recon_tutorial::function_c9ff0dce();
+        self ct_recon_tutorial::player_spawned_callback();
         return;
     }
     

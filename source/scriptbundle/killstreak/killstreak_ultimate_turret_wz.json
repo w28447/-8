@@ -127,7 +127,7 @@
     "hash_d4f45bfd": 3000,
     "hash_533663fb": 6000,
     "hash_bd3080e0": 6000,
-    "shockrifledestructionfx": "fx#hash_416ab5cb13a9af8c",
+    "shockrifledestructionfx": "fx#explosions/fx8_exp_elec_equip_sm",
     "hash_7135d43f": 200,
     "hash_e773a429": "requestultturret",
     "kshealth": 1500,

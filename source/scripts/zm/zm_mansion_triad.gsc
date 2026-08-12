@@ -489,12 +489,12 @@ function cleanup_step_3( var_5ea5c94d, ended_early )
     
     if ( ended_early )
     {
-        zm_sq_modules::function_2a94055d( "soul_capture_kp1" );
-        zm_sq_modules::function_2a94055d( "soul_capture_kp2" );
-        zm_sq_modules::function_2a94055d( "soul_capture_kp3" );
-        zm_sq_modules::function_2a94055d( "soul_capture_kp1_halfway" );
-        zm_sq_modules::function_2a94055d( "soul_capture_kp2_halfway" );
-        zm_sq_modules::function_2a94055d( "soul_capture_kp3_halfway" );
+        zm_sq_modules::end_soul_capture( "soul_capture_kp1" );
+        zm_sq_modules::end_soul_capture( "soul_capture_kp2" );
+        zm_sq_modules::end_soul_capture( "soul_capture_kp3" );
+        zm_sq_modules::end_soul_capture( "soul_capture_kp1_halfway" );
+        zm_sq_modules::end_soul_capture( "soul_capture_kp2_halfway" );
+        zm_sq_modules::end_soul_capture( "soul_capture_kp3_halfway" );
     }
 }
 
@@ -589,7 +589,7 @@ function cleanup_step_4( var_5ea5c94d, ended_early )
     
     if ( ended_early )
     {
-        zm_sq_modules::function_2a94055d( "soul_capture_forest" );
+        zm_sq_modules::end_soul_capture( "soul_capture_forest" );
         level flag::set( #"spawn_zombies" );
         level flag::set( #"zombie_drop_powerups" );
     }
@@ -1277,7 +1277,7 @@ function function_138b784e( var_f0e6c7a2, ent )
             mdl_mark_lion delete();
         }
         
-        zm_sq_modules::function_2a94055d( #"soul_capture_kp1" );
+        zm_sq_modules::end_soul_capture( #"soul_capture_kp1" );
         s_goal = struct::get( "kp1_halfway" );
         
         if ( isdefined( level.var_fbcb1d5b ) )
@@ -1320,7 +1320,7 @@ function function_3d90aae2( var_f0e6c7a2, ent )
     if ( level.var_7f30bc18 >= n_souls_required )
     {
         level.var_7f30bc18 = 0;
-        zm_sq_modules::function_2a94055d( #"soul_capture_kp1_halfway" );
+        zm_sq_modules::end_soul_capture( #"soul_capture_kp1_halfway" );
         s_goal = struct::get( "kp1_end" );
         
         if ( isdefined( level.var_fbcb1d5b ) )
@@ -1370,7 +1370,7 @@ function function_25d21cdb( var_f0e6c7a2, ent )
             mdl_mark_cobra delete();
         }
         
-        zm_sq_modules::function_2a94055d( #"soul_capture_kp2" );
+        zm_sq_modules::end_soul_capture( #"soul_capture_kp2" );
         s_goal = struct::get( "kp2_halfway" );
         
         if ( isdefined( level.var_abe1b67c ) )
@@ -1413,7 +1413,7 @@ function function_49798eb9( var_f0e6c7a2, ent )
     if ( level.var_6d7e18b3 >= n_souls_required )
     {
         level.var_6d7e18b3 = 0;
-        zm_sq_modules::function_2a94055d( #"soul_capture_kp2_halfway" );
+        zm_sq_modules::end_soul_capture( #"soul_capture_kp2_halfway" );
         s_goal = struct::get( "kp2_end" );
         
         if ( isdefined( level.var_abe1b67c ) )
@@ -1463,7 +1463,7 @@ function function_28082147( var_f0e6c7a2, ent )
             mdl_mark_wolf delete();
         }
         
-        zm_sq_modules::function_2a94055d( #"soul_capture_kp3" );
+        zm_sq_modules::end_soul_capture( #"soul_capture_kp3" );
         s_goal = struct::get( "kp3_halfway" );
         
         if ( isdefined( level.var_c22f75e6 ) )
@@ -1506,7 +1506,7 @@ function function_60bda2cf( var_f0e6c7a2, ent )
     if ( level.var_3224a1fd >= n_souls_required )
     {
         level.var_3224a1fd = 0;
-        zm_sq_modules::function_2a94055d( #"soul_capture_kp3_halfway" );
+        zm_sq_modules::end_soul_capture( #"soul_capture_kp3_halfway" );
         s_goal = struct::get( #"kp3_end" );
         
         if ( isdefined( level.var_c22f75e6 ) )
@@ -1576,7 +1576,7 @@ function function_b570f926( var_f0e6c7a2, ent )
     
     if ( level.n_forest >= var_c61e686c )
     {
-        zm_sq_modules::function_2a94055d( #"soul_capture_forest" );
+        zm_sq_modules::end_soul_capture( #"soul_capture_forest" );
         level flag::set( #"forest_done" );
         level thread function_3d151222( #"knight_trap", #"defend_comp" );
     }

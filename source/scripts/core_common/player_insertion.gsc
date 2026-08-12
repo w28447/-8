@@ -97,7 +97,7 @@ function function_1e4302d0( value, index )
 // Params 1
 // Checksum 0xcc6c4d5b, Offset: 0xbf0
 // Size: 0x17a
-function function_3ca86964( var_1d83d08d )
+function function_3ca86964( line_seg )
 {
     var_6024133d = getentarray( "map_corner", "targetname" );
     
@@ -112,7 +112,7 @@ function function_3ca86964( var_1d83d08d )
     o_b = var_6024133d[ 1 ].origin;
     mins = ( min( o_a[ 0 ], o_b[ 0 ] ), min( o_a[ 1 ], o_b[ 1 ] ), -150000 );
     maxs = ( max( o_a[ 0 ], o_b[ 0 ] ), max( o_a[ 1 ], o_b[ 1 ] ), 150000 );
-    return function_24531a26( var_1d83d08d.start, var_1d83d08d.end, mins, maxs );
+    return function_24531a26( line_seg.start, line_seg.end, mins, maxs );
 }
 
 // Namespace player_insertion/player_insertion
@@ -185,12 +185,12 @@ function function_d53a8c5b( insertion, fly_over_point, var_59526dd5, offset )
     direction = anglestoforward( var_872f085f );
     direction = vectornormalize( direction );
     var_7c712437 = fly_over_point + anglestoright( var_872f085f ) * offset;
-    var_1d83d08d = { #start:var_7c712437 + direction * -150000, #end:var_7c712437 + direction * 150000 };
-    result = function_3ca86964( var_1d83d08d );
+    line_seg = { #start:var_7c712437 + direction * -150000, #end:var_7c712437 + direction * 150000 };
+    result = function_3ca86964( line_seg );
     midpoint = ( result.start + result.end ) / 2;
-    var_1d83d08d.start = function_fd3c1bcc( midpoint, var_1d83d08d.start, result.start );
-    var_1d83d08d.end = function_fd3c1bcc( midpoint, var_1d83d08d.end, result.end );
-    fly_path( insertion, var_1d83d08d, var_7c712437, var_59526dd5 );
+    line_seg.start = function_fd3c1bcc( midpoint, line_seg.start, result.start );
+    line_seg.end = function_fd3c1bcc( midpoint, line_seg.end, result.end );
+    fly_path( insertion, line_seg, var_7c712437, var_59526dd5 );
     insertion flagsys::set( #"hash_4e5fc66b9144a5c8" );
 }
 
@@ -198,17 +198,17 @@ function function_d53a8c5b( insertion, fly_over_point, var_59526dd5, offset )
 // Params 1, eflags: 0x4
 // Checksum 0xe790e68e, Offset: 0x12e0
 // Size: 0x28a
-function private function_9ddb4115( var_1d83d08d )
+function private function_9ddb4115( line_seg )
 {
-    assert( isstruct( var_1d83d08d ) );
-    assert( isdefined( var_1d83d08d.start ) );
-    assert( isdefined( var_1d83d08d.end ) );
+    assert( isstruct( line_seg ) );
+    assert( isdefined( line_seg.start ) );
+    assert( isdefined( line_seg.end ) );
     
     if ( isdefined( level.deathcircles ) && level.deathcircles.size > 0 )
     {
         initcircle = level.deathcircles[ 0 ];
-        newstart = var_1d83d08d.start;
-        toend = vectornormalize( var_1d83d08d.end - var_1d83d08d.start );
+        newstart = line_seg.start;
+        toend = vectornormalize( line_seg.end - line_seg.start );
         
         for ( var_164fe5c9 = distance2dsquared( newstart, initcircle.origin ); var_164fe5c9 > initcircle.radius * initcircle.radius ; var_164fe5c9 = var_c820832 )
         {
@@ -221,8 +221,8 @@ function private function_9ddb4115( var_1d83d08d )
             }
         }
         
-        var_1d83d08d.start = newstart;
-        var_1b8e09d2 = var_1d83d08d.end;
+        line_seg.start = newstart;
+        var_1b8e09d2 = line_seg.end;
         tostart = toend * -1;
         
         for ( var_164fe5c9 = distance2dsquared( var_1b8e09d2, initcircle.origin ); var_164fe5c9 > initcircle.radius * initcircle.radius ; var_164fe5c9 = var_c820832 )
@@ -236,7 +236,7 @@ function private function_9ddb4115( var_1d83d08d )
             }
         }
         
-        var_1d83d08d.end = var_1b8e09d2;
+        line_seg.end = var_1b8e09d2;
     }
 }
 
@@ -244,7 +244,7 @@ function private function_9ddb4115( var_1d83d08d )
 // Params 4
 // Checksum 0xf54d3e4b, Offset: 0x1578
 // Size: 0x74c
-function fly_path( insertion, var_1d83d08d, fly_over_point, var_59526dd5 )
+function fly_path( insertion, line_seg, fly_over_point, var_59526dd5 )
 {
     assert( isstruct( insertion ) );
     var_872f085f = ( 0, var_59526dd5, 0 );
@@ -253,11 +253,11 @@ function fly_path( insertion, var_1d83d08d, fly_over_point, var_59526dd5 )
     
     if ( isdefined( getgametypesetting( #"hash_82c01ef004ff0a3" ) ) && getgametypesetting( #"hash_82c01ef004ff0a3" ) )
     {
-        function_9ddb4115( var_1d83d08d );
+        function_9ddb4115( line_seg );
     }
     
-    var_72a7a8ee = function_ea1ad421( insertion, var_1d83d08d.end, var_1d83d08d.start );
-    var_309554a1 = function_ea1ad421( insertion, var_1d83d08d.start, var_1d83d08d.end );
+    var_72a7a8ee = function_ea1ad421( insertion, line_seg.end, line_seg.start );
+    var_309554a1 = function_ea1ad421( insertion, line_seg.start, line_seg.end );
     var_7dea5d79 = isdefined( getgametypesetting( #"wzplayerinsertionstartoffset" ) ) ? getgametypesetting( #"wzplayerinsertionstartoffset" ) : 5000;
     var_c7ac9056 = isdefined( getgametypesetting( #"wzplayerinsertionendoffset" ) ) ? getgametypesetting( #"wzplayerinsertionendoffset" ) : 15000;
     var_4c8131f2 = var_72a7a8ee + var_7dea5d79 * direction;
@@ -271,8 +271,8 @@ function fly_path( insertion, var_1d83d08d, fly_over_point, var_59526dd5 )
         if ( getdvarint( #"scr_insertion_debug", 0 ) == 1 )
         {
             offset = ( 0, 0, 300 );
-            debug_sphere( var_1d83d08d.start + 2 * offset, 45, ( 0, 1, 1 ) );
-            debug_sphere( var_1d83d08d.end + 2 * offset, 45, ( 1, 1, 0 ) );
+            debug_sphere( line_seg.start + 2 * offset, 45, ( 0, 1, 1 ) );
+            debug_sphere( line_seg.end + 2 * offset, 45, ( 1, 1, 0 ) );
             debug_sphere( fly_over_point, 75, ( 1, 1, 1 ) );
             debug_sphere( var_72a7a8ee, 75, ( 1, 0, 1 ) );
             debug_sphere( var_309554a1, 75, ( 0, 1, 0 ) );

@@ -73,7 +73,7 @@ function function_d0ad09c5( effect )
 // Params 0
 // Checksum 0x18ea68fd, Offset: 0x10e0
 // Size: 0x48a
-function function_c9ff0dce()
+function player_spawned_callback()
 {
     level endon( #"combattraining_logic_finished" );
     

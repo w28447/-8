@@ -10,7 +10,7 @@
     "spawnInfluencers1": "#none",
     "spawnInfluencers2": "#none",
     "scriptBundleSettings": "#settings_towers_boss_soul_ball_zm",
-    "deathFx": "#hash_741c8bd24c43fc77",
+    "deathFx": "#maps/zm_towers/fx8_boss_attack_spear_exp",
     "deathFxTag": "tag_body",
     "deathFxSound": "#veh_raps_explode",
     "unk11f4": [

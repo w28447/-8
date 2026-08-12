@@ -73,7 +73,7 @@
     "fireRumble": "#defaultweapon_fire",
     "fx_bc8": "#hash_41ec10ff09debe0b",
     "fx_bd0": "#hash_41e504ff09d88af9",
-    "fx_ed8": "#hash_374a9f6cf9f9420e",
+    "fx_ed8": "#zm_weapons/fx8_www_impact",
     "fx_f00": "#hash_5d8233ecf44eb12c",
     "viewPersistentEffectSet": "#hash_3dac8e41f79bb6ca",
     "worldPersistentEffectSet": "#hash_3da68241f79736b8"

@@ -13,7 +13,7 @@ model,#hash_46505a92cb73b1a
 model,#hash_4b5ec5fe982d09c
 model,#hash_59e7b96affebe30
 model,#c_t8_zmb_3rdclass_male_body1_g_rlegoff
-model,#hash_600a6dc11b478de
+model,#p8_zm_zod_vase_flower_round_01
 model,#p8_cos_dest_electrical_boxes_base_03_lid
 model,#hash_700358264ae5024
 model,#hash_7efca0a68e01810
@@ -123,7 +123,7 @@ model,#hash_37fc145c986c596c
 model,#hash_38c62ebce661868e
 model,#hash_38c62fbce6618841
 model,#p8_cos_dest_electrical_boxes_base_01_lid
-model,#hash_3b6297efd9e4b148
+model,#veh_t8_civ_suv_police_attach
 model,#c_t8_zmb_dlc2_zombie_male_head5
 model,#c_t8_zmb_dlc2_zombie_male_head4
 model,#c_t8_zmb_dlc2_zombie_male_head1
@@ -163,7 +163,7 @@ model,#hash_46e33c3fb407c7f4
 model,#p8_zm_crafting_table_alchemy_jar_03_bare
 model,#p8_fxanim_mp_zmuseum_zod_magic_box_mod
 model,#p8_mp_bomb_crate_whole_destroyed
-model,#hash_4903f1d2feb8e6ce
+model,#veh_t8_civ_suv_dest_attach
 model,#hash_49cd16c53ebe7919
 model,#p8_chain_set_32_large_rust_01_sml
 model,#hash_4cab15f241c874ee
@@ -257,7 +257,7 @@ model,#hash_6e6b9ee454d68a53
 model,#p7_box_copy_paper_stack
 model,#p8_zm_zod_mule_kick_perk_totem
 model,#c_t8_zmb_ofc_zombie_male_s_llegoff
-model,#hash_702a1cea2c2699ba
+model,#veh_t8_civ_van_utility_dest_attach
 model,#p8_sta_desk_clutter_paper_pile_book
 model,#p8_fxanim_mp_zmuseum_moon_jump_pad_mod
 model,#p7_fxp_debris_newspaper_02
@@ -368,7 +368,7 @@ xanim,#p8_fxanim_zm_red_shrine_hemera_anim
 xanim,#o_veh_t7_civ_sedan_midsize_police_explode
 xanim,#hash_6777b4b7b311e8ef
 xanim,#hash_6ca1d1c7d11e5b60
-xanim,#hash_6f59ffe77f150034
+xanim,#p8_fxanim_zm_zod_magic_box_close_anim
 xanim,#hash_71b99411fd94de31
 xanim,#hash_78b5ff6bf6c15f06
 xanim,#hash_7bdeb276f71988e7
@@ -416,7 +416,7 @@ scriptbundle,#c_t8_zmb_3rdclass_male_gib_def
 scriptbundle,#p8_fxanim_zm_red_shrine_hemera_bundle
 string,#OBJECTIVES_COOP_WAYPOINT_HACK
 objective,#hash_4a72ffa3664320bc
-fx,#hash_1cbaa2a759708ece
+fx,#blood/fx8_blood_cam_gib_spray_zm
 fx,#hash_311a865a91014b22
 fx,#hash_3c9948ab313a6483
 fx,#hash_4c24e997afad36e0
@@ -552,7 +552,7 @@ soundalias,#hash_3b66638c6f40e4d3
 soundalias,#hash_3b66818c6f4117cd
 soundalias,#hash_3b6983b084cfef53
 soundalias,#hash_3cdf0b09bee5252f
-soundalias,#hash_3d3ccfc2be063ea9
+soundalias,#pfx_fire_sml
 soundalias,#hash_3d440a22f402438e
 soundalias,#exp_barrel_flux_r
 soundalias,#exp_barrel_flux_l
@@ -705,11 +705,11 @@ soundalias,#hash_7e17e533381a8506
 soundalias,#hash_7eb51f1a0028ab28
 soundalias,#hash_7f118ea3a4874268
 soundalias,#exp_barrel_dist
-client_fx,#hash_87232422fb9d690
+client_fx,#destruct/fx_dest_box_copy_paper_ream
 client_fx,#destruct/fx_dest_window_glass_edge
 client_fx,#tools/fx_null
 client_fx,#hash_1ae00e8028cfd32f
-client_fx,#hash_1cbaa2a759708ece
+client_fx,#blood/fx8_blood_cam_gib_spray_zm
 client_fx,#ui/fx_dom_cap_indicator_neutral_r120
 client_fx,#ui/fx_dom_marker_neutral_r120
 client_fx,#destruct/fx_dest_paper
@@ -728,12 +728,12 @@ client_fx,#ui/fx_dom_cap_indicator_team_r120
 client_fx,#hash_4569d689ddd022c5
 client_fx,#hash_497c195765fb35ca
 client_fx,#hash_4c24e997afad36e0
-client_fx,#hash_4d885739142015b7
+client_fx,#snow/fx8_snow_ground_wet_rattle
 client_fx,#hash_557c578ea2bce5e0
 client_fx,#hash_57034716c105e41e
 client_fx,#hash_59422cff58693587
 client_fx,#ui/fx_dom_marker_team_r120
-client_fx,#hash_67a4679378e51bf7
+client_fx,#dirt/fx8_dust_ground_rattle
 client_fx,#hash_6e9457d0315fa754
 client_fx,#hash_75cd52998d041c70
 client_fx,#hash_7b2e4176bb94d5e8

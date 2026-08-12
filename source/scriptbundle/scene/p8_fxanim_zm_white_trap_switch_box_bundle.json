@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_2115cfb06584e6a3",
+                            "anim": "anim#p8_fxanim_zm_white_trap_switch_box_idle",
                             "entrytype": "anim"
                         }
                     ],
@@ -34,7 +34,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_615b029edefb0759",
+                            "anim": "anim#p8_fxanim_zm_white_trap_switch_box_open",
                             "entrytype": "anim"
                         }
                     ],

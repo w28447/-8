@@ -228,7 +228,7 @@ function setup_clocks()
 // Params 2
 // Checksum 0xd75a20fd, Offset: 0x1bc8
 // Size: 0x14c
-function function_39549562( var_7b192260, var_f8561a50 )
+function function_39549562( str_capture, var_f8561a50 )
 {
     level flag::wait_till( "all_players_spawned" );
     
@@ -239,7 +239,7 @@ function function_39549562( var_7b192260, var_f8561a50 )
     var_f8561a50 clientfield::set( "" + #"seeing_stone_glow", 1 );
     s_result = self waittill( #"death" );
     level notify( #"hash_483503537a553500", { #e_player:s_result.attacker } );
-    zm_sq_modules::function_3f808d3d( var_7b192260 );
+    zm_sq_modules::function_3f808d3d( str_capture );
     var_f8561a50 clientfield::set( "" + #"seeing_stone_glow", 0 );
     
     /#
@@ -347,7 +347,7 @@ function function_9ce2b677( var_f0e6c7a2, ent )
     if ( level.var_239e2979 >= n_souls_required )
     {
         level flag::set( "bedroom_charged" );
-        zm_sq_modules::function_2a94055d( var_f0e6c7a2.script_string );
+        zm_sq_modules::end_soul_capture( var_f0e6c7a2.script_string );
         mdl_gazing_stone_main_hall = getent( "gazing_stone_main_hall", "targetname" );
         mdl_gazing_stone_main_hall clientfield::set( "" + #"hash_6babc320ed9a08f1", 1 );
         
@@ -423,7 +423,7 @@ function function_2c902b77( var_f0e6c7a2, ent )
     if ( level.var_be779a9e >= n_souls_required )
     {
         level flag::set( "library_charged" );
-        zm_sq_modules::function_2a94055d( var_f0e6c7a2.script_string );
+        zm_sq_modules::end_soul_capture( var_f0e6c7a2.script_string );
         mdl_gazing_stone_library = getent( "gazing_stone_library", "targetname" );
         mdl_gazing_stone_library clientfield::set( "" + #"hash_6babc320ed9a08f1", 1 );
         
@@ -508,7 +508,7 @@ function function_da937c94( var_f0e6c7a2, ent )
     if ( level.var_a5be39a5 >= n_souls_required )
     {
         level flag::set( "cellar_charged" );
-        zm_sq_modules::function_2a94055d( var_f0e6c7a2.script_string );
+        zm_sq_modules::end_soul_capture( var_f0e6c7a2.script_string );
         mdl_gazing_stone_cellar = getent( "gazing_stone_cellar", "targetname" );
         mdl_gazing_stone_cellar clientfield::set( "" + #"hash_6babc320ed9a08f1", 1 );
         

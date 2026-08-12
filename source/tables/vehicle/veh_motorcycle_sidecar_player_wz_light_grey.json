@@ -10,7 +10,7 @@
     "spawnerType": "#none",
     "spawnInfluencers1": "#turret_friendly",
     "spawnInfluencers2": "#none",
-    "exhaustFx": "#hash_2820f95e6a0a53e3",
+    "exhaustFx": "#vehicle/fx8_exhaust_sidecar",
     "exhaustFxTag1": "tag_fx_exhaust",
     "unk13c0": "#hash_7f5e7eb5169fb5c1",
     "unk13c8": "tag_body_animate",

@@ -244,15 +244,15 @@ function activateturret()
     
     if ( false )
     {
-        var_e454da90 = getweapon( #"ultimate_turret_deploy" );
+        deploy_weapon = getweapon( #"ultimate_turret_deploy" );
         
-        if ( var_e454da90 == level.weaponnone )
+        if ( deploy_weapon == level.weaponnone )
         {
             return false;
         }
         
-        player giveweapon( var_e454da90 );
-        slot = player gadgetgetslot( var_e454da90 );
+        player giveweapon( deploy_weapon );
+        slot = player gadgetgetslot( deploy_weapon );
         player gadgetpowerreset( slot );
         player gadgetpowerset( slot, 100 );
         waitresult = player waittilltimeout( 0.1, #"death" );
@@ -269,7 +269,7 @@ function activateturret()
             return false;
         }
         
-        player switchtoweapon( var_e454da90 );
+        player switchtoweapon( deploy_weapon );
         player setoffhandvisible( 1 );
         waitresult = player waittill( #"death", #"weapon_change" );
         
@@ -294,18 +294,18 @@ function activateturret()
     
     waitresult = player waittill( #"ultimate_turret_deployed", #"death", #"weapon_change", #"weapon_fired" );
     
-    if ( waitresult._notify === "weapon_change" && waitresult.last_weapon === var_e454da90 && waitresult.weapon === level.weaponnone )
+    if ( waitresult._notify === "weapon_change" && waitresult.last_weapon === deploy_weapon && waitresult.weapon === level.weaponnone )
     {
         waitresult = player waittilltimeout( 2, #"ultimate_turret_deployed", #"death" );
     }
-    else if ( waitresult._notify === "weapon_change" && waitresult.weapon === var_e454da90 )
+    else if ( waitresult._notify === "weapon_change" && waitresult.weapon === deploy_weapon )
     {
         waitresult = player waittill( #"ultimate_turret_deployed", #"death", #"weapon_fired" );
     }
     
     if ( isdefined( player ) && false )
     {
-        player takeweapon( var_e454da90 );
+        player takeweapon( deploy_weapon );
     }
     
     if ( waitresult._notify === "weapon_fired" )

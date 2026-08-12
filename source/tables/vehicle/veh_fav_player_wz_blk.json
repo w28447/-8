@@ -10,7 +10,7 @@
     "spawnerType": "#none",
     "spawnInfluencers1": "#none",
     "spawnInfluencers2": "#none",
-    "exhaustFx": "#hash_7001434c848dbbd8",
+    "exhaustFx": "#vehicle/fx8_exhaust_arav",
     "exhaustFxTag1": "tag_fx_exhaust_left",
     "exhaustFxTag2": "tag_fx_exhaust_right",
     "unk13c0": "#hash_7f2bbdd1a97ec92c",

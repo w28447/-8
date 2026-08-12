@@ -1374,7 +1374,7 @@ material,#$smaa_pass3
 material,#$smaa_pass2
 material,#$smaa_pass1
 material,#$smaa_pass4
-material,#hash_75db8bb5319f761a
+material,#output_hdr_sdr_mask
 material,#mcp/sonar_weakpoint
 material,#mc/hud_outline_model_calpha_scriptint
 material,#postfx_dragonstrike

@@ -487,11 +487,11 @@ function private function_3d752709( enemy, target )
     
     facingvec = anglestoforward( target.angles );
     enemyvec = enemy.origin - target.origin;
-    var_3e3c8075 = ( enemyvec[ 0 ], enemyvec[ 1 ], 0 );
-    var_c2ee8451 = ( facingvec[ 0 ], facingvec[ 1 ], 0 );
-    var_3e3c8075 = vectornormalize( var_3e3c8075 );
-    var_c2ee8451 = vectornormalize( var_c2ee8451 );
-    enemydot = vectordot( var_c2ee8451, var_3e3c8075 );
+    enemyyawvec = ( enemyvec[ 0 ], enemyvec[ 1 ], 0 );
+    facingyawvec = ( facingvec[ 0 ], facingvec[ 1 ], 0 );
+    enemyyawvec = vectornormalize( enemyyawvec );
+    facingyawvec = vectornormalize( facingyawvec );
+    enemydot = vectordot( facingyawvec, enemyyawvec );
     
     if ( enemydot < 0 )
     {
@@ -1478,8 +1478,8 @@ function private function_124486ee( delay )
     chaos_missile = self;
     missile_owner = chaos_missile.var_52334e8c;
     blast_radius = 128;
-    var_83f35abe = 45;
-    var_6927cfa0 = 40;
+    blast_inner_damage = 45;
+    blast_outer_damage = 40;
     var_c45ef84c = 60 * 60;
     
     if ( delay > 0 )
@@ -1498,7 +1498,7 @@ function private function_124486ee( delay )
         explosion_point = chaos_missile.origin;
         function_44e3e0d1( explosion_point + ( 0, 0, 18 ) );
         util::wait_network_frame();
-        radiusdamage( explosion_point + ( 0, 0, 18 ), blast_radius, var_83f35abe, var_6927cfa0, e_blightfather, "MOD_UNKNOWN", w_weapon );
+        radiusdamage( explosion_point + ( 0, 0, 18 ), blast_radius, blast_inner_damage, blast_outer_damage, e_blightfather, "MOD_UNKNOWN", w_weapon );
         
         if ( isdefined( chaos_missile ) )
         {

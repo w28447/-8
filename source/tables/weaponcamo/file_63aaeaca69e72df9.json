@@ -2598,10 +2598,10 @@
                             "material": "#hash_96bc7e7ac44774f"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -2816,10 +2816,10 @@
                             "material": "#hash_96bc7e7ac44774f"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -3034,10 +3034,10 @@
                             "material": "#hash_96bc7e7ac44774f"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -3666,7 +3666,7 @@
                             "material": "#hash_96bc7e7ac44774f"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -3681,7 +3681,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -3932,7 +3932,7 @@
                             "material": "#hash_96bc7e7ac44774f"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -3947,7 +3947,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -4198,7 +4198,7 @@
                             "material": "#hash_96bc7e7ac44774f"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -4213,7 +4213,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -4830,7 +4830,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -4839,7 +4839,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -4857,10 +4857,10 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -5176,7 +5176,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -5185,7 +5185,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -5203,10 +5203,10 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -5522,7 +5522,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -5531,7 +5531,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -5549,10 +5549,10 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -5868,7 +5868,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -5877,7 +5877,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -5895,10 +5895,10 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -6214,7 +6214,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -6223,7 +6223,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -6241,10 +6241,10 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -6560,7 +6560,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -6569,7 +6569,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -6587,10 +6587,10 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -6906,7 +6906,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -6915,7 +6915,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -6933,10 +6933,10 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -7252,7 +7252,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -7261,7 +7261,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -7279,10 +7279,10 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -7598,7 +7598,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -7607,7 +7607,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -7625,10 +7625,10 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -8100,7 +8100,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -8112,7 +8112,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -8132,7 +8132,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -8140,7 +8140,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -8468,7 +8468,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -8477,7 +8477,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -8492,7 +8492,7 @@
                             "material": "#hash_18beec53fe78e666"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -8504,7 +8504,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -9185,7 +9185,7 @@
                             "material": "#hash_96bc7e7ac44774f"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -9200,7 +9200,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -9445,7 +9445,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -9460,7 +9460,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -9963,7 +9963,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -9978,7 +9978,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -10003,7 +10003,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -10015,7 +10015,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -10848,7 +10848,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -10863,7 +10863,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -10888,7 +10888,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -10900,7 +10900,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -11925,7 +11925,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -11940,7 +11940,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -11965,7 +11965,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -11977,7 +11977,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -12874,7 +12874,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -12889,7 +12889,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -12914,7 +12914,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -12926,7 +12926,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -15783,7 +15783,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -15798,7 +15798,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -15823,7 +15823,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -15835,7 +15835,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -16456,7 +16456,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -16471,7 +16471,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -16496,7 +16496,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -16508,7 +16508,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -17129,7 +17129,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -17144,7 +17144,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -17169,7 +17169,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -17181,7 +17181,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -18447,7 +18447,7 @@
                             "material": "#hash_96bc7e7ac44774f"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -18462,7 +18462,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -19225,7 +19225,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -19240,7 +19240,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -19265,7 +19265,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -19277,7 +19277,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -19898,7 +19898,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -19913,7 +19913,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -19938,7 +19938,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -19950,7 +19950,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -20287,7 +20287,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -20302,7 +20302,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -20529,7 +20529,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -20544,7 +20544,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -20569,7 +20569,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -20581,7 +20581,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -22194,7 +22194,7 @@
                             "material": "#hash_96bc7e7ac44774f"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_60ab0d6a727bd442"
@@ -22206,7 +22206,7 @@
                             "material": "#hash_5874a5f8082e359b"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -22215,7 +22215,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -22227,7 +22227,7 @@
                             "material": "#hash_27cc92326871dafe"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_76c20ea9690863c8"
@@ -22524,7 +22524,7 @@
                             "material": "#hash_96bc7e7ac44774f"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_60ab0d6a727bd442"
@@ -22536,7 +22536,7 @@
                             "material": "#hash_5874a5f8082e359b"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -22545,7 +22545,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -22557,7 +22557,7 @@
                             "material": "#hash_27cc92326871dafe"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_76c20ea9690863c8"
@@ -22854,7 +22854,7 @@
                             "material": "#hash_96bc7e7ac44774f"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_60ab0d6a727bd442"
@@ -22866,7 +22866,7 @@
                             "material": "#hash_5874a5f8082e359b"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -22875,7 +22875,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -22887,7 +22887,7 @@
                             "material": "#hash_27cc92326871dafe"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_76c20ea9690863c8"
@@ -23184,7 +23184,7 @@
                             "material": "#hash_96bc7e7ac44774f"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_60ab0d6a727bd442"
@@ -23196,7 +23196,7 @@
                             "material": "#hash_5874a5f8082e359b"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -23205,7 +23205,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -23217,7 +23217,7 @@
                             "material": "#hash_27cc92326871dafe"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_76c20ea9690863c8"
@@ -23514,7 +23514,7 @@
                             "material": "#hash_96bc7e7ac44774f"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_60ab0d6a727bd442"
@@ -23526,7 +23526,7 @@
                             "material": "#hash_5874a5f8082e359b"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -23535,7 +23535,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -23547,7 +23547,7 @@
                             "material": "#hash_27cc92326871dafe"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_76c20ea9690863c8"
@@ -23853,7 +23853,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -23865,7 +23865,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -23889,10 +23889,10 @@
                             "material": "#hash_76c20ea9690863c8"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -24215,7 +24215,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -24227,7 +24227,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -24251,10 +24251,10 @@
                             "material": "#hash_76c20ea9690863c8"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -24577,7 +24577,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -24589,7 +24589,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -24613,10 +24613,10 @@
                             "material": "#hash_76c20ea9690863c8"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -24939,7 +24939,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -24951,7 +24951,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -24975,10 +24975,10 @@
                             "material": "#hash_76c20ea9690863c8"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -25301,7 +25301,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -25313,7 +25313,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -25337,10 +25337,10 @@
                             "material": "#hash_76c20ea9690863c8"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -25663,7 +25663,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_76c20ea9690863c8"
@@ -25675,7 +25675,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -25693,7 +25693,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -25702,7 +25702,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -26025,7 +26025,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_76c20ea9690863c8"
@@ -26037,7 +26037,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -26055,7 +26055,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -26064,7 +26064,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -26387,7 +26387,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_76c20ea9690863c8"
@@ -26399,7 +26399,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -26417,7 +26417,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -26426,7 +26426,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -26749,7 +26749,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_76c20ea9690863c8"
@@ -26761,7 +26761,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -26779,7 +26779,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -26788,7 +26788,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -27111,7 +27111,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_76c20ea9690863c8"
@@ -27123,7 +27123,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -27141,7 +27141,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -27150,7 +27150,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -28071,7 +28071,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_60ab0d6a727bd442"
@@ -28083,7 +28083,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -28092,7 +28092,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -28288,10 +28288,10 @@
                             "material": "#hash_69b7947e820e9f3e"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -29246,7 +29246,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -29261,7 +29261,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -29286,7 +29286,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -29298,7 +29298,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -29643,7 +29643,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -29658,7 +29658,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -29683,7 +29683,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -29695,7 +29695,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -30040,7 +30040,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -30055,7 +30055,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -30080,7 +30080,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -30092,7 +30092,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -30437,7 +30437,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -30452,7 +30452,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -30477,7 +30477,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -30489,7 +30489,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -30834,7 +30834,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -30849,7 +30849,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -30874,7 +30874,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -30886,7 +30886,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -31446,7 +31446,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -31461,7 +31461,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -31486,7 +31486,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -31498,7 +31498,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -31838,10 +31838,10 @@
                             "material": "#hash_69b7947e820e9f3e"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -32024,10 +32024,10 @@
                             "material": "#hash_69b7947e820e9f3e"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -32914,7 +32914,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -32923,7 +32923,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -32938,7 +32938,7 @@
                             "material": "#hash_18beec53fe78e666"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -32950,7 +32950,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -33308,7 +33308,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -33317,7 +33317,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -33332,7 +33332,7 @@
                             "material": "#hash_18beec53fe78e666"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -33344,7 +33344,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -33702,7 +33702,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -33711,7 +33711,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -33726,7 +33726,7 @@
                             "material": "#hash_18beec53fe78e666"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -33738,7 +33738,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -34096,7 +34096,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -34105,7 +34105,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -34120,7 +34120,7 @@
                             "material": "#hash_18beec53fe78e666"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -34132,7 +34132,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -34490,7 +34490,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -34499,7 +34499,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -34514,7 +34514,7 @@
                             "material": "#hash_18beec53fe78e666"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -34526,7 +34526,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -35055,7 +35055,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -35067,7 +35067,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -35087,7 +35087,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -35095,7 +35095,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -35456,7 +35456,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -35468,7 +35468,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -35488,7 +35488,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -35496,7 +35496,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -36163,7 +36163,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_60ab0d6a727bd442"
@@ -36175,7 +36175,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -36184,7 +36184,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -36365,7 +36365,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_60ab0d6a727bd442"
@@ -36377,7 +36377,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -36386,7 +36386,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -36567,7 +36567,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_60ab0d6a727bd442"
@@ -36579,7 +36579,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -36588,7 +36588,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -36769,7 +36769,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_60ab0d6a727bd442"
@@ -36781,7 +36781,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -36790,7 +36790,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -37036,7 +37036,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -37051,7 +37051,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -37076,7 +37076,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -37088,7 +37088,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -37847,7 +37847,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -37859,7 +37859,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -37879,7 +37879,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -37887,7 +37887,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -38248,7 +38248,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -38260,7 +38260,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -38280,7 +38280,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -38288,7 +38288,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -38649,7 +38649,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -38661,7 +38661,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -38681,7 +38681,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -38689,7 +38689,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -39017,7 +39017,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -39026,7 +39026,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -39041,7 +39041,7 @@
                             "material": "#hash_18beec53fe78e666"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -39053,7 +39053,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -39411,7 +39411,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -39420,7 +39420,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -39435,7 +39435,7 @@
                             "material": "#hash_18beec53fe78e666"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -39447,7 +39447,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -39805,7 +39805,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -39814,7 +39814,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -39829,7 +39829,7 @@
                             "material": "#hash_18beec53fe78e666"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -39841,7 +39841,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -40199,7 +40199,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -40208,7 +40208,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -40223,7 +40223,7 @@
                             "material": "#hash_18beec53fe78e666"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -40235,7 +40235,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -40593,7 +40593,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -40602,7 +40602,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -40617,7 +40617,7 @@
                             "material": "#hash_18beec53fe78e666"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -40629,7 +40629,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -40987,7 +40987,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -40996,7 +40996,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -41011,7 +41011,7 @@
                             "material": "#hash_18beec53fe78e666"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -41023,7 +41023,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -41378,7 +41378,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_60ab0d6a727bd442"
@@ -41390,7 +41390,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -41399,7 +41399,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -41595,10 +41595,10 @@
                             "material": "#hash_69b7947e820e9f3e"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -42553,7 +42553,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -42568,7 +42568,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -42593,7 +42593,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -42605,7 +42605,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -42950,7 +42950,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -42965,7 +42965,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -42990,7 +42990,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -43002,7 +43002,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -43347,7 +43347,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -43362,7 +43362,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -43387,7 +43387,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -43399,7 +43399,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -43744,7 +43744,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -43759,7 +43759,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -43784,7 +43784,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -43796,7 +43796,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -44141,7 +44141,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -44156,7 +44156,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -44181,7 +44181,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -44193,7 +44193,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -44753,7 +44753,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -44768,7 +44768,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -44793,7 +44793,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -44805,7 +44805,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -45145,10 +45145,10 @@
                             "material": "#hash_69b7947e820e9f3e"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -45331,10 +45331,10 @@
                             "material": "#hash_69b7947e820e9f3e"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -46560,7 +46560,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_60ab0d6a727bd442"
@@ -46572,7 +46572,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -46581,7 +46581,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -46762,7 +46762,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_60ab0d6a727bd442"
@@ -46774,7 +46774,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -46783,7 +46783,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -46964,7 +46964,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_60ab0d6a727bd442"
@@ -46976,7 +46976,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -46985,7 +46985,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -47166,7 +47166,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_60ab0d6a727bd442"
@@ -47178,7 +47178,7 @@
                             "material": "#hash_124eb379118b8498"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -47187,7 +47187,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -47388,7 +47388,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -47403,7 +47403,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -47428,7 +47428,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -47440,7 +47440,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -48517,7 +48517,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -48532,7 +48532,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -48557,7 +48557,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -48569,7 +48569,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -49454,7 +49454,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -49469,7 +49469,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -49494,7 +49494,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -49506,7 +49506,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -49973,7 +49973,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -49988,7 +49988,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -50013,7 +50013,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -50025,7 +50025,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -50602,7 +50602,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -50617,7 +50617,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -50642,7 +50642,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -50654,7 +50654,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -51359,7 +51359,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -51374,7 +51374,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -51399,7 +51399,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -51411,7 +51411,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -52244,7 +52244,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -52259,7 +52259,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -52284,7 +52284,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -52296,7 +52296,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -53858,7 +53858,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -53870,7 +53870,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -53890,7 +53890,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -53898,7 +53898,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -54226,7 +54226,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -54235,7 +54235,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -54250,7 +54250,7 @@
                             "material": "#hash_18beec53fe78e666"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -54262,7 +54262,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -54620,7 +54620,7 @@
                             "material": "#hash_96bc6e7ac44759c"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt"
                         },
                         {
                             "material": "#hash_96bc7e7ac44774f"
@@ -54629,7 +54629,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover"
                         },
                         {
                             "material": "#hash_65f2fad4dbe88db9"
@@ -54644,7 +54644,7 @@
                             "material": "#hash_18beec53fe78e666"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket"
                         },
                         {
                             "material": "#hash_255e617ccbaf8e23"
@@ -54656,7 +54656,7 @@
                             "material": "#hash_6824cb98de3d5447"
                         },
                         {
-                            "material": "#hash_56947f72271d16df"
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight"
                         },
                         {
                             "material": "#hash_163710e4dbb6b9c7"
@@ -56595,7 +56595,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -56610,7 +56610,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -56635,7 +56635,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -56647,7 +56647,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -57162,7 +57162,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -57177,7 +57177,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -57202,7 +57202,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -57214,7 +57214,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -58069,7 +58069,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -58084,7 +58084,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -58109,7 +58109,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -58121,7 +58121,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -59185,7 +59185,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -59200,7 +59200,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -59225,7 +59225,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -59237,7 +59237,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -60304,7 +60304,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -60319,7 +60319,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -60344,7 +60344,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -60356,7 +60356,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],
@@ -60823,7 +60823,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_66af08723fa1dbbd",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_bolt",
                             "mask": "#$white"
                         },
                         {
@@ -60838,7 +60838,7 @@
                             "material": "#hash_181ca9c3597755ee"
                         },
                         {
-                            "material": "#hash_702e93efecac3010",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket_cover",
                             "mask": "#$white"
                         },
                         {
@@ -60863,7 +60863,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_7156c38ef09259e8",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_pocket",
                             "mask": "#$white"
                         },
                         {
@@ -60875,7 +60875,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_56947f72271d16df",
+                            "material": "#mc/mtl_wpn_t8_zm_smg_primary_sight",
                             "mask": "#$white"
                         }
                     ],

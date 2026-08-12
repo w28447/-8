@@ -84,12 +84,12 @@ function function_198818fe()
         }
     }
     
-    if ( function_63f85f39( self.subarchetype ) )
+    if ( does_category_exist( self.subarchetype ) )
     {
         function_ef9ba49c( self.subarchetype, n_delay );
     }
     
-    if ( function_63f85f39( self.archetype ) )
+    if ( does_category_exist( self.archetype ) )
     {
         function_ef9ba49c( self.archetype, n_delay );
     }
@@ -454,7 +454,7 @@ function function_dd19aefa( death )
 {
     str_subcat = death + "_" + self zm_vo::function_82f9bc9f();
     
-    if ( !function_63f85f39( #"kill", str_subcat ) )
+    if ( !does_category_exist( #"kill", str_subcat ) )
     {
         return;
     }
@@ -583,12 +583,12 @@ function is_explosive_weapon( weapon )
 // Size: 0x94
 function function_bb6bf99c( ai )
 {
-    if ( isdefined( ai.subarchetype ) && function_63f85f39( "kill", ai.subarchetype ) )
+    if ( isdefined( ai.subarchetype ) && does_category_exist( "kill", ai.subarchetype ) )
     {
         return ai.subarchetype;
     }
     
-    if ( isdefined( ai.archetype ) && function_63f85f39( "kill", ai.archetype ) )
+    if ( isdefined( ai.archetype ) && does_category_exist( "kill", ai.archetype ) )
     {
         return ai.archetype;
     }
@@ -1352,7 +1352,7 @@ function create_and_play_dialog( category, subcategory, force_variant, b_wait_if
             return false;
         }
         
-        if ( !function_63f85f39( s_overrides.str_category, s_overrides.str_subcategory ) )
+        if ( !does_category_exist( s_overrides.str_category, s_overrides.str_subcategory ) )
         {
             /#
                 if ( getdvarint( #"debug_audio", 0 ) )
@@ -1378,7 +1378,7 @@ function create_and_play_dialog( category, subcategory, force_variant, b_wait_if
     var_3c443e97 = subcategory;
     subcategory = function_9c83876e( category, subcategory );
     
-    if ( !function_63f85f39( category, subcategory ) )
+    if ( !does_category_exist( category, subcategory ) )
     {
         /#
             if ( getdvarint( #"debug_audio", 0 ) )
@@ -1538,7 +1538,7 @@ function function_43f17c2( category, subcategory )
         level.var_e1b27bb2[ category ] = array( level.var_e1b27bb2[ category ] );
     }
     
-    if ( function_63f85f39( category, subcategory ) && level.sndplayervox[ category ][ subcategory ].var_7aadcbd7 )
+    if ( does_category_exist( category, subcategory ) && level.sndplayervox[ category ][ subcategory ].var_7aadcbd7 )
     {
         if ( level.var_e1b27bb2[ category ][ subcategory ] === level.round_number )
         {
@@ -1633,7 +1633,7 @@ function function_9c83876e( category, subcategory )
     {
         var_9c4a66e5 = subcategory + "_first";
         
-        if ( function_63f85f39( category, var_9c4a66e5 ) )
+        if ( does_category_exist( category, var_9c4a66e5 ) )
         {
             if ( !isdefined( level.var_79bbe09a[ category ][ var_9c4a66e5 ] ) )
             {
@@ -2036,7 +2036,7 @@ function function_1b438b7b()
 // Params 2
 // Checksum 0xb9febb49, Offset: 0x5218
 // Size: 0x76, Type: bool
-function function_63f85f39( category, subcategory )
+function does_category_exist( category, subcategory )
 {
     if ( isdefined( level.sndplayervox ) )
     {
@@ -2111,7 +2111,7 @@ function function_e2bd90b5( category, subcategory, variant )
     {
         return 1;
     }
-    else if ( function_63f85f39( category, subcategory ) )
+    else if ( does_category_exist( category, subcategory ) )
     {
         vox = level.sndplayervox[ category ][ subcategory ];
         

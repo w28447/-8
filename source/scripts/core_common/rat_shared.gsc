@@ -577,7 +577,7 @@
     // Params 1
     // Checksum 0xdcd38f4, Offset: 0x1b38
     // Size: 0x64, Type: dev
-    function function_d04e8397( name )
+    function playsceneinternal( name )
     {
         level flagsys::set( "<dev string:x342>" );
         level scene::play( name );
@@ -592,7 +592,7 @@
     {
         if ( isdefined( params.name ) )
         {
-            level thread function_d04e8397( params.name );
+            level thread playsceneinternal( params.name );
             return;
         }
         

@@ -16,10 +16,10 @@
     "deathFxTag": "tag_motor_steer_animate",
     "deathFxSound": "#hash_2149db0c502305e3",
     "unk1498": [
-        "#hash_45212649bf4162b3",
-        "#hash_45212649bf4162b3",
-        "#hash_45212649bf4162b3",
-        "#hash_45212649bf4162b3"
+        "#light/fx_light_headlight_pbr",
+        "#light/fx_light_headlight_pbr",
+        "#light/fx_light_headlight_pbr",
+        "#light/fx_light_headlight_pbr"
     ],
     "unk14b8": [
         "tag_fx_turret_spotlight_left",
@@ -37,7 +37,7 @@
     "skidSpeedMax": 650,
     "peelSpeedMax": 600,
     "model": "#veh_t8_mil_boat_pbr_wz_police",
-    "deathModel": "#hash_365e9341b959f242",
+    "deathModel": "#veh_t8_mil_boat_pbr_wz_police_dead",
     "soundDef": "#veh_pbr",
     "compassIconMaterial": "#hash_29aba9deeb2d3a03",
     "destructibleDef": "#hash_2be18be28cd2649a",

@@ -301,7 +301,7 @@ function private step_3_setup( var_a276c861 )
             function_887ad605();
             zm_sq_modules::function_3f808d3d( level.var_f9f50915.script_noteworthy );
             level waittill( #"hash_17332cf9062484a6" );
-            zm_sq_modules::function_2a94055d( level.var_f9f50915.script_noteworthy );
+            zm_sq_modules::end_soul_capture( level.var_f9f50915.script_noteworthy );
             wait 1;
             level.var_f9f50915.mdl_chest stoploopsound( 1 );
             level.var_f9f50915.mdl_chest thread scene::play( #"p8_fxanim_zm_zod_kraken_chest_bundle", "close", level.var_f9f50915.mdl_chest );
@@ -337,7 +337,7 @@ function private step_3_cleanup( var_a276c861, var_19e802fa )
 {
     if ( var_19e802fa )
     {
-        zm_sq_modules::function_2a94055d( level.var_f9f50915.script_noteworthy );
+        zm_sq_modules::end_soul_capture( level.var_f9f50915.script_noteworthy );
     }
     
     level.var_2e2dab8d = randomint( level.var_b26f906a.size );

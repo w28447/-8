@@ -8630,7 +8630,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_2929cca754583514",
+                    "value": "#p8_zm_esc_door_barricade_01",
                     "unk1a": true
                 },
                 {
@@ -17678,7 +17678,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_2b0c1cbd6a0fb4c1",
+                    "value": "#p8_zm_esc_desk_small_drawer",
                     "unk1a": true
                 },
                 {
@@ -27555,7 +27555,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_2569cbc33e55bcbd",
+                    "value": "#p8_zm_esc_packasplat_engine",
                     "unk1a": true
                 },
                 {
@@ -108912,7 +108912,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_6f2522399ac0b6da"
+                    "value": "#p8_zm_esc_book_zombie"
                 },
                 {
                     "key": "origin",

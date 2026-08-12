@@ -23589,13 +23589,13 @@
         {
             "value": 197,
             "next": 222,
-            "name": "#hash_3d3ccfc2be063ea9",
+            "name": "#pfx_fire_sml",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3d3ccfc2be063ea9",
+                    "name": "#pfx_fire_sml",
                     "assetId": "#pfx/fire/small/fire_small_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",

@@ -53,7 +53,7 @@ function __init__()
 {
     level.start_chest_name = "start_chest";
     level._effect[ #"hash_2ff87d61167ea531" ] = #"zombie/fx8_magicbox_marker";
-    level._effect[ #"hash_4048cb4967032c4a" ] = #"hash_1e43d43c6586fcb5";
+    level._effect[ #"hash_4048cb4967032c4a" ] = #"zombie/fx8_magicbox_marker_fl";
     level._effect[ #"lght_marker" ] = #"zombie/fx_weapon_box_marker_zmb";
     level._effect[ #"lght_marker_flare" ] = #"zombie/fx_weapon_box_marker_fl_zmb";
     level._effect[ #"poltergeist" ] = #"zombie/fx_barrier_buy_zmb";
@@ -2643,7 +2643,7 @@ function treasure_chest_give_weapon( weapon, var_75c86f89, e_chest )
         playsoundatposition( #"mus_raygun_stinger", ( 0, 0, 0 ) );
         str_vo_line = #"raygun";
         
-        if ( weapon.name == #"ray_gun_mk2" && zm_audio::function_63f85f39( #"magicbox", #"raygun_mk2" ) )
+        if ( weapon.name == #"ray_gun_mk2" && zm_audio::does_category_exist( #"magicbox", #"raygun_mk2" ) )
         {
             str_vo_line = #"raygun_mk2";
         }
@@ -2667,14 +2667,14 @@ function treasure_chest_give_weapon( weapon, var_75c86f89, e_chest )
     }
     else if ( weapon === getweapon( #"special_ballisticknife_t8_dw" ) )
     {
-        if ( zm_audio::function_63f85f39( #"magicbox", #"ballistic" ) )
+        if ( zm_audio::does_category_exist( #"magicbox", #"ballistic" ) )
         {
             str_vo_line = #"ballistic";
         }
     }
     else if ( weapon === getweapon( #"special_crossbow_t8" ) )
     {
-        if ( zm_audio::function_63f85f39( #"magicbox", #"reaver_crossbow" ) )
+        if ( zm_audio::does_category_exist( #"magicbox", #"reaver_crossbow" ) )
         {
             str_vo_line = #"reaver_crossbow";
         }

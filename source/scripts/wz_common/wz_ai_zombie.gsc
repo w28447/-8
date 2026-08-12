@@ -2921,11 +2921,11 @@ function function_b184324d( origin, radius, var_5e8ea34a = 0, dist_from_boundary
     x = var_5e8ea34a + cos( theta ) * ( radius - var_5e8ea34a ) * randomfloatrange( 0, 1 );
     y = var_5e8ea34a + sin( theta ) * ( radius - var_5e8ea34a ) * randomfloatrange( 0, 1 );
     point = ( origin[ 0 ] + x, origin[ 1 ] + y, origin[ 2 ] );
-    var_d1a33279 = groundtrace( point + ( 0, 0, 8 ), point + ( 0, 0, -100000 ), 0, undefined )[ #"position" ];
+    point_on_ground = groundtrace( point + ( 0, 0, 8 ), point + ( 0, 0, -100000 ), 0, undefined )[ #"position" ];
     
-    if ( isdefined( var_d1a33279 ) )
+    if ( isdefined( point_on_ground ) )
     {
-        return getclosestpointonnavmesh( var_d1a33279, 50, dist_from_boundary );
+        return getclosestpointonnavmesh( point_on_ground, 50, dist_from_boundary );
     }
     
     return undefined;

@@ -54,7 +54,7 @@ function init()
 // Params 0
 // Checksum 0x647be0be, Offset: 0x14b0
 // Size: 0x284
-function function_c9ff0dce()
+function player_spawned_callback()
 {
     if ( self.team == #"allies" )
     {

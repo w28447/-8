@@ -18,7 +18,7 @@ function init_shared()
         ir_strobe::init_shared();
         level.chopper_fx[ #"damage" ][ #"light_smoke" ] = "destruct/fx8_atk_chppr_smk_trail";
         level.chopper_fx[ #"damage" ][ #"heavy_smoke" ] = "destruct/fx8_atk_chppr_exp_trail";
-        level._effect[ #"qrdrone_prop" ] = #"hash_6cd811fe548313ca";
+        level._effect[ #"qrdrone_prop" ] = #"_t7/killstreaks/fx_drgnfire_rotor_wash_runner";
         level._effect[ #"heli_guard_light" ][ #"friendly" ] = #"killstreaks/fx_sc_lights_grn";
         level._effect[ #"heli_guard_light" ][ #"enemy" ] = #"killstreaks/fx_sc_lights_red";
         level._effect[ #"heli_comlink_light" ][ #"common" ] = #"killstreaks/fx_drone_hunter_lights";
