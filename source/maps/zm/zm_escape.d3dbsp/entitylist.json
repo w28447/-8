@@ -47015,7 +47015,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_198f330af9b83c6b",
+                    "value": "#amb_tree_wind",
                     "unk1a": true
                 }
             ]
@@ -133130,7 +133130,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_540f4c73c126c2f9",
+                    "value": "#p6_zm_al_audio_headset_icon",
                     "unk1a": true
                 },
                 {
@@ -133184,7 +133184,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_540f4c73c126c2f9",
+                    "value": "#p6_zm_al_audio_headset_icon",
                     "unk1a": true
                 },
                 {
@@ -133239,7 +133239,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_540f4c73c126c2f9",
+                    "value": "#p6_zm_al_audio_headset_icon",
                     "unk1a": true
                 },
                 {
@@ -133294,7 +133294,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_540f4c73c126c2f9",
+                    "value": "#p6_zm_al_audio_headset_icon",
                     "unk1a": true
                 },
                 {
@@ -133349,7 +133349,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_28aa6a42c4c18b30",
+                    "value": "#c_zom_inmate_g_rarmspawn",
                     "unk1a": true
                 },
                 {
@@ -133397,7 +133397,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_540f4c73c126c2f9",
+                    "value": "#p6_zm_al_audio_headset_icon",
                     "unk1a": true
                 },
                 {
@@ -133452,7 +133452,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_540f4c73c126c2f9",
+                    "value": "#p6_zm_al_audio_headset_icon",
                     "unk1a": true
                 },
                 {
@@ -133507,7 +133507,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_540f4c73c126c2f9",
+                    "value": "#p6_zm_al_audio_headset_icon",
                     "unk1a": true
                 },
                 {
@@ -136169,7 +136169,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_7e443e53031236",
+                    "value": "#wpn_t7_pistol_triton_world",
                     "unk1a": true
                 },
                 {
@@ -138040,7 +138040,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -138103,7 +138103,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -138166,7 +138166,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -138229,7 +138229,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -138292,7 +138292,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -138355,7 +138355,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -138418,7 +138418,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -138656,7 +138656,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -138719,7 +138719,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -138782,7 +138782,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -139671,7 +139671,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -139734,7 +139734,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -139797,7 +139797,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -139860,7 +139860,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -140366,7 +140366,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -140523,7 +140523,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -141118,7 +141118,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -141181,7 +141181,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -141244,7 +141244,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -141307,7 +141307,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -141433,7 +141433,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -141496,7 +141496,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -141559,7 +141559,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -141622,7 +141622,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a587b06084577ce"
+                    "value": "#c_zom_der_takeo_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -156630,7 +156630,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_702a969a8c771f99",
+                    "value": "#c_zom_der_dempsey_cin_fb",
                     "unk1a": true
                 },
                 {
@@ -156679,7 +156679,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_76fcb9f14e2636df",
+                    "value": "#c_zom_der_nikolai_cin_fb",
                     "unk1a": true
                 },
                 {
@@ -156777,7 +156777,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_5a35ecfffa27e45a",
+                    "value": "#c_zom_der_richtofen_cin_fb",
                     "unk1a": true
                 },
                 {
@@ -156869,7 +156869,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_702a969a8c771f99"
+                    "value": "#c_zom_der_dempsey_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -156922,7 +156922,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_702a969a8c771f99"
+                    "value": "#c_zom_der_dempsey_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -156975,7 +156975,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_702a969a8c771f99"
+                    "value": "#c_zom_der_dempsey_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -157023,7 +157023,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_702a969a8c771f99"
+                    "value": "#c_zom_der_dempsey_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -157071,7 +157071,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_702a969a8c771f99"
+                    "value": "#c_zom_der_dempsey_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -157119,7 +157119,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_702a969a8c771f99"
+                    "value": "#c_zom_der_dempsey_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -157313,7 +157313,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_702a969a8c771f99"
+                    "value": "#c_zom_der_dempsey_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -157361,7 +157361,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_702a969a8c771f99"
+                    "value": "#c_zom_der_dempsey_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -157409,7 +157409,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_702a969a8c771f99"
+                    "value": "#c_zom_der_dempsey_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -157457,7 +157457,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_702a969a8c771f99"
+                    "value": "#c_zom_der_dempsey_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -158308,7 +158308,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_702a969a8c771f99"
+                    "value": "#c_zom_der_dempsey_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -158361,7 +158361,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_702a969a8c771f99"
+                    "value": "#c_zom_der_dempsey_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -158467,7 +158467,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_702a969a8c771f99"
+                    "value": "#c_zom_der_dempsey_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -158515,7 +158515,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_702a969a8c771f99"
+                    "value": "#c_zom_der_dempsey_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -158563,7 +158563,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_702a969a8c771f99"
+                    "value": "#c_zom_der_dempsey_cin_fb"
                 },
                 {
                     "key": "origin",
@@ -158611,7 +158611,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_702a969a8c771f99"
+                    "value": "#c_zom_der_dempsey_cin_fb"
                 },
                 {
                     "key": "origin",

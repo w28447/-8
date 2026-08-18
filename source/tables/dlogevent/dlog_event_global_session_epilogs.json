@@ -1,7 +1,7 @@
 {
-    "name": "#hash_28b295eb3b8e189",
-    "unk28": "#hash_3dee21bdf91508dd",
-    "ddlDef": "#hash_11c94e161d87cd2d",
+    "name": "#dlog_event_global_session_epilogs",
+    "unk28": "#global_session_epilogs",
+    "ddlDef": "#gamedata/ddl/generated/dlog_event_global_session_epilogs.ddl",
     "unk18": 0,
     "unk19": 1,
     "unk1a": 1,

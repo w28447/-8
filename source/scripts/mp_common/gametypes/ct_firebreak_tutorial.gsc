@@ -489,7 +489,7 @@ function function_d0815f2e()
     level.var_8ca3c62 = 1;
     self ct_bots::function_26d45f32( 1, 1 );
     level.var_e72728b8 = array( #"hero_flamethrower", #"gadget_radiation_field" );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_fire_slide_2_nag", 30, 20 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_fire_slide_2_nag", 30, 20 );
     self thread ct_utils::function_61c3d59c( #"hash_15262616ac3924f0" );
     self ct_utils::tutorial_goto( "s_tut_purifier_1_goto" );
     level notify( #"hash_60e26e14a51c5211" );
@@ -515,7 +515,7 @@ function function_d0815f2e()
     self thread ct_utils::function_c2a10fc();
     function_b3977527( 1, 1, 1, 1, "bot_puf_1", 1 );
     self thread ct_vo::function_831e0584( array( "vox_tvoi_tutor_fire_slide_4_0" ) );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_fire_slide_4_nag", 30, 20 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_fire_slide_4_nag", 30, 20 );
     self thread function_1ba28169( #"hash_4012b43bf3458a7", undefined, 2 );
     level notify( #"hash_4c9c5fbc89779e64" );
     ct_utils::function_654280be();
@@ -583,7 +583,7 @@ function function_de43fab3()
     level notify( #"colbounds_tut_puf_2_start_on" );
     level notify( #"colbounds_tut_puf_2_end_on" );
     self thread function_cbb4f624();
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_fire_slide_2_nag", 45 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_fire_slide_2_nag", 45 );
     self thread ct_utils::function_61c3d59c( #"hash_15262616ac3924f0" );
     self ct_utils::tutorial_goto( "s_tut_purifier_2_goto" );
     level notify( #"hash_60e26e14a51c5211" );
@@ -636,7 +636,7 @@ function function_78cc1a53()
         self switchtoweapon( getweapon( #"hero_flamethrower" ) );
     }
     
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_fire_slide_5_nag", 45, 30 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_fire_slide_5_nag", 45, 30 );
     self notify( #"hash_3fe1dc3fe28515f3" );
     waitframe( 1 );
     self thread function_1ba28169( #"hash_3c5ed5229eb6809", undefined, 2, 0.1 );
@@ -770,7 +770,7 @@ function function_951ce866()
     level notify( #"colbounds_tut_puf_2_end_off" );
     level notify( #"colbounds_tut_puf_3_end_on" );
     self ct_vo::function_831e0584( array( "vox_tvoi_tutor_fire_slide_5_kill_0" ) );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_fire_slide_2_nag", 45 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_fire_slide_2_nag", 45 );
     self thread ct_utils::function_61c3d59c( #"hash_15262616ac3924f0" );
     self thread ct_vo::function_831e0584( array( "vox_tvoi_tutor_fire_slide_5_kill_1" ) );
     self ct_utils::tutorial_goto( "s_tut_purifier_3_goto" );
@@ -1025,7 +1025,7 @@ function function_1b16f4e()
         waitframe( 1 );
     }
     
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_fire_slide_2_nag", 30, 20 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_fire_slide_2_nag", 30, 20 );
     self thread ct_utils::function_61c3d59c( #"hash_15262616ac3924f0", array( "vox_tvoi_tutor_fire_slide_6_0" ) );
     self ct_utils::tutorial_goto( "s_tut_before_rad_1_goto_a", undefined, 48 );
     self ct_utils::tutorial_goto( "s_tut_rad_1_goto", undefined, 48 );
@@ -1063,7 +1063,7 @@ function function_1bdf6fc7()
     var_6b55373b = getweapon( #"gadget_radiation_field" );
     n_slot = self gadgetgetslot( var_6b55373b );
     self thread ct_utils::function_61c3d59c( #"hash_787416c9e1a64d15" );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_fire_core_activate_fail", 7, 10 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_fire_core_activate_fail", 7, 10 );
     
     do
     {
@@ -1346,7 +1346,7 @@ function tut_fin1_fight1()
     
     self thread function_1fe2e258();
     level notify( #"colbounds_tut_rad_1_noback_on" );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_fire_slide_2_nag", 30, 20 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_fire_slide_2_nag", 30, 20 );
     self thread ct_utils::function_61c3d59c( #"hash_15262616ac3924f0" );
     self ct_utils::tutorial_goto( "s_tut_fin1_fight1_goto", undefined, 48 );
     level notify( #"hash_60e26e14a51c5211" );
@@ -1430,7 +1430,7 @@ function tut_fin1_fight2()
     
     self thread function_1fe2e258();
     self thread ct_vo::function_831e0584( array( "vox_tvoi_tutor_fire_final_move_nag" ) );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_fire_slide_2_nag", 30, 20 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_fire_slide_2_nag", 30, 20 );
     self thread ct_utils::function_61c3d59c( #"hash_15262616ac3924f0" );
     self ct_utils::tutorial_goto( "s_tut_fin1_fight2_goto", undefined, 48 );
     level notify( #"hash_60e26e14a51c5211" );
@@ -1515,7 +1515,7 @@ function tut_fin1_fight3()
     
     self thread function_1fe2e258();
     self thread ct_vo::function_831e0584( array( "vox_tvoi_tutor_fire_final_move_nag" ) );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_fire_slide_2_nag", 30, 20 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_fire_slide_2_nag", 30, 20 );
     self thread ct_utils::function_61c3d59c( #"hash_15262616ac3924f0" );
     self ct_utils::tutorial_goto( "s_tut_fin1_fight3_goto", undefined, 48 );
     level notify( #"hash_60e26e14a51c5211" );
@@ -1680,7 +1680,7 @@ function tut_fin1_fight5()
     self thread function_1fe2e258();
     level notify( #"colbounds_tut_fin1_fight5_start_off" );
     self thread ct_vo::function_831e0584( array( "vox_tvoi_tutor_fire_final_move_nag" ) );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_fire_slide_2_nag", 30, 20 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_fire_slide_2_nag", 30, 20 );
     self thread ct_utils::function_61c3d59c( #"hash_15262616ac3924f0" );
     self ct_utils::tutorial_goto( "s_tut_fin1_fight5_goto", undefined, 48 );
     level notify( #"hash_60e26e14a51c5211" );
@@ -1830,7 +1830,7 @@ function function_d0f4d458()
     {
         self thread ct_utils::function_61c3d59c( undefined, undefined, "dynobj_EarnStrafeRun" );
         self thread ct_utils::ingame_objective_set_points( 0 );
-        self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_fire_score_nag", 20, 20 );
+        self thread ct_vo::vo_nag( "vox_tvoi_tutor_fire_score_nag", 20, 20 );
     }
     
     n_enemy_count = 4;

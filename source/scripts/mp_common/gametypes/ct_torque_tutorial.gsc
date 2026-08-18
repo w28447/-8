@@ -404,7 +404,7 @@ function function_2823bfa7()
     self thread ct_utils::function_61c3d59c( #"hash_15262616ac3924f0" );
     level notify( #"hash_4c9c5fbc89779e64" );
     waitframe( 1 );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_torq_slide_2_nag", 30, 15 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_torq_slide_2_nag", 30, 15 );
     self ct_utils::tutorial_goto( "s_torque_tut_1_goto" );
     level notify( #"hash_60e26e14a51c5211" );
     
@@ -444,7 +444,7 @@ function function_c37caebd()
     level.var_e72728b8 = array( #"ability_smart_cover" );
     self setlowready( 0 );
     self thread ct_utils::function_61c3d59c( #"hash_33e497e4d3690fb" );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_torq_razor_wire_nag" );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_torq_razor_wire_nag" );
     s_loc = struct::get( "s_torque_tut_1_razorwire_deploy", "targetname" );
     self function_44776cd( 1, s_loc );
     level notify( #"hash_60e26e14a51c5211" );
@@ -489,7 +489,7 @@ function function_3068d031()
     self ct_vo::function_3ca1b77d( 1 );
     self ct_vo::function_831e0584( array( "vox_tvoi_tutor_torq_two_razor_wire_0" ) );
     self ct_vo::function_831e0584( array( "vox_tvoi_tutor_torq_two_razor_wire_1" ) );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_torq_slide_2_nag" );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_torq_slide_2_nag" );
     self thread ct_utils::function_61c3d59c( #"hash_15262616ac3924f0" );
     self ct_utils::tutorial_goto( "s_torque_tut_2_goto" );
     level notify( #"hash_60e26e14a51c5211" );
@@ -530,7 +530,7 @@ function function_23f8245b()
     level.var_e72728b8 = array( #"ability_smart_cover" );
     self function_b512a9bf( 0 );
     self thread ct_vo::function_831e0584( array( "vox_tvoi_tutor_torq_two_razor_wire_3" ), 1 );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_torq_two_razor_wire_nag", 30, 15 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_torq_two_razor_wire_nag", 30, 15 );
     self thread ct_utils::function_61c3d59c( #"hash_3967aa9d33b8058b", undefined );
     level thread ct_utils::function_a3f8ddfa( "colbounds_tut_2_left" );
     self function_44776cd( 1, "s_torque_tut_2_razorwire_deploy_l" );
@@ -538,7 +538,7 @@ function function_23f8245b()
     wait 1;
     self thread ct_vo::function_831e0584( array( "vox_tvoi_tutor_torq_two_razor_wire_4" ), 1 );
     level thread ct_utils::function_a3f8ddfa( "colbounds_tut_2_right" );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_torq_two_razor_wire_nag", 30, 15 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_torq_two_razor_wire_nag", 30, 15 );
     self function_44776cd( 1, "s_torque_tut_2_razorwire_deploy_r" );
     self setlowready( 1 );
     level.var_e72728b8 = array( #"ability_smart_cover", #"eq_concertina_wire" );
@@ -547,7 +547,7 @@ function function_23f8245b()
     waitframe( 1 );
     self ct_vo::function_3ca1b77d( 1 );
     self ct_vo::function_831e0584( array( "vox_tvoi_tutor_torq_two_razor_wire_5", "vox_tvoi_tutor_torq_two_razor_wire_6" ) );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_torq_shoot_enemy_nag", 30, 15 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_torq_shoot_enemy_nag", 30, 15 );
     self ct_utils::ingame_objective_close();
     level.var_ec07b7b8 = 0;
     level.a_s_targets = struct::get_array( "s_torque_tut_2_enemy_spawn", "targetname" );
@@ -684,14 +684,14 @@ function function_b2770e99()
     }
     
     self ct_utils::function_6ad0c151();
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_torq_slide_2_nag", 30, 15 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_torq_slide_2_nag", 30, 15 );
     self thread ct_utils::function_61c3d59c( #"hash_15262616ac3924f0" );
     self thread ct_vo::function_831e0584( array( "vox_tvoi_tutor_torq_razor_wire_window_1" ) );
     self ct_utils::tutorial_goto( "s_torque_tut_3_goto" );
     level notify( #"hash_60e26e14a51c5211" );
     level notify( #"colbounds_tut_3_on" );
     self ct_vo::function_3ca1b77d( 1 );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_torq_razor_wire_window_nag" );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_torq_razor_wire_window_nag" );
     self thread ct_utils::function_61c3d59c( #"hash_567d726ecbe59075", array( "vox_tvoi_tutor_torq_razor_wire_window_2" ) );
     s_loc = struct::get( "s_torque_tut_3_razorwire_deploy", "targetname" );
     self function_44776cd( 1, s_loc );
@@ -762,7 +762,7 @@ function function_4aa64c88()
     
     self ct_utils::function_6ad0c151();
     level.var_e72728b8 = array( #"ability_smart_cover", #"eq_concertina_wire" );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_torq_slide_2_nag", 30, 15 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_torq_slide_2_nag", 30, 15 );
     self thread ct_utils::function_61c3d59c( #"hash_15262616ac3924f0", array( "vox_tvoi_tutor_torq_smrt_cvr_0", "vox_tvoi_tutor_torq_smrt_cvr_1" ) );
     self ct_utils::tutorial_goto( "s_torque_tut_4_goto" );
     level notify( #"hash_60e26e14a51c5211" );
@@ -773,7 +773,7 @@ function function_4aa64c88()
     level.var_e72728b8 = array( #"eq_concertina_wire" );
     var_89975e11 = self gamepadusedlast() ? #"hash_75eaa8ffc71cdd9d" : #"hash_69973debc6e768f3";
     self thread ct_utils::function_61c3d59c( var_89975e11 );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_torq_smrt_cvr_nag", 30, 20 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_torq_smrt_cvr_nag", 30, 20 );
     s_loc = struct::get( "s_torque_tut_4_barricade_deploy", "targetname" );
     self function_44776cd( 2, s_loc );
     level notify( #"hash_60e26e14a51c5211" );
@@ -919,7 +919,7 @@ function function_d27e566()
     self thread function_222141a5();
     self setlowready( 1 );
     self thread ct_utils::function_61c3d59c( #"hash_15262616ac3924f0", array( "vox_tvoi_tutor_torq_rad_field_3" ) );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_torq_slide_2_nag" );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_torq_slide_2_nag" );
     self ct_utils::tutorial_goto( "s_torque_tut_5_goto", undefined, 48 );
     level notify( #"hash_60e26e14a51c5211" );
     level notify( #"colbounds_tut_4_5_doorway_on" );
@@ -936,7 +936,7 @@ function function_d27e566()
     self thread ct_vo::function_625a37f9( "vox_tvoi_tutor_torq_enemy_razor_wire_rpg_miss", "rpg_miss", 0, 0, 5 );
     self thread function_dbc41f2b();
     self thread ct_utils::function_61c3d59c( #"hash_56eb0801e59fea09" );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_torq_enemy_razor_wire_nag", 30, 20 );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_torq_enemy_razor_wire_nag", 30, 20 );
     level waittill( #"enemy_razorwire_destroyed" );
     level notify( #"hash_60e26e14a51c5211" );
     level notify( #"hash_4c2e751dd9e2bb57" );
@@ -1128,7 +1128,7 @@ function function_5d93aa8a()
     self ct_utils::function_6ad0c151();
     level.var_e72728b8 = array( #"ability_smart_cover", #"eq_concertina_wire" );
     self thread ct_vo::function_831e0584( array( "vox_tvoi_tutor_torq_enemy_razor_success" ) );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_torq_slide_2_nag" );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_torq_slide_2_nag" );
     self thread ct_utils::function_61c3d59c( #"hash_15262616ac3924f0" );
     self ct_utils::tutorial_goto( "s_torque_tut_6_goto" );
     level notify( #"hash_60e26e14a51c5211" );
@@ -1386,7 +1386,7 @@ function function_fac42259()
     
     level thread function_1e7b4cf9();
     self thread function_222141a5();
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_torq_slide_2_nag" );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_torq_slide_2_nag" );
     self thread ct_utils::function_61c3d59c( #"hash_15262616ac3924f0" );
     self ct_utils::tutorial_goto( "s_torque_tut_fin1_goto" );
     level notify( #"hash_60e26e14a51c5211" );
@@ -2185,7 +2185,7 @@ function function_bfebe12d()
     var_ec746d30 = self gamepadusedlast() ? #"hash_68966a9a9f01485a" : #"hash_5aa86538a8f0dfa";
     self thread ct_utils::function_61c3d59c( var_ec746d30, undefined, undefined );
     self thread ct_vo::function_831e0584( array( "vox_tvoi_tutor_torq_final_2_strike_ready" ) );
-    self thread ct_vo::function_261ed63c( "vox_tvoi_tutor_torq_final_2_strike_ready_nag" );
+    self thread ct_vo::vo_nag( "vox_tvoi_tutor_torq_final_2_strike_ready_nag" );
     self waittill( #"swat_team_called" );
     ct_utils::function_9aca2fa0( "ct_action2" );
     level.b_killstreak_used = 1;
@@ -3178,7 +3178,7 @@ function on_smartcover_placed( newcover )
     if ( isdefined( self.smartcover ) && isdefined( self.smartcover.var_58e8b64d ) )
     {
         self notify( #"smartcover_placed" );
-        function_1eaaceab( self.smartcover.var_58e8b64d );
+        arrayremovedead( self.smartcover.var_58e8b64d );
         
         if ( !isbot( self ) )
         {
@@ -3212,13 +3212,13 @@ function on_smartcover_placed( newcover )
                 var_fb034023 = e_cover.origin - v_right * 64 - v_fwd * 64;
                 var_e95f1cd7 = e_cover.origin - v_fwd * 64;
                 var_9ef3080c = e_cover.origin + v_right * 64 - v_fwd * 64;
-                var_aec0cd16 = 64;
+                n_search_radius = 64;
                 var_d42616a6 = 48;
-                var_5e0a08e8 = getclosestpointonnavmesh( var_d877e7e8, var_aec0cd16, var_d42616a6 );
-                var_5e1d0902 = getclosestpointonnavmesh( var_52875b95, var_aec0cd16, var_d42616a6 );
-                var_28eee9d4 = getclosestpointonnavmesh( var_fb034023, var_aec0cd16, var_d42616a6 );
-                var_e089d8e3 = getclosestpointonnavmesh( var_e95f1cd7, var_aec0cd16, var_d42616a6 );
-                var_28f7e9e2 = getclosestpointonnavmesh( var_9ef3080c, var_aec0cd16, var_d42616a6 );
+                var_5e0a08e8 = getclosestpointonnavmesh( var_d877e7e8, n_search_radius, var_d42616a6 );
+                var_5e1d0902 = getclosestpointonnavmesh( var_52875b95, n_search_radius, var_d42616a6 );
+                var_28eee9d4 = getclosestpointonnavmesh( var_fb034023, n_search_radius, var_d42616a6 );
+                var_e089d8e3 = getclosestpointonnavmesh( var_e95f1cd7, n_search_radius, var_d42616a6 );
+                var_28f7e9e2 = getclosestpointonnavmesh( var_9ef3080c, n_search_radius, var_d42616a6 );
                 var_15ef6cf8.origin = var_5e0a08e8;
                 var_4a145539.origin = var_5e1d0902;
                 var_b1c99b8c.origin = var_28eee9d4;

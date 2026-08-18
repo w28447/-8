@@ -130,13 +130,13 @@ function function_89e9bca5( str_component, v_origin, v_angles )
 // Params 1
 // Checksum 0x49b57bf4, Offset: 0x730
 // Size: 0xc0
-function function_57423f( var_a4107301 )
+function function_57423f( n_powerzone )
 {
     var_6fbf9624 = getentarray( "use_elec_switch", "targetname" );
     
     foreach ( trig_elec_switch in var_6fbf9624 )
     {
-        if ( trig_elec_switch.script_int === var_a4107301 )
+        if ( trig_elec_switch.script_int === n_powerzone )
         {
             trig_elec_switch trigger::use();
         }
@@ -168,29 +168,29 @@ function function_5f42b3e2( s_anim )
 {
     if ( self.characterindex == 9 )
     {
-        var_3c828299 = "p_zm_seer_stone_s_in_female";
-        var_c2852abc = "p_zm_seer_stone_s_loop_female";
-        var_39e963ce = "p_zm_seer_stone_s_out_female";
+        str_anim_in = "p_zm_seer_stone_s_in_female";
+        str_anim_loop = "p_zm_seer_stone_s_loop_female";
+        str_anim_out = "p_zm_seer_stone_s_out_female";
     }
     else
     {
-        var_3c828299 = "p_zm_seer_stone_s_in_male";
-        var_c2852abc = "p_zm_seer_stone_s_loop_male";
-        var_39e963ce = "p_zm_seer_stone_s_out_male";
+        str_anim_in = "p_zm_seer_stone_s_in_male";
+        str_anim_loop = "p_zm_seer_stone_s_loop_male";
+        str_anim_out = "p_zm_seer_stone_s_out_male";
     }
     
-    s_anim scene::play( var_3c828299, self );
+    s_anim scene::play( str_anim_in, self );
     
     if ( isplayer( self ) )
     {
         self notify( #"hash_18259ed594f164dc" );
-        s_anim thread scene::play( var_c2852abc, self );
+        s_anim thread scene::play( str_anim_loop, self );
         self waittill( #"hash_770bb1239dc37ad0", #"disconnect" );
     }
     
     if ( isplayer( self ) )
     {
-        s_anim scene::play( var_39e963ce, self );
+        s_anim scene::play( str_anim_out, self );
         self notify( #"hash_18259ed594f164dc" );
     }
 }

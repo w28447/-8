@@ -401,10 +401,10 @@ function private function_3f8824e6( var_ac829b0, var_3e24b5d5 )
 // Params 4, eflags: 0x4
 // Checksum 0x604d65c4, Offset: 0x10e0
 // Size: 0x7bc
-function private function_2b7b1675( var_3e24b5d5 = isdefined( level.var_3e24b5d5 ) ? level.var_3e24b5d5 : "banter", var_a33019a0, var_2e6c012e, e_player_2 )
+function private function_2b7b1675( var_3e24b5d5 = isdefined( level.var_3e24b5d5 ) ? level.var_3e24b5d5 : "banter", var_a33019a0, e_player_1, e_player_2 )
 {
-    var_53297699 = var_2e6c012e zm_characters::function_dc232a80();
-    var_b1411c83 = var_2e6c012e function_82f9bc9f();
+    var_53297699 = e_player_1 zm_characters::function_dc232a80();
+    var_b1411c83 = e_player_1 function_82f9bc9f();
     var_6095116c = e_player_2 zm_characters::function_dc232a80();
     var_1c46f291 = e_player_2 function_82f9bc9f();
     a_test = [];

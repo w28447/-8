@@ -2187,11 +2187,11 @@ function function_91305947( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0xe6
 function function_ba86af94( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
-    var_30f4bba7 = self zbarriergetpiece( 1 );
+    zbarrier_piece = self zbarriergetpiece( 1 );
     
     if ( newval )
     {
-        level.var_8832c6a2 = util::playfxontag( localclientnum, level._effect[ #"hash_3974bea828fbf7f7" ], var_30f4bba7, "tag_fx" );
+        level.var_8832c6a2 = util::playfxontag( localclientnum, level._effect[ #"hash_3974bea828fbf7f7" ], zbarrier_piece, "tag_fx" );
         return;
     }
     
@@ -2257,15 +2257,15 @@ function function_36469123( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x1fe
 function function_a7b41dea( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
-    var_30f4bba7 = self zbarriergetpiece( 2 );
+    zbarrier_piece = self zbarriergetpiece( 2 );
     
     if ( !isdefined( level.var_25faefd0 ) )
     {
-        v_origin = var_30f4bba7 gettagorigin( "j_lid" );
-        v_angles = var_30f4bba7 gettagangles( "j_lid" );
+        v_origin = zbarrier_piece gettagorigin( "j_lid" );
+        v_angles = zbarrier_piece gettagangles( "j_lid" );
         v_angles += ( 0, 90, 0 );
         level.var_25faefd0 = util::spawn_model( localclientnum, "tag_origin", v_origin, v_angles );
-        level.var_25faefd0 linkto( var_30f4bba7, "j_lid" );
+        level.var_25faefd0 linkto( zbarrier_piece, "j_lid" );
     }
     
     if ( newval )
@@ -2294,11 +2294,11 @@ function function_a7b41dea( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0xe6
 function function_1941a5ca( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
-    var_30f4bba7 = self zbarriergetpiece( 2 );
+    zbarrier_piece = self zbarriergetpiece( 2 );
     
     if ( newval )
     {
-        level.var_9354725d = util::playfxontag( localclientnum, level._effect[ #"hash_5dc6f97e5850e1d1" ], var_30f4bba7, "tag_fx" );
+        level.var_9354725d = util::playfxontag( localclientnum, level._effect[ #"hash_5dc6f97e5850e1d1" ], zbarrier_piece, "tag_fx" );
         return;
     }
     

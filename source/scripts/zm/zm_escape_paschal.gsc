@@ -2524,7 +2524,7 @@ function private function_adb645f2()
 {
     level endon( #"hash_4ff99434ccb06268" );
     level flag::set( "pause_round_timeout" );
-    level zm_audio::function_6191af93( #"brutus", #"react", "", "" );
+    level zm_audio::vox_override( #"brutus", #"react", "", "" );
     
     if ( isdefined( level.var_3e89bfdf ) && level.var_3e89bfdf )
     {
@@ -3372,7 +3372,7 @@ function private function_26609819()
     {
         while ( var_e93479e2.size >= 3 )
         {
-            function_1eaaceab( var_e93479e2 );
+            arrayremovedead( var_e93479e2 );
             waitframe( 1 );
         }
         
@@ -3400,7 +3400,7 @@ function private function_26609819()
         }
         
         wait randomfloatrange( 10, 30 );
-        function_1eaaceab( var_e93479e2 );
+        arrayremovedead( var_e93479e2 );
     }
 }
 

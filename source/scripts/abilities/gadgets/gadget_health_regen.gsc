@@ -306,12 +306,12 @@ function enable_healing( slot, weapon, player )
     
     var_bc840360 = self.health;
     
-    if ( isdefined( self.var_9cd2c51d ) )
+    if ( isdefined( self.challenge_info ) )
     {
         if ( !self.heal.enabled )
         {
-            self.var_9cd2c51d.var_c54af9a9 = gettime();
-            self.var_9cd2c51d.var_6e219f3c = self.health;
+            self.challenge_info.var_c54af9a9 = gettime();
+            self.challenge_info.var_6e219f3c = self.health;
         }
     }
     

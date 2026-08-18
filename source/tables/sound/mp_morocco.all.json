@@ -16891,13 +16891,13 @@
         {
             "value": 148,
             "next": 65535,
-            "name": "#hash_2ec3de3874855810",
+            "name": "#exp_redbarrel",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
@@ -16938,7 +16938,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
@@ -16979,7 +16979,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
@@ -17020,7 +17020,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
@@ -17061,7 +17061,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
@@ -17102,7 +17102,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
@@ -17143,7 +17143,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",

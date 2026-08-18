@@ -39,9 +39,9 @@ function activation()
     {
         if ( isdefined( a_ai[ i ] ) && isalive( a_ai[ i ] ) && a_ai[ i ].archetype === #"zombie" && isdefined( a_ai[ i ].gibdef ) )
         {
-            var_aa4b65bc = distancesquared( self.origin, a_ai[ i ].origin );
+            n_dist2 = distancesquared( self.origin, a_ai[ i ].origin );
             
-            if ( var_aa4b65bc < 360000 )
+            if ( n_dist2 < 360000 )
             {
                 a_ai[ i ] zombie_utility::makezombiecrawler();
             }

@@ -90,13 +90,13 @@ function init_elevator( var_fd98a47c )
             button.elevator = elevator;
             elevator.button = button;
             elevator.var_e87f4c9 = button.origin - elevator.origin;
-            elevator.var_8273f574 = dynent;
+            elevator.startfloor = dynent;
             elevator.currentfloor = dynent;
             continue;
         }
         
         elevator.var_ec68615b = dynent;
-        elevator.var_d98394f7 = dynent;
+        elevator.nextfloor = dynent;
     }
 }
 
@@ -433,7 +433,7 @@ function function_76ad6828( position, is_end_position = 0 )
 // Size: 0x374
 function elevator_move( elevator )
 {
-    position = struct::get( elevator.var_d98394f7.target, "targetname" );
+    position = struct::get( elevator.nextfloor.target, "targetname" );
     elevator.button triggerenable( 0 );
     
     if ( isdefined( elevator.script_noteworthy ) && position.script_noteworthy === "start" )
@@ -453,18 +453,18 @@ function elevator_move( elevator )
     elevator playsound( "evt_elevator_start" );
     elevator playloopsound( "evt_elevator_move", 0 );
     elevator moveto( position.origin, 10, 0.5, 0.5 );
-    setdynentstate( elevator.var_d98394f7, 1 );
+    setdynentstate( elevator.nextfloor, 1 );
     setdynentstate( elevator.currentfloor, 1 );
-    var_d98394f7 = elevator.currentfloor;
-    elevator.currentfloor = elevator.var_d98394f7;
-    elevator.var_d98394f7 = var_d98394f7;
+    nextfloor = elevator.currentfloor;
+    elevator.currentfloor = elevator.nextfloor;
+    elevator.nextfloor = nextfloor;
     elevator waittill( #"movedone" );
     elevator playsound( "evt_elevator_stop" );
     elevator stoploopsound( 1 );
     elevator.moving = 0;
     elevator.button.origin = elevator.origin + elevator.var_e87f4c9;
     
-    if ( elevator.var_d98394f7 == elevator.var_8273f574 )
+    if ( elevator.nextfloor == elevator.startfloor )
     {
         elevator.button sethintstring( #"hash_310ad55f171e194e" );
     }
@@ -473,7 +473,7 @@ function elevator_move( elevator )
         elevator.button sethintstring( #"hash_29965b65bca9cd7b" );
     }
     
-    setdynentstate( elevator.var_d98394f7, 0 );
+    setdynentstate( elevator.nextfloor, 0 );
     elevator.button triggerenable( 1 );
 }
 

@@ -43,7 +43,7 @@ function private on_begin( var_30dbb2e5, var_f2c84b6b )
     
     if ( var_30dbb2e5 === "zombie_fists" )
     {
-        level thread function_d1dabace();
+        level thread disable_wallbuys();
     }
     
     foreach ( player in getplayers() )
@@ -223,7 +223,7 @@ function private on_end( round_reset )
 // Params 1, eflags: 0x4
 // Checksum 0xbca08149, Offset: 0x8a0
 // Size: 0x194
-function private function_d1dabace( n_time = 30 )
+function private disable_wallbuys( n_time = 30 )
 {
     level endon( #"trial_round_end", #"end_game" );
     level.var_236b9f7a = &function_37fe3e07;

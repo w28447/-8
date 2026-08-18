@@ -3352,13 +3352,13 @@
         {
             "value": 151,
             "next": 65535,
-            "name": "#hash_119cbb56880344b4",
+            "name": "#amb_pipe_flow_2",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_119cbb56880344b4",
+                    "name": "#amb_pipe_flow_2",
                     "assetId": "#amb/industrial/mach_rumble/machine_rumble_03.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",
                     "assetIdRelease": "#mp_maldives.all",
@@ -19195,13 +19195,13 @@
         {
             "value": 201,
             "next": 65535,
-            "name": "#hash_2ec3de3874855810",
+            "name": "#exp_redbarrel",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",
@@ -19242,7 +19242,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",
@@ -19283,7 +19283,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",
@@ -19324,7 +19324,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",
@@ -19365,7 +19365,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",
@@ -19406,7 +19406,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",
@@ -19447,7 +19447,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_maldives.all",

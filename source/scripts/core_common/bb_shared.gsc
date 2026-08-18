@@ -103,7 +103,7 @@ function add_to_stat( statname, delta )
 // Size: 0x44
 function function_a7ba460f( reason )
 {
-    function_92d1707f( #"hash_28b295eb3b8e189", { #reason:reason } );
+    function_92d1707f( #"dlog_event_global_session_epilogs", { #reason:reason } );
 }
 
 // Namespace bb/bb_shared

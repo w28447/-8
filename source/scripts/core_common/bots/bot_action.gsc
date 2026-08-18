@@ -2658,20 +2658,20 @@ function function_22e2ba8c( actionparams )
                     self.bot.var_ddc0e12b = randomfloat( 1 ) < ( isdefined( self.bot.tacbundle.sniperquickscopechance ) ? self.bot.tacbundle.sniperquickscopechance : 0 );
                 }
                 
-                if ( !isdefined( self.bot.var_f2b47a08 ) )
+                if ( !isdefined( self.bot.sniperfiretime ) )
                 {
                     if ( self.bot.var_ddc0e12b )
                     {
-                        self.bot.var_f2b47a08 = gettime();
+                        self.bot.sniperfiretime = gettime();
                     }
                     else
                     {
                         delaytimesec = randomfloatrange( isdefined( self.bot.tacbundle.var_b9f05fc ) ? self.bot.tacbundle.var_b9f05fc : 0, isdefined( self.bot.tacbundle.var_c850085f ) ? self.bot.tacbundle.var_c850085f : 0 );
-                        self.bot.var_f2b47a08 = gettime() + int( delaytimesec * 1000 );
+                        self.bot.sniperfiretime = gettime() + int( delaytimesec * 1000 );
                     }
                 }
                 
-                if ( gettime() >= self.bot.var_f2b47a08 )
+                if ( gettime() >= self.bot.sniperfiretime )
                 {
                     self bot::function_e2c892a5();
                     self bot::function_e2c892a5( 1 );

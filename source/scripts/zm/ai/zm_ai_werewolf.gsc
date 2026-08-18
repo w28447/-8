@@ -513,11 +513,11 @@ function function_ccbee20()
             continue;
         }
         
-        var_e8ab126e = distancesquared( var_31f7011a[ i ].origin, var_d7eff26a.origin );
+        n_newdist = distancesquared( var_31f7011a[ i ].origin, var_d7eff26a.origin );
         
-        if ( var_e8ab126e < var_56feeec4 )
+        if ( n_newdist < var_56feeec4 )
         {
-            var_56feeec4 = var_e8ab126e;
+            var_56feeec4 = n_newdist;
             var_b2aa54a9 = var_d7eff26a;
         }
     }
@@ -991,26 +991,26 @@ function private function_6488bc7e( entity )
 {
     zombies = getaiteamarray( level.zombie_team );
     zombies = arraysortclosest( zombies, entity.origin, undefined, 0, entity getpathfindingradius() + 20 );
-    var_31a419e0 = [];
+    filtered_zombies = [];
     
     foreach ( zombie in zombies )
     {
         if ( zombie.zm_ai_category === #"basic" || zombie.zm_ai_category === #"popcorn" )
         {
-            if ( !isdefined( var_31a419e0 ) )
+            if ( !isdefined( filtered_zombies ) )
             {
-                var_31a419e0 = [];
+                filtered_zombies = [];
             }
-            else if ( !isarray( var_31a419e0 ) )
+            else if ( !isarray( filtered_zombies ) )
             {
-                var_31a419e0 = array( var_31a419e0 );
+                filtered_zombies = array( filtered_zombies );
             }
             
-            var_31a419e0[ var_31a419e0.size ] = zombie;
+            filtered_zombies[ filtered_zombies.size ] = zombie;
         }
     }
     
-    foreach ( zombie in var_31a419e0 )
+    foreach ( zombie in filtered_zombies )
     {
         zombie zombie_utility::setup_zombie_knockdown( entity );
     }

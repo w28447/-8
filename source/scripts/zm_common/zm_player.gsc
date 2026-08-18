@@ -688,7 +688,7 @@ function function_8ef51109( var_fb6fa3e1, var_bbbf9a69 )
     {
         if ( zm_trial::is_trial_mode() )
         {
-            var_57807cdc = [];
+            failed_players = [];
             a_e_players = getplayers();
             
             foreach ( e_player in a_e_players )
@@ -698,16 +698,16 @@ function function_8ef51109( var_fb6fa3e1, var_bbbf9a69 )
                     continue;
                 }
                 
-                array::add( var_57807cdc, e_player, 0 );
+                array::add( failed_players, e_player, 0 );
             }
             
-            if ( var_57807cdc.size > 1 )
+            if ( failed_players.size > 1 )
             {
-                zm_trial::fail( #"hash_61d8fe81f9fe9e9c", var_57807cdc );
+                zm_trial::fail( #"hash_61d8fe81f9fe9e9c", failed_players );
             }
             else
             {
-                zm_trial::fail( #"hash_272fae998263208b", var_57807cdc );
+                zm_trial::fail( #"hash_272fae998263208b", failed_players );
             }
             
             return;
@@ -824,7 +824,7 @@ function onplayerspawned()
             level thread [[ level.player_too_many_players_check_func ]]();
         }
         
-        self.var_c4890291 = [];
+        self.paused_perks = [];
         
         if ( isdefined( self.player_initialized ) )
         {

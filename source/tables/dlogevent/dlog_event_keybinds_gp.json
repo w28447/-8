@@ -451,7 +451,7 @@
         },
         {
             "name": "#chooseclass_10",
-            "scrName": "#hash_ed45a4a0",
+            "scrName": "#chooseclass_10",
             "type": "STRING",
             "len": 24
         },
@@ -565,55 +565,55 @@
         },
         {
             "name": "#chooseclass_5",
-            "scrName": "#hash_808e599a",
+            "scrName": "#chooseclass_5",
             "type": "STRING",
             "len": 24
         },
         {
             "name": "#chooseclass_4",
-            "scrName": "#hash_7237bced",
+            "scrName": "#chooseclass_4",
             "type": "STRING",
             "len": 24
         },
         {
             "name": "#chooseclass_7",
-            "scrName": "#hash_5f6f975d",
+            "scrName": "#chooseclass_7",
             "type": "STRING",
             "len": 24
         },
         {
             "name": "#chooseclass_6",
-            "scrName": "#hash_c9a46bc5",
+            "scrName": "#chooseclass_6",
             "type": "STRING",
             "len": 24
         },
         {
             "name": "#chooseclass_1",
-            "scrName": "#hash_bbbfcfec",
+            "scrName": "#chooseclass_1",
             "type": "STRING",
             "len": 24
         },
         {
             "name": "#chooseclass_3",
-            "scrName": "#hash_250c2297",
+            "scrName": "#chooseclass_3",
             "type": "STRING",
             "len": 24
         },
         {
             "name": "#chooseclass_2",
-            "scrName": "#hash_1646850c",
+            "scrName": "#chooseclass_2",
             "type": "STRING",
             "len": 24
         },
         {
             "name": "#chooseclass_9",
-            "scrName": "#hash_bacbce14",
+            "scrName": "#chooseclass_9",
             "type": "STRING",
             "len": 24
         },
         {
             "name": "#chooseclass_8",
-            "scrName": "#hash_a50aa292",
+            "scrName": "#chooseclass_8",
             "type": "STRING",
             "len": 24
         },

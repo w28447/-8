@@ -1126,16 +1126,16 @@ function function_356caede( team )
         bundle_index = randomintrange( 1, level.finishers_list.finishers.size - 1 );
         assert( level.finishers_list.finishers.size >= bundle_index );
         var_abdbed5a = level.finishers_list.finishers[ bundle_index ].( "finisherbundle" );
-        var_d1d9820d = getscriptbundle( var_abdbed5a );
+        finisher_bundle = getscriptbundle( var_abdbed5a );
         
-        if ( isdefined( var_d1d9820d.( "attacker_gesture" ) ) )
+        if ( isdefined( finisher_bundle.( "attacker_gesture" ) ) )
         {
-            finisher playboast( var_d1d9820d.( "attacker_gesture" ) );
+            finisher playboast( finisher_bundle.( "attacker_gesture" ) );
         }
         
-        if ( isdefined( var_d1d9820d.( "victim_gesture" ) ) )
+        if ( isdefined( finisher_bundle.( "victim_gesture" ) ) )
         {
-            self playboast( var_d1d9820d.( "victim_gesture" ) );
+            self playboast( finisher_bundle.( "victim_gesture" ) );
         }
         
         self function_fab0e07e( finisher );
@@ -1155,7 +1155,7 @@ function function_356caede( team )
         finisher disableusability();
         finisher disableoffhandweapons();
         self flagsys::clear( #"hash_40e3b09bdbcdac81" );
-        var_62728357 = finisher function_1c8cab15( self );
+        finisher_success = finisher function_1c8cab15( self );
         
         if ( isdefined( finisher ) )
         {
@@ -1168,7 +1168,7 @@ function function_356caede( team )
             
             if ( isdefined( self ) )
             {
-                if ( isdefined( var_62728357 ) && var_62728357 )
+                if ( isdefined( finisher_success ) && finisher_success )
                 {
                     self function_516a3bef( 0 );
                     self setplayerangles( kill_angles );

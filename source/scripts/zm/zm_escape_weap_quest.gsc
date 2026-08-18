@@ -423,7 +423,7 @@ function soul_catcher_state_manager()
     
     while ( !self.is_charged )
     {
-        self thread function_ee929ece();
+        self thread wolfhead_idle();
         self waittill( #"fully_charged", #"finished_eating" );
     }
     
@@ -437,7 +437,7 @@ function soul_catcher_state_manager()
 // Params 0
 // Checksum 0x4c8cc6d4, Offset: 0x19f0
 // Size: 0xe2
-function function_ee929ece()
+function wolfhead_idle()
 {
     self notify( #"wolf_idling" );
     self endon( #"wolf_eating", #"wolf_departing", #"wolf_idling" );

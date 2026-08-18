@@ -396,7 +396,7 @@ function gaia_projectile( e_projectile, ai_zombie, n_damage )
     e_projectile endon( #"death" );
     self endon( #"disconnect" );
     e_projectile thread projectile_timeout();
-    v_end = self function_39e8ed04();
+    v_end = self gaia_trace();
     n_dist = distance( e_projectile.origin, v_end );
     n_time = n_dist / 1500;
     
@@ -714,7 +714,7 @@ function function_dced5aef( e_target, weapon = level.weaponnone, n_damage, b_cha
 // Params 0
 // Checksum 0x803c4c63, Offset: 0x2330
 // Size: 0x110
-function function_39e8ed04()
+function gaia_trace()
 {
     v_view_pos = self getweaponmuzzlepoint();
     v_forward = self getweaponforwarddir();

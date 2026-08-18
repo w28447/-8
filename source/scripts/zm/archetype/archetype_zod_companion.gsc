@@ -976,16 +976,16 @@ function private zodcompanionfinishedsprinttransition( behaviortreeentity )
 // Size: 0xea, Type: bool
 function private zodcompanionkeepscurrentmovementmode( behaviortreeentity )
 {
-    var_202e5b5c = 262144;
-    var_c351bd17 = 147456;
+    sprint_range = 262144;
+    walk_range = 147456;
     dist = distancesquared( behaviortreeentity.origin, behaviortreeentity.companion_anchor_point );
     
-    if ( dist > var_202e5b5c && behaviortreeentity getblackboardattribute( "_locomotion_speed" ) == "locomotion_speed_walk" )
+    if ( dist > sprint_range && behaviortreeentity getblackboardattribute( "_locomotion_speed" ) == "locomotion_speed_walk" )
     {
         return false;
     }
     
-    if ( dist < var_c351bd17 && behaviortreeentity getblackboardattribute( "_locomotion_speed" ) == "locomotion_speed_sprint" )
+    if ( dist < walk_range && behaviortreeentity getblackboardattribute( "_locomotion_speed" ) == "locomotion_speed_sprint" )
     {
         return false;
     }

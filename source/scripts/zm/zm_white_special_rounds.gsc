@@ -1869,7 +1869,7 @@ function function_748fcb3c()
     while ( !is_complete )
     {
         s_waitresult = self waittill( #"trigger_activated" );
-        var_5a9db060 = 1;
+        all_touching = 1;
         players = getplayers();
         
         for ( i = 0; i < players.size ; i++ )
@@ -1886,11 +1886,11 @@ function function_748fcb3c()
             
             if ( !is_touching )
             {
-                var_5a9db060 = 0;
+                all_touching = 0;
             }
         }
         
-        if ( var_5a9db060 )
+        if ( all_touching )
         {
             is_complete = 1;
             level.e_vent_screen function_ccc74648( "string_02" );
@@ -1909,7 +1909,7 @@ function function_748fcb3c()
 // Size: 0x1ba
 function function_d4e24379( e_player )
 {
-    var_5a9db060 = 1;
+    all_touching = 1;
     players = getplayers();
     
     for ( i = 0; i < players.size ; i++ )
@@ -1926,11 +1926,11 @@ function function_d4e24379( e_player )
         
         if ( !is_touching )
         {
-            var_5a9db060 = 0;
+            all_touching = 0;
         }
     }
     
-    if ( var_5a9db060 )
+    if ( all_touching )
     {
         if ( function_8b1a219a() )
         {

@@ -492,7 +492,7 @@ function function_2669b95a( str_archetype, var_97bd4883 )
 // Params 5
 // Checksum 0x3a207127, Offset: 0x14e8
 // Size: 0x276
-function register_archetype( str_archetype, var_c48a6bb7, func_round_spawn, var_9a8e4fdb, var_376db024 )
+function register_archetype( str_archetype, var_c48a6bb7, func_round_spawn, func_special_spawn, var_376db024 )
 {
     if ( !isdefined( level.var_33e85fa1 ) )
     {
@@ -517,9 +517,9 @@ function register_archetype( str_archetype, var_c48a6bb7, func_round_spawn, var_
     var_75b393f9.var_8e73a12b = var_c48a6bb7;
     var_75b393f9.var_ef500cb7 = func_round_spawn;
     
-    if ( isdefined( var_9a8e4fdb ) )
+    if ( isdefined( func_special_spawn ) )
     {
-        var_75b393f9.var_87ed2709 = var_9a8e4fdb;
+        var_75b393f9.var_87ed2709 = func_special_spawn;
     }
     
     var_376db024 = function_f2bdfd5a( str_archetype, var_376db024 );

@@ -936,8 +936,8 @@ function function_9b2c973f()
         n_start_ammo += bot getammocount( bot.currentweapon );
     }
     
-    var_9192acd9 = int( n_start_health * 0.5 );
-    var_8fe4b14 = int( n_start_ammo * 0.5 );
+    n_half_health = int( n_start_health * 0.5 );
+    n_half_ammo = int( n_start_ammo * 0.5 );
     
     while ( true )
     {
@@ -956,14 +956,14 @@ function function_9b2c973f()
                 level flag::set( "squad_dead" );
             }
             
-            if ( n_current_health <= var_9192acd9 && !var_66075595 )
+            if ( n_current_health <= n_half_health && !var_66075595 )
             {
                 var_66075595 = 1;
                 ct_vo::function_3ca1b77d();
                 level ct_vo::play_vo( #"hash_552f1f27a33c7e19", 1 );
             }
             
-            if ( var_2cf11630 <= var_8fe4b14 && !var_ca0b6cf8 )
+            if ( var_2cf11630 <= n_half_ammo && !var_ca0b6cf8 )
             {
                 var_ca0b6cf8 = 1;
                 ct_vo::function_3ca1b77d();

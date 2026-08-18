@@ -432,26 +432,26 @@ function private function_3e4b2405( entity )
     {
         zombies = getaiteamarray( level.zombie_team );
         zombies = arraysortclosest( zombies, entity.origin, undefined, 0, entity getpathfindingradius() + 25 );
-        var_31a419e0 = [];
+        filtered_zombies = [];
         
         foreach ( zombie in zombies )
         {
             if ( zombie.zm_ai_category === #"basic" || zombie.zm_ai_category === #"popcorn" )
             {
-                if ( !isdefined( var_31a419e0 ) )
+                if ( !isdefined( filtered_zombies ) )
                 {
-                    var_31a419e0 = [];
+                    filtered_zombies = [];
                 }
-                else if ( !isarray( var_31a419e0 ) )
+                else if ( !isarray( filtered_zombies ) )
                 {
-                    var_31a419e0 = array( var_31a419e0 );
+                    filtered_zombies = array( filtered_zombies );
                 }
                 
-                var_31a419e0[ var_31a419e0.size ] = zombie;
+                filtered_zombies[ filtered_zombies.size ] = zombie;
             }
         }
         
-        foreach ( zombie in var_31a419e0 )
+        foreach ( zombie in filtered_zombies )
         {
             if ( isdefined( entity.favoriteenemy ) && entity.favoriteenemy == zombie )
             {

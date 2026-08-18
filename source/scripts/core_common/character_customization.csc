@@ -1686,9 +1686,9 @@ function autoexec __init__system__()
 // Params 5
 // Checksum 0xe2aad6ec, Offset: 0x358
 // Size: 0xb2
-function function_6bca50af( fn, character_index, outfit_index, var_e1daa8d9, mode )
+function function_6bca50af( fn, character_index, outfit_index, option_index, mode )
 {
-    model = [[ fn ]]( character_index, outfit_index, var_e1daa8d9, mode );
+    model = [[ fn ]]( character_index, outfit_index, option_index, mode );
     
     if ( !isdefined( model ) )
     {

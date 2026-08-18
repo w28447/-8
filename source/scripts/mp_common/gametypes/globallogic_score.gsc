@@ -563,9 +563,9 @@ function resetplayermomentumonspawn()
         if ( var_a4e87ee3 && var_a68a55cd > 0 )
         {
             var_28749ebe = isdefined( self.var_28749ebe ) ? self.var_28749ebe : 0;
-            var_347218dd = var_a68a55cd > var_28749ebe;
+            score_protected = var_a68a55cd > var_28749ebe;
             
-            if ( var_347218dd )
+            if ( score_protected )
             {
                 self.var_28749ebe = var_28749ebe + 1;
                 var_a4e87ee3 = 0;

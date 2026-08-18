@@ -401,7 +401,7 @@ function function_1fc2378f( e_projectile, ai_zombie, n_damage )
     e_projectile endon( #"death" );
     self endon( #"disconnect" );
     e_projectile thread projectile_timeout();
-    v_end = self function_180bae11();
+    v_end = self ouranos_trace();
     n_dist = distance( e_projectile.origin, v_end );
     n_time = n_dist / 1500;
     
@@ -448,7 +448,7 @@ function function_1fc2378f( e_projectile, ai_zombie, n_damage )
             v_org = function_30239376( ai_zombie );
             n_dist = distance( self.origin, v_org );
             var_7fd007f9 = n_dist * 0.8;
-            var_4c92ff0e = n_dist * 0.4;
+            n_near_dist = n_dist * 0.4;
             v_end = v_view_pos + v_forward * 100;
             var_a93a9211 = distance( self.origin, v_end );
             v_right = v_view_pos + anglestoright( self.angles ) * 50;
@@ -525,7 +525,7 @@ function function_1fc2378f( e_projectile, ai_zombie, n_damage )
                         }
                     }
                 }
-                else if ( n_dist <= var_7fd007f9 && n_dist > var_4c92ff0e )
+                else if ( n_dist <= var_7fd007f9 && n_dist > n_near_dist )
                 {
                     v_end = v_target + ( 0, 0, -24 );
                 }
@@ -789,7 +789,7 @@ function ouranos_feather_hit( oldval, newval )
 // Params 0
 // Checksum 0x781273c9, Offset: 0x2618
 // Size: 0x120
-function function_180bae11()
+function ouranos_trace()
 {
     v_view_pos = self getweaponmuzzlepoint();
     v_forward = self getweaponforwarddir();

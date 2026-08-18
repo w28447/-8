@@ -319,9 +319,9 @@ function playcommanderaudio( soundbank, team, excludeplayer )
         return;
     }
     
-    var_925a9324 = [];
-    var_925a9324[ 0 ] = excludeplayer;
-    killstreaks::leader_dialog( soundbank, team, var_925a9324, "spawnbeacon" );
+    excludedplayer = [];
+    excludedplayer[ 0 ] = excludeplayer;
+    killstreaks::leader_dialog( soundbank, team, excludedplayer, "spawnbeacon" );
     level.spawnbeaconsettings.audiothrottletracker[ soundbank ] = gettime();
 }
 
@@ -783,23 +783,23 @@ function destroyspawnbeacon( destroyedbyenemy )
     }
     
     deployable::function_81598103( self );
-    var_b0e81be9 = self gettagorigin( "tag_base_d0" );
+    tag_base_origin = self gettagorigin( "tag_base_d0" );
     
-    if ( !isdefined( var_b0e81be9 ) )
+    if ( !isdefined( tag_base_origin ) )
     {
-        var_b0e81be9 = self.origin;
+        tag_base_origin = self.origin;
     }
     
-    var_505e3308 = self gettagangles( "tag_base_d0" );
+    tag_base_angles = self gettagangles( "tag_base_d0" );
     
-    if ( !isdefined( var_505e3308 ) )
+    if ( !isdefined( tag_base_angles ) )
     {
-        var_505e3308 = self.angles;
+        tag_base_angles = self.angles;
     }
     
-    tag_base_forward = anglestoforward( var_505e3308 );
-    tag_base_up = anglestoup( var_505e3308 );
-    playfx( #"hash_695b2e7e4b63a645", var_b0e81be9, tag_base_forward, tag_base_up );
+    tag_base_forward = anglestoforward( tag_base_angles );
+    tag_base_up = anglestoup( tag_base_angles );
+    playfx( #"hash_695b2e7e4b63a645", tag_base_origin, tag_base_forward, tag_base_up );
     
     if ( !( isdefined( spawnbeacon.var_4fc7245b ) ? spawnbeacon.var_4fc7245b : 0 ) && ( isdefined( level.var_6cd68fbe ) ? level.var_6cd68fbe : 0 ) && isdefined( player ) )
     {

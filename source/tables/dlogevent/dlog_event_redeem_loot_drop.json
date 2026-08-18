@@ -86,7 +86,7 @@
     "members": [
         {
             "name": "#loot_redeemed",
-            "scrName": "#hash_98121bb3",
+            "scrName": "#loot_redeemed",
             "type": "INT32"
         },
         {
@@ -97,7 +97,7 @@
         },
         {
             "name": "#loot_category",
-            "scrName": "#hash_3c08594e",
+            "scrName": "#loot_category",
             "type": "STRING",
             "len": 64
         }

@@ -224,8 +224,8 @@ function function_168f686b( e_holder, w_item )
     
     if ( b_silent )
     {
-        zm_audio::function_6191af93( #"component_pickup", #"dynamite", #"component_pickup", #"silent", 100 );
-        zm_audio::function_6191af93( #"component_pickup", #"bomb_part", #"component_pickup", #"silent", 100 );
+        zm_audio::vox_override( #"component_pickup", #"dynamite", #"component_pickup", #"silent", 100 );
+        zm_audio::vox_override( #"component_pickup", #"bomb_part", #"component_pickup", #"silent", 100 );
     }
 }
 
@@ -301,7 +301,7 @@ function function_8427e524()
         }
         else
         {
-            if ( self.var_c39323b5 !== 1 )
+            if ( self.b_cleaned_up !== 1 )
             {
                 gibserverutils::annihilate( self );
                 self clientfield::increment( "" + #"dynamite_zombie_explosion_fx", 1 );

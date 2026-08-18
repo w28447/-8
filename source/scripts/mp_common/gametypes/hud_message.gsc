@@ -78,9 +78,9 @@ function private function_4e36b458( winner )
 // Params 1
 // Checksum 0xa9df2ede, Offset: 0x930
 // Size: 0x1e, Type: bool
-function function_82f36142( var_c1e98979 )
+function function_82f36142( end_type )
 {
-    switch ( var_c1e98979 )
+    switch ( end_type )
     {
         case 0:
         case 8:
@@ -110,7 +110,7 @@ function private function_460b0309( game_end )
 // Params 4
 // Checksum 0x6206be2d, Offset: 0xa10
 // Size: 0x2d2
-function function_a2f30ab4( var_68c25772, var_c1e98979, game_end, outcome )
+function function_a2f30ab4( var_68c25772, end_type, game_end, outcome )
 {
     result = structcopy( outcome );
     result.var_277c7d47 = undefined;
@@ -122,7 +122,7 @@ function function_a2f30ab4( var_68c25772, var_c1e98979, game_end, outcome )
     {
         result.var_44e9b5f9 = teams::getteamindex( result.team );
         
-        if ( function_82f36142( var_c1e98979 ) )
+        if ( function_82f36142( end_type ) )
         {
             result.title_text = function_460b0309( game_end );
             result.var_277c7d47 = 0;
@@ -339,7 +339,7 @@ function teamoutcomenotify( outcome )
     
     if ( team == #"spectator" && outcome.var_7d5c2c5f )
     {
-        if ( outcome.var_c1e98979 == 6 )
+        if ( outcome.end_type == 6 )
         {
             title_text = game.strings[ #"cod_caster_team_eliminated" ];
         }
@@ -395,36 +395,36 @@ function hide_outcome()
 // Params 5, eflags: 0x4
 // Checksum 0x7ac177be, Offset: 0x1790
 // Size: 0x96
-function private function_d756b48a( var_c1e98979, winner_text, loser_text, var_94d579fc, var_1e8a2bef )
+function private function_d756b48a( end_type, winner_text, loser_text, var_94d579fc, var_1e8a2bef )
 {
-    level.var_c3abe983[ var_c1e98979 ] = { #type:var_c1e98979, #winner_text:winner_text, #loser_text:loser_text, #var_3818f815:var_94d579fc, #var_aa3dbaf1:var_1e8a2bef };
+    level.var_c3abe983[ end_type ] = { #type:end_type, #winner_text:winner_text, #loser_text:loser_text, #var_3818f815:var_94d579fc, #var_aa3dbaf1:var_1e8a2bef };
 }
 
 // Namespace hud_message/hud_message
 // Params 3
 // Checksum 0x75d070ba, Offset: 0x1830
 // Size: 0x44
-function function_2b2308c6( var_c1e98979, var_76f0c6e5, var_767536e4 )
+function function_2b2308c6( end_type, var_76f0c6e5, var_767536e4 )
 {
-    function_d756b48a( var_c1e98979, var_76f0c6e5, var_76f0c6e5, var_767536e4, var_767536e4 );
+    function_d756b48a( end_type, var_76f0c6e5, var_76f0c6e5, var_767536e4, var_767536e4 );
 }
 
 // Namespace hud_message/hud_message
 // Params 2
 // Checksum 0xac57479c, Offset: 0x1880
 // Size: 0x4c
-function function_5d9d54a9( var_c1e98979, var_76f0c6e5 )
+function function_5d9d54a9( end_type, var_76f0c6e5 )
 {
-    function_d756b48a( var_c1e98979, var_76f0c6e5, var_76f0c6e5, #"", #"" );
+    function_d756b48a( end_type, var_76f0c6e5, var_76f0c6e5, #"", #"" );
 }
 
 // Namespace hud_message/hud_message
 // Params 3
 // Checksum 0x4e5eec66, Offset: 0x18d8
 // Size: 0x54
-function function_36419c2( var_c1e98979, winner_text, loser_text )
+function function_36419c2( end_type, winner_text, loser_text )
 {
-    function_d756b48a( var_c1e98979, winner_text, loser_text, #"", #"" );
+    function_d756b48a( end_type, winner_text, loser_text, #"", #"" );
 }
 
 // Namespace hud_message/hud_message
@@ -433,19 +433,19 @@ function function_36419c2( var_c1e98979, winner_text, loser_text )
 // Size: 0xee
 function function_5b0c08ec( player, outcome )
 {
-    assert( isdefined( level.var_c3abe983[ outcome.var_c1e98979 ] ) );
+    assert( isdefined( level.var_c3abe983[ outcome.end_type ] ) );
     
-    if ( outcome::get_flag( outcome, "tie" ) && !function_82f36142( outcome.var_c1e98979 ) )
+    if ( outcome::get_flag( outcome, "tie" ) && !function_82f36142( outcome.end_type ) )
     {
         return game.strings[ #"tie" ];
     }
     
     if ( outcome::is_winner( outcome, player ) )
     {
-        return level.var_c3abe983[ outcome.var_c1e98979 ].winner_text;
+        return level.var_c3abe983[ outcome.end_type ].winner_text;
     }
     
-    return level.var_c3abe983[ outcome.var_c1e98979 ].loser_text;
+    return level.var_c3abe983[ outcome.end_type ].loser_text;
 }
 
 // Namespace hud_message/hud_message

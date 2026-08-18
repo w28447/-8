@@ -111,7 +111,7 @@
     "members": [
         {
             "name": "#max_compressed",
-            "scrName": "#hash_5bb006c8",
+            "scrName": "#max_compressed",
             "type": "INT32"
         },
         {
@@ -131,7 +131,7 @@
         },
         {
             "name": "#client_count",
-            "scrName": "#hash_e9d65166",
+            "scrName": "#client_count",
             "type": "INT32"
         },
         {
@@ -146,7 +146,7 @@
         },
         {
             "name": "#max_uncompressed",
-            "scrName": "#hash_3b704a14",
+            "scrName": "#max_uncompressed",
             "type": "INT32"
         },
         {

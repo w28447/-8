@@ -2187,7 +2187,7 @@ function private function_10a75bb7( entity )
 function private function_f2c697c7( entity )
 {
     entity.ai.var_a504b9a3 = new class_a504b9a3();
-    entity.ai.var_a504b9a3.var_86d0fc5 = entity.goalpos;
+    entity.ai.var_a504b9a3.chargepos = entity.goalpos;
     entity.ai.var_a504b9a3.var_9ab05afa = distancesquared( entity.origin, entity.goalpos );
     entity.ai.var_a504b9a3.startpos = entity.origin;
     stage = entity.ai.elephantstage;
@@ -2231,11 +2231,11 @@ function private function_f8145b00( entity )
     if ( isdefined( entity.favoriteenemy ) && isalive( entity.favoriteenemy ) )
     {
         assert( isdefined( entity.ai.var_a504b9a3 ) );
-        assert( isdefined( entity.ai.var_a504b9a3.var_86d0fc5 ) );
+        assert( isdefined( entity.ai.var_a504b9a3.chargepos ) );
         assert( isdefined( entity.ai.var_a504b9a3.var_6392c3a2 ) );
         
         /#
-            recordsphere( entity.ai.var_a504b9a3.var_86d0fc5, 8, ( 1, 0, 0 ), "<dev string:x41>" );
+            recordsphere( entity.ai.var_a504b9a3.chargepos, 8, ( 1, 0, 0 ), "<dev string:x41>" );
         #/
         
         if ( entity asmistransitionrunning() || entity asmistransdecrunning() )
@@ -2250,7 +2250,7 @@ function private function_f8145b00( entity )
         
         if ( gettime() <= entity.ai.var_a504b9a3.var_6392c3a2 )
         {
-            var_ba63d54d = distancesquared( entity.ai.var_a504b9a3.var_86d0fc5, entity.favoriteenemy.origin );
+            var_ba63d54d = distancesquared( entity.ai.var_a504b9a3.chargepos, entity.favoriteenemy.origin );
             var_3a73a0ae = distancesquared( entity.ai.var_a504b9a3.startpos, entity.favoriteenemy.origin ) > entity.ai.var_a504b9a3.var_9ab05afa;
             threshold = entity.ai.var_a504b9a3.var_190509f3;
             
@@ -2296,7 +2296,7 @@ function private function_f8145b00( entity )
                             #/
                             
                             /#
-                                recordline( entity.ai.var_a504b9a3.var_86d0fc5, targetpos, ( 1, 0, 0 ), "<dev string:x41>" );
+                                recordline( entity.ai.var_a504b9a3.chargepos, targetpos, ( 1, 0, 0 ), "<dev string:x41>" );
                             #/
                         }
                     }

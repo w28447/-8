@@ -63,33 +63,33 @@ function function_5bd0ee94()
 // Size: 0x94c
 function function_25f77618()
 {
-    self zm_audio::function_6191af93( #"ammo", #"out", #"ammo_rich_mind", #"out", 25 );
-    self zm_audio::function_6191af93( #"ammo", #"low", #"ammo_rich_mind", #"low", 25 );
-    self zm_audio::function_6191af93( #"magicbox", #"homunculus", #"magicbox_rich_mind", #"homunculus", 25 );
-    self zm_audio::function_6191af93( #"magicbox", #"pistol", #"magicbox_rich_mind", #"pistol", 25 );
-    self zm_audio::function_6191af93( #"magicbox", #"sniper", #"magicbox_rich_mind", #"sniper", 25 );
-    self zm_audio::function_6191af93( #"magicbox", #"raygun", #"magicbox_rich_mind", #"raygun", 25 );
-    self zm_audio::function_6191af93( #"kill", #"homunculus", #"kill_rich_mind", #"homunculus", 25 );
-    self zm_audio::function_6191af93( #"kill", #"explosive", #"kill_rich_mind", #"explosive", 25 );
-    self zm_audio::function_6191af93( #"kill", #"headshot", #"kill_rich_mind", #"headshot", 25 );
-    self zm_audio::function_6191af93( #"kill", #"streak_self", #"kill_rich_mind", #"streak_self", 25 );
-    self zm_audio::function_6191af93( #"kill", #"melee", #"kill_rich_mind", #"melee", 25 );
-    self zm_audio::function_6191af93( #"kill", #"raygun", #"kill_rich_mind", #"raygun", 25 );
-    self zm_audio::function_6191af93( #"kill", #"specialround", #"kill_rich_mind", #"specialround", 25 );
-    self zm_audio::function_6191af93( #"powerup", #"firesale", #"powerup_rich_mind", #"firesale", 25 );
-    self zm_audio::function_6191af93( #"powerup", #"nuke", #"powerup_rich_mind", #"nuke", 25 );
-    self zm_audio::function_6191af93( #"revive", #"down", #"revive_rich_mind", #"down", 25 );
-    self zm_audio::function_6191af93( #"revive", #"support_demp", #"revive_rich_mind", #"support_demp", 25 );
-    self zm_audio::function_6191af93( #"revive", #"support_niko", #"revive_rich_mind", #"support_niko", 25 );
-    self zm_audio::function_6191af93( #"revive", #"support_take", #"revive_rich_mind", #"support_take", 25 );
-    self zm_audio::function_6191af93( #"general", #"attacked", #"general_rich_mind", #"attacked", 25 );
-    self zm_audio::function_6191af93( #"general", #"crawl_spawn", #"general_rich_mind", #"crawl_spawn", 25 );
-    self zm_audio::function_6191af93( #"general", #"gib", #"general_rich_mind", #"gib", 25 );
-    self zm_audio::function_6191af93( #"general", #"outofmoney", #"general_rich_mind", #"outofmoney", 25 );
-    self zm_audio::function_6191af93( #"perk", #"generic", #"perk_rich_mind", #"generic", 25 );
-    self zm_audio::function_6191af93( #"weapon_pickup", #"shield", #"weapon_pickup_rich_mind", #"shield", 25 );
-    self zm_audio::function_6191af93( #"roundstart", #"special", #"roundstart_rich_mind", #"special", 25 );
-    self zm_audio::function_6191af93( #"surrounded", #"self", #"surrounded_rich_mind", #"self", 25 );
+    self zm_audio::vox_override( #"ammo", #"out", #"ammo_rich_mind", #"out", 25 );
+    self zm_audio::vox_override( #"ammo", #"low", #"ammo_rich_mind", #"low", 25 );
+    self zm_audio::vox_override( #"magicbox", #"homunculus", #"magicbox_rich_mind", #"homunculus", 25 );
+    self zm_audio::vox_override( #"magicbox", #"pistol", #"magicbox_rich_mind", #"pistol", 25 );
+    self zm_audio::vox_override( #"magicbox", #"sniper", #"magicbox_rich_mind", #"sniper", 25 );
+    self zm_audio::vox_override( #"magicbox", #"raygun", #"magicbox_rich_mind", #"raygun", 25 );
+    self zm_audio::vox_override( #"kill", #"homunculus", #"kill_rich_mind", #"homunculus", 25 );
+    self zm_audio::vox_override( #"kill", #"explosive", #"kill_rich_mind", #"explosive", 25 );
+    self zm_audio::vox_override( #"kill", #"headshot", #"kill_rich_mind", #"headshot", 25 );
+    self zm_audio::vox_override( #"kill", #"streak_self", #"kill_rich_mind", #"streak_self", 25 );
+    self zm_audio::vox_override( #"kill", #"melee", #"kill_rich_mind", #"melee", 25 );
+    self zm_audio::vox_override( #"kill", #"raygun", #"kill_rich_mind", #"raygun", 25 );
+    self zm_audio::vox_override( #"kill", #"specialround", #"kill_rich_mind", #"specialround", 25 );
+    self zm_audio::vox_override( #"powerup", #"firesale", #"powerup_rich_mind", #"firesale", 25 );
+    self zm_audio::vox_override( #"powerup", #"nuke", #"powerup_rich_mind", #"nuke", 25 );
+    self zm_audio::vox_override( #"revive", #"down", #"revive_rich_mind", #"down", 25 );
+    self zm_audio::vox_override( #"revive", #"support_demp", #"revive_rich_mind", #"support_demp", 25 );
+    self zm_audio::vox_override( #"revive", #"support_niko", #"revive_rich_mind", #"support_niko", 25 );
+    self zm_audio::vox_override( #"revive", #"support_take", #"revive_rich_mind", #"support_take", 25 );
+    self zm_audio::vox_override( #"general", #"attacked", #"general_rich_mind", #"attacked", 25 );
+    self zm_audio::vox_override( #"general", #"crawl_spawn", #"general_rich_mind", #"crawl_spawn", 25 );
+    self zm_audio::vox_override( #"general", #"gib", #"general_rich_mind", #"gib", 25 );
+    self zm_audio::vox_override( #"general", #"outofmoney", #"general_rich_mind", #"outofmoney", 25 );
+    self zm_audio::vox_override( #"perk", #"generic", #"perk_rich_mind", #"generic", 25 );
+    self zm_audio::vox_override( #"weapon_pickup", #"shield", #"weapon_pickup_rich_mind", #"shield", 25 );
+    self zm_audio::vox_override( #"roundstart", #"special", #"roundstart_rich_mind", #"special", 25 );
+    self zm_audio::vox_override( #"surrounded", #"self", #"surrounded_rich_mind", #"self", 25 );
 }
 
 // Namespace zm_office_vo_hooks/zm_office_vo_hooks

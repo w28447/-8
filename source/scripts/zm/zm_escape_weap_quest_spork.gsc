@@ -399,7 +399,7 @@ function function_48d7e846()
     
     if ( isalive( e_closest ) )
     {
-        e_closest thread zm_audio::create_and_play_dialog( #"catwalk", #"hash_30b3d33fbe5f5328" );
+        e_closest thread zm_audio::create_and_play_dialog( #"catwalk", #"tower_collap" );
     }
     
     wait 2;

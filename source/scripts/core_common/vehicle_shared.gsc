@@ -4936,7 +4936,7 @@ function function_a29610b6( x, k )
 // Params 5
 // Checksum 0xaadd7a46, Offset: 0xc970
 // Size: 0x306
-function update_flare_ability( player, var_55716d54, active_time = 5, cooldown_time = 10, flare_tag = undefined )
+function update_flare_ability( player, cooldown_index, active_time = 5, cooldown_time = 10, flare_tag = undefined )
 {
     var_a86d6798 = "update_flare_ability";
     self notify( var_a86d6798 );
@@ -4953,7 +4953,7 @@ function update_flare_ability( player, var_55716d54, active_time = 5, cooldown_t
         self flag::set( "flares_available" );
     }
     
-    player clientfield::set_player_uimodel( "vehicle.bindingCooldown" + var_55716d54 + ".cooldown", 1 );
+    player clientfield::set_player_uimodel( "vehicle.bindingCooldown" + cooldown_index + ".cooldown", 1 );
     
     while ( isdefined( player.vh_vehicle ) && player function_e01d381a() )
     {
@@ -4972,10 +4972,10 @@ function update_flare_ability( player, var_55716d54, active_time = 5, cooldown_t
             self.var_40d7d1f2 = 1;
             player playsoundtoplayer( #"hash_35af2f72517d10ab", player );
             self fire_flares( player, flare_tag, active_time );
-            player clientfield::set_player_uimodel( "vehicle.bindingCooldown" + var_55716d54 + ".cooldown", 0 );
+            player clientfield::set_player_uimodel( "vehicle.bindingCooldown" + cooldown_index + ".cooldown", 0 );
             wait var_bca5c6c1;
             self.var_40d7d1f2 = 0;
-            level thread function_1bb979ca( flarecooldown, player, var_55716d54 );
+            level thread function_1bb979ca( flarecooldown, player, cooldown_index );
             player playsoundtoplayer( #"hash_62742dd7b6e513e", player );
             self flag::set( "flares_available" );
         }
@@ -4988,10 +4988,10 @@ function update_flare_ability( player, var_55716d54, active_time = 5, cooldown_t
 // Params 2
 // Checksum 0xf7dab243, Offset: 0xcc80
 // Size: 0x140
-function function_8aab5d53( player, var_55716d54 )
+function function_8aab5d53( player, cooldown_index )
 {
     self endon( #"death" );
-    player clientfield::set_player_uimodel( "vehicle.bindingCooldown" + var_55716d54 + ".cooldown", 0 );
+    player clientfield::set_player_uimodel( "vehicle.bindingCooldown" + cooldown_index + ".cooldown", 0 );
     
     while ( isdefined( player ) && isdefined( player.vh_vehicle ) )
     {
@@ -5012,7 +5012,7 @@ function function_8aab5d53( player, var_55716d54 )
             }
         }
         
-        player clientfield::set_player_uimodel( "vehicle.bindingCooldown" + var_55716d54 + ".cooldown", boostcooldown );
+        player clientfield::set_player_uimodel( "vehicle.bindingCooldown" + cooldown_index + ".cooldown", boostcooldown );
         wait 0.05;
     }
 }

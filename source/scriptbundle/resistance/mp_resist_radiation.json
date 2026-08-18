@@ -2,7 +2,7 @@
     "hash_fb8bfacd": 2,
     "hash_211900dca270dce9:hash_11f91d6a": "image#hash_211900dca270dce9",
     "configstringfiletype": "scriptbundle",
-    "hash_3c0f13d289c30c66:hash_5d66bb63": "localized17#hash_3c0f13d289c30c66",
+    "mpui/resistance_radiation:hash_5d66bb63": "localized17#mpui/resistance_radiation",
     "type": "resistance",
     "hash_a079a0f6": "none",
     "hash_215422c5": "poison",
@@ -12,6 +12,6 @@
     "hash_6aa3b54b": "none",
     "hash_7cedd9df": "none",
     "hash_8e287c54": "none",
-    "hash_ef3f10f4e17596:hash_3cf30434": "localized17#hash_ef3f10f4e17596",
+    "mpui/resistance_radiation_desc:hash_3cf30434": "localized17#mpui/resistance_radiation_desc",
     "name": "mp_resist_radiation"
 }

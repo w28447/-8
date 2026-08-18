@@ -7381,7 +7381,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1d690b3108e389",
+                    "value": "#amb_air_raid",
                     "unk1a": true
                 },
                 {
@@ -7459,7 +7459,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1d690b3108e389",
+                    "value": "#amb_air_raid",
                     "unk1a": true
                 },
                 {

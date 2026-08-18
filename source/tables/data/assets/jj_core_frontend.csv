@@ -1125,7 +1125,7 @@ localizeentry,#menu/revives_per_game
 localizeentry,d#hash_24a3e0f402bfd000
 localizeentry,d#hash_24acce4091313402
 localizeentry,d#hash_24b05d656df15f0d
-localizeentry,d#hash_24c9561478db5594
+localizeentry,d#menu/camo_loot_masks
 localizeentry,d#arena/restrictions
 localizeentry,#hash_24d3a1f222c423a0
 localizeentry,#weapon/jammer
@@ -1162,7 +1162,7 @@ localizeentry,d#mpui/elo_desc
 localizeentry,#hash_25bbc8944b6945c7
 localizeentry,d#menu/ok
 localizeentry,d#menu/on
-localizeentry,#hash_25c5d3fb80d2a515
+localizeentry,#em/prestige01a
 localizeentry,#hash_25c81cac35bf3fa0
 localizeentry,d#hash_25cb03d2b40cf4ba
 localizeentry,d#hash_25d3f454e864bb4a
@@ -1956,7 +1956,7 @@ localizeentry,#hash_42156571f4095cdb
 localizeentry,d#menu/merit_record
 localizeentry,d#hash_422c2d6777e82ad8
 localizeentry,d#hash_42490c9faeaafef8
-localizeentry,d#hash_424bf980508a053c
+localizeentry,d#objectives/tdm_score
 localizeentry,d#hash_42610051a06bba87
 localizeentry,#hash_426fcd76a799ca42
 localizeentry,d#hash_4272bbd56c2a48c8
@@ -2173,7 +2173,7 @@ localizeentry,#hash_4a53b7ce50de4fbc
 localizeentry,d#hash_4a584bc8c443f246
 localizeentry,d#hash_4a608d3fbb6904f9
 localizeentry,#hash_4a69f960f1cd39ee
-localizeentry,d#hash_4a6f079813e273c3
+localizeentry,d#menu/camo_loot_dogfight
 localizeentry,d#hash_4a73bd10e8563632
 localizeentry,#menu/charm_computer_teeth
 localizeentry,d#hash_4a7502a86996bd46
@@ -2495,7 +2495,7 @@ localizeentry,d#zmui/high_caliber_desc
 localizeentry,d#hash_56074d9a1b1a097d
 localizeentry,d#hash_56076e20ce50e4cb
 localizeentry,d#hash_560d002c6e40e5df
-localizeentry,d#hash_561a6371fe1e6f3a
+localizeentry,d#menu/camo_loot_vice
 localizeentry,d#hash_561bb2bb72747013
 localizeentry,#zmui/tungsten_tripler_title
 localizeentry,d#mpui/bb_control_desc
@@ -2961,7 +2961,7 @@ localizeentry,#hash_6624f299666ce71d
 localizeentry,d#hash_662d8c879b8bed90
 localizeentry,d#hash_662d8e879b8bf0f6
 localizeentry,d#hash_662d8f879b8bf2a9
-localizeentry,d#hash_663114aa52ffcb21
+localizeentry,d#menu/camo_loot_ww2
 localizeentry,#hash_66325526c09eadab
 localizeentry,d#hash_6635c45f05224db9
 localizeentry,d#menu/continue
@@ -3518,7 +3518,7 @@ localizeentry,d#hash_77b475bc5a7f3f46
 localizeentry,#hash_77c2a6e3c6b87f25
 localizeentry,d#hash_77c475d48916cfb0
 localizeentry,d#hash_77da7f13995bf06f
-localizeentry,d#hash_77dce7635423ba68
+localizeentry,d#menu/camo_loot_cyberpunk
 localizeentry,#menu/emblem_max_groups_used
 localizeentry,d#hash_77e7311dc74dccf5
 localizeentry,#menu/invite_game
@@ -3731,7 +3731,7 @@ localizeentry,d#wz/trejo
 localizeentry,d#hash_7fb86910f7d83fb0
 localizeentry,#hash_7fb8edeed471c115
 localizeentry,d#wz/mason_caps
-localizeentry,d#hash_7fd496c4cf9ec713
+localizeentry,d#menu/camo_loot_plasmadrive
 localizeentry,#hash_7fd909abd21c9c7d
 localizeentry,d#hash_7fdf4de037465fd4
 localizeentry,d#menu/teams_take_turns_defending_no_spawn

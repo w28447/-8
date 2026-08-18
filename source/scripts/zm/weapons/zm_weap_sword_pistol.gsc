@@ -216,7 +216,7 @@ function private blood_death_fx( var_14ef0a6c )
 // Params 3
 // Checksum 0x6ab9c639, Offset: 0xfa8
 // Size: 0x84
-function function_fe3f086c( e_target, leftswing, weapon = level.weaponnone )
+function chop_target( e_target, leftswing, weapon = level.weaponnone )
 {
     if ( isactor( e_target ) )
     {
@@ -339,7 +339,7 @@ function function_787cd537( first_time, leftswing, weapon = level.weaponnone )
         }
         else
         {
-            self thread function_fe3f086c( e_target, leftswing, weapon );
+            self thread chop_target( e_target, leftswing, weapon );
         }
         
         waitframe( 1 );

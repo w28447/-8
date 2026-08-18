@@ -1738,7 +1738,7 @@ function private function_46b38ca2( var_c34665fc )
 // Params 3
 // Checksum 0x3b41e63e, Offset: 0x6cc8
 // Size: 0x2de
-function function_a78b58f6( n_active, var_e05ded9, var_39cddd2a )
+function function_a78b58f6( n_active, n_max_total, str_flag_end )
 {
     a_s_center = struct::get_array( "forest_center_spawns" );
     a_s_north = struct::get_array( "forest_n_spawns" );
@@ -1765,9 +1765,9 @@ function function_a78b58f6( n_active, var_e05ded9, var_39cddd2a )
     
     s_loc = array::random( var_4275b4d6 );
     
-    while ( !level flag::get( var_39cddd2a ) )
+    while ( !level flag::get( str_flag_end ) )
     {
-        if ( isdefined( var_e05ded9 ) && var_70bce1d6 >= var_e05ded9 )
+        if ( isdefined( n_max_total ) && var_70bce1d6 >= n_max_total )
         {
             return;
         }

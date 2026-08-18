@@ -1686,7 +1686,7 @@ function damageclonewatch( damage, attacker, direction_vec, point, meansofdeath,
         
         if ( self.fakehealth <= 0 )
         {
-            self function_d1a1cc8d();
+            self deleteclone();
             return;
         }
     }
@@ -1698,7 +1698,7 @@ function damageclonewatch( damage, attacker, direction_vec, point, meansofdeath,
 // Params 0
 // Checksum 0x7b0cf19c, Offset: 0x4708
 // Size: 0x10c
-function function_d1a1cc8d()
+function deleteclone()
 {
     if ( isdefined( self.lastattacker ) )
     {

@@ -92,12 +92,12 @@
         },
         {
             "name": "#store_region",
-            "scrName": "#hash_3e911691",
+            "scrName": "#store_region",
             "type": "UINT32"
         },
         {
             "name": "#store_gamemode",
-            "scrName": "#hash_aad0d5b5",
+            "scrName": "#store_gamemode",
             "type": "STRING",
             "len": 24
         },

@@ -7,7 +7,7 @@
     "coop/revive_emergency_reserve_once": "蘇生中、緊急リザーブを消費",
     "hash_ddc319addc8bcb2": "GAME OVER",
     "killstreak/emp_inbound": "パワーコア展開",
-    "hash_1458857df9447fb3": "パワーコアをハッキング",
+    "killstreak/emp_hacked": "パワーコアをハッキング",
     "coop/player_needs_to_be_revived": "$(clientName)に蘇生が必要",
     "hash_19a78c0c5f7dd76f": "アクション",
     "killstreak/emp_not_available": "パワーコア使用不可",
@@ -29,7 +29,7 @@
     "warzone/button_revive": "^3[{+activate}]^7 蘇生",
     "mp/host_endgame_response": "ラウンド中のみゲームを終了できる",
     "coop/revive_emergency_reserve": "蘇生中、緊急リザーブを使用",
-    "hash_76d4a80b0b67fb9e": "パワーコア破壊",
+    "killstreak/destroyed_emp": "パワーコア破壊",
     "hash_77965c9740b1082d": "アクション",
     "killstreak/qrdrone_not_available": "ドラゴンファイア使用不可"
 }

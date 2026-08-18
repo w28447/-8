@@ -118,7 +118,7 @@ function init( var_5ea5c94d )
     }
     
     level thread function_a865c184();
-    level thread function_5caf3d1a();
+    level thread pap_door_setup();
     level thread open_pap_door();
     level.var_a05737eb = 0;
 }
@@ -601,7 +601,7 @@ function function_5815f500( player )
 // Params 0
 // Checksum 0xf174b629, Offset: 0x34a0
 // Size: 0x13c
-function function_5caf3d1a()
+function pap_door_setup()
 {
     if ( util::get_game_type() == #"zstandard" )
     {
@@ -2883,12 +2883,12 @@ function show_trail( nd_start, mdl_painting )
     
     if ( isdefined( mdl_painting ) )
     {
-        if ( !isdefined( nd_start.var_7eedec61 ) )
+        if ( !isdefined( nd_start.script_scale ) )
         {
-            nd_start.var_7eedec61 = 1;
+            nd_start.script_scale = 1;
         }
         
-        n_scale = nd_start.var_7eedec61;
+        n_scale = nd_start.script_scale;
         self.var_c176969a setspeedimmediate( 4 );
         self thread function_24bd273( n_scale );
         self.mdl_head thread function_24bd273( n_scale );
@@ -3495,7 +3495,7 @@ function function_4a648207()
 // Params 5
 // Checksum 0xb0886222, Offset: 0xc9d0
 // Size: 0x2b4
-function function_4dfd5cf6( str_vol, str_flag, vol_defend, var_39cddd2a, var_854f3b02 )
+function function_4dfd5cf6( str_vol, str_flag, vol_defend, str_flag_end, var_854f3b02 )
 {
     switch ( str_vol )
     {
@@ -3549,7 +3549,7 @@ function function_4dfd5cf6( str_vol, str_flag, vol_defend, var_39cddd2a, var_854
             break;
     }
     
-    e_marker thread function_51573c45( var_39cddd2a, var_854f3b02 );
+    e_marker thread function_51573c45( str_flag_end, var_854f3b02 );
     e_marker thread function_1a82ca71( str_flag );
 }
 
@@ -3557,9 +3557,9 @@ function function_4dfd5cf6( str_vol, str_flag, vol_defend, var_39cddd2a, var_854
 // Params 2
 // Checksum 0x775c5ce9, Offset: 0xcc90
 // Size: 0xd8
-function function_51573c45( var_39cddd2a, var_854f3b02 )
+function function_51573c45( str_flag_end, var_854f3b02 )
 {
-    level endon( #"end_game", var_39cddd2a );
+    level endon( #"end_game", str_flag_end );
     self endon( #"death" );
     
     while ( true )
@@ -3722,13 +3722,13 @@ function function_d48fb847( var_ffba68db, str_flag, e_volume, e_player )
 // Params 3
 // Checksum 0x6582196e, Offset: 0xd378
 // Size: 0xfc
-function check_player_proximity( vol_defend, var_39cddd2a, var_854f3b02 )
+function check_player_proximity( vol_defend, str_flag_end, var_854f3b02 )
 {
-    while ( !level flag::get( var_39cddd2a ) )
+    while ( !level flag::get( str_flag_end ) )
     {
         if ( var_854f3b02 == "clock_defend" )
         {
-            array::thread_all( mansion_util::function_91dfc9d4( vol_defend ), &function_4387bfae, vol_defend, var_39cddd2a );
+            array::thread_all( mansion_util::function_91dfc9d4( vol_defend ), &function_4387bfae, vol_defend, str_flag_end );
         }
         
         if ( mansion_util::function_98ca58fc( vol_defend ) )
@@ -3755,13 +3755,13 @@ function check_player_proximity( vol_defend, var_39cddd2a, var_854f3b02 )
 // Params 2
 // Checksum 0x173b612e, Offset: 0xd480
 // Size: 0x134
-function function_4387bfae( vol_defend, var_39cddd2a )
+function function_4387bfae( vol_defend, str_flag_end )
 {
     self notify( #"hash_3f1155789e552158" );
     self endon( #"disconnect", #"hash_3f1155789e552158" );
     self clientfield::set( "" + #"hash_49de76d6c4f95e5d", 1 );
     
-    while ( isplayer( self ) && self istouching( vol_defend ) && !self laststand::player_is_in_laststand() && !level flag::get( var_39cddd2a ) )
+    while ( isplayer( self ) && self istouching( vol_defend ) && !self laststand::player_is_in_laststand() && !level flag::get( str_flag_end ) )
     {
         waitframe( 1 );
     }

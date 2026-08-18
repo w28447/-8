@@ -136,9 +136,9 @@ function private function_9e6251db( str_speed )
     var_cb3d2b85 = self.hour_hand.angles;
     var_86c6b8df = var_cb3d2b85[ 0 ] - 7.5;
     var_f6197f53 = self.var_f6197f53;
-    var_e51ab168 = var_f6197f53 + 1;
+    n_next_index = var_f6197f53 + 1;
     self.var_f6197f53++;
-    var_64807aea = "pos_" + var_f6197f53 + "_to_" + var_e51ab168 + "_" + str_speed;
+    var_64807aea = "pos_" + var_f6197f53 + "_to_" + n_next_index + "_" + str_speed;
     var_c74251a4 = scene::function_8582657c( self.scriptbundlename, var_64807aea );
     
     if ( var_c74251a4 <= 0 )

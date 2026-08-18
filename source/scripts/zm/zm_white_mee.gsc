@@ -1283,9 +1283,9 @@ function function_6fa00342( e_follow )
     
     while ( true )
     {
-        var_9d88bc68 = anglestoforward( e_follow.angles );
-        var_9d88bc68 = 15 * vectornormalize( var_9d88bc68 );
-        goal_pos = e_follow.origin - var_9d88bc68;
+        goal_vec = anglestoforward( e_follow.angles );
+        goal_vec = 15 * vectornormalize( goal_vec );
+        goal_pos = e_follow.origin - goal_vec;
         goal_pos = getnearestpathpoint( goal_pos, 64 );
         level.var_7b22edab.origin = goal_pos + ( 0, 0, 15 );
         

@@ -323,7 +323,7 @@ soundalias,#hash_679a117d17bd890
 soundalias,#vox_tvoi_tutor_torq_enemy_2_down
 soundalias,#hash_82d8fc262fa2602
 soundalias,#hash_84f1226301ebcef
-soundalias,#hash_8abeeabd2aa2c9c
+soundalias,#amb_wind_exterior_2d
 soundalias,#exp_barrel_lfe
 soundalias,#hash_8ef954de078544d
 soundalias,#vox_tvoi_tutor_torq_enemy_razor_wire_0
@@ -433,7 +433,7 @@ soundalias,#hash_2d923acee350bc72
 soundalias,#vox_tvoi_tutor_torq_razor_wire_dmg_nag
 soundalias,#hash_2e25f1d6ca55e5d9
 soundalias,#exp_mp_propane_tank_explo
-soundalias,#hash_2ec3de3874855810
+soundalias,#exp_redbarrel
 soundalias,#dst_server_power
 soundalias,#amb_generator_1
 soundalias,#dst_foodstand
@@ -494,7 +494,7 @@ soundalias,#hash_3fa88e2600b7db91
 soundalias,#amb_water_drip_water
 soundalias,#hash_400ce43d6acfaeca
 soundalias,#hash_400ce53d6acfb07d
-soundalias,#hash_40a808198ebe44e3
+soundalias,#amb_door_wind
 soundalias,#vox_tvoi_tutor_torq_combo_cover_motivate
 soundalias,#hash_416a0e7170369747
 soundalias,#hash_4171f1ebb5e0d735
@@ -567,7 +567,7 @@ soundalias,#hash_5e6c6fe38f11ed65
 soundalias,#vox_tvoi_tutor_torq_enemy_stuck_nag
 soundalias,#hash_5ecc726a06840447
 soundalias,#hash_5f07c850bd480725
-soundalias,#hash_5f0cf846c1e5f92e
+soundalias,#amb_wind_interior_2d
 soundalias,#vox_tvoi_tutor_torq_team_1_down
 soundalias,#vox_tvoi_tutor_torq_final_1_smrt_cvr_destroy
 soundalias,#hash_5fbc57fe7327e948

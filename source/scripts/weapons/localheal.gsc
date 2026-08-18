@@ -289,8 +289,8 @@ function regen_health( weapon, source_player, var_7b8559d4 )
 function function_903b9495( weapon, source_player )
 {
     player = self;
-    var_4e843ec0 = isdefined( isdefined( level.localhealbundle.var_c114af76 ) ? level.localhealbundle.var_c114af76 : player != source_player ? level.localhealbundle.var_a2a05449 : 0 ) ? isdefined( level.localhealbundle.var_c114af76 ) ? level.localhealbundle.var_c114af76 : player != source_player ? level.localhealbundle.var_a2a05449 : 0 : 0;
-    player regen_health( weapon, source_player, var_4e843ec0 );
+    healthbonus = isdefined( isdefined( level.localhealbundle.var_c114af76 ) ? level.localhealbundle.var_c114af76 : player != source_player ? level.localhealbundle.var_a2a05449 : 0 ) ? isdefined( level.localhealbundle.var_c114af76 ) ? level.localhealbundle.var_c114af76 : player != source_player ? level.localhealbundle.var_a2a05449 : 0 : 0;
+    player regen_health( weapon, source_player, healthbonus );
     
     if ( isdefined( self.var_121392a1 ) )
     {

@@ -7,7 +7,7 @@
     "coop/revive_emergency_reserve_once": "Reviving, Emergency Reserve Expended",
     "hash_ddc319addc8bcb2": "GAME OVER",
     "killstreak/emp_inbound": "Power Core deployed",
-    "hash_1458857df9447fb3": "Power Core hacked",
+    "killstreak/emp_hacked": "Power Core hacked",
     "coop/player_needs_to_be_revived": "$(clientName) needs to be revived",
     "hash_19a78c0c5f7dd76f": "Interact",
     "killstreak/emp_not_available": "Power Core not available",
@@ -29,7 +29,7 @@
     "warzone/button_revive": "^3[{+activate}]^7 Revive",
     "mp/host_endgame_response": "Round must be in progress to end game.",
     "coop/revive_emergency_reserve": "Reviving, Emergency Reserve Activated",
-    "hash_76d4a80b0b67fb9e": "Destroyed Power Core",
+    "killstreak/destroyed_emp": "Destroyed Power Core",
     "hash_77965c9740b1082d": "Interact",
     "killstreak/qrdrone_not_available": "Dragonfire not available"
 }

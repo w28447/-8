@@ -828,9 +828,9 @@ function private setupspawnlistforspawngroup( spawngroupkey, spawnlistname, team
     }
     
     self.spawns = [];
-    var_38345be7 = 0;
-    var_496cfe58 = 0;
-    var_12de913c = 0;
+    spawnposx = 0;
+    spawnposy = 0;
+    spawnposz = 0;
     var_3cc38ddd = 0;
     
     foreach ( spawn in rawspawns )
@@ -846,9 +846,9 @@ function private setupspawnlistforspawngroup( spawngroupkey, spawnlistname, team
         }
         
         array::add( self.spawns, spawn );
-        var_38345be7 += spawn.origin[ 0 ];
-        var_496cfe58 += spawn.origin[ 1 ];
-        var_12de913c += spawn.origin[ 2 ];
+        spawnposx += spawn.origin[ 0 ];
+        spawnposy += spawn.origin[ 1 ];
+        spawnposz += spawn.origin[ 2 ];
         var_3cc38ddd++;
     }
     
@@ -856,7 +856,7 @@ function private setupspawnlistforspawngroup( spawngroupkey, spawnlistname, team
     
     if ( var_3cc38ddd > 0 )
     {
-        var_b5d9fb3a = ( var_38345be7 / var_3cc38ddd, var_496cfe58 / var_3cc38ddd, var_12de913c / var_3cc38ddd );
+        var_b5d9fb3a = ( spawnposx / var_3cc38ddd, spawnposy / var_3cc38ddd, spawnposz / var_3cc38ddd );
     }
     
     addspawnpoints( team, self.spawns, spawnlistname );

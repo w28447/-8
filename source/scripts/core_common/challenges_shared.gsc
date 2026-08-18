@@ -1123,7 +1123,7 @@ function private function_d6f929d6()
 // Params 2
 // Checksum 0x4b526f3d, Offset: 0x3420
 // Size: 0x1ec
-function gameend( winner, var_c1e98979 )
+function gameend( winner, end_type )
 {
     waitframe( 1 );
     data = spawnstruct();
@@ -2476,9 +2476,9 @@ function playerkilled( einflictor, attacker, idamage, smeansofdeath, weapon, shi
         data.var_6799f1da = victim.var_ea1458aa.var_6799f1da;
     }
     
-    if ( isdefined( victim.var_9cd2c51d ) )
+    if ( isdefined( victim.challenge_info ) )
     {
-        data.var_70763083 = victim.var_9cd2c51d.var_c54af9a9;
+        data.var_70763083 = victim.challenge_info.var_c54af9a9;
     }
     
     data.victimweapon = victim.currentweapon;
@@ -2657,10 +2657,10 @@ function playerkilled( einflictor, attacker, idamage, smeansofdeath, weapon, shi
             }
         }
         
-        if ( isdefined( attacker.var_9cd2c51d ) )
+        if ( isdefined( attacker.challenge_info ) )
         {
-            data.var_e5241328 = attacker.var_9cd2c51d.var_c54af9a9;
-            data.var_cc8f0762 = attacker.var_9cd2c51d.var_6e219f3c;
+            data.var_e5241328 = attacker.challenge_info.var_c54af9a9;
+            data.var_cc8f0762 = attacker.challenge_info.var_6e219f3c;
         }
         
         data.var_a99236f2 = victim.var_ead9cdbf;

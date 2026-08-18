@@ -459,7 +459,7 @@ soundalias,#hash_2d923acee350bc72
 soundalias,#hash_2e25f1d6ca55e5d9
 soundalias,#exp_mp_propane_tank_explo
 soundalias,#hash_2ea3b644e71ae89c
-soundalias,#hash_2ec3de3874855810
+soundalias,#exp_redbarrel
 soundalias,#hash_2f0951bf7b3860fe
 soundalias,#dst_server_power
 soundalias,#hash_2f703836d862353e
@@ -572,7 +572,7 @@ soundalias,#dst_fire_extinguisher
 soundalias,#hash_599ce731a22cbb2b
 soundalias,#hash_59e128a5a58e7d49
 soundalias,#hash_5b18895703fba823
-soundalias,#hash_5bbc0710afc0dff6
+soundalias,#amb_fire_medium
 soundalias,#amb_car_alarm
 soundalias,#hash_5ca8d4adbb8576c5
 soundalias,#hash_5e6c6fe38f11ed65

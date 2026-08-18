@@ -147,7 +147,7 @@ function default_onalivecountchange( team )
 // Params 1
 // Checksum 0x4dbb18b5, Offset: 0x5f8
 // Size: 0x54
-function onendgame( var_c1e98979 )
+function onendgame( end_type )
 {
     if ( level.scoreroundwinbased )
     {

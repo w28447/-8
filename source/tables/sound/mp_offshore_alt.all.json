@@ -8331,13 +8331,13 @@
         {
             "value": 144,
             "next": 65535,
-            "name": "#hash_8abeeabd2aa2c9c",
+            "name": "#amb_wind_exterior_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_8abeeabd2aa2c9c",
+                    "name": "#amb_wind_exterior_2d",
                     "secondaryname": "#hash_15e5388c49b2038f",
                     "assetId": "#hash_74f752393bd065fd",
                     "assetFileNameSustain": "#mp_offshore_alt.all",
@@ -8430,13 +8430,13 @@
         {
             "value": 30,
             "next": 69,
-            "name": "#hash_5f0cf846c1e5f92e",
+            "name": "#amb_wind_interior_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5f0cf846c1e5f92e",
+                    "name": "#amb_wind_interior_2d",
                     "secondaryname": "#hash_540c4c8b3a758669",
                     "assetId": "#hash_50cd2eab631c0c2f",
                     "assetFileNameSustain": "#mp_offshore_alt.all",
@@ -20170,13 +20170,13 @@
         {
             "value": 148,
             "next": 65535,
-            "name": "#hash_2ec3de3874855810",
+            "name": "#exp_redbarrel",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore_alt.all",
@@ -20217,7 +20217,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore_alt.all",
@@ -20258,7 +20258,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore_alt.all",
@@ -20299,7 +20299,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore_alt.all",
@@ -20340,7 +20340,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore_alt.all",
@@ -20381,7 +20381,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore_alt.all",
@@ -20422,7 +20422,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_offshore_alt.all",
@@ -22356,7 +22356,7 @@
             "duck": "default",
             "id": "#mp_offshore_container",
             "reverb": "#room_bathroom",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -22376,7 +22376,7 @@
             "duck": "default",
             "id": "#mp_offshore_outdoor",
             "reverb": "#outdoor_still",
-            "loop": "#hash_8abeeabd2aa2c9c",
+            "loop": "#amb_wind_exterior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
@@ -22396,7 +22396,7 @@
             "duck": "default",
             "id": "#mp_offshore_partial_small",
             "reverb": "#room_livingroom",
-            "loop": "#hash_8abeeabd2aa2c9c",
+            "loop": "#amb_wind_exterior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
@@ -22416,7 +22416,7 @@
             "duck": "default",
             "id": "#mp_offshore_small_room",
             "reverb": "#room_livingroom",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -22436,7 +22436,7 @@
             "duck": "default",
             "id": "#mp_offshore_tunnel_bridge",
             "reverb": "#narrow_cave",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",

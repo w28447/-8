@@ -34,6 +34,6 @@ function preload()
 function clear_hud( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     self zm::function_92f0c63( localclientnum );
-    self zm_perk_death_perception::function_25410869( localclientnum );
+    self zm_perk_death_perception::update_visuals( localclientnum );
 }
 

@@ -622,7 +622,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_d500e33d30e480d",
+                    "value": "#amb_air_r",
                     "unk1a": true
                 },
                 {
@@ -826,7 +826,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_d500e33d30e480d",
+                    "value": "#amb_air_r",
                     "unk1a": true
                 },
                 {

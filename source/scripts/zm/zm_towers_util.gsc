@@ -122,11 +122,11 @@ function function_6408c105()
         
         if ( isdefined( model ) && isdefined( model.target ) )
         {
-            var_393a819e = getent( model.target, "targetname" );
+            model_backing = getent( model.target, "targetname" );
             
-            if ( isdefined( var_393a819e ) )
+            if ( isdefined( model_backing ) )
             {
-                var_393a819e ghost();
+                model_backing ghost();
             }
         }
         
@@ -178,11 +178,11 @@ function show_zbarriers()
         
         if ( isdefined( model ) && isdefined( model.target ) )
         {
-            var_393a819e = getent( model.target, "targetname" );
+            model_backing = getent( model.target, "targetname" );
             
-            if ( isdefined( var_393a819e ) )
+            if ( isdefined( model_backing ) )
             {
-                var_393a819e show();
+                model_backing show();
             }
         }
         

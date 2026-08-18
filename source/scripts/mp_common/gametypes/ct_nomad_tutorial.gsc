@@ -1024,7 +1024,7 @@ function function_34696b67()
     ct_utils::function_9aca2fa0( "ct_action" );
     level notify( #"bomb_cleanup" );
     level notify( #"start_earn_killstreak_collision" );
-    e_bomb.gameobject gameobjects::function_2efe0342();
+    e_bomb.gameobject gameobjects::disable_gameobject();
     setbombtimer( "A", 0 );
     setmatchflag( "bomb_timer_a", 0 );
     ct_utils::function_c2a10fc();

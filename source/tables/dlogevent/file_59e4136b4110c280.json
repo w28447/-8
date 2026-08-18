@@ -86,13 +86,13 @@
     "members": [
         {
             "name": "#build_name",
-            "scrName": "#hash_bad8b69b",
+            "scrName": "#build_name",
             "type": "STRING",
             "len": 128
         },
         {
             "name": "#build_time",
-            "scrName": "#hash_2a9c5756",
+            "scrName": "#build_time",
             "type": "STRING",
             "len": 128
         },
@@ -103,7 +103,7 @@
         },
         {
             "name": "#build_type",
-            "scrName": "#hash_3e930327",
+            "scrName": "#build_type",
             "type": "STRING",
             "len": 128
         },
@@ -125,7 +125,7 @@
         },
         {
             "name": "#build_changelist",
-            "scrName": "#hash_11f6f035",
+            "scrName": "#build_changelist",
             "type": "INT32"
         },
         {

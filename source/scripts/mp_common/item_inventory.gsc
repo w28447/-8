@@ -4348,11 +4348,11 @@ function function_a2c7ce35()
     assert( isplayer( self ) );
     var_3e9ef0a1 = array( array( #"frag_grenade_wz_item", #"cluster_semtex_wz_item", #"acid_bomb_wz_item", #"molotov_wz_item", #"wraithfire_wz_item", #"hatchet_wz_item", #"tomahawk_t8_wz_item", #"seeker_mine_wz_item", #"dart_wz_item", #"hawk_wz_item", #"ultimate_turret_wz_item" ), array( #"swat_grenade_wz_item", #"concussion_wz_item", #"smoke_grenade_wz_item", #"smoke_grenade_wz_item_spring_holiday", #"emp_grenade_wz_item", #"spectre_grenade_wz_item" ), array( #"grapple_wz_item", #"unlimited_grapple_wz_item", #"barricade_wz_item", #"spiked_barrier_wz_item", #"trophy_system_wz_item", #"concertina_wire_wz_item", #"sensor_dart_wz_item", #"supply_pod_wz_item", #"trip_wire_wz_item", #"cymbal_monkey_wz_item", #"homunculus_wz_item", #"vision_pulse_wz_item", #"flare_gun_wz_item", #"flare_gun_veh_wz_item", #"wz_snowball", #"wz_waterballoon" ) );
     var_c77511ea = array( 8192, 16384, 32768 );
-    var_710be50e = array( 12 );
+    equipmentslots = array( 12 );
     
     for ( itemindex = 0; itemindex < 10 ; itemindex++ )
     {
-        var_710be50e[ var_710be50e.size ] = itemindex;
+        equipmentslots[ equipmentslots.size ] = itemindex;
     }
     
     for ( equipmenttype = 0; equipmenttype < var_3e9ef0a1.size ; equipmenttype++ )
@@ -4376,9 +4376,9 @@ function function_a2c7ce35()
             
             maxstack = item_inventory_util::function_cfa794ca( self.inventory.var_7658cbec, itemspawnpoint.itementry );
             
-            for ( itemindex = 0; itemindex < var_710be50e.size ; itemindex++ )
+            for ( itemindex = 0; itemindex < equipmentslots.size ; itemindex++ )
             {
-                item = self.inventory.items[ var_710be50e[ itemindex ] ];
+                item = self.inventory.items[ equipmentslots[ itemindex ] ];
                 
                 if ( item.networkid == 32767 )
                 {

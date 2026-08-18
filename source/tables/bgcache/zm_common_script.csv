@@ -444,7 +444,7 @@ eventstring,#zombie_callings_notification
 eventstring,#endround
 eventstring,#custom
 eventstring,#restart_level_zm
-eventstring,#hash_167fc7366e373151
+eventstring,#play_promo_anim
 eventstring,#allies
 eventstring,#back
 eventstring,#resume_end_game

@@ -442,7 +442,7 @@ soundalias,#hash_2d9239cee350babf
 soundalias,#hash_2d923acee350bc72
 soundalias,#hash_2e25f1d6ca55e5d9
 soundalias,#exp_mp_propane_tank_explo
-soundalias,#hash_2ec3de3874855810
+soundalias,#exp_redbarrel
 soundalias,#dst_server_power
 soundalias,#hash_2f22d456c8900d67
 soundalias,#dst_foodstand
@@ -537,7 +537,7 @@ soundalias,#hash_5da257cb517315ec
 soundalias,#hash_5e6c6fe38f11ed65
 soundalias,#hash_5ea9e2244c05f7cf
 soundalias,#hash_5f07c850bd480725
-soundalias,#hash_5f0cf846c1e5f92e
+soundalias,#amb_wind_interior_2d
 soundalias,#hash_5f92d978f0771e82
 soundalias,#hash_5fbc57fe7327e948
 soundalias,#hash_5fe5171dd42e5638

@@ -338,7 +338,7 @@ function private blood_death_fx( var_14ef0a6c )
 // Params 2
 // Checksum 0x5eb9500f, Offset: 0x1560
 // Size: 0x7c
-function function_fe3f086c( e_target, weapon = level.weaponnone )
+function chop_target( e_target, weapon = level.weaponnone )
 {
     if ( isactor( e_target ) )
     {
@@ -470,7 +470,7 @@ function melee_zombies( weapon = level.weaponnone )
         else
         {
             self thread scepter_rumble( 3 );
-            self thread function_fe3f086c( e_target, weapon );
+            self thread chop_target( e_target, weapon );
         }
         
         waitframe( 1 );

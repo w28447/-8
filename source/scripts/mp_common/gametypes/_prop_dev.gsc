@@ -310,7 +310,7 @@
             
             if ( getdvarint( #"hash_2a03924a528ff9a8", 0 ) != 0 )
             {
-                function_5e0d41c4();
+                makeclone();
                 setdvar( #"hash_2a03924a528ff9a8", 0 );
             }
             
@@ -1526,7 +1526,7 @@
         {
             foreach ( clone in level.var_2ebdcb74 )
             {
-                clone prop_controls::function_d1a1cc8d();
+                clone prop_controls::deleteclone();
             }
         }
         
@@ -1546,7 +1546,7 @@
     // Params 0
     // Checksum 0x83780679, Offset: 0x69c0
     // Size: 0x10a, Type: dev
-    function function_5e0d41c4()
+    function makeclone()
     {
         player = level.players[ 0 ];
         angles = player.angles;

@@ -6,19 +6,19 @@
 // Size: 0xd4
 function perk_setperk( str_perk )
 {
-    if ( !isdefined( self.var_fb3c9d6a ) )
+    if ( !isdefined( self.perk_refcount ) )
     {
-        self.var_fb3c9d6a = [];
+        self.perk_refcount = [];
     }
     
-    if ( !isdefined( self.var_fb3c9d6a[ str_perk ] ) )
+    if ( !isdefined( self.perk_refcount[ str_perk ] ) )
     {
-        self.var_fb3c9d6a[ str_perk ] = 0;
+        self.perk_refcount[ str_perk ] = 0;
     }
     
-    assert( self.var_fb3c9d6a[ str_perk ] >= 0, "<dev string:x38>" );
-    assert( self.var_fb3c9d6a[ str_perk ] < 23, "<dev string:x52>" );
-    self.var_fb3c9d6a[ str_perk ]++;
+    assert( self.perk_refcount[ str_perk ] >= 0, "<dev string:x38>" );
+    assert( self.perk_refcount[ str_perk ] < 23, "<dev string:x52>" );
+    self.perk_refcount[ str_perk ]++;
     self setperk( str_perk );
 }
 
@@ -28,20 +28,20 @@ function perk_setperk( str_perk )
 // Size: 0xb4
 function perk_unsetperk( str_perk )
 {
-    if ( !isdefined( self.var_fb3c9d6a ) )
+    if ( !isdefined( self.perk_refcount ) )
     {
-        self.var_fb3c9d6a = [];
+        self.perk_refcount = [];
     }
     
-    if ( !isdefined( self.var_fb3c9d6a[ str_perk ] ) )
+    if ( !isdefined( self.perk_refcount[ str_perk ] ) )
     {
-        self.var_fb3c9d6a[ str_perk ] = 0;
+        self.perk_refcount[ str_perk ] = 0;
     }
     
-    self.var_fb3c9d6a[ str_perk ]--;
-    assert( self.var_fb3c9d6a[ str_perk ] >= 0, "<dev string:x38>" );
+    self.perk_refcount[ str_perk ]--;
+    assert( self.perk_refcount[ str_perk ] >= 0, "<dev string:x38>" );
     
-    if ( self.var_fb3c9d6a[ str_perk ] <= 0 )
+    if ( self.perk_refcount[ str_perk ] <= 0 )
     {
         self unsetperk( str_perk );
     }
@@ -53,7 +53,7 @@ function perk_unsetperk( str_perk )
 // Size: 0x4a, Type: bool
 function perk_hasperk( str_perk )
 {
-    if ( isdefined( self.var_fb3c9d6a ) && isdefined( self.var_fb3c9d6a[ str_perk ] ) && self.var_fb3c9d6a[ str_perk ] > 0 )
+    if ( isdefined( self.perk_refcount ) && isdefined( self.perk_refcount[ str_perk ] ) && self.perk_refcount[ str_perk ] > 0 )
     {
         return true;
     }
@@ -68,6 +68,6 @@ function perk_hasperk( str_perk )
 function perk_reset_all()
 {
     self clearperks();
-    self.var_fb3c9d6a = [];
+    self.perk_refcount = [];
 }
 

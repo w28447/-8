@@ -773,11 +773,11 @@ function function_4c71848e()
             continue;
         }
         
-        var_e8ab126e = distancesquared( var_31f7011a[ i ].origin, var_d7eff26a.origin );
+        n_newdist = distancesquared( var_31f7011a[ i ].origin, var_d7eff26a.origin );
         
-        if ( var_e8ab126e < var_56feeec4 )
+        if ( n_newdist < var_56feeec4 )
         {
-            var_56feeec4 = var_e8ab126e;
+            var_56feeec4 = n_newdist;
             var_b2aa54a9 = var_d7eff26a;
         }
     }

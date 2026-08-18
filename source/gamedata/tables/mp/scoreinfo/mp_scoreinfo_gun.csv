@@ -138,10 +138,10 @@
 #kill_enemy_with_care_package_crush,0,0,0,0,0,FALSE,0,FALSE,&#,#stats_kill_enemy_with_care_package_crush,8#medal_kill_enemy_with_care_package_crush,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,TRUE,0,u9?0,0
 #dart_kill,0,0,0,0,0,FALSE,0,FALSE,&#score/dart_kill,#stats_dart_kill,8#medal_dart_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #artillery_barrage_kill,0,0,0,0,0,FALSE,0,FALSE,&#score/lightning_strike_kill,#stats_lightning_strike_kill,8#medal_lightning_strike_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#hellstorm_missile_kill,0,0,0,0,0,FALSE,0,FALSE,&#hash_6b1c2e52cb53651b,#stats_hellstorm_missile_kill,8#medal_hellstorm_missile_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#hellstorm_missile_kill,0,0,0,0,0,FALSE,0,FALSE,&#score/hellstorm_kill,#stats_hellstorm_missile_kill,8#medal_hellstorm_missile_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #automated_turret_kill,0,0,0,0,0,FALSE,0,FALSE,&#score/sentry_gun_kill,#stats_automated_turret_kill,8#medal_automated_turret_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #drone_squadron_kill,0,0,0,0,0,FALSE,0,FALSE,&#hash_c80058a22256b5f,#stats_drone_squadron_kill,8#medal_drone_squadron_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
-#attack_chopper_kill,0,0,0,0,0,FALSE,0,FALSE,&#hash_1ae6942fc2b0f77c,#stats_attack_chopper_kill,8#medal_attack_chopper_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
+#attack_chopper_kill,0,0,0,0,0,FALSE,0,FALSE,&#score/helicopter_kill,#stats_attack_chopper_kill,8#medal_attack_chopper_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #tank_robot_kill,0,0,0,0,0,FALSE,0,FALSE,&#hash_4e188d7a56a7a69b,#stats_tank_robot_kill,8#medal_tank_robot_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #swat_team_kill,0,0,0,0,0,FALSE,0,FALSE,&#hash_64d99d34cbc5cba1,#stats_swat_team_kill,8#medal_swat_team_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0
 #overwatch_helicopter_kill,0,0,0,0,0,FALSE,0,FALSE,&#score/overwatch_helicopter_kill,#stats_overwatch_helicopter_kill,8#medal_overwatch_helicopter_kill,TRUE,TRUE,FALSE,#scorestreak,#,#,#,#,FALSE,FALSE,0,u9?0,0

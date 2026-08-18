@@ -3941,7 +3941,7 @@ string,#mpui/dualoptic_desc
 string,#mpui/camo_huntsman
 string,#hash_246c7d9118b22299
 string,#hash_24a3e0f402bfd000
-string,#hash_24c9561478db5594
+string,#menu/camo_loot_masks
 string,#menu/camo_loot_shimmer
 string,#hash_25811ef8abc80b1f
 string,#mpui/elo_desc
@@ -4092,7 +4092,7 @@ string,#hash_4973da5ba484b2ae
 string,#hash_49e88c8053d4f73e
 string,#mpui/camo_heatstroke
 string,#hash_4a584bc8c443f246
-string,#hash_4a6f079813e273c3
+string,#menu/camo_loot_dogfight
 string,#hash_4adb4ee2a021cc5f
 string,#hash_4b105b524a93b53d
 string,#hash_4beb10678533accf
@@ -4135,7 +4135,7 @@ string,#hash_556fbdaebf02d158
 string,#hash_558dab41980bd79b
 string,#zmui/high_caliber_desc
 string,#hash_560d002c6e40e5df
-string,#hash_561a6371fe1e6f3a
+string,#menu/camo_loot_vice
 string,#hash_56ee5965eeb986f7
 string,#mpui/steadyaim2_desc
 string,#hash_5821a2758405c5ca
@@ -4194,7 +4194,7 @@ string,#hash_652798c8c39df5b0
 string,#hash_652c97821a6cf09d
 string,#zombie/grab_shield_free
 string,#hash_660652361297f2ab
-string,#hash_663114aa52ffcb21
+string,#menu/camo_loot_ww2
 string,#hash_665fcaf288735f26
 string,#hash_66d33b296eb64fbc
 string,#mpui/stalker2
@@ -4239,7 +4239,7 @@ string,#mpui/camo_ash
 string,#hash_768c5aeecc2d7cc4
 string,#mpui/grip2_desc
 string,#hash_7725a43a5e8755ad
-string,#hash_77dce7635423ba68
+string,#menu/camo_loot_cyberpunk
 string,#menu/camo_active_celestial
 string,#menu/camo_loot_citrus
 string,#mpui/rf_desc
@@ -4272,7 +4272,7 @@ string,#hash_7e343f7677cbafe5
 string,#mpui/tacknife_desc
 string,#menu/camo_loot_paradise
 string,#hash_7f4287cceb84c614
-string,#hash_7fd496c4cf9ec713
+string,#menu/camo_loot_plasmadrive
 fx,#zm_ai/fx8_cata_elec_aura
 fx,#zombie/fx8_magicbox_opened
 fx,#hash_6ce60bc4b64e793
@@ -4527,7 +4527,7 @@ radiant_exploder,#hash_7740c848eaa83d41
 radiant_exploder,#hash_7777c519802a69fb
 radiant_exploder,#exp_lgt_smg_accurate_t8
 radiant_exploder,#fxexp_crypt_glow
-radiant_exploder,#hash_7ade1c973812c88c
+radiant_exploder,#lgt_vending_widows_wine_on
 radiant_exploder,#exp_lgt_crypt_darker
 radiant_exploder,#hash_7dd13e6be622a133
 radiant_exploder,#hash_7e2e297781bdcd39
@@ -7137,7 +7137,7 @@ soundalias,#hash_2fe4bc4c524c44e7
 soundalias,#hash_2fe4bd4c524c469a
 soundalias,#hash_2fe4be4c524c484d
 soundalias,#hash_2ff0b0abb26e1dcc
-soundalias,#hash_3004f588bf60f0ec
+soundalias,#zmb_hellhound_loop_breath
 soundalias,#hash_3019afe90c2eb3aa
 soundalias,#hash_3027fdcff390baa4
 soundalias,#hash_30326e4e0340833e
@@ -10378,7 +10378,7 @@ soundalias,#hash_6ce39aa5daf7fcf2
 soundalias,#hash_6ce39ba5daf7fea5
 soundalias,#zmb_fire_loop
 soundalias,#hash_6cf93b6e894fcf07
-soundalias,#hash_6cfa41a4b04b4a0a
+soundalias,#zmb_vocals_hellhound_ambient
 soundalias,#hash_6d001db51fd0d6a9
 soundalias,#hash_6d001eb51fd0d85c
 soundalias,#hash_6d001fb51fd0da0f

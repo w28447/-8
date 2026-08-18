@@ -270,7 +270,7 @@ function onplayerspawned()
 {
     if ( isdefined( self.ishacked ) ? self.ishacked : 0 )
     {
-        thread function_39026c34( self.var_e2131267, self, 0 );
+        thread hackplayer( self.var_e2131267, self, 0 );
     }
 }
 
@@ -547,7 +547,7 @@ function private function_73d5db3b( player )
 {
     player.var_be9a0b4b = [];
     player.var_be9a0b4b[ 0 ] = getplayers();
-    function_d65b8dbe( player.var_be9a0b4b[ 0 ], &function_8d50c205 );
+    sort_players( player.var_be9a0b4b[ 0 ], &function_8d50c205 );
     player.var_be9a0b4b[ 1 ] = [];
     player.var_be9a0b4b[ 2 ] = [];
     
@@ -579,7 +579,7 @@ function private function_73d5db3b( player )
 // Params 2, eflags: 0x4
 // Checksum 0x1f6c0cd6, Offset: 0x1cb0
 // Size: 0x2c
-function private function_d65b8dbe( &array, sort_func )
+function private sort_players( &array, sort_func )
 {
     array::bubble_sort( array, sort_func );
 }
@@ -827,7 +827,7 @@ function private function_2b2ed159( entity, attackingplayer )
     {
         targetname = #"player";
         playernum = entity.entnum;
-        thread function_39026c34( attackingplayer, entity, 1 );
+        thread hackplayer( attackingplayer, entity, 1 );
     }
     else
     {
@@ -1129,7 +1129,7 @@ function private function_f255c737( var_11a83c3a )
 // Params 3
 // Checksum 0x6e34c7c4, Offset: 0x37d8
 // Size: 0x144
-function function_39026c34( attackingplayer, var_11a83c3a, var_4f6e2cbe )
+function hackplayer( attackingplayer, var_11a83c3a, var_4f6e2cbe )
 {
     assert( isdefined( attackingplayer ) );
     assert( isdefined( var_11a83c3a ) );

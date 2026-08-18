@@ -91,7 +91,7 @@ function onstartgametype()
 // Params 1
 // Checksum 0xaac0b90a, Offset: 0x548
 // Size: 0x74
-function onendgame( var_c1e98979 )
+function onendgame( end_type )
 {
     player = round::function_b5f4c9d8();
     

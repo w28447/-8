@@ -58,9 +58,9 @@ function private on_begin()
     foreach ( player in getplayers() )
     {
         player.e_weeper = zombie_utility::spawn_zombie( spawner, spawner.targetname, undefined, level.round_number );
-        var_9d88bc68 = anglestoforward( player.angles );
-        var_9d88bc68 = 50 * vectornormalize( var_9d88bc68 );
-        goal_pos = player.origin + var_9d88bc68;
+        goal_vec = anglestoforward( player.angles );
+        goal_vec = 50 * vectornormalize( goal_vec );
+        goal_pos = player.origin + goal_vec;
         goal_pos = getclosestpointonnavmesh( goal_pos, 128, 32 );
         player.e_weeper forceteleport( goal_pos, player.angles - ( 0, 180, 0 ), 1 );
         player.e_weeper.var_72411ccf = &function_660c908;
@@ -152,9 +152,9 @@ function private on_player_damage( params )
 {
     if ( ( isai( params.eattacker ) || isai( params.einflictor ) ) && ( params.idamage > 0 || isdefined( self.armor ) && self.armor > 0 ) && params.eattacker.archetype === #"weeping_angel" )
     {
-        var_57807cdc = [];
-        array::add( var_57807cdc, self, 0 );
-        zm_trial::fail( #"zmtrials/player_took_damage", var_57807cdc );
+        failed_players = [];
+        array::add( failed_players, self, 0 );
+        zm_trial::fail( #"zmtrials/player_took_damage", failed_players );
     }
 }
 

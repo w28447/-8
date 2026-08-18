@@ -114,9 +114,9 @@ function clear_flag( flag )
 // Params 1
 // Checksum 0xfb6355e9, Offset: 0x310
 // Size: 0x2c
-function function_897438f4( var_c1e98979 )
+function function_897438f4( end_type )
 {
-    outcome::function_897438f4( game.outcome, var_c1e98979 );
+    outcome::function_897438f4( game.outcome, end_type );
 }
 
 // Namespace match/match
@@ -302,7 +302,7 @@ function function_6d0354e3()
 {
     winner = round::get_winner();
     
-    if ( game.outcome.var_aefc8b8d.var_c1e98979 != 7 )
+    if ( game.outcome.var_aefc8b8d.end_type != 7 )
     {
         if ( level.teambased && get_flag( "overtime" ) )
         {

@@ -133,8 +133,8 @@ function event_handler[gametype_init] main( eventstruct )
     level.ontimelimit = &ontimelimit;
     level.onendround = &onendround;
     level.shouldplayovertimeround = &shouldplayovertimeround;
-    var_31e4b09c = get_robot_path_array();
-    level.var_e02589eb = calc_robot_path_length( var_31e4b09c[ 0 ], var_31e4b09c );
+    robotpath = get_robot_path_array();
+    level.var_e02589eb = calc_robot_path_length( robotpath[ 0 ], robotpath );
     killstreak_bundles::register_killstreak_bundle( "escort_robot" );
     globallogic_spawn::addsupportedspawnpointtype( "escort" );
 }
@@ -251,7 +251,7 @@ function function_e4457f17()
 // Params 1
 // Checksum 0x74940b2, Offset: 0x1590
 // Size: 0x94
-function onendround( var_c1e98979 )
+function onendround( end_type )
 {
     winningteam = round::get_winning_team();
     
@@ -272,7 +272,7 @@ function onendround( var_c1e98979 )
 // Params 1
 // Checksum 0x6a499e4, Offset: 0x1630
 // Size: 0xfc
-function function_c8a1552d( var_c1e98979 )
+function function_c8a1552d( end_type )
 {
     /#
         if ( isdefined( level.robot.distancetraveled ) )
@@ -281,7 +281,7 @@ function function_c8a1552d( var_c1e98979 )
         }
     #/
     
-    switch ( var_c1e98979 )
+    switch ( end_type )
     {
         case 1:
             game.var_8e2b660a = globallogic_utils::gettimepassed();

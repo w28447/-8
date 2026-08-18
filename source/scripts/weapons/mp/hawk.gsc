@@ -378,7 +378,7 @@ function function_17b75237( attacker, victim, weapon, attackerweapon, meansofdea
         return false;
     }
     
-    if ( gettime() - ( isdefined( var_f27d6782.var_a7e1d732 ) ? var_f27d6782.var_a7e1d732 : 0 ) <= int( level.hawk_settings.bundle.tag_grace_period * 1000 ) )
+    if ( gettime() - ( isdefined( var_f27d6782.locked_time ) ? var_f27d6782.locked_time : 0 ) <= int( level.hawk_settings.bundle.tag_grace_period * 1000 ) )
     {
         if ( isdefined( level.playgadgetsuccess ) )
         {
@@ -640,12 +640,12 @@ function getvalidtargets( hawk, &stance_offsets )
         return targets;
     }
     
-    if ( !isdefined( self.hawk.var_82bf9f7b ) || self.hawk.controlling )
+    if ( !isdefined( self.hawk.look_angles ) || self.hawk.controlling )
     {
-        self.hawk.var_82bf9f7b = self getplayerangles();
+        self.hawk.look_angles = self getplayerangles();
     }
     
-    forward = anglestoforward( self.hawk.var_82bf9f7b );
+    forward = anglestoforward( self.hawk.look_angles );
     bundle = level.hawk_settings.bundle;
     var_e4f883c1 = bundle.tag_distance * bundle.tag_distance;
     now = gettime();
@@ -1023,7 +1023,7 @@ function function_9ace0fb6( targets )
                 }
                 
                 info.visible = 1;
-                info.var_1fe906d8 = time;
+                info.visible_time = time;
                 player clientfield::function_9bf78ef8( "hawk_target_lockon" + ti, "target_visible", 1 );
                 tagtime = int( bundle.tag_time * 1000 );
                 
@@ -1032,20 +1032,20 @@ function function_9ace0fb6( targets )
                     tagtime *= bundle.var_59b7880b;
                 }
                 
-                if ( info.var_1fe906d8 - info.first_visible > tagtime )
+                if ( info.visible_time - info.first_visible > tagtime )
                 {
-                    if ( !isdefined( info.var_a7e1d732 ) || time - info.var_a7e1d732 > var_fe38768b && isdefined( isdefined( player.hawk ) ) && isdefined( player.hawk.vehicle ) )
+                    if ( !isdefined( info.locked_time ) || time - info.locked_time > var_fe38768b && isdefined( isdefined( player.hawk ) ) && isdefined( player.hawk.vehicle ) )
                     {
                         target playsoundtoplayer( #"hash_4f43df2a649784d0", target );
                     }
                     
                     info.state = 1;
-                    info.var_a7e1d732 = time;
+                    info.locked_time = time;
                 }
-                else if ( isdefined( info.var_a7e1d732 ) && time - info.var_a7e1d732 < int( bundle.tag_grace_period * 1000 ) )
+                else if ( isdefined( info.locked_time ) && time - info.locked_time < int( bundle.tag_grace_period * 1000 ) )
                 {
                     info.state = 1;
-                    info.var_a7e1d732 = time;
+                    info.locked_time = time;
                 }
                 
                 player.var_e6013893[ ti ] = info;

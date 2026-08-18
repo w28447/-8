@@ -1690,8 +1690,8 @@ function function_61a9bc58()
             stubs[ stubs.size ] = chest.unitrigger_stub;
         }
         
-        var_3bd3c0c1 = ( -16, -16, 0 );
-        var_cbe5413e = ( 16, 16, 32 );
+        node_mins = ( -16, -16, 0 );
+        node_maxs = ( 16, 16, 32 );
         
         while ( true )
         {
@@ -1709,7 +1709,7 @@ function function_61a9bc58()
                 
                 if ( isdefined( var_754b10b4 ) )
                 {
-                    box( var_754b10b4.origin, var_3bd3c0c1, var_cbe5413e, var_754b10b4.angles[ 1 ], ( 0, 1, 0 ), 1, 0, 10 );
+                    box( var_754b10b4.origin, node_mins, node_maxs, var_754b10b4.angles[ 1 ], ( 0, 1, 0 ), 1, 0, 10 );
                     line( var_754b10b4.origin, var_754b10b4.origin + anglestoforward( var_754b10b4.angles ) * 32, ( 0, 1, 0 ), 1, 0, 10 );
                     continue;
                 }

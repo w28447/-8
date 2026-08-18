@@ -1104,7 +1104,7 @@ string,#mpui/dualoptic_desc
 string,#mpui/camo_huntsman
 string,#hash_246c7d9118b22299
 string,#hash_24a3e0f402bfd000
-string,#hash_24c9561478db5594
+string,#menu/camo_loot_masks
 string,#menu/camo_loot_shimmer
 string,#hash_25811ef8abc80b1f
 string,#mpui/elo_desc
@@ -1201,7 +1201,7 @@ string,#hash_4973da5ba484b2ae
 string,#hash_49e88c8053d4f73e
 string,#mpui/camo_heatstroke
 string,#hash_4a584bc8c443f246
-string,#hash_4a6f079813e273c3
+string,#menu/camo_loot_dogfight
 string,#hash_4b105b524a93b53d
 string,#hash_4c2bbe6f91c1ca94
 string,#hash_4d048d939c70cad9
@@ -1227,7 +1227,7 @@ string,#zmui/extrapellets_desc
 string,#hash_556fbdaebf02d158
 string,#zmui/high_caliber_desc
 string,#hash_560d002c6e40e5df
-string,#hash_561a6371fe1e6f3a
+string,#menu/camo_loot_vice
 string,#mpui/steadyaim2_desc
 string,#menu/camo_loot_bacon
 string,#hash_58b7aeee47f428da
@@ -1265,7 +1265,7 @@ string,#mpui/clantag
 string,#mpui/burst2_desc
 string,#mpui/pistolscope_desc
 string,#hash_652798c8c39df5b0
-string,#hash_663114aa52ffcb21
+string,#menu/camo_loot_ww2
 string,#hash_665fcaf288735f26
 string,#hash_66d33b296eb64fbc
 string,#mpui/stalker2
@@ -1301,7 +1301,7 @@ string,#mpui/camo_ash
 string,#hash_768c5aeecc2d7cc4
 string,#mpui/grip2_desc
 string,#hash_7725a43a5e8755ad
-string,#hash_77dce7635423ba68
+string,#menu/camo_loot_cyberpunk
 string,#menu/camo_active_celestial
 string,#menu/camo_loot_citrus
 string,#mpui/rf_desc
@@ -1322,7 +1322,7 @@ string,#mpui/camo_woodlums
 string,#hash_7e31505384e0837a
 string,#mpui/tacknife_desc
 string,#menu/camo_loot_paradise
-string,#hash_7fd496c4cf9ec713
+string,#menu/camo_loot_plasmadrive
 fx,#hash_108cfc8cc7b79388
 fx,#hash_1093d48cc7bd6e3e
 fx,#blood/fx8_blood_cam_gib_spray_zm
@@ -1411,7 +1411,7 @@ soundalias,#hash_845f569fb4fd5c9
 soundalias,#vox_tvoi_tutor_prop_seeker_mine_2
 soundalias,#hash_8a03bcf54e65056
 soundalias,#hash_8a03ccf54e65209
-soundalias,#hash_8abeeabd2aa2c9c
+soundalias,#amb_wind_exterior_2d
 soundalias,#hash_8c16ee4aea85f4c
 soundalias,#hash_8c65bd8e3dfe064
 soundalias,#hash_8d461cfe167d402
@@ -1708,7 +1708,7 @@ soundalias,#hash_2e7d5eebe401fca4
 soundalias,#exp_mp_propane_tank_explo
 soundalias,#vox_tvoi_tutor_prop_throw_seeker
 soundalias,#hash_2ea8f3ac3b7c1608
-soundalias,#hash_2ec3de3874855810
+soundalias,#exp_redbarrel
 soundalias,#dst_server_power
 soundalias,#hash_2f44155192770e5f
 soundalias,#hash_2f458393b9af72e2
@@ -2090,7 +2090,7 @@ soundalias,#hash_5eeac3c635c74122
 soundalias,#hash_5eee0745d94d4b04
 soundalias,#hash_5efc5f9102636233
 soundalias,#hash_5f07c850bd480725
-soundalias,#hash_5f0cf846c1e5f92e
+soundalias,#amb_wind_interior_2d
 soundalias,#hash_5f1836c3d3aea78e
 soundalias,#hash_5f7127476d4e0c2f
 soundalias,#zmb_plr_toast_stinger

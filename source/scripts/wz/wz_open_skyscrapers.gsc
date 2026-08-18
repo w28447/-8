@@ -1223,9 +1223,9 @@ function function_2560f130()
                             }
                         }
                         
-                        var_2e0e7774 = arraysortclosest( spawn_points, point.origin, 20, 1, var_c5330f11 );
+                        items_close = arraysortclosest( spawn_points, point.origin, 20, 1, var_c5330f11 );
                         
-                        foreach ( close in var_2e0e7774 )
+                        foreach ( close in items_close )
                         {
                             if ( bullettracepassed( point.origin + ( 0, 0, 16 ), close.origin, 0, level.players[ 0 ] ) )
                             {
@@ -1454,9 +1454,9 @@ function function_2560f130()
         {
             if ( isarray( group.debug_spawnpoints ) )
             {
-                var_2e0e7774 = arraysortclosest( group.debug_spawnpoints, point.origin, 20, 1, n_dist );
+                items_close = arraysortclosest( group.debug_spawnpoints, point.origin, 20, 1, n_dist );
                 
-                foreach ( close in var_2e0e7774 )
+                foreach ( close in items_close )
                 {
                     if ( bullettracepassed( point.origin + ( 0, 0, n_z ), close.origin, 0, level.players[ 0 ] ) )
                     {

@@ -683,11 +683,11 @@ function function_4aa8d809( index, string )
     // Params 1
     // Checksum 0x822637ca, Offset: 0x15d8
     // Size: 0x22c, Type: dev
-    function function_8d61a6c2( var_c1e98979 )
+    function function_8d61a6c2( end_type )
     {
-        assert( isdefined( var_c1e98979 ) );
-        assert( isdefined( level.var_336c35f1[ var_c1e98979 ] ) );
-        log_string = level.var_336c35f1[ var_c1e98979 ];
+        assert( isdefined( end_type ) );
+        assert( isdefined( level.var_336c35f1[ end_type ] ) );
+        log_string = level.var_336c35f1[ end_type ];
         winner = round::get_winner();
         
         if ( isplayer( winner ) )

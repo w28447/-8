@@ -1726,12 +1726,12 @@ function function_60e3edcc()
             goaly *= -1;
         }
         
-        var_8518e93e = randomfloatrange( 3, 4 );
+        explode_delay = randomfloatrange( 3, 4 );
         plane setplanebarrelroll( randomfloatrange( 0.0833333, 0.111111 ), randomfloatrange( 4, 5 ) );
         plane_speed = plane getspeedmph();
         wait 0.7;
         plane setspeed( plane_speed * 1.5, 300 );
-        wait var_8518e93e - 0.7;
+        wait explode_delay - 0.7;
     }
     
     plane function_cd29787b();

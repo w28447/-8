@@ -305,7 +305,7 @@ function onspawnplayer( predictedspawn )
 // Params 1
 // Checksum 0x96655b0f, Offset: 0x1060
 // Size: 0x3c
-function onendgame( var_c1e98979 )
+function onendgame( end_type )
 {
     player = round::function_b5f4c9d8();
     match::set_winner( player );

@@ -26,7 +26,7 @@
                     },
                     {
                         "name": "#min_latency",
-                        "scrName": "#hash_ba7eb0ec",
+                        "scrName": "#min_latency",
                         "type": "FLOAT"
                     },
                     {
@@ -61,7 +61,7 @@
                     },
                     {
                         "name": "#bandwidth_down",
-                        "scrName": "#hash_dc894d39",
+                        "scrName": "#bandwidth_down",
                         "type": "UINT32"
                     }
                 ]

@@ -14,7 +14,7 @@ function init()
     
     if ( function_8b1a219a() && getdvarint( #"aura_activate_switch", 0 ) == 1 )
     {
-        callback::on_game_playing( &function_ca0a1ea4 );
+        callback::on_game_playing( &rgb_gamestart );
     }
     
     if ( function_8b1a219a() && sessionmodeiszombiesgame() && util::get_game_type() == "ztutorial" )
@@ -27,7 +27,7 @@ function init()
 // Params 0
 // Checksum 0x7878d5a6, Offset: 0x1c8
 // Size: 0x54
-function function_ca0a1ea4()
+function rgb_gamestart()
 {
     if ( level.console )
     {

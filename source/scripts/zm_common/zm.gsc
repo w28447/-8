@@ -1732,7 +1732,7 @@ function actor_killed_override( einflictor, attacker, idamage, smeansofdeath, we
         return;
     }
     
-    if ( self.var_c39323b5 !== 1 )
+    if ( self.b_cleaned_up !== 1 )
     {
         level.var_9427911d--;
         

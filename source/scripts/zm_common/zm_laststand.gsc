@@ -311,9 +311,9 @@ function playerlaststand( einflictor, attacker, idamage, smeansofdeath, weapon, 
         self laststand_give_pistol();
     }
     
-    if ( isdefined( self.var_c4890291 ) )
+    if ( isdefined( self.paused_perks ) )
     {
-        self.var_c4890291 = [];
+        self.paused_perks = [];
     }
     
     if ( !isdefined( self.n_downs ) )

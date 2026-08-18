@@ -1086,16 +1086,16 @@ function supplypod_catch( supplypod )
     if ( isdefined( supplypod ) )
     {
         playfxontag( "weapon/fx8_equip_supplypod_canister_launch", supplypod, "tag_canister_smoke" );
-        var_715428d3 = "j_wrist_le";
+        to_tag = "j_wrist_le";
         weapon = self getcurrentweapon();
         stancetype = weapon.var_6566504b;
         
         if ( stancetype >= 5 && stancetype <= 9 )
         {
-            var_715428d3 = "j_wrist_ri";
+            to_tag = "j_wrist_ri";
         }
         
-        beamlaunch( supplypod, self, "tag_origin_animate", var_715428d3, level.var_934fb97.weapon );
+        beamlaunch( supplypod, self, "tag_origin_animate", to_tag, level.var_934fb97.weapon );
         playsoundatposition( #"mpl_supply_pod_can_launch", supplypod.origin );
     }
 }

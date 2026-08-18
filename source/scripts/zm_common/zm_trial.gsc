@@ -850,13 +850,13 @@ function on_round_begin()
         challenge = level.var_d77a6967.challenges[ i ];
         assert( isdefined( level.var_75e93a54 ) );
         assert( isdefined( level.var_75e93a54[ challenge.name ] ) );
-        var_9cd2c51d = level.var_75e93a54[ challenge.name ];
-        var_5285d066 = { #name:challenge.name, #row:challenge.row, #info:var_9cd2c51d, #params:challenge.params };
+        challenge_info = level.var_75e93a54[ challenge.name ];
+        var_5285d066 = { #name:challenge.name, #row:challenge.row, #info:challenge_info, #params:challenge.params };
         array::add( level.var_3dd975d5, var_5285d066 );
         
-        if ( isdefined( var_9cd2c51d.var_3b7ba215 ) )
+        if ( isdefined( challenge_info.var_3b7ba215 ) )
         {
-            util::single_func_argarray( var_5285d066, var_9cd2c51d.var_3b7ba215, challenge.params );
+            util::single_func_argarray( var_5285d066, challenge_info.var_3b7ba215, challenge.params );
         }
     }
     

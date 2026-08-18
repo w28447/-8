@@ -484,13 +484,13 @@ function private function_f78e62a8()
     
     waitframe( 1 );
     
-    if ( !isdefined( self.var_b570cd0e ) )
+    if ( !isdefined( self.respawn_volume ) )
     {
         tacpoints = tacticalquery( #"hash_293b0897da0d2da2", self, node );
     }
     else
     {
-        tacpoints = tacticalquery( #"hash_18a2df086e6d53b1", self, self.var_b570cd0e.origin, self.var_b570cd0e );
+        tacpoints = tacticalquery( #"hash_18a2df086e6d53b1", self, self.respawn_volume.origin, self.respawn_volume );
     }
     
     if ( !isdefined( tacpoints ) || tacpoints.size == 0 )

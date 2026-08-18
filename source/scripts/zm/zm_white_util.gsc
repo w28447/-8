@@ -66,10 +66,10 @@ function init()
 // Size: 0x1a4
 function setup_character_vo()
 {
-    self zm_audio::function_6191af93( #"surrounded", #"self", #"oh", #"shit", 100 );
-    self zm_audio::function_6191af93( #"magicbox", #"homunculus", #"magicbox", #"monkey", 100 );
-    self zm_audio::function_6191af93( #"kill", #"homunculus", #"kill", #"monkey", 100 );
-    self zm_audio::function_6191af93( #"kill", #"ray_gun_mk2", #"kill", #"raygun_mk2", 100 );
+    self zm_audio::vox_override( #"surrounded", #"self", #"oh", #"shit", 100 );
+    self zm_audio::vox_override( #"magicbox", #"homunculus", #"magicbox", #"monkey", 100 );
+    self zm_audio::vox_override( #"kill", #"homunculus", #"kill", #"monkey", 100 );
+    self zm_audio::vox_override( #"kill", #"ray_gun_mk2", #"kill", #"raygun_mk2", 100 );
     self zm_audio::function_87714659( &function_e08cd7b, #"roundstart", #"special" );
 }
 

@@ -35,7 +35,7 @@ function autoexec __init__system__()
 function __init__()
 {
     level.seeker_mine = [];
-    level.var_36d0df18 = &function_3019d870;
+    level.spawn_mine = &function_3019d870;
     level.var_9d47488 = spawnstruct();
     level.var_9d47488.script = &function_c3d93fc;
     level.var_9d47488.weapon = getweapon( "eq_seeker_mine" );

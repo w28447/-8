@@ -3984,7 +3984,7 @@ string,#mpui/camo_huntsman
 string,#hash_246c7d9118b22299
 string,#hash_248c775f6ad7c8e5
 string,#hash_24a3e0f402bfd000
-string,#hash_24c9561478db5594
+string,#menu/camo_loot_masks
 string,#hash_253df7299a5a534a
 string,#menu/camo_loot_shimmer
 string,#hash_25760f552752078b
@@ -4156,7 +4156,7 @@ string,#hash_49b4beddb9e489aa
 string,#hash_49e88c8053d4f73e
 string,#mpui/camo_heatstroke
 string,#hash_4a584bc8c443f246
-string,#hash_4a6f079813e273c3
+string,#menu/camo_loot_dogfight
 string,#hash_4aa00a9bc891ac28
 string,#hash_4b105b524a93b53d
 string,#hash_4c2bbe6f91c1ca94
@@ -4199,7 +4199,7 @@ string,#zmui/extrapellets_desc
 string,#hash_556fbdaebf02d158
 string,#zmui/high_caliber_desc
 string,#hash_560d002c6e40e5df
-string,#hash_561a6371fe1e6f3a
+string,#menu/camo_loot_vice
 string,#hash_56698a0a66eec888
 string,#hash_572796ab0e1cbfe7
 string,#hash_57948661b0f24299
@@ -4288,7 +4288,7 @@ string,#hash_659a9e3b2599c48b
 string,#zm_red/location_terrace
 string,#zm_red/activate_sentinel_artifact
 string,#hash_661321e32a980373
-string,#hash_663114aa52ffcb21
+string,#menu/camo_loot_ww2
 string,#hash_6647952923444d08
 string,#hash_665fcaf288735f26
 string,#hash_666d2ebd0b7eb112
@@ -4357,7 +4357,7 @@ string,#hash_76aaf69e54bf876d
 string,#mpui/grip2_desc
 string,#hash_7725a43a5e8755ad
 string,#hash_7726ad6d8b5ad02c
-string,#hash_77dce7635423ba68
+string,#menu/camo_loot_cyberpunk
 string,#zm_red/location_ww_quest_death
 string,#menu/camo_active_celestial
 string,#menu/camo_loot_citrus
@@ -4402,7 +4402,7 @@ string,#hash_7e9a05542f8747d1
 string,#hash_7edf8ed3238a3f6f
 string,#hash_7f2b5399434a7ec9
 string,#hash_7f4634324c024a2b
-string,#hash_7fd496c4cf9ec713
+string,#menu/camo_loot_plasmadrive
 fx,#hash_2a8233f8a1d00e7
 fx,#zm_ai/fx8_cata_elec_aura
 fx,#maps/zm_red/fx8_wq_dormant_transform_charon
@@ -4764,7 +4764,7 @@ soundalias,#hash_28b933411b6bba8
 soundalias,#hash_28b943411b6bd5b
 soundalias,#wpn_scepter_revive
 soundalias,#hash_2a92e26b4c6c3b1
-soundalias,#hash_2b8a09fbde3380e
+soundalias,#wpn_wwgrenade_cocoon_stop
 soundalias,#hash_2bb4a8b02a0d697
 soundalias,#hash_2c21de758954d54
 soundalias,#hash_2d366db4932e994
@@ -4978,7 +4978,7 @@ soundalias,#hash_6d0992e7c317692
 soundalias,#hash_6d09a2e7c317845
 soundalias,#hash_6db3d832f03a425
 soundalias,#hash_6e2099e340c082f
-soundalias,#hash_6e5885d63e0768a
+soundalias,#wpn_wwgrenade_cocoon_lp
 soundalias,#hash_6f0f52296261466
 soundalias,#hash_6f425399ec2e2a0
 soundalias,#hash_6f426399ec2e453
@@ -6597,7 +6597,7 @@ soundalias,#hash_2ff7d62b9a86f323
 soundalias,#hash_2ff7d82b9a86f689
 soundalias,#wpn_scorpion_zombie_lp
 soundalias,#hash_3003ca8c047c43b9
-soundalias,#hash_3004f588bf60f0ec
+soundalias,#zmb_hellhound_loop_breath
 soundalias,#hash_300feb37df7d786c
 soundalias,#hash_300fed37df7d7bd2
 soundalias,#hash_300fee37df7d7d85
@@ -7440,7 +7440,7 @@ soundalias,#hash_43a305dba07a5aef
 soundalias,#hash_43afa67fdd3d5468
 soundalias,#hash_43c940fd6ff86ce8
 soundalias,#hash_43cfbbee98fb0071
-soundalias,#hash_43d669b0cef95100
+soundalias,#wpn_wwgrenade_cocoon_imp
 soundalias,#hash_43d9af287a16e9a5
 soundalias,#hash_43dfd484844b5e20
 soundalias,#hash_43f5b19c887b1c68
@@ -9087,7 +9087,7 @@ soundalias,#hash_6c9cf2c5c65f4e6d
 soundalias,#hash_6ca8c8b58e776349
 soundalias,#hash_6cdda8b51dc11294
 soundalias,#hash_6cf93b6e894fcf07
-soundalias,#hash_6cfa41a4b04b4a0a
+soundalias,#zmb_vocals_hellhound_ambient
 soundalias,#hash_6d0bcd77a8ec36fe
 soundalias,#hash_6d20826af80c18e8
 soundalias,#hash_6d3093fa5bbbbe2f

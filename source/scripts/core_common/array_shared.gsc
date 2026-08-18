@@ -62,7 +62,7 @@ function remove_undefined( &array, b_keep_keys )
 // Size: 0x30
 function remove_dead( &array, b_keep_keys )
 {
-    function_1eaaceab( array, b_keep_keys );
+    arrayremovedead( array, b_keep_keys );
     return array;
 }
 

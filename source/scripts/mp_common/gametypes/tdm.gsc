@@ -139,9 +139,9 @@ function onroundswitch()
 // Params 1
 // Checksum 0x73b850f6, Offset: 0x798
 // Size: 0x24
-function onendround( var_c1e98979 )
+function onendround( end_type )
 {
-    function_e596b745( var_c1e98979 );
+    function_e596b745( end_type );
 }
 
 // Namespace tdm/tdm
@@ -234,12 +234,12 @@ function onplayerkilled( einflictor, attacker, idamage, smeansofdeath, weapon, v
 // Params 1
 // Checksum 0x6539d9e3, Offset: 0xba8
 // Size: 0x114
-function function_e596b745( var_c1e98979 )
+function function_e596b745( end_type )
 {
     gamemodedata = spawnstruct();
     gamemodedata.remainingtime = max( 0, globallogic_utils::gettimeremaining() );
     
-    switch ( var_c1e98979 )
+    switch ( end_type )
     {
         case 2:
             gamemodedata.wintype = "time_limit_reached";

@@ -74,7 +74,7 @@ function __main__()
 {
     init_flags();
     function_ba863dca();
-    function_ab78507c();
+    init_main_quest();
     level thread zm_white_toast::init();
     function_55672ea2();
     function_a7aa6c6b();
@@ -213,7 +213,7 @@ function function_ba863dca()
 // Params 0
 // Checksum 0xb42e54e4, Offset: 0x2348
 // Size: 0x38e
-function function_ab78507c()
+function init_main_quest()
 {
     zm_sq::register( #"zm_white_main_quest", #"mq1_clocks", #"zm_white_main_quest_step1", &zm_white_main_quest_step1_setup, &zm_white_main_quest_step1_cleanup );
     zm_sq::register( #"zm_white_main_quest", #"mq2_cv1", #"zm_white_main_quest_step2", &zm_white_main_quest_step2_setup, &zm_white_main_quest_step2_cleanup );

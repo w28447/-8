@@ -546,7 +546,7 @@ function function_279ca150()
             {
                 s_key.var_6faa5e34 = 1;
                 
-                if ( !var_ebcac3c2 && ( isdefined( self.var_c39323b5 ) && self.var_c39323b5 || !( check_point_in_playable_area( v_start ) && check_point_in_enabled_zone( v_start ) ) || isdefined( self.nuked ) && self.nuked ) )
+                if ( !var_ebcac3c2 && ( isdefined( self.b_cleaned_up ) && self.b_cleaned_up || !( check_point_in_playable_area( v_start ) && check_point_in_enabled_zone( v_start ) ) || isdefined( self.nuked ) && self.nuked ) )
                 {
                     e_player = arraygetclosest( v_start, level.activeplayers );
                     v_start = e_player.origin;
@@ -1238,7 +1238,7 @@ function function_d40910b4( params )
     {
         v_start = self.origin + ( 0, 0, 8 );
         
-        if ( isdefined( self.var_c39323b5 ) && self.var_c39323b5 || !( check_point_in_playable_area( v_start ) && check_point_in_enabled_zone( v_start ) ) || isdefined( self.nuked ) && self.nuked )
+        if ( isdefined( self.b_cleaned_up ) && self.b_cleaned_up || !( check_point_in_playable_area( v_start ) && check_point_in_enabled_zone( v_start ) ) || isdefined( self.nuked ) && self.nuked )
         {
             if ( isdefined( level.var_9149f3ac ) )
             {

@@ -86,7 +86,7 @@ function function_d9ff5189()
         
         if ( zonespawns.size > 0 )
         {
-            var_f7b61e5e = spawnstruct();
+            zonestruct = spawnstruct();
             min = zonespawns[ 0 ].origin;
             max = min;
             
@@ -97,11 +97,11 @@ function function_d9ff5189()
                 min = ( min( min[ 0 ], spawn[ 0 ] ), min( min[ 1 ], spawn[ 1 ] ), min( min[ 2 ], spawn[ 2 ] ) );
             }
             
-            var_f7b61e5e.origin = ( min + max ) / 2;
-            var_f7b61e5e.max = max;
-            var_f7b61e5e.min = min;
-            var_f7b61e5e.spawn_points = zonespawns;
-            level.var_6990c489[ level.var_6990c489.size ] = var_f7b61e5e;
+            zonestruct.origin = ( min + max ) / 2;
+            zonestruct.max = max;
+            zonestruct.min = min;
+            zonestruct.spawn_points = zonespawns;
+            level.var_6990c489[ level.var_6990c489.size ] = zonestruct;
         }
         
         waitframe( 1 );

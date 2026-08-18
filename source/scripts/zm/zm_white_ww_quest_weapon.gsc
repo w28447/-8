@@ -77,7 +77,7 @@ function init()
     
     if ( !zm_utility::is_standard() )
     {
-        n_code = zm_white_computer_system::function_4696e086( 1, &function_256cc56e );
+        n_code = zm_white_computer_system::generate_code( 1, &function_256cc56e );
         level.var_276bd207 = zm_white_computer_system::function_da24090c( n_code );
     }
     

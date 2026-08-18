@@ -111,7 +111,7 @@
         },
         {
             "name": "#max_blocks",
-            "scrName": "#hash_1d65b6c0",
+            "scrName": "#max_blocks",
             "type": "INT16"
         },
         {

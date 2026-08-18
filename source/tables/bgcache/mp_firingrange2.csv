@@ -223,7 +223,7 @@ soundalias,#exp_veh_lfe
 soundalias,#hash_6d0d76c90a61181
 soundalias,#amb_paper
 soundalias,#hash_82d8fc262fa2602
-soundalias,#hash_8abeeabd2aa2c9c
+soundalias,#amb_wind_exterior_2d
 soundalias,#exp_barrel_lfe
 soundalias,#hash_a701893a7d70ea0
 soundalias,#hash_a703693a7d7419a
@@ -277,7 +277,7 @@ soundalias,#hash_2d9239cee350babf
 soundalias,#hash_2d923acee350bc72
 soundalias,#hash_2e25f1d6ca55e5d9
 soundalias,#exp_mp_propane_tank_explo
-soundalias,#hash_2ec3de3874855810
+soundalias,#exp_redbarrel
 soundalias,#dst_server_power
 soundalias,#pfx_water_trickle
 soundalias,#dst_foodstand
@@ -361,7 +361,7 @@ soundalias,#hash_5ca8d4adbb8576c5
 soundalias,#hash_5e6c6fe38f11ed65
 soundalias,#dst_car_fire
 soundalias,#hash_5f07c850bd480725
-soundalias,#hash_5f0cf846c1e5f92e
+soundalias,#amb_wind_interior_2d
 soundalias,#hash_5fbc57fe7327e948
 soundalias,#amb_target_twirl
 soundalias,#hash_60bf8913137206f7
@@ -411,7 +411,7 @@ soundalias,#hash_7b03a9cee3b85887
 soundalias,#exp_veh_med
 soundalias,#hash_7cabdfc104c2bfe2
 soundalias,#hash_7e17e533381a8506
-soundalias,#hash_7e183178f46298c3
+soundalias,#amb_wind_tree
 soundalias,#hash_7eb51f1a0028ab28
 soundalias,#hash_7f118ea3a4874268
 soundalias,#hash_7f640942ba0c38b0

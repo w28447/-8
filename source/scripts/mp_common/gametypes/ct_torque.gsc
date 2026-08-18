@@ -294,11 +294,11 @@ function function_cf3224fe( b_success )
         level.ai_vip.waypoint_escort ct_utils::function_f9ed304d();
         level.ai_vip = undefined;
         
-        foreach ( var_94dda6f in level.var_ac03813 )
+        foreach ( trig_checkpoint in level.var_ac03813 )
         {
-            if ( isdefined( var_94dda6f.waypoint ) )
+            if ( isdefined( trig_checkpoint.waypoint ) )
             {
-                var_94dda6f.waypoint gameobjects::set_visible_team( "none" );
+                trig_checkpoint.waypoint gameobjects::set_visible_team( "none" );
             }
         }
         
@@ -499,7 +499,7 @@ function function_944278fd( n_count, var_6448415b = 0, var_29a34c68 = 1000, var_
     level endon( #"combattraining_logic_finished" );
     var_b4595860 = var_29a34c68 * var_29a34c68;
     var_b8f62dbd = var_719f528b * var_719f528b;
-    var_37fa3d92 = [];
+    a_spawnpts = [];
     
     foreach ( var_7b9b45ce in level.var_7617703a )
     {
@@ -507,11 +507,11 @@ function function_944278fd( n_count, var_6448415b = 0, var_29a34c68 = 1000, var_
         
         if ( var_b4595860 <= n_dist_sq && n_dist_sq <= var_b8f62dbd )
         {
-            var_37fa3d92[ var_37fa3d92.size ] = var_7b9b45ce;
+            a_spawnpts[ a_spawnpts.size ] = var_7b9b45ce;
         }
     }
     
-    spawn_zombies( self, n_count, var_6448415b, var_37fa3d92, 1, var_c69d025b, var_68863e93 );
+    spawn_zombies( self, n_count, var_6448415b, a_spawnpts, 1, var_c69d025b, var_68863e93 );
 }
 
 // Namespace ct_torque/ct_torque
@@ -563,7 +563,7 @@ function function_27bf93d( var_93b6a23b = 2000, var_844ac87e = 1 )
         }
     }
     
-    function_1eaaceab( level.a_ai_zombies );
+    arrayremovedead( level.a_ai_zombies );
 }
 
 // Namespace ct_torque/ct_torque
@@ -646,10 +646,10 @@ function function_5a72abb2()
     level.var_ac03813 = getentarray( "checkpoint", "script_noteworthy" );
     level.var_ac03813 = array::sort_by_script_int( level.var_ac03813, 1 );
     
-    foreach ( var_94dda6f in level.var_ac03813 )
+    foreach ( trig_checkpoint in level.var_ac03813 )
     {
-        var_94dda6f.waypoint = ct_utils::create_waypoint( #"ct_waypoint_defend", var_94dda6f.origin, ( 0, 0, 0 ), #"allies", #"allies", 0, undefined );
-        var_94dda6f.waypoint gameobjects::set_visible_team( "none" );
+        trig_checkpoint.waypoint = ct_utils::create_waypoint( #"ct_waypoint_defend", trig_checkpoint.origin, ( 0, 0, 0 ), #"allies", #"allies", 0, undefined );
+        trig_checkpoint.waypoint gameobjects::set_visible_team( "none" );
     }
 }
 
@@ -662,9 +662,9 @@ function checkpoints_think()
     level endon( #"combattraining_logic_finished" );
     e_player = ct_utils::get_player();
     
-    foreach ( var_94dda6f in level.var_ac03813 )
+    foreach ( trig_checkpoint in level.var_ac03813 )
     {
-        var_94dda6f.waypoint thread gameobjects::set_visible_team( "none" );
+        trig_checkpoint.waypoint thread gameobjects::set_visible_team( "none" );
     }
     
     level flag::clear( "vip_in_checkpoint_action" );
@@ -686,13 +686,13 @@ function checkpoints_think()
 function function_96d0afea( n_ndx, var_c8e04bda = 0 )
 {
     level endon( #"combattraining_logic_finished" );
-    level.var_94dda6f = level.var_ac03813[ n_ndx ];
-    level.var_94dda6f.waypoint gameobjects::set_visible_team( "any" );
-    level clientfield::set( "area_arrows", level.var_94dda6f.script_int );
+    level.trig_checkpoint = level.var_ac03813[ n_ndx ];
+    level.trig_checkpoint.waypoint gameobjects::set_visible_team( "any" );
+    level clientfield::set( "area_arrows", level.trig_checkpoint.script_int );
     self thread ct_utils::function_61c3d59c( #"hash_1e6dbca449a65f9", undefined );
-    nd_guard = getnode( level.var_94dda6f.target, "targetname" );
+    nd_guard = getnode( level.trig_checkpoint.target, "targetname" );
     nd_guard thread function_944278fd( 8, 1, 300, 800, 0, 1 );
-    level.var_94dda6f waittill( #"trigger" );
+    level.trig_checkpoint waittill( #"trigger" );
     b_secured = 0;
     self thread ct_utils::function_329f9ba6( #"hash_528794fbc2dce8d4", 7, "grey", 1 );
     self thread ct_utils::function_61c3d59c( #"hash_64646dd1e309ce97", undefined );
@@ -703,7 +703,7 @@ function function_96d0afea( n_ndx, var_c8e04bda = 0 )
         
         foreach ( zombie in level.a_ai_zombies )
         {
-            if ( isalive( zombie ) && zombie istouching( level.var_94dda6f ) )
+            if ( isalive( zombie ) && zombie istouching( level.trig_checkpoint ) )
             {
                 var_656eb4ea++;
             }
@@ -715,7 +715,7 @@ function function_96d0afea( n_ndx, var_c8e04bda = 0 )
     
     level.ai_vip flag::set( "vip_checkpoint_action" );
     level.ai_vip waittill( #"hash_2a9770290dc54226" );
-    level.var_94dda6f.waypoint gameobjects::set_visible_team( "none" );
+    level.trig_checkpoint.waypoint gameobjects::set_visible_team( "none" );
     self thread ct_utils::function_329f9ba6( #"hash_bf1fced95009e6f", 7, "grey", 1 );
     self thread ct_utils::function_61c3d59c( #"hash_59c59e0f5283ed5", undefined );
     self notify( #"hash_3bd66153d302d5e3" );
@@ -1071,7 +1071,7 @@ function vip_checkpoint_action()
     self endon( #"death" );
     self.waypoint_defend gameobjects::set_visible_team( "any" );
     self.waypoint_escort gameobjects::set_visible_team( "none" );
-    self.var_d8f38f = getnode( level.var_94dda6f.target, "targetname" );
+    self.var_d8f38f = getnode( level.trig_checkpoint.target, "targetname" );
     self.var_33b6732b = getclosestpointonnavmesh( self.var_d8f38f.origin );
     self setgoal( self.var_33b6732b, 1, 1 );
     self flag::set( "vip_checkpoint_goto" );
@@ -1232,7 +1232,7 @@ function function_41ce2473( parms )
         }
         
         arrayremovevalue( level.a_ai_zombies, self, 0 );
-        function_1eaaceab( level.a_ai_zombies );
+        arrayremovedead( level.a_ai_zombies );
     }
 }
 
@@ -1304,7 +1304,7 @@ function on_smartcover_placed( newcover )
     if ( isdefined( self.smartcover ) && isdefined( self.smartcover.var_58e8b64d ) )
     {
         self notify( #"smartcover_placed" );
-        function_1eaaceab( self.smartcover.var_58e8b64d );
+        arrayremovedead( self.smartcover.var_58e8b64d );
     }
     
     if ( level.ctdifficulty !== 0 )
@@ -1327,7 +1327,7 @@ function on_concertinawire_placed( newcover )
     if ( isdefined( self.concertinawire ) && isdefined( self.concertinawire.var_a3aac76c ) )
     {
         self notify( #"razorwire_placed" );
-        function_1eaaceab( self.concertinawire.var_a3aac76c );
+        arrayremovedead( self.concertinawire.var_a3aac76c );
     }
     
     if ( level.ctdifficulty !== 0 )
@@ -1718,7 +1718,7 @@ function function_dd64960c( a_ents )
                                 ai_zombie kill();
                             }
                             
-                            function_1eaaceab( level.a_ai_zombies, 0 );
+                            arrayremovedead( level.a_ai_zombies, 0 );
                             wait 0.1;
                         }
                     }

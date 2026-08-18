@@ -564,7 +564,7 @@ function make_zombie_target( entity )
         return false;
     }
     
-    function_1eaaceab( level.zombie_targets );
+    arrayremovedead( level.zombie_targets );
     arrayremovevalue( level.zombie_targets, undefined );
     
     if ( level.zombie_targets.size + 4 >= 16 )

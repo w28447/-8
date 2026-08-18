@@ -733,11 +733,11 @@ function function_2a494565( isselfdestruct )
             var_72db9941 = level.smartcoversettings.bundle.destructionaudio;
         }
         
-        var_b0e81be9 = isdefined( self gettagorigin( "tag_cover_base_d0" ) ) ? self gettagorigin( "tag_cover_base_d0" ) : self.origin;
-        var_505e3308 = isdefined( self gettagangles( "tag_cover_base_d0" ) ) ? self gettagangles( "tag_cover_base_d0" ) : self.angles;
-        tag_base_forward = anglestoforward( var_505e3308 );
-        tag_base_up = anglestoup( var_505e3308 );
-        playfx( var_415135a0, var_b0e81be9, tag_base_forward, tag_base_up );
+        tag_base_origin = isdefined( self gettagorigin( "tag_cover_base_d0" ) ) ? self gettagorigin( "tag_cover_base_d0" ) : self.origin;
+        tag_base_angles = isdefined( self gettagangles( "tag_cover_base_d0" ) ) ? self gettagangles( "tag_cover_base_d0" ) : self.angles;
+        tag_base_forward = anglestoforward( tag_base_angles );
+        tag_base_up = anglestoup( tag_base_angles );
+        playfx( var_415135a0, tag_base_origin, tag_base_forward, tag_base_up );
         
         if ( isdefined( var_72db9941 ) )
         {

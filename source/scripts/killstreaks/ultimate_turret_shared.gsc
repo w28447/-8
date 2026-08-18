@@ -1113,10 +1113,10 @@ function function_9d86d74c( enemy )
     fire_origin = self getseatfiringorigin( 0 );
     fire_angles = self getseatfiringangles( 0 );
     shoot_at_pos = enemy getshootatpos( self );
-    var_6551f24e = anglestoforward( fire_angles );
+    fire_dir = anglestoforward( fire_angles );
     target_offset = shoot_at_pos - fire_origin;
     
-    if ( lengthsquared( target_offset ) < 22 * 22 && vectordot( var_6551f24e, target_offset ) < 0 )
+    if ( lengthsquared( target_offset ) < 22 * 22 && vectordot( fire_dir, target_offset ) < 0 )
     {
         return true;
     }
@@ -1283,18 +1283,18 @@ function turretscanning()
                 continue;
             }
             
-            var_2aa33bf1 = 0;
+            should_ignore = 0;
             
             if ( distancesquared( veh.enemy.origin, veh.origin ) > veh.var_38e6355c && veh.var_7eb3ebd5[ veh.enemy getentitynumber() ] === #"forwardscan" )
             {
-                var_2aa33bf1 = 1;
+                should_ignore = 1;
             }
             else if ( veh function_9d86d74c( veh.enemy ) )
             {
-                var_2aa33bf1 = 1;
+                should_ignore = 1;
             }
             
-            if ( var_2aa33bf1 )
+            if ( should_ignore )
             {
                 veh setpersonalignore( veh.enemy, 1 );
                 veh function_fc58f46f();

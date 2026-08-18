@@ -86,22 +86,22 @@
     "members": [
         {
             "name": "#geo_4",
-            "scrName": "#hash_fbf19924",
+            "scrName": "#geo_4",
             "type": "UINT64"
         },
         {
             "name": "#geo_3",
-            "scrName": "#hash_27586ff1",
+            "scrName": "#geo_3",
             "type": "UINT64"
         },
         {
             "name": "#geo_2",
-            "scrName": "#hash_109e427d",
+            "scrName": "#geo_2",
             "type": "UINT64"
         },
         {
             "name": "#geo_1",
-            "scrName": "#hash_57805048",
+            "scrName": "#geo_1",
             "type": "UINT64"
         },
         {

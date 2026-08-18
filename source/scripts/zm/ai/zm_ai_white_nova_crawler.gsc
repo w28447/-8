@@ -905,7 +905,7 @@ function private function_c708afa4( entity )
 // Size: 0x5c
 function private function_f0eb1b7e( entity )
 {
-    self.var_15aa1ae0 = gettime() + randomfloatrange( 3, 5 ) * 1000;
+    self.phase_cooldown = gettime() + randomfloatrange( 3, 5 ) * 1000;
     function_349ae23d();
     function_8eb7fbb7();
 }

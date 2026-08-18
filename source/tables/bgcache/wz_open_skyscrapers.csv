@@ -8256,7 +8256,7 @@ string,#weapon/ar_an94_t8
 string,#mpui/camo_huntsman
 string,#hash_246c7d9118b22299
 string,#hash_24a3e0f402bfd000
-string,#hash_24c9561478db5594
+string,#menu/camo_loot_masks
 string,#weapon/eq_emp_grenade
 string,#menu/camo_loot_shimmer
 string,#hash_25811ef8abc80b1f
@@ -8402,7 +8402,7 @@ string,#weapon/shotgun_precision_t8
 string,#weapon/smg_vmp_t8
 string,#weapon/melee_amuletfist_t8
 string,#weapon/lmg_pbr
-string,#hash_47f9d805f8f35f0e
+string,#wz/attach_adv_mag
 string,#hash_4830a0bf0b737bd1
 string,#hash_4911d1f708fff427
 string,#hash_4911d2f708fff5da
@@ -8416,7 +8416,7 @@ string,#hash_49e88c8053d4f73e
 string,#mpui/camo_heatstroke
 string,#weapon/lmg_spray_t8_operator
 string,#hash_4a584bc8c443f246
-string,#hash_4a6f079813e273c3
+string,#menu/camo_loot_dogfight
 string,#hash_4b105b524a93b53d
 string,#hash_4c2bbe6f91c1ca94
 string,#hash_4c9bf18ebd4aa256
@@ -8455,7 +8455,7 @@ string,#zmui/extrapellets_desc
 string,#hash_556fbdaebf02d158
 string,#zmui/high_caliber_desc
 string,#hash_560d002c6e40e5df
-string,#hash_561a6371fe1e6f3a
+string,#menu/camo_loot_vice
 string,#weapon/basketball
 string,#hash_56d772673f98a87b
 string,#hash_5704bb4aa4b8696b
@@ -8518,7 +8518,7 @@ string,#hash_652798c8c39df5b0
 string,#hash_6541feae026c1180
 string,#weapon/gadget_health_regen_large
 string,#weapon/smg_fastfire_t8
-string,#hash_663114aa52ffcb21
+string,#menu/camo_loot_ww2
 string,#weapon/pistol_revolver_t8
 string,#wz/attach_reddot
 string,#hash_6655ed86a78c6d8c
@@ -8584,7 +8584,7 @@ string,#weapon/hero_flamethrower
 string,#mpui/damage
 string,#hash_758d93baadbc199d
 string,#wz/attach_fastmag
-string,#hash_75910f89d3c7bccc
+string,#wz/attach_acog_plus
 string,#mpui/camo_active_kills_without_dying
 string,#mpui/camo_ash
 string,#hash_768c5aeecc2d7cc4
@@ -8592,7 +8592,7 @@ string,#mpui/grip2_desc
 string,#weapon/lmg_stealth_t8
 string,#hash_7725a43a5e8755ad
 string,#hash_7793b727a6a89304
-string,#hash_77dce7635423ba68
+string,#menu/camo_loot_cyberpunk
 string,#menu/camo_active_celestial
 string,#killstreak/auto_turret_inbound
 string,#menu/camo_loot_citrus
@@ -8626,7 +8626,7 @@ string,#hash_7e31505384e0837a
 string,#mpui/tacknife_desc
 string,#menu/camo_loot_paradise
 string,#weapon/smg_fastburst_t8
-string,#hash_7fd496c4cf9ec713
+string,#menu/camo_loot_plasmadrive
 fx,#hash_4da568d1fe3fd57
 fx,#hash_51c952677845b95
 fx,#hash_61ea35a4bb2fdc4
@@ -8759,7 +8759,7 @@ soundalias,#hash_2656e6ba93d3392
 soundalias,#hash_2904437d186593d
 soundalias,#amb_turbine_powerplant
 soundalias,#hash_2bf4aea54102855
-soundalias,#hash_2d6f61e1cf07e68
+soundalias,#zmb_box_move
 soundalias,#hash_2eeb684ddd684d4
 soundalias,#hash_318d7935a026c04
 soundalias,#dst_cover_concrete
@@ -8853,7 +8853,7 @@ soundalias,#veh_dmg_steam_light
 soundalias,#uin_wz_attach_lasersight
 soundalias,#hash_118d0be273930087
 soundalias,#hash_11b3d5b6c9701a29
-soundalias,#hash_123893cdd4254d5f
+soundalias,#evt_toilet_flush
 soundalias,#hash_1254575647c0d4e5
 soundalias,#exp_veh_debris
 soundalias,#hash_1285ce3539f18621
@@ -9017,7 +9017,7 @@ soundalias,#hash_2e47ae82e0a8408e
 soundalias,#exp_mp_propane_tank_explo
 soundalias,#hash_2eb5c8fc42aadae9
 soundalias,#evt_elevator_start
-soundalias,#hash_2ec3de3874855810
+soundalias,#exp_redbarrel
 soundalias,#hash_2eda552cbc2e6701
 soundalias,#dst_server_power
 soundalias,#zmb_sq_souls_impact
@@ -9045,7 +9045,7 @@ soundalias,#uin_endgame_screen_exit
 soundalias,#evt_plane_door_open
 soundalias,#fly_step_sludge_plr
 soundalias,#hash_32b8620451d1eedb
-soundalias,#hash_32d8f9d0e729a37d
+soundalias,#zmb_box_poof
 soundalias,#hash_32f9ba3b1da75ed5
 soundalias,#hash_334d4d52ba5fa940
 soundalias,#exp_atv_decay
@@ -9284,7 +9284,7 @@ soundalias,#evt_death_stash_open
 soundalias,#dst_car_fire
 soundalias,#mus_nixie_clock
 soundalias,#hash_5f07c850bd480725
-soundalias,#hash_5f0cf846c1e5f92e
+soundalias,#amb_wind_interior_2d
 soundalias,#hash_5f82ba2378a02a6a
 soundalias,#fly_pickup_armor_light
 soundalias,#hash_5f99276d742fee75
@@ -9343,7 +9343,7 @@ soundalias,#evt_skydive_wind_heavy
 soundalias,#hash_6560397aabc76c2f
 soundalias,#amb_rats
 soundalias,#amb_air_conditioner_light
-soundalias,#hash_65cc0c19146d94fc
+soundalias,#zmb_elec_room_sweets
 soundalias,#dst_spark_bounce
 soundalias,#hash_6604b80c6d1acbef
 soundalias,#hash_663899d42687914d
@@ -9393,7 +9393,7 @@ soundalias,#hash_6dc82e099759d89d
 soundalias,#amb_cooler_lp
 soundalias,#fly_step_mattress_plr
 soundalias,#hash_6e471fde121d0263
-soundalias,#hash_6eb76027082c6968
+soundalias,#amb_toilet_loop
 soundalias,#fly_pickup_health_large
 soundalias,#hash_6ee08a10b9c18ba7
 soundalias,#amb_water_pipe

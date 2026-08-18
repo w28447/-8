@@ -199,7 +199,7 @@ function function_69f309b( n_to_spawn = 1, str_type, func_on_spawned, b_force_sp
     
     if ( !isdefined( str_type ) )
     {
-        var_7aad80fe = array::random( level.var_4d136b9a );
+        gladiator_spawner = array::random( level.var_4d136b9a );
     }
     
     while ( n_spawned < n_to_spawn )
@@ -217,7 +217,7 @@ function function_69f309b( n_to_spawn = 1, str_type, func_on_spawned, b_force_sp
         }
         else if ( isdefined( level.var_14961f90 ) && level flag::get( "special_round" ) )
         {
-            s_spawn_loc = [[ level.var_14961f90 ]]( var_7aad80fe );
+            s_spawn_loc = [[ level.var_14961f90 ]]( gladiator_spawner );
         }
         else if ( isdefined( level.zm_loc_types[ #"gladiator_location" ] ) && level.zm_loc_types[ #"gladiator_location" ].size )
         {
@@ -229,7 +229,7 @@ function function_69f309b( n_to_spawn = 1, str_type, func_on_spawned, b_force_sp
             return 0;
         }
         
-        ai = function_bfa79e98( var_7aad80fe, s_spawn_loc, str_type, n_round );
+        ai = function_bfa79e98( gladiator_spawner, s_spawn_loc, str_type, n_round );
         
         if ( isdefined( ai ) )
         {

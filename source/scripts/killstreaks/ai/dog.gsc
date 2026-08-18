@@ -371,9 +371,9 @@ function function_d68af34c()
 // Size: 0x302
 function function_1eda333b()
 {
-    var_da7abcda = function_d68af34c();
+    dogmode = function_d68af34c();
     
-    if ( var_da7abcda == "escort" && self haspath() && isdefined( self.pathgoalpos ) )
+    if ( dogmode == "escort" && self haspath() && isdefined( self.pathgoalpos ) )
     {
         goalpos = self.pathgoalpos;
         
@@ -424,9 +424,9 @@ function function_a3708944( entity )
         return false;
     }
     
-    var_da7abcda = function_d68af34c();
+    dogmode = function_d68af34c();
     
-    if ( var_da7abcda == "escort" && gettime() > self.ai.lookaround.var_268b3fe5 )
+    if ( dogmode == "escort" && gettime() > self.ai.lookaround.var_268b3fe5 )
     {
         return true;
     }

@@ -730,7 +730,7 @@ ddl,#gamedata/ddl/generated/dlog_event_wzweapons.ddl
 ddl,#hash_10098e2608355185
 ddl,#gamedata/ddl/generated/dlog_event_gamesessions.ddl
 ddl,#gamedata/ddl/generated/dlog_event_orbis_ac.ddl
-ddl,#hash_11c94e161d87cd2d
+ddl,#gamedata/ddl/generated/dlog_event_global_session_epilogs.ddl
 ddl,#hash_1250d02916e4218d
 ddl,#gamedata/ddl/generated/dlog_event_error.ddl
 ddl,#hash_1356aa968ce4b766
@@ -1412,7 +1412,7 @@ playertalenttemplate,#defaultplayertalenttemplate
 dlogevent,#hash_1141b77c975decd
 dlogevent,#hash_1ae33d147476ae1
 dlogevent,#dlog_event_demostreamstats
-dlogevent,#hash_28b295eb3b8e189
+dlogevent,#dlog_event_global_session_epilogs
 dlogevent,#hash_2f4df4cdcc668f6
 dlogevent,#hash_393c9a4baa822a3
 dlogevent,#hash_43e7e6de496e21f

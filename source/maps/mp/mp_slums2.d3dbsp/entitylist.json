@@ -66663,7 +66663,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_772291f7c6c6e652",
+                    "value": "#amb_wind_middle",
                     "unk1a": true
                 },
                 {
@@ -67609,7 +67609,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_59a921749704b2db",
+                    "value": "#amb_sewer_drain",
                     "unk1a": true
                 }
             ]
@@ -67663,7 +67663,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_59a921749704b2db",
+                    "value": "#amb_sewer_drain",
                     "unk1a": true
                 }
             ]
@@ -67717,7 +67717,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_59a921749704b2db",
+                    "value": "#amb_sewer_drain",
                     "unk1a": true
                 }
             ]
@@ -67771,7 +67771,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_59a921749704b2db",
+                    "value": "#amb_sewer_drain",
                     "unk1a": true
                 }
             ]
@@ -67825,7 +67825,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_59a921749704b2db",
+                    "value": "#amb_sewer_drain",
                     "unk1a": true
                 }
             ]
@@ -68311,7 +68311,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_43830dc6e1323b97",
+                    "value": "#amb_flour_light",
                     "unk1a": true
                 }
             ]
@@ -68365,7 +68365,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_43830dc6e1323b97",
+                    "value": "#amb_flour_light",
                     "unk1a": true
                 }
             ]

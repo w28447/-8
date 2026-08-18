@@ -2340,11 +2340,11 @@ function spawn_player_clone( player, animname, s_align, var_df23b31f = 0 )
     
     if ( player function_390cb543() )
     {
-        var_1749f1e8 = player function_92ea4100();
+        torsomodel = player function_92ea4100();
         
-        if ( isdefined( var_1749f1e8 ) )
+        if ( isdefined( torsomodel ) )
         {
-            playerclone setmodel( var_1749f1e8 );
+            playerclone setmodel( torsomodel );
         }
         
         headmodel = player function_44a7328f();
@@ -2356,11 +2356,11 @@ function spawn_player_clone( player, animname, s_align, var_df23b31f = 0 )
     }
     else
     {
-        var_41206ae3 = player function_5d23af5b();
+        armsmodel = player function_5d23af5b();
         
-        if ( isdefined( var_41206ae3 ) )
+        if ( isdefined( armsmodel ) )
         {
-            playerclone setmodel( var_41206ae3 );
+            playerclone setmodel( armsmodel );
         }
         
         headmodel = player function_44a7328f();
@@ -2370,18 +2370,18 @@ function spawn_player_clone( player, animname, s_align, var_df23b31f = 0 )
             playerclone attach( headmodel );
         }
         
-        var_b4d88433 = player function_cde23658();
+        legsmodel = player function_cde23658();
         
-        if ( isdefined( var_b4d88433 ) )
+        if ( isdefined( legsmodel ) )
         {
-            playerclone attach( var_b4d88433 );
+            playerclone attach( legsmodel );
         }
         
-        var_1749f1e8 = player function_92ea4100();
+        torsomodel = player function_92ea4100();
         
-        if ( isdefined( var_1749f1e8 ) )
+        if ( isdefined( torsomodel ) )
         {
-            playerclone attach( var_1749f1e8 );
+            playerclone attach( torsomodel );
         }
     }
     

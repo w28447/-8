@@ -344,7 +344,7 @@ function cleanup_zombie()
     
     self function_23621259();
     self zombie_utility::reset_attack_spot();
-    self.var_c39323b5 = 1;
+    self.b_cleaned_up = 1;
     self.var_e700d5e2 = 1;
     self.allowdeath = 1;
     self kill();
@@ -594,7 +594,7 @@ function function_c6ad3003( b_timeout = 0 )
         
         ai_enemy function_23621259( 1 );
         ai_enemy zombie_utility::reset_attack_spot();
-        ai_enemy.var_c39323b5 = 1;
+        ai_enemy.b_cleaned_up = 1;
         ai_enemy kill();
         waitframe( 1 );
     }

@@ -48,11 +48,11 @@ function spawn_player_clone( player, origin = player.origin, forceweapon, forcem
     {
         if ( player function_390cb543() )
         {
-            var_1749f1e8 = player function_92ea4100();
+            torsomodel = player function_92ea4100();
             
-            if ( isdefined( var_1749f1e8 ) )
+            if ( isdefined( torsomodel ) )
             {
-                clone setmodel( var_1749f1e8 );
+                clone setmodel( torsomodel );
             }
             
             headmodel = player function_44a7328f();
@@ -79,11 +79,11 @@ function spawn_player_clone( player, origin = player.origin, forceweapon, forcem
         }
         else
         {
-            var_41206ae3 = player function_5d23af5b();
+            armsmodel = player function_5d23af5b();
             
-            if ( isdefined( var_41206ae3 ) )
+            if ( isdefined( armsmodel ) )
             {
-                clone setmodel( var_41206ae3 );
+                clone setmodel( armsmodel );
             }
             
             headmodel = player function_44a7328f();
@@ -98,28 +98,28 @@ function spawn_player_clone( player, origin = player.origin, forceweapon, forcem
                 clone attach( headmodel );
             }
             
-            var_b4d88433 = player function_cde23658();
+            legsmodel = player function_cde23658();
             
-            if ( isdefined( var_b4d88433 ) )
+            if ( isdefined( legsmodel ) )
             {
                 if ( isdefined( clone.legs ) )
                 {
                     clone detach( clone.legs );
                 }
                 
-                clone attach( var_b4d88433 );
+                clone attach( legsmodel );
             }
             
-            var_1749f1e8 = player function_92ea4100();
+            torsomodel = player function_92ea4100();
             
-            if ( isdefined( var_1749f1e8 ) )
+            if ( isdefined( torsomodel ) )
             {
                 if ( isdefined( clone.torso ) )
                 {
                     clone detach( clone.torso );
                 }
                 
-                clone attach( var_1749f1e8 );
+                clone attach( torsomodel );
             }
         }
         

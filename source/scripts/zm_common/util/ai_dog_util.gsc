@@ -694,7 +694,7 @@ function dog_death()
     
     if ( self.subarchetype != #"zombie_wolf" && isdefined( self.a.nodeath ) )
     {
-        if ( self.var_c39323b5 !== 1 )
+        if ( self.b_cleaned_up !== 1 )
         {
             level thread dog_explode_fx( self, self.origin );
             self ghost();

@@ -292,7 +292,7 @@ function function_5e1138a2()
             {
                 wait 1;
                 
-                if ( self function_91cfddc4() )
+                if ( self all_perks_bought() )
                 {
                     /#
                         iprintlnbold( "<dev string:x143>" + i + 1 );
@@ -337,7 +337,7 @@ function perk_watcher()
 // Params 0
 // Checksum 0x848f8d5c, Offset: 0xd90
 // Size: 0x74, Type: bool
-function function_91cfddc4()
+function all_perks_bought()
 {
     foreach ( bought in self.var_c9f12812 )
     {

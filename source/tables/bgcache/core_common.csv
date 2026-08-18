@@ -17951,7 +17951,7 @@ string,#hash_1ac907db82edded5
 string,#hash_1ad2d081aa9d88ca
 string,#hash_1ad4231236c9da86
 string,#score/kill_flag_carrier
-string,#hash_1ae6942fc2b0f77c
+string,#score/helicopter_kill
 string,#score/deployable_cover_shutdown
 string,#contract/blood_thirsty_desc
 string,#coop_score/melee_kill_theia
@@ -18194,7 +18194,7 @@ string,#mp/generic_hacking
 string,#hash_24a3e0f402bfd000
 string,#hash_24a835c42715b876
 string,#hash_24b00432031ffa68
-string,#hash_24c9561478db5594
+string,#menu/camo_loot_masks
 string,#hash_24c969cb53981137
 string,#hash_24d45bba9b71a68c
 string,#score/battle_shield_assist
@@ -19169,7 +19169,7 @@ string,#hash_4a584bc8c443f246
 string,#challenge/killer_four_piece
 string,#hash_4a608d3fbb6904f9
 string,#challenge/humiliation_revenge_desc
-string,#hash_4a6f079813e273c3
+string,#menu/camo_loot_dogfight
 string,#challenge/killjoy_shutdown_visionpulse_immediately_desc
 string,#challenge/empty_string
 string,#zm_contract/doors
@@ -19479,7 +19479,7 @@ string,#challenge/tourofduty_master
 string,#zmui/high_caliber_desc
 string,#hash_560d002c6e40e5df
 string,#hash_56112328235060d8
-string,#hash_561a6371fe1e6f3a
+string,#menu/camo_loot_vice
 string,#hash_561b2aec7b01bbbc
 string,#zm_contract/perks
 string,#hash_56278c64f6a985bc
@@ -19953,7 +19953,7 @@ string,#hash_65d5dff10d5d8f31
 string,#zm_contract/gauntlet_bronze_desc
 string,#hash_660e35aa60a19c7f
 string,#score/killstreak_more_than_30
-string,#hash_663114aa52ffcb21
+string,#menu/camo_loot_ww2
 string,#weapon/pistol_revolver_t8
 string,#score/annihilator_kill
 string,#hash_665a7fed99434be6
@@ -20089,7 +20089,7 @@ string,#hash_6aee422878d572b9
 string,#hash_6af4ab523a5774b1
 string,#contract/attachments3_primary_ekia
 string,#zm_contract/lmg_kills
-string,#hash_6b1c2e52cb53651b
+string,#score/hellstorm_kill
 string,#hash_6b309065563c236c
 string,#zm_contract/red_rounds_desc
 string,#hash_6b464c77ec894199
@@ -20402,7 +20402,7 @@ string,#emotes/poppin_grapes
 string,#mp/plus
 string,#zm_contract/doors_desc
 string,#hash_77d67907790da7a7
-string,#hash_77dce7635423ba68
+string,#menu/camo_loot_cyberpunk
 string,#hash_77f3fa5c798d3795
 string,#menu/camo_active_celestial
 string,#hash_77fc59bf5208fb04
@@ -20579,7 +20579,7 @@ string,#score/hawk_tag_kill
 string,#hash_7fb623ee5c7cd0fa
 string,#emotes/hoop_there_it_is
 string,#hash_7fd1f771291c7a79
-string,#hash_7fd496c4cf9ec713
+string,#menu/camo_loot_plasmadrive
 string,#hash_7fd63164f504dda1
 string,#hash_7fdf14aeca119eda
 string,#hash_7fe2f8a9573ad0d3

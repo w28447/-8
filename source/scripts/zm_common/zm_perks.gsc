@@ -1262,14 +1262,14 @@ function perk_pause( perk )
             continue;
         }
         
-        if ( !isdefined( player.var_c4890291 ) )
+        if ( !isdefined( player.paused_perks ) )
         {
-            player.var_c4890291 = [];
+            player.paused_perks = [];
         }
         
-        player.var_c4890291[ perk ] = isdefined( player.var_c4890291[ perk ] ) && player.var_c4890291[ perk ] || player hasperk( perk );
+        player.paused_perks[ perk ] = isdefined( player.paused_perks[ perk ] ) && player.paused_perks[ perk ] || player hasperk( perk );
         
-        if ( player.var_c4890291[ perk ] )
+        if ( player.paused_perks[ perk ] )
         {
             player perks::perk_unsetperk( perk );
             
@@ -1322,9 +1322,9 @@ function perk_unpause( perk )
     {
         player = getplayers()[ j ];
         
-        if ( isdefined( player.var_c4890291 ) && isdefined( player.var_c4890291[ perk ] ) && player.var_c4890291[ perk ] )
+        if ( isdefined( player.paused_perks ) && isdefined( player.paused_perks[ perk ] ) && player.paused_perks[ perk ] )
         {
-            player.var_c4890291[ perk ] = 0;
+            player.paused_perks[ perk ] = 0;
             player set_perk_clientfield( perk, 1 );
             n_slot = player function_c1efcc57( perk );
             player function_2ac7579( n_slot, 1, level._custom_perks[ perk ].alias );
@@ -1438,7 +1438,7 @@ function function_d087adc6()
 // Size: 0x46, Type: bool
 function has_perk_paused( perk )
 {
-    if ( isdefined( self.var_c4890291 ) && isdefined( self.var_c4890291[ perk ] ) && self.var_c4890291[ perk ] )
+    if ( isdefined( self.paused_perks ) && isdefined( self.paused_perks[ perk ] ) && self.paused_perks[ perk ] )
     {
         return true;
     }

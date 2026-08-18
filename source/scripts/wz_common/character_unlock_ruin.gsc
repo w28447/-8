@@ -46,28 +46,28 @@ function function_2613aeec( enabled )
 function function_cb514c8b()
 {
     item_world::function_4de3ca98();
-    var_885c7eef = function_91b29d2a( #"cu08_spawn" );
+    ruin_items = function_91b29d2a( #"cu08_spawn" );
     
-    if ( !isdefined( var_885c7eef[ 0 ] ) )
+    if ( !isdefined( ruin_items[ 0 ] ) )
     {
         return;
     }
     
-    var_885c7eef = array::randomize( var_885c7eef );
-    var_8a9122c8 = var_885c7eef[ 0 ];
+    ruin_items = array::randomize( ruin_items );
+    var_8a9122c8 = ruin_items[ 0 ];
     var_5901fe7f = 0;
     
-    for ( x = 1; x < var_885c7eef.size ; x++ )
+    for ( x = 1; x < ruin_items.size ; x++ )
     {
         if ( isdefined( var_5901fe7f ) && var_5901fe7f )
         {
-            item_world::consume_item( var_885c7eef[ x ] );
+            item_world::consume_item( ruin_items[ x ] );
             continue;
         }
         
-        if ( distance2d( var_885c7eef[ x ].origin, var_8a9122c8.origin ) < 4000 )
+        if ( distance2d( ruin_items[ x ].origin, var_8a9122c8.origin ) < 4000 )
         {
-            item_world::consume_item( var_885c7eef[ x ] );
+            item_world::consume_item( ruin_items[ x ] );
             continue;
         }
         

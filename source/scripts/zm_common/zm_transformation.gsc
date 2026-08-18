@@ -77,17 +77,17 @@ function function_6b183c78( var_736940b3 )
     {
         if ( name_hash == var_736940b3 )
         {
-            var_689205d = index;
+            found_index = index;
             break;
         }
     }
     
-    if ( !isdefined( var_689205d ) )
+    if ( !isdefined( found_index ) )
     {
         return;
     }
     
-    arrayremoveindex( level.var_50f7dbd5, var_689205d );
+    arrayremoveindex( level.var_50f7dbd5, found_index );
     
     if ( level.var_50f7dbd5.size == 0 )
     {

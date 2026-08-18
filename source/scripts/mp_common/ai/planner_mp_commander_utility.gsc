@@ -943,9 +943,9 @@ function private function_9d8a9994( planner, constants )
             {
                 foreach ( var_e8450bcf in controlzones )
                 {
-                    var_f7b61e5e = var_e8450bcf[ #"__unsafe__" ][ #"controlzone" ];
+                    zonestruct = var_e8450bcf[ #"__unsafe__" ][ #"controlzone" ];
                     
-                    if ( var_f7b61e5e.gameobject.trigger istriggerenabled() && bot istouching( var_f7b61e5e.gameobject.trigger ) && var_f7b61e5e.gameobject.curprogress > 0 )
+                    if ( zonestruct.gameobject.trigger istriggerenabled() && bot istouching( zonestruct.gameobject.trigger ) && zonestruct.gameobject.curprogress > 0 )
                     {
                         controlzone = var_e8450bcf;
                         break;
@@ -960,9 +960,9 @@ function private function_9d8a9994( planner, constants )
             {
                 foreach ( var_e8450bcf in controlzones )
                 {
-                    var_f7b61e5e = var_e8450bcf[ #"__unsafe__" ][ #"controlzone" ];
+                    zonestruct = var_e8450bcf[ #"__unsafe__" ][ #"controlzone" ];
                     
-                    if ( var_f7b61e5e.gameobject.trigger istriggerenabled() && bot istouching( var_f7b61e5e.gameobject.trigger ) )
+                    if ( zonestruct.gameobject.trigger istriggerenabled() && bot istouching( zonestruct.gameobject.trigger ) )
                     {
                         controlzone = var_e8450bcf;
                         break;

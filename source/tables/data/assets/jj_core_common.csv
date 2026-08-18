@@ -1826,7 +1826,7 @@ localizeentry,#hash_1ad2499a4dae3666
 localizeentry,#hash_1ad2d081aa9d88ca
 localizeentry,#hash_1ad4231236c9da86
 localizeentry,#score/kill_flag_carrier
-localizeentry,#hash_1ae6942fc2b0f77c
+localizeentry,#score/helicopter_kill
 localizeentry,#hash_1ae747bbe788bba3
 localizeentry,#mpui/last_met_n_days_ago
 localizeentry,#hash_1afeeaf3825c2324
@@ -2443,7 +2443,7 @@ localizeentry,#hash_24b05d656df15f0d
 localizeentry,#medal/bounty_hunter_revived_teammate
 localizeentry,#menu/sysinfo_customer_support_link
 localizeentry,#hash_24c39c25407414c8
-localizeentry,d#hash_24c9561478db5594
+localizeentry,d#menu/camo_loot_masks
 localizeentry,d#hash_24c969cb53981137
 localizeentry,#challenge/weapon_headshots_desc
 localizeentry,#hash_24cf33c68121232b
@@ -4350,7 +4350,7 @@ localizeentry,d#medal/killstreak_more_than_30
 localizeentry,#weapon/ar_fastfire_t8_desc
 localizeentry,#hash_42490c9faeaafef8
 localizeentry,#contract/rcxd_kills
-localizeentry,#hash_424bf980508a053c
+localizeentry,#objectives/tdm_score
 localizeentry,#medal/kill_confirmed_multi
 localizeentry,d#zmui/bgb_anti_entrapment
 localizeentry,#hash_42610051a06bba87
@@ -4676,7 +4676,7 @@ localizeentry,#hash_47ef6543adc3dd18
 localizeentry,d#challenge/groundassault_master_desc
 localizeentry,#exe/offline
 localizeentry,#hash_47f678e91b68e10c
-localizeentry,#hash_47f9d805f8f35f0e
+localizeentry,#wz/attach_adv_mag
 localizeentry,#hash_4801809110587aa5
 localizeentry,#hash_4804064a8f03aa40
 localizeentry,#emotes/selfie
@@ -4824,7 +4824,7 @@ localizeentry,#challenge/killer_four_piece
 localizeentry,#hash_4a608d3fbb6904f9
 localizeentry,d#challenge/humiliation_revenge_desc
 localizeentry,#hash_4a6699f6b4d81e3f
-localizeentry,d#hash_4a6f079813e273c3
+localizeentry,d#menu/camo_loot_dogfight
 localizeentry,d#menu/months_nov
 localizeentry,#hash_4a71312f32c672c8
 localizeentry,#hash_4a71322f32c6747b
@@ -5594,7 +5594,7 @@ localizeentry,d#zmui/high_caliber_desc
 localizeentry,#challenge/combat_knife_kills_award
 localizeentry,d#hash_560d002c6e40e5df
 localizeentry,d#hash_56112328235060d8
-localizeentry,d#hash_561a6371fe1e6f3a
+localizeentry,d#menu/camo_loot_vice
 localizeentry,#hash_561b2aec7b01bbbc
 localizeentry,#hash_561bb2bb72747013
 localizeentry,#zm_contract/perks
@@ -6740,7 +6740,7 @@ localizeentry,d#hash_662d8c879b8bed90
 localizeentry,#hash_662d8e879b8bf0f6
 localizeentry,#hash_662d8f879b8bf2a9
 localizeentry,#score/killstreak_more_than_30
-localizeentry,d#hash_663114aa52ffcb21
+localizeentry,d#menu/camo_loot_ww2
 localizeentry,d#platform/demonware_disconnect
 localizeentry,#hash_6635c45f05224db9
 localizeentry,#weapon/target_being_used
@@ -7053,7 +7053,7 @@ localizeentry,#hash_6b1470d79554f6a8
 localizeentry,#zm_contract/lmg_kills
 localizeentry,#hash_6b1ad207d0716bf0
 localizeentry,#hash_6b1ad307d0716da3
-localizeentry,#hash_6b1c2e52cb53651b
+localizeentry,#score/hellstorm_kill
 localizeentry,#cpui/skulls
 localizeentry,#hash_6b2af5e3fc6894f6
 localizeentry,#mpui/desc_madagascar
@@ -7734,7 +7734,7 @@ localizeentry,#platform/demo_config_lt
 localizeentry,d#mpui/damage
 localizeentry,d#hash_758d93baadbc199d
 localizeentry,#wz/attach_fastmag
-localizeentry,#hash_75910f89d3c7bccc
+localizeentry,#wz/attach_acog_plus
 localizeentry,#score/blade_shutdown
 localizeentry,#hash_759582c5dfc07fa6
 localizeentry,#hash_759ae43974604bd1
@@ -7882,7 +7882,7 @@ localizeentry,#hash_77d67907790da7a7
 localizeentry,#challenge/type_grenade
 localizeentry,#hash_77d86e3587212d8d
 localizeentry,#hash_77da7f13995bf06f
-localizeentry,d#hash_77dce7635423ba68
+localizeentry,d#menu/camo_loot_cyberpunk
 localizeentry,#menu/talisman_perk_permanent_1_desc
 localizeentry,#hash_77e7311dc74dccf5
 localizeentry,#eq_swat_grenade/desc
@@ -8276,7 +8276,7 @@ localizeentry,#menu/talisman_extra_semtex_desc
 localizeentry,d#weapon/smg_minigun_t8
 localizeentry,#hash_7ddc3102370f358d
 localizeentry,#score/hacked_mantis
-localizeentry,#hash_7de660634ec3299e
+localizeentry,#feature/prestige_lb
 localizeentry,#rank/ltgen_full
 localizeentry,d#menu/fileshare_category_screenshots
 localizeentry,d#menu/fileshare_description
@@ -8388,7 +8388,7 @@ localizeentry,#wz/mason_caps
 localizeentry,#emotes/hoop_there_it_is
 localizeentry,d#hash_7fd1f771291c7a79
 localizeentry,#hash_7fd3d2a67d1a260d
-localizeentry,d#hash_7fd496c4cf9ec713
+localizeentry,d#menu/camo_loot_plasmadrive
 localizeentry,#hash_7fd63164f504dda1
 localizeentry,#hash_7fdf126164d700bf
 localizeentry,d#hash_7fdf14aeca119eda

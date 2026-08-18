@@ -116,7 +116,7 @@ function function_ee579eb5()
     self.hit_by_melee = 0;
     self.phase_time = 0;
     self.var_1ce249af = 0;
-    self.var_15aa1ae0 = 2000;
+    self.phase_cooldown = 2000;
     self.var_f3bbe853 = 1;
     self.last_phase_time = 0;
     self.var_9bff71aa = 0;
@@ -459,7 +459,7 @@ function function_a495d71f( entity )
     {
         if ( entity function_dd070839() || isdefined( entity.traversestartnode ) )
         {
-            entity.phase_time = gettime() + self.var_15aa1ae0;
+            entity.phase_time = gettime() + self.phase_cooldown;
             entity.var_1ce249af = 0;
             return;
         }
@@ -548,7 +548,7 @@ function function_3b8d314c( entity )
 // Size: 0x2e
 function function_36f6a838( entity )
 {
-    entity.phase_time = gettime() + self.var_15aa1ae0;
+    entity.phase_time = gettime() + self.phase_cooldown;
     entity.var_1ce249af = 0;
 }
 
@@ -560,7 +560,7 @@ function function_dbba31c1( entity )
 {
     entity thread avogadroreveal( 0.1 );
     entity.blockingpain = 0;
-    entity.phase_time = gettime() + self.var_15aa1ae0;
+    entity.phase_time = gettime() + self.phase_cooldown;
     entity.is_phasing = undefined;
     entity.last_phase_time = gettime();
     

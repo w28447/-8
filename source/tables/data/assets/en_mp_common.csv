@@ -59,7 +59,7 @@ localizeentry,#hash_e099292607ac89
 localizeentry,#hash_e4814cfc5b3d7a
 localizeentry,#platform/use_turret
 localizeentry,#wz/x
-localizeentry,#hash_ef3f10f4e17596
+localizeentry,#mpui/resistance_radiation_desc
 localizeentry,#hash_f199b5026abdd9
 localizeentry,#hash_f2230cacf67e89
 localizeentry,#hash_fc30f200a28b4f
@@ -225,7 +225,7 @@ localizeentry,d#hash_41274fb72d5a17e
 localizeentry,#hash_4191ccc90abb658
 localizeentry,#menu/charm_basketball_william
 localizeentry,#hash_424a778a73bcfe6
-localizeentry,#hash_427a48030202fda
+localizeentry,#killstreak/drone_squadron_crate
 localizeentry,#hash_429d447697d40d3
 localizeentry,#hash_430cc400c76472d
 localizeentry,#mpui/xx_caps
@@ -333,7 +333,7 @@ localizeentry,#hash_5f5cc66e562de65
 localizeentry,#hash_5f83f29402b37b8
 localizeentry,#hash_5fb371864566a5c
 localizeentry,#hash_60c04ec8320a559
-localizeentry,#hash_60ec6a8483dc68b
+localizeentry,#killstreak/rcbomb_crate
 localizeentry,#hash_6131dec8326ee82
 localizeentry,#hash_61af2318e0e8a22
 localizeentry,#hash_625539d518fc1c7
@@ -790,7 +790,7 @@ localizeentry,#hash_e242b683a29dfad
 localizeentry,d#mp/waiting_for_players_shoutcaster
 localizeentry,d#hash_e2971bbfafcfe66
 localizeentry,#hash_e2e00b81aa4ba53
-localizeentry,#hash_e2ee55c3f615f97
+localizeentry,#platform/helicopter_gambler
 localizeentry,#hash_e39a2a5906972d5
 localizeentry,#hash_e4388a590719b2c
 localizeentry,#hash_e4a210f32d3e913
@@ -909,7 +909,7 @@ localizeentry,#hash_10272b4e2dd37d10
 localizeentry,#hash_102b154e2dd74085
 localizeentry,#hash_102b3d45e91880f1
 localizeentry,#hash_102d88a619a6a72b
-localizeentry,#hash_102e26ae2ac1f2c5
+localizeentry,#mpui/resistance_slowed_desc
 localizeentry,#hash_1031a93fc8297d8c
 localizeentry,#hash_1033643519e457aa
 localizeentry,#hash_10337e4d2d14bdbf
@@ -952,7 +952,7 @@ localizeentry,#hash_111e9243d9cd2c78
 localizeentry,#hash_11385e6d743da75a
 localizeentry,d#hash_11416e3dffba8d50
 localizeentry,#hash_11488631f6562de4
-localizeentry,#hash_11504027f6e9b8ec
+localizeentry,#objectives/ball_kill
 localizeentry,d#hash_11531be3313bb59d
 localizeentry,d#mpui/mk
 localizeentry,d#menu/camo_loot_fractalized
@@ -1080,7 +1080,7 @@ localizeentry,d#hash_1339e923e692ad5e
 localizeentry,#hash_133cafefb487b481
 localizeentry,d#hash_13402ca216747121
 localizeentry,#ui/with
-localizeentry,#hash_13432ebe86139ae1
+localizeentry,#killstreak/helicopter_crate
 localizeentry,#hash_1345be50b9338ee9
 localizeentry,#hash_134baeecd3e285cf
 localizeentry,#hash_134d15352e95be23
@@ -1256,7 +1256,7 @@ localizeentry,#hash_167d68f3d91a819b
 localizeentry,#hash_167e638f51287532
 localizeentry,#hash_16860afe23489e5c
 localizeentry,#hash_16949c8b003c10db
-localizeentry,#hash_1699cb6fec374f74
+localizeentry,#objectives/ball_escort
 localizeentry,#hash_169f4517fb19aa2a
 localizeentry,#hash_16a058cc58434ff2
 localizeentry,#hash_16a2343a0471a8b0
@@ -2016,7 +2016,7 @@ localizeentry,d#hash_24a3e0f402bfd000
 localizeentry,#hash_24a870996652669f
 localizeentry,#hash_24b56919b50565e0
 localizeentry,#hash_24c6d5abdabee8f4
-localizeentry,d#hash_24c9561478db5594
+localizeentry,d#menu/camo_loot_masks
 localizeentry,#weapon/jammer
 localizeentry,#hash_24ea1ededbb32171
 localizeentry,d#codcaster/quick_settings
@@ -2036,7 +2036,7 @@ localizeentry,#hash_254f9e383f261c82
 localizeentry,#hash_255947ac1dd245f5
 localizeentry,d#menu/camo_loot_shimmer
 localizeentry,#hash_255f8ce99f6e0491
-localizeentry,#hash_2560bddc064fa7cb
+localizeentry,#killstreak/destroyed_rcbomb
 localizeentry,#hash_256cae539ffe6011
 localizeentry,#mpui/boosted
 localizeentry,#menu/hud_vehicle_flyup
@@ -2142,7 +2142,7 @@ localizeentry,#hash_27106f612969ab96
 localizeentry,#hash_271ca87b3d4111c2
 localizeentry,#hash_2725992808263e0f
 localizeentry,#hash_2727157716ed6dea
-localizeentry,#hash_273eb53b589a6439
+localizeentry,#killstreak/dart_crate
 localizeentry,#hash_27488e7b3d66207f
 localizeentry,#hash_27527f4635a977a7
 localizeentry,#menu/charm_skateboard
@@ -2168,7 +2168,7 @@ localizeentry,#hash_27b4ff984b693995
 localizeentry,#hash_27bb24a620a9d0d9
 localizeentry,#hash_27c58526d71a5407
 localizeentry,d#hash_27d1d51144cad6bc
-localizeentry,#hash_27e598f14dfcbe4f
+localizeentry,#platform/dart_gambler
 localizeentry,#mpui/game_type
 localizeentry,#hash_28028851bde18fef
 localizeentry,#hash_28028951bde191a2
@@ -3257,7 +3257,7 @@ localizeentry,#hash_3be8ac0c4efdaedf
 localizeentry,d#smartcover/name
 localizeentry,#hash_3bf4e63d17390af4
 localizeentry,#mp/gun_prev_level
-localizeentry,#hash_3c0f13d289c30c66
+localizeentry,#mpui/resistance_radiation
 localizeentry,#hash_3c14010f3cb09cee
 localizeentry,#hash_3c1af85cf1cf0a29
 localizeentry,#hash_3c230bf11ad76838
@@ -3376,7 +3376,7 @@ localizeentry,d#mpui/tacknife
 localizeentry,d#menu/camo_loot_chrysalis
 localizeentry,#hash_3de8f57249114905
 localizeentry,#hash_3def2095925a2258
-localizeentry,#hash_3df2e16830b73be2
+localizeentry,#mpui/resistance_damage_desc
 localizeentry,#hash_3df31b724919de1c
 localizeentry,#hash_3dfa12ad28064728
 localizeentry,#hash_3dfaa7fc8e62bc1d
@@ -3630,7 +3630,7 @@ localizeentry,#hash_42578cd7bcd26a7f
 localizeentry,#hash_42626dcb73457056
 localizeentry,#hash_4263e7f721a63f27
 localizeentry,#hash_42643a5e21844d7c
-localizeentry,#hash_426758cb22a6aa7f
+localizeentry,#mpui/resistance_shellshock
 localizeentry,#hash_426cc5ec4ec38576
 localizeentry,#hash_426f11f7d1075b7c
 localizeentry,#hash_426fbfab5a7cb00f
@@ -3757,7 +3757,7 @@ localizeentry,#hash_44257c7c9bb6cb62
 localizeentry,#hash_44257d7c9bb6cd15
 localizeentry,#hash_44266a031a28371b
 localizeentry,#hash_442d7f680da35d79
-localizeentry,#hash_442e1ad0cf0099e0
+localizeentry,#killstreak/gunship_crate
 localizeentry,#hash_443101fa69c21abf
 localizeentry,#hash_44318e05949a47b3
 localizeentry,#mpui/rejack_caps
@@ -3773,7 +3773,7 @@ localizeentry,#hash_44532a9b5af544da
 localizeentry,d#codcaster/ds_killfeed_desc
 localizeentry,#codcaster/round
 localizeentry,#hash_445f7c65f4c3f9fc
-localizeentry,#hash_44608eb304007fb1
+localizeentry,#killstreak/swat_team_crate
 localizeentry,#hash_44643ccd2f214bc2
 localizeentry,#hash_44646c0b3cae509e
 localizeentry,#hash_4467e9a36011fa29
@@ -4158,7 +4158,7 @@ localizeentry,#hash_4a4903aefcea3a7e
 localizeentry,#hash_4a4b63ea3b1041bd
 localizeentry,d#hash_4a584bc8c443f246
 localizeentry,d#demo/menu
-localizeentry,d#hash_4a6f079813e273c3
+localizeentry,d#menu/camo_loot_dogfight
 localizeentry,#hash_4a71abca278a5ca2
 localizeentry,#menu/charm_computer_teeth
 localizeentry,#hash_4a7bb6ae2181102f
@@ -4175,7 +4175,7 @@ localizeentry,#hash_4ab53adc17a7ed7a
 localizeentry,#hash_4abcf7bfa588a504
 localizeentry,d#hash_4abd192255393c9e
 localizeentry,#hash_4abe3270ceb62bfa
-localizeentry,#hash_4ac4e6df00b1e08d
+localizeentry,#mpui/resistance_shock_desc
 localizeentry,#hash_4ac6339f7cce11c4
 localizeentry,#hash_4ac8ba274110d7fe
 localizeentry,#hash_4acce02741150167
@@ -4799,7 +4799,7 @@ localizeentry,d#zmui/high_caliber_desc
 localizeentry,d#hash_560d002c6e40e5df
 localizeentry,#hash_560e164eabdc785d
 localizeentry,#hash_561799bbf5a8eeed
-localizeentry,d#hash_561a6371fe1e6f3a
+localizeentry,d#menu/camo_loot_vice
 localizeentry,d#hash_561bb2bb72747013
 localizeentry,#hash_5625f42dbd41d416
 localizeentry,d#menu/hud_vehicle_detonate
@@ -5702,7 +5702,7 @@ localizeentry,#hash_6543f618fd754e9e
 localizeentry,#hash_6544af5cfdb0037d
 localizeentry,d#hash_654b3a8ecbf13a67
 localizeentry,#hash_655231d4b2916503
-localizeentry,#hash_6555971ad9da7e68
+localizeentry,#platform/radar_gambler
 localizeentry,#mpui/equipment_caps
 localizeentry,#hash_65673de821a54ce8
 localizeentry,#hash_6567e13f2596ad3e
@@ -5710,7 +5710,7 @@ localizeentry,#hash_656c0e2f29bdee9d
 localizeentry,#hash_6577d55cfddb9da8
 localizeentry,#hash_6578d73f25a50f73
 localizeentry,#hash_65807122dfbc2768
-localizeentry,#hash_6581de31cff2ddd5
+localizeentry,#platform/rcbomb_gambler
 localizeentry,d#codcaster/qs_loadout_hint
 localizeentry,#hash_6599fd82845da440
 localizeentry,#menu/charm_crystal
@@ -5741,7 +5741,7 @@ localizeentry,d#killstreak/cuav
 localizeentry,#hash_6615323cf730f527
 localizeentry,#menu/look
 localizeentry,#mp/waiting_for_hq
-localizeentry,d#hash_663114aa52ffcb21
+localizeentry,d#menu/camo_loot_ww2
 localizeentry,d#coop/reviving
 localizeentry,d#menu/continue
 localizeentry,#killstreak/rcbomb_not_placeable
@@ -5825,7 +5825,7 @@ localizeentry,#hash_67c43b81d0eb7e9e
 localizeentry,#hash_67cbe4e911f97672
 localizeentry,d#hash_67d14df1d6cbe990
 localizeentry,#hash_67e15f2dec72c0cf
-localizeentry,#hash_67e1869756918772
+localizeentry,#mpui/resistance_damage
 localizeentry,#hash_67e1a005245cb820
 localizeentry,#hash_67e4ca05245f3555
 localizeentry,#hash_67e9fae912129963
@@ -5845,7 +5845,7 @@ localizeentry,#hash_682b9ed55c6bee93
 localizeentry,#hash_68308676a9bd9cd8
 localizeentry,#hash_6833adffce266831
 localizeentry,#hash_68370b7fa30d688d
-localizeentry,#hash_6838e2ed64fe26b6
+localizeentry,#mpui/resistance_blind_desc
 localizeentry,#mp/infect_timer
 localizeentry,#hash_6851bf226750dfdf
 localizeentry,#hash_685abe87c1eccd08
@@ -6287,7 +6287,7 @@ localizeentry,#killstreak/radar_not_available
 localizeentry,#hash_70dad3fdba372e15
 localizeentry,#hash_70df31bbc401e981
 localizeentry,#hash_70e526bbc406427e
-localizeentry,#hash_70eee7cb878b0b3d
+localizeentry,#objectives/ball_upload
 localizeentry,d#hash_70f52930ed249e85
 localizeentry,#hash_70ffe1d3f59aa3cc
 localizeentry,#hash_7109688e546b43d6
@@ -6660,7 +6660,7 @@ localizeentry,d#codcaster/ls_wildcards
 localizeentry,#hash_77cf1e4e9ad98574
 localizeentry,#hash_77d50929f86125f0
 localizeentry,#hash_77dcacbbea99389a
-localizeentry,d#hash_77dce7635423ba68
+localizeentry,d#menu/camo_loot_cyberpunk
 localizeentry,#hash_77e2fd8518b19fd1
 localizeentry,d#hash_77e7311dc74dccf5
 localizeentry,#hash_77e9ef0a1424a57c
@@ -6746,7 +6746,7 @@ localizeentry,#hash_799407bfa9f9aa1e
 localizeentry,#hash_7997cb665f585611
 localizeentry,#hash_799d831663d275a6
 localizeentry,#hash_79a250d518fb7fcd
-localizeentry,#hash_79a9e0601cc5ed24
+localizeentry,#killstreak/radar_crate
 localizeentry,#hash_79afa41c94205da8
 localizeentry,#hash_79afa51c94205f5b
 localizeentry,#hash_79b0e986125936d8
@@ -6895,7 +6895,7 @@ localizeentry,#killstreak/planemortar_hacked
 localizeentry,#demo/playback_mode
 localizeentry,#hash_7c9d016d69a05f30
 localizeentry,#hash_7c9e14f1191cf450
-localizeentry,#hash_7ca07ba7e2400b51
+localizeentry,#mpui/resistance_shellshock_desc
 localizeentry,#menu/charm_monty_bar
 localizeentry,#hash_7caacbfe7056ad92
 localizeentry,#hash_7cac98bdbda69114
@@ -7093,7 +7093,7 @@ localizeentry,#hash_7fcc4a74cec03814
 localizeentry,#hash_7fcc4d74cec03d2d
 localizeentry,#hash_7fceebdfa6be4c52
 localizeentry,#hash_7fd072568321a159
-localizeentry,d#hash_7fd496c4cf9ec713
+localizeentry,d#menu/camo_loot_plasmadrive
 localizeentry,#hash_7fdeae33f0234d68
 localizeentry,#hash_7fdf6735adb69b20
 localizeentry,#hash_7fe29135adb91855

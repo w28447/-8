@@ -91,7 +91,7 @@
         },
         {
             "name": "#failure_code",
-            "scrName": "#hash_c900040b",
+            "scrName": "#failure_code",
             "type": "UINT32"
         }
     ],

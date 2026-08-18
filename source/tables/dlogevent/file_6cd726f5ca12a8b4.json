@@ -92,7 +92,7 @@
         },
         {
             "name": "#join_state",
-            "scrName": "#hash_1304b416",
+            "scrName": "#join_state",
             "type": "STRING",
             "len": 24
         },
@@ -109,7 +109,7 @@
         },
         {
             "name": "#join_type",
-            "scrName": "#hash_e90c426f",
+            "scrName": "#join_type",
             "type": "INT32"
         },
         {
@@ -119,7 +119,7 @@
         },
         {
             "name": "#party_size",
-            "scrName": "#hash_9630b19d",
+            "scrName": "#party_size",
             "type": "INT32"
         },
         {
@@ -140,7 +140,7 @@
         },
         {
             "name": "#host_xuid",
-            "scrName": "#hash_484eaa74",
+            "scrName": "#host_xuid",
             "type": "UINT64",
             "s111u20": true
         }

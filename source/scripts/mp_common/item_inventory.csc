@@ -1306,7 +1306,7 @@ function private function_fe189514( itementry )
 // Params 10, eflags: 0x4
 // Checksum 0xc9b9fa8f, Offset: 0x4e60
 // Size: 0x1fcc
-function private function_1a99656a( localclientnum, inventoryitem, networkid, itemid, count, totalcount, availableaction, var_e35261f6 = 1, var_189fcf49 = 0, var_1204dfe9 = 1 )
+function private function_1a99656a( localclientnum, inventoryitem, networkid, itemid, count, totalcount, availableaction, resettimes = 1, var_189fcf49 = 0, var_1204dfe9 = 1 )
 {
     data = undefined;
     
@@ -1368,7 +1368,7 @@ function private function_1a99656a( localclientnum, inventoryitem, networkid, it
     inventoryitem.consumable = isdefined( inventoryitem.itementry ) ? inventoryitem.itementry.consumable : undefined;
     inventoryitem.quickequip = 0;
     
-    if ( var_e35261f6 )
+    if ( resettimes )
     {
         inventoryitem.starttime = undefined;
         inventoryitem.endtime = undefined;
@@ -3727,11 +3727,11 @@ function function_26c87da8( localclientnum, var_c9293a27, var_8f194e5a )
     var_9269cd0a = toitem.networkid;
     var_d3a45360 = toitem.id;
     var_ec763bb2 = toitem.itementry;
-    var_532f304 = toitem.count;
+    tocount = toitem.count;
     var_ad138826 = toitem.availableaction;
     player = function_27673a7( localclientnum );
     player function_1a99656a( localclientnum, toitem, var_23501832 != 32767 ? item_world_util::function_970b8d86( player, var_8f194e5a ) : 32767, var_a2dd129a, var_3907299e, function_bba770de( localclientnum, var_b208c7e1 ), var_57b0c2f, undefined, 1 );
-    player function_1a99656a( localclientnum, fromitem, var_9269cd0a != 32767 ? item_world_util::function_970b8d86( player, var_c9293a27 ) : 32767, var_d3a45360, var_532f304, function_bba770de( localclientnum, var_ec763bb2 ), var_ad138826, undefined, 1 );
+    player function_1a99656a( localclientnum, fromitem, var_9269cd0a != 32767 ? item_world_util::function_970b8d86( player, var_c9293a27 ) : 32767, var_d3a45360, tocount, function_bba770de( localclientnum, var_ec763bb2 ), var_ad138826, undefined, 1 );
     function_442857e2( localclientnum, var_ec763bb2 );
     function_442857e2( localclientnum, var_b208c7e1 );
     function_ce628f27( localclientnum );

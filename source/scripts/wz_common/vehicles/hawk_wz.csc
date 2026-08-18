@@ -66,7 +66,7 @@ function private hawk_spawned( localclientnum )
 // Size: 0x2c
 function private function_8bd7314c( localclientnum )
 {
-    function_1eaaceab( level.var_ef287aa1, 0 );
+    arrayremovedead( level.var_ef287aa1, 0 );
 }
 
 // Namespace hawk_wz/hawk_wz
@@ -153,13 +153,13 @@ function private function_bbb5186f( ti )
 // Params 3, eflags: 0x4
 // Checksum 0xd924b763, Offset: 0x898
 // Size: 0x9a
-function private set_target_locked( localclientnum, ti, var_3c5beee7 )
+function private set_target_locked( localclientnum, ti, lockon_state )
 {
-    if ( !isdefined( self.var_6a09a180[ ti ] ) || self.var_6a09a180[ ti ] != var_3c5beee7 )
+    if ( !isdefined( self.var_6a09a180[ ti ] ) || self.var_6a09a180[ ti ] != lockon_state )
     {
         uifield = level.var_aac98621[ ti ];
-        uifield remote_missile_target_lockon::set_target_locked( localclientnum, var_3c5beee7 );
-        self.var_6a09a180[ ti ] = var_3c5beee7;
+        uifield remote_missile_target_lockon::set_target_locked( localclientnum, lockon_state );
+        self.var_6a09a180[ ti ] = lockon_state;
     }
 }
 
@@ -398,7 +398,7 @@ function private function_9ace0fb6( localclientnum )
         }
         
         info.visible = 1;
-        info.var_1fe906d8 = time;
+        info.visible_time = time;
         tagtime = int( bundle.tag_time * 1000 );
         
         if ( target hasperk( localclientnum, #"specialty_nokillstreakreticle" ) )
@@ -406,7 +406,7 @@ function private function_9ace0fb6( localclientnum )
             tagtime *= bundle.var_59b7880b;
         }
         
-        if ( info.var_1fe906d8 - info.first_visible > tagtime )
+        if ( info.visible_time - info.first_visible > tagtime )
         {
             if ( isdefined( self.owner ) && target function_21c0fa55() && !info.var_aaf744fe && !function_f95544c4( self.owner.team, target.team ) )
             {
@@ -414,12 +414,12 @@ function private function_9ace0fb6( localclientnum )
             }
             
             info.state = 1;
-            info.var_a7e1d732 = time;
+            info.locked_time = time;
         }
-        else if ( isdefined( info.var_a7e1d732 ) && time - info.var_a7e1d732 < int( bundle.tag_grace_period * 1000 ) )
+        else if ( isdefined( info.locked_time ) && time - info.locked_time < int( bundle.tag_grace_period * 1000 ) )
         {
             info.state = 1;
-            info.var_a7e1d732 = time;
+            info.locked_time = time;
         }
         
         self.var_704e7b07[ var_4ef4e267 ] = info;
@@ -457,12 +457,12 @@ function private function_cfd3bed0( target_info )
 {
     if ( !( isdefined( target_info.visible ) && target_info.visible ) )
     {
-        if ( !isdefined( target_info.var_1fe906d8 ) )
+        if ( !isdefined( target_info.visible_time ) )
         {
             return false;
         }
         
-        if ( gettime() - target_info.var_1fe906d8 > 500 )
+        if ( gettime() - target_info.visible_time > 500 )
         {
             return false;
         }
@@ -833,8 +833,8 @@ function private function_8487fabe( localclientnum )
         return;
     }
     
-    var_82bf9f7b = self.owner getplayerangles();
-    forward = anglestoforward( var_82bf9f7b );
+    look_angles = self.owner getplayerangles();
+    forward = anglestoforward( look_angles );
     bundle = level.hawk_settings.bundle;
     var_e4f883c1 = bundle.tag_distance * bundle.tag_distance;
     enemies = self function_2d90a835( localclientnum, bundle.tag_distance );
@@ -947,7 +947,7 @@ function private function_8487fabe( localclientnum )
         }
     }
     
-    function_1eaaceab( targets, 0 );
+    arrayremovedead( targets, 0 );
     function_d952430d( localclientnum, self.var_5f360c48, targets );
     function_d952430d( localclientnum, self.var_c55be3a2, targets );
     self.targets = targets;
@@ -959,7 +959,7 @@ function private function_8487fabe( localclientnum )
 // Size: 0x14a
 function private function_bba5f8f7()
 {
-    var_ef7046e6 = self.origin;
+    sort_origin = self.origin;
     targets = [];
     var_a980942f = function_364150fd();
     
@@ -969,12 +969,12 @@ function private function_bba5f8f7()
         
         if ( hawk.owner === self )
         {
-            var_ef7046e6 = hawk.origin;
+            sort_origin = hawk.origin;
         }
     }
     
-    function_1eaaceab( targets );
+    arrayremovedead( targets );
     bundle = level.hawk_settings.bundle;
-    return arraysortclosest( targets, var_ef7046e6, bundle.tag_max_targets, 0, bundle.tag_distance );
+    return arraysortclosest( targets, sort_origin, bundle.tag_max_targets, 0, bundle.tag_distance );
 }
 

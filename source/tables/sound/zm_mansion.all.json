@@ -257213,13 +257213,13 @@
         {
             "value": 505,
             "next": 1380,
-            "name": "#hash_3004f588bf60f0ec",
+            "name": "#zmb_hellhound_loop_breath",
             "sequence": 0,
             "cullDistance": 500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3004f588bf60f0ec",
+                    "name": "#zmb_hellhound_loop_breath",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
                     "assetFileNameRelease": "#zm_mansion.all",
@@ -257268,7 +257268,7 @@
             "aliases": [
                 {
                     "name": "#zmb_hellhound_loop_fire",
-                    "secondaryname": "#hash_3004f588bf60f0ec",
+                    "secondaryname": "#zmb_hellhound_loop_breath",
                     "assetId": "#zmb/ai/hellhounds/loop_00.ll100.pc.snd",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -274332,13 +274332,13 @@
         {
             "value": 687,
             "next": 1561,
-            "name": "#hash_6cfa41a4b04b4a0a",
+            "name": "#zmb_vocals_hellhound_ambient",
             "sequence": 0,
             "cullDistance": 2600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_5ea54bbe11e34393",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -274379,7 +274379,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_27b042a648289b76",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -274420,7 +274420,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_4035ed0eb97a7941",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -274461,7 +274461,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_109d56a0c742b33c",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -274502,7 +274502,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_14435def71c8db8f",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -274543,7 +274543,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_615f62a09e4046d2",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -274584,7 +274584,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_17d36126b54fb15d",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",
@@ -274625,7 +274625,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_3c580c765614c5c8",
                     "assetFileNameSustain": "#zm_mansion.all",
                     "assetIdRelease": "#zm_mansion.all",

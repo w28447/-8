@@ -138,9 +138,9 @@ soundalias,#dst_gas_pipe_lp
 soundalias,#hash_62332d89ae65200
 soundalias,#hash_6799f17d17bd52a
 soundalias,#hash_679a117d17bd890
-soundalias,#hash_69147ba38c07e82
+soundalias,#amb_fire_xlg
 soundalias,#hash_82d8fc262fa2602
-soundalias,#hash_8abeeabd2aa2c9c
+soundalias,#amb_wind_exterior_2d
 soundalias,#exp_barrel_lfe
 soundalias,#hash_a701893a7d70ea0
 soundalias,#hash_a703693a7d7419a
@@ -158,7 +158,7 @@ soundalias,#dst_water_bottle
 soundalias,#amb_rain_on_metal
 soundalias,#pfx_fire_fall
 soundalias,#hash_1d23b923bccea934
-soundalias,#hash_1d269c23bcd0adc4
+soundalias,#amb_fire_lg
 soundalias,#amb_rain_on_water
 soundalias,#hash_1f9b1d980061ea0e
 soundalias,#dst_fern
@@ -183,7 +183,7 @@ soundalias,#hash_2d9239cee350babf
 soundalias,#hash_2d923acee350bc72
 soundalias,#hash_2e25f1d6ca55e5d9
 soundalias,#exp_mp_propane_tank_explo
-soundalias,#hash_2ec3de3874855810
+soundalias,#exp_redbarrel
 soundalias,#dst_server_power
 soundalias,#dst_foodstand
 soundalias,#hash_300e3315a48607a8
@@ -246,7 +246,7 @@ soundalias,#amb_trees_creak
 soundalias,#hash_5ca8d4adbb8576c5
 soundalias,#hash_5e6c6fe38f11ed65
 soundalias,#hash_5f07c850bd480725
-soundalias,#hash_5f0cf846c1e5f92e
+soundalias,#amb_wind_interior_2d
 soundalias,#hash_5fbc57fe7327e948
 soundalias,#amb_tree_leaves
 soundalias,#hash_60c935d4c50a3d7d

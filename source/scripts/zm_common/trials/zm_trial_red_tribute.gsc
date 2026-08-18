@@ -212,7 +212,7 @@ function private track_spawns()
 // Size: 0x30
 function on_ai_killed( params )
 {
-    if ( isdefined( self.var_c39323b5 ) && self.var_c39323b5 )
+    if ( isdefined( self.b_cleaned_up ) && self.b_cleaned_up )
     {
         level.var_ddd04c77--;
     }

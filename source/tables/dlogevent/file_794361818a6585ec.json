@@ -96,7 +96,7 @@
         },
         {
             "name": "#search_type",
-            "scrName": "#hash_16f60b01",
+            "scrName": "#search_type",
             "type": "INT32"
         },
         {

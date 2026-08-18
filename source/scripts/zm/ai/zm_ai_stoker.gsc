@@ -75,7 +75,7 @@ class class_264486ac
         health = 0;
         hitloc = "";
         hittag = "";
-        var_934afb38 = 0;
+        hitradiussq = 0;
     }
 
 }
@@ -537,7 +537,7 @@ function function_a96d8bd7( einflictor, eattacker, idamage, idflags, smeansofdea
 // Params 5, eflags: 0x4
 // Checksum 0x12ef9e44, Offset: 0x2658
 // Size: 0xc0
-function private function_1bf5272c( hitloc, point, location, var_934afb38, tag )
+function private function_1bf5272c( hitloc, point, location, hitradiussq, tag )
 {
     var_99f08950 = 0;
     
@@ -549,7 +549,7 @@ function private function_1bf5272c( hitloc, point, location, var_934afb38, tag )
     {
         distsq = distancesquared( point, self gettagorigin( tag ) );
         
-        if ( distsq <= var_934afb38 )
+        if ( distsq <= hitradiussq )
         {
             var_99f08950 = 1;
         }

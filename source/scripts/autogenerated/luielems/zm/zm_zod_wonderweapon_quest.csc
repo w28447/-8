@@ -78,13 +78,13 @@ class czm_zod_wonderweapon_quest : cluielem
     // Params 5
     // Checksum 0x198c67c4, Offset: 0x2e0
     // Size: 0xe4
-    function setup_clientfields( uid, var_89b4773e, var_703a7074, var_599a1ebc, var_c47850b )
+    function setup_clientfields( uid, radiancecallback, plasmacallback, puritycallback, decaycallback )
     {
         cluielem::setup_clientfields( uid );
-        cluielem::add_clientfield( "radiance", 1, 1, "int", var_89b4773e );
-        cluielem::add_clientfield( "plasma", 1, 1, "int", var_703a7074 );
-        cluielem::add_clientfield( "purity", 1, 1, "int", var_599a1ebc );
-        cluielem::add_clientfield( "decay", 1, 1, "int", var_c47850b );
+        cluielem::add_clientfield( "radiance", 1, 1, "int", radiancecallback );
+        cluielem::add_clientfield( "plasma", 1, 1, "int", plasmacallback );
+        cluielem::add_clientfield( "purity", 1, 1, "int", puritycallback );
+        cluielem::add_clientfield( "decay", 1, 1, "int", decaycallback );
     }
 
 }
@@ -93,10 +93,10 @@ class czm_zod_wonderweapon_quest : cluielem
 // Params 5
 // Checksum 0xfedb0e50, Offset: 0xc8
 // Size: 0x70
-function register( uid, var_89b4773e, var_703a7074, var_599a1ebc, var_c47850b )
+function register( uid, radiancecallback, plasmacallback, puritycallback, decaycallback )
 {
     elem = new czm_zod_wonderweapon_quest();
-    [[ elem ]]->setup_clientfields( uid, var_89b4773e, var_703a7074, var_599a1ebc, var_c47850b );
+    [[ elem ]]->setup_clientfields( uid, radiancecallback, plasmacallback, puritycallback, decaycallback );
     return elem;
 }
 

@@ -401,7 +401,7 @@ soundalias,#hash_2d9239cee350babf
 soundalias,#hash_2d923acee350bc72
 soundalias,#hash_2e25f1d6ca55e5d9
 soundalias,#exp_mp_propane_tank_explo
-soundalias,#hash_2ec3de3874855810
+soundalias,#exp_redbarrel
 soundalias,#dst_server_power
 soundalias,#dst_foodstand
 soundalias,#hash_303a62e9feb361dc
@@ -429,7 +429,7 @@ soundalias,#exp_barrel_flux_l
 soundalias,#hash_3f8d713abf4d10fe
 soundalias,#amb_alarm
 soundalias,#amb_fan_ceiling
-soundalias,#hash_417a6cd8bbd9d517
+soundalias,#amb_lights_buzz
 soundalias,#evt_little_bird_wash
 soundalias,#hash_436a4f77c54e7912
 soundalias,#hash_438b930b61d96f77
@@ -480,7 +480,7 @@ soundalias,#dst_fire_extinguisher
 soundalias,#hash_59e128a5a58e7d49
 soundalias,#hash_5a2d0a630e0a42ab
 soundalias,#hash_5b18895703fba823
-soundalias,#hash_5bbc0710afc0dff6
+soundalias,#amb_fire_medium
 soundalias,#hash_5ca8d4adbb8576c5
 soundalias,#hash_5e6c6fe38f11ed65
 soundalias,#dst_car_fire

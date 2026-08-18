@@ -60,9 +60,9 @@ function private on_player_damage( params )
 {
     if ( ( isai( params.eattacker ) || isai( params.einflictor ) ) && ( params.idamage > 0 || isdefined( self.armor ) && self.armor > 0 ) )
     {
-        var_57807cdc = [];
-        array::add( var_57807cdc, self, 0 );
-        zm_trial::fail( #"zmtrials/player_took_damage", var_57807cdc );
+        failed_players = [];
+        array::add( failed_players, self, 0 );
+        zm_trial::fail( #"zmtrials/player_took_damage", failed_players );
     }
 }
 

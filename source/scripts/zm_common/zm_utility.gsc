@@ -1957,7 +1957,7 @@ function get_closest_valid_player( origin, ignore_player = array(), var_b106b254
     
     if ( isdefined( level.zombie_targets ) && level.zombie_targets.size > 0 )
     {
-        function_1eaaceab( level.zombie_targets );
+        arrayremovedead( level.zombie_targets );
         arrayremovevalue( level.zombie_targets, undefined );
         players = arraycombine( players, level.zombie_targets, 0, 0 );
     }

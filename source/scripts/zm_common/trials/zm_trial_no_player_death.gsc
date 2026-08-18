@@ -58,8 +58,8 @@ function private on_end( round_reset )
 // Size: 0x4c
 function private on_player_laststand()
 {
-    var_57807cdc = [];
-    array::add( var_57807cdc, self, 0 );
-    zm_trial::fail( #"hash_272fae998263208b", var_57807cdc );
+    failed_players = [];
+    array::add( failed_players, self, 0 );
+    zm_trial::fail( #"hash_272fae998263208b", failed_players );
 }
 

@@ -281,7 +281,7 @@ function minutesandsecondsstring( milliseconds )
 // Params 1
 // Checksum 0x8edeed83, Offset: 0x16b0
 // Size: 0x248
-function onendround( var_c1e98979 )
+function onendround( end_type )
 {
     winning_team = round::get_winning_team();
     
@@ -330,7 +330,7 @@ function updateteamscorebyflagscaptured()
 // Params 1
 // Checksum 0x6e937e83, Offset: 0x19b8
 // Size: 0x18c
-function onendgame( var_c1e98979 )
+function onendgame( end_type )
 {
     if ( level.scoreroundwinbased )
     {

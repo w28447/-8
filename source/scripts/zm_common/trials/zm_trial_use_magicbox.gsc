@@ -65,25 +65,25 @@ function private on_end( round_reset )
     
     if ( !round_reset )
     {
-        var_57807cdc = [];
+        failed_players = [];
         
         foreach ( player in getplayers() )
         {
             if ( player.var_8f30dd57 < level.var_519131bc )
             {
-                array::add( var_57807cdc, player, 0 );
+                array::add( failed_players, player, 0 );
             }
             
             player.var_8f30dd57 = undefined;
         }
         
-        if ( var_57807cdc.size == 1 )
+        if ( failed_players.size == 1 )
         {
-            zm_trial::fail( #"hash_9c83a93f783b8e4", var_57807cdc );
+            zm_trial::fail( #"hash_9c83a93f783b8e4", failed_players );
         }
-        else if ( var_57807cdc.size > 1 )
+        else if ( failed_players.size > 1 )
         {
-            zm_trial::fail( #"hash_484dffbaa43c048d", var_57807cdc );
+            zm_trial::fail( #"hash_484dffbaa43c048d", failed_players );
         }
     }
     

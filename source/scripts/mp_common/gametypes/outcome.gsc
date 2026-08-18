@@ -22,7 +22,7 @@ function function_a1a81955()
 {
     outcome = spawnstruct();
     outcome.flags = 0;
-    outcome.var_c1e98979 = 0;
+    outcome.end_type = 0;
     outcome.team = #"free";
     
     foreach ( team, _ in level.teams )
@@ -112,9 +112,9 @@ function function_2e00fa44( outcome )
 // Params 2
 // Checksum 0xaa8108ad, Offset: 0x4a0
 // Size: 0x22
-function function_897438f4( outcome, var_c1e98979 )
+function function_897438f4( outcome, end_type )
 {
-    outcome.var_c1e98979 = var_c1e98979;
+    outcome.end_type = end_type;
 }
 
 // Namespace outcome/outcome
@@ -123,7 +123,7 @@ function function_897438f4( outcome, var_c1e98979 )
 // Size: 0x16
 function function_3624d032( outcome )
 {
-    return outcome.var_c1e98979;
+    return outcome.end_type;
 }
 
 // Namespace outcome/outcome

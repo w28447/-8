@@ -18419,13 +18419,13 @@
         {
             "value": 238,
             "next": 131,
-            "name": "#hash_6eb76027082c6968",
+            "name": "#amb_toilet_loop",
             "sequence": 0,
             "cullDistance": 800,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6eb76027082c6968",
+                    "name": "#amb_toilet_loop",
                     "assetId": "#blk/maps/wz_open_skyscrapers/destinations/asylum/bathroom/toilet.ll100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -21120,13 +21120,13 @@
         {
             "value": 423,
             "next": 65535,
-            "name": "#hash_5f0cf846c1e5f92e",
+            "name": "#amb_wind_interior_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5f0cf846c1e5f92e",
+                    "name": "#amb_wind_interior_2d",
                     "assetId": "#amb/environment/wind/clear/amb_wind_clear_int.sl100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -36941,13 +36941,13 @@
         {
             "value": 414,
             "next": 351,
-            "name": "#hash_123893cdd4254d5f",
+            "name": "#evt_toilet_flush",
             "sequence": 0,
             "cullDistance": 800,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_123893cdd4254d5f",
+                    "name": "#evt_toilet_flush",
                     "assetId": "#blk/maps/wz_open_skyscrapers/destinations/asylum/toilet/flush.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -44586,13 +44586,13 @@
         {
             "value": 21,
             "next": 399,
-            "name": "#hash_2ec3de3874855810",
+            "name": "#exp_redbarrel",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
@@ -44633,7 +44633,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
@@ -44674,7 +44674,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
@@ -44715,7 +44715,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
@@ -44756,7 +44756,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
@@ -44797,7 +44797,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
@@ -44838,7 +44838,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
@@ -86296,13 +86296,13 @@
         {
             "value": 712,
             "next": 65535,
-            "name": "#hash_2d6f61e1cf07e68",
+            "name": "#zmb_box_move",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2d6f61e1cf07e68",
+                    "name": "#zmb_box_move",
                     "secondaryname": "#hash_3e105dfa566b32a1",
                     "assetId": "#zmb/purchases/box/disappear/disappear_00.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
@@ -86346,13 +86346,13 @@
         {
             "value": 244,
             "next": 65535,
-            "name": "#hash_32d8f9d0e729a37d",
+            "name": "#zmb_box_poof",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_32d8f9d0e729a37d",
+                    "name": "#zmb_box_poof",
                     "assetId": "#zmb/purchases/box/poof/poof_00.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -86543,13 +86543,13 @@
         {
             "value": 299,
             "next": 65535,
-            "name": "#hash_65cc0c19146d94fc",
+            "name": "#zmb_elec_room_sweets",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_65cc0c19146d94fc",
+                    "name": "#zmb_elec_room_sweets",
                     "assetId": "#hash_10369cf829dcc8c8",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -86588,7 +86588,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_65cc0c19146d94fc",
+                    "name": "#zmb_elec_room_sweets",
                     "assetId": "#hash_353df322720849d2",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -86627,7 +86627,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_65cc0c19146d94fc",
+                    "name": "#zmb_elec_room_sweets",
                     "assetId": "#hash_647be7229b0ab63c",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",
@@ -86677,7 +86677,7 @@
             "aliases": [
                 {
                     "name": "#hash_210be93b3bfae433",
-                    "secondaryname": "#hash_2d6f61e1cf07e68",
+                    "secondaryname": "#zmb_box_move",
                     "assetId": "#zmb/purchases/box/laugh/child.ln100.pc.snd",
                     "assetFileNameSustain": "#wz_open_skyscrapers.all",
                     "assetIdRelease": "#wz_open_skyscrapers.all",

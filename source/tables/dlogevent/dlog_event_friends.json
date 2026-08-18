@@ -91,7 +91,7 @@
         },
         {
             "name": "#friends_total",
-            "scrName": "#hash_7e189e02",
+            "scrName": "#friends_total",
             "type": "INT32"
         },
         {

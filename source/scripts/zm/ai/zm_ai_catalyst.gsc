@@ -1152,26 +1152,26 @@ function private function_d9d6e939( entity )
     }
     
     zombies = getaiarchetypearray( #"zombie" );
-    var_31a419e0 = [];
+    filtered_zombies = [];
     
     foreach ( zombie in zombies )
     {
         if ( function_72a1933a( zombie, self ) )
         {
-            if ( !isdefined( var_31a419e0 ) )
+            if ( !isdefined( filtered_zombies ) )
             {
-                var_31a419e0 = [];
+                filtered_zombies = [];
             }
-            else if ( !isarray( var_31a419e0 ) )
+            else if ( !isarray( filtered_zombies ) )
             {
-                var_31a419e0 = array( var_31a419e0 );
+                filtered_zombies = array( filtered_zombies );
             }
             
-            var_31a419e0[ var_31a419e0.size ] = zombie;
+            filtered_zombies[ filtered_zombies.size ] = zombie;
         }
     }
     
-    if ( var_31a419e0.size == 0 )
+    if ( filtered_zombies.size == 0 )
     {
         self.var_8020a7f2 = undefined;
         self.b_ignore_cleanup = undefined;
@@ -1181,8 +1181,8 @@ function private function_d9d6e939( entity )
     }
     
     self.need_closest_player = 0;
-    var_31a419e0 = arraysortclosest( var_31a419e0, entity.origin );
-    self.var_8020a7f2 = var_31a419e0[ 0 ];
+    filtered_zombies = arraysortclosest( filtered_zombies, entity.origin );
+    self.var_8020a7f2 = filtered_zombies[ 0 ];
     self.b_ignore_cleanup = 1;
     self.should_zigzag = 0;
     self setgoal( self.var_8020a7f2.origin );

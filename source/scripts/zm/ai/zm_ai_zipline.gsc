@@ -96,7 +96,7 @@ function number_b_( var_5c57c958, var_f3e138f3, plane_point, plane_normal )
 // Params 3
 // Checksum 0xf5935d8d, Offset: 0x6a0
 // Size: 0x674
-function function_dc61ccae( vnd_start, var_6f06d19d, var_ca144d1e )
+function function_dc61ccae( vnd_start, cable_start, cable_end )
 {
     self endon( #"death" );
     self.var_b20b0960 endon( #"death" );
@@ -120,9 +120,9 @@ function function_dc61ccae( vnd_start, var_6f06d19d, var_ca144d1e )
                 sphere( tag_left_origin, 2, ( 1, 0.5, 0 ), 0.3, 0, 8, 1 );
             #/
             
-            if ( isdefined( var_6f06d19d ) && isdefined( var_ca144d1e ) )
+            if ( isdefined( cable_start ) && isdefined( cable_end ) )
             {
-                var_af2e4b51 = function_61418721( self.var_b20b0960.origin, var_6f06d19d, var_ca144d1e );
+                var_af2e4b51 = function_61418721( self.var_b20b0960.origin, cable_start, cable_end );
                 var_2b30dcba = vectornormalize( self.var_b20b0960.origin - var_af2e4b51 );
                 var_41aabd6d = number_b_( self.var_b20b0960.origin, ( 0, 0, 1 ), var_af2e4b51, var_2b30dcba );
                 
@@ -137,7 +137,7 @@ function function_dc61ccae( vnd_start, var_6f06d19d, var_ca144d1e )
                     #/
                 }
                 
-                var_3a080e11 = function_61418721( tag_left_origin, var_6f06d19d, var_ca144d1e );
+                var_3a080e11 = function_61418721( tag_left_origin, cable_start, cable_end );
                 var_2eb8d479 = var_3a080e11 + ( 0, 0, 1 );
                 forward = vectornormalize( var_bb4eaebf.origin - vnd_start.origin );
                 right = vectorcross( ( 0, 0, 1 ), forward );
@@ -148,10 +148,10 @@ function function_dc61ccae( vnd_start, var_6f06d19d, var_ca144d1e )
                 
                 /#
                     line( tag_left_origin, tag_left_origin + var_c246e8d5, ( 1, 0, 1 ) );
-                    line( var_6f06d19d, var_ca144d1e, ( 1, 0.5, 0 ) );
+                    line( cable_start, cable_end, ( 1, 0.5, 0 ) );
                     line( tag_left_origin, var_3a080e11, ( 1, 1, 0 ) );
-                    sphere( var_6f06d19d, 8, ( 1, 0.5, 0 ), 0.3, 0, 8, 1 );
-                    sphere( var_ca144d1e, 8, ( 1, 0.5, 0 ), 0.3, 0, 8, 1 );
+                    sphere( cable_start, 8, ( 1, 0.5, 0 ), 0.3, 0, 8, 1 );
+                    sphere( cable_end, 8, ( 1, 0.5, 0 ), 0.3, 0, 8, 1 );
                     record3dtext( "<dev string:xae>" + var_c246e8d5, tag_left_origin + var_c246e8d5, ( 1, 1, 1 ), "<dev string:xb1>" );
                 #/
             }

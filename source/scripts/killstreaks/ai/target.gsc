@@ -178,8 +178,8 @@ function function_84235351( attack_origin, attack_radius )
         }
         
         dist_squared = distancesquared( attack_origin, target.origin );
-        var_e294ac7d = isplayer( target ) ? target function_d730727f() : 1;
-        var_97f7ad10 = var_e0c224a4 * var_e294ac7d;
+        radius_scalar = isplayer( target ) ? target function_d730727f() : 1;
+        var_97f7ad10 = var_e0c224a4 * radius_scalar;
         
         if ( dist_squared > var_97f7ad10 )
         {

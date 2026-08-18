@@ -369,7 +369,7 @@ function function_26819e32( e_projectile, ai_zombie, n_damage )
     }
     
     e_projectile thread projectile_timeout();
-    v_end = self function_247597a();
+    v_end = self charon_trace();
     n_dist = distance( e_projectile.origin, v_end );
     n_time = n_dist / 1500;
     
@@ -691,7 +691,7 @@ function function_dced5aef( e_target, weapon = level.weaponnone, v_to_target, n_
 // Params 1
 // Checksum 0x2c6c772d, Offset: 0x21f8
 // Size: 0x110
-function function_247597a( b_charged )
+function charon_trace( b_charged )
 {
     v_view_pos = self getweaponmuzzlepoint();
     v_forward = self getweaponforwarddir();
@@ -755,7 +755,7 @@ function function_dd7bc108( weapon )
         self setweaponammoclip( level.w_hand_charon, n_ammo );
     }
     
-    a_trace = function_247597a( 1 );
+    a_trace = charon_trace( 1 );
     
     if ( !isdefined( a_trace[ #"position" ] ) && !isdefined( a_trace[ #"entity" ] ) )
     {

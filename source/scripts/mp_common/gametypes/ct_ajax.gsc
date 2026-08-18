@@ -208,7 +208,7 @@ function j_fore_le_01()
 {
     level endon( #"combattraining_logic_finished" );
     level.var_cbcb0078 = 1;
-    level thread ct_utils::function_1db91571();
+    level thread ct_utils::manage_timer();
     level thread function_e268b155();
     level thread function_9e33a62();
     level.var_347db8b6 = 0;

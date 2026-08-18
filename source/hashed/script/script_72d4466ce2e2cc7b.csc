@@ -71,19 +71,19 @@ function function_9ac87769( localclientnum )
     function_4d990c6a();
     player thread function_43a84577();
     player thread function_cfd06f57( localclientnum );
-    player thread function_1edfdbc1( localclientnum );
-    player thread function_161106e1( localclientnum );
-    player thread function_a78bbf22( localclientnum );
+    player thread rgb_playerhealth( localclientnum );
+    player thread rgb_ammocount( localclientnum );
+    player thread rgb_cooldowns( localclientnum );
     player thread function_1183b860( localclientnum );
     
     if ( !sessionmodeiswarzonegame() && !sessionmodeiszombiesgame() )
     {
-        player thread function_af712255( localclientnum );
+        player thread rgb_scorestreaks( localclientnum );
     }
     
     if ( sessionmodeiszombiesgame() )
     {
-        player thread function_88dc3170( localclientnum );
+        player thread rgb_elixir( localclientnum );
     }
     
     if ( isdefined( level.playerinsertion ) && level.playerinsertion )
@@ -182,7 +182,7 @@ function function_cfd06f57( localclientnum )
 // Params 1
 // Checksum 0xcefd27f1, Offset: 0xfe8
 // Size: 0x248
-function function_1edfdbc1( localclientnum )
+function rgb_playerhealth( localclientnum )
 {
     self endon( #"death" );
     self endon( #"disconnect" );
@@ -203,19 +203,19 @@ function function_1edfdbc1( localclientnum )
         
         if ( n_health > 125 )
         {
-            function_815076cb( var_7beb3a32, 65280 );
+            rgb_setkeycolor( var_7beb3a32, 65280 );
         }
         else if ( n_health > 100 )
         {
-            function_815076cb( var_7beb3a32, 65535 );
+            rgb_setkeycolor( var_7beb3a32, 65535 );
         }
         else if ( n_health > 75 )
         {
-            function_815076cb( var_7beb3a32, 13209 );
+            rgb_setkeycolor( var_7beb3a32, 13209 );
         }
         else if ( n_health > 50 )
         {
-            function_815076cb( var_7beb3a32, 255 );
+            rgb_setkeycolor( var_7beb3a32, 255 );
         }
         else if ( n_health > 25 )
         {
@@ -227,7 +227,7 @@ function function_1edfdbc1( localclientnum )
         }
         else
         {
-            function_815076cb( var_7beb3a32, 0 );
+            rgb_setkeycolor( var_7beb3a32, 0 );
         }
         
         wait 0.5;
@@ -238,7 +238,7 @@ function function_1edfdbc1( localclientnum )
 // Params 1
 // Checksum 0xb9781832, Offset: 0x1238
 // Size: 0x1a4
-function function_161106e1( localclientnum )
+function rgb_ammocount( localclientnum )
 {
     self endon( #"death" );
     var_834a617c = array( "key_f8", "key_f7", "key_f6", "key_f5" );
@@ -277,7 +277,7 @@ function function_161106e1( localclientnum )
 // Params 1
 // Checksum 0x6224236d, Offset: 0x13e8
 // Size: 0x3d4
-function function_a78bbf22( localclientnum )
+function rgb_cooldowns( localclientnum )
 {
     self endon( #"death" );
     level endon( #"keybind_change" );
@@ -298,7 +298,7 @@ function function_a78bbf22( localclientnum )
         self.var_9623f1d5 = array( 0, 0, 0 );
     }
     
-    function_815076cb( a_keys, 855309 );
+    rgb_setkeycolor( a_keys, 855309 );
     
     if ( sessionmodeiszombiesgame() )
     {
@@ -381,16 +381,16 @@ function function_ba24f324( localclientnum )
         function_4d990c6a();
         player = function_27673a7( localclientnum );
         player function_43a84577();
-        player thread function_a78bbf22( localclientnum );
+        player thread rgb_cooldowns( localclientnum );
         
         if ( !sessionmodeiswarzonegame() && !sessionmodeiszombiesgame() )
         {
-            player thread function_af712255( localclientnum );
+            player thread rgb_scorestreaks( localclientnum );
         }
         
         if ( sessionmodeiszombiesgame() )
         {
-            player thread function_88dc3170( localclientnum );
+            player thread rgb_elixir( localclientnum );
         }
         
         if ( isdefined( level.playerinsertion ) && level.playerinsertion )
@@ -407,7 +407,7 @@ function function_ba24f324( localclientnum )
 // Params 2
 // Checksum 0xbe2ac300, Offset: 0x1a98
 // Size: 0x1d8
-function function_218c905c( localclientnum, winningteam )
+function rgb_mpgametypes( localclientnum, winningteam )
 {
     self endon( #"death" );
     player = function_5c10bd79( localclientnum );
@@ -473,7 +473,7 @@ function function_1d13e2db( localclientnum )
                 if ( !sessionmodeiswarzonegame() )
                 {
                     function_d9a960f2( 1, 12, 8698 );
-                    function_815076cb( var_1953ea4a, 0 );
+                    rgb_setkeycolor( var_1953ea4a, 0 );
                 }
                 
                 if ( var_20ef87f3 == 5 )
@@ -481,7 +481,7 @@ function function_1d13e2db( localclientnum )
                     if ( sessionmodeiswarzonegame() )
                     {
                         function_d9a960f2( 1, 12, 8698 );
-                        function_815076cb( var_1953ea4a, 0 );
+                        rgb_setkeycolor( var_1953ea4a, 0 );
                     }
                     
                     function_ed8d6d5e( var_d3aa0bca, 8698, 0, 750 );
@@ -521,7 +521,7 @@ function function_1d13e2db( localclientnum )
 // Params 1
 // Checksum 0xd1704d63, Offset: 0x23c8
 // Size: 0x32c
-function function_af712255( localclientnum )
+function rgb_scorestreaks( localclientnum )
 {
     self endon( #"death" );
     level endon( #"game_ended", #"keybind_change" );
@@ -561,7 +561,7 @@ function function_af712255( localclientnum )
 // Params 1
 // Checksum 0xd0ed32b8, Offset: 0x2700
 // Size: 0x3d4
-function function_88dc3170( localclientnum )
+function rgb_elixir( localclientnum )
 {
     self endon( #"death" );
     level endon( #"game_ended", #"keybind_change" );
@@ -651,13 +651,13 @@ function function_f5866497( localclientnum, oldval, newval, bnewent, binitialsna
     switch ( newval )
     {
         case 1:
-            function_218c905c( localclientnum, "tie" );
+            rgb_mpgametypes( localclientnum, "tie" );
             break;
         case 2:
-            function_218c905c( localclientnum, "allies" );
+            rgb_mpgametypes( localclientnum, "allies" );
             break;
         case 3:
-            function_218c905c( localclientnum, "axis" );
+            rgb_mpgametypes( localclientnum, "axis" );
             break;
         case 4:
             level notify( #"hash_7d7ad8f95ddcdcbd" );
@@ -671,7 +671,7 @@ function function_f5866497( localclientnum, oldval, newval, bnewent, binitialsna
 // Params 2
 // Checksum 0xf01a20b6, Offset: 0x2dc0
 // Size: 0x90
-function function_815076cb( keylist, color )
+function rgb_setkeycolor( keylist, color )
 {
     foreach ( key in keylist )
     {

@@ -256,7 +256,7 @@ soundalias,#hash_62332d89ae65200
 soundalias,#hash_6799f17d17bd52a
 soundalias,#hash_679a117d17bd890
 soundalias,#hash_82d8fc262fa2602
-soundalias,#hash_8abeeabd2aa2c9c
+soundalias,#amb_wind_exterior_2d
 soundalias,#exp_barrel_lfe
 soundalias,#hash_99bd25626997e05
 soundalias,#hash_a701893a7d70ea0
@@ -311,7 +311,7 @@ soundalias,#hash_2d923acee350bc72
 soundalias,#hash_2dd2916e3a2e87a7
 soundalias,#hash_2e25f1d6ca55e5d9
 soundalias,#exp_mp_propane_tank_explo
-soundalias,#hash_2ec3de3874855810
+soundalias,#exp_redbarrel
 soundalias,#dst_server_power
 soundalias,#pfx_water_trickle
 soundalias,#dst_foodstand
@@ -385,7 +385,7 @@ soundalias,#hash_5b18895703fba823
 soundalias,#hash_5ca8d4adbb8576c5
 soundalias,#hash_5e6c6fe38f11ed65
 soundalias,#hash_5f07c850bd480725
-soundalias,#hash_5f0cf846c1e5f92e
+soundalias,#amb_wind_interior_2d
 soundalias,#amb_tower_explo_lfe
 soundalias,#hash_5f794c7252943ffb
 soundalias,#amb_rope_creak

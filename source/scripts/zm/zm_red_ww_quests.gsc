@@ -3793,14 +3793,14 @@ function function_1775f520()
     
     do
     {
-        var_223e908d = util::spawn_model( "tag_origin", self gettagorigin( str_tag ), self gettagangles( str_tag ) );
+        meleeweapon_craftitem = util::spawn_model( "tag_origin", self gettagorigin( str_tag ), self gettagangles( str_tag ) );
     }
-    while ( !isdefined( var_223e908d ) );
+    while ( !isdefined( meleeweapon_craftitem ) );
     
-    var_223e908d clientfield::set( "" + #"gaia_chaos_destroy", 1 );
+    meleeweapon_craftitem clientfield::set( "" + #"gaia_chaos_destroy", 1 );
     wait 2;
     self delete();
-    var_223e908d delete();
+    meleeweapon_craftitem delete();
 }
 
 // Namespace zm_red_ww_quests/zm_red_ww_quests

@@ -10,7 +10,7 @@ localizeentry,#hash_ddc319addc8bcb2
 localizeentry,d#mp/host_sucks
 localizeentry,d#mp/defeat_caps
 localizeentry,#killstreak/emp_inbound
-localizeentry,#hash_1458857df9447fb3
+localizeentry,#killstreak/emp_hacked
 localizeentry,#coop/player_needs_to_be_revived
 localizeentry,d#mp/draw_caps
 localizeentry,#hash_19a78c0c5f7dd76f
@@ -49,7 +49,7 @@ localizeentry,#mp/host_endgame_response
 localizeentry,#coop/revive_emergency_reserve
 localizeentry,d#mp/round_loss_caps
 localizeentry,d#mp/match_tie
-localizeentry,#hash_76d4a80b0b67fb9e
+localizeentry,#killstreak/destroyed_emp
 localizeentry,#hash_77965c9740b1082d
 localizeentry,#killstreak/qrdrone_not_available
 localizeentry,d#mp/round_draw

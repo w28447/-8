@@ -91,7 +91,7 @@ function private function_b8e20f5f( transition, outcome, feature_enabled, featur
 // Size: 0x5c
 function function_e6b4f2f7( outcome )
 {
-    function_76f27db3( outcome.var_c1e98979, outcome::function_2e00fa44( outcome ), outcome.platoon, outcome.team, outcome.players );
+    function_76f27db3( outcome.end_type, outcome::function_2e00fa44( outcome ), outcome.platoon, outcome.team, outcome.players );
 }
 
 // Namespace display_transition/display_transition
@@ -100,7 +100,7 @@ function function_e6b4f2f7( outcome )
 // Size: 0x74
 function function_12d1f62a( outcome )
 {
-    function_2fa975e0( util::getroundsplayed(), outcome.var_c1e98979, outcome::function_2e00fa44( outcome ), outcome.platoon, outcome.team, outcome.players );
+    function_2fa975e0( util::getroundsplayed(), outcome.end_type, outcome::function_2e00fa44( outcome ), outcome.platoon, outcome.team, outcome.players );
 }
 
 // Namespace display_transition/display_transition
@@ -537,13 +537,13 @@ function private function_aed7dbe1( p1, p2 )
 // Size: 0x33c
 function private function_e17d407e( transition, outcome )
 {
-    var_77d0878c = array();
+    winning_players = array();
     
     foreach ( player in level.players )
     {
         if ( player.team == outcome.team && player player_role::get() != 0 )
         {
-            array::add( var_77d0878c, player );
+            array::add( winning_players, player );
         }
     }
     
@@ -564,17 +564,17 @@ function private function_e17d407e( transition, outcome )
     
     var_5a552ef6 = struct::get( "team_pose_cam", "targetname" );
     
-    if ( var_77d0878c.size == 0 || player_positions.size == 0 || !isdefined( var_5a552ef6 ) )
+    if ( winning_players.size == 0 || player_positions.size == 0 || !isdefined( var_5a552ef6 ) )
     {
         return;
     }
     
     function_26bbb839( transition, outcome );
-    var_77d0878c = array::quick_sort( var_77d0878c, &function_aed7dbe1 );
+    winning_players = array::quick_sort( winning_players, &function_aed7dbe1 );
     
-    for ( i = 0; i < min( var_77d0878c.size, player_positions.size ) ; i++ )
+    for ( i = 0; i < min( winning_players.size, player_positions.size ) ; i++ )
     {
-        player = var_77d0878c[ i ];
+        player = winning_players[ i ];
         player.sessionstate = "playing";
         player takeallweapons();
         fields = getcharacterfields( player player_role::get(), currentsessionmode() );

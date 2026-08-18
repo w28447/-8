@@ -428,12 +428,12 @@ function function_c5394b83( starttime, seconds )
 // Size: 0x148, Type: bool
 function all_players_connected()
 {
-    var_5c6783e9 = getnumexpectedplayers( 0 );
+    expectedplayers = getnumexpectedplayers( 0 );
     
-    if ( level.players.size < var_5c6783e9 )
+    if ( level.players.size < expectedplayers )
     {
         /#
-            function_95c03d66( "<dev string:x9d>" + var_5c6783e9 + "<dev string:xc6>" + level.players.size );
+            function_95c03d66( "<dev string:x9d>" + expectedplayers + "<dev string:xc6>" + level.players.size );
         #/
         
         return false;

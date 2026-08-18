@@ -595,13 +595,13 @@
         {
             "value": 185,
             "next": 65535,
-            "name": "#hash_1d269c23bcd0adc4",
+            "name": "#amb_fire_lg",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1d269c23bcd0adc4",
+                    "name": "#amb_fire_lg",
                     "assetId": "#amb/fire/extreme/extreme.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -741,13 +741,13 @@
         {
             "value": 187,
             "next": 65535,
-            "name": "#hash_69147ba38c07e82",
+            "name": "#amb_fire_xlg",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_69147ba38c07e82",
+                    "name": "#amb_fire_xlg",
                     "assetId": "#amb/fire/extreme/extreme.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
                     "assetIdRelease": "#mp_jungle2.all",
@@ -3301,13 +3301,13 @@
         {
             "value": 160,
             "next": 65535,
-            "name": "#hash_8abeeabd2aa2c9c",
+            "name": "#amb_wind_exterior_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_8abeeabd2aa2c9c",
+                    "name": "#amb_wind_exterior_2d",
                     "secondaryname": "#hash_5526d966033d28eb",
                     "assetId": "#hash_24d3208e12b749a2",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -3731,13 +3731,13 @@
         {
             "value": 155,
             "next": 65535,
-            "name": "#hash_5f0cf846c1e5f92e",
+            "name": "#amb_wind_interior_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5f0cf846c1e5f92e",
+                    "name": "#amb_wind_interior_2d",
                     "secondaryname": "#hash_6c35fdf95128b5b1",
                     "assetId": "#hash_24d3208e12b749a2",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -19246,13 +19246,13 @@
         {
             "value": 97,
             "next": 65535,
-            "name": "#hash_2ec3de3874855810",
+            "name": "#exp_redbarrel",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -19293,7 +19293,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -19334,7 +19334,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -19375,7 +19375,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -19416,7 +19416,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -19457,7 +19457,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -19498,7 +19498,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_jungle2.all",
@@ -22576,7 +22576,7 @@
             "duck": "default",
             "id": "#mp_jungle2_cave",
             "reverb": "#narrow_cave",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -22598,7 +22598,7 @@
             "duck": "default",
             "id": "#mp_jungle2_large_room",
             "reverb": "#room_laboratory",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -22620,7 +22620,7 @@
             "duck": "default",
             "id": "#mp_jungle2_outdoor",
             "reverb": "#outdoor_echo",
-            "loop": "#hash_8abeeabd2aa2c9c",
+            "loop": "#amb_wind_exterior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
@@ -22642,7 +22642,7 @@
             "duck": "default",
             "id": "#mp_jungle2_partial",
             "reverb": "#room_bedroom",
-            "loop": "#hash_8abeeabd2aa2c9c",
+            "loop": "#amb_wind_exterior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
@@ -22664,7 +22664,7 @@
             "duck": "default",
             "id": "#mp_jungle2_rock_wall",
             "reverb": "#room_bedroom",
-            "loop": "#hash_8abeeabd2aa2c9c",
+            "loop": "#amb_wind_exterior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
@@ -22686,7 +22686,7 @@
             "duck": "default",
             "id": "#mp_jungle2_small_room",
             "reverb": "#room_bedroom",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -22708,7 +22708,7 @@
             "duck": "default",
             "id": "#mp_jungle2_small_stone_room",
             "reverb": "#room_hallway",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",

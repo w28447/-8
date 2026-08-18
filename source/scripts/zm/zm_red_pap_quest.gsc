@@ -62,7 +62,7 @@ function init()
     clientfield::register( "toplayer", "" + #"pegasus_shellshock", 16000, 1, "int" );
     clientfield::register( "toplayer", "" + #"waterfall_passthrough", 16000, 1, "int" );
     clientfield::register( "world", "" + #"hash_28eb5e403f599ce2", 17000, 1, "int" );
-    level zm_audio::function_6191af93( #"location_enter", #"temp_attalid", "", "" );
+    level zm_audio::vox_override( #"location_enter", #"temp_attalid", "", "" );
     level.var_2e32e0bb = 1;
     callback::on_spawned( &on_player_spawned );
     level thread function_5ad3e281();
@@ -521,7 +521,7 @@ function function_62cca067( s_gegenees_spawn_loc )
 {
     self endon( #"death" );
     level endon( #"gegenees_spotted" );
-    level zm_audio::function_6191af93( #"gegenees", #"react", "", "" );
+    level zm_audio::vox_override( #"gegenees", #"react", "", "" );
     
     if ( s_gegenees_spawn_loc.script_int === 2 )
     {
@@ -1508,7 +1508,7 @@ function function_fe0a763c()
     
     a_e_pegasus[ a_e_pegasus.size ] = level.var_90b150cb;
     level.var_90b150cb thread function_ac395ad7();
-    level thread function_8c5f16dd();
+    level thread waterfall_postfx();
     scene::add_scene_func( #"cin_zm_red_pegasus_ride", &function_a965580a, "play" );
     scene::add_scene_func( #"cin_zm_red_pegasus_ride", &pegasus_ride_skipped, "skip_started" );
     scene::add_scene_func( #"cin_zm_red_pegasus_ride", &pegasus_ride_done, "done" );
@@ -1702,7 +1702,7 @@ function private function_9a6c8f2b( var_c34665fc )
 // Params 0
 // Checksum 0xc8543900, Offset: 0x6160
 // Size: 0x240
-function function_8c5f16dd()
+function waterfall_postfx()
 {
     level waittill( #"waterfall" );
     a_players = getplayers();
@@ -2295,13 +2295,13 @@ function rock_fall()
     level endon( #"hash_4d110cc2383265e3" );
     level flag::wait_till( #"dark_side_open" );
     a_str_rocks = array( "p8_col_rock_large_04", "p8_zm_red_dks_rock_shale_boulder_lrg_01", "p8_zm_red_dks_rock_shale_boulder_med_01" );
-    var_378fd0b1 = struct::get_array( "rock_fall" );
+    a_s_spawnpt = struct::get_array( "rock_fall" );
     
     while ( true )
     {
         wait randomfloatrange( 2, 6 );
         str_rock = array::random( a_str_rocks );
-        s_spawnpt = array::random( var_378fd0b1 );
+        s_spawnpt = array::random( a_s_spawnpt );
         s_goal = struct::get( s_spawnpt.target );
         n_time = distance( s_spawnpt.origin, s_goal.origin ) / 900;
         

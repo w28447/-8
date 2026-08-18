@@ -414,7 +414,7 @@ function projectileexplode( projectile, trophy )
     projectile notify( #"trophy_destroyed" );
     trophy radiusdamage( projposition, 128, 105, 10, self );
     scoreevents::processscoreevent( #"trophy_defense", self, projectile.owner, trophy.weapon );
-    self function_3170d645( projectile, trophy );
+    self shielded_scoreevent( projectile, trophy );
     self challenges::trophy_defense( projposition, 512 );
     
     if ( isdefined( level.var_d3a438fb ) )
@@ -447,7 +447,7 @@ function _the_root_zurich_spawners( gameobject, trophy )
 // Params 2
 // Checksum 0xf0a3a221, Offset: 0x1460
 // Size: 0x6ac
-function function_3170d645( projectile, trophy )
+function shielded_scoreevent( projectile, trophy )
 {
     player = self;
     entities = getentitiesinradius( trophy.origin, 512 );

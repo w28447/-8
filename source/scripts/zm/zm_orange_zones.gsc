@@ -581,12 +581,12 @@ function function_f7a190a8( str_wait_flag, var_ab660f9a, str_location, str_subca
         wait var_ab660f9a;
     }
     
-    for ( var_33625d75 = get_location_string( self ); var_33625d75 !== str_location ; var_33625d75 = get_location_string( self ) )
+    for ( str_current_location = get_location_string( self ); str_current_location !== str_location ; str_current_location = get_location_string( self ) )
     {
         wait 0.5;
     }
     
-    for ( var_33625d75 = get_location_string( self ); var_33625d75 === str_location ; var_33625d75 = get_location_string( self ) )
+    for ( str_current_location = get_location_string( self ); str_current_location === str_location ; str_current_location = get_location_string( self ) )
     {
         wait 0.5;
     }

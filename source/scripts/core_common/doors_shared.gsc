@@ -2473,7 +2473,7 @@ function get_doors( str_value, str_key = "targetname" )
 // Params 2
 // Checksum 0x2afb29d3, Offset: 0x79e0
 // Size: 0xe0
-function function_3353d645( str_value, str_key = "targetname" )
+function delete_doors( str_value, str_key = "targetname" )
 {
     if ( isdefined( self.c_door ) )
     {

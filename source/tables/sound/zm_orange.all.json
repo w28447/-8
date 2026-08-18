@@ -208927,13 +208927,13 @@
         {
             "value": 887,
             "next": 65535,
-            "name": "#hash_2d6f61e1cf07e68",
+            "name": "#zmb_box_move",
             "sequence": 0,
             "cullDistance": 1300,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2d6f61e1cf07e68",
+                    "name": "#zmb_box_move",
                     "secondaryname": "#hash_3e105dfa566b32a1",
                     "assetId": "#zmb/purchases/box/disappear/disappear_00.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_orange.all",
@@ -208977,13 +208977,13 @@
         {
             "value": 927,
             "next": 65535,
-            "name": "#hash_32d8f9d0e729a37d",
+            "name": "#zmb_box_poof",
             "sequence": 0,
             "cullDistance": 1300,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_32d8f9d0e729a37d",
+                    "name": "#zmb_box_poof",
                     "assetId": "#zmb/purchases/box/poof/poof_00.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_orange.all",
                     "assetIdRelease": "#zm_orange.all",
@@ -209026,13 +209026,13 @@
         {
             "value": 538,
             "next": 65535,
-            "name": "#hash_607b61ab8f244087",
+            "name": "#zmb_box_poof_land",
             "sequence": 0,
             "cullDistance": 2250,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_607b61ab8f244087",
+                    "name": "#zmb_box_poof_land",
                     "secondaryname": "#hash_f914f66fc9ebe6c",
                     "assetId": "#zmb/purchases/box/land/land_00.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_orange.all",
@@ -212344,13 +212344,13 @@
         {
             "value": 713,
             "next": 65535,
-            "name": "#hash_3004f588bf60f0ec",
+            "name": "#zmb_hellhound_loop_breath",
             "sequence": 0,
             "cullDistance": 500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3004f588bf60f0ec",
+                    "name": "#zmb_hellhound_loop_breath",
                     "assetFileNameSustain": "#zm_orange.all",
                     "assetIdRelease": "#zm_orange.all",
                     "assetFileNameRelease": "#zm_orange.all",
@@ -212399,7 +212399,7 @@
             "aliases": [
                 {
                     "name": "#zmb_hellhound_loop_fire",
-                    "secondaryname": "#hash_3004f588bf60f0ec",
+                    "secondaryname": "#zmb_hellhound_loop_breath",
                     "assetId": "#zmb/ai/hellhounds/loop_00.ll100.pc.snd",
                     "assetFileNameSustain": "#zm_orange.all",
                     "assetIdRelease": "#zm_orange.all",
@@ -220699,13 +220699,13 @@
         {
             "value": 564,
             "next": 1263,
-            "name": "#hash_6cfa41a4b04b4a0a",
+            "name": "#zmb_vocals_hellhound_ambient",
             "sequence": 0,
             "cullDistance": 2600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_5ea54bbe11e34393",
                     "assetFileNameSustain": "#zm_orange.all",
                     "assetIdRelease": "#zm_orange.all",
@@ -220746,7 +220746,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_27b042a648289b76",
                     "assetFileNameSustain": "#zm_orange.all",
                     "assetIdRelease": "#zm_orange.all",
@@ -220787,7 +220787,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_4035ed0eb97a7941",
                     "assetFileNameSustain": "#zm_orange.all",
                     "assetIdRelease": "#zm_orange.all",
@@ -220828,7 +220828,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_109d56a0c742b33c",
                     "assetFileNameSustain": "#zm_orange.all",
                     "assetIdRelease": "#zm_orange.all",
@@ -220869,7 +220869,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_14435def71c8db8f",
                     "assetFileNameSustain": "#zm_orange.all",
                     "assetIdRelease": "#zm_orange.all",
@@ -220910,7 +220910,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_615f62a09e4046d2",
                     "assetFileNameSustain": "#zm_orange.all",
                     "assetIdRelease": "#zm_orange.all",
@@ -220951,7 +220951,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_17d36126b54fb15d",
                     "assetFileNameSustain": "#zm_orange.all",
                     "assetIdRelease": "#zm_orange.all",
@@ -220992,7 +220992,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_3c580c765614c5c8",
                     "assetFileNameSustain": "#zm_orange.all",
                     "assetIdRelease": "#zm_orange.all",
@@ -225385,13 +225385,13 @@
         {
             "value": 493,
             "next": 65535,
-            "name": "#hash_6dead99af942e065",
+            "name": "#zmb_vocals_quad_spawn",
             "sequence": 0,
             "cullDistance": 11000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6dead99af942e065",
+                    "name": "#zmb_vocals_quad_spawn",
                     "secondaryname": "#hash_1a47015cfc095e2a",
                     "assetId": "#hash_6f999231b239001d",
                     "assetFileNameSustain": "#zm_orange.all",
@@ -225433,7 +225433,7 @@
                     "unk178": "#hash_901040303"
                 },
                 {
-                    "name": "#hash_6dead99af942e065",
+                    "name": "#zmb_vocals_quad_spawn",
                     "secondaryname": "#hash_1a47015cfc095e2a",
                     "assetId": "#hash_eb61308eb925c88",
                     "assetFileNameSustain": "#zm_orange.all",
@@ -225475,7 +225475,7 @@
                     "unk178": "#hash_901040303"
                 },
                 {
-                    "name": "#hash_6dead99af942e065",
+                    "name": "#zmb_vocals_quad_spawn",
                     "secondaryname": "#hash_1a47015cfc095e2a",
                     "assetId": "#hash_2205871b96110c4f",
                     "assetFileNameSustain": "#zm_orange.all",
@@ -225517,7 +225517,7 @@
                     "unk178": "#hash_901040303"
                 },
                 {
-                    "name": "#hash_6dead99af942e065",
+                    "name": "#zmb_vocals_quad_spawn",
                     "secondaryname": "#hash_1a47015cfc095e2a",
                     "assetId": "#hash_6cd2c8d862a05092",
                     "assetFileNameSustain": "#zm_orange.all",

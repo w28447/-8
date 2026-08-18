@@ -5617,22 +5617,22 @@ function boss_fight()
     array::thread_all( level.players, &zm_towers_crowd::function_51ea46f3, 0, 1 );
     level.var_b2b15659 = 1;
     level.powerup_vo_available = &return_false;
-    level zm_audio::function_6191af93( #"general", #"gib", "", "" );
-    level zm_audio::function_6191af93( #"elixir", #"drink", "", "" );
-    level zm_audio::function_6191af93( #"blight_father", #"weak_points", "", "" );
-    level zm_audio::function_6191af93( #"catalyst_transform", #"react", "", "" );
-    level zm_audio::function_6191af93( #"catalyst_water", #"react", "", "" );
-    level zm_audio::function_6191af93( #"catalyst_electric", #"react", "", "" );
-    level zm_audio::function_6191af93( #"catalyst_plasma", #"react", "", "" );
-    level zm_audio::function_6191af93( #"catalyst_corrosive", #"react", "", "" );
-    level zm_audio::function_6191af93( #"catalyst_corrosive", #"react", "", "" );
-    level zm_audio::function_6191af93( #"kill", #"gladiator_destroyer", "", "" );
-    level zm_audio::function_6191af93( #"kill", #"gladiator_marauder", "", "" );
-    level zm_audio::function_6191af93( #"kill", #"tiger", "", "" );
-    level zm_audio::function_6191af93( #"gladiator_marauder", #"react", "", "" );
-    level zm_audio::function_6191af93( #"gladiator_destroyer", #"react", "", "" );
-    level zm_audio::function_6191af93( #"tiger", #"react", "", "" );
-    level zm_audio::function_6191af93( #"tiger", #"react", "", "" );
+    level zm_audio::vox_override( #"general", #"gib", "", "" );
+    level zm_audio::vox_override( #"elixir", #"drink", "", "" );
+    level zm_audio::vox_override( #"blight_father", #"weak_points", "", "" );
+    level zm_audio::vox_override( #"catalyst_transform", #"react", "", "" );
+    level zm_audio::vox_override( #"catalyst_water", #"react", "", "" );
+    level zm_audio::vox_override( #"catalyst_electric", #"react", "", "" );
+    level zm_audio::vox_override( #"catalyst_plasma", #"react", "", "" );
+    level zm_audio::vox_override( #"catalyst_corrosive", #"react", "", "" );
+    level zm_audio::vox_override( #"catalyst_corrosive", #"react", "", "" );
+    level zm_audio::vox_override( #"kill", #"gladiator_destroyer", "", "" );
+    level zm_audio::vox_override( #"kill", #"gladiator_marauder", "", "" );
+    level zm_audio::vox_override( #"kill", #"tiger", "", "" );
+    level zm_audio::vox_override( #"gladiator_marauder", #"react", "", "" );
+    level zm_audio::vox_override( #"gladiator_destroyer", #"react", "", "" );
+    level zm_audio::vox_override( #"tiger", #"react", "", "" );
+    level zm_audio::vox_override( #"tiger", #"react", "", "" );
     level.zmannouncervox[ #"hash_5f0f1e699aa7e761" ] = "";
     
     switch ( level.players.size )

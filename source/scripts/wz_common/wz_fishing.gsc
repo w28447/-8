@@ -43,7 +43,7 @@ function __init__()
         {
             rock.onuse = &function_4cfd3896;
             rock.dropping_item = 0;
-            rock.var_fb09ad1c = 0;
+            rock.fishing_state = 0;
             rock.isfishing = 0;
             
             if ( isdefined( rock.target ) )
@@ -375,12 +375,12 @@ function function_6c71782a( dynent )
     self val::set( #"fishing", "freezecontrols_allowlook", 1 );
     self val::set( #"fishing", "disablegadgets", 1 );
     
-    if ( dynent.var_fb09ad1c == 1 || dynent.var_fb09ad1c == 2 )
+    if ( dynent.fishing_state == 1 || dynent.fishing_state == 2 )
     {
         return;
     }
     
-    dynent.var_fb09ad1c = 1;
+    dynent.fishing_state = 1;
     var_9f816ad8 = dynent.var_87de0f0d - dynent.origin;
     var_9f816ad8 = vectortoangles( var_9f816ad8 );
     self setplayerangles( var_9f816ad8 );
@@ -394,12 +394,12 @@ function function_6c71782a( dynent )
     dynent.buoy thread function_8e8c4fef( time, dynent.var_87de0f0d );
     self waittill( #"fishing_minigame_start" );
     
-    if ( dynent.var_fb09ad1c === 2 )
+    if ( dynent.fishing_state === 2 )
     {
         return;
     }
     
-    dynent.var_fb09ad1c = 2;
+    dynent.fishing_state = 2;
     self function_12747006( "fishing_loop" );
     dynent.buoy.origin = dynent.var_87de0f0d;
     dynent.var_be4b82e0 = dynent.var_87de0f0d;
@@ -450,7 +450,7 @@ function function_b828bd39( player, dynent )
     dynent.var_3fa8a746 = 0;
     self.origin = dynent.var_be4b82e0;
     
-    while ( dynent.var_fb09ad1c == 2 && !dynent.dropping_item )
+    while ( dynent.fishing_state == 2 && !dynent.dropping_item )
     {
         time = randomintrange( 5, 7 );
         wait time;
@@ -488,11 +488,11 @@ function function_16e4e507( dynent )
         return;
     }
     
-    while ( dynent.var_fb09ad1c != 3 )
+    while ( dynent.fishing_state != 3 )
     {
-        if ( self attackbuttonpressed() && dynent.var_fb09ad1c != 3 )
+        if ( self attackbuttonpressed() && dynent.fishing_state != 3 )
         {
-            dynent.var_fb09ad1c = 3;
+            dynent.fishing_state = 3;
             
             if ( isdefined( dynent.buoy ) )
             {
@@ -528,7 +528,7 @@ function function_ed446f40( dynent )
     }
     
     dynent.dropping_item = 0;
-    dynent.var_fb09ad1c = 0;
+    dynent.fishing_state = 0;
     
     if ( isdefined( dynent.buoy ) )
     {
@@ -558,11 +558,11 @@ function function_176e516( dynent )
     
     self endoncallback( &function_73532e4f, #"death", #"hash_61bb9580151c93d5" );
     
-    while ( dynent.var_fb09ad1c != 3 )
+    while ( dynent.fishing_state != 3 )
     {
-        if ( dynent.var_fb09ad1c != 3 && ( self jumpbuttonpressed() || self stancebuttonpressed() ) )
+        if ( dynent.fishing_state != 3 && ( self jumpbuttonpressed() || self stancebuttonpressed() ) )
         {
-            dynent.var_fb09ad1c = 3;
+            dynent.fishing_state = 3;
             self function_12747006( "fishing_cancel" );
             self waittill( #"fishing_end_minigame" );
             self function_ed446f40( dynent );
@@ -626,7 +626,7 @@ function function_73532e4f()
     foreach ( rock in fishing_rocks )
     {
         rock.dropping_item = 0;
-        rock.var_fb09ad1c = 0;
+        rock.fishing_state = 0;
         rock.isfishing = 0;
         
         if ( isdefined( rock.buoy ) && isdefined( rock.var_87de0f0d ) )

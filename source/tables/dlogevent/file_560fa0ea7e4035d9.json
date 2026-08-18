@@ -110,7 +110,7 @@
     "members": [
         {
             "name": "#model_count",
-            "scrName": "#hash_7f365d3e",
+            "scrName": "#model_count",
             "type": "INT32"
         },
         {
@@ -152,7 +152,7 @@
         },
         {
             "name": "#requested_size",
-            "scrName": "#hash_fbe04023",
+            "scrName": "#requested_size",
             "type": "UINT32"
         },
         {

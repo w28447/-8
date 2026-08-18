@@ -230,9 +230,9 @@ function function_b6f1b2f1()
     var_9687e67e = array( "front_right", "front_left", "middle_right", "middle_left", "back_right", "back_left" );
     surfaces = [];
     
-    foreach ( var_2ada890e in var_9687e67e )
+    foreach ( wheel_name in var_9687e67e )
     {
-        if ( self function_387f3e55( var_2ada890e ) )
+        if ( self function_387f3e55( wheel_name ) )
         {
             if ( !isdefined( surfaces ) )
             {
@@ -258,9 +258,9 @@ function function_b6f1b2f1()
             surfaces = array( surfaces );
         }
         
-        if ( !isinarray( surfaces, function_73e08cca( self getwheelsurface( var_2ada890e ) ) ) )
+        if ( !isinarray( surfaces, function_73e08cca( self getwheelsurface( wheel_name ) ) ) )
         {
-            surfaces[ surfaces.size ] = function_73e08cca( self getwheelsurface( var_2ada890e ) );
+            surfaces[ surfaces.size ] = function_73e08cca( self getwheelsurface( wheel_name ) );
         }
     }
     

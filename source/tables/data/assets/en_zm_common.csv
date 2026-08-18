@@ -526,7 +526,7 @@ localizeentry,d#menu/keep_segment
 localizeentry,#hash_247f17f522492991
 localizeentry,d#hash_24a3e0f402bfd000
 localizeentry,#zmweapon/ar_modular_t8_upgraded
-localizeentry,d#hash_24c9561478db5594
+localizeentry,d#menu/camo_loot_masks
 localizeentry,#zmtrials/magic_trick_desc
 localizeentry,#hash_24d7a11f11523cca
 localizeentry,d#weapon/uber_speedcenter_desc
@@ -1048,7 +1048,7 @@ localizeentry,d#hash_4a24740941328c2e
 localizeentry,d#mpui/camo_heatstroke
 localizeentry,d#hash_4a584bc8c443f246
 localizeentry,#zombie/building
-localizeentry,d#hash_4a6f079813e273c3
+localizeentry,d#menu/camo_loot_dogfight
 localizeentry,#menu/charm_computer_teeth
 localizeentry,d#hash_4a7502a86996bd46
 localizeentry,#hash_4ab9480fd6a77ff3
@@ -1235,7 +1235,7 @@ localizeentry,#zmtrials/defend_the_temple
 localizeentry,#hash_55f71da199eb1694
 localizeentry,d#zmui/high_caliber_desc
 localizeentry,d#hash_560d002c6e40e5df
-localizeentry,d#hash_561a6371fe1e6f3a
+localizeentry,d#menu/camo_loot_vice
 localizeentry,d#hash_561bb2bb72747013
 localizeentry,#zmui/tungsten_tripler_title
 localizeentry,#menu/charm_dice_20
@@ -1490,7 +1490,7 @@ localizeentry,#zmtrials/lever_again_desc
 localizeentry,#menu/charm_crystal
 localizeentry,#hash_65d6995788bfb8d2
 localizeentry,d#hash_65e7d81e1db8bfae
-localizeentry,d#hash_663114aa52ffcb21
+localizeentry,d#menu/camo_loot_ww2
 localizeentry,#zmweapon/smg_handling_t8_upgraded
 localizeentry,d#menu/continue
 localizeentry,#hash_6643d22b0b0572e3
@@ -1738,7 +1738,7 @@ localizeentry,d#menu/back_caps
 localizeentry,d#hash_7796b0ee44bdcbc9
 localizeentry,#zmweapon/lmg_double_t8_upgraded
 localizeentry,#hash_77d0ab83924c913a
-localizeentry,d#hash_77dce7635423ba68
+localizeentry,d#menu/camo_loot_cyberpunk
 localizeentry,d#hash_77e7311dc74dccf5
 localizeentry,d#menu/camo_active_celestial
 localizeentry,#zmtrials/creeper
@@ -1838,7 +1838,7 @@ localizeentry,#hash_7f6b2107f3a0ff6b
 localizeentry,#hash_7f6d2a324bfa6338
 localizeentry,d#hash_7f8533b23e459217
 localizeentry,d#hash_7fa50621f0b0c0f1
-localizeentry,d#hash_7fd496c4cf9ec713
+localizeentry,d#menu/camo_loot_plasmadrive
 keyvaluepairs,#en_zm_common
 ttf,d#dinnext_regular
 ttf,d#ttmussels_regular

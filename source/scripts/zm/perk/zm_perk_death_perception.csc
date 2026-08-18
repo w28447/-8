@@ -195,7 +195,7 @@ function function_6a5f77( val )
 // Params 1
 // Checksum 0x18c25123, Offset: 0xa10
 // Size: 0x74
-function function_25410869( localclientnum )
+function update_visuals( localclientnum )
 {
     if ( self == function_5c10bd79( localclientnum ) )
     {
@@ -210,6 +210,6 @@ function function_25410869( localclientnum )
 // Size: 0x2c
 function function_dd6c1a8b( localclientnum, b_igc_active )
 {
-    self function_25410869( localclientnum );
+    self update_visuals( localclientnum );
 }
 

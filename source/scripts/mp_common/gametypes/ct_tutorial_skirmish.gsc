@@ -255,7 +255,7 @@ function play_interstitial()
         level.b_movie = 0;
     }
     
-    if ( s_result.outcome.var_c1e98979 === 9 || s_result.outcome.var_aefc8b8d.var_c1e98979 === 9 )
+    if ( s_result.outcome.end_type === 9 || s_result.outcome.var_aefc8b8d.end_type === 9 )
     {
         var_743bf28b = 1;
         level.b_movie = 0;
@@ -342,7 +342,7 @@ function function_6cc515f7( str_difficulty )
         var_d4002929 = 1;
     }
     
-    if ( s_result.outcome.var_c1e98979 === 9 || s_result.outcome.var_aefc8b8d.var_c1e98979 === 9 )
+    if ( s_result.outcome.end_type === 9 || s_result.outcome.var_aefc8b8d.end_type === 9 )
     {
         var_743bf28b = 1;
         level.b_movie = 0;

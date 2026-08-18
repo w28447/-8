@@ -701,7 +701,7 @@ function private _debuggameobjects()
             entnum = gameobject getentitynumber();
             origin = gameobject.origin;
             identifiertext = ( isdefined( gameobject gameobjects::get_identifier() ) ? gameobject gameobjects::get_identifier() : "<dev string:x298>" ) + "<dev string:x2a5>" + entnum + "<dev string:xa2>";
-            var_5f5e2bd5 = "<dev string:x2ab>" + gameobject.type + "<dev string:xa2>";
+            typetext = "<dev string:x2ab>" + gameobject.type + "<dev string:xa2>";
             origintext = "<dev string:x195>" + int( origin[ 0 ] ) + "<dev string:x19f>" + int( origin[ 1 ] ) + "<dev string:x19f>" + int( origin[ 2 ] ) + "<dev string:x1a4>";
             var_7358fe8e = "<dev string:x2b3>";
             var_8de0589e = "<dev string:x2c2>";
@@ -783,7 +783,7 @@ function private _debuggameobjects()
             }
             
             textcolor = isdefined( errortext ) ? ( 1, 0, 0 ) : ( 1, 1, 1 );
-            function_15462dcd( origin, textcolor, "<dev string:x21e>", identifiertext, var_5f5e2bd5, var_8de0589e, origintext, var_7358fe8e, teamtext, var_8dbcaed7, var_f3fe7e2c, var_2aac6b87, tacpointtext, var_d8e00365, errortext );
+            function_15462dcd( origin, textcolor, "<dev string:x21e>", identifiertext, typetext, var_8de0589e, origintext, var_7358fe8e, teamtext, var_8dbcaed7, var_f3fe7e2c, var_2aac6b87, tacpointtext, var_d8e00365, errortext );
             recordsphere( origin, 17, statuscolor, "<dev string:x21e>" );
         #/
     }
@@ -2176,14 +2176,14 @@ function function_f4921cb3( var_6d1ae0e2 )
     
     switch ( var_6d1ae0e2 )
     {
-        case #"hash_617966a33a6bad2b":
-            focuses[ focuses.size ] = #"hash_617966a33a6bad2b";
+        case #"follow entity":
+            focuses[ focuses.size ] = #"follow entity";
             break;
         case #"follow player":
             focuses[ focuses.size ] = #"follow player";
             break;
-        case #"hash_a465dbf9320e821":
-            focuses[ focuses.size ] = #"hash_617966a33a6bad2b";
+        case #"follow entity/player":
+            focuses[ focuses.size ] = #"follow entity";
             focuses[ focuses.size ] = #"follow player";
             break;
         case #"hash_964e75ec7937916":
@@ -2197,7 +2197,7 @@ function function_f4921cb3( var_6d1ae0e2 )
             focuses[ focuses.size ] = #"hash_64a01d6e814c8dc";
             break;
         case #"hash_833af17ffa224fe":
-            focuses[ focuses.size ] = #"hash_617966a33a6bad2b";
+            focuses[ focuses.size ] = #"follow entity";
             focuses[ focuses.size ] = #"hash_964e75ec7937916";
             break;
         case #"hash_692e498c8008c994":

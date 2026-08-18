@@ -344,11 +344,11 @@ function function_b20c4898()
 // Params 1
 // Checksum 0x48edd3e, Offset: 0x17f0
 // Size: 0x354
-function function_c40f70df( var_21c1ba1 )
+function function_c40f70df( n_player_num )
 {
     level endon( #"end_game" );
     self endon( #"death" );
-    println( "<dev string:x20d>" + var_21c1ba1 + "<dev string:x217>" );
+    println( "<dev string:x20d>" + n_player_num + "<dev string:x217>" );
     self bgb::suspend_weapon_cycling();
     self bgb_pack::function_ac9cb612( 1 );
     self util::magic_bullet_shield();
@@ -366,7 +366,7 @@ function function_c40f70df( var_21c1ba1 )
     }
     
     waitframe( 1 );
-    println( "<dev string:x20d>" + var_21c1ba1 + "<dev string:x233>" );
+    println( "<dev string:x20d>" + n_player_num + "<dev string:x233>" );
     self zm_trial_util::function_3f8a4145( 0 );
     
     if ( !self laststand::player_is_in_laststand() )
@@ -377,18 +377,18 @@ function function_c40f70df( var_21c1ba1 )
         {
             case #"crouch":
                 self setstance( "stand" );
-                println( "<dev string:x20d>" + var_21c1ba1 + "<dev string:x248>" );
+                println( "<dev string:x20d>" + n_player_num + "<dev string:x248>" );
                 wait 0.2;
                 break;
             case #"prone":
                 self setstance( "stand" );
-                println( "<dev string:x20d>" + var_21c1ba1 + "<dev string:x273>" );
+                println( "<dev string:x20d>" + n_player_num + "<dev string:x273>" );
                 wait 1;
                 break;
         }
     }
     
-    println( "<dev string:x20d>" + var_21c1ba1 + "<dev string:x29b>" );
+    println( "<dev string:x20d>" + n_player_num + "<dev string:x29b>" );
 }
 
 // Namespace zm_orange_mq_mgr/zm_orange_mq_mgr

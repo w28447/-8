@@ -605,15 +605,15 @@ function function_b753385f( weapon )
         
         origin = trace[ #"position" ];
         hit_ent = trace[ #"entity" ];
-        var_d13d4980 = undefined;
+        powerup_ent = undefined;
         
         if ( isdefined( hit_ent ) && hit_ent ismovingplatform() )
         {
-            var_d13d4980 = spawn( "script_model", origin + ( 0, 0, 40 ) );
-            var_d13d4980 linkto( hit_ent );
+            powerup_ent = spawn( "script_model", origin + ( 0, 0, 40 ) );
+            powerup_ent linkto( hit_ent );
         }
         
-        level thread powerup_drop( origin, var_d13d4980, var_4e31704a );
+        level thread powerup_drop( origin, powerup_ent, var_4e31704a );
     }
 }
 
@@ -1515,9 +1515,9 @@ function powerup_grab( powerup_team )
                 
                 if ( zm_trial_no_powerups::is_active() )
                 {
-                    var_57807cdc = [];
-                    array::add( var_57807cdc, player, 0 );
-                    zm_trial::fail( #"hash_2619fd380423798b", var_57807cdc );
+                    failed_players = [];
+                    array::add( failed_players, player, 0 );
+                    zm_trial::fail( #"hash_2619fd380423798b", failed_players );
                     self thread powerup_delete_delayed();
                     self notify( #"powerup_grabbed", { #e_grabber:player } );
                     return;

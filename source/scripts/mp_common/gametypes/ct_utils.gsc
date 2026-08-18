@@ -3049,7 +3049,7 @@ function function_1746776e()
 // Params 0
 // Checksum 0xd01a646e, Offset: 0x8778
 // Size: 0x14e
-function function_1db91571()
+function manage_timer()
 {
     while ( true )
     {
@@ -4312,7 +4312,7 @@ function function_c655d719( n_dist_min = 800, n_dist_max = 1600, var_5e5dc085 )
     
     var_b4595860 = n_dist_min * n_dist_min;
     var_b8f62dbd = n_dist_max * n_dist_max;
-    var_37fa3d92 = [];
+    a_spawnpts = [];
     
     foreach ( var_7b9b45ce in var_476cdbd7 )
     {
@@ -4320,11 +4320,11 @@ function function_c655d719( n_dist_min = 800, n_dist_max = 1600, var_5e5dc085 )
         
         if ( var_b4595860 <= n_dist_sq && n_dist_sq <= var_b8f62dbd )
         {
-            var_37fa3d92[ var_37fa3d92.size ] = var_7b9b45ce;
+            a_spawnpts[ a_spawnpts.size ] = var_7b9b45ce;
         }
     }
     
-    return var_37fa3d92;
+    return a_spawnpts;
 }
 
 // Namespace ct_utils/ct_utils

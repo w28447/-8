@@ -3915,7 +3915,7 @@ string,#mpui/dualoptic_desc
 string,#mpui/camo_huntsman
 string,#hash_246c7d9118b22299
 string,#hash_24a3e0f402bfd000
-string,#hash_24c9561478db5594
+string,#menu/camo_loot_masks
 string,#hash_250613266b9a4223
 string,#menu/camo_loot_shimmer
 string,#hash_25811ef8abc80b1f
@@ -4085,7 +4085,7 @@ string,#hash_49e88c8053d4f73e
 string,#hash_49f3092df33c779c
 string,#mpui/camo_heatstroke
 string,#hash_4a584bc8c443f246
-string,#hash_4a6f079813e273c3
+string,#menu/camo_loot_dogfight
 string,#hash_4ab3571c0c7854bc
 string,#hash_4b105b524a93b53d
 string,#hash_4b2858f776c52ccd
@@ -4129,7 +4129,7 @@ string,#hash_556fbdaebf02d158
 string,#hash_55d25caf8f7bbb2f
 string,#zmui/high_caliber_desc
 string,#hash_560d002c6e40e5df
-string,#hash_561a6371fe1e6f3a
+string,#menu/camo_loot_vice
 string,#hash_562ff3387984d58f
 string,#hash_566ff1da2a135d32
 string,#hash_577acc33401ccf26
@@ -4189,7 +4189,7 @@ string,#mpui/pistolscope_desc
 string,#hash_652798c8c39df5b0
 string,#hash_655f56d5efd95945
 string,#zombie/grab_shield_free
-string,#hash_663114aa52ffcb21
+string,#menu/camo_loot_ww2
 string,#hash_665fcaf288735f26
 string,#hash_669c0c5deaada19f
 string,#hash_66d33b296eb64fbc
@@ -4252,7 +4252,7 @@ string,#mpui/camo_ash
 string,#hash_768c5aeecc2d7cc4
 string,#mpui/grip2_desc
 string,#hash_7725a43a5e8755ad
-string,#hash_77dce7635423ba68
+string,#menu/camo_loot_cyberpunk
 string,#hash_77e4f27eadd05e61
 string,#menu/camo_active_celestial
 string,#hash_781dafec4ac0550f
@@ -4286,7 +4286,7 @@ string,#hash_7ed3d98c25f1502a
 string,#hash_7ee0d1946efa3d21
 string,#hash_7f12bb33e3e10d68
 string,#hash_7f462ab50be41252
-string,#hash_7fd496c4cf9ec713
+string,#menu/camo_loot_plasmadrive
 eventstring,#tutorial_complete
 fx,#hash_2a8233f8a1d00e7
 fx,#zm_ai/fx8_cata_elec_aura
@@ -6353,7 +6353,7 @@ soundalias,#hash_2fe4bd4c524c469a
 soundalias,#hash_2fe4be4c524c484d
 soundalias,#hash_2feef2b8c1b4c5cd
 soundalias,#hash_2ff24ef3f82c6c8a
-soundalias,#hash_3004f588bf60f0ec
+soundalias,#zmb_hellhound_loop_breath
 soundalias,#hash_30326e4e0340833e
 soundalias,#hash_3032704e034086a4
 soundalias,#hash_3032714e03408857
@@ -7953,7 +7953,7 @@ soundalias,#hash_5b959c1af4616c3f
 soundalias,#hash_5b997132499ceb4a
 soundalias,#hash_5ba3c6e0dfff4f54
 soundalias,#hash_5ba65eab80b02132
-soundalias,#hash_5bbc0710afc0dff6
+soundalias,#amb_fire_medium
 soundalias,#hash_5bbeacb2900ebb41
 soundalias,#hash_5bbeadb2900ebcf4
 soundalias,#hash_5bbeaeb2900ebea7
@@ -8613,7 +8613,7 @@ soundalias,#hash_6ca8c8b58e776349
 soundalias,#hash_6cb84427412463d9
 soundalias,#hash_6cea60c7eda4bc0a
 soundalias,#zmb_vocals_stoker_spawn
-soundalias,#hash_6cfa41a4b04b4a0a
+soundalias,#zmb_vocals_hellhound_ambient
 soundalias,#hash_6d0bcd77a8ec36fe
 soundalias,#fly_bump_piano
 soundalias,#hash_6d435ee95dcdbd88

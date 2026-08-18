@@ -33,9 +33,9 @@ function function_f4373d13( x, fx_effect, v_offset, v_forward, v_up, i_time )
     return true;
 }
 
-#namespace namespace_84ba1809;
+#namespace flowgraph_exploder;
 
-// Namespace namespace_84ba1809/flowgraph_fx
+// Namespace flowgraph_exploder/flowgraph_fx
 // Params 2
 // Checksum 0x620cbd57, Offset: 0x1b0
 // Size: 0x30, Type: bool
@@ -45,7 +45,7 @@ function playexploder( x, str_name )
     return true;
 }
 
-// Namespace namespace_84ba1809/flowgraph_fx
+// Namespace flowgraph_exploder/flowgraph_fx
 // Params 2
 // Checksum 0xb094ff0, Offset: 0x1e8
 // Size: 0x30, Type: bool
@@ -55,7 +55,7 @@ function stopexploder( x, str_name )
     return true;
 }
 
-// Namespace namespace_84ba1809/flowgraph_fx
+// Namespace flowgraph_exploder/flowgraph_fx
 // Params 2
 // Checksum 0x134114d3, Offset: 0x220
 // Size: 0x30, Type: bool

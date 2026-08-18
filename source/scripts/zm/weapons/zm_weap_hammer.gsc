@@ -1063,14 +1063,14 @@ function zombie_shock_eyes()
 // Size: 0x1c
 function on_player_disconnect()
 {
-    self function_371c585a();
+    self cleanup_storm();
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer
 // Params 0
 // Checksum 0xc9fb184, Offset: 0x33c0
 // Size: 0x5c
-function function_371c585a()
+function cleanup_storm()
 {
     if ( isdefined( self.e_storm ) )
     {
@@ -1086,7 +1086,7 @@ function function_371c585a()
 function hammer_off( n_slot, w_hero )
 {
     self notify( #"storm_think" );
-    self function_371c585a();
+    self cleanup_storm();
 }
 
 // Namespace zm_weap_hammer/zm_weap_hammer

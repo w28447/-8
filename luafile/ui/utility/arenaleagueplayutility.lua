@@ -41,7 +41,7 @@ CoD.ArenaLeaguePlayUtility.GetPoints = function ( f4_arg0 )
 	if f4_local0 and f4_local0 > 0 then
 		return f4_local0
 	else
-		return Engine[0x508F1FE2273B46A]( f4_arg0, 0 )
+		return Engine.leagueplay_getpoints( f4_arg0, 0 )
 	end
 end
 

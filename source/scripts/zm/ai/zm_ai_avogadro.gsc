@@ -111,7 +111,7 @@ function __init__()
     spawner::function_89a2cd87( #"avogadro", &function_c41e67c );
     
     /#
-        function_22006009();
+        avogadro_devgui();
     #/
     
     level thread aat::register_immunity( "zm_aat_brain_decay", #"avogadro", 1, 1, 1 );
@@ -194,7 +194,7 @@ function private function_c41e67c()
     level thread zm_spawner::zombie_death_event( self );
     
     /#
-        self thread function_d60f39c2();
+        self thread avogadro_debug();
     #/
     
     self thread function_44ac30aa();
@@ -206,7 +206,7 @@ function private function_c41e67c()
     // Params 1, eflags: 0x4
     // Checksum 0xac4da66c, Offset: 0x1940
     // Size: 0x8c, Type: dev
-    function private function_22006009( cmd )
+    function private avogadro_devgui( cmd )
     {
         zm_devgui::function_c7dd7a17( "<dev string:x38>" );
         adddebugcommand( "<dev string:x43>" );
@@ -221,7 +221,7 @@ function private function_c41e67c()
 // Params 4, eflags: 0x4
 // Checksum 0xada3e75e, Offset: 0x19d8
 // Size: 0x358
-function private function_d60f39c2( entity, player, duration, color )
+function private avogadro_debug( entity, player, duration, color )
 {
     self endon( #"death" );
     
@@ -685,26 +685,26 @@ function private function_d59c4b07( entity )
 {
     zombies = getaiteamarray( level.zombie_team );
     zombies = arraysortclosest( zombies, entity.origin, undefined, 0, entity getpathfindingradius() + 50 );
-    var_31a419e0 = [];
+    filtered_zombies = [];
     
     foreach ( zombie in zombies )
     {
         if ( zombie.zm_ai_category === #"basic" || zombie.zm_ai_category === #"popcorn" )
         {
-            if ( !isdefined( var_31a419e0 ) )
+            if ( !isdefined( filtered_zombies ) )
             {
-                var_31a419e0 = [];
+                filtered_zombies = [];
             }
-            else if ( !isarray( var_31a419e0 ) )
+            else if ( !isarray( filtered_zombies ) )
             {
-                var_31a419e0 = array( var_31a419e0 );
+                filtered_zombies = array( filtered_zombies );
             }
             
-            var_31a419e0[ var_31a419e0.size ] = zombie;
+            filtered_zombies[ filtered_zombies.size ] = zombie;
         }
     }
     
-    foreach ( zombie in var_31a419e0 )
+    foreach ( zombie in filtered_zombies )
     {
         zombie zombie_utility::setup_zombie_knockdown( entity );
     }
@@ -1138,7 +1138,7 @@ function function_a9be3eba( entity )
     {
         if ( entity function_dd070839() || isdefined( entity.traversestartnode ) )
         {
-            entity.phase_time = gettime() + self.var_15aa1ae0;
+            entity.phase_time = gettime() + self.phase_cooldown;
             entity.var_1ce249af = 0;
             return;
         }

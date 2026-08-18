@@ -168,13 +168,13 @@ function private on_connect()
         self thread function_2e565334();
     }
     
-    self zm_audio::function_6191af93( #"surrounded", #"self", #"oh", #"shit", 100 );
-    self zm_audio::function_6191af93( #"general", #"crawl_spawn", #"general", #"crawl_seen", 100 );
-    self zm_audio::function_6191af93( #"magicbox", #"homunculus", #"magicbox", #"monkey", 100 );
-    self zm_audio::function_6191af93( #"kill", #"homunculus", #"kill", #"monkey", 100 );
+    self zm_audio::vox_override( #"surrounded", #"self", #"oh", #"shit", 100 );
+    self zm_audio::vox_override( #"general", #"crawl_spawn", #"general", #"crawl_seen", 100 );
+    self zm_audio::vox_override( #"magicbox", #"homunculus", #"magicbox", #"monkey", 100 );
+    self zm_audio::vox_override( #"kill", #"homunculus", #"kill", #"monkey", 100 );
     self zm_audio::function_87714659( &function_e08cd7b, #"roundstart", #"special" );
     level flag::wait_till( #"music_box_first_use" );
-    self zm_audio::function_6191af93( #"kill", #"music_box", #"post_kill", #"music_box", 100 );
+    self zm_audio::vox_override( #"kill", #"music_box", #"post_kill", #"music_box", 100 );
 }
 
 // Namespace zm_orange_util/zm_orange_util

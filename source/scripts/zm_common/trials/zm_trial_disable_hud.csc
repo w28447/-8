@@ -59,7 +59,7 @@ function function_40349f7c( localclientnum )
             
             foreach ( player in getplayers( localclientnum ) )
             {
-                player zm_perk_death_perception::function_25410869( localclientnum );
+                player zm_perk_death_perception::update_visuals( localclientnum );
             }
         }
     }
@@ -86,7 +86,7 @@ function private on_end( local_client_num )
             
             foreach ( player in getplayers( localclientnum ) )
             {
-                player zm_perk_death_perception::function_25410869( localclientnum );
+                player zm_perk_death_perception::update_visuals( localclientnum );
             }
         }
     }

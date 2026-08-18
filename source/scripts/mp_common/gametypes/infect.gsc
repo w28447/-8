@@ -146,7 +146,7 @@ function onstartgametype()
 // Params 1
 // Checksum 0x2ae79a54, Offset: 0xd48
 // Size: 0xbc
-function onendgame( var_c1e98979 )
+function onendgame( end_type )
 {
     if ( !util::isoneround() && !util::islastround() )
     {
@@ -154,13 +154,13 @@ function onendgame( var_c1e98979 )
         return;
     }
     
-    if ( var_c1e98979 == 6 )
+    if ( end_type == 6 )
     {
         match::set_winner( #"axis" );
         return;
     }
     
-    if ( var_c1e98979 == 2 )
+    if ( end_type == 2 )
     {
         match::set_winner( #"allies" );
     }
@@ -685,10 +685,10 @@ function onsurvivorseliminated()
 // Params 2
 // Checksum 0x9b913cee, Offset: 0x2218
 // Size: 0x44
-function function_36f8016e( winning_team, var_c1e98979 )
+function function_36f8016e( winning_team, end_type )
 {
     round::set_winner( winning_team );
-    thread globallogic::function_a3e3bd39( winning_team, var_c1e98979 );
+    thread globallogic::function_a3e3bd39( winning_team, end_type );
 }
 
 // Namespace infect/infect

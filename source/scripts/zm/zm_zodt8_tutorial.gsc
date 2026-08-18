@@ -82,7 +82,7 @@ function init_level_vars()
     level flag::init( "tutorial_vo_playing" );
     level.fn_custom_round_ai_spawn = undefined;
     level.var_e52901a5 = 1;
-    level.var_3c8ad64b = -1;
+    level.enabled_bgb = -1;
     level.var_fdba6f4b = &function_558fab23;
     level.custom_zombie_powerup_drop = &function_69b9de8b;
     level.var_fd2e6f70 = &function_b5000f75;
@@ -628,7 +628,7 @@ function function_fb2e7309()
 {
     while ( level.var_a4ad706d.size > 0 || level flag::get( "tutorial_reset" ) )
     {
-        function_1eaaceab( level.var_a4ad706d );
+        arrayremovedead( level.var_a4ad706d );
         waitframe( 1 );
     }
 }
@@ -676,7 +676,7 @@ function function_2b4bf122( points )
 // Params 1
 // Checksum 0x9d14ebf1, Offset: 0x35b0
 // Size: 0x64
-function function_3fe47ed7( weaponname )
+function grant_weapon( weaponname )
 {
     weapon = getweapon( weaponname );
     assert( isdefined( weapon ) );
@@ -755,7 +755,7 @@ function tutorial()
     level.tutorialplayer function_f761f5e4();
     zombie_utility::set_zombie_var( #"zombie_use_failsafe", 0 );
     level flag::set( #"disable_fast_travel" );
-    function_d1dabace();
+    disable_wallbuys();
     level thread function_e30183a6();
     open_door( "engine_room_door" );
     level function_f1376337( 0 );
@@ -840,7 +840,7 @@ function function_513e90cf()
     music::setmusicstate( "tutorial_beginner_start" );
     self teleport_to( "tutorial_beginner_start" );
     self takeallweapons();
-    self function_3fe47ed7( "pistol_topbreak_t8" );
+    self grant_weapon( "pistol_topbreak_t8" );
     self giveweapon( level.weaponbasemelee );
     self function_2b4bf122( 2500 );
     self freeze_player_controls();
@@ -922,7 +922,7 @@ function shoot_zombie()
 {
     function_269d9f82( "blocker_shoot_zombie" );
     self.reset_score = self.score;
-    function_b12c3aec();
+    disable_doorbuys();
     util::streamer_wait();
     level flag::set( "tutorial_intro_screen_over" );
     level flag::wait_till( "gameplay_started" );
@@ -934,7 +934,7 @@ function shoot_zombie()
     wait 0.5;
     level thread function_68da8e33( #"hash_71b1fc8d67ee8cea" );
     self thread function_3e1e39f8( #"hash_49df76352370f4a6", "shoot_zombie_completed", &function_3d825fe, 9999 );
-    self thread function_261ed63c( #"hash_66a9e9a056f5aa26", 6, "shoot_zombie_completed" );
+    self thread vo_nag( #"hash_66a9e9a056f5aa26", 6, "shoot_zombie_completed" );
     level waittill( #"zombie_shot" );
     function_a09d93d9();
     self notify( #"shoot_zombie_completed" );
@@ -964,7 +964,7 @@ function function_c3b8207f()
     if ( self getstance() != "crouch" )
     {
         level thread function_68da8e33( #"hash_5af63888fba2594b", 0.5 );
-        self thread function_261ed63c( #"hash_7e3f37003051a94c", 8, "crouch_completed" );
+        self thread vo_nag( #"hash_7e3f37003051a94c", 8, "crouch_completed" );
         self thread function_3e1e39f8( #"hash_1544925c6fc2b561", "crouch_completed", &function_78dbf7e8, 9999 );
     }
     
@@ -988,13 +988,13 @@ function wallbuy()
     s_objective = struct::get( "objective_pos_wall_buy", "targetname" );
     s_objective function_384bed55();
     self thread function_68da8e33( #"hash_7bb3349ac11750e5", 0.5 );
-    self thread function_261ed63c( #"hash_48fe2a22d51f87ea", 8, "wallbuy_completed" );
-    function_d1dabace( 0 );
+    self thread vo_nag( #"hash_48fe2a22d51f87ea", 8, "wallbuy_completed" );
+    disable_wallbuys( 0 );
     level waittill( #"weapon_bought" );
     s_objective function_384bed55( 0 );
     mdl_wallbuy delete();
     self notify( #"wallbuy_completed" );
-    function_d1dabace();
+    disable_wallbuys();
     function_269d9f82( "blocker_post_wall_buy" );
     level flag::wait_till_clear( "tutorial_vo_playing" );
     level thread function_68da8e33( #"hash_7f88771dfcc1a6ad" );
@@ -1049,16 +1049,16 @@ function doorbuy()
 {
     s_objective = struct::get( "objective_pos_door_buy", "targetname" );
     s_objective function_384bed55();
-    function_1cc39f51( "state_rooms_to_lower_stairs_door", "p8_kit_zod_din_05_door_42_left_stained_wood_02", 1 );
-    function_1cc39f51( "state_rooms_to_lower_stairs_door", "p8_kit_zod_din_05_door_42_right_stained_wood_02", 1 );
+    highlight_door( "state_rooms_to_lower_stairs_door", "p8_kit_zod_din_05_door_42_left_stained_wood_02", 1 );
+    highlight_door( "state_rooms_to_lower_stairs_door", "p8_kit_zod_din_05_door_42_right_stained_wood_02", 1 );
     function_68da8e33( #"hash_42672ecc69a0efb1", 0.3 );
-    self thread function_261ed63c( #"hash_d7858da53c9180e", 8, "door_completed" );
-    function_b12c3aec( 0 );
+    self thread vo_nag( #"hash_d7858da53c9180e", 8, "door_completed" );
+    disable_doorbuys( 0 );
     level waittill( #"door_opened", #"junk purchased" );
     self notify( #"door_completed" );
     s_objective function_384bed55( 0 );
-    function_1cc39f51( "state_rooms_to_lower_stairs_door", "p8_kit_zod_din_05_door_42_left_stained_wood_02", 0 );
-    function_1cc39f51( "state_rooms_to_lower_stairs_door", "p8_kit_zod_din_05_door_42_right_stained_wood_02", 0 );
+    highlight_door( "state_rooms_to_lower_stairs_door", "p8_kit_zod_din_05_door_42_left_stained_wood_02", 0 );
+    highlight_door( "state_rooms_to_lower_stairs_door", "p8_kit_zod_din_05_door_42_right_stained_wood_02", 0 );
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
@@ -1121,7 +1121,7 @@ function function_ec7139ac()
     
     s_objective = struct::get( "objective_pos_repair", "targetname" );
     s_objective function_384bed55();
-    self thread function_261ed63c( #"hash_3eac3c3c341e4070", 8, "boarding_window" );
+    self thread vo_nag( #"hash_3eac3c3c341e4070", 8, "boarding_window" );
     
     for ( var_d01c9ca2 = 0; var_d01c9ca2 < 6 ; var_d01c9ca2++ )
     {
@@ -1243,8 +1243,8 @@ function function_bfd3a7b1()
     zm_blockers::open_all_zbarriers();
     self function_2b4bf122( 2850 );
     self takeallweapons();
-    self function_3fe47ed7( "pistol_topbreak_t8" );
-    self function_3fe47ed7( "ar_accurate_t8" );
+    self grant_weapon( "pistol_topbreak_t8" );
+    self grant_weapon( "ar_accurate_t8" );
     self giveweapon( level.weaponbasemelee );
     self function_43b2606b();
     self zm_perks::give_perk_vapor( #"specialty_staminup", 0 );
@@ -1287,11 +1287,11 @@ function function_bfd3a7b1()
     a_pap[ 1 ].unitrigger_stub thread zodt8_pap_quest::function_5c299a0f( self );
     a_pap[ 2 ].unitrigger_stub thread zodt8_pap_quest::function_5c299a0f( self );
     self takeallweapons();
-    self function_3fe47ed7( "smg_handling_t8" );
-    self function_3fe47ed7( "ar_stealth_t8" );
-    self function_3fe47ed7( "hero_hammer_lv1" );
-    self function_3fe47ed7( "eq_acid_bomb" );
-    self function_3fe47ed7( "zhield_dw" );
+    self grant_weapon( "smg_handling_t8" );
+    self grant_weapon( "ar_stealth_t8" );
+    self grant_weapon( "hero_hammer_lv1" );
+    self grant_weapon( "eq_acid_bomb" );
+    self grant_weapon( "zhield_dw" );
     self giveweapon( level.weaponbasemelee );
     self function_43b2606b();
     self zm_perks::give_perk_vapor( #"specialty_staminup", 0 );
@@ -1315,11 +1315,11 @@ function function_bfd3a7b1()
 // Size: 0x1f4
 function perks()
 {
-    function_b12c3aec();
+    disable_doorbuys();
     self.is_drinking = 1;
     function_f1376337( 1 );
     function_cc60408f( array( #"hash_10ca256bd3dd4228", #"hash_10ca266bd3dd43db" ), "vo_done" );
-    self thread function_261ed63c( #"hash_6479c2bd319012b3", 5, "perk_purchased" );
+    self thread vo_nag( #"hash_6479c2bd319012b3", 5, "perk_purchased" );
     self.is_drinking = 0;
     var_fe79c035 = function_9152aa67( "p8_fxanim_zm_vapor_altar_zeus_mod" );
     var_fe79c035 clientfield::set( "tutorial_keyline_fx", 1 );
@@ -1330,7 +1330,7 @@ function perks()
     s_objective function_384bed55( 0 );
     wait 3;
     function_cc60408f( array( #"hash_10ca276bd3dd458e", #"hash_2c2903a363c22b07" ), "vo_done" );
-    function_b12c3aec( 0 );
+    disable_doorbuys( 0 );
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
@@ -1393,16 +1393,16 @@ function function_8406d665()
 // Size: 0x3d4
 function equipment()
 {
-    function_1cc39f51( "suites_promenade_door", "p8_kit_zod_lou_05_door_left_painted_wood_01", 1 );
+    highlight_door( "suites_promenade_door", "p8_kit_zod_lou_05_door_left_painted_wood_01", 1 );
     s_objective = struct::get( "objective_pos_door_buy_2", "targetname" );
     s_objective function_384bed55();
-    level thread function_261ed63c( #"hash_2c2902a363c22954", 5, "door_opened" );
+    level thread vo_nag( #"hash_2c2902a363c22954", 5, "door_opened" );
     level waittill( #"door_opened", #"junk purchased" );
-    function_1cc39f51( "suites_promenade_door", "p8_kit_zod_lou_05_door_left_painted_wood_01", 0 );
+    highlight_door( "suites_promenade_door", "p8_kit_zod_lou_05_door_left_painted_wood_01", 0 );
     s_objective function_384bed55( 0 );
     function_269d9f82( "barrier_acid_bomb" );
     self thread function_68da8e33( #"hash_5040525e8af4917d" );
-    self thread function_261ed63c( #"hash_148814932d9c1702", 6, "grenade_fire" );
+    self thread vo_nag( #"hash_148814932d9c1702", 6, "grenade_fire" );
     function_fac53b63( array( "tutorial_zm_spawner_equipment_1", "tutorial_zm_spawner_equipment_2", "tutorial_zm_spawner_equipment_3" ), 1 );
     array::thread_all( level.var_a4ad706d, &function_8406d665 );
     self thread function_1beccb75();
@@ -1531,7 +1531,7 @@ function nuke_vo()
 {
     self endon( #"nuke_triggered" );
     level function_68da8e33( #"hash_4570b02abda4a10" );
-    self thread function_261ed63c( #"hash_73ec6520c4125b7b", 5, "nuke_triggered" );
+    self thread vo_nag( #"hash_73ec6520c4125b7b", 5, "nuke_triggered" );
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
@@ -1562,7 +1562,7 @@ function revive_bot()
     level thread function_68da8e33( #"hash_21c376fa208dc2c", 4 );
     level.tutorialbot waittill( #"stop_revive_trigger" );
     level thread function_68da8e33( #"hash_409bd11382c2e617" );
-    level.tutorialbot function_3fe47ed7( "ar_damage_t8" );
+    level.tutorialbot grant_weapon( "ar_damage_t8" );
     level.tutorialbot set_bot_goal( "tutorial_bot_ramp" );
     waittill_trigger( "tutorial_finish_bot_revive", self );
     level.tutorialbot set_bot_goal( "tutorial_bot_upper_deck" );
@@ -1606,7 +1606,7 @@ function cooperative()
     wait 1;
     level thread function_68da8e33( #"hash_3c5d15448b5aa428" );
     level.tutorialbot set_bot_goal( "tutorial_bot_shield_part" );
-    function_b12c3aec();
+    disable_doorbuys();
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
@@ -1762,7 +1762,7 @@ function function_e35fa479()
     self val::set( #"devgui", "takedamage", 0 );
     self set_bot_goal( "tutorial_bot_before_power" );
     self waittill( #"goal" );
-    function_1eaaceab( level.var_a4ad706d );
+    arrayremovedead( level.var_a4ad706d );
     
     while ( level.var_a4ad706d.size > 0 )
     {
@@ -1770,7 +1770,7 @@ function function_e35fa479()
         self setentitytarget( e_target );
         e_target waittill( #"death" );
         wait randomfloatrange( 1, 2 );
-        function_1eaaceab( level.var_a4ad706d );
+        arrayremovedead( level.var_a4ad706d );
     }
 }
 
@@ -1917,7 +1917,7 @@ function elixirs()
     self bgb_pack::function_da912bff( 3, 1 );
     function_f1376337( 5 );
     function_68da8e33( #"hash_223703d87588d1ee", 2 );
-    level.var_3c8ad64b = 2;
+    level.enabled_bgb = 2;
     self bgb_pack::function_da912bff( 2, 0 );
     
     if ( function_8b1a219a() )
@@ -1928,7 +1928,7 @@ function elixirs()
     self thread function_3e1e39f8( #"hash_52ed5bafc1e1a62c", "tutorial_used_anywhere_but_here" );
     level waittill( #"tutorial_used_anywhere_but_here" );
     self teleport_to( "tutorial_elixers" );
-    level.var_3c8ad64b = -1;
+    level.enabled_bgb = -1;
 }
 
 // Namespace zm_zodt8_tutorial/zm_zodt8_tutorial
@@ -1947,10 +1947,10 @@ function function_3901e82e()
 // Params 0
 // Checksum 0xdc95c655, Offset: 0x8820
 // Size: 0x7c
-function function_818a3a72()
+function pap_reset()
 {
-    self function_3fe47ed7( "smg_handling_t8" );
-    self function_3fe47ed7( "ar_stealth_t8" );
+    self grant_weapon( "smg_handling_t8" );
+    self grant_weapon( "ar_stealth_t8" );
     self teleport_to( "tutorial_PAP_start" );
     self thread function_3901e82e();
 }
@@ -1973,7 +1973,7 @@ function pap()
     s_objective = struct::get( "objective_pos_pap", "targetname" );
     s_objective function_384bed55();
     self.is_drinking = 0;
-    function_6e9fe428( &function_818a3a72 );
+    function_6e9fe428( &pap_reset );
     self thread function_3901e82e();
     self waittill( #"pap_taken" );
     a_pap[ 3 ] clientfield::set( "tutorial_keyline_fx", 2 );
@@ -2002,7 +2002,7 @@ function fast_travel()
     level flag::clear( #"disable_fast_travel" );
     level flag::set( "connect_provisions_to_engine_room" );
     function_6e9fe428( &function_737ee059 );
-    level thread function_261ed63c( #"hash_752c91f0ab47d7eb", 25, "fast_travel_used" );
+    level thread vo_nag( #"hash_752c91f0ab47d7eb", 25, "fast_travel_used" );
     function_fac53b63( array( "tutorial_zm_spawner_fast_travel_1", "tutorial_zm_spawner_fast_travel_2", "tutorial_zm_spawner_fast_travel_3", "tutorial_zm_spawner_fast_travel_4", "tutorial_zm_spawner_fast_travel_5" ) );
     s_objective = struct::get( "objective_pos_fast_travel", "targetname" );
     s_objective function_384bed55();
@@ -2043,7 +2043,7 @@ function function_edf32a3b( n_round_number )
 // Params 1
 // Checksum 0xd6eac585, Offset: 0x8e38
 // Size: 0x4e
-function function_d1dabace( b_disable = 1 )
+function disable_wallbuys( b_disable = 1 )
 {
     if ( b_disable )
     {
@@ -2067,7 +2067,7 @@ function private function_86ff864( e_player, player_has_weapon )
 // Params 1
 // Checksum 0xf6e95f4a, Offset: 0x8eb0
 // Size: 0x280
-function function_b12c3aec( b_disable = 1 )
+function disable_doorbuys( b_disable = 1 )
 {
     if ( b_disable )
     {
@@ -2383,7 +2383,7 @@ function function_9152aa67( str_model_name )
 // Params 3
 // Checksum 0x71dd8dd8, Offset: 0x9a58
 // Size: 0x138
-function function_1cc39f51( str_door, str_model, var_811aae17 = 1 )
+function highlight_door( str_door, str_model, var_811aae17 = 1 )
 {
     a_models = getentarray( str_door, "targetname" );
     
@@ -2441,7 +2441,7 @@ function function_cc60408f( a_str_alias, str_endon )
 // Params 3
 // Checksum 0x9b6cf79b, Offset: 0x9d08
 // Size: 0x44
-function function_261ed63c( str_alias, n_time, str_endon )
+function vo_nag( str_alias, n_time, str_endon )
 {
     self endon( str_endon );
     wait n_time;

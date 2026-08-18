@@ -256,10 +256,10 @@ function analyze( params )
     /#
         if ( self should_record( "<dev string:x152>" ) )
         {
-            var_47d2875c = ( params.targetpos[ 0 ], params.targetpos[ 1 ], params.starttrace[ 2 ] );
+            distpos = ( params.targetpos[ 0 ], params.targetpos[ 1 ], params.starttrace[ 2 ] );
             var_b03d274a = params.dist2d < 30 ? ( 0, 1, 0 ) : ( 1, 0, 0 );
-            recordline( params.starttrace, var_47d2875c, var_b03d274a, "<dev string:x163>", self );
-            recordsphere( var_47d2875c, 3, var_b03d274a, "<dev string:x163>", self );
+            recordline( params.starttrace, distpos, var_b03d274a, "<dev string:x163>", self );
+            recordsphere( distpos, 3, var_b03d274a, "<dev string:x163>", self );
             recordsphere( params.starttrace, 3, ( 0, 1, 0 ), "<dev string:x163>", self );
             recordsphere( params.targetpos, 3, ( 1, 0, 1 ), "<dev string:x163>", self );
         }

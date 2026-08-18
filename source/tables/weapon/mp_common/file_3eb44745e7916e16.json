@@ -32,7 +32,7 @@
     "firesoundplayer": "#wpn_grenade_throw",
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",
-    "projexplosionsound": "#hash_67a24c8ee8c88597",
+    "projexplosionsound": "#wpn_emp_explode",
     "tunables1": "#hash_3b4de89f7a1bd505",
     "cacWeaponXCam": "#ui_cam_cac_equip_emp",
     "sharedWeaponSounds": "#equipment",

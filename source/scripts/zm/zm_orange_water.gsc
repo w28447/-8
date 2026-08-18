@@ -807,7 +807,7 @@ function function_8eb7b0f7()
 // Params 0
 // Checksum 0x1f15eb2f, Offset: 0x2338
 // Size: 0x54
-function function_142c254b()
+function lava_player_damage()
 {
     self.var_1ed2984a = 1;
     self dodamage( 50, self.origin, undefined, undefined, undefined, "MOD_BURNED" );

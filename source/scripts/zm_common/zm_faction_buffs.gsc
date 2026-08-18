@@ -397,14 +397,14 @@ function private function_68992377( var_c5b25bc5, var_97f3fbb7 )
     function devgui_player_menu()
     {
         self function_1c3ffffd();
-        var_21c1ba1 = self getentitynumber() + 1;
-        adddebugcommand( "<dev string:x302>" + self.name + "<dev string:x322>" + var_21c1ba1 + "<dev string:x328>" + var_21c1ba1 + "<dev string:x372>" );
-        adddebugcommand( "<dev string:x302>" + self.name + "<dev string:x322>" + var_21c1ba1 + "<dev string:x37c>" + var_21c1ba1 + "<dev string:x3c5>" );
-        adddebugcommand( "<dev string:x302>" + self.name + "<dev string:x322>" + var_21c1ba1 + "<dev string:x3cf>" + var_21c1ba1 + "<dev string:x415>" );
-        adddebugcommand( "<dev string:x302>" + self.name + "<dev string:x322>" + var_21c1ba1 + "<dev string:x41f>" + var_21c1ba1 + "<dev string:x468>" );
-        adddebugcommand( "<dev string:x302>" + self.name + "<dev string:x322>" + var_21c1ba1 + "<dev string:x472>" + var_21c1ba1 + "<dev string:x4b7>" );
-        adddebugcommand( "<dev string:x302>" + self.name + "<dev string:x322>" + var_21c1ba1 + "<dev string:x4c6>" + var_21c1ba1 + "<dev string:x50a>" );
-        adddebugcommand( "<dev string:x302>" + self.name + "<dev string:x322>" + var_21c1ba1 + "<dev string:x518>" + var_21c1ba1 + "<dev string:x54a>" );
+        n_player_num = self getentitynumber() + 1;
+        adddebugcommand( "<dev string:x302>" + self.name + "<dev string:x322>" + n_player_num + "<dev string:x328>" + n_player_num + "<dev string:x372>" );
+        adddebugcommand( "<dev string:x302>" + self.name + "<dev string:x322>" + n_player_num + "<dev string:x37c>" + n_player_num + "<dev string:x3c5>" );
+        adddebugcommand( "<dev string:x302>" + self.name + "<dev string:x322>" + n_player_num + "<dev string:x3cf>" + n_player_num + "<dev string:x415>" );
+        adddebugcommand( "<dev string:x302>" + self.name + "<dev string:x322>" + n_player_num + "<dev string:x41f>" + n_player_num + "<dev string:x468>" );
+        adddebugcommand( "<dev string:x302>" + self.name + "<dev string:x322>" + n_player_num + "<dev string:x472>" + n_player_num + "<dev string:x4b7>" );
+        adddebugcommand( "<dev string:x302>" + self.name + "<dev string:x322>" + n_player_num + "<dev string:x4c6>" + n_player_num + "<dev string:x50a>" );
+        adddebugcommand( "<dev string:x302>" + self.name + "<dev string:x322>" + n_player_num + "<dev string:x518>" + n_player_num + "<dev string:x54a>" );
     }
 
     // Namespace zm_faction_buffs/zm_faction_buffs

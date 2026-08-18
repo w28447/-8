@@ -771,7 +771,7 @@ function function_92b0ec6b()
     if ( self playerads() < 1 )
     {
         self.bot.var_ddc0e12b = undefined;
-        self.bot.var_f2b47a08 = undefined;
+        self.bot.sniperfiretime = undefined;
     }
 }
 
@@ -1775,7 +1775,7 @@ function function_2d5436be( origin, spiral )
     degrees = spacing * 360 / 6.28319 * radius;
     spiral.angle += degrees;
     spiral.radius = math::function_b1820790( a, b, c, spiral.angle );
-    var_17e94d83 = rotatepointaroundaxis( ( spiral.radius, 0, 0 ), ( 0, 0, 1 ), spiral.angle + spiral.var_2b9d3922 );
+    var_17e94d83 = rotatepointaroundaxis( ( spiral.radius, 0, 0 ), ( 0, 0, 1 ), spiral.angle + spiral.root_angle );
     spawn_point = var_17e94d83 + origin;
     trace = bullettrace( spawn_point + ( 0, 0, 100 ), spawn_point, 0, self );
     return trace[ #"position" ];
@@ -1812,7 +1812,7 @@ function devgui_add_fixed_spawn_bots( botarg, var_b27e53da, countarg )
     }
     
     bots[ bots.size ] = self add_fixed_spawn_bot( team, origin, spawnangles[ 1 ], var_b27e53da );
-    spiral = { #var_2b9d3922:spawnangles[ 1 ], #angle:0, #radius:100 };
+    spiral = { #root_angle:spawnangles[ 1 ], #angle:0, #radius:100 };
     spiral.angle = getdvarint( #"hash_6d616a1ec2c5b8f0", 0 );
     spiral.radius = getdvarint( #"hash_64cb6c7e56b66cab", 0 );
     
@@ -1829,7 +1829,7 @@ function devgui_add_fixed_spawn_bots( botarg, var_b27e53da, countarg )
             bots = array( bots );
         }
         
-        bots[ bots.size ] = self add_fixed_spawn_bot( team, origin, spiral.angle + spiral.var_2b9d3922, var_b27e53da );
+        bots[ bots.size ] = self add_fixed_spawn_bot( team, origin, spiral.angle + spiral.root_angle, var_b27e53da );
     }
     
     if ( isvehicle( trace[ #"entity" ] ) )
@@ -2470,7 +2470,7 @@ function function_85e7342b()
 // Size: 0x640
 function function_301f229d( team )
 {
-    var_9e7013f = [];
+    downplayers = [];
     var_52e61055 = [];
     players = getplayers( team );
     
@@ -2485,7 +2485,7 @@ function function_301f229d( team )
         {
             if ( !( isdefined( player.revivetrigger.beingrevived ) && player.revivetrigger.beingrevived ) )
             {
-                var_9e7013f[ var_9e7013f.size ] = player;
+                downplayers[ downplayers.size ] = player;
             }
             
             continue;
@@ -2506,7 +2506,7 @@ function function_301f229d( team )
     {
         radius = bot getpathfindingradius();
         
-        foreach ( player in var_9e7013f )
+        foreach ( player in downplayers )
         {
             distance = undefined;
             navmeshpoint = getclosestpointonnavmesh( player.origin, 64, radius );

@@ -257,7 +257,7 @@ function private blood_death_fx( var_14ef0a6c )
 // Params 3
 // Checksum 0x7da73623, Offset: 0x1480
 // Size: 0x84
-function function_fe3f086c( e_target, leftswing, weapon = level.weaponnone )
+function chop_target( e_target, leftswing, weapon = level.weaponnone )
 {
     if ( isactor( e_target ) )
     {
@@ -395,7 +395,7 @@ function chop_zombies( first_time = 1, leftswing, weapon = level.weaponnone )
         }
         
         self thread chakram_rumble( 3 );
-        self thread function_fe3f086c( e_target, leftswing, weapon );
+        self thread chop_target( e_target, leftswing, weapon );
     }
 }
 

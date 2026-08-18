@@ -3393,7 +3393,7 @@ string,#mpui/camo_huntsman
 string,#hash_246c7d9118b22299
 string,#zombie/wallbuy_cooldown
 string,#hash_24a3e0f402bfd000
-string,#hash_24c9561478db5594
+string,#menu/camo_loot_masks
 string,#hash_25488a48dddb319c
 string,#menu/camo_loot_shimmer
 string,#hash_25811ef8abc80b1f
@@ -3595,7 +3595,7 @@ string,#hash_4a081ed23f9db2d8
 string,#hash_4a211515eeb595de
 string,#mpui/camo_heatstroke
 string,#hash_4a584bc8c443f246
-string,#hash_4a6f079813e273c3
+string,#menu/camo_loot_dogfight
 string,#hash_4b105b524a93b53d
 string,#zmweapon/nesting_doll_grenade
 string,#zmweapon/none
@@ -3651,7 +3651,7 @@ string,#hash_5571176820f1f5c2
 string,#hash_55802e320dc6f767
 string,#zmui/high_caliber_desc
 string,#hash_560d002c6e40e5df
-string,#hash_561a6371fe1e6f3a
+string,#menu/camo_loot_vice
 string,#hash_56588456a8b61e61
 string,#hash_56917185158b9df4
 string,#hash_56fc5ab8c0878d32
@@ -3721,7 +3721,7 @@ string,#zm_orange/location_upper_catwalk
 string,#hash_6555d81cc6ee692c
 string,#zm_orange/location_decontamination
 string,#zm_escape/acid_trap_unavailable
-string,#hash_663114aa52ffcb21
+string,#menu/camo_loot_ww2
 string,#hash_6649759b63221feb
 string,#hash_6653854fb4eb2a2f
 string,#hash_665fcaf288735f26
@@ -3796,7 +3796,7 @@ string,#hash_7714e6727380675a
 string,#hash_7725a43a5e8755ad
 string,#hash_776f06f558a721bd
 string,#zm_orange/location_outer_walkway
-string,#hash_77dce7635423ba68
+string,#menu/camo_loot_cyberpunk
 string,#menu/camo_active_celestial
 string,#hash_7830e4902246743f
 string,#menu/camo_loot_citrus
@@ -3832,7 +3832,7 @@ string,#hash_7e31505384e0837a
 string,#mpui/tacknife_desc
 string,#menu/camo_loot_paradise
 string,#hash_7e711c2bf9dc32ea
-string,#hash_7fd496c4cf9ec713
+string,#menu/camo_loot_plasmadrive
 moviefile,#zm_orange_outro
 moviefile,#1b4c9133da73a711322404314402765ab0d23fd362a167d6f0c65bb215113d9400000000000000ff
 fx,#hash_2a8233f8a1d00e7
@@ -4007,7 +4007,7 @@ soundalias,#amb_camp_fire
 soundalias,#hash_2c21de758954d54
 soundalias,#hash_2c5ad3d4cdc507c
 soundalias,#hash_2cb68913c0cf0ca
-soundalias,#hash_2d6f61e1cf07e68
+soundalias,#zmb_box_move
 soundalias,#hash_2e8e21adbb357ab
 soundalias,#hash_2f2b8fe0e0bd749
 soundalias,#hash_30a8fc5a3e8b79e
@@ -5772,7 +5772,7 @@ soundalias,#hash_2fdc1e5dbbe6d8d9
 soundalias,#hash_2fdd21d175e45809
 soundalias,#hash_2fe344cda8a89a7a
 soundalias,#hash_2ff24ef3f82c6c8a
-soundalias,#hash_3004f588bf60f0ec
+soundalias,#zmb_hellhound_loop_breath
 soundalias,#hash_301eadaf95551eb0
 soundalias,#hash_30288737409e17a7
 soundalias,#hash_302ec371d6e7aa61
@@ -5873,7 +5873,7 @@ soundalias,#fly_zombie_ground_climbout
 soundalias,#hash_32bb69fd6e0406b9
 soundalias,#hash_32c62d8d9799d53a
 soundalias,#hash_32d5cd7fd533e8c7
-soundalias,#hash_32d8f9d0e729a37d
+soundalias,#zmb_box_poof
 soundalias,#hash_32de71dbea167581
 soundalias,#hash_32def2a5219ba9ee
 soundalias,#hash_32e2c6e9b7449114
@@ -7483,7 +7483,7 @@ soundalias,#hash_605069759e6c76b6
 soundalias,#hash_6052daa5af1ef4ac
 soundalias,#hash_606d51fe21e749ac
 soundalias,#hash_606e8ab12fbb3d73
-soundalias,#hash_607b61ab8f244087
+soundalias,#zmb_box_poof_land
 soundalias,#hash_6085221437b851bc
 soundalias,#hash_6085231437b8536f
 soundalias,#hash_6085241437b85522
@@ -7936,7 +7936,7 @@ soundalias,#hash_6ce09d89dc40f11a
 soundalias,#hash_6ce29c2310f16929
 soundalias,#vox_mist_exert_sniper_exhale
 soundalias,#hash_6cebe438b178d14f
-soundalias,#hash_6cfa41a4b04b4a0a
+soundalias,#zmb_vocals_hellhound_ambient
 soundalias,#hash_6d06493167ad59cd
 soundalias,#hash_6d0bcd77a8ec36fe
 soundalias,#hash_6d15c034ebfdca05
@@ -7987,7 +7987,7 @@ soundalias,#hash_6dc5fea475ce342a
 soundalias,#hash_6dc72181e9977745
 soundalias,#hash_6dcbaf1814c26a49
 soundalias,#hash_6dd8d1c98edeb4c8
-soundalias,#hash_6dead99af942e065
+soundalias,#zmb_vocals_quad_spawn
 soundalias,#hash_6df47f5bacb3d71a
 soundalias,#hash_6dfa4854873e2e9e
 soundalias,#hash_6dfb6048b2e9d673

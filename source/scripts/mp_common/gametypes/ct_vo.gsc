@@ -109,9 +109,9 @@ function function_3820390e( a_str_vo, var_3a78a180 = 1, var_35f78012 = 0 )
         }
     }
     
-    if ( isdefined( e_player.var_8701e993 ) )
+    if ( isdefined( e_player.str_current_vo ) )
     {
-        e_player stopsound( e_player.var_8701e993 );
+        e_player stopsound( e_player.str_current_vo );
     }
     
     var_56402506 = gettime() / 1000;
@@ -131,8 +131,8 @@ function function_3820390e( a_str_vo, var_3a78a180 = 1, var_35f78012 = 0 )
     
     foreach ( str_vo in a_str_vo )
     {
-        e_player.var_8701e993 = str_vo;
-        e_player function_62b6f78a( e_player.var_8701e993, 1 );
+        e_player.str_current_vo = str_vo;
+        e_player function_62b6f78a( e_player.str_current_vo, 1 );
         e_player.var_a10aaced--;
     }
     
@@ -160,14 +160,14 @@ function function_a13e292b( _hash )
     {
         e_player.var_ec53b83b = 1;
         
-        if ( isdefined( e_player.var_8701e993 ) )
+        if ( isdefined( e_player.str_current_vo ) )
         {
-            e_player stopsound( e_player.var_8701e993 );
+            e_player stopsound( e_player.str_current_vo );
         }
         
         waitframe( 1 );
-        e_player.var_681d4714 = e_player.var_8701e993;
-        e_player.var_8701e993 = undefined;
+        e_player.var_681d4714 = e_player.str_current_vo;
+        e_player.str_current_vo = undefined;
         e_player.var_9e2e6113 = 0;
         e_player.var_a10aaced = 0;
         e_player.var_ec53b83b = 0;
@@ -198,10 +198,10 @@ function function_62b6f78a( str_vo, var_3a78a180 = 1 )
     e_player = get_player();
     e_player endoncallback( &function_d7a1a570, #"death" );
     e_player.var_9e2e6113++;
-    e_player.var_8701e993 = str_vo;
+    e_player.str_current_vo = str_vo;
     e_player.var_b9d55f30 = str_vo + "_done";
     e_player.var_27405e0f = soundgetplaybacktime( str_vo ) / 1000;
-    e_player playsound( e_player.var_8701e993 );
+    e_player playsound( e_player.str_current_vo );
     
     if ( var_3a78a180 )
     {
@@ -227,13 +227,13 @@ function function_56ed19d9()
     else
     {
         /#
-            iprintlnbold( "<dev string:x38>" + self.var_8701e993 );
+            iprintlnbold( "<dev string:x38>" + self.str_current_vo );
         #/
     }
     
     self notify( self.var_b9d55f30 );
     self.var_9e2e6113--;
-    self.var_8701e993 = undefined;
+    self.str_current_vo = undefined;
 }
 
 // Namespace ct_vo/ct_vo
@@ -257,13 +257,13 @@ function function_d7a1a570( _hash )
     {
         e_player.var_fac6c61 = 1;
         
-        if ( isdefined( e_player.var_8701e993 ) )
+        if ( isdefined( e_player.str_current_vo ) )
         {
-            e_player stopsound( e_player.var_8701e993 );
-            e_player.var_681d4714 = e_player.var_8701e993;
+            e_player stopsound( e_player.str_current_vo );
+            e_player.var_681d4714 = e_player.str_current_vo;
         }
         
-        e_player.var_8701e993 = undefined;
+        e_player.str_current_vo = undefined;
         e_player.var_9e2e6113 = 0;
         e_player.var_27405e0f = 0;
         e_player.var_fac6c61 = 0;
@@ -316,7 +316,7 @@ function function_3ca1b77d( var_d9da07d1 = 1 )
                 break;
             }
         }
-        else if ( !isdefined( e_player.var_8701e993 ) && ( !isdefined( e_player.var_9e2e6113 ) || e_player.var_9e2e6113 <= 0 ) )
+        else if ( !isdefined( e_player.str_current_vo ) && ( !isdefined( e_player.var_9e2e6113 ) || e_player.var_9e2e6113 <= 0 ) )
         {
             e_player.var_9e2e6113 = 0;
             waitframe( 1 );
@@ -358,7 +358,7 @@ function function_5d127774()
 // Params 4
 // Checksum 0x55120aa9, Offset: 0xcd8
 // Size: 0xf4
-function function_261ed63c( str_vo, var_520123e0 = 45, n_wait = 30, var_74e4153b )
+function vo_nag( str_vo, var_520123e0 = 45, n_wait = 30, var_74e4153b )
 {
     if ( isdefined( var_74e4153b ) )
     {
@@ -414,9 +414,9 @@ function function_869da1cf( _hash )
     {
         e_player stopsound( e_player.var_ca6e5bf1 );
         
-        if ( e_player.var_8701e993 === e_player.var_ca6e5bf1 )
+        if ( e_player.str_current_vo === e_player.var_ca6e5bf1 )
         {
-            e_player.var_8701e993 = undefined;
+            e_player.str_current_vo = undefined;
         }
         
         e_player.var_ca6e5bf1 = undefined;

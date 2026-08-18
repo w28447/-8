@@ -819,12 +819,12 @@ function function_c1844128( player )
 // Size: 0x140
 function private function_30afd2be( type, stub )
 {
-    if ( !isdefined( stub.var_50a8d231 ) )
+    if ( !isdefined( stub.times_locked ) )
     {
-        stub.var_50a8d231 = 0;
+        stub.times_locked = 0;
     }
     
-    var_b8576908 = 2000;
+    starting_cost = 2000;
     
     switch ( type )
     {
@@ -845,8 +845,8 @@ function private function_30afd2be( type, stub )
             break;
     }
     
-    stub.var_50a8d231 = int( min( stub.var_50a8d231 + 1, var_491c5d62 ) );
-    return var_b8576908 * stub.var_50a8d231;
+    stub.times_locked = int( min( stub.times_locked + 1, var_491c5d62 ) );
+    return starting_cost * stub.times_locked;
 }
 
 // Namespace zm_ai_brutus/zm_ai_brutus

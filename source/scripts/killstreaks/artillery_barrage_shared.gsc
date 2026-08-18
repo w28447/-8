@@ -250,7 +250,7 @@ function getteamcenter( team )
 // Params 0
 // Checksum 0xd6d26438, Offset: 0xeb8
 // Size: 0x134
-function function_4b1354ff()
+function planeleave()
 {
     plane = self;
     
@@ -520,8 +520,8 @@ function function_598dc586( plane, position, yaw, team, killstreak_id, fly_heigh
     owner = self;
     owner endon( #"emp_jammed", #"joined_team", #"joined_spectators", #"disconnect" );
     bundle = level.killstreaks[ #"artillery_barrage" ].script_bundle;
-    var_37bb8781 = ( 0, yaw, 0 );
-    var_c6aa53c = anglestoforward( var_37bb8781 );
+    sweep_angle = ( 0, yaw, 0 );
+    var_c6aa53c = anglestoforward( sweep_angle );
     var_dc88ed1e = ( position[ 0 ], position[ 1 ], fly_height );
     tracestartpos = ( position[ 0 ], position[ 1 ], fly_height );
     traceendpos = ( position[ 0 ], position[ 1 ], fly_height * -1 );
@@ -550,11 +550,11 @@ function function_598dc586( plane, position, yaw, team, killstreak_id, fly_heigh
         for ( var_41c99c37 = 0; var_41c99c37 < bundle.var_b32c8349 && function_1f3792ee( plane ) ; var_41c99c37++ )
         {
             startpoint = plane.origin;
-            var_47b0cb83 = vectornormalize( var_dc88ed1e - startpoint );
-            var_aab835e2 = anglestoright( var_37bb8781 );
-            rightoffset = vectorscale( var_aab835e2, bundle.var_ed4e0bcc + util::function_a1281365( bundle.var_64e90954 ) );
-            leftoffset = vectorscale( var_aab835e2, bundle.var_ed4e0bcc * -1 + util::function_a1281365( bundle.var_64e90954 ) );
-            fire_right = vectorcross( ( 0, 0, 1 ), var_47b0cb83 );
+            firedir = vectornormalize( var_dc88ed1e - startpoint );
+            sweep_right = anglestoright( sweep_angle );
+            rightoffset = vectorscale( sweep_right, bundle.var_ed4e0bcc + util::function_a1281365( bundle.var_64e90954 ) );
+            leftoffset = vectorscale( sweep_right, bundle.var_ed4e0bcc * -1 + util::function_a1281365( bundle.var_64e90954 ) );
+            fire_right = vectorcross( ( 0, 0, 1 ), firedir );
             var_71d1c0cb = plane gettagorigin( "tag_gunner_flash2" );
             var_8cdd6f66 = plane gettagorigin( "tag_gunner_flash1" );
             playfxontag( bundle.var_cf763c03, plane, "tag_gunner_flash2" );
@@ -887,12 +887,12 @@ function function_6cd200d2()
         
         planedir = anglestoforward( plane.angles );
         plane setplanegoalpos( plane.origin + ( goalx, goaly, randomfloatrange( 600, 700 ) * -1 ) + vectorscale( planedir, 3500 ) );
-        var_8518e93e = randomfloatrange( 3, 4 );
+        explode_delay = randomfloatrange( 3, 4 );
         plane setplanebarrelroll( randomfloatrange( 0.0833333, 0.111111 ), randomfloatrange( 4, 5 ) );
         plane_speed = plane getspeedmph();
         wait 0.7;
         plane setspeed( plane_speed * 1.5, 20 );
-        wait var_8518e93e - 0.7;
+        wait explode_delay - 0.7;
         plane function_f6f579e3();
         wait 0.1;
         plane ghost();
@@ -900,7 +900,7 @@ function function_6cd200d2()
     }
     else
     {
-        plane function_4b1354ff();
+        plane planeleave();
     }
     
     plane delete();

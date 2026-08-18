@@ -92,7 +92,7 @@
         },
         {
             "name": "#host_address",
-            "scrName": "#hash_29a52471",
+            "scrName": "#host_address",
             "type": "STRING",
             "len": 48
         },
@@ -108,7 +108,7 @@
         },
         {
             "name": "#largest_party",
-            "scrName": "#hash_e2f2ae12",
+            "scrName": "#largest_party",
             "type": "INT32"
         },
         {
@@ -118,7 +118,7 @@
         },
         {
             "name": "#min_latency",
-            "scrName": "#hash_ba7eb0ec",
+            "scrName": "#min_latency",
             "type": "INT32"
         },
         {
@@ -159,7 +159,7 @@
         },
         {
             "name": "#host_xuid",
-            "scrName": "#hash_484eaa74",
+            "scrName": "#host_xuid",
             "type": "UINT64",
             "s111u20": true
         },

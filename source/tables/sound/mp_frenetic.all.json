@@ -390,13 +390,13 @@
         {
             "value": 117,
             "next": 199,
-            "name": "#hash_40a808198ebe44e3",
+            "name": "#amb_door_wind",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_40a808198ebe44e3",
+                    "name": "#amb_door_wind",
                     "assetId": "#amb/environment/wind/blustery/wind_blustery_mid.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
                     "assetIdRelease": "#mp_frenetic.all",
@@ -4659,13 +4659,13 @@
         {
             "value": 153,
             "next": 65535,
-            "name": "#hash_8abeeabd2aa2c9c",
+            "name": "#amb_wind_exterior_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_8abeeabd2aa2c9c",
+                    "name": "#amb_wind_exterior_2d",
                     "assetId": "#amb/environment/wind/canyon/outdoor_canyon_wind.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
                     "assetIdRelease": "#mp_frenetic.all",
@@ -4708,13 +4708,13 @@
         {
             "value": 47,
             "next": 65535,
-            "name": "#hash_5f0cf846c1e5f92e",
+            "name": "#amb_wind_interior_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5f0cf846c1e5f92e",
+                    "name": "#amb_wind_interior_2d",
                     "assetId": "#amb/environment/wind/clear/amb_wind_clear_int.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
                     "assetIdRelease": "#mp_frenetic.all",
@@ -15871,13 +15871,13 @@
         {
             "value": 124,
             "next": 160,
-            "name": "#hash_2ec3de3874855810",
+            "name": "#exp_redbarrel",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
@@ -15918,7 +15918,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
@@ -15959,7 +15959,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
@@ -16000,7 +16000,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
@@ -16041,7 +16041,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
@@ -16082,7 +16082,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
@@ -16123,7 +16123,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_frenetic.all",
@@ -23190,7 +23190,7 @@
             "duck": "default",
             "id": "#mp_frentic_med _room",
             "reverb": "#room_livingroom",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -23210,7 +23210,7 @@
             "duck": "default",
             "id": "#mp_frentic_outdoor",
             "reverb": "#outdoor_clean",
-            "loop": "#hash_8abeeabd2aa2c9c",
+            "loop": "#amb_wind_exterior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
@@ -23230,7 +23230,7 @@
             "duck": "default",
             "id": "#mp_frentic_sml _room",
             "reverb": "#room_bedroom",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -23250,7 +23250,7 @@
             "duck": "default",
             "id": "#mp_frentic_sml _room_partial",
             "reverb": "#room_bedroom",
-            "loop": "#hash_8abeeabd2aa2c9c",
+            "loop": "#amb_wind_exterior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -23270,7 +23270,7 @@
             "duck": "default",
             "id": "#mp_frentic_stairs",
             "reverb": "#narrow_stairwell",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",

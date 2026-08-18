@@ -5139,7 +5139,7 @@ function flip_owner_team_on_all_gameobjects()
 // Params 0
 // Checksum 0xa53aecc6, Offset: 0xc730
 // Size: 0x24
-function function_2efe0342()
+function disable_gameobject()
 {
     self allow_use( #"none" );
 }
@@ -5152,7 +5152,7 @@ function function_407c83be()
 {
     if ( isdefined( level.a_gameobjects ) )
     {
-        array::thread_all( level.a_gameobjects, &function_2efe0342 );
+        array::thread_all( level.a_gameobjects, &disable_gameobject );
     }
 }
 

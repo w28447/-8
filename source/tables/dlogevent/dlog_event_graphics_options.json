@@ -188,7 +188,7 @@
         },
         {
             "name": "#window_maximized",
-            "scrName": "#hash_b7da079a",
+            "scrName": "#window_maximized",
             "type": "BOOL"
         },
         {
@@ -299,7 +299,7 @@
         },
         {
             "name": "#window_width",
-            "scrName": "#hash_8803eb20",
+            "scrName": "#window_width",
             "type": "INT32"
         },
         {
@@ -374,7 +374,7 @@
         },
         {
             "name": "#shadow_filtering",
-            "scrName": "#hash_79182dd0",
+            "scrName": "#shadow_filtering",
             "type": "BOOL"
         },
         {
@@ -414,7 +414,7 @@
         },
         {
             "name": "#voice_scale",
-            "scrName": "#hash_e530d219",
+            "scrName": "#voice_scale",
             "type": "FLOAT"
         },
         {
@@ -424,7 +424,7 @@
         },
         {
             "name": "#enable_voice",
-            "scrName": "#hash_b11fda47",
+            "scrName": "#enable_voice",
             "type": "BOOL"
         },
         {
@@ -444,7 +444,7 @@
         },
         {
             "name": "#texture_filter",
-            "scrName": "#hash_5ee93a33",
+            "scrName": "#texture_filter",
             "type": "INT32"
         },
         {
@@ -459,7 +459,7 @@
         },
         {
             "name": "#display_gamma",
-            "scrName": "#hash_3c4be6c8",
+            "scrName": "#display_gamma",
             "type": "INT32"
         },
         {
@@ -474,7 +474,7 @@
         },
         {
             "name": "#mute_voice",
-            "scrName": "#hash_f470226a",
+            "scrName": "#mute_voice",
             "type": "BOOL"
         },
         {
@@ -484,7 +484,7 @@
         },
         {
             "name": "#max_fps",
-            "scrName": "#hash_4a42746f",
+            "scrName": "#max_fps",
             "type": "INT32"
         },
         {
@@ -519,7 +519,7 @@
         },
         {
             "name": "#window_height",
-            "scrName": "#hash_6e8d914e",
+            "scrName": "#window_height",
             "type": "INT32"
         },
         {

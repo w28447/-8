@@ -105,7 +105,7 @@ function private function_c41e67c()
 {
     if ( math::cointoss() )
     {
-        self.var_15aa1ae0 = 0;
+        self.phase_cooldown = 0;
     }
     
     if ( getdvarint( #"survival_prototype", 0 ) )
@@ -330,7 +330,7 @@ function function_7d5cf0e4( entity )
     // Size: 0xac, Type: dev
     function function_c698f66b()
     {
-        if ( self.var_15aa1ae0 === 0 )
+        if ( self.phase_cooldown === 0 )
         {
             if ( getdvarint( #"recorder_enablerec", 0 ) )
             {

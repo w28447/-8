@@ -137,7 +137,7 @@ localizeentry,#hash_266714f64be6adb
 localizeentry,#menu/fileshare_publish_new
 localizeentry,#hash_26b75caef1b5f04
 localizeentry,#hash_26f23242379401a
-localizeentry,#hash_26fd6d4e26a0958
+localizeentry,#em/round_shield
 localizeentry,#menu/customgames_caps
 localizeentry,#hash_276e701c2aa738b
 localizeentry,#hash_27a5b9ffe84b2b9
@@ -1126,7 +1126,7 @@ localizeentry,#menu/emblem_color_1_opacity
 localizeentry,#ui/mod_aat
 localizeentry,#menu/50_points
 localizeentry,#hash_10dd255dd76ef9dd
-localizeentry,#hash_10eab8e5a4fb2d3a
+localizeentry,#em/bike_ramp
 localizeentry,#weapon/special_ballisticknife_t8_desc
 localizeentry,#hash_10ee4ffbd072efa4
 localizeentry,#hash_10f60e0a10130009
@@ -1992,7 +1992,7 @@ localizeentry,#em/goop
 localizeentry,#hash_1d81cea39aab875a
 localizeentry,#menu/user_generated_content_desc
 localizeentry,#hash_1d8cdb1353d27529
-localizeentry,#hash_1d8d3de635b6bd94
+localizeentry,#em/open_face
 localizeentry,#zmui/round_reached
 localizeentry,#achievements/zm_trophy_straw_purchase_desc
 localizeentry,#hash_1dab84e40aca5331
@@ -2115,7 +2115,7 @@ localizeentry,#menu/requires_weapon_prestige
 localizeentry,#menu/half
 localizeentry,#mpui/weapon_tactical_caps
 localizeentry,#em/t7_decal_icon_bull
-localizeentry,#hash_1fb7b1c442a1fb03
+localizeentry,#em/bg_global
 localizeentry,#hash_1fb84e49b023c7e4
 localizeentry,#hash_1fbcdfdf3fb70bdc
 localizeentry,#quotes/death_is_nothing_die_daily
@@ -2131,7 +2131,7 @@ localizeentry,#hash_1fddfb4d13ade0ed
 localizeentry,#menu/lb_zmglobal_explosive_kills
 localizeentry,#hash_1fe75c4fb80159f1
 localizeentry,#zmui/bgb_always_done_swiftly
-localizeentry,#hash_1ff61396ab55da46
+localizeentry,#em/notched_buckler
 localizeentry,#hash_1ffcd16aa270151c
 localizeentry,#hash_2001f78dd6b35e3b
 localizeentry,#hash_2011466a69356809
@@ -2662,7 +2662,7 @@ localizeentry,#menu/preround_timer_hint
 localizeentry,#hash_28304a9b00e1403e
 localizeentry,#codcaster/ds_callout_cards
 localizeentry,#hash_283a8dd17e52fc64
-localizeentry,#hash_283ae55ae977c85e
+localizeentry,#em/edged_buckler
 localizeentry,#hash_283ce3876cb33942
 localizeentry,#hash_28412918e22db844
 localizeentry,#hash_2846565492899dc4
@@ -2872,7 +2872,7 @@ localizeentry,#hash_2b81a283b7ca7c64
 localizeentry,#hash_2b81a383b7ca7e17
 localizeentry,#hash_2b81a583b7ca817d
 localizeentry,#hash_2b81b691a5faa21d
-localizeentry,#hash_2b81bd86538e0d99
+localizeentry,#em/pointed_shield
 localizeentry,#hash_2b911520ce5680b8
 localizeentry,#hash_2b91a8436f543438
 localizeentry,#menu/save_emblem
@@ -3744,7 +3744,7 @@ localizeentry,#hash_39494fa6cbe68a85
 localizeentry,#ui/mod_impact
 localizeentry,#warzone/compass_west
 localizeentry,#warzone/start_warzone
-localizeentry,#hash_39502cd89ef1532b
+localizeentry,#em/third_eye
 localizeentry,#menu/specialist_outfit
 localizeentry,#hash_3963c3e923f20726
 localizeentry,#hash_3968db13df95101a
@@ -4225,7 +4225,7 @@ localizeentry,#achievements/zm_white_starting_desc
 localizeentry,#hash_41ac34c8608be21c
 localizeentry,#demo/link_to_object
 localizeentry,#menu/talisman_extra_frag
-localizeentry,#hash_41b53e69f9755a98
+localizeentry,#em/half_tube
 localizeentry,#hash_41b925a23fa95ce7
 localizeentry,#hash_41ba0ae610631004
 localizeentry,#em/marked
@@ -4460,7 +4460,7 @@ localizeentry,d#mpui/suppressed
 localizeentry,#menu/treyarch_mix
 localizeentry,#hash_44eec710d8b7aa81
 localizeentry,#store/developedby
-localizeentry,#hash_44fa485473071df7
+localizeentry,#em/circular_saw
 localizeentry,#menu/prestige_fresh_start_desc
 localizeentry,#hash_44fd368063324203
 localizeentry,#killstreak/uav
@@ -4857,7 +4857,7 @@ localizeentry,#hash_4b87969fdae93020
 localizeentry,#hash_4b8b9f328bc7d3ae
 localizeentry,#hash_4b8ce1efc822b9d9
 localizeentry,#hash_4b8dd4c97c2df5b1
-localizeentry,#hash_4b8facaab8e0976c
+localizeentry,#em/3_point_shield
 localizeentry,#hash_4b902213e1369b7a
 localizeentry,#hash_4b924c7670fa8062
 localizeentry,#hash_4b942aef9dbd11f0
@@ -4950,7 +4950,7 @@ localizeentry,#em/t7_loot_decal_icon_bear
 localizeentry,#hash_4d2dd155d209c085
 localizeentry,#hash_4d327caac902ca44
 localizeentry,#menu/editing_game_options
-localizeentry,#hash_4d347ff380769637
+localizeentry,#em/pie_slice
 localizeentry,#hash_4d34d861a52cb5ae
 localizeentry,#weapon/uber_skullsplitter
 localizeentry,#menu/preround_timer
@@ -4984,7 +4984,7 @@ localizeentry,#hash_4dbf612d970f35d2
 localizeentry,#weapon/crossbow
 localizeentry,#hash_4dc521080b9c9ec5
 localizeentry,#challenge/killjoy_master_desc
-localizeentry,#hash_4dcc551bd0251ad0
+localizeentry,#em/fancy_cookie
 localizeentry,#hash_4dce0beacf6a662d
 localizeentry,#menu/allow_shoutcasting_hint
 localizeentry,#challenge/wildcard_ekia_perk3_gluttony_desc
@@ -5029,7 +5029,7 @@ localizeentry,#hash_4e72ead175fc0d6a
 localizeentry,#options/pc_steadyaim_toggle_desc
 localizeentry,#hash_4e875ff3c976ba98
 localizeentry,#em/i01
-localizeentry,#hash_4e94e232efc2acd2
+localizeentry,#em/rock_shadow
 localizeentry,#hash_4e988984e0ce3479
 localizeentry,#hash_4e988b05b473e6b1
 localizeentry,#clan/style_desc
@@ -5279,7 +5279,7 @@ localizeentry,#hash_52441f13b421790f
 localizeentry,#hash_52442113b4217c75
 localizeentry,#hash_52482c16cd79b0e8
 localizeentry,#options/pc_lookright
-localizeentry,#hash_5254efebf96f3f30
+localizeentry,#em/ice_star
 localizeentry,#hash_5255b2dabb2de56c
 localizeentry,#hash_525852e8428d9a8a
 localizeentry,#arena/pound
@@ -5912,7 +5912,7 @@ localizeentry,#weapon/sniper_locus_t8
 localizeentry,#hash_5c2dbb4ddeaae038
 localizeentry,#platform/options_network_about_nat_strict
 localizeentry,#menu/solo
-localizeentry,#hash_5c376bae65a55609
+localizeentry,#mpui/ball_away
 localizeentry,#hash_5c393700c92d3fb2
 localizeentry,#hash_5c49d150f67ee7fe
 localizeentry,#menu/social_caps
@@ -6706,7 +6706,7 @@ localizeentry,#hash_68ccb8b7ef76929b
 localizeentry,#hash_68cea3a4e313fe64
 localizeentry,#hash_68daf46b0ebbaf48
 localizeentry,#weapon/lmg_standard_t8
-localizeentry,#hash_68e53cd525f5a94b
+localizeentry,#em/heater_shield
 localizeentry,#hash_68e565420dff998b
 localizeentry,#hash_68e7615c0ca01bdc
 localizeentry,#menu/contract_richtofen
@@ -7301,7 +7301,7 @@ localizeentry,#hash_7130895060cfded6
 localizeentry,#em/m01
 localizeentry,#achievements/mp_trophy_vanquisher
 localizeentry,#hash_71415b1e154c24d8
-localizeentry,#hash_71425204e8c5f260
+localizeentry,#em/open_book
 localizeentry,#hash_71426f8015051912
 localizeentry,#hash_71436d88d3723f92
 localizeentry,#hash_714b40835b8effa6
@@ -7588,7 +7588,7 @@ localizeentry,#em/blot
 localizeentry,#em/blob
 localizeentry,#menu/gunsmith_accuracy_caps
 localizeentry,#hash_74f7a6402699c007
-localizeentry,#hash_74fdb8ae94842eb2
+localizeentry,#em/black_widow
 localizeentry,#menu/bag_carrier_move_speed
 localizeentry,#hash_750d522b27fc4b3a
 localizeentry,#hash_7515e0d33ae52ef2
@@ -7778,7 +7778,7 @@ localizeentry,#codcaster/ls_wildcards
 localizeentry,#options/pc_model_quality
 localizeentry,#menu/battery_assassin_outfit_bundle_desc
 localizeentry,#menu/settings
-localizeentry,d#hash_77dce7635423ba68
+localizeentry,d#menu/camo_loot_cyberpunk
 localizeentry,#hash_77ddf5b06db796ac
 localizeentry,#hash_77de2527076d9c58
 localizeentry,#hash_77e06cd7e7856f99

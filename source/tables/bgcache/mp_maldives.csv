@@ -249,7 +249,7 @@ soundalias,#hash_f8d2d12b31cfa1d
 soundalias,#hash_101aa41260505836
 soundalias,#hash_106f6e2bb8b07783
 soundalias,#hash_1147275cf69f884d
-soundalias,#hash_119cbb56880344b4
+soundalias,#amb_pipe_flow_2
 soundalias,#hash_119cbc5688034667
 soundalias,#hash_119cbe56880349cd
 soundalias,#exp_veh_debris
@@ -307,7 +307,7 @@ soundalias,#evt_laser_start
 soundalias,#hash_2e25f1d6ca55e5d9
 soundalias,#exp_mp_propane_tank_explo
 soundalias,#evt_elevator_start
-soundalias,#hash_2ec3de3874855810
+soundalias,#exp_redbarrel
 soundalias,#dst_server_power
 soundalias,#dst_foodstand
 soundalias,#hash_2fe3620a8d156d8e

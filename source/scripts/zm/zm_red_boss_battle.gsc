@@ -385,15 +385,15 @@ function function_3de660a0()
 {
     level.var_b2b15659 = 1;
     level.powerup_vo_available = &return_false;
-    level zm_audio::function_6191af93( #"general", #"gib", "", "" );
-    level zm_audio::function_6191af93( #"elixir", #"drink", "", "" );
-    level zm_audio::function_6191af93( #"blight_father", #"weak_points", "", "" );
-    level zm_audio::function_6191af93( #"catalyst_transform", #"react", "", "" );
-    level zm_audio::function_6191af93( #"catalyst_water", #"react", "", "" );
-    level zm_audio::function_6191af93( #"catalyst_electric", #"react", "", "" );
-    level zm_audio::function_6191af93( #"catalyst_plasma", #"react", "", "" );
-    level zm_audio::function_6191af93( #"catalyst_corrosive", #"react", "", "" );
-    level zm_audio::function_6191af93( #"catalyst_corrosive", #"react", "", "" );
+    level zm_audio::vox_override( #"general", #"gib", "", "" );
+    level zm_audio::vox_override( #"elixir", #"drink", "", "" );
+    level zm_audio::vox_override( #"blight_father", #"weak_points", "", "" );
+    level zm_audio::vox_override( #"catalyst_transform", #"react", "", "" );
+    level zm_audio::vox_override( #"catalyst_water", #"react", "", "" );
+    level zm_audio::vox_override( #"catalyst_electric", #"react", "", "" );
+    level zm_audio::vox_override( #"catalyst_plasma", #"react", "", "" );
+    level zm_audio::vox_override( #"catalyst_corrosive", #"react", "", "" );
+    level zm_audio::vox_override( #"catalyst_corrosive", #"react", "", "" );
 }
 
 // Namespace red_boss_battle/zm_red_boss_battle

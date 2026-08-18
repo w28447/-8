@@ -2735,13 +2735,13 @@
         {
             "value": 41,
             "next": 65535,
-            "name": "#hash_4c413b1a7e20ad25",
+            "name": "#amb_pipe_flow",
             "sequence": 0,
             "cullDistance": 900,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4c413b1a7e20ad25",
+                    "name": "#amb_pipe_flow",
                     "assetId": "#amb/industrial/pipe/flow/flow_06.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -3577,13 +3577,13 @@
         {
             "value": 95,
             "next": 65535,
-            "name": "#hash_2afce1aecb8e50b6",
+            "name": "#amb_space_heater",
             "sequence": 0,
             "cullDistance": 900,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2afce1aecb8e50b6",
+                    "name": "#amb_space_heater",
                     "assetId": "#hash_2649f1325d459b2d",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -4056,13 +4056,13 @@
         {
             "value": 163,
             "next": 65535,
-            "name": "#hash_6e6f3397f66261fd",
+            "name": "#amb_weather_vane_1",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6e6f3397f66261fd",
+                    "name": "#amb_weather_vane_1",
                     "assetId": "#hash_450650f6252e09b3",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -4105,13 +4105,13 @@
         {
             "value": 122,
             "next": 65535,
-            "name": "#hash_6e6f3097f6625ce4",
+            "name": "#amb_weather_vane_2",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6e6f3097f6625ce4",
+                    "name": "#amb_weather_vane_2",
                     "assetId": "#amb/industrial/weather_vane/vane_01.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -4154,13 +4154,13 @@
         {
             "value": 26,
             "next": 65535,
-            "name": "#hash_7547750220ab72b6",
+            "name": "#amb_wind_blend",
             "sequence": 0,
             "cullDistance": 300,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7547750220ab72b6",
+                    "name": "#amb_wind_blend",
                     "assetId": "#hash_128009c9a83042d8",
                     "assetFileNameSustain": "#mp_mountain2.all",
                     "assetIdRelease": "#mp_mountain2.all",
@@ -17915,13 +17915,13 @@
         {
             "value": 143,
             "next": 97,
-            "name": "#hash_2ec3de3874855810",
+            "name": "#exp_redbarrel",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -17962,7 +17962,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -18003,7 +18003,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -18044,7 +18044,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -18085,7 +18085,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -18126,7 +18126,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",
@@ -18167,7 +18167,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_mountain2.all",

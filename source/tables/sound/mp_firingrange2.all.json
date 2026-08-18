@@ -3173,13 +3173,13 @@
         {
             "value": 66,
             "next": 68,
-            "name": "#hash_8abeeabd2aa2c9c",
+            "name": "#amb_wind_exterior_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_8abeeabd2aa2c9c",
+                    "name": "#amb_wind_exterior_2d",
                     "assetId": "#amb/environment/wind/clear/amb_wind_clear_ext.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_firingrange2.all",
                     "assetIdRelease": "#mp_firingrange2.all",
@@ -3771,13 +3771,13 @@
         {
             "value": 115,
             "next": 65535,
-            "name": "#hash_5f0cf846c1e5f92e",
+            "name": "#amb_wind_interior_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5f0cf846c1e5f92e",
+                    "name": "#amb_wind_interior_2d",
                     "assetId": "#amb/environment/wind/clear/amb_wind_clear_int.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_firingrange2.all",
                     "assetIdRelease": "#mp_firingrange2.all",
@@ -4377,13 +4377,13 @@
         {
             "value": 82,
             "next": 48,
-            "name": "#hash_7e183178f46298c3",
+            "name": "#amb_wind_tree",
             "sequence": 0,
             "cullDistance": 1100,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7e183178f46298c3",
+                    "name": "#amb_wind_tree",
                     "assetId": "#hash_1aa2e4ba7401350a",
                     "assetFileNameSustain": "#mp_firingrange2.all",
                     "assetIdRelease": "#mp_firingrange2.all",
@@ -4422,7 +4422,7 @@
                     "unk178": "#hash_200000804"
                 },
                 {
-                    "name": "#hash_7e183178f46298c3",
+                    "name": "#amb_wind_tree",
                     "assetId": "#hash_7116c9a6ea851da7",
                     "assetFileNameSustain": "#mp_firingrange2.all",
                     "assetIdRelease": "#mp_firingrange2.all",
@@ -4461,7 +4461,7 @@
                     "unk178": "#hash_200000804"
                 },
                 {
-                    "name": "#hash_7e183178f46298c3",
+                    "name": "#amb_wind_tree",
                     "assetId": "#hash_57952af44cee4e00",
                     "assetFileNameSustain": "#mp_firingrange2.all",
                     "assetIdRelease": "#mp_firingrange2.all",
@@ -19410,13 +19410,13 @@
         {
             "value": 1,
             "next": 186,
-            "name": "#hash_2ec3de3874855810",
+            "name": "#exp_redbarrel",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_firingrange2.all",
@@ -19457,7 +19457,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_firingrange2.all",
@@ -19498,7 +19498,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_firingrange2.all",
@@ -19539,7 +19539,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_firingrange2.all",
@@ -19580,7 +19580,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_firingrange2.all",
@@ -19621,7 +19621,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_firingrange2.all",
@@ -19662,7 +19662,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_firingrange2.all",
@@ -22790,7 +22790,7 @@
             "duck": "default",
             "id": "#mp_firingrange2_container",
             "reverb": "#room_hallway",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -22812,7 +22812,7 @@
             "duck": "default",
             "id": "#mp_firingrange2_garage",
             "reverb": "#room_hallway",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -22834,7 +22834,7 @@
             "duck": "default",
             "id": "#mp_firingrange2_med_room",
             "reverb": "#room_livingroom",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -22856,7 +22856,7 @@
             "duck": "default",
             "id": "#mp_firingrange2_outdoor",
             "reverb": "#outdoor_clean",
-            "loop": "#hash_8abeeabd2aa2c9c",
+            "loop": "#amb_wind_exterior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
@@ -22878,7 +22878,7 @@
             "duck": "default",
             "id": "#mp_firingrange2_partial",
             "reverb": "#room_bedroom",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
@@ -22900,7 +22900,7 @@
             "duck": "default",
             "id": "#mp_firingrange2_room_test",
             "reverb": "#room_hallway",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -22922,7 +22922,7 @@
             "duck": "default",
             "id": "#mp_firingrange2_small_room",
             "reverb": "#room_bedroom",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -22944,7 +22944,7 @@
             "duck": "default",
             "id": "#mp_firingrange2_trailer",
             "reverb": "#room_livingroom",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",

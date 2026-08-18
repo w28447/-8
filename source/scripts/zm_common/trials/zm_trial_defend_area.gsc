@@ -204,7 +204,7 @@ function private function_1802ad1e( challenge, var_2d5ebf67, var_530e040f, timeo
     level endon( #"trial_round_end", #"host_migration_begin" );
     self.var_e5cde66 = { #start_time:level.time, #timeout:timeout, #challenge:challenge, #var_2d5ebf67:var_2d5ebf67, #var_530e040f:var_530e040f };
     self start_timer( timeout, var_2d5ebf67 );
-    var_2bf2b5dd = level.time + timeout * 1000;
+    timeout_end = level.time + timeout * 1000;
     
     while ( true )
     {
@@ -217,9 +217,9 @@ function private function_1802ad1e( challenge, var_2d5ebf67, var_530e040f, timeo
             self.var_ccee13fc = 1;
             self stop_timer();
             self zm_utility::function_ba39d198( challenge.var_df62490a, 0 );
-            var_2bf2b5dd = level.time + 0;
+            timeout_end = level.time + 0;
         }
-        else if ( level.time > var_2bf2b5dd )
+        else if ( level.time > timeout_end )
         {
             self stop_timer();
         }

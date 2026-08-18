@@ -56,7 +56,7 @@ function private on_begin( n_kill_count )
 // Size: 0x306
 function private on_end( round_reset )
 {
-    var_7df0eb27 = level.var_f7e95a13;
+    kills_needed = level.var_f7e95a13;
     level.var_f7e95a13 = undefined;
     
     foreach ( player in getplayers() )
@@ -73,7 +73,7 @@ function private on_end( round_reset )
         
         foreach ( player in getplayers() )
         {
-            if ( isdefined( player.var_76bb4a3e ) && player.var_76bb4a3e < var_7df0eb27 )
+            if ( isdefined( player.var_76bb4a3e ) && player.var_76bb4a3e < kills_needed )
             {
                 if ( !isdefined( var_acba5af0 ) )
                 {

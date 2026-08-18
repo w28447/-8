@@ -109,7 +109,7 @@ function on_player_connect()
 // Size: 0x1ac
 function initchallengedata()
 {
-    self.var_9cd2c51d = {};
+    self.challenge_info = {};
     self.pers[ #"stickexplosivekill" ] = 0;
     self.pers[ #"carepackagescalled" ] = 0;
     self.pers[ #"challenge_destroyed_air" ] = 0;
@@ -210,15 +210,15 @@ function event_handler[grenade_fire] function_4776caf4( eventstruct )
 {
     newweapon = eventstruct.weapon;
     
-    if ( isdefined( self.var_9cd2c51d ) )
+    if ( isdefined( self.challenge_info ) )
     {
         if ( isdefined( level.var_ca4ce464 ) && level.var_ca4ce464[ newweapon ] === 1 )
         {
-            self.var_9cd2c51d.var_d298c9a8 = undefined;
+            self.challenge_info.var_d298c9a8 = undefined;
             
             if ( newweapon.issignatureweapon )
             {
-                self.var_9cd2c51d.var_d298c9a8 = 0;
+                self.challenge_info.var_d298c9a8 = 0;
             }
         }
     }
@@ -252,7 +252,7 @@ function event_handler[grenade_fire] function_4776caf4( eventstruct )
 function player_fully_healed()
 {
     var_c3ade07c = self.var_ea1458aa;
-    info = self.var_9cd2c51d;
+    info = self.challenge_info;
     
     if ( isdefined( var_c3ade07c ) && isdefined( info ) )
     {
@@ -486,18 +486,18 @@ function function_a79ea08b( einflictor, victim, idamage, weapon )
         scoreevents = globallogic_score::function_3cbc4c6c( weapon.var_2e4a8800 );
         var_8a4cfbd = weapon.var_76ce72e8 && isdefined( scoreevents ) && scoreevents.var_fcd2ff3a === 1;
         
-        if ( isdefined( self.var_9cd2c51d ) )
+        if ( isdefined( self.challenge_info ) )
         {
             if ( weapon.issignatureweapon && isdefined( level.var_ca4ce464 ) && level.var_ca4ce464[ weapon ] === 1 )
             {
-                if ( !isdefined( self.var_9cd2c51d.var_d298c9a8 ) )
+                if ( !isdefined( self.challenge_info.var_d298c9a8 ) )
                 {
-                    self.var_9cd2c51d.var_d298c9a8 = 0;
+                    self.challenge_info.var_d298c9a8 = 0;
                 }
                 
-                self.var_9cd2c51d.var_d298c9a8++;
+                self.challenge_info.var_d298c9a8++;
                 
-                if ( self.var_9cd2c51d.var_d298c9a8 % 4 == 0 )
+                if ( self.challenge_info.var_d298c9a8 % 4 == 0 )
                 {
                     var_828dac8f = 1;
                 }
@@ -508,9 +508,9 @@ function function_a79ea08b( einflictor, victim, idamage, weapon )
         {
             if ( weapon.issignatureweapon && isdefined( self.var_ea1458aa.var_96d50420 ) )
             {
-                if ( !isdefined( self.var_9cd2c51d.var_96d50420 ) )
+                if ( !isdefined( self.challenge_info.var_96d50420 ) )
                 {
-                    self.var_9cd2c51d.var_96d50420 = 0;
+                    self.challenge_info.var_96d50420 = 0;
                 }
                 
                 self.var_ea1458aa.var_96d50420++;
@@ -522,9 +522,9 @@ function function_a79ea08b( einflictor, victim, idamage, weapon )
             }
             else if ( var_8a4cfbd && isdefined( self.var_ea1458aa.var_59ac2f5 ) )
             {
-                if ( !isdefined( self.var_9cd2c51d.var_59ac2f5 ) )
+                if ( !isdefined( self.challenge_info.var_59ac2f5 ) )
                 {
-                    self.var_9cd2c51d.var_59ac2f5 = 0;
+                    self.challenge_info.var_59ac2f5 = 0;
                 }
                 
                 self.var_ea1458aa.var_59ac2f5++;
@@ -822,14 +822,14 @@ function function_a79ea08b( einflictor, victim, idamage, weapon )
                         {
                             self stats::function_dad108fa( #"ekia_specialist_equipment_equipmentcharge", 1 );
                             
-                            if ( !isdefined( self.var_9cd2c51d.var_b385927 ) )
+                            if ( !isdefined( self.challenge_info.var_b385927 ) )
                             {
-                                self.var_9cd2c51d.var_b385927 = 0;
+                                self.challenge_info.var_b385927 = 0;
                             }
                             
-                            self.var_9cd2c51d.var_b385927++;
+                            self.challenge_info.var_b385927++;
                             
-                            if ( self.var_9cd2c51d.var_b385927 == 7 )
+                            if ( self.challenge_info.var_b385927 == 7 )
                             {
                                 self stats::function_dad108fa( #"hash_7db6a4180312b94c", 1 );
                             }
@@ -943,14 +943,14 @@ function function_a79ea08b( einflictor, victim, idamage, weapon )
                 {
                     if ( isdefined( var_3cd641b ) && isdefined( var_5afc3871[ #"talent_dexterity" ] ) && self function_db654c9( var_3cd641b, #"bonuscard_overkill" ) )
                     {
-                        if ( !isdefined( self.var_9cd2c51d.var_1a72ebf5 ) )
+                        if ( !isdefined( self.challenge_info.var_1a72ebf5 ) )
                         {
-                            self.var_9cd2c51d.var_1a72ebf5 = 0;
+                            self.challenge_info.var_1a72ebf5 = 0;
                         }
                         
-                        self.var_9cd2c51d.var_1a72ebf5++;
+                        self.challenge_info.var_1a72ebf5++;
                         
-                        if ( self.var_9cd2c51d.var_1a72ebf5 == 5 )
+                        if ( self.challenge_info.var_1a72ebf5 == 5 )
                         {
                             self stats::function_dad108fa( #"hash_6c13ae81deff608b", 1 );
                         }
@@ -3124,14 +3124,14 @@ function function_2f462ffd( victim, weapon, inflictor, objective )
             {
                 if ( var_8a4cfbd )
                 {
-                    if ( !isdefined( self.var_9cd2c51d.var_17ff6e52 ) )
+                    if ( !isdefined( self.challenge_info.var_17ff6e52 ) )
                     {
-                        self.var_9cd2c51d.var_17ff6e52 = 0;
+                        self.challenge_info.var_17ff6e52 = 0;
                     }
                     
-                    self.var_9cd2c51d.var_17ff6e52++;
+                    self.challenge_info.var_17ff6e52++;
                     
-                    if ( self.var_9cd2c51d.var_17ff6e52 == 5 )
+                    if ( self.challenge_info.var_17ff6e52 == 5 )
                     {
                         self stats::function_dad108fa( #"hash_386525eb8f4537c2", 1 );
                     }

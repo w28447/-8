@@ -290,7 +290,7 @@
                 "hash_18d4b2ad": 0.25,
                 "hash_3efb751d": "duration:750",
                 "type": "switch_sides",
-                "mp/overtime_caps:hash_37b8ad9d": "localized17#mp/overtime_caps",
+                "mp/overtime_caps:text_halftime": "localized17#mp/overtime_caps",
                 "slowdown": 0,
                 "announceendgametime": "duration:0",
                 "hash_3e7ac81d": "duration:0",

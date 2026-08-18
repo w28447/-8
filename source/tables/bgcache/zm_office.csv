@@ -2829,7 +2829,7 @@ string,#mpui/dualoptic_desc
 string,#mpui/camo_huntsman
 string,#hash_246c7d9118b22299
 string,#hash_24a3e0f402bfd000
-string,#hash_24c9561478db5594
+string,#menu/camo_loot_masks
 string,#menu/camo_loot_shimmer
 string,#hash_25811ef8abc80b1f
 string,#hash_25854f4ac1fdadf5
@@ -2968,7 +2968,7 @@ string,#hash_4a081ed23f9db2d8
 string,#mpui/camo_heatstroke
 string,#hash_4a380545b9102af9
 string,#hash_4a584bc8c443f246
-string,#hash_4a6f079813e273c3
+string,#menu/camo_loot_dogfight
 string,#hash_4b105b524a93b53d
 string,#zmweapon/none
 string,#hash_4bf673fe684c7bcd
@@ -3007,7 +3007,7 @@ string,#zmui/extrapellets_desc
 string,#hash_556fbdaebf02d158
 string,#zmui/high_caliber_desc
 string,#hash_560d002c6e40e5df
-string,#hash_561a6371fe1e6f3a
+string,#menu/camo_loot_vice
 string,#hash_572f6dd3e58ede79
 string,#mpui/steadyaim2_desc
 string,#menu/camo_loot_bacon
@@ -3066,7 +3066,7 @@ string,#mpui/pistolscope_desc
 string,#hash_652798c8c39df5b0
 string,#hash_65321d5bbf3b8f5e
 string,#hash_65d7c16bd5a94c67
-string,#hash_663114aa52ffcb21
+string,#menu/camo_loot_ww2
 string,#hash_6653854fb4eb2a2f
 string,#hash_665fcaf288735f26
 string,#hash_66d33b296eb64fbc
@@ -3131,7 +3131,7 @@ string,#hash_7693de01f82d93f0
 string,#mpui/grip2_desc
 string,#hash_7725a43a5e8755ad
 string,#hash_77bef9f2fc5c6256
-string,#hash_77dce7635423ba68
+string,#menu/camo_loot_cyberpunk
 string,#menu/camo_active_celestial
 string,#menu/camo_loot_citrus
 string,#mpui/rf_desc
@@ -3158,7 +3158,7 @@ string,#hash_7e31505384e0837a
 string,#mpui/tacknife_desc
 string,#menu/camo_loot_paradise
 string,#hash_7f8e7919cffd4568
-string,#hash_7fd496c4cf9ec713
+string,#menu/camo_loot_plasmadrive
 fx,#hash_2cafcfa899f12c0
 fx,#hash_e1d8f427f2f23c6
 fx,#hash_10d93d34c24f01bd
@@ -3276,7 +3276,7 @@ radiant_exploder,#lgtexp_xd_sh020
 radiant_exploder,#lgtexp_xd_sh030
 radiant_exploder,#lgtexp_xd_sh010
 soundalias,#hash_1778a872b013a
-soundalias,#hash_1d690b3108e389
+soundalias,#amb_air_raid
 soundalias,#hash_1e98a8d20160cc
 soundalias,#hash_1e9aa8d2016432
 soundalias,#hash_1e9ba8d20165e5
@@ -3365,8 +3365,8 @@ soundalias,#hash_2a86fa4707c787c
 soundalias,#hash_2a92e26b4c6c3b1
 soundalias,#hash_2bb4a8b02a0d697
 soundalias,#hash_2c21de758954d54
-soundalias,#hash_2c78f084efd1244
-soundalias,#hash_2d6f61e1cf07e68
+soundalias,#evt_teleporter_start
+soundalias,#zmb_box_move
 soundalias,#hash_2f609bd95efa5bc
 soundalias,#hash_30a8fc5a3e8b79e
 soundalias,#hash_314daf64fde85d2
@@ -4728,7 +4728,7 @@ soundalias,#hash_2fdc1e5dbbe6d8d9
 soundalias,#hash_2fdd21d175e45809
 soundalias,#hash_2ff24ef3f82c6c8a
 soundalias,#hash_2ff8d043c3a03206
-soundalias,#hash_3004f588bf60f0ec
+soundalias,#zmb_hellhound_loop_breath
 soundalias,#evt_elevator_freight_run_3d
 soundalias,#hash_3019d1ab2608ab62
 soundalias,#hash_3019d2ab2608ad15
@@ -4845,7 +4845,7 @@ soundalias,#hash_32a9ac7ac2292688
 soundalias,#fly_zombie_ground_climbout
 soundalias,#hash_32bb69fd6e0406b9
 soundalias,#hash_32d5cd7fd533e8c7
-soundalias,#hash_32d8f9d0e729a37d
+soundalias,#zmb_box_poof
 soundalias,#hash_32de71dbea167581
 soundalias,#hash_32def2a5219ba9ee
 soundalias,#hash_32e2c6e9b7449114
@@ -5300,7 +5300,7 @@ soundalias,#hash_4138fb9d37e9b5bf
 soundalias,#hash_4138fc9d37e9b772
 soundalias,#hash_4138fd9d37e9b925
 soundalias,#hash_41517b15c6c56e59
-soundalias,#hash_417a6cd8bbd9d517
+soundalias,#amb_lights_buzz
 soundalias,#hash_41905021ee8b1ea6
 soundalias,#wpn_minigun_nuke_riser
 soundalias,#hash_41a8dafa577e5794
@@ -6359,7 +6359,7 @@ soundalias,#hash_6052daa5af1ef4ac
 soundalias,#hash_6063ec6c1aa486ee
 soundalias,#hash_606d51fe21e749ac
 soundalias,#hash_606e8ab12fbb3d73
-soundalias,#hash_607b61ab8f244087
+soundalias,#zmb_box_poof_land
 soundalias,#hash_608db5cd1bf55a46
 soundalias,#hash_608db6cd1bf55bf9
 soundalias,#hash_608dbbcd1bf56478
@@ -6786,7 +6786,7 @@ soundalias,#hash_6ccfc362521493f1
 soundalias,#hash_6ce29c2310f16929
 soundalias,#hash_6cebe438b178d14f
 soundalias,#hash_6cf77f817cddf072
-soundalias,#hash_6cfa41a4b04b4a0a
+soundalias,#zmb_vocals_hellhound_ambient
 soundalias,#amb_lab
 soundalias,#hash_6d06493167ad59cd
 soundalias,#hash_6d0bcd77a8ec36fe
@@ -6809,7 +6809,7 @@ soundalias,#hash_6dd8e61476239864
 soundalias,#hash_6dd8e71476239a17
 soundalias,#hash_6dd8e81476239bca
 soundalias,#hash_6dd8e91476239d7d
-soundalias,#hash_6dead99af942e065
+soundalias,#zmb_vocals_quad_spawn
 soundalias,#hash_6dfa4854873e2e9e
 soundalias,#hash_6e0e9a31af815a44
 soundalias,#hash_6e0e9b31af815bf7

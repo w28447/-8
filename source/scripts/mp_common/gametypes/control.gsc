@@ -233,7 +233,7 @@ function gettimelimit()
 // Params 1
 // Checksum 0x3ed4c4ed, Offset: 0x1560
 // Size: 0x7c
-function on_end_game( var_c1e98979 )
+function on_end_game( end_type )
 {
     if ( level.scoreroundwinbased )
     {
@@ -252,21 +252,21 @@ function on_end_game( var_c1e98979 )
 // Params 1
 // Checksum 0xe2203c4f, Offset: 0x15e8
 // Size: 0xb4
-function on_end_round( var_c1e98979 )
+function on_end_round( end_type )
 {
-    if ( globallogic::function_8b4fc766( var_c1e98979 ) )
+    if ( globallogic::function_8b4fc766( end_type ) )
     {
         winning_team = round::get_winning_team();
         globallogic_score::giveteamscoreforobjective( winning_team, 1 );
     }
     
-    if ( var_c1e98979 == 6 )
+    if ( end_type == 6 )
     {
         winning_team = round::get_winning_team();
         challenges::last_man_defeat_3_enemies( winning_team );
     }
     
-    function_68387604( var_c1e98979 );
+    function_68387604( end_type );
 }
 
 // Namespace mission_koth/control
@@ -2541,13 +2541,13 @@ function function_caff2d60()
 // Params 1
 // Checksum 0x399ee459, Offset: 0x8048
 // Size: 0x18c
-function function_68387604( var_c1e98979 )
+function function_68387604( end_type )
 {
     gamemodedata = spawnstruct();
     gamemodedata.var_20de6a02 = game.lives[ #"allies" ];
     gamemodedata.var_be1de2ab = game.lives[ #"axis" ];
     
-    switch ( var_c1e98979 )
+    switch ( end_type )
     {
         case 2:
             gamemodedata.wintype = "time_limit_reached";

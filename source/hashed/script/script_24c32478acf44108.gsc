@@ -333,7 +333,7 @@ function private function_bf97ba95()
 // Params 4
 // Checksum 0x88437e65, Offset: 0xc70
 // Size: 0x220, Type: bool
-function function_865a83f8( zombie, target, predictedpos, var_95342913 )
+function function_865a83f8( zombie, target, predictedpos, knockdowndist )
 {
     if ( isdefined( zombie.knockdown ) && zombie.knockdown || isdefined( zombie.pushed ) && zombie.pushed )
     {
@@ -350,10 +350,10 @@ function function_865a83f8( zombie, target, predictedpos, var_95342913 )
     if ( !isactor( target ) )
     {
         checkpos = zombie getcentroid();
-        var_95342913 = 64;
+        knockdowndist = 64;
     }
     
-    var_caa95837 = var_95342913 * var_95342913;
+    var_caa95837 = knockdowndist * knockdowndist;
     distsq = distancesquared( predictedpos, checkpos );
     
     if ( distsq > var_caa95837 )

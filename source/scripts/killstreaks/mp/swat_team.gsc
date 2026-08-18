@@ -3468,7 +3468,7 @@ function function_ac0e6696()
         
         if ( !canbeseen )
         {
-            function_a00c5973( "swat_member", self );
+            obj_clear( "swat_member", self );
             util::wait_network_frame();
             self delete();
         }
@@ -3505,7 +3505,7 @@ function swat_leave()
     }
     
     waittillframeend();
-    function_a00c5973( "swat_member", self );
+    obj_clear( "swat_member", self );
     util::wait_network_frame();
     self delete();
 }
@@ -3591,7 +3591,7 @@ function swat_cleanup( destroy_heli )
 // Size: 0x24
 function function_d86da2e8( params )
 {
-    function_a00c5973( "swat_member", self );
+    obj_clear( "swat_member", self );
 }
 
 // Namespace swat_team/swat_team
@@ -3937,7 +3937,7 @@ function obj_set( str_objective, e_target )
 // Params 2
 // Checksum 0xc829de04, Offset: 0xc208
 // Size: 0x104
-function function_a00c5973( str_objective, e_target )
+function obj_clear( str_objective, e_target )
 {
     if ( isdefined( e_target.a_n_objective_ids ) && isdefined( e_target.a_n_objective_ids[ str_objective ] ) )
     {

@@ -617,9 +617,9 @@ function function_18d7cd9b( localclientnum, index )
 // Params 2
 // Checksum 0xaa7a74e7, Offset: 0x38d0
 // Size: 0x94
-function function_6127ea37( localclientnum, var_116287e0 )
+function function_6127ea37( localclientnum, elixir_index )
 {
-    rarity = function_18d7cd9b( localclientnum, var_116287e0 );
+    rarity = function_18d7cd9b( localclientnum, elixir_index );
     
     if ( isdefined( rarity ) )
     {

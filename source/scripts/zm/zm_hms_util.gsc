@@ -1085,7 +1085,7 @@ function function_df67a12d( category, subcategory )
     {
         str_event = "<dev string:xad>";
         
-        if ( self.var_c39323b5 === 1 )
+        if ( self.b_cleaned_up === 1 )
         {
             str_event = "<dev string:xb9>";
         }

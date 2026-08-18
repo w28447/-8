@@ -55,8 +55,8 @@ function private on_begin( var_a29299fb )
     {
         level.buys_disabled = 1;
         level notify( #"disable_buys" );
-        function_6fd56055();
-        function_a4284cb4();
+        hide_wallbuys();
+        hide_doorbuys();
         hide_magicbox();
         zm_trial_util::function_eea26e56();
         level.var_a29299fb = var_a29299fb;
@@ -81,8 +81,8 @@ function private on_end( round_reset )
     
     if ( !round_reset )
     {
-        function_fa70c8c4();
-        function_c606ef4b();
+        show_wallbuys();
+        show_doorbuys();
         show_magicbox();
         zm_trial_util::function_ef1fce77();
         function_c348adcc();
@@ -154,7 +154,7 @@ function function_8327d26e()
 // Params 0, eflags: 0x4
 // Checksum 0xd4b3e8b5, Offset: 0x978
 // Size: 0x2e8
-function private function_6fd56055()
+function private hide_wallbuys()
 {
     assert( isdefined( level._spawned_wallbuys ) );
     
@@ -176,11 +176,11 @@ function private function_6fd56055()
         
         if ( isdefined( model ) && isdefined( model.target ) )
         {
-            var_393a819e = getent( model.target, "targetname" );
+            model_backing = getent( model.target, "targetname" );
             
-            if ( isdefined( var_393a819e ) )
+            if ( isdefined( model_backing ) )
             {
-                var_393a819e ghost();
+                model_backing ghost();
             }
         }
         
@@ -202,7 +202,7 @@ function private function_6fd56055()
 // Params 0, eflags: 0x4
 // Checksum 0x50147a13, Offset: 0xc68
 // Size: 0x2c0
-function private function_fa70c8c4()
+function private show_wallbuys()
 {
     assert( isdefined( level._spawned_wallbuys ) );
     
@@ -224,11 +224,11 @@ function private function_fa70c8c4()
         
         if ( isdefined( model ) && isdefined( model.target ) )
         {
-            var_393a819e = getent( model.target, "targetname" );
+            model_backing = getent( model.target, "targetname" );
             
-            if ( isdefined( var_393a819e ) )
+            if ( isdefined( model_backing ) )
             {
-                var_393a819e show();
+                model_backing show();
             }
         }
         
@@ -315,7 +315,7 @@ function private function_fcf197fa( targetname, show )
 // Params 0, eflags: 0x4
 // Checksum 0x81dc0bf3, Offset: 0x11f0
 // Size: 0x34
-function private function_a4284cb4()
+function private hide_doorbuys()
 {
     function_fcf197fa( "zombie_door", 0 );
     function_fcf197fa( "zombie_debris", 0 );
@@ -325,7 +325,7 @@ function private function_a4284cb4()
 // Params 0, eflags: 0x4
 // Checksum 0x294812d0, Offset: 0x1230
 // Size: 0x44
-function private function_c606ef4b()
+function private show_doorbuys()
 {
     function_fcf197fa( "zombie_door", 1 );
     function_fcf197fa( "zombie_debris", 1 );

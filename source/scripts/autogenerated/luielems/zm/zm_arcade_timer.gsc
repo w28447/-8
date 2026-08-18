@@ -163,7 +163,7 @@ function function_88df772a( player, var_c895e25d, var_b1100790, var_f0996295 = 0
         player.var_26b0547b = undefined;
     }
     
-    self function_9bab3960( player, 0, var_b1100790 );
+    self close_timer( player, 0, var_b1100790 );
 }
 
 // Namespace zm_arcade_timer/zm_arcade_timer
@@ -214,7 +214,7 @@ function open_timer( player )
 // Params 3
 // Checksum 0x188a17f1, Offset: 0x590
 // Size: 0x110
-function function_9bab3960( player, b_force_close = 0, var_b1100790 )
+function close_timer( player, b_force_close = 0, var_b1100790 )
 {
     if ( !isdefined( player.var_e325b124 ) )
     {

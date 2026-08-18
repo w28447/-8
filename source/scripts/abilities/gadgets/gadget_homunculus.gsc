@@ -76,7 +76,7 @@ function private function_c83057f0()
             
             if ( function_9ce07f7c( homunculus ) )
             {
-                homunculus thread function_bb17ec5a();
+                homunculus thread do_attack();
                 continue;
             }
             
@@ -278,7 +278,7 @@ function function_1dba4a2()
 // Params 0, eflags: 0x4
 // Checksum 0x14fc4615, Offset: 0xca8
 // Size: 0x316
-function private function_bb17ec5a()
+function private do_attack()
 {
     self endon( #"death" );
     self.attacking = 1;

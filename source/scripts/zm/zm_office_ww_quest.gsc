@@ -148,7 +148,7 @@ function function_74c94af4()
     
     for ( n_count = 0; n_count < 4 ; n_count++ )
     {
-        n_code = function_4696e086();
+        n_code = generate_code();
         
         if ( !array::contains( level.s_code_machine.a_n_codes, n_code ) )
         {
@@ -273,7 +273,7 @@ function function_4bda6e6c()
     {
         waitresult = self waittill( #"trigger" );
         playsoundatposition( #"hash_5321ac1dbb962d10", level.s_code_machine.origin );
-        level.s_code_machine function_ddc86041( waitresult.activator );
+        level.s_code_machine validate_code( waitresult.activator );
     }
 }
 
@@ -281,7 +281,7 @@ function function_4bda6e6c()
 // Params 1
 // Checksum 0x6f98f17c, Offset: 0x14e8
 // Size: 0x1de
-function function_ddc86041( e_player )
+function validate_code( e_player )
 {
     n_index = undefined;
     
@@ -329,7 +329,7 @@ function function_ddc86041( e_player )
 // Params 0
 // Checksum 0x9a285074, Offset: 0x16d0
 // Size: 0x1a
-function function_4696e086()
+function generate_code()
 {
     return randomintrange( 0, 10000 );
 }
@@ -489,7 +489,7 @@ function function_68f68bb4()
     array::run_all( self.var_8387846a, &show );
     self.e_reward_pickup show();
     exploder::exploder( "fx_project_skadi_cold_mist" );
-    self zm_unitrigger::create( &function_2b049ee1, 64, &function_36664799, 1, 0 );
+    self zm_unitrigger::create( &function_2b049ee1, 64, &crate_think, 1, 0 );
 }
 
 // Namespace zm_office_ww_quest/zm_office_ww_quest
@@ -529,7 +529,7 @@ function function_2b049ee1( e_player )
 // Params 0
 // Checksum 0xcbd015c4, Offset: 0x1e28
 // Size: 0x246
-function function_36664799()
+function crate_think()
 {
     self endon( #"death" );
     

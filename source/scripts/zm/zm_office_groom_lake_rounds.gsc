@@ -86,7 +86,7 @@ function function_4074a9e2()
 // Size: 0x94
 function function_1cae4e0a( s_params )
 {
-    if ( self.var_c39323b5 !== 1 )
+    if ( self.b_cleaned_up !== 1 )
     {
         level.var_baf33f0e++;
         

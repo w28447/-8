@@ -100,9 +100,9 @@ function clear_flag( flag )
 // Params 1
 // Checksum 0x52aab565, Offset: 0x3e0
 // Size: 0x34
-function function_897438f4( var_c1e98979 )
+function function_897438f4( end_type )
 {
-    outcome::function_897438f4( game.outcome.var_aefc8b8d, var_c1e98979 );
+    outcome::function_897438f4( game.outcome.var_aefc8b8d, end_type );
 }
 
 // Namespace round/round

@@ -69,11 +69,11 @@ function private __init__()
         level.zombie_itemlist = #"zombie_itemlist";
     }
     
-    level.var_db43cbd7 = #"zombie_raygun_itemlist";
-    level.var_1b7acd6d = #"cu12_list";
-    level.var_72151997 = #"cu13_list";
-    level.var_14364e26 = #"cu30_list";
-    level.var_7d2bc89 = #"cu31_list";
+    level.raygun_itemlist = #"zombie_raygun_itemlist";
+    level.diego_itemlist = #"cu12_list";
+    level.scarlett_itemlist = #"cu13_list";
+    level.ix_scarlett_itemlist = #"cu30_list";
+    level.ix_stanton_itemlist = #"cu31_list";
     clientfield::register( "scriptmover", "aizoneflag", -1, 2, "int" );
     clientfield::register( "scriptmover", "aizoneflag_tu14", 14000, 3, "int" );
     clientfield::register( "scriptmover", "magicboxflag", 1, 3, "int" );
@@ -1053,7 +1053,7 @@ function function_9fa1c215( ai_zone )
         {
             if ( level.var_d5cd88c2 < level.var_acfc1745 && randomfloat( 1 ) <= 0.3 )
             {
-                itemlist = level.var_1b7acd6d;
+                itemlist = level.diego_itemlist;
                 level.var_d5cd88c2++;
                 var_1130690 = 1;
                 level.var_57a77bb = 1;
@@ -1061,7 +1061,7 @@ function function_9fa1c215( ai_zone )
             
             if ( !level.var_2510617f < level.var_1b2f5c9d && randomfloat( 1 ) <= 0.3 )
             {
-                itemlist = level.var_72151997;
+                itemlist = level.scarlett_itemlist;
                 level.var_2510617f++;
                 var_1130690 = 1;
                 level.var_57a77bb = 0;
@@ -1069,7 +1069,7 @@ function function_9fa1c215( ai_zone )
             
             if ( !level.var_6eb6193a < level.var_ad2edeba && randomfloat( 1 ) <= 0.3 )
             {
-                itemlist = level.var_14364e26;
+                itemlist = level.ix_scarlett_itemlist;
                 level.var_6eb6193a++;
                 var_1130690 = 1;
                 level.var_57a77bb = 0;
@@ -1077,7 +1077,7 @@ function function_9fa1c215( ai_zone )
             
             if ( !level.var_7dff87f1 < level.var_a71296ac && randomfloat( 1 ) <= 0.3 )
             {
-                itemlist = level.var_7d2bc89;
+                itemlist = level.ix_stanton_itemlist;
                 level.var_7dff87f1++;
                 var_1130690 = 1;
                 level.var_57a77bb = 0;
@@ -1091,7 +1091,7 @@ function function_9fa1c215( ai_zone )
         {
             if ( !level.var_8a3036cc )
             {
-                itemlist = level.var_db43cbd7;
+                itemlist = level.raygun_itemlist;
                 level.var_8a3036cc = 1;
             }
         }

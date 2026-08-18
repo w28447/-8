@@ -349,9 +349,9 @@ function on_game_playing()
     playsoundatposition( "evt_spawn_alarm", ( 744, -45, 163 ) );
     playsoundatposition( "evt_spawn_alarm", ( 1251, 471, 194 ) );
     wait 3;
-    var_d362b824 = randomint( 2 );
+    random_set = randomint( 2 );
     
-    if ( var_d362b824 == 1 )
+    if ( random_set == 1 )
     {
         playsoundatposition( "vox_pa_generic_spawn_a_01", ( 1356, 159, 165 ) );
         playsoundatposition( "vox_pa_generic_spawn_a_01", ( 726, 3, 181 ) );
@@ -678,13 +678,13 @@ function function_bf48abde()
 // Params 1
 // Checksum 0x2074fab, Offset: 0x3568
 // Size: 0xd4
-function mannequin_falling( var_e5031929 )
+function mannequin_falling( drop_mover )
 {
     self endoncallback( &function_6bc3bcb8, #"death" );
-    var_e5031929 waittill( #"movedone" );
+    drop_mover waittill( #"movedone" );
     self notify( #"landed" );
     self unlink();
-    var_e5031929 delete();
+    drop_mover delete();
     animation::play( #"hash_4c2aa742b1aeb780", self.origin, self.angles, 1, 0.4, 0.2, 0, 0, 0, 0 );
 }
 
@@ -694,9 +694,9 @@ function mannequin_falling( var_e5031929 )
 // Size: 0x3c
 function function_6bc3bcb8( notifyhash )
 {
-    if ( isdefined( self ) && isdefined( self.var_e5031929 ) )
+    if ( isdefined( self ) && isdefined( self.drop_mover ) )
     {
-        self.var_e5031929 delete();
+        self.drop_mover delete();
     }
 }
 
@@ -722,10 +722,10 @@ function spawn_mannequin()
 {
     spawn_point = struct::get( "mannequin_spawn_point", "targetname" );
     var_ed5bd910 = struct::get_array( "mannequin_spawn_landing_target", "targetname" );
-    var_e5031929 = spawn( "script_model", spawn_point.origin );
-    var_e5031929 enablelinkto();
-    var_e5031929 setmodel( "tag_origin" );
-    var_e5031929.angles = ( 0, 0, 0 );
+    drop_mover = spawn( "script_model", spawn_point.origin );
+    drop_mover enablelinkto();
+    drop_mover setmodel( "tag_origin" );
+    drop_mover.angles = ( 0, 0, 0 );
     random = randomint( 2 );
     
     if ( random == 1 )
@@ -737,15 +737,15 @@ function spawn_mannequin()
         mannequin = spawnactor( "spawner_bo3_mannequin_female", spawn_point.origin, spawn_point.angles, "mannequin", 1, 1 );
     }
     
-    mannequin.var_e5031929 = var_e5031929;
+    mannequin.drop_mover = drop_mover;
     landing_point = var_ed5bd910[ randomint( var_ed5bd910.size ) ];
     fall_speed = 1000;
     var_a25e6eb7 = distance( landing_point.origin, spawn_point.origin );
     var_9d78b877 = var_a25e6eb7 / fall_speed;
-    mannequin linkto( var_e5031929, "tag_origin", ( 0, 0, 0 ), ( 0, 0, 0 ) );
+    mannequin linkto( drop_mover, "tag_origin", ( 0, 0, 0 ), ( 0, 0, 0 ) );
     mannequin thread function_4eca5590();
-    var_e5031929 moveto( landing_point.origin, var_9d78b877, 3 );
-    mannequin thread mannequin_falling( var_e5031929 );
+    drop_mover moveto( landing_point.origin, var_9d78b877, 3 );
+    mannequin thread mannequin_falling( drop_mover );
     rand = randomint( 100 );
     
     if ( rand <= 35 )

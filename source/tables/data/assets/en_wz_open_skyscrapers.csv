@@ -12,7 +12,7 @@ localizeentry,d#mpui/fmj_desc
 localizeentry,#hash_9ed2158d57e594
 localizeentry,d#weapon/ray_gun_desc
 localizeentry,d#platform/use_turret
-localizeentry,d#hash_ec3f7fa67575be
+localizeentry,d#wz/attach_adv_mag_desc
 localizeentry,d#weapon/lmg_standard_t8_wz_desc
 localizeentry,d#mpui/supply_desc
 localizeentry,d#weapon/gadget_health_regen_squad_desc
@@ -209,7 +209,7 @@ localizeentry,d#wz_open_skyscrapers/map_dest_asylum
 localizeentry,d#weapon/lmg_standard_t8_operator
 localizeentry,d#wz/attach_foregrip_desc
 localizeentry,d#hash_21159a051530cd1c
-localizeentry,d#hash_2122bde7362c6934
+localizeentry,d#wz/attach_acog_plus_desc
 localizeentry,d#hash_212a3bd4984ce7b3
 localizeentry,#hash_2149088a4b93efa2
 localizeentry,d#wz/attach_laser_sight
@@ -241,7 +241,7 @@ localizeentry,d#mpui/camo_huntsman
 localizeentry,d#hash_246c7d9118b22299
 localizeentry,d#hash_24a3e0f402bfd000
 localizeentry,#hash_24b4aea3bce3281e
-localizeentry,d#hash_24c9561478db5594
+localizeentry,d#menu/camo_loot_masks
 localizeentry,d#hash_24d839f4458ea27f
 localizeentry,d#hash_24f647b2c24d78a6
 localizeentry,#weapon/ar_modular_t8_wz_desc
@@ -498,7 +498,7 @@ localizeentry,d#weapon/melee_amuletfist_t8
 localizeentry,#wz/attach_laser_sight_desc
 localizeentry,d#weapon/lmg_pbr
 localizeentry,d#hash_47a314be32a9bba5
-localizeentry,d#hash_47f9d805f8f35f0e
+localizeentry,d#wz/attach_adv_mag
 localizeentry,#hash_4830a0bf0b737bd1
 localizeentry,d#wz/attach_reflex_desc
 localizeentry,d#hash_486d9ecdf4662ceb
@@ -519,7 +519,7 @@ localizeentry,d#hash_4a24740941328c2e
 localizeentry,d#mpui/camo_heatstroke
 localizeentry,d#weapon/lmg_spray_t8_operator
 localizeentry,d#hash_4a584bc8c443f246
-localizeentry,d#hash_4a6f079813e273c3
+localizeentry,d#menu/camo_loot_dogfight
 localizeentry,d#hash_4abd192255393c9e
 localizeentry,d#hash_4acd6807292167c6
 localizeentry,d#hash_4b105b524a93b53d
@@ -596,7 +596,7 @@ localizeentry,d#zmui/extrapellets_desc
 localizeentry,d#hash_556fbdaebf02d158
 localizeentry,d#zmui/high_caliber_desc
 localizeentry,d#hash_560d002c6e40e5df
-localizeentry,d#hash_561a6371fe1e6f3a
+localizeentry,d#menu/camo_loot_vice
 localizeentry,d#hash_561bb2bb72747013
 localizeentry,d#menu/hud_vehicle_detonate
 localizeentry,d#weapon/basketball
@@ -735,7 +735,7 @@ localizeentry,d#weapon/smg_fastfire_t8
 localizeentry,#menu/descend
 localizeentry,#menu/look
 localizeentry,#weapon/flare_gun_wz_desc
-localizeentry,d#hash_663114aa52ffcb21
+localizeentry,d#menu/camo_loot_ww2
 localizeentry,#hash_6642f37ecc132749
 localizeentry,d#weapon/pistol_revolver_t8
 localizeentry,d#wz/attach_reddot
@@ -847,7 +847,7 @@ localizeentry,#hash_758a0f09a9e2ea20
 localizeentry,d#mpui/damage
 localizeentry,d#hash_758d93baadbc199d
 localizeentry,d#wz/attach_fastmag
-localizeentry,d#hash_75910f89d3c7bccc
+localizeentry,d#wz/attach_acog_plus
 localizeentry,d#heroes/battery
 localizeentry,#hash_75a83b86aa7dd7e3
 localizeentry,#hash_75a83c86aa7dd996
@@ -867,7 +867,7 @@ localizeentry,d#hash_772be63c8b3143b0
 localizeentry,d#hash_7793b727a6a89304
 localizeentry,d#weapon/sniper_fastrechamber_t8_operator_desc
 localizeentry,d#hash_77c57e3de2c98f7c
-localizeentry,d#hash_77dce7635423ba68
+localizeentry,d#menu/camo_loot_cyberpunk
 localizeentry,d#hash_77e7311dc74dccf5
 localizeentry,d#menu/camo_active_celestial
 localizeentry,d#killstreak/auto_turret_inbound
@@ -933,5 +933,5 @@ localizeentry,d#hash_7f209924bc0a8d04
 localizeentry,d#weapon/tr_powersemi_t8_operator_desc
 localizeentry,d#weapon/smg_fastburst_t8
 localizeentry,#hash_7fbe67060c64d1e3
-localizeentry,d#hash_7fd496c4cf9ec713
+localizeentry,d#menu/camo_loot_plasmadrive
 keyvaluepairs,#en_wz_open_skyscrapers

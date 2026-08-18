@@ -169,7 +169,7 @@ function take_player_weapons( n_interval, e_player )
     }
     
     e_player.var_a14d2a24 = 1;
-    self thread function_413cffae( n_interval, e_player );
+    self thread weapon_swapper( n_interval, e_player );
 }
 
 // Namespace zm_trial_weapon_rotation/zm_trial_weapon_rotation
@@ -264,7 +264,7 @@ function private return_weapon( o_trial )
 // Params 2, eflags: 0x4
 // Checksum 0xf4ee0c98, Offset: 0xe78
 // Size: 0x294
-function private function_413cffae( n_interval, e_player )
+function private weapon_swapper( n_interval, e_player )
 {
     e_player notify( #"hash_14795fd12c6dae32" );
     level endon( #"trial_round_end" );

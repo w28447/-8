@@ -164,7 +164,7 @@ function defend_areas()
     {
         if ( !( e_pap.script_noteworthy === "pap_island" ) )
         {
-            e_pap thread zm_orange_pap::function_e3921120( 1 );
+            e_pap thread zm_orange_pap::show_pap_machine( 1 );
         }
     }
     

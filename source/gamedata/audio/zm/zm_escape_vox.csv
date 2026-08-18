@@ -17,7 +17,7 @@
 #powerplant,#turn_on,#vox_powerplant_turn_on,0,0,FALSE,FALSE,FALSE,FALSE
 #catwalk,#open,#vox_catwalk_open,0,0,FALSE,FALSE,FALSE,FALSE
 #catwalk,#surrounded,#vox_catwalk_surrounded,0,20,TRUE,FALSE,FALSE,FALSE
-#catwalk,#hash_30b3d33fbe5f5328,#hash_2b1b150c0073f0a0,0,0,FALSE,FALSE,FALSE,FALSE
+#catwalk,#tower_collap,#vox_catwalk_tower_collap,0,0,FALSE,FALSE,FALSE,FALSE
 #catwalk,#warden,#hash_227bd68a057f7198,0,0,FALSE,FALSE,FALSE,FALSE
 #location_enter,#cafeteria,#vox_cafeteria_react,0,0,TRUE,FALSE,FALSE,FALSE
 #cell_block,#react,#vox_cell_block_react,0,0,TRUE,FALSE,FALSE,FALSE

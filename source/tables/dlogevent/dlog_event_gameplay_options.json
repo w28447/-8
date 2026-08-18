@@ -126,7 +126,7 @@
         },
         {
             "name": "#smokescreen_toggle",
-            "scrName": "#hash_e2e8dc33",
+            "scrName": "#smokescreen_toggle",
             "type": "BOOL"
         },
         {
@@ -261,12 +261,12 @@
         },
         {
             "name": "#spawnbeacon_toggle",
-            "scrName": "#hash_39e9cf7c",
+            "scrName": "#spawnbeacon_toggle",
             "type": "BOOL"
         },
         {
             "name": "#fraggrenade_toggle",
-            "scrName": "#hash_2b1bebcf",
+            "scrName": "#fraggrenade_toggle",
             "type": "BOOL"
         },
         {
@@ -306,7 +306,7 @@
         },
         {
             "name": "#slowgrenade_toggle",
-            "scrName": "#hash_f54323e0",
+            "scrName": "#slowgrenade_toggle",
             "type": "BOOL"
         }
     ],

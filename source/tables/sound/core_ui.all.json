@@ -40909,13 +40909,13 @@
         {
             "value": 297,
             "next": 663,
-            "name": "#hash_7262f1fc606eb9b9",
+            "name": "#uin_timer_wager_beep",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7262f1fc606eb9b9",
+                    "name": "#uin_timer_wager_beep",
                     "assetId": "#mpl/wager/timer/timer_wager_doot.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -40958,13 +40958,13 @@
         {
             "value": 100,
             "next": 680,
-            "name": "#hash_691ab1043587c896",
+            "name": "#uin_timer_wager_last_beep",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_691ab1043587c896",
+                    "name": "#uin_timer_wager_last_beep",
                     "assetId": "#mpl/wager/timer/timer_wager_deet.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",

@@ -2431,13 +2431,13 @@ function function_9438de5c( var_c34665fc )
 {
     if ( isplayer( self ) )
     {
-        level.var_f5682bb8 zm_arcade_timer::function_9bab3960( self );
+        level.var_f5682bb8 zm_arcade_timer::close_timer( self );
         return;
     }
     
     foreach ( player in level.players )
     {
-        level.var_f5682bb8 zm_arcade_timer::function_9bab3960( player, 1 );
+        level.var_f5682bb8 zm_arcade_timer::close_timer( player, 1 );
     }
 }
 

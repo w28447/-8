@@ -2,7 +2,7 @@
     "hash_fb8bfacd": 1,
     "hash_4d2e79e54e1c2b67:hash_11f91d6a": "image#hash_4d2e79e54e1c2b67",
     "configstringfiletype": "scriptbundle",
-    "hash_67e1869756918772:hash_5d66bb63": "localized17#hash_67e1869756918772",
+    "mpui/resistance_damage:hash_5d66bb63": "localized17#mpui/resistance_damage",
     "type": "resistance",
     "hash_a079a0f6": "none",
     "hash_215422c5": "explosive_damage",
@@ -12,6 +12,6 @@
     "hash_6aa3b54b": "none",
     "hash_7cedd9df": "none",
     "hash_8e287c54": "none",
-    "hash_3df2e16830b73be2:hash_3cf30434": "localized17#hash_3df2e16830b73be2",
+    "mpui/resistance_damage_desc:hash_3cf30434": "localized17#mpui/resistance_damage_desc",
     "name": "mp_resist_damage"
 }

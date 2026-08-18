@@ -1129,7 +1129,7 @@ localizeentry,#hash_24931c897abe0997
 localizeentry,#hash_24931d897abe0b4a
 localizeentry,#hash_24931e897abe0cfd
 localizeentry,d#hash_24a3e0f402bfd000
-localizeentry,d#hash_24c9561478db5594
+localizeentry,d#menu/camo_loot_masks
 localizeentry,#hash_24cf7de1aa93e94c
 localizeentry,#hash_24cf7ee1aa93eaff
 localizeentry,#hash_24cf7fe1aa93ecb2
@@ -2185,7 +2185,7 @@ localizeentry,#hash_4a43911fbea5cb34
 localizeentry,#hash_4a43921fbea5cce7
 localizeentry,#hash_4a43941fbea5d04d
 localizeentry,d#hash_4a584bc8c443f246
-localizeentry,d#hash_4a6f079813e273c3
+localizeentry,d#menu/camo_loot_dogfight
 localizeentry,#hash_4a75bb12ef3e0bec
 localizeentry,#hash_4a8f364409c699e0
 localizeentry,#hash_4a8f374409c69b93
@@ -2590,7 +2590,7 @@ localizeentry,#hash_5605de012659281e
 localizeentry,#hash_5605df01265929d1
 localizeentry,d#zmui/high_caliber_desc
 localizeentry,d#hash_560d002c6e40e5df
-localizeentry,d#hash_561a6371fe1e6f3a
+localizeentry,d#menu/camo_loot_vice
 localizeentry,d#hash_561bb2bb72747013
 localizeentry,#hash_563849eda15d94ec
 localizeentry,#hash_56384eeda15d9d6b
@@ -3053,7 +3053,7 @@ localizeentry,#zm_escape/acid_trap_unavailable
 localizeentry,#hash_65a4f33dd4df7535
 localizeentry,#hash_65f0419feb8b6158
 localizeentry,#hash_660ed41e5513f822
-localizeentry,d#hash_663114aa52ffcb21
+localizeentry,d#menu/camo_loot_ww2
 localizeentry,#hash_6632b869ad3a80f0
 localizeentry,#hash_6653854fb4eb2a2f
 localizeentry,d#hash_665fcaf288735f26
@@ -3548,7 +3548,7 @@ localizeentry,d#menu/back_caps
 localizeentry,#hash_77923731030f4de0
 localizeentry,#hash_77b67a1c51caae73
 localizeentry,#hash_77bbe7cec9945ff5
-localizeentry,d#hash_77dce7635423ba68
+localizeentry,d#menu/camo_loot_cyberpunk
 localizeentry,d#hash_77e7311dc74dccf5
 localizeentry,d#menu/camo_active_celestial
 localizeentry,#hash_77fb16a79defe639
@@ -3828,7 +3828,7 @@ localizeentry,#hash_7f94ddb68105b737
 localizeentry,#hash_7f94dfb68105ba9d
 localizeentry,#hash_7fb4bfc1f37db0c4
 localizeentry,#hash_7fb8952f8a63b9f0
-localizeentry,d#hash_7fd496c4cf9ec713
+localizeentry,d#menu/camo_loot_plasmadrive
 keyvaluepairs,#jj_zm_escape
 ttf,d#dinnext_regular
 ttf,d#ttmussels_regular

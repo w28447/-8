@@ -1456,7 +1456,7 @@ function function_a80cb651( activecamo, stagenum )
     // Size: 0x148, Type: dev
     function function_de358bfd( root, index )
     {
-        var_1520a1da = root + "<dev string:x3f3>";
+        weapons_root = root + "<dev string:x3f3>";
         
         if ( !isdefined( index ) )
         {
@@ -1471,7 +1471,7 @@ function function_a80cb651( activecamo, stagenum )
         
         foreach ( weapon in weapons )
         {
-            cmd = var_1520a1da + weapon + "<dev string:x443>" + weapon + "<dev string:x3d9>" + index + "<dev string:x322>";
+            cmd = weapons_root + weapon + "<dev string:x443>" + weapon + "<dev string:x3d9>" + index + "<dev string:x322>";
             thread util::add_debug_command( cmd );
         }
     }
@@ -1482,7 +1482,7 @@ function function_a80cb651( activecamo, stagenum )
     // Size: 0x160, Type: dev
     function function_50d79d31( root, index )
     {
-        var_82c49718 = root + "<dev string:x476>";
+        stages_root = root + "<dev string:x476>";
         
         if ( !isdefined( index ) )
         {
@@ -1493,7 +1493,7 @@ function function_a80cb651( activecamo, stagenum )
         
         foreach ( stage in stages )
         {
-            cmd = var_82c49718 + stage + "<dev string:x483>" + stage + "<dev string:x3d9>" + index + "<dev string:x322>";
+            cmd = stages_root + stage + "<dev string:x483>" + stage + "<dev string:x3d9>" + index + "<dev string:x322>";
             thread util::add_debug_command( cmd );
         }
     }

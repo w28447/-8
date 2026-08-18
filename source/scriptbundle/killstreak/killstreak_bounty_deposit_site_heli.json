@@ -44,7 +44,7 @@
     "type": "killstreak",
     "ksarmorregenradius": 120,
     "ksricochetdistance": 500,
-    "hash_44608eb304007fb1:hash_1d2a2ca4": "localized17#hash_44608eb304007fb1",
+    "killstreak/swat_team_crate:hash_1d2a2ca4": "localized17#killstreak/swat_team_crate",
     "hash_205204fe7ba38950:hash_8c4d7906": "localized17#hash_205204fe7ba38950",
     "ksrobshowfriendly": 1,
     "ksairdroprobotradius": 27,

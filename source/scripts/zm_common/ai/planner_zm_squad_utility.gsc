@@ -300,9 +300,9 @@ function private function_66cc90a( planner, params )
         if ( strategiccommandutility::isvalidbot( bot ) )
         {
             altar = params.altar[ #"__unsafe__" ][ #"altar" ];
-            var_8d32cef2 = getclosestpointonnavmesh( params.altar[ #"origin" ], 200, bot getpathfindingradius() );
+            altarpos = getclosestpointonnavmesh( params.altar[ #"origin" ], 200, bot getpathfindingradius() );
             bot bot::set_interact( altar );
-            bot setgoal( var_8d32cef2 );
+            bot setgoal( altarpos );
             bot.goalradius = 512;
         }
     }
@@ -828,7 +828,7 @@ function private function_4f6a626d( planner, constants )
         return params;
     }
     
-    var_a9cd6db9 = [];
+    possiblepowerups = [];
     distancesq = constants[ #"distance" ] * constants[ #"distance" ];
     powerups = planner::getblackboardattribute( planner, #"zm_powerups" );
     
@@ -858,7 +858,7 @@ function private function_4f6a626d( planner, constants )
         
         if ( closeenough )
         {
-            var_a9cd6db9[ var_a9cd6db9.size ] = powerupinfo;
+            possiblepowerups[ possiblepowerups.size ] = powerupinfo;
         }
     }
     
@@ -867,7 +867,7 @@ function private function_4f6a626d( planner, constants )
     var_7cc71b7c = undefined;
     var_ce95e926 = 64;
     
-    foreach ( powerupinfo in var_a9cd6db9 )
+    foreach ( powerupinfo in possiblepowerups )
     {
         powerup = powerupinfo[ #"__unsafe__" ][ #"powerup" ];
         poweruporigin = getclosestpointonnavmesh( powerup.origin, 200, params.bots[ 0 ] getpathfindingradius() );
@@ -933,8 +933,8 @@ function private function_58d72c81( planner, params )
     {
         if ( strategiccommandutility::isvalidbot( bot ) )
         {
-            var_47d8cea1 = getclosestpointonnavmesh( powerup.origin, 200, bot getpathfindingradius() );
-            bot setgoal( var_47d8cea1, 1 );
+            poweruppos = getclosestpointonnavmesh( powerup.origin, 200, bot getpathfindingradius() );
+            bot setgoal( poweruppos, 1 );
             bot.goalradius = var_ce95e926 * 0.8;
         }
     }

@@ -79,7 +79,7 @@ localizeentry,d#mpui/dualoptic_desc
 localizeentry,d#mpui/camo_huntsman
 localizeentry,d#hash_246c7d9118b22299
 localizeentry,d#hash_24a3e0f402bfd000
-localizeentry,d#hash_24c9561478db5594
+localizeentry,d#menu/camo_loot_masks
 localizeentry,d#menu/camo_loot_shimmer
 localizeentry,d#hash_25811ef8abc80b1f
 localizeentry,d#mpui/elo_desc
@@ -176,7 +176,7 @@ localizeentry,d#hash_4973da5ba484b2ae
 localizeentry,d#hash_49e88c8053d4f73e
 localizeentry,d#mpui/camo_heatstroke
 localizeentry,d#hash_4a584bc8c443f246
-localizeentry,d#hash_4a6f079813e273c3
+localizeentry,d#menu/camo_loot_dogfight
 localizeentry,d#hash_4b105b524a93b53d
 localizeentry,d#hash_4c2bbe6f91c1ca94
 localizeentry,d#hash_4d048d939c70cad9
@@ -202,7 +202,7 @@ localizeentry,d#zmui/extrapellets_desc
 localizeentry,d#hash_556fbdaebf02d158
 localizeentry,d#zmui/high_caliber_desc
 localizeentry,d#hash_560d002c6e40e5df
-localizeentry,d#hash_561a6371fe1e6f3a
+localizeentry,d#menu/camo_loot_vice
 localizeentry,d#mpui/steadyaim2_desc
 localizeentry,d#menu/camo_loot_bacon
 localizeentry,d#hash_58b7aeee47f428da
@@ -241,7 +241,7 @@ localizeentry,d#hash_644187f4990e9841
 localizeentry,d#mpui/burst2_desc
 localizeentry,d#mpui/pistolscope_desc
 localizeentry,d#hash_652798c8c39df5b0
-localizeentry,d#hash_663114aa52ffcb21
+localizeentry,d#menu/camo_loot_ww2
 localizeentry,d#hash_665fcaf288735f26
 localizeentry,d#hash_66d33b296eb64fbc
 localizeentry,d#mpui/stalker2
@@ -277,7 +277,7 @@ localizeentry,d#mpui/camo_ash
 localizeentry,d#hash_768c5aeecc2d7cc4
 localizeentry,d#mpui/grip2_desc
 localizeentry,d#hash_7725a43a5e8755ad
-localizeentry,d#hash_77dce7635423ba68
+localizeentry,d#menu/camo_loot_cyberpunk
 localizeentry,d#menu/camo_active_celestial
 localizeentry,d#menu/camo_loot_citrus
 localizeentry,d#mpui/rf_desc
@@ -298,5 +298,5 @@ localizeentry,d#mpui/camo_woodlums
 localizeentry,d#hash_7e31505384e0837a
 localizeentry,d#mpui/tacknife_desc
 localizeentry,d#menu/camo_loot_paradise
-localizeentry,d#hash_7fd496c4cf9ec713
+localizeentry,d#menu/camo_loot_plasmadrive
 keyvaluepairs,#en_mp_nuketown_4

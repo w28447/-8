@@ -160,8 +160,8 @@ function function_59d3154f()
                         break;
                     }
                     
-                    var_6fda3763 = self function_d0c02a50( stat, var_aa1fbd8c, stat.stattype );
-                    var_d6155829[ stat.playerstatsliststatname ] = var_6fda3763;
+                    statcurrentvalue = self function_d0c02a50( stat, var_aa1fbd8c, stat.stattype );
+                    var_d6155829[ stat.playerstatsliststatname ] = statcurrentvalue;
                     break;
                 case #"razorwireekia":
                     razorwireekia = self stats::get_stat_global( #"stats_concertina_wire_snared_kill" ) + self stats::get_stat_global( #"stats_concertina_wire_kill" );
@@ -172,12 +172,12 @@ function function_59d3154f()
                 case #"objectivetime":
                 case #"damagedone":
                 case #"objectiveekia":
-                    var_6fda3763 = self function_b535c32e( stat, self.pers[ stat.stattype ], var_aa1fbd8c );
-                    var_d6155829[ stat.stattype ] = var_6fda3763;
+                    statcurrentvalue = self function_b535c32e( stat, self.pers[ stat.stattype ], var_aa1fbd8c );
+                    var_d6155829[ stat.stattype ] = statcurrentvalue;
                     break;
                 case #"highestkillstreak":
-                    var_6fda3763 = self.pers[ #"cur_kill_streak" ] - self.pers[ #"hvo" ][ #"current" ][ #"highestkillstreak" ];
-                    self function_be94d98b( stat, var_6fda3763, var_aa1fbd8c );
+                    statcurrentvalue = self.pers[ #"cur_kill_streak" ] - self.pers[ #"hvo" ][ #"current" ][ #"highestkillstreak" ];
+                    self function_be94d98b( stat, statcurrentvalue, var_aa1fbd8c );
                     break;
             }
         }
@@ -382,9 +382,9 @@ function private function_d0c02a50( stat, var_aa1fbd8c, ddl )
         self.pers[ #"hvo" ][ var_aa1fbd8c ][ stat.playerstatsliststatname ] = 0;
     }
     
-    var_6fda3763 = self stats::get_stat( ddl, stat.playerstatsliststatname, #"statvalue" );
-    self.pers[ #"hvo" ][ var_aa1fbd8c ][ stat.playerstatsliststatname ] += var_6fda3763 - self.pers[ #"hvo" ][ #"current" ][ stat.playerstatsliststatname ];
-    return var_6fda3763;
+    statcurrentvalue = self stats::get_stat( ddl, stat.playerstatsliststatname, #"statvalue" );
+    self.pers[ #"hvo" ][ var_aa1fbd8c ][ stat.playerstatsliststatname ] += statcurrentvalue - self.pers[ #"hvo" ][ #"current" ][ stat.playerstatsliststatname ];
+    return statcurrentvalue;
 }
 
 // Namespace hvo/high_value_operative

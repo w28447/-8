@@ -1030,7 +1030,7 @@ localizeentry,#hash_24bad8171c9f179e
 localizeentry,#hash_24bad9171c9f1951
 localizeentry,#hash_24c228c0d16c58ac
 localizeentry,#hash_24c229c0d16c5a5f
-localizeentry,d#hash_24c9561478db5594
+localizeentry,d#menu/camo_loot_masks
 localizeentry,#hash_24cc22c0d174a2ff
 localizeentry,#hash_24d5d2466ac18de1
 localizeentry,#hash_24f3bb349f6e2461
@@ -2099,7 +2099,7 @@ localizeentry,#hash_4a42c020194636f4
 localizeentry,#hash_4a42c120194638a7
 localizeentry,#hash_4a4c00eff7d35880
 localizeentry,d#hash_4a584bc8c443f246
-localizeentry,d#hash_4a6f079813e273c3
+localizeentry,d#menu/camo_loot_dogfight
 localizeentry,d#hash_4abd192255393c9e
 localizeentry,#hash_4aec9d1a56ca838d
 localizeentry,#hash_4af0061a56cd6bcf
@@ -2426,7 +2426,7 @@ localizeentry,#hash_55ef46b04b35a386
 localizeentry,#hash_55f2bdb504f0ab0f
 localizeentry,d#zmui/high_caliber_desc
 localizeentry,d#hash_560d002c6e40e5df
-localizeentry,d#hash_561a6371fe1e6f3a
+localizeentry,d#menu/camo_loot_vice
 localizeentry,d#hash_561bb2bb72747013
 localizeentry,#hash_561d64d94466fb4b
 localizeentry,#hash_56588456a8b61e61
@@ -2855,7 +2855,7 @@ localizeentry,#hash_65e47b8d47f3f7ef
 localizeentry,#hash_65e4808d47f4006e
 localizeentry,#hash_65f155112a2dc56e
 localizeentry,#hash_662ffa6c4c6305d0
-localizeentry,d#hash_663114aa52ffcb21
+localizeentry,d#menu/camo_loot_ww2
 localizeentry,#hash_663bc33e457f3896
 localizeentry,#hash_6649759b63221feb
 localizeentry,#hash_6653854fb4eb2a2f
@@ -3409,7 +3409,7 @@ localizeentry,#hash_777165865d99c1bf
 localizeentry,#zm_orange/location_outer_walkway
 localizeentry,d#menu/back_caps
 localizeentry,#hash_77c82d60883d4aca
-localizeentry,d#hash_77dce7635423ba68
+localizeentry,d#menu/camo_loot_cyberpunk
 localizeentry,d#hash_77e7311dc74dccf5
 localizeentry,#hash_77e85eca83718734
 localizeentry,#hash_77f24dca8379bed6
@@ -3662,7 +3662,7 @@ localizeentry,#hash_7fc678e84b893b21
 localizeentry,#hash_7fd091d21097208c
 localizeentry,#hash_7fd092d21097223f
 localizeentry,#hash_7fd098d210972c71
-localizeentry,d#hash_7fd496c4cf9ec713
+localizeentry,d#menu/camo_loot_plasmadrive
 localizeentry,#hash_7fdb0bd210a0445f
 localizeentry,#hash_7ffee83143e9dbf6
 localizeentry,#hash_7ffef23143e9ecf4

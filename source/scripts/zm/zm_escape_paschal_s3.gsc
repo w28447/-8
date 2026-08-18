@@ -1984,8 +1984,8 @@ function private function_cdc8090a()
     level thread function_2c4516ae( "door_model_west_side_exterior_to_new_industries" );
     level.var_acc853e7 thread function_a50552d1();
     level.var_acc853e7 waittill( #"hash_42d705f0ff5334bb" );
-    level zm_audio::function_6191af93( #"trap_activate", #"zm_spinning_trap", "", "" );
-    level zm_audio::function_6191af93( #"spin_trap", #"hook", "", "" );
+    level zm_audio::vox_override( #"trap_activate", #"zm_spinning_trap", "", "" );
+    level zm_audio::vox_override( #"spin_trap", #"hook", "", "" );
     level.var_acc853e7 ai::set_behavior_attribute( "run", 0 );
     
     if ( level.var_acc853e7 clientfield::get( "" + #"hash_65da20412fcaf97e" ) )
@@ -4207,8 +4207,8 @@ function function_1cda4094( e_player )
     
     if ( !self clientfield::get( "" + #"zombie_spectral_key_stun" ) )
     {
-        var_21c1ba1 = e_player getentitynumber();
-        self clientfield::set( "" + #"zombie_spectral_key_stun", var_21c1ba1 + 1 );
+        n_player_num = e_player getentitynumber();
+        self clientfield::set( "" + #"zombie_spectral_key_stun", n_player_num + 1 );
         e_player clientfield::set( "" + #"spectral_key_beam_flash", 2 );
     }
     

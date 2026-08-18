@@ -31,7 +31,7 @@ function init()
     level.paintshophiddenposition = [];
     level.camo_index = [];
     level.reticle_index = [];
-    level.var_dd70be5b = [];
+    level.show_stage = [];
     level.var_aa10d0b4 = [];
     level.show_player_tag = [];
     level.show_emblem = [];
@@ -483,19 +483,19 @@ function get_show_paintshop( localclientnum )
 // Params 2
 // Checksum 0x505b0754, Offset: 0x1740
 // Size: 0x72
-function function_162e1121( localclientnum, var_571f2574 )
+function function_162e1121( localclientnum, charm_index )
 {
-    if ( !isdefined( level.var_571f2574 ) )
+    if ( !isdefined( level.charm_index ) )
     {
-        level.var_571f2574 = [];
+        level.charm_index = [];
     }
     
-    if ( !isdefined( level.var_571f2574[ localclientnum ] ) )
+    if ( !isdefined( level.charm_index[ localclientnum ] ) )
     {
-        level.var_571f2574[ localclientnum ] = 0;
+        level.charm_index[ localclientnum ] = 0;
     }
     
-    level.var_571f2574[ localclientnum ] = var_571f2574;
+    level.charm_index[ localclientnum ] = charm_index;
 }
 
 // Namespace customclass/custom_class
@@ -504,17 +504,17 @@ function function_162e1121( localclientnum, var_571f2574 )
 // Size: 0x60
 function function_52145a0d( localclientnum )
 {
-    if ( !isdefined( level.var_571f2574 ) )
+    if ( !isdefined( level.charm_index ) )
     {
-        level.var_571f2574 = [];
+        level.charm_index = [];
     }
     
-    if ( !isdefined( level.var_571f2574[ localclientnum ] ) )
+    if ( !isdefined( level.charm_index[ localclientnum ] ) )
     {
-        level.var_571f2574[ localclientnum ] = 0;
+        level.charm_index[ localclientnum ] = 0;
     }
     
-    return level.var_571f2574[ localclientnum ];
+    return level.charm_index[ localclientnum ];
 }
 
 // Namespace customclass/custom_class
@@ -537,11 +537,11 @@ function function_998e2be7( localclientnum, weapon_options_param )
     
     if ( isdefined( weapon_options[ 4 ] ) )
     {
-        level.var_dd70be5b[ localclientnum ] = int( weapon_options[ 4 ] );
+        level.show_stage[ localclientnum ] = int( weapon_options[ 4 ] );
     }
     else
     {
-        level.var_dd70be5b[ localclientnum ] = -1;
+        level.show_stage[ localclientnum ] = -1;
     }
     
     if ( isdefined( weapon_options[ 5 ] ) )
@@ -733,7 +733,7 @@ function function_8bf05e82( localclientnum )
 // Size: 0xb2
 function private function_3e2b5b60( localclientnum, weaponmodel )
 {
-    if ( level.var_dd70be5b[ localclientnum ] <= -1 )
+    if ( level.show_stage[ localclientnum ] <= -1 )
     {
         return 0;
     }
@@ -745,7 +745,7 @@ function private function_3e2b5b60( localclientnum, weaponmodel )
         return 0;
     }
     
-    var_3594168e = activecamoinfo.stages[ level.var_dd70be5b[ localclientnum ] ];
+    var_3594168e = activecamoinfo.stages[ level.show_stage[ localclientnum ] ];
     return activecamo::function_374e37a0( localclientnum, weaponmodel, var_3594168e, level.var_aa10d0b4 );
 }
 
@@ -762,9 +762,9 @@ function update_weapon_script_model( localclientnum, newweaponstring, var_f02095
     
     level.last_weapon_name[ localclientnum ] = isdefined( newweaponstring ) ? newweaponstring : #"ar_accurate_t8";
     level.var_8ad413c[ localclientnum ] = isdefined( var_f020955 ) ? var_f020955 : "";
-    var_571f2574 = function_52145a0d( localclientnum );
+    charm_index = function_52145a0d( localclientnum );
     
-    if ( var_571f2574 > 0 )
+    if ( charm_index > 0 )
     {
         if ( !issubstr( level.var_8ad413c[ localclientnum ], "custom2" ) )
         {
@@ -828,7 +828,7 @@ function update_weapon_script_model( localclientnum, newweaponstring, var_f02095
         return;
     }
     
-    function_975f521b( var_571f2574 );
+    function_975f521b( charm_index );
     level.weapon_script_model[ localclientnum ] useweaponmodel( level.current_weapon[ localclientnum ], undefined, get_weapon_options( localclientnum ) );
     weaponmodel = level.weapon_script_model[ localclientnum ];
     

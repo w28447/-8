@@ -32,7 +32,7 @@ class class_7b5e0861
     var m_validmodel;
     var m_vehicle;
     var m_weapon;
-    var var_28f1ce55;
+    var m_invalidmodel;
     var var_31e7e66a;
     var var_3efa7c17;
     var var_656cbe2d;
@@ -66,7 +66,7 @@ class class_7b5e0861
         m_vehicle = bundle.vehicle;
         m_model = bundle.model;
         m_validmodel = bundle.model_valid;
-        var_28f1ce55 = bundle.var_90f05429;
+        m_invalidmodel = bundle.model_invalid;
         m_spawnsentity = bundle.spawnsentity;
         var_656cbe2d = bundle.str_pickup;
         m_timeout = bundle.timeout;
@@ -584,8 +584,8 @@ function function_69996073( var_3af54106 )
     
     if ( team == #"any" )
     {
-        var_db4c606e = function_51ca9c38( var_5e63b00d.var_a8539bf6.origin, team );
-        team = var_db4c606e.team;
+        ownergot = function_51ca9c38( var_5e63b00d.var_a8539bf6.origin, team );
+        team = ownergot.team;
     }
     
     teamowner = function_6153484f( team );
@@ -613,8 +613,8 @@ function function_8ecf6615( var_3af54106 )
         
         if ( team == #"any" )
         {
-            var_db4c606e = function_51ca9c38( var_5e63b00d.var_a8539bf6.origin, team );
-            team = var_db4c606e.team;
+            ownergot = function_51ca9c38( var_5e63b00d.var_a8539bf6.origin, team );
+            team = ownergot.team;
         }
         
         teamowner = function_6153484f( team );
@@ -746,9 +746,9 @@ function function_94e3167b( mdl_gameobject )
 {
     var_3af54106 = self;
     
-    if ( !isdefined( level._traps_deployable.var_9afef5eb ) )
+    if ( !isdefined( level._traps_deployable.trap_gameobjects ) )
     {
-        level._traps_deployable.var_9afef5eb = [];
+        level._traps_deployable.trap_gameobjects = [];
     }
     
     if ( isdefined( mdl_gameobject ) )
@@ -763,16 +763,16 @@ function function_94e3167b( mdl_gameobject )
             mdl_gameobject.var_ef146db5 = var_3af54106.var_3efa7c17.var_ef146db5;
         }
         
-        if ( !isdefined( level._traps_deployable.var_9afef5eb ) )
+        if ( !isdefined( level._traps_deployable.trap_gameobjects ) )
         {
-            level._traps_deployable.var_9afef5eb = [];
+            level._traps_deployable.trap_gameobjects = [];
         }
-        else if ( !isarray( level._traps_deployable.var_9afef5eb ) )
+        else if ( !isarray( level._traps_deployable.trap_gameobjects ) )
         {
-            level._traps_deployable.var_9afef5eb = array( level._traps_deployable.var_9afef5eb );
+            level._traps_deployable.trap_gameobjects = array( level._traps_deployable.trap_gameobjects );
         }
         
-        level._traps_deployable.var_9afef5eb[ level._traps_deployable.var_9afef5eb.size ] = mdl_gameobject;
+        level._traps_deployable.trap_gameobjects[ level._traps_deployable.trap_gameobjects.size ] = mdl_gameobject;
     }
 }
 
@@ -832,7 +832,7 @@ function function_a879466e( var_3af54106, origin, angles )
             return;
         }
         
-        placeable = player placeables::spawnplaceable( level._traps_deployable.traptypes[ type ].onplacecallback, level._traps_deployable.traptypes[ type ].oncancelcallback, onmovecallback, level._traps_deployable.traptypes[ type ].onshutdowncallback, level._traps_deployable.traptypes[ type ].ondeathcallback, level._traps_deployable.traptypes[ type ].onempcallback, level._traps_deployable.traptypes[ type ].ondamagecallback, level._traps_deployable.traptypes[ type ].var_d0dd7e76, var_3af54106.m_model, var_3af54106.m_validmodel, var_3af54106.var_28f1ce55, var_3af54106.m_spawnsentity, var_3af54106.var_656cbe2d, var_3af54106.m_timeout, var_3af54106.m_health, var_3af54106.m_empdamage, var_3af54106.var_f81e0192, var_3af54106.var_b4662b52, var_3af54106.m_placeimmediately, level._traps_deployable.traptypes[ type ].damagewrapper );
+        placeable = player placeables::spawnplaceable( level._traps_deployable.traptypes[ type ].onplacecallback, level._traps_deployable.traptypes[ type ].oncancelcallback, onmovecallback, level._traps_deployable.traptypes[ type ].onshutdowncallback, level._traps_deployable.traptypes[ type ].ondeathcallback, level._traps_deployable.traptypes[ type ].onempcallback, level._traps_deployable.traptypes[ type ].ondamagecallback, level._traps_deployable.traptypes[ type ].var_d0dd7e76, var_3af54106.m_model, var_3af54106.m_validmodel, var_3af54106.m_invalidmodel, var_3af54106.m_spawnsentity, var_3af54106.var_656cbe2d, var_3af54106.m_timeout, var_3af54106.m_health, var_3af54106.m_empdamage, var_3af54106.var_f81e0192, var_3af54106.var_b4662b52, var_3af54106.m_placeimmediately, level._traps_deployable.traptypes[ type ].damagewrapper );
         placeable.var_3af54106 = var_3af54106;
         placeable.is_placeable = 1;
         placeable.var_25404db4 = 1;
@@ -1567,9 +1567,9 @@ function clean_traps( all, skipto = undefined, flag = undefined )
         }
     }
     
-    if ( isdefined( level._traps_deployable ) && isdefined( level._traps_deployable.var_9afef5eb ) )
+    if ( isdefined( level._traps_deployable ) && isdefined( level._traps_deployable.trap_gameobjects ) )
     {
-        var_18d5323c = level._traps_deployable.var_9afef5eb;
+        var_18d5323c = level._traps_deployable.trap_gameobjects;
         
         for ( i = var_18d5323c.size - 1; i >= 0 ; i-- )
         {

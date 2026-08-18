@@ -158,7 +158,7 @@
         },
         {
             "name": "#display_height",
-            "scrName": "#hash_be462b5a",
+            "scrName": "#display_height",
             "type": "UINT16"
         },
         {
@@ -251,7 +251,7 @@
         },
         {
             "name": "#display_width",
-            "scrName": "#hash_61833c05",
+            "scrName": "#display_width",
             "type": "UINT16"
         },
         {
@@ -303,7 +303,7 @@
         },
         {
             "name": "#gpu_count",
-            "scrName": "#hash_306c9df2",
+            "scrName": "#gpu_count",
             "type": "UINT16"
         },
         {

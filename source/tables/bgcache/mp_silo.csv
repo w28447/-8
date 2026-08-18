@@ -373,7 +373,7 @@ soundalias,#hash_2d923acee350bc72
 soundalias,#hash_2e25f1d6ca55e5d9
 soundalias,#exp_mp_propane_tank_explo
 soundalias,#hash_2ea8f3ac3b7c1608
-soundalias,#hash_2ec3de3874855810
+soundalias,#exp_redbarrel
 soundalias,#hash_2ec8a5809ee7ec98
 soundalias,#dst_server_power
 soundalias,#pfx_water_trickle
@@ -520,7 +520,7 @@ soundalias,#hash_5f07c850bd480725
 soundalias,#vox_tvoi_tutor_ruin_final_2_comp
 soundalias,#hash_5fbc57fe7327e948
 soundalias,#hash_60363e606c7cc6bc
-soundalias,#hash_60aa34fc6ea42b7b
+soundalias,#amb_wind_int_2d
 soundalias,#fly_step_shells
 soundalias,#pfx_dirt_fall_long
 soundalias,#hash_60c935d4c50a3d7d

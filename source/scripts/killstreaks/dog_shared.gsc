@@ -265,7 +265,7 @@ function spawn_dog( bundle, owner )
     
     angles = spawn.angles;
     origin = spawn.origin;
-    dog = spawnactor( bundle.var_32f64ba3, origin, angles, "", 1 );
+    dog = spawnactor( bundle.aitype_dog, origin, angles, "", 1 );
     dog ai_patrol::function_d091ff45( bundle );
     dog ai_escort::function_60415868( bundle );
     dog ai_leave::init_leave( bundle.var_cadb59a0 );

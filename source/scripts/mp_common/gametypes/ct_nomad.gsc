@@ -321,7 +321,7 @@ function function_a898afdc()
     level.var_cbcb0078 = 1;
     e_player = getplayers()[ 0 ];
     e_player ct_utils::objcounter_init( undefined, 0, 3, 1 );
-    level thread ct_utils::function_1db91571();
+    level thread ct_utils::manage_timer();
     
     for ( i = 0; i < 3 ; i++ )
     {

@@ -242,9 +242,9 @@ function onroundswitch()
 // Params 1
 // Checksum 0x9d1630f3, Offset: 0xde0
 // Size: 0x64
-function onendround( var_c1e98979 )
+function onendround( end_type )
 {
-    if ( globallogic::function_8b4fc766( var_c1e98979 ) )
+    if ( globallogic::function_8b4fc766( end_type ) )
     {
         winning_team = round::get_winning_team();
         globallogic_score::giveteamscoreforobjective( winning_team, 1 );
@@ -527,7 +527,7 @@ function function_8d346fd8( winningteam )
 // Params 1
 // Checksum 0xc92c3142, Offset: 0x1930
 // Size: 0x7c
-function onendgame( var_c1e98979 )
+function onendgame( end_type )
 {
     if ( level.scoreroundwinbased )
     {

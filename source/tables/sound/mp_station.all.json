@@ -1918,13 +1918,13 @@
         {
             "value": 85,
             "next": 9,
-            "name": "#hash_5bbc0710afc0dff6",
+            "name": "#amb_fire_medium",
             "sequence": 0,
             "cullDistance": 900,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5bbc0710afc0dff6",
+                    "name": "#amb_fire_medium",
                     "assetId": "#amb/fire/medium/med_light_crackle/amb_fire_med_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -1963,7 +1963,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_5bbc0710afc0dff6",
+                    "name": "#amb_fire_medium",
                     "assetId": "#amb/fire/medium/med_light_crackle/amb_fire_med_01.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -2002,7 +2002,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_5bbc0710afc0dff6",
+                    "name": "#amb_fire_medium",
                     "assetId": "#amb/fire/medium/med_light_crackle/amb_fire_med_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -2041,7 +2041,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_5bbc0710afc0dff6",
+                    "name": "#amb_fire_medium",
                     "assetId": "#amb/fire/medium/med_light_crackle/amb_fire_med_03.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -2080,7 +2080,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_5bbc0710afc0dff6",
+                    "name": "#amb_fire_medium",
                     "assetId": "#amb/fire/medium/med_light_crackle/amb_fire_med_04.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -2119,7 +2119,7 @@
                     "unk178": "#hash_500000808"
                 },
                 {
-                    "name": "#hash_5bbc0710afc0dff6",
+                    "name": "#amb_fire_medium",
                     "assetId": "#amb/fire/medium/med_light_crackle/amb_fire_med_05.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -3754,13 +3754,13 @@
         {
             "value": 186,
             "next": 65535,
-            "name": "#hash_417a6cd8bbd9d517",
+            "name": "#amb_lights_buzz",
             "sequence": 0,
             "cullDistance": 500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_417a6cd8bbd9d517",
+                    "name": "#amb_lights_buzz",
                     "assetId": "#amb/lights/flourescent/fluorescent_light.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
                     "assetIdRelease": "#mp_station.all",
@@ -20955,13 +20955,13 @@
         {
             "value": 44,
             "next": 65535,
-            "name": "#hash_2ec3de3874855810",
+            "name": "#exp_redbarrel",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
@@ -21002,7 +21002,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
@@ -21043,7 +21043,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
@@ -21084,7 +21084,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
@@ -21125,7 +21125,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
@@ -21166,7 +21166,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",
@@ -21207,7 +21207,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_station.all",

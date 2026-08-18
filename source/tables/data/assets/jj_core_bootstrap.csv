@@ -81,7 +81,7 @@ localizeentry,#mpui/dualoptic_desc
 localizeentry,#mpui/camo_huntsman
 localizeentry,#hash_246c7d9118b22299
 localizeentry,#hash_24a3e0f402bfd000
-localizeentry,#hash_24c9561478db5594
+localizeentry,#menu/camo_loot_masks
 localizeentry,#menu/zombies_desc
 localizeentry,#menu/camo_loot_shimmer
 localizeentry,#hash_25811ef8abc80b1f
@@ -182,7 +182,7 @@ localizeentry,#hash_4973da5ba484b2ae
 localizeentry,#hash_49e88c8053d4f73e
 localizeentry,#mpui/camo_heatstroke
 localizeentry,#hash_4a584bc8c443f246
-localizeentry,#hash_4a6f079813e273c3
+localizeentry,#menu/camo_loot_dogfight
 localizeentry,#hash_4b105b524a93b53d
 localizeentry,#hash_4c2bbe6f91c1ca94
 localizeentry,#hash_4d048d939c70cad9
@@ -210,7 +210,7 @@ localizeentry,#zmui/extrapellets_desc
 localizeentry,#hash_556fbdaebf02d158
 localizeentry,#zmui/high_caliber_desc
 localizeentry,#hash_560d002c6e40e5df
-localizeentry,#hash_561a6371fe1e6f3a
+localizeentry,#menu/camo_loot_vice
 localizeentry,#mpui/steadyaim2_desc
 localizeentry,#menu/camo_loot_bacon
 localizeentry,#hash_58b7aeee47f428da
@@ -251,7 +251,7 @@ localizeentry,#hash_644187f4990e9841
 localizeentry,#mpui/burst2_desc
 localizeentry,#mpui/pistolscope_desc
 localizeentry,#hash_652798c8c39df5b0
-localizeentry,#hash_663114aa52ffcb21
+localizeentry,#menu/camo_loot_ww2
 localizeentry,#hash_665fcaf288735f26
 localizeentry,#hash_66d33b296eb64fbc
 localizeentry,#mpui/stalker2
@@ -287,7 +287,7 @@ localizeentry,#mpui/camo_ash
 localizeentry,#hash_768c5aeecc2d7cc4
 localizeentry,#mpui/grip2_desc
 localizeentry,#hash_7725a43a5e8755ad
-localizeentry,#hash_77dce7635423ba68
+localizeentry,#menu/camo_loot_cyberpunk
 localizeentry,#menu/camo_active_celestial
 localizeentry,#menu/camo_loot_citrus
 localizeentry,#mpui/rf_desc
@@ -310,6 +310,6 @@ localizeentry,#mpui/camo_woodlums
 localizeentry,#hash_7e31505384e0837a
 localizeentry,#mpui/tacknife_desc
 localizeentry,#menu/camo_loot_paradise
-localizeentry,#hash_7fd496c4cf9ec713
+localizeentry,#menu/camo_loot_plasmadrive
 keyvaluepairs,#jj_core_bootstrap
 ttf,#default

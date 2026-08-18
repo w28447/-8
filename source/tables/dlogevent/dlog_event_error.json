@@ -98,7 +98,7 @@
         },
         {
             "name": "#error_code",
-            "scrName": "#hash_16fa9393",
+            "scrName": "#error_code",
             "type": "INT32"
         }
     ],

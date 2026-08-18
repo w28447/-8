@@ -27,7 +27,7 @@ function init_alcatraz_zipline()
 {
     level thread gondola_hostmigration();
     level.player_intersection_tracker_override = &zombie_alcatraz_player_intersection_tracker_override;
-    level.var_fed9dc06 = 0;
+    level.gondola_kill_brush_override = 0;
     level flag::init( "gondola_at_roof" );
     level flag::init( "gondola_at_docks" );
     level flag::init( "gondola_doors_moving" );
@@ -882,7 +882,7 @@ function gondola_lights_green()
 function function_c64e4079()
 {
     wait 5;
-    level.var_fed9dc06 = 1;
+    level.gondola_kill_brush_override = 1;
 }
 
 // Namespace zm_escape_travel/zm_escape_travel
@@ -892,7 +892,7 @@ function function_c64e4079()
 function function_565994f0()
 {
     wait 5;
-    level.var_fed9dc06 = 0;
+    level.gondola_kill_brush_override = 0;
 }
 
 // Namespace zm_escape_travel/zm_escape_travel

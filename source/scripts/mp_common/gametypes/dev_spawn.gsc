@@ -152,7 +152,7 @@
             {
                 function_f084faed();
                 var_9e1b22d = function_f0b81b80( var_14d21c2b );
-                function_bf14041f( var_9e1b22d );
+                reload_spawns( var_9e1b22d );
                 setdvar( #"scr_set_spawns", "<dev string:x164>" );
             }
             
@@ -164,7 +164,7 @@
     // Params 1
     // Checksum 0xd0b9d636, Offset: 0x930
     // Size: 0xec, Type: dev
-    function function_bf14041f( var_9e1b22d )
+    function reload_spawns( var_9e1b22d )
     {
         hidespawnpoints();
         spawning::clear_spawn_points();

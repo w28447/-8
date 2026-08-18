@@ -716,22 +716,22 @@ function private ontimelimit()
 // Params 1
 // Checksum 0x9c35904a, Offset: 0x2c38
 // Size: 0x5c
-function function_b8793906( var_c1e98979 )
+function function_b8793906( end_type )
 {
     round::set_flag( "tie" );
     function_9698aa74( #"none" );
-    thread globallogic::end_round( var_c1e98979 );
+    thread globallogic::end_round( end_type );
 }
 
 // Namespace bounty/bounty
 // Params 2
 // Checksum 0xd143bf4, Offset: 0x2ca0
 // Size: 0x5c
-function function_36f8016e( winning_team, var_c1e98979 )
+function function_36f8016e( winning_team, end_type )
 {
     round::set_winner( winning_team );
     function_9698aa74( winning_team );
-    thread globallogic::function_a3e3bd39( winning_team, var_c1e98979 );
+    thread globallogic::function_a3e3bd39( winning_team, end_type );
 }
 
 // Namespace bounty/bounty

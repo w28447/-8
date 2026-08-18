@@ -184,7 +184,7 @@
                     },
                     {
                         "name": "#send_timeout",
-                        "scrName": "#hash_2bcd17c4",
+                        "scrName": "#send_timeout",
                         "type": "FLOAT"
                     },
                     {

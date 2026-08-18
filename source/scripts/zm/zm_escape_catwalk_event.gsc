@@ -900,7 +900,7 @@ function function_ddadfe7()
         
         if ( isdefined( str_zone ) && isinarray( a_str_zones, str_zone ) && !( isdefined( self.var_9235ac2d ) && self.var_9235ac2d ) )
         {
-            self zm_audio::function_6191af93( #"surrounded", #"self", #"catwalk", #"surrounded" );
+            self zm_audio::vox_override( #"surrounded", #"self", #"catwalk", #"surrounded" );
             self.var_9235ac2d = 1;
         }
         else if ( isdefined( str_zone ) && !isinarray( a_str_zones, str_zone ) && isdefined( self.var_9235ac2d ) && self.var_9235ac2d )

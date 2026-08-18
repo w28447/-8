@@ -950,9 +950,9 @@ function function_67710e66( b_enable = 0 )
 {
     if ( !b_enable )
     {
-        level zm_audio::function_6191af93( #"brutus", #"react", "", "" );
-        level zm_audio::function_6191af93( #"brutus", #"helm_off", "", "" );
-        level zm_audio::function_6191af93( #"brutus", #"smoke_react", "", "" );
+        level zm_audio::vox_override( #"brutus", #"react", "", "" );
+        level zm_audio::vox_override( #"brutus", #"helm_off", "", "" );
+        level zm_audio::vox_override( #"brutus", #"smoke_react", "", "" );
         return;
     }
     

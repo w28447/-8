@@ -155,7 +155,7 @@ function event_handler[level_init] main( eventstruct )
     level thread zm_zonemgr::manage_zones( init_zones );
     level.random_pandora_box_start = 1;
     level thread function_785cadc4();
-    level thread function_963beb87();
+    level thread init_magic_box();
     level thread function_cf100865();
     level.start_chest_name = "start1_chest";
     level.open_chest_location = [];
@@ -655,7 +655,7 @@ function function_39463122()
 // Params 0
 // Checksum 0xc93bc638, Offset: 0x2df0
 // Size: 0x314
-function function_963beb87()
+function init_magic_box()
 {
     if ( !isdefined( level.a_w_ray_guns ) )
     {

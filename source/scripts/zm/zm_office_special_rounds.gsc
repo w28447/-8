@@ -421,7 +421,7 @@ function function_2ce54724()
 // Size: 0x64
 function function_9fb978f( s_params )
 {
-    if ( self.var_c39323b5 === 1 && self.archetype === #"nova_crawler" && isdefined( self.var_faab7250 ) && self.var_faab7250 )
+    if ( self.b_cleaned_up === 1 && self.archetype === #"nova_crawler" && isdefined( self.var_faab7250 ) && self.var_faab7250 )
     {
         level.var_4b9c09fd++;
     }
@@ -433,7 +433,7 @@ function function_9fb978f( s_params )
 // Size: 0x94
 function function_8c040be2( s_params )
 {
-    if ( !isdefined( self.var_c39323b5 ) && self.archetype === #"nova_crawler" && isdefined( self.var_faab7250 ) && self.var_faab7250 )
+    if ( !isdefined( self.b_cleaned_up ) && self.archetype === #"nova_crawler" && isdefined( self.var_faab7250 ) && self.var_faab7250 )
     {
         level.var_a3e1adc4--;
         

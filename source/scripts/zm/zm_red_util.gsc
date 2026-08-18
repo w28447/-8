@@ -643,7 +643,7 @@ function cleanup_zombie()
     }
     
     self zombie_utility::reset_attack_spot();
-    self.var_c39323b5 = 1;
+    self.b_cleaned_up = 1;
     self.var_e700d5e2 = 1;
     self.allowdeath = 1;
     self kill();

@@ -899,8 +899,8 @@ function function_43f61cad()
             break;
     }
     
-    var_45ba344f = function_144a052b( self.archetype );
-    self namespace_9ff9f642::end_slowdown( var_45ba344f );
+    slowdown_type = function_144a052b( self.archetype );
+    self namespace_9ff9f642::end_slowdown( slowdown_type );
     self ai::clear_stun();
 }
 

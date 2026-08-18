@@ -174,7 +174,7 @@ function function_15e6e9ae( vehicle )
 // Params 3, eflags: 0x4
 // Checksum 0x679ff605, Offset: 0x848
 // Size: 0x250
-function private function_521bff14( center, goal, var_e294ac7d )
+function private function_521bff14( center, goal, radius_scalar )
 {
     direction = goal - center;
     steps = int( length( direction ) / 5000 );
@@ -191,7 +191,7 @@ function private function_521bff14( center, goal, var_e294ac7d )
         delta = var_3d4c4e94 - center;
         length = length( delta );
         direction = vectornormalize( delta );
-        new_point = center + direction * length * var_e294ac7d;
+        new_point = center + direction * length * radius_scalar;
         
         /#
             var_ced865d2 = center + direction * length;
@@ -240,7 +240,7 @@ function private function_beba57b9( height )
 // Params 4, eflags: 0x4
 // Checksum 0x9c8d0dc6, Offset: 0xba8
 // Size: 0x306
-function private function_14f79b33( center, radius, height, var_e294ac7d )
+function private function_14f79b33( center, radius, height, radius_scalar )
 {
     self endon( #"death" );
     var_5d59bc67 = 1760;
@@ -256,7 +256,7 @@ function private function_14f79b33( center, radius, height, var_e294ac7d )
         else
         {
             circle_origin = ( level.deathcircle.origin[ 0 ], level.deathcircle.origin[ 1 ], height );
-            circle_radius = level.deathcircle.radius * var_e294ac7d;
+            circle_radius = level.deathcircle.radius * radius_scalar;
         }
         
         if ( circle_radius < 0.01 )
@@ -277,7 +277,7 @@ function private function_14f79b33( center, radius, height, var_e294ac7d )
         new_yaw = current_yaw + time_step * var_c5a2c1c9;
         new_angles = ( 0, new_yaw, 0 );
         goal = circle_origin + anglestoforward( new_angles ) * circle_radius;
-        goal = function_521bff14( circle_origin, goal, var_e294ac7d );
+        goal = function_521bff14( circle_origin, goal, radius_scalar );
         
         /#
             thread player_insertion::debug_line( level.reinsertion.vehicle.origin, goal, ( 0, 1, 0 ), level.reinsertion.debug_duration );
@@ -292,7 +292,7 @@ function private function_14f79b33( center, radius, height, var_e294ac7d )
 // Params 4, eflags: 0x4
 // Checksum 0x6e81239a, Offset: 0xeb8
 // Size: 0x1aa
-function private function_4f356be( start, end, offset, var_3a5f8906 )
+function private function_4f356be( start, end, offset, offset_delay )
 {
     self endon( #"death" );
     self function_a57c34b7( end, 0, 0 );
@@ -302,13 +302,13 @@ function private function_4f356be( start, end, offset, var_3a5f8906 )
     
     for ( i = 1; i <= var_27dfb385 ; i++ )
     {
-        self pathvariableoffset( ( offset, offset, offset ) * ( var_27dfb385 - i + 1 ), var_3a5f8906 );
+        self pathvariableoffset( ( offset, offset, offset ) * ( var_27dfb385 - i + 1 ), offset_delay );
         self player_insertion::function_85635daf( start, distance, i * 5000 / distance );
     }
     
     if ( remainingdist > 0 )
     {
-        self pathvariableoffset( ( offset, offset, offset ), var_3a5f8906 );
+        self pathvariableoffset( ( offset, offset, offset ), offset_delay );
     }
     
     self waittill( #"goal", #"near_goal" );

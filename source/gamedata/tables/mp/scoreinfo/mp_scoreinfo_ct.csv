@@ -290,7 +290,7 @@
 #attack_chopper_objective_kill,0,50,0,25,15,FALSE,2,FALSE,&#,#,8#events_attack_chopper_objective_kill,FALSE,TRUE,TRUE,#,#ultimate,#,#core,#,FALSE
 #attack_chopper_objective_assist,0,50,0,25,15,FALSE,2,FALSE,&#,#,8#events_attack_chopper_objective_assist,FALSE,TRUE,TRUE,#,#ultimate,#,#core,#,FALSE
 #attack_chopper_objective_multikill_3,0,100,0,50,20,FALSE,0,FALSE,&#,#,8#events_attack_chopper_objective_multikill_3,FALSE,TRUE,TRUE,#,#ultimate,#,#major,#,FALSE
-#attack_chopper_kill,0,25,25,25,15,FALSE,2,FALSE,&#hash_1ae6942fc2b0f77c,#,8#events_attack_chopper_kill,FALSE,TRUE,TRUE,#,#ultimate,#,#core,#,FALSE
+#attack_chopper_kill,0,25,25,25,15,FALSE,2,FALSE,&#score/helicopter_kill,#,8#events_attack_chopper_kill,FALSE,TRUE,TRUE,#,#ultimate,#,#core,#,FALSE
 #attack_chopper_multikill_2,0,75,0,25,20,FALSE,0,FALSE,&#,#,8#events_attack_chopper_multikill_2,FALSE,TRUE,TRUE,#,#ultimate,#,#major,#,FALSE
 #attack_chopper_multikill_3,0,100,0,50,20,FALSE,0,FALSE,&#,#,8#events_attack_chopper_multikill_3,FALSE,TRUE,TRUE,#,#ultimate,#,#major,#,FALSE
 #attack_chopper_multikill_4,0,125,0,50,25,FALSE,0,FALSE,&#,#,8#events_attack_chopper_multikill_4,FALSE,TRUE,TRUE,#,#ultimate,#,#major,#,FALSE
@@ -399,7 +399,7 @@
 #grapple_slam_multikill_4,0,125,0,150,25,FALSE,0,FALSE,&#,#,8#events_grapple_slam_multikill_4,FALSE,TRUE,TRUE,#,#equipment,#,#major,#,FALSE
 #grapple_slam_multikill_5,0,150,0,250,25,FALSE,0,FALSE,&#,#,8#events_grapple_slam_multikill_5,FALSE,TRUE,TRUE,#,#equipment,#,#major,#,FALSE
 #grapple_slam_multikill_6,0,200,0,250,25,FALSE,0,FALSE,&#,#,8#events_grapple_slam_multikill_6,FALSE,TRUE,TRUE,#,#equipment,#,#major,#,FALSE
-#hellstorm_missile_kill,0,50,50,75,15,FALSE,2,FALSE,&#hash_6b1c2e52cb53651b,#,8#events_hellstorm_missile_kill,FALSE,TRUE,TRUE,#,#ultimate,#,#core,#,FALSE
+#hellstorm_missile_kill,0,50,50,75,15,FALSE,2,FALSE,&#score/hellstorm_kill,#,8#events_hellstorm_missile_kill,FALSE,TRUE,TRUE,#,#ultimate,#,#core,#,FALSE
 #hellstorm_missile_objective_kill,0,50,0,75,15,FALSE,0,FALSE,&#,#,8#events_hellstorm_missile_objective_kill,FALSE,TRUE,TRUE,#,#ultimate,#,#core,#,FALSE
 #hellstorm_missile_vanguard,0,100,0,100,15,FALSE,0,FALSE,&#,#,8#events_hellstorm_missile_vanguard,FALSE,TRUE,TRUE,#,#ultimate,#,#core,#,FALSE
 #hellstorm_missile_objective_defense,0,50,0,75,15,FALSE,0,FALSE,&#,#,8#events_hellstorm_missile_objective_defense,FALSE,TRUE,TRUE,#,#ultimate,#,#core,#,FALSE

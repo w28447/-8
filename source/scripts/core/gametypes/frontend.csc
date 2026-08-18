@@ -285,7 +285,7 @@ function function_e843475e( localclientnum, menuname )
 function setupclientmenus( localclientnum )
 {
     lui::initmenudata( localclientnum );
-    lui::createcustomcameramenu( "Main", localclientnum, &lobby_main, 1, undefined, &function_58994f4a );
+    lui::createcustomcameramenu( "Main", localclientnum, &lobby_main, 1, undefined, &lobby_closed );
     lui::createcustomcameramenu( "LobbyInspection", localclientnum, &handle_inspect_player, 0, &start_character_rotating_any, &end_character_rotating_any );
     lui::linktocustomcharacter( "LobbyInspection", localclientnum, "inspection_character", 0 );
     lui::createcustomcameramenu( "SinglePlayerInspection", localclientnum, &handle_inspect_player, 0, &start_character_rotating_any, &end_character_rotating_any );
@@ -895,7 +895,7 @@ function entityspawned( localclientnum )
         mode = int( args[ 0 ] );
         character_index = int( args[ 1 ] );
         outfit_index = int( args[ 2 ] );
-        var_7823b8b1 = int( args[ 3 ] );
+        option_types = int( args[ 3 ] );
         var_d0b01271 = lui::getcharacterdataformenu( menu_name, localclientnum );
         [[ var_d0b01271 ]]->set_character_mode( mode );
         [[ var_d0b01271 ]]->set_character_index( character_index );
@@ -910,7 +910,7 @@ function entityspawned( localclientnum )
             [[ var_d0b01271 ]]->set_character_outfit( outfitindex );
             [[ var_d0b01271 ]]->set_character_war_paint_outfit( outfitindex );
             
-            if ( mode == 1 && ( var_7823b8b1 == -1 || var_7823b8b1 == 8 ) )
+            if ( mode == 1 && ( option_types == -1 || option_types == 8 ) )
             {
                 foreach ( preset in var_9cf37283.presets )
                 {
@@ -950,7 +950,7 @@ function entityspawned( localclientnum )
             
             foreach ( type, options in var_9cf37283.options )
             {
-                if ( function_2351cba1( type, mode ) && ( var_7823b8b1 == -1 || var_7823b8b1 == type ) )
+                if ( function_2351cba1( type, mode ) && ( option_types == -1 || option_types == type ) )
                 {
                     [[ var_d0b01271 ]]->set_character_outfit( outfitindex );
                     [[ var_d0b01271 ]]->set_character_war_paint_outfit( outfitindex );
@@ -1117,7 +1117,7 @@ function entityspawned( localclientnum )
         }
         
         camo_index = var_2d8a24a3.item_index == 0 ? 0 : function_8b51d9d1( hash( var_2d8a24a3.name ) );
-        var_9ce34e01 = var_2d8a24a3.name;
+        option_name = var_2d8a24a3.name;
         
         if ( isdefined( camo_index ) )
         {
@@ -1130,7 +1130,7 @@ function entityspawned( localclientnum )
                 if ( !( isdefined( var_3594168e.disabled ) && var_3594168e.disabled ) )
                 {
                     camo_index = function_8b51d9d1( var_3594168e.camooption );
-                    var_9ce34e01 = hashtostring( var_3594168e.camooption );
+                    option_name = hashtostring( var_3594168e.camooption );
                 }
                 else
                 {
@@ -1162,7 +1162,7 @@ function entityspawned( localclientnum )
             while ( !weapon_model isstreamed( 8, 4 ) && iteration < 1 );
             
             wait 2;
-            function_da10fc8f( localclientnum, "<dev string:x28c>" + weapon_name + "<dev string:x12a>" + weapon_name + "<dev string:x29e>" + var_9ce34e01 + "<dev string:x148>" );
+            function_da10fc8f( localclientnum, "<dev string:x28c>" + weapon_name + "<dev string:x12a>" + weapon_name + "<dev string:x29e>" + option_name + "<dev string:x148>" );
         }
     }
 
@@ -3072,7 +3072,7 @@ function lobby_main( localclientnum, menu_name, state )
 // Params 2
 // Checksum 0xf3fb6c37, Offset: 0xc1e0
 // Size: 0x9c
-function function_58994f4a( localclientnum, menu_data )
+function lobby_closed( localclientnum, menu_data )
 {
     level thread function_a71254a9( localclientnum, 0 );
     function_e56abdb( localclientnum );

@@ -297,7 +297,7 @@ function activate_elixir( n_index )
     level endon( #"end_game" );
     has_succeeded = 0;
     
-    if ( isdefined( level.var_3c8ad64b ) && level.var_3c8ad64b != n_index )
+    if ( isdefined( level.enabled_bgb ) && level.enabled_bgb != n_index )
     {
         return has_succeeded;
     }
@@ -981,11 +981,11 @@ function function_4650bb90( cooldown_perc )
 // Params 2
 // Checksum 0x1d1d43df, Offset: 0x2620
 // Size: 0xbc
-function function_69b5ca2a( slot_index, var_b23960a )
+function function_69b5ca2a( slot_index, locked_down )
 {
     if ( isdefined( self.bgb_pack[ slot_index ] ) && isdefined( level.bgb[ self.bgb_pack[ slot_index ] ] ) && !( isdefined( level.bgb[ self.bgb_pack[ slot_index ] ].var_58860b3 ) && level.bgb[ self.bgb_pack[ slot_index ] ].var_58860b3 ) )
     {
-        self clientfield::set_player_uimodel( "zmhud.bgb_carousel." + slot_index + ".lockdown", var_b23960a );
+        self clientfield::set_player_uimodel( "zmhud.bgb_carousel." + slot_index + ".lockdown", locked_down );
     }
 }
 
@@ -1002,11 +1002,11 @@ function function_4f8aa77a( slot_index )
 // Params 2
 // Checksum 0x1946ab41, Offset: 0x2728
 // Size: 0x74
-function function_da912bff( slot_index, var_b23960a )
+function function_da912bff( slot_index, locked_down )
 {
     if ( isdefined( self.bgb_pack[ slot_index ] ) && isdefined( level.bgb[ self.bgb_pack[ slot_index ] ] ) )
     {
-        self clientfield::set_player_uimodel( "zmhud.bgb_carousel." + slot_index + ".unavailable", var_b23960a );
+        self clientfield::set_player_uimodel( "zmhud.bgb_carousel." + slot_index + ".unavailable", locked_down );
     }
 }
 
@@ -1212,7 +1212,7 @@ function function_59004002( str_bgb, b_disable = 1 )
     // Size: 0x34c, Type: dev
     function private function_c1091a8f( str_cmd, key )
     {
-        var_8327ff7c = getdvarint( #"hash_7877ee182ba11433", 0 );
+        n_playerid = getdvarint( #"hash_7877ee182ba11433", 0 );
         a_players = getplayers();
         keys = getarraykeys( level.bgb );
         var_6c522f60 = 0;
@@ -1265,7 +1265,7 @@ function function_59004002( str_bgb, b_disable = 1 )
         {
             for ( i = 0; i < a_players.size ; i++ )
             {
-                if ( var_8327ff7c != -1 && var_8327ff7c != i )
+                if ( n_playerid != -1 && n_playerid != i )
                 {
                     continue;
                 }

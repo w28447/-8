@@ -81,7 +81,7 @@
                     },
                     {
                         "name": "#server_addr",
-                        "scrName": "#hash_33d2a8ec",
+                        "scrName": "#server_addr",
                         "type": "UINT32"
                     },
                     {

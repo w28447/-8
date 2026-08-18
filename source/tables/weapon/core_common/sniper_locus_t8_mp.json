@@ -55,9 +55,9 @@
         ]
     ],
     "firesounddistant": "#hash_5f022cd68aefd198",
-    "firesound": "#hash_94f9f21b8c5c7af",
+    "firesound": "#wpn_sfb_fire_npc",
     "firesoundplayer": "#hash_eed602173233aca",
-    "sound1d0": "#hash_94f9f21b8c5c7af",
+    "sound1d0": "#wpn_sfb_fire_npc",
     "sound200": "#hash_eed602173233aca",
     "sound240": "#hash_631a067190b54300",
     "sound250": "#hash_242aa17124751841",

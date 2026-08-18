@@ -1597,7 +1597,7 @@ function function_ea8d45ef( a_ents )
 // Size: 0x10c
 function function_625a9bcf()
 {
-    level zm_audio::function_6191af93( #"shield_piece", #"pickup", "", "" );
+    level zm_audio::vox_override( #"shield_piece", #"pickup", "", "" );
     w_component = zm_crafting::get_component( #"zitem_zhield_zpear_part_1" );
     zm_items::function_4d230236( w_component, &function_a3fd9b43 );
     w_component = zm_crafting::get_component( #"zitem_zhield_zpear_part_2" );

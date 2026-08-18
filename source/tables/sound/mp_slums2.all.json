@@ -1631,13 +1631,13 @@
         {
             "value": 127,
             "next": 65535,
-            "name": "#hash_583cb47f6baf929d",
+            "name": "#amb_flies_lrg",
             "sequence": 0,
             "cullDistance": 500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_583cb47f6baf929d",
+                    "name": "#amb_flies_lrg",
                     "assetId": "#amb/animals/insects/flies/flies_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -1680,13 +1680,13 @@
         {
             "value": 10,
             "next": 65535,
-            "name": "#hash_7155287f79a59b72",
+            "name": "#amb_flies_sml",
             "sequence": 0,
             "cullDistance": 400,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7155287f79a59b72",
+                    "name": "#amb_flies_sml",
                     "assetId": "#amb/animals/insects/flies/flies_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -1729,13 +1729,13 @@
         {
             "value": 55,
             "next": 65535,
-            "name": "#hash_43830dc6e1323b97",
+            "name": "#amb_flour_light",
             "sequence": 0,
             "cullDistance": 550,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_43830dc6e1323b97",
+                    "name": "#amb_flour_light",
                     "assetId": "#amb/lights/buzz/buzz_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -3113,13 +3113,13 @@
         {
             "value": 16,
             "next": 28,
-            "name": "#hash_59a921749704b2db",
+            "name": "#amb_sewer_drain",
             "sequence": 0,
             "cullDistance": 500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_59a921749704b2db",
+                    "name": "#amb_sewer_drain",
                     "assetId": "#amb/environment/water/drain/street_drain.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -4198,13 +4198,13 @@
         {
             "value": 165,
             "next": 65535,
-            "name": "#hash_41ae96f63b62a646",
+            "name": "#amb_wind_extreior_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_41ae96f63b62a646",
+                    "name": "#amb_wind_extreior_2d",
                     "assetId": "#amb/environment/location_bgs/country_air/amb_country_air.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -4530,13 +4530,13 @@
         {
             "value": 182,
             "next": 65535,
-            "name": "#hash_5f0cf846c1e5f92e",
+            "name": "#amb_wind_interior_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5f0cf846c1e5f92e",
+                    "name": "#amb_wind_interior_2d",
                     "assetId": "#amb/environment/wind/interior/mid_lb/amb_wind_ext_mid.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -4579,13 +4579,13 @@
         {
             "value": 185,
             "next": 65535,
-            "name": "#hash_772291f7c6c6e652",
+            "name": "#amb_wind_middle",
             "sequence": 0,
             "cullDistance": 3000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_772291f7c6c6e652",
+                    "name": "#amb_wind_middle",
                     "assetId": "#hash_42e3d105d9e1f5b1",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -4624,7 +4624,7 @@
                     "unk178": "#hash_200000801"
                 },
                 {
-                    "name": "#hash_772291f7c6c6e652",
+                    "name": "#amb_wind_middle",
                     "assetId": "#hash_3b739fc3569041e7",
                     "assetFileNameSustain": "#mp_slums2.all",
                     "assetIdRelease": "#mp_slums2.all",
@@ -20892,13 +20892,13 @@
         {
             "value": 73,
             "next": 106,
-            "name": "#hash_2ec3de3874855810",
+            "name": "#exp_redbarrel",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
@@ -20939,7 +20939,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
@@ -20980,7 +20980,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
@@ -21021,7 +21021,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
@@ -21062,7 +21062,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
@@ -21103,7 +21103,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
@@ -21144,7 +21144,7 @@
                     "unk178": "#hash_6000b0804"
                 },
                 {
-                    "name": "#hash_2ec3de3874855810",
+                    "name": "#exp_redbarrel",
                     "secondaryname": "#exp_barrel_close",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_slums2.all",
@@ -24623,7 +24623,7 @@
             "duck": "default",
             "id": "#mp_slums2_ally",
             "reverb": "#room_bedroom",
-            "loop": "#hash_41ae96f63b62a646",
+            "loop": "#amb_wind_extreior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -24645,7 +24645,7 @@
             "duck": "default",
             "id": "#mp_slums2_broken_bldg",
             "reverb": "#room_bedroom",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -24667,7 +24667,7 @@
             "duck": "default",
             "id": "#mp_slums2_garage",
             "reverb": "#room_hallway",
-            "loop": "#hash_5f0cf846c1e5f92e",
+            "loop": "#amb_wind_interior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -24689,7 +24689,7 @@
             "duck": "default",
             "id": "#mp_slums2_outdoor",
             "reverb": "#outdoor_still",
-            "loop": "#hash_41ae96f63b62a646",
+            "loop": "#amb_wind_extreior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
@@ -24711,7 +24711,7 @@
             "duck": "default",
             "id": "#mp_slums2_overhang",
             "reverb": "#room_bedroom",
-            "loop": "#hash_41ae96f63b62a646",
+            "loop": "#amb_wind_extreior_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",

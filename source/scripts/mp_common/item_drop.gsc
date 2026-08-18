@@ -59,7 +59,7 @@ function __init__()
     level.var_2746aef8 = &function_ba4c90d9;
     
     /#
-        function_344f8c02();
+        _init_debug();
     #/
 }
 
@@ -69,7 +69,7 @@ function __init__()
     // Params 0, eflags: 0x4
     // Checksum 0xf28da510, Offset: 0x550
     // Size: 0x54, Type: dev
-    function private function_344f8c02()
+    function private _init_debug()
     {
         adddebugcommand( "<dev string:x38>" + util::get_map_name() + "<dev string:x48>" );
         level thread function_60c9a9e1();
@@ -325,14 +325,14 @@ function private function_23b6897( player, position )
         var_67aa12c4 = 43;
         var_978f1539 = var_67aa12c4 * var_67aa12c4;
         var_e20a427 = array( 15, 15, 15, 15 );
-        var_ea03e490 = array( 180 / var_e20a427[ 0 ], 240 / var_e20a427[ 1 ], 360 / var_e20a427[ 2 ], 360 / var_e20a427[ 3 ] );
-        var_44a167ba = array( 0, 0, int( var_ea03e490[ 2 ] - var_ea03e490[ 0 ] ), int( var_ea03e490[ 3 ] - var_ea03e490[ 1 ] ) );
+        offsetchecks = array( 180 / var_e20a427[ 0 ], 240 / var_e20a427[ 1 ], 360 / var_e20a427[ 2 ], 360 / var_e20a427[ 3 ] );
+        var_44a167ba = array( 0, 0, int( offsetchecks[ 2 ] - offsetchecks[ 0 ] ), int( offsetchecks[ 3 ] - offsetchecks[ 1 ] ) );
         distance = distance( position, centerpoint );
         distances = array( distance, distance * 1.5, distance, distance * 1.5 );
         checkdistance = distance * 3;
         assert( distances.size == var_44a167ba.size );
         assert( distances.size == var_e20a427.size );
-        assert( distances.size == var_ea03e490.size );
+        assert( distances.size == offsetchecks.size );
         var_f4b807cb = item_world::function_2e3efdda( centerpoint, undefined, undefined, checkdistance, undefined, 1 );
         var_c36bd68a = arraysortclosest( level.var_ace9fb52, centerpoint, 24, 0, checkdistance );
         var_ac2b6007 = arraysortclosest( level.item_spawn_stashes, centerpoint, 36, 0, checkdistance );
@@ -342,10 +342,10 @@ function private function_23b6897( player, position )
         {
             currentdistance = distances[ distancechecks ];
             
-            for ( check = var_44a167ba[ distancechecks ]; check < var_ea03e490[ distancechecks ] ; check++ )
+            for ( check = var_44a167ba[ distancechecks ]; check < offsetchecks[ distancechecks ] ; check++ )
             {
-                var_7e8fc0d7 = check % 2 == 1 ? int( ceil( check / -2 ) ) : int( ceil( check / 2 ) );
-                angle = theta + var_e20a427[ distancechecks ] * var_7e8fc0d7;
+                offsetcheck = check % 2 == 1 ? int( ceil( check / -2 ) ) : int( ceil( check / 2 ) );
+                angle = theta + var_e20a427[ distancechecks ] * offsetcheck;
                 checkpoint = currentdistance * ( cos( angle ), sin( angle ), 0 ) + centerpoint + var_891dc751;
                 
                 /#

@@ -2198,7 +2198,7 @@ function function_71da60d1()
 // Params 5
 // Checksum 0x7e65d99f, Offset: 0x8ba0
 // Size: 0x244
-function function_ea6a4f96( startorigin, endorigin, var_872f085f, offsetvec, var_35c96bb3 )
+function function_ea6a4f96( startorigin, endorigin, var_872f085f, offsetvec, offsetdelay )
 {
     self endon( #"death" );
     self setspeedimmediate( 5 );
@@ -2216,13 +2216,13 @@ function function_ea6a4f96( startorigin, endorigin, var_872f085f, offsetvec, var
         
         for ( i = 1; i <= var_27dfb385 ; i++ )
         {
-            self pathvariableoffset( offsetvec * ( var_27dfb385 - i + 1 ), var_35c96bb3 );
+            self pathvariableoffset( offsetvec * ( var_27dfb385 - i + 1 ), offsetdelay );
             self function_85635daf( startorigin, distance, i * 5000 / distance );
         }
         
         if ( remainingdist > 0 )
         {
-            self pathvariableoffset( offsetvec, var_35c96bb3 );
+            self pathvariableoffset( offsetvec, offsetdelay );
         }
     }
     

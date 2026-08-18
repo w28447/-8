@@ -1370,9 +1370,9 @@ function function_d4bbc142()
     while ( level.a_spawn_beacons.size > 0 )
     {
         n_time = gettime() / 1000;
-        var_94156736 = n_time - n_start_time;
+        n_active_time = n_time - n_start_time;
         
-        if ( var_94156736 >= 10 )
+        if ( n_active_time >= 10 )
         {
             var_36b789c0 = 1;
         }

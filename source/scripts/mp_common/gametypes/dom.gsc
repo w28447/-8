@@ -242,7 +242,7 @@ function function_de560341()
 // Params 1
 // Checksum 0x5132b5f, Offset: 0x1630
 // Size: 0x11c
-function onendround( var_c1e98979 )
+function onendround( end_type )
 {
     for ( i = 0; i < level.domflags.size ; i++ )
     {
@@ -261,7 +261,7 @@ function onendround( var_c1e98979 )
         }
     }
     
-    function_1609a882( var_c1e98979 );
+    function_1609a882( end_type );
 }
 
 // Namespace dom/dom
@@ -2478,11 +2478,11 @@ function onupdateuserate()
 // Params 1
 // Checksum 0x6811f7d, Offset: 0x8308
 // Size: 0x26e
-function function_1609a882( var_c1e98979 )
+function function_1609a882( end_type )
 {
     gamemodedata = spawnstruct();
     
-    switch ( var_c1e98979 )
+    switch ( end_type )
     {
         case 4:
             gamemodedata.wintype = "round_score_reached";

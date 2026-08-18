@@ -563,42 +563,42 @@ function function_e17a230f( team )
     
     objective_strings = level.gametype_scriptbundle.objective_strings;
     
-    foreach ( index, var_53c9b682 in objective_strings )
+    foreach ( index, string_group in objective_strings )
     {
-        if ( isdefined( var_53c9b682.attacker ) && var_53c9b682.attacker && team != game.attackers )
+        if ( isdefined( string_group.attacker ) && string_group.attacker && team != game.attackers )
         {
             continue;
         }
         
-        if ( isdefined( var_53c9b682.defender ) && var_53c9b682.defender && team != game.defenders )
+        if ( isdefined( string_group.defender ) && string_group.defender && team != game.defenders )
         {
             continue;
         }
         
-        if ( isdefined( var_53c9b682.overtime ) && var_53c9b682.overtime )
+        if ( isdefined( string_group.overtime ) && string_group.overtime )
         {
             if ( !game.overtime_round )
             {
                 continue;
             }
             
-            if ( isdefined( var_53c9b682.overtime_round ) && var_53c9b682.overtime_round && var_53c9b682.overtime_round != game.overtime_round )
+            if ( isdefined( string_group.overtime_round ) && string_group.overtime_round && string_group.overtime_round != game.overtime_round )
             {
                 continue;
             }
             
-            if ( isdefined( var_53c9b682.overtime_winner ) && var_53c9b682.overtime_winner && isdefined( game.overtime_first_winner ) && team != game.overtime_first_winner )
+            if ( isdefined( string_group.overtime_winner ) && string_group.overtime_winner && isdefined( game.overtime_first_winner ) && team != game.overtime_first_winner )
             {
                 continue;
             }
             
-            if ( isdefined( var_53c9b682.overtime_loser ) && var_53c9b682.overtime_loser && isdefined( game.overtime_first_winner ) && team == game.overtime_first_winner )
+            if ( isdefined( string_group.overtime_loser ) && string_group.overtime_loser && isdefined( game.overtime_first_winner ) && team == game.overtime_first_winner )
             {
                 continue;
             }
         }
         
-        function_78e3e07b( team, index, var_53c9b682 );
+        function_78e3e07b( team, index, string_group );
         return;
     }
 }

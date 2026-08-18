@@ -112,12 +112,12 @@
         },
         {
             "name": "#total_slots",
-            "scrName": "#hash_b12e5152",
+            "scrName": "#total_slots",
             "type": "UINT32"
         },
         {
             "name": "#weapon_title",
-            "scrName": "#hash_642f4ecd",
+            "scrName": "#weapon_title",
             "type": "STRING",
             "len": 48
         }

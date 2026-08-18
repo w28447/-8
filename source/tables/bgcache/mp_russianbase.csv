@@ -250,7 +250,7 @@ soundalias,#hash_192fe77a5d4bb462
 soundalias,#hash_192fe87a5d4bb615
 soundalias,#exp_barrel
 soundalias,#dst_water_bottle
-soundalias,#hash_1a98ee3af8b89642
+soundalias,#amb_comp_loop
 soundalias,#pfx_steam_hiss
 soundalias,#hash_1f9b1d980061ea0e
 soundalias,#dst_fern
@@ -288,7 +288,7 @@ soundalias,#hash_2e25f1d6ca55e5d9
 soundalias,#hash_2e6db3f3e2d76742
 soundalias,#exp_mp_propane_tank_explo
 soundalias,#hash_2ea17e37b669270c
-soundalias,#hash_2ec3de3874855810
+soundalias,#exp_redbarrel
 soundalias,#dst_server_power
 soundalias,#dst_foodstand
 soundalias,#hash_303a62e9feb361dc

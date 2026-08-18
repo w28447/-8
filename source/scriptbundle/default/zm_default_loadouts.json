@@ -275,7 +275,7 @@
             "hash_6be35a7a": 4,
             "startweapon": "#pistol_topbreak_t8",
             "hash_a2df9d5d": 4,
-            "class/zm_sword_pistol:hash_5f547a4f": "localized17#class/zm_sword_pistol",
+            "class/zm_sword_pistol:customclassname_2": "localized17#class/zm_sword_pistol",
             "hash_4a73ec43": 4,
             "primarygrenade": "#eq_frag_grenade",
             "herogadget": "#hero_flamethrower_t8_lv1"
@@ -345,7 +345,7 @@
             "hash_6be35a7a": 4,
             "startweapon": "#pistol_burst_t8",
             "hash_a2df9d5d": 4,
-            "hash_3ebc51ebd36d60b9:hash_5f547a4f": "localized17#hash_3ebc51ebd36d60b9",
+            "hash_3ebc51ebd36d60b9:customclassname_2": "localized17#hash_3ebc51ebd36d60b9",
             "hash_4a73ec43": 4,
             "primarygrenade": "#claymore",
             "herogadget": "#hero_gravityspikes_t8_lv1"
@@ -415,7 +415,7 @@
             "hash_6be35a7a": 4,
             "startweapon": "#pistol_burst_t8",
             "hash_a2df9d5d": 4,
-            "hash_78d8dbc2e189765f:hash_5f547a4f": "localized17#hash_78d8dbc2e189765f",
+            "hash_78d8dbc2e189765f:customclassname_2": "localized17#hash_78d8dbc2e189765f",
             "hash_4a73ec43": 4,
             "primarygrenade": "#eq_wraith_fire",
             "herogadget": "#hero_flamethrower_t8_lv1"

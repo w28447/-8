@@ -8749,7 +8749,7 @@ string,#hash_246c7d9118b22299
 string,#hash_247f17f522492991
 string,#hash_24a3e0f402bfd000
 string,#zmweapon/ar_modular_t8_upgraded
-string,#hash_24c9561478db5594
+string,#menu/camo_loot_masks
 string,#zmtrials/magic_trick_desc
 string,#hash_24d7a11f11523cca
 string,#hash_253fa05b6436b54c
@@ -9031,7 +9031,7 @@ string,#hash_49e88c8053d4f73e
 string,#zmtrials/waterlogged
 string,#mpui/camo_heatstroke
 string,#hash_4a584bc8c443f246
-string,#hash_4a6f079813e273c3
+string,#menu/camo_loot_dogfight
 string,#hash_4abb03b57a547954
 string,#zmtrials/better_late_than_lever_desc
 string,#zmtrials/give_it_your_best_shotgun_desc
@@ -9133,7 +9133,7 @@ string,#hash_559659e3129018db
 string,#zmtrials/defend_the_temple
 string,#zmui/high_caliber_desc
 string,#hash_560d002c6e40e5df
-string,#hash_561a6371fe1e6f3a
+string,#menu/camo_loot_vice
 string,#hash_566498ca0044aee2
 string,#hash_569c87a91821557d
 string,#hash_56df244e4d364594
@@ -9268,7 +9268,7 @@ string,#hash_652798c8c39df5b0
 string,#hash_652b072deeb9df88
 string,#hash_6549dfc2889aed92
 string,#zmtrials/lever_again_desc
-string,#hash_663114aa52ffcb21
+string,#menu/camo_loot_ww2
 string,#zmweapon/smg_handling_t8_upgraded
 string,#hash_6655ab6e9517c0f2
 string,#hash_665fcaf288735f26
@@ -9406,7 +9406,7 @@ string,#hash_7725a43a5e8755ad
 string,#zmtrials/crawling_with_zombies
 string,#hash_777f682f8c48d07d
 string,#zmweapon/lmg_double_t8_upgraded
-string,#hash_77dce7635423ba68
+string,#menu/camo_loot_cyberpunk
 string,#menu/camo_active_celestial
 string,#zmtrials/creeper
 string,#menu/camo_loot_citrus
@@ -9454,16 +9454,16 @@ string,#hash_7ebea2becf0c1aee
 string,#hash_7ee2f55273bf91f8
 string,#hash_7f60e043a8757876
 string,#hash_7f6d2a324bfa6338
-string,#hash_7fd496c4cf9ec713
+string,#menu/camo_loot_plasmadrive
 eventstring,#medal_received
 eventstring,#score_event
 eventstring,#loot_contract_complete
 eventstring,#player_spawned
-eventstring,#hash_20ba407211eb6136
+eventstring,#mp_weekly_challenge_complete
 eventstring,#player_callout_colon
 eventstring,#gun_level_complete
 eventstring,#prematch_timer_ended
-eventstring,#hash_40363f99f3682006
+eventstring,#mp_daily_challenge_complete
 eventstring,#killstreak_received
 eventstring,#rank_up
 eventstring,#loot_contract_progress
@@ -9756,7 +9756,7 @@ soundalias,#hash_2ad319a5e843fcf
 soundalias,#hash_2b2a0a78edd9b99
 soundalias,#hash_2b683c575628981
 soundalias,#hash_2b7d3c08361ddcf
-soundalias,#hash_2b8a09fbde3380e
+soundalias,#wpn_wwgrenade_cocoon_stop
 soundalias,#hash_2b9df768f7d3095
 soundalias,#hash_2bf4bfeb2572b9e
 soundalias,#hash_2c8ccfa199ca934
@@ -10111,7 +10111,7 @@ soundalias,#hash_6d14a1598cf4383
 soundalias,#hash_6d4458090ba1b30
 soundalias,#hash_6d4d62dfce3fdad
 soundalias,#hash_6df9d71376c9ef9
-soundalias,#hash_6e5885d63e0768a
+soundalias,#wpn_wwgrenade_cocoon_lp
 soundalias,#hash_6e6217ac6bf3676
 soundalias,#hash_6e98b1c0a6dbfb2
 soundalias,#hash_6eb81da33b71802
@@ -10336,7 +10336,7 @@ soundalias,#hash_9408fcc3e792b63
 soundalias,#hash_940f62c37963658
 soundalias,#hash_94840c5d1b15830
 soundalias,#hash_94be46bbdb2a343
-soundalias,#hash_94f9f21b8c5c7af
+soundalias,#wpn_sfb_fire_npc
 soundalias,#hash_9502d01f30aa0dd
 soundalias,#hash_953e62d6631f3dd
 soundalias,#hash_9560c6233711dc7
@@ -11754,7 +11754,7 @@ soundalias,#hash_19960d40c47a63a1
 soundalias,#hash_19960eefdc1a590b
 soundalias,#hash_19990438eb5c05ff
 soundalias,#hash_1999bf92db6700cb
-soundalias,#hash_199a2886f9e28417
+soundalias,#fly_land_damage_plr
 soundalias,#hash_199cb35244cf9cd0
 soundalias,#hash_199de7173fb36de6
 soundalias,#hash_19a1429c28482e6d
@@ -11910,7 +11910,7 @@ soundalias,#hash_1b381195a88a437c
 soundalias,#hash_1b38f290b90e668c
 soundalias,#hash_1b39fd64b5795129
 soundalias,#hash_1b3bbc7e4e043492
-soundalias,#hash_1b4762f4193d2e60
+soundalias,#zmb_bgb_idleeyes_start
 soundalias,#hash_1b4d6140a6116370
 soundalias,#hash_1b4d8687477483e1
 soundalias,#hash_1b53bb071dca3b0e
@@ -12305,7 +12305,7 @@ soundalias,#hash_1ff0faece03c1b95
 soundalias,#hash_1ff2252786f4be49
 soundalias,#hash_1ff2e67084a1c39b
 soundalias,#hash_1ff307873829a0ef
-soundalias,#hash_1ff5b615c573d7b2
+soundalias,#zmb_bgb_idleeyes_loop
 soundalias,#hash_1ff80398dd775017
 soundalias,#hash_1ffc883f6f5d458f
 soundalias,#hash_1fff2aa71bff91fa
@@ -12449,7 +12449,7 @@ soundalias,#wpn_smg_handling_lfe_plr
 soundalias,#hash_21aa427744050ac9
 soundalias,#hash_21ab94f672ebcffe
 soundalias,#hash_21adb8a5f1174d05
-soundalias,#hash_21aeac9deedebb00
+soundalias,#zmb_bgb_eyecandy_deactivate
 soundalias,#fly_smg_standard_mag_in
 soundalias,#hash_21b4bf152e90fd76
 soundalias,#hash_21b510251b727a3a
@@ -13125,7 +13125,7 @@ soundalias,#hash_297f8c27474c289d
 soundalias,#hash_29807c91be5b74b3
 soundalias,#hash_2983435c8468ce25
 soundalias,#hash_298b15841e269958
-soundalias,#hash_298d649141910cad
+soundalias,#zmb_bgb_disorderly_weap_switch
 soundalias,#hash_298f8ebfd19a269c
 soundalias,#hash_29920d6289eeb5ba
 soundalias,#hash_299420a6f789b4a5
@@ -13405,7 +13405,7 @@ soundalias,#hash_2cae25f28d122e33
 soundalias,#hash_2cb127c8b96f24be
 soundalias,#hash_2cb15707e673793a
 soundalias,#hash_2cb27d59f223f6bb
-soundalias,#hash_2cb309a832349e9e
+soundalias,#chr_revive_end
 soundalias,#fly_land_npc_glass
 soundalias,#hash_2cbb97e63465ac6a
 soundalias,#hash_2cbd1a72d59eecdd
@@ -13813,7 +13813,7 @@ soundalias,#hash_3117dc8def932264
 soundalias,#zmb_spawn_powerup_intro_loop
 soundalias,#hash_311a0440ae5cdb37
 soundalias,#hash_312101c79667d44e
-soundalias,#hash_3121290a9e0043a0
+soundalias,#zmb_bgb_fearinheadlights_loop
 soundalias,#hash_312343edef77b727
 soundalias,#hash_3124a0cae400b94d
 soundalias,#hash_3126452156b9ed89
@@ -14090,7 +14090,7 @@ soundalias,#hash_345141e029c3f63b
 soundalias,#hash_3453b70976aedcc2
 soundalias,#hash_34549007527ea0e6
 soundalias,#hash_3455090626c204ea
-soundalias,#hash_3457dc494aef7aa0
+soundalias,#zmb_bgb_mindblown_start
 soundalias,#hash_3457f5b873cd2c7a
 soundalias,#hash_34582bac928480bb
 soundalias,#hash_3459f983a7a93cbb
@@ -14592,7 +14592,7 @@ soundalias,#hash_39aebe4ef801adde
 soundalias,#hash_39af6855ee69322c
 soundalias,#hash_39b1746d29f2e72a
 soundalias,#hash_39b6e66e01e7e55d
-soundalias,#hash_39bb30dc30fabc50
+soundalias,#zmb_insta_kill_loop_off
 soundalias,#hash_39be2154e9872319
 soundalias,#hash_39c001910911c1e9
 soundalias,#hash_39c2d12d36f0ad06
@@ -14742,7 +14742,7 @@ soundalias,#hash_3b2202fcb577fdf3
 soundalias,#hash_3b23156b286d0108
 soundalias,#hash_3b23c69502add340
 soundalias,#hash_3b277f4572603015
-soundalias,#hash_3b2c903557b05f22
+soundalias,#mpl_turret_micro_startup
 soundalias,#hash_3b2cef4b9ec39f9d
 soundalias,#hash_3b311fcab9acde02
 soundalias,#hash_3b3ca38987cf06cf
@@ -14809,7 +14809,7 @@ soundalias,#hash_3bee9a363d0414f9
 soundalias,#hash_3bf274f05048b0e8
 soundalias,#hash_3bf6c5d55d8e48fb
 soundalias,#hash_3bfb2f52882db40e
-soundalias,#hash_3bfc05bae820b829
+soundalias,#zmb_bgb_self_medication
 soundalias,#hash_3bfc1ac135676d95
 soundalias,#hash_3bffb960bb884b3f
 soundalias,#hash_3c0241e769a9c378
@@ -15133,7 +15133,7 @@ soundalias,#hash_3faac589348476ac
 soundalias,#hash_3fac0fb15058f252
 soundalias,#hash_3fad41ddb96e47ed
 soundalias,#hash_3fae73e0dee7787f
-soundalias,#hash_3faf53a136ad9643
+soundalias,#zmb_bgb_boardtodeath_imp
 soundalias,#hash_3fb10b9ffa59ee4b
 soundalias,#hash_3fb10dd7204917cc
 soundalias,#hash_3fb6ae7f52d40cae
@@ -15480,7 +15480,7 @@ soundalias,#fly_lmg_standard_mag_out
 soundalias,#hash_43d12b47b10cb8e1
 soundalias,#hash_43d5c7616b0d2b0a
 soundalias,#hash_43d5e6104bef4648
-soundalias,#hash_43d669b0cef95100
+soundalias,#wpn_wwgrenade_cocoon_imp
 soundalias,#hash_43d73f7ae95a9667
 soundalias,#hash_43d7657a222cb9c0
 soundalias,#hash_43da6bc7cac44c13
@@ -16816,7 +16816,7 @@ soundalias,#hash_526652a4dd5e0c57
 soundalias,#hash_52668a63b104e3a5
 soundalias,#hash_5270d62d97ea919b
 soundalias,#hash_5271a9bee570c8a5
-soundalias,#hash_5271b5ba36511091
+soundalias,#zmb_bgb_disorderly_5seconds
 soundalias,#hash_52801eacb6f0d2f5
 soundalias,#hash_52811dc842a08c37
 soundalias,#hash_52831865c3d20d0a
@@ -16922,7 +16922,7 @@ soundalias,#hash_5399048b615d8ee2
 soundalias,#hash_539b8ed883a6d766
 soundalias,#hash_539ce018de8c2b61
 soundalias,#hash_539e2c6ee9cfd670
-soundalias,#hash_53a04e61d528304d
+soundalias,#fly_riotshield_impact_knife
 soundalias,#hash_53a844a9b2871326
 soundalias,#hash_53b43a1047c19bfb
 soundalias,#hash_53b98dba8a1bc9c0
@@ -18666,7 +18666,7 @@ soundalias,#fly_38_shells_out
 soundalias,#hash_67235f680228f8d8
 soundalias,#pfx_spark_xlrg
 soundalias,#hash_672a1b49f9e07185
-soundalias,#hash_672c1186ddc27472
+soundalias,#fly_land_damage_npc
 soundalias,#hash_672dc59751137b70
 soundalias,#hash_67331a6718cff0e5
 soundalias,#hash_67338ff551a571ed
@@ -19789,7 +19789,7 @@ soundalias,#hash_7400ebe279601e56
 soundalias,#hash_7402289c710c12de
 soundalias,#hash_7403a16b71df876f
 soundalias,#hash_74050d4f9301d927
-soundalias,#hash_7409c5ea42ed2183
+soundalias,#zmb_bgb_mindblown_pop
 soundalias,#hash_740b002f17f2983b
 soundalias,#hash_740c777e4c28170b
 soundalias,#hash_740ef66369e15365
@@ -19804,7 +19804,7 @@ soundalias,#hash_7424675fd6a3691e
 soundalias,#hash_74249d12d9bb5869
 soundalias,#hash_7424e3534cd352ca
 soundalias,#hash_7431d4af135f9128
-soundalias,#hash_7436e9aea553469b
+soundalias,#mpl_splash_death
 soundalias,#hash_743a00f8d703e9d1
 soundalias,#hash_743a500a2bfa3ce7
 soundalias,#hash_7444e7f28ae67e76
@@ -19823,7 +19823,7 @@ soundalias,#hash_745611c36222c1cf
 soundalias,#hash_74565f8e8438d0db
 soundalias,#hash_74570b8fca5d2eac
 soundalias,#hash_745d0425e521ca9f
-soundalias,#hash_74627fa46b9d0881
+soundalias,#zmb_bgb_idleeyes_end
 soundalias,#hash_7467357783055c77
 soundalias,#hash_746aad1cb3d0d264
 soundalias,#hash_746b9a4e389eb6c7
@@ -20382,7 +20382,7 @@ soundalias,#hash_7a8c656fa43fc389
 soundalias,#hash_7a8db670165ce6bb
 soundalias,#hash_7a9555155bad15c6
 soundalias,#hash_7a9b1315c76203da
-soundalias,#hash_7a9ce02c4729cfbe
+soundalias,#zmb_insta_kill_loop
 soundalias,#hash_7a9d38f28da2de67
 soundalias,#hash_7a9da7f862e7baa8
 soundalias,#hash_7aa94c971e8ca208
@@ -20596,7 +20596,7 @@ soundalias,#hash_7d2f1486a66f0b35
 soundalias,#hash_7d2f255b5a9cd62e
 soundalias,#hash_7d344230f6b47e50
 soundalias,#vox_homun_deploy_exert_homu_0
-soundalias,#hash_7d36712abe522e81
+soundalias,#chr_health_lowhealth_exit
 soundalias,#hash_7d38c35ea0d48b35
 soundalias,#hash_7d3e5108bf113d0e
 soundalias,#hash_7d3f5b3052cdb17c

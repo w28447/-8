@@ -199336,13 +199336,13 @@
         {
             "value": 513,
             "next": 65535,
-            "name": "#hash_43d669b0cef95100",
+            "name": "#wpn_wwgrenade_cocoon_imp",
             "sequence": 0,
             "cullDistance": 1750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_43d669b0cef95100",
+                    "name": "#wpn_wwgrenade_cocoon_imp",
                     "assetId": "#zmb/perksacola/widowswine/imp/ww_entity_imp_00.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_red.all",
                     "assetIdRelease": "#zm_red.all",
@@ -199381,7 +199381,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_43d669b0cef95100",
+                    "name": "#wpn_wwgrenade_cocoon_imp",
                     "assetId": "#zmb/perksacola/widowswine/imp/ww_entity_imp_01.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_red.all",
                     "assetIdRelease": "#zm_red.all",
@@ -199420,7 +199420,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_43d669b0cef95100",
+                    "name": "#wpn_wwgrenade_cocoon_imp",
                     "assetId": "#zmb/perksacola/widowswine/imp/ww_entity_imp_02.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_red.all",
                     "assetIdRelease": "#zm_red.all",
@@ -199459,7 +199459,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_43d669b0cef95100",
+                    "name": "#wpn_wwgrenade_cocoon_imp",
                     "assetId": "#zmb/perksacola/widowswine/imp/ww_entity_imp_03.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_red.all",
                     "assetIdRelease": "#zm_red.all",
@@ -199502,13 +199502,13 @@
         {
             "value": 1055,
             "next": 908,
-            "name": "#hash_6e5885d63e0768a",
+            "name": "#wpn_wwgrenade_cocoon_lp",
             "sequence": 0,
             "cullDistance": 1750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6e5885d63e0768a",
+                    "name": "#wpn_wwgrenade_cocoon_lp",
                     "assetId": "#zmb/perksacola/widowswine/lp/ww_cocoon_lp.ll100.pc.snd",
                     "assetFileNameSustain": "#zm_red.all",
                     "assetIdRelease": "#zm_red.all",
@@ -199551,13 +199551,13 @@
         {
             "value": 1236,
             "next": 65535,
-            "name": "#hash_2b8a09fbde3380e",
+            "name": "#wpn_wwgrenade_cocoon_stop",
             "sequence": 0,
             "cullDistance": 1750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2b8a09fbde3380e",
+                    "name": "#wpn_wwgrenade_cocoon_stop",
                     "assetId": "#wpn/hero/gel_gun/firefly/die/firefly_die_0.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_red.all",
                     "assetIdRelease": "#zm_red.all",
@@ -199596,7 +199596,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_2b8a09fbde3380e",
+                    "name": "#wpn_wwgrenade_cocoon_stop",
                     "assetId": "#wpn/hero/gel_gun/firefly/die/firefly_die_1.ln100.pc.snd",
                     "assetFileNameSustain": "#zm_red.all",
                     "assetIdRelease": "#zm_red.all",
@@ -226107,13 +226107,13 @@
         {
             "value": 623,
             "next": 1156,
-            "name": "#hash_3004f588bf60f0ec",
+            "name": "#zmb_hellhound_loop_breath",
             "sequence": 0,
             "cullDistance": 500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3004f588bf60f0ec",
+                    "name": "#zmb_hellhound_loop_breath",
                     "assetFileNameSustain": "#zm_red.all",
                     "assetIdRelease": "#zm_red.all",
                     "assetFileNameRelease": "#zm_red.all",
@@ -226162,7 +226162,7 @@
             "aliases": [
                 {
                     "name": "#zmb_hellhound_loop_fire",
-                    "secondaryname": "#hash_3004f588bf60f0ec",
+                    "secondaryname": "#zmb_hellhound_loop_breath",
                     "assetId": "#zmb/ai/hellhounds/loop_00.ll100.pc.snd",
                     "assetFileNameSustain": "#zm_red.all",
                     "assetIdRelease": "#zm_red.all",
@@ -260177,13 +260177,13 @@
         {
             "value": 1227,
             "next": 754,
-            "name": "#hash_6cfa41a4b04b4a0a",
+            "name": "#zmb_vocals_hellhound_ambient",
             "sequence": 0,
             "cullDistance": 2600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_5ea54bbe11e34393",
                     "assetFileNameSustain": "#zm_red.all",
                     "assetIdRelease": "#zm_red.all",
@@ -260224,7 +260224,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_27b042a648289b76",
                     "assetFileNameSustain": "#zm_red.all",
                     "assetIdRelease": "#zm_red.all",
@@ -260265,7 +260265,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_4035ed0eb97a7941",
                     "assetFileNameSustain": "#zm_red.all",
                     "assetIdRelease": "#zm_red.all",
@@ -260306,7 +260306,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_109d56a0c742b33c",
                     "assetFileNameSustain": "#zm_red.all",
                     "assetIdRelease": "#zm_red.all",
@@ -260347,7 +260347,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_14435def71c8db8f",
                     "assetFileNameSustain": "#zm_red.all",
                     "assetIdRelease": "#zm_red.all",
@@ -260388,7 +260388,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_615f62a09e4046d2",
                     "assetFileNameSustain": "#zm_red.all",
                     "assetIdRelease": "#zm_red.all",
@@ -260429,7 +260429,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_17d36126b54fb15d",
                     "assetFileNameSustain": "#zm_red.all",
                     "assetIdRelease": "#zm_red.all",
@@ -260470,7 +260470,7 @@
                     "unk178": "#hash_901040206"
                 },
                 {
-                    "name": "#hash_6cfa41a4b04b4a0a",
+                    "name": "#zmb_vocals_hellhound_ambient",
                     "assetId": "#hash_3c580c765614c5c8",
                     "assetFileNameSustain": "#zm_red.all",
                     "assetIdRelease": "#zm_red.all",

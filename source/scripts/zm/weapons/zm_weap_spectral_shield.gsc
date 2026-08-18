@@ -1346,8 +1346,8 @@ function function_35d74d73( e_attacker )
     
     if ( !self clientfield::get( "" + #"zombie_spectral_key_stun" ) )
     {
-        var_21c1ba1 = e_attacker getentitynumber();
-        self clientfield::set( "" + #"zombie_spectral_key_stun", var_21c1ba1 + 1 );
+        n_player_num = e_attacker getentitynumber();
+        self clientfield::set( "" + #"zombie_spectral_key_stun", n_player_num + 1 );
         e_attacker clientfield::set( "" + #"spectral_key_beam_flash", 2 );
         
         if ( self.zm_ai_category == #"basic" || self.zm_ai_category == #"enhanced" )
@@ -1427,8 +1427,8 @@ function function_986701ac( e_attacker )
     
     if ( !self clientfield::get( "" + #"zombie_spectral_key_stun" ) )
     {
-        var_21c1ba1 = e_attacker getentitynumber();
-        self clientfield::set( "" + #"zombie_spectral_key_stun", var_21c1ba1 + 1 );
+        n_player_num = e_attacker getentitynumber();
+        self clientfield::set( "" + #"zombie_spectral_key_stun", n_player_num + 1 );
         e_attacker clientfield::set( "" + #"spectral_key_beam_flash", 2 );
     }
     
@@ -1498,8 +1498,8 @@ function private function_a370d183( e_attacker )
     
     if ( !self clientfield::get( "" + #"zombie_spectral_key_stun" ) )
     {
-        var_21c1ba1 = e_attacker getentitynumber();
-        self clientfield::set( "" + #"zombie_spectral_key_stun", var_21c1ba1 + 1 );
+        n_player_num = e_attacker getentitynumber();
+        self clientfield::set( "" + #"zombie_spectral_key_stun", n_player_num + 1 );
         e_attacker clientfield::set( "" + #"spectral_key_beam_flash", 2 );
     }
     

@@ -567,7 +567,7 @@ function function_e059d0e1()
         wait 1;
         mdl_sentinel_artifact playsound( #"hash_5de064f33e9e49b8" );
         v_origin = mdl_sentinel_artifact.origin;
-        level thread function_ae259e17( v_origin );
+        level thread energy_trails( v_origin );
         
         if ( !level flag::get( #"hash_420b070435236eab" ) )
         {
@@ -2265,7 +2265,7 @@ function pegasus_strike( str_side )
 // Params 1
 // Checksum 0xc8c76189, Offset: 0x8438
 // Size: 0xec
-function function_ae259e17( v_origin )
+function energy_trails( v_origin )
 {
     var_ea4f0ca0 = spawner::simple_spawn_single( "sp_power_quest_energy_trails" );
     var_fc16302e = spawner::simple_spawn_single( "sp_power_quest_energy_trails" );

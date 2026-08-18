@@ -290,7 +290,7 @@ function function_c9aa9ee5( vehicle )
     vehicle clientfield::set( "vehicletransition", 1 );
     vehicle thread audio::sndupdatevehiclecontext( 1 );
     vehicle thread watch_timeout();
-    vehicle thread function_2cee4434();
+    vehicle thread watch_detonation();
     vehicle thread function_22528515();
     vehicle thread watch_water();
     player vehicle::set_vehicle_drivable_time_starting_now( int( vehicle.var_22a05c26.ksduration ) );
@@ -346,7 +346,7 @@ function function_8cb72281( vehicle, exitrequestedbyowner )
 // Params 0
 // Checksum 0x63b0ae37, Offset: 0x1118
 // Size: 0xd4
-function function_2cee4434()
+function watch_detonation()
 {
     vehicle = self;
     vehicle endon( #"shutdown", #"death" );

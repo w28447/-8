@@ -31,14 +31,14 @@ function autoexec __init()
 function __init__()
 {
     clientfield::register( "world", "toilet_ee_play", 19000, 2, "int" );
-    level thread function_6e7c4665();
+    level thread init_asylum();
 }
 
 // Namespace wz_asylum/wz_asylum
 // Params 0
 // Checksum 0x2665d34, Offset: 0x278
 // Size: 0x150
-function function_6e7c4665()
+function init_asylum()
 {
     if ( !level.var_7ad3f6a0 )
     {

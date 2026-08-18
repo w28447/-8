@@ -5,7 +5,7 @@
     "hash_10fb995c": "j_knee_le",
     "hash_4c24e997afad36e0:hash_fc5542ba": "fx#hash_4c24e997afad36e0",
     "hash_ac8f613d": "j_neck2",
-    "hash_58708170": "j_knee_ri",
+    "rightleg_gibtag": "j_knee_ri",
     "hash_4c24e997afad36e0:hash_47bdae1b": "fx#hash_4c24e997afad36e0",
     "configstringfiletype": "scriptbundle",
     "blood/fx8_blood_cam_gib_spray_zm:hash_1587b3ec": "fx#blood/fx8_blood_cam_gib_spray_zm",
@@ -19,8 +19,8 @@
     "hash_59422cff58693587:hash_c0c0eab8": "fx#hash_59422cff58693587",
     "c_t8_zmb_3rdclass_male_body3_s_larm": "model#c_t8_zmb_3rdclass_male_body3_s_larm",
     "name": "c_t8_zmb_crew_sailor_gib_def",
-    "hash_a9101c87": "j_knee_le",
-    "hash_72c1b8c7": "j_elbow_ri",
+    "leftleg_gibtag": "j_knee_le",
+    "rightarm_gibtag": "j_elbow_ri",
     "c_t8_zmb_3rdclass_male_body3_s_rarm": "model#c_t8_zmb_3rdclass_male_body3_s_rarm",
     "hash_57034716c105e41e:hash_d94aaeb4": "fx#hash_57034716c105e41e",
     "hash_4c24e997afad36e0:hash_70bbc0ec": "fx#hash_4c24e997afad36e0",
@@ -30,6 +30,6 @@
     "hash_86de3f71": "j_spinelower",
     "hash_7b951deec27b35c1:hash_eb4fa02d": "fx#hash_7b951deec27b35c1",
     "hash_59422cff58693587:hash_af1e1bdd": "fx#hash_59422cff58693587",
-    "hash_c9e7922f": "j_elbow_le",
+    "leftarm_gibtag": "j_elbow_le",
     "hash_4c24e997afad36e0:hash_166f9028": "fx#hash_4c24e997afad36e0"
 }

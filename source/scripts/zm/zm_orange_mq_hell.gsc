@@ -408,7 +408,7 @@ function function_a340f5a2()
     foreach ( e_pap in level.var_4d8e32c8 )
     {
         e_pap flag::set( "pap_waiting_for_user" );
-        e_pap zm_orange_pap::function_e3921120( 0 );
+        e_pap zm_orange_pap::show_pap_machine( 0 );
     }
     
     wait 2;
@@ -1025,7 +1025,7 @@ function function_737be926()
         foreach ( e_pap in level.var_4d8e32c8 )
         {
             e_pap flag::set( "<dev string:x14c>" );
-            e_pap zm_orange_pap::function_e3921120( 0 );
+            e_pap zm_orange_pap::show_pap_machine( 0 );
         }
     }
 

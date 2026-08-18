@@ -606,15 +606,15 @@ function function_5d585945( hardpointtype )
 {
     self notify( #"evasive" );
     self.evasive = 1;
-    var_ca7b2d46 = function_430510ec( self.str_path_start, "targetname" );
+    a_nd_start = function_430510ec( self.str_path_start, "targetname" );
     
-    if ( var_ca7b2d46.size > 1 )
+    if ( a_nd_start.size > 1 )
     {
-        self.nd_path_start = array::random( var_ca7b2d46 );
+        self.nd_path_start = array::random( a_nd_start );
     }
     else
     {
-        self.nd_path_start = var_ca7b2d46[ 0 ];
+        self.nd_path_start = a_nd_start[ 0 ];
     }
     
     nd_path_start = self.nd_path_start;
@@ -1219,7 +1219,7 @@ function function_701302a8()
     
     while ( level.var_ae0bbaac.size > 0 )
     {
-        function_1eaaceab( level.var_ae0bbaac );
+        arrayremovedead( level.var_ae0bbaac );
         wait 1;
     }
 }
@@ -1264,8 +1264,8 @@ function function_52d196f2( n_difficulty = 2 )
     
     while ( level.a_vh_choppers.size > 0 || level.var_ae0bbaac.size > 0 )
     {
-        function_1eaaceab( level.a_vh_choppers );
-        function_1eaaceab( level.var_ae0bbaac );
+        arrayremovedead( level.a_vh_choppers );
+        arrayremovedead( level.var_ae0bbaac );
         wait 0.5;
     }
     
@@ -1365,7 +1365,7 @@ function wave_enemy_bot( var_764a1fa0 )
     
     while ( level.var_4d4de8f9.size > 0 )
     {
-        function_1eaaceab( level.var_4d4de8f9 );
+        arrayremovedead( level.var_4d4de8f9 );
         wait 0.1;
     }
 }
@@ -1475,7 +1475,7 @@ function function_f75c4ec2( v_target )
                             if ( isalive( var_c95e2891 ) )
                             {
                                 var_c95e2891 dodamage( 100000, var_c95e2891.origin );
-                                function_1eaaceab( level.var_ae0bbaac, 0 );
+                                arrayremovedead( level.var_ae0bbaac, 0 );
                                 wait 0.1;
                             }
                         }

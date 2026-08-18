@@ -86,7 +86,7 @@
     "members": [
         {
             "name": "#client_xuid",
-            "scrName": "#hash_d65126e4",
+            "scrName": "#client_xuid",
             "type": "UINT64"
         },
         {

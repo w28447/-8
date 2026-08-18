@@ -612,7 +612,7 @@ class celevator
             else if ( b_inside )
             {
                 flag::set( "inner_button_menu_active" );
-                var_10b20309 gameobjects::function_2efe0342();
+                var_10b20309 gameobjects::disable_gameobject();
                 thread function_da0405b7( e_player );
                 e_player clientfield::set_to_player( "elevator_floor_selection", 1 );
                 waitresult = e_player waittill( #"menuresponse", #"disconnect", #"death" );
@@ -886,11 +886,11 @@ function __init__()
     
     foreach ( s_instance in a_elevators )
     {
-        var_1313d6ba = s_instance init_elevator();
+        c_elevator = s_instance init_elevator();
         
-        if ( isdefined( var_1313d6ba ) )
+        if ( isdefined( c_elevator ) )
         {
-            s_instance.var_1313d6ba = var_1313d6ba;
+            s_instance.c_elevator = c_elevator;
         }
     }
     
@@ -948,31 +948,31 @@ function init_elevator()
     }
     
     var_1ec3151c = struct::get_script_bundle( "elevators", isdefined( self.var_e87a94f3 ) ? self.var_e87a94f3 : self.scriptbundlename );
-    var_1313d6ba = new celevator();
-    [[ var_1313d6ba ]]->init( var_1ec3151c, self );
-    var_1313d6ba flag::init( "elevator_moving" );
-    var_1313d6ba flag::init( "floor_reached" );
-    var_1313d6ba flag::init( "inner_button_menu_active" );
-    [[ var_1313d6ba ]]->function_d842399a();
+    c_elevator = new celevator();
+    [[ c_elevator ]]->init( var_1ec3151c, self );
+    c_elevator flag::init( "elevator_moving" );
+    c_elevator flag::init( "floor_reached" );
+    c_elevator flag::init( "inner_button_menu_active" );
+    [[ c_elevator ]]->function_d842399a();
     
-    if ( var_1313d6ba.m_s_bundle.var_46d9acb0 == "auto_up" || var_1313d6ba.m_s_bundle.var_46d9acb0 == "auto_down" )
+    if ( c_elevator.m_s_bundle.var_46d9acb0 == "auto_up" || c_elevator.m_s_bundle.var_46d9acb0 == "auto_down" )
     {
-        [[ var_1313d6ba ]]->function_dc171119();
+        [[ c_elevator ]]->function_dc171119();
     }
-    else if ( var_1313d6ba.m_s_bundle.var_46d9acb0 == "push_button" )
+    else if ( c_elevator.m_s_bundle.var_46d9acb0 == "push_button" )
     {
         a_s_gameobjects = struct::get_array( "elevator_push_button", "targetname" );
         
         foreach ( s_gameobject in a_s_gameobjects )
         {
-            if ( isdefined( s_gameobject.target ) && s_gameobject.target === var_1313d6ba.var_a2f96f78.targetname )
+            if ( isdefined( s_gameobject.target ) && s_gameobject.target === c_elevator.var_a2f96f78.targetname )
             {
-                thread [[ var_1313d6ba ]]->function_789cee92( s_gameobject );
+                thread [[ c_elevator ]]->function_789cee92( s_gameobject );
             }
         }
     }
     
-    return var_1313d6ba;
+    return c_elevator;
 }
 
 // Namespace elevators/elevators_shared
@@ -995,13 +995,13 @@ function function_a7d817a6()
     
     foreach ( s_instance in a_elevators )
     {
-        if ( s_instance.var_1313d6ba.m_s_bundle.var_46d9acb0 == "auto_up" || s_instance.var_1313d6ba.m_s_bundle.var_46d9acb0 == "auto_down" )
+        if ( s_instance.c_elevator.m_s_bundle.var_46d9acb0 == "auto_up" || s_instance.c_elevator.m_s_bundle.var_46d9acb0 == "auto_down" )
         {
-            thread [[ s_instance.var_1313d6ba ]]->function_cae3f0e7();
+            thread [[ s_instance.c_elevator ]]->function_cae3f0e7();
             continue;
         }
         
-        if ( s_instance.var_1313d6ba.m_s_bundle.var_46d9acb0 == "up_and_down" )
+        if ( s_instance.c_elevator.m_s_bundle.var_46d9acb0 == "up_and_down" )
         {
             var_af8a8a63 = struct::get_array( "elevator_button_inside", "targetname" );
             var_d3c75026 = struct::get_array( "elevator_button_call", "targetname" );
@@ -1010,7 +1010,7 @@ function function_a7d817a6()
             {
                 if ( isdefined( s_gameobject.target ) && s_gameobject.target == s_instance.targetname )
                 {
-                    [[ s_instance.var_1313d6ba ]]->function_8986542b( s_gameobject, 0, 1 );
+                    [[ s_instance.c_elevator ]]->function_8986542b( s_gameobject, 0, 1 );
                     break;
                 }
             }
@@ -1019,7 +1019,7 @@ function function_a7d817a6()
             {
                 if ( isdefined( s_gameobject.target ) && s_gameobject.target == s_instance.targetname )
                 {
-                    [[ s_instance.var_1313d6ba ]]->function_8986542b( s_gameobject, 1, 0 );
+                    [[ s_instance.c_elevator ]]->function_8986542b( s_gameobject, 1, 0 );
                 }
             }
         }

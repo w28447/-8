@@ -539,8 +539,8 @@ function private function_4e1abe8f()
 function private function_fa31ee20( e_item )
 {
     self thread function_c3778d8a( 2, undefined );
-    var_21c1ba1 = self getentitynumber();
-    e_item clientfield::set( "" + #"hash_7e5c581ade235dfc", var_21c1ba1 + 1 );
+    n_player_num = self getentitynumber();
+    e_item clientfield::set( "" + #"hash_7e5c581ade235dfc", n_player_num + 1 );
 }
 
 // Namespace zm_red_oracle_boons/zm_red_oracle_boons

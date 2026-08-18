@@ -10143,7 +10143,7 @@
         "rules": [
             {
                 "type": "SET_DVAR",
-                "name": "#hash_5e7148da0db4c4f6",
+                "name": "#ui_zm_gamemodegroup",
                 "value": "zclassic",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10158,7 +10158,7 @@
         "rules": [
             {
                 "type": "SET_DVAR",
-                "name": "#hash_5e7148da0db4c4f6",
+                "name": "#ui_zm_gamemodegroup",
                 "value": "zstandard",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10173,7 +10173,7 @@
         "rules": [
             {
                 "type": "SET_DVAR",
-                "name": "#hash_5e7148da0db4c4f6",
+                "name": "#ui_zm_gamemodegroup",
                 "value": "ztrials",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10189,7 +10189,7 @@
         "rules": [
             {
                 "type": "SET_DVAR",
-                "name": "#hash_5e7148da0db4c4f6",
+                "name": "#ui_zm_gamemodegroup",
                 "value": "zclassic",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10204,7 +10204,7 @@
         "rules": [
             {
                 "type": "SET_DVAR",
-                "name": "#hash_5e7148da0db4c4f6",
+                "name": "#ui_zm_gamemodegroup",
                 "value": "ztutorial",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10219,7 +10219,7 @@
         "rules": [
             {
                 "type": "SET_DVAR",
-                "name": "#hash_5e7148da0db4c4f6",
+                "name": "#ui_zm_gamemodegroup",
                 "value": "ztcm_zod",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10234,7 +10234,7 @@
         "rules": [
             {
                 "type": "SET_DVAR",
-                "name": "#hash_5e7148da0db4c4f6",
+                "name": "#ui_zm_gamemodegroup",
                 "value": "ztcm_towers",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10249,7 +10249,7 @@
         "rules": [
             {
                 "type": "SET_DVAR",
-                "name": "#hash_5e7148da0db4c4f6",
+                "name": "#ui_zm_gamemodegroup",
                 "value": "ztcm_escape",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -10264,7 +10264,7 @@
         "rules": [
             {
                 "type": "SET_DVAR",
-                "name": "#hash_5e7148da0db4c4f6",
+                "name": "#ui_zm_gamemodegroup",
                 "value": "ztcm_mansion",
                 "platformMask": 7,
                 "environmentMask": 7,
@@ -11518,7 +11518,7 @@
         "rules": [
             {
                 "type": "SET_DVAR",
-                "name": "#hash_5e7148da0db4c4f6",
+                "name": "#ui_zm_gamemodegroup",
                 "value": "zclassic",
                 "platformMask": 7,
                 "environmentMask": 7,

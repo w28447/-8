@@ -106,9 +106,9 @@
             {
                 var_1c56a327 = "<dev string:x67>";
                 
-                foreach ( var_21c1ba1, str_anim in var_f4b34dc1 )
+                foreach ( n_player_num, str_anim in var_f4b34dc1 )
                 {
-                    var_1c56a327 += "<dev string:xa7>" + var_21c1ba1 + "<dev string:xb1>" + str_anim;
+                    var_1c56a327 += "<dev string:xa7>" + n_player_num + "<dev string:xb1>" + str_anim;
                 }
             }
             

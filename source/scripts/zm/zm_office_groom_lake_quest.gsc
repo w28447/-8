@@ -1166,7 +1166,7 @@ function function_55ca39d8()
     
     foreach ( a_e_barrier in self.a_e_barriers )
     {
-        a_e_barrier thread function_fa3de51f();
+        a_e_barrier thread delete_barrier();
     }
 }
 
@@ -1174,7 +1174,7 @@ function function_55ca39d8()
 // Params 0
 // Checksum 0x500832d, Offset: 0x35b0
 // Size: 0x4c
-function function_fa3de51f()
+function delete_barrier()
 {
     self.origin += ( 0, 0, 1000 );
     self waittill( #"movedone" );

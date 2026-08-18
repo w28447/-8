@@ -111,7 +111,7 @@
     "members": [
         {
             "name": "#error_msg",
-            "scrName": "#hash_2198ee57",
+            "scrName": "#error_msg",
             "type": "STRING",
             "len": 256
         }

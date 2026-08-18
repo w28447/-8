@@ -88,9 +88,9 @@ function function_d075b84e()
         
         if ( randomint( 100 ) <= 2 )
         {
-            if ( !level.var_8a3036cc && isdefined( level.var_db43cbd7 ) )
+            if ( !level.var_8a3036cc && isdefined( level.raygun_itemlist ) )
             {
-                itemlist = level.var_db43cbd7;
+                itemlist = level.raygun_itemlist;
                 level.var_8a3036cc = 1;
             }
         }
@@ -312,9 +312,9 @@ function function_78d5fb9b()
                             }
                         }
                         
-                        var_2e0e7774 = arraysortclosest( spawn_points, point.origin, 20, 1, var_c5330f11 );
+                        items_close = arraysortclosest( spawn_points, point.origin, 20, 1, var_c5330f11 );
                         
-                        foreach ( close in var_2e0e7774 )
+                        foreach ( close in items_close )
                         {
                             if ( bullettracepassed( point.origin + ( 0, 0, 16 ), close.origin, 0, level.players[ 0 ] ) )
                             {

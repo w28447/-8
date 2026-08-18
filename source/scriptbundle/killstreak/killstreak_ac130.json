@@ -57,7 +57,7 @@
     "type": "killstreak",
     "ksarmorregenradius": 120,
     "hash_65d707d0": 1,
-    "hash_442e1ad0cf0099e0:hash_1d2a2ca4": "localized17#hash_442e1ad0cf0099e0",
+    "killstreak/gunship_crate:hash_1d2a2ca4": "localized17#killstreak/gunship_crate",
     "ksweapon": "weapon#ac130_mp",
     "hash_40b8c40b4a36e949:hash_8c4d7906": "localized17#hash_40b8c40b4a36e949",
     "ksrobshowfriendly": 1,

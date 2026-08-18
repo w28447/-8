@@ -51,28 +51,28 @@ function function_2613aeec( enabled )
 function function_4f4cf89e()
 {
     item_world::function_4de3ca98();
-    var_daed388 = function_91b29d2a( #"cu21_spawn" );
+    reznov_items = function_91b29d2a( #"cu21_spawn" );
     
-    if ( !isdefined( var_daed388[ 0 ] ) )
+    if ( !isdefined( reznov_items[ 0 ] ) )
     {
         return;
     }
     
-    var_daed388 = array::randomize( var_daed388 );
-    var_8a9122c8 = var_daed388[ 0 ];
+    reznov_items = array::randomize( reznov_items );
+    var_8a9122c8 = reznov_items[ 0 ];
     var_5901fe7f = 0;
     
-    for ( x = 1; x < var_daed388.size ; x++ )
+    for ( x = 1; x < reznov_items.size ; x++ )
     {
         if ( isdefined( var_5901fe7f ) && var_5901fe7f )
         {
-            item_world::consume_item( var_daed388[ x ] );
+            item_world::consume_item( reznov_items[ x ] );
             continue;
         }
         
-        if ( distance2d( var_daed388[ x ].origin, var_8a9122c8.origin ) < 500 )
+        if ( distance2d( reznov_items[ x ].origin, var_8a9122c8.origin ) < 500 )
         {
-            item_world::consume_item( var_daed388[ x ] );
+            item_world::consume_item( reznov_items[ x ] );
             continue;
         }
         

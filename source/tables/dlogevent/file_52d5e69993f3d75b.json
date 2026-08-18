@@ -101,7 +101,7 @@
         },
         {
             "name": "#total_space",
-            "scrName": "#hash_66909a36",
+            "scrName": "#total_space",
             "type": "INT32"
         },
         {

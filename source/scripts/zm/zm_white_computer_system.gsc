@@ -49,7 +49,7 @@ function init()
     level.var_f13364b4.var_12633dc5 = undefined;
     level.countdown_clock = struct::spawn();
     level.countdown_clock clock_init( 0 );
-    level.countdown_clock function_eb17b80b();
+    level.countdown_clock clock_hide();
     level.countdown_clock.var_4cdc88ae = 0;
     level thread function_45822b7e();
     
@@ -100,13 +100,13 @@ function init()
         level thread function_6338402();
         level.var_f13364b4.n_code_private_mannequin = 7626;
         level.var_f13364b4.a_n_codes[ level.var_f13364b4.n_code_private_mannequin ] = { #var_544c05c6:1, #var_d9d9d617:&function_c9dcb3aa };
-        level.var_f13364b4.n_code_sawyer = function_4696e086( 1, &function_69dd6c5b );
-        level.var_f13364b4.n_code_mccain = function_4696e086( 1, &function_97ab5da4 );
-        level.var_f13364b4.n_code_pernell = function_4696e086( 1, &function_9a405843 );
-        level.var_f13364b4.var_3c358113 = function_4696e086( 1, &function_7ddee93a );
-        level.var_f13364b4.var_c8629019 = function_4696e086( 1, &function_68dfeba9 );
-        level.var_f13364b4.var_becc7ced = function_4696e086( 1, &function_68dfeba9 );
-        level.var_f13364b4.var_5beab72b = function_4696e086( 1, &function_68dfeba9 );
+        level.var_f13364b4.n_code_sawyer = generate_code( 1, &function_69dd6c5b );
+        level.var_f13364b4.n_code_mccain = generate_code( 1, &function_97ab5da4 );
+        level.var_f13364b4.n_code_pernell = generate_code( 1, &function_9a405843 );
+        level.var_f13364b4.var_3c358113 = generate_code( 1, &function_7ddee93a );
+        level.var_f13364b4.var_c8629019 = generate_code( 1, &function_68dfeba9 );
+        level.var_f13364b4.var_becc7ced = generate_code( 1, &function_68dfeba9 );
+        level.var_f13364b4.var_5beab72b = generate_code( 1, &function_68dfeba9 );
         level.var_d7e5aaac = array( level.var_f13364b4.n_code_private_mannequin, level.var_f13364b4.n_code_sawyer, level.var_f13364b4.n_code_mccain, level.var_f13364b4.n_code_pernell, level.var_f13364b4.var_c8629019, level.var_f13364b4.var_becc7ced, level.var_f13364b4.var_5beab72b, level.var_f13364b4.var_3c358113 );
         level thread function_ca3efcd8();
         function_7ee18649();
@@ -306,7 +306,7 @@ function reset_code()
 // Params 2
 // Checksum 0x6b58d8a6, Offset: 0x25b0
 // Size: 0x112
-function function_4696e086( var_5c0c59ca = undefined, var_64d0790a = undefined )
+function generate_code( var_5c0c59ca = undefined, var_64d0790a = undefined )
 {
     n_random_int = randomintrange( 0, 10000 );
     
@@ -1134,7 +1134,7 @@ function clock_countdown()
     level.e_face_screen function_b2fba7f5();
     level.e_face_screen thread function_a196c54b();
     self endon( #"cancel_clock_countdown" );
-    self function_80707067();
+    self clock_show();
     self function_5e0b6734( 1, 0, 1, 0, 1 );
     self waittill( #"hash_6cb5d5beb3730446" );
     self cancel_clock_countdown();
@@ -1147,7 +1147,7 @@ function clock_countdown()
 function cancel_clock_countdown()
 {
     self function_58dddc4e();
-    self function_eb17b80b();
+    self clock_hide();
     self.var_4cdc88ae = 0;
     self notify( #"cancel_clock_countdown" );
 }
@@ -1316,7 +1316,7 @@ function function_58dddc4e()
 // Params 0
 // Checksum 0x152d4f92, Offset: 0x51a0
 // Size: 0x9c
-function function_80707067()
+function clock_show()
 {
     self.e_clock_colon show();
     self.var_2b315dde[ 3 ] show();
@@ -1329,7 +1329,7 @@ function function_80707067()
 // Params 0
 // Checksum 0xb3fc6345, Offset: 0x5248
 // Size: 0x9c
-function function_eb17b80b()
+function clock_hide()
 {
     self.e_clock_colon hide();
     self.var_2b315dde[ 3 ] hide();
@@ -1346,13 +1346,13 @@ function function_7a1b3cff()
 {
     for ( i = 0; i < 3 ; i++ )
     {
-        self function_eb17b80b();
+        self clock_hide();
         wait 0.5;
-        self function_80707067();
+        self clock_show();
         wait 0.5;
     }
     
-    self function_eb17b80b();
+    self clock_hide();
     self notify( #"hash_6cb5d5beb3730446" );
 }
 

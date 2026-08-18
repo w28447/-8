@@ -204,9 +204,9 @@ function ondeath( attacker, weapon )
     fxtagorigin = self gettagorigin( "tag_fx" );
     doneempfx( fxtagorigin );
     
-    if ( isdefined( level.var_b1ffcff8 ) )
+    if ( isdefined( level.emp_ondeath ) )
     {
-        self [[ level.var_b1ffcff8 ]]( attacker, weapon );
+        self [[ level.emp_ondeath ]]( attacker, weapon );
     }
     
     shutdownemp( emp_vehicle.parentstruct );

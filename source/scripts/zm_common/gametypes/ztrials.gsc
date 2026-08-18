@@ -152,50 +152,50 @@ function private function_491101ba( player )
         return true;
     }
     
-    var_57807cdc = [];
+    failed_players = [];
     
     foreach ( player in getplayers() )
     {
-        if ( !isdefined( var_57807cdc ) )
+        if ( !isdefined( failed_players ) )
         {
-            var_57807cdc = [];
+            failed_players = [];
         }
-        else if ( !isarray( var_57807cdc ) )
+        else if ( !isarray( failed_players ) )
         {
-            var_57807cdc = array( var_57807cdc );
+            failed_players = array( failed_players );
         }
         
-        if ( !isinarray( var_57807cdc, player ) )
+        if ( !isinarray( failed_players, player ) )
         {
-            var_57807cdc[ var_57807cdc.size ] = player;
+            failed_players[ failed_players.size ] = player;
         }
     }
     
-    if ( var_57807cdc.size > 1 )
+    if ( failed_players.size > 1 )
     {
-        zm_trial::fail( #"hash_60e5e8df8709ad64", var_57807cdc );
+        zm_trial::fail( #"hash_60e5e8df8709ad64", failed_players );
     }
-    else if ( var_57807cdc.size == 1 )
+    else if ( failed_players.size == 1 )
     {
-        zm_trial::fail( #"hash_272fae998263208b", var_57807cdc );
+        zm_trial::fail( #"hash_272fae998263208b", failed_players );
     }
     else
     {
-        if ( !isdefined( var_57807cdc ) )
+        if ( !isdefined( failed_players ) )
         {
-            var_57807cdc = [];
+            failed_players = [];
         }
-        else if ( !isarray( var_57807cdc ) )
+        else if ( !isarray( failed_players ) )
         {
-            var_57807cdc = array( var_57807cdc );
-        }
-        
-        if ( !isinarray( var_57807cdc, player ) )
-        {
-            var_57807cdc[ var_57807cdc.size ] = player;
+            failed_players = array( failed_players );
         }
         
-        zm_trial::fail( #"hash_272fae998263208b", var_57807cdc );
+        if ( !isinarray( failed_players, player ) )
+        {
+            failed_players[ failed_players.size ] = player;
+        }
+        
+        zm_trial::fail( #"hash_272fae998263208b", failed_players );
     }
     
     if ( level flag::get( "round_reset" ) )

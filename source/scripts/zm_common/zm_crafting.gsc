@@ -1210,9 +1210,9 @@ function private function_5a4c40a2( player )
 function private function_8109ae21( player )
 {
     blueprints = function_4165306b( player );
-    var_9c8338de = blueprints.size;
+    blueprints_size = blueprints.size;
     
-    if ( !isdefined( self.blueprint ) || self.var_9c8338de !== var_9c8338de || isdefined( self.blueprint.completed ) && self.blueprint.completed )
+    if ( !isdefined( self.blueprint ) || self.blueprints_size !== blueprints_size || isdefined( self.blueprint.completed ) && self.blueprint.completed )
     {
         self.blueprint = self.craftfoundry;
         
@@ -1231,7 +1231,7 @@ function private function_8109ae21( player )
             self.blueprint = blueprints[ self.var_c0df4857 ];
         }
         
-        self.var_9c8338de = var_9c8338de;
+        self.blueprints_size = blueprints_size;
     }
     
     if ( blueprints.size < 1 || !array::contains( blueprints, self.blueprint ) )
@@ -1310,9 +1310,9 @@ function private function_d564a5c0( player )
     }
     
     blueprints = function_4165306b( player );
-    var_9c8338de = blueprints.size;
+    blueprints_size = blueprints.size;
     
-    if ( self.var_9c8338de != var_9c8338de )
+    if ( self.blueprints_size != blueprints_size )
     {
         return;
     }
@@ -1452,7 +1452,7 @@ function function_a187b293( player )
     }
     
     a_s_blueprints = function_4165306b( player );
-    self.var_9c8338de = a_s_blueprints.size;
+    self.blueprints_size = a_s_blueprints.size;
     self.crafted = 1;
     self.blueprint.completed = 1;
     

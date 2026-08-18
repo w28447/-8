@@ -2325,10 +2325,10 @@ function addproptolist( modelname, propsize, xyzoffset, anglesoffset, propsizete
 // Params 2
 // Checksum 0x53f0f0f6, Offset: 0x7b68
 // Size: 0x44
-function function_36f8016e( winning_team, var_c1e98979 )
+function function_36f8016e( winning_team, end_type )
 {
     round::set_winner( winning_team );
-    thread globallogic::function_a3e3bd39( winning_team, var_c1e98979 );
+    thread globallogic::function_a3e3bd39( winning_team, end_type );
 }
 
 // Namespace prop/prop

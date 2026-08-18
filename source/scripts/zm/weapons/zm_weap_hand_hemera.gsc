@@ -428,7 +428,7 @@ function function_8e7f5291( e_projectile, ai_zombie, n_damage )
     }
     
     e_projectile thread projectile_timeout();
-    v_end = self function_3f079da();
+    v_end = self hemera_trace();
     n_dist = distance( e_projectile.origin, v_end );
     n_time = n_dist / 1500;
     
@@ -780,7 +780,7 @@ function function_aa6f2b4()
 // Params 0
 // Checksum 0x8b2f306e, Offset: 0x24a8
 // Size: 0x110
-function function_3f079da()
+function hemera_trace()
 {
     v_view_pos = self getweaponmuzzlepoint();
     v_forward = self getweaponforwarddir();
@@ -802,7 +802,7 @@ function function_3f079da()
 function player_charged_shot( weapon )
 {
     self endoncallback( &function_8a56ed15, #"death", #"disconnect", #"weapon_change", #"weapon_fired", #"stop_beaming" );
-    v_trace = self function_3f079da();
+    v_trace = self hemera_trace();
     v_ground = groundtrace( v_trace + ( 0, 0, 200 ), v_trace + ( 0, 0, -1000 ), 0, self )[ #"position" ];
     
     if ( !isdefined( self.mdl_beam ) )
@@ -833,7 +833,7 @@ function player_charged_shot( weapon )
         waitframe( 5 );
         self.var_e34577ca = 1;
         waitframe( 2 );
-        v_trace = self function_3f079da();
+        v_trace = self hemera_trace();
         
         if ( isdefined( v_trace ) )
         {

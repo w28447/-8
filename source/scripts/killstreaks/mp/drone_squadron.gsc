@@ -356,7 +356,7 @@ function function_1c601b99()
 // Params 2, eflags: 0x4
 // Checksum 0x2bb6e620, Offset: 0x19c8
 // Size: 0xa4
-function private function_576084fa( drone, attackingplayer )
+function private hackdrone( drone, attackingplayer )
 {
     drone.team = attackingplayer.team;
     drone setteam( attackingplayer.team );
@@ -373,7 +373,7 @@ function private function_576084fa( drone, attackingplayer )
 function function_bff5c062( dronesquad, attackingplayer )
 {
     dronesquad killstreaks::configure_team_internal( attackingplayer, 1 );
-    function_576084fa( dronesquad, attackingplayer );
+    hackdrone( dronesquad, attackingplayer );
     
     if ( !isdefined( dronesquad.wing_drone ) || !isarray( dronesquad.wing_drone ) )
     {
@@ -387,7 +387,7 @@ function function_bff5c062( dronesquad, attackingplayer )
             continue;
         }
         
-        function_576084fa( drone, attackingplayer );
+        hackdrone( drone, attackingplayer );
     }
     
     dronesquad thread watchteamchange();
@@ -860,7 +860,7 @@ function function_da3b4d35()
             eye_pos = self.owner getplayercamerapos();
             direction_vec = ( direction_vec[ 0 ] * 5000, direction_vec[ 1 ] * 5000, direction_vec[ 2 ] * 5000 );
             trace = bullettrace( eye_pos, eye_pos + direction_vec, 1, self.owner, 1, 1, self );
-            var_31491620 = trace[ #"position" ];
+            sort_position = trace[ #"position" ];
             var_468f300e = vectornormalize( anglestoforward( direction ) );
             var_b7e30855 = 5000 * 5000;
             
@@ -872,7 +872,7 @@ function function_da3b4d35()
                 }
             }
             
-            self.targets[ 0 ] = arraygetclosest( var_31491620, self.targets );
+            self.targets[ 0 ] = arraygetclosest( sort_position, self.targets );
         }
         
         util::wait_network_frame( 1 );

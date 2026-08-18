@@ -13,7 +13,7 @@
 
 // Namespace vehicle
 // Method(s) 2 Total 2
-class class_358332cc
+class riderinfo
 {
 
     var riders;
@@ -23,7 +23,7 @@ class class_358332cc
     var var_9e2a2132;
     var var_dad0959b;
 
-    // Namespace class_358332cc/vehicleriders_shared
+    // Namespace riderinfo/vehicleriders_shared
     // Params 0, eflags: 0x8
     // Checksum 0x96b9ab5e, Offset: 0xa00
     // Size: 0x4a
@@ -253,7 +253,7 @@ function private on_vehicle_spawned()
         return;
     }
     
-    self.var_761c973 = new class_358332cc();
+    self.var_761c973 = new riderinfo();
     self.var_761c973.riders = [];
     self.var_761c973.numseats = numseats;
     self flag::init( "driver_occupied", 0 );
@@ -477,7 +477,7 @@ function private init_rider( ai, vehicle, seat )
     assert( !isdefined( ai.var_ec30f5da ) );
     ai.var_ec30f5da = function_b9342b7d( ai, vehicle, seat );
     ai.vehicle = vehicle;
-    ai.var_5574287b = seat;
+    ai.rider_position = seat;
     
     if ( isdefined( ai.var_ec30f5da.rideanim ) && !isanimlooping( ai.var_ec30f5da.rideanim ) )
     {
@@ -641,22 +641,22 @@ function unload( seat )
     switch ( seat )
     {
         case #"driver":
-            function_114d7bd3( self );
+            unload_driver( self );
             break;
         case #"passenger1":
-            function_b56639f2( self );
+            unload_passenger( self );
             break;
         case #"gunner1":
-            function_2ef91b74( self );
+            unload_gunner( self );
             break;
         case #"crew":
-            function_2ca26543( self );
+            unload_crew( self );
             break;
         default:
-            function_114d7bd3( self );
-            function_b56639f2( self );
-            function_2ca26543( self );
-            function_2ef91b74( self );
+            unload_driver( self );
+            unload_passenger( self );
+            unload_crew( self );
+            unload_gunner( self );
             break;
     }
 }
@@ -665,7 +665,7 @@ function unload( seat )
 // Params 1, eflags: 0x4
 // Checksum 0xb176b39a, Offset: 0x1f88
 // Size: 0x1d4
-function private function_114d7bd3( vehicle )
+function private unload_driver( vehicle )
 {
     if ( !vehicle.var_761c973.var_9e2a2132 )
     {
@@ -697,7 +697,7 @@ function private function_114d7bd3( vehicle )
 // Params 1, eflags: 0x4
 // Checksum 0xa1b7ceca, Offset: 0x2168
 // Size: 0x1d4
-function private function_b56639f2( vehicle )
+function private unload_passenger( vehicle )
 {
     if ( !vehicle.var_761c973.var_709c0a6f )
     {
@@ -729,7 +729,7 @@ function private function_b56639f2( vehicle )
 // Params 1, eflags: 0x4
 // Checksum 0x76edbf39, Offset: 0x2348
 // Size: 0x1d4
-function private function_2ef91b74( vehicle )
+function private unload_gunner( vehicle )
 {
     if ( !vehicle.var_761c973.var_dad0959b )
     {
@@ -761,7 +761,7 @@ function private function_2ef91b74( vehicle )
 // Params 1, eflags: 0x4
 // Checksum 0x1a61a6f6, Offset: 0x2528
 // Size: 0x374
-function private function_2ca26543( vehicle )
+function private unload_crew( vehicle )
 {
     assert( isdefined( vehicle.var_761c973.numseats ) && vehicle.var_761c973.numseats > 0 );
     
@@ -1327,7 +1327,7 @@ function delete_rider_asap( entity )
 // Params 1
 // Checksum 0x76704f85, Offset: 0x43f8
 // Size: 0x2de
-function function_86c7bebb( seat = "all" )
+function get_riders( seat = "all" )
 {
     assert( isdefined( self ) && isvehicle( self ) && isdefined( seat ) );
     ais = [];
@@ -1378,7 +1378,7 @@ function function_86c7bebb( seat = "all" )
         {
             foreach ( ai in self.var_761c973.riders )
             {
-                if ( isdefined( ai ) && isalive( ai ) && ai.var_5574287b === seat )
+                if ( isdefined( ai ) && isalive( ai ) && ai.rider_position === seat )
                 {
                     ais[ ais.size ] = ai;
                 }

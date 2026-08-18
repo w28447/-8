@@ -26,7 +26,7 @@ function __init__()
     
     if ( isdefined( bundle ) )
     {
-        bundle.var_32f64ba3 = "actor_spawner_boct_mp_dog";
+        bundle.aitype_dog = "actor_spawner_boct_mp_dog";
     }
     
     killstreaks::register_bundle( bundle, &spawned );

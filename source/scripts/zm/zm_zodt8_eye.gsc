@@ -3764,14 +3764,14 @@ function function_f6e1e56f( var_238eb6ec, var_b5a033fe = 0, var_533ac894 )
             var_c979da59++;
         }
         
-        function_1eaaceab( a_stokers, 0 );
+        arrayremovedead( a_stokers, 0 );
         
         if ( a_stokers.size )
         {
             array::wait_till( a_stokers, "death" );
         }
         
-        function_1eaaceab( a_stokers, 0 );
+        arrayremovedead( a_stokers, 0 );
         
         if ( a_stokers.size )
         {

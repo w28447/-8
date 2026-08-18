@@ -2115,7 +2115,7 @@ function function_bb660b8a()
 // Params 0
 // Checksum 0xc55e919, Offset: 0x8cf0
 // Size: 0x60
-function function_66f49835()
+function roots_timeout()
 {
     level endon( #"hash_1e533dd76c452301", #"hash_22f69672129581f6" );
     wait 6.1;
@@ -2181,7 +2181,7 @@ function function_310741f7( str_difficulties, n_time_limit )
     
     if ( str_difficulties != #"easy" )
     {
-        level thread function_66f49835();
+        level thread roots_timeout();
     }
     
     s_result = level waittill( #"hash_1e5cf7b7965152f3", #"roots_timed_out" );

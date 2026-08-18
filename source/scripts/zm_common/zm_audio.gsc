@@ -1582,9 +1582,9 @@ function function_250becf4( category, subcategory )
 // Size: 0x64
 function attempt( category, subcategory )
 {
-    if ( isdefined( self.var_a9a870e2 ) && isdefined( self.var_a9a870e2[ category ] ) && isdefined( self.var_a9a870e2[ category ][ subcategory ] ) )
+    if ( isdefined( self.vox_attempt ) && isdefined( self.vox_attempt[ category ] ) && isdefined( self.vox_attempt[ category ][ subcategory ] ) )
     {
-        self.var_a9a870e2[ category ][ subcategory ]++;
+        self.vox_attempt[ category ][ subcategory ]++;
     }
 }
 
@@ -1594,7 +1594,7 @@ function attempt( category, subcategory )
 // Size: 0x44
 function success( category, subcategory )
 {
-    self.var_a9a870e2[ category ][ subcategory ] = 0;
+    self.vox_attempt[ category ][ subcategory ] = 0;
     function_250becf4( category, subcategory );
 }
 
@@ -1686,7 +1686,7 @@ function function_cd71e220( category, subcategory )
 // Params 5
 // Checksum 0xb3a79bce, Offset: 0x4580
 // Size: 0xd4
-function function_6191af93( str_category, str_subcategory, str_override_category, str_override_subcategory, var_2bff7297 = 0 )
+function vox_override( str_category, str_subcategory, str_override_category, str_override_subcategory, var_2bff7297 = 0 )
 {
     if ( !isdefined( self.var_c13233ee ) )
     {
@@ -1960,7 +1960,7 @@ function shouldplayerspeak( player, category, subcategory, vox )
         return;
     }
     
-    n_attempt = player.var_a9a870e2[ category ][ subcategory ] - 1;
+    n_attempt = player.vox_attempt[ category ][ subcategory ] - 1;
     
     if ( n_attempt < 100 / vox.percentage )
     {
@@ -2090,7 +2090,7 @@ function function_654ec86b()
                 self.sound_dialog_available[ vox.suffix ][ i ] = i;
             }
             
-            self.var_a9a870e2[ category ][ subcategory ] = 0;
+            self.vox_attempt[ category ][ subcategory ] = 0;
         }
     }
 }

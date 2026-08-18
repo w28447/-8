@@ -667,8 +667,8 @@ function function_bdd1bac8( var_a1a0c2e3 )
         mdl_lock.var_2b6afc3c = 1;
     }
     
-    var_21c1ba1 = self getentitynumber();
-    mdl_lock clientfield::set( "" + #"zombie_spectral_key_stun", var_21c1ba1 + 1 );
+    n_player_num = self getentitynumber();
+    mdl_lock clientfield::set( "" + #"zombie_spectral_key_stun", n_player_num + 1 );
     
     while ( true )
     {

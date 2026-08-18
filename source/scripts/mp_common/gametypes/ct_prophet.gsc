@@ -225,7 +225,7 @@ function function_cf3224fe( b_success )
 function j_fore_le_01()
 {
     level endon( #"combattraining_logic_finished" );
-    level thread ct_utils::function_1db91571();
+    level thread ct_utils::manage_timer();
     level thread ct_utils::function_289b4b9f( #"hash_2ef12070900a4e87", 5, 15, "stop_seeker_nag", &function_b80b4832 );
     n_bomb_timer = int( gettime() + 1000 + int( ( 180 - 1 ) * 1000 ) );
     setmatchflag( "bomb_timer_a", 1 );
@@ -462,7 +462,7 @@ function spawn_robots( var_468ef41, var_8b84b3ce )
         robot.goalradius = 900;
         robot setgoal( var_8b84b3ce );
         robot.health = 350;
-        robot.overridevehicledamage = &function_e1086742;
+        robot.overridevehicledamage = &robot_damage_override;
         var_468ef41--;
         waitframe( 1 );
     }
@@ -472,7 +472,7 @@ function spawn_robots( var_468ef41, var_8b84b3ce )
 // Params 15
 // Checksum 0x4e46488f, Offset: 0x17c8
 // Size: 0x7e, Type: bool
-function function_e1086742( einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal )
+function robot_damage_override( einflictor, eattacker, idamage, idflags, smeansofdeath, weapon, vpoint, vdir, shitloc, vdamageorigin, psoffsettime, damagefromunderneath, modelindex, partname, vsurfacenormal )
 {
     return false;
 }

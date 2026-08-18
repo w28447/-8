@@ -45072,7 +45072,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1a98ee3af8b89642",
+                    "value": "#amb_comp_loop",
                     "unk1a": true
                 }
             ]
@@ -46638,7 +46638,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1a98ee3af8b89642",
+                    "value": "#amb_comp_loop",
                     "unk1a": true
                 }
             ]
@@ -46698,7 +46698,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1a98ee3af8b89642",
+                    "value": "#amb_comp_loop",
                     "unk1a": true
                 }
             ]
@@ -46998,7 +46998,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1a98ee3af8b89642",
+                    "value": "#amb_comp_loop",
                     "unk1a": true
                 }
             ]

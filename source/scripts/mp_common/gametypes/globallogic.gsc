@@ -740,17 +740,17 @@ function forceend( hostsucks = 0 )
     
     if ( hostsucks )
     {
-        var_c1e98979 = 10;
+        end_type = 10;
     }
     else
     {
-        var_c1e98979 = 9;
+        end_type = 9;
     }
     
     setmatchflag( "disableIngameMenu", 1 );
     round::function_870759fb();
     round::set_flag( "force_end_host" );
-    thread end_round( var_c1e98979 );
+    thread end_round( end_type );
 }
 
 // Namespace globallogic/globallogic
@@ -2158,7 +2158,7 @@ function awardotherlootxp()
 // Params 1, eflags: 0x4
 // Checksum 0x63f6b45b, Offset: 0x7178
 // Size: 0x304
-function private function_6c9e78d5( var_c1e98979 )
+function private function_6c9e78d5( end_type )
 {
     updateplacement();
     function_68bfd6d7();
@@ -2176,7 +2176,7 @@ function private function_6c9e78d5( var_c1e98979 )
         
         player.pers[ #"lastroundscore" ] = player.pointstowin;
         player weapons::update_timings( current_time );
-        player bbplayermatchend( roundlength, var_c1e98979, game_over );
+        player bbplayermatchend( roundlength, end_type, game_over );
         player.pers[ #"totaltimeplayed" ] += player.timeplayed[ #"total" ];
         
         if ( sessionmodeisonlinegame() )
@@ -2305,7 +2305,7 @@ function private function_e8cd6051()
 // Params 1, eflags: 0x4
 // Checksum 0xd24fcaa3, Offset: 0x77d0
 // Size: 0xcc
-function private function_d8d30361( var_c1e98979 )
+function private function_d8d30361( end_type )
 {
     setmatchflag( "game_ended", 1 );
     gamestate::set_state( "postgame" );
@@ -2313,7 +2313,7 @@ function private function_d8d30361( var_c1e98979 )
     level.gameended = 1;
     level.var_8a3a9ca4.roundend = gettime();
     setdvar( #"g_gameended", 1 );
-    round::function_897438f4( var_c1e98979 );
+    round::function_897438f4( end_type );
     
     /#
         rat::function_65e13d0f();
@@ -2335,7 +2335,7 @@ function private function_68bfd6d7()
     game_winner = match::function_6d0354e3();
     var_8dbf2a6d = globallogic_score::function_15683f39();
     
-    if ( isdefined( var_8dbf2a6d ) && isdefined( var_8dbf2a6d.var_9cd2c51d ) )
+    if ( isdefined( var_8dbf2a6d ) && isdefined( var_8dbf2a6d.challenge_info ) )
     {
         var_8dbf2a6d stats::function_dad108fa( #"top_scorer", 1 );
         var_8dbf2a6d contracts::increment_contract( #"hash_117aee9968655de3" );
@@ -2390,9 +2390,9 @@ function private function_4720c07f( outcome )
     setmatchtalkflag( "EveryoneHearsEveryone", 1 );
     gamerep::gamerepupdateinformationforround();
     thread challenges::roundend( round::get_winner() );
-    function_6c9e78d5( outcome.var_c1e98979 );
+    function_6c9e78d5( outcome.end_type );
     gameobjects::function_407c83be();
-    globallogic_utils::function_8d61a6c2( outcome.var_c1e98979 );
+    globallogic_utils::function_8d61a6c2( outcome.end_type );
     function_a50a4f61( outcome );
 }
 
@@ -2431,9 +2431,9 @@ function function_452e18ad()
 // Params 1
 // Checksum 0xac23a81c, Offset: 0x7da0
 // Size: 0x1e, Type: bool
-function function_8b4fc766( var_c1e98979 )
+function function_8b4fc766( end_type )
 {
-    switch ( var_c1e98979 )
+    switch ( end_type )
     {
         case 0:
         case 9:
@@ -2448,7 +2448,7 @@ function function_8b4fc766( var_c1e98979 )
 // Params 2
 // Checksum 0xd4f642f6, Offset: 0x7e18
 // Size: 0xbc
-function function_a3e3bd39( winning_team, var_c1e98979 )
+function function_a3e3bd39( winning_team, end_type )
 {
     if ( level.var_23b92e65 === 1 )
     {
@@ -2458,13 +2458,13 @@ function function_a3e3bd39( winning_team, var_c1e98979 )
     level.var_23b92e65 = 1;
     assert( isdefined( winning_team ) );
     
-    if ( function_8b4fc766( var_c1e98979 ) )
+    if ( function_8b4fc766( end_type ) )
     {
         globallogic_score::giveteamscoreforobjective_delaypostprocessing( winning_team, 1 );
     }
     
     round::set_winner( winning_team );
-    thread end_round( var_c1e98979 );
+    thread end_round( end_type );
 }
 
 // Namespace globallogic/globallogic
@@ -2513,9 +2513,9 @@ function function_692f2157()
 // Params 1
 // Checksum 0xe3202042, Offset: 0x7fd8
 // Size: 0x254
-function end_round( var_c1e98979 )
+function end_round( end_type )
 {
-    if ( sessionmodeismultiplayergame() && var_c1e98979 === 6 )
+    if ( sessionmodeismultiplayergame() && end_type === 6 )
     {
         if ( isdefined( level.roundending ) && level.roundending )
         {
@@ -2548,15 +2548,15 @@ function end_round( var_c1e98979 )
     }
     
     player::function_2f80d95b( &function_692f2157 );
-    function_d8d30361( var_c1e98979 );
+    function_d8d30361( end_type );
     level clientfield::set_world_uimodel( "hudItems.specialistSwitchIsLethal", 0 );
     
     if ( isdefined( level.onendround ) )
     {
-        [[ level.onendround ]]( var_c1e98979 );
+        [[ level.onendround ]]( end_type );
     }
     
-    outcome = hud_message::function_a2f30ab4( 1, var_c1e98979, 0, round::function_f37f02fc() );
+    outcome = hud_message::function_a2f30ab4( 1, end_type, 0, round::function_f37f02fc() );
     function_4720c07f( outcome );
     overtime::function_f435f4dd();
     display_transition::display_round_end( outcome );
@@ -2575,14 +2575,14 @@ function private function_f30cfedb()
 {
     if ( util::isoneround() )
     {
-        var_c1e98979 = round::function_3624d032();
+        end_type = round::function_3624d032();
     }
     else
     {
-        var_c1e98979 = function_b0a2785c();
+        end_type = function_b0a2785c();
     }
     
-    match::function_897438f4( var_c1e98979 );
+    match::function_897438f4( end_type );
 }
 
 // Namespace globallogic/globallogic
@@ -3247,7 +3247,7 @@ function getroundtimeplayed( roundlength )
 // Params 3
 // Checksum 0xff3e903a, Offset: 0xa3d8
 // Size: 0x1dc
-function bbplayermatchend( gamelength, var_c1e98979, gameover )
+function bbplayermatchend( gamelength, end_type, gameover )
 {
     if ( !sessionmodeismultiplayergame() || !isdefined( self.pers ) )
     {
@@ -3257,7 +3257,7 @@ function bbplayermatchend( gamelength, var_c1e98979, gameover )
     playerrank = getplacementforplayer( self );
     totaltimeplayed = self getroundtimeplayed( gamelength );
     xuid = int( self getxuid( 1 ) );
-    mpplayermatchfacts = { #score:self.pers[ #"score" ], #momentum:self.pers[ #"momentum" ], #endreason:var_c1e98979, #sessionrank:playerrank, #playtime:int( totaltimeplayed ), #xuid:xuid, #gameover:gameover, #team:self.team, #specialist:self getspecialistindex() };
+    mpplayermatchfacts = { #score:self.pers[ #"score" ], #momentum:self.pers[ #"momentum" ], #endreason:end_type, #sessionrank:playerrank, #playtime:int( totaltimeplayed ), #xuid:xuid, #gameover:gameover, #team:self.team, #specialist:self getspecialistindex() };
     function_92d1707f( #"dlog_event_mpplayermatchfacts", mpplayermatchfacts );
 }
 

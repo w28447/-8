@@ -135,7 +135,7 @@
                     },
                     {
                         "name": "#search_count",
-                        "scrName": "#hash_dc35ed4b",
+                        "scrName": "#search_count",
                         "type": "INT8"
                     },
                     {

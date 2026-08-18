@@ -1920,7 +1920,7 @@ function function_818b63da()
             function_a5946754( a_spawnpoints, var_585c95aa, undefined, 25, #"transform4", var_70050170, array( 5, 10 ) );
         }
         
-        function_1eaaceab( a_stokers, 0 );
+        arrayremovedead( a_stokers, 0 );
         
         if ( a_stokers.size )
         {

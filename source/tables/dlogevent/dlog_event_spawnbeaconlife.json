@@ -136,7 +136,7 @@
         },
         {
             "name": "#final_health",
-            "scrName": "#hash_8c727a55",
+            "scrName": "#final_health",
             "type": "INT32"
         },
         {
@@ -146,7 +146,7 @@
         },
         {
             "name": "#created_by",
-            "scrName": "#hash_88fcf579",
+            "scrName": "#created_by",
             "type": "STRING",
             "len": 32
         },
@@ -162,7 +162,7 @@
         },
         {
             "name": "#beacon_id",
-            "scrName": "#hash_64930fad",
+            "scrName": "#beacon_id",
             "type": "INT32"
         }
     ],

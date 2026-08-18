@@ -212,7 +212,7 @@ function __init__()
     
     foreach ( s_instance in level.a_s_barricades )
     {
-        c_door = s_instance function_14354831();
+        c_door = s_instance init_barricade();
         
         if ( isdefined( c_door ) )
         {
@@ -225,7 +225,7 @@ function __init__()
 // Params 0
 // Checksum 0xbbfa4239, Offset: 0x288
 // Size: 0x7a
-function function_14354831()
+function init_barricade()
 {
     if ( isdefined( self.scriptbundlename ) )
     {

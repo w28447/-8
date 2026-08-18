@@ -164,7 +164,7 @@
     "members": [
         {
             "name": "#lobby_type",
-            "scrName": "#hash_534c76ce",
+            "scrName": "#lobby_type",
             "type": "INT32",
             "len": 60
         },

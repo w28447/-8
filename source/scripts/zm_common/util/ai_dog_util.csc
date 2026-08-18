@@ -63,9 +63,9 @@ function dog_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldnam
         self zm::createzombieeyes( localclientnum );
         self mapshaderconstant( localclientnum, 0, "scriptVector2", 0, zm::get_eyeball_on_luminance(), self zm::get_eyeball_color() );
         
-        if ( !isdefined( self.var_93471229 ) )
+        if ( !isdefined( self.currfx ) )
         {
-            self.var_93471229 = [];
+            self.currfx = [];
         }
         
         if ( isdefined( level.var_17c4823f ) && !isdefined( self.var_a9305c6e ) )
@@ -73,12 +73,12 @@ function dog_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldnam
             self.var_a9305c6e = self playloopsound( level.var_17c4823f );
         }
         
-        array::add( self.var_93471229, util::playfxontag( localclientnum, level._effect[ #"dog_head_glow" ], self, "j_neck_end" ) );
-        array::add( self.var_93471229, util::playfxontag( localclientnum, level._effect[ #"dog_tail_glow" ], self, "j_tail0" ) );
-        array::add( self.var_93471229, util::playfxontag( localclientnum, level._effect[ #"dog_tail_glow" ], self, "j_tail1" ) );
-        array::add( self.var_93471229, util::playfxontag( localclientnum, level._effect[ #"dog_belly_glow" ], self, "j_spine2" ) );
-        array::add( self.var_93471229, util::playfxontag( localclientnum, level._effect[ #"dog_torso_glow" ], self, "j_neck" ) );
-        array::add( self.var_93471229, util::playfxontag( localclientnum, level._effect[ #"dog_eyes_glow" ], self, "tag_eye" ) );
+        array::add( self.currfx, util::playfxontag( localclientnum, level._effect[ #"dog_head_glow" ], self, "j_neck_end" ) );
+        array::add( self.currfx, util::playfxontag( localclientnum, level._effect[ #"dog_tail_glow" ], self, "j_tail0" ) );
+        array::add( self.currfx, util::playfxontag( localclientnum, level._effect[ #"dog_tail_glow" ], self, "j_tail1" ) );
+        array::add( self.currfx, util::playfxontag( localclientnum, level._effect[ #"dog_belly_glow" ], self, "j_spine2" ) );
+        array::add( self.currfx, util::playfxontag( localclientnum, level._effect[ #"dog_torso_glow" ], self, "j_neck" ) );
+        array::add( self.currfx, util::playfxontag( localclientnum, level._effect[ #"dog_eyes_glow" ], self, "tag_eye" ) );
         return;
     }
     
@@ -90,9 +90,9 @@ function dog_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldnam
     self mapshaderconstant( localclientnum, 0, "scriptVector2", 0, zm::get_eyeball_off_luminance(), self zm::get_eyeball_color() );
     self zm::deletezombieeyes( localclientnum );
     
-    if ( isdefined( self.var_93471229 ) )
+    if ( isdefined( self.currfx ) )
     {
-        foreach ( fxhandle in self.var_93471229 )
+        foreach ( fxhandle in self.currfx )
         {
             deletefx( localclientnum, fxhandle );
         }

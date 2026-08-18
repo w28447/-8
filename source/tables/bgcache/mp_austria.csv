@@ -401,7 +401,7 @@ radiant_exploder,#hash_481ad47d38f67382
 radiant_exploder,#fxexp_teleport_end
 radiant_exploder,#hash_7ac2dca16a207198
 radiant_exploder,#hash_7fcf5768cad66b13
-soundalias,#hash_1d690b3108e389
+soundalias,#amb_air_raid
 soundalias,#hash_94b5f3bad73031
 soundalias,#hash_9c60a4b93776bb
 soundalias,#hash_10b4231a611a9bf
@@ -500,7 +500,7 @@ soundalias,#hash_2d9239cee350babf
 soundalias,#hash_2d923acee350bc72
 soundalias,#hash_2e25f1d6ca55e5d9
 soundalias,#exp_mp_propane_tank_explo
-soundalias,#hash_2ec3de3874855810
+soundalias,#exp_redbarrel
 soundalias,#dst_server_power
 soundalias,#dst_foodstand
 soundalias,#hash_303a62e9feb361dc

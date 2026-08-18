@@ -285,7 +285,7 @@ function j_fore_le_01()
     level endon( #"combattraining_logic_finished" );
     level flag::set( "gamemode_started" );
     level.var_cbcb0078 = 1;
-    level thread ct_utils::function_1db91571();
+    level thread ct_utils::manage_timer();
     level thread function_6c645ca4();
     level thread ct_utils::function_289b4b9f( #"hash_7f01e4dbd7d4b8df", undefined, 45, "stop_nag", &function_f99b3d06 );
     level.var_115bb554 = 0;
@@ -644,7 +644,7 @@ function spawn_robot( var_fd15f2f7 )
         {
             robot = ct_ai::function_4c8f915a( nd_node.origin );
             ai_tank::function_9b13ebf( robot );
-            robot thread function_e1e9b6fc();
+            robot thread robot_think();
             return robot;
         }
         
@@ -656,7 +656,7 @@ function spawn_robot( var_fd15f2f7 )
 // Params 0
 // Checksum 0xa2e96c11, Offset: 0x2028
 // Size: 0xae
-function function_e1e9b6fc()
+function robot_think()
 {
     self endon( #"death" );
     self thread function_7b0b7f0a();

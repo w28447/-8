@@ -1488,7 +1488,7 @@ function function_e9b5de80()
         e_player = getplayers()[ 0 ];
         var_f89d1864 = e_player gamepadusedlast() ? #"hash_4ebfe875c2651663" : #"hash_39ef32192475cedd";
         e_player thread ct_utils::function_61c3d59c( var_f89d1864, undefined );
-        e_player thread ct_vo::function_261ed63c( "vox_tvoi_tutor_ajax_final_event_3_active_nag", 30, 20 );
+        e_player thread ct_vo::vo_nag( "vox_tvoi_tutor_ajax_final_event_3_active_nag", 30, 20 );
         
         if ( !( isdefined( var_f7bf657b ) && var_f7bf657b ) )
         {
