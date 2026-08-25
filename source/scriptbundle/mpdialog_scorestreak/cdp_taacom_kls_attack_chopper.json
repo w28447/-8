@@ -1,9 +1,9 @@
 {
-    "destroyed": "#hash_405c0526242e69bd",
-    "ready": "#hash_26934d6d61101909",
+    "destroyed": "#vox_mta1_ult_chop_destroyed",
+    "ready": "#vox_mta1_ult_chop_ready",
     "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "cdp_taacom_kls_attack_chopper",
-    "hacked": "#hash_ebcb6accef8be8e"
+    "hacked": "#vox_mta1_icepick_chop_steal"
 }

@@ -100,7 +100,7 @@ function on_player_killed()
 // Size: 0x24
 function private function_15d026c0()
 {
-    self playsoundtoplayer( #"hash_3e5c00ae62aa9c91", self );
+    self playsoundtoplayer( #"vox_mene_unlock", self );
 }
 
 // Namespace character_unlock_menendez/character_unlock_menendez

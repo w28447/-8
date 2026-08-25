@@ -341,7 +341,7 @@ function sndzmblaststand( localclientnum, oldval, newval, bnewent, binitialsnap,
     if ( newval )
     {
         playsound( localclientnum, #"zmb_laststand_enter_plr", ( 0, 0, 0 ) );
-        self.var_63de16a = self playloopsound( #"hash_7b41cf42e1b9847b" );
+        self.var_63de16a = self playloopsound( #"zmb_laststand_lp_plr" );
         self.inlaststand = 1;
         return;
     }

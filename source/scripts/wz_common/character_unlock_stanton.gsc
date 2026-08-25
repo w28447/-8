@@ -113,6 +113,6 @@ function on_player_killed()
 // Size: 0x24
 function private function_895b40e4()
 {
-    self playsoundtoplayer( #"hash_70c9b45d9474b631", self );
+    self playsoundtoplayer( #"vox_plr_4_unlock", self );
 }
 

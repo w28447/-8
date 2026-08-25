@@ -7033,7 +7033,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {
@@ -7110,7 +7110,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e3f4e729217e70",
+                    "value": "#fly_bump_barrel",
                     "unk1a": true
                 },
                 {
@@ -7187,7 +7187,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {
@@ -7264,7 +7264,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {
@@ -7341,7 +7341,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_36794b821becda02",
+                    "value": "#fly_bump_tire",
                     "unk1a": true
                 },
                 {
@@ -7418,7 +7418,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_60363e606c7cc6bc",
+                    "value": "#fly_bump_trashcan",
                     "unk1a": true
                 },
                 {
@@ -7495,7 +7495,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {
@@ -7572,7 +7572,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_510bdf2b87f3ea1d",
+                    "value": "#fly_bump_fridge",
                     "unk1a": true
                 },
                 {
@@ -7649,7 +7649,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_60363e606c7cc6bc",
+                    "value": "#fly_bump_trashcan",
                     "unk1a": true
                 },
                 {
@@ -7726,7 +7726,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {
@@ -7803,7 +7803,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {
@@ -7880,7 +7880,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {
@@ -7957,7 +7957,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {
@@ -8034,7 +8034,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {
@@ -8111,7 +8111,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_bce4c947d361ec7",
+                    "value": "#fly_bump_table_scoot",
                     "unk1a": true
                 },
                 {
@@ -8188,7 +8188,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e3f4e729217e70",
+                    "value": "#fly_bump_barrel",
                     "unk1a": true
                 },
                 {
@@ -8265,7 +8265,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3d67cbb26df49c64",
+                    "value": "#fly_bump_cabinet",
                     "unk1a": true
                 },
                 {
@@ -8342,7 +8342,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3d67cbb26df49c64",
+                    "value": "#fly_bump_cabinet",
                     "unk1a": true
                 },
                 {
@@ -8419,7 +8419,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3d67cbb26df49c64",
+                    "value": "#fly_bump_cabinet",
                     "unk1a": true
                 },
                 {
@@ -8496,7 +8496,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3d67cbb26df49c64",
+                    "value": "#fly_bump_cabinet",
                     "unk1a": true
                 },
                 {
@@ -8573,7 +8573,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_60363e606c7cc6bc",
+                    "value": "#fly_bump_trashcan",
                     "unk1a": true
                 },
                 {
@@ -8650,7 +8650,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e3f4e729217e70",
+                    "value": "#fly_bump_barrel",
                     "unk1a": true
                 },
                 {
@@ -8727,7 +8727,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e3f4e729217e70",
+                    "value": "#fly_bump_barrel",
                     "unk1a": true
                 },
                 {
@@ -8804,7 +8804,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_60363e606c7cc6bc",
+                    "value": "#fly_bump_trashcan",
                     "unk1a": true
                 },
                 {
@@ -8881,7 +8881,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_51680c12f4cc8412",
+                    "value": "#fly_bump_car",
                     "unk1a": true
                 },
                 {
@@ -8958,7 +8958,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_51680c12f4cc8412",
+                    "value": "#fly_bump_car",
                     "unk1a": true
                 },
                 {
@@ -9035,7 +9035,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_60363e606c7cc6bc",
+                    "value": "#fly_bump_trashcan",
                     "unk1a": true
                 },
                 {
@@ -9112,7 +9112,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_bce4c947d361ec7",
+                    "value": "#fly_bump_table_scoot",
                     "unk1a": true
                 },
                 {
@@ -9189,7 +9189,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_bce4c947d361ec7",
+                    "value": "#fly_bump_table_scoot",
                     "unk1a": true
                 },
                 {
@@ -9266,7 +9266,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_36794b821becda02",
+                    "value": "#fly_bump_tire",
                     "unk1a": true
                 },
                 {
@@ -9343,7 +9343,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_bce4c947d361ec7",
+                    "value": "#fly_bump_table_scoot",
                     "unk1a": true
                 },
                 {
@@ -9420,7 +9420,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_bce4c947d361ec7",
+                    "value": "#fly_bump_table_scoot",
                     "unk1a": true
                 },
                 {
@@ -9497,7 +9497,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_51680c12f4cc8412",
+                    "value": "#fly_bump_car",
                     "unk1a": true
                 },
                 {
@@ -9574,7 +9574,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_51680c12f4cc8412",
+                    "value": "#fly_bump_car",
                     "unk1a": true
                 },
                 {
@@ -9651,7 +9651,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_60363e606c7cc6bc",
+                    "value": "#fly_bump_trashcan",
                     "unk1a": true
                 },
                 {
@@ -9728,7 +9728,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_60363e606c7cc6bc",
+                    "value": "#fly_bump_trashcan",
                     "unk1a": true
                 },
                 {
@@ -9805,7 +9805,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e3f4e729217e70",
+                    "value": "#fly_bump_barrel",
                     "unk1a": true
                 },
                 {
@@ -9882,7 +9882,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_338c13a4f145a64d",
+                    "value": "#fly_bump_irongate",
                     "unk1a": true
                 },
                 {
@@ -9959,7 +9959,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_338c13a4f145a64d",
+                    "value": "#fly_bump_irongate",
                     "unk1a": true
                 },
                 {
@@ -10036,7 +10036,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_338c13a4f145a64d",
+                    "value": "#fly_bump_irongate",
                     "unk1a": true
                 },
                 {
@@ -10113,7 +10113,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {
@@ -10190,7 +10190,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {
@@ -10267,7 +10267,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e3f4e729217e70",
+                    "value": "#fly_bump_barrel",
                     "unk1a": true
                 },
                 {
@@ -10344,7 +10344,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_60363e606c7cc6bc",
+                    "value": "#fly_bump_trashcan",
                     "unk1a": true
                 },
                 {
@@ -10421,7 +10421,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {
@@ -10498,7 +10498,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_51680c12f4cc8412",
+                    "value": "#fly_bump_car",
                     "unk1a": true
                 },
                 {
@@ -10575,7 +10575,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_510bdf2b87f3ea1d",
+                    "value": "#fly_bump_fridge",
                     "unk1a": true
                 },
                 {
@@ -10652,7 +10652,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_36794b821becda02",
+                    "value": "#fly_bump_tire",
                     "unk1a": true
                 },
                 {
@@ -10729,7 +10729,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e3f4e729217e70",
+                    "value": "#fly_bump_barrel",
                     "unk1a": true
                 },
                 {
@@ -10806,7 +10806,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e3f4e729217e70",
+                    "value": "#fly_bump_barrel",
                     "unk1a": true
                 },
                 {
@@ -10883,7 +10883,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e3f4e729217e70",
+                    "value": "#fly_bump_barrel",
                     "unk1a": true
                 },
                 {
@@ -10960,7 +10960,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_2cbd1a72d59eecdd",
+                    "value": "#fly_step_wood_board_enter",
                     "unk1a": true
                 },
                 {
@@ -11345,7 +11345,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_2cbd1a72d59eecdd",
+                    "value": "#fly_step_wood_board_enter",
                     "unk1a": true
                 },
                 {
@@ -11499,7 +11499,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_36794b821becda02",
+                    "value": "#fly_bump_tire",
                     "unk1a": true
                 },
                 {
@@ -11576,7 +11576,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_60363e606c7cc6bc",
+                    "value": "#fly_bump_trashcan",
                     "unk1a": true
                 },
                 {
@@ -11884,7 +11884,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_2cbd1a72d59eecdd",
+                    "value": "#fly_step_wood_board_enter",
                     "unk1a": true
                 },
                 {
@@ -11961,7 +11961,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e3f4e729217e70",
+                    "value": "#fly_bump_barrel",
                     "unk1a": true
                 },
                 {
@@ -12038,7 +12038,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e3f4e729217e70",
+                    "value": "#fly_bump_barrel",
                     "unk1a": true
                 },
                 {
@@ -12115,7 +12115,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e3f4e729217e70",
+                    "value": "#fly_bump_barrel",
                     "unk1a": true
                 },
                 {
@@ -12192,7 +12192,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_51680c12f4cc8412",
+                    "value": "#fly_bump_car",
                     "unk1a": true
                 },
                 {
@@ -12269,7 +12269,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_60363e606c7cc6bc",
+                    "value": "#fly_bump_trashcan",
                     "unk1a": true
                 },
                 {
@@ -12346,7 +12346,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e3f4e729217e70",
+                    "value": "#fly_bump_barrel",
                     "unk1a": true
                 },
                 {
@@ -12423,7 +12423,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_338c13a4f145a64d",
+                    "value": "#fly_bump_irongate",
                     "unk1a": true
                 },
                 {
@@ -12500,7 +12500,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_338c13a4f145a64d",
+                    "value": "#fly_bump_irongate",
                     "unk1a": true
                 },
                 {
@@ -12577,7 +12577,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_338c13a4f145a64d",
+                    "value": "#fly_bump_irongate",
                     "unk1a": true
                 },
                 {
@@ -12654,7 +12654,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_338c13a4f145a64d",
+                    "value": "#fly_bump_irongate",
                     "unk1a": true
                 },
                 {
@@ -12731,7 +12731,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e3f4e729217e70",
+                    "value": "#fly_bump_barrel",
                     "unk1a": true
                 },
                 {
@@ -12808,7 +12808,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e3f4e729217e70",
+                    "value": "#fly_bump_barrel",
                     "unk1a": true
                 },
                 {
@@ -13300,7 +13300,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_338c13a4f145a64d",
+                    "value": "#fly_bump_irongate",
                     "unk1a": true
                 },
                 {
@@ -13377,7 +13377,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_338c13a4f145a64d",
+                    "value": "#fly_bump_irongate",
                     "unk1a": true
                 },
                 {

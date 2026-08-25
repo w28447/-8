@@ -12,7 +12,7 @@
 // Params 2
 // Checksum 0xe1f9c24b, Offset: 0x168
 // Size: 0x414
-function init_shared( friendly_rob, var_4885f19e )
+function init_shared( friendly_rob, enemy_rob )
 {
     callback::on_localplayer_spawned( &on_localplayer_spawned );
     clientfield::register( "toplayer", "proximity_alarm", 1, 3, "int", &proximity_alarm_changed, 0, 1 );
@@ -31,7 +31,7 @@ function init_shared( friendly_rob, var_4885f19e )
         level.var_58253868 = friendly_rob;
     }
     
-    level.var_420d7d7e = var_4885f19e;
+    level.var_420d7d7e = enemy_rob;
     level.var_4de4699b = #"rob_sonar_set_enemy";
     
     if ( !isdefined( level.retrievable ) )

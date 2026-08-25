@@ -88,14 +88,14 @@ function private movement_watcher()
             {
                 if ( !zm_trial_defend_area::is_active() || zm_trial_defend_area::is_active() && isdefined( self.var_ccee13fc ) && self.var_ccee13fc )
                 {
-                    self playsoundtoplayer( #"hash_6df374d848ba6a60", self );
+                    self playsoundtoplayer( #"zmb_player_health_drain", self );
                     self dodamage( 11, self.origin );
                     var_89276ce9 = 1;
                 }
             }
             else if ( !zm_trial_defend_area::is_active() || zm_trial_defend_area::is_active() && isdefined( self.var_ccee13fc ) && self.var_ccee13fc )
             {
-                self playsoundtoplayer( #"hash_6df374d848ba6a60", self );
+                self playsoundtoplayer( #"zmb_player_health_drain", self );
                 self dodamage( 6, self.origin );
                 var_89276ce9 = 1;
             }

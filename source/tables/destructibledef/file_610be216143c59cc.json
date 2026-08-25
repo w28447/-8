@@ -1,6 +1,6 @@
 {
     "name": "#hash_610be216143c59cc",
-    "model": "#hash_1398039d5ae3972c",
+    "model": "#veh_mphd_car_compact_destructible_grey",
     "unk20": "#veh_mphd_car_compact_grey_dead",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

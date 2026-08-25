@@ -528,7 +528,7 @@ function function_735037d4()
     
     wait 0.5;
     self.e_lid rotatepitch( -95, 2, 0, 0.666667 );
-    self.e_lid playsound( #"hash_1cfa90c531f36b92" );
+    self.e_lid playsound( #"zmb_tundra_gun_crate" );
     self.e_lid waittill( #"rotatedone" );
     self.e_weapon movez( 24, 2 );
     self.e_weapon waittill( #"movedone" );
@@ -574,7 +574,7 @@ function start_challenge()
     }
     
     self function_bce7e59b( var_d6578e1f.n_index, var_d6578e1f.n_current_progress, var_d6578e1f.n_goal );
-    playsoundatposition( #"hash_405121518503e4be", self.origin );
+    playsoundatposition( #"zmb_challenges_start", self.origin );
     self thread [[ var_d6578e1f.func_setup ]]();
     var_d6578e1f waittill( var_d6578e1f.str_notify );
     self [[ var_d6578e1f.func_cleanup ]]();
@@ -1724,7 +1724,7 @@ function function_c607ac40( var_d6578e1f )
         
         if ( !isdefined( e_who.var_77d7715a ) || !e_who.var_77d7715a )
         {
-            e_who playsound( #"hash_2814441619ec7760" );
+            e_who playsound( #"zmb_pee_pickup" );
             
             if ( !self.var_5637fcf9 )
             {
@@ -1772,7 +1772,7 @@ function function_3fbb4390( var_d6578e1f )
         
         if ( isdefined( e_who.var_77d7715a ) && e_who.var_77d7715a && e_who zm_zonemgr::get_player_zone() === "beach" && isdefined( e_who.b_in_water ) && e_who.b_in_water )
         {
-            e_who playsound( #"hash_2ad99bf60d7fe42a" );
+            e_who playsound( #"zmb_pee_pour" );
             e_who notify( #"hash_1ae87f50e75564f3" );
             e_who.var_77d7715a = 0;
             
@@ -1846,7 +1846,7 @@ function function_f6ccb39( s_challenge )
     {
         if ( self zm_utility::is_jumping() || self issliding() || self issprinting() || isdefined( self.laststand ) && self.laststand )
         {
-            self playsound( #"hash_2fe344cda8a89a7a" );
+            self playsound( #"zmb_pee_spill" );
             
             if ( math::cointoss( 50 ) )
             {
@@ -1962,7 +1962,7 @@ function function_472fa2ca( s_challenge )
         {
             case 0:
                 var_66bb9366 = #"hash_b2dd9a0b97705ad";
-                playsoundatposition( #"hash_23c7abbf9d34bf4a", self.origin );
+                playsoundatposition( #"zmb_bell_a", self.origin );
                 break;
             case 1:
                 var_66bb9366 = #"hash_53f014fab33492d8";
@@ -1970,7 +1970,7 @@ function function_472fa2ca( s_challenge )
                 break;
             case 2:
                 var_66bb9366 = #"hash_594894375473c7b";
-                playsoundatposition( #"hash_23c7a7bf9d34b87e", self.origin );
+                playsoundatposition( #"zmb_bell_e", self.origin );
                 break;
             case 3:
                 var_66bb9366 = #"hash_33ce9da949624fae";

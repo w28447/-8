@@ -154,7 +154,7 @@ function function_ed401dbd( activator, laststate, state )
         {
             currentstate = function_ffdbe8c2( self );
             waitframe( 1 );
-            playsoundatposition( #"hash_3559ba9c4c9b08f", self.origin );
+            playsoundatposition( #"evt_garage_button_press", self.origin );
             setdynentstate( self, currentstate );
             return;
         }

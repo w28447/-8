@@ -986,13 +986,13 @@ function private function_2ada6938( slot )
 // Params 4, eflags: 0x4
 // Checksum 0x480e1d3f, Offset: 0x31b0
 // Size: 0x208
-function private give_weapon( weapon, slot, var_a6a8156, var_bc218695 )
+function private give_weapon( weapon, slot, var_a6a8156, options_index )
 {
     if ( weapon != level.weaponnull )
     {
         if ( isdefined( var_a6a8156 ) )
         {
-            weapon_options = self [[ var_a6a8156 ]]( var_bc218695 );
+            weapon_options = self [[ var_a6a8156 ]]( options_index );
         }
         else
         {

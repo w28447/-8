@@ -1,7 +1,7 @@
 {
     "name": "#veh_t8_civ_van_utility_destructible_spain_painter",
-    "model": "#hash_29fa8cec6b8e264",
-    "unk20": "#hash_2af15c65f49c08e2",
+    "model": "#veh_t8_civ_van_utility_dest_spain_painter",
+    "unk20": "#veh_t8_civ_van_utility_spain_painter_dead",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

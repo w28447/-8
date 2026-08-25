@@ -17,8 +17,8 @@
         {
             "boardModel": "#zm_office_debris_roll_door_xmodel",
             "tearAnim": "#hash_48a3b99c691acf89",
-            "boardAnim": "#hash_61c6754307af5648",
-            "staticAnim": "#hash_61c6754307af5648",
+            "boardAnim": "#zm_office_debris_roll_door_idle_b",
+            "staticAnim": "#zm_office_debris_roll_door_idle_b",
             "repairEffect1Offset": "0 0 0",
             "repairEffect2Offset": "0 0 0",
             "minPause": 0.3,

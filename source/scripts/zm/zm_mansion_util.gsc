@@ -610,7 +610,7 @@ function function_e7d4e4f0()
     
     if ( !level flag::get( "flag_player_grabbed_werewolf_material" ) )
     {
-        e_holder thread zm_vo::function_a2bd5a0c( #"hash_161206ddd7dcc321", 1 );
+        e_holder thread zm_vo::function_a2bd5a0c( #"vox_wonder_chaos_material", 1 );
         level zm_ui_inventory::function_7df6bb60( #"ww_p1_2", 1 );
         self.mdl_pickup delete();
         self struct::delete();

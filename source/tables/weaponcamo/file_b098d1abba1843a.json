@@ -80,7 +80,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_2aa4b6d1d275f7f",
+                            "camoMaterial": "#mc/mtl_p8_zm_elixir_icon_undead_man_walking",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -109,7 +109,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_71a0cf776a7a2b5",
+                            "camoMaterial": "#mc/mtl_p8_zm_elixir_icon_cache_back",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -144,7 +144,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_2170abd8b1645410",
+                            "camoMaterial": "#mc/mtl_p8_zm_elixir_icon_power_keg",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -170,7 +170,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_395f4a73fc81de0",
+                            "camoMaterial": "#mc/mtl_p8_zm_elixir_icon_wall_to_wall_savings",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -246,7 +246,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_4e1c3b5d822b8803",
+                            "camoMaterial": "#mc/mtl_p8_zm_elixir_icon_perk_up",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -284,7 +284,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_3abc16ca0e866ab4",
+                            "camoMaterial": "#mc/mtl_p8_zm_elixir_icon_dividend_yield",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,

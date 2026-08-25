@@ -193,7 +193,7 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "image#hash_5cc7e44a03efab70"
+                                    "stageimage": "image#ui_icon_inventory_zm_white_desk_key"
                                 }
                             ],
                             "hash_1d91eeba": 1,
@@ -251,7 +251,7 @@
         {
             "stages": [
                 {
-                    "stageimage": "image#hash_35c94057300e0eac"
+                    "stageimage": "image#ui_icon_inventory_zm_white_chemistry_kit_cables_02"
                 }
             ],
             "hash_1d91eeba": 1,
@@ -261,7 +261,7 @@
         {
             "stages": [
                 {
-                    "stageimage": "image#hash_125dcc445cdead9"
+                    "stageimage": "image#ui_icon_inventory_zm_white_chemistry_kit_02"
                 }
             ],
             "hash_1d91eeba": 1,
@@ -271,7 +271,7 @@
         {
             "stages": [
                 {
-                    "stageimage": "image#hash_125d9c445cde5c0"
+                    "stageimage": "image#ui_icon_inventory_zm_white_chemistry_kit_01"
                 }
             ],
             "hash_1d91eeba": 1,

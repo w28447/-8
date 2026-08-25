@@ -402,20 +402,20 @@ function play_fx_on_tag( localclientnum, fx, tag = "tag_origin" )
 // Params 2
 // Checksum 0xfd9116d6, Offset: 0x1310
 // Size: 0x18a
-function function_a993866( localclientnum, var_9a17b15c )
+function function_a993866( localclientnum, delay_trail )
 {
     if ( !level.add_trails )
     {
         return;
     }
     
-    if ( var_9a17b15c > 0 )
+    if ( delay_trail > 0 )
     {
         self endon( #"death", #"freefallend", #"disconnect" );
-        wait var_9a17b15c;
+        wait delay_trail;
     }
     
-    println( self.name + "<dev string:xdf>" + var_9a17b15c );
+    println( self.name + "<dev string:xdf>" + delay_trail );
     trail_fx = player_free_fall_util::get_trailfx();
     
     if ( self function_21c0fa55() )
@@ -446,8 +446,8 @@ function function_975ebf4d( localclientnum, var_695a7111 )
 {
     if ( var_695a7111 )
     {
-        var_9a17b15c = getdvarfloat( #"hash_2ff67a1af0e1deec", 1 );
-        self thread function_a993866( localclientnum, var_9a17b15c );
+        delay_trail = getdvarfloat( #"hash_2ff67a1af0e1deec", 1 );
+        self thread function_a993866( localclientnum, delay_trail );
     }
 }
 

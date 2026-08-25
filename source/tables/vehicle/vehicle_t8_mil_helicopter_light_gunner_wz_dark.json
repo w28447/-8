@@ -29,7 +29,7 @@
     "model": "#veh_t8_mil_helicopter_light_gunner_warzone_dark_dest",
     "deathModel": "#veh_t8_mil_helicopter_light_debris_fuselage",
     "soundDef": "#veh_heli_wz",
-    "compassIconMaterial": "#hash_169458fb2df20b0e",
+    "compassIconMaterial": "#compass_vehicle_littlebird",
     "lightCollisionRumble": "#veh_collision_light",
     "heavyCollisionRumble": "#veh_collision_heavy",
     "destructibleDef": "#hash_f896cb10603d56c",

@@ -27,8 +27,8 @@
     "#hash_2cf49821": false,
     "#hash_d2751f9d": false,
     "#hash_554be9f7": false,
-    "sound240": "#hash_631a067190b54300",
-    "sound250": "#hash_242aa17124751841",
+    "sound240": "#wpn_generic_dryfire_npc",
+    "sound250": "#wpn_generic_dryfire_plr",
     "tunables1": "#parachute_tunables_wz",
     "viewmodel": [
         "#tag_origin"
@@ -36,6 +36,6 @@
     "inventoryIconZm": "#hud_obit_case",
     "hudIcon": "#hud_obit_case",
     "image_e90": "#hud_obit_case",
-    "image_eb0": "#hash_2a912d9e22e33b69",
+    "image_eb0": "#uie_ui_icon_minimap_wz_parachute",
     "image_1048": "#hud_obit_case"
 }

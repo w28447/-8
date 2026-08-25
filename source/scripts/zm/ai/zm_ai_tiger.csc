@@ -58,7 +58,7 @@ function function_76110e92( localclientnum, oldval, newval, bnewent, binitialsna
         self postfx::playpostfxbundle( "pstfx_tiger_slash_r_to_l" );
     }
     
-    self playsound( localclientnum, #"hash_53d906ab01cb30a1" );
+    self playsound( localclientnum, #"evt_player_clawed" );
 }
 
 // Namespace zm_ai_tiger/zm_ai_tiger
@@ -99,7 +99,7 @@ function on_entity_shutdown( localclientnum )
         }
         
         playfx( localclientnum, "zm_ai/fx8_zombie_tiger_death_exp", origin, anglestoforward( angles ) );
-        playsound( 0, #"hash_5f574d847a1ca1f0", self.origin );
+        playsound( 0, #"zmb_tiger_explode", self.origin );
     }
 }
 

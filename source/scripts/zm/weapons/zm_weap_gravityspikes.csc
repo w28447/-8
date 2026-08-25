@@ -93,7 +93,7 @@ function gravity_slam_fx( localclientnum, oldval, newval, bnewent, binitialsnap,
         }
         
         util::playfxontag( localclientnum, level._effect[ #"gravityspikes_slam" ], self, "tag_origin" );
-        self playsound( 0, #"hash_79ac4ef26925a30f" );
+        self playsound( 0, #"wpn_dg4_slam_impact" );
     }
 }
 
@@ -138,8 +138,8 @@ function gravity_trap_fx( localclientnum, oldval, newval, bnewent, binitialsnap,
         
         if ( !isdefined( self.var_cacf63a9 ) )
         {
-            self playsound( 0, #"hash_39e42a22827220d1" );
-            self.var_cacf63a9 = self playloopsound( #"hash_9c25e71ff13ac77" );
+            self playsound( 0, #"wpn_dg4_plant_start" );
+            self.var_cacf63a9 = self playloopsound( #"wpn_dg4_plant_lp" );
         }
         
         util::playfxontag( localclientnum, level._effect[ #"gravityspikes_trap_start" ], self, "tag_origin" );
@@ -164,7 +164,7 @@ function gravity_trap_fx( localclientnum, oldval, newval, bnewent, binitialsnap,
     
     if ( isdefined( self.var_cacf63a9 ) )
     {
-        self playsound( 0, #"hash_5d0917b44402f070" );
+        self playsound( 0, #"wpn_dg4_plant_end" );
         self stoploopsound( self.var_cacf63a9 );
     }
     
@@ -454,7 +454,7 @@ function gravity_shock_wave_fx( localclientnum, oldval, newval, bnewent, binitia
     
     if ( isdefined( self.var_aff8c2c0 ) )
     {
-        self playsound( localclientnum, #"hash_4dee0eab8f9ef57" );
+        self playsound( localclientnum, #"wpn_dg4_shockwave_deactivate" );
         self stoploopsound( self.var_aff8c2c0 );
         self.var_aff8c2c0 = undefined;
     }
@@ -473,7 +473,7 @@ function gravity_shock_wave_fx( localclientnum, oldval, newval, bnewent, binitia
     {
         if ( !isdefined( self.var_aff8c2c0 ) )
         {
-            self.var_aff8c2c0 = self playloopsound( #"hash_7c8577b82afb225d" );
+            self.var_aff8c2c0 = self playloopsound( #"wpn_dg4_shockwave_lp" );
         }
         
         if ( self zm_utility::is_first_person( localclientnum ) )

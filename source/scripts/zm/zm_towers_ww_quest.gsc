@@ -1253,7 +1253,7 @@ function function_9da58e50()
     level endon( #"end_game" );
     level flag::wait_till( #"hash_77ff9a8101ea687b" );
     var_2002b43f = level.chests[ level.chest_index ].zbarrier;
-    playsoundatposition( #"hash_f481d0cba05eda5", var_2002b43f.origin );
+    playsoundatposition( #"zmb_magic_box_poison", var_2002b43f.origin );
     var_2002b43f clientfield::set( "" + #"hash_3974bea828fbf7f7", 1 );
     var_2002b43f clientfield::set( "" + #"hash_3a51c9895d4afcf7", 1 );
     

@@ -70,7 +70,7 @@ function end_soul_capture( id )
         return;
     }
     
-    playsoundatposition( #"hash_21967fb66e85ac4e", var_1d81ef2d.origin );
+    playsoundatposition( #"zmb_sq_souls_complete", var_1d81ef2d.origin );
     var_1d81ef2d.active = 0;
 }
 

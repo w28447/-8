@@ -59,9 +59,9 @@ function default_onforfeit( params )
             round::function_35702443( params.var_b2ee6c67[ 0 ] );
         }
         
-        if ( params.var_6eb69269.size )
+        if ( params.teams_playing.size )
         {
-            round::set_winner( params.var_6eb69269[ 0 ] );
+            round::set_winner( params.teams_playing[ 0 ] );
         }
     }
     

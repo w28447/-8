@@ -16,7 +16,7 @@
     "scriptBundleSettings": "#cargo_truck_bundle_settings",
     "deathFx": "#explosions/fx8_vexp_truck_cargo",
     "deathFxTag": "tag_body",
-    "deathFxSound": "#hash_2149db0c502305e3",
+    "deathFxSound": "#exp_armor_vehicle",
     "unk1438": [
         "#hash_681bde46bf31f10a",
         "#hash_681bde46bf31f10a"
@@ -55,9 +55,9 @@
     "model": "#veh_t8_mil_truck_cargo_bed_cargo_warzone_dest_mp_light",
     "deathModel": "#veh_t8_mil_truck_cargo_dead_standard_warzone_mp_light",
     "soundDef": "#hash_2003552a9b98b11",
-    "compassIconMaterial": "#hash_4d19619fbb68ebba",
+    "compassIconMaterial": "#compass_vehicle_cargotruck",
     "destructibleDef": "#hash_5bebe944795543a0",
-    "tacticalModeIcon": "#hash_6ddceedb862d8cc5",
+    "tacticalModeIcon": "#uie_ui_icon_minimap_wz_truck",
     "steerAxisName": "AXIS_LSTICK",
     "gasAxisName": "AXIS_LSTICK",
     "unk15f8": "BUTTON_LTRIG",
@@ -124,7 +124,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_6ddceedb862d8cc5:hash_5cba4be6": "image#hash_6ddceedb862d8cc5"
+                        "uie_ui_icon_minimap_wz_truck:hash_5cba4be6": "image#uie_ui_icon_minimap_wz_truck"
                     },
                     {
                         "hash_513059ad": 0,
@@ -213,7 +213,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_6ddceedb862d8cc5:hash_5cba4be6": "image#hash_6ddceedb862d8cc5"
+                        "uie_ui_icon_minimap_wz_truck:hash_5cba4be6": "image#uie_ui_icon_minimap_wz_truck"
                     },
                     {
                         "hash_513059ad": 0,
@@ -253,7 +253,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_6ddceedb862d8cc5:hash_5cba4be6": "image#hash_6ddceedb862d8cc5"
+                        "uie_ui_icon_minimap_wz_truck:hash_5cba4be6": "image#uie_ui_icon_minimap_wz_truck"
                     },
                     {
                         "hash_513059ad": 0,

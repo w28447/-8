@@ -61,7 +61,7 @@ function fall()
         iprintlnbold( "<dev string:x38>" );
     #/
     
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     n_end_time = gettime() + 300000;
     
     while ( gettime() < n_end_time )
@@ -93,7 +93,7 @@ function grav()
         iprintlnbold( "<dev string:x74>" );
     #/
     
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     zm_bgb_newtonian_negation::function_8622e664( 1 );
     wait 60;
     zm_bgb_newtonian_negation::function_8622e664( 0 );
@@ -110,7 +110,7 @@ function grav()
 function guns()
 {
     self endon( #"fake_death" );
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     
     if ( isdefined( level.pack_a_punch ) && level flag::get( "pap_power_ready" ) )
     {
@@ -307,7 +307,7 @@ function time()
         iprintlnbold( "<dev string:x15f>" );
     #/
     
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     a_e_players = getplayers();
     a_e_zombies = getaiteamarray( level.zombie_team );
     
@@ -347,7 +347,7 @@ function brew()
         iprintlnbold( "<dev string:x198>" );
     #/
     
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     level.var_1f3f3e7b = &function_28e2ddd5;
     level.var_1b64d570 = 0;
     level waittill( #"end_of_round" );
@@ -365,7 +365,7 @@ function cola()
         iprintlnbold( "<dev string:x1be>" );
     #/
     
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     level.var_1f3f3e7b = &function_28e2ddd5;
     level.var_1b64d570 = 1;
     level waittill( #"end_of_round" );
@@ -383,7 +383,7 @@ function soda()
         iprintlnbold( "<dev string:x1e4>" );
     #/
     
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     level.var_1f3f3e7b = &function_28e2ddd5;
     level.var_1b64d570 = 2;
     level waittill( #"end_of_round" );
@@ -417,7 +417,7 @@ function noob()
         iprintlnbold( "<dev string:x269>" );
     #/
     
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     level thread function_a3bdad03();
     
     while ( isdefined( level.var_debefb5b ) && level.var_debefb5b )
@@ -468,7 +468,7 @@ function bank()
         iprintlnbold( "<dev string:x295>" );
     #/
     
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     wait 2;
     a_e_players = getplayers();
     
@@ -488,7 +488,7 @@ function door()
         iprintlnbold( "<dev string:x2b9>" );
     #/
     
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     a_e_zombie_doors = getentarray( "zombie_door", "targetname" );
     a_e_zombie_debris = getentarray( "zombie_debris", "targetname" );
     a_script_flags = [];
@@ -577,7 +577,7 @@ function warp()
         iprintlnbold( "<dev string:x2df>" );
     #/
     
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     wait 1;
     a_e_players = getplayers();
     
@@ -619,7 +619,7 @@ function warp_player()
 // Size: 0x270
 function shed()
 {
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     
     if ( flag::get( #"magic_door_power_up_grabbed" ) )
     {
@@ -674,7 +674,7 @@ function nuke()
         iprintlnbold( "<dev string:x391>" );
     #/
     
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     var_68b709a = struct::get( "computer_system_powerup_drop" );
     
     if ( isdefined( var_68b709a ) )
@@ -711,7 +711,7 @@ function puke()
         iprintlnbold( "<dev string:x3d8>" );
     #/
     
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     callback::on_ai_damage( &function_80d5023d );
     wait 300;
     callback::remove_on_ai_damage( &function_80d5023d );
@@ -768,7 +768,7 @@ function club()
         iprintlnbold( "<dev string:x432>" );
     #/
     
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     exploder::exploder( "fxexp_disco_lgt" );
     playsoundatposition( #"hash_c8d3a1557c42ab7", ( 1, 1145, -350 ) );
     wait 253;
@@ -789,7 +789,7 @@ function duck()
         iprintlnbold( "<dev string:x4b0>" );
     #/
     
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     callback::on_ai_damage( &function_369efa3e );
     wait 300;
     callback::remove_callback( #"on_ai_damage", &function_369efa3e );
@@ -822,7 +822,7 @@ function function_369efa3e( params )
 // Size: 0x7c
 function song()
 {
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     wait 1;
     
     if ( level.musicsystem.currentplaytype < 4 )
@@ -841,16 +841,16 @@ function quiz()
 {
     level endon( #"stop_all_vo" );
     level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_73fd31eafa77ad51", 0, 1 );
-    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_23131f0d452094c1", 0, 0 );
-    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_23131f0d452094c1", 1, 0 );
-    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_12cb80d7a172a4b", 0, 0 );
-    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_12cb80d7a172a4b", 1, 0 );
-    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_6b80107bf5762401", 0, 0 );
-    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_6b80107bf5762401", 1, 0 );
-    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_25e8d751b537b7b7", 0, 0 );
-    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_25e8d751b537b7b7", 1, 0 );
-    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_5890d651d18916db", 0, 0 );
-    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_5890d651d18916db", 1, 0 );
+    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_quiz_one", 0, 0 );
+    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_quiz_one", 1, 0 );
+    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_quiz_two", 0, 0 );
+    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_quiz_two", 1, 0 );
+    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_quiz_three", 0, 0 );
+    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_quiz_three", 1, 0 );
+    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_quiz_four", 0, 0 );
+    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_quiz_four", 1, 0 );
+    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_quiz_five", 0, 0 );
+    level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_quiz_five", 1, 0 );
 }
 
 // Namespace zm_white_cheat_codes/zm_white_cheat_codes
@@ -876,22 +876,22 @@ function joke()
     switch ( level.var_9551e688 )
     {
         case 0:
-            level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_1382b96530ccddd7", 0, 1 );
+            level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_joke_one", 0, 1 );
             break;
         case 1:
-            level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_477362650641d121", 0, 1 );
+            level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_joke_two", 0, 1 );
             break;
         case 2:
-            level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_5c9c346d2be844fb", 0, 1 );
+            level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_joke_three", 0, 1 );
             break;
         case 3:
-            level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_1e85c53e64df168d", 0, 1 );
+            level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_joke_four", 0, 1 );
             break;
         case 4:
-            level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_6870bc3e45a45ebd", 0, 1 );
+            level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_joke_five", 0, 1 );
             break;
         case 5:
-            level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"hash_72711a651e8449f3", 0, 1 );
+            level.var_5dd0d3ff zm_hms_util::function_6a0d675d( #"vox_joke_six", 0, 1 );
             break;
     }
     
@@ -940,7 +940,7 @@ function life()
 // Size: 0x136
 function boom()
 {
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     s_spawn_loc = struct::get( "computer_system_powerup_drop" );
     s_keypad = struct::get( "keypad" );
     e_player = level.var_f13364b4.var_12633dc5;
@@ -959,7 +959,7 @@ function boom()
 // Size: 0x74
 function pack()
 {
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     var_68b709a = struct::get( "computer_system_powerup_drop" );
     
     if ( isdefined( var_68b709a ) )

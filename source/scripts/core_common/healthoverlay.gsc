@@ -449,15 +449,15 @@ function private function_f8139729()
     assert( isdefined( self.var_66cb03ad ) );
     assert( isdefined( self.maxhealth ) );
     assert( isplayer( self ) );
-    var_bc840360 = isdefined( self.heal ) && isdefined( self.heal.var_bc840360 ) ? self.heal.var_bc840360 : 0;
+    target_health = isdefined( self.heal ) && isdefined( self.heal.target_health ) ? self.heal.target_health : 0;
     
-    if ( var_bc840360 == 0 )
+    if ( target_health == 0 )
     {
-        var_bc840360 = self.var_66cb03ad;
+        target_health = self.var_66cb03ad;
     }
     
-    var_bc840360 = math::clamp( var_bc840360, 0, max( self.maxhealth, self.var_66cb03ad ) );
-    return var_bc840360;
+    target_health = math::clamp( target_health, 0, max( self.maxhealth, self.var_66cb03ad ) );
+    return target_health;
 }
 
 // Namespace healthoverlay/healthoverlay
@@ -499,8 +499,8 @@ function private heal( var_dc77251f )
         self notify( #"snd_breathing_better" );
     }
     
-    var_bc840360 = player function_f8139729();
-    assert( var_bc840360 > 0 );
+    target_health = player function_f8139729();
+    assert( target_health > 0 );
     
     if ( isdefined( player.var_44d52546 ) && player.var_44d52546 )
     {
@@ -509,7 +509,7 @@ function private heal( var_dc77251f )
     else
     {
         regen_rate = player function_8ca62ae3();
-        regen_amount = regen_rate * float( var_dc77251f.time_elapsed ) / 1000 / var_bc840360;
+        regen_amount = regen_rate * float( var_dc77251f.time_elapsed ) / 1000 / target_health;
     }
     
     if ( regen_amount == 0 )
@@ -529,11 +529,11 @@ function private heal( var_dc77251f )
         player j_sticks_front1_end_le1();
     }
     
-    new_health = var_dc77251f.var_ec8863bf * var_bc840360 + var_dc77251f.var_e65dca8d;
+    new_health = var_dc77251f.var_ec8863bf * target_health + var_dc77251f.var_e65dca8d;
     player.health = int( math::clamp( floor( new_health ), 0, max( self.maxhealth, self.var_66cb03ad ) ) );
     var_dc77251f.var_e65dca8d = new_health - player.health;
     
-    if ( player.health >= var_bc840360 && var_dc77251f.old_health < var_bc840360 )
+    if ( player.health >= target_health && var_dc77251f.old_health < target_health )
     {
         player player::function_c6fe9951();
     }
@@ -657,17 +657,17 @@ function private function_8f2722f6()
         return;
     }
     
-    var_bc840360 = player function_f8139729();
+    target_health = player function_f8139729();
     
-    if ( var_bc840360 <= player.health )
+    if ( target_health <= player.health )
     {
-        player.health = var_bc840360;
+        player.health = target_health;
         var_dc77251f.var_e65dca8d = 0;
         player function_2eee85c1();
         return;
     }
     
-    var_dc77251f.ratio = player.health / var_bc840360;
+    var_dc77251f.ratio = player.health / target_health;
     var_dc77251f.var_ec8863bf = var_dc77251f.ratio;
     player function_69e7b01c( player.health / player.maxhealth );
     var_dc77251f.time_now = gettime();

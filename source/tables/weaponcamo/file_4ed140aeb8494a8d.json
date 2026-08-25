@@ -150,7 +150,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_4f34968e4b1d4b4d",
+                            "camoMaterial": "#mc/mtl_p8_zm_elixir_icon_blood_debt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -234,7 +234,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_5ab194cc72c679e7",
+                            "camoMaterial": "#mc/mtl_p8_zm_elixir_icon_shields_up",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -281,7 +281,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_6418ae89fda5a1cf",
+                            "camoMaterial": "#mc/mtl_p8_zm_elixir_icon_talkin_bout_regeneration",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,

@@ -28,10 +28,10 @@
     "#hash_2cf49821": false,
     "#hash_d2751f9d": false,
     "#hash_554be9f7": false,
-    "sound90": "#hash_28da5e9c8c6fdb90",
-    "sound240": "#hash_631a067190b54300",
-    "sound250": "#hash_242aa17124751841",
-    "projexplosionsound": "#hash_4e25b7e8e6211763",
+    "sound90": "#wpn_pineapple_mini_loop",
+    "sound240": "#wpn_generic_dryfire_npc",
+    "sound250": "#wpn_generic_dryfire_plr",
+    "projexplosionsound": "#wpn_pineapple_explode",
     "tunables1": "#hero_pineapple_grenade_tunables_wz",
     "statusEffects": [
         {

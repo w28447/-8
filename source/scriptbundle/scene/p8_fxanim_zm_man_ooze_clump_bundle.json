@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_32034ec805413214",
+                            "anim": "anim#p8_fxanim_zm_man_ooze_clump_01_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -34,7 +34,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_32034ec805413214",
+                            "anim": "anim#p8_fxanim_zm_man_ooze_clump_01_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -136,7 +136,7 @@
             "hash_9de1f44c": 0,
             "lerptime": 0,
             "firstframe": 1,
-            "model": "model#hash_5853acd72e8b52e7",
+            "model": "model#p8_fxanim_zm_man_ooze_clump_01_mod",
             "type": "prop",
             "disablehitmarker": 0,
             "usefakeactor": 0,
@@ -158,7 +158,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_4c0eb997d9885df7",
+                            "anim": "anim#p8_fxanim_zm_man_ooze_clump_02_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -210,7 +210,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_4c0eb997d9885df7",
+                            "anim": "anim#p8_fxanim_zm_man_ooze_clump_02_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -289,7 +289,7 @@
             "hash_9de1f44c": 0,
             "lerptime": 0,
             "firstframe": 1,
-            "model": "model#hash_357300c8cc0aa132",
+            "model": "model#p8_fxanim_zm_man_ooze_clump_02_mod",
             "type": "prop",
             "disablehitmarker": 0,
             "usefakeactor": 0,
@@ -311,7 +311,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_110cd1ae76d9624e",
+                            "anim": "anim#p8_fxanim_zm_man_ooze_clump_03_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -386,7 +386,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_110cd1ae76d9624e",
+                            "anim": "anim#p8_fxanim_zm_man_ooze_clump_03_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -442,7 +442,7 @@
             "hash_9de1f44c": 0,
             "lerptime": 0,
             "firstframe": 1,
-            "model": "model#hash_3c6f9e997e6cbf15",
+            "model": "model#p8_fxanim_zm_man_ooze_clump_03_mod",
             "type": "prop",
             "disablehitmarker": 0,
             "usefakeactor": 0,

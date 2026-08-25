@@ -216,7 +216,7 @@ function on_disconnect()
     {
         self.var_5e8ff98e val::reset( #"wolf_protector", "takedamage" );
         self.var_5e8ff98e clientfield::set( "wolf_protector_fx", 0 );
-        self.var_5e8ff98e playsound( #"hash_55c72512f51a5e87" );
+        self.var_5e8ff98e playsound( #"evt_wolf_protector_despawn" );
         self.var_5e8ff98e thread util::delayed_delete( 0.1 );
     }
 }
@@ -453,7 +453,7 @@ function function_6d80c359()
         self thread function_166fb685( self.var_9a054c95 );
         self.var_5e8ff98e val::reset( #"wolf_protector", "takedamage" );
         self.var_5e8ff98e clientfield::set( "wolf_protector_fx", 0 );
-        self.var_5e8ff98e playsound( #"hash_55c72512f51a5e87" );
+        self.var_5e8ff98e playsound( #"evt_wolf_protector_despawn" );
         self.var_5e8ff98e thread util::delayed_delete( 0.1 );
     }
 }

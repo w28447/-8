@@ -394,7 +394,7 @@ function do_vision_world_pulse_lerp_helper( currenttime, elapsedtime, localclien
     if ( pulseradius > 0 && self.var_168d7f5c == 0 )
     {
         self.var_168d7f5c = 1;
-        playsound( localclientnum, #"hash_151b724086b2955b" );
+        playsound( localclientnum, #"gdt_vision_pulse_pulse" );
     }
     
     if ( pulseradius > pulsemaxradius )
@@ -402,7 +402,7 @@ function do_vision_world_pulse_lerp_helper( currenttime, elapsedtime, localclien
         if ( self.var_168d7f5c * pulsemaxradius < pulseradius )
         {
             self.var_168d7f5c++;
-            playsound( localclientnum, #"hash_151b724086b2955b" );
+            playsound( localclientnum, #"gdt_vision_pulse_pulse" );
         }
         
         pulseradius = int( pulseradius ) % pulsemaxradius;

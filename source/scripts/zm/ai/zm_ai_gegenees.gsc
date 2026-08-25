@@ -1155,7 +1155,7 @@ function private function_ca5688e3( inflictor, attacker, damage, idflags, meanso
                 
                 if ( isdefined( point ) )
                 {
-                    playsoundatposition( #"hash_72db6f3f0e602a33", point );
+                    playsoundatposition( #"zmb_ai_gegenees_hit_shield", point );
                 }
             }
             

@@ -1462,7 +1462,7 @@ function function_985f4598( str_ww )
             var_cfc545ad = #"p8_zm_red_rune_circle_ouranos";
             break;
         case #"light":
-            var_cfc545ad = #"hash_31a411dafa5678e2";
+            var_cfc545ad = #"p8_zm_red_rune_circle_hemera";
             break;
     }
     
@@ -2110,7 +2110,7 @@ function cleanse_portal( localclientnum, oldval, newval, bnewent, binitialsnap, 
             s_fx.var_8928e499 = playfx( localclientnum, level._effect[ #"cleanse_portal" ], s_fx.origin, anglestoforward( s_fx.angles ), anglestoup( s_fx.angles ) );
         }
         
-        audio::playloopat( #"hash_6ebedb6190c4ee87", s_fx.origin );
+        audio::playloopat( #"evt_egg_portal", s_fx.origin );
         return;
     }
     
@@ -2120,7 +2120,7 @@ function cleanse_portal( localclientnum, oldval, newval, bnewent, binitialsnap, 
         s_fx.var_8928e499 = undefined;
     }
     
-    audio::stoploopat( #"hash_6ebedb6190c4ee87", s_fx.origin );
+    audio::stoploopat( #"evt_egg_portal", s_fx.origin );
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest

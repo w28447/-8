@@ -59,7 +59,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_cce897ddeb298c8",
+                            "anim": "anim#p8_fxanim_mp_maldives_power_core_pipes_02_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -91,7 +91,7 @@
             "skipdeathanim": 0,
             "hash_9de1f44c": 0,
             "lerptime": 0,
-            "model": "model#hash_1265e91f3f6caafb",
+            "model": "model#p8_fxanim_mp_maldives_power_core_pipes_02_mod",
             "type": "prop",
             "disablehitmarker": 0,
             "usefakeactor": 0,

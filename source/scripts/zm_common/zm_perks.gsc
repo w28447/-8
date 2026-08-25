@@ -3067,7 +3067,7 @@ function function_f5da744e()
         
         if ( level.var_c3e5c4cd == 1 && !self.var_3cfb2018 )
         {
-            playsoundatposition( #"hash_1e20f59360c2377e", self.origin );
+            playsoundatposition( #"mus_perk_machine_stinger", self.origin );
         }
         
         player zm_score::minus_to_player_score( current_cost );

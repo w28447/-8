@@ -7,7 +7,7 @@
     "hash_66bbc6d6": "scriptbundle&1.0",
     "configstringfiletype": "scriptbundle",
     "hash_bbbdcca7": "scriptbundle&1.0",
-    "model": "model#hash_2532bcbb07bebad",
+    "model": "model#p8_sta_door_sliding_right",
     "type": "doors",
     "vmtype": "server",
     "door_start_sound": "evt_door_automatic_open",

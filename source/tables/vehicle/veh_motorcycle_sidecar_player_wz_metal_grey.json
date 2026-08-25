@@ -52,12 +52,12 @@
     "skidSpeedMin": 250,
     "skidSpeedMax": 600,
     "peelSpeedMax": 176,
-    "model": "#hash_39334078043bf502",
+    "model": "#veh_t8_civ_motorcycle_sidecar_metal_grey",
     "deathModel": "#hash_7916b4858b35d97e",
     "soundDef": "#veh_motorcycle_wz",
     "compassIconMaterial": "#compass_vehicle_motorcycle",
     "destructibleDef": "#hash_40bed5bc7c550ff3",
-    "tacticalModeIcon": "#hash_6c7ba888137c81b9",
+    "tacticalModeIcon": "#ui_icon_minimap_wz_motorcycle",
     "steerAxisName": "AXIS_LSTICK",
     "unk15f8": "BUTTON_LTRIG",
     "unk1608": "BUTTON_A",
@@ -79,7 +79,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_6c7ba888137c81b9:hash_5cba4be6": "image#hash_6c7ba888137c81b9"
+                        "ui_icon_minimap_wz_motorcycle:hash_5cba4be6": "image#ui_icon_minimap_wz_motorcycle"
                     },
                     {
                         "hash_513059ad": 0,
@@ -168,7 +168,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_6c7ba888137c81b9:hash_5cba4be6": "image#hash_6c7ba888137c81b9"
+                        "ui_icon_minimap_wz_motorcycle:hash_5cba4be6": "image#ui_icon_minimap_wz_motorcycle"
                     },
                     {
                         "hash_513059ad": 0,

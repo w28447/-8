@@ -2441,7 +2441,7 @@ function take_spear_setup( b_skipped )
     s_prophecy.mdl_spear playsound( #"hash_5dd75be565f9cc2" );
     e_player = s_prophecy.mdl_spear zm_unitrigger::function_fac87205( &function_8ddf09ff, 96 );
     s_prophecy.var_8257a25e = e_player;
-    e_player playsound( #"hash_230737b2535a3374" );
+    e_player playsound( #"zmb_crafting_pickup_generic" );
 }
 
 // Namespace zm_red_main_quest/zm_red_main_quest
@@ -2854,14 +2854,14 @@ function function_590ba57a( e_player )
     
     if ( zm_utility::is_player_valid( e_player ) )
     {
-        e_player zm_vo::function_a2bd5a0c( #"hash_3f73cd79382c519" );
+        e_player zm_vo::function_a2bd5a0c( #"vox_terrace_mirror_rise_react" );
     }
     
     wait 2;
     
     if ( zm_utility::is_player_valid( e_player ) )
     {
-        e_player thread zm_vo::function_a2bd5a0c( #"hash_11241cd3fee87d8c" );
+        e_player thread zm_vo::function_a2bd5a0c( #"vox_terrace_mirror_stop_react" );
     }
 }
 
@@ -3134,7 +3134,7 @@ function function_8e8da19a()
                     mdl_spear = e_player;
                 }
                 
-                e_player playsound( #"hash_5af2a9d11f007b9" );
+                e_player playsound( #"zmb_player_electrocuted_oneshot" );
                 e_player thread status_effect::status_effect_apply( blind_status_effect, undefined, mdl_spear );
                 e_player thread zm_audio::create_and_play_dialog( #"generic", #"response_negative" );
             }
@@ -8857,7 +8857,7 @@ function function_c54d30d5()
     
     if ( zm_utility::is_player_valid( e_player ) )
     {
-        e_player zm_vo::function_a2bd5a0c( #"hash_3280eb0abc8ec3ed" );
+        e_player zm_vo::function_a2bd5a0c( #"vox_ballista_shoot_react" );
     }
     
     level zm_audio::sndvoxoverride( 0 );

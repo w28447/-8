@@ -1,6 +1,6 @@
 {
     "name": "#hash_b61c96c35b2d8cc",
-    "model": "#hash_18ad77763219dc14",
+    "model": "#veh_t8_soviet_civ_sedan_small_snow_destructible",
     "unk20": "#veh_t8_soviet_civ_sedan_small_dead",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

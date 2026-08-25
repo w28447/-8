@@ -16,7 +16,7 @@
     "scriptBundleSettings": "#tank_t8_settings_wz",
     "deathFx": "#hash_51eea2d4e316e426",
     "deathFxTag": "tag_origin_animate",
-    "deathFxSound": "#hash_2149db0c502305e3",
+    "deathFxSound": "#exp_armor_vehicle",
     "unk1438": [
         "#hash_744f1409725cea0b",
         "#hash_744f1409725cea0b"
@@ -58,7 +58,7 @@
     "soundDef": "#veh_tank_wz",
     "compassIconMaterial": "#compass_vehicle_tank",
     "destructibleDef": "#hash_3a81d3e2773d27fa",
-    "tacticalModeIcon": "#hash_7b7a954e31661d7c",
+    "tacticalModeIcon": "#ui_icon_minimap_wz_tank",
     "steerAxisName": "AXIS_LSTICK",
     "gasAxisName": "AXIS_LSTICK",
     "attackButtonName": "BUTTON_RTRIG",
@@ -88,7 +88,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_7b7a954e31661d7c:hash_5cba4be6": "image#hash_7b7a954e31661d7c"
+                        "ui_icon_minimap_wz_tank:hash_5cba4be6": "image#ui_icon_minimap_wz_tank"
                     },
                     {
                         "hash_513059ad": 0,
@@ -163,7 +163,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_7b7a954e31661d7c:hash_5cba4be6": "image#hash_7b7a954e31661d7c"
+                        "ui_icon_minimap_wz_tank:hash_5cba4be6": "image#ui_icon_minimap_wz_tank"
                     },
                     {
                         "hash_513059ad": 0,

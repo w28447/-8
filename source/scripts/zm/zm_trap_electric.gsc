@@ -80,14 +80,14 @@ function trap_activate_electric()
 function trap_audio( trap )
 {
     sound_origin = spawn( "script_origin", self.origin );
-    sound_origin playsound( #"hash_1fb395621513432f" );
-    sound_origin playloopsound( #"hash_177d7a6df8ed0d7b" );
+    sound_origin playsound( #"wpn_electric_trap_start" );
+    sound_origin playloopsound( #"wpn_electric_trap_loop" );
     self thread play_electrical_sound( trap );
     trap waittilltimeout( trap._trap_duration, #"trap_done" );
     
     if ( isdefined( sound_origin ) )
     {
-        playsoundatposition( #"hash_3819c6cd06a27f15", sound_origin.origin );
+        playsoundatposition( #"wpn_electric_trap_stop", sound_origin.origin );
         sound_origin stoploopsound();
         waitframe( 1 );
         sound_origin delete();
@@ -158,7 +158,7 @@ function damage( trap )
         {
             level.burning_zombies[ level.burning_zombies.size ] = self;
             self thread zm_traps::zombie_flame_watch();
-            self playsound( #"hash_5183b687ad8d715a" );
+            self playsound( #"wpn_electric_trap_hit" );
             self thread zombie_death::flame_death_fx();
             playfxontag( level._effect[ #"character_fire_death_torso" ], self, "J_SpineLower" );
             wait randomfloat( 1.25 );
@@ -173,7 +173,7 @@ function damage( trap )
             refs[ 5 ] = "no_legs";
             refs[ 6 ] = "head";
             self.a.gib_ref = refs[ randomint( refs.size ) ];
-            playsoundatposition( #"hash_5183b687ad8d715a", self.origin );
+            playsoundatposition( #"wpn_electric_trap_hit", self.origin );
             
             if ( randomint( 100 ) > 50 )
             {
@@ -183,7 +183,7 @@ function damage( trap )
             bhtnactionstartevent( self, "electrocute" );
             self notify( #"bhtn_action_notify", { #action:"electrocute" } );
             wait randomfloat( 1.25 );
-            self playsound( #"hash_5183b687ad8d715a" );
+            self playsound( #"wpn_electric_trap_hit" );
         }
     }
     

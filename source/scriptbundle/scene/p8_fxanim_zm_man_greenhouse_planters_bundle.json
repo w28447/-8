@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_ddae2170766a28a",
+                            "anim": "anim#p8_fxanim_zm_man_greenhouse_planters_01_01_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -38,7 +38,7 @@
             "hash_9de1f44c": 0,
             "lerptime": 0,
             "firstframe": 1,
-            "model": "model#hash_2d5068b4f18c3c17",
+            "model": "model#p8_fxanim_zm_man_greenhouse_planters_01_mod",
             "type": "prop",
             "disablehitmarker": 0,
             "deletewhenfinished": 1,
@@ -61,7 +61,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_7bbbda4d61ec67e1",
+                            "anim": "anim#p8_fxanim_zm_man_greenhouse_planters_01_02_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -94,7 +94,7 @@
             "hash_9de1f44c": 0,
             "lerptime": 0,
             "firstframe": 1,
-            "model": "model#hash_2d5068b4f18c3c17",
+            "model": "model#p8_fxanim_zm_man_greenhouse_planters_01_mod",
             "type": "prop",
             "disablehitmarker": 0,
             "usefakeactor": 0,
@@ -116,7 +116,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_2db32e7028d42180",
+                            "anim": "anim#p8_fxanim_zm_man_greenhouse_planters_01_03_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -149,7 +149,7 @@
             "hash_9de1f44c": 0,
             "lerptime": 0,
             "firstframe": 1,
-            "model": "model#hash_2d5068b4f18c3c17",
+            "model": "model#p8_fxanim_zm_man_greenhouse_planters_01_mod",
             "type": "prop",
             "disablehitmarker": 0,
             "usefakeactor": 0,
@@ -171,7 +171,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_4b0e56365ca012f",
+                            "anim": "anim#p8_fxanim_zm_man_greenhouse_planters_01_04_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -204,7 +204,7 @@
             "hash_9de1f44c": 0,
             "lerptime": 0,
             "firstframe": 1,
-            "model": "model#hash_2d5068b4f18c3c17",
+            "model": "model#p8_fxanim_zm_man_greenhouse_planters_01_mod",
             "type": "prop",
             "disablehitmarker": 0,
             "deletewhenfinished": 1,
@@ -227,7 +227,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_6024dd7aa1307706",
+                            "anim": "anim#p8_fxanim_zm_man_greenhouse_planters_01_05_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -260,7 +260,7 @@
             "hash_9de1f44c": 0,
             "lerptime": 0,
             "firstframe": 1,
-            "model": "model#hash_2d5068b4f18c3c17",
+            "model": "model#p8_fxanim_zm_man_greenhouse_planters_01_mod",
             "type": "prop",
             "disablehitmarker": 0,
             "deletewhenfinished": 1,
@@ -283,7 +283,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_50aad7a8342662bd",
+                            "anim": "anim#p8_fxanim_zm_man_greenhouse_planters_01_06_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -316,7 +316,7 @@
             "hash_9de1f44c": 0,
             "lerptime": 0,
             "firstframe": 1,
-            "model": "model#hash_2d5068b4f18c3c17",
+            "model": "model#p8_fxanim_zm_man_greenhouse_planters_01_mod",
             "type": "prop",
             "disablehitmarker": 0,
             "deletewhenfinished": 1,
@@ -339,7 +339,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_257a9975dc40a183",
+                            "anim": "anim#p8_fxanim_zm_man_greenhouse_planters_02_01_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -372,7 +372,7 @@
             "hash_9de1f44c": 0,
             "lerptime": 0,
             "firstframe": 1,
-            "model": "model#hash_996fca68e540662",
+            "model": "model#p8_fxanim_zm_man_greenhouse_planters_02_mod",
             "type": "prop",
             "disablehitmarker": 0,
             "deletewhenfinished": 1,
@@ -395,7 +395,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_79eb064b8513b040",
+                            "anim": "anim#p8_fxanim_zm_man_greenhouse_planters_02_02_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -428,7 +428,7 @@
             "hash_9de1f44c": 0,
             "lerptime": 0,
             "firstframe": 1,
-            "model": "model#hash_996fca68e540662",
+            "model": "model#p8_fxanim_zm_man_greenhouse_planters_02_mod",
             "type": "prop",
             "disablehitmarker": 0,
             "deletewhenfinished": 1,

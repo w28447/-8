@@ -265,14 +265,14 @@ function private function_13339b58( istank )
 {
     self endon( #"death" );
     open_anim = #"p8_fxanim_wz_parachute_supplydrop_open_anim";
-    idle_anim = #"hash_39265b4ed372175a";
-    closed_anim = #"hash_32ad963f25f115d2";
+    idle_anim = #"p8_fxanim_wz_parachute_supplydrop_open_idle_anim";
+    closed_anim = #"p8_fxanim_wz_parachute_supplydrop_drop_anim";
     
     if ( isdefined( istank ) && istank )
     {
-        open_anim = #"hash_77322c90462ba8c";
-        idle_anim = #"hash_780b50c0a9393f1d";
-        closed_anim = #"hash_ac2d4936b932903";
+        open_anim = #"p8_fxanim_wz_parachute_supplydrop_tank_open_anim";
+        idle_anim = #"p8_fxanim_wz_parachute_supplydrop_tank_open_idle_anim";
+        closed_anim = #"p8_fxanim_wz_parachute_supplydrop_tank_drop_anim";
     }
     
     self animscripted( "parachute_open", self.origin, self.angles, open_anim, "normal", "root", 1, 0 );

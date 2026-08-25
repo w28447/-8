@@ -34,7 +34,7 @@
     "firesoundplayer": "#wpn_grenade_throw",
     "gadgetreadysoundplayer": "#hash_5069ed8fdae493ce",
     "sound660": "#hash_4b624dad2a08a6cd",
-    "projexplosionsound": "#hash_2b2531a0230c359c",
+    "projexplosionsound": "#exp_molotov_explo",
     "tunables1": "#eq_molotov_tunables_zm",
     "cacWeaponXCam": "#ui_cam_cac_equip_incendiary",
     "sharedWeaponSounds": "#equipment",

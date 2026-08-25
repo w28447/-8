@@ -34,7 +34,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_41e61c6d91e5d7",
+                            "anim": "anim#p8_fxanim_zm_esc_power_panel_phouse_05_activate_anim",
                             "entrytype": "anim"
                         },
                         {
@@ -67,7 +67,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_705b3bf1b1d4f205",
+                            "anim": "anim#p8_fxanim_zm_esc_power_panel_phouse_05_green_anim",
                             "entrytype": "anim"
                         }
                     ],

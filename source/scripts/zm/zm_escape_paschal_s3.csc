@@ -617,7 +617,7 @@ function function_da095cb3( localclientnum, oldval, newval, bnewent, binitialsna
         if ( !isdefined( self.var_25af2af1 ) )
         {
             self playsound( localclientnum, "zmb_giggles_3_64_light_start" );
-            self.var_25af2af1 = self playloopsound( #"hash_39ff4d3373413768" );
+            self.var_25af2af1 = self playloopsound( #"zmb_giggles_3_64_light_lp" );
         }
         
         self.var_19e6dc6f = util::playfxontag( localclientnum, level._effect[ #"simon_light_fx" ], self, "tag_origin" );
@@ -626,7 +626,7 @@ function function_da095cb3( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( isdefined( self.var_25af2af1 ) )
     {
-        self playsound( localclientnum, #"hash_7bebc063b1a89fbc" );
+        self playsound( localclientnum, #"zmb_giggles_3_64_light_stop" );
         self stoploopsound( self.var_25af2af1 );
         self.var_25af2af1 = undefined;
     }

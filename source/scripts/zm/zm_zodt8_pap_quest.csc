@@ -105,7 +105,7 @@ function pap_chunk_small_rune( localclientnum, oldval, newval, bnewent, binitial
             var_d7b20a11 function_a2c01e49( localclientnum, 1, 1 );
             var_d7b20a11 function_a2c01e49( localclientnum, 2, 1 );
             var_d7b20a11 function_a2c01e49( localclientnum, 3, 1 );
-            playsound( localclientnum, #"hash_3e22cef1a7b16893", var_d7b20a11 gettagorigin( "j_map_rune_004" ) );
+            playsound( localclientnum, #"zmb_pap_plinth_light_off", var_d7b20a11 gettagorigin( "j_map_rune_004" ) );
             break;
         case 2:
             var_d7b20a11 function_a2c01e49( localclientnum, 0, 0 );
@@ -201,7 +201,7 @@ function pap_chunk_small_rune( localclientnum, oldval, newval, bnewent, binitial
     
     if ( newval != 1 )
     {
-        playsound( localclientnum, #"hash_291ff1a1ce5cc02f", sndorigin );
+        playsound( localclientnum, #"zmb_pap_plinth_light_on", sndorigin );
     }
 }
 

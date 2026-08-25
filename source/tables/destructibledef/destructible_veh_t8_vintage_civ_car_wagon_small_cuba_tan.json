@@ -1,6 +1,6 @@
 {
-    "name": "#hash_7ea04a545fba1f96",
-    "model": "#hash_167211a39babc906",
+    "name": "#destructible_veh_t8_vintage_civ_car_wagon_small_cuba_tan",
+    "model": "#veh_t8_vintage_civ_car_wagon_small_cuba_tan_dest",
     "unk20": "#veh_t8_vintage_civ_car_wagon_small_cuba_tan_dead",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

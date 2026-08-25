@@ -32,8 +32,8 @@ function __init__()
     level._effect[ #"t8_leave_fx" ] = #"hash_5f376e9395e16666";
     level._effect[ #"hash_4fbab83578c5a7e7" ] = #"wz/fx8_zm_box_unlock";
     level._effect[ #"hash_538c528b09706dc8" ] = #"hash_286e0d228779181";
-    level.var_96add4a1 = #"hash_210be93b3bfae433";
-    level.var_86e1b0cc = #"hash_1807f48a5193ce49";
+    level.var_96add4a1 = #"zmb_magicbox_leave";
+    level.var_86e1b0cc = #"zmb_box_unlock";
 }
 
 // Namespace wz_ai_utils/wz_ai_utils
@@ -98,7 +98,7 @@ function function_5c69ac3b( localclientnum, oldval, newval, bnewent, binitialsna
             self.var_26a0bda1 = playfx( localclientnum, level._effect[ #"hash_7fe086085cbbacac" ], self.origin );
         }
         
-        self playsound( localclientnum, #"hash_7d0432d3e280bce1", self.origin );
+        self playsound( localclientnum, #"mus_roundstart_3d", self.origin );
         return;
     }
     
@@ -126,17 +126,17 @@ function function_7e5339f3( localclientnum, oldval, newval, bnewent, binitialsna
         
         if ( newval == 2 )
         {
-            self.var_8ddb3e81 = util::playfxontag( localclientnum, level._effect[ #"t8_leave_fx" ], self, "tag_origin" );
+            self.boxfx = util::playfxontag( localclientnum, level._effect[ #"t8_leave_fx" ], self, "tag_origin" );
             self playsound( localclientnum, level.var_96add4a1, self.origin );
             return;
         }
         
         if ( newval == 3 )
         {
-            if ( isdefined( self.var_8ddb3e81 ) )
+            if ( isdefined( self.boxfx ) )
             {
-                stopfx( localclientnum, self.var_8ddb3e81 );
-                self.var_8ddb3e81 = undefined;
+                stopfx( localclientnum, self.boxfx );
+                self.boxfx = undefined;
             }
             
             return;
@@ -144,7 +144,7 @@ function function_7e5339f3( localclientnum, oldval, newval, bnewent, binitialsna
         
         if ( newval == 4 )
         {
-            self.var_8ddb3e81 = util::playfxontag( localclientnum, level._effect[ #"t8_leave_fx" ], self, "tag_origin" );
+            self.boxfx = util::playfxontag( localclientnum, level._effect[ #"t8_leave_fx" ], self, "tag_origin" );
         }
     }
 }

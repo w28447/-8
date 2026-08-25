@@ -1,7 +1,7 @@
 {
     "objects": [
         {
-            "mainanim": "anim#hash_2acaffd66c19a6c2",
+            "mainanim": "anim#p7_fxanim_gp_seagull_circle03_xanim",
             "firstframe": 1,
             "model": "model#aml_gen_seagull_flying_01",
             "type": "prop",

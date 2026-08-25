@@ -406,8 +406,8 @@ function function_5a1bf101( localclientnum )
                 continue;
             }
             
-            var_8347ac20 = getuimodelvalue( var_15d793e8[ ti ] );
-            target_player = getentbynum( localclientnum, var_8347ac20 );
+            target_clientnum = getuimodelvalue( var_15d793e8[ ti ] );
+            target_player = getentbynum( localclientnum, target_clientnum );
             
             if ( !isdefined( target_player ) || !isplayer( target_player ) )
             {

@@ -138,9 +138,9 @@ function function_9b14bec4( eattacker, einflictor, weapon, meansofdeath, damage,
     // Params 4
     // Checksum 0xeb651a1d, Offset: 0x4e8
     // Size: 0x7c, Type: dev
-    function function_7a0599d( var_955a2e18, range, depth, var_94a1d56d )
+    function function_7a0599d( var_955a2e18, range, depth, max_depth )
     {
-        var_227ac3be = depth / ( var_94a1d56d - 1 );
+        var_227ac3be = depth / ( max_depth - 1 );
         circle( var_955a2e18, range, ( 0, 1 - var_227ac3be, var_227ac3be ), 0, 1, 500 );
     }
 

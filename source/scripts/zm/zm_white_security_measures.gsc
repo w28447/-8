@@ -820,7 +820,7 @@ function function_7fffc105()
             level notify( #"trap_activated", { #trap_activator:e_who, #trap:self } );
         }
         
-        level.s_spinning_trap.e_volume playsound( #"hash_345bf7f9d6f848b9" );
+        level.s_spinning_trap.e_volume playsound( #"evt_spinner_trap_start" );
         level.s_spinning_trap spinning_trap_activate( e_who );
         level.s_spinning_trap.var_6b64b967 = 0;
         level.s_spinning_trap.var_41ee2ddc = 0;
@@ -842,7 +842,7 @@ function spinning_trap_activate( e_player )
     n_total_time = 0;
     self.e_trap scene::play( "intro" );
     snd_ent = spawn( "script_origin", level.s_spinning_trap.origin );
-    snd_ent playloopsound( #"hash_57820fd1863bbf19" );
+    snd_ent playloopsound( #"evt_spinner_trap_loop" );
     
     while ( n_total_time < 40 )
     {
@@ -854,7 +854,7 @@ function spinning_trap_activate( e_player )
     }
     
     self notify( #"spinning_trap_complete" );
-    level.s_spinning_trap.e_volume playsound( #"hash_632248542476cd73" );
+    level.s_spinning_trap.e_volume playsound( #"evt_spinner_trap_stop" );
     snd_ent stoploopsound();
     self.e_trap scene::play( "outro" );
     snd_ent delete();
@@ -923,7 +923,7 @@ function function_7bd8cfde( e_activator, s_trap )
         self clientfield::set( "spinning_trap_blood_fx", 1 );
     }
     
-    self playsound( #"hash_42c6cc2204b7fbbd" );
+    self playsound( #"evt_spin_trap_hit" );
     v_hook = s_trap.e_trap.scene_ents[ #"prop 1" ] gettagorigin( "tag_fan_blade_A_2" );
     n_dist = distance2d( self.origin, v_hook );
     
@@ -978,7 +978,7 @@ function function_bcfd9acb( s_trap )
     self setteam( util::get_enemy_team( self.team ) );
     self zombie_utility::makezombiecrawler( 1 );
     var_e72c9959 thread scene::init( #"aib_vign_zm_mob_hook_trap_zombie", self );
-    playsoundatposition( #"hash_42c6cc2204b7fbbd", self.origin );
+    playsoundatposition( #"evt_spin_trap_hit", self.origin );
     s_trap waittill( #"spinning_trap_complete" );
     var_44342e79 = var_e72c9959 scene::function_8582657c( #"p8_fxanim_zm_esc_trap_fan_play", "Shot 2" );
     var_e72c9959 scene::play( #"aib_vign_zm_mob_hook_trap_zombie", self );

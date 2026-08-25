@@ -28,9 +28,9 @@
     "#hash_2cf49821": false,
     "#hash_d2751f9d": false,
     "#hash_554be9f7": false,
-    "sound140": "#hash_5d3253c7a29011d6",
-    "sound240": "#hash_631a067190b54300",
-    "sound250": "#hash_242aa17124751841",
+    "sound140": "#wpn_attack_helicopter_cannon_fire_npc",
+    "sound240": "#wpn_generic_dryfire_npc",
+    "sound250": "#wpn_generic_dryfire_plr",
     "sound600": "#hash_5e3f09c26932fb52",
     "tunables1": "#cobra_20mm_comlink_tunables_mp",
     "tracers": [

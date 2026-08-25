@@ -96,7 +96,7 @@ function place_green_rock( localclientnum, oldval, newval, bnewent, binitialsnap
     if ( newval )
     {
         self.var_477a641f show();
-        playsound( 0, #"hash_52b00c7836adfd1e", var_1eaed254.origin );
+        playsound( 0, #"zmb_rock_drop", var_1eaed254.origin );
         return;
     }
     
@@ -118,7 +118,7 @@ function place_red_rock( localclientnum, oldval, newval, bnewent, binitialsnap, 
     if ( newval )
     {
         self.var_a86cb7e0 show();
-        playsound( 0, #"hash_52b00c7836adfd1e", var_1eaed254.origin );
+        playsound( 0, #"zmb_rock_drop", var_1eaed254.origin );
         return;
     }
     
@@ -140,7 +140,7 @@ function place_blue_rock( localclientnum, oldval, newval, bnewent, binitialsnap,
     if ( newval )
     {
         self.var_40bb11af show();
-        playsound( 0, #"hash_52b00c7836adfd1e", var_1eaed254.origin );
+        playsound( 0, #"zmb_rock_drop", var_1eaed254.origin );
         return;
     }
     
@@ -155,7 +155,7 @@ function function_46b21d8a( localclientnum, oldval, newval, bnewent, binitialsna
 {
     var_1eaed254 = struct::get( "s_spin_trap_place_loc" );
     self.var_73fb3946 = playfx( localclientnum, level._effect[ #"explode_red_rock" ], var_1eaed254.origin - ( 0, 0, 3 ) );
-    playsound( 0, #"hash_3375efdd38e50fb8", var_1eaed254.origin );
+    playsound( 0, #"zmb_rock_explode", var_1eaed254.origin );
 }
 
 // Namespace namespace_42cc2819/namespace_42cc2819
@@ -166,7 +166,7 @@ function function_73ca75df( localclientnum, oldval, newval, bnewent, binitialsna
 {
     var_1eaed254 = struct::get( "s_acid_trap_place_loc" );
     self.var_9c0a6f6d = playfx( localclientnum, level._effect[ #"explode_green_rock" ], var_1eaed254.origin );
-    playsound( 0, #"hash_3375efdd38e50fb8", var_1eaed254.origin );
+    playsound( 0, #"zmb_rock_explode", var_1eaed254.origin );
 }
 
 // Namespace namespace_42cc2819/namespace_42cc2819
@@ -177,7 +177,7 @@ function function_fa6bb35e( localclientnum, oldval, newval, bnewent, binitialsna
 {
     var_1eaed254 = struct::get( "s_fan_trap_place_loc" );
     self.var_c61d3d80 = playfx( localclientnum, level._effect[ #"explode_blue_rock" ], var_1eaed254.origin - ( 0, 0, 3 ) );
-    playsound( 0, #"hash_3375efdd38e50fb8", var_1eaed254.origin );
+    playsound( 0, #"zmb_rock_explode", var_1eaed254.origin );
 }
 
 // Namespace namespace_42cc2819/namespace_42cc2819

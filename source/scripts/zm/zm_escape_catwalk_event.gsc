@@ -133,7 +133,7 @@ function function_84f1c310()
         
         var_40762d8a sethintstring( #"" );
         t_catwalk_door notify( #"power_on" );
-        playsoundatposition( #"hash_97aff7905795396", ( 8223, 10111, 817 ) );
+        playsoundatposition( #"zmb_catwalk_alarm_bell", ( 8223, 10111, 817 ) );
         level.musicsystemoverride = 1;
         music::setmusicstate( "escape_catwalk" );
         s_sparks = struct::get( "catwalk_door_spark" );
@@ -606,7 +606,7 @@ function function_7ab912f2( s_loc )
     wait 1.5;
     playsoundatposition( #"zmb_hellhound_bolt", s_loc.origin );
     earthquake( 0.5, 0.75, s_loc.origin, 1000 );
-    playsoundatposition( #"hash_42894a8e6bfacf66", ( 5085, 10424, 1102 ) );
+    playsoundatposition( #"evt_magma_splash", ( 5085, 10424, 1102 ) );
     playsoundatposition( #"zmb_hellhound_spawn", s_loc.origin );
     assert( isdefined( self ), "<dev string:x38>" );
     assert( isalive( self ), "<dev string:x53>" );
@@ -682,7 +682,7 @@ function function_e7c9f15b( a_ents )
     var_4bdae8cd = struct::get( "p8_fxanim_zm_esc_recreationyard_rocks_a_bundle", "scriptbundlename" );
     var_4bdae8cd thread scene::play( "Main & Idle Loop Out" );
     e_brutus = a_ents[ #"brutus" ];
-    playsoundatposition( #"hash_66ef8de59c96e8d1", e_brutus gettagorigin( "tag_eye" ) );
+    playsoundatposition( #"vox_catwalk_warden_0_ward_0", e_brutus gettagorigin( "tag_eye" ) );
     e_brutus waittill( #"start_teleport" );
     level thread function_21ccdb36();
     e_brutus waittill( #"teleport" );

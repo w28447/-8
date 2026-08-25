@@ -712,7 +712,7 @@ function function_778aec95()
             
             self.var_a1edb69e += 1;
             level.var_d4a0b9f4[ var_f1c779a7 ][ #"animated_fan" ] thread function_c5552e49( self.var_a1edb69e );
-            playsoundatposition( #"hash_49d9da44ea86bf03", self.origin );
+            playsoundatposition( #"zmb_goop_valve_turn", self.origin );
             
             /#
                 var_847964c = floor( self.var_a1edb69e / 10 * 100 );
@@ -1776,7 +1776,7 @@ function function_2330b278()
         iprintlnbold( "<dev string:x2c9>" );
     #/
     
-    playsoundatposition( #"hash_22f33ce72be33eab", ( 0, -334, -337 ) );
+    playsoundatposition( #"zmb_gen_defend_start", ( 0, -334, -337 ) );
     wait 6;
     exploder::stop_exploder( "fxexp_script_power_room_gas_event_intermediate" );
     player_is_touching = 0;

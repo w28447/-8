@@ -435,7 +435,7 @@ function player_throw_cymbal_monkey( e_grenade, num_attractors, max_attract_dist
         e_grenade.mdl_monkey = util::spawn_model( e_grenade.model, e_grenade.origin, e_grenade.angles );
         e_grenade.mdl_monkey linkto( e_grenade );
         e_grenade.mdl_monkey thread monkey_cleanup( e_grenade );
-        e_grenade.mdl_monkey playsound( #"hash_68402c92c838b7f7" );
+        e_grenade.mdl_monkey playsound( #"zmb_vox_monkey_throw" );
         clone = undefined;
         
         if ( isdefined( level.cymbal_monkey_dual_view ) && level.cymbal_monkey_dual_view )
@@ -666,10 +666,10 @@ function do_monkey_sound( info )
     
     if ( !self.monk_scream_vox && level.musicsystem.currentplaytype < 4 )
     {
-        self playsound( #"hash_4509539f9e7954e2" );
+        self playsound( #"zmb_monkeybomb_song" );
     }
     
-    self playloopsound( #"hash_4ac1d6c76c698e02" );
+    self playloopsound( #"zmb_monkeybomb_cymbal_lp" );
     
     if ( !self.monk_scream_vox )
     {

@@ -248,10 +248,10 @@ function function_8a2b203b( localclientnum, oldval, newval, bnewent, binitialsna
             {
                 if ( oldval != 0 )
                 {
-                    self playsound( localclientnum, #"hash_54365a8985bf4da9" );
+                    self playsound( localclientnum, #"wpn_zhield_melee_ignite" );
                 }
                 
-                self.var_dc255e3b = self playloopsound( #"hash_5452ecceeecdc217" );
+                self.var_dc255e3b = self playloopsound( #"wpn_zhield_melee_burn_lp" );
             }
             
             break;
@@ -486,7 +486,7 @@ function function_103be84b( localclientnum, str_piece, s_start )
     
     if ( isdefined( self ) )
     {
-        self playsound( localclientnum, #"hash_230737b2535a3374" );
+        self playsound( localclientnum, #"zmb_crafting_pickup_generic" );
     }
     
     mdl_piece delete();

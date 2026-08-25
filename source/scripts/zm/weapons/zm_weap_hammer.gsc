@@ -203,7 +203,7 @@ function private function_70dbf9d1( player )
 {
     player endon( #"weapon_change", #"disconnect", #"bled_out" );
     wait 0.5;
-    player playsound( #"hash_334d4a903f12856f" );
+    player playsound( #"wpn_hammer_storm_activate" );
     v_start = player geteye();
     v_forward = player getweaponforwarddir();
     v_end = v_start + v_forward * 32;
@@ -389,8 +389,8 @@ function function_9799924f( e_target, weapon = level.weaponnone, var_3e3892a7, v
         
         e_target.no_gib = 1;
         e_target thread zm_hero_weapon::function_acee2761();
-        e_target playsound( #"hash_774c028e67b9c337" );
-        self playsoundtoplayer( #"hash_45070d2fde57b8aa", self );
+        e_target playsound( #"wpn_hammer_melee_impact" );
+        self playsoundtoplayer( #"wpn_hammer_melee_impact_plr", self );
         e_target dodamage( n_damage, self.origin, self, self, "none", "MOD_MELEE", 0, weapon );
         
         if ( e_target.health <= 0 )
@@ -532,7 +532,7 @@ function lightning_bolt( weapon )
     e_ball_fx.n_range = 250;
     e_ball_fx.n_damage_per_sec = 1000;
     e_ball_fx clientfield::set( "" + #"lightning_miss_fx", 1 );
-    e_ball_fx playloopsound( #"hash_15299b453cf5dd24", 0.5 );
+    e_ball_fx playloopsound( #"wpn_hammer_bolt_lp", 0.5 );
     v_end = var_d0407533 + anglestoforward( var_d571151f ) * 600;
     trace = bullettrace( var_d0407533, v_end, 0, self );
     
@@ -563,7 +563,7 @@ function lightning_bolt( weapon )
     if ( isdefined( e_ball_fx ) )
     {
         e_ball_fx stoploopsound( 0.25 );
-        e_ball_fx playsound( #"hash_3f29c3ebe4a7417a" );
+        e_ball_fx playsound( #"wpn_hammer_bolt_explo" );
         e_ball_fx notify( #"stop_killing" );
         e_ball_fx notify( #"stop_debug_position" );
         e_ball_fx clientfield::set( "" + #"lightning_miss_fx", 0 );

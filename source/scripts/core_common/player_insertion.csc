@@ -76,9 +76,9 @@ function init_clientfields()
 // Size: 0x8c
 function on_localclient_connect( localclientnum )
 {
-    var_7eb8f61a = isdefined( getgametypesetting( #"wzplayerinsertiontypeindex" ) ) ? getgametypesetting( #"wzplayerinsertiontypeindex" ) : 0;
+    insertion_type = isdefined( getgametypesetting( #"wzplayerinsertiontypeindex" ) ) ? getgametypesetting( #"wzplayerinsertiontypeindex" ) : 0;
     
-    if ( var_7eb8f61a == 1 )
+    if ( insertion_type == 1 )
     {
         level thread function_6c4ae982( localclientnum );
     }
@@ -222,7 +222,7 @@ function function_ded53cc6( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval == 1 && oldval != newval )
     {
-        self playsound( 0, #"hash_7ba1b4b83540b238" );
+        self playsound( 0, #"uin_clear_to_jump" );
     }
 }
 
@@ -236,7 +236,7 @@ function function_ea3cc318( localclientnum, oldval, newval, bnewent, binitialsna
     {
         if ( newval == 1 && oldval != newval )
         {
-            self playsound( 0, #"hash_783bdfd900c11eed" );
+            self playsound( 0, #"uin_final_jump" );
         }
     }
 }
@@ -588,9 +588,9 @@ function function_65cca2e1( localclientnum, var_1e7db62f )
     end_point = force_drop_point + direction * 150000;
     var_5a20cc9d = createuimodel( getuimodelforcontroller( localclientnum ), "hudItems.freeFallStartAltitude" );
     setuimodelvalue( var_5a20cc9d, jump_point[ 2 ] );
-    var_7eb8f61a = isdefined( getgametypesetting( #"wzplayerinsertiontypeindex" ) ) ? getgametypesetting( #"wzplayerinsertiontypeindex" ) : 0;
+    insertion_type = isdefined( getgametypesetting( #"wzplayerinsertiontypeindex" ) ) ? getgametypesetting( #"wzplayerinsertiontypeindex" ) : 0;
     
-    if ( var_7eb8f61a == 0 )
+    if ( insertion_type == 0 )
     {
         function_4dfe3112( localclientnum, var_1e7db62f, start_point, end_point, jump_point, force_drop_point );
     }

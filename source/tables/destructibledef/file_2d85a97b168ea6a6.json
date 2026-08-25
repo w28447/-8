@@ -1,6 +1,6 @@
 {
     "name": "#hash_2d85a97b168ea6a6",
-    "model": "#hash_6c1c68cf03b9c1d4",
+    "model": "#veh_t8_civ_car_classic_sport_dest_casino_silver_spain",
     "unk20": "#veh_t8_civ_car_classic_dead_casino_silver",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
@@ -11,7 +11,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_21d849eee4d897a",
+                    "name": "#dst_car_rad_steam",
                     "unk28": "tag_body_d0"
                 },
                 {

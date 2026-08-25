@@ -1,6 +1,6 @@
 {
     "name": "#veh_mphd_civ_tiara_ddef",
-    "model": "#hash_453afd7b132d3bb3",
+    "model": "#veh_mphd_tiara_destructible_green",
     "unk20": "#veh_mphd_tiara_green_dead",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

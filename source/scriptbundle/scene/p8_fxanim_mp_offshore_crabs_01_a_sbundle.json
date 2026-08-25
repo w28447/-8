@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_736c486b777ddf18",
+                            "anim": "anim#p8_fxanim_mp_offshore_crabs_01_a_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -60,7 +60,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_327ebdc102b11e7",
+                            "anim": "anim#p8_fxanim_mp_offshore_crabs_02_a_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -115,7 +115,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_601424c080e13ca6",
+                            "anim": "anim#p8_fxanim_mp_offshore_crabs_03_a_anim",
                             "entrytype": "anim"
                         }
                     ],

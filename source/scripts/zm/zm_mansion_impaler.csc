@@ -54,7 +54,7 @@ function function_7b2555da( localclientnum, oldval, newval, bnewent, binitialsna
     {
         killfx( localclientnum, self.var_55e883de );
         playfx( localclientnum, level._effect[ #"candle_extinguish" ], self.origin, anglestoforward( self.angles ), anglestoup( self.angles ) );
-        playsound( localclientnum, #"hash_50692f39387dddd", self.origin );
+        playsound( localclientnum, #"zmb_candle_out", self.origin );
         self.var_55e883de = undefined;
     }
 }
@@ -93,8 +93,8 @@ function function_46354b9d( localclientnum, oldval, newval, bnewent, binitialsna
         if ( !isdefined( self.var_c3a33b28 ) )
         {
             self.var_c3a33b28 = util::playfxontag( localclientnum, level._effect[ #"soul_possess" ], self, "j_spine4" );
-            self playsound( localclientnum, #"hash_4826261b01f96036" );
-            zmb_soul = self playloopsound( #"hash_298631572be3dd79" );
+            self playsound( localclientnum, #"zmb_ghost_appear" );
+            zmb_soul = self playloopsound( #"zmb_ghost_loop" );
         }
         
         return;
@@ -114,8 +114,8 @@ function function_46354b9d( localclientnum, oldval, newval, bnewent, binitialsna
 function function_7fb1dad8( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     util::playfxontag( localclientnum, level._effect[ #"soul_possess_orb" ], self, "tag_origin" );
-    self playsound( localclientnum, #"hash_72a28324d62874cc" );
-    var_3e97d494 = self playloopsound( #"hash_298631572be3dd79" );
+    self playsound( localclientnum, #"zmb_ghost_disappear" );
+    var_3e97d494 = self playloopsound( #"zmb_ghost_loop" );
 }
 
 // Namespace mansion_impaler/zm_mansion_impaler
@@ -158,11 +158,11 @@ function function_4e782d34( localclientnum, oldval, newval, bnewent, binitialsna
         if ( !isdefined( self.var_dd761cc9 ) )
         {
             self.var_dd761cc9 = util::playfxontag( localclientnum, level._effect[ #"jewelry_dropped" ], self, "tag_origin" );
-            playsound( localclientnum, #"hash_6dda9e544bcd6f0d", self.origin );
+            playsound( localclientnum, #"zmb_jewelry_drop", self.origin );
             
             if ( self.model == #"p8_zm_man_watch_pocket_gold" )
             {
-                var_a0cc5b31 = self playloopsound( #"hash_5354467970ab7b00" );
+                var_a0cc5b31 = self playloopsound( #"zmb_gold_watch_loop" );
             }
             
             if ( self.model == #"p8_zm_man_jewelry_ring" )
@@ -177,7 +177,7 @@ function function_4e782d34( localclientnum, oldval, newval, bnewent, binitialsna
             
             if ( self.model == #"p8_zm_man_jewelry_bracelet" )
             {
-                var_a0cc5b31 = self playloopsound( #"hash_35715829aad8de55" );
+                var_a0cc5b31 = self playloopsound( #"zmb_gold_bracelet_loop" );
             }
         }
         

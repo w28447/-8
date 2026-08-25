@@ -16,9 +16,9 @@
     "boards": [
         {
             "boardModel": "#p8_fxanim_zm_man_barricade_interior_mod",
-            "tearAnim": "#hash_613b075dcb30eb10",
-            "boardAnim": "#hash_e059d615e043e01",
-            "staticAnim": "#hash_e059d615e043e01",
+            "tearAnim": "#p8_fxanim_zm_man_barricade_interior_02_rise_anim",
+            "boardAnim": "#p8_fxanim_zm_man_barricade_interior_02_idle_anim",
+            "staticAnim": "#p8_fxanim_zm_man_barricade_interior_02_idle_anim",
             "repairEffect1Offset": "0 0 0",
             "repairEffect2Offset": "0 0 0",
             "minPause": 0.3,

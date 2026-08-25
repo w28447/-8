@@ -18,7 +18,7 @@
             "boardModel": "#p8_fxanim_zm_man_greenhouse_ext_front_door_mod",
             "tearAnim": "#p8_fxanim_zm_man_greenhouse_ext_front_door_anim",
             "boardAnim": "#p8_fxanim_zm_man_greenhouse_ext_front_door_idle_anim",
-            "boardRepairSound": "#hash_676e226e6ce1fbf3",
+            "boardRepairSound": "#zmb_zod_gate_open",
             "repairEffect1Offset": "0 0 0",
             "repairEffect2Offset": "0 0 0",
             "minPause": 0.3,

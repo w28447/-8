@@ -192,7 +192,7 @@ function function_84346679( var_c34665fc )
 function nosferatu_spawn_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     util::playfxontag( localclientnum, #"zm_ai/fx8_bat_transform_impact", self, "j_spine2" );
-    playsound( localclientnum, #"hash_15f98d1e471b4335", self.origin );
+    playsound( localclientnum, #"zmb_bat_transform", self.origin );
 }
 
 // Namespace zm_ai_nosferatu/zm_ai_nosferatu

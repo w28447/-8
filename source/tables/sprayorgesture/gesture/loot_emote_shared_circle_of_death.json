@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_shared_circle_of_death",
+    "type": "#gesture",
+    "gesture": "#boast_circle_of_death",
+    "gesture2": "#boast_circle_of_death_fem",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/death_circle-ph",
+        "icon": "image#ui_icon_emotes_circle_of_death",
+        "isdefault": 0
+    }
+}

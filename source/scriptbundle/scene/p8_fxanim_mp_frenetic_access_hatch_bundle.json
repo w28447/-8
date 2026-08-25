@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_64180204df9be025",
+                            "anim": "anim#p8_fxanim_mp_frenetic_access_hatch_close_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -34,7 +34,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_73c9eed460aef8ff",
+                            "anim": "anim#p8_fxanim_mp_frenetic_access_hatch_open_anim",
                             "entrytype": "anim"
                         }
                     ],

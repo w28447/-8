@@ -1,10 +1,10 @@
 {
-    "destroyed": "#hash_64d9a549b48dccf",
-    "ready": "#hash_588f504c9d19b3db",
+    "destroyed": "#vox_bta1_ult_cuav_destroyed",
+    "ready": "#vox_bta1_ult_cuav_ready",
     "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "blops_taacom_kls_counteruav",
     "timeout": "#hash_bc8afdd8f693f46",
-    "hacked": "#hash_5b889e2db4d39ba0"
+    "hacked": "#vox_bta1_icepick_cuav_steal"
 }

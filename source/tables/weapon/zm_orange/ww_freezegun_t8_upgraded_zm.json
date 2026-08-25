@@ -45,14 +45,14 @@
             "1 0.05"
         ]
     ],
-    "firesounddistant": "#hash_f74753fbac3a42d",
+    "firesounddistant": "#wpn_pistol_fire_distant",
     "firesound": "#hash_3a45373862686bfd",
     "firesoundplayer": "#hash_56c61c37e0e7cb64",
     "sound1d0": "#wpn_pistol_standard_fire_npc",
     "sound200": "#hash_39de5a558f56b3a2",
     "sound230": "#hash_56c61c37e0e7cb64",
-    "sound240": "#hash_631a067190b54300",
-    "sound250": "#hash_242aa17124751841",
+    "sound240": "#wpn_generic_dryfire_npc",
+    "sound250": "#wpn_generic_dryfire_plr",
     "sound260": "#prj_crack_supersonic",
     "sound800": "#hash_6f5f990a945df8f8",
     "sound810": "#hash_21cba6ae89a3493c",

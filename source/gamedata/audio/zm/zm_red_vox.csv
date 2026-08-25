@@ -15,7 +15,7 @@
 #location_enter,#statue_crat,#hash_70627ff90a7e1e8e,0,0,TRUE,FALSE,FALSE,FALSE
 #location_enter,#statue_spart,#hash_105e7d6c1b158332,0,0,TRUE,FALSE,FALSE,FALSE
 #magicbox,#peg,#vox_box_peg,0,0,FALSE,FALSE,TRUE,FALSE
-#pegasus,#crash_land,#hash_122bed9c58a18e5e,0,0,FALSE,FALSE,FALSE,FALSE
+#pegasus,#crash_land,#vox_crash_land_react,0,0,FALSE,FALSE,FALSE,FALSE
 #peg_summon,#use,#vox_peg_summon_use,0,0,FALSE,FALSE,FALSE,FALSE
 #pegasus,#attack_react,#hash_4744a790e7d0c39f,0,0,FALSE,FALSE,FALSE,FALSE
 #pegasus,#los,#vox_pegasus_los,0,0,FALSE,FALSE,FALSE,FALSE
@@ -37,7 +37,7 @@
 #shield_piece,#pickup_1,#vox_shield_piece_pickup_1,0,0,FALSE,FALSE,FALSE,FALSE
 #shield_piece,#pickup_2,#vox_shield_piece_pickup_2,0,0,FALSE,FALSE,FALSE,FALSE
 #shield_piece,#pickup_3,#vox_shield_piece_pickup_3,0,0,FALSE,FALSE,FALSE,FALSE
-#weapon_pickup,#shield,#hash_667abc2824133e55,0,0,TRUE,FALSE,FALSE,FALSE
+#weapon_pickup,#shield,#vox_pickup_rocketshield,0,0,TRUE,FALSE,FALSE,FALSE
 #amphitheater,#aftermath,#hash_4c0b3f3f8e394cbc,0,0,FALSE,FALSE,FALSE,FALSE
 #amphitheater,#react_first,#hash_5f91baafb561a09d,0,0,FALSE,FALSE,FALSE,FALSE
 #component_pickup,#anvil_brontes,#vox_anvil_brontes_pickup,0,0,FALSE,FALSE,FALSE,FALSE
@@ -47,11 +47,11 @@
 #component_pickup,#light,#vox_light_pickup,0,0,FALSE,FALSE,FALSE,FALSE
 #component_pickup,#ankh,#vox_ra_altar_ankh_pickup,0,0,FALSE,FALSE,FALSE,FALSE
 #component_pickup,#tongs_steropes,#vox_tongs_steropes_pickup,0,0,FALSE,FALSE,FALSE,FALSE
-#ballista,#rises,#hash_7fc987147a120,0,0,FALSE,FALSE,FALSE,FALSE
-#ballista,#shoot,#hash_3280eb0abc8ec3ed,0,0,FALSE,FALSE,FALSE,FALSE
-#ballista,#stuck,#hash_78b771973e490d4e,0,0,FALSE,FALSE,FALSE,FALSE
-#trap_activate,#bath,#hash_150ed78f0557df5f,0,0,FALSE,FALSE,FALSE,FALSE
-#trap_activate,#venom,#hash_37d475cd42f208a1,0,0,FALSE,FALSE,FALSE,FALSE
+#ballista,#rises,#vox_ballista_rises_react,0,0,FALSE,FALSE,FALSE,FALSE
+#ballista,#shoot,#vox_ballista_shoot_react,0,0,FALSE,FALSE,FALSE,FALSE
+#ballista,#stuck,#vox_ballista_stuck_react,0,0,FALSE,FALSE,FALSE,FALSE
+#trap_activate,#bath,#vox_bath_trap_active,0,0,FALSE,FALSE,FALSE,FALSE
+#trap_activate,#venom,#vox_venom_trap_active,0,0,FALSE,FALSE,FALSE,FALSE
 #spear_throw,#kill,#vox_spear_throw_kill,0,0,FALSE,FALSE,FALSE,FALSE
 #gaia,#hand_battle,#vox_gaia_hand_battle,0,0,FALSE,FALSE,FALSE,FALSE
 #gaia,#hand_kill_first,#vox_gaia_hand_kill_first,0,0,FALSE,FALSE,FALSE,FALSE
@@ -61,7 +61,7 @@
 #ouranos,#hand_battle,#vox_ouranos_hand_battle,0,0,FALSE,FALSE,FALSE,FALSE
 #ouranos,#hand_kill_first,#vox_ouranos_hand_kill_first,0,0,FALSE,FALSE,FALSE,FALSE
 #ouranos,#rune_circle,#vox_ouranos_rune_circle_react,0,0,FALSE,FALSE,FALSE,FALSE
-#cliff,#eagle_free,#hash_172d8c7cc7123557,0,0,FALSE,FALSE,FALSE,FALSE
+#cliff,#eagle_free,#vox_cliff_eagle_free_react,0,0,FALSE,FALSE,FALSE,FALSE
 #cliff,#forge_enter,#vox_cliff_forge_enter,0,0,FALSE,FALSE,FALSE,FALSE
 #oracle,#help_response,#hash_1cf28dc8ff858000,0,0,FALSE,FALSE,FALSE,FALSE
 #plateau,#jump,#vox_plateau_jump,0,0,FALSE,FALSE,FALSE,FALSE
@@ -69,9 +69,9 @@
 #ra_altar,#altered_react,#vox_ra_altar_altered_react,0,0,FALSE,FALSE,FALSE,FALSE
 #ra_altar,#ankh_los,#vox_ra_altar_ankh_los,0,0,FALSE,FALSE,FALSE,FALSE
 #ra_altar,#ankh_restored,#vox_ra_altar_ankh_restored,0,0,FALSE,FALSE,FALSE,FALSE
-#terrace_mirror,#rise,#hash_3f73cd79382c519,0,0,FALSE,FALSE,FALSE,FALSE
-#terrace_mirror,#stop,#hash_11241cd3fee87d8c,0,0,FALSE,FALSE,FALSE,FALSE
-#terrace_mirror,#final,#hash_4474b75bfa0db05c,0,0,FALSE,FALSE,FALSE,FALSE
+#terrace_mirror,#rise,#vox_terrace_mirror_rise_react,0,0,FALSE,FALSE,FALSE,FALSE
+#terrace_mirror,#stop,#vox_terrace_mirror_stop_react,0,0,FALSE,FALSE,FALSE,FALSE
+#terrace_mirror,#final,#vox_terrace_mirror_final_react,0,0,FALSE,FALSE,FALSE,FALSE
 #tribute,#boon,#vox_tribute_boon,0,0,FALSE,FALSE,FALSE,FALSE
 #tribute,#initiate,#vox_tribute_initiate,0,0,FALSE,FALSE,FALSE,FALSE
 #zomb_pers,#chaos_react,#vox_zomb_pers_chaos_react,0,0,FALSE,FALSE,FALSE,FALSE
@@ -81,7 +81,7 @@
 #apollo_light,#react,#vox_apollo_light_react,0,0,FALSE,FALSE,FALSE,FALSE
 #boss,#arena_exit,#vox_boss_arena_exit,0,0,FALSE,FALSE,FALSE,FALSE
 #fast_port,#react,#vox_fast_port_react,0,0,FALSE,FALSE,FALSE,FALSE
-#hash_3061a91c1f66e9eb,#reveal,#hash_4763c20dec1c2a7,0,0,FALSE,FALSE,FALSE,FALSE
+#hash_3061a91c1f66e9eb,#reveal,#vox_gauntlet_reveal,0,0,FALSE,FALSE,FALSE,FALSE
 #greek_fire,#complete,#vox_greek_fire_complete,0,0,FALSE,FALSE,FALSE,FALSE
 #initial_attack,#react,#vox_initial_attack_react,0,0,FALSE,FALSE,FALSE,FALSE
 #mirror,#rise_react,#vox_mirror_rise_react,0,0,FALSE,FALSE,FALSE,FALSE

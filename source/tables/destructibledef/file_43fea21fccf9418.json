@@ -1,7 +1,7 @@
 {
     "name": "#hash_43fea21fccf9418",
-    "model": "#hash_11366a0e11fc7282",
-    "unk20": "#hash_5ba89359946e6422",
+    "model": "#veh_t8_civ_suv_large_dest_met_gry_spain",
+    "unk20": "#veh_t8_civ_suv_large_dead_met_gry",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

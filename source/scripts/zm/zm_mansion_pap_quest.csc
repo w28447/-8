@@ -386,7 +386,7 @@ function ghost_trail_fx( localclientnum, oldval, newval, bnewent, binitialsnap, 
             
             self.fx_ghost_trail = util::playfxontag( localclientnum, level._effect[ #"ghost_trail" ], self, "j_spine4" );
             self thread ghost_impact_fx( localclientnum );
-            self.var_ad049408 = self playloopsound( #"hash_298631572be3dd79" );
+            self.var_ad049408 = self playloopsound( #"zmb_ghost_loop" );
         }
         
         return;

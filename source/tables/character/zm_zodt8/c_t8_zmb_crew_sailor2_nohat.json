@@ -8,7 +8,7 @@
     "fxDef": "#fxd8_zm_char_zombie_base_body",
     "body": "#c_t8_zmb_crew_sailor_body2",
     "headAlias": "#hash_e12e15b05a54b6c5",
-    "damagedTorso_Clean": "#hash_7b4ef1b4440dadca",
+    "damagedTorso_Clean": "#c_t8_zmb_crew_sailor_body2_g_upclean",
     "damagedTorso_RightArmGone": "#c_t8_zmb_crew_sailor_body2_g_rarmoff",
     "damagedTorso_LeftArmGone": "#c_t8_zmb_crew_sailor_body2_g_larmoff",
     "damagedTorso_HeadGone": "#c_t8_zmb_crew_sailor_body1_g_behead",

@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_tak_5_shutdown",
     "backinglarge": "image#$whitetransparent",
-    "iconsmall": "image#hash_4166d47f7f9393b4",
+    "iconsmall": "image#ui_icon_medal_mal_practice",
     "stringref": "localized17#hash_e0d9953f6ac4785",
-    "iconlarge": "image#hash_65460b82d3a6cf20"
+    "iconlarge": "image#ui_icon_medal_mal_practice_large"
 }

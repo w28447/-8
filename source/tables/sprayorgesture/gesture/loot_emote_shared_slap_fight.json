@@ -1,12 +1,12 @@
 {
-    "name": "#hash_48d687fd227b11ce",
+    "name": "#loot_emote_shared_slap_fight",
     "type": "#gesture",
     "gesture": "#boast_slap_fight",
     "gesture2": "#boast_slap_fight_fem",
     "bundle": {
         "type": "#gesture",
-        "title": "localized18#hash_b97deec839e140b",
-        "icon": "image#hash_2659e1418544e933",
+        "title": "localized18#emotes/slapfight",
+        "icon": "image#ui_icon_emotes_slap_fight",
         "isdefault": 0
     }
 }

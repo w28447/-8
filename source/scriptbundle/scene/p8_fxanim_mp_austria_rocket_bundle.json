@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_6ec757fd6f7f115a",
+                            "anim": "anim#p8_fxanim_mp_austria_rocket_01_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -61,7 +61,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_cdc2be7e4b74971",
+                            "anim": "anim#p8_fxanim_mp_austria_rocket_02_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -117,7 +117,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_69378cbf8ce92cd0",
+                            "anim": "anim#p8_fxanim_mp_austria_rocket_03_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -173,7 +173,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_122ad9357b2c2d7f",
+                            "anim": "anim#p8_fxanim_mp_austria_rocket_04_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -229,7 +229,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_404f75583ed46696",
+                            "anim": "anim#p8_fxanim_mp_austria_rocket_05_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -285,7 +285,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_607a780beba9348d",
+                            "anim": "anim#p8_fxanim_mp_austria_rocket_06_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -341,7 +341,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_4fa534d76a146f7c",
+                            "anim": "anim#p8_fxanim_mp_austria_rocket_07_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -397,7 +397,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_325d434f2fe733ab",
+                            "anim": "anim#p8_fxanim_mp_austria_rocket_08_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -453,7 +453,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_cad2a334eec7052",
+                            "anim": "anim#p8_fxanim_mp_austria_rocket_09_anim",
                             "entrytype": "anim"
                         }
                     ],

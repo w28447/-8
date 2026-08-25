@@ -350,7 +350,7 @@ function function_cd7e0989( n_code )
         #/
         
         playsoundatposition( "zmb_comp_keypad_action_fail", self.origin );
-        level thread zm_white_util::function_ec34b5ee( #"hash_74933b1a2d246442" );
+        level thread zm_white_util::function_ec34b5ee( #"vox_code_incorrect_rush_0" );
         return;
     }
     
@@ -361,7 +361,7 @@ function function_cd7e0989( n_code )
         #/
         
         playsoundatposition( "zmb_comp_keypad_action_fail", self.origin );
-        level thread zm_white_util::function_ec34b5ee( #"hash_74933b1a2d246442" );
+        level thread zm_white_util::function_ec34b5ee( #"vox_code_incorrect_rush_0" );
         return;
     }
     
@@ -372,7 +372,7 @@ function function_cd7e0989( n_code )
         #/
         
         playsoundatposition( "zmb_comp_keypad_action_fail", self.origin );
-        level thread zm_white_util::function_ec34b5ee( #"hash_74933b1a2d246442" );
+        level thread zm_white_util::function_ec34b5ee( #"vox_code_incorrect_rush_0" );
         return;
     }
     
@@ -663,7 +663,7 @@ function function_9e9664bd()
 // Size: 0x3c
 function function_ac121b1c()
 {
-    level thread zm_white_util::function_ec34b5ee( #"hash_2c4fa652fb89d231" );
+    level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     level thread zm_white_audio_interactables::function_a0b040d4();
 }
 
@@ -1575,7 +1575,7 @@ function function_d83247cd()
     level.e_code_printer_monitor showpart( "tag_screen_static" );
     level.e_code_printer_monitor hidepart( "tag_screen_unbroken" );
     level.e_code_printer_monitor hidepart( "tag_screen_broken" );
-    level.e_code_printer_monitor playloopsound( #"hash_340bf847392d3d2f" );
+    level.e_code_printer_monitor playloopsound( #"zmb_television_static_lp" );
 }
 
 // Namespace zm_white_computer_system/zm_white_computer_system
@@ -1587,8 +1587,8 @@ function function_5fbede7a()
     level.e_code_printer_monitor hidepart( "tag_screen_static" );
     level.e_code_printer_monitor showpart( "tag_screen_unbroken" );
     level.e_code_printer_monitor hidepart( "tag_screen_broken" );
-    level.e_code_printer_monitor playloopsound( #"hash_781ac45f11aba91e" );
-    level.e_code_printer_monitor playsound( #"hash_d959f93f00640e9" );
+    level.e_code_printer_monitor playloopsound( #"zmb_television_on_lp" );
+    level.e_code_printer_monitor playsound( #"zmb_television_turn_on" );
 }
 
 // Namespace zm_white_computer_system/zm_white_computer_system
@@ -1607,7 +1607,7 @@ function function_60f15ca8()
     level.e_code_printer_monitor showpart( "tag_screen_broken" );
     level.e_code_printer_monitor hidepart( "tag_screen_unbroken" );
     wait 2;
-    e_code_printer_paper playsound( #"hash_51945414465e1801" );
+    e_code_printer_paper playsound( #"zmb_printer_print" );
     e_code_printer_paper moveto( var_73a8928d + ( 0, -6, 0 ), 0.3 );
 }
 

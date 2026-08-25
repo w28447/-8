@@ -958,9 +958,9 @@ function private function_2565f0b0( s_stub, trigger )
 // Size: 0x16e
 function private function_94419264()
 {
-    if ( !isdefined( self.var_13a302d2 ) )
+    if ( !isdefined( self.unitrigger_triggers ) )
     {
-        self.var_13a302d2 = [];
+        self.unitrigger_triggers = [];
     }
     
     waitframe( 1 );
@@ -980,23 +980,23 @@ function private function_94419264()
         }
         else
         {
-            self.var_13a302d2 = array::remove_undefined( self.var_13a302d2, 0 );
+            self.unitrigger_triggers = array::remove_undefined( self.unitrigger_triggers, 0 );
             
             if ( !isdefined( self.var_9de1a3d2 ) )
             {
                 self.var_9de1a3d2 = 0;
             }
             
-            if ( self.var_9de1a3d2 >= self.var_13a302d2.size )
+            if ( self.var_9de1a3d2 >= self.unitrigger_triggers.size )
             {
                 self.var_9de1a3d2 = 0;
             }
             
-            if ( self.var_9de1a3d2 < self.var_13a302d2.size )
+            if ( self.var_9de1a3d2 < self.unitrigger_triggers.size )
             {
-                if ( isdefined( self.var_13a302d2[ self.var_9de1a3d2 ] ) )
+                if ( isdefined( self.unitrigger_triggers[ self.var_9de1a3d2 ] ) )
                 {
-                    self function_71b67b2a( self.var_13a302d2[ self.var_9de1a3d2 ] );
+                    self function_71b67b2a( self.unitrigger_triggers[ self.var_9de1a3d2 ] );
                 }
                 
                 self.var_9de1a3d2++;
@@ -1087,12 +1087,12 @@ function private function_358a2fc7()
 // Size: 0x13a
 function private function_5b353bb7()
 {
-    if ( !isdefined( self.var_13a302d2 ) )
+    if ( !isdefined( self.unitrigger_triggers ) )
     {
-        self.var_13a302d2 = [];
+        self.unitrigger_triggers = [];
     }
     
-    foreach ( trigger in self.var_13a302d2 )
+    foreach ( trigger in self.unitrigger_triggers )
     {
         if ( isdefined( trigger ) && isdefined( trigger.stub ) && isdefined( trigger.stub.in_zone ) && ( trigger.stub.trigger_per_player || !level.zones[ trigger.stub.in_zone ].is_occupied ) )
         {
@@ -1101,7 +1101,7 @@ function private function_5b353bb7()
     }
     
     self.var_50a1b1f6 = undefined;
-    self.var_13a302d2 = array::remove_undefined( self.var_13a302d2, 0 );
+    self.unitrigger_triggers = array::remove_undefined( self.unitrigger_triggers, 0 );
 }
 
 // Namespace zm_unitrigger/zm_unitrigger
@@ -1152,9 +1152,9 @@ function private function_f1854fb( stub )
 {
     foreach ( player in getplayers() )
     {
-        if ( isarray( player.var_13a302d2 ) )
+        if ( isarray( player.unitrigger_triggers ) )
         {
-            player.var_13a302d2 = array::remove_undefined( player.var_13a302d2, 0 );
+            player.unitrigger_triggers = array::remove_undefined( player.unitrigger_triggers, 0 );
         }
     }
 }
@@ -1208,23 +1208,23 @@ function private function_522794c2( stub )
         trigger.parent_player = self;
         trigger.stub = stub;
         
-        if ( !isdefined( self.var_13a302d2 ) )
+        if ( !isdefined( self.unitrigger_triggers ) )
         {
-            self.var_13a302d2 = [];
+            self.unitrigger_triggers = [];
         }
         
-        if ( !isinarray( self.var_13a302d2, trigger ) )
+        if ( !isinarray( self.unitrigger_triggers, trigger ) )
         {
-            if ( !isdefined( self.var_13a302d2 ) )
+            if ( !isdefined( self.unitrigger_triggers ) )
             {
-                self.var_13a302d2 = [];
+                self.unitrigger_triggers = [];
             }
-            else if ( !isarray( self.var_13a302d2 ) )
+            else if ( !isarray( self.unitrigger_triggers ) )
             {
-                self.var_13a302d2 = array( self.var_13a302d2 );
+                self.unitrigger_triggers = array( self.unitrigger_triggers );
             }
             
-            self.var_13a302d2[ self.var_13a302d2.size ] = trigger;
+            self.unitrigger_triggers[ self.unitrigger_triggers.size ] = trigger;
         }
         
         usable = assess_and_apply_visibility( trigger, stub, self, 1 );

@@ -232,7 +232,7 @@ function function_46006d68()
     {
         case 0:
             self.e_tv function_bb7d7e2d();
-            self.e_tv playloopsound( #"hash_7b7b8618ef1150ac" );
+            self.e_tv playloopsound( #"amb_ww_tv_static" );
             self zm_unitrigger::create( "", 96 );
             self thread function_582a4879();
             self.var_53d39cb3 = 1;
@@ -260,8 +260,8 @@ function function_46006d68()
 function function_41464ab6()
 {
     self endon( #"death" );
-    n_wait = float( soundgetplaybacktime( #"hash_60b460e7880bd1c0" ) ) / 1000;
-    self.e_tv playsound( #"hash_60b460e7880bd1c0" );
+    n_wait = float( soundgetplaybacktime( #"amb_ww_tv_interact" ) ) / 1000;
+    self.e_tv playsound( #"amb_ww_tv_interact" );
     wait n_wait;
     self.e_tv.name = level.var_8200dc81.name;
     self.e_tv thread zm_hms_util::function_6a0d675d( #"hash_661a3ece5f5b3f0b", 0, 0 );
@@ -441,7 +441,7 @@ function function_256cc56e()
     
     wait 1;
     level.s_ww_printer_compartment scene::play( "open" );
-    playsoundatposition( #"hash_7afd5b8ae2a40c53", level.s_ww_interact.origin );
+    playsoundatposition( #"evt_ww_reveal", level.s_ww_interact.origin );
     s_unitrigger = level.s_ww_interact zm_unitrigger::create( &function_c3076788, 64 );
     zm_unitrigger::unitrigger_force_per_player_triggers( s_unitrigger );
     zm_unitrigger::function_c9e3607c( s_unitrigger, "HINT_WEAPON", level.a_w_ray_guns[ 2 ] );

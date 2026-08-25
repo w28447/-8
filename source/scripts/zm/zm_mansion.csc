@@ -672,7 +672,7 @@ function function_be42dd6a( localclientnum, oldval, newval, bnewent, binitialsna
     }
     
     self stoprenderoverridebundle( #"hash_4192ceb1c828492f" );
-    self playsound( localclientnum, #"hash_5de064f33e9e49b8" );
+    self playsound( localclientnum, #"zmb_sentinel_artifact_explode" );
 }
 
 // Namespace zm_mansion/zm_mansion

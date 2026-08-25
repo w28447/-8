@@ -1,6 +1,6 @@
 {
-    "destroyed": "#hash_12c1eed194c8e1a",
-    "ready": "#hash_62e1f9365874926a",
+    "destroyed": "#vox_mta1_ult_rcxd_destroyed",
+    "ready": "#vox_mta1_ult_rcxd_ready",
     "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "vmtype": "both",

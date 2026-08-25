@@ -1481,7 +1481,7 @@ function private function_5db7fc11( helicopter )
     
     while ( true )
     {
-        helicopter.rope animation::play( #"hash_217d8ba9d8489561", helicopter, "tag_origin_animate", 1, 0.1, 0.1, undefined, undefined, undefined, 0 );
+        helicopter.rope animation::play( #"p8_fxanim_gp_vehicle_lb_heist_rope_idle_anim", helicopter, "tag_origin_animate", 1, 0.1, 0.1, undefined, undefined, undefined, 0 );
     }
 }
 
@@ -2029,16 +2029,16 @@ function private function_9ef02b1b( sentient )
         player = sentient.owner;
     }
     
-    var_6f002c17 = player getteam();
+    using_team = player getteam();
     
     if ( !isdefined( level.var_d7076fb6 ) || gettime() > level.var_d7076fb6 )
     {
         level.var_d7076fb6 = gettime() + 1000;
-        thread globallogic_audio::leader_dialog( "bountyCashDepositingFriendly", var_6f002c17 );
-        thread globallogic_audio::leader_dialog( "bountyCashDepositingEnemy", util::getotherteam( var_6f002c17 ) );
+        thread globallogic_audio::leader_dialog( "bountyCashDepositingFriendly", using_team );
+        thread globallogic_audio::leader_dialog( "bountyCashDepositingEnemy", util::getotherteam( using_team ) );
     }
     
-    function_bd4536a2( level.var_5ae8f1c7, var_6f002c17 );
+    function_bd4536a2( level.var_5ae8f1c7, using_team );
 }
 
 // Namespace bounty/bounty

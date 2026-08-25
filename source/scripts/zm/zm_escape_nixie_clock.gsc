@@ -85,7 +85,7 @@ function _goodlighting_hangar_a()
         mdl_lock delete();
     }
     
-    playsoundatposition( #"hash_b0382b7432f8232", self.origin );
+    playsoundatposition( #"evt_nixie_clock_open", self.origin );
     mdl_door_left = getent( "nixie_door_left", "targetname" );
     mdl_door_right = getent( "nixie_door_right", "targetname" );
     mdl_door_left notsolid();
@@ -256,7 +256,7 @@ function function_ba25a76f( n_max_time, var_62002857 = 0 )
             mdl_tube hidepart( "tag_nixie_" + var_cddd0f11 );
         }
         
-        mdl_tube playsound( #"hash_12da80f02ef99473" );
+        mdl_tube playsound( #"evt_nixie_clock_scroll" );
         var_cddd0f11 = n_part;
         wait 0.1;
         n_current_time = gettime();
@@ -269,7 +269,7 @@ function function_ba25a76f( n_max_time, var_62002857 = 0 )
     }
     
     mdl_tube showpart( "tag_nixie_" + var_62002857 );
-    mdl_tube playsound( #"hash_12da80f02ef99473" );
+    mdl_tube playsound( #"evt_nixie_clock_scroll" );
     self.script_int = 0;
 }
 
@@ -574,7 +574,7 @@ function private function_25aaae40()
 function private function_15aa00e7()
 {
     var_43b4f0a = struct::get( "nixie_tube_2" );
-    playsoundatposition( #"hash_1588095b858588d", var_43b4f0a.origin );
+    playsoundatposition( #"zmb_vocals_brutus_laugh", var_43b4f0a.origin );
     
     if ( !( isdefined( level.var_19fe84f5 ) && level.var_19fe84f5 ) )
     {
@@ -648,7 +648,7 @@ function function_4b17c9f6( n_max_time )
             mdl_tube showpart( "tag_nixie_" + self.script_int );
             mdl_tube hidepart( "tag_nixie_off" );
             b_hidden = 1;
-            mdl_tube playsound( #"hash_12da80f02ef99473" );
+            mdl_tube playsound( #"evt_nixie_clock_scroll" );
         }
         
         wait 0.1;
@@ -682,7 +682,7 @@ function function_a23db4d2()
         }
         
         mdl_tube showpart( "tag_nixie_" + i );
-        mdl_tube playsound( #"hash_12da80f02ef99473" );
+        mdl_tube playsound( #"evt_nixie_clock_scroll" );
         wait 0.1;
     }
 }

@@ -1,7 +1,7 @@
 {
     "name": "#hash_2079b547c7e58a44",
-    "model": "#hash_73b580a16a66c325",
-    "unk20": "#hash_2f187a295819de70",
+    "model": "#veh_t8_civ_car_hatchback_dest_taxi",
+    "unk20": "#veh_t8_civ_car_hatchback_taxi_dead_japan",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

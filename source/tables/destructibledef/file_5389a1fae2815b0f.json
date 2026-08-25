@@ -1,7 +1,7 @@
 {
     "name": "#hash_5389a1fae2815b0f",
-    "model": "#hash_587870cb161257a9",
-    "unk20": "#hash_58488ccb15e9637b",
+    "model": "#veh_mphd_gaz_tigr_dest",
+    "unk20": "#veh_mphd_gaz_tigr_dead",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

@@ -1948,7 +1948,7 @@ function function_ad0eee44( str_element )
     mdl_artifact = util::spawn_model( #"hash_12eedcc89df28c41", s_artifact.origin, s_artifact.angles );
     mdl_artifact notsolid();
     mdl_artifact setscale( 1.25 );
-    mdl_artifact playloopsound( #"hash_5c7e9911ac98f633" );
+    mdl_artifact playloopsound( #"zmb_sentinel_artifact_lp" );
     
     if ( isdefined( s_moveto ) )
     {
@@ -2005,12 +2005,12 @@ function function_ad0eee44( str_element )
         
         if ( str_element == #"fire" )
         {
-            mdl_artifact playsound( #"hash_58d1c989a1ea4137" );
+            mdl_artifact playsound( #"zmb_sentinel_artifact_pickup" );
             level thread function_53802e89( #"vox_m_quest_cat_sentinel", mdl_artifact.origin, array( 1, 3, 2, 4 ) );
         }
         else
         {
-            mdl_artifact playsound( #"hash_5de064f33e9e49b8" );
+            mdl_artifact playsound( #"zmb_sentinel_artifact_explode" );
         }
     }
     
@@ -2558,14 +2558,14 @@ function function_22651585()
     v_spawn = level.pap_machine.origin + ( 0, -32, 40 );
     mdl_artifact = util::spawn_model( #"hash_2b14d34cb1bc161a", v_spawn, ( 0, -90, 0 ) );
     mdl_artifact notsolid();
-    mdl_artifact playsound( #"hash_2d125a0883ae10c4" );
+    mdl_artifact playsound( #"zmb_sentinel_artifact_pap" );
     mdl_artifact playloopsound( #"hash_66df9cab2c64f968" );
     mdl_artifact thread function_8d4d655d();
     mdl_artifact moveto( level.pap_machine.origin + ( 0, 2, 48 ), 3 );
     mdl_artifact waittill( #"movedone" );
     mdl_artifact setmodel( #"hash_3cdbd25e43a09930" );
     wait 2.5;
-    mdl_artifact playloopsound( #"hash_e2c71c7dece38ee" );
+    mdl_artifact playloopsound( #"zmb_sentinel_artifact_charged_lp" );
     mdl_artifact clientfield::set( "" + #"sentinel_shader", 1 );
     mdl_artifact moveto( v_spawn, 3 );
     mdl_artifact playsound( #"zmb_perks_packa_ready" );
@@ -2575,7 +2575,7 @@ function function_22651585()
     s_pickup.origin = v_spawn;
     e_player = s_pickup zm_unitrigger::function_fac87205( #"hash_14754dac7b0290c6" );
     level thread function_53802e89( #"vox_m_quest_sentinel_artifact", mdl_artifact.origin, array( 3, 4, 1, 2 ) );
-    mdl_artifact playsound( #"hash_58d1c989a1ea4137" );
+    mdl_artifact playsound( #"zmb_sentinel_artifact_pickup" );
     s_pickup struct::delete();
     mdl_artifact clientfield::set( "" + #"sentinel_shader", 0 );
     mdl_artifact delete();
@@ -3777,7 +3777,7 @@ function function_acc65da4( mdl_planet )
             {
                 level flag::set( str_planet_name + "_pickup" );
                 mdl_planet stoploopsound();
-                mdl_planet playsound( #"hash_134115584a37eb8a" );
+                mdl_planet playsound( #"zmb_planet_pickup" );
             }
             else
             {
@@ -3857,7 +3857,7 @@ function function_647da52c( str_planet_name )
         
         if ( level.var_e830f656 === str_planet_name )
         {
-            playsoundatposition( #"hash_1e42da88156af69f", ( 0, 0, 0 ) );
+            playsoundatposition( #"zmb_planet_timer", ( 0, 0, 0 ) );
             
             /#
                 if ( getdvarint( #"zm_debug_ee_system", 0 ) )
@@ -4805,7 +4805,7 @@ function function_7b4cd474()
         
         level thread clean_up_ai();
         var_18090dd1 = spawn( "script_origin", s_tree.origin );
-        var_18090dd1 playloopsound( #"hash_73e107b21dfb7f37" );
+        var_18090dd1 playloopsound( #"zmb_step8_artifact_lp" );
         s_tree function_6099877a( 128 );
         var_18090dd1 delete();
         function_28228fa2( s_tree );
@@ -4902,8 +4902,8 @@ function function_28228fa2( s_tree )
 {
     mdl_artifact = util::spawn_model( #"hash_3cdbd25e43a09930", s_tree.origin + ( -48, 0, 0 ), s_tree.angles + ( 0, 180, 0 ) );
     mdl_artifact notsolid();
-    mdl_artifact playloopsound( #"hash_e2c71c7dece38ee" );
-    mdl_artifact playsound( #"hash_7e9d06805545fcfe" );
+    mdl_artifact playloopsound( #"zmb_sentinel_artifact_charged_lp" );
+    mdl_artifact playsound( #"zmb_step8_artifact_activate" );
     v_offset = ( -4, 0, 16 );
     mdl_artifact moveto( s_tree.origin + v_offset, 4 );
     var_da9e0035 = struct::get_array( #"hash_78dd4413a014e785" );

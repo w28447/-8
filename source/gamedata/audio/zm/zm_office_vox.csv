@@ -16,8 +16,8 @@
 #groom_lake,#sent_back,#vox_groom_lake_sent_back,0,0,FALSE,FALSE,FALSE,FALSE
 #mcnamara_log,#repair,#vox_mcnamara_log_repair,0,0,FALSE,FALSE,FALSE,FALSE
 #code_sequence,#complete,#vox_code_sequence_complete,0,0,FALSE,FALSE,FALSE,FALSE
-#shield_piece,#pickup,#hash_667abc2824133e55,0,0,FALSE,FALSE,FALSE,FALSE
-#weapon_pickup,#shield,#hash_7a78273efd96ec45,0,0,TRUE,FALSE,FALSE,FALSE
+#shield_piece,#pickup,#vox_pickup_rocketshield,0,0,FALSE,FALSE,FALSE,FALSE
+#weapon_pickup,#shield,#vox_assemble_rocketshield,0,0,TRUE,FALSE,FALSE,FALSE
 #power_switch,#activate,#vox_power_switch,0,0,FALSE,FALSE,FALSE,FALSE
 #powerup,#bonfiresale,#vox_generic_responses_positive,0,0,FALSE,FALSE,FALSE,FALSE
 #nova_crawler,#react,#hash_1ac7f5475325e341,20,300,FALSE,TRUE,FALSE,FALSE

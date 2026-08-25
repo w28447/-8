@@ -121,7 +121,7 @@ function private movement_watcher( var_93fc795f, var_98de1f93 )
 // Size: 0x94
 function private function_6b13a114( var_93fc795f, var_a7c52900 )
 {
-    self playsoundtoplayer( #"hash_6df374d848ba6a60", self );
+    self playsoundtoplayer( #"zmb_player_health_drain", self );
     
     if ( var_93fc795f === "health" )
     {

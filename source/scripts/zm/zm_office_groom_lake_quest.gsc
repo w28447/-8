@@ -713,7 +713,7 @@ function function_73e06b11()
 function pickup_modifier()
 {
     level notify( #"modifier_acquired" );
-    self playsound( #"hash_104670ec9247d6c" );
+    self playsound( #"evt_ee_receiver_pickup" );
     level.var_279a11a3.related_parent setinvisibletoall();
     zm_unitrigger::unregister_unitrigger( level.var_279a11a3 );
 }
@@ -766,7 +766,7 @@ function function_7f4bdad3()
     s_org = struct::get( "telporter_modifier_model_org", "targetname" );
     e_modifier = spawn( "script_model", s_org.origin );
     e_modifier setmodel( "p8_zm_off_teleporter_together" );
-    playsoundatposition( #"hash_4490540f4d90c6dd", e_modifier.origin );
+    playsoundatposition( #"evt_ee_receiver_drop", e_modifier.origin );
 }
 
 // Namespace zm_office_groom_lake_quest/zm_office_groom_lake_quest
@@ -1145,7 +1145,7 @@ function function_55ca39d8()
         wait 3;
     }
     
-    playsoundatposition( #"hash_4bddd546f43487cf", self.origin );
+    playsoundatposition( #"zmb_blocker_debris_purchase", self.origin );
     var_19400951 stoploopsound( 0.5 );
     var_19400951 delete();
     array::run_all( self.a_e_clip, &delete );

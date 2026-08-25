@@ -21,7 +21,7 @@
     "peelSpeedMax": 600,
     "model": "#veh_t8_mil_air_gunship_mp_light",
     "deathModel": "#veh_t8_mil_air_gunship_mp_dark",
-    "enemyModel": "#hash_661a3fffa36d816d",
+    "enemyModel": "#veh_t8_mil_air_gunship_camo",
     "soundDef": "#veh_bomber",
     "compassIconMaterial": "#compass_vtol",
     "steerAxisName": "AXIS_LSTICK",

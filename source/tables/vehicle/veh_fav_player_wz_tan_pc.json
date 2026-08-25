@@ -54,9 +54,9 @@
         "tag_steering_wheel"
     ],
     "sndMaterialNames": [
-        "#hash_6a74ef06bbaf2061",
-        "#hash_55c7298bed751bf4",
-        "#hash_219cdd188558eb4d"
+        "#veh_fav_road",
+        "#veh_fav_slide",
+        "#veh_fav_peel"
     ],
     "skidSpeedMin": 200,
     "skidSpeedMax": 500,
@@ -64,9 +64,9 @@
     "model": "#hash_57eb8fdef99eb77e",
     "deathModel": "#hash_6abec2a810c617e5",
     "soundDef": "#hash_6377e6477ce4ce37",
-    "compassIconMaterial": "#hash_74364a668c852d65",
+    "compassIconMaterial": "#compass_vehicle_buggy",
     "destructibleDef": "#hash_107ae5b76768bc40",
-    "tacticalModeIcon": "#hash_5bd866be3eef1254",
+    "tacticalModeIcon": "#uie_ui_icon_minimap_wz_buggy",
     "steerAxisName": "AXIS_LSTICK",
     "gasAxisName": "AXIS_LSTICK",
     "handBrakeButtonName": "BUTTON_X",
@@ -96,7 +96,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_5bd866be3eef1254:hash_5cba4be6": "image#hash_5bd866be3eef1254"
+                        "uie_ui_icon_minimap_wz_buggy:hash_5cba4be6": "image#uie_ui_icon_minimap_wz_buggy"
                     },
                     {
                         "hash_513059ad": 0,
@@ -189,7 +189,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_5bd866be3eef1254:hash_5cba4be6": "image#hash_5bd866be3eef1254"
+                        "uie_ui_icon_minimap_wz_buggy:hash_5cba4be6": "image#uie_ui_icon_minimap_wz_buggy"
                     },
                     {
                         "hash_513059ad": 0,
@@ -225,7 +225,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_5bd866be3eef1254:hash_5cba4be6": "image#hash_5bd866be3eef1254"
+                        "uie_ui_icon_minimap_wz_buggy:hash_5cba4be6": "image#uie_ui_icon_minimap_wz_buggy"
                     },
                     {
                         "hash_513059ad": 0,

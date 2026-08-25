@@ -1,10 +1,10 @@
 {
-    "destroyed": "#hash_433a87d2ebf150c7",
+    "destroyed": "#vox_mta1_ult_kls_destroyed",
     "hash_3b07496f7bb724d0:hash_e90f5b30": "#hash_3b07496f7bb724d0",
     "hash_3b07506f7bb730b5:hash_fac6fe9f": "#hash_3b07506f7bb730b5",
     "hash_3b074f6f7bb72f02:hash_c39c904b": "#hash_3b074f6f7bb72f02",
     "hash_3b074e6f7bb72d4f:hash_d74737a0": "#hash_3b074e6f7bb72d4f",
-    "ready": "#hash_339e98d42666023",
+    "ready": "#vox_mta1_ult_kls_ready",
     "configstringfiletype": "scriptbundle",
     "hash_3e92014daca722ec:hash_86e629f2": "#hash_3e92014daca722ec",
     "hash_3e92004daca72139:hash_58984d57": "#hash_3e92004daca72139",

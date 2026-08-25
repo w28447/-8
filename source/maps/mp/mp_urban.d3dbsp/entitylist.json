@@ -1974,7 +1974,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_b946747b0dc78b3",
+                    "value": "#veh_t8_civ_van_utility_diaysler",
                     "unk1a": true
                 },
                 {
@@ -2095,7 +2095,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_b946747b0dc78b3",
+                    "value": "#veh_t8_civ_van_utility_diaysler",
                     "unk1a": true
                 },
                 {
@@ -2363,7 +2363,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_7f6d18e694e47a05",
+                    "value": "#veh_t8_civ_forklift_modular_manned_forklift_olive_drab",
                     "unk1a": true
                 },
                 {
@@ -2381,7 +2381,7 @@
                 {
                     "key": "prop_model",
                     "type": "xhash",
-                    "value": "#hash_7f6d18e694e47a05",
+                    "value": "#veh_t8_civ_forklift_modular_manned_forklift_olive_drab",
                     "unk1a": true
                 },
                 {
@@ -2494,7 +2494,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_50d434ab213eb2cd",
+                    "value": "#veh_t8_civ_van_utility_spain_white",
                     "unk1a": true
                 },
                 {
@@ -2512,7 +2512,7 @@
                 {
                     "key": "prop_model",
                     "type": "xhash",
-                    "value": "#hash_50d434ab213eb2cd",
+                    "value": "#veh_t8_civ_van_utility_spain_white",
                     "unk1a": true
                 },
                 {
@@ -3756,7 +3756,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_7f6d18e694e47a05",
+                    "value": "#veh_t8_civ_forklift_modular_manned_forklift_olive_drab",
                     "unk1a": true
                 },
                 {
@@ -3774,7 +3774,7 @@
                 {
                     "key": "prop_model",
                     "type": "xhash",
-                    "value": "#hash_7f6d18e694e47a05",
+                    "value": "#veh_t8_civ_forklift_modular_manned_forklift_olive_drab",
                     "unk1a": true
                 },
                 {
@@ -40512,7 +40512,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3a1f3336b1cd02dc",
+                    "value": "#amb_wind_canyon_l",
                     "unk1a": true
                 },
                 {
@@ -40644,7 +40644,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_22259445dd5c649c",
+                    "value": "#amb_industrial_fan_2",
                     "unk1a": true
                 },
                 {
@@ -40722,7 +40722,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_22259445dd5c649c",
+                    "value": "#amb_industrial_fan_2",
                     "unk1a": true
                 },
                 {
@@ -40794,7 +40794,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_22259445dd5c649c",
+                    "value": "#amb_industrial_fan_2",
                     "unk1a": true
                 },
                 {
@@ -40866,7 +40866,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_22259445dd5c649c",
+                    "value": "#amb_industrial_fan_2",
                     "unk1a": true
                 },
                 {
@@ -40938,7 +40938,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_22259445dd5c649c",
+                    "value": "#amb_industrial_fan_2",
                     "unk1a": true
                 },
                 {
@@ -41064,7 +41064,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_fae23e85f91caa6",
+                    "value": "#amb_wind_city_side",
                     "unk1a": true
                 },
                 {
@@ -41976,7 +41976,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5f92d978f0771e82",
+                    "value": "#amb_insects_birds",
                     "unk1a": true
                 },
                 {
@@ -42048,7 +42048,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3a4d2c00d9075b34",
+                    "value": "#amb_insects_exotic",
                     "unk1a": true
                 },
                 {
@@ -42126,7 +42126,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3a4d2c00d9075b34",
+                    "value": "#amb_insects_exotic",
                     "unk1a": true
                 },
                 {
@@ -42204,7 +42204,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3a4d2c00d9075b34",
+                    "value": "#amb_insects_exotic",
                     "unk1a": true
                 },
                 {
@@ -42282,7 +42282,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -42360,7 +42360,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -42438,7 +42438,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -42516,7 +42516,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -42594,7 +42594,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -42672,7 +42672,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -42750,7 +42750,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -42828,7 +42828,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -42912,7 +42912,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5fe5191dd42e599e",
+                    "value": "#amb_desert_birds_1",
                     "unk1a": true
                 },
                 {
@@ -42984,7 +42984,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5fe5181dd42e57eb",
+                    "value": "#amb_desert_birds_2",
                     "unk1a": true
                 },
                 {
@@ -43056,7 +43056,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5fe5171dd42e5638",
+                    "value": "#amb_desert_birds_3",
                     "unk1a": true
                 },
                 {
@@ -45384,7 +45384,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3a4d2c00d9075b34",
+                    "value": "#amb_insects_exotic",
                     "unk1a": true
                 },
                 {
@@ -45462,7 +45462,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3a4d2c00d9075b34",
+                    "value": "#amb_insects_exotic",
                     "unk1a": true
                 },
                 {
@@ -45540,7 +45540,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3a4d2c00d9075b34",
+                    "value": "#amb_insects_exotic",
                     "unk1a": true
                 },
                 {
@@ -45618,7 +45618,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3a4d2c00d9075b34",
+                    "value": "#amb_insects_exotic",
                     "unk1a": true
                 },
                 {
@@ -45696,7 +45696,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3a4d2c00d9075b34",
+                    "value": "#amb_insects_exotic",
                     "unk1a": true
                 },
                 {
@@ -45774,7 +45774,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3a4d2c00d9075b34",
+                    "value": "#amb_insects_exotic",
                     "unk1a": true
                 },
                 {
@@ -45852,7 +45852,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3a4d2c00d9075b34",
+                    "value": "#amb_insects_exotic",
                     "unk1a": true
                 },
                 {
@@ -45930,7 +45930,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -46008,7 +46008,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -46086,7 +46086,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -46164,7 +46164,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -46242,7 +46242,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -46320,7 +46320,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -46398,7 +46398,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -46476,7 +46476,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -46554,7 +46554,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -46632,7 +46632,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -46710,7 +46710,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -46788,7 +46788,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77516f2cb5929643",
+                    "value": "#amb_tree_gusts",
                     "unk1a": true
                 },
                 {
@@ -51372,7 +51372,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_328ebb4232bf494d",
+                    "value": "#amb_dist_waterfall",
                     "unk1a": true
                 },
                 {
@@ -52080,7 +52080,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_22259745dd5c69b5",
+                    "value": "#amb_industrial_fan_1",
                     "unk1a": true
                 },
                 {
@@ -53274,7 +53274,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5fe5181dd42e57eb",
+                    "value": "#amb_desert_birds_2",
                     "unk1a": true
                 },
                 {
@@ -53622,7 +53622,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_22259445dd5c649c",
+                    "value": "#amb_industrial_fan_2",
                     "unk1a": true
                 },
                 {
@@ -53766,7 +53766,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5fe5191dd42e599e",
+                    "value": "#amb_desert_birds_1",
                     "unk1a": true
                 },
                 {
@@ -56442,7 +56442,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_4c389d1dab65c7d3",
+                    "value": "#amb_rattle_stuff",
                     "unk1a": true
                 },
                 {
@@ -56508,7 +56508,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_4c389d1dab65c7d3",
+                    "value": "#amb_rattle_stuff",
                     "unk1a": true
                 },
                 {
@@ -56574,7 +56574,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_709738299162b5f5",
+                    "value": "#amb_rattle_glasses",
                     "unk1a": true
                 },
                 {
@@ -56640,7 +56640,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_7e613aa91b86deac",
+                    "value": "#amb_rattle_glass_crack",
                     "unk1a": true
                 },
                 {
@@ -56706,7 +56706,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_7e613aa91b86deac",
+                    "value": "#amb_rattle_glass_crack",
                     "unk1a": true
                 },
                 {
@@ -56772,7 +56772,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_709738299162b5f5",
+                    "value": "#amb_rattle_glasses",
                     "unk1a": true
                 },
                 {

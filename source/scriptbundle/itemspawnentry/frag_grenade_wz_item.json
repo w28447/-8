@@ -26,7 +26,7 @@
     "name": "frag_grenade_wz_item",
     "hash_99edb6a3": 0,
     "stackcount": 1,
-    "icon": "image#hash_4e4ff7b5d2603",
+    "icon": "image#ui_icon_inventory_eq_frag_grenade",
     "explosivedamagescale": 0,
     "casttime": 0,
     "modelscale": 1,

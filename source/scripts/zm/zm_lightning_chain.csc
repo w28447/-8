@@ -57,10 +57,10 @@ function lc_shock_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fie
             
             if ( !isdefined( self.var_b3a6c3f7 ) )
             {
-                self.var_b3a6c3f7 = self playloopsound( #"hash_536f193a75e9cec9", 1 );
+                self.var_b3a6c3f7 = self playloopsound( #"wpn_hammer_electrocution_loop", 1 );
             }
             
-            self playsound( 0, #"hash_63d588d1f28ecdc1" );
+            self playsound( 0, #"wpn_hammer_electrocution_impact" );
         }
         
         return;

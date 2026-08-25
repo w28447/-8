@@ -83,8 +83,8 @@ function private fxhandler( localclientnum, oldvalue, newvalue, bnewent, binitia
 function play_seeker_mine_fx( localclientnum )
 {
     self endon( #"death" );
-    playsound( 0, #"hash_153d2d19a99f3a29", self.origin );
-    sound = self playloopsound( #"hash_40039ac740a9f96e" );
+    playsound( 0, #"mpl_seeker_mine_fire", self.origin );
+    sound = self playloopsound( #"mpl_seekermine_charge" );
     self.fxloop = util::playfxontag( localclientnum, #"weapon/fx8_equip_seeker_active", self, "tag_body_animate" );
     level thread function_cece47d2( localclientnum, self, self.fxloop );
 }

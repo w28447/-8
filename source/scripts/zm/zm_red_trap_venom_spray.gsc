@@ -34,7 +34,7 @@ function trap_activate()
 {
     level exploder::exploder( "fxexp_trap_venom_switch" );
     self thread zm_traps::trap_damage();
-    playsoundatposition( #"hash_1a3423b6a6b71330", level.var_a19e2d89.origin );
+    playsoundatposition( #"zmb_venom_activate", level.var_a19e2d89.origin );
     level exploder::exploder( "fxexp_trap_poison" );
     level.var_a19e2d89 playloopsound( #"zmb_venom_spray" );
     level.var_7012847c = 1;
@@ -45,7 +45,7 @@ function trap_activate()
     level.var_a19e2d89 stoploopsound( 0.5 );
     self notify( #"trap_done" );
     self thread trap_cooldown();
-    playsoundatposition( #"hash_a9fa517453baef3", level.var_a19e2d89.origin );
+    playsoundatposition( #"zmb_venom_deactivate", level.var_a19e2d89.origin );
 }
 
 // Namespace zm_red_trap_venom_spray/zm_red_trap_venom_spray
@@ -194,7 +194,7 @@ function trap_damage( t_trap )
         {
             if ( isdefined( t_trap ) && isplayer( t_trap.activated_by_player ) )
             {
-                t_trap.activated_by_player thread zm_vo::function_a2bd5a0c( #"hash_37d475cd42f208a1", 0.5, 1, 0, 1 );
+                t_trap.activated_by_player thread zm_vo::function_a2bd5a0c( #"vox_venom_trap_active", 0.5, 1, 0, 1 );
                 level.var_7012847c = undefined;
             }
         }

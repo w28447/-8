@@ -133,7 +133,7 @@ function heal_end()
     
     self.heal.var_a1cac2f1 = 0;
     self.heal.enabled = 0;
-    self.heal.var_bc840360 = 0;
+    self.heal.target_health = 0;
     self notify( #"healing_disabled" );
     self player::function_9080887a();
     self clientfield::set_player_uimodel( "hudItems.healingActive", 0 );
@@ -304,7 +304,7 @@ function enable_healing( slot, weapon, player )
         self player::function_9080887a();
     }
     
-    var_bc840360 = self.health;
+    target_health = self.health;
     
     if ( isdefined( self.challenge_info ) )
     {
@@ -317,7 +317,7 @@ function enable_healing( slot, weapon, player )
     
     if ( self.heal.enabled )
     {
-        var_bc840360 = isdefined( self.heal.var_bc840360 ) ? self.heal.var_bc840360 : self.health;
+        target_health = isdefined( self.heal.target_health ) ? self.heal.target_health : self.health;
     }
     
     if ( weapon.heal )
@@ -329,16 +329,16 @@ function enable_healing( slot, weapon, player )
             max_health = weapon.maxheal;
         }
         
-        self.heal.var_bc840360 = math::clamp( weapon.heal + var_bc840360, 0, max_health );
+        self.heal.target_health = math::clamp( weapon.heal + target_health, 0, max_health );
         
-        if ( self.heal.var_bc840360 == 0 )
+        if ( self.heal.target_health == 0 )
         {
             return;
         }
     }
     else
     {
-        self.heal.var_bc840360 = 0;
+        self.heal.target_health = 0;
     }
     
     if ( weapon.var_4465ef1e > 0 )
@@ -464,7 +464,7 @@ function on_player_damage( params )
     if ( self function_dafd9cd( attacker ) == 0 )
     {
         damage = params.idamage;
-        self.heal.var_bc840360 = math::clamp( self.heal.var_bc840360 - damage, 0, self.heal.var_bc840360 );
+        self.heal.target_health = math::clamp( self.heal.target_health - damage, 0, self.heal.target_health );
         return;
     }
     

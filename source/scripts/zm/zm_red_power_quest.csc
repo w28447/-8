@@ -150,7 +150,7 @@ function pegasus_teleport_fx( localclientnum, oldval, newval, bnewent, binitials
 function zombie_breakout_func( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     util::playfxontag( localclientnum, level._effect[ #"chaos_breakout" ], self, "tag_origin" );
-    playsound( localclientnum, #"hash_496f85c0590828ba", self.origin + ( 0, 0, 25 ) );
+    playsound( localclientnum, #"zmb_chaos_break_glass", self.origin + ( 0, 0, 25 ) );
 }
 
 // Namespace zm_red_power_quest/zm_red_power_quest

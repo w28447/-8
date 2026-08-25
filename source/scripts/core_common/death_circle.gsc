@@ -136,9 +136,9 @@ function private shuffle_circles()
     level notify( #"shuffle_circles" );
     level endon( #"game_ended", #"shuffle_circles" );
     waitframe( 1 );
-    var_b0b91d4 = level.deathcircles[ 0 ];
+    firstcircle = level.deathcircles[ 0 ];
     
-    if ( !isdefined( var_b0b91d4 ) )
+    if ( !isdefined( firstcircle ) )
     {
         return;
     }
@@ -157,13 +157,13 @@ function private shuffle_circles()
     while ( attempts < 20 )
     {
         attempts++;
-        var_b0b91d4.origin = function_3e47f08b( var_b0b91d4 );
+        firstcircle.origin = function_3e47f08b( firstcircle );
         
-        if ( function_9bae34b3( var_b0b91d4, finalcircle, oobtriggers ) )
+        if ( function_9bae34b3( firstcircle, finalcircle, oobtriggers ) )
         {
             waitframe( 1 );
             
-            if ( function_a0004b40( var_b0b91d4, finalcircle, finalindex, oobtriggers ) )
+            if ( function_a0004b40( firstcircle, finalcircle, finalindex, oobtriggers ) )
             {
                 /#
                     iprintlnbold( "<dev string:xfb>" + attempts );
@@ -193,9 +193,9 @@ function private shuffle_circles()
 // Params 3, eflags: 0x4
 // Checksum 0xa6b3c572, Offset: 0xff8
 // Size: 0x2ae
-function private function_9bae34b3( var_b0b91d4, finalcircle, oobtriggers )
+function private function_9bae34b3( firstcircle, finalcircle, oobtriggers )
 {
-    maxdist = var_b0b91d4.radius - finalcircle.radius;
+    maxdist = firstcircle.radius - finalcircle.radius;
     maxdistsq = maxdist * maxdist;
     attempts = 0;
     finalcircle.attempts = 0;
@@ -215,12 +215,12 @@ function private function_9bae34b3( var_b0b91d4, finalcircle, oobtriggers )
         
         if ( !isdefined( origin ) )
         {
-            x = var_b0b91d4.origin[ 0 ] + randomfloatrange( maxdist * -1, maxdist );
-            y = var_b0b91d4.origin[ 1 ] + randomfloatrange( maxdist * -1, maxdist );
+            x = firstcircle.origin[ 0 ] + randomfloatrange( maxdist * -1, maxdist );
+            y = firstcircle.origin[ 1 ] + randomfloatrange( maxdist * -1, maxdist );
             origin = ( x, y, 0 );
         }
         
-        distsq = distance2dsquared( var_b0b91d4.origin, origin );
+        distsq = distance2dsquared( firstcircle.origin, origin );
         
         if ( distsq > maxdistsq )
         {
@@ -252,7 +252,7 @@ function private function_9bae34b3( var_b0b91d4, finalcircle, oobtriggers )
 // Params 4, eflags: 0x4
 // Checksum 0x45e4b1fc, Offset: 0x12b0
 // Size: 0xe6, Type: bool
-function private function_a0004b40( var_b0b91d4, lastcircle, finalindex, oobtriggers )
+function private function_a0004b40( firstcircle, lastcircle, finalindex, oobtriggers )
 {
     if ( getdvarint( #"survival_prototype", 0 ) )
     {
@@ -264,7 +264,7 @@ function private function_a0004b40( var_b0b91d4, lastcircle, finalindex, oobtrig
         circle = level.deathcircles[ i ];
         nextcircle = level.deathcircles[ i + 1 ];
         
-        if ( !function_a84cfbd0( var_b0b91d4, circle, nextcircle, oobtriggers ) )
+        if ( !function_a84cfbd0( firstcircle, circle, nextcircle, oobtriggers ) )
         {
             return false;
         }
@@ -279,9 +279,9 @@ function private function_a0004b40( var_b0b91d4, lastcircle, finalindex, oobtrig
 // Params 4, eflags: 0x4
 // Checksum 0x7051d141, Offset: 0x13a0
 // Size: 0x28e
-function private function_a84cfbd0( var_b0b91d4, circle, nextcircle, oobtriggers )
+function private function_a84cfbd0( firstcircle, circle, nextcircle, oobtriggers )
 {
-    var_f811e54e = var_b0b91d4.radius - circle.radius;
+    var_f811e54e = firstcircle.radius - circle.radius;
     sqinterfaceattributes = var_f811e54e * var_f811e54e;
     var_897ef629 = circle.radius - nextcircle.radius;
     var_eccfdb0 = var_897ef629 * var_897ef629;
@@ -304,7 +304,7 @@ function private function_a84cfbd0( var_b0b91d4, circle, nextcircle, oobtriggers
         x = nextcircle.origin[ 0 ] + randomfloatrange( var_897ef629 * -1, var_897ef629 );
         y = nextcircle.origin[ 1 ] + randomfloatrange( var_897ef629 * -1, var_897ef629 );
         origin = ( x, y, 0 );
-        var_175e94e8 = distance2dsquared( var_b0b91d4.origin, origin );
+        var_175e94e8 = distance2dsquared( firstcircle.origin, origin );
         
         if ( var_175e94e8 > sqinterfaceattributes )
         {

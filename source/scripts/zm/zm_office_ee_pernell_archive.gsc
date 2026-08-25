@@ -140,7 +140,7 @@ function pernell_archive_step1_setup( var_5ea5c94d )
         s_server_part_pickup zm_unitrigger::create( #"", 64, &function_8703c1fe );
         level flag::wait_till( #"server_part_pickup_acquired" );
         var_185199a1 = getent( s_server_part_pickup.target, "targetname" );
-        var_185199a1 playsound( #"hash_18f957b8000dd0c6" );
+        var_185199a1 playsound( #"evt_ee_item_pickup" );
         var_185199a1 delete();
         zm_unitrigger::unregister_unitrigger( s_server_part_pickup.s_unitrigger );
         s_server_part_pickup struct::delete();
@@ -244,7 +244,7 @@ function function_a546fd97()
                     iprintlnbold( "<dev string:x7d>" );
                 #/
                 
-                self playsound( #"hash_4f1f1f9762add0a3" );
+                self playsound( #"evt_ee_server_repair" );
                 s_notify.attacker thread zm_audio::create_and_play_dialog( #"generic", #"response_positive" );
             }
         }
@@ -286,7 +286,7 @@ function function_e8d6a81b( e_item )
     
     if ( isdefined( e_item ) )
     {
-        e_item playsound( #"hash_18f957b8000dd0c6" );
+        e_item playsound( #"evt_ee_item_pickup" );
     }
     
     function_2f5993d6();

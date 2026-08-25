@@ -54,7 +54,7 @@
     "soundDef": "#hash_423a2a88987e802c",
     "compassIconMaterial": "#hash_5a7110565df4eb14",
     "destructibleDef": "#hash_4efc17cdbf42e551",
-    "tacticalModeIcon": "#hash_9a2683cda81d4ed",
+    "tacticalModeIcon": "#uie_ui_icon_minimap_wz_musclecar",
     "steerAxisName": "AXIS_LSTICK",
     "gasAxisName": "AXIS_LSTICK",
     "handBrakeButtonName": "BUTTON_X",
@@ -84,7 +84,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_9a2683cda81d4ed:hash_5cba4be6": "image#hash_9a2683cda81d4ed"
+                        "uie_ui_icon_minimap_wz_musclecar:hash_5cba4be6": "image#uie_ui_icon_minimap_wz_musclecar"
                     },
                     {
                         "hash_513059ad": 0,
@@ -184,7 +184,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_9a2683cda81d4ed:hash_5cba4be6": "image#hash_9a2683cda81d4ed"
+                        "uie_ui_icon_minimap_wz_musclecar:hash_5cba4be6": "image#uie_ui_icon_minimap_wz_musclecar"
                     },
                     {
                         "hash_513059ad": 0,
@@ -220,7 +220,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_9a2683cda81d4ed:hash_5cba4be6": "image#hash_9a2683cda81d4ed"
+                        "uie_ui_icon_minimap_wz_musclecar:hash_5cba4be6": "image#uie_ui_icon_minimap_wz_musclecar"
                     },
                     {
                         "hash_513059ad": 0,

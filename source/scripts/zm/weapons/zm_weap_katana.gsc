@@ -243,12 +243,12 @@ function function_af221ee1( s_params )
                         {
                             self thread function_1475944a();
                             gibserverutils::gibhead( self );
-                            self playsound( #"hash_762b44e67bc3761f" );
+                            self playsound( #"wpn_katana_melee_impact" );
                         }
                         else if ( isdefined( s_params.vpoint ) )
                         {
                             self zombie_utility::derive_damage_refs( s_params.vpoint );
-                            self playsound( #"hash_762b44e67bc3761f" );
+                            self playsound( #"wpn_katana_melee_impact" );
                         }
                     }
                 }
@@ -285,7 +285,7 @@ function function_af221ee1( s_params )
                         if ( isalive( self ) )
                         {
                             self dodamage( 1, self.origin, s_params.eattacker, s_params.eattacker, s_params.shitloc, s_params.smeansofdeath, 0, undefined );
-                            self playsound( #"hash_762b44e67bc3761f" );
+                            self playsound( #"wpn_katana_melee_impact" );
                         }
                     }
                 }
@@ -414,7 +414,7 @@ function private function_bbe55589( e_player, w_katana, str_hitloc )
         self.var_48a548c1 = 1;
         [[ level.var_3594d33a ]]->waitinqueue( self );
         self dodamage( self.health + 100, e_player.origin, e_player, e_player, str_hitloc, "MOD_MELEE", 0, w_katana );
-        self playsound( #"hash_762b44e67bc3761f" );
+        self playsound( #"wpn_katana_melee_impact" );
         return;
     }
     
@@ -435,7 +435,7 @@ function private function_bbe55589( e_player, w_katana, str_hitloc )
     [[ level.var_3594d33a ]]->waitinqueue( self );
     n_damage = 750 < n_base_damage ? n_base_damage : 750;
     self dodamage( n_damage, e_player.origin, e_player, e_player, str_hitloc, "MOD_MELEE", 0, w_katana );
-    self playsound( #"hash_762b44e67bc3761f" );
+    self playsound( #"wpn_katana_melee_impact" );
     self.var_48a548c1 = undefined;
 }
 
@@ -465,7 +465,7 @@ function function_fcc26273( w_katana )
 function function_bed1fd9f()
 {
     self endon( #"disconnect" );
-    self playsound( #"hash_58397a948dd38b37" );
+    self playsound( #"wpn_katana_rush_toggle" );
     
     if ( isdefined( self.var_4e6b62c3 ) && self.var_4e6b62c3 )
     {
@@ -481,7 +481,7 @@ function function_bed1fd9f()
     
     if ( waitresult._notify == #"hero_katana_expired" )
     {
-        self playsound( #"hash_58397a948dd38b37" );
+        self playsound( #"wpn_katana_rush_toggle" );
     }
     
     self clientfield::set( "" + #"katana_rush_sfx", 0 );

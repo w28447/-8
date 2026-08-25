@@ -184,8 +184,8 @@ function katana_rush_sfx( localclientnum, oldval, newval, bnewent, binitialsnap,
     {
         if ( !isdefined( self.katanarush_sfx ) )
         {
-            self playsound( localclientnum, #"hash_74fd1bb2db3d91ee" );
-            self.katanarush_sfx = self playloopsound( #"hash_4f7953dcf02e2ba7" );
+            self playsound( localclientnum, #"wpn_katana_rush_activate" );
+            self.katanarush_sfx = self playloopsound( #"wpn_katana_rush_lp" );
         }
         
         return;
@@ -193,7 +193,7 @@ function katana_rush_sfx( localclientnum, oldval, newval, bnewent, binitialsnap,
     
     if ( isdefined( self.katanarush_sfx ) )
     {
-        self playsound( localclientnum, #"hash_76e75d7b16257c11" );
+        self playsound( localclientnum, #"wpn_katana_rush_deactivate" );
         self stoploopsound( self.katanarush_sfx );
         self.katanarush_sfx = undefined;
     }

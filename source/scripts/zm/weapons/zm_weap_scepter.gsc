@@ -1327,7 +1327,7 @@ function function_f67f53a7( var_4eaa1f4c )
         self.mdl_beacon = util::spawn_model( #"p8_fxanim_zm_zod_staff_ra_mod", var_4eaa1f4c );
     }
     
-    self playsound( #"hash_178614dae860a551" );
+    self playsound( #"wpn_scepter_plant_activate_npc" );
     self.mdl_beacon notsolid();
     self.mdl_beacon show();
     waitframe( 1 );

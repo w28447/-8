@@ -15,10 +15,10 @@
     "attackSpotHorzOffset": 0,
     "boards": [
         {
-            "boardModel": "#hash_432049ab25533eeb",
-            "tearAnim": "#hash_1fd6abbd0e1ef314",
-            "boardAnim": "#hash_3c76255e282ba591",
-            "staticAnim": "#hash_3c76255e282ba591",
+            "boardModel": "#p8_fxanim_zm_red_buyable_barricade_lrg_mod",
+            "tearAnim": "#p8_fxanim_zm_red_buyable_barricade_lrg_crush_anim",
+            "boardAnim": "#p8_fxanim_zm_red_buyable_barricade_lrg_idle_anim",
+            "staticAnim": "#p8_fxanim_zm_red_buyable_barricade_lrg_idle_anim",
             "repairEffect1Offset": "0 0 0",
             "repairEffect2Offset": "0 0 0",
             "minPause": 0.3,

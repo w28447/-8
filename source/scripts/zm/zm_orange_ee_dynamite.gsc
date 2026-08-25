@@ -306,7 +306,7 @@ function function_8427e524()
                 gibserverutils::annihilate( self );
                 self clientfield::increment( "" + #"dynamite_zombie_explosion_fx", 1 );
                 level function_d8f300c3( self.origin );
-                playsoundatposition( #"hash_7b838586b7ef0d9d", self.origin );
+                playsoundatposition( #"evt_dynamite_explode_zombie", self.origin );
             }
             else
             {
@@ -511,7 +511,7 @@ function function_2e1427a3()
 {
     level endon( #"end_game" );
     e_bomb = util::spawn_model( "p8_zm_ora_dynamite_bundle", self.origin, self.angles );
-    playsoundatposition( #"hash_34d44148875755b0", e_bomb.origin );
+    playsoundatposition( #"evt_dynamite_place", e_bomb.origin );
     e_bomb playloopsound( #"hash_3e8cb0a639b5a355" );
     
     /#
@@ -533,7 +533,7 @@ function function_2e1427a3()
     wait 1;
     e_bomb clientfield::increment( "" + #"dynamite_explosion_fx", 1 );
     level function_d8f300c3( self.origin );
-    playsoundatposition( #"hash_2b694b905abf1892", e_bomb.origin );
+    playsoundatposition( #"evt_dynamite_explode", e_bomb.origin );
     e_bomb playrumbleonentity( "zm_orange_dynamite_bomb_explosion" );
     wait 0.1;
     e_bomb hide();

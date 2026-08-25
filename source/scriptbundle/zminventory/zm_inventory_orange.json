@@ -212,7 +212,7 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "image#hash_524fd3c09cd2486a"
+                                    "stageimage": "image#ui_icon_inventory_zm_ora_dynamite_stick"
                                 }
                             ],
                             "hash_1d91eeba": 1,
@@ -222,7 +222,7 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "image#hash_2c2591029d6e9c0c"
+                                    "stageimage": "image#ui_icon_inventory_zm_ora_dynamite_clock"
                                 }
                             ],
                             "hash_1d91eeba": 1,
@@ -232,7 +232,7 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "image#hash_53db4d4435557493"
+                                    "stageimage": "image#ui_icon_inventory_zm_ora_dynamite_timer"
                                 }
                             ],
                             "hash_1d91eeba": 1,
@@ -247,7 +247,7 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "image#hash_1273ffc1da3b8cca"
+                                    "stageimage": "image#ui_icon_inventory_zm_ora_dynamite_bundle"
                                 }
                             ],
                             "hash_1d91eeba": 1,

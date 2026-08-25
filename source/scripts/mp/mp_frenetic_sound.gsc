@@ -34,7 +34,7 @@ function function_2878f9d1()
     while ( true )
     {
         level waittill( #"snd_solar_alarm" );
-        playsoundatposition( #"hash_119425eb77c9699a", ( 905, 50, 1091 ) );
+        playsoundatposition( #"amb_start_alarm", ( 905, 50, 1091 ) );
     }
 }
 

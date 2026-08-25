@@ -51,12 +51,12 @@
     "skidSpeedMin": 250,
     "skidSpeedMax": 600,
     "peelSpeedMax": 176,
-    "model": "#hash_353fdd9bb732c7f5",
-    "deathModel": "#hash_565264fc2777ab59",
+    "model": "#veh_t8_civ_suv_large_dest_police",
+    "deathModel": "#veh_t8_civ_suv_large_wz_dead_police",
     "soundDef": "#veh_suv_wz",
-    "compassIconMaterial": "#hash_1c5a110f3ad06651",
+    "compassIconMaterial": "#compass_vehicle_suv",
     "destructibleDef": "#hash_36da3d337c0ebaf",
-    "tacticalModeIcon": "#hash_604d9ded60b4f5a4",
+    "tacticalModeIcon": "#uie_ui_icon_minimap_wz_suv",
     "steerAxisName": "AXIS_LSTICK",
     "unk15f8": "BUTTON_LTRIG",
     "unk1648": "BUTTON_B",
@@ -84,7 +84,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_604d9ded60b4f5a4:hash_5cba4be6": "image#hash_604d9ded60b4f5a4"
+                        "uie_ui_icon_minimap_wz_suv:hash_5cba4be6": "image#uie_ui_icon_minimap_wz_suv"
                     },
                     {
                         "hash_513059ad": 0,
@@ -177,7 +177,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_604d9ded60b4f5a4:hash_5cba4be6": "image#hash_604d9ded60b4f5a4"
+                        "uie_ui_icon_minimap_wz_suv:hash_5cba4be6": "image#uie_ui_icon_minimap_wz_suv"
                     },
                     {
                         "hash_513059ad": 0,
@@ -213,7 +213,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_604d9ded60b4f5a4:hash_5cba4be6": "image#hash_604d9ded60b4f5a4"
+                        "uie_ui_icon_minimap_wz_suv:hash_5cba4be6": "image#uie_ui_icon_minimap_wz_suv"
                     },
                     {
                         "hash_513059ad": 0,

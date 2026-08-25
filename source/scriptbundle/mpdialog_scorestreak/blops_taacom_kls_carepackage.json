@@ -1,9 +1,9 @@
 {
-    "destroyed": "#hash_2f4f302723e1cf65",
-    "ready": "#hash_123279cc2307dc01",
+    "destroyed": "#vox_bta1_ult_care_destroyed",
+    "ready": "#vox_bta1_ult_care_ready",
     "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "blops_taacom_kls_carepackage",
-    "hacked": "#hash_fd0e1337c042d26"
+    "hacked": "#vox_bta1_icepick_care_steal"
 }

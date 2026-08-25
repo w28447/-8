@@ -14,10 +14,10 @@
     ],
     "spawnerType": "vox_robot",
     "character": [
-        "#hash_129f09bef89139f0",
-        "#hash_129f0cbef8913f09",
-        "#hash_129f0bbef8913d56",
-        "#hash_129f0ebef891426f"
+        "#c_t8_mannequin_female1",
+        "#c_t8_mannequin_female2",
+        "#c_t8_mannequin_female3",
+        "#c_t8_mannequin_female4"
     ],
     "meleeWeapon": "#mannequin_ai_defaultmelee_mp",
     "footstepTable": "#mannfootstep",

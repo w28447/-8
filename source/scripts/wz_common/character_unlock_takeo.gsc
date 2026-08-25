@@ -241,6 +241,6 @@ function private function_c816ea5b()
 // Size: 0x24
 function private function_895b40e4()
 {
-    self playsoundtoplayer( #"hash_1c5c27cafefddb2f", self );
+    self playsoundtoplayer( #"vox_ptak_unlock_0", self );
 }
 

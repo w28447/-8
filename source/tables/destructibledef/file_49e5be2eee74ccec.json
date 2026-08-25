@@ -1,7 +1,7 @@
 {
     "name": "#hash_49e5be2eee74ccec",
-    "model": "#hash_fefc34ceb5d9f8e",
-    "unk20": "#hash_162f51dc0208cde0",
+    "model": "#veh_t8_civ_sedan_standard_dest_police_no_lightbar",
+    "unk20": "#veh_t8_civ_sedan_standard_police_no_lightbar_dead",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

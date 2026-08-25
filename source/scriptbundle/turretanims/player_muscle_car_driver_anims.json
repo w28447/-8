@@ -3,7 +3,7 @@
     "hash_6e134d6ab4ec8b00:hash_68792705": "playeranim#hash_6e134d6ab4ec8b00",
     "hash_f00fab20ccf00dd:hash_d617d053": "playeranim#hash_f00fab20ccf00dd",
     "leftdownanim": "playeranim#hash_219f7ef56c82493d",
-    "fireadditiveanim": "playeranim#hash_1c2ed70cced1f10b",
+    "fireadditiveanim": "playeranim#pb_atv_passenger_fire",
     "configstringfiletype": "scriptbundle",
     "leftstraightanim": "playeranim#hash_507b7a2a63d7b80a",
     "leftupanim": "playeranim#hash_b6a0f0274f26551",

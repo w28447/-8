@@ -399,7 +399,7 @@ function function_5d44b698( v_origin )
 function function_b603ab34( e_player, mdl_pegasus )
 {
     level scene::function_27f5972e( #"p8_fxanim_zm_zod_staff_ra_bundle" );
-    e_player playsound( #"hash_178614dae860a551" );
+    e_player playsound( #"wpn_scepter_plant_activate_npc" );
     
     if ( isdefined( level.var_338bae81 ) )
     {

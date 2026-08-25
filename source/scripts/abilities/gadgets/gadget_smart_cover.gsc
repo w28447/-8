@@ -1510,7 +1510,7 @@ function microwaveentity( entity )
         
         if ( isplayer( entity ) && isdefined( entity.clientid ) )
         {
-            entity playsoundtoplayer( #"hash_5eecc78116b1fc85", entity );
+            entity playsoundtoplayer( #"mpl_microwave_hits", entity );
             
             if ( !entity isremotecontrolling() && time - ( isdefined( entity.microwaveshellshockandviewkicktime ) ? entity.microwaveshellshockandviewkicktime : 0 ) > 950 )
             {

@@ -1,12 +1,12 @@
 {
     "name": "#maps/wz/wz_escape_alt.d3dbsp",
     "baseName": "wz_escape_alt",
-    "lutMaterial": "#hash_33fd8dd681a14d35",
+    "lutMaterial": "#mtl_lut_wz_escape_night",
     "volumeDecalRevealTexture": "#vdreveal",
     "unk550": [
-        "#hash_3bbc41c0fab9117c",
-        "#hash_3bbc41c0fab9117c",
-        "#hash_3bbc41c0fab9117c",
-        "#hash_3bbc41c0fab9117c"
+        "#img_trim_lut_wz_escape_night",
+        "#img_trim_lut_wz_escape_night",
+        "#img_trim_lut_wz_escape_night",
+        "#img_trim_lut_wz_escape_night"
     ]
 }

@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_10120cf8e1328f20",
+                            "anim": "anim#ai_t8_zm_zombie_base_trv_entry_window_414",
                             "entrytype": "anim"
                         }
                     ],
@@ -34,7 +34,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_e292e15107bf79c",
+                            "anim": "anim#ai_t8_zm_zombie_base_crawl_trv_entry_window_414",
                             "entrytype": "anim"
                         }
                     ],

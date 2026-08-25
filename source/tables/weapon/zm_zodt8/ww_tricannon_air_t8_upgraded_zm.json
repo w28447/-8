@@ -30,10 +30,10 @@
     "#hash_554be9f7": false,
     "firesound": "#hash_788242aad7df6e21",
     "firesoundplayer": "#hash_6f996fab1ab57b28",
-    "sound240": "#hash_fc4ca27d80d6d52",
-    "sound250": "#hash_4232e127f42d7cf7",
-    "projexplosionsound": "#hash_2feef2b8c1b4c5cd",
-    "projexplosionsoundplayer": "#hash_2feef2b8c1b4c5cd",
+    "sound240": "#wpn_rpg_dryfire_npc",
+    "sound250": "#wpn_rpg_dryfire_plr",
+    "projexplosionsound": "#exp_tricannon_standard",
+    "projexplosionsoundplayer": "#exp_tricannon_standard",
     "tunables1": "#ww_tricannon_air_t8_upgraded_tunables_zm",
     "cacWeaponXCam": "#ui_cam_cac_shotgun_energy",
     "cacAttachmentsXCam": "#ui_cam_cac_shotgun_energy",
@@ -48,7 +48,7 @@
     "clipmodel": [
         "#hash_2d0cb552b77d70ce"
     ],
-    "reticleCenter": "#hash_1439ce5fc334afa9",
+    "reticleCenter": "#i_reticle_discgun",
     "inventoryIconZm": "#ui_icon_weapons_zm_tricannon_yellow",
     "image_e90": "#t7_icon_weapon_shotgun_energy_kf",
     "fireRumble": "#artillery_rumble",

@@ -51,11 +51,11 @@
     "skidSpeedMax": 600,
     "peelSpeedMax": 176,
     "model": "#hash_66bedeec4d199848",
-    "deathModel": "#hash_5ba89359946e6422",
+    "deathModel": "#veh_t8_civ_suv_large_dead_met_gry",
     "soundDef": "#veh_suv_wz",
-    "compassIconMaterial": "#hash_1c5a110f3ad06651",
+    "compassIconMaterial": "#compass_vehicle_suv",
     "destructibleDef": "#hash_471ac0c0da5228aa",
-    "tacticalModeIcon": "#hash_604d9ded60b4f5a4",
+    "tacticalModeIcon": "#uie_ui_icon_minimap_wz_suv",
     "steerAxisName": "AXIS_LSTICK",
     "gasAxisName": "AXIS_LSTICK",
     "handBrakeButtonName": "BUTTON_X",
@@ -85,7 +85,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_604d9ded60b4f5a4:hash_5cba4be6": "image#hash_604d9ded60b4f5a4"
+                        "uie_ui_icon_minimap_wz_suv:hash_5cba4be6": "image#uie_ui_icon_minimap_wz_suv"
                     },
                     {
                         "hash_513059ad": 0,
@@ -178,7 +178,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_604d9ded60b4f5a4:hash_5cba4be6": "image#hash_604d9ded60b4f5a4"
+                        "uie_ui_icon_minimap_wz_suv:hash_5cba4be6": "image#uie_ui_icon_minimap_wz_suv"
                     },
                     {
                         "hash_513059ad": 0,
@@ -214,7 +214,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_604d9ded60b4f5a4:hash_5cba4be6": "image#hash_604d9ded60b4f5a4"
+                        "uie_ui_icon_minimap_wz_suv:hash_5cba4be6": "image#uie_ui_icon_minimap_wz_suv"
                     },
                     {
                         "hash_513059ad": 0,

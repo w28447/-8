@@ -363,7 +363,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -437,7 +437,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -511,7 +511,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -930,7 +930,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -1004,7 +1004,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -1078,7 +1078,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -1152,7 +1152,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -1226,7 +1226,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -1300,7 +1300,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -1374,13 +1374,13 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -1464,13 +1464,13 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -1554,13 +1554,13 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -1647,10 +1647,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -1737,10 +1737,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -1827,10 +1827,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -1917,10 +1917,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base_alt"
@@ -2039,10 +2039,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base_alt"
@@ -2161,10 +2161,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base_alt"
@@ -2283,10 +2283,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base_alt"
@@ -2405,10 +2405,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base_alt"
@@ -2527,10 +2527,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base_alt"
@@ -2652,13 +2652,13 @@
                             "material": "#hash_3f9c0d8c3965e4fc"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base_alt"
@@ -2806,13 +2806,13 @@
                             "material": "#hash_3f9c0d8c3965e4fc"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base_alt"
@@ -2960,13 +2960,13 @@
                             "material": "#hash_3f9c0d8c3965e4fc"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base_alt"
@@ -3111,7 +3111,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -3132,7 +3132,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -3377,7 +3377,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -3398,7 +3398,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -3643,7 +3643,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -3664,7 +3664,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -3909,7 +3909,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -3930,7 +3930,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -4175,7 +4175,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -4196,7 +4196,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -4441,7 +4441,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -4462,7 +4462,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -4707,7 +4707,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -4725,7 +4725,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -4973,7 +4973,7 @@
                             "material": "#hash_7260259509cac7b9"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base_alt"
@@ -4985,7 +4985,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base"
@@ -5239,7 +5239,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -5260,7 +5260,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -5518,7 +5518,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -5589,7 +5589,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -5604,7 +5604,7 @@
                             "material": "#hash_2de64deeca0ebf40"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base_alt"
@@ -5810,7 +5810,7 @@
                             "material": "#hash_3f9c0d8c3965e4fc"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -5894,13 +5894,13 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -6047,7 +6047,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -6067,7 +6067,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -6315,10 +6315,10 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base_alt"
@@ -6421,10 +6421,10 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base_alt"
@@ -6527,10 +6527,10 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base_alt"
@@ -6633,10 +6633,10 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base_alt"
@@ -6744,7 +6744,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -6764,7 +6764,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -7313,7 +7313,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -7333,7 +7333,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -7587,7 +7587,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base_alt"
@@ -7693,7 +7693,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base_alt"
@@ -7799,7 +7799,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base_alt"
@@ -7905,7 +7905,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base_alt"
@@ -8010,7 +8010,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -8030,7 +8030,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -8281,7 +8281,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -8371,7 +8371,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -8461,7 +8461,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -8554,7 +8554,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base_alt"
@@ -8660,7 +8660,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base_alt"
@@ -9136,7 +9136,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -9210,7 +9210,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -9300,7 +9300,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -9393,7 +9393,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -9477,7 +9477,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -9570,7 +9570,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -9663,10 +9663,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -9771,7 +9771,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -9791,7 +9791,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -10176,7 +10176,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -10196,7 +10196,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -10565,7 +10565,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -10585,7 +10585,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -11041,7 +11041,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -11182,7 +11182,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -11272,7 +11272,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -11359,7 +11359,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -11555,7 +11555,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -11699,10 +11699,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -11805,10 +11805,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -11913,7 +11913,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -11933,7 +11933,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -12181,7 +12181,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -12271,7 +12271,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -12366,7 +12366,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -12386,7 +12386,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -12640,7 +12640,7 @@
                             "material": "#hash_3f9c0d8c3965e4fc"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12729,7 +12729,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -12749,7 +12749,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -12994,7 +12994,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -13132,7 +13132,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -13270,7 +13270,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -13411,7 +13411,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -13556,7 +13556,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -13697,7 +13697,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -13784,7 +13784,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -15649,7 +15649,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -15667,7 +15667,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -15915,7 +15915,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -15933,7 +15933,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -16181,7 +16181,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -16199,7 +16199,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -16447,7 +16447,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -16465,7 +16465,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -16713,7 +16713,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -16731,7 +16731,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -18074,7 +18074,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -18094,7 +18094,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -18347,7 +18347,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -18367,7 +18367,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -18620,7 +18620,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -18640,7 +18640,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -18893,7 +18893,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -18913,7 +18913,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -19166,7 +19166,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -19186,7 +19186,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -19439,7 +19439,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -19459,7 +19459,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -19860,7 +19860,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -19880,7 +19880,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -20915,7 +20915,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -20936,7 +20936,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -21197,7 +21197,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -21218,7 +21218,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -21479,7 +21479,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -21500,7 +21500,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -21761,7 +21761,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -21782,7 +21782,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -22043,7 +22043,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -22064,7 +22064,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -22325,7 +22325,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -22343,7 +22343,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -22591,7 +22591,7 @@
                             "material": "#hash_7260259509cac7b9"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base_alt"
@@ -22603,7 +22603,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base"
@@ -22857,7 +22857,7 @@
                             "material": "#hash_7260259509cac7b9"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base_alt"
@@ -22869,7 +22869,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base"
@@ -23705,7 +23705,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -23725,7 +23725,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -23984,7 +23984,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -24004,7 +24004,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -24263,7 +24263,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -24283,7 +24283,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -24542,7 +24542,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -24562,7 +24562,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -24821,7 +24821,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -24841,7 +24841,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -25094,7 +25094,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -25114,7 +25114,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -25471,7 +25471,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -25489,7 +25489,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -25737,7 +25737,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -25755,7 +25755,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -26003,7 +26003,7 @@
                             "material": "#hash_7260259509cac7b9"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base_alt"
@@ -26015,7 +26015,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base"
@@ -26269,7 +26269,7 @@
                             "material": "#hash_7260259509cac7b9"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base_alt"
@@ -26281,7 +26281,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base"
@@ -26535,7 +26535,7 @@
                             "material": "#hash_7260259509cac7b9"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base_alt"
@@ -26547,7 +26547,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base"
@@ -26801,7 +26801,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -26822,7 +26822,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -27083,7 +27083,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -27104,7 +27104,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -27365,7 +27365,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -27386,7 +27386,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -27647,7 +27647,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -27668,7 +27668,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -27929,7 +27929,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -27950,7 +27950,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -28211,7 +28211,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -28232,7 +28232,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -29202,7 +29202,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -29222,7 +29222,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -29475,7 +29475,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -29495,7 +29495,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -29748,7 +29748,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -29768,7 +29768,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -30021,7 +30021,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -30041,7 +30041,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -30294,7 +30294,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -30314,7 +30314,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -30567,7 +30567,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -30587,7 +30587,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -30988,7 +30988,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -31008,7 +31008,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -32619,7 +32619,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -32639,7 +32639,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -33548,7 +33548,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -33568,7 +33568,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -34169,7 +34169,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -34189,7 +34189,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -34500,7 +34500,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -34520,7 +34520,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -35005,7 +35005,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -35025,7 +35025,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -35510,7 +35510,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -35530,7 +35530,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -36015,7 +36015,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -36035,7 +36035,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -36518,7 +36518,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -36708,7 +36708,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -36821,7 +36821,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -36839,7 +36839,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -37087,7 +37087,7 @@
                             "material": "#hash_7260259509cac7b9"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base_alt"
@@ -37099,7 +37099,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base"
@@ -37353,7 +37353,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -37374,7 +37374,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -37635,7 +37635,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#hash_7260259509cac7b9"
@@ -37656,7 +37656,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_barrel_base"
@@ -38018,7 +38018,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -38108,7 +38108,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -38201,10 +38201,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -38362,7 +38362,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -38452,7 +38452,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -38542,7 +38542,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -38635,10 +38635,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -38738,7 +38738,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -38828,7 +38828,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -38923,7 +38923,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -38943,7 +38943,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -39194,10 +39194,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -39302,7 +39302,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -39322,7 +39322,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -39573,10 +39573,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -39679,10 +39679,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -39785,10 +39785,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -39893,7 +39893,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -39913,7 +39913,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -40164,10 +40164,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -40270,10 +40270,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -40376,10 +40376,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -40482,10 +40482,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -40629,7 +40629,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -40649,7 +40649,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -40897,7 +40897,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -40987,7 +40987,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -41077,7 +41077,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -41167,7 +41167,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -41260,10 +41260,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -41368,7 +41368,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -41388,7 +41388,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -41636,7 +41636,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -41731,7 +41731,7 @@
                             "mask": "#$white"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base",
                             "mask": "#$white"
                         },
                         {
@@ -41751,7 +41751,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_shell_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323",
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt",
                             "mask": "#$white"
                         },
                         {
@@ -41999,7 +41999,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -42089,7 +42089,7 @@
                             "material": "#hash_2ca9369a7de39401"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
@@ -42182,10 +42182,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -42288,10 +42288,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"
@@ -42394,10 +42394,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_stock_base"
                         },
                         {
-                            "material": "#hash_5854630e69ad3947"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base"
                         },
                         {
-                            "material": "#hash_27161a8f5b3c4323"
+                            "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_strap_base_alt"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_shotgun_trenchgun_pump_base_alt"

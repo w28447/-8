@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_2ef192c70c2fef74",
+                            "anim": "anim#p8_fxanim_zm_perk_vending_soda_off_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -34,7 +34,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_ae2ade4fc57ce26",
+                            "anim": "anim#p8_fxanim_zm_perk_vending_soda_on_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -63,7 +63,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_5631e78d786dff73",
+                            "anim": "anim#p8_fxanim_zm_perk_vending_soda_disable_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -92,7 +92,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_60bdafd52279e017",
+                            "anim": "anim#p8_fxanim_zm_perk_vending_soda_use1_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -121,7 +121,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_6f41afc6a67f35b4",
+                            "anim": "anim#p8_fxanim_zm_perk_vending_soda_use2_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -150,7 +150,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_3e6cb0e76f787b45",
+                            "anim": "anim#p8_fxanim_zm_perk_vending_soda_use3_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -179,7 +179,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_151ace9bde9a6fb2",
+                            "anim": "anim#p8_fxanim_zm_perk_vending_soda_use4_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -208,7 +208,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_cd5527dffe05f8b",
+                            "anim": "anim#p8_fxanim_zm_perk_vending_soda_use5_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -237,7 +237,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_4b28ae1fef809248",
+                            "anim": "anim#p8_fxanim_zm_perk_vending_soda_use6_anim",
                             "entrytype": "anim"
                         }
                     ],

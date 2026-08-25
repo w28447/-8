@@ -100,7 +100,7 @@ function hammer_storm( localclientnum, oldval, newval, bnewent, binitialsnap, fi
         
         if ( !isdefined( self.var_49f8e089 ) )
         {
-            self.var_49f8e089 = self playloopsound( #"hash_1fc7648098c65e92" );
+            self.var_49f8e089 = self playloopsound( #"wpn_hammer_storm_lp" );
             self thread function_9f78a957( localclientnum );
         }
         
@@ -113,7 +113,7 @@ function hammer_storm( localclientnum, oldval, newval, bnewent, binitialsnap, fi
         self.n_beacon_fx = undefined;
     }
     
-    self playsound( 0, #"hash_15633b83c64a3ebb" );
+    self playsound( 0, #"wpn_hammer_storm_end" );
     
     if ( isdefined( self.var_49f8e089 ) )
     {
@@ -154,7 +154,7 @@ function lightning_impact_play_fx( localclientnum, oldval, newval, bnewent, bini
     if ( newval == 1 )
     {
         self.var_89d8285 = util::playfxontag( localclientnum, level._effect[ #"lightning_impact" ], self, self zm_utility::function_467efa7b() );
-        self playsound( localclientnum, #"hash_63d588d1f28ecdc1" );
+        self playsound( localclientnum, #"wpn_hammer_electrocution_impact" );
     }
 }
 
@@ -294,7 +294,7 @@ function function_cd968d6( localclientnum, oldval, newval, bnewent, binitialsnap
             self.var_89d8285 = util::playfxontag( localclientnum, level._effect[ #"lightning_impact" ], self, self zm_utility::function_467efa7b() );
         }
         
-        self playsound( localclientnum, #"hash_63d588d1f28ecdc1" );
+        self playsound( localclientnum, #"wpn_hammer_electrocution_impact" );
         return;
     }
     

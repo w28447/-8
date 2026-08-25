@@ -36,7 +36,7 @@ class class_6fde4e6
 
     var claimed;
     var owner;
-    var var_4f0ea1b5;
+    var lockeddown;
     var var_6f08706b;
 
     // Namespace class_6fde4e6/zm_lockdown_util
@@ -46,7 +46,7 @@ class class_6fde4e6
     constructor()
     {
         claimed = 0;
-        var_4f0ea1b5 = 0;
+        lockeddown = 0;
         owner = undefined;
         var_6f08706b = undefined;
     }
@@ -633,7 +633,7 @@ function private function_4ad92a9a( entity )
 function private function_e1f6d06a( stub )
 {
     var_f1e20c7f = function_fd31eb92( stub );
-    return isdefined( var_f1e20c7f ) && isdefined( var_f1e20c7f.var_4f0ea1b5 ) && var_f1e20c7f.var_4f0ea1b5;
+    return isdefined( var_f1e20c7f ) && isdefined( var_f1e20c7f.lockeddown ) && var_f1e20c7f.lockeddown;
 }
 
 // Namespace zm_lockdown_util/zm_lockdown_util
@@ -1354,7 +1354,7 @@ function function_7258b5cc( entity, var_410a8c7, var_2baba799, unlockfunc )
     }
     
     stub.unlockfunc = unlockfunc;
-    var_a0692a89.var_4f0ea1b5 = 1;
+    var_a0692a89.lockeddown = 1;
     var_a0692a89.claimed = 0;
     return stub;
 }
@@ -1381,7 +1381,7 @@ function function_b5dd9241( stub )
         return false;
     }
     
-    return var_a0692a89.var_4f0ea1b5 === 1;
+    return var_a0692a89.lockeddown === 1;
 }
 
 // Namespace zm_lockdown_util/zm_lockdown_util
@@ -1424,7 +1424,7 @@ function function_ac6907ec()
     
     if ( isdefined( var_a0692a89 ) )
     {
-        var_a0692a89.var_4f0ea1b5 = 2;
+        var_a0692a89.lockeddown = 2;
     }
     
     if ( isdefined( self ) && isdefined( self.unlockfunc ) )
@@ -1456,7 +1456,7 @@ function function_4de23f77()
     
     if ( isdefined( var_a0692a89 ) )
     {
-        var_a0692a89.var_4f0ea1b5 = 2;
+        var_a0692a89.lockeddown = 2;
     }
     
     self.var_6f08706b.lockdownstub = undefined;

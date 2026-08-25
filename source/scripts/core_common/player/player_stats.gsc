@@ -344,9 +344,9 @@ function function_62b271d8( statname, value )
         
         for ( i = 0; i < teammatecount ; i++ )
         {
-            var_bd8d01a8 = player get_stat( #"afteractionreportstats", #"teammates", i, #"xuid" );
+            teammate_xuid = player get_stat( #"afteractionreportstats", #"teammates", i, #"xuid" );
             
-            if ( var_bd8d01a8 === playerxuid )
+            if ( teammate_xuid === playerxuid )
             {
                 player set_stat( #"afteractionreportstats", #"teammates", i, statname, value );
                 break;
@@ -381,9 +381,9 @@ function function_b7f80d87( statname, value )
         
         for ( i = 0; i < teammatecount ; i++ )
         {
-            var_bd8d01a8 = player get_stat( #"afteractionreportstats", #"teammates", i, #"xuid" );
+            teammate_xuid = player get_stat( #"afteractionreportstats", #"teammates", i, #"xuid" );
             
-            if ( var_bd8d01a8 === playerxuid )
+            if ( teammate_xuid === playerxuid )
             {
                 player inc_stat( #"afteractionreportstats", #"teammates", i, statname, value );
                 break;

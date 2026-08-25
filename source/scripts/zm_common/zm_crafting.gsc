@@ -44,7 +44,7 @@ function autoexec __init__system__()
 // Size: 0x34
 function __init__()
 {
-    level.var_5df2581a = [];
+    level.crafting_blueprints = [];
     level.crafting_components = [];
     function_475a63eb();
 }
@@ -355,11 +355,11 @@ function private function_40f32480()
 // Size: 0x5e
 function setup_blueprint( blueprint )
 {
-    if ( !isdefined( level.var_5df2581a[ blueprint.name ] ) )
+    if ( !isdefined( level.crafting_blueprints[ blueprint.name ] ) )
     {
         blueprint.completed = 0;
         blueprint.builder = undefined;
-        level.var_5df2581a[ blueprint.name ] = blueprint;
+        level.crafting_blueprints[ blueprint.name ] = blueprint;
     }
 }
 
@@ -371,7 +371,7 @@ function function_31d883d7()
 {
     results = [];
     
-    foreach ( blueprint in level.var_5df2581a )
+    foreach ( blueprint in level.crafting_blueprints )
     {
         if ( blueprint.completed )
         {
@@ -528,7 +528,7 @@ function function_735c3a67( player, unitrigger )
     {
         unitrigger.locked = 1;
         unitrigger.blueprint.locked = 1;
-        player playsound( #"hash_1fff2aa71bff91fa" );
+        player playsound( #"zmb_crafting_start" );
     }
 }
 
@@ -923,9 +923,9 @@ function private function_514b8f17( player )
         
         if ( melee_now && !player.crafting_melee )
         {
-            if ( isdefined( self.var_90dfb0bf ) && isdefined( level.var_b87dee47[ self.var_90dfb0bf ].var_cb2020d8 ) )
+            if ( isdefined( self.craft_state ) && isdefined( level.var_b87dee47[ self.craft_state ].var_cb2020d8 ) )
             {
-                self [[ level.var_b87dee47[ self.var_90dfb0bf ].var_cb2020d8 ]]( player );
+                self [[ level.var_b87dee47[ self.craft_state ].var_cb2020d8 ]]( player );
             }
         }
         
@@ -1001,7 +1001,7 @@ function function_86531922( e_holder, w_item )
         self thread zm_audio::create_and_play_dialog( #"shield_piece", #"pickup" );
     }
     
-    self playsound( #"hash_230737b2535a3374" );
+    self playsound( #"zmb_crafting_pickup_generic" );
     
     if ( w_item.var_f56ac2bd !== "" )
     {
@@ -1026,7 +1026,7 @@ function function_d56724a6( e_holder, w_item )
     }
     else
     {
-        self playsound( #"hash_230737b2535a3374" );
+        self playsound( #"zmb_crafting_pickup_generic" );
     }
     
     if ( isdefined( w_item.gadgetreadysoundplayer ) )
@@ -1069,13 +1069,13 @@ function private function_475a63eb()
 // Size: 0xae
 function private function_e1eeba22( state, var_a3d8c117, var_ea7ebe1f, var_aee03b4c, var_cb2020d8 )
 {
-    var_90dfb0bf = spawnstruct();
-    var_90dfb0bf.name = state;
-    var_90dfb0bf.var_a3d8c117 = var_a3d8c117;
-    var_90dfb0bf.var_ea7ebe1f = var_ea7ebe1f;
-    var_90dfb0bf.var_cb2020d8 = var_cb2020d8;
-    var_90dfb0bf.var_aee03b4c = var_aee03b4c;
-    level.var_b87dee47[ state ] = var_90dfb0bf;
+    craft_state = spawnstruct();
+    craft_state.name = state;
+    craft_state.var_a3d8c117 = var_a3d8c117;
+    craft_state.var_ea7ebe1f = var_ea7ebe1f;
+    craft_state.var_cb2020d8 = var_cb2020d8;
+    craft_state.var_aee03b4c = var_aee03b4c;
+    level.var_b87dee47[ state ] = craft_state;
 }
 
 // Namespace zm_crafting/zm_crafting
@@ -1089,9 +1089,9 @@ function private function_35f5c90b( state )
         return;
     }
     
-    self.var_90dfb0bf = state;
+    self.craft_state = state;
     
-    if ( !isdefined( level.var_b87dee47[ self.var_90dfb0bf ] ) )
+    if ( !isdefined( level.var_b87dee47[ self.craft_state ] ) )
     {
         /#
             if ( ishash( state ) )
@@ -1105,9 +1105,9 @@ function private function_35f5c90b( state )
         return;
     }
     
-    if ( isdefined( level.var_b87dee47[ self.var_90dfb0bf ].var_aee03b4c ) )
+    if ( isdefined( level.var_b87dee47[ self.craft_state ].var_aee03b4c ) )
     {
-        self [[ level.var_b87dee47[ self.var_90dfb0bf ].var_aee03b4c ]]();
+        self [[ level.var_b87dee47[ self.craft_state ].var_aee03b4c ]]();
     }
 }
 
@@ -1144,9 +1144,9 @@ function function_18f2be60( player )
         return 0;
     }
     
-    if ( isdefined( self.var_90dfb0bf ) )
+    if ( isdefined( self.craft_state ) )
     {
-        return self [[ level.var_b87dee47[ self.var_90dfb0bf ].var_a3d8c117 ]]( player );
+        return self [[ level.var_b87dee47[ self.craft_state ].var_a3d8c117 ]]( player );
     }
     
     self.hint_string = "";
@@ -1168,9 +1168,9 @@ function crafting_think()
         player = waitresult.activator;
         level notify( #"crafting_started", { #unitrigger:self, #activator:player } );
         
-        if ( isdefined( self.stub.var_90dfb0bf ) )
+        if ( isdefined( self.stub.craft_state ) )
         {
-            self [[ level.var_b87dee47[ self.stub.var_90dfb0bf ].var_ea7ebe1f ]]( player );
+            self [[ level.var_b87dee47[ self.stub.craft_state ].var_ea7ebe1f ]]( player );
         }
     }
 }
@@ -1917,7 +1917,7 @@ function private function_df8ce6e2( player )
     }
     else
     {
-        player playsound( #"hash_230737b2535a3374" );
+        player playsound( #"zmb_crafting_pickup_generic" );
     }
     
     player notify( #"hash_77d44943fb143b18", { #weapon:self.stub.blueprint.w_result } );

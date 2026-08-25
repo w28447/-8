@@ -1,7 +1,7 @@
 {
     "name": "#hash_1d4ca40b3a6f8562",
-    "model": "#hash_54d3ba15fe38c4fc",
-    "unk20": "#hash_796d8baffa000224",
+    "model": "#veh_t8_civ_truck_mini_dest_rusty_autoshop_morocco",
+    "unk20": "#veh_t8_civ_truck_mini_dead_autoshop_morocco",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -11,7 +11,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_21d849eee4d897a",
+                    "name": "#dst_car_rad_steam",
                     "unk28": "tag_body_d0"
                 },
                 {
@@ -19,7 +19,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_76e527de2e37948f",
+                    "name": "#dst_car_cooldown",
                     "unk28": "tag_body_d0"
                 },
                 {

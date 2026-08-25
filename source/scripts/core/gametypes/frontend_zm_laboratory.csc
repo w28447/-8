@@ -178,15 +178,15 @@ function function_250232f4( localclientnum )
         
         while ( true )
         {
-            var_509eb1e5 = getdvarint( #"hash_5001173ab674d344", 1 );
+            n_glob_state = getdvarint( #"hash_5001173ab674d344", 1 );
             var_74d08f2b = getdvarstring( #"hash_5de1ac7448993686", "<dev string:x38>" );
             var_8de02736 = getdvarint( #"hash_56728884d2904809", 0 );
             waitframe( 1 );
             
-            if ( var_509eb1e5 != var_596aaddb || var_74d08f2b != var_89f688b8 )
+            if ( n_glob_state != var_596aaddb || var_74d08f2b != var_89f688b8 )
             {
-                level notify( #"np_item_focus_changed", { #var_800db6bf:var_74d08f2b, #var_aba5d0f5:var_509eb1e5, #b_debug:1 } );
-                var_596aaddb = var_509eb1e5;
+                level notify( #"np_item_focus_changed", { #var_800db6bf:var_74d08f2b, #glob_state:n_glob_state, #b_debug:1 } );
+                var_596aaddb = n_glob_state;
                 var_89f688b8 = var_74d08f2b;
             }
             
@@ -410,7 +410,7 @@ function function_d940763b( localclientnum )
             case #"np_item_focus_changed":
                 if ( !( isdefined( level.var_ee871019 ) && level.var_ee871019 ) )
                 {
-                    level thread function_7ee5e3a2( localclientnum, waitresult.var_800db6bf, waitresult.var_aba5d0f5, waitresult.b_debug );
+                    level thread function_7ee5e3a2( localclientnum, waitresult.var_800db6bf, waitresult.glob_state, waitresult.b_debug );
                 }
                 
                 break;
@@ -481,19 +481,19 @@ function talisman_show_label( localclientnum )
     switch ( var_4deff3fa )
     {
         case 0:
-            playsound( localclientnum, #"hash_49d438d1a1ba28b9", v_origin );
+            playsound( localclientnum, #"evt_show_talisman_cmn", v_origin );
             break;
         case 1:
-            playsound( localclientnum, #"hash_7d9e04c47d70ca1d", v_origin );
+            playsound( localclientnum, #"evt_show_talisman_rare", v_origin );
             break;
         case 2:
-            playsound( localclientnum, #"hash_2ff41d0510d442c8", v_origin );
+            playsound( localclientnum, #"evt_show_talisman_epic", v_origin );
             break;
         case 3:
-            playsound( localclientnum, #"hash_2c8d10ab46ff7e64", v_origin );
+            playsound( localclientnum, #"evt_show_talisman_legend", v_origin );
             break;
         case 4:
-            playsound( localclientnum, #"hash_2409a80bfb7d6955", v_origin );
+            playsound( localclientnum, #"evt_show_talisman_ultra", v_origin );
             break;
     }
 }
@@ -1151,7 +1151,7 @@ function function_a1547af3( localclientnum, var_4379f16, var_34c8df6b, var_d5a65
 // Params 4
 // Checksum 0x78173ba6, Offset: 0x55a0
 // Size: 0x57c
-function function_7ee5e3a2( localclientnum, var_367ac609, var_509eb1e5, b_debug = 0 )
+function function_7ee5e3a2( localclientnum, var_367ac609, n_glob_state, b_debug = 0 )
 {
     self notify( "6f8c1467ad43f7b7" );
     self endon( "6f8c1467ad43f7b7" );
@@ -1163,22 +1163,22 @@ function function_7ee5e3a2( localclientnum, var_367ac609, var_509eb1e5, b_debug 
         wait 0.1;
     }
     
-    var_80ff7445 = var_509eb1e5 - level.var_49f26c00.var_9af0d684;
+    var_80ff7445 = n_glob_state - level.var_49f26c00.var_9af0d684;
     
     if ( var_80ff7445 > 0 )
     {
-        level thread function_a1547af3( localclientnum, var_509eb1e5, level.var_49f26c00.var_9af0d684, -20 * abs( var_80ff7445 ) );
+        level thread function_a1547af3( localclientnum, n_glob_state, level.var_49f26c00.var_9af0d684, -20 * abs( var_80ff7445 ) );
     }
     else if ( var_80ff7445 < 0 )
     {
-        level thread function_a1547af3( localclientnum, var_509eb1e5, level.var_49f26c00.var_9af0d684, 20 * abs( var_80ff7445 ) );
+        level thread function_a1547af3( localclientnum, n_glob_state, level.var_49f26c00.var_9af0d684, 20 * abs( var_80ff7445 ) );
     }
     
     level.var_49f26c00.var_8a28a9a = var_367ac609;
-    level.var_49f26c00.var_9af0d684 = var_509eb1e5;
+    level.var_49f26c00.var_9af0d684 = n_glob_state;
     level.var_49f26c00.var_3e14626f = "cent_show_" + var_367ac609;
     
-    switch ( var_509eb1e5 )
+    switch ( n_glob_state )
     {
         case 1:
             level.var_49f26c00.var_42c70173 = #"p8_fxanim_core_frontend_zm_lab_flask_globs_01_to_03_bundle";

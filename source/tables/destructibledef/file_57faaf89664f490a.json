@@ -1,7 +1,7 @@
 {
     "name": "#hash_57faaf89664f490a",
-    "model": "#hash_2833b30a8a7507e",
-    "unk20": "#hash_14393108bb9956f4",
+    "model": "#veh_t8_civ_city_car_dest_dirty_wht_japan",
+    "unk20": "#veh_t8_civ_city_car_dead_wht",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -11,11 +11,11 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_21d849eee4d897a",
+                    "name": "#dst_car_rad_steam",
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

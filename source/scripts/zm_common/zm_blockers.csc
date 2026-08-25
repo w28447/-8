@@ -94,7 +94,7 @@ function power_debris_ambient_fx( localclientnum, oldval, newval, bnewent, binit
 // Size: 0x7c
 function doorbuy_bought_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    self function_e6eed4fe( level._effect[ #"doorbuy_bought_fx" ], #"hash_21b4bf152e90fd76", localclientnum, newval );
+    self function_e6eed4fe( level._effect[ #"doorbuy_bought_fx" ], #"zmb_blocker_door_purchase", localclientnum, newval );
 }
 
 // Namespace zm_blockers/zm_blockers
@@ -103,7 +103,7 @@ function doorbuy_bought_fx( localclientnum, oldval, newval, bnewent, binitialsna
 // Size: 0x7c
 function debrisbuy_bought_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    self function_e6eed4fe( level._effect[ #"debrisbuy_bought_fx" ], #"hash_4bddd546f43487cf", localclientnum, newval );
+    self function_e6eed4fe( level._effect[ #"debrisbuy_bought_fx" ], #"zmb_blocker_debris_purchase", localclientnum, newval );
 }
 
 // Namespace zm_blockers/zm_blockers
@@ -112,7 +112,7 @@ function debrisbuy_bought_fx( localclientnum, oldval, newval, bnewent, binitials
 // Size: 0x7c
 function power_door_bought_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    self function_e6eed4fe( level._effect[ #"powerdoor_bought_fx" ], #"hash_5dcb54d98c9787b1", localclientnum, newval );
+    self function_e6eed4fe( level._effect[ #"powerdoor_bought_fx" ], #"zmb_blocker_powerdoor_purchase", localclientnum, newval );
 }
 
 // Namespace zm_blockers/zm_blockers
@@ -121,7 +121,7 @@ function power_door_bought_fx( localclientnum, oldval, newval, bnewent, binitial
 // Size: 0x7c
 function power_debris_bought_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
-    self function_e6eed4fe( level._effect[ #"power_debris_bought_fx" ], #"hash_4bddd546f43487cf", localclientnum, newval );
+    self function_e6eed4fe( level._effect[ #"power_debris_bought_fx" ], #"zmb_blocker_debris_purchase", localclientnum, newval );
 }
 
 // Namespace zm_blockers/zm_blockers

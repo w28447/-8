@@ -55,15 +55,15 @@
             "1 0"
         ]
     ],
-    "firesounddistant": "#hash_56369e9a0553981f",
+    "firesounddistant": "#wpn_assault_fire_distant",
     "firesound": "#wpn_tr_powersemi_fire_npc",
     "firesoundplayer": "#wpn_tr_powersemi_fire_plr",
     "sound1d0": "#wpn_tr_powersemi_fire_npc",
     "sound1e0": "#hash_66dc17c6260010db",
     "sound200": "#wpn_tr_powersemi_fire_plr",
     "sound210": "#hash_271370c5b9078536",
-    "sound240": "#hash_474a10cd847c7803",
-    "sound250": "#hash_146e19cd67fe19de",
+    "sound240": "#wpn_rifle_dryfire_npc",
+    "sound250": "#wpn_rifle_dryfire_plr",
     "sound260": "#prj_crack_supersonic",
     "sound600": "#hash_209cb2974ae55ec0",
     "sound610": "#hash_209cb2974ae55ec0",

@@ -9,7 +9,7 @@
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "anim#hash_4983812e5cc3f6c1",
+                            "anim": "anim#p8_fxanim_core_frontend_zm_lab_bottle_arm_01_idle_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -38,7 +38,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_e9844522176a36f",
+                            "anim": "anim#p8_fxanim_core_frontend_zm_lab_bottle_arm_01_exit_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -67,7 +67,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_4983812e5cc3f6c1",
+                            "anim": "anim#p8_fxanim_core_frontend_zm_lab_bottle_arm_01_idle_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -126,7 +126,7 @@
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "anim#hash_720d30de839de8fc",
+                            "anim": "anim#p8_fxanim_core_frontend_zm_lab_bottle_arm_02_idle_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -155,7 +155,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_f0de3d6818caab6",
+                            "anim": "anim#p8_fxanim_core_frontend_zm_lab_bottle_arm_02_exit_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -184,7 +184,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_720d30de839de8fc",
+                            "anim": "anim#p8_fxanim_core_frontend_zm_lab_bottle_arm_02_idle_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -243,7 +243,7 @@
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "anim#hash_7c9f3a2a36404293",
+                            "anim": "anim#p8_fxanim_core_frontend_zm_lab_bottle_arm_03_idle_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -272,7 +272,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_797440f6c61c3bf1",
+                            "anim": "anim#p8_fxanim_core_frontend_zm_lab_bottle_arm_03_exit_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -301,7 +301,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_7c9f3a2a36404293",
+                            "anim": "anim#p8_fxanim_core_frontend_zm_lab_bottle_arm_03_idle_anim",
                             "entrytype": "anim"
                         }
                     ],

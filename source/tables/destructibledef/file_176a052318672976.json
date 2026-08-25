@@ -1,7 +1,7 @@
 {
     "name": "#hash_176a052318672976",
-    "model": "#hash_3411f9b461804ea6",
-    "unk20": "#hash_6b24de08e90deb24",
+    "model": "#veh_t8_civ_car_supercar_dest_green",
+    "unk20": "#veh_t8_civ_car_supercar_dead_green",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

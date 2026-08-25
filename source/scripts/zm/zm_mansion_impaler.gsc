@@ -595,19 +595,19 @@ function function_4802a272()
     {
         case 10:
             var_5e246f88 = #"hash_56bcb3a8b0feb0ac";
-            var_bfe15d00 = #"hash_4b8b51645e23b3d3";
+            var_bfe15d00 = #"vox_stone_drink_ghost_react_plr_10_0";
             break;
         case 12:
             var_5e246f88 = #"hash_1da4031734c7836f";
-            var_bfe15d00 = #"hash_5cb53f6467d09e7d";
+            var_bfe15d00 = #"vox_stone_drink_ghost_react_plr_12_0";
             break;
         case 11:
             var_5e246f88 = #"hash_65f76254230c2099";
-            var_bfe15d00 = #"hash_52da086461e4f9c8";
+            var_bfe15d00 = #"vox_stone_drink_ghost_react_plr_11_0";
             break;
         case 9:
             var_5e246f88 = #"hash_5ddb037cae2d16db";
-            var_bfe15d00 = #"hash_472fcbf532d22583";
+            var_bfe15d00 = #"vox_stone_drink_ghost_react_plr_9_0";
             break;
         default:
             /#
@@ -1064,7 +1064,7 @@ function function_3c1f242b()
             
             if ( isdefined( mdl_drop ) )
             {
-                playsoundatposition( #"hash_6b3b011b2d22c586", mdl_drop.origin );
+                playsoundatposition( #"zmb_gold_watch_pickup", mdl_drop.origin );
             }
             
             e_player thread zm_audio::create_and_play_dialog( #"component_pickup", #"generic" );

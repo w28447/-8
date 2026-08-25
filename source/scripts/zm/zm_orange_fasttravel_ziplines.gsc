@@ -142,12 +142,12 @@ function function_13febd4b( e_holder, w_item )
             level.var_1537d233++;
             level flag::set( #"hash_7d230fa8f283c105" );
             level zm_ui_inventory::function_7df6bb60( "zm_orange_zipquest_crank_1", 1 );
-            self playsound( #"hash_3ec95ad193e1c377" );
+            self playsound( #"evt_crank_pickup" );
             break;
         case #"zitem_orange_zipline_crank_part_2":
             level.var_1537d233++;
             level zm_ui_inventory::function_7df6bb60( "zm_orange_zipquest_crank_2", 1 );
-            self playsound( #"hash_3ec95ad193e1c377" );
+            self playsound( #"evt_crank_pickup" );
             break;
     }
 }
@@ -219,7 +219,7 @@ function function_2713a96a()
         if ( level.var_1537d233 > 0 )
         {
             self.e_crank show();
-            playsoundatposition( #"hash_264544adc5386596", self.origin );
+            playsoundatposition( #"evt_crank_place", self.origin );
             
             if ( level flag::get( #"hash_7d230fa8f283c105" ) )
             {
@@ -678,7 +678,7 @@ function function_5dbd6a40( s_zipline_use )
     var_1737c0cf = self thread gestures::function_56e00fbf( "gestable_zipline" );
     self thread function_a949ddac();
     self playsound( #"evt_zipline_start" );
-    self.var_b20b0960 playloopsound( #"hash_19ebbf7f8bd1d5a5" );
+    self.var_b20b0960 playloopsound( #"evt_zipline_lp" );
     self clientfield::set_to_player( "blur_post_fx", 1 );
     self.var_b20b0960 waittill( #"reached_end_node" );
     self stoprumble( #"buzz_high" );
@@ -700,7 +700,7 @@ function function_5dbd6a40( s_zipline_use )
     util::wait_network_frame();
     m_player_fake delete();
     self clientfield::set_to_player( "hide_player_legs", 0 );
-    self playsound( #"hash_4a546c35bc290781" );
+    self playsound( #"evt_zipline_stop" );
     
     if ( isdefined( self.var_b20b0960 ) )
     {

@@ -545,7 +545,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_14d53580e65022a4",
+                            "camoMaterial": "#mc/mtl_t8_camo_topology_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -558,7 +558,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_14d53580e65022a4",
+                            "camoMaterial": "#mc/mtl_t8_camo_topology_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -571,65 +571,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_14d53580e65022a4",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 3,
-                            "scaleY": 3,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "materials": [
-                {
-                    "baseMaterials": [
-                        {
-                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
-                        },
-                        {
-                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
-                        },
-                        {
-                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
-                        }
-                    ],
-                    "camoMaterialChannels": [
-                        {
-                            "camoMaterial": "#hash_14d53380e6501f3e",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 3,
-                            "scaleY": 3,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        },
-                        {
-                            "camoMaterial": "#hash_14d53380e6501f3e",
-                            "translationX": 0,
-                            "translationY": 0,
-                            "scaleX": 3,
-                            "scaleY": 3,
-                            "rotation": 0,
-                            "normalBlend": 1,
-                            "glossBlend": 1,
-                            "detailHeight": 0,
-                            "detailScale": "(0, 0)",
-                            "albedoTint": 0
-                        },
-                        {
-                            "camoMaterial": "#hash_14d53380e6501f3e",
+                            "camoMaterial": "#mc/mtl_t8_camo_topology_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -661,7 +603,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_14d53480e65020f1",
+                            "camoMaterial": "#mc/mtl_t8_camo_topology_04",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -674,7 +616,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_14d53480e65020f1",
+                            "camoMaterial": "#mc/mtl_t8_camo_topology_04",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -687,7 +629,65 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_14d53480e65020f1",
+                            "camoMaterial": "#mc/mtl_t8_camo_topology_04",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 3,
+                            "scaleY": 3,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "materials": [
+                {
+                    "baseMaterials": [
+                        {
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
+                        },
+                        {
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
+                        },
+                        {
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
+                        }
+                    ],
+                    "camoMaterialChannels": [
+                        {
+                            "camoMaterial": "#mc/mtl_t8_camo_topology_05",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 3,
+                            "scaleY": 3,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        },
+                        {
+                            "camoMaterial": "#mc/mtl_t8_camo_topology_05",
+                            "translationX": 0,
+                            "translationY": 0,
+                            "scaleX": 3,
+                            "scaleY": 3,
+                            "rotation": 0,
+                            "normalBlend": 1,
+                            "glossBlend": 1,
+                            "detailHeight": 0,
+                            "detailScale": "(0, 0)",
+                            "albedoTint": 0
+                        },
+                        {
+                            "camoMaterial": "#mc/mtl_t8_camo_topology_05",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -717,7 +717,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -791,7 +791,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -865,7 +865,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -1279,7 +1279,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_330d25614df2ba51",
+                            "camoMaterial": "#mc/mtl_t8_camo_w_shatter_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 4.5,
@@ -1292,7 +1292,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_330d25614df2ba51",
+                            "camoMaterial": "#mc/mtl_t8_camo_w_shatter_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 4.5,
@@ -1305,7 +1305,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_330d25614df2ba51",
+                            "camoMaterial": "#mc/mtl_t8_camo_w_shatter_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 4.5,
@@ -2033,7 +2033,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_3dfe5bc9f326309f",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_10",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -2046,7 +2046,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_53540c3ac54e795b",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_10_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -2059,7 +2059,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_53540c3ac54e795b",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_10_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -2091,7 +2091,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_4bd0215e4cabc686",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_10_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -2104,7 +2104,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_53540c3ac54e795b",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_10_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -2117,7 +2117,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_53540c3ac54e795b",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_10_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -2149,7 +2149,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_4bd0225e4cabc839",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_10_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -2162,7 +2162,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_53540c3ac54e795b",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_10_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -2175,7 +2175,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_53540c3ac54e795b",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_10_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -2207,7 +2207,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_3dfad4c9f3231563",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -2220,7 +2220,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2a281534360509f7",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_03_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -2233,7 +2233,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2a281534360509f7",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_03_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -2265,7 +2265,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_2ee0591f501a745a",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_03_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -2278,7 +2278,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2c072f29a22fa6e2",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_03_02_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -2291,7 +2291,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2c072f29a22fa6e2",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_03_02_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -2323,7 +2323,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_2ee05a1f501a760d",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_03_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -2336,7 +2336,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_314e55593fb90b7d",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_03_03_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -2349,7 +2349,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_314e55593fb90b7d",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_03_03_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -2628,7 +2628,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_rocks"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -2639,7 +2639,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_4e933fa23ee5fb6a",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -2652,7 +2652,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933fa23ee5fb6a",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -2665,7 +2665,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933fa23ee5fb6a",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -2678,7 +2678,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933fa23ee5fb6a",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -2743,7 +2743,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -2856,12 +2856,12 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_742c605b18558bd3",
+                            "camoMaterial": "#mc/mtl_t8_camo_w_benjamins",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -2874,7 +2874,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_742c605b18558bd3",
+                            "camoMaterial": "#mc/mtl_t8_camo_w_benjamins",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -2887,7 +2887,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_742c605b18558bd3",
+                            "camoMaterial": "#mc/mtl_t8_camo_w_benjamins",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -2900,7 +2900,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_742c605b18558bd3",
+                            "camoMaterial": "#mc/mtl_t8_camo_w_benjamins",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -3006,7 +3006,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_3dfaddc9f32324ae",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_08",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 10,
@@ -3019,7 +3019,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_3dfaddc9f32324ae",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_08",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 10,
@@ -3032,7 +3032,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_3dfaddc9f32324ae",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_08",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 10,
@@ -3255,7 +3255,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -3345,7 +3345,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -3435,7 +3435,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -3525,7 +3525,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -3615,7 +3615,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -3705,7 +3705,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -3795,7 +3795,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -3885,7 +3885,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -3975,7 +3975,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -4065,7 +4065,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -4155,7 +4155,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -4239,7 +4239,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -4329,7 +4329,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -4419,7 +4419,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -4509,7 +4509,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -4605,7 +4605,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -4686,7 +4686,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -4723,7 +4723,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2945abae7854f99c",
+                            "camoMaterial": "#mc/mtl_t8_camo_partyrock_redux",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -4736,7 +4736,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2945abae7854f99c",
+                            "camoMaterial": "#mc/mtl_t8_camo_partyrock_redux",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -4760,7 +4760,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -4797,7 +4797,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2422b0831bb5633b",
+                            "camoMaterial": "#mc/mtl_t8_camo_partyrock_redux_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -4810,7 +4810,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2422b0831bb5633b",
+                            "camoMaterial": "#mc/mtl_t8_camo_partyrock_redux_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -4834,7 +4834,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -4871,7 +4871,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2422af831bb56188",
+                            "camoMaterial": "#mc/mtl_t8_camo_partyrock_redux_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -4884,7 +4884,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2422af831bb56188",
+                            "camoMaterial": "#mc/mtl_t8_camo_partyrock_redux_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -4911,7 +4911,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -5001,7 +5001,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -5505,7 +5505,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_7c5478e367c98468",
+                            "camoMaterial": "#mc/mtl_t8_dlc3_blowfish",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 8,
@@ -5518,7 +5518,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_7c5478e367c98468",
+                            "camoMaterial": "#mc/mtl_t8_dlc3_blowfish",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 8,
@@ -5531,7 +5531,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_7c5478e367c98468",
+                            "camoMaterial": "#mc/mtl_t8_dlc3_blowfish",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 8,
@@ -5564,7 +5564,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -5847,7 +5847,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -5931,7 +5931,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
@@ -6008,7 +6008,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -6085,7 +6085,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -6172,7 +6172,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -6246,7 +6246,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -6323,7 +6323,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -6410,7 +6410,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -6484,7 +6484,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -6623,7 +6623,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_4d23027a22a356be",
+                            "camoMaterial": "#mc/mtl_t8_camo_dlc3_bacon",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 7,
@@ -6636,7 +6636,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4d23027a22a356be",
+                            "camoMaterial": "#mc/mtl_t8_camo_dlc3_bacon",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 7,
@@ -6649,7 +6649,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_3cb4afa581f5456e",
+                            "camoMaterial": "#mc/mtl_t8_camo_dlc3_bacon_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 7,
@@ -6679,7 +6679,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -6753,7 +6753,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -7152,7 +7152,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -7390,7 +7390,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -7538,7 +7538,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -8147,7 +8147,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_2e727cc2466349f3",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -8160,7 +8160,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2e727cc2466349f3",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -8173,7 +8173,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2e727cc2466349f3",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -8186,7 +8186,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2e727cc2466349f3",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -8221,7 +8221,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_2e727dc246634ba6",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -8234,7 +8234,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2e727dc246634ba6",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -8247,7 +8247,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2e727dc246634ba6",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -8260,7 +8260,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2e727dc246634ba6",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -8295,7 +8295,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_2e727ec246634d59",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -8308,7 +8308,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2e727ec246634d59",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -8321,7 +8321,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2e727ec246634d59",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -8334,7 +8334,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2e727ec246634d59",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -8369,7 +8369,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_2e727fc246634f0c",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_04",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -8382,7 +8382,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2e727fc246634f0c",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_04",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -8395,7 +8395,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2e727fc246634f0c",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_04",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -8408,7 +8408,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2e727fc246634f0c",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_04",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -8443,7 +8443,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_2e7280c2466350bf",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_05",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -8456,7 +8456,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2e7280c2466350bf",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_05",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -8469,7 +8469,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2e7280c2466350bf",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_05",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -8482,7 +8482,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2e7280c2466350bf",
+                            "camoMaterial": "#mc/mtl_t8_camo_zod_pap_05",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -9465,7 +9465,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -9549,7 +9549,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -9644,7 +9644,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_2814b5a875282100",
+                            "camoMaterial": "#mc/mtl_t8_camo_headshot_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -9657,7 +9657,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2814b5a875282100",
+                            "camoMaterial": "#mc/mtl_t8_camo_headshot_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -9670,7 +9670,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2814b5a875282100",
+                            "camoMaterial": "#mc/mtl_t8_camo_headshot_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -9761,7 +9761,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -9851,7 +9851,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -9941,7 +9941,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -10025,7 +10025,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -10036,7 +10036,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_5c0b477b299c0403",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_01",
                             "translationX": 0.94,
                             "translationY": 1,
                             "scaleX": 3,
@@ -10049,7 +10049,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_5c0b477b299c0403",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_01",
                             "translationX": 0.94,
                             "translationY": 1,
                             "scaleX": 3,
@@ -10062,7 +10062,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_5c0b477b299c0403",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_01",
                             "translationX": 0.94,
                             "translationY": 1,
                             "scaleX": 3,
@@ -10075,7 +10075,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_6a4c7246cc02464b",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -10088,7 +10088,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_6a4c7246cc02464b",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -10124,7 +10124,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -10214,7 +10214,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -10304,7 +10304,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -10394,7 +10394,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -10484,7 +10484,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -10577,7 +10577,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -10667,7 +10667,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -10757,7 +10757,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -10841,7 +10841,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -10931,7 +10931,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -11026,7 +11026,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_2814b5a875282100",
+                            "camoMaterial": "#mc/mtl_t8_camo_headshot_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -11039,7 +11039,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2814b5a875282100",
+                            "camoMaterial": "#mc/mtl_t8_camo_headshot_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -11052,7 +11052,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2814b5a875282100",
+                            "camoMaterial": "#mc/mtl_t8_camo_headshot_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -11085,7 +11085,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11175,7 +11175,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11265,7 +11265,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11355,7 +11355,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11445,7 +11445,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11541,7 +11541,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11663,7 +11663,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11785,7 +11785,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11907,7 +11907,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12029,7 +12029,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12217,7 +12217,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_rocks"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -12228,7 +12228,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_4e933ea23ee5f9b7",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -12241,7 +12241,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933ea23ee5f9b7",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -12254,7 +12254,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933ea23ee5f9b7",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -12267,7 +12267,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933ea23ee5f9b7",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -12323,7 +12323,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_rocks"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -12334,7 +12334,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_4e933da23ee5f804",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -12347,7 +12347,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933da23ee5f804",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -12360,7 +12360,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933da23ee5f804",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -12373,7 +12373,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933da23ee5f804",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -12432,7 +12432,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12516,7 +12516,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -12527,7 +12527,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_5c0b487b299c05b6",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_02",
                             "translationX": 0.94,
                             "translationY": 1,
                             "scaleX": 3,
@@ -12540,7 +12540,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_5c0b487b299c05b6",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_02",
                             "translationX": 0.94,
                             "translationY": 1,
                             "scaleX": 3,
@@ -12553,7 +12553,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_5c0b487b299c05b6",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_02",
                             "translationX": 0.94,
                             "translationY": 1,
                             "scaleX": 3,
@@ -12566,7 +12566,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_6a4c7246cc02464b",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -12579,7 +12579,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_6a4c7246cc02464b",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -12630,7 +12630,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12720,7 +12720,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12810,7 +12810,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12900,7 +12900,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -13035,7 +13035,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -13125,7 +13125,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -13362,7 +13362,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_rocks"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -13373,7 +13373,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_4e933fa23ee5fb6a",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -13386,7 +13386,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933fa23ee5fb6a",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -13399,7 +13399,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933fa23ee5fb6a",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -13412,7 +13412,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933fa23ee5fb6a",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -13468,7 +13468,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_rocks"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -13479,7 +13479,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_4e933ea23ee5f9b7",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -13492,7 +13492,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933ea23ee5f9b7",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -13505,7 +13505,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933ea23ee5f9b7",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -13518,7 +13518,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933ea23ee5f9b7",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -13574,7 +13574,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_rocks"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -13585,7 +13585,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_4e933da23ee5f804",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -13598,7 +13598,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933da23ee5f804",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -13611,7 +13611,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933da23ee5f804",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -13624,7 +13624,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933da23ee5f804",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -13689,7 +13689,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -13811,7 +13811,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -13933,7 +13933,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -14055,7 +14055,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -14177,7 +14177,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -14299,7 +14299,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -14415,7 +14415,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -14499,7 +14499,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -14594,7 +14594,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_2814b5a875282100",
+                            "camoMaterial": "#mc/mtl_t8_camo_headshot_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -14607,7 +14607,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2814b5a875282100",
+                            "camoMaterial": "#mc/mtl_t8_camo_headshot_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -14620,7 +14620,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2814b5a875282100",
+                            "camoMaterial": "#mc/mtl_t8_camo_headshot_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -14711,7 +14711,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -14801,7 +14801,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -14891,7 +14891,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -14975,7 +14975,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -14986,7 +14986,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_5c0b477b299c0403",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_01",
                             "translationX": 0.94,
                             "translationY": 1,
                             "scaleX": 3,
@@ -14999,7 +14999,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_5c0b477b299c0403",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_01",
                             "translationX": 0.94,
                             "translationY": 1,
                             "scaleX": 3,
@@ -15012,7 +15012,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_5c0b477b299c0403",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_01",
                             "translationX": 0.94,
                             "translationY": 1,
                             "scaleX": 3,
@@ -15025,7 +15025,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_6a4c7246cc02464b",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -15038,7 +15038,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_6a4c7246cc02464b",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -15074,7 +15074,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -15164,7 +15164,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -15254,7 +15254,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -15344,7 +15344,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -15434,7 +15434,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -15527,7 +15527,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -15617,7 +15617,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -15707,7 +15707,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -15791,7 +15791,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -15881,7 +15881,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -15976,7 +15976,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_2814b5a875282100",
+                            "camoMaterial": "#mc/mtl_t8_camo_headshot_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -15989,7 +15989,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2814b5a875282100",
+                            "camoMaterial": "#mc/mtl_t8_camo_headshot_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -16002,7 +16002,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_2814b5a875282100",
+                            "camoMaterial": "#mc/mtl_t8_camo_headshot_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -16035,7 +16035,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -16125,7 +16125,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -16215,7 +16215,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -16305,7 +16305,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -16395,7 +16395,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -16485,7 +16485,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -16569,7 +16569,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_metal"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -16580,7 +16580,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_5c0b487b299c05b6",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_02",
                             "translationX": 0.94,
                             "translationY": 1,
                             "scaleX": 3,
@@ -16593,7 +16593,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_5c0b487b299c05b6",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_02",
                             "translationX": 0.94,
                             "translationY": 1,
                             "scaleX": 3,
@@ -16606,7 +16606,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_5c0b487b299c05b6",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_02",
                             "translationX": 0.94,
                             "translationY": 1,
                             "scaleX": 3,
@@ -16619,7 +16619,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_6a4c7246cc02464b",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -16632,7 +16632,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_6a4c7246cc02464b",
+                            "camoMaterial": "#mc/mtl_t8_camo_dyn_vanguard_samurai_alt",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -16683,7 +16683,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -16773,7 +16773,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -16863,7 +16863,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -16953,7 +16953,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -17043,7 +17043,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -17133,7 +17133,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -17513,7 +17513,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -17602,7 +17602,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_76df44912ea21134",
+                            "camoMaterial": "#mc/mtl_t8_camo_mathworks",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -17615,7 +17615,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_76df44912ea21134",
+                            "camoMaterial": "#mc/mtl_t8_camo_mathworks",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -17628,7 +17628,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_76df44912ea21134",
+                            "camoMaterial": "#mc/mtl_t8_camo_mathworks",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -17660,7 +17660,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_471e4bc257451520",
+                            "camoMaterial": "#mc/mtl_t8_camo_mathworks_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -17673,7 +17673,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_471e4bc257451520",
+                            "camoMaterial": "#mc/mtl_t8_camo_mathworks_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -17686,7 +17686,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_471e4bc257451520",
+                            "camoMaterial": "#mc/mtl_t8_camo_mathworks_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -17718,7 +17718,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_471e52c257452105",
+                            "camoMaterial": "#mc/mtl_t8_camo_mathworks_04",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -17731,7 +17731,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_471e52c257452105",
+                            "camoMaterial": "#mc/mtl_t8_camo_mathworks_04",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -17744,7 +17744,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_471e52c257452105",
+                            "camoMaterial": "#mc/mtl_t8_camo_mathworks_04",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -17776,7 +17776,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_471e4fc257451bec",
+                            "camoMaterial": "#mc/mtl_t8_camo_mathworks_07",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -17789,7 +17789,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_471e4fc257451bec",
+                            "camoMaterial": "#mc/mtl_t8_camo_mathworks_07",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -17802,7 +17802,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_471e4fc257451bec",
+                            "camoMaterial": "#mc/mtl_t8_camo_mathworks_07",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -17892,7 +17892,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_76df44912ea21134",
+                            "camoMaterial": "#mc/mtl_t8_camo_mathworks",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -17905,7 +17905,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_76df44912ea21134",
+                            "camoMaterial": "#mc/mtl_t8_camo_mathworks",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 3,
@@ -17918,7 +17918,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_76df44912ea21134",
+                            "camoMaterial": "#mc/mtl_t8_camo_mathworks",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -17951,7 +17951,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -18099,7 +18099,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -18189,7 +18189,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -18279,7 +18279,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -18369,7 +18369,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -18459,7 +18459,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -18549,7 +18549,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -18639,7 +18639,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -18729,7 +18729,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -18819,7 +18819,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -18909,7 +18909,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -18999,7 +18999,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -19086,7 +19086,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -19160,7 +19160,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -19234,7 +19234,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -19308,7 +19308,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -19385,7 +19385,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -19822,7 +19822,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_4545f131861064f7",
+                            "camoMaterial": "#mc/mtl_t8_camo_w_sequin_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -19835,7 +19835,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4545f3318610685d",
+                            "camoMaterial": "#mc/mtl_t8_camo_w_sequin_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -19848,7 +19848,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4545f3318610685d",
+                            "camoMaterial": "#mc/mtl_t8_camo_w_sequin_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -19883,7 +19883,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_3dfad3c9f32313b0",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -19896,7 +19896,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_3dfad3c9f32313b0",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -19909,7 +19909,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_3dfad3c9f32313b0",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -19922,7 +19922,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_3dfad3c9f32313b0",
+                            "camoMaterial": "#mc/mtl_t8_camo_geometric_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -20066,7 +20066,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_rocks"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth"
@@ -20077,7 +20077,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_4e933fa23ee5fb6a",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -20090,7 +20090,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933fa23ee5fb6a",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -20103,7 +20103,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933fa23ee5fb6a",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 5,
@@ -20116,7 +20116,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4e933fa23ee5fb6a",
+                            "camoMaterial": "#mc/mtl_t8_camo_diamond_01",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -20181,7 +20181,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -20303,7 +20303,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -20449,7 +20449,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -20655,7 +20655,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -20877,12 +20877,12 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_1db4bd064c57d448",
+                            "camoMaterial": "#mc/mtl_t8_camo_green_gradient",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -20895,7 +20895,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_1db4bd064c57d448",
+                            "camoMaterial": "#mc/mtl_t8_camo_green_gradient",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -20908,7 +20908,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_1db4bd064c57d448",
+                            "camoMaterial": "#mc/mtl_t8_camo_green_gradient",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -20921,7 +20921,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_1db4bd064c57d448",
+                            "camoMaterial": "#mc/mtl_t8_camo_green_gradient",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 1,
@@ -21160,7 +21160,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -21249,7 +21249,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_1146773a87ba8649",
+                            "camoMaterial": "#mc/mtl_t8_camo_circle_slice",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 6,
@@ -21262,7 +21262,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_1146773a87ba8649",
+                            "camoMaterial": "#mc/mtl_t8_camo_circle_slice",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 6,
@@ -21275,7 +21275,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_1146773a87ba8649",
+                            "camoMaterial": "#mc/mtl_t8_camo_circle_slice",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 10,
@@ -21308,7 +21308,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -21572,7 +21572,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -21933,7 +21933,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -22377,7 +22377,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -22464,7 +22464,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -22541,7 +22541,7 @@
                             "material": "#mc/mtl_wpn_t8_loot_melee_amulet_cloth_transparent"
                         },
                         {
-                            "material": "#hash_116a2d56c92e30b5"
+                            "material": "#mc/mtl_wpn_t8_loot_melee_amulet_nebula"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -22633,7 +22633,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_25a860fce127fa45",
+                            "camoMaterial": "#mc/mtl_t8_camo_dlc3_venomous",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 8,
@@ -22646,7 +22646,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_25a860fce127fa45",
+                            "camoMaterial": "#mc/mtl_t8_camo_dlc3_venomous",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 8,
@@ -22659,7 +22659,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_25a860fce127fa45",
+                            "camoMaterial": "#mc/mtl_t8_camo_dlc3_venomous",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 8,
@@ -22672,7 +22672,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_25a860fce127fa45",
+                            "camoMaterial": "#mc/mtl_t8_camo_dlc3_venomous",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 8,
@@ -22778,7 +22778,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_47095a2b104d49ec",
+                            "camoMaterial": "#mc/mtl_t8_camo_circle_slice_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 6,
@@ -22791,7 +22791,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_47095a2b104d49ec",
+                            "camoMaterial": "#mc/mtl_t8_camo_circle_slice_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 6,
@@ -22804,7 +22804,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_47095a2b104d49ec",
+                            "camoMaterial": "#mc/mtl_t8_camo_circle_slice_02",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 10,
@@ -22836,7 +22836,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_47095b2b104d4b9f",
+                            "camoMaterial": "#mc/mtl_t8_camo_circle_slice_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 6,
@@ -22849,7 +22849,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_47095b2b104d4b9f",
+                            "camoMaterial": "#mc/mtl_t8_camo_circle_slice_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 6,
@@ -22862,7 +22862,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_47095b2b104d4b9f",
+                            "camoMaterial": "#mc/mtl_t8_camo_circle_slice_03",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 10,
@@ -22894,7 +22894,7 @@
                     ],
                     "camoMaterialChannels": [
                         {
-                            "camoMaterial": "#hash_4709582b104d4686",
+                            "camoMaterial": "#mc/mtl_t8_camo_circle_slice_04",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 6,
@@ -22907,7 +22907,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4709582b104d4686",
+                            "camoMaterial": "#mc/mtl_t8_camo_circle_slice_04",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 6,
@@ -22920,7 +22920,7 @@
                             "albedoTint": 0
                         },
                         {
-                            "camoMaterial": "#hash_4709582b104d4686",
+                            "camoMaterial": "#mc/mtl_t8_camo_circle_slice_04",
                             "translationX": 0,
                             "translationY": 0,
                             "scaleX": 10,

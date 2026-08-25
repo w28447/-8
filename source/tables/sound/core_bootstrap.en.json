@@ -6759,7 +6759,7 @@
             "aliases": [
                 {
                     "name": "#bik_zm_blood_load_sfx",
-                    "secondaryname": "#hash_454f074084df0098",
+                    "secondaryname": "#bik_zm_blood_load_sfx_lsrs",
                     "assetId": "#hash_40fd5b91256b9b21",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -6802,13 +6802,13 @@
         {
             "value": 153,
             "next": 65535,
-            "name": "#hash_454f074084df0098",
+            "name": "#bik_zm_blood_load_sfx_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_454f074084df0098",
+                    "name": "#bik_zm_blood_load_sfx_lsrs",
                     "assetId": "#hash_284c6b844893d59f",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -6858,7 +6858,7 @@
             "aliases": [
                 {
                     "name": "#bik_zm_mansion_load",
-                    "secondaryname": "#hash_1e9960dab8c731ed",
+                    "secondaryname": "#bik_zm_mansion_load_lsrs",
                     "assetId": "#hash_23174fb541f604d3",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -6951,13 +6951,13 @@
         {
             "value": 114,
             "next": 65535,
-            "name": "#hash_1e9960dab8c731ed",
+            "name": "#bik_zm_mansion_load_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1e9960dab8c731ed",
+                    "name": "#bik_zm_mansion_load_lsrs",
                     "secondaryname": "#bik_zm_mansion_load_c",
                     "assetId": "#hash_776b8fa378a2e9a9",
                     "assetFileNameSustain": "#core_bootstrap.en",
@@ -7109,7 +7109,7 @@
             "aliases": [
                 {
                     "name": "#bik_zm_orange_outro",
-                    "secondaryname": "#hash_794bf11932b7c926",
+                    "secondaryname": "#bik_zm_orange_outro_sfx",
                     "assetId": "#hash_5499c7c3e0ea9def",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -7153,13 +7153,13 @@
         {
             "value": 80,
             "next": 133,
-            "name": "#hash_794bf11932b7c926",
+            "name": "#bik_zm_orange_outro_sfx",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_794bf11932b7c926",
+                    "name": "#bik_zm_orange_outro_sfx",
                     "assetId": "#hash_63c161c19a3009b5",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -7210,7 +7210,7 @@
             "aliases": [
                 {
                     "name": "#bik_zm_red_loadingmovie",
-                    "secondaryname": "#hash_30f0779a0c14e1be",
+                    "secondaryname": "#bik_zm_red_loadingmovie_c",
                     "assetId": "#hash_3c9f90ea011692ff",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -7254,14 +7254,14 @@
         {
             "value": 109,
             "next": 65535,
-            "name": "#hash_30f0779a0c14e1be",
+            "name": "#bik_zm_red_loadingmovie_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_30f0779a0c14e1be",
-                    "secondaryname": "#hash_6bc03e1805ab3ba3",
+                    "name": "#bik_zm_red_loadingmovie_c",
+                    "secondaryname": "#bik_zm_red_loadingmovie_lsrs",
                     "assetId": "#hash_46a1ae3e266255c",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -7304,14 +7304,14 @@
         {
             "value": 116,
             "next": 65535,
-            "name": "#hash_4bf9a48c1ec2f5ba",
+            "name": "#bik_zm_red_loadingmovie_lfe",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4bf9a48c1ec2f5ba",
-                    "secondaryname": "#hash_2b6bb98c9cd218fa",
+                    "name": "#bik_zm_red_loadingmovie_lfe",
+                    "secondaryname": "#bik_zm_red_loadingmovie_vox",
                     "assetId": "#hash_722bd72622b801f0",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -7354,14 +7354,14 @@
         {
             "value": 64,
             "next": 65535,
-            "name": "#hash_6bc03e1805ab3ba3",
+            "name": "#bik_zm_red_loadingmovie_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6bc03e1805ab3ba3",
-                    "secondaryname": "#hash_4bf9a48c1ec2f5ba",
+                    "name": "#bik_zm_red_loadingmovie_lsrs",
+                    "secondaryname": "#bik_zm_red_loadingmovie_lfe",
                     "assetId": "#hash_5474936552371eed",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -7404,13 +7404,13 @@
         {
             "value": 8,
             "next": 144,
-            "name": "#hash_2b6bb98c9cd218fa",
+            "name": "#bik_zm_red_loadingmovie_vox",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2b6bb98c9cd218fa",
+                    "name": "#bik_zm_red_loadingmovie_vox",
                     "secondaryname": "#hash_44ad4c7e4cfde07e",
                     "assetId": "#hash_1d1b2b826b0408aa",
                     "assetFileNameSustain": "#core_bootstrap.en",
@@ -7452,7 +7452,7 @@
                     "unk178": "#hash_406120808"
                 },
                 {
-                    "name": "#hash_2b6bb98c9cd218fa",
+                    "name": "#bik_zm_red_loadingmovie_vox",
                     "secondaryname": "#hash_44ad4c7e4cfde07e",
                     "assetId": "#hash_21c96ade80eba230",
                     "assetFileNameSustain": "#core_bootstrap.en",
@@ -7650,7 +7650,7 @@
             "aliases": [
                 {
                     "name": "#bik_zm_towers_load_c",
-                    "secondaryname": "#hash_5ab297fcee783986",
+                    "secondaryname": "#bik_zm_towers_load_lsrs",
                     "assetId": "#hash_4de6b6de7e129cee",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -7693,13 +7693,13 @@
         {
             "value": 34,
             "next": 65535,
-            "name": "#hash_5ab297fcee783986",
+            "name": "#bik_zm_towers_load_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5ab297fcee783986",
+                    "name": "#bik_zm_towers_load_lsrs",
                     "assetId": "#hash_489ff0e9a1f7be3",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -7850,7 +7850,7 @@
             "aliases": [
                 {
                     "name": "#bik_zm_voyage_load_c",
-                    "secondaryname": "#hash_604a7c3e6930d2d",
+                    "secondaryname": "#bik_zm_voyage_load_lsrs",
                     "assetId": "#hash_7678b0798662515a",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -7893,13 +7893,13 @@
         {
             "value": 25,
             "next": 65535,
-            "name": "#hash_604a7c3e6930d2d",
+            "name": "#bik_zm_voyage_load_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_604a7c3e6930d2d",
+                    "name": "#bik_zm_voyage_load_lsrs",
                     "assetId": "#hash_74e9571dc451f057",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -7949,7 +7949,7 @@
             "aliases": [
                 {
                     "name": "#bik_zm_white_loadingmovie",
-                    "secondaryname": "#hash_4ef7fde25e9b8718",
+                    "secondaryname": "#bik_zm_white_loadingmovie_c",
                     "assetId": "#hash_7896cd7eb38ab2c4",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -7993,13 +7993,13 @@
         {
             "value": 19,
             "next": 148,
-            "name": "#hash_4ef7fde25e9b8718",
+            "name": "#bik_zm_white_loadingmovie_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4ef7fde25e9b8718",
+                    "name": "#bik_zm_white_loadingmovie_c",
                     "secondaryname": "#hash_1f2a2c5c6c4360ef",
                     "assetId": "#hash_7f6b87a3ba4d6be1",
                     "assetFileNameSustain": "#core_bootstrap.en",
@@ -8099,7 +8099,7 @@
             "aliases": [
                 {
                     "name": "#bik_zm_white_outro",
-                    "secondaryname": "#hash_5666a1b24162b943",
+                    "secondaryname": "#bik_zm_white_outro_c",
                     "assetId": "#hash_5ec15d9bcbd7736d",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -8143,14 +8143,14 @@
         {
             "value": 9,
             "next": 65535,
-            "name": "#hash_5666a1b24162b943",
+            "name": "#bik_zm_white_outro_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5666a1b24162b943",
-                    "secondaryname": "#hash_13515a4c280b7b60",
+                    "name": "#bik_zm_white_outro_c",
+                    "secondaryname": "#bik_zm_white_outro_sur",
                     "assetId": "#hash_1f9d5487b592d56b",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -8191,8 +8191,8 @@
                     "unk178": "#hash_406120808"
                 },
                 {
-                    "name": "#hash_5666a1b24162b943",
-                    "secondaryname": "#hash_13515a4c280b7b60",
+                    "name": "#bik_zm_white_outro_c",
+                    "secondaryname": "#bik_zm_white_outro_sur",
                     "assetId": "#hash_155af1bac170a95d",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -8237,13 +8237,13 @@
         {
             "value": 18,
             "next": 65535,
-            "name": "#hash_13515a4c280b7b60",
+            "name": "#bik_zm_white_outro_sur",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_13515a4c280b7b60",
+                    "name": "#bik_zm_white_outro_sur",
                     "assetId": "#hash_54ea6323810e6902",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",

@@ -1,7 +1,7 @@
 {
     "name": "#hash_3b9d1f88966a880d",
-    "model": "#hash_47ff8b924f31d786",
-    "unk20": "#hash_297e416468cdc1a6",
+    "model": "#veh_t8_civ_forklift_modular_manned_forklift_olive_drab_dest",
+    "unk20": "#veh_t8_civ_forklift_modular_manned_forklift_dead_olive_drab",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_animate"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_animate"
                 },
                 {

@@ -186,8 +186,8 @@ function function_94cd396e( powerup_override, powerup_team, powerup_location, po
     {
         if ( ( str_powerup == "bonus_points_player" || str_powerup == "bonus_points_player_shared" ) && zm_utility::is_standard() )
         {
-            self playsound( #"hash_1229e9d60b3181ef" );
-            self playloopsound( #"hash_46b9bf1ae523021c" );
+            self playsound( #"zmb_pts_powerup_spawn" );
+            self playloopsound( #"zmb_pts_powerup_lp" );
         }
         else
         {

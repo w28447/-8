@@ -34,7 +34,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_1cade98884f38ef1",
+                            "anim": "anim#p8_fxanim_mp_austria_finger_trap_button_in_idle_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -63,7 +63,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_65803a2a7ce95cc7",
+                            "anim": "anim#p8_fxanim_mp_austria_finger_trap_button_out_anim",
                             "entrytype": "anim"
                         }
                     ],

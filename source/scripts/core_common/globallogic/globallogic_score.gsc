@@ -45,7 +45,7 @@ function init()
 {
     level.var_e0582de1 = [];
     registerscoreeventcallback( "playerKilled", &function_f7f7b14e );
-    level.capturedobjectivefunction = &function_eced93f5;
+    level.capturedobjectivefunction = &objectivecaptured;
 }
 
 // Namespace globallogic_score/globallogic_score
@@ -487,7 +487,7 @@ function function_7d830bc( einflictor, attacker, weapon, objectiveobj, var_1bbdd
 // Params 2, eflags: 0x4
 // Checksum 0x33390d52, Offset: 0x1610
 // Size: 0x1e4
-function private function_eced93f5( objective, timecaptured )
+function private objectivecaptured( objective, timecaptured )
 {
     if ( !isdefined( objective ) || !isdefined( timecaptured ) || !isdefined( self ) || !isdefined( self.var_f46a73a1 ) || !isdefined( self.var_60f43bac ) || !isdefined( self.var_e3d30669 ) )
     {

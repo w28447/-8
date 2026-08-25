@@ -6,7 +6,7 @@
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/make_it_rain",
-        "icon": "image#hash_1e58ea36e77f6fd5",
+        "icon": "image#ui_icon_emotes_make_it_rain",
         "isdefault": 0
     }
 }

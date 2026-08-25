@@ -134,7 +134,7 @@ function function_cb5864fc()
 // Size: 0x4c8, Type: bool
 function override_spawn( ispredictedspawn )
 {
-    self.var_7070a94c = 0;
+    self.freefall_spawn = 0;
     
     if ( infection::function_74650d7() && self infection::is_infected() )
     {
@@ -216,13 +216,13 @@ function override_spawn( ispredictedspawn )
         self.resurrect_origin = info.origin;
         self.resurrect_angles = info.angles;
         self.var_df8c6469 = info.freefall;
-        self.var_7070a94c = 1;
+        self.freefall_spawn = 1;
     }
     else
     {
         self.resurrect_origin = spawn.origin;
         self.resurrect_angles = spawn.angles;
-        self.var_7070a94c = 0;
+        self.freefall_spawn = 0;
         self function_8cef1872();
         self thread function_bb9099b9();
     }
@@ -288,7 +288,7 @@ function on_spawn_player( predictedspawn )
     
     if ( self.pers[ #"spawns" ] == 1 )
     {
-        if ( isdefined( self.var_7070a94c ) && self.var_7070a94c && !player_insertion::function_e5d4df1c() )
+        if ( isdefined( self.freefall_spawn ) && self.freefall_spawn && !player_insertion::function_e5d4df1c() )
         {
             self thread function_c263fd97();
         }

@@ -1,16 +1,16 @@
 {
     "configstringfiletype": "scriptbundle",
-    "leftstraightanim": "playeranim#hash_17b66539637f86e8",
+    "leftstraightanim": "playeranim#pb_zodiac_driver_turn_l",
     "type": "turretanims",
-    "hash_4911c37eedd0a49a:hash_6d779d90": "playeranim#hash_4911c37eedd0a49a",
-    "centerstraightanim": "playeranim#hash_a1444a76031a5e6",
+    "pb_zodiac_driver_reverse:hash_6d779d90": "playeranim#pb_zodiac_driver_reverse",
+    "centerstraightanim": "playeranim#pb_zodiac_driver_idle",
     "vmtype": "none",
-    "hash_70c68c23b29e2e8b:hash_642f6589": "playeranim#hash_70c68c23b29e2e8b",
+    "pb_zodiac_driver_reverse_right:hash_642f6589": "playeranim#pb_zodiac_driver_reverse_right",
     "name": "player_turret_zodiac_driver_anims",
     "aimpitchangleu": 90,
     "aimpitchangled": 90,
-    "hash_5b7056008aea236:hash_71b4ed58": "playeranim#hash_5b7056008aea236",
-    "rightstraightanim": "playeranim#hash_17b65339637f6852",
+    "pb_zodiac_driver_reverse_left:hash_71b4ed58": "playeranim#pb_zodiac_driver_reverse_left",
+    "rightstraightanim": "playeranim#pb_zodiac_driver_turn_r",
     "aimyawangler": 35,
     "aimyawanglel": 35
 }

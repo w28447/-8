@@ -15,7 +15,7 @@
     "attackSpotHorzOffset": 0,
     "boards": [
         {
-            "boardModel": "#hash_639617ad8b487dc3",
+            "boardModel": "#p8_fxanim_zm_pap_pedestal_mod",
             "boardAnim": "#p8_fxanim_zm_pap_pedestal_static_anim",
             "staticAnim": "#p8_fxanim_zm_pap_pedestal_static_anim",
             "repairEffect1Offset": "0 0 0",
@@ -25,7 +25,7 @@
             "numRepsToPullProBoard": 3
         },
         {
-            "boardModel": "#hash_129339f4a4da8ea2",
+            "boardModel": "#p8_fxanim_zm_pap_mod",
             "tearAnim": "#p8_fxanim_zm_base_packapunch_working_take_gun_anim",
             "boardAnim": "#o_zombie_base_packapunch_working_eject_gun",
             "pauseAndRepeatRepSound": "#hash_1",
@@ -58,7 +58,7 @@
             "numRepsToPullProBoard": 3
         },
         {
-            "boardModel": "#hash_129339f4a4da8ea2",
+            "boardModel": "#p8_fxanim_zm_pap_mod",
             "tearAnim": "#p8_fxanim_zm_pap_disassemble_anim",
             "boardAnim": "#hash_6eeafc7dbcbcde96",
             "staticAnim": "#p8_fxanim_zm_pap_static_anim",

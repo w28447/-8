@@ -30,9 +30,9 @@
     "#hash_554be9f7": false,
     "sound140": "#hash_30a9e382f8c95915",
     "sound150": "#hash_6fb55883652219bc",
-    "sound180": "#hash_6224b7e674c8a525",
-    "sound240": "#hash_631a067190b54300",
-    "sound250": "#hash_242aa17124751841",
+    "sound180": "#wpn_assault_npc_decay",
+    "sound240": "#wpn_generic_dryfire_npc",
+    "sound250": "#wpn_generic_dryfire_plr",
     "sound5e0": "#hash_21cfea621573025a",
     "tunables1": "#helicopter_gunner_turret_tertiary_tunables",
     "tracers": [

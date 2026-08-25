@@ -503,14 +503,14 @@ function function_d0815f2e()
     var_22feb79f = self gamepadusedlast() ? #"hash_3557e6f234c8594b" : #"hash_35bff554b9fd5865";
     self thread ct_utils::function_61c3d59c( var_22feb79f, undefined );
     self function_b512a9bf( 2 );
-    var_43b8f3ab = getweapon( #"hero_flamethrower" );
+    wpn_purifier = getweapon( #"hero_flamethrower" );
     
     do
     {
         waitframe( 1 );
         wpn_current = self getcurrentweapon();
     }
-    while ( wpn_current != var_43b8f3ab );
+    while ( wpn_current != wpn_purifier );
     
     self thread ct_utils::function_c2a10fc();
     function_b3977527( 1, 1, 1, 1, "bot_puf_1", 1 );
@@ -661,14 +661,14 @@ function function_179a49d1()
 {
     level endon( #"combattraining_logic_finished" );
     self endon( #"death" );
-    var_43b8f3ab = getweapon( #"hero_flamethrower" );
+    wpn_purifier = getweapon( #"hero_flamethrower" );
     
     do
     {
         waitframe( 1 );
         wpn_current = self getcurrentweapon();
     }
-    while ( wpn_current != var_43b8f3ab );
+    while ( wpn_current != wpn_purifier );
     
     level notify( #"colbounds_tut_puf_2_start_off" );
 }
@@ -807,19 +807,19 @@ function function_f5f15107()
         waitframe( 1 );
     }
     
-    var_43b8f3ab = getweapon( #"hero_flamethrower" );
+    wpn_purifier = getweapon( #"hero_flamethrower" );
     self thread function_b512a9bf( 2 );
     self allowmelee( 0 );
     
     if ( isdefined( level.var_78be0c60 ) && level.var_78be0c60 )
     {
-        self switchtoweapon( var_43b8f3ab );
-        self setweaponammoclip( var_43b8f3ab, 50 );
+        self switchtoweapon( wpn_purifier );
+        self setweaponammoclip( wpn_purifier, 50 );
     }
     
     wpn_current = self getcurrentweapon();
     
-    if ( wpn_current !== var_43b8f3ab )
+    if ( wpn_current !== wpn_purifier )
     {
         var_ba75e424 = self gamepadusedlast() ? #"hash_3557e6f234c8594b" : #"hash_35bff554b9fd5865";
         self thread ct_utils::function_61c3d59c( var_ba75e424 );
@@ -834,9 +834,9 @@ function function_f5f15107()
         wpn_current = self getcurrentweapon();
         waitframe( 1 );
     }
-    while ( wpn_current !== var_43b8f3ab );
+    while ( wpn_current !== wpn_purifier );
     
-    self setweaponammoclip( var_43b8f3ab, 50 );
+    self setweaponammoclip( wpn_purifier, 50 );
     level notify( #"hash_6822294416b67f95" );
     self thread function_6bc15e29();
     level.var_fa6ae384 = 0;
@@ -879,7 +879,7 @@ function function_6bc15e29()
     level endon( #"combattraining_logic_finished" );
     self notify( #"hash_2189212647bbe100" );
     self endoncallback( &function_5ba71388, #"death", #"hash_2189212647bbe100" );
-    var_43b8f3ab = getweapon( #"hero_flamethrower" );
+    wpn_purifier = getweapon( #"hero_flamethrower" );
     var_76968823 = getweapon( #"gadget_health_regen" );
     wpn_barehands = getweapon( #"bare_hands_ct" );
     
@@ -887,8 +887,8 @@ function function_6bc15e29()
     {
         self gadgetpowerset( 2, 99 );
         wpn_current = self getcurrentweapon();
-        n_ammo = self getweaponammoclip( var_43b8f3ab );
-        var_fa32f88a = self getweaponammofuel( var_43b8f3ab );
+        n_ammo = self getweaponammoclip( wpn_purifier );
+        n_fuel = self getweaponammofuel( wpn_purifier );
         
         if ( n_ammo == 0 || wpn_current == wpn_barehands )
         {
@@ -936,9 +936,9 @@ function function_da1637ef()
     self ct_utils::function_61d750d4( s_loc.origin, s_loc.angles );
     self thread function_b973c685( s_loc );
     waitframe( 1 );
-    var_ee63c007 = getweapon( #"smg_standard_t8" );
-    self giveweapon( var_ee63c007 );
-    self switchtoweapon( var_ee63c007, 1 );
+    wpn_smg = getweapon( #"smg_standard_t8" );
+    self giveweapon( wpn_smg );
+    self switchtoweapon( wpn_smg, 1 );
     level.a_ai_targets[ level.a_ai_targets.size ] = self;
 }
 
@@ -2427,9 +2427,9 @@ function function_2969ccb4( var_43d50d89 = 1, var_463b195d = 1 )
     level notify( #"hash_6822294416b67f95" );
     waitframe( 1 );
     level endon( #"combattraining_logic_finished", #"hash_6822294416b67f95" );
-    var_43b8f3ab = getweapon( #"hero_flamethrower" );
-    var_5b505b10 = self getweaponammoclipsize( var_43b8f3ab );
-    n_slot = self gadgetgetslot( var_43b8f3ab );
+    wpn_purifier = getweapon( #"hero_flamethrower" );
+    var_5b505b10 = self getweaponammoclipsize( wpn_purifier );
+    n_slot = self gadgetgetslot( wpn_purifier );
     
     while ( true )
     {
@@ -2440,12 +2440,12 @@ function function_2969ccb4( var_43d50d89 = 1, var_463b195d = 1 )
                 if ( isdefined( var_43d50d89 ) && var_43d50d89 )
                 {
                     self gadgetpowerset( n_slot, 100 );
-                    self setweaponammofuel( var_43b8f3ab, 100 );
+                    self setweaponammofuel( wpn_purifier, 100 );
                 }
                 
                 if ( isdefined( var_463b195d ) && var_463b195d )
                 {
-                    self setweaponammoclip( var_43b8f3ab, var_5b505b10 );
+                    self setweaponammoclip( wpn_purifier, var_5b505b10 );
                 }
             }
         }

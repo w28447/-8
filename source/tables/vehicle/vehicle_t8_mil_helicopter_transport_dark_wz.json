@@ -33,7 +33,7 @@
     "soundDef": "#hash_e1609607098dd6d",
     "compassIconMaterial": "#t8_hud_waypoints_drone_hunter_scaled_down",
     "destructibleDef": "#hash_975764ca02ee4bd",
-    "tacticalModeIcon": "#hash_679c5098faff525b",
+    "tacticalModeIcon": "#uie_ui_icon_minimap_wz_little_bird_static",
     "steerAxisName": "AXIS_LSTICK",
     "unk1608": "BUTTON_RTRIG",
     "unk1618": "BUTTON_LTRIG",

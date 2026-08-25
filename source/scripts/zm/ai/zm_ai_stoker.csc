@@ -69,7 +69,7 @@ function private crit_spot_reveal( localclientnum, oldvalue, newvalue, bnewent, 
     if ( newvalue )
     {
         self mapshaderconstant( localclientnum, 0, "scriptVector" + newvalue, 0, 1, 0, 0 );
-        self playsound( 0, #"hash_9cde96bded002d5" );
+        self playsound( 0, #"zmb_vocals_stoker_pain" );
     }
 }
 
@@ -104,7 +104,7 @@ function private stoker_fx_start( localclientnum, oldvalue, newvalue, bnewent, b
             if ( !isdefined( self.currentfx[ 3 ] ) )
             {
                 self.currentfx[ 3 ] = util::playfxontag( localclientnum, "zm_ai/fx8_stoker_dmg_weak_point", self, "j_clavicle_le" );
-                self playsound( localclientnum, #"hash_2dc7f5a5e2c5af20" );
+                self playsound( localclientnum, #"zmb_ai_stoker_damage" );
             }
             
             break;
@@ -112,7 +112,7 @@ function private stoker_fx_start( localclientnum, oldvalue, newvalue, bnewent, b
             if ( !isdefined( self.currentfx[ 4 ] ) )
             {
                 self.currentfx[ 4 ] = util::playfxontag( localclientnum, "zm_ai/fx8_stoker_dmg_weak_point", self, "j_clavicle_ri" );
-                self playsound( localclientnum, #"hash_2dc7f5a5e2c5af20" );
+                self playsound( localclientnum, #"zmb_ai_stoker_damage" );
             }
             
             break;
@@ -120,7 +120,7 @@ function private stoker_fx_start( localclientnum, oldvalue, newvalue, bnewent, b
             if ( !isdefined( self.currentfx[ 5 ] ) )
             {
                 self.currentfx[ 4 ] = util::playfxontag( localclientnum, "zm_ai/fx8_stoker_dmg_weak_point", self, "j_head" );
-                self playsound( localclientnum, #"hash_2dc7f5a5e2c5af20" );
+                self playsound( localclientnum, #"zmb_ai_stoker_damage" );
             }
             
             break;
@@ -128,7 +128,7 @@ function private stoker_fx_start( localclientnum, oldvalue, newvalue, bnewent, b
             if ( !isdefined( self.currentfx[ 6 ] ) )
             {
                 self.currentfx[ 6 ] = util::playfxontag( localclientnum, "zm_ai/fx8_stoker_dmg_weak_point", self, "j_wrist_le" );
-                self playsound( localclientnum, #"hash_2dc7f5a5e2c5af20" );
+                self playsound( localclientnum, #"zmb_ai_stoker_damage" );
             }
             
             break;
@@ -242,7 +242,7 @@ function stoker_death_explosion( localclientnum, oldvalue, newvalue, bnewent, bi
             
             physicsexplosionsphere( localclientnum, v_origin, 400, 0, 3 );
             self thread function_d58cd2d5( localclientnum );
-            playsound( localclientnum, #"hash_5c4876ace1c2aa10", self gettagorigin( "j_shoulder_le" ) );
+            playsound( localclientnum, #"zmb_ai_stoker_death_explo", self gettagorigin( "j_shoulder_le" ) );
             break;
     }
 }

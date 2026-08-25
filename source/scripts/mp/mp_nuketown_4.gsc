@@ -685,7 +685,7 @@ function mannequin_falling( drop_mover )
     self notify( #"landed" );
     self unlink();
     drop_mover delete();
-    animation::play( #"hash_4c2aa742b1aeb780", self.origin, self.angles, 1, 0.4, 0.2, 0, 0, 0, 0 );
+    animation::play( #"ai_nuketown_ee_landing", self.origin, self.angles, 1, 0.4, 0.2, 0, 0, 0, 0 );
 }
 
 // Namespace mp_nuketown_4/mp_nuketown_4
@@ -710,7 +710,7 @@ function function_4eca5590()
     
     while ( true )
     {
-        animation::play( #"hash_1f02283eb11fce2a", self.origin, self.angles, 1, 0.2, 0.2, 0, 0, 0, 0 );
+        animation::play( #"ai_nuketown_ee_flail_loop", self.origin, self.angles, 1, 0.2, 0.2, 0, 0, 0, 0 );
     }
 }
 

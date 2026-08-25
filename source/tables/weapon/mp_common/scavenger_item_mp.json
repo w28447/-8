@@ -27,15 +27,15 @@
     "#hash_2cf49821": false,
     "#hash_d2751f9d": false,
     "#hash_554be9f7": false,
-    "sound240": "#hash_631a067190b54300",
-    "sound250": "#hash_242aa17124751841",
+    "sound240": "#wpn_generic_dryfire_npc",
+    "sound250": "#wpn_generic_dryfire_plr",
     "tunables1": "#scavenger_item_tunables_mp",
     "handModel": "#viewmodel_hands_no_model",
     "viewmodel": [
         "#wpn_t7_grenade_frag_view"
     ],
     "worldModel": [
-        "#hash_46893daaac2e3fde"
+        "#c_t8_mp_scavenger_pack"
     ],
     "reticleCenter": "#reticle_center_cross"
 }

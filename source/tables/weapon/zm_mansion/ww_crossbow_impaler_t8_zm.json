@@ -42,12 +42,12 @@
             "1 0.0507"
         ]
     ],
-    "sound90": "#hash_62f37f9672d626e5",
+    "sound90": "#wpn_bolt_loop",
     "firesound": "#wpn_crossbow_fire_npc",
     "firesoundplayer": "#wpn_crossbow_fire_plr",
-    "sound240": "#hash_683733eab40de48b",
-    "sound250": "#hash_3ee3cceae529ba86",
-    "sound270": "#hash_24db08faf35699e1",
+    "sound240": "#wpn_crossbow_dryfire_npc",
+    "sound250": "#wpn_crossbow_dryfire_plr",
+    "sound270": "#prj_bolt_whizby",
     "sound800": "#hash_54f28bb508a46096",
     "sound810": "#hash_54f28bb508a46096",
     "tunables1": "#ww_crossbow_impaler_t8_tunables_zm",

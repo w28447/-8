@@ -9,7 +9,7 @@
     "fxDef": "#fxd8_zm_char_zombie_base_body",
     "body": "#c_t8_zmb_2ndclass_female_body3",
     "headAlias": "#hash_675d196ace257446",
-    "hat": "#hash_78000384be90f8da",
+    "hat": "#c_t8_zmb_dlc1_zombie_1stclass_female_hat1_skin2",
     "damagedTorso_Clean": "#c_t8_zmb_dlc1_zombie_2ndclass_female_body3_g_upclean",
     "damagedTorso_RightArmGone": "#c_t8_zmb_dlc1_zombie_2ndclass_female_body3_g_rarmoff",
     "damagedTorso_LeftArmGone": "#c_t8_zmb_dlc1_zombie_2ndclass_female_body3_g_larmoff",

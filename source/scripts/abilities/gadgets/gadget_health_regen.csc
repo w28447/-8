@@ -36,7 +36,7 @@ function function_31f57700( localclientnum, oldval, newval, bnewent, binitialsna
         {
             if ( !( isdefined( self.var_b072e263 ) && self.var_b072e263 ) )
             {
-                self.var_e5996046 = self playloopsound( #"hash_390aa7d4252c46b5", 0.25 );
+                self.var_e5996046 = self playloopsound( #"mpl_health_regen_loop_plr", 0.25 );
                 self.var_b072e263 = 1;
                 self postfx::playpostfxbundle( "pstfx_health_regen" );
             }

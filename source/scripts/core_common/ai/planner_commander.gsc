@@ -849,11 +849,11 @@ function private function_ac4ff936( commander, &blackboard )
                             continue;
                         }
                         
-                        foreach ( var_128fdd23 in targets[ priority ] )
+                        foreach ( prioritytarget in targets[ priority ] )
                         {
-                            if ( var_128fdd23[ #"type" ] === "gameobject" && var_128fdd23[ #"__unsafe__" ][ #"object" ] == gameobject )
+                            if ( prioritytarget[ #"type" ] === "gameobject" && prioritytarget[ #"__unsafe__" ][ #"object" ] == gameobject )
                             {
-                                var_128fdd23[ #"claimed" ] = 1;
+                                prioritytarget[ #"claimed" ] = 1;
                             }
                         }
                     }

@@ -144,7 +144,7 @@ function function_43e2a503()
     }
     
     var_26d86758 = spawn( "script_origin", self.origin );
-    var_26d86758 playloopsound( #"hash_368d31ed538206b0" );
+    var_26d86758 playloopsound( #"zmb_mus_bottle_lp" );
     e_activator = self zm_unitrigger::function_fac87205( undefined, 40 );
     
     if ( !isdefined( level.var_ec4c747a ) )
@@ -152,7 +152,7 @@ function function_43e2a503()
         level.var_ec4c747a = 0;
     }
     
-    playsoundatposition( #"hash_58a7d90061e86ced", self.origin );
+    playsoundatposition( #"zmb_mus_bottle_activate", self.origin );
     var_26d86758 delete();
     level.var_ec4c747a++;
     

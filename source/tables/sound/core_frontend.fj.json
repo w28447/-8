@@ -9,13 +9,13 @@
         {
             "value": 39,
             "next": 65535,
-            "name": "#hash_3a0cd1d187366e6e",
+            "name": "#evt_audio_log_1_sfx",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3a0cd1d187366e6e",
+                    "name": "#evt_audio_log_1_sfx",
                     "assetId": "#hash_3567adad3d123d6a",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -66,7 +66,7 @@
             "aliases": [
                 {
                     "name": "#evt_audio_log_1_vox",
-                    "secondaryname": "#hash_3a0cd1d187366e6e",
+                    "secondaryname": "#evt_audio_log_1_sfx",
                     "assetId": "#hash_e49cd42b8f96cc8",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -111,13 +111,13 @@
         {
             "value": 41,
             "next": 65535,
-            "name": "#hash_2529333a0fce2eba",
+            "name": "#evt_audio_log_10_sfx",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2529333a0fce2eba",
+                    "name": "#evt_audio_log_10_sfx",
                     "assetId": "#hash_56a1e3bd570cdf46",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -168,7 +168,7 @@
             "aliases": [
                 {
                     "name": "#evt_audio_log_10_vox",
-                    "secondaryname": "#hash_2529333a0fce2eba",
+                    "secondaryname": "#evt_audio_log_10_sfx",
                     "assetId": "#hash_24f9aac6f5efcd8c",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -211,13 +211,13 @@
         {
             "value": 13,
             "next": 65535,
-            "name": "#hash_3075391378317839",
+            "name": "#evt_audio_log_11_sfx",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3075391378317839",
+                    "name": "#evt_audio_log_11_sfx",
                     "assetId": "#hash_d1c3668a6cc9bc7",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -268,7 +268,7 @@
             "aliases": [
                 {
                     "name": "#evt_audio_log_11_vox",
-                    "secondaryname": "#hash_3075391378317839",
+                    "secondaryname": "#evt_audio_log_11_sfx",
                     "assetId": "#hash_77c87fd2a3911001",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -311,13 +311,13 @@
         {
             "value": 0,
             "next": 65535,
-            "name": "#hash_2eb1147f88f5048",
+            "name": "#evt_audio_log_12_sfx",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2eb1147f88f5048",
+                    "name": "#evt_audio_log_12_sfx",
                     "assetId": "#hash_71f568ae430e3ac8",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -368,7 +368,7 @@
             "aliases": [
                 {
                     "name": "#evt_audio_log_12_vox",
-                    "secondaryname": "#hash_2eb1147f88f5048",
+                    "secondaryname": "#evt_audio_log_12_sfx",
                     "assetId": "#hash_5e50ac2a18fbb026",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -413,13 +413,13 @@
         {
             "value": 83,
             "next": 65535,
-            "name": "#hash_239d4721fe216007",
+            "name": "#evt_audio_log_13_sfx",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_239d4721fe216007",
+                    "name": "#evt_audio_log_13_sfx",
                     "assetId": "#hash_5981f87054d4d921",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -470,7 +470,7 @@
             "aliases": [
                 {
                     "name": "#evt_audio_log_13_vox",
-                    "secondaryname": "#hash_239d4721fe216007",
+                    "secondaryname": "#evt_audio_log_13_sfx",
                     "assetId": "#hash_5269a5af761df7d3",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -513,13 +513,13 @@
         {
             "value": 73,
             "next": 80,
-            "name": "#hash_1d5f0bfd2def70eb",
+            "name": "#evt_audio_log_2_sfx",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1d5f0bfd2def70eb",
+                    "name": "#evt_audio_log_2_sfx",
                     "assetId": "#hash_685823f9c490c9b5",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -570,7 +570,7 @@
             "aliases": [
                 {
                     "name": "#evt_audio_log_2_vox",
-                    "secondaryname": "#hash_1d5f0bfd2def70eb",
+                    "secondaryname": "#evt_audio_log_2_sfx",
                     "assetId": "#hash_593089fc0b4b5def",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -613,13 +613,13 @@
         {
             "value": 6,
             "next": 65535,
-            "name": "#hash_2dd7dfe00db0b78c",
+            "name": "#evt_audio_log_3_sfx",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2dd7dfe00db0b78c",
+                    "name": "#evt_audio_log_3_sfx",
                     "assetId": "#hash_6d6bce4790e83f5c",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -670,7 +670,7 @@
             "aliases": [
                 {
                     "name": "#evt_audio_log_3_vox",
-                    "secondaryname": "#hash_2dd7dfe00db0b78c",
+                    "secondaryname": "#evt_audio_log_3_sfx",
                     "assetId": "#hash_387906aa4f07fcc2",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -715,13 +715,13 @@
         {
             "value": 35,
             "next": 65535,
-            "name": "#hash_355d37b9c1946339",
+            "name": "#evt_audio_log_4_sfx",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_355d37b9c1946339",
+                    "name": "#evt_audio_log_4_sfx",
                     "assetId": "#hash_338d04af10cc38b7",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -772,7 +772,7 @@
             "aliases": [
                 {
                     "name": "#evt_audio_log_4_vox",
-                    "secondaryname": "#hash_355d37b9c1946339",
+                    "secondaryname": "#evt_audio_log_4_sfx",
                     "assetId": "#hash_5de574c7b83680f1",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -817,13 +817,13 @@
         {
             "value": 53,
             "next": 65535,
-            "name": "#hash_2a1131e0593119ba",
+            "name": "#evt_audio_log_5_sfx",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2a1131e0593119ba",
+                    "name": "#evt_audio_log_5_sfx",
                     "assetId": "#hash_3660545deef2e5b6",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -874,7 +874,7 @@
             "aliases": [
                 {
                     "name": "#evt_audio_log_5_vox",
-                    "secondaryname": "#hash_2a1131e0593119ba",
+                    "secondaryname": "#evt_audio_log_5_sfx",
                     "assetId": "#hash_797cff458f977b7c",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -919,13 +919,13 @@
         {
             "value": 16,
             "next": 19,
-            "name": "#hash_288545c847844b07",
+            "name": "#evt_audio_log_6_sfx",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_288545c847844b07",
+                    "name": "#evt_audio_log_6_sfx",
                     "assetId": "#hash_18860c6c7de8c451",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -976,7 +976,7 @@
             "aliases": [
                 {
                     "name": "#evt_audio_log_6_vox",
-                    "secondaryname": "#hash_288545c847844b07",
+                    "secondaryname": "#evt_audio_log_6_sfx",
                     "assetId": "#hash_bf7ff2256cbd383",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -1021,13 +1021,13 @@
         {
             "value": 31,
             "next": 8,
-            "name": "#hash_7d30fee41f23b48",
+            "name": "#evt_audio_log_7_sfx",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7d30fee41f23b48",
+                    "name": "#evt_audio_log_7_sfx",
                     "assetId": "#hash_56d658396f080eb8",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -1078,7 +1078,7 @@
             "aliases": [
                 {
                     "name": "#evt_audio_log_7_vox",
-                    "secondaryname": "#hash_7d30fee41f23b48",
+                    "secondaryname": "#evt_audio_log_7_sfx",
                     "assetId": "#hash_7b8179fec98e8216",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -1123,13 +1123,13 @@
         {
             "value": 12,
             "next": 65535,
-            "name": "#hash_5bd981fcbb2e7645",
+            "name": "#evt_audio_log_8_sfx",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5bd981fcbb2e7645",
+                    "name": "#evt_audio_log_8_sfx",
                     "assetId": "#hash_1185c0859f2ed073",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -1180,7 +1180,7 @@
             "aliases": [
                 {
                     "name": "#evt_audio_log_8_vox",
-                    "secondaryname": "#hash_5bd981fcbb2e7645",
+                    "secondaryname": "#evt_audio_log_8_sfx",
                     "assetId": "#hash_4d3044e29eb26d05",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -1223,13 +1223,13 @@
         {
             "value": 47,
             "next": 28,
-            "name": "#hash_51676c235384b556",
+            "name": "#evt_audio_log_9_sfx",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_51676c235384b556",
+                    "name": "#evt_audio_log_9_sfx",
                     "assetId": "#hash_709c8ae3ee717852",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -1280,7 +1280,7 @@
             "aliases": [
                 {
                     "name": "#evt_audio_log_9_vox",
-                    "secondaryname": "#hash_51676c235384b556",
+                    "secondaryname": "#evt_audio_log_9_sfx",
                     "assetId": "#hash_74652148e20ba0",
                     "assetFileNameSustain": "#core_frontend.fj",
                     "assetIdRelease": "#core_frontend.fj",
@@ -3737,13 +3737,13 @@
         {
             "value": 82,
             "next": 53,
-            "name": "#hash_33e04aad46568336",
+            "name": "#vox_blac_crate_open",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_33e04aad46568336",
+                    "name": "#vox_blac_crate_open",
                     "subtitle": "#hash_6a5fe31eb8639fea",
                     "assetId": "#hash_1d1ac909ea072672",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -3785,7 +3785,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_33e04aad46568336",
+                    "name": "#vox_blac_crate_open",
                     "subtitle": "#hash_31deee1037301803",
                     "assetId": "#hash_ad9bdab81ebfaef",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -3827,7 +3827,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_33e04aad46568336",
+                    "name": "#vox_blac_crate_open",
                     "subtitle": "#hash_fd159ede99494e8",
                     "assetId": "#hash_2dcff0112cd22348",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -3869,7 +3869,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_33e04aad46568336",
+                    "name": "#vox_blac_crate_open",
                     "subtitle": "#hash_2b3a9e6d2b790791",
                     "assetId": "#hash_4fe1e9bde0569add",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -3911,7 +3911,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_33e04aad46568336",
+                    "name": "#vox_blac_crate_open",
                     "subtitle": "#hash_42d2defbece22826",
                     "assetId": "#hash_469dbb878a36d55e",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -3953,7 +3953,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_33e04aad46568336",
+                    "name": "#vox_blac_crate_open",
                     "subtitle": "#hash_232bf46a1d5ff6df",
                     "assetId": "#hash_32cf333b36c1bebb",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -3995,7 +3995,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_33e04aad46568336",
+                    "name": "#vox_blac_crate_open",
                     "subtitle": "#hash_645d2497ff58e5e4",
                     "assetId": "#hash_8f96ad13a9ac2e4",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -4037,7 +4037,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_33e04aad46568336",
+                    "name": "#vox_blac_crate_open",
                     "subtitle": "#hash_329104c7af625f8d",
                     "assetId": "#hash_25a460a3534ab189",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -4079,7 +4079,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_33e04aad46568336",
+                    "name": "#vox_blac_crate_open",
                     "subtitle": "#hash_62db8972011df632",
                     "assetId": "#hash_62beaa7cc50571aa",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -4121,7 +4121,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_33e04aad46568336",
+                    "name": "#vox_blac_crate_open",
                     "subtitle": "#hash_5a6b278f105a2fcb",
                     "assetId": "#hash_3bfd6bc7c90d9cc7",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -4163,7 +4163,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_33e04aad46568336",
+                    "name": "#vox_blac_crate_open",
                     "subtitle": "#hash_36ccc3bd7f4d05d",
                     "assetId": "#hash_d27d54567bd4351",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -4205,7 +4205,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_33e04aad46568336",
+                    "name": "#vox_blac_crate_open",
                     "subtitle": "#hash_629b5d442ea4a5b4",
                     "assetId": "#hash_35175598709d0cac",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -7219,13 +7219,13 @@
         {
             "value": 40,
             "next": 66,
-            "name": "#hash_6ed4871a33c2089a",
+            "name": "#vox_blac_greet_standard_00",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6ed4871a33c2089a",
+                    "name": "#vox_blac_greet_standard_00",
                     "subtitle": "#hash_455d4bb75512c91e",
                     "assetId": "#hash_1ded536525d16c00",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -7271,13 +7271,13 @@
         {
             "value": 37,
             "next": 65535,
-            "name": "#hash_6ed4881a33c20a4d",
+            "name": "#vox_blac_greet_standard_01",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6ed4881a33c20a4d",
+                    "name": "#vox_blac_greet_standard_01",
                     "subtitle": "#hash_6623c14790422b19",
                     "assetId": "#hash_3ed7f0c546f673ff",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -7323,13 +7323,13 @@
         {
             "value": 20,
             "next": 73,
-            "name": "#hash_6ed4851a33c20534",
+            "name": "#vox_blac_greet_standard_02",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6ed4851a33c20534",
+                    "name": "#vox_blac_greet_standard_02",
                     "subtitle": "#hash_387bd839c552fe90",
                     "assetId": "#hash_7b3f0e64d885e562",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -7375,13 +7375,13 @@
         {
             "value": 26,
             "next": 65535,
-            "name": "#hash_6ed4861a33c206e7",
+            "name": "#vox_blac_greet_standard_03",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6ed4861a33c206e7",
+                    "name": "#vox_blac_greet_standard_03",
                     "subtitle": "#hash_5b0171f94e91ba23",
                     "assetId": "#hash_5706aec64dc55e49",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -7427,13 +7427,13 @@
         {
             "value": 80,
             "next": 65535,
-            "name": "#hash_6ed4831a33c201ce",
+            "name": "#vox_blac_greet_standard_04",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6ed4831a33c201ce",
+                    "name": "#vox_blac_greet_standard_04",
                     "subtitle": "#hash_6e366c980b5accd2",
                     "assetId": "#hash_67eb7ffe35f30844",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -7479,13 +7479,13 @@
         {
             "value": 87,
             "next": 65535,
-            "name": "#hash_6ed4841a33c20381",
+            "name": "#vox_blac_greet_standard_05",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6ed4841a33c20381",
+                    "name": "#vox_blac_greet_standard_05",
                     "subtitle": "#hash_65e1b84dea3b0c8d",
                     "assetId": "#hash_7152c2ee68352c73",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -7531,13 +7531,13 @@
         {
             "value": 95,
             "next": 65535,
-            "name": "#hash_6ed4811a33c1fe68",
+            "name": "#vox_blac_greet_standard_06",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6ed4811a33c1fe68",
+                    "name": "#vox_blac_greet_standard_06",
                     "subtitle": "#hash_21327bb87b6cd2a4",
                     "assetId": "#hash_76d52395c4476036",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -7583,13 +7583,13 @@
         {
             "value": 69,
             "next": 65535,
-            "name": "#hash_6ed4821a33c2001b",
+            "name": "#vox_blac_greet_standard_07",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6ed4821a33c2001b",
+                    "name": "#vox_blac_greet_standard_07",
                     "subtitle": "#hash_3682e8918d56bb7",
                     "assetId": "#hash_6cedb080f5e8270d",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -7635,13 +7635,13 @@
         {
             "value": 74,
             "next": 65535,
-            "name": "#hash_6ed47f1a33c1fb02",
+            "name": "#vox_blac_greet_standard_08",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6ed47f1a33c1fb02",
+                    "name": "#vox_blac_greet_standard_08",
                     "subtitle": "#hash_59af64ddc1dbd6f6",
                     "assetId": "#hash_fe60424cedc0f78",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -7687,13 +7687,13 @@
         {
             "value": 75,
             "next": 65535,
-            "name": "#hash_6ed4801a33c1fcb5",
+            "name": "#vox_blac_greet_standard_09",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6ed4801a33c1fcb5",
+                    "name": "#vox_blac_greet_standard_09",
                     "subtitle": "#hash_2ef9d75c5f35a5f1",
                     "assetId": "#hash_7ff602ae5f1e1eb7",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -7739,13 +7739,13 @@
         {
             "value": 94,
             "next": 65535,
-            "name": "#hash_6ed7ed1a33c4ebc3",
+            "name": "#vox_blac_greet_standard_10",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6ed7ed1a33c4ebc3",
+                    "name": "#vox_blac_greet_standard_10",
                     "subtitle": "#hash_42b4a41d57a31967",
                     "assetId": "#hash_377edaf3f865fa5",
                     "assetFileNameSustain": "#core_frontend.fj",
@@ -7791,13 +7791,13 @@
         {
             "value": 93,
             "next": 65535,
-            "name": "#hash_6ed7ec1a33c4ea10",
+            "name": "#vox_blac_greet_standard_11",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6ed7ec1a33c4ea10",
+                    "name": "#vox_blac_greet_standard_11",
                     "subtitle": "#hash_6d8d2ce46a7fef54",
                     "assetId": "#hash_4fae92ec40d01c6e",
                     "assetFileNameSustain": "#core_frontend.fj",

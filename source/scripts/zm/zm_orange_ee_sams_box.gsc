@@ -186,7 +186,7 @@ function function_d332685()
     level endon( #"end_game", #"hash_7220fbbcfb27dbd4" );
     s_results = self waittill( #"trigger_activated" );
     e_who = s_results.e_who;
-    playsoundatposition( #"hash_d8937c5c97f485e", self.e_keycard.origin );
+    playsoundatposition( #"evt_vault_key_pickup", self.e_keycard.origin );
     self.e_keycard delete();
     
     if ( level.var_79260935.var_f4c36022 === 0 && level.var_79260935.var_30df7623 === 0 )
@@ -261,7 +261,7 @@ function function_61298be5()
 {
     var_1a304a2f = struct::get( self.target, "targetname" );
     self.e_key_1 = util::spawn_model( "p8_zm_ora_keycard_0", var_1a304a2f.origin, var_1a304a2f.angles );
-    playsoundatposition( #"hash_7b375cb6d6863713", self.e_key_1.origin );
+    playsoundatposition( #"evt_vault_key_insert", self.e_key_1.origin );
     level zm_ui_inventory::function_7df6bb60( "zm_orange_zipquest_keycard_1", 0 );
     level.var_79260935.var_f4c36022--;
     level.var_79260935.var_30df7623++;
@@ -278,7 +278,7 @@ function function_2ec6a1aa()
 {
     var_1a304a2f = struct::get( self.target2, "targetname" );
     self.e_key_2 = util::spawn_model( "p8_zm_ora_keycard_0", var_1a304a2f.origin, var_1a304a2f.angles );
-    playsoundatposition( #"hash_7b375cb6d6863713", self.e_key_2.origin );
+    playsoundatposition( #"evt_vault_key_insert", self.e_key_2.origin );
     level zm_ui_inventory::function_7df6bb60( "zm_orange_zipquest_keycard_2", 0 );
     level.var_79260935.var_f4c36022--;
     level.var_79260935.var_30df7623++;
@@ -449,7 +449,7 @@ function function_3590cb58()
         if ( level flag::get( #"hash_475c24f631fab267" ) )
         {
             self.var_896127a6 = util::spawn_model( self.var_1a304a2f.model, self.var_1a304a2f.origin, self.var_1a304a2f.angles );
-            playsoundatposition( #"hash_7b375cb6d6863713", self.var_896127a6.origin );
+            playsoundatposition( #"evt_vault_key_insert", self.var_896127a6.origin );
             wait 1;
             self.var_896127a6 zm_hms_util::function_dc4ab629( -8, 1.5 );
             self.var_896127a6 waittill( #"movedone" );

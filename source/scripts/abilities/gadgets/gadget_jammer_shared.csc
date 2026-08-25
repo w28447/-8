@@ -117,7 +117,7 @@ function player_isjammed( localclientnum, oldval, newval, bnewent, binitialsnap,
     {
         self notify( #"stop_sounds" );
         self postfx::playpostfxbundle( #"hash_3a2aaa69f5eeab6f" );
-        playsound( localclientnum, #"hash_4a43757dd4b02977" );
+        playsound( localclientnum, #"mpl_emp_static_impact" );
         level.var_6d8e6535[ localclientnum ] = function_604c9983( localclientnum, #"mpl_emp_static_loop" );
         self thread function_e9e14905( localclientnum );
         return;
@@ -129,7 +129,7 @@ function player_isjammed( localclientnum, oldval, newval, bnewent, binitialsnap,
         
         if ( isdefined( level.var_6d8e6535[ localclientnum ] ) && !bwastimejump )
         {
-            playsound( localclientnum, #"hash_112352517abf5b11" );
+            playsound( localclientnum, #"mpl_emp_static_done" );
         }
         
         self notify( #"stop_sounds" );

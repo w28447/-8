@@ -748,7 +748,7 @@ function function_9e546fb3( attacker, weapon, target, var_2f6adbe3, tripper )
     }
     else
     {
-        self playsound( #"hash_1f0de5f27d29d3aa" );
+        self playsound( #"wpn_tripwire_alert" );
         self.detonating = 1;
         
         if ( isdefined( var_2f6adbe3 ) )

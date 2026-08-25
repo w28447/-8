@@ -38,7 +38,7 @@
     "enemyModel": "#veh_t8_mil_helicopter_transport_mp_dark",
     "soundDef": "#hash_17069dddab5c76cf",
     "compassIconMaterial": "#t8_hud_waypoints_drone_hunter_scaled_down",
-    "tacticalModeIcon": "#hash_679c5098faff525b",
+    "tacticalModeIcon": "#uie_ui_icon_minimap_wz_little_bird_static",
     "steerAxisName": "AXIS_LSTICK",
     "unk1608": "BUTTON_RTRIG",
     "unk1618": "BUTTON_LTRIG",

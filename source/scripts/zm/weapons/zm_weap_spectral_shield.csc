@@ -700,7 +700,7 @@ function function_b570d455( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( !isdefined( self.var_3415a5d7 ) )
     {
-        self.var_3415a5d7 = self playloopsound( #"hash_4c803bdbf30dd7fc" );
+        self.var_3415a5d7 = self playloopsound( #"wpn_spectral_key_lasso" );
     }
     
     level thread function_3dec76cb( localclientnum, self, e_attacker, 1 );

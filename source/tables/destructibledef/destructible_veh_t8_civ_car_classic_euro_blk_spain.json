@@ -1,7 +1,7 @@
 {
     "name": "#destructible_veh_t8_civ_car_classic_euro_blk_spain",
-    "model": "#hash_2f04868e2b6bc8fd",
-    "unk20": "#hash_5287ddc3df9e5f7d",
+    "model": "#veh_t8_civ_car_classic_euro_dest_blk_spain",
+    "unk20": "#veh_t8_civ_car_classic_euro_dead_blk",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

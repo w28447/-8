@@ -187,8 +187,8 @@ function fasttravel_teleport_sfx( localclientnum, oldval, newval, bnewent, binit
     {
         if ( !isdefined( self.fasttravel_teleport_sfx ) )
         {
-            self playsound( localclientnum, #"hash_695df080bafaf6b7" );
-            self.fasttravel_teleport_sfx = self playloopsound( #"hash_337255a64f96457b" );
+            self playsound( localclientnum, #"zmb_fasttravel_teleport_start_plr" );
+            self.fasttravel_teleport_sfx = self playloopsound( #"zmb_fasttravel_teleport_lp_plr" );
         }
         
         return;
@@ -196,7 +196,7 @@ function fasttravel_teleport_sfx( localclientnum, oldval, newval, bnewent, binit
     
     if ( isdefined( self.fasttravel_teleport_sfx ) )
     {
-        self playsound( localclientnum, #"hash_32def2a5219ba9ee" );
+        self playsound( localclientnum, #"zmb_fasttravel_teleport_end_plr" );
         self stoploopsound( self.fasttravel_teleport_sfx );
         self.fasttravel_teleport_sfx = undefined;
     }

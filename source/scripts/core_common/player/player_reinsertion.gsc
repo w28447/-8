@@ -54,9 +54,9 @@ function function_3d39c260()
         return;
     }
     
-    var_7eb8f61a = isdefined( getgametypesetting( #"wzplayerinsertiontypeindex" ) ) ? getgametypesetting( #"wzplayerinsertiontypeindex" ) : 0;
+    insertion_type = isdefined( getgametypesetting( #"wzplayerinsertiontypeindex" ) ) ? getgametypesetting( #"wzplayerinsertiontypeindex" ) : 0;
     
-    if ( var_7eb8f61a != 0 )
+    if ( insertion_type != 0 )
     {
         return;
     }
@@ -679,7 +679,7 @@ function function_836fe662()
 // Size: 0x5bc
 function function_fec68e5c()
 {
-    var_7eb8f61a = isdefined( getgametypesetting( #"wzplayerinsertiontypeindex" ) ) ? getgametypesetting( #"wzplayerinsertiontypeindex" ) : 0;
+    insertion_type = isdefined( getgametypesetting( #"wzplayerinsertiontypeindex" ) ) ? getgametypesetting( #"wzplayerinsertiontypeindex" ) : 0;
     
     /#
         if ( getdvarint( #"scr_disable_infiltration", 0 ) )

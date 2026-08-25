@@ -202,7 +202,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_7d80aa2cc4caf05f",
+                            "anim": "anim#p8_fxanim_mp_morocco_missile_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -234,7 +234,7 @@
             "skipdeathanim": 0,
             "hash_9de1f44c": 0,
             "lerptime": 0,
-            "model": "model#hash_5ae8c90068b6fbd7",
+            "model": "model#p8_fxanim_mp_morocco_air_drop_missile_mod",
             "type": "prop",
             "disablehitmarker": 0,
             "usefakeactor": 0,

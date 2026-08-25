@@ -362,7 +362,7 @@ function function_88fdd1ff()
     self endoncallback( &function_2473f73e, #"death" );
     self endon( #"death", #"disconnect" );
     self.var_2591ed7c = spawn( 0, self.origin + ( 0, 0, 1000 ), "script_origin" );
-    self.var_2591ed7c.var_2e95bcd3 = self.var_2591ed7c playloopsound( #"hash_58b77ae9e2d258e1" );
+    self.var_2591ed7c.var_2e95bcd3 = self.var_2591ed7c playloopsound( #"evt_freeze_lp" );
     
     if ( !isdefined( self.var_cdb19015 ) )
     {
@@ -403,7 +403,7 @@ function function_7da5e6a2()
 {
     self endon( #"death", #"disconnect" );
     self.var_cdb19015 = 0;
-    self playsound( 0, #"hash_71f59624b7f67f22" );
+    self playsound( 0, #"evt_freeze_complete" );
     self.var_1ab2df8c = self playloopsound( #"evt_frozen_lp" );
     self waittill( #"snd_stop_frozen" );
     self stoploopsound( self.var_1ab2df8c );

@@ -11,7 +11,7 @@
     "spawnInfluencers2": "#none",
     "deathFx": "#hash_59174ad01884a794",
     "deathFxTag": "tag_body",
-    "deathFxSound": "#hash_2d5cdc03d392d5ec",
+    "deathFxSound": "#mpl_veh_recon_exp",
     "sndMaterialNames": [
         "#hash_268ebbfd586fc64f",
         "#hash_34321daed8ad643a",

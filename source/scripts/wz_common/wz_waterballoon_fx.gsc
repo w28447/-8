@@ -34,8 +34,8 @@ function function_c9509a9c( params )
     {
         if ( params.weapon.name === #"waterballoon" )
         {
-            var_feafe576 = 0;
-            var_cb01806c = 0;
+            bbottom = 0;
+            btop = 0;
             bleft = 0;
             bright = 0;
             var_4e1c6c81 = 1;
@@ -45,13 +45,13 @@ function function_c9509a9c( params )
             
             if ( height_diff < -16 )
             {
-                var_feafe576 = 1;
+                bbottom = 1;
                 var_4e1c6c81 = 0;
             }
             
             if ( height_diff > 16 )
             {
-                var_cb01806c = 1;
+                btop = 1;
                 var_4e1c6c81 = 0;
             }
             
@@ -86,27 +86,27 @@ function function_c9509a9c( params )
             {
                 self clientfield::set_to_player( "player_hit_water_balloon_direction", 3 );
             }
-            else if ( var_cb01806c && var_9ed2938d )
+            else if ( btop && var_9ed2938d )
             {
                 self clientfield::set_to_player( "player_hit_water_balloon_direction", 5 );
             }
-            else if ( var_feafe576 && var_9ed2938d )
+            else if ( bbottom && var_9ed2938d )
             {
                 self clientfield::set_to_player( "player_hit_water_balloon_direction", 4 );
             }
-            else if ( var_feafe576 && bleft )
+            else if ( bbottom && bleft )
             {
                 self clientfield::set_to_player( "player_hit_water_balloon_direction", 6 );
             }
-            else if ( var_feafe576 && bright )
+            else if ( bbottom && bright )
             {
                 self clientfield::set_to_player( "player_hit_water_balloon_direction", 8 );
             }
-            else if ( var_cb01806c && bleft )
+            else if ( btop && bleft )
             {
                 self clientfield::set_to_player( "player_hit_water_balloon_direction", 9 );
             }
-            else if ( var_cb01806c && bright )
+            else if ( btop && bright )
             {
                 self clientfield::set_to_player( "player_hit_water_balloon_direction", 10 );
             }

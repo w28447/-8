@@ -1,6 +1,6 @@
 {
-    "destroyed": "#hash_337f01908473a952",
-    "ready": "#hash_4350700248a073f2",
+    "destroyed": "#vox_mta1_ult_overwatch_destroyed",
+    "ready": "#vox_mta1_ult_overwatch_ready",
     "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "vmtype": "both",

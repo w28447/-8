@@ -36,7 +36,7 @@ function init_flags()
 // Size: 0x14c
 function function_a28f0b21( e_holder, w_item )
 {
-    self playsound( #"hash_230737b2535a3374" );
+    self playsound( #"zmb_crafting_pickup_generic" );
     level.var_e2103f01 += 1;
     
     if ( function_8b1a219a() )
@@ -59,7 +59,7 @@ function function_a28f0b21( e_holder, w_item )
 // Size: 0x12c
 function function_af5c24bb( e_holder, w_item )
 {
-    self playsound( #"hash_230737b2535a3374" );
+    self playsound( #"zmb_crafting_pickup_generic" );
     level.var_e2103f01 += 1;
     
     if ( function_8b1a219a() )

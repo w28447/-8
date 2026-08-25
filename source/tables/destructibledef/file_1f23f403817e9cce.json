@@ -1,7 +1,7 @@
 {
     "name": "#hash_1f23f403817e9cce",
-    "model": "#hash_32283b9298a09be0",
-    "unk20": "#hash_6da700992f0c8a3d",
+    "model": "#veh_t8_civ_truck_mini_dest_work_truck_morocco",
+    "unk20": "#veh_t8_civ_truck_mini_work_truck_dead",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -11,7 +11,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_21d849eee4d897a",
+                    "name": "#dst_car_rad_steam",
                     "unk28": "tag_body_d0"
                 },
                 {
@@ -19,7 +19,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_76e527de2e37948f",
+                    "name": "#dst_car_cooldown",
                     "unk28": "tag_body_d0"
                 },
                 {

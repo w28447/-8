@@ -67,7 +67,7 @@ function supply_drop_fx( localclientnum, oldval, newval, bnewent, binitialsnap, 
         
         self.fxent = fxent;
         playfx( localclientnum, "killstreaks/fx8_agr_drop_box_wz", self.origin, anglestoforward( self.angles ), anglestoup( self.angles ) );
-        playsound( localclientnum, #"hash_49b7275f4ddde9b8", self.origin );
+        playsound( localclientnum, #"exp_supply_panels", self.origin );
         self.var_3a55f5cf = 1;
         return;
     }

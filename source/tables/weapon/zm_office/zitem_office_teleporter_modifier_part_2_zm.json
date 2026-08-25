@@ -26,15 +26,15 @@
     "#hash_2cf49821": false,
     "#hash_d2751f9d": false,
     "#hash_554be9f7": false,
-    "sound240": "#hash_631a067190b54300",
-    "sound250": "#hash_242aa17124751841",
+    "sound240": "#wpn_generic_dryfire_npc",
+    "sound250": "#wpn_generic_dryfire_plr",
     "gadgetreadysoundplayer": "#hash_322906f92aa042e8",
     "tunables1": "#hash_39dfec4bea7f4e63",
     "viewmodel": [
         "#viewmodel_default"
     ],
     "worldModel": [
-        "#hash_53d66b290d5a1f0e"
+        "#p8_zm_off_teleporter_outer"
     ],
     "inventoryIconZm": "#$blacktransparent"
 }

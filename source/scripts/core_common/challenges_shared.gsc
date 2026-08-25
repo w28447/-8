@@ -1627,7 +1627,7 @@ function capturedobjective( capturetime, objective )
         }
     }
     
-    self notify( #"capturedobjective", { #capturetime:capturetime, #var_eced93f5:objective } );
+    self notify( #"capturedobjective", { #capturetime:capturetime, #objectivecaptured:objective } );
 }
 
 // Namespace challenges/challenges_shared

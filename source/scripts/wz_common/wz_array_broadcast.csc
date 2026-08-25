@@ -126,7 +126,7 @@ function function_fb90d490()
     
     foreach ( struct in var_5be26843 )
     {
-        playsound( 0, #"hash_6086b2f61672a07e", struct.origin );
+        playsound( 0, #"vox_numb_unlock", struct.origin );
     }
 }
 
@@ -141,7 +141,7 @@ function broadcast_off()
     
     foreach ( struct in var_5be26843 )
     {
-        audio::stoploopat( #"hash_39c8dfc4efa25b26", struct.origin );
+        audio::stoploopat( #"amb_emergency_broadcast_tone", struct.origin );
     }
     
     exploder::kill_exploder( "fxexp_radar_activation" );
@@ -149,7 +149,7 @@ function broadcast_off()
     foreach ( struct in var_5be26843 )
     {
         struct notify( #"broadcast_off" );
-        audio::stoploopat( #"hash_39c8dfc4efa25b26", struct.origin );
+        audio::stoploopat( #"amb_emergency_broadcast_tone", struct.origin );
         
         if ( isdefined( struct.var_7a993bec ) )
         {
@@ -170,7 +170,7 @@ function function_44e1ce2e( var_ffe2b6da = 0 )
     {
         if ( var_ffe2b6da == 0 )
         {
-            audio::playloopat( #"hash_39c8dfc4efa25b26", struct.origin );
+            audio::playloopat( #"amb_emergency_broadcast_tone", struct.origin );
         }
     }
     
@@ -180,7 +180,7 @@ function function_44e1ce2e( var_ffe2b6da = 0 )
     
     foreach ( struct in var_5be26843 )
     {
-        audio::playloopat( #"hash_39c8dfc4efa25b26", struct.origin );
+        audio::playloopat( #"amb_emergency_broadcast_tone", struct.origin );
     }
     
     wait 3;
@@ -280,7 +280,7 @@ function function_44e1ce2e( var_ffe2b6da = 0 )
     
     foreach ( struct in var_5be26843 )
     {
-        audio::stoploopat( #"hash_39c8dfc4efa25b26", struct.origin );
+        audio::stoploopat( #"amb_emergency_broadcast_tone", struct.origin );
     }
     
     level.var_c055f451 = 2;
@@ -295,7 +295,7 @@ function function_72e8e600()
     for ( loopcount = 0; loopcount < 10 ; loopcount++ )
     {
         wait randomintrange( 1, 2 );
-        playsound( 0, #"hash_7e2183e61d5335a8", self.origin );
+        playsound( 0, #"evt_local_alarm", self.origin );
         wait 3;
     }
 }

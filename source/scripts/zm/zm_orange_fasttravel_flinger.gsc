@@ -226,7 +226,7 @@ function function_5d984ff3()
     {
         s_activation = self waittill( #"trigger_activated" );
         e_who = s_activation.e_who;
-        self playsound( #"hash_4941036cc35e4751" );
+        self playsound( #"zmb_heatpack_pickup" );
         
         if ( !isdefined( e_who.var_2e6aa97d ) )
         {
@@ -694,7 +694,7 @@ function fling_player( v_flinger )
     
     self.var_3456a2d2 = spawn( "script_origin", self.origin );
     self.var_3456a2d2 linkto( self );
-    self.var_3456a2d2 playloopsound( #"hash_7870648fa8bc7f" );
+    self.var_3456a2d2 playloopsound( #"fly_flinger_wind" );
     self clientfield::set_to_player( "blur_post_fx", 1 );
     
     if ( v_flinger.str_location === "island_return" )
@@ -880,7 +880,7 @@ function function_57806638( v_flinger )
     }
     
     e_planks = getent( v_flinger.var_48abac67.target, "targetname" );
-    e_planks playsound( #"hash_157ec960f5af0676" );
+    e_planks playsound( #"zmb_wood_planks_break" );
     e_planks clientfield::set( "flinger_impact_wood", 1 );
     
     if ( v_flinger.var_ad63608b >= var_61cb960b )
@@ -1218,11 +1218,11 @@ function function_c0df509( index )
 // Size: 0xf4
 function function_ac9a3646()
 {
-    playsoundatposition( #"hash_5474570f37d75aa7", self.origin );
+    playsoundatposition( #"evt_flinger_start", self.origin );
     e_snd = spawn( "script_origin", self.origin );
     e_snd playsound( #"hash_5913634c5007a95" );
     self waittill( #"launcher_activated", #"hash_1a5c6352ea49c8ff" );
-    playsoundatposition( #"hash_3db70e71d59b6393", self.origin );
+    playsoundatposition( #"evt_flinger_cancel", self.origin );
     e_snd stopsounds();
     waitframe( 1 );
     e_snd delete();

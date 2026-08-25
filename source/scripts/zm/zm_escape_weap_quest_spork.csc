@@ -83,35 +83,35 @@ function function_f72f97af( localclientnum, oldval, newval, bnewent, binitialsna
     switch ( newval )
     {
         case 1:
-            level.var_a8f38afe[ localclientnum ] thread animation::play( #"hash_5f152090f657bfe" );
+            level.var_a8f38afe[ localclientnum ] thread animation::play( #"p8_fxanim_zm_esc_bathtub_filling_idle_start" );
             break;
         case 2:
-            level.var_a8f38afe[ localclientnum ] animation::play( #"hash_6f7a3a7c471df0f2" );
-            level.var_a8f38afe[ localclientnum ] thread animation::play( #"hash_2e86999bc8c4290d" );
+            level.var_a8f38afe[ localclientnum ] animation::play( #"p8_fxanim_zm_esc_bathtub_filling_1" );
+            level.var_a8f38afe[ localclientnum ] thread animation::play( #"p8_fxanim_zm_esc_bathtub_filling_idle_1" );
             break;
         case 3:
-            level.var_a8f38afe[ localclientnum ] animation::play( #"hash_6f7a397c471def3f" );
-            level.var_a8f38afe[ localclientnum ] thread animation::play( #"hash_2e86969bc8c423f4" );
+            level.var_a8f38afe[ localclientnum ] animation::play( #"p8_fxanim_zm_esc_bathtub_filling_2" );
+            level.var_a8f38afe[ localclientnum ] thread animation::play( #"p8_fxanim_zm_esc_bathtub_filling_idle_2" );
             break;
         case 4:
-            level.var_a8f38afe[ localclientnum ] animation::play( #"hash_6f7a387c471ded8c" );
-            level.var_a8f38afe[ localclientnum ] thread animation::play( #"hash_2e86979bc8c425a7" );
+            level.var_a8f38afe[ localclientnum ] animation::play( #"p8_fxanim_zm_esc_bathtub_filling_3" );
+            level.var_a8f38afe[ localclientnum ] thread animation::play( #"p8_fxanim_zm_esc_bathtub_filling_idle_3" );
             break;
         case 5:
-            level.var_a8f38afe[ localclientnum ] animation::play( #"hash_6f7a377c471debd9" );
-            level.var_a8f38afe[ localclientnum ] thread animation::play( #"hash_2e86949bc8c4208e" );
+            level.var_a8f38afe[ localclientnum ] animation::play( #"p8_fxanim_zm_esc_bathtub_filling_4" );
+            level.var_a8f38afe[ localclientnum ] thread animation::play( #"p8_fxanim_zm_esc_bathtub_filling_idle_4" );
             break;
         case 6:
-            level.var_a8f38afe[ localclientnum ] animation::play( #"hash_6f7a367c471dea26" );
-            level.var_a8f38afe[ localclientnum ] thread animation::play( #"hash_2e86959bc8c42241" );
+            level.var_a8f38afe[ localclientnum ] animation::play( #"p8_fxanim_zm_esc_bathtub_filling_5" );
+            level.var_a8f38afe[ localclientnum ] thread animation::play( #"p8_fxanim_zm_esc_bathtub_filling_idle_5" );
             break;
         case 7:
-            level.var_a8f38afe[ localclientnum ] animation::play( #"hash_6f7a357c471de873" );
-            level.var_a8f38afe[ localclientnum ] thread animation::play( #"hash_4a67388210398d52" );
+            level.var_a8f38afe[ localclientnum ] animation::play( #"p8_fxanim_zm_esc_bathtub_filling_6" );
+            level.var_a8f38afe[ localclientnum ] thread animation::play( #"p8_fxanim_zm_esc_bathtub_filling_idle_out" );
             break;
         case 8:
             level.var_a8f38afe[ localclientnum ] animation::play( #"p8_fxanim_zm_esc_bathtub_filling_drain" );
-            level.var_a8f38afe[ localclientnum ] thread animation::play( #"hash_5f152090f657bfe" );
+            level.var_a8f38afe[ localclientnum ] thread animation::play( #"p8_fxanim_zm_esc_bathtub_filling_idle_start" );
             break;
     }
 }

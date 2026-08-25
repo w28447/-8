@@ -545,9 +545,9 @@ function apply_damage( weapon, damage, smeansofdeath, eattacker, shitloc )
         var_9bb721d3 = var_e27873f2 * var_b1417997 / var_aacd5df1;
         self.armor -= int( ceil( armor_damage ) );
         
-        if ( isdefined( self.var_3f1410dd ) )
+        if ( isdefined( self.armor_session ) )
         {
-            self.var_3f1410dd.damage_taken += int( ceil( armor_damage ) );
+            self.armor_session.damage_taken += int( ceil( armor_damage ) );
         }
         
         if ( var_9bb721d3 > 0 )

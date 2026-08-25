@@ -1,7 +1,7 @@
 {
     "name": "#hash_6bc2a58adf7b6492",
-    "model": "#hash_5aae7c7a50e8654c",
-    "unk20": "#hash_668cb89cc257053a",
+    "model": "#veh_t8_civ_crossover_police_dest_mp_embassy",
+    "unk20": "#veh_t8_civ_crossover_dead_police_mp_embassy",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

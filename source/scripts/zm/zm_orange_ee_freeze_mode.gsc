@@ -314,7 +314,7 @@ function function_9364acc1()
     }
     
     self waittill( #"water_player_freeze_broken" );
-    self playsound( #"hash_2f8c9575cb36a298" );
+    self playsound( #"evt_freeze_break" );
     self.var_7dc2d507 = 0;
     self zm_orange_water::function_46c3bbf7();
     self clientfield::set( "" + #"water_player_freeze_fx", 0 );

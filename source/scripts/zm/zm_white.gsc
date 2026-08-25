@@ -372,7 +372,7 @@ function function_ba054e47()
         exploder::stop_exploder( "fxexp_toxic_gas_pap_tube" );
         e_pap_door playsound( #"hash_1ca46207f2ed8876" );
         e_pap_door rotateyaw( 180, 1.5 );
-        e_pap_door playsound( #"hash_41e4c1b28052a5f3" );
+        e_pap_door playsound( #"evt_pap_door_end" );
         wait 1.5;
         e_pap_door_blocker hide();
         e_pap_door_blocker notsolid();
@@ -381,7 +381,7 @@ function function_ba054e47()
         e_pap_door_blocker solid();
         e_pap_door playsound( #"hash_1ca46207f2ed8876" );
         e_pap_door rotateyaw( -180, 1.5 );
-        e_pap_door playsound( #"hash_41e4c1b28052a5f3" );
+        e_pap_door playsound( #"evt_pap_door_end" );
         exploder::exploder( "fxexp_toxic_gas_pap_tube" );
     }
 }
@@ -396,7 +396,7 @@ function function_fb29042d()
     e_pap_door_blocker = getent( "pap_door_blocker", "targetname" );
     e_pap_door playsound( #"hash_1ca46207f2ed8876" );
     e_pap_door rotateyaw( 180, 1.5 );
-    e_pap_door playsound( #"hash_41e4c1b28052a5f3" );
+    e_pap_door playsound( #"evt_pap_door_end" );
     wait 1.5;
     e_pap_door_blocker hide();
     e_pap_door_blocker notsolid();

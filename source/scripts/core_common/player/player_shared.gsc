@@ -940,7 +940,7 @@ function function_38de2d5a( notification )
 // Size: 0xc6
 function init_heal( var_cd7b9255, delay_enabled )
 {
-    default_heal = { #enabled:var_cd7b9255, #rate:0, #var_bc840360:0, #var_c8777194:delay_enabled, #var_b8c7d886:0, #var_a1cac2f1:0 };
+    default_heal = { #enabled:var_cd7b9255, #rate:0, #target_health:0, #var_c8777194:delay_enabled, #var_b8c7d886:0, #var_a1cac2f1:0 };
     
     if ( !isdefined( self.heal ) )
     {

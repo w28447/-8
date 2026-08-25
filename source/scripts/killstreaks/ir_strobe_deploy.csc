@@ -16,8 +16,8 @@ function init_shared()
         level.var_9c4cdb79 = [];
     }
     
-    forcestreamxmodel( #"hash_5f05548d8aa53dc1" );
-    forcestreamxmodel( #"hash_5770a33506bee5a4" );
+    forcestreamxmodel( #"wpn_t8_eqp_smoke_grenade_world_yellow" );
+    forcestreamxmodel( #"wpn_t8_eqp_smoke_grenade_world_red" );
 }
 
 // Namespace ir_strobe/ir_strobe_deploy
@@ -179,7 +179,7 @@ function function_3e8d9b27( validlocation, localclientnum )
 {
     if ( validlocation )
     {
-        level.var_9c4cdb79[ localclientnum ] setmodel( #"hash_5f05548d8aa53dc1" );
+        level.var_9c4cdb79[ localclientnum ] setmodel( #"wpn_t8_eqp_smoke_grenade_world_yellow" );
         
         if ( isdefined( level.var_5af693e8 ) )
         {
@@ -190,7 +190,7 @@ function function_3e8d9b27( validlocation, localclientnum )
     }
     else
     {
-        level.var_9c4cdb79[ localclientnum ] setmodel( #"hash_5770a33506bee5a4" );
+        level.var_9c4cdb79[ localclientnum ] setmodel( #"wpn_t8_eqp_smoke_grenade_world_red" );
         
         if ( isdefined( level.var_5af693e8 ) )
         {

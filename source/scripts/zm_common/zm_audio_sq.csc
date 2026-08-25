@@ -24,7 +24,7 @@ function function_6624b679( localclientnum, oldval, newval, bnewent, binitialsna
         up = anglestoup( self.angles + ( 0, -90, -90 ) );
         forward = anglestoforward( self.angles + ( 0, -90, -90 ) );
         playfx( localclientnum, level._effect[ #"medallion_exp" ], self.origin, forward, up );
-        playsound( localclientnum, #"hash_23ed06ab941bc579", self.origin );
+        playsound( localclientnum, #"zmb_sq_medallion_break", self.origin );
     }
 }
 

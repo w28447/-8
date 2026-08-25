@@ -748,7 +748,7 @@ function function_ee32c750()
     while ( true )
     {
         self waittill( #"trigger" );
-        self playsound( #"hash_342cdac10639915e" );
+        self playsound( #"zmb_tedd_power_on" );
         self.stub notify( #"play_audio" );
     }
 }
@@ -838,7 +838,7 @@ function function_cf1b4a16()
             if ( player istouching( self ) )
             {
                 player playrumbleonentity( "damage_heavy" );
-                player playsound( #"hash_5af2a9d11f007b9" );
+                player playsound( #"zmb_player_electrocuted_oneshot" );
                 player status_effect::status_effect_apply( shock_status_effect, undefined, self, 1 );
             }
         }

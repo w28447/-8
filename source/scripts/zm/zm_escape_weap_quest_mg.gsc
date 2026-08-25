@@ -1517,7 +1517,7 @@ function function_b00fd241()
 // Size: 0x34
 function function_6fe98729( e_holder, w_item )
 {
-    self playsound( #"hash_230737b2535a3374" );
+    self playsound( #"zmb_crafting_pickup_generic" );
 }
 
 // Namespace namespace_fc5c8455/zm_escape_weap_quest_mg

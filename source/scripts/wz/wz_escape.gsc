@@ -697,7 +697,7 @@ function function_69e60a10( var_e4204b3 )
             
             if ( level.players[ 0 ] util::is_player_looking_at( dynent.origin, 0.8, 0 ) && var_91d1913b <= 6000 )
             {
-                if ( isdefined( dynent.var_15d44120 ) && dynent.var_15d44120 !== #"hash_1dcbe8021fb16344" )
+                if ( isdefined( dynent.var_15d44120 ) && dynent.var_15d44120 !== #"p8_fxanim_wz_supply_stash_magic_box_mod" )
                 {
                     function_a476d876( dynent.origin, dynent.angles, ( 1, 0.5, 0 ), 10 );
                     

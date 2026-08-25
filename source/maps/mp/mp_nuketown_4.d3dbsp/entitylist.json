@@ -11902,7 +11902,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_10b4231a611a9bf",
+                    "value": "#amb_door_howl",
                     "unk1a": true
                 },
                 {
@@ -11968,7 +11968,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_10b4231a611a9bf",
+                    "value": "#amb_door_howl",
                     "unk1a": true
                 },
                 {
@@ -12034,7 +12034,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_10b4231a611a9bf",
+                    "value": "#amb_door_howl",
                     "unk1a": true
                 },
                 {
@@ -12100,7 +12100,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_10b4231a611a9bf",
+                    "value": "#amb_door_howl",
                     "unk1a": true
                 },
                 {
@@ -12166,7 +12166,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_10b4231a611a9bf",
+                    "value": "#amb_door_howl",
                     "unk1a": true
                 },
                 {
@@ -12232,7 +12232,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_10b4231a611a9bf",
+                    "value": "#amb_door_howl",
                     "unk1a": true
                 },
                 {
@@ -12298,7 +12298,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_10b4231a611a9bf",
+                    "value": "#amb_door_howl",
                     "unk1a": true
                 },
                 {
@@ -12364,7 +12364,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_10b4231a611a9bf",
+                    "value": "#amb_door_howl",
                     "unk1a": true
                 },
                 {
@@ -12430,7 +12430,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_10b4231a611a9bf",
+                    "value": "#amb_door_howl",
                     "unk1a": true
                 },
                 {
@@ -12496,7 +12496,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_10b4231a611a9bf",
+                    "value": "#amb_door_howl",
                     "unk1a": true
                 },
                 {
@@ -12562,7 +12562,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_10b4231a611a9bf",
+                    "value": "#amb_door_howl",
                     "unk1a": true
                 },
                 {
@@ -12628,7 +12628,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_10b4231a611a9bf",
+                    "value": "#amb_door_howl",
                     "unk1a": true
                 },
                 {
@@ -12694,7 +12694,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_10b4231a611a9bf",
+                    "value": "#amb_door_howl",
                     "unk1a": true
                 },
                 {
@@ -12760,7 +12760,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_10b4231a611a9bf",
+                    "value": "#amb_door_howl",
                     "unk1a": true
                 },
                 {
@@ -12826,7 +12826,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_10b4231a611a9bf",
+                    "value": "#amb_door_howl",
                     "unk1a": true
                 },
                 {
@@ -12892,7 +12892,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_10b4231a611a9bf",
+                    "value": "#amb_door_howl",
                     "unk1a": true
                 },
                 {
@@ -13294,7 +13294,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_4747e2f1172b8ce0",
+                    "value": "#amb_comp_broken_2",
                     "unk1a": true
                 },
                 {
@@ -16796,7 +16796,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_202fe28cad164bb4",
+                    "value": "#amb_rattle_bottles",
                     "unk1a": true
                 },
                 {
@@ -16856,7 +16856,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_202fe28cad164bb4",
+                    "value": "#amb_rattle_bottles",
                     "unk1a": true
                 },
                 {
@@ -16916,7 +16916,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_202fe28cad164bb4",
+                    "value": "#amb_rattle_bottles",
                     "unk1a": true
                 },
                 {
@@ -43700,7 +43700,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_36ec7a7c1e3d6576",
+                    "value": "#p8_zm_zod_luggage_handbag_leather",
                     "unk1a": true
                 },
                 {
@@ -43809,7 +43809,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_36ec7a7c1e3d6576",
+                    "value": "#p8_zm_zod_luggage_handbag_leather",
                     "unk1a": true
                 },
                 {
@@ -43918,7 +43918,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_36ec7a7c1e3d6576",
+                    "value": "#p8_zm_zod_luggage_handbag_leather",
                     "unk1a": true
                 },
                 {
@@ -51378,7 +51378,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_53d9b778f4442249",
+                    "value": "#p8_nt4_chicken_coop_shelve_roof_snow",
                     "unk1a": true
                 },
                 {
@@ -53983,7 +53983,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_576a7ae40931f609",
+                    "value": "#p8_zm_zod_luggage_handbag_leather_02",
                     "unk1a": true
                 },
                 {
@@ -54086,7 +54086,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_576a7ae40931f609",
+                    "value": "#p8_zm_zod_luggage_handbag_leather_02",
                     "unk1a": true
                 },
                 {
@@ -54189,7 +54189,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_576a7ae40931f609",
+                    "value": "#p8_zm_zod_luggage_handbag_leather_02",
                     "unk1a": true
                 },
                 {
@@ -54291,7 +54291,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_71b17255bad136c4",
+                    "value": "#p8_nt4_train_folding_table",
                     "unk1a": true
                 },
                 {
@@ -54974,7 +54974,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_63b6405d11b43534",
+                    "value": "#p8_mannequin_female_coat_01_fullbody_pose_4_lod0",
                     "unk1a": true
                 },
                 {
@@ -55065,7 +55065,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_63b6405d11b43534",
+                    "value": "#p8_mannequin_female_coat_01_fullbody_pose_4_lod0",
                     "unk1a": true
                 },
                 {
@@ -56339,7 +56339,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_21ce397966c45fd1",
+                    "value": "#p8_mannequin_female_coat_04_fullbody_pose_4_lod0",
                     "unk1a": true
                 },
                 {
@@ -56430,7 +56430,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_21ce397966c45fd1",
+                    "value": "#p8_mannequin_female_coat_04_fullbody_pose_4_lod0",
                     "unk1a": true
                 },
                 {
@@ -57158,7 +57158,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_7551b38ac420cf5f",
+                    "value": "#p8_mannequin_female_coat_02_fullbody_pose_4_lod0",
                     "unk1a": true
                 },
                 {

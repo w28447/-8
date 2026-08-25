@@ -227,11 +227,11 @@ function hit_alert_sfx_mp( mod, inflictor, perkfeedback, weapon, victim, psoffse
                     {
                         if ( weapons::isheadshot( shitloc, mod ) )
                         {
-                            hitalias = #"hash_616dd8ea01d089ac";
+                            hitalias = #"mpl_hit_head_fatal";
                         }
                         else
                         {
-                            hitalias = #"hash_31e38d8520839566";
+                            hitalias = #"mpl_hit_body_fatal";
                         }
                     }
                     else if ( weapons::isheadshot( shitloc, mod ) )

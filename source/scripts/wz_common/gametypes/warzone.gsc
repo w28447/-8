@@ -912,10 +912,10 @@ function on_player_spawned()
         }
     #/
     
-    var_7eb8f61a = isdefined( getgametypesetting( #"wzplayerinsertiontypeindex" ) ) ? getgametypesetting( #"wzplayerinsertiontypeindex" ) : 0;
+    insertion_type = isdefined( getgametypesetting( #"wzplayerinsertiontypeindex" ) ) ? getgametypesetting( #"wzplayerinsertiontypeindex" ) : 0;
     self clientfield::set_to_player( "realtime_multiplay", 1 );
     
-    switch ( var_7eb8f61a )
+    switch ( insertion_type )
     {
         case 0:
             self thread player_reinsertion::function_584c9f1();
@@ -953,19 +953,19 @@ function on_end_round( end_type )
 // Params 2
 // Checksum 0x882bcc22, Offset: 0x3dc0
 // Size: 0x6a
-function function_74a8f2ed( var_d3ba512b, var_c0856555 )
+function function_74a8f2ed( left_team, right_team )
 {
-    if ( var_d3ba512b.score > var_c0856555.score )
+    if ( left_team.score > right_team.score )
     {
         return 1;
     }
     
-    if ( var_c0856555.score > var_d3ba512b.score )
+    if ( right_team.score > left_team.score )
     {
         return 0;
     }
     
-    return function_39971b81( var_d3ba512b, var_c0856555 );
+    return function_39971b81( left_team, right_team );
 }
 
 // Namespace warzone/warzone
@@ -1128,44 +1128,44 @@ function function_3915e148( team, players )
 // Params 2
 // Checksum 0xe3f3c6e5, Offset: 0x4690
 // Size: 0x172, Type: bool
-function function_39971b81( var_d3ba512b, var_c0856555 )
+function function_39971b81( left_team, right_team )
 {
-    if ( isdefined( var_d3ba512b.last_alive ) && !isdefined( var_c0856555.last_alive ) )
+    if ( isdefined( left_team.last_alive ) && !isdefined( right_team.last_alive ) )
     {
         return true;
     }
     
-    if ( isdefined( var_c0856555.last_alive ) && !isdefined( var_d3ba512b.last_alive ) )
+    if ( isdefined( right_team.last_alive ) && !isdefined( left_team.last_alive ) )
     {
         return false;
     }
     
-    if ( isdefined( var_d3ba512b.last_alive ) && var_d3ba512b.last_alive.deathtime > var_c0856555.last_alive.deathtime )
+    if ( isdefined( left_team.last_alive ) && left_team.last_alive.deathtime > right_team.last_alive.deathtime )
     {
         return true;
     }
     
-    if ( isdefined( var_d3ba512b.last_alive ) && var_c0856555.last_alive.deathtime > var_d3ba512b.last_alive.deathtime )
+    if ( isdefined( left_team.last_alive ) && right_team.last_alive.deathtime > left_team.last_alive.deathtime )
     {
         return false;
     }
     
-    if ( var_d3ba512b.kills > var_c0856555.kills )
+    if ( left_team.kills > right_team.kills )
     {
         return true;
     }
     
-    if ( var_c0856555.kills > var_d3ba512b.kills )
+    if ( right_team.kills > left_team.kills )
     {
         return false;
     }
     
-    if ( var_d3ba512b.damage > var_c0856555.damage )
+    if ( left_team.damage > right_team.damage )
     {
         return true;
     }
     
-    if ( var_c0856555.damage > var_d3ba512b.damage )
+    if ( right_team.damage > left_team.damage )
     {
         return false;
     }

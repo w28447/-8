@@ -4578,13 +4578,13 @@
         {
             "value": 104,
             "next": 65535,
-            "name": "#hash_41d87702ee0c267f",
+            "name": "#evt_bottle_label_flash",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_41d87702ee0c267f",
+                    "name": "#evt_bottle_label_flash",
                     "assetId": "#hash_26df0fb43fa3c90c",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -4627,14 +4627,14 @@
         {
             "value": 210,
             "next": 76,
-            "name": "#hash_3b0e07fe9529c81d",
+            "name": "#evt_bottle_label_sparks",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3b0e07fe9529c81d",
-                    "secondaryname": "#hash_41d87702ee0c267f",
+                    "name": "#evt_bottle_label_sparks",
+                    "secondaryname": "#evt_bottle_label_flash",
                     "assetId": "#hash_63b0622fcfdea8a4",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -4673,8 +4673,8 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_3b0e07fe9529c81d",
-                    "secondaryname": "#hash_41d87702ee0c267f",
+                    "name": "#evt_bottle_label_sparks",
+                    "secondaryname": "#evt_bottle_label_flash",
                     "assetId": "#hash_782fc3f9b9b5f709",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -4713,8 +4713,8 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_3b0e07fe9529c81d",
-                    "secondaryname": "#hash_41d87702ee0c267f",
+                    "name": "#evt_bottle_label_sparks",
+                    "secondaryname": "#evt_bottle_label_flash",
                     "assetId": "#hash_2853402f154edfde",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -4753,8 +4753,8 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_3b0e07fe9529c81d",
-                    "secondaryname": "#hash_41d87702ee0c267f",
+                    "name": "#evt_bottle_label_sparks",
+                    "secondaryname": "#evt_bottle_label_flash",
                     "assetId": "#hash_42551bfbba600afb",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -5218,13 +5218,13 @@
         {
             "value": 28,
             "next": 65535,
-            "name": "#hash_1564013416aab16a",
+            "name": "#evt_cauldron_lp",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1564013416aab16a",
+                    "name": "#evt_cauldron_lp",
                     "assetId": "#hash_67ef6fdf2d7782d5",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -6600,13 +6600,13 @@
         {
             "value": 251,
             "next": 65535,
-            "name": "#hash_66201be968991d93",
+            "name": "#evt_globs_exit",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_66201be968991d93",
+                    "name": "#evt_globs_exit",
                     "assetId": "#hash_285493c2730688e9",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -6645,7 +6645,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_66201be968991d93",
+                    "name": "#evt_globs_exit",
                     "assetId": "#hash_1906cc5568564404",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -6684,7 +6684,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_66201be968991d93",
+                    "name": "#evt_globs_exit",
                     "assetId": "#hash_1e74920db4b18cdb",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -6723,7 +6723,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_66201be968991d93",
+                    "name": "#evt_globs_exit",
                     "assetId": "#hash_68b70601dc083b3e",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -6762,7 +6762,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_66201be968991d93",
+                    "name": "#evt_globs_exit",
                     "assetId": "#hash_2f517ee2c525cb45",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -6801,7 +6801,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_66201be968991d93",
+                    "name": "#evt_globs_exit",
                     "assetId": "#hash_d6b193f6755cb10",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -6840,7 +6840,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_66201be968991d93",
+                    "name": "#evt_globs_exit",
                     "assetId": "#hash_59ae2ed76815b8f7",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -6879,7 +6879,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_66201be968991d93",
+                    "name": "#evt_globs_exit",
                     "assetId": "#hash_80750d6ff5649a",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -6918,7 +6918,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_66201be968991d93",
+                    "name": "#evt_globs_exit",
                     "assetId": "#hash_5a6f3d0d53a5d2f1",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -6957,7 +6957,7 @@
                     "unk178": "#hash_16000a0808"
                 },
                 {
-                    "name": "#hash_66201be968991d93",
+                    "name": "#evt_globs_exit",
                     "assetId": "#hash_1a8085489f7de8ac",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7056,7 +7056,7 @@
             "aliases": [
                 {
                     "name": "#hash_3e1e95a35dedc6bc",
-                    "assetId": "#hash_f65fb0e160adb15",
+                    "assetId": "#zmb\elixir_lab\machine_startup.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
                     "assetFileNameRelease": "#core_frontend.all",
@@ -7196,13 +7196,13 @@
         {
             "value": 216,
             "next": 65535,
-            "name": "#hash_1f639355b64062f4",
+            "name": "#evt_mixer_fill",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1f639355b64062f4",
+                    "name": "#evt_mixer_fill",
                     "assetId": "#hash_116a6cc622d03eeb",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7245,13 +7245,13 @@
         {
             "value": 194,
             "next": 123,
-            "name": "#hash_18d702e7e4c49296",
+            "name": "#evt_mixer_finish",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_18d702e7e4c49296",
+                    "name": "#evt_mixer_finish",
                     "assetId": "#hash_3bbf25f8847f8e9a",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7302,7 +7302,7 @@
                 {
                     "name": "#hash_683405fd781dc83e",
                     "secondaryname": "#hash_2b64f1fd559f5fb1",
-                    "assetId": "#hash_3594900d4e77f804",
+                    "assetId": "#zmb\elixir_lab\mixer_tone_1.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
                     "assetFileNameRelease": "#core_frontend.all",
@@ -7353,7 +7353,7 @@
                 {
                     "name": "#hash_43d533c519911075",
                     "secondaryname": "#hash_2b64f1fd559f5fb1",
-                    "assetId": "#hash_4bdf429aab477f45",
+                    "assetId": "#zmb\elixir_lab\mixer_tone_4.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
                     "assetFileNameRelease": "#core_frontend.all",
@@ -7404,7 +7404,7 @@
                 {
                     "name": "#hash_7d63a29bb98b58c9",
                     "secondaryname": "#hash_2b64f1fd559f5fb1",
-                    "assetId": "#hash_544c9b9c229ef3e",
+                    "assetId": "#zmb\elixir_lab\mixer_tone_3.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
                     "assetFileNameRelease": "#core_frontend.all",
@@ -7454,7 +7454,7 @@
             "aliases": [
                 {
                     "name": "#hash_2b64f1fd559f5fb1",
-                    "assetId": "#hash_2e720e179a28a60e",
+                    "assetId": "#zmb\elixir_lab\mixer_tone_lfe.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
                     "assetFileNameRelease": "#core_frontend.all",
@@ -7556,7 +7556,7 @@
                 {
                     "name": "#hash_5467a5b27e7e27b2",
                     "secondaryname": "#hash_2b64f1fd559f5fb1",
-                    "assetId": "#hash_29f8dcf74d777f10",
+                    "assetId": "#zmb\elixir_lab\mixer_tone_5.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
                     "assetFileNameRelease": "#core_frontend.all",
@@ -8041,13 +8041,13 @@
         {
             "value": 165,
             "next": 65535,
-            "name": "#hash_49d438d1a1ba28b9",
+            "name": "#evt_show_talisman_cmn",
             "sequence": 0,
             "cullDistance": 11000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_49d438d1a1ba28b9",
+                    "name": "#evt_show_talisman_cmn",
                     "secondaryname": "#hash_28203a9582d51169",
                     "assetId": "#uin/2k18/zmb_cac/zmb_talis_cmn.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -8091,13 +8091,13 @@
         {
             "value": 66,
             "next": 65535,
-            "name": "#hash_2ff41d0510d442c8",
+            "name": "#evt_show_talisman_epic",
             "sequence": 0,
             "cullDistance": 11000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2ff41d0510d442c8",
+                    "name": "#evt_show_talisman_epic",
                     "secondaryname": "#hash_28203a9582d51169",
                     "assetId": "#uin/2k18/zmb_cac/zmb_talis_epic.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -8141,13 +8141,13 @@
         {
             "value": 61,
             "next": 138,
-            "name": "#hash_2c8d10ab46ff7e64",
+            "name": "#evt_show_talisman_legend",
             "sequence": 0,
             "cullDistance": 11000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2c8d10ab46ff7e64",
+                    "name": "#evt_show_talisman_legend",
                     "secondaryname": "#hash_28203a9582d51169",
                     "assetId": "#uin/2k18/zmb_cac/zmb_talis_legend.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -8191,13 +8191,13 @@
         {
             "value": 67,
             "next": 65535,
-            "name": "#hash_7d9e04c47d70ca1d",
+            "name": "#evt_show_talisman_rare",
             "sequence": 0,
             "cullDistance": 11000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7d9e04c47d70ca1d",
+                    "name": "#evt_show_talisman_rare",
                     "secondaryname": "#hash_28203a9582d51169",
                     "assetId": "#uin/2k18/zmb_cac/zmb_talis_rare.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -8290,13 +8290,13 @@
         {
             "value": 157,
             "next": 65535,
-            "name": "#hash_2409a80bfb7d6955",
+            "name": "#evt_show_talisman_ultra",
             "sequence": 0,
             "cullDistance": 11000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2409a80bfb7d6955",
+                    "name": "#evt_show_talisman_ultra",
                     "secondaryname": "#hash_28203a9582d51169",
                     "assetId": "#uin/2k18/zmb_cac/zmb_talis_ultra.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -8340,13 +8340,13 @@
         {
             "value": 102,
             "next": 65535,
-            "name": "#hash_3ce966eb03cd931e",
+            "name": "#evt_talisman_launch",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3ce966eb03cd931e",
+                    "name": "#evt_talisman_launch",
                     "assetId": "#hash_11ddf2eb559852f5",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8438,13 +8438,13 @@
         {
             "value": 128,
             "next": 148,
-            "name": "#hash_769eefb400c17b47",
+            "name": "#evt_talisman_tube",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_769eefb400c17b47",
+                    "name": "#evt_talisman_tube",
                     "assetId": "#hash_244c945c132de876",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -10285,13 +10285,13 @@
         {
             "value": 22,
             "next": 178,
-            "name": "#hash_7d7df86034c682af",
+            "name": "#uin_cac_equip_spi",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7d7df86034c682af",
+                    "name": "#uin_cac_equip_spi",
                     "secondaryname": "#uin_cac_equip_base",
                     "assetId": "#uin/2k18/cac/cac_equip_sp_issue.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -10684,13 +10684,13 @@
         {
             "value": 252,
             "next": 40,
-            "name": "#hash_52cd8b4f4906745a",
+            "name": "#uin_cac_gear_remove",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_52cd8b4f4906745a",
+                    "name": "#uin_cac_gear_remove",
                     "secondaryname": "#cac_equipment_remove",
                     "assetId": "#uin/2k18/cac/cac_rem_gear.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -11281,13 +11281,13 @@
         {
             "value": 39,
             "next": 160,
-            "name": "#hash_5a8150e868f4b727",
+            "name": "#uin_cac_perk_remove",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5a8150e868f4b727",
+                    "name": "#uin_cac_perk_remove",
                     "assetId": "#uin/2k18/cac/cac_perk_patch_off.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -11480,14 +11480,14 @@
         {
             "value": 0,
             "next": 212,
-            "name": "#hash_3e1655b2c4802a72",
+            "name": "#uin_cac_perk_skulker",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3e1655b2c4802a72",
-                    "secondaryname": "#hash_858b7e73692ff70",
+                    "name": "#uin_cac_perk_skulker",
+                    "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#hash_6e269ddc958ac98f",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -11530,13 +11530,13 @@
         {
             "value": 88,
             "next": 65535,
-            "name": "#hash_297da3d8b32d91aa",
+            "name": "#uin_cac_perk_teamlink",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_297da3d8b32d91aa",
+                    "name": "#uin_cac_perk_teamlink",
                     "secondaryname": "#uin_cac_perk_base",
                     "assetId": "#uin/2k18/cac/cac_perk_tlink.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -11879,13 +11879,13 @@
         {
             "value": 163,
             "next": 65535,
-            "name": "#hash_4ee7e8467c97d81d",
+            "name": "#uin_cac_scorestreak_drn",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4ee7e8467c97d81d",
+                    "name": "#uin_cac_scorestreak_drn",
                     "secondaryname": "#uin_cac_scorestreak_base",
                     "assetId": "#uin/2k18/cac/cac_ss_drone.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -12428,13 +12428,13 @@
         {
             "value": 77,
             "next": 225,
-            "name": "#hash_2c0ea1d5893448bc",
+            "name": "#uin_cac_wc_pick",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2c0ea1d5893448bc",
+                    "name": "#uin_cac_wc_pick",
                     "assetId": "#uin/2k18/cac/cac_wildcard_pick.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -12477,13 +12477,13 @@
         {
             "value": 25,
             "next": 226,
-            "name": "#hash_fbd0e0bc3809f89",
+            "name": "#uin_cac_wc_remove",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_fbd0e0bc3809f89",
+                    "name": "#uin_cac_wc_remove",
                     "assetId": "#uin/2k18/cac/cac_wildcard_remove.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -12725,13 +12725,13 @@
         {
             "value": 151,
             "next": 65535,
-            "name": "#hash_2b102e3884d581a2",
+            "name": "#uin_cac_wpn_melee",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2b102e3884d581a2",
+                    "name": "#uin_cac_wpn_melee",
                     "secondaryname": "#uin_cac_wpn_base",
                     "assetId": "#uin/2k18/cac/cac_attach_knife.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -12825,13 +12825,13 @@
         {
             "value": 232,
             "next": 65535,
-            "name": "#hash_58cf7a81be5ea28e",
+            "name": "#uin_cac_wpn_remove",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_58cf7a81be5ea28e",
+                    "name": "#uin_cac_wpn_remove",
                     "secondaryname": "#cac_equipment_remove",
                     "assetId": "#uin/2k18/cac/cac_rem_wpn.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -13075,13 +13075,13 @@
         {
             "value": 48,
             "next": 233,
-            "name": "#hash_411dc31a47d2128",
+            "name": "#uin_zcac_elixir_classic",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_411dc31a47d2128",
+                    "name": "#uin_zcac_elixir_classic",
                     "assetId": "#uin/2k18/zmb_cac/zmb_elixir_classic.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -13124,13 +13124,13 @@
         {
             "value": 45,
             "next": 241,
-            "name": "#hash_787968cd3a7194fe",
+            "name": "#uin_zcac_elixir_cmn",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_787968cd3a7194fe",
+                    "name": "#uin_zcac_elixir_cmn",
                     "assetId": "#uin/2k18/zmb_cac/zmb_elixir_cmn.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -13173,13 +13173,13 @@
         {
             "value": 47,
             "next": 65535,
-            "name": "#hash_3d895acc4df6d435",
+            "name": "#uin_zcac_elixir_epic",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3d895acc4df6d435",
+                    "name": "#uin_zcac_elixir_epic",
                     "assetId": "#uin/2k18/zmb_cac/zmb_elixir_epic.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -13271,13 +13271,13 @@
         {
             "value": 36,
             "next": 238,
-            "name": "#hash_33793b2c65f24218",
+            "name": "#uin_zcac_elixir_rare",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_33793b2c65f24218",
+                    "name": "#uin_zcac_elixir_rare",
                     "assetId": "#uin/2k18/zmb_cac/zmb_elixir_rare.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -13369,14 +13369,14 @@
         {
             "value": 10,
             "next": 242,
-            "name": "#hash_7a93498c83eacf00",
+            "name": "#uin_zcac_equip_acid",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7a93498c83eacf00",
-                    "secondaryname": "#hash_3a26a8a574ddee20",
+                    "name": "#uin_zcac_equip_acid",
+                    "secondaryname": "#uin_zcac_equip_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_equip_acid.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -13419,13 +13419,13 @@
         {
             "value": 122,
             "next": 65535,
-            "name": "#hash_3a26a8a574ddee20",
+            "name": "#uin_zcac_equip_base",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3a26a8a574ddee20",
+                    "name": "#uin_zcac_equip_base",
                     "assetId": "#uin/2k18/cac/cac_equip_base.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -13468,14 +13468,14 @@
         {
             "value": 53,
             "next": 65535,
-            "name": "#hash_73e343c998ad2c21",
+            "name": "#uin_zcac_equip_claymore",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_73e343c998ad2c21",
-                    "secondaryname": "#hash_3a26a8a574ddee20",
+                    "name": "#uin_zcac_equip_claymore",
+                    "secondaryname": "#uin_zcac_equip_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_equip_claymore.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -13518,14 +13518,14 @@
         {
             "value": 64,
             "next": 250,
-            "name": "#hash_1cd3cd864eef1bbd",
+            "name": "#uin_zcac_equip_frag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1cd3cd864eef1bbd",
-                    "secondaryname": "#hash_3a26a8a574ddee20",
+                    "name": "#uin_zcac_equip_frag",
+                    "secondaryname": "#uin_zcac_equip_base",
                     "assetId": "#uin/2k18/cac/cac_equip_frag.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -13575,7 +13575,7 @@
             "aliases": [
                 {
                     "name": "#hash_2791d4d81c896e32",
-                    "secondaryname": "#hash_3a26a8a574ddee20",
+                    "secondaryname": "#uin_zcac_equip_base",
                     "assetId": "#uin/2k18/cac/cac_ss_sentry.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -13618,14 +13618,14 @@
         {
             "value": 71,
             "next": 253,
-            "name": "#hash_4f92ee121ea5274e",
+            "name": "#uin_zcac_equip_wraith",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4f92ee121ea5274e",
-                    "secondaryname": "#hash_3a26a8a574ddee20",
+                    "name": "#uin_zcac_equip_wraith",
+                    "secondaryname": "#uin_zcac_equip_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_equip_wraithfire.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -13717,14 +13717,14 @@
         {
             "value": 86,
             "next": 65535,
-            "name": "#hash_2472ca6d4db14e9b",
+            "name": "#uin_zcac_perk_bandolier",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2472ca6d4db14e9b",
-                    "secondaryname": "#hash_858b7e73692ff70",
+                    "name": "#uin_zcac_perk_bandolier",
+                    "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_bandolier.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -13767,13 +13767,13 @@
         {
             "value": 80,
             "next": 65535,
-            "name": "#hash_858b7e73692ff70",
+            "name": "#uin_zcac_perk_base",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_858b7e73692ff70",
+                    "name": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_base.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -13816,14 +13816,14 @@
         {
             "value": 167,
             "next": 65535,
-            "name": "#hash_5e3b0c832fd909b3",
+            "name": "#uin_zcac_perk_blaze",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5e3b0c832fd909b3",
-                    "secondaryname": "#hash_858b7e73692ff70",
+                    "name": "#uin_zcac_perk_blaze",
+                    "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#hash_723f3f8491009448",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -13866,14 +13866,14 @@
         {
             "value": 113,
             "next": 65535,
-            "name": "#hash_17c3fbbc3824169f",
+            "name": "#uin_zcac_perk_deadshot",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_17c3fbbc3824169f",
-                    "secondaryname": "#hash_858b7e73692ff70",
+                    "name": "#uin_zcac_perk_deadshot",
+                    "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_deadshot.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -13923,7 +13923,7 @@
             "aliases": [
                 {
                     "name": "#hash_b5c2440537367ac",
-                    "secondaryname": "#hash_858b7e73692ff70",
+                    "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_dwish.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -13973,7 +13973,7 @@
             "aliases": [
                 {
                     "name": "#hash_6ad025e594b09d05",
-                    "secondaryname": "#hash_858b7e73692ff70",
+                    "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_echerry.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14023,7 +14023,7 @@
             "aliases": [
                 {
                     "name": "#hash_197c5cdc0bd5aae4",
-                    "secondaryname": "#hash_858b7e73692ff70",
+                    "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#hash_1dd6e0b9ce7cadbd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14066,14 +14066,14 @@
         {
             "value": 90,
             "next": 264,
-            "name": "#hash_51a00369f802b264",
+            "name": "#uin_zcac_perk_mule",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_51a00369f802b264",
-                    "secondaryname": "#hash_858b7e73692ff70",
+                    "name": "#uin_zcac_perk_mule",
+                    "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_mule.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14123,7 +14123,7 @@
             "aliases": [
                 {
                     "name": "#hash_69150773285110d4",
-                    "secondaryname": "#hash_858b7e73692ff70",
+                    "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_percept.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14173,7 +14173,7 @@
             "aliases": [
                 {
                     "name": "#hash_1535c4c9728c0c8b",
-                    "secondaryname": "#hash_858b7e73692ff70",
+                    "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_slider.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14223,7 +14223,7 @@
             "aliases": [
                 {
                     "name": "#hash_77bf7c3df0435ec5",
-                    "secondaryname": "#hash_858b7e73692ff70",
+                    "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_qrevive.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14266,14 +14266,14 @@
         {
             "value": 184,
             "next": 27,
-            "name": "#hash_2609679fbeff7dee",
+            "name": "#uin_zcac_perk_staminup",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2609679fbeff7dee",
-                    "secondaryname": "#hash_858b7e73692ff70",
+                    "name": "#uin_zcac_perk_staminup",
+                    "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_staminup.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14316,14 +14316,14 @@
         {
             "value": 195,
             "next": 65535,
-            "name": "#hash_abf8ac70436214b",
+            "name": "#uin_zcac_perk_stronghold",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_abf8ac70436214b",
-                    "secondaryname": "#hash_858b7e73692ff70",
+                    "name": "#uin_zcac_perk_stronghold",
+                    "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_stronghold.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14366,14 +14366,14 @@
         {
             "value": 37,
             "next": 10,
-            "name": "#hash_521f91c663e8cca",
+            "name": "#uin_zcac_perk_timeslip",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_521f91c663e8cca",
-                    "secondaryname": "#hash_858b7e73692ff70",
+                    "name": "#uin_zcac_perk_timeslip",
+                    "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_timeslip.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14423,7 +14423,7 @@
             "aliases": [
                 {
                     "name": "#hash_3cd64a3395a1e5f6",
-                    "secondaryname": "#hash_858b7e73692ff70",
+                    "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_tortoise.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14473,7 +14473,7 @@
             "aliases": [
                 {
                     "name": "#hash_32573504340309c9",
-                    "secondaryname": "#hash_858b7e73692ff70",
+                    "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_widow.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14516,14 +14516,14 @@
         {
             "value": 245,
             "next": 65535,
-            "name": "#hash_2a4e503573c50fc1",
+            "name": "#uin_zcac_perk_wolf",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2a4e503573c50fc1",
-                    "secondaryname": "#hash_858b7e73692ff70",
+                    "name": "#uin_zcac_perk_wolf",
+                    "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#hash_a2d7b646fd08756",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14566,14 +14566,14 @@
         {
             "value": 227,
             "next": 65535,
-            "name": "#hash_8771d1fdb9e0f5d",
+            "name": "#uin_zcac_perk_zombshell",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_8771d1fdb9e0f5d",
-                    "secondaryname": "#hash_858b7e73692ff70",
+                    "name": "#uin_zcac_perk_zombshell",
+                    "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#hash_317febcfd2475df2",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14616,13 +14616,13 @@
         {
             "value": 111,
             "next": 274,
-            "name": "#hash_17b430f71051a9ce",
+            "name": "#uin_zcac_talisman_cmn",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_17b430f71051a9ce",
+                    "name": "#uin_zcac_talisman_cmn",
                     "assetId": "#uin/2k18/zmb_cac/zmb_talis_cmn.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14861,13 +14861,13 @@
         {
             "value": 136,
             "next": 65535,
-            "name": "#hash_1db2ad3e276cc165",
+            "name": "#uin_zcac_wpn_base",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1db2ad3e276cc165",
+                    "name": "#uin_zcac_wpn_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_wpn_base.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14910,14 +14910,14 @@
         {
             "value": 70,
             "next": 65535,
-            "name": "#hash_47e042ef830fbfd5",
+            "name": "#uin_zcac_wpn_chakram",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_47e042ef830fbfd5",
-                    "secondaryname": "#hash_1db2ad3e276cc165",
+                    "name": "#uin_zcac_wpn_chakram",
+                    "secondaryname": "#uin_zcac_wpn_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_wpn_chakram.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14967,7 +14967,7 @@
             "aliases": [
                 {
                     "name": "#hash_7f5ed8b45cfeb96",
-                    "secondaryname": "#hash_1db2ad3e276cc165",
+                    "secondaryname": "#uin_zcac_wpn_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_wpn_flame.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -15010,14 +15010,14 @@
         {
             "value": 16,
             "next": 65535,
-            "name": "#hash_55b96b5fe7e060ae",
+            "name": "#uin_zcac_wpn_hammer",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_55b96b5fe7e060ae",
-                    "secondaryname": "#hash_1db2ad3e276cc165",
+                    "name": "#uin_zcac_wpn_hammer",
+                    "secondaryname": "#uin_zcac_wpn_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_wpn_hammer.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -15060,14 +15060,14 @@
         {
             "value": 43,
             "next": 275,
-            "name": "#hash_b663f86ae8122ae",
+            "name": "#uin_zcac_wpn_katana",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_b663f86ae8122ae",
-                    "secondaryname": "#hash_1db2ad3e276cc165",
+                    "name": "#uin_zcac_wpn_katana",
+                    "secondaryname": "#uin_zcac_wpn_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_wpn_katana.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -15110,14 +15110,14 @@
         {
             "value": 213,
             "next": 65535,
-            "name": "#hash_1dddef08776d7d9b",
+            "name": "#uin_zcac_wpn_minigun",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1dddef08776d7d9b",
-                    "secondaryname": "#hash_1db2ad3e276cc165",
+                    "name": "#uin_zcac_wpn_minigun",
+                    "secondaryname": "#uin_zcac_wpn_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_wpn_minigun.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -15167,7 +15167,7 @@
             "aliases": [
                 {
                     "name": "#hash_97bb5cbafe5c635",
-                    "secondaryname": "#hash_1db2ad3e276cc165",
+                    "secondaryname": "#uin_zcac_wpn_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_wpn_ragnarok.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -15210,14 +15210,14 @@
         {
             "value": 58,
             "next": 0,
-            "name": "#hash_61d2f373ce8e0a26",
+            "name": "#uin_zcac_wpn_scepter",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_61d2f373ce8e0a26",
-                    "secondaryname": "#hash_1db2ad3e276cc165",
+                    "name": "#uin_zcac_wpn_scepter",
+                    "secondaryname": "#uin_zcac_wpn_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_wpn_ra.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -15267,7 +15267,7 @@
             "aliases": [
                 {
                     "name": "#hash_e0f2420e8afe491",
-                    "secondaryname": "#hash_1db2ad3e276cc165",
+                    "secondaryname": "#uin_zcac_wpn_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_wpn_viper.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",

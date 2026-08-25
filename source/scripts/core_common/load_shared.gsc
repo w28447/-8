@@ -119,7 +119,7 @@ function count_network_frames()
     {
         util::wait_network_frame();
         level.network_frame++;
-        level.var_58bc5d04 = gettime();
+        level.network_time = gettime();
     }
 }
 

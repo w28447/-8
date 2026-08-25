@@ -210,13 +210,13 @@ function fire_trap_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fi
             self.var_91180673 delete();
         }
         
-        playsound( localclientnum, #"hash_370460eab1a33ee6", self.origin );
+        playsound( localclientnum, #"wpn_fire_trap_start", self.origin );
         audio::playloopat( "wpn_fire_trap_loop", self.origin );
         self.var_91180673 = util::playfxontag( localclientnum, level._effect[ #"fire_trap_blue" ], self, "tag_origin" );
         return;
     }
     
-    playsound( localclientnum, #"hash_5d8ec72f0838594e", self.origin );
+    playsound( localclientnum, #"wpn_fire_trap_stop", self.origin );
     audio::stoploopat( "wpn_fire_trap_loop", self.origin );
     
     if ( isdefined( self.var_91180673 ) )

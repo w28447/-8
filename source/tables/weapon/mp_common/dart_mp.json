@@ -28,21 +28,21 @@
     "#hash_2cf49821": false,
     "#hash_d2751f9d": false,
     "#hash_554be9f7": false,
-    "soundb0": "#hash_4676d4369bb15b85",
-    "soundc0": "#hash_6fe549366aac650c",
+    "soundb0": "#wpn_dart_pullback_npc",
+    "soundc0": "#wpn_dart_pullback_plr",
     "firesound": "#wpn_dart_throw_npc",
-    "firesoundplayer": "#hash_1b426137d1e6d45e",
+    "firesoundplayer": "#wpn_dart_throw_plr",
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#wpn_grenade_explo",
     "tunables1": "#dart_tunables_mp",
     "crateObjective": "#dart_waypoint",
     "#hash_2e4a8800": "#dart_scoreevents",
-    "projectilemodel": "#hash_181fe85848ab066",
+    "projectilemodel": "#veh_t8_mil_drone_dart_mp_light",
     "viewmodel": [
-        "#hash_69b950740a864375"
+        "#wpn_t8_mil_drone_dart_view"
     ],
     "worldModel": [
-        "#hash_35c8f4d3246c2a38"
+        "#wpn_t8_mil_drone_dart_world"
     ],
     "gadgetIconAvailable": "#ui_icon_scorestreaks_dart_light",
     "gadgetIconUnavailable": "#ui_icon_scorestreaks_dart_dark",

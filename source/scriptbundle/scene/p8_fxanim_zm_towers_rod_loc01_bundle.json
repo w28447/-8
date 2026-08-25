@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_49d094e4ef19765c",
+                            "anim": "anim#p8_fxanim_zm_towers_rod_loc01_01_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -34,7 +34,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_8f03942fd4e0b5f",
+                            "anim": "anim#p8_fxanim_zm_towers_rod_loc01_02_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -63,7 +63,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_398e4022342590f6",
+                            "anim": "anim#p8_fxanim_zm_towers_rod_loc01_03_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -92,7 +92,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_2f95f6b6c2071ed1",
+                            "anim": "anim#p8_fxanim_zm_towers_rod_loc01_04_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -121,7 +121,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_5f0f57897f557b30",
+                            "anim": "anim#p8_fxanim_zm_towers_rod_loc01_05_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -150,7 +150,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_612d4d20319f2cf3",
+                            "anim": "anim#p8_fxanim_zm_towers_rod_loc01_06_anim",
                             "entrytype": "anim"
                         }
                     ],

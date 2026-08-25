@@ -149,7 +149,7 @@ function function_a9c8883f()
 function function_afa2f621()
 {
     s_activation = self waittill( #"trigger_activated" );
-    self playsound( #"hash_95a3e7ee778d597" );
+    self playsound( #"evt_fuse_pickup" );
     self hide();
     s_activation.e_who zm_orange_util::function_51b752a9( "vox_fuse_get" );
 }
@@ -257,7 +257,7 @@ function function_476d4cb5()
     }
     
     self.e_stone show();
-    self.e_stone playsound( #"hash_16631d7fd4c4e599" );
+    self.e_stone playsound( #"evt_soapstone_place" );
     
     if ( level.s_soapstone.var_b6e5b65f == 2 )
     {
@@ -278,7 +278,7 @@ function function_b4ad839e()
     level endon( #"soapstone_step_complete" );
     s_activation = self waittill( #"trigger_activated" );
     self.e_stone clientfield::set( "soapstone_start_fx", 0 );
-    self.e_stone playsound( #"hash_5f8cb5b7320b0002" );
+    self.e_stone playsound( #"evt_soapstone_pickup" );
     self.e_stone hide();
     
     if ( level.s_soapstone.var_b6e5b65f == 2 )
@@ -383,7 +383,7 @@ function function_2b438f6f()
     }
     
     self.e_stone show();
-    self.e_stone playsound( #"hash_16631d7fd4c4e599" );
+    self.e_stone playsound( #"evt_soapstone_place" );
     
     if ( level.s_soapstone.var_b6e5b65f == 2 )
     {
@@ -405,7 +405,7 @@ function function_a9511f0f()
     level endon( #"soapstone_step_complete" );
     s_activation = self waittill( #"trigger_activated" );
     self.e_stone clientfield::set( "soapstone_start_fx", 0 );
-    self.e_stone playsound( #"hash_5f8cb5b7320b0002" );
+    self.e_stone playsound( #"evt_soapstone_pickup" );
     self.e_stone hide();
     
     if ( level.s_soapstone.var_b6e5b65f == 2 )

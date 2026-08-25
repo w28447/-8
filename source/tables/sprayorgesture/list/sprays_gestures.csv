@@ -77,7 +77,7 @@ type,name
 #gesture,#loot_emote_shared_legs_crossed
 #gesture,#loot_emote_exotic_shared_gone_fishing
 #gesture,#loot_emote_shared_arm_wave
-#gesture,#hash_21009e1446eebffa
+#gesture,#loot_emote_shared_circle_of_death
 #gesture,#loot_emote_shared_fist_bump
 #gesture,#loot_emote_shared_give_up
 #gesture,#loot_emote_shared_head_shot
@@ -387,7 +387,7 @@ type,name
 #gesture,#hash_49aceb119c220b1f
 #gesture,#hash_555afd8df15c18b7
 #gesture,#hash_7fd36f26f6423bdc
-#gesture,#hash_48d687fd227b11ce
+#gesture,#loot_emote_shared_slap_fight
 #gesture,#hash_36337e7c0f77f671
 #gesture,#hash_7f9b77800c73e6ec
 #gesture,#hash_4e8159ce3f85fc7a

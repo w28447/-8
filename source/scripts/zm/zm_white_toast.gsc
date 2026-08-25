@@ -104,7 +104,7 @@ function init()
     vol_apd_console = getent( "vol_apd_console", "targetname" );
     vol_apd_console hide();
     level.e_shard = getent( "nugget", "targetname" );
-    level.e_shard playloopsound( #"hash_52058ae478647502" );
+    level.e_shard playloopsound( #"zmb_elemental_shard_loop" );
     level.e_shard hide();
     
     if ( !isdefined( level.a_e_canister ) )
@@ -340,7 +340,7 @@ function function_ca3759b1()
     }
     
     level thread lui::screen_flash( 0.1, 0.6, 1.5, 0.8, "white" );
-    playsoundatposition( #"hash_782025025ec70d68", ( 0, 0, 0 ) );
+    playsoundatposition( #"evt_nuke_hit", ( 0, 0, 0 ) );
     exploder::exploder( "fxexp_nuke_event" );
     wait 2;
     zm_hms_util::vo_stop_all();
@@ -1005,7 +1005,7 @@ function function_297251d8()
             if ( player istouching( self ) )
             {
                 player playrumbleonentity( "damage_heavy" );
-                player playsound( #"hash_5af2a9d11f007b9" );
+                player playsound( #"zmb_player_electrocuted_oneshot" );
                 player status_effect::status_effect_apply( shock_status_effect, undefined, self, 1 );
             }
         }
@@ -1037,7 +1037,7 @@ function player_elec_damage( n_damage )
     {
         self.is_burning = 1;
         self playrumbleonentity( "damage_heavy" );
-        self playsound( #"hash_5af2a9d11f007b9" );
+        self playsound( #"zmb_player_electrocuted_oneshot" );
         self dodamage( n_damage, self.origin, undefined );
         wait 1;
         self.is_burning = undefined;
@@ -1059,7 +1059,7 @@ function spawn_boss()
     level.e_avogadro.name = "avog";
     level.e_avogadro.isspeaking = 0;
     level.e_avogadro.var_5b6ebfd0 = 0;
-    level.e_avogadro playloopsound( #"hash_43d41833f5950a8d" );
+    level.e_avogadro playloopsound( #"zmb_avogadro_base_lp" );
     a_str_vol = array( "vol_soul_beds", "vol_soul_diner", "vol_soul_lounge", "vol_soul_storage" );
     var_54037511 = [];
     

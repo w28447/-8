@@ -96,8 +96,8 @@
 #spleen,#fail,#vox_spleen_fail,0,0,FALSE,FALSE,FALSE,FALSE
 #spleen,#deliver,#vox_spleen_deliver,0,0,FALSE,FALSE,FALSE,FALSE
 #shield_pickup,#pickup,#vox_pickup_generic,0,0,FALSE,FALSE,FALSE,FALSE
-#shield,#destroy,#hash_112938160e7b4685,0,0,FALSE,FALSE,FALSE,FALSE
-#weapon_pickup,#shield,#hash_667abc2824133e55,0,0,TRUE,FALSE,FALSE,FALSE
+#shield,#destroy,#vox_destroy_rocketshield,0,0,FALSE,FALSE,FALSE,FALSE
+#weapon_pickup,#shield,#vox_pickup_rocketshield,0,0,TRUE,FALSE,FALSE,FALSE
 #kill,#tundragun,#vox_tundragun_kill,0,60,FALSE,TRUE,FALSE,FALSE
 #kill,#tempest,#vox_kill_tempest,0,60,FALSE,TRUE,FALSE,FALSE
 #kill,#raygun_mk2,#vox_kill_raygun_mk2,0,60,FALSE,TRUE,FALSE,FALSE

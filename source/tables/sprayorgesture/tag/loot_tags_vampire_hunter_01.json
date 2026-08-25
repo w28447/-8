@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_vampire_hunter_01",
     "type": "#tag",
-    "material": "#hash_2ffabbf2edd9332f",
+    "material": "#vd/mtl_loot_ui_icon_tags_vampire_hunter_01",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/vampire_hunter_01",

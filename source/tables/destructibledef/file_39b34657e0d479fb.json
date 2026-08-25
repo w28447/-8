@@ -1,6 +1,6 @@
 {
     "name": "#hash_39b34657e0d479fb",
-    "model": "#hash_698947225e6122c1",
+    "model": "#veh_t8_zmb_1912_coupe_dest",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -10,11 +10,11 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_21d849eee4d897a",
+                    "name": "#dst_car_rad_steam",
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

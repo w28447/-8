@@ -805,7 +805,7 @@ function on_vehicle_damage( params )
                 switch ( params.smeansofdeath )
                 {
                     case #"mod_projectile":
-                        self playsoundtoplayer( #"hash_4cf0470b5276e61a", occupant );
+                        self playsoundtoplayer( #"prj_rocket_impact_player_vehicle", occupant );
                         break;
                     case #"mod_rifle_bullet":
                     case #"mod_pistol_bullet":
@@ -1874,7 +1874,7 @@ function function_1592c29e( player, eventstruct )
     
     if ( validateorigin( eventstruct.vehicle.origin ) )
     {
-        playsoundatposition( #"hash_7a0942da55ff521d", eventstruct.vehicle.origin );
+        playsoundatposition( #"fly_suv_door_window", eventstruct.vehicle.origin );
     }
     
     eventstruct.vehicle vehicle::toggle_control_bone_group( 1, 1 );
@@ -1907,7 +1907,7 @@ function function_67e1a636( player, eventstruct )
     {
         if ( validateorigin( eventstruct.vehicle.origin ) )
         {
-            playsoundatposition( #"hash_7a0942da55ff521d", eventstruct.vehicle.origin );
+            playsoundatposition( #"fly_suv_door_window", eventstruct.vehicle.origin );
         }
         
         eventstruct.vehicle vehicle::toggle_control_bone_group( 1, 0 );

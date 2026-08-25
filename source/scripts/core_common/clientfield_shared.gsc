@@ -184,7 +184,7 @@ function private _increment( str_field_name, n_increment_count = 1 )
         
         waittillframeend();
         
-        if ( isdefined( self.birthtime ) && self.birthtime >= level.var_58bc5d04 )
+        if ( isdefined( self.birthtime ) && self.birthtime >= level.network_time )
         {
             util::wait_network_frame();
         }

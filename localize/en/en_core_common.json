@@ -705,7 +705,7 @@
     "hash_b89e8fe23b5a6ff": "Move [{+movestick}] Right",
     "hash_b8fcef5c76c3fc5": "Dark Matter Camo",
     "hash_b9513eace0ca3b4": "EMPTY",
-    "hash_b97deec839e140b": "Slap Fight",
+    "emotes/slapfight": "Slap Fight",
     "hash_b9cae833f2a9c4f": "Mega Kill",
     "platform/demo_play": "^BBUTTON_SELECTCHOICE^",
     "hash_baad5a26faa0c11": "03/27/21",

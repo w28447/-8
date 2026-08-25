@@ -53,10 +53,10 @@
             "1 0"
         ]
     ],
-    "firesound": "#hash_7e4c332825ca8b83",
-    "firesoundplayer": "#hash_4b703c28094c2d5e",
-    "sound240": "#hash_631a067190b54300",
-    "sound250": "#hash_242aa17124751841",
+    "firesound": "#wpn_acidgat_fire_pap_npc",
+    "firesoundplayer": "#wpn_acidgat_fire_pap_plr",
+    "sound240": "#wpn_generic_dryfire_npc",
+    "sound250": "#wpn_generic_dryfire_plr",
     "sound800": "#hash_5ee962527afebfb1",
     "sound810": "#hash_5ee962527afebfb1",
     "tunables1": "#ww_blundergat_acid_t8_upgraded_tunables_zm",

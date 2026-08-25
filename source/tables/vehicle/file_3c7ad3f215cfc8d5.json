@@ -10,7 +10,7 @@
     "vehicleRidersBundle": "#veh_bo3_mil_apc_riders",
     "deathFx": "#explosions/fx_vexp_truck_pickup",
     "deathFxTag": "tag_origin",
-    "deathFxSound": "#hash_2149db0c502305e3",
+    "deathFxSound": "#exp_armor_vehicle",
     "lightFx": [
         "#vehicle/fx_headlight_hemtt_left",
         "#vehicle/fx_headlight_hemtt_left"

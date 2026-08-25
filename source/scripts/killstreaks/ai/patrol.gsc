@@ -13,7 +13,7 @@
 // Size: 0x74
 function init()
 {
-    ai_state::function_e9b061a8( 0, &function_42ed4af0, &update_patrol, &function_97a138d5, &update_enemy, &function_4af1ff64, &function_a78474f2 );
+    ai_state::function_e9b061a8( 0, &start_patrolling, &update_patrol, &function_97a138d5, &update_enemy, &function_4af1ff64, &function_a78474f2 );
 }
 
 // Namespace ai_patrol/patrol
@@ -39,7 +39,7 @@ function function_d091ff45( bundle )
 // Params 0
 // Checksum 0xbd037976, Offset: 0x310
 // Size: 0xc4
-function function_42ed4af0()
+function start_patrolling()
 {
     self.ai.patrol.var_81f76ce3 = gettime();
     self.goalradius = self.ai.patrol.patrol_radius;

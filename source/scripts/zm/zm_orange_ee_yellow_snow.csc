@@ -81,7 +81,7 @@ function spleen_carry_sound( localclientnum, oldval, newval, bnewent, binitialsn
         return;
     }
     
-    self playsound( localclientnum, #"hash_37f5db96bc2147cd" );
+    self playsound( localclientnum, #"evt_spleen_fail" );
     self stoploopsound( self.var_b93060b3 );
     self.var_b93060b3 = undefined;
 }

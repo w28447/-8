@@ -395,7 +395,7 @@ function function_23b7cdd8( n_index )
     if ( !( isdefined( self.var_7148f2c ) && self.var_7148f2c ) )
     {
         self.var_7148f2c = 1;
-        self playlocalsound( #"hash_678b4eee9797e94f" );
+        self playlocalsound( #"zmb_elixir_common_deny" );
         
         switch ( n_index )
         {

@@ -79,8 +79,8 @@ function private function_d83c0144( localclientnum, oldval, newval, bnewent, bin
         
         if ( !isdefined( self.var_45dc5e53 ) )
         {
-            self playsound( 0, #"hash_6804d485c5a3300a" );
-            self.var_45dc5e53 = self playloopsound( #"hash_2ee9559ba02d2e9e" );
+            self playsound( 0, #"zmb_spartoi_fakedeath_move_start" );
+            self.var_45dc5e53 = self playloopsound( #"zmb_spartoi_fakedeath_move_lp" );
         }
         
         return;
@@ -115,7 +115,7 @@ function private function_9e6319c8( localclientnum, oldval, newval, bnewent, bin
         angles = self.angles;
         forward = anglestoforward( angles );
         up = anglestoup( angles );
-        playsound( localclientnum, #"hash_72db6f3f0e602a33", point );
+        playsound( localclientnum, #"zmb_ai_gegenees_hit_shield", point );
         playfx( localclientnum, "impacts/fx8_bul_impact_metal_sm", point, forward, up );
     }
 }

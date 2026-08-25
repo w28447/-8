@@ -120,6 +120,6 @@ function dom_flag_cap_fx_override( flag, team )
 function function_b16848c2( localclientnum )
 {
     self endon( #"death" );
-    self.var_ff66174 = self playloopsound( #"hash_300e3315a48607a8" );
+    self.var_ff66174 = self playloopsound( #"amb_water_underwater_2d" );
 }
 

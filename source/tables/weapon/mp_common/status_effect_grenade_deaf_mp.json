@@ -27,21 +27,21 @@
     "#hash_2cf49821": false,
     "#hash_d2751f9d": false,
     "#hash_554be9f7": false,
-    "sounda0": "#hash_4ab53401f844b1ea",
+    "sounda0": "#wpn_deaf_charge",
     "firesound": "#wpn_grenade_throw",
     "firesoundplayer": "#wpn_grenade_throw",
-    "sound240": "#hash_631a067190b54300",
-    "sound250": "#hash_242aa17124751841",
-    "projexplosionsound": "#hash_1fda746512df41bf",
+    "sound240": "#wpn_generic_dryfire_npc",
+    "sound250": "#wpn_generic_dryfire_plr",
+    "projexplosionsound": "#wpn_deaf_explode",
     "tunables1": "#status_effect_grenade_deaf_tunables_mp",
     "cacWeaponXCam": "#ui_cam_cac_equip_emp",
     "sharedWeaponSounds": "#equipment",
-    "projectilemodel": "#hash_ce1b7de0b4c6424",
+    "projectilemodel": "#wpn_t7_grenade_deaf_projectile",
     "viewmodel": [
-        "#hash_28bae690d97f7a7a"
+        "#wpn_t7_grenade_deaf_view"
     ],
     "worldModel": [
-        "#hash_7d1364d4841982d"
+        "#wpn_t7_grenade_deaf_world"
     ],
     "gadgetIconAvailable": "#t7_hud_mp_inventory_deaf",
     "gadgetIconUnavailable": "#t7_hud_mp_inventory_deaf",

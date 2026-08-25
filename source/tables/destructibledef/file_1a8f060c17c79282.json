@@ -1,6 +1,6 @@
 {
     "name": "#hash_1a8f060c17c79282",
-    "model": "#hash_374d4d2138fb110d",
+    "model": "#veh_t8_civ_van_large_ambulance_japan_dest",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -15,7 +15,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

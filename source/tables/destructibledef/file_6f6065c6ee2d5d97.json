@@ -1,6 +1,6 @@
 {
     "name": "#hash_6f6065c6ee2d5d97",
-    "model": "#hash_119c76393cd60b39",
+    "model": "#p8_wmd_tank_metal_01_allstates",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -10,7 +10,7 @@
                     "unk28": "tag_d0"
                 },
                 {
-                    "name": "#hash_7b6af4c427172417",
+                    "name": "#dst_tank_steam_lp",
                     "unk28": "tag_d1"
                 },
                 {

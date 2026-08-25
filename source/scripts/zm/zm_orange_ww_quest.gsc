@@ -155,7 +155,7 @@ function function_d997ba18()
             self setcandamage( 0 );
             self movez( self.script_int, 0.5 );
             self waittill( #"movedone" );
-            self playsound( #"hash_ad51236cdb547c4" );
+            self playsound( #"evt_icicle_fall" );
             level flag::set( #"hash_72853b82b3faf149" );
             self zm_unitrigger::create( &function_575a8040, 64 );
             self thread function_a28a5c21();
@@ -185,7 +185,7 @@ function function_a28a5c21()
     self endon( #"death" );
     s_result = self waittill( #"trigger_activated" );
     e_who = s_result.e_who;
-    self playsound( #"hash_345f1d31b52a4589" );
+    self playsound( #"evt_icicle_pickup" );
     e_who thread zm_orange_util::function_51b752a9( #"vox_icicle_pickup" );
     level zm_ui_inventory::function_7df6bb60( "zm_orange_ww_quest", 1 );
     self zm_unitrigger::unregister_unitrigger( self.s_unitrigger );
@@ -568,7 +568,7 @@ function function_2187358d()
     level endon( #"end_game", #"hash_45b20bfeff570913" );
     s_result = self waittill( #"trigger_activated" );
     e_who = s_result.e_who;
-    playsoundatposition( #"hash_565a70d2b5a64e2", self.origin );
+    playsoundatposition( #"evt_device_pickup", self.origin );
     level thread function_53bfbec4( e_who );
     level flag::set( #"hash_45b20bfeff570913" );
 }
@@ -742,7 +742,7 @@ function function_735037d4()
     
     wait 0.5;
     self.e_lid rotatepitch( -90, 2, 0, 0.666667 );
-    self.e_lid playsound( #"hash_1cfa90c531f36b92" );
+    self.e_lid playsound( #"zmb_tundra_gun_crate" );
     self.e_lid waittill( #"rotatedone" );
     self.e_weapon movez( 24, 2 );
     

@@ -27,7 +27,7 @@
     "skidSpeedMin": 100,
     "skidSpeedMax": 600,
     "peelSpeedMax": 600,
-    "futzName": "#hash_45fb162abe4d4c98",
+    "futzName": "#mpl_quad_pov",
     "model": "#veh_t8_zm_turret_mini_dest",
     "deathModel": "#veh_t8_zm_turret_mini_dead",
     "soundDef": "#veh_drn_qrdrone_mp",

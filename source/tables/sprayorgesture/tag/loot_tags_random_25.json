@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_random_25",
     "type": "#tag",
-    "material": "#hash_239c2743d1cf32f7",
+    "material": "#vd/mtl_loot_ui_icon_tags_random_25",
     "bundle": {
         "type": "#tag",
         "title": "localized18#tags/random_25",

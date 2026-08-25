@@ -1,7 +1,7 @@
 {
     "name": "#hash_2ba1f8b14948b0c3",
-    "model": "#hash_37d85b7ac1ceb9cf",
-    "unk20": "#hash_a9ca2086dee7b7d",
+    "model": "#veh_t8_civ_city_car_dest_dirty_gry_california",
+    "unk20": "#veh_t8_civ_city_car_dead_gry",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -11,11 +11,11 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_21d849eee4d897a",
+                    "name": "#dst_car_rad_steam",
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

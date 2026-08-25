@@ -117,8 +117,8 @@ function __init__()
     }
     
     level.var_bd19c3a8 = &function_bd19c3a8;
-    level.var_a7f72ea1 = #"hash_1dcbe8021fb16344";
-    level.var_f2bbd457 = #"hash_2719f9bf8294979f";
+    level.var_a7f72ea1 = #"p8_fxanim_wz_supply_stash_magic_box_mod";
+    level.var_f2bbd457 = #"p8_wz_magic_box_chain";
     level.var_b6e3500b = #"p8_wz_teddybear";
     level.var_96bd78dd = #"hash_1cd5ad7d3323d02c";
     level.var_591aff35 = #"hash_5afb37e5e38fa248";
@@ -793,7 +793,7 @@ function function_bbad9099( ai_zone, var_c0d8ceca )
     if ( isdefined( ai_zone.var_18bccc89 ) )
     {
         ai_zone.var_18bccc89 hide();
-        ai_zone.var_18bccc89 playsound( #"hash_1530a7e6184b9b2e" );
+        ai_zone.var_18bccc89 playsound( #"zmb_box_weapon_spin" );
     }
     
     wait 7.5;
@@ -2214,7 +2214,7 @@ function function_3effc794( var_9e12dd2e )
                         ai thread wz_ai_zombie::delayed_zombie_eye_glow( 3 );
                         ai.is_special = 1;
                         self.special_ai = ai;
-                        ai thread wz_ai_utils::function_92c7e9a9( self );
+                        ai thread wz_ai_utils::move_wisp( self );
                         break;
                     }
                 }
@@ -2247,7 +2247,7 @@ function function_3effc794( var_9e12dd2e )
                     ai attach( ai.hatmodel );
                     ai.is_special = 1;
                     self.special_ai = ai;
-                    ai thread wz_ai_utils::function_92c7e9a9( self );
+                    ai thread wz_ai_utils::move_wisp( self );
                     break;
                 }
             }

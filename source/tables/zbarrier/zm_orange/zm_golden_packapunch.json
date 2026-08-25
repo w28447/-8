@@ -15,7 +15,7 @@
     "attackSpotHorzOffset": 0,
     "boards": [
         {
-            "boardModel": "#hash_134184edcbce9750",
+            "boardModel": "#p8_zm_vending_packapunch_ora_gold",
             "tearAnim": "#o_zombie_base_packapunch_poweron",
             "boardAnim": "#o_zombie_base_packapunch_poweron",
             "repairEffect1Offset": "0 0 0",

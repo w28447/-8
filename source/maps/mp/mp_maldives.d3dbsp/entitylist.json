@@ -12669,7 +12669,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_50d2203fbc7d7dd9",
+                    "value": "#amb_scafold_creak",
                     "unk1a": true
                 },
                 {
@@ -12747,7 +12747,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_50d2203fbc7d7dd9",
+                    "value": "#amb_scafold_creak",
                     "unk1a": true
                 },
                 {
@@ -12825,7 +12825,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_50d2203fbc7d7dd9",
+                    "value": "#amb_scafold_creak",
                     "unk1a": true
                 },
                 {
@@ -12903,7 +12903,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_50d2203fbc7d7dd9",
+                    "value": "#amb_scafold_creak",
                     "unk1a": true
                 },
                 {
@@ -12981,7 +12981,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_50d2203fbc7d7dd9",
+                    "value": "#amb_scafold_creak",
                     "unk1a": true
                 },
                 {
@@ -13059,7 +13059,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_50d2203fbc7d7dd9",
+                    "value": "#amb_scafold_creak",
                     "unk1a": true
                 },
                 {
@@ -13137,7 +13137,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_50d2203fbc7d7dd9",
+                    "value": "#amb_scafold_creak",
                     "unk1a": true
                 },
                 {
@@ -14049,7 +14049,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_119cbe56880349cd",
+                    "value": "#amb_pipe_flow_1",
                     "unk1a": true
                 },
                 {
@@ -14175,7 +14175,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_119cbe56880349cd",
+                    "value": "#amb_pipe_flow_1",
                     "unk1a": true
                 },
                 {
@@ -14301,7 +14301,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_119cbe56880349cd",
+                    "value": "#amb_pipe_flow_1",
                     "unk1a": true
                 },
                 {
@@ -14427,7 +14427,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_119cbe56880349cd",
+                    "value": "#amb_pipe_flow_1",
                     "unk1a": true
                 },
                 {
@@ -14553,7 +14553,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_119cbe56880349cd",
+                    "value": "#amb_pipe_flow_1",
                     "unk1a": true
                 },
                 {
@@ -14679,7 +14679,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_119cbe56880349cd",
+                    "value": "#amb_pipe_flow_1",
                     "unk1a": true
                 },
                 {
@@ -14805,7 +14805,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_119cbe56880349cd",
+                    "value": "#amb_pipe_flow_1",
                     "unk1a": true
                 },
                 {
@@ -15003,7 +15003,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_119cbc5688034667",
+                    "value": "#amb_pipe_flow_3",
                     "unk1a": true
                 },
                 {
@@ -15075,7 +15075,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_119cbc5688034667",
+                    "value": "#amb_pipe_flow_3",
                     "unk1a": true
                 },
                 {
@@ -15615,7 +15615,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_17a2bd5989aff105",
+                    "value": "#amb_pipe_shake",
                     "unk1a": true
                 },
                 {
@@ -16011,7 +16011,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_46a4ea662ef233d7",
+                    "value": "#amb_hot_bubbles",
                     "unk1a": true
                 },
                 {
@@ -16192,7 +16192,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -16253,7 +16253,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_21df145575c662df",
+                    "value": "#p8_mal_elevator_car_set_full",
                     "unk1a": true
                 },
                 {
@@ -16313,7 +16313,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_21df145575c662df",
+                    "value": "#p8_mal_elevator_car_set_full",
                     "unk1a": true
                 },
                 {
@@ -16372,7 +16372,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -16432,7 +16432,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -16493,7 +16493,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -16554,7 +16554,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_21df145575c662df",
+                    "value": "#p8_mal_elevator_car_set_full",
                     "unk1a": true
                 },
                 {
@@ -16614,7 +16614,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_21df145575c662df",
+                    "value": "#p8_mal_elevator_car_set_full",
                     "unk1a": true
                 },
                 {
@@ -16674,7 +16674,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -16735,7 +16735,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -16795,7 +16795,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -16855,7 +16855,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -16915,7 +16915,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -16975,7 +16975,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -17036,7 +17036,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -17097,7 +17097,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -17157,7 +17157,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -17217,7 +17217,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -17278,7 +17278,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -17339,7 +17339,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -17400,7 +17400,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -17461,7 +17461,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -17522,7 +17522,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -17583,7 +17583,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -17644,7 +17644,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -17705,7 +17705,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -17766,7 +17766,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -17827,7 +17827,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -45847,7 +45847,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -45961,7 +45961,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -46075,7 +46075,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -46189,7 +46189,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -46302,7 +46302,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_21df145575c662df",
+                    "value": "#p8_mal_elevator_car_set_full",
                     "unk1a": true
                 },
                 {
@@ -46439,7 +46439,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -46570,7 +46570,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -46700,7 +46700,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -46826,7 +46826,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -47070,7 +47070,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -47196,7 +47196,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -47321,7 +47321,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -47447,7 +47447,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -47572,7 +47572,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {
@@ -47698,7 +47698,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -47942,7 +47942,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_21df145575c662df",
+                    "value": "#p8_mal_elevator_car_set_full",
                     "unk1a": true
                 },
                 {
@@ -48079,7 +48079,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_621b9018c7482c36",
+                    "value": "#p8_mal_elevator_car_door_rt",
                     "unk1a": true
                 },
                 {
@@ -48210,7 +48210,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_62738c18c7929b40",
+                    "value": "#p8_mal_elevator_car_door_lt",
                     "unk1a": true
                 },
                 {

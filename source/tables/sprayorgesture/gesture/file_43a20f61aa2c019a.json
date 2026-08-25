@@ -6,7 +6,7 @@
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/precious",
-        "icon": "image#hash_71bd40ae2ae8589d",
+        "icon": "image#ui_icon_emotes_s3_pot_of_gold",
         "isdefault": 0
     }
 }

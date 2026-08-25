@@ -51,10 +51,10 @@
     ],
     "sharedWeaponSounds": "#cutlass",
     "viewmodel": [
-        "#hash_58578457d4955dca"
+        "#wpn_t8_loot_pirate_cutlass_view"
     ],
     "worldModel": [
-        "#hash_6f8d01828eb0681d"
+        "#wpn_t8_loot_pirate_cutlass_world"
     ],
     "inventoryIcon": "#hash_985613e95d929d38",
     "inventoryIconZm": "#ui_icon_weapon_hud_melee_cutlass",

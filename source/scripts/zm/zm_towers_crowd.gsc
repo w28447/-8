@@ -328,7 +328,7 @@ function function_1493a309( e_player )
     
     if ( self.powerup_name === "dung" )
     {
-        e_player playsound( #"hash_66a500811a472fac" );
+        e_player playsound( #"zmb_dung_pickup" );
         e_player clientfield::set_to_player( "" + #"pickup_dung", 1 );
         e_player util::delay( 5, "disconnect", &clientfield::set_to_player, "" + #"pickup_dung", 0 );
         level notify( #"picked_up_dung", { #e_player:e_player } );

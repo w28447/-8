@@ -371,7 +371,7 @@ function function_95a52218()
     if ( !( isdefined( s_result.e_player.var_4bb711cf ) && s_result.e_player.var_4bb711cf ) )
     {
         s_result.e_player.var_4bb711cf = 1;
-        s_result.e_player thread zm_vo::function_a2bd5a0c( #"hash_4763c20dec1c2a7", 0, 1, 9999, 1 );
+        s_result.e_player thread zm_vo::function_a2bd5a0c( #"vox_gauntlet_reveal", 0, 1, 9999, 1 );
     }
     
     self.var_2db8b01a = s_result.var_2db8b01a;
@@ -2795,7 +2795,7 @@ function function_2a290bb7( var_542837e6, v_position, e_player )
     
     e_projectile clientfield::set( "" + #"hash_54b4fbe8e74caf21", 1 );
     
-    if ( self.n_index == 0 && !self scene::is_playing( #"hash_11d315b7b58bb5e0" ) )
+    if ( self.n_index == 0 && !self scene::is_playing( #"p8_fxanim_zm_red_hemera_mirror_01_anim" ) )
     {
         var_a8237cab = struct::get( self.target, "targetname" );
         n_dist = distance( e_projectile.origin, var_a8237cab.origin );

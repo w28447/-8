@@ -320,7 +320,7 @@ function function_cc9ab1fc()
 function function_c142e8ec( attacker, callback_data )
 {
     playfx( level._equipment_explode_fx_lg, self.origin );
-    self playsound( #"hash_2e37b2a562ab2bf8" );
+    self playsound( #"exp_sensor_dart_destroy" );
     var_3c4d4b60 = isdefined( self.owner );
     
     if ( isdefined( attacker ) && ( !var_3c4d4b60 || self.owner util::isenemyplayer( attacker ) ) )

@@ -918,7 +918,7 @@ function function_c60245c1( e_player )
 {
     if ( !( isdefined( e_player.var_9b668949 ) && e_player.var_9b668949 ) )
     {
-        e_player thread zm_vo::function_a2bd5a0c( #"hash_12fcbcf5f7dfcc6f", 1 );
+        e_player thread zm_vo::function_a2bd5a0c( #"vox_wonder_bat_bile", 1 );
         e_player.var_9b668949 = 1;
     }
     
@@ -1272,7 +1272,7 @@ function function_6f3f4e18( s_loc )
     
     if ( !level flag::get( "flag_player_grabbed_nosferatu_material" ) )
     {
-        e_holder thread zm_vo::function_a2bd5a0c( #"hash_31e2f2fbfc612834", 1 );
+        e_holder thread zm_vo::function_a2bd5a0c( #"vox_wonder_nos_chaos_material", 1 );
         level zm_ui_inventory::function_7df6bb60( #"ww_p2_3", 4 );
         s_loc.mdl_pickup delete();
         s_loc struct::delete();

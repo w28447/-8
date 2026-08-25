@@ -353,7 +353,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_672a411cb68a5e23",
+                            "anim": "anim#ch_black_market_welcome_idle",
                             "entrytype": "anim"
                         }
                     ],
@@ -382,7 +382,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_4dbc8870a6584704",
+                            "anim": "anim#ch_black_market_welcome_twitch_01",
                             "entrytype": "anim"
                         }
                     ],

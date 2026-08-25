@@ -373,7 +373,7 @@ function function_80794c22( var_a276c861 )
 {
     if ( !var_a276c861 )
     {
-        level.var_292feb3b playsound( #"hash_455262d440576e2c" );
+        level.var_292feb3b playsound( #"evt_vessel_crack" );
         level.var_292feb3b setcandamage( 1 );
         level.var_292feb3b val::set( "yellow_snowball_quest", "allowDeath", 0 );
         level.var_292feb3b thread function_7c1a1d9a();
@@ -431,7 +431,7 @@ function function_7c1a1d9a()
         if ( isplayer( s_result.attacker ) && !isbot( s_result.attacker ) )
         {
             self setmodel( "p8_zm_ora_specimen_container_lrg_dmg" );
-            self playsound( #"hash_4284a1b7bc4ce7df" );
+            self playsound( #"evt_vessel_shatter" );
             level exploder::kill_exploder( "fxexp_spleen_idle" );
             level exploder::exploder( "fxexp_inf_tank_water_gush_fx_yllw_snow_quest" );
             level exploder::exploder( "fxexp_containment_exp" );
@@ -505,7 +505,7 @@ function function_c0ee8171()
         level.var_27f2245a = 1;
     }
     
-    playsoundatposition( #"hash_16a225866d646305", level.var_3af3c634.origin );
+    playsoundatposition( #"evt_spleen_pickup", level.var_3af3c634.origin );
     level.var_3af3c634 hide();
     level.var_733d6b98 = e_who;
     level zm_ui_inventory::function_7df6bb60( "zm_orange_spleen", 1, level.var_733d6b98 );

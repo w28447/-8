@@ -1,6 +1,6 @@
 {
     "name": "#destructible_t8_civ_suv_large_blk_spain",
-    "model": "#hash_7fbdef9171b7b420",
+    "model": "#veh_t8_civ_suv_large_dest_blk_spain",
     "unk20": "#veh_t8_civ_suv_large_dead_blk",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

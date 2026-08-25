@@ -409,7 +409,7 @@ function freezegun_death( params )
     self.skip_death_notetracks = 1;
     self.nodeathragdoll = 1;
     self.var_606a4641 = params;
-    self playsound( #"hash_2039f8c77ff89659" );
+    self playsound( #"prj_winters_howl_freeze" );
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun

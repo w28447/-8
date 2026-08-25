@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_990ed6a77c7d9ea",
+                            "anim": "anim#p8_fxanim_mp_silo_helicopter_idle_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -34,7 +34,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_758d0bfc0cbb93d5",
+                            "anim": "anim#p8_fxanim_mp_silo_helicopter_crash_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -66,7 +66,7 @@
             "skipdeathanim": 0,
             "hash_9de1f44c": 0,
             "lerptime": 0,
-            "model": "model#hash_7bf2476ec51bf3d6",
+            "model": "model#veh_t8_mil_helicopter_transport_mp_rescue",
             "type": "prop",
             "disablehitmarker": 0,
             "deletewhenfinished": 1,

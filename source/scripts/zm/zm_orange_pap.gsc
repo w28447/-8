@@ -742,7 +742,7 @@ function function_513d3be1()
 function function_451e442e()
 {
     self endon( #"death" );
-    self playsound( #"hash_2dcb0b4d2e7a146f" );
+    self playsound( #"evt_blue_rock_hit" );
     var_a374dafc = struct::get( self.target );
     self moveto( var_a374dafc.origin, 0.2 );
     self waittill( #"movedone" );
@@ -759,7 +759,7 @@ function function_feee6e66()
     self endon( #"death" );
     s_results = self waittill( #"trigger_activated" );
     zm_ui_inventory::function_7df6bb60( "zm_orange_pap_rock", 1 );
-    self playsound( #"hash_5c0903506e9a705a" );
+    self playsound( #"evt_blue_rock_pickup" );
     
     if ( level flag::get( #"hash_641f14d0b2fd57d7" ) )
     {

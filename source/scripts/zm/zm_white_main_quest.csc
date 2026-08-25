@@ -154,7 +154,7 @@ function server_carry_audio_feedback( localclientnum, oldval, newval, bnewent, b
 {
     if ( newval == 1 )
     {
-        self.var_c0f636f9 = self playloopsound( #"hash_54b2fc41dcb6bc56" );
+        self.var_c0f636f9 = self playloopsound( #"evt_server_alarm" );
         return;
     }
     

@@ -1158,7 +1158,7 @@ function snd_crowd_react( localclientnum, oldval, newval, bnewent, binitialsnap,
             level thread function_cbe2ea1( localclientnum, 0 );
         }
         
-        playsound( 0, #"hash_4e3cdd42739b4a0b", ( 0, 0, 0 ) );
+        playsound( 0, #"amb_desolate_wind_oneshot", ( 0, 0, 0 ) );
         a_structs = struct::get_array( "mus_crowd_bossbattle", "targetname" );
         
         foreach ( struct in a_structs )
@@ -1218,13 +1218,13 @@ function snd_crowd_react( localclientnum, oldval, newval, bnewent, binitialsnap,
     switch ( newval )
     {
         case 0:
-            str_alias = #"hash_90cda71914ccf25";
+            str_alias = #"amb_crowd_oneshot_negative_max";
             break;
         case 1:
-            str_alias = #"hash_2a3c75c57c227b04";
+            str_alias = #"amb_crowd_oneshot_negative";
             break;
         case 2:
-            str_alias = #"hash_2a3c75c57c227b04";
+            str_alias = #"amb_crowd_oneshot_negative";
             break;
         case 3:
             str_alias = #"amb_crowd_oneshot_positive";
@@ -1233,7 +1233,7 @@ function snd_crowd_react( localclientnum, oldval, newval, bnewent, binitialsnap,
             str_alias = #"amb_crowd_oneshot_positive";
             break;
         case 6:
-            str_alias = #"hash_2a3c75c57c227b04";
+            str_alias = #"amb_crowd_oneshot_negative";
             break;
         case 7:
             str_alias = #"amb_crowd_oneshot_positive";

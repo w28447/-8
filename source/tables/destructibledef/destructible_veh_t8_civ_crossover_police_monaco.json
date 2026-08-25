@@ -1,7 +1,7 @@
 {
-    "name": "#hash_226e2c2a19e21318",
-    "model": "#hash_21d3eef035c98328",
-    "unk20": "#hash_2a0837aefca81381",
+    "name": "#destructible_veh_t8_civ_crossover_police_monaco",
+    "model": "#veh_t8_civ_crossover_police_dest_monaco",
+    "unk20": "#veh_t8_civ_crossover_dead_police_monaco",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {
@@ -36,17 +36,12 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 1,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_5d4c58b897eab885",
-            "unk268": 4000,
+            "damageSound": "#hash_5c3bb2f7d90ae95c",
+            "unk268": 1800,
             "hideBones": [
-                12,
-                177,
-                190,
-                257,
-                289,
-                301,
-                311,
-                348
+                14,
+                227,
+                242
             ]
         },
         {
@@ -78,10 +73,10 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_5d4c57b897eab6d2",
-            "unk268": 4000,
+            "damageSound": "#hash_5c3bb3f7d90aeb0f",
+            "unk268": 1800,
             "hideBones": [
-                63
+                61
             ]
         },
         {
@@ -113,10 +108,10 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_5d4c56b897eab51f",
-            "unk268": 4000,
+            "damageSound": "#hash_5c3bb4f7d90aecc2",
+            "unk268": 1800,
             "hideBones": [
-                60
+                58
             ]
         },
         {
@@ -148,10 +143,10 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_5d4c55b897eab36c",
-            "unk268": 4000,
+            "damageSound": "#hash_5c3bb5f7d90aee75",
+            "unk268": 1800,
             "hideBones": [
-                55
+                53
             ]
         },
         {
@@ -187,15 +182,15 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_5d4c54b897eab1b9",
-            "unk268": 400,
+            "damageSound": "#hash_5c3baef7d90ae290",
+            "unk268": 200,
             "hideBones": [
-                52,
-                219,
-                220,
-                221,
-                222,
-                223
+                50,
+                128,
+                129,
+                130,
+                190,
+                191
             ]
         },
         {
@@ -231,15 +226,15 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_5d4c53b897eab006",
-            "unk268": 400,
+            "damageSound": "#hash_5c3baff7d90ae443",
+            "unk268": 200,
             "hideBones": [
-                145,
-                271,
-                272,
-                273,
-                274,
-                275
+                152,
+                201,
+                202,
+                203,
+                204,
+                205
             ]
         },
         {
@@ -275,103 +270,15 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_5d4c52b897eaae53",
-            "unk268": 400,
+            "damageSound": "#hash_5c3bb0f7d90ae5f6",
+            "unk268": 200,
             "hideBones": [
-                143,
-                261,
-                262,
-                263,
-                264,
-                265
-            ]
-        },
-        {
-            "stages": [
-                {
-                    "unk28": "tag_glass_left_rear_d0"
-                },
-                {
-                    "unk28": "tag_glass_left_rear_d1"
-                },
-                {
-                    "unk28": "tag_glass_left_rear_d2"
-                },
-                {
-                    "unk28": "tag_glass_left_rear_d3"
-                },
-                {
-                    "unk28": "tag_glass_left_rear_d4"
-                },
-                {
-                    "unk28": "tag_glass_left_rear_d5"
-                },
-                {
-                    "unk28": "tag_glass_left_rear_d5"
-                }
-            ],
-            "parentPiece": 255,
-            "subtargetID": 0,
-            "parentDamagePercent": 0,
-            "bulletDamageScale": 1,
-            "explosiveDamageScale": 1,
-            "meleeDamageScale": 0,
-            "impactDamageScale": 1,
-            "entityDamageTransfer": 0,
-            "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_5d4c51b897eaaca0",
-            "unk268": 400,
-            "hideBones": [
-                51,
-                214,
-                215,
-                216,
-                217,
-                218
-            ]
-        },
-        {
-            "stages": [
-                {
-                    "unk28": "tag_glass_right_rear_d0"
-                },
-                {
-                    "unk28": "tag_glass_right_rear_d1"
-                },
-                {
-                    "unk28": "tag_glass_right_rear_d2"
-                },
-                {
-                    "unk28": "tag_glass_right_rear_d3"
-                },
-                {
-                    "unk28": "tag_glass_right_rear_d4"
-                },
-                {
-                    "unk28": "tag_glass_right_rear_d5"
-                },
-                {
-                    "unk28": "tag_glass_right_rear_d5"
-                }
-            ],
-            "parentPiece": 255,
-            "subtargetID": 0,
-            "parentDamagePercent": 0,
-            "bulletDamageScale": 1,
-            "explosiveDamageScale": 1,
-            "meleeDamageScale": 0,
-            "impactDamageScale": 1,
-            "entityDamageTransfer": 0,
-            "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_5d4c60b897eac61d",
-            "unk268": 400,
-            "hideBones": [
-                49,
-                204,
-                205,
-                206,
-                207,
-                208
+                150,
+                192,
+                193,
+                194,
+                195,
+                255
             ]
         },
         {
@@ -407,15 +314,15 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_5d4c5fb897eac46a",
-            "unk268": 400,
+            "damageSound": "#hash_5c3bb1f7d90ae7a9",
+            "unk268": 200,
             "hideBones": [
-                146,
-                276,
-                277,
-                278,
-                279,
-                280
+                153,
+                206,
+                207,
+                208,
+                209,
+                210
             ]
         },
         {
@@ -451,15 +358,15 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736ff0aa23d4c206",
-            "unk268": 400,
+            "damageSound": "#hash_5c3bbaf7d90af6f4",
+            "unk268": 200,
             "hideBones": [
-                144,
-                266,
-                267,
-                268,
-                269,
-                270
+                151,
+                196,
+                197,
+                198,
+                199,
+                200
             ]
         },
         {
@@ -503,12 +410,12 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736ff1aa23d4c3b9",
-            "unk268": 400,
+            "damageSound": "#hash_5c3bbbf7d90af8a7",
+            "unk268": 200,
             "hideBones": [
-                156,
-                224,
-                294
+                102,
+                217,
+                238
             ]
         },
         {
@@ -552,12 +459,12 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736feeaa23d4bea0",
-            "unk268": 400,
+            "damageSound": "#hash_445e0d25cd8dbc0d",
+            "unk268": 200,
             "hideBones": [
-                154,
-                286,
-                293
+                100,
+                215,
+                236
             ]
         },
         {
@@ -601,11 +508,12 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736fefaa23d4c053",
-            "unk268": 400,
+            "damageSound": "#hash_445e0c25cd8dba5a",
+            "unk268": 200,
             "hideBones": [
-                157,
-                225
+                103,
+                218,
+                239
             ]
         },
         {
@@ -649,11 +557,12 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736ff4aa23d4c8d2",
-            "unk268": 400,
+            "damageSound": "#hash_445e0b25cd8db8a7",
+            "unk268": 200,
             "hideBones": [
-                155,
-                287
+                101,
+                216,
+                237
             ]
         },
         {
@@ -697,15 +606,60 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 1,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736ff5aa23d4ca85",
-            "unk268": 400,
+            "damageSound": "#hash_445e0a25cd8db6f4",
+            "unk268": 200,
             "hideBones": [
-                149,
-                173,
-                185,
-                281,
-                305,
-                315
+                158,
+                175,
+                231
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_trunk_d0"
+                },
+                {
+                    "unk28": "tag_trunk_d0",
+                    "unk2c": [
+                        "tag_trunk_d1"
+                    ]
+                },
+                {
+                    "unk28": "tag_trunk_d0",
+                    "unk2c": [
+                        "tag_trunk_d1"
+                    ]
+                },
+                {
+                    "unk28": "tag_trunk_d0",
+                    "unk2c": [
+                        "tag_trunk_d1"
+                    ]
+                },
+                {
+                    "unk28": "tag_trunk_d0",
+                    "unk2c": [
+                        "tag_trunk_d1"
+                    ]
+                },
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_445e0925cd8db541",
+            "unk268": 200,
+            "hideBones": [
+                154,
+                163
             ]
         },
         {
@@ -742,11 +696,59 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736ff2aa23d4c56c",
+            "damageSound": "#hash_445e0825cd8db38e",
             "unk268": 200,
             "hideBones": [
                 16,
-                104,
+                113,
+                114,
+                115,
+                116,
+                117,
+                118,
+                119,
+                120,
+                127
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_wheel_front_right_d0",
+                    "unk2c": [
+                        "tag_wheel_front_right_steer_d0"
+                    ]
+                },
+                {
+                    "unk28": "tag_wheel_front_right_d0",
+                    "unk2c": [
+                        "tag_wheel_front_right_steer_d0"
+                    ]
+                },
+                {
+                    "unk28": "tag_wheel_front_right_d0",
+                    "unk2c": [
+                        "tag_wheel_front_right_steer_d0"
+                    ]
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_445e0725cd8db1db",
+            "unk268": 200,
+            "hideBones": [
+                15,
                 105,
                 106,
                 107,
@@ -754,28 +756,20 @@
                 109,
                 110,
                 111,
-                120
+                112,
+                126
             ]
         },
         {
             "stages": [
                 {
-                    "unk28": "tag_wheel_front_right_d0",
-                    "unk2c": [
-                        "tag_wheel_front_right_steer_d0"
-                    ]
+                    "unk28": "tag_wheel_back_left_d0"
                 },
                 {
-                    "unk28": "tag_wheel_front_right_d0",
-                    "unk2c": [
-                        "tag_wheel_front_right_steer_d0"
-                    ]
+                    "unk28": "tag_wheel_back_left_d0"
                 },
                 {
-                    "unk28": "tag_wheel_front_right_d0",
-                    "unk2c": [
-                        "tag_wheel_front_right_steer_d0"
-                    ]
+                    "unk28": "tag_wheel_back_left_d0"
                 },
                 {},
                 {},
@@ -791,31 +785,30 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736ff3aa23d4c71f",
+            "damageSound": "#hash_445e0625cd8db028",
             "unk268": 200,
             "hideBones": [
-                15,
-                96,
-                97,
-                98,
-                99,
-                100,
-                101,
-                102,
-                103,
-                119
+                73,
+                74,
+                75,
+                76,
+                77,
+                78,
+                79,
+                80,
+                90
             ]
         },
         {
             "stages": [
                 {
-                    "unk28": "tag_wheel_back_left_d0"
+                    "unk28": "tag_wheel_back_right_d0"
                 },
                 {
-                    "unk28": "tag_wheel_back_left_d0"
+                    "unk28": "tag_wheel_back_right_d0"
                 },
                 {
-                    "unk28": "tag_wheel_back_left_d0"
+                    "unk28": "tag_wheel_back_right_d0"
                 },
                 {},
                 {},
@@ -831,7 +824,7 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736ff8aa23d4cf9e",
+            "damageSound": "#hash_445e0525cd8dae75",
             "unk268": 200,
             "hideBones": [
                 65,
@@ -842,46 +835,7 @@
                 70,
                 71,
                 72,
-                84
-            ]
-        },
-        {
-            "stages": [
-                {
-                    "unk28": "tag_wheel_back_right_d0"
-                },
-                {
-                    "unk28": "tag_wheel_back_right_d0"
-                },
-                {
-                    "unk28": "tag_wheel_back_right_d0"
-                },
-                {},
-                {},
-                {},
-                {}
-            ],
-            "parentPiece": 255,
-            "subtargetID": 0,
-            "parentDamagePercent": 0,
-            "bulletDamageScale": 1,
-            "explosiveDamageScale": 1,
-            "meleeDamageScale": 0,
-            "impactDamageScale": 1,
-            "entityDamageTransfer": 0,
-            "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736ff9aa23d4d151",
-            "unk268": 200,
-            "hideBones": [
-                64,
-                83,
-                121,
-                122,
-                123,
-                124,
-                125,
-                126,
-                127
+                89
             ]
         },
         {
@@ -911,12 +865,12 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 1,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736c8aaa23d1dedd",
+            "damageSound": "#hash_445e0425cd8dacc2",
             "unk268": 200,
             "hideBones": [
-                45,
-                197,
-                198
+                47,
+                178,
+                179
             ]
         },
         {
@@ -946,12 +900,12 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 1,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736c89aa23d1dd2a",
+            "damageSound": "#hash_44617325cd909f36",
             "unk268": 200,
             "hideBones": [
-                44,
-                195,
-                196
+                46,
+                176,
+                177
             ]
         },
         {
@@ -981,12 +935,12 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736c88aa23d1db77",
+            "damageSound": "#hash_44617425cd90a0e9",
             "unk268": 200,
             "hideBones": [
                 41,
-                192,
-                193
+                173,
+                174
             ]
         },
         {
@@ -1016,12 +970,12 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736c87aa23d1d9c4",
+            "damageSound": "#hash_44617125cd909bd0",
             "unk268": 200,
             "hideBones": [
                 40,
-                254,
-                255
+                171,
+                172
             ]
         },
         {
@@ -1051,12 +1005,12 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 1,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736c86aa23d1d811",
+            "damageSound": "#hash_44617225cd909d83",
             "unk268": 200,
             "hideBones": [
-                4,
-                162,
-                163
+                2,
+                138,
+                139
             ]
         },
         {
@@ -1086,113 +1040,28 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 1,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736c85aa23d1d65e",
+            "damageSound": "#hash_44617725cd90a602",
             "unk268": 200,
             "hideBones": [
-                3,
-                160,
-                161
-            ]
-        },
-        {
-            "stages": [
-                {
-                    "unk28": "tag_interior_d0"
-                },
-                {
-                    "unk28": "tag_interior_d0"
-                },
-                {
-                    "unk28": "tag_interior_d0"
-                },
-                {
-                    "unk28": "tag_interior_d0"
-                },
-                {},
-                {},
-                {}
-            ],
-            "parentPiece": 255,
-            "subtargetID": 0,
-            "parentDamagePercent": 0,
-            "bulletDamageScale": 1,
-            "explosiveDamageScale": 1,
-            "meleeDamageScale": 0,
-            "impactDamageScale": 1,
-            "entityDamageTransfer": 0,
-            "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736c84aa23d1d4ab",
-            "unk268": 200,
-            "hideBones": [
-                42,
+                1,
+                136,
                 137
             ]
         },
         {
             "stages": [
                 {
-                    "unk28": "tag_rear_bumper_d0"
+                    "unk28": "tag_interior_d0"
                 },
                 {
-                    "unk28": "tag_rear_bumper_d0",
-                    "unk2c": [
-                        "tag_rear_bumper_d1"
-                    ]
+                    "unk28": "tag_interior_d0"
                 },
                 {
-                    "unk28": "tag_rear_bumper_d0",
-                    "unk2c": [
-                        "tag_rear_bumper_d1"
-                    ]
+                    "unk28": "tag_interior_d0"
                 },
                 {
-                    "unk28": "tag_rear_bumper_d0",
-                    "unk2c": [
-                        "tag_rear_bumper_d1"
-                    ]
+                    "unk28": "tag_interior_d0"
                 },
-                {
-                    "unk28": "tag_rear_bumper_d0",
-                    "unk2c": [
-                        "tag_rear_bumper_d1"
-                    ]
-                },
-                {
-                    "unk28": "tag_rear_bumper_d0",
-                    "unk2c": [
-                        "tag_rear_bumper_d1"
-                    ]
-                },
-                {}
-            ],
-            "parentPiece": 255,
-            "subtargetID": 0,
-            "parentDamagePercent": 0,
-            "bulletDamageScale": 1,
-            "explosiveDamageScale": 1,
-            "meleeDamageScale": 0,
-            "impactDamageScale": 1,
-            "entityDamageTransfer": 0,
-            "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736c83aa23d1d2f8",
-            "unk268": 400,
-            "hideBones": [
-                92,
-                245
-            ]
-        },
-        {
-            "stages": [
-                {
-                    "unk28": "tag_mirror_left_d0"
-                },
-                {
-                    "unk28": "tag_mirror_left_d0"
-                },
-                {
-                    "unk28": "tag_mirror_left_d0"
-                },
-                {},
                 {},
                 {},
                 {}
@@ -1206,55 +1075,35 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736c82aa23d1d145",
+            "damageSound": "#hash_44617825cd90a7b5",
             "unk268": 200,
             "hideBones": [
-                148
+                44
             ]
         },
         {
             "stages": [
                 {
-                    "unk28": "tag_mirror_right_d0"
+                    "unk28": "tag_bumper_front_l_d0"
                 },
                 {
-                    "unk28": "tag_mirror_right_d0"
+                    "unk28": "tag_bumper_front_l_d0",
+                    "unk2c": [
+                        "tag_bumper_front_l_d1"
+                    ]
                 },
                 {
-                    "unk28": "tag_mirror_right_d0"
-                },
-                {},
-                {},
-                {},
-                {}
-            ],
-            "parentPiece": 255,
-            "subtargetID": 0,
-            "parentDamagePercent": 0,
-            "bulletDamageScale": 1,
-            "explosiveDamageScale": 1,
-            "meleeDamageScale": 0,
-            "impactDamageScale": 1,
-            "entityDamageTransfer": 0,
-            "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736c81aa23d1cf92",
-            "unk268": 200,
-            "hideBones": [
-                147
-            ]
-        },
-        {
-            "stages": [
-                {
-                    "unk28": "tag_grill_d0"
+                    "unk28": "tag_bumper_front_l_d0",
+                    "unk2c": [
+                        "tag_bumper_front_l_d1"
+                    ]
                 },
                 {
-                    "unk28": "tag_grill_d0"
+                    "unk28": "tag_bumper_front_l_d0",
+                    "unk2c": [
+                        "tag_bumper_front_l_d1"
+                    ]
                 },
-                {
-                    "unk28": "tag_grill_d0"
-                },
-                {},
                 {},
                 {},
                 {}
@@ -1268,13 +1117,128 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 1,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736904aa23cec554",
+            "damageSound": "#hash_44617525cd90a29c",
             "unk268": 200,
             "hideBones": [
-                47,
-                189,
-                256,
-                310
+                13,
+                144,
+                240
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_bumper_back_l_d0"
+                },
+                {
+                    "unk28": "tag_bumper_back_l_d0",
+                    "unk2c": [
+                        "tag_bumper_back_l_d1"
+                    ]
+                },
+                {
+                    "unk28": "tag_bumper_back_l_d0",
+                    "unk2c": [
+                        "tag_bumper_back_l_d1"
+                    ]
+                },
+                {
+                    "unk28": "tag_bumper_back_l_d0",
+                    "unk2c": [
+                        "tag_bumper_back_l_d1"
+                    ]
+                },
+                {
+                    "unk28": "tag_bumper_back_l_d0",
+                    "unk2c": [
+                        "tag_bumper_back_l_d1"
+                    ]
+                },
+                {
+                    "unk28": "tag_bumper_back_l_d0",
+                    "unk2c": [
+                        "tag_bumper_back_l_d1"
+                    ]
+                },
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_44617625cd90a44f",
+            "unk268": 200,
+            "hideBones": [
+                86,
+                145,
+                241
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_mirror_left_d0"
+                },
+                {
+                    "unk28": "tag_mirror_left_d0"
+                },
+                {
+                    "unk28": "tag_mirror_left_d0"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_44617b25cd90acce",
+            "unk268": 200,
+            "hideBones": [
+                156
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_mirror_right_d0"
+                },
+                {
+                    "unk28": "tag_mirror_right_d0"
+                },
+                {
+                    "unk28": "tag_mirror_right_d0"
+                },
+                {},
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 1,
+            "meleeDamageScale": 0,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 0,
+            "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_44617c25cd90ae81",
+            "unk268": 200,
+            "hideBones": [
+                155
             ]
         },
         {
@@ -1313,11 +1277,11 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 1,
             "subtargetOffset": "(0, 0, 0)",
-            "damageSound": "#hash_736905aa23cec707",
+            "damageSound": "#hash_44647925cd92df3f",
             "unk268": 200,
             "hideBones": [
                 39,
-                253
+                170
             ]
         },
         {
@@ -1356,94 +1320,11 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 1,
             "subtargetOffset": "(0, 0, 0)",
+            "damageSound": "#hash_44647825cd92dd8c",
             "unk268": 200,
             "hideBones": [
                 38,
-                252
-            ]
-        },
-        {
-            "stages": [
-                {
-                    "unk28": "tag_panel_middle_l_d0"
-                },
-                {
-                    "unk28": "tag_panel_middle_l_d0",
-                    "unk2c": [
-                        "tag_panel_middle_l_d1"
-                    ]
-                },
-                {
-                    "unk28": "tag_panel_middle_l_d0",
-                    "unk2c": [
-                        "tag_panel_middle_l_d1"
-                    ]
-                },
-                {
-                    "unk28": "tag_panel_middle_l_d0",
-                    "unk2c": [
-                        "tag_panel_middle_l_d1"
-                    ]
-                },
-                {},
-                {},
-                {}
-            ],
-            "parentPiece": 255,
-            "subtargetID": 0,
-            "parentDamagePercent": 0,
-            "bulletDamageScale": 1,
-            "explosiveDamageScale": 1,
-            "meleeDamageScale": 0,
-            "impactDamageScale": 1,
-            "entityDamageTransfer": 0,
-            "subtargetOffset": "(0, 0, 0)",
-            "unk268": 200,
-            "hideBones": [
-                37,
-                251
-            ]
-        },
-        {
-            "stages": [
-                {
-                    "unk28": "tag_panel_middle_r_d0"
-                },
-                {
-                    "unk28": "tag_panel_middle_r_d0",
-                    "unk2c": [
-                        "tag_panel_middle_r_d1"
-                    ]
-                },
-                {
-                    "unk28": "tag_panel_middle_r_d0",
-                    "unk2c": [
-                        "tag_panel_middle_r_d1"
-                    ]
-                },
-                {
-                    "unk28": "tag_panel_middle_r_d0",
-                    "unk2c": [
-                        "tag_panel_middle_r_d1"
-                    ]
-                },
-                {},
-                {},
-                {}
-            ],
-            "parentPiece": 255,
-            "subtargetID": 0,
-            "parentDamagePercent": 0,
-            "bulletDamageScale": 1,
-            "explosiveDamageScale": 1,
-            "meleeDamageScale": 0,
-            "impactDamageScale": 1,
-            "entityDamageTransfer": 0,
-            "subtargetOffset": "(0, 0, 0)",
-            "unk268": 200,
-            "hideBones": [
-                36,
-                250
+                169
             ]
         },
         {
@@ -1484,8 +1365,8 @@
             "subtargetOffset": "(0, 0, 0)",
             "unk268": 200,
             "hideBones": [
-                35,
-                249
+                37,
+                168
             ]
         },
         {
@@ -1526,8 +1407,8 @@
             "subtargetOffset": "(0, 0, 0)",
             "unk268": 200,
             "hideBones": [
-                34,
-                248
+                36,
+                167
             ]
         },
         {
@@ -1568,8 +1449,8 @@
             "subtargetOffset": "(0, 0, 0)",
             "unk268": 200,
             "hideBones": [
-                33,
-                247
+                35,
+                166
             ]
         },
         {
@@ -1610,8 +1491,8 @@
             "subtargetOffset": "(0, 0, 0)",
             "unk268": 200,
             "hideBones": [
-                32,
-                246
+                34,
+                165
             ]
         },
         {
@@ -1652,33 +1533,20 @@
             "subtargetOffset": "(0, 0, 0)",
             "unk268": 200,
             "hideBones": [
-                91,
-                244
+                93,
+                164
             ]
         },
         {
             "stages": [
                 {
-                    "unk28": "tag_aframe_l_d0"
+                    "unk28": "tag_interior_mirror_d0"
                 },
                 {
-                    "unk28": "tag_aframe_l_d0",
-                    "unk2c": [
-                        "tag_aframe_l_d1"
-                    ]
+                    "unk28": "tag_interior_mirror_d0"
                 },
-                {
-                    "unk28": "tag_aframe_l_d0",
-                    "unk2c": [
-                        "tag_aframe_l_d1"
-                    ]
-                },
-                {
-                    "unk28": "tag_aframe_l_d0",
-                    "unk2c": [
-                        "tag_aframe_l_d1"
-                    ]
-                },
+                {},
+                {},
                 {},
                 {},
                 {}
@@ -1694,116 +1562,7 @@
             "subtargetOffset": "(0, 0, 0)",
             "unk268": 200,
             "hideBones": [
-                14,
-                169
-            ]
-        },
-        {
-            "stages": [
-                {
-                    "unk28": "tag_aframe_r_d0"
-                },
-                {
-                    "unk28": "tag_aframe_r_d0",
-                    "unk2c": [
-                        "tag_aframe_r_d1"
-                    ]
-                },
-                {
-                    "unk28": "tag_aframe_r_d0",
-                    "unk2c": [
-                        "tag_aframe_r_d1"
-                    ]
-                },
-                {
-                    "unk28": "tag_aframe_r_d0",
-                    "unk2c": [
-                        "tag_aframe_r_d1"
-                    ]
-                },
-                {},
-                {},
-                {}
-            ],
-            "parentPiece": 255,
-            "subtargetID": 0,
-            "parentDamagePercent": 0,
-            "bulletDamageScale": 1,
-            "explosiveDamageScale": 1,
-            "meleeDamageScale": 0,
-            "impactDamageScale": 1,
-            "entityDamageTransfer": 0,
-            "subtargetOffset": "(0, 0, 0)",
-            "unk268": 200,
-            "hideBones": [
-                13,
-                168
-            ]
-        },
-        {
-            "stages": [
-                {
-                    "unk28": "tag_chair_l_d0"
-                },
-                {
-                    "unk28": "tag_chair_l_d0"
-                },
-                {
-                    "unk28": "tag_chair_l_d0"
-                },
-                {
-                    "unk28": "tag_chair_l_d0"
-                },
-                {},
-                {},
-                {}
-            ],
-            "parentPiece": 255,
-            "subtargetID": 0,
-            "parentDamagePercent": 0,
-            "bulletDamageScale": 1,
-            "explosiveDamageScale": 1,
-            "meleeDamageScale": 0,
-            "impactDamageScale": 1,
-            "entityDamageTransfer": 0,
-            "subtargetOffset": "(0, 0, 0)",
-            "unk268": 200,
-            "hideBones": [
-                131,
-                159
-            ]
-        },
-        {
-            "stages": [
-                {
-                    "unk28": "tag_chair_r_d0"
-                },
-                {
-                    "unk28": "tag_chair_r_d0"
-                },
-                {
-                    "unk28": "tag_chair_r_d0"
-                },
-                {
-                    "unk28": "tag_chair_r_d0"
-                },
-                {},
-                {},
-                {}
-            ],
-            "parentPiece": 255,
-            "subtargetID": 0,
-            "parentDamagePercent": 0,
-            "bulletDamageScale": 1,
-            "explosiveDamageScale": 1,
-            "meleeDamageScale": 0,
-            "impactDamageScale": 1,
-            "entityDamageTransfer": 0,
-            "subtargetOffset": "(0, 0, 0)",
-            "unk268": 200,
-            "hideBones": [
-                130,
-                158
+                43
             ]
         },
         {
@@ -1839,14 +1598,14 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "unk268": 300,
+            "unk268": 200,
             "hideBones": [
-                50,
-                209,
-                210,
-                211,
-                212,
-                213
+                49,
+                185,
+                186,
+                187,
+                188,
+                189
             ]
         },
         {
@@ -1882,33 +1641,39 @@
             "impactDamageScale": 1,
             "entityDamageTransfer": 0,
             "subtargetOffset": "(0, 0, 0)",
-            "unk268": 300,
+            "unk268": 200,
             "hideBones": [
                 48,
-                199,
-                200,
-                201,
-                202,
-                203
+                180,
+                181,
+                182,
+                183,
+                184
             ]
         },
         {
             "stages": [
                 {
-                    "unk28": "tag_tail_light_inner_left_d0"
+                    "unk28": "tag_glass_back_d0"
                 },
                 {
-                    "unk28": "tag_tail_light_inner_left_d1"
+                    "unk28": "tag_glass_back_d1"
                 },
                 {
-                    "unk28": "tag_tail_light_inner_left_d2"
+                    "unk28": "tag_glass_back_d2"
                 },
                 {
-                    "unk28": "tag_tail_light_inner_left_d2"
+                    "unk28": "tag_glass_back_d3"
                 },
-                {},
-                {},
-                {}
+                {
+                    "unk28": "tag_glass_back_d4"
+                },
+                {
+                    "unk28": "tag_glass_back_d5"
+                },
+                {
+                    "unk28": "tag_glass_back_d5"
+                }
             ],
             "parentPiece": 255,
             "subtargetID": 0,
@@ -1921,92 +1686,27 @@
             "subtargetOffset": "(0, 0, 0)",
             "unk268": 200,
             "hideBones": [
-                88,
-                242,
-                243
+                99,
+                131,
+                132,
+                133,
+                134,
+                135
             ]
         },
         {
             "stages": [
                 {
-                    "unk28": "tag_tail_light_inner_right_d0"
+                    "unk28": "tag_police_siren_light_blue_d0"
                 },
                 {
-                    "unk28": "tag_tail_light_inner_right_d1"
+                    "unk28": "tag_police_siren_light_blue_d1"
                 },
                 {
-                    "unk28": "tag_tail_light_inner_right_d2"
+                    "unk28": "tag_police_siren_light_blue_d2"
                 },
                 {
-                    "unk28": "tag_tail_light_inner_right_d2"
-                },
-                {},
-                {},
-                {}
-            ],
-            "parentPiece": 255,
-            "subtargetID": 0,
-            "parentDamagePercent": 0,
-            "bulletDamageScale": 1,
-            "explosiveDamageScale": 1,
-            "meleeDamageScale": 0,
-            "impactDamageScale": 1,
-            "entityDamageTransfer": 0,
-            "subtargetOffset": "(0, 0, 0)",
-            "unk268": 200,
-            "hideBones": [
-                87,
-                240,
-                241
-            ]
-        },
-        {
-            "stages": [
-                {
-                    "unk28": "tag_tail_light_outer_left_d0"
-                },
-                {
-                    "unk28": "tag_tail_light_outer_left_d1"
-                },
-                {
-                    "unk28": "tag_tail_light_outer_left_d2"
-                },
-                {
-                    "unk28": "tag_tail_light_outer_left_d2"
-                },
-                {},
-                {},
-                {}
-            ],
-            "parentPiece": 255,
-            "subtargetID": 0,
-            "parentDamagePercent": 0,
-            "bulletDamageScale": 1,
-            "explosiveDamageScale": 1,
-            "meleeDamageScale": 0,
-            "impactDamageScale": 1,
-            "entityDamageTransfer": 0,
-            "subtargetOffset": "(0, 0, 0)",
-            "unk268": 200,
-            "hideBones": [
-                86,
-                238,
-                239
-            ]
-        },
-        {
-            "stages": [
-                {
-                    "unk28": "tag_tail_light_outer_right_d0"
-                },
-                {
-                    "unk28": "tag_tail_light_outer_right_d1"
-                },
-                {
-                    "unk28": "tag_tail_light_outer_right_d2"
-                },
-                {
-                    "unk28": "tag_tail_light_outer_right_d2"
+                    "unk28": "tag_police_siren_light_blue_d3"
                 },
                 {},
                 {},
@@ -2019,13 +1719,49 @@
             "explosiveDamageScale": 4,
             "meleeDamageScale": 0.1,
             "impactDamageScale": 1,
-            "entityDamageTransfer": 0,
+            "entityDamageTransfer": 1,
             "subtargetOffset": "(0, 0, 0)",
             "unk268": 200,
             "hideBones": [
-                85,
-                236,
-                237
+                233,
+                249,
+                250,
+                251
+            ]
+        },
+        {
+            "stages": [
+                {
+                    "unk28": "tag_police_siren_light_red_d0"
+                },
+                {
+                    "unk28": "tag_police_siren_light_red_d1"
+                },
+                {
+                    "unk28": "tag_police_siren_light_red_d2"
+                },
+                {
+                    "unk28": "tag_police_siren_light_red_d3"
+                },
+                {},
+                {},
+                {}
+            ],
+            "parentPiece": 255,
+            "subtargetID": 0,
+            "parentDamagePercent": 0,
+            "bulletDamageScale": 1,
+            "explosiveDamageScale": 4,
+            "meleeDamageScale": 0.1,
+            "impactDamageScale": 1,
+            "entityDamageTransfer": 1,
+            "subtargetOffset": "(0, 0, 0)",
+            "unk268": 200,
+            "hideBones": [
+                232,
+                246,
+                247,
+                248
             ]
         }
     ]

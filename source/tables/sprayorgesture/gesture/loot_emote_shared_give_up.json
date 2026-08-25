@@ -6,7 +6,7 @@
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/i_give_up",
-        "icon": "image#hash_96d19147f2796ef",
+        "icon": "image#ui_icon_emotes_give_up",
         "isdefault": 0
     }
 }

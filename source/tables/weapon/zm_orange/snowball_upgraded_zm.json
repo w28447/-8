@@ -31,7 +31,7 @@
     "soundc0": "#wpn_snowball_pullback",
     "firesound": "#wpn_grenade_throw",
     "firesoundplayer": "#wpn_grenade_throw",
-    "projexplosionsound": "#hash_444dd4b86b461e70",
+    "projexplosionsound": "#wpn_snowball_impact_3d",
     "sound800": "#hash_5fd68d0455a0b8",
     "sound810": "#hash_5fd68d0455a0b8",
     "tunables1": "#snowball_upgraded_tunables_zm",

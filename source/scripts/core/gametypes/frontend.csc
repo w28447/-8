@@ -1299,7 +1299,7 @@ function entityspawned( localclientnum )
         
         setdvar( #"weap_render_name", "<dev string:x4b>" );
         setdvar( #"weap_render", "<dev string:x4b>" );
-        var_c11ba901 = array( "<dev string:x2e7>", "<dev string:x2f5>", "<dev string:x2fc>", "<dev string:x303>", "<dev string:x386>", "<dev string:x38f>", "<dev string:x39a>" );
+        filter_types = array( "<dev string:x2e7>", "<dev string:x2f5>", "<dev string:x2fc>", "<dev string:x303>", "<dev string:x386>", "<dev string:x38f>", "<dev string:x39a>" );
         weapon_name = "<dev string:x4b>";
         var_f7a528f2 = "<dev string:x4b>";
         
@@ -1322,25 +1322,25 @@ function entityspawned( localclientnum )
                             continue;
                         }
                         
-                        var_c001baa1 = root_devgui + "<dev string:x12a>" + name;
-                        adddebugcommand( localclientnum, "<dev string:x66>" + var_c001baa1 + "<dev string:x3a2>" + "<dev string:x369>" + "<dev string:x3ab>" + "<dev string:x167>" + name + "<dev string:x167>" + -1 + "<dev string:x167>" + -1 + "<dev string:x167>" + "<dev string:x2e0>" + "<dev string:x9a>" );
+                        root_render = root_devgui + "<dev string:x12a>" + name;
+                        adddebugcommand( localclientnum, "<dev string:x66>" + root_render + "<dev string:x3a2>" + "<dev string:x369>" + "<dev string:x3ab>" + "<dev string:x167>" + name + "<dev string:x167>" + -1 + "<dev string:x167>" + -1 + "<dev string:x167>" + "<dev string:x2e0>" + "<dev string:x9a>" );
                         
-                        for ( i = 0; i < var_c11ba901.size ; i++ )
+                        for ( i = 0; i < filter_types.size ; i++ )
                         {
-                            type = var_c11ba901[ i ];
-                            adddebugcommand( localclientnum, "<dev string:x66>" + var_c001baa1 + "<dev string:x12a>" + type + "<dev string:x3b9>" + 2 + i + "<dev string:x369>" + "<dev string:x3ab>" + "<dev string:x167>" + name + "<dev string:x167>" + -1 + "<dev string:x167>" + -1 + "<dev string:x167>" + type + "<dev string:x9a>" );
+                            type = filter_types[ i ];
+                            adddebugcommand( localclientnum, "<dev string:x66>" + root_render + "<dev string:x12a>" + type + "<dev string:x3b9>" + 2 + i + "<dev string:x369>" + "<dev string:x3ab>" + "<dev string:x167>" + name + "<dev string:x167>" + -1 + "<dev string:x167>" + -1 + "<dev string:x167>" + type + "<dev string:x9a>" );
                         }
                         
                         options = function_ea647602( "<dev string:x2d9>" );
                         
                         foreach ( i, option in options )
                         {
-                            adddebugcommand( localclientnum, "<dev string:x66>" + var_c001baa1 + "<dev string:x12a>" + option.name + "<dev string:x369>" + "<dev string:x3ab>" + "<dev string:x167>" + name + "<dev string:x167>" + i + "<dev string:x167>" + 0 + "<dev string:x167>" + "<dev string:x2e0>" + "<dev string:x9a>" );
+                            adddebugcommand( localclientnum, "<dev string:x66>" + root_render + "<dev string:x12a>" + option.name + "<dev string:x369>" + "<dev string:x3ab>" + "<dev string:x167>" + name + "<dev string:x167>" + i + "<dev string:x167>" + 0 + "<dev string:x167>" + "<dev string:x2e0>" + "<dev string:x9a>" );
                         }
                         
                         for ( i = 1; i < weapon.var_5b73038c ; i++ )
                         {
-                            adddebugcommand( localclientnum, "<dev string:x66>" + var_c001baa1 + "<dev string:x3bd>" + i + "<dev string:x369>" + "<dev string:x3ab>" + "<dev string:x167>" + name + "<dev string:x167>" + -2 + "<dev string:x167>" + i + "<dev string:x167>" + "<dev string:x2e0>" + "<dev string:x9a>" );
+                            adddebugcommand( localclientnum, "<dev string:x66>" + root_render + "<dev string:x3bd>" + i + "<dev string:x369>" + "<dev string:x3ab>" + "<dev string:x167>" + name + "<dev string:x167>" + -2 + "<dev string:x167>" + i + "<dev string:x167>" + "<dev string:x2e0>" + "<dev string:x9a>" );
                         }
                     }
                 }

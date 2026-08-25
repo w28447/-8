@@ -1,6 +1,6 @@
 {
     "name": "#hash_600e634da9f0027b",
-    "model": "#hash_23cd5ddd183d10d9",
+    "model": "#veh_t8_civ_truck_mini_dest_tanker_full_dirty_wht_morocco",
     "unk20": "#hash_7c83f8ee833d5ae3",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
@@ -11,7 +11,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_21d849eee4d897a",
+                    "name": "#dst_car_rad_steam",
                     "unk28": "tag_body_d0"
                 },
                 {
@@ -19,7 +19,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_76e527de2e37948f",
+                    "name": "#dst_car_cooldown",
                     "unk28": "tag_body_d0"
                 },
                 {

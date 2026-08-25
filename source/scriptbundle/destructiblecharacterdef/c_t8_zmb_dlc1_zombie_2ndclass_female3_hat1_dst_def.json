@@ -1,11 +1,11 @@
 {
     "piece1_gibtag": "j_head",
     "configstringfiletype": "scriptbundle",
-    "piece1_detachmodel": "model#hash_78000384be90f8da",
+    "piece1_detachmodel": "model#c_t8_zmb_dlc1_zombie_1stclass_female_hat1_skin2",
     "type": "destructiblecharacterdef",
     "piece1_hitlocation": "helmet",
     "vmtype": "both",
     "name": "c_t8_zmb_dlc1_zombie_2ndclass_female3_hat1_dst_def",
     "piececount": 1,
-    "piece1_gibmodel": "model#hash_78000384be90f8da"
+    "piece1_gibmodel": "model#c_t8_zmb_dlc1_zombie_1stclass_female_hat1_skin2"
 }

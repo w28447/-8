@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_5f152090f657bfe",
+                            "anim": "anim#p8_fxanim_zm_esc_bathtub_filling_idle_start",
                             "entrytype": "anim"
                         }
                     ],
@@ -34,11 +34,11 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_6f7a3a7c471df0f2",
+                            "anim": "anim#p8_fxanim_zm_esc_bathtub_filling_1",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "anim#hash_2e86999bc8c4290d",
+                            "anim": "anim#p8_fxanim_zm_esc_bathtub_filling_idle_1",
                             "entrytype": "anim"
                         }
                     ],
@@ -67,11 +67,11 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_6f7a397c471def3f",
+                            "anim": "anim#p8_fxanim_zm_esc_bathtub_filling_2",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "anim#hash_2e86969bc8c423f4",
+                            "anim": "anim#p8_fxanim_zm_esc_bathtub_filling_idle_2",
                             "entrytype": "anim"
                         }
                     ],
@@ -100,11 +100,11 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_6f7a387c471ded8c",
+                            "anim": "anim#p8_fxanim_zm_esc_bathtub_filling_3",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "anim#hash_2e86979bc8c425a7",
+                            "anim": "anim#p8_fxanim_zm_esc_bathtub_filling_idle_3",
                             "entrytype": "anim"
                         }
                     ],
@@ -133,11 +133,11 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_6f7a377c471debd9",
+                            "anim": "anim#p8_fxanim_zm_esc_bathtub_filling_4",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "anim#hash_2e86949bc8c4208e",
+                            "anim": "anim#p8_fxanim_zm_esc_bathtub_filling_idle_4",
                             "entrytype": "anim"
                         }
                     ],
@@ -166,11 +166,11 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_6f7a367c471dea26",
+                            "anim": "anim#p8_fxanim_zm_esc_bathtub_filling_5",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "anim#hash_2e86959bc8c42241",
+                            "anim": "anim#p8_fxanim_zm_esc_bathtub_filling_idle_5",
                             "entrytype": "anim"
                         }
                     ],
@@ -199,11 +199,11 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_6f7a357c471de873",
+                            "anim": "anim#p8_fxanim_zm_esc_bathtub_filling_6",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "anim#hash_4a67388210398d52",
+                            "anim": "anim#p8_fxanim_zm_esc_bathtub_filling_idle_out",
                             "entrytype": "anim"
                         }
                     ],
@@ -236,7 +236,7 @@
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "anim#hash_5f152090f657bfe",
+                            "anim": "anim#p8_fxanim_zm_esc_bathtub_filling_idle_start",
                             "entrytype": "anim"
                         }
                     ],

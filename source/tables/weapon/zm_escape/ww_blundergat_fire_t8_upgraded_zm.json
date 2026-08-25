@@ -47,10 +47,10 @@
             "1 0.0507"
         ]
     ],
-    "firesound": "#hash_4e6d8966b3c7f5c2",
-    "firesoundplayer": "#hash_6b406066328d4787",
-    "sound240": "#hash_631a067190b54300",
-    "sound250": "#hash_242aa17124751841",
+    "firesound": "#wpn_firegat_fire_pap_npc",
+    "firesoundplayer": "#wpn_firegat_fire_pap_plr",
+    "sound240": "#wpn_generic_dryfire_npc",
+    "sound250": "#wpn_generic_dryfire_plr",
     "sound800": "#hash_54f28bb508a46096",
     "sound810": "#hash_54f28bb508a46096",
     "tunables1": "#ww_blundergat_fire_t8_upgraded_tunables_zm",

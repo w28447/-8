@@ -59,7 +59,7 @@ function aat_frostbite_trail( localclientnum, oldval, newval, bnewent, binitials
         
         if ( !isdefined( self.var_dacf22f6 ) )
         {
-            self.var_dacf22f6 = self playloopsound( #"hash_f5d043ac36e0244" );
+            self.var_dacf22f6 = self playloopsound( #"zmb_aat_frostbite_frozen_lp" );
         }
         
         self thread function_d84b013b( localclientnum, 1 );
@@ -162,7 +162,7 @@ function aat_frostbite_explosion( localclientnum, oldval, newval, bnewent, binit
         }
         
         playfx( localclientnum, level._effect[ #"aat_frostbite_explosion" ], v_fx_origin );
-        self playsound( localclientnum, #"hash_7de1026336539baa" );
+        self playsound( localclientnum, #"zmb_aat_frostbite_explode" );
     }
 }
 

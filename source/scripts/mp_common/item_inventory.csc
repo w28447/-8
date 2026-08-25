@@ -489,7 +489,7 @@ function private function_1606ff3( localclientnum, var_6e51c00 )
     
     if ( perksarray.size > 1 )
     {
-        playsound( localclientnum, #"hash_4d31bd9927d823c3" );
+        playsound( localclientnum, #"uin_quick_menu_swap" );
     }
 }
 
@@ -667,7 +667,7 @@ function private function_9b83c65d( localclientnum )
             if ( inventoryitem != clientdata.inventory.var_f3518190.item )
             {
                 setuimodelvalue( createuimodel( clientdata.inventory.var_f3518190.item.itemuimodel, "castTimeFraction" ), 0, 0 );
-                playsound( localclientnum, #"hash_4d31bd9927d823c3" );
+                playsound( localclientnum, #"uin_quick_menu_swap" );
                 var_f3518190 = spawnstruct();
                 var_f3518190.item = inventoryitem;
                 var_f3518190.caststart = gettime();
@@ -689,7 +689,7 @@ function private function_9b83c65d( localclientnum )
         
         if ( !isdefined( clientdata.inventory.var_4d4ec560 ) || clientdata.inventory.var_4d4ec560 != inventoryitem.networkid )
         {
-            playsound( localclientnum, #"hash_4d31bd9927d823c3" );
+            playsound( localclientnum, #"uin_quick_menu_swap" );
             var_f3518190 = spawnstruct();
             var_f3518190.item = inventoryitem;
             var_f3518190.caststart = gettime();
@@ -1181,7 +1181,7 @@ function private function_d2f05352()
                 {
                     var_95dcc077 = 1;
                     arrayremoveindex( var_3ef517e, i );
-                    playsound( localclientnum, #"hash_4c7a6e162e2f26a0" );
+                    playsound( localclientnum, #"uin_wz_perk_depleted" );
                     continue;
                 }
             }
@@ -2849,7 +2849,7 @@ function function_3bd1836f( localclientnum, networkid )
         if ( inventoryitem.networkid === networkid )
         {
             function_8063170( inventoryitem, 1 );
-            playsound( localclientnum, #"hash_4d31bd9927d823c3" );
+            playsound( localclientnum, #"uin_quick_menu_swap" );
             return;
         }
     }
@@ -3562,7 +3562,7 @@ function function_31868137( localclientnum, item )
                 playsound( localclientnum, #"fly_pickup_attachment", item.origin );
                 break;
             case #"quest":
-                playsound( localclientnum, #"hash_5738a0fcb2e4efca", item.origin );
+                playsound( localclientnum, #"fly_pickup_quest", item.origin );
                 break;
             case #"generic":
                 playsound( localclientnum, #"fly_pickup_generic", item.origin );

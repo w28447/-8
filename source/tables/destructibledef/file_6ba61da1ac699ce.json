@@ -1,7 +1,7 @@
 {
     "name": "#hash_6ba61da1ac699ce",
-    "model": "#hash_81225b5a795212c",
-    "unk20": "#hash_60245facc921e979",
+    "model": "#veh_t8_mil_truck_hemtt_dest_dirty_flatbed_tan",
+    "unk20": "#veh_t8_mil_truck_hemtt_dead_flatbed_tan",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

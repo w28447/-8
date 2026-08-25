@@ -405,11 +405,11 @@ function function_ea1ad421( insertion, start, end )
 // Params 5
 // Checksum 0x7e5e517e, Offset: 0x2098
 // Size: 0xe8
-function function_f31cf3bb( point, direction, step, depth, var_94a1d56d = 10 )
+function function_f31cf3bb( point, direction, step, depth, max_depth = 10 )
 {
     for ( var_23685c5 = point; true ; var_23685c5 = new_point )
     {
-        if ( depth > var_94a1d56d )
+        if ( depth > max_depth )
         {
             return var_23685c5;
         }
@@ -424,7 +424,7 @@ function function_f31cf3bb( point, direction, step, depth, var_94a1d56d = 10 )
         
         if ( touching )
         {
-            return function_f31cf3bb( var_23685c5, direction, step / 2, depth, var_94a1d56d );
+            return function_f31cf3bb( var_23685c5, direction, step / 2, depth, max_depth );
         }
     }
 }
@@ -624,9 +624,9 @@ function function_8dcd8623()
             return;
         }
         
-        var_7eb8f61a = isdefined( getgametypesetting( #"wzplayerinsertiontypeindex" ) ) ? getgametypesetting( #"wzplayerinsertiontypeindex" ) : 0;
+        insertion_type = isdefined( getgametypesetting( #"wzplayerinsertiontypeindex" ) ) ? getgametypesetting( #"wzplayerinsertiontypeindex" ) : 0;
         
-        switch ( var_7eb8f61a )
+        switch ( insertion_type )
         {
             case 0:
                 level thread function_82c73974( insertion );

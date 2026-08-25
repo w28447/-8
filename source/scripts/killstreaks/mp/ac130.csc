@@ -115,13 +115,13 @@ function function_db40057d( localclientnum, oldval, newval, bnewent, binitialsna
     switch ( newval )
     {
         case 1:
-            playsound( 0, #"hash_731251c4b03b5b09", ( 0, 0, 0 ) );
+            playsound( 0, #"wpn_ac130_switch_weapon", ( 0, 0, 0 ) );
             break;
         case 2:
-            playsound( 0, #"hash_731251c4b03b5b09", ( 0, 0, 0 ) );
+            playsound( 0, #"wpn_ac130_switch_weapon", ( 0, 0, 0 ) );
             break;
         case 3:
-            playsound( 0, #"hash_731251c4b03b5b09", ( 0, 0, 0 ) );
+            playsound( 0, #"wpn_ac130_switch_weapon", ( 0, 0, 0 ) );
             break;
     }
 }

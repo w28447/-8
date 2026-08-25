@@ -32,13 +32,13 @@
     "tunables1": "#zhield_lh_tunables_zm",
     "sharedWeaponSounds": "#battle_shield",
     "viewmodel": [
-        "#hash_480a822b7ac42536"
+        "#wpn_t8_zm_battle_shield_frost_buckler_view"
     ],
     "worldModel": [
-        "#hash_7f061176170234d9"
+        "#wpn_t8_zm_battle_shield_frost_buckler_world"
     ],
     "stowedmodel": [
-        "#hash_7f061176170234d9"
+        "#wpn_t8_zm_battle_shield_frost_buckler_world"
     ],
     "reticleSide": "#reticle_side_round",
     "inventoryIconZm": "#ui_icon_weapon_battleshield",
@@ -46,10 +46,10 @@
     "fireRumble": "#defaultweapon_fire",
     "#hash_21329beb": [
         {
-            "model": "#hash_7f061176170234d9"
+            "model": "#wpn_t8_zm_battle_shield_frost_buckler_world"
         },
         {
-            "model": "#hash_7f061176170234d9"
+            "model": "#wpn_t8_zm_battle_shield_frost_buckler_world"
         }
     ]
 }

@@ -129,7 +129,7 @@ function init()
     level.s_boss_battle.mdl_perseus.var_c164e6c7 = 3;
     level.s_boss_battle.var_5dc26e42 = 0;
     level.s_boss_battle.var_7fc7f236 = 15000;
-    level.s_boss_battle.var_5db6ed5f = getweapon( "perseus_bolt_projectile" );
+    level.s_boss_battle.wpn_chaos_bolt = getweapon( "perseus_bolt_projectile" );
     level.s_boss_battle.var_86d9f46c = getstatuseffect( #"shock_zm_trap" );
     level.s_boss_battle.var_b42f3b39 = getstatuseffect( #"elephant_spear_fire" );
     
@@ -629,7 +629,7 @@ function chaos_bolt_thrower( e_target )
     
     if ( isplayer( e_target ) )
     {
-        projectile = magicbullet( level.s_boss_battle.var_5db6ed5f, var_5f07628, v_target_pos, e_perseus );
+        projectile = magicbullet( level.s_boss_battle.wpn_chaos_bolt, var_5f07628, v_target_pos, e_perseus );
         
         if ( level.s_boss_battle.n_stage > 1 )
         {
@@ -644,7 +644,7 @@ function chaos_bolt_thrower( e_target )
     }
     else
     {
-        projectile = magicbullet( level.s_boss_battle.var_5db6ed5f, var_5f07628, v_target_pos, e_perseus );
+        projectile = magicbullet( level.s_boss_battle.wpn_chaos_bolt, var_5f07628, v_target_pos, e_perseus );
         projectile clientfield::set( "" + #"chaos_bolt_fx", 3 );
         b_annihilator = 1;
     }
@@ -672,7 +672,7 @@ function chaos_bolt_thrower( e_target )
     
     if ( isdefined( v_pos ) )
     {
-        playsoundatposition( #"hash_2a8cdf7d7ef28efe", v_pos );
+        playsoundatposition( #"wpn_chaos_bolt_imp", v_pos );
         
         if ( b_annihilator )
         {
@@ -2173,7 +2173,7 @@ function function_2a866d1a( a_ents )
         v_direction = anglestoforward( var_bbaa9da2 );
         v_target_loc = e_perseus.origin + v_direction;
         launchvelocity = vectornormalize( v_target_loc - e_perseus.origin ) * 800;
-        projectile = e_perseus magicmissile( level.s_boss_battle.var_5db6ed5f, v_target_loc + ( 16, 0, 54 ), launchvelocity );
+        projectile = e_perseus magicmissile( level.s_boss_battle.wpn_chaos_bolt, v_target_loc + ( 16, 0, 54 ), launchvelocity );
         projectile clientfield::set( "" + #"chaos_bolt_fx", 3 );
     }
 }

@@ -92,7 +92,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_2e8a793dedcc3610",
+                            "anim": "anim#p8_fxanim_zm_esc_hellhole_open_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -150,7 +150,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_5f579a2bc6e7d38c",
+                            "anim": "anim#p8_fxanim_zm_esc_hellhole_close_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -183,7 +183,7 @@
             "hash_9de1f44c": 0,
             "lerptime": 0,
             "firstframe": 1,
-            "model": "model#hash_290420129f24f0b4",
+            "model": "model#p8_fxanim_zm_esc_hellhole_mod",
             "type": "prop",
             "disablehitmarker": 0,
             "usefakeactor": 0,

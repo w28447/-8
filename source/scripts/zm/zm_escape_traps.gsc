@@ -1072,7 +1072,7 @@ function function_1f7e661f( t_damage )
         self clientfield::set( "spinning_trap_blood_fx", 1 );
     }
     
-    self playsound( #"hash_42c6cc2204b7fbbd" );
+    self playsound( #"evt_spin_trap_hit" );
     v_hook = t_damage.mdl_trap gettagorigin( "tag_weapon_3" );
     n_dist = distance2d( self.origin, v_hook );
     
@@ -1299,7 +1299,7 @@ function function_864365ef( t_damage, var_e72c9959 )
     self setteam( util::get_enemy_team( self.team ) );
     self zombie_utility::makezombiecrawler( 1 );
     var_e72c9959 thread scene::init( #"aib_vign_zm_mob_hook_trap_zombie", self );
-    playsoundatposition( #"hash_42c6cc2204b7fbbd", self.origin );
+    playsoundatposition( #"evt_spin_trap_hit", self.origin );
     t_damage waittill( #"trap_finished" );
     var_44342e79 = var_e72c9959 scene::function_8582657c( #"p8_fxanim_zm_esc_trap_fan_play", "Shot 2" );
     var_e72c9959 scene::play( #"aib_vign_zm_mob_hook_trap_zombie", self );
@@ -1421,7 +1421,7 @@ function zapper_light_red()
     {
         self.var_cd6ebde4[ i ] setmodel( #"p7_zm_mob_trap_control_base_red" );
         self.var_cd6ebde4[ i ] playsound( #"zmb_switch_flip_trap" );
-        self.var_cd6ebde4[ i ] playsound( #"hash_6c4cdf83585f2851" );
+        self.var_cd6ebde4[ i ] playsound( #"zmb_switch_flip_trap_alarm" );
     }
     
     level flag::wait_till( "start_zombie_round_logic" );
@@ -1452,8 +1452,8 @@ function zapper_light_green()
     for ( i = 0; i < self.var_cd6ebde4.size ; i++ )
     {
         self.var_cd6ebde4[ i ] setmodel( #"p7_zm_mob_trap_control_base" );
-        self.var_cd6ebde4[ i ] playsound( #"hash_27343b1084481dcb" );
-        self.var_cd6ebde4[ i ] playsound( #"hash_57154349da449cd" );
+        self.var_cd6ebde4[ i ] playsound( #"zmb_switch_flip_trap_reset" );
+        self.var_cd6ebde4[ i ] playsound( #"zmb_switch_flip_trap_alarm_reset" );
     }
     
     switch ( self.script_noteworthy )

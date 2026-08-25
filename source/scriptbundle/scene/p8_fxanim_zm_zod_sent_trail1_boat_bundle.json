@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_7a834b7b3149469c",
+                            "anim": "anim#p8_fxanim_zm_zod_sent_trail1_boat_idle_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -38,7 +38,7 @@
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "anim#hash_3ced73ff363365c",
+                            "anim": "anim#p8_fxanim_zm_zod_sent_trail1_boat_break_idle_anim",
                             "entrytype": "anim"
                         }
                     ],

@@ -301,8 +301,8 @@ function function_193dbfbb()
     n_check_time = 0.1;
     n_sequence = 1;
     var_34e4f6b8 = spawn( "script_origin", self.origin );
-    var_34e4f6b8 playsound( #"hash_1fb395621513432f" );
-    var_34e4f6b8 playloopsound( #"hash_177d7a6df8ed0d7b" );
+    var_34e4f6b8 playsound( #"wpn_electric_trap_start" );
+    var_34e4f6b8 playloopsound( #"wpn_electric_trap_loop" );
     
     foreach ( var_131f4c21 in self.var_5aecd907 )
     {
@@ -334,7 +334,7 @@ function function_193dbfbb()
     
     if ( isdefined( var_34e4f6b8 ) )
     {
-        playsoundatposition( #"hash_3819c6cd06a27f15", var_34e4f6b8.origin );
+        playsoundatposition( #"wpn_electric_trap_stop", var_34e4f6b8.origin );
         var_34e4f6b8 delete();
     }
     
@@ -517,7 +517,7 @@ function electrocute_zombie( e_activator, e_volume )
         refs[ 5 ] = "no_legs";
         refs[ 6 ] = "head";
         self.a.gib_ref = refs[ randomint( refs.size ) ];
-        playsoundatposition( #"hash_5183b687ad8d715a", self.origin );
+        playsoundatposition( #"wpn_electric_trap_hit", self.origin );
         
         if ( randomint( 100 ) > 50 )
         {
@@ -527,7 +527,7 @@ function electrocute_zombie( e_activator, e_volume )
         bhtnactionstartevent( self, "electrocute" );
         self notify( #"bhtn_action_notify", { #action:"electrocute" } );
         wait randomfloat( 1.25 );
-        self playsound( #"hash_5183b687ad8d715a" );
+        self playsound( #"wpn_electric_trap_hit" );
     }
     
     self dodamage( self.health + 666, self.origin, e_activator, e_volume );

@@ -1,7 +1,7 @@
 {
     "name": "#hash_19b2bd92d66f192a",
-    "model": "#hash_2919489f4be265d6",
-    "unk20": "#hash_e1fb00c22a92b00",
+    "model": "#veh_t8_civ_truck_tuktuk_dest_taxi_ylw",
+    "unk20": "#veh_t8_civ_truck_tuktuk_taxi_dead_ylw",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

@@ -287,7 +287,7 @@ function function_c8a1552d( end_type )
             game.var_8e2b660a = globallogic_utils::gettimepassed();
             break;
         case 2:
-            game.var_69b0dc87 = level.robot.origin;
+            game.overtime_goal = level.robot.origin;
             break;
         default:
             break;
@@ -2007,9 +2007,9 @@ function setup_goal_object( robot, triggername )
 {
     trigger = getent( triggername, "targetname" );
     
-    if ( isdefined( game.var_69b0dc87 ) )
+    if ( isdefined( game.overtime_goal ) )
     {
-        trigger = spawn( "trigger_radius_new", game.var_69b0dc87 );
+        trigger = spawn( "trigger_radius_new", game.overtime_goal );
         trigger.radius = 120;
     }
     

@@ -263,14 +263,14 @@ function function_45489835( str_flag )
     switch ( str_flag )
     {
         case #"power_on1":
-            playsoundatposition( #"hash_5f9ff903d1e07acb", ( 0, 0, 0 ) );
+            playsoundatposition( #"evt_power_docks", ( 0, 0, 0 ) );
             break;
         case #"power_on2":
-            playsoundatposition( #"hash_7bb9774ddb11bc9f", ( 0, 0, 0 ) );
-            playsoundatposition( #"hash_957e90e703a238a", ( 1311, -1971, 1102 ) );
+            playsoundatposition( #"evt_power_ship", ( 0, 0, 0 ) );
+            playsoundatposition( #"evt_power_ship_swt", ( 1311, -1971, 1102 ) );
             break;
         case #"power_on3":
-            playsoundatposition( #"hash_4760ffee46ef7f74", ( 0, 0, 0 ) );
+            playsoundatposition( #"evt_power_lab", ( 0, 0, 0 ) );
             break;
     }
 }
@@ -725,7 +725,7 @@ function electrocute_zombie()
         refs[ 5 ] = "no_legs";
         refs[ 6 ] = "head";
         self.a.gib_ref = refs[ randomint( refs.size ) ];
-        playsoundatposition( #"hash_5183b687ad8d715a", self.origin );
+        playsoundatposition( #"wpn_electric_trap_hit", self.origin );
         
         if ( math::cointoss() )
         {
@@ -735,7 +735,7 @@ function electrocute_zombie()
         bhtnactionstartevent( self, "electrocute" );
         self notify( #"bhtn_action_notify", { #action:"electrocute" } );
         wait randomfloat( 1.25 );
-        self playsound( #"hash_5183b687ad8d715a" );
+        self playsound( #"wpn_electric_trap_hit" );
     }
     
     self dodamage( self.health + 666, self.origin );

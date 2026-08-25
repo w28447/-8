@@ -15,10 +15,10 @@
     "attackSpotHorzOffset": 0,
     "boards": [
         {
-            "boardModel": "#hash_779f6631d93f9bfc",
-            "tearAnim": "#hash_18fabbb1944d16cb",
-            "boardAnim": "#hash_5d67059c02255094",
-            "staticAnim": "#hash_5d67059c02255094",
+            "boardModel": "#zm_koala_debris_02_xmodel",
+            "tearAnim": "#zm_koala_debris_01_clear",
+            "boardAnim": "#zm_koala_debris_01_idle",
+            "staticAnim": "#zm_koala_debris_01_idle",
             "pauseAndRepeatRepSound": "#hash_1",
             "repairEffect1Offset": "0 0 0",
             "repairEffect2Offset": "0 0 0",

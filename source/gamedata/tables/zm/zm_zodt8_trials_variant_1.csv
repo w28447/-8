@@ -22,7 +22,7 @@
 10,#waterlogged,&#hash_5d1d7585c39b1b15,&#hash_14e32bf4f4789fbf,&#,#friendly_fire,#,#,#,#,#,#,#,#
 10,#,&#,&#,&#,#defend_area,#s_destination_cargo_hold,#hash_5e2686030984da5d,#hash_3a6ddc441fd92406,#zone_cargo,#,#,#,#
 10,#,&#,&#,&#,#hash_6c768f3c15d55377,#perk_drunk,#,#,#,#,#,#,#
-10,#,&#,&#,&#,#give_reward,#fastest_time_to_round_10,#hash_59f3691e270c0200,#hash_40772c55aaa62bd0,#hash_2f238d964d0b6267,#,#,#,#
+10,#,&#,&#,&#,#give_reward,#fastest_time_to_round_10,#hash_59f3691e270c0200,#trial_medal_platinum,#hash_2f238d964d0b6267,#,#,#,#
 11,#door_man,&#hash_7e639eaeecc873fe,&#hash_230598ae0d4fd24e,&#,#open_all_doors,#60,#,#,#,#,#,#,#
 12,#crawling_with_zombies,&#hash_2823448d77d3b887,&#hash_2673809df8c33919,&#,#crawlers_only,#,#,#,#,#,#,#,#
 12,#,&#,&#,&#,#sprinters_only,#,#,#,#,#,#,#,#
@@ -47,7 +47,7 @@
 20,#engine_room_rumble,&#hash_5ff4184a20005456,&#hash_3367be9cb3de4426,&#,#defend_area,#s_destination_engine_room,#hash_4101f1034b6bb306,#hash_60cb7078f7d454a5,#zone_engine,#zone_upper_engine_room,#,#,#
 20,#,&#,&#,&#,#special_enemy,#stoker,#20,#30,#hash_64096a5a5d944158,#,#,#,#
 20,#,&#,&#,&#,#hash_6c768f3c15d55377,#random_blindness,#,#,#,#,#,#,#
-20,#,&#,&#,&#,#give_reward,#fastest_time_to_round_20,#hash_47257c1e41559994,#hash_fd6b3df8a0ba964,#hash_70d008641f35a1f0,#,#,#,#
+20,#,&#,&#,&#,#give_reward,#fastest_time_to_round_20,#hash_47257c1e41559994,#trial_medal_diamond,#hash_70d008641f35a1f0,#,#,#,#
 21,#level_headed,&#hash_2045bfcb4ec0b4ad,&#hash_43062aaa02d5d217,&#,#acquire_weapon,#hero_lv3_weapon,#,#,#,#,#,#,#
 21,#,&#,&#,&#,#hash_64d77357e69aee75,#hash_6c6c8f6b349b8751,#,#,#,#,#,#,#
 21,#,&#,&#,&#,#hash_6840f605489bddc2,#hash_6c6c8f6b349b8751,#,#,#,#,#,#,#
@@ -73,4 +73,4 @@
 30,#,&#,&#,&#,#defend_area,#s_destination_grand_staircase,#hash_ac52d58f0973396,#hash_319a657e16bbd595,#zone_grand_stairs_a_deck,#zone_grand_stairs_b_deck,#zone_grand_stairs_c_deck,#zone_grand_stairs_d_deck,#zone_grand_stairs_bottom
 30,#,&#,&#,&#,#force_archetypes,#blight_father,#,#,#,#,#,#,#
 30,#,&#,&#,&#,#restrict_controls,#invert,#,#,#,#,#,#,#
-30,#,&#,&#,&#,#give_reward,#fastest_time_to_complete_round_30,#hash_2b5c1c69bebf4f4,#hash_18f9261a2caa7739,#hash_7de12be102824219,#hash_65a6063dd5dc5425,#1,#,#
+30,#,&#,&#,&#,#give_reward,#fastest_time_to_complete_round_30,#hash_2b5c1c69bebf4f4,#trial_medal_darkmatter,#hash_7de12be102824219,#hash_65a6063dd5dc5425,#1,#,#

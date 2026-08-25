@@ -226,7 +226,7 @@ function function_30d4f8c4( attacker, smeansofdeath, weapon )
 {
     if ( sessionmodeiswarzonegame() )
     {
-        self playsoundtoplayer( #"hash_686fcf059a57de6f", self );
+        self playsoundtoplayer( #"mpl_death_by_wz_default", self );
         return;
     }
     
@@ -235,33 +235,33 @@ function function_30d4f8c4( attacker, smeansofdeath, weapon )
         return;
     }
     
-    str_alias = #"hash_6d746e7e1822ad79";
+    str_alias = #"mpl_death_by_default";
     
     switch ( weapon.rootweapon.name )
     {
         case #"hero_annihilator":
-            str_alias = #"hash_5e5050d7f9042fac";
+            str_alias = #"mpl_death_by_hero_annihilator";
             break;
         case #"eq_gravityslam":
             str_alias = #"hash_191ff361b2a52032";
             break;
         case #"molotov_fire":
-            str_alias = #"hash_40a5f428bba291a8";
+            str_alias = #"mpl_death_by_fire";
             break;
         case #"gadget_radiation_field":
-            str_alias = #"hash_16cc324cc4a290fc";
+            str_alias = #"mpl_death_by_hero_radiation";
             break;
         case #"sig_bow_quickshot5":
             str_alias = #"hash_1732b1323f11b7bf";
             break;
         case #"sig_lmg":
-            str_alias = #"hash_7b92159573aee640";
+            str_alias = #"mpl_death_by_scythe";
             break;
         case #"sniper_powersemi_t8":
         case #"sniper_powerbolt_t8":
         case #"sniper_fastrechamber_t8":
         case #"sniper_quickscope_t8":
-            str_alias = #"hash_9b40eefa77d6446";
+            str_alias = #"mpl_death_by_weapon_sniper";
             break;
         case #"ar_damage_t8":
         case #"ar_accurate_t8":
@@ -279,7 +279,7 @@ function function_30d4f8c4( attacker, smeansofdeath, weapon )
         case #"smg_fastfire_t8":
         case #"lmg_standard_t8":
         case #"smg_handling_t8":
-            str_alias = #"hash_669a22b65807ee3b";
+            str_alias = #"mpl_death_by_weapon_fullauto";
             break;
         case #"pistol_revolver_t8":
         case #"tr_powersemi_t8":
@@ -288,7 +288,7 @@ function function_30d4f8c4( attacker, smeansofdeath, weapon )
             break;
         case #"shotgun_pump_t8":
         case #"shotgun_semiauto_t8":
-            str_alias = #"hash_10ba93a0930567c5";
+            str_alias = #"mpl_death_by_weapon_shotgun";
             break;
         case #"eq_sticky_grenade":
             str_alias = #"hash_5330d1fc9ae03536";
@@ -301,22 +301,22 @@ function function_30d4f8c4( attacker, smeansofdeath, weapon )
     switch ( smeansofdeath )
     {
         case #"mod_trigger_hurt":
-            str_alias = #"hash_3f3f94dcb425d73b";
+            str_alias = #"mpl_death_by_falling";
             break;
         case #"mod_melee_weapon_butt":
         case #"mod_melee_assassinate":
         case #"mod_melee":
             if ( function_641cec60( weapon ) )
             {
-                str_alias = #"hash_5cd2899685b79029";
+                str_alias = #"mpl_death_by_melee_blade";
             }
             else if ( weapon.rootweapon.name == "sig_blade" )
             {
-                str_alias = #"hash_6494570483effef0";
+                str_alias = #"mpl_death_by_ninja";
             }
             else
             {
-                str_alias = #"hash_3fa09e466fc19e30";
+                str_alias = #"mpl_death_by_melee";
             }
             
             break;
@@ -327,7 +327,7 @@ function function_30d4f8c4( attacker, smeansofdeath, weapon )
         case #"mod_dot":
             if ( weapon.doesfiredamage )
             {
-                str_alias = #"hash_40a5f428bba291a8";
+                str_alias = #"mpl_death_by_fire";
                 break;
             }
             

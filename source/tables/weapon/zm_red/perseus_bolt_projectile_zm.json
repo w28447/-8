@@ -72,14 +72,14 @@
             "1 0.0507"
         ]
     ],
-    "sound90": "#hash_40d1ee977f5c102f",
+    "sound90": "#wpn_scorpion_projectile_lp",
     "firesound": "#hash_2f093c9a79640514",
     "firesoundplayer": "#hash_2f093c9a79640514",
     "sound220": "#hash_2f093c9a79640514",
     "sound230": "#hash_2f093c9a79640514",
-    "sound240": "#hash_683733eab40de48b",
-    "sound250": "#hash_3ee3cceae529ba86",
-    "sound270": "#hash_24db08faf35699e1",
+    "sound240": "#wpn_crossbow_dryfire_npc",
+    "sound250": "#wpn_crossbow_dryfire_plr",
+    "sound270": "#prj_bolt_whizby",
     "projexplosionsound": "#hash_542add02cd677e58",
     "projexplosionsoundplayer": "#hash_542add02cd677e58",
     "sound800": "#hash_54f28bb508a46096",

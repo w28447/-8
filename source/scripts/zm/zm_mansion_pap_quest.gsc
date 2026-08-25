@@ -1659,7 +1659,7 @@ function function_16288b92( str_type, s_loc, mdl_key, vol_transform )
             var_47323b73.str_clue = str_clue;
             level flag::wait_till( "painting_clue" );
             mdl_painting clientfield::set( "" + #"hash_11eb6b7dc7db71ad", 0 );
-            mdl_painting playsound( #"hash_20df90b365932d7c" );
+            mdl_painting playsound( #"zmb_portrait_burn" );
             wait 2;
             e_fx = util::spawn_model( #"tag_origin", s_spawnpt.origin );
             e_fx playsound( "zmb_sq_souls_release" );
@@ -1692,7 +1692,7 @@ function function_16288b92( str_type, s_loc, mdl_key, vol_transform )
             t_portal waittill( #"trigger" );
             e_trail clientfield::set( "" + #"soul_fx", 0 );
             wait 0.1;
-            e_trail playsound( #"hash_72a28324d62874cc" );
+            e_trail playsound( #"zmb_ghost_disappear" );
             e_trail clientfield::set( "" + #"ghost_trail", 0 );
             waitframe( 3 );
             
@@ -1749,7 +1749,7 @@ function function_16288b92( str_type, s_loc, mdl_key, vol_transform )
             {
                 mdl_lid = getent( "monkey_lid", "targetname" );
                 mdl_lid rotateroll( -27, 0.5 );
-                mdl_lid playsound( #"hash_56315c5fd55c0092" );
+                mdl_lid playsound( #"zmb_will_box_open" );
             }
             
             level flag::wait_till( var_47323b73.str_flag );
@@ -1761,7 +1761,7 @@ function function_16288b92( str_type, s_loc, mdl_key, vol_transform )
             {
                 mdl_lid = getent( "monkey_lid", "targetname" );
                 mdl_lid rotateroll( 27, 0.5 );
-                mdl_lid playsound( #"hash_3d156fc836a3f16" );
+                mdl_lid playsound( #"zmb_will_box_close" );
             }
             
             e_fx delete();
@@ -1793,7 +1793,7 @@ function function_16288b92( str_type, s_loc, mdl_key, vol_transform )
             t_portal waittill( #"trigger" );
             e_trail clientfield::set( "" + #"soul_fx", 0 );
             wait 0.1;
-            e_trail playsound( #"hash_72a28324d62874cc" );
+            e_trail playsound( #"zmb_ghost_disappear" );
             e_trail clientfield::set( "" + #"ghost_trail", 0 );
             waitframe( 3 );
             
@@ -2393,8 +2393,8 @@ function function_d409a74f( mdl_symbol )
     self.mdl_body linkto( self );
     self.mdl_head linkto( self.mdl_body );
     self.mdl_body clientfield::set( "" + #"ghost_trail", 1 );
-    self playsound( #"hash_4826261b01f96036" );
-    self playloopsound( #"hash_298631572be3dd79" );
+    self playsound( #"zmb_ghost_appear" );
+    self playloopsound( #"zmb_ghost_loop" );
     
     /#
         self thread function_debf98ad();
@@ -2542,7 +2542,7 @@ function function_d409a74f( mdl_symbol )
     self moveto( mdl_symbol.origin, 2 );
     self waittill( #"movedone" );
     level flag::set( "wisp_done" );
-    self playsound( #"hash_72a28324d62874cc" );
+    self playsound( #"zmb_ghost_disappear" );
     self.mdl_body clientfield::set( "" + #"ghost_trail", 0 );
     waitframe( 3 );
     self scene::stop();
@@ -3877,7 +3877,7 @@ function function_1f3845a9()
 // Size: 0x13c
 function function_418873a4( var_eb6e62b5 )
 {
-    var_eb6e62b5 playsound( #"hash_26a50e69d0c10a3c" );
+    var_eb6e62b5 playsound( #"zmb_clock_start" );
     
     for ( n_count = 1; n_count < 13 ; n_count++ )
     {
@@ -3886,18 +3886,18 @@ function function_418873a4( var_eb6e62b5 )
         switch ( n_count )
         {
             case 3:
-                var_eb6e62b5 playsound( #"hash_1a58bf8555bdbb23" );
+                var_eb6e62b5 playsound( #"zmb_clock_progress" );
                 break;
             case 6:
-                var_eb6e62b5 playsound( #"hash_1a58bf8555bdbb23" );
+                var_eb6e62b5 playsound( #"zmb_clock_progress" );
                 break;
             case 9:
-                var_eb6e62b5 playsound( #"hash_1a58bf8555bdbb23" );
+                var_eb6e62b5 playsound( #"zmb_clock_progress" );
                 break;
         }
     }
     
-    var_eb6e62b5 playsound( #"hash_2fb1c47e5864ae0f" );
+    var_eb6e62b5 playsound( #"zmb_clock_finish" );
 }
 
 // Namespace mansion_pap/zm_mansion_pap_quest
@@ -4003,7 +4003,7 @@ function trigger_think()
                     
                     level zm_ui_inventory::function_7df6bb60( #"pap_1", 1 );
                     level flag::set( "crystal_main_hall" );
-                    playsoundatposition( #"hash_7a91182f3727ce9", level.mdl_key_main_hall.origin );
+                    playsoundatposition( #"zmb_pap_key_pickup", level.mdl_key_main_hall.origin );
                     level.mdl_key_main_hall delete();
                 }
                 
@@ -4018,7 +4018,7 @@ function trigger_think()
                     
                     level zm_ui_inventory::function_7df6bb60( #"pap_2", 1 );
                     level flag::set( "crystal_library" );
-                    playsoundatposition( #"hash_7a91182f3727ce9", level.mdl_key_library.origin );
+                    playsoundatposition( #"zmb_pap_key_pickup", level.mdl_key_library.origin );
                     level.mdl_key_library delete();
                 }
                 
@@ -4033,7 +4033,7 @@ function trigger_think()
                     
                     level zm_ui_inventory::function_7df6bb60( #"pap_3", 1 );
                     level flag::set( "crystal_greenhouse" );
-                    playsoundatposition( #"hash_7a91182f3727ce9", level.mdl_key_greenhouse.origin );
+                    playsoundatposition( #"zmb_pap_key_pickup", level.mdl_key_greenhouse.origin );
                     level.mdl_key_greenhouse delete();
                 }
                 
@@ -4074,8 +4074,8 @@ function function_7ff450ae()
     
     if ( isdefined( self ) )
     {
-        self playsound( #"hash_4826261b01f96036" );
-        self playloopsound( #"hash_298631572be3dd79" );
+        self playsound( #"zmb_ghost_appear" );
+        self playloopsound( #"zmb_ghost_loop" );
     }
 }
 

@@ -1,7 +1,7 @@
 {
     "name": "#hash_24c8bb901190b3fb",
-    "model": "#hash_55e6bbf11a3bab79",
-    "unk20": "#hash_6fdd7007ed349f5c",
+    "model": "#veh_t8_civ_van_utility_black_california_dest",
+    "unk20": "#veh_t8_civ_van_utility_dead_black",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

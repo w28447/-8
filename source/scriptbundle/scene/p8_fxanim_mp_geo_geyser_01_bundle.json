@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_7f02aa54ff655253",
+                            "anim": "anim#p8_fxanim_mp_geo_geyser_01_s0_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -34,7 +34,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_8b60ce989aa839a",
+                            "anim": "anim#p8_fxanim_mp_geo_geyser_01_s1_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -63,7 +63,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_4af0e92f1c9c44b1",
+                            "anim": "anim#p8_fxanim_mp_geo_geyser_01_s2_anim",
                             "entrytype": "anim"
                         }
                     ],

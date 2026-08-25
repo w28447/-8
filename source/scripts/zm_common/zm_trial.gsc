@@ -389,7 +389,7 @@ function function_361e2cb0()
         player val::set( "end_game", "freezecontrols", 1 );
     }
     
-    playsoundatposition( #"hash_6a80142d79605bc6", ( 0, 0, 0 ) );
+    playsoundatposition( #"zmb_trials_success", ( 0, 0, 0 ) );
     zm_trial_util::set_game_state( 2 );
     level.trials_success = 1;
     wait 3;
@@ -405,7 +405,7 @@ function function_18b797ec()
 {
     level flag::set( #"trial_failed" );
     level notify( #"end_round_think" );
-    playsoundatposition( #"hash_24ecb9cb90a831b7", ( 0, 0, 0 ) );
+    playsoundatposition( #"zmb_trials_fail", ( 0, 0, 0 ) );
     setmatchflag( "disableIngameMenu", 1 );
     
     foreach ( player in getplayers() )
@@ -834,7 +834,7 @@ function on_round_begin()
         return;
     }
     
-    playsoundatposition( #"hash_44cf63a367dbd4ff", ( 0, 0, 0 ) );
+    playsoundatposition( #"zmb_trials_round_begin", ( 0, 0, 0 ) );
     zm_trial_util::set_game_state( 0 );
     zm_trial_util::function_8cdbf9f0();
     zm_trial_util::function_96e10d88( 0 );

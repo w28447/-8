@@ -3172,7 +3172,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_7f4e46b0b7809020",
+                    "value": "#fly_bump_locker",
                     "unk1a": true
                 },
                 {
@@ -3255,7 +3255,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1882eb6e5e09792c",
+                    "value": "#fly_bump_barrel_large",
                     "unk1a": true
                 },
                 {
@@ -3338,7 +3338,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {
@@ -3421,7 +3421,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1882eb6e5e09792c",
+                    "value": "#fly_bump_barrel_large",
                     "unk1a": true
                 },
                 {
@@ -3504,7 +3504,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1882eb6e5e09792c",
+                    "value": "#fly_bump_barrel_large",
                     "unk1a": true
                 },
                 {
@@ -3587,7 +3587,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1882eb6e5e09792c",
+                    "value": "#fly_bump_barrel_large",
                     "unk1a": true
                 },
                 {
@@ -3670,7 +3670,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1882eb6e5e09792c",
+                    "value": "#fly_bump_barrel_large",
                     "unk1a": true
                 },
                 {
@@ -3753,7 +3753,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_e3f4e729217e70",
+                    "value": "#fly_bump_barrel",
                     "unk1a": true
                 },
                 {
@@ -3836,7 +3836,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {
@@ -3919,7 +3919,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1b27529a48455c01",
+                    "value": "#fly_bump_wood",
                     "unk1a": true
                 },
                 {
@@ -4002,7 +4002,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1b27529a48455c01",
+                    "value": "#fly_bump_wood",
                     "unk1a": true
                 },
                 {
@@ -4085,7 +4085,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1b27529a48455c01",
+                    "value": "#fly_bump_wood",
                     "unk1a": true
                 },
                 {
@@ -4168,7 +4168,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1882eb6e5e09792c",
+                    "value": "#fly_bump_barrel_large",
                     "unk1a": true
                 },
                 {
@@ -4251,7 +4251,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1882eb6e5e09792c",
+                    "value": "#fly_bump_barrel_large",
                     "unk1a": true
                 },
                 {
@@ -4334,7 +4334,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_716f951c8cc4c681",
+                    "value": "#fly_bump_generic_metal",
                     "unk1a": true
                 },
                 {
@@ -4417,7 +4417,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_716f951c8cc4c681",
+                    "value": "#fly_bump_generic_metal",
                     "unk1a": true
                 },
                 {
@@ -4500,7 +4500,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {
@@ -4583,7 +4583,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_1b27529a48455c01",
+                    "value": "#fly_bump_wood",
                     "unk1a": true
                 },
                 {
@@ -4666,7 +4666,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_716f951c8cc4c681",
+                    "value": "#fly_bump_generic_metal",
                     "unk1a": true
                 },
                 {
@@ -4749,7 +4749,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_716f951c8cc4c681",
+                    "value": "#fly_bump_generic_metal",
                     "unk1a": true
                 },
                 {
@@ -4927,7 +4927,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {

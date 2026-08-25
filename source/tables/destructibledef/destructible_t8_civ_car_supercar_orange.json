@@ -1,7 +1,7 @@
 {
     "name": "#destructible_t8_civ_car_supercar_orange",
-    "model": "#hash_1d0935483667c9f5",
-    "unk20": "#hash_1b7dacfc56db2673",
+    "model": "#veh_t8_civ_car_supercar_dest_orange",
+    "unk20": "#veh_t8_civ_car_supercar_dead_orange",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

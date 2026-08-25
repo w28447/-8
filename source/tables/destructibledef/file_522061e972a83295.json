@@ -1,6 +1,6 @@
 {
     "name": "#hash_522061e972a83295",
-    "model": "#hash_3d140db5c2048f97",
+    "model": "#veh_t8_civ_car_classic_muscle_dest_org_california",
     "unk20": "#veh_t8_civ_car_classic_muscle_dead_org",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
@@ -11,7 +11,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_21d849eee4d897a",
+                    "name": "#dst_car_rad_steam",
                     "unk28": "tag_body_d0"
                 },
                 {

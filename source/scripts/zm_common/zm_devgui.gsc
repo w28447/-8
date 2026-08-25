@@ -4947,14 +4947,14 @@
                     foreach ( node in zone.nodes )
                     {
                         node_region = getnoderegion( node );
-                        var_747013f8 = node.targetname;
+                        print_string = node.targetname;
                         
                         if ( isdefined( node_region ) )
                         {
-                            var_747013f8 = node_region + "<dev string:x65>" + node.targetname;
+                            print_string = node_region + "<dev string:x65>" + node.targetname;
                         }
                         
-                        print3d( node.origin + ( 0, 0, 12 ), var_747013f8, ( 0, 1, 0 ), 1, 1 );
+                        print3d( node.origin + ( 0, 0, 12 ), print_string, ( 0, 1, 0 ), 1, 1 );
                     }
                 }
             }

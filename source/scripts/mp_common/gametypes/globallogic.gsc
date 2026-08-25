@@ -831,7 +831,7 @@ function function_4b670b29()
         return false;
     }
     
-    params = { #teams_forfeited:[], #var_6eb69269:[] };
+    params = { #teams_forfeited:[], #teams_playing:[] };
     
     foreach ( team, _ in level.teams )
     {
@@ -850,16 +850,16 @@ function function_4b670b29()
             continue;
         }
         
-        if ( !isdefined( params.var_6eb69269 ) )
+        if ( !isdefined( params.teams_playing ) )
         {
-            params.var_6eb69269 = [];
+            params.teams_playing = [];
         }
-        else if ( !isarray( params.var_6eb69269 ) )
+        else if ( !isarray( params.teams_playing ) )
         {
-            params.var_6eb69269 = array( params.var_6eb69269 );
+            params.teams_playing = array( params.teams_playing );
         }
         
-        params.var_6eb69269[ params.var_6eb69269.size ] = team;
+        params.teams_playing[ params.teams_playing.size ] = team;
     }
     
     if ( platoons::function_382a49e0() && !infection::function_74650d7() )
@@ -890,7 +890,7 @@ function function_4b670b29()
         
         params.var_b2ee6c67 = [];
         
-        foreach ( team in params.var_6eb69269 )
+        foreach ( team in params.teams_playing )
         {
             platoon = getteamplatoon( team );
             
@@ -915,7 +915,7 @@ function function_4b670b29()
             return true;
         }
     }
-    else if ( params.var_6eb69269.size == 1 && params.teams_forfeited.size > 0 )
+    else if ( params.teams_playing.size == 1 && params.teams_forfeited.size > 0 )
     {
         thread [[ level.onforfeit ]]( params );
         return true;
@@ -2400,10 +2400,10 @@ function private function_4720c07f( outcome )
 // Params 1
 // Checksum 0xc7b08618, Offset: 0x7c90
 // Size: 0x6c
-function function_566a70ad( var_c139bfe2 )
+function function_566a70ad( delay_type )
 {
     level.var_49d9aa70 = 0.25;
-    level.var_db945f12 = level.roundenddelay[ var_c139bfe2 ] / 4;
+    level.var_db945f12 = level.roundenddelay[ delay_type ] / 4;
     setslowmotion( 1, level.var_49d9aa70, level.var_db945f12 );
 }
 

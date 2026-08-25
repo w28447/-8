@@ -299,7 +299,7 @@ function private cover_think()
     {
         self.var_f0d6ee1f = 1;
         createdynentandlaunch( self.dyn, self.origin, self.angles, self.origin, v_force );
-        playsoundatposition( #"hash_1ff16e6eb6a9dfed", self.origin );
+        playsoundatposition( #"evt_painting_fall", self.origin );
     }
 }
 

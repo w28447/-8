@@ -32,8 +32,8 @@ function function_448f6f5d()
     while ( true )
     {
         level waittill( #"hash_771bf8874446d6f6" );
-        playsoundatposition( #"hash_3ca0f0298d34aa6a", ( -5364, -10363, 608 ) );
-        playsoundatposition( #"hash_3ca0f0298d34aa6a", ( -7397, 8858, 1244 ) );
+        playsoundatposition( #"amb_base_alert_alarm", ( -5364, -10363, 608 ) );
+        playsoundatposition( #"amb_base_alert_alarm", ( -7397, 8858, 1244 ) );
     }
 }
 

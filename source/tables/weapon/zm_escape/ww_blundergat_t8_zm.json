@@ -41,10 +41,10 @@
     "#hash_2cf49821": false,
     "#hash_d2751f9d": false,
     "#hash_554be9f7": false,
-    "firesound": "#hash_409862427a8c12b2",
-    "firesoundplayer": "#hash_766d79429990fe57",
-    "sound240": "#hash_631a067190b54300",
-    "sound250": "#hash_242aa17124751841",
+    "firesound": "#wpn_blundergat_fire_npc",
+    "firesoundplayer": "#wpn_blundergat_fire_plr",
+    "sound240": "#wpn_generic_dryfire_npc",
+    "sound250": "#wpn_generic_dryfire_plr",
     "tunables1": "#ww_blundergat_t8_tunables_zm",
     "tracers": [
         "#hash_d6f045ae9b61e985"

@@ -5,11 +5,11 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_1f772cd409796112",
+                            "anim": "anim#ai_t8_zm_red_spar_swrd_dth_00",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "anim#hash_2b99709bc1330cbd",
+                            "anim": "anim#ai_t8_zm_red_spar_swrd_dth_00_loop",
                             "entrytype": "anim"
                         }
                     ],

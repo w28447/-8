@@ -1,7 +1,7 @@
 {
     "name": "#hash_7f5b2e8c6dd48bed",
-    "model": "#hash_1f34736ce06c5fbf",
-    "unk20": "#hash_37ee89311c2231c0",
+    "model": "#veh_t8_civ_car_hatchback_dest_dirty_wht_spain",
+    "unk20": "#veh_t8_civ_car_hatchback_dead_wht",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

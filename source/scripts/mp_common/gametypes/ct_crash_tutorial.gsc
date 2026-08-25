@@ -1695,8 +1695,8 @@ function function_c1069664()
     a_bots = player ct_bots::function_71ec2b36();
     n_start_health = 600;
     n_current_health = 0;
-    var_a12cbae4 = int( n_start_health * 0.7 );
-    var_154343e2 = int( n_start_health * 0.4 );
+    n_70_health = int( n_start_health * 0.7 );
+    n_40_health = int( n_start_health * 0.4 );
     player thread function_c3ff6f27();
     
     while ( true )
@@ -1706,12 +1706,12 @@ function function_c1069664()
             n_current_health += bot.health;
         }
         
-        if ( n_current_health <= var_a12cbae4 )
+        if ( n_current_health <= n_70_health )
         {
             level flag::set( "squad_health_70" );
         }
         
-        if ( n_current_health <= var_154343e2 )
+        if ( n_current_health <= n_40_health )
         {
             level flag::set( "squad_health_40" );
         }

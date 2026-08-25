@@ -30,9 +30,9 @@
     "#hash_554be9f7": false,
     "sound240": "#uin_unavailable_charging_npc",
     "sound250": "#uin_unavailable_charging",
-    "sound320": "#hash_307304d46846fc74",
-    "sound3b0": "#hash_390aa7d4252c46b5",
-    "gadgetreadysoundplayer": "#hash_1215b3e8d1be983b",
+    "sound320": "#mpl_health_regen_loop_npc",
+    "sound3b0": "#mpl_health_regen_loop_plr",
+    "gadgetreadysoundplayer": "#mpl_health_ready",
     "sound660": "#uin_unavailable_charging",
     "tunables1": "#pickup_health_regen_tunables_mp",
     "viewmodel": [

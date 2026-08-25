@@ -28,7 +28,7 @@
     "#hash_2cf49821": false,
     "#hash_d2751f9d": false,
     "#hash_554be9f7": false,
-    "soundb0": "#hash_1407719def7423c5",
+    "soundb0": "#wpn_frag_pin_pull_npc",
     "firesound": "#wpn_grenade_throw",
     "firesoundplayer": "#wpn_grenade_throw",
     "gadgetreadysoundplayer": "#hash_6f5b79a1a69b43a8",
@@ -45,7 +45,7 @@
     "worldModel": [
         "#wpn_t8_eqp_grenade_frag_world"
     ],
-    "gadgetIconAvailable": "#hash_4e4ff7b5d2603",
+    "gadgetIconAvailable": "#ui_icon_inventory_eq_frag_grenade",
     "reticleCenter": "#reticle_center_cross",
     "reticleSide": "#reticle_side_round",
     "inventoryIconZm": "#ui_icon_equipment_gadget_frag",

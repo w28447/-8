@@ -56,7 +56,7 @@
             "1 0"
         ]
     ],
-    "firesounddistant": "#hash_5f022cd68aefd198",
+    "firesounddistant": "#wpn_rifle_fire_distant",
     "firesound": "#hash_7a159ee3ca0e2ae4",
     "firesoundplayer": "#hash_15bc81e42224adc5",
     "sound120": "#hash_2f5f70bc1aa25be",
@@ -65,10 +65,10 @@
     "sound1e0": "#hash_5c696f2c3d313f78",
     "sound200": "#hash_15bc81e42224adc5",
     "sound210": "#hash_3f969a2cbe6bf119",
-    "sound240": "#hash_474a10cd847c7803",
-    "sound250": "#hash_146e19cd67fe19de",
+    "sound240": "#wpn_rifle_dryfire_npc",
+    "sound250": "#wpn_rifle_dryfire_plr",
     "sound260": "#prj_crack_supersonic",
-    "sound310": "#hash_553957b278d8e879",
+    "sound310": "#mpl_sniper_skullshot_plr",
     "sound5e0": "#fly_scope_zoom",
     "sound600": "#hash_5c9addf2686f77e2",
     "sound610": "#hash_5c9addf2686f77e2",
@@ -86,14 +86,14 @@
         "#hash_70561f677d3c0da1"
     ],
     "viewmodel": [
-        "#hash_56e53a36ef2f2539",
-        "#hash_56e53a36ef2f2539",
-        "#hash_a975411391c120"
+        "#wpn_t8_sniper_sniver_view",
+        "#wpn_t8_sniper_sniver_view",
+        "#wpn_t8_sniper_sniver_sig_02_view"
     ],
     "worldModel": [
-        "#hash_2b7a604f49016aec",
-        "#hash_2b7a604f49016aec",
-        "#hash_1f30e699516596db"
+        "#wpn_t8_sniper_sniver_world",
+        "#wpn_t8_sniper_sniver_world",
+        "#wpn_t8_sniper_sniver_sig_02_world"
     ],
     "reticleSide": "#reticle_side_small",
     "inventoryIconZm": "#ui_icon_weapons_zm_sniperfastrechamber",

@@ -80,7 +80,7 @@ function function_31a1d10f()
         
         foreach ( e_zbarrier in self.a_e_zbarriers )
         {
-            e_zbarrier playsound( #"hash_717ab767ebc92682" );
+            e_zbarrier playsound( #"zmb_fire_blocker" );
             e_zbarrier clientfield::set( "" + #"hash_7e15d8abc4d6c79a", 1 );
         }
     }

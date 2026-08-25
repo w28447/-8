@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_2bf9383af5515804",
+                            "anim": "anim#p8_fxanim_zm_man_pjs_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -38,7 +38,7 @@
             "hash_9de1f44c": 0,
             "lerptime": 0,
             "firstframe": 1,
-            "model": "model#hash_474da212d4cfd56e",
+            "model": "model#p8_zm_man_painting_jumpscare",
             "type": "prop",
             "disablehitmarker": 0,
             "usefakeactor": 0,

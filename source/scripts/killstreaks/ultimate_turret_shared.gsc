@@ -545,7 +545,7 @@ function onplaceturret( turret )
     }
     
     player deployable::function_6ec9ee30( turret.vehicle, getweapon( "ultimate_turret" ) );
-    turret.vehicle playloopsound( #"hash_69240c6db92da5bf", 0.25 );
+    turret.vehicle playloopsound( #"mpl_turret_amb_loop", 0.25 );
     
     foreach ( player in level.players )
     {
@@ -1241,7 +1241,7 @@ function turretscanning()
     veh.do_not_clear_targets_during_think = 1;
     wait 0.8;
     veh playsound( #"mpl_turret_startup" );
-    veh playloopsound( #"hash_69240c6db92da5bf" );
+    veh playloopsound( #"mpl_turret_amb_loop" );
     bundle = get_killstreak_bundle();
     min_burst_time = bundle.ksburstfiremintime;
     max_burst_time = bundle.ksburstfiremaxtime;
@@ -1687,7 +1687,7 @@ function on_player_killed()
     
     foreach ( player in var_f60ab10f )
     {
-        player playsoundtoplayer( #"hash_37ffaa04e3f898fa", player );
+        player playsoundtoplayer( #"mpl_turret_kill_assist", player );
     }
 }
 

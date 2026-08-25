@@ -243,7 +243,7 @@ function function_6e8037ca( params )
 // Params 3
 // Checksum 0x88da6d99, Offset: 0x908
 // Size: 0x2b4
-function function_c8beca5e( unlock_name, var_1d208aea, state )
+function function_c8beca5e( unlock_name, condition_name, state )
 {
     if ( !level function_b3681acb() )
     {
@@ -259,8 +259,8 @@ function function_c8beca5e( unlock_name, var_1d208aea, state )
     
     /#
         assert( isdefined( var_9ba1646c ), "<dev string:x38>" + hashtostring( unlock_name ) + "<dev string:x50>" );
-        assert( isinarray( var_9ba1646c.var_3845495, var_1d208aea ), "<dev string:x61>" + hashtostring( var_1d208aea ) + "<dev string:x73>" + hashtostring( unlock_name ) );
-        assert( isinarray( array( 0, 1, 2 ), state ), "<dev string:x90>" + hashtostring( var_1d208aea ) + "<dev string:xc4>" + hashtostring( unlock_name ) );
+        assert( isinarray( var_9ba1646c.var_3845495, condition_name ), "<dev string:x61>" + hashtostring( condition_name ) + "<dev string:x73>" + hashtostring( unlock_name ) );
+        assert( isinarray( array( 0, 1, 2 ), state ), "<dev string:x90>" + hashtostring( condition_name ) + "<dev string:xc4>" + hashtostring( unlock_name ) );
     #/
     
     if ( !self function_c70bcc7a( unlock_name ) )
@@ -269,17 +269,17 @@ function function_c8beca5e( unlock_name, var_1d208aea, state )
         return;
     }
     
-    current_state = self.var_c53589da[ unlock_name ].var_e7e238a4[ var_1d208aea ];
+    current_state = self.var_c53589da[ unlock_name ].var_e7e238a4[ condition_name ];
     
     if ( current_state == 2 )
     {
         return;
     }
     
-    self.var_c53589da[ unlock_name ].var_e7e238a4[ var_1d208aea ] = state;
+    self.var_c53589da[ unlock_name ].var_e7e238a4[ condition_name ] = state;
     self function_20b0ca2e( unlock_name );
     
-    if ( var_1d208aea != #"hash_3f07579f66b464e8" )
+    if ( condition_name != #"hash_3f07579f66b464e8" )
     {
         if ( !isalive( self ) || isdefined( level.gameended ) && level.gameended )
         {
@@ -372,9 +372,9 @@ function function_fb689837()
         
         var_b3895a2 = 1;
         
-        foreach ( var_1d208aea, var_b7ed23ab in var_c5c8fd39.var_e7e238a4 )
+        foreach ( condition_name, var_b7ed23ab in var_c5c8fd39.var_e7e238a4 )
         {
-            if ( var_1d208aea != #"hash_3f07579f66b464e8" && var_b7ed23ab != 1 )
+            if ( condition_name != #"hash_3f07579f66b464e8" && var_b7ed23ab != 1 )
             {
                 var_b3895a2 = 0;
                 break;

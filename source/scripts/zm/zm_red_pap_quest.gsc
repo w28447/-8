@@ -450,7 +450,7 @@ function function_5a06e111( player )
     
     level thread function_b2d4de9a( player );
     level flag::set( #"hash_3764b0cb106568ec" );
-    player playsound( #"hash_149efe131d76d3e" );
+    player playsound( #"zmb_bridle_pickup" );
     zm_ui_inventory::function_7df6bb60( #"zm_red_pegasus_bridle_item", 1 );
     wait 0.5;
     
@@ -1540,7 +1540,7 @@ function function_fe0a763c()
     if ( !level flag::get( #"pegasus_ride_skipped" ) )
     {
         player = array::random( util::get_active_players() );
-        player zm_vo::function_a2bd5a0c( #"hash_122bed9c58a18e5e", 0, 1, 9999, 1 );
+        player zm_vo::function_a2bd5a0c( #"vox_crash_land_react", 0, 1, 9999, 1 );
     }
     
     level notify( #"crash_landed" );
@@ -1941,7 +1941,7 @@ function function_c20c157a( str_loc )
             if ( str_flag == #"cliff_tombs_eagle_free" )
             {
                 level flag::set( #"defend_cage" );
-                s_notify.attacker thread zm_vo::function_a2bd5a0c( #"hash_172d8c7cc7123557", 0, 1, 9999, 1 );
+                s_notify.attacker thread zm_vo::function_a2bd5a0c( #"vox_cliff_eagle_free_react", 0, 1, 9999, 1 );
             }
             else
             {
@@ -1987,7 +1987,7 @@ function function_8be22ba8( str_flag )
             if ( str_flag == #"cliff_tombs_eagle_free" )
             {
                 level flag::set( #"defend_cage" );
-                s_result.player thread zm_vo::function_a2bd5a0c( #"hash_172d8c7cc7123557", 0, 1, 9999, 1 );
+                s_result.player thread zm_vo::function_a2bd5a0c( #"vox_cliff_eagle_free_react", 0, 1, 9999, 1 );
             }
             else
             {
@@ -3089,10 +3089,10 @@ function on_player_spawned()
     if ( self zm_characters::is_character( array( #"prt_zm_bruno", #"prt_zm_bruno_dlc0" ) ) )
     {
         self.a_str_vo = [];
-        self.a_str_vo[ self.a_str_vo.size ] = #"hash_5fb45a950319ba97";
-        self.a_str_vo[ self.a_str_vo.size ] = #"hash_5fb459950319b8e4";
-        self.a_str_vo[ self.a_str_vo.size ] = #"hash_5fb45c950319bdfd";
-        self.a_str_vo[ self.a_str_vo.size ] = #"hash_5fb45b950319bc4a";
+        self.a_str_vo[ self.a_str_vo.size ] = #"vox_pap_wait_plr_2_0";
+        self.a_str_vo[ self.a_str_vo.size ] = #"vox_pap_wait_plr_2_1";
+        self.a_str_vo[ self.a_str_vo.size ] = #"vox_pap_wait_plr_2_2";
+        self.a_str_vo[ self.a_str_vo.size ] = #"vox_pap_wait_plr_2_3";
         self zm_audio::function_87714659( &function_e432aeb6, #"pap", #"wait" );
         self zm_audio::function_87714659( &function_118e5303, #"powerup", #"insta_kill" );
         self zm_audio::function_87714659( &function_e7e0d76b, #"kill", #"streak_dieg" );
@@ -3129,7 +3129,7 @@ function function_9bc19458( str_vo )
     arrayremovevalue( self.a_str_vo, str_vo );
     self zm_vo::vo_say( str_vo, 0.5, 1, 9999, 1 );
     
-    if ( str_vo == #"hash_5fb45b950319bc4a" )
+    if ( str_vo == #"vox_pap_wait_plr_2_3" )
     {
         var_5fe18b90 = #"hash_4a6c02ebb0aaef31";
         self zm_vo::vo_say( var_5fe18b90, 0.5, 1, 9999, 1, 1 );
@@ -3151,10 +3151,10 @@ function function_229fd7e9()
 // Size: 0x118, Type: bool
 function function_118e5303( str_category, str_subcategory )
 {
-    a_str_vo = array( #"hash_fb4780da8c3e82e", #"hash_fb4790da8c3e9e1", #"hash_fb4760da8c3e4c8", #"hash_fb4770da8c3e67b", #"hash_fb47c0da8c3eefa" );
+    a_str_vo = array( #"vox_powerup_insta_plr_2_0", #"vox_powerup_insta_plr_2_1", #"vox_powerup_insta_plr_2_2", #"vox_powerup_insta_plr_2_3", #"vox_powerup_insta_plr_2_4" );
     str_vo = array::random( a_str_vo );
     
-    if ( str_vo == #"hash_fb47c0da8c3eefa" )
+    if ( str_vo == #"vox_powerup_insta_plr_2_4" )
     {
         self thread function_278687dd( str_vo, #"hash_4cd2ae6c8be71e9e" );
     }
@@ -3172,10 +3172,10 @@ function function_118e5303( str_category, str_subcategory )
 // Size: 0x118, Type: bool
 function function_e7e0d76b( str_category, str_subcategory )
 {
-    a_str_vo = array( #"hash_45f33af562e8c0c3", #"hash_45f339f562e8bf10", #"hash_45f33cf562e8c429", #"hash_45f33bf562e8c276", #"hash_45f33ef562e8c78f" );
+    a_str_vo = array( #"vox_dieg_kill_streak_plr_2_0", #"vox_dieg_kill_streak_plr_2_1", #"vox_dieg_kill_streak_plr_2_2", #"vox_dieg_kill_streak_plr_2_3", #"vox_dieg_kill_streak_plr_2_4" );
     str_vo = array::random( a_str_vo );
     
-    if ( str_vo == #"hash_45f33ef562e8c78f" )
+    if ( str_vo == #"vox_dieg_kill_streak_plr_2_4" )
     {
         self thread function_278687dd( str_vo, #"hash_5e93b1a6cba0fb35" );
     }

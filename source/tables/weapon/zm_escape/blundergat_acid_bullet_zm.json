@@ -27,8 +27,8 @@
     "#hash_2cf49821": false,
     "#hash_d2751f9d": false,
     "#hash_554be9f7": false,
-    "sound240": "#hash_631a067190b54300",
-    "sound250": "#hash_242aa17124751841",
+    "sound240": "#wpn_generic_dryfire_npc",
+    "sound250": "#wpn_generic_dryfire_plr",
     "tunables1": "#hash_468528d06864e303",
     "projectilemodel": "#wpn_t8_zm_blundergat_acid_projectile",
     "fx_ed8": "#zm_weapons/fx8_blundersplat_impact"

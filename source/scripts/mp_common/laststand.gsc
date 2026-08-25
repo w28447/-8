@@ -184,7 +184,7 @@ function on_player_damage( params )
             
             if ( self.health <= params.idamage )
             {
-                self.reviving_player.var_d75a6ff5.var_bb36e277 = 1;
+                self.reviving_player.var_d75a6ff5.reviver_killed = 1;
             }
         }
     }
@@ -899,7 +899,7 @@ function bleed_out()
     if ( getdvarint( #"enable_new_death_cam", 1 ) && isplayer( self ) )
     {
         bleed_out_fade_time = getdvarfloat( #"bleed_out_screen_fade_speed", 1.5 );
-        self playsoundtoplayer( #"hash_11d39dca0f911535", self );
+        self playsoundtoplayer( #"chr_health_laststand_die", self );
         self lui::screen_fade( bleed_out_fade_time, 1, 0, "black", 0 );
         wait bleed_out_fade_time + 0.2;
         self lui::screen_fade( bleed_out_fade_time, 0, 1, "black", 0 );

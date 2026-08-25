@@ -56,7 +56,7 @@ function function_e4a48a64( localclientnum, oldval, newval, bnewent, binitialsna
         }
         
         self.var_8eb4e749 = util::playfxontag( localclientnum, level._effect[ #"hell_portal" ], self, "tag_origin" );
-        self playsound( localclientnum, #"hash_6e048d37333004da" );
+        self playsound( localclientnum, #"zmb_wolfhead_start" );
         
         if ( !isdefined( self.var_dd081ca4 ) )
         {
@@ -72,7 +72,7 @@ function function_e4a48a64( localclientnum, oldval, newval, bnewent, binitialsna
         self.var_8eb4e749 = undefined;
     }
     
-    self playsound( localclientnum, #"hash_4435f84f2c7dd54f" );
+    self playsound( localclientnum, #"zmb_wolfhead_end" );
     
     if ( isdefined( self.var_dd081ca4 ) )
     {

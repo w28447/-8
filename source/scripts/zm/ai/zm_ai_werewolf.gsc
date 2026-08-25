@@ -1836,7 +1836,7 @@ function function_8fa45bb0()
         tag_origin = self gettagorigin( "tag_eye" );
         self.var_db792001 = spawn( "script_origin", tag_origin );
         self.var_db792001 linkto( self );
-        self.var_db792001 playloopsound( #"hash_6875b34c441a8695" );
+        self.var_db792001 playloopsound( #"zmb_vocals_werewolf_sprint_lp" );
         self thread function_dfe1236();
         self thread function_10ac98a8();
     }
@@ -1902,7 +1902,7 @@ function function_dfe1236()
                 wait 0.5;
             }
             
-            self.var_db792001 playloopsound( #"hash_6875b34c441a8695" );
+            self.var_db792001 playloopsound( #"zmb_vocals_werewolf_sprint_lp" );
         }
         
         wait 0.5;

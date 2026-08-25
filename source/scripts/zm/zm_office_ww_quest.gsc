@@ -696,7 +696,7 @@ function function_3410748f()
     level.var_3bf3d61e[ 21 ].fx moveto( level.var_3bf3d61e[ 21 ].fx.origin + ( -3.5, 13, 0 ), 0.3 );
     level.var_3bf3d61e[ 22 ].fx moveto( level.var_3bf3d61e[ 22 ].fx.origin + ( -3.5, 13, 0 ), 0.3 );
     level.var_3bf3d61e[ 23 ].fx moveto( level.var_3bf3d61e[ 23 ].fx.origin + ( -3.5, 13, 0 ), 0.3 );
-    playsoundatposition( #"hash_7c109876c748f07c", level.s_code_drawer.e_drawer.origin );
+    playsoundatposition( #"evt_ee_drawer_open", level.s_code_drawer.e_drawer.origin );
     waitresult.activator clientfield::set_to_player( "" + #"drawer_rumble_feedback", 1 );
     zm_unitrigger::unregister_unitrigger( self.stub );
 }

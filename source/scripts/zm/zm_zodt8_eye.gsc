@@ -1751,7 +1751,7 @@ function function_bb528a4b()
             else
             {
                 function_abbfbdff( level.var_73f9d759, 0.5 );
-                playsoundatposition( #"hash_6040f3b85932670c", self.origin );
+                playsoundatposition( #"zmb_eyeball_vox_pain", self.origin );
                 self scene::play( self.str_scene, "pain", self );
                 level thread function_f74b38da( "zm_power_on_rumble" );
             }
@@ -1918,7 +1918,7 @@ function function_3d6eaad5()
             if ( !var_7350b8a6 )
             {
                 function_abbfbdff( level.var_73f9d759, 0.5 );
-                playsoundatposition( #"hash_6040f3b85932670c", self.origin );
+                playsoundatposition( #"zmb_eyeball_vox_pain", self.origin );
                 self scene::play( self.str_scene, "pain", self );
                 level thread function_f74b38da( "zm_power_on_rumble" );
             }
@@ -1980,7 +1980,7 @@ function function_ae4a013d()
                 self.var_914750d++;
                 self scene::play( self.str_scene, "pain", self );
                 level thread function_f74b38da( "zm_power_on_rumble" );
-                playsoundatposition( #"hash_6040f3b85932670c", self.origin );
+                playsoundatposition( #"zmb_eyeball_vox_pain", self.origin );
                 self.var_e21ca032 = &function_d775bddd;
             }
             
@@ -2069,11 +2069,11 @@ function boss_leave( var_db828ea6 = 0 )
     
     if ( var_db828ea6 )
     {
-        playsoundatposition( #"hash_e2ba9305b1dafc9", v_pos );
+        playsoundatposition( #"zmb_eyeball_leave", v_pos );
     }
     else
     {
-        playsoundatposition( #"hash_1b108a99d8b8a77e", v_pos );
+        playsoundatposition( #"zmb_eyeball_warp_in", v_pos );
     }
     
     self thread function_55841cbf( "bs_spn_fx_cf", 0, "bs_bdy_fx_cf", 2, 3, "bs_bdy_dmg_fx_cf", 0 );
@@ -2097,11 +2097,11 @@ function boss_arrive( var_dc094f99 = 0 )
     
     if ( var_dc094f99 )
     {
-        playsoundatposition( #"hash_732b71cd63845865", v_pos );
+        playsoundatposition( #"zmb_eyeball_arrive", v_pos );
     }
     else
     {
-        playsoundatposition( #"hash_241b296b37ac90bf", v_pos );
+        playsoundatposition( #"zmb_eyeball_warp_out", v_pos );
     }
     
     var_193df069 = undefined;

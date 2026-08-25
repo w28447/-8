@@ -108,13 +108,13 @@
         {
             "value": 9,
             "next": 65535,
-            "name": "#hash_10b4231a611a9bf",
+            "name": "#amb_door_howl",
             "sequence": 0,
             "cullDistance": 600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_10b4231a611a9bf",
+                    "name": "#amb_door_howl",
                     "assetId": "#amb/environment/wind/cold/cold_howl.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -304,13 +304,13 @@
         {
             "value": 53,
             "next": 65535,
-            "name": "#hash_3cf209c60eedc43e",
+            "name": "#amb_gust_blizzard",
             "sequence": 0,
             "cullDistance": 800,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3cf209c60eedc43e",
+                    "name": "#amb_gust_blizzard",
                     "assetId": "#amb/environment/wind/gusts/blizzard/amb_blizzard_gusts_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -349,7 +349,7 @@
                     "unk178": "#hash_200001906"
                 },
                 {
-                    "name": "#hash_3cf209c60eedc43e",
+                    "name": "#amb_gust_blizzard",
                     "assetId": "#amb/environment/wind/gusts/blizzard/amb_blizzard_gusts_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -388,7 +388,7 @@
                     "unk178": "#hash_200001906"
                 },
                 {
-                    "name": "#hash_3cf209c60eedc43e",
+                    "name": "#amb_gust_blizzard",
                     "assetId": "#amb/environment/wind/gusts/blizzard/amb_blizzard_gusts_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -427,7 +427,7 @@
                     "unk178": "#hash_200001906"
                 },
                 {
-                    "name": "#hash_3cf209c60eedc43e",
+                    "name": "#amb_gust_blizzard",
                     "assetId": "#amb/environment/wind/gusts/blizzard/amb_blizzard_gusts_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -466,7 +466,7 @@
                     "unk178": "#hash_200001906"
                 },
                 {
-                    "name": "#hash_3cf209c60eedc43e",
+                    "name": "#amb_gust_blizzard",
                     "assetId": "#amb/environment/wind/gusts/blizzard/amb_blizzard_gusts_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -831,13 +831,13 @@
         {
             "value": 12,
             "next": 7,
-            "name": "#hash_44069d90346db0b3",
+            "name": "#amb_gust_swirl",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_44069d90346db0b3",
+                    "name": "#amb_gust_swirl",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -876,7 +876,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_44069d90346db0b3",
+                    "name": "#amb_gust_swirl",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -915,7 +915,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_44069d90346db0b3",
+                    "name": "#amb_gust_swirl",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -954,7 +954,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_44069d90346db0b3",
+                    "name": "#amb_gust_swirl",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -993,7 +993,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_44069d90346db0b3",
+                    "name": "#amb_gust_swirl",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -1032,7 +1032,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_44069d90346db0b3",
+                    "name": "#amb_gust_swirl",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -1071,7 +1071,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_44069d90346db0b3",
+                    "name": "#amb_gust_swirl",
                     "assetId": "#amb/environment/wind/gusts/cold/long/wind_gust_long_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -1554,13 +1554,13 @@
         {
             "value": 86,
             "next": 16,
-            "name": "#hash_6dc2fe5c1e77e533",
+            "name": "#amb_pipe_creak",
             "sequence": 0,
             "cullDistance": 750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6dc2fe5c1e77e533",
+                    "name": "#amb_pipe_creak",
                     "assetId": "#amb/material_movement/creaks/metal/pipe/pipe_groan_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -1599,7 +1599,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_6dc2fe5c1e77e533",
+                    "name": "#amb_pipe_creak",
                     "assetId": "#amb/material_movement/creaks/metal/pipe/pipe_groan_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -1638,7 +1638,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_6dc2fe5c1e77e533",
+                    "name": "#amb_pipe_creak",
                     "assetId": "#amb/material_movement/creaks/metal/pipe/pipe_groan_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -1677,7 +1677,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_6dc2fe5c1e77e533",
+                    "name": "#amb_pipe_creak",
                     "assetId": "#amb/material_movement/creaks/metal/pipe/pipe_groan_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -1716,7 +1716,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_6dc2fe5c1e77e533",
+                    "name": "#amb_pipe_creak",
                     "assetId": "#amb/material_movement/creaks/metal/pipe/pipe_groan_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -1755,7 +1755,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_6dc2fe5c1e77e533",
+                    "name": "#amb_pipe_creak",
                     "assetId": "#amb/material_movement/creaks/metal/pipe/pipe_groan_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -1798,13 +1798,13 @@
         {
             "value": 66,
             "next": 1,
-            "name": "#hash_50d2203fbc7d7dd9",
+            "name": "#amb_scafold_creak",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_50d2203fbc7d7dd9",
+                    "name": "#amb_scafold_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/light/amb_metal_stress_light01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -1843,7 +1843,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_50d2203fbc7d7dd9",
+                    "name": "#amb_scafold_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/light/amb_metal_stress_light02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -1882,7 +1882,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_50d2203fbc7d7dd9",
+                    "name": "#amb_scafold_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/light/amb_metal_stress_light03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -1921,7 +1921,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_50d2203fbc7d7dd9",
+                    "name": "#amb_scafold_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/light/amb_metal_stress_light04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -1964,13 +1964,13 @@
         {
             "value": 93,
             "next": 65535,
-            "name": "#hash_45a51e84ff32cfb9",
+            "name": "#amb_ship_creak",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_45a51e84ff32cfb9",
+                    "name": "#amb_ship_creak",
                     "assetId": "#amb/material_movement/creaks/metal/structure/deep/metal_struct_creak_deep_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -2009,7 +2009,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_45a51e84ff32cfb9",
+                    "name": "#amb_ship_creak",
                     "assetId": "#amb/material_movement/creaks/metal/structure/deep/metal_struct_creak_deep_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -2048,7 +2048,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_45a51e84ff32cfb9",
+                    "name": "#amb_ship_creak",
                     "assetId": "#amb/material_movement/creaks/metal/structure/deep/metal_struct_creak_deep_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -2091,13 +2091,13 @@
         {
             "value": 35,
             "next": 18,
-            "name": "#hash_609ed3924892fd18",
+            "name": "#amb_sub_alarm",
             "sequence": 0,
             "cullDistance": 5500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_609ed3924892fd18",
+                    "name": "#amb_sub_alarm",
                     "assetId": "#hash_7ddeecaf8014506b",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -2140,13 +2140,13 @@
         {
             "value": 62,
             "next": 65535,
-            "name": "#hash_3a53a59ef3196d3f",
+            "name": "#amb_sub_int_creak",
             "sequence": 0,
             "cullDistance": 5500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3a53a59ef3196d3f",
+                    "name": "#amb_sub_int_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -2185,7 +2185,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_3a53a59ef3196d3f",
+                    "name": "#amb_sub_int_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -2224,7 +2224,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_3a53a59ef3196d3f",
+                    "name": "#amb_sub_int_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -2263,7 +2263,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_3a53a59ef3196d3f",
+                    "name": "#amb_sub_int_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -2302,7 +2302,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_3a53a59ef3196d3f",
+                    "name": "#amb_sub_int_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -2341,7 +2341,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_3a53a59ef3196d3f",
+                    "name": "#amb_sub_int_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -2380,7 +2380,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_3a53a59ef3196d3f",
+                    "name": "#amb_sub_int_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -2419,7 +2419,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_3a53a59ef3196d3f",
+                    "name": "#amb_sub_int_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -2458,7 +2458,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_3a53a59ef3196d3f",
+                    "name": "#amb_sub_int_creak",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -2941,13 +2941,13 @@
         {
             "value": 46,
             "next": 65535,
-            "name": "#hash_863ef74cb3621ca",
+            "name": "#amb_wind_swirl_md",
             "sequence": 0,
             "cullDistance": 500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_863ef74cb3621ca",
+                    "name": "#amb_wind_swirl_md",
                     "assetId": "#amb/environment/wind/gusts/snow/wind_snow_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -2986,7 +2986,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_863ef74cb3621ca",
+                    "name": "#amb_wind_swirl_md",
                     "assetId": "#amb/environment/wind/gusts/snow/wind_snow_01.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -3273,13 +3273,13 @@
         {
             "value": 21,
             "next": 65535,
-            "name": "#hash_59e128a5a58e7d49",
+            "name": "#dst_dest_gascan_01_dp_d0",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_59e128a5a58e7d49",
+                    "name": "#dst_dest_gascan_01_dp_d0",
                     "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -3320,7 +3320,7 @@
                     "unk178": "#hash_6030b0804"
                 },
                 {
-                    "name": "#hash_59e128a5a58e7d49",
+                    "name": "#dst_dest_gascan_01_dp_d0",
                     "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -3361,7 +3361,7 @@
                     "unk178": "#hash_6030b0804"
                 },
                 {
-                    "name": "#hash_59e128a5a58e7d49",
+                    "name": "#dst_dest_gascan_01_dp_d0",
                     "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -3402,7 +3402,7 @@
                     "unk178": "#hash_6030b0804"
                 },
                 {
-                    "name": "#hash_59e128a5a58e7d49",
+                    "name": "#dst_dest_gascan_01_dp_d0",
                     "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -3443,7 +3443,7 @@
                     "unk178": "#hash_6030b0804"
                 },
                 {
-                    "name": "#hash_59e128a5a58e7d49",
+                    "name": "#dst_dest_gascan_01_dp_d0",
                     "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -3484,7 +3484,7 @@
                     "unk178": "#hash_6030b0804"
                 },
                 {
-                    "name": "#hash_59e128a5a58e7d49",
+                    "name": "#dst_dest_gascan_01_dp_d0",
                     "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -3525,7 +3525,7 @@
                     "unk178": "#hash_6030b0804"
                 },
                 {
-                    "name": "#hash_59e128a5a58e7d49",
+                    "name": "#dst_dest_gascan_01_dp_d0",
                     "secondaryname": "#exp_barrel_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -3570,13 +3570,13 @@
         {
             "value": 51,
             "next": 23,
-            "name": "#hash_24341b2153efa720",
+            "name": "#dst_dest_glo_fire_extinguisher_d0",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_24341b2153efa720",
+                    "name": "#dst_dest_glo_fire_extinguisher_d0",
                     "assetId": "#dst/prop/fire_extinguisher/fire_extinguisher_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -3619,13 +3619,13 @@
         {
             "value": 126,
             "next": 65535,
-            "name": "#hash_5290e69e5616b714",
+            "name": "#dst_dest_glo_paper_01_d0",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5290e69e5616b714",
+                    "name": "#dst_dest_glo_paper_01_d0",
                     "assetId": "#dst/prop/paper/stack/paper_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -3668,13 +3668,13 @@
         {
             "value": 50,
             "next": 27,
-            "name": "#hash_9c60a4b93776bb",
+            "name": "#dst_dest_glo_paper_02_d0",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_9c60a4b93776bb",
+                    "name": "#dst_dest_glo_paper_02_d0",
                     "assetId": "#dst/prop/paper/stack/paper_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -3717,13 +3717,13 @@
         {
             "value": 92,
             "next": 65535,
-            "name": "#hash_4b9c2475d7229c61",
+            "name": "#dst_dest_glo_paper_04_d0",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4b9c2475d7229c61",
+                    "name": "#dst_dest_glo_paper_04_d0",
                     "assetId": "#dst/prop/paper/stack/paper_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -3766,13 +3766,13 @@
         {
             "value": 122,
             "next": 111,
-            "name": "#hash_69f9f3e122dbb898",
+            "name": "#dst_dest_jun_typewriter_d0",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_69f9f3e122dbb898",
+                    "name": "#dst_dest_jun_typewriter_d0",
                     "assetId": "#dst/prop/typewriter/typewriter_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -3815,13 +3815,13 @@
         {
             "value": 68,
             "next": 22,
-            "name": "#hash_2d9238cee350b90c",
+            "name": "#dst_dest_reel2reel_01_dp_d0",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2d9238cee350b90c",
+                    "name": "#dst_dest_reel2reel_01_dp_d0",
                     "assetId": "#dst/prop/cigarette_machine/cigarette_machine_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -3864,13 +3864,13 @@
         {
             "value": 11,
             "next": 139,
-            "name": "#hash_2d9239cee350babf",
+            "name": "#dst_dest_reel2reel_01_dp_d1",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2d9239cee350babf",
+                    "name": "#dst_dest_reel2reel_01_dp_d1",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -3912,13 +3912,13 @@
         {
             "value": 7,
             "next": 35,
-            "name": "#hash_2d923acee350bc72",
+            "name": "#dst_dest_reel2reel_01_dp_d2",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2d923acee350bc72",
+                    "name": "#dst_dest_reel2reel_01_dp_d2",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -3960,13 +3960,13 @@
         {
             "value": 34,
             "next": 38,
-            "name": "#hash_772e5e60d6a5e4e1",
+            "name": "#dst_dest_reel2reel_02_dp_d0",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_772e5e60d6a5e4e1",
+                    "name": "#dst_dest_reel2reel_02_dp_d0",
                     "assetId": "#dst/prop/cigarette_machine/cigarette_machine_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -4107,13 +4107,13 @@
         {
             "value": 48,
             "next": 65535,
-            "name": "#hash_62332d89ae65200",
+            "name": "#dst_fish_tank",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_62332d89ae65200",
+                    "name": "#dst_fish_tank",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -4243,13 +4243,13 @@
         {
             "value": 82,
             "next": 65535,
-            "name": "#hash_47a7dd1007c11019",
+            "name": "#dst_garbage_bag",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_47a7dd1007c11019",
+                    "name": "#dst_garbage_bag",
                     "secondaryname": "#dst_paper",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -4292,13 +4292,13 @@
         {
             "value": 52,
             "next": 44,
-            "name": "#hash_547104dd82ba9c7c",
+            "name": "#dst_garbage_bag_02",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_547104dd82ba9c7c",
+                    "name": "#dst_garbage_bag_02",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -4340,13 +4340,13 @@
         {
             "value": 25,
             "next": 0,
-            "name": "#hash_438b930b61d96f77",
+            "name": "#dst_gas_canister_open",
             "sequence": 0,
             "cullDistance": 3000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_438b930b61d96f77",
+                    "name": "#dst_gas_canister_open",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -4437,13 +4437,13 @@
         {
             "value": 83,
             "next": 65535,
-            "name": "#hash_6abe483482efa584",
+            "name": "#dst_generic_glass_crack",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6abe483482efa584",
+                    "name": "#dst_generic_glass_crack",
                     "assetId": "#amb/material_movement/cracks/glass/glass_crack_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -4482,7 +4482,7 @@
                     "unk178": "#hash_503090203"
                 },
                 {
-                    "name": "#hash_6abe483482efa584",
+                    "name": "#dst_generic_glass_crack",
                     "assetId": "#amb/material_movement/cracks/glass/glass_crack_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -4521,7 +4521,7 @@
                     "unk178": "#hash_503090203"
                 },
                 {
-                    "name": "#hash_6abe483482efa584",
+                    "name": "#dst_generic_glass_crack",
                     "assetId": "#amb/material_movement/cracks/glass/glass_crack_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -4560,7 +4560,7 @@
                     "unk178": "#hash_503090203"
                 },
                 {
-                    "name": "#hash_6abe483482efa584",
+                    "name": "#dst_generic_glass_crack",
                     "assetId": "#amb/material_movement/cracks/glass/glass_crack_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -4603,13 +4603,13 @@
         {
             "value": 103,
             "next": 65535,
-            "name": "#hash_5f07c850bd480725",
+            "name": "#dst_generic_glass_large",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5f07c850bd480725",
+                    "name": "#dst_generic_glass_large",
                     "assetId": "#dst/generic/glass/large/window_break_lrg_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -4648,7 +4648,7 @@
                     "unk178": "#hash_503090203"
                 },
                 {
-                    "name": "#hash_5f07c850bd480725",
+                    "name": "#dst_generic_glass_large",
                     "assetId": "#dst/generic/glass/large/window_break_lrg_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -4687,7 +4687,7 @@
                     "unk178": "#hash_503090203"
                 },
                 {
-                    "name": "#hash_5f07c850bd480725",
+                    "name": "#dst_generic_glass_large",
                     "assetId": "#dst/generic/glass/large/window_break_lrg_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -4726,7 +4726,7 @@
                     "unk178": "#hash_503090203"
                 },
                 {
-                    "name": "#hash_5f07c850bd480725",
+                    "name": "#dst_generic_glass_large",
                     "assetId": "#dst/generic/glass/large/window_break_lrg_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -4769,13 +4769,13 @@
         {
             "value": 121,
             "next": 65535,
-            "name": "#hash_6c5be5a0764e1e3c",
+            "name": "#dst_generic_glass_med",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6c5be5a0764e1e3c",
+                    "name": "#dst_generic_glass_med",
                     "assetId": "#dst/generic/glass/med/glass_break_medium_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -4818,13 +4818,13 @@
         {
             "value": 123,
             "next": 65535,
-            "name": "#hash_79e7070c3130f4a9",
+            "name": "#dst_generic_glass_small",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_79e7070c3130f4a9",
+                    "name": "#dst_generic_glass_small",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -4863,7 +4863,7 @@
                     "unk178": "#hash_503090203"
                 },
                 {
-                    "name": "#hash_79e7070c3130f4a9",
+                    "name": "#dst_generic_glass_small",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -4902,7 +4902,7 @@
                     "unk178": "#hash_503090203"
                 },
                 {
-                    "name": "#hash_79e7070c3130f4a9",
+                    "name": "#dst_generic_glass_small",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -4994,13 +4994,13 @@
         {
             "value": 70,
             "next": 65535,
-            "name": "#hash_7b03a9cee3b85887",
+            "name": "#dst_glass_radar_pane_break",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7b03a9cee3b85887",
+                    "name": "#dst_glass_radar_pane_break",
                     "assetId": "#dst/generic/glass/large/window_break_lrg_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -5039,7 +5039,7 @@
                     "unk178": "#hash_503090202"
                 },
                 {
-                    "name": "#hash_7b03a9cee3b85887",
+                    "name": "#dst_glass_radar_pane_break",
                     "assetId": "#dst/generic/glass/large/window_break_lrg_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -5078,7 +5078,7 @@
                     "unk178": "#hash_503090202"
                 },
                 {
-                    "name": "#hash_7b03a9cee3b85887",
+                    "name": "#dst_glass_radar_pane_break",
                     "assetId": "#dst/generic/glass/large/window_break_lrg_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -5117,7 +5117,7 @@
                     "unk178": "#hash_503090202"
                 },
                 {
-                    "name": "#hash_7b03a9cee3b85887",
+                    "name": "#dst_glass_radar_pane_break",
                     "assetId": "#dst/generic/glass/large/window_break_lrg_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -5160,13 +5160,13 @@
         {
             "value": 54,
             "next": 52,
-            "name": "#hash_1358357952f89d8d",
+            "name": "#dst_glass_radar_pane_hit",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1358357952f89d8d",
+                    "name": "#dst_glass_radar_pane_hit",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -5205,7 +5205,7 @@
                     "unk178": "#hash_503090202"
                 },
                 {
-                    "name": "#hash_1358357952f89d8d",
+                    "name": "#dst_glass_radar_pane_hit",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -5244,7 +5244,7 @@
                     "unk178": "#hash_503090202"
                 },
                 {
-                    "name": "#hash_1358357952f89d8d",
+                    "name": "#dst_glass_radar_pane_hit",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -5287,13 +5287,13 @@
         {
             "value": 110,
             "next": 65535,
-            "name": "#hash_5911058078e41f79",
+            "name": "#dst_hotdog_cart",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5911058078e41f79",
+                    "name": "#dst_hotdog_cart",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -5335,13 +5335,13 @@
         {
             "value": 114,
             "next": 65535,
-            "name": "#hash_bd53719309b6fc1",
+            "name": "#dst_hydrant_destroyed",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_bd53719309b6fc1",
+                    "name": "#dst_hydrant_destroyed",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -5384,13 +5384,13 @@
         {
             "value": 120,
             "next": 65535,
-            "name": "#hash_5fbc57fe7327e948",
+            "name": "#dst_hydrant_destroyed_loop",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5fbc57fe7327e948",
+                    "name": "#dst_hydrant_destroyed_loop",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -5432,13 +5432,13 @@
         {
             "value": 118,
             "next": 65535,
-            "name": "#hash_436a4f77c54e7912",
+            "name": "#dst_hydrant_end_loop",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_436a4f77c54e7912",
+                    "name": "#dst_hydrant_end_loop",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -5576,13 +5576,13 @@
         {
             "value": 131,
             "next": 65535,
-            "name": "#hash_1f9b1d980061ea0e",
+            "name": "#dst_nitrogen_tank_leak",
             "sequence": 0,
             "cullDistance": 500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1f9b1d980061ea0e",
+                    "name": "#dst_nitrogen_tank_leak",
                     "assetId": "#amb/industrial/steam/sputter/sputter_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -5625,13 +5625,13 @@
         {
             "value": 60,
             "next": 65535,
-            "name": "#hash_2904437d186593d",
+            "name": "#dst_palet_wood",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2904437d186593d",
+                    "name": "#dst_palet_wood",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -5729,7 +5729,7 @@
             "aliases": [
                 {
                     "name": "#dst_pipe_steam",
-                    "secondaryname": "#hash_54538dea28a0400e",
+                    "secondaryname": "#dst_pipe_steam_pop",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -5771,13 +5771,13 @@
         {
             "value": 30,
             "next": 59,
-            "name": "#hash_54538dea28a0400e",
+            "name": "#dst_pipe_steam_pop",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_54538dea28a0400e",
+                    "name": "#dst_pipe_steam_pop",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -5819,14 +5819,14 @@
         {
             "value": 19,
             "next": 53,
-            "name": "#hash_4a9fb6e1d5d277b9",
+            "name": "#dst_pipe_water",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4a9fb6e1d5d277b9",
-                    "secondaryname": "#hash_54538dea28a0400e",
+                    "name": "#dst_pipe_water",
+                    "secondaryname": "#dst_pipe_steam_pop",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -5875,7 +5875,7 @@
             "aliases": [
                 {
                     "name": "#dst_propane_tank_explo",
-                    "secondaryname": "#hash_238170c19d279f5",
+                    "secondaryname": "#dst_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -5916,7 +5916,7 @@
                 },
                 {
                     "name": "#dst_propane_tank_explo",
-                    "secondaryname": "#hash_238170c19d279f5",
+                    "secondaryname": "#dst_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -5957,7 +5957,7 @@
                 },
                 {
                     "name": "#dst_propane_tank_explo",
-                    "secondaryname": "#hash_238170c19d279f5",
+                    "secondaryname": "#dst_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -5998,7 +5998,7 @@
                 },
                 {
                     "name": "#dst_propane_tank_explo",
-                    "secondaryname": "#hash_238170c19d279f5",
+                    "secondaryname": "#dst_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -6039,7 +6039,7 @@
                 },
                 {
                     "name": "#dst_propane_tank_explo",
-                    "secondaryname": "#hash_238170c19d279f5",
+                    "secondaryname": "#dst_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -6080,7 +6080,7 @@
                 },
                 {
                     "name": "#dst_propane_tank_explo",
-                    "secondaryname": "#hash_238170c19d279f5",
+                    "secondaryname": "#dst_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -6121,7 +6121,7 @@
                 },
                 {
                     "name": "#dst_propane_tank_explo",
-                    "secondaryname": "#hash_238170c19d279f5",
+                    "secondaryname": "#dst_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -6165,13 +6165,13 @@
         {
             "value": 13,
             "next": 63,
-            "name": "#hash_238170c19d279f5",
+            "name": "#dst_propane_tank_lfe",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_238170c19d279f5",
+                    "name": "#dst_propane_tank_lfe",
                     "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -6211,7 +6211,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_238170c19d279f5",
+                    "name": "#dst_propane_tank_lfe",
                     "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -6251,7 +6251,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_238170c19d279f5",
+                    "name": "#dst_propane_tank_lfe",
                     "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -6291,7 +6291,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_238170c19d279f5",
+                    "name": "#dst_propane_tank_lfe",
                     "secondaryname": "#exp_barrel_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -6610,14 +6610,14 @@
         {
             "value": 112,
             "next": 65535,
-            "name": "#hash_3b66638c6f40e4d3",
+            "name": "#dst_solar_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3b66638c6f40e4d3",
-                    "secondaryname": "#hash_3b66818c6f4117cd",
+                    "name": "#dst_solar_flux_l",
+                    "secondaryname": "#dst_solar_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -6660,13 +6660,13 @@
         {
             "value": 84,
             "next": 65535,
-            "name": "#hash_3b66818c6f4117cd",
+            "name": "#dst_solar_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3b66818c6f4117cd",
+                    "name": "#dst_solar_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_r/flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -6709,14 +6709,14 @@
         {
             "value": 106,
             "next": 65535,
-            "name": "#hash_4d4bbcb801a0dda9",
+            "name": "#dst_solar_panel_lfe",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4d4bbcb801a0dda9",
-                    "secondaryname": "#hash_3b66638c6f40e4d3",
+                    "name": "#dst_solar_panel_lfe",
+                    "secondaryname": "#dst_solar_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -6755,8 +6755,8 @@
                     "unk178": "#hash_c03090108"
                 },
                 {
-                    "name": "#hash_4d4bbcb801a0dda9",
-                    "secondaryname": "#hash_3b66638c6f40e4d3",
+                    "name": "#dst_solar_panel_lfe",
+                    "secondaryname": "#dst_solar_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -6795,8 +6795,8 @@
                     "unk178": "#hash_c03090108"
                 },
                 {
-                    "name": "#hash_4d4bbcb801a0dda9",
-                    "secondaryname": "#hash_3b66638c6f40e4d3",
+                    "name": "#dst_solar_panel_lfe",
+                    "secondaryname": "#dst_solar_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -6835,8 +6835,8 @@
                     "unk178": "#hash_c03090108"
                 },
                 {
-                    "name": "#hash_4d4bbcb801a0dda9",
-                    "secondaryname": "#hash_3b66638c6f40e4d3",
+                    "name": "#dst_solar_panel_lfe",
+                    "secondaryname": "#dst_solar_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -6879,14 +6879,14 @@
         {
             "value": 89,
             "next": 47,
-            "name": "#hash_4d22bab8017dd52f",
+            "name": "#dst_solar_panel_lrg",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4d22bab8017dd52f",
-                    "secondaryname": "#hash_4d4bbcb801a0dda9",
+                    "name": "#dst_solar_panel_lrg",
+                    "secondaryname": "#dst_solar_panel_lfe",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -6928,13 +6928,13 @@
         {
             "value": 16,
             "next": 65535,
-            "name": "#hash_334d4d52ba5fa940",
+            "name": "#dst_spark_bounces",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_334d4d52ba5fa940",
+                    "name": "#dst_spark_bounces",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -6973,7 +6973,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_334d4d52ba5fa940",
+                    "name": "#dst_spark_bounces",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -7012,7 +7012,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_334d4d52ba5fa940",
+                    "name": "#dst_spark_bounces",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -7051,7 +7051,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_334d4d52ba5fa940",
+                    "name": "#dst_spark_bounces",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -7090,7 +7090,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_334d4d52ba5fa940",
+                    "name": "#dst_spark_bounces",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -7129,7 +7129,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_334d4d52ba5fa940",
+                    "name": "#dst_spark_bounces",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -7168,7 +7168,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_334d4d52ba5fa940",
+                    "name": "#dst_spark_bounces",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -7207,7 +7207,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_334d4d52ba5fa940",
+                    "name": "#dst_spark_bounces",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -7246,7 +7246,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_334d4d52ba5fa940",
+                    "name": "#dst_spark_bounces",
                     "assetId": "#pfx/sparks/bounce/elec_spark_hit_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -7338,13 +7338,13 @@
         {
             "value": 100,
             "next": 65535,
-            "name": "#hash_5ca8d4adbb8576c5",
+            "name": "#dst_transformer_explo",
             "sequence": 0,
             "cullDistance": 6000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5ca8d4adbb8576c5",
+                    "name": "#dst_transformer_explo",
                     "secondaryname": "#hash_3b6983b084cfef53",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -7385,7 +7385,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_5ca8d4adbb8576c5",
+                    "name": "#dst_transformer_explo",
                     "secondaryname": "#hash_3b6983b084cfef53",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -7426,7 +7426,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_5ca8d4adbb8576c5",
+                    "name": "#dst_transformer_explo",
                     "secondaryname": "#hash_3b6983b084cfef53",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -7467,7 +7467,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_5ca8d4adbb8576c5",
+                    "name": "#dst_transformer_explo",
                     "secondaryname": "#hash_3b6983b084cfef53",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -7508,7 +7508,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_5ca8d4adbb8576c5",
+                    "name": "#dst_transformer_explo",
                     "secondaryname": "#hash_3b6983b084cfef53",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -7549,7 +7549,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_5ca8d4adbb8576c5",
+                    "name": "#dst_transformer_explo",
                     "secondaryname": "#hash_3b6983b084cfef53",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -7590,7 +7590,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_5ca8d4adbb8576c5",
+                    "name": "#dst_transformer_explo",
                     "secondaryname": "#hash_3b6983b084cfef53",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -7642,7 +7642,7 @@
             "aliases": [
                 {
                     "name": "#hash_3b6983b084cfef53",
-                    "secondaryname": "#hash_82d8fc262fa2602",
+                    "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -7683,7 +7683,7 @@
                 },
                 {
                     "name": "#hash_3b6983b084cfef53",
-                    "secondaryname": "#hash_82d8fc262fa2602",
+                    "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -7724,7 +7724,7 @@
                 },
                 {
                     "name": "#hash_3b6983b084cfef53",
-                    "secondaryname": "#hash_82d8fc262fa2602",
+                    "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -7765,7 +7765,7 @@
                 },
                 {
                     "name": "#hash_3b6983b084cfef53",
-                    "secondaryname": "#hash_82d8fc262fa2602",
+                    "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -7806,7 +7806,7 @@
                 },
                 {
                     "name": "#hash_3b6983b084cfef53",
-                    "secondaryname": "#hash_82d8fc262fa2602",
+                    "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -7847,7 +7847,7 @@
                 },
                 {
                     "name": "#hash_3b6983b084cfef53",
-                    "secondaryname": "#hash_82d8fc262fa2602",
+                    "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -7888,7 +7888,7 @@
                 },
                 {
                     "name": "#hash_3b6983b084cfef53",
-                    "secondaryname": "#hash_82d8fc262fa2602",
+                    "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -7929,7 +7929,7 @@
                 },
                 {
                     "name": "#hash_3b6983b084cfef53",
-                    "secondaryname": "#hash_82d8fc262fa2602",
+                    "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -7973,14 +7973,14 @@
         {
             "value": 45,
             "next": 72,
-            "name": "#hash_82d8fc262fa2602",
+            "name": "#dst_transformer_lfe",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_82d8fc262fa2602",
-                    "secondaryname": "#hash_2ca6571fde5ab3c1",
+                    "name": "#dst_transformer_lfe",
+                    "secondaryname": "#exp_transformer_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -8019,8 +8019,8 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_82d8fc262fa2602",
-                    "secondaryname": "#hash_2ca6571fde5ab3c1",
+                    "name": "#dst_transformer_lfe",
+                    "secondaryname": "#exp_transformer_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -8059,8 +8059,8 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_82d8fc262fa2602",
-                    "secondaryname": "#hash_2ca6571fde5ab3c1",
+                    "name": "#dst_transformer_lfe",
+                    "secondaryname": "#exp_transformer_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -8099,8 +8099,8 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_82d8fc262fa2602",
-                    "secondaryname": "#hash_2ca6571fde5ab3c1",
+                    "name": "#dst_transformer_lfe",
+                    "secondaryname": "#exp_transformer_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -8502,13 +8502,13 @@
         {
             "value": 65,
             "next": 88,
-            "name": "#hash_16813c3c0ec367d",
+            "name": "#dst_xlight",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_16813c3c0ec367d",
+                    "name": "#dst_xlight",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -8599,13 +8599,13 @@
         {
             "value": 37,
             "next": 86,
-            "name": "#hash_7eb51f1a0028ab28",
+            "name": "#evt_fan_break",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7eb51f1a0028ab28",
+                    "name": "#evt_fan_break",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -8697,13 +8697,13 @@
         {
             "value": 72,
             "next": 65535,
-            "name": "#hash_308f5ce9fefb97a9",
+            "name": "#evt_incendiary_fire_barrel_lg",
             "sequence": 0,
             "cullDistance": 1600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_308f5ce9fefb97a9",
+                    "name": "#evt_incendiary_fire_barrel_lg",
                     "assetId": "#exp/incindiary_barrel/large/fire/exp_incindiary_fire_large_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -8742,7 +8742,7 @@
                     "unk178": "#hash_500010103"
                 },
                 {
-                    "name": "#hash_308f5ce9fefb97a9",
+                    "name": "#evt_incendiary_fire_barrel_lg",
                     "assetId": "#exp/incindiary_barrel/large/fire/exp_incindiary_fire_large_01.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -8781,7 +8781,7 @@
                     "unk178": "#hash_500010103"
                 },
                 {
-                    "name": "#hash_308f5ce9fefb97a9",
+                    "name": "#evt_incendiary_fire_barrel_lg",
                     "assetId": "#exp/incindiary_barrel/large/fire/exp_incindiary_fire_large_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -8820,7 +8820,7 @@
                     "unk178": "#hash_500010103"
                 },
                 {
-                    "name": "#hash_308f5ce9fefb97a9",
+                    "name": "#evt_incendiary_fire_barrel_lg",
                     "assetId": "#exp/incindiary_barrel/large/fire/exp_incindiary_fire_large_03.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -8863,13 +8863,13 @@
         {
             "value": 78,
             "next": 93,
-            "name": "#hash_303a62e9feb361dc",
+            "name": "#evt_incendiary_fire_barrel_sm",
             "sequence": 0,
             "cullDistance": 1600,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_303a62e9feb361dc",
+                    "name": "#evt_incendiary_fire_barrel_sm",
                     "assetId": "#exp/incindiary_barrel/small/fire/exp_incindiary_fire_loop_sm_00.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -8908,7 +8908,7 @@
                     "unk178": "#hash_500010103"
                 },
                 {
-                    "name": "#hash_303a62e9feb361dc",
+                    "name": "#evt_incendiary_fire_barrel_sm",
                     "assetId": "#exp/incindiary_barrel/small/fire/exp_incindiary_fire_loop_sm_01.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -8947,7 +8947,7 @@
                     "unk178": "#hash_500010103"
                 },
                 {
-                    "name": "#hash_303a62e9feb361dc",
+                    "name": "#evt_incendiary_fire_barrel_sm",
                     "assetId": "#exp/incindiary_barrel/small/fire/exp_incindiary_fire_loop_sm_02.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -9838,7 +9838,7 @@
             "aliases": [
                 {
                     "name": "#exp_concussive_large",
-                    "secondaryname": "#hash_58fcf7a3669ca93f",
+                    "secondaryname": "#exp_concussive_large_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -9879,7 +9879,7 @@
                 },
                 {
                     "name": "#exp_concussive_large",
-                    "secondaryname": "#hash_58fcf7a3669ca93f",
+                    "secondaryname": "#exp_concussive_large_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -9920,7 +9920,7 @@
                 },
                 {
                     "name": "#exp_concussive_large",
-                    "secondaryname": "#hash_58fcf7a3669ca93f",
+                    "secondaryname": "#exp_concussive_large_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -9961,7 +9961,7 @@
                 },
                 {
                     "name": "#exp_concussive_large",
-                    "secondaryname": "#hash_58fcf7a3669ca93f",
+                    "secondaryname": "#exp_concussive_large_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10002,7 +10002,7 @@
                 },
                 {
                     "name": "#exp_concussive_large",
-                    "secondaryname": "#hash_58fcf7a3669ca93f",
+                    "secondaryname": "#exp_concussive_large_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10043,7 +10043,7 @@
                 },
                 {
                     "name": "#exp_concussive_large",
-                    "secondaryname": "#hash_58fcf7a3669ca93f",
+                    "secondaryname": "#exp_concussive_large_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10084,7 +10084,7 @@
                 },
                 {
                     "name": "#exp_concussive_large",
-                    "secondaryname": "#hash_58fcf7a3669ca93f",
+                    "secondaryname": "#exp_concussive_large_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10128,13 +10128,13 @@
         {
             "value": 80,
             "next": 65535,
-            "name": "#hash_101aa41260505836",
+            "name": "#exp_concussive_large_concussion",
             "sequence": 0,
             "cullDistance": 9000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_101aa41260505836",
+                    "name": "#exp_concussive_large_concussion",
                     "assetId": "#wpn/grenade/concussion/explode/concussion_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10178,14 +10178,14 @@
         {
             "value": 111,
             "next": 65535,
-            "name": "#hash_6799f17d17bd52a",
+            "name": "#exp_concussive_large_flux_l",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6799f17d17bd52a",
-                    "secondaryname": "#hash_679a117d17bd890",
+                    "name": "#exp_concussive_large_flux_l",
+                    "secondaryname": "#exp_concussive_large_flux_r",
                     "assetId": "#exp/prop/barrel/flux/exp_barrel_flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10228,14 +10228,14 @@
         {
             "value": 69,
             "next": 100,
-            "name": "#hash_679a117d17bd890",
+            "name": "#exp_concussive_large_flux_r",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_679a117d17bd890",
-                    "secondaryname": "#hash_101aa41260505836",
+                    "name": "#exp_concussive_large_flux_r",
+                    "secondaryname": "#exp_concussive_large_concussion",
                     "assetId": "#exp/prop/barrel/flux/exp_barrel_flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10278,14 +10278,14 @@
         {
             "value": 119,
             "next": 65535,
-            "name": "#hash_58fcf7a3669ca93f",
+            "name": "#exp_concussive_large_lfe",
             "sequence": 0,
             "cullDistance": 9000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_58fcf7a3669ca93f",
-                    "secondaryname": "#hash_6799f17d17bd52a",
+                    "name": "#exp_concussive_large_lfe",
+                    "secondaryname": "#exp_concussive_large_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10324,8 +10324,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_58fcf7a3669ca93f",
-                    "secondaryname": "#hash_6799f17d17bd52a",
+                    "name": "#exp_concussive_large_lfe",
+                    "secondaryname": "#exp_concussive_large_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10364,8 +10364,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_58fcf7a3669ca93f",
-                    "secondaryname": "#hash_6799f17d17bd52a",
+                    "name": "#exp_concussive_large_lfe",
+                    "secondaryname": "#exp_concussive_large_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10404,8 +10404,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_58fcf7a3669ca93f",
-                    "secondaryname": "#hash_6799f17d17bd52a",
+                    "name": "#exp_concussive_large_lfe",
+                    "secondaryname": "#exp_concussive_large_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10448,14 +10448,14 @@
         {
             "value": 102,
             "next": 65535,
-            "name": "#hash_3060ca18584fade9",
+            "name": "#exp_concussive_small",
             "sequence": 0,
             "cullDistance": 9000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3060ca18584fade9",
-                    "secondaryname": "#hash_4c17282e41a38373",
+                    "name": "#exp_concussive_small",
+                    "secondaryname": "#exp_concussive_small_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10495,8 +10495,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_3060ca18584fade9",
-                    "secondaryname": "#hash_4c17282e41a38373",
+                    "name": "#exp_concussive_small",
+                    "secondaryname": "#exp_concussive_small_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10536,8 +10536,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_3060ca18584fade9",
-                    "secondaryname": "#hash_4c17282e41a38373",
+                    "name": "#exp_concussive_small",
+                    "secondaryname": "#exp_concussive_small_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10577,8 +10577,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_3060ca18584fade9",
-                    "secondaryname": "#hash_4c17282e41a38373",
+                    "name": "#exp_concussive_small",
+                    "secondaryname": "#exp_concussive_small_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10618,8 +10618,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_3060ca18584fade9",
-                    "secondaryname": "#hash_4c17282e41a38373",
+                    "name": "#exp_concussive_small",
+                    "secondaryname": "#exp_concussive_small_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10659,8 +10659,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_3060ca18584fade9",
-                    "secondaryname": "#hash_4c17282e41a38373",
+                    "name": "#exp_concussive_small",
+                    "secondaryname": "#exp_concussive_small_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10700,8 +10700,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_3060ca18584fade9",
-                    "secondaryname": "#hash_4c17282e41a38373",
+                    "name": "#exp_concussive_small",
+                    "secondaryname": "#exp_concussive_small_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10745,13 +10745,13 @@
         {
             "value": 97,
             "next": 101,
-            "name": "#hash_26bf012beaa38162",
+            "name": "#exp_concussive_small_concussion",
             "sequence": 0,
             "cullDistance": 9000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_26bf012beaa38162",
+                    "name": "#exp_concussive_small_concussion",
                     "assetId": "#wpn/grenade/concussion/explode/concussion_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10795,14 +10795,14 @@
         {
             "value": 39,
             "next": 105,
-            "name": "#hash_4c17282e41a38373",
+            "name": "#exp_concussive_small_lfe",
             "sequence": 0,
             "cullDistance": 9000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4c17282e41a38373",
-                    "secondaryname": "#hash_26bf012beaa38162",
+                    "name": "#exp_concussive_small_lfe",
+                    "secondaryname": "#exp_concussive_small_concussion",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10841,8 +10841,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_4c17282e41a38373",
-                    "secondaryname": "#hash_26bf012beaa38162",
+                    "name": "#exp_concussive_small_lfe",
+                    "secondaryname": "#exp_concussive_small_concussion",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10881,8 +10881,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_4c17282e41a38373",
-                    "secondaryname": "#hash_26bf012beaa38162",
+                    "name": "#exp_concussive_small_lfe",
+                    "secondaryname": "#exp_concussive_small_concussion",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10921,8 +10921,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_4c17282e41a38373",
-                    "secondaryname": "#hash_26bf012beaa38162",
+                    "name": "#exp_concussive_small_lfe",
+                    "secondaryname": "#exp_concussive_small_concussion",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -10965,14 +10965,14 @@
         {
             "value": 115,
             "next": 65535,
-            "name": "#hash_5241882a79fff7a3",
+            "name": "#exp_electrical_large",
             "sequence": 0,
             "cullDistance": 9000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5241882a79fff7a3",
-                    "secondaryname": "#hash_12b24433ad0bb1f0",
+                    "name": "#exp_electrical_large",
+                    "secondaryname": "#exp_electrical_large_sweet",
                     "assetId": "#exp/incindiary_barrel/small/exp_incindiary_barrel_sm_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11012,8 +11012,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_5241882a79fff7a3",
-                    "secondaryname": "#hash_12b24433ad0bb1f0",
+                    "name": "#exp_electrical_large",
+                    "secondaryname": "#exp_electrical_large_sweet",
                     "assetId": "#exp/incindiary_barrel/small/exp_incindiary_barrel_sm_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11053,8 +11053,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_5241882a79fff7a3",
-                    "secondaryname": "#hash_12b24433ad0bb1f0",
+                    "name": "#exp_electrical_large",
+                    "secondaryname": "#exp_electrical_large_sweet",
                     "assetId": "#exp/incindiary_barrel/small/exp_incindiary_barrel_sm_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11098,14 +11098,14 @@
         {
             "value": 42,
             "next": 107,
-            "name": "#hash_a701893a7d70ea0",
+            "name": "#exp_electrical_large_flux_l",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_a701893a7d70ea0",
-                    "secondaryname": "#hash_a703693a7d7419a",
+                    "name": "#exp_electrical_large_flux_l",
+                    "secondaryname": "#exp_electrical_large_flux_r",
                     "assetId": "#exp/prop/barrel/flux/exp_barrel_flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11148,14 +11148,14 @@
         {
             "value": 127,
             "next": 65535,
-            "name": "#hash_a703693a7d7419a",
+            "name": "#exp_electrical_large_flux_r",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_a703693a7d7419a",
-                    "secondaryname": "#hash_58e24f4b7ee415d9",
+                    "name": "#exp_electrical_large_flux_r",
+                    "secondaryname": "#exp_electrical_large_spark",
                     "assetId": "#exp/prop/barrel/flux/exp_barrel_flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11198,14 +11198,14 @@
         {
             "value": 55,
             "next": 65535,
-            "name": "#hash_60c935d4c50a3d7d",
+            "name": "#exp_electrical_large_lfe",
             "sequence": 0,
             "cullDistance": 9000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_60c935d4c50a3d7d",
-                    "secondaryname": "#hash_a701893a7d70ea0",
+                    "name": "#exp_electrical_large_lfe",
+                    "secondaryname": "#exp_electrical_large_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11244,8 +11244,8 @@
                     "unk178": "#hash_c000b0803"
                 },
                 {
-                    "name": "#hash_60c935d4c50a3d7d",
-                    "secondaryname": "#hash_a701893a7d70ea0",
+                    "name": "#exp_electrical_large_lfe",
+                    "secondaryname": "#exp_electrical_large_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11284,8 +11284,8 @@
                     "unk178": "#hash_c000b0803"
                 },
                 {
-                    "name": "#hash_60c935d4c50a3d7d",
-                    "secondaryname": "#hash_a701893a7d70ea0",
+                    "name": "#exp_electrical_large_lfe",
+                    "secondaryname": "#exp_electrical_large_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11324,8 +11324,8 @@
                     "unk178": "#hash_c000b0803"
                 },
                 {
-                    "name": "#hash_60c935d4c50a3d7d",
-                    "secondaryname": "#hash_a701893a7d70ea0",
+                    "name": "#exp_electrical_large_lfe",
+                    "secondaryname": "#exp_electrical_large_flux_l",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11368,13 +11368,13 @@
         {
             "value": 125,
             "next": 65535,
-            "name": "#hash_58e24f4b7ee415d9",
+            "name": "#exp_electrical_large_spark",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_58e24f4b7ee415d9",
+                    "name": "#exp_electrical_large_spark",
                     "assetId": "#exp/shock_barrel/sweets/exp_shock_barrel_sweets_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11414,7 +11414,7 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_58e24f4b7ee415d9",
+                    "name": "#exp_electrical_large_spark",
                     "assetId": "#exp/shock_barrel/sweets/exp_shock_barrel_sweets_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11454,7 +11454,7 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_58e24f4b7ee415d9",
+                    "name": "#exp_electrical_large_spark",
                     "assetId": "#exp/shock_barrel/sweets/exp_shock_barrel_sweets_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11498,14 +11498,14 @@
         {
             "value": 136,
             "next": 65535,
-            "name": "#hash_12b24433ad0bb1f0",
+            "name": "#exp_electrical_large_sweet",
             "sequence": 0,
             "cullDistance": 9000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_12b24433ad0bb1f0",
-                    "secondaryname": "#hash_77a39cb220d8ab15",
+                    "name": "#exp_electrical_large_sweet",
+                    "secondaryname": "#exp_electrical_small_lfe",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11545,8 +11545,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_12b24433ad0bb1f0",
-                    "secondaryname": "#hash_77a39cb220d8ab15",
+                    "name": "#exp_electrical_large_sweet",
+                    "secondaryname": "#exp_electrical_small_lfe",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11586,8 +11586,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_12b24433ad0bb1f0",
-                    "secondaryname": "#hash_77a39cb220d8ab15",
+                    "name": "#exp_electrical_large_sweet",
+                    "secondaryname": "#exp_electrical_small_lfe",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11627,8 +11627,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_12b24433ad0bb1f0",
-                    "secondaryname": "#hash_77a39cb220d8ab15",
+                    "name": "#exp_electrical_large_sweet",
+                    "secondaryname": "#exp_electrical_small_lfe",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11672,14 +11672,14 @@
         {
             "value": 139,
             "next": 65535,
-            "name": "#hash_499a124f56b6f71b",
+            "name": "#exp_electrical_small",
             "sequence": 0,
             "cullDistance": 9000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_499a124f56b6f71b",
-                    "secondaryname": "#hash_77a39cb220d8ab15",
+                    "name": "#exp_electrical_small",
+                    "secondaryname": "#exp_electrical_small_lfe",
                     "assetId": "#exp/incindiary_barrel/small/exp_incindiary_barrel_sm_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11719,8 +11719,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_499a124f56b6f71b",
-                    "secondaryname": "#hash_77a39cb220d8ab15",
+                    "name": "#exp_electrical_small",
+                    "secondaryname": "#exp_electrical_small_lfe",
                     "assetId": "#exp/incindiary_barrel/small/exp_incindiary_barrel_sm_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11760,8 +11760,8 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_499a124f56b6f71b",
-                    "secondaryname": "#hash_77a39cb220d8ab15",
+                    "name": "#exp_electrical_small",
+                    "secondaryname": "#exp_electrical_small_lfe",
                     "assetId": "#exp/incindiary_barrel/small/exp_incindiary_barrel_sm_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11805,14 +11805,14 @@
         {
             "value": 138,
             "next": 65535,
-            "name": "#hash_77a39cb220d8ab15",
+            "name": "#exp_electrical_small_lfe",
             "sequence": 0,
             "cullDistance": 9000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_77a39cb220d8ab15",
-                    "secondaryname": "#hash_358280be0b200bd1",
+                    "name": "#exp_electrical_small_lfe",
+                    "secondaryname": "#exp_electrical_small_spark",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11851,8 +11851,8 @@
                     "unk178": "#hash_c000b0803"
                 },
                 {
-                    "name": "#hash_77a39cb220d8ab15",
-                    "secondaryname": "#hash_358280be0b200bd1",
+                    "name": "#exp_electrical_small_lfe",
+                    "secondaryname": "#exp_electrical_small_spark",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11891,8 +11891,8 @@
                     "unk178": "#hash_c000b0803"
                 },
                 {
-                    "name": "#hash_77a39cb220d8ab15",
-                    "secondaryname": "#hash_358280be0b200bd1",
+                    "name": "#exp_electrical_small_lfe",
+                    "secondaryname": "#exp_electrical_small_spark",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11931,8 +11931,8 @@
                     "unk178": "#hash_c000b0803"
                 },
                 {
-                    "name": "#hash_77a39cb220d8ab15",
-                    "secondaryname": "#hash_358280be0b200bd1",
+                    "name": "#exp_electrical_small_lfe",
+                    "secondaryname": "#exp_electrical_small_spark",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -11975,13 +11975,13 @@
         {
             "value": 32,
             "next": 65535,
-            "name": "#hash_358280be0b200bd1",
+            "name": "#exp_electrical_small_spark",
             "sequence": 0,
             "cullDistance": 5000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_358280be0b200bd1",
+                    "name": "#exp_electrical_small_spark",
                     "assetId": "#exp/shock_barrel/sweets/exp_shock_barrel_sweets_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -12021,7 +12021,7 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_358280be0b200bd1",
+                    "name": "#exp_electrical_small_spark",
                     "assetId": "#exp/shock_barrel/sweets/exp_shock_barrel_sweets_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -12061,7 +12061,7 @@
                     "unk178": "#hash_6000b0803"
                 },
                 {
-                    "name": "#hash_358280be0b200bd1",
+                    "name": "#exp_electrical_small_spark",
                     "assetId": "#exp/shock_barrel/sweets/exp_shock_barrel_sweets_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -12112,7 +12112,7 @@
             "aliases": [
                 {
                     "name": "#exp_incindiary_large",
-                    "secondaryname": "#hash_2e25f1d6ca55e5d9",
+                    "secondaryname": "#exp_incindiary_large_lfe",
                     "assetId": "#exp/incindiary_barrel/large/2k18/exp_incindiary_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -12153,7 +12153,7 @@
                 },
                 {
                     "name": "#exp_incindiary_large",
-                    "secondaryname": "#hash_2e25f1d6ca55e5d9",
+                    "secondaryname": "#exp_incindiary_large_lfe",
                     "assetId": "#exp/incindiary_barrel/large/2k18/exp_incindiary_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -12194,7 +12194,7 @@
                 },
                 {
                     "name": "#exp_incindiary_large",
-                    "secondaryname": "#hash_2e25f1d6ca55e5d9",
+                    "secondaryname": "#exp_incindiary_large_lfe",
                     "assetId": "#exp/incindiary_barrel/large/2k18/exp_incindiary_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -12235,7 +12235,7 @@
                 },
                 {
                     "name": "#exp_incindiary_large",
-                    "secondaryname": "#hash_2e25f1d6ca55e5d9",
+                    "secondaryname": "#exp_incindiary_large_lfe",
                     "assetId": "#exp/incindiary_barrel/large/2k18/exp_incindiary_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -12279,13 +12279,13 @@
         {
             "value": 91,
             "next": 65535,
-            "name": "#hash_7e17e533381a8506",
+            "name": "#exp_incindiary_large_decay",
             "sequence": 0,
             "cullDistance": 9000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7e17e533381a8506",
+                    "name": "#exp_incindiary_large_decay",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -12327,14 +12327,14 @@
         {
             "value": 2,
             "next": 65535,
-            "name": "#hash_77ae18c6b0d66864",
+            "name": "#exp_incindiary_large_flux_l",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_77ae18c6b0d66864",
-                    "secondaryname": "#hash_77ae1ec6b0d67296",
+                    "name": "#exp_incindiary_large_flux_l",
+                    "secondaryname": "#exp_incindiary_large_flux_r",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -12376,14 +12376,14 @@
         {
             "value": 109,
             "next": 65535,
-            "name": "#hash_77ae1ec6b0d67296",
+            "name": "#exp_incindiary_large_flux_r",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_77ae1ec6b0d67296",
-                    "secondaryname": "#hash_7e17e533381a8506",
+                    "name": "#exp_incindiary_large_flux_r",
+                    "secondaryname": "#exp_incindiary_large_decay",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -12425,14 +12425,14 @@
         {
             "value": 133,
             "next": 65535,
-            "name": "#hash_aba5ed6b60d87b2",
+            "name": "#exp_incindiary_large_hdr",
             "sequence": 0,
             "cullDistance": 4000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_aba5ed6b60d87b2",
-                    "secondaryname": "#hash_77ae18c6b0d66864",
+                    "name": "#exp_incindiary_large_hdr",
+                    "secondaryname": "#exp_incindiary_large_flux_l",
                     "assetId": "#exp/incindiary_barrel/large/hdr/exp_incindiary_barrel_hdr_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -12472,8 +12472,8 @@
                     "unk178": "#hash_6030b0803"
                 },
                 {
-                    "name": "#hash_aba5ed6b60d87b2",
-                    "secondaryname": "#hash_77ae18c6b0d66864",
+                    "name": "#exp_incindiary_large_hdr",
+                    "secondaryname": "#exp_incindiary_large_flux_l",
                     "assetId": "#exp/incindiary_barrel/large/hdr/exp_incindiary_barrel_hdr_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -12513,8 +12513,8 @@
                     "unk178": "#hash_6030b0803"
                 },
                 {
-                    "name": "#hash_aba5ed6b60d87b2",
-                    "secondaryname": "#hash_77ae18c6b0d66864",
+                    "name": "#exp_incindiary_large_hdr",
+                    "secondaryname": "#exp_incindiary_large_flux_l",
                     "assetId": "#exp/incindiary_barrel/large/hdr/exp_incindiary_barrel_hdr_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -12558,14 +12558,14 @@
         {
             "value": 134,
             "next": 65535,
-            "name": "#hash_2e25f1d6ca55e5d9",
+            "name": "#exp_incindiary_large_lfe",
             "sequence": 0,
             "cullDistance": 3000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2e25f1d6ca55e5d9",
-                    "secondaryname": "#hash_aba5ed6b60d87b2",
+                    "name": "#exp_incindiary_large_lfe",
+                    "secondaryname": "#exp_incindiary_large_hdr",
                     "assetId": "#exp/incindiary_barrel/large/2k18/lfe/exp_red_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -12608,14 +12608,14 @@
         {
             "value": 105,
             "next": 65535,
-            "name": "#hash_22d01da9a5078de7",
+            "name": "#exp_incindiary_small",
             "sequence": 0,
             "cullDistance": 9000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_22d01da9a5078de7",
-                    "secondaryname": "#hash_c266934b6e24701",
+                    "name": "#exp_incindiary_small",
+                    "secondaryname": "#exp_incindiary_small_lfe",
                     "assetId": "#exp/incindiary_barrel/small/exp_incindiary_barrel_sm_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -12655,8 +12655,8 @@
                     "unk178": "#hash_6030b0803"
                 },
                 {
-                    "name": "#hash_22d01da9a5078de7",
-                    "secondaryname": "#hash_c266934b6e24701",
+                    "name": "#exp_incindiary_small",
+                    "secondaryname": "#exp_incindiary_small_lfe",
                     "assetId": "#exp/incindiary_barrel/small/exp_incindiary_barrel_sm_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -12696,8 +12696,8 @@
                     "unk178": "#hash_6030b0803"
                 },
                 {
-                    "name": "#hash_22d01da9a5078de7",
-                    "secondaryname": "#hash_c266934b6e24701",
+                    "name": "#exp_incindiary_small",
+                    "secondaryname": "#exp_incindiary_small_lfe",
                     "assetId": "#exp/incindiary_barrel/small/exp_incindiary_barrel_sm_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -12741,14 +12741,14 @@
         {
             "value": 71,
             "next": 65535,
-            "name": "#hash_67e1b634a1e1c1ba",
+            "name": "#exp_incindiary_small_hdr",
             "sequence": 0,
             "cullDistance": 9000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_67e1b634a1e1c1ba",
-                    "secondaryname": "#hash_77ae18c6b0d66864",
+                    "name": "#exp_incindiary_small_hdr",
+                    "secondaryname": "#exp_incindiary_large_flux_l",
                     "assetId": "#exp/incindiary_barrel/large/hdr/exp_incindiary_barrel_hdr_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -12788,8 +12788,8 @@
                     "unk178": "#hash_6030b0803"
                 },
                 {
-                    "name": "#hash_67e1b634a1e1c1ba",
-                    "secondaryname": "#hash_77ae18c6b0d66864",
+                    "name": "#exp_incindiary_small_hdr",
+                    "secondaryname": "#exp_incindiary_large_flux_l",
                     "assetId": "#exp/incindiary_barrel/large/hdr/exp_incindiary_barrel_hdr_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -12829,8 +12829,8 @@
                     "unk178": "#hash_6030b0803"
                 },
                 {
-                    "name": "#hash_67e1b634a1e1c1ba",
-                    "secondaryname": "#hash_77ae18c6b0d66864",
+                    "name": "#exp_incindiary_small_hdr",
+                    "secondaryname": "#exp_incindiary_large_flux_l",
                     "assetId": "#exp/incindiary_barrel/large/hdr/exp_incindiary_barrel_hdr_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -12874,14 +12874,14 @@
         {
             "value": 47,
             "next": 65535,
-            "name": "#hash_c266934b6e24701",
+            "name": "#exp_incindiary_small_lfe",
             "sequence": 0,
             "cullDistance": 1400,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_c266934b6e24701",
-                    "secondaryname": "#hash_67e1b634a1e1c1ba",
+                    "name": "#exp_incindiary_small_lfe",
+                    "secondaryname": "#exp_incindiary_small_hdr",
                     "assetId": "#exp/incindiary_barrel/small/lfe/exp_incindiary_barrel_sm_lfe.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -13032,7 +13032,7 @@
             "aliases": [
                 {
                     "name": "#exp_mp_propane_tank_explo",
-                    "secondaryname": "#hash_438dac17f69b90a2",
+                    "secondaryname": "#exp_nitrogen_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -13073,7 +13073,7 @@
                 },
                 {
                     "name": "#exp_mp_propane_tank_explo",
-                    "secondaryname": "#hash_438dac17f69b90a2",
+                    "secondaryname": "#exp_nitrogen_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -13114,7 +13114,7 @@
                 },
                 {
                     "name": "#exp_mp_propane_tank_explo",
-                    "secondaryname": "#hash_438dac17f69b90a2",
+                    "secondaryname": "#exp_nitrogen_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -13155,7 +13155,7 @@
                 },
                 {
                     "name": "#exp_mp_propane_tank_explo",
-                    "secondaryname": "#hash_438dac17f69b90a2",
+                    "secondaryname": "#exp_nitrogen_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -13196,7 +13196,7 @@
                 },
                 {
                     "name": "#exp_mp_propane_tank_explo",
-                    "secondaryname": "#hash_438dac17f69b90a2",
+                    "secondaryname": "#exp_nitrogen_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -13237,7 +13237,7 @@
                 },
                 {
                     "name": "#exp_mp_propane_tank_explo",
-                    "secondaryname": "#hash_438dac17f69b90a2",
+                    "secondaryname": "#exp_nitrogen_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -13278,7 +13278,7 @@
                 },
                 {
                     "name": "#exp_mp_propane_tank_explo",
-                    "secondaryname": "#hash_438dac17f69b90a2",
+                    "secondaryname": "#exp_nitrogen_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -13488,13 +13488,13 @@
         {
             "value": 98,
             "next": 65535,
-            "name": "#hash_4c4fd4c61d8d67f0",
+            "name": "#exp_nitrogen_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4c4fd4c61d8d67f0",
+                    "name": "#exp_nitrogen_flux_l",
                     "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
@@ -13539,13 +13539,13 @@
         {
             "value": 76,
             "next": 133,
-            "name": "#hash_4c4fd2c61d8d648a",
+            "name": "#exp_nitrogen_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4c4fd2c61d8d648a",
+                    "name": "#exp_nitrogen_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_r/flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -13589,14 +13589,14 @@
         {
             "value": 56,
             "next": 65535,
-            "name": "#hash_5e6c6fe38f11ed65",
+            "name": "#exp_nitrogen_tank_explo",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5e6c6fe38f11ed65",
-                    "secondaryname": "#hash_438dac17f69b90a2",
+                    "name": "#exp_nitrogen_tank_explo",
+                    "secondaryname": "#exp_nitrogen_tank_lfe",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -13635,8 +13635,8 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_5e6c6fe38f11ed65",
-                    "secondaryname": "#hash_438dac17f69b90a2",
+                    "name": "#exp_nitrogen_tank_explo",
+                    "secondaryname": "#exp_nitrogen_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -13676,8 +13676,8 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_5e6c6fe38f11ed65",
-                    "secondaryname": "#hash_438dac17f69b90a2",
+                    "name": "#exp_nitrogen_tank_explo",
+                    "secondaryname": "#exp_nitrogen_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -13717,8 +13717,8 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_5e6c6fe38f11ed65",
-                    "secondaryname": "#hash_438dac17f69b90a2",
+                    "name": "#exp_nitrogen_tank_explo",
+                    "secondaryname": "#exp_nitrogen_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -13758,8 +13758,8 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_5e6c6fe38f11ed65",
-                    "secondaryname": "#hash_438dac17f69b90a2",
+                    "name": "#exp_nitrogen_tank_explo",
+                    "secondaryname": "#exp_nitrogen_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -13799,8 +13799,8 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_5e6c6fe38f11ed65",
-                    "secondaryname": "#hash_438dac17f69b90a2",
+                    "name": "#exp_nitrogen_tank_explo",
+                    "secondaryname": "#exp_nitrogen_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -13840,8 +13840,8 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_5e6c6fe38f11ed65",
-                    "secondaryname": "#hash_438dac17f69b90a2",
+                    "name": "#exp_nitrogen_tank_explo",
+                    "secondaryname": "#exp_nitrogen_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -13881,8 +13881,8 @@
                     "unk178": "#hash_6000b0808"
                 },
                 {
-                    "name": "#hash_5e6c6fe38f11ed65",
-                    "secondaryname": "#hash_438dac17f69b90a2",
+                    "name": "#exp_nitrogen_tank_explo",
+                    "secondaryname": "#exp_nitrogen_tank_lfe",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -13926,13 +13926,13 @@
         {
             "value": 5,
             "next": 65535,
-            "name": "#hash_438dac17f69b90a2",
+            "name": "#exp_nitrogen_tank_lfe",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_438dac17f69b90a2",
+                    "name": "#exp_nitrogen_tank_lfe",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
                     "assetFileNameRelease": "#mp_icebreaker.all",
@@ -14372,14 +14372,14 @@
         {
             "value": 95,
             "next": 65535,
-            "name": "#hash_2ca6571fde5ab3c1",
+            "name": "#exp_transformer_flux_l",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2ca6571fde5ab3c1",
-                    "secondaryname": "#hash_2ca6411fde5a8e5f",
+                    "name": "#exp_transformer_flux_l",
+                    "secondaryname": "#exp_transformer_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -14423,13 +14423,13 @@
         {
             "value": 49,
             "next": 118,
-            "name": "#hash_2ca6411fde5a8e5f",
+            "name": "#exp_transformer_flux_r",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2ca6411fde5a8e5f",
+                    "name": "#exp_transformer_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_r/flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -14473,13 +14473,13 @@
         {
             "value": 20,
             "next": 134,
-            "name": "#hash_6237aeae59de41f1",
+            "name": "#p_dest_paper_stack01",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6237aeae59de41f1",
+                    "name": "#p_dest_paper_stack01",
                     "assetId": "#amb/material_movement/rustling/paper/paper_rustle_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -14518,7 +14518,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_6237aeae59de41f1",
+                    "name": "#p_dest_paper_stack01",
                     "assetId": "#amb/material_movement/rustling/paper/paper_rustle_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -14557,7 +14557,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_6237aeae59de41f1",
+                    "name": "#p_dest_paper_stack01",
                     "assetId": "#amb/material_movement/rustling/paper/paper_rustle_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -14596,7 +14596,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_6237aeae59de41f1",
+                    "name": "#p_dest_paper_stack01",
                     "assetId": "#amb/material_movement/rustling/paper/paper_rustle_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -14639,13 +14639,13 @@
         {
             "value": 73,
             "next": 65535,
-            "name": "#hash_6237abae59de3cd8",
+            "name": "#p_dest_paper_stack02",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6237abae59de3cd8",
+                    "name": "#p_dest_paper_stack02",
                     "assetId": "#amb/material_movement/rustling/paper/paper_rustle_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -14684,7 +14684,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_6237abae59de3cd8",
+                    "name": "#p_dest_paper_stack02",
                     "assetId": "#amb/material_movement/rustling/paper/paper_rustle_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -14723,7 +14723,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_6237abae59de3cd8",
+                    "name": "#p_dest_paper_stack02",
                     "assetId": "#amb/material_movement/rustling/paper/paper_rustle_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",
@@ -14762,7 +14762,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_6237abae59de3cd8",
+                    "name": "#p_dest_paper_stack02",
                     "assetId": "#amb/material_movement/rustling/paper/paper_rustle_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_icebreaker.all",
                     "assetIdRelease": "#mp_icebreaker.all",

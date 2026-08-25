@@ -801,7 +801,7 @@ function function_6a0a572d( localclientnum )
     while ( true )
     {
         wait randomintrange( 5, 20 );
-        self playsound( localclientnum, #"hash_62f87027921fa5b4" );
+        self playsound( localclientnum, #"zmb_altar_zeus_bird_oneshot" );
     }
 }
 

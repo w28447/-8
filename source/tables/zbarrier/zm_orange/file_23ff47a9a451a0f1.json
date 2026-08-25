@@ -15,10 +15,10 @@
     "attackSpotHorzOffset": 0,
     "boards": [
         {
-            "boardModel": "#hash_7db1d85446849bc1",
-            "tearAnim": "#hash_1ebb755cace515b1",
-            "boardAnim": "#hash_2b4f02431f70a04c",
-            "staticAnim": "#hash_2b4f02431f70a04c",
+            "boardModel": "#zm_orange_debris_ship_02",
+            "tearAnim": "#zm_orange_debris_ship_02_purchase",
+            "boardAnim": "#zm_orange_debris_ship_02_idle",
+            "staticAnim": "#zm_orange_debris_ship_02_idle",
             "repairEffect1Offset": "0 0 0",
             "repairEffect2Offset": "0 0 0",
             "minPause": 0.3,

@@ -111,17 +111,17 @@
     "members": [
         {
             "name": "#light_cull_us",
-            "scrName": "#hash_8f41c577",
+            "scrName": "#light_cull_us",
             "type": "INT32"
         },
         {
             "name": "#streamer_budget",
-            "scrName": "#hash_9922d877",
+            "scrName": "#streamer_budget",
             "type": "INT32"
         },
         {
             "name": "#postfx_lensflare_us",
-            "scrName": "#hash_ff187fc8",
+            "scrName": "#postfx_lensflare_us",
             "type": "INT32"
         },
         {
@@ -131,227 +131,227 @@
         },
         {
             "name": "#omni_us",
-            "scrName": "#hash_60496025",
+            "scrName": "#omni_us",
             "type": "INT32"
         },
         {
             "name": "#res_x",
-            "scrName": "#hash_a73171d6",
+            "scrName": "#res_x",
             "type": "INT32"
         },
         {
             "name": "#res_y",
-            "scrName": "#hash_6630efde",
+            "scrName": "#res_y",
             "type": "INT32"
         },
         {
             "name": "#gbuffer_ent_tris",
-            "scrName": "#hash_f95d7aa3",
+            "scrName": "#gbuffer_ent_tris",
             "type": "INT32"
         },
         {
             "name": "#prepass_prims",
-            "scrName": "#hash_ede90e2d",
+            "scrName": "#prepass_prims",
             "type": "INT32"
         },
         {
             "name": "#postfx_generic_us",
-            "scrName": "#hash_54a89070",
+            "scrName": "#postfx_generic_us",
             "type": "INT32"
         },
         {
             "name": "#umbra_work",
-            "scrName": "#hash_71613d1c",
+            "scrName": "#umbra_work",
             "type": "INT32"
         },
         {
             "name": "#gbuffer_ent_us",
-            "scrName": "#hash_934659cf",
+            "scrName": "#gbuffer_ent_us",
             "type": "INT32"
         },
         {
             "name": "#budget_build_us",
-            "scrName": "#hash_d2bf8015",
+            "scrName": "#budget_build_us",
             "type": "INT32"
         },
         {
             "name": "#spot_us",
-            "scrName": "#hash_2cb337b5",
+            "scrName": "#spot_us",
             "type": "INT32"
         },
         {
             "name": "#spot_shadows",
-            "scrName": "#hash_708b7e76",
+            "scrName": "#spot_shadows",
             "type": "INT32"
         },
         {
             "name": "#gbuffer_us",
-            "scrName": "#hash_67bfb36f",
+            "scrName": "#gbuffer_us",
             "type": "INT32"
         },
         {
             "name": "#probes_vis_pixel",
-            "scrName": "#hash_623a7e4c",
+            "scrName": "#probes_vis_pixel",
             "type": "INT32"
         },
         {
             "name": "#sun_prims",
-            "scrName": "#hash_316bea95",
+            "scrName": "#sun_prims",
             "type": "INT32"
         },
         {
             "name": "#postfx_us",
-            "scrName": "#hash_532921d1",
+            "scrName": "#postfx_us",
             "type": "INT32"
         },
         {
             "name": "#depth_prime_us",
-            "scrName": "#hash_7ecb0b76",
+            "scrName": "#depth_prime_us",
             "type": "INT32"
         },
         {
             "name": "#ssao_us",
-            "scrName": "#hash_7435c0df",
+            "scrName": "#ssao_us",
             "type": "INT32"
         },
         {
             "name": "#spot_prims",
-            "scrName": "#hash_548f2919",
+            "scrName": "#spot_prims",
             "type": "INT32"
         },
         {
             "name": "#omni_vis",
-            "scrName": "#hash_dfb80679",
+            "scrName": "#omni_vis",
             "type": "INT32"
         },
         {
             "name": "#oit_apply_us",
-            "scrName": "#hash_50bddb1",
+            "scrName": "#oit_apply_us",
             "type": "INT32"
         },
         {
             "name": "#gbuffer_decal_us",
-            "scrName": "#hash_f5bb8ff6",
+            "scrName": "#gbuffer_decal_us",
             "type": "INT32"
         },
         {
             "name": "#umbra_time",
-            "scrName": "#hash_1cd730ef",
+            "scrName": "#umbra_time",
             "type": "INT32"
         },
         {
             "name": "#omni_shadows",
-            "scrName": "#hash_d559d135",
+            "scrName": "#omni_shadows",
             "type": "INT32"
         },
         {
             "name": "#spot_vis",
-            "scrName": "#hash_1142f255",
+            "scrName": "#spot_vis",
             "type": "INT32"
         },
         {
             "name": "#r_draw_lit",
-            "scrName": "#hash_77c13b0d",
+            "scrName": "#r_draw_lit",
             "type": "INT32"
         },
         {
             "name": "#gpufx_us",
-            "scrName": "#hash_3d852944",
+            "scrName": "#gpufx_us",
             "type": "INT32"
         },
         {
             "name": "#sss_blur_us",
-            "scrName": "#hash_e3feb4d5",
+            "scrName": "#sss_blur_us",
             "type": "INT32"
         },
         {
             "name": "#postfx_dof_us",
-            "scrName": "#hash_b2503886",
+            "scrName": "#postfx_dof_us",
             "type": "INT32"
         },
         {
             "name": "#fx_draw",
-            "scrName": "#hash_e625f5b3",
+            "scrName": "#fx_draw",
             "type": "INT32"
         },
         {
             "name": "#r_sceneents",
-            "scrName": "#hash_de0b39cb",
+            "scrName": "#r_sceneents",
             "type": "INT32"
         },
         {
             "name": "#prims",
-            "scrName": "#hash_4e0ed8bd",
+            "scrName": "#prims",
             "type": "INT32"
         },
         {
             "name": "#sampleid",
-            "scrName": "#hash_33137251",
+            "scrName": "#sampleid",
             "type": "INT32"
         },
         {
             "name": "#gbuffer_decal_tris",
-            "scrName": "#hash_306b1df6",
+            "scrName": "#gbuffer_decal_tris",
             "type": "INT32"
         },
         {
             "name": "#heading",
-            "scrName": "#hash_1ee3891a",
+            "scrName": "#heading",
             "type": "INT32"
         },
         {
             "name": "#probes_act_pixel",
-            "scrName": "#hash_5a3267a1",
+            "scrName": "#probes_act_pixel",
             "type": "INT32"
         },
         {
             "name": "#oit_tris",
-            "scrName": "#hash_ae468802",
+            "scrName": "#oit_tris",
             "type": "INT32"
         },
         {
             "name": "#compute_sprites",
-            "scrName": "#hash_adc74a49",
+            "scrName": "#compute_sprites",
             "type": "INT32"
         },
         {
             "name": "#gbuffer_overdraw",
-            "scrName": "#hash_ed330c8b",
+            "scrName": "#gbuffer_overdraw",
             "type": "INT32"
         },
         {
             "name": "#sun_tris",
-            "scrName": "#hash_f57caf10",
+            "scrName": "#sun_tris",
             "type": "INT32"
         },
         {
             "name": "#prepass_tris",
-            "scrName": "#hash_70e60a7f",
+            "scrName": "#prepass_tris",
             "type": "INT32"
         },
         {
             "name": "#budget_shared_us",
-            "scrName": "#hash_39114aab",
+            "scrName": "#budget_shared_us",
             "type": "INT32"
         },
         {
             "name": "#lights_vis_pixel",
-            "scrName": "#hash_1f2359a5",
+            "scrName": "#lights_vis_pixel",
             "type": "INT32"
         },
         {
             "name": "#static_models",
-            "scrName": "#hash_ff0308b",
+            "scrName": "#static_models",
             "type": "INT32"
         },
         {
             "name": "#budget_lighting_us",
-            "scrName": "#hash_fc9d0260",
+            "scrName": "#budget_lighting_us",
             "type": "INT32"
         },
         {
             "name": "#cpu_clientupdate",
-            "scrName": "#hash_4ba2caf3",
+            "scrName": "#cpu_clientupdate",
             "type": "INT32"
         },
         {

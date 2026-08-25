@@ -28,8 +28,8 @@
     "#hash_2cf49821": false,
     "#hash_d2751f9d": true,
     "#hash_554be9f7": false,
-    "sound240": "#hash_631a067190b54300",
-    "sound250": "#hash_242aa17124751841",
+    "sound240": "#wpn_generic_dryfire_npc",
+    "sound250": "#wpn_generic_dryfire_plr",
     "tunables1": "#briefcase_bomb_defuse_tunables_mp",
     "viewmodel": [
         "#wpn_t8_eqp_briefcase_bomb_view"

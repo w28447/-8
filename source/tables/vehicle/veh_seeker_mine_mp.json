@@ -12,7 +12,7 @@
     "scriptBundleSettings": "#settings_seeker_mine_mp",
     "deathFx": "#weapon/fx8_equip_seeker_exp",
     "deathFxTag": "tag_body",
-    "deathFxSound": "#hash_30d12b0cffc117f4",
+    "deathFxSound": "#veh_seeker_explode",
     "lightFx": [
         "#weapon/fx8_equip_seeker_idle"
     ],

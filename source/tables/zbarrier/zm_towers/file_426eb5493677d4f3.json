@@ -18,7 +18,7 @@
             "boardModel": "#p8_fxanim_zm_towers_buyable_gate_02_a_frameless_mod",
             "tearAnim": "#p8_fxanim_zm_towers_buyable_gate_02_a_frameless_open_anim",
             "boardAnim": "#p8_fxanim_zm_towers_buyable_gate_02_a_frameless_close_anim",
-            "boardRepairSound": "#hash_676e226e6ce1fbf3",
+            "boardRepairSound": "#zmb_zod_gate_open",
             "repairEffect1Offset": "0 0 0",
             "repairEffect2Offset": "0 0 0",
             "minPause": 0.3,

@@ -79,7 +79,7 @@ function function_272aa016( localclientnum, oldval, newval, bnewent, binitialsna
         
         if ( !isdefined( self.sfx_id ) )
         {
-            self.sfx_id = self playloopsound( #"hash_5760b615b9b749d2" );
+            self.sfx_id = self playloopsound( #"wpn_pegasus_storm_lp" );
         }
         
         return;
@@ -141,7 +141,7 @@ function function_ed1d0231( localclientnum, oldval, newval, bnewent, binitialsna
     if ( newval == 1 )
     {
         self.var_89d8285 = util::playfxontag( localclientnum, level._effect[ #"lightning_impact" ], self, str_fx_tag );
-        self playsound( localclientnum, #"hash_63d588d1f28ecdc1" );
+        self playsound( localclientnum, #"wpn_hammer_electrocution_impact" );
     }
 }
 
@@ -247,8 +247,8 @@ function function_5091797( localclientnum, oldval, newval, bnewent, binitialsnap
         
         if ( !isdefined( self.var_6450813b ) )
         {
-            self playsound( localclientnum, #"hash_76feff9b8f93c3d9" );
-            self.var_6450813b = self playloopsound( #"hash_117558f0dda6471f" );
+            self playsound( localclientnum, #"wpn_viper_bite_start" );
+            self.var_6450813b = self playloopsound( #"wpn_viper_bite_lp" );
         }
         
         return;
@@ -261,7 +261,7 @@ function function_5091797( localclientnum, oldval, newval, bnewent, binitialsnap
     
     if ( isdefined( self.var_6450813b ) )
     {
-        self playsound( localclientnum, #"hash_ae4b548c1d4a748" );
+        self playsound( localclientnum, #"wpn_viper_bite_end" );
         self stoploopsound( self.var_6450813b );
         self.var_6450813b = undefined;
     }
@@ -277,6 +277,6 @@ function function_e2680ff3( localclientnum, oldval, newval, bnewent, binitialsna
 {
     str_fx_tag = isdefined( self gettagorigin( "j_mainroot" ) ) ? "j_mainroot" : "tag_driver";
     util::playfxontag( localclientnum, level._effect[ #"viper_bite_projectile_impact" ], self, str_fx_tag );
-    self playsound( 0, #"hash_3098cba1f74bb5d1" );
+    self playsound( 0, #"wpn_viper_bite_impact" );
 }
 

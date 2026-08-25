@@ -35,7 +35,7 @@ function trap_activate()
     level notify( #"boil_trap_activated" );
     level exploder::exploder( "fxexp_trap_bath_switch" );
     playsoundatposition( "zmb_water_activate", level.var_d6ef5bfd.origin );
-    level.var_d6ef5bfd playloopsound( #"hash_7aab9873087e7a2d" );
+    level.var_d6ef5bfd playloopsound( #"zmb_water_boil" );
     level.var_c33299e2 = 0;
     level.var_bae901ce = 1;
     level function_922c05f();
@@ -154,7 +154,7 @@ function trap_damage( t_trap )
         {
             if ( isdefined( t_trap ) && isplayer( t_trap.activated_by_player ) )
             {
-                t_trap.activated_by_player thread zm_vo::function_a2bd5a0c( #"hash_150ed78f0557df5f", 0.5, 1, 0, 1 );
+                t_trap.activated_by_player thread zm_vo::function_a2bd5a0c( #"vox_bath_trap_active", 0.5, 1, 0, 1 );
                 level.var_bae901ce = undefined;
             }
         }

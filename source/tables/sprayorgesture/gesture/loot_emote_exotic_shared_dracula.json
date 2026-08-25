@@ -6,7 +6,7 @@
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/call_of_night",
-        "icon": "image#hash_32f8a4d6452dcfea",
+        "icon": "image#ui_icon_emotes_dracula",
         "isdefault": 0
     }
 }

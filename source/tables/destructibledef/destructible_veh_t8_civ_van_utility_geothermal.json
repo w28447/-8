@@ -1,7 +1,7 @@
 {
-    "name": "#hash_276ff76c2550c389",
-    "model": "#hash_7b9b148f60b77eff",
-    "unk20": "#hash_7bcb388f60e0dfed",
+    "name": "#destructible_veh_t8_civ_van_utility_geothermal",
+    "model": "#veh_t8_civ_van_utility_geothermal_dest",
+    "unk20": "#veh_t8_civ_van_utility_geothermal_dead",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

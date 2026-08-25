@@ -1,7 +1,7 @@
 {
     "name": "#destructible_t8_civ_sedan_limousine_wht_spain",
-    "model": "#hash_bfe18beaea8b435",
-    "unk20": "#hash_a2372fa1df70d0d",
+    "model": "#veh_t8_civ_sedan_limousine_dest_wht_spain",
+    "unk20": "#veh_t8_civ_sedan_limousine_dead_wht",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

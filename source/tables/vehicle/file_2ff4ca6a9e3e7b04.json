@@ -10,7 +10,7 @@
     "vehicleRidersBundle": "#veh_bo3_mil_apc_riders",
     "deathFx": "#_t6/explosions/fx_vexp_cougar",
     "deathFxTag": "tag_origin",
-    "deathFxSound": "#hash_2149db0c502305e3",
+    "deathFxSound": "#exp_armor_vehicle",
     "skidSpeedMin": 20,
     "skidSpeedMax": 100,
     "peelSpeedMax": 600,

@@ -195,12 +195,12 @@ function function_6a9d7105( slot, weapon )
     self notify( "1da58f971e958838" );
     self endon( "1da58f971e958838" );
     self endon( #"death", #"disconnect", #"joined_team", #"joined_spectators" );
-    var_122b9df7 = weapon.gadget_power_usage_rate * 0.5 * float( function_60d95f53() ) / 1000;
+    restore_amount = weapon.gadget_power_usage_rate * 0.5 * float( function_60d95f53() ) / 1000;
     
     do
     {
         current_power = self gadgetpowerget( slot );
-        self gadgetpowerset( slot, min( current_power + var_122b9df7, 100 ) );
+        self gadgetpowerset( slot, min( current_power + restore_amount, 100 ) );
         waitframe( 1 );
     }
     while ( self._gadget_combat_efficiency );

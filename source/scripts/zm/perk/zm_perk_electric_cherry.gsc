@@ -169,7 +169,7 @@ function electric_cherry_laststand()
     if ( isdefined( self ) )
     {
         playfx( level._effect[ #"electric_cherry_explode" ], self.origin );
-        self playsound( #"hash_75ba32e48680203a" );
+        self playsound( #"zmb_vapor_electriccherry_activate" );
         self notify( #"electric_cherry_start" );
         waitframe( 1 );
         a_zombies = zombie_utility::get_round_enemy_array();
@@ -374,7 +374,7 @@ function electric_cherry_reload_attack()
             
             self thread electric_cherry_reload_fx( n_fraction );
             self notify( #"electric_cherry_start" );
-            self playsound( #"hash_75ba32e48680203a" );
+            self playsound( #"zmb_vapor_electriccherry_activate" );
             a_zombies = getaiteamarray( level.zombie_team );
             a_zombies = util::get_array_of_closest( self.origin, a_zombies, undefined, undefined, perk_radius );
             n_zombies_hit = 0;

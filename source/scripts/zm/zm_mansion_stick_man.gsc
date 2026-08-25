@@ -892,7 +892,7 @@ function private function_25a79bc1()
 function private function_3ce20299()
 {
     self endon( #"death" );
-    self zm_vo::vo_say( #"hash_39bc8bd7eaa531d5", 1.5, 1, 9999, 1, 1, 1 );
+    self zm_vo::vo_say( #"vox_plr_death_react_0_plr_12_0", 1.5, 1, 9999, 1, 1, 1 );
     self zm_vo::vo_say( #"hash_7f6178afe0059ebf", 0, 1, 9999, 1, 1, 1 );
     level notify( #"hash_132b5b79b9aeaf9e" );
 }
@@ -927,8 +927,8 @@ function private function_9e01297e()
     level.e_guide.mdl_head = util::spawn_model( "c_t8_zmb_dlc1_catherine_ghost_head", level.e_guide.origin, level.e_guide.angles );
     level.e_guide.mdl_head linkto( level.e_guide );
     level.e_guide clientfield::set( "" + #"ghost_trail", 1 );
-    level.e_guide playsound( #"hash_4826261b01f96036" );
-    level.e_guide playloopsound( #"hash_298631572be3dd79" );
+    level.e_guide playsound( #"zmb_ghost_appear" );
+    level.e_guide playloopsound( #"zmb_ghost_loop" );
     a_players = getplayers();
     arrayremovevalue( a_players, level.stick_player );
     
@@ -987,9 +987,9 @@ function private function_614e461()
         return;
     }
     
-    self zm_vo::vo_say( #"hash_68607f486f39f53f", 0, 1, 9999, 1, 1 );
-    self zm_vo::vo_say( #"hash_68607e486f39f38c", 0, 1, 9999, 1, 1 );
-    self zm_vo::vo_say( #"hash_686081486f39f8a5", 0, 1, 9999, 1, 1 );
+    self zm_vo::vo_say( #"vox_plr_ghost_react_plr_12_0", 0, 1, 9999, 1, 1 );
+    self zm_vo::vo_say( #"vox_plr_ghost_react_plr_12_1", 0, 1, 9999, 1, 1 );
+    self zm_vo::vo_say( #"vox_plr_ghost_react_plr_12_2", 0, 1, 9999, 1, 1 );
 }
 
 // Namespace mansion_stick_man/zm_mansion_stick_man
@@ -1534,7 +1534,7 @@ function lead_player( nd_start, player )
     wait 1;
     var_dafa2b89 thread scene::stop();
     self thread scene::stop();
-    playsoundatposition( #"hash_72a28324d62874cc", self.origin );
+    playsoundatposition( #"zmb_ghost_disappear", self.origin );
     self clientfield::set( "" + #"stick_fire", 0 );
     mdl_stone setvisibletoplayer( player );
     mdl_stone playsound( #"hash_7a3af4224e706aa8" );
@@ -1565,7 +1565,7 @@ function function_45cfa31( mdl_ghost )
     switch ( n_character_index )
     {
         case 10:
-            var_1f92304d = #"hash_741e29cc775db83e";
+            var_1f92304d = #"vox_ghost_interact_brig_plr_10_0";
             var_1616bdce = #"hash_6bdc47828f660dbb";
             var_8954c16e = #"hash_16fcfe9abf1617bc";
             var_80192cb1 = #"hash_762bdec6a06169a5";
@@ -1577,7 +1577,7 @@ function function_45cfa31( mdl_ghost )
             var_80192cb1 = #"hash_6c4f7d192847d762";
             break;
         case 11:
-            var_1f92304d = #"hash_2ff0b0abb26e1dcc";
+            var_1f92304d = #"vox_ghost_interact_guns_plr_11_0";
             var_1616bdce = #"hash_542f688a23fb4faa";
             var_8954c16e = #"hash_d0ee848487e6e89";
             var_80192cb1 = #"hash_7228b71e32509514";
@@ -2342,7 +2342,7 @@ function turn_to_zombie_damage_()
             continue;
         }
         
-        s_result.activator thread zm_vo::function_a2bd5a0c( #"hash_60e7bd8c8ced676f", 0, 1 );
+        s_result.activator thread zm_vo::function_a2bd5a0c( #"vox_headstone_react_first", 0, 1 );
         level thread zm_unitrigger::unregister_unitrigger( self.stub );
     }
 }

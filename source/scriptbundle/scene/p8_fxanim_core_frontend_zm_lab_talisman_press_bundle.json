@@ -67,7 +67,7 @@
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "anim#hash_532a03c08b153e01",
+                            "anim": "anim#p8_fxanim_core_frontend_zm_lab_talisman_idle_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -96,7 +96,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_19817afeb975e5af",
+                            "anim": "anim#p8_fxanim_core_frontend_zm_lab_talisman_exit_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -154,7 +154,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_532a03c08b153e01",
+                            "anim": "anim#p8_fxanim_core_frontend_zm_lab_talisman_idle_anim",
                             "entrytype": "anim"
                         }
                     ],

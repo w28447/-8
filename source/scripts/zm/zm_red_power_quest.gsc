@@ -164,7 +164,7 @@ function function_bda82828()
     level.zones[ #"zone_amphitheater_house" ].a_loc_types[ #"zombie_location" ] = [];
     mdl_sentinel_artifact = getent( "mdl_sentinel_artifact", "targetname" );
     mdl_sentinel_artifact clientfield::set( "" + #"artifact_glow", 1 );
-    mdl_sentinel_artifact playloopsound( #"hash_5c7e9911ac98f633" );
+    mdl_sentinel_artifact playloopsound( #"zmb_sentinel_artifact_lp" );
     s_loc = struct::get( #"hash_3dbe0b62fa014608" );
     s_loc zm_unitrigger::create( &function_969cb6b2 );
     s_loc thread function_b3d827f();
@@ -455,7 +455,7 @@ function function_e059d0e1()
     if ( isdefined( mdl_sentinel_artifact ) )
     {
         mdl_sentinel_artifact clientfield::set( "" + #"hash_2a586a321116326c", 1 );
-        mdl_sentinel_artifact playloopsound( #"hash_e2c71c7dece38ee" );
+        mdl_sentinel_artifact playloopsound( #"zmb_sentinel_artifact_charged_lp" );
     }
     
     var_a6c6bf68 = getentarray( "event_collision_move", "targetname" );
@@ -551,7 +551,7 @@ function function_e059d0e1()
     {
         mdl_sentinel_artifact moveto( s_move.origin, 3 );
         mdl_sentinel_artifact rotateto( s_move.angles, 3 );
-        mdl_sentinel_artifact playsound( #"hash_75b9c9ad6ebe8af2" );
+        mdl_sentinel_artifact playsound( #"zmb_sentinel_artifact_activate" );
     }
     
     wait 2;
@@ -565,7 +565,7 @@ function function_e059d0e1()
         mdl_sentinel_artifact clientfield::set( "" + #"hash_3ec0452110ea5621", 0 );
         mdl_sentinel_artifact clientfield::increment( "" + #"hash_5da65e20d966c63f" );
         wait 1;
-        mdl_sentinel_artifact playsound( #"hash_5de064f33e9e49b8" );
+        mdl_sentinel_artifact playsound( #"zmb_sentinel_artifact_explode" );
         v_origin = mdl_sentinel_artifact.origin;
         level thread energy_trails( v_origin );
         

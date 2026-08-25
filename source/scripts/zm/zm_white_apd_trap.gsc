@@ -274,7 +274,7 @@ function function_25ede6c7( s_trap )
     self endoncallback( &function_171226f4, #"death" );
     self.var_410faa5f = util::spawn_model( "tag_origin", s_trap.origin );
     fx = playfxontag( level._effect[ #"tesla_bolt" ], self.var_410faa5f, "tag_origin" );
-    playsoundatposition( #"hash_286b88c1d2e99649", s_trap.origin );
+    playsoundatposition( #"wpn_apd_shot", s_trap.origin );
     self.var_410faa5f moveto( self gettagorigin( "J_Spine4" ), 0.6 );
     self.var_410faa5f waittill( #"movedone" );
     self.var_410faa5f delete();

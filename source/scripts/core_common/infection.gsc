@@ -206,7 +206,7 @@ function give_body()
 {
     if ( self hasdobj() && self haspart( "j_spine4" ) )
     {
-        self playsoundontag( #"hash_3407b7c42e8075c9", "j_spine4" );
+        self playsoundontag( #"mpl_infection_trans_vox", "j_spine4" );
     }
     
     self thread ambient_sound();

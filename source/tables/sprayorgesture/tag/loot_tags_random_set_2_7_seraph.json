@@ -1,7 +1,7 @@
 {
     "name": "#loot_tags_random_set_2_7_seraph",
     "type": "#tag",
-    "material": "#hash_2f9c439c394686cf",
+    "material": "#vd/mtl_loot_ui_icon_tags_random_set_2_7_seraph",
     "bundle": {
         "type": "#tag",
         "title": "localized18#hash_1caa489a90d13d3",

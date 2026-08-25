@@ -945,10 +945,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -1003,10 +1003,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -1061,10 +1061,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -1119,10 +1119,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -1177,10 +1177,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -1235,10 +1235,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -1319,10 +1319,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
@@ -1390,14 +1390,14 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_camo_requiem_6"
@@ -1468,10 +1468,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -1685,7 +1685,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -1693,7 +1693,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -1931,7 +1931,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -1939,7 +1939,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -2177,7 +2177,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -2185,7 +2185,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -2423,7 +2423,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -2431,7 +2431,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -2504,7 +2504,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
@@ -2562,7 +2562,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
@@ -2620,7 +2620,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
@@ -3173,7 +3173,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -3181,7 +3181,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -3254,7 +3254,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
@@ -3353,7 +3353,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -3361,7 +3361,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -3483,7 +3483,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -3491,7 +3491,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -4035,7 +4035,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -4043,7 +4043,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -4197,7 +4197,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -4205,7 +4205,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -4317,7 +4317,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -4325,7 +4325,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -4976,10 +4976,10 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
@@ -5051,10 +5051,10 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
@@ -5126,10 +5126,10 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
@@ -5201,10 +5201,10 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
@@ -5276,10 +5276,10 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
@@ -5784,13 +5784,13 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -5845,10 +5845,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -5903,7 +5903,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -5911,7 +5911,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -5984,7 +5984,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -5992,7 +5992,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -6062,7 +6062,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -6070,7 +6070,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -6140,7 +6140,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -6148,7 +6148,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -6273,7 +6273,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -6281,7 +6281,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -6461,13 +6461,13 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -6519,13 +6519,13 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -6577,13 +6577,13 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -6635,13 +6635,13 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -6693,13 +6693,13 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -6751,14 +6751,14 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_camo_requiem_6"
@@ -6826,14 +6826,14 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_camo_requiem_6"
@@ -6901,14 +6901,14 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_camo_requiem_6"
@@ -6976,14 +6976,14 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_camo_requiem_6"
@@ -7051,14 +7051,14 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_camo_requiem_6"
@@ -7155,10 +7155,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
@@ -7229,10 +7229,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
@@ -7329,10 +7329,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -7551,7 +7551,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -7559,7 +7559,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -7629,13 +7629,13 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -7742,10 +7742,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
@@ -7816,10 +7816,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
@@ -7890,10 +7890,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
@@ -7961,14 +7961,14 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_camo_requiem_6"
@@ -8036,14 +8036,14 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_camo_requiem_6"
@@ -8111,14 +8111,14 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_camo_requiem_6"
@@ -8186,14 +8186,14 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_camo_requiem_6"
@@ -8261,14 +8261,14 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_camo_requiem_6"
@@ -8336,14 +8336,14 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_camo_requiem_6"
@@ -8583,13 +8583,13 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -8644,10 +8644,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -8702,7 +8702,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -8710,7 +8710,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -8783,7 +8783,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -8791,7 +8791,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -8861,7 +8861,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -8869,7 +8869,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -8939,7 +8939,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -8947,7 +8947,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -9072,7 +9072,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -9080,7 +9080,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -9260,13 +9260,13 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -9318,13 +9318,13 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -9376,13 +9376,13 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -9434,13 +9434,13 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -9492,13 +9492,13 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -9579,10 +9579,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -9756,7 +9756,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -9764,7 +9764,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -9834,13 +9834,13 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -10006,10 +10006,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -10286,10 +10286,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -10566,10 +10566,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -10846,10 +10846,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11060,10 +11060,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11226,7 +11226,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -11234,7 +11234,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -11307,7 +11307,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11349,7 +11349,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11391,7 +11391,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11433,7 +11433,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11475,7 +11475,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11517,7 +11517,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11556,7 +11556,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -11564,7 +11564,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -11637,7 +11637,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11676,7 +11676,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -11684,7 +11684,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -11757,7 +11757,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11799,7 +11799,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11841,7 +11841,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11883,7 +11883,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -11922,7 +11922,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -11930,7 +11930,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -12003,7 +12003,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12045,7 +12045,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12087,7 +12087,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12129,7 +12129,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12168,7 +12168,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -12176,7 +12176,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -12249,7 +12249,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12291,7 +12291,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12333,7 +12333,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12375,7 +12375,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12414,7 +12414,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -12422,7 +12422,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -12495,7 +12495,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12537,7 +12537,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12579,7 +12579,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12621,7 +12621,7 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         }
                     ],
                     "camoMaterialChannels": [
@@ -12880,10 +12880,10 @@
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade"
                         },
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip"
@@ -12951,14 +12951,14 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_camo_requiem_6"
@@ -13026,14 +13026,14 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_zm_knife_bowie_blade",
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c"
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom"
                         },
                         {
                             "material": "#mc/mtl_wpn_t8_camo_requiem_6"
@@ -13579,7 +13579,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -13587,7 +13587,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -13699,7 +13699,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -13707,7 +13707,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -13903,7 +13903,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -13911,7 +13911,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -14188,7 +14188,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -14196,7 +14196,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -14476,7 +14476,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -14484,7 +14484,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {
@@ -14596,7 +14596,7 @@
                 {
                     "baseMaterials": [
                         {
-                            "material": "#hash_54b945d6b541c2a5",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_upper",
                             "mask": "#$alpha"
                         },
                         {
@@ -14604,7 +14604,7 @@
                             "mask": "#$alpha"
                         },
                         {
-                            "material": "#hash_45106f4936b6036c",
+                            "material": "#mc/mtl_wpn_t8_zm_knife_bowie_grip_metal_bottom",
                             "mask": "#$alpha"
                         },
                         {

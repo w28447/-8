@@ -463,7 +463,7 @@ function function_c9a1a3bd( spot_origin, spot_angles, anim_name, var_c2a69066 )
 // Params 1
 // Checksum 0x5ef29a6f, Offset: 0x1ef0
 // Size: 0x2fa
-function function_92c7e9a9( ai_zone )
+function move_wisp( ai_zone )
 {
     self endon( #"delete" );
     ai_zone notify( #"wisp_reset" );
@@ -535,7 +535,7 @@ function function_7adc1e46( ai_zone, is_special )
     if ( isdefined( is_special ) && is_special )
     {
         ai_zone.special_ai = self;
-        self thread function_92c7e9a9( ai_zone );
+        self thread move_wisp( ai_zone );
     }
     
     /#

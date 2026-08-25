@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_393b8cafa41ff062",
+                            "anim": "anim#ai_t8_zm_mnsn_crmsn_nfrtu_spawn_01_idle",
                             "entrytype": "anim"
                         }
                     ],
@@ -35,7 +35,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_130ee936fb41990f",
+                            "anim": "anim#ai_t8_zm_mnsn_crmsn_nfrtu_spawn_01",
                             "entrytype": "anim"
                         }
                     ],

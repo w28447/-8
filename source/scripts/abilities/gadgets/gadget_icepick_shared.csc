@@ -154,7 +154,7 @@ function function_d3c5b110( local_client_num, oldval, newval, bnewent, binitials
     {
         function_d48752e( local_client_num, level.var_1a8113a7[ local_client_num ] );
         level.var_1a8113a7[ local_client_num ] = undefined;
-        playsound( local_client_num, #"hash_1d4f78480965b59d" );
+        playsound( local_client_num, #"mpl_ice_pick_hacking_done" );
     }
 }
 
@@ -468,7 +468,7 @@ function function_868adc20( local_client_num, oldval, newval, bnewent, binitials
     {
         if ( !isdefined( level.var_422c4695[ local_client_num ] ) )
         {
-            level.var_422c4695[ local_client_num ] = function_604c9983( local_client_num, #"hash_48af3a16cdf94e6f" );
+            level.var_422c4695[ local_client_num ] = function_604c9983( local_client_num, #"mpl_ice_pick_loop" );
         }
         
         return;
@@ -481,7 +481,7 @@ function function_868adc20( local_client_num, oldval, newval, bnewent, binitials
         
         if ( !bwastimejump )
         {
-            playsound( local_client_num, #"hash_b5e00bf57762b86" );
+            playsound( local_client_num, #"mpl_ice_pick_off" );
         }
     }
 }

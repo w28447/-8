@@ -26,14 +26,14 @@
     "#hash_2cf49821": false,
     "#hash_d2751f9d": false,
     "#hash_554be9f7": false,
-    "sound240": "#hash_631a067190b54300",
-    "sound250": "#hash_242aa17124751841",
+    "sound240": "#wpn_generic_dryfire_npc",
+    "sound250": "#wpn_generic_dryfire_plr",
     "tunables1": "#hash_57c4e3e47923a61a",
     "viewmodel": [
         "#viewmodel_default"
     ],
     "worldModel": [
-        "#hash_1735bb19ffd36d46"
+        "#p8_zm_crafting_alchemy_full_on"
     ],
     "inventoryIconZm": "#$blacktransparent"
 }

@@ -33,7 +33,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_fb9d3fe955cbfd4",
+                            "anim": "anim#p8_fxanim_zm_off_president_plaque_hidden_drawer_fall",
                             "entrytype": "anim"
                         }
                     ],
@@ -62,7 +62,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_18fceb39e20f03dd",
+                            "anim": "anim#p8_fxanim_zm_off_president_plaque_hidden_drawer_open",
                             "entrytype": "anim"
                         }
                     ],

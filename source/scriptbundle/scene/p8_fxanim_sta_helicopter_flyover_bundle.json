@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_5222dd380a1586a9",
+                            "anim": "anim#p8_fxanim_sta_helicopter_flyover_idle_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -112,7 +112,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_6261e772c79c3be7",
+                            "anim": "anim#p8_fxanim_sta_helicopter_flyover_rocket_anim",
                             "entrytype": "anim"
                         }
                     ],

@@ -258,7 +258,7 @@ function function_f559e439( localclientnum, menu_data, state )
         {
             if ( isdefined( level.s_blackmarket.var_760cf00 ) && level.s_blackmarket.var_760cf00 )
             {
-                playsound( localclientnum, #"hash_33e04aad46568336" );
+                playsound( localclientnum, #"vox_blac_crate_open" );
             }
             
             playsound( localclientnum, #"hash_548f0d33e630e71a" );

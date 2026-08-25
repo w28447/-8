@@ -328,7 +328,7 @@ function function_3cfb29e1()
 {
     if ( !util::waslastround() )
     {
-        self playlocalsound( #"hash_7353399f9153966f" );
+        self playlocalsound( #"uin_round_end_stinger" );
         self thread globallogic_audio::set_music_on_player( "none" );
         
         if ( isdefined( self.pers[ #"music" ].spawn ) )
@@ -845,10 +845,10 @@ function round_end_wait( time )
 // Params 1
 // Checksum 0x5c6f6014, Offset: 0x2240
 // Size: 0xd8
-function function_ad717b18( var_c139bfe2 )
+function function_ad717b18( delay_type )
 {
-    assert( isdefined( level.roundenddelay[ var_c139bfe2 ] ) );
-    delay = level.roundenddelay[ var_c139bfe2 ] * level.var_49d9aa70;
+    assert( isdefined( level.roundenddelay[ delay_type ] ) );
+    delay = level.roundenddelay[ delay_type ] * level.var_49d9aa70;
     
     if ( delay )
     {

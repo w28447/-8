@@ -3863,13 +3863,13 @@ function function_12479eba( str_scenedef )
 // Params 5
 // Checksum 0x2b445064, Offset: 0xdbf0
 // Size: 0xd2
-function function_67e52759( str_scenedef, s_instance, var_8c4d2266, startsearch, var_62e8e2f0 )
+function function_67e52759( str_scenedef, s_instance, var_8c4d2266, startsearch, endsearch )
 {
     a_shots = get_all_shot_names( str_scenedef, s_instance, var_8c4d2266 );
     
-    if ( isdefined( startsearch ) || isdefined( var_62e8e2f0 ) )
+    if ( isdefined( startsearch ) || isdefined( endsearch ) )
     {
-        a_shots = array::slice( a_shots, isdefined( startsearch ) ? startsearch : 0, isdefined( var_62e8e2f0 ) ? var_62e8e2f0 : 2147483647 );
+        a_shots = array::slice( a_shots, isdefined( startsearch ) ? startsearch : 0, isdefined( endsearch ) ? endsearch : 2147483647 );
     }
     
     s_shot = array::random( a_shots );

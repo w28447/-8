@@ -28,7 +28,7 @@
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/cheers",
-        "icon": "image#hash_735fef17faa20ad5",
+        "icon": "image#ui_icon_emotes_heres_to_you",
         "isdefault": 0
     }
 }

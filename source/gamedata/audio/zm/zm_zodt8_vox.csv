@@ -62,5 +62,5 @@
 #m_quest,#hash_13eb9f50c1f536f9,#hash_7dc8f64c802a299e,0,0,TRUE,FALSE,FALSE,FALSE
 #m_quest,#hash_1cb0a2ca5a7ed1dc,#hash_c76edadd1574af7,0,0,TRUE,FALSE,FALSE,FALSE
 #m_quest,#hash_3c374caf9fd1ec6b,#hash_3cde846b48875568,0,0,TRUE,FALSE,FALSE,FALSE
-#shield_piece,#pickup,#hash_667abc2824133e55,0,0,FALSE,FALSE,FALSE,FALSE
-#weapon_pickup,#shield,#hash_7a78273efd96ec45,0,0,TRUE,FALSE,FALSE,FALSE
+#shield_piece,#pickup,#vox_pickup_rocketshield,0,0,FALSE,FALSE,FALSE,FALSE
+#weapon_pickup,#shield,#vox_assemble_rocketshield,0,0,TRUE,FALSE,FALSE,FALSE

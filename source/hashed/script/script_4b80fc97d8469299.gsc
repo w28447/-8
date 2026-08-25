@@ -444,8 +444,8 @@ function function_dc380897()
     self.vessel playsound( "zmb_vessel_drop" );
     self.vessel clientfield::set( "" + #"hash_1b72c208f2964e24", level.var_ed1e7d4d );
     self.vessel.return_loc = self.vessel.origin;
-    self.vessel playsound( #"hash_8655fa14e357e9a" );
-    self.vessel playloopsound( #"hash_3c00e3a927df9b2e" );
+    self.vessel playsound( #"zmb_pap_charge_start" );
+    self.vessel playloopsound( #"zmb_pap_charge_lp" );
     var_deb6871b = struct::get( self.vessel.target, "targetname" );
     self.vessel moveto( var_deb6871b.origin, 1.5 );
     self.vessel waittill( #"movedone" );
@@ -489,7 +489,7 @@ function function_dc380897()
     self.e_fire setmodel( "tag_origin" );
     self.e_fire clientfield::set( "" + #"mq_pap_fire", 1 );
     self.vessel clientfield::set( "" + #"mq_pap_explosion", 1 );
-    self.e_fire playsound( #"hash_49156c17a247721c" );
+    self.e_fire playsound( #"zmb_pap_charge_explo" );
     arrayremovevalue( level.var_4d8e32c8, self );
     
     if ( !level flag::get( #"golden_pap_active" ) )
@@ -498,7 +498,7 @@ function function_dc380897()
         level notify( #"hash_39b6629ce957cce9" );
         self.vessel clientfield::set( "" + #"hash_1b72c208f2964e24", level.var_ed1e7d4d );
         self.vessel moveto( self.vessel.return_loc, 0.5 );
-        self.vessel playsound( #"hash_1ae6116ea0aa080f" );
+        self.vessel playsound( #"zmb_pap_charge_end" );
         self.vessel stoploopsound();
         wait 0.5;
         self.vessel zm_unitrigger::function_fac87205( zm_utility::function_d6046228( #"hash_3be823a04b5cca2d", #"hash_25cb84d1af883c53" ), 64 );

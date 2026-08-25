@@ -56,7 +56,7 @@
     "soundDef": "#veh_motorcycle_wz",
     "compassIconMaterial": "#compass_vehicle_motorcycle",
     "destructibleDef": "#hash_3e57b326ea6c58d3",
-    "tacticalModeIcon": "#hash_6c7ba888137c81b9",
+    "tacticalModeIcon": "#ui_icon_minimap_wz_motorcycle",
     "steerAxisName": "AXIS_LSTICK",
     "gasAxisName": "AXIS_LSTICK",
     "handBrakeButtonName": "BUTTON_X",
@@ -80,7 +80,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_6c7ba888137c81b9:hash_5cba4be6": "image#hash_6c7ba888137c81b9"
+                        "ui_icon_minimap_wz_motorcycle:hash_5cba4be6": "image#ui_icon_minimap_wz_motorcycle"
                     },
                     {
                         "hash_513059ad": 0,
@@ -176,7 +176,7 @@
                     {
                         "hash_513059ad": 0,
                         "hash_310cbc9": 1,
-                        "hash_6c7ba888137c81b9:hash_5cba4be6": "image#hash_6c7ba888137c81b9"
+                        "ui_icon_minimap_wz_motorcycle:hash_5cba4be6": "image#ui_icon_minimap_wz_motorcycle"
                     },
                     {
                         "hash_513059ad": 0,

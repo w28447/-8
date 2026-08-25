@@ -520,7 +520,7 @@ function function_1af254ac()
             }
             
             level flag::set( #"hash_61bba9aa86f61865" );
-            playsoundatposition( #"hash_6aa220e65103f345", self.origin );
+            playsoundatposition( #"zmb_orb_pickup", self.origin );
             s_result.activator thread zm_audio::create_and_play_dialog( #"component_pickup", #"generic" );
             return;
         }
@@ -535,7 +535,7 @@ function function_cf51e21a()
 {
     var_d388f9de = struct::get( #"s_warden_box" );
     var_d388f9de thread scene::play();
-    playsoundatposition( #"hash_4731813c2e1aa578", var_d388f9de.origin );
+    playsoundatposition( #"zmb_sparky_switch", var_d388f9de.origin );
     wait 0.5;
     var_db15362c = var_d388f9de.scene_ents[ #"prop 1" ];
     var_db15362c clientfield::set( "" + #"hash_376c030aee1d6ccb", 2 );
@@ -880,7 +880,7 @@ function private function_dc04e77e()
     level endon( #"hash_36138b6e1d539829" );
     s_seagull = struct::get( "s_p_s2_gul" );
     s_seagull.mdl_origin = util::spawn_model( "tag_origin", s_seagull.origin, s_seagull.angles );
-    s_seagull.mdl_seagull = util::spawn_model( #"hash_91c31763b1101e6", s_seagull.origin, s_seagull.angles );
+    s_seagull.mdl_seagull = util::spawn_model( #"c_t8_aml_seagull_body1_ghost", s_seagull.origin, s_seagull.angles );
     s_seagull.mdl_seagull clientfield::set( "" + #"hash_504d26c38b96651c", 1 );
     s_seagull.mdl_seagull linkto( s_seagull.mdl_origin );
     s_seagull.mdl_seagull playsound( #"zmb_ghost_seagull_spawn" );
@@ -1104,7 +1104,7 @@ function function_5d904e7d( s_bird_loc, var_a6c68ee8 = 1, var_cc91eb05 = 0 )
     
     a_s_birds = struct::get_array( s_bird_loc.target );
     s_bird = array::random( a_s_birds );
-    s_bird_loc.mdl_bird = util::spawn_model( #"hash_91c31763b1101e6", s_bird.origin, s_bird.angles );
+    s_bird_loc.mdl_bird = util::spawn_model( #"c_t8_aml_seagull_body1_ghost", s_bird.origin, s_bird.angles );
     
     if ( var_a6c68ee8 )
     {
@@ -1180,7 +1180,7 @@ function function_a039c992()
                 
                 if ( var_455e0e0 && isdefined( level.s_bird_loc.mdl_bird ) && !( isdefined( level.s_bird_loc.mdl_bird.var_4d89e47e ) && level.s_bird_loc.mdl_bird.var_4d89e47e ) )
                 {
-                    level.s_bird_loc.mdl_bird playsoundtoplayer( #"hash_6cd665a68de4367e", self );
+                    level.s_bird_loc.mdl_bird playsoundtoplayer( #"zmb_ghost_seagull", self );
                     wait 5;
                 }
             }
@@ -2054,7 +2054,7 @@ function function_9465204c( e_activator )
                 foreach ( s_loc in var_20279738 )
                 {
                     a_s_birds = struct::get_array( s_loc.target );
-                    s_loc.mdl_bird_test = util::spawn_model( #"hash_91c31763b1101e6", a_s_birds[ 0 ].origin, a_s_birds[ 0 ].angles );
+                    s_loc.mdl_bird_test = util::spawn_model( #"c_t8_aml_seagull_body1_ghost", a_s_birds[ 0 ].origin, a_s_birds[ 0 ].angles );
                     s_loc.mdl_bird_test clientfield::set( "<dev string:x63a>" + #"hash_504d26c38b96651c", 1 );
                     s_loc.mdl_bird_test.script_noteworthy = "<dev string:x63d>";
                     s_loc.mdl_bird_test thread function_6af89001();
@@ -2904,7 +2904,7 @@ function private function_ddc5b4e9()
     level zm_escape_util::function_67710e66( 0 );
     level function_ff0c4916();
     s_seagull = struct::get( "s_p_s4_gul" );
-    level.var_7a548c75 = util::spawn_model( #"hash_91c31763b1101e6", s_seagull.origin, s_seagull.angles );
+    level.var_7a548c75 = util::spawn_model( #"c_t8_aml_seagull_body1_ghost", s_seagull.origin, s_seagull.angles );
     level.var_7a548c75 clientfield::set( "" + #"seagull_fx", 1 );
     level.var_7a548c75 clientfield::set( "" + #"hash_504d26c38b96651c", 1 );
     level.var_7a548c75.mdl_origin = util::spawn_model( "tag_origin", level.var_7a548c75.origin, level.var_7a548c75.angles );
@@ -4055,7 +4055,7 @@ function private function_8562a40f()
     
     level thread scene::play( "s_p_s_4_b_g_p_s", "play" );
     level waittill( #"drop_o" );
-    level.var_7a548c75 playsound( #"hash_6cd665a68de4367e" );
+    level.var_7a548c75 playsound( #"zmb_ghost_seagull" );
     level.var_7a548c75.mdl_origin moveto( level.var_7a548c75.mdl_origin.origin + vectornormalize( anglestoforward( level.var_7a548c75.mdl_origin.angles ) ) * 48, 1 );
     level.var_7a548c75.mdl_origin scene::play( #"p8_fxanim_aml_seagull_body1_ghost_bundle", "dissolve", level.var_7a548c75 );
     level.var_7a548c75.mdl_origin clientfield::set( "" + #"seagull_disappear_fx", 1 );
@@ -4073,7 +4073,7 @@ function private function_8562a40f()
     
     if ( isplayer( e_activator ) && isalive( e_activator ) )
     {
-        e_activator playsound( #"hash_6aa220e65103f345" );
+        e_activator playsound( #"zmb_orb_pickup" );
     }
 }
 
@@ -5963,7 +5963,7 @@ function function_9c59bce1( a_ents )
     if ( isdefined( a_ents[ #"boss" ] ) )
     {
         a_ents[ #"boss" ] clientfield::increment( "" + #"hash_29d283d7f747d358" );
-        a_ents[ #"boss" ] playsound( #"hash_6fd86d58e7f64963" );
+        a_ents[ #"boss" ] playsound( #"evt_brutus_teleport_out" );
     }
 }
 
@@ -6237,8 +6237,8 @@ function function_360daff1()
             e_player thread function_75a41e37();
         }
         
-        mdl_portal playsoundtoteam( #"hash_7ae2ffc3070edcfc", util::get_active_players()[ 0 ].team );
-        wait soundgetplaybacktime( #"hash_7ae2ffc3070edcfc" ) * 0.001;
+        mdl_portal playsoundtoteam( #"vox_m_quest_ward_port_ward_0", util::get_active_players()[ 0 ].team );
+        wait soundgetplaybacktime( #"vox_m_quest_ward_port_ward_0" ) * 0.001;
         level notify( #"end_game" );
         return;
     }

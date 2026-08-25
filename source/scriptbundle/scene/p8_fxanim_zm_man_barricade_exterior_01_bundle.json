@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_10637bb9dabdf9b6",
+                            "anim": "anim#p8_fxanim_zm_man_barricade_exterior_01_idle_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -34,7 +34,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_1df2fcd2dfc542c7",
+                            "anim": "anim#p8_fxanim_zm_man_barricade_exterior_01_rise_anim",
                             "entrytype": "anim"
                         }
                     ],

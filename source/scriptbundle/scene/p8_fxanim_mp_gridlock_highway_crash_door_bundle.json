@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_5ec72da8bc17e50",
+                            "anim": "anim#p8_fxanim_mp_gridlock_highway_truck_trailer_door_anim",
                             "entrytype": "anim"
                         }
                     ],
@@ -37,7 +37,7 @@
             "skipdeathanim": 0,
             "hash_9de1f44c": 0,
             "lerptime": 0,
-            "model": "model#hash_352b95d0e7a34663",
+            "model": "model#p8_fxanim_mp_gridlock_highway_truck_trailer_door_mod",
             "type": "prop",
             "disablehitmarker": 0,
             "usefakeactor": 0,

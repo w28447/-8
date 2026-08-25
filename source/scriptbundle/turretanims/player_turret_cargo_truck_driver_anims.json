@@ -1,15 +1,15 @@
 {
     "configstringfiletype": "scriptbundle",
-    "leftstraightanim": "playeranim#hash_75a5d99ad9e4ae11",
+    "leftstraightanim": "playeranim#pb_arav_driver_turn_left",
     "type": "turretanims",
-    "hash_57e2e1d0ca38035a:hash_9323d5c1": "playeranim#hash_57e2e1d0ca38035a",
-    "centerstraightanim": "playeranim#hash_5b7f6293bfc58106",
+    "pb_cargo_truck_driver_enter:hash_9323d5c1": "playeranim#pb_cargo_truck_driver_enter",
+    "centerstraightanim": "playeranim#pb_cargo_truck_driver_idle",
     "vmtype": "none",
     "name": "player_turret_cargo_truck_driver_anims",
     "aimpitchangleu": 90,
     "aimpitchangled": 90,
-    "hash_57e2e1d0ca38035a:hash_9b47c071": "playeranim#hash_57e2e1d0ca38035a",
-    "rightstraightanim": "playeranim#hash_85884a3e58a2f2",
+    "pb_cargo_truck_driver_enter:hash_9b47c071": "playeranim#pb_cargo_truck_driver_enter",
+    "rightstraightanim": "playeranim#pb_arav_driver_turn_right",
     "aimyawangler": 35,
     "aimyawanglel": 35
 }

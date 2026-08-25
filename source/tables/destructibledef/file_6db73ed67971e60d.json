@@ -1,7 +1,7 @@
 {
     "name": "#hash_6db73ed67971e60d",
-    "model": "#hash_7b1052d30c8831f4",
-    "unk20": "#hash_68f108dace09a398",
+    "model": "#veh_t8_civ_van_utility_dest_mp_militia",
+    "unk20": "#veh_t8_civ_van_utility_mp_militia_dead",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -14,7 +14,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_94b5f3bad73031",
+                    "name": "#dst_car_fire_frnt",
                     "unk28": "tag_body_d0"
                 },
                 {

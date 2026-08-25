@@ -23,7 +23,7 @@ function autoexec __init__system__()
 // Size: 0x1e
 function __init__()
 {
-    level.var_5df2581a = [];
+    level.crafting_blueprints = [];
     level.crafting_components = [];
 }
 
@@ -125,7 +125,7 @@ function function_b18074d0( name )
             }
             
             blueprint.w_result = get_component( blueprint.result );
-            level.var_5df2581a[ name ] = blueprint;
+            level.crafting_blueprints[ name ] = blueprint;
             
             if ( !isdefined( blueprint.craftingprompt ) )
             {

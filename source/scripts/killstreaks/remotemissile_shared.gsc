@@ -855,7 +855,7 @@ function function_dc2222ff( player )
     self.var_a7a295cf linkto( self );
     self.var_a7a295cf setinvisibletoall();
     self.var_a7a295cf setvisibletoplayer( player );
-    self.var_a7a295cf playloopsound( #"hash_1375217a84811e44", 0.5 );
+    self.var_a7a295cf playloopsound( #"wpn_remote_missile_walla", 0.5 );
     self waittill( #"stop_radio_snd" );
     self.var_a7a295cf stoploopsound( 0.5 );
     self thread stopondeath( self.var_a7a295cf );

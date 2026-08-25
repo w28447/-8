@@ -820,7 +820,7 @@ function player_elec_damage( trigger )
         
         self shellshock( str_elec_shellshock, shocktime );
         self playrumbleonentity( "damage_heavy" );
-        self playsound( #"hash_5af2a9d11f007b9" );
+        self playsound( #"zmb_player_electrocuted_oneshot" );
         
         if ( zm_utility::is_standard() )
         {

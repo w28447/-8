@@ -22,7 +22,7 @@ function __init__()
 {
     level.weaponsigblade = getweapon( #"sig_blade" );
     level.weaponsigbladeprojectile = getweapon( #"sig_blade_projectile" );
-    ability_player::register_gadget_activation_callbacks( 11, &function_a1aa3b85, &function_b0105ee8 );
+    ability_player::register_gadget_activation_callbacks( 11, &function_a1aa3b85, &blade_off );
 }
 
 // Namespace blade/blade
@@ -111,7 +111,7 @@ function function_a1aa3b85( abilityslot, weapon )
 // Params 2
 // Checksum 0x9ca51857, Offset: 0x448
 // Size: 0x5a
-function function_b0105ee8( abilityslot, weapon )
+function blade_off( abilityslot, weapon )
 {
     if ( isdefined( self ) )
     {

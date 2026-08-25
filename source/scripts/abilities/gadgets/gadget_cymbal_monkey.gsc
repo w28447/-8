@@ -69,7 +69,7 @@ function private function_a23699fe()
                 continue;
             }
             
-            if ( !isdefined( monkey.var_38af96b9 ) )
+            if ( !isdefined( monkey.grenadeparent ) )
             {
                 monkey delete();
                 continue;
@@ -150,7 +150,7 @@ function private event_handler[grenade_fire] function_4776caf4( eventstruct )
         mdl_monkey = util::spawn_model( e_grenade.model, e_grenade.origin, e_grenade.angles );
         e_grenade.mdl_monkey = mdl_monkey;
         e_grenade.mdl_monkey linkto( e_grenade );
-        e_grenade.mdl_monkey.var_38af96b9 = e_grenade;
+        e_grenade.mdl_monkey.grenadeparent = e_grenade;
         e_grenade.mdl_monkey.team = e_grenade.team;
         e_grenade.mdl_monkey clientfield::set( "enemyequip", 1 );
         e_grenade waittill( #"stationary", #"death" );
@@ -183,7 +183,7 @@ function function_b9934c1d()
     }
     
     self.fuse_lit = 1;
-    self playsound( #"hash_4509539f9e7954e2" );
+    self playsound( #"zmb_monkeybomb_song" );
     playfxontag( level._effect[ #"monkey_glow" ], self, "tag_weapon" );
     self thread scene::play( #"cin_t8_monkeybomb_dance", self );
     self thread util::delay( 6.5, "death", &function_4e61e1d );
@@ -191,7 +191,7 @@ function function_b9934c1d()
     
     while ( gettime() < var_de3026af )
     {
-        if ( !isdefined( self.var_38af96b9 ) )
+        if ( !isdefined( self.grenadeparent ) )
         {
             break;
         }
@@ -217,11 +217,11 @@ function function_4e61e1d()
 // Size: 0x8c
 function monkey_detonate_immediate()
 {
-    if ( isdefined( self.var_38af96b9 ) )
+    if ( isdefined( self.grenadeparent ) )
     {
         self callback::callback( #"hash_6aa0232dd3c8376a" );
         playsoundatposition( #"wpn_claymore_alert", self.origin );
-        self.var_38af96b9 detonate();
+        self.grenadeparent detonate();
     }
     
     self delete();

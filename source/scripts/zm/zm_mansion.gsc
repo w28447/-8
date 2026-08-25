@@ -1289,7 +1289,7 @@ function function_2d164b86()
         level thread debris_scene( "debris_cemetery_scene", "connect_cemetery_entrance_to_cemetery_graveyard", "Shot 1", "Shot 2" );
     }
     
-    mdl_artifact playsound( #"hash_75b9c9ad6ebe8af2" );
+    mdl_artifact playsound( #"zmb_sentinel_artifact_activate" );
     
     if ( isalive( var_d11a4648 ) )
     {

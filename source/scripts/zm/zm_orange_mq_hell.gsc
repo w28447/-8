@@ -471,13 +471,13 @@ function function_25c6ed8d()
     
     zm_hms_util::pause_zombies( 0 );
     self waittill( #"defend" );
-    self playsound( #"hash_1af3a3933941d01a" );
+    self playsound( #"evt_lantern_stop" );
     level function_9be0a8a6( "sc_lantern_1" );
     self waittill( #"defend" );
-    self playsound( #"hash_1af3a3933941d01a" );
+    self playsound( #"evt_lantern_stop" );
     level function_9be0a8a6( "sc_lantern_2" );
     self waittill( #"defend" );
-    self playsound( #"hash_1af3a3933941d01a" );
+    self playsound( #"evt_lantern_stop" );
     level function_9be0a8a6( "sc_lantern_4" );
     self waittill( #"zip" );
     self setspeed( 7 );
@@ -878,7 +878,7 @@ function function_8a1356b6()
     self endon( #"death" );
     self waittill( #"trigger" );
     self.e_rock moveto( self.e_rock.var_3a161b40, 0.5 );
-    self.e_rock playsound( #"hash_7d258d025446af9" );
+    self.e_rock playsound( #"evt_lava_platform" );
     self delete();
 }
 

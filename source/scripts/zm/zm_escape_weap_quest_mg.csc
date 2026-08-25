@@ -513,13 +513,13 @@ function function_4707df22( localclientnum, oldval, newval, bnewent, binitialsna
         stopfx( localclientnum, self.var_85dab00b );
         self.var_85dab00b = undefined;
         playfx( localclientnum, level._effect[ #"bg_quest_despawn" ], self.origin );
-        playsound( localclientnum, #"hash_c9e5d07bd26090d", self.origin );
+        playsound( localclientnum, #"zmb_blundergat_fire_stop", self.origin );
     }
     
     if ( newval == 1 )
     {
         self.var_85dab00b = util::playfxontag( localclientnum, level._effect[ #"bg_quest_spawn" ], self, "tag_origin" );
-        playsound( localclientnum, #"hash_4cd38326868832c7", self.origin );
+        playsound( localclientnum, #"zmb_blundergat_fire_start", self.origin );
     }
 }
 
@@ -571,7 +571,7 @@ function function_bbfe3432( localclientnum )
 function magma_urn_triggered_fx( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     util::playfxontag( localclientnum, level._effect[ #"magma_urn_triggered" ], self, "tag_origin" );
-    playsound( localclientnum, #"hash_4cd38326868832c7", self.origin );
+    playsound( localclientnum, #"zmb_blundergat_fire_start", self.origin );
 }
 
 // Namespace namespace_fc5c8455/zm_escape_weap_quest_mg

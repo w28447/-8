@@ -23,7 +23,7 @@
 #magicbox,#tactical,#vox_box_tactical,0,0,FALSE,FALSE,FALSE,FALSE
 #magicbox,#wonder,#vox_box_wonder,0,0,FALSE,FALSE,FALSE,FALSE
 #magicbox,#raygun,#vox_box_raygun,0,0,FALSE,FALSE,FALSE,FALSE
-#shield,#destroy,#hash_112938160e7b4685,0,0,TRUE,FALSE,FALSE,FALSE
+#shield,#destroy,#vox_destroy_rocketshield,0,0,TRUE,FALSE,FALSE,FALSE
 #kill,#melee,#vox_kill_melee,40,0,FALSE,TRUE,FALSE,FALSE
 #kill,#melee_instakill,#vox_kill_melee,0,0,FALSE,TRUE,FALSE,FALSE
 #kill,#weapon_instakill,#vox_kill_generic,10,0,FALSE,TRUE,FALSE,FALSE

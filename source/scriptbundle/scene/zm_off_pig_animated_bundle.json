@@ -5,7 +5,7 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_29605567280479a4",
+                            "anim": "anim#zm_off_pig_idle",
                             "entrytype": "anim"
                         }
                     ],
@@ -34,11 +34,11 @@
                 {
                     "entry": [
                         {
-                            "anim": "anim#hash_1322357d1955dda0",
+                            "anim": "anim#zm_off_pig_death",
                             "entrytype": "anim"
                         },
                         {
-                            "anim": "anim#hash_1d852f44192de9db",
+                            "anim": "anim#zm_off_pig_death_idle",
                             "entrytype": "anim"
                         }
                     ],

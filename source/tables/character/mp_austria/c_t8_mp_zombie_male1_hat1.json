@@ -9,12 +9,12 @@
     "body": "#c_t8_mp_zombie_male_body1",
     "headAlias": "#hash_38a7c0b8b38a8f5a",
     "hat": "#c_t8_mp_zombie_male_hat1",
-    "damagedTorso_Clean": "#hash_688f6926ac2b4a3f",
-    "damagedTorso_RightArmGone": "#hash_5a4dbc892de0bdac",
-    "damagedTorso_LeftArmGone": "#hash_b40535c61c7e096",
-    "damagedTorso_HeadGone": "#hash_536e7748b4a5fc88",
-    "damagedLegs_Clean": "#hash_7fac712fff476e2c",
-    "damagedLegs_RightLegGone": "#hash_26791654245881ee",
-    "damagedLegs_LeftLegGone": "#hash_7b7c1967533dc970",
-    "damagedLegs_NoLegs": "#hash_1442c69190bf0d1b"
+    "damagedTorso_Clean": "#c_t8_mp_zombie_male_body1_g_upclean",
+    "damagedTorso_RightArmGone": "#c_t8_mp_zombie_male_body1_g_rarmoff",
+    "damagedTorso_LeftArmGone": "#c_t8_mp_zombie_male_body1_g_larmoff",
+    "damagedTorso_HeadGone": "#c_t8_mp_zombie_male_body1_g_behead",
+    "damagedLegs_Clean": "#c_t8_mp_zombie_male_body1_g_lowclean",
+    "damagedLegs_RightLegGone": "#c_t8_mp_zombie_male_body1_g_rlegoff",
+    "damagedLegs_LeftLegGone": "#c_t8_mp_zombie_male_body1_g_llegoff",
+    "damagedLegs_NoLegs": "#c_t8_mp_zombie_male_body1_g_blegsoff"
 }

@@ -38,7 +38,7 @@
     "droppositionoffsetz": 0,
     "handler": "#generic_weapon_pickup",
     "armortier": 0,
-    "pickupicon": "image#hash_35f56e3ab1f33b8b",
+    "pickupicon": "image#ui_icon_weapon_hud_ww_crossbow_impaler",
     "fxangleoffsety": 0,
     "fxangleoffsetx": 0,
     "fxangleoffsetz": 0,

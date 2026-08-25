@@ -99,12 +99,12 @@ function function_19a80b40( var_a0ffe134 )
 // Size: 0x1e4
 function function_8bf71bd6()
 {
-    if ( !isdefined( self ) || !isdefined( self.var_38af96b9 ) )
+    if ( !isdefined( self ) || !isdefined( self.grenadeparent ) )
     {
         return;
     }
     
-    player = self.var_38af96b9.originalowner;
+    player = self.grenadeparent.originalowner;
     
     if ( !isplayer( player ) )
     {

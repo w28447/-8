@@ -48,10 +48,10 @@
             "1 0"
         ]
     ],
-    "firesound": "#hash_5074c55475fcc6fa",
-    "firesoundplayer": "#hash_f652c54e23ea81f",
+    "firesound": "#wpn_shockrifle_fire_npc",
+    "firesoundplayer": "#wpn_shockrifle_fire_plr",
     "sound260": "#prj_crack_chaser",
-    "sound3e0": "#hash_60f9893b7fbb721d",
+    "sound3e0": "#mpl_hero_weap_lose",
     "gadgetreadysoundplayer": "#hash_57d21ba4b293b71a",
     "sound660": "#uin_unavailable_charging",
     "sound800": "#hash_5ee962527afebfb1",

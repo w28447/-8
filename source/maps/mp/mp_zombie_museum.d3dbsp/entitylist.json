@@ -235,7 +235,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5b454126cc701e7c",
+                    "value": "#amb_swamp_line_l",
                     "unk1a": true
                 },
                 {
@@ -361,7 +361,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5b454126cc701e7c",
+                    "value": "#amb_swamp_line_l",
                     "unk1a": true
                 },
                 {
@@ -487,7 +487,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5b453726cc700d7e",
+                    "value": "#amb_swamp_line_r",
                     "unk1a": true
                 },
                 {
@@ -613,7 +613,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5b453726cc700d7e",
+                    "value": "#amb_swamp_line_r",
                     "unk1a": true
                 },
                 {
@@ -1099,7 +1099,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5b453726cc700d7e",
+                    "value": "#amb_swamp_line_r",
                     "unk1a": true
                 },
                 {
@@ -2737,7 +2737,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_32aa3a2e9b1f665",
+                    "value": "#amb_bus_idle",
                     "unk1a": true
                 },
                 {
@@ -2809,7 +2809,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_33b756c9b2b14601",
+                    "value": "#amb_torture_deck",
                     "unk1a": true
                 },
                 {
@@ -2881,7 +2881,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_49ebf33bc626113b",
+                    "value": "#amb_torture_room",
                     "unk1a": true
                 },
                 {
@@ -16639,7 +16639,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_143e9dc3c756af7f",
+                    "value": "#amb_teleporter_elec_loop",
                     "unk1a": true
                 },
                 {
@@ -16711,7 +16711,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_143e9dc3c756af7f",
+                    "value": "#amb_teleporter_elec_loop",
                     "unk1a": true
                 },
                 {
@@ -17629,7 +17629,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_2ad2c850d2924b46",
+                    "value": "#amb_celing_fan",
                     "unk1a": true
                 },
                 {
@@ -17701,7 +17701,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_2ad2c850d2924b46",
+                    "value": "#amb_celing_fan",
                     "unk1a": true
                 },
                 {
@@ -17773,7 +17773,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_2ad2c850d2924b46",
+                    "value": "#amb_celing_fan",
                     "unk1a": true
                 },
                 {
@@ -17845,7 +17845,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3cdf0b09bee5252f",
+                    "value": "#amb_metal_pop",
                     "unk1a": true
                 },
                 {
@@ -18433,7 +18433,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_22aec8f7b0de1f35",
+                    "value": "#amb_zmb_ghost",
                     "unk1a": true
                 },
                 {
@@ -62226,7 +62226,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_543f91e28fb02cca",
+                    "value": "#veh_t8_civ_van_utility_museum",
                     "unk1a": true
                 },
                 {
@@ -62244,7 +62244,7 @@
                 {
                     "key": "prop_model",
                     "type": "xhash",
-                    "value": "#hash_543f91e28fb02cca",
+                    "value": "#veh_t8_civ_van_utility_museum",
                     "unk1a": true
                 },
                 {
@@ -62369,7 +62369,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_543f91e28fb02cca",
+                    "value": "#veh_t8_civ_van_utility_museum",
                     "unk1a": true
                 },
                 {
@@ -62387,7 +62387,7 @@
                 {
                     "key": "prop_model",
                     "type": "xhash",
-                    "value": "#hash_543f91e28fb02cca",
+                    "value": "#veh_t8_civ_van_utility_museum",
                     "unk1a": true
                 },
                 {
@@ -62512,7 +62512,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_543f91e28fb02cca",
+                    "value": "#veh_t8_civ_van_utility_museum",
                     "unk1a": true
                 },
                 {
@@ -62530,7 +62530,7 @@
                 {
                     "key": "prop_model",
                     "type": "xhash",
-                    "value": "#hash_543f91e28fb02cca",
+                    "value": "#veh_t8_civ_van_utility_museum",
                     "unk1a": true
                 },
                 {

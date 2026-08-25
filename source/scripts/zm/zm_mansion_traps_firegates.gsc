@@ -238,7 +238,7 @@ function function_aa539d7b()
     }
     
     self flag::wait_till( #"enabled" );
-    playsoundatposition( #"hash_277a6124c088ba6d", self.origin );
+    playsoundatposition( #"zmb_energy_core_insert", self.origin );
     sound_ent = spawn( "script_origin", self.origin );
     sound_ent playloopsound( #"hash_39e79a32dcbea912" );
     level flag::set( self.script_flag_wait );
@@ -477,7 +477,7 @@ function function_b1bd4115()
             level thread function_7b170638( level.var_adc872f3, 1 );
             e_player thread zm_audio::create_and_play_dialog( #"component_pickup", #"generic" );
             arrayremovevalue( level.var_4f17d729, self, 0 );
-            playsoundatposition( #"hash_7512ff4121bb5604", e_player.origin );
+            playsoundatposition( #"zmb_energy_core_pickup", e_player.origin );
             
             if ( isdefined( self.stub.mdl ) )
             {
@@ -527,7 +527,7 @@ function function_7b170638( var_8163cc4, b_found )
 function pickup_spin()
 {
     self endon( #"death" );
-    self playloopsound( #"hash_3b9597774dea00d6" );
+    self playloopsound( #"zmb_energy_core_loop" );
     
     while ( true )
     {
@@ -695,7 +695,7 @@ function function_7d9e84f9( str_color = "red" )
     }
     
     exploder::exploder( self.str_exploder );
-    self playsound( #"hash_370460eab1a33ee6" );
+    self playsound( #"wpn_fire_trap_start" );
 }
 
 // Namespace zm_traps_firegates/zm_mansion_traps_firegates
@@ -707,7 +707,7 @@ function function_5627d722()
     if ( isdefined( self.str_exploder ) )
     {
         exploder::stop_exploder( self.str_exploder );
-        self playsound( #"hash_5d8ec72f0838594e" );
+        self playsound( #"wpn_fire_trap_stop" );
         self.str_exploder = undefined;
     }
 }

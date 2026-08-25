@@ -1,7 +1,7 @@
 {
     "name": "#hash_5e71a6a9c75583b",
-    "model": "#hash_53b6729687fd9dc5",
-    "unk20": "#hash_2b9beeda1e9ef3b0",
+    "model": "#veh_t8_civ_suv_dest_red_california",
+    "unk20": "#veh_t8_civ_suv_dead_red",
     "clientOnly": false,
     "syncBaseHealthWithEntity": false,
     "pieces": [
@@ -11,7 +11,7 @@
                     "unk28": "tag_body_d0"
                 },
                 {
-                    "name": "#hash_21d849eee4d897a",
+                    "name": "#dst_car_rad_steam",
                     "unk28": "tag_body_d0"
                 },
                 {

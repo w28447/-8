@@ -298,7 +298,7 @@ function onplaceturret( turret )
         player stats::function_e24eec31( getweapon( #"mini_turret" ), #"used", 1 );
     }
     
-    turret.vehicle playloopsound( #"hash_69240c6db92da5bf", 0.25 );
+    turret.vehicle playloopsound( #"mpl_turret_amb_loop", 0.25 );
     turret.vehicle.turret_enabled = 1;
     target_set( turret.vehicle, ( 0, 0, 36 ) );
     turret.vehicle unlink();
@@ -539,7 +539,7 @@ function turretscanning()
     veh.do_not_clear_targets_during_think = 1;
     wait 0.8;
     veh playsound( #"mpl_turret_startup" );
-    veh playloopsound( #"hash_69240c6db92da5bf" );
+    veh playloopsound( #"mpl_turret_amb_loop" );
     
     while ( true )
     {

@@ -92,12 +92,12 @@ function function_a346a156( localclientnum, oldval, newval, bnewent, binitialsna
     if ( newval == 1 )
     {
         self playrenderoverridebundle( #"hash_c5c4890c94eb1c7" );
-        playsound( localclientnum, #"hash_8fc267f3e184882", self.origin );
+        playsound( localclientnum, #"zmb_hallion_teleport_in", self.origin );
         return;
     }
     
     self stoprenderoverridebundle( #"hash_c5c4890c94eb1c7" );
-    playsound( localclientnum, #"hash_f5264369f84b89b", self.origin );
+    playsound( localclientnum, #"zmb_hallion_teleport_out", self.origin );
 }
 
 // Namespace mansion_boss_ww/zm_mansion_boss_ww

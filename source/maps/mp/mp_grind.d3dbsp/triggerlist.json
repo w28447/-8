@@ -3920,7 +3920,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_2a24ce3a41b0df92",
+                    "value": "#fly_bump_metal_stall",
                     "unk1a": true
                 },
                 {
@@ -3991,7 +3991,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77acef2ebeab25a9",
+                    "value": "#fly_bump_bike",
                     "unk1a": true
                 },
                 {
@@ -4062,7 +4062,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {
@@ -4133,7 +4133,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {
@@ -4204,7 +4204,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_273c1ce675562cf7",
+                    "value": "#fly_bump_truck",
                     "unk1a": true
                 },
                 {
@@ -4275,7 +4275,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77acef2ebeab25a9",
+                    "value": "#fly_bump_bike",
                     "unk1a": true
                 },
                 {
@@ -4346,7 +4346,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77acef2ebeab25a9",
+                    "value": "#fly_bump_bike",
                     "unk1a": true
                 },
                 {
@@ -4417,7 +4417,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_4ff60fe70fad2082",
+                    "value": "#fly_bump_cardboard",
                     "unk1a": true
                 },
                 {
@@ -4488,7 +4488,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_4ff60fe70fad2082",
+                    "value": "#fly_bump_cardboard",
                     "unk1a": true
                 },
                 {
@@ -4559,7 +4559,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77acef2ebeab25a9",
+                    "value": "#fly_bump_bike",
                     "unk1a": true
                 },
                 {
@@ -4630,7 +4630,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77acef2ebeab25a9",
+                    "value": "#fly_bump_bike",
                     "unk1a": true
                 },
                 {
@@ -4701,7 +4701,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_bce4c947d361ec7",
+                    "value": "#fly_bump_table_scoot",
                     "unk1a": true
                 },
                 {
@@ -4772,7 +4772,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_2ce5e8e291cc8524",
+                    "value": "#fly_bump_bottle",
                     "unk1a": true
                 },
                 {
@@ -4843,7 +4843,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_2ce5e8e291cc8524",
+                    "value": "#fly_bump_bottle",
                     "unk1a": true
                 },
                 {
@@ -4914,7 +4914,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77acef2ebeab25a9",
+                    "value": "#fly_bump_bike",
                     "unk1a": true
                 },
                 {
@@ -4985,7 +4985,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_4ff60fe70fad2082",
+                    "value": "#fly_bump_cardboard",
                     "unk1a": true
                 },
                 {
@@ -5056,7 +5056,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_4ff60fe70fad2082",
+                    "value": "#fly_bump_cardboard",
                     "unk1a": true
                 },
                 {
@@ -5127,7 +5127,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_4ff60fe70fad2082",
+                    "value": "#fly_bump_cardboard",
                     "unk1a": true
                 },
                 {
@@ -5198,7 +5198,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_7ef1f2f4e7038740",
+                    "value": "#fly_bump_shelf",
                     "unk1a": true
                 },
                 {
@@ -5269,7 +5269,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_7ef1f2f4e7038740",
+                    "value": "#fly_bump_shelf",
                     "unk1a": true
                 },
                 {
@@ -5340,7 +5340,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_7ef1f2f4e7038740",
+                    "value": "#fly_bump_shelf",
                     "unk1a": true
                 },
                 {
@@ -5411,7 +5411,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_4ff60fe70fad2082",
+                    "value": "#fly_bump_cardboard",
                     "unk1a": true
                 },
                 {
@@ -5482,7 +5482,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77acef2ebeab25a9",
+                    "value": "#fly_bump_bike",
                     "unk1a": true
                 },
                 {
@@ -5553,7 +5553,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77acef2ebeab25a9",
+                    "value": "#fly_bump_bike",
                     "unk1a": true
                 },
                 {
@@ -5624,7 +5624,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77acef2ebeab25a9",
+                    "value": "#fly_bump_bike",
                     "unk1a": true
                 },
                 {
@@ -5695,7 +5695,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -5766,7 +5766,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77acef2ebeab25a9",
+                    "value": "#fly_bump_bike",
                     "unk1a": true
                 },
                 {
@@ -5837,7 +5837,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -5908,7 +5908,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -5979,7 +5979,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -6050,7 +6050,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_60363e606c7cc6bc",
+                    "value": "#fly_bump_trashcan",
                     "unk1a": true
                 },
                 {
@@ -6121,7 +6121,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_60363e606c7cc6bc",
+                    "value": "#fly_bump_trashcan",
                     "unk1a": true
                 },
                 {
@@ -6192,7 +6192,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -6263,7 +6263,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -6334,7 +6334,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -6405,7 +6405,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -6476,7 +6476,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -6547,7 +6547,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -6618,7 +6618,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -6689,7 +6689,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -6760,7 +6760,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -6831,7 +6831,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -6902,7 +6902,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -6973,7 +6973,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -7044,7 +7044,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -7115,7 +7115,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -7186,7 +7186,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -7257,7 +7257,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -7328,7 +7328,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -7399,7 +7399,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -7470,7 +7470,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_2ce5e8e291cc8524",
+                    "value": "#fly_bump_bottle",
                     "unk1a": true
                 },
                 {
@@ -7541,7 +7541,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_4ff60fe70fad2082",
+                    "value": "#fly_bump_cardboard",
                     "unk1a": true
                 },
                 {
@@ -7683,7 +7683,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -7754,7 +7754,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -7825,7 +7825,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -7896,7 +7896,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -7967,7 +7967,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -8038,7 +8038,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_620e1c161866111e",
+                    "value": "#fly_bump_skateboard",
                     "unk1a": true
                 },
                 {
@@ -8109,7 +8109,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_77acef2ebeab25a9",
+                    "value": "#fly_bump_bike",
                     "unk1a": true
                 },
                 {

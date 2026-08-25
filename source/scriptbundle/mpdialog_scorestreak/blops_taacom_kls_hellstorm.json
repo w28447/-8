@@ -1,13 +1,13 @@
 {
-    "destroyed": "#hash_60826fc3445693",
-    "ready": "#hash_4fbe59ffa19f7d8f",
+    "destroyed": "#vox_bta1_ult_hell_destroyed",
+    "ready": "#vox_bta1_ult_hell_ready",
     "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
-    "killmultiple": "#hash_5cef18aad818704f",
+    "killmultiple": "#vox_bta1_ult_hell_kill_mult",
     "vmtype": "both",
     "name": "blops_taacom_kls_hellstorm",
-    "kill1": "#hash_5fc05b23e1aafb9a",
-    "kill3": "#hash_5fc05923e1aaf834",
-    "kill2": "#hash_5fc05a23e1aaf9e7",
-    "killnone": "#hash_362a659f9ca5cad6"
+    "kill1": "#vox_bta1_ult_hell_kill_01",
+    "kill3": "#vox_bta1_ult_hell_kill_03",
+    "kill2": "#vox_bta1_ult_hell_kill_02",
+    "killnone": "#vox_bta1_ult_hell_hit_00"
 }

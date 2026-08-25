@@ -13,7 +13,7 @@
     "exhaustFxTag1": "tag_fx_thruster",
     "deathFx": "#killstreaks/fx8_dart_explosion",
     "deathFxTag": "tag_body_animate",
-    "deathFxSound": "#hash_36798f1cfbcaec95",
+    "deathFxSound": "#veh_dart_explo",
     "lightFx": [
         "#killstreaks/fx8_dart_lights"
     ],
@@ -30,7 +30,7 @@
     "skidSpeedMin": 100,
     "skidSpeedMax": 600,
     "peelSpeedMax": 600,
-    "model": "#hash_181fe85848ab066",
+    "model": "#veh_t8_mil_drone_dart_mp_light",
     "deathModel": "#veh_t8_mil_drone_dart",
     "soundDef": "#veh_drn_dart_mp",
     "compassIconMaterial": "#compass_hk",

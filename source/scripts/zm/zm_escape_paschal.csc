@@ -159,7 +159,7 @@ function function_e5437696( localclientnum, oldval, newval, bnewent, binitialsna
         
         if ( !isdefined( self.var_a863bc25 ) )
         {
-            self.var_a863bc25 = self playloopsound( #"hash_59f1ff45d390f7f1" );
+            self.var_a863bc25 = self playloopsound( #"zmb_kronorium_glow" );
         }
     }
 }
