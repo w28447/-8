@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_ar_fastfire_signature_5",
+    "type": "#tag",
+    "material": "#hash_70fbac1a96860a59",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_a995618d7a67a4c",
+        "icon": "image#loot_ui_icon_tags_ar_fastfire_signature_5",
+        "isdefault": 0
+    }
+}

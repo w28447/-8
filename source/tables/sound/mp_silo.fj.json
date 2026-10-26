@@ -9,13 +9,13 @@
         {
             "value": 18,
             "next": 65535,
-            "name": "#hash_145cdf2b6c7929f7",
+            "name": "#vox_tvoi_tutor_ruin_ajax_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_145cdf2b6c7929f7",
+                    "name": "#vox_tvoi_tutor_ruin_ajax_0",
                     "subtitle": "#hash_18a0460fc047412",
                     "assetId": "#hash_62378b28c6bb7ee4",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -61,13 +61,13 @@
         {
             "value": 13,
             "next": 65535,
-            "name": "#hash_145cde2b6c792844",
+            "name": "#vox_tvoi_tutor_ruin_ajax_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_145cde2b6c792844",
+                    "name": "#vox_tvoi_tutor_ruin_ajax_1",
                     "subtitle": "#hash_565f1e0301cc16a5",
                     "assetId": "#hash_74c5f6934febd13",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -110,7 +110,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_145cde2b6c792844",
+                    "name": "#vox_tvoi_tutor_ruin_ajax_1",
                     "subtitle": "#hash_7ef407ab70033f27",
                     "assetId": "#hash_340633d5b423171",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -157,13 +157,13 @@
         {
             "value": 33,
             "next": 65535,
-            "name": "#hash_145ce12b6c792d5d",
+            "name": "#vox_tvoi_tutor_ruin_ajax_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_145ce12b6c792d5d",
+                    "name": "#vox_tvoi_tutor_ruin_ajax_2",
                     "subtitle": "#hash_a1edb31c6c6bd7c",
                     "assetId": "#hash_150644523eb6156",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -206,7 +206,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_145ce12b6c792d5d",
+                    "name": "#vox_tvoi_tutor_ruin_ajax_2",
                     "subtitle": "#hash_18764ec889cf96fe",
                     "assetId": "#hash_14bdfa0a773464a4",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -253,13 +253,13 @@
         {
             "value": 15,
             "next": 65535,
-            "name": "#hash_145ce02b6c792baa",
+            "name": "#vox_tvoi_tutor_ruin_ajax_3",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_145ce02b6c792baa",
+                    "name": "#vox_tvoi_tutor_ruin_ajax_3",
                     "subtitle": "#hash_21ae89aa5a65ec77",
                     "assetId": "#hash_1ff442e4a8dba7ad",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -302,7 +302,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_145ce02b6c792baa",
+                    "name": "#vox_tvoi_tutor_ruin_ajax_3",
                     "subtitle": "#hash_1cea523cb3099131",
                     "assetId": "#hash_48395bd7ce18049b",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -349,13 +349,13 @@
         {
             "value": 49,
             "next": 65535,
-            "name": "#hash_73601b890c77f89c",
+            "name": "#vox_tvoi_tutor_ruin_ajax_grapple",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_73601b890c77f89c",
+                    "name": "#vox_tvoi_tutor_ruin_ajax_grapple",
                     "subtitle": "#hash_5a3cb8f5c22ef071",
                     "assetId": "#hash_2660ea4be2ad9afb",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -398,7 +398,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_73601b890c77f89c",
+                    "name": "#vox_tvoi_tutor_ruin_ajax_grapple",
                     "subtitle": "#hash_41e391e998d9913b",
                     "assetId": "#hash_2a5207766e3e249",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -445,13 +445,13 @@
         {
             "value": 14,
             "next": 47,
-            "name": "#hash_30d01d1a444a7530",
+            "name": "#vox_tvoi_tutor_ruin_ajax_miss_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_30d01d1a444a7530",
+                    "name": "#vox_tvoi_tutor_ruin_ajax_miss_nag",
                     "subtitle": "#hash_4a0a96f8d17e3367",
                     "assetId": "#hash_7cc57e7997b85127",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -493,7 +493,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_30d01d1a444a7530",
+                    "name": "#vox_tvoi_tutor_ruin_ajax_miss_nag",
                     "subtitle": "#hash_5b8c6279f172ae0e",
                     "assetId": "#hash_670db76a97c07b0a",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -535,7 +535,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_30d01d1a444a7530",
+                    "name": "#vox_tvoi_tutor_ruin_ajax_miss_nag",
                     "subtitle": "#hash_15c40c9df35380fd",
                     "assetId": "#hash_2e5af791ee00d295",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -578,7 +578,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_30d01d1a444a7530",
+                    "name": "#vox_tvoi_tutor_ruin_ajax_miss_nag",
                     "subtitle": "#hash_33f875b604b3230f",
                     "assetId": "#hash_638d3d57a140af3",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -621,7 +621,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_30d01d1a444a7530",
+                    "name": "#vox_tvoi_tutor_ruin_ajax_miss_nag",
                     "subtitle": "#hash_69b20d756f029cb4",
                     "assetId": "#hash_591a325cbffd54a0",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -667,13 +667,13 @@
         {
             "value": 7,
             "next": 65535,
-            "name": "#hash_36e56edaa1c9c2d8",
+            "name": "#vox_tvoi_tutor_ruin_ajax_slowmo",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_36e56edaa1c9c2d8",
+                    "name": "#vox_tvoi_tutor_ruin_ajax_slowmo",
                     "subtitle": "#hash_57e29cac0ee3f8b",
                     "assetId": "#hash_782b113ec1eb134f",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -719,13 +719,13 @@
         {
             "value": 22,
             "next": 44,
-            "name": "#hash_6f4e6b000c475a08",
+            "name": "#vox_tvoi_tutor_ruin_death_fall",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6f4e6b000c475a08",
+                    "name": "#vox_tvoi_tutor_ruin_death_fall",
                     "subtitle": "#hash_1be04709fc589c81",
                     "assetId": "#hash_26dda1f3b305a1f",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -768,7 +768,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6f4e6b000c475a08",
+                    "name": "#vox_tvoi_tutor_ruin_death_fall",
                     "subtitle": "#hash_917b70d3706130b",
                     "assetId": "#hash_5851948596ce4055",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -811,7 +811,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6f4e6b000c475a08",
+                    "name": "#vox_tvoi_tutor_ruin_death_fall",
                     "subtitle": "#hash_20bff170018961e8",
                     "assetId": "#hash_12ed661c1affdc62",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -853,7 +853,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6f4e6b000c475a08",
+                    "name": "#vox_tvoi_tutor_ruin_death_fall",
                     "subtitle": "#hash_17ffefae7f0035cb",
                     "assetId": "#hash_7b72b69ad112cbcd",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -895,7 +895,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6f4e6b000c475a08",
+                    "name": "#vox_tvoi_tutor_ruin_death_fall",
                     "subtitle": "#hash_78b8c1b9667610c2",
                     "assetId": "#hash_26e6449147262a78",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -1547,13 +1547,13 @@
         {
             "value": 43,
             "next": 65535,
-            "name": "#hash_4e33f0298dd7ed69",
+            "name": "#vox_tvoi_tutor_ruin_final_1_start",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4e33f0298dd7ed69",
+                    "name": "#vox_tvoi_tutor_ruin_final_1_start",
                     "subtitle": "#hash_3f1fe5104d85d48a",
                     "assetId": "#hash_37f24aca9d05202a",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -1596,7 +1596,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4e33f0298dd7ed69",
+                    "name": "#vox_tvoi_tutor_ruin_final_1_start",
                     "subtitle": "#hash_7fa54a65bfd16814",
                     "assetId": "#hash_6e58a8a4f2d22590",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -1843,13 +1843,13 @@
         {
             "value": 20,
             "next": 26,
-            "name": "#hash_7dd0ae32ca1dfdd3",
+            "name": "#vox_tvoi_tutor_ruin_final_2_score_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7dd0ae32ca1dfdd3",
+                    "name": "#vox_tvoi_tutor_ruin_final_2_score_2",
                     "subtitle": "#hash_38f07c1381fb0d24",
                     "assetId": "#hash_5d4f5f0ff3da43d8",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -1892,7 +1892,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7dd0ae32ca1dfdd3",
+                    "name": "#vox_tvoi_tutor_ruin_final_2_score_2",
                     "subtitle": "#hash_480a257891ff9b6",
                     "assetId": "#hash_953e93bde041bf6",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -2729,13 +2729,13 @@
         {
             "value": 31,
             "next": 65535,
-            "name": "#hash_44a0461092ffb316",
+            "name": "#vox_tvoi_tutor_ruin_final_3_idle_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_44a0461092ffb316",
+                    "name": "#vox_tvoi_tutor_ruin_final_3_idle_nag",
                     "subtitle": "#hash_217af8059852f93f",
                     "assetId": "#hash_5fd58f5da9756b81",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -2778,7 +2778,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_44a0461092ffb316",
+                    "name": "#vox_tvoi_tutor_ruin_final_3_idle_nag",
                     "subtitle": "#hash_5226529ceb2a6709",
                     "assetId": "#hash_7f84054e6a27cb07",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -2821,7 +2821,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_44a0461092ffb316",
+                    "name": "#vox_tvoi_tutor_ruin_final_3_idle_nag",
                     "subtitle": "#hash_1051826affcab246",
                     "assetId": "#hash_44cc846d9e48839c",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -2864,7 +2864,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_44a0461092ffb316",
+                    "name": "#vox_tvoi_tutor_ruin_final_3_idle_nag",
                     "subtitle": "#hash_41c946891793ed98",
                     "assetId": "#hash_334efdae3c09642",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -2907,7 +2907,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_44a0461092ffb316",
+                    "name": "#vox_tvoi_tutor_ruin_final_3_idle_nag",
                     "subtitle": "#hash_52c33305b2fd2eb5",
                     "assetId": "#hash_1aedbe4d0c255ab3",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -2949,7 +2949,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_44a0461092ffb316",
+                    "name": "#vox_tvoi_tutor_ruin_final_3_idle_nag",
                     "subtitle": "#hash_4fad56dcb636640c",
                     "assetId": "#hash_32af9fb5e51b7836",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -3261,13 +3261,13 @@
         {
             "value": 9,
             "next": 65535,
-            "name": "#hash_15db595c9d44e107",
+            "name": "#vox_tvoi_tutor_ruin_final_3_start",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_15db595c9d44e107",
+                    "name": "#vox_tvoi_tutor_ruin_final_3_start",
                     "subtitle": "#hash_7c4ed7dfd52bbfc0",
                     "assetId": "#hash_19e140c9a7b63304",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -3310,7 +3310,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_15db595c9d44e107",
+                    "name": "#vox_tvoi_tutor_ruin_final_3_start",
                     "subtitle": "#hash_2f0242366e2a00ba",
                     "assetId": "#hash_3826d196f4eb2d9a",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -3461,13 +3461,13 @@
         {
             "value": 6,
             "next": 65535,
-            "name": "#hash_da9bc97f42c491f",
+            "name": "#vox_tvoi_tutor_ruin_grapple_low_plat_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_da9bc97f42c491f",
+                    "name": "#vox_tvoi_tutor_ruin_grapple_low_plat_0",
                     "subtitle": "#hash_7170494e6ffe3442",
                     "assetId": "#hash_3d22be448021a28c",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -3510,7 +3510,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_da9bc97f42c491f",
+                    "name": "#vox_tvoi_tutor_ruin_grapple_low_plat_0",
                     "subtitle": "#hash_33b3a5dac025ef5c",
                     "assetId": "#hash_d17982863090a72",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -3557,13 +3557,13 @@
         {
             "value": 0,
             "next": 65535,
-            "name": "#hash_da9bb97f42c476c",
+            "name": "#vox_tvoi_tutor_ruin_grapple_low_plat_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_da9bb97f42c476c",
+                    "name": "#vox_tvoi_tutor_ruin_grapple_low_plat_1",
                     "subtitle": "#hash_179061a79c230495",
                     "assetId": "#hash_143bf36cbca3e25b",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -3609,13 +3609,13 @@
         {
             "value": 39,
             "next": 65535,
-            "name": "#hash_da9be97f42c4c85",
+            "name": "#vox_tvoi_tutor_ruin_grapple_low_plat_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_da9be97f42c4c85",
+                    "name": "#vox_tvoi_tutor_ruin_grapple_low_plat_2",
                     "subtitle": "#hash_4e6129d287ea06ac",
                     "assetId": "#hash_5a7885852a05f2be",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -3661,13 +3661,13 @@
         {
             "value": 23,
             "next": 65535,
-            "name": "#hash_da9bd97f42c4ad2",
+            "name": "#vox_tvoi_tutor_ruin_grapple_low_plat_3",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_da9bd97f42c4ad2",
+                    "name": "#vox_tvoi_tutor_ruin_grapple_low_plat_3",
                     "subtitle": "#hash_1b5afe809700b7e7",
                     "assetId": "#hash_28ab6407a6fbe375",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -3713,13 +3713,13 @@
         {
             "value": 29,
             "next": 29,
-            "name": "#hash_da9b897f42c4253",
+            "name": "#vox_tvoi_tutor_ruin_grapple_low_plat_4",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_da9b897f42c4253",
+                    "name": "#vox_tvoi_tutor_ruin_grapple_low_plat_4",
                     "subtitle": "#hash_23a6f3b3733e8d66",
                     "assetId": "#hash_3b5a5019655e8288",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -3765,13 +3765,13 @@
         {
             "value": 27,
             "next": 34,
-            "name": "#hash_5ce2ded871c29779",
+            "name": "#vox_tvoi_tutor_ruin_grapple_range_clear",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5ce2ded871c29779",
+                    "name": "#vox_tvoi_tutor_ruin_grapple_range_clear",
                     "subtitle": "#hash_443d390bb65212ca",
                     "assetId": "#hash_24eae4dd8efe447a",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -3817,13 +3817,13 @@
         {
             "value": 5,
             "next": 65535,
-            "name": "#hash_6923615495bbfbcf",
+            "name": "#vox_tvoi_tutor_ruin_grapple_range_fail_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6923615495bbfbcf",
+                    "name": "#vox_tvoi_tutor_ruin_grapple_range_fail_0",
                     "subtitle": "#hash_3576b770b5c109ca",
                     "assetId": "#hash_46f7b9047cc1e81c",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -3869,13 +3869,13 @@
         {
             "value": 30,
             "next": 65535,
-            "name": "#hash_6923605495bbfa1c",
+            "name": "#vox_tvoi_tutor_ruin_grapple_range_fail_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6923605495bbfa1c",
+                    "name": "#vox_tvoi_tutor_ruin_grapple_range_fail_1",
                     "subtitle": "#hash_53d567611104517d",
                     "assetId": "#hash_13115758a7d994eb",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -3921,13 +3921,13 @@
         {
             "value": 16,
             "next": 65535,
-            "name": "#hash_4256405c5f6bfc9e",
+            "name": "#vox_tvoi_tutor_ruin_grapple_range_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4256405c5f6bfc9e",
+                    "name": "#vox_tvoi_tutor_ruin_grapple_range_nag",
                     "subtitle": "#hash_33357a3427d924dd",
                     "assetId": "#hash_3a5cbd101e84bf19",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -3970,7 +3970,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4256405c5f6bfc9e",
+                    "name": "#vox_tvoi_tutor_ruin_grapple_range_nag",
                     "subtitle": "#hash_5669c623629952f",
                     "assetId": "#hash_4fa63243a1bd1eef",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -4013,7 +4013,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4256405c5f6bfc9e",
+                    "name": "#vox_tvoi_tutor_ruin_grapple_range_nag",
                     "subtitle": "#hash_5e94104a4b3bbf14",
                     "assetId": "#hash_4f7f4bfc5bda7774",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -4056,7 +4056,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4256405c5f6bfc9e",
+                    "name": "#vox_tvoi_tutor_ruin_grapple_range_nag",
                     "subtitle": "#hash_1cd5861385c66766",
                     "assetId": "#hash_2eeb529acdf52aca",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -4099,7 +4099,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4256405c5f6bfc9e",
+                    "name": "#vox_tvoi_tutor_ruin_grapple_range_nag",
                     "subtitle": "#hash_6ccefc38d0459347",
                     "assetId": "#hash_5218b3c8537138cb",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -4142,7 +4142,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4256405c5f6bfc9e",
+                    "name": "#vox_tvoi_tutor_ruin_grapple_range_nag",
                     "subtitle": "#hash_6121e95232c2c0c1",
                     "assetId": "#hash_5102885d43af9819",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -4185,7 +4185,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4256405c5f6bfc9e",
+                    "name": "#vox_tvoi_tutor_ruin_grapple_range_nag",
                     "subtitle": "#hash_7597d010231528ee",
                     "assetId": "#hash_4364996f76c502ae",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -4228,7 +4228,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4256405c5f6bfc9e",
+                    "name": "#vox_tvoi_tutor_ruin_grapple_range_nag",
                     "subtitle": "#hash_7b385adbb2da5710",
                     "assetId": "#hash_21fcd68f61a7a8c",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -4275,13 +4275,13 @@
         {
             "value": 19,
             "next": 42,
-            "name": "#hash_2559f228a22744de",
+            "name": "#vox_tvoi_tutor_ruin_grav_slam_first_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2559f228a22744de",
+                    "name": "#vox_tvoi_tutor_ruin_grav_slam_first_0",
                     "subtitle": "#hash_6eb7ebf4820afcd9",
                     "assetId": "#hash_3cdd183adbe874e9",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -4327,13 +4327,13 @@
         {
             "value": 44,
             "next": 65535,
-            "name": "#hash_2559f328a2274691",
+            "name": "#vox_tvoi_tutor_ruin_grav_slam_first_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2559f328a2274691",
+                    "name": "#vox_tvoi_tutor_ruin_grav_slam_first_1",
                     "subtitle": "#hash_7d333f69d30dc6a6",
                     "assetId": "#hash_63e73037f3ae5882",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -4379,13 +4379,13 @@
         {
             "value": 45,
             "next": 65535,
-            "name": "#hash_2559f028a2274178",
+            "name": "#vox_tvoi_tutor_ruin_grav_slam_first_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2559f028a2274178",
+                    "name": "#vox_tvoi_tutor_ruin_grav_slam_first_2",
                     "subtitle": "#hash_689491cf402d214b",
                     "assetId": "#hash_74f978bb9d617f1f",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -4431,13 +4431,13 @@
         {
             "value": 50,
             "next": 65535,
-            "name": "#hash_7e4f395a02d8ed35",
+            "name": "#vox_tvoi_tutor_ruin_grav_slam_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7e4f395a02d8ed35",
+                    "name": "#vox_tvoi_tutor_ruin_grav_slam_nag",
                     "subtitle": "#hash_3b2f65514d8027c2",
                     "assetId": "#hash_4db5aae783721d9e",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -4479,7 +4479,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7e4f395a02d8ed35",
+                    "name": "#vox_tvoi_tutor_ruin_grav_slam_nag",
                     "subtitle": "#hash_5a769346660a4ccb",
                     "assetId": "#hash_7a06efa856366ffb",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -4521,7 +4521,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7e4f395a02d8ed35",
+                    "name": "#vox_tvoi_tutor_ruin_grav_slam_nag",
                     "subtitle": "#hash_63369507e89378e8",
                     "assetId": "#hash_24b1d00eb2a45924",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -4564,7 +4564,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7e4f395a02d8ed35",
+                    "name": "#vox_tvoi_tutor_ruin_grav_slam_nag",
                     "subtitle": "#hash_20312da5f515ddb2",
                     "assetId": "#hash_6009aa9a636cf6fa",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -4607,7 +4607,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7e4f395a02d8ed35",
+                    "name": "#vox_tvoi_tutor_ruin_grav_slam_nag",
                     "subtitle": "#hash_5e56eaa1e362b381",
                     "assetId": "#hash_1afb2d5fead92dc9",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -4650,7 +4650,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7e4f395a02d8ed35",
+                    "name": "#vox_tvoi_tutor_ruin_grav_slam_nag",
                     "subtitle": "#hash_72816a535808c20b",
                     "assetId": "#hash_540b13f403b303df",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5141,13 +5141,13 @@
         {
             "value": 47,
             "next": 65535,
-            "name": "#hash_1c420a8cfa8d8479",
+            "name": "#vox_tvoi_tutor_ruin_slide_4_fail",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1c420a8cfa8d8479",
+                    "name": "#vox_tvoi_tutor_ruin_slide_4_fail",
                     "subtitle": "#hash_29ef97d64f1cc924",
                     "assetId": "#hash_10c453b61101c7fa",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5190,7 +5190,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_1c420a8cfa8d8479",
+                    "name": "#vox_tvoi_tutor_ruin_slide_4_fail",
                     "subtitle": "#hash_2f676ab2c53b15b6",
                     "assetId": "#hash_7043d1d7ddd9a160",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5233,7 +5233,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_1c420a8cfa8d8479",
+                    "name": "#vox_tvoi_tutor_ruin_slide_4_fail",
                     "subtitle": "#hash_2ecd9d7097b24aad",
                     "assetId": "#hash_503f40a6b14930d7",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5279,13 +5279,13 @@
         {
             "value": 4,
             "next": 65535,
-            "name": "#hash_2774943be9e5dbd9",
+            "name": "#vox_tvoi_tutor_ruin_slide_4_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2774943be9e5dbd9",
+                    "name": "#vox_tvoi_tutor_ruin_slide_4_nag",
                     "subtitle": "#hash_3a31841619759cda",
                     "assetId": "#hash_7b7cb48a41254f1a",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5327,7 +5327,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_2774943be9e5dbd9",
+                    "name": "#vox_tvoi_tutor_ruin_slide_4_nag",
                     "subtitle": "#hash_7282eabcb08b1383",
                     "assetId": "#hash_13ee5076c2b990f7",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5370,7 +5370,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_2774943be9e5dbd9",
+                    "name": "#vox_tvoi_tutor_ruin_slide_4_nag",
                     "subtitle": "#hash_6813c4d9c099f5c5",
                     "assetId": "#hash_17dfd14df0bc5b3d",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5413,7 +5413,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_2774943be9e5dbd9",
+                    "name": "#vox_tvoi_tutor_ruin_slide_4_nag",
                     "subtitle": "#hash_3a16290b5c990800",
                     "assetId": "#hash_5a456e96e5fedbb0",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5455,7 +5455,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_2774943be9e5dbd9",
+                    "name": "#vox_tvoi_tutor_ruin_slide_4_nag",
                     "subtitle": "#hash_199c752fbbe8b9f9",
                     "assetId": "#hash_1dff2af0a1613625",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5501,13 +5501,13 @@
         {
             "value": 42,
             "next": 65535,
-            "name": "#hash_3c9d4e83f2a8c9cd",
+            "name": "#vox_tvoi_tutor_ruin_slide_8_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3c9d4e83f2a8c9cd",
+                    "name": "#vox_tvoi_tutor_ruin_slide_8_nag",
                     "subtitle": "#hash_2fa87ef24e3394be",
                     "assetId": "#hash_48d311b02e285986",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5549,7 +5549,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3c9d4e83f2a8c9cd",
+                    "name": "#vox_tvoi_tutor_ruin_slide_8_nag",
                     "subtitle": "#hash_50160f219ba85d97",
                     "assetId": "#hash_3485544125e8ba03",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5591,7 +5591,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3c9d4e83f2a8c9cd",
+                    "name": "#vox_tvoi_tutor_ruin_slide_8_nag",
                     "subtitle": "#hash_193885a3212b71e4",
                     "assetId": "#hash_664ff365384895ac",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5634,7 +5634,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3c9d4e83f2a8c9cd",
+                    "name": "#vox_tvoi_tutor_ruin_slide_8_nag",
                     "subtitle": "#hash_5854c2e0b943ee76",
                     "assetId": "#hash_4ec7b1eaa57d652",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5677,7 +5677,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3c9d4e83f2a8c9cd",
+                    "name": "#vox_tvoi_tutor_ruin_slide_8_nag",
                     "subtitle": "#hash_729a60c01d3b6c6d",
                     "assetId": "#hash_3e6073122f68cc51",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5723,13 +5723,13 @@
         {
             "value": 41,
             "next": 65535,
-            "name": "#hash_1222e3a3c005f251",
+            "name": "#vox_tvoi_tutor_ruin_spawn_beacon_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1222e3a3c005f251",
+                    "name": "#vox_tvoi_tutor_ruin_spawn_beacon_0",
                     "subtitle": "#hash_56e511e45db7da30",
                     "assetId": "#hash_10b5ff7dedd8d262",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5772,7 +5772,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_1222e3a3c005f251",
+                    "name": "#vox_tvoi_tutor_ruin_spawn_beacon_0",
                     "subtitle": "#hash_7daba31cbe00f26a",
                     "assetId": "#hash_42951806eebdfff8",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5819,13 +5819,13 @@
         {
             "value": 38,
             "next": 65535,
-            "name": "#hash_1222e2a3c005f09e",
+            "name": "#vox_tvoi_tutor_ruin_spawn_beacon_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1222e2a3c005f09e",
+                    "name": "#vox_tvoi_tutor_ruin_spawn_beacon_1",
                     "subtitle": "#hash_2d058072c127375b",
                     "assetId": "#hash_6c7d9fdf63184b49",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5871,13 +5871,13 @@
         {
             "value": 3,
             "next": 65535,
-            "name": "#hash_1222e1a3c005eeeb",
+            "name": "#vox_tvoi_tutor_ruin_spawn_beacon_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1222e1a3c005eeeb",
+                    "name": "#vox_tvoi_tutor_ruin_spawn_beacon_2",
                     "subtitle": "#hash_3098577ce2cc3db6",
                     "assetId": "#hash_3364447e3b245900",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5920,7 +5920,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_1222e1a3c005eeeb",
+                    "name": "#vox_tvoi_tutor_ruin_spawn_beacon_2",
                     "subtitle": "#hash_275908b3e96cf848",
                     "assetId": "#hash_346a3da2e72de3ce",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -5967,13 +5967,13 @@
         {
             "value": 40,
             "next": 45,
-            "name": "#hash_490033933ad1f12f",
+            "name": "#vox_tvoi_tutor_ruin_spawn_beacon_first",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_490033933ad1f12f",
+                    "name": "#vox_tvoi_tutor_ruin_spawn_beacon_first",
                     "subtitle": "#hash_42ff0bb38f55457e",
                     "assetId": "#hash_1e6b9c18a9da388c",
                     "assetFileNameSustain": "#mp_silo.fj",
@@ -6019,13 +6019,13 @@
         {
             "value": 37,
             "next": 65535,
-            "name": "#hash_1bd285662c47cf8d",
+            "name": "#vox_tvoi_tutor_ruin_spawn_destroyed",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1bd285662c47cf8d",
+                    "name": "#vox_tvoi_tutor_ruin_spawn_destroyed",
                     "subtitle": "#hash_fef503cb43a5182",
                     "assetId": "#hash_35b9d2530836fae6",
                     "assetFileNameSustain": "#mp_silo.fj",

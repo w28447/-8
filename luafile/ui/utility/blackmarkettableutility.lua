@@ -705,52 +705,52 @@ CoD.BlackMarketTableUtility[0x214319EDB448F3B] = function ( f25_arg0, f25_arg1 )
 end
 
 CoD.BlackMarketTableUtility[0xAFA534398B6DC13] = {
-	[0x84D8BFDB82B4817] = {
+	outfit_dotd_exo2_bundle_ajax = {
 		entitlement = 0xC94ED95E25D8246,
 		deluxe_pack_id = "500016",
 		itemID = "421505015"
 	},
-	[0x662201FF1176B2] = {
+	outfit_dotd_exo2_bundle_battery = {
 		entitlement = 0xC94ED95E25D8246,
 		deluxe_pack_id = "500016",
 		itemID = "423463536"
 	},
-	[0x67AB528E51F4384] = {
+	outfit_dotd_exo2_bundle_crash = {
 		entitlement = 0xC94ED95E25D8246,
 		deluxe_pack_id = "500016",
 		itemID = "478843040"
 	},
-	[0x7B56714629EDC50] = {
+	outfit_dotd_exo2_bundle_firebreak = {
 		entitlement = 0xC94ED95E25D8246,
 		deluxe_pack_id = "500016",
 		itemID = "414111952"
 	},
-	[0x5B26468EF2E98B4] = {
+	outfit_dotd_exo2_bundle_nomad = {
 		entitlement = 0xC94ED95E25D8246,
 		deluxe_pack_id = "500016",
 		itemID = "477922231"
 	},
-	[0xD522FD3D8CEE3B5] = {
+	outfit_dotd_exo2_bundle_prophet = {
 		entitlement = 0xC94ED95E25D8246,
 		deluxe_pack_id = "500016",
 		itemID = "477393635"
 	},
-	[0xD6D47A6A38B7968] = {
+	outfit_dotd_exo2_bundle_recon = {
 		entitlement = 0xC94ED95E25D8246,
 		deluxe_pack_id = "500016",
 		itemID = "416135420"
 	},
-	[0xC6C1D9DD42AAE13] = {
+	outfit_dotd_exo2_bundle_ruin = {
 		entitlement = 0xC94ED95E25D8246,
 		deluxe_pack_id = "500016",
 		itemID = "484816462"
 	},
-	[0x3EFEF6CF46EC080] = {
+	outfit_dotd_exo2_bundle_seraph = {
 		entitlement = 0xC94ED95E25D8246,
 		deluxe_pack_id = "500016",
 		itemID = "414861863"
 	},
-	[0x152B311548CFC07] = {
+	outfit_dotd_exo2_bundle_torque = {
 		entitlement = 0xC94ED95E25D8246,
 		deluxe_pack_id = "500016",
 		itemID = "484699561"

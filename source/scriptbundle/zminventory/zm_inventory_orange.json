@@ -6,7 +6,7 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "image#hash_370d3d727d09cfc9"
+                            "stageimage": "image#ui_icon_inventory_zm_ora_crank"
                         }
                     ],
                     "hash_1d91eeba": 1,
@@ -17,7 +17,7 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "image#hash_370d3d727d09cfc9"
+                            "stageimage": "image#ui_icon_inventory_zm_ora_crank"
                         }
                     ],
                     "hash_1d91eeba": 1,
@@ -33,7 +33,7 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "image#hash_75ba6ae548c645ea"
+                            "stageimage": "image#ui_icon_inventory_zm_ora_zipline_handle"
                         }
                     ],
                     "hash_1d91eeba": 1,
@@ -79,7 +79,7 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "image#hash_75ba6ae548c645ea"
+                            "stageimage": "image#ui_icon_inventory_zm_ora_zipline_handle"
                         }
                     ],
                     "hash_1d91eeba": 1,
@@ -115,7 +115,7 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "image#hash_6846778bc95b7134"
+                                    "stageimage": "image#ui_icon_inventory_zm_ora_heat_pack"
                                 }
                             ],
                             "hash_1d91eeba": 1,
@@ -150,7 +150,7 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "image#hash_3ee506ee6b5facd6"
+                                    "stageimage": "image#ui_icon_inventory_zm_ora_heat_completed"
                                 }
                             ],
                             "hash_1d91eeba": 1,
@@ -395,7 +395,7 @@
         {
             "stages": [
                 {
-                    "stageimage": "image#hash_59f3b04e36880056"
+                    "stageimage": "image#ui_icon_inventory_zm_ora_blue_rock"
                 }
             ],
             "hash_1d91eeba": 1,
@@ -405,7 +405,7 @@
         {
             "stages": [
                 {
-                    "stageimage": "image#hash_7f2a2ac288c53195"
+                    "stageimage": "image#ui_icon_inventory_zm_ora_icicle_key"
                 },
                 {
                     "stageimage": "image#hash_572ca2a8d485ec18"
@@ -421,7 +421,7 @@
         {
             "stages": [
                 {
-                    "stageimage": "image#hash_272f5a351f508a7e"
+                    "stageimage": "image#ui_icon_inventory_zm_ora_frozen_spleen"
                 },
                 {
                     "stageimage": "image#hash_ab1f80d32070c33"

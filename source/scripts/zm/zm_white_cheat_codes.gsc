@@ -770,7 +770,7 @@ function club()
     
     level thread zm_white_util::function_ec34b5ee( #"vox_code_correct_rush_0" );
     exploder::exploder( "fxexp_disco_lgt" );
-    playsoundatposition( #"hash_c8d3a1557c42ab7", ( 1, 1145, -350 ) );
+    playsoundatposition( #"mus_club_code", ( 1, 1145, -350 ) );
     wait 253;
     exploder::stop_exploder( "fxexp_disco_lgt" );
     

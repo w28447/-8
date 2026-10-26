@@ -6837,13 +6837,13 @@
         {
             "value": 196,
             "next": 65535,
-            "name": "#hash_663899d42687914d",
+            "name": "#dst_car_windshield_break",
             "sequence": 0,
             "cullDistance": 1400,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_663899d42687914d",
+                    "name": "#dst_car_windshield_break",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -6882,7 +6882,7 @@
                     "unk178": "#hash_503090302"
                 },
                 {
-                    "name": "#hash_663899d42687914d",
+                    "name": "#dst_car_windshield_break",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -6921,7 +6921,7 @@
                     "unk178": "#hash_503090302"
                 },
                 {
-                    "name": "#hash_663899d42687914d",
+                    "name": "#dst_car_windshield_break",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -9229,7 +9229,7 @@
             "aliases": [
                 {
                     "name": "#dst_glass_windshield_damage",
-                    "secondaryname": "#hash_663899d42687914d",
+                    "secondaryname": "#dst_car_windshield_break",
                     "assetId": "#dst/glass/windshield/windshield_damage_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -9269,7 +9269,7 @@
                 },
                 {
                     "name": "#dst_glass_windshield_damage",
-                    "secondaryname": "#hash_663899d42687914d",
+                    "secondaryname": "#dst_car_windshield_break",
                     "assetId": "#dst/glass/windshield/windshield_damage_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -9553,13 +9553,13 @@
         {
             "value": 136,
             "next": 65535,
-            "name": "#hash_7f118ea3a4874268",
+            "name": "#dst_mp_propane_tank_fire",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7f118ea3a4874268",
+                    "name": "#dst_mp_propane_tank_fire",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
                     "assetFileNameRelease": "#mp_russianbase.all",
@@ -12104,7 +12104,7 @@
             "aliases": [
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -12145,7 +12145,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -12186,7 +12186,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -12227,7 +12227,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -12268,7 +12268,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -12309,7 +12309,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -12350,7 +12350,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -12394,13 +12394,13 @@
         {
             "value": 187,
             "next": 65535,
-            "name": "#hash_3b6983b084cfef53",
+            "name": "#dst_transformer_explo_spark",
             "sequence": 0,
             "cullDistance": 6000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
@@ -12441,7 +12441,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
@@ -12482,7 +12482,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
@@ -12523,7 +12523,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
@@ -12564,7 +12564,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
@@ -12605,7 +12605,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
@@ -12646,7 +12646,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
@@ -12687,7 +12687,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
@@ -18704,13 +18704,13 @@
         {
             "value": 94,
             "next": 189,
-            "name": "#hash_200e28bcd26bab77",
+            "name": "#exp_mp_propane_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_200e28bcd26bab77",
+                    "name": "#exp_mp_propane_flux_l",
                     "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
@@ -18755,13 +18755,13 @@
         {
             "value": 39,
             "next": 65535,
-            "name": "#hash_200e2ebcd26bb5a9",
+            "name": "#exp_mp_propane_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_200e2ebcd26bb5a9",
+                    "name": "#exp_mp_propane_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_r/flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -19102,13 +19102,13 @@
         {
             "value": 59,
             "next": 206,
-            "name": "#hash_7ac5fa6568de2461",
+            "name": "#exp_mp_propane_tank_lfe",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -19147,7 +19147,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -19186,7 +19186,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -19225,7 +19225,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -19754,13 +19754,13 @@
         {
             "value": 105,
             "next": 207,
-            "name": "#hash_456af38afaef9d77",
+            "name": "#exp_propane_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_456af38afaef9d77",
+                    "name": "#exp_propane_flux_l",
                     "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
@@ -19805,13 +19805,13 @@
         {
             "value": 132,
             "next": 208,
-            "name": "#hash_456af98afaefa7a9",
+            "name": "#exp_propane_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_456af98afaefa7a9",
+                    "name": "#exp_propane_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_r/flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -21406,13 +21406,13 @@
         {
             "value": 223,
             "next": 65535,
-            "name": "#hash_3f8d713abf4d10fe",
+            "name": "#exp_veh_lfe_no_debris",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3f8d713abf4d10fe",
+                    "name": "#exp_veh_lfe_no_debris",
                     "assetId": "#exp/vehicle/lfe/exp_veh_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -21809,14 +21809,14 @@
         {
             "value": 173,
             "next": 65535,
-            "name": "#hash_373c94e1ffb849b0",
+            "name": "#exp_veh_small_no_debris",
             "sequence": 0,
             "cullDistance": 12000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_373c94e1ffb849b0",
-                    "secondaryname": "#hash_3f8d713abf4d10fe",
+                    "name": "#exp_veh_small_no_debris",
+                    "secondaryname": "#exp_veh_lfe_no_debris",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -21856,8 +21856,8 @@
                     "unk178": "#hash_6030b0208"
                 },
                 {
-                    "name": "#hash_373c94e1ffb849b0",
-                    "secondaryname": "#hash_3f8d713abf4d10fe",
+                    "name": "#exp_veh_small_no_debris",
+                    "secondaryname": "#exp_veh_lfe_no_debris",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -21897,8 +21897,8 @@
                     "unk178": "#hash_6030b0208"
                 },
                 {
-                    "name": "#hash_373c94e1ffb849b0",
-                    "secondaryname": "#hash_3f8d713abf4d10fe",
+                    "name": "#exp_veh_small_no_debris",
+                    "secondaryname": "#exp_veh_lfe_no_debris",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -22870,13 +22870,13 @@
         {
             "value": 6,
             "next": 65535,
-            "name": "#hash_5b18895703fba823",
+            "name": "#pfx_transformer_arcs",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -22915,7 +22915,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -22954,7 +22954,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -22993,7 +22993,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -23036,13 +23036,13 @@
         {
             "value": 82,
             "next": 65535,
-            "name": "#hash_4ca3d2aaa573f1c8",
+            "name": "#pfx_transformer_sparks",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4ca3d2aaa573f1c8",
+                    "name": "#pfx_transformer_sparks",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -23081,7 +23081,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_4ca3d2aaa573f1c8",
+                    "name": "#pfx_transformer_sparks",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",
@@ -23120,7 +23120,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_4ca3d2aaa573f1c8",
+                    "name": "#pfx_transformer_sparks",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_russianbase.all",
                     "assetIdRelease": "#mp_russianbase.all",

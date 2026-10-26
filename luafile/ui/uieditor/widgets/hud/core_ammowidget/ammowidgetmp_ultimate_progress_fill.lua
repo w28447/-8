@@ -86,7 +86,7 @@ CoD.AmmoWidgetMP_Ultimate_Progress_Fill.new = function ( f1_arg0, f1_arg1, f1_ar
 	self.UltimateRadialMeterwipe3 = UltimateRadialMeterwipe3
 	
 	local UltimateRadialMeterPulse = CoD.AmmoWidgetMP_Ultimate_Progress_Pulse.new( f1_arg0, f1_arg1, 0, 0, 0, 110, 0, 0, 0, 112 )
-	UltimateRadialMeterPulse:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x8F44960BEC559BA ) )
+	UltimateRadialMeterPulse:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_clock_rft_normal" ) )
 	UltimateRadialMeterPulse:setShaderVector( 1, 0.5, 0, 0, 0 )
 	UltimateRadialMeterPulse:setShaderVector( 2, 0.5, 0, 0, 0 )
 	UltimateRadialMeterPulse:setShaderVector( 3, 0, 0, 0, 0 )

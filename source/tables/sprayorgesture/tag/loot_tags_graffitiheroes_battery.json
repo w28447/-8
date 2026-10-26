@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_graffitiheroes_battery",
+    "type": "#tag",
+    "material": "#hash_64dd63977ef0feec",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_201291a60ec8232b",
+        "icon": "image#loot_ui_icon_tags_graffitiheroes_battery",
+        "isdefault": 0
+    }
+}

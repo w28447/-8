@@ -186,7 +186,7 @@
     "hash_1877a41463bbaec6": "Complete mission to unlock Menendez.",
     "menu/fileshare_deleting": "DELETING $(fileshareRoot.currentCategoryNameSingleCaps)",
     "hash_189d868d756bb77d": "Skulker",
-    "hash_18af89f3e3e8dae8": "OBJECTIVE COMPLETE",
+    "survival_prototype/objective_complete": "OBJECTIVE COMPLETE",
     "hash_18dc8ecefebf1515": "+50% XP/KILL",
     "hash_18fc67098800a626": "Downed allies are revived faster with increased health.\nUse time: 2\nDuration: 240",
     "menu/hud_vehicle_reload": "RELOAD",

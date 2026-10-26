@@ -4,7 +4,7 @@
     "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
-    "distancecheck": "#hash_57e2b0cf7720fdb8",
+    "distancecheck": "#vox_mta1_ult_drone_out_range",
     "name": "cdp_taacom_kls_dronesquadron",
-    "timeout": "#hash_de6207be0ffe34c"
+    "timeout": "#vox_mta1_ult_drone_time_00"
 }

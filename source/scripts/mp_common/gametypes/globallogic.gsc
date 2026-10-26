@@ -1452,7 +1452,7 @@ function matchstarttimer()
                 {
                     if ( sessionmodeiswarzonegame() )
                     {
-                        player playlocalsound( #"hash_6a97a2aee9eb2f4" );
+                        player playlocalsound( #"uin_warzone_countdown_pen" );
                     }
                     else
                     {

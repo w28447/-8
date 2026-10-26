@@ -9,13 +9,13 @@
         {
             "value": 16,
             "next": 6,
-            "name": "#hash_c003161080d6e26",
+            "name": "#vox_tvoi_tutor_batt_drown_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_c003161080d6e26",
+                    "name": "#vox_tvoi_tutor_batt_drown_nag",
                     "subtitle": "#hash_463ed3a0a1d8e908",
                     "assetId": "#hash_58e552964ed3f56d",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -57,7 +57,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_c003161080d6e26",
+                    "name": "#vox_tvoi_tutor_batt_drown_nag",
                     "subtitle": "#hash_36a307186af8fca1",
                     "assetId": "#hash_73dc6607914f0798",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -99,7 +99,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_c003161080d6e26",
+                    "name": "#vox_tvoi_tutor_batt_drown_nag",
                     "subtitle": "#hash_70410eb0470f1162",
                     "assetId": "#hash_474835646986eabf",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -141,7 +141,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_c003161080d6e26",
+                    "name": "#vox_tvoi_tutor_batt_drown_nag",
                     "subtitle": "#hash_660e3ca0779c3e6b",
                     "assetId": "#hash_eff3a87caa09582",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -379,13 +379,13 @@
         {
             "value": 25,
             "next": 65535,
-            "name": "#hash_1cefb7225c27f1f5",
+            "name": "#vox_tvoi_tutor_batt_final_event_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1cefb7225c27f1f5",
+                    "name": "#vox_tvoi_tutor_batt_final_event_0",
                     "subtitle": "#hash_248e8fbca6478bbb",
                     "assetId": "#hash_3af3f87f8d7b9542",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -431,13 +431,13 @@
         {
             "value": 59,
             "next": 65535,
-            "name": "#hash_1e4ccf71b4216e7b",
+            "name": "#vox_tvoi_tutor_batt_final_streak_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1e4ccf71b4216e7b",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_0",
                     "subtitle": "#hash_353faa6fe68e0f59",
                     "assetId": "#hash_5ec965110a927944",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -480,7 +480,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_1e4ccf71b4216e7b",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_0",
                     "subtitle": "#hash_1741c578021ed373",
                     "assetId": "#hash_631607cb1fb8f1da",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -527,13 +527,13 @@
         {
             "value": 45,
             "next": 65535,
-            "name": "#hash_1e4cce71b4216cc8",
+            "name": "#vox_tvoi_tutor_batt_final_streak_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1e4cce71b4216cc8",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_1",
                     "subtitle": "#hash_43bafde53790d926",
                     "assetId": "#hash_6830a8013cd49d73",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -576,7 +576,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_1e4cce71b4216cc8",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_1",
                     "subtitle": "#hash_66f0dc1d09fba238",
                     "assetId": "#hash_3e71e1fe4896f791",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -623,13 +623,13 @@
         {
             "value": 75,
             "next": 65535,
-            "name": "#hash_1e4cd171b42171e1",
+            "name": "#vox_tvoi_tutor_batt_final_streak_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1e4cd171b42171e1",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_2",
                     "subtitle": "#hash_2f1c504aa4b033cb",
                     "assetId": "#hash_6db308a898e6d136",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -672,7 +672,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_1e4cd171b42171e1",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_2",
                     "subtitle": "#hash_1698e05d051bc57d",
                     "assetId": "#hash_65841ca0828b4fc4",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -719,13 +719,13 @@
         {
             "value": 119,
             "next": 65535,
-            "name": "#hash_1e4cd071b421702e",
+            "name": "#vox_tvoi_tutor_batt_final_streak_3",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1e4cd071b421702e",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_3",
                     "subtitle": "#hash_756ea6eb8e2f6760",
                     "assetId": "#hash_63cb9593ca87980d",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -768,7 +768,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_1e4cd071b421702e",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_3",
                     "subtitle": "#hash_5373422c9ca3261a",
                     "assetId": "#hash_7e83c19fcdf206bb",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -815,13 +815,13 @@
         {
             "value": 120,
             "next": 65535,
-            "name": "#hash_224c6765bca56be4",
+            "name": "#vox_tvoi_tutor_batt_final_streak_active_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_224c6765bca56be4",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_active_0",
                     "subtitle": "#hash_73dfbeb7a57e3da2",
                     "assetId": "#hash_1f0c4d203ab1360f",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -864,7 +864,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_224c6765bca56be4",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_active_0",
                     "subtitle": "#hash_790b2924ee28b77c",
                     "assetId": "#hash_60c3dd6ba21dac5",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -911,13 +911,13 @@
         {
             "value": 121,
             "next": 65535,
-            "name": "#hash_224c6865bca56d97",
+            "name": "#vox_tvoi_tutor_batt_final_streak_active_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_224c6865bca56d97",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_active_1",
                     "subtitle": "#hash_141785b42f4e8ff5",
                     "assetId": "#hash_4b4c5b9114dc5690",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -963,13 +963,13 @@
         {
             "value": 105,
             "next": 65535,
-            "name": "#hash_7dfd3741e740a503",
+            "name": "#vox_tvoi_tutor_batt_final_streak_dead",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7dfd3741e740a503",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_dead",
                     "subtitle": "#hash_3798794af4a32fad",
                     "assetId": "#hash_39ed07788887ac9c",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1011,7 +1011,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7dfd3741e740a503",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_dead",
                     "subtitle": "#hash_32ba73b0ac0dae24",
                     "assetId": "#hash_54f6126893b49481",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1053,7 +1053,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7dfd3741e740a503",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_dead",
                     "subtitle": "#hash_1866f4ddd8ccb3d7",
                     "assetId": "#hash_27d022c0cf5aa136",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1095,7 +1095,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7dfd3741e740a503",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_dead",
                     "subtitle": "#hash_4b1764a9a07463fe",
                     "assetId": "#hash_100e4157f66483b3",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1141,13 +1141,13 @@
         {
             "value": 66,
             "next": 65535,
-            "name": "#hash_6ca8fb135975685a",
+            "name": "#vox_tvoi_tutor_batt_final_streak_earned",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6ca8fb135975685a",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_earned",
                     "subtitle": "#hash_47ba0dcaeaea9f74",
                     "assetId": "#hash_56266bc70c47d099",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1189,7 +1189,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6ca8fb135975685a",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_earned",
                     "subtitle": "#hash_4a520cee873e8bbd",
                     "assetId": "#hash_6b48fab3499d88f4",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1232,7 +1232,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6ca8fb135975685a",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_earned",
                     "subtitle": "#hash_51db1d9d36d289cf",
                     "assetId": "#hash_430b5e40fdb7784a",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1275,7 +1275,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6ca8fb135975685a",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_earned",
                     "subtitle": "#hash_74c38521b0ed7ce",
                     "assetId": "#hash_6de2627f41344a4b",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1318,7 +1318,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6ca8fb135975685a",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_earned",
                     "subtitle": "#hash_22607c422da78c30",
                     "assetId": "#hash_652294037371e599",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1361,7 +1361,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6ca8fb135975685a",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_earned",
                     "subtitle": "#hash_3eb8ef32faafa27",
                     "assetId": "#hash_5f2e48266488142e",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1407,13 +1407,13 @@
         {
             "value": 101,
             "next": 65535,
-            "name": "#hash_bebb353e21b47f1",
+            "name": "#vox_tvoi_tutor_batt_final_streak_fail",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_bebb353e21b47f1",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_fail",
                     "subtitle": "#hash_564f7c1afd778b27",
                     "assetId": "#hash_c4bf87faa95bd6e",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1456,7 +1456,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_bebb353e21b47f1",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_fail",
                     "subtitle": "#hash_9f64d02afc03b61",
                     "assetId": "#hash_1cc57309cd52914c",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1503,13 +1503,13 @@
         {
             "value": 87,
             "next": 65535,
-            "name": "#hash_791a82dcb88e4978",
+            "name": "#vox_tvoi_tutor_batt_final_streak_half",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_791a82dcb88e4978",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_half",
                     "subtitle": "#hash_26526b68a3d3291e",
                     "assetId": "#hash_6fafa9253738f3b",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1551,7 +1551,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_791a82dcb88e4978",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_half",
                     "subtitle": "#hash_2385888063409277",
                     "assetId": "#hash_1ac982dea6e8a5de",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1593,7 +1593,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_791a82dcb88e4978",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_half",
                     "subtitle": "#hash_666772148ecc5b44",
                     "assetId": "#hash_79d027fa6ffc8209",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1635,7 +1635,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_791a82dcb88e4978",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_half",
                     "subtitle": "#hash_6b4677aed7638fcd",
                     "assetId": "#hash_5d253228574c9364",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1681,13 +1681,13 @@
         {
             "value": 33,
             "next": 13,
-            "name": "#hash_11895f57fb2ed05",
+            "name": "#vox_tvoi_tutor_batt_final_streak_incoming",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_11895f57fb2ed05",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_incoming",
                     "subtitle": "#hash_241f724746ecdfeb",
                     "assetId": "#hash_51260e3ecc5b8c2",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1730,7 +1730,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_11895f57fb2ed05",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_incoming",
                     "subtitle": "#hash_102a9a2825b4235d",
                     "assetId": "#hash_10c4a5dea765cb18",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1777,13 +1777,13 @@
         {
             "value": 94,
             "next": 12,
-            "name": "#hash_417649333d51a8d1",
+            "name": "#vox_tvoi_tutor_batt_final_streak_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_417649333d51a8d1",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_nag",
                     "subtitle": "#hash_bb671c089f3cecf",
                     "assetId": "#hash_170ca91a053d8d56",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1826,7 +1826,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_417649333d51a8d1",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_nag",
                     "subtitle": "#hash_1a947910e555e559",
                     "assetId": "#hash_4c1f8692c26170a4",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1869,7 +1869,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_417649333d51a8d1",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_nag",
                     "subtitle": "#hash_29f057d65cab4616",
                     "assetId": "#hash_4122d17468b561d3",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1912,7 +1912,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_417649333d51a8d1",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_nag",
                     "subtitle": "#hash_15ea61d74353b5e8",
                     "assetId": "#hash_6bbdcede6ac85031",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1955,7 +1955,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_417649333d51a8d1",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_nag",
                     "subtitle": "#hash_678f01fa6170f505",
                     "assetId": "#hash_1bd6286a226871bc",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -1998,7 +1998,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_417649333d51a8d1",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_nag",
                     "subtitle": "#hash_4a6ca362af598fc7",
                     "assetId": "#hash_5460b550e5c1022",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2041,7 +2041,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_417649333d51a8d1",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_nag",
                     "subtitle": "#hash_137b01c5ddd9221c",
                     "assetId": "#hash_458835bc29cf64a1",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2084,7 +2084,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_417649333d51a8d1",
+                    "name": "#vox_tvoi_tutor_batt_final_streak_nag",
                     "subtitle": "#hash_1f40fb1a55ad95de",
                     "assetId": "#hash_3f7f30a9ade25e67",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2131,13 +2131,13 @@
         {
             "value": 19,
             "next": 10,
-            "name": "#hash_70c47bde48968268",
+            "name": "#vox_tvoi_tutor_batt_semtex_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_70c47bde48968268",
+                    "name": "#vox_tvoi_tutor_batt_semtex_0",
                     "subtitle": "#hash_201558b0a094c012",
                     "assetId": "#hash_5514be5f2a542e13",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2180,7 +2180,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_70c47bde48968268",
+                    "name": "#vox_tvoi_tutor_batt_semtex_0",
                     "subtitle": "#hash_47f68ed71ef0bcac",
                     "assetId": "#hash_407d9bd74b244a71",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2227,13 +2227,13 @@
         {
             "value": 68,
             "next": 65535,
-            "name": "#hash_70c47cde4896841b",
+            "name": "#vox_tvoi_tutor_batt_semtex_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_70c47cde4896841b",
+                    "name": "#vox_tvoi_tutor_batt_semtex_1",
                     "subtitle": "#hash_74ea7252a65c62a5",
                     "assetId": "#hash_2fffea1ebc10efe4",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2276,7 +2276,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_70c47cde4896841b",
+                    "name": "#vox_tvoi_tutor_batt_semtex_1",
                     "subtitle": "#hash_79ee707956836b27",
                     "assetId": "#hash_78cf4baf2550e2ba",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2323,13 +2323,13 @@
         {
             "value": 53,
             "next": 17,
-            "name": "#hash_14876e22977a8688",
+            "name": "#vox_tvoi_tutor_batt_semtex_arc",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_14876e22977a8688",
+                    "name": "#vox_tvoi_tutor_batt_semtex_arc",
                     "subtitle": "#hash_3380d8c0b4951e32",
                     "assetId": "#hash_7682bec04691d6b3",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2375,13 +2375,13 @@
         {
             "value": 104,
             "next": 65535,
-            "name": "#hash_4a3fa914d1ccc37c",
+            "name": "#vox_tvoi_tutor_batt_semtex_cover_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4a3fa914d1ccc37c",
+                    "name": "#vox_tvoi_tutor_batt_semtex_cover_0",
                     "subtitle": "#hash_207300c16e8231ea",
                     "assetId": "#hash_283f5e1999fdc04f",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2424,7 +2424,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4a3fa914d1ccc37c",
+                    "name": "#vox_tvoi_tutor_batt_semtex_cover_0",
                     "subtitle": "#hash_22870bfc88582e34",
                     "assetId": "#hash_63890facef597c05",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2471,13 +2471,13 @@
         {
             "value": 18,
             "next": 18,
-            "name": "#hash_4a3faa14d1ccc52f",
+            "name": "#vox_tvoi_tutor_batt_semtex_cover_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4a3faa14d1ccc52f",
+                    "name": "#vox_tvoi_tutor_batt_semtex_cover_1",
                     "subtitle": "#hash_27d5e2cb19ec399d",
                     "assetId": "#hash_388c9447a3071bd0",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2520,7 +2520,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4a3faa14d1ccc52f",
+                    "name": "#vox_tvoi_tutor_batt_semtex_cover_1",
                     "subtitle": "#hash_1b3b195c119095ef",
                     "assetId": "#hash_33b3110f54aff25e",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2567,13 +2567,13 @@
         {
             "value": 17,
             "next": 24,
-            "name": "#hash_4a3fab14d1ccc6e2",
+            "name": "#vox_tvoi_tutor_batt_semtex_cover_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4a3fab14d1ccc6e2",
+                    "name": "#vox_tvoi_tutor_batt_semtex_cover_2",
                     "subtitle": "#hash_3c146365191293f4",
                     "assetId": "#hash_63cc839126feb459",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2616,7 +2616,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4a3fab14d1ccc6e2",
+                    "name": "#vox_tvoi_tutor_batt_semtex_cover_2",
                     "subtitle": "#hash_1c083591a440d106",
                     "assetId": "#hash_4de72c5db33aeb2f",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2663,13 +2663,13 @@
         {
             "value": 49,
             "next": 27,
-            "name": "#hash_5dd04af8bb689afe",
+            "name": "#vox_tvoi_tutor_batt_semtex_cover_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5dd04af8bb689afe",
+                    "name": "#vox_tvoi_tutor_batt_semtex_cover_nag",
                     "subtitle": "#hash_67825b9fbd749a6c",
                     "assetId": "#hash_29c81700c37c997d",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2712,7 +2712,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5dd04af8bb689afe",
+                    "name": "#vox_tvoi_tutor_batt_semtex_cover_nag",
                     "subtitle": "#hash_26684f7cf0ce3e6e",
                     "assetId": "#hash_3faac95fa48a072b",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2755,7 +2755,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5dd04af8bb689afe",
+                    "name": "#vox_tvoi_tutor_batt_semtex_cover_nag",
                     "subtitle": "#hash_6c9962411ec24115",
                     "assetId": "#hash_512ef6af4afb48e8",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2797,7 +2797,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5dd04af8bb689afe",
+                    "name": "#vox_tvoi_tutor_batt_semtex_cover_nag",
                     "subtitle": "#hash_7f981c6caebe1a26",
                     "assetId": "#hash_5c1d30947f7fa08f",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2840,7 +2840,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5dd04af8bb689afe",
+                    "name": "#vox_tvoi_tutor_batt_semtex_cover_nag",
                     "subtitle": "#hash_1761ccd6c2de0b38",
                     "assetId": "#hash_c484e159ca06945",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2883,7 +2883,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5dd04af8bb689afe",
+                    "name": "#vox_tvoi_tutor_batt_semtex_cover_nag",
                     "subtitle": "#hash_10c192074746611f",
                     "assetId": "#hash_2ea3a9b30495c392",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2926,7 +2926,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5dd04af8bb689afe",
+                    "name": "#vox_tvoi_tutor_batt_semtex_cover_nag",
                     "subtitle": "#hash_260ad8ea95013d29",
                     "assetId": "#hash_3ba93005cb4a98e8",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -2973,13 +2973,13 @@
         {
             "value": 9,
             "next": 65535,
-            "name": "#hash_652da27d15a2fbe3",
+            "name": "#vox_tvoi_tutor_batt_semtex_enemy_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_652da27d15a2fbe3",
+                    "name": "#vox_tvoi_tutor_batt_semtex_enemy_0",
                     "subtitle": "#hash_5abd1bca2b425d85",
                     "assetId": "#hash_16d7b310c59ce604",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3022,7 +3022,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_652da27d15a2fbe3",
+                    "name": "#vox_tvoi_tutor_batt_semtex_enemy_0",
                     "subtitle": "#hash_7a749941828ccc47",
                     "assetId": "#hash_2bd46a4bb596d89a",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3069,13 +3069,13 @@
         {
             "value": 46,
             "next": 29,
-            "name": "#hash_652da17d15a2fa30",
+            "name": "#vox_tvoi_tutor_batt_semtex_enemy_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_652da17d15a2fa30",
+                    "name": "#vox_tvoi_tutor_batt_semtex_enemy_1",
                     "subtitle": "#hash_531c461782e66672",
                     "assetId": "#hash_55a660a8c8e1d333",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3118,7 +3118,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_652da17d15a2fa30",
+                    "name": "#vox_tvoi_tutor_batt_semtex_enemy_1",
                     "subtitle": "#hash_6d1993a30fd980cc",
                     "assetId": "#hash_2fd7baea72ce0b51",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3165,13 +3165,13 @@
         {
             "value": 26,
             "next": 65535,
-            "name": "#hash_652da47d15a2ff49",
+            "name": "#vox_tvoi_tutor_batt_semtex_enemy_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_652da47d15a2ff49",
+                    "name": "#vox_tvoi_tutor_batt_semtex_enemy_2",
                     "subtitle": "#hash_4f4a4c9a6dc5a0d7",
                     "assetId": "#hash_2717011be87ce3f6",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3217,13 +3217,13 @@
         {
             "value": 62,
             "next": 65535,
-            "name": "#hash_6dd8907f24c397a9",
+            "name": "#vox_tvoi_tutor_batt_semtex_enemy_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6dd8907f24c397a9",
+                    "name": "#vox_tvoi_tutor_batt_semtex_enemy_nag",
                     "subtitle": "#hash_189d374eccbdd5fb",
                     "assetId": "#hash_1803dcd81dc5e596",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3266,7 +3266,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6dd8907f24c397a9",
+                    "name": "#vox_tvoi_tutor_batt_semtex_enemy_nag",
                     "subtitle": "#hash_6be1dfa6ca1ff9ed",
                     "assetId": "#hash_6c7719df271359e4",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3309,7 +3309,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6dd8907f24c397a9",
+                    "name": "#vox_tvoi_tutor_batt_semtex_enemy_nag",
                     "subtitle": "#hash_478d35bb72ec8272",
                     "assetId": "#hash_5563d09c6b7eaf13",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3351,7 +3351,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6dd8907f24c397a9",
+                    "name": "#vox_tvoi_tutor_batt_semtex_enemy_nag",
                     "subtitle": "#hash_40a4570567d10bf1",
                     "assetId": "#hash_bdb52145f7df5fc",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3394,7 +3394,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6dd8907f24c397a9",
+                    "name": "#vox_tvoi_tutor_batt_semtex_enemy_nag",
                     "subtitle": "#hash_2f380d8e153278bb",
                     "assetId": "#hash_21f3cc76e16f962",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3437,7 +3437,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6dd8907f24c397a9",
+                    "name": "#vox_tvoi_tutor_batt_semtex_enemy_nag",
                     "subtitle": "#hash_74672be8bc6c3458",
                     "assetId": "#hash_1edd93fc79c0cae1",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3483,13 +3483,13 @@
         {
             "value": 65,
             "next": 65535,
-            "name": "#hash_374bbcc2c0a73764",
+            "name": "#vox_tvoi_tutor_batt_semtex_enemy_success",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_374bbcc2c0a73764",
+                    "name": "#vox_tvoi_tutor_batt_semtex_enemy_success",
                     "subtitle": "#hash_452704ad019f573a",
                     "assetId": "#hash_6760b6878ccb47ff",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3535,13 +3535,13 @@
         {
             "value": 81,
             "next": 65535,
-            "name": "#hash_34021a82d739daed",
+            "name": "#vox_tvoi_tutor_batt_semtex_miss_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_34021a82d739daed",
+                    "name": "#vox_tvoi_tutor_batt_semtex_miss_nag",
                     "subtitle": "#hash_49684f139b473767",
                     "assetId": "#hash_17e03e7e6375ed32",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3584,7 +3584,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_34021a82d739daed",
+                    "name": "#vox_tvoi_tutor_batt_semtex_miss_nag",
                     "subtitle": "#hash_63a2c66272ced6a1",
                     "assetId": "#hash_3a0695465d2c95c8",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3627,7 +3627,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_34021a82d739daed",
+                    "name": "#vox_tvoi_tutor_batt_semtex_miss_nag",
                     "subtitle": "#hash_5aea1a94bb3bb20e",
                     "assetId": "#hash_647dc5263d2c3caf",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3669,7 +3669,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_34021a82d739daed",
+                    "name": "#vox_tvoi_tutor_batt_semtex_miss_nag",
                     "subtitle": "#hash_1521c4b8bd1c84fd",
                     "assetId": "#hash_1c156d6966e26608",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3712,7 +3712,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_34021a82d739daed",
+                    "name": "#vox_tvoi_tutor_batt_semtex_miss_nag",
                     "subtitle": "#hash_4808467f9c70c70f",
                     "assetId": "#hash_607167884e65d0e6",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3759,13 +3759,13 @@
         {
             "value": 76,
             "next": 31,
-            "name": "#hash_7b37d7228954ffca",
+            "name": "#vox_tvoi_tutor_batt_semtex_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7b37d7228954ffca",
+                    "name": "#vox_tvoi_tutor_batt_semtex_nag",
                     "subtitle": "#hash_652e500132682924",
                     "assetId": "#hash_9828cff7ae9aad1",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3808,7 +3808,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7b37d7228954ffca",
+                    "name": "#vox_tvoi_tutor_batt_semtex_nag",
                     "subtitle": "#hash_6256b7b3c26d75b6",
                     "assetId": "#hash_14500830d79d2917",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3851,7 +3851,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7b37d7228954ffca",
+                    "name": "#vox_tvoi_tutor_batt_semtex_nag",
                     "subtitle": "#hash_6a0c559b7afdaaad",
                     "assetId": "#hash_31720d5283c9742c",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3893,7 +3893,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7b37d7228954ffca",
+                    "name": "#vox_tvoi_tutor_batt_semtex_nag",
                     "subtitle": "#hash_7d8b40fa26cedefe",
                     "assetId": "#hash_7fa76e2e71699883",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3936,7 +3936,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7b37d7228954ffca",
+                    "name": "#vox_tvoi_tutor_batt_semtex_nag",
                     "subtitle": "#hash_2076f91763cceda0",
                     "assetId": "#hash_3857e21d5a625d61",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -3979,7 +3979,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7b37d7228954ffca",
+                    "name": "#vox_tvoi_tutor_batt_semtex_nag",
                     "subtitle": "#hash_4adad12e5f272ed7",
                     "assetId": "#hash_13f52b9d79a93806",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4022,7 +4022,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7b37d7228954ffca",
+                    "name": "#vox_tvoi_tutor_batt_semtex_nag",
                     "subtitle": "#hash_4f06e01b589998d1",
                     "assetId": "#hash_7fe9648bd9367254",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4069,13 +4069,13 @@
         {
             "value": 56,
             "next": 32,
-            "name": "#hash_56aeece2ec363494",
+            "name": "#vox_tvoi_tutor_batt_semtex_room_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_56aeece2ec363494",
+                    "name": "#vox_tvoi_tutor_batt_semtex_room_0",
                     "subtitle": "#hash_649f0ac08b96013a",
                     "assetId": "#hash_60310ecdce787b7f",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4121,13 +4121,13 @@
         {
             "value": 83,
             "next": 65535,
-            "name": "#hash_56aeede2ec363647",
+            "name": "#vox_tvoi_tutor_batt_semtex_room_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_56aeede2ec363647",
+                    "name": "#vox_tvoi_tutor_batt_semtex_room_1",
                     "subtitle": "#hash_4e4e47267c29452d",
                     "assetId": "#hash_3f46716dad537380",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4170,7 +4170,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_56aeede2ec363647",
+                    "name": "#vox_tvoi_tutor_batt_semtex_room_1",
                     "subtitle": "#hash_43eef89506144ebf",
                     "assetId": "#hash_1769a69a2a38a24e",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4217,13 +4217,13 @@
         {
             "value": 89,
             "next": 65535,
-            "name": "#hash_56aeeee2ec3637fa",
+            "name": "#vox_tvoi_tutor_batt_semtex_room_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_56aeeee2ec3637fa",
+                    "name": "#vox_tvoi_tutor_batt_semtex_room_2",
                     "subtitle": "#hash_2e37c29df5de3004",
                     "assetId": "#hash_785fccced54765c9",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4269,13 +4269,13 @@
         {
             "value": 115,
             "next": 65535,
-            "name": "#hash_581e7d390944eea6",
+            "name": "#vox_tvoi_tutor_batt_semtex_room_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_581e7d390944eea6",
+                    "name": "#vox_tvoi_tutor_batt_semtex_room_nag",
                     "subtitle": "#hash_53deaf02699a185c",
                     "assetId": "#hash_4feac468643aa2cd",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4317,7 +4317,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_581e7d390944eea6",
+                    "name": "#vox_tvoi_tutor_batt_semtex_room_nag",
                     "subtitle": "#hash_731a6dbd259d845",
                     "assetId": "#hash_7b5e525eda4e0178",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4360,7 +4360,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_581e7d390944eea6",
+                    "name": "#vox_tvoi_tutor_batt_semtex_room_nag",
                     "subtitle": "#hash_5008d46e0b36fa07",
                     "assetId": "#hash_625b7fa048cf6d6",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4403,7 +4403,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_581e7d390944eea6",
+                    "name": "#vox_tvoi_tutor_batt_semtex_room_nag",
                     "subtitle": "#hash_3ed7da959be6b556",
                     "assetId": "#hash_56e5e7ecce58311f",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4449,13 +4449,13 @@
         {
             "value": 11,
             "next": 65535,
-            "name": "#hash_fb7019d42721bca",
+            "name": "#vox_tvoi_tutor_batt_slide_2_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_fb7019d42721bca",
+                    "name": "#vox_tvoi_tutor_batt_slide_2_0",
                     "subtitle": "#hash_17f44c345b3ac160",
                     "assetId": "#hash_671b76aa949327c9",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4498,7 +4498,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_fb7019d42721bca",
+                    "name": "#vox_tvoi_tutor_batt_slide_2_0",
                     "subtitle": "#hash_3ad7e2bd3842901a",
                     "assetId": "#hash_406558dd0f2a0ddf",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4545,13 +4545,13 @@
         {
             "value": 110,
             "next": 33,
-            "name": "#hash_fb7029d42721d7d",
+            "name": "#vox_tvoi_tutor_batt_slide_2_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_fb7029d42721d7d",
+                    "name": "#vox_tvoi_tutor_batt_slide_2_1",
                     "subtitle": "#hash_51a1f59371bb8dcb",
                     "assetId": "#hash_b53d6491f53aee2",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4594,7 +4594,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_fb7029d42721d7d",
+                    "name": "#vox_tvoi_tutor_batt_slide_2_1",
                     "subtitle": "#hash_7dfd80eda0bb2f7d",
                     "assetId": "#hash_12440e6785f0d078",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4641,13 +4641,13 @@
         {
             "value": 103,
             "next": 65535,
-            "name": "#hash_52d732004d3b4bcc",
+            "name": "#vox_tvoi_tutor_batt_slide_2_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_52d732004d3b4bcc",
+                    "name": "#vox_tvoi_tutor_batt_slide_2_nag",
                     "subtitle": "#hash_787987e14eac9e7a",
                     "assetId": "#hash_1cf0be892c3d1e17",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4689,7 +4689,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_52d732004d3b4bcc",
+                    "name": "#vox_tvoi_tutor_batt_slide_2_nag",
                     "subtitle": "#hash_54dc40a993adb23",
                     "assetId": "#hash_79432efee529593a",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4732,7 +4732,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_52d732004d3b4bcc",
+                    "name": "#vox_tvoi_tutor_batt_slide_2_nag",
                     "subtitle": "#hash_5c46790772043b25",
                     "assetId": "#hash_5e7e4fe65096e2a0",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4775,7 +4775,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_52d732004d3b4bcc",
+                    "name": "#vox_tvoi_tutor_batt_slide_2_nag",
                     "subtitle": "#hash_20ed9797ea1c8b20",
                     "assetId": "#hash_77129fd58ebb1a45",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4818,7 +4818,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_52d732004d3b4bcc",
+                    "name": "#vox_tvoi_tutor_batt_slide_2_nag",
                     "subtitle": "#hash_24ba5b24e541dada",
                     "assetId": "#hash_172eb2e243dad0a3",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4865,13 +4865,13 @@
         {
             "value": 20,
             "next": 65535,
-            "name": "#hash_281160c4a36c9dd0",
+            "name": "#vox_tvoi_tutor_batt_swim_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_281160c4a36c9dd0",
+                    "name": "#vox_tvoi_tutor_batt_swim_0",
                     "subtitle": "#hash_72375bbf7be5874e",
                     "assetId": "#hash_75945633eeb133ab",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4917,13 +4917,13 @@
         {
             "value": 29,
             "next": 39,
-            "name": "#hash_281161c4a36c9f83",
+            "name": "#vox_tvoi_tutor_batt_swim_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_281161c4a36c9f83",
+                    "name": "#vox_tvoi_tutor_batt_swim_1",
                     "subtitle": "#hash_473d09450cd2bd21",
                     "assetId": "#hash_54dfefd1967ff0dc",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -4969,13 +4969,13 @@
         {
             "value": 34,
             "next": 65535,
-            "name": "#hash_4ab40574c0003197",
+            "name": "#vox_tvoi_tutor_batt_swim_comp",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4ab40574c0003197",
+                    "name": "#vox_tvoi_tutor_batt_swim_comp",
                     "subtitle": "#hash_2d1d2d5fcedd3ce1",
                     "assetId": "#hash_232a3dcd6930e020",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5021,13 +5021,13 @@
         {
             "value": 27,
             "next": 35,
-            "name": "#hash_7a2f183f7483bbe2",
+            "name": "#vox_tvoi_tutor_batt_swim_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7a2f183f7483bbe2",
+                    "name": "#vox_tvoi_tutor_batt_swim_nag",
                     "subtitle": "#hash_7585f20888699d20",
                     "assetId": "#hash_29925844954fa139",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5069,7 +5069,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7a2f183f7483bbe2",
+                    "name": "#vox_tvoi_tutor_batt_swim_nag",
                     "subtitle": "#hash_1ec3e31d2997019",
                     "assetId": "#hash_469c0c868907ab14",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5111,7 +5111,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7a2f183f7483bbe2",
+                    "name": "#vox_tvoi_tutor_batt_swim_nag",
                     "subtitle": "#hash_4d11e251ecf9b07a",
                     "assetId": "#hash_4a1fffb65376066b",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5157,13 +5157,13 @@
         {
             "value": 52,
             "next": 65535,
-            "name": "#hash_5f6e6dc213939355",
+            "name": "#vox_tvoi_tutor_batt_swim_to_marker_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5f6e6dc213939355",
+                    "name": "#vox_tvoi_tutor_batt_swim_to_marker_nag",
                     "subtitle": "#hash_31e6ddb090f76a6b",
                     "assetId": "#hash_304a3c6fff955432",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5205,7 +5205,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5f6e6dc213939355",
+                    "name": "#vox_tvoi_tutor_batt_swim_to_marker_nag",
                     "subtitle": "#hash_3c19afc0606a3d62",
                     "assetId": "#hash_7ce7c317d94ba3af",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5248,7 +5248,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5f6e6dc213939355",
+                    "name": "#vox_tvoi_tutor_batt_swim_to_marker_nag",
                     "subtitle": "#hash_5292f7221fcb323c",
                     "assetId": "#hash_4bee9d585c7e1325",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5291,7 +5291,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5f6e6dc213939355",
+                    "name": "#vox_tvoi_tutor_batt_swim_to_marker_nag",
                     "subtitle": "#hash_27ba828845428a1",
                     "assetId": "#hash_347f6b5b0301cd08",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5334,7 +5334,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5f6e6dc213939355",
+                    "name": "#vox_tvoi_tutor_batt_swim_to_marker_nag",
                     "subtitle": "#hash_5f8a677c23d050eb",
                     "assetId": "#hash_798588e8f5c24fe6",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5377,7 +5377,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5f6e6dc213939355",
+                    "name": "#vox_tvoi_tutor_batt_swim_to_marker_nag",
                     "subtitle": "#hash_121774b0bb341508",
                     "assetId": "#hash_5bf98f801df1fc9d",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5423,13 +5423,13 @@
         {
             "value": 93,
             "next": 65535,
-            "name": "#hash_6385b89e518f7792",
+            "name": "#vox_tvoi_tutor_batt_war_mach_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6385b89e518f7792",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_0",
                     "subtitle": "#hash_12e73dfb859ad2f0",
                     "assetId": "#hash_b9f71da884d0ef1",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5475,13 +5475,13 @@
         {
             "value": 50,
             "next": 65535,
-            "name": "#hash_6385b99e518f7945",
+            "name": "#vox_tvoi_tutor_batt_war_mach_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6385b99e518f7945",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_1",
                     "subtitle": "#hash_2b69368d3c4ab1b",
                     "assetId": "#hash_104c7c923b6e006a",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5524,7 +5524,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6385b99e518f7945",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_1",
                     "subtitle": "#hash_58cec21aa4e57d4d",
                     "assetId": "#hash_15c0ddd32b72ccd0",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5571,13 +5571,13 @@
         {
             "value": 51,
             "next": 65535,
-            "name": "#hash_3dc8e508b25425a5",
+            "name": "#vox_tvoi_tutor_batt_war_mach_arc_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3dc8e508b25425a5",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_arc_0",
                     "subtitle": "#hash_46190663d0b90ecf",
                     "assetId": "#hash_4e65a98c8d3d1df2",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5620,7 +5620,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3dc8e508b25425a5",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_arc_0",
                     "subtitle": "#hash_5ef19c82a2ad2559",
                     "assetId": "#hash_490e41fb597dbd88",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5667,13 +5667,13 @@
         {
             "value": 84,
             "next": 42,
-            "name": "#hash_6923d897f72b52d4",
+            "name": "#vox_tvoi_tutor_batt_war_mach_arc_comp",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6923d897f72b52d4",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_arc_comp",
                     "subtitle": "#hash_17e7c8e339defb9a",
                     "assetId": "#hash_34b72b6dab315d9f",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5716,7 +5716,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6923d897f72b52d4",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_arc_comp",
                     "subtitle": "#hash_38a6a772f58017a4",
                     "assetId": "#hash_7daa076874124fd5",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5763,13 +5763,13 @@
         {
             "value": 22,
             "next": 65535,
-            "name": "#hash_3a85e22c955daf0b",
+            "name": "#vox_tvoi_tutor_batt_war_mach_arc_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3a85e22c955daf0b",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_arc_nag",
                     "subtitle": "#hash_4d0a6a2465845bfd",
                     "assetId": "#hash_211f1e14cb272324",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5811,7 +5811,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3a85e22c955daf0b",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_arc_nag",
                     "subtitle": "#hash_20f86afbe13377b4",
                     "assetId": "#hash_17687b66035bf7c9",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5853,7 +5853,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3a85e22c955daf0b",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_arc_nag",
                     "subtitle": "#hash_150f47f43af0e67",
                     "assetId": "#hash_4a22f8ed9bf4e79e",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5896,7 +5896,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3a85e22c955daf0b",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_arc_nag",
                     "subtitle": "#hash_52150bc42d1545a1",
                     "assetId": "#hash_22f192624d07fdfc",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5943,13 +5943,13 @@
         {
             "value": 114,
             "next": 65535,
-            "name": "#hash_5b2fd295bb5869fc",
+            "name": "#vox_tvoi_tutor_batt_war_mach_area_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5b2fd295bb5869fc",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_area_0",
                     "subtitle": "#hash_6d9c92a9417bfbde",
                     "assetId": "#hash_726af1f8f20521f",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -5992,7 +5992,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5b2fd295bb5869fc",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_area_0",
                     "subtitle": "#hash_622a882463e0c0c0",
                     "assetId": "#hash_2d9ba3e0c124f855",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6039,13 +6039,13 @@
         {
             "value": 97,
             "next": 36,
-            "name": "#hash_5b2fd395bb586baf",
+            "name": "#vox_tvoi_tutor_batt_war_mach_area_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5b2fd395bb586baf",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_area_1",
                     "subtitle": "#hash_1458f7740a3db1",
                     "assetId": "#hash_79f64777b952220",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6091,13 +6091,13 @@
         {
             "value": 39,
             "next": 50,
-            "name": "#hash_5b2fd495bb586d62",
+            "name": "#vox_tvoi_tutor_batt_war_mach_area_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5b2fd495bb586d62",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_area_2",
                     "subtitle": "#hash_6a57d22eae5009d8",
                     "assetId": "#hash_4f0a4e9ecda747e9",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6143,13 +6143,13 @@
         {
             "value": 80,
             "next": 65535,
-            "name": "#hash_5b2fd595bb586f15",
+            "name": "#vox_tvoi_tutor_batt_war_mach_area_3",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5b2fd595bb586f15",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_area_3",
                     "subtitle": "#hash_58d26738109da223",
                     "assetId": "#hash_7614669be56d2b82",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6195,13 +6195,13 @@
         {
             "value": 77,
             "next": 65535,
-            "name": "#hash_73ed12cc4469c57e",
+            "name": "#vox_tvoi_tutor_batt_war_mach_area_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_73ed12cc4469c57e",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_area_nag",
                     "subtitle": "#hash_61391a801aa086d0",
                     "assetId": "#hash_4f5608b46d3d00ed",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6243,7 +6243,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_73ed12cc4469c57e",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_area_nag",
                     "subtitle": "#hash_1888cab006864cc9",
                     "assetId": "#hash_6a4d1c25afb81318",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6285,7 +6285,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_73ed12cc4469c57e",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_area_nag",
                     "subtitle": "#hash_622d358ad8349faa",
                     "assetId": "#hash_3db8eb8287eff63f",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6328,7 +6328,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_73ed12cc4469c57e",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_area_nag",
                     "subtitle": "#hash_1267ec5c8a2dbcf4",
                     "assetId": "#hash_28340b6ccf05835",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6371,7 +6371,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_73ed12cc4469c57e",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_area_nag",
                     "subtitle": "#hash_70826af96b745d13",
                     "assetId": "#hash_56ff0a5e909a102",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6417,13 +6417,13 @@
         {
             "value": 70,
             "next": 65535,
-            "name": "#hash_4e12d56aa916db41",
+            "name": "#vox_tvoi_tutor_batt_war_mach_bounce_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4e12d56aa916db41",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_bounce_0",
                     "subtitle": "#hash_33306768cf4be57f",
                     "assetId": "#hash_7fe04bd7aeab2f5e",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6466,7 +6466,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4e12d56aa916db41",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_bounce_0",
                     "subtitle": "#hash_59ee913149928f49",
                     "assetId": "#hash_5b2416fdde03abc",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6513,13 +6513,13 @@
         {
             "value": 10,
             "next": 45,
-            "name": "#hash_4e12d46aa916d98e",
+            "name": "#vox_tvoi_tutor_batt_war_mach_bounce_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4e12d46aa916d98e",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_bounce_1",
                     "subtitle": "#hash_2676dd3ade43fc84",
                     "assetId": "#hash_6c9b4432547c4b95",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6565,13 +6565,13 @@
         {
             "value": 40,
             "next": 51,
-            "name": "#hash_ac50883aac8488",
+            "name": "#vox_tvoi_tutor_batt_war_mach_bounce_comp",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_ac50883aac8488",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_bounce_comp",
                     "subtitle": "#hash_6630890b7012d22a",
                     "assetId": "#hash_398f98dfb5ea89b3",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6617,13 +6617,13 @@
         {
             "value": 21,
             "next": 54,
-            "name": "#hash_6d25f9768578adff",
+            "name": "#vox_tvoi_tutor_batt_war_mach_bounce_miss",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6d25f9768578adff",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_bounce_miss",
                     "subtitle": "#hash_1b247f568387a3c9",
                     "assetId": "#hash_effcefb69c2088",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6665,7 +6665,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6d25f9768578adff",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_bounce_miss",
                     "subtitle": "#hash_63d4cf2697a1ddd0",
                     "assetId": "#hash_286a2114d18c501d",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6707,7 +6707,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6d25f9768578adff",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_bounce_miss",
                     "subtitle": "#hash_731e1f9fe875b413",
                     "assetId": "#hash_7cbace04b32fa7b2",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6753,13 +6753,13 @@
         {
             "value": 0,
             "next": 52,
-            "name": "#hash_216720671b1b0bd8",
+            "name": "#vox_tvoi_tutor_batt_war_mach_direct_miss",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_216720671b1b0bd8",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_direct_miss",
                     "subtitle": "#hash_54d562d1f9be4d2",
                     "assetId": "#hash_6c4060e7a5c49de3",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6802,7 +6802,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_216720671b1b0bd8",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_direct_miss",
                     "subtitle": "#hash_63de8a7914bb246c",
                     "assetId": "#hash_6c18d0368693c781",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6845,7 +6845,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_216720671b1b0bd8",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_direct_miss",
                     "subtitle": "#hash_287af55556defadb",
                     "assetId": "#hash_11ccf1f962df3ee6",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6888,7 +6888,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_216720671b1b0bd8",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_direct_miss",
                     "subtitle": "#hash_35432f7096e1150d",
                     "assetId": "#hash_3ee7c659b1a4e474",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6931,7 +6931,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_216720671b1b0bd8",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_direct_miss",
                     "subtitle": "#hash_35854abb6d97cb8",
                     "assetId": "#hash_325bdf8df6f7cab1",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -6974,7 +6974,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_216720671b1b0bd8",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_direct_miss",
                     "subtitle": "#hash_240abb561c649602",
                     "assetId": "#hash_3d6db1c78a8990b7",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -7017,7 +7017,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_216720671b1b0bd8",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_direct_miss",
                     "subtitle": "#hash_4f957fc8623e5451",
                     "assetId": "#hash_33e828016ee8568c",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -7063,13 +7063,13 @@
         {
             "value": 13,
             "next": 55,
-            "name": "#hash_324ec2f3d371715e",
+            "name": "#vox_tvoi_tutor_batt_war_mach_gear_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_324ec2f3d371715e",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_gear_0",
                     "subtitle": "#hash_593239cbb51087b4",
                     "assetId": "#hash_525623aa95401f75",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -7115,13 +7115,13 @@
         {
             "value": 5,
             "next": 57,
-            "name": "#hash_324ec3f3d3717311",
+            "name": "#vox_tvoi_tutor_batt_war_mach_gear_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_324ec3f3d3717311",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_gear_1",
                     "subtitle": "#hash_472724e15e5d3af",
                     "assetId": "#hash_4234528184a2ebe",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -7167,13 +7167,13 @@
         {
             "value": 35,
             "next": 65535,
-            "name": "#hash_74ef556ec3948300",
+            "name": "#vox_tvoi_tutor_batt_war_mach_gear_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_74ef556ec3948300",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_gear_nag",
                     "subtitle": "#hash_25666007f3b5cbee",
                     "assetId": "#hash_4b32405ea39745e3",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -7216,7 +7216,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_74ef556ec3948300",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_gear_nag",
                     "subtitle": "#hash_56d7c8cbd31d7210",
                     "assetId": "#hash_3fda18fc4848af81",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -7259,7 +7259,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_74ef556ec3948300",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_gear_nag",
                     "subtitle": "#hash_1c9d8c30a0e63647",
                     "assetId": "#hash_70bed17060b1e6e6",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -7301,7 +7301,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_74ef556ec3948300",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_gear_nag",
                     "subtitle": "#hash_e62a0421bdc6214",
                     "assetId": "#hash_114dbf04f4ca72b1",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -7343,7 +7343,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_74ef556ec3948300",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_gear_nag",
                     "subtitle": "#hash_63040a2bf879c7dd",
                     "assetId": "#hash_12da07786cbafe8c",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -7389,13 +7389,13 @@
         {
             "value": 57,
             "next": 98,
-            "name": "#hash_fbb33cda7463db4",
+            "name": "#vox_tvoi_tutor_batt_war_mach_gib",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_fbb33cda7463db4",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_gib",
                     "subtitle": "#hash_45ddf0f185f54c2",
                     "assetId": "#hash_725975d1ddda7967",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -7441,13 +7441,13 @@
         {
             "value": 107,
             "next": 65535,
-            "name": "#hash_707aff02c0ababb9",
+            "name": "#vox_tvoi_tutor_batt_war_mach_gib_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_707aff02c0ababb9",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_gib_nag",
                     "subtitle": "#hash_165e4f0813054d03",
                     "assetId": "#hash_1da6f3e54cb420d6",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -7489,7 +7489,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_707aff02c0ababb9",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_gib_nag",
                     "subtitle": "#hash_5e0ce8617befd65a",
                     "assetId": "#hash_47bd1c3fb02bf553",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -7531,7 +7531,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_707aff02c0ababb9",
+                    "name": "#vox_tvoi_tutor_batt_war_mach_gib_nag",
                     "subtitle": "#hash_3d77d97b1e62f379",
                     "assetId": "#hash_2270733569df053c",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -8675,13 +8675,13 @@
         {
             "value": 96,
             "next": 65,
-            "name": "#hash_7b33a3f827ddaef1",
+            "name": "#vox_tvoi_tutor_fire_core_enemy2_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7b33a3f827ddaef1",
+                    "name": "#vox_tvoi_tutor_fire_core_enemy2_0",
                     "subtitle": "#hash_40fceb92a632c38f",
                     "assetId": "#hash_47081672449d1296",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -10231,13 +10231,13 @@
         {
             "value": 58,
             "next": 94,
-            "name": "#hash_f9b7edd1ef40353",
+            "name": "#vox_tvoi_tutor_fire_final_start",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_f9b7edd1ef40353",
+                    "name": "#vox_tvoi_tutor_fire_final_start",
                     "subtitle": "#hash_38387454475c1699",
                     "assetId": "#hash_341438135de4fefc",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -12113,13 +12113,13 @@
         {
             "value": 117,
             "next": 65535,
-            "name": "#hash_3a83ea2bf1734d85",
+            "name": "#vox_tvoi_tutor_fire_score_strafe_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3a83ea2bf1734d85",
+                    "name": "#vox_tvoi_tutor_fire_score_strafe_2",
                     "subtitle": "#hash_45192093b59e60a3",
                     "assetId": "#hash_2cec9dbbbe8fdfb2",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -12735,13 +12735,13 @@
         {
             "value": 106,
             "next": 8,
-            "name": "#hash_142d992b89233804",
+            "name": "#vox_tvoi_tutor_fire_slide_3_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_142d992b89233804",
+                    "name": "#vox_tvoi_tutor_fire_slide_3_0",
                     "subtitle": "#hash_e064b1e240510be",
                     "assetId": "#hash_1bfaf2f2ecc7e5df",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -12784,7 +12784,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_142d992b89233804",
+                    "name": "#vox_tvoi_tutor_fire_slide_3_0",
                     "subtitle": "#hash_21367cce6488e060",
                     "assetId": "#hash_15788728382ea615",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -13209,13 +13209,13 @@
         {
             "value": 86,
             "next": 65535,
-            "name": "#hash_495f012ba79c98fc",
+            "name": "#vox_tvoi_tutor_fire_slide_5_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_495f012ba79c98fc",
+                    "name": "#vox_tvoi_tutor_fire_slide_5_2",
                     "subtitle": "#hash_6e08a8b4ea370506",
                     "assetId": "#hash_2a6cab3662683f0f",
                     "assetFileNameSustain": "#mp_offshore.en",
@@ -13869,13 +13869,13 @@
         {
             "value": 3,
             "next": 65535,
-            "name": "#hash_300c7d2b9974fcb0",
+            "name": "#vox_tvoi_tutor_fire_slide_6_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_300c7d2b9974fcb0",
+                    "name": "#vox_tvoi_tutor_fire_slide_6_1",
                     "subtitle": "#hash_3dd609e80a75368a",
                     "assetId": "#hash_15431373b890186b",
                     "assetFileNameSustain": "#mp_offshore.en",

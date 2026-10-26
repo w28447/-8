@@ -26,7 +26,7 @@ CoD.ChatAutoComplete.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	NoiseBackground:setRGB( 0.92, 0.92, 0.92 )
 	NoiseBackground:setAlpha( 0.7 )
 	NoiseBackground:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	NoiseBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	NoiseBackground:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	NoiseBackground:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseBackground:setupNineSliceShader( 64, 64 )
 	self:addElement( NoiseBackground )

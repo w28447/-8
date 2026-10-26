@@ -3,6 +3,6 @@
     "widget": "BadasseryMedal",
     "name": "events_battle_shield_killstreak",
     "backinglarge": "image#hash_75692c1dbf2e3c49",
-    "iconsmall": "image#hash_776d1b4ece5247fc",
-    "iconlarge": "image#hash_776d1b4ece5247fc"
+    "iconsmall": "image#ui_icon_jobfeed_common_kill",
+    "iconlarge": "image#ui_icon_jobfeed_common_kill"
 }

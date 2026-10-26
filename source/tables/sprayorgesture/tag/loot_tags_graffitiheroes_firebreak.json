@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_graffitiheroes_firebreak",
+    "type": "#tag",
+    "material": "#hash_4a0d08f2ff3db766",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_57ee412cdd2c843d",
+        "icon": "image#loot_ui_icon_tags_graffitiheroes_firebreak",
+        "isdefault": 0
+    }
+}

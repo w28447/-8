@@ -22,7 +22,7 @@ CoD.Dropdown.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_ar
 	
 	local OptionName = LUI.UIText.new( 0, 0, 10, 313, 0.5, 0.5, -10, 8 )
 	OptionName:setRGB( ColorSet.T8__BUTTON_UNSELECTED_MAIN.r, ColorSet.T8__BUTTON_UNSELECTED_MAIN.g, ColorSet.T8__BUTTON_UNSELECTED_MAIN.b )
-	OptionName:setText( Engine[0xF9F1239CFD921FE]( 0xFB7B1C442A1FB03 ) )
+	OptionName:setText( Engine[0xF9F1239CFD921FE]( "em/bg_global" ) )
 	OptionName:setTTF( "ttmussels_regular" )
 	OptionName:setLetterSpacing( 2 )
 	OptionName:setAlignment( Enum.LUIAlignment[0x58C8A85F2048829] )

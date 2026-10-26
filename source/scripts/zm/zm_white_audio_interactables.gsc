@@ -409,8 +409,8 @@ function function_d4c6dc0d()
 {
     self.is_playing_audio = 1;
     a_e_audio_reel = getentarray( self.target2, "targetname" );
-    a_e_audio_reel[ 0 ] playsound( #"hash_3cca3c060dacc7de" );
-    a_e_audio_reel[ 0 ] playloopsound( #"hash_14cf26f9ee5a9962" );
+    a_e_audio_reel[ 0 ] playsound( #"zmb_sq_audiolog_reel_start" );
+    a_e_audio_reel[ 0 ] playloopsound( #"zmb_sq_audiolog_reel_lp" );
     
     while ( self.is_playing_audio && a_e_audio_reel.size > 0 )
     {
@@ -421,7 +421,7 @@ function function_d4c6dc0d()
     }
     
     a_e_audio_reel[ 0 ] stoploopsound( 0.5 );
-    playsoundatposition( #"hash_1f7edbf8f3a60766", self.origin );
+    playsoundatposition( #"zmb_sq_audiolog_reel_stop", self.origin );
 }
 
 // Namespace zm_white_audio_interactables/zm_white_audio_interactables
@@ -487,7 +487,7 @@ function function_1792ae3( e_item )
         
         if ( isdefined( e_item ) )
         {
-            e_item playsound( #"hash_760800881cd94dd1" );
+            e_item playsound( #"zmb_sq_audiolog_pickup" );
         }
         
         function_de798ee4();
@@ -552,7 +552,7 @@ function function_8352562a()
         self waittill( #"play_audio" );
         exploder::exploder( "fxexp_script_projector_off" );
         exploder::exploder( "fxexp_script_projector_on" );
-        level.var_94b00cff playsound( #"hash_7f70f5f71963f7f2" );
+        level.var_94b00cff playsound( #"evt_ee_reel_place" );
         
         if ( isdefined( level.var_19e44f3d ) )
         {
@@ -560,7 +560,7 @@ function function_8352562a()
             self.in_use = 1;
             s_reel.in_inventory = 0;
             function_de798ee4();
-            level.var_94b00cff playsound( #"hash_50cae5e74f332b7c" );
+            level.var_94b00cff playsound( #"zmb_sq_audiolog_projector_start" );
             
             if ( s_reel.var_46db68fd === 1 )
             {
@@ -568,7 +568,7 @@ function function_8352562a()
             }
             else
             {
-                level.var_94b00cff playloopsound( #"hash_48cebe2e9cc70ddc" );
+                level.var_94b00cff playloopsound( #"zmb_sq_audiolog_projector_lp" );
             }
             
             wait 2;
@@ -580,7 +580,7 @@ function function_8352562a()
             
             var_e578920c++;
             level.var_94b00cff stoploopsound();
-            level.var_94b00cff playsound( #"hash_1f5fc24563134758" );
+            level.var_94b00cff playsound( #"zmb_sq_audiolog_projector_stop" );
             exploder::stop_exploder( "fxexp_script_projector_on" );
             exploder::stop_exploder( "fxexp_script_projector_off" );
             

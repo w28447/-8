@@ -931,7 +931,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_49b3b429caf90a14",
+                    "value": "#amb_air_shore_side",
                     "unk1a": true
                 },
                 {
@@ -1531,7 +1531,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_57b71a2086e41207",
+                    "value": "#amb_distant_wave",
                     "unk1a": true
                 },
                 {
@@ -1603,7 +1603,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_57b71a2086e41207",
+                    "value": "#amb_distant_wave",
                     "unk1a": true
                 },
                 {
@@ -4411,7 +4411,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_7bbbced6cebf9c89",
+                    "value": "#amb_wacky_arms",
                     "unk1a": true
                 },
                 {
@@ -5491,7 +5491,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_7bbbced6cebf9c89",
+                    "value": "#amb_wacky_arms",
                     "unk1a": true
                 },
                 {
@@ -5563,7 +5563,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_7bbbced6cebf9c89",
+                    "value": "#amb_wacky_arms",
                     "unk1a": true
                 },
                 {
@@ -5629,7 +5629,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_7bbbced6cebf9c89",
+                    "value": "#amb_wacky_arms",
                     "unk1a": true
                 },
                 {
@@ -7051,7 +7051,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_62fabf1193237ea0",
+                    "value": "#amb_toilet_overflow",
                     "unk1a": true
                 }
             ]

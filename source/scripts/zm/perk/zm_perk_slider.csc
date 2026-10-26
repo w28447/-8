@@ -73,7 +73,7 @@ function function_4feff2f7( localclientnum, oldval, newval, bnewent, binitialsna
     if ( newval )
     {
         util::playfxontag( localclientnum, level._effect[ #"perk_slider_explosion" ], self, "j_spine" );
-        self playsound( localclientnum, #"hash_25343ce78e1c9c6c" );
+        self playsound( localclientnum, #"zmb_vapor_slider_explo" );
     }
 }
 

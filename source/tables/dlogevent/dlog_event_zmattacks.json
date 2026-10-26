@@ -122,7 +122,7 @@
         },
         {
             "name": "#downed",
-            "scrName": "#hash_c1095d14",
+            "scrName": "#downed",
             "type": "INT32"
         },
         {

@@ -41,7 +41,7 @@ function init()
     callback::add_callback( #"player_grapple_failed", &function_cd74cce0 );
     level flag::init( "killstreak_earned" );
     level flag::init( "mission_complete" );
-    var_88546af8 = soundgetplaybacktime( #"hash_6923615495bbfbcf" );
+    var_88546af8 = soundgetplaybacktime( #"vox_tvoi_tutor_ruin_grapple_range_fail_0" );
     level.var_53f396c6 = var_88546af8 * 0.05 / 1000;
     
     /#
@@ -77,7 +77,7 @@ function player_spawned_callback()
                     self thread ct_bots::function_fd2d220e();
                     break;
                 case 8:
-                    setdvar( #"hash_3fb2952874e511c2", #"hash_5811622173a6e63a" );
+                    setdvar( #"hash_3fb2952874e511c2", #"bare_hands_ajax_jump_ct" );
                     break;
                 default:
                     self thread ct_bots::function_aa870283( 0, 1, 1, 1 );
@@ -301,7 +301,7 @@ function function_627221cf()
     ct_utils::function_c2a10fc();
     waitframe( 1 );
     level notify( #"start_grapple_fail_door_collision" );
-    ct_vo::function_831e0584( array( #"hash_da9bc97f42c491f" ) );
+    ct_vo::function_831e0584( array( #"vox_tvoi_tutor_ruin_grapple_low_plat_0" ) );
     wait 0.1;
     ct_vo::function_3ca1b77d();
     level notify( #"start_beginning_area_collision" );
@@ -372,7 +372,7 @@ function function_bc194310()
 {
     level endon( #"combattraining_logic_finished" );
     ct_utils::function_e9ab1003();
-    level thread ct_vo::function_14b08e49( array( #"hash_4256405c5f6bfc9e" ), "stop_nag" );
+    level thread ct_vo::function_14b08e49( array( #"vox_tvoi_tutor_ruin_grapple_range_nag" ), "stop_nag" );
     ct_utils::function_e0d36a2c( #"hash_1140443e1b7ab267", "s_grapple_fail_obj", array( #"eq_gravityslam" ), 0, undefined, 35 );
     level notify( #"stop_nag" );
     ct_utils::function_e9ab1003( "s_grapple_fail_obj" );
@@ -511,7 +511,7 @@ function function_34a100e1()
     level.var_801f2e81 = 1;
     wait 0.1;
     level.var_801f2e81 = undefined;
-    level thread ct_vo::function_831e0584( array( #"hash_da9bb97f42c476c" ), 1 );
+    level thread ct_vo::function_831e0584( array( #"vox_tvoi_tutor_ruin_grapple_low_plat_1" ), 1 );
     level notify( #"stop_grapple_ledgel_exit_collision" );
 }
 
@@ -560,7 +560,7 @@ function function_af9bb307()
         {
             if ( !vo_played )
             {
-                level thread ct_vo::function_831e0584( array( #"hash_5ce2ded871c29779" ), 1 );
+                level thread ct_vo::function_831e0584( array( #"vox_tvoi_tutor_ruin_grapple_range_clear" ), 1 );
                 vo_played = 1;
             }
             
@@ -612,7 +612,7 @@ function function_8d8bad52()
         {
             if ( !var_2d3e1b92 )
             {
-                level thread ct_vo::function_831e0584( array( #"hash_6923605495bbfa1c" ) );
+                level thread ct_vo::function_831e0584( array( #"vox_tvoi_tutor_ruin_grapple_range_fail_1" ) );
                 var_2d3e1b92 = 1;
             }
             
@@ -630,7 +630,7 @@ function function_8d8bad52()
             
             if ( dt > 20 )
             {
-                level thread ct_vo::function_831e0584( array( #"hash_4256405c5f6bfc9e" ), 1 );
+                level thread ct_vo::function_831e0584( array( #"vox_tvoi_tutor_ruin_grapple_range_nag" ), 1 );
                 var_c6f9dd1f = n_time;
             }
         }
@@ -731,7 +731,7 @@ function function_acfa05d1( var_4b28bc8 )
                         }
                         
                         b_played_vo = 1;
-                        level thread ct_vo::function_831e0584( array( #"hash_5ce2ded871c29779" ), 1 );
+                        level thread ct_vo::function_831e0584( array( #"vox_tvoi_tutor_ruin_grapple_range_clear" ), 1 );
                     }
                 }
             }
@@ -751,26 +751,26 @@ function function_d08e9d7f()
     ct_utils::function_e9ab1003();
     level notify( #"start_grapple_high_ledge_collision" );
     level.var_e72728b8 = array( #"eq_gravityslam" );
-    level thread ct_vo::function_14b08e49( array( #"hash_2774943be9e5dbd9" ), "stop_nag" );
+    level thread ct_vo::function_14b08e49( array( #"vox_tvoi_tutor_ruin_slide_4_nag" ), "stop_nag" );
     ct_utils::function_93c86846( array( #"s_grapple_hook_chasm_start_1_obj" ), "s_grapple_hook_chasm_start_1_obj", array( #"eq_gravityslam" ), 0, undefined, 35 );
     level notify( #"stop_nag" );
-    level thread ct_vo::function_41e59aeb( array( #"hash_da9be97f42c4c85" ), 1 );
+    level thread ct_vo::function_41e59aeb( array( #"vox_tvoi_tutor_ruin_grapple_low_plat_2" ), 1 );
     ct_utils::function_e9ab1003( "s_grapple_hook_chasm_start_1_obj" );
-    level thread ct_vo::function_14b08e49( array( #"hash_2774943be9e5dbd9" ), "stop_nag" );
+    level thread ct_vo::function_14b08e49( array( #"vox_tvoi_tutor_ruin_slide_4_nag" ), "stop_nag" );
     ct_utils::function_93c86846( undefined, "s_grapple_hook_chasm_start_2_obj", array( #"eq_gravityslam" ), 0, undefined, 25 );
     level notify( #"stop_nag" );
     level notify( #"stop_grapple_fail_complete_collision" );
     level notify( #"start_grapple_high_ledge2_collision" );
     ct_utils::function_e9ab1003( "s_grapple_hook_chasm_start_2_obj" );
-    level thread ct_vo::function_41e59aeb( array( #"hash_da9bd97f42c4ad2" ), 1 );
-    level thread ct_vo::function_5172b052( #"hash_6f4e6b000c475a08", "stop_nag" );
+    level thread ct_vo::function_41e59aeb( array( #"vox_tvoi_tutor_ruin_grapple_low_plat_3" ), 1 );
+    level thread ct_vo::function_5172b052( #"vox_tvoi_tutor_ruin_death_fall", "stop_nag" );
     
     while ( true )
     {
         e_player = getplayers()[ 0 ];
         e_player thread ct_utils::function_61c3d59c( #"hash_1a96b4c95e637091", undefined );
         level thread function_c4629797();
-        level thread ct_vo::function_14b08e49( array( #"hash_2774943be9e5dbd9" ), "stop_nag" );
+        level thread ct_vo::function_14b08e49( array( #"vox_tvoi_tutor_ruin_slide_4_nag" ), "stop_nag" );
         s_loc = struct::get( "s_grapple_hook_chasm_end_obj", "targetname" );
         b_success = ct_utils::function_15e01238( s_loc, 150, 50, undefined, 1 );
         
@@ -839,9 +839,9 @@ function function_fecd2528()
 {
     level endon( #"combattraining_logic_finished" );
     ct_utils::function_e9ab1003( "s_grapple_hook_chasm_end_obj" );
-    ct_vo::function_831e0584( array( #"hash_2559f228a22744de" ), 1 );
+    ct_vo::function_831e0584( array( #"vox_tvoi_tutor_ruin_grav_slam_first_0" ), 1 );
     level notify( #"stop_grapple_fail_door_collision" );
-    level thread ct_vo::function_14b08e49( array( #"hash_2774943be9e5dbd9" ), "stop_nag" );
+    level thread ct_vo::function_14b08e49( array( #"vox_tvoi_tutor_ruin_slide_4_nag" ), "stop_nag" );
     ct_utils::function_e0d36a2c( undefined, "s_grav_slam_start", array( #"eq_gravityslam" ), 1, undefined, 40 );
     level notify( #"stop_nag" );
     ct_utils::function_e9ab1003( "s_grav_slam_start" );
@@ -855,19 +855,19 @@ function function_fecd2528()
     level thread ct_bots::activate_bots( level.var_7b46025.size, #"axis" );
     wait 2;
     ct_utils::function_9aca2fa0( "ct_action2" );
-    ct_vo::function_831e0584( array( #"hash_2559f328a2274691" ), 1 );
+    ct_vo::function_831e0584( array( #"vox_tvoi_tutor_ruin_grav_slam_first_1" ), 1 );
     level.var_eb5015e6 = 1;
     e_player = getplayers()[ 0 ];
     var_8e5c536e = function_8b1a219a() ? #"hash_4fb346435e061201" : #"hash_75c2aca845270377";
     e_player thread ct_utils::function_61c3d59c( var_8e5c536e, undefined );
-    level thread ct_vo::function_14b08e49( array( #"hash_7e4f395a02d8ed35" ), "grav_slam_complete" );
+    level thread ct_vo::function_14b08e49( array( #"vox_tvoi_tutor_ruin_grav_slam_nag" ), "grav_slam_complete" );
     ct_utils::function_654280be();
     level notify( #"grav_slam_complete" );
     ct_utils::function_9aca2fa0( "ct_action" );
     level.var_eb5015e6 = undefined;
     ct_utils::function_c2a10fc();
     ct_vo::function_3ca1b77d();
-    ct_vo::function_831e0584( array( #"hash_1222e3a3c005f251" ) );
+    ct_vo::function_831e0584( array( #"vox_tvoi_tutor_ruin_spawn_beacon_0" ) );
     level.var_e72728b8 = undefined;
     wait 0.1;
 }
@@ -903,12 +903,12 @@ function function_baae9a51()
     e_player = getplayers()[ 0 ];
     e_player thread ct_utils::function_61c3d59c( undefined, undefined, "dynobj_KillSpawnBeacons" );
     e_player ct_utils::ingame_objective_set_points( 2 );
-    ct_vo::function_831e0584( array( #"hash_1222e2a3c005f09e", #"hash_1222e1a3c005eeeb" ), 1 );
+    ct_vo::function_831e0584( array( #"vox_tvoi_tutor_ruin_spawn_beacon_1", #"vox_tvoi_tutor_ruin_spawn_beacon_2" ), 1 );
     level notify( #"hash_4c9c5fbc89779e64" );
     level.var_e72728b8 = undefined;
     ct_utils::function_9aca2fa0( "ct_action2" );
     e_player ct_bots::function_fd2d220e();
-    level thread ct_vo::function_14b08e49( array( #"hash_3c9d4e83f2a8c9cd" ), "stop_nag" );
+    level thread ct_vo::function_14b08e49( array( #"vox_tvoi_tutor_ruin_slide_8_nag" ), "stop_nag" );
     level thread function_96e7c232();
     var_24593a52 = 0;
     
@@ -970,7 +970,7 @@ function function_baae9a51()
         waitframe( 1 );
     }
     
-    setdvar( #"hash_3fb2952874e511c2", #"hash_5811622173a6e63a" );
+    setdvar( #"hash_3fb2952874e511c2", #"bare_hands_ajax_jump_ct" );
     e_player = getplayers()[ 0 ];
     e_player ct_bots::function_26d45f32( 1, 1, 1 );
     e_player ct_gadgets::function_b81240c1();
@@ -1003,7 +1003,7 @@ function function_96e7c232()
                 if ( e_player ct_utils::can_see( v_pos, 1 ) )
                 {
                     wait 1;
-                    ct_vo::function_831e0584( array( #"hash_490033933ad1f12f" ) );
+                    ct_vo::function_831e0584( array( #"vox_tvoi_tutor_ruin_spawn_beacon_first" ) );
                     b_vo_played = 1;
                     break;
                 }
@@ -1036,13 +1036,13 @@ function function_364de682( v_origin )
     
     if ( level.a_spawn_beacons.size == 1 )
     {
-        level thread ct_vo::function_41e59aeb( array( #"hash_1bd285662c47cf8d" ) );
+        level thread ct_vo::function_41e59aeb( array( #"vox_tvoi_tutor_ruin_spawn_destroyed" ) );
         return;
     }
     
     if ( level.a_spawn_beacons.size == 0 )
     {
-        level thread ct_vo::function_41e59aeb( array( #"hash_145cdf2b6c7929f7" ) );
+        level thread ct_vo::function_41e59aeb( array( #"vox_tvoi_tutor_ruin_ajax_0" ) );
     }
 }
 
@@ -1085,12 +1085,12 @@ function function_8678055f()
         
         if ( !( isdefined( b_restart ) && b_restart ) )
         {
-            level thread ct_vo::function_14b08e49( array( #"hash_2774943be9e5dbd9" ), "stop_nag" );
-            a_str_vo = array( #"hash_145cde2b6c792844" );
+            level thread ct_vo::function_14b08e49( array( #"vox_tvoi_tutor_ruin_slide_4_nag" ), "stop_nag" );
+            a_str_vo = array( #"vox_tvoi_tutor_ruin_ajax_1" );
             ct_utils::function_93c86846( a_str_vo, "s_grav_slam_ajax_obj", array( #"eq_gravityslam" ), undefined, undefined, 50 );
             level notify( #"start_ajax_area_door_collision" );
             level notify( #"stop_nag" );
-            ct_vo::function_831e0584( array( #"hash_145ce12b6c792d5d", #"hash_145ce02b6c792baa" ), 1 );
+            ct_vo::function_831e0584( array( #"vox_tvoi_tutor_ruin_ajax_2", #"vox_tvoi_tutor_ruin_ajax_3" ), 1 );
             ct_utils::function_e9ab1003( "s_ajax_player_respawn_loc" );
         }
         
@@ -1140,7 +1140,7 @@ function function_8678055f()
         n_slot = e_player ct_gadgets::get_slot( #"eq_gravityslam" );
         level thread ct_gadgets::function_144e61da( n_slot, "stop_grav_slam_charge" );
         var_5c76e8d = e_player gamepadusedlast() ? #"hash_69996f3f10b734ca" : #"hash_94c2bd8b788ebca";
-        e_player thread ct_utils::function_61c3d59c( var_5c76e8d, array( #"hash_73601b890c77f89c" ) );
+        e_player thread ct_utils::function_61c3d59c( var_5c76e8d, array( #"vox_tvoi_tutor_ruin_ajax_grapple" ) );
         
         if ( var_6a9e5fbd )
         {
@@ -1214,7 +1214,7 @@ function function_8678055f()
         if ( isdefined( b_timeout ) && b_timeout )
         {
             level notify( #"start_ajax_area_collision" );
-            level thread ct_vo::function_831e0584( array( #"hash_145ce02b6c792baa" ), 1 );
+            level thread ct_vo::function_831e0584( array( #"vox_tvoi_tutor_ruin_ajax_3" ), 1 );
             var_582efb48 = e_player gamepadusedlast() ? #"hash_46f0440233c88e09" : #"hash_308fca0b5c54c70f";
             ct_utils::function_a61ebb46( var_582efb48 );
             level.var_e72728b8 = array( #"eq_gravityslam" );
@@ -1226,7 +1226,7 @@ function function_8678055f()
         
         ct_utils::function_c2a10fc();
         ct_utils::function_654280be();
-        ct_vo::function_41e59aeb( array( #"hash_4e33f0298dd7ed69" ), 1 );
+        ct_vo::function_41e59aeb( array( #"vox_tvoi_tutor_ruin_final_1_start" ), 1 );
         level.var_eb5015e6 = undefined;
     }
     
@@ -1370,7 +1370,7 @@ function function_e340db61()
     ct_utils::function_e9ab1003();
     level.var_e72728b8 = undefined;
     level.fx_warlord_igc_ = 0;
-    level thread ct_vo::function_14b08e49( array( #"hash_2774943be9e5dbd9" ), "stop_nag" );
+    level thread ct_vo::function_14b08e49( array( #"vox_tvoi_tutor_ruin_slide_4_nag" ), "stop_nag" );
     e_player = ct_utils::get_player();
     e_player thread ct_utils::player_collisionbox( "s_hellstorm_start_obj", undefined, 2 );
     ct_utils::function_e0d36a2c( undefined, "s_hellstorm_start_obj", undefined, 0, undefined, 40 );
@@ -1826,7 +1826,7 @@ function function_bbdd4fa9()
         level.var_4b6a7a3a = 0;
         level.var_e891c5ba = 1;
         ct_utils::function_e44c5b8e( #"remote_missile", 0, 1 );
-        level thread ct_vo::function_14b08e49( array( #"hash_44a0461092ffb316" ), "stop_nag" );
+        level thread ct_vo::function_14b08e49( array( #"vox_tvoi_tutor_ruin_final_3_idle_nag" ), "stop_nag" );
         kills = e_player.kills;
         setdvar( #"hash_3e06b14c41136e95", 0 );
         killstreakquantity = e_player killstreaks::get_killstreak_quantity( getweapon( #"remote_missile" ) );
@@ -2168,7 +2168,7 @@ function function_63aa235()
         level.var_86085d04 = 1;
         setslowmotion( 0.1, 0.05, 0.1 );
         setpauseworld( 1 );
-        self thread ct_vo::function_831e0584( array( #"hash_6923615495bbfbcf" ) );
+        self thread ct_vo::function_831e0584( array( #"vox_tvoi_tutor_ruin_grapple_range_fail_0" ) );
         wait level.var_53f396c6;
         setpauseworld( 0 );
         setslowmotion( 0.1, 1, 0.1 );

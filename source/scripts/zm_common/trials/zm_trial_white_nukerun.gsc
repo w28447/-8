@@ -162,8 +162,8 @@ function nuke_loop()
 // Size: 0x3a0
 function function_fe74909( drop_point )
 {
-    playsoundatposition( #"hash_1fc67d7ad7445bbf", ( -521, -1972, -82 ) );
-    playsoundatposition( #"hash_1fc67c7ad7445a0c", ( -1146, -1956, -92 ) );
+    playsoundatposition( #"evt_nuke_siren_0", ( -521, -1972, -82 ) );
+    playsoundatposition( #"evt_nuke_siren_1", ( -1146, -1956, -92 ) );
     wait 3;
     level.var_dcd1e798 = getent( "perk_machine_mover", "targetname" );
     level.var_dcd1e798 useanimtree( "generic" );

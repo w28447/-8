@@ -24,7 +24,7 @@ CoD.KeyPromptBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	local TextureExtra = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TextureExtra:setAlpha( 0.01 )
 	TextureExtra:setImage( RegisterImage( 0x2672072E395DD3F ) )
-	TextureExtra:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	TextureExtra:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	TextureExtra:setShaderVector( 0, 0, 0, 0, 0 )
 	TextureExtra:setupNineSliceShader( 100, 30 )
 	self:addElement( TextureExtra )

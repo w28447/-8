@@ -53,8 +53,8 @@ function init()
         level flag::init( #"hash_477e8ec5d0789334" );
         callback::on_spawned( &function_58269323 );
         level.w_tricannon_base = getweapon( #"ww_tricannon_t8" );
-        zm_weapons::include_zombie_weapon( #"hash_41a492d8cc5893f9", 0 );
-        zm_weapons::add_zombie_weapon( #"hash_41a492d8cc5893f9", "", 0, 0, undefined, undefined, 0, "", "", 0, undefined, 0 );
+        zm_weapons::include_zombie_weapon( #"zitem_tricannon_upgrade_kit", 0 );
+        zm_weapons::add_zombie_weapon( #"zitem_tricannon_upgrade_kit", "", 0, 0, undefined, undefined, 0, "", "", 0, undefined, 0 );
         level.n_kill_count = 0;
         level.var_3a67ac0e = array( #"hash_10d96c6e67b7604d", #"p7_compass_vintage", #"p7_world_globe_vintage_01", #"p7_ra2_tool_vintage_pincer_02", #"p7_zm_ori_scope_vintage" );
         level.var_b26f906a = array( #"hash_6750f91495cec97a", #"hash_5cfcc1e6699e46b6", #"hash_6e6d2b3030f3d6c6", #"hash_6382fc1f3035ccb0", #"hash_76274c14299e46ca" );
@@ -235,7 +235,7 @@ function private function_ca409b53()
     level.var_86d6efbf rotate( ( 0, 360, 0 ) );
     wait 15;
     level.var_86d6efbf zm_powerups::hide_and_show( &ghost, &show );
-    level.var_86d6efbf playsound( #"hash_5a2daa895f64b2e2" );
+    level.var_86d6efbf playsound( #"zmb_triquest_key_timeout" );
     level.var_85a8dbba delete();
     level.var_86d6efbf delete();
     level notify( #"stoker_key_timed_out" );
@@ -279,7 +279,7 @@ function private step_2_cleanup( var_a276c861, var_19e802fa )
     }
     
     level.var_f9f50915.mdl_chest thread scene::play( #"p8_fxanim_zm_zod_kraken_chest_bundle", "open", level.var_f9f50915.mdl_chest );
-    level.var_f9f50915.mdl_chest playsound( #"hash_6fa6fc673cdcf645" );
+    level.var_f9f50915.mdl_chest playsound( #"zmb_triquest_chest_unlock" );
     level.var_f9f50915.mdl_chest playloopsound( #"zmb_triquest_chest_loop", 2 );
     level flag::set( #"hash_635fa9d7a8be6607" );
 }
@@ -316,7 +316,7 @@ function private step_3_setup( var_a276c861 )
                 level.var_f9f50915 = level.a_s_chests[ level.var_e083ecbd ];
                 level.var_f9f50915 show_chest();
                 level.var_f9f50915.mdl_chest thread scene::play( #"p8_fxanim_zm_zod_kraken_chest_bundle", "open", level.var_f9f50915.mdl_chest );
-                level.var_f9f50915.mdl_chest playsound( #"hash_6fa6fc673cdcf645" );
+                level.var_f9f50915.mdl_chest playsound( #"zmb_triquest_chest_unlock" );
                 level.var_f9f50915.mdl_chest playloopsound( #"zmb_triquest_chest_loop", 2 );
                 
                 /#
@@ -545,8 +545,8 @@ function private spawn_tricannon( a_ents )
         mdl_tricannon = a_ents[ #"kraken_weapon_drop" ];
         mdl_tricannon clientfield::set( "" + #"despawn_fx", 1 );
         mdl_tricannon waittill( #"kraken_dropped" );
-        mdl_tricannon playsound( #"hash_70efc268d0becb47" );
-        mdl_tricannon playloopsound( #"hash_61486fb02b77eed8", 2 );
+        mdl_tricannon playsound( #"zmb_triquest_tricannon_appear" );
+        mdl_tricannon playloopsound( #"zmb_triquest_tricannon_loop", 2 );
         s_unitrigger = level.var_f3abf34a zm_unitrigger::create( &function_10d4ff8d, ( 64, 64, 72 ), &function_e0fe80db );
         level waittill( #"hash_2889330d50a4cc38" );
         exploder::stop_exploder( level.var_f3abf34a.str_exploder );

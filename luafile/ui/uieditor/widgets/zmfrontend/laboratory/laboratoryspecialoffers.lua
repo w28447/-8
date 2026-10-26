@@ -82,7 +82,7 @@ CoD.LaboratorySpecialOffers.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	StoneTiledBacking:setRGB( 0.83, 0.11, 0.01 )
 	StoneTiledBacking:setAlpha( 0 )
 	StoneTiledBacking:setImage( RegisterImage( "uie_ui_zm_laboratory_buttonbgtile" ) )
-	StoneTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	StoneTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	StoneTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	StoneTiledBacking:setupNineSliceShader( 196, 88 )
 	self:addElement( StoneTiledBacking )

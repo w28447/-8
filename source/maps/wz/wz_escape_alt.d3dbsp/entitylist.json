@@ -6512,7 +6512,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_12c454ce7caf69e3",
+                    "value": "#amb_outdoor_quad_thunder",
                     "unk1a": true
                 },
                 {
@@ -8396,7 +8396,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5895e40634201f13",
+                    "value": "#amb_quad_lab",
                     "unk1a": true
                 },
                 {

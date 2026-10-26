@@ -396,7 +396,7 @@ function function_4b28fc8c( entity )
         headproj waittill( #"movedone" );
     }
     
-    self playsound( #"hash_62894125ab280b62" );
+    self playsound( #"zmb_ai_hellephant_head_attack_split" );
     self notify( #"head_launch_done" );
     
     if ( isdefined( entity.ai.var_502d9d0d ) )

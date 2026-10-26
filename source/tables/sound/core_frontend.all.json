@@ -16,7 +16,7 @@
             "aliases": [
                 {
                     "name": "#hash_46f43a1427a4594f",
-                    "secondaryname": "#hash_476e653b79dbc3e8",
+                    "secondaryname": "#amb_wind_calm_very_still",
                     "assetId": "#hash_a8e1f8d71acd7bc",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -108,13 +108,13 @@
         {
             "value": 123,
             "next": 65535,
-            "name": "#hash_476e653b79dbc3e8",
+            "name": "#amb_wind_calm_very_still",
             "sequence": 0,
             "cullDistance": 1100,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_476e653b79dbc3e8",
+                    "name": "#amb_wind_calm_very_still",
                     "assetId": "#hash_d89c3247a107a1a",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -372,13 +372,13 @@
         {
             "value": 110,
             "next": 4,
-            "name": "#hash_e9da0a08b5a31cb",
+            "name": "#bik_core_frontend_ar_accurate_sig_03",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_e9da0a08b5a31cb",
+                    "name": "#bik_core_frontend_ar_accurate_sig_03",
                     "assetId": "#hash_501a61d9c2f4075d",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -421,13 +421,13 @@
         {
             "value": 250,
             "next": 37,
-            "name": "#hash_4a843a585a3cdf9e",
+            "name": "#bik_core_frontend_ar_accurate_treasure_vault",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4a843a585a3cdf9e",
+                    "name": "#bik_core_frontend_ar_accurate_treasure_vault",
                     "assetId": "#bik/wz/itemshop/tu18/mtx_tu17_treasure_camo.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -519,13 +519,13 @@
         {
             "value": 127,
             "next": 65535,
-            "name": "#hash_366225cec337b80d",
+            "name": "#bik_core_frontend_ar_damage_sig_02",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_366225cec337b80d",
+                    "name": "#bik_core_frontend_ar_damage_sig_02",
                     "assetId": "#hash_435827a768beb314",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -666,13 +666,13 @@
         {
             "value": 212,
             "next": 65535,
-            "name": "#hash_6941d26500872020",
+            "name": "#bik_core_frontend_ar_modular_mk2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6941d26500872020",
+                    "name": "#bik_core_frontend_ar_modular_mk2",
                     "assetId": "#hash_163e1444006f94d2",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -715,13 +715,13 @@
         {
             "value": 221,
             "next": 36,
-            "name": "#hash_1df7c51f1aa66335",
+            "name": "#bik_core_frontend_ar_modular_sig_03",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1df7c51f1aa66335",
+                    "name": "#bik_core_frontend_ar_modular_sig_03",
                     "assetId": "#hash_2f33746ac78ee471",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -911,13 +911,13 @@
         {
             "value": 169,
             "next": 65535,
-            "name": "#hash_6546f56c5f5bc1a2",
+            "name": "#bik_core_frontend_lmg_heavy_sig_02",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6546f56c5f5bc1a2",
+                    "name": "#bik_core_frontend_lmg_heavy_sig_02",
                     "assetId": "#hash_686f1d1a69232760",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -1205,13 +1205,13 @@
         {
             "value": 31,
             "next": 20,
-            "name": "#hash_781d1513b8704ffb",
+            "name": "#bik_core_frontend_melee_polynesian_club",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_781d1513b8704ffb",
+                    "name": "#bik_core_frontend_melee_polynesian_club",
                     "assetId": "#bik/wz/specialist/tu16/mtx_tu16_nifooti.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -1254,13 +1254,13 @@
         {
             "value": 236,
             "next": 65535,
-            "name": "#hash_3afce83c64fba0a1",
+            "name": "#bik_core_frontend_melee_rising_tide",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3afce83c64fba0a1",
+                    "name": "#bik_core_frontend_melee_rising_tide",
                     "assetId": "#bik/wz/itemshop/tu18/mtx_tu17_risingtide_cutlass.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -1745,13 +1745,13 @@
         {
             "value": 275,
             "next": 65535,
-            "name": "#hash_32fc56a9eada48a1",
+            "name": "#bik_core_frontend_shotgun_pump_police",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_32fc56a9eada48a1",
+                    "name": "#bik_core_frontend_shotgun_pump_police",
                     "assetId": "#bik/wz/core_frontend/core_frontend_shotgun_pump_police.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -1794,13 +1794,13 @@
         {
             "value": 134,
             "next": 65535,
-            "name": "#hash_18615f71af505465",
+            "name": "#bik_core_frontend_shotgun_semiauto_nebula",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_18615f71af505465",
+                    "name": "#bik_core_frontend_shotgun_semiauto_nebula",
                     "assetId": "#bik/wz/specialist/tu16/mtx_tu16_nebula.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -1892,13 +1892,13 @@
         {
             "value": 271,
             "next": 65535,
-            "name": "#hash_46e0d3b8d4328bbf",
+            "name": "#bik_core_frontend_smg_accurate_sig_03",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_46e0d3b8d4328bbf",
+                    "name": "#bik_core_frontend_smg_accurate_sig_03",
                     "assetId": "#hash_4d66b4f26495329b",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -1990,13 +1990,13 @@
         {
             "value": 276,
             "next": 43,
-            "name": "#hash_28d2b80804f63e6d",
+            "name": "#bik_core_frontend_smg_capacity_spaceshuttle",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_28d2b80804f63e6d",
+                    "name": "#bik_core_frontend_smg_capacity_spaceshuttle",
                     "assetId": "#bik/wz/core_frontend/core_frontend_smg_capacity_spaceshuttle.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -2088,13 +2088,13 @@
         {
             "value": 280,
             "next": 65535,
-            "name": "#hash_31e24dd481b9f802",
+            "name": "#bik_core_frontend_smg_fastfire_deep_voyage",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_31e24dd481b9f802",
+                    "name": "#bik_core_frontend_smg_fastfire_deep_voyage",
                     "assetId": "#bik/wz/itemshop/tu18/mtx_tu17_voyage_spitfire_deep.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -2186,13 +2186,13 @@
         {
             "value": 158,
             "next": 65535,
-            "name": "#hash_5e186b07bfc76bf1",
+            "name": "#bik_core_frontend_smg_handling_party_rock",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5e186b07bfc76bf1",
+                    "name": "#bik_core_frontend_smg_handling_party_rock",
                     "assetId": "#bik/wz/core_frontend/core_frontend_smg_handling_party_rock.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -2372,13 +2372,13 @@
         {
             "value": 38,
             "next": 65535,
-            "name": "#hash_4585ca676d22e8ac",
+            "name": "#bik_core_frontend_sniper_powerbolt_mk2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4585ca676d22e8ac",
+                    "name": "#bik_core_frontend_sniper_powerbolt_mk2",
                     "assetId": "#hash_9f160c012fb354a",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -2519,13 +2519,13 @@
         {
             "value": 11,
             "next": 47,
-            "name": "#hash_1af5ca3dd696f349",
+            "name": "#bik_core_frontend_sniper_quickscope_sig_02",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1af5ca3dd696f349",
+                    "name": "#bik_core_frontend_sniper_quickscope_sig_02",
                     "assetId": "#hash_14a71e53344e1e5b",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -2617,13 +2617,13 @@
         {
             "value": 84,
             "next": 51,
-            "name": "#hash_66e96ca3a6cc1663",
+            "name": "#bik_core_frontend_tr_longburst_ahabs_revenge",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_66e96ca3a6cc1663",
+                    "name": "#bik_core_frontend_tr_longburst_ahabs_revenge",
                     "assetId": "#bik/wz/itemshop/tu18/mtx_tu17_scrimshaw_ahab.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -2666,13 +2666,13 @@
         {
             "value": 219,
             "next": 65535,
-            "name": "#hash_63e38e9c42d2739d",
+            "name": "#bik_core_frontend_tr_longburst_zombie_flick",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_63e38e9c42d2739d",
+                    "name": "#bik_core_frontend_tr_longburst_zombie_flick",
                     "assetId": "#bik/wz/core_frontend/core_frontend_tr_longburst_zombie_flick.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -2764,13 +2764,13 @@
         {
             "value": 262,
             "next": 57,
-            "name": "#hash_7da3a0f9ef9e7fd3",
+            "name": "#bik_core_frontend_tr_midburst_mk2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7da3a0f9ef9e7fd3",
+                    "name": "#bik_core_frontend_tr_midburst_mk2",
                     "assetId": "#hash_2d3199980b1e5820",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -2813,13 +2813,13 @@
         {
             "value": 15,
             "next": 52,
-            "name": "#hash_3306b68c10b9e5ba",
+            "name": "#bik_core_frontend_tr_powersemi_rustymech",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3306b68c10b9e5ba",
+                    "name": "#bik_core_frontend_tr_powersemi_rustymech",
                     "assetId": "#bik/wz/core_frontend/core_frontend_tr_powersemi_rustymech.sl100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -2862,13 +2862,13 @@
         {
             "value": 35,
             "next": 65535,
-            "name": "#hash_332e028ddc2f5427",
+            "name": "#bik_core_frontend_weaponized_115",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_332e028ddc2f5427",
+                    "name": "#bik_core_frontend_weaponized_115",
                     "secondaryname": "#hash_44e850b9e1dfad5e",
                     "assetId": "#hash_4e6261754d8c5c49",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -7049,13 +7049,13 @@
         {
             "value": 52,
             "next": 66,
-            "name": "#hash_3e1e95a35dedc6bc",
+            "name": "#evt_mach_startup",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3e1e95a35dedc6bc",
+                    "name": "#evt_mach_startup",
                     "assetId": "#zmb\elixir_lab\machine_startup.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7098,13 +7098,13 @@
         {
             "value": 224,
             "next": 65535,
-            "name": "#hash_7ca34384c7d609e0",
+            "name": "#evt_magnesium_flash",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7ca34384c7d609e0",
+                    "name": "#evt_magnesium_flash",
                     "assetId": "#hash_3425a8e8ad9b5c77",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7294,14 +7294,14 @@
         {
             "value": 211,
             "next": 65535,
-            "name": "#hash_683405fd781dc83e",
+            "name": "#evt_mixer_lock_tone_cmn",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_683405fd781dc83e",
-                    "secondaryname": "#hash_2b64f1fd559f5fb1",
+                    "name": "#evt_mixer_lock_tone_cmn",
+                    "secondaryname": "#evt_mixer_lock_tone_lfe",
                     "assetId": "#zmb\elixir_lab\mixer_tone_1.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7345,14 +7345,14 @@
         {
             "value": 226,
             "next": 65535,
-            "name": "#hash_43d533c519911075",
+            "name": "#evt_mixer_lock_tone_epic",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_43d533c519911075",
-                    "secondaryname": "#hash_2b64f1fd559f5fb1",
+                    "name": "#evt_mixer_lock_tone_epic",
+                    "secondaryname": "#evt_mixer_lock_tone_lfe",
                     "assetId": "#zmb\elixir_lab\mixer_tone_4.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7396,14 +7396,14 @@
         {
             "value": 177,
             "next": 65535,
-            "name": "#hash_7d63a29bb98b58c9",
+            "name": "#evt_mixer_lock_tone_legend",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7d63a29bb98b58c9",
-                    "secondaryname": "#hash_2b64f1fd559f5fb1",
+                    "name": "#evt_mixer_lock_tone_legend",
+                    "secondaryname": "#evt_mixer_lock_tone_lfe",
                     "assetId": "#zmb\elixir_lab\mixer_tone_3.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7447,13 +7447,13 @@
         {
             "value": 7,
             "next": 120,
-            "name": "#hash_2b64f1fd559f5fb1",
+            "name": "#evt_mixer_lock_tone_lfe",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2b64f1fd559f5fb1",
+                    "name": "#evt_mixer_lock_tone_lfe",
                     "assetId": "#zmb\elixir_lab\mixer_tone_lfe.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7497,14 +7497,14 @@
         {
             "value": 179,
             "next": 65535,
-            "name": "#hash_366014252eab0858",
+            "name": "#evt_mixer_lock_tone_rare",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_366014252eab0858",
-                    "secondaryname": "#hash_2b64f1fd559f5fb1",
+                    "name": "#evt_mixer_lock_tone_rare",
+                    "secondaryname": "#evt_mixer_lock_tone_lfe",
                     "assetId": "#zmb/elixir_lab/mixer_tone_2.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7548,14 +7548,14 @@
         {
             "value": 3,
             "next": 126,
-            "name": "#hash_5467a5b27e7e27b2",
+            "name": "#evt_mixer_lock_tone_ultra",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5467a5b27e7e27b2",
-                    "secondaryname": "#hash_2b64f1fd559f5fb1",
+                    "name": "#evt_mixer_lock_tone_ultra",
+                    "secondaryname": "#evt_mixer_lock_tone_lfe",
                     "assetId": "#zmb\elixir_lab\mixer_tone_5.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7599,13 +7599,13 @@
         {
             "value": 12,
             "next": 119,
-            "name": "#hash_3029d865c30e9ec2",
+            "name": "#evt_mixer_spin_lp",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3029d865c30e9ec2",
+                    "name": "#evt_mixer_spin_lp",
                     "assetId": "#hash_48849074ca84c3d7",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7648,14 +7648,14 @@
         {
             "value": 108,
             "next": 65535,
-            "name": "#hash_68a4f50ebbf1e655",
+            "name": "#evt_mixer_spin_rattle_lp",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_68a4f50ebbf1e655",
-                    "secondaryname": "#hash_4785bc068ca934af",
+                    "name": "#evt_mixer_spin_rattle_lp",
+                    "secondaryname": "#evt_mixer_spin_steam_lp",
                     "assetId": "#hash_1fce3a029d4780a6",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7698,13 +7698,13 @@
         {
             "value": 116,
             "next": 65535,
-            "name": "#hash_4785bc068ca934af",
+            "name": "#evt_mixer_spin_steam_lp",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4785bc068ca934af",
+                    "name": "#evt_mixer_spin_steam_lp",
                     "assetId": "#hash_3ebf29b6e5039fa3",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7747,13 +7747,13 @@
         {
             "value": 139,
             "next": 65535,
-            "name": "#hash_74901c89bb9fb0d6",
+            "name": "#evt_presser_close_1",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_74901c89bb9fb0d6",
+                    "name": "#evt_presser_close_1",
                     "assetId": "#hash_12eb29f5ecd4ba88",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7796,13 +7796,13 @@
         {
             "value": 41,
             "next": 65535,
-            "name": "#hash_74901b89bb9faf23",
+            "name": "#evt_presser_close_2",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_74901b89bb9faf23",
+                    "name": "#evt_presser_close_2",
                     "assetId": "#hash_263a9e0897536a4f",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7845,13 +7845,13 @@
         {
             "value": 6,
             "next": 133,
-            "name": "#hash_4847b14f228892aa",
+            "name": "#evt_presser_open_1",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4847b14f228892aa",
+                    "name": "#evt_presser_open_1",
                     "assetId": "#hash_fa2bbbc10aa0bfa",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7894,13 +7894,13 @@
         {
             "value": 135,
             "next": 115,
-            "name": "#hash_4847b04f228890f7",
+            "name": "#evt_presser_open_2",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4847b04f228890f7",
+                    "name": "#evt_presser_open_2",
                     "assetId": "#hash_304cd789c850fca5",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -7943,13 +7943,13 @@
         {
             "value": 259,
             "next": 65535,
-            "name": "#hash_5f75cf36d3230eb3",
+            "name": "#evt_presser_slide_back",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5f75cf36d3230eb3",
+                    "name": "#evt_presser_slide_back",
                     "assetId": "#hash_3c647319123c325a",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8048,7 +8048,7 @@
             "aliases": [
                 {
                     "name": "#evt_show_talisman_cmn",
-                    "secondaryname": "#hash_28203a9582d51169",
+                    "secondaryname": "#evt_show_talisman_stinger",
                     "assetId": "#uin/2k18/zmb_cac/zmb_talis_cmn.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8098,7 +8098,7 @@
             "aliases": [
                 {
                     "name": "#evt_show_talisman_epic",
-                    "secondaryname": "#hash_28203a9582d51169",
+                    "secondaryname": "#evt_show_talisman_stinger",
                     "assetId": "#uin/2k18/zmb_cac/zmb_talis_epic.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8148,7 +8148,7 @@
             "aliases": [
                 {
                     "name": "#evt_show_talisman_legend",
-                    "secondaryname": "#hash_28203a9582d51169",
+                    "secondaryname": "#evt_show_talisman_stinger",
                     "assetId": "#uin/2k18/zmb_cac/zmb_talis_legend.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8198,7 +8198,7 @@
             "aliases": [
                 {
                     "name": "#evt_show_talisman_rare",
-                    "secondaryname": "#hash_28203a9582d51169",
+                    "secondaryname": "#evt_show_talisman_stinger",
                     "assetId": "#uin/2k18/zmb_cac/zmb_talis_rare.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8241,13 +8241,13 @@
         {
             "value": 266,
             "next": 65535,
-            "name": "#hash_28203a9582d51169",
+            "name": "#evt_show_talisman_stinger",
             "sequence": 0,
             "cullDistance": 11000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_28203a9582d51169",
+                    "name": "#evt_show_talisman_stinger",
                     "assetId": "#hash_f496b991962e755",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8297,7 +8297,7 @@
             "aliases": [
                 {
                     "name": "#evt_show_talisman_ultra",
-                    "secondaryname": "#hash_28203a9582d51169",
+                    "secondaryname": "#evt_show_talisman_stinger",
                     "assetId": "#uin/2k18/zmb_cac/zmb_talis_ultra.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -8389,13 +8389,13 @@
         {
             "value": 126,
             "next": 149,
-            "name": "#hash_2a5adfaf3c5cc817",
+            "name": "#evt_talisman_sizzle_lp",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2a5adfaf3c5cc817",
+                    "name": "#evt_talisman_sizzle_lp",
                     "assetId": "#hash_737a9c4f2a864c64",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -11630,13 +11630,13 @@
         {
             "value": 129,
             "next": 155,
-            "name": "#hash_7f53f29774e0b1e8",
+            "name": "#uin_cac_scorestreak_attack_heli",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7f53f29774e0b1e8",
+                    "name": "#uin_cac_scorestreak_attack_heli",
                     "secondaryname": "#uin_cac_scorestreak_base",
                     "assetId": "#uin/2k18/cac/cac_ss_chopper.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -13222,13 +13222,13 @@
         {
             "value": 46,
             "next": 239,
-            "name": "#hash_60d9af04e35d6089",
+            "name": "#uin_zcac_elixir_legend",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_60d9af04e35d6089",
+                    "name": "#uin_zcac_elixir_legend",
                     "assetId": "#uin/2k18/zmb_cac/zmb_elixir_legend.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -13568,13 +13568,13 @@
         {
             "value": 233,
             "next": 65535,
-            "name": "#hash_2791d4d81c896e32",
+            "name": "#uin_zcac_equip_sentry",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2791d4d81c896e32",
+                    "name": "#uin_zcac_equip_sentry",
                     "secondaryname": "#uin_zcac_equip_base",
                     "assetId": "#uin/2k18/cac/cac_ss_sentry.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -13916,13 +13916,13 @@
         {
             "value": 118,
             "next": 261,
-            "name": "#hash_b5c2440537367ac",
+            "name": "#uin_zcac_perk_dwish",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_b5c2440537367ac",
+                    "name": "#uin_zcac_perk_dwish",
                     "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_dwish.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -13966,13 +13966,13 @@
         {
             "value": 130,
             "next": 263,
-            "name": "#hash_6ad025e594b09d05",
+            "name": "#uin_zcac_perk_echerry",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6ad025e594b09d05",
+                    "name": "#uin_zcac_perk_echerry",
                     "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_echerry.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -14116,13 +14116,13 @@
         {
             "value": 256,
             "next": 65535,
-            "name": "#hash_69150773285110d4",
+            "name": "#uin_zcac_perk_percept",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_69150773285110d4",
+                    "name": "#uin_zcac_perk_percept",
                     "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_percept.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -14166,13 +14166,13 @@
         {
             "value": 166,
             "next": 65535,
-            "name": "#hash_1535c4c9728c0c8b",
+            "name": "#uin_zcac_perk_phd",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1535c4c9728c0c8b",
+                    "name": "#uin_zcac_perk_phd",
                     "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_slider.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -14216,13 +14216,13 @@
         {
             "value": 183,
             "next": 65535,
-            "name": "#hash_77bf7c3df0435ec5",
+            "name": "#uin_zcac_perk_qrevive",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_77bf7c3df0435ec5",
+                    "name": "#uin_zcac_perk_qrevive",
                     "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_qrevive.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -14466,13 +14466,13 @@
         {
             "value": 147,
             "next": 65535,
-            "name": "#hash_32573504340309c9",
+            "name": "#uin_zcac_perk_widow",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_32573504340309c9",
+                    "name": "#uin_zcac_perk_widow",
                     "secondaryname": "#uin_zcac_perk_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_perk_widow.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -14665,13 +14665,13 @@
         {
             "value": 29,
             "next": 270,
-            "name": "#hash_179d69e21b47ee45",
+            "name": "#uin_zcac_talisman_epic",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_179d69e21b47ee45",
+                    "name": "#uin_zcac_talisman_epic",
                     "assetId": "#uin/2k18/zmb_cac/zmb_talis_epic.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14714,13 +14714,13 @@
         {
             "value": 220,
             "next": 65535,
-            "name": "#hash_43522c4ac0eca739",
+            "name": "#uin_zcac_talisman_legend",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_43522c4ac0eca739",
+                    "name": "#uin_zcac_talisman_legend",
                     "assetId": "#uin/2k18/zmb_cac/zmb_talis_legend.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14763,13 +14763,13 @@
         {
             "value": 19,
             "next": 65535,
-            "name": "#hash_1f196b4d9474d948",
+            "name": "#uin_zcac_talisman_rare",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1f196b4d9474d948",
+                    "name": "#uin_zcac_talisman_rare",
                     "assetId": "#uin/2k18/zmb_cac/zmb_talis_rare.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14812,13 +14812,13 @@
         {
             "value": 146,
             "next": 11,
-            "name": "#hash_b66f7ada9cc5b62",
+            "name": "#uin_zcac_talisman_ultra",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_b66f7ada9cc5b62",
+                    "name": "#uin_zcac_talisman_ultra",
                     "assetId": "#uin/2k18/zmb_cac/zmb_talis_ultra.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
                     "assetIdRelease": "#core_frontend.all",
@@ -14960,13 +14960,13 @@
         {
             "value": 172,
             "next": 65535,
-            "name": "#hash_7f5ed8b45cfeb96",
+            "name": "#uin_zcac_wpn_flamethrower",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7f5ed8b45cfeb96",
+                    "name": "#uin_zcac_wpn_flamethrower",
                     "secondaryname": "#uin_zcac_wpn_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_wpn_flame.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",
@@ -15160,13 +15160,13 @@
         {
             "value": 76,
             "next": 1,
-            "name": "#hash_97bb5cbafe5c635",
+            "name": "#uin_zcac_wpn_ragnarok",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_97bb5cbafe5c635",
+                    "name": "#uin_zcac_wpn_ragnarok",
                     "secondaryname": "#uin_zcac_wpn_base",
                     "assetId": "#uin/2k18/zmb_cac/zmb_wpn_ragnarok.ln100.pc.snd",
                     "assetFileNameSustain": "#core_frontend.all",

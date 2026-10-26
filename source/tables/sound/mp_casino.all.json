@@ -537,13 +537,13 @@
         {
             "value": 150,
             "next": 65535,
-            "name": "#hash_2b0f0f61e807b733",
+            "name": "#amb_close_sirens_alt",
             "sequence": 0,
             "cullDistance": 3000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2b0f0f61e807b733",
+                    "name": "#amb_close_sirens_alt",
                     "assetId": "#hash_6119d0a2b712d0c9",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -582,7 +582,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_2b0f0f61e807b733",
+                    "name": "#amb_close_sirens_alt",
                     "assetId": "#hash_687f66682dc2d564",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -621,7 +621,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_2b0f0f61e807b733",
+                    "name": "#amb_close_sirens_alt",
                     "assetId": "#hash_1ba4c90470d91cbb",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -660,7 +660,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_2b0f0f61e807b733",
+                    "name": "#amb_close_sirens_alt",
                     "assetId": "#hash_22fe6f7b7458859e",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -699,7 +699,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_2b0f0f61e807b733",
+                    "name": "#amb_close_sirens_alt",
                     "assetId": "#hash_12c39ce97bd727a5",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -938,13 +938,13 @@
         {
             "value": 193,
             "next": 333,
-            "name": "#hash_75a8b238641035fc",
+            "name": "#amb_cricket_night_side",
             "sequence": 0,
             "cullDistance": 4000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_75a8b238641035fc",
+                    "name": "#amb_cricket_night_side",
                     "assetId": "#amb/environment/country/night/night_crickets_wind.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -2336,13 +2336,13 @@
         {
             "value": 105,
             "next": 21,
-            "name": "#hash_7d96acf7489adb0b",
+            "name": "#amb_lrg_aquarium",
             "sequence": 0,
             "cullDistance": 750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7d96acf7489adb0b",
+                    "name": "#amb_lrg_aquarium",
                     "assetId": "#mpl/mpl_hacienda/aquarium.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -2385,13 +2385,13 @@
         {
             "value": 249,
             "next": 65535,
-            "name": "#hash_7e7a56d0cfc78869",
+            "name": "#amb_main_casino",
             "sequence": 0,
             "cullDistance": 3000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7e7a56d0cfc78869",
+                    "name": "#amb_main_casino",
                     "assetId": "#hash_346fe049f1618ace",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -3333,13 +3333,13 @@
         {
             "value": 84,
             "next": 38,
-            "name": "#hash_205260178dc28359",
+            "name": "#amb_rural_night",
             "sequence": 0,
             "cullDistance": 7000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_205260178dc28359",
+                    "name": "#amb_rural_night",
                     "assetId": "#hash_602ca471e59064b8",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -3438,7 +3438,7 @@
             "aliases": [
                 {
                     "name": "#amb_server_room",
-                    "secondaryname": "#hash_3ea54680de72ead1",
+                    "secondaryname": "#amb_server_room_beeps",
                     "assetId": "#amb/electronics/servers/server_room.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -3481,13 +3481,13 @@
         {
             "value": 146,
             "next": 65535,
-            "name": "#hash_3ea54680de72ead1",
+            "name": "#amb_server_room_beeps",
             "sequence": 0,
             "cullDistance": 800,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3ea54680de72ead1",
+                    "name": "#amb_server_room_beeps",
                     "assetId": "#hash_547348e14d0ff8d6",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -3530,13 +3530,13 @@
         {
             "value": 168,
             "next": 65535,
-            "name": "#hash_6a5dca9e914f3db9",
+            "name": "#amb_sirens_loop_1",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6a5dca9e914f3db9",
+                    "name": "#amb_sirens_loop_1",
                     "assetId": "#hash_18d31dcb810a52d9",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -3579,13 +3579,13 @@
         {
             "value": 278,
             "next": 65535,
-            "name": "#hash_6a5dc79e914f38a0",
+            "name": "#amb_sirens_loop_2",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6a5dc79e914f38a0",
+                    "name": "#amb_sirens_loop_2",
                     "assetId": "#hash_404515abec133274",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -3921,13 +3921,13 @@
         {
             "value": 68,
             "next": 65535,
-            "name": "#hash_2fe3fdae6eacd8a0",
+            "name": "#amb_slots_jackpot",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2fe3fdae6eacd8a0",
+                    "name": "#amb_slots_jackpot",
                     "assetId": "#hash_3493ea06cba1ae62",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -3966,7 +3966,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_2fe3fdae6eacd8a0",
+                    "name": "#amb_slots_jackpot",
                     "assetId": "#hash_4c7c97aa7cecb5df",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -4005,7 +4005,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_2fe3fdae6eacd8a0",
+                    "name": "#amb_slots_jackpot",
                     "assetId": "#hash_135f089b5111a398",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -4136,13 +4136,13 @@
         {
             "value": 162,
             "next": 41,
-            "name": "#hash_35825c56d12e7e5a",
+            "name": "#amb_slots_spin_loops",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_35825c56d12e7e5a",
+                    "name": "#amb_slots_spin_loops",
                     "assetId": "#hash_625da75b7cdf54fc",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -4181,7 +4181,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_35825c56d12e7e5a",
+                    "name": "#amb_slots_spin_loops",
                     "assetId": "#hash_1d8a78c174efcd6d",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -4220,7 +4220,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_35825c56d12e7e5a",
+                    "name": "#amb_slots_spin_loops",
                     "assetId": "#hash_1d0da74f96e88b66",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -4259,7 +4259,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_35825c56d12e7e5a",
+                    "name": "#amb_slots_spin_loops",
                     "assetId": "#hash_7afd3164d2bcd4a7",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -4741,13 +4741,13 @@
         {
             "value": 170,
             "next": 310,
-            "name": "#hash_2af37487e21a6b69",
+            "name": "#amb_slots_win_coins",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2af37487e21a6b69",
+                    "name": "#amb_slots_win_coins",
                     "assetId": "#hash_280bc62a0db78279",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -4786,7 +4786,7 @@
                     "unk178": "#hash_200000808"
                 },
                 {
-                    "name": "#hash_2af37487e21a6b69",
+                    "name": "#amb_slots_win_coins",
                     "assetId": "#hash_560f38ec9a970d94",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -8107,13 +8107,13 @@
         {
             "value": 209,
             "next": 65535,
-            "name": "#hash_663899d42687914d",
+            "name": "#dst_car_windshield_break",
             "sequence": 0,
             "cullDistance": 1400,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_663899d42687914d",
+                    "name": "#dst_car_windshield_break",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -8152,7 +8152,7 @@
                     "unk178": "#hash_503090302"
                 },
                 {
-                    "name": "#hash_663899d42687914d",
+                    "name": "#dst_car_windshield_break",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -8191,7 +8191,7 @@
                     "unk178": "#hash_503090302"
                 },
                 {
-                    "name": "#hash_663899d42687914d",
+                    "name": "#dst_car_windshield_break",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -10499,7 +10499,7 @@
             "aliases": [
                 {
                     "name": "#dst_glass_windshield_damage",
-                    "secondaryname": "#hash_663899d42687914d",
+                    "secondaryname": "#dst_car_windshield_break",
                     "assetId": "#dst/glass/windshield/windshield_damage_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -10539,7 +10539,7 @@
                 },
                 {
                     "name": "#dst_glass_windshield_damage",
-                    "secondaryname": "#hash_663899d42687914d",
+                    "secondaryname": "#dst_car_windshield_break",
                     "assetId": "#dst/glass/windshield/windshield_damage_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -10823,13 +10823,13 @@
         {
             "value": 57,
             "next": 65535,
-            "name": "#hash_7f118ea3a4874268",
+            "name": "#dst_mp_propane_tank_fire",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7f118ea3a4874268",
+                    "name": "#dst_mp_propane_tank_fire",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
                     "assetFileNameRelease": "#mp_casino.all",
@@ -12640,7 +12640,7 @@
             "aliases": [
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -12681,7 +12681,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -12722,7 +12722,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -12763,7 +12763,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -12804,7 +12804,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -12845,7 +12845,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -12886,7 +12886,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -12930,13 +12930,13 @@
         {
             "value": 58,
             "next": 122,
-            "name": "#hash_3b6983b084cfef53",
+            "name": "#dst_transformer_explo_spark",
             "sequence": 0,
             "cullDistance": 6000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
@@ -12977,7 +12977,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
@@ -13018,7 +13018,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
@@ -13059,7 +13059,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
@@ -13100,7 +13100,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
@@ -13141,7 +13141,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
@@ -13182,7 +13182,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
@@ -13223,7 +13223,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
@@ -19489,13 +19489,13 @@
         {
             "value": 3,
             "next": 189,
-            "name": "#hash_200e28bcd26bab77",
+            "name": "#exp_mp_propane_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_200e28bcd26bab77",
+                    "name": "#exp_mp_propane_flux_l",
                     "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
@@ -19540,13 +19540,13 @@
         {
             "value": 129,
             "next": 65535,
-            "name": "#hash_200e2ebcd26bb5a9",
+            "name": "#exp_mp_propane_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_200e2ebcd26bb5a9",
+                    "name": "#exp_mp_propane_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_r/flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -19887,13 +19887,13 @@
         {
             "value": 332,
             "next": 65535,
-            "name": "#hash_7ac5fa6568de2461",
+            "name": "#exp_mp_propane_tank_lfe",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -19932,7 +19932,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -19971,7 +19971,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -20010,7 +20010,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -20539,13 +20539,13 @@
         {
             "value": 238,
             "next": 65535,
-            "name": "#hash_456af38afaef9d77",
+            "name": "#exp_propane_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_456af38afaef9d77",
+                    "name": "#exp_propane_flux_l",
                     "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
@@ -20590,13 +20590,13 @@
         {
             "value": 331,
             "next": 65535,
-            "name": "#hash_456af98afaefa7a9",
+            "name": "#exp_propane_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_456af98afaefa7a9",
+                    "name": "#exp_propane_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_r/flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -22191,13 +22191,13 @@
         {
             "value": 20,
             "next": 216,
-            "name": "#hash_3f8d713abf4d10fe",
+            "name": "#exp_veh_lfe_no_debris",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3f8d713abf4d10fe",
+                    "name": "#exp_veh_lfe_no_debris",
                     "assetId": "#exp/vehicle/lfe/exp_veh_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -22594,14 +22594,14 @@
         {
             "value": 88,
             "next": 213,
-            "name": "#hash_373c94e1ffb849b0",
+            "name": "#exp_veh_small_no_debris",
             "sequence": 0,
             "cullDistance": 12000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_373c94e1ffb849b0",
-                    "secondaryname": "#hash_3f8d713abf4d10fe",
+                    "name": "#exp_veh_small_no_debris",
+                    "secondaryname": "#exp_veh_lfe_no_debris",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -22641,8 +22641,8 @@
                     "unk178": "#hash_6030b0208"
                 },
                 {
-                    "name": "#hash_373c94e1ffb849b0",
-                    "secondaryname": "#hash_3f8d713abf4d10fe",
+                    "name": "#exp_veh_small_no_debris",
+                    "secondaryname": "#exp_veh_lfe_no_debris",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -22682,8 +22682,8 @@
                     "unk178": "#hash_6030b0208"
                 },
                 {
-                    "name": "#hash_373c94e1ffb849b0",
-                    "secondaryname": "#hash_3f8d713abf4d10fe",
+                    "name": "#exp_veh_small_no_debris",
+                    "secondaryname": "#exp_veh_lfe_no_debris",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -58643,13 +58643,13 @@
         {
             "value": 149,
             "next": 354,
-            "name": "#hash_5b18895703fba823",
+            "name": "#pfx_transformer_arcs",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -58688,7 +58688,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -58727,7 +58727,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -58766,7 +58766,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -58809,13 +58809,13 @@
         {
             "value": 337,
             "next": 65535,
-            "name": "#hash_4ca3d2aaa573f1c8",
+            "name": "#pfx_transformer_sparks",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4ca3d2aaa573f1c8",
+                    "name": "#pfx_transformer_sparks",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -58854,7 +58854,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_4ca3d2aaa573f1c8",
+                    "name": "#pfx_transformer_sparks",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",
@@ -58893,7 +58893,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_4ca3d2aaa573f1c8",
+                    "name": "#pfx_transformer_sparks",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_casino.all",
                     "assetIdRelease": "#mp_casino.all",

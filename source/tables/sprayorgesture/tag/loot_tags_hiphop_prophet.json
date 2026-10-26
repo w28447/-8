@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_hiphop_prophet",
+    "type": "#tag",
+    "material": "#hash_320ab07cfe6348ab",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_20fd8dc857d0bbf4",
+        "icon": "image#loot_ui_icon_tags_hiphop_prophet",
+        "isdefault": 0
+    }
+}

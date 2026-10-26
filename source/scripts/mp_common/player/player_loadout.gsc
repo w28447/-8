@@ -1625,7 +1625,7 @@ function private give_special_offhand( slot, previous_weapon )
     
     if ( specialoffhand == level.weaponnone )
     {
-        specialoffhand = level.var_43a51921;
+        specialoffhand = level.weaponnulloffhandherogadget;
         specialoffhandcount = 0;
     }
     
@@ -1669,12 +1669,12 @@ function private give_ultimate( slot, previous_weapon )
     changedspecialist = self.pers[ #"changed_specialist" ];
     classnum = self.class_num_for_global_weapons;
     ultimate = level.weaponnone;
-    var_36aac800 = 0;
+    ultimatecount = 0;
     
     if ( isdefined( self.playerrole ) && isdefined( self.playerrole.ultimateweapon ) )
     {
         ultimate = getweapon( self.playerrole.ultimateweapon );
-        var_36aac800 = ultimate.startammo;
+        ultimatecount = ultimate.startammo;
     }
     
     /#
@@ -1693,22 +1693,22 @@ function private give_ultimate( slot, previous_weapon )
     if ( isitemrestricted( ultimate.name ) || !function_50797a7f( ultimate.name ) )
     {
         ultimate = level.weaponnone;
-        var_36aac800 = 0;
+        ultimatecount = 0;
     }
     
     if ( ultimate == level.weaponnone )
     {
-        ultimate = level.var_387e902c;
-        var_36aac800 = 0;
+        ultimate = level.weaponnulloffhandultimate;
+        ultimatecount = 0;
     }
     
     if ( ultimate != level.weaponnull )
     {
         self giveweapon( ultimate );
-        self setweaponammoclip( ultimate, var_36aac800 );
+        self setweaponammoclip( ultimate, ultimatecount );
         loadout = self get_loadout_slot( "ultimate" );
         loadout.weapon = ultimate;
-        loadout.count = var_36aac800;
+        loadout.count = ultimatecount;
         self ability_util::gadget_reset( ultimate, changedclass, roundbased, firstround, changedspecialist );
         self function_442539( slot, ultimate );
     }

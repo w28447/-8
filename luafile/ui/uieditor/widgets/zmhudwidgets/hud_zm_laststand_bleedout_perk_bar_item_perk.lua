@@ -12,7 +12,7 @@ CoD.Hud_ZM_LastStand_Bleedout_Perk_Bar_Item_Perk.new = function ( f1_arg0, f1_ar
 	StoneTiledBacking:setRGB( 1, 0, 0 )
 	StoneTiledBacking:setAlpha( 0.8 )
 	StoneTiledBacking:setImage( RegisterImage( "uie_ui_zm_laboratory_buttonbgtile" ) )
-	StoneTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	StoneTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	StoneTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	StoneTiledBacking:setupNineSliceShader( 196, 88 )
 	self:addElement( StoneTiledBacking )

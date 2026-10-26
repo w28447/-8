@@ -38,7 +38,7 @@ CoD.ScoreboardGameStatusScores.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local stripeHero = LUI.UIImage.new( 0.5, 0.5, -6460, -460, 0, 0, 161, 169 )
 	stripeHero:setAlpha( 0.5 )
 	stripeHero:setImage( RegisterImage( 0x87FBA6ED8287E8B ) )
-	stripeHero:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6E9593DF28749F2 ) )
+	stripeHero:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_repeat_normal" ) )
 	stripeHero:setShaderVector( 0, 12.82, 1, 0, 0 )
 	stripeHero:setShaderVector( 1, 0, 1, 0, 1 )
 	self:addElement( stripeHero )

@@ -421,7 +421,7 @@ version 144 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -511,7 +511,7 @@ version 144 {
         // offset 0x668, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x698, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x6c0, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x6f0, size 0x28
@@ -655,7 +655,7 @@ version 144 {
         // offset 0x1370, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x13a0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x13c8, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x13f8, size 0x30
@@ -1299,7 +1299,7 @@ version 144 {
         // offset 0x4c28, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4c58, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4cb0, size 0x30
@@ -1351,7 +1351,7 @@ version 144 {
         // offset 0x50c8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x50f8, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x5120, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x5150, size 0x30
@@ -1383,7 +1383,7 @@ version 144 {
         // offset 0x53a0, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x53d0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x53f8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x5428, size 0x30
@@ -2283,7 +2283,7 @@ version 144 {
     // offset 0x1b988, size 0xe40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c7c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c7d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1ca50, size 0x1380
@@ -2778,7 +2778,7 @@ version 143 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -2868,7 +2868,7 @@ version 143 {
         // offset 0x668, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x698, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x6c0, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x6f0, size 0x28
@@ -3012,7 +3012,7 @@ version 143 {
         // offset 0x1370, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x13a0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x13c8, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x13f8, size 0x30
@@ -3656,7 +3656,7 @@ version 143 {
         // offset 0x4c28, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4c58, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4cb0, size 0x30
@@ -3708,7 +3708,7 @@ version 143 {
         // offset 0x50c8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x50f8, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x5120, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x5150, size 0x30
@@ -3740,7 +3740,7 @@ version 143 {
         // offset 0x53a0, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x53d0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x53f8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x5428, size 0x30
@@ -4639,7 +4639,7 @@ version 143 {
     // offset 0x1b988, size 0xe40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c7c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c7d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1ca50, size 0x1380
@@ -5134,7 +5134,7 @@ version 142 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -5224,7 +5224,7 @@ version 142 {
         // offset 0x668, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x698, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x6c0, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x6f0, size 0x28
@@ -5368,7 +5368,7 @@ version 142 {
         // offset 0x1370, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x13a0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x13c8, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x13f8, size 0x30
@@ -6012,7 +6012,7 @@ version 142 {
         // offset 0x4c28, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4c58, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4cb0, size 0x30
@@ -6064,7 +6064,7 @@ version 142 {
         // offset 0x50c8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x50f8, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x5120, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x5150, size 0x30
@@ -6096,7 +6096,7 @@ version 142 {
         // offset 0x53a0, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x53d0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x53f8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x5428, size 0x30
@@ -6993,7 +6993,7 @@ version 142 {
     // offset 0x1b988, size 0xe40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c7c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c7d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1ca50, size 0x1380
@@ -7488,7 +7488,7 @@ version 141 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -7578,7 +7578,7 @@ version 141 {
         // offset 0x668, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x698, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x6c0, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x6f0, size 0x28
@@ -7722,7 +7722,7 @@ version 141 {
         // offset 0x1370, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x13a0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x13c8, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x13f8, size 0x30
@@ -8364,7 +8364,7 @@ version 141 {
         // offset 0x4c10, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4c40, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4c68, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4c98, size 0x30
@@ -8416,7 +8416,7 @@ version 141 {
         // offset 0x50b0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x50e0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x5108, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x5138, size 0x30
@@ -8446,7 +8446,7 @@ version 141 {
         // offset 0x5370, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x53a0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x53c8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x53f8, size 0x30
@@ -9343,7 +9343,7 @@ version 141 {
     // offset 0x1b988, size 0xe40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c7c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c7d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1ca50, size 0x1380
@@ -9838,7 +9838,7 @@ version 140 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -9924,7 +9924,7 @@ version 140 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -10068,7 +10068,7 @@ version 140 {
         // offset 0x1310, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1340, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1368, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1398, size 0x30
@@ -10708,7 +10708,7 @@ version 140 {
         // offset 0x4b80, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4bb0, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4bd8, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4c08, size 0x30
@@ -10758,7 +10758,7 @@ version 140 {
         // offset 0x4ff0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x5020, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x5048, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x5078, size 0x30
@@ -10788,7 +10788,7 @@ version 140 {
         // offset 0x52b0, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x52e0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x5308, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x5338, size 0x30
@@ -11684,7 +11684,7 @@ version 140 {
     // offset 0x1b988, size 0xe40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c7c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c7d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1ca50, size 0x1380
@@ -12179,7 +12179,7 @@ version 139 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -12265,7 +12265,7 @@ version 139 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -12409,7 +12409,7 @@ version 139 {
         // offset 0x1310, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1340, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1368, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1398, size 0x30
@@ -13041,7 +13041,7 @@ version 139 {
         // offset 0x4ae0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4b10, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4b38, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4b68, size 0x30
@@ -13087,7 +13087,7 @@ version 139 {
         // offset 0x4f00, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4f30, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4f58, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4f88, size 0x30
@@ -13117,7 +13117,7 @@ version 139 {
         // offset 0x51c0, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x51f0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x5218, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x5248, size 0x30
@@ -14013,7 +14013,7 @@ version 139 {
     // offset 0x1b988, size 0xe40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c7c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c7d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1ca50, size 0x1380
@@ -14508,7 +14508,7 @@ version 138 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -14594,7 +14594,7 @@ version 138 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -14738,7 +14738,7 @@ version 138 {
         // offset 0x1310, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1340, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1368, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1398, size 0x30
@@ -15370,7 +15370,7 @@ version 138 {
         // offset 0x4ae0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4b10, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4b38, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4b68, size 0x30
@@ -15416,7 +15416,7 @@ version 138 {
         // offset 0x4f00, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4f30, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4f58, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4f88, size 0x30
@@ -15446,7 +15446,7 @@ version 138 {
         // offset 0x51c0, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x51f0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x5218, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x5248, size 0x30
@@ -16341,7 +16341,7 @@ version 138 {
     // offset 0x1b988, size 0xe40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c7c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c7d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1ca50, size 0x1380
@@ -16836,7 +16836,7 @@ version 137 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -16922,7 +16922,7 @@ version 137 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -17066,7 +17066,7 @@ version 137 {
         // offset 0x1310, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1340, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1368, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1398, size 0x30
@@ -17694,7 +17694,7 @@ version 137 {
         // offset 0x4ab0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4ae0, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4b08, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4b38, size 0x30
@@ -17740,7 +17740,7 @@ version 137 {
         // offset 0x4ed0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4f00, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4f28, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4f58, size 0x30
@@ -17770,7 +17770,7 @@ version 137 {
         // offset 0x5190, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x51c0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x51e8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x5218, size 0x30
@@ -18661,7 +18661,7 @@ version 137 {
     // offset 0x1b988, size 0xe00
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c788, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c790, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1ca10, size 0x1380
@@ -19156,7 +19156,7 @@ version 136 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -19242,7 +19242,7 @@ version 136 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -19386,7 +19386,7 @@ version 136 {
         // offset 0x1310, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1340, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1368, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1398, size 0x30
@@ -20004,7 +20004,7 @@ version 136 {
         // offset 0x4a38, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4a68, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4a90, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4ac0, size 0x30
@@ -20048,7 +20048,7 @@ version 136 {
         // offset 0x4e40, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4e70, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4e98, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4ec8, size 0x30
@@ -20078,7 +20078,7 @@ version 136 {
         // offset 0x5100, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x5130, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x5158, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x5188, size 0x30
@@ -20958,7 +20958,7 @@ version 136 {
     // offset 0x1b988, size 0xd40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c6c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c6d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c950, size 0x1380
@@ -21453,7 +21453,7 @@ version 135 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -21539,7 +21539,7 @@ version 135 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -21683,7 +21683,7 @@ version 135 {
         // offset 0x1310, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1340, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1368, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1398, size 0x30
@@ -22299,7 +22299,7 @@ version 135 {
         // offset 0x4a20, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4a50, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4a78, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4aa8, size 0x30
@@ -22343,7 +22343,7 @@ version 135 {
         // offset 0x4e28, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4e58, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4e80, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4eb0, size 0x30
@@ -22373,7 +22373,7 @@ version 135 {
         // offset 0x50e8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x5118, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x5140, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x5170, size 0x30
@@ -23253,7 +23253,7 @@ version 135 {
     // offset 0x1b988, size 0xd40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c6c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c6d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c950, size 0x1380
@@ -23748,7 +23748,7 @@ version 134 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -23834,7 +23834,7 @@ version 134 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -23978,7 +23978,7 @@ version 134 {
         // offset 0x1310, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1340, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1368, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1398, size 0x30
@@ -24594,7 +24594,7 @@ version 134 {
         // offset 0x4a20, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4a50, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4a78, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4aa8, size 0x30
@@ -24638,7 +24638,7 @@ version 134 {
         // offset 0x4e28, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4e58, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4e80, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4eb0, size 0x30
@@ -24668,7 +24668,7 @@ version 134 {
         // offset 0x50e8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x5118, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x5140, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x5170, size 0x30
@@ -25547,7 +25547,7 @@ version 134 {
     // offset 0x1b988, size 0xd40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c6c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c6d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c950, size 0x1320
@@ -26042,7 +26042,7 @@ version 133 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -26128,7 +26128,7 @@ version 133 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -26272,7 +26272,7 @@ version 133 {
         // offset 0x1310, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1340, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1368, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1398, size 0x30
@@ -26888,7 +26888,7 @@ version 133 {
         // offset 0x4a20, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4a50, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4a78, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4aa8, size 0x30
@@ -26932,7 +26932,7 @@ version 133 {
         // offset 0x4e28, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4e58, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4e80, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4eb0, size 0x30
@@ -26962,7 +26962,7 @@ version 133 {
         // offset 0x50e8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x5118, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x5140, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x5170, size 0x30
@@ -27840,7 +27840,7 @@ version 133 {
     // offset 0x1b988, size 0xd40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c6c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c6d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c950, size 0x1320
@@ -28335,7 +28335,7 @@ version 132 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -28421,7 +28421,7 @@ version 132 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -28565,7 +28565,7 @@ version 132 {
         // offset 0x1310, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1340, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1368, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1398, size 0x30
@@ -29181,7 +29181,7 @@ version 132 {
         // offset 0x4a20, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4a50, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4a78, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4aa8, size 0x30
@@ -29225,7 +29225,7 @@ version 132 {
         // offset 0x4e28, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4e58, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4e80, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4eb0, size 0x30
@@ -29255,7 +29255,7 @@ version 132 {
         // offset 0x50e8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x5118, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x5140, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x5170, size 0x30
@@ -30133,7 +30133,7 @@ version 132 {
     // offset 0x1b988, size 0xd40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c6c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c6d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c950, size 0x1320
@@ -30628,7 +30628,7 @@ version 131 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -30714,7 +30714,7 @@ version 131 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -30858,7 +30858,7 @@ version 131 {
         // offset 0x1310, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1340, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1368, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1398, size 0x30
@@ -31472,7 +31472,7 @@ version 131 {
         // offset 0x4a08, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4a38, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4a60, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4a90, size 0x30
@@ -31516,7 +31516,7 @@ version 131 {
         // offset 0x4e10, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4e40, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4e68, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4e98, size 0x30
@@ -31546,7 +31546,7 @@ version 131 {
         // offset 0x50d0, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x5100, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x5128, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x5158, size 0x30
@@ -32424,7 +32424,7 @@ version 131 {
     // offset 0x1b988, size 0xd40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c6c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c6d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c950, size 0x1320
@@ -32919,7 +32919,7 @@ version 130 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -33005,7 +33005,7 @@ version 130 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -33147,7 +33147,7 @@ version 130 {
         // offset 0x12f8, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1328, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1350, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1380, size 0x30
@@ -33755,7 +33755,7 @@ version 130 {
         // offset 0x49a8, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x49d8, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4a00, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4a30, size 0x30
@@ -33799,7 +33799,7 @@ version 130 {
         // offset 0x4db0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4de0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4e08, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4e38, size 0x30
@@ -33829,7 +33829,7 @@ version 130 {
         // offset 0x5070, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x50a0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x50c8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x50f8, size 0x30
@@ -34699,7 +34699,7 @@ version 130 {
     // offset 0x1b988, size 0xcc0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c648, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c650, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c8d0, size 0x1320
@@ -35194,7 +35194,7 @@ version 129 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -35280,7 +35280,7 @@ version 129 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -35420,7 +35420,7 @@ version 129 {
         // offset 0x12c8, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x12f8, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1320, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1350, size 0x30
@@ -36022,7 +36022,7 @@ version 129 {
         // offset 0x48e8, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4918, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4940, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4970, size 0x30
@@ -36066,7 +36066,7 @@ version 129 {
         // offset 0x4cf0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4d20, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4d48, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4d78, size 0x30
@@ -36096,7 +36096,7 @@ version 129 {
         // offset 0x4fb0, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4fe0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x5008, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x5038, size 0x30
@@ -36965,7 +36965,7 @@ version 129 {
     // offset 0x1b988, size 0xcc0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c648, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c650, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c8d0, size 0x1320
@@ -37460,7 +37460,7 @@ version 128 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -37546,7 +37546,7 @@ version 128 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -37686,7 +37686,7 @@ version 128 {
         // offset 0x12c8, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x12f8, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1320, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1350, size 0x30
@@ -38288,7 +38288,7 @@ version 128 {
         // offset 0x48e8, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4918, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4940, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4970, size 0x30
@@ -38332,7 +38332,7 @@ version 128 {
         // offset 0x4cf0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4d20, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4d48, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4d78, size 0x30
@@ -38362,7 +38362,7 @@ version 128 {
         // offset 0x4fb0, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4fe0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x5008, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x5038, size 0x30
@@ -39227,7 +39227,7 @@ version 128 {
     // offset 0x1b988, size 0xcc0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c648, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c650, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c8d0, size 0x1320
@@ -39722,7 +39722,7 @@ version 127 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -39808,7 +39808,7 @@ version 127 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -39948,7 +39948,7 @@ version 127 {
         // offset 0x12c8, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x12f8, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1320, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1350, size 0x30
@@ -40546,7 +40546,7 @@ version 127 {
         // offset 0x4898, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x48c8, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x48f0, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4920, size 0x30
@@ -40588,7 +40588,7 @@ version 127 {
         // offset 0x4c78, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4ca8, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4cd0, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4d00, size 0x30
@@ -40618,7 +40618,7 @@ version 127 {
         // offset 0x4f38, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4f68, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4f90, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4fc0, size 0x30
@@ -41483,7 +41483,7 @@ version 127 {
     // offset 0x1b988, size 0xcc0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c648, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c650, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c8d0, size 0x1320
@@ -41978,7 +41978,7 @@ version 126 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -42064,7 +42064,7 @@ version 126 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -42204,7 +42204,7 @@ version 126 {
         // offset 0x12c8, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x12f8, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1320, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1350, size 0x30
@@ -42802,7 +42802,7 @@ version 126 {
         // offset 0x4898, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x48c8, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x48f0, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4920, size 0x30
@@ -42844,7 +42844,7 @@ version 126 {
         // offset 0x4c78, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4ca8, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4cd0, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4d00, size 0x30
@@ -42874,7 +42874,7 @@ version 126 {
         // offset 0x4f38, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4f68, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4f90, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4fc0, size 0x30
@@ -43735,7 +43735,7 @@ version 126 {
     // offset 0x1b988, size 0xc80
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c608, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c610, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c890, size 0x1320
@@ -44230,7 +44230,7 @@ version 125 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -44316,7 +44316,7 @@ version 125 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -44454,7 +44454,7 @@ version 125 {
         // offset 0x12b0, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x12e0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1308, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1338, size 0x30
@@ -45050,7 +45050,7 @@ version 125 {
         // offset 0x4868, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4898, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x48c0, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x48f0, size 0x30
@@ -45092,7 +45092,7 @@ version 125 {
         // offset 0x4c48, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4c78, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4ca0, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4cd0, size 0x30
@@ -45122,7 +45122,7 @@ version 125 {
         // offset 0x4f08, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4f38, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4f60, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4f90, size 0x30
@@ -45978,7 +45978,7 @@ version 125 {
     // offset 0x1b988, size 0xc40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c5c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c5d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c850, size 0x1320
@@ -46473,7 +46473,7 @@ version 124 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -46559,7 +46559,7 @@ version 124 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -46695,7 +46695,7 @@ version 124 {
         // offset 0x1280, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x12b0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12d8, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1308, size 0x30
@@ -47289,7 +47289,7 @@ version 124 {
         // offset 0x4808, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4838, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4860, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4890, size 0x30
@@ -47331,7 +47331,7 @@ version 124 {
         // offset 0x4be8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4c18, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4c40, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4c70, size 0x30
@@ -47361,7 +47361,7 @@ version 124 {
         // offset 0x4ea8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4ed8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4f00, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4f30, size 0x30
@@ -48217,7 +48217,7 @@ version 124 {
     // offset 0x1b988, size 0xc40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c5c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c5d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c850, size 0x1320
@@ -48712,7 +48712,7 @@ version 123 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -48798,7 +48798,7 @@ version 123 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -48934,7 +48934,7 @@ version 123 {
         // offset 0x1280, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x12b0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12d8, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1308, size 0x30
@@ -49528,7 +49528,7 @@ version 123 {
         // offset 0x4808, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4838, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4860, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4890, size 0x30
@@ -49570,7 +49570,7 @@ version 123 {
         // offset 0x4be8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4c18, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4c40, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4c70, size 0x30
@@ -49600,7 +49600,7 @@ version 123 {
         // offset 0x4ea8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4ed8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4f00, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4f30, size 0x30
@@ -50455,7 +50455,7 @@ version 123 {
     // offset 0x1b988, size 0xc40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c5c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c5d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c850, size 0x1320
@@ -50950,7 +50950,7 @@ version 122 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -51036,7 +51036,7 @@ version 122 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -51172,7 +51172,7 @@ version 122 {
         // offset 0x1280, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x12b0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12d8, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1308, size 0x30
@@ -51766,7 +51766,7 @@ version 122 {
         // offset 0x4808, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4838, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4860, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4890, size 0x30
@@ -51808,7 +51808,7 @@ version 122 {
         // offset 0x4be8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4c18, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4c40, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4c70, size 0x30
@@ -51838,7 +51838,7 @@ version 122 {
         // offset 0x4ea8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4ed8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4f00, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4f30, size 0x30
@@ -52691,7 +52691,7 @@ version 122 {
     // offset 0x1b988, size 0xc40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c5c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c5d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c850, size 0x1320
@@ -53186,7 +53186,7 @@ version 121 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -53272,7 +53272,7 @@ version 121 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -53408,7 +53408,7 @@ version 121 {
         // offset 0x1280, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x12b0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12d8, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1308, size 0x30
@@ -54002,7 +54002,7 @@ version 121 {
         // offset 0x4808, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4838, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4860, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4890, size 0x30
@@ -54044,7 +54044,7 @@ version 121 {
         // offset 0x4be8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4c18, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4c40, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4c70, size 0x30
@@ -54074,7 +54074,7 @@ version 121 {
         // offset 0x4ea8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4ed8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4f00, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4f30, size 0x30
@@ -54927,7 +54927,7 @@ version 121 {
     // offset 0x1b988, size 0xc40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c5c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c5d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c850, size 0x1320
@@ -55422,7 +55422,7 @@ version 120 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -55508,7 +55508,7 @@ version 120 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -55644,7 +55644,7 @@ version 120 {
         // offset 0x1280, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x12b0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12d8, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1308, size 0x30
@@ -56238,7 +56238,7 @@ version 120 {
         // offset 0x4808, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4838, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4860, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4890, size 0x30
@@ -56280,7 +56280,7 @@ version 120 {
         // offset 0x4be8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4c18, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4c40, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4c70, size 0x30
@@ -56310,7 +56310,7 @@ version 120 {
         // offset 0x4ea8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4ed8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4f00, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4f30, size 0x30
@@ -57162,7 +57162,7 @@ version 120 {
     // offset 0x1b988, size 0xc40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c5c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c5d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c850, size 0x12c0
@@ -57657,7 +57657,7 @@ version 119 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -57743,7 +57743,7 @@ version 119 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -57879,7 +57879,7 @@ version 119 {
         // offset 0x1280, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x12b0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12d8, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1308, size 0x30
@@ -58473,7 +58473,7 @@ version 119 {
         // offset 0x4808, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4838, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4860, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4890, size 0x30
@@ -58515,7 +58515,7 @@ version 119 {
         // offset 0x4be8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4c18, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4c40, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4c70, size 0x30
@@ -58545,7 +58545,7 @@ version 119 {
         // offset 0x4ea8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4ed8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4f00, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4f30, size 0x30
@@ -59396,7 +59396,7 @@ version 119 {
     // offset 0x1b988, size 0xc40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c5c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c5d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c850, size 0x12c0
@@ -59891,7 +59891,7 @@ version 118 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -59977,7 +59977,7 @@ version 118 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -60113,7 +60113,7 @@ version 118 {
         // offset 0x1280, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x12b0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12d8, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1308, size 0x30
@@ -60707,7 +60707,7 @@ version 118 {
         // offset 0x4808, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4838, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4860, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4890, size 0x30
@@ -60749,7 +60749,7 @@ version 118 {
         // offset 0x4be8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4c18, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4c40, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4c70, size 0x30
@@ -60779,7 +60779,7 @@ version 118 {
         // offset 0x4ea8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4ed8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4f00, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4f30, size 0x30
@@ -61629,7 +61629,7 @@ version 118 {
     // offset 0x1b988, size 0xc40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c5c8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c5d0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c850, size 0x12c0
@@ -62124,7 +62124,7 @@ version 117 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -62210,7 +62210,7 @@ version 117 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -62346,7 +62346,7 @@ version 117 {
         // offset 0x1280, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x12b0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12d8, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1308, size 0x30
@@ -62940,7 +62940,7 @@ version 117 {
         // offset 0x4808, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4838, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4860, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4890, size 0x30
@@ -62982,7 +62982,7 @@ version 117 {
         // offset 0x4be8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4c18, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4c40, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4c70, size 0x30
@@ -63012,7 +63012,7 @@ version 117 {
         // offset 0x4ea8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4ed8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4f00, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4f30, size 0x30
@@ -63878,7 +63878,7 @@ version 117 {
     // offset 0x1b988, size 0xd20
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c6a8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c6b0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c930, size 0x12c0
@@ -64373,7 +64373,7 @@ version 116 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -64459,7 +64459,7 @@ version 116 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -64595,7 +64595,7 @@ version 116 {
         // offset 0x1280, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x12b0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12d8, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1308, size 0x30
@@ -65189,7 +65189,7 @@ version 116 {
         // offset 0x4808, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4838, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4860, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4890, size 0x30
@@ -65231,7 +65231,7 @@ version 116 {
         // offset 0x4be8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4c18, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4c40, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4c70, size 0x30
@@ -65261,7 +65261,7 @@ version 116 {
         // offset 0x4ea8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4ed8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4f00, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4f30, size 0x30
@@ -66147,7 +66147,7 @@ version 116 {
     // offset 0x1b988, size 0xe60
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c7e8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c7f0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1ca70, size 0x12c0
@@ -66642,7 +66642,7 @@ version 115 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -66728,7 +66728,7 @@ version 115 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -66862,7 +66862,7 @@ version 115 {
         // offset 0x1268, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1298, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12c0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x12f0, size 0x30
@@ -67454,7 +67454,7 @@ version 115 {
         // offset 0x47d8, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4808, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4830, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4860, size 0x30
@@ -67496,7 +67496,7 @@ version 115 {
         // offset 0x4bb8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4be8, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4c10, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4c40, size 0x30
@@ -67526,7 +67526,7 @@ version 115 {
         // offset 0x4e78, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4ea8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4ed0, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4f00, size 0x30
@@ -68412,7 +68412,7 @@ version 115 {
     // offset 0x1b988, size 0xe60
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c7e8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c7f0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1ca70, size 0x12c0
@@ -68907,7 +68907,7 @@ version 114 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -68993,7 +68993,7 @@ version 114 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -69127,7 +69127,7 @@ version 114 {
         // offset 0x1268, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1298, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12c0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x12f0, size 0x30
@@ -69719,7 +69719,7 @@ version 114 {
         // offset 0x47d8, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4808, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4830, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4860, size 0x30
@@ -69761,7 +69761,7 @@ version 114 {
         // offset 0x4bb8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4be8, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4c10, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4c40, size 0x30
@@ -69791,7 +69791,7 @@ version 114 {
         // offset 0x4e78, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4ea8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4ed0, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4f00, size 0x30
@@ -70781,7 +70781,7 @@ version 114 {
     // offset 0x1b988, size 0x14e0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1ce68, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1ce70, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1d0f0, size 0x12c0
@@ -71276,7 +71276,7 @@ version 113 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -71362,7 +71362,7 @@ version 113 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -71496,7 +71496,7 @@ version 113 {
         // offset 0x1268, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1298, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12c0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x12f0, size 0x30
@@ -72088,7 +72088,7 @@ version 113 {
         // offset 0x47d8, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4808, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4830, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4860, size 0x30
@@ -72130,7 +72130,7 @@ version 113 {
         // offset 0x4bb8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4be8, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4c10, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4c40, size 0x30
@@ -72160,7 +72160,7 @@ version 113 {
         // offset 0x4e78, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4ea8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4ed0, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4f00, size 0x30
@@ -73149,7 +73149,7 @@ version 113 {
     // offset 0x1b988, size 0x14e0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1ce68, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1ce70, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1d0f0, size 0x12c0
@@ -73644,7 +73644,7 @@ version 112 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -73730,7 +73730,7 @@ version 112 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -73864,7 +73864,7 @@ version 112 {
         // offset 0x1268, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1298, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12c0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x12f0, size 0x30
@@ -74456,7 +74456,7 @@ version 112 {
         // offset 0x47d8, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4808, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4830, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4860, size 0x30
@@ -74498,7 +74498,7 @@ version 112 {
         // offset 0x4bb8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4be8, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4c10, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4c40, size 0x30
@@ -74528,7 +74528,7 @@ version 112 {
         // offset 0x4e78, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4ea8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4ed0, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4f00, size 0x30
@@ -75513,7 +75513,7 @@ version 112 {
     // offset 0x1b988, size 0x14a0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1ce28, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1ce30, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1d0b0, size 0x12c0
@@ -76008,7 +76008,7 @@ version 111 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -76094,7 +76094,7 @@ version 111 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -76228,7 +76228,7 @@ version 111 {
         // offset 0x1268, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1298, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12c0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x12f0, size 0x30
@@ -76820,7 +76820,7 @@ version 111 {
         // offset 0x47d8, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4808, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4830, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4860, size 0x30
@@ -76862,7 +76862,7 @@ version 111 {
         // offset 0x4bb8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4be8, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4c10, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4c40, size 0x30
@@ -76892,7 +76892,7 @@ version 111 {
         // offset 0x4e78, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4ea8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4ed0, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4f00, size 0x30
@@ -77876,7 +77876,7 @@ version 111 {
     // offset 0x1b988, size 0x14a0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1ce28, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1ce30, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1d0b0, size 0x12c0
@@ -78371,7 +78371,7 @@ version 110 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -78457,7 +78457,7 @@ version 110 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -78591,7 +78591,7 @@ version 110 {
         // offset 0x1268, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1298, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12c0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x12f0, size 0x30
@@ -79175,7 +79175,7 @@ version 110 {
         // offset 0x4718, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4748, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4770, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x47a0, size 0x30
@@ -79217,7 +79217,7 @@ version 110 {
         // offset 0x4af8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4b28, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4b50, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4b80, size 0x30
@@ -79247,7 +79247,7 @@ version 110 {
         // offset 0x4db8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4de8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4e10, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4e40, size 0x30
@@ -80230,7 +80230,7 @@ version 110 {
     // offset 0x1b988, size 0x14a0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1ce28, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1ce30, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1d0b0, size 0x12c0
@@ -80725,7 +80725,7 @@ version 109 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -80811,7 +80811,7 @@ version 109 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -80945,7 +80945,7 @@ version 109 {
         // offset 0x1268, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1298, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12c0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x12f0, size 0x30
@@ -81529,7 +81529,7 @@ version 109 {
         // offset 0x4718, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4748, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4770, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x47a0, size 0x30
@@ -81571,7 +81571,7 @@ version 109 {
         // offset 0x4af8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4b28, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4b50, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4b80, size 0x30
@@ -81601,7 +81601,7 @@ version 109 {
         // offset 0x4db8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4de8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4e10, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4e40, size 0x30
@@ -82583,7 +82583,7 @@ version 109 {
     // offset 0x1b988, size 0x14a0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1ce28, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1ce30, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1d0b0, size 0x12c0
@@ -83078,7 +83078,7 @@ version 108 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -83164,7 +83164,7 @@ version 108 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -83298,7 +83298,7 @@ version 108 {
         // offset 0x1268, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1298, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12c0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x12f0, size 0x30
@@ -83882,7 +83882,7 @@ version 108 {
         // offset 0x4718, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4748, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4770, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x47a0, size 0x30
@@ -83924,7 +83924,7 @@ version 108 {
         // offset 0x4af8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4b28, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4b50, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4b80, size 0x30
@@ -83954,7 +83954,7 @@ version 108 {
         // offset 0x4db8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4de8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4e10, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4e40, size 0x30
@@ -84935,7 +84935,7 @@ version 108 {
     // offset 0x1b988, size 0x14a0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1ce28, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1ce30, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1d0b0, size 0x12c0
@@ -85430,7 +85430,7 @@ version 107 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -85516,7 +85516,7 @@ version 107 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -85650,7 +85650,7 @@ version 107 {
         // offset 0x1268, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1298, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12c0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x12f0, size 0x30
@@ -86234,7 +86234,7 @@ version 107 {
         // offset 0x4718, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4748, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4770, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x47a0, size 0x30
@@ -86276,7 +86276,7 @@ version 107 {
         // offset 0x4af8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4b28, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4b50, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4b80, size 0x30
@@ -86306,7 +86306,7 @@ version 107 {
         // offset 0x4db8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4de8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4e10, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4e40, size 0x30
@@ -87287,7 +87287,7 @@ version 107 {
     // offset 0x1b988, size 0x14e0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1ce68, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1ce70, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1d0f0, size 0x12c0
@@ -87782,7 +87782,7 @@ version 106 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -87868,7 +87868,7 @@ version 106 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -88002,7 +88002,7 @@ version 106 {
         // offset 0x1268, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1298, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12c0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x12f0, size 0x30
@@ -88586,7 +88586,7 @@ version 106 {
         // offset 0x4718, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4748, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4770, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x47a0, size 0x30
@@ -88628,7 +88628,7 @@ version 106 {
         // offset 0x4af8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4b28, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4b50, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4b80, size 0x30
@@ -88658,7 +88658,7 @@ version 106 {
         // offset 0x4db8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4de8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4e10, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4e40, size 0x30
@@ -89637,7 +89637,7 @@ version 106 {
     // offset 0x1b988, size 0x14e0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1ce68, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1ce70, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1d0f0, size 0x12c0
@@ -90132,7 +90132,7 @@ version 105 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -90218,7 +90218,7 @@ version 105 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -90352,7 +90352,7 @@ version 105 {
         // offset 0x1268, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1298, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12c0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x12f0, size 0x30
@@ -90936,7 +90936,7 @@ version 105 {
         // offset 0x4718, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4748, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4770, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x47a0, size 0x30
@@ -90978,7 +90978,7 @@ version 105 {
         // offset 0x4af8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4b28, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4b50, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4b80, size 0x30
@@ -91008,7 +91008,7 @@ version 105 {
         // offset 0x4db8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4de8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4e10, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4e40, size 0x30
@@ -91987,7 +91987,7 @@ version 105 {
     // offset 0x1b988, size 0x14e0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1ce68, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1ce70, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1d0f0, size 0x12c0
@@ -92482,7 +92482,7 @@ version 104 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -92568,7 +92568,7 @@ version 104 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -92702,7 +92702,7 @@ version 104 {
         // offset 0x1268, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1298, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12c0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x12f0, size 0x30
@@ -93286,7 +93286,7 @@ version 104 {
         // offset 0x4718, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4748, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4770, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x47a0, size 0x30
@@ -93328,7 +93328,7 @@ version 104 {
         // offset 0x4af8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4b28, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4b50, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4b80, size 0x30
@@ -93358,7 +93358,7 @@ version 104 {
         // offset 0x4db8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4de8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4e10, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4e40, size 0x30
@@ -94336,7 +94336,7 @@ version 104 {
     // offset 0x1b358, size 0x14e0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c838, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c840, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1cac0, size 0x12c0
@@ -94831,7 +94831,7 @@ version 103 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -94917,7 +94917,7 @@ version 103 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -95051,7 +95051,7 @@ version 103 {
         // offset 0x1268, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1298, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12c0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x12f0, size 0x30
@@ -95629,7 +95629,7 @@ version 103 {
         // offset 0x46a0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x46d0, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x46f8, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4728, size 0x30
@@ -95671,7 +95671,7 @@ version 103 {
         // offset 0x4a80, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4ab0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4ad8, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4b08, size 0x30
@@ -95701,7 +95701,7 @@ version 103 {
         // offset 0x4d40, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4d70, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4d98, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4dc8, size 0x30
@@ -96679,7 +96679,7 @@ version 103 {
     // offset 0x1b358, size 0x14e0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c838, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c840, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1cac0, size 0x12c0
@@ -97164,7 +97164,7 @@ version 102 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -97250,7 +97250,7 @@ version 102 {
         // offset 0x608, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x638, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x660, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x690, size 0x28
@@ -97384,7 +97384,7 @@ version 102 {
         // offset 0x1268, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1298, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x12c0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x12f0, size 0x30
@@ -97962,7 +97962,7 @@ version 102 {
         // offset 0x46a0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x46d0, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x46f8, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4728, size 0x30
@@ -98004,7 +98004,7 @@ version 102 {
         // offset 0x4a80, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4ab0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4ad8, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4b08, size 0x30
@@ -98034,7 +98034,7 @@ version 102 {
         // offset 0x4d40, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4d70, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4d98, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4dc8, size 0x30
@@ -99012,7 +99012,7 @@ version 102 {
     // offset 0x1b358, size 0x14e0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c838, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c840, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1cac0, size 0x12c0
@@ -99497,7 +99497,7 @@ version 101 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -99577,7 +99577,7 @@ version 101 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -99711,7 +99711,7 @@ version 101 {
         // offset 0x1220, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1250, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1278, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x12a8, size 0x30
@@ -100279,7 +100279,7 @@ version 101 {
         // offset 0x45e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4610, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4638, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4668, size 0x30
@@ -100321,7 +100321,7 @@ version 101 {
         // offset 0x49c0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x49f0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4a18, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4a48, size 0x30
@@ -100351,7 +100351,7 @@ version 101 {
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4cb0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4cd8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4d08, size 0x30
@@ -101329,7 +101329,7 @@ version 101 {
     // offset 0x1b358, size 0x14e0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c838, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c840, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1cac0, size 0x12c0
@@ -101814,7 +101814,7 @@ version 100 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -101894,7 +101894,7 @@ version 100 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -102028,7 +102028,7 @@ version 100 {
         // offset 0x1220, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1250, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1278, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x12a8, size 0x30
@@ -102596,7 +102596,7 @@ version 100 {
         // offset 0x45e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4610, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4638, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4668, size 0x30
@@ -102638,7 +102638,7 @@ version 100 {
         // offset 0x49c0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x49f0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4a18, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4a48, size 0x30
@@ -102668,7 +102668,7 @@ version 100 {
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4cb0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4cd8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4d08, size 0x30
@@ -103617,7 +103617,7 @@ version 100 {
     // offset 0x1b358, size 0x1140
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c498, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c4a0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c720, size 0x12c0
@@ -104102,7 +104102,7 @@ version 99 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -104182,7 +104182,7 @@ version 99 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -104316,7 +104316,7 @@ version 99 {
         // offset 0x1220, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1250, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1278, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x12a8, size 0x30
@@ -104884,7 +104884,7 @@ version 99 {
         // offset 0x45e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4610, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4638, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4668, size 0x30
@@ -104926,7 +104926,7 @@ version 99 {
         // offset 0x49c0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x49f0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4a18, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4a48, size 0x30
@@ -104956,7 +104956,7 @@ version 99 {
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4cb0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4cd8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4d08, size 0x30
@@ -105893,7 +105893,7 @@ version 99 {
     // offset 0x1b358, size 0x1080
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c3d8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c3e0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c660, size 0x12c0
@@ -106378,7 +106378,7 @@ version 98 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -106458,7 +106458,7 @@ version 98 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -106588,7 +106588,7 @@ version 98 {
         // offset 0x11c0, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11f0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1218, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1248, size 0x30
@@ -107152,7 +107152,7 @@ version 98 {
         // offset 0x4520, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4550, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4578, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x45a8, size 0x30
@@ -107194,7 +107194,7 @@ version 98 {
         // offset 0x4900, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4930, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4958, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4988, size 0x30
@@ -107224,7 +107224,7 @@ version 98 {
         // offset 0x4bc0, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4bf0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4c18, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4c48, size 0x30
@@ -108160,7 +108160,7 @@ version 98 {
     // offset 0x1b358, size 0x1080
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c3d8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c3e0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c660, size 0x12c0
@@ -108645,7 +108645,7 @@ version 97 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -108725,7 +108725,7 @@ version 97 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -108855,7 +108855,7 @@ version 97 {
         // offset 0x11c0, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11f0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1218, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1248, size 0x30
@@ -109419,7 +109419,7 @@ version 97 {
         // offset 0x4520, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4550, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4578, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x45a8, size 0x30
@@ -109461,7 +109461,7 @@ version 97 {
         // offset 0x4900, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4930, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4958, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4988, size 0x30
@@ -109491,7 +109491,7 @@ version 97 {
         // offset 0x4bc0, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4bf0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4c18, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4c48, size 0x30
@@ -110424,7 +110424,7 @@ version 97 {
     // offset 0x1ad28, size 0x1080
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1bda8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1bdb0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c030, size 0x12c0
@@ -110909,7 +110909,7 @@ version 96 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -110989,7 +110989,7 @@ version 96 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -111119,7 +111119,7 @@ version 96 {
         // offset 0x11c0, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11f0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1218, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1248, size 0x30
@@ -111691,7 +111691,7 @@ version 96 {
         // offset 0x45e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4610, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4638, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4668, size 0x30
@@ -111733,7 +111733,7 @@ version 96 {
         // offset 0x49c0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x49f0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4a18, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4a48, size 0x30
@@ -111763,7 +111763,7 @@ version 96 {
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4cb0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4cd8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4d08, size 0x30
@@ -112696,7 +112696,7 @@ version 96 {
     // offset 0x1ad28, size 0x1080
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1bda8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1bdb0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c030, size 0x12c0
@@ -113181,7 +113181,7 @@ version 95 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -113261,7 +113261,7 @@ version 95 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -113391,7 +113391,7 @@ version 95 {
         // offset 0x11c0, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11f0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1218, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1248, size 0x30
@@ -113963,7 +113963,7 @@ version 95 {
         // offset 0x45e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4610, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4638, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4668, size 0x30
@@ -114005,7 +114005,7 @@ version 95 {
         // offset 0x49c0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x49f0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4a18, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4a48, size 0x30
@@ -114035,7 +114035,7 @@ version 95 {
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4cb0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4cd8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4d08, size 0x30
@@ -114966,7 +114966,7 @@ version 95 {
     // offset 0x1ad28, size 0x1080
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1bda8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1bdb0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c030, size 0x12c0
@@ -115451,7 +115451,7 @@ version 94 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -115531,7 +115531,7 @@ version 94 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -115661,7 +115661,7 @@ version 94 {
         // offset 0x11c0, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11f0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1218, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1248, size 0x30
@@ -116233,7 +116233,7 @@ version 94 {
         // offset 0x45e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4610, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4638, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4668, size 0x30
@@ -116275,7 +116275,7 @@ version 94 {
         // offset 0x49c0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x49f0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4a18, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4a48, size 0x30
@@ -116305,7 +116305,7 @@ version 94 {
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4cb0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4cd8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4d08, size 0x30
@@ -117235,7 +117235,7 @@ version 94 {
     // offset 0x1ad28, size 0x1080
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1bda8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1bdb0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c030, size 0x12c0
@@ -117720,7 +117720,7 @@ version 93 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -117800,7 +117800,7 @@ version 93 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -117930,7 +117930,7 @@ version 93 {
         // offset 0x11c0, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11f0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1218, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1248, size 0x30
@@ -118502,7 +118502,7 @@ version 93 {
         // offset 0x45e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4610, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4638, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4668, size 0x30
@@ -118544,7 +118544,7 @@ version 93 {
         // offset 0x49c0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x49f0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4a18, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4a48, size 0x30
@@ -118574,7 +118574,7 @@ version 93 {
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4cb0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4cd8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4d08, size 0x30
@@ -119496,7 +119496,7 @@ version 93 {
     // offset 0x1ad28, size 0x1080
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1bda8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1bdb0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c030, size 0x12c0
@@ -119981,7 +119981,7 @@ version 92 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -120061,7 +120061,7 @@ version 92 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -120191,7 +120191,7 @@ version 92 {
         // offset 0x11c0, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11f0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1218, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1248, size 0x30
@@ -120763,7 +120763,7 @@ version 92 {
         // offset 0x45e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4610, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4638, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4668, size 0x30
@@ -120805,7 +120805,7 @@ version 92 {
         // offset 0x49c0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x49f0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4a18, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4a48, size 0x30
@@ -120835,7 +120835,7 @@ version 92 {
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4cb0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4cd8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4d08, size 0x30
@@ -121756,7 +121756,7 @@ version 92 {
     // offset 0x1ad28, size 0x1080
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1bda8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1bdb0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c030, size 0x1260
@@ -122241,7 +122241,7 @@ version 91 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -122321,7 +122321,7 @@ version 91 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -122451,7 +122451,7 @@ version 91 {
         // offset 0x11c0, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11f0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1218, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1248, size 0x30
@@ -123023,7 +123023,7 @@ version 91 {
         // offset 0x45e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4610, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4638, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4668, size 0x30
@@ -123065,7 +123065,7 @@ version 91 {
         // offset 0x49c0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x49f0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4a18, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4a48, size 0x30
@@ -123095,7 +123095,7 @@ version 91 {
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4cb0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4cd8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4d08, size 0x30
@@ -124013,7 +124013,7 @@ version 91 {
     // offset 0x1ad28, size 0x1080
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1bda8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1bdb0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c030, size 0x11a0
@@ -124498,7 +124498,7 @@ version 90 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -124578,7 +124578,7 @@ version 90 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -124708,7 +124708,7 @@ version 90 {
         // offset 0x11c0, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11f0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1218, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1248, size 0x30
@@ -125280,7 +125280,7 @@ version 90 {
         // offset 0x45e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4610, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4638, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4668, size 0x30
@@ -125322,7 +125322,7 @@ version 90 {
         // offset 0x49c0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x49f0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4a18, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4a48, size 0x30
@@ -125352,7 +125352,7 @@ version 90 {
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4cb0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4cd8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4d08, size 0x30
@@ -126269,7 +126269,7 @@ version 90 {
     // offset 0x1ad28, size 0x1080
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1bda8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1bdb0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c030, size 0x11a0
@@ -126754,7 +126754,7 @@ version 89 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -126834,7 +126834,7 @@ version 89 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -126964,7 +126964,7 @@ version 89 {
         // offset 0x11c0, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11f0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1218, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1248, size 0x30
@@ -127536,7 +127536,7 @@ version 89 {
         // offset 0x45e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4610, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4638, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4668, size 0x30
@@ -127578,7 +127578,7 @@ version 89 {
         // offset 0x49c0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x49f0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4a18, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4a48, size 0x30
@@ -127608,7 +127608,7 @@ version 89 {
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4cb0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4cd8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4d08, size 0x30
@@ -128524,7 +128524,7 @@ version 89 {
     // offset 0x1ad28, size 0x1080
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1bda8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1bdb0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c030, size 0x11a0
@@ -129009,7 +129009,7 @@ version 88 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -129089,7 +129089,7 @@ version 88 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -129219,7 +129219,7 @@ version 88 {
         // offset 0x11c0, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11f0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1218, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1248, size 0x30
@@ -129791,7 +129791,7 @@ version 88 {
         // offset 0x45e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4610, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4638, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4668, size 0x30
@@ -129833,7 +129833,7 @@ version 88 {
         // offset 0x49c0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x49f0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4a18, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4a48, size 0x30
@@ -129863,7 +129863,7 @@ version 88 {
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4cb0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4cd8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4d08, size 0x30
@@ -130778,7 +130778,7 @@ version 88 {
     // offset 0x1ad28, size 0x1080
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1bda8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1bdb0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c030, size 0x11a0
@@ -131263,7 +131263,7 @@ version 87 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -131343,7 +131343,7 @@ version 87 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -131473,7 +131473,7 @@ version 87 {
         // offset 0x11c0, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11f0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1218, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1248, size 0x30
@@ -132045,7 +132045,7 @@ version 87 {
         // offset 0x45e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4610, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4638, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4668, size 0x30
@@ -132087,7 +132087,7 @@ version 87 {
         // offset 0x49c0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x49f0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4a18, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4a48, size 0x30
@@ -132117,7 +132117,7 @@ version 87 {
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4cb0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4cd8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4d08, size 0x30
@@ -133031,7 +133031,7 @@ version 87 {
     // offset 0x1ad28, size 0x1080
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1bda8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1bdb0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c030, size 0x11a0
@@ -133516,7 +133516,7 @@ version 86 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -133592,7 +133592,7 @@ version 86 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -133722,7 +133722,7 @@ version 86 {
         // offset 0x11c0, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11f0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1218, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1248, size 0x30
@@ -134294,7 +134294,7 @@ version 86 {
         // offset 0x45e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4610, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4638, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4668, size 0x30
@@ -134336,7 +134336,7 @@ version 86 {
         // offset 0x49c0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x49f0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4a18, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4a48, size 0x30
@@ -134366,7 +134366,7 @@ version 86 {
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4cb0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4cd8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4d08, size 0x30
@@ -135280,7 +135280,7 @@ version 86 {
     // offset 0x1ad28, size 0x1080
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1bda8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1bdb0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c030, size 0x11a0
@@ -135765,7 +135765,7 @@ version 85 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -135841,7 +135841,7 @@ version 85 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -135971,7 +135971,7 @@ version 85 {
         // offset 0x11c0, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11f0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1218, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1248, size 0x30
@@ -136543,7 +136543,7 @@ version 85 {
         // offset 0x45e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4610, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4638, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4668, size 0x30
@@ -136585,7 +136585,7 @@ version 85 {
         // offset 0x49c0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x49f0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4a18, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4a48, size 0x30
@@ -136615,7 +136615,7 @@ version 85 {
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4cb0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4cd8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4d08, size 0x30
@@ -137536,7 +137536,7 @@ version 85 {
     // offset 0x1ad28, size 0x10e0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1be08, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1be10, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c090, size 0x11a0
@@ -138021,7 +138021,7 @@ version 84 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -138097,7 +138097,7 @@ version 84 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -138227,7 +138227,7 @@ version 84 {
         // offset 0x11c0, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11f0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1218, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1248, size 0x30
@@ -138799,7 +138799,7 @@ version 84 {
         // offset 0x45e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4610, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4638, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4668, size 0x30
@@ -138841,7 +138841,7 @@ version 84 {
         // offset 0x49c0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x49f0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4a18, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4a48, size 0x30
@@ -138871,7 +138871,7 @@ version 84 {
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4cb0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4cd8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4d08, size 0x30
@@ -139792,7 +139792,7 @@ version 84 {
     // offset 0x1ad28, size 0x10e0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1be08, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1be10, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c090, size 0x11a0
@@ -140277,7 +140277,7 @@ version 83 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -140353,7 +140353,7 @@ version 83 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x28
@@ -140483,7 +140483,7 @@ version 83 {
         // offset 0x11c0, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11f0, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1218, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1248, size 0x30
@@ -141055,7 +141055,7 @@ version 83 {
         // offset 0x45e0, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4610, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4638, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4668, size 0x30
@@ -141097,7 +141097,7 @@ version 83 {
         // offset 0x49c0, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x49f0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4a18, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4a48, size 0x30
@@ -141127,7 +141127,7 @@ version 83 {
         // offset 0x4c80, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4cb0, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4cd8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4d08, size 0x30
@@ -142048,7 +142048,7 @@ version 83 {
     // offset 0x1ad28, size 0x10e0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1be08, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1be10, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c090, size 0x11a0
@@ -142533,7 +142533,7 @@ version 82 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -142609,7 +142609,7 @@ version 82 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x30
@@ -142737,7 +142737,7 @@ version 82 {
         // offset 0x1198, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11c8, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x11f0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1220, size 0x30
@@ -143305,7 +143305,7 @@ version 82 {
         // offset 0x4568, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4598, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x45c0, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x45f0, size 0x30
@@ -143345,7 +143345,7 @@ version 82 {
         // offset 0x4920, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4950, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4978, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x49a8, size 0x30
@@ -143375,7 +143375,7 @@ version 82 {
         // offset 0x4be0, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4c10, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4c38, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4c68, size 0x30
@@ -144296,7 +144296,7 @@ version 82 {
     // offset 0x1ad28, size 0x10e0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1be08, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1be10, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c090, size 0x11a0
@@ -144781,7 +144781,7 @@ version 81 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -144857,7 +144857,7 @@ version 81 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x30
@@ -144985,7 +144985,7 @@ version 81 {
         // offset 0x1198, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11c8, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x11f0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1220, size 0x30
@@ -145541,7 +145541,7 @@ version 81 {
         // offset 0x44d8, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4508, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4530, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4560, size 0x30
@@ -145581,7 +145581,7 @@ version 81 {
         // offset 0x4890, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x48c0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x48e8, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4918, size 0x30
@@ -145611,7 +145611,7 @@ version 81 {
         // offset 0x4b50, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4b80, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4ba8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4bd8, size 0x30
@@ -146520,7 +146520,7 @@ version 81 {
     // offset 0x1ad28, size 0x1020
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1bd48, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1bd50, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1bfd0, size 0x11a0
@@ -147005,7 +147005,7 @@ version 80 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -147081,7 +147081,7 @@ version 80 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x30
@@ -147209,7 +147209,7 @@ version 80 {
         // offset 0x1198, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11c8, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x11f0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1220, size 0x30
@@ -147765,7 +147765,7 @@ version 80 {
         // offset 0x44d8, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4508, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4530, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4560, size 0x30
@@ -147805,7 +147805,7 @@ version 80 {
         // offset 0x4890, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x48c0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x48e8, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4918, size 0x30
@@ -147835,7 +147835,7 @@ version 80 {
         // offset 0x4b50, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4b80, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4ba8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4bd8, size 0x30
@@ -148743,7 +148743,7 @@ version 80 {
     // offset 0x1ad28, size 0x1020
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1bd48, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1bd50, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1bfd0, size 0x1140
@@ -149228,7 +149228,7 @@ version 79 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -149304,7 +149304,7 @@ version 79 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x30
@@ -149432,7 +149432,7 @@ version 79 {
         // offset 0x1198, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11c8, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x11f0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1220, size 0x30
@@ -149988,7 +149988,7 @@ version 79 {
         // offset 0x44d8, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4508, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4530, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4560, size 0x30
@@ -150028,7 +150028,7 @@ version 79 {
         // offset 0x4890, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x48c0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x48e8, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4918, size 0x30
@@ -150058,7 +150058,7 @@ version 79 {
         // offset 0x4b50, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4b80, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4ba8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4bd8, size 0x30
@@ -150958,7 +150958,7 @@ version 79 {
     // offset 0x1ad28, size 0xfa0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1bcc8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1bcd0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1bf50, size 0x1140
@@ -151443,7 +151443,7 @@ version 78 {
         // offset 0x10, size 0x8
         factionid currentfaction;
         // offset 0x18, size 0x8
-        uint:8 hash_4d468697915dfaa;
+        uint:8 currentcallingiddvar;
         // offset 0x20, size 0x8080
         hash_2bf2e4a130fa6bec seasons[8];
         // offset 0x80a0, size 0x8
@@ -151519,7 +151519,7 @@ version 78 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x30
@@ -151647,7 +151647,7 @@ version 78 {
         // offset 0x1198, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11c8, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x11f0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1220, size 0x30
@@ -152203,7 +152203,7 @@ version 78 {
         // offset 0x44d8, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4508, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4530, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4560, size 0x30
@@ -152243,7 +152243,7 @@ version 78 {
         // offset 0x4890, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x48c0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x48e8, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4918, size 0x30
@@ -152273,7 +152273,7 @@ version 78 {
         // offset 0x4b50, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4b80, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4ba8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4bd8, size 0x30
@@ -153172,7 +153172,7 @@ version 78 {
     // offset 0x1ad28, size 0xfa0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1bcc8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1bcd0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1bf50, size 0x1140
@@ -153749,7 +153749,7 @@ version 77 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x30
@@ -153877,7 +153877,7 @@ version 77 {
         // offset 0x1198, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11c8, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x11f0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1220, size 0x30
@@ -154433,7 +154433,7 @@ version 77 {
         // offset 0x44d8, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4508, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4530, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4560, size 0x30
@@ -154473,7 +154473,7 @@ version 77 {
         // offset 0x4890, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x48c0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x48e8, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4918, size 0x30
@@ -154503,7 +154503,7 @@ version 77 {
         // offset 0x4b50, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4b80, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4ba8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4bd8, size 0x30
@@ -155381,7 +155381,7 @@ version 77 {
     // offset 0x1b368, size 0xfa0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c308, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c310, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c590, size 0x1140
@@ -155958,7 +155958,7 @@ version 76 {
         // offset 0x5c0, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5f0, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x618, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x648, size 0x30
@@ -156086,7 +156086,7 @@ version 76 {
         // offset 0x1198, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x11c8, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x11f0, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x1220, size 0x30
@@ -156642,7 +156642,7 @@ version 76 {
         // offset 0x44d8, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4508, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4530, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x4560, size 0x30
@@ -156682,7 +156682,7 @@ version 76 {
         // offset 0x4890, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x48c0, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x48e8, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4918, size 0x30
@@ -156712,7 +156712,7 @@ version 76 {
         // offset 0x4b50, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x4b80, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4ba8, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4bd8, size 0x30
@@ -157584,7 +157584,7 @@ version 76 {
     // offset 0x1b368, size 0xf40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1c2a8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1c2b0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1c530, size 0x1140
@@ -158157,7 +158157,7 @@ version 75 {
         // offset 0x5a8, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5d8, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x600, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x630, size 0x30
@@ -158277,7 +158277,7 @@ version 75 {
         // offset 0x1120, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1150, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1178, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x11a8, size 0x30
@@ -158809,7 +158809,7 @@ version 75 {
         // offset 0x4340, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4370, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4398, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x43c8, size 0x30
@@ -158849,7 +158849,7 @@ version 75 {
         // offset 0x46f8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4728, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4750, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4780, size 0x30
@@ -158879,7 +158879,7 @@ version 75 {
         // offset 0x49b8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x49e8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4a10, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4a40, size 0x30
@@ -159749,7 +159749,7 @@ version 75 {
     // offset 0x1a7f8, size 0xf40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1b738, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1b740, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b9c0, size 0x1140
@@ -160322,7 +160322,7 @@ version 74 {
         // offset 0x5a8, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5d8, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x600, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x630, size 0x30
@@ -160442,7 +160442,7 @@ version 74 {
         // offset 0x1120, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1150, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1178, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x11a8, size 0x30
@@ -160974,7 +160974,7 @@ version 74 {
         // offset 0x4340, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4370, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4398, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x43c8, size 0x30
@@ -161014,7 +161014,7 @@ version 74 {
         // offset 0x46f8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4728, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4750, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4780, size 0x30
@@ -161044,7 +161044,7 @@ version 74 {
         // offset 0x49b8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x49e8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4a10, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4a40, size 0x30
@@ -161913,7 +161913,7 @@ version 74 {
     // offset 0x1a7f8, size 0xf40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1b738, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1b740, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b9c0, size 0x1140
@@ -162486,7 +162486,7 @@ version 73 {
         // offset 0x5a8, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5d8, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x600, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x630, size 0x30
@@ -162606,7 +162606,7 @@ version 73 {
         // offset 0x1120, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1150, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1178, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x11a8, size 0x30
@@ -163138,7 +163138,7 @@ version 73 {
         // offset 0x4340, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4370, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4398, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x43c8, size 0x30
@@ -163178,7 +163178,7 @@ version 73 {
         // offset 0x46f8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4728, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4750, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4780, size 0x30
@@ -163208,7 +163208,7 @@ version 73 {
         // offset 0x49b8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x49e8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4a10, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4a40, size 0x30
@@ -164056,7 +164056,7 @@ version 73 {
     // offset 0x1a1f8, size 0xe00
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1aff8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1b000, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b280, size 0x1140
@@ -164629,7 +164629,7 @@ version 72 {
         // offset 0x5a8, size 0x30
         hash_6c116eea1f7184ec survivalist_survive_rounds;
         // offset 0x5d8, size 0x28
-        hash_2b6b162a9af31225 hash_4a81e4e6a345bab;
+        hash_2b6b162a9af31225 camo_active_showstopper_base_kills;
         // offset 0x600, size 0x30
         hash_6c116eea1f7184ec killed_by_brutus;
         // offset 0x630, size 0x30
@@ -164749,7 +164749,7 @@ version 72 {
         // offset 0x1120, size 0x30
         hash_6c116eea1f7184ec grabbed_from_magicbox;
         // offset 0x1150, size 0x28
-        hash_2b6b162a9af31225 hash_370591287cb428d2;
+        hash_2b6b162a9af31225 camo_active_rapid_kills_base_rapid_kills;
         // offset 0x1178, size 0x30
         hash_6c116eea1f7184ec hash_702d98df99af63d5;
         // offset 0x11a8, size 0x30
@@ -165281,7 +165281,7 @@ version 72 {
         // offset 0x4340, size 0x30
         hash_6c116eea1f7184ec zm_daily_kills_crawler;
         // offset 0x4370, size 0x28
-        hash_2b6b162a9af31225 hash_99ba99f674f9d66;
+        hash_2b6b162a9af31225 camo_active_take_it_personally_base_kills;
         // offset 0x4398, size 0x30
         hash_6c116eea1f7184ec hash_2a72be53205a8db3;
         // offset 0x43c8, size 0x30
@@ -165321,7 +165321,7 @@ version 72 {
         // offset 0x46f8, size 0x30
         hash_6c116eea1f7184ec headshots;
         // offset 0x4728, size 0x28
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x4750, size 0x30
         hash_6c116eea1f7184ec teamkills;
         // offset 0x4780, size 0x30
@@ -165351,7 +165351,7 @@ version 72 {
         // offset 0x49b8, size 0x30
         hash_6c116eea1f7184ec zombie_hunter_plasmatic_burst;
         // offset 0x49e8, size 0x28
-        hash_2b6b162a9af31225 hash_60d94e10cacba8cb;
+        hash_2b6b162a9af31225 camo_active_kills_without_dying_base_kills;
         // offset 0x4a10, size 0x30
         hash_6c116eea1f7184ec catalyst_electrics_killed;
         // offset 0x4a40, size 0x30
@@ -166199,7 +166199,7 @@ version 72 {
     // offset 0x1a1f8, size 0xe00
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1aff8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1b000, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b280, size 0x1140
@@ -168308,7 +168308,7 @@ version 71 {
     // offset 0x1a1f8, size 0xe00
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1aff8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1b000, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b280, size 0x1140
@@ -170403,7 +170403,7 @@ version 70 {
     // offset 0x1a1f8, size 0xe00
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1aff8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1b000, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b280, size 0x1140
@@ -172497,7 +172497,7 @@ version 69 {
     // offset 0x1a1f8, size 0xe00
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1aff8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1b000, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b280, size 0x1140
@@ -174589,7 +174589,7 @@ version 68 {
     // offset 0x1a1f8, size 0xde0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1afd8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1afe0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b260, size 0x1140
@@ -176679,7 +176679,7 @@ version 67 {
     // offset 0x1a1f8, size 0xdc0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1afb8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1afc0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b240, size 0x1140
@@ -178767,7 +178767,7 @@ version 66 {
     // offset 0x1a1f8, size 0xdc0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1afb8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1afc0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b240, size 0x1140
@@ -180855,7 +180855,7 @@ version 65 {
     // offset 0x1a1f8, size 0xdc0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1afb8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1afc0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b240, size 0x1140
@@ -182942,7 +182942,7 @@ version 64 {
     // offset 0x1a1f8, size 0xdc0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1afb8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1afc0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b240, size 0x1140
@@ -185028,7 +185028,7 @@ version 63 {
     // offset 0x1a1f8, size 0xdc0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1afb8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1afc0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b240, size 0x1140
@@ -187102,7 +187102,7 @@ version 62 {
     // offset 0x1a1f8, size 0xdc0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1afb8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1afc0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b240, size 0x1140
@@ -189173,7 +189173,7 @@ version 61 {
     // offset 0x1a1f8, size 0xdc0
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1afb8, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1afc0, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b240, size 0x1140
@@ -191219,7 +191219,7 @@ version 60 {
     // offset 0x1a1f8, size 0xc40
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1ae38, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1ae40, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b0c0, size 0x1140
@@ -193263,7 +193263,7 @@ version 59 {
     // offset 0x1a1f8, size 0xc20
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1ae18, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1ae20, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b0a0, size 0x1140
@@ -195307,7 +195307,7 @@ version 58 {
     // offset 0x1a1f8, size 0xc20
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1ae18, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1ae20, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b0a0, size 0x1140
@@ -197339,7 +197339,7 @@ version 57 {
     // offset 0x1a1f8, size 0xc20
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1ae18, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1ae20, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b0a0, size 0x1140
@@ -199363,7 +199363,7 @@ version 56 {
     // offset 0x1a1f8, size 0xc20
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1ae18, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1ae20, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b0a0, size 0x1140
@@ -201385,7 +201385,7 @@ version 55 {
     // offset 0x1a1f8, size 0xc20
     rankeditemstats ranked_item_stats[zmrankeditems];
     // offset 0x1ae18, size 0x8
-    uint:8 hash_1c539a1b16b48b16;
+    uint:8 current_event_calling;
     // offset 0x1ae20, size 0x280
     uint hash_658c026fb3d608db[20];
     // offset 0x1b0a0, size 0x1140

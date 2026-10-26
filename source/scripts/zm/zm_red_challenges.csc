@@ -106,7 +106,7 @@ function apollo_bowl_fx( localclientnum, oldval, newval, bnewent, binitialsnap, 
         var_ff01f974 = 4;
     }
     
-    self playsound( localclientnum, #"hash_4b301fe401c4f18" );
+    self playsound( localclientnum, #"zmb_challenges_apollo_ignite" );
     self.var_b7c1fb99 = self playloopsound( #"hash_6143f452bc746a62" + var_ff01f974 );
 }
 
@@ -160,8 +160,8 @@ function tribute_flame_fx( localclientnum, oldval, newval, bnewent, binitialsnap
     
     if ( !isdefined( self.var_b10399e ) )
     {
-        self playsound( localclientnum, #"hash_6845d8009f05e81c" );
-        self.var_b10399e = self playloopsound( #"hash_205cc527b5726b4d" );
+        self playsound( localclientnum, #"zmb_challenges_tribute_ignite" );
+        self.var_b10399e = self playloopsound( #"zmb_challenges_tribute_ignite_lp" );
     }
 }
 

@@ -6,7 +6,7 @@
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/barn_burner",
-        "icon": "image#hash_67632f73604cb68b",
+        "icon": "image#ui_icon_emotes_s3_linedancing",
         "isdefault": 0
     }
 }

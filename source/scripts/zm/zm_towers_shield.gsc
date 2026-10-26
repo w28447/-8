@@ -813,7 +813,7 @@ function function_aa1e87dd( b_skipped = 0, var_19e802fa = 0 )
     level endon( #"end_game" );
     self endon( #"disconnect" );
     self flag::set( #"hash_320a1da5bf925c8b" );
-    playsoundatposition( #"hash_3a5be037b504d0f0", ( 0, 0, 0 ) );
+    playsoundatposition( #"zmb_bull_all_hit", ( 0, 0, 0 ) );
     self thread function_3624f8c8( #"lower" );
 }
 

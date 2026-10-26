@@ -1701,13 +1701,13 @@
         {
             "value": 22,
             "next": 34,
-            "name": "#hash_52c41ead9200904d",
+            "name": "#vox_muse_global_pa",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_52c41ead9200904d",
+                    "name": "#vox_muse_global_pa",
                     "assetId": "#hash_5c9d1a2be2fa327",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -1747,7 +1747,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_52c41ead9200904d",
+                    "name": "#vox_muse_global_pa",
                     "assetId": "#hash_70120a93be37cd0a",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -1787,7 +1787,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_52c41ead9200904d",
+                    "name": "#vox_muse_global_pa",
                     "assetId": "#hash_375f4abb14782495",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -1827,7 +1827,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_52c41ead9200904d",
+                    "name": "#vox_muse_global_pa",
                     "assetId": "#hash_621e8585e674a6a0",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -1867,7 +1867,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_52c41ead9200904d",
+                    "name": "#vox_muse_global_pa",
                     "assetId": "#hash_55d7f77b7a9abed3",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -1907,7 +1907,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_52c41ead9200904d",
+                    "name": "#vox_muse_global_pa",
                     "assetId": "#hash_2bc1cf211722ea56",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -1947,7 +1947,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_52c41ead9200904d",
+                    "name": "#vox_muse_global_pa",
                     "assetId": "#hash_5a3d5bc33bb4c1a1",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -1987,7 +1987,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_52c41ead9200904d",
+                    "name": "#vox_muse_global_pa",
                     "assetId": "#hash_308b4e71344dcebc",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -2027,7 +2027,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_52c41ead9200904d",
+                    "name": "#vox_muse_global_pa",
                     "assetId": "#hash_3d2109eb77582b4f",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -2067,7 +2067,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_52c41ead9200904d",
+                    "name": "#vox_muse_global_pa",
                     "assetId": "#hash_7ca9501c0d8b3e52",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -2107,7 +2107,7 @@
                     "unk178": "#hash_18011f0808"
                 },
                 {
-                    "name": "#hash_52c41ead9200904d",
+                    "name": "#vox_muse_global_pa",
                     "assetId": "#hash_3978482fffc7d390",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -2601,13 +2601,13 @@
         {
             "value": 39,
             "next": 65535,
-            "name": "#hash_6fb3ade70f390aa9",
+            "name": "#vox_tedd_arrive_destination",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6fb3ade70f390aa9",
+                    "name": "#vox_tedd_arrive_destination",
                     "assetId": "#hash_2ce7f42b5a6b5b88",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -2651,13 +2651,13 @@
         {
             "value": 25,
             "next": 38,
-            "name": "#hash_51007245feb9a4c7",
+            "name": "#vox_tedd_arrive_groom",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_51007245feb9a4c7",
+                    "name": "#vox_tedd_arrive_groom",
                     "assetId": "#hash_66e5121a3b1877c",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -2701,13 +2701,13 @@
         {
             "value": 20,
             "next": 65535,
-            "name": "#hash_4d8dbc34c266c4b",
+            "name": "#vox_tedd_arrive_not_found",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4d8dbc34c266c4b",
+                    "name": "#vox_tedd_arrive_not_found",
                     "assetId": "#hash_43f32d3c65b7d7ce",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -2751,13 +2751,13 @@
         {
             "value": 42,
             "next": 65535,
-            "name": "#hash_eb83441654685fb",
+            "name": "#vox_tedd_arrive_springs",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_eb83441654685fb",
+                    "name": "#vox_tedd_arrive_springs",
                     "assetId": "#hash_62584db5cf4e1aa1",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -2801,13 +2801,13 @@
         {
             "value": 26,
             "next": 10,
-            "name": "#hash_46258c209a94e5a7",
+            "name": "#vox_tedd_arrive_test",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_46258c209a94e5a7",
+                    "name": "#vox_tedd_arrive_test",
                     "assetId": "#hash_274103046887611a",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -2951,13 +2951,13 @@
         {
             "value": 31,
             "next": 65535,
-            "name": "#hash_412405ca0ff49480",
+            "name": "#vox_tedd_default_route",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_412405ca0ff49480",
+                    "name": "#vox_tedd_default_route",
                     "assetId": "#hash_1874e363b4db8114",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -3201,13 +3201,13 @@
         {
             "value": 1,
             "next": 65535,
-            "name": "#hash_18e8eb5557ea77fc",
+            "name": "#vox_tedd_pay_driver",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_18e8eb5557ea77fc",
+                    "name": "#vox_tedd_pay_driver",
                     "assetId": "#hash_353531d366d667b8",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -3351,13 +3351,13 @@
         {
             "value": 47,
             "next": 65535,
-            "name": "#hash_1c4045d3bb8067d5",
+            "name": "#vox_tedd_warn_place",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1c4045d3bb8067d5",
+                    "name": "#vox_tedd_warn_place",
                     "assetId": "#hash_5338f2be8c2869d6",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",
@@ -3401,13 +3401,13 @@
         {
             "value": 37,
             "next": 65535,
-            "name": "#hash_52e3198f4ba8821c",
+            "name": "#vox_tedd_warning_warning",
             "sequence": 0,
             "cullDistance": 1500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_52e3198f4ba8821c",
+                    "name": "#vox_tedd_warning_warning",
                     "assetId": "#hash_5622a9843a5cc3e8",
                     "assetFileNameSustain": "#mp_zombie_museum.fj",
                     "assetIdRelease": "#mp_zombie_museum.fj",

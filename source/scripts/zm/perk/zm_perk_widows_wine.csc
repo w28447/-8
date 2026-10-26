@@ -90,8 +90,8 @@ function function_fd02d096( localclientnum, oldval, newval, bnewent, binitialsna
             
             if ( !isdefined( self.sndwidowswine ) )
             {
-                self playsound( localclientnum, #"hash_21bfd3813003fd44" );
-                self.sndwidowswine = self playloopsound( #"hash_199de7173fb36de6", 0.1 );
+                self playsound( localclientnum, #"zmb_vapor_winterswail_zmb_imp" );
+                self.sndwidowswine = self playloopsound( #"zmb_vapor_winterswail_zmb_lp", 0.1 );
             }
         }
         
@@ -126,7 +126,7 @@ function widows_wine_explosion( localclientnum, oldval, newval, bnewent, binitia
         }
         
         playfx( localclientnum, level._effect[ #"winters_wail_explosion" ], origin, anglestoforward( self.angles ) );
-        self playsound( localclientnum, #"hash_3b59d3c99bac4071" );
+        self playsound( localclientnum, #"zmb_vapor_winterswail_activate" );
     }
 }
 

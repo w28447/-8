@@ -1501,7 +1501,7 @@ function function_365bef4( localclientnum, b_debug = 0 )
     level flag::clear( #"hash_4bbc47f6a0a31743" );
     s_cam = struct::get( #"tag_align_zm_lab" );
     playmaincamxcam( localclientnum, "ui_scene_cam_zm_lab_in", 0, "", "", s_cam.origin, s_cam.angles );
-    playsound( localclientnum, #"hash_3e1e95a35dedc6bc" );
+    playsound( localclientnum, #"evt_mach_startup" );
     level thread scene::play( level.var_49f26c00.var_42c70173, level.var_49f26c00.var_febe408a + "_exit" );
     wait 0.5;
     function_6198ffc( 1, 0 );
@@ -1756,7 +1756,7 @@ function skip_to_reveal( localclientnum )
 // Size: 0x12c
 function function_3dd68dd9( localclientnum, var_8bad1c0 = 1 )
 {
-    playsound( localclientnum, #"hash_7ca34384c7d609e0" );
+    playsound( localclientnum, #"evt_magnesium_flash" );
     frontend::toggle_postfx( localclientnum, 1, #"hash_2d04a3877a927be7" );
     
     if ( ishash( var_8bad1c0 ) || isstring( var_8bad1c0 ) )

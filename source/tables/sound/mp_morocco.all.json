@@ -2772,13 +2772,13 @@
         {
             "value": 56,
             "next": 65535,
-            "name": "#hash_3e0564de8eb287d0",
+            "name": "#amb_morocco_ext_wind_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3e0564de8eb287d0",
+                    "name": "#amb_morocco_ext_wind_2d",
                     "assetId": "#amb/environment/wind/canyon/outdoor_canyon_wind.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -2821,13 +2821,13 @@
         {
             "value": 160,
             "next": 65535,
-            "name": "#hash_1cc7c5115db131f2",
+            "name": "#amb_morocco_int_wind_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1cc7c5115db131f2",
+                    "name": "#amb_morocco_int_wind_2d",
                     "assetId": "#amb/environment/location_bgs/country_air/interior/amb_int_country_air.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -4703,13 +4703,13 @@
         {
             "value": 17,
             "next": 44,
-            "name": "#hash_5970a11a29706b7",
+            "name": "#amb_well_water_drips",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5970a11a29706b7",
+                    "name": "#amb_well_water_drips",
                     "assetId": "#amb/environment/water/well/well_drips_01.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -8295,13 +8295,13 @@
         {
             "value": 124,
             "next": 65535,
-            "name": "#hash_7f118ea3a4874268",
+            "name": "#dst_mp_propane_tank_fire",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7f118ea3a4874268",
+                    "name": "#dst_mp_propane_tank_fire",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
                     "assetFileNameRelease": "#mp_morocco.all",
@@ -10112,7 +10112,7 @@
             "aliases": [
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -10153,7 +10153,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -10194,7 +10194,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -10235,7 +10235,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -10276,7 +10276,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -10317,7 +10317,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -10358,7 +10358,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -10402,13 +10402,13 @@
         {
             "value": 52,
             "next": 65535,
-            "name": "#hash_3b6983b084cfef53",
+            "name": "#dst_transformer_explo_spark",
             "sequence": 0,
             "cullDistance": 6000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
@@ -10449,7 +10449,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
@@ -10490,7 +10490,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
@@ -10531,7 +10531,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
@@ -10572,7 +10572,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
@@ -10613,7 +10613,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
@@ -10654,7 +10654,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
@@ -10695,7 +10695,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
@@ -15740,13 +15740,13 @@
         {
             "value": 100,
             "next": 19,
-            "name": "#hash_200e28bcd26bab77",
+            "name": "#exp_mp_propane_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_200e28bcd26bab77",
+                    "name": "#exp_mp_propane_flux_l",
                     "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
@@ -15791,13 +15791,13 @@
         {
             "value": 136,
             "next": 65535,
-            "name": "#hash_200e2ebcd26bb5a9",
+            "name": "#exp_mp_propane_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_200e2ebcd26bb5a9",
+                    "name": "#exp_mp_propane_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_r/flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -16138,13 +16138,13 @@
         {
             "value": 21,
             "next": 65535,
-            "name": "#hash_7ac5fa6568de2461",
+            "name": "#exp_mp_propane_tank_lfe",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -16183,7 +16183,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -16222,7 +16222,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -16261,7 +16261,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -16790,13 +16790,13 @@
         {
             "value": 97,
             "next": 65535,
-            "name": "#hash_456af38afaef9d77",
+            "name": "#exp_propane_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_456af38afaef9d77",
+                    "name": "#exp_propane_flux_l",
                     "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
@@ -16841,13 +16841,13 @@
         {
             "value": 143,
             "next": 65535,
-            "name": "#hash_456af98afaefa7a9",
+            "name": "#exp_propane_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_456af98afaefa7a9",
+                    "name": "#exp_propane_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_r/flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -17904,13 +17904,13 @@
         {
             "value": 153,
             "next": 65535,
-            "name": "#hash_5b18895703fba823",
+            "name": "#pfx_transformer_arcs",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -17949,7 +17949,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -17988,7 +17988,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -18027,7 +18027,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -18070,13 +18070,13 @@
         {
             "value": 38,
             "next": 65535,
-            "name": "#hash_4ca3d2aaa573f1c8",
+            "name": "#pfx_transformer_sparks",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4ca3d2aaa573f1c8",
+                    "name": "#pfx_transformer_sparks",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -18115,7 +18115,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_4ca3d2aaa573f1c8",
+                    "name": "#pfx_transformer_sparks",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -18154,7 +18154,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_4ca3d2aaa573f1c8",
+                    "name": "#pfx_transformer_sparks",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_morocco.all",
                     "assetIdRelease": "#mp_morocco.all",
@@ -18300,7 +18300,7 @@
             "duck": "default",
             "id": "#mp_morocco_corridor",
             "reverb": "#room_livingroom",
-            "loop": "#hash_1cc7c5115db131f2",
+            "loop": "#amb_morocco_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -18322,7 +18322,7 @@
             "duck": "default",
             "id": "#mp_morocco_hallway",
             "reverb": "#room_hallway",
-            "loop": "#hash_1cc7c5115db131f2",
+            "loop": "#amb_morocco_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -18344,7 +18344,7 @@
             "duck": "default",
             "id": "#mp_morocco_hallway_partial",
             "reverb": "#room_hallway",
-            "loop": "#hash_1cc7c5115db131f2",
+            "loop": "#amb_morocco_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -18366,7 +18366,7 @@
             "duck": "default",
             "id": "#mp_morocco_main_room",
             "reverb": "#room_livingroom",
-            "loop": "#hash_1cc7c5115db131f2",
+            "loop": "#amb_morocco_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -18388,7 +18388,7 @@
             "duck": "default",
             "id": "#mp_morocco_outdoor",
             "reverb": "#outdoor_slap_dark",
-            "loop": "#hash_3e0564de8eb287d0",
+            "loop": "#amb_morocco_ext_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
@@ -18410,7 +18410,7 @@
             "duck": "default",
             "id": "#mp_morocco_sml_room",
             "reverb": "#room_bedroom",
-            "loop": "#hash_1cc7c5115db131f2",
+            "loop": "#amb_morocco_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -18432,7 +18432,7 @@
             "duck": "default",
             "id": "#mp_morocco_stairs",
             "reverb": "#narrow_stairwell",
-            "loop": "#hash_1cc7c5115db131f2",
+            "loop": "#amb_morocco_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",

@@ -211,7 +211,7 @@ function function_8a2b203b( localclientnum, oldval, newval, bnewent, binitialsna
                 var_2b01a8ab = level._effect[ #"hash_75cfc1cd4cd9154" ];
             }
             
-            str_sound = #"hash_5bdfbb591ff7e29d";
+            str_sound = #"wpn_zhield_melee_upgrade_gem_1";
             break;
         case 2:
             if ( var_515e20e6 )
@@ -223,7 +223,7 @@ function function_8a2b203b( localclientnum, oldval, newval, bnewent, binitialsna
                 var_2b01a8ab = level._effect[ #"hash_75cff1cd4cd966d" ];
             }
             
-            str_sound = #"hash_5bdfb8591ff7dd84";
+            str_sound = #"wpn_zhield_melee_upgrade_gem_2";
             break;
         case 3:
             if ( var_515e20e6 )
@@ -241,7 +241,7 @@ function function_8a2b203b( localclientnum, oldval, newval, bnewent, binitialsna
             
             if ( oldval != 0 )
             {
-                str_sound = #"hash_5bdfb9591ff7df37";
+                str_sound = #"wpn_zhield_melee_upgrade_gem_3";
             }
             
             if ( !isdefined( self.var_dc255e3b ) )

@@ -30,8 +30,8 @@
     "#hash_554be9f7": false,
     "firesound": "#wpn_homunculus_throw_npc",
     "firesoundplayer": "#wpn_homunculus_throw_plr",
-    "gadgetreadysoundplayer": "#hash_5069ed8fdae493ce",
-    "sound660": "#hash_4b624dad2a08a6cd",
+    "gadgetreadysoundplayer": "#uin_zmb_equipment_ready",
+    "sound660": "#uin_zmb_equipment_deny",
     "tunables1": "#homunculus_tunables_zm",
     "projectilemodel": "#c_t8_zmb_homunculus_fb1",
     "viewmodel": [

@@ -696,7 +696,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_47efe58860d60751",
+                    "value": "#amb_wind_outdoor_narrow",
                     "unk1a": true
                 }
             ]
@@ -10020,7 +10020,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_47efe58860d60751",
+                    "value": "#amb_wind_outdoor_narrow",
                     "unk1a": true
                 },
                 {

@@ -34,7 +34,7 @@
     "soundc0": "#wpn_flashbang_button",
     "firesound": "#wpn_grenade_throw",
     "firesoundplayer": "#wpn_grenade_throw",
-    "gadgetreadysoundplayer": "#hash_66000799dbd18070",
+    "gadgetreadysoundplayer": "#uin_equip_notify_swatgrenade",
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#wpn_flash_grenade_explode",
     "hitsound": "#mpl_hit_equipment",

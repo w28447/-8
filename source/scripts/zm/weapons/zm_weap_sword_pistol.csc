@@ -82,7 +82,7 @@ function dragon_roar_impact( localclientnum, oldval, newval, bnewent, binitialsn
 function dragon_roar_explosion( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     playfx( localclientnum, level._effect[ #"dragon_roar_explosion" ], self.origin );
-    self playsound( 0, #"hash_5e5fc609282c18d2" );
+    self playsound( 0, #"wpn_dragon_projectile_explode" );
 }
 
 // Namespace zm_weap_sword_pistol/zm_weap_sword_pistol

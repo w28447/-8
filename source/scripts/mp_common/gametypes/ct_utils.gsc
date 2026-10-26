@@ -3524,7 +3524,7 @@ function function_61d750d4( loc, v_angles )
         playfx( "player/fx8_plyr_spawn_distortion", v_origin, anglestoforward( ex_elevator_overlight_indicator_ ), anglestoup( ex_elevator_overlight_indicator_ ) );
         self setorigin( v_origin );
         self setplayerangles( v_angles );
-        self playsound( #"hash_fc83e70c477029c" );
+        self playsound( #"mpl_spec_bot_spawn" );
     }
     
     waitframe( 1 );
@@ -4577,7 +4577,7 @@ function function_d3bbbf8a( var_996160bc, zmb_vessel_pickup_skull_, var_9c8d914,
             {
                 if ( !ct_vo::function_5d127774() )
                 {
-                    level thread ct_vo::function_831e0584( array( #"hash_628d31adb5e65260" ), 0 );
+                    level thread ct_vo::function_831e0584( array( #"vox_tvoi_tutor_reco_dart_miss_nag" ), 0 );
                 }
                 
                 level.var_1bf21bf2 = undefined;

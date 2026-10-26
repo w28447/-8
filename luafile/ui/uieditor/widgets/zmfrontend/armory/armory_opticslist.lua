@@ -17,7 +17,7 @@ CoD.Armory_OpticsList.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	BlackGradientBG:setAlpha( 0.3 )
 	BlackGradientBG:setZRot( 180 )
 	BlackGradientBG:setZoom( 10 )
-	BlackGradientBG:setImage( RegisterImage( 0x78A6742E3F9A2ED ) )
+	BlackGradientBG:setImage( RegisterImage( "uie_menu_common_gradient_bg" ) )
 	self:addElement( BlackGradientBG )
 	self.BlackGradientBG = BlackGradientBG
 	

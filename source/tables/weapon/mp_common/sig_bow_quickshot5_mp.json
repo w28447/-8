@@ -2,7 +2,7 @@
     "name": "#sig_bow_quickshot5_mp",
     "baseWeapon": "#sig_bow_quickshot5",
     "displayname": "#weapon/sig_bow",
-    "altWeapon": "#hash_3bb7ce9a7b6a0c1c",
+    "altWeapon": "#sig_bow_quickshot_alt5_mp",
     "weapon70": "#sig_bow_quickshot",
     "luigiReticleWidget": "BowLauncherReticle",
     "soundbank": "#sig_bow_quickshot5_soundbank",

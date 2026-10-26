@@ -31,7 +31,7 @@
     "firesoundplayer": "#wpn_grenade_throw",
     "sound240": "#wpn_generic_dryfire_npc",
     "sound250": "#wpn_generic_dryfire_plr",
-    "gadgetreadysoundplayer": "#hash_6f5b79a1a69b43a8",
+    "gadgetreadysoundplayer": "#uin_equip_notify",
     "projexplosionsound": "#wpn_grenade_explode",
     "tunables1": "#sticky_grenade_tunables_mp",
     "cacWeaponXCam": "#ui_cam_cac_equip_semtex",

@@ -33,10 +33,10 @@
     "firesoundplayer": "#wpn_ac130_105mm_fire_plr",
     "sound240": "#wpn_generic_dryfire_npc",
     "sound250": "#wpn_generic_dryfire_plr",
-    "sound520": "#hash_47fd8792d4d2c808",
+    "sound520": "#wpn_ac130_reload_105mm",
     "sound5e0": "#hash_21cfea621573025a",
     "projexplosionsound": "#exp_artillery_barrage",
-    "tunables1": "#hash_6bd5cfce08264f88",
+    "tunables1": "#ac130_main_cannon_tunables",
     "tracers": [
         "#chopper_gunner",
         "#chopper_gunner"

@@ -504,7 +504,7 @@ CoD.HUDUtility.UpdateBallModels = function ( f30_arg0, f30_arg1 )
 	if f30_local0 == Enum.team_t[0x2A34B055ADD98AB] or f30_local0 == Enum.team_t[0x3F83D7CE4BD7B68] then
 		f30_local2 = Engine.GetGamertagForClient( f30_arg0, Engine.GetObjectiveEntity( f30_arg0, f30_arg1 ) )
 	elseif Engine.GetModelValue( Engine.CreateModel( f30_local1, "ballAway" ) ) == 1 then
-		f30_local2 = Engine[0xF9F1239CFD921FE]( 0xC376BAE65A55609 )
+		f30_local2 = Engine[0xF9F1239CFD921FE]( "mpui/ball_away" )
 	end
 	Engine.SetModelValue( Engine.CreateModel( f30_local1, "ballStatusText" ), f30_local2 )
 	if CoD.IsShoutcaster( f30_arg0 ) then
@@ -958,7 +958,7 @@ CoD.HUDUtility.WaypointUpdate_Ball_Ball = function ( f59_arg0, f59_arg1 )
 	if f59_local1 == Enum.team_t[0x2A34B055ADD98AB] or f59_local1 == Enum.team_t[0x3F83D7CE4BD7B68] then
 		f59_local3 = Engine.GetGamertagForClient( f59_arg1, Engine.GetObjectiveEntity( f59_arg1, f59_local0 ) )
 	elseif Engine.GetModelValue( Engine.CreateModel( f59_local2, "ballAway" ) ) == 1 then
-		f59_local3 = Engine[0xF9F1239CFD921FE]( 0xC376BAE65A55609 )
+		f59_local3 = Engine[0xF9F1239CFD921FE]( "mpui/ball_away" )
 	end
 	Engine.SetModelValue( Engine.CreateModel( f59_local2, "ballStatusText" ), f59_local3 )
 	if CoD.IsShoutcaster( f59_arg1 ) then

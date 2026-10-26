@@ -31,7 +31,7 @@ CoD.BM_ContractsFrame.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local NoiseBackingRight = LUI.UIImage.new( 0, 1, 0, 0, -0, 1, -30, -30 )
 	NoiseBackingRight:setAlpha( 0.1 )
 	NoiseBackingRight:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	NoiseBackingRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	NoiseBackingRight:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	NoiseBackingRight:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseBackingRight:setupNineSliceShader( 196, 88 )
 	self:addElement( NoiseBackingRight )

@@ -53,7 +53,7 @@ function fx_think( localclientnum )
         self stop_light_fx( localclientnum );
         self start_light_fx( localclientnum );
         self fullscreen_fx( localclientnum );
-        playsound( localclientnum, #"hash_2bb4a8b02a0d697", var_18407835 );
+        playsound( localclientnum, #"wpn_equipment_acidbomb_timer", var_18407835 );
         util::server_wait( localclientnum, interval, 0.01, "player_switch" );
     }
 }

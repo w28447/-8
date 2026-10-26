@@ -245,7 +245,7 @@ function function_1f7c6bb9( w_melee, var_2b9d3880, var_48e9b3cc, is_lunge = 0 )
         
         e_target.var_39c64392 = undefined;
         e_target dodamage( n_total_damage, self.origin, self, undefined, e_target.var_39c64392, "MOD_MELEE", 0, w_melee );
-        e_target playsound( #"hash_444f738bd1d3fd8" );
+        e_target playsound( #"zmb_vapor_ethereal_razor_impact" );
         
         if ( isactor( e_target ) )
         {

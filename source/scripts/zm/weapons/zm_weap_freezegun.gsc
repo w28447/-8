@@ -681,12 +681,12 @@ function function_1cdfba74( is_upgraded )
     if ( is_upgraded )
     {
         self clientfield::set( "" + #"freezegun_shatter_upgraded_fx", 1 );
-        self playsound( #"hash_3bed1320e59a493c" );
+        self playsound( #"evt_winters_howl_shatter" );
         return;
     }
     
     self clientfield::set( "" + #"freezegun_shatter_fx", 1 );
-    self playsound( #"hash_3bed1320e59a493c" );
+    self playsound( #"evt_winters_howl_shatter" );
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun
@@ -698,12 +698,12 @@ function function_c61abffb( is_upgraded )
     if ( is_upgraded )
     {
         self clientfield::set( "" + #"freezegun_crumple_upgraded_fx", 1 );
-        self playsound( #"hash_55070bed4172e08c" );
+        self playsound( #"evt_winters_howl_collapse" );
         return;
     }
     
     self clientfield::set( "" + #"freezegun_crumple_fx", 1 );
-    self playsound( #"hash_55070bed4172e08c" );
+    self playsound( #"evt_winters_howl_collapse" );
 }
 
 // Namespace zm_weap_freezegun/zm_weap_freezegun

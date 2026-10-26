@@ -15,7 +15,7 @@ CoD.EmblemEditorMaterialControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local BackingTop = LUI.UIImage.new( 0, 0, 0, 420, 0, 0, 0, 190 )
 	BackingTop:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	BackingTop:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	BackingTop:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	BackingTop:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingTop:setupNineSliceShader( 196, 88 )
 	self:addElement( BackingTop )
@@ -89,7 +89,7 @@ CoD.EmblemEditorMaterialControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local dividerH = LUI.UIImage.new( 0, 0, 0, 420, 0, 0, 22.5, 26.5 )
 	dividerH:setAlpha( 0.2 )
 	dividerH:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
-	dividerH:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	dividerH:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	dividerH:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerH:setupNineSliceShader( 8, 4 )
 	self:addElement( dividerH )

@@ -890,8 +890,8 @@ function function_e1af20d7( localclientnum, oldval, newval, bnewent, binitialsna
         
         if ( self zm_utility::is_first_person( localclientnum ) )
         {
-            self playsound( localclientnum, #"hash_6448985393417e0c" );
-            self.var_8ff4b42c = self playloopsound( #"hash_3c4934dafbb5efee" );
+            self playsound( localclientnum, #"zmb_eyeball_plr_frozen_start" );
+            self.var_8ff4b42c = self playloopsound( #"zmb_eyeball_plr_frozen_loop" );
         }
         
         return;
@@ -905,7 +905,7 @@ function function_e1af20d7( localclientnum, oldval, newval, bnewent, binitialsna
             self.var_8ff4b42c = undefined;
         }
         
-        self playsound( localclientnum, #"hash_286c32a151d527cf" );
+        self playsound( localclientnum, #"zmb_eyeball_plr_frozen_break" );
     }
     
     self function_116b95e5( #"hash_349a56ada2bc0bc8", "Reveal Threshold", 0 );

@@ -27,7 +27,7 @@ CoD.SpecialistIssueEquipmentBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local TiledBGImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledBGImage:setAlpha( 0.2 )
 	TiledBGImage:setImage( RegisterImage( "uie_ui_menu_cac_dot_pattern_bg01" ) )
-	TiledBGImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	TiledBGImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	TiledBGImage:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBGImage:setupNineSliceShader( 64, 64 )
 	self:addElement( TiledBGImage )

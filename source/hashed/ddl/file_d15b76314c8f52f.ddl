@@ -55,11 +55,11 @@ version 1 {
     // offset 0x268, size 0xc0
     client_header client;
     // offset 0x328, size 0x20
-    int hash_5862d3f1b0f11978;
+    int lobby_network_mode;
     // offset 0x348, size 0x1
     bool is_private_host;
     // offset 0x349, size 0x1
-    bool hash_46b8ae8b89bf06c2;
+    bool is_game_lobby_active;
     // offset 0x34a, size 0x6
     uint:1 __pad[6];
 }

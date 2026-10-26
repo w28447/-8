@@ -9,13 +9,13 @@
         {
             "value": 46,
             "next": 65535,
-            "name": "#hash_1c2ceb0dec89955d",
+            "name": "#vox_tvoi_tutor_noma_bomb_diffused_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1c2ceb0dec89955d",
+                    "name": "#vox_tvoi_tutor_noma_bomb_diffused_0",
                     "subtitle": "#hash_6074eadd0b07c5eb",
                     "assetId": "#hash_7939ee0b6c0535e6",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -61,13 +61,13 @@
         {
             "value": 39,
             "next": 4,
-            "name": "#hash_1c2cea0dec8993aa",
+            "name": "#vox_tvoi_tutor_noma_bomb_diffused_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1c2cea0dec8993aa",
+                    "name": "#vox_tvoi_tutor_noma_bomb_diffused_1",
                     "subtitle": "#hash_739374093e16e900",
                     "assetId": "#hash_771cf37a19243bd",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -110,7 +110,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_1c2cea0dec8993aa",
+                    "name": "#vox_tvoi_tutor_noma_bomb_diffused_1",
                     "subtitle": "#hash_7acceb7155816fa",
                     "assetId": "#hash_670c4c432d98f46b",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -157,13 +157,13 @@
         {
             "value": 51,
             "next": 65535,
-            "name": "#hash_1c2ce90dec8991f7",
+            "name": "#vox_tvoi_tutor_noma_bomb_diffused_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1c2ce90dec8991f7",
+                    "name": "#vox_tvoi_tutor_noma_bomb_diffused_2",
                     "subtitle": "#hash_5cf444b5266cc8f9",
                     "assetId": "#hash_24b17a9cb6b36f74",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -209,13 +209,13 @@
         {
             "value": 19,
             "next": 65535,
-            "name": "#hash_416a0e7170369747",
+            "name": "#vox_tvoi_tutor_noma_bomb_nearby",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_416a0e7170369747",
+                    "name": "#vox_tvoi_tutor_noma_bomb_nearby",
                     "subtitle": "#hash_3f791bbccb6e12a9",
                     "assetId": "#hash_7c507a33d8fbfec4",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -258,7 +258,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_416a0e7170369747",
+                    "name": "#vox_tvoi_tutor_noma_bomb_nearby",
                     "subtitle": "#hash_59e7e37b555de803",
                     "assetId": "#hash_2b6ce438caffd35a",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -305,13 +305,13 @@
         {
             "value": 67,
             "next": 65535,
-            "name": "#hash_e219524f43ed980",
+            "name": "#vox_tvoi_tutor_noma_bomb_player_dead",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_e219524f43ed980",
+                    "name": "#vox_tvoi_tutor_noma_bomb_player_dead",
                     "subtitle": "#hash_51ccacda26a6c2",
                     "assetId": "#hash_bdc5fc010504097",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -354,7 +354,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_e219524f43ed980",
+                    "name": "#vox_tvoi_tutor_noma_bomb_player_dead",
                     "subtitle": "#hash_92a3c6c8327c5dc",
                     "assetId": "#hash_1809873b15c6299d",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -397,7 +397,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_e219524f43ed980",
+                    "name": "#vox_tvoi_tutor_noma_bomb_player_dead",
                     "subtitle": "#hash_1f98faa1f2b0cbcb",
                     "assetId": "#hash_682ed035c93c7bba",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -439,7 +439,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_e219524f43ed980",
+                    "name": "#vox_tvoi_tutor_noma_bomb_player_dead",
                     "subtitle": "#hash_2858fc637539f7e8",
                     "assetId": "#hash_65fe410c72ce3cc5",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -481,7 +481,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_e219524f43ed980",
+                    "name": "#vox_tvoi_tutor_noma_bomb_player_dead",
                     "subtitle": "#hash_237951fd70093281",
                     "assetId": "#hash_31c87274e74b1550",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -527,13 +527,13 @@
         {
             "value": 36,
             "next": 65535,
-            "name": "#hash_26c398139ec1094b",
+            "name": "#vox_tvoi_tutor_noma_bomb_time_up",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_26c398139ec1094b",
+                    "name": "#vox_tvoi_tutor_noma_bomb_time_up",
                     "subtitle": "#hash_55badcba03616849",
                     "assetId": "#hash_6f566cc86639c9f0",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -575,7 +575,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_26c398139ec1094b",
+                    "name": "#vox_tvoi_tutor_noma_bomb_time_up",
                     "subtitle": "#hash_1e6b2c8a177ba250",
                     "assetId": "#hash_18a18d2a69d7d65",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -618,7 +618,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_26c398139ec1094b",
+                    "name": "#vox_tvoi_tutor_noma_bomb_time_up",
                     "subtitle": "#hash_697b4ee7a79d84ca",
                     "assetId": "#hash_59062de155449e83",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -661,7 +661,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_26c398139ec1094b",
+                    "name": "#vox_tvoi_tutor_noma_bomb_time_up",
                     "subtitle": "#hash_2db47d03684f7893",
                     "assetId": "#hash_1d23184ead2e8f5a",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -759,13 +759,13 @@
         {
             "value": 152,
             "next": 65535,
-            "name": "#hash_2816b78cbad7769",
+            "name": "#vox_tvoi_tutor_noma_dog_follow",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2816b78cbad7769",
+                    "name": "#vox_tvoi_tutor_noma_dog_follow",
                     "subtitle": "#hash_986b96d25b8137",
                     "assetId": "#hash_31a625ded3b7000a",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -807,7 +807,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_2816b78cbad7769",
+                    "name": "#vox_tvoi_tutor_noma_dog_follow",
                     "subtitle": "#hash_aba70a141b862de",
                     "assetId": "#hash_475decedd3aed627",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -849,7 +849,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_2816b78cbad7769",
+                    "name": "#vox_tvoi_tutor_noma_dog_follow",
                     "subtitle": "#hash_48585ac5467ccb8d",
                     "assetId": "#hash_23b2a0d0fbf3d9a0",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -895,13 +895,13 @@
         {
             "value": 148,
             "next": 65535,
-            "name": "#hash_227578991948ff6d",
+            "name": "#vox_tvoi_tutor_noma_dog_orders_comp",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_227578991948ff6d",
+                    "name": "#vox_tvoi_tutor_noma_dog_orders_comp",
                     "subtitle": "#hash_4e39b88816ad289b",
                     "assetId": "#hash_764557e384d3a806",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -944,7 +944,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_227578991948ff6d",
+                    "name": "#vox_tvoi_tutor_noma_dog_orders_comp",
                     "subtitle": "#hash_1f79f2417e6a16cd",
                     "assetId": "#hash_672eadff24526254",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -1127,13 +1127,13 @@
         {
             "value": 144,
             "next": 65535,
-            "name": "#hash_14f820c919f35aac",
+            "name": "#vox_tvoi_tutor_noma_dog_take_down",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_14f820c919f35aac",
+                    "name": "#vox_tvoi_tutor_noma_dog_take_down",
                     "subtitle": "#hash_4b7475791468a25a",
                     "assetId": "#hash_3839da6fc07b7d5b",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -1175,7 +1175,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_14f820c919f35aac",
+                    "name": "#vox_tvoi_tutor_noma_dog_take_down",
                     "subtitle": "#hash_3c5dc1fab7e1903",
                     "assetId": "#hash_7db38da960f7207e",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -1217,7 +1217,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_14f820c919f35aac",
+                    "name": "#vox_tvoi_tutor_noma_dog_take_down",
                     "subtitle": "#hash_4b591a6e578c0d80",
                     "assetId": "#hash_4095d77105b3a229",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -1263,13 +1263,13 @@
         {
             "value": 138,
             "next": 65535,
-            "name": "#hash_400ce53d6acfb07d",
+            "name": "#vox_tvoi_tutor_noma_enemy_wire_destroy_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_400ce53d6acfb07d",
+                    "name": "#vox_tvoi_tutor_noma_enemy_wire_destroy_0",
                     "subtitle": "#hash_4a1ac20f6bbb3676",
                     "assetId": "#hash_72ccab6ade1f15a6",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -1315,13 +1315,13 @@
         {
             "value": 96,
             "next": 65535,
-            "name": "#hash_400ce43d6acfaeca",
+            "name": "#vox_tvoi_tutor_noma_enemy_wire_destroy_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_400ce43d6acfaeca",
+                    "name": "#vox_tvoi_tutor_noma_enemy_wire_destroy_1",
                     "subtitle": "#hash_5670713355d569af",
                     "assetId": "#hash_4dde51fe64c10855",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -1367,13 +1367,13 @@
         {
             "value": 121,
             "next": 10,
-            "name": "#hash_625a08ecff2b5842",
+            "name": "#vox_tvoi_tutor_noma_enemy_wire_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_625a08ecff2b5842",
+                    "name": "#vox_tvoi_tutor_noma_enemy_wire_nag",
                     "subtitle": "#hash_1be065e548dc51b8",
                     "assetId": "#hash_2e4f17c7bd899f65",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -1415,7 +1415,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_625a08ecff2b5842",
+                    "name": "#vox_tvoi_tutor_noma_enemy_wire_nag",
                     "subtitle": "#hash_681d9101f4412951",
                     "assetId": "#hash_1c1b6bbd7d25ebf0",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -1458,7 +1458,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_625a08ecff2b5842",
+                    "name": "#vox_tvoi_tutor_noma_enemy_wire_nag",
                     "subtitle": "#hash_77da606837f2e05b",
                     "assetId": "#hash_706c42580d31513e",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -1501,7 +1501,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_625a08ecff2b5842",
+                    "name": "#vox_tvoi_tutor_noma_enemy_wire_nag",
                     "subtitle": "#hash_1dd56766b19eb9d2",
                     "assetId": "#hash_68db1ab450191337",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -1544,7 +1544,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_625a08ecff2b5842",
+                    "name": "#vox_tvoi_tutor_noma_enemy_wire_nag",
                     "subtitle": "#hash_3b407d2fa40e416c",
                     "assetId": "#hash_78cc6b196d6ed67d",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -1587,7 +1587,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_625a08ecff2b5842",
+                    "name": "#vox_tvoi_tutor_noma_enemy_wire_nag",
                     "subtitle": "#hash_4103068ee8e1cfdb",
                     "assetId": "#hash_49e81743c41ab15a",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -1630,7 +1630,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_625a08ecff2b5842",
+                    "name": "#vox_tvoi_tutor_noma_enemy_wire_nag",
                     "subtitle": "#hash_ca522272634320d",
                     "assetId": "#hash_42f1bb396fb2bc00",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -1677,13 +1677,13 @@
         {
             "value": 30,
             "next": 15,
-            "name": "#hash_3a50289d60d95b93",
+            "name": "#vox_tvoi_tutor_noma_score_activated_bad",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3a50289d60d95b93",
+                    "name": "#vox_tvoi_tutor_noma_score_activated_bad",
                     "subtitle": "#hash_1c8c0834d51d7285",
                     "assetId": "#hash_23ceaf06bc7674e8",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -1726,7 +1726,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3a50289d60d95b93",
+                    "name": "#vox_tvoi_tutor_noma_score_activated_bad",
                     "subtitle": "#hash_626e5eaa24422947",
                     "assetId": "#hash_402119924296cf06",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -1773,13 +1773,13 @@
         {
             "value": 116,
             "next": 13,
-            "name": "#hash_31fd2c9553e91845",
+            "name": "#vox_tvoi_tutor_noma_score_activated_good",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_31fd2c9553e91845",
+                    "name": "#vox_tvoi_tutor_noma_score_activated_good",
                     "subtitle": "#hash_1ca558e1ba51d81b",
                     "assetId": "#hash_15dadba7f14adbee",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2005,13 +2005,13 @@
         {
             "value": 13,
             "next": 19,
-            "name": "#hash_47fabed8e8bf606f",
+            "name": "#vox_tvoi_tutor_noma_score_turret_kill",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_47fabed8e8bf606f",
+                    "name": "#vox_tvoi_tutor_noma_score_turret_kill",
                     "subtitle": "#hash_6fb83dc144f88169",
                     "assetId": "#hash_36d1134a138967ec",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2054,7 +2054,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_47fabed8e8bf606f",
+                    "name": "#vox_tvoi_tutor_noma_score_turret_kill",
                     "subtitle": "#hash_45e4410d68cb76c3",
                     "assetId": "#hash_5fd89ccfae222092",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2097,7 +2097,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_47fabed8e8bf606f",
+                    "name": "#vox_tvoi_tutor_noma_score_turret_kill",
                     "subtitle": "#hash_fd922d000c639f0",
                     "assetId": "#hash_4cff358bcc5a7891",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2139,7 +2139,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_47fabed8e8bf606f",
+                    "name": "#vox_tvoi_tutor_noma_score_turret_kill",
                     "subtitle": "#hash_1f227349519a1033",
                     "assetId": "#hash_4f5256688babeec6",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2181,7 +2181,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_47fabed8e8bf606f",
+                    "name": "#vox_tvoi_tutor_noma_score_turret_kill",
                     "subtitle": "#hash_62eadb6f9bcc154a",
                     "assetId": "#hash_44e7d3cb35d25143",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2224,7 +2224,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_47fabed8e8bf606f",
+                    "name": "#vox_tvoi_tutor_noma_score_turret_kill",
                     "subtitle": "#hash_5eb5de9e148b4bd4",
                     "assetId": "#hash_6e21442805a5cb21",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2271,13 +2271,13 @@
         {
             "value": 136,
             "next": 65535,
-            "name": "#hash_66d8097a378fccfb",
+            "name": "#vox_tvoi_tutor_noma_scorestreak_earn_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_66d8097a378fccfb",
+                    "name": "#vox_tvoi_tutor_noma_scorestreak_earn_0",
                     "subtitle": "#hash_321c3ae96916c0b9",
                     "assetId": "#hash_1097382d0cbf2230",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2323,13 +2323,13 @@
         {
             "value": 34,
             "next": 65535,
-            "name": "#hash_66d8087a378fcb48",
+            "name": "#vox_tvoi_tutor_noma_scorestreak_earn_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_66d8087a378fcb48",
+                    "name": "#vox_tvoi_tutor_noma_scorestreak_earn_1",
                     "subtitle": "#hash_20e1c8ce3d19b286",
                     "assetId": "#hash_238bd109442b21af",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2372,7 +2372,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_66d8087a378fcb48",
+                    "name": "#vox_tvoi_tutor_noma_scorestreak_earn_1",
                     "subtitle": "#hash_60a20668f86625d8",
                     "assetId": "#hash_16a8c085a3034125",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2419,13 +2419,13 @@
         {
             "value": 128,
             "next": 65535,
-            "name": "#hash_59ce377404e907df",
+            "name": "#vox_tvoi_tutor_noma_scorestreak_half",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_59ce377404e907df",
+                    "name": "#vox_tvoi_tutor_noma_scorestreak_half",
                     "subtitle": "#hash_216bda893ce35695",
                     "assetId": "#hash_3d29868d4098b98c",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2467,7 +2467,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_59ce377404e907df",
+                    "name": "#vox_tvoi_tutor_noma_scorestreak_half",
                     "subtitle": "#hash_1c54d3e7db95afec",
                     "assetId": "#hash_3b9d3e19c8a82db1",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2509,7 +2509,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_59ce377404e907df",
+                    "name": "#vox_tvoi_tutor_noma_scorestreak_half",
                     "subtitle": "#hash_45940a4f6567769f",
                     "assetId": "#hash_1b0e5085348fa1e6",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2551,7 +2551,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_59ce377404e907df",
+                    "name": "#vox_tvoi_tutor_noma_scorestreak_half",
                     "subtitle": "#hash_346a94b4ccdf2fa6",
                     "assetId": "#hash_7581bf73777500e3",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2597,13 +2597,13 @@
         {
             "value": 130,
             "next": 65535,
-            "name": "#hash_e5c99a0bb694ced",
+            "name": "#vox_tvoi_tutor_noma_scorestreak_incoming_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_e5c99a0bb694ced",
+                    "name": "#vox_tvoi_tutor_noma_scorestreak_incoming_0",
                     "subtitle": "#hash_62ae273f21bc8767",
                     "assetId": "#hash_531ebf37461e6c16",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2646,7 +2646,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_e5c99a0bb694ced",
+                    "name": "#vox_tvoi_tutor_noma_scorestreak_incoming_0",
                     "subtitle": "#hash_3cb80a7fa188a6a1",
                     "assetId": "#hash_58550c9429846464",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2693,13 +2693,13 @@
         {
             "value": 115,
             "next": 65535,
-            "name": "#hash_e5c98a0bb694b3a",
+            "name": "#vox_tvoi_tutor_noma_scorestreak_incoming_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_e5c98a0bb694b3a",
+                    "name": "#vox_tvoi_tutor_noma_scorestreak_incoming_1",
                     "subtitle": "#hash_15b4529112a5d62c",
                     "assetId": "#hash_7a76a91160d8e26d",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2745,13 +2745,13 @@
         {
             "value": 25,
             "next": 20,
-            "name": "#hash_e5c97a0bb694987",
+            "name": "#vox_tvoi_tutor_noma_scorestreak_incoming_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_e5c97a0bb694987",
+                    "name": "#vox_tvoi_tutor_noma_scorestreak_incoming_2",
                     "subtitle": "#hash_5ee38a6626ded415",
                     "assetId": "#hash_70cbb189bb2fdca4",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2797,13 +2797,13 @@
         {
             "value": 105,
             "next": 65535,
-            "name": "#hash_63b0c7b2095df698",
+            "name": "#vox_tvoi_tutor_noma_scorestreak_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_63b0c7b2095df698",
+                    "name": "#vox_tvoi_tutor_noma_scorestreak_nag",
                     "subtitle": "#hash_8f20760a6224ae6",
                     "assetId": "#hash_2d9fd0c7cb7ba91f",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2845,7 +2845,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_63b0c7b2095df698",
+                    "name": "#vox_tvoi_tutor_noma_scorestreak_nag",
                     "subtitle": "#hash_627e5ad4221996df",
                     "assetId": "#hash_3e1f5cc4ab4b2b62",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2887,7 +2887,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_63b0c7b2095df698",
+                    "name": "#vox_tvoi_tutor_noma_scorestreak_nag",
                     "subtitle": "#hash_4761468eccda202c",
                     "assetId": "#hash_26a4ad43615e1acd",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2929,7 +2929,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_63b0c7b2095df698",
+                    "name": "#vox_tvoi_tutor_noma_scorestreak_nag",
                     "subtitle": "#hash_471122b7c6bdc1d5",
                     "assetId": "#hash_52183b39d7717978",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -2975,13 +2975,13 @@
         {
             "value": 81,
             "next": 65535,
-            "name": "#hash_73107c81df5c9b57",
+            "name": "#vox_tvoi_tutor_noma_slide_10_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_73107c81df5c9b57",
+                    "name": "#vox_tvoi_tutor_noma_slide_10_0",
                     "subtitle": "#hash_7853d4617a891d5",
                     "assetId": "#hash_5ca27d33e1347974",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -3175,13 +3175,13 @@
         {
             "value": 45,
             "next": 65535,
-            "name": "#hash_7dc59481e601af1f",
+            "name": "#vox_tvoi_tutor_noma_slide_11_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7dc59481e601af1f",
+                    "name": "#vox_tvoi_tutor_noma_slide_11_1",
                     "subtitle": "#hash_7dc090f3dc76c65d",
                     "assetId": "#hash_4da146b9423f781c",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -3224,7 +3224,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7dc59481e601af1f",
+                    "name": "#vox_tvoi_tutor_noma_slide_11_1",
                     "subtitle": "#hash_2b31a7792c9cf2af",
                     "assetId": "#hash_5d13684a0a1b3ec2",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -3367,13 +3367,13 @@
         {
             "value": 77,
             "next": 65535,
-            "name": "#hash_1a1b9c4d540e83a2",
+            "name": "#vox_tvoi_tutor_noma_slide_11_doors_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1a1b9c4d540e83a2",
+                    "name": "#vox_tvoi_tutor_noma_slide_11_doors_0",
                     "subtitle": "#hash_3d8a8267a498611c",
                     "assetId": "#hash_44df046ba808b725",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -3419,13 +3419,13 @@
         {
             "value": 17,
             "next": 32,
-            "name": "#hash_1a1b9d4d540e8555",
+            "name": "#vox_tvoi_tutor_noma_slide_11_doors_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1a1b9d4d540e8555",
+                    "name": "#vox_tvoi_tutor_noma_slide_11_doors_1",
                     "subtitle": "#hash_4a7218237452f497",
                     "assetId": "#hash_1115a9a8a95273ee",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -3471,13 +3471,13 @@
         {
             "value": 18,
             "next": 65535,
-            "name": "#hash_1a1b9a4d540e803c",
+            "name": "#vox_tvoi_tutor_noma_slide_11_doors_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1a1b9a4d540e803c",
+                    "name": "#vox_tvoi_tutor_noma_slide_11_doors_2",
                     "subtitle": "#hash_56ced5c6ffe47932",
                     "assetId": "#hash_56c55af0dcd2f70b",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -3523,13 +3523,13 @@
         {
             "value": 101,
             "next": 65535,
-            "name": "#hash_1a1b9b4d540e81ef",
+            "name": "#vox_tvoi_tutor_noma_slide_11_doors_3",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1a1b9b4d540e81ef",
+                    "name": "#vox_tvoi_tutor_noma_slide_11_doors_3",
                     "subtitle": "#hash_5e9edefcfef64945",
                     "assetId": "#hash_780c30063a77263c",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -3575,13 +3575,13 @@
         {
             "value": 12,
             "next": 30,
-            "name": "#hash_464d77c3e0ec72ce",
+            "name": "#vox_tvoi_tutor_noma_slide_11_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_464d77c3e0ec72ce",
+                    "name": "#vox_tvoi_tutor_noma_slide_11_nag",
                     "subtitle": "#hash_4308c14bd68947ac",
                     "assetId": "#hash_32b7c7acea992df9",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -3623,7 +3623,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_464d77c3e0ec72ce",
+                    "name": "#vox_tvoi_tutor_noma_slide_11_nag",
                     "subtitle": "#hash_42b89d74d06ce955",
                     "assetId": "#hash_5bf379b4f09f60d4",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -3665,7 +3665,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_464d77c3e0ec72ce",
+                    "name": "#vox_tvoi_tutor_noma_slide_11_nag",
                     "subtitle": "#hash_499821dafd17266",
                     "assetId": "#hash_2a160795bc1ecd2b",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -3708,7 +3708,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_464d77c3e0ec72ce",
+                    "name": "#vox_tvoi_tutor_noma_slide_11_nag",
                     "subtitle": "#hash_295f0c4ac5457f78",
                     "assetId": "#hash_7e00cefdc677acb9",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -3751,7 +3751,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_464d77c3e0ec72ce",
+                    "name": "#vox_tvoi_tutor_noma_slide_11_nag",
                     "subtitle": "#hash_5e25d5912bc8be5f",
                     "assetId": "#hash_631e03e4a8b2ba0e",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -3794,7 +3794,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_464d77c3e0ec72ce",
+                    "name": "#vox_tvoi_tutor_noma_slide_11_nag",
                     "subtitle": "#hash_145b8a47fa13169",
                     "assetId": "#hash_2076afe5c2881d2c",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -3841,13 +3841,13 @@
         {
             "value": 62,
             "next": 65535,
-            "name": "#hash_3af123c4e08bf1f",
+            "name": "#vox_tvoi_tutor_noma_slide_11_success",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3af123c4e08bf1f",
+                    "name": "#vox_tvoi_tutor_noma_slide_11_success",
                     "subtitle": "#hash_7d2231023626e9d1",
                     "assetId": "#hash_68b7d8ac46f6791c",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -3889,7 +3889,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3af123c4e08bf1f",
+                    "name": "#vox_tvoi_tutor_noma_slide_11_success",
                     "subtitle": "#hash_30e505e58ac21238",
                     "assetId": "#hash_3c0e39c52236101",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -3932,7 +3932,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3af123c4e08bf1f",
+                    "name": "#vox_tvoi_tutor_noma_slide_11_success",
                     "subtitle": "#hash_7f3e0c5174350782",
                     "assetId": "#hash_44b6644599b49c87",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -3979,13 +3979,13 @@
         {
             "value": 141,
             "next": 9,
-            "name": "#hash_5edca81ea7bbda1",
+            "name": "#vox_tvoi_tutor_noma_slide_12_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5edca81ea7bbda1",
+                    "name": "#vox_tvoi_tutor_noma_slide_12_0",
                     "subtitle": "#hash_7d9288cea36ea35b",
                     "assetId": "#hash_3158c5cb9395e8e2",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4031,13 +4031,13 @@
         {
             "value": 15,
             "next": 65535,
-            "name": "#hash_5edc981ea7bbbee",
+            "name": "#vox_tvoi_tutor_noma_slide_12_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5edc981ea7bbbee",
+                    "name": "#vox_tvoi_tutor_noma_slide_12_1",
                     "subtitle": "#hash_27721a403fff4630",
                     "assetId": "#hash_d20662d08d561c9",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4083,13 +4083,13 @@
         {
             "value": 112,
             "next": 65535,
-            "name": "#hash_d3ce181ee3da6b6",
+            "name": "#vox_tvoi_tutor_noma_slide_13_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_d3ce181ee3da6b6",
+                    "name": "#vox_tvoi_tutor_noma_slide_13_0",
                     "subtitle": "#hash_6367fa23757f0e38",
                     "assetId": "#hash_59d3fbd2f15c8cd1",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4135,13 +4135,13 @@
         {
             "value": 27,
             "next": 35,
-            "name": "#hash_3879189c855ae28",
+            "name": "#vox_tvoi_tutor_noma_slide_13_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3879189c855ae28",
+                    "name": "#vox_tvoi_tutor_noma_slide_13_nag",
                     "subtitle": "#hash_7af5fc29c16fd542",
                     "assetId": "#hash_388d2964482a3faf",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4183,7 +4183,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3879189c855ae28",
+                    "name": "#vox_tvoi_tutor_noma_slide_13_nag",
                     "subtitle": "#hash_1a3d2a1ed9f9fa4b",
                     "assetId": "#hash_6befa2bc6e73f032",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4225,7 +4225,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3879189c855ae28",
+                    "name": "#vox_tvoi_tutor_noma_slide_13_nag",
                     "subtitle": "#hash_22fd2be05c832668",
                     "assetId": "#hash_179ef5cc8cd0989d",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4267,7 +4267,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3879189c855ae28",
+                    "name": "#vox_tvoi_tutor_noma_slide_13_nag",
                     "subtitle": "#hash_1e1d817a57526101",
                     "assetId": "#hash_7024d1a771e06908",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4313,13 +4313,13 @@
         {
             "value": 7,
             "next": 65535,
-            "name": "#hash_17181881f4294b6b",
+            "name": "#vox_tvoi_tutor_noma_slide_14_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_17181881f4294b6b",
+                    "name": "#vox_tvoi_tutor_noma_slide_14_0",
                     "subtitle": "#hash_ad5e9411ea7ff41",
                     "assetId": "#hash_5b248b40f15a6c10",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4365,13 +4365,13 @@
         {
             "value": 50,
             "next": 65535,
-            "name": "#hash_17181781f42949b8",
+            "name": "#vox_tvoi_tutor_noma_slide_14_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_17181781f42949b8",
+                    "name": "#vox_tvoi_tutor_noma_slide_14_1",
                     "subtitle": "#hash_156bf25a4fc047ee",
                     "assetId": "#hash_2ee47cd0172f4b8f",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4417,13 +4417,13 @@
         {
             "value": 31,
             "next": 47,
-            "name": "#hash_1e66af81f7ea5b00",
+            "name": "#vox_tvoi_tutor_noma_slide_15_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1e66af81f7ea5b00",
+                    "name": "#vox_tvoi_tutor_noma_slide_15_0",
                     "subtitle": "#hash_76ee62c1a21fd5d6",
                     "assetId": "#hash_501eaf6eef758577",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4466,7 +4466,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_1e66af81f7ea5b00",
+                    "name": "#vox_tvoi_tutor_noma_slide_15_0",
                     "subtitle": "#hash_62f24b04dc838da8",
                     "assetId": "#hash_1eb0702fada403bd",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4513,13 +4513,13 @@
         {
             "value": 87,
             "next": 65535,
-            "name": "#hash_291be681fe8fa375",
+            "name": "#vox_tvoi_tutor_noma_slide_16_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_291be681fe8fa375",
+                    "name": "#vox_tvoi_tutor_noma_slide_16_0",
                     "subtitle": "#hash_1b667c745548d757",
                     "assetId": "#hash_7b8b69561aa246de",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4562,7 +4562,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_291be681fe8fa375",
+                    "name": "#vox_tvoi_tutor_noma_slide_16_0",
                     "subtitle": "#hash_477343d2ed671551",
                     "assetId": "#hash_41aec5971497e3c",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4609,13 +4609,13 @@
         {
             "value": 68,
             "next": 50,
-            "name": "#hash_291be581fe8fa1c2",
+            "name": "#vox_tvoi_tutor_noma_slide_16_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_291be581fe8fa1c2",
+                    "name": "#vox_tvoi_tutor_noma_slide_16_1",
                     "subtitle": "#hash_2f6e2296f71a7cdc",
                     "assetId": "#hash_684661b0c0736315",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4661,13 +4661,13 @@
         {
             "value": 65,
             "next": 44,
-            "name": "#hash_291be481fe8fa00f",
+            "name": "#vox_tvoi_tutor_noma_slide_16_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_291be481fe8fa00f",
+                    "name": "#vox_tvoi_tutor_noma_slide_16_2",
                     "subtitle": "#hash_26d94ba412c59405",
                     "assetId": "#hash_f067935c18f58ac",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4713,13 +4713,13 @@
         {
             "value": 70,
             "next": 51,
-            "name": "#hash_291be381fe8f9e5c",
+            "name": "#vox_tvoi_tutor_noma_slide_16_3",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_291be381fe8f9e5c",
+                    "name": "#vox_tvoi_tutor_noma_slide_16_3",
                     "subtitle": "#hash_1f3875f16a699cf2",
                     "assetId": "#hash_189e0b080434307b",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4765,13 +4765,13 @@
         {
             "value": 80,
             "next": 22,
-            "name": "#hash_291be281fe8f9ca9",
+            "name": "#vox_tvoi_tutor_noma_slide_16_4",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_291be281fe8f9ca9",
+                    "name": "#vox_tvoi_tutor_noma_slide_16_4",
                     "subtitle": "#hash_372c57b65637103b",
                     "assetId": "#hash_20a215e4051b1d8a",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4817,13 +4817,13 @@
         {
             "value": 126,
             "next": 65535,
-            "name": "#hash_291be181fe8f9af6",
+            "name": "#vox_tvoi_tutor_noma_slide_16_5",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_291be181fe8f9af6",
+                    "name": "#vox_tvoi_tutor_noma_slide_16_5",
                     "subtitle": "#hash_3c63a54ad848d390",
                     "assetId": "#hash_210cbc98aa988611",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4869,13 +4869,13 @@
         {
             "value": 129,
             "next": 65535,
-            "name": "#hash_291be081fe8f9943",
+            "name": "#vox_tvoi_tutor_noma_slide_16_6",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_291be081fe8f9943",
+                    "name": "#vox_tvoi_tutor_noma_slide_16_6",
                     "subtitle": "#hash_66c9b1e08011e3c9",
                     "assetId": "#hash_51dcb1192576ce28",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4921,13 +4921,13 @@
         {
             "value": 86,
             "next": 65535,
-            "name": "#hash_291bdf81fe8f9790",
+            "name": "#vox_tvoi_tutor_noma_slide_16_7",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_291bdf81fe8f9790",
+                    "name": "#vox_tvoi_tutor_noma_slide_16_7",
                     "subtitle": "#hash_7315260797061316",
                     "assetId": "#hash_10b706f62a1a51e7",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -4973,13 +4973,13 @@
         {
             "value": 91,
             "next": 24,
-            "name": "#hash_291bee81fe8fb10d",
+            "name": "#vox_tvoi_tutor_noma_slide_16_8",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_291bee81fe8fb10d",
+                    "name": "#vox_tvoi_tutor_noma_slide_16_8",
                     "subtitle": "#hash_5b1c47c0adbf0abf",
                     "assetId": "#hash_4c7edef41e2d93e6",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -5025,13 +5025,13 @@
         {
             "value": 82,
             "next": 65535,
-            "name": "#hash_291bed81fe8faf5a",
+            "name": "#vox_tvoi_tutor_noma_slide_16_9",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_291bed81fe8faf5a",
+                    "name": "#vox_tvoi_tutor_noma_slide_16_9",
                     "subtitle": "#hash_14f1a4769251bdc4",
                     "assetId": "#hash_5ab6c02053baa1bd",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -5077,13 +5077,13 @@
         {
             "value": 58,
             "next": 29,
-            "name": "#hash_38f30198c1a775ac",
+            "name": "#vox_tvoi_tutor_noma_slide_17_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_38f30198c1a775ac",
+                    "name": "#vox_tvoi_tutor_noma_slide_17_nag",
                     "subtitle": "#hash_2cbde011785ec1fe",
                     "assetId": "#hash_2eccd9b6f65ecefb",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -5125,7 +5125,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_38f30198c1a775ac",
+                    "name": "#vox_tvoi_tutor_noma_slide_17_nag",
                     "subtitle": "#hash_7a0d7045b0b711d7",
                     "assetId": "#hash_27b94f6239a7c9e",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -5167,7 +5167,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_38f30198c1a775ac",
+                    "name": "#vox_tvoi_tutor_noma_slide_17_nag",
                     "subtitle": "#hash_1460ef1883f80c24",
                     "assetId": "#hash_4fc1176e8b018cc9",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -5209,7 +5209,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_38f30198c1a775ac",
+                    "name": "#vox_tvoi_tutor_noma_slide_17_nag",
                     "subtitle": "#hash_193ef4b2cc8d8dad",
                     "assetId": "#hash_5977ba1d52ccb824",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -5255,13 +5255,13 @@
         {
             "value": 107,
             "next": 65535,
-            "name": "#hash_3892b48206cac33f",
+            "name": "#vox_tvoi_tutor_noma_slide_18_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3892b48206cac33f",
+                    "name": "#vox_tvoi_tutor_noma_slide_18_0",
                     "subtitle": "#hash_466ee59c06ef2ffd",
                     "assetId": "#hash_22a3b82d321fe46c",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -5307,13 +5307,13 @@
         {
             "value": 21,
             "next": 57,
-            "name": "#hash_3fa88e2600b7db91",
+            "name": "#vox_tvoi_tutor_noma_slide_3_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3fa88e2600b7db91",
+                    "name": "#vox_tvoi_tutor_noma_slide_3_0",
                     "subtitle": "#hash_c3b09c1dbc26d7",
                     "assetId": "#hash_1481aa392495b882",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -5356,7 +5356,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3fa88e2600b7db91",
+                    "name": "#vox_tvoi_tutor_noma_slide_3_0",
                     "subtitle": "#hash_711c75d6e65d50d1",
                     "assetId": "#hash_20d0e937387182d8",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -5455,13 +5455,13 @@
         {
             "value": 40,
             "next": 52,
-            "name": "#hash_1912c92a46f64dd7",
+            "name": "#vox_tvoi_tutor_noma_slide_3_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1912c92a46f64dd7",
+                    "name": "#vox_tvoi_tutor_noma_slide_3_nag",
                     "subtitle": "#hash_2eebeb6cc6365ff5",
                     "assetId": "#hash_31609a9e1d1bfed4",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -5503,7 +5503,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_1912c92a46f64dd7",
+                    "name": "#vox_tvoi_tutor_noma_slide_3_nag",
                     "subtitle": "#hash_5acdc70472bca4c",
                     "assetId": "#hash_824e8961715cbf9",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -5546,7 +5546,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_1912c92a46f64dd7",
+                    "name": "#vox_tvoi_tutor_noma_slide_3_nag",
                     "subtitle": "#hash_39c3ee6ece581c8e",
                     "assetId": "#hash_5c23116f62387c0f",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -5589,7 +5589,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_1912c92a46f64dd7",
+                    "name": "#vox_tvoi_tutor_noma_slide_3_nag",
                     "subtitle": "#hash_7ba185f447039b7f",
                     "assetId": "#hash_388b24cdd52f580e",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -5631,7 +5631,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_1912c92a46f64dd7",
+                    "name": "#vox_tvoi_tutor_noma_slide_3_nag",
                     "subtitle": "#hash_195c3ad6fde76a86",
                     "assetId": "#hash_7f83287ee89b6b2b",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -5674,7 +5674,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_1912c92a46f64dd7",
+                    "name": "#vox_tvoi_tutor_noma_slide_3_nag",
                     "subtitle": "#hash_42bd8e61b3809dd8",
                     "assetId": "#hash_33702fc1a286fab9",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -5773,13 +5773,13 @@
         {
             "value": 60,
             "next": 76,
-            "name": "#hash_58faf4260edf44e3",
+            "name": "#vox_tvoi_tutor_noma_slide_4_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_58faf4260edf44e3",
+                    "name": "#vox_tvoi_tutor_noma_slide_4_1",
                     "subtitle": "#hash_631dc51ba4ea15dd",
                     "assetId": "#hash_11abbaea52181258",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -5822,7 +5822,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_58faf4260edf44e3",
+                    "name": "#vox_tvoi_tutor_noma_slide_4_1",
                     "subtitle": "#hash_54dad97d25932e2f",
                     "assetId": "#hash_150cfd416105ae76",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -6091,13 +6091,13 @@
         {
             "value": 100,
             "next": 65535,
-            "name": "#hash_4c2430811fce4c2",
+            "name": "#vox_tvoi_tutor_noma_slide_4_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4c2430811fce4c2",
+                    "name": "#vox_tvoi_tutor_noma_slide_4_nag",
                     "subtitle": "#hash_6cb1f34fcf7f832c",
                     "assetId": "#hash_5063ebd3817ad9b5",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -6139,7 +6139,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4c2430811fce4c2",
+                    "name": "#vox_tvoi_tutor_noma_slide_4_nag",
                     "subtitle": "#hash_6c61cf78c96324d5",
                     "assetId": "#hash_15f06cb11b9e7e40",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -6181,7 +6181,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4c2430811fce4c2",
+                    "name": "#vox_tvoi_tutor_noma_slide_4_nag",
                     "subtitle": "#hash_2e42b421a8c7ade6",
                     "assetId": "#hash_1fcd1f5475a75c7",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -6224,7 +6224,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4c2430811fce4c2",
+                    "name": "#vox_tvoi_tutor_noma_slide_4_nag",
                     "subtitle": "#hash_f0e869c727786f8",
                     "assetId": "#hash_5984cd1045d9140d",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -6267,7 +6267,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4c2430811fce4c2",
+                    "name": "#vox_tvoi_tutor_noma_slide_4_nag",
                     "subtitle": "#hash_7cf079524bef9df",
                     "assetId": "#hash_28be10aa43524aaa",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -6310,7 +6310,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4c2430811fce4c2",
+                    "name": "#vox_tvoi_tutor_noma_slide_4_nag",
                     "subtitle": "#hash_66f532f62cd338e9",
                     "assetId": "#hash_799ef68756dd7410",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -6513,13 +6513,13 @@
         {
             "value": 64,
             "next": 58,
-            "name": "#hash_7c28af2622f285e4",
+            "name": "#vox_tvoi_tutor_noma_slide_8_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7c28af2622f285e4",
+                    "name": "#vox_tvoi_tutor_noma_slide_8_0",
                     "subtitle": "#hash_35e16f2b165ad3fe",
                     "assetId": "#hash_6deee381a42926e3",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -6565,13 +6565,13 @@
         {
             "value": 20,
             "next": 65,
-            "name": "#hash_7c28b02622f28797",
+            "name": "#vox_tvoi_tutor_noma_slide_8_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7c28b02622f28797",
+                    "name": "#vox_tvoi_tutor_noma_slide_8_1",
                     "subtitle": "#hash_4923b9fec3730251",
                     "assetId": "#hash_653e7e24e9663b4",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -6614,7 +6614,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7c28b02622f28797",
+                    "name": "#vox_tvoi_tutor_noma_slide_8_1",
                     "subtitle": "#hash_319ebb024c59a15b",
                     "assetId": "#hash_52d142393b8edb0a",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -6661,13 +6661,13 @@
         {
             "value": 28,
             "next": 101,
-            "name": "#hash_6b57965455923f2c",
+            "name": "#vox_tvoi_tutor_noma_slide_8_miss",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6b57965455923f2c",
+                    "name": "#vox_tvoi_tutor_noma_slide_8_miss",
                     "subtitle": "#hash_23006e6b5aba365a",
                     "assetId": "#hash_65e575c6e4a8315b",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -6709,7 +6709,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6b57965455923f2c",
+                    "name": "#vox_tvoi_tutor_noma_slide_8_miss",
                     "subtitle": "#hash_5b51d511f1cfad03",
                     "assetId": "#hash_2b5f29008523d47e",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -6751,7 +6751,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6b57965455923f2c",
+                    "name": "#vox_tvoi_tutor_noma_slide_8_miss",
                     "subtitle": "#hash_22e513609ddda180",
                     "assetId": "#hash_6e4172c829e05629",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -6793,7 +6793,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6b57965455923f2c",
+                    "name": "#vox_tvoi_tutor_noma_slide_8_miss",
                     "subtitle": "#hash_26b5f84fd2d5379",
                     "assetId": "#hash_69c74a40df3c3404",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -6839,13 +6839,13 @@
         {
             "value": 49,
             "next": 83,
-            "name": "#hash_6511e0ff086e1616",
+            "name": "#vox_tvoi_tutor_noma_slide_8_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6511e0ff086e1616",
+                    "name": "#vox_tvoi_tutor_noma_slide_8_nag",
                     "subtitle": "#hash_2448ade2a70acb70",
                     "assetId": "#hash_37117b7bdb01eb41",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -6887,7 +6887,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6511e0ff086e1616",
+                    "name": "#vox_tvoi_tutor_noma_slide_8_nag",
                     "subtitle": "#hash_427c8d3eb3d12e9",
                     "assetId": "#hash_2f6ad61ec16b5a5c",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -6929,7 +6929,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6511e0ff086e1616",
+                    "name": "#vox_tvoi_tutor_noma_slide_8_nag",
                     "subtitle": "#hash_775a66824210a6ca",
                     "assetId": "#hash_2473d4e890011973",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -6971,7 +6971,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_6511e0ff086e1616",
+                    "name": "#vox_tvoi_tutor_noma_slide_8_nag",
                     "subtitle": "#hash_3391fe5bf7dea1b3",
                     "assetId": "#hash_63ebf945ddfc43f6",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -7121,13 +7121,13 @@
         {
             "value": 88,
             "next": 65535,
-            "name": "#hash_29c415884674152e",
+            "name": "#vox_tvoi_tutor_noma_turret_player_dead",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_29c415884674152e",
+                    "name": "#vox_tvoi_tutor_noma_turret_player_dead",
                     "subtitle": "#hash_601d4e6d94e0acbc",
                     "assetId": "#hash_875003061abb429",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -7173,13 +7173,13 @@
         {
             "value": 143,
             "next": 65535,
-            "name": "#hash_36b139665c5a5d29",
+            "name": "#vox_tvoi_tutor_torq_combo_cover_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_36b139665c5a5d29",
+                    "name": "#vox_tvoi_tutor_torq_combo_cover_0",
                     "subtitle": "#hash_3d141c27b33d2837",
                     "assetId": "#hash_2b6931a8e95a83ba",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -11609,13 +11609,13 @@
         {
             "value": 32,
             "next": 112,
-            "name": "#hash_521648114bf95ff",
+            "name": "#vox_tvoi_tutor_torq_razor_wire_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_521648114bf95ff",
+                    "name": "#vox_tvoi_tutor_torq_razor_wire_0",
                     "subtitle": "#hash_eff95831ce66619",
                     "assetId": "#hash_298a66f0f57feb8c",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -11661,13 +11661,13 @@
         {
             "value": 54,
             "next": 65535,
-            "name": "#hash_521638114bf944c",
+            "name": "#vox_tvoi_tutor_torq_razor_wire_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_521638114bf944c",
+                    "name": "#vox_tvoi_tutor_torq_razor_wire_1",
                     "subtitle": "#hash_51970a6ace0971e6",
                     "assetId": "#hash_a39c1932022b5b",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -11710,7 +11710,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_521638114bf944c",
+                    "name": "#vox_tvoi_tutor_torq_razor_wire_1",
                     "subtitle": "#hash_2cbd7ee042cbeaf8",
                     "assetId": "#hash_77c535cd61c9f369",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -12171,13 +12171,13 @@
         {
             "value": 69,
             "next": 65535,
-            "name": "#hash_23881d05de9f114a",
+            "name": "#vox_tvoi_tutor_torq_razor_wire_comp_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_23881d05de9f114a",
+                    "name": "#vox_tvoi_tutor_torq_razor_wire_comp_1",
                     "subtitle": "#hash_311d50a045ed484c",
                     "assetId": "#hash_583900eccfb5cc4d",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -12220,7 +12220,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_23881d05de9f114a",
+                    "name": "#vox_tvoi_tutor_torq_razor_wire_comp_1",
                     "subtitle": "#hash_606116872a0f4a8e",
                     "assetId": "#hash_592dee850931bcfb",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -13081,13 +13081,13 @@
         {
             "value": 113,
             "next": 65535,
-            "name": "#hash_41b746fcb6eb801d",
+            "name": "#vox_tvoi_tutor_torq_razor_wire_trip_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_41b746fcb6eb801d",
+                    "name": "#vox_tvoi_tutor_torq_razor_wire_trip_0",
                     "subtitle": "#hash_1ae288f451aa6a9b",
                     "assetId": "#hash_675f7e8dec329b26",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -13133,13 +13133,13 @@
         {
             "value": 122,
             "next": 65535,
-            "name": "#hash_41b745fcb6eb7e6a",
+            "name": "#vox_tvoi_tutor_torq_razor_wire_trip_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_41b745fcb6eb7e6a",
+                    "name": "#vox_tvoi_tutor_torq_razor_wire_trip_1",
                     "subtitle": "#hash_2b13338703809270",
                     "assetId": "#hash_167cca0819ccb7fd",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -13182,7 +13182,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_41b745fcb6eb7e6a",
+                    "name": "#vox_tvoi_tutor_torq_razor_wire_trip_1",
                     "subtitle": "#hash_449d8abbb594c6aa",
                     "assetId": "#hash_1110a3b5bf6a69ab",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -15485,13 +15485,13 @@
         {
             "value": 79,
             "next": 143,
-            "name": "#hash_7f9ebd57800c2a6d",
+            "name": "#vox_tvoi_tutor_torq_start_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7f9ebd57800c2a6d",
+                    "name": "#vox_tvoi_tutor_torq_start_2",
                     "subtitle": "#hash_4bf8a274f9610f03",
                     "assetId": "#hash_15eb44e1434819f6",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -15534,7 +15534,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7f9ebd57800c2a6d",
+                    "name": "#vox_tvoi_tutor_torq_start_2",
                     "subtitle": "#hash_41fc2b9f1fe1bd45",
                     "assetId": "#hash_618204ad28c52584",
                     "assetFileNameSustain": "#mp_frenetic.en",
@@ -15973,13 +15973,13 @@
         {
             "value": 131,
             "next": 65535,
-            "name": "#hash_35dc4ca537ced63e",
+            "name": "#vox_tvoi_tutor_torq_two_razor_wire_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_35dc4ca537ced63e",
+                    "name": "#vox_tvoi_tutor_torq_two_razor_wire_2",
                     "subtitle": "#hash_2e4802be8c71aeb0",
                     "assetId": "#hash_4eadb4e054c8ce29",
                     "assetFileNameSustain": "#mp_frenetic.en",

@@ -77,7 +77,7 @@ CoD.Social_PlayersListButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local BarPixelGridTiledBacking = LUI.UIImage.new( 0, 0, 477, 482, 0.31, 0.31, -12.5, 27.5 )
 	BarPixelGridTiledBacking:setAlpha( 0.4 )
 	BarPixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
-	BarPixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	BarPixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	BarPixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	BarPixelGridTiledBacking:setupNineSliceShader( 128, 128 )
 	self:addElement( BarPixelGridTiledBacking )

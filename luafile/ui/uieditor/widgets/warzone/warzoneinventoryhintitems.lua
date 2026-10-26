@@ -191,7 +191,7 @@ CoD.WarzoneInventoryHintItems.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	EMPbacker = LUI.UIImage.new( 0, 0, 6, 94, 0, 0, 8, 92 )
 	EMPbacker:setAlpha( 0 )
-	EMPbacker:setImage( RegisterImage( 0x60A7390618CBB74 ) )
+	EMPbacker:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_emp_dpad_widget_backer" ) )
 	self:addElement( EMPbacker )
 	self.EMPbacker = EMPbacker
 	

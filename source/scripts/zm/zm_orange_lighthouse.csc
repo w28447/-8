@@ -115,9 +115,9 @@ function function_6a10478( localclientnum, oldval, newval, bnewent, binitialsnap
             }
             
             self.fx_id = util::playfxontag( localclientnum, level._effect[ #"lighthouse_beam_red" ], self, "tag_origin" );
-            self playsound( localclientnum, #"hash_3734fecc702f7cd0" );
+            self playsound( localclientnum, #"zmb_lighthouse_beam_red_start" );
             self.centerstruct = spawn( 0, self.origin, "script_origin" );
-            self.centerstruct playloopsound( #"hash_518712532057a8b" );
+            self.centerstruct playloopsound( #"zmb_lighthouse_beam_red" );
             break;
     }
 }
@@ -129,7 +129,7 @@ function function_6a10478( localclientnum, oldval, newval, bnewent, binitialsnap
 function function_a177b2da( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     util::playfxontag( localclientnum, level._effect[ #"hash_4d1abbf031ca2c63" ], self, "j_spine4" );
-    self playsound( localclientnum, #"hash_24925b24b30b3991" );
+    self playsound( localclientnum, #"zmb_lighthouse_beam_hit" );
 }
 
 // Namespace zm_orange_lighthouse/zm_orange_lighthouse

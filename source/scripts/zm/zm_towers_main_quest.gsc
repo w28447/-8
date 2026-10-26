@@ -416,7 +416,7 @@ function function_e1629752()
             }
             
             var_d3c8748e show();
-            var_d3c8748e playsound( #"hash_59ed73d06252024c" );
+            var_d3c8748e playsound( #"zmb_funtime_danu_wood_place" );
         }
         
         for ( i = 0; i < level.var_5cb7d214.n_wood ; i++ )
@@ -482,7 +482,7 @@ function function_12944b2e()
                     
                     if ( level.round_number == n_charcoal + 3 )
                     {
-                        mdl_wood playsound( #"hash_5f8e33ac1c927130" );
+                        mdl_wood playsound( #"zmb_funtime_danu_charcoal_finish" );
                         mdl_wood clientfield::set( "" + #"hash_c382c02584ba249", 0 );
                         mdl_wood clientfield::set( "" + #"hash_273efcc293063e5e", 1 );
                         mdl_wood thread function_d4646ede();
@@ -490,7 +490,7 @@ function function_12944b2e()
                 }
                 else
                 {
-                    mdl_wood setmodel( #"hash_4286272708c5e5c0" );
+                    mdl_wood setmodel( #"p8_zm_gla_wood_coal_log_tip_burned" );
                 }
             }
             
@@ -505,7 +505,7 @@ function function_12944b2e()
             var_9b1b2f2d = struct::get( #"hash_224dd0372d9a6eff" );
             e_player = var_9b1b2f2d zm_unitrigger::function_fac87205( "", ( 96, 180, 96 ), 1 );
             e_player thread zm_vo::function_a2bd5a0c( #"vox_m_quest_collect_charcoal", 0, 0, 9999, 1 );
-            e_player playsound( #"hash_35c03e3efe6d4487" );
+            e_player playsound( #"zmb_funtime_danu_charcoal_pickup" );
             
             foreach ( var_d3c8748e in var_4d573637 )
             {
@@ -532,7 +532,7 @@ function function_d4646ede()
     self endon( #"death" );
     wait 5;
     level clientfield::set( "" + #"hash_445060dbbf244b04", 0 );
-    self setmodel( #"hash_4286272708c5e5c0" );
+    self setmodel( #"p8_zm_gla_wood_coal_log_tip_burned" );
     self clientfield::set( "" + #"hash_273efcc293063e5e", 0 );
 }
 
@@ -600,18 +600,18 @@ function function_12bc0c40( var_c58a9909 )
             mdl_wood = arraygetclosest( self.origin, var_4cf59c29 );
             s_loc = arraygetclosest( self.origin, var_3c244cd3 );
             mdl_wood show();
-            mdl_wood setmodel( #"hash_4973461a43fcb56" );
+            mdl_wood setmodel( #"p8_zm_gla_wood_coal_log_dmg" );
             mdl_wood clientfield::increment( "" + #"hash_6ff3eb2dd0078a51" );
-            var_749ba981 = util::spawn_model( #"hash_77659f61538a4beb", mdl_wood.origin, mdl_wood.angles );
+            var_749ba981 = util::spawn_model( #"p8_zm_gla_wood_coal_log_tip", mdl_wood.origin, mdl_wood.angles );
             var_749ba981 moveto( s_loc.origin, 0.5 );
             var_c58a9909.var_1d6dd729 = 1;
             var_8673cc35 = getentarray( "t_fertilizer_tower", "targetname" );
             array::notify_all( var_8673cc35, #"wood_dropped" );
             var_749ba981 waittill( #"movedone" );
-            var_749ba981 playsound( #"hash_119d4d341483b32c" );
+            var_749ba981 playsound( #"zmb_funtime_danu_wood_land" );
             var_536e9d28 = s_loc zm_unitrigger::function_fac87205( "", 96, 1 );
             var_536e9d28 thread zm_vo::function_a2bd5a0c( #"vox_m_quest_collect_wood", 0, 0, 9999, 1 );
-            var_536e9d28 playsound( #"hash_30b990837c062495" );
+            var_536e9d28 playsound( #"zmb_funtime_danu_wood_pickup" );
             level.var_5cb7d214.n_wood++;
             
             if ( isdefined( var_749ba981 ) )
@@ -672,18 +672,18 @@ function function_965e1613()
             if ( isdefined( s_skull.target ) )
             {
                 var_c038b69d = struct::get( s_skull.target );
-                var_7b9ef77a playsound( #"hash_67ab50b44ebf94a7" );
+                var_7b9ef77a playsound( #"zmb_funtime_danu_skull_imp" );
                 var_7b9ef77a moveto( var_c038b69d.origin, 0.5 );
                 var_7b9ef77a rotateto( var_c038b69d.angles, 0.5 );
                 var_7b9ef77a waittill( #"movedone" );
-                var_7b9ef77a playsound( #"hash_f210344da062582" );
+                var_7b9ef77a playsound( #"zmb_funtime_danu_skull_land" );
             }
             
             e_player = var_7b9ef77a zm_unitrigger::function_fac87205( "", 96, 1 );
             
             if ( isdefined( e_player ) )
             {
-                e_player playsound( #"hash_1c2e8e92fd97011f" );
+                e_player playsound( #"zmb_funtime_danu_skull_pickup" );
                 e_player thread zm_vo::function_a2bd5a0c( #"vox_m_quest_collect_skull", 0, 0, 9999, 1 );
             }
             
@@ -752,7 +752,7 @@ function function_9774bbc6()
     }
     
     mdl_grinder zm_unitrigger::function_fac87205( "", 96, 1 );
-    mdl_grinder playsound( #"hash_40a6a28923cf0f3e" );
+    mdl_grinder playsound( #"zmb_funtime_danu_skull_place" );
     mdl_grinder showpart( "skull_jnt" );
     mdl_grinder val::set( #"grinder", "takedamage", 1 );
     mdl_grinder.health = 9999;
@@ -859,7 +859,7 @@ function mix_fertilizer_setup( b_skipped )
     var_108c7af7 zm_unitrigger::function_fac87205( "", 96, 1 );
     mdl_fertilizer = getent( "mdl_pile", "targetname" );
     mdl_fertilizer show();
-    mdl_fertilizer playsound( #"hash_3cee8f860c831f0b" );
+    mdl_fertilizer playsound( #"zmb_funtime_danu_fertilizer_place" );
     
     if ( getdvarint( #"zm_debug_ee", 0 ) )
     {
@@ -871,10 +871,10 @@ function mix_fertilizer_setup( b_skipped )
         level waittill( #"end_of_round" );
     }
     
-    mdl_fertilizer setmodel( #"hash_571dce3dbd970ee6" );
+    mdl_fertilizer setmodel( #"p8_zm_gla_dung_pile_01" );
     level clientfield::set( "" + #"fertilizer_smell_bowl", 1 );
     e_player = mdl_fertilizer zm_unitrigger::function_fac87205( "", 96, 1 );
-    e_player playsound( #"hash_338c802929e278d4" );
+    e_player playsound( #"zmb_funtime_danu_fertilizer_pickup" );
     level clientfield::set( "" + #"fertilizer_smell_bowl", 0 );
     mdl_fertilizer delete();
     e_player thread zm_vo::function_a2bd5a0c( #"vox_m_quest_build_fertilizer", 0, 0, 9999, 1 );
@@ -905,7 +905,7 @@ function place_fertilizer_setup( b_skipped )
     
     var_2317ee9f = struct::get( #"hash_3fda284f010e01fd" );
     var_2317ee9f zm_unitrigger::function_fac87205( "", 96, 1 );
-    var_2317ee9f.mdl_fertilizer = util::spawn_model( #"hash_571dce3dbd970ee6", var_2317ee9f.origin, var_2317ee9f.angles );
+    var_2317ee9f.mdl_fertilizer = util::spawn_model( #"p8_zm_gla_dung_pile_01", var_2317ee9f.origin, var_2317ee9f.angles );
     var_2317ee9f.mdl_fertilizer setscale( 1 );
     var_2317ee9f.mdl_fertilizer clientfield::set( "" + #"fertilizer_smell", 0 );
     var_2317ee9f.mdl_fertilizer playsound( #"hash_5d534ac036533040" );
@@ -986,8 +986,8 @@ function place_fertilizer_cleanup( b_skipped, var_19e802fa )
     level flag::set( #"place_fertilizer_completed" );
     mdl_glow = getent( "fertilizer_hop", "targetname" );
     mdl_glow show();
-    mdl_glow playsound( #"hash_bde75843d826490" );
-    mdl_glow playloopsound( #"hash_63dcc2bd59631940" );
+    mdl_glow playsound( #"zmb_funtime_danu_portal_start" );
+    mdl_glow playloopsound( #"zmb_funtime_danu_portal_lp" );
 }
 
 // Namespace zm_towers_main_quest/zm_towers_main_quest
@@ -1003,7 +1003,7 @@ function function_b288e20a( b_skipped )
     
     function_3a5c3a3c();
     zm_bgb_anywhere_but_here::function_886fce8f( 0 );
-    playsoundatposition( #"hash_c648800c55e1554", ( 0, 0, 0 ) );
+    playsoundatposition( #"zmb_funtime_danu_warp_out", ( 0, 0, 0 ) );
     level thread function_dceecb87();
     exploder::exploder( "exp_danu_portal" );
     array::thread_all( level.players, &val::set, #"chaos_teleport", "ignoreme", 1 );
@@ -1051,7 +1051,7 @@ function function_b288e20a( b_skipped )
     a_s_spawns = struct::get_array( #"danu_top_floor_decayed_spawns" );
     level thread function_f082568e( a_s_spawns );
     level waittill( #"blight_blister_destroyed" );
-    playsoundatposition( #"hash_1fd377e4062391ab", ( 0, 0, 0 ) );
+    playsoundatposition( #"zmb_funtime_danu_warp_back", ( 0, 0, 0 ) );
     level notify( #"hash_1958c9ee2f84d722" );
     zm_transform::function_e95ec8df();
     function_1efe04ba( level.var_5cb7d214.var_5170a4f8 );
@@ -1188,7 +1188,7 @@ function function_3a5c3a3c()
     trigger::wait_till( "t_fertilizer_enter" );
     var_2093456 = getent( "t_fertilizer_enter", "targetname" );
     var_b683ba09 = 0;
-    var_2093456 playsound( #"hash_668420a3544ac61a" );
+    var_2093456 playsound( #"zmb_funtime_danu_portal_enter" );
     var_65cf92c1 = 13;
     
     /#

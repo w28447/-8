@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_hiphop_ajax",
+    "type": "#tag",
+    "material": "#hash_2aad102146537aed",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_16ff731d80bc5024",
+        "icon": "image#loot_ui_icon_tags_hiphop_ajax",
+        "isdefault": 0
+    }
+}

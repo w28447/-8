@@ -897,7 +897,7 @@ function function_7139078d()
         }
         else if ( isdefined( result.suppressor.weapon ) )
         {
-            if ( isdefined( level.var_24de8afe ) && isdefined( result.suppressor.ai ) && isdefined( result.suppressor.ai.swat_gunner ) && result.suppressor.ai.swat_gunner && result.suppressor.weapon.name == #"hash_6c1be4b025206124" )
+            if ( isdefined( level.var_24de8afe ) && isdefined( result.suppressor.ai ) && isdefined( result.suppressor.ai.swat_gunner ) && result.suppressor.ai.swat_gunner && result.suppressor.weapon.name == #"sniper_powerbolt_swat_t8" )
             {
                 result.suppressor [[ level.var_24de8afe ]]( self, result.suppressor.script_owner );
                 result.suppressor.var_87b1ba00 = 1;

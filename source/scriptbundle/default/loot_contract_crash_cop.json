@@ -7,13 +7,13 @@
             "heroes/buffassault": "localized17#heroes/buffassault"
         }
     ],
-    "contracticon": "image#hash_5947883ecc75021",
+    "contracticon": "image#loot03_ui_icon_blackmarket_contract_cop_epic2_crash",
     "hash_d0100eab": 2,
     "relateditemname": "localized17#heroes/buffassault",
     "contracttitle": "localized17#hash_6ed6f16e719818bc",
     "name": "loot_contract_crash_cop",
     "contractdescription": "localized17#hash_5d723ae8855383fa",
     "white": "#white",
-    "hash_1acfc0046503e008:hash_1c057e8c": "image#hash_1acfc0046503e008",
+    "loot03_ui_icon_blackmarket_itemshop_cop_epic2_crash:hash_1c057e8c": "image#loot03_ui_icon_blackmarket_itemshop_cop_epic2_crash",
     "hash_202b143ac8709224:hash_e08fc162": "localized17#hash_202b143ac8709224"
 }

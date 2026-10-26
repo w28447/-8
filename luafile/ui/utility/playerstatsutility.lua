@@ -551,13 +551,13 @@ CoD.PlayerStatsUtility.GetWZTopPlacements = function ( f36_arg0, f36_arg1, f36_a
 	return 0 + (CoD.PlayerStatsUtility.HashPlayerStatsStorageLookupForMenu( f36_arg1, {
 		"playerstatsbygametype",
 		CoD.PlayerStatsUtility.GetWZGameModeTableValue( CoD.PlayerStatsUtility.WZGameModeDisplayType.SOLO, "statPathName", "" )
-	}, 0x6429D1FCCDEF2C9 ) or 0) + (CoD.PlayerStatsUtility.HashPlayerStatsStorageLookupForMenu( f36_arg1, {
+	}, "top_15_placement_team" ) or 0) + (CoD.PlayerStatsUtility.HashPlayerStatsStorageLookupForMenu( f36_arg1, {
 		"playerstatsbygametype",
 		CoD.PlayerStatsUtility.GetWZGameModeTableValue( CoD.PlayerStatsUtility.WZGameModeDisplayType.DUOS, "statPathName", "" )
-	}, 0xB8D2C77874A1C24 ) or 0) + (CoD.PlayerStatsUtility.HashPlayerStatsStorageLookupForMenu( f36_arg1, {
+	}, "top_10_placement_team" ) or 0) + (CoD.PlayerStatsUtility.HashPlayerStatsStorageLookupForMenu( f36_arg1, {
 		"playerstatsbygametype",
 		CoD.PlayerStatsUtility.GetWZGameModeTableValue( CoD.PlayerStatsUtility.WZGameModeDisplayType.QUADS, "statPathName", "" )
-	}, 0xE9A745460A10F80 ) or 0)
+	}, "top_5_placement_team" ) or 0)
 end
 
 CoD.PlayerStatsUtility.GetRank = function ( f37_arg0, f37_arg1 )

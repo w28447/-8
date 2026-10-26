@@ -9,13 +9,13 @@
         {
             "value": 37,
             "next": 65535,
-            "name": "#hash_590f55474568c394",
+            "name": "#amb_bluster_cold_edge",
             "sequence": 0,
             "cullDistance": 8000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_590f55474568c394",
+                    "name": "#amb_bluster_cold_edge",
                     "assetId": "#amb/environment/wind/cold/cold_edge_close.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -58,14 +58,14 @@
         {
             "value": 109,
             "next": 65535,
-            "name": "#hash_63025a235c373d2",
+            "name": "#amb_bluster_wind_side",
             "sequence": 0,
             "cullDistance": 8000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_63025a235c373d2",
-                    "secondaryname": "#hash_590f55474568c394",
+                    "name": "#amb_bluster_wind_side",
+                    "secondaryname": "#amb_bluster_cold_edge",
                     "assetId": "#amb/environment/wind/blustery/wind_blustery_high_debris.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -255,13 +255,13 @@
         {
             "value": 126,
             "next": 65535,
-            "name": "#hash_6260c7d0a3cc3a97",
+            "name": "#amb_cave_ent",
             "sequence": 0,
             "cullDistance": 500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6260c7d0a3cc3a97",
+                    "name": "#amb_cave_ent",
                     "assetId": "#amb/environment/wind/cold/cold_edge_close.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -842,13 +842,13 @@
         {
             "value": 81,
             "next": 65535,
-            "name": "#hash_6a51f780d99cfe8e",
+            "name": "#amb_geothermal_ext_wind_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6a51f780d99cfe8e",
+                    "name": "#amb_geothermal_ext_wind_2d",
                     "assetId": "#amb/environment/wind/blustery/wind_blustery_01.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -891,13 +891,13 @@
         {
             "value": 74,
             "next": 65535,
-            "name": "#hash_71bb19bf75609d94",
+            "name": "#amb_geothermal_int_wind_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_71bb19bf75609d94",
+                    "name": "#amb_geothermal_int_wind_2d",
                     "assetId": "#amb/environment/wind/blustery/wind_blustery_lp.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -1994,13 +1994,13 @@
         {
             "value": 124,
             "next": 74,
-            "name": "#hash_2c8493b94800e806",
+            "name": "#amb_lght_metal_stress",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2c8493b94800e806",
+                    "name": "#amb_lght_metal_stress",
                     "assetId": "#amb/material_movement/creaks/metal/stress/light/amb_metal_stress_light01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -2039,7 +2039,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_2c8493b94800e806",
+                    "name": "#amb_lght_metal_stress",
                     "assetId": "#amb/material_movement/creaks/metal/stress/light/amb_metal_stress_light02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -2078,7 +2078,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_2c8493b94800e806",
+                    "name": "#amb_lght_metal_stress",
                     "assetId": "#amb/material_movement/creaks/metal/stress/light/amb_metal_stress_light03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -2117,7 +2117,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_2c8493b94800e806",
+                    "name": "#amb_lght_metal_stress",
                     "assetId": "#amb/material_movement/creaks/metal/stress/light/amb_metal_stress_light04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -2209,13 +2209,13 @@
         {
             "value": 25,
             "next": 23,
-            "name": "#hash_32a8b7e4baaf674c",
+            "name": "#amb_lrg_metal_stress",
             "sequence": 0,
             "cullDistance": 5500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_32a8b7e4baaf674c",
+                    "name": "#amb_lrg_metal_stress",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -2254,7 +2254,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_32a8b7e4baaf674c",
+                    "name": "#amb_lrg_metal_stress",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -2293,7 +2293,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_32a8b7e4baaf674c",
+                    "name": "#amb_lrg_metal_stress",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -2332,7 +2332,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_32a8b7e4baaf674c",
+                    "name": "#amb_lrg_metal_stress",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -2371,7 +2371,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_32a8b7e4baaf674c",
+                    "name": "#amb_lrg_metal_stress",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -2410,7 +2410,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_32a8b7e4baaf674c",
+                    "name": "#amb_lrg_metal_stress",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -2449,7 +2449,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_32a8b7e4baaf674c",
+                    "name": "#amb_lrg_metal_stress",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -2488,7 +2488,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_32a8b7e4baaf674c",
+                    "name": "#amb_lrg_metal_stress",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -2527,7 +2527,7 @@
                     "unk178": "#hash_200000802"
                 },
                 {
-                    "name": "#hash_32a8b7e4baaf674c",
+                    "name": "#amb_lrg_metal_stress",
                     "assetId": "#amb/material_movement/creaks/metal/stress/large/large_metal_stress_08.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -6791,13 +6791,13 @@
         {
             "value": 43,
             "next": 66,
-            "name": "#hash_7f118ea3a4874268",
+            "name": "#dst_mp_propane_tank_fire",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7f118ea3a4874268",
+                    "name": "#dst_mp_propane_tank_fire",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
                     "assetFileNameRelease": "#mp_geothermal.all",
@@ -8608,7 +8608,7 @@
             "aliases": [
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -8649,7 +8649,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -8690,7 +8690,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -8731,7 +8731,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -8772,7 +8772,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -8813,7 +8813,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -8854,7 +8854,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -8898,13 +8898,13 @@
         {
             "value": 158,
             "next": 65535,
-            "name": "#hash_3b6983b084cfef53",
+            "name": "#dst_transformer_explo_spark",
             "sequence": 0,
             "cullDistance": 6000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
@@ -8945,7 +8945,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
@@ -8986,7 +8986,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
@@ -9027,7 +9027,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
@@ -9068,7 +9068,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
@@ -9109,7 +9109,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
@@ -9150,7 +9150,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
@@ -9191,7 +9191,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
@@ -9862,13 +9862,13 @@
         {
             "value": 134,
             "next": 65535,
-            "name": "#hash_65e7cef9f5172d08",
+            "name": "#evt_geyser_bubbles_1",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_65e7cef9f5172d08",
+                    "name": "#evt_geyser_bubbles_1",
                     "assetId": "#hash_9d876da97bd538a",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -9911,13 +9911,13 @@
         {
             "value": 32,
             "next": 65535,
-            "name": "#hash_65e7d1f9f5173221",
+            "name": "#evt_geyser_bubbles_2",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_65e7d1f9f5173221",
+                    "name": "#evt_geyser_bubbles_2",
                     "assetId": "#hash_77df8929fe8ab01",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -14534,13 +14534,13 @@
         {
             "value": 61,
             "next": 143,
-            "name": "#hash_200e28bcd26bab77",
+            "name": "#exp_mp_propane_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_200e28bcd26bab77",
+                    "name": "#exp_mp_propane_flux_l",
                     "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
@@ -14585,13 +14585,13 @@
         {
             "value": 90,
             "next": 147,
-            "name": "#hash_200e2ebcd26bb5a9",
+            "name": "#exp_mp_propane_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_200e2ebcd26bb5a9",
+                    "name": "#exp_mp_propane_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_r/flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -14932,13 +14932,13 @@
         {
             "value": 72,
             "next": 65535,
-            "name": "#hash_7ac5fa6568de2461",
+            "name": "#exp_mp_propane_tank_lfe",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -14977,7 +14977,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -15016,7 +15016,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -15055,7 +15055,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -15584,13 +15584,13 @@
         {
             "value": 36,
             "next": 151,
-            "name": "#hash_456af38afaef9d77",
+            "name": "#exp_propane_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_456af38afaef9d77",
+                    "name": "#exp_propane_flux_l",
                     "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
@@ -15635,13 +15635,13 @@
         {
             "value": 67,
             "next": 152,
-            "name": "#hash_456af98afaefa7a9",
+            "name": "#exp_propane_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_456af98afaefa7a9",
+                    "name": "#exp_propane_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_r/flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -16757,13 +16757,13 @@
         {
             "value": 14,
             "next": 65535,
-            "name": "#hash_5b18895703fba823",
+            "name": "#pfx_transformer_arcs",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -16802,7 +16802,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -16841,7 +16841,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -16880,7 +16880,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -16923,13 +16923,13 @@
         {
             "value": 11,
             "next": 65535,
-            "name": "#hash_4ca3d2aaa573f1c8",
+            "name": "#pfx_transformer_sparks",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4ca3d2aaa573f1c8",
+                    "name": "#pfx_transformer_sparks",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -16968,7 +16968,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_4ca3d2aaa573f1c8",
+                    "name": "#pfx_transformer_sparks",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -17007,7 +17007,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_4ca3d2aaa573f1c8",
+                    "name": "#pfx_transformer_sparks",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_geothermal.all",
                     "assetIdRelease": "#mp_geothermal.all",
@@ -17250,7 +17250,7 @@
             "duck": "default",
             "id": "#mp_geothermal_cave",
             "reverb": "#room_laboratory",
-            "loop": "#hash_71bb19bf75609d94",
+            "loop": "#amb_geothermal_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -17272,7 +17272,7 @@
             "duck": "default",
             "id": "#mp_geothermal_flood_room",
             "reverb": "#room_livingroom",
-            "loop": "#hash_71bb19bf75609d94",
+            "loop": "#amb_geothermal_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -17294,7 +17294,7 @@
             "duck": "default",
             "id": "#mp_geothermal_living_area",
             "reverb": "#room_bedroom",
-            "loop": "#hash_71bb19bf75609d94",
+            "loop": "#amb_geothermal_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -17316,7 +17316,7 @@
             "duck": "default",
             "id": "#mp_geothermal_narrow_hallway",
             "reverb": "#room_hallway",
-            "loop": "#hash_71bb19bf75609d94",
+            "loop": "#amb_geothermal_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -17338,7 +17338,7 @@
             "duck": "default",
             "id": "#mp_geothermal_outdoor",
             "reverb": "#outdoor_echo",
-            "loop": "#hash_6a51f780d99cfe8e",
+            "loop": "#amb_geothermal_ext_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
@@ -17360,7 +17360,7 @@
             "duck": "default",
             "id": "#mp_geothermal_sml_room",
             "reverb": "#room_bedroom",
-            "loop": "#hash_71bb19bf75609d94",
+            "loop": "#amb_geothermal_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -17382,7 +17382,7 @@
             "duck": "default",
             "id": "#mp_geothermal_stairs",
             "reverb": "#narrow_stairwell",
-            "loop": "#hash_71bb19bf75609d94",
+            "loop": "#amb_geothermal_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -17404,7 +17404,7 @@
             "duck": "default",
             "id": "#mp_geothermal_tent",
             "reverb": "#room_bedroom",
-            "loop": "#hash_71bb19bf75609d94",
+            "loop": "#amb_geothermal_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -17426,7 +17426,7 @@
             "duck": "default",
             "id": "#mp_geothermal_tube",
             "reverb": "#narrow_sewerpipe",
-            "loop": "#hash_71bb19bf75609d94",
+            "loop": "#amb_geothermal_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -17448,7 +17448,7 @@
             "duck": "default",
             "id": "#mp_geothermal_tunnel",
             "reverb": "#room_livingroom",
-            "loop": "#hash_71bb19bf75609d94",
+            "loop": "#amb_geothermal_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",

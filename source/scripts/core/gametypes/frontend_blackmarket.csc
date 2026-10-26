@@ -261,7 +261,7 @@ function function_f559e439( localclientnum, menu_data, state )
                 playsound( localclientnum, #"vox_blac_crate_open" );
             }
             
-            playsound( localclientnum, #"hash_548f0d33e630e71a" );
+            playsound( localclientnum, #"uin_mtx_camera_whoosh" );
         }
     }
     else

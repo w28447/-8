@@ -1,5 +1,5 @@
 {
-    "contracticon": "image#hash_7a4411ddf242da1b",
+    "contracticon": "image#ui_icon_blackmarket_contraband_season_02",
     "hash_2e7ca5b9": "core_frontend_rng_reserve",
     "ui_icon_blackmarket_lockskull_256": "image#ui_icon_blackmarket_lockskull_256",
     "img_t8_menu_mp_loadscreen_arsenal": "image#img_t8_menu_mp_loadscreen_arsenal",
@@ -9,6 +9,6 @@
     "name": "loot_season_2",
     "bannerstring": "localized17#hash_2b81b691a5faa21d",
     "hash_1f1e4314badb48e3:hash_7ec13217": "localized17#hash_1f1e4314badb48e3",
-    "bannerimage": "image#hash_2fc61de4c5d0b290",
+    "bannerimage": "image#i_loot_season_2",
     "white": "#white"
 }

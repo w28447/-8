@@ -10,7 +10,7 @@ CoD.CommonHUDTiledBackground01.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local TiledBGTL = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 17, -9 )
 	TiledBGTL:setAlpha( 0.9 )
 	TiledBGTL:setImage( RegisterImage( 0x97AC44A115B27CC ) )
-	TiledBGTL:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	TiledBGTL:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	TiledBGTL:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBGTL:setupNineSliceShader( 88, 88 )
 	self:addElement( TiledBGTL )
@@ -18,7 +18,7 @@ CoD.CommonHUDTiledBackground01.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local TiledShaderImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 1, 17 )
 	TiledShaderImage:setImage( RegisterImage( 0x7F2ED83F97016C3 ) )
-	TiledShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	TiledShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	TiledShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage:setupNineSliceShader( 16, 16 )
 	self:addElement( TiledShaderImage )
@@ -26,7 +26,7 @@ CoD.CommonHUDTiledBackground01.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local TiledShaderImage2 = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -9, -1 )
 	TiledShaderImage2:setImage( RegisterImage( 0x3D566FAA6434DC5 ) )
-	TiledShaderImage2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	TiledShaderImage2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	TiledShaderImage2:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage2:setupNineSliceShader( 296, 8 )
 	self:addElement( TiledShaderImage2 )

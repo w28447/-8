@@ -35,7 +35,7 @@ CoD.listCounterButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.Frame = Frame
 	
 	local WhiteTriangle = LUI.UIImage.new( 0.5, 0.5, -10, 10, 0.5, 0.5, -6, 6 )
-	WhiteTriangle:setMaterial( LUI.UIImage.GetCachedMaterial( 0xBE6E734C31AE757 ) )
+	WhiteTriangle:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_triangle_normal" ) )
 	self:addElement( WhiteTriangle )
 	self.WhiteTriangle = WhiteTriangle
 	

@@ -15,7 +15,7 @@ CoD.LobbyPlayerInspectionPlayerLevel.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local TiledBackingRank = LUI.UIImage.new( 0, 0, 2, 350, 0, 0, 2, 160 )
 	TiledBackingRank:setAlpha( 0.5 )
 	TiledBackingRank:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	TiledBackingRank:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	TiledBackingRank:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	TiledBackingRank:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBackingRank:setupNineSliceShader( 196, 88 )
 	self:addElement( TiledBackingRank )

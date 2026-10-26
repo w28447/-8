@@ -225,7 +225,7 @@ function chakram_whirlwind_fx( localclientnum, oldval, newval, bnewent, binitial
     
     if ( newval == 1 )
     {
-        self.var_1c7e53dd[ localclientnum ] = self playloopsound( #"hash_75e91bf08cd631e8" );
+        self.var_1c7e53dd[ localclientnum ] = self playloopsound( #"wpn_chakram_whirlwind_lp" );
         var_c2545ba4 = self.var_1c7e53dd[ localclientnum ];
         self.var_4316c62f[ localclientnum ] = util::playfxontag( localclientnum, level._effect[ #"hash_c995c57914ab2b4" ], self, "j_spine4" );
         var_4316c62f = self.var_4316c62f[ localclientnum ];
@@ -272,7 +272,7 @@ function chakram_whirlwind_fx( localclientnum, oldval, newval, bnewent, binitial
         return;
     }
     
-    self playsound( localclientnum, #"hash_4f78bd85d9a43e3c" );
+    self playsound( localclientnum, #"wpn_chakram_whirlwind_stop" );
     
     if ( self postfx::function_556665f2( #"pstfx_zm_chakram_whirlwind" ) )
     {

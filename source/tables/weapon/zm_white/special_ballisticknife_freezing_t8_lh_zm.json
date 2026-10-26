@@ -38,7 +38,7 @@
     "#hash_554be9f7": false,
     "sound90": "#wpn_hatchet_projectile_lp",
     "firesound": "#wpn_ballistic_knife_fire_npc",
-    "firesoundplayer": "#hash_5dd45a19c71bbacb",
+    "firesoundplayer": "#wpn_ballistic_knife_fire_plr_lh",
     "sound240": "#wpn_pistol_dryfire_npc",
     "sound250": "#wpn_pistol_dryfire_plr",
     "sound800": "#hash_41b8cf5f69b41ad4",

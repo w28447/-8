@@ -55,7 +55,7 @@ CoD.Barracks_StatsOverview_WZ_Wins.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	local Top15 = CoD.PlayerStatsDetailed.new( f1_arg0, f1_arg1, 0, 0, 0, 310, 0, 0, 88, 109 )
 	Top15.StatHeaderText:setText( LocalizeToUpperString( "menu/top_15" ) )
 	Top15.StatValue.__Stat_Value = function ()
-		Top15.StatValue:setText( CoD.PlayerStatsUtility.GetWZGameModePlayerStorageStat( f1_arg1, f1_arg0, 0x6429D1FCCDEF2C9, 11235 ) )
+		Top15.StatValue:setText( CoD.PlayerStatsUtility.GetWZGameModePlayerStorageStat( f1_arg1, f1_arg0, "top_15_placement_team", 11235 ) )
 	end
 	
 	Top15.StatValue.__Stat_Value()

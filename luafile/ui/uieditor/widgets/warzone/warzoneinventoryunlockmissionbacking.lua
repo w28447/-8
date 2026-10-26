@@ -21,7 +21,7 @@ CoD.WarzoneInventoryUnlockMissionBacking.new = function ( f1_arg0, f1_arg1, f1_a
 	local BackingNoise = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackingNoise:setAlpha( 0.5 )
 	BackingNoise:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	BackingNoise:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	BackingNoise:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	BackingNoise:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingNoise:setupNineSliceShader( 196, 88 )
 	self:addElement( BackingNoise )
@@ -29,7 +29,7 @@ CoD.WarzoneInventoryUnlockMissionBacking.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local FooterStripe3 = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, 0, 16 )
 	FooterStripe3:setImage( RegisterImage( 0xC7A051F5EFC70E5 ) )
-	FooterStripe3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	FooterStripe3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	FooterStripe3:setShaderVector( 0, 0, 0, 0, 0 )
 	FooterStripe3:setupNineSliceShader( 90, 16 )
 	self:addElement( FooterStripe3 )
@@ -37,7 +37,7 @@ CoD.WarzoneInventoryUnlockMissionBacking.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local FooterStripe2 = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, 1, 17 )
 	FooterStripe2:setImage( RegisterImage( 0xC7A051F5EFC70E5 ) )
-	FooterStripe2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	FooterStripe2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	FooterStripe2:setShaderVector( 0, 0, 0, 0, 0 )
 	FooterStripe2:setupNineSliceShader( 90, 16 )
 	self:addElement( FooterStripe2 )
@@ -45,7 +45,7 @@ CoD.WarzoneInventoryUnlockMissionBacking.new = function ( f1_arg0, f1_arg1, f1_a
 	
 	local FooterStripe1 = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, 0, 16 )
 	FooterStripe1:setImage( RegisterImage( 0xC7A051F5EFC70E5 ) )
-	FooterStripe1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	FooterStripe1:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	FooterStripe1:setShaderVector( 0, 0, 0, 0, 0 )
 	FooterStripe1:setupNineSliceShader( 90, 16 )
 	self:addElement( FooterStripe1 )

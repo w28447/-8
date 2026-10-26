@@ -30,7 +30,7 @@
     "#hash_554be9f7": false,
     "firesound": "#wpn_grenade_throw",
     "firesoundplayer": "#wpn_grenade_throw",
-    "gadgetreadysoundplayer": "#hash_2443e4b90d2d9af1",
+    "gadgetreadysoundplayer": "#uin_equip_notify_seekermine",
     "sound5a0": "#wpn_c4_click_npc",
     "sound5b0": "#wpn_c4_click_plr",
     "sound660": "#uin_unavailable_charging",

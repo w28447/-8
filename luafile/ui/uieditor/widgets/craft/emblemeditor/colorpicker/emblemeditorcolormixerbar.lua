@@ -26,7 +26,7 @@ CoD.EmblemEditorColorMixerBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	self.barBg = barBg
 	
 	local bar = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
-	bar:setMaterial( LUI.UIImage.GetCachedMaterial( 0x28C8EA936A933BE ) )
+	bar:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_dual_gradient" ) )
 	bar:setShaderVector( 0, 0, 0, 0, 1 )
 	bar:setShaderVector( 1, 1, 1, 1, 1 )
 	self:addElement( bar )

@@ -749,9 +749,9 @@ function private function_898839b4()
     
     foreach ( item in talentitems )
     {
-        if ( item == #"hash_7932008294f0d876" )
+        if ( item == #"bare_hands_bounty_tier_two" )
         {
-            return getweapon( #"hash_7932008294f0d876" );
+            return getweapon( #"bare_hands_bounty_tier_two" );
         }
     }
     
@@ -807,7 +807,7 @@ function private function_422164cd()
     
     foreach ( talent in self.pers[ #"dynamic_loadout" ].talents )
     {
-        if ( talent == #"hash_7932008294f0d876" )
+        if ( talent == #"bare_hands_bounty_tier_two" )
         {
             continue;
         }

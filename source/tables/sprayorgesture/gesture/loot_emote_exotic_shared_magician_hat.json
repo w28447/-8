@@ -6,7 +6,7 @@
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/the_prestige",
-        "icon": "image#hash_1712765d9878801e",
+        "icon": "image#ui_icon_emotes_s2_magicians_hat",
         "isdefault": 0
     }
 }

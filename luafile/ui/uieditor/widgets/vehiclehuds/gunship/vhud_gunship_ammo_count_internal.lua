@@ -10,7 +10,7 @@ CoD.vhud_gunship_ammo_count_internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	local ammoBack = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	ammoBack:setRGB( 0.3, 0.3, 0.3 )
 	ammoBack:setImage( RegisterImage( 0x32D1F243B6283E9 ) )
-	ammoBack:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6E9593DF28749F2 ) )
+	ammoBack:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_repeat_normal" ) )
 	ammoBack:setShaderVector( 0, 2, 1, 0, 0 )
 	ammoBack:setShaderVector( 1, 0, 1, 0, 1 )
 	self:addElement( ammoBack )
@@ -18,7 +18,7 @@ CoD.vhud_gunship_ammo_count_internal.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	
 	local ammoFront = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	ammoFront:setImage( RegisterImage( 0x32D1F243B6283E9 ) )
-	ammoFront:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6E9593DF28749F2 ) )
+	ammoFront:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_repeat_normal" ) )
 	ammoFront:setShaderVector( 0, 2, 1, 0, 0 )
 	ammoFront:setShaderVector( 1, 0, 1, 0, 1 )
 	self:addElement( ammoFront )

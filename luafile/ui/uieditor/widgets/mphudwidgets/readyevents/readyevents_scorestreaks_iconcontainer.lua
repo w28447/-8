@@ -14,13 +14,13 @@ CoD.ReadyEvents_Scorestreaks_Iconcontainer.new = function ( f1_arg0, f1_arg1, f1
 	
 	local pipLeft = LUI.UIImage.new( 0, 0, 0, 6, 0, 0, 0, 50 )
 	pipLeft:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
-	pipLeft:setImage( RegisterImage( 0xE2FF966B89C00A4 ) )
+	pipLeft:setImage( RegisterImage( "uie_ui_hud_core_up_arrows" ) )
 	self:addElement( pipLeft )
 	self.pipLeft = pipLeft
 	
 	local pipLeftAdd = LUI.UIImage.new( 0, 0, 0, 6, 0, 0, 0, 50 )
 	pipLeftAdd:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
-	pipLeftAdd:setImage( RegisterImage( 0xE2FF966B89C00A4 ) )
+	pipLeftAdd:setImage( RegisterImage( "uie_ui_hud_core_up_arrows" ) )
 	pipLeftAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	pipLeftAdd:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( pipLeftAdd )
@@ -28,13 +28,13 @@ CoD.ReadyEvents_Scorestreaks_Iconcontainer.new = function ( f1_arg0, f1_arg1, f1
 	
 	local pipRight = LUI.UIImage.new( 0, 0, 56, 62, 0, 0, 0, 50 )
 	pipRight:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
-	pipRight:setImage( RegisterImage( 0xE2FF966B89C00A4 ) )
+	pipRight:setImage( RegisterImage( "uie_ui_hud_core_up_arrows" ) )
 	self:addElement( pipRight )
 	self.pipRight = pipRight
 	
 	local pipRightAdd = LUI.UIImage.new( 0, 0, 56, 62, 0, 0, 0, 50 )
 	pipRightAdd:setRGB( ColorSet.PlayerYellow.r, ColorSet.PlayerYellow.g, ColorSet.PlayerYellow.b )
-	pipRightAdd:setImage( RegisterImage( 0xE2FF966B89C00A4 ) )
+	pipRightAdd:setImage( RegisterImage( "uie_ui_hud_core_up_arrows" ) )
 	pipRightAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	pipRightAdd:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( pipRightAdd )

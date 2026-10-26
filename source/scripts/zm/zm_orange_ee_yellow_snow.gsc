@@ -663,7 +663,7 @@ function function_17567d83()
     {
         if ( isdefined( level.var_733d6b98 ) )
         {
-            level.var_733d6b98 playsoundtoplayer( #"hash_2c0513350d4300f3", level.var_733d6b98 );
+            level.var_733d6b98 playsoundtoplayer( #"evt_spleen_clock_tick", level.var_733d6b98 );
         }
         
         if ( level.var_74f3565a >= 22.5 )

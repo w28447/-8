@@ -171,7 +171,7 @@ soundalias,#dst_propane_tank_lfe
 soundalias,#dst_palet_wood
 soundalias,#amb_plastic_rustle
 soundalias,#dst_cover_concrete
-soundalias,#hash_33b781d7316b6fe
+soundalias,#amb_mountain_wind_ext
 soundalias,#dst_typewriter
 soundalias,#dst_gas_pipe_lp
 soundalias,#dst_tank_fire_lrg
@@ -204,8 +204,8 @@ soundalias,#dst_water_bottle
 soundalias,#amb_power_roof_2
 soundalias,#dst_nitrogen_tank_leak
 soundalias,#dst_fern
-soundalias,#hash_200e28bcd26bab77
-soundalias,#hash_200e2ebcd26bb5a9
+soundalias,#exp_mp_propane_flux_l
+soundalias,#exp_mp_propane_flux_r
 soundalias,#exp_incindiary_small
 soundalias,#amb_wind_gust
 soundalias,#amb_metal_creak
@@ -213,7 +213,7 @@ soundalias,#dst_dest_glo_fire_extinguisher_d0
 soundalias,#amb_comp_buzz
 soundalias,#dst_server_glass
 soundalias,#exp_concussive_small_concussion
-soundalias,#hash_2780081d881700cc
+soundalias,#amb_mountain_wind_int
 soundalias,#amb_flag
 soundalias,#amb_comp_drive
 soundalias,#dst_tank_fire_hit
@@ -247,7 +247,7 @@ soundalias,#amb_steam_hiss
 soundalias,#dst_tank_fire_hit_swt
 soundalias,#dst_solar_flux_l
 soundalias,#dst_solar_flux_r
-soundalias,#hash_3b6983b084cfef53
+soundalias,#dst_transformer_explo_spark
 soundalias,#exp_barrel_flux_r
 soundalias,#exp_barrel_flux_l
 soundalias,#amb_wind_opening
@@ -259,11 +259,11 @@ soundalias,#exp_nitrogen_tank_lfe
 soundalias,#amb_wind_room_1
 soundalias,#amb_wind_room_2
 soundalias,#pfx_spark_generic
-soundalias,#hash_456af38afaef9d77
-soundalias,#hash_456af98afaefa7a9
+soundalias,#exp_propane_flux_l
+soundalias,#exp_propane_flux_r
 soundalias,#dst_tank_fire_sml
 soundalias,#dst_garbage_bag
-soundalias,#hash_47efe58860d60751
+soundalias,#amb_wind_outdoor_narrow
 soundalias,#exp_barrel_fire
 soundalias,#amb_comp_print
 soundalias,#exp_electrical_small
@@ -273,7 +273,7 @@ soundalias,#exp_concussive_small_lfe
 soundalias,#amb_pipe_flow
 soundalias,#exp_nitrogen_flux_r
 soundalias,#exp_nitrogen_flux_l
-soundalias,#hash_4ca3d2aaa573f1c8
+soundalias,#pfx_transformer_sparks
 soundalias,#dst_solar_panel_lrg
 soundalias,#dst_solar_panel_lfe
 soundalias,#amb_power_station
@@ -293,7 +293,7 @@ soundalias,#dst_hotdog_cart
 soundalias,#dst_fire_extinguisher
 soundalias,#dst_dest_gascan_01_dp_d0
 soundalias,#amb_comp_reel
-soundalias,#hash_5b18895703fba823
+soundalias,#pfx_transformer_arcs
 soundalias,#dst_transformer_explo
 soundalias,#exp_nitrogen_tank_explo
 soundalias,#dst_generic_glass_large
@@ -340,7 +340,7 @@ soundalias,#dst_wood_crate
 soundalias,#amb_snow_fall
 soundalias,#amb_metal_stress_lrg
 soundalias,#dst_generic_glass_small
-soundalias,#hash_7ac5fa6568de2461
+soundalias,#exp_mp_propane_tank_lfe
 soundalias,#dst_glass_radar_pane_break
 soundalias,#amb_power_roof
 soundalias,#dst_tank_steam_lp
@@ -348,7 +348,7 @@ soundalias,#amb_fan_spin
 soundalias,#exp_incindiary_large_decay
 soundalias,#evt_fan_break
 soundalias,#dst_tank_explo
-soundalias,#hash_7f118ea3a4874268
+soundalias,#dst_mp_propane_tank_fire
 soundalias,#exp_barrel_dist
 client_fx,#destruct/fx_dest_window_glass_edge
 client_fx,#ui/fx_dom_cap_indicator_neutral_r120

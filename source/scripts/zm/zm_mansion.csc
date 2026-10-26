@@ -268,7 +268,7 @@ function power_on_projectile_fx( localclientnum, oldval, newval, bnewent, biniti
         
         if ( !isdefined( self.var_353ff2a ) )
         {
-            self.var_353ff2a = self playloopsound( #"hash_2ac2bbbfef2face4" );
+            self.var_353ff2a = self playloopsound( #"zmb_sentinel_trial_pap_projectile" );
         }
         
         return;
@@ -297,7 +297,7 @@ function power_on_projectile_end_fx( localclientnum, oldval, newval, bnewent, bi
     if ( newval == 1 )
     {
         util::playfxontag( localclientnum, level._effect[ #"power_on_projectile_end" ], self, "tag_origin" );
-        playsound( localclientnum, #"hash_6da145d367ec64b2", self.origin );
+        playsound( localclientnum, #"zmb_sentinel_trial_pap_projectile_explode", self.origin );
     }
 }
 
@@ -510,8 +510,8 @@ function function_328d64bd( localclientnum, oldval, newval, bnewent, binitialsna
         
         if ( !isdefined( self.var_99a9007b ) )
         {
-            self playsound( localclientnum, #"hash_2c71df73b17cd28a" );
-            self.var_99a9007b = self playloopsound( #"hash_7e4a7312ab58161e" );
+            self playsound( localclientnum, #"zmb_sentinel_trial_blocker_start" );
+            self.var_99a9007b = self playloopsound( #"zmb_sentinel_trial_blocker_lp" );
         }
         
         return;
@@ -529,7 +529,7 @@ function function_328d64bd( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( isdefined( self.var_99a9007b ) )
     {
-        self playsound( localclientnum, #"hash_3366b1b903dc96bf" );
+        self playsound( localclientnum, #"zmb_sentinel_trial_blocker_end" );
         self stoploopsound( self.var_99a9007b );
         self.var_99a9007b = undefined;
     }
@@ -623,7 +623,7 @@ function function_be42dd6a( localclientnum, oldval, newval, bnewent, binitialsna
     {
         self.var_2ea06178 = util::playfxontag( localclientnum, level._effect[ #"artifact_aura" ], self, "tag_fx_x_pos" );
         self playrenderoverridebundle( #"hash_8cb3b94ffea62fe" );
-        self.var_b3673abf = self playloopsound( #"hash_66df9cab2c64f968" );
+        self.var_b3673abf = self playloopsound( #"zmb_sentinel_artifact_ghosted_lp" );
         return;
     }
     

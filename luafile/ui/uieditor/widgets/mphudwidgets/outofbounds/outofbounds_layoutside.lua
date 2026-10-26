@@ -11,13 +11,13 @@ CoD.outofbounds_layoutSide.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	local layoutElementRight02 = LUI.UIImage.new( 0, 0, -2, 76, 0, 0, 0, 684 )
 	layoutElementRight02:setAlpha( 0.15 )
 	layoutElementRight02:setZoom( -10 )
-	layoutElementRight02:setImage( RegisterImage( 0x7788CCF4E11DACA ) )
+	layoutElementRight02:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_side_layout_element" ) )
 	self:addElement( layoutElementRight02 )
 	self.layoutElementRight02 = layoutElementRight02
 	
 	local layoutElementRight01 = LUI.UIImage.new( 0, 0, 0, 78, 0, 0, 0, 684 )
 	layoutElementRight01:setAlpha( 0.3 )
-	layoutElementRight01:setImage( RegisterImage( 0x7788CCF4E11DACA ) )
+	layoutElementRight01:setImage( RegisterImage( "uie_ui_hud_out_of_bounds_side_layout_element" ) )
 	self:addElement( layoutElementRight01 )
 	self.layoutElementRight01 = layoutElementRight01
 	

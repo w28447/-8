@@ -13,7 +13,7 @@
     "hash_3e688854": 0,
     "model": "model#p8_wz_ammo_pickup_556",
     "hash_2ee21ae6": 0,
-    "weapon": "weapon#hash_17136c65a119f6b5",
+    "weapon": "weapon#ammo_weapon_556_wz",
     "type": "itemspawnentry",
     "hintstring": "localized18#hash_5704bb4aa4b8696b",
     "hash_7a80f06e": 0,

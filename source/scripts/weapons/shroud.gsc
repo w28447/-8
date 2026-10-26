@@ -380,7 +380,7 @@ function function_aa8bb7be()
 function function_c142e8ec( attacker, callback_data )
 {
     playfx( level._equipment_explode_fx_lg, self.origin );
-    self playsound( #"hash_330c9380b91a673" );
+    self playsound( #"dst_shroud_smash" );
     var_3c4d4b60 = isdefined( self.owner );
     
     if ( isdefined( attacker ) && ( !var_3c4d4b60 || self.owner util::isenemyplayer( attacker ) ) )
@@ -437,7 +437,7 @@ function function_4b3bc61d( attacker, weapon, target )
     
     if ( validateorigin( self.origin ) )
     {
-        playsoundatposition( #"hash_330c9380b91a673", self.origin );
+        playsoundatposition( #"dst_shroud_smash", self.origin );
     }
     
     if ( isdefined( level.var_d2600afc ) )

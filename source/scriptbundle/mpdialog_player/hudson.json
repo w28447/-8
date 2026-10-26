@@ -35,7 +35,7 @@
     "exertemergebreath": "#vox_huds_exert_underwater_emerge_breath",
     "exertdeathelectrocuted": "#vox_huds_exert_electro",
     "exertdeathradiation": "#vox_huds_exert_rad_dmg",
-    "hash_25ed6658d73d5f1f:hash_48305ed9": "#hash_25ed6658d73d5f1f",
+    "vox_huds_exert_rad_dead:hash_48305ed9": "#vox_huds_exert_rad_dead",
     "exertbreathehurt": "#vox_huds_exert_breath_hurt",
     "exertfullyhealedbreath": "#exert_fully_healed",
     "exertdeathdrowned": "#vox_huds_exert_underwater_air_low",

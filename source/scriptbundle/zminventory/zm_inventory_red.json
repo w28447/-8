@@ -208,7 +208,7 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "image#hash_2988969d6dd647c7"
+                                    "stageimage": "image#ui_icon_inventory_zm_red_tool_pegasus_anvil"
                                 }
                             ],
                             "hash_1d91eeba": 1,
@@ -218,7 +218,7 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "image#hash_2a6dacc1020dc171"
+                                    "stageimage": "image#ui_icon_inventory_zm_red_tool_pegasus_hammer"
                                 }
                             ],
                             "hash_1d91eeba": 1,
@@ -228,7 +228,7 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "image#hash_2c03ecce64b3185d"
+                                    "stageimage": "image#ui_icon_inventory_zm_red_tool_pegasus_tong"
                                 }
                             ],
                             "hash_1d91eeba": 1,

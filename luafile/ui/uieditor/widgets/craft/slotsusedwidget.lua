@@ -11,7 +11,7 @@ CoD.SlotsUsedWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local HeaderStripe = LUI.UIImage.new( -0, 1, 1, -1, 1, 1, -90, -68 )
 	HeaderStripe:setAlpha( 0.16 )
 	HeaderStripe:setImage( RegisterImage( 0xC7A051F5EFC70E5 ) )
-	HeaderStripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	HeaderStripe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	HeaderStripe:setShaderVector( 0, 0, 0, 0, 0 )
 	HeaderStripe:setupNineSliceShader( 60, 35 )
 	self:addElement( HeaderStripe )
@@ -54,7 +54,7 @@ CoD.SlotsUsedWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local totalBar = LUI.UIImage.new( 0, 0.9, 5, -75, 0, 0, 32, 61 )
 	totalBar:setRGB( 0.37, 0.4, 0.44 )
-	totalBar:setImage( RegisterImage( 0x75CDE8BCCBD6F24 ) )
+	totalBar:setImage( RegisterImage( "uie_hud_core_player_healthbar_empty" ) )
 	totalBar:setMaterial( LUI.UIImage.GetCachedMaterial( 0xBEEFD90021D3628 ) )
 	totalBar:setShaderVector( 0, 0, 0, 0, 0 )
 	totalBar:setShaderVector( 2, 0, 1, 0, 1 )

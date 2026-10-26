@@ -131,7 +131,7 @@ function function_3a0ab08b( localclientnum, oldval, newval, bnewent, binitialsna
     {
         self util::waittill_dobj( localclientnum );
         self.stage_fx = util::playfxontag( localclientnum, level._effect[ #"vessel_stage_1" ], self, str_tag );
-        self.var_3177d514 = self playloopsound( #"hash_218e114cfa2b9a4" );
+        self.var_3177d514 = self playloopsound( #"zmb_vessel_stage_1" );
         return;
     }
     
@@ -143,7 +143,7 @@ function function_3a0ab08b( localclientnum, oldval, newval, bnewent, binitialsna
         }
         
         self.stage_fx = util::playfxontag( localclientnum, level._effect[ #"vessel_stage_2" ], self, str_tag );
-        self.var_3177d514 = self playloopsound( #"hash_218e414cfa2bebd" );
+        self.var_3177d514 = self playloopsound( #"zmb_vessel_stage_2" );
         return;
     }
     
@@ -155,7 +155,7 @@ function function_3a0ab08b( localclientnum, oldval, newval, bnewent, binitialsna
         }
         
         self.stage_fx = util::playfxontag( localclientnum, level._effect[ #"vessel_stage_3" ], self, str_tag );
-        self.var_3177d514 = self playloopsound( #"hash_218e314cfa2bd0a" );
+        self.var_3177d514 = self playloopsound( #"zmb_vessel_stage_3" );
         return;
     }
     

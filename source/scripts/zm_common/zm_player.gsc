@@ -531,7 +531,7 @@ function callback_playerdamage( einflictor, eattacker, idamage, idflags, smeanso
             
             if ( zm_trial::is_trial_mode() )
             {
-                self playsoundtoplayer( #"hash_3109126d3731f3d2", self );
+                self playsoundtoplayer( #"zmb_trials_points_loss", self );
             }
         }
         

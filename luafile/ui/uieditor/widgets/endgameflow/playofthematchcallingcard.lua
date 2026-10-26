@@ -16,7 +16,7 @@ CoD.PlayOfTheMatchCallingCard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local CallingCardPanelLeft = LUI.UIImage.new( 0, 0, 0, 555, 0, 0, 0, 173 )
-	CallingCardPanelLeft:setImage( RegisterImage( 0x2504876AAAB7FA7 ) )
+	CallingCardPanelLeft:setImage( RegisterImage( "uie_ui_hud_callingcard_pane" ) )
 	self:addElement( CallingCardPanelLeft )
 	self.CallingCardPanelLeft = CallingCardPanelLeft
 	

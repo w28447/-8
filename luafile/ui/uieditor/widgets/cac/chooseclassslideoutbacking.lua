@@ -83,7 +83,7 @@ CoD.ChooseClassSlideOutBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	VerticalBGPattern2 = LUI.UIImage.new( -0.11, 1.09, 0, 0, 1, 1, -647, -611 )
 	VerticalBGPattern2:setAlpha( 0.02 )
 	VerticalBGPattern2:setImage( RegisterImage( "uie_ui_menu_cac_vertical_pattern_bg" ) )
-	VerticalBGPattern2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	VerticalBGPattern2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	VerticalBGPattern2:setShaderVector( 0, 0, 0, 0, 0 )
 	VerticalBGPattern2:setupNineSliceShader( 256, 256 )
 	self:addElement( VerticalBGPattern2 )

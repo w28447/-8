@@ -237,13 +237,13 @@ function ambient_sound()
     
     while ( true )
     {
-        str_alias = #"hash_61fc4fa3eeafcf07";
+        str_alias = #"mpl_infection_amb_vox";
         n_wait_min = 2;
         n_wait_max = 5;
         
         if ( self issprinting() )
         {
-            str_alias = #"hash_64441bbb83e130e9";
+            str_alias = #"mpl_infection_sprint_vox";
             n_wait_min = 4;
             n_wait_max = 7;
         }

@@ -131,7 +131,7 @@ CoD.ClassOptionsWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	ClassNameLabelBacking = LUI.UIImage.new( 0.5, 0.5, -192.5, 192.5, 0, 0, 139, 182 )
 	ClassNameLabelBacking:setAlpha( 0.5 )
 	ClassNameLabelBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	ClassNameLabelBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	ClassNameLabelBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	ClassNameLabelBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	ClassNameLabelBacking:setupNineSliceShader( 196, 88 )
 	self:addElement( ClassNameLabelBacking )

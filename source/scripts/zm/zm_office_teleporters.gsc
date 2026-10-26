@@ -1298,7 +1298,7 @@ function enable_cage_portal( b_enable = 1 )
     {
         level.s_cage_portal zm_unitrigger::create( "", 32, &portal_think, 0, 0 );
         function_60abbae4( 1 );
-        level.e_cage_portal_blocker playsound( #"hash_123af2d6dc30025a" );
+        level.e_cage_portal_blocker playsound( #"evt_ee_cage_lift" );
         level.e_cage_portal_blocker movez( 150, 1 );
         return;
     }

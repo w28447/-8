@@ -421,8 +421,8 @@ function function_31d064c0( localclientnum, oldval, newval, bnewent, binitialsna
         
         if ( !isdefined( self.var_1cfdd45e ) )
         {
-            self playsound( localclientnum, #"hash_10f7dee939554f61" );
-            self.var_1cfdd45e = self playloopsound( #"hash_474d2ea03ea86530" );
+            self playsound( localclientnum, #"zmb_perseus_energy_release" );
+            self.var_1cfdd45e = self playloopsound( #"zmb_perseus_energy_lp" );
         }
         
         return;
@@ -2052,7 +2052,7 @@ function function_83a7c416( localclientnum )
             
             if ( var_43997e53 >= 2 )
             {
-                self playsound( localclientnum, #"hash_61c057ffadb7a5af" );
+                self playsound( localclientnum, #"wpn_pegasus_electric_bolt" );
                 var_43997e53 = 0;
             }
             

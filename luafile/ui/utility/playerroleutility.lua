@@ -454,7 +454,7 @@ CoD.PlayerRoleUtility.ZMMapHiddenFrontendPositionRoles = {
 }
 CoD.PlayerRoleUtility.WeaponSchemaOverrideKBM = {
 	heroes/trapper_weapon_tips = 0x120CDB8FEDDBFCB,
-	[0x95DA416D84F50C] = 0xB33D070E5D24B3
+	heroes/hacker_weapon_tips = 0xB33D070E5D24B3
 }
 CoD.PlayerRoleUtility.SetWeaponSchemaString = function ( f23_arg0, f23_arg1, f23_arg2 )
 	return IsMouseOrKeyboard( f23_arg1 ) and CoD.PlayerRoleUtility.WeaponSchemaOverrideKBM[f23_arg2] or f23_arg2

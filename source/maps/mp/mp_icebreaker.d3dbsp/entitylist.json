@@ -15360,7 +15360,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_284c499ffd0e10f6",
+                    "value": "#amb_sub_metal_underwater",
                     "unk1a": true
                 },
                 {
@@ -15480,7 +15480,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_63025a235c373d2",
+                    "value": "#amb_bluster_wind_side",
                     "unk1a": true
                 },
                 {
@@ -16236,7 +16236,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_590f55474568c394",
+                    "value": "#amb_bluster_cold_edge",
                     "unk1a": true
                 },
                 {
@@ -24708,7 +24708,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_357f6902f6780a43",
+                    "value": "#amb_sub_ping_1",
                     "unk1a": true
                 },
                 {
@@ -24774,7 +24774,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_357f6a02f6780bf6",
+                    "value": "#amb_sub_ping_2",
                     "unk1a": true
                 },
                 {
@@ -25824,7 +25824,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_357f6a02f6780bf6",
+                    "value": "#amb_sub_ping_2",
                     "unk1a": true
                 },
                 {
@@ -25890,7 +25890,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_357f6902f6780a43",
+                    "value": "#amb_sub_ping_1",
                     "unk1a": true
                 },
                 {

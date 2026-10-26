@@ -45,7 +45,7 @@
     "reticleCenter": "#reticle_center_cross",
     "reticleSide": "#reticle_side_round",
     "inventoryIconZm": "#t7_hud_icon_menu_incendiary",
-    "hudIcon": "#hash_1cd7771d34ef06aa",
+    "hudIcon": "#t7_hud_icon_frag_64",
     "image_e90": "#t7_hud_icon_menu_incendiary",
     "image_eb0": "#t7_hud_icon_menu_incendiary",
     "rumble_de8": "#grenade_rumble",

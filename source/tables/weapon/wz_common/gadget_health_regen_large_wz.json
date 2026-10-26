@@ -40,7 +40,7 @@
     "worldModel": [
         "#wpn_t8_eqp_heal_aid_world"
     ],
-    "gadgetIconAvailable": "#hash_754ad869787d7ac0",
-    "gadgetIconUnavailable": "#hash_754ad869787d7ac0",
+    "gadgetIconAvailable": "#ui_icon_inventory_p8_wz_supply_stash_health_lvl3",
+    "gadgetIconUnavailable": "#ui_icon_inventory_p8_wz_supply_stash_health_lvl3",
     "hudIcon": "#$blacktransparent"
 }

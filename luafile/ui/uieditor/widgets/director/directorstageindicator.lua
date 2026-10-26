@@ -85,7 +85,7 @@ CoD.DirectorStageIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, 
 	self.Stage3 = Stage3
 	
 	Stage4 = CoD.DirectorStagesPulsing.new( f1_arg0, f1_arg1, 0, 0, 5, 607, 0, 0, 8, 32 )
-	Stage4:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x1DE43899593E67E ) )
+	Stage4:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_rft_add" ) )
 	Stage4:setShaderVector( 0, 0, 1, 0, 0 )
 	Stage4:setShaderVector( 1, 1, 1, 1, 0 )
 	Stage4:setShaderVector( 2, 0, 1, 0, 0 )

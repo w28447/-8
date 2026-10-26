@@ -771,11 +771,11 @@ function function_6cadbaff()
     self waittill( #"weapon_melee", #"weapon_melee_power" );
     self playrumbleonentity( "damage_light" );
     self clientfield::set_to_player( "" + #"hash_67340426cd141891", 2 );
-    self playsound( #"hash_1a3cd046cb0b437f" );
+    self playsound( #"evt_freeze_melee_stg1" );
     self waittill( #"weapon_melee", #"weapon_melee_power" );
     self playrumbleonentity( "damage_light" );
     self clientfield::set_to_player( "" + #"hash_67340426cd141891", 1 );
-    self playsound( #"hash_1a3cd146cb0b4532" );
+    self playsound( #"evt_freeze_melee_stg2" );
     self waittill( #"weapon_melee", #"weapon_melee_power" );
     self playrumbleonentity( "damage_heavy" );
     self clientfield::set_to_player( "" + #"hash_67340426cd141891", 0 );

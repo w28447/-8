@@ -14,7 +14,7 @@ CoD.LoadoutClassItemContainerZombie.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local LinePattern = LUI.UIImage.new( 0, 1, 7, -7, 0, 1, 17, -17 )
 	LinePattern:setAlpha( 0.5 )
 	LinePattern:setImage( RegisterImage( "uie_ui_menu_zombies_cac_grunge_pattern" ) )
-	LinePattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	LinePattern:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	LinePattern:setShaderVector( 0, 0, 0, 0, 0 )
 	LinePattern:setupNineSliceShader( 256, 256 )
 	self:addElement( LinePattern )
@@ -23,7 +23,7 @@ CoD.LoadoutClassItemContainerZombie.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local Colorize = LUI.UIImage.new( 0, 1, 7, -7, 0, 1, 17, -17 )
 	Colorize:setRGB( 0.89, 0.12, 0.12 )
 	Colorize:setAlpha( 0 )
-	Colorize:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	Colorize:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	Colorize:setShaderVector( 0, 0, 0, 0, 0 )
 	Colorize:setupNineSliceShader( 256, 256 )
 	self:addElement( Colorize )
@@ -38,7 +38,7 @@ CoD.LoadoutClassItemContainerZombie.new = function ( f1_arg0, f1_arg1, f1_arg2, 
 	local BracketsBottom = LUI.UIImage.new( 0, 0, -7, 309, 1, 1, -216, -3 )
 	BracketsBottom:setRGB( ColorSet.T8__BEIGE__HEADER.r, ColorSet.T8__BEIGE__HEADER.g, ColorSet.T8__BEIGE__HEADER.b )
 	BracketsBottom:setAlpha( 0.5 )
-	BracketsBottom:setImage( RegisterImage( 0x630489D9CBA3FA2 ) )
+	BracketsBottom:setImage( RegisterImage( "uie_ui_menu_zombies_cac_special_weapon_brackets_bottom" ) )
 	self:addElement( BracketsBottom )
 	self.BracketsBottom = BracketsBottom
 	

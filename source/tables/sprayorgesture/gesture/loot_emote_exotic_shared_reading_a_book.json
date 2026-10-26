@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_exotic_shared_reading_a_book",
+    "type": "#gesture",
+    "gesture": "#hash_215fa0b8a7ba60cb",
+    "gesture2": "#hash_52849169b5a51194",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/book_worm",
+        "icon": "image#ui_icon_emotes_reading_a_book",
+        "isdefault": 0
+    }
+}

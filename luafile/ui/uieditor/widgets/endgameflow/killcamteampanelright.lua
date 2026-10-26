@@ -39,7 +39,7 @@ CoD.KIllcamTeamPanelRight.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f
 	
 	local CallingCardFlareRight = LUI.UIImage.new( 0, 0, 61, 447, 0, 0, -0.5, 67.5 )
 	CallingCardFlareRight:setRGB( ColorSet.EnemyOrange_Protanopia.r, ColorSet.EnemyOrange_Protanopia.g, ColorSet.EnemyOrange_Protanopia.b )
-	CallingCardFlareRight:setImage( RegisterImage( 0x4C0D64C8709CA1C ) )
+	CallingCardFlareRight:setImage( RegisterImage( "uie_ui_hud_lightflare" ) )
 	CallingCardFlareRight:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CallingCardFlareRight )
 	self.CallingCardFlareRight = CallingCardFlareRight

@@ -9,7 +9,7 @@ CoD.TabbedScoreboardHeaderTeam.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local TeamBacking = LUI.UIImage.new( 0.5, 0.5, -355.5, 332.5, 0, 0, 0, 92 )
-	TeamBacking:setImage( RegisterImage( 0xF98FF610AB331DA ) )
+	TeamBacking:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_shoutcaster_bg" ) )
 	TeamBacking:subscribeToGlobalModel( f1_arg1, "Factions", "alliesFactionColor", function ( model )
 		local f2_local0 = model:get()
 		if f2_local0 ~= nil then
@@ -21,7 +21,7 @@ CoD.TabbedScoreboardHeaderTeam.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local TeamBackingAnim = LUI.UIImage.new( 0.5, 0.5, -355.5, 332.5, 0, 0, 0, 92 )
 	TeamBackingAnim:setAlpha( 0.17 )
-	TeamBackingAnim:setImage( RegisterImage( 0xF98FF610AB331DA ) )
+	TeamBackingAnim:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_shoutcaster_bg" ) )
 	TeamBackingAnim:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	TeamBackingAnim:subscribeToGlobalModel( f1_arg1, "Factions", "alliesFactionColor", function ( model )
 		local f3_local0 = model:get()
@@ -34,7 +34,7 @@ CoD.TabbedScoreboardHeaderTeam.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	
 	local TeamBotLineGlowAnim = LUI.UIImage.new( 0, 0, 0, 740, 0, 0, 43.5, 133.5 )
 	TeamBotLineGlowAnim:setAlpha( 0.17 )
-	TeamBotLineGlowAnim:setImage( RegisterImage( 0x29B69305A070EF5 ) )
+	TeamBotLineGlowAnim:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_shoutcaster_botbar_glow" ) )
 	TeamBotLineGlowAnim:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	TeamBotLineGlowAnim:subscribeToGlobalModel( f1_arg1, "Factions", "alliesFactionColor", function ( model )
 		local f4_local0 = model:get()
@@ -46,7 +46,7 @@ CoD.TabbedScoreboardHeaderTeam.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.TeamBotLineGlowAnim = TeamBotLineGlowAnim
 	
 	local TeamBotLine = LUI.UIImage.new( 0, 0, 14, 704, 0, 0, 83.5, 93.5 )
-	TeamBotLine:setImage( RegisterImage( 0xCE30EC2995B2373 ) )
+	TeamBotLine:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_shoutcaster_botbar" ) )
 	TeamBotLine:subscribeToGlobalModel( f1_arg1, "Factions", "alliesFactionColor", function ( model )
 		local f5_local0 = model:get()
 		if f5_local0 ~= nil then
@@ -57,7 +57,7 @@ CoD.TabbedScoreboardHeaderTeam.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.TeamBotLine = TeamBotLine
 	
 	local TeamBotLineGlow = LUI.UIImage.new( 0, 0, 0, 740, 0, 0, 43.5, 133.5 )
-	TeamBotLineGlow:setImage( RegisterImage( 0x29B69305A070EF5 ) )
+	TeamBotLineGlow:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_shoutcaster_botbar_glow" ) )
 	TeamBotLineGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xF755127C95CF5B6 ) )
 	TeamBotLineGlow:setShaderVector( 0, 1, 0, 0, 0 )
 	TeamBotLineGlow:subscribeToGlobalModel( f1_arg1, "Factions", "alliesFactionColor", function ( model )

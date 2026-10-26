@@ -3,6 +3,6 @@
     "widget": "BadasseryMedal",
     "name": "events_battle_command_activated",
     "backinglarge": "image#hash_66e5ce08c5c7b0cf",
-    "iconsmall": "image#hash_21559845ab83594b",
-    "iconlarge": "image#hash_21559845ab83594b"
+    "iconsmall": "image#ui_icon_jobfeed_common_activated",
+    "iconlarge": "image#ui_icon_jobfeed_common_activated"
 }

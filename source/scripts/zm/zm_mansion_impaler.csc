@@ -167,12 +167,12 @@ function function_4e782d34( localclientnum, oldval, newval, bnewent, binitialsna
             
             if ( self.model == #"p8_zm_man_jewelry_ring" )
             {
-                var_a0cc5b31 = self playloopsound( #"hash_1555e7c9f5c441db" );
+                var_a0cc5b31 = self playloopsound( #"zmb_diamond_ring_loop" );
             }
             
             if ( self.model == #"p8_zm_man_jewelry_necklace" )
             {
-                var_a0cc5b31 = self playloopsound( #"hash_21148ffbe9af801d" );
+                var_a0cc5b31 = self playloopsound( #"zmb_pearl_necklace_loop" );
             }
             
             if ( self.model == #"p8_zm_man_jewelry_bracelet" )

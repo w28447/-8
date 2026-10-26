@@ -48,7 +48,7 @@ function private __init__()
     }
     
     level.weaponbgbgrab = getweapon( #"zombie_bgb_grab" );
-    level.var_ddff6359 = array( getweapon( #"hash_d0f29de78e218ad" ), getweapon( #"hash_5e07292c519531e6" ), getweapon( #"hash_305e5faa9ecb625a" ), getweapon( #"hash_23cc1f9c16b375c3" ), getweapon( #"hash_155cc0a9ba3c3260" ), getweapon( #"hash_2394c41f048f7d2" ), getweapon( #"hash_4565adf3abc61ea3" ) );
+    level.var_ddff6359 = array( getweapon( #"zombie_perk_elixir_classic" ), getweapon( #"zombie_perk_elixir_whimsical" ), getweapon( #"zombie_perk_elixir_common" ), getweapon( #"zombie_perk_elixir_rare" ), getweapon( #"zombie_perk_elixir_legendary" ), getweapon( #"zombie_perk_elixir_epic" ), getweapon( #"zombie_perk_elixir_ultra" ) );
     level.bgb = [];
     clientfield::register_clientuimodel( "zmhud.bgb_current", 1, 8, "int", 0 );
     clientfield::register_clientuimodel( "zmhud.bgb_display", 1, 1, "int", 0 );
@@ -832,7 +832,7 @@ function private bgb_limit_monitor()
             {
                 if ( i != level.bgb[ self.bgb ].limit )
                 {
-                    self playsoundtoplayer( #"hash_7bb31f4a25cf34a", self );
+                    self playsoundtoplayer( #"zmb_elixir_common_decrement", self );
                 }
                 
                 level.bgb[ self.bgb ].var_dbe7d224 = i;
@@ -898,7 +898,7 @@ function private bgb_limit_monitor()
             {
                 if ( i != 0 )
                 {
-                    self playsoundtoplayer( #"hash_7bb31f4a25cf34a", self );
+                    self playsoundtoplayer( #"zmb_elixir_common_decrement", self );
                 }
                 
                 self set_timer( count - i, count );

@@ -1913,7 +1913,7 @@ version 92 {
         // offset 0x3c3, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x3c4, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x3c5, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x3c6, size 0x1
@@ -1921,7 +1921,7 @@ version 92 {
         // offset 0x3c7, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x3c8, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x3c9, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x3ca, size 0x1
@@ -2057,7 +2057,7 @@ version 92 {
         // offset 0x40b, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x40c, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x40d, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x40e, size 0x1
@@ -5799,7 +5799,7 @@ version 91 {
         // offset 0x3c3, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x3c4, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x3c5, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x3c6, size 0x1
@@ -5807,7 +5807,7 @@ version 91 {
         // offset 0x3c7, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x3c8, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x3c9, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x3ca, size 0x1
@@ -5943,7 +5943,7 @@ version 91 {
         // offset 0x40b, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x40c, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x40d, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x40e, size 0x1
@@ -9685,7 +9685,7 @@ version 90 {
         // offset 0x3c3, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x3c4, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x3c5, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x3c6, size 0x1
@@ -9693,7 +9693,7 @@ version 90 {
         // offset 0x3c7, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x3c8, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x3c9, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x3ca, size 0x1
@@ -9829,7 +9829,7 @@ version 90 {
         // offset 0x40b, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x40c, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x40d, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x40e, size 0x1
@@ -13571,7 +13571,7 @@ version 89 {
         // offset 0x3c3, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x3c4, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x3c5, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x3c6, size 0x1
@@ -13579,7 +13579,7 @@ version 89 {
         // offset 0x3c7, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x3c8, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x3c9, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x3ca, size 0x1
@@ -13715,7 +13715,7 @@ version 89 {
         // offset 0x40b, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x40c, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x40d, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x40e, size 0x1
@@ -17433,7 +17433,7 @@ version 88 {
         // offset 0x3b3, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x3b4, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x3b5, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x3b6, size 0x1
@@ -17441,7 +17441,7 @@ version 88 {
         // offset 0x3b7, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x3b8, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x3b9, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x3ba, size 0x1
@@ -17577,7 +17577,7 @@ version 88 {
         // offset 0x3fb, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x3fc, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x3fd, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x3fe, size 0x1
@@ -21271,7 +21271,7 @@ version 87 {
         // offset 0x3a3, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x3a4, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x3a5, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x3a6, size 0x1
@@ -21279,7 +21279,7 @@ version 87 {
         // offset 0x3a7, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x3a8, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x3a9, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x3aa, size 0x1
@@ -21415,7 +21415,7 @@ version 87 {
         // offset 0x3eb, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x3ec, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x3ed, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x3ee, size 0x1
@@ -25090,7 +25090,7 @@ version 86 {
         // offset 0x3a3, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x3a4, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x3a5, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x3a6, size 0x1
@@ -25098,7 +25098,7 @@ version 86 {
         // offset 0x3a7, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x3a8, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x3a9, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x3aa, size 0x1
@@ -25234,7 +25234,7 @@ version 86 {
         // offset 0x3eb, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x3ec, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x3ed, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x3ee, size 0x1
@@ -28909,7 +28909,7 @@ version 85 {
         // offset 0x3a3, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x3a4, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x3a5, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x3a6, size 0x1
@@ -28917,7 +28917,7 @@ version 85 {
         // offset 0x3a7, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x3a8, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x3a9, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x3aa, size 0x1
@@ -29053,7 +29053,7 @@ version 85 {
         // offset 0x3eb, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x3ec, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x3ed, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x3ee, size 0x1
@@ -32728,7 +32728,7 @@ version 84 {
         // offset 0x3a3, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x3a4, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x3a5, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x3a6, size 0x1
@@ -32736,7 +32736,7 @@ version 84 {
         // offset 0x3a7, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x3a8, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x3a9, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x3aa, size 0x1
@@ -32872,7 +32872,7 @@ version 84 {
         // offset 0x3eb, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x3ec, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x3ed, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x3ee, size 0x1
@@ -36527,7 +36527,7 @@ version 83 {
         // offset 0x37b, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x37c, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x37d, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x37e, size 0x1
@@ -36535,7 +36535,7 @@ version 83 {
         // offset 0x37f, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x380, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x381, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x382, size 0x1
@@ -36671,7 +36671,7 @@ version 83 {
         // offset 0x3c3, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x3c4, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x3c5, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x3c6, size 0x1
@@ -40264,7 +40264,7 @@ version 82 {
         // offset 0x373, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x374, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x375, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x376, size 0x1
@@ -40272,7 +40272,7 @@ version 82 {
         // offset 0x377, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x378, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x379, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x37a, size 0x1
@@ -40408,7 +40408,7 @@ version 82 {
         // offset 0x3bb, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x3bc, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x3bd, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x3be, size 0x1
@@ -43990,7 +43990,7 @@ version 81 {
         // offset 0x373, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x374, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x375, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x376, size 0x1
@@ -43998,7 +43998,7 @@ version 81 {
         // offset 0x377, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x378, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x379, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x37a, size 0x1
@@ -44134,7 +44134,7 @@ version 81 {
         // offset 0x3bb, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x3bc, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x3bd, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x3be, size 0x1
@@ -47716,7 +47716,7 @@ version 80 {
         // offset 0x373, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x374, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x375, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x376, size 0x1
@@ -47724,7 +47724,7 @@ version 80 {
         // offset 0x377, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x378, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x379, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x37a, size 0x1
@@ -47860,7 +47860,7 @@ version 80 {
         // offset 0x3bb, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x3bc, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x3bd, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x3be, size 0x1
@@ -51442,7 +51442,7 @@ version 79 {
         // offset 0x373, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x374, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x375, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x376, size 0x1
@@ -51450,7 +51450,7 @@ version 79 {
         // offset 0x377, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x378, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x379, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x37a, size 0x1
@@ -51586,7 +51586,7 @@ version 79 {
         // offset 0x3bb, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x3bc, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x3bd, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x3be, size 0x1
@@ -55166,7 +55166,7 @@ version 78 {
         // offset 0x373, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x374, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x375, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x376, size 0x1
@@ -55174,7 +55174,7 @@ version 78 {
         // offset 0x377, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x378, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x379, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x37a, size 0x1
@@ -55310,7 +55310,7 @@ version 78 {
         // offset 0x3bb, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x3bc, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x3bd, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x3be, size 0x1
@@ -58892,7 +58892,7 @@ version 77 {
         // offset 0x373, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x374, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x375, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x376, size 0x1
@@ -58900,7 +58900,7 @@ version 77 {
         // offset 0x377, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x378, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x379, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x37a, size 0x1
@@ -59036,7 +59036,7 @@ version 77 {
         // offset 0x3bb, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x3bc, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x3bd, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x3be, size 0x1
@@ -62618,7 +62618,7 @@ version 76 {
         // offset 0x373, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x374, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x375, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x376, size 0x1
@@ -62626,7 +62626,7 @@ version 76 {
         // offset 0x377, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x378, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x379, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x37a, size 0x1
@@ -62762,7 +62762,7 @@ version 76 {
         // offset 0x3bb, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x3bc, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x3bd, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x3be, size 0x1
@@ -66320,7 +66320,7 @@ version 75 {
         // offset 0x363, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x364, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x365, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x366, size 0x1
@@ -66328,7 +66328,7 @@ version 75 {
         // offset 0x367, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x368, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x369, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x36a, size 0x1
@@ -66464,7 +66464,7 @@ version 75 {
         // offset 0x3ab, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x3ac, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x3ad, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x3ae, size 0x1
@@ -70006,7 +70006,7 @@ version 74 {
         // offset 0x363, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x364, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x365, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x366, size 0x1
@@ -70014,7 +70014,7 @@ version 74 {
         // offset 0x367, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x368, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x369, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x36a, size 0x1
@@ -70150,7 +70150,7 @@ version 74 {
         // offset 0x3ab, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x3ac, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x3ad, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x3ae, size 0x1
@@ -73684,7 +73684,7 @@ version 73 {
         // offset 0x363, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x364, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x365, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x366, size 0x1
@@ -73692,7 +73692,7 @@ version 73 {
         // offset 0x367, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x368, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x369, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x36a, size 0x1
@@ -73826,7 +73826,7 @@ version 73 {
         // offset 0x3aa, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x3ab, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x3ac, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x3ad, size 0x1
@@ -77360,7 +77360,7 @@ version 72 {
         // offset 0x363, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x364, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x365, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x366, size 0x1
@@ -77368,7 +77368,7 @@ version 72 {
         // offset 0x367, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x368, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x369, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x36a, size 0x1
@@ -77502,7 +77502,7 @@ version 72 {
         // offset 0x3aa, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x3ab, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x3ac, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x3ad, size 0x1
@@ -81036,7 +81036,7 @@ version 71 {
         // offset 0x363, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x364, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x365, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x366, size 0x1
@@ -81044,7 +81044,7 @@ version 71 {
         // offset 0x367, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x368, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x369, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x36a, size 0x1
@@ -81178,7 +81178,7 @@ version 71 {
         // offset 0x3aa, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x3ab, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x3ac, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x3ad, size 0x1
@@ -84652,7 +84652,7 @@ version 70 {
         // offset 0x313, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x314, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x315, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x316, size 0x1
@@ -84660,7 +84660,7 @@ version 70 {
         // offset 0x317, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x318, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x319, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x31a, size 0x1
@@ -84794,7 +84794,7 @@ version 70 {
         // offset 0x35a, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x35b, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x35c, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x35d, size 0x1
@@ -88191,7 +88191,7 @@ version 69 {
         // offset 0x313, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x314, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x315, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x316, size 0x1
@@ -88199,7 +88199,7 @@ version 69 {
         // offset 0x317, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x318, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x319, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x31a, size 0x1
@@ -88331,7 +88331,7 @@ version 69 {
         // offset 0x359, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x35a, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x35b, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x35c, size 0x1
@@ -91716,7 +91716,7 @@ version 68 {
         // offset 0x2fb, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x2fc, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x2fd, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x2fe, size 0x1
@@ -91724,7 +91724,7 @@ version 68 {
         // offset 0x2ff, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x300, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x301, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x302, size 0x1
@@ -91856,7 +91856,7 @@ version 68 {
         // offset 0x341, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x342, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x343, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x344, size 0x1
@@ -95211,7 +95211,7 @@ version 67 {
         // offset 0x2eb, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x2ec, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x2ed, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x2ee, size 0x1
@@ -95219,7 +95219,7 @@ version 67 {
         // offset 0x2ef, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x2f0, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2f1, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x2f2, size 0x1
@@ -95351,7 +95351,7 @@ version 67 {
         // offset 0x331, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x332, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x333, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x334, size 0x1
@@ -98687,7 +98687,7 @@ version 66 {
         // offset 0x2eb, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x2ec, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x2ed, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x2ee, size 0x1
@@ -98695,7 +98695,7 @@ version 66 {
         // offset 0x2ef, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x2f0, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2f1, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x2f2, size 0x1
@@ -98827,7 +98827,7 @@ version 66 {
         // offset 0x331, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x332, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x333, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x334, size 0x1
@@ -102133,7 +102133,7 @@ version 65 {
         // offset 0x2eb, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x2ec, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x2ed, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x2ee, size 0x1
@@ -102141,7 +102141,7 @@ version 65 {
         // offset 0x2ef, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x2f0, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2f1, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x2f2, size 0x1
@@ -102273,7 +102273,7 @@ version 65 {
         // offset 0x331, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x332, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x333, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x334, size 0x1
@@ -105579,7 +105579,7 @@ version 64 {
         // offset 0x2eb, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x2ec, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x2ed, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x2ee, size 0x1
@@ -105587,7 +105587,7 @@ version 64 {
         // offset 0x2ef, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x2f0, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2f1, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x2f2, size 0x1
@@ -105719,7 +105719,7 @@ version 64 {
         // offset 0x331, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x332, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x333, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x334, size 0x1
@@ -109030,7 +109030,7 @@ version 63 {
         // offset 0x2a3, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x2a4, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x2a5, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x2a6, size 0x1
@@ -109038,7 +109038,7 @@ version 63 {
         // offset 0x2a7, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x2a8, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2a9, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x2aa, size 0x1
@@ -109170,7 +109170,7 @@ version 63 {
         // offset 0x2e9, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2ea, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2eb, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2ec, size 0x1
@@ -112447,7 +112447,7 @@ version 62 {
         // offset 0x2a3, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x2a4, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x2a5, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x2a6, size 0x1
@@ -112455,7 +112455,7 @@ version 62 {
         // offset 0x2a7, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x2a8, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2a9, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x2aa, size 0x1
@@ -112587,7 +112587,7 @@ version 62 {
         // offset 0x2e9, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2ea, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2eb, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2ec, size 0x1
@@ -115864,7 +115864,7 @@ version 61 {
         // offset 0x2a3, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x2a4, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x2a5, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x2a6, size 0x1
@@ -115872,7 +115872,7 @@ version 61 {
         // offset 0x2a7, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x2a8, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2a9, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x2aa, size 0x1
@@ -116004,7 +116004,7 @@ version 61 {
         // offset 0x2e9, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2ea, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2eb, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2ec, size 0x1
@@ -119281,7 +119281,7 @@ version 60 {
         // offset 0x2a3, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x2a4, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x2a5, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x2a6, size 0x1
@@ -119289,7 +119289,7 @@ version 60 {
         // offset 0x2a7, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x2a8, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2a9, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x2aa, size 0x1
@@ -119421,7 +119421,7 @@ version 60 {
         // offset 0x2e9, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2ea, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2eb, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2ec, size 0x1
@@ -122698,7 +122698,7 @@ version 59 {
         // offset 0x2a3, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x2a4, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x2a5, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x2a6, size 0x1
@@ -122706,7 +122706,7 @@ version 59 {
         // offset 0x2a7, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x2a8, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2a9, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x2aa, size 0x1
@@ -122838,7 +122838,7 @@ version 59 {
         // offset 0x2e9, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2ea, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2eb, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2ec, size 0x1
@@ -126109,7 +126109,7 @@ version 58 {
         // offset 0x2a3, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x2a4, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x2a5, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x2a6, size 0x1
@@ -126117,7 +126117,7 @@ version 58 {
         // offset 0x2a7, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x2a8, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x2a9, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x2aa, size 0x1
@@ -126249,7 +126249,7 @@ version 58 {
         // offset 0x2e9, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2ea, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2eb, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2ec, size 0x1
@@ -129506,7 +129506,7 @@ version 57 {
         // offset 0x292, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x293, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x294, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x295, size 0x1
@@ -129514,7 +129514,7 @@ version 57 {
         // offset 0x296, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x297, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x299, size 0x1
@@ -129648,7 +129648,7 @@ version 57 {
         // offset 0x2d9, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2da, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2db, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2dc, size 0x1
@@ -132887,7 +132887,7 @@ version 56 {
         // offset 0x292, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x293, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x294, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x295, size 0x1
@@ -132895,7 +132895,7 @@ version 56 {
         // offset 0x296, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x297, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x299, size 0x1
@@ -133029,7 +133029,7 @@ version 56 {
         // offset 0x2d9, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2da, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2db, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2dc, size 0x1
@@ -136262,7 +136262,7 @@ version 55 {
         // offset 0x292, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x293, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x294, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x295, size 0x1
@@ -136270,7 +136270,7 @@ version 55 {
         // offset 0x296, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x297, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x299, size 0x1
@@ -136402,7 +136402,7 @@ version 55 {
         // offset 0x2d8, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2d9, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2da, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2db, size 0x1
@@ -139635,7 +139635,7 @@ version 54 {
         // offset 0x292, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x293, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x294, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x295, size 0x1
@@ -139643,7 +139643,7 @@ version 54 {
         // offset 0x296, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x297, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x299, size 0x1
@@ -139775,7 +139775,7 @@ version 54 {
         // offset 0x2d8, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2d9, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2da, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2db, size 0x1
@@ -143000,7 +143000,7 @@ version 53 {
         // offset 0x292, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x293, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x294, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x295, size 0x1
@@ -143008,7 +143008,7 @@ version 53 {
         // offset 0x296, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x297, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x299, size 0x1
@@ -143140,7 +143140,7 @@ version 53 {
         // offset 0x2d8, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2d9, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2da, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2db, size 0x1
@@ -146935,7 +146935,7 @@ version 52 {
         // offset 0x292, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x293, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x294, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x295, size 0x1
@@ -146943,7 +146943,7 @@ version 52 {
         // offset 0x296, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x297, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x299, size 0x1
@@ -147075,7 +147075,7 @@ version 52 {
         // offset 0x2d8, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2d9, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2da, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2db, size 0x1
@@ -150870,7 +150870,7 @@ version 51 {
         // offset 0x292, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x293, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x294, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x295, size 0x1
@@ -150878,7 +150878,7 @@ version 51 {
         // offset 0x296, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x297, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x299, size 0x1
@@ -151010,7 +151010,7 @@ version 51 {
         // offset 0x2d8, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2d9, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2da, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2db, size 0x1
@@ -154801,7 +154801,7 @@ version 50 {
         // offset 0x292, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x293, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x294, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x295, size 0x1
@@ -154809,7 +154809,7 @@ version 50 {
         // offset 0x296, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x297, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x299, size 0x1
@@ -154941,7 +154941,7 @@ version 50 {
         // offset 0x2d8, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2d9, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2da, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2db, size 0x1
@@ -158730,7 +158730,7 @@ version 49 {
         // offset 0x292, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x293, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x294, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x295, size 0x1
@@ -158738,7 +158738,7 @@ version 49 {
         // offset 0x296, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x297, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x299, size 0x1
@@ -158870,7 +158870,7 @@ version 49 {
         // offset 0x2d8, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2d9, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2da, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2db, size 0x1
@@ -162657,7 +162657,7 @@ version 48 {
         // offset 0x292, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x293, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x294, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x295, size 0x1
@@ -162665,7 +162665,7 @@ version 48 {
         // offset 0x296, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x297, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x299, size 0x1
@@ -162797,7 +162797,7 @@ version 48 {
         // offset 0x2d8, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2d9, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2da, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2db, size 0x1
@@ -166586,7 +166586,7 @@ version 47 {
         // offset 0x292, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x293, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x294, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x295, size 0x1
@@ -166594,7 +166594,7 @@ version 47 {
         // offset 0x296, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x297, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x299, size 0x1
@@ -166726,7 +166726,7 @@ version 47 {
         // offset 0x2d8, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2d9, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2da, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2db, size 0x1
@@ -170515,7 +170515,7 @@ version 46 {
         // offset 0x292, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x293, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x294, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x295, size 0x1
@@ -170523,7 +170523,7 @@ version 46 {
         // offset 0x296, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x297, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x299, size 0x1
@@ -170655,7 +170655,7 @@ version 46 {
         // offset 0x2d8, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2d9, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2da, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2db, size 0x1
@@ -174442,7 +174442,7 @@ version 45 {
         // offset 0x292, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x293, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x294, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x295, size 0x1
@@ -174450,7 +174450,7 @@ version 45 {
         // offset 0x296, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x297, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x299, size 0x1
@@ -174582,7 +174582,7 @@ version 45 {
         // offset 0x2d8, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2d9, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2da, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2db, size 0x1
@@ -178363,7 +178363,7 @@ version 44 {
         // offset 0x292, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x293, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x294, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x295, size 0x1
@@ -178371,7 +178371,7 @@ version 44 {
         // offset 0x296, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x297, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x299, size 0x1
@@ -178503,7 +178503,7 @@ version 44 {
         // offset 0x2d8, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2d9, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2da, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2db, size 0x1
@@ -182284,7 +182284,7 @@ version 43 {
         // offset 0x292, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x293, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x294, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x295, size 0x1
@@ -182292,7 +182292,7 @@ version 43 {
         // offset 0x296, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x297, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x299, size 0x1
@@ -182424,7 +182424,7 @@ version 43 {
         // offset 0x2d8, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2d9, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2da, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2db, size 0x1
@@ -186203,7 +186203,7 @@ version 42 {
         // offset 0x292, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x293, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x294, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x295, size 0x1
@@ -186211,7 +186211,7 @@ version 42 {
         // offset 0x296, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x297, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x298, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x299, size 0x1
@@ -186343,7 +186343,7 @@ version 42 {
         // offset 0x2d8, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2d9, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2da, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2db, size 0x1
@@ -190110,7 +190110,7 @@ version 41 {
         // offset 0x28a, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x28b, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x28c, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x28d, size 0x1
@@ -190118,7 +190118,7 @@ version 41 {
         // offset 0x28e, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x28f, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x290, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x291, size 0x1
@@ -190252,7 +190252,7 @@ version 41 {
         // offset 0x2d1, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2d2, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2d3, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2d4, size 0x1
@@ -194003,7 +194003,7 @@ version 40 {
         // offset 0x28a, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x28b, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x28c, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x28d, size 0x1
@@ -194011,7 +194011,7 @@ version 40 {
         // offset 0x28e, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x28f, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x290, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x291, size 0x1
@@ -194145,7 +194145,7 @@ version 40 {
         // offset 0x2d1, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x2d2, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x2d3, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x2d4, size 0x1
@@ -197854,7 +197854,7 @@ version 39 {
         // offset 0x252, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x253, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x254, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x255, size 0x1
@@ -197864,7 +197864,7 @@ version 39 {
         // offset 0x257, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x258, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
         hash_19c4a4c16c173e51 willy_pete;
         // offset 0x25a, size 0x1
@@ -197996,7 +197996,7 @@ version 39 {
         // offset 0x299, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x29a, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x29b, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x29c, size 0x1
@@ -201650,7 +201650,7 @@ version 38 {
         // offset 0x252, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x253, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x254, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x255, size 0x1
@@ -201660,7 +201660,7 @@ version 38 {
         // offset 0x257, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x258, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x25a, size 0x1
@@ -201790,7 +201790,7 @@ version 38 {
         // offset 0x298, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x299, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x29a, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x29b, size 0x1
@@ -205438,7 +205438,7 @@ version 37 {
         // offset 0x252, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x253, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x254, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x255, size 0x1
@@ -205448,7 +205448,7 @@ version 37 {
         // offset 0x257, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x258, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x25a, size 0x1
@@ -205576,7 +205576,7 @@ version 37 {
         // offset 0x297, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x298, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x299, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x29a, size 0x1
@@ -209224,7 +209224,7 @@ version 36 {
         // offset 0x252, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x253, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x254, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x255, size 0x1
@@ -209234,7 +209234,7 @@ version 36 {
         // offset 0x257, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x258, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x25a, size 0x1
@@ -209362,7 +209362,7 @@ version 36 {
         // offset 0x297, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x298, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x299, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x29a, size 0x1
@@ -213010,7 +213010,7 @@ version 35 {
         // offset 0x252, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x253, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x254, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x255, size 0x1
@@ -213020,7 +213020,7 @@ version 35 {
         // offset 0x257, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x258, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x25a, size 0x1
@@ -213148,7 +213148,7 @@ version 35 {
         // offset 0x297, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x298, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x299, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x29a, size 0x1
@@ -216796,7 +216796,7 @@ version 34 {
         // offset 0x252, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x253, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x254, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x255, size 0x1
@@ -216806,7 +216806,7 @@ version 34 {
         // offset 0x257, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x258, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x25a, size 0x1
@@ -216934,7 +216934,7 @@ version 34 {
         // offset 0x297, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x298, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x299, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x29a, size 0x1
@@ -220574,7 +220574,7 @@ version 33 {
         // offset 0x252, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x253, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x254, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x255, size 0x1
@@ -220584,7 +220584,7 @@ version 33 {
         // offset 0x257, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x258, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x25a, size 0x1
@@ -220712,7 +220712,7 @@ version 33 {
         // offset 0x297, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x298, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x299, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x29a, size 0x1
@@ -224345,7 +224345,7 @@ version 32 {
         // offset 0x252, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x253, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x254, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x255, size 0x1
@@ -224355,7 +224355,7 @@ version 32 {
         // offset 0x257, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x258, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x25a, size 0x1
@@ -224483,7 +224483,7 @@ version 32 {
         // offset 0x297, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x298, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x299, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x29a, size 0x1
@@ -228116,7 +228116,7 @@ version 31 {
         // offset 0x252, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x253, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x254, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x255, size 0x1
@@ -228126,7 +228126,7 @@ version 31 {
         // offset 0x257, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x258, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x25a, size 0x1
@@ -228254,7 +228254,7 @@ version 31 {
         // offset 0x297, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x298, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x299, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x29a, size 0x1
@@ -231887,7 +231887,7 @@ version 30 {
         // offset 0x252, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x253, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x254, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x255, size 0x1
@@ -231897,7 +231897,7 @@ version 30 {
         // offset 0x257, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x258, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x259, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x25a, size 0x1
@@ -232025,7 +232025,7 @@ version 30 {
         // offset 0x297, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x298, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x299, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x29a, size 0x1
@@ -235632,7 +235632,7 @@ version 29 {
         // offset 0x242, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x243, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x244, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x245, size 0x1
@@ -235642,7 +235642,7 @@ version 29 {
         // offset 0x247, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x248, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x249, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x24a, size 0x1
@@ -235770,7 +235770,7 @@ version 29 {
         // offset 0x287, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x288, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x289, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x28a, size 0x1
@@ -239359,7 +239359,7 @@ version 28 {
         // offset 0x242, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x243, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x244, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x245, size 0x1
@@ -239369,7 +239369,7 @@ version 28 {
         // offset 0x247, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x248, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x249, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x24a, size 0x1
@@ -239495,7 +239495,7 @@ version 28 {
         // offset 0x286, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x287, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x288, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x289, size 0x1
@@ -243084,7 +243084,7 @@ version 27 {
         // offset 0x242, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x243, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x244, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x245, size 0x1
@@ -243094,7 +243094,7 @@ version 27 {
         // offset 0x247, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x248, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x249, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x24a, size 0x1
@@ -243220,7 +243220,7 @@ version 27 {
         // offset 0x286, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x287, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x288, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x289, size 0x1
@@ -246771,7 +246771,7 @@ version 26 {
         // offset 0x212, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x213, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x214, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x215, size 0x1
@@ -246781,7 +246781,7 @@ version 26 {
         // offset 0x217, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x218, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x219, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x21a, size 0x1
@@ -246907,7 +246907,7 @@ version 26 {
         // offset 0x256, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x257, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x258, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x259, size 0x1
@@ -250406,7 +250406,7 @@ version 25 {
         // offset 0x212, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x213, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x214, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x215, size 0x1
@@ -250416,7 +250416,7 @@ version 25 {
         // offset 0x217, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x218, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x219, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x21a, size 0x1
@@ -250542,7 +250542,7 @@ version 25 {
         // offset 0x256, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x257, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x258, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x259, size 0x1
@@ -254039,7 +254039,7 @@ version 24 {
         // offset 0x212, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x213, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x214, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x215, size 0x1
@@ -254049,7 +254049,7 @@ version 24 {
         // offset 0x217, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x218, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x219, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x21a, size 0x1
@@ -254175,7 +254175,7 @@ version 24 {
         // offset 0x256, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x257, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x258, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x259, size 0x1
@@ -257668,7 +257668,7 @@ version 23 {
         // offset 0x212, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x213, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x214, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x215, size 0x1
@@ -257678,7 +257678,7 @@ version 23 {
         // offset 0x217, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x218, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x219, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x21a, size 0x1
@@ -257804,7 +257804,7 @@ version 23 {
         // offset 0x256, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x257, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x258, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x259, size 0x1
@@ -261293,7 +261293,7 @@ version 22 {
         // offset 0x212, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x213, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x214, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x215, size 0x1
@@ -261303,7 +261303,7 @@ version 22 {
         // offset 0x217, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x218, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x219, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x21a, size 0x1
@@ -261429,7 +261429,7 @@ version 22 {
         // offset 0x256, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x257, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x258, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x259, size 0x1
@@ -264912,7 +264912,7 @@ version 21 {
         // offset 0x212, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x213, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x214, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x215, size 0x1
@@ -264922,7 +264922,7 @@ version 21 {
         // offset 0x217, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x218, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x219, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x21a, size 0x1
@@ -265048,7 +265048,7 @@ version 21 {
         // offset 0x256, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x257, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x258, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x259, size 0x1
@@ -268535,7 +268535,7 @@ version 20 {
         // offset 0x212, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x213, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x214, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x215, size 0x1
@@ -268545,7 +268545,7 @@ version 20 {
         // offset 0x217, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x218, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x219, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x21a, size 0x1
@@ -268671,7 +268671,7 @@ version 20 {
         // offset 0x256, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x257, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x258, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x259, size 0x1
@@ -272136,7 +272136,7 @@ version 19 {
         // offset 0x1fa, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x1fb, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x1fc, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x1fd, size 0x1
@@ -272146,7 +272146,7 @@ version 19 {
         // offset 0x1ff, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x200, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x201, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x202, size 0x1
@@ -272278,7 +272278,7 @@ version 19 {
         // offset 0x241, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x242, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x243, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x244, size 0x1
@@ -275725,7 +275725,7 @@ version 18 {
         // offset 0x1fa, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x1fb, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x1fc, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x1fd, size 0x1
@@ -275735,7 +275735,7 @@ version 18 {
         // offset 0x1ff, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x200, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x201, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x202, size 0x1
@@ -275867,7 +275867,7 @@ version 18 {
         // offset 0x241, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x242, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x243, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x244, size 0x1
@@ -279310,7 +279310,7 @@ version 17 {
         // offset 0x1fa, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x1fb, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x1fc, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x1fd, size 0x1
@@ -279320,7 +279320,7 @@ version 17 {
         // offset 0x1ff, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x200, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x201, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x202, size 0x1
@@ -279452,7 +279452,7 @@ version 17 {
         // offset 0x241, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x242, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x243, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x244, size 0x1
@@ -282881,7 +282881,7 @@ version 16 {
         // offset 0x1fa, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x1fb, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x1fc, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x1fd, size 0x1
@@ -282891,7 +282891,7 @@ version 16 {
         // offset 0x1ff, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x200, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x201, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x202, size 0x1
@@ -283021,7 +283021,7 @@ version 16 {
         // offset 0x240, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x241, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x242, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x243, size 0x1
@@ -286446,7 +286446,7 @@ version 15 {
         // offset 0x1fa, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x1fb, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x1fc, size 0x1
         hash_5617916c58931a0d talent_teamlink;
         // offset 0x1fd, size 0x1
@@ -286456,7 +286456,7 @@ version 15 {
         // offset 0x1ff, size 0x1
         hash_1a5ae0af21281882 hash_39045b0020cc3e00;
         // offset 0x200, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x201, size 0x1
         hash_9ebfabd7bc8adaa talent_flakjacket;
         // offset 0x202, size 0x1
@@ -286586,7 +286586,7 @@ version 15 {
         // offset 0x240, size 0x1
         hash_3e2dc81cf153002 talent_lightweight;
         // offset 0x241, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x242, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x243, size 0x1
@@ -289745,11 +289745,11 @@ version 14 {
         // offset 0x1f3, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x1f4, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x1f5, size 0x1
         hash_4fff1448d77d120d tr_flechette_t8;
         // offset 0x1f6, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x1f7, size 0x1
         hash_7397182b0142dc0e shock_rifle;
         // offset 0x1f8, size 0x1
@@ -289833,7 +289833,7 @@ version 14 {
         // offset 0x21f, size 0x1
         hash_3b1f3b24086d6419 hero_annihilator;
         // offset 0x220, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x221, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x222, size 0x1
@@ -292974,11 +292974,11 @@ version 13 {
         // offset 0x1f3, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x1f4, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x1f5, size 0x1
         hash_4fff1448d77d120d tr_flechette_t8;
         // offset 0x1f6, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x1f7, size 0x1
         hash_7397182b0142dc0e shock_rifle;
         // offset 0x1f8, size 0x1
@@ -293062,7 +293062,7 @@ version 13 {
         // offset 0x21f, size 0x1
         hash_3b1f3b24086d6419 hero_annihilator;
         // offset 0x220, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x221, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x222, size 0x1
@@ -296203,11 +296203,11 @@ version 12 {
         // offset 0x1f3, size 0x1
         hash_49c0491166b74330 gadget_jammer;
         // offset 0x1f4, size 0x1
-        hash_1aae2f8aa9985424 hash_7932008294f0d876;
+        hash_1aae2f8aa9985424 bare_hands_bounty_tier_two;
         // offset 0x1f5, size 0x1
         hash_4fff1448d77d120d tr_flechette_t8;
         // offset 0x1f6, size 0x1
-        hash_75c463968d77fa03 hash_31be8125c7d0f273;
+        hash_75c463968d77fa03 null_offhand_ultimate;
         // offset 0x1f7, size 0x1
         hash_7397182b0142dc0e shock_rifle;
         // offset 0x1f8, size 0x1
@@ -296291,7 +296291,7 @@ version 12 {
         // offset 0x21f, size 0x1
         hash_3b1f3b24086d6419 hero_annihilator;
         // offset 0x220, size 0x1
-        hash_6b6eb6830d22caa5 hash_5a7fd1af4a1d5c9;
+        hash_6b6eb6830d22caa5 null_offhand_hero_gadget;
         // offset 0x221, size 0x1
         hash_9acdd8429edc381 default_specialist_equipment;
         // offset 0x222, size 0x1

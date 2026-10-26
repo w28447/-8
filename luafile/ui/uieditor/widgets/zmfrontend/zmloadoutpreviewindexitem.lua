@@ -18,7 +18,7 @@ CoD.ZMLoadoutPreviewIndexItem.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local LinePattern = LUI.UIImage.new( 0, 1, 1, -1, 0, 1, 1, -1 )
 	LinePattern:setAlpha( 0.7 )
 	LinePattern:setImage( RegisterImage( "uie_ui_menu_zombies_cac_grunge_pattern" ) )
-	LinePattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	LinePattern:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	LinePattern:setShaderVector( 0, 0, 0, 0, 0 )
 	LinePattern:setupNineSliceShader( 256, 256 )
 	self:addElement( LinePattern )

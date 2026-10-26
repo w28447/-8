@@ -21,7 +21,7 @@
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "image#hash_611756199e43489c"
+                            "stageimage": "image#ui_icon_zm_inventory_dlc1_man_prima_materia_slide"
                         }
                     ],
                     "hash_1d91eeba": 2,
@@ -48,11 +48,11 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "image#hash_2834403e8c3ad7ba"
+                            "stageimage": "image#ui_icon_zm_inventory_dlc1_nosferatu_chaos_drop"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "image#hash_611756199e43489c"
+                            "stageimage": "image#ui_icon_zm_inventory_dlc1_man_prima_materia_slide"
                         }
                     ],
                     "hash_1d91eeba": 2,
@@ -63,23 +63,23 @@
                     "stages": [
                         {
                             "numneeded": 1,
-                            "stageimage": "image#hash_74b40026657ada6"
+                            "stageimage": "image#ui_icon_zm_inventory_dlc1_bat_bile_01"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "image#hash_74b3f026657abf3"
+                            "stageimage": "image#ui_icon_zm_inventory_dlc1_bat_bile_02"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "image#hash_74b3e026657aa40"
+                            "stageimage": "image#ui_icon_zm_inventory_dlc1_bat_bile_03"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "image#hash_35e255d23e4c7a42"
+                            "stageimage": "image#ui_icon_zm_inventory_dlc1_nosferatu_humanoid_chaos_drop"
                         },
                         {
                             "numneeded": 1,
-                            "stageimage": "image#hash_611756199e43489c"
+                            "stageimage": "image#ui_icon_zm_inventory_dlc1_man_prima_materia_slide"
                         }
                     ],
                     "hash_1d91eeba": 5,
@@ -216,7 +216,7 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "image#hash_5312df75db1e29b0"
+                                    "stageimage": "image#ui_icon_zm_inventory_dlc1_man_sterling_silver_ice_bucket"
                                 }
                             ],
                             "hash_1d91eeba": 1,
@@ -226,7 +226,7 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "image#hash_4fc60e1de97db607"
+                                    "stageimage": "image#ui_icon_zm_inventory_dlc1_man_sterling_silver_candelabra"
                                 }
                             ],
                             "hash_1d91eeba": 1,
@@ -236,7 +236,7 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "image#hash_6d65ab9978d0050a"
+                                    "stageimage": "image#ui_icon_zm_inventory_dlc1_man_sterling_silver_tray"
                                 }
                             ],
                             "hash_1d91eeba": 1,
@@ -251,7 +251,7 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "image#hash_4ef6939ca6e195b7"
+                                    "stageimage": "image#ui_icon_zm_inventory_dlc1_man_smelting_ladle"
                                 }
                             ],
                             "hash_1d91eeba": 1,
@@ -274,7 +274,7 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "image#hash_18b24a1d1fe6d1d8"
+                                    "stageimage": "image#ui_icon_zm_inventory_dlc1_man_charcoal_fireplace"
                                 }
                             ],
                             "hash_1d91eeba": 1,
@@ -284,7 +284,7 @@
                         {
                             "stages": [
                                 {
-                                    "stageimage": "image#hash_6fba75d0f0f2f3f3"
+                                    "stageimage": "image#ui_icon_zm_inventory_dlc1_bat_guano_pile"
                                 }
                             ],
                             "hash_1d91eeba": 1,
@@ -347,7 +347,7 @@
             "clientfield": "#pap_3"
         }
     ],
-    "objectivebackground": "image#hash_3f90f155c7e4e6d2",
+    "objectivebackground": "image#ui_icon_zm_inventory_dlc1_man_artifact_sentinel",
     "hash_b79de608": 12,
     "configstringfiletype": "scriptbundle",
     "hash_aa76b7dd": 1,

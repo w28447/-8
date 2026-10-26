@@ -63,7 +63,7 @@ function private __main__()
 // Size: 0x190
 function force_stream()
 {
-    bgb_weapons = array( getweapon( #"hash_d0f29de78e218ad" ), getweapon( #"hash_5e07292c519531e6" ), getweapon( #"hash_305e5faa9ecb625a" ), getweapon( #"hash_23cc1f9c16b375c3" ), getweapon( #"hash_155cc0a9ba3c3260" ), getweapon( #"hash_2394c41f048f7d2" ), getweapon( #"hash_4565adf3abc61ea3" ) );
+    bgb_weapons = array( getweapon( #"zombie_perk_elixir_classic" ), getweapon( #"zombie_perk_elixir_whimsical" ), getweapon( #"zombie_perk_elixir_common" ), getweapon( #"zombie_perk_elixir_rare" ), getweapon( #"zombie_perk_elixir_legendary" ), getweapon( #"zombie_perk_elixir_epic" ), getweapon( #"zombie_perk_elixir_ultra" ) );
     
     foreach ( weapon in bgb_weapons )
     {

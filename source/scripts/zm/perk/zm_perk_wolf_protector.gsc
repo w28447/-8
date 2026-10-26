@@ -260,7 +260,7 @@ function function_f3cd6eac()
                 iprintlnbold( "<dev string:x58>" );
             #/
             
-            self playsound( #"hash_7c5128882f070d07" );
+            self playsound( #"fly_dog_whistle_call" );
             self notify( #"wolf_protector_spawn" );
             wait 1.5;
             
@@ -350,7 +350,7 @@ function spawn_shockwave()
     {
         if ( isactor( ai ) )
         {
-            ai playsound( #"hash_22ff6701cf652785" );
+            ai playsound( #"zmb_bgb_abh_zombie_explode" );
             ai.marked_for_recycle = 1;
             ai.has_been_damaged_by_player = 0;
             ai dodamage( ai.health + 1000, self.origin, self );

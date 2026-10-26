@@ -83100,7 +83100,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_2d8d2d1b95daa1ae",
+                    "value": "#amb_blood_fountain_lp",
                     "unk1a": true
                 },
                 {
@@ -83166,7 +83166,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_2d8d2d1b95daa1ae",
+                    "value": "#amb_blood_fountain_lp",
                     "unk1a": true
                 },
                 {
@@ -83232,7 +83232,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_92f3c3ba47d16dd",
+                    "value": "#amb_blood_fountain_imp_lp",
                     "unk1a": true
                 },
                 {
@@ -83298,7 +83298,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_92f3c3ba47d16dd",
+                    "value": "#amb_blood_fountain_imp_lp",
                     "unk1a": true
                 },
                 {
@@ -93816,7 +93816,7 @@
                 {
                     "key": "model",
                     "type": "xhash",
-                    "value": "#hash_77659f61538a4beb",
+                    "value": "#p8_zm_gla_wood_coal_log_tip",
                     "unk1a": true
                 },
                 {

@@ -38,7 +38,7 @@
     "#hash_554be9f7": false,
     "sound90": "#wpn_hatchet_projectile_lp",
     "firesound": "#wpn_ballistic_knife_fire_npc",
-    "firesoundplayer": "#hash_5d898619c6dc1a15",
+    "firesoundplayer": "#wpn_ballistic_knife_fire_plr_rh",
     "sound240": "#wpn_pistol_dryfire_npc",
     "sound250": "#wpn_pistol_dryfire_plr",
     "tunables1": "#special_ballisticknife_t8_dw_tunables_wz",

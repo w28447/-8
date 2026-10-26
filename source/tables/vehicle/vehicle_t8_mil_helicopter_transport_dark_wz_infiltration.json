@@ -30,7 +30,7 @@
     "deathModel": "#hash_edda1db9f151043",
     "soundDef": "#hash_8e1609607098dd6d",
     "compassIconMaterial": "#t8_hud_waypoints_drone_hunter_scaled_down",
-    "tacticalModeIcon": "#hash_7b90e5f39b4f6008",
+    "tacticalModeIcon": "#uie_ui_icon_minimap_wz_chinook_static",
     "steerAxisName": "AXIS_LSTICK",
     "unk1608": "BUTTON_RTRIG",
     "unk1618": "BUTTON_LTRIG",

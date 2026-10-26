@@ -28,7 +28,7 @@ CoD.Challenges_FrameWidget_Scorestreaks.new = function ( f1_arg0, f1_arg1, f1_ar
 	self.Title = Title
 	
 	local AirAssault = CoD.ChallengesCategoryButton.new( f1_arg0, f1_arg1, 0, 0, 555, 1555, 0, 0, 3, 103 )
-	AirAssault.ChallengesCategoryButtonInternal.Name:setText( Engine[0xF9F1239CFD921FE]( 0x97BD69827609591 ) )
+	AirAssault.ChallengesCategoryButtonInternal.Name:setText( Engine[0xF9F1239CFD921FE]( "challenge/air_assault" ) )
 	AirAssault:subscribeToGlobalModel( f1_arg1, "ChallengesMPCategoryStats", "airassault", function ( model )
 		AirAssault:setModel( model, f1_arg1 )
 	end )

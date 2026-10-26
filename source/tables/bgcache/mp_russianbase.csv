@@ -254,8 +254,8 @@ soundalias,#amb_comp_loop
 soundalias,#pfx_steam_hiss
 soundalias,#dst_nitrogen_tank_leak
 soundalias,#dst_fern
-soundalias,#hash_200e28bcd26bab77
-soundalias,#hash_200e2ebcd26bb5a9
+soundalias,#exp_mp_propane_flux_l
+soundalias,#exp_mp_propane_flux_r
 soundalias,#exp_armor_lfe
 soundalias,#exp_armor_vehicle
 soundalias,#dst_car_rad_sputter
@@ -301,16 +301,16 @@ soundalias,#dst_spark_bounces
 soundalias,#dst_rock_large
 soundalias,#amb_wind_edge
 soundalias,#exp_electrical_small_spark
-soundalias,#hash_373c94e1ffb849b0
+soundalias,#exp_veh_small_no_debris
 soundalias,#amb_power_arc
 soundalias,#amb_wind_passage
 soundalias,#dst_tank_fire_hit_swt
 soundalias,#dst_solar_flux_l
 soundalias,#dst_solar_flux_r
-soundalias,#hash_3b6983b084cfef53
+soundalias,#dst_transformer_explo_spark
 soundalias,#exp_barrel_flux_r
 soundalias,#exp_barrel_flux_l
-soundalias,#hash_3f8d713abf4d10fe
+soundalias,#exp_veh_lfe_no_debris
 soundalias,#amb_train_engine
 soundalias,#amb_metal_creak_sml
 soundalias,#amb_comp_error
@@ -319,8 +319,8 @@ soundalias,#dst_gas_canister_open
 soundalias,#exp_nitrogen_tank_lfe
 soundalias,#amb_lantern
 soundalias,#exp_veh_small
-soundalias,#hash_456af38afaef9d77
-soundalias,#hash_456af98afaefa7a9
+soundalias,#exp_propane_flux_l
+soundalias,#exp_propane_flux_r
 soundalias,#dst_tank_fire_sml
 soundalias,#dst_garbage_bag
 soundalias,#exp_veh_large
@@ -333,7 +333,7 @@ soundalias,#dst_dest_glo_paper_04_d0
 soundalias,#exp_concussive_small_lfe
 soundalias,#exp_nitrogen_flux_r
 soundalias,#exp_nitrogen_flux_l
-soundalias,#hash_4ca3d2aaa573f1c8
+soundalias,#pfx_transformer_sparks
 soundalias,#dst_solar_panel_lrg
 soundalias,#dst_solar_panel_lfe
 soundalias,#amb_phone
@@ -364,7 +364,7 @@ soundalias,#amb_fire_lrg
 soundalias,#dst_fire_extinguisher
 soundalias,#dst_dest_gascan_01_dp_d0
 soundalias,#amb_comp_reel
-soundalias,#hash_5b18895703fba823
+soundalias,#pfx_transformer_arcs
 soundalias,#amb_pipe_water_2
 soundalias,#amb_bird_crow
 soundalias,#dst_transformer_explo
@@ -380,7 +380,7 @@ soundalias,#amb_pipe_water
 soundalias,#p_dest_paper_stack02
 soundalias,#p_dest_paper_stack01
 soundalias,#amb_power_buzz
-soundalias,#hash_663899d42687914d
+soundalias,#dst_car_windshield_break
 soundalias,#exp_incindiary_large
 soundalias,#exp_incindiary_small_hdr
 soundalias,#amb_wind_hollow
@@ -418,7 +418,7 @@ soundalias,#dst_car_oil_drip
 soundalias,#pfx_exhaust
 soundalias,#dst_generic_glass_small
 soundalias,#exp_veh_plane_spinout_lp
-soundalias,#hash_7ac5fa6568de2461
+soundalias,#exp_mp_propane_tank_lfe
 soundalias,#dst_glass_radar_pane_break
 soundalias,#dst_tank_steam_lp
 soundalias,#amb_power_fan
@@ -429,7 +429,7 @@ soundalias,#amb_wind_out_snow
 soundalias,#evt_fan_break
 soundalias,#dst_tank_explo
 soundalias,#amb_occ_fan
-soundalias,#hash_7f118ea3a4874268
+soundalias,#dst_mp_propane_tank_fire
 soundalias,#amb_wind_door_snow
 soundalias,#exp_barrel_dist
 client_fx,#destruct/fx_dest_window_glass_edge

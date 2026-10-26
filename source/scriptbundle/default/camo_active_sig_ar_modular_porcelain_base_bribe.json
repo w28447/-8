@@ -1,7 +1,7 @@
 {
     "hash_44a39e95faef0a4c:hash_c7bd8867": "localized17#hash_44a39e95faef0a4c",
-    "popupimage": "image#hash_6e9c6886b08f7af9",
-    "hash_6e9c6886b08f7af9:hash_5162d01b": "image#hash_6e9c6886b08f7af9",
+    "popupimage": "image#ui_icon_weapon_camo_active_sig_ar_modular_porcelain",
+    "ui_icon_weapon_camo_active_sig_ar_modular_porcelain:hash_5162d01b": "image#ui_icon_weapon_camo_active_sig_ar_modular_porcelain",
     "nametext": "localized17#hash_2b27d20d2cfc1069",
     "categorytext": "localized17#mpui/bm_bribe",
     "name": "camo_active_sig_ar_modular_porcelain_base_bribe",

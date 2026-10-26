@@ -162,8 +162,8 @@ soundalias,#amb_fire_lg
 soundalias,#amb_rain_on_water
 soundalias,#dst_nitrogen_tank_leak
 soundalias,#dst_fern
-soundalias,#hash_200e28bcd26bab77
-soundalias,#hash_200e2ebcd26bb5a9
+soundalias,#exp_mp_propane_flux_l
+soundalias,#exp_mp_propane_flux_r
 soundalias,#pfx_fire_line
 soundalias,#amb_radio
 soundalias,#amb_thunder
@@ -198,7 +198,7 @@ soundalias,#exp_electrical_small_spark
 soundalias,#amb_rain_on_foliage
 soundalias,#dst_solar_flux_l
 soundalias,#dst_solar_flux_r
-soundalias,#hash_3b6983b084cfef53
+soundalias,#dst_transformer_explo_spark
 soundalias,#pfx_fire_sml
 soundalias,#exp_barrel_flux_r
 soundalias,#exp_barrel_flux_l
@@ -206,8 +206,8 @@ soundalias,#pfx_fire_wood
 soundalias,#dst_hydrant_end_loop
 soundalias,#dst_gas_canister_open
 soundalias,#exp_nitrogen_tank_lfe
-soundalias,#hash_456af38afaef9d77
-soundalias,#hash_456af98afaefa7a9
+soundalias,#exp_propane_flux_l
+soundalias,#exp_propane_flux_r
 soundalias,#pfx_fire_embers
 soundalias,#dst_garbage_bag
 soundalias,#exp_barrel_fire
@@ -218,7 +218,7 @@ soundalias,#dst_dest_glo_paper_04_d0
 soundalias,#exp_concussive_small_lfe
 soundalias,#exp_nitrogen_flux_r
 soundalias,#exp_nitrogen_flux_l
-soundalias,#hash_4ca3d2aaa573f1c8
+soundalias,#pfx_transformer_sparks
 soundalias,#dst_solar_panel_lrg
 soundalias,#dst_solar_panel_lfe
 soundalias,#dst_propane_tank_explo
@@ -241,7 +241,7 @@ soundalias,#dst_hotdog_cart
 soundalias,#dst_fire_extinguisher
 soundalias,#dst_dest_gascan_01_dp_d0
 soundalias,#amb_rain_on_tarp
-soundalias,#hash_5b18895703fba823
+soundalias,#pfx_transformer_arcs
 soundalias,#amb_trees_creak
 soundalias,#dst_transformer_explo
 soundalias,#exp_nitrogen_tank_explo
@@ -254,7 +254,7 @@ soundalias,#p_dest_paper_stack02
 soundalias,#p_dest_paper_stack01
 soundalias,#amb_metal_fire
 soundalias,#amb_water_lap
-soundalias,#hash_653fc5310ae8738c
+soundalias,#amb_parrot_fly_away_lft
 soundalias,#exp_incindiary_large
 soundalias,#amb_wind_left
 soundalias,#exp_incindiary_small_hdr
@@ -279,13 +279,13 @@ soundalias,#exp_incindiary_large_flux_l
 soundalias,#exp_incindiary_large_flux_r
 soundalias,#dst_wood_crate
 soundalias,#dst_generic_glass_small
-soundalias,#hash_7ac5fa6568de2461
+soundalias,#exp_mp_propane_tank_lfe
 soundalias,#dst_glass_radar_pane_break
-soundalias,#hash_7c0d9ed945673890
+soundalias,#amb_parrot_fly_away_rt
 soundalias,#amb_wood_creak_hvy
 soundalias,#exp_incindiary_large_decay
 soundalias,#evt_fan_break
-soundalias,#hash_7f118ea3a4874268
+soundalias,#dst_mp_propane_tank_fire
 soundalias,#exp_barrel_dist
 client_fx,#impacts/fx8_bul_impact_blood_head_nonfatal
 client_fx,#impacts/fx8_bul_impact_robot_limb_nonfatal

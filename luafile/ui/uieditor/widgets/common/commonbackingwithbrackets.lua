@@ -11,7 +11,7 @@ CoD.CommonBackingWithBrackets.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
 	self:addElement( NoiseTiledBacking )
@@ -24,7 +24,7 @@ CoD.CommonBackingWithBrackets.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local BGDotPatternLarge = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BGDotPatternLarge:setAlpha( 0.02 )
 	BGDotPatternLarge:setImage( RegisterImage( "uie_ui_menu_common_button_bg_pattern_large" ) )
-	BGDotPatternLarge:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	BGDotPatternLarge:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	BGDotPatternLarge:setShaderVector( 0, 0, 0, 0, 0 )
 	BGDotPatternLarge:setupNineSliceShader( 4, 4 )
 	self:addElement( BGDotPatternLarge )

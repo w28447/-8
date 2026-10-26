@@ -284,7 +284,7 @@ function pickup_dung( localclientnum, oldval, newval, bnewent, binitialsnap, fie
 function function_8565be53( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     playfx( localclientnum, level._effect[ #"hash_6ff3eb2dd0078a51" ], self.origin );
-    playsound( localclientnum, #"hash_2e08e4ff8f949d48", self.origin );
+    playsound( localclientnum, #"zmb_funtime_danu_wood_break", self.origin );
 }
 
 // Namespace zm_towers/zm_towers
@@ -295,11 +295,11 @@ function function_35bf68a( localclientnum, oldval, newval, bnewent, binitialsnap
 {
     if ( newval )
     {
-        forcestreamxmodel( #"hash_77659f61538a4beb" );
+        forcestreamxmodel( #"p8_zm_gla_wood_coal_log_tip" );
         return;
     }
     
-    stopforcestreamingxmodel( #"hash_77659f61538a4beb" );
+    stopforcestreamingxmodel( #"p8_zm_gla_wood_coal_log_tip" );
 }
 
 // Namespace zm_towers/zm_towers
@@ -310,11 +310,11 @@ function function_605da720( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval )
     {
-        forcestreamxmodel( #"hash_4286272708c5e5c0" );
+        forcestreamxmodel( #"p8_zm_gla_wood_coal_log_tip_burned" );
         return;
     }
     
-    stopforcestreamingxmodel( #"hash_4286272708c5e5c0" );
+    stopforcestreamingxmodel( #"p8_zm_gla_wood_coal_log_tip_burned" );
 }
 
 // Namespace zm_towers/zm_towers
@@ -512,7 +512,7 @@ function ra_eyes_beam_fire( localclientnum, oldval, newval, bnewent, binitialsna
         level beam::launch( self, "tag_origin", self.var_96ce3194, "tag_origin", "beam8_zm_scepter_ray_lvl3" );
         self playsound( localclientnum, #"hash_473e265e57e397c8" );
         soundlineemitter( #"hash_4bc05f42a04dcfd8", self.origin, self.var_96ce3194.origin );
-        self.var_96ce3194.sfx_id = self.var_96ce3194 playloopsound( #"hash_c0bb4bb6f79f737" );
+        self.var_96ce3194.sfx_id = self.var_96ce3194 playloopsound( #"vox_path_sorrow_kill_mult_plr_6_gravel_pod_zombie_0" );
         return;
     }
     
@@ -1163,7 +1163,7 @@ function snd_crowd_react( localclientnum, oldval, newval, bnewent, binitialsnap,
         
         foreach ( struct in a_structs )
         {
-            playsound( localclientnum, #"hash_61052d99f398097", struct.origin );
+            playsound( localclientnum, #"amb_crowd_oneshot_hush", struct.origin );
             waitframe( 1 );
         }
         
@@ -1571,9 +1571,9 @@ function function_bdc63758( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval )
     {
-        self playsound( localclientnum, #"hash_539eb529963d7db4" );
+        self playsound( localclientnum, #"zmb_challenges_head_appear" );
         self.fx = util::playfxontag( localclientnum, level._effect[ #"head_fire_blue" ], self, "j_neck" );
-        self.sfx = self playloopsound( #"hash_38c39a7f0966480e" );
+        self.sfx = self playloopsound( #"zmb_challenges_head_fire_lp" );
         return;
     }
     
@@ -1598,9 +1598,9 @@ function function_c41817fc( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval )
     {
-        self playsound( localclientnum, #"hash_539eb529963d7db4" );
+        self playsound( localclientnum, #"zmb_challenges_head_appear" );
         self.fx = util::playfxontag( localclientnum, level._effect[ #"head_fire_green" ], self, "j_neck" );
-        self.sfx = self playloopsound( #"hash_38c39a7f0966480e" );
+        self.sfx = self playloopsound( #"zmb_challenges_head_fire_lp" );
         return;
     }
     
@@ -1625,9 +1625,9 @@ function function_27a7a3be( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval )
     {
-        self playsound( localclientnum, #"hash_539eb529963d7db4" );
+        self playsound( localclientnum, #"zmb_challenges_head_appear" );
         self.fx = util::playfxontag( localclientnum, level._effect[ #"head_fire_purple" ], self, "j_neck" );
-        self.sfx = self playloopsound( #"hash_38c39a7f0966480e" );
+        self.sfx = self playloopsound( #"zmb_challenges_head_fire_lp" );
         return;
     }
     
@@ -1652,9 +1652,9 @@ function function_d056a230( localclientnum, oldval, newval, bnewent, binitialsna
 {
     if ( newval )
     {
-        self playsound( localclientnum, #"hash_539eb529963d7db4" );
+        self playsound( localclientnum, #"zmb_challenges_head_appear" );
         self.fx = util::playfxontag( localclientnum, level._effect[ #"head_fire_red" ], self, "j_neck" );
-        self.sfx = self playloopsound( #"hash_38c39a7f0966480e" );
+        self.sfx = self playloopsound( #"zmb_challenges_head_fire_lp" );
         return;
     }
     
@@ -1688,14 +1688,14 @@ function function_57f3914e( localclientnum, oldval, newval, bnewent, binitialsna
                 s_fx.n_fire = undefined;
             }
             
-            audio::stoploopat( #"hash_929cb50cf634fb4", s_fx.origin );
-            audio::stoploopat( #"hash_3897a36236b75e0c", s_fx.origin );
+            audio::stoploopat( #"zmb_challenges_brazier_lp", s_fx.origin );
+            audio::stoploopat( #"zmb_challenges_brazier_complete_lp", s_fx.origin );
             break;
         case 1:
             s_fx.n_fire = playfx( localclientnum, level._effect[ #"brazier_fire_blue" ], s_fx.origin );
-            playsound( localclientnum, #"hash_6e1881a291ad6bda", s_fx.origin );
-            audio::playloopat( #"hash_929cb50cf634fb4", s_fx.origin );
-            audio::stoploopat( #"hash_3897a36236b75e0c", s_fx.origin );
+            playsound( localclientnum, #"zmb_challenges_brazier_ignite", s_fx.origin );
+            audio::playloopat( #"zmb_challenges_brazier_lp", s_fx.origin );
+            audio::stoploopat( #"zmb_challenges_brazier_complete_lp", s_fx.origin );
             break;
         case 2:
             if ( isdefined( s_fx.n_fire ) )
@@ -1705,9 +1705,9 @@ function function_57f3914e( localclientnum, oldval, newval, bnewent, binitialsna
             }
             
             s_fx.n_fire = playfx( localclientnum, level._effect[ #"brazier_fire_yellow" ], s_fx.origin );
-            playsound( localclientnum, #"hash_5390d89dc611da6c", s_fx.origin );
-            audio::playloopat( #"hash_3897a36236b75e0c", s_fx.origin );
-            audio::stoploopat( #"hash_929cb50cf634fb4", s_fx.origin );
+            playsound( localclientnum, #"zmb_challenges_brazier_ignite_complete", s_fx.origin );
+            audio::playloopat( #"zmb_challenges_brazier_complete_lp", s_fx.origin );
+            audio::stoploopat( #"zmb_challenges_brazier_lp", s_fx.origin );
             break;
     }
 }
@@ -1729,14 +1729,14 @@ function function_6e6d4bfc( localclientnum, oldval, newval, bnewent, binitialsna
                 s_fx.n_fire = undefined;
             }
             
-            audio::stoploopat( #"hash_929cb50cf634fb4", s_fx.origin );
-            audio::stoploopat( #"hash_3897a36236b75e0c", s_fx.origin );
+            audio::stoploopat( #"zmb_challenges_brazier_lp", s_fx.origin );
+            audio::stoploopat( #"zmb_challenges_brazier_complete_lp", s_fx.origin );
             break;
         case 1:
             s_fx.n_fire = playfx( localclientnum, level._effect[ #"brazier_fire_green" ], s_fx.origin );
-            playsound( localclientnum, #"hash_6e1881a291ad6bda", s_fx.origin );
-            audio::playloopat( #"hash_929cb50cf634fb4", s_fx.origin );
-            audio::stoploopat( #"hash_3897a36236b75e0c", s_fx.origin );
+            playsound( localclientnum, #"zmb_challenges_brazier_ignite", s_fx.origin );
+            audio::playloopat( #"zmb_challenges_brazier_lp", s_fx.origin );
+            audio::stoploopat( #"zmb_challenges_brazier_complete_lp", s_fx.origin );
             break;
         case 2:
             if ( isdefined( s_fx.n_fire ) )
@@ -1746,9 +1746,9 @@ function function_6e6d4bfc( localclientnum, oldval, newval, bnewent, binitialsna
             }
             
             s_fx.n_fire = playfx( localclientnum, level._effect[ #"brazier_fire_yellow" ], s_fx.origin );
-            playsound( localclientnum, #"hash_5390d89dc611da6c", s_fx.origin );
-            audio::playloopat( #"hash_3897a36236b75e0c", s_fx.origin );
-            audio::stoploopat( #"hash_929cb50cf634fb4", s_fx.origin );
+            playsound( localclientnum, #"zmb_challenges_brazier_ignite_complete", s_fx.origin );
+            audio::playloopat( #"zmb_challenges_brazier_complete_lp", s_fx.origin );
+            audio::stoploopat( #"zmb_challenges_brazier_lp", s_fx.origin );
             break;
     }
 }
@@ -1770,14 +1770,14 @@ function function_66050c9e( localclientnum, oldval, newval, bnewent, binitialsna
                 s_fx.n_fire = undefined;
             }
             
-            audio::stoploopat( #"hash_929cb50cf634fb4", s_fx.origin );
-            audio::stoploopat( #"hash_3897a36236b75e0c", s_fx.origin );
+            audio::stoploopat( #"zmb_challenges_brazier_lp", s_fx.origin );
+            audio::stoploopat( #"zmb_challenges_brazier_complete_lp", s_fx.origin );
             break;
         case 1:
             s_fx.n_fire = playfx( localclientnum, level._effect[ #"brazier_fire_purple" ], s_fx.origin );
-            playsound( localclientnum, #"hash_6e1881a291ad6bda", s_fx.origin );
-            audio::playloopat( #"hash_929cb50cf634fb4", s_fx.origin );
-            audio::stoploopat( #"hash_3897a36236b75e0c", s_fx.origin );
+            playsound( localclientnum, #"zmb_challenges_brazier_ignite", s_fx.origin );
+            audio::playloopat( #"zmb_challenges_brazier_lp", s_fx.origin );
+            audio::stoploopat( #"zmb_challenges_brazier_complete_lp", s_fx.origin );
             break;
         case 2:
             if ( isdefined( s_fx.n_fire ) )
@@ -1787,9 +1787,9 @@ function function_66050c9e( localclientnum, oldval, newval, bnewent, binitialsna
             }
             
             s_fx.n_fire = playfx( localclientnum, level._effect[ #"brazier_fire_yellow" ], s_fx.origin );
-            playsound( localclientnum, #"hash_5390d89dc611da6c", s_fx.origin );
-            audio::playloopat( #"hash_3897a36236b75e0c", s_fx.origin );
-            audio::stoploopat( #"hash_929cb50cf634fb4", s_fx.origin );
+            playsound( localclientnum, #"zmb_challenges_brazier_ignite_complete", s_fx.origin );
+            audio::playloopat( #"zmb_challenges_brazier_complete_lp", s_fx.origin );
+            audio::stoploopat( #"zmb_challenges_brazier_lp", s_fx.origin );
             break;
     }
 }
@@ -1811,14 +1811,14 @@ function function_1c231f3f( localclientnum, oldval, newval, bnewent, binitialsna
                 s_fx.n_fire = undefined;
             }
             
-            audio::stoploopat( #"hash_929cb50cf634fb4", s_fx.origin );
-            audio::stoploopat( #"hash_3897a36236b75e0c", s_fx.origin );
+            audio::stoploopat( #"zmb_challenges_brazier_lp", s_fx.origin );
+            audio::stoploopat( #"zmb_challenges_brazier_complete_lp", s_fx.origin );
             break;
         case 1:
             s_fx.n_fire = playfx( localclientnum, level._effect[ #"brazier_fire_red" ], s_fx.origin );
-            playsound( localclientnum, #"hash_6e1881a291ad6bda", s_fx.origin );
-            audio::playloopat( #"hash_929cb50cf634fb4", s_fx.origin );
-            audio::stoploopat( #"hash_3897a36236b75e0c", s_fx.origin );
+            playsound( localclientnum, #"zmb_challenges_brazier_ignite", s_fx.origin );
+            audio::playloopat( #"zmb_challenges_brazier_lp", s_fx.origin );
+            audio::stoploopat( #"zmb_challenges_brazier_complete_lp", s_fx.origin );
             break;
         case 2:
             if ( isdefined( s_fx.n_fire ) )
@@ -1828,9 +1828,9 @@ function function_1c231f3f( localclientnum, oldval, newval, bnewent, binitialsna
             }
             
             s_fx.n_fire = playfx( localclientnum, level._effect[ #"brazier_fire_yellow" ], s_fx.origin );
-            playsound( localclientnum, #"hash_5390d89dc611da6c", s_fx.origin );
-            audio::playloopat( #"hash_3897a36236b75e0c", s_fx.origin );
-            audio::stoploopat( #"hash_929cb50cf634fb4", s_fx.origin );
+            playsound( localclientnum, #"zmb_challenges_brazier_ignite_complete", s_fx.origin );
+            audio::playloopat( #"zmb_challenges_brazier_complete_lp", s_fx.origin );
+            audio::stoploopat( #"zmb_challenges_brazier_lp", s_fx.origin );
             break;
     }
 }
@@ -1986,7 +1986,7 @@ function function_25ebc4f7( localclientnum, oldval, newval, bnewent, binitialsna
         
         if ( !isdefined( self.var_7696023a ) )
         {
-            self.var_7696023a = self playloopsound( #"hash_228d379ca7c13b55" );
+            self.var_7696023a = self playloopsound( #"zmb_traps_switch_smoke_lp" );
         }
         
         return;

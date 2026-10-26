@@ -20,7 +20,7 @@ CoD.HealthBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	Backer:setAlpha( 0.7 )
 	Backer:setYRot( 180 )
 	Backer:setImage( RegisterImage( 0x3F02AF56D3B7437 ) )
-	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( 0x31E7B3C72564429 ) )
+	Backer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_repeat_nineslice_normal" ) )
 	Backer:setShaderVector( 0, 0, 0, 0, 0 )
 	Backer:setShaderVector( 1, 4, 1, 0, 0 )
 	Backer:setShaderVector( 2, 0, 1, 0, 1 )
@@ -30,7 +30,7 @@ CoD.HealthBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_a
 	
 	local HealthBackground = LUI.UIImage.new( 0, 0.99, 1, 1, 0, 0, 4, 13 )
 	HealthBackground:setRGB( 0.37, 0.4, 0.44 )
-	HealthBackground:setImage( RegisterImage( 0x75CDE8BCCBD6F24 ) )
+	HealthBackground:setImage( RegisterImage( "uie_hud_core_player_healthbar_empty" ) )
 	HealthBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0xBEEFD90021D3628 ) )
 	HealthBackground:setShaderVector( 0, 0, 0, 0, 0 )
 	HealthBackground:setShaderVector( 1, 4, 1, 0, 0 )

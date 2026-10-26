@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_zeroed_out",
     "backinglarge": "image#$whitetransparent",
-    "iconsmall": "image#hash_50085f46aaa077ec",
+    "iconsmall": "image#ui_icon_mp_zeroed_out",
     "stringref": "localized17#medal/zeroed_out",
-    "iconlarge": "image#hash_50085f46aaa077ec"
+    "iconlarge": "image#ui_icon_mp_zeroed_out"
 }

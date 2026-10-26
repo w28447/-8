@@ -341,7 +341,7 @@ function function_b9549a9()
     if ( !isdefined( self.activated ) )
     {
         self playsound( #"hash_58a0696fb1726978" );
-        self playloopsound( #"hash_3e09d676ac6291c1", 0.25 );
+        self playloopsound( #"wpn_tripwire_active_loop", 0.25 );
         self.activated = 1;
     }
     
@@ -414,7 +414,7 @@ function function_55c50f15()
                 if ( !isdefined( self.activated ) )
                 {
                     self playsound( #"hash_58a0696fb1726978" );
-                    self playloopsound( #"hash_3e09d676ac6291c1", 0.25 );
+                    self playloopsound( #"wpn_tripwire_active_loop", 0.25 );
                     self.activated = 1;
                 }
             }

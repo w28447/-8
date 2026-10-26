@@ -71,7 +71,7 @@ function function_3e362ad8( localclientnum, oldval, newval, bnewent, binitialsna
         v_up = ( 360, 0, 0 );
         v_forward = ( 0, 0, 360 );
         playfx( localclientnum, "zm_weapons/fx8_equip_homunc_spawn", self.origin, v_forward, v_up );
-        self playsound( localclientnum, #"hash_21206f1b7fb27f81" );
+        self playsound( localclientnum, #"wpn_homunculus_spawn_explo" );
     }
 }
 

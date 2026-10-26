@@ -45,7 +45,7 @@ CoD.KIllcamTeamPanelLeft.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local CallingCardFlareLeft = LUI.UIImage.new( 0, 0, -3, 383, 0, 0, 0.5, 68.5 )
 	CallingCardFlareLeft:setRGB( 0.8, 0.34, 0.34 )
 	CallingCardFlareLeft:setZRot( 180 )
-	CallingCardFlareLeft:setImage( RegisterImage( 0x4C0D64C8709CA1C ) )
+	CallingCardFlareLeft:setImage( RegisterImage( "uie_ui_hud_lightflare" ) )
 	CallingCardFlareLeft:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( CallingCardFlareLeft )
 	self.CallingCardFlareLeft = CallingCardFlareLeft

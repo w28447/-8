@@ -9,7 +9,7 @@ CoD.CraftActionHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local Backing = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -35, 0 )
 	Backing:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	Backing:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	Backing:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	Backing:setShaderVector( 0, 0, 0, 0, 0 )
 	Backing:setupNineSliceShader( 196, 88 )
 	self:addElement( Backing )

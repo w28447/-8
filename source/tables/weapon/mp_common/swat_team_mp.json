@@ -30,7 +30,7 @@
     "sound240": "#wpn_generic_dryfire_npc",
     "sound250": "#wpn_generic_dryfire_plr",
     "sound660": "#uin_unavailable_charging",
-    "projexplosionsound": "#hash_20cda79cd396562",
+    "projexplosionsound": "#detpack_explo_main",
     "tunables1": "#overwatch_helicopter_tunables_mp",
     "crateObjective": "#strike_team_waypoint",
     "gestureTables": [

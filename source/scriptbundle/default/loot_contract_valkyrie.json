@@ -1,10 +1,10 @@
 {
-    "contracticon": "image#hash_8a7037152920b58",
+    "contracticon": "image#loot02_ui_icon_blackmarket_contracts_valkyrie",
     "relateditemname": "localized17#weapon/sniper_powerbolt_t8",
     "contracttitle": "localized17#hash_452fd06faf792671",
     "name": "loot_contract_valkyrie",
     "contractdescription": "localized17#menu/mastercraft",
     "white": "#white",
-    "hash_7c1aeddf12a07116:hash_1c057e8c": "image#hash_7c1aeddf12a07116",
+    "loot02_ui_icon_blackmarket_contracts_valkyrie_tall:hash_1c057e8c": "image#loot02_ui_icon_blackmarket_contracts_valkyrie_tall",
     "hash_485e43ae0c8e5c85:hash_e08fc162": "localized17#hash_485e43ae0c8e5c85"
 }

@@ -18,7 +18,7 @@ CoD.ObituaryBlurBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	NoiseBacking:setRGB( 0.2, 0.2, 0.2 )
 	NoiseBacking:setAlpha( 0.85 )
 	NoiseBacking:setImage( RegisterImage( "uie_ui_menu_store_price_bg" ) )
-	NoiseBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	NoiseBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	NoiseBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseBacking:setupNineSliceShader( 24, 24 )
 	self:addElement( NoiseBacking )

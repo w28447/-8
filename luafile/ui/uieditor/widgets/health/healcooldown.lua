@@ -80,7 +80,7 @@ CoD.HealCooldown.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f
 	
 	local BackingPulse = CoD.AmmoWidgetMP_EquipmentLethal_Flash.new( f1_arg0, f1_arg1, 0, 0, 16.5, 55.5, 0, 0, 0.5, 39.5 )
 	BackingPulse:setYRot( 180 )
-	BackingPulse:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x1DE43899593E67E ) )
+	BackingPulse:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_rft_add" ) )
 	BackingPulse:setShaderVector( 0, 0, 1, 0, 0 )
 	BackingPulse:setShaderVector( 1, 0, 0, 0, 0 )
 	BackingPulse:setShaderVector( 3, 0, 0, 0, 0 )

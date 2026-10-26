@@ -13628,7 +13628,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_c91a846de73d663",
+                    "value": "#amb_diesel_engine_run",
                     "unk1a": true
                 },
                 {
@@ -13700,7 +13700,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_c91a846de73d663",
+                    "value": "#amb_diesel_engine_run",
                     "unk1a": true
                 },
                 {

@@ -31,8 +31,8 @@
     "#hash_554be9f7": false,
     "sound240": "#uin_unavailable_charging_npc",
     "sound250": "#uin_unavailable_charging",
-    "sound320": "#hash_2df6e9ea7bd98b2e",
-    "sound3b0": "#hash_4daf674ba4990bbd",
+    "sound320": "#mpl_health_regen_tak5_lp_npc",
+    "sound3b0": "#mpl_health_regen_tak5",
     "sound660": "#uin_unavailable_charging",
     "tunables1": "#gadget_health_regen_squad_tunables_wz",
     "viewmodel": [

@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_graffitiheroes_prophet",
+    "type": "#tag",
+    "material": "#hash_18f8f882b4e33f47",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_40fb554f4ca18e70",
+        "icon": "image#loot_ui_icon_tags_graffitiheroes_prophet",
+        "isdefault": 0
+    }
+}

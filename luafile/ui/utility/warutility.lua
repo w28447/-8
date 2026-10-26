@@ -41,7 +41,7 @@ CoD.WarUtility.InitializeWarDataSource = function ( f1_arg0 )
 				name = f1_local1["name" .. f1_local2]
 			}
 		end
-		for f1_local2 = 1, f1_local1[0x433BE2DB6264E7E], 1 do
+		for f1_local2 = 1, f1_local1.zoneCount, 1 do
 			DataSources.WarData.WarInfo.zoneInfo[f1_local2] = {
 				tiers = {}
 			}

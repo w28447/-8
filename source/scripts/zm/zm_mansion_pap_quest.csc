@@ -179,7 +179,7 @@ function function_731e7fcf( localclientnum, oldval, newval, bnewent, binitialsna
         case 6:
             str_tag = "charging_circle_number_06_jnt";
             self stoprenderoverridebundle( #"hash_611710938ecbb6a2", str_tag );
-            var_24a77d58 = self playloopsound( #"hash_4cbb119df079b8ad" );
+            var_24a77d58 = self playloopsound( #"zmb_clock_tick_2_lp" );
             break;
         case 7:
             str_tag = "charging_circle_number_07_jnt";
@@ -237,7 +237,7 @@ function function_731e7fcf( localclientnum, oldval, newval, bnewent, binitialsna
                 self playrenderoverridebundle( #"hash_611a90938ecec5f9", "charging_circle_number_10_jnt" );
                 self playrenderoverridebundle( #"hash_611a8f938ecec446", "charging_circle_number_11_jnt" );
                 self playrenderoverridebundle( #"hash_611a8e938ecec293", "charging_circle_number_12_jnt" );
-                var_f6f521f4 = self playloopsound( #"hash_4f64bfb4c243e852" );
+                var_f6f521f4 = self playloopsound( #"zmb_clock_tick_1_lp" );
             }
             
             break;
@@ -676,8 +676,8 @@ function vision_stone_wormhole_sfx( localclientnum, oldval, newval, bnewent, bin
     {
         if ( !isdefined( self.var_cc366f3c ) )
         {
-            self playsound( localclientnum, #"hash_5294772867120e07" );
-            self.var_cc366f3c = self playloopsound( #"hash_7c88ba38729587c9" );
+            self playsound( localclientnum, #"zmb_pap_gaze_start" );
+            self.var_cc366f3c = self playloopsound( #"zmb_pap_gaze_lp" );
         }
         
         return;
@@ -685,7 +685,7 @@ function vision_stone_wormhole_sfx( localclientnum, oldval, newval, bnewent, bin
     
     if ( isdefined( self.var_cc366f3c ) )
     {
-        self playsound( localclientnum, #"hash_6f1b4bead6f32c82" );
+        self playsound( localclientnum, #"zmb_pap_gaze_end" );
         self stoploopsound( self.var_cc366f3c );
         self.var_cc366f3c = undefined;
     }

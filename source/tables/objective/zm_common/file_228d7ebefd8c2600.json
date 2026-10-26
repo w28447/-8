@@ -16,7 +16,7 @@
     "cullDistance": 300,
     "hasLowAmmoState": false,
     "waypointText": "#zmtrials/follow",
-    "waypointImage": "#hash_7720711a9a812e6",
+    "waypointImage": "#ui_icon_waypoint_zm_leveraction",
     "unk25": 1,
     "unk30": 300,
     "bundle": {

@@ -22,7 +22,7 @@ version 3 {
 
     // idx 1 members 16
     enum challengetype {
-        hash_4d4a62396c1ec8, // 0x0,
+        weapon_class_kills_tactical, // 0x0,
         bronze_stars, // 0x1,
         weapon_class_kills_sniper, // 0x2,
         hash_1ebacadf6dc3dbdf, // 0x3,
@@ -98,7 +98,7 @@ version 2 {
 
     // idx 1 members 16
     enum challengetype {
-        hash_4d4a62396c1ec8, // 0x0,
+        weapon_class_kills_tactical, // 0x0,
         bronze_stars, // 0x1,
         weapon_class_kills_sniper, // 0x2,
         hash_1ebacadf6dc3dbdf, // 0x3,
@@ -171,7 +171,7 @@ version 1 {
 
     // idx 1 members 16
     enum challengetype {
-        hash_4d4a62396c1ec8, // 0x0,
+        weapon_class_kills_tactical, // 0x0,
         bronze_stars, // 0x1,
         weapon_class_kills_sniper, // 0x2,
         hash_1ebacadf6dc3dbdf, // 0x3,

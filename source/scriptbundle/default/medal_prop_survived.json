@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_prop_survived",
     "backinglarge": "image#$whitetransparent",
-    "iconsmall": "image#hash_1dce88a2694075d",
+    "iconsmall": "image#ui_icon_medal_lay_low",
     "stringref": "localized17#medal/prop_survived",
     "iconlarge": "image#ui_icon_medal_lay_low_large"
 }

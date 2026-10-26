@@ -159,7 +159,7 @@ function function_40c7a8fd()
     wait 2;
     setslowmotion( 1, 1.25 );
     level.var_79514f31 = spawn( "script_origin", ( 0, 0, 0 ) );
-    level.var_79514f31 playloopsound( #"hash_1eafdf46ffbf2308" );
+    level.var_79514f31 playloopsound( #"zmb_trials_round_silent_movie" );
 }
 
 // Namespace zm_trial_damage_during_movement/namespace_a6aea2c6

@@ -289,7 +289,7 @@ function function_665b4fa6()
             {
                 self.e_crank rotateroll( -36, 0.1 );
                 wait 0.1;
-                playsoundatposition( #"hash_12cbe85436ddc720", self.origin );
+                playsoundatposition( #"evt_rotate_crank", self.origin );
                 self.var_191e6b71 -= 0.1;
                 var_ba7236d5++;
                 

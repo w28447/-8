@@ -129,7 +129,7 @@ function activation()
             
             ai.marked_for_recycle = 1;
             ai.has_been_damaged_by_player = 0;
-            ai playsound( #"hash_22ff6701cf652785" );
+            ai playsound( #"zmb_bgb_abh_zombie_explode" );
             ai dodamage( ai.health + 1000, self.origin, self );
         }
     }

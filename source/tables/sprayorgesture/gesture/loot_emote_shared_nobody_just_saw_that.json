@@ -6,7 +6,7 @@
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/you_missed_it",
-        "icon": "image#hash_211185b27c38298e",
+        "icon": "image#ui_icon_emotes_s2_nobody_just_saw_that",
         "isdefault": 0
     }
 }

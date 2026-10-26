@@ -22,7 +22,7 @@ CoD.ArenaDivisionPlacementBonusInternal.new = function ( f1_arg0, f1_arg1, f1_ar
 	local TiledwhiteNoiseBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledwhiteNoiseBacking:setAlpha( 0.02 )
 	TiledwhiteNoiseBacking:setImage( RegisterImage( "uie_ui_menu_aar_repeat_white_bg" ) )
-	TiledwhiteNoiseBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	TiledwhiteNoiseBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	TiledwhiteNoiseBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledwhiteNoiseBacking:setupNineSliceShader( 64, 64 )
 	self:addElement( TiledwhiteNoiseBacking )

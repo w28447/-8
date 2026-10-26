@@ -16,7 +16,7 @@
     "cullDistance": 300,
     "hasLowAmmoState": false,
     "waypointText": "#menu/waypoint_capture",
-    "waypointImage": "#hash_3acfbc958bb4480c",
+    "waypointImage": "#hud_mp_waypoint_war_active",
     "unk30": 200,
     "unk34": 0.08,
     "bundle": {

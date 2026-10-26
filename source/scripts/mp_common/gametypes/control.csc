@@ -497,7 +497,7 @@ function function_185b0894( localclientnum, oldval, newval )
             {
                 if ( !zone.var_ce6accbd )
                 {
-                    zone.soundid = zone.objectiveentity playloopsound( #"hash_5a0b392405d5f148" );
+                    zone.soundid = zone.objectiveentity playloopsound( #"mpl_infiltration_capture_lp_3d" );
                     zone.var_ce6accbd = 1;
                 }
                 

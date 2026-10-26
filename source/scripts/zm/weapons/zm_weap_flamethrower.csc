@@ -66,7 +66,7 @@ function flamethrower_tornado_fx( localclientnum, oldval, newval, bnewent, binit
     
     if ( isdefined( self.var_180064c2 ) )
     {
-        self playsound( localclientnum, #"hash_51812161eb23c96f" );
+        self playsound( localclientnum, #"wpn_flamethrower_tornado_end" );
         self stoploopsound( self.var_180064c2 );
         self.var_180064c2 = undefined;
     }
@@ -82,8 +82,8 @@ function function_ea05550b( localclientnum )
 {
     self endon( #"death", #"hash_4a10e61d27734104" );
     wait 0.1;
-    self playsound( localclientnum, #"hash_2e4b3d95b5a51afa" );
-    self.var_180064c2 = self playloopsound( #"hash_468cabb7402e170e" );
+    self playsound( localclientnum, #"wpn_flamethrower_tornado_start" );
+    self.var_180064c2 = self playloopsound( #"wpn_flamethrower_tornado_lp" );
 }
 
 // Namespace zm_weap_flamethrower/zm_weap_flamethrower

@@ -31,7 +31,7 @@
     "#hash_554be9f7": false,
     "firesound": "#wpn_grenade_throw",
     "firesoundplayer": "#wpn_grenade_throw",
-    "gadgetreadysoundplayer": "#hash_3b5ff69970630b15",
+    "gadgetreadysoundplayer": "#uin_equip_notify_clustergrenade",
     "sound660": "#uin_unavailable_charging",
     "projexplosionsound": "#wpn_flash_grenade_explode",
     "tunables1": "#hash_48d2fa0cd35d87f8",

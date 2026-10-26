@@ -6,7 +6,7 @@
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/come_at_me_boet",
-        "icon": "image#hash_2dbed21008f14ee1",
+        "icon": "image#ui_icon_emotes_come_at_me_bro",
         "isdefault": 0
     }
 }

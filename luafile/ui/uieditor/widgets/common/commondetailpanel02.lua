@@ -22,7 +22,7 @@ CoD.CommonDetailPanel02.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	local BackingNoise = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackingNoise:setAlpha( 0.5 )
 	BackingNoise:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	BackingNoise:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	BackingNoise:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	BackingNoise:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingNoise:setupNineSliceShader( 196, 88 )
 	self:addElement( BackingNoise )

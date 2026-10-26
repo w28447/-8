@@ -52986,7 +52986,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_4d0cbb3c9ca78a27",
+                    "value": "#amb_helo_main_hum",
                     "unk1a": true
                 },
                 {
@@ -54810,7 +54810,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_32a119050df39099",
+                    "value": "#amb_dist_factory",
                     "unk1a": true
                 },
                 {

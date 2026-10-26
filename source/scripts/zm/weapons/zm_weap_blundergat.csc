@@ -145,7 +145,7 @@ function zombie_magma_fire_explosion( localclientnum, oldval, newval, bnewent, b
         }
         
         self.var_4a4174e9 = util::playfxontag( localclientnum, level._effect[ #"magma_fire_explosion" ], self, str_tag );
-        self playsound( localclientnum, #"hash_7ddaece972d0ba7f" );
+        self playsound( localclientnum, #"exp_firegat" );
     }
 }
 

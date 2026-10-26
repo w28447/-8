@@ -6,7 +6,7 @@
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/one_shot_one_kill",
-        "icon": "image#hash_faa65c02f51b9c4",
+        "icon": "image#ui_icon_emotes_s2_bullet_toss",
         "isdefault": 0
     }
 }

@@ -33,7 +33,7 @@
     "#hash_554be9f7": false,
     "sound340": "#hash_288eaf34743aaef9",
     "sound3d0": "#hash_168b6c3469d54320",
-    "gadgetreadysoundplayer": "#hash_2affe4004bc12701",
+    "gadgetreadysoundplayer": "#uin_equip_notify_supplypod",
     "sound660": "#uin_unavailable_charging",
     "sound850": "#wpn_t8_eqp_supply_pod_projectile_view",
     "tunables1": "#gadget_supplypod_tunables_mp",

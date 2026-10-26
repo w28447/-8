@@ -5,7 +5,7 @@
     "type": "mpdialog_scorestreak",
     "killmultiple": "#vox_bta1_ult_dart_kill_mult",
     "vmtype": "both",
-    "distancecheck": "#hash_2d9826ea22239058",
+    "distancecheck": "#vox_bta1_ult_dart_out_range",
     "name": "blops_taacom_kls_dart",
     "hacked": "#vox_bta1_icepick_dart_destroy",
     "kill1": "#vox_bta1_ult_dart_kill_01",

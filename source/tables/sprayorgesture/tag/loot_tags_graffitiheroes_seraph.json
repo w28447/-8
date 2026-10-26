@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_graffitiheroes_seraph",
+    "type": "#tag",
+    "material": "#hash_59f9d119dad0c3b6",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_6d675782f6271d93",
+        "icon": "image#loot_ui_icon_tags_graffitiheroes_seraph",
+        "isdefault": 0
+    }
+}

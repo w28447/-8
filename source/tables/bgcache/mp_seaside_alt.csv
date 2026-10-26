@@ -1009,8 +1009,8 @@ soundalias,#pfx_spark_shower_lng_far
 soundalias,#fly_bump_car_int
 soundalias,#dst_nitrogen_tank_leak
 soundalias,#dst_fern
-soundalias,#hash_200e28bcd26bab77
-soundalias,#hash_200e2ebcd26bb5a9
+soundalias,#exp_mp_propane_flux_l
+soundalias,#exp_mp_propane_flux_r
 soundalias,#fly_step_wood_board_exit
 soundalias,#exp_armor_lfe
 soundalias,#pfx_spark_shower_shrt
@@ -1078,7 +1078,7 @@ soundalias,#amb_fire_small
 soundalias,#fly_bump_dishes
 soundalias,#fly_step_roof_tile_npc
 soundalias,#dst_rock_large
-soundalias,#hash_34552851e74cac8e
+soundalias,#amb_pigeon_fly_away_lft
 soundalias,#fly_step_wood_creak_plr
 soundalias,#amb_washing_machine
 soundalias,#fly_step_broken_glass_plr
@@ -1088,12 +1088,12 @@ soundalias,#fly_bump_tire
 soundalias,#fly_bump_solid_metal
 soundalias,#amb_crickets
 soundalias,#amb_pigeon
-soundalias,#hash_373c94e1ffb849b0
+soundalias,#exp_veh_small_no_debris
 soundalias,#fly_step_broken_glass_npc
 soundalias,#fly_bump_wood_board
 soundalias,#dst_solar_flux_l
 soundalias,#dst_solar_flux_r
-soundalias,#hash_3b6983b084cfef53
+soundalias,#dst_transformer_explo_spark
 soundalias,#amb_chain_swing_1
 soundalias,#amb_chain_swing_3
 soundalias,#amb_chain_swing_2
@@ -1107,11 +1107,11 @@ soundalias,#fly_step_wood_stairs_npc
 soundalias,#dst_plant_sm_debris
 soundalias,#exp_barrel_flux_r
 soundalias,#exp_barrel_flux_l
-soundalias,#hash_3f8d713abf4d10fe
+soundalias,#exp_veh_lfe_no_debris
 soundalias,#evt_tank_idle
 soundalias,#amb_water_drip_water
 soundalias,#pfx_fire_ceiling_sml
-soundalias,#hash_43052a90488ebe28
+soundalias,#pfx_water_hydrant_spray_splash
 soundalias,#dst_hydrant_end_loop
 soundalias,#dst_gas_canister_open
 soundalias,#exp_nitrogen_tank_lfe
@@ -1121,8 +1121,8 @@ soundalias,#pfx_spark_generic
 soundalias,#fly_step_gondola_enter
 soundalias,#pfx_fire_incendiary
 soundalias,#pfx_light_buzz
-soundalias,#hash_456af38afaef9d77
-soundalias,#hash_456af98afaefa7a9
+soundalias,#exp_propane_flux_l
+soundalias,#exp_propane_flux_r
 soundalias,#fly_step_puddle_move_npc
 soundalias,#amb_rain_metal_barrel
 soundalias,#amb_water_drip_imp
@@ -1144,7 +1144,7 @@ soundalias,#dst_dest_glo_paper_04_d0
 soundalias,#exp_concussive_small_lfe
 soundalias,#exp_nitrogen_flux_r
 soundalias,#exp_nitrogen_flux_l
-soundalias,#hash_4ca3d2aaa573f1c8
+soundalias,#pfx_transformer_sparks
 soundalias,#pfx_car_fire
 soundalias,#fly_bump_cardboard_sm
 soundalias,#dst_solar_panel_lrg
@@ -1193,7 +1193,7 @@ soundalias,#dst_dest_gascan_01_dp_d0
 soundalias,#dst_plant_sm
 soundalias,#pfx_fire_barrel
 soundalias,#fly_bump_barrelcage
-soundalias,#hash_5b18895703fba823
+soundalias,#pfx_transformer_arcs
 soundalias,#fly_step_grate_npc
 soundalias,#pfx_prj_impact_bounce
 soundalias,#fly_bump_foliage
@@ -1217,7 +1217,7 @@ soundalias,#fly_bump_trashcan
 soundalias,#fly_step_shells
 soundalias,#exp_electrical_large_lfe
 soundalias,#pfx_backdraft
-soundalias,#hash_6140aedea49c901e
+soundalias,#amb_pigeon_fly_away_rt
 soundalias,#pfx_spark_blue_loop_loud
 soundalias,#p_dest_paper_stack02
 soundalias,#p_dest_paper_stack01
@@ -1234,7 +1234,7 @@ soundalias,#amb_rats
 soundalias,#fly_step_shells_sweet_npc
 soundalias,#fly_step_turnstile_exit
 soundalias,#mus_mozart
-soundalias,#hash_663899d42687914d
+soundalias,#dst_car_windshield_break
 soundalias,#exp_incindiary_large
 soundalias,#pfx_spark_xlrg
 soundalias,#fly_step_branches_plr
@@ -1302,8 +1302,8 @@ soundalias,#dst_generic_glass_small
 soundalias,#fly_bump_toolbox
 soundalias,#fly_step_truck_move
 soundalias,#exp_veh_plane_spinout_lp
-soundalias,#hash_7ac5fa6568de2461
-soundalias,#hash_7ad11f626a94fdd5
+soundalias,#exp_mp_propane_tank_lfe
+soundalias,#pfx_equipment_sparks
 soundalias,#dst_glass_radar_pane_break
 soundalias,#fly_bump_tarp
 soundalias,#fly_step_truck_on
@@ -1314,8 +1314,8 @@ soundalias,#exp_incindiary_large_decay
 soundalias,#evt_fan_break
 soundalias,#amb_occ_fan
 soundalias,#fly_bump_shelf
-soundalias,#hash_7f067d9322e18ffa
-soundalias,#hash_7f118ea3a4874268
+soundalias,#pfx_water_hydrant_spray
+soundalias,#dst_mp_propane_tank_fire
 soundalias,#fly_bump_locker
 soundalias,#fly_bump_cloth
 soundalias,#exp_barrel_dist

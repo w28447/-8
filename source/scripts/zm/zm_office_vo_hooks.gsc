@@ -170,7 +170,7 @@ function function_132e0bea()
             waitframe( 1 );
         }
         
-        play_pentagon_announcer_vox( #"hash_1984a3f4bf85aff0" );
+        play_pentagon_announcer_vox( #"vox_pentagon_power_on_pann_0" );
     }
 }
 
@@ -258,7 +258,7 @@ function play_initial_alarm()
 // Size: 0x7c
 function function_8cbb1711()
 {
-    play_pentagon_announcer_vox( #"hash_447c4584ae2e8e9c" );
+    play_pentagon_announcer_vox( #"vox_pentagon_teleport_interrupt_pann_0" );
     e_player = function_d62aaf66();
     
     if ( isdefined( e_player ) )

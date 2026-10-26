@@ -1,0 +1,12 @@
+{
+    "name": "#loot_emote_exotic_shared_skull_in_hand",
+    "type": "#gesture",
+    "gesture": "#hash_559f4b4c4c8d3b12",
+    "gesture2": "#hash_6df22cff7db952cd",
+    "bundle": {
+        "type": "#gesture",
+        "title": "localized18#emotes/bonesy_jones",
+        "icon": "image#ui_icon_emotes_skull_in_hand",
+        "isdefault": 0
+    }
+}

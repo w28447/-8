@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_hiphop_torque",
+    "type": "#tag",
+    "material": "#hash_77e53e30e4d48f59",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_598eef1f157d99ac",
+        "icon": "image#loot_ui_icon_tags_hiphop_torque",
+        "isdefault": 0
+    }
+}

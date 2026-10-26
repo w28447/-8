@@ -315,7 +315,7 @@ CoD.GameEndScoreUtility.SetupTransition = function ( f18_arg0, f18_arg1 )
 	else
 		f18_local14 = f18_local1[0x47C78DE1DFF5D84]
 		if CoD.HUDUtility.IsGameTypeEqualToString( "warzone_pandemic_quad" ) then
-			f18_local14 = 0x41C79E0A2E1383E
+			f18_local14 = "mp/defeat_caps"
 		end
 		if f18_local3 == Enum.eModes.mode_multiplayer and not IsGametypeTeambased() then
 			local f18_local16 = DataSources.FFALeader.getModel()

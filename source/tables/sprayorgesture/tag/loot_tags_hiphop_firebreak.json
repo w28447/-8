@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_hiphop_firebreak",
+    "type": "#tag",
+    "material": "#hash_6f000739d588625a",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_8e7a719075772a1",
+        "icon": "image#loot_ui_icon_tags_hiphop_firebreak",
+        "isdefault": 0
+    }
+}

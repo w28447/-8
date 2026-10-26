@@ -6,7 +6,7 @@
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/times_up",
-        "icon": "image#hash_38518da38cac4298",
+        "icon": "image#ui_icon_emotes_s3_time_is_running_out",
         "isdefault": 0
     }
 }

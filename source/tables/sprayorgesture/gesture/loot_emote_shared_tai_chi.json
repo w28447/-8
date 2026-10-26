@@ -6,7 +6,7 @@
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/five_elements",
-        "icon": "image#hash_5115d0a652ed5785",
+        "icon": "image#ui_icon_emotes_s2_tai_chi",
         "isdefault": 0
     }
 }

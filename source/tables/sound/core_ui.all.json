@@ -3135,13 +3135,13 @@
         {
             "value": 271,
             "next": 65535,
-            "name": "#hash_294242164c219949",
+            "name": "#fly_ch_black_market_welcome_twitch_04",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_294242164c219949",
+                    "name": "#fly_ch_black_market_welcome_twitch_04",
                     "assetId": "#hash_7b6f51b101e854db",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -3331,13 +3331,13 @@
         {
             "value": 361,
             "next": 7,
-            "name": "#hash_3b5ff0b1fa40ba1",
+            "name": "#fly_emote_badperk_alt",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3b5ff0b1fa40ba1",
+                    "name": "#fly_emote_badperk_alt",
                     "assetId": "#hash_5cd26f1818a42613",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -3380,13 +3380,13 @@
         {
             "value": 354,
             "next": 49,
-            "name": "#hash_6f0d36b25a947cac",
+            "name": "#fly_emote_badperk_f",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6f0d36b25a947cac",
+                    "name": "#fly_emote_badperk_f",
                     "assetId": "#hash_3ce2577ea06c4e3b",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -3429,13 +3429,13 @@
         {
             "value": 534,
             "next": 65535,
-            "name": "#hash_6f0d41b25a948f5d",
+            "name": "#fly_emote_badperk_m",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6f0d41b25a948f5d",
+                    "name": "#fly_emote_badperk_m",
                     "assetId": "#hash_4a37c2edf7a6cdc0",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -3576,13 +3576,13 @@
         {
             "value": 457,
             "next": 65535,
-            "name": "#hash_72b0a68e644119c0",
+            "name": "#fly_emote_bat_tnt",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_72b0a68e644119c0",
+                    "name": "#fly_emote_bat_tnt",
                     "assetId": "#fly/emotes/battery_tnt.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -3674,13 +3674,13 @@
         {
             "value": 452,
             "next": 65535,
-            "name": "#hash_5d2b24d26b2289ac",
+            "name": "#fly_emote_bbq_spatula",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5d2b24d26b2289ac",
+                    "name": "#fly_emote_bbq_spatula",
                     "assetId": "#hash_7f816b61165643bc",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -3719,7 +3719,7 @@
                     "unk178": "#hash_16000a0108"
                 },
                 {
-                    "name": "#hash_5d2b24d26b2289ac",
+                    "name": "#fly_emote_bbq_spatula",
                     "assetId": "#hash_2f1a01cf088e09c1",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -3758,7 +3758,7 @@
                     "unk178": "#hash_16000a0108"
                 },
                 {
-                    "name": "#hash_5d2b24d26b2289ac",
+                    "name": "#fly_emote_bbq_spatula",
                     "assetId": "#hash_16945766973c2bf6",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -3797,7 +3797,7 @@
                     "unk178": "#hash_16000a0108"
                 },
                 {
-                    "name": "#hash_5d2b24d26b2289ac",
+                    "name": "#fly_emote_bbq_spatula",
                     "assetId": "#hash_4d89607e60f6d413",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -3836,7 +3836,7 @@
                     "unk178": "#hash_16000a0108"
                 },
                 {
-                    "name": "#hash_5d2b24d26b2289ac",
+                    "name": "#fly_emote_bbq_spatula",
                     "assetId": "#hash_2b3c2136a5285648",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -3977,13 +3977,13 @@
         {
             "value": 55,
             "next": 65535,
-            "name": "#hash_597cf3a0ae0d586e",
+            "name": "#fly_emote_bending_metal_f",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_597cf3a0ae0d586e",
+                    "name": "#fly_emote_bending_metal_f",
                     "assetId": "#hash_67868436fa1f8284",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -4026,13 +4026,13 @@
         {
             "value": 91,
             "next": 68,
-            "name": "#hash_597ceaa0ae0d4923",
+            "name": "#fly_emote_bending_metal_m",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_597ceaa0ae0d4923",
+                    "name": "#fly_emote_bending_metal_m",
                     "assetId": "#hash_18a4f6f8764fa5a9",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -6075,13 +6075,13 @@
         {
             "value": 560,
             "next": 154,
-            "name": "#hash_580dda2dbb7c6351",
+            "name": "#fly_emote_champagne_spray_loop",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_580dda2dbb7c6351",
+                    "name": "#fly_emote_champagne_spray_loop",
                     "assetId": "#hash_6e339f59c58d126b",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -6272,13 +6272,13 @@
         {
             "value": 465,
             "next": 3,
-            "name": "#hash_42a22d72b33d271b",
+            "name": "#fly_emote_coconut_drink_fem_in",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_42a22d72b33d271b",
+                    "name": "#fly_emote_coconut_drink_fem_in",
                     "assetId": "#hash_69a408d817e6cf9e",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -6321,13 +6321,13 @@
         {
             "value": 259,
             "next": 167,
-            "name": "#hash_6eacc59e7f53d67a",
+            "name": "#fly_emote_coconut_drink_fem_loop",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6eacc59e7f53d67a",
+                    "name": "#fly_emote_coconut_drink_fem_loop",
                     "assetId": "#hash_51dbf5ecfb123956",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -6370,13 +6370,13 @@
         {
             "value": 150,
             "next": 122,
-            "name": "#hash_645b50e686361368",
+            "name": "#fly_emote_coconut_drink_fem_out",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_645b50e686361368",
+                    "name": "#fly_emote_coconut_drink_fem_out",
                     "assetId": "#hash_a08cd30c4efed95",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -6419,13 +6419,13 @@
         {
             "value": 33,
             "next": 65535,
-            "name": "#hash_22356a121ecde3ee",
+            "name": "#fly_emote_coconut_drink_male_in",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_22356a121ecde3ee",
+                    "name": "#fly_emote_coconut_drink_male_in",
                     "assetId": "#hash_e36bbdb1d57899",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -6468,13 +6468,13 @@
         {
             "value": 30,
             "next": 119,
-            "name": "#hash_3b55f6bb4082bc7b",
+            "name": "#fly_emote_coconut_drink_male_loop",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3b55f6bb4082bc7b",
+                    "name": "#fly_emote_coconut_drink_male_loop",
                     "assetId": "#hash_14613b4c9a2c2a4d",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -6517,13 +6517,13 @@
         {
             "value": 496,
             "next": 65535,
-            "name": "#hash_5c9272ca4d65a78f",
+            "name": "#fly_emote_coconut_drink_male_out",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5c9272ca4d65a78f",
+                    "name": "#fly_emote_coconut_drink_male_out",
                     "assetId": "#hash_3a7d42cf35a5887a",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -7771,13 +7771,13 @@
         {
             "value": 275,
             "next": 142,
-            "name": "#hash_2e926acc369c36d9",
+            "name": "#fly_emote_exotic_homunculus_enter",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2e926acc369c36d9",
+                    "name": "#fly_emote_exotic_homunculus_enter",
                     "assetId": "#wpn/zmb/homunculus/jump/homun_jump_00.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -7816,7 +7816,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_2e926acc369c36d9",
+                    "name": "#fly_emote_exotic_homunculus_enter",
                     "assetId": "#wpn/zmb/homunculus/jump/homun_jump_01.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -7859,13 +7859,13 @@
         {
             "value": 572,
             "next": 65535,
-            "name": "#hash_7872a640ee57a539",
+            "name": "#fly_emote_exotic_homunculus_exit",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7872a640ee57a539",
+                    "name": "#fly_emote_exotic_homunculus_exit",
                     "assetId": "#wpn/zmb/homunculus/explo/homunculus_explo.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -7908,13 +7908,13 @@
         {
             "value": 388,
             "next": 143,
-            "name": "#hash_3373b4bd75571490",
+            "name": "#fly_emote_exotic_homunculus_music",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3373b4bd75571490",
+                    "name": "#fly_emote_exotic_homunculus_music",
                     "assetId": "#hash_1117b674a5cb22df",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -7955,7 +7955,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_3373b4bd75571490",
+                    "name": "#fly_emote_exotic_homunculus_music",
                     "assetId": "#hash_1117b674a5cb22df",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -8000,13 +8000,13 @@
         {
             "value": 425,
             "next": 65535,
-            "name": "#hash_29adccbf43657b2c",
+            "name": "#fly_emote_exotic_skull_in_hand",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_29adccbf43657b2c",
+                    "name": "#fly_emote_exotic_skull_in_hand",
                     "assetId": "#zmb/level/zm_zodt8/sidequest/skeleton_ride/skeleton_laugh/skele_laugh_00.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -8045,7 +8045,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_29adccbf43657b2c",
+                    "name": "#fly_emote_exotic_skull_in_hand",
                     "assetId": "#zmb/level/zm_zodt8/sidequest/skeleton_ride/skeleton_laugh/skele_laugh_01.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -8084,7 +8084,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_29adccbf43657b2c",
+                    "name": "#fly_emote_exotic_skull_in_hand",
                     "assetId": "#zmb/level/zm_zodt8/sidequest/skeleton_ride/skeleton_laugh/skele_laugh_02.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -8123,7 +8123,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_29adccbf43657b2c",
+                    "name": "#fly_emote_exotic_skull_in_hand",
                     "assetId": "#zmb/level/zm_zodt8/sidequest/skeleton_ride/skeleton_laugh/skele_laugh_03.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -8162,7 +8162,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_29adccbf43657b2c",
+                    "name": "#fly_emote_exotic_skull_in_hand",
                     "assetId": "#zmb/level/zm_zodt8/sidequest/skeleton_ride/skeleton_laugh/skele_laugh_04.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -8201,7 +8201,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_29adccbf43657b2c",
+                    "name": "#fly_emote_exotic_skull_in_hand",
                     "assetId": "#zmb/level/zm_zodt8/sidequest/skeleton_ride/skeleton_laugh/skele_laugh_05.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -8240,7 +8240,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_29adccbf43657b2c",
+                    "name": "#fly_emote_exotic_skull_in_hand",
                     "assetId": "#zmb/level/zm_zodt8/sidequest/skeleton_ride/skeleton_pain/skele_pain_00.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -8279,7 +8279,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_29adccbf43657b2c",
+                    "name": "#fly_emote_exotic_skull_in_hand",
                     "assetId": "#zmb/level/zm_zodt8/sidequest/skeleton_ride/skeleton_pain/skele_pain_01.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -8318,7 +8318,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_29adccbf43657b2c",
+                    "name": "#fly_emote_exotic_skull_in_hand",
                     "assetId": "#zmb/level/zm_zodt8/sidequest/skeleton_ride/skeleton_pain/skele_pain_02.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -8361,13 +8361,13 @@
         {
             "value": 492,
             "next": 65535,
-            "name": "#hash_6132a09c5ba2ad00",
+            "name": "#fly_emote_exotic_skull_in_hand_music",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6132a09c5ba2ad00",
+                    "name": "#fly_emote_exotic_skull_in_hand_music",
                     "assetId": "#zmb/level/zm_zodt8/ambience/phonograph/emote/phonograph_song.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -8410,13 +8410,13 @@
         {
             "value": 512,
             "next": 65535,
-            "name": "#hash_cb4a0743685c399",
+            "name": "#fly_emote_eyebeam_blast",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_cb4a0743685c399",
+                    "name": "#fly_emote_eyebeam_blast",
                     "assetId": "#hash_12eb10039033f4c1",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -8459,13 +8459,13 @@
         {
             "value": 42,
             "next": 148,
-            "name": "#hash_19ebc47b177aa10c",
+            "name": "#fly_emote_eyebeam_boost",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_19ebc47b177aa10c",
+                    "name": "#fly_emote_eyebeam_boost",
                     "assetId": "#hash_6879c9494a0f5e62",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -8508,13 +8508,13 @@
         {
             "value": 334,
             "next": 65535,
-            "name": "#hash_6aee77d044a0819",
+            "name": "#fly_emote_eyebeam_f",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6aee77d044a0819",
+                    "name": "#fly_emote_eyebeam_f",
                     "assetId": "#hash_3470d1aaaf68a0bd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -8557,13 +8557,13 @@
         {
             "value": 538,
             "next": 65535,
-            "name": "#hash_5cfd657502325daa",
+            "name": "#fly_emote_eyebeam_fritz",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5cfd657502325daa",
+                    "name": "#fly_emote_eyebeam_fritz",
                     "assetId": "#hash_6618bb77df2917ea",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -8602,7 +8602,7 @@
                     "unk178": "#hash_16000a0108"
                 },
                 {
-                    "name": "#hash_5cfd657502325daa",
+                    "name": "#fly_emote_eyebeam_fritz",
                     "assetId": "#hash_7d97294e95126515",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -8641,7 +8641,7 @@
                     "unk178": "#hash_16000a0108"
                 },
                 {
-                    "name": "#hash_5cfd657502325daa",
+                    "name": "#fly_emote_eyebeam_fritz",
                     "assetId": "#hash_1f84efac0b8b5360",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -8684,13 +8684,13 @@
         {
             "value": 45,
             "next": 65535,
-            "name": "#hash_6aeec7d044a1098",
+            "name": "#fly_emote_eyebeam_m",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6aeec7d044a1098",
+                    "name": "#fly_emote_eyebeam_m",
                     "assetId": "#hash_30c1f0d1faa9dbee",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -9076,13 +9076,13 @@
         {
             "value": 696,
             "next": 65535,
-            "name": "#hash_428483633a07e0a7",
+            "name": "#fly_emote_fem_disgusted",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_428483633a07e0a7",
+                    "name": "#fly_emote_fem_disgusted",
                     "assetId": "#fly/emotes/fem_disgust.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -10008,13 +10008,13 @@
         {
             "value": 139,
             "next": 178,
-            "name": "#hash_78f9338e6f8342d3",
+            "name": "#fly_emote_firebreak_birthday",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_78f9338e6f8342d3",
+                    "name": "#fly_emote_firebreak_birthday",
                     "assetId": "#fly/emotes/birthday.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -12407,13 +12407,13 @@
         {
             "value": 217,
             "next": 592,
-            "name": "#hash_4354e2d538fd7351",
+            "name": "#fly_emote_lamp_trombone",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4354e2d538fd7351",
+                    "name": "#fly_emote_lamp_trombone",
                     "assetId": "#fly/emotes/fragile_wah.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -12604,13 +12604,13 @@
         {
             "value": 203,
             "next": 207,
-            "name": "#hash_4283e6ef45822af8",
+            "name": "#fly_emote_lunch_chew",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4283e6ef45822af8",
+                    "name": "#fly_emote_lunch_chew",
                     "assetId": "#fly/emotes/lunch_var/lunch_00.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -12649,7 +12649,7 @@
                     "unk178": "#hash_16000a0108"
                 },
                 {
-                    "name": "#hash_4283e6ef45822af8",
+                    "name": "#fly_emote_lunch_chew",
                     "assetId": "#fly/emotes/lunch_var/lunch_01.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -12688,7 +12688,7 @@
                     "unk178": "#hash_16000a0108"
                 },
                 {
-                    "name": "#hash_4283e6ef45822af8",
+                    "name": "#fly_emote_lunch_chew",
                     "assetId": "#fly/emotes/lunch_var/lunch_02.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -12727,7 +12727,7 @@
                     "unk178": "#hash_16000a0108"
                 },
                 {
-                    "name": "#hash_4283e6ef45822af8",
+                    "name": "#fly_emote_lunch_chew",
                     "assetId": "#fly/emotes/lunch_var/lunch_03.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -12766,7 +12766,7 @@
                     "unk178": "#hash_16000a0108"
                 },
                 {
-                    "name": "#hash_4283e6ef45822af8",
+                    "name": "#fly_emote_lunch_chew",
                     "assetId": "#fly/emotes/lunch_var/lunch_04.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -13348,13 +13348,13 @@
         {
             "value": 375,
             "next": 230,
-            "name": "#hash_4abf648b6de2b3ae",
+            "name": "#fly_emote_male_disgusted",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4abf648b6de2b3ae",
+                    "name": "#fly_emote_male_disgusted",
                     "assetId": "#fly/emotes/male_disgust.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -16063,13 +16063,13 @@
         {
             "value": 241,
             "next": 65535,
-            "name": "#hash_331cca664f38b0ca",
+            "name": "#fly_emote_ralph_helmet_f",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_331cca664f38b0ca",
+                    "name": "#fly_emote_ralph_helmet_f",
                     "assetId": "#hash_507dd728c7c20462",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -17234,13 +17234,13 @@
         {
             "value": 448,
             "next": 282,
-            "name": "#hash_4c35d18e1a29ac37",
+            "name": "#fly_emote_shadowbox_fem_loop",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4c35d18e1a29ac37",
+                    "name": "#fly_emote_shadowbox_fem_loop",
                     "assetId": "#fly/emotes/fem_boxing.pl100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -17332,13 +17332,13 @@
         {
             "value": 300,
             "next": 65535,
-            "name": "#hash_47d20bf4ce80f380",
+            "name": "#fly_emote_shadowbox_male_loop",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_47d20bf4ce80f380",
+                    "name": "#fly_emote_shadowbox_male_loop",
                     "assetId": "#fly/emotes/male_boxing.pl100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -18215,13 +18215,13 @@
         {
             "value": 53,
             "next": 310,
-            "name": "#hash_62507f4e6f2b400c",
+            "name": "#fly_emote_shared_fem_lep_in",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_62507f4e6f2b400c",
+                    "name": "#fly_emote_shared_fem_lep_in",
                     "assetId": "#fly/emotes/emote_leprechaun_fem_in.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -18264,13 +18264,13 @@
         {
             "value": 476,
             "next": 65535,
-            "name": "#hash_a44a5623d6ce60d",
+            "name": "#fly_emote_shared_fem_lep_loop",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_a44a5623d6ce60d",
+                    "name": "#fly_emote_shared_fem_lep_loop",
                     "assetId": "#fly/emotes/emote_leprechaun_fem_loop.ll100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -19150,13 +19150,13 @@
         {
             "value": 617,
             "next": 65535,
-            "name": "#hash_7125f0863e6ca38b",
+            "name": "#fly_emote_shared_laughing",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7125f0863e6ca38b",
+                    "name": "#fly_emote_shared_laughing",
                     "assetId": "#fly/emotes/fem_laugh.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -19199,13 +19199,13 @@
         {
             "value": 697,
             "next": 65535,
-            "name": "#hash_7e955fa6d76ea62c",
+            "name": "#fly_emote_shared_lep_loop",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7e955fa6d76ea62c",
+                    "name": "#fly_emote_shared_lep_loop",
                     "assetId": "#fly/emotes/emote_leprechaun_loop.ll100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -19592,13 +19592,13 @@
         {
             "value": 268,
             "next": 328,
-            "name": "#hash_76fad15d7625ed2f",
+            "name": "#fly_emote_shared_male_lep_in",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_76fad15d7625ed2f",
+                    "name": "#fly_emote_shared_male_lep_in",
                     "assetId": "#fly/emotes/emote_leprechaun_male_in.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -21115,13 +21115,13 @@
         {
             "value": 403,
             "next": 65535,
-            "name": "#hash_19767495979d6738",
+            "name": "#fly_emote_shared_sword_draw",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_19767495979d6738",
+                    "name": "#fly_emote_shared_sword_draw",
                     "assetId": "#wpn/zmb/katana/foley/raise_npc.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -21301,13 +21301,13 @@
         {
             "value": 588,
             "next": 65535,
-            "name": "#hash_7325531e67f83e7d",
+            "name": "#fly_emote_shared_thumbs",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7325531e67f83e7d",
+                    "name": "#fly_emote_shared_thumbs",
                     "assetId": "#fly/emotes/shared_thumbsup.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -21547,13 +21547,13 @@
         {
             "value": 343,
             "next": 65535,
-            "name": "#hash_5c305e9ee485ced1",
+            "name": "#fly_emote_fem_spin_packapunch_placement_tallgrass_1;",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5c305e9ee485ced1",
+                    "name": "#fly_emote_fem_spin_packapunch_placement_tallgrass_1;",
                     "assetId": "#hash_34799f633b9baa7f",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -21596,13 +21596,13 @@
         {
             "value": 377,
             "next": 65535,
-            "name": "#hash_5c30539ee485bc20",
+            "name": "#fly_emote_fem_spin_packapunch_placement_tallgrass_10",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5c30539ee485bc20",
+                    "name": "#fly_emote_fem_spin_packapunch_placement_tallgrass_10",
                     "assetId": "#hash_15e7bc09e3e91d50",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -21743,13 +21743,13 @@
         {
             "value": 609,
             "next": 65535,
-            "name": "#hash_22df2eda4537f011",
+            "name": "#fly_emote_slamdance_fem_in",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_22df2eda4537f011",
+                    "name": "#fly_emote_slamdance_fem_in",
                     "assetId": "#fly/emotes/slam_in_f.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -21792,13 +21792,13 @@
         {
             "value": 369,
             "next": 65535,
-            "name": "#hash_3a4bf59bd27ac834",
+            "name": "#fly_emote_slamdance_fem_loop",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3a4bf59bd27ac834",
+                    "name": "#fly_emote_slamdance_fem_loop",
                     "assetId": "#fly/emotes/slam_loop_f.pl100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -21842,13 +21842,13 @@
         {
             "value": 76,
             "next": 364,
-            "name": "#hash_46a60de381d76292",
+            "name": "#fly_emote_slamdance_fem_out",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_46a60de381d76292",
+                    "name": "#fly_emote_slamdance_fem_out",
                     "assetId": "#fly/emotes/slam_out_f.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -21891,13 +21891,13 @@
         {
             "value": 347,
             "next": 345,
-            "name": "#hash_5421b330999a99b4",
+            "name": "#fly_emote_slamdance_male_in",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5421b330999a99b4",
+                    "name": "#fly_emote_slamdance_male_in",
                     "assetId": "#fly/emotes/slam_in_m.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -21940,13 +21940,13 @@
         {
             "value": 346,
             "next": 65535,
-            "name": "#hash_573ca514f2183085",
+            "name": "#fly_emote_slamdance_male_loop",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_573ca514f2183085",
+                    "name": "#fly_emote_slamdance_male_loop",
                     "assetId": "#fly/emotes/slam_loop_m.pl100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -21990,13 +21990,13 @@
         {
             "value": 7,
             "next": 65535,
-            "name": "#hash_597d5b94e238e3a1",
+            "name": "#fly_emote_slamdance_male_out",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_597d5b94e238e3a1",
+                    "name": "#fly_emote_slamdance_male_out",
                     "assetId": "#fly/emotes/slam_out_m.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -22823,13 +22823,13 @@
         {
             "value": 371,
             "next": 407,
-            "name": "#hash_4c45fd5d70f85877",
+            "name": "#fly_emote_summer_hang_fem_in",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4c45fd5d70f85877",
+                    "name": "#fly_emote_summer_hang_fem_in",
                     "assetId": "#hash_7fd58e248f3c9bb0",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -22872,13 +22872,13 @@
         {
             "value": 159,
             "next": 339,
-            "name": "#hash_79fcbc2ca4e1fc66",
+            "name": "#fly_emote_summer_hang_fem_loop",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_79fcbc2ca4e1fc66",
+                    "name": "#fly_emote_summer_hang_fem_loop",
                     "assetId": "#hash_7c85c80529c142d5",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -22921,13 +22921,13 @@
         {
             "value": 469,
             "next": 352,
-            "name": "#hash_45fc78c7125cc31c",
+            "name": "#fly_emote_summer_hang_fem_out",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_45fc78c7125cc31c",
+                    "name": "#fly_emote_summer_hang_fem_out",
                     "assetId": "#hash_7d882e8f8a8e3b99",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -22970,13 +22970,13 @@
         {
             "value": 396,
             "next": 400,
-            "name": "#hash_d6b68b2ee8d7122",
+            "name": "#fly_emote_summer_hang_male_in",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_d6b68b2ee8d7122",
+                    "name": "#fly_emote_summer_hang_male_in",
                     "assetId": "#hash_7fd58e248f3c9bb0",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -23019,13 +23019,13 @@
         {
             "value": 663,
             "next": 65535,
-            "name": "#hash_1f0eee744113f9cf",
+            "name": "#fly_emote_summer_hang_male_loop",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1f0eee744113f9cf",
+                    "name": "#fly_emote_summer_hang_male_loop",
                     "assetId": "#hash_7c85c80529c142d5",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -23068,13 +23068,13 @@
         {
             "value": 247,
             "next": 65535,
-            "name": "#hash_d88420b769853bb",
+            "name": "#fly_emote_summer_hang_male_out",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_d88420b769853bb",
+                    "name": "#fly_emote_summer_hang_male_out",
                     "assetId": "#hash_7d882e8f8a8e3b99",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -23352,13 +23352,13 @@
         {
             "value": 310,
             "next": 65535,
-            "name": "#hash_dda95479b7ee352",
+            "name": "#fly_emote_tanning_extra",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_dda95479b7ee352",
+                    "name": "#fly_emote_tanning_extra",
                     "assetId": "#hash_79f91d01c56a82c4",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -23401,13 +23401,13 @@
         {
             "value": 480,
             "next": 65535,
-            "name": "#hash_61c13d7ee955194e",
+            "name": "#fly_emote_tanning_in_f",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_61c13d7ee955194e",
+                    "name": "#fly_emote_tanning_in_f",
                     "assetId": "#hash_75c01033da9d74ce",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -23450,13 +23450,13 @@
         {
             "value": 477,
             "next": 65535,
-            "name": "#hash_61c1347ee9550a03",
+            "name": "#fly_emote_tanning_in_m",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_61c1347ee9550a03",
+                    "name": "#fly_emote_tanning_in_m",
                     "assetId": "#hash_2d35ccaa09ae3859",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -23499,13 +23499,13 @@
         {
             "value": 433,
             "next": 348,
-            "name": "#hash_235f7f6b527f3b28",
+            "name": "#fly_emote_tanning_lp",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_235f7f6b527f3b28",
+                    "name": "#fly_emote_tanning_lp",
                     "assetId": "#hash_32a5de811355c178",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -23548,13 +23548,13 @@
         {
             "value": 472,
             "next": 65535,
-            "name": "#hash_125205c60d4f0659",
+            "name": "#fly_emote_tanning_out_f",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_125205c60d4f0659",
+                    "name": "#fly_emote_tanning_out_f",
                     "assetId": "#hash_243d8846b5a7b4b",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -23597,13 +23597,13 @@
         {
             "value": 283,
             "next": 65535,
-            "name": "#hash_12520ac60d4f0ed8",
+            "name": "#fly_emote_tanning_out_m",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_12520ac60d4f0ed8",
+                    "name": "#fly_emote_tanning_out_m",
                     "assetId": "#hash_34ff2ae6f96adc02",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -24136,13 +24136,13 @@
         {
             "value": 225,
             "next": 65535,
-            "name": "#hash_5a2cc5a808632cf5",
+            "name": "#fly_emote_uni_flame_burst",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5a2cc5a808632cf5",
+                    "name": "#fly_emote_uni_flame_burst",
                     "assetId": "#hash_3fc5132ca61a5037",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -24185,13 +24185,13 @@
         {
             "value": 436,
             "next": 65535,
-            "name": "#hash_1be74041ae7eb7c5",
+            "name": "#fly_emote_uni_flame_lp",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1be74041ae7eb7c5",
+                    "name": "#fly_emote_uni_flame_lp",
                     "assetId": "#hash_7a795eb584331b73",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -24381,13 +24381,13 @@
         {
             "value": 27,
             "next": 65535,
-            "name": "#hash_24f46e148e98a22f",
+            "name": "#fly_emote_van_dance_in",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_24f46e148e98a22f",
+                    "name": "#fly_emote_van_dance_in",
                     "assetId": "#fly/emotes/disco_tech_start.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -24430,13 +24430,13 @@
         {
             "value": 398,
             "next": 412,
-            "name": "#hash_63af5120b711812e",
+            "name": "#fly_emote_van_dance_in_long",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_63af5120b711812e",
+                    "name": "#fly_emote_van_dance_in_long",
                     "assetId": "#fly/emotes/disco_tech_start_long_fem.pn100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -24479,13 +24479,13 @@
         {
             "value": 573,
             "next": 65535,
-            "name": "#hash_d30540a6441fbae",
+            "name": "#fly_emote_van_dance_loop",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_d30540a6441fbae",
+                    "name": "#fly_emote_van_dance_loop",
                     "assetId": "#fly/emotes/disco_tech.pl100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -25685,13 +25685,13 @@
         {
             "value": 516,
             "next": 65535,
-            "name": "#hash_61a1042df00be1b1",
+            "name": "#fly_emote_worthy_in",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_61a1042df00be1b1",
+                    "name": "#fly_emote_worthy_in",
                     "assetId": "#fly/emotes/30_crouch.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -25734,13 +25734,13 @@
         {
             "value": 158,
             "next": 540,
-            "name": "#hash_3df4eb0ec7fa88b2",
+            "name": "#fly_emote_worthy_out",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3df4eb0ec7fa88b2",
+                    "name": "#fly_emote_worthy_out",
                     "assetId": "#fly/emotes/proph_king_3.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -27215,13 +27215,13 @@
         {
             "value": 328,
             "next": 483,
-            "name": "#hash_749e0ef1ccfd9f03",
+            "name": "#prj_deathfx_anime_fatal_body",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_749e0ef1ccfd9f03",
+                    "name": "#prj_deathfx_anime_fatal_body",
                     "assetId": "#hash_2320537bde134d02",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -27261,7 +27261,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_749e0ef1ccfd9f03",
+                    "name": "#prj_deathfx_anime_fatal_body",
                     "assetId": "#hash_206a39fd2983b90d",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -27301,7 +27301,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_749e0ef1ccfd9f03",
+                    "name": "#prj_deathfx_anime_fatal_body",
                     "assetId": "#hash_7d8ca1a0a1956038",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -27341,7 +27341,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_749e0ef1ccfd9f03",
+                    "name": "#prj_deathfx_anime_fatal_body",
                     "assetId": "#hash_65d15d5bfcfccf03",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -27385,14 +27385,14 @@
         {
             "value": 152,
             "next": 65535,
-            "name": "#hash_36a605c13391f501",
+            "name": "#prj_deathfx_anime_fatal_head",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_36a605c13391f501",
-                    "secondaryname": "#hash_749e0ef1ccfd9f03",
+                    "name": "#prj_deathfx_anime_fatal_head",
+                    "secondaryname": "#prj_deathfx_anime_fatal_body",
                     "assetId": "#hash_b297908f12a22e2",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -27432,8 +27432,8 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_36a605c13391f501",
-                    "secondaryname": "#hash_749e0ef1ccfd9f03",
+                    "name": "#prj_deathfx_anime_fatal_head",
+                    "secondaryname": "#prj_deathfx_anime_fatal_body",
                     "assetId": "#hash_866df2fdfd579ed",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -27473,8 +27473,8 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_36a605c13391f501",
-                    "secondaryname": "#hash_749e0ef1ccfd9f03",
+                    "name": "#prj_deathfx_anime_fatal_head",
+                    "secondaryname": "#prj_deathfx_anime_fatal_body",
                     "assetId": "#hash_69f4979d769a1818",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -27514,8 +27514,8 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_36a605c13391f501",
-                    "secondaryname": "#hash_749e0ef1ccfd9f03",
+                    "name": "#prj_deathfx_anime_fatal_head",
+                    "secondaryname": "#prj_deathfx_anime_fatal_body",
                     "assetId": "#hash_67090c898de2be63",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -27559,13 +27559,13 @@
         {
             "value": 364,
             "next": 65535,
-            "name": "#hash_22830c8f3fbb10d0",
+            "name": "#prj_deathfx_blackhole_fatal_body",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_22830c8f3fbb10d0",
+                    "name": "#prj_deathfx_blackhole_fatal_body",
                     "assetId": "#hash_1765c4b719bcda57",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -27605,7 +27605,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_22830c8f3fbb10d0",
+                    "name": "#prj_deathfx_blackhole_fatal_body",
                     "assetId": "#hash_1e817cc2cdbefd7a",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -27645,7 +27645,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_22830c8f3fbb10d0",
+                    "name": "#prj_deathfx_blackhole_fatal_body",
                     "assetId": "#hash_3f2b98908565ee25",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -27685,7 +27685,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_22830c8f3fbb10d0",
+                    "name": "#prj_deathfx_blackhole_fatal_body",
                     "assetId": "#hash_60a2d7be1b45f5f0",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -27725,7 +27725,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_22830c8f3fbb10d0",
+                    "name": "#prj_deathfx_blackhole_fatal_body",
                     "assetId": "#hash_480cc4ab7a67e33b",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -27765,7 +27765,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_22830c8f3fbb10d0",
+                    "name": "#prj_deathfx_blackhole_fatal_body",
                     "assetId": "#hash_4f666b227de74c1e",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -27805,7 +27805,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_22830c8f3fbb10d0",
+                    "name": "#prj_deathfx_blackhole_fatal_body",
                     "assetId": "#hash_d81cc49c0a19749",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -27845,7 +27845,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_22830c8f3fbb10d0",
+                    "name": "#prj_deathfx_blackhole_fatal_body",
                     "assetId": "#hash_14e7620f37519be4",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -27885,7 +27885,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_22830c8f3fbb10d0",
+                    "name": "#prj_deathfx_blackhole_fatal_body",
                     "assetId": "#hash_1599ee0564c06f1f",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -27929,14 +27929,14 @@
         {
             "value": 389,
             "next": 65535,
-            "name": "#hash_3ec981bfc6560e26",
+            "name": "#prj_deathfx_blackhole_fatal_head",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3ec981bfc6560e26",
-                    "secondaryname": "#hash_22830c8f3fbb10d0",
+                    "name": "#prj_deathfx_blackhole_fatal_head",
+                    "secondaryname": "#prj_deathfx_blackhole_fatal_body",
                     "assetId": "#hash_256930c416fee261",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -28080,14 +28080,14 @@
         {
             "value": 231,
             "next": 65535,
-            "name": "#hash_48a01dce6ed5c8ac",
+            "name": "#prj_deathfx_comic_fatal_body",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_48a01dce6ed5c8ac",
-                    "secondaryname": "#hash_55d20bac7fdcf8bd",
+                    "name": "#prj_deathfx_comic_fatal_body",
+                    "secondaryname": "#prj_deathfx_comic_fatal_body_swt",
                     "assetId": "#hash_30170a2d2597e38b",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -28127,8 +28127,8 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_48a01dce6ed5c8ac",
-                    "secondaryname": "#hash_55d20bac7fdcf8bd",
+                    "name": "#prj_deathfx_comic_fatal_body",
+                    "secondaryname": "#prj_deathfx_comic_fatal_body_swt",
                     "assetId": "#hash_357615d8e996bfae",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -28168,8 +28168,8 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_48a01dce6ed5c8ac",
-                    "secondaryname": "#hash_55d20bac7fdcf8bd",
+                    "name": "#prj_deathfx_comic_fatal_body",
+                    "secondaryname": "#prj_deathfx_comic_fatal_body_swt",
                     "assetId": "#hash_1ec2dada616378d9",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -28209,8 +28209,8 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_48a01dce6ed5c8ac",
-                    "secondaryname": "#hash_55d20bac7fdcf8bd",
+                    "name": "#prj_deathfx_comic_fatal_body",
+                    "secondaryname": "#prj_deathfx_comic_fatal_body_swt",
                     "assetId": "#hash_4634d2bacc6c5874",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -28250,8 +28250,8 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_48a01dce6ed5c8ac",
-                    "secondaryname": "#hash_55d20bac7fdcf8bd",
+                    "name": "#prj_deathfx_comic_fatal_body",
+                    "secondaryname": "#prj_deathfx_comic_fatal_body_swt",
                     "assetId": "#hash_60df20752b9da667",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -28291,8 +28291,8 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_48a01dce6ed5c8ac",
-                    "secondaryname": "#hash_55d20bac7fdcf8bd",
+                    "name": "#prj_deathfx_comic_fatal_body",
+                    "secondaryname": "#prj_deathfx_comic_fatal_body_swt",
                     "assetId": "#hash_7ab96e71c1c2c1ca",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -28332,8 +28332,8 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_48a01dce6ed5c8ac",
-                    "secondaryname": "#hash_55d20bac7fdcf8bd",
+                    "name": "#prj_deathfx_comic_fatal_body",
+                    "secondaryname": "#prj_deathfx_comic_fatal_body_swt",
                     "assetId": "#hash_7d0b6cdcc7edbaf5",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -28377,13 +28377,13 @@
         {
             "value": 204,
             "next": 553,
-            "name": "#hash_55d20bac7fdcf8bd",
+            "name": "#prj_deathfx_comic_fatal_body_swt",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_55d20bac7fdcf8bd",
+                    "name": "#prj_deathfx_comic_fatal_body_swt",
                     "assetId": "#hash_557a6f1b4e8cc919",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -28423,7 +28423,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_55d20bac7fdcf8bd",
+                    "name": "#prj_deathfx_comic_fatal_body_swt",
                     "assetId": "#hash_3603c6a0e87b81b4",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -28463,7 +28463,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_55d20bac7fdcf8bd",
+                    "name": "#prj_deathfx_comic_fatal_body_swt",
                     "assetId": "#hash_68925b7e85b91ecb",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -28507,13 +28507,13 @@
         {
             "value": 63,
             "next": 494,
-            "name": "#hash_18053b042b2095a2",
+            "name": "#prj_deathfx_comic_fatal_head",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_18053b042b2095a2",
+                    "name": "#prj_deathfx_comic_fatal_head",
                     "assetId": "#hash_fb2bbd320c71389",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -28553,7 +28553,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_18053b042b2095a2",
+                    "name": "#prj_deathfx_comic_fatal_head",
                     "assetId": "#hash_7b335a0936efc524",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -28593,7 +28593,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_18053b042b2095a2",
+                    "name": "#prj_deathfx_comic_fatal_head",
                     "assetId": "#hash_59d813d52171277b",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -28633,7 +28633,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_18053b042b2095a2",
+                    "name": "#prj_deathfx_comic_fatal_head",
                     "assetId": "#hash_3fd638087c5ffc5e",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -30463,13 +30463,13 @@
         {
             "value": 594,
             "next": 65535,
-            "name": "#hash_fa784adca95d7ec",
+            "name": "#prj_deathfx_nature_fatal_body",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_fa784adca95d7ec",
+                    "name": "#prj_deathfx_nature_fatal_body",
                     "assetId": "#hash_518ac6cb38f065fc",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -30509,7 +30509,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_fa784adca95d7ec",
+                    "name": "#prj_deathfx_nature_fatal_body",
                     "assetId": "#hash_6ac02a4b3963a601",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -30549,7 +30549,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_fa784adca95d7ec",
+                    "name": "#prj_deathfx_nature_fatal_body",
                     "assetId": "#hash_783a127100bd7c36",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -30589,7 +30589,7 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_fa784adca95d7ec",
+                    "name": "#prj_deathfx_nature_fatal_body",
                     "assetId": "#hash_c49f07e9951b453",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -30633,14 +30633,14 @@
         {
             "value": 191,
             "next": 65535,
-            "name": "#hash_3590a1de9ee046e2",
+            "name": "#prj_deathfx_nature_fatal_head",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3590a1de9ee046e2",
-                    "secondaryname": "#hash_fa784adca95d7ec",
+                    "name": "#prj_deathfx_nature_fatal_head",
+                    "secondaryname": "#prj_deathfx_nature_fatal_body",
                     "assetId": "#hash_30e6e08fed2f5d9d",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -30680,8 +30680,8 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_3590a1de9ee046e2",
-                    "secondaryname": "#hash_fa784adca95d7ec",
+                    "name": "#prj_deathfx_nature_fatal_head",
+                    "secondaryname": "#prj_deathfx_nature_fatal_body",
                     "assetId": "#hash_500361672688ba08",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -30721,8 +30721,8 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_3590a1de9ee046e2",
-                    "secondaryname": "#hash_fa784adca95d7ec",
+                    "name": "#prj_deathfx_nature_fatal_head",
+                    "secondaryname": "#prj_deathfx_nature_fatal_body",
                     "assetId": "#hash_6352d579d10769cf",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -30762,8 +30762,8 @@
                     "unk178": "#hash_d03190208"
                 },
                 {
-                    "name": "#hash_3590a1de9ee046e2",
-                    "secondaryname": "#hash_fa784adca95d7ec",
+                    "name": "#prj_deathfx_nature_fatal_head",
+                    "secondaryname": "#prj_deathfx_nature_fatal_body",
                     "assetId": "#hash_2e2017369d96ae12",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -33736,13 +33736,13 @@
         {
             "value": 579,
             "next": 65535,
-            "name": "#hash_7701551af605b73b",
+            "name": "#uin_draft_bar_fill_1shot",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7701551af605b73b",
+                    "name": "#uin_draft_bar_fill_1shot",
                     "assetId": "#uin/ready/char_bar_fill_1s.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36295,13 +36295,13 @@
         {
             "value": 654,
             "next": 65535,
-            "name": "#hash_23dd47f53838cd59",
+            "name": "#uin_mp_pad_target",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_23dd47f53838cd59",
+                    "name": "#uin_mp_pad_target",
                     "assetId": "#uin/2k18/mp/ui_pad_confirm.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36344,13 +36344,13 @@
         {
             "value": 700,
             "next": 65535,
-            "name": "#hash_57eb3d808b6e65c6",
+            "name": "#uin_mp_scoreboard_menu",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_57eb3d808b6e65c6",
+                    "name": "#uin_mp_scoreboard_menu",
                     "assetId": "#uin/2k18/mp/gpad_scoreboard.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36393,13 +36393,13 @@
         {
             "value": 602,
             "next": 65535,
-            "name": "#hash_548f0d33e630e71a",
+            "name": "#uin_mtx_camera_whoosh",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_548f0d33e630e71a",
+                    "name": "#uin_mtx_camera_whoosh",
                     "assetId": "#uin/blackmarket/bm_camera_whoosh.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36491,13 +36491,13 @@
         {
             "value": 511,
             "next": 65535,
-            "name": "#hash_3e4eb84c26338ec2",
+            "name": "#uin_mtx_chest_open",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3e4eb84c26338ec2",
+                    "name": "#uin_mtx_chest_open",
                     "assetId": "#uin/blackmarket/bm_chest_open.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -36540,13 +36540,13 @@
         {
             "value": 689,
             "next": 65535,
-            "name": "#hash_6a5c6af8a2d15c05",
+            "name": "#uin_mtx_chest_open_sparks",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6a5c6af8a2d15c05",
+                    "name": "#uin_mtx_chest_open_sparks",
                     "assetId": "#uin/blackmarket/bm_chest_open_sparks.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -37084,13 +37084,13 @@
         {
             "value": 499,
             "next": 607,
-            "name": "#hash_4b2171012d52d582",
+            "name": "#uin_mtx_item_cycle",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4b2171012d52d582",
+                    "name": "#uin_mtx_item_cycle",
                     "assetId": "#uin/blackmarket/bm_cycle_loop.ln100.pc.snd",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -37726,13 +37726,13 @@
         {
             "value": 640,
             "next": 65535,
-            "name": "#hash_48563ce455c98511",
+            "name": "#uin_mtx_item_reveal",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_48563ce455c98511",
+                    "name": "#uin_mtx_item_reveal",
                     "assetId": "#hash_e826f7da80fd06f",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -39597,13 +39597,13 @@
         {
             "value": 432,
             "next": 648,
-            "name": "#hash_e7e2e41396ab327",
+            "name": "#uin_ready_bar_fill_1shot",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_e7e2e41396ab327",
+                    "name": "#uin_ready_bar_fill_1shot",
                     "assetId": "#hash_769029379317127",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -41448,13 +41448,13 @@
         {
             "value": 487,
             "next": 65535,
-            "name": "#hash_429b6f889d384f72",
+            "name": "#uin_wlh_diamond",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_429b6f889d384f72",
+                    "name": "#uin_wlh_diamond",
                     "assetId": "#hash_1927b46992633dc4",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -41595,13 +41595,13 @@
         {
             "value": 517,
             "next": 65535,
-            "name": "#hash_3a03a50bc496824b",
+            "name": "#uin_wlh_medallion",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3a03a50bc496824b",
+                    "name": "#uin_wlh_medallion",
                     "assetId": "#hash_1e5c9a8cc783f9d3",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -41644,13 +41644,13 @@
         {
             "value": 94,
             "next": 696,
-            "name": "#hash_a86d90199f9c5dd",
+            "name": "#uin_wlh_place",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_a86d90199f9c5dd",
+                    "name": "#uin_wlh_place",
                     "assetId": "#hash_5d6b7c20fc01c5",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -41791,13 +41791,13 @@
         {
             "value": 229,
             "next": 65535,
-            "name": "#hash_22dce1518083a723",
+            "name": "#uin_wlh_reticle_flash",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_22dce1518083a723",
+                    "name": "#uin_wlh_reticle_flash",
                     "assetId": "#hash_31a7fccb61dc1f83",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -42183,13 +42183,13 @@
         {
             "value": 629,
             "next": 65535,
-            "name": "#hash_1d03c896e805d4c3",
+            "name": "#uin_zmb_symbol_addition",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1d03c896e805d4c3",
+                    "name": "#uin_zmb_symbol_addition",
                     "assetId": "#hash_a10477cce66afc5",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -42232,13 +42232,13 @@
         {
             "value": 583,
             "next": 65535,
-            "name": "#hash_7018d35aa7654172",
+            "name": "#uin_zmb_symbol_appear",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7018d35aa7654172",
+                    "name": "#uin_zmb_symbol_appear",
                     "assetId": "#hash_db7a6e6f3af1f8b",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -42281,13 +42281,13 @@
         {
             "value": 636,
             "next": 65535,
-            "name": "#hash_4a33119f99018f03",
+            "name": "#uin_zmb_symbol_end_blood",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4a33119f99018f03",
+                    "name": "#uin_zmb_symbol_end_blood",
                     "assetId": "#hash_283ccb2459221a42",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -42330,13 +42330,13 @@
         {
             "value": 491,
             "next": 609,
-            "name": "#hash_67669c152a8b8d81",
+            "name": "#uin_zmb_symbol_end_dust",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_67669c152a8b8d81",
+                    "name": "#uin_zmb_symbol_end_dust",
                     "assetId": "#hash_2d67bfb16825500a",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",
@@ -42379,13 +42379,13 @@
         {
             "value": 637,
             "next": 597,
-            "name": "#hash_f90dd253e1b713f",
+            "name": "#uin_zmb_symbol_end_legion",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_f90dd253e1b713f",
+                    "name": "#uin_zmb_symbol_end_legion",
                     "assetId": "#hash_2d0f31678e2c395c",
                     "assetFileNameSustain": "#core_ui.all",
                     "assetIdRelease": "#core_ui.all",

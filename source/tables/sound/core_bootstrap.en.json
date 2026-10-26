@@ -9,14 +9,14 @@
         {
             "value": 45,
             "next": 3,
-            "name": "#hash_4799da37095d9e42",
+            "name": "#bik_ct_ajax_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4799da37095d9e42",
-                    "secondaryname": "#hash_67683c1901475017",
+                    "name": "#bik_ct_ajax_c",
+                    "secondaryname": "#bik_ct_ajax_lsrs",
                     "assetId": "#hash_786687af62f6dfc4",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -59,13 +59,13 @@
         {
             "value": 59,
             "next": 24,
-            "name": "#hash_67683c1901475017",
+            "name": "#bik_ct_ajax_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_67683c1901475017",
+                    "name": "#bik_ct_ajax_lsrs",
                     "assetId": "#hash_5ecc59a25d9d88d5",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -108,14 +108,14 @@
         {
             "value": 57,
             "next": 4,
-            "name": "#hash_5b69237ef9d1cbf5",
+            "name": "#bik_ct_battery_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5b69237ef9d1cbf5",
-                    "secondaryname": "#hash_5811a6373691e94e",
+                    "name": "#bik_ct_battery_c",
+                    "secondaryname": "#bik_ct_battery_lsrs",
                     "assetId": "#hash_2040ff1a0a7885de",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -158,13 +158,13 @@
         {
             "value": 111,
             "next": 5,
-            "name": "#hash_5811a6373691e94e",
+            "name": "#bik_ct_battery_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5811a6373691e94e",
+                    "name": "#bik_ct_battery_lsrs",
                     "assetId": "#hash_6a82b6491b2e3b3",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -207,14 +207,14 @@
         {
             "value": 112,
             "next": 6,
-            "name": "#hash_44bf969111ff37f",
+            "name": "#bik_ct_crash_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_44bf969111ff37f",
-                    "secondaryname": "#hash_513d42f65d0fa684",
+                    "name": "#bik_ct_crash_c",
+                    "secondaryname": "#bik_ct_crash_lsrs",
                     "assetId": "#hash_68d0814d9db371ce",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -257,13 +257,13 @@
         {
             "value": 117,
             "next": 65535,
-            "name": "#hash_513d42f65d0fa684",
+            "name": "#bik_ct_crash_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_513d42f65d0fa684",
+                    "name": "#bik_ct_crash_lsrs",
                     "assetId": "#hash_5b5b2b20942bae43",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -306,14 +306,14 @@
         {
             "value": 119,
             "next": 65535,
-            "name": "#hash_daa30344dfc0797",
+            "name": "#bik_ct_firebreak_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_daa30344dfc0797",
-                    "secondaryname": "#hash_278657c1af0c01c",
+                    "name": "#bik_ct_firebreak_c",
+                    "secondaryname": "#bik_ct_firebreak_lsrs",
                     "assetId": "#hash_11c73c9ceb1cc12",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -356,13 +356,13 @@
         {
             "value": 44,
             "next": 12,
-            "name": "#hash_278657c1af0c01c",
+            "name": "#bik_ct_firebreak_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_278657c1af0c01c",
+                    "name": "#bik_ct_firebreak_lsrs",
                     "assetId": "#hash_49231ae71d8637af",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -405,14 +405,14 @@
         {
             "value": 90,
             "next": 9,
-            "name": "#hash_11e37855fbf9fae7",
+            "name": "#bik_ct_interstitial_bunker1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_11e37855fbf9fae7",
-                    "secondaryname": "#hash_712af9ed7316a31a",
+                    "name": "#bik_ct_interstitial_bunker1",
+                    "secondaryname": "#bik_ct_interstitial_bunker1_lr",
                     "assetId": "#hash_138a7b9646185b8b",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -456,14 +456,14 @@
         {
             "value": 110,
             "next": 65535,
-            "name": "#hash_712af9ed7316a31a",
+            "name": "#bik_ct_interstitial_bunker1_lr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_712af9ed7316a31a",
-                    "secondaryname": "#hash_261f2e41cc347f9a",
+                    "name": "#bik_ct_interstitial_bunker1_lr",
+                    "secondaryname": "#bik_ct_interstitial_bunker1_lsrs",
                     "assetId": "#hash_5151e9cd8f63c0d2",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -506,13 +506,13 @@
         {
             "value": 41,
             "next": 127,
-            "name": "#hash_261f2e41cc347f9a",
+            "name": "#bik_ct_interstitial_bunker1_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_261f2e41cc347f9a",
+                    "name": "#bik_ct_interstitial_bunker1_lsrs",
                     "assetId": "#hash_35b9c8c3ab85ef22",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -555,14 +555,14 @@
         {
             "value": 35,
             "next": 65535,
-            "name": "#hash_11e37955fbf9fc9a",
+            "name": "#bik_ct_interstitial_bunker2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_11e37955fbf9fc9a",
-                    "secondaryname": "#hash_1c9fb3f782c4ce81",
+                    "name": "#bik_ct_interstitial_bunker2",
+                    "secondaryname": "#bik_ct_interstitial_bunker2_lr",
                     "assetId": "#hash_3c2845acdb706c3f",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -606,14 +606,14 @@
         {
             "value": 130,
             "next": 65535,
-            "name": "#hash_1c9fb3f782c4ce81",
+            "name": "#bik_ct_interstitial_bunker2_lr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1c9fb3f782c4ce81",
-                    "secondaryname": "#hash_66faa3220c86c4e5",
+                    "name": "#bik_ct_interstitial_bunker2_lr",
+                    "secondaryname": "#bik_ct_interstitial_bunker2_lsrs",
                     "assetId": "#hash_125db2d5f4f69b66",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -656,13 +656,13 @@
         {
             "value": 55,
             "next": 65535,
-            "name": "#hash_66faa3220c86c4e5",
+            "name": "#bik_ct_interstitial_bunker2_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_66faa3220c86c4e5",
+                    "name": "#bik_ct_interstitial_bunker2_lsrs",
                     "assetId": "#hash_5fa068ec7801fdde",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -705,14 +705,14 @@
         {
             "value": 10,
             "next": 13,
-            "name": "#hash_11e37a55fbf9fe4d",
+            "name": "#bik_ct_interstitial_bunker3",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_11e37a55fbf9fe4d",
-                    "secondaryname": "#hash_4a22b9fde5712f74",
+                    "name": "#bik_ct_interstitial_bunker3",
+                    "secondaryname": "#bik_ct_interstitial_bunker3_lr",
                     "assetId": "#hash_42c2bf0ab0dfba63",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -756,14 +756,14 @@
         {
             "value": 27,
             "next": 65535,
-            "name": "#hash_4a22b9fde5712f74",
+            "name": "#bik_ct_interstitial_bunker3_lr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4a22b9fde5712f74",
-                    "secondaryname": "#hash_4f016aff8088b894",
+                    "name": "#bik_ct_interstitial_bunker3_lr",
+                    "secondaryname": "#bik_ct_interstitial_bunker3_lsrs",
                     "assetId": "#hash_19119470dbdc544a",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -806,13 +806,13 @@
         {
             "value": 78,
             "next": 65535,
-            "name": "#hash_4f016aff8088b894",
+            "name": "#bik_ct_interstitial_bunker3_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4f016aff8088b894",
+                    "name": "#bik_ct_interstitial_bunker3_lsrs",
                     "assetId": "#hash_7e99323c4ae66fa",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -855,14 +855,14 @@
         {
             "value": 113,
             "next": 65535,
-            "name": "#hash_11e37355fbf9f268",
+            "name": "#bik_ct_interstitial_bunker4",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_11e37355fbf9f268",
-                    "secondaryname": "#hash_3e59f3c3b8ddf84b",
+                    "name": "#bik_ct_interstitial_bunker4",
+                    "secondaryname": "#bik_ct_interstitial_bunker4_lr",
                     "assetId": "#hash_14e1aa4fd2a4c86f",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -906,14 +906,14 @@
         {
             "value": 60,
             "next": 21,
-            "name": "#hash_3e59f3c3b8ddf84b",
+            "name": "#bik_ct_interstitial_bunker4_lr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3e59f3c3b8ddf84b",
-                    "secondaryname": "#hash_79526b015b528fb7",
+                    "name": "#bik_ct_interstitial_bunker4_lr",
+                    "secondaryname": "#bik_ct_interstitial_bunker4_lsrs",
                     "assetId": "#hash_7fa9be22146ce396",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -956,13 +956,13 @@
         {
             "value": 12,
             "next": 18,
-            "name": "#hash_79526b015b528fb7",
+            "name": "#bik_ct_interstitial_bunker4_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_79526b015b528fb7",
+                    "name": "#bik_ct_interstitial_bunker4_lsrs",
                     "assetId": "#hash_97eb5ac2dc52cee",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1012,7 +1012,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_interstitial_intro",
-                    "secondaryname": "#hash_6b3b5346e1822fec",
+                    "secondaryname": "#bik_ct_interstitial_intro_lr",
                     "assetId": "#hash_df464661adb034f",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1055,7 +1055,7 @@
                 },
                 {
                     "name": "#bik_ct_interstitial_intro",
-                    "secondaryname": "#hash_6b3b5346e1822fec",
+                    "secondaryname": "#bik_ct_interstitial_intro_lr",
                     "assetId": "#hash_a6fddeb803989f1",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1101,14 +1101,14 @@
         {
             "value": 76,
             "next": 22,
-            "name": "#hash_6b3b5346e1822fec",
+            "name": "#bik_ct_interstitial_intro_lr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6b3b5346e1822fec",
-                    "secondaryname": "#hash_66749754f3f93c0c",
+                    "name": "#bik_ct_interstitial_intro_lr",
+                    "secondaryname": "#bik_ct_interstitial_intro_lsrs",
                     "assetId": "#hash_5c385fe0b088fb76",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1151,13 +1151,13 @@
         {
             "value": 95,
             "next": 65535,
-            "name": "#hash_66749754f3f93c0c",
+            "name": "#bik_ct_interstitial_intro_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_66749754f3f93c0c",
+                    "name": "#bik_ct_interstitial_intro_lsrs",
                     "assetId": "#hash_eff57b3268d224e",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1207,7 +1207,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_interstitial_outro",
-                    "secondaryname": "#hash_1e83ba7c1ffc31f",
+                    "secondaryname": "#bik_ct_interstitial_outro_lr",
                     "assetId": "#hash_73a6bc738e39d229",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1251,14 +1251,14 @@
         {
             "value": 131,
             "next": 65535,
-            "name": "#hash_1e83ba7c1ffc31f",
+            "name": "#bik_ct_interstitial_outro_lr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1e83ba7c1ffc31f",
-                    "secondaryname": "#hash_59cf2ce35c6ec7cb",
+                    "name": "#bik_ct_interstitial_outro_lr",
+                    "secondaryname": "#bik_ct_interstitial_outro_lsrs",
                     "assetId": "#hash_3f6dcebfdce7516c",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1301,13 +1301,13 @@
         {
             "value": 93,
             "next": 65535,
-            "name": "#hash_59cf2ce35c6ec7cb",
+            "name": "#bik_ct_interstitial_outro_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_59cf2ce35c6ec7cb",
+                    "name": "#bik_ct_interstitial_outro_lsrs",
                     "assetId": "#hash_7cb2cc61bd8b794",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1350,14 +1350,14 @@
         {
             "value": 16,
             "next": 27,
-            "name": "#hash_5e17d2feae9901e4",
+            "name": "#bik_ct_interstitial_savannah1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5e17d2feae9901e4",
-                    "secondaryname": "#hash_5bd00071eb6e30ff",
+                    "name": "#bik_ct_interstitial_savannah1",
+                    "secondaryname": "#bik_ct_interstitial_savannah1_lr",
                     "assetId": "#hash_495a8684954984ad",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1401,14 +1401,14 @@
         {
             "value": 65,
             "next": 65535,
-            "name": "#hash_5bd00071eb6e30ff",
+            "name": "#bik_ct_interstitial_savannah1_lr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5bd00071eb6e30ff",
-                    "secondaryname": "#hash_174246ddc70537ab",
+                    "name": "#bik_ct_interstitial_savannah1_lr",
+                    "secondaryname": "#bik_ct_interstitial_savannah1_lsrs",
                     "assetId": "#hash_162c5b00c3b89210",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1451,13 +1451,13 @@
         {
             "value": 3,
             "next": 29,
-            "name": "#hash_174246ddc70537ab",
+            "name": "#bik_ct_interstitial_savannah1_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_174246ddc70537ab",
+                    "name": "#bik_ct_interstitial_savannah1_lsrs",
                     "assetId": "#hash_71fb3b9aac23fdc0",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1500,14 +1500,14 @@
         {
             "value": 15,
             "next": 31,
-            "name": "#hash_5e17d5feae9906fd",
+            "name": "#bik_ct_interstitial_savannah2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5e17d5feae9906fd",
-                    "secondaryname": "#hash_a8b0e89f8a8fcc4",
+                    "name": "#bik_ct_interstitial_savannah2",
+                    "secondaryname": "#bik_ct_interstitial_savannah2_lr",
                     "assetId": "#hash_6a2e122ed4dbb3ed",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1551,14 +1551,14 @@
         {
             "value": 94,
             "next": 65535,
-            "name": "#hash_a8b0e89f8a8fcc4",
+            "name": "#bik_ct_interstitial_savannah2_lr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_a8b0e89f8a8fcc4",
-                    "secondaryname": "#hash_6d6550e8a8585a64",
+                    "name": "#bik_ct_interstitial_savannah2_lr",
+                    "secondaryname": "#bik_ct_interstitial_savannah2_lsrs",
                     "assetId": "#hash_507292fa11ea9150",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1601,13 +1601,13 @@
         {
             "value": 82,
             "next": 65535,
-            "name": "#hash_6d6550e8a8585a64",
+            "name": "#bik_ct_interstitial_savannah2_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6d6550e8a8585a64",
+                    "name": "#bik_ct_interstitial_savannah2_lsrs",
                     "assetId": "#hash_25e165a16e414200",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1650,14 +1650,14 @@
         {
             "value": 120,
             "next": 33,
-            "name": "#hash_5e17d4feae99054a",
+            "name": "#bik_ct_interstitial_savannah3",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5e17d4feae99054a",
-                    "secondaryname": "#hash_345bc8825d6dac11",
+                    "name": "#bik_ct_interstitial_savannah3",
+                    "secondaryname": "#bik_ct_interstitial_savannah3_lr",
                     "assetId": "#hash_398b4cdcf12fb9e9",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1701,14 +1701,14 @@
         {
             "value": 149,
             "next": 65535,
-            "name": "#hash_345bc8825d6dac11",
+            "name": "#bik_ct_interstitial_savannah3_lr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_345bc8825d6dac11",
-                    "secondaryname": "#hash_3f1c29488cd2ef5",
+                    "name": "#bik_ct_interstitial_savannah3_lr",
+                    "secondaryname": "#bik_ct_interstitial_savannah3_lsrs",
                     "assetId": "#hash_7b96b9f30f806e2c",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1751,13 +1751,13 @@
         {
             "value": 150,
             "next": 65535,
-            "name": "#hash_3f1c29488cd2ef5",
+            "name": "#bik_ct_interstitial_savannah3_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3f1c29488cd2ef5",
+                    "name": "#bik_ct_interstitial_savannah3_lsrs",
                     "assetId": "#hash_2c367c7764b4f854",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1800,14 +1800,14 @@
         {
             "value": 137,
             "next": 65535,
-            "name": "#hash_5e17cffeae98fccb",
+            "name": "#bik_ct_interstitial_savannah4",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5e17cffeae98fccb",
-                    "secondaryname": "#hash_170b658a31fd826",
+                    "name": "#bik_ct_interstitial_savannah4",
+                    "secondaryname": "#bik_ct_interstitial_savannah4_lr",
                     "assetId": "#hash_5e913e2cfc09fe51",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1851,14 +1851,14 @@
         {
             "value": 105,
             "next": 65535,
-            "name": "#hash_170b658a31fd826",
+            "name": "#bik_ct_interstitial_savannah4_lr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_170b658a31fd826",
-                    "secondaryname": "#hash_5a0daf1711730706",
+                    "name": "#bik_ct_interstitial_savannah4_lr",
+                    "secondaryname": "#bik_ct_interstitial_savannah4_lsrs",
                     "assetId": "#hash_4c63054d7770bfb4",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1901,13 +1901,13 @@
         {
             "value": 135,
             "next": 65535,
-            "name": "#hash_5a0daf1711730706",
+            "name": "#bik_ct_interstitial_savannah4_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5a0daf1711730706",
+                    "name": "#bik_ct_interstitial_savannah4_lsrs",
                     "assetId": "#hash_65c0d410018a607c",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -1950,14 +1950,14 @@
         {
             "value": 101,
             "next": 65535,
-            "name": "#hash_5e17cefeae98fb18",
+            "name": "#bik_ct_interstitial_savannah5",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5e17cefeae98fb18",
-                    "secondaryname": "#hash_56e6c85242f9f71b",
+                    "name": "#bik_ct_interstitial_savannah5",
+                    "secondaryname": "#bik_ct_interstitial_savannah5_lr",
                     "assetId": "#hash_45d5f3021d60c02d",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2001,14 +2001,14 @@
         {
             "value": 118,
             "next": 65535,
-            "name": "#hash_56e6c85242f9f71b",
+            "name": "#bik_ct_interstitial_savannah5_lr",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_56e6c85242f9f71b",
-                    "secondaryname": "#hash_134eee8448929f07",
+                    "name": "#bik_ct_interstitial_savannah5_lr",
+                    "secondaryname": "#bik_ct_interstitial_savannah5_lsrs",
                     "assetId": "#hash_3321344f0332ac90",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2051,13 +2051,13 @@
         {
             "value": 129,
             "next": 65535,
-            "name": "#hash_134eee8448929f07",
+            "name": "#bik_ct_interstitial_savannah5_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_134eee8448929f07",
+                    "name": "#bik_ct_interstitial_savannah5_lsrs",
                     "assetId": "#hash_2022fb90889f0540",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2151,14 +2151,14 @@
         {
             "value": 85,
             "next": 65535,
-            "name": "#hash_7b367d7aa3e245a3",
+            "name": "#bik_ct_nomad_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7b367d7aa3e245a3",
-                    "secondaryname": "#hash_6d4e4d3606e1dbb8",
+                    "name": "#bik_ct_nomad_c",
+                    "secondaryname": "#bik_ct_nomad_lsrs",
                     "assetId": "#hash_7dd772e0bf320daa",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2201,13 +2201,13 @@
         {
             "value": 79,
             "next": 41,
-            "name": "#hash_6d4e4d3606e1dbb8",
+            "name": "#bik_ct_nomad_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6d4e4d3606e1dbb8",
+                    "name": "#bik_ct_nomad_lsrs",
                     "assetId": "#hash_53dde82d1a8d8147",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2301,14 +2301,14 @@
         {
             "value": 72,
             "next": 34,
-            "name": "#hash_1edcaf646f2a3cb0",
+            "name": "#bik_ct_powerinnumbers_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1edcaf646f2a3cb0",
-                    "secondaryname": "#hash_4c745cefa9f31491",
+                    "name": "#bik_ct_powerinnumbers_c",
+                    "secondaryname": "#bik_ct_powerinnumbers_lsrs",
                     "assetId": "#hash_6e756af73d5dd708",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2349,8 +2349,8 @@
                     "unk178": "#hash_406120808"
                 },
                 {
-                    "name": "#hash_1edcaf646f2a3cb0",
-                    "secondaryname": "#hash_4c745cefa9f31491",
+                    "name": "#bik_ct_powerinnumbers_c",
+                    "secondaryname": "#bik_ct_powerinnumbers_lsrs",
                     "assetId": "#hash_3aeb114a2b340b28",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2395,13 +2395,13 @@
         {
             "value": 127,
             "next": 35,
-            "name": "#hash_4c745cefa9f31491",
+            "name": "#bik_ct_powerinnumbers_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4c745cefa9f31491",
+                    "name": "#bik_ct_powerinnumbers_lsrs",
                     "assetId": "#hash_c658f9f4413c5b1",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2451,7 +2451,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_powerinnumbers_trailer",
-                    "secondaryname": "#hash_1edcaf646f2a3cb0",
+                    "secondaryname": "#bik_ct_powerinnumbers_c",
                     "assetId": "#hash_5684992b6d5a92bb",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2495,14 +2495,14 @@
         {
             "value": 43,
             "next": 65535,
-            "name": "#hash_3993cc4754551af2",
+            "name": "#bik_ct_prophet_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3993cc4754551af2",
-                    "secondaryname": "#hash_58db6aa3f67ad987",
+                    "name": "#bik_ct_prophet_c",
+                    "secondaryname": "#bik_ct_prophet_lsrs",
                     "assetId": "#hash_2de065d3d9ad127c",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2545,13 +2545,13 @@
         {
             "value": 83,
             "next": 42,
-            "name": "#hash_58db6aa3f67ad987",
+            "name": "#bik_ct_prophet_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_58db6aa3f67ad987",
+                    "name": "#bik_ct_prophet_lsrs",
                     "assetId": "#hash_4c6463184cf6968d",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2594,14 +2594,14 @@
         {
             "value": 21,
             "next": 65535,
-            "name": "#hash_63025313b3e1b077",
+            "name": "#bik_ct_recon_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_63025313b3e1b077",
-                    "secondaryname": "#hash_6b5900af25bdfc7c",
+                    "name": "#bik_ct_recon_c",
+                    "secondaryname": "#bik_ct_recon_lsrs",
                     "assetId": "#hash_27127ef56de8347a",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2644,13 +2644,13 @@
         {
             "value": 40,
             "next": 65535,
-            "name": "#hash_6b5900af25bdfc7c",
+            "name": "#bik_ct_recon_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6b5900af25bdfc7c",
+                    "name": "#bik_ct_recon_lsrs",
                     "assetId": "#hash_30df55e2a258c777",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2693,14 +2693,14 @@
         {
             "value": 71,
             "next": 65535,
-            "name": "#hash_752f40d629b1de",
+            "name": "#bik_ct_ruin_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_752f40d629b1de",
-                    "secondaryname": "#hash_442df308ba391f43",
+                    "name": "#bik_ct_ruin_c",
+                    "secondaryname": "#bik_ct_ruin_lsrs",
                     "assetId": "#hash_12c0d1698d9c3098",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2743,13 +2743,13 @@
         {
             "value": 69,
             "next": 65535,
-            "name": "#hash_442df308ba391f43",
+            "name": "#bik_ct_ruin_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_442df308ba391f43",
+                    "name": "#bik_ct_ruin_lsrs",
                     "assetId": "#hash_3ca4d4c6e24838e1",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2792,14 +2792,14 @@
         {
             "value": 0,
             "next": 65535,
-            "name": "#hash_2cbd8478d2568fd",
+            "name": "#bik_ct_seraph_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2cbd8478d2568fd",
-                    "secondaryname": "#hash_1964c0c13ca2c496",
+                    "name": "#bik_ct_seraph_c",
+                    "secondaryname": "#bik_ct_seraph_lsrs",
                     "assetId": "#hash_57d9ea5c60357e8c",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2842,13 +2842,13 @@
         {
             "value": 63,
             "next": 39,
-            "name": "#hash_1964c0c13ca2c496",
+            "name": "#bik_ct_seraph_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1964c0c13ca2c496",
+                    "name": "#bik_ct_seraph_lsrs",
                     "assetId": "#hash_501a17711ec7bd3d",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2898,7 +2898,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_skirmishcontrol_loadingmovie",
-                    "secondaryname": "#hash_523cdcdb8c03f872",
+                    "secondaryname": "#bik_ct_skirmishcontrol_loadingmovie_c",
                     "assetId": "#hash_3c59e3101d607ce5",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2942,14 +2942,14 @@
         {
             "value": 106,
             "next": 65535,
-            "name": "#hash_523cdcdb8c03f872",
+            "name": "#bik_ct_skirmishcontrol_loadingmovie_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_523cdcdb8c03f872",
-                    "secondaryname": "#hash_14c60724868dce07",
+                    "name": "#bik_ct_skirmishcontrol_loadingmovie_c",
+                    "secondaryname": "#bik_ct_skirmishcontrol_loadingmovie_lsrs",
                     "assetId": "#hash_4810cfb5cf2ac926",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -2992,13 +2992,13 @@
         {
             "value": 11,
             "next": 65535,
-            "name": "#hash_14c60724868dce07",
+            "name": "#bik_ct_skirmishcontrol_loadingmovie_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_14c60724868dce07",
+                    "name": "#bik_ct_skirmishcontrol_loadingmovie_lsrs",
                     "assetId": "#hash_393969d541d2b15b",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -3048,7 +3048,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_skirmishdomination_loadingmovie",
-                    "secondaryname": "#hash_516d032dc87c687d",
+                    "secondaryname": "#bik_ct_skirmishdomination_loadingmovie_c",
                     "assetId": "#hash_6dedff62710bb3f8",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -3092,14 +3092,14 @@
         {
             "value": 23,
             "next": 65535,
-            "name": "#hash_516d032dc87c687d",
+            "name": "#bik_ct_skirmishdomination_loadingmovie_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_516d032dc87c687d",
-                    "secondaryname": "#hash_4e8c3ee9bdc06f16",
+                    "name": "#bik_ct_skirmishdomination_loadingmovie_c",
+                    "secondaryname": "#bik_ct_skirmishdomination_loadingmovie_lsrs",
                     "assetId": "#hash_62175c040053ca55",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -3142,13 +3142,13 @@
         {
             "value": 70,
             "next": 59,
-            "name": "#hash_4e8c3ee9bdc06f16",
+            "name": "#bik_ct_skirmishdomination_loadingmovie_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4e8c3ee9bdc06f16",
+                    "name": "#bik_ct_skirmishdomination_loadingmovie_lsrs",
                     "assetId": "#hash_7e3fca04dbecdfe8",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -3198,7 +3198,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_skirmishfreeforall_loadingmovie",
-                    "secondaryname": "#hash_287bd765352a3b15",
+                    "secondaryname": "#bik_ct_skirmishfreeforall_loadingmovie_c",
                     "assetId": "#hash_12222fb209e0d317",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -3242,14 +3242,14 @@
         {
             "value": 42,
             "next": 65535,
-            "name": "#hash_287bd765352a3b15",
+            "name": "#bik_ct_skirmishfreeforall_loadingmovie_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_287bd765352a3b15",
-                    "secondaryname": "#hash_7e070e6a240d01ee",
+                    "name": "#bik_ct_skirmishfreeforall_loadingmovie_c",
+                    "secondaryname": "#bik_ct_skirmishfreeforall_loadingmovie_lsrs",
                     "assetId": "#hash_5f73ef4fdfecc1b4",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -3292,13 +3292,13 @@
         {
             "value": 66,
             "next": 37,
-            "name": "#hash_7e070e6a240d01ee",
+            "name": "#bik_ct_skirmishfreeforall_loadingmovie_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7e070e6a240d01ee",
+                    "name": "#bik_ct_skirmishfreeforall_loadingmovie_lsrs",
                     "assetId": "#hash_848518165063065",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -3348,7 +3348,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_skirmishhardpoint_loadingmovie",
-                    "secondaryname": "#hash_355775e6af11036e",
+                    "secondaryname": "#bik_ct_skirmishhardpoint_loadingmovie_c",
                     "assetId": "#hash_69228d67a4dedd5d",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -3392,14 +3392,14 @@
         {
             "value": 146,
             "next": 65535,
-            "name": "#hash_355775e6af11036e",
+            "name": "#bik_ct_skirmishhardpoint_loadingmovie_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_355775e6af11036e",
-                    "secondaryname": "#hash_58ccf7065cae9e13",
+                    "name": "#bik_ct_skirmishhardpoint_loadingmovie_c",
+                    "secondaryname": "#bik_ct_skirmishhardpoint_loadingmovie_lsrs",
                     "assetId": "#hash_46eb35d4438760be",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -3440,8 +3440,8 @@
                     "unk178": "#hash_406120808"
                 },
                 {
-                    "name": "#hash_355775e6af11036e",
-                    "secondaryname": "#hash_58ccf7065cae9e13",
+                    "name": "#bik_ct_skirmishhardpoint_loadingmovie_c",
+                    "secondaryname": "#bik_ct_skirmishhardpoint_loadingmovie_lsrs",
                     "assetId": "#hash_4ae18b1d13fd915e",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -3486,13 +3486,13 @@
         {
             "value": 32,
             "next": 91,
-            "name": "#hash_58ccf7065cae9e13",
+            "name": "#bik_ct_skirmishhardpoint_loadingmovie_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_58ccf7065cae9e13",
+                    "name": "#bik_ct_skirmishhardpoint_loadingmovie_lsrs",
                     "assetId": "#hash_6bcdb38df38afd13",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -3794,7 +3794,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_skirmishoutro_ajax",
-                    "secondaryname": "#hash_4799da37095d9e42",
+                    "secondaryname": "#bik_ct_ajax_c",
                     "assetId": "#hash_69f6992a4212ae27",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -3845,7 +3845,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_skirmishoutro_battery",
-                    "secondaryname": "#hash_5b69237ef9d1cbf5",
+                    "secondaryname": "#bik_ct_battery_c",
                     "assetId": "#hash_45839ca30591efd",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -3896,7 +3896,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_skirmishoutro_crash",
-                    "secondaryname": "#hash_44bf969111ff37f",
+                    "secondaryname": "#bik_ct_crash_c",
                     "assetId": "#hash_3cbf0c3aa73338ad",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -3947,7 +3947,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_skirmishoutro_firebreak",
-                    "secondaryname": "#hash_daa30344dfc0797",
+                    "secondaryname": "#bik_ct_firebreak_c",
                     "assetId": "#hash_4ea164d171102791",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -3998,7 +3998,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_skirmishoutro_nomad",
-                    "secondaryname": "#hash_7b367d7aa3e245a3",
+                    "secondaryname": "#bik_ct_nomad_c",
                     "assetId": "#hash_35315907cfafeac9",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -4049,7 +4049,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_skirmishoutro_prophet",
-                    "secondaryname": "#hash_3993cc4754551af2",
+                    "secondaryname": "#bik_ct_prophet_c",
                     "assetId": "#hash_6f37f5f8b3a59f1f",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -4100,7 +4100,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_skirmishoutro_recon",
-                    "secondaryname": "#hash_63025313b3e1b077",
+                    "secondaryname": "#bik_ct_recon_c",
                     "assetId": "#hash_523b19c725bc7c59",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -4151,7 +4151,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_skirmishoutro_ruin",
-                    "secondaryname": "#hash_752f40d629b1de",
+                    "secondaryname": "#bik_ct_ruin_c",
                     "assetId": "#hash_a29348038f2790b",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -4202,7 +4202,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_skirmishoutro_seraph",
-                    "secondaryname": "#hash_2cbd8478d2568fd",
+                    "secondaryname": "#bik_ct_seraph_c",
                     "assetId": "#hash_71e95194b060b92f",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -4253,7 +4253,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_skirmishoutro_torque",
-                    "secondaryname": "#hash_5a430b7f3570e47a",
+                    "secondaryname": "#bik_ct_torque_c",
                     "assetId": "#hash_5ba67e2e387111db",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -4539,14 +4539,14 @@
         {
             "value": 126,
             "next": 126,
-            "name": "#hash_66ee4ac3e85007cc",
+            "name": "#bik_ct_specialist_ajax_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_66ee4ac3e85007cc",
-                    "secondaryname": "#hash_22e57bec7daaa03d",
+                    "name": "#bik_ct_specialist_ajax_c",
+                    "secondaryname": "#bik_ct_specialist_ajax_lsrs",
                     "assetId": "#hash_66caabb8037c5fbb",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -4587,8 +4587,8 @@
                     "unk178": "#hash_406120808"
                 },
                 {
-                    "name": "#hash_66ee4ac3e85007cc",
-                    "secondaryname": "#hash_22e57bec7daaa03d",
+                    "name": "#bik_ct_specialist_ajax_c",
+                    "secondaryname": "#bik_ct_specialist_ajax_lsrs",
                     "assetId": "#hash_371d534b4016ad09",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -4633,13 +4633,13 @@
         {
             "value": 145,
             "next": 65535,
-            "name": "#hash_22e57bec7daaa03d",
+            "name": "#bik_ct_specialist_ajax_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_22e57bec7daaa03d",
+                    "name": "#bik_ct_specialist_ajax_lsrs",
                     "assetId": "#hash_52dd15863decacf2",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -4682,14 +4682,14 @@
         {
             "value": 6,
             "next": 65535,
-            "name": "#hash_6acf6a27a20654f",
+            "name": "#bik_ct_specialist_battery_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6acf6a27a20654f",
-                    "secondaryname": "#hash_1fd6cfadba9a1794",
+                    "name": "#bik_ct_specialist_battery_c",
+                    "secondaryname": "#bik_ct_specialist_battery_lsrs",
                     "assetId": "#hash_41c577c154623b01",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -4732,13 +4732,13 @@
         {
             "value": 128,
             "next": 124,
-            "name": "#hash_1fd6cfadba9a1794",
+            "name": "#bik_ct_specialist_battery_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1fd6cfadba9a1794",
+                    "name": "#bik_ct_specialist_battery_lsrs",
                     "assetId": "#hash_5a6e321db4e79e0c",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -4781,14 +4781,14 @@
         {
             "value": 134,
             "next": 65535,
-            "name": "#hash_781121cee8e0c895",
+            "name": "#bik_ct_specialist_crash_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_781121cee8e0c895",
-                    "secondaryname": "#hash_32412743fde2866e",
+                    "name": "#bik_ct_specialist_crash_c",
+                    "secondaryname": "#bik_ct_specialist_crash_lsrs",
                     "assetId": "#hash_55fd1e35675e6cb9",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -4831,13 +4831,13 @@
         {
             "value": 38,
             "next": 65535,
-            "name": "#hash_32412743fde2866e",
+            "name": "#bik_ct_specialist_crash_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_32412743fde2866e",
+                    "name": "#bik_ct_specialist_crash_lsrs",
                     "assetId": "#hash_79cc7341b6ad0884",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -4880,14 +4880,14 @@
         {
             "value": 39,
             "next": 65535,
-            "name": "#hash_3697284f18c72555",
+            "name": "#bik_ct_specialist_firebreak_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3697284f18c72555",
-                    "secondaryname": "#hash_e65c0bdb3790b2e",
+                    "name": "#bik_ct_specialist_firebreak_c",
+                    "secondaryname": "#bik_ct_specialist_firebreak_lsrs",
                     "assetId": "#hash_15c9dc62596e8411",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -4928,8 +4928,8 @@
                     "unk178": "#hash_406120808"
                 },
                 {
-                    "name": "#hash_3697284f18c72555",
-                    "secondaryname": "#hash_e65c0bdb3790b2e",
+                    "name": "#bik_ct_specialist_firebreak_c",
+                    "secondaryname": "#bik_ct_specialist_firebreak_lsrs",
                     "assetId": "#hash_4b3cd67d96c8cf57",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -4974,13 +4974,13 @@
         {
             "value": 28,
             "next": 93,
-            "name": "#hash_e65c0bdb3790b2e",
+            "name": "#bik_ct_specialist_firebreak_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_e65c0bdb3790b2e",
+                    "name": "#bik_ct_specialist_firebreak_lsrs",
                     "assetId": "#hash_676bc04435da283c",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5023,14 +5023,14 @@
         {
             "value": 1,
             "next": 94,
-            "name": "#hash_724b408f75a54fb5",
+            "name": "#bik_ct_specialist_nomad_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_724b408f75a54fb5",
-                    "secondaryname": "#hash_395cb4fe3661a70e",
+                    "name": "#bik_ct_specialist_nomad_c",
+                    "secondaryname": "#bik_ct_specialist_nomad_lsrs",
                     "assetId": "#hash_7e198d620590df75",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5071,8 +5071,8 @@
                     "unk178": "#hash_406120808"
                 },
                 {
-                    "name": "#hash_724b408f75a54fb5",
-                    "secondaryname": "#hash_395cb4fe3661a70e",
+                    "name": "#bik_ct_specialist_nomad_c",
+                    "secondaryname": "#bik_ct_specialist_nomad_lsrs",
                     "assetId": "#hash_d71027cda021713",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5117,13 +5117,13 @@
         {
             "value": 86,
             "next": 65535,
-            "name": "#hash_395cb4fe3661a70e",
+            "name": "#bik_ct_specialist_nomad_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_395cb4fe3661a70e",
+                    "name": "#bik_ct_specialist_nomad_lsrs",
                     "assetId": "#hash_1ed97bb1d3c6f688",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5166,14 +5166,14 @@
         {
             "value": 97,
             "next": 65535,
-            "name": "#hash_3338a7c6f223d4d4",
+            "name": "#bik_ct_specialist_prophet_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3338a7c6f223d4d4",
-                    "secondaryname": "#hash_77940582c8b497e5",
+                    "name": "#bik_ct_specialist_prophet_c",
+                    "secondaryname": "#bik_ct_specialist_prophet_lsrs",
                     "assetId": "#hash_a8b7dcf0087895",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5216,13 +5216,13 @@
         {
             "value": 84,
             "next": 97,
-            "name": "#hash_77940582c8b497e5",
+            "name": "#bik_ct_specialist_prophet_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_77940582c8b497e5",
+                    "name": "#bik_ct_specialist_prophet_lsrs",
                     "assetId": "#hash_74cc9568d004fc28",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5265,14 +5265,14 @@
         {
             "value": 103,
             "next": 65535,
-            "name": "#hash_5ecda0e7edbe0d81",
+            "name": "#bik_ct_specialist_recon_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5ecda0e7edbe0d81",
-                    "secondaryname": "#hash_5cd43c49cf6cb96a",
+                    "name": "#bik_ct_specialist_recon_c",
+                    "secondaryname": "#bik_ct_specialist_recon_lsrs",
                     "assetId": "#hash_68e93dd0264b06dd",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5315,13 +5315,13 @@
         {
             "value": 138,
             "next": 65535,
-            "name": "#hash_5cd43c49cf6cb96a",
+            "name": "#bik_ct_specialist_recon_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5cd43c49cf6cb96a",
+                    "name": "#bik_ct_specialist_recon_lsrs",
                     "assetId": "#hash_baf7c1632704d50",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5364,14 +5364,14 @@
         {
             "value": 58,
             "next": 65535,
-            "name": "#hash_2f10af5c37b028b4",
+            "name": "#bik_ct_specialist_ruin_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2f10af5c37b028b4",
-                    "secondaryname": "#hash_2194424fa831545",
+                    "name": "#bik_ct_specialist_ruin_c",
+                    "secondaryname": "#bik_ct_specialist_ruin_lsrs",
                     "assetId": "#hash_1ad4dee6c817e39f",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5412,8 +5412,8 @@
                     "unk178": "#hash_406120808"
                 },
                 {
-                    "name": "#hash_2f10af5c37b028b4",
-                    "secondaryname": "#hash_2194424fa831545",
+                    "name": "#bik_ct_specialist_ruin_c",
+                    "secondaryname": "#bik_ct_specialist_ruin_lsrs",
                     "assetId": "#hash_e6643b89cfc5d5",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5458,13 +5458,13 @@
         {
             "value": 122,
             "next": 65535,
-            "name": "#hash_2194424fa831545",
+            "name": "#bik_ct_specialist_ruin_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2194424fa831545",
+                    "name": "#bik_ct_specialist_ruin_lsrs",
                     "assetId": "#hash_4423da0ef1aa8d3e",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5507,14 +5507,14 @@
         {
             "value": 88,
             "next": 102,
-            "name": "#hash_4cde66c2c2b89543",
+            "name": "#bik_ct_specialist_seraph_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4cde66c2c2b89543",
-                    "secondaryname": "#hash_10253b9a61b0e9d8",
+                    "name": "#bik_ct_specialist_seraph_c",
+                    "secondaryname": "#bik_ct_specialist_seraph_lsrs",
                     "assetId": "#hash_6abcec91c810c2b9",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5557,13 +5557,13 @@
         {
             "value": 56,
             "next": 105,
-            "name": "#hash_10253b9a61b0e9d8",
+            "name": "#bik_ct_specialist_seraph_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_10253b9a61b0e9d8",
+                    "name": "#bik_ct_specialist_seraph_lsrs",
                     "assetId": "#hash_d7d2b30017ece84",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5606,14 +5606,14 @@
         {
             "value": 124,
             "next": 65535,
-            "name": "#hash_6fb13a2019b337c0",
+            "name": "#bik_ct_specialist_torque_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6fb13a2019b337c0",
-                    "secondaryname": "#hash_445bb104ac11cbe1",
+                    "name": "#bik_ct_specialist_torque_c",
+                    "secondaryname": "#bik_ct_specialist_torque_lsrs",
                     "assetId": "#hash_22896f657473294f",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5654,8 +5654,8 @@
                     "unk178": "#hash_406120808"
                 },
                 {
-                    "name": "#hash_6fb13a2019b337c0",
-                    "secondaryname": "#hash_445bb104ac11cbe1",
+                    "name": "#bik_ct_specialist_torque_c",
+                    "secondaryname": "#bik_ct_specialist_torque_lsrs",
                     "assetId": "#hash_4c29cc73da424d05",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5700,13 +5700,13 @@
         {
             "value": 49,
             "next": 109,
-            "name": "#hash_445bb104ac11cbe1",
+            "name": "#bik_ct_specialist_torque_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_445bb104ac11cbe1",
+                    "name": "#bik_ct_specialist_torque_lsrs",
                     "assetId": "#hash_2ac13a3ab59d384e",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5749,14 +5749,14 @@
         {
             "value": 33,
             "next": 106,
-            "name": "#hash_5a430b7f3570e47a",
+            "name": "#bik_ct_torque_c",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5a430b7f3570e47a",
-                    "secondaryname": "#hash_20b03d00cf71cd6f",
+                    "name": "#bik_ct_torque_c",
+                    "secondaryname": "#bik_ct_torque_lsrs",
                     "assetId": "#hash_4d239e68c75aae28",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5799,13 +5799,13 @@
         {
             "value": 104,
             "next": 65535,
-            "name": "#hash_20b03d00cf71cd6f",
+            "name": "#bik_ct_torque_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_20b03d00cf71cd6f",
+                    "name": "#bik_ct_torque_lsrs",
                     "assetId": "#hash_190eb401250f9251",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5855,7 +5855,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_tutobattery_loadingmovie",
-                    "secondaryname": "#hash_6acf6a27a20654f",
+                    "secondaryname": "#bik_ct_specialist_battery_c",
                     "assetId": "#hash_56abdc2d3ea275e4",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5906,7 +5906,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_tutocrash_loadingmovie",
-                    "secondaryname": "#hash_781121cee8e0c895",
+                    "secondaryname": "#bik_ct_specialist_crash_c",
                     "assetId": "#hash_64385a8b1bcb0bfc",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -5957,7 +5957,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_tutofirebreak_loadingmovie",
-                    "secondaryname": "#hash_3697284f18c72555",
+                    "secondaryname": "#bik_ct_specialist_firebreak_c",
                     "assetId": "#hash_3886a5719dbe574",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -6008,7 +6008,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_tutonomad_loadingmovie",
-                    "secondaryname": "#hash_724b408f75a54fb5",
+                    "secondaryname": "#bik_ct_specialist_nomad_c",
                     "assetId": "#hash_59e791a5aee1b298",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -6059,7 +6059,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_tutoprophet_loadingmovie",
-                    "secondaryname": "#hash_3338a7c6f223d4d4",
+                    "secondaryname": "#bik_ct_specialist_prophet_c",
                     "assetId": "#hash_7cc53836b1466138",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -6110,7 +6110,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_tutorecon_loadingmovie",
-                    "secondaryname": "#hash_5ecda0e7edbe0d81",
+                    "secondaryname": "#bik_ct_specialist_recon_c",
                     "assetId": "#hash_5eb78aafb3b23ec0",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -6161,7 +6161,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_tutorialajax_loadingmovie",
-                    "secondaryname": "#hash_66ee4ac3e85007cc",
+                    "secondaryname": "#bik_ct_specialist_ajax_c",
                     "assetId": "#hash_24528a7aaf4261c2",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -6212,7 +6212,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_tutoruin_loadingmovie",
-                    "secondaryname": "#hash_2f10af5c37b028b4",
+                    "secondaryname": "#bik_ct_specialist_ruin_c",
                     "assetId": "#hash_3546af80d80adac6",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -6263,7 +6263,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_tutoseraph_loadingmovie",
-                    "secondaryname": "#hash_4cde66c2c2b89543",
+                    "secondaryname": "#bik_ct_specialist_seraph_c",
                     "assetId": "#hash_587a01836ad32dfc",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -6314,7 +6314,7 @@
             "aliases": [
                 {
                     "name": "#bik_ct_tutotorque_loadingmovie",
-                    "secondaryname": "#hash_6fb13a2019b337c0",
+                    "secondaryname": "#bik_ct_specialist_torque_c",
                     "assetId": "#hash_6da00fc5ee118d76",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -6365,7 +6365,7 @@
             "aliases": [
                 {
                     "name": "#bik_intro_c",
-                    "secondaryname": "#hash_162b16c9ac1a82df",
+                    "secondaryname": "#bik_intro_lsrs",
                     "assetId": "#hash_6e06a4b8c765c808",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -6408,13 +6408,13 @@
         {
             "value": 48,
             "next": 65535,
-            "name": "#hash_644205ca526ebade",
+            "name": "#bik_intro_lfe",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_644205ca526ebade",
+                    "name": "#bik_intro_lfe",
                     "assetId": "#hash_2b35da8f424ebe94",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -6457,14 +6457,14 @@
         {
             "value": 139,
             "next": 65535,
-            "name": "#hash_162b16c9ac1a82df",
+            "name": "#bik_intro_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_162b16c9ac1a82df",
-                    "secondaryname": "#hash_644205ca526ebade",
+                    "name": "#bik_intro_lsrs",
+                    "secondaryname": "#bik_intro_lfe",
                     "assetId": "#hash_316781134c0c5eb1",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -6514,7 +6514,7 @@
             "aliases": [
                 {
                     "name": "#bik_outro_c",
-                    "secondaryname": "#hash_49b3f6070d064fc",
+                    "secondaryname": "#bik_outro_lsrs",
                     "assetId": "#hash_73f205df0743a112",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -6557,13 +6557,13 @@
         {
             "value": 132,
             "next": 65535,
-            "name": "#hash_50065cecccd1397f",
+            "name": "#bik_outro_lfe",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_50065cecccd1397f",
+                    "name": "#bik_outro_lfe",
                     "assetId": "#hash_643f923c30de9f4e",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -6606,14 +6606,14 @@
         {
             "value": 148,
             "next": 65535,
-            "name": "#hash_49b3f6070d064fc",
+            "name": "#bik_outro_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_49b3f6070d064fc",
-                    "secondaryname": "#hash_50065cecccd1397f",
+                    "name": "#bik_outro_lsrs",
+                    "secondaryname": "#bik_outro_lfe",
                     "assetId": "#hash_4be8c29a26c054af",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -7008,7 +7008,7 @@
             "aliases": [
                 {
                     "name": "#bik_zm_orange_loadingmovie",
-                    "secondaryname": "#hash_76a8c925927d6e47",
+                    "secondaryname": "#bik_zm_orange_loadingmovie_sfx",
                     "assetId": "#hash_41e8c19c821b5a38",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -7052,13 +7052,13 @@
         {
             "value": 22,
             "next": 129,
-            "name": "#hash_76a8c925927d6e47",
+            "name": "#bik_zm_orange_loadingmovie_sfx",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_76a8c925927d6e47",
+                    "name": "#bik_zm_orange_loadingmovie_sfx",
                     "assetId": "#hash_6e255c9868b3b4da",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -7411,7 +7411,7 @@
             "aliases": [
                 {
                     "name": "#bik_zm_red_loadingmovie_vox",
-                    "secondaryname": "#hash_44ad4c7e4cfde07e",
+                    "secondaryname": "#bik_zm_red_loadingmovie_vox_verb",
                     "assetId": "#hash_1d1b2b826b0408aa",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -7453,7 +7453,7 @@
                 },
                 {
                     "name": "#bik_zm_red_loadingmovie_vox",
-                    "secondaryname": "#hash_44ad4c7e4cfde07e",
+                    "secondaryname": "#bik_zm_red_loadingmovie_vox_verb",
                     "assetId": "#hash_21c96ade80eba230",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -7498,13 +7498,13 @@
         {
             "value": 7,
             "next": 138,
-            "name": "#hash_44ad4c7e4cfde07e",
+            "name": "#bik_zm_red_loadingmovie_vox_verb",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_44ad4c7e4cfde07e",
+                    "name": "#bik_zm_red_loadingmovie_vox_verb",
                     "assetId": "#hash_273f13bec57d6bc9",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -7546,7 +7546,7 @@
                     "unk178": "#hash_406120808"
                 },
                 {
-                    "name": "#hash_44ad4c7e4cfde07e",
+                    "name": "#bik_zm_red_loadingmovie_vox_verb",
                     "assetId": "#hash_5471b4b9ca0ad103",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -8000,7 +8000,7 @@
             "aliases": [
                 {
                     "name": "#bik_zm_white_loadingmovie_c",
-                    "secondaryname": "#hash_1f2a2c5c6c4360ef",
+                    "secondaryname": "#bik_zm_white_loadingmovie_sur",
                     "assetId": "#hash_7f6b87a3ba4d6be1",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",
@@ -8043,13 +8043,13 @@
         {
             "value": 68,
             "next": 128,
-            "name": "#hash_1f2a2c5c6c4360ef",
+            "name": "#bik_zm_white_loadingmovie_sur",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1f2a2c5c6c4360ef",
+                    "name": "#bik_zm_white_loadingmovie_sur",
                     "assetId": "#hash_4fc54e600b85c56c",
                     "assetFileNameSustain": "#core_bootstrap.en",
                     "assetIdRelease": "#core_bootstrap.en",

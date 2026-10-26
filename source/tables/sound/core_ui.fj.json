@@ -9,13 +9,13 @@
         {
             "value": 1,
             "next": 65535,
-            "name": "#hash_407047292ca9d783",
+            "name": "#fly_emote_exotic_homunculus_vox_exert",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_407047292ca9d783",
+                    "name": "#fly_emote_exotic_homunculus_vox_exert",
                     "assetId": "#hash_5a7e8bb4223a76f",
                     "assetFileNameSustain": "#core_ui.fj",
                     "assetIdRelease": "#core_ui.fj",
@@ -54,7 +54,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_407047292ca9d783",
+                    "name": "#fly_emote_exotic_homunculus_vox_exert",
                     "assetId": "#hash_9df3f93b30ed8ca",
                     "assetFileNameSustain": "#core_ui.fj",
                     "assetIdRelease": "#core_ui.fj",
@@ -93,7 +93,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_407047292ca9d783",
+                    "name": "#fly_emote_exotic_homunculus_vox_exert",
                     "assetId": "#hash_216598f3ec671e5d",
                     "assetFileNameSustain": "#core_ui.fj",
                     "assetIdRelease": "#core_ui.fj",
@@ -132,7 +132,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_407047292ca9d783",
+                    "name": "#fly_emote_exotic_homunculus_vox_exert",
                     "assetId": "#hash_3ad6ef2cb8976e0",
                     "assetFileNameSustain": "#core_ui.fj",
                     "assetIdRelease": "#core_ui.fj",
@@ -171,7 +171,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_407047292ca9d783",
+                    "name": "#fly_emote_exotic_homunculus_vox_exert",
                     "assetId": "#hash_40a87bc523468e73",
                     "assetFileNameSustain": "#core_ui.fj",
                     "assetIdRelease": "#core_ui.fj",
@@ -210,7 +210,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_407047292ca9d783",
+                    "name": "#fly_emote_exotic_homunculus_vox_exert",
                     "assetId": "#hash_1074c0f257aa8c0e",
                     "assetFileNameSustain": "#core_ui.fj",
                     "assetIdRelease": "#core_ui.fj",
@@ -249,7 +249,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_407047292ca9d783",
+                    "name": "#fly_emote_exotic_homunculus_vox_exert",
                     "assetId": "#hash_ec84ff3c00c3d01",
                     "assetFileNameSustain": "#core_ui.fj",
                     "assetIdRelease": "#core_ui.fj",
@@ -288,7 +288,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_407047292ca9d783",
+                    "name": "#fly_emote_exotic_homunculus_vox_exert",
                     "assetId": "#hash_684ccf4b417d81b4",
                     "assetFileNameSustain": "#core_ui.fj",
                     "assetIdRelease": "#core_ui.fj",
@@ -331,13 +331,13 @@
         {
             "value": 0,
             "next": 65535,
-            "name": "#hash_45057bc59b2ad1da",
+            "name": "#fly_emote_exotic_homunculus_vox_scream",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_45057bc59b2ad1da",
+                    "name": "#fly_emote_exotic_homunculus_vox_scream",
                     "assetId": "#hash_55c9f0405d0a783f",
                     "assetFileNameSustain": "#core_ui.fj",
                     "assetIdRelease": "#core_ui.fj",
@@ -376,7 +376,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_45057bc59b2ad1da",
+                    "name": "#fly_emote_exotic_homunculus_vox_scream",
                     "assetId": "#hash_2d96b0f7ab96af02",
                     "assetFileNameSustain": "#core_ui.fj",
                     "assetIdRelease": "#core_ui.fj",
@@ -415,7 +415,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_45057bc59b2ad1da",
+                    "name": "#fly_emote_exotic_homunculus_vox_scream",
                     "assetId": "#hash_5fac9cdc0d650b07",
                     "assetFileNameSustain": "#core_ui.fj",
                     "assetIdRelease": "#core_ui.fj",
@@ -454,7 +454,7 @@
                     "unk178": "#hash_16000a0102"
                 },
                 {
-                    "name": "#hash_45057bc59b2ad1da",
+                    "name": "#fly_emote_exotic_homunculus_vox_scream",
                     "assetId": "#hash_707c237788f39698",
                     "assetFileNameSustain": "#core_ui.fj",
                     "assetIdRelease": "#core_ui.fj",

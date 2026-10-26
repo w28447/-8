@@ -21,7 +21,7 @@ CoD.ZM_Tutorial_Certificate.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	self.Backer = Backer
 	
 	local Certificate = LUI.UIImage.new( 0.5, 0.5, -960, 960, 0.5, 0.5, -540, 540 )
-	Certificate:setImage( RegisterImage( 0x13BB7FBDE140EE1 ) )
+	Certificate:setImage( RegisterImage( "uie_t8_zm_certificate" ) )
 	self:addElement( Certificate )
 	self.Certificate = Certificate
 	

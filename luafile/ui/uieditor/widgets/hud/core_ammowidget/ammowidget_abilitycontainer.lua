@@ -35,7 +35,7 @@ CoD.AmmoWidget_AbilityContainer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local EquipmentBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 44 )
 	EquipmentBacking:setRGB( 0, 0, 0 )
 	EquipmentBacking:setAlpha( 0 )
-	EquipmentBacking:setImage( RegisterImage( 0x3D9FA23761E74CB ) )
+	EquipmentBacking:setImage( RegisterImage( "uie_hud_common_core_equip_backing" ) )
 	EquipmentBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_nineslice_normal" ) )
 	EquipmentBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	EquipmentBacking:setupNineSliceShader( 46, 22 )

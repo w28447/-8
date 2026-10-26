@@ -176,7 +176,7 @@ function function_bfd25720( localclientnum )
         
         foreach ( v_pa in a_v_pa )
         {
-            playsound( localclientnum, #"hash_5e4a6db5676d1cbd", v_pa );
+            playsound( localclientnum, #"vox_rupa_pa_broadcast", v_pa );
         }
     }
 }

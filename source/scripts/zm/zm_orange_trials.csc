@@ -30,7 +30,7 @@ function function_8532d13f( localclientnum, oldval, newval, bnewent, binitialsna
     {
         self util::waittill_dobj( localclientnum );
         self.buff_fx = util::playfxontag( localclientnum, level._effect[ #"hash_69e92b9c52f7fe12" ], self, "tag_origin" );
-        self.var_573d289 = self playloopsound( #"hash_218e114cfa2b9a4" );
+        self.var_573d289 = self playloopsound( #"zmb_vessel_stage_1" );
         return;
     }
     

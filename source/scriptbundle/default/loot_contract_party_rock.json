@@ -1,12 +1,12 @@
 {
-    "contracticon": "image#hash_122aa7239d32261e",
+    "contracticon": "image#loot03_ui_icon_blackmarket_contracts_saug_partyrock",
     "relateditemname": "localized17#weapon/smg_handling_t8",
     "contracttitle": "localized17#hash_1c07c87a45375aaf",
     "name": "loot_contract_party_rock",
     "hash_69b5a265": "core_frontend_smg_handling_party_rock",
-    "hash_2f384027de380f64:hash_4b258f2c": "image#hash_2f384027de380f64",
+    "loot03_ui_icon_blackmarket_contracts_saug_partyrock_tall:hash_4b258f2c": "image#loot03_ui_icon_blackmarket_contracts_saug_partyrock_tall",
     "contractdescription": "localized17#hash_7e40f1e9f5f5b22",
     "white": "#white",
-    "hash_2f384027de380f64:hash_1c057e8c": "image#hash_2f384027de380f64",
+    "loot03_ui_icon_blackmarket_contracts_saug_partyrock_tall:hash_1c057e8c": "image#loot03_ui_icon_blackmarket_contracts_saug_partyrock_tall",
     "hash_3dab7c3f83b698e0:hash_e08fc162": "localized17#hash_3dab7c3f83b698e0"
 }

@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_hiphop_ruin",
+    "type": "#tag",
+    "material": "#hash_711ea99e4562a375",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_38df1a8950ecc998",
+        "icon": "image#loot_ui_icon_tags_hiphop_ruin",
+        "isdefault": 0
+    }
+}

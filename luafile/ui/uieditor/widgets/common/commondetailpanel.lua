@@ -23,7 +23,7 @@ CoD.CommonDetailPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	local BackingNoise = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BackingNoise:setAlpha( 0.5 )
 	BackingNoise:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	BackingNoise:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	BackingNoise:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	BackingNoise:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingNoise:setupNineSliceShader( 196, 88 )
 	self:addElement( BackingNoise )
@@ -31,7 +31,7 @@ CoD.CommonDetailPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local HeaderStripe3 = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, -17, -1 )
 	HeaderStripe3:setImage( RegisterImage( 0xC7A051F5EFC70E5 ) )
-	HeaderStripe3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	HeaderStripe3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	HeaderStripe3:setShaderVector( 0, 0, 0, 0, 0 )
 	HeaderStripe3:setupNineSliceShader( 90, 16 )
 	self:addElement( HeaderStripe3 )
@@ -39,7 +39,7 @@ CoD.CommonDetailPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local HeaderStripe2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, -17, -1 )
 	HeaderStripe2:setImage( RegisterImage( 0xC7A051F5EFC70E5 ) )
-	HeaderStripe2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	HeaderStripe2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	HeaderStripe2:setShaderVector( 0, 0, 0, 0, 0 )
 	HeaderStripe2:setupNineSliceShader( 90, 16 )
 	self:addElement( HeaderStripe2 )
@@ -47,7 +47,7 @@ CoD.CommonDetailPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local HeaderStripe1 = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, -17, -1 )
 	HeaderStripe1:setImage( RegisterImage( 0xC7A051F5EFC70E5 ) )
-	HeaderStripe1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	HeaderStripe1:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	HeaderStripe1:setShaderVector( 0, 0, 0, 0, 0 )
 	HeaderStripe1:setupNineSliceShader( 90, 16 )
 	self:addElement( HeaderStripe1 )
@@ -55,7 +55,7 @@ CoD.CommonDetailPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local FooterStripe3 = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, 0, 16 )
 	FooterStripe3:setImage( RegisterImage( 0xC7A051F5EFC70E5 ) )
-	FooterStripe3:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	FooterStripe3:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	FooterStripe3:setShaderVector( 0, 0, 0, 0, 0 )
 	FooterStripe3:setupNineSliceShader( 90, 16 )
 	self:addElement( FooterStripe3 )
@@ -63,7 +63,7 @@ CoD.CommonDetailPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local FooterStripe2 = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, 1, 17 )
 	FooterStripe2:setImage( RegisterImage( 0xC7A051F5EFC70E5 ) )
-	FooterStripe2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	FooterStripe2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	FooterStripe2:setShaderVector( 0, 0, 0, 0, 0 )
 	FooterStripe2:setupNineSliceShader( 90, 16 )
 	self:addElement( FooterStripe2 )
@@ -71,7 +71,7 @@ CoD.CommonDetailPanel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local FooterStripe1 = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, 0, 16 )
 	FooterStripe1:setImage( RegisterImage( 0xC7A051F5EFC70E5 ) )
-	FooterStripe1:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	FooterStripe1:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	FooterStripe1:setShaderVector( 0, 0, 0, 0, 0 )
 	FooterStripe1:setupNineSliceShader( 90, 16 )
 	self:addElement( FooterStripe1 )

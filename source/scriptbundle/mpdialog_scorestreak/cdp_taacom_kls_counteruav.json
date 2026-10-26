@@ -5,6 +5,6 @@
     "type": "mpdialog_scorestreak",
     "vmtype": "both",
     "name": "cdp_taacom_kls_counteruav",
-    "timeout": "#hash_52ed00c18f5ef467",
+    "timeout": "#vox_mta1_ult_cuav_time_00",
     "hacked": "#vox_mta1_icepick_cuav_steal"
 }

@@ -1220,7 +1220,7 @@ function function_ac9a3646()
 {
     playsoundatposition( #"evt_flinger_start", self.origin );
     e_snd = spawn( "script_origin", self.origin );
-    e_snd playsound( #"hash_5913634c5007a95" );
+    e_snd playsound( #"evt_flinger_tension" );
     self waittill( #"launcher_activated", #"hash_1a5c6352ea49c8ff" );
     playsoundatposition( #"evt_flinger_cancel", self.origin );
     e_snd stopsounds();

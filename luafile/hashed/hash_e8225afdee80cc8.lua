@@ -9,7 +9,7 @@ CoD.HealthBarWidgetZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	
 	local HealthBackground = LUI.UIImage.new( 0.5, 0.5, -76, 76, 0, 0, 0, 12 )
 	HealthBackground:setRGB( 0.37, 0.4, 0.44 )
-	HealthBackground:setImage( RegisterImage( 0x75CDE8BCCBD6F24 ) )
+	HealthBackground:setImage( RegisterImage( "uie_hud_core_player_healthbar_empty" ) )
 	HealthBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0xBEEFD90021D3628 ) )
 	HealthBackground:setShaderVector( 0, 0, 0, 0, 0 )
 	HealthBackground:setShaderVector( 1, 4, 1, 0, 0 )

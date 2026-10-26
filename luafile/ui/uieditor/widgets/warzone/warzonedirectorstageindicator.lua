@@ -67,7 +67,7 @@ CoD.WarzoneDirectorStageIndicator.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.Stage3 = Stage3
 	
 	local Stage4 = CoD.WarzoneDirectorStagesPulsing.new( f1_arg0, f1_arg1, 0, 0, 2, 528, 0, 0, 46.5, 70.5 )
-	Stage4:setRFTMaterial( LUI.UIImage.GetCachedMaterial( 0x1DE43899593E67E ) )
+	Stage4:setRFTMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_rft_add" ) )
 	Stage4:setShaderVector( 0, 0, 1, 0, 0 )
 	Stage4:setShaderVector( 1, 1, 1, 1, 0 )
 	Stage4:setShaderVector( 2, 0, 1, 0, 0 )

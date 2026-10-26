@@ -1,13 +1,13 @@
 {
-    "destroyed": "#hash_139c4ac30e753ff6",
-    "damageevaded": "#hash_7a1ddcfe4f48554",
+    "destroyed": "#vox_bsp1_ult_overwatch_sniper_down_all",
+    "damageevaded": "#vox_bsp1_ult_overwatch_flare_launch",
     "configstringfiletype": "scriptbundle",
     "type": "mpdialog_scorestreak",
-    "damaged": "#hash_41418cfaef2f5c92",
+    "damaged": "#vox_bsp1_ult_overwatch_dmg",
     "vmtype": "both",
-    "timecheck": "#hash_55a3c4cead539d5d",
+    "timecheck": "#vox_bsp1_ult_overwatch_time_50",
     "name": "blops_pilot1_kls_overwatch_helicopter",
-    "arrive": "#hash_2c7e5f5f980289b9",
-    "timeout": "#hash_5592a6cead44f730",
-    "weapondestroyed": "#hash_57cc5b19c260e7ee"
+    "arrive": "#vox_bsp1_ult_overwatch_arrive",
+    "timeout": "#vox_bsp1_ult_overwatch_time_00",
+    "weapondestroyed": "#vox_bsp1_ult_overwatch_sniper_down"
 }

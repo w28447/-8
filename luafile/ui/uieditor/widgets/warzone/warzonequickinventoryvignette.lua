@@ -12,7 +12,7 @@ CoD.WarzoneQuickInventoryVignette.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	GridTiled:setAlpha( 0 )
 	GridTiled:setScale( 0.7, 0.7 )
 	GridTiled:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_qe_grid" ) )
-	GridTiled:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	GridTiled:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	GridTiled:setShaderVector( 0, 0, 0, 0, 0 )
 	GridTiled:setupNineSliceShader( 64, 64 )
 	self:addElement( GridTiled )

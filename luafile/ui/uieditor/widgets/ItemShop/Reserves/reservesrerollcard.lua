@@ -8,7 +8,7 @@ CoD.ReservesRerollCard.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.soundSet = "default"
 	
 	local CardReroll = LUI.UIImage.new( 0.5, 0.5, -176, 176, 0.5, 0.5, -336, 336 )
-	CardReroll:setImage( RegisterImage( 0xD8F8FCB06C30D6F ) )
+	CardReroll:setImage( RegisterImage( "uie_ui_menu_mtx_card_wrapper_reroll" ) )
 	self:addElement( CardReroll )
 	self.CardReroll = CardReroll
 	

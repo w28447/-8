@@ -27,7 +27,7 @@ CoD.ArmorBarWZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4, f1_
 	local ArmorBackground = LUI.UIImage.new( 0, 1, 0, 0, 0.5, 0.5, -3, 3 )
 	ArmorBackground:setRGB( 0.07, 0.07, 0.07 )
 	ArmorBackground:setAlpha( 0.6 )
-	ArmorBackground:setImage( RegisterImage( 0x75CDE8BCCBD6F24 ) )
+	ArmorBackground:setImage( RegisterImage( "uie_hud_core_player_healthbar_empty" ) )
 	ArmorBackground:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7E89392B94A41DE ) )
 	ArmorBackground:setShaderVector( 0, 0, 0, 0, 0 )
 	ArmorBackground:setShaderVector( 2, 0, 1, 0, 1 )

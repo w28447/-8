@@ -174,13 +174,13 @@ CoD.InGameTrialsRulesBackgroundTall.__clipsPerState = {
 			f14_arg0.Silver.BackgroundTall:completeAnimation()
 			f14_arg0.Silver.Medal:completeAnimation()
 			f14_arg0.Silver.BackgroundTall:setImage( RegisterImage( 0x4230D3A2AA576B2 ) )
-			f14_arg0.Silver.Medal:setImage( RegisterImage( 0xFD6B3DF8A0BA964 ) )
+			f14_arg0.Silver.Medal:setImage( RegisterImage( "trial_medal_diamond" ) )
 			f14_arg0.clipFinished( f14_arg0.Silver )
 			f14_arg0.Gold:completeAnimation()
 			f14_arg0.Gold.BackgroundTall:completeAnimation()
 			f14_arg0.Gold.Medal:completeAnimation()
 			f14_arg0.Gold.BackgroundTall:setImage( RegisterImage( 0xC026AC93C711B7D ) )
-			f14_arg0.Gold.Medal:setImage( RegisterImage( 0x8F9261A2CAA7739 ) )
+			f14_arg0.Gold.Medal:setImage( RegisterImage( "trial_medal_darkmatter" ) )
 			f14_arg0.clipFinished( f14_arg0.Gold )
 		end
 	}

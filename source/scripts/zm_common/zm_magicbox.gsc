@@ -2295,7 +2295,7 @@ function treasure_chest_weapon_spawn( chest, player, respin )
     
     if ( !move_the_box && rand === getweapon( #"homunculus" ) )
     {
-        self thread zm_vo::vo_say( #"hash_770c96a35322e11d", 0, 0, 0, 1 );
+        self thread zm_vo::vo_say( #"vox_homun_raise_homu", 0, 0, 0, 1 );
     }
     
     if ( isdefined( level.func_magicbox_weapon_spawned ) )
@@ -2797,7 +2797,7 @@ function give_offhand_weapon( weapon )
     {
         if ( self gadgetpowerget( 1 ) === 100 )
         {
-            self playsoundtoplayer( #"hash_5069ed8fdae493ce", self );
+            self playsoundtoplayer( #"uin_zmb_equipment_ready", self );
         }
     }
     

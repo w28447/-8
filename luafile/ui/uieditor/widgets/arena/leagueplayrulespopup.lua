@@ -55,7 +55,7 @@ CoD.LeaguePlayRulesPopup.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local CenterTiledBacking = LUI.UIImage.new( 0.5, 0.5, -500, 500, 0.5, 0.5, -430, 430 )
 	CenterTiledBacking:setAlpha( 0.25 )
 	CenterTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	CenterTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	CenterTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	CenterTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	CenterTiledBacking:setupNineSliceShader( 196, 88 )
 	self:addElement( CenterTiledBacking )

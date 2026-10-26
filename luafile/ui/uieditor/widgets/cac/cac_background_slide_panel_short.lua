@@ -43,7 +43,7 @@ CoD.cac_background_slide_panel_short.new = function ( f1_arg0, f1_arg1, f1_arg2,
 	GrainBGPattern:setAlpha( 0.25 )
 	GrainBGPattern:setZoom( 2 )
 	GrainBGPattern:setImage( RegisterImage( "uie_ui_menu_cac_grain_pattern_bg" ) )
-	GrainBGPattern:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	GrainBGPattern:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	GrainBGPattern:setShaderVector( 0, 0, 0, 0, 0 )
 	GrainBGPattern:setupNineSliceShader( 256, 256 )
 	self:addElement( GrainBGPattern )

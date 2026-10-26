@@ -148,8 +148,8 @@ function function_124362b5( is_powered )
                     }
                 }
                 
-                var_a8d69fbd playsound( #"hash_3a18ced95ae72103" );
-                var_a8d69fbd playloopsound( #"hash_3a1bb2d95ae92746" );
+                var_a8d69fbd playsound( #"zmb_papquest_powerbox_on" );
+                var_a8d69fbd playloopsound( #"zmb_papquest_powerbox_lp" );
                 var_a8d69fbd notify( #"hash_7f8e7011812dff48" );
                 wait 2;
                 e_player = zm_utility::get_closest_player( var_a8d69fbd.origin );
@@ -187,7 +187,7 @@ function private function_26cff57( a_ents )
     {
         s_lightning_bridge = struct::get( "lightning_bridge" );
         level clientfield::increment( "" + #"lightning_far" );
-        playsoundatposition( #"hash_7804a63a2ff82145", s_lightning_bridge.origin );
+        playsoundatposition( #"zmb_papquest_lightning_far", s_lightning_bridge.origin );
         a_ents[ #"pap" ] waittill( #"fade_in_end" );
         s_lightning_near = struct::get( "lightning_near" );
         wait 1;
@@ -228,11 +228,11 @@ function private function_59093304( str_zone, var_e07ad59f = 0 )
     if ( var_e07ad59f )
     {
         s_lightning_near = struct::get( "lightning_near" );
-        playsoundatposition( #"hash_6c4553b9c8847808", s_lightning_near.origin );
+        playsoundatposition( #"zmb_papquest_lightning_close", s_lightning_near.origin );
     }
     else
     {
-        playsoundatposition( #"hash_6c4553b9c8847808", self.origin );
+        playsoundatposition( #"zmb_papquest_lightning_close", self.origin );
     }
     
     self waittill( #"fade_in_end" );
@@ -281,7 +281,7 @@ function private function_25adf2e0( str_zone, var_410775ce )
     self waittill( #"fade_in_start" );
     self show();
     self clientfield::increment( "" + #"lightning_near" );
-    playsoundatposition( #"hash_6c4553b9c8847808", self.origin );
+    playsoundatposition( #"zmb_papquest_lightning_close", self.origin );
     self waittill( #"debris_appear" );
     pap_debris( 1, str_zone );
     level notify( var_410775ce );

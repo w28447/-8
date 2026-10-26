@@ -123,7 +123,7 @@ function function_bb4b8cd2( localclientnum, oldval, newval, bnewent, binitialsna
         if ( isdefined( self ) )
         {
             self thread postfx::playpostfxbundle( #"hash_37d0c10f478e0376" );
-            playsound( localclientnum, #"hash_50a56f17fc412b92", ( 0, 0, 0 ) );
+            playsound( localclientnum, #"evt_ee_lake_jumpscare", ( 0, 0, 0 ) );
             waitframe( 1 );
         }
         
@@ -202,7 +202,7 @@ function function_87d68f99( localclientnum, oldval, newval, bnewent, binitialsna
     if ( newval )
     {
         self thread postfx::playpostfxbundle( #"hash_37d0c00f478e01c3" );
-        playsound( localclientnum, #"hash_750bc40787e0e29f", ( 0, 0, 0 ) );
+        playsound( localclientnum, #"evt_ee_lake_jumpscare_2", ( 0, 0, 0 ) );
         waitframe( 1 );
         
         if ( isdefined( self.var_fcf96ca0 ) )

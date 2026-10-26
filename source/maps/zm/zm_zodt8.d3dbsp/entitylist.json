@@ -3281,7 +3281,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_66f9b077af59a2b4",
+                    "value": "#amb_door_open_elegant",
                     "unk1a": true
                 },
                 {
@@ -3374,7 +3374,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_66f9b077af59a2b4",
+                    "value": "#amb_door_open_elegant",
                     "unk1a": true
                 },
                 {
@@ -3467,7 +3467,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_66f9b077af59a2b4",
+                    "value": "#amb_door_open_elegant",
                     "unk1a": true
                 },
                 {
@@ -3561,7 +3561,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_66f9b077af59a2b4",
+                    "value": "#amb_door_open_elegant",
                     "unk1a": true
                 },
                 {
@@ -3829,7 +3829,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_66f9b077af59a2b4",
+                    "value": "#amb_door_open_elegant",
                     "unk1a": true
                 },
                 {
@@ -3923,7 +3923,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_66f9b077af59a2b4",
+                    "value": "#amb_door_open_elegant",
                     "unk1a": true
                 },
                 {
@@ -4004,7 +4004,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_34f21429e16734f4",
+                    "value": "#amb_door_open_sliding",
                     "unk1a": true
                 },
                 {
@@ -4075,7 +4075,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_34f21429e16734f4",
+                    "value": "#amb_door_open_sliding",
                     "unk1a": true
                 },
                 {
@@ -4322,7 +4322,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3419f8b83fae65ac",
+                    "value": "#amb_door_open_bulkhead",
                     "unk1a": true
                 },
                 {
@@ -4531,7 +4531,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3419f8b83fae65ac",
+                    "value": "#amb_door_open_bulkhead",
                     "unk1a": true
                 },
                 {
@@ -4625,7 +4625,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3419f8b83fae65ac",
+                    "value": "#amb_door_open_bulkhead",
                     "unk1a": true
                 },
                 {
@@ -4719,7 +4719,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3419f8b83fae65ac",
+                    "value": "#amb_door_open_bulkhead",
                     "unk1a": true
                 },
                 {
@@ -4813,7 +4813,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3419f8b83fae65ac",
+                    "value": "#amb_door_open_bulkhead",
                     "unk1a": true
                 },
                 {
@@ -4907,7 +4907,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3419f8b83fae65ac",
+                    "value": "#amb_door_open_bulkhead",
                     "unk1a": true
                 },
                 {
@@ -5000,7 +5000,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_6a5e0d24e28a2c01",
+                    "value": "#amb_door_open_creaky",
                     "unk1a": true
                 },
                 {
@@ -5094,7 +5094,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_6a5e0d24e28a2c01",
+                    "value": "#amb_door_open_creaky",
                     "unk1a": true
                 },
                 {
@@ -5188,7 +5188,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_6a5e0d24e28a2c01",
+                    "value": "#amb_door_open_creaky",
                     "unk1a": true
                 },
                 {
@@ -5282,7 +5282,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_6a5e0d24e28a2c01",
+                    "value": "#amb_door_open_creaky",
                     "unk1a": true
                 },
                 {
@@ -5376,7 +5376,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3419f8b83fae65ac",
+                    "value": "#amb_door_open_bulkhead",
                     "unk1a": true
                 },
                 {
@@ -6521,7 +6521,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_6a5e0d24e28a2c01",
+                    "value": "#amb_door_open_creaky",
                     "unk1a": true
                 },
                 {
@@ -6615,7 +6615,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_6a5e0d24e28a2c01",
+                    "value": "#amb_door_open_creaky",
                     "unk1a": true
                 },
                 {
@@ -6709,7 +6709,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_6a5e0d24e28a2c01",
+                    "value": "#amb_door_open_creaky",
                     "unk1a": true
                 },
                 {
@@ -6803,7 +6803,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_6a5e0d24e28a2c01",
+                    "value": "#amb_door_open_creaky",
                     "unk1a": true
                 },
                 {
@@ -93353,7 +93353,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_f005a406d53a391",
+                    "value": "#amb_sea_on_ship_right",
                     "unk1a": true
                 },
                 {
@@ -93467,7 +93467,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3125041eb90074ac",
+                    "value": "#amb_sea_on_ship",
                     "unk1a": true
                 },
                 {
@@ -93581,7 +93581,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_f005a406d53a391",
+                    "value": "#amb_sea_on_ship_right",
                     "unk1a": true
                 },
                 {
@@ -93695,7 +93695,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3125041eb90074ac",
+                    "value": "#amb_sea_on_ship",
                     "unk1a": true
                 },
                 {
@@ -95405,7 +95405,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -95471,7 +95471,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -95537,7 +95537,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -95603,7 +95603,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -95669,7 +95669,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -95735,7 +95735,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -95801,7 +95801,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -95867,7 +95867,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -95933,7 +95933,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -95999,7 +95999,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -96065,7 +96065,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -96131,7 +96131,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -96197,7 +96197,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -96263,7 +96263,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -96329,7 +96329,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -96395,7 +96395,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -96461,7 +96461,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -96527,7 +96527,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -96593,7 +96593,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -96659,7 +96659,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_29e5626bb274d8ce",
+                    "value": "#amb_engine_room_stairwell",
                     "unk1a": true
                 },
                 {
@@ -96725,7 +96725,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -96791,7 +96791,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -96857,7 +96857,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -96923,7 +96923,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -96989,7 +96989,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -97055,7 +97055,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -97121,7 +97121,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -97187,7 +97187,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -99575,7 +99575,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_4fa6f12a2247af99",
+                    "value": "#amb_wall_breathing",
                     "unk1a": true
                 },
                 {
@@ -99773,7 +99773,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3ca0e5c3b3bcda60",
+                    "value": "#amb_hall_heartbeat",
                     "unk1a": true
                 },
                 {
@@ -99833,7 +99833,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_2807a625092d9fef",
+                    "value": "#amb_floor_monster",
                     "unk1a": true
                 },
                 {
@@ -99911,7 +99911,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_354b6354d4383ece",
+                    "value": "#amb_right_deck_torture",
                     "unk1a": true
                 },
                 {
@@ -100114,7 +100114,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -100190,7 +100190,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -100266,7 +100266,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -100342,7 +100342,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -100418,7 +100418,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -100494,7 +100494,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -100570,7 +100570,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -100646,7 +100646,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -100722,7 +100722,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -100798,7 +100798,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -100874,7 +100874,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -100950,7 +100950,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -101026,7 +101026,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -101102,7 +101102,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -101178,7 +101178,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -101254,7 +101254,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -101330,7 +101330,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -101406,7 +101406,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -101482,7 +101482,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -101558,7 +101558,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -101634,7 +101634,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -101710,7 +101710,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -101786,7 +101786,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -101862,7 +101862,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -101938,7 +101938,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -102014,7 +102014,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -102090,7 +102090,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -102166,7 +102166,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -102242,7 +102242,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -102318,7 +102318,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -102394,7 +102394,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -102470,7 +102470,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -102546,7 +102546,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -102622,7 +102622,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -102698,7 +102698,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -102774,7 +102774,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -102850,7 +102850,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -102926,7 +102926,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -103002,7 +103002,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -103078,7 +103078,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -103154,7 +103154,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_38a0dbfce6714429",
+                    "value": "#zmb_waterdrain_water_lp",
                     "unk1a": true
                 },
                 {
@@ -103225,7 +103225,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3bc6c3bd34bf91b8",
+                    "value": "#amb_outdoor_blend_doorway",
                     "unk1a": true
                 },
                 {
@@ -113034,7 +113034,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_66f9b077af59a2b4",
+                    "value": "#amb_door_open_elegant",
                     "unk1a": true
                 },
                 {
@@ -113157,7 +113157,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_66f9b077af59a2b4",
+                    "value": "#amb_door_open_elegant",
                     "unk1a": true
                 },
                 {
@@ -113280,7 +113280,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_66f9b077af59a2b4",
+                    "value": "#amb_door_open_elegant",
                     "unk1a": true
                 },
                 {
@@ -113403,7 +113403,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_66f9b077af59a2b4",
+                    "value": "#amb_door_open_elegant",
                     "unk1a": true
                 },
                 {
@@ -113642,7 +113642,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_66f9b077af59a2b4",
+                    "value": "#amb_door_open_elegant",
                     "unk1a": true
                 },
                 {
@@ -113765,7 +113765,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_66f9b077af59a2b4",
+                    "value": "#amb_door_open_elegant",
                     "unk1a": true
                 },
                 {
@@ -113883,7 +113883,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_34f21429e16734f4",
+                    "value": "#amb_door_open_sliding",
                     "unk1a": true
                 },
                 {
@@ -114006,7 +114006,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_34f21429e16734f4",
+                    "value": "#amb_door_open_sliding",
                     "unk1a": true
                 },
                 {
@@ -114369,7 +114369,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3419f8b83fae65ac",
+                    "value": "#amb_door_open_bulkhead",
                     "unk1a": true
                 },
                 {
@@ -114493,7 +114493,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3419f8b83fae65ac",
+                    "value": "#amb_door_open_bulkhead",
                     "unk1a": true
                 },
                 {
@@ -115084,7 +115084,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3419f8b83fae65ac",
+                    "value": "#amb_door_open_bulkhead",
                     "unk1a": true
                 },
                 {
@@ -115208,7 +115208,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3419f8b83fae65ac",
+                    "value": "#amb_door_open_bulkhead",
                     "unk1a": true
                 },
                 {
@@ -115332,7 +115332,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3419f8b83fae65ac",
+                    "value": "#amb_door_open_bulkhead",
                     "unk1a": true
                 },
                 {
@@ -115455,7 +115455,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_6a5e0d24e28a2c01",
+                    "value": "#amb_door_open_creaky",
                     "unk1a": true
                 },
                 {
@@ -115578,7 +115578,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_6a5e0d24e28a2c01",
+                    "value": "#amb_door_open_creaky",
                     "unk1a": true
                 },
                 {
@@ -115701,7 +115701,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3419f8b83fae65ac",
+                    "value": "#amb_door_open_bulkhead",
                     "unk1a": true
                 },
                 {
@@ -116878,7 +116878,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_6a5e0d24e28a2c01",
+                    "value": "#amb_door_open_creaky",
                     "unk1a": true
                 },
                 {
@@ -117001,7 +117001,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_6a5e0d24e28a2c01",
+                    "value": "#amb_door_open_creaky",
                     "unk1a": true
                 },
                 {
@@ -131294,7 +131294,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_66f9b077af59a2b4",
+                    "value": "#amb_door_open_elegant",
                     "unk1a": true
                 },
                 {
@@ -131393,7 +131393,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_66f9b077af59a2b4",
+                    "value": "#amb_door_open_elegant",
                     "unk1a": true
                 },
                 {
@@ -131585,7 +131585,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_66f9b077af59a2b4",
+                    "value": "#amb_door_open_elegant",
                     "unk1a": true
                 },
                 {
@@ -131684,7 +131684,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_34f21429e16734f4",
+                    "value": "#amb_door_open_sliding",
                     "unk1a": true
                 },
                 {
@@ -131876,7 +131876,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3419f8b83fae65ac",
+                    "value": "#amb_door_open_bulkhead",
                     "unk1a": true
                 },
                 {
@@ -132161,7 +132161,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3419f8b83fae65ac",
+                    "value": "#amb_door_open_bulkhead",
                     "unk1a": true
                 },
                 {
@@ -132260,7 +132260,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3419f8b83fae65ac",
+                    "value": "#amb_door_open_bulkhead",
                     "unk1a": true
                 },
                 {
@@ -132359,7 +132359,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3419f8b83fae65ac",
+                    "value": "#amb_door_open_bulkhead",
                     "unk1a": true
                 },
                 {
@@ -132458,7 +132458,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_6a5e0d24e28a2c01",
+                    "value": "#amb_door_open_creaky",
                     "unk1a": true
                 },
                 {
@@ -132557,7 +132557,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_6a5e0d24e28a2c01",
+                    "value": "#amb_door_open_creaky",
                     "unk1a": true
                 },
                 {
@@ -132656,7 +132656,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_3419f8b83fae65ac",
+                    "value": "#amb_door_open_bulkhead",
                     "unk1a": true
                 },
                 {
@@ -133406,7 +133406,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_6a5e0d24e28a2c01",
+                    "value": "#amb_door_open_creaky",
                     "unk1a": true
                 },
                 {
@@ -133505,7 +133505,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_6a5e0d24e28a2c01",
+                    "value": "#amb_door_open_creaky",
                     "unk1a": true
                 },
                 {

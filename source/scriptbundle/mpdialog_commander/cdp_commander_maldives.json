@@ -130,7 +130,7 @@
     "enemyattackchopperhack": "#vox_anme_icepick_chop_steal",
     "hubmoved": "#vox_anme_stockpile_hub_moved",
     "sfgrobotrebootedtowattacker": "#vox_anme_sfg_reboot_tow_ofs",
-    "enemystraferun": "#hash_19bb3656d238c844",
+    "enemystraferun": "#vox_anme_ult_wart_enemy_arrive",
     "hackingstarted": "#vox_anme_icepick_breach_det",
     "objdefend": "#vox_anme_generic_defend_start",
     "enemycarepackagehack": "#vox_anme_icepick_care_steal",

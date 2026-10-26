@@ -667,7 +667,7 @@ function planet_glyph_activate( localclientnum, oldval, newval, bnewent, binitia
     if ( newval )
     {
         fx = util::playfxontag( localclientnum, level._effect[ #"glyph_activate" ], self, "tag_origin" );
-        playsound( localclientnum, #"hash_6dfc68e5f7739824", self.origin );
+        playsound( localclientnum, #"zmb_planet_glyph_activate", self.origin );
         wait 3.5;
         
         if ( isdefined( fx ) )
@@ -690,8 +690,8 @@ function function_74e395f7( localclientnum, oldval, newval, bnewent, binitialsna
         
         if ( !isdefined( self.var_99a9007b ) )
         {
-            self playsound( localclientnum, #"hash_2c71df73b17cd28a" );
-            self.var_99a9007b = self playloopsound( #"hash_7e4a7312ab58161e" );
+            self playsound( localclientnum, #"zmb_sentinel_trial_blocker_start" );
+            self.var_99a9007b = self playloopsound( #"zmb_sentinel_trial_blocker_lp" );
         }
         
         return;
@@ -704,7 +704,7 @@ function function_74e395f7( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( isdefined( self.var_99a9007b ) )
     {
-        self playsound( localclientnum, #"hash_3366b1b903dc96bf" );
+        self playsound( localclientnum, #"zmb_sentinel_trial_blocker_end" );
         self stoploopsound( self.var_99a9007b );
         self.var_99a9007b = undefined;
     }
@@ -923,7 +923,7 @@ function function_9f92e675( localclientnum, oldval, newval, bnewent, binitialsna
     {
         util::playfxontag( localclientnum, level._effect[ #"tree_activate" ], self, "tag_origin" );
         self playsound( localclientnum, #"zmb_step8_artifact_explode" );
-        self.var_3765ceb0 = self playloopsound( #"hash_453bd80432d8f383" );
+        self.var_3765ceb0 = self playloopsound( #"zmb_step8_water_surge_lp" );
         wait 0.25;
         
         while ( isdefined( self ) )
@@ -943,12 +943,12 @@ function function_57196646( localclientnum, oldval, newval, bnewent, binitialsna
     if ( newval == 1 )
     {
         util::playfxontag( localclientnum, level._effect[ #"tree_trail" ], self, "tag_origin" );
-        self playsound( localclientnum, #"hash_c5737dedcdad3a8" );
+        self playsound( localclientnum, #"zmb_step8_planet_release" );
         return;
     }
     
     util::playfxontag( localclientnum, level._effect[ #"tree_impact" ], self, "tag_origin" );
-    self playsound( localclientnum, #"hash_3d9dcef3d979480b" );
+    self playsound( localclientnum, #"zmb_step8_planet_poof" );
     function_36e4ebd4( localclientnum, #"zm_zodt8_planet_impact" );
 }
 

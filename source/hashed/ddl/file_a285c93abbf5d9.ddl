@@ -41,7 +41,7 @@ version 3 {
         // offset 0x80, size 0x40
         uint64 hash_740d73d751cf7979;
         // offset 0xc0, size 0x40
-        uint64 hash_4c2f2b7a55fd35a8;
+        uint64 from_match_lobby_id;
         // offset 0x100, size 0x8
         byte hash_49bf5522e36c4ff6;
         // offset 0x108, size 0x400

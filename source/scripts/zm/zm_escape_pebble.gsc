@@ -294,7 +294,7 @@ function function_13ee3d14( n_index, s_power_up )
         mdl_door movex( -34, 2, 1 );
     }
     
-    playsoundatposition( #"hash_2903807228236fbc", mdl_door.origin );
+    playsoundatposition( #"zmb_escape_cell_door_slide", mdl_door.origin );
     self notify( #"hash_7f8e7011812dff48" );
 }
 
@@ -1268,7 +1268,7 @@ function function_27ae51c4( e_player )
         mdl_fx setvisibletoplayer( e_player );
     }
     
-    playsoundatposition( #"hash_6f61076a871fcbab", mdl_fx.origin );
+    playsoundatposition( #"zmb_glyph_dissolve", mdl_fx.origin );
     mdl_fx clientfield::set( "" + #"hash_46dbc12bdc275121", 1 );
     wait 5;
     mdl_fx delete();
@@ -2133,8 +2133,8 @@ function private audio_log()
     if ( isdefined( self.target ) )
     {
         a_mdl_reels = getentarray( self.target, "targetname" );
-        a_mdl_reels[ 0 ] playsound( #"hash_3cca3c060dacc7de" );
-        a_mdl_reels[ 0 ] playloopsound( #"hash_14cf26f9ee5a9962" );
+        a_mdl_reels[ 0 ] playsound( #"zmb_sq_audiolog_reel_start" );
+        a_mdl_reels[ 0 ] playloopsound( #"zmb_sq_audiolog_reel_lp" );
         
         foreach ( mdl_reel in a_mdl_reels )
         {
@@ -2146,8 +2146,8 @@ function private audio_log()
     else if ( !isdefined( self.var_d81f2c52 ) )
     {
         self.var_d81f2c52 = spawn( "script_origin", self.origin );
-        self.var_d81f2c52 playsound( #"hash_30b34f9e7c34a7c7" );
-        self.var_d81f2c52 playloopsound( #"hash_2e03906cfa1c2389" );
+        self.var_d81f2c52 playsound( #"zmb_sq_audiolog_radio_start" );
+        self.var_d81f2c52 playloopsound( #"zmb_sq_audiolog_radio_lp" );
     }
     
     switch ( self.script_int )
@@ -2513,7 +2513,7 @@ function private audio_log()
     
     if ( isdefined( self.var_d81f2c52 ) )
     {
-        self.var_d81f2c52 playsound( #"hash_378a275b951b400d" );
+        self.var_d81f2c52 playsound( #"zmb_sq_audiolog_radio_stop" );
         self.var_d81f2c52 stoploopsound();
         waitframe( 1 );
         self.var_d81f2c52 delete();
@@ -2550,7 +2550,7 @@ function function_175057ad()
         self waittill( #"rotatedone" );
     }
     
-    self playsound( #"hash_1f7edbf8f3a60766" );
+    self playsound( #"zmb_sq_audiolog_reel_stop" );
     self stoploopsound();
 }
 

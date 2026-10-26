@@ -285,7 +285,7 @@ version 174 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -385,7 +385,7 @@ version 174 {
         // offset 0xee0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xf18, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf50, size 0x38
         intstat challengexp;
         // offset 0xf88, size 0x18
@@ -395,7 +395,7 @@ version 174 {
         // offset 0xfd8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0x1010, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1048, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1080, size 0x38
@@ -435,7 +435,7 @@ version 174 {
         // offset 0x1430, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1448, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1480, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1498, size 0x38
@@ -519,7 +519,7 @@ version 174 {
         // offset 0x1cd8, size 0x38
         intstat total_shots;
         // offset 0x1d10, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1d48, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1d80, size 0x18
@@ -575,9 +575,9 @@ version 174 {
         // offset 0x2218, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2250, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2288, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x22c0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x22f8, size 0x38
@@ -641,7 +641,7 @@ version 174 {
         // offset 0x3180, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x31b8, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x31f8, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3210, size 0x38
@@ -651,7 +651,7 @@ version 174 {
         // offset 0x3280, size 0x38
         intstat wins_without_down;
         // offset 0x32b8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -874,7 +874,7 @@ version 174 {
         smg_fastfire_t8_operator, // 0x2f,
         hatchet, // 0x30,
         tr_powersemi_t8_operator, // 0x31,
-        hash_2ea46ca74ebdfcac, // 0x32,
+        buggy_gunner_rifle, // 0x32,
         smg_minigun_t8, // 0x33,
         smg_capacity_t8, // 0x34,
         sniper_fastrechamber_t8_operator, // 0x35,
@@ -897,7 +897,7 @@ version 174 {
         melee_bowie_bloody, // 0x46,
         ar_standard_t8_gold, // 0x47,
         tr_midburst_t8_operator, // 0x48,
-        hash_3e9172d77b2101e8, // 0x49,
+        player_light_helicopter_gunner_turret, // 0x49,
         sig_bow_quickshot, // 0x4a,
         sig_blade, // 0x4b,
         pistol_burst_t8, // 0x4c,
@@ -906,7 +906,7 @@ version 174 {
         ar_fastfire_t8, // 0x4f,
         ar_damage_t8_gold, // 0x50,
         hero_pineapplegun, // 0x51,
-        hash_48206b17d50533c2, // 0x52,
+        pbr_gunner_rifle, // 0x52,
         sniper_quickscope_t8, // 0x53,
         melee_stopsign_t8, // 0x54,
         lmg_heavy_t8, // 0x55,
@@ -1038,7 +1038,7 @@ version 174 {
         smg_vmp_t8, // 0x22,
         smg_fastfire_t8_operator, // 0x23,
         tr_powersemi_t8_operator, // 0x24,
-        hash_2ea46ca74ebdfcac, // 0x25,
+        buggy_gunner_rifle, // 0x25,
         smg_minigun_t8, // 0x26,
         smg_capacity_t8, // 0x27,
         sniper_fastrechamber_t8_operator, // 0x28,
@@ -1057,13 +1057,13 @@ version 174 {
         melee_bowie_bloody, // 0x35,
         ar_standard_t8_gold, // 0x36,
         tr_midburst_t8_operator, // 0x37,
-        hash_3e9172d77b2101e8, // 0x38,
+        player_light_helicopter_gunner_turret, // 0x38,
         pistol_burst_t8, // 0x39,
         tr_leveraction_t8, // 0x3a,
         hash_4385cf507401820f, // 0x3b,
         ar_fastfire_t8, // 0x3c,
         ar_damage_t8_gold, // 0x3d,
-        hash_48206b17d50533c2, // 0x3e,
+        pbr_gunner_rifle, // 0x3e,
         sniper_quickscope_t8, // 0x3f,
         melee_stopsign_t8, // 0x40,
         lmg_heavy_t8, // 0x41,
@@ -1332,7 +1332,7 @@ version 174 {
         hash_57d9e98fa3f08f76, // 0x27,
         prt_wz_russman, // 0x28,
         prt_wz_misty, // 0x29,
-        hash_62361c68e083d401, // 0x2a,
+        prt_wz_technomancer, // 0x2a,
         prt_wz_mercenary, // 0x2b,
         prt_wz_scarlett_dlc0, // 0x2c,
         prt_wz_richtofen, // 0x2d,
@@ -1436,7 +1436,7 @@ version 174 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -1838,7 +1838,7 @@ version 173 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -1938,7 +1938,7 @@ version 173 {
         // offset 0xee0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xf18, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf50, size 0x38
         intstat challengexp;
         // offset 0xf88, size 0x18
@@ -1948,7 +1948,7 @@ version 173 {
         // offset 0xfd8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0x1010, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1048, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1080, size 0x38
@@ -1988,7 +1988,7 @@ version 173 {
         // offset 0x1430, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1448, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1480, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1498, size 0x38
@@ -2072,7 +2072,7 @@ version 173 {
         // offset 0x1cd8, size 0x38
         intstat total_shots;
         // offset 0x1d10, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1d48, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1d80, size 0x18
@@ -2128,9 +2128,9 @@ version 173 {
         // offset 0x2218, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2250, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2288, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x22c0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x22f8, size 0x38
@@ -2194,7 +2194,7 @@ version 173 {
         // offset 0x3180, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x31b8, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x31f8, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3210, size 0x38
@@ -2204,7 +2204,7 @@ version 173 {
         // offset 0x3280, size 0x38
         intstat wins_without_down;
         // offset 0x32b8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -2427,7 +2427,7 @@ version 173 {
         smg_fastfire_t8_operator, // 0x2f,
         hatchet, // 0x30,
         tr_powersemi_t8_operator, // 0x31,
-        hash_2ea46ca74ebdfcac, // 0x32,
+        buggy_gunner_rifle, // 0x32,
         smg_minigun_t8, // 0x33,
         smg_capacity_t8, // 0x34,
         sniper_fastrechamber_t8_operator, // 0x35,
@@ -2450,7 +2450,7 @@ version 173 {
         melee_bowie_bloody, // 0x46,
         ar_standard_t8_gold, // 0x47,
         tr_midburst_t8_operator, // 0x48,
-        hash_3e9172d77b2101e8, // 0x49,
+        player_light_helicopter_gunner_turret, // 0x49,
         sig_bow_quickshot, // 0x4a,
         sig_blade, // 0x4b,
         pistol_burst_t8, // 0x4c,
@@ -2459,7 +2459,7 @@ version 173 {
         ar_fastfire_t8, // 0x4f,
         ar_damage_t8_gold, // 0x50,
         hero_pineapplegun, // 0x51,
-        hash_48206b17d50533c2, // 0x52,
+        pbr_gunner_rifle, // 0x52,
         sniper_quickscope_t8, // 0x53,
         melee_stopsign_t8, // 0x54,
         lmg_heavy_t8, // 0x55,
@@ -2591,7 +2591,7 @@ version 173 {
         smg_vmp_t8, // 0x22,
         smg_fastfire_t8_operator, // 0x23,
         tr_powersemi_t8_operator, // 0x24,
-        hash_2ea46ca74ebdfcac, // 0x25,
+        buggy_gunner_rifle, // 0x25,
         smg_minigun_t8, // 0x26,
         smg_capacity_t8, // 0x27,
         sniper_fastrechamber_t8_operator, // 0x28,
@@ -2610,13 +2610,13 @@ version 173 {
         melee_bowie_bloody, // 0x35,
         ar_standard_t8_gold, // 0x36,
         tr_midburst_t8_operator, // 0x37,
-        hash_3e9172d77b2101e8, // 0x38,
+        player_light_helicopter_gunner_turret, // 0x38,
         pistol_burst_t8, // 0x39,
         tr_leveraction_t8, // 0x3a,
         hash_4385cf507401820f, // 0x3b,
         ar_fastfire_t8, // 0x3c,
         ar_damage_t8_gold, // 0x3d,
-        hash_48206b17d50533c2, // 0x3e,
+        pbr_gunner_rifle, // 0x3e,
         sniper_quickscope_t8, // 0x3f,
         melee_stopsign_t8, // 0x40,
         lmg_heavy_t8, // 0x41,
@@ -2883,7 +2883,7 @@ version 173 {
         hash_57d9e98fa3f08f76, // 0x27,
         prt_wz_russman, // 0x28,
         prt_wz_misty, // 0x29,
-        hash_62361c68e083d401, // 0x2a,
+        prt_wz_technomancer, // 0x2a,
         prt_wz_mercenary, // 0x2b,
         prt_wz_scarlett_dlc0, // 0x2c,
         prt_wz_richtofen, // 0x2d,
@@ -2987,7 +2987,7 @@ version 173 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -3389,7 +3389,7 @@ version 172 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -3489,7 +3489,7 @@ version 172 {
         // offset 0xee0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xf18, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf50, size 0x38
         intstat challengexp;
         // offset 0xf88, size 0x18
@@ -3499,7 +3499,7 @@ version 172 {
         // offset 0xfd8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0x1010, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1048, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1080, size 0x38
@@ -3537,7 +3537,7 @@ version 172 {
         // offset 0x13f0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1408, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1440, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1458, size 0x38
@@ -3621,7 +3621,7 @@ version 172 {
         // offset 0x1c98, size 0x38
         intstat total_shots;
         // offset 0x1cd0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1d08, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1d40, size 0x18
@@ -3677,9 +3677,9 @@ version 172 {
         // offset 0x21d8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2210, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2248, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2280, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x22b8, size 0x38
@@ -3743,7 +3743,7 @@ version 172 {
         // offset 0x3140, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x3178, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x31b8, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x31d0, size 0x38
@@ -3753,7 +3753,7 @@ version 172 {
         // offset 0x3240, size 0x38
         intstat wins_without_down;
         // offset 0x3278, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -3976,7 +3976,7 @@ version 172 {
         smg_fastfire_t8_operator, // 0x2f,
         hatchet, // 0x30,
         tr_powersemi_t8_operator, // 0x31,
-        hash_2ea46ca74ebdfcac, // 0x32,
+        buggy_gunner_rifle, // 0x32,
         smg_minigun_t8, // 0x33,
         smg_capacity_t8, // 0x34,
         sniper_fastrechamber_t8_operator, // 0x35,
@@ -3999,7 +3999,7 @@ version 172 {
         melee_bowie_bloody, // 0x46,
         ar_standard_t8_gold, // 0x47,
         tr_midburst_t8_operator, // 0x48,
-        hash_3e9172d77b2101e8, // 0x49,
+        player_light_helicopter_gunner_turret, // 0x49,
         sig_bow_quickshot, // 0x4a,
         sig_blade, // 0x4b,
         pistol_burst_t8, // 0x4c,
@@ -4008,7 +4008,7 @@ version 172 {
         ar_fastfire_t8, // 0x4f,
         ar_damage_t8_gold, // 0x50,
         hero_pineapplegun, // 0x51,
-        hash_48206b17d50533c2, // 0x52,
+        pbr_gunner_rifle, // 0x52,
         sniper_quickscope_t8, // 0x53,
         melee_stopsign_t8, // 0x54,
         lmg_heavy_t8, // 0x55,
@@ -4140,7 +4140,7 @@ version 172 {
         smg_vmp_t8, // 0x22,
         smg_fastfire_t8_operator, // 0x23,
         tr_powersemi_t8_operator, // 0x24,
-        hash_2ea46ca74ebdfcac, // 0x25,
+        buggy_gunner_rifle, // 0x25,
         smg_minigun_t8, // 0x26,
         smg_capacity_t8, // 0x27,
         sniper_fastrechamber_t8_operator, // 0x28,
@@ -4159,13 +4159,13 @@ version 172 {
         melee_bowie_bloody, // 0x35,
         ar_standard_t8_gold, // 0x36,
         tr_midburst_t8_operator, // 0x37,
-        hash_3e9172d77b2101e8, // 0x38,
+        player_light_helicopter_gunner_turret, // 0x38,
         pistol_burst_t8, // 0x39,
         tr_leveraction_t8, // 0x3a,
         hash_4385cf507401820f, // 0x3b,
         ar_fastfire_t8, // 0x3c,
         ar_damage_t8_gold, // 0x3d,
-        hash_48206b17d50533c2, // 0x3e,
+        pbr_gunner_rifle, // 0x3e,
         sniper_quickscope_t8, // 0x3f,
         melee_stopsign_t8, // 0x40,
         lmg_heavy_t8, // 0x41,
@@ -4432,7 +4432,7 @@ version 172 {
         hash_57d9e98fa3f08f76, // 0x27,
         prt_wz_russman, // 0x28,
         prt_wz_misty, // 0x29,
-        hash_62361c68e083d401, // 0x2a,
+        prt_wz_technomancer, // 0x2a,
         prt_wz_mercenary, // 0x2b,
         prt_wz_scarlett_dlc0, // 0x2c,
         prt_wz_richtofen, // 0x2d,
@@ -4536,7 +4536,7 @@ version 172 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -4938,7 +4938,7 @@ version 171 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -5038,7 +5038,7 @@ version 171 {
         // offset 0xee0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xf18, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf50, size 0x38
         intstat challengexp;
         // offset 0xf88, size 0x18
@@ -5048,7 +5048,7 @@ version 171 {
         // offset 0xfd8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0x1010, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1048, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1080, size 0x38
@@ -5086,7 +5086,7 @@ version 171 {
         // offset 0x13f0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1408, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1440, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1458, size 0x38
@@ -5170,7 +5170,7 @@ version 171 {
         // offset 0x1c98, size 0x38
         intstat total_shots;
         // offset 0x1cd0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1d08, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1d40, size 0x18
@@ -5224,9 +5224,9 @@ version 171 {
         // offset 0x2198, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x21d0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2208, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2240, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2278, size 0x38
@@ -5290,7 +5290,7 @@ version 171 {
         // offset 0x3100, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x3138, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x3178, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3190, size 0x38
@@ -5300,7 +5300,7 @@ version 171 {
         // offset 0x3200, size 0x38
         intstat wins_without_down;
         // offset 0x3238, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -5523,7 +5523,7 @@ version 171 {
         smg_fastfire_t8_operator, // 0x2f,
         hatchet, // 0x30,
         tr_powersemi_t8_operator, // 0x31,
-        hash_2ea46ca74ebdfcac, // 0x32,
+        buggy_gunner_rifle, // 0x32,
         smg_minigun_t8, // 0x33,
         smg_capacity_t8, // 0x34,
         sniper_fastrechamber_t8_operator, // 0x35,
@@ -5546,7 +5546,7 @@ version 171 {
         melee_bowie_bloody, // 0x46,
         ar_standard_t8_gold, // 0x47,
         tr_midburst_t8_operator, // 0x48,
-        hash_3e9172d77b2101e8, // 0x49,
+        player_light_helicopter_gunner_turret, // 0x49,
         sig_bow_quickshot, // 0x4a,
         sig_blade, // 0x4b,
         pistol_burst_t8, // 0x4c,
@@ -5555,7 +5555,7 @@ version 171 {
         ar_fastfire_t8, // 0x4f,
         ar_damage_t8_gold, // 0x50,
         hero_pineapplegun, // 0x51,
-        hash_48206b17d50533c2, // 0x52,
+        pbr_gunner_rifle, // 0x52,
         sniper_quickscope_t8, // 0x53,
         melee_stopsign_t8, // 0x54,
         lmg_heavy_t8, // 0x55,
@@ -5687,7 +5687,7 @@ version 171 {
         smg_vmp_t8, // 0x22,
         smg_fastfire_t8_operator, // 0x23,
         tr_powersemi_t8_operator, // 0x24,
-        hash_2ea46ca74ebdfcac, // 0x25,
+        buggy_gunner_rifle, // 0x25,
         smg_minigun_t8, // 0x26,
         smg_capacity_t8, // 0x27,
         sniper_fastrechamber_t8_operator, // 0x28,
@@ -5706,13 +5706,13 @@ version 171 {
         melee_bowie_bloody, // 0x35,
         ar_standard_t8_gold, // 0x36,
         tr_midburst_t8_operator, // 0x37,
-        hash_3e9172d77b2101e8, // 0x38,
+        player_light_helicopter_gunner_turret, // 0x38,
         pistol_burst_t8, // 0x39,
         tr_leveraction_t8, // 0x3a,
         hash_4385cf507401820f, // 0x3b,
         ar_fastfire_t8, // 0x3c,
         ar_damage_t8_gold, // 0x3d,
-        hash_48206b17d50533c2, // 0x3e,
+        pbr_gunner_rifle, // 0x3e,
         sniper_quickscope_t8, // 0x3f,
         melee_stopsign_t8, // 0x40,
         lmg_heavy_t8, // 0x41,
@@ -5979,7 +5979,7 @@ version 171 {
         hash_57d9e98fa3f08f76, // 0x27,
         prt_wz_russman, // 0x28,
         prt_wz_misty, // 0x29,
-        hash_62361c68e083d401, // 0x2a,
+        prt_wz_technomancer, // 0x2a,
         prt_wz_mercenary, // 0x2b,
         prt_wz_scarlett_dlc0, // 0x2c,
         prt_wz_richtofen, // 0x2d,
@@ -6083,7 +6083,7 @@ version 171 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -6485,7 +6485,7 @@ version 170 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -6585,7 +6585,7 @@ version 170 {
         // offset 0xee0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xf18, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf50, size 0x38
         intstat challengexp;
         // offset 0xf88, size 0x18
@@ -6595,7 +6595,7 @@ version 170 {
         // offset 0xfd8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0x1010, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1048, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1080, size 0x38
@@ -6633,7 +6633,7 @@ version 170 {
         // offset 0x13f0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1408, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1440, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1458, size 0x38
@@ -6717,7 +6717,7 @@ version 170 {
         // offset 0x1c98, size 0x38
         intstat total_shots;
         // offset 0x1cd0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1d08, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1d40, size 0x18
@@ -6769,9 +6769,9 @@ version 170 {
         // offset 0x2158, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2190, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x21c8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2200, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2238, size 0x38
@@ -6835,7 +6835,7 @@ version 170 {
         // offset 0x30c0, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x30f8, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x3138, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3150, size 0x38
@@ -6845,7 +6845,7 @@ version 170 {
         // offset 0x31c0, size 0x38
         intstat wins_without_down;
         // offset 0x31f8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -7068,7 +7068,7 @@ version 170 {
         smg_fastfire_t8_operator, // 0x2f,
         hatchet, // 0x30,
         tr_powersemi_t8_operator, // 0x31,
-        hash_2ea46ca74ebdfcac, // 0x32,
+        buggy_gunner_rifle, // 0x32,
         smg_minigun_t8, // 0x33,
         smg_capacity_t8, // 0x34,
         sniper_fastrechamber_t8_operator, // 0x35,
@@ -7091,7 +7091,7 @@ version 170 {
         melee_bowie_bloody, // 0x46,
         ar_standard_t8_gold, // 0x47,
         tr_midburst_t8_operator, // 0x48,
-        hash_3e9172d77b2101e8, // 0x49,
+        player_light_helicopter_gunner_turret, // 0x49,
         sig_bow_quickshot, // 0x4a,
         sig_blade, // 0x4b,
         pistol_burst_t8, // 0x4c,
@@ -7100,7 +7100,7 @@ version 170 {
         ar_fastfire_t8, // 0x4f,
         ar_damage_t8_gold, // 0x50,
         hero_pineapplegun, // 0x51,
-        hash_48206b17d50533c2, // 0x52,
+        pbr_gunner_rifle, // 0x52,
         sniper_quickscope_t8, // 0x53,
         melee_stopsign_t8, // 0x54,
         lmg_heavy_t8, // 0x55,
@@ -7232,7 +7232,7 @@ version 170 {
         smg_vmp_t8, // 0x22,
         smg_fastfire_t8_operator, // 0x23,
         tr_powersemi_t8_operator, // 0x24,
-        hash_2ea46ca74ebdfcac, // 0x25,
+        buggy_gunner_rifle, // 0x25,
         smg_minigun_t8, // 0x26,
         smg_capacity_t8, // 0x27,
         sniper_fastrechamber_t8_operator, // 0x28,
@@ -7251,13 +7251,13 @@ version 170 {
         melee_bowie_bloody, // 0x35,
         ar_standard_t8_gold, // 0x36,
         tr_midburst_t8_operator, // 0x37,
-        hash_3e9172d77b2101e8, // 0x38,
+        player_light_helicopter_gunner_turret, // 0x38,
         pistol_burst_t8, // 0x39,
         tr_leveraction_t8, // 0x3a,
         hash_4385cf507401820f, // 0x3b,
         ar_fastfire_t8, // 0x3c,
         ar_damage_t8_gold, // 0x3d,
-        hash_48206b17d50533c2, // 0x3e,
+        pbr_gunner_rifle, // 0x3e,
         sniper_quickscope_t8, // 0x3f,
         melee_stopsign_t8, // 0x40,
         lmg_heavy_t8, // 0x41,
@@ -7524,7 +7524,7 @@ version 170 {
         hash_57d9e98fa3f08f76, // 0x27,
         prt_wz_russman, // 0x28,
         prt_wz_misty, // 0x29,
-        hash_62361c68e083d401, // 0x2a,
+        prt_wz_technomancer, // 0x2a,
         prt_wz_mercenary, // 0x2b,
         prt_wz_scarlett_dlc0, // 0x2c,
         prt_wz_richtofen, // 0x2d,
@@ -7628,7 +7628,7 @@ version 170 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -8030,7 +8030,7 @@ version 169 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -8130,7 +8130,7 @@ version 169 {
         // offset 0xee0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xf18, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf50, size 0x38
         intstat challengexp;
         // offset 0xf88, size 0x18
@@ -8140,7 +8140,7 @@ version 169 {
         // offset 0xfd8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0x1010, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1048, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1080, size 0x38
@@ -8178,7 +8178,7 @@ version 169 {
         // offset 0x13f0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1408, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1440, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1458, size 0x38
@@ -8262,7 +8262,7 @@ version 169 {
         // offset 0x1c98, size 0x38
         intstat total_shots;
         // offset 0x1cd0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1d08, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1d40, size 0x18
@@ -8314,9 +8314,9 @@ version 169 {
         // offset 0x2158, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2190, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x21c8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2200, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2238, size 0x38
@@ -8380,7 +8380,7 @@ version 169 {
         // offset 0x30c0, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x30f8, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x3138, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3150, size 0x38
@@ -8390,7 +8390,7 @@ version 169 {
         // offset 0x31c0, size 0x38
         intstat wins_without_down;
         // offset 0x31f8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -8612,7 +8612,7 @@ version 169 {
         smg_fastfire_t8_operator, // 0x2e,
         hatchet, // 0x2f,
         tr_powersemi_t8_operator, // 0x30,
-        hash_2ea46ca74ebdfcac, // 0x31,
+        buggy_gunner_rifle, // 0x31,
         smg_minigun_t8, // 0x32,
         smg_capacity_t8, // 0x33,
         sniper_fastrechamber_t8_operator, // 0x34,
@@ -8635,7 +8635,7 @@ version 169 {
         melee_bowie_bloody, // 0x45,
         ar_standard_t8_gold, // 0x46,
         tr_midburst_t8_operator, // 0x47,
-        hash_3e9172d77b2101e8, // 0x48,
+        player_light_helicopter_gunner_turret, // 0x48,
         sig_bow_quickshot, // 0x49,
         sig_blade, // 0x4a,
         pistol_burst_t8, // 0x4b,
@@ -8644,7 +8644,7 @@ version 169 {
         ar_fastfire_t8, // 0x4e,
         ar_damage_t8_gold, // 0x4f,
         hero_pineapplegun, // 0x50,
-        hash_48206b17d50533c2, // 0x51,
+        pbr_gunner_rifle, // 0x51,
         sniper_quickscope_t8, // 0x52,
         melee_stopsign_t8, // 0x53,
         lmg_heavy_t8, // 0x54,
@@ -8775,7 +8775,7 @@ version 169 {
         smg_vmp_t8, // 0x21,
         smg_fastfire_t8_operator, // 0x22,
         tr_powersemi_t8_operator, // 0x23,
-        hash_2ea46ca74ebdfcac, // 0x24,
+        buggy_gunner_rifle, // 0x24,
         smg_minigun_t8, // 0x25,
         smg_capacity_t8, // 0x26,
         sniper_fastrechamber_t8_operator, // 0x27,
@@ -8794,13 +8794,13 @@ version 169 {
         melee_bowie_bloody, // 0x34,
         ar_standard_t8_gold, // 0x35,
         tr_midburst_t8_operator, // 0x36,
-        hash_3e9172d77b2101e8, // 0x37,
+        player_light_helicopter_gunner_turret, // 0x37,
         pistol_burst_t8, // 0x38,
         tr_leveraction_t8, // 0x39,
         hash_4385cf507401820f, // 0x3a,
         ar_fastfire_t8, // 0x3b,
         ar_damage_t8_gold, // 0x3c,
-        hash_48206b17d50533c2, // 0x3d,
+        pbr_gunner_rifle, // 0x3d,
         sniper_quickscope_t8, // 0x3e,
         melee_stopsign_t8, // 0x3f,
         lmg_heavy_t8, // 0x40,
@@ -9067,7 +9067,7 @@ version 169 {
         hash_57d9e98fa3f08f76, // 0x27,
         prt_wz_russman, // 0x28,
         prt_wz_misty, // 0x29,
-        hash_62361c68e083d401, // 0x2a,
+        prt_wz_technomancer, // 0x2a,
         prt_wz_mercenary, // 0x2b,
         prt_wz_scarlett_dlc0, // 0x2c,
         prt_wz_richtofen, // 0x2d,
@@ -9171,7 +9171,7 @@ version 169 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -9573,7 +9573,7 @@ version 168 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -9673,7 +9673,7 @@ version 168 {
         // offset 0xee0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xf18, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf50, size 0x38
         intstat challengexp;
         // offset 0xf88, size 0x18
@@ -9683,7 +9683,7 @@ version 168 {
         // offset 0xfd8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0x1010, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1048, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1080, size 0x38
@@ -9721,7 +9721,7 @@ version 168 {
         // offset 0x13f0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1408, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1440, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1458, size 0x38
@@ -9803,7 +9803,7 @@ version 168 {
         // offset 0x1c58, size 0x38
         intstat total_shots;
         // offset 0x1c90, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1cc8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1d00, size 0x18
@@ -9855,9 +9855,9 @@ version 168 {
         // offset 0x2118, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2150, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2188, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x21c0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x21f8, size 0x38
@@ -9921,7 +9921,7 @@ version 168 {
         // offset 0x3080, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x30b8, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x30f8, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3110, size 0x38
@@ -9931,7 +9931,7 @@ version 168 {
         // offset 0x3180, size 0x38
         intstat wins_without_down;
         // offset 0x31b8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -10153,7 +10153,7 @@ version 168 {
         smg_fastfire_t8_operator, // 0x2e,
         hatchet, // 0x2f,
         tr_powersemi_t8_operator, // 0x30,
-        hash_2ea46ca74ebdfcac, // 0x31,
+        buggy_gunner_rifle, // 0x31,
         smg_minigun_t8, // 0x32,
         smg_capacity_t8, // 0x33,
         sniper_fastrechamber_t8_operator, // 0x34,
@@ -10176,7 +10176,7 @@ version 168 {
         melee_bowie_bloody, // 0x45,
         ar_standard_t8_gold, // 0x46,
         tr_midburst_t8_operator, // 0x47,
-        hash_3e9172d77b2101e8, // 0x48,
+        player_light_helicopter_gunner_turret, // 0x48,
         sig_bow_quickshot, // 0x49,
         sig_blade, // 0x4a,
         pistol_burst_t8, // 0x4b,
@@ -10185,7 +10185,7 @@ version 168 {
         ar_fastfire_t8, // 0x4e,
         ar_damage_t8_gold, // 0x4f,
         hero_pineapplegun, // 0x50,
-        hash_48206b17d50533c2, // 0x51,
+        pbr_gunner_rifle, // 0x51,
         sniper_quickscope_t8, // 0x52,
         melee_stopsign_t8, // 0x53,
         lmg_heavy_t8, // 0x54,
@@ -10316,7 +10316,7 @@ version 168 {
         smg_vmp_t8, // 0x21,
         smg_fastfire_t8_operator, // 0x22,
         tr_powersemi_t8_operator, // 0x23,
-        hash_2ea46ca74ebdfcac, // 0x24,
+        buggy_gunner_rifle, // 0x24,
         smg_minigun_t8, // 0x25,
         smg_capacity_t8, // 0x26,
         sniper_fastrechamber_t8_operator, // 0x27,
@@ -10335,13 +10335,13 @@ version 168 {
         melee_bowie_bloody, // 0x34,
         ar_standard_t8_gold, // 0x35,
         tr_midburst_t8_operator, // 0x36,
-        hash_3e9172d77b2101e8, // 0x37,
+        player_light_helicopter_gunner_turret, // 0x37,
         pistol_burst_t8, // 0x38,
         tr_leveraction_t8, // 0x39,
         hash_4385cf507401820f, // 0x3a,
         ar_fastfire_t8, // 0x3b,
         ar_damage_t8_gold, // 0x3c,
-        hash_48206b17d50533c2, // 0x3d,
+        pbr_gunner_rifle, // 0x3d,
         sniper_quickscope_t8, // 0x3e,
         melee_stopsign_t8, // 0x3f,
         lmg_heavy_t8, // 0x40,
@@ -10608,7 +10608,7 @@ version 168 {
         hash_57d9e98fa3f08f76, // 0x27,
         prt_wz_russman, // 0x28,
         prt_wz_misty, // 0x29,
-        hash_62361c68e083d401, // 0x2a,
+        prt_wz_technomancer, // 0x2a,
         prt_wz_mercenary, // 0x2b,
         prt_wz_scarlett_dlc0, // 0x2c,
         prt_wz_richtofen, // 0x2d,
@@ -10712,7 +10712,7 @@ version 168 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -11114,7 +11114,7 @@ version 167 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -11212,7 +11212,7 @@ version 167 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -11222,7 +11222,7 @@ version 167 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -11260,7 +11260,7 @@ version 167 {
         // offset 0x13b0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x13c8, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1400, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1418, size 0x38
@@ -11342,7 +11342,7 @@ version 167 {
         // offset 0x1c18, size 0x38
         intstat total_shots;
         // offset 0x1c50, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c88, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1cc0, size 0x18
@@ -11394,9 +11394,9 @@ version 167 {
         // offset 0x20d8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2110, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2148, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2180, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x21b8, size 0x38
@@ -11460,7 +11460,7 @@ version 167 {
         // offset 0x3040, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x3078, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x30b8, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x30d0, size 0x38
@@ -11470,7 +11470,7 @@ version 167 {
         // offset 0x3140, size 0x38
         intstat wins_without_down;
         // offset 0x3178, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -11692,7 +11692,7 @@ version 167 {
         smg_fastfire_t8_operator, // 0x2e,
         hatchet, // 0x2f,
         tr_powersemi_t8_operator, // 0x30,
-        hash_2ea46ca74ebdfcac, // 0x31,
+        buggy_gunner_rifle, // 0x31,
         smg_minigun_t8, // 0x32,
         smg_capacity_t8, // 0x33,
         sniper_fastrechamber_t8_operator, // 0x34,
@@ -11715,7 +11715,7 @@ version 167 {
         melee_bowie_bloody, // 0x45,
         ar_standard_t8_gold, // 0x46,
         tr_midburst_t8_operator, // 0x47,
-        hash_3e9172d77b2101e8, // 0x48,
+        player_light_helicopter_gunner_turret, // 0x48,
         sig_bow_quickshot, // 0x49,
         sig_blade, // 0x4a,
         pistol_burst_t8, // 0x4b,
@@ -11724,7 +11724,7 @@ version 167 {
         ar_fastfire_t8, // 0x4e,
         ar_damage_t8_gold, // 0x4f,
         hero_pineapplegun, // 0x50,
-        hash_48206b17d50533c2, // 0x51,
+        pbr_gunner_rifle, // 0x51,
         sniper_quickscope_t8, // 0x52,
         melee_stopsign_t8, // 0x53,
         lmg_heavy_t8, // 0x54,
@@ -11855,7 +11855,7 @@ version 167 {
         smg_vmp_t8, // 0x21,
         smg_fastfire_t8_operator, // 0x22,
         tr_powersemi_t8_operator, // 0x23,
-        hash_2ea46ca74ebdfcac, // 0x24,
+        buggy_gunner_rifle, // 0x24,
         smg_minigun_t8, // 0x25,
         smg_capacity_t8, // 0x26,
         sniper_fastrechamber_t8_operator, // 0x27,
@@ -11874,13 +11874,13 @@ version 167 {
         melee_bowie_bloody, // 0x34,
         ar_standard_t8_gold, // 0x35,
         tr_midburst_t8_operator, // 0x36,
-        hash_3e9172d77b2101e8, // 0x37,
+        player_light_helicopter_gunner_turret, // 0x37,
         pistol_burst_t8, // 0x38,
         tr_leveraction_t8, // 0x39,
         hash_4385cf507401820f, // 0x3a,
         ar_fastfire_t8, // 0x3b,
         ar_damage_t8_gold, // 0x3c,
-        hash_48206b17d50533c2, // 0x3d,
+        pbr_gunner_rifle, // 0x3d,
         sniper_quickscope_t8, // 0x3e,
         melee_stopsign_t8, // 0x3f,
         lmg_heavy_t8, // 0x40,
@@ -12147,7 +12147,7 @@ version 167 {
         hash_57d9e98fa3f08f76, // 0x27,
         prt_wz_russman, // 0x28,
         prt_wz_misty, // 0x29,
-        hash_62361c68e083d401, // 0x2a,
+        prt_wz_technomancer, // 0x2a,
         prt_wz_mercenary, // 0x2b,
         prt_wz_scarlett_dlc0, // 0x2c,
         prt_wz_richtofen, // 0x2d,
@@ -12251,7 +12251,7 @@ version 167 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -12653,7 +12653,7 @@ version 166 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -12751,7 +12751,7 @@ version 166 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -12761,7 +12761,7 @@ version 166 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -12799,7 +12799,7 @@ version 166 {
         // offset 0x13b0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x13c8, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1400, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1418, size 0x38
@@ -12881,7 +12881,7 @@ version 166 {
         // offset 0x1c18, size 0x38
         intstat total_shots;
         // offset 0x1c50, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c88, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1cc0, size 0x18
@@ -12933,9 +12933,9 @@ version 166 {
         // offset 0x20d8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2110, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2148, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2180, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x21b8, size 0x38
@@ -12997,7 +12997,7 @@ version 166 {
         // offset 0x3000, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x3038, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x3078, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3090, size 0x38
@@ -13007,7 +13007,7 @@ version 166 {
         // offset 0x3100, size 0x38
         intstat wins_without_down;
         // offset 0x3138, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -13229,7 +13229,7 @@ version 166 {
         smg_fastfire_t8_operator, // 0x2e,
         hatchet, // 0x2f,
         tr_powersemi_t8_operator, // 0x30,
-        hash_2ea46ca74ebdfcac, // 0x31,
+        buggy_gunner_rifle, // 0x31,
         smg_minigun_t8, // 0x32,
         smg_capacity_t8, // 0x33,
         sniper_fastrechamber_t8_operator, // 0x34,
@@ -13252,7 +13252,7 @@ version 166 {
         melee_bowie_bloody, // 0x45,
         ar_standard_t8_gold, // 0x46,
         tr_midburst_t8_operator, // 0x47,
-        hash_3e9172d77b2101e8, // 0x48,
+        player_light_helicopter_gunner_turret, // 0x48,
         sig_bow_quickshot, // 0x49,
         sig_blade, // 0x4a,
         pistol_burst_t8, // 0x4b,
@@ -13261,7 +13261,7 @@ version 166 {
         ar_fastfire_t8, // 0x4e,
         ar_damage_t8_gold, // 0x4f,
         hero_pineapplegun, // 0x50,
-        hash_48206b17d50533c2, // 0x51,
+        pbr_gunner_rifle, // 0x51,
         sniper_quickscope_t8, // 0x52,
         melee_stopsign_t8, // 0x53,
         lmg_heavy_t8, // 0x54,
@@ -13392,7 +13392,7 @@ version 166 {
         smg_vmp_t8, // 0x21,
         smg_fastfire_t8_operator, // 0x22,
         tr_powersemi_t8_operator, // 0x23,
-        hash_2ea46ca74ebdfcac, // 0x24,
+        buggy_gunner_rifle, // 0x24,
         smg_minigun_t8, // 0x25,
         smg_capacity_t8, // 0x26,
         sniper_fastrechamber_t8_operator, // 0x27,
@@ -13411,13 +13411,13 @@ version 166 {
         melee_bowie_bloody, // 0x34,
         ar_standard_t8_gold, // 0x35,
         tr_midburst_t8_operator, // 0x36,
-        hash_3e9172d77b2101e8, // 0x37,
+        player_light_helicopter_gunner_turret, // 0x37,
         pistol_burst_t8, // 0x38,
         tr_leveraction_t8, // 0x39,
         hash_4385cf507401820f, // 0x3a,
         ar_fastfire_t8, // 0x3b,
         ar_damage_t8_gold, // 0x3c,
-        hash_48206b17d50533c2, // 0x3d,
+        pbr_gunner_rifle, // 0x3d,
         sniper_quickscope_t8, // 0x3e,
         melee_stopsign_t8, // 0x3f,
         lmg_heavy_t8, // 0x40,
@@ -13684,7 +13684,7 @@ version 166 {
         hash_57d9e98fa3f08f76, // 0x27,
         prt_wz_russman, // 0x28,
         prt_wz_misty, // 0x29,
-        hash_62361c68e083d401, // 0x2a,
+        prt_wz_technomancer, // 0x2a,
         prt_wz_mercenary, // 0x2b,
         prt_wz_scarlett_dlc0, // 0x2c,
         prt_wz_richtofen, // 0x2d,
@@ -13788,7 +13788,7 @@ version 166 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -14190,7 +14190,7 @@ version 165 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -14288,7 +14288,7 @@ version 165 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -14298,7 +14298,7 @@ version 165 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -14336,7 +14336,7 @@ version 165 {
         // offset 0x13b0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x13c8, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1400, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1418, size 0x38
@@ -14418,7 +14418,7 @@ version 165 {
         // offset 0x1c18, size 0x38
         intstat total_shots;
         // offset 0x1c50, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c88, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1cc0, size 0x18
@@ -14470,9 +14470,9 @@ version 165 {
         // offset 0x20d8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2110, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2148, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2180, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x21b8, size 0x38
@@ -14534,7 +14534,7 @@ version 165 {
         // offset 0x3000, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x3038, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x3078, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3090, size 0x38
@@ -14544,7 +14544,7 @@ version 165 {
         // offset 0x3100, size 0x38
         intstat wins_without_down;
         // offset 0x3138, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -14766,7 +14766,7 @@ version 165 {
         smg_fastfire_t8_operator, // 0x2e,
         hatchet, // 0x2f,
         tr_powersemi_t8_operator, // 0x30,
-        hash_2ea46ca74ebdfcac, // 0x31,
+        buggy_gunner_rifle, // 0x31,
         smg_minigun_t8, // 0x32,
         smg_capacity_t8, // 0x33,
         sniper_fastrechamber_t8_operator, // 0x34,
@@ -14789,7 +14789,7 @@ version 165 {
         melee_bowie_bloody, // 0x45,
         ar_standard_t8_gold, // 0x46,
         tr_midburst_t8_operator, // 0x47,
-        hash_3e9172d77b2101e8, // 0x48,
+        player_light_helicopter_gunner_turret, // 0x48,
         sig_bow_quickshot, // 0x49,
         sig_blade, // 0x4a,
         pistol_burst_t8, // 0x4b,
@@ -14798,7 +14798,7 @@ version 165 {
         ar_fastfire_t8, // 0x4e,
         ar_damage_t8_gold, // 0x4f,
         hero_pineapplegun, // 0x50,
-        hash_48206b17d50533c2, // 0x51,
+        pbr_gunner_rifle, // 0x51,
         sniper_quickscope_t8, // 0x52,
         melee_stopsign_t8, // 0x53,
         lmg_heavy_t8, // 0x54,
@@ -14929,7 +14929,7 @@ version 165 {
         smg_vmp_t8, // 0x21,
         smg_fastfire_t8_operator, // 0x22,
         tr_powersemi_t8_operator, // 0x23,
-        hash_2ea46ca74ebdfcac, // 0x24,
+        buggy_gunner_rifle, // 0x24,
         smg_minigun_t8, // 0x25,
         smg_capacity_t8, // 0x26,
         sniper_fastrechamber_t8_operator, // 0x27,
@@ -14948,13 +14948,13 @@ version 165 {
         melee_bowie_bloody, // 0x34,
         ar_standard_t8_gold, // 0x35,
         tr_midburst_t8_operator, // 0x36,
-        hash_3e9172d77b2101e8, // 0x37,
+        player_light_helicopter_gunner_turret, // 0x37,
         pistol_burst_t8, // 0x38,
         tr_leveraction_t8, // 0x39,
         hash_4385cf507401820f, // 0x3a,
         ar_fastfire_t8, // 0x3b,
         ar_damage_t8_gold, // 0x3c,
-        hash_48206b17d50533c2, // 0x3d,
+        pbr_gunner_rifle, // 0x3d,
         sniper_quickscope_t8, // 0x3e,
         melee_stopsign_t8, // 0x3f,
         lmg_heavy_t8, // 0x40,
@@ -15220,7 +15220,7 @@ version 165 {
         hash_57d9e98fa3f08f76, // 0x26,
         prt_wz_russman, // 0x27,
         prt_wz_misty, // 0x28,
-        hash_62361c68e083d401, // 0x29,
+        prt_wz_technomancer, // 0x29,
         prt_wz_mercenary, // 0x2a,
         prt_wz_scarlett_dlc0, // 0x2b,
         prt_wz_richtofen, // 0x2c,
@@ -15324,7 +15324,7 @@ version 165 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -15726,7 +15726,7 @@ version 164 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -15824,7 +15824,7 @@ version 164 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -15834,7 +15834,7 @@ version 164 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -15872,7 +15872,7 @@ version 164 {
         // offset 0x13b0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x13c8, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1400, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1418, size 0x38
@@ -15954,7 +15954,7 @@ version 164 {
         // offset 0x1c18, size 0x38
         intstat total_shots;
         // offset 0x1c50, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c88, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1cc0, size 0x18
@@ -16006,9 +16006,9 @@ version 164 {
         // offset 0x20d8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2110, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2148, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2180, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x21b8, size 0x38
@@ -16070,7 +16070,7 @@ version 164 {
         // offset 0x3000, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x3038, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x3078, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3090, size 0x38
@@ -16080,7 +16080,7 @@ version 164 {
         // offset 0x3100, size 0x38
         intstat wins_without_down;
         // offset 0x3138, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -16301,7 +16301,7 @@ version 164 {
         smg_fastfire_t8_operator, // 0x2d,
         hatchet, // 0x2e,
         tr_powersemi_t8_operator, // 0x2f,
-        hash_2ea46ca74ebdfcac, // 0x30,
+        buggy_gunner_rifle, // 0x30,
         smg_minigun_t8, // 0x31,
         smg_capacity_t8, // 0x32,
         sniper_fastrechamber_t8_operator, // 0x33,
@@ -16324,7 +16324,7 @@ version 164 {
         melee_bowie_bloody, // 0x44,
         ar_standard_t8_gold, // 0x45,
         tr_midburst_t8_operator, // 0x46,
-        hash_3e9172d77b2101e8, // 0x47,
+        player_light_helicopter_gunner_turret, // 0x47,
         sig_bow_quickshot, // 0x48,
         sig_blade, // 0x49,
         pistol_burst_t8, // 0x4a,
@@ -16333,7 +16333,7 @@ version 164 {
         ar_fastfire_t8, // 0x4d,
         ar_damage_t8_gold, // 0x4e,
         hero_pineapplegun, // 0x4f,
-        hash_48206b17d50533c2, // 0x50,
+        pbr_gunner_rifle, // 0x50,
         sniper_quickscope_t8, // 0x51,
         melee_stopsign_t8, // 0x52,
         lmg_heavy_t8, // 0x53,
@@ -16463,7 +16463,7 @@ version 164 {
         smg_vmp_t8, // 0x20,
         smg_fastfire_t8_operator, // 0x21,
         tr_powersemi_t8_operator, // 0x22,
-        hash_2ea46ca74ebdfcac, // 0x23,
+        buggy_gunner_rifle, // 0x23,
         smg_minigun_t8, // 0x24,
         smg_capacity_t8, // 0x25,
         sniper_fastrechamber_t8_operator, // 0x26,
@@ -16482,13 +16482,13 @@ version 164 {
         melee_bowie_bloody, // 0x33,
         ar_standard_t8_gold, // 0x34,
         tr_midburst_t8_operator, // 0x35,
-        hash_3e9172d77b2101e8, // 0x36,
+        player_light_helicopter_gunner_turret, // 0x36,
         pistol_burst_t8, // 0x37,
         tr_leveraction_t8, // 0x38,
         hash_4385cf507401820f, // 0x39,
         ar_fastfire_t8, // 0x3a,
         ar_damage_t8_gold, // 0x3b,
-        hash_48206b17d50533c2, // 0x3c,
+        pbr_gunner_rifle, // 0x3c,
         sniper_quickscope_t8, // 0x3d,
         melee_stopsign_t8, // 0x3e,
         lmg_heavy_t8, // 0x3f,
@@ -16754,7 +16754,7 @@ version 164 {
         hash_57d9e98fa3f08f76, // 0x26,
         prt_wz_russman, // 0x27,
         prt_wz_misty, // 0x28,
-        hash_62361c68e083d401, // 0x29,
+        prt_wz_technomancer, // 0x29,
         prt_wz_mercenary, // 0x2a,
         prt_wz_scarlett_dlc0, // 0x2b,
         prt_wz_richtofen, // 0x2c,
@@ -16857,7 +16857,7 @@ version 164 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -17259,7 +17259,7 @@ version 163 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -17357,7 +17357,7 @@ version 163 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -17367,7 +17367,7 @@ version 163 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -17405,7 +17405,7 @@ version 163 {
         // offset 0x13b0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x13c8, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1400, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1418, size 0x38
@@ -17487,7 +17487,7 @@ version 163 {
         // offset 0x1c18, size 0x38
         intstat total_shots;
         // offset 0x1c50, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c88, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1cc0, size 0x18
@@ -17539,9 +17539,9 @@ version 163 {
         // offset 0x20d8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2110, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2148, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2180, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x21b8, size 0x38
@@ -17603,7 +17603,7 @@ version 163 {
         // offset 0x3000, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x3038, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x3078, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3090, size 0x38
@@ -17613,7 +17613,7 @@ version 163 {
         // offset 0x3100, size 0x38
         intstat wins_without_down;
         // offset 0x3138, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -17834,7 +17834,7 @@ version 163 {
         smg_fastfire_t8_operator, // 0x2d,
         hatchet, // 0x2e,
         tr_powersemi_t8_operator, // 0x2f,
-        hash_2ea46ca74ebdfcac, // 0x30,
+        buggy_gunner_rifle, // 0x30,
         smg_capacity_t8, // 0x31,
         sniper_fastrechamber_t8_operator, // 0x32,
         sniper_quickscope_t8_operator, // 0x33,
@@ -17856,7 +17856,7 @@ version 163 {
         melee_bowie_bloody, // 0x43,
         ar_standard_t8_gold, // 0x44,
         tr_midburst_t8_operator, // 0x45,
-        hash_3e9172d77b2101e8, // 0x46,
+        player_light_helicopter_gunner_turret, // 0x46,
         sig_bow_quickshot, // 0x47,
         sig_blade, // 0x48,
         pistol_burst_t8, // 0x49,
@@ -17865,7 +17865,7 @@ version 163 {
         ar_fastfire_t8, // 0x4c,
         ar_damage_t8_gold, // 0x4d,
         hero_pineapplegun, // 0x4e,
-        hash_48206b17d50533c2, // 0x4f,
+        pbr_gunner_rifle, // 0x4f,
         sniper_quickscope_t8, // 0x50,
         melee_stopsign_t8, // 0x51,
         lmg_heavy_t8, // 0x52,
@@ -17994,7 +17994,7 @@ version 163 {
         smg_vmp_t8, // 0x20,
         smg_fastfire_t8_operator, // 0x21,
         tr_powersemi_t8_operator, // 0x22,
-        hash_2ea46ca74ebdfcac, // 0x23,
+        buggy_gunner_rifle, // 0x23,
         smg_capacity_t8, // 0x24,
         sniper_fastrechamber_t8_operator, // 0x25,
         sniper_quickscope_t8_operator, // 0x26,
@@ -18012,13 +18012,13 @@ version 163 {
         melee_bowie_bloody, // 0x32,
         ar_standard_t8_gold, // 0x33,
         tr_midburst_t8_operator, // 0x34,
-        hash_3e9172d77b2101e8, // 0x35,
+        player_light_helicopter_gunner_turret, // 0x35,
         pistol_burst_t8, // 0x36,
         tr_leveraction_t8, // 0x37,
         hash_4385cf507401820f, // 0x38,
         ar_fastfire_t8, // 0x39,
         ar_damage_t8_gold, // 0x3a,
-        hash_48206b17d50533c2, // 0x3b,
+        pbr_gunner_rifle, // 0x3b,
         sniper_quickscope_t8, // 0x3c,
         melee_stopsign_t8, // 0x3d,
         lmg_heavy_t8, // 0x3e,
@@ -18283,7 +18283,7 @@ version 163 {
         hash_57d9e98fa3f08f76, // 0x26,
         prt_wz_russman, // 0x27,
         prt_wz_misty, // 0x28,
-        hash_62361c68e083d401, // 0x29,
+        prt_wz_technomancer, // 0x29,
         prt_wz_mercenary, // 0x2a,
         prt_wz_scarlett_dlc0, // 0x2b,
         prt_wz_richtofen, // 0x2c,
@@ -18386,7 +18386,7 @@ version 163 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -18788,7 +18788,7 @@ version 162 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -18886,7 +18886,7 @@ version 162 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -18896,7 +18896,7 @@ version 162 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -18934,7 +18934,7 @@ version 162 {
         // offset 0x13b0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x13c8, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1400, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1418, size 0x38
@@ -19016,7 +19016,7 @@ version 162 {
         // offset 0x1c18, size 0x38
         intstat total_shots;
         // offset 0x1c50, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c88, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1cc0, size 0x18
@@ -19068,9 +19068,9 @@ version 162 {
         // offset 0x20d8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2110, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2148, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2180, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x21b8, size 0x38
@@ -19132,7 +19132,7 @@ version 162 {
         // offset 0x3000, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x3038, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x3078, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3090, size 0x38
@@ -19142,7 +19142,7 @@ version 162 {
         // offset 0x3100, size 0x38
         intstat wins_without_down;
         // offset 0x3138, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -19363,7 +19363,7 @@ version 162 {
         smg_fastfire_t8_operator, // 0x2d,
         hatchet, // 0x2e,
         tr_powersemi_t8_operator, // 0x2f,
-        hash_2ea46ca74ebdfcac, // 0x30,
+        buggy_gunner_rifle, // 0x30,
         smg_capacity_t8, // 0x31,
         sniper_fastrechamber_t8_operator, // 0x32,
         sniper_quickscope_t8_operator, // 0x33,
@@ -19385,7 +19385,7 @@ version 162 {
         melee_bowie_bloody, // 0x43,
         ar_standard_t8_gold, // 0x44,
         tr_midburst_t8_operator, // 0x45,
-        hash_3e9172d77b2101e8, // 0x46,
+        player_light_helicopter_gunner_turret, // 0x46,
         sig_bow_quickshot, // 0x47,
         sig_blade, // 0x48,
         pistol_burst_t8, // 0x49,
@@ -19394,7 +19394,7 @@ version 162 {
         ar_fastfire_t8, // 0x4c,
         ar_damage_t8_gold, // 0x4d,
         hero_pineapplegun, // 0x4e,
-        hash_48206b17d50533c2, // 0x4f,
+        pbr_gunner_rifle, // 0x4f,
         sniper_quickscope_t8, // 0x50,
         melee_stopsign_t8, // 0x51,
         lmg_heavy_t8, // 0x52,
@@ -19523,7 +19523,7 @@ version 162 {
         smg_vmp_t8, // 0x20,
         smg_fastfire_t8_operator, // 0x21,
         tr_powersemi_t8_operator, // 0x22,
-        hash_2ea46ca74ebdfcac, // 0x23,
+        buggy_gunner_rifle, // 0x23,
         smg_capacity_t8, // 0x24,
         sniper_fastrechamber_t8_operator, // 0x25,
         sniper_quickscope_t8_operator, // 0x26,
@@ -19541,13 +19541,13 @@ version 162 {
         melee_bowie_bloody, // 0x32,
         ar_standard_t8_gold, // 0x33,
         tr_midburst_t8_operator, // 0x34,
-        hash_3e9172d77b2101e8, // 0x35,
+        player_light_helicopter_gunner_turret, // 0x35,
         pistol_burst_t8, // 0x36,
         tr_leveraction_t8, // 0x37,
         hash_4385cf507401820f, // 0x38,
         ar_fastfire_t8, // 0x39,
         ar_damage_t8_gold, // 0x3a,
-        hash_48206b17d50533c2, // 0x3b,
+        pbr_gunner_rifle, // 0x3b,
         sniper_quickscope_t8, // 0x3c,
         melee_stopsign_t8, // 0x3d,
         lmg_heavy_t8, // 0x3e,
@@ -19809,7 +19809,7 @@ version 162 {
         hash_57d9e98fa3f08f76, // 0x25,
         prt_wz_russman, // 0x26,
         prt_wz_misty, // 0x27,
-        hash_62361c68e083d401, // 0x28,
+        prt_wz_technomancer, // 0x28,
         prt_wz_mercenary, // 0x29,
         prt_wz_scarlett_dlc0, // 0x2a,
         prt_wz_richtofen, // 0x2b,
@@ -19911,7 +19911,7 @@ version 162 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -20313,7 +20313,7 @@ version 161 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -20411,7 +20411,7 @@ version 161 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -20421,7 +20421,7 @@ version 161 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -20459,7 +20459,7 @@ version 161 {
         // offset 0x13b0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x13c8, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1400, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1418, size 0x38
@@ -20541,7 +20541,7 @@ version 161 {
         // offset 0x1c18, size 0x38
         intstat total_shots;
         // offset 0x1c50, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c88, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1cc0, size 0x18
@@ -20593,9 +20593,9 @@ version 161 {
         // offset 0x20d8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2110, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2148, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2180, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x21b8, size 0x38
@@ -20657,7 +20657,7 @@ version 161 {
         // offset 0x3000, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x3038, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x3078, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3090, size 0x38
@@ -20667,7 +20667,7 @@ version 161 {
         // offset 0x3100, size 0x38
         intstat wins_without_down;
         // offset 0x3138, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -20887,7 +20887,7 @@ version 161 {
         smg_fastfire_t8_operator, // 0x2c,
         hatchet, // 0x2d,
         tr_powersemi_t8_operator, // 0x2e,
-        hash_2ea46ca74ebdfcac, // 0x2f,
+        buggy_gunner_rifle, // 0x2f,
         smg_capacity_t8, // 0x30,
         sniper_fastrechamber_t8_operator, // 0x31,
         sniper_quickscope_t8_operator, // 0x32,
@@ -20909,7 +20909,7 @@ version 161 {
         melee_bowie_bloody, // 0x42,
         ar_standard_t8_gold, // 0x43,
         tr_midburst_t8_operator, // 0x44,
-        hash_3e9172d77b2101e8, // 0x45,
+        player_light_helicopter_gunner_turret, // 0x45,
         sig_bow_quickshot, // 0x46,
         sig_blade, // 0x47,
         pistol_burst_t8, // 0x48,
@@ -20918,7 +20918,7 @@ version 161 {
         ar_fastfire_t8, // 0x4b,
         ar_damage_t8_gold, // 0x4c,
         hero_pineapplegun, // 0x4d,
-        hash_48206b17d50533c2, // 0x4e,
+        pbr_gunner_rifle, // 0x4e,
         sniper_quickscope_t8, // 0x4f,
         melee_stopsign_t8, // 0x50,
         lmg_heavy_t8, // 0x51,
@@ -21045,7 +21045,7 @@ version 161 {
         smg_vmp_t8, // 0x1f,
         smg_fastfire_t8_operator, // 0x20,
         tr_powersemi_t8_operator, // 0x21,
-        hash_2ea46ca74ebdfcac, // 0x22,
+        buggy_gunner_rifle, // 0x22,
         smg_capacity_t8, // 0x23,
         sniper_fastrechamber_t8_operator, // 0x24,
         sniper_quickscope_t8_operator, // 0x25,
@@ -21063,13 +21063,13 @@ version 161 {
         melee_bowie_bloody, // 0x31,
         ar_standard_t8_gold, // 0x32,
         tr_midburst_t8_operator, // 0x33,
-        hash_3e9172d77b2101e8, // 0x34,
+        player_light_helicopter_gunner_turret, // 0x34,
         pistol_burst_t8, // 0x35,
         tr_leveraction_t8, // 0x36,
         hash_4385cf507401820f, // 0x37,
         ar_fastfire_t8, // 0x38,
         ar_damage_t8_gold, // 0x39,
-        hash_48206b17d50533c2, // 0x3a,
+        pbr_gunner_rifle, // 0x3a,
         sniper_quickscope_t8, // 0x3b,
         melee_stopsign_t8, // 0x3c,
         lmg_heavy_t8, // 0x3d,
@@ -21330,7 +21330,7 @@ version 161 {
         hash_57d9e98fa3f08f76, // 0x25,
         prt_wz_russman, // 0x26,
         prt_wz_misty, // 0x27,
-        hash_62361c68e083d401, // 0x28,
+        prt_wz_technomancer, // 0x28,
         prt_wz_mercenary, // 0x29,
         prt_wz_scarlett_dlc0, // 0x2a,
         prt_wz_richtofen, // 0x2b,
@@ -21432,7 +21432,7 @@ version 161 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -21834,7 +21834,7 @@ version 160 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -21932,7 +21932,7 @@ version 160 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -21942,7 +21942,7 @@ version 160 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -21980,7 +21980,7 @@ version 160 {
         // offset 0x13b0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x13c8, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1400, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1418, size 0x38
@@ -22062,7 +22062,7 @@ version 160 {
         // offset 0x1c18, size 0x38
         intstat total_shots;
         // offset 0x1c50, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c88, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1cc0, size 0x18
@@ -22114,9 +22114,9 @@ version 160 {
         // offset 0x20d8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2110, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2148, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2180, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x21b8, size 0x38
@@ -22178,7 +22178,7 @@ version 160 {
         // offset 0x3000, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x3038, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x3078, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3090, size 0x38
@@ -22188,7 +22188,7 @@ version 160 {
         // offset 0x3100, size 0x38
         intstat wins_without_down;
         // offset 0x3138, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -22408,7 +22408,7 @@ version 160 {
         smg_fastfire_t8_operator, // 0x2c,
         hatchet, // 0x2d,
         tr_powersemi_t8_operator, // 0x2e,
-        hash_2ea46ca74ebdfcac, // 0x2f,
+        buggy_gunner_rifle, // 0x2f,
         smg_capacity_t8, // 0x30,
         sniper_fastrechamber_t8_operator, // 0x31,
         sniper_quickscope_t8_operator, // 0x32,
@@ -22430,7 +22430,7 @@ version 160 {
         melee_bowie_bloody, // 0x42,
         ar_standard_t8_gold, // 0x43,
         tr_midburst_t8_operator, // 0x44,
-        hash_3e9172d77b2101e8, // 0x45,
+        player_light_helicopter_gunner_turret, // 0x45,
         sig_bow_quickshot, // 0x46,
         sig_blade, // 0x47,
         pistol_burst_t8, // 0x48,
@@ -22439,7 +22439,7 @@ version 160 {
         ar_fastfire_t8, // 0x4b,
         ar_damage_t8_gold, // 0x4c,
         hero_pineapplegun, // 0x4d,
-        hash_48206b17d50533c2, // 0x4e,
+        pbr_gunner_rifle, // 0x4e,
         sniper_quickscope_t8, // 0x4f,
         melee_stopsign_t8, // 0x50,
         lmg_heavy_t8, // 0x51,
@@ -22565,7 +22565,7 @@ version 160 {
         shotgun_pump_t8_gold, // 0x1f,
         smg_fastfire_t8_operator, // 0x20,
         tr_powersemi_t8_operator, // 0x21,
-        hash_2ea46ca74ebdfcac, // 0x22,
+        buggy_gunner_rifle, // 0x22,
         smg_capacity_t8, // 0x23,
         sniper_fastrechamber_t8_operator, // 0x24,
         sniper_quickscope_t8_operator, // 0x25,
@@ -22583,13 +22583,13 @@ version 160 {
         melee_bowie_bloody, // 0x31,
         ar_standard_t8_gold, // 0x32,
         tr_midburst_t8_operator, // 0x33,
-        hash_3e9172d77b2101e8, // 0x34,
+        player_light_helicopter_gunner_turret, // 0x34,
         pistol_burst_t8, // 0x35,
         tr_leveraction_t8, // 0x36,
         hash_4385cf507401820f, // 0x37,
         ar_fastfire_t8, // 0x38,
         ar_damage_t8_gold, // 0x39,
-        hash_48206b17d50533c2, // 0x3a,
+        pbr_gunner_rifle, // 0x3a,
         sniper_quickscope_t8, // 0x3b,
         melee_stopsign_t8, // 0x3c,
         lmg_heavy_t8, // 0x3d,
@@ -22849,7 +22849,7 @@ version 160 {
         hash_57d9e98fa3f08f76, // 0x25,
         prt_wz_russman, // 0x26,
         prt_wz_misty, // 0x27,
-        hash_62361c68e083d401, // 0x28,
+        prt_wz_technomancer, // 0x28,
         prt_wz_mercenary, // 0x29,
         prt_wz_scarlett_dlc0, // 0x2a,
         prt_wz_richtofen, // 0x2b,
@@ -22951,7 +22951,7 @@ version 160 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -23353,7 +23353,7 @@ version 159 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -23451,7 +23451,7 @@ version 159 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -23461,7 +23461,7 @@ version 159 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -23499,7 +23499,7 @@ version 159 {
         // offset 0x13b0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x13c8, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1400, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1418, size 0x38
@@ -23579,7 +23579,7 @@ version 159 {
         // offset 0x1bd8, size 0x38
         intstat total_shots;
         // offset 0x1c10, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c48, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c80, size 0x18
@@ -23631,9 +23631,9 @@ version 159 {
         // offset 0x2098, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x20d0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2108, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2140, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2178, size 0x38
@@ -23697,7 +23697,7 @@ version 159 {
         // offset 0x3000, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x3038, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x3078, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3090, size 0x38
@@ -23707,7 +23707,7 @@ version 159 {
         // offset 0x3100, size 0x38
         intstat wins_without_down;
         // offset 0x3138, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -23927,7 +23927,7 @@ version 159 {
         smg_fastfire_t8_operator, // 0x2c,
         hatchet, // 0x2d,
         tr_powersemi_t8_operator, // 0x2e,
-        hash_2ea46ca74ebdfcac, // 0x2f,
+        buggy_gunner_rifle, // 0x2f,
         smg_capacity_t8, // 0x30,
         sniper_fastrechamber_t8_operator, // 0x31,
         sniper_quickscope_t8_operator, // 0x32,
@@ -23949,7 +23949,7 @@ version 159 {
         melee_bowie_bloody, // 0x42,
         ar_standard_t8_gold, // 0x43,
         tr_midburst_t8_operator, // 0x44,
-        hash_3e9172d77b2101e8, // 0x45,
+        player_light_helicopter_gunner_turret, // 0x45,
         sig_bow_quickshot, // 0x46,
         sig_blade, // 0x47,
         pistol_burst_t8, // 0x48,
@@ -23958,7 +23958,7 @@ version 159 {
         ar_fastfire_t8, // 0x4b,
         ar_damage_t8_gold, // 0x4c,
         hero_pineapplegun, // 0x4d,
-        hash_48206b17d50533c2, // 0x4e,
+        pbr_gunner_rifle, // 0x4e,
         sniper_quickscope_t8, // 0x4f,
         melee_stopsign_t8, // 0x50,
         lmg_heavy_t8, // 0x51,
@@ -24084,7 +24084,7 @@ version 159 {
         shotgun_pump_t8_gold, // 0x1f,
         smg_fastfire_t8_operator, // 0x20,
         tr_powersemi_t8_operator, // 0x21,
-        hash_2ea46ca74ebdfcac, // 0x22,
+        buggy_gunner_rifle, // 0x22,
         smg_capacity_t8, // 0x23,
         sniper_fastrechamber_t8_operator, // 0x24,
         sniper_quickscope_t8_operator, // 0x25,
@@ -24102,13 +24102,13 @@ version 159 {
         melee_bowie_bloody, // 0x31,
         ar_standard_t8_gold, // 0x32,
         tr_midburst_t8_operator, // 0x33,
-        hash_3e9172d77b2101e8, // 0x34,
+        player_light_helicopter_gunner_turret, // 0x34,
         pistol_burst_t8, // 0x35,
         tr_leveraction_t8, // 0x36,
         hash_4385cf507401820f, // 0x37,
         ar_fastfire_t8, // 0x38,
         ar_damage_t8_gold, // 0x39,
-        hash_48206b17d50533c2, // 0x3a,
+        pbr_gunner_rifle, // 0x3a,
         sniper_quickscope_t8, // 0x3b,
         melee_stopsign_t8, // 0x3c,
         lmg_heavy_t8, // 0x3d,
@@ -24368,7 +24368,7 @@ version 159 {
         hash_57d9e98fa3f08f76, // 0x25,
         prt_wz_russman, // 0x26,
         prt_wz_misty, // 0x27,
-        hash_62361c68e083d401, // 0x28,
+        prt_wz_technomancer, // 0x28,
         prt_wz_mercenary, // 0x29,
         prt_wz_scarlett_dlc0, // 0x2a,
         prt_wz_richtofen, // 0x2b,
@@ -24470,7 +24470,7 @@ version 159 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -24872,7 +24872,7 @@ version 158 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -24970,7 +24970,7 @@ version 158 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -24980,7 +24980,7 @@ version 158 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -25018,7 +25018,7 @@ version 158 {
         // offset 0x13b0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x13c8, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1400, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1418, size 0x38
@@ -25098,7 +25098,7 @@ version 158 {
         // offset 0x1bd8, size 0x38
         intstat total_shots;
         // offset 0x1c10, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c48, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c80, size 0x18
@@ -25150,9 +25150,9 @@ version 158 {
         // offset 0x2098, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x20d0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2108, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2140, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2178, size 0x38
@@ -25216,7 +25216,7 @@ version 158 {
         // offset 0x3000, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x3038, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x3078, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3090, size 0x38
@@ -25226,7 +25226,7 @@ version 158 {
         // offset 0x3100, size 0x38
         intstat wins_without_down;
         // offset 0x3138, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -25445,7 +25445,7 @@ version 158 {
         smg_fastfire_t8_operator, // 0x2b,
         hatchet, // 0x2c,
         tr_powersemi_t8_operator, // 0x2d,
-        hash_2ea46ca74ebdfcac, // 0x2e,
+        buggy_gunner_rifle, // 0x2e,
         smg_capacity_t8, // 0x2f,
         sniper_fastrechamber_t8_operator, // 0x30,
         sniper_quickscope_t8_operator, // 0x31,
@@ -25467,7 +25467,7 @@ version 158 {
         melee_bowie_bloody, // 0x41,
         ar_standard_t8_gold, // 0x42,
         tr_midburst_t8_operator, // 0x43,
-        hash_3e9172d77b2101e8, // 0x44,
+        player_light_helicopter_gunner_turret, // 0x44,
         sig_bow_quickshot, // 0x45,
         sig_blade, // 0x46,
         pistol_burst_t8, // 0x47,
@@ -25476,7 +25476,7 @@ version 158 {
         ar_fastfire_t8, // 0x4a,
         ar_damage_t8_gold, // 0x4b,
         hero_pineapplegun, // 0x4c,
-        hash_48206b17d50533c2, // 0x4d,
+        pbr_gunner_rifle, // 0x4d,
         sniper_quickscope_t8, // 0x4e,
         melee_stopsign_t8, // 0x4f,
         lmg_heavy_t8, // 0x50,
@@ -25601,7 +25601,7 @@ version 158 {
         shotgun_pump_t8_gold, // 0x1e,
         smg_fastfire_t8_operator, // 0x1f,
         tr_powersemi_t8_operator, // 0x20,
-        hash_2ea46ca74ebdfcac, // 0x21,
+        buggy_gunner_rifle, // 0x21,
         smg_capacity_t8, // 0x22,
         sniper_fastrechamber_t8_operator, // 0x23,
         sniper_quickscope_t8_operator, // 0x24,
@@ -25619,13 +25619,13 @@ version 158 {
         melee_bowie_bloody, // 0x30,
         ar_standard_t8_gold, // 0x31,
         tr_midburst_t8_operator, // 0x32,
-        hash_3e9172d77b2101e8, // 0x33,
+        player_light_helicopter_gunner_turret, // 0x33,
         pistol_burst_t8, // 0x34,
         tr_leveraction_t8, // 0x35,
         hash_4385cf507401820f, // 0x36,
         ar_fastfire_t8, // 0x37,
         ar_damage_t8_gold, // 0x38,
-        hash_48206b17d50533c2, // 0x39,
+        pbr_gunner_rifle, // 0x39,
         sniper_quickscope_t8, // 0x3a,
         melee_stopsign_t8, // 0x3b,
         lmg_heavy_t8, // 0x3c,
@@ -25885,7 +25885,7 @@ version 158 {
         hash_57d9e98fa3f08f76, // 0x25,
         prt_wz_russman, // 0x26,
         prt_wz_misty, // 0x27,
-        hash_62361c68e083d401, // 0x28,
+        prt_wz_technomancer, // 0x28,
         prt_wz_mercenary, // 0x29,
         prt_wz_scarlett_dlc0, // 0x2a,
         prt_wz_richtofen, // 0x2b,
@@ -25987,7 +25987,7 @@ version 158 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -26389,7 +26389,7 @@ version 157 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -26487,7 +26487,7 @@ version 157 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -26497,7 +26497,7 @@ version 157 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -26535,7 +26535,7 @@ version 157 {
         // offset 0x13b0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x13c8, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1400, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1418, size 0x38
@@ -26615,7 +26615,7 @@ version 157 {
         // offset 0x1bd8, size 0x38
         intstat total_shots;
         // offset 0x1c10, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c48, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c80, size 0x18
@@ -26667,9 +26667,9 @@ version 157 {
         // offset 0x2098, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x20d0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2108, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2140, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2178, size 0x38
@@ -26733,7 +26733,7 @@ version 157 {
         // offset 0x3000, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x3038, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x3078, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3090, size 0x38
@@ -26743,7 +26743,7 @@ version 157 {
         // offset 0x3100, size 0x38
         intstat wins_without_down;
         // offset 0x3138, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -26962,7 +26962,7 @@ version 157 {
         smg_fastfire_t8_operator, // 0x2b,
         hatchet, // 0x2c,
         tr_powersemi_t8_operator, // 0x2d,
-        hash_2ea46ca74ebdfcac, // 0x2e,
+        buggy_gunner_rifle, // 0x2e,
         smg_capacity_t8, // 0x2f,
         sniper_fastrechamber_t8_operator, // 0x30,
         sniper_quickscope_t8_operator, // 0x31,
@@ -26984,7 +26984,7 @@ version 157 {
         melee_bowie_bloody, // 0x41,
         ar_standard_t8_gold, // 0x42,
         tr_midburst_t8_operator, // 0x43,
-        hash_3e9172d77b2101e8, // 0x44,
+        player_light_helicopter_gunner_turret, // 0x44,
         sig_bow_quickshot, // 0x45,
         sig_blade, // 0x46,
         pistol_burst_t8, // 0x47,
@@ -26993,7 +26993,7 @@ version 157 {
         ar_fastfire_t8, // 0x4a,
         ar_damage_t8_gold, // 0x4b,
         hero_pineapplegun, // 0x4c,
-        hash_48206b17d50533c2, // 0x4d,
+        pbr_gunner_rifle, // 0x4d,
         sniper_quickscope_t8, // 0x4e,
         melee_stopsign_t8, // 0x4f,
         lmg_heavy_t8, // 0x50,
@@ -27118,7 +27118,7 @@ version 157 {
         shotgun_pump_t8_gold, // 0x1e,
         smg_fastfire_t8_operator, // 0x1f,
         tr_powersemi_t8_operator, // 0x20,
-        hash_2ea46ca74ebdfcac, // 0x21,
+        buggy_gunner_rifle, // 0x21,
         smg_capacity_t8, // 0x22,
         sniper_fastrechamber_t8_operator, // 0x23,
         sniper_quickscope_t8_operator, // 0x24,
@@ -27136,13 +27136,13 @@ version 157 {
         melee_bowie_bloody, // 0x30,
         ar_standard_t8_gold, // 0x31,
         tr_midburst_t8_operator, // 0x32,
-        hash_3e9172d77b2101e8, // 0x33,
+        player_light_helicopter_gunner_turret, // 0x33,
         pistol_burst_t8, // 0x34,
         tr_leveraction_t8, // 0x35,
         hash_4385cf507401820f, // 0x36,
         ar_fastfire_t8, // 0x37,
         ar_damage_t8_gold, // 0x38,
-        hash_48206b17d50533c2, // 0x39,
+        pbr_gunner_rifle, // 0x39,
         sniper_quickscope_t8, // 0x3a,
         melee_stopsign_t8, // 0x3b,
         lmg_heavy_t8, // 0x3c,
@@ -27401,7 +27401,7 @@ version 157 {
         hash_57d9e98fa3f08f76, // 0x25,
         prt_wz_russman, // 0x26,
         prt_wz_misty, // 0x27,
-        hash_62361c68e083d401, // 0x28,
+        prt_wz_technomancer, // 0x28,
         prt_wz_mercenary, // 0x29,
         prt_wz_scarlett_dlc0, // 0x2a,
         prt_wz_richtofen, // 0x2b,
@@ -27503,7 +27503,7 @@ version 157 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -27905,7 +27905,7 @@ version 156 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -28003,7 +28003,7 @@ version 156 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -28013,7 +28013,7 @@ version 156 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -28051,7 +28051,7 @@ version 156 {
         // offset 0x13b0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x13c8, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1400, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1418, size 0x38
@@ -28131,7 +28131,7 @@ version 156 {
         // offset 0x1bd8, size 0x38
         intstat total_shots;
         // offset 0x1c10, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c48, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c80, size 0x18
@@ -28183,9 +28183,9 @@ version 156 {
         // offset 0x2098, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x20d0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2108, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2140, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2178, size 0x38
@@ -28249,7 +28249,7 @@ version 156 {
         // offset 0x3000, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x3038, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x3078, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3090, size 0x38
@@ -28259,7 +28259,7 @@ version 156 {
         // offset 0x3100, size 0x38
         intstat wins_without_down;
         // offset 0x3138, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -28478,7 +28478,7 @@ version 156 {
         smg_fastfire_t8_operator, // 0x2b,
         hatchet, // 0x2c,
         tr_powersemi_t8_operator, // 0x2d,
-        hash_2ea46ca74ebdfcac, // 0x2e,
+        buggy_gunner_rifle, // 0x2e,
         smg_capacity_t8, // 0x2f,
         sniper_fastrechamber_t8_operator, // 0x30,
         sniper_quickscope_t8_operator, // 0x31,
@@ -28500,7 +28500,7 @@ version 156 {
         melee_bowie_bloody, // 0x41,
         ar_standard_t8_gold, // 0x42,
         tr_midburst_t8_operator, // 0x43,
-        hash_3e9172d77b2101e8, // 0x44,
+        player_light_helicopter_gunner_turret, // 0x44,
         sig_bow_quickshot, // 0x45,
         sig_blade, // 0x46,
         pistol_burst_t8, // 0x47,
@@ -28509,7 +28509,7 @@ version 156 {
         ar_fastfire_t8, // 0x4a,
         ar_damage_t8_gold, // 0x4b,
         hero_pineapplegun, // 0x4c,
-        hash_48206b17d50533c2, // 0x4d,
+        pbr_gunner_rifle, // 0x4d,
         sniper_quickscope_t8, // 0x4e,
         melee_stopsign_t8, // 0x4f,
         lmg_heavy_t8, // 0x50,
@@ -28634,7 +28634,7 @@ version 156 {
         shotgun_pump_t8_gold, // 0x1e,
         smg_fastfire_t8_operator, // 0x1f,
         tr_powersemi_t8_operator, // 0x20,
-        hash_2ea46ca74ebdfcac, // 0x21,
+        buggy_gunner_rifle, // 0x21,
         smg_capacity_t8, // 0x22,
         sniper_fastrechamber_t8_operator, // 0x23,
         sniper_quickscope_t8_operator, // 0x24,
@@ -28652,13 +28652,13 @@ version 156 {
         melee_bowie_bloody, // 0x30,
         ar_standard_t8_gold, // 0x31,
         tr_midburst_t8_operator, // 0x32,
-        hash_3e9172d77b2101e8, // 0x33,
+        player_light_helicopter_gunner_turret, // 0x33,
         pistol_burst_t8, // 0x34,
         tr_leveraction_t8, // 0x35,
         hash_4385cf507401820f, // 0x36,
         ar_fastfire_t8, // 0x37,
         ar_damage_t8_gold, // 0x38,
-        hash_48206b17d50533c2, // 0x39,
+        pbr_gunner_rifle, // 0x39,
         sniper_quickscope_t8, // 0x3a,
         melee_stopsign_t8, // 0x3b,
         lmg_heavy_t8, // 0x3c,
@@ -28917,7 +28917,7 @@ version 156 {
         hash_57d9e98fa3f08f76, // 0x25,
         prt_wz_russman, // 0x26,
         prt_wz_misty, // 0x27,
-        hash_62361c68e083d401, // 0x28,
+        prt_wz_technomancer, // 0x28,
         prt_wz_mercenary, // 0x29,
         prt_wz_scarlett_dlc0, // 0x2a,
         prt_wz_richtofen, // 0x2b,
@@ -29018,7 +29018,7 @@ version 156 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -29420,7 +29420,7 @@ version 155 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -29518,7 +29518,7 @@ version 155 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -29528,7 +29528,7 @@ version 155 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -29566,7 +29566,7 @@ version 155 {
         // offset 0x13b0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x13c8, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1400, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1418, size 0x38
@@ -29646,7 +29646,7 @@ version 155 {
         // offset 0x1bd8, size 0x38
         intstat total_shots;
         // offset 0x1c10, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c48, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c80, size 0x18
@@ -29698,9 +29698,9 @@ version 155 {
         // offset 0x2098, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x20d0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2108, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2140, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2178, size 0x38
@@ -29764,7 +29764,7 @@ version 155 {
         // offset 0x3000, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x3038, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x3078, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3090, size 0x38
@@ -29774,7 +29774,7 @@ version 155 {
         // offset 0x3100, size 0x38
         intstat wins_without_down;
         // offset 0x3138, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -29993,7 +29993,7 @@ version 155 {
         smg_fastfire_t8_operator, // 0x2b,
         hatchet, // 0x2c,
         tr_powersemi_t8_operator, // 0x2d,
-        hash_2ea46ca74ebdfcac, // 0x2e,
+        buggy_gunner_rifle, // 0x2e,
         smg_capacity_t8, // 0x2f,
         sniper_fastrechamber_t8_operator, // 0x30,
         sniper_quickscope_t8_operator, // 0x31,
@@ -30015,7 +30015,7 @@ version 155 {
         melee_bowie_bloody, // 0x41,
         ar_standard_t8_gold, // 0x42,
         tr_midburst_t8_operator, // 0x43,
-        hash_3e9172d77b2101e8, // 0x44,
+        player_light_helicopter_gunner_turret, // 0x44,
         sig_bow_quickshot, // 0x45,
         sig_blade, // 0x46,
         pistol_burst_t8, // 0x47,
@@ -30024,7 +30024,7 @@ version 155 {
         ar_fastfire_t8, // 0x4a,
         ar_damage_t8_gold, // 0x4b,
         hero_pineapplegun, // 0x4c,
-        hash_48206b17d50533c2, // 0x4d,
+        pbr_gunner_rifle, // 0x4d,
         sniper_quickscope_t8, // 0x4e,
         melee_stopsign_t8, // 0x4f,
         lmg_heavy_t8, // 0x50,
@@ -30149,7 +30149,7 @@ version 155 {
         shotgun_pump_t8_gold, // 0x1e,
         smg_fastfire_t8_operator, // 0x1f,
         tr_powersemi_t8_operator, // 0x20,
-        hash_2ea46ca74ebdfcac, // 0x21,
+        buggy_gunner_rifle, // 0x21,
         smg_capacity_t8, // 0x22,
         sniper_fastrechamber_t8_operator, // 0x23,
         sniper_quickscope_t8_operator, // 0x24,
@@ -30167,13 +30167,13 @@ version 155 {
         melee_bowie_bloody, // 0x30,
         ar_standard_t8_gold, // 0x31,
         tr_midburst_t8_operator, // 0x32,
-        hash_3e9172d77b2101e8, // 0x33,
+        player_light_helicopter_gunner_turret, // 0x33,
         pistol_burst_t8, // 0x34,
         tr_leveraction_t8, // 0x35,
         hash_4385cf507401820f, // 0x36,
         ar_fastfire_t8, // 0x37,
         ar_damage_t8_gold, // 0x38,
-        hash_48206b17d50533c2, // 0x39,
+        pbr_gunner_rifle, // 0x39,
         sniper_quickscope_t8, // 0x3a,
         melee_stopsign_t8, // 0x3b,
         lmg_heavy_t8, // 0x3c,
@@ -30432,7 +30432,7 @@ version 155 {
         hash_57d9e98fa3f08f76, // 0x25,
         prt_wz_russman, // 0x26,
         prt_wz_misty, // 0x27,
-        hash_62361c68e083d401, // 0x28,
+        prt_wz_technomancer, // 0x28,
         prt_wz_mercenary, // 0x29,
         prt_wz_scarlett_dlc0, // 0x2a,
         prt_wz_richtofen, // 0x2b,
@@ -30534,7 +30534,7 @@ version 155 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_503737080f039330, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         hash_64c3f9cd66aa1d0d, // 0x18,
@@ -30935,7 +30935,7 @@ version 154 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -31033,7 +31033,7 @@ version 154 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -31043,7 +31043,7 @@ version 154 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -31081,7 +31081,7 @@ version 154 {
         // offset 0x13b0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x13c8, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1400, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1418, size 0x38
@@ -31161,7 +31161,7 @@ version 154 {
         // offset 0x1bd8, size 0x38
         intstat total_shots;
         // offset 0x1c10, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c48, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c80, size 0x18
@@ -31213,9 +31213,9 @@ version 154 {
         // offset 0x2098, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x20d0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2108, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2140, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2178, size 0x38
@@ -31279,7 +31279,7 @@ version 154 {
         // offset 0x3000, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x3038, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x3078, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3090, size 0x38
@@ -31289,7 +31289,7 @@ version 154 {
         // offset 0x3100, size 0x38
         intstat wins_without_down;
         // offset 0x3138, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -31508,7 +31508,7 @@ version 154 {
         smg_fastfire_t8_operator, // 0x2b,
         hatchet, // 0x2c,
         tr_powersemi_t8_operator, // 0x2d,
-        hash_2ea46ca74ebdfcac, // 0x2e,
+        buggy_gunner_rifle, // 0x2e,
         smg_capacity_t8, // 0x2f,
         sniper_fastrechamber_t8_operator, // 0x30,
         sniper_quickscope_t8_operator, // 0x31,
@@ -31530,7 +31530,7 @@ version 154 {
         melee_bowie_bloody, // 0x41,
         ar_standard_t8_gold, // 0x42,
         tr_midburst_t8_operator, // 0x43,
-        hash_3e9172d77b2101e8, // 0x44,
+        player_light_helicopter_gunner_turret, // 0x44,
         sig_bow_quickshot, // 0x45,
         sig_blade, // 0x46,
         pistol_burst_t8, // 0x47,
@@ -31539,7 +31539,7 @@ version 154 {
         ar_fastfire_t8, // 0x4a,
         ar_damage_t8_gold, // 0x4b,
         hero_pineapplegun, // 0x4c,
-        hash_48206b17d50533c2, // 0x4d,
+        pbr_gunner_rifle, // 0x4d,
         sniper_quickscope_t8, // 0x4e,
         melee_stopsign_t8, // 0x4f,
         lmg_heavy_t8, // 0x50,
@@ -31664,7 +31664,7 @@ version 154 {
         shotgun_pump_t8_gold, // 0x1e,
         smg_fastfire_t8_operator, // 0x1f,
         tr_powersemi_t8_operator, // 0x20,
-        hash_2ea46ca74ebdfcac, // 0x21,
+        buggy_gunner_rifle, // 0x21,
         smg_capacity_t8, // 0x22,
         sniper_fastrechamber_t8_operator, // 0x23,
         sniper_quickscope_t8_operator, // 0x24,
@@ -31682,13 +31682,13 @@ version 154 {
         melee_bowie_bloody, // 0x30,
         ar_standard_t8_gold, // 0x31,
         tr_midburst_t8_operator, // 0x32,
-        hash_3e9172d77b2101e8, // 0x33,
+        player_light_helicopter_gunner_turret, // 0x33,
         pistol_burst_t8, // 0x34,
         tr_leveraction_t8, // 0x35,
         hash_4385cf507401820f, // 0x36,
         ar_fastfire_t8, // 0x37,
         ar_damage_t8_gold, // 0x38,
-        hash_48206b17d50533c2, // 0x39,
+        pbr_gunner_rifle, // 0x39,
         sniper_quickscope_t8, // 0x3a,
         melee_stopsign_t8, // 0x3b,
         lmg_heavy_t8, // 0x3c,
@@ -31947,7 +31947,7 @@ version 154 {
         hash_57d9e98fa3f08f76, // 0x25,
         prt_wz_russman, // 0x26,
         prt_wz_misty, // 0x27,
-        hash_62361c68e083d401, // 0x28,
+        prt_wz_technomancer, // 0x28,
         prt_wz_mercenary, // 0x29,
         prt_wz_scarlett_dlc0, // 0x2a,
         prt_wz_richtofen, // 0x2b,
@@ -32048,7 +32048,7 @@ version 154 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_503737080f039330, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         hash_64c3f9cd66aa1d0d, // 0x18,
@@ -32449,7 +32449,7 @@ version 153 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -32547,7 +32547,7 @@ version 153 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -32557,7 +32557,7 @@ version 153 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -32595,7 +32595,7 @@ version 153 {
         // offset 0x13b0, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x13c8, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1400, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1418, size 0x38
@@ -32675,7 +32675,7 @@ version 153 {
         // offset 0x1bd8, size 0x38
         intstat total_shots;
         // offset 0x1c10, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c48, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c80, size 0x18
@@ -32727,9 +32727,9 @@ version 153 {
         // offset 0x2098, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x20d0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2108, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2140, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2178, size 0x38
@@ -32793,7 +32793,7 @@ version 153 {
         // offset 0x3000, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x3038, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x3078, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x3090, size 0x38
@@ -32803,7 +32803,7 @@ version 153 {
         // offset 0x3100, size 0x38
         intstat wins_without_down;
         // offset 0x3138, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -33022,7 +33022,7 @@ version 153 {
         smg_fastfire_t8_operator, // 0x2b,
         hatchet, // 0x2c,
         tr_powersemi_t8_operator, // 0x2d,
-        hash_2ea46ca74ebdfcac, // 0x2e,
+        buggy_gunner_rifle, // 0x2e,
         smg_capacity_t8, // 0x2f,
         sniper_fastrechamber_t8_operator, // 0x30,
         sniper_quickscope_t8_operator, // 0x31,
@@ -33044,7 +33044,7 @@ version 153 {
         melee_bowie_bloody, // 0x41,
         ar_standard_t8_gold, // 0x42,
         tr_midburst_t8_operator, // 0x43,
-        hash_3e9172d77b2101e8, // 0x44,
+        player_light_helicopter_gunner_turret, // 0x44,
         sig_bow_quickshot, // 0x45,
         sig_blade, // 0x46,
         pistol_burst_t8, // 0x47,
@@ -33053,7 +33053,7 @@ version 153 {
         ar_fastfire_t8, // 0x4a,
         ar_damage_t8_gold, // 0x4b,
         hero_pineapplegun, // 0x4c,
-        hash_48206b17d50533c2, // 0x4d,
+        pbr_gunner_rifle, // 0x4d,
         sniper_quickscope_t8, // 0x4e,
         melee_stopsign_t8, // 0x4f,
         lmg_heavy_t8, // 0x50,
@@ -33178,7 +33178,7 @@ version 153 {
         shotgun_pump_t8_gold, // 0x1e,
         smg_fastfire_t8_operator, // 0x1f,
         tr_powersemi_t8_operator, // 0x20,
-        hash_2ea46ca74ebdfcac, // 0x21,
+        buggy_gunner_rifle, // 0x21,
         smg_capacity_t8, // 0x22,
         sniper_fastrechamber_t8_operator, // 0x23,
         sniper_quickscope_t8_operator, // 0x24,
@@ -33196,13 +33196,13 @@ version 153 {
         melee_bowie_bloody, // 0x30,
         ar_standard_t8_gold, // 0x31,
         tr_midburst_t8_operator, // 0x32,
-        hash_3e9172d77b2101e8, // 0x33,
+        player_light_helicopter_gunner_turret, // 0x33,
         pistol_burst_t8, // 0x34,
         tr_leveraction_t8, // 0x35,
         hash_4385cf507401820f, // 0x36,
         ar_fastfire_t8, // 0x37,
         ar_damage_t8_gold, // 0x38,
-        hash_48206b17d50533c2, // 0x39,
+        pbr_gunner_rifle, // 0x39,
         sniper_quickscope_t8, // 0x3a,
         melee_stopsign_t8, // 0x3b,
         lmg_heavy_t8, // 0x3c,
@@ -33461,7 +33461,7 @@ version 153 {
         hash_57d9e98fa3f08f76, // 0x25,
         prt_wz_russman, // 0x26,
         prt_wz_misty, // 0x27,
-        hash_62361c68e083d401, // 0x28,
+        prt_wz_technomancer, // 0x28,
         prt_wz_mercenary, // 0x29,
         prt_wz_scarlett_dlc0, // 0x2a,
         prt_wz_richtofen, // 0x2b,
@@ -33561,7 +33561,7 @@ version 153 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -33962,7 +33962,7 @@ version 152 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -34060,7 +34060,7 @@ version 152 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -34070,7 +34070,7 @@ version 152 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -34106,7 +34106,7 @@ version 152 {
         // offset 0x1370, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1388, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x13c0, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x13d8, size 0x38
@@ -34186,7 +34186,7 @@ version 152 {
         // offset 0x1b98, size 0x38
         intstat total_shots;
         // offset 0x1bd0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c08, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c40, size 0x18
@@ -34238,9 +34238,9 @@ version 152 {
         // offset 0x2058, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2090, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x20c8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2100, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2138, size 0x38
@@ -34300,7 +34300,7 @@ version 152 {
         // offset 0x2f40, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2f78, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2fb8, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x2fd0, size 0x38
@@ -34310,7 +34310,7 @@ version 152 {
         // offset 0x3040, size 0x38
         intstat wins_without_down;
         // offset 0x3078, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -34529,7 +34529,7 @@ version 152 {
         smg_fastfire_t8_operator, // 0x2b,
         hatchet, // 0x2c,
         tr_powersemi_t8_operator, // 0x2d,
-        hash_2ea46ca74ebdfcac, // 0x2e,
+        buggy_gunner_rifle, // 0x2e,
         smg_capacity_t8, // 0x2f,
         sniper_fastrechamber_t8_operator, // 0x30,
         sniper_quickscope_t8_operator, // 0x31,
@@ -34551,7 +34551,7 @@ version 152 {
         melee_bowie_bloody, // 0x41,
         ar_standard_t8_gold, // 0x42,
         tr_midburst_t8_operator, // 0x43,
-        hash_3e9172d77b2101e8, // 0x44,
+        player_light_helicopter_gunner_turret, // 0x44,
         sig_bow_quickshot, // 0x45,
         sig_blade, // 0x46,
         pistol_burst_t8, // 0x47,
@@ -34560,7 +34560,7 @@ version 152 {
         ar_fastfire_t8, // 0x4a,
         ar_damage_t8_gold, // 0x4b,
         hero_pineapplegun, // 0x4c,
-        hash_48206b17d50533c2, // 0x4d,
+        pbr_gunner_rifle, // 0x4d,
         sniper_quickscope_t8, // 0x4e,
         melee_stopsign_t8, // 0x4f,
         lmg_heavy_t8, // 0x50,
@@ -34685,7 +34685,7 @@ version 152 {
         shotgun_pump_t8_gold, // 0x1e,
         smg_fastfire_t8_operator, // 0x1f,
         tr_powersemi_t8_operator, // 0x20,
-        hash_2ea46ca74ebdfcac, // 0x21,
+        buggy_gunner_rifle, // 0x21,
         smg_capacity_t8, // 0x22,
         sniper_fastrechamber_t8_operator, // 0x23,
         sniper_quickscope_t8_operator, // 0x24,
@@ -34703,13 +34703,13 @@ version 152 {
         melee_bowie_bloody, // 0x30,
         ar_standard_t8_gold, // 0x31,
         tr_midburst_t8_operator, // 0x32,
-        hash_3e9172d77b2101e8, // 0x33,
+        player_light_helicopter_gunner_turret, // 0x33,
         pistol_burst_t8, // 0x34,
         tr_leveraction_t8, // 0x35,
         hash_4385cf507401820f, // 0x36,
         ar_fastfire_t8, // 0x37,
         ar_damage_t8_gold, // 0x38,
-        hash_48206b17d50533c2, // 0x39,
+        pbr_gunner_rifle, // 0x39,
         sniper_quickscope_t8, // 0x3a,
         melee_stopsign_t8, // 0x3b,
         lmg_heavy_t8, // 0x3c,
@@ -34968,7 +34968,7 @@ version 152 {
         hash_57d9e98fa3f08f76, // 0x25,
         prt_wz_russman, // 0x26,
         prt_wz_misty, // 0x27,
-        hash_62361c68e083d401, // 0x28,
+        prt_wz_technomancer, // 0x28,
         prt_wz_mercenary, // 0x29,
         prt_wz_scarlett_dlc0, // 0x2a,
         prt_wz_richtofen, // 0x2b,
@@ -35068,7 +35068,7 @@ version 152 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -35469,7 +35469,7 @@ version 151 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -35567,7 +35567,7 @@ version 151 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -35577,7 +35577,7 @@ version 151 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -35613,7 +35613,7 @@ version 151 {
         // offset 0x1370, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1388, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x13c0, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x13d8, size 0x38
@@ -35693,7 +35693,7 @@ version 151 {
         // offset 0x1b98, size 0x38
         intstat total_shots;
         // offset 0x1bd0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c08, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c40, size 0x18
@@ -35745,9 +35745,9 @@ version 151 {
         // offset 0x2058, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2090, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x20c8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2100, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2138, size 0x38
@@ -35807,7 +35807,7 @@ version 151 {
         // offset 0x2f40, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2f78, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2fb8, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x2fd0, size 0x38
@@ -35817,7 +35817,7 @@ version 151 {
         // offset 0x3040, size 0x38
         intstat wins_without_down;
         // offset 0x3078, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -36036,7 +36036,7 @@ version 151 {
         smg_fastfire_t8_operator, // 0x2b,
         hatchet, // 0x2c,
         tr_powersemi_t8_operator, // 0x2d,
-        hash_2ea46ca74ebdfcac, // 0x2e,
+        buggy_gunner_rifle, // 0x2e,
         smg_capacity_t8, // 0x2f,
         sniper_fastrechamber_t8_operator, // 0x30,
         sniper_quickscope_t8_operator, // 0x31,
@@ -36058,7 +36058,7 @@ version 151 {
         melee_bowie_bloody, // 0x41,
         ar_standard_t8_gold, // 0x42,
         tr_midburst_t8_operator, // 0x43,
-        hash_3e9172d77b2101e8, // 0x44,
+        player_light_helicopter_gunner_turret, // 0x44,
         sig_bow_quickshot, // 0x45,
         sig_blade, // 0x46,
         pistol_burst_t8, // 0x47,
@@ -36067,7 +36067,7 @@ version 151 {
         ar_fastfire_t8, // 0x4a,
         ar_damage_t8_gold, // 0x4b,
         hero_pineapplegun, // 0x4c,
-        hash_48206b17d50533c2, // 0x4d,
+        pbr_gunner_rifle, // 0x4d,
         sniper_quickscope_t8, // 0x4e,
         melee_stopsign_t8, // 0x4f,
         lmg_heavy_t8, // 0x50,
@@ -36192,7 +36192,7 @@ version 151 {
         shotgun_pump_t8_gold, // 0x1e,
         smg_fastfire_t8_operator, // 0x1f,
         tr_powersemi_t8_operator, // 0x20,
-        hash_2ea46ca74ebdfcac, // 0x21,
+        buggy_gunner_rifle, // 0x21,
         smg_capacity_t8, // 0x22,
         sniper_fastrechamber_t8_operator, // 0x23,
         sniper_quickscope_t8_operator, // 0x24,
@@ -36210,13 +36210,13 @@ version 151 {
         melee_bowie_bloody, // 0x30,
         ar_standard_t8_gold, // 0x31,
         tr_midburst_t8_operator, // 0x32,
-        hash_3e9172d77b2101e8, // 0x33,
+        player_light_helicopter_gunner_turret, // 0x33,
         pistol_burst_t8, // 0x34,
         tr_leveraction_t8, // 0x35,
         hash_4385cf507401820f, // 0x36,
         ar_fastfire_t8, // 0x37,
         ar_damage_t8_gold, // 0x38,
-        hash_48206b17d50533c2, // 0x39,
+        pbr_gunner_rifle, // 0x39,
         sniper_quickscope_t8, // 0x3a,
         melee_stopsign_t8, // 0x3b,
         lmg_heavy_t8, // 0x3c,
@@ -36475,7 +36475,7 @@ version 151 {
         hash_57d9e98fa3f08f76, // 0x25,
         prt_wz_russman, // 0x26,
         prt_wz_misty, // 0x27,
-        hash_62361c68e083d401, // 0x28,
+        prt_wz_technomancer, // 0x28,
         prt_wz_mercenary, // 0x29,
         prt_wz_scarlett_dlc0, // 0x2a,
         prt_wz_richtofen, // 0x2b,
@@ -36574,7 +36574,7 @@ version 151 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -36975,7 +36975,7 @@ version 150 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -37073,7 +37073,7 @@ version 150 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -37083,7 +37083,7 @@ version 150 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -37119,7 +37119,7 @@ version 150 {
         // offset 0x1370, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1388, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x13c0, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x13d8, size 0x38
@@ -37199,7 +37199,7 @@ version 150 {
         // offset 0x1b98, size 0x38
         intstat total_shots;
         // offset 0x1bd0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c08, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c40, size 0x18
@@ -37251,9 +37251,9 @@ version 150 {
         // offset 0x2058, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2090, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x20c8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2100, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2138, size 0x38
@@ -37313,7 +37313,7 @@ version 150 {
         // offset 0x2f40, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2f78, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2fb8, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x2fd0, size 0x38
@@ -37323,7 +37323,7 @@ version 150 {
         // offset 0x3040, size 0x38
         intstat wins_without_down;
         // offset 0x3078, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -37542,7 +37542,7 @@ version 150 {
         smg_fastfire_t8_operator, // 0x2b,
         hatchet, // 0x2c,
         tr_powersemi_t8_operator, // 0x2d,
-        hash_2ea46ca74ebdfcac, // 0x2e,
+        buggy_gunner_rifle, // 0x2e,
         smg_capacity_t8, // 0x2f,
         sniper_fastrechamber_t8_operator, // 0x30,
         sniper_quickscope_t8_operator, // 0x31,
@@ -37564,7 +37564,7 @@ version 150 {
         melee_bowie_bloody, // 0x41,
         ar_standard_t8_gold, // 0x42,
         tr_midburst_t8_operator, // 0x43,
-        hash_3e9172d77b2101e8, // 0x44,
+        player_light_helicopter_gunner_turret, // 0x44,
         sig_bow_quickshot, // 0x45,
         sig_blade, // 0x46,
         pistol_burst_t8, // 0x47,
@@ -37573,7 +37573,7 @@ version 150 {
         ar_fastfire_t8, // 0x4a,
         ar_damage_t8_gold, // 0x4b,
         hero_pineapplegun, // 0x4c,
-        hash_48206b17d50533c2, // 0x4d,
+        pbr_gunner_rifle, // 0x4d,
         sniper_quickscope_t8, // 0x4e,
         melee_stopsign_t8, // 0x4f,
         lmg_heavy_t8, // 0x50,
@@ -37698,7 +37698,7 @@ version 150 {
         shotgun_pump_t8_gold, // 0x1e,
         smg_fastfire_t8_operator, // 0x1f,
         tr_powersemi_t8_operator, // 0x20,
-        hash_2ea46ca74ebdfcac, // 0x21,
+        buggy_gunner_rifle, // 0x21,
         smg_capacity_t8, // 0x22,
         sniper_fastrechamber_t8_operator, // 0x23,
         sniper_quickscope_t8_operator, // 0x24,
@@ -37716,13 +37716,13 @@ version 150 {
         melee_bowie_bloody, // 0x30,
         ar_standard_t8_gold, // 0x31,
         tr_midburst_t8_operator, // 0x32,
-        hash_3e9172d77b2101e8, // 0x33,
+        player_light_helicopter_gunner_turret, // 0x33,
         pistol_burst_t8, // 0x34,
         tr_leveraction_t8, // 0x35,
         hash_4385cf507401820f, // 0x36,
         ar_fastfire_t8, // 0x37,
         ar_damage_t8_gold, // 0x38,
-        hash_48206b17d50533c2, // 0x39,
+        pbr_gunner_rifle, // 0x39,
         sniper_quickscope_t8, // 0x3a,
         melee_stopsign_t8, // 0x3b,
         lmg_heavy_t8, // 0x3c,
@@ -37970,7 +37970,7 @@ version 150 {
         prt_wz_david_mason, // 0x20,
         hash_57d9e98fa3f08f76, // 0x21,
         prt_wz_misty, // 0x22,
-        hash_62361c68e083d401, // 0x23,
+        prt_wz_technomancer, // 0x23,
         prt_wz_mercenary, // 0x24,
         prt_wz_scarlett_dlc0, // 0x25,
         prt_wz_richtofen, // 0x26,
@@ -38067,7 +38067,7 @@ version 150 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -38468,7 +38468,7 @@ version 149 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -38566,7 +38566,7 @@ version 149 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -38576,7 +38576,7 @@ version 149 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -38612,7 +38612,7 @@ version 149 {
         // offset 0x1370, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1388, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x13c0, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x13d8, size 0x38
@@ -38692,7 +38692,7 @@ version 149 {
         // offset 0x1b98, size 0x38
         intstat total_shots;
         // offset 0x1bd0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c08, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c40, size 0x18
@@ -38744,9 +38744,9 @@ version 149 {
         // offset 0x2058, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2090, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x20c8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2100, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2138, size 0x38
@@ -38806,7 +38806,7 @@ version 149 {
         // offset 0x2f40, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2f78, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2fb8, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x2fd0, size 0x38
@@ -38816,7 +38816,7 @@ version 149 {
         // offset 0x3040, size 0x38
         intstat wins_without_down;
         // offset 0x3078, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -39035,7 +39035,7 @@ version 149 {
         smg_fastfire_t8_operator, // 0x2b,
         hatchet, // 0x2c,
         tr_powersemi_t8_operator, // 0x2d,
-        hash_2ea46ca74ebdfcac, // 0x2e,
+        buggy_gunner_rifle, // 0x2e,
         smg_capacity_t8, // 0x2f,
         sniper_fastrechamber_t8_operator, // 0x30,
         sniper_quickscope_t8_operator, // 0x31,
@@ -39057,7 +39057,7 @@ version 149 {
         melee_bowie_bloody, // 0x41,
         ar_standard_t8_gold, // 0x42,
         tr_midburst_t8_operator, // 0x43,
-        hash_3e9172d77b2101e8, // 0x44,
+        player_light_helicopter_gunner_turret, // 0x44,
         sig_bow_quickshot, // 0x45,
         sig_blade, // 0x46,
         pistol_burst_t8, // 0x47,
@@ -39066,7 +39066,7 @@ version 149 {
         ar_fastfire_t8, // 0x4a,
         ar_damage_t8_gold, // 0x4b,
         hero_pineapplegun, // 0x4c,
-        hash_48206b17d50533c2, // 0x4d,
+        pbr_gunner_rifle, // 0x4d,
         sniper_quickscope_t8, // 0x4e,
         melee_stopsign_t8, // 0x4f,
         lmg_heavy_t8, // 0x50,
@@ -39191,7 +39191,7 @@ version 149 {
         shotgun_pump_t8_gold, // 0x1e,
         smg_fastfire_t8_operator, // 0x1f,
         tr_powersemi_t8_operator, // 0x20,
-        hash_2ea46ca74ebdfcac, // 0x21,
+        buggy_gunner_rifle, // 0x21,
         smg_capacity_t8, // 0x22,
         sniper_fastrechamber_t8_operator, // 0x23,
         sniper_quickscope_t8_operator, // 0x24,
@@ -39209,13 +39209,13 @@ version 149 {
         melee_bowie_bloody, // 0x30,
         ar_standard_t8_gold, // 0x31,
         tr_midburst_t8_operator, // 0x32,
-        hash_3e9172d77b2101e8, // 0x33,
+        player_light_helicopter_gunner_turret, // 0x33,
         pistol_burst_t8, // 0x34,
         tr_leveraction_t8, // 0x35,
         hash_4385cf507401820f, // 0x36,
         ar_fastfire_t8, // 0x37,
         ar_damage_t8_gold, // 0x38,
-        hash_48206b17d50533c2, // 0x39,
+        pbr_gunner_rifle, // 0x39,
         sniper_quickscope_t8, // 0x3a,
         melee_stopsign_t8, // 0x3b,
         lmg_heavy_t8, // 0x3c,
@@ -39463,7 +39463,7 @@ version 149 {
         prt_wz_david_mason, // 0x20,
         hash_57d9e98fa3f08f76, // 0x21,
         prt_wz_misty, // 0x22,
-        hash_62361c68e083d401, // 0x23,
+        prt_wz_technomancer, // 0x23,
         prt_wz_mercenary, // 0x24,
         prt_wz_scarlett_dlc0, // 0x25,
         prt_wz_richtofen, // 0x26,
@@ -39559,7 +39559,7 @@ version 149 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -39960,7 +39960,7 @@ version 148 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -40058,7 +40058,7 @@ version 148 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -40068,7 +40068,7 @@ version 148 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -40104,7 +40104,7 @@ version 148 {
         // offset 0x1370, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1388, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x13c0, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x13d8, size 0x38
@@ -40184,7 +40184,7 @@ version 148 {
         // offset 0x1b98, size 0x38
         intstat total_shots;
         // offset 0x1bd0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c08, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c40, size 0x18
@@ -40236,9 +40236,9 @@ version 148 {
         // offset 0x2058, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2090, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x20c8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2100, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2138, size 0x38
@@ -40298,7 +40298,7 @@ version 148 {
         // offset 0x2f40, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2f78, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2fb8, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x2fd0, size 0x38
@@ -40308,7 +40308,7 @@ version 148 {
         // offset 0x3040, size 0x38
         intstat wins_without_down;
         // offset 0x3078, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -40526,7 +40526,7 @@ version 148 {
         smg_fastfire_t8_operator, // 0x2a,
         hatchet, // 0x2b,
         tr_powersemi_t8_operator, // 0x2c,
-        hash_2ea46ca74ebdfcac, // 0x2d,
+        buggy_gunner_rifle, // 0x2d,
         smg_capacity_t8, // 0x2e,
         sniper_fastrechamber_t8_operator, // 0x2f,
         sniper_quickscope_t8_operator, // 0x30,
@@ -40548,7 +40548,7 @@ version 148 {
         melee_bowie_bloody, // 0x40,
         ar_standard_t8_gold, // 0x41,
         tr_midburst_t8_operator, // 0x42,
-        hash_3e9172d77b2101e8, // 0x43,
+        player_light_helicopter_gunner_turret, // 0x43,
         sig_bow_quickshot, // 0x44,
         sig_blade, // 0x45,
         pistol_burst_t8, // 0x46,
@@ -40557,7 +40557,7 @@ version 148 {
         ar_fastfire_t8, // 0x49,
         ar_damage_t8_gold, // 0x4a,
         hero_pineapplegun, // 0x4b,
-        hash_48206b17d50533c2, // 0x4c,
+        pbr_gunner_rifle, // 0x4c,
         sniper_quickscope_t8, // 0x4d,
         melee_stopsign_t8, // 0x4e,
         lmg_heavy_t8, // 0x4f,
@@ -40681,7 +40681,7 @@ version 148 {
         shotgun_pump_t8_gold, // 0x1d,
         smg_fastfire_t8_operator, // 0x1e,
         tr_powersemi_t8_operator, // 0x1f,
-        hash_2ea46ca74ebdfcac, // 0x20,
+        buggy_gunner_rifle, // 0x20,
         smg_capacity_t8, // 0x21,
         sniper_fastrechamber_t8_operator, // 0x22,
         sniper_quickscope_t8_operator, // 0x23,
@@ -40699,13 +40699,13 @@ version 148 {
         melee_bowie_bloody, // 0x2f,
         ar_standard_t8_gold, // 0x30,
         tr_midburst_t8_operator, // 0x31,
-        hash_3e9172d77b2101e8, // 0x32,
+        player_light_helicopter_gunner_turret, // 0x32,
         pistol_burst_t8, // 0x33,
         tr_leveraction_t8, // 0x34,
         hash_4385cf507401820f, // 0x35,
         ar_fastfire_t8, // 0x36,
         ar_damage_t8_gold, // 0x37,
-        hash_48206b17d50533c2, // 0x38,
+        pbr_gunner_rifle, // 0x38,
         sniper_quickscope_t8, // 0x39,
         melee_stopsign_t8, // 0x3a,
         lmg_heavy_t8, // 0x3b,
@@ -40953,7 +40953,7 @@ version 148 {
         prt_wz_david_mason, // 0x20,
         hash_57d9e98fa3f08f76, // 0x21,
         prt_wz_misty, // 0x22,
-        hash_62361c68e083d401, // 0x23,
+        prt_wz_technomancer, // 0x23,
         prt_wz_mercenary, // 0x24,
         prt_wz_scarlett_dlc0, // 0x25,
         prt_wz_richtofen, // 0x26,
@@ -41049,7 +41049,7 @@ version 148 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -41450,7 +41450,7 @@ version 147 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -41548,7 +41548,7 @@ version 147 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -41558,7 +41558,7 @@ version 147 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -41594,7 +41594,7 @@ version 147 {
         // offset 0x1370, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1388, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x13c0, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x13d8, size 0x38
@@ -41674,7 +41674,7 @@ version 147 {
         // offset 0x1b98, size 0x38
         intstat total_shots;
         // offset 0x1bd0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c08, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c40, size 0x18
@@ -41726,9 +41726,9 @@ version 147 {
         // offset 0x2058, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2090, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x20c8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2100, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2138, size 0x38
@@ -41788,7 +41788,7 @@ version 147 {
         // offset 0x2f40, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2f78, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2fb8, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x2fd0, size 0x38
@@ -41798,7 +41798,7 @@ version 147 {
         // offset 0x3040, size 0x38
         intstat wins_without_down;
         // offset 0x3078, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -42015,7 +42015,7 @@ version 147 {
         smg_fastfire_t8_operator, // 0x29,
         hatchet, // 0x2a,
         tr_powersemi_t8_operator, // 0x2b,
-        hash_2ea46ca74ebdfcac, // 0x2c,
+        buggy_gunner_rifle, // 0x2c,
         smg_capacity_t8, // 0x2d,
         sniper_fastrechamber_t8_operator, // 0x2e,
         sniper_quickscope_t8_operator, // 0x2f,
@@ -42037,7 +42037,7 @@ version 147 {
         melee_bowie_bloody, // 0x3f,
         ar_standard_t8_gold, // 0x40,
         tr_midburst_t8_operator, // 0x41,
-        hash_3e9172d77b2101e8, // 0x42,
+        player_light_helicopter_gunner_turret, // 0x42,
         sig_bow_quickshot, // 0x43,
         sig_blade, // 0x44,
         pistol_burst_t8, // 0x45,
@@ -42046,7 +42046,7 @@ version 147 {
         ar_fastfire_t8, // 0x48,
         ar_damage_t8_gold, // 0x49,
         hero_pineapplegun, // 0x4a,
-        hash_48206b17d50533c2, // 0x4b,
+        pbr_gunner_rifle, // 0x4b,
         sniper_quickscope_t8, // 0x4c,
         melee_stopsign_t8, // 0x4d,
         lmg_heavy_t8, // 0x4e,
@@ -42169,7 +42169,7 @@ version 147 {
         shotgun_pump_t8_gold, // 0x1c,
         smg_fastfire_t8_operator, // 0x1d,
         tr_powersemi_t8_operator, // 0x1e,
-        hash_2ea46ca74ebdfcac, // 0x1f,
+        buggy_gunner_rifle, // 0x1f,
         smg_capacity_t8, // 0x20,
         sniper_fastrechamber_t8_operator, // 0x21,
         sniper_quickscope_t8_operator, // 0x22,
@@ -42187,13 +42187,13 @@ version 147 {
         melee_bowie_bloody, // 0x2e,
         ar_standard_t8_gold, // 0x2f,
         tr_midburst_t8_operator, // 0x30,
-        hash_3e9172d77b2101e8, // 0x31,
+        player_light_helicopter_gunner_turret, // 0x31,
         pistol_burst_t8, // 0x32,
         tr_leveraction_t8, // 0x33,
         hash_4385cf507401820f, // 0x34,
         ar_fastfire_t8, // 0x35,
         ar_damage_t8_gold, // 0x36,
-        hash_48206b17d50533c2, // 0x37,
+        pbr_gunner_rifle, // 0x37,
         sniper_quickscope_t8, // 0x38,
         melee_stopsign_t8, // 0x39,
         lmg_heavy_t8, // 0x3a,
@@ -42441,7 +42441,7 @@ version 147 {
         prt_wz_david_mason, // 0x20,
         hash_57d9e98fa3f08f76, // 0x21,
         prt_wz_misty, // 0x22,
-        hash_62361c68e083d401, // 0x23,
+        prt_wz_technomancer, // 0x23,
         prt_wz_mercenary, // 0x24,
         prt_wz_scarlett_dlc0, // 0x25,
         prt_wz_richtofen, // 0x26,
@@ -42537,7 +42537,7 @@ version 147 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -42938,7 +42938,7 @@ version 146 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -43036,7 +43036,7 @@ version 146 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -43046,7 +43046,7 @@ version 146 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -43082,7 +43082,7 @@ version 146 {
         // offset 0x1370, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1388, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x13c0, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x13d8, size 0x38
@@ -43162,7 +43162,7 @@ version 146 {
         // offset 0x1b98, size 0x38
         intstat total_shots;
         // offset 0x1bd0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c08, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c40, size 0x18
@@ -43214,9 +43214,9 @@ version 146 {
         // offset 0x2058, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2090, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x20c8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2100, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2138, size 0x38
@@ -43276,7 +43276,7 @@ version 146 {
         // offset 0x2f40, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2f78, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2fb8, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x2fd0, size 0x38
@@ -43286,7 +43286,7 @@ version 146 {
         // offset 0x3040, size 0x38
         intstat wins_without_down;
         // offset 0x3078, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -43503,7 +43503,7 @@ version 146 {
         smg_fastfire_t8_operator, // 0x29,
         hatchet, // 0x2a,
         tr_powersemi_t8_operator, // 0x2b,
-        hash_2ea46ca74ebdfcac, // 0x2c,
+        buggy_gunner_rifle, // 0x2c,
         smg_capacity_t8, // 0x2d,
         sniper_fastrechamber_t8_operator, // 0x2e,
         sniper_quickscope_t8_operator, // 0x2f,
@@ -43525,7 +43525,7 @@ version 146 {
         melee_bowie_bloody, // 0x3f,
         ar_standard_t8_gold, // 0x40,
         tr_midburst_t8_operator, // 0x41,
-        hash_3e9172d77b2101e8, // 0x42,
+        player_light_helicopter_gunner_turret, // 0x42,
         sig_bow_quickshot, // 0x43,
         sig_blade, // 0x44,
         pistol_burst_t8, // 0x45,
@@ -43534,7 +43534,7 @@ version 146 {
         ar_fastfire_t8, // 0x48,
         ar_damage_t8_gold, // 0x49,
         hero_pineapplegun, // 0x4a,
-        hash_48206b17d50533c2, // 0x4b,
+        pbr_gunner_rifle, // 0x4b,
         sniper_quickscope_t8, // 0x4c,
         lmg_heavy_t8, // 0x4d,
         ww_crossbow_t8, // 0x4e,
@@ -43655,7 +43655,7 @@ version 146 {
         shotgun_pump_t8_gold, // 0x1c,
         smg_fastfire_t8_operator, // 0x1d,
         tr_powersemi_t8_operator, // 0x1e,
-        hash_2ea46ca74ebdfcac, // 0x1f,
+        buggy_gunner_rifle, // 0x1f,
         smg_capacity_t8, // 0x20,
         sniper_fastrechamber_t8_operator, // 0x21,
         sniper_quickscope_t8_operator, // 0x22,
@@ -43673,13 +43673,13 @@ version 146 {
         melee_bowie_bloody, // 0x2e,
         ar_standard_t8_gold, // 0x2f,
         tr_midburst_t8_operator, // 0x30,
-        hash_3e9172d77b2101e8, // 0x31,
+        player_light_helicopter_gunner_turret, // 0x31,
         pistol_burst_t8, // 0x32,
         tr_leveraction_t8, // 0x33,
         hash_4385cf507401820f, // 0x34,
         ar_fastfire_t8, // 0x35,
         ar_damage_t8_gold, // 0x36,
-        hash_48206b17d50533c2, // 0x37,
+        pbr_gunner_rifle, // 0x37,
         sniper_quickscope_t8, // 0x38,
         lmg_heavy_t8, // 0x39,
         ww_crossbow_t8, // 0x3a,
@@ -43925,7 +43925,7 @@ version 146 {
         prt_wz_david_mason, // 0x20,
         hash_57d9e98fa3f08f76, // 0x21,
         prt_wz_misty, // 0x22,
-        hash_62361c68e083d401, // 0x23,
+        prt_wz_technomancer, // 0x23,
         prt_wz_mercenary, // 0x24,
         prt_wz_scarlett_dlc0, // 0x25,
         prt_wz_richtofen, // 0x26,
@@ -44021,7 +44021,7 @@ version 146 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -44422,7 +44422,7 @@ version 145 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -44520,7 +44520,7 @@ version 145 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -44530,7 +44530,7 @@ version 145 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -44566,7 +44566,7 @@ version 145 {
         // offset 0x1370, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1388, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x13c0, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x13d8, size 0x38
@@ -44646,7 +44646,7 @@ version 145 {
         // offset 0x1b98, size 0x38
         intstat total_shots;
         // offset 0x1bd0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c08, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c40, size 0x18
@@ -44698,9 +44698,9 @@ version 145 {
         // offset 0x2058, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2090, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x20c8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2100, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2138, size 0x38
@@ -44760,7 +44760,7 @@ version 145 {
         // offset 0x2f40, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2f78, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2fb8, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x2fd0, size 0x38
@@ -44770,7 +44770,7 @@ version 145 {
         // offset 0x3040, size 0x38
         intstat wins_without_down;
         // offset 0x3078, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -44986,7 +44986,7 @@ version 145 {
         smg_fastfire_t8_operator, // 0x28,
         hatchet, // 0x29,
         tr_powersemi_t8_operator, // 0x2a,
-        hash_2ea46ca74ebdfcac, // 0x2b,
+        buggy_gunner_rifle, // 0x2b,
         smg_capacity_t8, // 0x2c,
         sniper_fastrechamber_t8_operator, // 0x2d,
         sniper_quickscope_t8_operator, // 0x2e,
@@ -45008,7 +45008,7 @@ version 145 {
         melee_bowie_bloody, // 0x3e,
         ar_standard_t8_gold, // 0x3f,
         tr_midburst_t8_operator, // 0x40,
-        hash_3e9172d77b2101e8, // 0x41,
+        player_light_helicopter_gunner_turret, // 0x41,
         sig_bow_quickshot, // 0x42,
         sig_blade, // 0x43,
         pistol_burst_t8, // 0x44,
@@ -45017,7 +45017,7 @@ version 145 {
         ar_fastfire_t8, // 0x47,
         ar_damage_t8_gold, // 0x48,
         hero_pineapplegun, // 0x49,
-        hash_48206b17d50533c2, // 0x4a,
+        pbr_gunner_rifle, // 0x4a,
         sniper_quickscope_t8, // 0x4b,
         lmg_heavy_t8, // 0x4c,
         ww_crossbow_t8, // 0x4d,
@@ -45137,7 +45137,7 @@ version 145 {
         shotgun_pump_t8_gold, // 0x1b,
         smg_fastfire_t8_operator, // 0x1c,
         tr_powersemi_t8_operator, // 0x1d,
-        hash_2ea46ca74ebdfcac, // 0x1e,
+        buggy_gunner_rifle, // 0x1e,
         smg_capacity_t8, // 0x1f,
         sniper_fastrechamber_t8_operator, // 0x20,
         sniper_quickscope_t8_operator, // 0x21,
@@ -45155,13 +45155,13 @@ version 145 {
         melee_bowie_bloody, // 0x2d,
         ar_standard_t8_gold, // 0x2e,
         tr_midburst_t8_operator, // 0x2f,
-        hash_3e9172d77b2101e8, // 0x30,
+        player_light_helicopter_gunner_turret, // 0x30,
         pistol_burst_t8, // 0x31,
         tr_leveraction_t8, // 0x32,
         hash_4385cf507401820f, // 0x33,
         ar_fastfire_t8, // 0x34,
         ar_damage_t8_gold, // 0x35,
-        hash_48206b17d50533c2, // 0x36,
+        pbr_gunner_rifle, // 0x36,
         sniper_quickscope_t8, // 0x37,
         lmg_heavy_t8, // 0x38,
         ww_crossbow_t8, // 0x39,
@@ -45407,7 +45407,7 @@ version 145 {
         prt_wz_david_mason, // 0x20,
         hash_57d9e98fa3f08f76, // 0x21,
         prt_wz_misty, // 0x22,
-        hash_62361c68e083d401, // 0x23,
+        prt_wz_technomancer, // 0x23,
         prt_wz_mercenary, // 0x24,
         prt_wz_scarlett_dlc0, // 0x25,
         prt_wz_richtofen, // 0x26,
@@ -45503,7 +45503,7 @@ version 145 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -45904,7 +45904,7 @@ version 144 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -46002,7 +46002,7 @@ version 144 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -46012,7 +46012,7 @@ version 144 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -46048,7 +46048,7 @@ version 144 {
         // offset 0x1370, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1388, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x13c0, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x13d8, size 0x38
@@ -46128,7 +46128,7 @@ version 144 {
         // offset 0x1b98, size 0x38
         intstat total_shots;
         // offset 0x1bd0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c08, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c40, size 0x18
@@ -46180,9 +46180,9 @@ version 144 {
         // offset 0x2058, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2090, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x20c8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2100, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2138, size 0x38
@@ -46242,7 +46242,7 @@ version 144 {
         // offset 0x2f40, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2f78, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2fb8, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x2fd0, size 0x38
@@ -46252,7 +46252,7 @@ version 144 {
         // offset 0x3040, size 0x38
         intstat wins_without_down;
         // offset 0x3078, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -46468,7 +46468,7 @@ version 144 {
         smg_fastfire_t8_operator, // 0x28,
         hatchet, // 0x29,
         tr_powersemi_t8_operator, // 0x2a,
-        hash_2ea46ca74ebdfcac, // 0x2b,
+        buggy_gunner_rifle, // 0x2b,
         smg_capacity_t8, // 0x2c,
         sniper_fastrechamber_t8_operator, // 0x2d,
         sniper_quickscope_t8_operator, // 0x2e,
@@ -46489,7 +46489,7 @@ version 144 {
         melee_bowie_bloody, // 0x3d,
         ar_standard_t8_gold, // 0x3e,
         tr_midburst_t8_operator, // 0x3f,
-        hash_3e9172d77b2101e8, // 0x40,
+        player_light_helicopter_gunner_turret, // 0x40,
         sig_bow_quickshot, // 0x41,
         sig_blade, // 0x42,
         pistol_burst_t8, // 0x43,
@@ -46498,7 +46498,7 @@ version 144 {
         ar_fastfire_t8, // 0x46,
         ar_damage_t8_gold, // 0x47,
         hero_pineapplegun, // 0x48,
-        hash_48206b17d50533c2, // 0x49,
+        pbr_gunner_rifle, // 0x49,
         sniper_quickscope_t8, // 0x4a,
         lmg_heavy_t8, // 0x4b,
         ww_crossbow_t8, // 0x4c,
@@ -46618,7 +46618,7 @@ version 144 {
         shotgun_pump_t8_gold, // 0x1b,
         smg_fastfire_t8_operator, // 0x1c,
         tr_powersemi_t8_operator, // 0x1d,
-        hash_2ea46ca74ebdfcac, // 0x1e,
+        buggy_gunner_rifle, // 0x1e,
         smg_capacity_t8, // 0x1f,
         sniper_fastrechamber_t8_operator, // 0x20,
         sniper_quickscope_t8_operator, // 0x21,
@@ -46635,13 +46635,13 @@ version 144 {
         melee_bowie_bloody, // 0x2c,
         ar_standard_t8_gold, // 0x2d,
         tr_midburst_t8_operator, // 0x2e,
-        hash_3e9172d77b2101e8, // 0x2f,
+        player_light_helicopter_gunner_turret, // 0x2f,
         pistol_burst_t8, // 0x30,
         tr_leveraction_t8, // 0x31,
         hash_4385cf507401820f, // 0x32,
         ar_fastfire_t8, // 0x33,
         ar_damage_t8_gold, // 0x34,
-        hash_48206b17d50533c2, // 0x35,
+        pbr_gunner_rifle, // 0x35,
         sniper_quickscope_t8, // 0x36,
         lmg_heavy_t8, // 0x37,
         ww_crossbow_t8, // 0x38,
@@ -46887,7 +46887,7 @@ version 144 {
         prt_wz_david_mason, // 0x20,
         hash_57d9e98fa3f08f76, // 0x21,
         prt_wz_misty, // 0x22,
-        hash_62361c68e083d401, // 0x23,
+        prt_wz_technomancer, // 0x23,
         prt_wz_mercenary, // 0x24,
         prt_wz_scarlett_dlc0, // 0x25,
         prt_wz_richtofen, // 0x26,
@@ -46983,7 +46983,7 @@ version 144 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -47384,7 +47384,7 @@ version 143 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -47482,7 +47482,7 @@ version 143 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -47492,7 +47492,7 @@ version 143 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -47528,7 +47528,7 @@ version 143 {
         // offset 0x1370, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1388, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x13c0, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x13d8, size 0x38
@@ -47608,7 +47608,7 @@ version 143 {
         // offset 0x1b98, size 0x38
         intstat total_shots;
         // offset 0x1bd0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c08, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c40, size 0x18
@@ -47660,9 +47660,9 @@ version 143 {
         // offset 0x2058, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2090, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x20c8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2100, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2138, size 0x38
@@ -47722,7 +47722,7 @@ version 143 {
         // offset 0x2f40, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2f78, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2fb8, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x2fd0, size 0x38
@@ -47732,7 +47732,7 @@ version 143 {
         // offset 0x3040, size 0x38
         intstat wins_without_down;
         // offset 0x3078, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -47948,7 +47948,7 @@ version 143 {
         smg_fastfire_t8_operator, // 0x28,
         hatchet, // 0x29,
         tr_powersemi_t8_operator, // 0x2a,
-        hash_2ea46ca74ebdfcac, // 0x2b,
+        buggy_gunner_rifle, // 0x2b,
         smg_capacity_t8, // 0x2c,
         sniper_fastrechamber_t8_operator, // 0x2d,
         sniper_quickscope_t8_operator, // 0x2e,
@@ -47969,7 +47969,7 @@ version 143 {
         melee_bowie_bloody, // 0x3d,
         ar_standard_t8_gold, // 0x3e,
         tr_midburst_t8_operator, // 0x3f,
-        hash_3e9172d77b2101e8, // 0x40,
+        player_light_helicopter_gunner_turret, // 0x40,
         sig_bow_quickshot, // 0x41,
         sig_blade, // 0x42,
         pistol_burst_t8, // 0x43,
@@ -47978,7 +47978,7 @@ version 143 {
         ar_fastfire_t8, // 0x46,
         ar_damage_t8_gold, // 0x47,
         hero_pineapplegun, // 0x48,
-        hash_48206b17d50533c2, // 0x49,
+        pbr_gunner_rifle, // 0x49,
         sniper_quickscope_t8, // 0x4a,
         lmg_heavy_t8, // 0x4b,
         ww_crossbow_t8, // 0x4c,
@@ -48097,7 +48097,7 @@ version 143 {
         shotgun_pump_t8_gold, // 0x1b,
         smg_fastfire_t8_operator, // 0x1c,
         tr_powersemi_t8_operator, // 0x1d,
-        hash_2ea46ca74ebdfcac, // 0x1e,
+        buggy_gunner_rifle, // 0x1e,
         smg_capacity_t8, // 0x1f,
         sniper_fastrechamber_t8_operator, // 0x20,
         sniper_quickscope_t8_operator, // 0x21,
@@ -48114,13 +48114,13 @@ version 143 {
         melee_bowie_bloody, // 0x2c,
         ar_standard_t8_gold, // 0x2d,
         tr_midburst_t8_operator, // 0x2e,
-        hash_3e9172d77b2101e8, // 0x2f,
+        player_light_helicopter_gunner_turret, // 0x2f,
         pistol_burst_t8, // 0x30,
         tr_leveraction_t8, // 0x31,
         hash_4385cf507401820f, // 0x32,
         ar_fastfire_t8, // 0x33,
         ar_damage_t8_gold, // 0x34,
-        hash_48206b17d50533c2, // 0x35,
+        pbr_gunner_rifle, // 0x35,
         sniper_quickscope_t8, // 0x36,
         lmg_heavy_t8, // 0x37,
         ww_crossbow_t8, // 0x38,
@@ -48365,7 +48365,7 @@ version 143 {
         prt_wz_david_mason, // 0x20,
         hash_57d9e98fa3f08f76, // 0x21,
         prt_wz_misty, // 0x22,
-        hash_62361c68e083d401, // 0x23,
+        prt_wz_technomancer, // 0x23,
         prt_wz_mercenary, // 0x24,
         prt_wz_scarlett_dlc0, // 0x25,
         prt_wz_richtofen, // 0x26,
@@ -48461,7 +48461,7 @@ version 143 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -48862,7 +48862,7 @@ version 142 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -48960,7 +48960,7 @@ version 142 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -48970,7 +48970,7 @@ version 142 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -49006,7 +49006,7 @@ version 142 {
         // offset 0x1370, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1388, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x13c0, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x13d8, size 0x38
@@ -49086,7 +49086,7 @@ version 142 {
         // offset 0x1b98, size 0x38
         intstat total_shots;
         // offset 0x1bd0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c08, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c40, size 0x18
@@ -49138,9 +49138,9 @@ version 142 {
         // offset 0x2058, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2090, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x20c8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2100, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2138, size 0x38
@@ -49200,7 +49200,7 @@ version 142 {
         // offset 0x2f40, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2f78, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2fb8, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x2fd0, size 0x38
@@ -49210,7 +49210,7 @@ version 142 {
         // offset 0x3040, size 0x38
         intstat wins_without_down;
         // offset 0x3078, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -49424,7 +49424,7 @@ version 142 {
         smg_fastfire_t8_operator, // 0x26,
         hatchet, // 0x27,
         tr_powersemi_t8_operator, // 0x28,
-        hash_2ea46ca74ebdfcac, // 0x29,
+        buggy_gunner_rifle, // 0x29,
         smg_capacity_t8, // 0x2a,
         sniper_fastrechamber_t8_operator, // 0x2b,
         sniper_quickscope_t8_operator, // 0x2c,
@@ -49445,7 +49445,7 @@ version 142 {
         melee_bowie_bloody, // 0x3b,
         ar_standard_t8_gold, // 0x3c,
         tr_midburst_t8_operator, // 0x3d,
-        hash_3e9172d77b2101e8, // 0x3e,
+        player_light_helicopter_gunner_turret, // 0x3e,
         sig_bow_quickshot, // 0x3f,
         sig_blade, // 0x40,
         pistol_burst_t8, // 0x41,
@@ -49454,7 +49454,7 @@ version 142 {
         ar_fastfire_t8, // 0x44,
         ar_damage_t8_gold, // 0x45,
         hero_pineapplegun, // 0x46,
-        hash_48206b17d50533c2, // 0x47,
+        pbr_gunner_rifle, // 0x47,
         sniper_quickscope_t8, // 0x48,
         lmg_heavy_t8, // 0x49,
         ww_crossbow_t8, // 0x4a,
@@ -49571,7 +49571,7 @@ version 142 {
         shotgun_pump_t8_gold, // 0x19,
         smg_fastfire_t8_operator, // 0x1a,
         tr_powersemi_t8_operator, // 0x1b,
-        hash_2ea46ca74ebdfcac, // 0x1c,
+        buggy_gunner_rifle, // 0x1c,
         smg_capacity_t8, // 0x1d,
         sniper_fastrechamber_t8_operator, // 0x1e,
         sniper_quickscope_t8_operator, // 0x1f,
@@ -49588,13 +49588,13 @@ version 142 {
         melee_bowie_bloody, // 0x2a,
         ar_standard_t8_gold, // 0x2b,
         tr_midburst_t8_operator, // 0x2c,
-        hash_3e9172d77b2101e8, // 0x2d,
+        player_light_helicopter_gunner_turret, // 0x2d,
         pistol_burst_t8, // 0x2e,
         tr_leveraction_t8, // 0x2f,
         hash_4385cf507401820f, // 0x30,
         ar_fastfire_t8, // 0x31,
         ar_damage_t8_gold, // 0x32,
-        hash_48206b17d50533c2, // 0x33,
+        pbr_gunner_rifle, // 0x33,
         sniper_quickscope_t8, // 0x34,
         lmg_heavy_t8, // 0x35,
         ww_crossbow_t8, // 0x36,
@@ -49839,7 +49839,7 @@ version 142 {
         prt_wz_david_mason, // 0x20,
         hash_57d9e98fa3f08f76, // 0x21,
         prt_wz_misty, // 0x22,
-        hash_62361c68e083d401, // 0x23,
+        prt_wz_technomancer, // 0x23,
         prt_wz_mercenary, // 0x24,
         prt_wz_scarlett_dlc0, // 0x25,
         prt_wz_richtofen, // 0x26,
@@ -49935,7 +49935,7 @@ version 142 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -50336,7 +50336,7 @@ version 141 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -50434,7 +50434,7 @@ version 141 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -50444,7 +50444,7 @@ version 141 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -50480,7 +50480,7 @@ version 141 {
         // offset 0x1370, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1388, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x13c0, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x13d8, size 0x38
@@ -50560,7 +50560,7 @@ version 141 {
         // offset 0x1b98, size 0x38
         intstat total_shots;
         // offset 0x1bd0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c08, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c40, size 0x18
@@ -50612,9 +50612,9 @@ version 141 {
         // offset 0x2058, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2090, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x20c8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2100, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2138, size 0x38
@@ -50674,7 +50674,7 @@ version 141 {
         // offset 0x2f40, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2f78, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2fb8, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x2fd0, size 0x38
@@ -50684,7 +50684,7 @@ version 141 {
         // offset 0x3040, size 0x38
         intstat wins_without_down;
         // offset 0x3078, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -50894,7 +50894,7 @@ version 141 {
         smg_fastfire_t8_operator, // 0x22,
         hatchet, // 0x23,
         tr_powersemi_t8_operator, // 0x24,
-        hash_2ea46ca74ebdfcac, // 0x25,
+        buggy_gunner_rifle, // 0x25,
         smg_capacity_t8, // 0x26,
         sniper_fastrechamber_t8_operator, // 0x27,
         sniper_quickscope_t8_operator, // 0x28,
@@ -50915,7 +50915,7 @@ version 141 {
         melee_bowie_bloody, // 0x37,
         ar_standard_t8_gold, // 0x38,
         tr_midburst_t8_operator, // 0x39,
-        hash_3e9172d77b2101e8, // 0x3a,
+        player_light_helicopter_gunner_turret, // 0x3a,
         sig_bow_quickshot, // 0x3b,
         sig_blade, // 0x3c,
         pistol_burst_t8, // 0x3d,
@@ -50924,7 +50924,7 @@ version 141 {
         ar_fastfire_t8, // 0x40,
         ar_damage_t8_gold, // 0x41,
         hero_pineapplegun, // 0x42,
-        hash_48206b17d50533c2, // 0x43,
+        pbr_gunner_rifle, // 0x43,
         sniper_quickscope_t8, // 0x44,
         lmg_heavy_t8, // 0x45,
         recon_car, // 0x46,
@@ -51034,7 +51034,7 @@ version 141 {
         shotgun_pump_t8_gold, // 0x15,
         smg_fastfire_t8_operator, // 0x16,
         tr_powersemi_t8_operator, // 0x17,
-        hash_2ea46ca74ebdfcac, // 0x18,
+        buggy_gunner_rifle, // 0x18,
         smg_capacity_t8, // 0x19,
         sniper_fastrechamber_t8_operator, // 0x1a,
         sniper_quickscope_t8_operator, // 0x1b,
@@ -51051,13 +51051,13 @@ version 141 {
         melee_bowie_bloody, // 0x26,
         ar_standard_t8_gold, // 0x27,
         tr_midburst_t8_operator, // 0x28,
-        hash_3e9172d77b2101e8, // 0x29,
+        player_light_helicopter_gunner_turret, // 0x29,
         pistol_burst_t8, // 0x2a,
         tr_leveraction_t8, // 0x2b,
         hash_4385cf507401820f, // 0x2c,
         ar_fastfire_t8, // 0x2d,
         ar_damage_t8_gold, // 0x2e,
-        hash_48206b17d50533c2, // 0x2f,
+        pbr_gunner_rifle, // 0x2f,
         sniper_quickscope_t8, // 0x30,
         lmg_heavy_t8, // 0x31,
         smg_handling_t8_gold, // 0x32,
@@ -51298,7 +51298,7 @@ version 141 {
         prt_wz_david_mason, // 0x1f,
         hash_57d9e98fa3f08f76, // 0x20,
         prt_wz_misty, // 0x21,
-        hash_62361c68e083d401, // 0x22,
+        prt_wz_technomancer, // 0x22,
         prt_wz_mercenary, // 0x23,
         prt_wz_scarlett_dlc0, // 0x24,
         prt_wz_richtofen, // 0x25,
@@ -51394,7 +51394,7 @@ version 141 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -51795,7 +51795,7 @@ version 140 {
         // offset 0x460, size 0x38
         intstat time_played_alive;
         // offset 0x498, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d0, size 0x38
         intstat time_played_total;
         // offset 0x508, size 0x38
@@ -51893,7 +51893,7 @@ version 140 {
         // offset 0xea0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xed8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf10, size 0x38
         intstat challengexp;
         // offset 0xf48, size 0x18
@@ -51903,7 +51903,7 @@ version 140 {
         // offset 0xf98, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1008, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1040, size 0x38
@@ -51939,7 +51939,7 @@ version 140 {
         // offset 0x1370, size 0x18
         hash_5251c94487082de7 stats_assists;
         // offset 0x1388, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x13c0, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x13d8, size 0x38
@@ -52019,7 +52019,7 @@ version 140 {
         // offset 0x1b98, size 0x38
         intstat total_shots;
         // offset 0x1bd0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c08, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1c40, size 0x18
@@ -52071,9 +52071,9 @@ version 140 {
         // offset 0x2058, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2090, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x20c8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2100, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2138, size 0x38
@@ -52133,7 +52133,7 @@ version 140 {
         // offset 0x2f40, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2f78, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2fb8, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x2fd0, size 0x38
@@ -52143,7 +52143,7 @@ version 140 {
         // offset 0x3040, size 0x38
         intstat wins_without_down;
         // offset 0x3078, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -52353,7 +52353,7 @@ version 140 {
         smg_fastfire_t8_operator, // 0x22,
         hatchet, // 0x23,
         tr_powersemi_t8_operator, // 0x24,
-        hash_2ea46ca74ebdfcac, // 0x25,
+        buggy_gunner_rifle, // 0x25,
         smg_capacity_t8, // 0x26,
         sniper_fastrechamber_t8_operator, // 0x27,
         sniper_quickscope_t8_operator, // 0x28,
@@ -52374,7 +52374,7 @@ version 140 {
         melee_bowie_bloody, // 0x37,
         ar_standard_t8_gold, // 0x38,
         tr_midburst_t8_operator, // 0x39,
-        hash_3e9172d77b2101e8, // 0x3a,
+        player_light_helicopter_gunner_turret, // 0x3a,
         sig_bow_quickshot, // 0x3b,
         sig_blade, // 0x3c,
         pistol_burst_t8, // 0x3d,
@@ -52383,7 +52383,7 @@ version 140 {
         ar_fastfire_t8, // 0x40,
         ar_damage_t8_gold, // 0x41,
         hero_pineapplegun, // 0x42,
-        hash_48206b17d50533c2, // 0x43,
+        pbr_gunner_rifle, // 0x43,
         sniper_quickscope_t8, // 0x44,
         lmg_heavy_t8, // 0x45,
         recon_car, // 0x46,
@@ -52493,7 +52493,7 @@ version 140 {
         shotgun_pump_t8_gold, // 0x15,
         smg_fastfire_t8_operator, // 0x16,
         tr_powersemi_t8_operator, // 0x17,
-        hash_2ea46ca74ebdfcac, // 0x18,
+        buggy_gunner_rifle, // 0x18,
         smg_capacity_t8, // 0x19,
         sniper_fastrechamber_t8_operator, // 0x1a,
         sniper_quickscope_t8_operator, // 0x1b,
@@ -52510,13 +52510,13 @@ version 140 {
         melee_bowie_bloody, // 0x26,
         ar_standard_t8_gold, // 0x27,
         tr_midburst_t8_operator, // 0x28,
-        hash_3e9172d77b2101e8, // 0x29,
+        player_light_helicopter_gunner_turret, // 0x29,
         pistol_burst_t8, // 0x2a,
         tr_leveraction_t8, // 0x2b,
         hash_4385cf507401820f, // 0x2c,
         ar_fastfire_t8, // 0x2d,
         ar_damage_t8_gold, // 0x2e,
-        hash_48206b17d50533c2, // 0x2f,
+        pbr_gunner_rifle, // 0x2f,
         sniper_quickscope_t8, // 0x30,
         lmg_heavy_t8, // 0x31,
         smg_handling_t8_gold, // 0x32,
@@ -52757,7 +52757,7 @@ version 140 {
         prt_wz_david_mason, // 0x1f,
         hash_57d9e98fa3f08f76, // 0x20,
         prt_wz_misty, // 0x21,
-        hash_62361c68e083d401, // 0x22,
+        prt_wz_technomancer, // 0x22,
         prt_wz_mercenary, // 0x23,
         prt_wz_scarlett_dlc0, // 0x24,
         prt_wz_richtofen, // 0x25,
@@ -52851,7 +52851,7 @@ version 140 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -53250,7 +53250,7 @@ version 139 {
         // offset 0x448, size 0x38
         intstat time_played_alive;
         // offset 0x480, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4b8, size 0x38
         intstat time_played_total;
         // offset 0x4f0, size 0x38
@@ -53348,7 +53348,7 @@ version 139 {
         // offset 0xe88, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xec0, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xef8, size 0x38
         intstat challengexp;
         // offset 0xf30, size 0x38
@@ -53356,7 +53356,7 @@ version 139 {
         // offset 0xf68, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfa0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xfd8, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1010, size 0x38
@@ -53390,7 +53390,7 @@ version 139 {
         // offset 0x1308, size 0x38
         intstat kills_avenged;
         // offset 0x1340, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1378, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1390, size 0x38
@@ -53468,7 +53468,7 @@ version 139 {
         // offset 0x1b38, size 0x38
         intstat total_shots;
         // offset 0x1b70, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1ba8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1be0, size 0x38
@@ -53516,9 +53516,9 @@ version 139 {
         // offset 0x1fc8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2000, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2038, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2070, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x20a8, size 0x38
@@ -53576,7 +53576,7 @@ version 139 {
         // offset 0x2e98, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2ed0, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2f10, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x2f28, size 0x38
@@ -53586,7 +53586,7 @@ version 139 {
         // offset 0x2f98, size 0x38
         intstat wins_without_down;
         // offset 0x2fd0, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -53796,7 +53796,7 @@ version 139 {
         smg_fastfire_t8_operator, // 0x22,
         hatchet, // 0x23,
         tr_powersemi_t8_operator, // 0x24,
-        hash_2ea46ca74ebdfcac, // 0x25,
+        buggy_gunner_rifle, // 0x25,
         smg_capacity_t8, // 0x26,
         sniper_fastrechamber_t8_operator, // 0x27,
         sniper_quickscope_t8_operator, // 0x28,
@@ -53817,7 +53817,7 @@ version 139 {
         melee_bowie_bloody, // 0x37,
         ar_standard_t8_gold, // 0x38,
         tr_midburst_t8_operator, // 0x39,
-        hash_3e9172d77b2101e8, // 0x3a,
+        player_light_helicopter_gunner_turret, // 0x3a,
         sig_bow_quickshot, // 0x3b,
         sig_blade, // 0x3c,
         pistol_burst_t8, // 0x3d,
@@ -53826,7 +53826,7 @@ version 139 {
         ar_fastfire_t8, // 0x40,
         ar_damage_t8_gold, // 0x41,
         hero_pineapplegun, // 0x42,
-        hash_48206b17d50533c2, // 0x43,
+        pbr_gunner_rifle, // 0x43,
         sniper_quickscope_t8, // 0x44,
         lmg_heavy_t8, // 0x45,
         recon_car, // 0x46,
@@ -53936,7 +53936,7 @@ version 139 {
         shotgun_pump_t8_gold, // 0x15,
         smg_fastfire_t8_operator, // 0x16,
         tr_powersemi_t8_operator, // 0x17,
-        hash_2ea46ca74ebdfcac, // 0x18,
+        buggy_gunner_rifle, // 0x18,
         smg_capacity_t8, // 0x19,
         sniper_fastrechamber_t8_operator, // 0x1a,
         sniper_quickscope_t8_operator, // 0x1b,
@@ -53953,13 +53953,13 @@ version 139 {
         melee_bowie_bloody, // 0x26,
         ar_standard_t8_gold, // 0x27,
         tr_midburst_t8_operator, // 0x28,
-        hash_3e9172d77b2101e8, // 0x29,
+        player_light_helicopter_gunner_turret, // 0x29,
         pistol_burst_t8, // 0x2a,
         tr_leveraction_t8, // 0x2b,
         hash_4385cf507401820f, // 0x2c,
         ar_fastfire_t8, // 0x2d,
         ar_damage_t8_gold, // 0x2e,
-        hash_48206b17d50533c2, // 0x2f,
+        pbr_gunner_rifle, // 0x2f,
         sniper_quickscope_t8, // 0x30,
         lmg_heavy_t8, // 0x31,
         smg_handling_t8_gold, // 0x32,
@@ -54200,7 +54200,7 @@ version 139 {
         prt_wz_david_mason, // 0x1f,
         hash_57d9e98fa3f08f76, // 0x20,
         prt_wz_misty, // 0x21,
-        hash_62361c68e083d401, // 0x22,
+        prt_wz_technomancer, // 0x22,
         prt_wz_mercenary, // 0x23,
         prt_wz_scarlett_dlc0, // 0x24,
         prt_wz_richtofen, // 0x25,
@@ -54294,7 +54294,7 @@ version 139 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -54693,7 +54693,7 @@ version 138 {
         // offset 0x448, size 0x38
         intstat time_played_alive;
         // offset 0x480, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4b8, size 0x38
         intstat time_played_total;
         // offset 0x4f0, size 0x38
@@ -54791,7 +54791,7 @@ version 138 {
         // offset 0xe88, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xec0, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xef8, size 0x38
         intstat challengexp;
         // offset 0xf30, size 0x38
@@ -54799,7 +54799,7 @@ version 138 {
         // offset 0xf68, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xfa0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xfd8, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1010, size 0x38
@@ -54833,7 +54833,7 @@ version 138 {
         // offset 0x1308, size 0x38
         intstat kills_avenged;
         // offset 0x1340, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1378, size 0x18
         hash_5251c94487082de7 stats_headshot;
         // offset 0x1390, size 0x38
@@ -54911,7 +54911,7 @@ version 138 {
         // offset 0x1b38, size 0x38
         intstat total_shots;
         // offset 0x1b70, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1ba8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1be0, size 0x38
@@ -54959,9 +54959,9 @@ version 138 {
         // offset 0x1fc8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x2000, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2038, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2070, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x20a8, size 0x38
@@ -55019,7 +55019,7 @@ version 138 {
         // offset 0x2e98, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2ed0, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2f10, size 0x18
         hash_5251c94487082de7 stats_multikill_more_than_7;
         // offset 0x2f28, size 0x38
@@ -55029,7 +55029,7 @@ version 138 {
         // offset 0x2f98, size 0x38
         intstat wins_without_down;
         // offset 0x2fd0, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 14 members 2 size 0x20
@@ -55239,7 +55239,7 @@ version 138 {
         smg_fastfire_t8_operator, // 0x22,
         hatchet, // 0x23,
         tr_powersemi_t8_operator, // 0x24,
-        hash_2ea46ca74ebdfcac, // 0x25,
+        buggy_gunner_rifle, // 0x25,
         smg_capacity_t8, // 0x26,
         sniper_fastrechamber_t8_operator, // 0x27,
         sniper_quickscope_t8_operator, // 0x28,
@@ -55260,7 +55260,7 @@ version 138 {
         melee_bowie_bloody, // 0x37,
         ar_standard_t8_gold, // 0x38,
         tr_midburst_t8_operator, // 0x39,
-        hash_3e9172d77b2101e8, // 0x3a,
+        player_light_helicopter_gunner_turret, // 0x3a,
         sig_bow_quickshot, // 0x3b,
         sig_blade, // 0x3c,
         pistol_burst_t8, // 0x3d,
@@ -55269,7 +55269,7 @@ version 138 {
         ar_fastfire_t8, // 0x40,
         ar_damage_t8_gold, // 0x41,
         hero_pineapplegun, // 0x42,
-        hash_48206b17d50533c2, // 0x43,
+        pbr_gunner_rifle, // 0x43,
         sniper_quickscope_t8, // 0x44,
         lmg_heavy_t8, // 0x45,
         recon_car, // 0x46,
@@ -55379,7 +55379,7 @@ version 138 {
         shotgun_pump_t8_gold, // 0x15,
         smg_fastfire_t8_operator, // 0x16,
         tr_powersemi_t8_operator, // 0x17,
-        hash_2ea46ca74ebdfcac, // 0x18,
+        buggy_gunner_rifle, // 0x18,
         smg_capacity_t8, // 0x19,
         sniper_fastrechamber_t8_operator, // 0x1a,
         sniper_quickscope_t8_operator, // 0x1b,
@@ -55396,13 +55396,13 @@ version 138 {
         melee_bowie_bloody, // 0x26,
         ar_standard_t8_gold, // 0x27,
         tr_midburst_t8_operator, // 0x28,
-        hash_3e9172d77b2101e8, // 0x29,
+        player_light_helicopter_gunner_turret, // 0x29,
         pistol_burst_t8, // 0x2a,
         tr_leveraction_t8, // 0x2b,
         hash_4385cf507401820f, // 0x2c,
         ar_fastfire_t8, // 0x2d,
         ar_damage_t8_gold, // 0x2e,
-        hash_48206b17d50533c2, // 0x2f,
+        pbr_gunner_rifle, // 0x2f,
         sniper_quickscope_t8, // 0x30,
         lmg_heavy_t8, // 0x31,
         smg_handling_t8_gold, // 0x32,
@@ -55643,7 +55643,7 @@ version 138 {
         prt_wz_david_mason, // 0x1f,
         hash_57d9e98fa3f08f76, // 0x20,
         prt_wz_misty, // 0x21,
-        hash_62361c68e083d401, // 0x22,
+        prt_wz_technomancer, // 0x22,
         prt_wz_mercenary, // 0x23,
         prt_wz_scarlett_dlc0, // 0x24,
         prt_wz_richtofen, // 0x25,
@@ -55736,7 +55736,7 @@ version 138 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -56129,7 +56129,7 @@ version 137 {
         // offset 0x468, size 0x38
         intstat time_played_alive;
         // offset 0x4a0, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4d8, size 0x38
         intstat time_played_total;
         // offset 0x510, size 0x38
@@ -56227,7 +56227,7 @@ version 137 {
         // offset 0xee8, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xf20, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xf58, size 0x38
         intstat challengexp;
         // offset 0xf90, size 0x38
@@ -56235,7 +56235,7 @@ version 137 {
         // offset 0xfc8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0x1000, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x1038, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0x1070, size 0x38
@@ -56269,7 +56269,7 @@ version 137 {
         // offset 0x1388, size 0x38
         intstat kills_avenged;
         // offset 0x13c0, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x13f8, size 0x38
         intstat stats_headshot;
         // offset 0x1430, size 0x38
@@ -56347,7 +56347,7 @@ version 137 {
         // offset 0x1c18, size 0x38
         intstat total_shots;
         // offset 0x1c50, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1c88, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1cc0, size 0x38
@@ -56395,9 +56395,9 @@ version 137 {
         // offset 0x20a8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x20e0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x2118, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x2150, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2188, size 0x38
@@ -56443,7 +56443,7 @@ version 137 {
         // offset 0x2f28, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2f60, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2fa0, size 0x38
         intstat kdratio;
         // offset 0x2fd8, size 0x38
@@ -56451,7 +56451,7 @@ version 137 {
         // offset 0x3010, size 0x38
         intstat wins_without_down;
         // offset 0x3048, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -56661,7 +56661,7 @@ version 137 {
         smg_fastfire_t8_operator, // 0x22,
         hatchet, // 0x23,
         tr_powersemi_t8_operator, // 0x24,
-        hash_2ea46ca74ebdfcac, // 0x25,
+        buggy_gunner_rifle, // 0x25,
         smg_capacity_t8, // 0x26,
         sniper_fastrechamber_t8_operator, // 0x27,
         sniper_quickscope_t8_operator, // 0x28,
@@ -56682,7 +56682,7 @@ version 137 {
         melee_bowie_bloody, // 0x37,
         ar_standard_t8_gold, // 0x38,
         tr_midburst_t8_operator, // 0x39,
-        hash_3e9172d77b2101e8, // 0x3a,
+        player_light_helicopter_gunner_turret, // 0x3a,
         sig_bow_quickshot, // 0x3b,
         sig_blade, // 0x3c,
         pistol_burst_t8, // 0x3d,
@@ -56691,7 +56691,7 @@ version 137 {
         ar_fastfire_t8, // 0x40,
         ar_damage_t8_gold, // 0x41,
         hero_pineapplegun, // 0x42,
-        hash_48206b17d50533c2, // 0x43,
+        pbr_gunner_rifle, // 0x43,
         sniper_quickscope_t8, // 0x44,
         lmg_heavy_t8, // 0x45,
         recon_car, // 0x46,
@@ -56801,7 +56801,7 @@ version 137 {
         shotgun_pump_t8_gold, // 0x15,
         smg_fastfire_t8_operator, // 0x16,
         tr_powersemi_t8_operator, // 0x17,
-        hash_2ea46ca74ebdfcac, // 0x18,
+        buggy_gunner_rifle, // 0x18,
         smg_capacity_t8, // 0x19,
         sniper_fastrechamber_t8_operator, // 0x1a,
         sniper_quickscope_t8_operator, // 0x1b,
@@ -56818,13 +56818,13 @@ version 137 {
         melee_bowie_bloody, // 0x26,
         ar_standard_t8_gold, // 0x27,
         tr_midburst_t8_operator, // 0x28,
-        hash_3e9172d77b2101e8, // 0x29,
+        player_light_helicopter_gunner_turret, // 0x29,
         pistol_burst_t8, // 0x2a,
         tr_leveraction_t8, // 0x2b,
         hash_4385cf507401820f, // 0x2c,
         ar_fastfire_t8, // 0x2d,
         ar_damage_t8_gold, // 0x2e,
-        hash_48206b17d50533c2, // 0x2f,
+        pbr_gunner_rifle, // 0x2f,
         sniper_quickscope_t8, // 0x30,
         lmg_heavy_t8, // 0x31,
         smg_handling_t8_gold, // 0x32,
@@ -57065,7 +57065,7 @@ version 137 {
         prt_wz_david_mason, // 0x1f,
         hash_57d9e98fa3f08f76, // 0x20,
         prt_wz_misty, // 0x21,
-        hash_62361c68e083d401, // 0x22,
+        prt_wz_technomancer, // 0x22,
         prt_wz_mercenary, // 0x23,
         prt_wz_scarlett_dlc0, // 0x24,
         prt_wz_richtofen, // 0x25,
@@ -57158,7 +57158,7 @@ version 137 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -57549,7 +57549,7 @@ version 136 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -57643,7 +57643,7 @@ version 136 {
         // offset 0xe40, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe78, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xeb0, size 0x38
         intstat challengexp;
         // offset 0xee8, size 0x38
@@ -57651,7 +57651,7 @@ version 136 {
         // offset 0xf20, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf58, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf90, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xfc8, size 0x38
@@ -57683,7 +57683,7 @@ version 136 {
         // offset 0x12a8, size 0x38
         intstat kills_avenged;
         // offset 0x12e0, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1318, size 0x38
         intstat deaths;
         // offset 0x1350, size 0x40
@@ -57755,7 +57755,7 @@ version 136 {
         // offset 0x1a90, size 0x38
         intstat total_shots;
         // offset 0x1ac8, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1b00, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1b38, size 0x38
@@ -57803,9 +57803,9 @@ version 136 {
         // offset 0x1f20, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1f58, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1f90, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1fc8, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x2000, size 0x38
@@ -57847,7 +57847,7 @@ version 136 {
         // offset 0x2d30, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2d68, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2da8, size 0x38
         intstat kdratio;
         // offset 0x2de0, size 0x38
@@ -57855,7 +57855,7 @@ version 136 {
         // offset 0x2e18, size 0x38
         intstat wins_without_down;
         // offset 0x2e50, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -58065,7 +58065,7 @@ version 136 {
         smg_fastfire_t8_operator, // 0x22,
         hatchet, // 0x23,
         tr_powersemi_t8_operator, // 0x24,
-        hash_2ea46ca74ebdfcac, // 0x25,
+        buggy_gunner_rifle, // 0x25,
         smg_capacity_t8, // 0x26,
         sniper_fastrechamber_t8_operator, // 0x27,
         sniper_quickscope_t8_operator, // 0x28,
@@ -58086,7 +58086,7 @@ version 136 {
         melee_bowie_bloody, // 0x37,
         ar_standard_t8_gold, // 0x38,
         tr_midburst_t8_operator, // 0x39,
-        hash_3e9172d77b2101e8, // 0x3a,
+        player_light_helicopter_gunner_turret, // 0x3a,
         sig_bow_quickshot, // 0x3b,
         sig_blade, // 0x3c,
         pistol_burst_t8, // 0x3d,
@@ -58095,7 +58095,7 @@ version 136 {
         ar_fastfire_t8, // 0x40,
         ar_damage_t8_gold, // 0x41,
         hero_pineapplegun, // 0x42,
-        hash_48206b17d50533c2, // 0x43,
+        pbr_gunner_rifle, // 0x43,
         sniper_quickscope_t8, // 0x44,
         lmg_heavy_t8, // 0x45,
         recon_car, // 0x46,
@@ -58205,7 +58205,7 @@ version 136 {
         shotgun_pump_t8_gold, // 0x15,
         smg_fastfire_t8_operator, // 0x16,
         tr_powersemi_t8_operator, // 0x17,
-        hash_2ea46ca74ebdfcac, // 0x18,
+        buggy_gunner_rifle, // 0x18,
         smg_capacity_t8, // 0x19,
         sniper_fastrechamber_t8_operator, // 0x1a,
         sniper_quickscope_t8_operator, // 0x1b,
@@ -58222,13 +58222,13 @@ version 136 {
         melee_bowie_bloody, // 0x26,
         ar_standard_t8_gold, // 0x27,
         tr_midburst_t8_operator, // 0x28,
-        hash_3e9172d77b2101e8, // 0x29,
+        player_light_helicopter_gunner_turret, // 0x29,
         pistol_burst_t8, // 0x2a,
         tr_leveraction_t8, // 0x2b,
         hash_4385cf507401820f, // 0x2c,
         ar_fastfire_t8, // 0x2d,
         ar_damage_t8_gold, // 0x2e,
-        hash_48206b17d50533c2, // 0x2f,
+        pbr_gunner_rifle, // 0x2f,
         sniper_quickscope_t8, // 0x30,
         lmg_heavy_t8, // 0x31,
         smg_handling_t8_gold, // 0x32,
@@ -58469,7 +58469,7 @@ version 136 {
         prt_wz_david_mason, // 0x1f,
         hash_57d9e98fa3f08f76, // 0x20,
         prt_wz_misty, // 0x21,
-        hash_62361c68e083d401, // 0x22,
+        prt_wz_technomancer, // 0x22,
         prt_wz_mercenary, // 0x23,
         prt_wz_scarlett_dlc0, // 0x24,
         prt_wz_richtofen, // 0x25,
@@ -58562,7 +58562,7 @@ version 136 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -58953,7 +58953,7 @@ version 135 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -59045,7 +59045,7 @@ version 135 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -59053,7 +59053,7 @@ version 135 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -59083,7 +59083,7 @@ version 135 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -59155,7 +59155,7 @@ version 135 {
         // offset 0x1a20, size 0x38
         intstat total_shots;
         // offset 0x1a58, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1a90, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1ac8, size 0x38
@@ -59203,9 +59203,9 @@ version 135 {
         // offset 0x1eb0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1ee8, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1f20, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1f58, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1f90, size 0x38
@@ -59249,7 +59249,7 @@ version 135 {
         // offset 0x2cf8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2d30, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2d70, size 0x38
         intstat kdratio;
         // offset 0x2da8, size 0x38
@@ -59257,7 +59257,7 @@ version 135 {
         // offset 0x2de0, size 0x38
         intstat wins_without_down;
         // offset 0x2e18, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -59467,7 +59467,7 @@ version 135 {
         smg_fastfire_t8_operator, // 0x22,
         hatchet, // 0x23,
         tr_powersemi_t8_operator, // 0x24,
-        hash_2ea46ca74ebdfcac, // 0x25,
+        buggy_gunner_rifle, // 0x25,
         smg_capacity_t8, // 0x26,
         sniper_fastrechamber_t8_operator, // 0x27,
         sniper_quickscope_t8_operator, // 0x28,
@@ -59488,7 +59488,7 @@ version 135 {
         melee_bowie_bloody, // 0x37,
         ar_standard_t8_gold, // 0x38,
         tr_midburst_t8_operator, // 0x39,
-        hash_3e9172d77b2101e8, // 0x3a,
+        player_light_helicopter_gunner_turret, // 0x3a,
         sig_bow_quickshot, // 0x3b,
         sig_blade, // 0x3c,
         pistol_burst_t8, // 0x3d,
@@ -59497,7 +59497,7 @@ version 135 {
         ar_fastfire_t8, // 0x40,
         ar_damage_t8_gold, // 0x41,
         hero_pineapplegun, // 0x42,
-        hash_48206b17d50533c2, // 0x43,
+        pbr_gunner_rifle, // 0x43,
         sniper_quickscope_t8, // 0x44,
         lmg_heavy_t8, // 0x45,
         recon_car, // 0x46,
@@ -59607,7 +59607,7 @@ version 135 {
         shotgun_pump_t8_gold, // 0x15,
         smg_fastfire_t8_operator, // 0x16,
         tr_powersemi_t8_operator, // 0x17,
-        hash_2ea46ca74ebdfcac, // 0x18,
+        buggy_gunner_rifle, // 0x18,
         smg_capacity_t8, // 0x19,
         sniper_fastrechamber_t8_operator, // 0x1a,
         sniper_quickscope_t8_operator, // 0x1b,
@@ -59624,13 +59624,13 @@ version 135 {
         melee_bowie_bloody, // 0x26,
         ar_standard_t8_gold, // 0x27,
         tr_midburst_t8_operator, // 0x28,
-        hash_3e9172d77b2101e8, // 0x29,
+        player_light_helicopter_gunner_turret, // 0x29,
         pistol_burst_t8, // 0x2a,
         tr_leveraction_t8, // 0x2b,
         hash_4385cf507401820f, // 0x2c,
         ar_fastfire_t8, // 0x2d,
         ar_damage_t8_gold, // 0x2e,
-        hash_48206b17d50533c2, // 0x2f,
+        pbr_gunner_rifle, // 0x2f,
         sniper_quickscope_t8, // 0x30,
         lmg_heavy_t8, // 0x31,
         smg_handling_t8_gold, // 0x32,
@@ -59871,7 +59871,7 @@ version 135 {
         prt_wz_david_mason, // 0x1f,
         hash_57d9e98fa3f08f76, // 0x20,
         prt_wz_misty, // 0x21,
-        hash_62361c68e083d401, // 0x22,
+        prt_wz_technomancer, // 0x22,
         prt_wz_mercenary, // 0x23,
         prt_wz_scarlett_dlc0, // 0x24,
         prt_wz_richtofen, // 0x25,
@@ -59964,7 +59964,7 @@ version 135 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -60355,7 +60355,7 @@ version 134 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -60447,7 +60447,7 @@ version 134 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -60455,7 +60455,7 @@ version 134 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -60485,7 +60485,7 @@ version 134 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -60557,7 +60557,7 @@ version 134 {
         // offset 0x1a20, size 0x38
         intstat total_shots;
         // offset 0x1a58, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1a90, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1ac8, size 0x38
@@ -60605,9 +60605,9 @@ version 134 {
         // offset 0x1eb0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1ee8, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1f20, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1f58, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1f90, size 0x38
@@ -60651,7 +60651,7 @@ version 134 {
         // offset 0x2cf8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2d30, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2d70, size 0x38
         intstat kdratio;
         // offset 0x2da8, size 0x38
@@ -60659,7 +60659,7 @@ version 134 {
         // offset 0x2de0, size 0x38
         intstat wins_without_down;
         // offset 0x2e18, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -60869,7 +60869,7 @@ version 134 {
         smg_fastfire_t8_operator, // 0x22,
         hatchet, // 0x23,
         tr_powersemi_t8_operator, // 0x24,
-        hash_2ea46ca74ebdfcac, // 0x25,
+        buggy_gunner_rifle, // 0x25,
         smg_capacity_t8, // 0x26,
         sniper_fastrechamber_t8_operator, // 0x27,
         sniper_quickscope_t8_operator, // 0x28,
@@ -60890,7 +60890,7 @@ version 134 {
         melee_bowie_bloody, // 0x37,
         ar_standard_t8_gold, // 0x38,
         tr_midburst_t8_operator, // 0x39,
-        hash_3e9172d77b2101e8, // 0x3a,
+        player_light_helicopter_gunner_turret, // 0x3a,
         sig_bow_quickshot, // 0x3b,
         sig_blade, // 0x3c,
         pistol_burst_t8, // 0x3d,
@@ -60899,7 +60899,7 @@ version 134 {
         ar_fastfire_t8, // 0x40,
         ar_damage_t8_gold, // 0x41,
         hero_pineapplegun, // 0x42,
-        hash_48206b17d50533c2, // 0x43,
+        pbr_gunner_rifle, // 0x43,
         sniper_quickscope_t8, // 0x44,
         lmg_heavy_t8, // 0x45,
         recon_car, // 0x46,
@@ -61007,7 +61007,7 @@ version 134 {
         shotgun_pump_t8_gold, // 0x15,
         smg_fastfire_t8_operator, // 0x16,
         tr_powersemi_t8_operator, // 0x17,
-        hash_2ea46ca74ebdfcac, // 0x18,
+        buggy_gunner_rifle, // 0x18,
         smg_capacity_t8, // 0x19,
         sniper_fastrechamber_t8_operator, // 0x1a,
         sniper_quickscope_t8_operator, // 0x1b,
@@ -61024,13 +61024,13 @@ version 134 {
         melee_bowie_bloody, // 0x26,
         ar_standard_t8_gold, // 0x27,
         tr_midburst_t8_operator, // 0x28,
-        hash_3e9172d77b2101e8, // 0x29,
+        player_light_helicopter_gunner_turret, // 0x29,
         pistol_burst_t8, // 0x2a,
         tr_leveraction_t8, // 0x2b,
         hash_4385cf507401820f, // 0x2c,
         ar_fastfire_t8, // 0x2d,
         ar_damage_t8_gold, // 0x2e,
-        hash_48206b17d50533c2, // 0x2f,
+        pbr_gunner_rifle, // 0x2f,
         sniper_quickscope_t8, // 0x30,
         lmg_heavy_t8, // 0x31,
         smg_handling_t8_gold, // 0x32,
@@ -61269,7 +61269,7 @@ version 134 {
         prt_wz_david_mason, // 0x1f,
         hash_57d9e98fa3f08f76, // 0x20,
         prt_wz_misty, // 0x21,
-        hash_62361c68e083d401, // 0x22,
+        prt_wz_technomancer, // 0x22,
         prt_wz_mercenary, // 0x23,
         prt_wz_scarlett_dlc0, // 0x24,
         prt_wz_richtofen, // 0x25,
@@ -61362,7 +61362,7 @@ version 134 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -61753,7 +61753,7 @@ version 133 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -61845,7 +61845,7 @@ version 133 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -61853,7 +61853,7 @@ version 133 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -61883,7 +61883,7 @@ version 133 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -61955,7 +61955,7 @@ version 133 {
         // offset 0x1a20, size 0x38
         intstat total_shots;
         // offset 0x1a58, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1a90, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1ac8, size 0x38
@@ -62003,9 +62003,9 @@ version 133 {
         // offset 0x1eb0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1ee8, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1f20, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1f58, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1f90, size 0x38
@@ -62049,7 +62049,7 @@ version 133 {
         // offset 0x2cf8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2d30, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2d70, size 0x38
         intstat kdratio;
         // offset 0x2da8, size 0x38
@@ -62057,7 +62057,7 @@ version 133 {
         // offset 0x2de0, size 0x38
         intstat wins_without_down;
         // offset 0x2e18, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -62266,7 +62266,7 @@ version 133 {
         smg_fastfire_t8_operator, // 0x21,
         hatchet, // 0x22,
         tr_powersemi_t8_operator, // 0x23,
-        hash_2ea46ca74ebdfcac, // 0x24,
+        buggy_gunner_rifle, // 0x24,
         smg_capacity_t8, // 0x25,
         sniper_fastrechamber_t8_operator, // 0x26,
         sniper_quickscope_t8_operator, // 0x27,
@@ -62287,7 +62287,7 @@ version 133 {
         melee_bowie_bloody, // 0x36,
         ar_standard_t8_gold, // 0x37,
         tr_midburst_t8_operator, // 0x38,
-        hash_3e9172d77b2101e8, // 0x39,
+        player_light_helicopter_gunner_turret, // 0x39,
         sig_bow_quickshot, // 0x3a,
         sig_blade, // 0x3b,
         pistol_burst_t8, // 0x3c,
@@ -62296,7 +62296,7 @@ version 133 {
         ar_fastfire_t8, // 0x3f,
         ar_damage_t8_gold, // 0x40,
         hero_pineapplegun, // 0x41,
-        hash_48206b17d50533c2, // 0x42,
+        pbr_gunner_rifle, // 0x42,
         sniper_quickscope_t8, // 0x43,
         lmg_heavy_t8, // 0x44,
         recon_car, // 0x45,
@@ -62404,7 +62404,7 @@ version 133 {
         shotgun_pump_t8_gold, // 0x15,
         smg_fastfire_t8_operator, // 0x16,
         tr_powersemi_t8_operator, // 0x17,
-        hash_2ea46ca74ebdfcac, // 0x18,
+        buggy_gunner_rifle, // 0x18,
         smg_capacity_t8, // 0x19,
         sniper_fastrechamber_t8_operator, // 0x1a,
         sniper_quickscope_t8_operator, // 0x1b,
@@ -62421,13 +62421,13 @@ version 133 {
         melee_bowie_bloody, // 0x26,
         ar_standard_t8_gold, // 0x27,
         tr_midburst_t8_operator, // 0x28,
-        hash_3e9172d77b2101e8, // 0x29,
+        player_light_helicopter_gunner_turret, // 0x29,
         pistol_burst_t8, // 0x2a,
         tr_leveraction_t8, // 0x2b,
         hash_4385cf507401820f, // 0x2c,
         ar_fastfire_t8, // 0x2d,
         ar_damage_t8_gold, // 0x2e,
-        hash_48206b17d50533c2, // 0x2f,
+        pbr_gunner_rifle, // 0x2f,
         sniper_quickscope_t8, // 0x30,
         lmg_heavy_t8, // 0x31,
         smg_handling_t8_gold, // 0x32,
@@ -62666,7 +62666,7 @@ version 133 {
         prt_wz_david_mason, // 0x1f,
         hash_57d9e98fa3f08f76, // 0x20,
         prt_wz_misty, // 0x21,
-        hash_62361c68e083d401, // 0x22,
+        prt_wz_technomancer, // 0x22,
         prt_wz_mercenary, // 0x23,
         prt_wz_scarlett_dlc0, // 0x24,
         prt_wz_richtofen, // 0x25,
@@ -62759,7 +62759,7 @@ version 133 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -63150,7 +63150,7 @@ version 132 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -63242,7 +63242,7 @@ version 132 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -63250,7 +63250,7 @@ version 132 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -63280,7 +63280,7 @@ version 132 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -63346,7 +63346,7 @@ version 132 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -63394,9 +63394,9 @@ version 132 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -63440,7 +63440,7 @@ version 132 {
         // offset 0x2c38, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c70, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2cb0, size 0x38
         intstat kdratio;
         // offset 0x2ce8, size 0x38
@@ -63448,7 +63448,7 @@ version 132 {
         // offset 0x2d20, size 0x38
         intstat wins_without_down;
         // offset 0x2d58, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -63657,7 +63657,7 @@ version 132 {
         smg_fastfire_t8_operator, // 0x21,
         hatchet, // 0x22,
         tr_powersemi_t8_operator, // 0x23,
-        hash_2ea46ca74ebdfcac, // 0x24,
+        buggy_gunner_rifle, // 0x24,
         smg_capacity_t8, // 0x25,
         sniper_fastrechamber_t8_operator, // 0x26,
         sniper_quickscope_t8_operator, // 0x27,
@@ -63678,7 +63678,7 @@ version 132 {
         melee_bowie_bloody, // 0x36,
         ar_standard_t8_gold, // 0x37,
         tr_midburst_t8_operator, // 0x38,
-        hash_3e9172d77b2101e8, // 0x39,
+        player_light_helicopter_gunner_turret, // 0x39,
         sig_bow_quickshot, // 0x3a,
         sig_blade, // 0x3b,
         pistol_burst_t8, // 0x3c,
@@ -63687,7 +63687,7 @@ version 132 {
         ar_fastfire_t8, // 0x3f,
         ar_damage_t8_gold, // 0x40,
         hero_pineapplegun, // 0x41,
-        hash_48206b17d50533c2, // 0x42,
+        pbr_gunner_rifle, // 0x42,
         sniper_quickscope_t8, // 0x43,
         lmg_heavy_t8, // 0x44,
         recon_car, // 0x45,
@@ -63795,7 +63795,7 @@ version 132 {
         shotgun_pump_t8_gold, // 0x15,
         smg_fastfire_t8_operator, // 0x16,
         tr_powersemi_t8_operator, // 0x17,
-        hash_2ea46ca74ebdfcac, // 0x18,
+        buggy_gunner_rifle, // 0x18,
         smg_capacity_t8, // 0x19,
         sniper_fastrechamber_t8_operator, // 0x1a,
         sniper_quickscope_t8_operator, // 0x1b,
@@ -63812,13 +63812,13 @@ version 132 {
         melee_bowie_bloody, // 0x26,
         ar_standard_t8_gold, // 0x27,
         tr_midburst_t8_operator, // 0x28,
-        hash_3e9172d77b2101e8, // 0x29,
+        player_light_helicopter_gunner_turret, // 0x29,
         pistol_burst_t8, // 0x2a,
         tr_leveraction_t8, // 0x2b,
         hash_4385cf507401820f, // 0x2c,
         ar_fastfire_t8, // 0x2d,
         ar_damage_t8_gold, // 0x2e,
-        hash_48206b17d50533c2, // 0x2f,
+        pbr_gunner_rifle, // 0x2f,
         sniper_quickscope_t8, // 0x30,
         lmg_heavy_t8, // 0x31,
         smg_handling_t8_gold, // 0x32,
@@ -64057,7 +64057,7 @@ version 132 {
         prt_wz_david_mason, // 0x1f,
         hash_57d9e98fa3f08f76, // 0x20,
         prt_wz_misty, // 0x21,
-        hash_62361c68e083d401, // 0x22,
+        prt_wz_technomancer, // 0x22,
         prt_wz_mercenary, // 0x23,
         prt_wz_scarlett_dlc0, // 0x24,
         prt_wz_richtofen, // 0x25,
@@ -64150,7 +64150,7 @@ version 132 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -64541,7 +64541,7 @@ version 131 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -64633,7 +64633,7 @@ version 131 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -64641,7 +64641,7 @@ version 131 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -64671,7 +64671,7 @@ version 131 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -64737,7 +64737,7 @@ version 131 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -64785,9 +64785,9 @@ version 131 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -64831,7 +64831,7 @@ version 131 {
         // offset 0x2c38, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c70, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2cb0, size 0x38
         intstat kdratio;
         // offset 0x2ce8, size 0x38
@@ -64839,7 +64839,7 @@ version 131 {
         // offset 0x2d20, size 0x38
         intstat wins_without_down;
         // offset 0x2d58, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -65048,7 +65048,7 @@ version 131 {
         smg_fastfire_t8_operator, // 0x21,
         hatchet, // 0x22,
         tr_powersemi_t8_operator, // 0x23,
-        hash_2ea46ca74ebdfcac, // 0x24,
+        buggy_gunner_rifle, // 0x24,
         smg_capacity_t8, // 0x25,
         sniper_fastrechamber_t8_operator, // 0x26,
         sniper_quickscope_t8_operator, // 0x27,
@@ -65069,7 +65069,7 @@ version 131 {
         melee_bowie_bloody, // 0x36,
         ar_standard_t8_gold, // 0x37,
         tr_midburst_t8_operator, // 0x38,
-        hash_3e9172d77b2101e8, // 0x39,
+        player_light_helicopter_gunner_turret, // 0x39,
         sig_bow_quickshot, // 0x3a,
         sig_blade, // 0x3b,
         pistol_burst_t8, // 0x3c,
@@ -65078,7 +65078,7 @@ version 131 {
         ar_fastfire_t8, // 0x3f,
         ar_damage_t8_gold, // 0x40,
         hero_pineapplegun, // 0x41,
-        hash_48206b17d50533c2, // 0x42,
+        pbr_gunner_rifle, // 0x42,
         sniper_quickscope_t8, // 0x43,
         lmg_heavy_t8, // 0x44,
         recon_car, // 0x45,
@@ -65186,7 +65186,7 @@ version 131 {
         shotgun_pump_t8_gold, // 0x15,
         smg_fastfire_t8_operator, // 0x16,
         tr_powersemi_t8_operator, // 0x17,
-        hash_2ea46ca74ebdfcac, // 0x18,
+        buggy_gunner_rifle, // 0x18,
         smg_capacity_t8, // 0x19,
         sniper_fastrechamber_t8_operator, // 0x1a,
         sniper_quickscope_t8_operator, // 0x1b,
@@ -65203,13 +65203,13 @@ version 131 {
         melee_bowie_bloody, // 0x26,
         ar_standard_t8_gold, // 0x27,
         tr_midburst_t8_operator, // 0x28,
-        hash_3e9172d77b2101e8, // 0x29,
+        player_light_helicopter_gunner_turret, // 0x29,
         pistol_burst_t8, // 0x2a,
         tr_leveraction_t8, // 0x2b,
         hash_4385cf507401820f, // 0x2c,
         ar_fastfire_t8, // 0x2d,
         ar_damage_t8_gold, // 0x2e,
-        hash_48206b17d50533c2, // 0x2f,
+        pbr_gunner_rifle, // 0x2f,
         sniper_quickscope_t8, // 0x30,
         lmg_heavy_t8, // 0x31,
         smg_handling_t8_gold, // 0x32,
@@ -65447,7 +65447,7 @@ version 131 {
         prt_wz_david_mason, // 0x1e,
         hash_57d9e98fa3f08f76, // 0x1f,
         prt_wz_misty, // 0x20,
-        hash_62361c68e083d401, // 0x21,
+        prt_wz_technomancer, // 0x21,
         prt_wz_mercenary, // 0x22,
         prt_wz_scarlett_dlc0, // 0x23,
         prt_wz_richtofen, // 0x24,
@@ -65540,7 +65540,7 @@ version 131 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -65931,7 +65931,7 @@ version 130 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -66023,7 +66023,7 @@ version 130 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -66031,7 +66031,7 @@ version 130 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -66061,7 +66061,7 @@ version 130 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -66127,7 +66127,7 @@ version 130 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -66175,9 +66175,9 @@ version 130 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -66221,7 +66221,7 @@ version 130 {
         // offset 0x2c38, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c70, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2cb0, size 0x38
         intstat kdratio;
         // offset 0x2ce8, size 0x38
@@ -66229,7 +66229,7 @@ version 130 {
         // offset 0x2d20, size 0x38
         intstat wins_without_down;
         // offset 0x2d58, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -66438,7 +66438,7 @@ version 130 {
         smg_fastfire_t8_operator, // 0x21,
         hatchet, // 0x22,
         tr_powersemi_t8_operator, // 0x23,
-        hash_2ea46ca74ebdfcac, // 0x24,
+        buggy_gunner_rifle, // 0x24,
         smg_capacity_t8, // 0x25,
         sniper_fastrechamber_t8_operator, // 0x26,
         sniper_quickscope_t8_operator, // 0x27,
@@ -66459,7 +66459,7 @@ version 130 {
         melee_bowie_bloody, // 0x36,
         ar_standard_t8_gold, // 0x37,
         tr_midburst_t8_operator, // 0x38,
-        hash_3e9172d77b2101e8, // 0x39,
+        player_light_helicopter_gunner_turret, // 0x39,
         sig_bow_quickshot, // 0x3a,
         sig_blade, // 0x3b,
         pistol_burst_t8, // 0x3c,
@@ -66468,7 +66468,7 @@ version 130 {
         ar_fastfire_t8, // 0x3f,
         ar_damage_t8_gold, // 0x40,
         hero_pineapplegun, // 0x41,
-        hash_48206b17d50533c2, // 0x42,
+        pbr_gunner_rifle, // 0x42,
         sniper_quickscope_t8, // 0x43,
         lmg_heavy_t8, // 0x44,
         recon_car, // 0x45,
@@ -66576,7 +66576,7 @@ version 130 {
         shotgun_pump_t8_gold, // 0x15,
         smg_fastfire_t8_operator, // 0x16,
         tr_powersemi_t8_operator, // 0x17,
-        hash_2ea46ca74ebdfcac, // 0x18,
+        buggy_gunner_rifle, // 0x18,
         smg_capacity_t8, // 0x19,
         sniper_fastrechamber_t8_operator, // 0x1a,
         sniper_quickscope_t8_operator, // 0x1b,
@@ -66593,13 +66593,13 @@ version 130 {
         melee_bowie_bloody, // 0x26,
         ar_standard_t8_gold, // 0x27,
         tr_midburst_t8_operator, // 0x28,
-        hash_3e9172d77b2101e8, // 0x29,
+        player_light_helicopter_gunner_turret, // 0x29,
         pistol_burst_t8, // 0x2a,
         tr_leveraction_t8, // 0x2b,
         hash_4385cf507401820f, // 0x2c,
         ar_fastfire_t8, // 0x2d,
         ar_damage_t8_gold, // 0x2e,
-        hash_48206b17d50533c2, // 0x2f,
+        pbr_gunner_rifle, // 0x2f,
         sniper_quickscope_t8, // 0x30,
         lmg_heavy_t8, // 0x31,
         smg_handling_t8_gold, // 0x32,
@@ -66835,7 +66835,7 @@ version 130 {
         prt_wz_david_mason, // 0x1e,
         hash_57d9e98fa3f08f76, // 0x1f,
         prt_wz_misty, // 0x20,
-        hash_62361c68e083d401, // 0x21,
+        prt_wz_technomancer, // 0x21,
         prt_wz_mercenary, // 0x22,
         prt_wz_scarlett_dlc0, // 0x23,
         prt_wz_richtofen, // 0x24,
@@ -66928,7 +66928,7 @@ version 130 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -67319,7 +67319,7 @@ version 129 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -67411,7 +67411,7 @@ version 129 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -67419,7 +67419,7 @@ version 129 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -67449,7 +67449,7 @@ version 129 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -67515,7 +67515,7 @@ version 129 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -67563,9 +67563,9 @@ version 129 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -67609,7 +67609,7 @@ version 129 {
         // offset 0x2c38, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c70, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2cb0, size 0x38
         intstat kdratio;
         // offset 0x2ce8, size 0x38
@@ -67617,7 +67617,7 @@ version 129 {
         // offset 0x2d20, size 0x38
         intstat wins_without_down;
         // offset 0x2d58, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -67826,7 +67826,7 @@ version 129 {
         smg_fastfire_t8_operator, // 0x21,
         hatchet, // 0x22,
         tr_powersemi_t8_operator, // 0x23,
-        hash_2ea46ca74ebdfcac, // 0x24,
+        buggy_gunner_rifle, // 0x24,
         smg_capacity_t8, // 0x25,
         sniper_fastrechamber_t8_operator, // 0x26,
         sniper_quickscope_t8_operator, // 0x27,
@@ -67847,7 +67847,7 @@ version 129 {
         melee_bowie_bloody, // 0x36,
         ar_standard_t8_gold, // 0x37,
         tr_midburst_t8_operator, // 0x38,
-        hash_3e9172d77b2101e8, // 0x39,
+        player_light_helicopter_gunner_turret, // 0x39,
         sig_bow_quickshot, // 0x3a,
         sig_blade, // 0x3b,
         pistol_burst_t8, // 0x3c,
@@ -67856,7 +67856,7 @@ version 129 {
         ar_fastfire_t8, // 0x3f,
         ar_damage_t8_gold, // 0x40,
         hero_pineapplegun, // 0x41,
-        hash_48206b17d50533c2, // 0x42,
+        pbr_gunner_rifle, // 0x42,
         sniper_quickscope_t8, // 0x43,
         lmg_heavy_t8, // 0x44,
         recon_car, // 0x45,
@@ -67964,7 +67964,7 @@ version 129 {
         shotgun_pump_t8_gold, // 0x15,
         smg_fastfire_t8_operator, // 0x16,
         tr_powersemi_t8_operator, // 0x17,
-        hash_2ea46ca74ebdfcac, // 0x18,
+        buggy_gunner_rifle, // 0x18,
         smg_capacity_t8, // 0x19,
         sniper_fastrechamber_t8_operator, // 0x1a,
         sniper_quickscope_t8_operator, // 0x1b,
@@ -67981,13 +67981,13 @@ version 129 {
         melee_bowie_bloody, // 0x26,
         ar_standard_t8_gold, // 0x27,
         tr_midburst_t8_operator, // 0x28,
-        hash_3e9172d77b2101e8, // 0x29,
+        player_light_helicopter_gunner_turret, // 0x29,
         pistol_burst_t8, // 0x2a,
         tr_leveraction_t8, // 0x2b,
         hash_4385cf507401820f, // 0x2c,
         ar_fastfire_t8, // 0x2d,
         ar_damage_t8_gold, // 0x2e,
-        hash_48206b17d50533c2, // 0x2f,
+        pbr_gunner_rifle, // 0x2f,
         sniper_quickscope_t8, // 0x30,
         lmg_heavy_t8, // 0x31,
         smg_handling_t8_gold, // 0x32,
@@ -68223,7 +68223,7 @@ version 129 {
         prt_wz_david_mason, // 0x1e,
         hash_57d9e98fa3f08f76, // 0x1f,
         prt_wz_misty, // 0x20,
-        hash_62361c68e083d401, // 0x21,
+        prt_wz_technomancer, // 0x21,
         prt_wz_mercenary, // 0x22,
         prt_wz_scarlett_dlc0, // 0x23,
         prt_wz_richtofen, // 0x24,
@@ -68315,7 +68315,7 @@ version 129 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -68706,7 +68706,7 @@ version 128 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -68798,7 +68798,7 @@ version 128 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -68806,7 +68806,7 @@ version 128 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -68836,7 +68836,7 @@ version 128 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -68902,7 +68902,7 @@ version 128 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -68950,9 +68950,9 @@ version 128 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -68996,7 +68996,7 @@ version 128 {
         // offset 0x2c38, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c70, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2cb0, size 0x38
         intstat kdratio;
         // offset 0x2ce8, size 0x38
@@ -69004,7 +69004,7 @@ version 128 {
         // offset 0x2d20, size 0x38
         intstat wins_without_down;
         // offset 0x2d58, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -69213,7 +69213,7 @@ version 128 {
         smg_fastfire_t8_operator, // 0x21,
         hatchet, // 0x22,
         tr_powersemi_t8_operator, // 0x23,
-        hash_2ea46ca74ebdfcac, // 0x24,
+        buggy_gunner_rifle, // 0x24,
         smg_capacity_t8, // 0x25,
         sniper_fastrechamber_t8_operator, // 0x26,
         sniper_quickscope_t8_operator, // 0x27,
@@ -69234,7 +69234,7 @@ version 128 {
         melee_bowie_bloody, // 0x36,
         ar_standard_t8_gold, // 0x37,
         tr_midburst_t8_operator, // 0x38,
-        hash_3e9172d77b2101e8, // 0x39,
+        player_light_helicopter_gunner_turret, // 0x39,
         sig_bow_quickshot, // 0x3a,
         sig_blade, // 0x3b,
         pistol_burst_t8, // 0x3c,
@@ -69243,7 +69243,7 @@ version 128 {
         ar_fastfire_t8, // 0x3f,
         ar_damage_t8_gold, // 0x40,
         hero_pineapplegun, // 0x41,
-        hash_48206b17d50533c2, // 0x42,
+        pbr_gunner_rifle, // 0x42,
         sniper_quickscope_t8, // 0x43,
         lmg_heavy_t8, // 0x44,
         recon_car, // 0x45,
@@ -69348,7 +69348,7 @@ version 128 {
         shotgun_pump_t8_gold, // 0x15,
         smg_fastfire_t8_operator, // 0x16,
         tr_powersemi_t8_operator, // 0x17,
-        hash_2ea46ca74ebdfcac, // 0x18,
+        buggy_gunner_rifle, // 0x18,
         smg_capacity_t8, // 0x19,
         sniper_fastrechamber_t8_operator, // 0x1a,
         sniper_quickscope_t8_operator, // 0x1b,
@@ -69365,13 +69365,13 @@ version 128 {
         melee_bowie_bloody, // 0x26,
         ar_standard_t8_gold, // 0x27,
         tr_midburst_t8_operator, // 0x28,
-        hash_3e9172d77b2101e8, // 0x29,
+        player_light_helicopter_gunner_turret, // 0x29,
         pistol_burst_t8, // 0x2a,
         tr_leveraction_t8, // 0x2b,
         hash_4385cf507401820f, // 0x2c,
         ar_fastfire_t8, // 0x2d,
         ar_damage_t8_gold, // 0x2e,
-        hash_48206b17d50533c2, // 0x2f,
+        pbr_gunner_rifle, // 0x2f,
         sniper_quickscope_t8, // 0x30,
         lmg_heavy_t8, // 0x31,
         smg_handling_t8_gold, // 0x32,
@@ -69605,7 +69605,7 @@ version 128 {
         prt_wz_david_mason, // 0x1e,
         hash_57d9e98fa3f08f76, // 0x1f,
         prt_wz_misty, // 0x20,
-        hash_62361c68e083d401, // 0x21,
+        prt_wz_technomancer, // 0x21,
         prt_wz_mercenary, // 0x22,
         prt_wz_scarlett_dlc0, // 0x23,
         prt_wz_richtofen, // 0x24,
@@ -69697,7 +69697,7 @@ version 128 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_503737080f039330, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         hash_64c3f9cd66aa1d0d, // 0x17,
@@ -70088,7 +70088,7 @@ version 127 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -70180,7 +70180,7 @@ version 127 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -70188,7 +70188,7 @@ version 127 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -70218,7 +70218,7 @@ version 127 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -70284,7 +70284,7 @@ version 127 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -70332,9 +70332,9 @@ version 127 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -70376,7 +70376,7 @@ version 127 {
         // offset 0x2c00, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c38, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c78, size 0x38
         intstat kdratio;
         // offset 0x2cb0, size 0x38
@@ -70384,7 +70384,7 @@ version 127 {
         // offset 0x2ce8, size 0x38
         intstat wins_without_down;
         // offset 0x2d20, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -70593,7 +70593,7 @@ version 127 {
         smg_fastfire_t8_operator, // 0x21,
         hatchet, // 0x22,
         tr_powersemi_t8_operator, // 0x23,
-        hash_2ea46ca74ebdfcac, // 0x24,
+        buggy_gunner_rifle, // 0x24,
         smg_capacity_t8, // 0x25,
         sniper_fastrechamber_t8_operator, // 0x26,
         sniper_quickscope_t8_operator, // 0x27,
@@ -70614,7 +70614,7 @@ version 127 {
         melee_bowie_bloody, // 0x36,
         ar_standard_t8_gold, // 0x37,
         tr_midburst_t8_operator, // 0x38,
-        hash_3e9172d77b2101e8, // 0x39,
+        player_light_helicopter_gunner_turret, // 0x39,
         sig_bow_quickshot, // 0x3a,
         sig_blade, // 0x3b,
         pistol_burst_t8, // 0x3c,
@@ -70623,7 +70623,7 @@ version 127 {
         ar_fastfire_t8, // 0x3f,
         ar_damage_t8_gold, // 0x40,
         hero_pineapplegun, // 0x41,
-        hash_48206b17d50533c2, // 0x42,
+        pbr_gunner_rifle, // 0x42,
         sniper_quickscope_t8, // 0x43,
         lmg_heavy_t8, // 0x44,
         recon_car, // 0x45,
@@ -70728,7 +70728,7 @@ version 127 {
         shotgun_pump_t8_gold, // 0x15,
         smg_fastfire_t8_operator, // 0x16,
         tr_powersemi_t8_operator, // 0x17,
-        hash_2ea46ca74ebdfcac, // 0x18,
+        buggy_gunner_rifle, // 0x18,
         smg_capacity_t8, // 0x19,
         sniper_fastrechamber_t8_operator, // 0x1a,
         sniper_quickscope_t8_operator, // 0x1b,
@@ -70745,13 +70745,13 @@ version 127 {
         melee_bowie_bloody, // 0x26,
         ar_standard_t8_gold, // 0x27,
         tr_midburst_t8_operator, // 0x28,
-        hash_3e9172d77b2101e8, // 0x29,
+        player_light_helicopter_gunner_turret, // 0x29,
         pistol_burst_t8, // 0x2a,
         tr_leveraction_t8, // 0x2b,
         hash_4385cf507401820f, // 0x2c,
         ar_fastfire_t8, // 0x2d,
         ar_damage_t8_gold, // 0x2e,
-        hash_48206b17d50533c2, // 0x2f,
+        pbr_gunner_rifle, // 0x2f,
         sniper_quickscope_t8, // 0x30,
         lmg_heavy_t8, // 0x31,
         smg_handling_t8_gold, // 0x32,
@@ -70985,7 +70985,7 @@ version 127 {
         prt_wz_david_mason, // 0x1e,
         hash_57d9e98fa3f08f76, // 0x1f,
         prt_wz_misty, // 0x20,
-        hash_62361c68e083d401, // 0x21,
+        prt_wz_technomancer, // 0x21,
         prt_wz_mercenary, // 0x22,
         prt_wz_scarlett_dlc0, // 0x23,
         prt_wz_richtofen, // 0x24,
@@ -71076,7 +71076,7 @@ version 127 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -71467,7 +71467,7 @@ version 126 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -71559,7 +71559,7 @@ version 126 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -71567,7 +71567,7 @@ version 126 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -71597,7 +71597,7 @@ version 126 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -71663,7 +71663,7 @@ version 126 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -71711,9 +71711,9 @@ version 126 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -71755,7 +71755,7 @@ version 126 {
         // offset 0x2c00, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c38, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c78, size 0x38
         intstat kdratio;
         // offset 0x2cb0, size 0x38
@@ -71763,7 +71763,7 @@ version 126 {
         // offset 0x2ce8, size 0x38
         intstat wins_without_down;
         // offset 0x2d20, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -71972,7 +71972,7 @@ version 126 {
         smg_fastfire_t8_operator, // 0x21,
         hatchet, // 0x22,
         tr_powersemi_t8_operator, // 0x23,
-        hash_2ea46ca74ebdfcac, // 0x24,
+        buggy_gunner_rifle, // 0x24,
         smg_capacity_t8, // 0x25,
         sniper_fastrechamber_t8_operator, // 0x26,
         sniper_quickscope_t8_operator, // 0x27,
@@ -71993,7 +71993,7 @@ version 126 {
         melee_bowie_bloody, // 0x36,
         ar_standard_t8_gold, // 0x37,
         tr_midburst_t8_operator, // 0x38,
-        hash_3e9172d77b2101e8, // 0x39,
+        player_light_helicopter_gunner_turret, // 0x39,
         sig_bow_quickshot, // 0x3a,
         sig_blade, // 0x3b,
         pistol_burst_t8, // 0x3c,
@@ -72002,7 +72002,7 @@ version 126 {
         ar_fastfire_t8, // 0x3f,
         ar_damage_t8_gold, // 0x40,
         hero_pineapplegun, // 0x41,
-        hash_48206b17d50533c2, // 0x42,
+        pbr_gunner_rifle, // 0x42,
         sniper_quickscope_t8, // 0x43,
         lmg_heavy_t8, // 0x44,
         recon_car, // 0x45,
@@ -72107,7 +72107,7 @@ version 126 {
         shotgun_pump_t8_gold, // 0x15,
         smg_fastfire_t8_operator, // 0x16,
         tr_powersemi_t8_operator, // 0x17,
-        hash_2ea46ca74ebdfcac, // 0x18,
+        buggy_gunner_rifle, // 0x18,
         smg_capacity_t8, // 0x19,
         sniper_fastrechamber_t8_operator, // 0x1a,
         sniper_quickscope_t8_operator, // 0x1b,
@@ -72124,13 +72124,13 @@ version 126 {
         melee_bowie_bloody, // 0x26,
         ar_standard_t8_gold, // 0x27,
         tr_midburst_t8_operator, // 0x28,
-        hash_3e9172d77b2101e8, // 0x29,
+        player_light_helicopter_gunner_turret, // 0x29,
         pistol_burst_t8, // 0x2a,
         tr_leveraction_t8, // 0x2b,
         hash_4385cf507401820f, // 0x2c,
         ar_fastfire_t8, // 0x2d,
         ar_damage_t8_gold, // 0x2e,
-        hash_48206b17d50533c2, // 0x2f,
+        pbr_gunner_rifle, // 0x2f,
         sniper_quickscope_t8, // 0x30,
         lmg_heavy_t8, // 0x31,
         smg_handling_t8_gold, // 0x32,
@@ -72354,7 +72354,7 @@ version 126 {
         prt_wz_david_mason, // 0x1c,
         hash_57d9e98fa3f08f76, // 0x1d,
         prt_wz_misty, // 0x1e,
-        hash_62361c68e083d401, // 0x1f,
+        prt_wz_technomancer, // 0x1f,
         prt_wz_mercenary, // 0x20,
         prt_wz_scarlett_dlc0, // 0x21,
         prt_wz_richtofen, // 0x22,
@@ -72444,7 +72444,7 @@ version 126 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -72835,7 +72835,7 @@ version 125 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -72927,7 +72927,7 @@ version 125 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -72935,7 +72935,7 @@ version 125 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -72965,7 +72965,7 @@ version 125 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -73031,7 +73031,7 @@ version 125 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -73079,9 +73079,9 @@ version 125 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -73123,7 +73123,7 @@ version 125 {
         // offset 0x2c00, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c38, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c78, size 0x38
         intstat kdratio;
         // offset 0x2cb0, size 0x38
@@ -73131,7 +73131,7 @@ version 125 {
         // offset 0x2ce8, size 0x38
         intstat wins_without_down;
         // offset 0x2d20, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -73340,7 +73340,7 @@ version 125 {
         smg_fastfire_t8_operator, // 0x21,
         hatchet, // 0x22,
         tr_powersemi_t8_operator, // 0x23,
-        hash_2ea46ca74ebdfcac, // 0x24,
+        buggy_gunner_rifle, // 0x24,
         smg_capacity_t8, // 0x25,
         sniper_fastrechamber_t8_operator, // 0x26,
         sniper_quickscope_t8_operator, // 0x27,
@@ -73369,7 +73369,7 @@ version 125 {
         ar_fastfire_t8, // 0x3e,
         ar_damage_t8_gold, // 0x3f,
         hero_pineapplegun, // 0x40,
-        hash_48206b17d50533c2, // 0x41,
+        pbr_gunner_rifle, // 0x41,
         sniper_quickscope_t8, // 0x42,
         lmg_heavy_t8, // 0x43,
         recon_car, // 0x44,
@@ -73473,7 +73473,7 @@ version 125 {
         shotgun_pump_t8_gold, // 0x15,
         smg_fastfire_t8_operator, // 0x16,
         tr_powersemi_t8_operator, // 0x17,
-        hash_2ea46ca74ebdfcac, // 0x18,
+        buggy_gunner_rifle, // 0x18,
         smg_capacity_t8, // 0x19,
         sniper_fastrechamber_t8_operator, // 0x1a,
         sniper_quickscope_t8_operator, // 0x1b,
@@ -73495,7 +73495,7 @@ version 125 {
         hash_4385cf507401820f, // 0x2b,
         ar_fastfire_t8, // 0x2c,
         ar_damage_t8_gold, // 0x2d,
-        hash_48206b17d50533c2, // 0x2e,
+        pbr_gunner_rifle, // 0x2e,
         sniper_quickscope_t8, // 0x2f,
         lmg_heavy_t8, // 0x30,
         smg_handling_t8_gold, // 0x31,
@@ -73718,7 +73718,7 @@ version 125 {
         prt_wz_david_mason, // 0x1c,
         hash_57d9e98fa3f08f76, // 0x1d,
         prt_wz_misty, // 0x1e,
-        hash_62361c68e083d401, // 0x1f,
+        prt_wz_technomancer, // 0x1f,
         prt_wz_mercenary, // 0x20,
         prt_wz_scarlett_dlc0, // 0x21,
         prt_wz_richtofen, // 0x22,
@@ -73808,7 +73808,7 @@ version 125 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -74199,7 +74199,7 @@ version 124 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -74291,7 +74291,7 @@ version 124 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -74299,7 +74299,7 @@ version 124 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -74329,7 +74329,7 @@ version 124 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -74395,7 +74395,7 @@ version 124 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -74443,9 +74443,9 @@ version 124 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -74487,7 +74487,7 @@ version 124 {
         // offset 0x2c00, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c38, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c78, size 0x38
         intstat kdratio;
         // offset 0x2cb0, size 0x38
@@ -74495,7 +74495,7 @@ version 124 {
         // offset 0x2ce8, size 0x38
         intstat wins_without_down;
         // offset 0x2d20, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -74702,7 +74702,7 @@ version 124 {
         smg_fastfire_t8_operator, // 0x1f,
         hatchet, // 0x20,
         tr_powersemi_t8_operator, // 0x21,
-        hash_2ea46ca74ebdfcac, // 0x22,
+        buggy_gunner_rifle, // 0x22,
         smg_capacity_t8, // 0x23,
         sniper_fastrechamber_t8_operator, // 0x24,
         sniper_quickscope_t8_operator, // 0x25,
@@ -74730,7 +74730,7 @@ version 124 {
         ar_fastfire_t8, // 0x3b,
         ar_damage_t8_gold, // 0x3c,
         hero_pineapplegun, // 0x3d,
-        hash_48206b17d50533c2, // 0x3e,
+        pbr_gunner_rifle, // 0x3e,
         sniper_quickscope_t8, // 0x3f,
         lmg_heavy_t8, // 0x40,
         recon_car, // 0x41,
@@ -74829,7 +74829,7 @@ version 124 {
         shotgun_pump_t8_gold, // 0x13,
         smg_fastfire_t8_operator, // 0x14,
         tr_powersemi_t8_operator, // 0x15,
-        hash_2ea46ca74ebdfcac, // 0x16,
+        buggy_gunner_rifle, // 0x16,
         smg_capacity_t8, // 0x17,
         sniper_fastrechamber_t8_operator, // 0x18,
         sniper_quickscope_t8_operator, // 0x19,
@@ -74851,7 +74851,7 @@ version 124 {
         hash_4385cf507401820f, // 0x29,
         ar_fastfire_t8, // 0x2a,
         ar_damage_t8_gold, // 0x2b,
-        hash_48206b17d50533c2, // 0x2c,
+        pbr_gunner_rifle, // 0x2c,
         sniper_quickscope_t8, // 0x2d,
         lmg_heavy_t8, // 0x2e,
         smg_handling_t8_gold, // 0x2f,
@@ -75071,7 +75071,7 @@ version 124 {
         prt_wz_david_mason, // 0x1c,
         hash_57d9e98fa3f08f76, // 0x1d,
         prt_wz_misty, // 0x1e,
-        hash_62361c68e083d401, // 0x1f,
+        prt_wz_technomancer, // 0x1f,
         prt_wz_mercenary, // 0x20,
         prt_wz_scarlett_dlc0, // 0x21,
         prt_wz_richtofen, // 0x22,
@@ -75161,7 +75161,7 @@ version 124 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -75552,7 +75552,7 @@ version 123 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -75644,7 +75644,7 @@ version 123 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -75652,7 +75652,7 @@ version 123 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -75682,7 +75682,7 @@ version 123 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -75748,7 +75748,7 @@ version 123 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -75796,9 +75796,9 @@ version 123 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -75838,7 +75838,7 @@ version 123 {
         // offset 0x2bc8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c40, size 0x38
         intstat kdratio;
         // offset 0x2c78, size 0x38
@@ -75846,7 +75846,7 @@ version 123 {
         // offset 0x2cb0, size 0x38
         intstat wins_without_down;
         // offset 0x2ce8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -76053,7 +76053,7 @@ version 123 {
         smg_fastfire_t8_operator, // 0x1f,
         hatchet, // 0x20,
         tr_powersemi_t8_operator, // 0x21,
-        hash_2ea46ca74ebdfcac, // 0x22,
+        buggy_gunner_rifle, // 0x22,
         smg_capacity_t8, // 0x23,
         sniper_fastrechamber_t8_operator, // 0x24,
         sniper_quickscope_t8_operator, // 0x25,
@@ -76081,7 +76081,7 @@ version 123 {
         ar_fastfire_t8, // 0x3b,
         ar_damage_t8_gold, // 0x3c,
         hero_pineapplegun, // 0x3d,
-        hash_48206b17d50533c2, // 0x3e,
+        pbr_gunner_rifle, // 0x3e,
         sniper_quickscope_t8, // 0x3f,
         lmg_heavy_t8, // 0x40,
         recon_car, // 0x41,
@@ -76180,7 +76180,7 @@ version 123 {
         shotgun_pump_t8_gold, // 0x13,
         smg_fastfire_t8_operator, // 0x14,
         tr_powersemi_t8_operator, // 0x15,
-        hash_2ea46ca74ebdfcac, // 0x16,
+        buggy_gunner_rifle, // 0x16,
         smg_capacity_t8, // 0x17,
         sniper_fastrechamber_t8_operator, // 0x18,
         sniper_quickscope_t8_operator, // 0x19,
@@ -76202,7 +76202,7 @@ version 123 {
         hash_4385cf507401820f, // 0x29,
         ar_fastfire_t8, // 0x2a,
         ar_damage_t8_gold, // 0x2b,
-        hash_48206b17d50533c2, // 0x2c,
+        pbr_gunner_rifle, // 0x2c,
         sniper_quickscope_t8, // 0x2d,
         lmg_heavy_t8, // 0x2e,
         smg_handling_t8_gold, // 0x2f,
@@ -76422,7 +76422,7 @@ version 123 {
         prt_wz_david_mason, // 0x1c,
         hash_57d9e98fa3f08f76, // 0x1d,
         prt_wz_misty, // 0x1e,
-        hash_62361c68e083d401, // 0x1f,
+        prt_wz_technomancer, // 0x1f,
         prt_wz_mercenary, // 0x20,
         prt_wz_scarlett_dlc0, // 0x21,
         prt_wz_richtofen, // 0x22,
@@ -76512,7 +76512,7 @@ version 123 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -76903,7 +76903,7 @@ version 122 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -76995,7 +76995,7 @@ version 122 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -77003,7 +77003,7 @@ version 122 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -77033,7 +77033,7 @@ version 122 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -77099,7 +77099,7 @@ version 122 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -77147,9 +77147,9 @@ version 122 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -77189,7 +77189,7 @@ version 122 {
         // offset 0x2bc8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c40, size 0x38
         intstat kdratio;
         // offset 0x2c78, size 0x38
@@ -77197,7 +77197,7 @@ version 122 {
         // offset 0x2cb0, size 0x38
         intstat wins_without_down;
         // offset 0x2ce8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -77404,7 +77404,7 @@ version 122 {
         smg_fastfire_t8_operator, // 0x1f,
         hatchet, // 0x20,
         tr_powersemi_t8_operator, // 0x21,
-        hash_2ea46ca74ebdfcac, // 0x22,
+        buggy_gunner_rifle, // 0x22,
         smg_capacity_t8, // 0x23,
         sniper_fastrechamber_t8_operator, // 0x24,
         sniper_quickscope_t8_operator, // 0x25,
@@ -77432,7 +77432,7 @@ version 122 {
         ar_fastfire_t8, // 0x3b,
         ar_damage_t8_gold, // 0x3c,
         hero_pineapplegun, // 0x3d,
-        hash_48206b17d50533c2, // 0x3e,
+        pbr_gunner_rifle, // 0x3e,
         sniper_quickscope_t8, // 0x3f,
         lmg_heavy_t8, // 0x40,
         recon_car, // 0x41,
@@ -77531,7 +77531,7 @@ version 122 {
         shotgun_pump_t8_gold, // 0x13,
         smg_fastfire_t8_operator, // 0x14,
         tr_powersemi_t8_operator, // 0x15,
-        hash_2ea46ca74ebdfcac, // 0x16,
+        buggy_gunner_rifle, // 0x16,
         smg_capacity_t8, // 0x17,
         sniper_fastrechamber_t8_operator, // 0x18,
         sniper_quickscope_t8_operator, // 0x19,
@@ -77553,7 +77553,7 @@ version 122 {
         hash_4385cf507401820f, // 0x29,
         ar_fastfire_t8, // 0x2a,
         ar_damage_t8_gold, // 0x2b,
-        hash_48206b17d50533c2, // 0x2c,
+        pbr_gunner_rifle, // 0x2c,
         sniper_quickscope_t8, // 0x2d,
         lmg_heavy_t8, // 0x2e,
         smg_handling_t8_gold, // 0x2f,
@@ -77773,7 +77773,7 @@ version 122 {
         prt_wz_david_mason, // 0x1c,
         hash_57d9e98fa3f08f76, // 0x1d,
         prt_wz_misty, // 0x1e,
-        hash_62361c68e083d401, // 0x1f,
+        prt_wz_technomancer, // 0x1f,
         prt_wz_mercenary, // 0x20,
         prt_wz_scarlett_dlc0, // 0x21,
         prt_wz_richtofen, // 0x22,
@@ -77862,7 +77862,7 @@ version 122 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -78253,7 +78253,7 @@ version 121 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -78345,7 +78345,7 @@ version 121 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -78353,7 +78353,7 @@ version 121 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -78383,7 +78383,7 @@ version 121 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -78449,7 +78449,7 @@ version 121 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -78497,9 +78497,9 @@ version 121 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -78539,7 +78539,7 @@ version 121 {
         // offset 0x2bc8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c40, size 0x38
         intstat kdratio;
         // offset 0x2c78, size 0x38
@@ -78547,7 +78547,7 @@ version 121 {
         // offset 0x2cb0, size 0x38
         intstat wins_without_down;
         // offset 0x2ce8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -78753,7 +78753,7 @@ version 121 {
         smg_fastfire_t8_operator, // 0x1e,
         hatchet, // 0x1f,
         tr_powersemi_t8_operator, // 0x20,
-        hash_2ea46ca74ebdfcac, // 0x21,
+        buggy_gunner_rifle, // 0x21,
         smg_capacity_t8, // 0x22,
         sniper_fastrechamber_t8_operator, // 0x23,
         sniper_quickscope_t8_operator, // 0x24,
@@ -78780,7 +78780,7 @@ version 121 {
         ar_fastfire_t8, // 0x39,
         ar_damage_t8_gold, // 0x3a,
         hero_pineapplegun, // 0x3b,
-        hash_48206b17d50533c2, // 0x3c,
+        pbr_gunner_rifle, // 0x3c,
         sniper_quickscope_t8, // 0x3d,
         lmg_heavy_t8, // 0x3e,
         recon_car, // 0x3f,
@@ -78878,7 +78878,7 @@ version 121 {
         shotgun_pump_t8_gold, // 0x12,
         smg_fastfire_t8_operator, // 0x13,
         tr_powersemi_t8_operator, // 0x14,
-        hash_2ea46ca74ebdfcac, // 0x15,
+        buggy_gunner_rifle, // 0x15,
         smg_capacity_t8, // 0x16,
         sniper_fastrechamber_t8_operator, // 0x17,
         sniper_quickscope_t8_operator, // 0x18,
@@ -78899,7 +78899,7 @@ version 121 {
         hash_4385cf507401820f, // 0x27,
         ar_fastfire_t8, // 0x28,
         ar_damage_t8_gold, // 0x29,
-        hash_48206b17d50533c2, // 0x2a,
+        pbr_gunner_rifle, // 0x2a,
         sniper_quickscope_t8, // 0x2b,
         lmg_heavy_t8, // 0x2c,
         smg_handling_t8_gold, // 0x2d,
@@ -79119,7 +79119,7 @@ version 121 {
         prt_wz_david_mason, // 0x1c,
         hash_57d9e98fa3f08f76, // 0x1d,
         prt_wz_misty, // 0x1e,
-        hash_62361c68e083d401, // 0x1f,
+        prt_wz_technomancer, // 0x1f,
         prt_wz_mercenary, // 0x20,
         prt_wz_scarlett_dlc0, // 0x21,
         prt_wz_richtofen, // 0x22,
@@ -79208,7 +79208,7 @@ version 121 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -79599,7 +79599,7 @@ version 120 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -79691,7 +79691,7 @@ version 120 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -79699,7 +79699,7 @@ version 120 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -79729,7 +79729,7 @@ version 120 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -79795,7 +79795,7 @@ version 120 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -79843,9 +79843,9 @@ version 120 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -79885,7 +79885,7 @@ version 120 {
         // offset 0x2bc8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c40, size 0x38
         intstat kdratio;
         // offset 0x2c78, size 0x38
@@ -79893,7 +79893,7 @@ version 120 {
         // offset 0x2cb0, size 0x38
         intstat wins_without_down;
         // offset 0x2ce8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -80099,7 +80099,7 @@ version 120 {
         smg_fastfire_t8_operator, // 0x1e,
         hatchet, // 0x1f,
         tr_powersemi_t8_operator, // 0x20,
-        hash_2ea46ca74ebdfcac, // 0x21,
+        buggy_gunner_rifle, // 0x21,
         smg_capacity_t8, // 0x22,
         sniper_fastrechamber_t8_operator, // 0x23,
         sniper_quickscope_t8_operator, // 0x24,
@@ -80126,7 +80126,7 @@ version 120 {
         ar_fastfire_t8, // 0x39,
         ar_damage_t8_gold, // 0x3a,
         hero_pineapplegun, // 0x3b,
-        hash_48206b17d50533c2, // 0x3c,
+        pbr_gunner_rifle, // 0x3c,
         sniper_quickscope_t8, // 0x3d,
         lmg_heavy_t8, // 0x3e,
         recon_car, // 0x3f,
@@ -80224,7 +80224,7 @@ version 120 {
         shotgun_pump_t8_gold, // 0x12,
         smg_fastfire_t8_operator, // 0x13,
         tr_powersemi_t8_operator, // 0x14,
-        hash_2ea46ca74ebdfcac, // 0x15,
+        buggy_gunner_rifle, // 0x15,
         smg_capacity_t8, // 0x16,
         sniper_fastrechamber_t8_operator, // 0x17,
         sniper_quickscope_t8_operator, // 0x18,
@@ -80245,7 +80245,7 @@ version 120 {
         hash_4385cf507401820f, // 0x27,
         ar_fastfire_t8, // 0x28,
         ar_damage_t8_gold, // 0x29,
-        hash_48206b17d50533c2, // 0x2a,
+        pbr_gunner_rifle, // 0x2a,
         sniper_quickscope_t8, // 0x2b,
         lmg_heavy_t8, // 0x2c,
         smg_handling_t8_gold, // 0x2d,
@@ -80465,7 +80465,7 @@ version 120 {
         prt_wz_david_mason, // 0x1c,
         hash_57d9e98fa3f08f76, // 0x1d,
         prt_wz_misty, // 0x1e,
-        hash_62361c68e083d401, // 0x1f,
+        prt_wz_technomancer, // 0x1f,
         prt_wz_mercenary, // 0x20,
         prt_wz_scarlett_dlc0, // 0x21,
         prt_wz_richtofen, // 0x22,
@@ -80548,7 +80548,7 @@ version 120 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -80939,7 +80939,7 @@ version 119 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -81031,7 +81031,7 @@ version 119 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -81039,7 +81039,7 @@ version 119 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -81069,7 +81069,7 @@ version 119 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -81135,7 +81135,7 @@ version 119 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -81183,9 +81183,9 @@ version 119 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -81225,7 +81225,7 @@ version 119 {
         // offset 0x2bc8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c40, size 0x38
         intstat kdratio;
         // offset 0x2c78, size 0x38
@@ -81233,7 +81233,7 @@ version 119 {
         // offset 0x2cb0, size 0x38
         intstat wins_without_down;
         // offset 0x2ce8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -81438,7 +81438,7 @@ version 119 {
         smg_fastfire_t8_operator, // 0x1d,
         hatchet, // 0x1e,
         tr_powersemi_t8_operator, // 0x1f,
-        hash_2ea46ca74ebdfcac, // 0x20,
+        buggy_gunner_rifle, // 0x20,
         smg_capacity_t8, // 0x21,
         sniper_fastrechamber_t8_operator, // 0x22,
         sniper_quickscope_t8_operator, // 0x23,
@@ -81465,7 +81465,7 @@ version 119 {
         ar_fastfire_t8, // 0x38,
         ar_damage_t8_gold, // 0x39,
         hero_pineapplegun, // 0x3a,
-        hash_48206b17d50533c2, // 0x3b,
+        pbr_gunner_rifle, // 0x3b,
         sniper_quickscope_t8, // 0x3c,
         lmg_heavy_t8, // 0x3d,
         recon_car, // 0x3e,
@@ -81562,7 +81562,7 @@ version 119 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -81583,7 +81583,7 @@ version 119 {
         hash_4385cf507401820f, // 0x26,
         ar_fastfire_t8, // 0x27,
         ar_damage_t8_gold, // 0x28,
-        hash_48206b17d50533c2, // 0x29,
+        pbr_gunner_rifle, // 0x29,
         sniper_quickscope_t8, // 0x2a,
         lmg_heavy_t8, // 0x2b,
         smg_handling_t8_gold, // 0x2c,
@@ -81803,7 +81803,7 @@ version 119 {
         prt_wz_david_mason, // 0x1c,
         hash_57d9e98fa3f08f76, // 0x1d,
         prt_wz_misty, // 0x1e,
-        hash_62361c68e083d401, // 0x1f,
+        prt_wz_technomancer, // 0x1f,
         prt_wz_mercenary, // 0x20,
         prt_wz_scarlett_dlc0, // 0x21,
         prt_wz_richtofen, // 0x22,
@@ -81886,7 +81886,7 @@ version 119 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -82277,7 +82277,7 @@ version 118 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -82369,7 +82369,7 @@ version 118 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -82377,7 +82377,7 @@ version 118 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -82407,7 +82407,7 @@ version 118 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -82473,7 +82473,7 @@ version 118 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -82521,9 +82521,9 @@ version 118 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -82563,7 +82563,7 @@ version 118 {
         // offset 0x2bc8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c40, size 0x38
         intstat kdratio;
         // offset 0x2c78, size 0x38
@@ -82571,7 +82571,7 @@ version 118 {
         // offset 0x2cb0, size 0x38
         intstat wins_without_down;
         // offset 0x2ce8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -82776,7 +82776,7 @@ version 118 {
         smg_fastfire_t8_operator, // 0x1d,
         hatchet, // 0x1e,
         tr_powersemi_t8_operator, // 0x1f,
-        hash_2ea46ca74ebdfcac, // 0x20,
+        buggy_gunner_rifle, // 0x20,
         smg_capacity_t8, // 0x21,
         sniper_fastrechamber_t8_operator, // 0x22,
         sniper_quickscope_t8_operator, // 0x23,
@@ -82803,7 +82803,7 @@ version 118 {
         ar_fastfire_t8, // 0x38,
         ar_damage_t8_gold, // 0x39,
         hero_pineapplegun, // 0x3a,
-        hash_48206b17d50533c2, // 0x3b,
+        pbr_gunner_rifle, // 0x3b,
         sniper_quickscope_t8, // 0x3c,
         lmg_heavy_t8, // 0x3d,
         recon_car, // 0x3e,
@@ -82899,7 +82899,7 @@ version 118 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -82920,7 +82920,7 @@ version 118 {
         hash_4385cf507401820f, // 0x26,
         ar_fastfire_t8, // 0x27,
         ar_damage_t8_gold, // 0x28,
-        hash_48206b17d50533c2, // 0x29,
+        pbr_gunner_rifle, // 0x29,
         sniper_quickscope_t8, // 0x2a,
         lmg_heavy_t8, // 0x2b,
         smg_handling_t8_gold, // 0x2c,
@@ -83140,7 +83140,7 @@ version 118 {
         prt_wz_david_mason, // 0x1c,
         hash_57d9e98fa3f08f76, // 0x1d,
         prt_wz_misty, // 0x1e,
-        hash_62361c68e083d401, // 0x1f,
+        prt_wz_technomancer, // 0x1f,
         prt_wz_mercenary, // 0x20,
         prt_wz_scarlett_dlc0, // 0x21,
         prt_wz_richtofen, // 0x22,
@@ -83223,7 +83223,7 @@ version 118 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -83614,7 +83614,7 @@ version 117 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -83706,7 +83706,7 @@ version 117 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -83714,7 +83714,7 @@ version 117 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -83744,7 +83744,7 @@ version 117 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -83810,7 +83810,7 @@ version 117 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -83858,9 +83858,9 @@ version 117 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -83900,7 +83900,7 @@ version 117 {
         // offset 0x2bc8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c40, size 0x38
         intstat kdratio;
         // offset 0x2c78, size 0x38
@@ -83908,7 +83908,7 @@ version 117 {
         // offset 0x2cb0, size 0x38
         intstat wins_without_down;
         // offset 0x2ce8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -84113,7 +84113,7 @@ version 117 {
         smg_fastfire_t8_operator, // 0x1d,
         hatchet, // 0x1e,
         tr_powersemi_t8_operator, // 0x1f,
-        hash_2ea46ca74ebdfcac, // 0x20,
+        buggy_gunner_rifle, // 0x20,
         smg_capacity_t8, // 0x21,
         sniper_fastrechamber_t8_operator, // 0x22,
         sniper_quickscope_t8_operator, // 0x23,
@@ -84140,7 +84140,7 @@ version 117 {
         ar_fastfire_t8, // 0x38,
         ar_damage_t8_gold, // 0x39,
         hero_pineapplegun, // 0x3a,
-        hash_48206b17d50533c2, // 0x3b,
+        pbr_gunner_rifle, // 0x3b,
         sniper_quickscope_t8, // 0x3c,
         lmg_heavy_t8, // 0x3d,
         recon_car, // 0x3e,
@@ -84236,7 +84236,7 @@ version 117 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -84257,7 +84257,7 @@ version 117 {
         hash_4385cf507401820f, // 0x26,
         ar_fastfire_t8, // 0x27,
         ar_damage_t8_gold, // 0x28,
-        hash_48206b17d50533c2, // 0x29,
+        pbr_gunner_rifle, // 0x29,
         sniper_quickscope_t8, // 0x2a,
         lmg_heavy_t8, // 0x2b,
         smg_handling_t8_gold, // 0x2c,
@@ -84477,7 +84477,7 @@ version 117 {
         prt_wz_david_mason, // 0x1c,
         hash_57d9e98fa3f08f76, // 0x1d,
         prt_wz_misty, // 0x1e,
-        hash_62361c68e083d401, // 0x1f,
+        prt_wz_technomancer, // 0x1f,
         prt_wz_mercenary, // 0x20,
         prt_wz_scarlett_dlc0, // 0x21,
         prt_wz_richtofen, // 0x22,
@@ -84557,7 +84557,7 @@ version 117 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -84948,7 +84948,7 @@ version 116 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -85040,7 +85040,7 @@ version 116 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -85048,7 +85048,7 @@ version 116 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -85078,7 +85078,7 @@ version 116 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -85144,7 +85144,7 @@ version 116 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -85192,9 +85192,9 @@ version 116 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -85234,7 +85234,7 @@ version 116 {
         // offset 0x2bc8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c40, size 0x38
         intstat kdratio;
         // offset 0x2c78, size 0x38
@@ -85242,7 +85242,7 @@ version 116 {
         // offset 0x2cb0, size 0x38
         intstat wins_without_down;
         // offset 0x2ce8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -85447,7 +85447,7 @@ version 116 {
         smg_fastfire_t8_operator, // 0x1d,
         hatchet, // 0x1e,
         tr_powersemi_t8_operator, // 0x1f,
-        hash_2ea46ca74ebdfcac, // 0x20,
+        buggy_gunner_rifle, // 0x20,
         smg_capacity_t8, // 0x21,
         sniper_fastrechamber_t8_operator, // 0x22,
         sniper_quickscope_t8_operator, // 0x23,
@@ -85474,7 +85474,7 @@ version 116 {
         ar_fastfire_t8, // 0x38,
         ar_damage_t8_gold, // 0x39,
         hero_pineapplegun, // 0x3a,
-        hash_48206b17d50533c2, // 0x3b,
+        pbr_gunner_rifle, // 0x3b,
         sniper_quickscope_t8, // 0x3c,
         lmg_heavy_t8, // 0x3d,
         recon_car, // 0x3e,
@@ -85570,7 +85570,7 @@ version 116 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -85591,7 +85591,7 @@ version 116 {
         hash_4385cf507401820f, // 0x26,
         ar_fastfire_t8, // 0x27,
         ar_damage_t8_gold, // 0x28,
-        hash_48206b17d50533c2, // 0x29,
+        pbr_gunner_rifle, // 0x29,
         sniper_quickscope_t8, // 0x2a,
         lmg_heavy_t8, // 0x2b,
         smg_handling_t8_gold, // 0x2c,
@@ -85811,7 +85811,7 @@ version 116 {
         prt_wz_david_mason, // 0x1c,
         hash_57d9e98fa3f08f76, // 0x1d,
         prt_wz_misty, // 0x1e,
-        hash_62361c68e083d401, // 0x1f,
+        prt_wz_technomancer, // 0x1f,
         prt_wz_mercenary, // 0x20,
         prt_wz_scarlett_dlc0, // 0x21,
         prt_wz_richtofen, // 0x22,
@@ -85890,7 +85890,7 @@ version 116 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -86281,7 +86281,7 @@ version 115 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -86373,7 +86373,7 @@ version 115 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -86381,7 +86381,7 @@ version 115 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -86411,7 +86411,7 @@ version 115 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -86477,7 +86477,7 @@ version 115 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -86525,9 +86525,9 @@ version 115 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -86567,7 +86567,7 @@ version 115 {
         // offset 0x2bc8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c40, size 0x38
         intstat kdratio;
         // offset 0x2c78, size 0x38
@@ -86575,7 +86575,7 @@ version 115 {
         // offset 0x2cb0, size 0x38
         intstat wins_without_down;
         // offset 0x2ce8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -86780,7 +86780,7 @@ version 115 {
         smg_fastfire_t8_operator, // 0x1d,
         hatchet, // 0x1e,
         tr_powersemi_t8_operator, // 0x1f,
-        hash_2ea46ca74ebdfcac, // 0x20,
+        buggy_gunner_rifle, // 0x20,
         smg_capacity_t8, // 0x21,
         sniper_fastrechamber_t8_operator, // 0x22,
         sniper_quickscope_t8_operator, // 0x23,
@@ -86806,7 +86806,7 @@ version 115 {
         ar_fastfire_t8, // 0x37,
         ar_damage_t8_gold, // 0x38,
         hero_pineapplegun, // 0x39,
-        hash_48206b17d50533c2, // 0x3a,
+        pbr_gunner_rifle, // 0x3a,
         sniper_quickscope_t8, // 0x3b,
         lmg_heavy_t8, // 0x3c,
         recon_car, // 0x3d,
@@ -86901,7 +86901,7 @@ version 115 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -86921,7 +86921,7 @@ version 115 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -87136,7 +87136,7 @@ version 115 {
         prt_wz_david_mason, // 0x1c,
         hash_57d9e98fa3f08f76, // 0x1d,
         prt_wz_misty, // 0x1e,
-        hash_62361c68e083d401, // 0x1f,
+        prt_wz_technomancer, // 0x1f,
         prt_wz_mercenary, // 0x20,
         prt_wz_scarlett_dlc0, // 0x21,
         prt_wz_richtofen, // 0x22,
@@ -87215,7 +87215,7 @@ version 115 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -87606,7 +87606,7 @@ version 114 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -87698,7 +87698,7 @@ version 114 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -87706,7 +87706,7 @@ version 114 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -87736,7 +87736,7 @@ version 114 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -87802,7 +87802,7 @@ version 114 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -87850,9 +87850,9 @@ version 114 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -87892,7 +87892,7 @@ version 114 {
         // offset 0x2bc8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c40, size 0x38
         intstat kdratio;
         // offset 0x2c78, size 0x38
@@ -87900,7 +87900,7 @@ version 114 {
         // offset 0x2cb0, size 0x38
         intstat wins_without_down;
         // offset 0x2ce8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -88104,7 +88104,7 @@ version 114 {
         smg_fastfire_t8_operator, // 0x1c,
         hatchet, // 0x1d,
         tr_powersemi_t8_operator, // 0x1e,
-        hash_2ea46ca74ebdfcac, // 0x1f,
+        buggy_gunner_rifle, // 0x1f,
         smg_capacity_t8, // 0x20,
         sniper_fastrechamber_t8_operator, // 0x21,
         sniper_quickscope_t8_operator, // 0x22,
@@ -88130,7 +88130,7 @@ version 114 {
         ar_fastfire_t8, // 0x36,
         ar_damage_t8_gold, // 0x37,
         hero_pineapplegun, // 0x38,
-        hash_48206b17d50533c2, // 0x39,
+        pbr_gunner_rifle, // 0x39,
         sniper_quickscope_t8, // 0x3a,
         lmg_heavy_t8, // 0x3b,
         recon_car, // 0x3c,
@@ -88223,7 +88223,7 @@ version 114 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -88243,7 +88243,7 @@ version 114 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -88458,7 +88458,7 @@ version 114 {
         prt_wz_david_mason, // 0x1c,
         hash_57d9e98fa3f08f76, // 0x1d,
         prt_wz_misty, // 0x1e,
-        hash_62361c68e083d401, // 0x1f,
+        prt_wz_technomancer, // 0x1f,
         prt_wz_mercenary, // 0x20,
         prt_wz_scarlett_dlc0, // 0x21,
         prt_wz_richtofen, // 0x22,
@@ -88537,7 +88537,7 @@ version 114 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -88928,7 +88928,7 @@ version 113 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -89020,7 +89020,7 @@ version 113 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -89028,7 +89028,7 @@ version 113 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -89058,7 +89058,7 @@ version 113 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -89124,7 +89124,7 @@ version 113 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -89172,9 +89172,9 @@ version 113 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -89214,7 +89214,7 @@ version 113 {
         // offset 0x2bc8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c40, size 0x38
         intstat kdratio;
         // offset 0x2c78, size 0x38
@@ -89222,7 +89222,7 @@ version 113 {
         // offset 0x2cb0, size 0x38
         intstat wins_without_down;
         // offset 0x2ce8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -89422,7 +89422,7 @@ version 113 {
         smg_fastfire_t8_operator, // 0x1c,
         hatchet, // 0x1d,
         tr_powersemi_t8_operator, // 0x1e,
-        hash_2ea46ca74ebdfcac, // 0x1f,
+        buggy_gunner_rifle, // 0x1f,
         smg_capacity_t8, // 0x20,
         sniper_fastrechamber_t8_operator, // 0x21,
         sniper_quickscope_t8_operator, // 0x22,
@@ -89448,7 +89448,7 @@ version 113 {
         ar_fastfire_t8, // 0x36,
         ar_damage_t8_gold, // 0x37,
         hero_pineapplegun, // 0x38,
-        hash_48206b17d50533c2, // 0x39,
+        pbr_gunner_rifle, // 0x39,
         sniper_quickscope_t8, // 0x3a,
         lmg_heavy_t8, // 0x3b,
         recon_car, // 0x3c,
@@ -89541,7 +89541,7 @@ version 113 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -89561,7 +89561,7 @@ version 113 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -89776,7 +89776,7 @@ version 113 {
         prt_wz_david_mason, // 0x1c,
         hash_57d9e98fa3f08f76, // 0x1d,
         prt_wz_misty, // 0x1e,
-        hash_62361c68e083d401, // 0x1f,
+        prt_wz_technomancer, // 0x1f,
         prt_wz_mercenary, // 0x20,
         prt_wz_scarlett_dlc0, // 0x21,
         prt_wz_richtofen, // 0x22,
@@ -89855,7 +89855,7 @@ version 113 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -90246,7 +90246,7 @@ version 112 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -90338,7 +90338,7 @@ version 112 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -90346,7 +90346,7 @@ version 112 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -90376,7 +90376,7 @@ version 112 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -90442,7 +90442,7 @@ version 112 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -90490,9 +90490,9 @@ version 112 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -90532,7 +90532,7 @@ version 112 {
         // offset 0x2bc8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c40, size 0x38
         intstat kdratio;
         // offset 0x2c78, size 0x38
@@ -90540,7 +90540,7 @@ version 112 {
         // offset 0x2cb0, size 0x38
         intstat wins_without_down;
         // offset 0x2ce8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -90740,7 +90740,7 @@ version 112 {
         smg_fastfire_t8_operator, // 0x1c,
         hatchet, // 0x1d,
         tr_powersemi_t8_operator, // 0x1e,
-        hash_2ea46ca74ebdfcac, // 0x1f,
+        buggy_gunner_rifle, // 0x1f,
         smg_capacity_t8, // 0x20,
         sniper_fastrechamber_t8_operator, // 0x21,
         sniper_quickscope_t8_operator, // 0x22,
@@ -90766,7 +90766,7 @@ version 112 {
         ar_fastfire_t8, // 0x36,
         ar_damage_t8_gold, // 0x37,
         hero_pineapplegun, // 0x38,
-        hash_48206b17d50533c2, // 0x39,
+        pbr_gunner_rifle, // 0x39,
         sniper_quickscope_t8, // 0x3a,
         lmg_heavy_t8, // 0x3b,
         recon_car, // 0x3c,
@@ -90859,7 +90859,7 @@ version 112 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -90879,7 +90879,7 @@ version 112 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -91093,7 +91093,7 @@ version 112 {
         prt_wz_david_mason, // 0x1b,
         hash_57d9e98fa3f08f76, // 0x1c,
         prt_wz_misty, // 0x1d,
-        hash_62361c68e083d401, // 0x1e,
+        prt_wz_technomancer, // 0x1e,
         prt_wz_mercenary, // 0x1f,
         prt_wz_scarlett_dlc0, // 0x20,
         prt_wz_richtofen, // 0x21,
@@ -91172,7 +91172,7 @@ version 112 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -91563,7 +91563,7 @@ version 111 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -91655,7 +91655,7 @@ version 111 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -91663,7 +91663,7 @@ version 111 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -91693,7 +91693,7 @@ version 111 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -91759,7 +91759,7 @@ version 111 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -91807,9 +91807,9 @@ version 111 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -91849,7 +91849,7 @@ version 111 {
         // offset 0x2bc8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c40, size 0x38
         intstat kdratio;
         // offset 0x2c78, size 0x38
@@ -91857,7 +91857,7 @@ version 111 {
         // offset 0x2cb0, size 0x38
         intstat wins_without_down;
         // offset 0x2ce8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -92057,7 +92057,7 @@ version 111 {
         smg_fastfire_t8_operator, // 0x1c,
         hatchet, // 0x1d,
         tr_powersemi_t8_operator, // 0x1e,
-        hash_2ea46ca74ebdfcac, // 0x1f,
+        buggy_gunner_rifle, // 0x1f,
         smg_capacity_t8, // 0x20,
         sniper_fastrechamber_t8_operator, // 0x21,
         sniper_quickscope_t8_operator, // 0x22,
@@ -92083,7 +92083,7 @@ version 111 {
         ar_fastfire_t8, // 0x36,
         ar_damage_t8_gold, // 0x37,
         hero_pineapplegun, // 0x38,
-        hash_48206b17d50533c2, // 0x39,
+        pbr_gunner_rifle, // 0x39,
         sniper_quickscope_t8, // 0x3a,
         lmg_heavy_t8, // 0x3b,
         recon_car, // 0x3c,
@@ -92176,7 +92176,7 @@ version 111 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -92196,7 +92196,7 @@ version 111 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -92410,7 +92410,7 @@ version 111 {
         prt_wz_david_mason, // 0x1b,
         hash_57d9e98fa3f08f76, // 0x1c,
         prt_wz_misty, // 0x1d,
-        hash_62361c68e083d401, // 0x1e,
+        prt_wz_technomancer, // 0x1e,
         prt_wz_mercenary, // 0x1f,
         prt_wz_scarlett_dlc0, // 0x20,
         prt_wz_richtofen, // 0x21,
@@ -92487,7 +92487,7 @@ version 111 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -92878,7 +92878,7 @@ version 110 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -92970,7 +92970,7 @@ version 110 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -92978,7 +92978,7 @@ version 110 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -93008,7 +93008,7 @@ version 110 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -93074,7 +93074,7 @@ version 110 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -93122,9 +93122,9 @@ version 110 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -93164,7 +93164,7 @@ version 110 {
         // offset 0x2bc8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c40, size 0x38
         intstat kdratio;
         // offset 0x2c78, size 0x38
@@ -93172,7 +93172,7 @@ version 110 {
         // offset 0x2cb0, size 0x38
         intstat wins_without_down;
         // offset 0x2ce8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -93372,7 +93372,7 @@ version 110 {
         smg_fastfire_t8_operator, // 0x1c,
         hatchet, // 0x1d,
         tr_powersemi_t8_operator, // 0x1e,
-        hash_2ea46ca74ebdfcac, // 0x1f,
+        buggy_gunner_rifle, // 0x1f,
         smg_capacity_t8, // 0x20,
         sniper_fastrechamber_t8_operator, // 0x21,
         sniper_quickscope_t8_operator, // 0x22,
@@ -93398,7 +93398,7 @@ version 110 {
         ar_fastfire_t8, // 0x36,
         ar_damage_t8_gold, // 0x37,
         hero_pineapplegun, // 0x38,
-        hash_48206b17d50533c2, // 0x39,
+        pbr_gunner_rifle, // 0x39,
         sniper_quickscope_t8, // 0x3a,
         lmg_heavy_t8, // 0x3b,
         recon_car, // 0x3c,
@@ -93491,7 +93491,7 @@ version 110 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -93511,7 +93511,7 @@ version 110 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -93725,7 +93725,7 @@ version 110 {
         prt_wz_david_mason, // 0x1b,
         hash_57d9e98fa3f08f76, // 0x1c,
         prt_wz_misty, // 0x1d,
-        hash_62361c68e083d401, // 0x1e,
+        prt_wz_technomancer, // 0x1e,
         prt_wz_mercenary, // 0x1f,
         prt_wz_scarlett_dlc0, // 0x20,
         prt_wz_richtofen, // 0x21,
@@ -93801,7 +93801,7 @@ version 110 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -94192,7 +94192,7 @@ version 109 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -94284,7 +94284,7 @@ version 109 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -94292,7 +94292,7 @@ version 109 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -94322,7 +94322,7 @@ version 109 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -94388,7 +94388,7 @@ version 109 {
         // offset 0x1960, size 0x38
         intstat total_shots;
         // offset 0x1998, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x19d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1a08, size 0x38
@@ -94436,9 +94436,9 @@ version 109 {
         // offset 0x1df0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1e28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1ed0, size 0x38
@@ -94478,7 +94478,7 @@ version 109 {
         // offset 0x2bc8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2c00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c40, size 0x38
         intstat kdratio;
         // offset 0x2c78, size 0x38
@@ -94486,7 +94486,7 @@ version 109 {
         // offset 0x2cb0, size 0x38
         intstat wins_without_down;
         // offset 0x2ce8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -94686,7 +94686,7 @@ version 109 {
         smg_fastfire_t8_operator, // 0x1c,
         hatchet, // 0x1d,
         tr_powersemi_t8_operator, // 0x1e,
-        hash_2ea46ca74ebdfcac, // 0x1f,
+        buggy_gunner_rifle, // 0x1f,
         smg_capacity_t8, // 0x20,
         sniper_fastrechamber_t8_operator, // 0x21,
         sniper_quickscope_t8_operator, // 0x22,
@@ -94712,7 +94712,7 @@ version 109 {
         ar_fastfire_t8, // 0x36,
         ar_damage_t8_gold, // 0x37,
         hero_pineapplegun, // 0x38,
-        hash_48206b17d50533c2, // 0x39,
+        pbr_gunner_rifle, // 0x39,
         sniper_quickscope_t8, // 0x3a,
         lmg_heavy_t8, // 0x3b,
         recon_car, // 0x3c,
@@ -94805,7 +94805,7 @@ version 109 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -94825,7 +94825,7 @@ version 109 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -95039,7 +95039,7 @@ version 109 {
         prt_wz_david_mason, // 0x1b,
         hash_57d9e98fa3f08f76, // 0x1c,
         prt_wz_misty, // 0x1d,
-        hash_62361c68e083d401, // 0x1e,
+        prt_wz_technomancer, // 0x1e,
         prt_wz_mercenary, // 0x1f,
         prt_wz_scarlett_dlc0, // 0x20,
         prt_wz_richtofen, // 0x21,
@@ -95114,7 +95114,7 @@ version 109 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -95505,7 +95505,7 @@ version 108 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -95597,7 +95597,7 @@ version 108 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -95605,7 +95605,7 @@ version 108 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -95635,7 +95635,7 @@ version 108 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -95699,7 +95699,7 @@ version 108 {
         // offset 0x1920, size 0x38
         intstat total_shots;
         // offset 0x1958, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1990, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x19c8, size 0x38
@@ -95747,9 +95747,9 @@ version 108 {
         // offset 0x1db0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1de8, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e20, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e58, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1e90, size 0x38
@@ -95789,7 +95789,7 @@ version 108 {
         // offset 0x2b88, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2bc0, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c00, size 0x38
         intstat kdratio;
         // offset 0x2c38, size 0x38
@@ -95797,7 +95797,7 @@ version 108 {
         // offset 0x2c70, size 0x38
         intstat wins_without_down;
         // offset 0x2ca8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -95997,7 +95997,7 @@ version 108 {
         smg_fastfire_t8_operator, // 0x1c,
         hatchet, // 0x1d,
         tr_powersemi_t8_operator, // 0x1e,
-        hash_2ea46ca74ebdfcac, // 0x1f,
+        buggy_gunner_rifle, // 0x1f,
         smg_capacity_t8, // 0x20,
         sniper_fastrechamber_t8_operator, // 0x21,
         sniper_quickscope_t8_operator, // 0x22,
@@ -96023,7 +96023,7 @@ version 108 {
         ar_fastfire_t8, // 0x36,
         ar_damage_t8_gold, // 0x37,
         hero_pineapplegun, // 0x38,
-        hash_48206b17d50533c2, // 0x39,
+        pbr_gunner_rifle, // 0x39,
         sniper_quickscope_t8, // 0x3a,
         lmg_heavy_t8, // 0x3b,
         recon_car, // 0x3c,
@@ -96116,7 +96116,7 @@ version 108 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -96136,7 +96136,7 @@ version 108 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -96350,7 +96350,7 @@ version 108 {
         prt_wz_david_mason, // 0x1b,
         hash_57d9e98fa3f08f76, // 0x1c,
         prt_wz_misty, // 0x1d,
-        hash_62361c68e083d401, // 0x1e,
+        prt_wz_technomancer, // 0x1e,
         prt_wz_mercenary, // 0x1f,
         prt_wz_scarlett_dlc0, // 0x20,
         prt_wz_richtofen, // 0x21,
@@ -96425,7 +96425,7 @@ version 108 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -96816,7 +96816,7 @@ version 107 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -96908,7 +96908,7 @@ version 107 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -96916,7 +96916,7 @@ version 107 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -96946,7 +96946,7 @@ version 107 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -97010,7 +97010,7 @@ version 107 {
         // offset 0x1920, size 0x38
         intstat total_shots;
         // offset 0x1958, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1990, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x19c8, size 0x38
@@ -97058,9 +97058,9 @@ version 107 {
         // offset 0x1db0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1de8, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e20, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e58, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1e90, size 0x38
@@ -97100,7 +97100,7 @@ version 107 {
         // offset 0x2b88, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2bc0, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c00, size 0x38
         intstat kdratio;
         // offset 0x2c38, size 0x38
@@ -97108,7 +97108,7 @@ version 107 {
         // offset 0x2c70, size 0x38
         intstat wins_without_down;
         // offset 0x2ca8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -97307,7 +97307,7 @@ version 107 {
         smg_fastfire_t8_operator, // 0x1b,
         hatchet, // 0x1c,
         tr_powersemi_t8_operator, // 0x1d,
-        hash_2ea46ca74ebdfcac, // 0x1e,
+        buggy_gunner_rifle, // 0x1e,
         smg_capacity_t8, // 0x1f,
         sniper_fastrechamber_t8_operator, // 0x20,
         sniper_quickscope_t8_operator, // 0x21,
@@ -97333,7 +97333,7 @@ version 107 {
         ar_fastfire_t8, // 0x35,
         ar_damage_t8_gold, // 0x36,
         hero_pineapplegun, // 0x37,
-        hash_48206b17d50533c2, // 0x38,
+        pbr_gunner_rifle, // 0x38,
         sniper_quickscope_t8, // 0x39,
         lmg_heavy_t8, // 0x3a,
         recon_car, // 0x3b,
@@ -97425,7 +97425,7 @@ version 107 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -97445,7 +97445,7 @@ version 107 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -97658,7 +97658,7 @@ version 107 {
         prt_wz_david_mason, // 0x1b,
         hash_57d9e98fa3f08f76, // 0x1c,
         prt_wz_misty, // 0x1d,
-        hash_62361c68e083d401, // 0x1e,
+        prt_wz_technomancer, // 0x1e,
         prt_wz_mercenary, // 0x1f,
         prt_wz_scarlett_dlc0, // 0x20,
         prt_wz_richtofen, // 0x21,
@@ -97733,7 +97733,7 @@ version 107 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -98124,7 +98124,7 @@ version 106 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -98216,7 +98216,7 @@ version 106 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -98224,7 +98224,7 @@ version 106 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -98254,7 +98254,7 @@ version 106 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -98318,7 +98318,7 @@ version 106 {
         // offset 0x1920, size 0x38
         intstat total_shots;
         // offset 0x1958, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1990, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x19c8, size 0x38
@@ -98366,9 +98366,9 @@ version 106 {
         // offset 0x1db0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1de8, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e20, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e58, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1e90, size 0x38
@@ -98408,7 +98408,7 @@ version 106 {
         // offset 0x2b88, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2bc0, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c00, size 0x38
         intstat kdratio;
         // offset 0x2c38, size 0x38
@@ -98416,7 +98416,7 @@ version 106 {
         // offset 0x2c70, size 0x38
         intstat wins_without_down;
         // offset 0x2ca8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -98615,7 +98615,7 @@ version 106 {
         smg_fastfire_t8_operator, // 0x1b,
         hatchet, // 0x1c,
         tr_powersemi_t8_operator, // 0x1d,
-        hash_2ea46ca74ebdfcac, // 0x1e,
+        buggy_gunner_rifle, // 0x1e,
         smg_capacity_t8, // 0x1f,
         sniper_fastrechamber_t8_operator, // 0x20,
         sniper_quickscope_t8_operator, // 0x21,
@@ -98641,7 +98641,7 @@ version 106 {
         ar_fastfire_t8, // 0x35,
         ar_damage_t8_gold, // 0x36,
         hero_pineapplegun, // 0x37,
-        hash_48206b17d50533c2, // 0x38,
+        pbr_gunner_rifle, // 0x38,
         sniper_quickscope_t8, // 0x39,
         lmg_heavy_t8, // 0x3a,
         recon_car, // 0x3b,
@@ -98733,7 +98733,7 @@ version 106 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -98753,7 +98753,7 @@ version 106 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -98966,7 +98966,7 @@ version 106 {
         prt_wz_david_mason, // 0x1b,
         hash_57d9e98fa3f08f76, // 0x1c,
         prt_wz_misty, // 0x1d,
-        hash_62361c68e083d401, // 0x1e,
+        prt_wz_technomancer, // 0x1e,
         prt_wz_mercenary, // 0x1f,
         prt_wz_scarlett_dlc0, // 0x20,
         prt_wz_richtofen, // 0x21,
@@ -99032,7 +99032,7 @@ version 106 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -99423,7 +99423,7 @@ version 105 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -99515,7 +99515,7 @@ version 105 {
         // offset 0xe08, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xe40, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xe78, size 0x38
         intstat challengexp;
         // offset 0xeb0, size 0x38
@@ -99523,7 +99523,7 @@ version 105 {
         // offset 0xee8, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xf20, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xf58, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf90, size 0x38
@@ -99553,7 +99553,7 @@ version 105 {
         // offset 0x1238, size 0x38
         intstat kills_avenged;
         // offset 0x1270, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x12a8, size 0x38
         intstat deaths;
         // offset 0x12e0, size 0x40
@@ -99617,7 +99617,7 @@ version 105 {
         // offset 0x1920, size 0x38
         intstat total_shots;
         // offset 0x1958, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1990, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x19c8, size 0x38
@@ -99665,9 +99665,9 @@ version 105 {
         // offset 0x1db0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1de8, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1e20, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1e58, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1e90, size 0x38
@@ -99707,7 +99707,7 @@ version 105 {
         // offset 0x2b88, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2bc0, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2c00, size 0x38
         intstat kdratio;
         // offset 0x2c38, size 0x38
@@ -99715,7 +99715,7 @@ version 105 {
         // offset 0x2c70, size 0x38
         intstat wins_without_down;
         // offset 0x2ca8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -99914,7 +99914,7 @@ version 105 {
         smg_fastfire_t8_operator, // 0x1b,
         hatchet, // 0x1c,
         tr_powersemi_t8_operator, // 0x1d,
-        hash_2ea46ca74ebdfcac, // 0x1e,
+        buggy_gunner_rifle, // 0x1e,
         smg_capacity_t8, // 0x1f,
         sniper_fastrechamber_t8_operator, // 0x20,
         sniper_quickscope_t8_operator, // 0x21,
@@ -99940,7 +99940,7 @@ version 105 {
         ar_fastfire_t8, // 0x35,
         ar_damage_t8_gold, // 0x36,
         hero_pineapplegun, // 0x37,
-        hash_48206b17d50533c2, // 0x38,
+        pbr_gunner_rifle, // 0x38,
         sniper_quickscope_t8, // 0x39,
         lmg_heavy_t8, // 0x3a,
         recon_car, // 0x3b,
@@ -100031,7 +100031,7 @@ version 105 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -100051,7 +100051,7 @@ version 105 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -100262,7 +100262,7 @@ version 105 {
         prt_wz_david_mason, // 0x1a,
         hash_57d9e98fa3f08f76, // 0x1b,
         prt_wz_misty, // 0x1c,
-        hash_62361c68e083d401, // 0x1d,
+        prt_wz_technomancer, // 0x1d,
         prt_wz_mercenary, // 0x1e,
         prt_wz_scarlett_dlc0, // 0x1f,
         prt_wz_richtofen, // 0x20,
@@ -100328,7 +100328,7 @@ version 105 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -100719,7 +100719,7 @@ version 104 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -100807,7 +100807,7 @@ version 104 {
         // offset 0xd88, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xdc0, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xdf8, size 0x38
         intstat challengexp;
         // offset 0xe30, size 0x38
@@ -100815,7 +100815,7 @@ version 104 {
         // offset 0xe68, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xea0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xed8, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf10, size 0x38
@@ -100845,7 +100845,7 @@ version 104 {
         // offset 0x11b8, size 0x38
         intstat kills_avenged;
         // offset 0x11f0, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1228, size 0x38
         intstat deaths;
         // offset 0x1260, size 0x40
@@ -100907,7 +100907,7 @@ version 104 {
         // offset 0x1860, size 0x38
         intstat total_shots;
         // offset 0x1898, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x18d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1908, size 0x38
@@ -100955,9 +100955,9 @@ version 104 {
         // offset 0x1cf0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1d28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1d60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1d98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1dd0, size 0x38
@@ -100997,7 +100997,7 @@ version 104 {
         // offset 0x2ac8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2b00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2b40, size 0x38
         intstat kdratio;
         // offset 0x2b78, size 0x38
@@ -101005,7 +101005,7 @@ version 104 {
         // offset 0x2bb0, size 0x38
         intstat wins_without_down;
         // offset 0x2be8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -101204,7 +101204,7 @@ version 104 {
         smg_fastfire_t8_operator, // 0x1b,
         hatchet, // 0x1c,
         tr_powersemi_t8_operator, // 0x1d,
-        hash_2ea46ca74ebdfcac, // 0x1e,
+        buggy_gunner_rifle, // 0x1e,
         smg_capacity_t8, // 0x1f,
         sniper_fastrechamber_t8_operator, // 0x20,
         sniper_quickscope_t8_operator, // 0x21,
@@ -101230,7 +101230,7 @@ version 104 {
         ar_fastfire_t8, // 0x35,
         ar_damage_t8_gold, // 0x36,
         hero_pineapplegun, // 0x37,
-        hash_48206b17d50533c2, // 0x38,
+        pbr_gunner_rifle, // 0x38,
         sniper_quickscope_t8, // 0x39,
         lmg_heavy_t8, // 0x3a,
         recon_car, // 0x3b,
@@ -101321,7 +101321,7 @@ version 104 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -101341,7 +101341,7 @@ version 104 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -101552,7 +101552,7 @@ version 104 {
         prt_wz_david_mason, // 0x1a,
         hash_57d9e98fa3f08f76, // 0x1b,
         prt_wz_misty, // 0x1c,
-        hash_62361c68e083d401, // 0x1d,
+        prt_wz_technomancer, // 0x1d,
         prt_wz_mercenary, // 0x1e,
         prt_wz_scarlett_dlc0, // 0x1f,
         prt_wz_richtofen, // 0x20,
@@ -101618,7 +101618,7 @@ version 104 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -102009,7 +102009,7 @@ version 103 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -102097,7 +102097,7 @@ version 103 {
         // offset 0xd88, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xdc0, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xdf8, size 0x38
         intstat challengexp;
         // offset 0xe30, size 0x38
@@ -102105,7 +102105,7 @@ version 103 {
         // offset 0xe68, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xea0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xed8, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf10, size 0x38
@@ -102135,7 +102135,7 @@ version 103 {
         // offset 0x11b8, size 0x38
         intstat kills_avenged;
         // offset 0x11f0, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1228, size 0x38
         intstat deaths;
         // offset 0x1260, size 0x40
@@ -102197,7 +102197,7 @@ version 103 {
         // offset 0x1860, size 0x38
         intstat total_shots;
         // offset 0x1898, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x18d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1908, size 0x38
@@ -102245,9 +102245,9 @@ version 103 {
         // offset 0x1cf0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1d28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1d60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1d98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1dd0, size 0x38
@@ -102287,7 +102287,7 @@ version 103 {
         // offset 0x2ac8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2b00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2b40, size 0x38
         intstat kdratio;
         // offset 0x2b78, size 0x38
@@ -102295,7 +102295,7 @@ version 103 {
         // offset 0x2bb0, size 0x38
         intstat wins_without_down;
         // offset 0x2be8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -102494,7 +102494,7 @@ version 103 {
         smg_fastfire_t8_operator, // 0x1b,
         hatchet, // 0x1c,
         tr_powersemi_t8_operator, // 0x1d,
-        hash_2ea46ca74ebdfcac, // 0x1e,
+        buggy_gunner_rifle, // 0x1e,
         smg_capacity_t8, // 0x1f,
         sniper_fastrechamber_t8_operator, // 0x20,
         sniper_quickscope_t8_operator, // 0x21,
@@ -102520,7 +102520,7 @@ version 103 {
         ar_fastfire_t8, // 0x35,
         ar_damage_t8_gold, // 0x36,
         hero_pineapplegun, // 0x37,
-        hash_48206b17d50533c2, // 0x38,
+        pbr_gunner_rifle, // 0x38,
         sniper_quickscope_t8, // 0x39,
         lmg_heavy_t8, // 0x3a,
         recon_car, // 0x3b,
@@ -102610,7 +102610,7 @@ version 103 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -102630,7 +102630,7 @@ version 103 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -102840,7 +102840,7 @@ version 103 {
         prt_wz_david_mason, // 0x1a,
         hash_57d9e98fa3f08f76, // 0x1b,
         prt_wz_misty, // 0x1c,
-        hash_62361c68e083d401, // 0x1d,
+        prt_wz_technomancer, // 0x1d,
         prt_wz_mercenary, // 0x1e,
         prt_wz_scarlett_dlc0, // 0x1f,
         prt_wz_richtofen, // 0x20,
@@ -102906,7 +102906,7 @@ version 103 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -103297,7 +103297,7 @@ version 102 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -103385,7 +103385,7 @@ version 102 {
         // offset 0xd88, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xdc0, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xdf8, size 0x38
         intstat challengexp;
         // offset 0xe30, size 0x38
@@ -103393,7 +103393,7 @@ version 102 {
         // offset 0xe68, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xea0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xed8, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf10, size 0x38
@@ -103423,7 +103423,7 @@ version 102 {
         // offset 0x11b8, size 0x38
         intstat kills_avenged;
         // offset 0x11f0, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1228, size 0x38
         intstat deaths;
         // offset 0x1260, size 0x40
@@ -103485,7 +103485,7 @@ version 102 {
         // offset 0x1860, size 0x38
         intstat total_shots;
         // offset 0x1898, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x18d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1908, size 0x38
@@ -103533,9 +103533,9 @@ version 102 {
         // offset 0x1cf0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1d28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1d60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1d98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1dd0, size 0x38
@@ -103575,7 +103575,7 @@ version 102 {
         // offset 0x2ac8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2b00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2b40, size 0x38
         intstat kdratio;
         // offset 0x2b78, size 0x38
@@ -103583,7 +103583,7 @@ version 102 {
         // offset 0x2bb0, size 0x38
         intstat wins_without_down;
         // offset 0x2be8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -103782,7 +103782,7 @@ version 102 {
         smg_fastfire_t8_operator, // 0x1b,
         hatchet, // 0x1c,
         tr_powersemi_t8_operator, // 0x1d,
-        hash_2ea46ca74ebdfcac, // 0x1e,
+        buggy_gunner_rifle, // 0x1e,
         smg_capacity_t8, // 0x1f,
         sniper_fastrechamber_t8_operator, // 0x20,
         sniper_quickscope_t8_operator, // 0x21,
@@ -103808,7 +103808,7 @@ version 102 {
         ar_fastfire_t8, // 0x35,
         ar_damage_t8_gold, // 0x36,
         hero_pineapplegun, // 0x37,
-        hash_48206b17d50533c2, // 0x38,
+        pbr_gunner_rifle, // 0x38,
         sniper_quickscope_t8, // 0x39,
         lmg_heavy_t8, // 0x3a,
         recon_car, // 0x3b,
@@ -103898,7 +103898,7 @@ version 102 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -103918,7 +103918,7 @@ version 102 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -104128,7 +104128,7 @@ version 102 {
         prt_wz_david_mason, // 0x1a,
         hash_57d9e98fa3f08f76, // 0x1b,
         prt_wz_misty, // 0x1c,
-        hash_62361c68e083d401, // 0x1d,
+        prt_wz_technomancer, // 0x1d,
         prt_wz_mercenary, // 0x1e,
         prt_wz_scarlett_dlc0, // 0x1f,
         prt_wz_richtofen, // 0x20,
@@ -104194,7 +104194,7 @@ version 102 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -104581,7 +104581,7 @@ version 101 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -104669,7 +104669,7 @@ version 101 {
         // offset 0xd88, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xdc0, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xdf8, size 0x38
         intstat challengexp;
         // offset 0xe30, size 0x38
@@ -104677,7 +104677,7 @@ version 101 {
         // offset 0xe68, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xea0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xed8, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf10, size 0x38
@@ -104707,7 +104707,7 @@ version 101 {
         // offset 0x11b8, size 0x38
         intstat kills_avenged;
         // offset 0x11f0, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1228, size 0x38
         intstat deaths;
         // offset 0x1260, size 0x40
@@ -104769,7 +104769,7 @@ version 101 {
         // offset 0x1860, size 0x38
         intstat total_shots;
         // offset 0x1898, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x18d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1908, size 0x38
@@ -104817,9 +104817,9 @@ version 101 {
         // offset 0x1cf0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1d28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1d60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1d98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1dd0, size 0x38
@@ -104859,7 +104859,7 @@ version 101 {
         // offset 0x2ac8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2b00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2b40, size 0x38
         intstat kdratio;
         // offset 0x2b78, size 0x38
@@ -104867,7 +104867,7 @@ version 101 {
         // offset 0x2bb0, size 0x38
         intstat wins_without_down;
         // offset 0x2be8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -105065,7 +105065,7 @@ version 101 {
         smg_fastfire_t8_operator, // 0x1a,
         hatchet, // 0x1b,
         tr_powersemi_t8_operator, // 0x1c,
-        hash_2ea46ca74ebdfcac, // 0x1d,
+        buggy_gunner_rifle, // 0x1d,
         smg_capacity_t8, // 0x1e,
         sniper_fastrechamber_t8_operator, // 0x1f,
         sniper_quickscope_t8_operator, // 0x20,
@@ -105091,7 +105091,7 @@ version 101 {
         ar_fastfire_t8, // 0x34,
         ar_damage_t8_gold, // 0x35,
         hero_pineapplegun, // 0x36,
-        hash_48206b17d50533c2, // 0x37,
+        pbr_gunner_rifle, // 0x37,
         sniper_quickscope_t8, // 0x38,
         lmg_heavy_t8, // 0x39,
         recon_car, // 0x3a,
@@ -105179,7 +105179,7 @@ version 101 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -105199,7 +105199,7 @@ version 101 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -105409,7 +105409,7 @@ version 101 {
         prt_wz_david_mason, // 0x1a,
         hash_57d9e98fa3f08f76, // 0x1b,
         prt_wz_misty, // 0x1c,
-        hash_62361c68e083d401, // 0x1d,
+        prt_wz_technomancer, // 0x1d,
         prt_wz_mercenary, // 0x1e,
         prt_wz_scarlett_dlc0, // 0x1f,
         prt_wz_richtofen, // 0x20,
@@ -105475,7 +105475,7 @@ version 101 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -105862,7 +105862,7 @@ version 100 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -105950,7 +105950,7 @@ version 100 {
         // offset 0xd88, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xdc0, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xdf8, size 0x38
         intstat challengexp;
         // offset 0xe30, size 0x38
@@ -105958,7 +105958,7 @@ version 100 {
         // offset 0xe68, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xea0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xed8, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf10, size 0x38
@@ -105988,7 +105988,7 @@ version 100 {
         // offset 0x11b8, size 0x38
         intstat kills_avenged;
         // offset 0x11f0, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1228, size 0x38
         intstat deaths;
         // offset 0x1260, size 0x40
@@ -106050,7 +106050,7 @@ version 100 {
         // offset 0x1860, size 0x38
         intstat total_shots;
         // offset 0x1898, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x18d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1908, size 0x38
@@ -106098,9 +106098,9 @@ version 100 {
         // offset 0x1cf0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1d28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1d60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1d98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1dd0, size 0x38
@@ -106140,7 +106140,7 @@ version 100 {
         // offset 0x2ac8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2b00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2b40, size 0x38
         intstat kdratio;
         // offset 0x2b78, size 0x38
@@ -106148,7 +106148,7 @@ version 100 {
         // offset 0x2bb0, size 0x38
         intstat wins_without_down;
         // offset 0x2be8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -106346,7 +106346,7 @@ version 100 {
         smg_fastfire_t8_operator, // 0x1a,
         hatchet, // 0x1b,
         tr_powersemi_t8_operator, // 0x1c,
-        hash_2ea46ca74ebdfcac, // 0x1d,
+        buggy_gunner_rifle, // 0x1d,
         smg_capacity_t8, // 0x1e,
         sniper_fastrechamber_t8_operator, // 0x1f,
         sniper_quickscope_t8_operator, // 0x20,
@@ -106372,7 +106372,7 @@ version 100 {
         ar_fastfire_t8, // 0x34,
         ar_damage_t8_gold, // 0x35,
         hero_pineapplegun, // 0x36,
-        hash_48206b17d50533c2, // 0x37,
+        pbr_gunner_rifle, // 0x37,
         sniper_quickscope_t8, // 0x38,
         lmg_heavy_t8, // 0x39,
         recon_car, // 0x3a,
@@ -106460,7 +106460,7 @@ version 100 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -106480,7 +106480,7 @@ version 100 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -106690,7 +106690,7 @@ version 100 {
         prt_wz_david_mason, // 0x1a,
         hash_57d9e98fa3f08f76, // 0x1b,
         prt_wz_misty, // 0x1c,
-        hash_62361c68e083d401, // 0x1d,
+        prt_wz_technomancer, // 0x1d,
         prt_wz_mercenary, // 0x1e,
         prt_wz_scarlett_dlc0, // 0x1f,
         prt_wz_richtofen, // 0x20,
@@ -106755,7 +106755,7 @@ version 100 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -107142,7 +107142,7 @@ version 99 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -107230,7 +107230,7 @@ version 99 {
         // offset 0xd88, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xdc0, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xdf8, size 0x38
         intstat challengexp;
         // offset 0xe30, size 0x38
@@ -107238,7 +107238,7 @@ version 99 {
         // offset 0xe68, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xea0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xed8, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf10, size 0x38
@@ -107268,7 +107268,7 @@ version 99 {
         // offset 0x11b8, size 0x38
         intstat kills_avenged;
         // offset 0x11f0, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1228, size 0x38
         intstat deaths;
         // offset 0x1260, size 0x40
@@ -107330,7 +107330,7 @@ version 99 {
         // offset 0x1860, size 0x38
         intstat total_shots;
         // offset 0x1898, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x18d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1908, size 0x38
@@ -107378,9 +107378,9 @@ version 99 {
         // offset 0x1cf0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1d28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1d60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1d98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1dd0, size 0x38
@@ -107420,7 +107420,7 @@ version 99 {
         // offset 0x2ac8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2b00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2b40, size 0x38
         intstat kdratio;
         // offset 0x2b78, size 0x38
@@ -107428,7 +107428,7 @@ version 99 {
         // offset 0x2bb0, size 0x38
         intstat wins_without_down;
         // offset 0x2be8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -107624,7 +107624,7 @@ version 99 {
         smg_fastfire_t8_operator, // 0x1a,
         hatchet, // 0x1b,
         tr_powersemi_t8_operator, // 0x1c,
-        hash_2ea46ca74ebdfcac, // 0x1d,
+        buggy_gunner_rifle, // 0x1d,
         smg_capacity_t8, // 0x1e,
         sniper_fastrechamber_t8_operator, // 0x1f,
         sniper_quickscope_t8_operator, // 0x20,
@@ -107650,7 +107650,7 @@ version 99 {
         ar_fastfire_t8, // 0x34,
         ar_damage_t8_gold, // 0x35,
         hero_pineapplegun, // 0x36,
-        hash_48206b17d50533c2, // 0x37,
+        pbr_gunner_rifle, // 0x37,
         sniper_quickscope_t8, // 0x38,
         lmg_heavy_t8, // 0x39,
         recon_car, // 0x3a,
@@ -107738,7 +107738,7 @@ version 99 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -107758,7 +107758,7 @@ version 99 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -107968,7 +107968,7 @@ version 99 {
         prt_wz_david_mason, // 0x1a,
         hash_57d9e98fa3f08f76, // 0x1b,
         prt_wz_misty, // 0x1c,
-        hash_62361c68e083d401, // 0x1d,
+        prt_wz_technomancer, // 0x1d,
         prt_wz_mercenary, // 0x1e,
         prt_wz_scarlett_dlc0, // 0x1f,
         prt_wz_richtofen, // 0x20,
@@ -108033,7 +108033,7 @@ version 99 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -108420,7 +108420,7 @@ version 98 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -108508,7 +108508,7 @@ version 98 {
         // offset 0xd88, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xdc0, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xdf8, size 0x38
         intstat challengexp;
         // offset 0xe30, size 0x38
@@ -108516,7 +108516,7 @@ version 98 {
         // offset 0xe68, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xea0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xed8, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf10, size 0x38
@@ -108546,7 +108546,7 @@ version 98 {
         // offset 0x11b8, size 0x38
         intstat kills_avenged;
         // offset 0x11f0, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1228, size 0x38
         intstat deaths;
         // offset 0x1260, size 0x40
@@ -108608,7 +108608,7 @@ version 98 {
         // offset 0x1860, size 0x38
         intstat total_shots;
         // offset 0x1898, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x18d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1908, size 0x38
@@ -108656,9 +108656,9 @@ version 98 {
         // offset 0x1cf0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1d28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1d60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1d98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1dd0, size 0x38
@@ -108698,7 +108698,7 @@ version 98 {
         // offset 0x2ac8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2b00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2b40, size 0x38
         intstat kdratio;
         // offset 0x2b78, size 0x38
@@ -108706,7 +108706,7 @@ version 98 {
         // offset 0x2bb0, size 0x38
         intstat wins_without_down;
         // offset 0x2be8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -108900,7 +108900,7 @@ version 98 {
         smg_fastfire_t8_operator, // 0x1a,
         hatchet, // 0x1b,
         tr_powersemi_t8_operator, // 0x1c,
-        hash_2ea46ca74ebdfcac, // 0x1d,
+        buggy_gunner_rifle, // 0x1d,
         smg_capacity_t8, // 0x1e,
         sniper_fastrechamber_t8_operator, // 0x1f,
         sniper_quickscope_t8_operator, // 0x20,
@@ -108926,7 +108926,7 @@ version 98 {
         ar_fastfire_t8, // 0x34,
         ar_damage_t8_gold, // 0x35,
         hero_pineapplegun, // 0x36,
-        hash_48206b17d50533c2, // 0x37,
+        pbr_gunner_rifle, // 0x37,
         sniper_quickscope_t8, // 0x38,
         lmg_heavy_t8, // 0x39,
         recon_car, // 0x3a,
@@ -109014,7 +109014,7 @@ version 98 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -109034,7 +109034,7 @@ version 98 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -109244,7 +109244,7 @@ version 98 {
         prt_wz_david_mason, // 0x1a,
         hash_57d9e98fa3f08f76, // 0x1b,
         prt_wz_misty, // 0x1c,
-        hash_62361c68e083d401, // 0x1d,
+        prt_wz_technomancer, // 0x1d,
         prt_wz_mercenary, // 0x1e,
         prt_wz_scarlett_dlc0, // 0x1f,
         prt_wz_richtofen, // 0x20,
@@ -109309,7 +109309,7 @@ version 98 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -109696,7 +109696,7 @@ version 97 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -109784,7 +109784,7 @@ version 97 {
         // offset 0xd88, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xdc0, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xdf8, size 0x38
         intstat challengexp;
         // offset 0xe30, size 0x38
@@ -109792,7 +109792,7 @@ version 97 {
         // offset 0xe68, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xea0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xed8, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf10, size 0x38
@@ -109822,7 +109822,7 @@ version 97 {
         // offset 0x11b8, size 0x38
         intstat kills_avenged;
         // offset 0x11f0, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1228, size 0x38
         intstat deaths;
         // offset 0x1260, size 0x40
@@ -109884,7 +109884,7 @@ version 97 {
         // offset 0x1860, size 0x38
         intstat total_shots;
         // offset 0x1898, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x18d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1908, size 0x38
@@ -109932,9 +109932,9 @@ version 97 {
         // offset 0x1cf0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1d28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1d60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1d98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1dd0, size 0x38
@@ -109974,7 +109974,7 @@ version 97 {
         // offset 0x2ac8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2b00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2b40, size 0x38
         intstat kdratio;
         // offset 0x2b78, size 0x38
@@ -109982,7 +109982,7 @@ version 97 {
         // offset 0x2bb0, size 0x38
         intstat wins_without_down;
         // offset 0x2be8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -110176,7 +110176,7 @@ version 97 {
         smg_fastfire_t8_operator, // 0x1a,
         hatchet, // 0x1b,
         tr_powersemi_t8_operator, // 0x1c,
-        hash_2ea46ca74ebdfcac, // 0x1d,
+        buggy_gunner_rifle, // 0x1d,
         smg_capacity_t8, // 0x1e,
         sniper_fastrechamber_t8_operator, // 0x1f,
         sniper_quickscope_t8_operator, // 0x20,
@@ -110201,7 +110201,7 @@ version 97 {
         ar_fastfire_t8, // 0x33,
         ar_damage_t8_gold, // 0x34,
         hero_pineapplegun, // 0x35,
-        hash_48206b17d50533c2, // 0x36,
+        pbr_gunner_rifle, // 0x36,
         sniper_quickscope_t8, // 0x37,
         lmg_heavy_t8, // 0x38,
         recon_car, // 0x39,
@@ -110289,7 +110289,7 @@ version 97 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -110309,7 +110309,7 @@ version 97 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -110519,7 +110519,7 @@ version 97 {
         prt_wz_david_mason, // 0x1a,
         hash_57d9e98fa3f08f76, // 0x1b,
         prt_wz_misty, // 0x1c,
-        hash_62361c68e083d401, // 0x1d,
+        prt_wz_technomancer, // 0x1d,
         prt_wz_mercenary, // 0x1e,
         prt_wz_scarlett_dlc0, // 0x1f,
         prt_wz_richtofen, // 0x20,
@@ -110584,7 +110584,7 @@ version 97 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -110971,7 +110971,7 @@ version 96 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -111059,7 +111059,7 @@ version 96 {
         // offset 0xd88, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xdc0, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xdf8, size 0x38
         intstat challengexp;
         // offset 0xe30, size 0x38
@@ -111067,7 +111067,7 @@ version 96 {
         // offset 0xe68, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xea0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xed8, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xf10, size 0x38
@@ -111097,7 +111097,7 @@ version 96 {
         // offset 0x11b8, size 0x38
         intstat kills_avenged;
         // offset 0x11f0, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1228, size 0x38
         intstat deaths;
         // offset 0x1260, size 0x40
@@ -111159,7 +111159,7 @@ version 96 {
         // offset 0x1860, size 0x38
         intstat total_shots;
         // offset 0x1898, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x18d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1908, size 0x38
@@ -111207,9 +111207,9 @@ version 96 {
         // offset 0x1cf0, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1d28, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1d60, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1d98, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1dd0, size 0x38
@@ -111249,7 +111249,7 @@ version 96 {
         // offset 0x2ac8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2b00, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2b40, size 0x38
         intstat kdratio;
         // offset 0x2b78, size 0x38
@@ -111257,7 +111257,7 @@ version 96 {
         // offset 0x2bb0, size 0x38
         intstat wins_without_down;
         // offset 0x2be8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 13 members 2 size 0x20
@@ -111451,7 +111451,7 @@ version 96 {
         smg_fastfire_t8_operator, // 0x1a,
         hatchet, // 0x1b,
         tr_powersemi_t8_operator, // 0x1c,
-        hash_2ea46ca74ebdfcac, // 0x1d,
+        buggy_gunner_rifle, // 0x1d,
         smg_capacity_t8, // 0x1e,
         sniper_fastrechamber_t8_operator, // 0x1f,
         sniper_quickscope_t8_operator, // 0x20,
@@ -111476,7 +111476,7 @@ version 96 {
         ar_fastfire_t8, // 0x33,
         ar_damage_t8_gold, // 0x34,
         hero_pineapplegun, // 0x35,
-        hash_48206b17d50533c2, // 0x36,
+        pbr_gunner_rifle, // 0x36,
         sniper_quickscope_t8, // 0x37,
         lmg_heavy_t8, // 0x38,
         recon_car, // 0x39,
@@ -111564,7 +111564,7 @@ version 96 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -111584,7 +111584,7 @@ version 96 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -111795,7 +111795,7 @@ version 96 {
         prt_wz_david_mason, // 0x1b,
         hash_57d9e98fa3f08f76, // 0x1c,
         prt_wz_misty, // 0x1d,
-        hash_62361c68e083d401, // 0x1e,
+        prt_wz_technomancer, // 0x1e,
         prt_wz_mercenary, // 0x1f,
         prt_wz_scarlett_dlc0, // 0x20,
         prt_wz_richtofen, // 0x21,
@@ -111860,7 +111860,7 @@ version 96 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -112235,7 +112235,7 @@ version 95 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -112317,7 +112317,7 @@ version 95 {
         // offset 0xcd0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xd08, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xd40, size 0x38
         intstat challengexp;
         // offset 0xd78, size 0x38
@@ -112325,7 +112325,7 @@ version 95 {
         // offset 0xdb0, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xde8, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xe20, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xe58, size 0x38
@@ -112355,7 +112355,7 @@ version 95 {
         // offset 0x1100, size 0x38
         intstat kills_avenged;
         // offset 0x1138, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1170, size 0x38
         intstat deaths;
         // offset 0x11a8, size 0x40
@@ -112415,7 +112415,7 @@ version 95 {
         // offset 0x1760, size 0x38
         intstat total_shots;
         // offset 0x1798, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x17d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1808, size 0x38
@@ -112461,9 +112461,9 @@ version 95 {
         // offset 0x1bb8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1bf0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1c28, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1c60, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1c98, size 0x38
@@ -112503,7 +112503,7 @@ version 95 {
         // offset 0x2990, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x29c8, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2a08, size 0x38
         intstat kdratio;
         // offset 0x2a40, size 0x38
@@ -112511,7 +112511,7 @@ version 95 {
         // offset 0x2a78, size 0x38
         intstat wins_without_down;
         // offset 0x2ab0, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -112705,7 +112705,7 @@ version 95 {
         smg_fastfire_t8_operator, // 0x1a,
         hatchet, // 0x1b,
         tr_powersemi_t8_operator, // 0x1c,
-        hash_2ea46ca74ebdfcac, // 0x1d,
+        buggy_gunner_rifle, // 0x1d,
         smg_capacity_t8, // 0x1e,
         sniper_fastrechamber_t8_operator, // 0x1f,
         sniper_quickscope_t8_operator, // 0x20,
@@ -112730,7 +112730,7 @@ version 95 {
         ar_fastfire_t8, // 0x33,
         ar_damage_t8_gold, // 0x34,
         hero_pineapplegun, // 0x35,
-        hash_48206b17d50533c2, // 0x36,
+        pbr_gunner_rifle, // 0x36,
         sniper_quickscope_t8, // 0x37,
         lmg_heavy_t8, // 0x38,
         recon_car, // 0x39,
@@ -112818,7 +112818,7 @@ version 95 {
         shotgun_pump_t8_gold, // 0x11,
         smg_fastfire_t8_operator, // 0x12,
         tr_powersemi_t8_operator, // 0x13,
-        hash_2ea46ca74ebdfcac, // 0x14,
+        buggy_gunner_rifle, // 0x14,
         smg_capacity_t8, // 0x15,
         sniper_fastrechamber_t8_operator, // 0x16,
         sniper_quickscope_t8_operator, // 0x17,
@@ -112838,7 +112838,7 @@ version 95 {
         tr_leveraction_t8, // 0x25,
         ar_fastfire_t8, // 0x26,
         ar_damage_t8_gold, // 0x27,
-        hash_48206b17d50533c2, // 0x28,
+        pbr_gunner_rifle, // 0x28,
         sniper_quickscope_t8, // 0x29,
         lmg_heavy_t8, // 0x2a,
         smg_handling_t8_gold, // 0x2b,
@@ -113049,7 +113049,7 @@ version 95 {
         prt_wz_david_mason, // 0x1b,
         hash_57d9e98fa3f08f76, // 0x1c,
         prt_wz_misty, // 0x1d,
-        hash_62361c68e083d401, // 0x1e,
+        prt_wz_technomancer, // 0x1e,
         prt_wz_mercenary, // 0x1f,
         prt_wz_scarlett_dlc0, // 0x20,
         prt_wz_richtofen, // 0x21,
@@ -113114,7 +113114,7 @@ version 95 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -113489,7 +113489,7 @@ version 94 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -113571,7 +113571,7 @@ version 94 {
         // offset 0xcd0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xd08, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xd40, size 0x38
         intstat challengexp;
         // offset 0xd78, size 0x38
@@ -113579,7 +113579,7 @@ version 94 {
         // offset 0xdb0, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xde8, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xe20, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xe58, size 0x38
@@ -113609,7 +113609,7 @@ version 94 {
         // offset 0x1100, size 0x38
         intstat kills_avenged;
         // offset 0x1138, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1170, size 0x38
         intstat deaths;
         // offset 0x11a8, size 0x40
@@ -113669,7 +113669,7 @@ version 94 {
         // offset 0x1760, size 0x38
         intstat total_shots;
         // offset 0x1798, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x17d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1808, size 0x38
@@ -113715,9 +113715,9 @@ version 94 {
         // offset 0x1bb8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1bf0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1c28, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1c60, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1c98, size 0x38
@@ -113757,7 +113757,7 @@ version 94 {
         // offset 0x2990, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x29c8, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2a08, size 0x38
         intstat kdratio;
         // offset 0x2a40, size 0x38
@@ -113765,7 +113765,7 @@ version 94 {
         // offset 0x2a78, size 0x38
         intstat wins_without_down;
         // offset 0x2ab0, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -113958,7 +113958,7 @@ version 94 {
         smg_fastfire_t8_operator, // 0x19,
         hatchet, // 0x1a,
         tr_powersemi_t8_operator, // 0x1b,
-        hash_2ea46ca74ebdfcac, // 0x1c,
+        buggy_gunner_rifle, // 0x1c,
         smg_capacity_t8, // 0x1d,
         sniper_fastrechamber_t8_operator, // 0x1e,
         sniper_quickscope_t8_operator, // 0x1f,
@@ -113982,7 +113982,7 @@ version 94 {
         ar_fastfire_t8, // 0x31,
         ar_damage_t8_gold, // 0x32,
         hero_pineapplegun, // 0x33,
-        hash_48206b17d50533c2, // 0x34,
+        pbr_gunner_rifle, // 0x34,
         sniper_quickscope_t8, // 0x35,
         lmg_heavy_t8, // 0x36,
         recon_car, // 0x37,
@@ -114065,7 +114065,7 @@ version 94 {
         shotgun_pump_t8_gold, // 0x10,
         smg_fastfire_t8_operator, // 0x11,
         tr_powersemi_t8_operator, // 0x12,
-        hash_2ea46ca74ebdfcac, // 0x13,
+        buggy_gunner_rifle, // 0x13,
         smg_capacity_t8, // 0x14,
         sniper_fastrechamber_t8_operator, // 0x15,
         sniper_quickscope_t8_operator, // 0x16,
@@ -114084,7 +114084,7 @@ version 94 {
         tr_leveraction_t8, // 0x23,
         ar_fastfire_t8, // 0x24,
         ar_damage_t8_gold, // 0x25,
-        hash_48206b17d50533c2, // 0x26,
+        pbr_gunner_rifle, // 0x26,
         sniper_quickscope_t8, // 0x27,
         lmg_heavy_t8, // 0x28,
         smg_handling_t8_gold, // 0x29,
@@ -114291,7 +114291,7 @@ version 94 {
         prt_wz_david_mason, // 0x1b,
         hash_57d9e98fa3f08f76, // 0x1c,
         prt_wz_misty, // 0x1d,
-        hash_62361c68e083d401, // 0x1e,
+        prt_wz_technomancer, // 0x1e,
         prt_wz_mercenary, // 0x1f,
         prt_wz_scarlett_dlc0, // 0x20,
         prt_wz_richtofen, // 0x21,
@@ -114356,7 +114356,7 @@ version 94 {
         prt_wz_takeo_ofc, // 0x10,
         prt_wz_stanton, // 0x11,
         hash_503737080f039330, // 0x12,
-        hash_62361c68e083d401, // 0x13,
+        prt_wz_technomancer, // 0x13,
         prt_wz_mercenary, // 0x14,
         prt_wz_scarlett_dlc0, // 0x15,
         hash_64c3f9cd66aa1d0d, // 0x16,
@@ -114731,7 +114731,7 @@ version 93 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -114813,7 +114813,7 @@ version 93 {
         // offset 0xcd0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xd08, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xd40, size 0x38
         intstat challengexp;
         // offset 0xd78, size 0x38
@@ -114821,7 +114821,7 @@ version 93 {
         // offset 0xdb0, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xde8, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xe20, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xe58, size 0x38
@@ -114851,7 +114851,7 @@ version 93 {
         // offset 0x1100, size 0x38
         intstat kills_avenged;
         // offset 0x1138, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1170, size 0x38
         intstat deaths;
         // offset 0x11a8, size 0x40
@@ -114911,7 +114911,7 @@ version 93 {
         // offset 0x1760, size 0x38
         intstat total_shots;
         // offset 0x1798, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x17d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1808, size 0x38
@@ -114957,9 +114957,9 @@ version 93 {
         // offset 0x1bb8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1bf0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1c28, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1c60, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1c98, size 0x38
@@ -114997,7 +114997,7 @@ version 93 {
         // offset 0x2958, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2990, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x29d0, size 0x38
         intstat kdratio;
         // offset 0x2a08, size 0x38
@@ -115005,7 +115005,7 @@ version 93 {
         // offset 0x2a40, size 0x38
         intstat wins_without_down;
         // offset 0x2a78, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -115198,7 +115198,7 @@ version 93 {
         smg_fastfire_t8_operator, // 0x19,
         hatchet, // 0x1a,
         tr_powersemi_t8_operator, // 0x1b,
-        hash_2ea46ca74ebdfcac, // 0x1c,
+        buggy_gunner_rifle, // 0x1c,
         smg_capacity_t8, // 0x1d,
         sniper_fastrechamber_t8_operator, // 0x1e,
         sniper_quickscope_t8_operator, // 0x1f,
@@ -115222,7 +115222,7 @@ version 93 {
         ar_fastfire_t8, // 0x31,
         ar_damage_t8_gold, // 0x32,
         hero_pineapplegun, // 0x33,
-        hash_48206b17d50533c2, // 0x34,
+        pbr_gunner_rifle, // 0x34,
         sniper_quickscope_t8, // 0x35,
         lmg_heavy_t8, // 0x36,
         recon_car, // 0x37,
@@ -115305,7 +115305,7 @@ version 93 {
         shotgun_pump_t8_gold, // 0x10,
         smg_fastfire_t8_operator, // 0x11,
         tr_powersemi_t8_operator, // 0x12,
-        hash_2ea46ca74ebdfcac, // 0x13,
+        buggy_gunner_rifle, // 0x13,
         smg_capacity_t8, // 0x14,
         sniper_fastrechamber_t8_operator, // 0x15,
         sniper_quickscope_t8_operator, // 0x16,
@@ -115324,7 +115324,7 @@ version 93 {
         tr_leveraction_t8, // 0x23,
         ar_fastfire_t8, // 0x24,
         ar_damage_t8_gold, // 0x25,
-        hash_48206b17d50533c2, // 0x26,
+        pbr_gunner_rifle, // 0x26,
         sniper_quickscope_t8, // 0x27,
         lmg_heavy_t8, // 0x28,
         smg_handling_t8_gold, // 0x29,
@@ -115531,7 +115531,7 @@ version 93 {
         prt_wz_david_mason, // 0x1b,
         hash_57d9e98fa3f08f76, // 0x1c,
         prt_wz_misty, // 0x1d,
-        hash_62361c68e083d401, // 0x1e,
+        prt_wz_technomancer, // 0x1e,
         prt_wz_mercenary, // 0x1f,
         prt_wz_scarlett_dlc0, // 0x20,
         prt_wz_richtofen, // 0x21,
@@ -115595,7 +115595,7 @@ version 93 {
         prt_wz_takeo_ofc, // 0xf,
         prt_wz_stanton, // 0x10,
         hash_503737080f039330, // 0x11,
-        hash_62361c68e083d401, // 0x12,
+        prt_wz_technomancer, // 0x12,
         prt_wz_mercenary, // 0x13,
         prt_wz_scarlett_dlc0, // 0x14,
         hash_64c3f9cd66aa1d0d, // 0x15,
@@ -115972,7 +115972,7 @@ version 92 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -116054,7 +116054,7 @@ version 92 {
         // offset 0xcd0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xd08, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xd40, size 0x38
         intstat challengexp;
         // offset 0xd78, size 0x38
@@ -116062,7 +116062,7 @@ version 92 {
         // offset 0xdb0, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xde8, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xe20, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xe58, size 0x38
@@ -116092,7 +116092,7 @@ version 92 {
         // offset 0x1100, size 0x38
         intstat kills_avenged;
         // offset 0x1138, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1170, size 0x38
         intstat deaths;
         // offset 0x11a8, size 0x40
@@ -116152,7 +116152,7 @@ version 92 {
         // offset 0x1760, size 0x38
         intstat total_shots;
         // offset 0x1798, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x17d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1808, size 0x38
@@ -116198,9 +116198,9 @@ version 92 {
         // offset 0x1bb8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1bf0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1c28, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1c60, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1c98, size 0x38
@@ -116238,7 +116238,7 @@ version 92 {
         // offset 0x2958, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2990, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x29d0, size 0x38
         intstat kdratio;
         // offset 0x2a08, size 0x38
@@ -116246,7 +116246,7 @@ version 92 {
         // offset 0x2a40, size 0x38
         intstat wins_without_down;
         // offset 0x2a78, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -116439,7 +116439,7 @@ version 92 {
         smg_fastfire_t8_operator, // 0x19,
         hatchet, // 0x1a,
         tr_powersemi_t8_operator, // 0x1b,
-        hash_2ea46ca74ebdfcac, // 0x1c,
+        buggy_gunner_rifle, // 0x1c,
         smg_capacity_t8, // 0x1d,
         sniper_fastrechamber_t8_operator, // 0x1e,
         sniper_quickscope_t8_operator, // 0x1f,
@@ -116463,7 +116463,7 @@ version 92 {
         ar_fastfire_t8, // 0x31,
         ar_damage_t8_gold, // 0x32,
         hero_pineapplegun, // 0x33,
-        hash_48206b17d50533c2, // 0x34,
+        pbr_gunner_rifle, // 0x34,
         sniper_quickscope_t8, // 0x35,
         lmg_heavy_t8, // 0x36,
         recon_car, // 0x37,
@@ -116546,7 +116546,7 @@ version 92 {
         shotgun_pump_t8_gold, // 0x10,
         smg_fastfire_t8_operator, // 0x11,
         tr_powersemi_t8_operator, // 0x12,
-        hash_2ea46ca74ebdfcac, // 0x13,
+        buggy_gunner_rifle, // 0x13,
         smg_capacity_t8, // 0x14,
         sniper_fastrechamber_t8_operator, // 0x15,
         sniper_quickscope_t8_operator, // 0x16,
@@ -116565,7 +116565,7 @@ version 92 {
         tr_leveraction_t8, // 0x23,
         ar_fastfire_t8, // 0x24,
         ar_damage_t8_gold, // 0x25,
-        hash_48206b17d50533c2, // 0x26,
+        pbr_gunner_rifle, // 0x26,
         sniper_quickscope_t8, // 0x27,
         lmg_heavy_t8, // 0x28,
         smg_handling_t8_gold, // 0x29,
@@ -116763,7 +116763,7 @@ version 92 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_57d9e98fa3f08f76, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         prt_wz_richtofen, // 0x18,
@@ -116827,7 +116827,7 @@ version 92 {
         prt_wz_takeo_ofc, // 0xf,
         prt_wz_stanton, // 0x10,
         hash_503737080f039330, // 0x11,
-        hash_62361c68e083d401, // 0x12,
+        prt_wz_technomancer, // 0x12,
         prt_wz_mercenary, // 0x13,
         prt_wz_scarlett_dlc0, // 0x14,
         hash_64c3f9cd66aa1d0d, // 0x15,
@@ -117204,7 +117204,7 @@ version 91 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -117286,7 +117286,7 @@ version 91 {
         // offset 0xcd0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xd08, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xd40, size 0x38
         intstat challengexp;
         // offset 0xd78, size 0x38
@@ -117294,7 +117294,7 @@ version 91 {
         // offset 0xdb0, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xde8, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xe20, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xe58, size 0x38
@@ -117324,7 +117324,7 @@ version 91 {
         // offset 0x1100, size 0x38
         intstat kills_avenged;
         // offset 0x1138, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1170, size 0x38
         intstat deaths;
         // offset 0x11a8, size 0x40
@@ -117384,7 +117384,7 @@ version 91 {
         // offset 0x1760, size 0x38
         intstat total_shots;
         // offset 0x1798, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x17d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1808, size 0x38
@@ -117430,9 +117430,9 @@ version 91 {
         // offset 0x1bb8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1bf0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1c28, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1c60, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1c98, size 0x38
@@ -117470,7 +117470,7 @@ version 91 {
         // offset 0x2958, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2990, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x29d0, size 0x38
         intstat kdratio;
         // offset 0x2a08, size 0x38
@@ -117478,7 +117478,7 @@ version 91 {
         // offset 0x2a40, size 0x38
         intstat wins_without_down;
         // offset 0x2a78, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -117671,7 +117671,7 @@ version 91 {
         smg_fastfire_t8_operator, // 0x19,
         hatchet, // 0x1a,
         tr_powersemi_t8_operator, // 0x1b,
-        hash_2ea46ca74ebdfcac, // 0x1c,
+        buggy_gunner_rifle, // 0x1c,
         smg_capacity_t8, // 0x1d,
         sniper_fastrechamber_t8_operator, // 0x1e,
         sniper_quickscope_t8_operator, // 0x1f,
@@ -117695,7 +117695,7 @@ version 91 {
         ar_fastfire_t8, // 0x31,
         ar_damage_t8_gold, // 0x32,
         hero_pineapplegun, // 0x33,
-        hash_48206b17d50533c2, // 0x34,
+        pbr_gunner_rifle, // 0x34,
         sniper_quickscope_t8, // 0x35,
         lmg_heavy_t8, // 0x36,
         recon_car, // 0x37,
@@ -117778,7 +117778,7 @@ version 91 {
         shotgun_pump_t8_gold, // 0x10,
         smg_fastfire_t8_operator, // 0x11,
         tr_powersemi_t8_operator, // 0x12,
-        hash_2ea46ca74ebdfcac, // 0x13,
+        buggy_gunner_rifle, // 0x13,
         smg_capacity_t8, // 0x14,
         sniper_fastrechamber_t8_operator, // 0x15,
         sniper_quickscope_t8_operator, // 0x16,
@@ -117797,7 +117797,7 @@ version 91 {
         tr_leveraction_t8, // 0x23,
         ar_fastfire_t8, // 0x24,
         ar_damage_t8_gold, // 0x25,
-        hash_48206b17d50533c2, // 0x26,
+        pbr_gunner_rifle, // 0x26,
         sniper_quickscope_t8, // 0x27,
         lmg_heavy_t8, // 0x28,
         smg_handling_t8_gold, // 0x29,
@@ -117995,7 +117995,7 @@ version 91 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_57d9e98fa3f08f76, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         prt_wz_richtofen, // 0x18,
@@ -118058,7 +118058,7 @@ version 91 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -118421,7 +118421,7 @@ version 90 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -118503,7 +118503,7 @@ version 90 {
         // offset 0xcd0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xd08, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xd40, size 0x38
         intstat challengexp;
         // offset 0xd78, size 0x38
@@ -118511,7 +118511,7 @@ version 90 {
         // offset 0xdb0, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xde8, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xe20, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xe58, size 0x38
@@ -118541,7 +118541,7 @@ version 90 {
         // offset 0x1100, size 0x38
         intstat kills_avenged;
         // offset 0x1138, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1170, size 0x38
         intstat deaths;
         // offset 0x11a8, size 0x40
@@ -118601,7 +118601,7 @@ version 90 {
         // offset 0x1760, size 0x38
         intstat total_shots;
         // offset 0x1798, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x17d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1808, size 0x38
@@ -118647,9 +118647,9 @@ version 90 {
         // offset 0x1bb8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1bf0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1c28, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1c60, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1c98, size 0x38
@@ -118687,7 +118687,7 @@ version 90 {
         // offset 0x2958, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2990, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x29d0, size 0x38
         intstat kdratio;
         // offset 0x2a08, size 0x38
@@ -118695,7 +118695,7 @@ version 90 {
         // offset 0x2a40, size 0x38
         intstat wins_without_down;
         // offset 0x2a78, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -118888,7 +118888,7 @@ version 90 {
         smg_fastfire_t8_operator, // 0x19,
         hatchet, // 0x1a,
         tr_powersemi_t8_operator, // 0x1b,
-        hash_2ea46ca74ebdfcac, // 0x1c,
+        buggy_gunner_rifle, // 0x1c,
         smg_capacity_t8, // 0x1d,
         sniper_fastrechamber_t8_operator, // 0x1e,
         sniper_quickscope_t8_operator, // 0x1f,
@@ -118912,7 +118912,7 @@ version 90 {
         ar_fastfire_t8, // 0x31,
         ar_damage_t8_gold, // 0x32,
         hero_pineapplegun, // 0x33,
-        hash_48206b17d50533c2, // 0x34,
+        pbr_gunner_rifle, // 0x34,
         sniper_quickscope_t8, // 0x35,
         lmg_heavy_t8, // 0x36,
         recon_car, // 0x37,
@@ -118995,7 +118995,7 @@ version 90 {
         shotgun_pump_t8_gold, // 0x10,
         smg_fastfire_t8_operator, // 0x11,
         tr_powersemi_t8_operator, // 0x12,
-        hash_2ea46ca74ebdfcac, // 0x13,
+        buggy_gunner_rifle, // 0x13,
         smg_capacity_t8, // 0x14,
         sniper_fastrechamber_t8_operator, // 0x15,
         sniper_quickscope_t8_operator, // 0x16,
@@ -119014,7 +119014,7 @@ version 90 {
         tr_leveraction_t8, // 0x23,
         ar_fastfire_t8, // 0x24,
         ar_damage_t8_gold, // 0x25,
-        hash_48206b17d50533c2, // 0x26,
+        pbr_gunner_rifle, // 0x26,
         sniper_quickscope_t8, // 0x27,
         lmg_heavy_t8, // 0x28,
         smg_handling_t8_gold, // 0x29,
@@ -119212,7 +119212,7 @@ version 90 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_57d9e98fa3f08f76, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         prt_wz_richtofen, // 0x18,
@@ -119275,7 +119275,7 @@ version 90 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -119638,7 +119638,7 @@ version 89 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -119720,7 +119720,7 @@ version 89 {
         // offset 0xcd0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xd08, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xd40, size 0x38
         intstat challengexp;
         // offset 0xd78, size 0x38
@@ -119728,7 +119728,7 @@ version 89 {
         // offset 0xdb0, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xde8, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xe20, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xe58, size 0x38
@@ -119758,7 +119758,7 @@ version 89 {
         // offset 0x1100, size 0x38
         intstat kills_avenged;
         // offset 0x1138, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1170, size 0x38
         intstat deaths;
         // offset 0x11a8, size 0x40
@@ -119818,7 +119818,7 @@ version 89 {
         // offset 0x1760, size 0x38
         intstat total_shots;
         // offset 0x1798, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x17d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1808, size 0x38
@@ -119864,9 +119864,9 @@ version 89 {
         // offset 0x1bb8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1bf0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1c28, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1c60, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1c98, size 0x38
@@ -119904,7 +119904,7 @@ version 89 {
         // offset 0x2958, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2990, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x29d0, size 0x38
         intstat kdratio;
         // offset 0x2a08, size 0x38
@@ -119912,7 +119912,7 @@ version 89 {
         // offset 0x2a40, size 0x38
         intstat wins_without_down;
         // offset 0x2a78, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -120105,7 +120105,7 @@ version 89 {
         smg_fastfire_t8_operator, // 0x19,
         hatchet, // 0x1a,
         tr_powersemi_t8_operator, // 0x1b,
-        hash_2ea46ca74ebdfcac, // 0x1c,
+        buggy_gunner_rifle, // 0x1c,
         smg_capacity_t8, // 0x1d,
         sniper_fastrechamber_t8_operator, // 0x1e,
         sniper_quickscope_t8_operator, // 0x1f,
@@ -120129,7 +120129,7 @@ version 89 {
         ar_fastfire_t8, // 0x31,
         ar_damage_t8_gold, // 0x32,
         hero_pineapplegun, // 0x33,
-        hash_48206b17d50533c2, // 0x34,
+        pbr_gunner_rifle, // 0x34,
         sniper_quickscope_t8, // 0x35,
         lmg_heavy_t8, // 0x36,
         recon_car, // 0x37,
@@ -120212,7 +120212,7 @@ version 89 {
         shotgun_pump_t8_gold, // 0x10,
         smg_fastfire_t8_operator, // 0x11,
         tr_powersemi_t8_operator, // 0x12,
-        hash_2ea46ca74ebdfcac, // 0x13,
+        buggy_gunner_rifle, // 0x13,
         smg_capacity_t8, // 0x14,
         sniper_fastrechamber_t8_operator, // 0x15,
         sniper_quickscope_t8_operator, // 0x16,
@@ -120231,7 +120231,7 @@ version 89 {
         tr_leveraction_t8, // 0x23,
         ar_fastfire_t8, // 0x24,
         ar_damage_t8_gold, // 0x25,
-        hash_48206b17d50533c2, // 0x26,
+        pbr_gunner_rifle, // 0x26,
         sniper_quickscope_t8, // 0x27,
         lmg_heavy_t8, // 0x28,
         smg_handling_t8_gold, // 0x29,
@@ -120429,7 +120429,7 @@ version 89 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_57d9e98fa3f08f76, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         prt_wz_richtofen, // 0x18,
@@ -120491,7 +120491,7 @@ version 89 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -120854,7 +120854,7 @@ version 88 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -120936,7 +120936,7 @@ version 88 {
         // offset 0xcd0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xd08, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xd40, size 0x38
         intstat challengexp;
         // offset 0xd78, size 0x38
@@ -120944,7 +120944,7 @@ version 88 {
         // offset 0xdb0, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xde8, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xe20, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xe58, size 0x38
@@ -120974,7 +120974,7 @@ version 88 {
         // offset 0x1100, size 0x38
         intstat kills_avenged;
         // offset 0x1138, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1170, size 0x38
         intstat deaths;
         // offset 0x11a8, size 0x40
@@ -121034,7 +121034,7 @@ version 88 {
         // offset 0x1780, size 0x38
         intstat total_shots;
         // offset 0x17b8, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x17f0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1828, size 0x38
@@ -121080,9 +121080,9 @@ version 88 {
         // offset 0x1bd8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1c10, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1c48, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1c80, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1cb8, size 0x38
@@ -121120,7 +121120,7 @@ version 88 {
         // offset 0x2978, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x29b0, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x29f0, size 0x38
         intstat kdratio;
         // offset 0x2a28, size 0x38
@@ -121128,7 +121128,7 @@ version 88 {
         // offset 0x2a60, size 0x38
         intstat wins_without_down;
         // offset 0x2a98, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -121321,7 +121321,7 @@ version 88 {
         smg_fastfire_t8_operator, // 0x19,
         hatchet, // 0x1a,
         tr_powersemi_t8_operator, // 0x1b,
-        hash_2ea46ca74ebdfcac, // 0x1c,
+        buggy_gunner_rifle, // 0x1c,
         smg_capacity_t8, // 0x1d,
         sniper_fastrechamber_t8_operator, // 0x1e,
         sniper_quickscope_t8_operator, // 0x1f,
@@ -121345,7 +121345,7 @@ version 88 {
         ar_fastfire_t8, // 0x31,
         ar_damage_t8_gold, // 0x32,
         hero_pineapplegun, // 0x33,
-        hash_48206b17d50533c2, // 0x34,
+        pbr_gunner_rifle, // 0x34,
         sniper_quickscope_t8, // 0x35,
         lmg_heavy_t8, // 0x36,
         recon_car, // 0x37,
@@ -121428,7 +121428,7 @@ version 88 {
         shotgun_pump_t8_gold, // 0x10,
         smg_fastfire_t8_operator, // 0x11,
         tr_powersemi_t8_operator, // 0x12,
-        hash_2ea46ca74ebdfcac, // 0x13,
+        buggy_gunner_rifle, // 0x13,
         smg_capacity_t8, // 0x14,
         sniper_fastrechamber_t8_operator, // 0x15,
         sniper_quickscope_t8_operator, // 0x16,
@@ -121447,7 +121447,7 @@ version 88 {
         tr_leveraction_t8, // 0x23,
         ar_fastfire_t8, // 0x24,
         ar_damage_t8_gold, // 0x25,
-        hash_48206b17d50533c2, // 0x26,
+        pbr_gunner_rifle, // 0x26,
         sniper_quickscope_t8, // 0x27,
         lmg_heavy_t8, // 0x28,
         smg_handling_t8_gold, // 0x29,
@@ -121645,7 +121645,7 @@ version 88 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_57d9e98fa3f08f76, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         prt_wz_richtofen, // 0x18,
@@ -121707,7 +121707,7 @@ version 88 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -122068,7 +122068,7 @@ version 87 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -122150,7 +122150,7 @@ version 87 {
         // offset 0xcd0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xd08, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xd40, size 0x38
         intstat challengexp;
         // offset 0xd78, size 0x38
@@ -122158,7 +122158,7 @@ version 87 {
         // offset 0xdb0, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xde8, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xe20, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xe58, size 0x38
@@ -122188,7 +122188,7 @@ version 87 {
         // offset 0x1100, size 0x38
         intstat kills_avenged;
         // offset 0x1138, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1170, size 0x38
         intstat deaths;
         // offset 0x11a8, size 0x40
@@ -122248,7 +122248,7 @@ version 87 {
         // offset 0x1780, size 0x38
         intstat total_shots;
         // offset 0x17b8, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x17f0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1828, size 0x38
@@ -122294,9 +122294,9 @@ version 87 {
         // offset 0x1bd8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1c10, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1c48, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1c80, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1cb8, size 0x38
@@ -122334,7 +122334,7 @@ version 87 {
         // offset 0x2978, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x29b0, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x29f0, size 0x38
         intstat kdratio;
         // offset 0x2a28, size 0x38
@@ -122342,7 +122342,7 @@ version 87 {
         // offset 0x2a60, size 0x38
         intstat wins_without_down;
         // offset 0x2a98, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -122535,7 +122535,7 @@ version 87 {
         smg_fastfire_t8_operator, // 0x19,
         hatchet, // 0x1a,
         tr_powersemi_t8_operator, // 0x1b,
-        hash_2ea46ca74ebdfcac, // 0x1c,
+        buggy_gunner_rifle, // 0x1c,
         smg_capacity_t8, // 0x1d,
         sniper_fastrechamber_t8_operator, // 0x1e,
         sniper_quickscope_t8_operator, // 0x1f,
@@ -122559,7 +122559,7 @@ version 87 {
         ar_fastfire_t8, // 0x31,
         ar_damage_t8_gold, // 0x32,
         hero_pineapplegun, // 0x33,
-        hash_48206b17d50533c2, // 0x34,
+        pbr_gunner_rifle, // 0x34,
         sniper_quickscope_t8, // 0x35,
         lmg_heavy_t8, // 0x36,
         recon_car, // 0x37,
@@ -122642,7 +122642,7 @@ version 87 {
         shotgun_pump_t8_gold, // 0x10,
         smg_fastfire_t8_operator, // 0x11,
         tr_powersemi_t8_operator, // 0x12,
-        hash_2ea46ca74ebdfcac, // 0x13,
+        buggy_gunner_rifle, // 0x13,
         smg_capacity_t8, // 0x14,
         sniper_fastrechamber_t8_operator, // 0x15,
         sniper_quickscope_t8_operator, // 0x16,
@@ -122661,7 +122661,7 @@ version 87 {
         tr_leveraction_t8, // 0x23,
         ar_fastfire_t8, // 0x24,
         ar_damage_t8_gold, // 0x25,
-        hash_48206b17d50533c2, // 0x26,
+        pbr_gunner_rifle, // 0x26,
         sniper_quickscope_t8, // 0x27,
         lmg_heavy_t8, // 0x28,
         smg_handling_t8_gold, // 0x29,
@@ -122859,7 +122859,7 @@ version 87 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_57d9e98fa3f08f76, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         prt_wz_richtofen, // 0x18,
@@ -122921,7 +122921,7 @@ version 87 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -123282,7 +123282,7 @@ version 86 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -123360,7 +123360,7 @@ version 86 {
         // offset 0xcc0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xcf8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xd30, size 0x38
         intstat challengexp;
         // offset 0xd68, size 0x38
@@ -123368,7 +123368,7 @@ version 86 {
         // offset 0xda0, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xdd8, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xe10, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xe48, size 0x38
@@ -123398,7 +123398,7 @@ version 86 {
         // offset 0x10f0, size 0x38
         intstat kills_avenged;
         // offset 0x1128, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1160, size 0x38
         intstat deaths;
         // offset 0x1198, size 0x40
@@ -123456,7 +123456,7 @@ version 86 {
         // offset 0x1738, size 0x38
         intstat total_shots;
         // offset 0x1770, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x17a8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x17e0, size 0x38
@@ -123496,9 +123496,9 @@ version 86 {
         // offset 0x1b78, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1bb0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1be8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1c20, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1c58, size 0x38
@@ -123536,7 +123536,7 @@ version 86 {
         // offset 0x2918, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2950, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2990, size 0x38
         intstat kdratio;
         // offset 0x29c8, size 0x38
@@ -123544,7 +123544,7 @@ version 86 {
         // offset 0x2a00, size 0x38
         intstat wins_without_down;
         // offset 0x2a38, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -123737,7 +123737,7 @@ version 86 {
         smg_fastfire_t8_operator, // 0x19,
         hatchet, // 0x1a,
         tr_powersemi_t8_operator, // 0x1b,
-        hash_2ea46ca74ebdfcac, // 0x1c,
+        buggy_gunner_rifle, // 0x1c,
         smg_capacity_t8, // 0x1d,
         sniper_fastrechamber_t8_operator, // 0x1e,
         sniper_quickscope_t8_operator, // 0x1f,
@@ -123761,7 +123761,7 @@ version 86 {
         ar_fastfire_t8, // 0x31,
         ar_damage_t8_gold, // 0x32,
         hero_pineapplegun, // 0x33,
-        hash_48206b17d50533c2, // 0x34,
+        pbr_gunner_rifle, // 0x34,
         sniper_quickscope_t8, // 0x35,
         lmg_heavy_t8, // 0x36,
         recon_car, // 0x37,
@@ -123844,7 +123844,7 @@ version 86 {
         shotgun_pump_t8_gold, // 0x10,
         smg_fastfire_t8_operator, // 0x11,
         tr_powersemi_t8_operator, // 0x12,
-        hash_2ea46ca74ebdfcac, // 0x13,
+        buggy_gunner_rifle, // 0x13,
         smg_capacity_t8, // 0x14,
         sniper_fastrechamber_t8_operator, // 0x15,
         sniper_quickscope_t8_operator, // 0x16,
@@ -123863,7 +123863,7 @@ version 86 {
         tr_leveraction_t8, // 0x23,
         ar_fastfire_t8, // 0x24,
         ar_damage_t8_gold, // 0x25,
-        hash_48206b17d50533c2, // 0x26,
+        pbr_gunner_rifle, // 0x26,
         sniper_quickscope_t8, // 0x27,
         lmg_heavy_t8, // 0x28,
         smg_handling_t8_gold, // 0x29,
@@ -124061,7 +124061,7 @@ version 86 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_57d9e98fa3f08f76, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         prt_wz_richtofen, // 0x18,
@@ -124123,7 +124123,7 @@ version 86 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -124484,7 +124484,7 @@ version 85 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -124562,7 +124562,7 @@ version 85 {
         // offset 0xcc0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xcf8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xd30, size 0x38
         intstat challengexp;
         // offset 0xd68, size 0x38
@@ -124570,7 +124570,7 @@ version 85 {
         // offset 0xda0, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xdd8, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xe10, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xe48, size 0x38
@@ -124600,7 +124600,7 @@ version 85 {
         // offset 0x10f0, size 0x38
         intstat kills_avenged;
         // offset 0x1128, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1160, size 0x38
         intstat deaths;
         // offset 0x1198, size 0x40
@@ -124658,7 +124658,7 @@ version 85 {
         // offset 0x1738, size 0x38
         intstat total_shots;
         // offset 0x1770, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x17a8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x17e0, size 0x38
@@ -124698,9 +124698,9 @@ version 85 {
         // offset 0x1b78, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1bb0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1be8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1c20, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1c58, size 0x38
@@ -124738,7 +124738,7 @@ version 85 {
         // offset 0x2918, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2950, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2990, size 0x38
         intstat kdratio;
         // offset 0x29c8, size 0x38
@@ -124746,7 +124746,7 @@ version 85 {
         // offset 0x2a00, size 0x38
         intstat wins_without_down;
         // offset 0x2a38, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -124937,7 +124937,7 @@ version 85 {
         smg_fastfire_t8_operator, // 0x19,
         hatchet, // 0x1a,
         tr_powersemi_t8_operator, // 0x1b,
-        hash_2ea46ca74ebdfcac, // 0x1c,
+        buggy_gunner_rifle, // 0x1c,
         smg_capacity_t8, // 0x1d,
         sniper_fastrechamber_t8_operator, // 0x1e,
         sniper_quickscope_t8_operator, // 0x1f,
@@ -124961,7 +124961,7 @@ version 85 {
         ar_fastfire_t8, // 0x31,
         ar_damage_t8_gold, // 0x32,
         hero_pineapplegun, // 0x33,
-        hash_48206b17d50533c2, // 0x34,
+        pbr_gunner_rifle, // 0x34,
         sniper_quickscope_t8, // 0x35,
         lmg_heavy_t8, // 0x36,
         recon_car, // 0x37,
@@ -125044,7 +125044,7 @@ version 85 {
         shotgun_pump_t8_gold, // 0x10,
         smg_fastfire_t8_operator, // 0x11,
         tr_powersemi_t8_operator, // 0x12,
-        hash_2ea46ca74ebdfcac, // 0x13,
+        buggy_gunner_rifle, // 0x13,
         smg_capacity_t8, // 0x14,
         sniper_fastrechamber_t8_operator, // 0x15,
         sniper_quickscope_t8_operator, // 0x16,
@@ -125063,7 +125063,7 @@ version 85 {
         tr_leveraction_t8, // 0x23,
         ar_fastfire_t8, // 0x24,
         ar_damage_t8_gold, // 0x25,
-        hash_48206b17d50533c2, // 0x26,
+        pbr_gunner_rifle, // 0x26,
         sniper_quickscope_t8, // 0x27,
         lmg_heavy_t8, // 0x28,
         smg_handling_t8_gold, // 0x29,
@@ -125261,7 +125261,7 @@ version 85 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_57d9e98fa3f08f76, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         prt_wz_richtofen, // 0x18,
@@ -125323,7 +125323,7 @@ version 85 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -125684,7 +125684,7 @@ version 84 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -125762,7 +125762,7 @@ version 84 {
         // offset 0xcc0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xcf8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xd30, size 0x38
         intstat challengexp;
         // offset 0xd68, size 0x38
@@ -125770,7 +125770,7 @@ version 84 {
         // offset 0xda0, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xdd8, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xe10, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xe48, size 0x38
@@ -125800,7 +125800,7 @@ version 84 {
         // offset 0x10f0, size 0x38
         intstat kills_avenged;
         // offset 0x1128, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1160, size 0x38
         intstat deaths;
         // offset 0x1198, size 0x40
@@ -125858,7 +125858,7 @@ version 84 {
         // offset 0x1738, size 0x38
         intstat total_shots;
         // offset 0x1770, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x17a8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x17e0, size 0x38
@@ -125898,9 +125898,9 @@ version 84 {
         // offset 0x1b78, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1bb0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1be8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1c20, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1c58, size 0x38
@@ -125938,7 +125938,7 @@ version 84 {
         // offset 0x2918, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2950, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2990, size 0x38
         intstat kdratio;
         // offset 0x29c8, size 0x38
@@ -125946,7 +125946,7 @@ version 84 {
         // offset 0x2a00, size 0x38
         intstat wins_without_down;
         // offset 0x2a38, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -126137,7 +126137,7 @@ version 84 {
         smg_fastfire_t8_operator, // 0x19,
         hatchet, // 0x1a,
         tr_powersemi_t8_operator, // 0x1b,
-        hash_2ea46ca74ebdfcac, // 0x1c,
+        buggy_gunner_rifle, // 0x1c,
         smg_capacity_t8, // 0x1d,
         sniper_fastrechamber_t8_operator, // 0x1e,
         sniper_quickscope_t8_operator, // 0x1f,
@@ -126243,7 +126243,7 @@ version 84 {
         shotgun_pump_t8_gold, // 0x10,
         smg_fastfire_t8_operator, // 0x11,
         tr_powersemi_t8_operator, // 0x12,
-        hash_2ea46ca74ebdfcac, // 0x13,
+        buggy_gunner_rifle, // 0x13,
         smg_capacity_t8, // 0x14,
         sniper_fastrechamber_t8_operator, // 0x15,
         sniper_quickscope_t8_operator, // 0x16,
@@ -126459,7 +126459,7 @@ version 84 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_57d9e98fa3f08f76, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         prt_wz_richtofen, // 0x18,
@@ -126521,7 +126521,7 @@ version 84 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -126882,7 +126882,7 @@ version 83 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -126960,7 +126960,7 @@ version 83 {
         // offset 0xcc0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xcf8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xd30, size 0x38
         intstat challengexp;
         // offset 0xd68, size 0x38
@@ -126968,7 +126968,7 @@ version 83 {
         // offset 0xda0, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xdd8, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xe10, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xe48, size 0x38
@@ -126998,7 +126998,7 @@ version 83 {
         // offset 0x10f0, size 0x38
         intstat kills_avenged;
         // offset 0x1128, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1160, size 0x38
         intstat deaths;
         // offset 0x1198, size 0x40
@@ -127056,7 +127056,7 @@ version 83 {
         // offset 0x1738, size 0x38
         intstat total_shots;
         // offset 0x1770, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x17a8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x17e0, size 0x38
@@ -127096,9 +127096,9 @@ version 83 {
         // offset 0x1b78, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1bb0, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1be8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1c20, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1c58, size 0x38
@@ -127136,7 +127136,7 @@ version 83 {
         // offset 0x2918, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2950, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2990, size 0x38
         intstat kdratio;
         // offset 0x29c8, size 0x38
@@ -127144,7 +127144,7 @@ version 83 {
         // offset 0x2a00, size 0x38
         intstat wins_without_down;
         // offset 0x2a38, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -127335,7 +127335,7 @@ version 83 {
         smg_fastfire_t8_operator, // 0x19,
         hatchet, // 0x1a,
         tr_powersemi_t8_operator, // 0x1b,
-        hash_2ea46ca74ebdfcac, // 0x1c,
+        buggy_gunner_rifle, // 0x1c,
         smg_capacity_t8, // 0x1d,
         sniper_fastrechamber_t8_operator, // 0x1e,
         sniper_quickscope_t8_operator, // 0x1f,
@@ -127441,7 +127441,7 @@ version 83 {
         shotgun_pump_t8_gold, // 0x10,
         smg_fastfire_t8_operator, // 0x11,
         tr_powersemi_t8_operator, // 0x12,
-        hash_2ea46ca74ebdfcac, // 0x13,
+        buggy_gunner_rifle, // 0x13,
         smg_capacity_t8, // 0x14,
         sniper_fastrechamber_t8_operator, // 0x15,
         sniper_quickscope_t8_operator, // 0x16,
@@ -127657,7 +127657,7 @@ version 83 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_57d9e98fa3f08f76, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         prt_wz_richtofen, // 0x18,
@@ -127718,7 +127718,7 @@ version 83 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -128079,7 +128079,7 @@ version 82 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -128157,7 +128157,7 @@ version 82 {
         // offset 0xcc0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xcf8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xd30, size 0x38
         intstat challengexp;
         // offset 0xd68, size 0x38
@@ -128165,7 +128165,7 @@ version 82 {
         // offset 0xda0, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xdd8, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xe10, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xe48, size 0x38
@@ -128195,7 +128195,7 @@ version 82 {
         // offset 0x10f0, size 0x38
         intstat kills_avenged;
         // offset 0x1128, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1160, size 0x38
         intstat deaths;
         // offset 0x1198, size 0x40
@@ -128253,7 +128253,7 @@ version 82 {
         // offset 0x1738, size 0x38
         intstat total_shots;
         // offset 0x1770, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x17a8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x17e0, size 0x38
@@ -128291,9 +128291,9 @@ version 82 {
         // offset 0x1b38, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1b70, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1ba8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1be0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1c18, size 0x38
@@ -128331,7 +128331,7 @@ version 82 {
         // offset 0x28d8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2910, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2950, size 0x38
         intstat kdratio;
         // offset 0x2988, size 0x38
@@ -128339,7 +128339,7 @@ version 82 {
         // offset 0x29c0, size 0x38
         intstat wins_without_down;
         // offset 0x29f8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -128530,7 +128530,7 @@ version 82 {
         smg_fastfire_t8_operator, // 0x19,
         hatchet, // 0x1a,
         tr_powersemi_t8_operator, // 0x1b,
-        hash_2ea46ca74ebdfcac, // 0x1c,
+        buggy_gunner_rifle, // 0x1c,
         smg_capacity_t8, // 0x1d,
         sniper_fastrechamber_t8_operator, // 0x1e,
         sniper_quickscope_t8_operator, // 0x1f,
@@ -128636,7 +128636,7 @@ version 82 {
         shotgun_pump_t8_gold, // 0x10,
         smg_fastfire_t8_operator, // 0x11,
         tr_powersemi_t8_operator, // 0x12,
-        hash_2ea46ca74ebdfcac, // 0x13,
+        buggy_gunner_rifle, // 0x13,
         smg_capacity_t8, // 0x14,
         sniper_fastrechamber_t8_operator, // 0x15,
         sniper_quickscope_t8_operator, // 0x16,
@@ -128852,7 +128852,7 @@ version 82 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_57d9e98fa3f08f76, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         prt_wz_richtofen, // 0x18,
@@ -128913,7 +128913,7 @@ version 82 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -129274,7 +129274,7 @@ version 81 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -129352,7 +129352,7 @@ version 81 {
         // offset 0xcc0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xcf8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xd30, size 0x38
         intstat challengexp;
         // offset 0xd68, size 0x38
@@ -129360,7 +129360,7 @@ version 81 {
         // offset 0xda0, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xdd8, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xe10, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xe48, size 0x38
@@ -129390,7 +129390,7 @@ version 81 {
         // offset 0x10f0, size 0x38
         intstat kills_avenged;
         // offset 0x1128, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1160, size 0x38
         intstat deaths;
         // offset 0x1198, size 0x40
@@ -129448,7 +129448,7 @@ version 81 {
         // offset 0x1738, size 0x38
         intstat total_shots;
         // offset 0x1770, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x17a8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x17e0, size 0x38
@@ -129486,9 +129486,9 @@ version 81 {
         // offset 0x1b38, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1b70, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1ba8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1be0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1c18, size 0x38
@@ -129526,7 +129526,7 @@ version 81 {
         // offset 0x28d8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2910, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2950, size 0x38
         intstat kdratio;
         // offset 0x2988, size 0x38
@@ -129534,7 +129534,7 @@ version 81 {
         // offset 0x29c0, size 0x38
         intstat wins_without_down;
         // offset 0x29f8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -129723,7 +129723,7 @@ version 81 {
         frag_grenade, // 0x17,
         eq_swat_grenade, // 0x18,
         hatchet, // 0x19,
-        hash_2ea46ca74ebdfcac, // 0x1a,
+        buggy_gunner_rifle, // 0x1a,
         smg_capacity_t8, // 0x1b,
         pistol_standard_t8, // 0x1c,
         gadget_health_regen, // 0x1d,
@@ -129816,7 +129816,7 @@ version 81 {
         sniper_quickscope_t8_gold, // 0xe,
         ar_accurate_t8, // 0xf,
         shotgun_pump_t8_gold, // 0x10,
-        hash_2ea46ca74ebdfcac, // 0x11,
+        buggy_gunner_rifle, // 0x11,
         smg_capacity_t8, // 0x12,
         pistol_standard_t8, // 0x13,
         pistol_revolver_t8, // 0x14,
@@ -130020,7 +130020,7 @@ version 81 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_57d9e98fa3f08f76, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         prt_wz_richtofen, // 0x18,
@@ -130081,7 +130081,7 @@ version 81 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -130442,7 +130442,7 @@ version 80 {
         // offset 0x430, size 0x38
         intstat time_played_alive;
         // offset 0x468, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x4a0, size 0x38
         intstat time_played_total;
         // offset 0x4d8, size 0x38
@@ -130520,7 +130520,7 @@ version 80 {
         // offset 0xcc0, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xcf8, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xd30, size 0x38
         intstat challengexp;
         // offset 0xd68, size 0x38
@@ -130528,7 +130528,7 @@ version 80 {
         // offset 0xda0, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xdd8, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xe10, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xe48, size 0x38
@@ -130558,7 +130558,7 @@ version 80 {
         // offset 0x10f0, size 0x38
         intstat kills_avenged;
         // offset 0x1128, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x1160, size 0x38
         intstat deaths;
         // offset 0x1198, size 0x40
@@ -130616,7 +130616,7 @@ version 80 {
         // offset 0x1738, size 0x38
         intstat total_shots;
         // offset 0x1770, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x17a8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x17e0, size 0x38
@@ -130654,9 +130654,9 @@ version 80 {
         // offset 0x1b38, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1b70, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1ba8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x1be0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1c18, size 0x38
@@ -130694,7 +130694,7 @@ version 80 {
         // offset 0x28d8, size 0x38
         intstat kills_enemy_in_vehicle_air;
         // offset 0x2910, size 0x40
-        hash_2b6b162a9af31225 hash_5cf945d7954a39e0;
+        hash_2b6b162a9af31225 camo_active_kill_counter_base_kills;
         // offset 0x2950, size 0x38
         intstat kdratio;
         // offset 0x2988, size 0x38
@@ -130702,7 +130702,7 @@ version 80 {
         // offset 0x29c0, size 0x38
         intstat wins_without_down;
         // offset 0x29f8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -130890,7 +130890,7 @@ version 80 {
         frag_grenade, // 0x16,
         eq_swat_grenade, // 0x17,
         hatchet, // 0x18,
-        hash_2ea46ca74ebdfcac, // 0x19,
+        buggy_gunner_rifle, // 0x19,
         smg_capacity_t8, // 0x1a,
         pistol_standard_t8, // 0x1b,
         gadget_health_regen, // 0x1c,
@@ -130981,7 +130981,7 @@ version 80 {
         sniper_quickscope_t8_gold, // 0xd,
         ar_accurate_t8, // 0xe,
         shotgun_pump_t8_gold, // 0xf,
-        hash_2ea46ca74ebdfcac, // 0x10,
+        buggy_gunner_rifle, // 0x10,
         smg_capacity_t8, // 0x11,
         pistol_standard_t8, // 0x12,
         pistol_revolver_t8, // 0x13,
@@ -131184,7 +131184,7 @@ version 80 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_57d9e98fa3f08f76, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         prt_wz_richtofen, // 0x18,
@@ -131245,7 +131245,7 @@ version 80 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -131592,7 +131592,7 @@ version 79 {
         // offset 0x3f0, size 0x38
         intstat time_played_alive;
         // offset 0x428, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x460, size 0x38
         intstat time_played_total;
         // offset 0x498, size 0x38
@@ -131668,7 +131668,7 @@ version 79 {
         // offset 0xc40, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xc78, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xcb0, size 0x38
         intstat challengexp;
         // offset 0xce8, size 0x38
@@ -131676,7 +131676,7 @@ version 79 {
         // offset 0xd20, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xd58, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xd90, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xdc8, size 0x38
@@ -131704,7 +131704,7 @@ version 79 {
         // offset 0x1030, size 0x38
         intstat kills_avenged;
         // offset 0x1068, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x10a0, size 0x38
         intstat deaths;
         // offset 0x10d8, size 0x38
@@ -131754,7 +131754,7 @@ version 79 {
         // offset 0x1578, size 0x38
         intstat total_shots;
         // offset 0x15b0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x15e8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1620, size 0x38
@@ -131790,9 +131790,9 @@ version 79 {
         // offset 0x1938, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1970, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x19a8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x19e0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1a18, size 0x38
@@ -131830,7 +131830,7 @@ version 79 {
         // offset 0x26c0, size 0x38
         intstat wins_without_down;
         // offset 0x26f8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -132018,7 +132018,7 @@ version 79 {
         frag_grenade, // 0x16,
         eq_swat_grenade, // 0x17,
         hatchet, // 0x18,
-        hash_2ea46ca74ebdfcac, // 0x19,
+        buggy_gunner_rifle, // 0x19,
         smg_capacity_t8, // 0x1a,
         pistol_standard_t8, // 0x1b,
         gadget_health_regen, // 0x1c,
@@ -132109,7 +132109,7 @@ version 79 {
         sniper_quickscope_t8_gold, // 0xd,
         ar_accurate_t8, // 0xe,
         shotgun_pump_t8_gold, // 0xf,
-        hash_2ea46ca74ebdfcac, // 0x10,
+        buggy_gunner_rifle, // 0x10,
         smg_capacity_t8, // 0x11,
         pistol_standard_t8, // 0x12,
         pistol_revolver_t8, // 0x13,
@@ -132312,7 +132312,7 @@ version 79 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_57d9e98fa3f08f76, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         prt_wz_richtofen, // 0x18,
@@ -132373,7 +132373,7 @@ version 79 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -132720,7 +132720,7 @@ version 78 {
         // offset 0x3f0, size 0x38
         intstat time_played_alive;
         // offset 0x428, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x460, size 0x38
         intstat time_played_total;
         // offset 0x498, size 0x38
@@ -132796,7 +132796,7 @@ version 78 {
         // offset 0xc40, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xc78, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xcb0, size 0x38
         intstat challengexp;
         // offset 0xce8, size 0x38
@@ -132804,7 +132804,7 @@ version 78 {
         // offset 0xd20, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xd58, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xd90, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xdc8, size 0x38
@@ -132832,7 +132832,7 @@ version 78 {
         // offset 0x1030, size 0x38
         intstat kills_avenged;
         // offset 0x1068, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x10a0, size 0x38
         intstat deaths;
         // offset 0x10d8, size 0x38
@@ -132882,7 +132882,7 @@ version 78 {
         // offset 0x1578, size 0x38
         intstat total_shots;
         // offset 0x15b0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x15e8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1620, size 0x38
@@ -132918,9 +132918,9 @@ version 78 {
         // offset 0x1938, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1970, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x19a8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x19e0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1a18, size 0x38
@@ -132958,7 +132958,7 @@ version 78 {
         // offset 0x26c0, size 0x38
         intstat wins_without_down;
         // offset 0x26f8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -133146,7 +133146,7 @@ version 78 {
         frag_grenade, // 0x16,
         eq_swat_grenade, // 0x17,
         hatchet, // 0x18,
-        hash_2ea46ca74ebdfcac, // 0x19,
+        buggy_gunner_rifle, // 0x19,
         smg_capacity_t8, // 0x1a,
         pistol_standard_t8, // 0x1b,
         gadget_health_regen, // 0x1c,
@@ -133234,7 +133234,7 @@ version 78 {
         sniper_quickscope_t8_gold, // 0xd,
         ar_accurate_t8, // 0xe,
         shotgun_pump_t8_gold, // 0xf,
-        hash_2ea46ca74ebdfcac, // 0x10,
+        buggy_gunner_rifle, // 0x10,
         smg_capacity_t8, // 0x11,
         pistol_standard_t8, // 0x12,
         pistol_revolver_t8, // 0x13,
@@ -133434,7 +133434,7 @@ version 78 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_57d9e98fa3f08f76, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         prt_wz_richtofen, // 0x18,
@@ -133495,7 +133495,7 @@ version 78 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -133842,7 +133842,7 @@ version 77 {
         // offset 0x3f0, size 0x38
         intstat time_played_alive;
         // offset 0x428, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x460, size 0x38
         intstat time_played_total;
         // offset 0x498, size 0x38
@@ -133918,7 +133918,7 @@ version 77 {
         // offset 0xc40, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xc78, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xcb0, size 0x38
         intstat challengexp;
         // offset 0xce8, size 0x38
@@ -133926,7 +133926,7 @@ version 77 {
         // offset 0xd20, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xd58, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xd90, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xdc8, size 0x38
@@ -133954,7 +133954,7 @@ version 77 {
         // offset 0x1030, size 0x38
         intstat kills_avenged;
         // offset 0x1068, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x10a0, size 0x38
         intstat deaths;
         // offset 0x10d8, size 0x38
@@ -134004,7 +134004,7 @@ version 77 {
         // offset 0x1578, size 0x38
         intstat total_shots;
         // offset 0x15b0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x15e8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1620, size 0x38
@@ -134040,9 +134040,9 @@ version 77 {
         // offset 0x1938, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1970, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x19a8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x19e0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1a18, size 0x38
@@ -134080,7 +134080,7 @@ version 77 {
         // offset 0x26c0, size 0x38
         intstat wins_without_down;
         // offset 0x26f8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -134554,7 +134554,7 @@ version 77 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_57d9e98fa3f08f76, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         prt_wz_richtofen, // 0x18,
@@ -134615,7 +134615,7 @@ version 77 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -134962,7 +134962,7 @@ version 76 {
         // offset 0x3f0, size 0x38
         intstat time_played_alive;
         // offset 0x428, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x460, size 0x38
         intstat time_played_total;
         // offset 0x498, size 0x38
@@ -135038,7 +135038,7 @@ version 76 {
         // offset 0xc40, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xc78, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xcb0, size 0x38
         intstat challengexp;
         // offset 0xce8, size 0x38
@@ -135046,7 +135046,7 @@ version 76 {
         // offset 0xd20, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xd58, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xd90, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xdc8, size 0x38
@@ -135074,7 +135074,7 @@ version 76 {
         // offset 0x1030, size 0x38
         intstat kills_avenged;
         // offset 0x1068, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x10a0, size 0x38
         intstat deaths;
         // offset 0x10d8, size 0x38
@@ -135124,7 +135124,7 @@ version 76 {
         // offset 0x1578, size 0x38
         intstat total_shots;
         // offset 0x15b0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x15e8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1620, size 0x38
@@ -135160,9 +135160,9 @@ version 76 {
         // offset 0x1938, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1970, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x19a8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x19e0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1a18, size 0x38
@@ -135200,7 +135200,7 @@ version 76 {
         // offset 0x26c0, size 0x38
         intstat wins_without_down;
         // offset 0x26f8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -135673,7 +135673,7 @@ version 76 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_57d9e98fa3f08f76, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         prt_wz_richtofen, // 0x18,
@@ -135734,7 +135734,7 @@ version 76 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -136081,7 +136081,7 @@ version 75 {
         // offset 0x3f0, size 0x38
         intstat time_played_alive;
         // offset 0x428, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x460, size 0x38
         intstat time_played_total;
         // offset 0x498, size 0x38
@@ -136157,7 +136157,7 @@ version 75 {
         // offset 0xc40, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xc78, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xcb0, size 0x38
         intstat challengexp;
         // offset 0xce8, size 0x38
@@ -136165,7 +136165,7 @@ version 75 {
         // offset 0xd20, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xd58, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xd90, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xdc8, size 0x38
@@ -136193,7 +136193,7 @@ version 75 {
         // offset 0x1030, size 0x38
         intstat kills_avenged;
         // offset 0x1068, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x10a0, size 0x38
         intstat deaths;
         // offset 0x10d8, size 0x38
@@ -136243,7 +136243,7 @@ version 75 {
         // offset 0x1578, size 0x38
         intstat total_shots;
         // offset 0x15b0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x15e8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1620, size 0x38
@@ -136279,9 +136279,9 @@ version 75 {
         // offset 0x1938, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1970, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x19a8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x19e0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1a18, size 0x38
@@ -136319,7 +136319,7 @@ version 75 {
         // offset 0x26c0, size 0x38
         intstat wins_without_down;
         // offset 0x26f8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -136785,7 +136785,7 @@ version 75 {
         prt_wz_takeo_ofc, // 0x12,
         prt_wz_stanton, // 0x13,
         hash_57d9e98fa3f08f76, // 0x14,
-        hash_62361c68e083d401, // 0x15,
+        prt_wz_technomancer, // 0x15,
         prt_wz_mercenary, // 0x16,
         prt_wz_scarlett_dlc0, // 0x17,
         prt_wz_richtofen, // 0x18,
@@ -136846,7 +136846,7 @@ version 75 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -137193,7 +137193,7 @@ version 74 {
         // offset 0x3f0, size 0x38
         intstat time_played_alive;
         // offset 0x428, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x460, size 0x38
         intstat time_played_total;
         // offset 0x498, size 0x38
@@ -137269,7 +137269,7 @@ version 74 {
         // offset 0xc40, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xc78, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xcb0, size 0x38
         intstat challengexp;
         // offset 0xce8, size 0x38
@@ -137277,7 +137277,7 @@ version 74 {
         // offset 0xd20, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xd58, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xd90, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xdc8, size 0x38
@@ -137305,7 +137305,7 @@ version 74 {
         // offset 0x1030, size 0x38
         intstat kills_avenged;
         // offset 0x1068, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x10a0, size 0x38
         intstat deaths;
         // offset 0x10d8, size 0x38
@@ -137355,7 +137355,7 @@ version 74 {
         // offset 0x1578, size 0x38
         intstat total_shots;
         // offset 0x15b0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x15e8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1620, size 0x38
@@ -137391,9 +137391,9 @@ version 74 {
         // offset 0x1938, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1970, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x19a8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x19e0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1a18, size 0x38
@@ -137431,7 +137431,7 @@ version 74 {
         // offset 0x26c0, size 0x38
         intstat wins_without_down;
         // offset 0x26f8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -137896,7 +137896,7 @@ version 74 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_57d9e98fa3f08f76, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         prt_wz_richtofen, // 0x17,
@@ -137956,7 +137956,7 @@ version 74 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -138303,7 +138303,7 @@ version 73 {
         // offset 0x3f0, size 0x38
         intstat time_played_alive;
         // offset 0x428, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x460, size 0x38
         intstat time_played_total;
         // offset 0x498, size 0x38
@@ -138379,7 +138379,7 @@ version 73 {
         // offset 0xc40, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xc78, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xcb0, size 0x38
         intstat challengexp;
         // offset 0xce8, size 0x38
@@ -138387,7 +138387,7 @@ version 73 {
         // offset 0xd20, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xd58, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xd90, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xdc8, size 0x38
@@ -138415,7 +138415,7 @@ version 73 {
         // offset 0x1030, size 0x38
         intstat kills_avenged;
         // offset 0x1068, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x10a0, size 0x38
         intstat deaths;
         // offset 0x10d8, size 0x38
@@ -138465,7 +138465,7 @@ version 73 {
         // offset 0x1578, size 0x38
         intstat total_shots;
         // offset 0x15b0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x15e8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1620, size 0x38
@@ -138501,9 +138501,9 @@ version 73 {
         // offset 0x1938, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1970, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x19a8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x19e0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1a18, size 0x38
@@ -138541,7 +138541,7 @@ version 73 {
         // offset 0x26c0, size 0x38
         intstat wins_without_down;
         // offset 0x26f8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -139006,7 +139006,7 @@ version 73 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_57d9e98fa3f08f76, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         prt_wz_richtofen, // 0x17,
@@ -139066,7 +139066,7 @@ version 73 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -139411,7 +139411,7 @@ version 72 {
         // offset 0x3f0, size 0x38
         intstat time_played_alive;
         // offset 0x428, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x460, size 0x38
         intstat time_played_total;
         // offset 0x498, size 0x38
@@ -139487,7 +139487,7 @@ version 72 {
         // offset 0xc40, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xc78, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xcb0, size 0x38
         intstat challengexp;
         // offset 0xce8, size 0x38
@@ -139495,7 +139495,7 @@ version 72 {
         // offset 0xd20, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xd58, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xd90, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xdc8, size 0x38
@@ -139523,7 +139523,7 @@ version 72 {
         // offset 0x1030, size 0x38
         intstat kills_avenged;
         // offset 0x1068, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x10a0, size 0x38
         intstat deaths;
         // offset 0x10d8, size 0x38
@@ -139573,7 +139573,7 @@ version 72 {
         // offset 0x1578, size 0x38
         intstat total_shots;
         // offset 0x15b0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x15e8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1620, size 0x38
@@ -139609,9 +139609,9 @@ version 72 {
         // offset 0x1938, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1970, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x19a8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x19e0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1a18, size 0x38
@@ -139649,7 +139649,7 @@ version 72 {
         // offset 0x26c0, size 0x38
         intstat wins_without_down;
         // offset 0x26f8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -140117,7 +140117,7 @@ version 72 {
         prt_wz_stanton, // 0x14,
         hash_57d9e98fa3f08f76, // 0x15,
         prt_wz_misty, // 0x16,
-        hash_62361c68e083d401, // 0x17,
+        prt_wz_technomancer, // 0x17,
         prt_wz_mercenary, // 0x18,
         prt_wz_scarlett_dlc0, // 0x19,
         prt_wz_richtofen, // 0x1a,
@@ -140177,7 +140177,7 @@ version 72 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -140522,7 +140522,7 @@ version 71 {
         // offset 0x3f0, size 0x38
         intstat time_played_alive;
         // offset 0x428, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x460, size 0x38
         intstat time_played_total;
         // offset 0x498, size 0x38
@@ -140598,7 +140598,7 @@ version 71 {
         // offset 0xc40, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xc78, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xcb0, size 0x38
         intstat challengexp;
         // offset 0xce8, size 0x38
@@ -140606,7 +140606,7 @@ version 71 {
         // offset 0xd20, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xd58, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xd90, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xdc8, size 0x38
@@ -140634,7 +140634,7 @@ version 71 {
         // offset 0x1030, size 0x38
         intstat kills_avenged;
         // offset 0x1068, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x10a0, size 0x38
         intstat deaths;
         // offset 0x10d8, size 0x38
@@ -140684,7 +140684,7 @@ version 71 {
         // offset 0x1578, size 0x38
         intstat total_shots;
         // offset 0x15b0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x15e8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1620, size 0x38
@@ -140720,9 +140720,9 @@ version 71 {
         // offset 0x1938, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1970, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x19a8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x19e0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1a18, size 0x38
@@ -140760,7 +140760,7 @@ version 71 {
         // offset 0x26c0, size 0x38
         intstat wins_without_down;
         // offset 0x26f8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -141225,7 +141225,7 @@ version 71 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_57d9e98fa3f08f76, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         prt_wz_richtofen, // 0x17,
@@ -141285,7 +141285,7 @@ version 71 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -141630,7 +141630,7 @@ version 70 {
         // offset 0x3f0, size 0x38
         intstat time_played_alive;
         // offset 0x428, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x460, size 0x38
         intstat time_played_total;
         // offset 0x498, size 0x38
@@ -141706,7 +141706,7 @@ version 70 {
         // offset 0xc40, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xc78, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xcb0, size 0x38
         intstat challengexp;
         // offset 0xce8, size 0x38
@@ -141714,7 +141714,7 @@ version 70 {
         // offset 0xd20, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xd58, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xd90, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xdc8, size 0x38
@@ -141742,7 +141742,7 @@ version 70 {
         // offset 0x1030, size 0x38
         intstat kills_avenged;
         // offset 0x1068, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x10a0, size 0x38
         intstat deaths;
         // offset 0x10d8, size 0x38
@@ -141792,7 +141792,7 @@ version 70 {
         // offset 0x1578, size 0x38
         intstat total_shots;
         // offset 0x15b0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x15e8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1620, size 0x38
@@ -141828,9 +141828,9 @@ version 70 {
         // offset 0x1938, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1970, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x19a8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x19e0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1a18, size 0x38
@@ -141868,7 +141868,7 @@ version 70 {
         // offset 0x26c0, size 0x38
         intstat wins_without_down;
         // offset 0x26f8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -142331,7 +142331,7 @@ version 70 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_57d9e98fa3f08f76, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         prt_wz_richtofen, // 0x17,
@@ -142391,7 +142391,7 @@ version 70 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -142736,7 +142736,7 @@ version 69 {
         // offset 0x3f0, size 0x38
         intstat time_played_alive;
         // offset 0x428, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x460, size 0x38
         intstat time_played_total;
         // offset 0x498, size 0x38
@@ -142812,7 +142812,7 @@ version 69 {
         // offset 0xc40, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xc78, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xcb0, size 0x38
         intstat challengexp;
         // offset 0xce8, size 0x38
@@ -142820,7 +142820,7 @@ version 69 {
         // offset 0xd20, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xd58, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xd90, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xdc8, size 0x38
@@ -142848,7 +142848,7 @@ version 69 {
         // offset 0x1030, size 0x38
         intstat kills_avenged;
         // offset 0x1068, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x10a0, size 0x38
         intstat deaths;
         // offset 0x10d8, size 0x38
@@ -142898,7 +142898,7 @@ version 69 {
         // offset 0x1578, size 0x38
         intstat total_shots;
         // offset 0x15b0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x15e8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1620, size 0x38
@@ -142934,9 +142934,9 @@ version 69 {
         // offset 0x1938, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1970, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x19a8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x19e0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1a18, size 0x38
@@ -142974,7 +142974,7 @@ version 69 {
         // offset 0x26c0, size 0x38
         intstat wins_without_down;
         // offset 0x26f8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -143430,7 +143430,7 @@ version 69 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_57d9e98fa3f08f76, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         prt_wz_richtofen, // 0x17,
@@ -143490,7 +143490,7 @@ version 69 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -143835,7 +143835,7 @@ version 68 {
         // offset 0x3f0, size 0x38
         intstat time_played_alive;
         // offset 0x428, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x460, size 0x38
         intstat time_played_total;
         // offset 0x498, size 0x38
@@ -143911,7 +143911,7 @@ version 68 {
         // offset 0xc40, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xc78, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xcb0, size 0x38
         intstat challengexp;
         // offset 0xce8, size 0x38
@@ -143919,7 +143919,7 @@ version 68 {
         // offset 0xd20, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xd58, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xd90, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xdc8, size 0x38
@@ -143947,7 +143947,7 @@ version 68 {
         // offset 0x1030, size 0x38
         intstat kills_avenged;
         // offset 0x1068, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x10a0, size 0x38
         intstat deaths;
         // offset 0x10d8, size 0x38
@@ -143997,7 +143997,7 @@ version 68 {
         // offset 0x1578, size 0x38
         intstat total_shots;
         // offset 0x15b0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x15e8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1620, size 0x38
@@ -144033,9 +144033,9 @@ version 68 {
         // offset 0x1938, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1970, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x19a8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x19e0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1a18, size 0x38
@@ -144073,7 +144073,7 @@ version 68 {
         // offset 0x26c0, size 0x38
         intstat wins_without_down;
         // offset 0x26f8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -144527,7 +144527,7 @@ version 68 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_57d9e98fa3f08f76, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         prt_wz_richtofen, // 0x17,
@@ -144587,7 +144587,7 @@ version 68 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -144932,7 +144932,7 @@ version 67 {
         // offset 0x3f0, size 0x38
         intstat time_played_alive;
         // offset 0x428, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x460, size 0x38
         intstat time_played_total;
         // offset 0x498, size 0x38
@@ -145008,7 +145008,7 @@ version 67 {
         // offset 0xc40, size 0x38
         intstat hash_154d42f200303577;
         // offset 0xc78, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xcb0, size 0x38
         intstat challengexp;
         // offset 0xce8, size 0x38
@@ -145016,7 +145016,7 @@ version 67 {
         // offset 0xd20, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xd58, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xd90, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xdc8, size 0x38
@@ -145044,7 +145044,7 @@ version 67 {
         // offset 0x1030, size 0x38
         intstat kills_avenged;
         // offset 0x1068, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0x10a0, size 0x38
         intstat deaths;
         // offset 0x10d8, size 0x38
@@ -145094,7 +145094,7 @@ version 67 {
         // offset 0x1578, size 0x38
         intstat total_shots;
         // offset 0x15b0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x15e8, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1620, size 0x38
@@ -145130,9 +145130,9 @@ version 67 {
         // offset 0x1938, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1970, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x19a8, size 0x38
-        intstat hash_44caad08afb32e51;
+        intstat time_outside_circle;
         // offset 0x19e0, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1a18, size 0x38
@@ -145170,7 +145170,7 @@ version 67 {
         // offset 0x26c0, size 0x38
         intstat wins_without_down;
         // offset 0x26f8, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -145624,7 +145624,7 @@ version 67 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_57d9e98fa3f08f76, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         prt_wz_richtofen, // 0x17,
@@ -145684,7 +145684,7 @@ version 67 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -146017,7 +146017,7 @@ version 66 {
         // offset 0x3f0, size 0x38
         intstat time_played_alive;
         // offset 0x428, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x460, size 0x38
         intstat time_played_total;
         // offset 0x498, size 0x38
@@ -146087,7 +146087,7 @@ version 66 {
         // offset 0xb98, size 0x38
         intstat kills_after_damage_unarmed;
         // offset 0xbd0, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xc08, size 0x38
         intstat challengexp;
         // offset 0xc40, size 0x38
@@ -146095,7 +146095,7 @@ version 66 {
         // offset 0xc78, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xcb0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xce8, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xd20, size 0x38
@@ -146123,7 +146123,7 @@ version 66 {
         // offset 0xf88, size 0x38
         intstat kills_avenged;
         // offset 0xfc0, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xff8, size 0x38
         intstat deaths;
         // offset 0x1030, size 0x38
@@ -146173,7 +146173,7 @@ version 66 {
         // offset 0x14d0, size 0x38
         intstat total_shots;
         // offset 0x1508, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1540, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1578, size 0x38
@@ -146209,7 +146209,7 @@ version 66 {
         // offset 0x1890, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x18c8, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1900, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1938, size 0x38
@@ -146247,7 +146247,7 @@ version 66 {
         // offset 0x25e0, size 0x38
         intstat wins_without_down;
         // offset 0x2618, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -146701,7 +146701,7 @@ version 66 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_57d9e98fa3f08f76, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         prt_wz_richtofen, // 0x17,
@@ -146761,7 +146761,7 @@ version 66 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -147092,7 +147092,7 @@ version 65 {
         // offset 0x3b8, size 0x38
         intstat time_played_alive;
         // offset 0x3f0, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x428, size 0x38
         intstat time_played_total;
         // offset 0x460, size 0x38
@@ -147162,7 +147162,7 @@ version 65 {
         // offset 0xb60, size 0x38
         intstat kills_after_damage_unarmed;
         // offset 0xb98, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xbd0, size 0x38
         intstat challengexp;
         // offset 0xc08, size 0x38
@@ -147170,7 +147170,7 @@ version 65 {
         // offset 0xc40, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xc78, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xcb0, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xce8, size 0x38
@@ -147198,7 +147198,7 @@ version 65 {
         // offset 0xf50, size 0x38
         intstat kills_avenged;
         // offset 0xf88, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xfc0, size 0x38
         intstat deaths;
         // offset 0xff8, size 0x38
@@ -147246,7 +147246,7 @@ version 65 {
         // offset 0x1460, size 0x38
         intstat total_shots;
         // offset 0x1498, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x14d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1508, size 0x38
@@ -147280,7 +147280,7 @@ version 65 {
         // offset 0x17e8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1820, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1858, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1890, size 0x38
@@ -147318,7 +147318,7 @@ version 65 {
         // offset 0x2538, size 0x38
         intstat wins_without_down;
         // offset 0x2570, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -147772,7 +147772,7 @@ version 65 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_57d9e98fa3f08f76, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         prt_wz_richtofen, // 0x17,
@@ -147832,7 +147832,7 @@ version 65 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -148163,7 +148163,7 @@ version 64 {
         // offset 0x3b8, size 0x38
         intstat time_played_alive;
         // offset 0x3f0, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x428, size 0x38
         intstat time_played_total;
         // offset 0x460, size 0x38
@@ -148233,7 +148233,7 @@ version 64 {
         // offset 0xb60, size 0x38
         intstat kills_after_damage_unarmed;
         // offset 0xb98, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xbd0, size 0x38
         intstat challengexp;
         // offset 0xc08, size 0x38
@@ -148241,7 +148241,7 @@ version 64 {
         // offset 0xc40, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xc78, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xcb0, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xce8, size 0x38
@@ -148269,7 +148269,7 @@ version 64 {
         // offset 0xf50, size 0x38
         intstat kills_avenged;
         // offset 0xf88, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xfc0, size 0x38
         intstat deaths;
         // offset 0xff8, size 0x38
@@ -148317,7 +148317,7 @@ version 64 {
         // offset 0x1460, size 0x38
         intstat total_shots;
         // offset 0x1498, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x14d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1508, size 0x38
@@ -148351,7 +148351,7 @@ version 64 {
         // offset 0x17e8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1820, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1858, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1890, size 0x38
@@ -148389,7 +148389,7 @@ version 64 {
         // offset 0x2538, size 0x38
         intstat wins_without_down;
         // offset 0x2570, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -148810,7 +148810,7 @@ version 64 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_57d9e98fa3f08f76, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         prt_wz_richtofen, // 0x17,
@@ -148870,7 +148870,7 @@ version 64 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -149201,7 +149201,7 @@ version 63 {
         // offset 0x3b8, size 0x38
         intstat time_played_alive;
         // offset 0x3f0, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x428, size 0x38
         intstat time_played_total;
         // offset 0x460, size 0x38
@@ -149271,7 +149271,7 @@ version 63 {
         // offset 0xb60, size 0x38
         intstat kills_after_damage_unarmed;
         // offset 0xb98, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xbd0, size 0x38
         intstat challengexp;
         // offset 0xc08, size 0x38
@@ -149279,7 +149279,7 @@ version 63 {
         // offset 0xc40, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xc78, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xcb0, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xce8, size 0x38
@@ -149307,7 +149307,7 @@ version 63 {
         // offset 0xf50, size 0x38
         intstat kills_avenged;
         // offset 0xf88, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xfc0, size 0x38
         intstat deaths;
         // offset 0xff8, size 0x38
@@ -149355,7 +149355,7 @@ version 63 {
         // offset 0x1460, size 0x38
         intstat total_shots;
         // offset 0x1498, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x14d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1508, size 0x38
@@ -149389,7 +149389,7 @@ version 63 {
         // offset 0x17e8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1820, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1858, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1890, size 0x38
@@ -149427,7 +149427,7 @@ version 63 {
         // offset 0x2538, size 0x38
         intstat wins_without_down;
         // offset 0x2570, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -149884,7 +149884,7 @@ version 63 {
         prt_wz_takeo_ofc, // 0x11,
         prt_wz_stanton, // 0x12,
         hash_57d9e98fa3f08f76, // 0x13,
-        hash_62361c68e083d401, // 0x14,
+        prt_wz_technomancer, // 0x14,
         prt_wz_mercenary, // 0x15,
         prt_wz_scarlett_dlc0, // 0x16,
         prt_wz_richtofen, // 0x17,
@@ -149944,7 +149944,7 @@ version 63 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -150275,7 +150275,7 @@ version 62 {
         // offset 0x3b8, size 0x38
         intstat time_played_alive;
         // offset 0x3f0, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x428, size 0x38
         intstat time_played_total;
         // offset 0x460, size 0x38
@@ -150345,7 +150345,7 @@ version 62 {
         // offset 0xb60, size 0x38
         intstat kills_after_damage_unarmed;
         // offset 0xb98, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xbd0, size 0x38
         intstat challengexp;
         // offset 0xc08, size 0x38
@@ -150353,7 +150353,7 @@ version 62 {
         // offset 0xc40, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xc78, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xcb0, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xce8, size 0x38
@@ -150381,7 +150381,7 @@ version 62 {
         // offset 0xf50, size 0x38
         intstat kills_avenged;
         // offset 0xf88, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xfc0, size 0x38
         intstat deaths;
         // offset 0xff8, size 0x38
@@ -150429,7 +150429,7 @@ version 62 {
         // offset 0x1460, size 0x38
         intstat total_shots;
         // offset 0x1498, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x14d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1508, size 0x38
@@ -150463,7 +150463,7 @@ version 62 {
         // offset 0x17e8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1820, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1858, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1890, size 0x38
@@ -150501,7 +150501,7 @@ version 62 {
         // offset 0x2538, size 0x38
         intstat wins_without_down;
         // offset 0x2570, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -150943,7 +150943,7 @@ version 62 {
         prt_wz_nikolai_ofc, // 0xd,
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
-        hash_62361c68e083d401, // 0x10,
+        prt_wz_technomancer, // 0x10,
         prt_wz_mercenary, // 0x11,
         prt_wz_scarlett_dlc0, // 0x12,
         prt_wz_richtofen, // 0x13,
@@ -151001,7 +151001,7 @@ version 62 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -151332,7 +151332,7 @@ version 61 {
         // offset 0x3b8, size 0x38
         intstat time_played_alive;
         // offset 0x3f0, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x428, size 0x38
         intstat time_played_total;
         // offset 0x460, size 0x38
@@ -151402,7 +151402,7 @@ version 61 {
         // offset 0xb60, size 0x38
         intstat kills_after_damage_unarmed;
         // offset 0xb98, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xbd0, size 0x38
         intstat challengexp;
         // offset 0xc08, size 0x38
@@ -151410,7 +151410,7 @@ version 61 {
         // offset 0xc40, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xc78, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xcb0, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xce8, size 0x38
@@ -151438,7 +151438,7 @@ version 61 {
         // offset 0xf50, size 0x38
         intstat kills_avenged;
         // offset 0xf88, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xfc0, size 0x38
         intstat deaths;
         // offset 0xff8, size 0x38
@@ -151486,7 +151486,7 @@ version 61 {
         // offset 0x1460, size 0x38
         intstat total_shots;
         // offset 0x1498, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x14d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1508, size 0x38
@@ -151520,7 +151520,7 @@ version 61 {
         // offset 0x17e8, size 0x38
         intstat tanbor_fudgely_interactions;
         // offset 0x1820, size 0x38
-        intstat hash_6429d1fccdef2c9;
+        intstat top_15_placement_team;
         // offset 0x1858, size 0x38
         intstat hash_7158067d85c1402a;
         // offset 0x1890, size 0x38
@@ -151558,7 +151558,7 @@ version 61 {
         // offset 0x2538, size 0x38
         intstat wins_without_down;
         // offset 0x2570, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -151998,7 +151998,7 @@ version 61 {
         prt_wz_nikolai_ofc, // 0xd,
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
-        hash_62361c68e083d401, // 0x10,
+        prt_wz_technomancer, // 0x10,
         prt_wz_mercenary, // 0x11,
         prt_wz_scarlett_dlc0, // 0x12,
         prt_wz_richtofen, // 0x13,
@@ -152056,7 +152056,7 @@ version 61 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -152387,7 +152387,7 @@ version 60 {
         // offset 0x3b8, size 0x38
         intstat time_played_alive;
         // offset 0x3f0, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x428, size 0x38
         intstat time_played_total;
         // offset 0x460, size 0x38
@@ -152457,7 +152457,7 @@ version 60 {
         // offset 0xb60, size 0x38
         intstat kills_after_damage_unarmed;
         // offset 0xb98, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xbd0, size 0x38
         intstat challengexp;
         // offset 0xc08, size 0x38
@@ -152465,7 +152465,7 @@ version 60 {
         // offset 0xc40, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xc78, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xcb0, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xce8, size 0x38
@@ -152493,7 +152493,7 @@ version 60 {
         // offset 0xf50, size 0x38
         intstat kills_avenged;
         // offset 0xf88, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xfc0, size 0x38
         intstat deaths;
         // offset 0xff8, size 0x38
@@ -152541,7 +152541,7 @@ version 60 {
         // offset 0x1460, size 0x38
         intstat total_shots;
         // offset 0x1498, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x14d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1508, size 0x38
@@ -152611,7 +152611,7 @@ version 60 {
         // offset 0x2500, size 0x38
         intstat wins_without_down;
         // offset 0x2538, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -153051,7 +153051,7 @@ version 60 {
         prt_wz_nikolai_ofc, // 0xd,
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
-        hash_62361c68e083d401, // 0x10,
+        prt_wz_technomancer, // 0x10,
         prt_wz_mercenary, // 0x11,
         prt_wz_scarlett_dlc0, // 0x12,
         prt_wz_richtofen, // 0x13,
@@ -153109,7 +153109,7 @@ version 60 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -153440,7 +153440,7 @@ version 59 {
         // offset 0x3b8, size 0x38
         intstat time_played_alive;
         // offset 0x3f0, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x428, size 0x38
         intstat time_played_total;
         // offset 0x460, size 0x38
@@ -153510,7 +153510,7 @@ version 59 {
         // offset 0xb60, size 0x38
         intstat kills_after_damage_unarmed;
         // offset 0xb98, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xbd0, size 0x38
         intstat challengexp;
         // offset 0xc08, size 0x38
@@ -153518,7 +153518,7 @@ version 59 {
         // offset 0xc40, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xc78, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xcb0, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xce8, size 0x38
@@ -153546,7 +153546,7 @@ version 59 {
         // offset 0xf50, size 0x38
         intstat kills_avenged;
         // offset 0xf88, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xfc0, size 0x38
         intstat deaths;
         // offset 0xff8, size 0x38
@@ -153594,7 +153594,7 @@ version 59 {
         // offset 0x1460, size 0x38
         intstat total_shots;
         // offset 0x1498, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x14d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1508, size 0x38
@@ -153664,7 +153664,7 @@ version 59 {
         // offset 0x2500, size 0x38
         intstat wins_without_down;
         // offset 0x2538, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -154104,7 +154104,7 @@ version 59 {
         prt_wz_nikolai_ofc, // 0xd,
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
-        hash_62361c68e083d401, // 0x10,
+        prt_wz_technomancer, // 0x10,
         prt_wz_mercenary, // 0x11,
         prt_wz_scarlett_dlc0, // 0x12,
         prt_wz_richtofen, // 0x13,
@@ -154162,7 +154162,7 @@ version 59 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -154489,7 +154489,7 @@ version 58 {
         // offset 0x3b8, size 0x38
         intstat time_played_alive;
         // offset 0x3f0, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x428, size 0x38
         intstat time_played_total;
         // offset 0x460, size 0x38
@@ -154559,7 +154559,7 @@ version 58 {
         // offset 0xb60, size 0x38
         intstat kills_after_damage_unarmed;
         // offset 0xb98, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xbd0, size 0x38
         intstat challengexp;
         // offset 0xc08, size 0x38
@@ -154567,7 +154567,7 @@ version 58 {
         // offset 0xc40, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xc78, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xcb0, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xce8, size 0x38
@@ -154595,7 +154595,7 @@ version 58 {
         // offset 0xf50, size 0x38
         intstat kills_avenged;
         // offset 0xf88, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xfc0, size 0x38
         intstat deaths;
         // offset 0xff8, size 0x38
@@ -154643,7 +154643,7 @@ version 58 {
         // offset 0x1460, size 0x38
         intstat total_shots;
         // offset 0x1498, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x14d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1508, size 0x38
@@ -154713,7 +154713,7 @@ version 58 {
         // offset 0x2500, size 0x38
         intstat wins_without_down;
         // offset 0x2538, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -155151,7 +155151,7 @@ version 58 {
         prt_wz_nikolai_ofc, // 0xd,
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
-        hash_62361c68e083d401, // 0x10,
+        prt_wz_technomancer, // 0x10,
         prt_wz_mercenary, // 0x11,
         prt_wz_scarlett_dlc0, // 0x12,
         prt_wz_richtofen, // 0x13,
@@ -155209,7 +155209,7 @@ version 58 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -155536,7 +155536,7 @@ version 57 {
         // offset 0x3b8, size 0x38
         intstat time_played_alive;
         // offset 0x3f0, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x428, size 0x38
         intstat time_played_total;
         // offset 0x460, size 0x38
@@ -155606,7 +155606,7 @@ version 57 {
         // offset 0xb60, size 0x38
         intstat kills_after_damage_unarmed;
         // offset 0xb98, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xbd0, size 0x38
         intstat challengexp;
         // offset 0xc08, size 0x38
@@ -155614,7 +155614,7 @@ version 57 {
         // offset 0xc40, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xc78, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xcb0, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xce8, size 0x38
@@ -155642,7 +155642,7 @@ version 57 {
         // offset 0xf50, size 0x38
         intstat kills_avenged;
         // offset 0xf88, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xfc0, size 0x38
         intstat deaths;
         // offset 0xff8, size 0x38
@@ -155690,7 +155690,7 @@ version 57 {
         // offset 0x1460, size 0x38
         intstat total_shots;
         // offset 0x1498, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x14d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1508, size 0x38
@@ -155760,7 +155760,7 @@ version 57 {
         // offset 0x2500, size 0x38
         intstat wins_without_down;
         // offset 0x2538, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -156194,7 +156194,7 @@ version 57 {
         prt_wz_nikolai_ofc, // 0xd,
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
-        hash_62361c68e083d401, // 0x10,
+        prt_wz_technomancer, // 0x10,
         prt_wz_mercenary, // 0x11,
         prt_wz_scarlett_dlc0, // 0x12,
         prt_wz_richtofen, // 0x13,
@@ -156252,7 +156252,7 @@ version 57 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -156579,7 +156579,7 @@ version 56 {
         // offset 0x3b8, size 0x38
         intstat time_played_alive;
         // offset 0x3f0, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x428, size 0x38
         intstat time_played_total;
         // offset 0x460, size 0x38
@@ -156649,7 +156649,7 @@ version 56 {
         // offset 0xb60, size 0x38
         intstat kills_after_damage_unarmed;
         // offset 0xb98, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xbd0, size 0x38
         intstat challengexp;
         // offset 0xc08, size 0x38
@@ -156657,7 +156657,7 @@ version 56 {
         // offset 0xc40, size 0x38
         intstat distance_traveled_vehicle_land_miles;
         // offset 0xc78, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xcb0, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xce8, size 0x38
@@ -156685,7 +156685,7 @@ version 56 {
         // offset 0xf50, size 0x38
         intstat kills_avenged;
         // offset 0xf88, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xfc0, size 0x38
         intstat deaths;
         // offset 0xff8, size 0x38
@@ -156733,7 +156733,7 @@ version 56 {
         // offset 0x1460, size 0x38
         intstat total_shots;
         // offset 0x1498, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x14d0, size 0x38
         intstat distance_traveled_vehicle_water_miles;
         // offset 0x1508, size 0x38
@@ -156803,7 +156803,7 @@ version 56 {
         // offset 0x2500, size 0x38
         intstat wins_without_down;
         // offset 0x2538, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 11 members 2 size 0x20
@@ -157237,7 +157237,7 @@ version 56 {
         prt_wz_nikolai_ofc, // 0xd,
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
-        hash_62361c68e083d401, // 0x10,
+        prt_wz_technomancer, // 0x10,
         prt_wz_mercenary, // 0x11,
         prt_wz_scarlett_dlc0, // 0x12,
         prt_wz_richtofen, // 0x13,
@@ -157295,7 +157295,7 @@ version 56 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -157606,7 +157606,7 @@ version 55 {
         // offset 0x3b8, size 0x38
         intstat time_played_alive;
         // offset 0x3f0, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x428, size 0x38
         intstat time_played_total;
         // offset 0x460, size 0x38
@@ -157676,13 +157676,13 @@ version 55 {
         // offset 0xb60, size 0x38
         intstat kills_after_damage_unarmed;
         // offset 0xb98, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xbd0, size 0x38
         intstat challengexp;
         // offset 0xc08, size 0x38
         intstat longest_firing_range_bullseye;
         // offset 0xc40, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xc78, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xcb0, size 0x38
@@ -157710,7 +157710,7 @@ version 55 {
         // offset 0xf18, size 0x38
         intstat kills_avenged;
         // offset 0xf50, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xf88, size 0x38
         intstat deaths;
         // offset 0xfc0, size 0x38
@@ -157756,7 +157756,7 @@ version 55 {
         // offset 0x13f0, size 0x38
         intstat total_shots;
         // offset 0x1428, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1460, size 0x38
         intstat offends;
         // offset 0x1498, size 0x38
@@ -157820,7 +157820,7 @@ version 55 {
         // offset 0x2418, size 0x38
         intstat wins_without_down;
         // offset 0x2450, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 10 members 2 size 0x20
@@ -158254,7 +158254,7 @@ version 55 {
         prt_wz_nikolai_ofc, // 0xd,
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
-        hash_62361c68e083d401, // 0x10,
+        prt_wz_technomancer, // 0x10,
         prt_wz_mercenary, // 0x11,
         prt_wz_scarlett_dlc0, // 0x12,
         prt_wz_richtofen, // 0x13,
@@ -158312,7 +158312,7 @@ version 55 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -158623,7 +158623,7 @@ version 54 {
         // offset 0x3b8, size 0x38
         intstat time_played_alive;
         // offset 0x3f0, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x428, size 0x38
         intstat time_played_total;
         // offset 0x460, size 0x38
@@ -158693,13 +158693,13 @@ version 54 {
         // offset 0xb60, size 0x38
         intstat kills_after_damage_unarmed;
         // offset 0xb98, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xbd0, size 0x38
         intstat challengexp;
         // offset 0xc08, size 0x38
         intstat longest_firing_range_bullseye;
         // offset 0xc40, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xc78, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xcb0, size 0x38
@@ -158727,7 +158727,7 @@ version 54 {
         // offset 0xf18, size 0x38
         intstat kills_avenged;
         // offset 0xf50, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xf88, size 0x38
         intstat deaths;
         // offset 0xfc0, size 0x38
@@ -158773,7 +158773,7 @@ version 54 {
         // offset 0x13f0, size 0x38
         intstat total_shots;
         // offset 0x1428, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1460, size 0x38
         intstat offends;
         // offset 0x1498, size 0x38
@@ -158837,7 +158837,7 @@ version 54 {
         // offset 0x2418, size 0x38
         intstat wins_without_down;
         // offset 0x2450, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 10 members 2 size 0x20
@@ -159265,7 +159265,7 @@ version 54 {
         prt_wz_nikolai_ofc, // 0xd,
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
-        hash_62361c68e083d401, // 0x10,
+        prt_wz_technomancer, // 0x10,
         prt_wz_mercenary, // 0x11,
         prt_wz_scarlett_dlc0, // 0x12,
         prt_wz_richtofen, // 0x13,
@@ -159323,7 +159323,7 @@ version 54 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -159634,7 +159634,7 @@ version 53 {
         // offset 0x3b8, size 0x38
         intstat time_played_alive;
         // offset 0x3f0, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x428, size 0x38
         intstat time_played_total;
         // offset 0x460, size 0x38
@@ -159704,11 +159704,11 @@ version 53 {
         // offset 0xb60, size 0x38
         intstat kills_after_damage_unarmed;
         // offset 0xb98, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xbd0, size 0x38
         intstat longest_firing_range_bullseye;
         // offset 0xc08, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xc40, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xc78, size 0x38
@@ -159736,7 +159736,7 @@ version 53 {
         // offset 0xee0, size 0x38
         intstat kills_avenged;
         // offset 0xf18, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xf50, size 0x38
         intstat deaths;
         // offset 0xf88, size 0x38
@@ -159782,7 +159782,7 @@ version 53 {
         // offset 0x13b8, size 0x38
         intstat total_shots;
         // offset 0x13f0, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1428, size 0x38
         intstat offends;
         // offset 0x1460, size 0x38
@@ -159846,7 +159846,7 @@ version 53 {
         // offset 0x23e0, size 0x38
         intstat wins_without_down;
         // offset 0x2418, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 10 members 2 size 0x20
@@ -160274,7 +160274,7 @@ version 53 {
         prt_wz_nikolai_ofc, // 0xd,
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
-        hash_62361c68e083d401, // 0x10,
+        prt_wz_technomancer, // 0x10,
         prt_wz_mercenary, // 0x11,
         prt_wz_scarlett_dlc0, // 0x12,
         prt_wz_richtofen, // 0x13,
@@ -160332,7 +160332,7 @@ version 53 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -160645,7 +160645,7 @@ version 52 {
         // offset 0x3f0, size 0x38
         intstat time_played_alive;
         // offset 0x428, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x460, size 0x38
         intstat time_played_total;
         // offset 0x498, size 0x38
@@ -160715,11 +160715,11 @@ version 52 {
         // offset 0xb98, size 0x38
         intstat kills_after_damage_unarmed;
         // offset 0xbd0, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xc08, size 0x38
         intstat longest_firing_range_bullseye;
         // offset 0xc40, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xc78, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xcb0, size 0x38
@@ -160747,7 +160747,7 @@ version 52 {
         // offset 0xf18, size 0x38
         intstat kills_avenged;
         // offset 0xf50, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xf88, size 0x38
         intstat deaths;
         // offset 0xfc0, size 0x38
@@ -160793,7 +160793,7 @@ version 52 {
         // offset 0x13f0, size 0x38
         intstat total_shots;
         // offset 0x1428, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1460, size 0x38
         intstat offends;
         // offset 0x1498, size 0x38
@@ -160857,7 +160857,7 @@ version 52 {
         // offset 0x2418, size 0x38
         intstat wins_without_down;
         // offset 0x2450, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 10 members 2 size 0x20
@@ -161274,7 +161274,7 @@ version 52 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -161587,7 +161587,7 @@ version 51 {
         // offset 0x3f0, size 0x38
         intstat time_played_alive;
         // offset 0x428, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x460, size 0x38
         intstat time_played_total;
         // offset 0x498, size 0x38
@@ -161657,11 +161657,11 @@ version 51 {
         // offset 0xb98, size 0x38
         intstat kills_after_damage_unarmed;
         // offset 0xbd0, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xc08, size 0x38
         intstat longest_firing_range_bullseye;
         // offset 0xc40, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xc78, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xcb0, size 0x38
@@ -161687,7 +161687,7 @@ version 51 {
         // offset 0xee0, size 0x38
         intstat kills_avenged;
         // offset 0xf18, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xf50, size 0x38
         intstat deaths;
         // offset 0xf88, size 0x38
@@ -161731,7 +161731,7 @@ version 51 {
         // offset 0x1380, size 0x38
         intstat total_shots;
         // offset 0x13b8, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x13f0, size 0x38
         intstat offends;
         // offset 0x1428, size 0x38
@@ -161795,7 +161795,7 @@ version 51 {
         // offset 0x23a8, size 0x38
         intstat wins_without_down;
         // offset 0x23e0, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 10 members 2 size 0x20
@@ -162212,7 +162212,7 @@ version 51 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -162523,7 +162523,7 @@ version 50 {
         // offset 0x3b8, size 0x38
         intstat time_played_alive;
         // offset 0x3f0, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x428, size 0x38
         intstat time_played_total;
         // offset 0x460, size 0x38
@@ -162593,11 +162593,11 @@ version 50 {
         // offset 0xb60, size 0x38
         intstat kills_after_damage_unarmed;
         // offset 0xb98, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xbd0, size 0x38
         intstat longest_firing_range_bullseye;
         // offset 0xc08, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xc40, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xc78, size 0x38
@@ -162621,7 +162621,7 @@ version 50 {
         // offset 0xe70, size 0x38
         intstat kills_avenged;
         // offset 0xea8, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xee0, size 0x38
         intstat deaths;
         // offset 0xf18, size 0x38
@@ -162665,7 +162665,7 @@ version 50 {
         // offset 0x1310, size 0x38
         intstat total_shots;
         // offset 0x1348, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1380, size 0x38
         intstat offends;
         // offset 0x13b8, size 0x38
@@ -162729,7 +162729,7 @@ version 50 {
         // offset 0x2338, size 0x38
         intstat wins_without_down;
         // offset 0x2370, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 10 members 2 size 0x20
@@ -163146,7 +163146,7 @@ version 50 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -163457,7 +163457,7 @@ version 49 {
         // offset 0x3b8, size 0x38
         intstat time_played_alive;
         // offset 0x3f0, size 0x38
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x428, size 0x38
         intstat time_played_total;
         // offset 0x460, size 0x38
@@ -163525,11 +163525,11 @@ version 49 {
         // offset 0xb28, size 0x38
         intstat kills_after_damage_unarmed;
         // offset 0xb60, size 0x38
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0xb98, size 0x38
         intstat longest_firing_range_bullseye;
         // offset 0xbd0, size 0x38
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0xc08, size 0x38
         intstat hash_6e03ccc704762c8f;
         // offset 0xc40, size 0x38
@@ -163553,7 +163553,7 @@ version 49 {
         // offset 0xe38, size 0x38
         intstat kills_avenged;
         // offset 0xe70, size 0x38
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xea8, size 0x38
         intstat deaths;
         // offset 0xee0, size 0x38
@@ -163595,7 +163595,7 @@ version 49 {
         // offset 0x12a0, size 0x38
         intstat total_shots;
         // offset 0x12d8, size 0x38
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0x1310, size 0x38
         intstat offends;
         // offset 0x1348, size 0x38
@@ -163659,7 +163659,7 @@ version 49 {
         // offset 0x22c8, size 0x38
         intstat wins_without_down;
         // offset 0x2300, size 0x38
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 10 members 2 size 0x20
@@ -164066,7 +164066,7 @@ version 49 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -164439,7 +164439,7 @@ version 48 {
         // offset 0x2a0, size 0x30
         intstat time_played_alive;
         // offset 0x2d0, size 0x30
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x300, size 0x30
         intstat time_played_total;
         // offset 0x330, size 0x30
@@ -164507,11 +164507,11 @@ version 48 {
         // offset 0x900, size 0x30
         intstat kills_after_damage_unarmed;
         // offset 0x930, size 0x30
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0x960, size 0x30
         intstat longest_firing_range_bullseye;
         // offset 0x990, size 0x30
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x9c0, size 0x30
         intstat hash_6e03ccc704762c8f;
         // offset 0x9f0, size 0x30
@@ -164535,7 +164535,7 @@ version 48 {
         // offset 0xba0, size 0x30
         intstat kills_avenged;
         // offset 0xbd0, size 0x30
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xc00, size 0x30
         intstat deaths;
         // offset 0xc30, size 0x30
@@ -164571,7 +164571,7 @@ version 48 {
         // offset 0xed8, size 0x30
         intstat total_shots;
         // offset 0xf08, size 0x30
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0xf38, size 0x30
         intstat offends;
         // offset 0xf68, size 0x30
@@ -164635,7 +164635,7 @@ version 48 {
         // offset 0x1e08, size 0x30
         intstat wins_without_down;
         // offset 0x1e38, size 0x30
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -165042,7 +165042,7 @@ version 48 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -165415,7 +165415,7 @@ version 47 {
         // offset 0x2a0, size 0x30
         intstat time_played_alive;
         // offset 0x2d0, size 0x30
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x300, size 0x30
         intstat time_played_total;
         // offset 0x330, size 0x30
@@ -165481,11 +165481,11 @@ version 47 {
         // offset 0x8d0, size 0x30
         intstat kills_after_damage_unarmed;
         // offset 0x900, size 0x30
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0x930, size 0x30
         intstat longest_firing_range_bullseye;
         // offset 0x960, size 0x30
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x990, size 0x30
         intstat hash_6e03ccc704762c8f;
         // offset 0x9c0, size 0x30
@@ -165509,7 +165509,7 @@ version 47 {
         // offset 0xb70, size 0x30
         intstat kills_avenged;
         // offset 0xba0, size 0x30
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xbd0, size 0x30
         intstat deaths;
         // offset 0xc00, size 0x30
@@ -165545,7 +165545,7 @@ version 47 {
         // offset 0xea8, size 0x30
         intstat total_shots;
         // offset 0xed8, size 0x30
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0xf08, size 0x30
         intstat offends;
         // offset 0xf38, size 0x30
@@ -165607,7 +165607,7 @@ version 47 {
         // offset 0x1da8, size 0x30
         intstat wins_without_down;
         // offset 0x1dd8, size 0x30
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -166014,7 +166014,7 @@ version 47 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -166387,7 +166387,7 @@ version 46 {
         // offset 0x2a0, size 0x30
         intstat time_played_alive;
         // offset 0x2d0, size 0x30
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x300, size 0x30
         intstat time_played_total;
         // offset 0x330, size 0x30
@@ -166453,13 +166453,13 @@ version 46 {
         // offset 0x8d0, size 0x30
         intstat kills_after_damage_unarmed;
         // offset 0x900, size 0x30
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0x930, size 0x30
         intstat hash_26e99434d143612d;
         // offset 0x960, size 0x30
         intstat longest_firing_range_bullseye;
         // offset 0x990, size 0x30
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x9c0, size 0x30
         intstat hash_6e03ccc704762c8f;
         // offset 0x9f0, size 0x30
@@ -166483,7 +166483,7 @@ version 46 {
         // offset 0xba0, size 0x30
         intstat kills_avenged;
         // offset 0xbd0, size 0x30
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xc00, size 0x30
         intstat deaths;
         // offset 0xc30, size 0x30
@@ -166517,7 +166517,7 @@ version 46 {
         // offset 0xea8, size 0x30
         intstat total_shots;
         // offset 0xed8, size 0x30
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0xf08, size 0x30
         intstat offends;
         // offset 0xf38, size 0x30
@@ -166579,7 +166579,7 @@ version 46 {
         // offset 0x1da8, size 0x30
         intstat wins_without_down;
         // offset 0x1dd8, size 0x30
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -166986,7 +166986,7 @@ version 46 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -167359,7 +167359,7 @@ version 45 {
         // offset 0x2a0, size 0x30
         intstat time_played_alive;
         // offset 0x2d0, size 0x30
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x300, size 0x30
         intstat time_played_total;
         // offset 0x330, size 0x30
@@ -167417,11 +167417,11 @@ version 45 {
         // offset 0x810, size 0x30
         intstat hits_headshot;
         // offset 0x840, size 0x30
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0x870, size 0x30
         intstat longest_firing_range_bullseye;
         // offset 0x8a0, size 0x30
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x8d0, size 0x30
         intstat hash_6e03ccc704762c8f;
         // offset 0x900, size 0x30
@@ -167445,7 +167445,7 @@ version 45 {
         // offset 0xab0, size 0x30
         intstat kills_avenged;
         // offset 0xae0, size 0x30
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xb10, size 0x30
         intstat deaths;
         // offset 0xb40, size 0x30
@@ -167477,7 +167477,7 @@ version 45 {
         // offset 0xd88, size 0x30
         intstat total_shots;
         // offset 0xdb8, size 0x30
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0xde8, size 0x30
         intstat offends;
         // offset 0xe18, size 0x30
@@ -167529,7 +167529,7 @@ version 45 {
         // offset 0x1b98, size 0x30
         intstat wins_without_down;
         // offset 0x1bc8, size 0x30
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -167936,7 +167936,7 @@ version 45 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -168309,7 +168309,7 @@ version 44 {
         // offset 0x2a0, size 0x30
         intstat time_played_alive;
         // offset 0x2d0, size 0x30
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x300, size 0x30
         intstat time_played_total;
         // offset 0x330, size 0x30
@@ -168367,11 +168367,11 @@ version 44 {
         // offset 0x810, size 0x30
         intstat hits_headshot;
         // offset 0x840, size 0x30
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0x870, size 0x30
         intstat longest_firing_range_bullseye;
         // offset 0x8a0, size 0x30
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x8d0, size 0x30
         intstat hash_6e03ccc704762c8f;
         // offset 0x900, size 0x30
@@ -168395,7 +168395,7 @@ version 44 {
         // offset 0xab0, size 0x30
         intstat kills_avenged;
         // offset 0xae0, size 0x30
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xb10, size 0x30
         intstat deaths;
         // offset 0xb40, size 0x30
@@ -168427,7 +168427,7 @@ version 44 {
         // offset 0xd88, size 0x30
         intstat total_shots;
         // offset 0xdb8, size 0x30
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0xde8, size 0x30
         intstat offends;
         // offset 0xe18, size 0x30
@@ -168479,7 +168479,7 @@ version 44 {
         // offset 0x1b98, size 0x30
         intstat wins_without_down;
         // offset 0x1bc8, size 0x30
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -168886,7 +168886,7 @@ version 44 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -169258,7 +169258,7 @@ version 43 {
         // offset 0x2a0, size 0x30
         intstat time_played_alive;
         // offset 0x2d0, size 0x30
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x300, size 0x30
         intstat time_played_total;
         // offset 0x330, size 0x30
@@ -169316,11 +169316,11 @@ version 43 {
         // offset 0x810, size 0x30
         intstat hits_headshot;
         // offset 0x840, size 0x30
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0x870, size 0x30
         intstat longest_firing_range_bullseye;
         // offset 0x8a0, size 0x30
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x8d0, size 0x30
         intstat hash_6e03ccc704762c8f;
         // offset 0x900, size 0x30
@@ -169344,7 +169344,7 @@ version 43 {
         // offset 0xab0, size 0x30
         intstat kills_avenged;
         // offset 0xae0, size 0x30
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xb10, size 0x30
         intstat deaths;
         // offset 0xb40, size 0x30
@@ -169376,7 +169376,7 @@ version 43 {
         // offset 0xd88, size 0x30
         intstat total_shots;
         // offset 0xdb8, size 0x30
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0xde8, size 0x30
         intstat offends;
         // offset 0xe18, size 0x30
@@ -169428,7 +169428,7 @@ version 43 {
         // offset 0x1b98, size 0x30
         intstat wins_without_down;
         // offset 0x1bc8, size 0x30
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -169833,7 +169833,7 @@ version 43 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -170205,7 +170205,7 @@ version 42 {
         // offset 0x2a0, size 0x30
         intstat time_played_alive;
         // offset 0x2d0, size 0x30
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x300, size 0x30
         intstat time_played_total;
         // offset 0x330, size 0x30
@@ -170263,11 +170263,11 @@ version 42 {
         // offset 0x810, size 0x30
         intstat hits_headshot;
         // offset 0x840, size 0x30
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0x870, size 0x30
         intstat longest_firing_range_bullseye;
         // offset 0x8a0, size 0x30
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x8d0, size 0x30
         intstat hash_6e03ccc704762c8f;
         // offset 0x900, size 0x30
@@ -170289,7 +170289,7 @@ version 42 {
         // offset 0xa80, size 0x30
         intstat kills_avenged;
         // offset 0xab0, size 0x30
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xae0, size 0x30
         intstat deaths;
         // offset 0xb10, size 0x30
@@ -170321,7 +170321,7 @@ version 42 {
         // offset 0xd58, size 0x30
         intstat total_shots;
         // offset 0xd88, size 0x30
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0xdb8, size 0x30
         intstat offends;
         // offset 0xde8, size 0x30
@@ -170373,7 +170373,7 @@ version 42 {
         // offset 0x1b68, size 0x30
         intstat wins_without_down;
         // offset 0x1b98, size 0x30
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -170778,7 +170778,7 @@ version 42 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -171146,7 +171146,7 @@ version 41 {
         // offset 0x2a0, size 0x30
         intstat time_played_alive;
         // offset 0x2d0, size 0x30
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x300, size 0x30
         intstat time_played_total;
         // offset 0x330, size 0x30
@@ -171204,11 +171204,11 @@ version 41 {
         // offset 0x810, size 0x30
         intstat hits_headshot;
         // offset 0x840, size 0x30
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0x870, size 0x30
         intstat longest_firing_range_bullseye;
         // offset 0x8a0, size 0x30
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x8d0, size 0x30
         intstat hash_6e03ccc704762c8f;
         // offset 0x900, size 0x30
@@ -171230,7 +171230,7 @@ version 41 {
         // offset 0xa80, size 0x30
         intstat kills_avenged;
         // offset 0xab0, size 0x30
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xae0, size 0x30
         intstat deaths;
         // offset 0xb10, size 0x30
@@ -171262,7 +171262,7 @@ version 41 {
         // offset 0xd58, size 0x30
         intstat total_shots;
         // offset 0xd88, size 0x30
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0xdb8, size 0x30
         intstat offends;
         // offset 0xde8, size 0x30
@@ -171314,7 +171314,7 @@ version 41 {
         // offset 0x1b68, size 0x30
         intstat wins_without_down;
         // offset 0x1b98, size 0x30
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -171719,7 +171719,7 @@ version 41 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -172087,7 +172087,7 @@ version 40 {
         // offset 0x2a0, size 0x30
         intstat time_played_alive;
         // offset 0x2d0, size 0x30
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x300, size 0x30
         intstat time_played_total;
         // offset 0x330, size 0x30
@@ -172145,11 +172145,11 @@ version 40 {
         // offset 0x810, size 0x30
         intstat hits_headshot;
         // offset 0x840, size 0x30
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0x870, size 0x30
         intstat longest_firing_range_bullseye;
         // offset 0x8a0, size 0x30
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x8d0, size 0x30
         intstat hash_6e03ccc704762c8f;
         // offset 0x900, size 0x30
@@ -172171,7 +172171,7 @@ version 40 {
         // offset 0xa80, size 0x30
         intstat kills_avenged;
         // offset 0xab0, size 0x30
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xae0, size 0x30
         intstat deaths;
         // offset 0xb10, size 0x30
@@ -172203,7 +172203,7 @@ version 40 {
         // offset 0xd58, size 0x30
         intstat total_shots;
         // offset 0xd88, size 0x30
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0xdb8, size 0x30
         intstat offends;
         // offset 0xde8, size 0x30
@@ -172253,7 +172253,7 @@ version 40 {
         // offset 0x1b38, size 0x30
         intstat wins_without_down;
         // offset 0x1b68, size 0x30
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -172658,7 +172658,7 @@ version 40 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -173026,7 +173026,7 @@ version 39 {
         // offset 0x2a0, size 0x30
         intstat time_played_alive;
         // offset 0x2d0, size 0x30
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x300, size 0x30
         intstat time_played_total;
         // offset 0x330, size 0x30
@@ -173082,11 +173082,11 @@ version 39 {
         // offset 0x7e0, size 0x30
         intstat hash_525930f2f981aaa9;
         // offset 0x810, size 0x30
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0x840, size 0x30
         intstat longest_firing_range_bullseye;
         // offset 0x870, size 0x30
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x8a0, size 0x30
         intstat hash_6e03ccc704762c8f;
         // offset 0x8d0, size 0x30
@@ -173108,7 +173108,7 @@ version 39 {
         // offset 0xa50, size 0x30
         intstat kills_avenged;
         // offset 0xa80, size 0x30
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xab0, size 0x30
         intstat deaths;
         // offset 0xae0, size 0x30
@@ -173138,7 +173138,7 @@ version 39 {
         // offset 0xcf8, size 0x30
         intstat total_shots;
         // offset 0xd28, size 0x30
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0xd58, size 0x30
         intstat offends;
         // offset 0xd88, size 0x30
@@ -173188,7 +173188,7 @@ version 39 {
         // offset 0x1ad8, size 0x30
         intstat wins_without_down;
         // offset 0x1b08, size 0x30
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -173593,7 +173593,7 @@ version 39 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -173955,7 +173955,7 @@ version 38 {
         // offset 0x2a0, size 0x30
         intstat time_played_alive;
         // offset 0x2d0, size 0x30
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x300, size 0x30
         intstat time_played_total;
         // offset 0x330, size 0x30
@@ -174011,11 +174011,11 @@ version 38 {
         // offset 0x7e0, size 0x30
         intstat hash_525930f2f981aaa9;
         // offset 0x810, size 0x30
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0x840, size 0x30
         intstat longest_firing_range_bullseye;
         // offset 0x870, size 0x30
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x8a0, size 0x30
         intstat hash_6e03ccc704762c8f;
         // offset 0x8d0, size 0x30
@@ -174037,7 +174037,7 @@ version 38 {
         // offset 0xa50, size 0x30
         intstat kills_avenged;
         // offset 0xa80, size 0x30
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xab0, size 0x30
         intstat deaths;
         // offset 0xae0, size 0x30
@@ -174067,7 +174067,7 @@ version 38 {
         // offset 0xcf8, size 0x30
         intstat total_shots;
         // offset 0xd28, size 0x30
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0xd58, size 0x30
         intstat offends;
         // offset 0xd88, size 0x30
@@ -174117,7 +174117,7 @@ version 38 {
         // offset 0x1ad8, size 0x30
         intstat wins_without_down;
         // offset 0x1b08, size 0x30
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -174522,7 +174522,7 @@ version 38 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -174882,7 +174882,7 @@ version 37 {
         // offset 0x2a0, size 0x30
         intstat time_played_alive;
         // offset 0x2d0, size 0x30
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x300, size 0x30
         intstat time_played_total;
         // offset 0x330, size 0x30
@@ -174938,11 +174938,11 @@ version 37 {
         // offset 0x7e0, size 0x30
         intstat hash_525930f2f981aaa9;
         // offset 0x810, size 0x30
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0x840, size 0x30
         intstat longest_firing_range_bullseye;
         // offset 0x870, size 0x30
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x8a0, size 0x30
         intstat hash_6e03ccc704762c8f;
         // offset 0x8d0, size 0x30
@@ -174964,7 +174964,7 @@ version 37 {
         // offset 0xa50, size 0x30
         intstat kills_avenged;
         // offset 0xa80, size 0x30
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xab0, size 0x30
         intstat deaths;
         // offset 0xae0, size 0x30
@@ -174994,7 +174994,7 @@ version 37 {
         // offset 0xcf8, size 0x30
         intstat total_shots;
         // offset 0xd28, size 0x30
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0xd58, size 0x30
         intstat offends;
         // offset 0xd88, size 0x30
@@ -175044,7 +175044,7 @@ version 37 {
         // offset 0x1a88, size 0x30
         intstat wins_without_down;
         // offset 0x1ab8, size 0x30
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -175447,7 +175447,7 @@ version 37 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -175807,7 +175807,7 @@ version 36 {
         // offset 0x2a0, size 0x30
         intstat time_played_alive;
         // offset 0x2d0, size 0x30
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x300, size 0x30
         intstat time_played_total;
         // offset 0x330, size 0x30
@@ -175863,11 +175863,11 @@ version 36 {
         // offset 0x7e0, size 0x30
         intstat hash_525930f2f981aaa9;
         // offset 0x810, size 0x30
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0x840, size 0x30
         intstat longest_firing_range_bullseye;
         // offset 0x870, size 0x30
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x8a0, size 0x30
         intstat hash_6e03ccc704762c8f;
         // offset 0x8d0, size 0x30
@@ -175889,7 +175889,7 @@ version 36 {
         // offset 0xa50, size 0x30
         intstat kills_avenged;
         // offset 0xa80, size 0x30
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xab0, size 0x30
         intstat deaths;
         // offset 0xae0, size 0x30
@@ -175919,7 +175919,7 @@ version 36 {
         // offset 0xcf8, size 0x30
         intstat total_shots;
         // offset 0xd28, size 0x30
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0xd58, size 0x30
         intstat offends;
         // offset 0xd88, size 0x30
@@ -175969,7 +175969,7 @@ version 36 {
         // offset 0x1a88, size 0x30
         intstat wins_without_down;
         // offset 0x1ab8, size 0x30
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -176371,7 +176371,7 @@ version 36 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -176731,7 +176731,7 @@ version 35 {
         // offset 0x2a0, size 0x30
         intstat time_played_alive;
         // offset 0x2d0, size 0x30
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x300, size 0x30
         intstat time_played_total;
         // offset 0x330, size 0x30
@@ -176785,11 +176785,11 @@ version 35 {
         // offset 0x7b0, size 0x30
         intstat hash_525930f2f981aaa9;
         // offset 0x7e0, size 0x30
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0x810, size 0x30
         intstat longest_firing_range_bullseye;
         // offset 0x840, size 0x30
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x870, size 0x30
         intstat hash_6e03ccc704762c8f;
         // offset 0x8a0, size 0x30
@@ -176811,7 +176811,7 @@ version 35 {
         // offset 0xa20, size 0x30
         intstat kills_avenged;
         // offset 0xa50, size 0x30
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xa80, size 0x30
         intstat deaths;
         // offset 0xab0, size 0x30
@@ -176841,7 +176841,7 @@ version 35 {
         // offset 0xcc8, size 0x30
         intstat total_shots;
         // offset 0xcf8, size 0x30
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0xd28, size 0x30
         intstat offends;
         // offset 0xd58, size 0x30
@@ -176893,7 +176893,7 @@ version 35 {
         // offset 0x1a88, size 0x30
         intstat wins_without_down;
         // offset 0x1ab8, size 0x30
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -177295,7 +177295,7 @@ version 35 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -177655,7 +177655,7 @@ version 34 {
         // offset 0x2a0, size 0x30
         intstat time_played_alive;
         // offset 0x2d0, size 0x30
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x300, size 0x30
         intstat time_played_total;
         // offset 0x330, size 0x30
@@ -177709,11 +177709,11 @@ version 34 {
         // offset 0x7b0, size 0x30
         intstat hash_525930f2f981aaa9;
         // offset 0x7e0, size 0x30
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0x810, size 0x30
         intstat longest_firing_range_bullseye;
         // offset 0x840, size 0x30
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x870, size 0x30
         intstat hash_6e03ccc704762c8f;
         // offset 0x8a0, size 0x30
@@ -177735,7 +177735,7 @@ version 34 {
         // offset 0xa20, size 0x30
         intstat kills_avenged;
         // offset 0xa50, size 0x30
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xa80, size 0x30
         intstat deaths;
         // offset 0xab0, size 0x30
@@ -177765,7 +177765,7 @@ version 34 {
         // offset 0xcc8, size 0x30
         intstat total_shots;
         // offset 0xcf8, size 0x30
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0xd28, size 0x30
         intstat offends;
         // offset 0xd58, size 0x30
@@ -177817,7 +177817,7 @@ version 34 {
         // offset 0x1a88, size 0x30
         intstat wins_without_down;
         // offset 0x1ab8, size 0x30
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -178215,7 +178215,7 @@ version 34 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -178577,7 +178577,7 @@ version 33 {
         // offset 0x2d0, size 0x30
         intstat time_played_alive;
         // offset 0x300, size 0x30
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x330, size 0x30
         intstat time_played_total;
         // offset 0x360, size 0x30
@@ -178633,11 +178633,11 @@ version 33 {
         // offset 0x810, size 0x30
         intstat hash_525930f2f981aaa9;
         // offset 0x840, size 0x30
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0x870, size 0x30
         intstat longest_firing_range_bullseye;
         // offset 0x8a0, size 0x30
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x8d0, size 0x30
         intstat hash_6e03ccc704762c8f;
         // offset 0x900, size 0x30
@@ -178661,7 +178661,7 @@ version 33 {
         // offset 0xab0, size 0x30
         intstat hash_345d6d0bb2034e1d;
         // offset 0xae0, size 0x30
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xb10, size 0x30
         intstat deaths;
         // offset 0xb40, size 0x30
@@ -178685,7 +178685,7 @@ version 33 {
         // offset 0xcc8, size 0x30
         intstat total_shots;
         // offset 0xcf8, size 0x30
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0xd28, size 0x30
         intstat offends;
         // offset 0xd58, size 0x30
@@ -178737,7 +178737,7 @@ version 33 {
         // offset 0x1a88, size 0x30
         intstat wins_without_down;
         // offset 0x1ab8, size 0x30
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -179135,7 +179135,7 @@ version 33 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -179497,7 +179497,7 @@ version 32 {
         // offset 0x2d0, size 0x30
         intstat time_played_alive;
         // offset 0x300, size 0x30
-        intstat hash_5387d5e6f15c6b55;
+        intstat top_5_avenger;
         // offset 0x330, size 0x30
         intstat time_played_total;
         // offset 0x360, size 0x30
@@ -179549,11 +179549,11 @@ version 32 {
         // offset 0x7b0, size 0x30
         intstat hash_525930f2f981aaa9;
         // offset 0x7e0, size 0x30
-        intstat hash_5e9a745460a10f80;
+        intstat top_5_placement_team;
         // offset 0x810, size 0x30
         intstat longest_firing_range_bullseye;
         // offset 0x840, size 0x30
-        intstat hash_7b8d2c77874a1c24;
+        intstat top_10_placement_team;
         // offset 0x870, size 0x30
         intstat hash_6e03ccc704762c8f;
         // offset 0x8a0, size 0x30
@@ -179577,7 +179577,7 @@ version 32 {
         // offset 0xa50, size 0x30
         intstat hash_345d6d0bb2034e1d;
         // offset 0xa80, size 0x30
-        intstat hash_63307a0460c698ac;
+        intstat top_5_placement_player;
         // offset 0xab0, size 0x30
         intstat deaths;
         // offset 0xae0, size 0x30
@@ -179599,7 +179599,7 @@ version 32 {
         // offset 0xc38, size 0x30
         intstat total_shots;
         // offset 0xc68, size 0x30
-        intstat hash_6d5e162204f447f4;
+        intstat top_25_placement_player;
         // offset 0xc98, size 0x30
         intstat offends;
         // offset 0xcc8, size 0x30
@@ -179649,7 +179649,7 @@ version 32 {
         // offset 0x19c8, size 0x30
         intstat wins_without_down;
         // offset 0x19f8, size 0x30
-        intstat hash_25f4611fc9d40aa8;
+        intstat top_10_placement_player;
     };
 
     // idx 12 members 2 size 0x20
@@ -180047,7 +180047,7 @@ version 32 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -180883,7 +180883,7 @@ version 31 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -181715,7 +181715,7 @@ version 30 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -182548,7 +182548,7 @@ version 29 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -183376,7 +183376,7 @@ version 28 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -184202,7 +184202,7 @@ version 27 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -184909,7 +184909,7 @@ version 26 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -185592,7 +185592,7 @@ version 25 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -186259,7 +186259,7 @@ version 24 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -186904,7 +186904,7 @@ version 23 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -187545,7 +187545,7 @@ version 22 {
         prt_wz_takeo_ofc, // 0xe,
         prt_wz_stanton, // 0xf,
         hash_503737080f039330, // 0x10,
-        hash_62361c68e083d401, // 0x11,
+        prt_wz_technomancer, // 0x11,
         prt_wz_mercenary, // 0x12,
         prt_wz_scarlett_dlc0, // 0x13,
         hash_64c3f9cd66aa1d0d, // 0x14,
@@ -189124,7 +189124,7 @@ version 19 {
     enum wzitems {
         eq_tripwire, // 0x0,
         ability_smart_cover, // 0x1,
-        hash_5a7fd1af4a1d5c9, // 0x2,
+        null_offhand_hero_gadget, // 0x2,
         tr_midburst_t8, // 0x3,
         sniper_powersemi_t8, // 0x4,
         lmg_standard_t8_gold, // 0x5,
@@ -189145,7 +189145,7 @@ version 19 {
         pistol_standard_t8, // 0x14,
         null_offhand_secondary, // 0x15,
         gadget_health_regen, // 0x16,
-        hash_31be8125c7d0f273, // 0x17,
+        null_offhand_ultimate, // 0x17,
         null_offhand_primary, // 0x18,
         gadget_health_regen_large, // 0x19,
         pistol_revolver_t8, // 0x1a,
@@ -189732,7 +189732,7 @@ version 18 {
     enum wzitems {
         eq_tripwire, // 0x0,
         ability_smart_cover, // 0x1,
-        hash_5a7fd1af4a1d5c9, // 0x2,
+        null_offhand_hero_gadget, // 0x2,
         tr_midburst_t8, // 0x3,
         sniper_powersemi_t8, // 0x4,
         lmg_standard_t8_gold, // 0x5,
@@ -189753,7 +189753,7 @@ version 18 {
         pistol_standard_t8, // 0x14,
         null_offhand_secondary, // 0x15,
         gadget_health_regen, // 0x16,
-        hash_31be8125c7d0f273, // 0x17,
+        null_offhand_ultimate, // 0x17,
         null_offhand_primary, // 0x18,
         gadget_health_regen_large, // 0x19,
         pistol_revolver_t8, // 0x1a,
@@ -190320,7 +190320,7 @@ version 17 {
     enum wzitems {
         eq_tripwire, // 0x0,
         ability_smart_cover, // 0x1,
-        hash_5a7fd1af4a1d5c9, // 0x2,
+        null_offhand_hero_gadget, // 0x2,
         tr_midburst_t8, // 0x3,
         sniper_powersemi_t8, // 0x4,
         lmg_standard_t8_gold, // 0x5,
@@ -190341,7 +190341,7 @@ version 17 {
         pistol_standard_t8, // 0x14,
         null_offhand_secondary, // 0x15,
         gadget_health_regen, // 0x16,
-        hash_31be8125c7d0f273, // 0x17,
+        null_offhand_ultimate, // 0x17,
         null_offhand_primary, // 0x18,
         gadget_health_regen_large, // 0x19,
         pistol_revolver_t8, // 0x1a,
@@ -190920,7 +190920,7 @@ version 16 {
     enum wzitems {
         eq_tripwire, // 0x0,
         ability_smart_cover, // 0x1,
-        hash_5a7fd1af4a1d5c9, // 0x2,
+        null_offhand_hero_gadget, // 0x2,
         tr_midburst_t8, // 0x3,
         sniper_powersemi_t8, // 0x4,
         hash_fbd50963ccf562c, // 0x5,
@@ -190943,7 +190943,7 @@ version 16 {
         pistol_standard_t8, // 0x16,
         null_offhand_secondary, // 0x17,
         gadget_health_regen, // 0x18,
-        hash_31be8125c7d0f273, // 0x19,
+        null_offhand_ultimate, // 0x19,
         null_offhand_primary, // 0x1a,
         gadget_health_regen_large, // 0x1b,
         pistol_revolver_t8, // 0x1c,
@@ -191517,7 +191517,7 @@ version 15 {
     enum wzitems {
         eq_tripwire, // 0x0,
         ability_smart_cover, // 0x1,
-        hash_5a7fd1af4a1d5c9, // 0x2,
+        null_offhand_hero_gadget, // 0x2,
         tr_midburst_t8, // 0x3,
         sniper_powersemi_t8, // 0x4,
         hash_fbd50963ccf562c, // 0x5,
@@ -191539,7 +191539,7 @@ version 15 {
         pistol_standard_t8, // 0x15,
         null_offhand_secondary, // 0x16,
         gadget_health_regen, // 0x17,
-        hash_31be8125c7d0f273, // 0x18,
+        null_offhand_ultimate, // 0x18,
         null_offhand_primary, // 0x19,
         gadget_health_regen_large, // 0x1a,
         pistol_revolver_t8, // 0x1b,
@@ -192080,7 +192080,7 @@ version 14 {
     enum wzitems {
         eq_tripwire, // 0x0,
         ability_smart_cover, // 0x1,
-        hash_5a7fd1af4a1d5c9, // 0x2,
+        null_offhand_hero_gadget, // 0x2,
         tr_midburst_t8, // 0x3,
         sniper_powersemi_t8, // 0x4,
         hash_fbd50963ccf562c, // 0x5,
@@ -192102,7 +192102,7 @@ version 14 {
         pistol_standard_t8, // 0x15,
         null_offhand_secondary, // 0x16,
         gadget_health_regen, // 0x17,
-        hash_31be8125c7d0f273, // 0x18,
+        null_offhand_ultimate, // 0x18,
         null_offhand_primary, // 0x19,
         gadget_health_regen_large, // 0x1a,
         pistol_revolver_t8, // 0x1b,
@@ -192643,7 +192643,7 @@ version 13 {
     enum wzitems {
         eq_tripwire, // 0x0,
         ability_smart_cover, // 0x1,
-        hash_5a7fd1af4a1d5c9, // 0x2,
+        null_offhand_hero_gadget, // 0x2,
         tr_midburst_t8, // 0x3,
         sniper_powersemi_t8, // 0x4,
         hash_fbd50963ccf562c, // 0x5,
@@ -192665,7 +192665,7 @@ version 13 {
         pistol_standard_t8, // 0x15,
         null_offhand_secondary, // 0x16,
         gadget_health_regen, // 0x17,
-        hash_31be8125c7d0f273, // 0x18,
+        null_offhand_ultimate, // 0x18,
         null_offhand_primary, // 0x19,
         gadget_health_regen_large, // 0x1a,
         pistol_revolver_t8, // 0x1b,
@@ -193172,7 +193172,7 @@ version 12 {
     enum wzitems {
         eq_tripwire, // 0x0,
         ability_smart_cover, // 0x1,
-        hash_5a7fd1af4a1d5c9, // 0x2,
+        null_offhand_hero_gadget, // 0x2,
         tr_midburst_t8, // 0x3,
         sniper_powersemi_t8, // 0x4,
         hash_fbd50963ccf562c, // 0x5,
@@ -193194,7 +193194,7 @@ version 12 {
         pistol_standard_t8, // 0x15,
         null_offhand_secondary, // 0x16,
         gadget_health_regen, // 0x17,
-        hash_31be8125c7d0f273, // 0x18,
+        null_offhand_ultimate, // 0x18,
         null_offhand_primary, // 0x19,
         gadget_health_regen_large, // 0x1a,
         pistol_revolver_t8, // 0x1b,
@@ -193694,7 +193694,7 @@ version 11 {
     enum wzitems {
         eq_tripwire, // 0x0,
         ability_smart_cover, // 0x1,
-        hash_5a7fd1af4a1d5c9, // 0x2,
+        null_offhand_hero_gadget, // 0x2,
         tr_midburst_t8, // 0x3,
         sniper_powersemi_t8, // 0x4,
         hash_fbd50963ccf562c, // 0x5,
@@ -193716,7 +193716,7 @@ version 11 {
         pistol_standard_t8, // 0x15,
         null_offhand_secondary, // 0x16,
         gadget_health_regen, // 0x17,
-        hash_31be8125c7d0f273, // 0x18,
+        null_offhand_ultimate, // 0x18,
         null_offhand_primary, // 0x19,
         gadget_health_regen_large, // 0x1a,
         pistol_revolver_t8, // 0x1b,
@@ -194216,7 +194216,7 @@ version 10 {
     enum wzitems {
         eq_tripwire, // 0x0,
         ability_smart_cover, // 0x1,
-        hash_5a7fd1af4a1d5c9, // 0x2,
+        null_offhand_hero_gadget, // 0x2,
         tr_midburst_t8, // 0x3,
         sniper_powersemi_t8, // 0x4,
         hash_fbd50963ccf562c, // 0x5,
@@ -194238,7 +194238,7 @@ version 10 {
         pistol_standard_t8, // 0x15,
         null_offhand_secondary, // 0x16,
         gadget_health_regen, // 0x17,
-        hash_31be8125c7d0f273, // 0x18,
+        null_offhand_ultimate, // 0x18,
         null_offhand_primary, // 0x19,
         gadget_health_regen_large, // 0x1a,
         pistol_revolver_t8, // 0x1b,
@@ -194726,7 +194726,7 @@ version 9 {
     enum wzitems {
         eq_tripwire, // 0x0,
         ability_smart_cover, // 0x1,
-        hash_5a7fd1af4a1d5c9, // 0x2,
+        null_offhand_hero_gadget, // 0x2,
         tr_midburst_t8, // 0x3,
         sniper_powersemi_t8, // 0x4,
         hash_fbd50963ccf562c, // 0x5,
@@ -194748,7 +194748,7 @@ version 9 {
         pistol_standard_t8, // 0x15,
         null_offhand_secondary, // 0x16,
         gadget_health_regen, // 0x17,
-        hash_31be8125c7d0f273, // 0x18,
+        null_offhand_ultimate, // 0x18,
         null_offhand_primary, // 0x19,
         gadget_health_regen_large, // 0x1a,
         pistol_revolver_t8, // 0x1b,
@@ -195222,7 +195222,7 @@ version 8 {
     enum wzitems {
         eq_tripwire, // 0x0,
         ability_smart_cover, // 0x1,
-        hash_5a7fd1af4a1d5c9, // 0x2,
+        null_offhand_hero_gadget, // 0x2,
         tr_midburst_t8, // 0x3,
         sniper_powersemi_t8, // 0x4,
         hash_fbd50963ccf562c, // 0x5,
@@ -195244,7 +195244,7 @@ version 8 {
         pistol_standard_t8, // 0x15,
         null_offhand_secondary, // 0x16,
         gadget_health_regen, // 0x17,
-        hash_31be8125c7d0f273, // 0x18,
+        null_offhand_ultimate, // 0x18,
         null_offhand_primary, // 0x19,
         gadget_health_regen_large, // 0x1a,
         pistol_revolver_t8, // 0x1b,
@@ -195526,7 +195526,7 @@ version 7 {
     enum wzitems {
         eq_tripwire, // 0x0,
         ability_smart_cover, // 0x1,
-        hash_5a7fd1af4a1d5c9, // 0x2,
+        null_offhand_hero_gadget, // 0x2,
         tr_midburst_t8, // 0x3,
         sniper_powersemi_t8, // 0x4,
         hash_fbd50963ccf562c, // 0x5,
@@ -195548,7 +195548,7 @@ version 7 {
         pistol_standard_t8, // 0x15,
         null_offhand_secondary, // 0x16,
         gadget_health_regen, // 0x17,
-        hash_31be8125c7d0f273, // 0x18,
+        null_offhand_ultimate, // 0x18,
         null_offhand_primary, // 0x19,
         gadget_health_regen_large, // 0x1a,
         pistol_revolver_t8, // 0x1b,
@@ -195813,7 +195813,7 @@ version 6 {
     enum wzitems {
         eq_tripwire, // 0x0,
         ability_smart_cover, // 0x1,
-        hash_5a7fd1af4a1d5c9, // 0x2,
+        null_offhand_hero_gadget, // 0x2,
         tr_midburst_t8, // 0x3,
         sniper_powersemi_t8, // 0x4,
         hash_fbd50963ccf562c, // 0x5,
@@ -195835,7 +195835,7 @@ version 6 {
         pistol_standard_t8, // 0x15,
         null_offhand_secondary, // 0x16,
         gadget_health_regen, // 0x17,
-        hash_31be8125c7d0f273, // 0x18,
+        null_offhand_ultimate, // 0x18,
         null_offhand_primary, // 0x19,
         gadget_health_regen_large, // 0x1a,
         pistol_revolver_t8, // 0x1b,
@@ -196092,7 +196092,7 @@ version 5 {
     enum wzitems {
         eq_tripwire, // 0x0,
         ability_smart_cover, // 0x1,
-        hash_5a7fd1af4a1d5c9, // 0x2,
+        null_offhand_hero_gadget, // 0x2,
         tr_midburst_t8, // 0x3,
         sniper_powersemi_t8, // 0x4,
         hash_fbd50963ccf562c, // 0x5,
@@ -196114,7 +196114,7 @@ version 5 {
         pistol_standard_t8, // 0x15,
         null_offhand_secondary, // 0x16,
         gadget_health_regen, // 0x17,
-        hash_31be8125c7d0f273, // 0x18,
+        null_offhand_ultimate, // 0x18,
         null_offhand_primary, // 0x19,
         gadget_health_regen_large, // 0x1a,
         pistol_revolver_t8, // 0x1b,
@@ -196323,7 +196323,7 @@ version 4 {
     enum wzitems {
         eq_tripwire, // 0x0,
         ability_smart_cover, // 0x1,
-        hash_5a7fd1af4a1d5c9, // 0x2,
+        null_offhand_hero_gadget, // 0x2,
         tr_midburst_t8, // 0x3,
         sniper_powersemi_t8, // 0x4,
         hash_fbd50963ccf562c, // 0x5,
@@ -196345,7 +196345,7 @@ version 4 {
         pistol_standard_t8, // 0x15,
         null_offhand_secondary, // 0x16,
         gadget_health_regen, // 0x17,
-        hash_31be8125c7d0f273, // 0x18,
+        null_offhand_ultimate, // 0x18,
         null_offhand_primary, // 0x19,
         gadget_health_regen_large, // 0x1a,
         pistol_revolver_t8, // 0x1b,
@@ -196552,7 +196552,7 @@ version 3 {
     enum wzitems {
         eq_tripwire, // 0x0,
         ability_smart_cover, // 0x1,
-        hash_5a7fd1af4a1d5c9, // 0x2,
+        null_offhand_hero_gadget, // 0x2,
         tr_midburst_t8, // 0x3,
         sniper_powersemi_t8, // 0x4,
         hash_fbd50963ccf562c, // 0x5,
@@ -196574,7 +196574,7 @@ version 3 {
         pistol_standard_t8, // 0x15,
         null_offhand_secondary, // 0x16,
         gadget_health_regen, // 0x17,
-        hash_31be8125c7d0f273, // 0x18,
+        null_offhand_ultimate, // 0x18,
         null_offhand_primary, // 0x19,
         gadget_health_regen_large, // 0x1a,
         pistol_revolver_t8, // 0x1b,
@@ -196779,7 +196779,7 @@ version 2 {
     enum wzitems {
         eq_tripwire, // 0x0,
         ability_smart_cover, // 0x1,
-        hash_5a7fd1af4a1d5c9, // 0x2,
+        null_offhand_hero_gadget, // 0x2,
         eq_breachlauncher, // 0x3,
         tr_midburst_t8, // 0x4,
         sniper_powersemi_t8, // 0x5,
@@ -196804,7 +196804,7 @@ version 2 {
         pistol_standard_t8, // 0x18,
         null_offhand_secondary, // 0x19,
         gadget_health_regen, // 0x1a,
-        hash_31be8125c7d0f273, // 0x1b,
+        null_offhand_ultimate, // 0x1b,
         null_offhand_primary, // 0x1c,
         gadget_health_regen_large, // 0x1d,
         pistol_revolver_t8, // 0x1e,

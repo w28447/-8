@@ -4,13 +4,13 @@
             "hash_3963c3e923f20726:hash_826726a": "localized17#hash_3963c3e923f20726"
         }
     ],
-    "contracticon": "image#hash_58fad9d8c3565ebc",
+    "contracticon": "image#loot03_ui_icon_blackmarket_contracts_cop_epic2_seraph",
     "hash_d0100eab": 1,
     "relateditemname": "localized17#heroes/enforcer",
     "contracttitle": "localized17#hash_3963c3e923f20726",
     "name": "loot_contract_seraph_cop",
     "contractdescription": "localized17#hash_2b74684c4562d5ef",
     "white": "#white",
-    "hash_20768a52ba1603b4:hash_1c057e8c": "image#hash_20768a52ba1603b4",
+    "loot03_ui_icon_blackmarket_itemshop_cop_epic2_seraph:hash_1c057e8c": "image#loot03_ui_icon_blackmarket_itemshop_cop_epic2_seraph",
     "hash_6cd16258087119d6:hash_e08fc162": "localized17#hash_6cd16258087119d6"
 }

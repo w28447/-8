@@ -43,7 +43,7 @@ CoD.AARRewardBacker_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local TiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 20, 0 )
 	TiledBacking:setAlpha( 0.2 )
 	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
 	self:addElement( TiledBacking )

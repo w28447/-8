@@ -13,7 +13,7 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	
 	local BG = LUI.UIImage.new( 0, 0, -37.5, 152.5, 0.09, 0.09, -1.5, 18.5 )
 	BG:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	BG:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	BG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	BG:setShaderVector( 0, 0, 0, 0, 0 )
 	BG:setupNineSliceShader( 196, 88 )
 	self:addElement( BG )
@@ -67,14 +67,14 @@ CoD.TabletIcePickHackDetectionBar.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	self.Stripe = Stripe
 	
 	local EdgeRight = LUI.UIImage.new( 0, 0, -48.5, -40.5, 0, 0, -1.5, 22.5 )
-	EdgeRight:setImage( RegisterImage( 0xA8B500A007A9B7C ) )
+	EdgeRight:setImage( RegisterImage( "uie_ui_hud_icepick_breach_box_edge" ) )
 	EdgeRight:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	EdgeRight:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( EdgeRight )
 	self.EdgeRight = EdgeRight
 	
 	local EdgeLeft = LUI.UIImage.new( 0, 0, 163.5, 155.5, 0, 0, -1.5, 22.5 )
-	EdgeLeft:setImage( RegisterImage( 0xA8B500A007A9B7C ) )
+	EdgeLeft:setImage( RegisterImage( "uie_ui_hud_icepick_breach_box_edge" ) )
 	EdgeLeft:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	EdgeLeft:setShaderVector( 0, 2, 0, 0, 0 )
 	self:addElement( EdgeLeft )

@@ -6,7 +6,7 @@
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/bubbles",
-        "icon": "image#hash_5aa00d76304b498",
+        "icon": "image#ui_icon_emotes_blowing_bubbles",
         "isdefault": 0
     }
 }

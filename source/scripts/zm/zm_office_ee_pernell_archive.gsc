@@ -146,7 +146,7 @@ function pernell_archive_step1_setup( var_5ea5c94d )
         s_server_part_pickup struct::delete();
         level.s_fix_server zm_unitrigger::create( #"", 64, &function_e4fcfb0a );
         level flag::wait_till( #"server_part_pickup_deposited" );
-        playsoundatposition( #"hash_359664e44a2bb635", level.s_fix_server.origin );
+        playsoundatposition( #"evt_ee_server_install", level.s_fix_server.origin );
         level clientfield::set( "" + #"hash_3284b0cf34bfe44e", 0 );
         level clientfield::increment( "" + #"hash_b143d97bf92fc66", 1 );
         level.var_67599dfe[ 0 ] = 1;

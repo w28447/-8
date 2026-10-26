@@ -1,11 +1,11 @@
 {
-    "contracticon": "image#hash_31bc10fda1a80f6e",
+    "contracticon": "image#loot03_ui_icon_blackmarket_contracts_nasa_mastercraft",
     "relateditemname": "localized17#weapon/smg_capacity_t8",
     "contracttitle": "localized17#hash_2d85a60f366822d1",
     "name": "loot_contract_space_shuttle",
     "hash_69b5a265": "core_frontend_smg_capacity_spaceshuttle",
     "contractdescription": "localized17#menu/mastercraft",
     "white": "#white",
-    "hash_11e9f2f0cfc349d4:hash_1c057e8c": "image#hash_11e9f2f0cfc349d4",
+    "loot03_ui_icon_blackmarket_contracts_nasa_mastercraft_tall:hash_1c057e8c": "image#loot03_ui_icon_blackmarket_contracts_nasa_mastercraft_tall",
     "hash_469af5f3adb94023:hash_e08fc162": "localized17#hash_469af5f3adb94023"
 }

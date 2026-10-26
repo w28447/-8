@@ -2279,11 +2279,11 @@ function on_use_update( team, progress, change )
         {
             if ( player.team == game.attackers )
             {
-                player playsoundtoplayer( #"hash_3cca41b3702f764a", player );
+                player playsoundtoplayer( #"mpl_control_capture_start_friendly", player );
                 continue;
             }
             
-            player playsoundtoplayer( #"hash_2bb2a0ec776ba8f7", player );
+            player playsoundtoplayer( #"mpl_control_capture_start_enemy", player );
         }
     }
     else if ( change == 0 && !self.currentlyunoccupied )

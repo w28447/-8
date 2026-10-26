@@ -2210,9 +2210,9 @@ CoD.ChallengesUtility.ZombiesTrialsExpToMedalImages = {
 		[3000] = "uie_trial_medal_gold"
 	},
 	[1] = {
-		[1000] = 0x772C55AAA62BD0,
-		[2000] = 0xFD6B3DF8A0BA964,
-		[3000] = 0x8F9261A2CAA7739
+		[1000] = "trial_medal_platinum",
+		[2000] = "trial_medal_diamond",
+		[3000] = "trial_medal_darkmatter"
 	}
 }
 CoD.ChallengesUtility.GetChallengeRewardInfo = function ( f87_arg0, f87_arg1, f87_arg2, f87_arg3, f87_arg4, f87_arg5 )

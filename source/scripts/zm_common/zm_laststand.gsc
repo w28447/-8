@@ -349,7 +349,7 @@ function playerlaststand( einflictor, attacker, idamage, smeansofdeath, weapon, 
     
     if ( self function_1a2fa922() )
     {
-        self playsound( #"hash_19b37c3454f86a4a" );
+        self playsound( #"zmb_player_down_alert" );
     }
 }
 

@@ -42,7 +42,7 @@ function __init__()
 function function_87d68f99( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwasdemojump )
 {
     self thread postfx::playpostfxbundle( #"hash_114ea20734e794cf" );
-    playsound( localclientnum, #"hash_307805bbe1d946b", ( 0, 0, 0 ) );
+    playsound( localclientnum, #"zmb_escape_scream_2d", ( 0, 0, 0 ) );
 }
 
 // Namespace zm_escape_pebble/zm_escape_pebble

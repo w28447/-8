@@ -281,7 +281,7 @@ function function_8427e524()
     self clientfield::set( "" + #"dynamite_zombie_aura_fx", 1 );
     self function_4baeb885();
     self.ignoremelee = 1;
-    self playloopsound( #"hash_494dd6f60ab1e3a8" );
+    self playloopsound( #"evt_dynamite_fuse_zombie_lp" );
     self thread function_e58f823f();
     
     /#
@@ -443,7 +443,7 @@ function function_4c525901()
 {
     self endon( #"death" );
     s_waitresult = self waittill( #"trigger_activated" );
-    self playsound( #"hash_55c30dada4e624a2" );
+    self playsound( #"evt_dynamite_bomb_pickup" );
     s_waitresult.e_who zm_audio::create_and_play_dialog( #"explosive", #"pickup" );
     level.var_518d6e34 = 1;
     zm_ui_inventory::function_7df6bb60( "orange_dynamite_bomb_complete", 1 );
@@ -512,7 +512,7 @@ function function_2e1427a3()
     level endon( #"end_game" );
     e_bomb = util::spawn_model( "p8_zm_ora_dynamite_bundle", self.origin, self.angles );
     playsoundatposition( #"evt_dynamite_place", e_bomb.origin );
-    e_bomb playloopsound( #"hash_3e8cb0a639b5a355" );
+    e_bomb playloopsound( #"evt_dynamite_fuse_lp" );
     
     /#
         iprintln( "<dev string:x53>" );

@@ -114,8 +114,8 @@ function portal_loop_fx( localclientnum, oldval, newval, bnewent, binitialsnap, 
                 
                 if ( !isdefined( self.var_6bcee88f ) )
                 {
-                    self playsound( localclientnum, #"hash_e0f8121b60150f3" );
-                    self.var_6bcee88f = self playloopsound( #"hash_17c6685aa5756f85" );
+                    self playsound( localclientnum, #"zmb_giggles_3_portal_start" );
+                    self.var_6bcee88f = self playloopsound( #"zmb_giggles_3_portal_lp" );
                 }
                 
                 return;
@@ -128,8 +128,8 @@ function portal_loop_fx( localclientnum, oldval, newval, bnewent, binitialsnap, 
                 
                 if ( !isdefined( self.var_6bcee88f ) )
                 {
-                    self playsound( localclientnum, #"hash_e0f8121b60150f3" );
-                    self.var_6bcee88f = self playloopsound( #"hash_17c6685aa5756f85" );
+                    self playsound( localclientnum, #"zmb_giggles_3_portal_start" );
+                    self.var_6bcee88f = self playloopsound( #"zmb_giggles_3_portal_lp" );
                 }
                 
                 continue;
@@ -149,7 +149,7 @@ function portal_loop_fx( localclientnum, oldval, newval, bnewent, binitialsnap, 
             
             if ( isdefined( self.var_6bcee88f ) )
             {
-                self playsound( localclientnum, #"hash_bfec406f9040c46" );
+                self playsound( localclientnum, #"zmb_giggles_3_portal_end" );
                 self stoploopsound( self.var_6bcee88f );
                 self.var_6bcee88f = undefined;
             }
@@ -166,7 +166,7 @@ function portal_loop_fx( localclientnum, oldval, newval, bnewent, binitialsnap, 
         }
         
         self.var_7a00469e = util::playfxontag( localclientnum, level._effect[ #"portal_activate" ], self, "tag_origin" );
-        self playsound( localclientnum, #"hash_4941fd3f3fa17a5e" );
+        self playsound( localclientnum, #"zmb_giggles_3_portal_complete" );
         
         if ( isdefined( self.var_767d572c ) )
         {
@@ -334,7 +334,7 @@ function function_58397147( localclientnum, oldval, newval, bnewent, binitialsna
                 
                 if ( isdefined( self.var_f2d4633f ) )
                 {
-                    self playsound( localclientnum, #"hash_1b352bed4ab85497" );
+                    self playsound( localclientnum, #"zmb_giggles_3_ghost_disappear" );
                     self stoploopsound( self.var_f2d4633f );
                     self.var_f2d4633f = undefined;
                 }
@@ -373,8 +373,8 @@ function function_58397147( localclientnum, oldval, newval, bnewent, binitialsna
     {
         if ( !isdefined( self.var_f2d4633f ) )
         {
-            self playsound( localclientnum, #"hash_2023f5976ef8d19b" );
-            self.var_f2d4633f = self playloopsound( #"hash_42d25612dd54c9fa" );
+            self playsound( localclientnum, #"zmb_giggles_3_ghost_appear" );
+            self.var_f2d4633f = self playloopsound( #"zmb_giggles_3_ghost_lp" );
         }
     }
     
@@ -402,8 +402,8 @@ function private function_36e09e98( localclientnum )
         
         if ( !isdefined( self.var_f2d4633f ) )
         {
-            self playsound( localclientnum, #"hash_2023f5976ef8d19b" );
-            self.var_f2d4633f = self playloopsound( #"hash_42d25612dd54c9fa" );
+            self playsound( localclientnum, #"zmb_giggles_3_ghost_appear" );
+            self.var_f2d4633f = self playloopsound( #"zmb_giggles_3_ghost_lp" );
         }
     }
     else
@@ -430,7 +430,7 @@ function private function_77fbeefa( localclientnum )
         
         if ( isdefined( self.var_f2d4633f ) )
         {
-            self playsound( localclientnum, #"hash_1b352bed4ab85497" );
+            self playsound( localclientnum, #"zmb_giggles_3_ghost_disappear" );
             self stoploopsound( self.var_f2d4633f );
             self.var_f2d4633f = undefined;
         }
@@ -648,16 +648,16 @@ function function_126253d1( localclientnum, oldval, newval, bnewent, binitialsna
     {
         if ( !isdefined( self.var_8d1080dd ) )
         {
-            self playsound( localclientnum, #"hash_38ffe6d2575fa1ba" );
-            self.var_8d1080dd = self playloopsound( #"hash_7fdfd0403ec4dcce" );
+            self playsound( localclientnum, #"zmb_giggles_3_shower_circle_start" );
+            self.var_8d1080dd = self playloopsound( #"zmb_giggles_3_shower_circle_lp" );
         }
         else if ( oldval > newval )
         {
-            self playsound( localclientnum, #"hash_33facc55fbfba52" );
+            self playsound( localclientnum, #"zmb_giggles_3_shower_circle_increase" );
         }
         else if ( oldval < newval )
         {
-            self playsound( localclientnum, #"hash_1a2a408c5055eb7a" );
+            self playsound( localclientnum, #"zmb_giggles_3_shower_circle_decrease" );
         }
         
         switch ( newval )

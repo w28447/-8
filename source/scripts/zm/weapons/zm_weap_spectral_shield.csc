@@ -744,7 +744,7 @@ function function_3dec76cb( localclientnum, e_target, e_attacker, var_19f39a16 =
     if ( isdefined( e_target ) && !isalive( e_target ) && e_target.archetype === #"zombie" )
     {
         util::playfxontag( localclientnum, level._effect[ #"hash_28b1c64bd72686eb" ], e_target, "j_spinelower" );
-        playsound( localclientnum, #"hash_5eb0bbabfbde1ce8", e_target.origin );
+        playsound( localclientnum, #"wpn_spectral_key_soul_suck", e_target.origin );
     }
 }
 
@@ -769,7 +769,7 @@ function function_9c08e4b6( localclientnum, e_target, e_attacker )
     
     if ( !isalive( e_target ) && isdefined( var_545d6c28 ) )
     {
-        playsound( localclientnum, #"hash_5eb0bbabfbde1ce8", var_545d6c28 );
+        playsound( localclientnum, #"wpn_spectral_key_soul_suck", var_545d6c28 );
     }
 }
 

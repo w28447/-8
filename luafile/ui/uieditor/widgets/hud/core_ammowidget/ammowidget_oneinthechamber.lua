@@ -41,7 +41,7 @@ CoD.AmmoWidget_OneInTheChamber.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.LEDgraph = LEDgraph
 	
 	local Frame = LUI.UIImage.new( 0, 0, -1, 359, 0, 0, 1, 87 )
-	Frame:setImage( RegisterImage( 0xA956421DAB808DF ) )
+	Frame:setImage( RegisterImage( "uie_ui_hud_oic_frame_ammo_widget" ) )
 	self:addElement( Frame )
 	self.Frame = Frame
 	

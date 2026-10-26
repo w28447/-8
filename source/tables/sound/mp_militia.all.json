@@ -2832,13 +2832,13 @@
         {
             "value": 56,
             "next": 18,
-            "name": "#hash_4de7460fa310be07",
+            "name": "#amb_militia_ext_wind_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4de7460fa310be07",
+                    "name": "#amb_militia_ext_wind_2d",
                     "assetId": "#amb/environment/location_bgs/country_air/amb_country_air.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -2881,13 +2881,13 @@
         {
             "value": 138,
             "next": 65535,
-            "name": "#hash_769349278778002d",
+            "name": "#amb_militia_int_wind_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_769349278778002d",
+                    "name": "#amb_militia_int_wind_2d",
                     "assetId": "#amb/environment/location_bgs/country_air/interior/amb_int_country_air.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -3662,13 +3662,13 @@
         {
             "value": 105,
             "next": 65535,
-            "name": "#hash_2b6561ea8c451f85",
+            "name": "#amb_river_brook_l",
             "sequence": 0,
             "cullDistance": 1750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2b6561ea8c451f85",
+                    "name": "#amb_river_brook_l",
                     "assetId": "#amb/environment/water/stream/sml/stream_sml_l.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -3711,13 +3711,13 @@
         {
             "value": 148,
             "next": 10,
-            "name": "#hash_2b6573ea8c453e1b",
+            "name": "#amb_river_brook_r",
             "sequence": 0,
             "cullDistance": 1750,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2b6573ea8c453e1b",
+                    "name": "#amb_river_brook_r",
                     "assetId": "#amb/environment/water/stream/sml/stream_sml_r.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -7291,13 +7291,13 @@
         {
             "value": 83,
             "next": 65535,
-            "name": "#hash_663899d42687914d",
+            "name": "#dst_car_windshield_break",
             "sequence": 0,
             "cullDistance": 1400,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_663899d42687914d",
+                    "name": "#dst_car_windshield_break",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -7336,7 +7336,7 @@
                     "unk178": "#hash_503090302"
                 },
                 {
-                    "name": "#hash_663899d42687914d",
+                    "name": "#dst_car_windshield_break",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -7375,7 +7375,7 @@
                     "unk178": "#hash_503090302"
                 },
                 {
-                    "name": "#hash_663899d42687914d",
+                    "name": "#dst_car_windshield_break",
                     "assetId": "#dst/generic/glass/small/glass_break_sml_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -9683,7 +9683,7 @@
             "aliases": [
                 {
                     "name": "#dst_glass_windshield_damage",
-                    "secondaryname": "#hash_663899d42687914d",
+                    "secondaryname": "#dst_car_windshield_break",
                     "assetId": "#dst/glass/windshield/windshield_damage_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -9723,7 +9723,7 @@
                 },
                 {
                     "name": "#dst_glass_windshield_damage",
-                    "secondaryname": "#hash_663899d42687914d",
+                    "secondaryname": "#dst_car_windshield_break",
                     "assetId": "#dst/glass/windshield/windshield_damage_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -10007,13 +10007,13 @@
         {
             "value": 86,
             "next": 65535,
-            "name": "#hash_7f118ea3a4874268",
+            "name": "#dst_mp_propane_tank_fire",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7f118ea3a4874268",
+                    "name": "#dst_mp_propane_tank_fire",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
                     "assetFileNameRelease": "#mp_militia.all",
@@ -11824,7 +11824,7 @@
             "aliases": [
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -11865,7 +11865,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -11906,7 +11906,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -11947,7 +11947,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -11988,7 +11988,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -12029,7 +12029,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -12070,7 +12070,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -12114,13 +12114,13 @@
         {
             "value": 59,
             "next": 107,
-            "name": "#hash_3b6983b084cfef53",
+            "name": "#dst_transformer_explo_spark",
             "sequence": 0,
             "cullDistance": 6000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
@@ -12161,7 +12161,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
@@ -12202,7 +12202,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
@@ -12243,7 +12243,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
@@ -12284,7 +12284,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
@@ -12325,7 +12325,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
@@ -12366,7 +12366,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
@@ -12407,7 +12407,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
@@ -18326,13 +18326,13 @@
         {
             "value": 91,
             "next": 65535,
-            "name": "#hash_200e28bcd26bab77",
+            "name": "#exp_mp_propane_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_200e28bcd26bab77",
+                    "name": "#exp_mp_propane_flux_l",
                     "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
@@ -18377,13 +18377,13 @@
         {
             "value": 149,
             "next": 65535,
-            "name": "#hash_200e2ebcd26bb5a9",
+            "name": "#exp_mp_propane_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_200e2ebcd26bb5a9",
+                    "name": "#exp_mp_propane_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_r/flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -18724,13 +18724,13 @@
         {
             "value": 171,
             "next": 65535,
-            "name": "#hash_7ac5fa6568de2461",
+            "name": "#exp_mp_propane_tank_lfe",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -18769,7 +18769,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -18808,7 +18808,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -18847,7 +18847,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -19376,13 +19376,13 @@
         {
             "value": 108,
             "next": 151,
-            "name": "#hash_456af38afaef9d77",
+            "name": "#exp_propane_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_456af38afaef9d77",
+                    "name": "#exp_propane_flux_l",
                     "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
@@ -19427,13 +19427,13 @@
         {
             "value": 115,
             "next": 156,
-            "name": "#hash_456af98afaefa7a9",
+            "name": "#exp_propane_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_456af98afaefa7a9",
+                    "name": "#exp_propane_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_r/flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -21028,13 +21028,13 @@
         {
             "value": 23,
             "next": 185,
-            "name": "#hash_3f8d713abf4d10fe",
+            "name": "#exp_veh_lfe_no_debris",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3f8d713abf4d10fe",
+                    "name": "#exp_veh_lfe_no_debris",
                     "assetId": "#exp/vehicle/lfe/exp_veh_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -21431,14 +21431,14 @@
         {
             "value": 127,
             "next": 65535,
-            "name": "#hash_373c94e1ffb849b0",
+            "name": "#exp_veh_small_no_debris",
             "sequence": 0,
             "cullDistance": 12000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_373c94e1ffb849b0",
-                    "secondaryname": "#hash_3f8d713abf4d10fe",
+                    "name": "#exp_veh_small_no_debris",
+                    "secondaryname": "#exp_veh_lfe_no_debris",
                     "assetId": "#exp/vehicle/base/exp_veh_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -21478,8 +21478,8 @@
                     "unk178": "#hash_6030b0208"
                 },
                 {
-                    "name": "#hash_373c94e1ffb849b0",
-                    "secondaryname": "#hash_3f8d713abf4d10fe",
+                    "name": "#exp_veh_small_no_debris",
+                    "secondaryname": "#exp_veh_lfe_no_debris",
                     "assetId": "#exp/vehicle/base/exp_veh_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -21519,8 +21519,8 @@
                     "unk178": "#hash_6030b0208"
                 },
                 {
-                    "name": "#hash_373c94e1ffb849b0",
-                    "secondaryname": "#hash_3f8d713abf4d10fe",
+                    "name": "#exp_veh_small_no_debris",
+                    "secondaryname": "#exp_veh_lfe_no_debris",
                     "assetId": "#exp/vehicle/base/exp_veh_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -21896,13 +21896,13 @@
         {
             "value": 167,
             "next": 65535,
-            "name": "#hash_5b18895703fba823",
+            "name": "#pfx_transformer_arcs",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -21941,7 +21941,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -21980,7 +21980,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -22019,7 +22019,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -22062,13 +22062,13 @@
         {
             "value": 110,
             "next": 65535,
-            "name": "#hash_4ca3d2aaa573f1c8",
+            "name": "#pfx_transformer_sparks",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4ca3d2aaa573f1c8",
+                    "name": "#pfx_transformer_sparks",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -22107,7 +22107,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_4ca3d2aaa573f1c8",
+                    "name": "#pfx_transformer_sparks",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -22146,7 +22146,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_4ca3d2aaa573f1c8",
+                    "name": "#pfx_transformer_sparks",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_militia.all",
                     "assetIdRelease": "#mp_militia.all",
@@ -22485,7 +22485,7 @@
             "duck": "default",
             "id": "#mp_militia_bridge",
             "reverb": "#narrow_cave",
-            "loop": "#hash_769349278778002d",
+            "loop": "#amb_militia_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -22507,7 +22507,7 @@
             "duck": "default",
             "id": "#mp_militia_bunker",
             "reverb": "#narrow_cave",
-            "loop": "#hash_769349278778002d",
+            "loop": "#amb_militia_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -22529,7 +22529,7 @@
             "duck": "default",
             "id": "#mp_militia_church",
             "reverb": "#big_bunker",
-            "loop": "#hash_769349278778002d",
+            "loop": "#amb_militia_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -22551,7 +22551,7 @@
             "duck": "default",
             "id": "#mp_militia_church_frnt",
             "reverb": "#room_bedroom",
-            "loop": "#hash_769349278778002d",
+            "loop": "#amb_militia_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -22573,7 +22573,7 @@
             "duck": "default",
             "id": "#mp_militia_church_side",
             "reverb": "#room_livingroom",
-            "loop": "#hash_769349278778002d",
+            "loop": "#amb_militia_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -22595,7 +22595,7 @@
             "duck": "default",
             "id": "#mp_militia_closet",
             "reverb": "#narrow_stairwell",
-            "loop": "#hash_769349278778002d",
+            "loop": "#amb_militia_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -22617,7 +22617,7 @@
             "duck": "default",
             "id": "#mp_militia_med_room",
             "reverb": "#room_livingroom",
-            "loop": "#hash_769349278778002d",
+            "loop": "#amb_militia_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -22639,7 +22639,7 @@
             "duck": "default",
             "id": "#mp_militia_outdoor",
             "reverb": "#outdoor_echo",
-            "loop": "#hash_4de7460fa310be07",
+            "loop": "#amb_militia_ext_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
@@ -22661,7 +22661,7 @@
             "duck": "default",
             "id": "#mp_militia_sml_room",
             "reverb": "#room_bedroom",
-            "loop": "#hash_769349278778002d",
+            "loop": "#amb_militia_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -22683,7 +22683,7 @@
             "duck": "default",
             "id": "#mp_militia_stairs",
             "reverb": "#narrow_stairwell",
-            "loop": "#hash_769349278778002d",
+            "loop": "#amb_militia_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",

@@ -244,10 +244,10 @@ CoD.BlackMarketUtility.MyShopExperiments = {
 		expKey = "expMaskedReactiveCamoBundle",
 		itemRefs = {
 			["1"] = "camo_active_dlc1_masks_wrapper",
-			["2"] = 0x78B5B62ACC867E6,
-			["3"] = 0x658E788D9ADF660,
-			["4"] = 0xF19E01F158B1AF5,
-			["5"] = 0x34F3FF44882A3BA
+			["2"] = "camo_active_dlc1_masks_wrapper_2crates",
+			["3"] = "camo_active_dlc1_masks_wrapper_4crates",
+			["4"] = "camo_active_dlc1_masks_wrapper_4crates_type2",
+			["5"] = "camo_active_dlc1_masks_wrapper_6crates"
 		}
 	}
 }
@@ -2827,7 +2827,7 @@ CoD.BlackMarketUtility.GetItemRefs = function ( f134_arg0, f134_arg1, f134_arg2,
 	elseif f134_arg1 == "promo_no_dupe_crate_5" then
 		f134_local0 = 0x717FF140F30014C
 		f134_local1 = Engine[0xF9F1239CFD921FE]( 0x49349434018253B, 5 )
-		f134_local6 = 0xFAFB2215A9DD6FA
+		f134_local6 = "ui_icon_blackmarket_reserves_no_duplicate_x05_large_preview"
 		f134_local4 = 0xAD7019EF84C6079
 		f134_local30 = true
 	elseif f134_arg1 == "promo_no_dupe_crate_6" then

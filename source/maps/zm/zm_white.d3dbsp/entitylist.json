@@ -4503,7 +4503,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_6e89d3c73edef586",
+                    "value": "#amb_lovesong_for_a_deadman_futz",
                     "unk1a": true
                 },
                 {
@@ -5763,7 +5763,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5871e3579b97dd8e",
+                    "value": "#amb_avogadro_tv",
                     "unk1a": true
                 },
                 {
@@ -168361,7 +168361,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_33b0501a39a95bea"
+                    "value": "#zmb_office_lab_slide_door"
                 },
                 {
                     "key": "script_string",
@@ -168435,7 +168435,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_33b0501a39a95bea"
+                    "value": "#zmb_office_lab_slide_door"
                 },
                 {
                     "key": "script_string",

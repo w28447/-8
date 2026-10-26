@@ -27,7 +27,7 @@ CoD.WaypointBomb_Timer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	self.GameTimerSeconds = GameTimerSeconds
 	
 	local ring3 = LUI.UIImage.new( 0, 0, 48, 51, 0, 0, 13, 16 )
-	ring3:setImage( RegisterImage( 0x1C64E99F5F757CB ) )
+	ring3:setImage( RegisterImage( "uie_ui_hud_common_tiny_ring" ) )
 	ring3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ring3 )
 	self.ring3 = ring3

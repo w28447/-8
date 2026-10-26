@@ -708,7 +708,7 @@ function private countdown( waitsec, circleindex, nextcircle )
     }
     
     voiceevent( "warCircleCollapseOccurring" );
-    playsoundatposition( #"hash_3fb30e7a85b2bf7e", ( 0, 0, 0 ) );
+    playsoundatposition( #"uin_start_circle_collapse_warning", ( 0, 0, 0 ) );
 }
 
 // Namespace death_circle/death_circle

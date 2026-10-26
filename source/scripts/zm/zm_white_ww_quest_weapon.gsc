@@ -240,13 +240,13 @@ function function_46006d68()
         case 1:
             self.e_tv function_8ebc8dcf( 100 );
             self thread function_41464ab6();
-            self.e_tv playloopsound( #"hash_66d823f29bf8f0ce" );
+            self.e_tv playloopsound( #"amb_ww_tv_waiting_charge" );
             self.var_53d39cb3 = 2;
             zm_sq_modules::function_3f808d3d( self.var_b9989e12 );
             break;
         case 2:
             self.e_tv function_8ebc8dcf( level.var_276bd207[ level.var_f36ca012 ] );
-            self.e_tv playloopsound( #"hash_6edda7357adf8cd9" );
+            self.e_tv playloopsound( #"amb_ww_tv_post_charge" );
             self.var_53d39cb3 = 3;
             self thread function_6e0328a9();
             break;

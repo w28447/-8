@@ -30,7 +30,7 @@ CoD.KillcamPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_ar
 	self.BottomBackplateLeft = BottomBackplateLeft
 	
 	local CallingCardPanelLeft = LUI.UIImage.new( 0, 0, 7, 562, 0, 0, 18.5, 191.5 )
-	CallingCardPanelLeft:setImage( RegisterImage( 0x2504876AAAB7FA7 ) )
+	CallingCardPanelLeft:setImage( RegisterImage( "uie_ui_hud_callingcard_panel" ) )
 	self:addElement( CallingCardPanelLeft )
 	self.CallingCardPanelLeft = CallingCardPanelLeft
 	

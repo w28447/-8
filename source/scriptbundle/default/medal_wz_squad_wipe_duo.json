@@ -4,7 +4,7 @@
     "widget": "BadasseryMedal",
     "name": "medal_wz_squad_wipe_duo",
     "backinglarge": "image#$whitetransparent",
-    "iconsmall": "image#hash_6ba47094d99a631e",
+    "iconsmall": "image#ui_icon_medal_wz_duo_wipe",
     "stringref": "localized17#hash_4105d94787ce735f",
-    "iconlarge": "image#hash_2ad11e70c17d466e"
+    "iconlarge": "image#ui_icon_medal_wz_duo_wipe_large"
 }

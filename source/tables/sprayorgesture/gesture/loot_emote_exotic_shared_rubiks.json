@@ -6,7 +6,7 @@
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/nub",
-        "icon": "image#hash_3852a21167e01508",
+        "icon": "image#ui_icon_emotes_s2_rubiks",
         "isdefault": 0
     }
 }

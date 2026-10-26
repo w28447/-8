@@ -4808,7 +4808,7 @@
     "hash_7b4c62e7878c5b6a": "^1Ultimis Dempsey: ^7You ready, flamethrower?",
     "hash_7b4c63e7878c5d1d": "^1Ultimis Nikolai: ^7Flamethrower ready to use.",
     "hash_7b4cf75c36b15f1e": "^1Ultimis Nikolai: ^7I like him! Though he doesn't seem to make enough jokes. What do call Russian with too much Vodka?     Is trick question, da?",
-    "hash_7b540f4d1ffa1212": "Press ^3[{+activate}]^7 to replace &&1 with {{weapon_name}}",
+    "zm_white/replace_weapon_keyboard": "Press ^3[{+activate}]^7 to replace &&1 with {{weapon_name}}",
     "hash_7b8fe6f5e0485535": "^1Marlton: ^7Sorry. Reinforced door. Trust me, I checked.",
     "hash_7b9e358ce7c413ea": "^1Computer System: ^7E. Zero nine. Four Five.",
     "hash_7ba8395e1616e2e4": "^1Richtofen: ^7Oh dear, Takeo...you really having been having quite the time of it lately.",

@@ -582,7 +582,7 @@ function function_1856c416()
 {
     s_notify = self waittill( #"trigger_activated" );
     player = s_notify.e_who;
-    playsoundatposition( #"hash_30a5ec16dcd18c49", self.origin );
+    playsoundatposition( #"evt_gearbox_install", self.origin );
     flinger = struct::get( self.target, "targetname" );
     flinger zm_orange_fasttravel_flinger::function_60325438( 1 );
     player thread zm_orange_util::function_51b752a9( "vox_generic_responses_positive", -1, 0, 0 );

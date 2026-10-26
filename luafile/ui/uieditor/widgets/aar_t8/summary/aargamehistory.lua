@@ -19,7 +19,7 @@ CoD.AARGameHistory.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	
 	local GameHistoryBG = LUI.UIImage.new( 0, 0, 0, 1160, 0, 0, 42, 276 )
 	GameHistoryBG:setImage( RegisterImage( "uie_ui_menu_aar_info_grid_bg" ) )
-	GameHistoryBG:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6E9593DF28749F2 ) )
+	GameHistoryBG:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_repeat_normal" ) )
 	GameHistoryBG:setShaderVector( 0, 4, 1, 0, 0 )
 	GameHistoryBG:setShaderVector( 1, 0, 1, 0, 1 )
 	self:addElement( GameHistoryBG )

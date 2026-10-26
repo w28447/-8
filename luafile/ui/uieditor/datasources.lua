@@ -6936,12 +6936,12 @@ DataSources.CoDPointStoreList = ListHelper_SetupDataSource( "CoDPointStoreList",
 		local f386_local6 = f386_local5.blackMarketName or ""
 		local f386_local7 = true
 		local f386_local8 = CoD.StoreUtility.GetExperimentModifier( f386_arg0, "bmCPSKUAvailability" )
-		if f386_local8 == "1" and f386_local5.productNameHash == 0xD0E7EAD3C0B85BC then
+		if f386_local8 == "1" and f386_local5.productNameHash == "cp200" then
 			f386_local7 = false
-		elseif f386_local8 == "2" and (f386_local5.productNameHash == 0xD0E7EAD3C0B85BC or f386_local5.productNameHash == 0x5AB63AD3838ECD1) then
+		elseif f386_local8 == "2" and (f386_local5.productNameHash == "cp200" or f386_local5.productNameHash == "cp500") then
 			f386_local7 = false
 		end
-		if f386_local5.productNameHash == 0x5A5C9B94113E3C8 then
+		if f386_local5.productNameHash == "cp9500" then
 			f386_local7 = false
 		end
 		if f386_local7 then

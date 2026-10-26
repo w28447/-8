@@ -64,7 +64,7 @@
     "sound240": "#wpn_revolver_dryfire_npc",
     "sound250": "#wpn_revolver_dryfire_plr",
     "sound610": "#hash_72a07537a35e0368",
-    "projexplosionsound": "#hash_4b54922aa9a7114c",
+    "projexplosionsound": "#wpn_pistol_topbreak_prj_explode",
     "sound800": "#hash_21cba6ae89a3493c",
     "sound810": "#hash_21cba6ae89a3493c",
     "tunables1": "#pistol_topbreak_t8_lh_upgraded_tunables_zm",

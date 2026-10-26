@@ -25,7 +25,7 @@ CoD.LeftStickPagination.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	KBMArrowIcon = LUI.UIImage.new( 0.5, 0.5, -16, 15, 0, 0, -1, 30 )
 	KBMArrowIcon:setAlpha( 0 )
-	KBMArrowIcon:setImage( RegisterImage( 0x8EB901AAE424A2B ) )
+	KBMArrowIcon:setImage( RegisterImage( "uie_img_t8_menu_doublearrow_horizontal" ) )
 	self:addElement( KBMArrowIcon )
 	self.KBMArrowIcon = KBMArrowIcon
 	

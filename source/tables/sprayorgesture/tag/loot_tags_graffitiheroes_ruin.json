@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_graffitiheroes_ruin",
+    "type": "#tag",
+    "material": "#hash_5063878c93479fa1",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_4ced7c8e185e82b4",
+        "icon": "image#loot_ui_icon_tags_graffitiheroes_ruin",
+        "isdefault": 0
+    }
+}

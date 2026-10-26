@@ -775,7 +775,7 @@ CoD.PCOptionsUtility.GetScreenResolutions = function ( f35_arg0 )
 		end
 	end )
 	local f35_local3 = {}
-	local f35_local4 = CoD.PCOptionsUtility.GetCurrentOptionValue( 0xDD980970E4D6B94, f35_arg0 )
+	local f35_local4 = CoD.PCOptionsUtility.GetCurrentOptionValue( "r_fullscreenMode", f35_arg0 )
 	for f35_local8, f35_local9 in ipairs( f35_local1 ) do
 		if not f35_local3[f35_local9] then
 			table.insert( f35_local0, {
@@ -834,7 +834,7 @@ end
 
 CoD.PCOptionsUtility.GetRefreshRateOptions = function ( f39_arg0 )
 	local f39_local0 = {}
-	local f39_local1, f39_local2 = string.match( CoD.PCOptionsUtility.GetCurrentOptionValue( 0xDD980970E4D6B94, f39_arg0 ), "([%d]+)x([%d]+)" )
+	local f39_local1, f39_local2 = string.match( CoD.PCOptionsUtility.GetCurrentOptionValue( "r_fullscreenMode", f39_arg0 ), "([%d]+)x([%d]+)" )
 	local f39_local3 = CoD.PCOptionsUtility.GetCurrentOptionValue( "r_monitor", f39_arg0 )
 	if f39_local3 > Dvar[0xB5360289B81FB4F]:get() then
 		f39_local3 = 0
@@ -1176,9 +1176,9 @@ CoD.PCOptionsUtility.SpecialProfileDefaults = {
 			Dvar.m_pitch:set( f83_arg1 * math.abs( Dvar.m_pitch:get() ) )
 		end
 	},
-	[0xF1BFEB2452744FE] = {
+	r_OIT = {
 		get = function ( f84_arg0 )
-			local f84_local0 = Dvar[0xF1BFEB2452744FE]:get()
+			local f84_local0 = Dvar.r_OIT:get()
 			local f84_local1 = Dvar[0xEA85F8276AE6F39]:get()
 			if f84_local0 == true then
 				if f84_local1 == 3 then
@@ -1194,20 +1194,20 @@ CoD.PCOptionsUtility.SpecialProfileDefaults = {
 		end,
 		apply = function ( f85_arg0, f85_arg1 )
 			if f85_arg1 == 0 then
-				Dvar[0xF1BFEB2452744FE]:latch( false )
+				Dvar.r_OIT:latch( false )
 			elseif f85_arg1 == 1 then
-				Dvar[0xF1BFEB2452744FE]:latch( true )
+				Dvar.r_OIT:latch( true )
 				Dvar[0xEA85F8276AE6F39]:latch( 0 )
 			elseif f85_arg1 == 2 then
-				Dvar[0xF1BFEB2452744FE]:latch( true )
+				Dvar.r_OIT:latch( true )
 				Dvar[0xEA85F8276AE6F39]:latch( 2 )
 			elseif f85_arg1 == 3 then
-				Dvar[0xF1BFEB2452744FE]:latch( true )
+				Dvar.r_OIT:latch( true )
 				Dvar[0xEA85F8276AE6F39]:latch( 3 )
 			end
 		end
 	},
-	[0x7F3D0B2A87CE0] = {
+	r_spotShadowRes = {
 		get = function ( f86_arg0 )
 			return Engine.GetShadowQuality()
 		end,
@@ -1215,7 +1215,7 @@ CoD.PCOptionsUtility.SpecialProfileDefaults = {
 			Engine.SetShadowQuality( f87_arg1 )
 		end
 	},
-	[0xA9B3F99F070C094] = {
+	r_forceAdapter = {
 		getOptions = function ( f88_arg0 )
 			return CoD.PCOptionsUtility.GetAvailableDisplayAdapters( f88_arg0 )
 		end
@@ -1228,14 +1228,14 @@ CoD.PCOptionsUtility.SpecialProfileDefaults = {
 			Dvar.r_texfilterquality:set( f90_arg1 )
 		end
 	},
-	[0x67CC3ACAB147B9] = {
+	r_hdrUIMode = {
 		get = function ( f91_arg0 )
-			local f91_local0 = Dvar[0x880C893C1C3B86]:get() == true
+			local f91_local0 = Dvar.r_hdrSupported:get() == true
 			local f91_local1 = nil
-			if CoD.PCOptionsUtility.ChangedOptionsList[0x67CC3ACAB147B9] == nil then
-				f91_local1 = Dvar[0x67CC3ACAB147B9]:get()
+			if CoD.PCOptionsUtility.ChangedOptionsList.r_hdrUIMode == nil then
+				f91_local1 = Dvar.r_hdrUIMode:get()
 			else
-				f91_local1 = CoD.PCOptionsUtility.ChangedOptionsList[0x67CC3ACAB147B9]
+				f91_local1 = CoD.PCOptionsUtility.ChangedOptionsList.r_hdrUIMode
 			end
 			if f91_local0 and f91_local1 ~= 0 then
 				return 1
@@ -1244,7 +1244,7 @@ CoD.PCOptionsUtility.SpecialProfileDefaults = {
 			end
 		end,
 		apply = function ( f92_arg0, f92_arg1 )
-			local f92_local0 = Dvar[0x67CC3ACAB147B9]
+			local f92_local0 = Dvar.r_hdrUIMode
 			local f92_local1 = f92_local0
 			f92_local0 = f92_local0.set
 			local f92_local2
@@ -1271,12 +1271,12 @@ CoD.PCOptionsUtility.SpecialProfileDefaults = {
 			return f94_local0
 		end
 	},
-	[0xDD980970E4D6B94] = {
+	r_fullscreenMode = {
 		getOptions = function ( f95_arg0 )
 			return CoD.PCOptionsUtility.GetScreenResolutions( f95_arg0 )
 		end
 	},
-	[0x7D92627D31E5627] = {
+	r_refreshRate = {
 		getOptions = function ( f96_arg0 )
 			return CoD.PCOptionsUtility.GetRefreshRateOptions( f96_arg0 )
 		end
@@ -1341,12 +1341,12 @@ CoD.PCOptionsUtility.SpecialProfileDefaults = {
 		end,
 		useListOptionsOutdatedCheck = true
 	},
-	[0x6B2142845794848] = {
+	voice_inputDevice = {
 		getOptions = function ( f104_arg0 )
 			local f104_local0 = Engine[0x92162338F72037A]()
 			if #f104_local0 == 0 then
 				f104_local0[1] = {
-					name = Dvar[0x6B2142845794848]:get(),
+					name = Dvar.voice_inputDevice:get(),
 					value = 1
 				}
 			end
@@ -1364,7 +1364,7 @@ CoD.PCOptionsUtility.SpecialProfileDefaults = {
 			return f104_local0
 		end,
 		get = function ( f105_arg0 )
-			local f105_local0 = Dvar[0x6B2142845794848]:get()
+			local f105_local0 = Dvar.voice_inputDevice:get()
 			local f105_local1 = Engine[0x92162338F72037A]()
 			local f105_local2 = nil
 			if #f105_local1 > 0 then
@@ -1414,7 +1414,7 @@ CoD.PCOptionsUtility.SpecialProfileDefaults = {
 			CoD.ModelUtility.SetControllerModelValueToEnum( f113_arg0, "controllerLayoutState", CoD.OptionsUtility.ControllerPreviewStates.CONTROLLER_BUTTONS )
 		end
 	},
-	[0xFF11E85689F1D27] = {
+	r_lightingSunShadowDisableDynamicDraw = {
 		apply = function ( f114_arg0, f114_arg1 )
 			local f114_local0
 			if 1 <= f114_arg1 then
@@ -1425,14 +1425,14 @@ CoD.PCOptionsUtility.SpecialProfileDefaults = {
 					local f114_local1 = f114_arg1 ~= 2
 					Dvar[0xFDA5D20BF93E4D6]:set( f114_local0 )
 					Dvar[0x584D68D5979628B]:set( f114_local1 )
-					Dvar[0xFF11E85689F1D27]:set( f114_local1 )
+					Dvar.r_lightingSunShadowDisableDynamicDraw:set( f114_local1 )
 				end
 			end
 			f114_local0 = 0
 		end,
 		get = function ( f115_arg0 )
 			local f115_local0 = 0
-			if not Dvar[0xFF11E85689F1D27]:get() then
+			if not Dvar.r_lightingSunShadowDisableDynamicDraw:get() then
 				f115_local0 = 2
 			elseif Dvar[0xFDA5D20BF93E4D6]:get() == 3 then
 				f115_local0 = 1
@@ -1605,18 +1605,18 @@ CoD.PCOptionsUtility.IsVRAMOverRecommended = function ( f132_arg0 )
 end
 
 CoD.PCOptionsUtility.VRAMPredictOptionNames = {
-	0x10198A6861793FE,
-	0x4F87480528FF262,
-	0x4B8757D7CB6ED3A,
-	0x7F3D0B2A87CE0,
+	"r_ssaoTechnique",
+	"r_motionBlurMode",
+	"r_aaTechnique",
+	"r_spotShadowRes",
 	"r_picmip",
-	0x67CC3ACAB147B9,
-	0xF1BFEB2452744FE,
+	"r_hdrUIMode",
+	"r_OIT",
 	"r_ssr_enabled",
 	"r_fullscreen",
-	0x5A15D5A249FE0ED,
-	0xA86ED746CA5D8E3,
-	0xDD980970E4D6B94,
+	"r_aspectRatio",
+	"r_sceneResolutionMultiplier",
+	"r_fullscreenMode",
 	"r_monitor",
 	0xE2E4C9FF8CB579E,
 	0xD679AB6B6B38EFD
@@ -1644,11 +1644,11 @@ CoD.PCOptionsUtility.PrepareVRAMBarUpdate = function ( f136_arg0 )
 	f136_local1 = 0
 	f136_local2 = 0
 	if f136_local0.r_fullscreen == 1 then
-		f136_local3 = CoDShared.splitString( f136_local0[0xDD980970E4D6B94], "x" )
+		f136_local3 = CoDShared.splitString( f136_local0.r_fullscreenMode, "x" )
 		f136_local1 = tonumber( f136_local3[1] )
 		f136_local2 = tonumber( f136_local3[2] )
 	end
-	local f136_local6 = Engine[0xBE57033070D5585]( f136_local1, f136_local2, f136_local0.r_fullscreen, f136_local0.r_monitor, f136_local0[0x5A15D5A249FE0ED], f136_local0[0xA86ED746CA5D8E3], f136_local0[0x10198A6861793FE], f136_local0[0x4F87480528FF262], f136_local0[0x4B8757D7CB6ED3A], f136_local0[0x7F3D0B2A87CE0], f136_local0.r_picmip, f136_local0[0xE2E4C9FF8CB579E], f136_local0[0xD679AB6B6B38EFD], f136_local0[0x67CC3ACAB147B9], f136_local0[0xF1BFEB2452744FE], f136_local0[0x4F87480528FF262] > 0, f136_local0.r_ssr_enabled == 1, f136_local0[0x4B8757D7CB6ED3A] > 1, f136_local0[0xF1BFEB2452744FE] > 0 )
+	local f136_local6 = Engine[0xBE57033070D5585]( f136_local1, f136_local2, f136_local0.r_fullscreen, f136_local0.r_monitor, f136_local0.r_aspectRatio, f136_local0.r_sceneResolutionMultiplier, f136_local0.r_ssaoTechnique, f136_local0.r_motionBlurMode, f136_local0.r_aaTechnique, f136_local0.r_spotShadowRes, f136_local0.r_picmip, f136_local0[0xE2E4C9FF8CB579E], f136_local0[0xD679AB6B6B38EFD], f136_local0.r_hdrUIMode, f136_local0.r_OIT, f136_local0.r_motionBlurMode > 0, f136_local0.r_ssr_enabled == 1, f136_local0.r_aaTechnique > 1, f136_local0.r_OIT > 0 )
 	local f136_local7 = Engine.GetModelForController( f136_arg0 )
 	f136_local7.PC.VRAMBar:set( f136_local6 )
 end
@@ -1680,10 +1680,10 @@ CoD.PCOptionsUtility.SyncVoiceModel = function ( f139_arg0 )
 end
 
 CoD.PCOptionsUtility.SyncAudioDeviceModel = function ( f140_arg0 )
-	local f140_local0 = CoD.PCOptionsUtility.GetOptionModel( f140_arg0, 0x6B2142845794848 )
+	local f140_local0 = CoD.PCOptionsUtility.GetOptionModel( f140_arg0, "voice_inputDevice" )
 	if f140_local0 then
 		Engine.ForceNotifyModelSubscriptions( f140_local0.refreshWidget )
-		CoD.PCOptionsUtility.SyncOptionModel( f140_arg0, 0x6B2142845794848 )
+		CoD.PCOptionsUtility.SyncOptionModel( f140_arg0, "voice_inputDevice" )
 	end
 	local f140_local1 = CoD.PCOptionsUtility.GetOptionModel( f140_arg0, "voice_outputdevice" )
 	if f140_local1 then

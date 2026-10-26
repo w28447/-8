@@ -15,7 +15,7 @@ CoD.TabletIcePickGadget_ItemBlock.new = function ( f1_arg0, f1_arg1, f1_arg2, f1
 	local AARPerformBg = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	AARPerformBg:setAlpha( 0.4 )
 	AARPerformBg:setImage( RegisterImage( "uie_ui_menu_aar_perform_repeat_bg" ) )
-	AARPerformBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	AARPerformBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	AARPerformBg:setShaderVector( 0, 0, 0, 0, 0 )
 	AARPerformBg:setupNineSliceShader( 172, 136 )
 	self:addElement( AARPerformBg )

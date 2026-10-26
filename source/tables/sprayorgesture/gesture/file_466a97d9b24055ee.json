@@ -6,7 +6,7 @@
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/sit_boy_sit",
-        "icon": "image#hash_36fc306b9cb6337d",
+        "icon": "image#ui_icon_emotes_nomad_sit_boy",
         "isdefault": 0
     }
 }

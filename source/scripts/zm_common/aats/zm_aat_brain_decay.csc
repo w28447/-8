@@ -65,8 +65,8 @@ function function_791e18ed( localclientnum, oldval, newval, bnewent, binitialsna
         
         if ( !isdefined( self.var_67857d4d ) )
         {
-            self playsound( localclientnum, #"hash_637c5e1579bb239a" );
-            self.var_67857d4d = self playloopsound( #"hash_6064261162c8a2e" );
+            self playsound( localclientnum, #"zmb_aat_braindecay_turned_start" );
+            self.var_67857d4d = self playloopsound( #"zmb_aat_braindecay_turned_lp" );
         }
         
         if ( isdefined( self.var_4703d488 ) )

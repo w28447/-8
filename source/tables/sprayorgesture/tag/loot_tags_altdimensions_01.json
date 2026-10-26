@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_altdimensions_01",
+    "type": "#tag",
+    "material": "#hash_76767ab14430283a",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_446308ed7ddeaebe",
+        "icon": "image#loot_ui_icon_tags_altdimensions_01",
+        "isdefault": 0
+    }
+}

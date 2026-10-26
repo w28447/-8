@@ -22,7 +22,7 @@ CoD.WeaponLevelUpHeaderStripe.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local HeaderStripe = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	HeaderStripe:setRGB( 0, 0, 0 )
 	HeaderStripe:setImage( RegisterImage( 0xC7A051F5EFC70E5 ) )
-	HeaderStripe:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	HeaderStripe:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	HeaderStripe:setShaderVector( 0, 0, 0, 0, 0 )
 	HeaderStripe:setupNineSliceShader( 50, 8 )
 	self:addElement( HeaderStripe )

@@ -64,7 +64,7 @@ CoD.EmblemEditorPCLegend.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	
 	local NoiseTiledBacking2 = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -380.5, -53.5 )
 	NoiseTiledBacking2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	NoiseTiledBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	NoiseTiledBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	NoiseTiledBacking2:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking2:setupNineSliceShader( 196, 88 )
 	self:addElement( NoiseTiledBacking2 )
@@ -91,7 +91,7 @@ CoD.EmblemEditorPCLegend.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1
 	local dividerH02 = LUI.UIImage.new( 0, 1, 0, 0, 1, 1, -91.5, -87.5 )
 	dividerH02:setAlpha( 0.2 )
 	dividerH02:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
-	dividerH02:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	dividerH02:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	dividerH02:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerH02:setupNineSliceShader( 8, 4 )
 	self:addElement( dividerH02 )

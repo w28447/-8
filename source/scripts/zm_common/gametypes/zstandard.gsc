@@ -716,17 +716,17 @@ function function_45a520db( params )
                 if ( self.archetype === #"catalyst" )
                 {
                     var_487ba56d = function_c3a8f243( 2 );
-                    playsoundatposition( #"hash_5755957467fab7c0", self.origin );
+                    playsoundatposition( #"zmb_rush_points_x2", self.origin );
                 }
                 
                 break;
             case #"heavy":
                 var_487ba56d = 5;
-                playsoundatposition( #"hash_57559c7467fac3a5", self.origin );
+                playsoundatposition( #"zmb_rush_points_x5", self.origin );
                 break;
             case #"miniboss":
                 var_487ba56d = 10;
-                playsoundatposition( #"hash_612ef6ccaf0effeb", self.origin );
+                playsoundatposition( #"zmb_rush_points_x10", self.origin );
                 break;
             case #"boss":
                 var_487ba56d = 15;
@@ -1030,7 +1030,7 @@ function function_c1ab015e()
     
     while ( self.var_7e008e0c > 0 )
     {
-        self playsoundtoplayer( #"hash_10a416158cd8fd3a", self );
+        self playsoundtoplayer( #"zmb_rush_lose_multi_warn", self );
         self notify( #"multiplier_timeout" );
         wait 1;
     }
@@ -1046,7 +1046,7 @@ function tube_gruesome()
     
     while ( true )
     {
-        self playsoundtoplayer( #"hash_11d338092fefba12", self );
+        self playsoundtoplayer( #"zmb_rush_lose_alert", self );
         wait 0.55;
     }
 }
@@ -2092,7 +2092,7 @@ function function_7acf9d9b( e_door )
     {
         zm_utility::function_1409b164();
         level notify( #"hash_4ffec9c5f552e6fc", { #e_door:e_door } );
-        playsoundatposition( #"hash_27dc220231c7b8b3", e_door.origin );
+        playsoundatposition( #"zmb_rush_key_used", e_door.origin );
         return 1;
     }
     
@@ -2685,7 +2685,7 @@ function function_21669ebc( restart = 0 )
         {
             if ( !level flag::get( "started_defend_area" ) )
             {
-                util::playsoundonplayers( #"hash_2d1265adbba422cf" );
+                util::playsoundonplayers( #"mus_arcade_round_change" );
             }
         }
         

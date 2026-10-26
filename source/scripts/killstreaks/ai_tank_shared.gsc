@@ -959,7 +959,7 @@ function ai_tank_killstreak_start( owner, origin, killstreak_id, category, tanka
         drone [[ level.var_4b38c02b ]]();
     }
     
-    drone playloopsound( #"hash_aa65b39680b8d1b" );
+    drone playloopsound( #"veh_quadtank_mini_loop" );
     owner.ai_tank_drone = drone;
     
     foreach ( player in level.players )

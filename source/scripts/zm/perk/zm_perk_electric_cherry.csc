@@ -125,8 +125,8 @@ function tesla_death_fx_callback( localclientnum, oldval, newval, bnewent, binit
         
         if ( !isdefined( self.var_16e53a57 ) )
         {
-            self playsound( localclientnum, #"hash_3b277f4572603015" );
-            self.var_16e53a57 = self playloopsound( #"hash_2f0f235f7f6fc84d" );
+            self playsound( localclientnum, #"zmb_vapor_electriccherry_zmb_imp" );
+            self.var_16e53a57 = self playloopsound( #"zmb_vapor_electriccherry_zmb_lp" );
         }
         
         self.n_death_fx = util::playfxontag( localclientnum, level._effect[ #"tesla_death_cherry" ], self, str_tag );
@@ -180,8 +180,8 @@ function tesla_shock_eyes_fx_callback( localclientnum, oldval, newval, bnewent, 
         
         if ( !isdefined( self.var_16e53a57 ) )
         {
-            self playsound( localclientnum, #"hash_3b277f4572603015" );
-            self.var_16e53a57 = self playloopsound( #"hash_2f0f235f7f6fc84d" );
+            self playsound( localclientnum, #"zmb_vapor_electriccherry_zmb_imp" );
+            self.var_16e53a57 = self playloopsound( #"zmb_vapor_electriccherry_zmb_lp" );
         }
         
         self.n_shock_eyes_fx = util::playfxontag( localclientnum, level._effect[ #"tesla_shock_eyes_cherry" ], self, "J_Eyeball_LE" );

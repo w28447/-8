@@ -180,7 +180,7 @@ CoD.ZmNotifBGB_ContainerFactory.new = function ( f8_arg0, f8_arg1, f8_arg2, f8_a
 	
 	local RushHeart = LUI.UIImage.new( 0, 0, 83, 385, 0, 0, -27, 253 )
 	RushHeart:setAlpha( 0 )
-	RushHeart:setImage( RegisterImage( 0xC1C4913FD23C7DC ) )
+	RushHeart:setImage( RegisterImage( "uie_zm_rush_heart_splash" ) )
 	self:addElement( RushHeart )
 	self.RushHeart = RushHeart
 	

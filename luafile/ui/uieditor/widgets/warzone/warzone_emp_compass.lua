@@ -10,7 +10,7 @@ CoD.Warzone_EMP_Compass.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_
 	
 	local Backer = LUI.UIImage.new( 0, 0, 1, 773, 0, 0, 3, 103 )
 	Backer:setRGB( 0, 0, 0 )
-	Backer:setImage( RegisterImage( 0x7508830158BCE07 ) )
+	Backer:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_emp_compass_widget_backer" ) )
 	self:addElement( Backer )
 	self.Backer = Backer
 	

@@ -537,7 +537,7 @@ version 125 {
     // idx 32 members 21 size 0x520
     struct hash_5117bce61a2e0fe3 {
         // offset 0x0, size 0x20
-        uint hash_4f4661f71ba9b642;
+        uint serverframecount;
         // offset 0x20, size 0x20
         uint hash_5d03a11cca20029d;
         // offset 0x40, size 0x20
@@ -665,7 +665,7 @@ version 125 {
         // offset 0xd50, size 0x8
         byte hash_73577b207cfb7411;
         // offset 0xd58, size 0x60
-        int hash_1657e02fb5073e4a[3];
+        int deployment_jump_pos[3];
         // offset 0xdb8, size 0x8
         uint:8 playerquitteamscore;
         // offset 0xdc0, size 0x20
@@ -865,7 +865,7 @@ version 125 {
         // offset 0x2ce0, size 0x20
         int start_misses;
         // offset 0x2d00, size 0x60
-        int hash_7d9d379ecba10793[3];
+        int deployment_land_pos[3];
         // offset 0x2d60, size 0x20
         int end_deaths;
         // offset 0x2d80, size 0x1
@@ -1161,7 +1161,7 @@ version 125 {
         // offset 0xe8, size 0x8
         uint:3 zone_brutus;
         // offset 0xf0, size 0x8
-        uint:4 hash_2f54ea56d60207e4;
+        uint:4 players_killed_by_zombie;
         // offset 0xf8, size 0x8
         uint:3 zone_blightfather;
     };

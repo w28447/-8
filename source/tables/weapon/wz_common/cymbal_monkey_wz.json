@@ -34,7 +34,7 @@
     "firesoundplayer": "#zmb_monkey_throw_plr",
     "sound240": "#wpn_generic_dryfire_npc",
     "sound250": "#wpn_generic_dryfire_plr",
-    "gadgetreadysoundplayer": "#hash_6f5b79a1a69b43a8",
+    "gadgetreadysoundplayer": "#uin_equip_notify",
     "projexplosionsound": "#wpn_grenade_explode",
     "tunables1": "#cymbal_monkey_tunables_wz",
     "projectilemodel": "#wpn_t8_zm_monkey_bomb_world",

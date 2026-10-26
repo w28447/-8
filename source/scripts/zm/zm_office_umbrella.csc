@@ -32,7 +32,7 @@ function function_87d68f99( localclientnum, oldval, newval, bnewent, binitialsna
     if ( newval )
     {
         self thread postfx::playpostfxbundle( #"hash_5e9232163a119c6b" );
-        playsound( localclientnum, #"hash_50a56f17fc412b92", ( 0, 0, 0 ) );
+        playsound( localclientnum, #"evt_ee_lake_jumpscare", ( 0, 0, 0 ) );
     }
 }
 

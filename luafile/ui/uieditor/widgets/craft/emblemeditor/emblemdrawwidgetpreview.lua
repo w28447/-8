@@ -16,7 +16,7 @@ CoD.EmblemDrawWidgetPreview.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	local BgImage01 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	BgImage01:setAlpha( 0.5 )
 	BgImage01:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	BgImage01:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	BgImage01:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	BgImage01:setShaderVector( 0, 0, 0, 0, 0 )
 	BgImage01:setupNineSliceShader( 196, 88 )
 	self:addElement( BgImage01 )

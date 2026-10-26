@@ -59,7 +59,7 @@ CoD.TabletIcePickGadget_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	self.PixelGridTiledBacking = PixelGridTiledBacking
 	
 	local GridLine = LUI.UIImage.new( 0, 0, -10, 1670, 0, 0, -10, 930 )
-	GridLine:setImage( RegisterImage( 0xF7700E135C91995 ) )
+	GridLine:setImage( RegisterImage( "uie_ui_hud_icepick_bg_grid" ) )
 	GridLine:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	GridLine:setShaderVector( 0, 0, 0, 0, 0 )
 	GridLine:setupNineSliceShader( 144, 144 )
@@ -68,7 +68,7 @@ CoD.TabletIcePickGadget_Internal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local GridLineAdd = LUI.UIImage.new( 0, 0, -10, 1670, 0, 0, -10, 930 )
 	GridLineAdd:setAlpha( 0.5 )
-	GridLineAdd:setImage( RegisterImage( 0xF7700E135C91995 ) )
+	GridLineAdd:setImage( RegisterImage( "uie_ui_hud_icepick_bg_grid" ) )
 	GridLineAdd:setMaterial( LUI.UIImage.GetCachedMaterial( 0x7C9C02F608D0A75 ) )
 	GridLineAdd:setShaderVector( 0, 0, 0, 0, 0 )
 	GridLineAdd:setupNineSliceShader( 144, 144 )

@@ -54,7 +54,7 @@ CoD.BM_ContractDetailsInternal.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	local PixelGridTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 637 )
 	PixelGridTiledBacking:setAlpha( 0.04 )
 	PixelGridTiledBacking:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
-	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	PixelGridTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	PixelGridTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGridTiledBacking:setupNineSliceShader( 128, 128 )
 	self:addElement( PixelGridTiledBacking )

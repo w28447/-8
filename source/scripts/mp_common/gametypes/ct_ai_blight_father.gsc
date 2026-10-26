@@ -1256,7 +1256,7 @@ function private blightfatherlaunchchaosmissile( var_f794172e, var_61622673, var
     max_trail_iterations = int( self ai::function_9139c839().var_652a36f2 / self ai::function_9139c839().var_52bddd4 * self ai::function_9139c839().var_9e5ebf3c );
     chaos_missile.missile_target = var_f794172e;
     chaos_missile thread function_5f3390fd( var_61622673, 60 );
-    chaos_missile playloopsound( #"hash_5b21b7c645692f8", 0.1 );
+    chaos_missile playloopsound( #"zmb_ai_bfather_chaos_missile_flying", 0.1 );
     chaos_missile moveto( self gettagorigin( var_f3486358 ) + var_61622673, self ai::function_9139c839().var_20c6e4ca );
     var_eb325a79 = self ai::function_9139c839().var_9e5ebf3c;
     var_b446b077 = self ai::function_9139c839().var_94fefe66;

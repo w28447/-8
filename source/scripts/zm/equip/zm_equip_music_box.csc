@@ -38,8 +38,8 @@ function function_3224694( localclientnum, oldval, newval, bnewent, binitialsnap
             
             if ( !isdefined( self.var_30b8668 ) )
             {
-                self playsound( localclientnum, #"hash_1780eaf4c052b271" );
-                self.var_30b8668 = self playloopsound( #"hash_13b5daba3191a299" );
+                self playsound( localclientnum, #"wpn_musicbox_portal_open" );
+                self.var_30b8668 = self playloopsound( #"wpn_musicbox_portal_lp" );
             }
             
             return;
@@ -55,7 +55,7 @@ function function_3224694( localclientnum, oldval, newval, bnewent, binitialsnap
             
             if ( isdefined( self.var_30b8668 ) )
             {
-                self playsound( localclientnum, #"hash_63bbef4e60ff503b" );
+                self playsound( localclientnum, #"wpn_musicbox_portal_close" );
                 self stoploopsound( self.var_30b8668 );
                 self.var_30b8668 = undefined;
             }
@@ -115,7 +115,7 @@ function music_box_teleport( localclientnum, oldval, newval, bnewent, binitialsn
         if ( isdefined( self ) )
         {
             playfx( localclientnum, "maps/zm_white/fx8_monkey_bomb_reveal", self.origin, v_forward, v_up );
-            self playsound( localclientnum, #"hash_21206f1b7fb27f81" );
+            self playsound( localclientnum, #"wpn_homunculus_spawn_explo" );
         }
     }
 }

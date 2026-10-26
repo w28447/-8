@@ -14,7 +14,7 @@ CoD.AARRewardHeader.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	Pointer:setRGB( 0.32, 0.34, 0.13 )
 	Pointer:setAlpha( 0.17 )
 	Pointer:setZRot( 180 )
-	Pointer:setMaterial( LUI.UIImage.GetCachedMaterial( 0xBE6E734C31AE757 ) )
+	Pointer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_triangle_normal" ) )
 	self:addElement( Pointer )
 	self.Pointer = Pointer
 	

@@ -187,7 +187,7 @@ function function_715c9476()
 {
     waitresult = self waittill( #"trigger" );
     level.var_db90b274--;
-    self playsound( #"hash_5104efdd2ef71e39" );
+    self playsound( #"evt_ee_portraits_interact" );
     
     /#
         iprintlnbold( "<dev string:x62>" );
@@ -206,7 +206,7 @@ function function_63f29ee9()
     e_oscar_right rotateto( e_oscar_right.angles - ( 20, 0, 0 ), 0.15 );
     waitresult = self waittill( #"trigger" );
     level.var_db90b274--;
-    self playsound( #"hash_5104efdd2ef71e39" );
+    self playsound( #"evt_ee_portraits_interact" );
     
     /#
         iprintlnbold( "<dev string:x80>" );
@@ -228,7 +228,7 @@ function function_bd81f4e2( user )
         wait 0.1;
         level.e_oscar_left_0 hide();
         level.e_oscar_right_0 hide();
-        playsoundatposition( #"hash_4b169927b4789180", ( 0, 0, 0 ) );
+        playsoundatposition( #"evt_ee_portraits_complete", ( 0, 0, 0 ) );
         
         /#
             iprintlnbold( "<dev string:x9f>" );

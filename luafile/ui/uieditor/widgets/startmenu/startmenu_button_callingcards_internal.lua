@@ -18,7 +18,7 @@ CoD.StartMenu_Button_CallingCards_Internal.new = function ( f1_arg0, f1_arg1, f1
 	local NoiseTiledBacking2 = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking2:setAlpha( 0.5 )
 	NoiseTiledBacking2:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	NoiseTiledBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	NoiseTiledBacking2:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	NoiseTiledBacking2:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking2:setupNineSliceShader( 196, 88 )
 	self:addElement( NoiseTiledBacking2 )

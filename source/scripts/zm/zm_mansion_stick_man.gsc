@@ -893,7 +893,7 @@ function private function_3ce20299()
 {
     self endon( #"death" );
     self zm_vo::vo_say( #"vox_plr_death_react_0_plr_12_0", 1.5, 1, 9999, 1, 1, 1 );
-    self zm_vo::vo_say( #"hash_7f6178afe0059ebf", 0, 1, 9999, 1, 1, 1 );
+    self zm_vo::vo_say( #"vox_plr_death_react_0_butd_1", 0, 1, 9999, 1, 1, 1 );
     level notify( #"hash_132b5b79b9aeaf9e" );
 }
 
@@ -1571,7 +1571,7 @@ function function_45cfa31( mdl_ghost )
             var_80192cb1 = #"hash_762bdec6a06169a5";
             break;
         case 12:
-            var_1f92304d = #"hash_6bec691584ea685f";
+            var_1f92304d = #"vox_ghost_interact_butl_plr_12_0";
             var_1616bdce = #"hash_261ab4742c24d198";
             var_8954c16e = #"hash_4d56b3f9f5d80d5f";
             var_80192cb1 = #"hash_6c4f7d192847d762";
@@ -1583,7 +1583,7 @@ function function_45cfa31( mdl_ghost )
             var_80192cb1 = #"hash_7228b71e32509514";
             break;
         case 9:
-            var_1f92304d = #"hash_5d5042a83172ac71";
+            var_1f92304d = #"vox_ghost_interact_psyc_plr_9_0";
             var_1616bdce = #"hash_5df4633a4e23f150";
             var_8954c16e = #"hash_52a4d5c9366fd9ab";
             var_80192cb1 = #"hash_2a80120b6197a78e";

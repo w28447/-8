@@ -18,7 +18,7 @@ CoD.InspectionSelectedPlayerInfo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local IdentityTiledBg = LUI.UIImage.new( 0, 0, 0, 348, 0, 0, 0, 448 )
 	IdentityTiledBg:setAlpha( 0.5 )
 	IdentityTiledBg:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	IdentityTiledBg:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	IdentityTiledBg:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	IdentityTiledBg:setShaderVector( 0, 0, 0, 0, 0 )
 	IdentityTiledBg:setupNineSliceShader( 196, 88 )
 	self:addElement( IdentityTiledBg )

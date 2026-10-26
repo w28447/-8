@@ -117,7 +117,7 @@ function function_282e13e0( n_set, n_digit, n_value, n_id )
     waitframe( 1 );
     level.var_3bf3d61e[ n_id ].fx = playfxontag( level._effect[ "code_value_" + n_value ], level.var_3bf3d61e[ n_id ].tagorigin, "tag_origin" );
     waitframe( 1 );
-    playsoundatposition( #"hash_146ecbfb7f5982b5", level.var_3bf3d61e[ n_id ].origin );
+    playsoundatposition( #"evt_ee_code_reveal", level.var_3bf3d61e[ n_id ].origin );
 }
 
 // Namespace zm_office_ww_quest/zm_office_ww_quest
@@ -272,7 +272,7 @@ function function_4bda6e6c()
     while ( true )
     {
         waitresult = self waittill( #"trigger" );
-        playsoundatposition( #"hash_5321ac1dbb962d10", level.s_code_machine.origin );
+        playsoundatposition( #"evt_ee_code_button_press", level.s_code_machine.origin );
         level.s_code_machine validate_code( waitresult.activator );
     }
 }
@@ -307,20 +307,20 @@ function validate_code( e_player )
     
     if ( n_index === self.var_8e3c257e )
     {
-        playsoundatposition( #"hash_6e645a454ec49519", level.s_code_machine.origin );
+        playsoundatposition( #"evt_ee_code_confirm_tone", level.s_code_machine.origin );
         self.var_8e3c257e++;
         
         if ( self.var_8e3c257e == 4 )
         {
             self thread function_9257b202( e_player );
-            playsoundatposition( #"hash_6f02282233234d2f", level.s_code_machine.origin );
+            playsoundatposition( #"evt_ee_code_confirm_final", level.s_code_machine.origin );
             function_1c4908ff();
         }
         
         return;
     }
     
-    playsoundatposition( #"hash_2ff8d043c3a03206", level.s_code_machine.origin );
+    playsoundatposition( #"evt_ee_code_error", level.s_code_machine.origin );
     level thread zm_office_vo_hooks::function_d7b93e68( e_player, n_index );
     self.var_8e3c257e = 0;
 }
@@ -370,7 +370,7 @@ function function_1e50cd08( var_63eb3fcd )
     }
     
     self.var_f8a3f316[ var_63eb3fcd ] show();
-    playsoundatposition( #"hash_1ab40245f7cae5d3", ( -670, 1700, -451 ) );
+    playsoundatposition( #"evt_ee_screen_switch", ( -670, 1700, -451 ) );
     
     if ( isdefined( self.var_bec5b6d ) )
     {
@@ -567,7 +567,7 @@ function crate_think()
             continue;
         }
         
-        level.s_ww_quest_reward.e_crate_hinge playsound( #"hash_49e33105c3290371" );
+        level.s_ww_quest_reward.e_crate_hinge playsound( #"evt_ee_ww_crate_open" );
         level.s_ww_quest_reward.e_crate_hinge rotatepitch( 110, 1 );
         level.s_ww_quest_reward.var_5e34c88c = 1;
     }

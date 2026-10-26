@@ -186,7 +186,7 @@
     "hash_1877a41463bbaec6": "ミッションを完了してメネンデスをアンロック",
     "menu/fileshare_deleting": "$(fileshareRoot.currentCategoryNameSingleCaps)を削除中",
     "hash_189d868d756bb77d": "ドリフター",
-    "hash_18af89f3e3e8dae8": "目標完了",
+    "survival_prototype/objective_complete": "目標完了",
     "hash_18dc8ecefebf1515": "+50% XP / キル",
     "hash_18fc67098800a626": "ダウンした味方の蘇生を加速。蘇生された味方は体力が増加\n起動時間: 2秒\n持続時間: 240秒",
     "menu/hud_vehicle_reload": "リロード",

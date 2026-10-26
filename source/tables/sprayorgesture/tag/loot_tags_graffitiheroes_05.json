@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_graffitiheroes_05",
+    "type": "#tag",
+    "material": "#hash_6118edee4c5634d0",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_72303024b12c44a0",
+        "icon": "image#loot_ui_icon_tags_graffitiheroes_05",
+        "isdefault": 0
+    }
+}

@@ -47,8 +47,8 @@
             "1 0.05"
         ]
     ],
-    "firesound": "#hash_1a8618a42206290a",
-    "firesoundplayer": "#hash_43d97fa3f0ea530f",
+    "firesound": "#wpn_reaper_lmg_single_npc",
+    "firesoundplayer": "#wpn_reaper_lmg_single_plr",
     "sound250": "#uin_unavailable_charging",
     "sound260": "#prj_crack_supersonic",
     "sound3e0": "#mpl_hero_weap_lose",

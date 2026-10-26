@@ -25,7 +25,7 @@ CoD.DirectorLobbyMemberInternalCardNeverExpanded.new = function ( f1_arg0, f1_ar
 	
 	local BackingBorder = LUI.UIImage.new( 0, 0, 0, 68, 0, 0, 0, 68 )
 	BackingBorder:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	BackingBorder:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	BackingBorder:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	BackingBorder:setShaderVector( 0, 0, 0, 0, 0 )
 	BackingBorder:setupNineSliceShader( 196, 88 )
 	self:addElement( BackingBorder )

@@ -127,7 +127,7 @@ function onoutofboundschange( localclientnum, oldval, newval, bnewent, binitials
             
             if ( util::get_game_type() === #"zstandard" )
             {
-                level.oob_sound_ent[ localclientnum ] playloopsound( #"hash_6da7ae12f538ef5e", 0.5 );
+                level.oob_sound_ent[ localclientnum ] playloopsound( #"zmb_rush_out_of_bounds", 0.5 );
             }
             else
             {

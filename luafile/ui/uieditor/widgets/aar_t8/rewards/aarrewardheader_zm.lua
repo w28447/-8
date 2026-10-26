@@ -14,7 +14,7 @@ CoD.AARRewardHeader_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	Pointer:setRGB( 0.32, 0.34, 0.13 )
 	Pointer:setAlpha( 0.2 )
 	Pointer:setZRot( 180 )
-	Pointer:setMaterial( LUI.UIImage.GetCachedMaterial( 0xBE6E734C31AE757 ) )
+	Pointer:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_triangle_normal" ) )
 	self:addElement( Pointer )
 	self.Pointer = Pointer
 	
@@ -57,7 +57,7 @@ CoD.AARRewardHeader_ZM.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_a
 	local TiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0.51, 0.8, 20, 0 )
 	TiledBacking:setAlpha( 0.5 )
 	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
 	self:addElement( TiledBacking )

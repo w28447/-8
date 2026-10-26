@@ -149,7 +149,7 @@
 89,camo,weaponoption,&#menu/camo_loot_megalodon,camo_dlc3_shark_plaque,0,#menu_camo_megalodon_pattern,&#menu/camo_loot_megalodon,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc3_shark_plaque
 90,camo,weaponoption,&#hash_714cce81de873f11,camo_dlc3_armor,0,#hash_61189eaa5c0e3d56,&#hash_714cce81de873f11,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc3_armor
 91,camo,weaponoption,&#hash_560d002c6e40e5df,camo_dlc3_blowfish,0,#hash_7c10fd192409792f,&#hash_560d002c6e40e5df,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc3_blowfish
-92,camo,weaponoption,&#hash_694b66b1b888e2a8,camo_dlc3_board_shorts,0,#hash_5f38f940fb16ed6e,&#hash_694b66b1b888e2a8,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc3_board_shorts
+92,camo,weaponoption,&#hash_694b66b1b888e2a8,camo_dlc3_board_shorts,0,#menu_camo_surf_ops_pattern,&#hash_694b66b1b888e2a8,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc3_board_shorts
 93,camo,weaponoption,&#hash_24a3e0f402bfd000,camo_dlc3_twitch_prime3,0,#menu_camo_promo_sourcherry_pattern,&#hash_24a3e0f402bfd000,&#,,0,0,,0,0,0,0,,,FALSE,loot,#hash_74ca77fc7779f36,lootbase,#,,,#camo_dlc3_twitch_prime3
 94,camo,weaponoption,&#menu/camo_loot_bacon,camo_dlc3_bacon,0,#menu_camo_bacon_pattern,&#menu/camo_loot_bacon,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc3_bacon
 95,camo,weaponoption,&#menu/camo_active_spinal,camo_active_dlc4_spinal_wrapper,0,#menu_camo_active_spinal_fluid_pattern,&#menu/camo_active_spinal,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,active,#ar_accurate_t8,,,#camo_active_dlc4_spinal_wrapper
@@ -159,7 +159,7 @@
 99,camo,weaponoption,&#menu/camo_loot_astronomy,camo_dlc4_astronomy,0,#menu_camo_astrology_pattern,&#menu/camo_loot_astronomy,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc4_astronomy
 100,camo,weaponoption,&#menu/camo_loot_goosebumps,camo_dlc4_goosebumps,0,#menu_camo_bogeyman_pattern,&#menu/camo_loot_goosebumps,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc4_goosebumps
 101,camo,weaponoption,&#menu/camo_loot_paradise,camo_dlc4_paradise,0,#menu_camo_paradise_pattern,&#menu/camo_loot_paradise,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc4_paradise
-102,camo,weaponoption,&#menu/camo_loot_picnic_royale,camo_dlc4_picnic_royale,0,#hash_7d97b1d1ae2be9b1,&#menu/camo_loot_picnic_royale,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc4_picnic_royale
+102,camo,weaponoption,&#menu/camo_loot_picnic_royale,camo_dlc4_picnic_royale,0,#menu_camo_picnic_royale,&#menu/camo_loot_picnic_royale,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc4_picnic_royale
 103,camo,weaponoption,&#menu/camo_loot_zombie_maitai,camo_dlc4_zombie_maitai,0,#menu_camo_maitai_pattern,&#menu/camo_loot_zombie_maitai,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc4_zombie_maitai
 104,camo,weaponoption,&#menu/camo_loot_smokeblast,camo_dlc4_smokeblast,0,#menu_camo_smoke_blast_pattern,&#menu/camo_loot_smokeblast,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc4_smokeblast
 105,camo,weaponoption,&#menu/camo_loot_fearhaze,camo_dlc4_fearhaze,0,#menu_camo_fear_haze_pattern,&#menu/camo_loot_fearhaze,&#,,0,0,,0,0,0,0,,,FALSE,loot,#,lootbase,#,,,#camo_dlc4_fearhaze

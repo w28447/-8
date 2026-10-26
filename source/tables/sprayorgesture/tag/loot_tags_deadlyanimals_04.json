@@ -1,0 +1,11 @@
+{
+    "name": "#loot_tags_deadlyanimals_04",
+    "type": "#tag",
+    "material": "#hash_b73a1decc9045d",
+    "bundle": {
+        "type": "#tag",
+        "title": "localized18#hash_1a9fab870dbd2d23",
+        "icon": "image#loot_ui_icon_tags_deadlyanimals_04",
+        "isdefault": 0
+    }
+}

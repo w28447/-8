@@ -562,7 +562,7 @@ function private function_b9a31cb( e_item, e_player )
     
     if ( !zm_white_main_quest::function_6cebbce1() && zm_utility::is_classic() )
     {
-        level.var_23674b8f.e_player thread zm_white_util::function_491673da( #"hash_4164610d88a43d16" );
+        level.var_23674b8f.e_player thread zm_white_util::function_491673da( #"vox_ww_y_pickup_rush_0" );
     }
 }
 

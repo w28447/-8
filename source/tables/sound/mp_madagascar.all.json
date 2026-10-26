@@ -2567,13 +2567,13 @@
         {
             "value": 1,
             "next": 29,
-            "name": "#hash_42339ab27b12c98e",
+            "name": "#amb_madagascar_ext_wind_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_42339ab27b12c98e",
+                    "name": "#amb_madagascar_ext_wind_2d",
                     "assetId": "#amb/environment/wind/canyon/outdoor_canyon_wind.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -2616,13 +2616,13 @@
         {
             "value": 88,
             "next": 65535,
-            "name": "#hash_499cbcf116d66894",
+            "name": "#amb_madagascar_int_wind_2d",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_499cbcf116d66894",
+                    "name": "#amb_madagascar_int_wind_2d",
                     "assetId": "#amb/environment/location_bgs/country_air/interior/amb_int_country_air.sl100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -4638,13 +4638,13 @@
         {
             "value": 149,
             "next": 65535,
-            "name": "#hash_5970a11a29706b7",
+            "name": "#amb_well_water_drips",
             "sequence": 0,
             "cullDistance": 1000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5970a11a29706b7",
+                    "name": "#amb_well_water_drips",
                     "assetId": "#amb/environment/water/well/well_drips_01.ll100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -8230,13 +8230,13 @@
         {
             "value": 22,
             "next": 90,
-            "name": "#hash_7f118ea3a4874268",
+            "name": "#dst_mp_propane_tank_fire",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7f118ea3a4874268",
+                    "name": "#dst_mp_propane_tank_fire",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
                     "assetFileNameRelease": "#mp_madagascar.all",
@@ -10047,7 +10047,7 @@
             "aliases": [
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -10088,7 +10088,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -10129,7 +10129,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -10170,7 +10170,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -10211,7 +10211,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -10252,7 +10252,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -10293,7 +10293,7 @@
                 },
                 {
                     "name": "#dst_transformer_explo",
-                    "secondaryname": "#hash_3b6983b084cfef53",
+                    "secondaryname": "#dst_transformer_explo_spark",
                     "assetId": "#exp/prop/barrel/explo/exp_barrel_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -10337,13 +10337,13 @@
         {
             "value": 46,
             "next": 95,
-            "name": "#hash_3b6983b084cfef53",
+            "name": "#dst_transformer_explo_spark",
             "sequence": 0,
             "cullDistance": 6000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
@@ -10384,7 +10384,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
@@ -10425,7 +10425,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
@@ -10466,7 +10466,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
@@ -10507,7 +10507,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_04.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
@@ -10548,7 +10548,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_05.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
@@ -10589,7 +10589,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_06.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
@@ -10630,7 +10630,7 @@
                     "unk178": "#hash_6030b0808"
                 },
                 {
-                    "name": "#hash_3b6983b084cfef53",
+                    "name": "#dst_transformer_explo_spark",
                     "secondaryname": "#dst_transformer_lfe",
                     "assetId": "#pfx/sparks/generic/sparks_new_07.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
@@ -15726,13 +15726,13 @@
         {
             "value": 116,
             "next": 126,
-            "name": "#hash_200e28bcd26bab77",
+            "name": "#exp_mp_propane_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_200e28bcd26bab77",
+                    "name": "#exp_mp_propane_flux_l",
                     "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
@@ -15777,13 +15777,13 @@
         {
             "value": 37,
             "next": 65535,
-            "name": "#hash_200e2ebcd26bb5a9",
+            "name": "#exp_mp_propane_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_200e2ebcd26bb5a9",
+                    "name": "#exp_mp_propane_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_r/flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -16124,13 +16124,13 @@
         {
             "value": 115,
             "next": 65535,
-            "name": "#hash_7ac5fa6568de2461",
+            "name": "#exp_mp_propane_tank_lfe",
             "sequence": 0,
             "cullDistance": 2500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -16169,7 +16169,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -16208,7 +16208,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -16247,7 +16247,7 @@
                     "unk178": "#hash_c030b0808"
                 },
                 {
-                    "name": "#hash_7ac5fa6568de2461",
+                    "name": "#exp_mp_propane_tank_lfe",
                     "assetId": "#exp/prop/barrel/lfe/exp_barrel_lfe_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -16776,13 +16776,13 @@
         {
             "value": 136,
             "next": 65535,
-            "name": "#hash_456af38afaef9d77",
+            "name": "#exp_propane_flux_l",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_456af38afaef9d77",
+                    "name": "#exp_propane_flux_l",
                     "secondaryname": "#exp_barrel_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_l/flux_l_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
@@ -16827,13 +16827,13 @@
         {
             "value": 32,
             "next": 65535,
-            "name": "#hash_456af98afaefa7a9",
+            "name": "#exp_propane_flux_r",
             "sequence": 0,
             "cullDistance": 15000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_456af98afaefa7a9",
+                    "name": "#exp_propane_flux_r",
                     "assetId": "#wpn/grenade/explosion/flux_r/flux_r_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -18359,13 +18359,13 @@
         {
             "value": 48,
             "next": 65535,
-            "name": "#hash_5b18895703fba823",
+            "name": "#pfx_transformer_arcs",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -18404,7 +18404,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -18443,7 +18443,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -18482,7 +18482,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_5b18895703fba823",
+                    "name": "#pfx_transformer_arcs",
                     "assetId": "#pfx/sparks/ladder/oneshot/arc_pop_03.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -18525,13 +18525,13 @@
         {
             "value": 84,
             "next": 37,
-            "name": "#hash_4ca3d2aaa573f1c8",
+            "name": "#pfx_transformer_sparks",
             "sequence": 0,
             "cullDistance": 2000,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_4ca3d2aaa573f1c8",
+                    "name": "#pfx_transformer_sparks",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_00.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -18570,7 +18570,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_4ca3d2aaa573f1c8",
+                    "name": "#pfx_transformer_sparks",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_01.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -18609,7 +18609,7 @@
                     "unk178": "#hash_503090308"
                 },
                 {
-                    "name": "#hash_4ca3d2aaa573f1c8",
+                    "name": "#pfx_transformer_sparks",
                     "assetId": "#pfx/sparks/xlrg/spark_xlrg_02.ln100.pc.snd",
                     "assetFileNameSustain": "#mp_madagascar.all",
                     "assetIdRelease": "#mp_madagascar.all",
@@ -18755,7 +18755,7 @@
             "duck": "default",
             "id": "#mp_madagascar_hut",
             "reverb": "#room_bedroom",
-            "loop": "#hash_499cbcf116d66894",
+            "loop": "#amb_madagascar_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -18777,7 +18777,7 @@
             "duck": "default",
             "id": "#mp_madagascar_main_room",
             "reverb": "#room_livingroom",
-            "loop": "#hash_499cbcf116d66894",
+            "loop": "#amb_madagascar_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -18799,7 +18799,7 @@
             "duck": "default",
             "id": "#mp_madagascar_med_room",
             "reverb": "#room_livingroom",
-            "loop": "#hash_499cbcf116d66894",
+            "loop": "#amb_madagascar_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -18821,7 +18821,7 @@
             "duck": "default",
             "id": "#mp_madagascar_out_stairs",
             "reverb": "#room_hallway",
-            "loop": "#hash_499cbcf116d66894",
+            "loop": "#amb_madagascar_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",
@@ -18843,7 +18843,7 @@
             "duck": "default",
             "id": "#mp_madagascar_outdoor",
             "reverb": "#outdoor_still",
-            "loop": "#hash_42339ab27b12c98e",
+            "loop": "#amb_madagascar_ext_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#outdoor",
@@ -18865,7 +18865,7 @@
             "duck": "default",
             "id": "#mp_madagascar_stairs",
             "reverb": "#narrow_stairwell",
-            "loop": "#hash_499cbcf116d66894",
+            "loop": "#amb_madagascar_int_wind_2d",
             "duckId": "#default",
             "entityContextType0": "#ringoff_plr",
             "entityContextValue0": "#indoor",

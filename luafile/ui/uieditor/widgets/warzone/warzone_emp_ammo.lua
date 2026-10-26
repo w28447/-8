@@ -9,7 +9,7 @@ CoD.Warzone_EMP_Ammo.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local EMPbacker = LUI.UIImage.new( 0, 0, 4.5, 464.5, 0, 0, 5, 105 )
-	EMPbacker:setImage( RegisterImage( 0x8FB8532C566D3CF ) )
+	EMPbacker:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_emp_ammo_widget_backer" ) )
 	self:addElement( EMPbacker )
 	self.EMPbacker = EMPbacker
 	

@@ -2818,11 +2818,11 @@ function perseus_teleport_fx( v_destination )
     v_forward = anglestoforward( e_perseus.angles );
     level waittill( #"play_teleport_tell_fx" );
     var_2ff979fa = spawn( "script_model", v_destination );
-    var_2ff979fa playsound( #"hash_4cc85ba1ffa59d0b" );
+    var_2ff979fa playsound( #"evt_perseus_lightning_tell" );
     playfxontag( level._effect[ #"hash_661c427afb24e5f2" ], e_perseus, "tag_weapon_right" );
     playfx( level._effect[ #"hash_4d8d2bc22add9939" ], var_2ff979fa.origin, v_forward, ( 1, 0, 0 ) );
     level waittill( #"play_teleport_fx" );
-    playsoundatposition( #"hash_5e07cc4ee28c44e7", e_perseus.origin );
+    playsoundatposition( #"evt_perseus_dash_in", e_perseus.origin );
     playfx( level._effect[ #"perseus_teleport_dest" ], var_2ff979fa.origin, v_forward, ( 1, 0, 0 ) );
     playfx( level._effect[ #"perseus_teleport_boss" ], e_perseus gettagorigin( "j_spine4" ), v_forward, ( 1, 0, 0 ) );
     wait 2;

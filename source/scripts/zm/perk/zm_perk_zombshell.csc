@@ -80,8 +80,8 @@ function zombshell_aoe( localclientnum, oldval, newval, bnewent, binitialsnap, f
         
         if ( !isdefined( self.var_e3d27e69 ) )
         {
-            self playsound( localclientnum, #"hash_6aa32cc737673479" );
-            self.var_e3d27e69 = self playloopsound( #"hash_d377c202c27be3f" );
+            self playsound( localclientnum, #"zmb_vapor_zombshell_start" );
+            self.var_e3d27e69 = self playloopsound( #"zmb_vapor_zombshell_lp" );
         }
         
         return;
@@ -95,7 +95,7 @@ function zombshell_aoe( localclientnum, oldval, newval, bnewent, binitialsnap, f
     
     if ( isdefined( self.var_e3d27e69 ) )
     {
-        self playsound( localclientnum, #"hash_5aa45eab2ab681e8" );
+        self playsound( localclientnum, #"zmb_vapor_zombshell_end" );
         self stoploopsound( self.var_e3d27e69 );
         self.var_e3d27e69 = undefined;
     }

@@ -1134,7 +1134,7 @@ CoD.NotificationUtility.InitGameUpdateNotification = function ( f60_arg0, f60_ar
 	end
 	
 	f60_arg0:subscribeToGlobalModel( f60_arg1, "PerController", "scriptNotify", function ( model )
-		if Engine.GetModelValue( model ) ~= 0xB67AA04E378D681 then
+		if Engine.GetModelValue( model ) ~= "game_update_notification" then
 			return 
 		elseif Engine.IsVisibilityBitSet( f60_arg1, Enum.UIVisibilityBit[0x198075B069840DC] ) and not Engine.IsVisibilityBitSet( f60_arg1, Enum.UIVisibilityBit[0x24E603C16FCC38F] ) then
 			return 

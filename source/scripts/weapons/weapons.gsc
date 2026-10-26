@@ -37,8 +37,8 @@ function init_shared()
     level.weaponriotshield = getweapon( #"riotshield" );
     level.weaponflashgrenade = getweapon( #"flash_grenade" );
     level.weaponsatchelcharge = getweapon( #"satchel_charge" );
-    level.var_43a51921 = getweapon( #"hash_5a7fd1af4a1d5c9" );
-    level.var_387e902c = getweapon( #"hash_31be8125c7d0f273" );
+    level.weaponnulloffhandherogadget = getweapon( #"null_offhand_hero_gadget" );
+    level.weaponnulloffhandultimate = getweapon( #"null_offhand_ultimate" );
     level.var_34d27b26 = getweapon( #"null_offhand_primary" );
     level.var_6388e216 = getweapon( #"null_offhand_secondary" );
     

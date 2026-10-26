@@ -399,7 +399,7 @@ function function_aba430c2( s_unitrigger )
         
         if ( isdefined( e_player ) && !isdefined( e_player.var_68c35930 ) )
         {
-            e_player playsound( #"hash_7e0e4a1fb470d18f" );
+            e_player playsound( #"zmb_sq_audiolog_roll_pickup" );
             e_player.var_68c35930 = self;
             self hide();
             zm_unitrigger::unregister_unitrigger( s_unitrigger );
@@ -427,7 +427,7 @@ function function_63c3fd24( var_314c1b5a )
                 self.var_68c35930.origin = self.origin;
                 self.var_68c35930.angles = self.angles;
                 self.var_68c35930 show();
-                self.var_68c35930 playsound( #"hash_343bf66b64f5830e" );
+                self.var_68c35930 playsound( #"zmb_sq_audiolog_roll_place" );
                 e_player.var_68c35930 = undefined;
             }
             
@@ -440,23 +440,23 @@ function function_63c3fd24( var_314c1b5a )
             level flag::set( #"phonograph_playing" );
             self.var_68c35930 notify( #"hash_2b02b5a5a9af36e0" );
             self.var_68c35930 notify( #"hash_44144f80f295a13f" );
-            self.var_68c35930 playsound( #"hash_7c91fa775c8a0134" );
+            self.var_68c35930 playsound( #"zmb_sq_audiolog_gramo_start" );
             
             if ( self.var_68c35930.script_int == 0 )
             {
-                self.var_68c35930 playloopsound( #"hash_3d52d57aceee74ce" );
+                self.var_68c35930 playloopsound( #"zmb_sq_audiolog_bg_disc" );
             }
             else if ( self.var_68c35930.script_int == 7 )
             {
-                self.var_68c35930 playloopsound( #"hash_5b492b8c8a8bb4d8" );
+                self.var_68c35930 playloopsound( #"zmb_sq_audiolog_bg_brun" );
             }
             else if ( self.var_68c35930.script_int == 8 )
             {
-                self.var_68c35930 playloopsound( #"hash_704a9f09fe3a48c2" );
+                self.var_68c35930 playloopsound( #"zmb_sq_audiolog_bg_scar" );
             }
             else
             {
-                self.var_68c35930 playloopsound( #"hash_2367dae4a69a4294" );
+                self.var_68c35930 playloopsound( #"zmb_sq_audiolog_gramo_lp" );
             }
             
             wait 1;
@@ -464,7 +464,7 @@ function function_63c3fd24( var_314c1b5a )
             level flag::clear( #"phonograph_playing" );
             self.var_68c35930 notify( #"roll_stop_spin" );
             self.var_68c35930 stoploopsound();
-            self.var_68c35930 playsound( #"hash_376eaa517cd09530" );
+            self.var_68c35930 playsound( #"zmb_sq_audiolog_gramo_stop" );
             self.var_68c35930 thread function_ad05f6f3();
         }
     }
@@ -526,7 +526,7 @@ function function_ad05f6f3()
         }
     }
     
-    playsoundatposition( #"hash_2cf59d6222de4f6f", self.origin );
+    playsoundatposition( #"zmb_sq_audiolog_roll_destroy", self.origin );
     self delete();
 }
 

@@ -6,7 +6,7 @@
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/thats_a_knife",
-        "icon": "image#hash_32752a9009de6d06",
+        "icon": "image#ui_icon_emotes_s2_thats_a_knife",
         "isdefault": 0
     }
 }

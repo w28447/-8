@@ -106,7 +106,7 @@ LUI.createMenu.StartMenu_Options_Controls_PreviewKeybindings = function ( f1_arg
 	local NoiseTiledBacking = LUI.UIImage.new( 0.5, 0.5, -400, 400, 1, 1, -730, -510 )
 	NoiseTiledBacking:setAlpha( 0.7 )
 	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
 	self:addElement( NoiseTiledBacking )

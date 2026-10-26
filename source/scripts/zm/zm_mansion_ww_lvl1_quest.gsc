@@ -389,11 +389,11 @@ function scramble_lock( n_random_start )
     for ( i = 0; i < n_random_start ; i++ )
     {
         self notify( #"rotate_lock" );
-        self playsound( #"hash_559df0c493fb2378" );
+        self playsound( #"zmb_combo_case_scramble_turn" );
         self rotateroll( -90, 0.5 );
         self waittill( #"rotatedone" );
-        self stopsound( #"hash_559df0c493fb2378" );
-        self playsound( #"hash_1a44db892b73701b" );
+        self stopsound( #"zmb_combo_case_scramble_turn" );
+        self playsound( #"zmb_combo_case_scramble_stop" );
     }
     
     level notify( "ww_lock_scrambled_" + self.script_int );

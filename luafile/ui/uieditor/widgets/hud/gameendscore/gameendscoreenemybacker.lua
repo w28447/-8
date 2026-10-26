@@ -33,14 +33,14 @@ CoD.GameEndScoreEnemyBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local BaseBacking = LUI.UIImage.new( 0, 0, 265, 725, 0, 0, 36, 132 )
 	BaseBacking:setAlpha( 0.4 )
-	BaseBacking:setImage( RegisterImage( 0x150D844945517BE ) )
+	BaseBacking:setImage( RegisterImage( "uie_ui_menu_mp_endgame_mask_bg" ) )
 	self:addElement( BaseBacking )
 	self.BaseBacking = BaseBacking
 	
 	local Base = LUI.UIImage.new( 0, 0, 265, 725, 0, 0, 36, 132 )
 	Base:setAlpha( 0.6 )
 	Base:setYRot( 180 )
-	Base:setImage( RegisterImage( 0x3A7D3CD626132BD ) )
+	Base:setImage( RegisterImage( "uie_ui_menu_mp_endgame_shoutcaster_bg" ) )
 	Base:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	Base:setShaderVector( 0, 1, 0, 0, 0 )
 	Base:subscribeToGlobalModel( f1_arg1, "Factions", "axisFactionColor", function ( model )
@@ -68,7 +68,7 @@ CoD.GameEndScoreEnemyBacker.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	
 	local StripGlow = LUI.UIImage.new( 0, 0, 265, 725, 0, 0, 122, 130 )
 	StripGlow:setYRot( 180 )
-	StripGlow:setImage( RegisterImage( 0x70FECC2924AE8EC ) )
+	StripGlow:setImage( RegisterImage( "uie_ui_menu_mp_endgame_shoutcaster_botbar" ) )
 	StripGlow:setMaterial( LUI.UIImage.GetCachedMaterial( 0x1CC85D0A86303B0 ) )
 	StripGlow:setShaderVector( 0, 1, 0, 0, 0 )
 	StripGlow:subscribeToGlobalModel( f1_arg1, "Factions", "axisFactionColor", function ( model )

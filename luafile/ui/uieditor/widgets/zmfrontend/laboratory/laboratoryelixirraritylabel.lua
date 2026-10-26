@@ -22,7 +22,7 @@ CoD.LaboratoryElixirRarityLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local Smoke = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 30 )
 	Smoke:setImage( RegisterImage( "uie_zm_hud_inventory_objectivesmoke" ) )
-	Smoke:setMaterial( LUI.UIImage.GetCachedMaterial( 0xC221B51E4063E3D ) )
+	Smoke:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_add" ) )
 	Smoke:setShaderVector( 0, 0, 0.35, 0, 0 )
 	Smoke:setShaderVector( 1, 1, 1, 0, 0 )
 	Smoke:setShaderVector( 2, 0, 0, 0, 0 )
@@ -37,7 +37,7 @@ CoD.LaboratoryElixirRarityLabel.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	
 	local Glow = LUI.UIImage.new( 0, 1, 0, 0, 0, 0, 0, 30 )
 	Glow:setImage( RegisterImage( 0x878403A52310930 ) )
-	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( 0xC221B51E4063E3D ) )
+	Glow:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_crop_add" ) )
 	Glow:setShaderVector( 0, 0, 0.39, 0, 0 )
 	Glow:setShaderVector( 1, 1, 1, 0, 0 )
 	Glow:setShaderVector( 2, 0, 0, 0, 0 )

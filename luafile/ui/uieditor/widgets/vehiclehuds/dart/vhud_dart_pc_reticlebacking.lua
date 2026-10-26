@@ -37,7 +37,7 @@ CoD.vhud_dart_PC_reticleBacking.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local TiledShaderImage = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	TiledShaderImage:setAlpha( 0.55 )
 	TiledShaderImage:setImage( RegisterImage( "uie_ui_hud_vehicle_dart_scanline" ) )
-	TiledShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	TiledShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	TiledShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage:setupNineSliceShader( 64, 64 )
 	self:addElement( TiledShaderImage )

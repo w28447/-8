@@ -305,7 +305,7 @@ function function_d74a3faf( e_player )
         
         exploder::exploder( "fxexplo_magma_window_barrier_fx" );
         level.var_cc5631a6 clientfield::set( "" + #"magma_fireplace_fx", 1 );
-        playsoundatposition( #"hash_2c4234f291620027", self.origin );
+        playsoundatposition( #"zmb_magmagat_fireplace_set", self.origin );
         self.var_607f49de = zm_utility::spawn_weapon_model( getweapon( var_f2528cbc ), undefined, self.v_weapon_origin, self.v_weapon_angles );
         self.var_607f49de thread scene::play( #"p8_fxanim_zm_esc_blundergat_fireplace_hover_bundle", self.var_607f49de );
         level flag::clear( #"hash_3ec656e276ceee53" );
@@ -629,25 +629,25 @@ function function_9689b55c( var_88f24b00 )
         if ( isplayer( s_result.activator ) )
         {
             level.var_19a54d73++;
-            s_result.activator playsound( #"hash_7924de0ae1c7e3c7" );
+            s_result.activator playsound( #"zmb_magmagat_orb_collect" );
             
             if ( level.var_19a54d73 == var_39662a63 )
             {
                 var_ddbc98df setmodel( "p8_zm_esc_skull_afterlife" );
                 var_ddbc98df thread clientfield::set( "" + #"magma_fireplace_skull_fx", 1 );
-                var_ddbc98df playsound( #"hash_4fad63fcdab19a1d" );
+                var_ddbc98df playsound( #"zmb_magmagat_skull_light" );
             }
             else if ( level.var_19a54d73 == var_39662a63 * 2 )
             {
                 var_f697c38 setmodel( "p8_zm_esc_skull_afterlife" );
                 var_f697c38 thread clientfield::set( "" + #"magma_fireplace_skull_fx", 1 );
-                var_f697c38 playsound( #"hash_4fad63fcdab19a1d" );
+                var_f697c38 playsound( #"zmb_magmagat_skull_light" );
             }
             else if ( level.var_19a54d73 >= 15 )
             {
                 var_b9484ff7 setmodel( "p8_zm_esc_skull_afterlife" );
                 var_b9484ff7 thread clientfield::set( "" + #"magma_fireplace_skull_fx", 1 );
-                var_b9484ff7 playsound( #"hash_57188d77b17d82ca" );
+                var_b9484ff7 playsound( #"zmb_magmagat_skull_light_last" );
                 level.var_cc5631a6 clientfield::set( "" + #"magma_fireplace_fx", 2 );
                 exploder::exploder_stop( "fxexplo_magma_window_barrier_fx" );
                 level flag::set( #"hash_3fb7d58b07b04333" );
@@ -702,7 +702,7 @@ function function_ce0bd88a( var_146228fb )
     }
     
     self clientfield::set( "" + #"magma_gat_essence_fx", 0 );
-    playsoundatposition( #"hash_279a376468c0749c", self.origin );
+    playsoundatposition( #"zmb_magmagat_orb_disappear", self.origin );
     self delete();
 }
 

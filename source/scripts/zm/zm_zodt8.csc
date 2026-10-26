@@ -639,7 +639,7 @@ function pap_projectile_fx( localclientnum, oldval, newval, bnewent, binitialsna
         
         if ( !isdefined( self.var_353ff2a ) )
         {
-            self.var_353ff2a = self playloopsound( #"hash_2ac2bbbfef2face4" );
+            self.var_353ff2a = self playloopsound( #"zmb_sentinel_trial_pap_projectile" );
         }
         
         return;
@@ -683,7 +683,7 @@ function sentinel_artifact_activated( localclientnum, oldval, newval, bnewent, b
     {
         self.fx = util::playfxontag( localclientnum, level._effect[ #"sentinel_aura" ], self, "tag_fx_x_pos" );
         self playrenderoverridebundle( #"hash_1589a47f2fdc6c67" );
-        self.sfx_id = self playloopsound( #"hash_66df9cab2c64f968" );
+        self.sfx_id = self playloopsound( #"zmb_sentinel_artifact_ghosted_lp" );
         return;
     }
     
@@ -723,7 +723,7 @@ function sentinel_artifact_activated( localclientnum, oldval, newval, bnewent, b
     }
     
     self playsound( localclientnum, #"zmb_sentinel_artifact_explode" );
-    self playsound( localclientnum, #"hash_3d8fef5997663b17" );
+    self playsound( localclientnum, #"zmb_sentinel_trial_activate_2d" );
 }
 
 // Namespace zm_zodt8/zm_zodt8

@@ -22,7 +22,7 @@ CoD.NotificationRewardWidget.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3
 	local PixelGrid = LUI.UIImage.new( 0, 0, 312, 384, 0, 0, 12, 84 )
 	PixelGrid:setAlpha( 0.5 )
 	PixelGrid:setImage( RegisterImage( "uie_ui_hud_notifications_pixelpattern" ) )
-	PixelGrid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	PixelGrid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	PixelGrid:setShaderVector( 0, 0, 0, 0, 0 )
 	PixelGrid:setupNineSliceShader( 64, 64 )
 	self:addElement( PixelGrid )

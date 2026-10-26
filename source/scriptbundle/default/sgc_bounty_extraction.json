@@ -5,7 +5,7 @@
     "reconcallout": "#vox_reco_callout_extraction",
     "name": "sgc_bounty_extraction",
     "hash_24d23b21": 0,
-    "crashcallout": "#hash_d4a0a9af5fe9b73",
+    "crashcallout": "#vox_cras_callout_extraction",
     "reapercallout": "#vox_reap_callout_extraction",
     "swatcallout": "#vox_swat_callout_extraction",
     "batterycallout": "#vox_batt_callout_extraction",

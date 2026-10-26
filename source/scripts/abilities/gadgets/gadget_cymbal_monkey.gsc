@@ -56,7 +56,7 @@ function private __main__()
 function private function_a23699fe()
 {
     level endon( #"game_ended" );
-    sticker_iw9_512 = 250;
+    var_7c3be2dc = 250;
     
     while ( true )
     {
@@ -75,7 +75,7 @@ function private function_a23699fe()
                 continue;
             }
             
-            if ( function_7e60533f( monkey, sticker_iw9_512 ) )
+            if ( function_7e60533f( monkey, var_7c3be2dc ) )
             {
                 monkey thread function_b9934c1d();
             }

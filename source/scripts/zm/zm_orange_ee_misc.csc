@@ -43,7 +43,7 @@ function jump_scare_lighthouse( localclientnum, oldval, newval, bnewent, binitia
     if ( newval )
     {
         self thread postfx::playpostfxbundle( #"hash_34d554b44dfcb81d" );
-        playsound( localclientnum, #"hash_750bc40787e0e29f", ( 0, 0, 0 ) );
+        playsound( localclientnum, #"evt_ee_lake_jumpscare_2", ( 0, 0, 0 ) );
     }
 }
 
@@ -56,7 +56,7 @@ function jump_scare_note( localclientnum, oldval, newval, bnewent, binitialsnap,
     if ( newval )
     {
         self thread postfx::playpostfxbundle( #"hash_34d551b44dfcb304" );
-        playsound( localclientnum, #"hash_750bc50787e0e452", ( 0, 0, 0 ) );
+        playsound( localclientnum, #"evt_ee_lake_jumpscare_1", ( 0, 0, 0 ) );
     }
 }
 

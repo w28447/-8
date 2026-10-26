@@ -13030,7 +13030,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_705bf74c76b6081d",
+                    "value": "#amb_comp_drives_1",
                     "unk1a": true
                 },
                 {
@@ -13096,7 +13096,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_705bf44c76b60304",
+                    "value": "#amb_comp_drives_2",
                     "unk1a": true
                 },
                 {
@@ -13162,7 +13162,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_705bf54c76b604b7",
+                    "value": "#amb_comp_drives_3",
                     "unk1a": true
                 },
                 {
@@ -13828,7 +13828,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_705bf74c76b6081d",
+                    "value": "#amb_comp_drives_1",
                     "unk1a": true
                 },
                 {
@@ -13894,7 +13894,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_705bf44c76b60304",
+                    "value": "#amb_comp_drives_2",
                     "unk1a": true
                 },
                 {
@@ -13960,7 +13960,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_705bf54c76b604b7",
+                    "value": "#amb_comp_drives_3",
                     "unk1a": true
                 },
                 {
@@ -14026,7 +14026,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_705bf54c76b604b7",
+                    "value": "#amb_comp_drives_3",
                     "unk1a": true
                 },
                 {
@@ -14236,7 +14236,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_705bf74c76b6081d",
+                    "value": "#amb_comp_drives_1",
                     "unk1a": true
                 },
                 {
@@ -14302,7 +14302,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_705bf44c76b60304",
+                    "value": "#amb_comp_drives_2",
                     "unk1a": true
                 },
                 {
@@ -14368,7 +14368,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_705bf54c76b604b7",
+                    "value": "#amb_comp_drives_3",
                     "unk1a": true
                 },
                 {
@@ -14494,7 +14494,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5bb0eade0414f62d",
+                    "value": "#vox_pa_generic_amb_1",
                     "unk1a": true
                 },
                 {
@@ -14566,7 +14566,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5bb0eade0414f62d",
+                    "value": "#vox_pa_generic_amb_1",
                     "unk1a": true
                 },
                 {
@@ -14638,7 +14638,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5bb0eade0414f62d",
+                    "value": "#vox_pa_generic_amb_1",
                     "unk1a": true
                 },
                 {
@@ -14710,7 +14710,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5bb0eade0414f62d",
+                    "value": "#vox_pa_generic_amb_1",
                     "unk1a": true
                 },
                 {
@@ -14782,7 +14782,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5bb0eade0414f62d",
+                    "value": "#vox_pa_generic_amb_1",
                     "unk1a": true
                 },
                 {
@@ -14854,7 +14854,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5bb0eade0414f62d",
+                    "value": "#vox_pa_generic_amb_1",
                     "unk1a": true
                 },
                 {
@@ -14926,7 +14926,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5bb0e7de0414f114",
+                    "value": "#vox_pa_generic_amb_2",
                     "unk1a": true
                 },
                 {
@@ -14998,7 +14998,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5bb0e7de0414f114",
+                    "value": "#vox_pa_generic_amb_2",
                     "unk1a": true
                 },
                 {
@@ -15070,7 +15070,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5bb0e7de0414f114",
+                    "value": "#vox_pa_generic_amb_2",
                     "unk1a": true
                 },
                 {
@@ -15142,7 +15142,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5bb0e7de0414f114",
+                    "value": "#vox_pa_generic_amb_2",
                     "unk1a": true
                 },
                 {
@@ -15214,7 +15214,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5bb0e7de0414f114",
+                    "value": "#vox_pa_generic_amb_2",
                     "unk1a": true
                 },
                 {
@@ -15286,7 +15286,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_5bb0e7de0414f114",
+                    "value": "#vox_pa_generic_amb_2",
                     "unk1a": true
                 },
                 {

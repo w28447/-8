@@ -761,16 +761,16 @@ function give_tribute( var_ecffa2a8, var_41f9c5ff = undefined, var_893baaf = und
         switch ( self.var_9e09931e )
         {
             case 1:
-                self playsoundtoplayer( #"hash_15350c3643360459", self );
+                self playsoundtoplayer( #"zmb_tribute_item_upgraded", self );
                 break;
             case 2:
-                self playsoundtoplayer( #"hash_15350c3643360459", self );
+                self playsoundtoplayer( #"zmb_tribute_item_upgraded", self );
                 break;
             case 3:
-                self playsoundtoplayer( #"hash_15350c3643360459", self );
+                self playsoundtoplayer( #"zmb_tribute_item_upgraded", self );
                 break;
             case 4:
-                self playsoundtoplayer( #"hash_15350c3643360459", self );
+                self playsoundtoplayer( #"zmb_tribute_item_upgraded", self );
                 break;
         }
         
@@ -1303,7 +1303,7 @@ function function_dcda5d87( mdl_reward, b_rotate = 1, var_b9b24 = 1, n_fx_type =
         return false;
     }
     
-    self playsound( #"hash_3a681f400deb121b" );
+    self playsound( #"zmb_challenges_receive_reward" );
     self thread zm_audio::create_and_play_dialog( #"tribute", #"boon" );
     return true;
 }

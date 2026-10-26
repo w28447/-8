@@ -520,7 +520,7 @@ else
 					name = modelValue,
 					data = CoD.GetScriptNotifyData( model )
 				} )
-			elseif modelValue == 0x9AB42B593C66ED then
+			elseif modelValue == "track_kill_stats" then
 				f0_local6( f31_arg0, {
 					controller = f31_arg0.controller,
 					name = modelValue,

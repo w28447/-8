@@ -380,7 +380,7 @@ function complete_soul_capture()
     }
     
     zm_sq_modules::end_soul_capture( self.var_b9989e12 );
-    playsoundatposition( #"hash_7cef2cb8d950a50", self.origin );
+    playsoundatposition( #"evt_trans_exp_close", self.origin );
     level.var_6b43507a -= 1;
     self notify( #"soul_capture_complete" );
 }

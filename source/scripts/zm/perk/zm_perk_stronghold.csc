@@ -89,8 +89,8 @@ function function_2400dd1d( localclientnum, oldval, newval, bnewent, binitialsna
         
         if ( !isdefined( self.var_2ec16150 ) )
         {
-            self playsound( localclientnum, #"hash_5e1e162af8490f1d" );
-            self.var_2ec16150 = self playloopsound( #"hash_641286598a33d4e3" );
+            self playsound( localclientnum, #"zmb_vapor_stronghold_start" );
+            self.var_2ec16150 = self playloopsound( #"zmb_vapor_stronghold_lp" );
         }
         
         return;
@@ -104,7 +104,7 @@ function function_2400dd1d( localclientnum, oldval, newval, bnewent, binitialsna
     
     if ( isdefined( self.var_2ec16150 ) )
     {
-        self playsound( localclientnum, #"hash_73b66a25abec1fe4" );
+        self playsound( localclientnum, #"zmb_vapor_stronghold_end" );
         self stoploopsound( self.var_2ec16150 );
         self.var_2ec16150 = undefined;
     }

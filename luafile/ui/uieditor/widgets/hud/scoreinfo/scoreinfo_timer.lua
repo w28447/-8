@@ -28,7 +28,7 @@ CoD.ScoreInfo_Timer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	TiledShaderImage:setRGB( 0, 0, 0 )
 	TiledShaderImage:setAlpha( 0.2 )
 	TiledShaderImage:setImage( RegisterImage( "uie_ui_hud_core_objective_widget_led_screen_02" ) )
-	TiledShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	TiledShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	TiledShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage:setupNineSliceShader( 220, 60 )
 	self:addElement( TiledShaderImage )
@@ -50,7 +50,7 @@ CoD.ScoreInfo_Timer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	
 	local ring3 = LUI.UIImage.new( 0, 0, 98, 101, 0, 0, 20, 23 )
 	ring3:setAlpha( 0 )
-	ring3:setImage( RegisterImage( 0x1C64E99F5F757CB ) )
+	ring3:setImage( RegisterImage( "uie_ui_hud_common_tiny_ring" ) )
 	ring3:setMaterial( LUI.UIImage.GetCachedMaterial( "ui_add" ) )
 	self:addElement( ring3 )
 	self.ring3 = ring3
@@ -136,7 +136,7 @@ CoD.ScoreInfo_Timer.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4
 	local OvertimeText = LUI.UIText.new( 0, 0, 2.5, 202.5, 0, 0, 8.5, 29.5 )
 	OvertimeText:setRGB( 1, 0, 0 )
 	OvertimeText:setAlpha( 0 )
-	OvertimeText:setText( Engine[0xF9F1239CFD921FE]( 0x9D325D8D1BFD3DE ) )
+	OvertimeText:setText( Engine[0xF9F1239CFD921FE]( "mp/overtime_caps" ) )
 	OvertimeText:setTTF( "notosans_light" )
 	OvertimeText:setAlignment( Enum.LUIAlignment[0xFEEB12BCB0D7041] )
 	OvertimeText:setAlignment( Enum.LUIAlignment[0xF41D595A2B0EDF3] )

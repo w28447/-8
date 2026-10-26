@@ -215,7 +215,7 @@ function function_d4147875( var_5ea5c94d )
     namespace_3b9dec72::function_303ab700();
     println( "<dev string:x157>" );
     level.var_9441bf02 = spawn( "script_origin", ( 0, 0, 0 ) );
-    level.var_9441bf02 playloopsound( #"hash_503b99b370ac70b9" );
+    level.var_9441bf02 playloopsound( #"amb_eddie_sam" );
     println( "<dev string:x172>" );
     wait 5;
     println( "<dev string:x1a3>" );

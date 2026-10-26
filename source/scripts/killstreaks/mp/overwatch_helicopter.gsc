@@ -49,7 +49,7 @@ function autoexec __init__system__()
 function __init__()
 {
     killstreaks::register_killstreak( "killstreak_overwatch_helicopter", &function_2e1b9b27 );
-    killstreaks::register_alt_weapon( "overwatch_helicopter", getweapon( #"hash_6c1be4b025206124" ) );
+    killstreaks::register_alt_weapon( "overwatch_helicopter", getweapon( #"sniper_powerbolt_swat_t8" ) );
     killstreaks::set_team_kill_penalty_scale( "overwatch_helicopter", level.teamkillreducedpenalty );
     callback::on_player_killed_with_params( &on_player_killed );
     level.var_24de8afe = &function_24de8afe;
@@ -894,7 +894,7 @@ function private on_player_killed( params )
     self notify( "105d6541393f1fd" );
     self endon( "105d6541393f1fd" );
     
-    if ( !isdefined( params ) || !isdefined( self ) || !isdefined( params.einflictor ) || !isdefined( params.einflictor.script_owner ) || !isdefined( params.einflictor.voxid ) || !isdefined( params.einflictor.ai ) || !( isdefined( params.einflictor.ai.swat_gunner ) && params.einflictor.ai.swat_gunner ) || params.einflictor.weapon.name != #"hash_6c1be4b025206124" || self == params.einflictor.script_owner || level.teambased && self.team == params.einflictor.script_owner.team )
+    if ( !isdefined( params ) || !isdefined( self ) || !isdefined( params.einflictor ) || !isdefined( params.einflictor.script_owner ) || !isdefined( params.einflictor.voxid ) || !isdefined( params.einflictor.ai ) || !( isdefined( params.einflictor.ai.swat_gunner ) && params.einflictor.ai.swat_gunner ) || params.einflictor.weapon.name != #"sniper_powerbolt_swat_t8" || self == params.einflictor.script_owner || level.teambased && self.team == params.einflictor.script_owner.team )
     {
         return;
     }

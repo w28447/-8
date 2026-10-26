@@ -13,7 +13,7 @@ CoD.EmblemGradientColorButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setAlpha( 0.5 )
 	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
 	self:addElement( NoiseTiledBacking )
@@ -65,7 +65,7 @@ CoD.EmblemGradientColorButton.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	
 	local noColorImage = LUI.UIImage.new( 0, 0, 5, 376, 0, 0, 5, 43 )
 	noColorImage:setImage( RegisterImage( "uie_t7_menu_paintshop_transparent_hori" ) )
-	noColorImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6E9593DF28749F2 ) )
+	noColorImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_repeat_normal" ) )
 	noColorImage:setShaderVector( 0, 4, 1, 0, 0 )
 	noColorImage:setShaderVector( 1, 0, 1, 0, 1 )
 	self:addElement( noColorImage )

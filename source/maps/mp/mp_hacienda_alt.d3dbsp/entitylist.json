@@ -11533,7 +11533,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_7d96acf7489adb0b",
+                    "value": "#amb_lrg_aquarium",
                     "unk1a": true
                 },
                 {
@@ -62689,7 +62689,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_7d96acf7489adb0b",
+                    "value": "#amb_lrg_aquarium",
                     "unk1a": true
                 },
                 {
@@ -75775,7 +75775,7 @@
                 {
                     "key": "script_sound",
                     "type": "xhash",
-                    "value": "#hash_52503fde319886e9",
+                    "value": "#pfx_brazier_sm_lp",
                     "unk1a": true
                 },
                 {

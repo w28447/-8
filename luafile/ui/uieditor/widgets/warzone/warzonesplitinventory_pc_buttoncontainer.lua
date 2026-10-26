@@ -17,7 +17,7 @@ CoD.WarzoneSplitInventory_PC_ButtonContainer.new = function ( f1_arg0, f1_arg1, 
 	local TiledBacking = LUI.UIImage.new( 0.02, 0.98, 0, 0, 0.02, 0.98, 0, 0 )
 	TiledBacking:setAlpha( 0.5 )
 	TiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 196, 88 )
 	self:addElement( TiledBacking )

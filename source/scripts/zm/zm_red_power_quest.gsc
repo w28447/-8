@@ -584,7 +584,7 @@ function function_e059d0e1()
         s_move struct::delete();
     }
     
-    playsoundatposition( #"hash_3d8fef5997663b17", ( 0, 0, 0 ) );
+    playsoundatposition( #"zmb_sentinel_trial_activate_2d", ( 0, 0, 0 ) );
     s_reward = struct::get( #"hash_3b2d60a79515031a" );
     
     if ( isdefined( s_reward ) )
@@ -827,8 +827,8 @@ function perseus_amphitheater()
     waitframe( 1 );
     mdl_perseus clientfield::increment( "" + #"perseus_teleport" );
     wait 1.5;
-    mdl_perseus playsound( #"hash_7e17c0850b86d621" );
-    mdl_perseus playloopsound( #"hash_4572307d016259a6" );
+    mdl_perseus playsound( #"zmb_perseus_ff_on" );
+    mdl_perseus playloopsound( #"zmb_perseus_ff_loop" );
     exploder::exploder( "Fxexp_barrier_amph_perseus" );
     level waittill( #"summon" );
     
@@ -847,7 +847,7 @@ function perseus_amphitheater()
     wait 2.5;
     level flag::set( #"perseus_exits" );
     mdl_perseus stoploopsound();
-    mdl_perseus playsound( #"hash_4917791296076e1d" );
+    mdl_perseus playsound( #"zmb_perseus_ff_off" );
     wait 4;
     exploder::stop_exploder( "Fxexp_barrier_amph_perseus" );
     mdl_perseus_clip = getent( "perseus_amphitheater_clip", "targetname" );
@@ -868,7 +868,7 @@ function function_a8f1dc6b( nd_start )
     self clientfield::set( "" + #"perseus_energy", 1 );
     self vehicle::get_on_and_go_path( nd_start );
     self clientfield::set( "" + #"perseus_energy", 0 );
-    self playsound( #"hash_7c51534a91103a32" );
+    self playsound( #"zmb_perseus_energy_imp" );
     self delete();
 }
 
@@ -992,7 +992,7 @@ function function_b3d827f()
         mdl_sentinel_artifact = getent( "mdl_sentinel_artifact", "targetname" );
         mdl_sentinel_artifact clientfield::set( "" + #"artifact_glow", 0 );
         mdl_sentinel_artifact stoploopsound();
-        mdl_sentinel_artifact playsound( #"hash_331b62b49768f70" );
+        mdl_sentinel_artifact playsound( #"evt_start_power_event" );
         
         if ( e_player zm_audio::can_speak() )
         {
@@ -2287,7 +2287,7 @@ function function_1984219e( nd_start )
     self clientfield::set( "" + #"hash_463ff879b8d656bb", 1 );
     self vehicle::get_on_and_go_path( nd_start );
     self clientfield::set( "" + #"hash_463ff879b8d656bb", 0 );
-    self playsound( #"hash_3fc47e14a55e5bbc" );
+    self playsound( #"zmb_sentinel_trial_projectile_explode" );
     self delete();
 }
 

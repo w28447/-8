@@ -1066,13 +1066,13 @@ function private water_pump( var_32be30af, var_4c2f2156, e_clip_water, var_bbaf1
         waitresult.activator notify( #"hash_361427de75870cde" );
     }
     
-    mdl_water_pump playsound( #"hash_7dbe54dbc8709530" );
-    mdl_water_pump playloopsound( #"hash_5f1c2aeb92331d60" );
+    mdl_water_pump playsound( #"zmb_waterdrain_pump_start" );
+    mdl_water_pump playloopsound( #"zmb_waterdrain_pump_lp" );
     level clientfield::set( var_4cdff787, 1 );
     var_4c2f2156 thread function_1d8df872( 1 );
     function_b40f577b( e_clip_water, var_bbaf1a87, n_time, var_65feb6ff, var_c6653d4, var_ff884319, var_90c00a3d, 1 );
     var_4c2f2156 thread function_1d8df872( 0 );
-    mdl_water_pump playsound( #"hash_1fc479499a911511" );
+    mdl_water_pump playsound( #"zmb_waterdrain_pump_end" );
     mdl_water_pump stoploopsound();
     level clientfield::set( var_4cdff787, 0 );
 }

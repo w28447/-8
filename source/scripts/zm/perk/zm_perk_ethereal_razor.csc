@@ -155,7 +155,7 @@ function function_58c4bf12( localclientnum )
                 self.var_9f0aad27 = playviewmodelfx( localclientnum, level._effect[ #"ethereal_melee_1p" ], "tag_weapon_left" );
             }
             
-            self playsound( localclientnum, #"hash_5e4e6d81b10399dc" );
+            self playsound( localclientnum, #"zmb_vapor_ethereal_razor_swing" );
             self util::function_e532f5da( 0.8, self, "notetrack", level, "demo_jump" );
             self function_c8066972();
         }

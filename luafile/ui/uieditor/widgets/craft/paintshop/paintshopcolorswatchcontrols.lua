@@ -23,7 +23,7 @@ CoD.PaintshopColorSwatchControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	
 	local NoiseTiledBacking = LUI.UIImage.new( 0, 1, 0, 0, 0, 1, 0, 0 )
 	NoiseTiledBacking:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_bg" ) )
-	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	NoiseTiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	NoiseTiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	NoiseTiledBacking:setupNineSliceShader( 196, 88 )
 	self:addElement( NoiseTiledBacking )
@@ -152,7 +152,7 @@ CoD.PaintshopColorSwatchControls.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_
 	local dividerH = LUI.UIImage.new( 0, 0, 0, 420, 0, 0, 30.5, 34.5 )
 	dividerH:setAlpha( 0.2 )
 	dividerH:setImage( RegisterImage( "uie_ui_menu_specialist_hub_repeat_line" ) )
-	dividerH:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	dividerH:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	dividerH:setShaderVector( 0, 0, 0, 0, 0 )
 	dividerH:setupNineSliceShader( 8, 4 )
 	self:addElement( dividerH )

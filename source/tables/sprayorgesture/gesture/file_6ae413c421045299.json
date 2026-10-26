@@ -16,7 +16,7 @@
     "bundle": {
         "type": "#gesture",
         "title": "localized18#emotes/tko",
-        "icon": "image#hash_1d1a60af29f10ba2",
+        "icon": "image#ui_icon_emotes_s3_pow_dizzy",
         "isdefault": 0
     }
 }

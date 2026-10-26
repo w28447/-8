@@ -113,7 +113,7 @@ CoD.PlayerWidgetWZ.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3, f1_arg4,
 	local LEDplayer = LUI.UIImage.new( 0, 0, 3.5, 183.5, 0, 0, 8, 108 )
 	LEDplayer:setRGB( 0, 0, 0 )
 	LEDplayer:setAlpha( 0.2 )
-	LEDplayer:setImage( RegisterImage( 0xBA2206DF71A2020 ) )
+	LEDplayer:setImage( RegisterImage( "uie_ui_hud_wz_hud_core_player_widget_led_player" ) )
 	self:addElement( LEDplayer )
 	self.LEDplayer = LEDplayer
 	

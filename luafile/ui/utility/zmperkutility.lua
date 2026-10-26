@@ -328,7 +328,7 @@ DataSources.PerkSelectList = DataSourceHelpers.ListSetup( "PerkSelectList", func
 				},
 				properties = {
 					selectIndex = f18_local5 == f18_local10.itemIndex,
-					equipSound = f18_local10[0x87F8E9A3DEB31D2] or 0x858B7E73692FF70
+					equipSound = f18_local10[0x87F8E9A3DEB31D2] or "uin_zcac_perk_base"
 				}
 			} )
 		end

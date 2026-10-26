@@ -9,13 +9,13 @@
         {
             "value": 5,
             "next": 2,
-            "name": "#hash_6e471fde121d0263",
+            "name": "#vox_homun_death_homu",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6e471fde121d0263",
+                    "name": "#vox_homun_death_homu",
                     "assetId": "#hash_5b141a292d83e30c",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -54,7 +54,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_6e471fde121d0263",
+                    "name": "#vox_homun_death_homu",
                     "assetId": "#hash_5987d1b5b5935731",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -93,7 +93,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_6e471fde121d0263",
+                    "name": "#vox_homun_death_homu",
                     "assetId": "#hash_38f8e421217acb66",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -132,7 +132,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_6e471fde121d0263",
+                    "name": "#vox_homun_death_homu",
                     "assetId": "#hash_136c530f64602a63",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -171,7 +171,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_6e471fde121d0263",
+                    "name": "#vox_homun_death_homu",
                     "assetId": "#hash_70dfa080be603df0",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -210,7 +210,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_6e471fde121d0263",
+                    "name": "#vox_homun_death_homu",
                     "assetId": "#hash_3134c8afec3f165",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -249,7 +249,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_6e471fde121d0263",
+                    "name": "#vox_homun_death_homu",
                     "assetId": "#hash_1eac4c070555035a",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -390,13 +390,13 @@
         {
             "value": 10,
             "next": 65535,
-            "name": "#hash_22c88cff01a4691b",
+            "name": "#vox_homun_jump_homu",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_22c88cff01a4691b",
+                    "name": "#vox_homun_jump_homu",
                     "assetId": "#hash_158d8aeaf325fe24",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -435,7 +435,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_22c88cff01a4691b",
+                    "name": "#vox_homun_jump_homu",
                     "assetId": "#hash_bd6e83c2b5ad2c9",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -474,7 +474,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_22c88cff01a4691b",
+                    "name": "#vox_homun_jump_homu",
                     "assetId": "#hash_3e9165c3c3f3c29e",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -513,7 +513,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_22c88cff01a4691b",
+                    "name": "#vox_homun_jump_homu",
                     "assetId": "#hash_6ae2aa8496b814fb",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -552,7 +552,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_22c88cff01a4691b",
+                    "name": "#vox_homun_jump_homu",
                     "assetId": "#hash_4681809bdfe7c88",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -591,7 +591,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_22c88cff01a4691b",
+                    "name": "#vox_homun_jump_homu",
                     "assetId": "#hash_2be23c2ed8eeac1d",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -634,13 +634,13 @@
         {
             "value": 12,
             "next": 65535,
-            "name": "#hash_ba5815eb0dc4d97",
+            "name": "#vox_homun_kill_homu",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_ba5815eb0dc4d97",
+                    "name": "#vox_homun_kill_homu",
                     "assetId": "#hash_7a566b1b59f7eb58",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -679,7 +679,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_ba5815eb0dc4d97",
+                    "name": "#vox_homun_kill_homu",
                     "assetId": "#hash_5768461577c3c2d",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -718,7 +718,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_ba5815eb0dc4d97",
+                    "name": "#vox_homun_kill_homu",
                     "assetId": "#hash_7ed59f45aff0e942",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -757,7 +757,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_ba5815eb0dc4d97",
+                    "name": "#vox_homun_kill_homu",
                     "assetId": "#hash_375d078a4067e27f",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -796,7 +796,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_ba5815eb0dc4d97",
+                    "name": "#vox_homun_kill_homu",
                     "assetId": "#hash_65ca2612b65031f4",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -835,7 +835,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_ba5815eb0dc4d97",
+                    "name": "#vox_homun_kill_homu",
                     "assetId": "#hash_50a7972678fa7999",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -874,7 +874,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_ba5815eb0dc4d97",
+                    "name": "#vox_homun_kill_homu",
                     "assetId": "#hash_59af7385d13abd2e",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -917,13 +917,13 @@
         {
             "value": 13,
             "next": 65535,
-            "name": "#hash_1d6e8d28eabdb1fb",
+            "name": "#vox_homun_land_exert_homu",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_1d6e8d28eabdb1fb",
+                    "name": "#vox_homun_land_exert_homu",
                     "assetId": "#hash_f6e9db25bb66f0c",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -962,7 +962,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_1d6e8d28eabdb1fb",
+                    "name": "#vox_homun_land_exert_homu",
                     "assetId": "#hash_de2553ee3c5e331",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1001,7 +1001,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_1d6e8d28eabdb1fb",
+                    "name": "#vox_homun_land_exert_homu",
                     "assetId": "#hash_6d5367aa4fad5766",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1040,7 +1040,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_1d6e8d28eabdb1fb",
+                    "name": "#vox_homun_land_exert_homu",
                     "assetId": "#hash_47c6d6989292b663",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1079,7 +1079,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_1d6e8d28eabdb1fb",
+                    "name": "#vox_homun_land_exert_homu",
                     "assetId": "#hash_253a2409ec92c9f0",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1118,7 +1118,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_1d6e8d28eabdb1fb",
+                    "name": "#vox_homun_land_exert_homu",
                     "assetId": "#hash_376dd0142cf67d65",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1157,7 +1157,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_1d6e8d28eabdb1fb",
+                    "name": "#vox_homun_land_exert_homu",
                     "assetId": "#hash_5306cf9033878f5a",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1196,7 +1196,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_1d6e8d28eabdb1fb",
+                    "name": "#vox_homun_land_exert_homu",
                     "assetId": "#hash_71f9d300bf85f137",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1239,13 +1239,13 @@
         {
             "value": 11,
             "next": 65535,
-            "name": "#hash_6b4fa8bf14690e0c",
+            "name": "#vox_homun_land_homu",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_6b4fa8bf14690e0c",
+                    "name": "#vox_homun_land_homu",
                     "assetId": "#hash_1ef0803018ffcaeb",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1284,7 +1284,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_6b4fa8bf14690e0c",
+                    "name": "#vox_homun_land_homu",
                     "assetId": "#hash_2960ea7db18739ce",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1323,7 +1323,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_6b4fa8bf14690e0c",
+                    "name": "#vox_homun_land_homu",
                     "assetId": "#hash_7e62d8be5ad965b9",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1362,7 +1362,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_6b4fa8bf14690e0c",
+                    "name": "#vox_homun_land_homu",
                     "assetId": "#hash_1b6c8d004e916f94",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1401,7 +1401,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_6b4fa8bf14690e0c",
+                    "name": "#vox_homun_land_homu",
                     "assetId": "#hash_34fb679bce42039f",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1444,13 +1444,13 @@
         {
             "value": 4,
             "next": 9,
-            "name": "#hash_51a9b856a9474bab",
+            "name": "#vox_homun_out_bounds_homu",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_51a9b856a9474bab",
+                    "name": "#vox_homun_out_bounds_homu",
                     "assetId": "#hash_f6f80097c72a024",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1489,7 +1489,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_51a9b856a9474bab",
+                    "name": "#vox_homun_out_bounds_homu",
                     "assetId": "#hash_5b8dd5ab4a774c9",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1528,7 +1528,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_51a9b856a9474bab",
+                    "name": "#vox_homun_out_bounds_homu",
                     "assetId": "#hash_38735ae24d40649e",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1567,7 +1567,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_51a9b856a9474bab",
+                    "name": "#vox_homun_out_bounds_homu",
                     "assetId": "#hash_64c49fa32004b6fb",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1606,7 +1606,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_51a9b856a9474bab",
+                    "name": "#vox_homun_out_bounds_homu",
                     "assetId": "#hash_7e4a0d28474b1e88",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1649,13 +1649,13 @@
         {
             "value": 6,
             "next": 65535,
-            "name": "#hash_11b3d5b6c9701a29",
+            "name": "#vox_homun_raise_exert_homu_0",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_11b3d5b6c9701a29",
+                    "name": "#vox_homun_raise_exert_homu_0",
                     "assetId": "#hash_6ae658ff8f6d4321",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1700,13 +1700,13 @@
         {
             "value": 9,
             "next": 65535,
-            "name": "#hash_770c96a35322e11d",
+            "name": "#vox_homun_raise_homu",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_770c96a35322e11d",
+                    "name": "#vox_homun_raise_homu",
                     "assetId": "#hash_27e1518cd92f4ad2",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1745,7 +1745,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_770c96a35322e11d",
+                    "name": "#vox_homun_raise_homu",
                     "assetId": "#hash_68590b5c42fc37cf",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1784,7 +1784,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_770c96a35322e11d",
+                    "name": "#vox_homun_raise_homu",
                     "assetId": "#hash_2407d955e4342228",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1823,7 +1823,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_770c96a35322e11d",
+                    "name": "#vox_homun_raise_homu",
                     "assetId": "#hash_2d38f402778fe3bd",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1862,7 +1862,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_770c96a35322e11d",
+                    "name": "#vox_homun_raise_homu",
                     "assetId": "#hash_5d25e8831d64703e",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1901,7 +1901,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_770c96a35322e11d",
+                    "name": "#vox_homun_raise_homu",
                     "assetId": "#hash_65131075fd87801b",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -1940,7 +1940,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_770c96a35322e11d",
+                    "name": "#vox_homun_raise_homu",
                     "assetId": "#hash_622b11a24d3911c4",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -2081,13 +2081,13 @@
         {
             "value": 2,
             "next": 4,
-            "name": "#hash_689f11fd8983d1a6",
+            "name": "#vox_homun_throw_exert_homu",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_689f11fd8983d1a6",
+                    "name": "#vox_homun_throw_exert_homu",
                     "assetId": "#hash_8ebe9db799e28a9",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -2126,7 +2126,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_689f11fd8983d1a6",
+                    "name": "#vox_homun_throw_exert_homu",
                     "assetId": "#hash_471c1542efa0684",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -2165,7 +2165,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_689f11fd8983d1a6",
+                    "name": "#vox_homun_throw_exert_homu",
                     "assetId": "#hash_8fecda346603db",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -2208,13 +2208,13 @@
         {
             "value": 0,
             "next": 0,
-            "name": "#hash_8d020e5460f4a95",
+            "name": "#vox_homun_throw_homu",
             "sequence": 0,
             "cullDistance": 1200,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_8d020e5460f4a95",
+                    "name": "#vox_homun_throw_homu",
                     "assetId": "#hash_71f6e5275b97ca3a",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -2253,7 +2253,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_8d020e5460f4a95",
+                    "name": "#vox_homun_throw_homu",
                     "assetId": "#hash_15a474b1a2ab8f17",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -2292,7 +2292,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_8d020e5460f4a95",
+                    "name": "#vox_homun_throw_homu",
                     "assetId": "#hash_3b90876679a663d0",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -2331,7 +2331,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_8d020e5460f4a95",
+                    "name": "#vox_homun_throw_homu",
                     "assetId": "#hash_6fc655fe05298b45",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -2370,7 +2370,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_8d020e5460f4a95",
+                    "name": "#vox_homun_throw_homu",
                     "assetId": "#hash_368b13a16b6061c6",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",
@@ -2409,7 +2409,7 @@
                     "unk178": "#hash_18011f0801"
                 },
                 {
-                    "name": "#hash_8d020e5460f4a95",
+                    "name": "#vox_homun_throw_homu",
                     "assetId": "#hash_2c2091041586c443",
                     "assetFileNameSustain": "#wz_escape.fj",
                     "assetIdRelease": "#wz_escape.fj",

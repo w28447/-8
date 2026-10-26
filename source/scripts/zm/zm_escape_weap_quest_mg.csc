@@ -280,7 +280,7 @@ function private function_d193f583( localclientnum )
     
     if ( !isdefined( self.var_8e748ffa ) )
     {
-        self.var_8e748ffa = self playloopsound( #"hash_6d1e9399310efe71" );
+        self.var_8e748ffa = self playloopsound( #"zmb_magmagat_charging_loop" );
     }
     
     wait 2;
@@ -291,7 +291,7 @@ function private function_d193f583( localclientnum )
         self.var_8e748ffa = undefined;
     }
     
-    self.var_c183198c = self playloopsound( #"hash_1bc434008189933f" );
+    self.var_c183198c = self playloopsound( #"zmb_magmagat_cooldown_loop" );
 }
 
 // Namespace namespace_fc5c8455/zm_escape_weap_quest_mg
@@ -303,7 +303,7 @@ function private function_f9a794dc( localclientnum )
     self endon( #"death", #"hash_4086299956cef09d" );
     level endon( #"end_game" );
     self.var_23c215c = 25;
-    self.var_c183198c = self playloopsound( #"hash_1bc434008189933f" );
+    self.var_c183198c = self playloopsound( #"zmb_magmagat_cooldown_loop" );
     self.var_fa938ed8 = 0;
     self.var_d9ebae63 = gettime();
     

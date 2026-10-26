@@ -9,7 +9,7 @@ CoD.TabbedScoreboardLayoutSideLine.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	f1_arg0:addElementToPendingUpdateStateList( self )
 	
 	local MayLayoutSideLine = LUI.UIImage.new( 0, 0, 0, 8, 0, 0, 0, 206 )
-	MayLayoutSideLine:setImage( RegisterImage( 0x77C33FE95BFBE89 ) )
+	MayLayoutSideLine:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_sideline" ) )
 	MayLayoutSideLine:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta_normal" ) )
 	MayLayoutSideLine:setShaderVector( 0, 0, 1, 0, 0 )
 	MayLayoutSideLine:setShaderVector( 1, 0, 0, 0, 0 )
@@ -20,7 +20,7 @@ CoD.TabbedScoreboardLayoutSideLine.new = function ( f1_arg0, f1_arg1, f1_arg2, f
 	self.MayLayoutSideLine = MayLayoutSideLine
 	
 	local MayLayoutSideLineAdd = LUI.UIImage.new( 0, 0, 0, 8, 0, 0, 0, 206 )
-	MayLayoutSideLineAdd:setImage( RegisterImage( 0x77C33FE95BFBE89 ) )
+	MayLayoutSideLineAdd:setImage( RegisterImage( "uie_ui_menu_mp_scoreboard_map_sideline" ) )
 	MayLayoutSideLineAdd:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_wipe_delta" ) )
 	MayLayoutSideLineAdd:setShaderVector( 0, 0, 1, 0, 0 )
 	MayLayoutSideLineAdd:setShaderVector( 1, 0, 0, 0, 0 )

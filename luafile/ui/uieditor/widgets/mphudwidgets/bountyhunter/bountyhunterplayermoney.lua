@@ -25,7 +25,7 @@ CoD.BountyHunterPlayerMoney.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg3,
 	TiledShaderImage:setRGB( 0, 0, 0 )
 	TiledShaderImage:setAlpha( 0.2 )
 	TiledShaderImage:setImage( RegisterImage( "uie_ui_hud_core_objective_widget_led_screen_02" ) )
-	TiledShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	TiledShaderImage:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	TiledShaderImage:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledShaderImage:setupNineSliceShader( 220, 60 )
 	self:addElement( TiledShaderImage )

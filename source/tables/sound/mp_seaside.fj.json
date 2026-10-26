@@ -3499,13 +3499,13 @@
         {
             "value": 28,
             "next": 23,
-            "name": "#hash_7472ee0680fbe7af",
+            "name": "#vox_tvoi_tutor_prop_score_active_fail",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7472ee0680fbe7af",
+                    "name": "#vox_tvoi_tutor_prop_score_active_fail",
                     "subtitle": "#hash_76e1932a70ba8a35",
                     "assetId": "#hash_50e3173cbbab883b",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -3547,7 +3547,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7472ee0680fbe7af",
+                    "name": "#vox_tvoi_tutor_prop_score_active_fail",
                     "subtitle": "#hash_73cbb70173f3bf8c",
                     "assetId": "#hash_64b19f890f209ede",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -3589,7 +3589,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7472ee0680fbe7af",
+                    "name": "#vox_tvoi_tutor_prop_score_active_fail",
                     "subtitle": "#hash_4599582a561054bf",
                     "assetId": "#hash_43b844a4d8347b09",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -3631,7 +3631,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7472ee0680fbe7af",
+                    "name": "#vox_tvoi_tutor_prop_score_active_fail",
                     "subtitle": "#hash_346fe28fbd880dc6",
                     "assetId": "#hash_270d4ed2bf848c64",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -4849,13 +4849,13 @@
         {
             "value": 5,
             "next": 46,
-            "name": "#hash_587654df1eb82b80",
+            "name": "#vox_tvoi_tutor_prop_score_start",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_587654df1eb82b80",
+                    "name": "#vox_tvoi_tutor_prop_score_start",
                     "subtitle": "#hash_8f8fd36dd5a2d7e",
                     "assetId": "#hash_1ec2036ad0211bc4",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -4898,7 +4898,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_587654df1eb82b80",
+                    "name": "#vox_tvoi_tutor_prop_score_start",
                     "subtitle": "#hash_283461c4c3b80020",
                     "assetId": "#hash_f43897682a8785a",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -5049,13 +5049,13 @@
         {
             "value": 68,
             "next": 65535,
-            "name": "#hash_53ea2f2d1129a3d7",
+            "name": "#vox_tvoi_tutor_prop_seeker_enemy_dead_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_53ea2f2d1129a3d7",
+                    "name": "#vox_tvoi_tutor_prop_seeker_enemy_dead_2",
                     "subtitle": "#hash_420547e1c4d531b9",
                     "assetId": "#hash_d3494df81d5276f",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -5367,13 +5367,13 @@
         {
             "value": 42,
             "next": 65535,
-            "name": "#hash_8a03ccf54e65209",
+            "name": "#vox_tvoi_tutor_prop_seeker_mine_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_8a03ccf54e65209",
+                    "name": "#vox_tvoi_tutor_prop_seeker_mine_0",
                     "subtitle": "#hash_2821e995b8ebd993",
                     "assetId": "#hash_60e07b9dccc88125",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -5419,13 +5419,13 @@
         {
             "value": 8,
             "next": 57,
-            "name": "#hash_8a03bcf54e65056",
+            "name": "#vox_tvoi_tutor_prop_seeker_mine_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_8a03bcf54e65056",
+                    "name": "#vox_tvoi_tutor_prop_seeker_mine_1",
                     "subtitle": "#hash_5a503f3089288248",
                     "assetId": "#hash_2d1720dace123dee",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -6285,13 +6285,13 @@
         {
             "value": 15,
             "next": 65535,
-            "name": "#hash_44bc8ed5568a81b6",
+            "name": "#vox_tvoi_tutor_prop_start_0_arb",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_44bc8ed5568a81b6",
+                    "name": "#vox_tvoi_tutor_prop_start_0_arb",
                     "subtitle": "#hash_7f6ffb93dcfa6e08",
                     "assetId": "#hash_51cf94419238eb56",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -7825,13 +7825,13 @@
         {
             "value": 113,
             "next": 65535,
-            "name": "#hash_75250dd5dd02c873",
+            "name": "#vox_tvoi_tutor_reco_blightfather_dead_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_75250dd5dd02c873",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_dead_0",
                     "subtitle": "#hash_2a6bb3b86b37a211",
                     "assetId": "#hash_6a1cbcc0e23b939b",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -7877,13 +7877,13 @@
         {
             "value": 22,
             "next": 65535,
-            "name": "#hash_75250cd5dd02c6c0",
+            "name": "#vox_tvoi_tutor_reco_blightfather_dead_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_75250cd5dd02c6c0",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_dead_1",
                     "subtitle": "#hash_1a9068e4c1044fbe",
                     "assetId": "#hash_765174be9c590cc",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -7929,13 +7929,13 @@
         {
             "value": 2,
             "next": 70,
-            "name": "#hash_75d35181fe648687",
+            "name": "#vox_tvoi_tutor_reco_blightfather_enter_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_75d35181fe648687",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_enter_0",
                     "subtitle": "#hash_4cb3cdcd4556e1a9",
                     "assetId": "#hash_7afd8514f69f5021",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -7978,7 +7978,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_75d35181fe648687",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_enter_0",
                     "subtitle": "#hash_17cdf809e9340f03",
                     "assetId": "#hash_dab3d1eb00195e7",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -8025,13 +8025,13 @@
         {
             "value": 27,
             "next": 62,
-            "name": "#hash_75d35081fe6484d4",
+            "name": "#vox_tvoi_tutor_reco_blightfather_enter_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_75d35081fe6484d4",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_enter_1",
                     "subtitle": "#hash_4836299f2e61bbf6",
                     "assetId": "#hash_7d860daee775c61a",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -8077,13 +8077,13 @@
         {
             "value": 105,
             "next": 65535,
-            "name": "#hash_5eee0745d94d4b04",
+            "name": "#vox_tvoi_tutor_reco_blightfather_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5eee0745d94d4b04",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_nag",
                     "subtitle": "#hash_604c68d5f5fc95ca",
                     "assetId": "#hash_14418030a68df292",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -8126,7 +8126,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5eee0745d94d4b04",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_nag",
                     "subtitle": "#hash_6336fa5c89416054",
                     "assetId": "#hash_13d734b42bb71fe8",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -8169,7 +8169,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5eee0745d94d4b04",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_nag",
                     "subtitle": "#hash_1c8400afabca90b3",
                     "assetId": "#hash_41bb07122177cf8f",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -8212,7 +8212,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5eee0745d94d4b04",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_nag",
                     "subtitle": "#hash_7a1b40c43cb3d35",
                     "assetId": "#hash_647652c3fd0cf045",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -8255,7 +8255,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5eee0745d94d4b04",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_nag",
                     "subtitle": "#hash_d3ab0365af6ba70",
                     "assetId": "#hash_36cccd2cecf377e8",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -8298,7 +8298,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5eee0745d94d4b04",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_nag",
                     "subtitle": "#hash_5ceac4accf92eaa",
                     "assetId": "#hash_340e2ba8e6454a06",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -8345,13 +8345,13 @@
         {
             "value": 88,
             "next": 99,
-            "name": "#hash_18bcfb5b91b80370",
+            "name": "#vox_tvoi_tutor_reco_blightfather_plyr_dead",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_18bcfb5b91b80370",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_plyr_dead",
                     "subtitle": "#hash_248e9bf1a0f38906",
                     "assetId": "#hash_44a6e57341c7872",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -8393,7 +8393,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_18bcfb5b91b80370",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_plyr_dead",
                     "subtitle": "#hash_6d3e70eea0fb9ff",
                     "assetId": "#hash_720962f8cc014cef",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -8435,7 +8435,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_18bcfb5b91b80370",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_plyr_dead",
                     "subtitle": "#hash_10df3d8aea37e8cc",
                     "assetId": "#hash_14ff955e76e77548",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -8478,7 +8478,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_18bcfb5b91b80370",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_plyr_dead",
                     "subtitle": "#hash_22cc605ee7547f0e",
                     "assetId": "#hash_69628d8d6d82eb26",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -8521,7 +8521,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_18bcfb5b91b80370",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_plyr_dead",
                     "subtitle": "#hash_3a1e4c8769427e75",
                     "assetId": "#hash_37118f0b2a6becdd",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -8567,13 +8567,13 @@
         {
             "value": 76,
             "next": 65535,
-            "name": "#hash_5fb571057d1baaaf",
+            "name": "#vox_tvoi_tutor_reco_blightfather_squad_dead",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5fb571057d1baaaf",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_squad_dead",
                     "subtitle": "#hash_78cf435e5e2e3d79",
                     "assetId": "#hash_6dbdd0a5e5784d53",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -8615,7 +8615,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5fb571057d1baaaf",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_squad_dead",
                     "subtitle": "#hash_1948f739fede8b80",
                     "assetId": "#hash_43a7a84b820078d6",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -8658,7 +8658,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5fb571057d1baaaf",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_squad_dead",
                     "subtitle": "#hash_7db38e063f689d7a",
                     "assetId": "#hash_4bf340a66b6ba824",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -8701,7 +8701,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5fb571057d1baaaf",
+                    "name": "#vox_tvoi_tutor_reco_blightfather_squad_dead",
                     "subtitle": "#hash_51b5b8eb52d09703",
                     "assetId": "#hash_722334eda6925021",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -8747,13 +8747,13 @@
         {
             "value": 39,
             "next": 72,
-            "name": "#hash_2bbf8e33da4471bc",
+            "name": "#vox_tvoi_tutor_reco_church_comp",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2bbf8e33da4471bc",
+                    "name": "#vox_tvoi_tutor_reco_church_comp",
                     "subtitle": "#hash_27330ddaec88638a",
                     "assetId": "#hash_5d33cd1e821741e4",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -8796,7 +8796,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_2bbf8e33da4471bc",
+                    "name": "#vox_tvoi_tutor_reco_church_comp",
                     "subtitle": "#hash_2b71bbdd9a074f14",
                     "assetId": "#hash_7912ff4a1b0a04ba",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9087,13 +9087,13 @@
         {
             "value": 16,
             "next": 107,
-            "name": "#hash_3941a65c4e672253",
+            "name": "#vox_tvoi_tutor_reco_church_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3941a65c4e672253",
+                    "name": "#vox_tvoi_tutor_reco_church_nag",
                     "subtitle": "#hash_5078a1cc54caaa6d",
                     "assetId": "#hash_7490c4e52daff5c5",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9136,7 +9136,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3941a65c4e672253",
+                    "name": "#vox_tvoi_tutor_reco_church_nag",
                     "subtitle": "#hash_5cc83d7e9dc2d7ff",
                     "assetId": "#hash_7753ba3f8eb47823",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9179,7 +9179,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3941a65c4e672253",
+                    "name": "#vox_tvoi_tutor_reco_church_nag",
                     "subtitle": "#hash_7716c6af58baafe4",
                     "assetId": "#hash_405af64da22cce50",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9222,7 +9222,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3941a65c4e672253",
+                    "name": "#vox_tvoi_tutor_reco_church_nag",
                     "subtitle": "#hash_436772381f2edc76",
                     "assetId": "#hash_5557138f040108de",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9265,7 +9265,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3941a65c4e672253",
+                    "name": "#vox_tvoi_tutor_reco_church_nag",
                     "subtitle": "#hash_2df4502dd3379b97",
                     "assetId": "#hash_1a6ee398cb31f997",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9308,7 +9308,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3941a65c4e672253",
+                    "name": "#vox_tvoi_tutor_reco_church_nag",
                     "subtitle": "#hash_1afea3105a99fe91",
                     "assetId": "#hash_7ad1486a9cf7ca9d",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9355,13 +9355,13 @@
         {
             "value": 23,
             "next": 75,
-            "name": "#hash_6ece745489e4c50a",
+            "name": "#vox_tvoi_tutor_reco_dart_hide_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6ece745489e4c50a",
+                    "name": "#vox_tvoi_tutor_reco_dart_hide_0",
                     "subtitle": "#hash_7003a025e9e4fed4",
                     "assetId": "#hash_79588eef9ad7302a",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9407,13 +9407,13 @@
         {
             "value": 72,
             "next": 65535,
-            "name": "#hash_6ece755489e4c6bd",
+            "name": "#vox_tvoi_tutor_reco_dart_hide_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6ece755489e4c6bd",
+                    "name": "#vox_tvoi_tutor_reco_dart_hide_1",
                     "subtitle": "#hash_46acf9c02976f94f",
                     "assetId": "#hash_310ff1519fdcbdb1",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9459,13 +9459,13 @@
         {
             "value": 66,
             "next": 65535,
-            "name": "#hash_6ece725489e4c1a4",
+            "name": "#vox_tvoi_tutor_reco_dart_hide_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6ece725489e4c1a4",
+                    "name": "#vox_tvoi_tutor_reco_dart_hide_2",
                     "subtitle": "#hash_2958916da334d94a",
                     "assetId": "#hash_5f83b8ffa3e56748",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9511,13 +9511,13 @@
         {
             "value": 104,
             "next": 65535,
-            "name": "#hash_510731dfbe637192",
+            "name": "#vox_tvoi_tutor_reco_dart_hide_enemy",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_510731dfbe637192",
+                    "name": "#vox_tvoi_tutor_reco_dart_hide_enemy",
                     "subtitle": "#hash_61f28089d9f86608",
                     "assetId": "#hash_122f41b81cfb6cfa",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9563,13 +9563,13 @@
         {
             "value": 62,
             "next": 86,
-            "name": "#hash_4846299866b4a63f",
+            "name": "#vox_tvoi_tutor_reco_dart_hide_hit",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4846299866b4a63f",
+                    "name": "#vox_tvoi_tutor_reco_dart_hide_hit",
                     "subtitle": "#hash_5ae3eb0aec5b2d01",
                     "assetId": "#hash_2879689d1238a4d3",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9612,7 +9612,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4846299866b4a63f",
+                    "name": "#vox_tvoi_tutor_reco_dart_hide_hit",
                     "subtitle": "#hash_5a2eb00b0e90b78b",
                     "assetId": "#hash_4a865b77b370b31",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9659,13 +9659,13 @@
         {
             "value": 46,
             "next": 88,
-            "name": "#hash_628d31adb5e65260",
+            "name": "#vox_tvoi_tutor_reco_dart_miss_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_628d31adb5e65260",
+                    "name": "#vox_tvoi_tutor_reco_dart_miss_nag",
                     "subtitle": "#hash_7103ddcb3442fd7a",
                     "assetId": "#hash_5ae52321ca025e3c",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9707,7 +9707,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_628d31adb5e65260",
+                    "name": "#vox_tvoi_tutor_reco_dart_miss_nag",
                     "subtitle": "#hash_7dd819f47ed13a23",
                     "assetId": "#hash_4973073d1695121",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9749,7 +9749,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_628d31adb5e65260",
+                    "name": "#vox_tvoi_tutor_reco_dart_miss_nag",
                     "subtitle": "#hash_1977ed81cfb2ea20",
                     "assetId": "#hash_561ba3d1acd779d6",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9791,7 +9791,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_628d31adb5e65260",
+                    "name": "#vox_tvoi_tutor_reco_dart_miss_nag",
                     "subtitle": "#hash_25de39ab19e2bd19",
                     "assetId": "#hash_31cc2c104f4e53",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9834,7 +9834,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_628d31adb5e65260",
+                    "name": "#vox_tvoi_tutor_reco_dart_miss_nag",
                     "subtitle": "#hash_204b9b20adb0a233",
                     "assetId": "#hash_5c9f1f199824b0b1",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9877,7 +9877,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_628d31adb5e65260",
+                    "name": "#vox_tvoi_tutor_reco_dart_miss_nag",
                     "subtitle": "#hash_6ae447b36333d2ae",
                     "assetId": "#hash_c785a367c293620",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9920,7 +9920,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_628d31adb5e65260",
+                    "name": "#vox_tvoi_tutor_reco_dart_miss_nag",
                     "subtitle": "#hash_3869c6197d3b34d0",
                     "assetId": "#hash_3615fee0b5ea9dae",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -9963,7 +9963,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_628d31adb5e65260",
+                    "name": "#vox_tvoi_tutor_reco_dart_miss_nag",
                     "subtitle": "#hash_10ff9e595fd05307",
                     "assetId": "#hash_61b91f6baa2cb415",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10005,7 +10005,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_628d31adb5e65260",
+                    "name": "#vox_tvoi_tutor_reco_dart_miss_nag",
                     "subtitle": "#hash_59357f97559f8ad4",
                     "assetId": "#hash_1a6bdf4453ec5c8a",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10048,7 +10048,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_628d31adb5e65260",
+                    "name": "#vox_tvoi_tutor_reco_dart_miss_nag",
                     "subtitle": "#hash_69b7be68437c8e26",
                     "assetId": "#hash_4abf899aaf658db0",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10095,13 +10095,13 @@
         {
             "value": 38,
             "next": 92,
-            "name": "#hash_3da84622f4be7b95",
+            "name": "#vox_tvoi_tutor_reco_dart_missed_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3da84622f4be7b95",
+                    "name": "#vox_tvoi_tutor_reco_dart_missed_nag",
                     "subtitle": "#hash_6391509cf9f9addf",
                     "assetId": "#hash_6d2f6df04c8f445",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10144,7 +10144,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3da84622f4be7b95",
+                    "name": "#vox_tvoi_tutor_reco_dart_missed_nag",
                     "subtitle": "#hash_719c81bfc8d60ce9",
                     "assetId": "#hash_6b18f3302860baa3",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10187,7 +10187,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3da84622f4be7b95",
+                    "name": "#vox_tvoi_tutor_reco_dart_missed_nag",
                     "subtitle": "#hash_a04fd297e0261e6",
                     "assetId": "#hash_529d28477945ccd0",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10229,7 +10229,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3da84622f4be7b95",
+                    "name": "#vox_tvoi_tutor_reco_dart_missed_nag",
                     "subtitle": "#hash_482418809e9dd8d5",
                     "assetId": "#hash_2cb11592a24af817",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10272,7 +10272,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_3da84622f4be7b95",
+                    "name": "#vox_tvoi_tutor_reco_dart_missed_nag",
                     "subtitle": "#hash_2e67c17b0f5d4c17",
                     "assetId": "#hash_6e96815b36a40d1d",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10319,13 +10319,13 @@
         {
             "value": 65,
             "next": 89,
-            "name": "#hash_233e42de1d3dc67d",
+            "name": "#vox_tvoi_tutor_reco_dart_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_233e42de1d3dc67d",
+                    "name": "#vox_tvoi_tutor_reco_dart_nag",
                     "subtitle": "#hash_562ef893b4ae312f",
                     "assetId": "#hash_29b9765a19d9d4eb",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10368,7 +10368,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_233e42de1d3dc67d",
+                    "name": "#vox_tvoi_tutor_reco_dart_nag",
                     "subtitle": "#hash_611aa53ac89bee79",
                     "assetId": "#hash_d8934e4e28d8179",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10411,7 +10411,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_233e42de1d3dc67d",
+                    "name": "#vox_tvoi_tutor_reco_dart_nag",
                     "subtitle": "#hash_49d9496fca93fdf6",
                     "assetId": "#hash_3429e0a7b26143ce",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10453,7 +10453,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_233e42de1d3dc67d",
+                    "name": "#vox_tvoi_tutor_reco_dart_nag",
                     "subtitle": "#hash_776f393cf57f9e5",
                     "assetId": "#hash_92bcee85bb36fb9",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10496,7 +10496,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_233e42de1d3dc67d",
+                    "name": "#vox_tvoi_tutor_reco_dart_nag",
                     "subtitle": "#hash_ddf3d372afba967",
                     "assetId": "#hash_69b4df453d7127cf",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10543,13 +10543,13 @@
         {
             "value": 75,
             "next": 65535,
-            "name": "#hash_398e7ff7d4d056d5",
+            "name": "#vox_tvoi_tutor_reco_end_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_398e7ff7d4d056d5",
+                    "name": "#vox_tvoi_tutor_reco_end_0",
                     "subtitle": "#hash_6ffb7dfd44ab843b",
                     "assetId": "#hash_dba4dd3d3e7b201",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10592,7 +10592,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_398e7ff7d4d056d5",
+                    "name": "#vox_tvoi_tutor_reco_end_0",
                     "subtitle": "#hash_4fe4d5cb1ea45d2d",
                     "assetId": "#hash_68ca2c317f89587",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10639,13 +10639,13 @@
         {
             "value": 71,
             "next": 104,
-            "name": "#hash_398e7ef7d4d05522",
+            "name": "#vox_tvoi_tutor_reco_end_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_398e7ef7d4d05522",
+                    "name": "#vox_tvoi_tutor_reco_end_1",
                     "subtitle": "#hash_7532cb91c6bd4790",
                     "assetId": "#hash_3ae72ded8c3070fa",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10688,7 +10688,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_398e7ef7d4d05522",
+                    "name": "#vox_tvoi_tutor_reco_end_1",
                     "subtitle": "#hash_28d1f60d3a9b2a0a",
                     "assetId": "#hash_5e1ced524a2db260",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10735,13 +10735,13 @@
         {
             "value": 78,
             "next": 65535,
-            "name": "#hash_2ab197f91d18834a",
+            "name": "#vox_tvoi_tutor_reco_enemy_dart_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2ab197f91d18834a",
+                    "name": "#vox_tvoi_tutor_reco_enemy_dart_0",
                     "subtitle": "#hash_7fe21a15d1d4a664",
                     "assetId": "#hash_252213f66e5e60dc",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10787,13 +10787,13 @@
         {
             "value": 24,
             "next": 65535,
-            "name": "#hash_2ab198f91d1884fd",
+            "name": "#vox_tvoi_tutor_reco_enemy_dart_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2ab198f91d1884fd",
+                    "name": "#vox_tvoi_tutor_reco_enemy_dart_1",
                     "subtitle": "#hash_33c9ef86e28dd05f",
                     "assetId": "#hash_45d67a58c68fa3ab",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10839,13 +10839,13 @@
         {
             "value": 21,
             "next": 65535,
-            "name": "#hash_2ab195f91d187fe4",
+            "name": "#vox_tvoi_tutor_reco_enemy_dart_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2ab195f91d187fe4",
+                    "name": "#vox_tvoi_tutor_reco_enemy_dart_2",
                     "subtitle": "#hash_320f8c63a882bd1a",
                     "assetId": "#hash_7f35824d183b7e8e",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10888,7 +10888,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_2ab195f91d187fe4",
+                    "name": "#vox_tvoi_tutor_reco_enemy_dart_2",
                     "subtitle": "#hash_35f9b667654e9524",
                     "assetId": "#hash_3dec68976ead15ac",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10935,13 +10935,13 @@
         {
             "value": 87,
             "next": 102,
-            "name": "#hash_2ab196f91d188197",
+            "name": "#vox_tvoi_tutor_reco_enemy_dart_3",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2ab196f91d188197",
+                    "name": "#vox_tvoi_tutor_reco_enemy_dart_3",
                     "subtitle": "#hash_707ed9284aa4048d",
                     "assetId": "#hash_824fcd45136f1c5",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -10987,13 +10987,13 @@
         {
             "value": 100,
             "next": 65535,
-            "name": "#hash_8c16ee4aea85f4c",
+            "name": "#vox_tvoi_tutor_reco_enemy_dart_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_8c16ee4aea85f4c",
+                    "name": "#vox_tvoi_tutor_reco_enemy_dart_nag",
                     "subtitle": "#hash_299a7b34cb9e527e",
                     "assetId": "#hash_717d6db0e444b19e",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11035,7 +11035,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_8c16ee4aea85f4c",
+                    "name": "#vox_tvoi_tutor_reco_enemy_dart_nag",
                     "subtitle": "#hash_76ea0b6903f6a257",
                     "assetId": "#hash_1dceb271b70903fb",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11077,7 +11077,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_8c16ee4aea85f4c",
+                    "name": "#vox_tvoi_tutor_reco_enemy_dart_nag",
                     "subtitle": "#hash_113d8a3bd7379ca4",
                     "assetId": "#hash_487992d81376ed24",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11119,7 +11119,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_8c16ee4aea85f4c",
+                    "name": "#vox_tvoi_tutor_reco_enemy_dart_nag",
                     "subtitle": "#hash_161b8fd61fcd1e2d",
                     "assetId": "#hash_3ec2f0294babc1c9",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11165,13 +11165,13 @@
         {
             "value": 31,
             "next": 110,
-            "name": "#hash_76711f94e9fc32da",
+            "name": "#vox_tvoi_tutor_reco_first_group_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_76711f94e9fc32da",
+                    "name": "#vox_tvoi_tutor_reco_first_group_0",
                     "subtitle": "#hash_171ea385eef37c00",
                     "assetId": "#hash_559fbc08b6ecb632",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11214,7 +11214,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_76711f94e9fc32da",
+                    "name": "#vox_tvoi_tutor_reco_first_group_0",
                     "subtitle": "#hash_1e9e5c3c2504a1fa",
                     "assetId": "#hash_142dff5da16dc6c8",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11261,13 +11261,13 @@
         {
             "value": 45,
             "next": 65535,
-            "name": "#hash_76712094e9fc348d",
+            "name": "#vox_tvoi_tutor_reco_first_group_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_76712094e9fc348d",
+                    "name": "#vox_tvoi_tutor_reco_first_group_1",
                     "subtitle": "#hash_4001a59bbe458eb",
                     "assetId": "#hash_7c4805c3a5430d9",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11313,13 +11313,13 @@
         {
             "value": 13,
             "next": 65535,
-            "name": "#hash_2a475119c0c9d7db",
+            "name": "#vox_tvoi_tutor_reco_first_group_candy",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2a475119c0c9d7db",
+                    "name": "#vox_tvoi_tutor_reco_first_group_candy",
                     "subtitle": "#hash_7a14ba2cbf20912c",
                     "assetId": "#hash_5903a0f37093e70e",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11365,13 +11365,13 @@
         {
             "value": 135,
             "next": 65535,
-            "name": "#hash_420be74d275dec7c",
+            "name": "#vox_tvoi_tutor_reco_first_group_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_420be74d275dec7c",
+                    "name": "#vox_tvoi_tutor_reco_first_group_nag",
                     "subtitle": "#hash_1c4c6fb834719c1a",
                     "assetId": "#hash_42cd05c7db7670e4",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11413,7 +11413,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_420be74d275dec7c",
+                    "name": "#vox_tvoi_tutor_reco_first_group_nag",
                     "subtitle": "#hash_291fabe17efe25c3",
                     "assetId": "#hash_5f77fb99f4265f89",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11456,7 +11456,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_420be74d275dec7c",
+                    "name": "#vox_tvoi_tutor_reco_first_group_nag",
                     "subtitle": "#hash_370ef3b4fd45e705",
                     "assetId": "#hash_4cec2942f06cf09f",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11499,7 +11499,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_420be74d275dec7c",
+                    "name": "#vox_tvoi_tutor_reco_first_group_nag",
                     "subtitle": "#hash_6d4dea30282aa440",
                     "assetId": "#hash_71567e2b12835e",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11542,7 +11542,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_420be74d275dec7c",
+                    "name": "#vox_tvoi_tutor_reco_first_group_nag",
                     "subtitle": "#hash_564510a9869a193a",
                     "assetId": "#hash_76238f3811e8aebc",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11585,7 +11585,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_420be74d275dec7c",
+                    "name": "#vox_tvoi_tutor_reco_first_group_nag",
                     "subtitle": "#hash_289860d6c1c68d39",
                     "assetId": "#hash_6ca2ce31d79d6cbb",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11628,7 +11628,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_420be74d275dec7c",
+                    "name": "#vox_tvoi_tutor_reco_first_group_nag",
                     "subtitle": "#hash_247be6c532f9c413",
                     "assetId": "#hash_646e8829a1e8c209",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11671,7 +11671,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_420be74d275dec7c",
+                    "name": "#vox_tvoi_tutor_reco_first_group_nag",
                     "subtitle": "#hash_3fa7d9a54b611c4e",
                     "assetId": "#hash_67a38b07cdadd148",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11714,7 +11714,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_420be74d275dec7c",
+                    "name": "#vox_tvoi_tutor_reco_first_group_nag",
                     "subtitle": "#hash_408b7712669204b0",
                     "assetId": "#hash_1074bb2aeedba726",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11757,7 +11757,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_420be74d275dec7c",
+                    "name": "#vox_tvoi_tutor_reco_first_group_nag",
                     "subtitle": "#hash_3c4730465ffd3ea7",
                     "assetId": "#hash_9b584b4813248dd",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11803,13 +11803,13 @@
         {
             "value": 20,
             "next": 65535,
-            "name": "#hash_4a8d1e7e7e423b65",
+            "name": "#vox_tvoi_tutor_reco_flank_attack_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4a8d1e7e7e423b65",
+                    "name": "#vox_tvoi_tutor_reco_flank_attack_0",
                     "subtitle": "#hash_2f82ac769f49a553",
                     "assetId": "#hash_1ac3be8ad18e5d6b",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11855,13 +11855,13 @@
         {
             "value": 102,
             "next": 65535,
-            "name": "#hash_4a8d1d7e7e4239b2",
+            "name": "#vox_tvoi_tutor_reco_flank_attack_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4a8d1d7e7e4239b2",
+                    "name": "#vox_tvoi_tutor_reco_flank_attack_1",
                     "subtitle": "#hash_63ce2d3e8d9c6d08",
                     "assetId": "#hash_4eaa2036a676b09c",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11904,7 +11904,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4a8d1d7e7e4239b2",
+                    "name": "#vox_tvoi_tutor_reco_flank_attack_1",
                     "subtitle": "#hash_44364ccf3daf5812",
                     "assetId": "#hash_3d5635aa7f0ccb42",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -11951,13 +11951,13 @@
         {
             "value": 93,
             "next": 65535,
-            "name": "#hash_4a8d1c7e7e4237ff",
+            "name": "#vox_tvoi_tutor_reco_flank_attack_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4a8d1c7e7e4237ff",
+                    "name": "#vox_tvoi_tutor_reco_flank_attack_2",
                     "subtitle": "#hash_266bb40c3e3874e1",
                     "assetId": "#hash_607841065f18d485",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -12003,13 +12003,13 @@
         {
             "value": 86,
             "next": 65535,
-            "name": "#hash_4a8d1b7e7e42364c",
+            "name": "#vox_tvoi_tutor_reco_flank_attack_3",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4a8d1b7e7e42364c",
+                    "name": "#vox_tvoi_tutor_reco_flank_attack_3",
                     "subtitle": "#hash_4c2d0f919c95600e",
                     "assetId": "#hash_258b347dcf2dba4e",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -12055,13 +12055,13 @@
         {
             "value": 103,
             "next": 65535,
-            "name": "#hash_3a29a5f77a7cb68a",
+            "name": "#vox_tvoi_tutor_reco_flank_comp_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3a29a5f77a7cb68a",
+                    "name": "#vox_tvoi_tutor_reco_flank_comp_0",
                     "subtitle": "#hash_71947042772fd7e8",
                     "assetId": "#hash_5ab89c4aa82feabc",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -12107,13 +12107,13 @@
         {
             "value": 30,
             "next": 65535,
-            "name": "#hash_3a29a6f77a7cb83d",
+            "name": "#vox_tvoi_tutor_reco_flank_comp_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_3a29a6f77a7cb83d",
+                    "name": "#vox_tvoi_tutor_reco_flank_comp_1",
                     "subtitle": "#hash_50f7b7824f630ab3",
                     "assetId": "#hash_3971c7354a8bbb8b",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -12307,13 +12307,13 @@
         {
             "value": 109,
             "next": 65535,
-            "name": "#hash_46c4843e8f5d2451",
+            "name": "#vox_tvoi_tutor_reco_move_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_46c4843e8f5d2451",
+                    "name": "#vox_tvoi_tutor_reco_move_nag",
                     "subtitle": "#hash_1cb9fce68afab16f",
                     "assetId": "#hash_11b98b9a97fddb57",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -12355,7 +12355,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_46c4843e8f5d2451",
+                    "name": "#vox_tvoi_tutor_reco_move_nag",
                     "subtitle": "#hash_66e94dbdb8e1d336",
                     "assetId": "#hash_523e9ea9f7b6727a",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -12398,7 +12398,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_46c4843e8f5d2451",
+                    "name": "#vox_tvoi_tutor_reco_move_nag",
                     "subtitle": "#hash_6b3ea316817269c8",
                     "assetId": "#hash_6ea6e5e358f86fe0",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -12441,7 +12441,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_46c4843e8f5d2451",
+                    "name": "#vox_tvoi_tutor_reco_move_nag",
                     "subtitle": "#hash_5004225f0a2d0925",
                     "assetId": "#hash_1bd6d46fece2ef85",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -12483,7 +12483,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_46c4843e8f5d2451",
+                    "name": "#vox_tvoi_tutor_reco_move_nag",
                     "subtitle": "#hash_4df98cf0c6deafbc",
                     "assetId": "#hash_3c6148c306677f10",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -12526,7 +12526,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_46c4843e8f5d2451",
+                    "name": "#vox_tvoi_tutor_reco_move_nag",
                     "subtitle": "#hash_289023a4af66913e",
                     "assetId": "#hash_66f161f683930f9e",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -12573,13 +12573,13 @@
         {
             "value": 114,
             "next": 65535,
-            "name": "#hash_6d4bf4b06eb5cef1",
+            "name": "#vox_tvoi_tutor_reco_noise_bullseye",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6d4bf4b06eb5cef1",
+                    "name": "#vox_tvoi_tutor_reco_noise_bullseye",
                     "subtitle": "#hash_5ccbfd7ec2f1382b",
                     "assetId": "#hash_70c453a3acd75233",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -12625,13 +12625,13 @@
         {
             "value": 121,
             "next": 114,
-            "name": "#hash_ce515264013b887",
+            "name": "#vox_tvoi_tutor_reco_ray_gun_kill",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_ce515264013b887",
+                    "name": "#vox_tvoi_tutor_reco_ray_gun_kill",
                     "subtitle": "#hash_6a9c7bf7e51dc101",
                     "assetId": "#hash_49058519b7ba191d",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -12674,7 +12674,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_ce515264013b887",
+                    "name": "#vox_tvoi_tutor_reco_ray_gun_kill",
                     "subtitle": "#hash_6c11f81896f66b8b",
                     "assetId": "#hash_1a2d40de7df1e10b",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -12717,7 +12717,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_ce515264013b887",
+                    "name": "#vox_tvoi_tutor_reco_ray_gun_kill",
                     "subtitle": "#hash_6f7c265dea4e8668",
                     "assetId": "#hash_218b60f49cc9e988",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -12760,7 +12760,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_ce515264013b887",
+                    "name": "#vox_tvoi_tutor_reco_ray_gun_kill",
                     "subtitle": "#hash_19c1bb6b34038732",
                     "assetId": "#hash_745456f41146066",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -12803,7 +12803,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_ce515264013b887",
+                    "name": "#vox_tvoi_tutor_reco_ray_gun_kill",
                     "subtitle": "#hash_66bc249c67c55a4b",
                     "assetId": "#hash_69f3b8b17313c02f",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -12846,7 +12846,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_ce515264013b887",
+                    "name": "#vox_tvoi_tutor_reco_ray_gun_kill",
                     "subtitle": "#hash_41f0e79b51a26ffd",
                     "assetId": "#hash_59ae59dea7d023a5",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -12889,7 +12889,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_ce515264013b887",
+                    "name": "#vox_tvoi_tutor_reco_ray_gun_kill",
                     "subtitle": "#hash_4774f6a74f3b3542",
                     "assetId": "#hash_1d563209995d70b2",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -13083,13 +13083,13 @@
         {
             "value": 17,
             "next": 112,
-            "name": "#hash_a8bcd8c98df0294",
+            "name": "#vox_tvoi_tutor_reco_sensor_dart_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_a8bcd8c98df0294",
+                    "name": "#vox_tvoi_tutor_reco_sensor_dart_2",
                     "subtitle": "#hash_14991088b5b26aee",
                     "assetId": "#hash_6168494e98574430",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -13135,13 +13135,13 @@
         {
             "value": 119,
             "next": 65535,
-            "name": "#hash_63c5e2c0cbf46688",
+            "name": "#vox_tvoi_tutor_reco_start_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_63c5e2c0cbf46688",
+                    "name": "#vox_tvoi_tutor_reco_start_0",
                     "subtitle": "#hash_3d22d450dabe65a2",
                     "assetId": "#hash_3fe13ef9ebc207cc",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -13187,13 +13187,13 @@
         {
             "value": 126,
             "next": 65535,
-            "name": "#hash_63c5e3c0cbf4683b",
+            "name": "#vox_tvoi_tutor_reco_start_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_63c5e3c0cbf4683b",
+                    "name": "#vox_tvoi_tutor_reco_start_1",
                     "subtitle": "#hash_5d5a9b4d648eb7f5",
                     "assetId": "#hash_2298e46ee4380a9b",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -13239,13 +13239,13 @@
         {
             "value": 134,
             "next": 65535,
-            "name": "#hash_63c5e4c0cbf469ee",
+            "name": "#vox_tvoi_tutor_reco_start_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_63c5e4c0cbf469ee",
+                    "name": "#vox_tvoi_tutor_reco_start_2",
                     "subtitle": "#hash_1361def2d5cd808c",
                     "assetId": "#hash_19a1d8f18bea89fe",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -13395,13 +13395,13 @@
         {
             "value": 77,
             "next": 118,
-            "name": "#hash_71c199093aa347bd",
+            "name": "#vox_tvoi_tutor_reco_strange_noise_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_71c199093aa347bd",
+                    "name": "#vox_tvoi_tutor_reco_strange_noise_0",
                     "subtitle": "#hash_74325c3a21e6a49f",
                     "assetId": "#hash_766fd1d6df49d119",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -13444,7 +13444,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_71c199093aa347bd",
+                    "name": "#vox_tvoi_tutor_reco_strange_noise_0",
                     "subtitle": "#hash_5031082c3b868ca9",
                     "assetId": "#hash_3eda4491644300ef",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -13491,13 +13491,13 @@
         {
             "value": 110,
             "next": 65535,
-            "name": "#hash_71c198093aa3460a",
+            "name": "#vox_tvoi_tutor_reco_strange_noise_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_71c198093aa3460a",
+                    "name": "#vox_tvoi_tutor_reco_strange_noise_1",
                     "subtitle": "#hash_114c5b97083587a4",
                     "assetId": "#hash_573c5fbdda2ca772",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -13543,13 +13543,13 @@
         {
             "value": 133,
             "next": 65535,
-            "name": "#hash_71c197093aa34457",
+            "name": "#vox_tvoi_tutor_reco_strange_noise_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_71c197093aa34457",
+                    "name": "#vox_tvoi_tutor_reco_strange_noise_2",
                     "subtitle": "#hash_2d8145db8719afcd",
                     "assetId": "#hash_1eefd41c8127180f",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -13595,13 +13595,13 @@
         {
             "value": 129,
             "next": 65535,
-            "name": "#hash_603d9fbe8af4a8b3",
+            "name": "#vox_tvoi_tutor_reco_strange_noise_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_603d9fbe8af4a8b3",
+                    "name": "#vox_tvoi_tutor_reco_strange_noise_nag",
                     "subtitle": "#hash_67f6952b859cacad",
                     "assetId": "#hash_affc5e072796b07",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -13644,7 +13644,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_603d9fbe8af4a8b3",
+                    "name": "#vox_tvoi_tutor_reco_strange_noise_nag",
                     "subtitle": "#hash_6ad901abad56623f",
                     "assetId": "#hash_4052ba1fb49824d",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -13687,7 +13687,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_603d9fbe8af4a8b3",
+                    "name": "#vox_tvoi_tutor_reco_strange_noise_nag",
                     "subtitle": "#hash_63188f913d072b24",
                     "assetId": "#hash_511a5c60b27944ea",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -13730,7 +13730,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_603d9fbe8af4a8b3",
+                    "name": "#vox_tvoi_tutor_reco_strange_noise_nag",
                     "subtitle": "#hash_2323b46e78aac7b6",
                     "assetId": "#hash_e95b789c2fe4550",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -13773,7 +13773,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_603d9fbe8af4a8b3",
+                    "name": "#vox_tvoi_tutor_reco_strange_noise_nag",
                     "subtitle": "#hash_48c510be69c630d7",
                     "assetId": "#hash_2e6136f33c0394f5",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -13816,7 +13816,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_603d9fbe8af4a8b3",
+                    "name": "#vox_tvoi_tutor_reco_strange_noise_nag",
                     "subtitle": "#hash_fd3dcd60ed6ead1",
                     "assetId": "#hash_7c3a5aebb451a893",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -13859,7 +13859,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_603d9fbe8af4a8b3",
+                    "name": "#vox_tvoi_tutor_reco_strange_noise_nag",
                     "subtitle": "#hash_7b75808a316de0fe",
                     "assetId": "#hash_1b8c609c43d89780",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -13902,7 +13902,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_603d9fbe8af4a8b3",
+                    "name": "#vox_tvoi_tutor_reco_strange_noise_nag",
                     "subtitle": "#hash_6143f5d21a0a3fa0",
                     "assetId": "#hash_386871929c77664e",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -13949,13 +13949,13 @@
         {
             "value": 122,
             "next": 65535,
-            "name": "#hash_339eb8312fdc25d4",
+            "name": "#vox_tvoi_tutor_reco_vis_pulse_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_339eb8312fdc25d4",
+                    "name": "#vox_tvoi_tutor_reco_vis_pulse_0",
                     "subtitle": "#hash_53e75ee4413d7366",
                     "assetId": "#hash_2a0705b78dbcfc1c",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14001,13 +14001,13 @@
         {
             "value": 36,
             "next": 123,
-            "name": "#hash_dd77a0770d28e66",
+            "name": "#vox_tvoi_tutor_reco_vis_pulse_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_dd77a0770d28e66",
+                    "name": "#vox_tvoi_tutor_reco_vis_pulse_nag",
                     "subtitle": "#hash_4b9240a048700048",
                     "assetId": "#hash_47df545405853c5e",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14049,7 +14049,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_dd77a0770d28e66",
+                    "name": "#vox_tvoi_tutor_reco_vis_pulse_nag",
                     "subtitle": "#hash_46b2963a433f3ae1",
                     "assetId": "#hash_3410cc07b21025bb",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14092,7 +14092,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_dd77a0770d28e66",
+                    "name": "#vox_tvoi_tutor_reco_vis_pulse_nag",
                     "subtitle": "#hash_3be5c2744bb28f2b",
                     "assetId": "#hash_39828502ca536309",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14135,7 +14135,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_dd77a0770d28e66",
+                    "name": "#vox_tvoi_tutor_reco_vis_pulse_nag",
                     "subtitle": "#hash_7afda628551393a2",
                     "assetId": "#hash_a3b039db5e929e4",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14177,7 +14177,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_dd77a0770d28e66",
+                    "name": "#vox_tvoi_tutor_reco_vis_pulse_nag",
                     "subtitle": "#hash_473aa145007819ab",
                     "assetId": "#hash_26e5f96fce991889",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14220,7 +14220,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_dd77a0770d28e66",
+                    "name": "#vox_tvoi_tutor_reco_vis_pulse_nag",
                     "subtitle": "#hash_50218f67c628111d",
                     "assetId": "#hash_2200261c18d7919f",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14263,7 +14263,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_dd77a0770d28e66",
+                    "name": "#vox_tvoi_tutor_reco_vis_pulse_nag",
                     "subtitle": "#hash_1dc3c4819c5a3c5c",
                     "assetId": "#hash_1e5c61d665558d72",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14309,13 +14309,13 @@
         {
             "value": 118,
             "next": 65535,
-            "name": "#hash_7c8c366945d5ee61",
+            "name": "#vox_tvoi_tutor_reco_wine_cellar_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7c8c366945d5ee61",
+                    "name": "#vox_tvoi_tutor_reco_wine_cellar_0",
                     "subtitle": "#hash_73e880fbf903878f",
                     "assetId": "#hash_33310c344bdabb85",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14358,7 +14358,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_7c8c366945d5ee61",
+                    "name": "#vox_tvoi_tutor_reco_wine_cellar_0",
                     "subtitle": "#hash_3c207b30129d7719",
                     "assetId": "#hash_63271d5b918ca9e3",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14405,13 +14405,13 @@
         {
             "value": 91,
             "next": 65535,
-            "name": "#hash_7c8c356945d5ecae",
+            "name": "#vox_tvoi_tutor_reco_wine_cellar_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_7c8c356945d5ecae",
+                    "name": "#vox_tvoi_tutor_reco_wine_cellar_1",
                     "subtitle": "#hash_4bf31e5bb2261714",
                     "assetId": "#hash_7843ffabbbefa14e",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14457,13 +14457,13 @@
         {
             "value": 55,
             "next": 65535,
-            "name": "#hash_4ec3d082638c7030",
+            "name": "#vox_tvoi_tutor_reco_zomb_nag",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_4ec3d082638c7030",
+                    "name": "#vox_tvoi_tutor_reco_zomb_nag",
                     "subtitle": "#hash_413d6ea31d932e72",
                     "assetId": "#hash_4ae04ee78b9f8032",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14506,7 +14506,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4ec3d082638c7030",
+                    "name": "#vox_tvoi_tutor_reco_zomb_nag",
                     "subtitle": "#hash_7824117f9add88cc",
                     "assetId": "#hash_5dfac50dcf2e20c8",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14549,7 +14549,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4ec3d082638c7030",
+                    "name": "#vox_tvoi_tutor_reco_zomb_nag",
                     "subtitle": "#hash_124d7036776481fb",
                     "assetId": "#hash_177dd58f6555cfaf",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14591,7 +14591,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4ec3d082638c7030",
+                    "name": "#vox_tvoi_tutor_reco_zomb_nag",
                     "subtitle": "#hash_6e1764d06712e058",
                     "assetId": "#hash_4f157dd28f0bf908",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14633,7 +14633,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4ec3d082638c7030",
+                    "name": "#vox_tvoi_tutor_reco_zomb_nag",
                     "subtitle": "#hash_3a548fed1277b7f1",
                     "assetId": "#hash_768fa1f7a9fc289d",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14676,7 +14676,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_4ec3d082638c7030",
+                    "name": "#vox_tvoi_tutor_reco_zomb_nag",
                     "subtitle": "#hash_4d3dec478c6804bb",
                     "assetId": "#hash_174d92befd44dc8b",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14723,13 +14723,13 @@
         {
             "value": 49,
             "next": 65535,
-            "name": "#hash_77c6ce9bf6da35f4",
+            "name": "#vox_tvoi_tutor_reco_zomb_plyr_dead",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_77c6ce9bf6da35f4",
+                    "name": "#vox_tvoi_tutor_reco_zomb_plyr_dead",
                     "subtitle": "#hash_95df965b72a1d0e",
                     "assetId": "#hash_c43c5539d24e4d2",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14771,7 +14771,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_77c6ce9bf6da35f4",
+                    "name": "#vox_tvoi_tutor_reco_zomb_plyr_dead",
                     "subtitle": "#hash_77dc2de49735a267",
                     "assetId": "#hash_4cbb7f2306f1d1cf",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14813,7 +14813,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_77c6ce9bf6da35f4",
+                    "name": "#vox_tvoi_tutor_reco_zomb_plyr_dead",
                     "subtitle": "#hash_1783a46134ba0bb4",
                     "assetId": "#hash_86a4d1ca829bc28",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14856,7 +14856,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_77c6ce9bf6da35f4",
+                    "name": "#vox_tvoi_tutor_reco_zomb_plyr_dead",
                     "subtitle": "#hash_c1a61c68232f9c6",
                     "assetId": "#hash_543bd0701f508c46",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14899,7 +14899,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_77c6ce9bf6da35f4",
+                    "name": "#vox_tvoi_tutor_reco_zomb_plyr_dead",
                     "subtitle": "#hash_4395a389b90aeffd",
                     "assetId": "#hash_119b67c93b857dbd",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14945,13 +14945,13 @@
         {
             "value": 58,
             "next": 65535,
-            "name": "#hash_373e680ef615b078",
+            "name": "#vox_tvoi_tutor_reco_zomb_score_active_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_373e680ef615b078",
+                    "name": "#vox_tvoi_tutor_reco_zomb_score_active_0",
                     "subtitle": "#hash_36e09dbf2c0390be",
                     "assetId": "#hash_5d8058773d7cf4b0",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -14994,7 +14994,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_373e680ef615b078",
+                    "name": "#vox_tvoi_tutor_reco_zomb_score_active_0",
                     "subtitle": "#hash_4fb492ac57cb6060",
                     "assetId": "#hash_1e0a1d0c6e581bfe",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -15041,13 +15041,13 @@
         {
             "value": 57,
             "next": 65535,
-            "name": "#hash_373e690ef615b22b",
+            "name": "#vox_tvoi_tutor_reco_zomb_score_active_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_373e690ef615b22b",
+                    "name": "#vox_tvoi_tutor_reco_zomb_score_active_1",
                     "subtitle": "#hash_46bbe892d636e311",
                     "assetId": "#hash_7074f15374e8f42f",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -15093,13 +15093,13 @@
         {
             "value": 120,
             "next": 65535,
-            "name": "#hash_2613f24ad4fa5cbc",
+            "name": "#vox_tvoi_tutor_reco_zomb_score_active_fail",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2613f24ad4fa5cbc",
+                    "name": "#vox_tvoi_tutor_reco_zomb_score_active_fail",
                     "subtitle": "#hash_4a4b64e36dc0e52a",
                     "assetId": "#hash_e7968196734f72",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -15141,7 +15141,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_2613f24ad4fa5cbc",
+                    "name": "#vox_tvoi_tutor_reco_zomb_score_active_fail",
                     "subtitle": "#hash_58a09a520100a293",
                     "assetId": "#hash_6ea68b232e5823ef",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -15184,7 +15184,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_2613f24ad4fa5cbc",
+                    "name": "#vox_tvoi_tutor_reco_zomb_score_active_fail",
                     "subtitle": "#hash_7874eb06ff0d4d55",
                     "assetId": "#hash_5aa6f203214b6165",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -15227,7 +15227,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_2613f24ad4fa5cbc",
+                    "name": "#vox_tvoi_tutor_reco_zomb_score_active_fail",
                     "subtitle": "#hash_495749d8b02ccc50",
                     "assetId": "#hash_119cbd88d93e4c48",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -15269,7 +15269,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_2613f24ad4fa5cbc",
+                    "name": "#vox_tvoi_tutor_reco_zomb_score_active_fail",
                     "subtitle": "#hash_a6fa089c129249",
                     "assetId": "#hash_33aeb7358cc2c3dd",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -15315,13 +15315,13 @@
         {
             "value": 132,
             "next": 65535,
-            "name": "#hash_2216c1d3d66ce",
+            "name": "#vox_tvoi_tutor_reco_zomb_score_earned",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_2216c1d3d66ce",
+                    "name": "#vox_tvoi_tutor_reco_zomb_score_earned",
                     "subtitle": "#hash_65b77a5781973190",
                     "assetId": "#hash_5e87f1e07979825e",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -15367,13 +15367,13 @@
         {
             "value": 108,
             "next": 65535,
-            "name": "#hash_5b00936def7e0205",
+            "name": "#vox_tvoi_tutor_reco_zomb_vis_pulse_0",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5b00936def7e0205",
+                    "name": "#vox_tvoi_tutor_reco_zomb_vis_pulse_0",
                     "subtitle": "#hash_77046a96410b3a83",
                     "assetId": "#hash_6417a59713daf99f",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -15416,7 +15416,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5b00936def7e0205",
+                    "name": "#vox_tvoi_tutor_reco_zomb_vis_pulse_0",
                     "subtitle": "#hash_796c4ad3d5b534c5",
                     "assetId": "#hash_7ceb212bd4904bd5",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -15463,13 +15463,13 @@
         {
             "value": 107,
             "next": 65535,
-            "name": "#hash_5b00926def7e0052",
+            "name": "#vox_tvoi_tutor_reco_zomb_vis_pulse_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5b00926def7e0052",
+                    "name": "#vox_tvoi_tutor_reco_zomb_vis_pulse_1",
                     "subtitle": "#hash_690eebfb42f33fb8",
                     "assetId": "#hash_64905aef004fc9a0",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -15512,7 +15512,7 @@
                     "unk178": "#hash_301140808"
                 },
                 {
-                    "name": "#hash_5b00926def7e0052",
+                    "name": "#vox_tvoi_tutor_reco_zomb_vis_pulse_1",
                     "subtitle": "#hash_11c59881ea6dd102",
                     "assetId": "#hash_3547c1e93be2bd2e",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -15559,13 +15559,13 @@
         {
             "value": 117,
             "next": 65535,
-            "name": "#hash_5b00916def7dfe9f",
+            "name": "#vox_tvoi_tutor_reco_zomb_vis_pulse_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5b00916def7dfe9f",
+                    "name": "#vox_tvoi_tutor_reco_zomb_vis_pulse_2",
                     "subtitle": "#hash_25a9f74e68512f11",
                     "assetId": "#hash_2bfb45165261ef69",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -15611,13 +15611,13 @@
         {
             "value": 101,
             "next": 120,
-            "name": "#hash_5b00906def7dfcec",
+            "name": "#vox_tvoi_tutor_reco_zomb_vis_pulse_3",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5b00906def7dfcec",
+                    "name": "#vox_tvoi_tutor_reco_zomb_vis_pulse_3",
                     "subtitle": "#hash_15ceac7abe1ddcbe",
                     "assetId": "#hash_53055d136a27d302",
                     "assetFileNameSustain": "#mp_seaside.fj",
@@ -15663,13 +15663,13 @@
         {
             "value": 92,
             "next": 65535,
-            "name": "#hash_5b008f6def7dfb39",
+            "name": "#vox_tvoi_tutor_reco_zomb_vis_pulse_4",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_5b008f6def7dfb39",
+                    "name": "#vox_tvoi_tutor_reco_zomb_vis_pulse_4",
                     "subtitle": "#hash_7dca6205888677ff",
                     "assetId": "#hash_34ddb6f90c414513",
                     "assetFileNameSustain": "#mp_seaside.fj",

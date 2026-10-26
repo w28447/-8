@@ -29,7 +29,7 @@
     "#hash_d2751f9d": false,
     "#hash_554be9f7": false,
     "sound660": "#uin_unavailable_charging",
-    "projexplosionsound": "#hash_20cda79cd396562",
+    "projexplosionsound": "#detpack_explo_main",
     "tunables1": "#killstreak_ai_tank_tunables_mp",
     "crateObjective": "#ai_tank_waypoint",
     "#hash_2e4a8800": "#remote_missile_scoreevents",

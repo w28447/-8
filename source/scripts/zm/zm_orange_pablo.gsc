@@ -691,7 +691,7 @@ function private function_d7e79438()
     }
     
     level.pablo_npc notify( #"dumbwaiter_interact_started" );
-    playsoundatposition( #"hash_512bec1d554e89f1", self.origin );
+    playsoundatposition( #"evt_dumbwaiter_place", self.origin );
     level.pablo_npc thread function_39614d4b();
     zm_unitrigger::unregister_unitrigger( self.s_unitrigger );
     self.s_unitrigger = undefined;
@@ -704,7 +704,7 @@ function private function_d7e79438()
 function private function_30a02731()
 {
     self endon( #"death" );
-    playsoundatposition( #"hash_512bec1d554e89f1", self.origin );
+    playsoundatposition( #"evt_dumbwaiter_place", self.origin );
     level.pablo_npc thread function_39614d4b();
 }
 

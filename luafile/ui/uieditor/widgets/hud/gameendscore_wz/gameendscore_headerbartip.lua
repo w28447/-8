@@ -26,7 +26,7 @@ CoD.GameEndScore_HeaderBarTip.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_arg
 	Grid:setRGB( 0, 0, 0 )
 	Grid:setAlpha( 0.25 )
 	Grid:setImage( RegisterImage( "uie_ui_hud_vehicle_lightstrike_grid" ) )
-	Grid:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	Grid:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	Grid:setShaderVector( 0, 0, 0, 0, 0 )
 	Grid:setupNineSliceShader( 22, 20 )
 	self:addElement( Grid )

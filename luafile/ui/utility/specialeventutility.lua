@@ -208,7 +208,7 @@ DataSources.SpecialEventSteps = DataSourceHelpers.ListSetup( "SpecialEventSteps"
 end, true )
 CoD.SpecialEventUtility.GetSpecialEventRewardModels = function ( f10_arg0, f10_arg1, f10_arg2 )
 	local f10_local0 = {}
-	local f10_local1 = f10_arg2[0xC539A1B16B48B16]:get()
+	local f10_local1 = f10_arg2.current_event_calling:get()
 	local f10_local2 = CoD.SpecialEventUtility.GetCurrentSpecialEventTierInfo( f10_arg0, f10_arg1, f10_local1 )
 	local f10_local3 = CoD.SpecialEventUtility.GetCurrentSpecialEventTierInfo( f10_arg0, f10_arg2, f10_local1 )
 	local f10_local4 = CoD.SpecialEventUtility.GetSpecialEventInfo( f10_local1 )

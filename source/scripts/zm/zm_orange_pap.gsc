@@ -317,8 +317,8 @@ function function_56db9cdc()
         {
             level flag::set( #"golden_pap_active" );
             level thread function_50779c1f();
-            level.e_lighthouse_light playsound( #"hash_6a8b750c09391a81" );
-            playsoundatposition( #"hash_1172b7ba38df5cd4", ( -105, -3451, 607 ) );
+            level.e_lighthouse_light playsound( #"evt_pap_golden_lighthouse" );
+            playsoundatposition( #"evt_pap_golden_island", ( -105, -3451, 607 ) );
             s_notify = level waittilltimeout( 120, #"hash_39b6629ce957cce9" );
             
             if ( level flag::get( #"island_event_active" ) )
@@ -445,12 +445,12 @@ function function_69a4b74b( var_16c2b0ed )
 {
     if ( var_16c2b0ed )
     {
-        self.entity playsound( #"hash_6905307107bb03e" );
+        self.entity playsound( #"evt_pap_freeze" );
         self scene::play( "freeze" );
         return;
     }
     
-    self.entity playsound( #"hash_4a246aa22a63bedb" );
+    self.entity playsound( #"evt_pap_melt" );
     self scene::play( "melt" );
 }
 

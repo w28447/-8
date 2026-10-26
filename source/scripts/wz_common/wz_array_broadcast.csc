@@ -193,7 +193,7 @@ function function_44e1ce2e( var_ffe2b6da = 0 )
             {
                 if ( var_ffe2b6da == 0 )
                 {
-                    struct.var_7a993bec = playsound( 0, #"hash_6ee08a10b9c18ba7", struct.origin );
+                    struct.var_7a993bec = playsound( 0, #"amb_emergency_broadcast_squelch", struct.origin );
                     continue;
                 }
                 
@@ -227,7 +227,7 @@ function function_44e1ce2e( var_ffe2b6da = 0 )
             
             wait 1;
             var_ffe2b6da++;
-            struct.var_7a993bec = playsound( 0, #"hash_6ee08a10b9c18ba7", struct.origin );
+            struct.var_7a993bec = playsound( 0, #"amb_emergency_broadcast_squelch", struct.origin );
         }
     }
     else
@@ -238,7 +238,7 @@ function function_44e1ce2e( var_ffe2b6da = 0 )
             {
                 if ( var_ffe2b6da == 0 )
                 {
-                    struct.var_7a993bec = playsound( 0, #"hash_6ee08a10b9c18ba7", struct.origin );
+                    struct.var_7a993bec = playsound( 0, #"amb_emergency_broadcast_squelch", struct.origin );
                     continue;
                 }
                 
@@ -272,7 +272,7 @@ function function_44e1ce2e( var_ffe2b6da = 0 )
             
             wait 1;
             var_ffe2b6da++;
-            struct.var_7a993bec = playsound( 0, #"hash_6ee08a10b9c18ba7", struct.origin );
+            struct.var_7a993bec = playsound( 0, #"amb_emergency_broadcast_squelch", struct.origin );
         }
     }
     

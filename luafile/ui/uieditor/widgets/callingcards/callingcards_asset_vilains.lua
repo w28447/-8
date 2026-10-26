@@ -32,7 +32,7 @@ CoD.callingcards_asset_vilains.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_ar
 	self.victim = victim
 	
 	local vilain = LUI.UIImage.new( 0, 0, 513, 969, 0, 0, -8, 272 )
-	vilain:setImage( RegisterImage( 0xE8DFE06491652E0 ) )
+	vilain:setImage( RegisterImage( "uie_ui_icon_callingcards_vilains_killer" ) )
 	self:addElement( vilain )
 	self.vilain = vilain
 	

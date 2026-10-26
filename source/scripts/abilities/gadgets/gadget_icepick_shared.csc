@@ -144,7 +144,7 @@ function function_d3c5b110( local_client_num, oldval, newval, bnewent, binitials
     {
         if ( !isdefined( level.var_1a8113a7[ local_client_num ] ) )
         {
-            level.var_1a8113a7[ local_client_num ] = function_604c9983( local_client_num, #"hash_7c507989ceae567f" );
+            level.var_1a8113a7[ local_client_num ] = function_604c9983( local_client_num, #"mpl_ice_pick_hacking_loop" );
         }
         
         return;

@@ -58,8 +58,8 @@ function shrink_globe( localclientnum, oldval, newval, bnewent, binitialsnap, fi
         
         if ( !isdefined( self.var_66db8b1a ) )
         {
-            self playsound( localclientnum, #"hash_fe927ec8b31e2d" );
-            self.var_66db8b1a = self playloopsound( #"hash_57b1409fb6e001f3" );
+            self playsound( localclientnum, #"wpn_wkud_shrink_start" );
+            self.var_66db8b1a = self playloopsound( #"wpn_wkud_shrink_lp" );
         }
         
         return;
@@ -77,7 +77,7 @@ function shrink_globe( localclientnum, oldval, newval, bnewent, binitialsnap, fi
     {
         self stoploopsound( self.var_66db8b1a );
         self.var_66db8b1a = undefined;
-        self playsound( localclientnum, #"hash_12c7ff63913e6a34" );
+        self playsound( localclientnum, #"wpn_wkud_shrink_end" );
     }
 }
 

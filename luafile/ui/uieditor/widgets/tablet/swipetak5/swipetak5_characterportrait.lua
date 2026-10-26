@@ -20,7 +20,7 @@ CoD.SwipeTak5_CharacterPortrait.new = function ( f1_arg0, f1_arg1, f1_arg2, f1_a
 	local TiledBacking = LUI.UIImage.new( 0, 0, 0, 102, 0, 0, 0, 147 )
 	TiledBacking:setAlpha( 0.4 )
 	TiledBacking:setImage( RegisterImage( "uie_ui_hud_tak5_player_repeat_bg" ) )
-	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( 0x6CBE95C250C6D15 ) )
+	TiledBacking:setMaterial( LUI.UIImage.GetCachedMaterial( "uie_tiled_normal" ) )
 	TiledBacking:setShaderVector( 0, 0, 0, 0, 0 )
 	TiledBacking:setupNineSliceShader( 100, 72 )
 	self:addElement( TiledBacking )

@@ -219,7 +219,7 @@ function private function_587e512e()
     {
         if ( isdefined( player ) )
         {
-            player playsoundtoplayer( #"hash_41def4c864993224", player );
+            player playsoundtoplayer( #"evt_q_complete", player );
         }
     }
 }

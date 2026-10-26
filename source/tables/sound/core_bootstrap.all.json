@@ -9,14 +9,14 @@
         {
             "value": 118,
             "next": 65535,
-            "name": "#hash_231247a2406708c7",
+            "name": "#bik_logo_cinematic",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_231247a2406708c7",
-                    "secondaryname": "#hash_148faf2c4a17973a",
+                    "name": "#bik_logo_cinematic",
+                    "secondaryname": "#bik_logo_cinematic_lsrs",
                     "assetId": "#bik/logo/treyarch_logo.sn100.pc.snd",
                     "assetFileNameSustain": "#core_bootstrap.all",
                     "assetIdRelease": "#core_bootstrap.all",
@@ -59,13 +59,13 @@
         {
             "value": 90,
             "next": 65535,
-            "name": "#hash_148faf2c4a17973a",
+            "name": "#bik_logo_cinematic_lsrs",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_148faf2c4a17973a",
+                    "name": "#bik_logo_cinematic_lsrs",
                     "assetId": "#bik/logo/treyarch_logo_sur.sn100.pc.snd",
                     "assetFileNameSustain": "#core_bootstrap.all",
                     "assetIdRelease": "#core_bootstrap.all",
@@ -3701,13 +3701,13 @@
         {
             "value": 13,
             "next": 57,
-            "name": "#hash_759c915d9dd047e8",
+            "name": "#uin_kls_ai_tank_drop",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_759c915d9dd047e8",
+                    "name": "#uin_kls_ai_tank_drop",
                     "assetId": "#mpl/kls_start/mpl_kls_agr.sn100.pc.snd",
                     "assetFileNameSustain": "#core_bootstrap.all",
                     "assetIdRelease": "#core_bootstrap.all",
@@ -4292,13 +4292,13 @@
         {
             "value": 69,
             "next": 84,
-            "name": "#hash_1544769e88ad146a",
+            "name": "#uin_kls_missile_drone",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_1544769e88ad146a",
+                    "name": "#uin_kls_missile_drone",
                     "assetId": "#mpl/kls_start/mpl_kls_hk.sn100.pc.snd",
                     "assetFileNameSustain": "#core_bootstrap.all",
                     "assetIdRelease": "#core_bootstrap.all",
@@ -5701,13 +5701,13 @@
         {
             "value": 119,
             "next": 65535,
-            "name": "#hash_6e5126dc76217490",
+            "name": "#uin_round_end_pip_1",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6e5126dc76217490",
+                    "name": "#uin_round_end_pip_1",
                     "assetId": "#uin/round_end/widgets/round_end_hit_1.ln100.pc.snd",
                     "assetFileNameSustain": "#core_bootstrap.all",
                     "assetIdRelease": "#core_bootstrap.all",
@@ -5750,13 +5750,13 @@
         {
             "value": 117,
             "next": 65535,
-            "name": "#hash_6e5129dc762179a9",
+            "name": "#uin_round_end_pip_2",
             "sequence": 0,
             "cullDistance": 10000,
             "spatial": false,
             "aliases": [
                 {
-                    "name": "#hash_6e5129dc762179a9",
+                    "name": "#uin_round_end_pip_2",
                     "assetId": "#uin/round_end/widgets/round_end_hit_2.ln100.pc.snd",
                     "assetFileNameSustain": "#core_bootstrap.all",
                     "assetIdRelease": "#core_bootstrap.all",

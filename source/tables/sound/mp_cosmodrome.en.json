@@ -9,13 +9,13 @@
         {
             "value": 8,
             "next": 2,
-            "name": "#hash_2736e652fd469f1",
+            "name": "#vox_rupa_pa_rocket_sequence_0",
             "sequence": 0,
             "cullDistance": 7500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2736e652fd469f1",
+                    "name": "#vox_rupa_pa_rocket_sequence_0",
                     "assetId": "#hash_4ec547f26ea9353c",
                     "assetFileNameSustain": "#mp_cosmodrome.en",
                     "assetIdRelease": "#mp_cosmodrome.en",
@@ -59,13 +59,13 @@
         {
             "value": 22,
             "next": 65535,
-            "name": "#hash_2736d652fd4683e",
+            "name": "#vox_rupa_pa_rocket_sequence_1",
             "sequence": 0,
             "cullDistance": 7500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2736d652fd4683e",
+                    "name": "#vox_rupa_pa_rocket_sequence_1",
                     "assetId": "#hash_2d7e72dd1105060b",
                     "assetFileNameSustain": "#mp_cosmodrome.en",
                     "assetIdRelease": "#mp_cosmodrome.en",
@@ -609,13 +609,13 @@
         {
             "value": 18,
             "next": 65535,
-            "name": "#hash_2736c652fd4668b",
+            "name": "#vox_rupa_pa_rocket_sequence_2",
             "sequence": 0,
             "cullDistance": 7500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_2736c652fd4668b",
+                    "name": "#vox_rupa_pa_rocket_sequence_2",
                     "assetId": "#hash_67cec194dd8482ee",
                     "assetFileNameSustain": "#mp_cosmodrome.en",
                     "assetIdRelease": "#mp_cosmodrome.en",
@@ -709,13 +709,13 @@
         {
             "value": 1,
             "next": 15,
-            "name": "#hash_7e87e9f045ea8e0e",
+            "name": "#vox_rupa_pa_rocket_sequence_21",
             "sequence": 0,
             "cullDistance": 7500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7e87e9f045ea8e0e",
+                    "name": "#vox_rupa_pa_rocket_sequence_21",
                     "assetId": "#hash_77dc9adb16ad2e4b",
                     "assetFileNameSustain": "#mp_cosmodrome.en",
                     "assetIdRelease": "#mp_cosmodrome.en",
@@ -759,13 +759,13 @@
         {
             "value": 6,
             "next": 16,
-            "name": "#hash_7e87e8f045ea8c5b",
+            "name": "#vox_rupa_pa_rocket_sequence_22",
             "sequence": 0,
             "cullDistance": 7500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_7e87e8f045ea8c5b",
+                    "name": "#vox_rupa_pa_rocket_sequence_22",
                     "assetId": "#hash_697f8c279f18e62e",
                     "assetFileNameSustain": "#mp_cosmodrome.en",
                     "assetIdRelease": "#mp_cosmodrome.en",
@@ -909,13 +909,13 @@
         {
             "value": 2,
             "next": 17,
-            "name": "#hash_27372652fd470bd",
+            "name": "#vox_rupa_pa_rocket_sequence_4",
             "sequence": 0,
             "cullDistance": 7500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_27372652fd470bd",
+                    "name": "#vox_rupa_pa_rocket_sequence_4",
                     "assetId": "#hash_10e6609fbbc51cb8",
                     "assetFileNameSustain": "#mp_cosmodrome.en",
                     "assetIdRelease": "#mp_cosmodrome.en",
@@ -959,13 +959,13 @@
         {
             "value": 9,
             "next": 20,
-            "name": "#hash_27371652fd46f0a",
+            "name": "#vox_rupa_pa_rocket_sequence_5",
             "sequence": 0,
             "cullDistance": 7500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_27371652fd46f0a",
+                    "name": "#vox_rupa_pa_rocket_sequence_5",
                     "assetId": "#hash_12c362801e4b03f7",
                     "assetFileNameSustain": "#mp_cosmodrome.en",
                     "assetIdRelease": "#mp_cosmodrome.en",
@@ -1009,13 +1009,13 @@
         {
             "value": 12,
             "next": 21,
-            "name": "#hash_27370652fd46d57",
+            "name": "#vox_rupa_pa_rocket_sequence_6",
             "sequence": 0,
             "cullDistance": 7500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_27370652fd46d57",
+                    "name": "#vox_rupa_pa_rocket_sequence_6",
                     "assetId": "#hash_681245d21fd2d85a",
                     "assetFileNameSustain": "#mp_cosmodrome.en",
                     "assetIdRelease": "#mp_cosmodrome.en",
@@ -1109,13 +1109,13 @@
         {
             "value": 20,
             "next": 65535,
-            "name": "#hash_27366652fd45c59",
+            "name": "#vox_rupa_pa_rocket_sequence_8",
             "sequence": 0,
             "cullDistance": 7500,
             "spatial": true,
             "aliases": [
                 {
-                    "name": "#hash_27366652fd45c59",
+                    "name": "#vox_rupa_pa_rocket_sequence_8",
                     "assetId": "#hash_279adfd4e0037484",
                     "assetFileNameSustain": "#mp_cosmodrome.en",
                     "assetIdRelease": "#mp_cosmodrome.en",

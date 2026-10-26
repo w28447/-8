@@ -91,7 +91,7 @@ function function_417c12e1( localclientnum, oldval, newval, bnewent, binitialsna
 function crystal_explosion_func( localclientnum, oldval, newval, bnewent, binitialsnap, fieldname, bwastimejump )
 {
     self util::playfxontag( localclientnum, level._effect[ #"crystal_explosion" ], self, "tag_origin" );
-    playsound( localclientnum, #"hash_66b733441d74cd21", self.origin );
+    playsound( localclientnum, #"zmb_pap_crystal_break", self.origin );
 }
 
 // Namespace zm_red_pap_quest/zm_red_pap_quest
